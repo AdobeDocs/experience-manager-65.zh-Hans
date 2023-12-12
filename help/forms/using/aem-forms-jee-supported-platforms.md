@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '3984'
+source-wordcount: '3976'
 ht-degree: 0%
 
 ---
@@ -356,8 +356,10 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
 1. JEE上的AEM Forms不支持JBoss®基于角色的访问控制(RBAC)。
 1. JEE上的AEM Forms仅支持OracleJava™ SE 11 （64位） SDK (适用于应用程序服务器JBoss® EAP 7.4)。
 1. WebLogic服务器不支持高于1.8.0_281的JDK版本。 (FORMS-8498)
-1. [!DNL Microsoft® Windows Server 2019] 不支持 [!DNL MySQL 5.7] 和 [!DNL JBoss® EAP 7.1]， [!DNL Microsoft® Windows Server 2019] 不支持的全包安装 [!DNL Experience Manager Forms 6.5.10.0 and later]. (CQDOC-18312)
 
+<!-- 
+1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 
+-->
 
 此外，在选择用于AdobeJEE部署上的AEM Forms的软件时，请考虑以下几点：
 
@@ -871,6 +873,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 |  | | IBM® Content Manager Server 8.5修复包2 |
 |  | | IBM® Content Manager客户端8.5 |
 |  | | Microsoft® SQL Server 2016 |
+|  | | Microsoft® Windows Server 2016 |
 
 ### 6.5.10.0版(20222年9月1日)
 

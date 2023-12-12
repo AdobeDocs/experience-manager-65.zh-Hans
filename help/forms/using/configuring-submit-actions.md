@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 302a76fb9470e2ef177f60aea10312d6091becb9
+source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
 workflow-type: tm+mt
-source-wordcount: '2584'
+source-wordcount: '2581'
 ht-degree: 49%
 
 ---
@@ -203,7 +203,7 @@ ht-degree: 49%
 
 您可以在自适应表单中使用创建的SharePoint列表配置，以在SharePoint列表中保存数据或生成的记录文档。 执行以下步骤以在自适应表单中使用SharePoint List存储配置，如下所示：
 
-1. [使用Microsoft® SharePoint列表配置创建表单数据模型](/help/forms/using/create-form-data-model.md)
+1. [使用Microsoft创建表单数据模型](/help/forms/using/create-form-data-model.md)
 1. [配置表单数据模型以检索和发送数据](/help/forms/using/work-with-form-data-model.md#configure-services)
 1. [创建自适应表单](/help/forms/using/create-adaptive-form.md).
 1. [使用表单数据模型配置提交操作](/help/forms/using/configuring-submit-actions.md#submit-using-form-data-model-submit)
