@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 25c444e2093d118259925034e0d630ab0effc473
 workflow-type: tm+mt
-source-wordcount: '6381'
+source-wordcount: '3865'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ ht-degree: 0%
 
   任何的基类 [组件](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component) 即按框大小，使用宽度和高度。
 
-  BoxComponent为调整大小和定位提供了自动的框模型调整，并且将在组件渲染模型中正常工作。
+  BoxComponent为调整大小和定位提供了自动的框模型调整，并在组件渲染模型中正常工作。
 
 * browsedialog
 
@@ -251,7 +251,7 @@ ht-degree: 0%
 
   [CQ.CustomContentPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.CustomContentPanel)
 
-  CustomContentPanel是一种特殊类型的面板，用于 [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)：其内容可从不同的URL检索并提交到对话框中的其他字段。
+  CustomContentPanel是用于以下内容的特殊面板： [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)：其内容可从不同的URL检索并提交到对话框中的其他字段。
 
 * 循环
 
@@ -293,7 +293,7 @@ ht-degree: 0%
 
   [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
-  “对话框”是一种特殊类型的窗口，正文中有一个表单，页脚中有一个按钮组。 它通常用于编辑内容，但也只能显示信息。
+  该对话框是一个特殊窗口，正文中有一个表单，页脚中有一个按钮组。 它通常用于编辑内容，但也只能显示信息。
 
 * dialogfieldset
 
@@ -413,7 +413,7 @@ ht-degree: 0%
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  提供轻量级HTML编辑器组件。 Safari不支持某些工具栏功能，因此会在需要时自动隐藏这些功能。 在适当的情况下，这些内容会在配置选项中说明。
+  提供轻量级HTML编辑器组件。 Safari不支持某些工具栏功能，在需要时会自动隐藏这些功能。 在适当的情况下，这些内容会在配置选项中说明。
 
   编辑器的工具栏按钮在 [buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor) 属性。
 
@@ -463,7 +463,7 @@ ht-degree: 0%
 
   [CQ.Ext.list.ListView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.list.ListView)
 
-  CQ.Ext.list.ListView是一种快速而轻量级的 [网格](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) 喜欢视图。
+  CQ.Ext.list.ListView是一种快速而轻量级的 [网格状](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel) 视图。
 
 * livecopyproperties
 
@@ -793,7 +793,7 @@ ht-degree: 0%
 
   [CQ.wcm.Statistics](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Statistics)
 
-  统计信息以图表形式显示页面展示。 利用小组件，可选择时段，应显示其统计信息。
+  统计信息以图表形式显示页面展示。 利用小组件，可选择应显示统计数据的时间段。
 
 * 存储
 
