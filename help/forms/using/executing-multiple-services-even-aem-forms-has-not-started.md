@@ -1,9 +1,10 @@
 ---
 title: 尽管AEM Forms尚未启动，但正在执行多项服务。
 description: 即使AEM Forms尚未完全启动，它仍会处理多项服务。
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+exl-id: 4ec40412-15b1-434b-a919-2cf23f48077c
+source-git-commit: faa628ac4a4631564141f68f3efc9d69a67e5c40
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '96'
 ht-degree: 4%
 
 ---
@@ -21,9 +22,4 @@ ht-degree: 4%
 
 ## 解决方案 {#solution}
 
-要解决此问题，用户需添加一个参数 `Dcom.adobe.livecycle.dsc.deferServiceStart=true` 到 [批处理文件](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) 在服务器启动期间。
-
-
-
-
-
+要解决此问题，请添加参数 `Dcom.adobe.livecycle.dsc.deferServiceStart=true` 到 [批处理文件](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/command-line-start-and-stop.html#windows-platform-start-bat-script-example) 在服务器启动期间。
