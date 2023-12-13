@@ -3,10 +3,10 @@ title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
 workflow-type: tm+mt
-source-wordcount: '4232'
-ht-degree: 7%
+source-wordcount: '4225'
+ht-degree: 6%
 
 ---
 
@@ -50,7 +50,7 @@ ht-degree: 7%
 * **新增自适应表单核心组件**：添加了垂直选项卡、条款和条件以及复选框以增强表单的可伸缩性。
    * **[复选框组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**：基于核心组件的自适应表单现在包含复选框组件。通过它，用户可二选一，即选择或取消选择特定选项。它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。复选框是一个常见的表单元素，用于提供是/否或 true/false 选择。
 
-   * **[条款和条件组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**：基于核心组件的自适应表单现在包含条款和条件组件。通过它，表单作者可在表单中引入一个特定的部分，其中为用户展示与使用服务、产品或平台相关的条款、条件或法律协议。此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
+   * **[条款和条件组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**：基于核心组件的自适应表单现在包含条款和条件组件。它允许Forms作者在表单中引入特定部分，向用户显示与服务、产品或平台的使用相关的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
 
      ![垂直选项卡、条款和条件以及复选框组件](/help/forms/using/assets/forms-components.png)
 
@@ -58,11 +58,11 @@ ht-degree: 7%
 
 * **[AEM Forms Designer 64位版本](/help/forms/using/installing-configuring-designer.md)**：AEM Forms Designer的64位版本提供了增强的性能、可扩展性和内存管理，可增强您的表单创建体验。 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
 
-* **[将自适应Forms连接到Microsoft® SharePoint列表](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**：AEM Forms提供了一个OOTB集成，可让您将表单数据直接提交到SharePoint List，从而让您能够使用SharePoint的“列表”功能。 您可以将Microsoft SharePoint列表配置为表单数据模型的数据源，并使用使用表单数据模型提交操作将自适应表单连接到SharePoint列表。
+* **[将自适应Forms连接到Microsoft® SharePoint列表](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)**：AEM Forms提供了一个OOTB集成，可用于将表单数据直接提交到SharePoint List，让您能够使用SharePoint的“列表”功能。 您可以将Microsoft® SharePoint列表配置为表单数据模型的数据源，并使用使用表单数据模型提交操作将自适应表单与SharePoint列表连接起来。
 
 * **[支持为自适应表单片段配置记录文档属性](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)**：您现在可以在自适应表单编辑器中轻松自定义自适应表单片段及其字段。
 
-* **64位XMLFM**： XMLFM的64位迭代引入了更高的性能、可扩展性和更精细的内存管理。 它是第一个部署在服务器端的64位本机服务。 XMLFM 64位利用其固有的功能访问比32位对等项大得多的内存资源，从而能够无缝处理更大的渲染工作负载。 这一里程碑不仅实现了性能的飞跃，而且还对AEM Forms服务器中的本机服务框架引入了关键增强功能。 此更新使AEM Forms服务器能够无缝支持任何64位本机服务。
+* **64位XMLFM**： XMLFM的64位迭代引入了更高的性能、可扩展性和更精细的内存管理。 它是第一个部署在服务器端的64位本机服务。 XMLFM 64位利用其固有的功能访问比32位对等项更大的内存资源，从而能够无缝处理更大的渲染工作负载。 这一里程碑不仅实现了性能的飞跃，而且还对AEM Forms服务器中的本机服务框架引入了关键增强功能。 此更新使AEM Forms Server能够无缝支持任何64位本机服务。
 
 **已弃用功能**
 
@@ -190,17 +190,17 @@ ht-degree: 7%
 
 * 当用户将工具栏添加到自适应表单时，表单容器标签显示异常行为，因为它未更改为作者为Forms选择的首选语言。 (FORMS-11371)
 * 在AEM Forms Workspace中，下拉字段默认选择UI上的第一个选项。 (FORMS-11346)
-* 如果您使用带有五个字符的区域设置，并且小数分隔符未在信件中正确呈现，则AEM中的语言配置不会显示任何效果。 (FORMS-11344)
+* 如果您使用带有五个字符的区域设置，并且小数分隔符未在信件中正确呈现，则AEM中的语言配置不会受到影响。 (FORMS-11344)
 * 当用户使用Workbench进程生成XML输出时，某些文件会失败。 (FORMS-11314)
 * 当用户使用英语以外的语言生成记录文档(DOR)预览时，该功能不起作用。 (FORMS-11106)
-* 当用户在基于带有JDK11的Linux的OSGI实例上转换某些带有PDFG的图像文件时，它不会转换。 (FORMS-11105)
+* 当用户在基于Linux®的OSGI实例上使用JDK11转换一些带有PDFG的图像文件时，它不会转换。 (FORMS-11105)
 * 用户安装AEM Forms加载项时，它会破坏AEM Sites中的内容树面板。 (FORMS-10912)
 * 当用户使用NVDA屏幕阅读器从日期选取器组件复制日期时，无法正确读取。 (FORMS-10805) 
 * 在Forms规则编辑器中，当数据值类型为布尔值时，用户无法设置单选按钮/复选框的值。 (FORMS-10713)
 * 当用户在自适应表单中添加添加的项目时，它会按相反顺序添加到下拉列表中。 (FORMS-10456)
 * 使用规则编辑器清除下拉列表后，即使已清除第一个提供的值，该值仍会显示。 (FORMS-9963) 
 * 用户无法使用屏幕阅读器（如NVDA）访问表单标题。 (FORMS-8815) 
-* 用户无法使用屏幕阅读器（如NVDA）访问表单中的子标题。 (FORMS-8814) 
+* 用户无法访问 `Sub Title` 在表单中使用NVDA等屏幕阅读器。 (FORMS-8814) 
 * 在html表单的页面源中，访问键属性为空且不起作用。 (FORMS-5753) 
 * 在关于工作区对话框中，文本“Adobe Experience Manager - Forms”以文本形式显示。 (FORMS-5748)
 
@@ -518,7 +518,7 @@ UberJar用于 [!DNL Experience Manager] 6.5.19.0可从以下网站获取： [Mav
 * 当用户选择在自适应表单中首次配置字段时，属性浏览器中不显示保存配置的选项。 选择在同一编辑器中配置自适应表单的某些其他字段可解决此问题。
 * 当用户执行提交操作时，提交失败并出现错误：
   ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-要解决此问题， [重新编译Sling脚本，例如JSP、Java和Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+要解决此问题， [重新编译Sling脚本，例如JSP、Java™和Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
 
 
 ## 包含的OSGi包和内容包{#osgi-bundles-and-content-packages-included}
