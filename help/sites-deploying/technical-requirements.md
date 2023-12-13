@@ -3,9 +3,9 @@ title: 技术要求
 description: Adobe Experience Manager支持的客户端和服务器平台列表。
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
 workflow-type: tm+mt
-source-wordcount: '3625'
+source-wordcount: '3624'
 ht-degree: 0%
 
 ---
@@ -77,7 +77,7 @@ Adobe会推荐这些配置，并在标准软件维护协议中提供全面支持
 
 ### Java™虚拟机 {#java-virtual-machines}
 
-应用程序要求运行 Java™虚拟机，它由 Java™开发工具包（JDK）分发提供。
+应用程序需要由Java™开发工具包(JDK)分发提供的Java™虚拟机才能运行。
 
 Adobe Experience Manager与以下版本的Java™虚拟机一起运行：
 
@@ -112,13 +112,13 @@ Adobe Experience Manager与以下版本的Java™虚拟机一起运行：
 | **平台** | **描述** | **支持级别** |
 |---|---|---|
 | **带有TAR文件的文件系统** `[1]` | 存储库 | 答：支持 |
-| **具有数据存储的文件系统** `[1]` | 二进制文件 | 答：支持 |
-| 在文件系统上的 TAR 文件中存储二进制文件 `[1]` | 二 进 制 文件 | Z：不支持生产 |
+| **具有数据存储的文件系统** `[1]` | 二 进 制 文件 | 答：支持 |
+| 在文件系统上的 TAR 文件中存储二进制文件 `[1]` | 二进制文件 | Z：不支持生产 |
 | Amazon S3 | 二进制文件 | 答：支持 |
-| Microsoft® Azure Blob存储 | 二进制文件 | 答：支持 |
+| Microsoft® Azure Blob存储 | 二 进 制 文件 | 答：支持 |
 | MongoDB Enterprise 4.4 | 存储库 | 答：支持 `[2, 3, 4]` |
 | MongoDB Enterprise 4.2 | 存储库 | 答：支持 `[2, 3, 4]` |
-| MongoDB Enterprise 4。0 | 存储库 | Z：不支持 |
+| MongoDB Enterprise 4.0 | 存储库 | Z：不支持 |
 | MongoDB Enterprise 3.6 | 存储库 | Z：不支持 |
 | MongoDB Enterprise 3.4 | 存储库 | Z：不支持 |
 | IBM® DB2® 10.5 | 存储库和Forms数据库 | R：有限的支持 `[5]` |
@@ -158,23 +158,23 @@ Adobe客户关怀团队可协助处理与将MongoDB与AEM结合使用相关的�
 >
 上面列出的受支持的关系数据库是第三方软件，未包含在AEM许可包中。
 >
-要使用受支持的关系数据库运行AEM 6.5，需要与数据库供应商签订单独的支持合同。 Adobe客户关怀团队协助处理与使用AEM 6.5的关系数据库相关的资格确认问题。
+要在支持的关系数据库中运行 AEM 6.5，需要一个与数据库供应商的单独支持合同。 Adobe Systems 客户服务可帮助解决与使用 AEM 6.5 的关系数据库有关的问题。
 >
-**目前，在AEM 6.5上的R级中支持大多数关系数据库，该数据库附带支持标准和支持计划，如上述R级说明中所述。**
+**目前，在 AEM 6.5 的 Level 中支持大多数关系数据库，其支持标准和支持项目在以上的 Level-R 描述中所述。**
 
 ### Servlet 引擎/应用程序服务器 {#servlet-engines-application-servers}
 
-Adobe Experience Manager 可以作为独立服务器（快速入门 JAR 文件）或第三方应用程序服务器（WAR 文件）中的 Web 应用程序运行。
+Adobe Experience Manager可以作为独立服务器（快速入门JAR文件）运行，也可以作为第三方应用程序服务器中的Web应用程序（WAR文件）运行。
 
 需要的最低Servlet API版本是Servlet 3.1
 
 | Platform | 支持级别 |
 |---|---|
 | **快速入门内置Servlet引擎(Jetty 9.4)** | 答：支持 |
-| oracleWebLogic Server 12.2 (12cR2) | Z：不支持 |
+| Oracle WebLogic Server 12.2 （12cR2） | Z：不支持 |
 | IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) with Web Profile 7.0和IBM® JRE 1.8 | R：对新合同的支持受到限制 `[2]` |
 | IBM® WebSphere® Application Server 9.0和IBM® JRE 1.8 | R：对新合同的支持受到限制 `[1]` `[2]` |
-| Apache Tomcat 8.5 x | R：对新合同的受限支持 `[2]` |
+| Apache Tomcat 8.5.x | R：对新合同的支持受到限制 `[2]` |
 | JBoss® EAP 7.2.x带JBoss®应用程序服务器 | Z：不支持 |
 | JBoss® EAP 7.1.4带JBoss®应用程序服务器 | R：对新合同的支持受到限制 `[1]` `[2]` |
 | JBoss® EAP 7.0.x带JBoss®应用程序服务器 | Z：不支持 |
@@ -203,21 +203,22 @@ Adobe Experience Manager可与以下服务器平台配合使用以用于生产�
 1. Ubuntu 20.04 LTS支持AEM Forms。
 1. AdobeManaged Services支持的Linux®分发。
 
-   >[注意！]
-对于基于Linux的服务器（OSGI和JEE栈栈），AEM Forms加载项需要运行时依赖关系，例如：
+   >[!NOTE]
+   >
+   对于基于Linux的服务器（OSGI和JEE栈栈），AEM Forms加载项需要运行时依赖关系，例如：
    * glibc.x86_64 (2.17-196)
    * libX11.x86_64 (1.6.7-4)
    * zlib.x86-64 (1.2.7-17)
    * libxcb.x86_64 (1.13-1.el7)
    * libXau.x86_64 (1.0.8-2.1.el7)
 
-1. Microsoft® Windows生产部署支持升级到6.5的客户和非生产使用。 AEM Sites和Assets会应请求进行新部署。
-1. Microsoft® Window Server上支持AEM Forms，但没有支持级别R限制。
+1. Microsoft® Windows 生产部署受升级至6.5 和非生产使用的客户支持。 新部署请求 AEM Sites 和 Assets。
+1. 没有支持级别的 R 限制，Microsoft® Window Server 支持 AEM Forms。
 1. AEM Forms 删除了对 Microsoft® Windows Server 2016 的支持。
 
 >[!NOTE]
 >
-如果您要安装 AEM Forms 6.5，请确保已安装以下32位 Microsoft® Visual c + + 可再发行组件。
+如果要安装AEM Forms 6.5，请确保已安装了以下32位Microsoft® Visual C++可再发行版本。
 >
 * Microsoft® Visual C++ 2008可再分发
 * Microsoft® Visual C++ 2010可再分发
@@ -226,7 +227,7 @@ Adobe Experience Manager可与以下服务器平台配合使用以用于生产�
 * Microsoft® Visual C++ 2019（VC14.28或更高版本）可再分发
 
 
-### 虚拟和云计算环境 {#virtual-cloud-computing-environments}
+### 虚拟 &amp; Cloud 计算环境 {#virtual-cloud-computing-environments}
 
 支持在云计算环境中的虚拟机中运行Adobe Experience Manager。 这些环境包括Microsoft®Azure和Amazon Web Services (AWS)，按照本页列出的技术要求和Adobe的标准支持条款运行。
 
@@ -234,9 +235,9 @@ Adobe Experience Manager可与以下服务器平台配合使用以用于生产�
 
 Adobe还提供AdobeManaged Services以在Azure或AWS上部署AEM。 AdobeManaged Services为专家提供了在这些云计算环境中部署和操作AEM的经验和技能。 请参阅 [有关AdobeManaged Services的其他文档](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-在所有其他情况下，在 Azure 或 AWS 上部署 AEM 或任何其他云计算环境，Adobe Systems 中的支持都包含在虚拟计算环境中。 该虚拟环境必须遵循此页面中列出的技术规范运行。 任何与在任何这些云环境中运行的 AEM 相关的报告问题都必须能够独立于特定于云计算环境的任何云服务进行重现。 也就是说，除非支持云服务作为此页面中列出的技术要求的一部分，例如 Azure Blob 存储或 AWS S3。
+在Azure或AWS或任何其他云计算环境中部署AEM的所有其他情况下，来自Adobe的支持都包含在虚拟计算环境中。 该虚拟环境必须按照本页中列出的技术规范运行。 任何与在任何这些云环境中运行的AEM相关的已报告问题都必须可独立于任何特定于云计算环境的云服务进行重现。 也就是说，除非本页面上列出的技术要求(例如Azure Blob Storage或AWS S3)支持Cloud Service。
 
-有关如何部署 Azure 或 AWS 上的 AEM 的推荐，请在 Adobe Systems Managed Services 以外，Adobe Systems 建议直接使用云提供商。 或者，与支持在您选择的云环境中部署AEM的Adobe合作伙伴合作。 选定的云提供商或合作伙伴负责体系结构的规模调整、设计和实施，以满足您的特定性能、负载、可扩展性和安全要求。
+有关如何在AdobeManaged Services之外的Azure或AWS上部署AEM的建议，Adobe建议直接与云提供商合作。 或者，与支持在您选择的云环境中部署AEM的Adobe合作伙伴合作。 选定的云提供商或合作伙伴负责体系结构的规模调整、设计和实施，以满足您的特定性能、负载、可扩展性和安全要求。
 
 ### Dispatcher平台（Web服务器） {#dispatcher-platforms-web-servers}
 
@@ -250,10 +251,10 @@ Dispatcher是缓存和负载平衡组件。 [下载最新的Dispatcher版本](ht
 | Microsoft® IIS 10 (Internet Information Server) | 答：支持 |
 | Microsoft® IIS 8.5 （Internet Information Server） | Z：不支持 |
 
-1. 基于 Apache httpd 源代码构建的 Web 服务器比它所基于的 httpd 的版本具有更大的支持。 如有疑问，请要求Adobe确认与相应服务器产品相关的支持级别。 以下情况：
+1. 基于 Apache httpd 源代码构建的 Web 服务器比它所基于的 httpd 的版本具有更大的支持。 如有疑问，请询问 Adobe Systems，以确认与相应服务器产品相关的支持级别。 以下情况：
 
-   1. HTTP 服务器仅使用官方 Apache 源分发构建，或者
-   1. HTTP 服务器是作为运行它的操作系统的一部分传送的。 示例： IBM® HTTP 服务器，Oracle HTTP 服务器
+   1. HTTP服务器仅使用官方的Apache源分发生成，或者
+   1. HTTP服务器是作为运行它的操作系统的一部分提供的。 示例： IBM® HTTP 服务器，Oracle HTTP 服务器
 
 1. 对于 Windows 操作系统，Dispatcher 不可用于 Apache 2.4. x。
 
@@ -299,7 +300,7 @@ Mozilla Firefox、Google Chrome和Microsoft® Edge每隔几个月发布一次更
    <td>答：支持</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox上一个ESR [1]</td>
+   <td>Mozilla Firefox 上次 ESR [1]</td>
    <td>答：支持</td>
    <td>答：支持</td>
   </tr>
@@ -315,7 +316,7 @@ Mozilla Firefox、Google Chrome和Microsoft® Edge每隔几个月发布一次更
   </tr>
   <tr>
    <td>iOS 12.x上的Apple Safari</td>
-   <td>答：支持的[2]</td>
+   <td>答：支持 [2]</td>
    <td>Z：不支持</td>
   </tr>
   <tr>
@@ -327,9 +328,9 @@ Mozilla Firefox、Google Chrome和Microsoft® Edge每隔几个月发布一次更
 </table>
 
 1. Firefox的扩展支持版本 [在mozilla.org上了解详情](https://www.mozilla.org/en-US/firefox/enterprise/)
-1. 支持 Apple iPad
+1. 支持Apple iPad
 
-### 网站支持的浏览器 {#supported-browsers-for-websites}
+### 支持的网站浏览器 {#supported-browsers-for-websites}
 
 通常，AEM Sites渲染的网站的浏览器支持取决于AEM页面模板的实施、设计和组件输出，因此受实施这些部分的方的控制。
 
@@ -367,7 +368,7 @@ Adobe Experience Manager的所有元素（实例、Dispatcher）都可以安装�
 
 ### AEM 动态媒体加载项的要求 {#requirements-for-aem-dynamic-media-add-on}
 
-默认情况下，AEM Dynamic Media处于禁用状态。 请参阅此处 [启用Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+默认情况下，禁用 AEM 动态媒体。 请参阅此处 [启用Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
 启用Dynamic Media后，还适用以下其他技术要求。
 
@@ -407,9 +408,9 @@ Adobe Experience Manager的所有元素（实例、Dispatcher）都可以安装�
 >
 **NUMA架构：** 处理器采用AMD64和Intel® EM64T的系统通常配置为非统一内存体系结构(NUMA)平台。 也就是说，内核在启动时构建多个内存节点，而不是构建单个内存节点。
 >
-该多节点结构可导致一个或多个节点上的存储器耗尽，而其它节点则被耗尽。 当内存耗尽时，即使存在可用内存，内核也可以决定终止进程（例如，图像服务器或平台服务器）。
+多节点构造可能会导致一个或多个节点上的内存耗尽，然后其他节点才会耗尽。 当内存耗尽发生时，内核可以决定终止进程（例如，图像服务器或 Platform 服务器），平衡有可用的内存。
 >
-因此，Adobe建议，如果运行的系统导致您使用 **numa=off** 引导选项，以避免内核终止这些进程。
+因此，Adobe Systems 建议您在运行这样的系统，以便您使用 **numa = off** 引导选项关闭 NUMA，以避免内核中止这些进程。
 
 >[!NOTE]
 >
@@ -465,11 +466,11 @@ Adobe Experience Manager的所有元素（实例、Dispatcher）都可以安装�
   </tr>
   <tr>
    <td>Microsoft® Office 2016 （已弃用）</td>
-   <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF和TXT</td>
+   <td>DOC、.DOCX、XLS、.XLSX、PPT、.PPTX、RTF 和 TXT</td>
   </tr>
   <tr>
    <td>WordPerfect 2020<br /> </td>
-   <td>WP, WPD</td>
+   <td>WP 、 WPD</td>
   </tr>
   <tr>
    <td>Microsoft® Office Visio 2016 （已弃用）<br /> </td>
