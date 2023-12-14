@@ -5,9 +5,10 @@ contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+hide: true
+source-git-commit: 477c62b857ab98d8617c7bd8ba226019d42d330d
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
@@ -16,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->已调用资产选择器 [资产选取器](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) 在早期版本中 [!DNL Experience Manager].
+>此 [资源选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en) 已调用 [资产选取器](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) 在早期版本中 [!DNL Experience Manager].
 
 通过资源选择器，您可以在中浏览、搜索和筛选资源 [!DNL Adobe Experience Manager] 资产。 您还可以获取使用资源选择器选择的资源的元数据。 要自定义资产选择器界面，您可以使用支持的请求参数启动该界面。 这些参数为特定方案设置资源选择器的上下文。
 
@@ -58,3 +59,7 @@ ht-degree: 1%
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
 1. 单击 **[!UICONTROL 选择]** 工具栏中。
+
+>[!MORELIKETHIS]
+>
+>* [AEMas a Cloud Service中的微前端资源选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)
