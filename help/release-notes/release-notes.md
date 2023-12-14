@@ -3,9 +3,9 @@ title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: d3f18320ca8a9a100e1aa6344a1c9424d0ff03ca
+source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
 workflow-type: tm+mt
-source-wordcount: '4225'
+source-wordcount: '4270'
 ht-degree: 6%
 
 ---
@@ -212,7 +212,8 @@ ht-degree: 6%
 * 列表无法在Adobe Acrobat Reader或Adobe Acrobat DC的标记中正确显示。 (LC-3921306)
 * 在Forms Designer中正确分配的标题级别将随机更改为 `<P>` Adobe Acrobat标记之前，填充于页面代码之后。 (LC-3921305) 
 * 在表中，任何对象的ID一经分配便无法修改。 (LC-3921134) 
-* 如果合并的单元格位于表中，则没有可用于在AEM Forms Designer的复杂表中设置范围（行和列）和范围的GUI。 (LC-3919532) 
+* 如果合并的单元格位于表中，则没有可用于在AEM Forms Designer的复杂表中设置范围（行和列）和范围的GUI。 (LC-3919532)
+  <!--* After applying AEM Service Pack 6.5.15.0 patch installer, notice generation fails intermittently  . (LC-3921530)-->
 
 ### Foundation{#foundation-6519}
 
@@ -517,8 +518,9 @@ UberJar用于 [!DNL Experience Manager] 6.5.19.0可从以下网站获取： [Mav
 * 发布自适应表单时，其所有依赖项（包括策略）都会重新发布，即使尚未对它们进行任何修改也是如此。 (FORMS-10454)
 * 当用户选择在自适应表单中首次配置字段时，属性浏览器中不显示保存配置的选项。 选择在同一编辑器中配置自适应表单的某些其他字段可解决此问题。
 * 当用户执行提交操作时，提交失败并出现错误：
-  ` javax.servlet.ServletException: java.lang.NoSuchMethodError`
-要解决此问题， [重新编译Sling脚本，例如JSP、Java™和Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+  `javax.servlet.ServletException: java.lang.NoSuchMethodError`
+要解决此问题， [重新编译Sling脚本，例如JSP、Java和Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* 当用户尝试在Adminui中的“主页”>“服务”>“字体”>“Adobe PDF设置”路径下为其PDFPDF Generator文档选择字体时，字体列表显示为空。 用户无法将字体添加到“始终嵌入”和“从不嵌入”列表。 (FORMS-12095)
 
 
 ## 包含的OSGi包和内容包{#osgi-bundles-and-content-packages-included}
