@@ -9,7 +9,7 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: bf6566bb9e3e77924b89b31fc2ef4a59545a66da
 workflow-type: tm+mt
 source-wordcount: '1392'
 ht-degree: 0%
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 如果文件夹已具有您后来更改的现有处理配置文件，您可以重新处理该文件夹中的资产。
 
-例如，假设您创建了一个图像配置文件并将其分配给一个文件夹。 您上传到文件夹的任何图像资产都会自动将图像配置文件应用于资产。 但是，稍后您决定为配置文件添加一个新的智能裁切比率。 现在，您只需运行 *Scene7：重新处理资源* 工作流。
+例如，假设您创建了一个图像配置文件并将其分配给一个文件夹。 您上传到文件夹的任何图像资产都会自动将图像配置文件应用于资产。 但是，稍后您决定为配置文件添加一个新的智能裁切比率。 现在，您只需运行 *Dynamic Media重新处理* <!-- *Scene7: Reprocess Assets* --> 工作流。
 
 您可以对首次处理失败的资产运行重新处理工作流。 因此，即使您尚未编辑处理配置文件或未应用处理配置文件，您仍可以随时对资产的文件夹运行重新处理工作流。
 
@@ -61,11 +61,11 @@ ht-degree: 0%
 >
 >必须在Dynamic Media服务器上禁用迁移发布代理，以便重新处理工作流可按预期运行。
 
-<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Scene7: Reprocess Assets workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
+<!-- Batch size is the number of assets that are amalgamated into a single IPS (Dynamic Media's Image Production System) job. When you run the Dynamic Media Reprocess workflow, the job is triggered on IPS. The number of IPS jobs that are triggered is based on the total number of assets in the folder, divided by the batch size. For example, suppose you had a folder with 150 assets and a batch size of 50. In this case, three IPS jobs are triggered. The assets are updated when the entire batch size (50 in our example) is processed in IPS. The job then moves onto the next IPS job, and so on, until complete. If you increase the batch size, you may notice a longer delay with assets getting updated. -->
 
 **要重新处理文件夹中的资产，请执行以下操作：**
 
-1. 在Experience Manager中，从资源页面，导航到已分配处理配置文件且要应用其的资源文件夹。 **[!UICONTROL Scene7：重新处理资源]** 工作流，
+1. 在Experience Manager中，从资源页面，导航到已分配处理配置文件且要应用其的资源文件夹。 **[!UICONTROL Dynamic Media重新处理]** 工作流，
 
    在卡片视图中，如果文件夹已经分配了处理配置文件，则文件夹名称的正下方会显示配置文件的名称。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
    ![重新处理资产工作流1](/help/assets/assets/reprocess-assets1.png)
 
 1. 选择 **[!UICONTROL 启动工作流]**.
-1. 从 **[!UICONTROL 启动工作流]** 下拉列表，选择 **[!UICONTROL Scene7：重新处理资源]**.
+1. 从 **[!UICONTROL 启动工作流]** 下拉列表，选择 **[!UICONTROL Dynamic Media重新处理]**.
 1. （可选）在 **输入工作流的标题** 文本字段，输入工作流的名称。 如有必要，您可以使用名称来引用工作流实例。
 
    ![重新处理资产2](/help/assets/assets/reprocess-assets2.png)
@@ -97,12 +97,12 @@ ht-degree: 0%
 **要根据需要调整重新处理工作流的批大小，请执行以下操作：**
 
 1. 在Experience Manager中，选择 **[!UICONTROL Adobe Experience Manager]** 要访问全局导航控制台，请选择 **[!UICONTROL 工具]** （锤子）图标> **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**.
-1. 在“工作流模型”页面的卡片视图或列表视图中，选择 **[!UICONTROL Scene7：重新处理资源]**.
+1. 在“工作流模型”页面的卡片视图或列表视图中，选择 **[!UICONTROL Dynamic Media重新处理]**.
 
-   ![使用Scene7的“工作流模型”页面：重新处理在卡片视图中选择的资产工作流](/help/assets/assets-dm/reprocess-assets7.png)
+   ![在卡片视图中选择了Dynamic Media重新处理工作流的“工作流模型”页面](/help/assets/assets-dm/reprocess-assets7.png)
 
-1. 在工具栏上，选择 **[!UICONTROL 编辑]**. 新的浏览器选项卡将打开Scene7：重新处理资源工作流模型页面。
-1. 在Scene7：重新处理资产工作流页面的右上角附近，选择 **[!UICONTROL 编辑]** 以“解锁”工作流。
+1. 在工具栏上，选择 **[!UICONTROL 编辑]**. 新的浏览器选项卡将打开Dynamic Media重新处理工作流模型页面。
+1. 在Dynamic Media重新处理工作流页面的右上角附近，选择 **[!UICONTROL 编辑]** 以“解锁”工作流。
 1. 在工作流中，选择Scene7批量上传组件以打开工具栏，然后选择 **[!UICONTROL 配置]** 工具栏上。
 
    ![Scene7批量上传组件](/help/assets/assets-dm/reprocess-assets8.png)
@@ -119,11 +119,11 @@ ht-degree: 0%
 
 1. 在右上角 **[!UICONTROL 批量上传至Scene7 — 步骤属性]** 对话框，选择 **[!UICONTROL 完成]**.
 
-1. 在“Scene7：重新处理资产”工作流模型页面的右上角，选择 **[!UICONTROL 同步]**. 当您看到 **[!UICONTROL 已同步]**，则工作流运行时模型已成功同步并准备好重新处理文件夹中的资产。
+1. 在“Dynamic Media重新处理工作流模型”页面的右上角，选择 **[!UICONTROL 同步]**. 当您看到 **[!UICONTROL 已同步]**，则工作流运行时模型已成功同步并准备好重新处理文件夹中的资产。
 
    ![同步工作流模型](/help/assets/assets-dm/reprocess-assets1.png)
 
-1. 关闭显示“Scene7：重新处理资源”工作流模型的浏览器选项卡。
+1. 关闭显示Dynamic Media重新处理工作流模型的浏览器选项卡。
 
 <!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
@@ -143,4 +143,4 @@ ht-degree: 0%
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Scene7: Reprocess Assets workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
