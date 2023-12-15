@@ -3,9 +3,9 @@ title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 2118cecd8e66e41a1ce1c859cf62b1f18f7cb891
+source-git-commit: b5ecac71b07bfceb2708f20fe50965dec25e2194
 workflow-type: tm+mt
-source-wordcount: '4270'
+source-wordcount: '4259'
 ht-degree: 6%
 
 ---
@@ -145,7 +145,7 @@ ht-degree: 6%
 * 在资产类型筛选器上选择多个文档文件类型在页面控制台上不起作用。 即使某个特定文件类型的结果可用，也找不到任何结果。 因此，作者无法过滤多个文档。 他们必须使用多种文档类型，并且必须逐个进行筛选。 (SITES-14047)
 * 从AEM 6.5.17和AEM 6.5.18升级实例后，在页面编辑器中（如果已选择） **[!UICONTROL 发布页面]**，您会被重定向到不存在的URL。 用户应被重定向到“发布”向导。 (SITES-15856)
 * 在操作系统剪贴板粘贴过程中从AEM剪贴板进行冗余复制。 (SITES-15704)
-* 在资产中，选择 **[!UICONTROL 文档]**，然后在 **[!UICONTROL Filtertype]**，选择 **[!UICONTROL Microsoft® Word]** 或 **[!UICONTROL Microsoft® Excel]** 即使存在这两种类型的文件，也不显示任何结果。 (SITES-14837)
+* 在资产中，选择 **[!UICONTROL 文档]**，然后在 **[!UICONTROL Filtertype]**，选择 **[!UICONTROL Microsoft®® Word]** 或 **[!UICONTROL Microsoft®® Excel]** 即使存在这两种类型的文件，也不显示任何结果。 (SITES-14837)
 
 ### [!DNL Assets]{#assets-6519}
 
@@ -519,9 +519,9 @@ UberJar用于 [!DNL Experience Manager] 6.5.19.0可从以下网站获取： [Mav
 * 当用户选择在自适应表单中首次配置字段时，属性浏览器中不显示保存配置的选项。 选择在同一编辑器中配置自适应表单的某些其他字段可解决此问题。
 * 当用户执行提交操作时，提交失败并出现错误：
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-要解决此问题， [重新编译Sling脚本，例如JSP、Java和Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
-* 当用户尝试在Adminui中的“主页”>“服务”>“字体”>“Adobe PDF设置”路径下为其PDFPDF Generator文档选择字体时，字体列表显示为空。 用户无法将字体添加到“始终嵌入”和“从不嵌入”列表。 (FORMS-12095)
-
+要解决此问题， [重新编译Sling脚本，例如JSP、Java™和Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+* 安装AEM Service Pack 6.5.14.0及更高版本后，导航到时，用户无法从JEE管理员UI中选择用于PDF文档的字体 `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`，因为字体列表显示为空。 (FORMS-12095)
+  <!--The font enumeration fails due to the missing Ps2Pdf service file.-->
 
 ## 包含的OSGi包和内容包{#osgi-bundles-and-content-packages-included}
 
