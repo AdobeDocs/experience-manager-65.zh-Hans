@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: e35f7a683928b7de7ab0b02e6aa3401eeccacd95
+source-git-commit: 61a2fe04805478f7eaf0484edd6a1874e8e96404
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '455'
 ht-degree: 1%
 
 ---
@@ -55,25 +55,20 @@ Struts 2 RCE是一种用于开发Java EE Web应用程序的流行开放源码Web
 
 1. 运行以下命令列出所有struts2 jar文件。 运行命令之前，将以上命令中的路径替换为AEM Form服务器的路径：
 
-       ```javascript
-       
-       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
-       
-       ```
-   
-1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前将以上命令中的路径替换为AEM Form服务器的路径和 `struts2-core-2.5.33.jar` 文件。
+   ```
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   ```
+
+1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前。 将以上命令中的路径替换为AEM Form服务器的路径，并且 `struts2-core-2.5.33.jar` 文件。
 
 
-       ```javascript
-       
-       patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
-       
-       
-       patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=。*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
-       
-       
-       ```
+   ```
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
    
+   
+   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
+   ```
+
 1. 启动AEM Forms服务器。
 
 
@@ -81,23 +76,19 @@ Struts 2 RCE是一种用于开发Java EE Web应用程序的流行开放源码Web
 
 1. 运行以下命令列出所有struts2 jar文件。 运行命令之前，将以上命令中的路径替换为AEM Form服务器的路径：
 
-       ```javascript
-       
-       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
-       
-       ```
-   
+   ```
+   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   ```
+
 1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前将以上命令中的路径替换为AEM Form服务器的路径和 `struts2-core-2.5.33.jar` 文件。
 
-       ```javascript
-       
-       patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
-       
-       
-       patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=。*struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.jar -action=replace \Users\labuser\Desktop\struts2-core.jar
-       
-       ```
+   ```
+   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
    
+   
+   patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.jar -action=replace \Users\labuser\Desktop\struts2-core.jar
+   ```
+
 1. 启动AEM Forms服务器。
 
 >[!ENDTABS]
