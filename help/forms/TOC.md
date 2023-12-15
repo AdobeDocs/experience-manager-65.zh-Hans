@@ -9,9 +9,9 @@ breadcrumb-title: Forms 指南
 user-guide-description: 创建、管理、发布和更新数字表单。
 role: User
 feature: Forms Service
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
 workflow-type: tm+mt
-source-wordcount: '3765'
+source-wordcount: '3774'
 ht-degree: 3%
 
 ---
@@ -701,6 +701,7 @@ ht-degree: 3%
    + [JBoss Linux环境中的AEM Forms JEE 6.5.15.0 Service Pack安装问题](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
    + [即使AEM Forms服务器未完全启动并运行，也正在处理文档](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
    + [无法使用输出服务、Forms服务或记录文档(DoR)服务](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
+     [缓解Experience Manager Forms的Struts 2 RCE漏洞](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
 + 旧版文档 {#legacy-documentation}
    + [使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据](developing/building-xml.md)
    + [在JEE自定义DSC中使用AEM Forms压缩和解压缩文件](developing/compressing-decompressing-custom-dsc.md)

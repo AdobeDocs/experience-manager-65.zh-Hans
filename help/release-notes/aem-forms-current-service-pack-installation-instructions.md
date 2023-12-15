@@ -2,9 +2,9 @@
 title: 适用于AEM Forms的AEM Forms修补程序安装说明
 description: 适用于OSGi和JEE环境的AEM Forms Service Pack安装说明
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: 287717e39ff58396de6d63a89e2b3d8fef4e6888
 workflow-type: tm+mt
-source-wordcount: '1711'
+source-wordcount: '1755'
 ht-degree: 6%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 6%
 
 | 产品 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 版本 | 6.5.19.0 |
+| 版本 | 6.5.19.0 (OSGi) 6.5.19.0 (JEE) |
 | 类型 | Service Pack版本 |
 | 日期 | 2023 年 12 月 08 日 |
 | 下载 URL | [最新AEM Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
@@ -65,6 +65,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++2. 下载所需的软件
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+
+Struts 2 RCE是一种用于开发Java EE Web应用程序的流行开放源码Web应用程序框架，已经报告了它存在严重的安全漏洞。 Adobe已发布AEM 6.5 Service Pack 19.1 (6.5.19.1)，以解决JEE上AEM Forms中的漏洞。
+
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html)
 * [Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [片段Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
