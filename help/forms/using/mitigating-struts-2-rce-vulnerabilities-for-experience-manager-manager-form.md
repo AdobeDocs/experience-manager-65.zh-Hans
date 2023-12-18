@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: 5f5fcc10927d62cdfaeb0770c34052ceda02b2e8
+source-git-commit: e42d01f1e5e44b12b755c20f826331ddbad8ab58
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '524'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 问题
 
-Struts 2 RCE是一种用于开发Java EE Web应用程序的流行开放源码Web应用程序框架，已经报告了它存在严重的安全漏洞。 已分析以下漏洞：
+Struts 2是一种用于开发Java EE Web应用程序的流行开放源码Web应用程序框架，已报告了该框架存在的严重安全漏洞。 已分析以下漏洞：
 
 | 漏洞 | 受影响的内容？ | 哪些内容未受影响？ |
 |---|---|---|
@@ -48,7 +48,8 @@ Struts 2 RCE是一种用于开发Java EE Web应用程序的流行开放源码Web
 1. 打开终端窗口，并导航到包含提取文件的文件夹。
 1. 使用手动打补丁工具搜索、列出和替换所有struts2 jar文件。 该工具需要互联网连接，因为它在运行时下载依赖项。 因此，在运行该工具之前，请确保已连接到Internet。
 
-要搜索和替换struts2-core-2.5.30 jar文件和struts2-core.jar，请执行以下操作：
+要搜索和替换 `struts2-core-2.5.30.jar` 和 `struts2-core.jar` 文件：
+
 
 
 >[!BEGINTABS]
@@ -57,19 +58,26 @@ Struts 2 RCE是一种用于开发Java EE Web应用程序的流行开放源码Web
 
 1. 运行以下命令列出所有struts2 jar文件。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径：
 
+
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
-1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前。 将命令中的路径替换为AEM Forms服务器的路径，并且 `struts2-core-2.5.33.jar` 文件。
+1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径，并且 `struts2-core-2.5.33.jar` 文件。
+
 
 
    ```
    patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
    
    
-   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar -action=replace C:\Users\labuser\Desktop\struts2-core.jar
+   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar        
    ```
+
+   上述步骤修补包含 `struts2-core-2.5.30.jar` 和 `struts2-core.jar` 文件。
+
+1. 取消部署旧版EAR，然后将打补丁的EAR文件部署到应用程序服务器。
+
 
 1. 启动AEM Forms服务器。
 
@@ -78,18 +86,24 @@ Struts 2 RCE是一种用于开发Java EE Web应用程序的流行开放源码Web
 
 1. 运行以下命令列出所有struts2 jar文件。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径：
 
+
    ```
-   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   patch-archive.sh -root=/Users/labuser/Adobe.Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$
    ```
 
 1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径，并且 `struts2-core-2.5.33.jar` 文件。
 
+
    ```
-   patch-archive.sh -root=\Users\labuser\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace \temp\struts2-core-2.5.33.jar
+   patch-archive.sh -root=/Users/labuser/Adobe/Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$ -action=replace /temp/struts2-core-2.5.33.jar
    
    
-   patch-archive.sh -root=\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace \Users\labuser\Desktop\struts2-core.jar -action=replace \Users\labuser\Desktop\struts2-core.jar
+   patch-archive.sh -root=/Users/labuser/Desktop/check -pattern=.*struts2-core.jar$ -action=replace /Users/labuser/Desktop/struts2-core.jar
    ```
+
+   上述步骤修补包含 `struts2-core-2.5.30.jar` 和 `struts2-core.jar` 文件。
+
+1. 取消部署旧版EAR，然后将打补丁的EAR文件部署到应用程序服务器。
 
 1. 启动AEM Forms服务器。
 
