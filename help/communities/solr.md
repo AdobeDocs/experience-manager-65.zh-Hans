@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
+source-git-commit: 1f1deb4f5d2033420aa1cece95666894b2f56aad
 workflow-type: tm+mt
-source-wordcount: '1422'
+source-wordcount: '1423'
 ht-degree: 2%
 
 ---
@@ -56,7 +56,7 @@ An [Apache Solr](https://solr.apache.org/) 安装可在以下用户之间共享�
 ### JVM配置示例 {#jvm-configuration-example}
 
 ```shell
-JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
+JVM_OPTS="-server -Xmx2048m -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
 ```
 
 ### SolrCloud设置命令 {#solrcloud-setup-commands}
@@ -80,8 +80,7 @@ JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CM
 引用：
 [https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
-用途:
-./bin/solr创建 \
+用法： 。/bin/solr创建 \
 -c *mycollection-name*\
 -d *config-dir* \
 -n *myconfig-name* \
@@ -298,7 +297,7 @@ AEM Communities的多语言搜索(MLS)是为Solr平台而构建的，旨在跨�
 
      solr中的收藏集路径
 
-   * --帮助
+   *  — 帮助
 
      打印命令行选项
 
@@ -314,7 +313,7 @@ AEM Communities的多语言搜索(MLS)是为Solr平台而构建的，旨在跨�
 
    * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
 
-**注意**:
+**注意**：
 
 * 安装脚本在安装新版本之前通过附加“.orig”备份schema.xml和solrconfig.xml
 
