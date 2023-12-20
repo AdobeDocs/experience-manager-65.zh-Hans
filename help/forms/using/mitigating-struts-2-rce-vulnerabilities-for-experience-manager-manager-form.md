@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: e42d01f1e5e44b12b755c20f826331ddbad8ab58
+source-git-commit: f928256920499ab4744b5d8173b449c8fa7f3b8d
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '593'
 ht-degree: 1%
 
 ---
@@ -38,72 +38,76 @@ Struts 2是一种用于开发Java EE Web应用程序的流行开放源码Web应�
 
 您可以使用手动缓解步骤来解决运行Service Pack 13的AEM 6.5表单服务器到运行Service Pack 18 (6.5.13.0 - 6.5.18.0)的AEM 6.5表单服务器上的问题：
 
-1. 关闭所有服务器实例和定位器。
-1. 下载 [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar).
+1. 下载 [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) 到本地文件夹。 例如，C:\Users\labuser\Desktop\struts2-core-2.5.33.jar。
 1. 从下载AEM Forms on JEE手动修补工具 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
-1. 解压缩手动修补工具存档。 它提取以下文件：
+1. 解压缩手动修补工具存档。 例如，提取到 `/Users/labuser/Desktop/archive-patcher-1.0.0 folder`. 将提取以下文件：
    * archive-patcher-1.0.0.jar
    * patch-archive.bat
    * patch-archive.sh
-1. 打开终端窗口，并导航到包含提取文件的文件夹。
-1. 使用手动打补丁工具搜索、列出和替换所有struts2 jar文件。 该工具需要互联网连接，因为它在运行时下载依赖项。 因此，在运行该工具之前，请确保已连接到Internet。
-
-要搜索和替换 `struts2-core-2.5.30.jar` 和 `struts2-core.jar` 文件：
-
-
 
 >[!BEGINTABS]
 
 >[!TAB Windows]
 
-1. 运行以下命令列出所有struts2 jar文件。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径：
+1. 关闭所有服务器实例和定位器。
+
+1. 打开终端窗口，并导航到包含AEM Forms on JEE手动修补工具（解压缩的文件）的文件夹。
+
+1. 运行以下命令以搜索具有旧版struts2库的所有文件。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径：
 
 
    ```
-   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\export -pattern=.*struts2-core.*jar$
    ```
+
+   >[!NOTE]
+   >
+   >
+   >该工具需要互联网连接，因为它在运行时下载依赖项。 因此，在运行该工具之前，请确保已连接到Internet。
 
 1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径，并且 `struts2-core-2.5.33.jar` 文件。
 
 
 
    ```
-   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\...\export -pattern=.*struts2-core-2.5.30.jar$ -action=replace C:\temp\struts2-core-2.5.33.jar
-   
-   
-   patch-archive.bat -root=C:\Users\labuser\Desktop\check -pattern=.*struts2-core.jar$ -action=replace C:\Users\labuser\Desktop\struts2-core.jar        
+   patch-archive.bat -root=C:\Adobe\Adobe_Experience_Manager_Forms\configurationManager\export -pattern=.*struts2-core.*jar$ -action=replace C:\Users\labuser\Desktop\struts2-core-2.5.33.jar
    ```
 
-   上述步骤修补包含 `struts2-core-2.5.30.jar` 和 `struts2-core.jar` 文件。
+   上述步骤使用旧版struts2库修补所有ear文件。
 
-1. 取消部署旧版EAR，然后将打补丁的EAR文件部署到应用程序服务器。
-
+1. 取消部署旧版EAR，并将打补丁的EAR文件（位于导出文件夹中）部署到应用程序服务器。
 
 1. 启动AEM Forms服务器。
 
-
 >[!TAB Linux]
 
-1. 运行以下命令列出所有struts2 jar文件。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径：
+1. 关闭所有服务器实例和定位器。
+
+1. 打开终端窗口，并导航到包含AEM Forms on JEE手动修补工具（解压缩的文件）的文件夹。
+
+1. 运行以下命令以搜索具有旧版struts2库的所有文件。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径：
 
 
    ```
-   patch-archive.sh -root=/Users/labuser/Adobe.Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$
+   ./patch-archive.sh -root=/opt/Adobe/Adobe_Experience_Manager_Forms/configurationManager/export/ -pattern=.*struts2-core.*jar$
    ```
+
+   >[!NOTE]
+   >
+   >
+   >该工具需要互联网连接，因为它在运行时下载依赖项。 因此，在运行该工具之前，请确保已连接到Internet。
 
 1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径，并且 `struts2-core-2.5.33.jar` 文件。
 
 
+
    ```
-   patch-archive.sh -root=/Users/labuser/Adobe/Adobe_Experience_Manager_Forms/.../export -pattern=.*struts2-core-2.5.30.jar$ -action=replace /temp/struts2-core-2.5.33.jar
-   
-   
-   patch-archive.sh -root=/Users/labuser/Desktop/check -pattern=.*struts2-core.jar$ -action=replace /Users/labuser/Desktop/struts2-core.jar
+   ./patch-archive.sh -root=/opt/Adobe/Adobe_Experience_Manager_Forms/configurationManager/export/ -pattern=.*struts2-core.*jar$ -action=replace /opt/struts2-core-2.5.33.jar
    ```
 
-   上述步骤修补包含 `struts2-core-2.5.30.jar` 和 `struts2-core.jar` 文件。
+   上述步骤使用旧版struts2库修补所有ear文件。
 
-1. 取消部署旧版EAR，然后将打补丁的EAR文件部署到应用程序服务器。
+1. 取消部署旧版EAR，并将打补丁的EAR文件（位于导出文件夹中）部署到应用程序服务器。
 
 1. 启动AEM Forms服务器。
 
