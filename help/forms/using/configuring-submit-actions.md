@@ -6,10 +6,10 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 9f88eeb6770c59f7a52db30f19f3a1a78cbc401b
+source-git-commit: 23dd80f0555ddec1ca422b13fbf0d45acf5ab6a8
 workflow-type: tm+mt
-source-wordcount: '2581'
-ht-degree: 49%
+source-wordcount: '2580'
+ht-degree: 48%
 
 ---
 
@@ -169,14 +169,14 @@ ht-degree: 49%
 
 ## 提交到Microsoft®SharePoint列表{#submit-to-sharedrive}
 
-**[!UICONTROL 提交到 SharePoint]**&#x200B;提交操作将自适应表单与 Microsoft® SharePoint 存储连接起来。您可以将表单数据文件、附件或记录文档提交到连接的Microsoft® Sharepoint存储。
+此 **[!UICONTROL 提交到SharePoint]** 提交操作将自适应表单与Microsoft® SharePoint存储相关联。 您可以将表单数据文件、附件或记录文档提交到连接的Microsoft® Sharepoint存储。
 
 ### 将自适应表单连接到Microsoft® SharePoint列表 {#connect-af-sharepoint-list}
 
-要使用 [!UICONTROL 提交到SharePoint列表] 以自适应表单提交操作：
+要将自适应表单连接到Microsoft® SharePoint列表，请执行以下操作：
 
 1. [创建SharePoint列表配置](#create-sharepoint-list-configuration)：用于将AEM Forms连接到Microsoft® Sharepoint List Storage。
-1. [在自适应表单中使用表单数据模型提交](#use-submit-using-fdm)：它将您的自适应表单连接到配置的Microsoft® SharePoint。
+1. [使用 **使用表单数据模型提交** 在自适应表单中提交操作](#use-submit-using-fdm)：将您的自适应表单数据发送到配置的Microsoft® SharePoint。
 
 #### 创建SharePoint列表配置 {#create-sharepoint-list-configuration}
 
