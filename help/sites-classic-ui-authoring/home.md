@@ -2,10 +2,10 @@
 title: AEM 6.5 Classic UI创作用户指南
 description: 本指南介绍经典用户界面中在AEM中创作的概念。
 exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 16%
+source-wordcount: '248'
+ht-degree: 12%
 
 ---
 
@@ -27,7 +27,6 @@ ht-degree: 16%
 | [发行说明](/help/release-notes/home.md) | 提供有关最新版本的AEM的重要信息，包括新增功能、支持的平台、已弃用和已删除的功能以及已知问题。 |
 | [Assets 用户指南](/help/assets/home.md) | 了解如何创建、管理、交付和优化数字资源。 |
 | [Forms用户指南](/help/forms/home.md) | 本指南介绍如何创建、管理、发布和更新数字表单。 |
-| [Communities用户指南](/help/communities/home.md) | 创建在线体验，如论坛、用户组、学习资源和其他社交功能。 |
 | [Administering指南](/help/sites-administering/home.md) | 了解如何管理AEM |
 | [Authoring指南](/help/sites-authoring/home.md) | 本指南介绍在AEM中创作的概念。 |
 | [经典UI创作指南](/help/sites-classic-ui-authoring/home.md) | 本指南在经典用户界面中说明在AEM中创作的概念。 |
@@ -36,7 +35,6 @@ ht-degree: 16%
 | [Developing用户指南](/help/sites-developing/home.md) | 了解如何构建AEM实例。 |
 | [Managing用户指南](/help/managing/home.md) | 本指南介绍如何成功管理AEM项目。 |
 | [Commerce 用户指南](/help/commerce/home.md) | 了解AEM上的Commerce integration framework。 |
-| [Mobile用户指南](/help/mobile/home.md) | 本指南介绍如何创建和管理移动设备应用程序的内容。 |
 
 ## 重要AEM资源
 

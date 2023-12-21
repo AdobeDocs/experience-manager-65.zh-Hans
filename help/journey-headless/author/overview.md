@@ -2,10 +2,10 @@
 title: AEM Headless 内容作者历程
 description: 从此处开始，借助 AEM 强大而灵活的 Headless 功能、相应的功能以及为项目创作内容的方法，实施引导式历程。
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
-source-wordcount: '861'
-ht-degree: 84%
+source-wordcount: '847'
+ht-degree: 81%
 
 ---
 
@@ -33,9 +33,9 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 
 [文档历程](/help/journey-documentation/home.md)通过提供叙述来帮助可能是 AEM 新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或 AEM 知识，从而将许多不同且可能复杂的主题和功能联系起来。
 
-文档历程是围绕最佳实践准则而设计的，其中包含了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及来自客户项目的反馈。
+文档历程是围绕最佳实践准则而设计的，其中参考了 Adobe 的最新研究、Adobe 顾问提供的成熟实施经验以及客户项目产生的反馈。
 
-如果您想了解 Adobe 就如何使用 AEM 解决 Headless 业务案例提出的建议，则可以从 [AEM Headless 历程](/help/journey-headless/home.md)开始。
+如果您想了解 Adobe 就如何使用 AEM 解决 Headless 业务案例提出的建议，则可以从 [AEM Headless 历程](/help/journey-headless/overview.md)开始。
 
 ## 受众 {#audience}
 
@@ -81,7 +81,7 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
 * [Headless架构师历程](/help/journey-headless/architect/overview.md)  — 从这里开始了解Adobe Experience Manager强大而灵活的Headless功能，以及如何对项目内容进行建模。
-* [AEM 技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans) – 如果您对 AEM 和 Headless 技术的了解颇为扎实，则您可能想要直接查阅我们详尽的技术文档。
+* [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans)  — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
    * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)

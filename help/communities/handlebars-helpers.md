@@ -1,12 +1,10 @@
 ---
 title: SCF Handlebars助手
 description: 便于使用SCF的Handlebars帮助程序方法
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 787e5a87f13498006e2ce897e85ee12704b58f09
 workflow-type: tm+mt
 source-wordcount: '1453'
 ht-degree: 2%
@@ -172,7 +170,7 @@ Then content-loadmore would return
 ```
 {{#equals  value "some-value"}}
   <div>They are EQUAL!</div>
-{{else}}
+`{{else}}`
   <div>They are NOT equal!</div>
 {{/equals}}
 ```
@@ -196,9 +194,9 @@ Then content-loadmore would return
 ```xml
 {{#if-wcm-mode mode="DESIGN, EDIT"}}
  ...
-{{else}}
+{else}}
  ...
-{{/if-wcm-mode}}
+`{{/if-wcm-mode}}`
 ```
 
 ## i18n {#i-n}
@@ -477,7 +475,7 @@ var context = {posts: [
   ] };
 
 // when link_to is called, posts is the current context
-var source = '<ul>{{#posts}}<li>{{{link_to "Post"}}}</li>{{/posts}}</ul>'
+var source = '<ul>`{{#posts}}`<li>{{{link_to "Post"}}}</li>`{{/posts}}`</ul>'
 
 var template = Handlebars.compile(source);
 
@@ -503,7 +501,7 @@ var data = { "people": [
 ]};
 
 // when link is called, people is the current context
-var source = "<ul>{{#people}}<li>{{#link}}{{name}}{{/link}}</li>{{/people}}</ul>";
+var source = "<ul>`{{#people}}`<li>`{{#link}}``{{name}}``{{/link}}`</li>`{{/people}}`</ul>";
 
 var template = Handlebars.compile(source);
 

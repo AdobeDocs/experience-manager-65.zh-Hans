@@ -1,15 +1,15 @@
 ---
-title: Headless 快速入门指南
+title: Headless快速入门指南
 description: 通过本快速入门指南，了解Adobe Experience Manager (AEM) 6.5强大的Headless功能的基础知识，例如内容模型、内容片段和GraphQL API。
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
 workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 42%
+ht-degree: 39%
 
 ---
 
-# Headless 快速入门指南 {#introduction}
+# Headless快速入门指南 {#introduction}
 
 Headless快速入门指南为已熟悉AEM和Headless技术的用户通过五个步骤使用Adobe Experience Manager (AEM) 6.5创建、管理和交付体验提供了一种简单途径。 每份指南都建立在上一份指南的基础之上，因此建议按顺序仔细地研究这些内容。
 
@@ -23,7 +23,7 @@ Headless快速入门指南为已熟悉AEM和Headless技术的用户通过五个�
 >
 >本快速入门指南假定您已了解 AEM 和 Headless 技术。
 >
->如果您不熟悉AEM或headless，请参阅 [Headless文档历程](/help/journey-headless/home.md) 有关headless的端到端介绍以及AEM如何支持它。
+>如果您不熟悉AEM或headless，请参阅 [Headless文档历程](/help/journey-headless/overview.md) 有关headless的端到端介绍以及AEM如何支持它。
 
 ## 受众 {#audience}
 

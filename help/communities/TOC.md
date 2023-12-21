@@ -7,10 +7,11 @@ breadcrumb-title: Communities 指南
 user-guide-description: 创建在线体验，如论坛、用户组、学习资源和其他社交功能。
 feature: Communities
 role: User
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+hide: true
+source-git-commit: e0db340b4fd4e4f7fe7ed623fb2ee9f1b789e39e
 workflow-type: tm+mt
-source-wordcount: '451'
-ht-degree: 10%
+source-wordcount: '423'
+ht-degree: 11%
 
 ---
 
@@ -21,7 +22,6 @@ ht-degree: 10%
 + AEM Communities简介 {#introduction}
    + [社区站点](administer-landing.md)
    + [AEM Communities概述](overview.md)
-   + [AEM Communities发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
    + [AEM Communities快速入门](getting-started.md)
    + [初始设置](setup.md)
    + [创作新社区站点](create-site.md)
@@ -34,7 +34,6 @@ ht-degree: 10%
    + [为社区配置Dispatcher](dispatcher.md)
 + 管理 {#administer}
    + [AEM Communities中的用户和UGC管理服务](user-ugc-management-service.md)
-   + [社区站点](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [社区控制台](consoles.md)
    + [用于社区功能的Analytics配置](analytics.md)
    + [配置消息传送](messaging.md)
@@ -153,4 +152,3 @@ ht-degree: 10%
    + [活动趋势](trends.md)
    + [使用社交标签云](tagcloud.md)
    + [使用投票](voting.md)
-   + [创建示例页面](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)

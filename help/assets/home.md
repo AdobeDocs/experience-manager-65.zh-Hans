@@ -5,10 +5,10 @@ user-guide-title: Assets 指南
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 24%
+source-wordcount: '250'
+ht-degree: 11%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 24%
 
 ## 键 [!DNL Experience Manager] 文章
 
-* [Experience Manager6.5发行说明](/help/release-notes/home.md)
+* [Experience Manager 6.5发行说明](/help/release-notes/home.md)
 * [近期文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [安全核对清单](/help/sites-administering/security-checklist.md)
 
@@ -28,17 +28,14 @@ ht-degree: 24%
 |--- |---|
 | [发行说明](/help/release-notes/home.md) | 提供有关最新版本的重要信息，包括新增功能、支持的平台、已弃用和已删除的功能以及已知问题 |
 | [Forms用户指南](/help/forms/home.md) | 本指南介绍如何创建、管理、发布和更新数字表单。 |
-| [Communities用户指南](/help/communities/home.md) | 创建在线体验，如论坛、用户组、学习资源和其他社交功能。 |
-| [Administering 指南](/help/sites-administering/home.md) | 了解如何管理Adobe Experience Manager。 |
-| [Authoring 指南](/help/sites-authoring/home.md) | 本指南介绍Experience Manager创作的概念。 |
-| [经典UI创作指南](/help/sites-classic-ui-authoring/home.md) | 本指南介绍在经典用户界面中进行Experience Manager创作的概念。 |
-| [Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | 了解数字标牌解决方案，以便发布动态和交互式数字体验。 |
-| [Deploying用户指南](/help/sites-deploying/home.md) | 本指南向您展示了Experience Manager的基础知识。 |
-| [开发用户指南](/help/sites-developing/home.md) | 了解如何构建Experience Manager部署。 |
+| [Administering指南](/help/sites-administering/home.md) | 了解如何管理Adobe Experience Manager。 |
+| [Authoring指南](/help/sites-authoring/home.md) | 本指南介绍在Experience Manager中创作的概念。 |
+| [经典UI创作指南](/help/sites-classic-ui-authoring/home.md) | 本指南在传统用户界面中介绍使用Experience Manager进行创作的概念。 |
+| [Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | 了解数字标牌解决方案，以便发布动态的交互式数字体验。 |
+| [Deploying用户指南](/help/sites-deploying/home.md) | 本指南向您介绍Experience Manager的基础知识。 |
+| [Developing用户指南](/help/sites-developing/home.md) | 了解如何构建Experience Manager部署。 |
 | [Managing用户指南](/help/managing/home.md) | 本指南介绍如何成功管理Experience Manager项目。 |
-| [Commerce 用户指南](/help/commerce/home.md) | 了解Experience Manager上的Commerce Integration Framework。 |
-| [Mobile用户指南](/help/mobile/home.md) | 本指南介绍如何为移动设备应用程序创建和管理内容。 |
-
+| [Commerce 用户指南](/help/commerce/home.md) | 了解Experience Manager上的Commerce integration framework。 |
 
 ## 键 [!DNL Experience Manager] 资源
 
