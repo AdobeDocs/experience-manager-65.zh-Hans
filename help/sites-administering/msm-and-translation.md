@@ -1,19 +1,19 @@
 ---
-title: 网站管理
-description: 了解如何使用Adobe Experience Manager管理多语言网站。
+title: 多站点管理器和翻译
+description: 了解如何在您的项目中重用内容并在Adobe Experience Manager中管理多语言网站。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4a4f464d4140cbb3882b57786b9003a89b7a9a43
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 32%
+source-wordcount: '365'
+ht-degree: 33%
 
 ---
 
-# 网站管理{#website-administration}
+# 多站点管理器和翻译 {#msm-and-translation}
 
 以下管理工具可用于管理网站和页面：
 
