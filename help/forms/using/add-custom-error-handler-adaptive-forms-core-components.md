@@ -4,9 +4,9 @@ description: AEM Forms 使用为调用外部服务而配置的 REST 端点为表
 keywords: 添加自定义错误处理程序、添加默认错误处理程序、在表单中添加错误处理程序、使用规则编辑器的调用服务添加自定义错误处理程序、配置规则编辑器以添加自定义错误处理程序、使用规则编辑器添加自定义错误处理程序
 contentOwner: Ruchita Srivastav
 content-type: reference
-feature: Adaptive Forms
+feature: Adaptive Forms, Core Components
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '2278'
 ht-degree: 88%

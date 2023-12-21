@@ -3,9 +3,10 @@ title: 用于从自适应表单调用表单数据模型服务的API
 description: 说明可用于从自适应表单字段中调用使用WSDL编写的Web服务的invokeWebServices API。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-feature: Adaptive Forms
+discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
+feature: Adaptive Forms, Foundation Components
 exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 10%

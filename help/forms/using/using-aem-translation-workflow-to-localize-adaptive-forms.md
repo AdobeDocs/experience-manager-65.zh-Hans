@@ -4,9 +4,9 @@ description: 了解如何使用AEM翻译工作流本地化自适应表单和记�
 content-type: reference
 topic-tags: develop
 noindex: true
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '802'
 ht-degree: 20%

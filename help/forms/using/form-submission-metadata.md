@@ -3,10 +3,11 @@ title: 将用户数据中的信息添加到表单提交元数据
 description: 了解如何使用用户提供的数据将信息添加到已提交表单的元数据。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
+discoiquuid: 2c971da0-5bd5-40d1-820d-4efc2a44b49d
 docset: aem65
-feature: Adaptive Forms
 exl-id: 5ca850e3-30f0-4384-b615-356dc3c2ad0d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '740'
 ht-degree: 7%

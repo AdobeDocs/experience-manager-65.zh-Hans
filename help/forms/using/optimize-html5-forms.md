@@ -4,9 +4,10 @@ description: 您可以优化HTML5表单的输出大小。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
+feature: HTML5 Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%

@@ -3,11 +3,11 @@ title: 自定义HTML5表单的错误消息
 description: 了解如何自定义HTML5表单的错误消息显示，包括如何更改其位置和外观。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '497'
 ht-degree: 3%
 
 ---

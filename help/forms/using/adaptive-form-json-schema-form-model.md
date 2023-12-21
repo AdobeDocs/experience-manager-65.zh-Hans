@@ -1,11 +1,11 @@
 ---
 title: 如何使用JSON架构创建自适应Forms？
 description: 了解如何使用JSON架构作为表单模型创建自适应表单。 您可以使用现有JSON架构创建自适应表单。 深入了解JSON模式示例，在JSON模式定义中预配置字段，限制自适应表单组件的可接受值，并了解不受支持的结构。
-feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
+feature: Adaptive Forms, Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 7%
@@ -751,7 +751,7 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 * OneOf、AnyOf、All和NOT
 * 仅支持同质数组。 因此，项约束必须是对象，而不是数组。
 
-## 常见问题 {#frequently-asked-questions}
+## 常见问题解答 {#frequently-asked-questions}
 
 **为什么我无法为可重复的子表单（minOccours或maxOccurs值大于1）拖动子表单的单个元素（从任何复杂类型生成的结构）？**
 

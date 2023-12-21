@@ -4,10 +4,11 @@ description: 为自适应表单启用电子签名(Adobe Sign)工作流，以自�
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components, Acrobat Sign
+discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
-feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '3875'
 ht-degree: 1%
@@ -320,7 +321,7 @@ ht-degree: 1%
 
 现在，表单中的签名体验已准备就绪。 您可以预览表单以验证签名体验。
 
-## 常见问题 {#frequently-asked-questions}
+## 常见问题解答 {#frequently-asked-questions}
 
 **问：** 您可以将自适应表单嵌入到另一个自适应表单中。 嵌入的自适应表单是否可以 [!DNL Adobe Sign] 已启用？
 **Ans：** 否，AEM [!DNL Forms] 不支持使用嵌入 [!DNL Adobe Sign] 为签名启用自适应表单

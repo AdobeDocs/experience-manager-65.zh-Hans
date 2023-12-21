@@ -4,12 +4,12 @@ description: 本文列出了可用于Windows和Macintosh操作系统的自适应
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '1208'
-ht-degree: 6%
+source-wordcount: '1192'
+ht-degree: 4%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 6%
 | 在属性浏览器中保存所选自适应表单组件的更改 | Ctrl+S | Command+S |
 | 编辑所选自适应表单组件的规则 | Ctrl+Alt+Enter | Command+Alt+Return |
 | 在预览模式和当前选定的模式（例如，编辑和基架）之间切换 | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast； |
-| 撤消最后一次更改 | Ctrl+Z | Ctrl+Z&amp;ast； |
+| 撤消上次更改 | Ctrl+Z | Ctrl+Z&amp;ast； |
 | 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;ast； |
 | 选择多个组件 | Shift +单击 | Shift +单击 |
 | 复制所选的组件 | Ctrl-C | Ctrl-C&amp;ast； |
@@ -58,7 +58,7 @@ ht-degree: 6%
 |---|---|---|
 | 打开主题中选定组件的属性浏览器 | Alt+Enter | Alt+Return |
 | 关闭主题中选定组件的属性浏览器 | Ctrl+Alt+W | Command+Alt+W |
-| 撤消最后一次更改 | Ctrl+Z | Ctrl+Z&amp;ast； |
+| 撤消上次更改 | Ctrl+Z | Ctrl+Z&amp;ast； |
 | 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;ast； |
 | 在属性浏览器中为主题中的选定组件保存更改 | Ctrl+S | Ctrl+S&amp;ast； |
 

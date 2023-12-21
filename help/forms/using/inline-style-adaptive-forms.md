@@ -4,9 +4,9 @@ description: 您可以在自适应表单中应用自定义样式，也可以在�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '592'
 ht-degree: 13%

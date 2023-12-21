@@ -3,10 +3,11 @@ title: 在自适应表单中使用SOM表达式
 description: 了解如何提取自适应表单面板的SOM表达式。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
+feature: Adaptive Forms, Foundation Components
+discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
-feature: Adaptive Forms
 exl-id: 6a158e18-b7d0-45fb-b4fc-4770e66982b4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

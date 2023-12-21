@@ -4,9 +4,9 @@ description: 了解如何将提交审阅人与AEM Forms中的表单相关联。 
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 46e7b858-44d1-41c8-9f44-4e959e593dc1
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 9%

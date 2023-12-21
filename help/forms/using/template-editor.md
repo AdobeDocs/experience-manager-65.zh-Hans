@@ -5,9 +5,9 @@ contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '2029'
 ht-degree: 3%
@@ -193,7 +193,7 @@ ht-degree: 3%
    * 要显示或隐藏现成的自适应表单模板，请选中或取消选中 **包括现成的AF和AD模板** 选项。
    * 要显示或隐藏在AEM 6.0 Forms或AEM 6.1 Forms版本中添加但现在已弃用的现成自适应表单模板，请选中或取消选中 **包含AEM 6.0 AF模板** 选项。 如果选中此选项，则需要 **包括现成的AF和AD模板** 要启用的配置。
 
-1. 单击 **保存**. 现成模板的显示选项已更改。
+1. 单击&#x200B;**保存**。现成模板的显示选项已更改。
 
 ## 推荐 {#recommendations}
 

@@ -6,11 +6,12 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
+feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '990'
-ht-degree: 22%
+source-wordcount: '965'
+ht-degree: 14%
 
 ---
 
@@ -155,10 +156,10 @@ ht-degree: 22%
 
 为您的环境启用自适应表单核心组件时，将有一个空白的基于核心组件的自适应表单模板和 Canvas 3.0 主题添加到您的环境。为您的环境启用自适应表单核心组件后，您可以：
 
-* 创建基于核心组件的自适应表单。
+* 创建基于核心组件的自适应Forms。
 * 创建基于核心组件的自适应表单模板。
 * 为基于核心组件的自适应表单模板创建自定义主题。
-* 可以将基于核心组件的自适应表单的 JSON 表示形式提供给需要表单的 Headless 表示形式的移动、Web、原生应用程序和服务等渠道。
+* 向需要表单Headless表示的渠道（如移动设备、Web、本机应用程序和服务）提供基于核心组件的自适应表单的JSON表示。
 
 ## 后续内容
 

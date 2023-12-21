@@ -3,10 +3,11 @@ title: 自适应表单片段
 description: 自适应表单提供一种机制，可创建在任何自适应表单中使用的表单区段，例如面板或一组字段。 您还可以将现有面板另存为片段。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
+feature: Adaptive Forms, Foundation Components
+discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
-feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '2359'
 ht-degree: 3%

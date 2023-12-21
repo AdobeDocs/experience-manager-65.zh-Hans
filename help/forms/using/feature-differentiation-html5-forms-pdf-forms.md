@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
 source-wordcount: '447'
 ht-degree: 2%
@@ -53,7 +53,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>页眉/页脚 </td>
-   <td>支持. <br /> <br /> 由于HTML5移动设备表单不支持分页符，因此页眉和页脚仅出现一次。 但是，您可以将它们设置为在移动设备表单预览中的多个位置显示。<br /> </td>
+   <td>支持。 <br /> <br /> 由于HTML5移动设备表单不支持分页符，因此页眉和页脚仅出现一次。 但是，您可以将它们设置为在移动设备表单预览中的多个位置显示。<br /> </td>
    <td>支持。</td>
   </tr>
   <tr>

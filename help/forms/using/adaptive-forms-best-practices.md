@@ -3,11 +3,11 @@ title: 使用自适应表单的最佳实践
 description: 介绍设置AEM Forms项目、开发自适应表单和优化AEM Forms系统性能的最佳实践。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
-source-wordcount: '4725'
+source-wordcount: '4666'
 ht-degree: 1%
 
 ---
@@ -98,7 +98,7 @@ Adobe Experience Manager (AEM) forms可以帮助您将复杂的交易转换为�
 
 您可以使用中启用的表单模板创建自适应表单 **配置浏览器**. 要启用表单模板，请参阅 [创建自适应表单模板](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
 
-表单模板也可以从在另一台作者计算机上创建的自适应表单包上传。 通过安装提供表单模板 [aemforms-references-*包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans). 建议的一些最佳实践包括：
+表单模板也可以从在另一台作者计算机上创建的自适应表单包上传。 通过安装提供表单模板 [aemforms-references-*包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 建议的一些最佳实践包括：
 
 * 此 **nosamplecontent** 仅作者建议使用运行模式，而不建议发布节点使用运行模式。
 * 仅通过创作节点创作自适应表单、主题、模板或云配置等资产，这些节点可在配置的发布节点发布。

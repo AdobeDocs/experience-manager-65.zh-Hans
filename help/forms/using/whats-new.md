@@ -5,10 +5,10 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 9b18d92ffabc141e83ba9a7c3694257d3dee1ea1
+source-git-commit: ea11ecff5be51a19ab901a588200519a70cf9efc
 workflow-type: tm+mt
 source-wordcount: '637'
-ht-degree: 38%
+ht-degree: 39%
 
 ---
 
@@ -58,7 +58,7 @@ XMLFM的64位迭代带来了更高的性能、可扩展性和更精细的内存�
 
 ## 错误修复
 
-该版本还包括对20多个客户报告问题的修复。 有关Service Pack中包含的修复的详细列表，请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en#forms-6519)
+该版本还包括对20多个客户报告问题的修复。 有关Service Pack中包含的修复的详细列表，请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans#forms-6519)
 
 
 ## 安装服务包

@@ -5,11 +5,11 @@ contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+feature: HTML5 Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
-source-wordcount: '3896'
+source-wordcount: '3916'
 ht-degree: 6%
 
 ---
@@ -323,7 +323,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>无</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>题注</td>
    <td>题注对象描述与表单设计对象关联的描述性标签。<br /> </td>
    <td>无</td>
   </tr>
@@ -513,7 +513,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>HTML中不允许使用脚本设置名称。</td>
   </tr>
   <tr>
-   <td>parent</td>
+   <td>父母</td>
    <td>获取此节点的父节点。</td>
    <td>无</td>
   </tr>
@@ -716,7 +716,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>题注</td>
    <td>题注对象描述与表单设计对象关联的描述性标签。</td>
    <td> </td>
   </tr>
@@ -944,7 +944,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>无</td>
   </tr>
   <tr>
-   <td>caption</td>
+   <td>题注</td>
    <td>题注对象描述与表单设计对象关联的描述性标签。<br /> </td>
    <td>无</td>
   </tr>
@@ -1030,7 +1030,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
  </tbody>
 </table>
 
-## $布局 {#layout}
+## $layout {#layout}
 
 <table>
  <tbody>
@@ -1152,7 +1152,7 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
    <td>而(i lt 5)do i = i + 1 endwhile</td>
   </tr>
   <tr>
-   <td> 的 </td>
+   <td>对象</td>
    <td><br type="_moz" /> </td>
    <td>对于i = 100减至1 <br /> do s = s + i endfor</td>
   </tr>
@@ -1175,14 +1175,14 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
 
    1. Abs()
    1. Avg()
-   1. 单元格()
-   1. 计数()
+   1. Ceil()
+   1. Count()
    1. Floor()
    1. Max()
-   1. 最小()
+   1. Min()
    1. Mod()
-   1. 圆角()
-   1. 总计()
+   1. Round()
+   1. Sum()
 
 1. **科学功能**
 
@@ -1192,9 +1192,9 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
    1. Atan2()
    1. Cos()
    1. Sin()
-   1. 棕褐色()
+   1. Tan()
    1. Exp()
-   1. 日志()
+   1. Log()
    1. Pow()
    1. Sqrt()
    1. Deg2Rad()
@@ -1203,7 +1203,7 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
 
 1. **财务函数**
 
-   1. 四月()
+   1. 4月()
    1. Cterm()
    1. Fv()
    1. Ipmt()
@@ -1212,7 +1212,7 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
    1. Ppmt()
    1. Pv()
    1. Rate()
-   1. 术语()
+   1. Term()
 
 1. **逻辑函数**
 
@@ -1223,16 +1223,16 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
 
 1. **字符串函数**
 
-   1. 于()
+   1. At()
    1. Concat()
-   1. 左()
+   1. Left()
    1. Len()
    1. Lower()
    1. Ltrim()
-   1. 替换()
-   1. 右()
+   1. Replace()
+   1. Right()
    1. Rtrim()
-   1. 空间()
+   1. Space()
    1. Stuff()
    1. Substr()
    1. Upper()

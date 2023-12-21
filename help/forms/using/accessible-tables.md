@@ -4,9 +4,10 @@ description: 了解如何在HTML5表单中创建无障碍的表。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
+feature: HTML5 Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%

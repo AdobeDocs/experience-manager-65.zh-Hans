@@ -5,12 +5,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 1333c6cb-15cc-429b-a13e-5d23afdee69a
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 37%
+source-wordcount: '575'
+ht-degree: 32%
 
 ---
 
@@ -47,7 +47,7 @@ ht-degree: 37%
       * Adobe Document Cloud eSign 服务
       * 连笔签名
 
-   * **确认**：它包含&#x200B;**摘要**&#x200B;组件，该组件在用户签署表单并到达序列中的“确认（摘要）”步骤后，显示一条确认表单提交的消息。作者可以配置摘要组件的文本、显示感谢消息、显示生成的 PDF 的链接等。
+   * **确认**：它包含&#x200B;**摘要**&#x200B;组件，该组件在用户签署表单并到达序列中的“确认（摘要）”步骤后，显示一条确认表单提交的消息。作者可以配置摘要组件的文本，显示感谢消息，显示指向所生成PDF的链接等。
 
 1. 选择根面板的布局作为&#x200B;**[!UICONTROL 向导]**。
 1. 完成剩余的步骤，以便创建表单模板。 请参阅 [创建自定义自适应表单模板](../../forms/using/custom-adaptive-forms-templates.md).

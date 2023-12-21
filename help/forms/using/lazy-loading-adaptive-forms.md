@@ -4,9 +4,9 @@ description: 延迟加载通过将表单片段的初始化和加载推迟到它�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 7%

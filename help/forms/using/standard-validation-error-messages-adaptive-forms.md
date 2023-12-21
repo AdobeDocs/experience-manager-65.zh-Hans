@@ -5,9 +5,10 @@ contentOwner: anujkapo
 content-type: reference
 keywords: 添加自定义错误处理程序、添加默认错误处理程序、在表单中添加错误处理程序、使用规则编辑器的调用服务添加自定义错误处理程序、配置规则编辑器以添加自定义错误处理程序、使用规则编辑器添加自定义错误处理程序
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
-feature: Adaptive Forms
+discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
+feature: Adaptive Forms, Foundation Components
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '2357'
 ht-degree: 86%

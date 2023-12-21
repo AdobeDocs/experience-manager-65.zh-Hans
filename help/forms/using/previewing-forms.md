@@ -3,9 +3,10 @@ title: 预览表单
 description: 您可以在发布或激活表单之前预览表单，以确保表单符合预期。 预览选项可能因支持的表单类型而异。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms
+discoiquuid: 377d804d-4a75-4c93-8125-d2660cf56418
+feature: Adaptive Forms, Foundation Components
 exl-id: aed5703e-4fe6-4839-9657-c660ac48521e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 15%

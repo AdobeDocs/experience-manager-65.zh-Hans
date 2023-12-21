@@ -4,11 +4,11 @@ description: 使用自适应表单表达式可添加自动验证、计算并打�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
 workflow-type: tm+mt
-source-wordcount: '2802'
+source-wordcount: '2781'
 ht-degree: 2%
 
 ---

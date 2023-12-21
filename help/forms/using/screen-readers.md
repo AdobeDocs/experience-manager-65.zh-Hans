@@ -4,9 +4,10 @@ description: 列出HTML5表单支持的屏幕阅读器。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-feature: Mobile Forms
+discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
+feature: HTML5 Forms
 exl-id: 07d20c2f-7d13-48ac-8d58-b367eb194558
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%

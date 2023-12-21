@@ -4,9 +4,9 @@ description: 了解如何使用涂写签名签名AEM自适应Forms。 您可以�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms
+feature: Adaptive Forms, Foundation Components
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 9%
