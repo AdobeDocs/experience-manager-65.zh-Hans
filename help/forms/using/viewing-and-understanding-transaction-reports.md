@@ -4,8 +4,9 @@ description: 使用交易报告就产品使用情况和重新平衡硬件和软�
 topic-tags: forms-manager
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
+feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 0%
@@ -62,7 +63,7 @@ ht-degree: 0%
 
 1. 以管理员身份登录到作者实例。 转到 **工具** > **操作** > **Web控制台**.
 1. 找到并打开 **Forms事务存储库存储提供程序** 服务。
-1. 指定自定义发件箱的名称， **发件箱** 字段。 单击 **保存**. 将在所有创作实例上创建一个具有指定名称的发件箱。
+1. 指定自定义发件箱的名称， **发件箱** 字段。 单击&#x200B;**保存**。将在所有创作实例上创建一个具有指定名称的发件箱。
 
 ## 查看事务处理报表 {#viewing-the-transaction-report}
 

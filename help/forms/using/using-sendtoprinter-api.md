@@ -4,8 +4,8 @@ description: 使用sendToPrinter服务将文档发送到打印机。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-exl-id: 5fb38afd-7517-494e-b084-1fdd4aef3ca4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 14%

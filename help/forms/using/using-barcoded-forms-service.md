@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-exl-id: edaf12be-473f-4175-b4e0-549b41159a55
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+feature: Document Services
+source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
 workflow-type: tm+mt
-source-wordcount: '1022'
-ht-degree: 1%
+source-wordcount: '1003'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 该服务还支持以下内容 **一维** 作为扫描的TIFF或PDF文档提供的符号：
 
 * Codabar
-* Code128
+* 代码128
 * 第3个代码（共9个）
 * EAN13
 * EAN8
@@ -91,7 +91,7 @@ ht-degree: 1%
 
 ### 使用条形码表单的工作流 {#workflows-that-use-barcoded-forms}
 
-表单作者使用Designer创建交互式条形码表单。 (请参阅 [Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63_cn).) 当用户使用Adobe Reader或Acrobat填写条形码表单时，会自动更新条形码以编码表单数据。
+表单作者使用Designer创建交互式条形码表单。 (请参阅 [Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63).) 当用户使用Adobe Reader或Acrobat填写条形码表单时，会自动更新条形码以编码表单数据。
 
 条形码Forms服务可用于将纸上存在的数据转换为电子格式。 例如，在填写并打印条形码表单时，可以扫描打印的副本并将其用作条形码Forms服务的输入。
 
@@ -124,7 +124,7 @@ ht-degree: 1%
 * 该服务完全支持AcroForms以及包含通过Adobe Reader或Acrobat保存的2D条形码的静态表单。 但是，对于1D条形码，请拼合表单，或提供它作为扫描的PDF或TIFF文档。
 * 不完全支持动态XFA表单。 要正确解码动态表单中的1D和2D条形码，请拼合表单或将其提供为扫描的PDF或TIFF文档。
 
-此外，如果遵循上述限制，该服务可以对使用受支持符号的任何条形码进行解码。 有关如何创建交互式条形码表单的更多信息，请参阅 [Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63_cn).
+此外，如果遵循上述限制，该服务可以对使用受支持符号的任何条形码进行解码。 有关如何创建交互式条形码表单的更多信息，请参阅 [Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## 配置服务的属性   {#configureproperties}
 
