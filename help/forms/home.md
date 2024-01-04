@@ -1,11 +1,11 @@
 ---
 title: Adobe Experience Manager 6.5 Forms 指南
-description: 使用本AEM 6.5指南来创建、管理、发布和更新数字表单。 查找有关安装、升级和配置这些表单的帮助，并了解如何创作自适应表单。
+description: 使用此 AEM 6.5 指南创建、管理、发布和更新数字表单。查找有关安装、升级和配置数字表单的帮助，并了解如何创作自适应表单。
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '286'
-ht-degree: 19%
+ht-degree: 38%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 19%
 | AEM 6.5 | 本文 |
 
 
-使用本AEM 6.5指南来创建、管理、发布和更新数字表单。 查找有关安装、升级和配置这些表单的帮助，并了解如何创作自适应表单。
+使用此 AEM 6.5 指南创建、管理、发布和更新数字表单。查找有关安装、升级和配置数字表单的帮助，并了解如何创作自适应表单。
 
 ## AEM重要文章
 

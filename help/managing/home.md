@@ -1,17 +1,17 @@
 ---
 title: AEM 6.5 Managing 用户指南
-description: 了解如何在关键资源和全套AEM 6.5用户指南的支持下成功管理AEM项目。
+description: 了解如何在关键资源和全面的 AEM 6.5 用户指南的支持下成功管理 AEM 项目。
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 15%
+ht-degree: 32%
 
 ---
 
 # AEM 6.5 Managing 用户指南
 
-了解如何在关键资源和全套AEM 6.5用户指南的支持下成功管理AEM项目。
+了解如何在关键资源和全面的 AEM 6.5 用户指南的支持下成功管理 AEM 项目。
 
 ## AEM重要文章
 

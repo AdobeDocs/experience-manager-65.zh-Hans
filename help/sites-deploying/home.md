@@ -1,11 +1,11 @@
 ---
 title: AEM 6.5 Deploying用户指南
-description: 了解安装和部署Adobe Experience Manager 6.5及其架构，包括我们的Managed Services云部署Adobe。
+description: 了解 Adobe Experience Manager 6.5 的安装、部署及其架构，其中包括我们的 Adobe Managed Services 云部署。
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '265'
-ht-degree: 11%
+ht-degree: 19%
 
 ---
 

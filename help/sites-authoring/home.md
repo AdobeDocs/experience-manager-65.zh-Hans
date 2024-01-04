@@ -1,11 +1,11 @@
 ---
 title: AEM 6.5 Authoring 用户指南
-description: 探索在AEM 6.5中创建内容和创作的主要概念。您还可以找到有关使用标记、模板和其他页面功能的信息。
+description: 探索在 AEM 6.5 中创建内容和进行创作的关键概念。您还将找到有关使用标记、模板和其他页面功能的信息。
 exl-id: 38f229b4-10b2-4a67-9821-a03718b82215
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '266'
-ht-degree: 15%
+ht-degree: 24%
 
 ---
 

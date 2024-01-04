@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Manager 6.5发行说明
-description: AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能、受支持的平台、已弃用和已删除的功能以及已知问题。
+description: AEM 发行说明涉及有关最新版 AEM 的重要信息，包括新增功能、支持的平台、已弃用和已删除的功能以及已知问题。
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 35%
 
 # Adobe Experience Manager 6.5发行说明
 
-AEM 发行说明涵盖有关最新版 AEM 的重要信息，包括新增功能、受支持的平台、已弃用和已删除的功能以及已知问题。
+AEM 发行说明涉及有关最新版 AEM 的重要信息，包括新增功能、支持的平台、已弃用和已删除的功能以及已知问题。
 
 * [最新发行说明](/help/release-notes/release-notes.md)
 

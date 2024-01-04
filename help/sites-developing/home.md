@@ -1,17 +1,17 @@
 ---
 title: AEM 6.5 Developing 用户指南
-description: 了解如何构建AEM实例。 了解有关平台和组件的更多信息，并查找有关开发工具和个性化的信息。
+description: 了解如何构建您的 AEM 实例。详细了解平台和组件并找到有关开发工具和个性化的信息。
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '262'
-ht-degree: 15%
+ht-degree: 33%
 
 ---
 
 # AEM 6.5 Developing 用户指南
 
-了解如何构建AEM实例。 了解有关平台和组件的更多信息，并查找有关开发工具和个性化的信息。
+了解如何构建您的 AEM 实例。详细了解平台和组件并找到有关开发工具和个性化的信息。
 
 ## AEM重要文章
 

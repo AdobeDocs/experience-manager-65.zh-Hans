@@ -1,17 +1,17 @@
 ---
 title: AEM 6.5 Administering 用户指南
-description: 了解如何管理AEM 6.5。这些指南涵盖站点功能、部署操作、安全功能、个性化、集成等。
+description: 了解如何管理 AEM 6.5。这些指南涉及站点功能、部署操作、安全功能、个性化、集成等内容。
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
 source-git-commit: 7c691e275208287250f3540158a5e9948097b277
 workflow-type: tm+mt
 source-wordcount: '251'
-ht-degree: 16%
+ht-degree: 30%
 
 ---
 
 # AEM 6.5 Administering 用户指南
 
-了解如何管理AEM 6.5。这些指南涵盖站点功能、部署操作、安全功能、个性化、集成等。
+了解如何管理 AEM 6.5。这些指南涉及站点功能、部署操作、安全功能、个性化、集成等内容。
 
 ## 关键文章
 
