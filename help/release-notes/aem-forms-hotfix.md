@@ -1,17 +1,17 @@
 ---
-title: 适用于AEM Form Service Pack的修补程序
-description: 提供了有关如何下载和安装AEM Forms Service Pack修补程序的信息
-source-git-commit: 169d407835098add0312b0d12c2c80035b525762
+title: AEM Forms的修补程序
+description: 提供了有关如何下载和安装AEM Forms修补程序的信息。
+exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
+source-git-commit: 276b0122fb3d88c584dd6b2b4c2c6f6eda9d0537
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '200'
 ht-degree: 1%
 
 ---
 
+# Adobe Experience Manager Forms修补程序{#aem-form-hotfix}
 
-# Adobe Experience Manager修补程序{#aem-form-hotfix}
-
-安装最新版本 [AEM Service Pack](/help/release-notes/release-notes.md) 推荐的版本包括安全性、性能、稳定性，以及自Adobe Experience Manager 6.5正式发布以来发布的关键客户修复和增强功能。
+本文列出为解决已知问题、提高系统稳定性和增强AEM Forms整体性能而实施的关键修复。
 
 ## 自适应Forms的修补程序 {#hotfix-for-adaptive-forms}
 
@@ -19,11 +19,11 @@ ht-degree: 1%
   <tbody>
   <tr>
     <td><strong>日期</strong></td>
-    <td><strong>修补程序名称</strong></td>
-    <td><strong>修复</strong></td>
+    <td><strong>修补程序下载链接(AEM Software Distribution链接)</strong></td>
+    <td><strong>修复的问题</strong></td>
    </tr>
    <tr>
-    <td>2023 年 11 月 20 日</td>
+    <td>2023年11月20日</td>
      <td>
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1016-002.zip">适用于Linux的AEM Service Pack 6.5.18.0的修补程序</a> </li>
@@ -42,11 +42,11 @@ ht-degree: 1%
     <tbody>
      </table>
 
-## 下载和安装修补程序 {#download-install-hotfix}
+## 下载并安装修补程序 {#download-install-hotfix}
 
 执行以下步骤以下载并安装修补程序：
 
-1. 下载 [修补程序](#hotfix-for-adaptive-forms) 从SD链接。
+1. 下载 [修补程序](#hotfix-for-adaptive-forms) 从Software Distribution链接。
 1. 解压缩修补程序存档文件，以便获取Experience Manager包(.zip)和捆绑包(.jar)文件。
-1. 通过包管理器上传并安装包(.zip)。
-1. 打开配置管理器包 `https://server:host/system/console/bundles`，上传并安装捆绑包(.jar)。
+1. 通过上传并安装包(.zip) [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+1. 打开配置管理器包 `https://server:host/system/console/bundles`，上传并安装捆绑包(.jar)。 已安装修补程序。
