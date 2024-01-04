@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 6.5版本中已弃用和已删除的功能。
 description: 特定于Adobe Experience Manager 6.5中已弃用和已删除的功能的发行说明。
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
+source-git-commit: b0ba4e0c91d3c40acf5bf7336ba2af0c8c01cd32
 workflow-type: tm+mt
-source-wordcount: '1741'
-ht-degree: 12%
+source-wordcount: '1720'
+ht-degree: 10%
 
 ---
 
@@ -23,13 +23,13 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 在实际删除之前，此过程将为客户提供至少一个发行周期时间，使其实施适应已弃用功能的新版本或后续版本。
 
-## 已弃用功能 {#deprecated-features}
+## 已弃用的功能 {#deprecated-features}
 
 本部分列出了AEM 6.5中标记为已弃用的特性和功能。通常，首先将计划在未来版本中删除的功能设置为已弃用，并提供替代功能。
 
 建议客户检查其当前部署中是否使用了此类特性/功能，然后制定相应的计划，将其实施更改为使用提供的备选方案。
 
-| 区域 | 专题 | 替换 | 版本号 (SP) |
+| 区域 | 专题 | 替换 | 版本(SP) |
 |---|---|---|---|
 | Sites | 此 **AdobeAEM托管轮询配置** 服务： `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | 此 **AdobeAEM Analytics报表Sling导入程序** 服务。 请参阅连接到Adobe Analytics和创建框架 —  [配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | AEM中的ActiveMQ。 ActiveMQ用于两个AEM Publish实例之间的通信。 | Adobe建议客户使用负载平衡器。 |  |
@@ -42,7 +42,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 动态标签管理器(DTM) | 已弃用与DTM的集成。 | 切换到使用Adobe Experience Platform Launch作为标签管理器。 |   |
 | Adobe Target | 通过添加AEM使用以下程序连接到Adobe Target服务的功能 [!DNL Adobe I/O] 基于AEM 6.5中的Adobe Target Standard API (Rest API)，弃用Target Classic API (XML)方式。 | 将集成重新配置到 [使用新API](/help/sites-administering/target.md). |  |
 | Adobe Target | 使用 `mbox.js` 已弃用与AEM中的Adobe Target的基于的集成。 | 切换以使用 `at.js` 1.x. |  |
-| 商务 | [CIF REST](https://github.com/adobe/commerce-cif-api) 于2018年作为一组微服务提供，以实现AEM与商务引擎之间的集成。 在Adobe于2018年年中收购Adobe Commerce(前身为Magento)后，Adobe决定改变做法，原因有二。 Commerce具有自己的一组Commerce API(REST和GraphQL)，维护两组API不是最佳做法。 市场趋势表明，客户正在转向GraphQL，因为这是一种更高效的数据查询方式。 2019年，Adobe发布了新的Commerce Integration Framework，它使用Commerce的GraphQL API作为事实来源。 Adobe不打算进一步投资CIF REST。 建议客户使用替代解决方案。 | 对于AEM-Commerce集成，切换到 [AEM CIF原型](https://github.com/adobe/aem-cif-project-archetype) 和 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components). 请参阅AEM与Adobe Commerce集成 [使用Commerce integration framework](/help/commerce/cif/integrating/magento.md). 支持第三方（Commerce除外）与新方法的集成位于Adobe的路线图中。 |  |
+| 商务 | [CIF REST](https://github.com/adobe/commerce-cif-api) 于2018年作为一组微服务提供，以实现AEM与商务引擎之间的集成。 在Adobe于2018年年中收购Adobe Commerce(前身为Magento)后，Adobe决定改变做法，原因有二。 Commerce具有自己的一组Commerce API(REST和GraphQL)，维护两组API不是最佳做法。 市场趋势表明，客户正在转向GraphQL，因为这是一种更高效的数据查询方式。 2019年，Adobe发布了新Commerce integration framework，其中使用Commerce的GraphQL API作为事实来源。 Adobe不打算进一步投资CIF REST。 建议客户使用替代解决方案。 | 对于AEM-Commerce集成，切换到 [AEM CIF原型](https://github.com/adobe/aem-cif-project-archetype) 和 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components). 请参阅AEM与Adobe Commerce集成 [使用Commerce integration framework](/help/commerce/cif/integrating/magento.md). 支持第三方（Commerce除外）与新方法的集成位于Adobe的路线图中。 |  |
 | 组件(AEM Sites) | Adobe不打算进一步增强存储在中的大多数Foundation组件 `/libs/foundation/components`. 查找 `cq:deprecated` 和 `cq:deprecatedReason` 属性。 AEM 6.5包含基础组件，从早期版本升级的客户可以继续按原样使用它们。 此外，即使已弃用，也支持基础组件。 | Adobe建议在将来的项目中使用核心组件。 现有站点可以保持不变，也可以使用 [AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools) 重构站点以使用核心组件。 |  |
 | 组件(AEM Sites) | 设计导入程序组件 `/libs/wcm/designimporter/components` 从6.5开始标记为已弃用。Adobe不打算进一步增强设计导入程序实施。 | Adobe计划在未来版本中提供用例的替代实施。 |  |
 | Foundation | Granite卸载框架。 Adobe不打算进一步增强CQ 5.6.1中引入的卸载框架，以将资源处理外部化。 | Adobe正在开发下一代云原生卸载框架。 |  |
@@ -56,15 +56,14 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 开发人员 | CRXDE Lite中的经典UI对话框编辑器。 Adobe不打算进一步增强作为分发（快速入门）的一部分提供的经典UI对话框编辑器 | 没有可用的替换。 |  |
 | Forms | AEM Forms与AEM Mobile的集成已弃用。 | 没有可用的替代项。 |  | 开发人员 | CRXDE Lite中的经典UI对话框编辑器。 Adobe不打算进一步增强作为分发（快速入门）的一部分提供的经典UI对话框编辑器 | 没有可用的替换。 |  |
 | 开发人员 | Lodash/underscore客户端库。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的Lodash/underscore客户端库。 | Adobe建议仍需要对其代码使用Lodash/下划线的客户将其添加到其项目代码库中。 |  |
-| Screens | Adobe不打算进一步维护和更新用于2Publishers设置的com.adobe.cq.screens.mq.activemq包和相关配置。 | Adobe建议仍需要2发布器设置的客户可以使用负载平衡器方法。 |  |
 
-## 已删除功能 {#removed-features}
+## 已移除的功能 {#removed-features}
 
 此部分列出了从AEM 6.5中删除的特性和功能。以前的版本中这些功能标记为已弃用。
 
-| 区域 | 专题 | 替换 | 版本号 (SP) |
+| 区域 | 专题 | 替换 | 版本(SP) |
 |--- |--- |--- |--- |
-| 与[!DNL Experience Cloud] 集成  | 您可以将资源与同步 [!DNL Experience Cloud] 使用配置方式 [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] 以前称为 [!DNL Adobe Experience Cloud]. | 如果您有任何查询， [联系Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support). |  |
+| 与集成 [!DNL Experience Cloud] | 您可以将资源与同步 [!DNL Experience Cloud] 使用配置方式 [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] 以前称为 [!DNL Adobe Experience Cloud]. | 如果您有任何查询， [联系Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support). |  |
 | AnalyticsActivity Map | AEM中包含的Activity Map的版本。 | 由于 Adobe Analytics API 中的安全性更改，无法再使用 AEM 中包含的 Activity Map 版本。使用 [Adobe Analytics提供的ActivityMap插件](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hans). |  |
 | 集成 | ExactTarget集成已从默认分发（快速入门）中删除，并且不再可用。 | 无替代方案。 |  |
 | 集成 | Salesforce Force API集成已从默认分发（快速入门）中删除，现在是一个要从中安装的额外包 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). | 该功能仍然可用。 |
@@ -77,6 +76,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 开发人员 | 移除 `customJavaScriptPath` 支持HTML客户端库管理器。 | 无替换 |  |
 | [!DNL Assets] | 在中删除了资源卸载功能 [!DNL Adobe Experience Manager] 6.5. | 没有可用的替换。 |  |
 | 缓存 | `system/console/slingjsp` 已被删除，在AEM 6.5中不再可用。 | 类和Slightly缓存存储在Apache Sling Commons FileSystem ClassLoader捆绑包下。 您可以在AEM Web控制台中检查捆绑包编号，并直接从文件系统删除缓存文件夹(`crx-quickstart/launchpad/felix/bundle<ID>`)。 |  |
+| Screens | Adobe不打算进一步维护和更新com.adobe.cq.screens.mq.activemq包及相关配置。 | 没有可用的替换。 |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
