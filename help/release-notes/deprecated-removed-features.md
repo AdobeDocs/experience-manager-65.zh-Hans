@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 6.5版本中已弃用和已删除的功能。
 description: 特定于Adobe Experience Manager 6.5中已弃用和已删除的功能的发行说明。
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: b0ba4e0c91d3c40acf5bf7336ba2af0c8c01cd32
+source-git-commit: 5c10c5d20338b696fdab2291c714a7d6313cca8a
 workflow-type: tm+mt
-source-wordcount: '1720'
+source-wordcount: '1689'
 ht-degree: 10%
 
 ---
@@ -32,7 +32,6 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 区域 | 专题 | 替换 | 版本(SP) |
 |---|---|---|---|
 | Sites | 此 **AdobeAEM托管轮询配置** 服务： `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | 此 **AdobeAEM Analytics报表Sling导入程序** 服务。 请参阅连接到Adobe Analytics和创建框架 —  [配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| Screens | AEM中的ActiveMQ。 ActiveMQ用于两个AEM Publish实例之间的通信。 | Adobe建议客户使用负载平衡器。 |  |
 | [!DNL Sites] | **社交媒体状态**&#x200B;的体验片段属性。 |   | 6.5.11.0 |
 | [!DNL Sites] | 内容片段模板，用于创建简单的内容片段。 | 现已提供[基于模型的结构化内容片段](/help/assets/content-fragments/content-fragments-models.md)。 | 6.5.11.0 |
 | Creative Cloud集成 | AEM 6.2中引入了AEM到Creative Cloud文件夹共享的功能。它提供了一种为创意用户提供访问AEM中的资源的方法，以便他们可以在中打开这些资源 [!DNL Creative Cloud] 应用程序并上传新文件或将更改保存到AEM。 Creative Cloud应用程序中发布的一项新功能AdobeAsset Link提供了更好的用户体验，以及更强大的直接从Photoshop、InDesign和Illustrator中访问AEM资源的功能。 Adobe不打算进一步增强AEM与Creative Cloud文件夹共享集成。 虽然此功能包含在AEM中，但建议使用替代解决方案。 | 建议客户切换到新的Creative Cloud集成功能，包括AdobeAsset Link或AEM桌面应用程序。 |  |
@@ -76,7 +75,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 开发人员 | 移除 `customJavaScriptPath` 支持HTML客户端库管理器。 | 无替换 |  |
 | [!DNL Assets] | 在中删除了资源卸载功能 [!DNL Adobe Experience Manager] 6.5. | 没有可用的替换。 |  |
 | 缓存 | `system/console/slingjsp` 已被删除，在AEM 6.5中不再可用。 | 类和Slightly缓存存储在Apache Sling Commons FileSystem ClassLoader捆绑包下。 您可以在AEM Web控制台中检查捆绑包编号，并直接从文件系统删除缓存文件夹(`crx-quickstart/launchpad/felix/bundle<ID>`)。 |  |
-| Screens | Adobe不打算进一步维护和更新com.adobe.cq.screens.mq.activemq包及相关配置。 | 没有可用的替换。 |  |
+| Screens | 删除了activemq捆绑包支持及其相关配置。 |  |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 
