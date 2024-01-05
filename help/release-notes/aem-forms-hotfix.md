@@ -2,9 +2,9 @@
 title: AEM Forms的修补程序
 description: 提供了有关如何下载和安装AEM Forms修补程序的信息。
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 276b0122fb3d88c584dd6b2b4c2c6f6eda9d0537
+source-git-commit: 4c47fc5d03732d206c9eb18feb6e44018e936472
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '201'
 ht-degree: 1%
 
 ---
@@ -27,8 +27,8 @@ ht-degree: 1%
      <td>
      <ul>
      <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1016-002.zip">适用于Linux的AEM Service Pack 6.5.18.0的修补程序</a> </li>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1016-002.zip">适用于Windows的AEM Service Pack 6.5.18.0的修补程序</a> </li>
-     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1016-002.zip">适用于Mac操作系统的AEM Service Pack 6.5.18.0的修补程序</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1016-002.zip">适用于Microsoft Windows的AEM Service Pack 6.5.18.0的修补程序</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1016-002.zip">适用于Apple macOS的AEM Service Pack 6.5.18.0的修补程序</a></li>
      </ul>
      </td>
     <td>
