@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3adf2b03ac4e227af2b33099c24ec177b8ea7e1b
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1227'
 ht-degree: 0%
 
 ---
@@ -73,13 +73,26 @@ CRX本身的内存占用量很低。 如果在CRX中运行的应用程序具有�
 
 从命令行启动AEM WCM时指定内存设置选项。 还可以修改用于管理AEM WCM启动的AEM WCM启动/停止脚本或自定义脚本，以定义所需的内存设置。
 
-如果您已将栈大小定义为512 MB，则可能需要通过创建栈转储来进一步分析内存问题：
+如果您已将栈大小定义为512 MB，则可能需要通过创建栈转储来进一步分析内存问题。
 
 要在内存不足时自动创建栈转储，请使用以下命令：
 
 java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;ast；.jar
 
-此方法会生成栈转储文件(**java_...hprof**)。 生成栈转储后，该进程可能会继续运行。 通常，一个栈转储文件就足以分析问题。
+此方法会生成栈转储文件(**java_...hprof**)。 生成栈转储后，该进程可能会继续运行。
+
+通常，需要在一段时间内收集的三个栈转储文件来分析问题：
+
+* 在失败发生之前
+* 故障1期间
+* 故障2期间
+* *理想情况下，在事件解决后收集信息也会有帮助*
+
+这些功能可以比较以查看更改以及对象如何使用内存。
+
+>[!NOTE]
+>
+>如果您定期收集此类信息，或者有读取栈转储的经验，则一个栈转储文件就足以分析问题。
 
 ### 双击AEM快速入门后，浏览器中不显示AEM欢迎屏幕 {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
