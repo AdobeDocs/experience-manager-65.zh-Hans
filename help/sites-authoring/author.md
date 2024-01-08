@@ -2,10 +2,10 @@
 title: 创作
 description: Adobe Experience Manager 6.5中的创作和发布概念。
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 35%
+source-wordcount: '547'
+ht-degree: 28%
 
 ---
 
@@ -31,7 +31,7 @@ AEM为您提供了两个环境：
 
 ### 创作环境 {#author-environment}
 
-作者在称为&#x200B;**创作环境**&#x200B;的环境中工作。这为创建内容提供了易于使用的界面（图形用户界面（GUI 或 UI））。它位于公司防火墙的后面，可提供全面保护，并要求作者使用已分配了相应访问权限的帐户登录。
+作者在称为&#x200B;**创作环境**&#x200B;的环境中工作。这为创建内容提供了易于使用的界面(图形用户界面（GUI或UI）)。 它位于公司防火墙的后面，可提供全面保护，并要求作者使用已分配了相应访问权限的帐户登录。
 
 >[!NOTE]
 >
@@ -81,4 +81,4 @@ AEM为您提供了两个环境：
 
 #### Dispatcher {#dispatcher}
 
-为了优化网站访客体验，**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 实施了负载平衡和缓存。**
+为了优化网站访客体验， **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)** 实施负载平衡和缓存。

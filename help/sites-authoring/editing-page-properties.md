@@ -2,10 +2,10 @@
 title: 编辑内容页面属性
 description: 在Adobe Experience Manager中为页面定义所需的属性。
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1871'
-ht-degree: 43%
+source-wordcount: '1855'
+ht-degree: 42%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 43%
 
   有关标记的更多信息，请访问[使用标记](/help/sites-authoring/tags.md)。
 
-* **隐藏导航**
+* **在导航中隐藏**
 
   指示在生成的站点的页面导航中是显示还是隐藏页面。
 
@@ -68,13 +68,13 @@ ht-degree: 43%
 
   页面的描述、用途或要添加的任何其他详细信息。
 
-* **开始时间**
+* **准时**
 
   激活已发布页面的日期和时间。 发布后，此页面在指定时间之前一直处于休眠状态。
 
   对于要立即发布的页面（正常场景），请将这些字段留空。
 
-* **结束时间**
+* **关闭时间**
 
   已发布页面被停用时的时间。
 
@@ -97,7 +97,7 @@ ht-degree: 43%
 
   配置Dispatcher以启用对虚名URL的访问。 请参阅 [启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls) 以了解更多详细信息。
 
-* **重定向虚 URL**
+* **重定向虚URL**
 
   指示您是否希望页面使用虚 URL。
 
@@ -107,7 +107,7 @@ ht-degree: 43%
 
   页面语言。
 
-* **语言根目录**
+* **语言根**
 
   如果页面是语言副本的根，则必须选中。
 
@@ -187,7 +187,7 @@ ht-degree: 43%
 
 * **社交媒体共享**
 
-  定义页面上可用的共享选项。 显示可用于的选项 [共享核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=en).
+  定义页面上可用的共享选项。 显示可用于的选项 [共享核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html).
 
    * **为Facebook启用用户共享**
    * **为Pinterest启用用户共享**

@@ -3,7 +3,7 @@ title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8fc35ac465240cafdce5346f2f7e9ba15c8d1fef
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4333'
 ht-degree: 6%
@@ -520,7 +520,7 @@ UberJar用于 [!DNL Experience Manager] 6.5.19.0可从以下网站获取： [Mav
 * 当用户选择在自适应表单中首次配置字段时，属性浏览器中不显示保存配置的选项。 选择在同一编辑器中配置自适应表单的某些其他字段可解决此问题。
 * 当用户执行提交操作时，提交失败并出现错误：
   `javax.servlet.ServletException: java.lang.NoSuchMethodError`
-要解决此问题， [重新编译Sling脚本，例如JSP、Java™和Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en#resolution). (FORMS-8542)
+要解决此问题， [重新编译Sling脚本，例如JSP、Java™和Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
 * 安装AEM Service Pack 6.5.14.0及更高版本后，导航到时，用户无法从JEE管理员UI中选择用于PDF文档的字体 `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`，因为字体列表显示为空。 (FORMS-12095)
 
 #### JEE上的AEM Forms

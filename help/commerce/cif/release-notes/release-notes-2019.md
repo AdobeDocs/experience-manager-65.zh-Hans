@@ -2,10 +2,10 @@
 title: AEM Content and Commerce 2019版发行说明
 description: Adobe Experience Manager Content and Commerce发行说明2019。
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '992'
-ht-degree: 7%
+source-wordcount: '946'
+ht-degree: 5%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 7%
 
 * 产品详细信息页面和产品列表页面的完全可创作模板。 作者现在可以创建模板，并将产品列表和产品详细信息组件拖放到这些模板上。 除了添加其他组件外，作者现在还可以更改这些模板的布局，为他们提供无限制的自由，以便结合营销和商业内容创建令人惊叹的体验。
 
-* 所有便于作者使用的CIF核心组件均已增强以支持 [AEM样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). 为产品列表组件提供了示例样式。
+* 所有便于作者使用的CIF核心组件均已增强以支持 [AEM样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html). 为产品列表组件提供了示例样式。
 
 * 用于帐户管理的基于React的客户端组件。 此版本支持以下功能：登录、忘记密码和创建帐户。
 
@@ -119,7 +119,7 @@ ht-degree: 7%
 
 ### 新增功能 {#what-is-new-july}
 
-* 第一个CIF原型，为开发人员提供多个部署选项：1.部署AEM Venia storefront 2. 为新项目部署基架3. 在现有项目中使用CIF
+* 为开发人员提供多个部署选项的首个CIF原型： 1.部署AEM Venia storefront 2. 为新项目部署基架3. 在现有项目中使用CIF元素
 
 * 多级目录导航，以支持通过类别和子类别的导航。
 

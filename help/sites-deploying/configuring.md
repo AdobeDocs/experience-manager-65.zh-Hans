@@ -7,10 +7,10 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 1%
+source-wordcount: '2092'
+ht-degree: 0%
 
 ---
 
@@ -178,7 +178,7 @@ LDAP身份验证在存储库级别进行，因此它直接由存储库处理。 
 
 Dispatcher是Adobe Experience Manager的用于缓存和/或负载平衡的工具。 它可以与企业级Web服务器一起使用。
 
-请参阅 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 详细内容，特别是 [配置Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans) 以了解更多配置详细信息。
+请参阅 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 详细内容，特别是 [配置Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html) 以了解更多配置详细信息。
 
 ### 配置AEMLiveCycle连接器 {#configuring-aem-livecycle-connector}
 

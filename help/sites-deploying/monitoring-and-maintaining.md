@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '5793'
 ht-degree: 0%
@@ -1096,9 +1096,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 有关更多信息，另请参阅以下文章：
 >
-* [线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=en)
-* [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
-* [使用内置探查器进行分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=en)
+* [线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+* [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+* [使用内置探查器进行分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 * [分析缓慢进程和受阻进程](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
@@ -1123,7 +1123,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * JVM设置用于 [启动AEM](/help/sites-deploying/deploy.md#getting-started)
 * 知识库：
 
-   * [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en)
+   * [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### 磁盘I/O {#disk-i-o}
 
@@ -1141,7 +1141,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 是否以及如何配置 [ 版本清除](/help/sites-deploying/version-purging.md)
 * 知识库：
 
-   * [打开的文件过多](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=en)
+   * [打开的文件过多](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
    * [日志占用太多磁盘空间](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
 
 ### 性能定期下降 {#regular-performance-degradation}

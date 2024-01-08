@@ -11,7 +11,7 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2306'
 ht-degree: 1%
@@ -190,7 +190,7 @@ AEM中显示的产品和产品数据存储在Adobe Commerce中。 接下来，�
 
 Sling模型是作为Java™实现的，并且可以在 **核心** 所生成项目的模块。
 
-使用 [您选择的IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=en#set-up-the-development-ide) 以导入Venia项目。 使用的屏幕截图来自 [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
+使用 [您选择的IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide) 以导入Venia项目。 使用的屏幕截图来自 [Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code).
 
 1. 在IDE中，导航到 **核心** 模块至： `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`.
 

@@ -2,10 +2,10 @@
 title: Adobe Experience Manager 6.5 Communities指南
 description: 创建在线体验，如论坛、用户组、学习资源和其他社交功能。 浏览本指南，了解如何部署、管理、开发和创作社区。
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '273'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 10%
 
 * [AEM快速入门](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans)
 * [AEM 6.5发行说明](/help/release-notes/home.md)
-* [近期文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=zh-Hans)
+* [近期文档更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
 * [AEM安全核对清单](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5用户指南
@@ -39,10 +39,10 @@ ht-degree: 10%
 ## 重要AEM资源
 
 * [AEM教程](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
-* [Dispatcher用户指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)
+* [Dispatcher用户指南](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTL用户指南](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [核心组件用户指南](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hans)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 * [GDPR 就绪](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/#home)
 * [AEM 社区论坛](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

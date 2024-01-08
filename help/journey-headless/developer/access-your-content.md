@@ -2,9 +2,9 @@
 title: 如何通过 AEM 交付 API 访问您的内容
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用 GraphQL 查询访问内容片段的内容。
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1332'
+source-wordcount: '1301'
 ht-degree: 93%
 
 ---

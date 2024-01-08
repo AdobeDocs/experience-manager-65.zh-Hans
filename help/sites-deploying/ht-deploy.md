@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -21,6 +21,6 @@ ht-degree: 0%
 * [如何使用日志查看器](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 * [如何清除工作流和审核日志](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
 
-* [性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+* [性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 * [如何从欢迎屏幕中删除功能](/help/sites-developing/customizing-the-welcome-console.md)
 * [如何关闭位置跟踪器功能](https://helpx.adobe.com/experience-manager/kb/turn-off-geolocation.html)

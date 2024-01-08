@@ -1,15 +1,15 @@
 ---
-title: Foundation 组件
+title: 基础组件
 description: 了解Adobe Experience Manager 6.5中的基础组件。
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '7204'
-ht-degree: 9%
+source-wordcount: '6872'
+ht-degree: 3%
 
 ---
 
-# Foundation 组件 {#foundation-components}
+# 基础组件 {#foundation-components}
 
 >[!CAUTION]
 >
@@ -98,7 +98,7 @@ ht-degree: 9%
 * 中(0.82)
 * 高(1.00)
 
-| **视区宽度范围（像素）** | **图像宽度（像素）** | **JPEG 质量** | **目标设备类型** |
+| **视区宽度范围（像素）** | **图像宽度（像素）** | **JPEG质量** | **目标设备类型** |
 |---|---|---|---|
 | 宽度&lt;= 319 | 320 | 低 |  |
 | 宽度= 320 | 320 | 中 | 手机（纵向） |
@@ -210,7 +210,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->您可以为Adobe Experience Manager创建一个自定义轮播组件，该组件在AEM DAM中显示数字资源。 请参阅 [创建适用于Adobe Experience Manager的自定义轮播组件](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>您可以为Adobe Experience Manager创建一个自定义轮播组件，该组件在AEM DAM中显示数字资源。 请参阅 [创建适用于Adobe Experience Manager的自定义轮播组件](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans).
 
 ### 图表 {#chart}
 
@@ -245,7 +245,7 @@ ht-degree: 9%
 
 >[!NOTE]
 >
->您可以创建一个自定义AEM图表控件，以在AEM JCR中显示数据。 有关信息，请参阅 [在图表中显示Adobe Experience Manager数据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en).
+>您可以创建一个自定义AEM图表控件，以在AEM JCR中显示数据。 有关信息，请参阅 [在图表中显示Adobe Experience Manager数据](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans).
 
 ### 内容片段 {#content-fragment}
 
@@ -325,9 +325,9 @@ ht-degree: 9%
 
 通过Flash组件，可加载Flash影片。 您可以将Flash资源从内容查找器拖到组件上，也可以使用对话框：
 
-* **闪光灯**
+* **Flash**
 
-   * **Flash 影片**
+   * **Flash影片**
 
      Flash影片文件。 从内容查找器中拖动资产，或单击以打开浏览窗口。
 
@@ -335,7 +335,7 @@ ht-degree: 9%
 
      以像素为单位的Dimension，显示区域用于保存影片。
 
-* **备用图像**
+* **替代图像**
 
   要显示的替代图像
 
@@ -403,7 +403,7 @@ ht-degree: 9%
 
   要映射图像，请选择映射。 您可以指定创建图像映射的方式（矩形、多边形等）以及区域应指向的位置。
 
-* **裁剪**
+* **裁切**
 
   要剪下图像的一部分，请选择裁切。 使用鼠标裁切图像。
 
@@ -463,7 +463,7 @@ ht-degree: 9%
 
 * **列表**
 
-   * **生成列表对象**
+   * **使用以下项目生成列表**
 
      在此，您可以指定列表检索其内容的位置。 有多种方法：
 
@@ -493,7 +493,7 @@ ht-degree: 9%
 
       * **高级搜索选项**
 
-         * **QueryBuilder 谓词记号**
+         * **QueryBuilder谓词记号**
 
            您可以使用Querybuilder谓词表示法输入搜索查询。 例如，您可以输入“fulltext=Marketing”，以使其内容中包含“Marketing”的所有页面都显示在轮播中。
 
@@ -503,11 +503,11 @@ ht-degree: 9%
 
         指定 **父页面**， **标记/关键字**，以及所需的匹配条件。
 
-   * **显示方式**
+   * **显示为**
 
      您希望如何列出这些项目；包括链接、Teaser和新闻。
 
-   * **排序依据**
+   * **排序方式**
 
      是否对列表进行排序，如果是，则为排序使用的标准。 您可以输入条件，也可以从提供的下拉列表中选择一个条件。
 
@@ -662,7 +662,7 @@ ht-degree: 9%
    * **拼写检查文本**
 
      如果某人输入了类似的词语，则此文本会在该词语之前显示。
-例如，如果您键入 `Geometrixxe`，则系统显示“您的意思是？ Geometrixx&quot;.
+例如，如果您键入 `Geometrixxe`，则系统显示“您的意思是？ Geometrixx”。
 
    * **类似页面文本**
 
@@ -730,7 +730,7 @@ ht-degree: 9%
 
 * **幻灯片**
 
-   * **新幻灯片**
+   * **新建幻灯片**
 
      您可以使用 **添加** (和 **移除**)按钮。
 
@@ -878,7 +878,7 @@ ht-degree: 9%
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [标题核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) 而是。
+>已弃用此基础组件。 Adobe建议使用 [标题核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) 而是。
 
 标题组件可以：
 
@@ -1003,7 +1003,7 @@ Forms由几个不同的组件组成：
 
 配置任何表单组件时，对话框中提供以下选项卡：
 
-* **标题与文本**
+* **标题和文本**
 
   在此，必须指定基本信息，例如表单的标题和任何随附文本。 在适当时，它还允许您定义其他关键信息，例如字段是否可多选，以及是否可供选择的项。
 
@@ -1025,7 +1025,7 @@ Forms由几个不同的组件组成：
 
 这些选项卡为您提供了必要的参数。 这些选项卡可以取决于单个组件类型，但可包括以下内容：
 
-* **标题与文本**
+* **标题和文本**
 
    * **元素名称**
 
@@ -1059,7 +1059,7 @@ Forms由几个不同的组件组成：
 
      约束取决于表单组件类型，但提供一个或多个单击框以指示该字段是必填的或该字段的某些部分是必填的。
 
-   * **必需的消息**
+   * **必需消息**
 
      用于通知用户此字段为必填的消息。 必填字段还标有星号。
 
@@ -1124,15 +1124,15 @@ Forms由几个不同的组件组成：
       * **创建内容**
       * **创建潜在客户**
       * **创建和更新帐户**
-      * **电子邮件服务: 创建订阅者并添加到列表**
-      * **电子邮件服务: 发送自动回复的电子邮件**
-      * **电子邮件服务: 使用户从列表中取消订阅**
+      * **电子邮件服务：创建订阅者并添加到列表**
+      * **电子邮件服务：发送自动回复的电子邮件**
+      * **电子邮件服务：从列表中取消订阅用户**
       * **编辑社区**
       * **编辑资源**
       * **编辑工作流控制的资源**
       * **邮件**
-      * **所下的订单明细**
-      * **个人资料更新**
+      * **已下订单详细信息**
+      * **配置文件更新**
       * **重置密码**
       * **设置密码**
       * **存储内容**
@@ -1198,7 +1198,7 @@ Forms由几个不同的组件组成：
 
            指定表单。
 
-         * **呈现工具**
+         * **呈现方式**
 
            从列表中选择所需的选项。
 
@@ -1216,7 +1216,7 @@ Forms由几个不同的组件组成：
 
       * **创建和更新帐户**
 
-         * **初始的组**
+         * **初始组**
 
            要为其分配新用户的组。
 
@@ -1228,17 +1228,17 @@ Forms由几个不同的组件组成：
 
            创建和存储新帐户的路径（相对）。
 
-         * **查看数据...**
+         * **查看数据……**
 
            选择此按钮可在批量编辑器中访问有关表单结果的信息。 从此处，您可以将信息导出到 `.tsv` （制表符分隔）文件（例如用于Excel电子表格中）。
 
       * **邮件**
 
-         * **发件人**
+         * **从**
 
            输入电子邮件应来自的电子邮件地址。
 
-         * **发送到**
+         * **Mailto**
 
            输入表单发送到的一个或多个电子邮件地址。
 
@@ -1246,7 +1246,7 @@ Forms由几个不同的组件组成：
 
            输入一个或多个抄送电子邮件地址。
 
-         * **BCC**
+         * **密件抄送**
 
            输入一个或多个密送电子邮件地址。
 
@@ -1256,7 +1256,7 @@ Forms由几个不同的组件组成：
 
       * **重置密码**
 
-         * **更改密码页**
+         * **“更改密码”页**
 
            更改密码时使用的页面。
 
@@ -1267,7 +1267,7 @@ Forms由几个不同的组件组成：
            表单转储的任何内容的内容路径。 输入以斜杠结尾的路径 `/`. 斜杠表示对于每个表单端口，将在给定位置创建一个新节点；例如：
            `/forms/feedback/`
 
-         * **查看数据...**
+         * **查看数据……**
 
            单击此按钮可在批量编辑器中访问有关表单结果的信息。 从此处，您可以将信息导出到.tsv（制表符分隔）文件（例如，用于Excel电子表格）。
 
@@ -1291,7 +1291,7 @@ Forms由几个不同的组件组成：
 
      指示是否应显示提交按钮。
 
-   * **提交名**
+   * **提交名称**
 
      标识符（如果您在表单中使用多个提交按钮）。
 
@@ -1299,7 +1299,7 @@ Forms由几个不同的组件组成：
 
      按钮上显示的名称，如“提交”或“发送”。
 
-   * **显示重设按钮**
+   * **显示重置按钮**
 
      选中该复选框可使“重置”按钮可见。
 

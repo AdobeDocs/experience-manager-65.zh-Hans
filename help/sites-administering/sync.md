@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '2502'
-ht-degree: 5%
+source-wordcount: '2434'
+ht-degree: 1%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 5%
 
 1. 确保安装了最新的代码：
 
-* [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans)
+* [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
 * [AEM Communities更新](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling分发代理 — 同步代理工厂 {#apache-sling-distribution-agent-sync-agents-factory}
@@ -86,7 +86,7 @@ ht-degree: 5%
    * 使用管理员权限登录
    * 访问 [Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * 例如， [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * 定位 `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -163,7 +163,7 @@ ht-degree: 5%
    * 使用管理员权限登录
    * 访问 [Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * 例如， [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * 定位 `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * 要打开进行编辑，请选择现有配置（铅笔图标）验证 `property name`： **`socialpubsync-publishUser`**
@@ -183,7 +183,7 @@ ht-degree: 5%
    * 使用管理员权限登录
    * 访问 [Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+      * 例如， [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
    * 定位 `Apache Sling Distribution Agent - Queue Agents Factory`
 
@@ -205,13 +205,13 @@ ht-degree: 5%
    * 使用管理员权限登录
    * 访问 [Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+      * 例如， [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
    * 定位 **`Adobe Social Sync - Diff Observer Factory`**
 
       * 要打开进行编辑，请选择现有配置（铅笔图标）
 
-        验证 `agent name`: `socialpubsync-reverse`
+        验证 `agent name`： `socialpubsync-reverse`
 
       * 选择 `Enabled` 复选框
       * 选择 `Save`
@@ -229,13 +229,13 @@ ht-degree: 5%
    * 使用管理员权限登录
    * 访问 [Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * 例如， [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * 定位 `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
       * 要打开进行编辑，请选择现有配置（铅笔图标）
 
-         * 验证 `Name`: `socialpubsync-scheduled-trigger`
+         * 验证 `Name`： `socialpubsync-scheduled-trigger`
 
       * 设置 `Interval in Seconds` 到所需的间隔
       * 选择 `Save`
@@ -255,7 +255,7 @@ ht-degree: 5%
    * 使用管理员权限登录
    * 访问 [Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-      * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+      * 例如， [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * 定位 `Apache Sling Distribution Agent - Sync Agents Factory`
 
@@ -314,7 +314,7 @@ ht-degree: 5%
 要忽略的默认节点：
 
    * .tokens
-   * system
+   * 系统
 
 * **分布式文件夹**
 大多数sling：Folders被忽略，因为不需要同步。 这里列出了少数例外。
@@ -367,7 +367,7 @@ ht-degree: 5%
 * 在每个AEM发布实例上
 * 访问 [Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-   * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+   * 例如， [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * 找到 `Apache Sling Distribution Packaging - Vault Package Builder Factory`
 
@@ -506,9 +506,9 @@ ht-degree: 5%
 
 | **path** | **jcr：all** | **rep：glob** |
 |---|---|---|
-| /home | X | &#42;/活动/&#42; |
-| /home/users | X | &#42;/活动/&#42; |
-| /home/groups | X | &#42;/活动/&#42; |
+| /home | X | &#42;/activities/&#42; |
+| /home/users | X | &#42;/activities/&#42; |
+| /home/groups | X | &#42;/activities/&#42; |
 
 作为 `administrators` 组，授权用户应对所有Publish实例具有以下权限：
 

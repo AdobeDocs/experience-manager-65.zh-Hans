@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 6.5发行说明
 description: AEM 发行说明涉及有关最新版 AEM 的重要信息，包括新增功能、支持的平台、已弃用和已删除的功能以及已知问题。
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 35%
@@ -30,7 +30,7 @@ AEM 发行说明涉及有关最新版 AEM 的重要信息，包括新增功能�
 | [Administering指南](/help/sites-administering/home.md) | 了解如何管理AEM |
 | [Authoring指南](/help/sites-authoring/home.md) | 本指南介绍在AEM中创作的概念。 |
 | [经典UI创作指南](/help/sites-classic-ui-authoring/home.md) | 本指南在经典用户界面中说明在AEM中创作的概念。 |
-| [Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans) | 了解用于发布动态和交互式数字体验的数字标牌解决方案。 |
+| [Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html) | 了解用于发布动态和交互式数字体验的数字标牌解决方案。 |
 | [Deploying用户指南](/help/sites-deploying/home.md) | 本指南向您介绍AEM的基础知识。 |
 | [Developing用户指南](/help/sites-developing/home.md) | 了解如何构建AEM实例。 |
 | [Managing用户指南](/help/managing/home.md) | 本指南介绍如何成功管理AEM项目。 |

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1088'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -74,7 +74,7 @@ ht-degree: 9%
   <tr>
    <td><strong>步骤 4</strong></td>
    <td>是否来自Dispatcher的请求？</td>
-   <td><p>要查看请求是否正确缓存，请检查 <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#debugging">Dispatcher调试文档</a>.<br /> </p> </td>
+   <td><p>要查看请求是否正确缓存，请检查 <a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#debugging">Dispatcher调试文档</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>步骤 5</strong></td>
@@ -158,7 +158,7 @@ ht-degree: 9%
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">内存不足</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">我的应用程序引发内存不足错误</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en">分析内存问题。</a><br /> </li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html">分析内存问题。</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -225,20 +225,20 @@ ht-degree: 9%
   <tr>
    <td><strong>步骤 31</strong></td>
    <td>在Dispatcher之前使用CDN</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans#using-dispatcher-with-a-cdn">将Dispatcher与CDN结合使用</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">将Dispatcher与CDN结合使用</a><br /> </td>
   </tr>
   <tr>
    <td><strong>步骤 32</strong></td>
    <td>要卸载AEM服务器，请使用Dispatcher级别的会话管理</td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement">启用安全会话</a></p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">启用安全会话</a></p> </td>
   </tr>
   <tr>
    <td><strong>步骤 33</strong></td>
    <td>使请求可缓存</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">常规Dispatcher配置</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache">配置Dispatcher缓存</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html">常规Dispatcher配置</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">配置Dispatcher缓存</a></li>
     </ol> <p>如何提高缓存率；使请求能够缓存（Dispatcher最佳实践）</p> <p>此外，请考虑以下设置以优化缓存配置<br /> </p>
     <ol>
      <li>为非GET的HTTP请求设置无缓存规则</li>
@@ -250,26 +250,26 @@ ht-degree: 9%
   <tr>
    <td><strong>步骤 34</strong></td>
    <td>升级Dispatcher版本</td>
-   <td><p>您可以在此位置下载最新的Dispatcher版本：</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en">关注链接</a></p> </td>
+   <td><p>您可以在此位置下载最新的Dispatcher版本：</p> <p><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html">关注链接</a></p> </td>
   </tr>
   <tr>
    <td><strong>步骤 35</strong></td>
    <td>配置Dispatch</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans">配置Dispatcher</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html">配置Dispatcher</a><br /> </td>
   </tr>
   <tr>
    <td><strong>步骤 36</strong></td>
    <td>检查缓存失效</td>
    <td><br />
     <ul>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment">创作层的缓存失效；</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance">发布层的缓存失效。</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">创作层的缓存失效；</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">发布层的缓存失效。</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>步骤37和38</strong></td>
    <td>延迟加载</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">请参阅有关AEM Web性能的Gem会话。</a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">请参阅有关AEM Web性能的Gem会话。</a><br /> </td>
   </tr>
   <tr>
    <td><strong>步骤 39</strong></td>
@@ -289,7 +289,7 @@ ht-degree: 9%
   <tr>
    <td><strong>步骤 49</strong></td>
    <td>缩小有效负载大小</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">启用Gzip</a> 和 <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">缩小图像大小</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">启用Gzip</a> 和 <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">缩小图像大小</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>步骤42和43</strong></td>
@@ -321,7 +321,7 @@ ht-degree: 9%
   <tr>
    <td><strong>步骤50和51</strong></td>
    <td>JS代码阻止</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html</a></td>
   </tr>
  </tbody>
 </table>

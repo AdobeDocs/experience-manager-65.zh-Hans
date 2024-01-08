@@ -8,10 +8,10 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3389'
-ht-degree: 4%
+source-wordcount: '3363'
+ht-degree: 1%
 
 ---
 
@@ -69,7 +69,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 >[!NOTE]
 >
->默认为已启用 :
+>默认启用：
 >
 >* 创作代理：默认代理（发布）
 >
@@ -105,7 +105,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 * [默认代理](#replication-author-to-publish)
 用于从“创作”复制到“发布”。
 
-* Dispatcher刷新用于管理Dispatcher缓存。 请参阅 [使创作环境中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-the-authoring-environment) 和 [使发布实例中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=en#invalidating-dispatcher-cache-from-a-publishing-instance) 以了解更多信息。
+* Dispatcher刷新用于管理Dispatcher缓存。 请参阅 [使创作环境中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment) 和 [使发布实例中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance) 以了解更多信息。
 
 * [反向复制](#reverse-replication-publish-to-author)
 用于从Publish复制到Author。 反向复制不用于Communities功能，例如论坛、博客和评论。 由于未启用发件箱，因此该功能实际上已被禁用。 使用反向复制需要自定义配置。
@@ -128,7 +128,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   此复制代理用途的描述。
 
-* **启用**
+* **已启用**
 
   指示是否启用复制代理。
 
@@ -149,9 +149,9 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   如果遇到问题，两次重试之间的延迟（等待时间，以毫秒为单位）。
 
-  默认: `60000`
+  默认： `60000`
 
-* **代理用户 ID**
+* **代理用户ID**
 
   根据环境，代理会使用此用户帐户来：
 
@@ -180,9 +180,9 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
    * `Info`：记录错误、警告和其他信息性消息
    * `Debug`：在消息中使用高级别的详细信息，主要用于调试目的
 
-  默认: `Info`
+  默认： `Info`
 
-* **使用反转复制**
+* **用于反向复制**
 
   指示此代理是否用于反向复制；返回用户从“发布”到“创作”环境的输入。
 
@@ -203,7 +203,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   此处指定的协议（HTTP或HTTPS）确定传输方法。
 
-  对于Dispatcher Flush代理，仅在您使用基于路径的虚拟主机条目来区分场时使用URI属性，并使用此字段来定位要失效的场。 例如，场 #1 的虚拟主机为 `www.mysite.com/path1/*`，场 #2 的虚拟主机为 `www.mysite.com/path2/*`。您可以使用 URL `/path1/invalidate.cache` 定位第一个场，使用 `/path2/invalidate.cache` 定位第二个场。
+  对于Dispatcher Flush代理，仅在您使用基于路径的虚拟主机条目来区分场时使用URI属性，并使用此字段来定位要失效的场。 例如，场 #1 的虚拟主机为 `www.mysite.com/path1/*`，场 #2 的虚拟主机为 `www.mysite.com/path2/*`。您可以使用URL `/path1/invalidate.cache` 定位第一个场，然后 `/path2/invalidate.cache` 以定位第二个场。
 
 * **用户**
 
@@ -213,15 +213,15 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   用于访问目标的帐户的密码。
 
-* **NTLM 域**
+* **NTLM域**
 
   NTML身份验证的域。
 
-* **NTLM 主机**
+* **NTLM主机**
 
   用于NTML身份验证的主机。
 
-* **启用宽松 SSL**
+* **启用宽松SSL**
 
   如果希望接受自认证的SSL证书，则启用。
 
@@ -249,29 +249,29 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   要使用的帐户的密码。
 
-* **代理 NTLM 域**
+* **代理NTLM域**
 
   代理NTLM域。
 
-* **代理·NTLM 主机**
+* **代理NTLM主机**
 
   代理NTLM域。
 
 #### 扩展 {#extended}
 
-* **接口**
+* **界面**
 
   您可以在此定义要绑定的套接字接口。
 
   这会设置创建连接时要使用的本地地址。 如果未设置，则使用默认地址。 这对于指定要在多宿主或群集系统上使用的接口非常有用。
 
-* **HTTP 方法**
+* **HTTP方法**
 
   要使用的HTTP方法。
 
   对于Dispatcher Flush代理，这几乎总是GET，不应更改(POST是另一个可能的值)。
 
-* **HTTP 头**
+* **HTTP头**
 
   它们用于Dispatcher Flush代理，并指定必须刷新的元素。
 
@@ -352,7 +352,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 >[!NOTE]
 >
->当Dispatcher处理创作或发布实例的HTTP请求时，复制代理发出的HTTP请求必须包含PATH标头。 除了以下过程之外，还必须将PATH标头添加到Dispatcher的客户端标头列表中。 请参阅 [/clientheaders （客户端标头）](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#specifying-the-http-headers-to-pass-through-clientheaders).
+>当Dispatcher处理创作或发布实例的HTTP请求时，复制代理发出的HTTP请求必须包含PATH标头。 除了以下过程之外，还必须将PATH标头添加到Dispatcher的客户端标头列表中。 请参阅 [/clientheaders （客户端标头）](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
 >
 
 1. 访问 **工具** AEM选项卡。
@@ -477,7 +477,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
       * 输入用于复制的站点特定用户帐户。
       * 您可以根据需要配置其他参数。
 
-   对于Dispatcher Flush代理，仅在您使用基于路径的虚拟主机条目来区分场时使用URI属性，并使用此字段来定位要失效的场。 例如，场 #1 的虚拟主机为 `www.mysite.com/path1/*`，场 #2 的虚拟主机为 `www.mysite.com/path2/*`。您可以使用 URL `/path1/invalidate.cache` 定位第一个场，使用 `/path2/invalidate.cache` 定位第二个场。
+   对于Dispatcher Flush代理，仅在您使用基于路径的虚拟主机条目来区分场时使用URI属性，并使用此字段来定位要失效的场。 例如，场 #1 的虚拟主机为 `www.mysite.com/path1/*`，场 #2 的虚拟主机为 `www.mysite.com/path2/*`。您可以使用URL `/path1/invalidate.cache` 定位第一个场，然后 `/path2/invalidate.cache` 以定位第二个场。
 
    >[!NOTE]
    >

@@ -7,10 +7,10 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '3238'
-ht-degree: 1%
+source-wordcount: '3214'
+ht-degree: 0%
 
 ---
 
@@ -185,7 +185,7 @@ ht-degree: 1%
 
    * 每个环境的流程；例如，部署和维护要求
    * 维护活动（Datastore GC、TarPM优化等）
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 缓存
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 缓存
    * [聚类](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 发布/Authorshare
    * 客户端的性能（JS缩小、concat、css脚本、http请求总数等）
 

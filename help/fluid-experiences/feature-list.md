@@ -4,7 +4,7 @@ description: 流式体验功能列表
 index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 4%
@@ -49,7 +49,7 @@ AEM Fluid Experiences与经典AEM的不同之处在于，它仅涉及Headless投
 |---|
 | [HTTP API](/help/assets/mac-api-assets.md) |
 | [结构化内容模型](/help/assets/content-fragments/content-fragments.md) |
-| [内容服务](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=en) |
+| [内容服务](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) |
 | [体验片段](/help/sites-authoring/experience-fragments.md) |
 | 用于结构化内容的HTTP API（读取） |
 | 用于结构化内容的HTTP API (CRUD) |
@@ -82,7 +82,7 @@ AEM Fluid Experiences与经典AEM的不同之处在于，它仅涉及Headless投
 
 ## 了解详细信息 {#learn-more}
 
-* [无头用例的流体验](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=en)
-* [AEM Content Service：什么、为什么以及如何？](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=en)
-* [有关第三方访问的常见问题解答](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=en)
+* [无头用例的流体验](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
+* [AEM Content Service：什么、为什么以及如何？](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
+* [有关第三方访问的常见问题解答](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
 * [使用Sling API](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)

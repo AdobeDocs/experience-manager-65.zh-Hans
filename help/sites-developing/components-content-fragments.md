@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '961'
-ht-degree: 2%
+source-wordcount: '932'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->此 [内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en) 现在推荐。 请参阅 [开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans) 以了解更多详细信息。
+>此 [内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) 现在推荐。 请参阅 [开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) 以了解更多详细信息。
 >
 >此部分详细介绍为与内容片段一起使用而交付的原始组件(**内容片段** 在 **常规** 组)。
 
@@ -37,7 +37,7 @@ ht-degree: 2%
 >
 >另请参阅 [内容片段配置用于呈现的组件](/help/sites-developing/content-fragments-config-components-rendering.md) 以了解详细信息。
 
-Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创建和管理](/help/assets/content-fragments/content-fragments.md)。它们允许您创建渠道中性内容，以及各种（特定于渠道的）变体。 [然后，您可以在创作内容页面时使用这些片段及其变体](/help/sites-authoring/content-fragments.md). 您还可以通过以下方式使用现有的内容片段资源 [将其从资产浏览器拖到页面](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) （对于其他基于资产的组件，例如基础组件图像）。 现成的内容片段组件仅显示一个 [元素](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 引用的内容片段的。 利用组件对话框，您可以定义 [元素、变量和片段段落范围](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 要显示在页面上的内容（选件大小、配置文件、值、参数等）。
+Adobe Experience Manager (AEM)内容片段包括 [创建并管理为独立于页面的资产](/help/assets/content-fragments/content-fragments.md). 它们允许您创建渠道中性内容，以及各种（特定于渠道的）变体。 [然后，您可以在创作内容页面时使用这些片段及其变体](/help/sites-authoring/content-fragments.md). 您还可以通过以下方式使用现有的内容片段资源 [将其从资产浏览器拖到页面](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) （对于其他基于资产的组件，例如基础组件图像）。 现成的内容片段组件仅显示一个 [元素](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 引用的内容片段的。 利用组件对话框，您可以定义 [元素、变量和片段段落范围](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) 要显示在页面上的内容（选件大小、配置文件、值、参数等）。
 
 >[!NOTE]
 >

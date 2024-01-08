@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3360'
 ht-degree: 0%
@@ -35,7 +35,7 @@ OSGi ”*提供标准化的基元，允许使用小型、可重用和协作组�
 
 >[!NOTE]
 >
->OSGi配置比较工具，属于 [AEM工具](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=en)，可用于列出默认的OSGi配置。
+>OSGi配置比较工具，属于 [AEM工具](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html)，可用于列出默认的OSGi配置。
 
 >[!NOTE]
 >
@@ -271,7 +271,7 @@ OSGi ”*提供标准化的基元，允许使用小型、可重用和协作组�
 
 >[!CAUTION]
 >
->更改以下任一项的设置时： **Minify** 或 **Gzip**，删除clientlibs缓存的内容。 请参阅 [知识库文章](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=en) 以了解详细信息。
+>更改以下任一项的设置时： **Minify** 或 **Gzip**，删除clientlibs缓存的内容。 请参阅 [知识库文章](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html) 以了解详细信息。
 
 >[!NOTE]
 >

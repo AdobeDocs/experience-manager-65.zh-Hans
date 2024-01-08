@@ -2,10 +2,10 @@
 title: 缓存和性能
 description: 了解可用于启用GraphQL和内容缓存以优化Commerce实施性能的各种配置。
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '849'
-ht-degree: 3%
+source-wordcount: '818'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +51,7 @@ venia/components/structure/navigation:true:10:600
 
 除了纯AEM托管内容，CIF页面通常可以显示通过GraphQL从Adobe Commerce动态获取的商务数据。 虽然页面结构本身可能永远不会更改，但商业内容可能会发生更改，例如，如果某些产品数据（如名称或价格）在Adobe Commerce中发生更改。
 
-为了确保CIF页面可以在AEM Dispatcher中的有限时间内缓存，我们因此建议使用 [基于时间的缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-time-based-cache-invalidation-enablettl) （也称为基于TTL的缓存）来缓存AEM Dispatcher中的CIF页面时。 此功能可在AEM中使用额外的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) 包。
+为了确保CIF页面可以在AEM Dispatcher中的有限时间内缓存，我们因此建议使用 [基于时间的缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) （也称为基于TTL的缓存）来缓存AEM Dispatcher中的CIF页面时。 此功能可在AEM中使用额外的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) 包。
 
 对于基于TTL的缓存，开发人员通常会为选定的AEM页面定义一个或多个缓存持续时间。 这可确保CIF页面仅在AEM Dispatcher中缓存到配置的持续时间并且内容将经常更新。
 
@@ -63,4 +63,4 @@ venia/components/structure/navigation:true:10:600
 
 - [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL缓存配置](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM调度程序](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

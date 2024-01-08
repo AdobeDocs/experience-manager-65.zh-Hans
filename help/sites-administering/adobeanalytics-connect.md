@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1484'
 ht-degree: 1%
@@ -48,7 +48,7 @@ Adobe Analytics帐户必须：
 
 ### 配置AEM以使用您的Adobe Analytics数据中心 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=en) 收集、处理和存储与Adobe Analytics报表包关联的数据。 配置AEM以使用托管Adobe Analytics报表包的数据中心。 您的合同中提到了数据中心。 请联系您组织中的管理员以了解此信息。
+Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html) 收集、处理和存储与Adobe Analytics报表包关联的数据。 配置AEM以使用托管Adobe Analytics报表包的数据中心。 您的合同中提到了数据中心。 请联系您组织中的管理员以了解此信息。
 
 如有必要，请使用下列内容路由到正确的数据中心： `https://api.omniture.com/`.
 

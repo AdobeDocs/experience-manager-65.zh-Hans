@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3246'
 ht-degree: 0%
@@ -91,11 +91,11 @@ AEM组件用于保留、格式化和呈现网页上可用的内容。
 
 ### 使用Java {#using-java}
 
-[HTL Java Use-API让HTL文件可以访问自定义Java类中的Helper方法](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). 这使您能够使用Java代码实施用于选择和配置组件内容的逻辑。
+[HTL Java Use-API让HTL文件可以访问自定义Java类中的Helper方法](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). 这使您能够使用Java代码实施用于选择和配置组件内容的逻辑。
 
 ### 使用JavaScript {#using-javascript}
 
-[HTL JavaScript Use-API让HTL文件可以访问使用JavaScript编写的帮助程序代码](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). 这使您能够使用JavaScript代码实施用于选择和配置组件内容的逻辑。
+[HTL JavaScript Use-API让HTL文件可以访问使用JavaScript编写的帮助程序代码](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html). 这使您能够使用JavaScript代码实施用于选择和配置组件内容的逻辑。
 
 ### 使用客户端HTML库 {#using-client-side-html-libraries}
 
@@ -194,7 +194,7 @@ newComponent (cq:Component)
 >
 >请参阅：
 >
->* 上的AEM Gems讲座 [自定义对话框字段](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+>* 上的AEM Gems讲座 [自定义对话框字段](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 >* 下包含的相关示例代码 [代码示例 — 如何自定义对话框字段](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
@@ -460,9 +460,9 @@ GITHUB上的代码
    * 创建要在触屏UI中使用的对话框。 但是，出于兼容性目的，如果没有为触控式UI定义对话框，则触控式UI可以使用经典UI对话框的定义。
    * 此 [AEM现代化工具](/help/sites-developing/modernization-tools.md) 是为了帮助您扩展现有组件而提供的。
    * [将ExtJS映射到Granite UI组件](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) 为ExtJS xtype和节点类型及其等效的Granite UI资源类型提供了方便的概述。
-   * 自定义字段，有关更多信息，请参阅AEM Gems会话，地址为 [自定义对话框字段](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * 自定义字段，有关更多信息，请参阅AEM Gems会话，地址为 [自定义对话框字段](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
    * 从vtype迁移到 [Granite UI验证](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * 使用JS监听器，有关更多信息，请参阅 [处理字段事件](#handling-field-events) 和AEM Gems讲座 [自定义对话框字段](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+   * 使用JS监听器，有关更多信息，请参阅 [处理字段事件](#handling-field-events) 和AEM Gems讲座 [自定义对话框字段](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html).
 
 ### 迁移cq：listener代码 {#migrating-cq-listener-code}
 

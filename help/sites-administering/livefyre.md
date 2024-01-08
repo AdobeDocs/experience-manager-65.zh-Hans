@@ -6,7 +6,7 @@ content-type: reference
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '44'
 ht-degree: 13%
@@ -17,7 +17,7 @@ ht-degree: 13%
 
 >[!IMPORTANT]
 >
->[AdobeLivefyre正式于2021年11月30日停止服务](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html?lang=en).
+>[AdobeLivefyre正式于2021年11月30日停止服务](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
 
 <!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 

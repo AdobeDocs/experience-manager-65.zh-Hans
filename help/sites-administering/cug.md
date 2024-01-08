@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '706'
 ht-degree: 1%
 
 ---
@@ -114,13 +114,13 @@ ht-degree: 1%
 
 如果您使用的是Dispatcher，则需要使用以下属性定义Dispatcher场：
 
-* [虚拟主机](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#identifying-virtual-hosts-virtualhosts)：匹配CUG应用于的页面的路径。
+* [虚拟主机](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)：匹配CUG应用于的页面的路径。
 * \sessionmanagement：请参见下文。
-* [缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)：专用于CUG应用于的文件的缓存目录。
+* [缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)：专用于CUG应用于的文件的缓存目录。
 
 ### 为CUG配置Dispatcher会话管理 {#configuring-dispatcher-session-management-for-cugs}
 
-配置 [dispatcher.any文件中的会话管理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) CUG的。 在请求访问CUG页面时使用的身份验证处理程序决定了如何配置会话管理。
+配置 [dispatcher.any文件中的会话管理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) CUG的。 在请求访问CUG页面时使用的身份验证处理程序决定了如何配置会话管理。
 
 ```xml
 /sessionmanagement
@@ -134,7 +134,7 @@ ht-degree: 1%
 >当Dispatcher场启用了会话管理时，不会缓存场处理的所有页面。 要缓存超出CUG的页面，请在dispatcher.any中创建第二个场
 >处理非CUG页面。
 
-1. 配置 [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#enabling-secure-sessions-sessionmanagement) 通过定义 `/directory`；例如：
+1. 配置 [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) 通过定义 `/directory`；例如：
 
    ```xml
    /sessionmanagement
@@ -144,4 +144,4 @@ ht-degree: 1%
      }
    ```
 
-1. 设置 [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#caching-when-authentication-is-used) 到 `0`.
+1. 设置 [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) 到 `0`.

@@ -3,7 +3,7 @@ title: 技术要求
 description: Adobe Experience Manager支持的客户端和服务器平台列表。
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 6f2b16a51d4ad0f5c199ff41e8abe150c27ecc01
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3624'
 ht-degree: 0%
@@ -231,7 +231,7 @@ Adobe Experience Manager可与以下服务器平台配合使用以用于生产�
 
 支持在云计算环境中的虚拟机中运行Adobe Experience Manager。 这些环境包括Microsoft®Azure和Amazon Web Services (AWS)，按照本页列出的技术要求和Adobe的标准支持条款运行。
 
-对于云原生环境，请查看AEM产品线中的最新产品：Adobe Experience Manager as a Cloud Service 。 请参阅 [Adobe Experience Manager as a Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) 以了解详细信息。
+对于云原生环境，请查看AEM产品线中的最新产品：Adobe Experience Manager as a Cloud Service 。 请参阅 [Adobe Experience Manager as a Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) 以了解详细信息。
 
 Adobe还提供AdobeManaged Services以在Azure或AWS上部署AEM。 AdobeManaged Services为专家提供了在这些云计算环境中部署和操作AEM的经验和技能。 请参阅 [有关AdobeManaged Services的其他文档](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -241,7 +241,7 @@ Adobe还提供AdobeManaged Services以在Azure或AWS上部署AEM。 AdobeManaged
 
 ### Dispatcher平台（Web服务器） {#dispatcher-platforms-web-servers}
 
-Dispatcher是缓存和负载平衡组件。 [下载最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Experience Manager6.5需要Dispatcher版本4.3.2或更高版本。
+Dispatcher是缓存和负载平衡组件。 [下载最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager6.5需要Dispatcher版本4.3.2或更高版本。
 
 以下Web服务器支持与Dispatcher版本4.3.2一起使用：
 

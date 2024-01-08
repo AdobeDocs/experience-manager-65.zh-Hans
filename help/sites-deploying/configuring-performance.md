@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '6469'
 ht-degree: 11%
@@ -22,7 +22,7 @@ ht-degree: 11%
 >
 >有关故障排除和修复性能问题的更多信息，另请参阅 [性能树](/help/sites-deploying/performance-tree.md).
 >
->此外，您还可以查看知识库文章，其主题为 [性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>此外，您还可以查看知识库文章，其主题为 [性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 关键问题是网站响应访客请求所用的时间。 尽管该值因每个请求而异，但可以定义平均目标值。 一旦证实该值既可实现，又可维护，就可使用它来监控网站的性能，并指示潜在问题的发展。
 
@@ -39,7 +39,7 @@ ht-degree: 11%
 >[!NOTE]
 >
 >* 在配置以进行性能优化后，请按照中的过程操作 [艰难的一天](/help/sites-developing/tough-day.md) 在重负载下测试环境。
->* 另请参阅 [性能调整提示。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+>* 另请参阅 [性能调整提示。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 ## 性能优化方法 {#performance-optimization-methodology}
 
@@ -201,7 +201,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 >[!NOTE]
 >
->请参阅 [性能优化](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
+>请参阅 [性能优化](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
 
 ### 搜索索引 {#search-indexing}
 
@@ -476,7 +476,7 @@ AEM以下内容介绍在 *Publish* 环境。 该性能测试包括以下五个�
 
 ## 使用Dispatcher时优化性能 {#optimizing-performance-when-using-the-dispatcher}
 
-此 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) 是Adobe的缓存和/或负载平衡工具。 使用Dispatcher时，请考虑优化网站缓存性能。
+此 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 是Adobe的缓存和/或负载平衡工具。 使用Dispatcher时，请考虑优化网站缓存性能。
 
 >[!NOTE]
 >
@@ -492,7 +492,7 @@ Dispatcher提供了多种内置机制，如果您的网站利用这些机制可�
 >
 >通常，许多缓存策略涉及选择完好的URL，并且不依赖此类额外数据。
 >
->使用Dispatcher版本4.1.11，您还可以缓存响应标头，请参阅 [缓存HTTP响应标头](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache).
+>使用Dispatcher版本4.1.11，您还可以缓存响应标头，请参阅 [缓存HTTP响应标头](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
 >
 
 ### 计算Dispatcher缓存比率 {#calculating-the-dispatcher-cache-ratio}
@@ -528,7 +528,7 @@ Dispatcher提供了多种内置机制，如果您的网站利用这些机制可�
 
 #### 消除 URL 参数 {#avoid-url-parameters}
 
-如果可能，请消除要缓存的页面的 URL 参数。例如，如果您有一个图片库，则绝不会缓存以下 URL（除非对 Dispatcher 进行[相应配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-the-dispatcher-cache-cache)）：
+如果可能，请消除要缓存的页面的 URL 参数。例如，如果您有一个图片库，则绝不会缓存以下 URL（除非对 Dispatcher 进行[相应配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)）：
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -616,7 +616,7 @@ www.myCompany.com/news/main.large.html
 
 #### 粘性连接 {#sticky-connections}
 
-[粘性连接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#the-benefits-of-load-balancing)可确保同一个用户的文档全部在同一服务器上撰写。如果用户在退出此文件夹不久后返回，则此连接仍保持粘性。要保存所有需要网站的粘性连接的文档，请定义一个文件夹。 尽量不要在该文件夹中放入其他文件。如果您使用个性化的页面和会话数据，此方案将影响负载平衡。
+[粘性连接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing)可确保同一个用户的文档全部在同一服务器上撰写。如果用户在退出此文件夹不久后返回，则此连接仍保持粘性。要保存所有需要网站的粘性连接的文档，请定义一个文件夹。 尽量不要在该文件夹中放入其他文件。如果您使用个性化的页面和会话数据，此方案将影响负载平衡。
 
 #### MIME 类型 {#mime-types}
 

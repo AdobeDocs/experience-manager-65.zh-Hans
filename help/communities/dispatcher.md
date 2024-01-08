@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 11%
+source-wordcount: '601'
+ht-degree: 7%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 11%
 
 * 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)
 
-另请参阅主要的 [Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans).
+另请参阅主要的 [Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
 
 ## Dispatcher缓存 {#dispatcher-caching}
 
@@ -39,7 +39,7 @@ AEM Communities的Dispatcher缓存让Dispatcher能够为社区站点的页面提
 
 ### 要求 {#requirements}
 
-* Dispatcher版本4.1.2或更高版本(请参阅 [安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) （适用于最新版本）
+* Dispatcher版本4.1.2或更高版本(请参阅 [安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) （适用于最新版本）
 * [ACS AEM Commons包](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 版本3.3.2或更高版本
@@ -66,7 +66,7 @@ OSGi配置 **ACS AEM Commons - Dispatcher缓存控制标头 — 最大保留时�
 
 ## Dispatcher过滤器 {#dispatcher-filters}
 
-的/filter部分 `dispatcher.any` 文件记录于 [配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans).
+的/filter部分 `dispatcher.any` 文件记录于 [配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
 
 本节介绍社区功能正常运行可能需要的条目。
 
@@ -76,7 +76,7 @@ OSGi配置 **ACS AEM Commons - Dispatcher缓存控制标头 — 最大保留时�
 
 另请参阅：
 
-* [Dispatcher安全核对清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)
+* [Dispatcher安全核对清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >

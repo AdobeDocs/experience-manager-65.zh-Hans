@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '57'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->已弃用AEM到Creative Cloud的文件夹共享功能。 建议客户使用较新的功能，例如 [Adobe资源链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 或 [AEM桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en). 了解详情，请参阅 [AEM和Creative Cloud集成最佳实践](/help/assets/aem-cc-integration-best-practices.md).
+>已弃用AEM到Creative Cloud的文件夹共享功能。 建议客户使用较新的功能，例如 [Adobe资源链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 或 [AEM桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). 了解详情，请参阅 [AEM和Creative Cloud集成最佳实践](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

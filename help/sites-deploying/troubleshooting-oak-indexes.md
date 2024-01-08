@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1474'
-ht-degree: 1%
+source-wordcount: '1387'
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ AEM内部重新索引过程会收集存储库数据并将其存储在Oak索引�
 
 >[!NOTE]
 >
->对于AEM 6.1，请确保 [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans) 已安装。
+>对于AEM 6.1，请确保 [AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) 已安装。
 
 在特殊情况下，用于管理异步索引的线程池可能会变得过载。 为了隔离索引过程，可以配置线程池以防止其他AEM工作干扰Oak及时索引内容的能力。 在这种情况下，请执行以下操作：
 

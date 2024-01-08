@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1712'
-ht-degree: 2%
+source-wordcount: '1659'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +84,7 @@ AEM 6.5 Communities GA包含Communities包。 详细了解AEM 6.5的更新 [Comm
 
 从AEM 6.4开始，对Communities的更新作为AEM累积修补程序包和Service Pack的一部分提供。
 
-有关AEM 6.5的最新更新，请参阅 [Adobe Experience Manager 6.4累积修补程序包和Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans).
+有关AEM 6.5的最新更新，请参阅 [Adobe Experience Manager 6.4累积修补程序包和Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ### 版本历史记录 {#version-history}
 
@@ -358,8 +358,8 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 
 如果使用Dispatcher，请参阅：
 
-* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 文档
-* [安装 Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
+* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 文档
+* [安装 Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)
 * [为社区配置Dispatcher](/help/communities/dispatcher.md)
 * [已知问题](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

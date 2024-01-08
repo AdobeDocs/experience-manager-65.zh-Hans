@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 0%
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 ### 安装安全修补程序 {#install-security-hotfixes}
 
-确保您已安装最新的 [Adobe提供的安全修补程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans).
+确保您已安装最新的 [Adobe提供的安全修补程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
 ### 更改AEM和OSGi Console管理帐户的默认密码 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -108,11 +108,11 @@ Adobe建议定义自定义错误处理程序页面，特别是对于404和500 HT
 
 >[!NOTE]
 >
->请参阅 [如何创建自定义脚本或错误处理程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=en) 以了解更多详细信息。
+>请参阅 [如何创建自定义脚本或错误处理程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html) 以了解更多详细信息。
 
 ### 完成Dispatcher安全核对清单 {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher是您的基础架构中的一个关键部分。 Adobe建议您完成 [Dispatcher安全核对清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en).
+AEM Dispatcher是您的基础架构中的一个关键部分。 Adobe建议您完成 [Dispatcher安全核对清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html).
 
 >[!CAUTION]
 >

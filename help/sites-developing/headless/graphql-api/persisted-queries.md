@@ -2,7 +2,7 @@
 title: 持久 GraphQL 查询
 description: 了解如何在Adobe Experience Manager中使用持久GraphQL查询优化性能。 持久查询可以由客户端应用程序使用HTTPGET方法请求，响应可以缓存在Dispatcher和CDN层，最终提高客户端应用程序的性能。
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1401'
 ht-degree: 85%
@@ -262,7 +262,7 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 正在缓存您的持久查询 {#caching-persisted-queries}
 
-建议使用持久查询，因为可在 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) 和内容交付网络 (CDN) 层缓存此类查询，最终提高发出请求的客户端应用程序的性能。
+建议使用持久查询，因为可在 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 和内容交付网络 (CDN) 层缓存此类查询，最终提高发出请求的客户端应用程序的性能。
 
 默认情况下，AEM 将根据生存时间 (TTL) 定义使缓存失效。可通过以下参数定义这些 TTL。可通过多种方式访问这些参数，其名称因所使用的机制而异：
 

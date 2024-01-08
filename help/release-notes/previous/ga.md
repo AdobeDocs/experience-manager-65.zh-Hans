@@ -2,7 +2,7 @@
 title: 的常规发行说明 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5版本说明概述了版本信息、新增功能、安装方法和详细的更改列表。”'
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 2%
@@ -18,7 +18,7 @@ ht-degree: 2%
 | 版本 | 6.5 |
 | 类型 | 主要版本 |
 | 正式发布日期 | 2019 年 4 月 8 日 |
-| 建议的更新 | 请参阅 [AEM最近更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans). |
+| 建议的更新 | 请参阅 [AEM最近更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html). |
 
 ### Trivia {#trivia}
 
@@ -115,7 +115,7 @@ ht-degree: 2%
 
 #### Headless内容管理 {#headless-content-management}
 
-AEM可以以各种格式和从栈栈的各个级别提供内容。 有些是从2008年开始的 [SlingGET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 和 [POSTServlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). 内容服务([Sling模型导出程序](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=en))在AEM 6.3中引入，是AEM SJ SDK用于对单页应用程序进行水合物化的方法。 此 [用于资产的HTTP API](/help/assets/mac-api-assets.md) 是针对AEM 6.5扩展的CRUD API。
+AEM可以以各种格式和从栈栈的各个级别提供内容。 有些是从2008年开始的 [SlingGET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 和 [POSTServlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). 内容服务([Sling模型导出程序](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-Hans))在AEM 6.3中引入，是AEM SJ SDK用于对单页应用程序进行水合物化的方法。 此 [用于资产的HTTP API](/help/assets/mac-api-assets.md) 是针对AEM 6.5扩展的CRUD API。
 
 新的HTTP API功能：
 
@@ -137,7 +137,7 @@ AEM可以以各种格式和从栈栈的各个级别提供内容。 有些是从2
 * 使用动态占位符，按位置或配置数据触发的内容进行个性化。
 * 由Adobe Analytics集成到AEM Screens Player驱动的统一见解
 
-有关AEM Screens更改的更多详细信息 — 请参阅 [AEM Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans).
+有关AEM Screens更改的更多详细信息 — 请参阅 [AEM Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
 #### 组件和模板开发 {#component-amp-template-development}
 
@@ -357,7 +357,7 @@ AEM 6.5引入了以下功能和增强功能，以提高AEM用户、DAM角色以�
 
 [!DNL Experience Manager Assets Brand Portal] 帮助您轻松获取、有效控制并安全地跨设备向外部供应商/代理和内部业务用户分发经批准的资产。 它有助于提高资产共享效率，加快资产上市速度，并消除不合规使用和未经授权访问的风险。
 
-有关更多信息，请参阅 [Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hans).
+有关更多信息，请参阅 [Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html).
 
 #### 连接的资源 {#connectedassets}
 
@@ -596,4 +596,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * 产品更新、修补程序和软件包，用于 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-* [通过Admin Console提供客户支持](https://adminconsole.adobe.com/). 有关更多信息，请参阅 [新的Adobe客户支持体验](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en).
+* [通过Admin Console提供客户支持](https://adminconsole.adobe.com/). 有关更多信息，请参阅 [新的Adobe客户支持体验](https://experienceleague.adobe.com/docs/customer-one/using/home.html).

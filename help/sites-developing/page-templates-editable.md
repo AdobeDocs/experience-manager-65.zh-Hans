@@ -7,7 +7,7 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '3186'
 ht-degree: 4%
@@ -46,7 +46,7 @@ ht-degree: 4%
 >[!NOTE]
 >
 >以下教程可能也适合在新项目中设置可编辑页面模板：
->[AEM Sites快速入门第2部分 — 创建基础页和模板](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=en)
+>[AEM Sites快速入门第2部分 — 创建基础页和模板](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
 
 ## 创建新模板 {#creating-a-new-template}
 
@@ -70,7 +70,7 @@ ht-degree: 4%
    * 利用结构，可为模板定义组件和内容。
    * 不能在生成页面上移动在模板结构中定义的组件，也不能从任何生成页面中删除这些组件。
 
-      * 如果您是在模板外部的自定义文件夹中创建模板 `We.Retail` 示例内容，您可以选择基础组件或使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+      * 如果您是在模板外部的自定义文件夹中创建模板 `We.Retail` 示例内容，您可以选择基础组件或使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html).
 
    * 如果要使页面作者能够添加和删除组件，请在模板中添加段落系统。
    * 可以解锁组件，然后再将其锁定，以便定义初始内容。

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '5425'
 ht-degree: 0%
@@ -418,7 +418,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 仅当在Experience
 在将资源推送到Dynamic Media Classic而不发布它们之前，您必须设置以下设置：
 
 1. [使用Admin Console创建支持案例](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html). 在您的支持案例中，请求为您的Dynamic Media Classic帐户启用安全预览。
-1. [为您的Dynamic Media Classic帐户设置安全预览](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=en).
+1. [为您的Dynamic Media Classic帐户设置安全预览](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html).
 
 这些步骤与在Dynamic Media Classic中创建任何安全测试设置时所遵循的步骤相同。
 

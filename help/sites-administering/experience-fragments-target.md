@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1513'
 ht-degree: 41%
@@ -182,7 +182,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 ## 在 Adobe Target 中使用体验片段 {#using-your-experience-fragments-in-adobe-target}
 
-执行上述任务后，体验片段会显示在Adobe Target的“选件”页面中。 查看 [特定Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=zh-Hans) 了解可以实现的目标。
+执行上述任务后，体验片段会显示在Adobe Target的“选件”页面中。 查看 [特定Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) 了解可以实现的目标。
 
 >[!NOTE]
 >

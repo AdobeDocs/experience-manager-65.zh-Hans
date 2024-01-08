@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '5811'
+source-wordcount: '5752'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 在AEM 6.3及更高版本中，引入了此功能的在线版本，称为“在线修订清理”。 与必须关闭AEM实例的“脱机修订版清理”相比，在AEM实例处于联机状态时，可以运行“联机修订版清理”。 默认情况下，“联机修订清理”处于打开状态，建议使用此方式执行修订清理。
 
-**注意**： [观看视频](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=en) 介绍以及如何使用在线修订清理。
+**注意**： [观看视频](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html) 介绍以及如何使用在线修订清理。
 
 修订清理过程包括三个阶段： **估计**， **压缩**、和 **clean up**. 估算根据可能收集到的垃圾量来确定是否运行下一阶段（压缩）。 在压缩阶段，区段和tar文件被重写，而没有任何未使用的内容。 然后，清理阶段将删除旧区段，包括这些区段可能包含的任何垃圾。 脱机模式通常可以回收更多空间，因为联机模式必须考虑AEM工作集，该工作集不会收集额外的区段。
 
@@ -173,7 +173,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>迁移时能否避免停机？</strong></td>
-   <td>否. 这是一次性工作，无法在正在运行的实例上完成。</td>
+   <td>不适用。 这是一次性工作，无法在正在运行的实例上完成。</td>
    <td> </td>
   </tr>
   <tr>
@@ -183,7 +183,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>是否需要重新索引搜索索引？</strong></td>
-   <td>否. 从oak-segment迁移到oak-segment-tar会引入容器格式的更改。 包含的数据不受影响，也不会被修改。</td>
+   <td>不适用。 从oak-segment迁移到oak-segment-tar会引入容器格式的更改。 包含的数据不受影响，也不会被修改。</td>
    <td> </td>
   </tr>
   <tr>
@@ -210,7 +210,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>应多久执行一次联机修订清理？</strong></td>
-   <td>每日一次. 这是操作功能板中的默认配置。</td>
+   <td>一天一次。 这是操作功能板中的默认配置。</td>
    <td> </td>
   </tr>
   <tr>

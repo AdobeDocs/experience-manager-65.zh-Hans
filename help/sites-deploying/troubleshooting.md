@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%
@@ -64,7 +64,7 @@ AEM会记录您可能想要配置的详细日志，以解决安装问题。 有�
 
 >[!NOTE]
 >
->另请参阅 [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
+>另请参阅 [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
 
 
 CRX本身的内存占用量很低。 如果在CRX中运行的应用程序具有更大的内存需求或请求内存密集型操作（例如，大型事务），则运行CRX的JVM实例必须使用适当的内存设置启动。

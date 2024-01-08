@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
 source-wordcount: '1613'
 ht-degree: 0%
@@ -38,7 +38,7 @@ LDAP (此 **L**&#x200B;高权重 **D**&#x200B;目录 **A**&#x200B;访问 **P** r
 
 >[!NOTE]
 >
->观看 [Oak的外部登录模块 — 使用LDAP和其他方式进行身份验证](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=en) 以深入了解外部登录模块。
+>观看 [Oak的外部登录模块 — 使用LDAP和其他方式进行身份验证](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) 以深入了解外部登录模块。
 >
 >要阅读有关使用Apache DS配置Experience Manager的示例，请参见 [正在配置Adobe Experience Manager 6.5以使用Apache Directory Service。](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 

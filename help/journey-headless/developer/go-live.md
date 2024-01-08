@@ -2,10 +2,10 @@
 title: 如何使用 Headless 应用程序上线
 description: 在AEM Headless开发人员历程的这一可选部分中，了解如何实时部署Headless应用程序。
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
 workflow-type: tm+mt
-source-wordcount: '1874'
-ht-degree: 51%
+source-wordcount: '1803'
+ht-degree: 53%
 
 ---
 
@@ -94,7 +94,7 @@ Node.js是用于处理AEM项目的前端资源的JavaScript运行时环境 `ui.f
 
 设置本地开发环境后，您可以通过本地部署静态节点服务器来模拟向React应用程序提供内容服务。
 
-要更深入地了解设置本地开发环境和内容预览所需的所有依赖项，请参阅 [生产部署文档](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html?lang=en).
+要更深入地了解设置本地开发环境和内容预览所需的所有依赖项，请参阅 [生产部署文档](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/deployments/overview.html).
 
 ## 准备AEM Headless应用程序以供上线 {#prepare-your-aem-headless-application-for-golive}
 
@@ -141,7 +141,7 @@ Node.js是用于处理AEM项目的前端资源的JavaScript运行时环境 `ui.f
 
 ## 使用Maven部署到生产环境 {#deploy-to-production-maven}
 
-对于 *传统* 使用Maven部署（非AMS），请参阅 [WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) 了解概述。
+对于 *传统* 使用Maven部署（非AMS），请参阅 [WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html#build) 了解概述。
 
 ## 使用Cloud Manager部署到生产 {#deploy-to-production-cloud-manager}
 
@@ -167,7 +167,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
       * 检查用户、请求和加载的数量
 * 访问特定于应用程序和空间的性能报表
    * 在服务器启动后，检查一般指标是否为绿色/橙色/红色，然后识别具体的应用程序问题
-   * 打开上面按应用程序或空间过滤的相同报表(例如，Photoshop desktop、paywall)
+   * 打开上面过滤到应用程序或空间的相同报告（例如，Photoshop 桌面、付费专区）
    * 使用 Splunk 日志 API 访问服务和应用程序性能
    * 如果还有其他问题，请联系客户支持。
 
@@ -214,11 +214,11 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 ## 其他资源 {#additional-resources}
 
-* [AEM Developing指南](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
+* [AEM Developing指南](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html)
 
-* [WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
+* [WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
 
-* [Cloud Manager for AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hans)
+* [Cloud Manager for AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 * CDN缓存
 
