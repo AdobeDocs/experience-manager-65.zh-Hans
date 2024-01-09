@@ -2,10 +2,10 @@
 title: AEM 6.5 Managing 用户指南
 description: 了解如何在关键资源和全面的 AEM 6.5 用户指南的支持下成功管理 AEM 项目。
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 5ee9bc34128738967124855652c7b38c65d8779d
+source-git-commit: 02dd950111a45908f0a65deb9e5c28b4b119269f
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 38%
+source-wordcount: '90'
+ht-degree: 35%
 
 ---
 
@@ -14,6 +14,8 @@ ht-degree: 38%
 了解如何在关键资源的支持下成功管理AEM项目，以及最佳实践和指南。
 
 ## 关键文章
+
+本指南中的关键文章包括：
 
 * [管理项目 — 最佳实践核对清单](/help/managing/best-practices.md)
 * [硬件大小调整准则](/help/managing/hardware-sizing-guidelines.md)
