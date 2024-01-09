@@ -2,16 +2,24 @@
 title: AEM 6.5 Managing 用户指南
 description: 了解如何在关键资源和全面的 AEM 6.5 用户指南的支持下成功管理 AEM 项目。
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
-source-git-commit: 7c691e275208287250f3540158a5e9948097b277
+source-git-commit: 5a7729e1792bc5849682800781e31f41c6bb6e4a
 workflow-type: tm+mt
-source-wordcount: '260'
-ht-degree: 32%
+source-wordcount: '294'
+ht-degree: 28%
 
 ---
 
 # AEM 6.5 Managing 用户指南
 
 了解如何在关键资源和全面的 AEM 6.5 用户指南的支持下成功管理 AEM 项目。
+
+## 关键管理文章
+
+* [管理项目 — 最佳实践核对清单](/help/managing/best-practices.md)
+* [硬件大小调整准则](/help/managing/hardware-sizing-guidelines.md)
+* [SEO和URL管理最佳实践](/help/managing/seo-and-url-management.md)
+* [AEM和Web无障碍准则](/help/managing/web-accessibility.md)
+* [用于数据保护和数据隐私法规的Adobe Experience Manager已准备就绪](/help/managing/data-protection-and-privacy.md)
 
 ## AEM重要文章
 
