@@ -1,14 +1,14 @@
 ---
 title: 简介 [!DNL Adobe Experience Manager Assets]
-description: 了解什么是数字资产管理，其用例以及 [!DNL Adobe Experience Manager Asset] 主动出击。
+description: 在 Experience Manager 中创建、管理、处理和分发数字资源。这些指南介绍了最佳实践、辅助功能以及如何使用 AEM 6.5 资源。
 contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 0%
+source-wordcount: '886'
+ht-degree: 3%
 
 ---
 

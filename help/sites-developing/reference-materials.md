@@ -8,7 +8,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 3%
@@ -39,7 +39,7 @@ AEM交付和内容管理API：
 
    * [JSON导出程序](/help/sites-developing/json-exporter.md)
    * [为组件启用 JSON 导出](/help/sites-developing/json-exporter-components.md)
-   * 请参阅 [《开发用户指南》中的“组件”部分](/help/sites-developing/home.md) 了解更多信息
+   * 请参阅 [《开发用户指南》中的“组件”部分](/help/sites-developing/getting-started.md) 了解更多信息
 
 * **资产**：Assets HTTP API允许对Assets执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括二进制、元数据、演绎版和注释。 请参阅 [AEM ASSETS HTTP API](/help/assets/mac-api-assets.md)
 

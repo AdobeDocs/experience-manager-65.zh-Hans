@@ -1,18 +1,19 @@
 ---
 title: AEM Sites 开发快速入门 – WKND 教程
-description: 初次开发 AEM？需要复习最佳实践？从这里开始！此多部分教程旨在教授初次使用 AEM 的开发人员如何使用最新的标准和技术在 AEM 中实施网站。
+description: 了解如何构建您的 AEM 实例。详细了解平台和组件并找到有关开发工具和个性化的信息。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 8314d7fe-0a46-453d-9592-f1bcd8c8f10a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 81%
+source-wordcount: '211'
+ht-degree: 80%
 
 ---
+
 
 # AEM Sites 开发快速入门 – WKND 教程{#getting-started-developing-aem-sites-wknd-tutorial}
 

@@ -1,16 +1,16 @@
 ---
 title: AEM Forms简介
-description: 借助Adobe Experience Manager Forms，商业用户可以将引人入胜、响应迅速的自适应表单集成到网站和移动站点中，从而简化数字注册流程并提高客户转化率。
+description: 使用此 AEM 6.5 指南创建、管理、发布和更新数字表单。查找有关安装、升级和配置数字表单的帮助，并了解如何创作自适应表单。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 12%
+source-wordcount: '950'
+ht-degree: 15%
 
 ---
 

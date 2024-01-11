@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 47%
@@ -103,7 +103,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 资源浏览器 {#assets-browser}
 
-资源浏览器会显示当前页面上可直接使用的所有[资源](/help/assets/home.md)。
+资源浏览器会显示当前页面上可直接使用的所有[资源](/help/assets/assets.md)。
 
 资产浏览器是侧面板中的一个选项卡，侧面板中还包含 [组件浏览](/help/sites-authoring/author-environment-tools.md#components-browser)r和 [内容树](/help/sites-authoring/author-environment-tools.md#content-tree). 要打开或关闭侧面板，请使用工具栏左上角的图标：
 

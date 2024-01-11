@@ -1,10 +1,10 @@
 ---
 title: Edge Delivery Services 快速入门
-description: Edge Delivery Services (EDS) 快速入门。
+description: Edge Delivery Services 快速入门
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '834'
 ht-degree: 100%
 
 ---
@@ -29,7 +29,7 @@ Edge Delivery 是一组可组合的服务，通过这些服务，可非常灵活
 
 例如，您可以直接从 Microsoft Word 或 Google Docs 中使用内容。这意味着来自这些来源的文档可成为您网站上的页面。此外，标题、列表、图像、字体元素都可以从初始源转移到网站中。将立即添加新内容，而不经历重建过程。
 
-Edge Delivery 利用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，可在 Google Docs 或 Microsoft Word 中编写内容，并可在 GitHub 中使用 CSS 和 JavaScript 开发站点的功能。当您就绪时，您即可使用 Sidekick 浏览器扩展预览和发布内容更新。
+Edge Delivery 利用 GitHub，因此客户可直接从其 GitHub 存储库管理和部署代码。例如，可在 Google 文档或 Microsoft Word 中编写内容，而在 GitHub 中使用 CSS 和 JavaScript 开发您网站的功能。当您就绪时，您即可使用 Sidekick 浏览器扩展预览和发布内容更新。
 
 深入阅读：
 

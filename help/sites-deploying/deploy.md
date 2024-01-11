@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1792'
 ht-degree: 3%
 
 ---
@@ -73,9 +73,9 @@ Adobe Experience Manager是一个基于Web的客户端 — 服务器系统，用
 * **网站**
 * **移动应用程序**
 * **数字出版物**
-* **表单和文档**
+* **Forms和文档**
 * **数字资产**
-* **社区**
+* **Communities**
 * **Online Commerce**
 
 最后，客户可以使用这些基础架构和应用程序级别的构建块，通过构建自己的应用程序来创建自定义解决方案。
@@ -84,7 +84,7 @@ AEM服务器是 **基于Java** 并且在支持该平台的大多数操作系统�
 
 >[!NOTE]
 >
->AEM 6.5 QuickStart中提供的自适应Forms功能仅用于探索和评估。 对于生产使用，获取AEM Forms的有效许可证至关重要，因为Adaptive Forms功能需要适当的许可。
+>AEM 6.5 QuickStart中提供的自适应Forms功能仅用于探索和评估。 由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
 
 ### 典型部署方案 {#typical-deployment-scenarios}
 
@@ -287,9 +287,9 @@ AEM启动并自动将Web浏览器重定向到相应的页面（通常是登录�
 
 登录后，您可以访问AEM。 有关详细信息，请参阅以下内容，具体取决于您的角色：
 
-* [创作](/help/sites-authoring/home.md)
+* [创作](/help/sites-authoring/first-steps.md)
 * [管理](/help/sites-administering/home.md)
-* [开发](/help/sites-developing/home.md)
+* [开发](/help/sites-developing/getting-started.md)
 * [管理](/help/managing/best-practices.md)
 
 ## 高级部署 {#advanced-deployment}

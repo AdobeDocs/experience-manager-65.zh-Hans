@@ -7,7 +7,7 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '5991'
 ht-degree: 3%
@@ -835,7 +835,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->请参阅 [AEM Forms帮助](/help/forms/home.md) 了解有关AEM Forms的信息。
+>请参阅 [AEM Forms帮助](/help/forms/using/introduction-aem-forms.md) 了解有关AEM Forms的信息。
 
 Forms由几个不同的组件组成：
 

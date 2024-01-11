@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 10%
+source-wordcount: '727'
+ht-degree: 7%
 
 ---
 
@@ -27,12 +27,12 @@ We.Retail使用最新的Adobe Experience Manager (AEM)技术，例如HTL、响�
 
 作为AEM标准参考实施，We.Retail展示了AEM的一些最强大的功能。
 
-| **专题** | **描述** | **有兴趣吗？** |
+| **功能** | **描述** | **有兴趣吗？** |
 |---|---|---|
 | [全局化站点结构](/help/sites-administering/tc-bp.md) | We.Retail包括语言母版，这些母版将实时复制到国家/地区特定的站点中。 | [试试看！](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [响应式布局](/help/sites-authoring/responsive-layout.md) | 所有页面都具有响应式布局，可动态调整以适应屏幕和设备大小。 | [试试看！](/help/sites-developing/we-retail-responsive-layout.md) |
 | [可编辑的模板](/help/sites-developing/page-templates-editable.md) | 所有页面都基于可编辑的模板，允许非开发人员调整和自定义模板。 | [试试看！](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML 模板语言](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 所有组件都基于HTL |  |
+| [HTML模板语言](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 所有组件都基于HTL |  |
 | [电子商务功能](/help/commerce/cif-classic/developing/ecommerce.md) | 功能产品目录 |  |
 | [社区站点](/help/communities/overview.md) | 允许访客加入社区讨论、阅读博客等 |  |
 | [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 所有组件都基于新的核心组件，并且更加可用，可开箱即用且可由用户配置 | [试试看！](/help/sites-developing/we-retail-core-components.md) |
@@ -49,7 +49,7 @@ We.Retail作为AEM示例内容提供。 要使用，只需使用 [像往常一�
 
 >[!CAUTION]
 >
->We.Retail基于最新的AEM技术，因此不支持 [经典UI创作](/help/sites-classic-ui-authoring/home.md).
+>We.Retail基于最新的AEM技术，因此不支持 [经典UI创作](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md).
 
 ### 最新版本 {#latest-version}
 
@@ -75,7 +75,7 @@ We.Retail在技术上更加稳健，它利用最新的AEM技术变得更加灵�
 * **可用** 表示在示例内容中找到该功能的示例。
 * **不可用** 表示该功能的示例在示例内容中不可用，但并不意味着该功能本身不可用。
 
-| **专题** | **We.Retail** | **Geometrixx** |
+| **功能** | **We.Retail** | **Geometrixx** |
 |---|---|---|
 | 全局化站点结构 | 语言母版实时复制到国家/地区特定的站点 | 不可用 |
 | 内容片段 | 可用 | 不可用 |
@@ -102,7 +102,7 @@ We.Retail已作为开源项目发布，可以从GitHub下载最新版本的源�
 
 GITHUB上的代码
 
-您可以在 GitHub 上找到此页面的代码。
+您可以在GitHub上找到此页面的代码。
 
 * [在GitHub上打开aem-sample-we-retail项目](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * 将项目下载为 [ZIP文件](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)

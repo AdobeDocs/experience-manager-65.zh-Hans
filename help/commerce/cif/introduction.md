@@ -1,14 +1,15 @@
 ---
 title: 简介和概述
-description: Content and Commerce 的简介和概述。Experience Manager Commerce Integration Framework (CIF) 是 Adobe 推荐的模式，用于通过 Experience Cloud 集成和扩展来自 Adobe Commerce 和其他第三方商务解决方案的商务服务。
+description: 了解如何使用和管理AEM Content and Commerce，其中包含有关集成的有用文章以及如何开始使用AEM Storefront。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '867'
-ht-degree: 92%
+source-wordcount: '838'
+ht-degree: 85%
 
 ---
+
 
 # Content and Commerce {#content-commerce}
 
@@ -16,7 +17,7 @@ ht-degree: 92%
 
 ## Content and Commerce 如何帮助客户取得成功
 
-随着客户对在线商务体验的期望不断提高，品牌不得不更快地交付差异化的体验和更多内容。然而，实施内容管理平台通常需要花费大量时间和预算来开发基础元素（例如，自定义组件和创作工具），并且会增加维护和升级成本。Experience Manager Sites 提供 Content and Commerce 作为 Experience Manager 的附加模块，这将提供现成的商务核心组件、创作工具和引用店面，以加速上线，实现跨团队的无缝协作并提高转化率。
+随着客户对在线商务体验的期望不断提高，品牌不得不更快地交付差异化的体验和更多内容。然而，实施内容管理平台通常需要花费大量时间和预算来开发基础元素（例如，自定义组件和创作工具），并且会增加维护和升级成本。Experience Manager Sites提供了Content and Commerce作为一个Experience Manager的附加模块，它提供了开箱即用的商务核心组件、创作工具和参考店面，以加快上线，实现跨团队的无缝协作并促进转化。
 
 品牌可以将 Experience Manager 与 Adobe Commerce（Adobe Experience Cloud 的一部分）以及任何选定商务引擎集成。借助 Experience Manager Content and Commerce，品牌可以：
 

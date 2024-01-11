@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 241e39ae402744ac200cfd9220245b080aec33af
+source-git-commit: 4be8b14ca9af543cec89c85ec5750f2065033406
 workflow-type: tm+mt
-source-wordcount: '7328'
+source-wordcount: '7297'
 ht-degree: 20%
 
 ---
@@ -17,8 +17,7 @@ ht-degree: 20%
 # Adobe Experience Manager 6.5文档 {#content}
 
 + 发行说明 {#release-notes}
-   + [AEM 6.5发行说明](/help/release-notes/home.md)
-   + [最新发行说明](/help/release-notes/release-notes.md)
+   + [发行说明](/help/release-notes/release-notes.md)
    + 以前的发行说明 {#service-pack}
       + [6.5.18](/help/release-notes/previous/6.5.18.md)
       + [6.5.17](/help/release-notes/previous/6.5.17.md)
@@ -74,7 +73,6 @@ ht-degree: 20%
    + [相同网站Cookie支持](/help/sites-administering/same-site-cookie-support.md)
 + Sites {#sites}
    + 创作 {#authoring}
-      + [创作用户指南概述](/help/sites-authoring/home.md)
       + AEM创作的基本任务、工具和概念 {#essentials}
          + [作者的首要步骤](/help/sites-authoring/first-steps.md)
          + [页面创作](/help/sites-authoring/page-authoring.md)
@@ -270,7 +268,6 @@ ht-degree: 20%
          + [屏幕内容管理](/help/sites-administering/content-management-screens.md)
          + [WebDAV访问](/help/sites-administering/webdav-access.md)
    + 经典UI创作 {#classic-ui}
-      + [经典UI创作指南概述](/help/sites-classic-ui-authoring/home.md)
       + 经典UI创作简介 {#introduction}
          + [作者的首要步骤](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)
          + [在经典UI中创作](/help/sites-classic-ui-authoring/classicui.md)
@@ -340,7 +337,6 @@ ht-degree: 20%
          + [使用Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [资产测试的命名约定](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + 资源 {#assets}
-   + [[!DNL Assets] 用户指南](/help/assets/home.md)
    + [关于DAM](/help/assets/assets.md)
    + [资产最佳实践](/help/assets/best-practices-for-assets.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
@@ -504,7 +500,6 @@ ht-degree: 20%
       + [为 [!DNL Workfront] 安装 [!DNL enhanced connector] ](/help/assets/workfront-connector-install.md)
       + [为 [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
-   + [AEM 6.5 Forms指南](/help/forms/home.md)
    + 发行说明 {#release-notes-new-features}
       + [新增功能](/help/forms/using/whats-new.md)
       + [常见问题](/help/forms/using/frequently-asked-questions-faq.md)
@@ -1192,9 +1187,8 @@ ht-degree: 20%
       + [在动态PDF forms中生成和使用哈希](/help/forms/developing/hashing-forms.md)
       + [使用WS-Security标头传递凭据](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
-   + [AEM Content and Commerce](/help/commerce/home.md)
-   + [对AEM Content and Commerce的显着更改](/help/commerce/cif/changes.md)
    + [简介和概述](/help/commerce/cif/introduction.md)
+   + [对AEM Content and Commerce的显着更改](/help/commerce/cif/changes.md)
    + 集成 {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [第三方商业解决方案](/help/commerce/cif/integrating/third-party.md)
@@ -1276,7 +1270,6 @@ ht-degree: 20%
    + [什么是文档历程？](/help/journey-documentation/home.md)
 + 实施 {#implementing}
    + 开发 {#developing}
-      + [开发用户指南概述](/help/sites-developing/home.md)
       + 开发人员简介 {#introduction}
          + [AEM Sites 开发快速入门 – WKND 教程](/help/sites-developing/getting-started.md)
          + [AEM核心概念](/help/sites-developing/the-basics.md)
@@ -1529,7 +1522,6 @@ ht-degree: 20%
          + [为移动设备创建站点](/help/sites-developing/mobile.md)
          + [模拟器](/help/sites-developing/emulators.md)
    + 部署 {#deploying}
-      + [Deploying用户指南](/help/sites-deploying/home.md)
       + AEM平台简介 {#introduction}
          + [AEM平台简介](/help/sites-deploying/platform.md)
          + [技术要求](/help/sites-deploying/technical-requirements.md)

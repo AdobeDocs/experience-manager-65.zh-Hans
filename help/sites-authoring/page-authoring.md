@@ -2,7 +2,7 @@
 title: 在AEM中创作内容页面
 description: 在Adobe Experience Manager 6.5中创作内容页面时涉及的任务。
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本节介绍创作内容页面时涉及的任务。 还有许多与页面创作密切相关的其他功能，这些功能在 [Authoring指南](/help/sites-authoring/home.md).
+>本节介绍创作内容页面时涉及的任务。 还有许多与页面创作密切相关的其他功能，这些功能在 [Authoring指南](/help/sites-authoring/first-steps.md).
 
 ## 用于创作页面的功能的快速概述 {#quick-overview-of-features-used-for-authoring-pages}
 

@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '630'
 ht-degree: 3%
@@ -144,7 +144,7 @@ ht-degree: 3%
 
 有关开发AEM的完整信息，请参阅以下内容下的资源收集：
 
-* [Developing用户指南](/help/sites-developing/home.md)
+* [Developing用户指南](/help/sites-developing/getting-started.md)
 * [Granite UI文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 SitesTutorials和视频](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [AEM Sites 开发快速入门 – WKND 教程](/help/sites-developing/getting-started.md)

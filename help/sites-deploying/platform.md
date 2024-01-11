@@ -1,18 +1,19 @@
 ---
 title: AEM平台简介
-description: 本文概述AEM平台及其最重要的组件。
+description: 了解AEM平台及其最重要的组件(包括安装和部署Adobe Experience Manager 6.5)，并了解其架构(包括AdobeManaged Services云部署)。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
 workflow-type: tm+mt
-source-wordcount: '761'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
+
 
 # AEM平台简介{#introduction-to-the-aem-platform}
 

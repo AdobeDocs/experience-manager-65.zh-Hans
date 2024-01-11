@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 4b5b3ac41034bd4cc0f359b35cac0515b76ca64e
 workflow-type: tm+mt
-source-wordcount: '514'
-ht-degree: 64%
+source-wordcount: '521'
+ht-degree: 81%
 
 ---
 
@@ -66,7 +66,7 @@ AEM 提供了用于配置帐户和创作环境的某些方面的功能。
 
       * 页面会在当前窗口中打开。
 
-* **显示适用于资产的桌面操作**
+* **显示适用于资源的桌面操作**
 
   此选项需要使用AEM桌面应用程序。
 
@@ -79,7 +79,7 @@ AEM 提供了用于配置帐户和创作环境的某些方面的功能。
 
 * **相对日期显示**
 
-  为了提高可读性，AEM将过去七天内的日期渲染为相对日期（例如，三天前），将更早的日期渲染为确切日期（例如，2017年3月20日）。
+  为了提高可读性，AEM 会将过去七天内的日期显示为相对日期（例如三天前），而将更早的日期则显示为确切日期（例如 2017 年 3 月 20 日）。
 
   此选项定义系统中日期的显示方式。以下选项可供选择：
 
@@ -101,16 +101,16 @@ AEM 提供了用于配置帐户和创作环境的某些方面的功能。
    * [用于编辑页面的键盘快捷键](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [控制台的键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md)
 
-  此选项可启用键盘快捷键。默认情况下，这些功能处于启用状态，但可以禁用，例如，如果用户有特定的辅助功能要求。
+  此选项可启用键盘快捷键。默认情况下启用这些键盘快捷键，但也可禁用，例如，如果用户有特定的辅助功能要求。
 
 * **使用经典版创作体验**
 
-  此选项启用 [经典UI](/help/sites-classic-ui-authoring/home.md)基于的页面创作。 默认情况下，使用标准UI。
+  此选项启用 [经典UI](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)基于的页面创作。 默认情况下，使用标准UI。
 
-* **启用资产主页**
+* **启用资源主页**
 
-  仅当系统管理员为整个组织启用了资产主页体验时，此选项才可用。
+  只有系统管理员为整个组织启用了资源主页体验，才有此选项可用。
 
 * **Stock 配置**
 
-  此选项可让您指定首选的Adobe Stock配置，并且仅在系统管理员已启用时才可用 [Adobe Stock集成](/help/assets/aem-assets-adobe-stock.md).
+  通过此选项，可指定首选的 Adobe Stock 配置，并且只有系统管理员已启用 [Adobe Stock 集成](/help/assets/aem-assets-adobe-stock.md)，才有此选项可用。

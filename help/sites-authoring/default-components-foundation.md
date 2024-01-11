@@ -2,7 +2,7 @@
 title: 基础组件
 description: 了解Adobe Experience Manager 6.5中的基础组件。
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '6872'
 ht-degree: 3%
@@ -973,7 +973,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->请参阅 [AEM Forms帮助](/help/forms/home.md) 了解有关AEM Forms的信息。
+>请参阅 [AEM Forms帮助](/help/forms/using/introduction-aem-forms.md) 了解有关AEM Forms的信息。
 
 Forms由几个不同的组件组成：
 

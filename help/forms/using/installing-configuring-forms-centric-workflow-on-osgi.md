@@ -5,7 +5,7 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '1590'
 ht-degree: 3%
@@ -28,7 +28,7 @@ AEM Forms是一个功能强大的企业级平台。 OSGi上以Forms为中心的�
 >
 >借助OSGi上以Forms为中心的工作流，您可以在OSGi栈栈上快速构建和部署用于各种任务的工作流，而无需在JEE栈栈上安装完整的流程管理功能。 查看 [比较](capabilities-osgi-jee-workflows.md) OSGi上以Forms为中心的AEM Workflow和JEE上的流程管理，以了解功能的异同。
 >
->比较后，如果选择在JEE栈栈上安装进程管理功能，请参阅 [在JEE上安装或升级AEM Forms](/help/forms/home.md) ，以了解有关安装和配置JEE栈栈以及进程管理功能的详细信息。
+>比较后，如果选择在JEE栈栈上安装进程管理功能，请参阅 [在JEE上安装或升级AEM Forms](/help/forms/using/introduction-aem-forms.md) ，以了解有关安装和配置JEE栈栈以及进程管理功能的详细信息。
 
 ## 部署拓扑 {#deployment-topology}
 

@@ -7,7 +7,7 @@ role: User,Admin
 feature: Metadata
 exl-id: 0dd322cd-ce97-4335-825d-71f72a5e438c
 hide: true
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '3595'
 ht-degree: 8%
@@ -55,7 +55,7 @@ ht-degree: 8%
 | | <ul><li>[!UICONTROL 视频]</li></ul> | 具有MIME类型的视频资产的架构表单，例如 `video/avi` 和 `video/mp4`. |
 | [!UICONTROL 收藏集] | | 收藏集的架构表单。 |
 | [!UICONTROL contentfragment] | | [内容片段的架构表单](/help/sites-developing/customizing-content-fragments.md). |
-| [!UICONTROL 表单] | | 此架构表单与 [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL 表单] | | 此架构表单与 [Adobe Experience Manager Forms](/help/forms/using/introduction-aem-forms.md). |
 | [!UICONTROL ugc_contentfragment] | | 用于用户生成的内容片段和从社交媒体集成到Experience Manager中的资源的架构表单。 |
 
 >[!NOTE]
@@ -257,7 +257,7 @@ ht-degree: 8%
 
 1. 同样，在资产类型字段中的值Video与其他字段（例如，编解码器和持续时间）之间创建依赖关系。
 1. 重复这些步骤以在中的文档资源(PDF和Word)之间创建依赖关系 [!UICONTROL 资源类型] 字段和字段，例如 [!UICONTROL 页数] 和 [!UICONTROL 作者].
-1. 单击 **[!UICONTROL 保存]**. 将元数据架构应用到文件夹。
+1. 单击&#x200B;**[!UICONTROL 保存]**。将元数据架构应用到文件夹。
 
 1. 导航到将元数据架构应用到的文件夹，然后打开资源的属性页面。 根据您在“资产类型”字段中的选择，将显示相关的级联元数据字段。
 
@@ -340,7 +340,7 @@ ht-degree: 8%
 
    *图：添加到元数据架构表单编辑器的文本字段。*
 
-1. 单击 **[!UICONTROL 保存]**. 修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。
+1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。
 1. 单击 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
 
 1. 选择要应用已修改架构的文件夹，然后单击 **[!UICONTROL 应用]**.
@@ -368,7 +368,7 @@ ht-degree: 8%
 
    *图：元数据架构表单编辑器中的必填字段。*
 
-1. 单击 **[!UICONTROL 保存]**. 修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。 选择表单，然后单击 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
+1. 单击&#x200B;**[!UICONTROL 保存]**。修改后的表单将列在 **[!UICONTROL 元数据架构Forms]** 页面。 选择表单，然后单击 **[!UICONTROL 应用到文件夹]** 将自定义元数据应用到文件夹。
 
 1. 导航到文件夹，然后上传一些缺少添加到自定义表单的必填字段元数据的资源。 在资产的卡片视图中，将显示一条消息，指出缺少必填字段的元数据。
 

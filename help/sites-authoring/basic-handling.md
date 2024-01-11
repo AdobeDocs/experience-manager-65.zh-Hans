@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
 workflow-type: tm+mt
 source-wordcount: '2963'
 ht-degree: 42%
@@ -91,7 +91,7 @@ ht-degree: 42%
   </tr>
   <tr>
    <td>资产<br /> </td>
-   <td>这些控制台允许您导入和 <a href="/help/assets/home.md">管理数字资产</a> 如图像、视频、文档和音频文件。 随后，这些资产便可由同一AEM实例上运行的任何网站使用。 </td>
+   <td>这些控制台允许您导入和 <a href="/help/assets/assets.md">管理数字资产</a> 如图像、视频、文档和音频文件。 随后，这些资产便可由同一AEM实例上运行的任何网站使用。 </td>
   </tr>
   <tr>
    <td>社区</td>
@@ -107,7 +107,7 @@ ht-degree: 42%
   </tr>
   <tr>
    <td>Forms</td>
-   <td>通过此控制台，您可以创建、管理和处理 <a href="/help/forms/home.md">表单和文档</a>.</td>
+   <td>通过此控制台，您可以创建、管理和处理 <a href="/help/forms/using/introduction-aem-forms.md">表单和文档</a>.</td>
   </tr>
   <tr>
    <td>个性化</td>
