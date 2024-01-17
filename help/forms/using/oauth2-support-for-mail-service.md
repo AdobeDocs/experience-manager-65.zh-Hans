@@ -2,10 +2,10 @@
 title: 为Microsoft&reg； Office 365邮件服务器协议配置基于OAuth2的身份验证
 description: 为Microsoft&reg； Office 365邮件服务器协议配置基于OAuth2的身份验证
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
+source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
 workflow-type: tm+mt
-source-wordcount: '996'
-ht-degree: 7%
+source-wordcount: '980'
+ht-degree: 5%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 7%
 
 1. 登录 [https://portal.azure.com/](https://portal.azure.com/) 和搜索 **Azure活动目录** 在搜索栏中单击结果。
 或者，您可以直接浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
-1. 单击 **添加** > **应用程序注册** > **新建注册**
+1. 单击 **添加** > **应用程序注册** > **新建注册**.
 
    ![应用程序注册](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
@@ -33,7 +33,7 @@ ht-degree: 7%
 
    ![密钥](/help/forms/using/assets/azure_secretkey.png)
 
-1. 要添加权限，请转到新创建的应用程序，然后选择 **API权限** > **添加权限** > **Microsoft® Graph** > **委派权限**
+1. 要添加权限，请转到新创建的应用程序，然后选择 **API权限** > **添加权限** > **Microsoft® Graph** > **委派权限**.
 1. 选中应用程序的以下权限对应的复选框，然后单击 **添加权限**：
 
    * `IMAP.AccessUser.All`
@@ -52,7 +52,7 @@ ht-degree: 7%
    在本例中， `https://login.microsoftonline.com/common/oauth2/nativeclient` 用作重定向URI。
 
 1. 单击 **配置** 添加每个URL并根据您的要求配置设置后。
-   ![重定向 URI](/help/forms/using/assets/azure_redirecturi.png)
+   ![重定向URI](/help/forms/using/assets/azure_redirecturi.png)
 
    >[!NOTE]
    >
@@ -81,7 +81,7 @@ ht-degree: 7%
 
    ![允许权限](/help/forms/using/assets/azure_permission.png)
 
-1. 一旦您允许权限，您就会被重定向到一个新的URL，如下所示： `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
+1. 当您允许权限时，您将被重定向到一个新的URL，如下所示： `https://login.microsoftonline.com/common/oauth2/nativeclient?code=<code>&session_state=[session_id]`
 
 1. 复制的值 `<code>` 从上述URL从 `0.ASY...` 到 `&session_state` 在上面URL中。
 
@@ -134,7 +134,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   如果要将Auth 2.0身份验证设置更改为工作台中特定进程的基本身份验证，则可以设置 **OAuth 2.0身份验证** 值为“False”，位于 **使用全局设置** 在 **连接设置** 选项卡。
+   如果需要，您可以将Workbench中特定进程的Auth 2.0身份验证设置更改为基本身份验证。 为此，请设置 **OAuth 2.0身份验证** 值为“False”，位于 **使用全局设置** 在 **连接设置** 选项卡。
 
 ## 启用oAuth任务通知 {#enable_oauth_task}
 
@@ -148,7 +148,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   要了解与任务通知相关的更多信息， [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   要了解与任务通知相关的更多信息， [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## 配置电子邮件端点 {#configure_email_endpoint}
 
@@ -162,7 +162,7 @@ ht-degree: 7%
 
    >[!NOTE]
    >
-   要了解有关配置电子邮件端点的更多信息，请单击 [配置电子邮件端点](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/manage-endpoints/configuring-email-endpoints.html).
+   要了解有关配置电子邮件端点的更多信息，请单击 [配置电子邮件端点](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## 疑难解答 {#troubleshooting}
 
