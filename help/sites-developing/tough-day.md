@@ -4,9 +4,9 @@ description: Tough Day测试模拟了在所有操作同时进行的最坏情况�
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1826'
 ht-degree: 1%
 
 ---
@@ -400,7 +400,7 @@ publishmode:
 * **toughday.log**：包含与应用程序状态、调试信息和全局消息相关的消息。
 * **toughday_&lt;testname>.log**：与指定测试相关的消息。
 
-不会覆盖日志，后续运行会将消息附加到现有日志。 日志包含多个级别，有关详细信息，请参阅 ` [loglevel parameter](/help/sites-developing/tough-day.md#global-parameters)`.
+不会覆盖日志，后续运行会将消息附加到现有日志。 日志包含多个级别，有关详细信息，请参阅 [loglevel参数。](#global-parameters).
 
 <!--
 #### Example Usage {#example-usage}

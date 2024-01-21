@@ -1,6 +1,6 @@
 ---
-title: 监测和维护您的 Adobe Experience Manager 实例
-description: 了解如何监测和维护 Adobe Experience Manager 实例。
+title: 监控和维护 Adobe Experience Manager 实例
+description: 了解如何监控和维护您的 Adobe Experience Manager 实例。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -8,14 +8,14 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 783824ece92c12476505d695b961d782d7d70cb9
 workflow-type: tm+mt
-source-wordcount: '5793'
+source-wordcount: '5792'
 ht-degree: 0%
 
 ---
 
-# 监测和维护您的 Adobe Experience Manager 实例{#monitoring-and-maintaining-your-aem-instance}
+# 监控和维护 Adobe Experience Manager 实例{#monitoring-and-maintaining-your-aem-instance}
 
 部署AEM实例后，必须监视和维护其操作、性能和完整性。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 此 **清除版本** 工具用于清除存储库中节点或节点层次结构的版本。 其主要用途是通过删除节点的旧版本来帮助您减小存储库的大小。
 
-本节介绍与AEM版本控制功能相关的维护操作。 此 **清除版本** 工具用于清除存储库中节点或节点层次结构的版本。 其主要目的是帮助您通过删除旧版本的节点来减小存储库的大小。
+本节介绍与AEM版本控制功能相关的维护操作。 此 **清除版本** 工具用于清除存储库中节点或节点层次结构的版本。 其主要目的是通过删除旧版本的节点来帮助您减小存储库的大小。
 
 ### 概述 {#overview}
 
@@ -182,7 +182,7 @@ ht-degree: 0%
 
 在下一个示例中：
 
-* **[!DNL Shirts]**&#x200B;这些版本会被清除，因为其版本期限大于两天。
+* **[!DNL Shirts]**&#x200B;版本被清除，因为其版本期限超过两天。
 * 此 **[!DNL Tonga Fashions!]** 清除版本，因为其版本数大于5。
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -203,13 +203,13 @@ AEM WCM会记录详细的日志。 打开包装并启动“快速入门”后，
 
 日志文件旋转是指通过定期创建文件来限制文件增长的过程。 在AEM中，一个名为 `error.log` 会根据给定规则每天轮换一次：
 
-* 此 `error.log` 文件将按照模式重命名 {original_filename} `.yyyy-MM-dd`. 例如，在2010年7月11日，当前日志文件被重命名 `error.log-2010-07-10`，然后是新的 `error.og` 创建。
+* 此 `error.log` 文件将按照模式重命名 `{original_filename}.yyyy-MM-dd`. 例如，在2010年7月11日，当前日志文件被重命名 `error.log-2010-07-10`，然后是新的 `error.log` 创建。
 
-* 不会删除上一个日志文件，因此您有责任定期清除旧日志文件，以限制磁盘的使用情况。
+* 以前的日志文件不会被删除，因此您有责任定期清理旧的日志文件以限制磁盘使用量。
 
 >[!NOTE]
 >
->如果您升级 AEM 安装，AEM 中不再使用的任何现有日志文件仍保留在磁盘上。 您可以在不风险的情况下删除它们。 所有新的日志条目都写入新的日志文件中。
+>如果升级 AEM 安装，AEM 不再使用的任何现有日志文件将保留在磁盘上。 您可以毫无风险地删除它们。 所有新的日志条目都写入新的日志文件中。
 
 ### 查找日志文件 {#finding-the-log-files}
 
@@ -298,7 +298,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    >[!NOTE]
    >
-   >虽然不是技术要求，但最好 `<identifier>` 是唯一的。
+   >虽然不是技术要求，但建议独 `<identifier>` 一无二。
 
 1. 在此节点上设置以下属性：
 
@@ -435,9 +435,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >
    >默认值为“。”yyyy-MM-dd（用于每日日志轮换）。
    >
-   >例如，在2010年1月20日午夜（或此日期之后的第一个日志消息显示精确），.。。/logs/error.log 被重命名为.。/logs/error.log.2010-01-20. 1月21日的日志记录将输出到（新的和空的）。。/logs/error.log，直到它在下一天发生更改时才滚动。
+   >例如，在 2010 年 1 月 20 日午夜（或在此日期之后的第一条日志消息恰好出现时），../logs/error.log 重命名为 ../日志/error.log.2010-01-20. 1 月 21 日的日志记录输出到（一个新的和空的）../logs/error.log，直到它在下一次更改日期时滚动。
    >
-   >| `'.'yyyy-MM` | 每月开始旋转 |
+   >| `'.'yyyy-MM` | 每月月初轮换 |
    >|---|---|
    >| `'.'yyyy-ww` | 每周第一天的轮换（取决于区域设置）。 |
    >| `'.'yyyy-MM-dd` | 每天午夜轮换。 |
@@ -921,9 +921,9 @@ Percentage of the requests served within a certain time (ms)
 
    现在，您可以选择其他选项。
 
-### 使用（J） VisualVM 监测性能 {#monitoring-performance-using-j-visualvm}
+### 使用 （J）VisualVM 监控性能 {#monitoring-performance-using-j-visualvm}
 
-对于 JDK 6-8，工具命令 `visualvm` 可用。 安装JDK后，可以执行以下操作：
+对于 JDK 6-8，可以使用该工具命令 `visualvm` 。 安装JDK后，可以执行以下操作：
 
 1. 启动AEM实例。
 
@@ -1035,7 +1035,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 资源的平均大小是多少？ {#what-is-the-average-size-of-the-assets}
 
-确定文件夹的总大小 `/var/dam` ：
+要确定文件夹的总 `/var/dam` 大小，请执行以下操作：
 
 1. 使用 WebDAV 将存储库映射到本地文件系统。
 
@@ -1135,10 +1135,10 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
    * [Apache Sling JavaScript处理程序](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Apache Sling日志记录配置](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [CQHTML库管理器](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM 调试筛选](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [CQ WCM 调试过滤器](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
    * [伐木](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* 是否以及如何配置 [ 版本清除](/help/sites-deploying/version-purging.md)
+* 是否以及如何配置 [版本清除](/help/sites-deploying/version-purging.md)
 * 知识库：
 
    * [打开的文件过多](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html)
@@ -1157,7 +1157,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 Java™虚拟机(JVM)在调试方面已得到改进(特别是自Java™ 7以来)。 因此，指定合理的固定JVM大小并使用默认值通常是合适的。
 
-如果默认设置不合适，则必须建立一种方法来监测和评估 GC 的性能。 在尝试调整 JVM 之前执行此操作。 此过程可能涉及监视因素，包括堆大小、算法和其他方面。
+如果默认设置不合适，那么建立一种监测和评估气相色谱性能的方法非常重要。 请在尝试调整 JVM 之前执行此操作。 此过程可能涉及监视因素，包括堆大小、算法和其他方面。
 
 一些常见选项包括：
 
