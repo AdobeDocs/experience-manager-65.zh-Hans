@@ -7,7 +7,7 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 1ad4d5370356f160398b3c19080dc4494e12cba7
 workflow-type: tm+mt
 source-wordcount: '2444'
 ht-degree: 53%
@@ -384,11 +384,9 @@ GITHUB上的代码
    ```java
    package com.adobe.example.msm;
    
-   import java.util.Collections;
+   import java.util.Collections;  
    
-   import org.apache.felix.scr.annotations.Component;
-   import org.apache.felix.scr.annotations.Property;
-   import org.apache.felix.scr.annotations.Service;
+   import com.day.cq.wcm.api.NameConstants;
    import org.apache.sling.api.resource.Resource;
    import org.apache.sling.api.resource.ResourceResolver;
    import org.apache.sling.api.resource.ValueMap;
@@ -396,6 +394,7 @@ GITHUB上的代码
    import org.apache.sling.commons.json.io.JSONWriter;
    import org.apache.sling.commons.json.JSONException;
    
+   import org.osgi.service.component.annotations.Component;
    import org.slf4j.Logger;
    import org.slf4j.LoggerFactory;
    
@@ -409,116 +408,118 @@ GITHUB上的代码
    import com.day.cq.wcm.msm.api.LiveRelationship;
    import com.day.cq.wcm.api.WCMException;
    
-   @Component(metatype = false)
-   @Service
+   @Component(
+   service = LiveActionFactory.class,
+   property = {LiveActionFactory.LIVE_ACTION_NAME + "=" + ExampleLiveActionFactory.LIVE_ACTION_NAME})
    public class ExampleLiveActionFactory implements LiveActionFactory<LiveAction> {
-    @Property(value="exampleLiveAction")
-    static final String actionname = LiveActionFactory.LIVE_ACTION_NAME;
+     private static final Logger logger = LoggerFactory.getLogger(ExampleLiveActionFactory.class);
    
-    public LiveAction createAction(Resource config) {
-     ValueMap configs;
-     /* Adapt the config resource to a ValueMap */
-           if (config == null || config.adaptTo(ValueMap.class) == null) {
-               configs = new ValueMapDecorator(Collections.<String, Object>emptyMap());
-           } else {
-               configs = config.adaptTo(ValueMap.class);
-           }
+     public static final String LIVE_ACTION_NAME = "CustomAction";
    
-     return new ExampleLiveAction(actionname, configs);
-    }
-    public String createsAction() {
-     return actionname;
-    }
-    /************* LiveAction ****************/
-    private static class ExampleLiveAction implements LiveAction {
-     private String name;
-     private ValueMap configs;
-     private static final Logger log = LoggerFactory.getLogger(ExampleLiveAction.class);
+     public LiveAction createAction(Resource config) {
+       ValueMap configs;
+       /* Adapt the config resource to a ValueMap */
+       if (config == null || config.adaptTo(ValueMap.class) == null) {
+         configs = new ValueMapDecorator(Collections.<String, Object>emptyMap());
+       } else {
+         configs = config.adaptTo(ValueMap.class);
+       }  
+   
+       return new ExampleLiveAction(LIVE_ACTION_NAME, configs);
+     }
+     public String createsAction() {
+       return LIVE_ACTION_NAME;
+     }  
+   
+     /************* LiveAction ****************/
+     private static class ExampleLiveAction implements LiveAction {
+       private String name;
+       private ValueMap configs;
+       private static final Logger log = LoggerFactory.getLogger(ExampleLiveAction.class);  
    
      public ExampleLiveAction(String nm, ValueMap config){
-      name = nm;
-      configs = config;
-     }
+       name = nm;
+       configs = config;
+     }  
    
      public void execute(Resource source, Resource target,
-       LiveRelationship liverel, boolean autoSave, boolean isResetRollout)
-         throws WCMException {
+                         LiveRelationship liverel, boolean autoSave, boolean isResetRollout)
+                       throws WCMException {  
    
-      String lastMod = null;
+       String lastMod = null;  
    
-      log.info(" *** Executing ExampleLiveAction *** ");
+       log.info(" *** Executing ExampleLiveAction *** ");  
    
-      /* Determine if the LiveAction is configured to copy the cq:lastModifiedBy property */
-      if ((Boolean) configs.get("repLastModBy")){
+       /* Determine if the LiveAction is configured to copy the cq:lastModifiedBy property */
+       if ((Boolean) configs.get("repLastModBy")){  
    
-       /* get the source's cq:lastModifiedBy property */
-       if (source != null && source.adaptTo(Node.class) !=  null){
-        ValueMap sourcevm = source.adaptTo(ValueMap.class);
-        lastMod = sourcevm.get(com.day.cq.wcm.msm.api.MSMNameConstants.PN_PAGE_LAST_MOD_BY, String.class);
-       }
+         /* get the source's cq:lastModifiedBy property */
+         if (source != null && source.adaptTo(Node.class) !=  null){
+           ValueMap sourcevm = source.adaptTo(ValueMap.class);
+           lastMod = sourcevm.get(NameConstants.PN_PAGE_LAST_MOD_BY, String.class);
+         }  
    
-       /* set the target node's la-lastModifiedBy property */
-       Session session = null;
-       if (target != null && target.adaptTo(Node.class) !=  null){
-        ResourceResolver resolver = target.getResourceResolver();
-        session = resolver.adaptTo(javax.jcr.Session.class);
-        Node targetNode;
-        try{
-         targetNode=target.adaptTo(javax.jcr.Node.class);
-         targetNode.setProperty("la-lastModifiedBy", lastMod);
-         log.info(" *** Target node lastModifiedBy property updated: {} ***",lastMod);
-        }catch(Exception e){
-         log.error(e.getMessage());
-        }
-       }
-       if(autoSave){
-        try {
-         session.save();
-        } catch (Exception e) {
-         try {
-          session.refresh(true);
-         } catch (RepositoryException e1) {
-          e1.printStackTrace();
+         /* set the target node's la-lastModifiedBy property */
+         Session session = null;
+         if (target != null && target.adaptTo(Node.class) !=  null){
+           ResourceResolver resolver = target.getResourceResolver();
+           session = resolver.adaptTo(javax.jcr.Session.class);
+           Node targetNode;
+           try{
+             targetNode=target.adaptTo(javax.jcr.Node.class);
+             targetNode.setProperty("la-lastModifiedBy", lastMod);
+             log.info(" *** Target node lastModifiedBy property updated: {} ***",lastMod);
+           }catch(Exception e){
+             log.error(e.getMessage());
+           }
          }
-         e.printStackTrace();
-        }
+         if(autoSave){
+           try {
+             session.save();
+           } catch (Exception e) {
+             try {
+               session.refresh(true);
+             } catch (RepositoryException e1) {
+               e1.printStackTrace();
+             }
+             e.printStackTrace();
+           }
+         }
        }
-      }
      }
      public String getName() {
-      return name;
-     }
+       return name;
+     }  
    
      /************* Deprecated *************/
      @Deprecated
      public void execute(ResourceResolver arg0, LiveRelationship arg1,
-       ActionConfig arg2, boolean arg3) throws WCMException {
+                        ActionConfig arg2, boolean arg3) throws WCMException {
      }
      @Deprecated
      public void execute(ResourceResolver arg0, LiveRelationship arg1,
-       ActionConfig arg2, boolean arg3, boolean arg4)
-         throws WCMException {
+                         ActionConfig arg2, boolean arg3, boolean arg4)
+                       throws WCMException {
      }
      @Deprecated
      public String getParameterName() {
-      return null;
+       return null;
      }
      @Deprecated
-     public String[] getPropertiesNames() {
-      return null;
+       public String[] getPropertiesNames() {
+         return null;
      }
      @Deprecated
      public int getRank() {
-      return 0;
+       return 0;
      }
      @Deprecated
      public String getTitle() {
-      return null;
+       return null;
      }
      @Deprecated
      public void write(JSONWriter arg0) throws JSONException {
      }
-    }
    }
    ```
 
