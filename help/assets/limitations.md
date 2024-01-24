@@ -8,7 +8,7 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: 3fa8680480e0da1c58c99e8ce127ce228ab87803
+source-git-commit: cc219931430ba571745e6ef254a034a689acd1cf
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 2%
@@ -57,7 +57,7 @@ Dynamic Media不支持以下Web浏览器和操作系统的组合。
 <!-- CQDOC-19433 (original ticket)
 and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
 
-自2024年4月30日起，Dynamic MediaAdobe将停止支持以下内容：
+自2024年4月30日起，AdobeDynamic Media将停止支持以下内容：
 
 * SSL（安全套接字层）2.0
 * SSL 3.0
