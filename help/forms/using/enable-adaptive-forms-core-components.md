@@ -8,9 +8,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 4a8155f754d1f71354717f5eb22511baab110916
+source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '969'
 ht-degree: 14%
 
 ---
@@ -105,12 +105,11 @@ ht-degree: 14%
 1. 更新项目以包含最新版本的Forms核心组件：
 
    1. 打开 [AEM原型项目文件夹]/pom.xml进行编辑。
-   1. 设置版本 `core.forms.components.version` 和 `core.forms.components.af.version` 到 [最新Forms核心组件](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) 版本并确保两者的版本都与 **Forms核心组件** 在表中提及，并设置版本 `core.wcm.components.version` 如中所述 **WCM核心组件**.
+   1. 设置版本 `core.forms.components.version` 和 `core.forms.components.af.version` 到 [最新Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history) 版本并确保两者的版本都与 **Forms核心组件** 在表中提及，并设置版本 `core.wcm.components.version` 如中所述 [WCM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/versions.html).
 
       >[!WARNING]
       >
-      >* 使用创建原型项目时 `version 45`， [AEM原型项目文件夹]/pom.xml最初将forms核心组件版本设置为 `1.1.28`. 在构建或部署原型项目之前，请将表单核心组件版本更新为 `1.1.26`.
-
+      >* 使用版本45创建原型项目时， `[AEM Archetype Project Folder]/pom.xml` 最初将forms核心组件版本设置为1.1.28。在构建或部署原型项目之前，请将Forms核心组件版本更新为1.1.26。您可以在以下位置找到最新版本 [AEM 6.5 Forms版本历史记录](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html#aem-as-form-version-history).
 
       >[!NOTE]
       >
