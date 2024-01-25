@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 4be8b14ca9af543cec89c85ec5750f2065033406
+source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
 workflow-type: tm+mt
-source-wordcount: '7297'
+source-wordcount: '7312'
 ht-degree: 20%
 
 ---
@@ -177,7 +177,7 @@ ht-degree: 20%
          + [功能板](/help/sites-administering/dashboards.md)
          + [操作功能板](/help/sites-administering/operations-dashboard.md)
          + [备份和恢复](/help/sites-administering/backup-and-restore.md)
-         + [数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md)
+         + [数据存储垃圾回收](/help/sites-administering/data-store-garbage-collection.md)
          + [使用JMX控制台监控服务器资源](/help/sites-administering/jmx-console.md)
          + [使用日志](/help/sites-administering/troubleshooting.md)
          + [AEM 6中的审核日志维护](/help/sites-administering/operations-audit-log.md)
@@ -623,7 +623,7 @@ ht-degree: 20%
       + [自适应表单片段](/help/forms/using/adaptive-form-fragments.md)
       + [配置提交操作](/help/forms/using/configuring-submit-actions.md)
       + [在自适应表单中使用CAPTCHA](/help/forms/using/captcha-adaptive-forms.md)
-      + [自适应表单关键词](/help/forms/using/adaptive-forms-keywords.md)
+      + [自适应表单关键字](/help/forms/using/adaptive-forms-keywords.md)
       + [自适应表单中的表](/help/forms/using/adaptive-forms-tables.md)
       + [自动保存自适应表单](/help/forms/using/auto-save-an-adaptive-form.md)
       + [配置重定向页面](/help/forms/using/configuring-redirect-page.md)
@@ -1180,6 +1180,7 @@ ht-degree: 20%
       + [即使AEM Forms服务器未完全启动并运行，也正在处理文档](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [无法使用输出服务、Forms服务或记录文档(DoR)服务](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [缓解Experience Manager Forms的Struts 2 RCE漏洞](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [升级到AEM Forms Service Pack时备份数据库失败。 6.5.12.0](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
    + 旧版文档 {#legacy-documentation}
       + [使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据](/help/forms/developing/building-xml.md)
       + [在JEE自定义DSC中使用AEM Forms压缩和解压缩文件](/help/forms/developing/compressing-decompressing-custom-dsc.md)
