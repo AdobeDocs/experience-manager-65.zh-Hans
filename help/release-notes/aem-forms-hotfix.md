@@ -2,16 +2,20 @@
 title: AEM Forms的修补程序
 description: 提供了有关如何下载和安装AEM Forms修补程序的信息。
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4c47fc5d03732d206c9eb18feb6e44018e936472
+source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
 workflow-type: tm+mt
-source-wordcount: '201'
-ht-degree: 1%
+source-wordcount: '320'
+ht-degree: 0%
 
 ---
 
 # Adobe Experience Manager Forms修补程序{#aem-form-hotfix}
 
 本文列出为解决已知问题、提高系统稳定性和增强AEM Forms整体性能而实施的关键修复。
+
+>[!NOTE]
+>
+> 这些修补程序设计为累积式，包含所有之前的修补程序。 将最新的修补程序应用于某个版本时，该版本不仅解决了最新问题，而且还合并了之前的所有错误修复和增强功能。
 
 ## 自适应Forms的修补程序 {#hotfix-for-adaptive-forms}
 
@@ -21,6 +25,34 @@ ht-degree: 1%
     <td><strong>日期</strong></td>
     <td><strong>修补程序下载链接(AEM Software Distribution链接)</strong></td>
     <td><strong>修复的问题</strong></td>
+  </tr>
+  <tr>
+    <td>2024年1月29日</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fforms-foundation-qs-content-4.0.170-FORMS-12692-B0001.zip">适用于JEE服务器上Windows的AEM Service Pack 6.5.19.0的修补程序</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>在JEE服务器上的AEM Forms上，无法呈现使用上下文路径的HTML5 Forms 。 (FORMS-12485)。</li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>2024年1月29日</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-win-pkg-6.0.1016-004.zip">适用于Microsoft Windows的AEM Service Pack 6.5.18.0的修补程序</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-linux-pkg-6.0.1016-004.zip">适用于Linux的AEM Service Pack 6.5.18.0的修补程序</a></li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffd%2Fadobe-aemfd-osx-pkg-6.0.1016-004.zip">适用于Apple macOS的AEM Service Pack 6.5.18.0的修补程序</a></li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li> OOTB涂写签名组件无法以自适应表单呈现预览。 (FORMS-12073)。</li>
+    </ul>
+    </td>    
    </tr>
    <tr>
     <td>2023年11月20日</td>
@@ -38,9 +70,9 @@ ht-degree: 1%
     <li>在编辑模式下无法打开包含大型内嵌图像的交互式通信。 (FORMS-10578)</li>
     </ul>
     </td>    
-    </tr>
-    <tbody>
-     </table>
+  </tr>
+  <tbody>
+</table>
 
 ## 下载并安装修补程序 {#download-install-hotfix}
 

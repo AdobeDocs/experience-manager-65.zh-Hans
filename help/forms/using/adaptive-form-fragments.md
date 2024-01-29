@@ -7,7 +7,7 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: 0924ae98f03f09d5e8784bbd5e7af131b1edd544
+source-git-commit: ea90b8a180426461b9c4a77d4eb91cf86081e9bc
 workflow-type: tm+mt
 source-wordcount: '2380'
 ht-degree: 3%
@@ -29,7 +29,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 您可以使用表单片段组件](https://experienceleague.corp.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html)的“配置”对话框和“设计”对话框轻松地[为用户自定义片段体验。
+> 您可以使用表单片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html)的“配置”对话框和“设计”对话框轻松地[为用户自定义片段体验。
 
 ## 创建片段 {#create-a-fragment}
 
