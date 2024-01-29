@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3608'
 ht-degree: 3%
 
 ---
@@ -29,6 +29,11 @@ ht-degree: 3%
 提交表单后，您的客户通常希望以打印或文档格式记录他们在表单中填写的信息，以供将来参考。 这称为记录文档。
 
 本文介绍了如何为自适应Forms或自适应表单片段生成记录文档。
+
+>[!NOTE]
+>
+> AEM 6.5 Forms Service Pack 19 (6.5.19.0)引入了自适应表单编辑器中对自定义自适应表单片段及其字段的支持。
+
 
 >[!NOTE]
 >
