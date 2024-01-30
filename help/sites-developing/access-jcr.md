@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 152b6078d6a19f8220564188d4d5d5a7bdee4146
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '567'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 尽管连接到存储库和建立连接的方式有所不同，但本开发文章使用的静态方法属于 `org.apache.jackrabbit.commons.JcrUtils` 类。 方法的名称为 `getRepository`. 此方法采用表示Adobe CQ服务器URL的字符串参数。 例如：`http://localhost:4503/crx/server`。
 
-此 `getRepository`方法返回 `Repository`实例，如以下代码示例所示。
+此 `getRepository` 方法返回 `Repository` 实例，如以下代码示例所示。
 
 ```java
 //Create a connection to the AEM JCR repository running on local host
@@ -42,14 +42,14 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## 创建会话实例 {#create-a-session-instance}
 
-此 `Repository`实例表示CRX存储库。 您使用 `Repository`实例与存储库建立会话。 要创建会话，请调用 `Repository`实例的 `login`方法和传递 `javax.jcr.SimpleCredentials` 对象。 此 `login`方法返回 `javax.jcr.Session` 实例。
+此 `Repository` 实例表示CRX存储库。 您使用 `Repository` 实例与存储库建立会话。 要创建会话，请调用 `Repository` 实例的 `login` 方法和传递 `javax.jcr.SimpleCredentials` 对象。 此 `login` 方法返回 `javax.jcr.Session` 实例。
 
-您创建 `SimpleCredentials`对象，方法是使用其构造函数并传递以下字符串值：
+您创建 `SimpleCredentials` 对象，方法是使用其构造函数并传递以下字符串值：
 
 * 用户名；
 * 相应的密码
 
-传递第二个参数时，调用字符串对象的 `toCharArray`方法。 以下代码显示了如何调用 `login`返回 `javax.jcr.Sessioninstance`.
+传递第二个参数时，调用字符串对象的 `toCharArray` 方法。 以下代码显示了如何调用 `login` 返回 `javax.jcr.Sessioninstance`.
 
 ```java
 //Create a Session instance
@@ -58,7 +58,7 @@ javax.jcr.Session session = repository.login( new SimpleCredentials("admin", "ad
 
 ## 创建节点实例 {#create-a-node-instance}
 
-使用 `Session`实例以创建 `javax.jcr.Node` 实例。 A `Node`实例允许您执行节点操作。 例如，您可以创建一个节点。 要创建表示根节点的节点，请调用 `Session`实例的 `getRootNode` 方法，如以下代码行所示。
+使用 `Session` 实例以创建 `javax.jcr.Node` 实例。 A `Node` 实例允许您执行节点操作。 例如，您可以创建一个节点。 要创建表示根节点的节点，请调用 `Session` 实例的 `getRootNode` 方法，如以下代码行所示。
 
 ```java
 //Create a Node
@@ -75,7 +75,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## 检索节点值 {#retrieve-node-values}
 
-要检索节点及其值，请调用 `Node`实例的 `getNode`方法并传递一个字符串值，该值表示到节点的完全限定路径。 考虑在上一个代码示例中创建的节点结构。 要检索日期节点，请指定adobe/day，如以下代码所示：
+要检索节点及其值，请调用 `Node` 实例的 `getNode` 方法并传递一个字符串值，该值表示到节点的完全限定路径。 考虑在上一个代码示例中创建的节点结构。 要检索日期节点，请指定adobe/day，如以下代码所示：
 
 ```java
 // Retrieve content
@@ -86,7 +86,7 @@ System.out.println(node.getProperty("message").getString());
 
 ## 在Adobe CQ存储库中创建节点 {#create-nodes-in-the-adobe-cq-repository}
 
-以下Java™代码示例表示一个连接到Adobe CQ的Java™类，将创建 `Session`实例，并添加新节点。 为节点分配一个数据值，然后将节点的值及其路径写出到控制台。 完成会话后，请务必注销。
+以下Java™代码示例表示一个连接到Adobe CQ的Java™类，将创建 `Session` 实例，并添加新节点。 为节点分配一个数据值，然后将节点的值及其路径写出到控制台。 完成会话后，请务必注销。
 
 ```java
 /*
