@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
+source-git-commit: 07d44d8dea5bf27b831abd02bd42e53dd860133a
 workflow-type: tm+mt
-source-wordcount: '7312'
+source-wordcount: '7322'
 ht-degree: 20%
 
 ---
@@ -614,6 +614,7 @@ ht-degree: 20%
    + 自适应Forms — 核心组件 {#adaptive-forms-core-components}
       + [为您的环境启用核心组件](/help/forms/using/enable-adaptive-forms-core-components.md)
       + [创建基于核心组件的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)
+      + [在自适应表单中创建和使用自适应Forms片段](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [为基于核心组件的自适应Forms创建主题](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
       + [为基于核心组件的自适应Forms创建和使用自定义错误处理程序](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
    + 自适应Forms — 基本创作 {#adaptive-forms-basic-authoring}
@@ -1515,7 +1516,7 @@ ht-degree: 20%
          + [OSGI包](/help/sites-developing/osgi-bundles.md)
          + [JCR集成](/help/sites-developing/jcr-integration.md)
          + [代码示例](/help/sites-developing/code-samples.md)
-         + [排查查询速度较慢的问题](/help/sites-developing/troubleshooting-slow-queries.md)
+         + [排除查询速度较慢的问题](/help/sites-developing/troubleshooting-slow-queries.md)
       + 移动Web {#mobileweb}
          + [移动Web](/help/sites-developing/mobile-web.md)
          + [创建设备组筛选器](/help/sites-developing/groupfilters.md)
