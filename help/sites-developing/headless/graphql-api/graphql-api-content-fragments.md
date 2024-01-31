@@ -3,9 +3,9 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在Adobe Experience Manager (AEM)中将内容片段与AEM GraphQL API用于Headless内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
+source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
 workflow-type: tm+mt
-source-wordcount: '4697'
+source-wordcount: '4708'
 ht-degree: 59%
 
 ---
@@ -718,7 +718,7 @@ query {
   >
   >Dispatcher添加后缀 `.json` 到所有持久查询URL，以便可以缓存结果。
   >
-  >这是为了确保查询符合Dispatcher对可以缓存的文档的要求。
+  >这是为了确保查询符合Dispatcher对可以缓存的文档的要求。 有关更多详细信息，请参阅 [Dispatcher如何返回文档？](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 
