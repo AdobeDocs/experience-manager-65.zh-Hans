@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 07d44d8dea5bf27b831abd02bd42e53dd860133a
+source-git-commit: ac4d8a45478fbe48b1e3d43affeee935d7b7ca90
 workflow-type: tm+mt
-source-wordcount: '7322'
+source-wordcount: '7334'
 ht-degree: 20%
 
 ---
@@ -1181,6 +1181,7 @@ ht-degree: 20%
       + [即使AEM Forms服务器未完全启动并运行，也正在处理文档](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [无法使用输出服务、Forms服务或记录文档(DoR)服务](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [缓解Experience Manager Forms的Struts 2 RCE漏洞](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [PDF生成无法在WorkBench上打印大量PDF](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [升级到AEM Forms Service Pack时备份数据库失败。 6.5.12.0](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6.5.12.0.md)
    + 旧版文档 {#legacy-documentation}
       + [使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据](/help/forms/developing/building-xml.md)
