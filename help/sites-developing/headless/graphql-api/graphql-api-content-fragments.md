@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在Adobe Experience Manager (AEM)中将内容片段与AEM GraphQL API用于Headless内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 3d1c3ac74c9303a88d028d957e3da6aa418e71ba
 workflow-type: tm+mt
-source-wordcount: '4847'
-ht-degree: 60%
+source-wordcount: '4697'
+ht-degree: 59%
 
 ---
 
@@ -195,7 +195,7 @@ GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于�
 
    * 其中三个由用户控制： `author`， `main`、和 `referencearticle`.
 
-   * 其他字段由AEM自动添加，表示用于提供有关特定内容片段的有用方法。在此示例中， [帮助程序字段](#helper-fields)) `_path`， `_metadata`， `_variations`.
+   * 其他字段由AEM自动添加，表示用于提供有关特定内容片段的有用方法。 在此示例中， [帮助程序字段](#helper-fields)) `_path`， `_metadata`， `_variations`.
 
 1. 用户基于 Article 模型创建内容片段之后，可以通过 GraphQL 询问该模型。例如，请参阅[示例查询](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries)（基于[用于 GraphQL 的示例内容片段结构](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)）。
 
@@ -259,7 +259,7 @@ GraphQL for AEM 支持一个类型列表。所有支持的内容片段模型数�
 | 枚举 |  `String` | 用于显示在模型创建时定义的选项列表中的选项 |
 | 标记 |  `[String]` | 用于显示表示在 AEM 中所用标记的字符串列表 |
 | 内容引用 |  `String` | 用于显示指向 AEM 中其他资源的路径 |
-| 片段引用 | *模型类型*<br><br>单个字段：`Model`-模型类型，直接引用<br><br>多字段，具有一个引用类型：`[Model]`-数组类型`Model`，直接从数组中引用<br><br>多字段，带有多个引用类型；`[AllFragmentModels]`-所有模型类型的数组，从具有合并类型的数组中引用 | 用于引用创建模型时定义的特定模型类型的一个或多个内容片段 |
+| 片段引用 |  *模型类型* <br><br>单个字段： `Model`  — 模型类型，直接引用 <br><br>具有一个引用类型的多字段： `[Model]`  — 类型数组 `Model`，直接从数组引用 <br><br>具有多个引用类型的多字段： `[AllFragmentModels]`  — 所有模型类型的数组，从具有合并类型的数组引用 | 用于引用创建模型时定义的特定模型类型的一个或多个内容片段 |
 
 {style="table-layout:auto"}
 
@@ -658,7 +658,7 @@ query {
 
 * `first`：`n`要返回的第一个项目。
 默认为 `50`。最大值为 `100`。
-* `after`：确定请求页面开始的光标。光标所表示的项目不包含在结果集中。 项目的光标由 `cursor` 字段 `edges` 结构。
+* `after`：确定请求页面开始的光标。 光标所表示的项目不包含在结果集中。 项目的光标由 `cursor` 字段 `edges` 结构。
 
 例如，输出包含最多五次冒险的结果页面，从&#x200B;*完整*&#x200B;结果列表中的给定光标项开始：
 
@@ -704,40 +704,28 @@ query {
 
 ### 启用持久化查询的缓存 {#enable-caching-persisted-queries}
 
-要启用持久化查询的缓存，请定义 Dispatcher 变量 `CACHE_GRAPHQL_PERSISTED_QUERIES`：
+要启用持久查询的缓存，需要对Dispatcher配置文件进行以下更新：
 
-1. 将该变量添加到 Dispatcher 文件 `global.vars` 中：
+* `<conf.d/rewrites/base_rewrite.rules>`
 
-   ```xml
-   Define CACHE_GRAPHQL_PERSISTED_QUERIES
-   ```
+  ```xml
+  # Allow the dispatcher to be able to cache persisted queries - they need an extension for the cache file
+  RewriteCond %{REQUEST_URI} ^/graphql/execute.json
+  RewriteRule ^/(.*)$ /$1;.json [PT] 
+  ```
 
->[!NOTE]
->
->使用以下对象为持久查询启用Dispatcher缓存时 `Define CACHE_GRAPHQL_PERSISTED_QUERIES` 一个 `ETag` 标头将添加到Dispatcher的响应中。
->
->默认情况下， `ETag` 标头使用以下指令进行配置：
->
->```
->FileETag MTime Size 
->```
->
->但是，此设置可能导致在持久查询响应上使用时出现问题，因为它不考虑响应中的细微更改。
->
->实现个人 `ETag` 计算 *每个* 唯一的响应 `FileETag Digest` 必须在Dispatcher配置中使用设置：
->
->```xml
-><Directory />    
->   ...    
->   FileETag Digest
-></Directory> 
->```
+  >[!NOTE]
+  >
+  >Dispatcher添加后缀 `.json` 到所有持久查询URL，以便可以缓存结果。
+  >
+  >这是为了确保查询符合Dispatcher对可以缓存的文档的要求。
 
->[!NOTE]
->
->要符合 [Dispatcher对可缓存文档的要求](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)，Dispatcher添加后缀 `.json` 到所有持久查询URL，以便可以缓存结果。
->
->在启用持久化查询缓存后，将通过重写规则添加此后缀。
+* `<conf.dispatcher.d/filters/ams_publish_filters.any>`
+
+  ```xml
+  # Allow GraphQL Persisted Queries & preflight requests
+  /0110 { /type "allow" /method '(GET|POST|OPTIONS)' /url "/graphql/execute.json*" }
+  ```
 
 ### Dispatcher 中的 CORS 配置 {#cors-configuration-in-dispatcher}
 
@@ -926,7 +914,7 @@ query {
 
 此配置必须指定可信网站来源 `alloworigin` 或 `alloworiginregexp` 必须向其授予访问权限。
 
-例如，要授予对 GraphQL 端点  的访问权限，以及对 `https://my.domain` 的持久查询端点的访问权限，您可以使用：
+例如，要授予对GraphQL端点的访问权限，以及对的持久查询端点的访问权限 `https://my.domain` 您可以使用：
 
 ```xml
 {
