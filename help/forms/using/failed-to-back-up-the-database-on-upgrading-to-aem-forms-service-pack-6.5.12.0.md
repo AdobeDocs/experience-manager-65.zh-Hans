@@ -1,14 +1,14 @@
 ---
-title: 无法在AEM Forms 6.5.12.0上备份以前的数据库。
+title: 在升级到MySQL的6.5.12.0时无法备份数据库。
 description: 当用户升级到Experience Manager6.5.12.0并单击“升级MySQL”时，配置管理器无法备份以前的Experience Manager Forms数据库。
-source-git-commit: d232bfdad7b8413eb015f6fe5dd3442cebf1001d
+source-git-commit: bf974331157e21b28c0daa5b878ac927ce5a2304
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 1%
+source-wordcount: '106'
+ht-degree: 0%
 
 ---
 
-# 问题(#issue)
+# 在升级到MySQL 6.5.12.0期间无法备份数据库(#issue)
 
 当用户升级到Experience Manager6.5.12.0并单击“升级MySQL”时，配置管理器无法备份以前的Experience Manager Forms数据库，它显示以下错误：
 
