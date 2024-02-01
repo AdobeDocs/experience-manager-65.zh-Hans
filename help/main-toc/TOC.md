@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 26ffe17d1ddd116a749f7f02e84e91d5b9759ca8
+source-git-commit: 220e060de43758ce07e82bedcee8d26fb46a9a6f
 workflow-type: tm+mt
-source-wordcount: '7329'
+source-wordcount: '7333'
 ht-degree: 20%
 
 ---
@@ -626,6 +626,7 @@ ht-degree: 20%
       + [在自适应表单中使用CAPTCHA](/help/forms/using/captcha-adaptive-forms.md)
       + [自适应表单关键字](/help/forms/using/adaptive-forms-keywords.md)
       + [自适应表单中的表](/help/forms/using/adaptive-forms-tables.md)
+      + [自适应表单中的图表](/help/forms/using/adaptive-form-charts.md)
       + [自动保存自适应表单](/help/forms/using/auto-save-an-adaptive-form.md)
       + [配置重定向页面](/help/forms/using/configuring-redirect-page.md)
       + [创建无障碍的自适应表单](/help/forms/using/creating-accessible-adaptive-forms.md)
