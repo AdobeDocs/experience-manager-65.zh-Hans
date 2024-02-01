@@ -7,10 +7,11 @@ feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sit
 version: 6.5
 type: Documentation
 index: y
-source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
+recommendations: noDisplay
+source-git-commit: fc76dd7af48aa67380b0635589acf9322bff86fb
 workflow-type: tm+mt
-source-wordcount: '134'
-ht-degree: 92%
+source-wordcount: '131'
+ht-degree: 80%
 
 ---
 
@@ -25,7 +26,7 @@ metadata.md 文件中包含存储库级别的元数据，这些元数据会传�
 | solution-hub-url | 打开学习和支持中心页面。 |
 | solution-icon | 在解决方案标题旁边显示解决方案图标。尚未实施。 |
 | getting-started-url | 指向入门页面的链接。 |
-| tutorials-url | 视频教程的链接。 |
+| tutorials-url | 链接到视频教程。 |
 | mini-toc-levels | 确定显示在右边栏中的标题级别数量。默认值为 2。 |
 | git-repo | 指定主要存储库的位置以供内部使用。 |
 
