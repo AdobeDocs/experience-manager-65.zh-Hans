@@ -2,9 +2,9 @@
 title: AEM Forms的修补程序
 description: 提供了有关如何下载和安装AEM Forms修补程序的信息。
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
-source-git-commit: 4685a4babbec07dc09fe19c9264b4141b9989fbb
+source-git-commit: 5ab1fd033af0d6d5595fe41de003455ab9ba28a6
 workflow-type: tm+mt
-source-wordcount: '320'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 0%
      </td>
     <td>
     <ul>
-    <li>在JEE服务器上的AEM Forms上，无法呈现使用上下文路径的HTML5 Forms 。 (FORMS-12485)。</li>
+    <li>在JEE服务器上的AEM Forms上，无法呈现使用上下文路径的HTML5 Forms 。 (FORMS-12485和FORMS-12691)。</li>
     </ul>
     </td>    
   </tr>
