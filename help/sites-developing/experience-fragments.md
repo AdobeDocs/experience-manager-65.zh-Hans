@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: a9d59e00efe8f0c2cbfca51901c441a2d65b70f2
 workflow-type: tm+mt
-source-wordcount: '1782'
-ht-degree: 1%
+source-wordcount: '1781'
+ht-degree: 0%
 
 ---
 
@@ -22,11 +22,11 @@ An [体验片段](/help/sites-authoring/experience-fragments.md) 是一个或多
 
 体验片段主和/或变量使用：
 
-* `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
+* `sling:resourceType` ： `/libs/cq/experience-fragments/components/xfpage`
 
 因为没有 `/libs/cq/experience-fragments/components/xfpage/xfpage.html` 它恢复为
 
-* `sling:resourceSuperType` : `wcm/foundation/components/page`
+* `sling:resourceSuperType` ： `wcm/foundation/components/page`
 
 ## 纯 HTML 演绎版 {#the-plain-html-rendition}
 
@@ -182,7 +182,7 @@ HTML演绎版使用Sling重写器管道生成。 管道定义于 `/libs/experien
 
 >[!NOTE]
 >
->此界面在中引入 [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6.5.1.md).
+>此界面在中引入 [AEM 6.5 SP1 (6.5.1.0)](/help/release-notes/previous/6-5-1.md).
 
 对于更复杂的案例，不在 [默认](#default-link-rewriting)，AEM提供链接重写器提供程序界面。 这是 `ConsumerType` 接口，您可以在捆绑包中实施该接口作为服务。 它绕过AEM对HTML选件的内部链接执行的修改（从Experience Fragment渲染）。 利用此界面，您可以根据业务需求自定义内部HTML链接的重写流程。
 
