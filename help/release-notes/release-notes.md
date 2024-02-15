@@ -3,9 +3,9 @@ title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 6a5ff6df3939c6d1576327943b428f374e987bcb
+source-git-commit: fab43458811f70da7f80a23e689dfca54391a84a
 workflow-type: tm+mt
-source-wordcount: '4451'
+source-wordcount: '4453'
 ht-degree: 6%
 
 ---
@@ -554,7 +554,7 @@ UberJar用于 [!DNL Experience Manager] 6.5.19.0可从以下网站获取： [Mav
 * 安装AEM Service Pack 6.5.14.0及更高版本后，导航到时，用户无法从JEE管理员UI中选择用于PDF文档的字体 `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`，因为字体列表显示为空。 (FORMS-12095)
 <!-- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) -->
 * 在JEE上的AEM Forms上，使用上下文路径的HTML5 Forms无法渲染。 (FORMS-12485和FORMS-12691)。 有针对此问题的修补程序。 要下载并安装修补程序，请参阅 [Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md).
-* 自定义函数支持ECMAScript版本5功能。 如果自定义函数使用ECMAScript版本6或更高版本支持的功能（例如let、const或arrow函数），则规则编辑器无法打开。
+* 自适应Forms允许您在ECMAScript版本5或更早版本中使用自定义函数。 当自定义函数使用ECMAScript版本6或更高版本（如“let”、“const”或箭头函数）时，规则编辑器可能无法正确打开。
 
 #### JEE上的AEM Forms
 
