@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: f41cb88406db23c2af8988f7ee584db95184c6c4
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '7335'
 ht-degree: 20%
@@ -560,7 +560,7 @@ ht-degree: 20%
       + 配置AEM Forms {#configure-aem-forms}
          + [AEM Forms 服务器性能优化](/help/forms/using/performance-tuning-aem-forms.md)
          + [配置自适应表单缓存](/help/forms/using/configure-adaptive-forms-cache.md)
-         + [配置AEM DS设置](/help/forms/using/configuring-the-processing-server-url-.md)
+         + [配置AEM DS设置](/help/forms/using/configuring-the-processing-server-url.md)
          + [配置同步计划程序](/help/forms/using/configure-synchronization-scheduler.md)
          + [为Microsoft SharePoint配置连接器](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)
          + [将AEM Forms与AdobeLiveCycle连接](/help/forms/using/aem-livecycle-connector.md)
@@ -636,7 +636,7 @@ ht-degree: 20%
       + [自适应表单组件的内联样式](/help/forms/using/inline-style-adaptive-forms.md)
       + [多步骤表单序列简介](/help/forms/using/introduction-form-sequence.md)
       + [自适应表单的布局功能](/help/forms/using/layout-capabilities-adaptive-forms.md)
-      + [AEM Forms中的占位符文本](/help/forms/using/placeholder-text-in-aem-forms-.md)
+      + [AEM Forms中的占位符文本](/help/forms/using/placeholder-text-in-aem-forms.md)
       + [预览表单](/help/forms/using/previewing-forms.md)
       + [重用自适应表单](/help/forms/using/reusing-adaptive-forms.md)
       + [自适应表单中的分隔符组件](/help/forms/using/separator-component-in-adaptive-forms.md)
@@ -889,7 +889,7 @@ ht-degree: 20%
    + 交易报告 {#transaction-reports}
       + [交易报表概述](/help/forms/using/transaction-reports-overview.md)
       + [查看和了解事务处理报表](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-      + [交易报告可记帐API](/help/forms/using/transaction-reports-billable-apis.md)
+      + [交易报告计费 API](/help/forms/using/transaction-reports-billable-apis.md)
       + [记录自定义实施的交易](/help/forms/using/record-transaction-custom-implementation.md)
    + AEM Forms on JEE的管理员帮助 {#administrator-help}
       + 开始使用 {#get-started}

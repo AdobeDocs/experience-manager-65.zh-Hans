@@ -6,7 +6,7 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
 workflow-type: tm+mt
 source-wordcount: '2597'
 ht-degree: 48%
@@ -140,7 +140,7 @@ ht-degree: 48%
 
 **[!UICONTROL 调用 AEM 工作流]**&#x200B;提交操作将自适应表单与 [AEM 工作流](/help/sites-developing/workflows-models.md)相关联。在提交表单时，关联的工作流将在创作实例上自动启动。可将数据文件、附件和记录文档保存到相对于工作流的文件夹，或工作流有效负荷下的文件夹，或保存到变量中。 如果工作流标记为外部数据存储，则变量选项可用，而不是有效负载选项。 您可以从可用于工作流模型的变量的列表中进行选择。如果在稍后阶段而不是在创建工作流时为外部数据存储标记了工作流，请确保所需的变量配置已到位。
 
-在使用之前 **调用AEM工作流** 提交操作， [配置Experience ManagerDS设置](../../forms/using/configuring-the-processing-server-url-.md). 有关创建AEM工作流的信息，请参阅 [OSGi上以表单为中心的工作流](../../forms/using/aem-forms-workflow.md).
+在使用之前 **调用AEM工作流** 提交操作， [配置Experience ManagerDS设置](../../forms/using/configuring-the-processing-server-url.md). 有关创建AEM工作流的信息，请参阅 [OSGi上以表单为中心的工作流](../../forms/using/aem-forms-workflow.md).
 
 提交操作将以下内容置于工作流的有效负荷位置。 但是，请注意，如果工作流模型标记为外部数据存储，则仅显示“变量”选项，而不显示“有效负载”选项。
 
