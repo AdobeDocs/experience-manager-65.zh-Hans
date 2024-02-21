@@ -2,9 +2,9 @@
 title: AEM常见问题解答
 description: 使用这些常见问题解答来了解、配置和解决AEM中的常见工作流或问题。
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -25,12 +25,6 @@ ht-degree: 0%
 
 要启用无二进制分发，请使用共享blob存储进行部署。
 查看 `useBinaryReferences` OSGI配置中的属性，带有工厂PID ( `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`*)* 你的经纪人用的那个。
-
-#### 如何在AEM Sites控制台中导航页面层次结构时自定义错误消息？ {#how-can-i-customize-the-error-messages-while-navigating-page-hierarchy-in-aem-sites-console}
-
-检查（Chrome浏览器的）网络面板，其中个人设置（JS尚未缩小）。
-
-查看 `Initiator` 列来确定请求的发起者。 它提供从中进行AJAX调用的文件和行号。 稍后，您可以跟踪错误处理函数，并根据需要更改错误消息。
 
 #### 如何在AEM中为内容作者创建语言副本时启用权限？ {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
