@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 667125e9f7f9f5c9fa438e1d55c0a059ceae64c3
+source-git-commit: 8ca683a973998e7b5d6a2f87210aaf324a5419ee
 workflow-type: tm+mt
-source-wordcount: '3984'
+source-wordcount: '4019'
 ht-degree: 0%
 
 ---
@@ -92,11 +92,11 @@ Adobe会推荐这些配置，并在标准软件维护协议中提供完全支持
 >在版本6.5中，不再支持Adobe客户中利用率最低的基础架构组件，如下所示：
 >
 >- IBM® DB2®数据库
-- IBM® AIX®和Sun Solaris™操作系统
+>- IBM® AIX®和Sun Solaris™操作系统
 >
-对于新安装，建议在可行的情况下，在现代OSGi栈栈上部署AEM Forms，以使用有关响应式自适应Forms的最新创新，实现使用表单数据模型的移动、多渠道交互式通信以及后端数据集成。
+>对于新安装，建议在可行的情况下，在现代OSGi栈栈上部署AEM Forms，以使用有关响应式自适应Forms的最新创新，实现使用表单数据模型的移动、多渠道交互式通信以及后端数据集成。
 >
-Adobe认识到现有用户必须继续在JEE栈栈上部署AEM Forms。 在此类情况下，Adobe需要在受支持的基础设施上部署AEM Forms JEE，如本文档所述。 如果您要升级到AEM 6.5 Forms，并且在以前的AEM Forms版本中使用不受支持的平台，则可以联系Adobe支持部门以获取有关升级到受支持平台的帮助。
+>Adobe认识到现有用户必须继续在JEE栈栈上部署AEM Forms。 在此类情况下，Adobe需要在受支持的基础设施上部署AEM Forms JEE，如本文档所述。 如果您要升级到AEM 6.5 Forms，并且在以前的AEM Forms版本中使用不受支持的平台，则可以联系Adobe支持部门以获取有关升级到受支持平台的帮助。
 
 ### Java™虚拟机(JVM) {#java-virtual-machines-jvm}
 
@@ -144,8 +144,8 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
 
 >[!NOTE]
 >
-- 跟踪Java™供应商的安全公告，以确保生产环境的安全性和安全性，并安装最新的Java™更新。
-- JEE上的AEM Forms在生产环境中仅支持64位JVM。
+>- 跟踪Java™供应商的安全公告，以确保生产环境的安全性和安全性，并安装最新的Java™更新。
+>- JEE上的AEM Forms在生产环境中仅支持64位JVM。
 
 ### 数据库和CRX持久性 {#databases-and-crx-persistence}
 
@@ -271,7 +271,7 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
 
 >[!NOTE]
 >
-仅网络部署版本支持IBM® WebSphere®群集。
+>仅网络部署版本支持IBM® WebSphere®群集。
 
 ### 服务器操作系统 {#server-operating-systems}
 
@@ -479,21 +479,21 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
 
 >[!NOTE]
 >
-PDF Generator仅支持所支持的操作系统和应用程序的英语、法语、德语和日语版本。
+>PDF Generator仅支持所支持的操作系统和应用程序的英语、法语、德语和日语版本。
 >
-此外：
+>此外：
 >
-- PDF Generator仅支持32位零售版Microsoft®Office Professional Plus以及转换所需的其他软件。
-- PDF Generator不支持Microsoft® Office 365。
-- 仅在Windows和Linux®上支持OpenOffice的PDF Generator转换。
-- 仅在Windows上支持OCRPDF、Optimize PDF和Export PDF功能。
-- Acrobat的一个版本与AEM Forms捆绑在一起，用于启用PDF Generator功能。 在AEM Forms许可证有效期内，捆绑版本只能通过AEM Forms以编程方式访问以用于AEM Forms PDF Generator。 有关更多信息，请参阅根据您的部署确定的AEM Forms产品描述([内部部署](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 或 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
-- PDF Generator服务不支持Microsoft® Windows 10。
--PDF Generator无法使用Microsoft® Visio 2019转换文件。 您可以继续使用Microsoft® Visio 2016转换.VSD和.VSDX文件。
-- PDF Generator无法使用Microsoft® Project 2019转换文件。 您可以继续使用Microsoft® Project 2016转换.MPP文件。
-- PDF Generator无法使用Microsoft® Visio 2019转换文件。
-- PDF Generator无法使用Microsoft® Project 2019转换文件。
->
+>- PDF Generator仅支持32位零售版Microsoft®Office Professional Plus以及转换所需的其他软件。
+>- PDF Generator不支持Microsoft® Office 365。
+>- 仅在Windows和Linux®上支持OpenOffice的PDF Generator转换。
+>- 仅在Windows上支持OCRPDF、Optimize PDF和Export PDF功能。
+>- Acrobat的一个版本与AEM Forms捆绑在一起，用于启用PDF Generator功能。 在AEM Forms许可证有效期内，捆绑版本只能通过AEM Forms以编程方式访问以用于AEM Forms PDF Generator。 有关更多信息，请参阅根据您的部署确定的AEM Forms产品描述([内部部署](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 或 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))”
+>- PDF Generator服务不支持Microsoft® Windows 10。
+>-PDF Generator无法使用Microsoft® Visio 2019转换文件。 您可以继续使用Microsoft® Visio 2016转换.VSD和.VSDX文件。
+>- PDF Generator无法使用Microsoft® Project 2019转换文件。 您可以继续使用Microsoft® Project 2016转换.MPP文件。
+>- PDF Generator无法使用Microsoft® Visio 2019转换文件。
+>- PDF Generator无法使用Microsoft® Project 2019转换文件。
+>- 如果Microsoft® Office安装由于任何原因（例如VL_KMS无法在一段时间内建立通信）而停用或取消许可，则在重新激活或重新许可安装之前，转换可能会失败。
 
 ### 辅助功能支持的异常 {#exceptions-to-accessibility-support}
 
@@ -607,7 +607,7 @@ AEM Forms的以下子系统不是 [508](https://www.section508.gov/) 合规：
 
 >[!NOTE]
 >
-Acrobat DC产品系列为Acrobat和Reader引入了两个路径，它们是不同的产品：“Classic”和“Continuous”。 有关详细信息和两个跟踪的比较，请参阅 [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+>Acrobat DC产品系列为Acrobat和Reader引入了两个路径，它们是不同的产品：“Classic”和“Continuous”。 有关详细信息和两个跟踪的比较，请参阅 [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### 浏览器 {#browsers}
 
@@ -650,13 +650,13 @@ Acrobat DC产品系列为Acrobat和Reader引入了两个路径，它们是不同
 
 >[!NOTE]
 >
-桌面的一些与浏览器相关的例外情况如下：
+>桌面的一些与浏览器相关的例外情况如下：
 >
-- 只有Macintosh OS X支持Safari。
-- 工作区支持带有Acrobat DC或更高版本的Macintosh OS X 10.6和10.7上的Safari 5.1。 有关Safari 5.1与Adobe Reader、Acrobat兼容性的更多信息，请参阅 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
-- Safari不支持管理控制台。
-- 通信管理不支持Windows® Internet Explorer 9.0 for AEM 6.1表单。
-- Forms Portal支持Internet Explorer 11上的JAWS 14.0屏幕阅读器软件以进行辅助功能。
+>- 只有Macintosh OS X支持Safari。
+>- 工作区支持带有Acrobat DC或更高版本的Macintosh OS X 10.6和10.7上的Safari 5.1。 有关Safari 5.1与Adobe Reader、Acrobat兼容性的更多信息，请参阅 [https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- Safari不支持管理控制台。
+>- 通信管理不支持Windows® Internet Explorer 9.0 for AEM 6.1表单。
+>- Forms Portal支持Internet Explorer 11上的JAWS 14.0屏幕阅读器软件以进行辅助功能。
 
 #### 移动客户端 {#mobile-clients}
 
@@ -687,7 +687,7 @@ Acrobat DC产品系列为Acrobat和Reader引入了两个路径，它们是不同
 
 >[!NOTE]
 >
-- 仅在iPad上的Safari上支持Forms Portal。
+>- 仅在iPad上的Safari上支持Forms Portal。
 
 ### AEM Forms应用程序 {#aem-forms-workspace-app}
 
@@ -900,7 +900,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 >[!NOTE]
 >
-已弃用的平台将继续获得支持，直到发布下一个完整安装程序版本或第三方供应商对该平台的支持到达其生命周期结束为止（以较早的时间为准）。
+> 已弃用的平台将继续获得支持，直到发布下一个完整安装程序版本或第三方供应商对该平台的支持到达其生命周期结束为止（以较早的时间为准）。
 
 <!-- 
 - Oct 10, 2021
