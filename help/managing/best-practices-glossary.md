@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '6922'
+source-wordcount: '6926'
 ht-degree: 0%
 
 ---
@@ -1127,11 +1127,11 @@ Recommendations与软件和硬件架构的安全性相关。
 
 ### 为AEM管理员培训选定的员工 {#staff-selected-for-aem-administrator-training}
 
-需要培训以管理解决方案的内部员工。
+需要培训以便管理解决方案的内部员工。
 
 ### 为作者和最终用户培训选定的员工 {#staff-selected-for-author-and-end-user-training}
 
-需要培训以编写解决方案的内部员工。
+需要培训以便编写解决方案的内部员工。
 
 ### 利益相关者 {#stakeholders}
 

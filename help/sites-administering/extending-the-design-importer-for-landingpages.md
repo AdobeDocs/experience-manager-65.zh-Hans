@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '3443'
+source-wordcount: '3442'
 ht-degree: 0%
 
 ---
@@ -563,7 +563,7 @@ data-cq-component中的路径应为组件的resourceType。
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-假设登陆页面是在营销活动We.Retail下创建的，且登陆页面的名称为 **myBlankLandingPage** 则Zip文件的存储位置如下所示：
+假设登陆页面是在营销活动下创建的 `We.Retail` 登陆页面的名称为 **myBlankLandingPage** 则Zip文件的存储位置如下所示：
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 

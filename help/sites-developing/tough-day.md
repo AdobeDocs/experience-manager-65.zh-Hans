@@ -4,9 +4,9 @@ description: Tough Day测试模拟了在所有操作同时进行的最坏情况�
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 61c7955c5370b5341d097dc36d08b2b92b89517b
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1825'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 ## 第2天是多么艰难 {#what-is-tough-day}
 
-“Touch Day 2”是一个应用程序，可用于对AEM实例的限制进行压力测试。 它可以直接与默认测试套件一起运行，也可以根据测试需要进行配置。 你可以看 [此录制](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) 以展示应用程序。
+“Touch Day 2”是一款应用程序，可让您对AEM实例的限制进行压力测试。 它可以直接与默认测试套件一起运行，也可以根据测试需要进行配置。 你可以看 [此录制](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) 以展示应用程序。
 
 >[!CAUTION]
 >
@@ -49,7 +49,7 @@ java -jar toughday2.jar [--help | --help_full | --help_tests | --help_publish]  
 
 >[!NOTE]
 >
-第2天非常艰难，没有清理步骤。 因此，建议在克隆的暂存实例上而不是在主生产实例上运行第2天非常困难。 应在测试后删除暂存实例。
+>第2天非常艰难，没有清理步骤。 因此，建议在克隆的暂存实例上而不是在主生产实例上运行第2天非常困难。 应在测试后删除暂存实例。
 >
 
 ### 获取帮助 {#getting-help}
@@ -330,9 +330,9 @@ java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --ad
 
 >[!NOTE]
 >
-由于并行执行，测试运行的实际数量不会完全等于 `count` 参数。 期望偏差与正在运行的线程数成比例(由 `concurrency parameter`)。
+>由于并行执行，测试运行的实际数量不会完全等于 `count` 参数。 期望偏差与正在运行的线程数成比例(由 `concurrency parameter`)。
 
-### 练习 {#dry-run}
+### 试运行 {#dry-run}
 
 试运行将解析所有给定的输入（命令行参数或配置文件），将其与默认值合并，然后输出结果。 它不会执行任何测试。
 

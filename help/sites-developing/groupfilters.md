@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ ht-degree: 0%
 
 创建过滤器后，可在以下位置使用它： [组配置。](/help/sites-developing/mobile.md#creating-a-device-group)
 
-## 过滤器Java类 {#the-filter-java-class}
+## 过滤器Java™类 {#the-filter-java-class}
 
-设备组筛选器是一个用于实现 [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 界面。 部署后，实现类会提供筛选服务，可供设备组配置使用。
+设备组筛选器是一个用于实现 [com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 界面。 部署后，实现类会提供筛选服务，可供设备组配置使用。
 
-本文中介绍的解决方案使用Apache Felix Maven SCR插件促进组件和服务的开发。 因此，示例Java类使用 `@Component`和 `@Service` 注释。 该类具有以下结构：
+本文中介绍的解决方案使用Apache Felix Maven SCR插件促进组件和服务的开发。 因此，示例Java™类使用 `@Component`和 `@Service` 注释。 该类具有以下结构：
 
 ```java
 package com.adobe.example.myapp;
@@ -63,7 +63,7 @@ public class myDeviceGroupFilter implements DeviceGroupFilter {
 }
 ```
 
-您需要为以下方法提供代码：
+为以下方法提供代码：
 
 * `getDescription`：返回过滤器描述。 该说明将显示在“设备组配置”对话框中。
 * `getTitle`：返回过滤器的名称。 在为设备组选择筛选器时显示该名称。
@@ -93,7 +93,7 @@ public String getTitle() {
 * 用户代理的名称
 * 包含设备功能的映射对象。 Map键是WURFL™功能名称，值是WURFL™数据库中的相应值。
 
-此 [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 接口在静态字段中包含WURFL™功能名称的子集。 从设备功能图检索值时，使用这些字段常量作为键。
+此 [com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) 接口在静态字段中包含WURFL™功能名称的子集。 从设备功能图检索值时，使用这些字段常量作为键。
 
 例如，以下代码示例确定设备是否支持CSS：
 
@@ -161,7 +161,7 @@ public class ScreenSizeLarge implements DeviceGroupFilter {
 }
 ```
 
-getTitle方法返回的String值将显示在设备组属性的下拉列表中。
+getTitle方法返回的String值会显示在设备组属性的下拉列表中。
 
 ![filteraddtogroup](assets/filteraddtogroup.png)
 
@@ -175,7 +175,7 @@ getTitle和getDescription方法返回的字符串值包含在设备组摘要页�
 
 **插件：**
 
-* Apache Maven编译器插件：从源代码中编译Java类。
+* Apache Maven编译器插件：从源代码中编译Java™类。
 * Apache Felix Maven捆绑包插件：创建捆绑包和清单
 * Apache Felix Maven SCR插件：创建组件描述符文件并配置服务组件清单标头。
 
@@ -189,7 +189,7 @@ DeviceGroup和DeviceGroupFilter接口包含在Day Communique 5 WCM Mobile API包
 
 在创作时，5.5.2是AEM最新版本中的WCM移动API包版本。 使用AdobeWeb控制台([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles))，以确保这是您的环境中部署的捆绑包版本。
 
-**POM：** （您的POM将使用其他组ID和版本。）
+**POM：** （您的POM使用不同的groupId和版本。）
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"

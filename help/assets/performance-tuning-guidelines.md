@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2728'
 ht-degree: 0%
 
 ---
@@ -212,7 +212,7 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 >
 >ImageMagick `policy.xml` 和 `configure.xml` 文件位于 `/usr/lib64/ImageMagick-&#42;/config/` 而不是 `/etc/ImageMagick/`请参见 [ImageMagick文档](https://www.imagemagick.org/script/resources.php) 配置文件的位置。
 
-如果您使用 [!DNL Experience Manager] 如果您计划处理大量大型PSD或PSB文件，请在AdobeManaged Services (AMS)时联系Adobe客户支持。 与Adobe客户支持代表合作，为您的AMS部署实施这些最佳实践，并为Adobe的专有格式选择最佳工具和模型。 [!DNL Experience Manager] 可能无法处理超过 30000 x 23000 像素的高分辨率 PSB 文件。
+如果您使用 [!DNL Experience Manager] 如果您计划处理大量大型PSD或PSB文件，请在AdobeManaged Services (AMS)时联系Adobe客户支持。 与Adobe客户支持代表合作，为您的AMS部署实施这些最佳实践，并为Adobe的专有格式选择最佳工具和模型。 [!DNL Experience Manager] 不能处理超过30000 x 23000像素的超高分辨率PSB文件。
 
 ### XMP写回 {#xmp-writeback}
 

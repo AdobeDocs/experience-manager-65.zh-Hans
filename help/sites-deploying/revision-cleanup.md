@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: deploying
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
 workflow-type: tm+mt
 source-wordcount: '5752'
 ht-degree: 0%
@@ -552,7 +552,7 @@ TarMK GC: no base state available, running full compaction instead
   <tr>
     <td>不适用</td>
     <td>TarMK GC #2：经过5次循环，压实时间为32.902 min(1974140 ms)。</td>
-    <td>此消息并不表示存在不可恢复的错误，但仅表示压缩在尝试一段时间后终止。 此外，请阅读 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">下段落。</a></td>
+    <td>此消息并不表示存在不可恢复的错误，但仅表示压缩在尝试后终止。 此外，请阅读 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">下段落。</a></td>
     <td>阅读以下内容 <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak文档</a>，以及运行联机修订清理部分的最后一个问题。</a></td>
   </td>
   </tr>
