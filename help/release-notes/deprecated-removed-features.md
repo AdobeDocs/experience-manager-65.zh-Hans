@@ -2,9 +2,9 @@
 title: Adobe Experience Manager 6.5版本中已弃用和已删除的功能。
 description: 特定于Adobe Experience Manager 6.5中已弃用和已删除的功能的发行说明。
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 3443d331815ffb462890282a49e658693f157af0
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1715'
 ht-degree: 10%
 
 ---
@@ -31,8 +31,10 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 | 区域 | 专题 | 替换 | 版本(SP) |
 |---|---|---|---|
+|   |   |   |   |
 | Sites | 此 **AdobeAEM托管轮询配置** 服务： `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | 此 **AdobeAEM Analytics报表Sling导入程序** 服务。 请参阅连接到Adobe Analytics和创建框架 —  [配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| [!DNL Sites] | **社交媒体状态**&#x200B;的体验片段属性。 |   | 6.5.11.0 |
+| Screens | Adobe Experience Manager (AEM)中的ActiveMQ。 ActiveMQ用于两个AEM Publish实例之间的通信。 | Adobe建议客户现在使用负载平衡器。 | 6.5.18.0 |
+| **社交媒体状态**&#x200B;的体验片段属性。 |   | 6.5.11.0 |
 | [!DNL Sites] | 内容片段模板，用于创建简单的内容片段。 | 现已提供[基于模型的结构化内容片段](/help/assets/content-fragments/content-fragments-models.md)。 | 6.5.11.0 |
 | Creative Cloud集成 | AEM 6.2中引入了AEM到Creative Cloud文件夹共享的功能。它提供了一种为创意用户提供访问AEM中的资源的方法，以便他们可以在中打开这些资源 [!DNL Creative Cloud] 应用程序并上传新文件或将更改保存到AEM。 Creative Cloud应用程序中发布的一项新功能AdobeAsset Link提供了更好的用户体验，以及更强大的直接从Photoshop、InDesign和Illustrator中访问AEM资源的功能。 Adobe不打算进一步增强AEM与Creative Cloud文件夹共享集成。 虽然此功能包含在AEM中，但建议使用替代解决方案。 | 建议客户切换到新的Creative Cloud集成功能，包括AdobeAsset Link或AEM桌面应用程序。 |  |
 | 资源 | `AssetDownloadServlet` 对于发布实例，默认情况下处于禁用状态。 有关更多详细信息，请参阅 [AEM安全核对清单](/help/sites-administering/security-checklist.md). | 配置说明位于 [AEM安全核对清单](/help/sites-administering/security-checklist.md). |  |
@@ -45,7 +47,7 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 组件(AEM Sites) | Adobe不打算进一步增强存储在中的大多数Foundation组件 `/libs/foundation/components`. 查找 `cq:deprecated` 和 `cq:deprecatedReason` 属性。 AEM 6.5包含基础组件，从早期版本升级的客户可以继续按原样使用它们。 此外，即使已弃用，也支持基础组件。 | Adobe建议在将来的项目中使用核心组件。 现有站点可以保持不变，也可以使用 [AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools) 重构站点以使用核心组件。 |  |
 | 组件(AEM Sites) | 设计导入程序组件 `/libs/wcm/designimporter/components` 从6.5开始标记为已弃用。Adobe不打算进一步增强设计导入程序实施。 | Adobe计划在未来版本中提供用例的替代实施。 |  |
 | Foundation | Granite卸载框架。 Adobe不打算进一步增强CQ 5.6.1中引入的卸载框架，以将资源处理外部化。 | Adobe正在开发下一代云原生卸载框架。 |  |
-| 开发人员 | `Hobbes.js`. Adobe不打算进一步增强 `hobbes.js` 用户界面测试框架。 | Adobe建议客户使用Selenium自动化。 |  |
+| 开发人员 | `Hobbes.js`。Adobe不打算进一步增强 `hobbes.js` 用户界面测试框架。 | Adobe建议客户使用Selenium自动化。 |  |
 | 开发人员 | jQuery用户界面客户端库。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的jQuery UI客户端库。 | Adobe建议仍需要jQuery UI才能将其代码添加到项目代码库的客户。 |  |
 | 开发人员 | jQuery Animation客户端库(`granite.jquery.animation`)。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的jQuery Animation客户端库。 | Adobe建议仍需要jQuery动画才能将其代码添加到项目代码库的客户。 |  |
 | 开发人员 | Handlebars客户端库。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的Handlebar客户端库。 | Adobe建议客户仍然需要 `Handlebars` ，以将其添加到其项目代码库中。 |  |
