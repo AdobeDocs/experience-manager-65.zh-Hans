@@ -1,15 +1,15 @@
 ---
-title: "重用内容：多站点管理器和 Live Copy"
+title: “重用内容：多站点管理器和Live Copy”
 description: 了解如何将内容与Live Copies和多站点管理器重复使用。
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: site-features
 content-type: reference
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: fd30e16274b6d5f971120f4e360fc9d65ae21bec
 workflow-type: tm+mt
-source-wordcount: '2642'
-ht-degree: 22%
+source-wordcount: '2665'
+ht-degree: 19%
 
 ---
 
@@ -117,7 +117,7 @@ MSM和活动副本有许多用例，一些情形包括：
 
 ## 从 UI 访问 MSM {#msm-from-the-ui}
 
-可使用相应控制台中的各种选项直接通过 UI 访问 MSM。为了提供简介，下面列出了主要位置：
+可使用相应控制台中的各种选项直接在UI中访问MSM。 为了提供简介，下面列出了主要位置：
 
 * **创建站点**（**站点**）
 
@@ -151,6 +151,10 @@ MSM和活动副本有许多用例，一些情形包括：
 
 >[!NOTE]
 >
+>MSM可同时用于页面和 [体验片段](/help/sites-authoring/experience-fragments.md) 因为这些片段是体验（页面）的一部分。
+
+>[!NOTE]
+>
 >MSM功能的各个方面可用于多个其他Adobe Experience Manager (AEM)功能（例如，启动项、目录）；在这些情况下，Live Copy由该功能管理。
 
 ### 使用的术语 {#terms-used}
@@ -167,11 +171,11 @@ MSM和活动副本有许多用例，一些情形包括：
   <tr>
    <td><strong>源</strong></td>
    <td>原始页面。</td>
-   <td>与 Blueprint 和/或 Blueprint 页面同义.</td>
+   <td>与Blueprint和/或Blueprint页面同义。</td>
   </tr>
   <tr>
    <td><strong>Live Copy</strong></td>
-   <td>（源的）副本，由转出配置定义的同步操作维护. </td>
+   <td>（源的）副本，由转出配置定义的同步操作维护。 </td>
    <td> </td>
   </tr>
   <tr>
@@ -186,12 +190,12 @@ MSM和活动副本有许多用例，一些情形包括：
   </tr>
   <tr>
    <td><strong>Blueprint</strong></td>
-   <td>与源同义.</td>
+   <td>与源同义。</td>
    <td>它可以由Blueprint配置定义。</td>
   </tr>
   <tr>
    <td><strong>Blueprint 配置</strong></td>
-   <td>用于指定源路径的预定义的配置。</td>
+   <td>用于指定源路径的预定义配置。</td>
    <td>在Blueprint配置中引用Blueprint页面时，“转出”命令将变为可用。</td>
   </tr>
   <tr>
@@ -281,7 +285,7 @@ MSM Live Copy是特定站点内容的副本，它保留了与原始源的实时�
 
 >[!NOTE]
 >
-此部分中的图表和说明表示潜在活动副本的快照。 虽然它们并不全面，但提供了概述以重点说明具体特征。
+>此部分中的图表和说明表示潜在活动副本的快照。 虽然它们并不全面，但提供了概述以重点说明具体特征。
 
 最初创建Live Copy时，选定的源页面会以1:1的比例反映在Live Copy中。 之后，还可以直接在Live Copy中创建新资源（页面和/或段落），因此了解这些变体以及它们对同步有何影响会很有用。 可能的构图包括：
 
@@ -323,7 +327,7 @@ Live Copy的基本形式具有：
 
 >[!NOTE]
 >
-如果您在Live Copy分支中移动/重命名页面，则（在内部）将此视为嵌套式Live Copy，以使AEM能够跟踪关系。
+>如果您在Live Copy分支中移动/重命名页面，则（在内部）将此视为嵌套式Live Copy，以使AEM能够跟踪关系。
 
 #### 堆叠式 Live Copy {#stacked-live-copies}
 
@@ -360,7 +364,7 @@ Live Copy的源可以是常规页面，也可以是Blueprint配置包含的页�
 * 可以定义[转出配置](#rollout-configurations)，以便特定[事件](/help/sites-administering/msm-sync.md#rollout-triggers)能够促使自动进行转出。
 * 在创作Blueprint页面时，您可以使用 [转出](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) 命令以将更改推送到live copy。
 
-  **转出**&#x200B;命令适用于 Blueprint 配置引用的 Blueprint 页面。
+  **转出** 命令适用于Blueprint配置引用的Blueprint页面。
 
   ![转出](assets/chlimage_1-370.png)
 
@@ -384,7 +388,7 @@ Live Copy的源可以是常规页面，也可以是Blueprint配置包含的页�
 
   >[!NOTE]
   >
-  您可以使用Java™ API为实例创建自定义操作。
+  >您可以使用Java™ API为实例创建自定义操作。
 
 可以重用转出配置，以便多个Live Copy可以使用相同的转出配置。 标准安装包含了多个[转出配置](/help/sites-administering/msm-sync.md#installed-rollout-configurations)。
 
@@ -406,13 +410,13 @@ Live Copy中的每个页面和组件都通过Live关系与其源页面和组件�
 
 >[!CAUTION]
 >
-分离操作是永久性且不可逆的。
+>分离操作是永久性且不可逆的。
 
 分离将永久删除Live Copy与其Blueprint页面之间的实时关系。 将从Live Copy中删除所有与MSM相关的属性，并且Live Copy页面会成为独立副本。
 
 >[!NOTE]
 >
-请参阅 [分离Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) ，以了解全部详细信息；包括对子页面和父页面产生的相关影响。
+>请参阅 [分离Live Copy](/help/sites-administering/msm-livecopy.md#detaching-a-live-copy) ，以了解全部详细信息；包括对子页面和父页面产生的相关影响。
 
 ## 使用 MSM 的标准步骤 {#standard-steps-for-using-msm}
 

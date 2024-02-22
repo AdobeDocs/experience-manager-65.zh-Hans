@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
+source-git-commit: a4ece4c2e9128e61982fb45d90ee3c63352f8349
 workflow-type: tm+mt
-source-wordcount: '7335'
+source-wordcount: '7342'
 ht-degree: 20%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 20%
 + 发行说明 {#release-notes}
    + [发行说明](/help/release-notes/release-notes.md)
    + 以前的发行说明 {#service-pack}
+      + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
       + [6.5.16](/help/release-notes/previous/6-5-16.md)
@@ -41,6 +42,7 @@ ht-degree: 20%
    + [AEM Forms service pack安装说明](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
    + [AEM Forms JEE修补程序安装程序](/help/release-notes/jee-patch-installer-65.md)
    + [AEM Forms Service Pack修补程序](/help/release-notes/aem-forms-hotfix.md)
+   + [主要功能和增强功能汇总](/help/release-notes/cumulative-features-enhancements.md)
    + [已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md)
    + [触屏UI功能状态](/help/release-notes/touch-ui-features-status.md)
 + 安全性 {#security}

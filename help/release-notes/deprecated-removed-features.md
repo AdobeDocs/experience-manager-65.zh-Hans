@@ -2,7 +2,7 @@
 title: Adobe Experience Manager 6.5版本中已弃用和已删除的功能。
 description: 特定于Adobe Experience Manager 6.5中已弃用和已删除的功能的发行说明。
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 3443d331815ffb462890282a49e658693f157af0
+source-git-commit: a9b8980a5e6f0488f10c408cd18b83f3ff225058
 workflow-type: tm+mt
 source-wordcount: '1715'
 ht-degree: 10%
@@ -55,7 +55,8 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 | 开发人员 | `Granite.Sling.js` 客户端库。 Adobe不打算进一步增强作为分发（快速入门）的一部分提供的Granite.Sling.js客户端库。 | Adobe建议依赖库功能来重构其代码的客户不再使用它。 |  |
 | 开发人员 | 使用YUI压缩/缩小JavaScript客户端库。 Adobe不打算进一步更新YUI库。 在AEM 6.4之前，YUI默认使用切换到Google Closure Compiler (GCC)的选项来缩小JavaScript。 从AEM 6.5开始，默认使用GCC。 | Adobe建议客户升级到AEM 6.5，以便切换到GCC来实施 |  |
 | 开发人员 | CRXDE Lite中的经典UI对话框编辑器。 Adobe不打算进一步增强作为分发（快速入门）的一部分提供的经典UI对话框编辑器 | 没有可用的替换。 |  |
-| Forms | AEM Forms与AEM Mobile的集成已弃用。 | 没有可用的替代项。 |  | 开发人员 | CRXDE Lite中的经典UI对话框编辑器。 Adobe不打算进一步增强作为分发（快速入门）的一部分提供的经典UI对话框编辑器 | 没有可用的替换。 |  |
+| Forms | AEM Forms与AEM Mobile的集成已弃用。 | 没有可用的替代项。 |
+| 开发人员 | CRXDE Lite中的经典UI对话框编辑器。 Adobe不打算进一步增强作为分发（快速入门）的一部分提供的经典UI对话框编辑器 | 没有可用的替换。 |  |
 | 开发人员 | Lodash/underscore客户端库。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的Lodash/underscore客户端库。 | Adobe建议仍需要对其代码使用Lodash/下划线的客户将其添加到其项目代码库中。 |  |
 
 ## 已移除的功能 {#removed-features}

@@ -3,10 +3,10 @@ title: 用于内容片段的 AEM GraphQL API
 description: 了解如何在Adobe Experience Manager (AEM)中将内容片段与AEM GraphQL API用于Headless内容投放。
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 312e2477bb6a7cccab74cd4637d6a402f61052d7
+source-git-commit: 452813cf50110b515c181dba1ecbde4527808cfb
 workflow-type: tm+mt
-source-wordcount: '4708'
-ht-degree: 59%
+source-wordcount: '4796'
+ht-degree: 58%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 59%
 >* [AEM Commerce 通过 GraphQL 使用来自 Commerce 平台的数据](/help/commerce/cif/integrating/magento.md)。
 >* AEM 内容片段与 AEM GraphQL API（一种自定义实施，基于标准 GraphQL）配合使用，提供结构化内容用于您的应用程序。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 使用GraphQL的客户应安装AEM内容片段和GraphQL索引包1.0.5。请参阅 [发行说明](/help/release-notes/release-notes.md#install-aem-graphql-index-add-on-package) 以了解更多详细信息。
 
@@ -523,6 +523,53 @@ query GetAdventureByType($includePrice: Boolean!) {
     items {
       lastName
       firstName
+    }
+  }
+}
+```
+
+使用可选变量执行GraphQL查询时，如果特定值为 **非** 为可选变量提供的，则在过滤器评估中将忽略该变量。 这意味着，查询结果将包含所有值，包括 `null` 而非 `null`，用于与筛选器变量相关的属性。
+
+>[!NOTE]
+>
+>如果 `null` 值为 *明确* 指定给此类变量，则过滤器将仅匹配 `null` 相应属性的值。
+
+例如，在下面的查询中，没有为属性指定值 `lastName`：
+
+```graphql
+query getAuthorsFilteredByLastName($authorLastName: String) {
+  authorList(filter:
+    {
+      lastName: {_expressions: {value: $authorLastName}
+      }}) {
+    items {
+      lastName
+    }
+  }
+}
+```
+
+将返回所有作者：
+
+```graphql
+{
+  "data": {
+    "authorList": {
+      "items": [
+        {
+          "lastName": "Hammer"
+        },
+        {
+          "lastName": "Provo"
+        },
+        {
+          "lastName": "Wester"
+        },
+        {
+          "lastName": null
+        },
+         ...
+      ]
     }
   }
 }
