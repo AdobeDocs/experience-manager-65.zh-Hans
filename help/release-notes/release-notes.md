@@ -2,9 +2,9 @@
 title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 2ffb77762af1969f3c93e7dd33cb3de9349375f8
+source-git-commit: f48e77068f286ff107bb2511660bf540fea32474
 workflow-type: tm+mt
-source-wordcount: '2889'
+source-wordcount: '2888'
 ht-degree: 2%
 
 ---
@@ -67,7 +67,7 @@ ht-degree: 2%
 
 #### [!DNL Content Fragments]{#sites-contentfragments-6520}
 
-* 升级到AEM 6.5.18或AEM 6.5.19后，嵌套配置文件夹不再受支持，内容片段模型文件夹不再可见。 (SITES-18110)主要
+* 升级到AEM 6.5.18或AEM 6.5.19后，嵌套配置文件夹不再受支持，内容片段模型文件夹不再可见。 (SITES-18110)
 * 某些子文件夹无法从继承的内容片段模型中选取。 它必须支持文件夹而不具有 `jcr:content` 属性，即使通过用户界面创建的DAM文件夹具有此类节点。 (SITES-17943)
 
 #### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6520}
@@ -156,13 +156,7 @@ ht-degree: 2%
 
 * text -->
 
-#### [!DNL Forms Designer]{#forms-designer-6520}
-
-* text
-
-<!-- ### Foundation{#foundation-6520}
-
-* text -->
+### Foundation {#foundation-6520}
 
 #### 社区 {#communities-6520}
 
@@ -181,17 +175,9 @@ ht-degree: 2%
 * Aria标签“关闭”在中未本地化 **[!UICONTROL 资产]** > **[!UICONTROL 文件]**，选择一个文件夹，然后在工具栏上，选择 **[!UICONTROL 属性]** > **[!UICONTROL 权限]** 选项卡>成员名称。 (NPR-41705)
 * 的工具提示被截断 **[!UICONTROL 密钥存储密码]** 区域设置ENG、FRA、KOR、DEU和PTB的“SSL设置”页面上的字段。 (NPR-41367)
 
-<!-- #### Oak{#oak-6520}
-
-* text -->
-
 #### Platform{#foundation-platform-6520}
 
 * 将Campaign与AEM集成时存在的问题，原因是/api servlet未在href json中返回正确的方案。 原因是AEM未接收X-Forward-Proto标头，该标头强制请求使用HTTP方案而不是HTTPS方案进行响应。 因此，应添加基于OSGI配置切换方案选择的功能。 (GRANITE-48454)
-
-<!-- #### Replication{#foundation-replication-6520}
-
-* text -->
 
 #### Sling{#foundation-sling-6520}
 
