@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 22235790b2bfefaa1a3bf71f888f8eb343d9e1b7
 workflow-type: tm+mt
-source-wordcount: '3608'
+source-wordcount: '4257'
 ht-degree: 3%
 
 ---
@@ -460,3 +460,57 @@ AEM Forms将第三个母版页应用于自适应表单中的面板和所有后�
 * 自适应表单中的文档片段未出现在记录文档中。 但是，支持自适应表单片段。
 * 不支持为基于XML架构的自适应表单生成的记录文档中的内容绑定。
 * 当用户请求呈现记录文档时，记录文档的本地化版本是应区域设置的要求创建的。 记录文档的本地化与自适应表单的本地化同时发生。 有关记录文档和自适应表单本地化的更多信息，请参阅 [使用AEM翻译工作流将自适应表单和记录文档本地化](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md).
+
+## 使用自定义XCI文件
+
+XCI文件可帮助您设置文档的各种属性。 <!-- Forms as a Cloud Service has a master XCI file.--> 您可以使用自定义XCI文件覆盖现有XCI文件中指定的一个或多个默认属性。 例如，您可以选择将字体嵌入文档，或者为所有文档启用标记属性。 下表指定了XCI选项：
+
+| XCI选项 | 描述 |
+|--- |--- |
+| config/present/pdf/creator | 使用文档信息词典中的创建者条目标识文档创建者。 有关此词典的信息，请参见 [PDF参考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/pdf/producer | 使用文档信息词典中的制作者条目标识文档制作者。 有关此词典的信息，请参见 [PDF参考指南](https://opensource.adobe.com/dc-acrobat-sdk-docs/acrobatsdk/). |
+| config/present/layout | 控制输出是单个面板还是分页。 |
+| config/present/pdf/compression/level | 指定生成PDF文档时使用的压缩程度。 |
+| config/present/pdf/fontInfo/embed | 控制输出文档中的字体嵌入。 |
+| config/present/pdf/scriptModel | 控制输出PDF文档中是否包含XFA特定的信息。 |
+| config/present/common/data/adjustData | 控制XFA应用程序在合并后是否调整数据。 |
+| config/present/pdf/renderPolicy | 控制页面内容的生成是在服务器上完成还是延迟到客户端。 |
+| config/present/common/locale | 指定输出文档中使用的默认区域设置。 |
+| config/present/destination | 当由当前元素包含时，指定输出格式。 当由openAction元素包含时，指定在交互式客户端中打开文档时要执行的操作。 |
+| config/present/output/type | 指定要应用于文件的压缩类型或要生成的输出类型。 |
+| config/present/common/temp/uri | 指定表单URI。 |
+| config/present/common/template/base | 在表单设计中提供URI的基本位置。 当此元素不存在或为空时，将使用窗体设计的位置作为基础。 |
+| config/present/common/log/to | 控制日志数据或输出数据写入的位置。 |
+| config/present/output/to | 控制日志数据或输出数据写入的位置。 |
+| config/present/script/currentPage | 指定文档打开时的初始页面。 |
+| config/present/script/exclude | 通知Formsas a Cloud Service忽略哪些事件。 |
+| config/present/pdf/linearized | 控制输出PDF文档是否线性化。 |
+| config/present/script/runScripts | 控制Formsas a Cloud Service执行的脚本集。 |
+| config/present/pdf/tagged | 控制标签在输出PDF文档中的包含。 在PDF上下文中，标记是文档中包含的其他信息，用于公开文档的逻辑结构。 标记有助于辅助功能和重新设置格式。 例如，页码可能会被标记为工件，这样屏幕阅读器就不会在文本中间朗读它。 虽然标记可以使文档更有用，但它们也会增加文档的大小以及创建文档所需的处理时间。 |
+| config/present/pdf/fontInfo/alwaysEmbed | 指定嵌入到输出文档中的字体。 |
+| config/present/pdf/fontInfo/neverEmbed | 指定不得嵌入到输出文档中的字体。 |
+| config/present/pdf/pdfa/part | 指定文档符合的PDF/A规范的版本号。 |
+| config/present/pdf/pdfa/amd | 指定PDF/A规范的修订级别。 |
+| config/present/pdf/pdfa/conformance | 指定PDF/A规范的符合性级别。 |
+| config/present/pdf/version | 指定要生成的PDF文档的版本 |
+| config/present/pdf/version/map | 指定文档的回退字体 |
+
+
+<!--
+
+### Use a custom XCI file in your AEM Forms environment
+
+  1. Add the custom XCI file to your development project.
+  1. Specify the following inline property:(/help/implementing/deploying/configuring-osgi.md)
+  1. Deploy the project to your AEM Forms environment. <!--Cloud Service environment
+  
+-->
+
+### 在本地Forms开发环境中使用自定义XCI文件
+
+1. 将XCI文件上传到本地开发环境。
+1. 打开 <!--Cloud Service SDK--> 配置管理器。 <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
+1. 找到并打开 **[!UICONTROL 自适应Forms和交互式通信Web渠道]** 配置。
+1. 指定XCI文件的路径，然后单击 **[!UICONTROL 保存]**.
+
+
