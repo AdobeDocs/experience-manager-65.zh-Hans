@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 8ca683a973998e7b5d6a2f87210aaf324a5419ee
+source-git-commit: 6c17822e5d5fcd6af63bc695a057c1eeff50f03a
 workflow-type: tm+mt
-source-wordcount: '4019'
+source-wordcount: '4023'
 ht-degree: 0%
 
 ---
@@ -493,7 +493,7 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
 >- PDF Generator无法使用Microsoft® Project 2019转换文件。 您可以继续使用Microsoft® Project 2016转换.MPP文件。
 >- PDF Generator无法使用Microsoft® Visio 2019转换文件。
 >- PDF Generator无法使用Microsoft® Project 2019转换文件。
->- 如果Microsoft® Office安装由于任何原因（例如VL_KMS无法在一段时间内建立通信）而停用或取消许可，则在重新激活或重新许可安装之前，转换可能会失败。
+>- 如果Microsoft® Office安装由于任何原因（例如，批量许可安装无法在指定时间段内找到KMS主机）而停用或取消许可，则在重新许可并重新激活安装之前，转换可能会失败。
 
 ### 辅助功能支持的异常 {#exceptions-to-accessibility-support}
 
