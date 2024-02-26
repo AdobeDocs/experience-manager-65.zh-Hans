@@ -3,9 +3,9 @@ title: 技术要求
 description: Adobe Experience Manager支持的客户端和服务器平台列表。
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: fbf056b6b7dcbfcaa27744672c45a87316c5f761
+source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
 workflow-type: tm+mt
-source-wordcount: '3642'
+source-wordcount: '3644'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Adobe在这些平台上支持(AEM) Adobe Experience Manager，如本文档中的
 >
 >根据安装AEM的平台，可能会为用户管理提出不同的要求。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 安装Adobe Experience Manager的最低要求：
 
@@ -141,29 +141,29 @@ Adobe Experience Manager与以下版本的Java™虚拟机一起运行：
 
 >[!NOTE]
 >
-请参阅 [部署社区](/help/communities/deploy-communities.md) 有关AEM Communities功能的其他信息。
+>请参阅 [部署社区](/help/communities/deploy-communities.md) 有关AEM Communities功能的其他信息。
 
 >[!NOTE]
 >
-MongoDB是第三方软件程序，未包含在AEM许可包中。 欲了解更多信息，请参见 [MongoDB许可政策](https://www.mongodb.com/licensing/server-side-public-license/faq) 页面。
+>MongoDB是第三方软件程序，未包含在AEM许可包中。 欲了解更多信息，请参见 [MongoDB许可政策](https://www.mongodb.com/licensing/server-side-public-license/faq) 页面。
 >
-为了利用MongoDB充分利用AEM部署，Adobe建议许可MongoDB企业版以受益于专业支持。 请参阅 [建议的部署](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) 以了解更多信息。
+>为了利用MongoDB充分利用AEM部署，Adobe建议许可MongoDB企业版以受益于专业支持。 请参阅 [建议的部署](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) 以了解更多信息。
 >
-该许可证包括一个标准副本集，该副本集由一个主实例和两个辅助实例组成，可用于创作或发布部署。
+>该许可证包括一个标准副本集，该副本集由一个主实例和两个辅助实例组成，可用于创作或发布部署。
 >
-如果要在MongoDB上同时运行author和publish，则必须购买两个单独的许可证。
+>如果要在MongoDB上同时运行author和publish，则必须购买两个单独的许可证。
 >
-Adobe客户关怀团队可协助处理与将MongoDB与AEM结合使用相关的问题。
+>Adobe客户关怀团队可协助处理与将MongoDB与AEM结合使用相关的问题。
 >
-有关更多信息，请参阅 [MongoDB for Adobe Experience Manager 页面](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)。
+>有关更多信息，请参阅 [MongoDB for Adobe Experience Manager 页面](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)。
 
 >[!NOTE]
 >
-上面列出的受支持的关系数据库是第三方软件，不包含在 AEM 许可包中。
+>上面列出的受支持的关系数据库是第三方软件，不包含在 AEM 许可包中。
 >
-要使用受支持的关系数据库运行AEM 6.5，需要与数据库供应商签订单独的支持合同。 Adobe客户关怀团队协助处理与使用AEM 6.5的关系数据库相关的资格确认问题。
+>要使用受支持的关系数据库运行AEM 6.5，需要与数据库供应商签订单独的支持合同。 Adobe客户关怀团队协助处理与使用AEM 6.5的关系数据库相关的资格确认问题。
 >
-**目前，在AEM 6.5上的R级中支持大多数关系数据库，该数据库附带支持标准和支持计划，如上述R级说明中所述。**
+>**目前，在AEM 6.5上的R级中支持大多数关系数据库，该数据库附带支持标准和支持计划，如上述R级说明中所述。**
 
 ### Servlet引擎/应用程序服务器 {#servlet-engines-application-servers}
 
@@ -208,12 +208,12 @@ Adobe Experience Manager可与以下服务器平台配合使用以用于生产�
 
    >[!NOTE]
    >
-   对于基于Linux的服务器（OSGI和JEE栈栈），AEM Forms加载项需要运行时依赖关系，例如：
-   * glibc.x86_64 (2.17-196)
-   * libX11.x86_64 (1.6.7-4)
-   * zlib.x86-64 (1.2.7-17)
-   * libxcb.x86_64 （1.13-1.el7）
-   * libXau.x86_64 （1.0.8-2.1.el7）
+   >对于基于Linux的服务器（OSGI和JEE栈栈），AEM Forms加载项需要运行时依赖关系，例如：
+   >* glibc.x86_64 (2.17-196)
+   >* libX11.x86_64 (1.6.7-4)
+   >* zlib.x86-64 (1.2.7-17)
+   >* libxcb.x86_64 （1.13-1.el7）
+   >* libXau.x86_64 （1.0.8-2.1.el7）
 
 1. Microsoft® Windows生产部署支持升级到6.5的客户和非生产使用。 AEM Sites和Assets会应请求进行新部署。
 1. Microsoft® Window Server上支持AEM Forms，但没有支持级别R限制。
@@ -221,20 +221,20 @@ Adobe Experience Manager可与以下服务器平台配合使用以用于生产�
 
 >[!NOTE]
 >
-如果要安装AEM Forms 6.5，请确保已安装了以下32位Microsoft® Visual C++可再发行版本。
+>如果要安装AEM Forms 6.5，请确保已安装了以下32位Microsoft® Visual C++可再发行版本。
 >
-* Microsoft® Visual C++ 2008可再分发
-* Microsoft® Visual C++ 2010可再分发
-* Microsoft® Visual C++ 2012可再分发
-* Microsoft® Visual C++ 2013可再分发
-* Microsoft® Visual C++ 2019（VC14.28或更高版本）可再分发
+>* Microsoft® Visual C++ 2008可再分发
+>* Microsoft® Visual C++ 2010可再分发
+>* Microsoft® Visual C++ 2012可再分发
+>* Microsoft® Visual C++ 2013可再分发
+>* Microsoft® Visual C++ 2019（VC14.28或更高版本）可再分发
 
 
 ### 虚拟和云计算环境 {#virtual-cloud-computing-environments}
 
 支持在云计算环境中的虚拟机中运行Adobe Experience Manager。 这些环境包括Microsoft®Azure和Amazon Web Services (AWS)，按照本页列出的技术要求和Adobe的标准支持条款运行。
 
-对于云原生环境，请查看AEM产品线中的最新产品：Adobe Experience Manager as a Cloud Service 。 请参阅 [Adobe Experience Manager as a Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html) 以了解详细信息。
+对于云原生环境，请查看AEM产品线中的最新产品：Adobe Experience Manager as a Cloud Service 。 请参阅 [Adobe Experience Manager as a Cloud Service文档](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=zh-Hans) 以了解详细信息。
 
 Adobe还提供AdobeManaged Services以在Azure或AWS上部署AEM。 AdobeManaged Services为专家提供了在这些云计算环境中部署和操作AEM的经验和技能。 请参阅 [有关AdobeManaged Services的其他文档](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
@@ -271,9 +271,9 @@ AEM用户界面已针对大屏幕（通常是笔记本电脑和台式计算机�
 
 >[!NOTE]
 >
-**支持具有快速发布周期的浏览器：**
+>**支持具有快速发布周期的浏览器：**
 >
-Mozilla Firefox、Google Chrome和Microsoft® Edge每隔几个月发布一次更新。 Adobe承诺为Adobe Experience Manager提供更新，以在这些浏览器的即将发行版本中保持下述支持级别。
+>Mozilla Firefox、Google Chrome和Microsoft® Edge每隔几个月发布一次更新。 Adobe承诺为Adobe Experience Manager提供更新，以在这些浏览器的即将发行版本中保持下述支持级别。
 
 <table>
  <tbody>
@@ -377,9 +377,9 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 >[!NOTE]
 >
-这些系统要求 **仅限** 如果您使用Dynamic Media — 混合模式，则应用；Dynamic Media — 混合模式具有嵌入式图像服务器，该服务器仅在某些操作系统上经过验证。
+>这些系统要求 **仅限** 如果您使用Dynamic Media — 混合模式，则应用；Dynamic Media — 混合模式具有嵌入式图像服务器，该服务器仅在某些操作系统上经过验证。
 >
-对于运行Dynamic Media - Scene7模式的Dynamic Media客户(即， **dynamicmedia_scene7** 运行模式)，没有额外的系统要求；只有与AEM相同的系统要求。 Dynamic Media - Scene7模式架构使用基于云的图像服务，而不是嵌入到AEM中的服务。
+>对于运行Dynamic Media - Scene7模式的Dynamic Media客户(即， **dynamicmedia_scene7** 运行模式)，没有额外的系统要求；只有与AEM相同的系统要求。 Dynamic Media - Scene7模式架构使用基于云的图像服务，而不是嵌入到AEM中的服务。
 
 #### 硬件 {#hardware}
 
@@ -399,27 +399,27 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 >[!NOTE]
 >
-如果设置区域设置，则LC_CTYPE不等于 `en_US.UTF-8`，它会阻止Dynamic Media正常运行。 要查看其值，请在命令提示符下键入“locale”。 如果未正确设置，请在运行AEM之前键入“export LC_CTYPE=”，以将LC_CTYPE环境变量设置为空字符串。
+>如果设置区域设置，则LC_CTYPE不等于 `en_US.UTF-8`，它会阻止Dynamic Media正常运行。 要查看其值，请在命令提示符下键入“locale”。 如果未正确设置，请在运行AEM之前键入“export LC_CTYPE=”，以将LC_CTYPE环境变量设置为空字符串。
 
 >[!NOTE]
 >
-**禁用SELinux：** 打开SELinux时，图像服务不起作用。 此选项默认处于启用状态。 要解决此问题，请编辑 **/etc/selinux/config** 文件并将SELinux值从以下位置更改：
+>**禁用SELinux：** 打开SELinux时，图像服务不起作用。 此选项默认处于启用状态。 要解决此问题，请编辑 **/etc/selinux/config** 文件并将SELinux值从以下位置更改：
 >
-`SELINUX=enforcing` **到** `SELINUX=disabled`
+>`SELINUX=enforcing` **到** `SELINUX=disabled`
 
 >[!NOTE]
 >
-**NUMA 架构：** 具有采用 AMD64 和英特尔® EM64T 的处理器的系统通常配置为非统一内存架构 （NUMA） 平台。 也就是说，内核在引导时构造多个内存节点，而不是构造单个内存节点。
+>**NUMA 架构：** 具有采用 AMD64 和英特尔® EM64T 的处理器的系统通常配置为非统一内存架构 （NUMA） 平台。 也就是说，内核在引导时构造多个内存节点，而不是构造单个内存节点。
 >
-多节点构造可能会导致在其他节点耗尽之前，一个或多个节点上的内存耗尽。 当内存耗尽时，即使存在可用内存，内核也可以决定终止进程（例如，图像服务器或平台服务器）。
+>多节点构造可能会导致在其他节点耗尽之前，一个或多个节点上的内存耗尽。 当内存耗尽时，即使存在可用内存，内核也可以决定终止进程（例如，图像服务器或平台服务器）。
 >
-因此，Adobe建议，如果运行的系统导致您使用 **numa=off** 引导选项，以避免内核终止这些进程。
+>因此，Adobe建议，如果运行的系统导致您使用 **numa=off** 引导选项，以避免内核终止这些进程。
 
 >[!NOTE]
 >
-**服务器主机名必须解析：** 确保服务器的主机名可解析为 IP 地址。 如果无法做到这一点，请将完全限定的主机名和 IP 地址 **添加到 /etc/hosts**：
+>**服务器主机名必须解析：** 确保服务器的主机名可解析为 IP 地址。 如果无法做到这一点，请将完全限定的主机名和 IP 地址 **添加到 /etc/hosts**：
 >
-`<ip address> <fully qualified hostname>`
+>`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
@@ -504,25 +504,25 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 >[!NOTE]
 >
-PDF Generator仅支持所支持的操作系统和应用程序的英语、法语、德语和日语版本。
+>PDF Generator仅支持所支持的操作系统和应用程序的英语、法语、德语和日语版本。
 >
-另外，
+>另外，
 >
-* PDF Generator需要32位版本的 [Acrobat 2020 classic跟踪版本20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 或Acrobat 2017版本17.011.30078来执行转换。
-* 仅在Windows和Linux®上支持OpenOffice的PDF Generator转换。
-* PDF Generator仅支持32位零售版Microsoft® Office Professional Plus以及在Windows操作系统中进行转换所需的其他软件。
-* PDF Generator支持Linux®操作系统上的32位和64位版本的OpenOffice。
-* PDF Generator不支持Microsoft® Office 365。
-* 仅在Windows上支持OCRPDF、Optimize PDF和Export PDF功能。
-* Acrobat的一个版本与AEM Forms捆绑在一起，用于启用PDF Generator功能。 在AEM Forms许可证有效期内，只能以编程方式访问AEM Forms捆绑的版本，以便与AEM Forms PDF Generator结合使用。 有关更多信息，请参阅根据您的部署确定的AEM Forms产品描述([内部部署](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 或 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
-* PDF Generator服务不支持Microsoft® Windows 10。
-* PDF Generator无法使用Microsoft® Visio 2019转换文件。 您可以继续使用Microsoft® Visio 2016进行转换 `.VSD` 和 `.VSDX` 文件。
-* PDF Generator无法使用Microsoft® Project 2019转换文件。 您可继续使用Microsoft® Project 2016进行转换 `.VSD` 和 `.VSDX` 文件。
+>* PDF Generator需要32位版本的 [Acrobat 2020 classic跟踪版本20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) 或Acrobat 2017版本17.011.30078来执行转换。
+>* 仅在Windows和Linux®上支持OpenOffice的PDF Generator转换。
+>* PDF Generator仅支持32位零售版Microsoft® Office Professional Plus以及在Windows操作系统中进行转换所需的其他软件。
+>* PDF Generator支持Linux®操作系统上的32位和64位版本的OpenOffice。
+>* PDF Generator不支持Microsoft® Office 365。
+>* 仅在Windows上支持OCRPDF、Optimize PDF和Export PDF功能。
+>* Acrobat的一个版本与AEM Forms捆绑在一起，用于启用PDF Generator功能。 在AEM Forms许可证有效期内，只能以编程方式访问AEM Forms捆绑的版本，以便与AEM Forms PDF Generator结合使用。 有关更多信息，请参阅根据您的部署确定的AEM Forms产品描述([内部部署](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) 或 [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+>* PDF Generator服务不支持Microsoft® Windows 10。
+>* PDF Generator无法使用Microsoft® Visio 2019转换文件。 您可以继续使用Microsoft® Visio 2016进行转换 `.VSD` 和 `.VSDX` 文件。
+>* PDF Generator无法使用Microsoft® Project 2019转换文件。 您可继续使用Microsoft® Project 2016进行转换 `.VSD` 和 `.VSDX` 文件。
 >
 
 ### AEM Forms Designer的要求 {#requirements-for-aem-forms-designer}
 
-* Microsoft Windows 2016 Server、Microsoft Windows 2019 Server 或 Microsoft®®® Windows®®® 10
+* Microsoft Windows 2016 Server、Microsoft Windows 2019 Server、Microsoft®®® Windows 10 或 Windows®®®® 11
 * 1 GHz 或速度更快的处理器，支持 PAE、NX 和 SSE2。
 * 32 位操作系统为 1 GB RAM，64 位操作系统为 2 GB RAM
 * 32 位操作系统为 16 GB 磁盘空间，64 位操作系统为 20 GB 磁盘空间
