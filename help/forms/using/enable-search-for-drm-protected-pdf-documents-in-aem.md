@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ AEM search能够搜索和定位AEM资源，并对各种常用的文档格式(如
 1. 建立安全连接
 1. 为受策略保护的PDF示例文档编制索引
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 * 如果您在OSGi上使用AEM Forms：
 
@@ -60,7 +60,7 @@ AEM search能够搜索和定位AEM资源，并对各种常用的文档格式(如
    * **用户名：** 指定用于启动来自AEM服务器的调用的AEM Forms on JEE帐户的用户名。 指定的帐户必须具有在JEE服务器的AEM Forms上启动文档服务的权限。
    * **密码**：指定用户名字段中提到的AEM Forms on JEE帐户的密码。
 
-   单击 **保存**. 启用AEM以搜索受Document Security保护的PDF文档。
+   单击&#x200B;**保存**。启用AEM以搜索受Document Security保护的PDF文档。
 
 #### 使用相互身份验证配置AdobeLiveCycle客户端SDK捆绑包 {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
@@ -76,7 +76,7 @@ AEM search能够搜索和定位AEM资源，并对各种常用的文档格式(如
    * **Truststorepassword**：指定truststore文件的密码。
    * **服务名称**：将RightsManagementService添加到指定服务的列表。
 
-   单击 **保存**. 启用AEM以搜索受Document Security保护的PDF文档
+   单击&#x200B;**保存**。启用AEM以搜索受Document Security保护的PDF文档
 
 ### 为受策略保护的PDF示例文档编制索引 {#index-a-sample-policy-protected-pdf-document}
 
@@ -84,3 +84,7 @@ AEM search能够搜索和定位AEM资源，并对各种常用的文档格式(如
 1. 在AEM Digital Asset Manager中创建文件夹，并将受策略保护的PDF文档上传到新创建的文件夹。
 
    现在，您可以使用AEM搜索功能搜索受策略保护的文档。
+
+   >[!NOTE]
+   >
+   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。

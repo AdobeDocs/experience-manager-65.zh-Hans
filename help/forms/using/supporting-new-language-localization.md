@@ -8,9 +8,9 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '830'
 ht-degree: 2%
 
 ---
@@ -124,6 +124,10 @@ LogMessages.js
 ### 重新启动服务器 {#restart-the-server}
 
 重新启动AEM服务器以使添加的区域设置生效。
+
+>[!NOTE]
+>
+> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 ## 用于添加西班牙语支持的示例库 {#sample-libraries-for-adding-support-for-spanish}
 

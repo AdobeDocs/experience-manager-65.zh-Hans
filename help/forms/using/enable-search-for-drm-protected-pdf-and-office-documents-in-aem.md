@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '639'
-ht-degree: 0%
+source-wordcount: '673'
+ht-degree: 1%
 
 ---
 
@@ -43,7 +43,7 @@ Adobe Experience Manager提供了一个用户界面，用于搜索和查找存�
    * **用户名：** 指定AEM Forms on JEE帐户的用户名，用于从JEE服务器上的AEM Forms启动调用。 指定的帐户必须具有在JEE服务器的AEM Forms上调用文档服务的权限。
    * **密码**：指定用户名字段中提到的AEM Forms on JEE帐户的密码。
 
-   单击 **保存**. 启用AEM以搜索受Document Security保护的PDF和Microsoft Office文档。
+   单击&#x200B;**保存**。启用AEM以搜索受Document Security保护的PDF和Microsoft Office文档。
 
 ### 使用相互身份验证配置AEM Forms客户端SDK捆绑包 {#configure-aem-forms-client-sdk-bundle-using-mutual-authentication}
 
@@ -59,7 +59,11 @@ Adobe Experience Manager提供了一个用户界面，用于搜索和查找存�
    * **Truststorepassword**：指定truststore文件的密码。
    * **服务名称**：将RightsManagementService添加到指定服务的列表。
 
-   单击 **保存**. 启用AEM以搜索受Document Security保护的PDF和Microsoft Office文档
+   单击&#x200B;**保存**。启用AEM以搜索受Document Security保护的PDF和Microsoft Office文档
+
+   >[!NOTE]
+   >
+   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 ## 为受策略保护的示例PDF或Microsoft Office文档编制索引 {#index-a-sample-policy-protected-pdf-or-microsoft-office-document}
 

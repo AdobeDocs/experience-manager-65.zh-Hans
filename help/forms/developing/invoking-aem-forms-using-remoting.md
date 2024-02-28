@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '4593'
+source-wordcount: '4604'
 ht-degree: 0%
 
 ---
@@ -605,7 +605,7 @@ AEM Forms支持一项名为的操作 `getFileUploadToken` 将返回传递给上�
          ...
 ```
 
-）
+)
 
 ### 配置AEM Forms以接受安全和不安全的文档 {#configuring-aem-forms-to-accept-secure-and-unsecure-documents}
 
@@ -619,7 +619,9 @@ AEM Forms支持一项名为的操作 `getFileUploadToken` 将返回传递给上�
 
 >[!NOTE]
 >
-要将AEM Forms配置为接受不安全的文档，请选择允许从Flex应用程序上传不安全的文档选项。 然后，重新启动应用程序或服务以确保设置生效。
+* 要将AEM Forms配置为接受不安全的文档，请选择允许从Flex应用程序上传不安全的文档选项。 然后，重新启动应用程序或服务以确保设置生效。
+* 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+
 
 ### 快速入门：通过使用Remoting传递安全文档来调用短期进程 {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 

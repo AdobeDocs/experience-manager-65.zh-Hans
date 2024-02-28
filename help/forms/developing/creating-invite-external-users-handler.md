@@ -3,9 +3,9 @@ title: 创建“邀请外部用户”处理程序
 description: 了解如何创建邀请外部用户处理程序。 它允许Rights Management服务邀请外部用户成为Rights Management用户。
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1126'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -233,6 +233,11 @@ A.组件所需的外部JAR文件B. JAVA文件
 
 1. 使用Workbench部署邀请外部用户处理程序的JAR文件。
 1. 重新启动应用程序服务器。
+
+   >[!NOTE]
+   >
+   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+
 1. 登录到管理控制台。
 1. 单击 **[!UICONTROL 服务]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 配置]** >已邀请 **[!UICONTROL 用户注册]**.
 1. 通过选中 **[!UICONTROL 启用受邀用户注册]** 盒子。 下 **[!UICONTROL 使用内置注册系统]**，单击 **[!UICONTROL 否]**. 保存您的设置。

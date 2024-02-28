@@ -8,10 +8,10 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '321'
-ht-degree: 2%
+source-wordcount: '355'
+ht-degree: 1%
 
 ---
 
@@ -42,6 +42,10 @@ AEMFD兼容包还允许您 [在AEM Forms 6.5上使用AEM Forms 6.4、6.3和6.2�
 
 1. 在日志稳定后，重新启动服务器。
 1. 使用迁移实用程序使您的资产与6.5兼容。
+
+   >[!NOTE]
+   >
+   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
    有关更多信息，请参阅 [迁移实用程序](../../forms/using/migration-utility.md).
 

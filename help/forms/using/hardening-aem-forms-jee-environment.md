@@ -6,9 +6,9 @@ topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7662'
+source-wordcount: '7608'
 ht-degree: 1%
 
 ---
@@ -464,6 +464,10 @@ AEM Forms数据库架构包含有关系统配置和业务流程的敏感信息�
 1. 将变量的值设置为TRUE。
 
 1. 重新启动AEM Forms实例。
+
+>[!NOTE]
+>
+> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 ## 在JEE上配置AEM Forms以实现企业以外的访问 {#configuring-aem-forms-on-jee-for-access-beyond-the-enterprise}
 

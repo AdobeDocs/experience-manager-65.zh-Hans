@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: process-reporting
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1676'
+source-wordcount: '1710'
 ht-degree: 0%
 
 ---
@@ -95,6 +95,10 @@ Process Reporting服务会按计划将数据从AEM Forms数据库发布到Proces
 1. 重新启动AEM Forms Server实例。
 
 ![processdatapublisherservice](assets/processdatapublisherservice.png)
+
+>[!NOTE]
+>
+> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 ### ProcessDataStorage服务 {#processdatastorage-service}
 
@@ -275,3 +279,5 @@ AEM Forms环境包含自环境设置以来的数据。
 * **[!UICONTROL 同步]**：将嵌入的Process Reporting存储库与AEM Forms数据库同步。
 * **[!UICONTROL 帮助]**：查看有关流程报告的帮助文档。
 * **[!UICONTROL 注销]**：注销流程报表
+
+

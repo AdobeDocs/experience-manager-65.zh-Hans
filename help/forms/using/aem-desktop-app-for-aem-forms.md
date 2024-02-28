@@ -7,9 +7,9 @@ topic-tags: manage
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
@@ -38,5 +38,9 @@ AEM桌面应用程序在Microsoft®Windows上使用WebDAV协议，在macOS X上�
 1. 在FormsManager加载项配置对话框中，取消选择 **[!UICONTROL 异步同步资源]** 复选框，然后单击 **[!UICONTROL 保存]**.
 1. 重新启动AEM Forms服务器。 重新启动后，将启用AEM Forms服务器以接受内容并与AEM桌面应用程序共享内容。
 1. 打开应用程序并连接到AEM Forms服务器。
+
+   >[!NOTE]
+   >
+   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
    成功连接后，应用程序将填充 `content/dam` 和 `content/dam/formsanddocuments` 文件夹。 除了将文件从上述文件夹移动到本地文件夹外，您还可以使用应用程序在自动填充的文件夹之间移动内容。

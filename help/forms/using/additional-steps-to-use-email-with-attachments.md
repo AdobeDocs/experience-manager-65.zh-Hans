@@ -2,9 +2,9 @@
 title: 获取带有附件的电子邮件的其他步骤
 description: 了解如何在无法检索JEE平台上的AEM Forms的带附件的电子邮件时修复错误。
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 553aef43342a709dd8e645279999a71b9e0185f0
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '270'
 ht-degree: 0%
 
 ---
@@ -48,3 +48,7 @@ ht-degree: 0%
    * `sling.bootdelegation.activation=javax.activation.*`
 
 1. 重新启动 **JBoss®**.
+
+>[!NOTE]
+>
+> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。

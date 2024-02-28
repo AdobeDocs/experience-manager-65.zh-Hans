@@ -6,9 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 feature: Document Services
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: 62adca19-8ed0-48b3-b7eb-9dbc3d8f96c6
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -50,6 +51,10 @@ Adobe Experience Manager Forms可以使用存储在HSM上的凭据或电子令�
 
 1. 保存并关闭sling.properties文件。
 1. 重新启动AEM实例。
+
+>[!NOTE]
+>
+> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 <!--
 

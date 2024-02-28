@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '7812'
+source-wordcount: '7848'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-生成PDF服务不支持64位版本的OpenOffice。
+>生成PDF服务不支持64位版本的OpenOffice。
 
 * Adobe Photoshop® CS2转换PSD（仅限Windows）
 
 >[!NOTE]
 >
-不支持Photoshop CS3和CS4，因为它们不支持Windows Server 2003或Windows Server 2008。
+>不支持Photoshop CS3和CS4，因为它们不支持Windows Server 2003或Windows Server 2008。
 
 * Adobe FrameMaker® 7.2和8用于转换FM（仅限Windows）
 * AdobePageMaker® 7.0，用于转换PMD、PM6、P65和PM（仅限Windows）
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-有关“生成PDF”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关“生成PDF”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## 将Word文档转换为PDF文档 {#converting-word-documents-to-pdf-documents}
 
@@ -90,11 +90,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-有关其他文件格式的详细信息，请参阅 [添加对其他本机文件格式的支持](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
+>有关其他文件格式的详细信息，请参阅 [添加对其他本机文件格式的支持](converting-file-formats-pdf.md#adding-support-for-additional-native-file-formats).
 
 >[!NOTE]
 >
-有关“生成PDF”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关“生成PDF”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -202,7 +202,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
 
 1. 创建生成PDF客户端。
 
@@ -260,7 +260,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-有关“生成PDF”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关“生成PDF”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -359,7 +359,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
 
 1. 创建生成PDF客户端。
 
@@ -410,7 +410,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-有关“生成PDF”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关“生成PDF”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### 步骤摘要 {#summary_of_steps-2}
 
@@ -510,7 +510,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
 
 1. 创建“生成PDf”客户端。
 
@@ -845,7 +845,7 @@ A *对话框XML文件* 指定生成PDF服务如何响应系统或本机应用程
 
 >[!NOTE]
 >
-在此上下文中，术语“附加”是指 `appmon.[applicationname].addition.[locale].xml` 文件。 此类文件指定对对话框XML文件的覆盖和添加。
+>在此上下文中，术语“附加”是指 `appmon.[applicationname].addition.[locale].xml` 文件。 此类文件指定对对话框XML文件的覆盖和添加。
 
 您还可以为本机应用程序修改其他对话框XML文件，其目的如下：
 
@@ -858,7 +858,7 @@ A *对话框XML文件* 指定生成PDF服务如何响应系统或本机应用程
 
 >[!NOTE]
 >
-在native2pdfconfig.xml配置文件中指定的通用应用程序均没有主对话框XML文件。 部分 [添加或修改对本机文件格式的支持](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) 描述了此类规范。
+>在native2pdfconfig.xml配置文件中指定的通用应用程序均没有主对话框XML文件。 部分 [添加或修改对本机文件格式的支持](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) 描述了此类规范。
 
 订购 `windowList` 在中显示为子项的元素 `window` 元素。 (请参阅 [对window和windowList元素排序](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
@@ -878,7 +878,7 @@ A *对话框XML文件* 指定生成PDF服务如何响应系统或本机应用程
 
 >[!NOTE]
 >
-应用程序的名称被指定为 `GenericApp` 元素的 `name` 属性。 此值必须与您为该应用程序开发的脚本中指定的相应名称完全匹配。 同样， `GenericApp` 元素的 `displayName` 属性应该与相应脚本的 `expectedWindow` 窗口标题。 在解析 `displayName` 或 `caption` 属性。
+>应用程序的名称被指定为 `GenericApp` 元素的 `name` 属性。 此值必须与您为该应用程序开发的脚本中指定的相应名称完全匹配。 同样， `GenericApp` 元素的 `displayName` 属性应该与相应脚本的 `expectedWindow` 窗口标题。 在解析 `displayName` 或 `caption` 属性。
 
 在此示例中，生成PDF服务提供的默认配置数据已修改，以指定应使用记事本(而不是Microsoft Word)处理文件扩展名为.txt的文件。 在此修改之前，已将Microsoft Word指定为应该处理此类文件的本机应用程序。
 
@@ -910,6 +910,10 @@ A *对话框XML文件* 指定生成PDF服务如何响应系统或本机应用程
 创建一个环境变量，该变量指定本机应用程序可执行文件的位置。 变量必须使用格式 `[applicationname]_PATH`，其中 *应用程序名称* 必须与XML配置文件和脚本中使用的应用程序名称完全匹配，其中路径以双引号包含可执行文件的路径。 此类环境变量的示例如下 `Photoshop_PATH`.
 
 创建新的环境变量后，必须重新启动部署生成PDF服务的服务器。
+
+>[!NOTE]
+>
+> 建议使用“Ctrl + C”命令重新启动SDK服务器。 使用替代方法（例如，停止Java进程）重新启动AEM SDK服务器可能会导致AEM开发环境不一致。
 
 **在Windows XP环境中创建系统变量**
 

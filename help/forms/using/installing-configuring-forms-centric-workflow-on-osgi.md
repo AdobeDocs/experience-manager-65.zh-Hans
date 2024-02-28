@@ -5,9 +5,9 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
 workflow-type: tm+mt
-source-wordcount: '1590'
+source-wordcount: '1624'
 ht-degree: 3%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 3%
 
 ## 简介 {#introduction}
 
-企业从多个表单、后端系统和其他数据源收集和处理数据。 数据的处理涉及审核和批准程序、重复任务和数据存档。 例如，检查表单并将其转换为 PDF 文档。 手动完成时，重复的任务可能需要花费大量时间和大量资源。
+企业收集和处理来自多个表单、后端系统和其他数据源的数据。 数据处理涉及审查和批准程序、重复性任务和数据存档。 例如，审阅表单并将其转换为 PDF 文档。 手动完成时，重复性任务可能需要大量时间和大量资源。
 
-您可以在 OSGi ](../../forms/using/aem-forms-workflow.md) 上使用 [ 以 Forms 为中心的工作流，以快速版本自适应表单的工作流。这些工作流可帮助您自动执行审核和批准工作流、业务流程工作流和其他重复性任务。 这些工作流还有助于处理文档（创建、汇编、分发和存档 PDF 文档、添加数字签名以限制对文档、解码条形码表单等），以及使用表单和 Adobe Sign 的工作流签名文档。
+您可以在 [OSGi](../../forms/using/aem-forms-workflow.md) 上使用以表单为中心的工作流来快速构建自适应的基于表单的工作流。 这些工作流可以帮助您自动执行审阅和审批工作流、业务流程工作流以及其他重复性任务。 这些工作流程还有助于处理文档（创建、组合、分发和归档 PDF 文档，添加数字签名以限制对文档的访问，解码条形码格式等），以及将 Adobe Sign 签名工作流程用于表单和文档。
 
-设置后，可以手动触发这些工作流以完成定义的进程，或在用户提交表单或交互式通信时以编程方式运行。 该功能包含在 AEM Forms 加载项包中。
+设置完成后，可以手动触发这些工作流以完成定义的流程，或者在用户提交表单或交互式通信时以编程方式运行。 该功能包含在AEM Forms加载项包中。
 
 AEM Forms是一个功能强大的企业级平台。 OSGi上以Forms为中心的工作流只是AEM Forms的功能之一。 有关权能的完整列表，请参见 [AEM Forms简介](introduction-aem-forms.md).
 
@@ -105,14 +105,19 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包中包含有�
    2. 选择包的版本和类型。 您也可以使用 **[!UICONTROL 搜索下载]** 用于筛选结果的选项。
 1. 选择适用于您的操作系统的包名称，然后选择 **[!UICONTROL 接受EULA条款]**，并选择 **[!UICONTROL 下载]**.
 1. 打开 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  并单击 **[!UICONTROL 上传包]** 以上传包。
-1. 选择包，然后单击 &quot;安装 ]**&quot;**[!UICONTROL  。
+1. 选择程序包，然后单击“安装&#x200B;]**”。**[!UICONTROL 
 
-   您还可以通过 &quot; [ AEM Forms 版本 ](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) &quot; 文章中列出的直接关联下载包。
+   您还可以通过AEM [Forms版本](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 文章中列出的直接链接下载包。
 
-1. 安装包后，系统会提示您重新启动 AEM 实例。 **不要立即重新启动服务器。**&#x200B;在停止 AEM Forms 服务器之前，请等待 ServiceEvent 注册和 ServiceEvent 取消注册的消息在 AEM 安装目录 ] /crx-quickstart/logs/error.log 文件中 [ 停止显示，并且日志处于稳定状态。
-1. 在所有作者和 Publish 实例上重复步骤1-7。
+1. 安装包后，系统会提示您重新启动 AEM 实例。 **不要立即重新启动服务器。** 在停止 AEM Forms 服务器之前，请等待 ServiceEvent REGISTERED 和 ServiceEvent UNREGISTERED 消息停止出现在 [AEM-Installation-Directory]/crx-quickstart/logs/error.log 文件中，并且日志稳定。
 
-## Post 安装配置 {#post-installation-configurations}
+   >[!NOTE]
+   >
+   > 建议使用“Ctrl + C”命令重新启动 SDK。 使用替代方法（例如，停止 Java 进程）重新启动 AEM SDK 可能会导致 AEM 开发环境中出现不一致。
+
+1. 对所有创作实例和发布实例重复步骤1-7。
+
+## 安装后配置 {#post-installation-configurations}
 
 AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCastle库和序列化代理。 可选配置包括配置Dispatcher和Adobe Target。
 
