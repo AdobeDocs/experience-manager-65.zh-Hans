@@ -2,9 +2,9 @@
 title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: c36ef1c1bd261864930039c4d60a930ead12482e
+source-git-commit: 21f39dc697a5aa3944834786a627e990e7f3ca7f
 workflow-type: tm+mt
-source-wordcount: '3390'
+source-wordcount: '3385'
 ht-degree: 2%
 
 ---
@@ -51,7 +51,7 @@ ht-degree: 2%
    * 采用SHA384摘要算法的ECDSA椭圆曲线P384
    * 采用SHA512摘要算法的ECDSA椭圆曲线P512
 * **与Windows 11无缝兼容，适用于Forms Designer**：AEM Forms Designer现在支持Windows 11，从而确保顺利安装和操作。 用户可以放心地升级到Windows 11，而不必重新安装Forms Designer或担心兼容性问题，从而确保工作流不会中断。
-* **AEM Forms Designer中的自定义“Caption”角色增强了辅助功能**：AEM Forms Designer现在包含一个名为“Caption”的自定义辅助功能角色，使用户能够使用个性化字幕元素创建XDP。 此功能通过允许用户将自定义字幕集成到其文档设计中来增强辅助功能，从而提高包容性和用户体验。
+* **AEM Forms Designer中的自定义“Caption”角色增强了辅助功能**：AEM Forms Designer现在包含一个名为“Caption”的自定义辅助功能角色，使用户能够使用个性化字幕元素创建XDP。 此功能通过允许用户将自定义字幕集成到其文档设计中来增强辅助功能，以便他们提高包容性和用户体验。
 
 <!-- ### [!DNL Forms]
 
@@ -152,32 +152,32 @@ ht-degree: 2%
 
 #### [!DNL Adaptive Forms]
 
-* 当用户尝试将AEM Forms与AEM发布的URL集成到邮件平台时，AEM表单在呈现页面时不会添加“method=post”，即使在URL的提交操作中设置了POST也是如此。 它会导致邮件平台不识别此表单。 (FORMS-12614)
+* 当用户尝试将AEM Forms集成到具有AEM已发布URL的邮件平台时，AEM Forms未添加 `method=post` 渲染页面时。 即使出现此问题 `POST` 在包含URL的提交操作中设置。 它会导致邮件平台不识别此表单。 (FORMS-12614)
 * 当用户在AEM Form Service Pack 6.5.18.0中选择具有显示模式的日期字段时，用户无法使用键盘选择当前日期。 (FORMS-12736)
 * 在AEM Forms Service Pack 6.5.17.0和Service Pack 6.5.18.0上，当用户在日历小组件中的月份之间切换时，日期选取器组件会显示一行。 (FORMS-11869)
 * 当用户在iOS设备上的附件组件中使用“拍摄照片”单击图像时，所有图像都会添加到该文件夹中的相同名称。 (FORMS-12224)
 * 当用户更新单选按钮组中的现有选项时，会发布不正确的翻译值。 (FORMS-12575)
-* 当用户向Android设备上的自适应表单添加字符时，允许用户在Android设备上将焦点置于文本字段中键入超过定义的最大字符数。 但是，当用户选择HTML5输入类型时，它仍然有效。 (FORMS-12748)
-* 由于标签Arial labelledby和Arial label匹配，屏幕阅读器无法区分这两者。 要解决此问题 — 对于表单字段，标签“aria-labelledby”会被替换为“aria-describedby”。 (FORMS-12436)
-* 当作者使用“自适应Forms — 嵌入(v2)”组件在其站点页面中嵌入自适应表单，并且嵌入的表单上包含CAPTCHA组件（CAPTCHA服务 — > reCAPTCHA，设置 — > reCAPTCHA-v2）时，当用户尝试在创作实例上使用“以发布的形式查看”查看“站点页面”时，站点页面不会呈现，并且错误显示为(FORMS-11859)：
+* 当用户向Android™设备上的自适应表单添加字符时，在Android™设备上，用户在focus out上的文本字段中键入的字符数可以超过定义的最大字符数。 但是，当用户选择HTML5输入类型时，它才起作用。 (FORMS-12748)
+* 由于标签匹配Arial® labelledby和Arial® label，屏幕阅读器无法区分这两者。 要解决此问题 — 对于表单字段，标签“aria-labelledby”会被替换为“aria-describedby”。 (FORMS-12436)
+* 当作者使用“自适应Forms — 嵌入(v2)”组件在其站点页面中嵌入自适应表单，并且嵌入的表单上包含CAPTCHA组件（CAPTCHA服务 — > reCAPTCHA，设置 — > reCAPTCHA-v2）时，当用户尝试在创作实例上使用“以发布的形式查看”查看站点页面时，站点页面不会呈现。 以下错误显示为(FORMS-11859)：
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 
 * 当用户尝试使用日期选取器组件选择日期时，值未更新并显示NULL。 (FORMS-12742和FORMS-12736)
 
-* 当用户升级到AEM Form Service Pack 6.5.19.0时，在将新语言更新到现有词典后，它不会与“guideContainer”行合并以向表单添加新区域设置。 (FORMS-12947)
+* 当用户升级到AEM Form Service Pack 6.5.19.0时，在将新语言更新到现有词典后，它不会与“guideContainer”行合并以向表单添加区域设置。 (FORMS-12947)
 
-* 在AEM Forms Service Pack 6.5.19.0上，在Java 11上调用Web服务操作失败，并出现错误(FORMS-12329)：
+* 在AEM Forms Service Pack 6.5.19.0上，在Java™ 11上调用的Web服务操作失败，并返回错误(FORMS-12329)：
   `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
 
-* 当用户在AEM Forms Service Pack 6.5.18.0上对“EmailService”调用“接收”操作时，引发异常(FORMS-12050)：
+* 当用户在AEM Forms Service Pack 6.5.18.0上调用“EmailService”的“接收”操作时，出现异常(FORMS-12050)：
   `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
 
-* 在AEM Forms Service Pack 6.5.18.0上启用FIPS模式后，在默认DOM下创建新用户失败，并出现以下错误(FORMS-11857)：
+* 在AEM Forms Service Pack 6.5.18.0上启用FIPS模式后，在默认DOM下创建用户失败，并出现错误(FORMS-11857)：
   `com.adobe.idp.cx.a: error seeding random number generator`
 
-* 当用户在ADMINUI中选择路径下的字体时 `Home>Services>PDF Generator>Adobe PDF Settings`，则不会选中它。 此外，在标准或个性化配置文件中，可用的字体列表框为空，因此无法将的子列表个性化 **始终嵌入** 或 **从不嵌入**，导致用户无法使用PDF Generator配置其PDF的字体。 日志不会显示任何相关的错误消息。 (FORMS-12095)
+* 当用户在ADMINUI中选择路径下的字体时 `Home>Services>PDF Generator>Adobe PDF Settings`，则不会选中它。 此外，在标准或个性化配置文件中，可用的字体列表框为空。 因此，无法个性化以下项的子列表： **始终嵌入** 或 **从不嵌入**. 用户无法使用PDF Generator配置其PDF的字体。 日志不会显示任何相关的错误消息。 (FORMS-12095)
 
-* 在AEM Forms Service Pack 6.5.18.0上，用户无法创建新安全设置，它不显示错误或服务器日志，但屏幕上会显示弹出错误消息。 (FORMS-12212)
+* 在AEM Forms Service Pack 6.5.18.0上，用户无法创建安全设置，它不显示错误或服务器日志，但屏幕上会显示弹出错误消息。 (FORMS-12212)
 
 * 当AEM Forms Service Pack 6.5.18.0上的用户在JEE工作流中提交自适应表单时，自适应表单中的附件未发送到JEE流程，从而导致应用程序失败。 (FORMS-12232和FORMS-12228)
 
@@ -198,14 +198,14 @@ ht-degree: 2%
 
 * 在AEM Forms 6.5.18.0上，发布自适应表单时，其所有依赖项（包括策略）都会重新发布，即使尚未对它们进行任何修改也是如此。 (FORMS-10454)
 
-* 当用户在通过JBoss Turnkey设置在Microsoft 6.5.19.1上运行配置管理器时选择“AEM Forms SharePoint”时，Livecycle Jboss EAR安装失败，并显示以下错误：(FORMS-12463)
+* 当用户在具有JBoss® Turnkey设置的AEM Forms 6.5.19.1上运行配置管理器时选择“Microsoft SharePoint”时，LiveCycleJBoss® EAR安装失败，并显示以下错误：(FORMS-12463)
 
   ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
 
 #### [!DNL Forms Designer] {#forms-designer-6520}
 
 
-* 当用户升级到AEM Forms Service Pack 6.5.18.0时，由于缺少异常处理，在启用标记PDF选项的情况下通过输出服务传递的XDP失败。 (LC-3921757)
+* 当用户升级到AEM Forms Service Pack 6.5.18.0时，由于缺少异常处理，通过启用了标记PDF选项的输出服务传递的XDP失败。 (LC-3921757)
 
 * 当用户使用AEM Forms Designer生成PDF时，标题级别与图形元素（例如，矩形框）一起在辅助功能树中进行标记。 (LC-3921687)
 
