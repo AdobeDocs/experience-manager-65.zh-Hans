@@ -11,16 +11,16 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9677c3f08c139518e38d576d6008343fcc07e810
 workflow-type: tm+mt
-source-wordcount: '2306'
+source-wordcount: '2302'
 ht-degree: 1%
 
 ---
 
 # 自定义Adobe Experience Manager CIF核心组件 {#customize-cif-components}
 
-此 [CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia) 是一个参考代码库，用于 [CIF核心组件](https://github.com/adobe/aem-core-cif-components). 在本教程中，您将进一步扩展 [产品Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 用于显示Adobe Commerce中的自定义属性的组件。 您还将了解有关Adobe Experience Manager (AEM)与Adobe Commerce之间的GraphQL集成以及CIF核心组件提供的扩展挂接的更多信息。
+此 [CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia) 是一个参考代码库，用于 [CIF核心组件](https://github.com/adobe/aem-core-cif-components). 在本教程中，您将进一步扩展 [产品Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser) 用于显示Adobe Commerce中的自定义属性的组件。 您还可以详细了解Adobe Experience Manager (AEM)与GraphQL之间的Adobe Commerce集成以及CIF核心组件提供的扩展挂接。
 
 >[!TIP]
 >
@@ -32,21 +32,21 @@ Venia品牌最近开始使用可持续材料生产一些产品，该公司希望
 
 ![环保徽章最终实施](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
-需要本地开发环境才能完成本教程。 这包括正在运行的AEM实例，该实例已配置并连接到Adobe Commerce实例。 查看的要求和步骤 [使用AEM设置本地开发](../develop.md). 要完全遵循本教程，您需要具有添加教程的权限。 [产品的属性](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) 在Adobe Commerce中。
+需要本地开发环境才能完成本教程。 这包括正在运行的AEM实例，该实例已配置并连接到Adobe Commerce实例。 查看的要求和步骤 [使用AEM设置本地开发](../develop.md). 要完全遵循本教程，您需要具有添加权限 [产品的属性](https://docs.magento.com/user-guide/catalog/product-attributes-add.html) 在Adobe Commerce中。
 
-您还需要GraphQL IDE，例如 [GraphiQL](https://github.com/graphql/graphiql) 或者使用浏览器扩展来运行代码示例和教程。 如果安装浏览器扩展，请确保它能够设置请求标头。 在Google Chrome上， [Altair GraphQL客户端](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja) 是一个可执行此任务的扩展。
+您还需要GraphQL IDE，例如 [GraphiQL](https://github.com/graphql/graphiql) 或者使用浏览器扩展来运行代码示例和教程。 如果安装浏览器扩展，请确保它能够设置请求标头。 在Google Chrome上， _Altair GraphQL客户端_ 是一个可执行此任务的扩展。
 
 ## 克隆Venia项目 {#clone-venia-project}
 
-您将克隆 [Venia项目](https://github.com/adobe/aem-cif-guides-venia) 然后覆盖默认样式。
+您克隆 [Venia项目](https://github.com/adobe/aem-cif-guides-venia) 然后覆盖默认样式。
 
 >[!NOTE]
 >
 >**您可以随意使用现有项目** (基于包含CIF的AEM项目原型)并跳过此部分。
 
-1. 运行以下git命令以克隆项目：
+1. 运行以下git命令，以便克隆项目：
 
    ```shell
    $ git clone git@github.com:adobe/aem-cif-guides-venia.git
@@ -59,7 +59,7 @@ Venia品牌最近开始使用可持续材料生产一些产品，该公司希望
    $ mvn clean install -PautoInstallSinglePackage,cloud
    ```
 
-1. 添加必要的OSGi配置以将您的AEM实例连接到Adobe Commerce实例，或将配置添加到新创建的项目。
+1. 添加必要的OSGi配置，以便将AEM实例连接到Adobe Commerce实例，或将配置添加到新创建的项目。
 
 1. 此时，您应该拥有连接到Adobe Commerce实例的工作中店面版本。 导航至 `US` > `Home` 页面位置： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html).
 
@@ -91,7 +91,7 @@ Venia品牌最近开始使用可持续材料生产一些产品，该公司希望
 
 ## 在Adobe Commerce中添加自定义属性 {#add-custom-attribute}
 
-AEM中显示的产品和产品数据存储在Adobe Commerce中。 接下来，为添加新属性 **环保** 作为使用Adobe Commerce UI设置的产品属性的一部分。
+AEM中显示的产品和产品数据存储在Adobe Commerce中。 接下来，为添加属性 **环保** 作为使用Adobe Commerce UI设置的产品属性的一部分。
 
 >[!TIP]
 >
@@ -99,7 +99,7 @@ AEM中显示的产品和产品数据存储在Adobe Commerce中。 接下来，�
 
 1. 登录到您的Adobe Commerce实例。
 1. 导航到 **目录** > **产品**.
-1. 更新搜索筛选器以查找 **可配置产品** 在上一个练习中添加到Teaser组件时使用。 在编辑模式下打开产品。
+1. 更新搜索过滤器，以便您能够找到 **可配置产品** 在上一个练习中添加到Teaser组件时使用。 在编辑模式下打开产品。
 
    ![搜索Valeria产品](../assets/customize-cif-components/search-valeria-product.png)
 
@@ -139,7 +139,7 @@ AEM中显示的产品和产品数据存储在Adobe Commerce中。 接下来，�
 
 在跳转到AEM代码之前，探索 [Adobe Commerce GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/) 使用GraphQL IDE。 Adobe Commerce与AEM的集成主要通过一系列GraphQL查询来完成。 了解和修改GraphQL查询是扩展CIF核心组件的关键方式之一。
 
-接下来，使用GraphQL IDE验证 `eco_friendly` 属性已添加到产品属性集。 本教程中的屏幕截图使用的是 [Altair GraphQL客户端](https://chrome.google.com/webstore/detail/altair-graphql-client/flnheeellpciglgpaodhkhmapeljopja).
+接下来，使用GraphQL IDE验证 `eco_friendly` 属性已添加到产品属性集。 本教程中的屏幕截图使用的是Google Chrome扩展 _Altair GraphQL客户端_.
 
 1. 打开GraphQL IDE并输入URL `http://<server>/graphql` 在IDE或扩展的URL栏中。
 2. 添加以下内容 [产品查询](https://devdocs.magento.com/guides/v2.4/graphql/queries/products.html) 位置 `YOUR_SKU` 是 **SKU** 上个练习中使用的产品的名称：
@@ -186,7 +186,7 @@ AEM中显示的产品和产品数据存储在Adobe Commerce中。 接下来，�
 
 ## 更新产品Teaser的Sling模型 {#updating-sling-model-product-teaser}
 
-接下来，您将通过实施Sling模型来扩展Product Teaser的业务逻辑。 [Sling模型](https://sling.apache.org/documentation/bundles/models.html)是注释驱动的“POJO”(纯旧Java™对象)，可实现组件所需的任何业务逻辑。 Sling模型与HTL脚本一起用作组件的一部分。 您将遵循 [Sling模型的委托模式](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 以便扩展现有Product Teaser模型的部件。
+接下来，通过实施Sling模型来扩展Product Teaser的业务逻辑。 [Sling模型](https://sling.apache.org/documentation/bundles/models.html) 是注释驱动的“POJO”(纯旧Java™对象)，可实现组件所需的任何业务逻辑。 Sling模型与HTL脚本一起用作组件的一部分。 请遵循 [Sling模型的委托模式](https://github.com/adobe/aem-core-wcm-components/wiki/Delegation-Pattern-for-Sling-Models) 以便扩展现有Product Teaser模型的部件。
 
 Sling模型是作为Java™实现的，并且可以在 **核心** 所生成项目的模块。
 
@@ -200,7 +200,7 @@ Sling模型是作为Java™实现的，并且可以在 **核心** 所生成项�
 
    已添加名为的新方法 `isShowBadge()` 在产品被视为“新”时显示徽章。
 
-1. 添加新方法， `isEcoFriendly()` 到界面：
+1. 添加方法 `isEcoFriendly()` 到界面：
 
    ```java
    @ProviderType
@@ -291,7 +291,7 @@ Sling模型是作为Java™实现的，并且可以在 **核心** 所生成项�
    >
    >此 `createdAt()` 方法已作为 [产品界面](https://github.com/adobe/commerce-cif-magento-graphql/blob/master/src/main/java/com/adobe/cq/commerce/magento/graphql/ProductInterface.java). 大多数常见的架构属性均已实施，因此仅使用 `addCustomSimpleField` 以获取真正的自定义属性。
 
-1. 添加记录器以帮助调试Java™代码：
+1. 添加记录器，以便能够帮助您调试Java™代码：
 
    ```java
    import org.slf4j.Logger;
@@ -326,13 +326,13 @@ Sling模型是作为Java™实现的，并且可以在 **核心** 所生成项�
 
    在上述方法中， `productRetriever` 用于获取产品和 `getAsInteger()` 方法用于获取 `eco_friendly` 属性。 根据您之前运行的GraphQL查询，您知道 `eco_friendly` 属性设置为&quot;**是**”实际上是整数 **1**.
 
-   现在，Sling模型已更新，需要更新组件标记以实际显示指标 **环保** 基于Sling模型。
+   现在Sling模型已更新，请更新组件标记以显示以下标识符 **环保** 基于Sling模型。
 
 ## 自定义产品Teaser的标记 {#customize-markup-product-teaser}
 
 AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖 [HTL脚本](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) 组件用于呈现其标记的内容。 HTML模板语言(HTL)是一种轻量级模板语言，AEM组件使用它根据创作的内容动态呈现标记，从而允许组件重用。 例如，产品Teaser可以重复使用以显示不同的产品。
 
-在本例中，您希望在Teaser顶部呈现横幅，以表明产品基于自定义属性是“环保的”。 的设计模式 [自定义标记](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 组件的AEM实际上对所有AEM组件都是标准的，而不仅仅是AEM CIF核心组件。
+在本例中，您希望在Teaser顶部呈现横幅，以表明产品基于自定义属性是“环保的”。 的设计模式 [自定义标记](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup) 组件是所有AEM组件的标准，而不仅仅是AEM CIF核心组件的标准。
 
 >[!NOTE]
 >
@@ -369,7 +369,7 @@ AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖 [HT
 
    请注意，的Sling模型 `MyProductTeaser` 已使用和分配给 `product` 变量。
 
-1. 修改 `productteaser.html` 以呼叫 `isEcoFriendly` 在上一个练习中实现的方法：
+1. 编辑 `productteaser.html` 这样它就调用了 `isEcoFriendly` 在上一个练习中实现的方法：
 
    ```html
    ...

@@ -1,19 +1,19 @@
 ---
-title: 排查查询速度较慢的问题
+title: 排除查询速度较慢的问题
 description: 了解如何对Adobe Experience Manager中的缓慢查询进行故障排除。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2236'
 ht-degree: 0%
 
 ---
 
-# 排查查询速度较慢的问题{#troubleshooting-slow-queries}
+# 排除查询速度较慢的问题{#troubleshooting-slow-queries}
 
 ## 查询分类速度慢 {#slow-query-classifications}
 
@@ -35,7 +35,7 @@ AEM中有三种主要的慢查询分类，按严重性列出：
 
 检查每个潜在结果的行为称为遍历。
 
-由于必须检验每个潜在结果，所以确定实际结果集的成本与潜在结果的数目成线性增长。
+由于必须检查每个潜在结果，因此确定实际结果集的成本与潜在结果的数量成线性增长。
 
 添加查询限制和调整索引允许以优化的格式存储索引数据，以便快速检索结果，并且减少或消除了对潜在结果集的线性检查的需要。
 
@@ -119,7 +119,7 @@ AEM中有三种主要的慢查询分类，按严重性列出：
 
 同样，无需为添加额外的索引规则 `cq:tags` 属性，甚至是对具有限制的全文查询 `cq:tags` 将性能不佳，因为索引中的结果将返回所有全文匹配。 对cq：tags的限制将过滤掉。
 
-索引后过滤的另一个原因是访问控制列表，在开发过程中经常会错过。 请尝试确保查询未返回用户可能无法访问的路径。 可以通过更好的内容结构以及对查询提供相关的路径限制来实现这一点。
+索引后过滤的另一个原因是访问控制列表，在开发过程中经常会错过。 请尝试确保查询未返回用户可能无法访问的路径。 可以通过改进内容结构以及对查询提供相关路径限制来实现这一点。
 
 要识别Lucene索引是否返回了大量结果以返回一个小子集作为查询结果，一种有效的方法是启用调试日志 `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. 这样，您就可以查看从索引加载了多少文档。 最终结果数量与加载的文档数量不应不成比例。 有关更多信息，请参阅 [记录](/help/sites-deploying/configure-logging.md).
 
@@ -176,7 +176,7 @@ AEM支持以下查询语言：
 * JCR-SQL2
 * XPath
 
-以下示例使用Query Builder作为AEM开发人员最常用的查询语言，但相同的原则适用于JCR-SQL2和XPath。
+以下示例使用查询生成器，因为它是由AEM开发人员使用的最常见查询语言，但是，相同的原则适用于JCR-SQL2和XPath。
 
 1. 添加节点类型限制，以便查询解析为现有的Lucene属性索引。
 
@@ -466,7 +466,7 @@ AEM支持以下查询语言：
 
    * 从XPath或JCR-SQL2查询语句生成最佳Lucence属性索引。
 
-* **[AEM Chrome插件](https://chrome.google.com/webstore/detail/aem-chrome-plug-in/ejdcnikffjleeffpigekhccpepplaode?hl=en-US)**
+* **_AEM Chrome插件_** <!-- For whatever reason, the URL to this extension was causing too many redirects when doing the request so it was removed entirely to get rid of the error; users can easily look up the extension in Google instead. DO NOT ADD THE URL AGAIN!-->
 
-   * Google Chrome Web浏览器扩展可以在浏览器的开发工具控制台中公开每个请求的日志数据，包括已执行的查询及其查询计划。
-   * 需要 [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) 在AEM上安装和启用。
+   * 此 _AEM Chrome插件_ 是一个Google Chrome Web浏览器扩展，它可以在浏览器的开发工具控制台中公开每个请求的日志数据，包括运行查询及其查询计划。
+   * 需要您安装和启用 [Sling Log Tracer 1.0.2+](https://sling.apache.org/downloads.cgi) 在AEM上。

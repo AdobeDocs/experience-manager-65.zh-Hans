@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 4289c68feb51842b5649f7cff73c5c4bc38add6c
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 安全断言标记语言(SAML)是在配置企业域或混合域的授权时可以选择的一个选项。 SAML主要用于支持跨多个域的SSO。 将SAML配置为身份验证提供程序时，用户通过指定的第三方身份提供程序(IDP)登录并验证AEM Forms。
 
-有关SAML的说明，请参阅 [安全声明标记语言(SAML) V2.0技术概述](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
+有关SAML的说明，请参阅 [安全声明标记语言(SAML) V2.0技术概述](http://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
 
 1. 在管理控制台中，单击设置>用户管理>配置> SAML服务提供程序设置。
 1. 在“服务提供者实体ID”框中，键入要用作AEM Forms服务提供者实现的标识符的唯一ID。 您还可以在配置IDP时指定此唯一ID(例如， `um.lc.com`.) 您还可以使用用于访问AEM表单的URL(例如， `https://AEMformsserver`)。
@@ -26,7 +26,7 @@ ht-degree: 0%
 
    * 使用信任管理器导入PKCS #12格式的凭据，并选择文档签名凭据作为信任存储类型。 (请参阅 [管理本地凭据](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
    * 在“服务提供者凭据密钥别名”列表中，选择在信任存储区中为凭据分配的别名。
-   * 单击“导出”将URL内容保存到文件中，然后将该文件导入IDP。
+   * 单击“导出”，以便将URL内容保存到文件中，然后将该文件导入IDP。
 
 1. （可选）在服务提供者名称ID策略列表中，选择IDP在SAML断言中用于标识用户的名称格式。 选项包括“未指定”、“电子邮件”和“Windows域限定名”。
 
@@ -34,12 +34,12 @@ ht-degree: 0%
    >
    >名称格式不区分大小写。
 
-1. （可选）选择“为本地用户启用身份验证提示”。 选中此选项后，用户将看到两个链接：
+1. （可选）选择“为本地用户启用身份验证提示”。 选中此选项后，用户会看到两个链接：
 
    * 指向第三方SAML身份提供程序的登录页的链接，在该链接中，属于企业域的用户可以进行身份验证。
    * AEM forms登录页面的链接，本地域用户可以在其中进行身份验证。
 
-   如果未选择此选项，则用户将直接转到第三方SAML身份提供程序的登录页面，在该页面中，属于企业域的用户可以进行身份验证。
+   如果未选择此选项，则用户将直接转到第三方SAML身份提供程序的登录页，在该页中，属于企业域的用户可以进行身份验证。
 
 1. （可选）选择启用工件绑定以启用工件绑定支持。 默认情况下，POST绑定会与SAML一起使用。 但是，如果已配置工件绑定，请选择此选项。 如果选择该选项，则不会通过浏览器请求传递实际用户断言。 而是传递指向断言的指针，并使用后端Web服务调用检索断言。
 1. （可选）选择启用重定向绑定以支持使用重定向的SAML绑定。
@@ -53,7 +53,7 @@ ht-degree: 0%
 
      `saml.sp.use.relaystate=true`
 
-   * 添加以下自定义属性以配置自定义Java Server Pages (JSP)的URL，该URL用于呈现已注册的身份提供程序列表。 如果您尚未部署自定义Web应用程序，它将使用默认的“用户管理”页面来呈现列表。
+   * 添加以下自定义属性，以便您可以配置用于呈现已注册身份提供程序列表的自定义Java™服务器页面(JSP)的URL。 如果您尚未部署自定义Web应用程序，则它会使用默认的“用户管理”页面来呈现列表。
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 
