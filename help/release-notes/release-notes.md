@@ -2,7 +2,7 @@
 title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: fbdeaeca3fa05181682f94e8f71bd9bb6605762a
+source-git-commit: c36ef1c1bd261864930039c4d60a930ead12482e
 workflow-type: tm+mt
 source-wordcount: '3390'
 ht-degree: 2%
@@ -216,17 +216,6 @@ ht-degree: 2%
 * 当用户在AEM Forms Designer上创建XDP时，在PDF输出上，按钮表单标记未嵌套在父段落标记(p-tag)中。 (LC-3921719)
 
 * 当用户在AEM Forms Designer上创建XDP时，当用户浏览表单标签时，在PDF输出上，后台对象也被标记。 (LC-3921687)
-
-<!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
-* **Document Services**
-  * text
-* **Adaptive Forms** 
-  * text
-* **Accessibility**
-  * text
-* **Interactive Communications**
-  * text -->
-<!--### Commerce{#commerce-6520} * text -->
 
 ### Foundation {#foundation-6520}
 
