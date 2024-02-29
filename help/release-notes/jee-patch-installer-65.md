@@ -3,7 +3,9 @@ title: AEM Forms JEE修补程序安装程序
 description: 了解如何使用AEM Forms JEE修补程序安装程序来修复AEM 6.5 Forms组件中的问题。
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+hide: true
+hidefromtoc: true
+source-git-commit: 947f45e043c2ce1b683212f70157d1e9a08e1941
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 17%

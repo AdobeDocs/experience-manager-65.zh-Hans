@@ -2,9 +2,9 @@
 title: 适用于AEM Forms的AEM Forms修补程序安装说明
 description: 适用于OSGi和JEE环境的AEM Forms Service Pack安装说明
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: 181d5ffcefcf55aa75cfaf29c42dbd8d8d665398
 workflow-type: tm+mt
-source-wordcount: '1748'
+source-wordcount: '1752'
 ht-degree: 6%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 6%
 
 | 产品 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 版本 | 6.5.19.0 (OSGi)、6.5.19.1 (JEE) |
+| 版本 | 6.5.20.0 |
 | 类型 | Service Pack版本 |
-| 日期 | 2023 年 12 月 08 日 |
+| 日期 | 2024 年 2 月 29 日 |
 | 下载 URL | [最新AEM Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -49,7 +49,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 ## 在JEE环境的AEM表单上下载并安装Service Pack {#download-and-install-for-jee-service-pack}
 
-![JEE安装](/help/forms/using/assets/jeeinstallation.png)
+<!--
+![JEE Installation](/help/forms/using/assets/jeeinstallation.png) -->
 
 +++1. 备份现有环境
 
@@ -71,7 +72,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++ 3.安装Microsoft Visual C++可再发行软件包
++++3. 安装Microsoft Visual C++可再发行软件包
 
 * 下载并安装 [适用于Visual Studio 2015、2017、2019和2022的64位版Microsoft Visual C++可再发行软件包](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) 在安装了AEM 6.5 Forms的计算机上。
 
@@ -81,7 +82,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++3. 在JEE Service Pack上安装AEM Forms：
++++4. 在JEE Service Pack上安装AEM Forms：
 
 1. 停止应用程序服务器。
 1. 提取 **AEM Forms on JEE Service Pack安装程序存档** 到您的硬盘：
@@ -108,7 +109,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
    * 取消选择 **启动Configuration Manager** 选项，然后再单击 **[!UICONTROL 完成]**. 运行 **配置管理器** 通过使用 **ConfigurationManager.bat** 文件位置 `[aem-forms root]\configurationManager\bin`.
 
-   * 或者取消选择 **启动Configuration Manager** 选项，然后再单击 **[!UICONTROL 完成]**. 运行之前 **配置管理器** 使用 **Configurationmanager.exe** 或 **ConfigurationManager_IPv6.exe**，导航到 *`<AEMForms_Install_Dir>\configurationManager\bin`* 目录并替换 **配置管理器.lax** 和 **ConfigurationManager_IPV6.lax** 使用最新的 [配置管理器.lax](/help/assets/ConfigurationManager.lax) 和 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 文件。
+   * 或者取消选择 **启动Configuration Manager** 选项，然后再单击 **[!UICONTROL 完成]**. 运行之前 **配置管理器** 使用 **Configurationmanager.exe** 或 **ConfigurationManager_IPv6.exe**，导航到 *`<AEMForms_Install_Dir>\configurationManager\bin`* 目录并替换 **配置管理器.lax** 和 **ConfigurationManager_IPV6.lax** 使用最新的 [配置管理器.lax](/help/assets/ConfigurationManager.lax) 和 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 文件、搜索和替换 **axis-1.4.1.1.jar** 替换为 **axis-1.4.1.2.jar** 在这两个文件中。
 
      >[!NOTE]
      >
@@ -133,7 +134,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++4. 安装servlet片段(AEM Service Pack 6.5.14.0或更低版本)
++++5. 安装servlet片段(AEM Service Pack 6.5.14.0或更低版本)
 
 >[!NOTE]
 >
@@ -145,17 +146,17 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 1. 如果您尚未下载片段，请从下载 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
 
-1. 启动应用程序服务器，等待日志稳定并检查捆绑包状态。
+2. 启动应用程序服务器，等待日志稳定并检查捆绑包状态。
 
-1. 打开Web控制台包。 默认URL为 `http://[Server]:[Port]/system/console/bundles`.
+3. 打开Web控制台包。 默认URL为 `http://[Server]:[Port]/system/console/bundles`.
 
-1. 单击安装/更新。 选择下载的片段， `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. 单击 **安装** 或 **更新**. 等待应用程序服务器稳定
+4. 单击安装/更新。 选择下载的片段， `org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar`. 单击 **安装** 或 **更新**. 等待应用程序服务器稳定
 
-1. 停止应用程序服务器。
+5. 停止应用程序服务器。
 
 +++
 
-+++5. 安装AEM Service Pack
++++6. 安装AEM Service Pack
 
 1. 如果实例处于更新模式（从早期版本更新实例时），请在安装之前重新启动该实例。 如果实例的当前正常运行时间较长，则Adobe建议重新启动。
 1. 安装之前，请拍摄快照或进行全新备份 [!DNL Experience Manager] 实例。
@@ -186,7 +187,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++6. 安装AEM Experience Manager Forms附加组件包
++++7. 安装AEM Experience Manager Forms附加组件包
 
 1. 确保您已安装 [!DNL Experience Manager] service pack。
 1. 下载适用于您的操作系统的 [AEM Forms 发行版](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)中列出的相应 Forms 附加组件包。
@@ -197,8 +198,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 ## 在OSGi环境上的AEM表单上下载并安装Service Pack {#download-and-install-for-osgi-service-pack}
 
-![OSGi安装步骤](/help/forms/using/assets/osgiinstallation.png)
 
+<!-- ![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
+-->
 
 +++1. 备份现有环境
 

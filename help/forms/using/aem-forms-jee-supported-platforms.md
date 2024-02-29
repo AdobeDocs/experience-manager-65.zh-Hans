@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 6c17822e5d5fcd6af63bc695a057c1eeff50f03a
+source-git-commit: 8ffe992e4b243d2a3548d214e8ac44fb5df6483c
 workflow-type: tm+mt
-source-wordcount: '4023'
+source-wordcount: '4052'
 ht-degree: 0%
 
 ---
@@ -361,6 +361,7 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
 1. JEE上的AEM Forms不支持JBoss®基于角色的访问控制(RBAC)。
 1. JEE上的AEM Forms仅支持OracleJava™ SE 11 （64位） SDK (适用于应用程序服务器JBoss® EAP 7.4)。
 1. WebLogic服务器不支持高于1.8.0_281的JDK版本。 (FORMS-8498)
+1. JDK 11.0.20不支持在JEE安装程序上安装AEM Forms。 在JEE安装程序上安装AEM Forms仅支持JDK 11.0.19或更早版本。
 
 <!-- 
 1. [!DNL Microsoft&reg; Windows Server 2019] does not support [!DNL MySQL 5.7] and [!DNL JBoss&reg; EAP 7.1], [!DNL Microsoft&reg; Windows Server 2019] does not support turnkey installations for [!DNL Experience Manager Forms Service Pack 6.5.10.0 and later]. (CQDOC-18312) 

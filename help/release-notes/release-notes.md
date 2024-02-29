@@ -2,9 +2,9 @@
 title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 210299acf9f853a19bd513c84c1678e44ba81729
+source-git-commit: 60c9a1d9fb03975b70ed1d7d1d65b0bd4017c794
 workflow-type: tm+mt
-source-wordcount: '2456'
+source-wordcount: '3390'
 ht-degree: 2%
 
 ---
@@ -42,6 +42,16 @@ ht-degree: 2%
 * Dynamic Media现在支持Apple iOS/iPadOS的无损HEIC图像格式。 请参阅 [格式](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt.html?lang=en) 在Dynamic Media图像服务和渲染API中。
 
 * 多站点管理器(MSM)现在支持体验片段结构（包括文件夹和子文件夹），以便有效地将体验片段批量转出到活动副本。
+
+### [!DNL Forms]
+
+* **JEE上的AEM Forms中的Transaction Reporting**：在JEE上为AEM Forms引入了事务报表功能，以便全面记录文档事务，如转化、演绎版和提交。 此增强功能可提高效率并有助于更好地保存记录。 默认情况下，该功能处于禁用状态。 您可以从管理员UI中启用它。
+* **通过ECDSA支持增强的安全性**：AEM Forms现在跨JEE和OSGi栈栈提供对椭圆曲线数字签名算法(ECDSA)的强大支持。 用户现在可以对PDF文档进行签名、认证和验证，而安全性更高。 支持的EC曲线算法包括：
+   * 采用SHA256摘要算法的ECDSA椭圆曲线P256
+   * 采用SHA384摘要算法的ECDSA椭圆曲线P384
+   * 采用SHA512摘要算法的ECDSA椭圆曲线P512
+* **与Windows 11无缝兼容，适用于Forms Designer**：AEM Forms Designer现在支持Windows 11，从而确保顺利安装和操作。 用户可以放心地升级到Windows 11，而不必重新安装Forms Designer或担心兼容性问题，从而确保工作流不会中断。
+* **AEM Forms Designer中的自定义“Caption”角色增强了辅助功能**：AEM Forms Designer现在包含一个名为“Caption”的自定义辅助功能角色，使用户能够使用个性化字幕元素创建XDP。 此功能通过允许用户将自定义字幕集成到其文档设计中来增强辅助功能，从而提高包容性和用户体验。
 
 <!-- ### [!DNL Forms]
 
@@ -138,10 +148,77 @@ ht-degree: 2%
 
 ### [!DNL Forms]{#forms-6520}
 
-中的修复 [!DNL Experience Manager] Forms在计划的一周后通过单独的附加组件包提供 [!DNL Experience Manager] Service Pack发行日期。 在本例中，AEM 6.5.20.0 Forms附加组件包版本计划于2024年2月29日星期四发布。 发布后，此部分中添加了Forms修复和增强功能的列表。
+<!--Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of Forms fixes and enhancements is added to this section post the release.-->
+
+#### [!DNL Adaptive Forms]
+
+* 当用户尝试将AEM Forms与AEM发布的URL集成到邮件平台时，AEM表单在呈现页面时不会添加“method=post”，即使在URL的提交操作中设置了POST也是如此。 它会导致邮件平台不识别此表单。 (FORMS-12614)
+* 当用户在AEM Form Service Pack 6.5.18.0中选择具有显示模式的日期字段时，用户无法使用键盘选择当前日期。 (FORMS-12736)
+* 在AEM Forms Service Pack 6.5.17.0和Service Pack 6.5.18.0上，当用户在日历小组件中的月份之间切换时，日期选取器组件会显示一行。 (FORMS-11869)
+* 当用户在iOS设备上的附件组件中使用“拍摄照片”单击图像时，所有图像都会添加到该文件夹中的相同名称。 (FORMS-12224)
+* 当用户更新单选按钮组中的现有选项时，会发布不正确的翻译值。 (FORMS-12575)
+* 当用户向Android设备上的自适应表单添加字符时，允许用户在Android设备上将焦点置于文本字段中键入超过定义的最大字符数。 但是，当用户选择HTML5输入类型时，它仍然有效。 (FORMS-12748)
+* 由于标签Arial labelledby和Arial label匹配，屏幕阅读器无法区分这两者。 要解决此问题 — 对于表单字段，标签“aria-labelledby”会被替换为“aria-describedby”。 (FORMS-12436)
+* 当作者使用“自适应Forms — 嵌入(v2)”组件在其站点页面中嵌入自适应表单，并且嵌入的表单上包含CAPTCHA组件（CAPTCHA服务 — > reCAPTCHA，设置 — > reCAPTCHA-v2）时，当用户尝试在创作实例上使用“以发布的形式查看”查看“站点页面”时，站点页面不会呈现，并且错误显示为(FORMS-11859)：
+  `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
+
+* 当用户尝试使用日期选取器组件选择日期时，值未更新并显示NULL。 (FORMS-12742和FORMS-12736)
+
+* 当用户升级到AEM Form Service Pack 6.5.19.0时，在将新语言更新到现有词典后，它不会与“guideContainer”行合并以向表单添加新区域设置。 (FORMS-12947)
+
+* 在AEM Forms Service Pack 6.5.19.0上，在Java 11上调用Web服务操作失败，并出现错误(FORMS-12329)：
+  `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
+
+* 当用户在AEM Forms Service Pack 6.5.18.0上对“EmailService”调用“接收”操作时，引发异常(FORMS-12050)：
+  `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
+
+* 在AEM Forms Service Pack 6.5.18.0上启用FIPS模式后，在默认DOM下创建新用户失败，并出现以下错误(FORMS-11857)：
+  `com.adobe.idp.cx.a: error seeding random number generator`
+
+* 当用户在ADMINUI中选择路径下的字体时 `Home>Services>PDF Generator>Adobe PDF Settings`，则不会选中它。 此外，在标准或个性化配置文件中，可用的字体列表框为空，因此无法将的子列表个性化 **始终嵌入** 或 **从不嵌入**，导致用户无法使用PDF Generator配置其PDF的字体。 日志不会显示任何相关的错误消息。 (FORMS-12095)
+
+* 在AEM Forms Service Pack 6.5.18.0上，用户无法创建新安全设置，它不显示错误或服务器日志，但屏幕上会显示弹出错误消息。 (FORMS-12212)
+
+* 当AEM Forms Service Pack 6.5.18.0上的用户在JEE工作流中提交自适应表单时，自适应表单中的附件未发送到JEE流程，从而导致应用程序失败。 (FORMS-12232和FORMS-12228)
+
+* 当用户将PDF转换为PDF/A-2b或PDF/A-3B时，转换失败，错误显示为：(FORMS-12790)
+
+  ```
+  OCCD contains Order key that does not reference all layers.
+  -> Optional content configuration dictionary has no Name entry.
+  -> Font not embedded (and text rendering mode not 3).
+  obj(65, 0)
+  Page: 1
+  -> Font not embedded (and text rendering mode not 3).
+  obj(67, 0)
+  Page: 1
+  -> PDF/A entry missing. 
+  -> PDF/A entry missing.
+  ```
+
+* 在AEM Forms 6.5.18.0上，发布自适应表单时，其所有依赖项（包括策略）都会重新发布，即使尚未对它们进行任何修改也是如此。 (FORMS-10454)
+
+* 当用户在通过JBoss Turnkey设置在Microsoft 6.5.19.1上运行配置管理器时选择“AEM Forms SharePoint”时，Livecycle Jboss EAR安装失败，并显示以下错误：(FORMS-12463)
+
+  ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
+
+#### [!DNL Forms Designer] {#forms-designer-6520}
+
+
+* 当用户升级到AEM Forms Service Pack 6.5.18.0时，由于缺少异常处理，在启用标记PDF选项的情况下通过输出服务传递的XDP失败。 (LC-3921757)
+
+* 当用户使用AEM Forms Designer生成PDF时，标题级别与图形元素（例如，矩形框）一起在辅助功能树中进行标记。 (LC-3921687)
+
+* 在通过Workbench安装的AEM Forms Designer上，版本信息未明确显示在 `Control Panel/Programs/Programs and Features`. (LC-3921976)
+
+<!--* When a user creates an XDP on AEM Forms Designer, the user is not able to add the custom Caption Tag. (LC-3921246)-->
+
+* 当用户在AEM Forms Designer上创建XDP时，在PDF输出上，按钮表单标记未嵌套在父段落标记(p-tag)中。 (LC-3921719)
+
+* 当用户在AEM Forms Designer上创建XDP时，当用户浏览表单标签时，在PDF输出上，后台对象也被标记。 (LC-3921687)
+
 
 <!-- #### [!DNL Adaptive Forms] -->
-
 <!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
   * text
@@ -151,10 +228,9 @@ ht-degree: 2%
   * text
 * **Interactive Communications**
   * text -->
+<!--### Commerce{#commerce-6520} * text -->
 
-<!--### Commerce{#commerce-6520}
 
-* text -->
 
 ### Foundation {#foundation-6520}
 
@@ -285,17 +361,18 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
 要在Maven项目中使用UberJar，请参阅 [如何使用UberJar](/help/sites-developing/ht-projects-maven.md) 并在项目POM中包含以下依赖项： <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 ```shell
-<dependency>
-     <groupId>com.adobe.aem</groupId>
-     <artifactId>uber-jar</artifactId>
-     <version>6.5.20</version>
-     <scope>provided</scope>
-</dependency>
+  <dependency>
+  <groupId>com.adobe.aem</groupId>
+  <artifactId>uber-jar</artifactId>
+  <version>6.5.20</version>
+  <scope>provided</scope>          
+  </dependency>
 ```
 
 >[!NOTE]
 >
 >UberJar和其他相关工件可在Maven中央存储库而不是Adobe公共Maven存储库(`repo.adobe.com`)。 主UberJar文件将重命名为 `uber-jar-<version>.jar`. 所以，没有 `classifier`，替换为 `apis` 作为值，用于 `dependency` 标记之前。
+
 
 ## 已弃用和已删除的功能{#removed-deprecated-features}
 
@@ -397,45 +474,17 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
 
 * 从AEM 6.5.15开始，Rhino JavaScript引擎由 ```org.apache.servicemix.bundles.rhino``` 捆绑有新的提升行为。 使用严格模式(```use strict;```)必须正确声明其变量，否则它们不会运行，而是会引发运行时错误。
 
-### AEM Forms的已知问题
 
-中的已知问题 [!DNL Experience Manager] Forms在计划的一周后通过单独的附加组件包提供 [!DNL Experience Manager] Service Pack发行日期。 在本例中，AEM 6.5.20.0 Forms附加组件包版本计划于2024年2月29日星期四发布。 在发布此版本后，此部分中添加了表单的已知问题列表。
+### AEM Forms的已知问题 {#known-issues-aem-forms-6520}
+
+* 预填充服务失败，交互式通信中出现空指针异常。 (CQDOC-21355)
+
+<!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
 
 <!--
-
-#### Supported platforms 
-
-* JDK 11.0.20 is not supported to install AEM Forms on JEE Installer. Only JDK 11.0.19 or earlier versions are supported to install AEM Forms on JEE Installer. (FORMS-10659)
-
-#### Installation 
-
-* On JBoss&reg; 7.1.4 platform, when user installs Experience Manager 6.5.16.0 or later service pack, `adobe-livecycle-jboss.ear` deployment fails. (CQ-4351522, CQDOC-20159)
-
-<!-- 
-* After upgrading to AEM Forms 6.5.18.0 JBoss&reg; Turnkey full installer environment on Windows Server 2022, when compiling Output client application code using Java&trade; 11, the following compilation error may occur:
-  
-  ```
-  error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
-  Illegal character in path at index 70: file:/[AEM_Forms_Installation_dir]/sdk/client-libs/common/${clover.jar.name} 1 error
-  
-  ```
-  
-  To resolve the issue, perform the following steps:
-    1. Navigate to `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` and unzip `adobe-output-client.jar` to extract the `Manifest.mf` file.
-    1. Update the `Manifest.mf` file by removing the entry `${clover.jar.name}` from the class-path attribute. 
-
-        >[!NOTE]
-        >
-        > You can also use an in-place editing tool, for example, 7-zip, to update the `Manifest.mf` file.  
-
-    1. Save the updated the `Manifest.mf` in the `adobe-output-client.jar` archive. 
-    1. Save the modified `adobe-output-client.jar` file and rerun the setup. (CQDOC-20878) 
-
-* After installing AEM Service Pack 6.5.20.0 full installer, the EAR deployment fails on JEE using JBoss&reg; Turnkey. UPDATE FOR EACH NEW RELEASE To resolve the issue, locate the AEM_Forms_Installation_dir\jboss\bin\standalone.bat file and update `Adobe_Adobe_JAVA_HOME` to `Adobe_JAVA_HOME` for all occurrences before running the configuration manager. (CQDOC-20803).
-
 #### Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
 
-* If you are upgrading to AEM Service Pack 6.5.15.0 or higher, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment. Do this install *before* you proceed with the installation of Service Pack 6.5.15.0 or higher.
+* If you are upgrading to AEM Service Pack 6.5.15.0 or higher, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment *before* you proceed with the installation of Service Pack 6.5.15.0 or higher.
 * It is mandatory that you install the servlet fragment for all application servers except those running on JBoss&reg; EAP 7.4.0.
 
 **To install the servlet fragment:**
@@ -451,23 +500,7 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
 1. Wait for the application server to stabilize.
 1. Stop the application server.
 
-#### Adaptive Forms
-
-* When an Adaptive Form is published, all its dependencies, including policies, get republished, even if no modifications have been made to them. (FORMS-10454)
-* When a user selects to configure a field for the first time in an adaptive form, the option to save a configuration does not display in Properties Browser. Selecting to configure some other field of the Adaptive Form in the same editor resolves the issue. 
-* When users perform the submit action, the submission fails with an error: 
-`javax.servlet.ServletException: java.lang.NoSuchMethodError`
-To resolve the issue, [recompile the Sling scripts such as JSP, Java&trade;, and Sightly](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html#resolution). (FORMS-8542)
-* After installing AEM Service Pack 6.5.14.0 and onwards, users are unable to select a font from the JEE Admin UI for PDF documents when navigating to `Home` > `Services` > `PDF Generator` > `Adobe PDF Settings`, as the font list appears empty. (FORMS-12095)
- When a form is signed using the OOTB Scribble Signature component, it appears in the image dialogue but does not preview and appears blank when you click on it. (FORMS-12073). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md) 
-* On AEM Forms on JEE, the HTML5 Forms that use the context path, fail to render. (FORMS-12485, FORMS-12691). A hotfix is available for this issue. To download and install the hotfix, see [Adobe Experience Manager Forms Hotfixes](/help/release-notes/aem-forms-hotfix.md).
-* Adaptive Forms let you use custom functions with ECMAScript version 5 or earlier. When a custom function uses ECMAScript version 6 or later, like 'let', 'const', or arrow functions, the rule editor might not open properly.
-
-#### AEM Forms on JEE 
-
-* Critical security vulnerabilities have been reported for Struts 2 RCE, a popular and open-source web application framework for developing Java&trade; EE web applications. Adobe has released [AEM 6.5 Service Pack 19.1 (6.5.19.1)](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md) to address the vulnerability in AEM Forms on JEE. 
-
-The font enumeration fails due to the missing Ps2Pdf service file.-->
+-->
 
 ## 包含的OSGi包和内容包{#osgi-bundles-and-content-packages-included}
 

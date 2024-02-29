@@ -1,15 +1,15 @@
 ---
-title: 为Microsoft&reg； Office 365邮件服务器协议配置基于OAuth2的身份验证
-description: 为Microsoft&reg； Office 365邮件服务器协议配置基于OAuth2的身份验证
+title: 为Microsoft® (Forms JEE OAuth)配置基于OAuth2的身份验证；Office 365邮件服务器协议
+description: 为Microsoft® (Forms JEE OAuth)配置基于OAuth2的身份验证；Office 365邮件服务器协议
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 020b92463371294706e9873e0d8962583d19ac52
+source-git-commit: 2a67e7e54a72c31a4a0ab0a186be20a914222fa7
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '986'
 ht-degree: 5%
 
 ---
 
-# 与Microsoft® Office 365邮件服务器协议集成 {#oauth2-support-for-the-microsoft-mail-server-protocols}
+# 将AEM Forms与Microsoft® Office 365邮件服务器协议集成 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 为了让组织遵守安全电子邮件要求，AEM Forms提供了OAuth 2.0支持与Microsoft® Office 365邮件服务器协议集成。 您可以使用Azure Active Directory (Azure AD) OAuth 2.0身份验证服务连接各种协议（如IMAP、POP或SMTP），并访问Office 365用户的电子邮件数据。 以下是配置Microsoft® Office 365邮件服务器协议以通过OAuth 2.0服务进行身份验证的分步说明：
 
@@ -27,7 +27,7 @@ ht-degree: 5%
    >
    > * 对象 **任何组织目录（任何Azure AD目录 — 多租户）中的帐户** ，Adobe建议您使用工作帐户，而不是个人电子邮件帐户。
    > * **仅限个人Microsoft®帐户** 应用程序不受支持。
-   * Adobe建议您使用 **多租户和个人Microsoft®帐户** 应用程序。
+   > * Adobe建议您使用 **多租户和个人Microsoft®帐户** 应用程序。
 
 1. 接下来，转至&#x200B;**证书和密码**，单击&#x200B;**新建客户端密码**，然后执行屏幕上显示的步骤来创建密码。请务必记下此secret值供以后使用。
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   必须选择 **访问令牌** 和 **ID令牌** 复选框。
+   > 必须选择 **访问令牌** 和 **ID令牌** 复选框。
 
 1. 单击 **概述** 并将值复制到 **应用程序（客户端）ID**， **目录（租户）ID**、和 **客户端密码** 供以后使用。
 
@@ -72,7 +72,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   如果存在单个租户应用程序，请替换 `common` 与您的 `[tenantid]` 在以下URL中生成授权码： `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
+   > 如果存在单个租户应用程序，请替换 `common` 与您的 `[tenantid]` 在以下URL中生成授权码： `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
 1. 键入上述URL后，您将被重定向到登录屏幕：
    ![登录屏幕](/help/forms/using/assets/azure_loginscreen.png)
@@ -97,8 +97,8 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   在单个租户应用程序中，要生成刷新令牌，请使用以下cURL命令并替换 `common` 使用 `[tenantid]` 范围：
-   `curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
+   > 在单个租户应用程序中，要生成刷新令牌，请使用以下cURL命令并替换 `common` 使用 `[tenantid]` 范围：
+   >`curl -H "ContentType application/x-www-form-urlencoded" -d "client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]" -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. 记下刷新令牌。
 
@@ -110,7 +110,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   要启用oAuth 2.0身份验证服务，必须选择 **SMTP服务器是否需要身份验证（SMTP身份验证）** 复选框。
+   > 要启用oAuth 2.0身份验证服务，必须选择 **SMTP服务器是否需要身份验证（SMTP身份验证）** 复选框。
 
 1. 设置 **oAuth 2.0身份验证设置** 作为 `True`.
 1. 复制以下项目的值： **客户端ID** 和 **客户端密码** 从Azure门户。
@@ -123,8 +123,8 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   * 传输安全协议具有以下有效值：“blank”、“SSL”或“TLS”。 设置值 **SMTP传输安全性** 和 **接收传输安全** 到 **TLS** 用于启用oAuth身份验证服务。
-   * **POP3协议** 在使用电子邮件端点时，不支持OAuth。
+   >* 传输安全协议具有以下有效值：“blank”、“SSL”或“TLS”。 设置值 **SMTP传输安全性** 和 **接收传输安全** 到 **TLS** 用于启用oAuth身份验证服务。
+   >* **POP3协议** 在使用电子邮件端点时，不支持OAuth。
 
    ![连接设置](/help/forms/using/assets/oauth_connectionsettings.png)
 
@@ -134,7 +134,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   如果需要，您可以将Workbench中特定进程的Auth 2.0身份验证设置更改为基本身份验证。 为此，请设置 **OAuth 2.0身份验证** 值为“False”，位于 **使用全局设置** 在 **连接设置** 选项卡。
+   >如果需要，您可以将Workbench中特定进程的Auth 2.0身份验证设置更改为基本身份验证。 为此，请设置 **OAuth 2.0身份验证** 值为“False”，位于 **使用全局设置** 在 **连接设置** 选项卡。
 
 ## 启用oAuth任务通知 {#enable_oauth_task}
 
@@ -148,7 +148,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   要了解与任务通知相关的更多信息， [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
+   > 要了解与任务通知相关的更多信息， [单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service).
 
 ## 配置电子邮件端点 {#configure_email_endpoint}
 
@@ -162,7 +162,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   要了解有关配置电子邮件端点的更多信息，请单击 [配置电子邮件端点](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
+   > 要了解有关配置电子邮件端点的更多信息，请单击 [配置电子邮件端点](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html).
 
 ## 疑难解答 {#troubleshooting}
 

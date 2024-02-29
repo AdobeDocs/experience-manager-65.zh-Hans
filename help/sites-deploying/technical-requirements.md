@@ -3,9 +3,9 @@ title: 技术要求
 description: Adobe Experience Manager支持的客户端和服务器平台列表。
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: d5e7f0301259fdc12b507f9568befcc34ebe9408
+source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
 workflow-type: tm+mt
-source-wordcount: '3644'
+source-wordcount: '3650'
 ht-degree: 1%
 
 ---
@@ -213,7 +213,7 @@ Adobe Experience Manager可与以下服务器平台配合使用以用于生产�
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 （1.13-1.el7）
-   >* libXau.x86_64 （1.0.8-2.1.el7）
+   >* libXau.x86_64 (1.0.8-2.1.el7)
 
 1. Microsoft® Windows生产部署支持升级到6.5的客户和非生产使用。 AEM Sites和Assets会应请求进行新部署。
 1. Microsoft® Window Server上支持AEM Forms，但没有支持级别R限制。
@@ -456,7 +456,7 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
    <th><p><strong>转换为 PDF 的支持格式</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> 最新版本</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 经典曲目</a> 最新版本</td>
    <td>XPS、图像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML、HTM、DWG、DXF和DWF</td>
   </tr>
   <tr>
@@ -535,7 +535,9 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 * Microsoft Visual C++ 2019（VC 14.28或更高版本）适用于32位AEM Forms Designer的32位运行时
 * Microsoft Visual C++ 2019（VC 14.28或更高版本）适用于64位AEM Forms Designer的64位运行时（适用于OSGI和JEE栈栈）
 
-### AEM Assets XMP元数据回写要求 {#requirements-for-aem-assets-xmp-metadata-write-back}
+[安装和配置AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
+
+### AEM Assets XMP 元数据写回的要求 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 以下平台和文件格式支持并启用了 XMP 回写：
 
@@ -548,6 +550,6 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 * **文件格式**：JPEG、PNG、TIFF、PDF、INDD、AI和EPS。
 
-### AEM Assets在Linux®上处理大量元数据的资产的要求 {#assetsonlinux}
+### AEM Assets 在 Linux® 上处理元数据密集型资产的要求 {#assetsonlinux}
 
-XMPFilesProcessor 进程需要库 GLIBC_2.14 才能工作。 使用包含 GLIBC_2.14 的 Linux 内核，例如 Linux®® 内核版本 3.1.x。它提高了处理包含大量元数据的资产（如 PSD 文件）的性能。 使用以前版本的 GLIBC 会导致以 开头 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`的日志出错。
+XMPFilesProcessor 进程需要库 GLIBC_2.14 才能工作。 使用包含GLIBC_2.14的Linux®内核，例如Linux®内核版本3.1.x。它提高了处理包含大量元数据的资源(如PSD文件)的性能。 使用以前版本的GLIBC会导致以开头的日志中出现错误 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
