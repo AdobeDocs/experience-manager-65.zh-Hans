@@ -2,9 +2,9 @@
 title: 管理翻译项目
 description: 了解如何在Adobe Experience Manager中管理翻译项目。
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 219338b497dae6356a68429e9e8ab02c9cfcc3b4
 workflow-type: tm+mt
-source-wordcount: '3504'
+source-wordcount: '3506'
 ht-degree: 39%
 
 ---
@@ -420,9 +420,15 @@ AEM 检测是否正在为内容的初始翻译创建翻译项目，或更新已�
 1. 选择 **语言副本**.
 1. 选择要更新的目标语言。
 1. 选择 **更新语言副本**.
+
+   ![updating-language-copies](assets/translation-move-to.png)
+
 1. 单击 **更新**. A [Launch](/help/sites-authoring/launches-promoting.md) 将被创建。
 1. 导航到所需的语言根并将其选定。
 1. 使用 **引用** 面板，选择 **启动次数**.
+
+   ![promote-launch-translation](assets/promote-launch-translation.png)
+
 1. 单击已创建的启动项，然后单击 **提升启动项**.
 
 现在，源页面和关联的语言副本已移动。
