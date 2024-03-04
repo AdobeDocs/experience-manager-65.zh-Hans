@@ -3,8 +3,7 @@ title: 如何连接自适应表单数据并将其发送到Microsoft&reg； Power
 description: 将自适应表单数据连接并发送到Microsoft&reg； Power Automate的分步指南。
 keywords: 自适应Forms Microsoft Power Automate，将自适应Forms数据提交到Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
-exl-id: a059627b-df12-454d-9e2c-cc56986b7de6
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 15%
@@ -23,7 +22,7 @@ ht-degree: 15%
 
 自适应表单编辑器提供&#x200B;**调用 Microsoft® Power Automate 流程**&#x200B;提交操作，以将自适应表单数据、附件和记录文档发送到 Power Automate Cloud Flow。要使用Submit操作将捕获的数据发送到Microsoft®Power Automate， [将您的AEM Forms创作实例连接到Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
-## 前提条件
+## 先决条件
 
 将自适应表单与Microsoft® Power Automate连接需要以下项：
 
@@ -85,7 +84,7 @@ ht-degree: 15%
 
    >[!NOTE]
    >
-   在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
+   >在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
 
 1. 在配置页面上，选择 **[!UICONTROL 创建]** 创建 [!DNL Microsoft®® Power Automate Flow Service] AEM Forms配置。
 1. 在 **[!UICONTROL 为Microsoft®®Power Automate配置Dataverse服务]** 页面，指定 **[!UICONTROL 客户端ID]** （也称为应用程序ID）， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 动态环境URL]**. 使用的客户端ID、客户端密钥、OAuth URL和动态环境URL [Microsoft® Azure Active Directory应用程序](#ms-power-automate-application) 您在上一节中创建了。 在Microsoft®Azure Active Directory应用程序UI中使用端点选项来查找OAuth URL
@@ -100,7 +99,7 @@ ht-degree: 15%
 
    >[!NOTE]
    >
-   在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
+   >在创建自适应表单时，请在 **[!UICONTROL 配置容器]** 字段。
 1. 在配置页面上，选择 **[!UICONTROL 创建]** 创建 [!DNL Microsoft®® Power Automate Flow Service] AEM Forms配置。
 1. 在 **[!UICONTROL 为Microsoft®® Power Automate配置Dataverse]** 页面，指定 **[!UICONTROL 客户端ID]** （也称为应用程序ID）， **[!UICONTROL 客户端密码]**， **[!UICONTROL OAuth URL]** 和 **[!UICONTROL 动态环境URL]**. 使用客户端ID、客户端密钥、OAuth URL和Dynamics环境ID。 在Microsoft®Azure Active Directory应用程序UI中使用端点选项来查找OAuth URL。 打开 [我的流](https://us.flow.microsoft.com) 链接并选择“我的流”使用URL中列出的ID作为动态环境ID。
 1. 选择 **[!UICONTROL 连接]**. 如有要求，请登录到您的Microsoft® Azure帐户。 选择&#x200B;**[!UICONTROL 保存]**。
@@ -126,7 +125,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
-在提交自适应表单之前，请确保 `When an HTTP Request is received` 使用以下JSON架构的触发器已添加到您的Power Automate流。
+> 在提交自适应表单之前，请确保 `When an HTTP Request is received` 使用以下JSON架构的触发器已添加到您的Power Automate流。
 
 ```
         {

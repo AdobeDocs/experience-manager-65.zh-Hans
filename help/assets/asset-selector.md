@@ -4,9 +4,8 @@ description: 了解如何使用资源选择器在Adobe Experience Manager Assets
 contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
-exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
 hide: true
-source-git-commit: 477c62b857ab98d8617c7bd8ba226019d42d330d
+source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%
