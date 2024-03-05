@@ -2,9 +2,9 @@
 title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 015c36cad1e7da98888609622cf2150842d40c66
+source-git-commit: 7b920927fe400c05f6c7a744d4cb7366db0cae86
 workflow-type: tm+mt
-source-wordcount: '3485'
+source-wordcount: '3486'
 ht-degree: 2%
 
 ---
@@ -470,11 +470,11 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
 
    1. 下载适用于您的操作系统的修补程序：
 
-   * [适用于Microsoft Windows的修补程序](/help/release-notes/assets/Hotfix-windows.zip)
-   * [适用于Linux的修补程序](/help/release-notes/assets/Hotfix-Linux.zip)
-   * [适用于Apple macOS的修补程序](/help/release-notes/assets/Hotfix-osx.zip)
+      * [适用于Microsoft Windows的修补程序](/help/release-notes/assets/Hotfix-windows.zip)
+      * [适用于Linux的修补程序](/help/release-notes/assets/Hotfix-Linux.zip)
+      * [适用于Apple macOS的修补程序](/help/release-notes/assets/Hotfix-osx.zip)
 
-   1. 通过包管理器上传并安装包(.zip)。
+   1. 通过上传并安装包(.zip) [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
 
 * 预填充服务失败，交互式通信中出现空指针异常。 (CQDOC-21355)
 
