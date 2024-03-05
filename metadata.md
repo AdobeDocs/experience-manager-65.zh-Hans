@@ -2,16 +2,16 @@
 cloud: Experience Cloud
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/experience-manager-65.zh-Hans
-solution: Experience Manager
+solution: Experience Manager, Experience Manager 6.5
 feature-set: Experience Manager Assets,Experience Manager,Experience Manager Sites, Experience Manager Forms
 version: 6.5
 type: Documentation
 index: y
 recommendations: noDisplay
-source-git-commit: fc76dd7af48aa67380b0635589acf9322bff86fb
+source-git-commit: 51c5338b9e01ce52db2df88ec05f0e735f678ca3
 workflow-type: tm+mt
 source-wordcount: '131'
-ht-degree: 80%
+ht-degree: 89%
 
 ---
 
