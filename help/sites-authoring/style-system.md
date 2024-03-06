@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1293'
-ht-degree: 84%
+source-wordcount: '1297'
+ht-degree: 83%
 
 ---
 
@@ -122,7 +122,7 @@ ht-degree: 84%
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_design/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
 
-配置好组件后，AEM会自动将页面作者配置的样式插入修饰元素上，AEM会自动将该修饰元素包装在每个可编辑的组件周围。 组件本身不需要执行任何操作即可实现这一点。
+配置好组件后，AEM会自动将页面作者配置的样式插入修饰元素上，AEM会自动将该修饰元素包装在每个可编辑的组件周围。 组件本身无需执行任何其他操作即可实现这一点。
 
 ### 在“编辑”对话框中启用“样式”选项卡 {#enable-styles-tab-edit}
 

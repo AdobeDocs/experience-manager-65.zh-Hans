@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4941'
-ht-degree: 3%
+source-wordcount: '4920'
+ht-degree: 2%
 
 ---
 
@@ -220,7 +220,7 @@ static.css文件和图像的示例
 1. 在文件夹树中，选择 **网站** 文件夹，然后单击 **新建** > **新建页面**.
 1. 在 **创建页面** 窗口中，输入以下内容：
 
-   * 标题: `My Website`
+   * 标题： `My Website`
    * 名称：`mywebsite`
    * 选择 `My Website Content Page Template`
 
@@ -290,7 +290,7 @@ static.css文件和图像的示例
       * **类型：** 字符串
       * **值：** foundation/components/page
 
-   1. 单击全部保存。
+   1. 单击“全部保存”。
 
 1. 打开 `contentpage.jsp` 文件位于 `/apps/mywebsite/components/contentpage` 并将现有代码替换为以下代码：
 
@@ -418,9 +418,9 @@ static.css文件和图像的示例
 
    * **标签**： `topnav`
 
-   * **标题**: `My Top Navigation Component`
+   * **标题**： `My Top Navigation Component`
 
-   * **描述**: `This is My Top Navigation Component`
+   * **描述**： `This is My Top Navigation Component`
 
 1. 单击 **下一个** 直到您到达最后一个单击的窗口 **确定**. 保存更改。
 
@@ -461,7 +461,7 @@ static.css文件和图像的示例
    <div class="topnav">topnav</div>
    ```
 
-   替换为:
+   替换为：
 
    ```xml
    <cq:include path="topnav" resourceType="mywebsite/components/topnav" />
@@ -674,17 +674,17 @@ static.css文件和图像的示例
 
       * 名称：`jcr:description`
       * 类型：`String`
-      * 价值: `This is a description of the Product 1!.`
+      * 值： `This is a description of the Product 1!.`
 
-   1. 单击&#x200B;**添加**。
+   1. 单击 **添加**.
    1. 在 **属性** 选项卡，使用以下值创建另一个属性：
 
       * 名称：日期
       * 类型：字符串
       * 值：2008年2月14日
-      * 单击添加。
+      * 单击“添加”。
 
-   1. 单击全部保存。
+   1. 单击“全部保存”。
 
 1. 在CRXDE Lite中，设置“产品2”页面的说明和日期：
 
@@ -695,15 +695,15 @@ static.css文件和图像的示例
       * 类型：字符串
       * 值：这是产品2！的说明。
 
-   1. 单击&#x200B;**添加**。
+   1. 单击 **添加**.
    1. 在同一文本框中，将先前的值替换为以下值：
 
       * 名称：日期
       * 类型：字符串
       * 值：2012年5月11日
-      * 单击添加。
+      * 单击“添加”。
 
-   1. 单击全部保存。
+   1. 单击“全部保存”。
 
 #### 创建列表子组件 {#creating-the-list-children-component-1}
 
@@ -831,7 +831,7 @@ static.css文件和图像的示例
 
 1. ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. 作为列表根的路径，输入： `/content/mywebsite/en`. 单击确定。现在，页面上的listchildren组件如下所示：
+1. 作为列表根的路径，输入： `/content/mywebsite/en`. 单击“确定”。 现在，页面上的listchildren组件如下所示：
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -859,9 +859,9 @@ static.css文件和图像的示例
 1. 在CRXDE Lite中，右键单击/apps/mywebsite/components，然后选择 **创建**，则 **创建组件**.
 1. 在创建组件对话框中，输入以下属性值，然后单击下一步：
 
-   * 标签: `logo`.
-   * 标题: `My Logo Component`.
-   * 描述: `This is My Logo Component`.
+   * 标签： `logo`.
+   * 标题： `My Logo Component`.
+   * 描述： `This is My Logo Component`.
 
 1. 单击下一步，直到到达对话框的最后一个面板，然后单击 **确定**.
 
@@ -916,16 +916,16 @@ static.css文件和图像的示例
 
       * **标签：** `design_dialog`
 
-      * **标题:** `Logo (Design)`
+      * **标题：** `Logo (Design)`
 
-1. 右键单击design_dialog分支中的tab1节点，然后单击“删除”。 单击全部保存。
+1. 右键单击design_dialog分支中的tab1节点，然后单击“删除”。 单击“全部保存”。
 1. 在 `design_dialog/items/items`节点，创建名为的节点 `img` 类型 `cq:Widget`. 添加以下属性，然后单击“全部保存”：
 
    | 名称 | 类型 | 价值 |
    |---|---|---|
    | fileNameParameter | 字符串 | 。/imageName |
    | fileReferenceParameter | 字符串 | 。/imageReference |
-   | name | 字符串 | 。/图像 |
+   | name | 字符串 | 。/image |
    | 标题 | 字符串 | 图像 |
    | xtype | 字符串 | html5smartimage |
 
@@ -968,7 +968,7 @@ public class img_GET extends AbstractImageServlet {
 
     protected Layer createLayer(ImageContext c)
             throws RepositoryException, IOException {
-        /* don't create the layer yet. handle everything later */
+        /* do not create the layer yet. handle everything later */
         return null;
     }
 
@@ -1054,7 +1054,7 @@ public class img_GET extends AbstractImageServlet {
    <div>trail</div>
    ```
 
-   替换为:
+   替换为：
 
    ```xml
    <cq:include path="trail" resourceType="foundation/components/breadcrumb" />
@@ -1075,7 +1075,7 @@ public class img_GET extends AbstractImageServlet {
    <div>title</div>
    ```
 
-   替换为:
+   替换为：
 
    ```xml
    <cq:include path="title" resourceType="foundation/components/title" />
@@ -1120,7 +1120,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### 创建图像组件 {#creating-the-image-component-1}
 
-1. 右键单击 `/apps/mywebsite/components/logo` 节点并单击 复制。
+1. 右键单击 `/apps/mywebsite/components/logo` 节点，然后单击复制。
 1. 右键单击 `/apps/mywebsite/components` 节点，然后单击粘贴。
 1. 右键单击 `Copy of logo` 节点，单击重命名，删除现有文本并键入 `image`.
 
@@ -1282,7 +1282,7 @@ public class img_GET extends AbstractImageServlet {
    1. 在“允许的父项”面板上，单击+按钮并键入 `*/parsys`.
    1. 单击“下一步” ，然后单击“确定”。
 
-1. 单击全部保存。
+1. 单击“全部保存”。
 1. 复制以下节点并将其粘贴到apps/mywebsite/components/search节点：
 
    * `/libs/foundation/components/search/dialog`
@@ -1290,7 +1290,7 @@ public class img_GET extends AbstractImageServlet {
 
    * `/libs/foundation/components/search/icon.png`
 
-1. 单击全部保存。
+1. 单击“全部保存”。
 
 #### 创建搜索脚本 {#creating-the-search-script}
 
@@ -1520,7 +1520,7 @@ public class img_GET extends AbstractImageServlet {
    <div>iparsys</div>
    ```
 
-   替换为:
+   替换为：
 
    ```java
    <cq:include path="rightpar" resourceType="foundation/components/iparsys" />

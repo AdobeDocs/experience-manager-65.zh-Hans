@@ -1,7 +1,6 @@
 ---
 title: 安装和配置设计器
 description: Designer作为独立安装程序提供，并且与Workbench捆绑在一起。 了解如何安装独立设计器。
-uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
@@ -10,9 +9,9 @@ docset: aem65
 role: Admin
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: 05f54e451c72b0a1690ba4a2ca50db87711a8094
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -50,7 +49,7 @@ Designer作为独立安装程序提供，并且与WorkBench捆绑在一起。 �
 
    >[!NOTE]
    > 
-   >* AEM 6.5 Forms Service Pack 20 (6.5.20.0)版本计划弃用32位Forms Designer。 Adobe建议升级到64位Forms designer。
+   >* AEM 6.5 Forms Service Pack 20 (6.5.20.0)版本计划弃用32位Forms Designer。 Adobe建议您升级到64位Forms designer。
    >* 64位Forms Designer仅适用于AEM 6.5 Forms Service Pack 19 (6.5.19.0)或更高版本。
    >* 从Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0)版本开始，Forms Designer版本还包含Service Pack版本。 例如，对于Service Pack 15，版本号为6.5.15.20221112.1.0。在此示例中，6.5.15是Service Pack版本。
 

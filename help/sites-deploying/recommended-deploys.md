@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '1759'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 ### 带有MongoMK故障转移功能的Oak群集，可在单个数据中心实现高可用性 {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-此方法意味着多个Oak实例访问单个数据中心中的MongoDB副本集，实际上为AEM创作环境创建了一个主动 — 主动群集。 MongoDB中的副本集用于在发生硬件或网络故障时提供高可用性和冗余。
+此方法意味着多个Oak实例访问单个数据中心中的MongoDB副本集，实际上为AEM创作环境创建了一个主动 — 主动群集。 MongoDB中的副本集用于在硬件或网络出现故障时提供高可用性和冗余。
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 

@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 >
 >Adobe Experience Manager (AEM) Forms提供 [主题编辑器](/help/forms/using/themes.md) 能够创建和修改自适应表单 [主题](/help/forms/using/themes.md). 仅当从没有的版本升级时，才执行本文中列出的步骤 [主题编辑器](/help/forms/using/themes.md) 而且您已经在使用Less/CSS文件（预主题编辑器方法）创建的主题方面有所投资。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 * 了解LESS (Leaner CSS)框架
 * 如何在Adobe Experience Manager中创建客户端库
@@ -65,7 +65,7 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
 
    **更少变量文件**：这些是您在其中定义或覆盖在定义CSS样式中使用的变量的文件。
 
-   自适应表单提供以下定义的OOTB变量 `.less` 文件：
+   自适应表单提供以下定义的现成变量 `.less` 文件：
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -107,7 +107,7 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
 
    **更少的mixin文件：** 您可以定义接受变量作为参数的函数。 这些函数的输出是生成的样式。 请在不同的样式中使用这些mixin，以避免重复CSS样式。
 
-   自适应表单提供中定义的OOTB mixin：
+   自适应表单提供中定义的现成mixin：
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/adaptiveforms-mixins.less`
 

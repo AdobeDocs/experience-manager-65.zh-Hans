@@ -1,5 +1,5 @@
 ---
-title: 数据存储垃圾收集
+title: 数据存储垃圾回收
 description: 了解如何配置数据存储垃圾收藏集以释放磁盘空间。
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,14 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1890'
+source-wordcount: '1891'
 ht-degree: 0%
 
 ---
 
-# 数据存储垃圾收集 {#data-store-garbage-collection}
+# 数据存储垃圾回收 {#data-store-garbage-collection}
 
 当常规WCM资产被移除时，对基础数据存储记录的引用可以从节点层次结构中移除，但是数据存储记录本身被保留。 然后，此未引用的数据存储记录会变成不需要保留的“垃圾”。 在存在多个垃圾资产的情况下，删除它们以保留空间并优化备份和文件系统维护性能是有益的。
 
@@ -161,7 +161,7 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 >
 >不同时运行它的原因是，旧的（和未使用的）数据存储文件也会被备份，这样，如果需要回滚到旧的修订版本，则二进制文件仍然在备份中。
 
-如果您不希望使用操作仪表板中的每周维护窗口运行数据存储垃圾收集，还可以使用wget或curl HTTP客户端自动执行此操作。 以下是如何使用curl自动化备份的示例：
+如果您不想使用操作功能板中的每周维护窗口运行数据存储垃圾收集，还可以使用wget或curl HTTP客户端自动执行此操作。 以下是如何使用curl自动化备份的示例：
 
 >[!CAUTION]
 >

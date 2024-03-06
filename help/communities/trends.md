@@ -7,10 +7,10 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '342'
-ht-degree: 4%
+source-wordcount: '343'
+ht-degree: 1%
 
 ---
 
@@ -92,7 +92,7 @@ ht-degree: 4%
    * `Last 7 days`
    * `Last 30 days`
    * `Last 90 days`
-   * `This year (since Jan 1st)`
+   * `This year (since Jan 1)`
    * `Total`
 
   默认为 `Total`.
@@ -102,7 +102,7 @@ ht-degree: 4%
   这样，您可以将活动范围设定为网站的子集，如特定的博客。
 默认设置是整个社区站点。
 
-* **成员数量整合**
+* **成员数量汇总**
 
   取消选择（关闭）时，仅计数顶级帖子。 例如，如果上下文是根页面（默认），则 `Activity Type` 之 `Posts` 从不显示任何活动，因为无法将内容发布到根页面。 选中后，将包含所有下级页面上的计数。
 默认值为选中。

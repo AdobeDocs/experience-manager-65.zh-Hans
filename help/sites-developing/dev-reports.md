@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0f898fd81d2952b01eac7e6b8aa9970868009b15
 workflow-type: tm+mt
-source-wordcount: '5182'
+source-wordcount: '5177'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Adobe Experience Manager (AEM)提供了一系列 [标准报表](/help/sites-admi
 * 以下报告基于个别原则，因此不能延期：
 
    * [磁盘使用情况](/help/sites-administering/reporting.md#disk-usage)
-   * [运行状况检查](/help/sites-administering/reporting.md#health-check)
+   * [健康检查](/help/sites-administering/reporting.md#health-check)
    * [工作流报告](/help/sites-administering/reporting.md#workflow-report)
 
 >[!NOTE]
@@ -51,14 +51,14 @@ Adobe Experience Manager (AEM)提供了一系列 [标准报表](/help/sites-admi
 >  `P:<name> = <value>` ：描述属性 `<name>` 必须设置为的值 `<value>`.
 >
 >* 缩进显示节点之间的分层依赖关系。
->* 项目分隔方式 |表示可能项目的列表；例如，类型或名称；例如， `String|String[]` 表示该属性可以是字符串或字符串[].
+>* 项目分隔方式 | 表示可能项目的列表；例如，类型或名称；例如， `String|String[]` 表示该属性可以是字符串或字符串[].
 >
 >* `[]` 描述数组；如String[] 或节点数组，如 [查询定义](#query-definition).
 >
 >除非另有说明，否则默认类型为：
 >
 >* 节点 —  `nt:unstructured`
->* 属性 - `String`
+>* 属性 —  `String`
 
 ## 报告框架 {#reporting-framework}
 
@@ -114,7 +114,7 @@ Adobe Experience Manager (AEM)提供了一系列 [标准报表](/help/sites-admi
 
      这会指定要搜索的存储库的子树。
 
-     为了帮助将性能影响降至最低，建议（尝试）将查询限制在存储库的特定子树中。 根路径可在 [报告模板](#report-template) 或由用户在 [配置（编辑）对话框](#configuration-dialog).
+     为了帮助将性能影响降至最低，建议（尝试）将查询限制在存储库的特定子树中。 根路径可在 [报告模板](#report-template) 或由用户在 [“配置（编辑）”对话框](#configuration-dialog).
 
    * [一个或多个标准](#query-definition).
 
@@ -359,7 +359,7 @@ N:charting
          * `totals` ( `Boolean`)
 
            如果额外的一行显示 **总计** 应该显示。
-默认: `false`
+默认： `false`
 
          * `series` ( `Long`)
 

@@ -1,5 +1,5 @@
 ---
-title: 将 Dynamic Media 查看器与 Analytics 和 Adobe Experience Platform 标记集成
+title: 将Dynamic Media查看器与Adobe Analytics和Experience Platform标记集成
 description: 了解适用于Experience Platform标记和Dynamic Media Viewer 5.13的Dynamic Media Viewer扩展。它允许Adobe Analytics和Experience Platform标记的客户在其Experience Platform标记配置中使用特定于Dynamic Media查看器的事件和数据。
 mini-toc-levels: 3
 contentOwner: Rick Brough
@@ -10,14 +10,14 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6618'
-ht-degree: 7%
+source-wordcount: '6664'
+ht-degree: 5%
 
 ---
 
-# 将 Dynamic Media 查看器与 Analytics 和 Adobe Experience Platform 标记集成 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
+# 将Dynamic Media查看器与Adobe Analytics和Experience Platform标记集成 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## Dynamic Media Viewer与Adobe Analytics和Experience Platform标记有何集成？ {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
 
@@ -65,7 +65,7 @@ ht-degree: 7%
 
 Experience Platform标记中的数据元素是一个命名属性，其值是静态定义的，或根据网页或Dynamic Media查看器数据的状态进行动态计算。
 
-数据元素定义中可用的选项取决于Experience Platform标记属性中安装的扩展列表。 “核心”扩展已预安装，在任何配置中均可开箱即用。 此“核心”扩展允许定义数据元素，其值来自Cookie、JavaScript代码、查询字符串和许多其他源。
+数据元素定义中可用的选项取决于Experience Platform标记属性中安装的扩展列表。 “核心”扩展已预安装，在任何配置中均可开箱即用。 通过这个“核心”扩展，您可以定义一个数据元素，其中的值来自Cookie、JavaScript代码、查询字符串和许多其他来源。
 
 对于Adobe Analytics跟踪，必须安装其他多个扩展，如中所述 [扩展的安装和设置](#installing-and-setup-of-extensions). Dynamic Media Viewers扩展添加了定义数据元素的功能，该数据元素的值是动态查看器事件的参数。 例如，可以引用查看器类型或加载时查看器报告的资产名称、最终用户缩放时报告的缩放级别等。
 
@@ -660,7 +660,7 @@ Experience Platform标记可能具有多个开发环境、一个暂存环境和�
 
 ## 配置Adobe Experience Manager以进行集成 {#configuring-adobe-experience-manager-for-the-integration}
 
-前提条件:
+先决条件：
 
 * Experience Manager同时运行创作实例和发布实例。
 * Experience Manager创作节点在Dynamic Media - Scene7运行模式(dynamicmedia_s7)中设置
@@ -756,7 +756,8 @@ Experience Manager配置包含以下两个主要步骤：
    * **[!UICONTROL 标题]**  — 输入描述性帐户标题。
    * **[!UICONTROL 授权服务器]**  — 返回之前打开的集成详细信息页面。 选择 **[!UICONTROL JWT]** 选项卡。 复制服务器名称（不含路径），如下面突出显示的那样。
 
-   返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将名称粘贴到相应的字段中。例如， `https://ims-na1.adobelogin.com/`
+   返回到 **[!UICONTROL 帐户]** 页面，然后将名称粘贴到相应的字段中。
+例如， `https://ims-na1.adobelogin.com/`
 （服务器名称仅作为示例）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
@@ -771,7 +772,7 @@ Experience Manager配置包含以下两个主要步骤：
 
    集成详细信息页面。
 
-1. **[!UICONTROL 客户端密钥]** - 返回到“集成详细信息”页面。从 **[!UICONTROL 概述]** 选项卡，选择 **[!UICONTROL 检索客户端密码]**. 右侧 **[!UICONTROL 客户端密码]** 字段，选择 **[!UICONTROL 复制]**.
+1. **[!UICONTROL 客户端密码]**  — 返回集成详细信息页面。 从 **[!UICONTROL 概述]** 选项卡，选择 **[!UICONTROL 检索客户端密码]**. 右侧 **[!UICONTROL 客户端密码]** 字段，选择 **[!UICONTROL 复制]**.
 
    返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将密钥粘贴到相应的字段中。
 

@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1228'
 ht-degree: 4%
 
 ---
@@ -29,7 +29,7 @@ AEM Forms提供了一种方法，帮助您将自适应表单的字段与稍后�
 
 在AEM Forms创作环境中，您可以将字段从XFA表单（左）拖到自适应表单（右）中
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 要使用本文中的信息，建议熟悉以下方面：
 

@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2471'
-ht-degree: 2%
+source-wordcount: '2403'
+ht-degree: 0%
 
 ---
 
@@ -267,7 +267,7 @@ ht-degree: 2%
 
    `system`
 
-   `rep:cache` （由于我们使用粘性会话，因此不需要将此节点同步到不同的发布者）。
+   `rep:cache` （由于使用了粘性会话，因此无需将此节点同步到不同的发布者）。
 
    ![user-sync-listner](assets/user-sync-listner.png)
 
@@ -275,7 +275,7 @@ ht-degree: 2%
 
 AEM创作实例使用Sling ID来识别数据的来源以及它需要（或不需要）将包发送回的发布者。
 
-确保发布场中的所有发布者都有一个唯一的Sling ID。 如果发布场中的多个发布实例的Sling ID相同，则用户同步失败。 因为作者不知道从何处获取包以及在何处安装包。
+确保发布场中的所有发布者都有一个唯一的Sling ID。 如果发布场中的多个发布实例的Sling ID相同，则用户同步失败。 由于作者不知道从何处获取软件包，也不知道在何处安装软件包。
 
 要确保发布场中发布者的唯一Sling ID，请在每个发布实例上：
 

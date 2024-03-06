@@ -9,9 +9,9 @@ docset: aem65
 feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '2196'
+source-wordcount: '2274'
 ht-degree: 5%
 
 ---
@@ -38,8 +38,10 @@ ht-degree: 5%
 
 | 限制类型 | 最佳实践 | 施加的限制 |
 | --- | --- | --- |
-| 每集的重复资产数 | 无重复项 | 20 |
+| 每集的重复资产数 | 无重复项 | 20‡ |
 | 每组的最大图像数 | 每组5至10个图像 | 1000 |
+
+‡最佳实践是在一个集中没有重复的资产。 单个资产的限制为20个重复项。 如果为该资产添加其他重复项（在该集中），请求将会产生错误或忽略重复项。
 
 另请参阅 [Dynamic Media限制](/help/assets/limitations.md).
 
@@ -141,8 +143,10 @@ ht-degree: 5%
 
 | 限制类型 | 最佳实践 | 施加的限制 |
 | --- | --- | --- |
-| 每集的重复资产数 | 无重复项 | 20 |
+| 每集的重复资产数 | 无重复项 | 20‡ |
 | 每组的最大图像数 | 每组5至10个图像 | 1000 |
+
+‡最佳实践是在一个集中没有重复的资产。 单个资产的限制为20个重复项。 如果为该资产添加其他重复项（在该集中），请求将会产生错误或忽略重复项。
 
 另请参阅 [Dynamic Media限制](/help/assets/limitations.md).
 

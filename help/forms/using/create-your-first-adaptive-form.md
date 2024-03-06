@@ -5,9 +5,9 @@ topic-tags: introduction
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '913'
 ht-degree: 6%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 6%
 
 您是否正在寻找适合移动设备的 **表单体验** 简化注册流程，提高参与度，缩短周转时间， **自适应表单** 很适合你。 自适应表单提供易于移动、自动化和分析处理的表单体验。 您可以轻松构建响应式且交互式表单，使用自动化流程减少管理和重复任务，并使用数据分析改善和个性化客户对表单的体验。
 
-本教程提供了一个用于创建自适应表单的端到端框架。 本教程将组织为一个用例和多份指南。 每份指南都可帮助您学习并将新功能添加到本教程创建的自适应表单中。 在每份指南之后，您都有一个有效的自适应表单。 提供了创建自适应表单的指南。 后续指南将很快发布。 在本教程结束时，您将能够：
+本教程提供了一个用于创建自适应表单的端到端框架。 本教程将组织为一个用例和多份指南。 每份指南都可帮助您学习并将新功能添加到本教程创建的自适应表单中。 在每份指南之后，您都有一个有效的自适应表单。 提供了创建自适应表单的指南。 后续指南即将推出。 在本教程结束时，您应该能够执行以下操作：
 
 * 创建自适应表单和表单数据模型。
 * 设置自适应表单的样式。
@@ -43,7 +43,7 @@ ht-degree: 6%
 
 ### 先决条件 {#prerequisite}
 
-* 设置 [AEM创作实例](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
+* 设置 [AEM创作实例](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
 * 安装 [AEM Forms加载项](../../forms/using/installing-configuring-aem-forms-osgi.md) 在创作实例上。
 * 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于 [!DNL MySQL] 数据库和使用 [!DNL Oracle's] [MySQL JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
@@ -59,10 +59,10 @@ ht-degree: 6%
 
 目标：
 
-* 创建允许客户添加送货地址的自适应表单
-* 用于显示和接受客户信息的自适应表单的布局字段
-* 创建提交操作以发送包含表单内容的电子邮件
-* 预览和提交自适应表单
+* 创建允许客户添加送货地址的自适应表单。
+* 用于显示和接受客户信息的自适应表单的布局字段。
+* 创建提交操作以发送包含表单内容的电子邮件。
+* 预览并提交自适应表单。
 
 [![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
 
@@ -70,15 +70,15 @@ ht-degree: 6%
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-表单数据模型允许将自适应表单连接到不同的数据源。 例如，AEM用户配置文件、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库。 表单数据模型是连接数据源中可用的业务实体和服务的统一数据表示架构。 您可以将表单数据模型与自适应表单结合使用，以检索、更新、删除数据和将数据添加到连接的数据源。
+表单数据模型可让您将自适应表单连接到不同的数据源。 例如，AEM用户配置文件、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库。 表单数据模型是连接数据源中可用的业务实体和服务的统一数据表示架构。 您可以将表单数据模型与自适应表单结合使用，以检索、更新、删除数据和将数据添加到连接的数据源。
 
 目标：
 
-* 配置网站的数据库实例([!DNL MySQL] 数据库)作为数据源
-* 使用以下方式创建表单数据模型 [!DNL MySQL] 数据库作为数据源
-* 将数据模型对象添加到表单数据模型
-* 为表单数据模型配置读写服务
-* 测试表单数据模型和已配置的服务（包含测试数据）
+* 配置网站的数据库实例([!DNL MySQL] 数据库)作为数据源。
+* 使用以下方式创建表单数据模型 [!DNL MySQL] 数据库作为数据源。
+* 添加数据模型对象，以便形成数据模型。
+* 为表单数据模型配置读写服务。
+* 测试表单数据模型，并使用测试数据配置服务。
 
 [![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
 
@@ -90,8 +90,8 @@ ht-degree: 6%
 
 目标：
 
-* 创建规则并将其应用于自适应表单字段
-* 使用规则触发表单数据模型服务将数据更新到数据库
+* 创建规则并将其应用于自适应表单字段。
+* 使用规则触发表单数据模型服务，将数据更新到数据库。
 
 [![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
@@ -103,9 +103,9 @@ ht-degree: 6%
 
 目标：
 
-* 将现成的主题应用于自适应表单
-* 使用主题编辑器为自适应表单创建主题
-* 在自定义主题中使用Web字体
+* 将现成的主题应用于自适应表单。
+* 使用主题编辑器为自适应表单创建主题。
+* 在自定义主题中使用Web Fonts。
 
 [![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
@@ -117,8 +117,8 @@ ht-degree: 6%
 
 目标：
 
-* 将自适应表单发布为AEM页面
-* 将自适应表单嵌入到AEM [!DNL Sites] 页面
-* 将自适应表单嵌入到外部网页(托管在AEM外部的非AEM网页)中
+* 将自适应表单发布为AEM页面。
+* 将自适应表单嵌入到AEM [!DNL Sites] 页面。
+* 将自适应表单嵌入到外部网页(托管在AEM外部的非AEM网页)中。
 
 [![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

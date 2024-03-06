@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 35b50573-0be8-469d-a1ac-f51b9aaa5fef
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1267'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >AEM Forms引入了动态模板。 您可以使用AEM Sites模板编辑器来 [创建或编辑动态模板](../../forms/using/template-editor.md). 下文中提到的模板是静态模板。 这些选项在默认安装中不可用。 [安装兼容包](../../forms/using/compatibility-package.md) 以在您的环境中获取这些模板。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 * 了解AEM [页面模板](/help/sites-authoring/templates.md) 和 [自适应表单创作](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
@@ -121,7 +121,7 @@ AEM QuickStart提供了以下自适应表单模板：
 
 1. 将复制的组件重命名为 `enrollmentpage`.
 
-1. **（仅当已具有内容页面时）** 如果您已经存在，请执行下列步骤(a-d) `contentpage`组件。 如果您没有 `contentpage`组件，您可以将 `resourceSuperType`属性指向OOTB基本页。
+1. **（仅当已具有内容页面时）** 如果您已经存在，请执行下列步骤(a-d) `contentpage`组件。 如果您没有 `contentpage`组件，您可以将 `resourceSuperType`属性以指向开箱即用的基础页面。
 
    1. 对于 `enrollmentpage` 节点，设置属性的值 `sling:resourceSuperType` 到mycompany/components/page/contentpage。 此 `contentpage` 组件是网站的基本页面组件。 其他页面组件可以对其进行扩展。 删除下的脚本文件 `enrollmentpage`，除 `head.jsp`， `content.jsp`、和 `library.jsp`. 此 `sling:resourceSuperType` 组件，即 `contentpage` 在这种情况下，包括所有此类脚本。 标题（包括导航栏和页脚）继承自 `contentpage` 组件。
 

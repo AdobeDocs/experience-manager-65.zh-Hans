@@ -1,11 +1,11 @@
 ---
 title: 项目
-description: 通过“项目”，您可以将资源分组到一个实体中，该实体的通用共享环境使您能够轻松管理项目.
+description: 通过项目，您可以将资源分组到一个实体中，该实体具有共享的通用环境，从而可轻松管理您的项目。
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1359'
-ht-degree: 32%
+source-wordcount: '1360'
+ht-degree: 26%
 
 ---
 
@@ -62,7 +62,7 @@ ht-degree: 32%
 
 您可以使用该过滤器在所有项目之间切换，而仅切换处于活动状态的项目。
 
-![过滤器](assets/projects-filter.png)
+![筛选](assets/projects-filter.png)
 
 ### 选择和查看项目 {#selecting}
 
@@ -78,7 +78,7 @@ ht-degree: 32%
 
 项目由您希望一起管理的不同类型的信息组成。 此信息由不同的 **磁贴**.
 
-您可以将以下拼贴与项目关联。
+您可以将以下图块与您的项目关联。
 
 * [资源](#assets)
 * [资源收藏集](#asset-collections)
@@ -102,7 +102,7 @@ ht-degree: 32%
 
 ![“资源”拼贴](assets/project-tile-assets.png)
 
-您可以直接在该拼贴中上传资源。
+您可以直接在图块中上传资产。
 
 ### 资源收藏集 {#asset-collections}
 
@@ -221,9 +221,9 @@ ht-degree: 32%
 
 ### 自动组创建 {#auto-group-creation}
 
-在创建项目并将用户添加各种角色时，将自动创建与项目关联的组以管理关联的权限。
+在创建项目并将用户添加到各种角色时，将自动创建与项目关联的组以管理关联的权限。
 
-例如，名为 Myproject 的项目将有三个组，分别为 **Myproject 所有者**、**Myproject 编辑者**、**Myproject 观察者**。
+例如，名为Myproject的项目将有三个组 **Myproject所有者**， **Myproject编辑器**， **Myproject观察者**.
 
 如果删除了项目，则只有在选择适当的选项时，才会删除这些组 [删除项目时。](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 管理员还可以手动删除中的组 **工具** > **安全性** > **组**.
 

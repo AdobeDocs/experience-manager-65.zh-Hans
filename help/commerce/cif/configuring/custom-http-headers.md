@@ -2,10 +2,10 @@
 title: 自定义 HTTP 标头
 description: 了解如何在Adobe Experience Manager Commerce中配置自定义HTTP标头。
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 5%
+source-wordcount: '267'
+ht-degree: 3%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 5%
 
 ## 限制 {#restrictions}
 
-虽然该服务允许定义任何标头名称，包括标准标头名称，但它们将无法用于配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 可以找到受限制的标头名称列表 [此处](https://developer.mozilla.org/zh-CN/docs/Web/HTTP/Headers). 除了这些标头之外，还有两个标头无法使用：
+虽然该服务允许定义任何标头名称，包括标准名称，但它们不可配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 可以找到受限制的标头名称列表 [此处](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 除了这些标头之外，还有两个标头无法使用：
 
 * &quot;Store&quot; - CIF用于识别Adobe Commerce商店
 * &quot;Preview-Version&quot; — 由CIF用于检索暂存产品

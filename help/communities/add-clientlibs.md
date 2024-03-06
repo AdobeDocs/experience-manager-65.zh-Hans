@@ -7,10 +7,10 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '702'
-ht-degree: 1%
+source-wordcount: '690'
+ht-degree: 0%
 
 ---
 
@@ -26,8 +26,8 @@ ht-degree: 1%
 
 1. 右键单击 `an-scf-sandbox` 并选择 `Create Node`
 
-   * 名称：`clientlibs`
-   * 类型：`cq:ClientLibraryFolder`
+   * 名称： `clientlibs`
+   * 类型： `cq:ClientLibraryFolder`
 
 1. 单击 **确定**
 
@@ -81,10 +81,10 @@ css.txt和js.txt的第一行标识了找到以下文件列表的基本位置。
 
 在这种情况下，请包括所有客户端，因此首选的是更基本的SCF clientlibs，即创作clientlibs：
 
-* 名称：**`embed`**
-* 类型：**`String`**
+* 名称： **`embed`**
+* 类型： **`String`**
 * 单击 **`Multi`**
-* 价值: **`cq.social.scf`**
+* 值： **`cq.social.scf`**
 
    * 此时会弹出一个对话框，单击 **`+`** 在每个条目之后添加以下clientlib类别：
 
@@ -151,7 +151,7 @@ include语句属于 `head` 的部分 `html` 脚本。 默认 **`foundation head.
 
 此时，存在一个极简主义的沙箱。 可能值得另存为软件包，这样在播放时，如果您的存储库损坏并且您想要重新开始，则可以关闭服务器。 然后重命名或删除文件夹crx-quickstart/ ，打开服务器，上传并安装此保存的包，而不必重复这些最基本的步骤。
 
-此包存在于 [创建示例页面](/help/communities/create-sample-page.md) 教程面向迫不及待想要跳进来玩游戏的人！...
+此包存在于 [创建示例页面](/help/communities/create-sample-page.md) 教程适合那些迫不及待地想要加入并开始玩游戏的人。
 
 要创建包，请执行以下操作：
 
@@ -160,7 +160,7 @@ include语句属于 `head` 的部分 `html` 脚本。 默认 **`foundation head.
 
    * 包名称： an-scf-sandbox-minimal-pkg
    * 版本：0.1
-   * 组: `leave as default`
+   * 组： `leave as default`
    * 单击 **确定**
 
 * 单击 **编辑**

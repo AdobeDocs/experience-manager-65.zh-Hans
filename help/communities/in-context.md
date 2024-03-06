@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 1%
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
@@ -97,7 +97,7 @@ boyd.larsen@dodgit.com在作者上，以管理员身份登录，并使用 [成�
 
 在发布时，以Boyd Larsen身份登录，并通过选择 `Forum`，然后 `Read more` 来做蜂鸟贴文。
 
-通知:
+注意：
 
 * 博伊德没有参加论坛。
 * 博伊德无法删除任何内容。
@@ -113,7 +113,7 @@ boyd.larsen@dodgit.com在作者上，以管理员身份登录，并使用 [成�
 
 以管理员（管理员）身份登录，并通过选择“论坛”访问该会话，然后选择“阅读更多帖子”。
 
-通知:
+注意：
 
 * 管理员可以标记、删除、编辑、拒绝、剪切、关闭、固定、功能。
 * 管理员可以选择管理以访问审核控制台。
@@ -126,7 +126,7 @@ boyd.larsen@dodgit.com在作者上，以管理员身份登录，并使用 [成�
 
 搜索过滤器是一个可切换打开或关闭的侧面板。
 
-注销.
+注销。
 
 ![moderation-console-publish](assets/moderation-console-publish.png)
 
@@ -134,7 +134,7 @@ boyd.larsen@dodgit.com在作者上，以管理员身份登录，并使用 [成�
 
 以Aaron McDonald身份登录(`aaron.mcdonal@mailinator.com`)、社区审查方访问跟帖，并通过选择“论坛”访问跟帖，然后阅读Hummingbird帖子的更多信息。
 
-通知:
+注意：
 
 * Aaron可以回复、删除、编辑或拒绝自己的帖子。
 * Aaron还可以标记/允许、回复、删除、编辑、拒绝其他内容。
@@ -149,7 +149,7 @@ boyd.larsen@dodgit.com在作者上，以管理员身份登录，并使用 [成�
 
 请注意，社区审查方具有和管理员相同的选项（图像已关闭搜索侧栏），但没有对其他AEM控制台的访问权限。
 
-注销.
+注销。
 
 ![moderator-access](assets/moderator-access.png)
 
@@ -157,7 +157,7 @@ boyd.larsen@dodgit.com在作者上，以管理员身份登录，并使用 [成�
 
 以Rebekah Larsen身份登录(`rebekah.larsen@mailinator.com`)，启动线程，并通过选择“论坛”访问线程，然后选择“了解更多”以查看Hummingbird帖子。
 
-通知:
+注意：
 
 * 丽贝卡可以删除或编辑自己的帖子。
 * Rebekah还可以回复或标记其他内容。

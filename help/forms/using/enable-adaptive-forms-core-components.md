@@ -8,9 +8,9 @@ docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
-source-git-commit: 6cec9874bff54dea63562f7a880429d54e83ba79
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '968'
 ht-degree: 14%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 14%
 
 本文介绍了如何在您的AEM 6.5 Forms环境中设置和部署基于AEM Archetype 41或更高版本的项目以启用自适应Forms核心组件。 您可以参阅下面的列表，以了解 **AEM 6.5** 用于启用Forms核心组件的兼容版本：
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 在AEM 6.5 Forms环境中启用自适应Forms核心组件之前：
 
@@ -139,7 +139,7 @@ ht-degree: 14%
 >
 >
 >
-> * 如果您在发布实例上访问登录对话框时遇到困难，要通过包管理器安装包，请尝试使用URL： `http://[Publish Server URL]:[PORT]/system/console` 以登录。 这允许您访问发布实例的登录页面，从而允许您继续安装过程。
+> * 如果您在发布实例上访问登录对话框时遇到困难，要通过包管理器安装包，请尝试使用URL： `http://[Publish Server URL]:[PORT]/system/console` 以登录。 这使您可以在发布实例上访问登录页面，从而允许您继续安装过程。
 > * 将原型项目部署到您的环境后，请勿将其删除或放弃。 要将自定义主题和新的自适应Forms核心组件主题添加到您的环境中，需要原型项目。
 
 为您的环境启用了核心组件。 将基于空白核心组件的自适应表单模板和画布3.0主题部署到您的环境，使您能够 [创建基于核心组件的自适应Forms](create-an-adaptive-form-core-components.md).
@@ -148,7 +148,7 @@ ht-degree: 14%
 
 ### 什么是核心组件？
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)是一组用于 AEM 的标准化 Web 内容管理 (WCM) 组件，以缩短您网站的开发时间并降低维护成本。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)是一组用于 AEM 的标准化 Web 内容管理 (WCM) 组件，以缩短您网站的开发时间并降低维护成本。
 
 ### 在启用核心组件上添加了哪些功能？
 

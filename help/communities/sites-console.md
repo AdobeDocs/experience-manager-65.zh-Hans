@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3089'
-ht-degree: 3%
+source-wordcount: '3084'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 3%
 >
 >用于创建的主Communities菜单 [社区站点](/help/communities/sites-console.md)， [社区站点模板](/help/communities/sites.md)， [社区组模板](/help/communities/tools-groups.md)、和 [社区功能](/help/communities/functions.md) 仅供在创作环境中使用。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 在创建社区站点之前，它是 *必填* 至：
 
@@ -97,7 +97,7 @@ ht-degree: 3%
 
   （对于单语言，请不要触摸：英语）使用下拉菜单选择一种语言 *或更多* 可用语言的基础语言 — 德语、意大利语、法语、日语、西班牙语、葡萄牙语（巴西）、繁体中文、简体中文。 系统会为添加的每个语言创建一个社区站点，并按照中所述的最佳实践存在于同一站点文件夹中 [翻译多语言站点的内容](/help/sites-administering/translation.md). 每个站点的根页面都包含一个由所选语言之一的语言代码命名的子页面，例如“en”表示英语，“fr”表示法语。
 
-* **社区站点名称**:
+* **社区站点名称**：
 
   显示在URL中的站点根页面的名称。
 
@@ -192,13 +192,13 @@ ht-degree: 3%
 如果未选中，则不会为社区设置消息。
 默认值为未选中。
 
-* **允许社交登录: Facebook**
+* **允许社交登录：Facebook**
 
   如果选中，则允许网站访客使用其Facebook帐户凭据登录。 选定的 [facebook云配置](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) 创建社区站点后，应将用户配置为将用户添加到社区站点的成员组。
 如果未选中，则不会显示Facebook登录信息。
 保留为未选中状态 *私有* 社区站点。 默认值为未选中。
 
-* **允许社交登录: Twitter**
+* **允许社交登录：Twitter**
 
   如果选中，则允许网站访客使用其Twitter帐户凭据登录。 选定的 [twitter云配置](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) 创建社区站点后，应将用户配置为将用户添加到社区站点的成员组。
 如果未选中，则不会显示Twitter登录信息。
@@ -262,7 +262,7 @@ ht-degree: 3%
 
 ![site-analytics](assets/site-analytics.png)
 
-* **启用 Analytics**
+* **启用Analytics**
 
   仅在Adobe Analytics已 [已配置](/help/communities/analytics.md) 社区功能。
 默认值为未选中。 选中后，会出现其他选择菜单：
@@ -284,7 +284,7 @@ ht-degree: 3%
 
 ![allow-machine-translation](assets/allow-machine-translation.png)
 
-* **为选定的语言启用机器翻译**
+* **为所选语言启用机器翻译**
 
   为机器翻译启用的语言默认为指定的系统设置。 [翻译集成配置](/help/communities/translate-ugc.md#translation-integration-configuration). 可以通过删除默认设置和/或从下拉菜单中选择其他语言来覆盖此站点的这些默认设置。
 

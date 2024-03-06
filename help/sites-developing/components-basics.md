@@ -7,10 +7,10 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4907'
-ht-degree: 1%
+source-wordcount: '4843'
+ht-degree: 0%
 
 ---
 
@@ -146,7 +146,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
 * AEM组件基于 [Sling](https://sling.apache.org/documentation.html).
 * AEM组件（通常）位于以下位置：
 
-   * HTL: `/libs/wcm/foundation/components`
+   * HTL： `/libs/wcm/foundation/components`
    * JSP： `/libs/foundation/components`
 
 * 项目/站点特定的组件（通常）位于以下位置：
@@ -159,11 +159,11 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
 
      jcr属性的列表；这些是变量的，有些可能是可选的，但组件节点的基本结构、其属性和子节点由定义。 `cq:Component` 定义
 
-   * 资源:
+   * 资源：
 
      这些定义组件使用的静态元素。
 
-   * 脚本:
+   * 脚本：
 
   用于实施组件结果实例的行为。
 
@@ -175,7 +175,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
 
    * `jcr:title`  — 组件标题；例如，在组件浏览器或Sidekick中列出组件时用作标签。
    * `jcr:description`  — 组件的描述；可用作组件浏览器或Sidekick中的鼠标悬停提示。
-   * 经典 UI:
+   * 经典UI：
 
       * `icon.png`  — 此组件的图标。
       * `thumbnail.png`  — 如果此组件在段落系统中列出，则显示图像。
@@ -196,7 +196,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
       * `cq:dialog` ( `nt:unstructured`) — 此组件的对话框。 定义允许用户配置组件和/或编辑内容的界面。
       * `cq:design_dialog` ( `nt:unstructured`) — 此组件的设计编辑
 
-   * 经典 UI:
+   * 经典UI：
 
       * `dialog` ( `cq:Dialog`) — 此组件的对话框。 定义允许用户配置组件和/或编辑内容的界面。
       * `design_dialog` ( `cq:Dialog`) — 此组件的设计编辑。
@@ -261,7 +261,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
   <tr>
    <td>.<br /> </td>
    <td><code>cq:Component</code></td>
-   <td>当前组件. 组件为节点类型 <code>cq:Component</code>.<br /> </td>
+   <td>当前组件。 组件为节点类型 <code>cq:Component</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>componentGroup</code></td>
@@ -409,7 +409,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
 * 触屏优化UI：
    * `cq:dialog` ( `nt:unstructured`) — 定义用于编辑此组件内容的对话框
    * `cq:design_dialog` ( `nt:unstructured`) — 指定此组件的设计编辑选项
-* 经典 UI:
+* 经典UI：
    * `dialog` ( `cq:Dialog`) — 定义用于编辑此组件内容的对话框（特定于经典UI）
    * `design_dialog` ( `cq:Dialog`) — 指定此组件的设计编辑选项
    * `icon.png`  — 用作Sidekick中组件的图标的图形文件
@@ -483,7 +483,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
 
    `/etc/designs/<*yourProject*>/jcr:content/<*yourTemplate*>/par`
 
-   例如，请参阅:
+   例如，请参阅：
 
    `/etc/designs/geometrixx/jcr:content/contentpage/par`
 
@@ -602,7 +602,7 @@ AEM中的组件遵循三个不同的层次结构：
 
 ### 组件占位符 {#component-placeholders}
 
-组件必须始终呈现对作者可见的一些HTML，即使组件没有内容也是如此。 否则，它可能会从编辑器的界面中消失，从技术上讲，它会在页面上和编辑器中呈现但不可见。 在这种情况下，作者将无法选择空组件并与之交互。
+组件必须始终呈现对作者可见的一些HTML，即使组件没有内容也是如此。 否则，它可能会从编辑器的界面中消失，从技术上讲，它会在页面上和编辑器中呈现但不可见。 在这种情况下，作者无法选择空组件并与之交互。
 
 因此，组件应该呈现占位符，只要它们在页面编辑器中呈现页面时(当WCM模式为 `edit` 或 `preview`)。
 占位符的典型HTML标记如下：
@@ -706,7 +706,7 @@ AEM中的组件遵循三个不同的层次结构：
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>默认值. 组件版本可通过单击和/或上下文菜单“在鼠标悬停时”访问。<br /> 对于高级使用，相应的客户端对象为： <code>CQ.wcm.EditRollover</code>.</td>
+   <td>默认值。 组件版本可通过单击和/或上下文菜单“在鼠标悬停时”访问。<br /> 对于高级使用，相应的客户端对象为： <code>CQ.wcm.EditRollover</code>.</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
@@ -749,7 +749,7 @@ AEM中的组件遵循三个不同的层次结构：
   </tr>
   <tr>
    <td><code>inline</code></td>
-   <td>(默认值). 该对话框将定位在组件上。<br /> </td>
+   <td>（默认值）。 该对话框将定位在组件上。<br /> </td>
   </tr>
   <tr>
    <td><code>auto</code></td>

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ app-admins组的成员可以使用与应用程序作者相同的权限来创作�
 
    >[!CAUTION]
    >
-   >/var/contentsync访问被拒绝为OOTB。
+   >/var/contentsync访问被拒绝为开箱即用。
    >
    >省略READ权限可能会导致生成和复制空的更新包。
 

@@ -1,6 +1,6 @@
 ---
 title: 使用 Quickview 创建自定义弹出窗口
-description: 默认概览用于电子商务体验，其中显示带有产品信息的弹出窗口，以推动购买。 您可以触发要在弹出窗口中显示的自定义内容。
+description: 默认概览用于电子商务体验中，其中显示弹出窗口和产品信息，以推动购买。 您可以触发要在弹出窗口中显示的自定义内容。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -8,16 +8,16 @@ content-type: reference
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '932'
 ht-degree: 2%
 
 ---
 
 # 使用 Quickview 创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
 
-默认概览用于电子商务体验，其中显示带有产品信息的弹出窗口，以推动购买。 但是，您可以触发要在弹出窗口中显示的自定义内容。 根据查看器的不同，此功能允许用户在热点、缩略图图像或图像映射上进行选择，以查看信息或相关内容。
+默认概览用于电子商务体验中，其中显示弹出窗口和产品信息，以推动购买。 但是，您可以触发要在弹出窗口中显示的自定义内容。 根据查看器的不同，此功能允许用户在热点、缩略图图像或图像映射上进行选择，以查看信息或相关内容。
 
 Dynamic Media中的以下查看器支持概览：
 

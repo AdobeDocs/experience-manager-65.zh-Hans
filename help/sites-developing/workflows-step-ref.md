@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3227'
 ht-degree: 2%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 2%
 
 * **通过电子邮件通知用户**
 
-   * 当工作流到达步骤时，您可以通过向参与者发送电子邮件来通知参与者。
+   * 当工作流到达步骤时，通过向参与者发送电子邮件通知参与者。
    * 如果启用，将向属性定义的用户发送电子邮件 **用户/组**，或者组中的每个成员（如果已定义组）。
 
 * **用户/组**

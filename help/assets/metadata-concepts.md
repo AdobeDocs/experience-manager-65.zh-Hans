@@ -5,16 +5,16 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: abd3fbb5abb339d5b019fd2d7cf325404fb079e8
 workflow-type: tm+mt
-source-wordcount: '2717'
-ht-degree: 9%
+source-wordcount: '2665'
+ht-degree: 7%
 
 ---
 
 # 了解元数据概念 {#why-we-need-metadata}
 
-元数据是指有关数据的数据。 就这一点而言，数据是指您的数字资产，例如图像。 元数据对于高效的资源管理非常关键。
+元数据是指有关数据的数据。 就这一点而言，数据是指您的数字资产，例如图像。 元数据对于高效的资源管理至关重要。
 
 元数据是某个资源的所有可用数据的集合，但并不一定包含在该图像中。 元数据的一些示例包括：
 
@@ -131,10 +131,10 @@ Exif的一个主要限制是一些流行的图像文件格式(如BMP、GIF或PNG
 
 ### Digital Rights Management(DRM)元数据 {#digital-rights-management-metadata}
 
-* 抄送 - [!DNL Creative Commons].
+* 抄送 —  [!DNL Creative Commons].
 * [!DNL XMPRights]。
 * 加 —  [图片授权通用系统](https://www.useplus.com).
-* 棱镜 —  [发布行业标准元数据的要求](https://www.idealliance.org/prism-metadata).
+* 棱镜 —  [发布行业标准元数据的要求](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * PRL — 棱镜权限语言。
 * PUR - PRISM使用权限。
 * `xmpPlus` - PLUS与XMP的集成。
@@ -149,7 +149,7 @@ Exif的一个主要限制是一些流行的图像文件格式(如BMP、GIF或PNG
 ### 打印特定的元数据 {#print-specific-metadata}
 
 * PDF和PDF/X - Adobe PDF和第三方应用程序。
-* 棱镜 —  [发布行业标准元数据的要求](https://www.idealliance.org/prism-metadata).
+* 棱镜 —  [发布行业标准元数据的要求](https://www.w3.org/submissions/2020/SUBM-prism-20200910/Image_Guide.pdf).
 * XMP - [!DNL Extensible Metadata Platform].
 * `xmpPG`  — 分页文本的XMP元数据。
 
@@ -183,7 +183,7 @@ Exif的一个主要限制是一些流行的图像文件格式(如BMP、GIF或PNG
 | 发布者 | 负责提供资产的个人或公司。 |
 | 关系 | 相关资产。 |
 | 权限 | 有关谁拥有此资源的权限的信息。 |
-| source | 从中派生资产的相关资产。 |
+| 源 | 从中派生资产的相关资产。 |
 | 对象 | 资源的主题。 |
 | 标题 | 资源的名称。 |
 | 类型 | 资产的性质或类型。 |

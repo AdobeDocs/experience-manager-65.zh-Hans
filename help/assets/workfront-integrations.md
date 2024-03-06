@@ -5,10 +5,10 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1154'
-ht-degree: 6%
+source-wordcount: '1174'
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 | AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | 本文 |
 
-[!DNL Adobe Workfront] 是一个工作管理应用程序，它帮助您集中在一处管理工作的整个生命周期。之间的集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 允许组织通过将工作和数字资产管理内在地联系起来，提高内容速度和上市时间。 在Workfront中管理其工作的情况下，用户有权访问所需的文档和图像。
+[!DNL Adobe Workfront] 是一个工作管理应用程序，帮助您在一个地方管理整个工作生命周期。 之间的集成 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 允许组织通过将工作和数字资产管理内在地联系起来，提高内容速度和上市时间。 在Workfront中管理其工作的情况下，用户有权访问所需的文档和图像。
 
 此 [!DNL Workfront for Experience Manager enhanced connector] 支持具有端到端工作流的增强业务流程，并提供个性化的端到端客户端体验和中央存储。 Adobe提供了一个标准连接器和一个增强型连接器，用于集成这两个解决方案。 有关比较，请参阅以下支持的功能，并参阅 [的新增功能 [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
 
@@ -47,9 +47,9 @@ ht-degree: 6%
 
 下面详细介绍通过两者之间的各种类型集成提供的功能 [!DNL Assets] 和 [!DNL Workfront].
 
-| 专题 | 描述 | [!DNL Workfront] 和 [!DNL Assets Essentials] *无连接器(OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *需要连接器* | Workfront和 [!DNL Experience Manager as a Cloud Service] *无连接器(OOTB)* |
+| 专题 | 描述 | [!DNL Workfront] 和 [!DNL Assets Essentials] *无连接器（现成）* | [!DNL Workfront for Experience Manager enhanced connector] *需要连接器* | Workfront和 [!DNL Experience Manager as a Cloud Service] *无连接器（现成）* |
 |----|----|----|-----|-----|
-| 部署方法 | 适用于的 [!DNL Assets] 主动出击。 | Assets Essentials | AdobeManaged Services，内部部署 | 云服务 |
+| 部署方法 | 适用于的 [!DNL Assets] 主动出击。 | Assets Essentials | AdobeManaged Services，内部部署 | Cloud Service |
 | **常规** |
 | 发送数字文件 [!DNL Workfront] 到 [!DNL Assets] | WF文档的最新版本可以上传到AEM Assets，该版本作为文档的新版本链接。 | ✓ | ✓ | ✓ |
 | 手动将AEM文件夹链接到Workfront对象 | 现有AEM文件夹可以链接为Workfront文件夹，其子资产可以链接为新的Workfront文档。 | ✓ | ✓ | ✓ |

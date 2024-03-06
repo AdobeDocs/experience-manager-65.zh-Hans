@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '1798'
-ht-degree: 74%
+ht-degree: 73%
 
 ---
 
@@ -107,7 +107,7 @@ AEM 让您根据设备的宽度定义布局：
 
    模拟器工具栏会显示其他布局选项：
 
-   * **旋转设备** - 让您将设备从垂直（纵向）方向旋转到水平（横向）方向，反之亦然。
+   * **旋转设备**  — 允许您将设备从垂直（纵向）方向旋转到水平（横向）方向，反之亦然。
 
      ![旋转设备](do-not-localize/screen_shot_2018-03-23at084612.png) ![旋转设备](do-not-localize/screen_shot_2018-03-23at084637.png)
 

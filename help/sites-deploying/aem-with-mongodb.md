@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '6184'
+source-wordcount: '6185'
 ht-degree: 0%
 
 ---
@@ -543,7 +543,7 @@ echo "{nThreads:32,fileSizeMB:1000,r:true,mmf:true}" | mongoperf
 
 >[!NOTE]
 >
-执行测试时，请检查操作系统监控系统中相关虚拟机的I/O使用情况统计数据。 如果这些值指示的I/O读取值低于100%，则表示您的虚拟机可能存在问题。
+>执行测试时，请检查操作系统监控系统中相关虚拟机的I/O使用情况统计数据。 如果这些值指示的I/O读取值低于100%，则表示您的虚拟机可能存在问题。
 
 **测试主MongoDB实例的写入性能**
 
@@ -584,7 +584,7 @@ echo "{nThreads:32,fileSizeMB:1000,w:true}" | mongoperf
 
 此外，请确保内部版本中使用的所有库都是最新的，以最大限度地减少安全影响。
 
-### Dispatcher配置 {#dispatcher-configuration}
+### Dispatcher 配置 {#dispatcher-configuration}
 
 典型的Dispatcher配置的请求吞吐量是单个AEM实例的10到20倍。
 
@@ -654,7 +654,7 @@ CSP允许微调策略。 但是，在复杂的应用程序中，开发CSP标头�
 
 >[!NOTE]
 >
-有关其工作原理的更多信息，请参见 [有关内容安全策略的OWASP页面](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>有关其工作原理的更多信息，请参见 [有关内容安全策略的OWASP页面](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### 大小调整 {#sizing}
 
@@ -678,4 +678,4 @@ CSP允许微调策略。 但是，在复杂的应用程序中，开发CSP标头�
 
 >[!NOTE]
 >
-请参阅 [MongoDB文档](https://docs.mongodb.com/manual/reference/limits/) 以便您熟悉MongoDB的已知限制和阈值。
+>请参阅 [MongoDB文档](https://docs.mongodb.com/manual/reference/limits/) 以便您熟悉MongoDB的已知限制和阈值。

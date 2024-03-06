@@ -5,9 +5,9 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '574'
 ht-degree: 6%
 
 ---
@@ -74,42 +74,42 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
   </tr>
   <tr>
    <td>includecomponents</td>
-   <td>字符串[]</td>
+   <td>String[]</td>
    <td>包括所有内容</td>
    <td>sling:resourceType</td>
    <td>从JSON导出中排除具有指定sling：resourceType的节点的详细信息</td>
   </tr>
   <tr>
    <td>excludecomponents</td>
-   <td>字符串[]</td>
+   <td>String[]</td>
    <td>不排除任何内容</td>
    <td>sling:resourceType</td>
    <td>仅包含具有来自JSON导出的指定sling：resourceType的节点的详细信息</td>
   </tr>
   <tr>
    <td>excludePropertyPrefixes</td>
-   <td>字符串[]</td>
+   <td>String[]</td>
    <td>不排除任何内容</td>
    <td>属性前缀</td>
    <td>从JSON导出中排除以指定前缀开头的属性</td>
   </tr>
   <tr>
    <td>excludeproperties</td>
-   <td>字符串[]</td>
+   <td>String[]</td>
    <td>不排除任何内容</td>
    <td>属性名称</td>
    <td>从JSON导出中排除指定的属性</td>
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>字符串[]</td>
+   <td>String[]</td>
    <td>包括所有内容</td>
    <td>属性名称</td>
    <td><p>如果设置了excludePropertyPrefixes<br /> 这包括指定的属性，尽管与要排除的前缀匹配，</p> <p>else（忽略排除属性）仅包括这些属性</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
-   <td>字符串[]</td>
+   <td>String[]</td>
    <td>包括所有内容</td>
    <td>子名称</td>
    <td>从JSON导出中排除指定的子项</td>
@@ -152,7 +152,7 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
   </tr>
   <tr>
    <td>&lt;SELECTOR_TO_INC&gt;</td>
-   <td>字符串[] </td>
+   <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
    <td>对于以下sling资源类型，请勿返回默认的CaaS json导出。<br /> 通过将资源呈现为，返回客户json导出；<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>

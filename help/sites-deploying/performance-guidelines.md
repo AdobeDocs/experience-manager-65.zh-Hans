@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: configuring
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2935'
+source-wordcount: '2939'
 ht-degree: 4%
 
 ---
@@ -458,7 +458,7 @@ Adobe建议将TarMK作为客户在所有部署场景中使用的默认持久性�
   <tr>
    <td>Lucene索引配置</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
-   <td><p>启用</p> <p>启用</p> <p>启用</p> </td>
+   <td><p>已启用</p> <p>已启用</p> <p>已启用</p> </td>
    <td>有关可用参数的更多详细信息，请参阅 <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">此页面</a>.</td>
   </tr>
   <tr>
@@ -500,7 +500,7 @@ Adobe建议将TarMK作为客户在所有部署场景中使用的默认持久性�
 | 产品 | AEM 6.2 |
 | Nodestore | tarmk |
 | 数据存储 | 文件DS |
-| 方案 | 单个产品：资产/ 30个并发线程 |
+| 场景 | 单个产品：资产/ 30个并发线程 |
 
 #### 性能基准结果 {#performance-benchmark-results}
 
@@ -568,7 +568,7 @@ Adobe建议将TarMK作为客户在所有部署场景中使用的默认持久性�
   <tr>
    <td>Lucene索引配置</td>
    <td><p><code>CopyOnRead</code></p> <p><code>CopyOnWrite</code></p> <p><code>Prefetch Index Files</code></p> </td>
-   <td><p>启用</p> <p>启用</p> <p>启用</p> </td>
+   <td><p>已启用</p> <p>已启用</p> <p>已启用</p> </td>
    <td>有关可用参数的更多详细信息，请参阅 <a href="https://jackrabbit.apache.org/oak/docs/query/lucene.html">此页面</a>.</td>
   </tr>
   <tr>
@@ -610,7 +610,7 @@ Adobe建议将TarMK作为客户在所有部署场景中使用的默认持久性�
 | 产品 | AEM 6.2 | MongoDB 3.2 WiredTiger |
 | Nodestore | MongoMK | 不适用 |
 | 数据存储 | 文件DS | 不适用 |
-| 方案 | 单个产品：资产/ 30个并发线程 | 单个产品：资产/ 30个并发线程 |
+| 场景 | 单个产品：资产/ 30个并发线程 | 单个产品：资产/ 30个并发线程 |
 
 ### 性能基准结果 {#performance-benchmark-results-1}
 
@@ -723,7 +723,7 @@ Adobe建议将TarMK作为客户在所有部署场景中使用的默认持久性�
    <td> </td>
   </tr>
   <tr>
-   <td>方案</td>
+   <td>场景</td>
    <td><p><br /> 单个产品：资产/每次运行30个并发线程</p> </td>
    <td> </td>
    <td> </td>
@@ -810,7 +810,7 @@ Adobe建议将TarMK作为客户在所有部署场景中使用的默认持久性�
    <td><br /> 不适用</td>
   </tr>
   <tr>
-   <td>方案</td>
+   <td>场景</td>
    <td><p><br /> <br /> 垂直使用案例：媒体/ 2000个并发线程</p> </td>
    <td></td>
    <td></td>

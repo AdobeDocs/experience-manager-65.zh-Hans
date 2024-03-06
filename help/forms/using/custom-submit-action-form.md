@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1543'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 | AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
 | AEM 6.5 | 本文 |
 
-自适应表单需要提交操作来处理用户指定的数据。 提交操作确定使用自适应表单提交的数据上执行的任务。 Adobe Experience Manager (AEM)包括 [OOTB提交操作](../../forms/using/configuring-submit-actions.md) 演示您可以使用用户提交的数据执行的自定义任务。 例如，您可以执行各种任务，如发送电子邮件或存储数据。
+自适应表单需要提交操作来处理用户指定的数据。 提交操作确定使用自适应表单提交的数据上执行的任务。 Adobe Experience Manager (AEM)包括 [开箱即用的提交操作](../../forms/using/configuring-submit-actions.md) 演示您可以使用用户提交的数据执行的自定义任务。 例如，您可以执行各种任务，如发送电子邮件或存储数据。
 
 ## 提交操作的工作流 {#workflow-for-a-submit-action}
 
@@ -84,7 +84,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 >[!NOTE]
 >
->作者提供了重定向URL（使用感谢页面配置）。 [OOTB提交操作](../../forms/using/configuring-submit-actions.md) 使用重定向URL从转发路径引用的资源重定向浏览器。
+>作者提供了重定向URL（使用感谢页面配置）。 [现成提交操作](../../forms/using/configuring-submit-actions.md) 使用重定向URL从转发路径引用的资源重定向浏览器。
 >
 >您可以编写自定义提交操作，将请求转发到资源或servlet。 Adobe建议在处理完成后，为转发路径执行资源处理的脚本将请求重定向到重定向URL。
 
@@ -99,11 +99,11 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
    * **guideComponentType** 字符串和值的类型 **fd/af/components/guidesubmittype**
    * **guideDataModel** 类型字符串，指定提交操作适用的自适应表单的类型。 **xfa** 支持基于XFA的自适应表单，而 **xsd** 基于XSD的自适应表单支持。 **基本** 支持用于不使用XDP或XSD的自适应表单。 要在多种类型的自适应表单上显示操作，请添加相应的字符串。 用逗号分隔每个字符串。 例如，要使某个操作在基于XFA和XSD的自适应表单中可见，请指定相应的值 **xfa** 和 **xsd** 的量度。
 
-   * **jcr：description** 类型为String。 此属性的值显示在“自适应表单编辑”对话框的“提交操作”选项卡的“提交操作”列表中。 OOTB操作存在于该位置的CRX存储库中 **/libs/fd/af/components/guidesubmittype**.
+   * **jcr：description** 类型为String。 此属性的值显示在“自适应表单编辑”对话框的“提交操作”选项卡的“提交操作”列表中。 开箱即用的操作存在于位置的CRX存储库中 **/libs/fd/af/components/guidesubmittype**.
 
 ## 创建自定义提交操作 {#creating-a-custom-submit-action}
 
-执行以下步骤可创建自定义提交操作，将数据保存在CRX存储库中，并向您发送电子邮件。 自适应表单包含OOTB提交操作存储内容（已弃用），可将数据保存在CRX存储库中。 此外，CQ还提供 [邮件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans) 可用于发送电子邮件的API。 在使用Mail API之前， [配置](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) Day CQ Mail服务通过系统控制台。 您可以重用“存储内容（已弃用）”操作将数据存储在存储库中。 在CRX存储库中的/libs/fd/af/components/guidesubmittype/store位置提供了“存储内容（已弃用）”操作。
+执行以下步骤可创建自定义提交操作，将数据保存在CRX存储库中，并向您发送电子邮件。 自适应表单包含现成的提交操作存储内容（已弃用），可将数据保存在CRX存储库中。 此外，CQ还提供 [邮件](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans) 可用于发送电子邮件的API。 在使用Mail API之前， [配置](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled) Day CQ Mail服务通过系统控制台。 您可以重用“存储内容（已弃用）”操作将数据存储在存储库中。 在CRX存储库中的/libs/fd/af/components/guidesubmittype/store位置提供了“存储内容（已弃用）”操作。
 
 1. 通过URL https://登录CRXDE Lite&lt;server>：&lt;port>/crx/de/index.jsp. 在/apps/custom_submit_action文件夹中创建具有属性sling：Folder并命名为store_and_mail的节点。 创建custom_submit_action文件夹（如果尚不存在）。
 
@@ -139,7 +139,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
    将post.jsp.jspPOST添加到您的操作中。 (/apps/custom_submit_action/store_and_mail/)。
 
-   运行OOTB Store操作(post.store.jspPOST)。 使用 [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)(java.lang.String、java.lang.String、org.apache.sling.api.resource.Resource、org.apache.sling.api.SlingHttpServletRequest、org.apache.sling.api.SlingHttpServletResponse) CQ在您的代码中提供的API以运行存储操作。 在JSP文件中添加以下代码：
+   运行现成的“存储”操作(post.store.jspPOST)。 使用 [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)(java.lang.String、java.lang.String、org.apache.sling.api.resource.Resource、org.apache.sling.api.SlingHttpServletRequest、org.apache.sling.api.SlingHttpServletResponse) CQ在您的代码中提供的API以运行存储操作。 在JSP文件中添加以下代码：
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 

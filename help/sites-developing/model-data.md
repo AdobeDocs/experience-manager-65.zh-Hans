@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -164,7 +164,7 @@ JCR引入了工作区的抽象概念，使得许多开发人员不知道如何�
 
 因此，我会将这些引用建模为“弱引用”（在JCR v1.0中，这实际上归结为包含目标节点的uuid的字符串属性），或者简单地使用路径。 有时候，这条道路从一开始就更有意义。
 
-我认为在某些用例中，当引用悬停时，系统真的无法正常工作，但我无法从我的直接体验中给出一个良好的“真实”但简单的示例。
+我认为在某些用例中，当引用悬停时，系统真的无法工作，但我无法从自己的直接体验中得出一个好的“真实”但简单的示例。
 
 ### 规则#6：文件是文件。 {#rule-files-are-files}
 
@@ -214,7 +214,7 @@ JCR引入了工作区的抽象概念，使得许多开发人员不知道如何�
 
 #### 示例 {#example-7}
 
-使用:
+使用：
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg

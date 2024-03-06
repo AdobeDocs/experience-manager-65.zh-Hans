@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 1%
+source-wordcount: '913'
+ht-degree: 0%
 
 ---
 
@@ -83,7 +83,7 @@ AEM Brackets扩展支持Brackets版本1.0或更高版本。
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 
-项目设置允许定义：
+通过“项目设置”，可定义以下内容：
 
 1. 服务器URL(例如， `http://localhost:4502`)
 1. 是否容忍没有有效HTTPS证书的服务器（除非需要，否则保持未选中状态）
@@ -110,7 +110,7 @@ AEM Brackets扩展为文件和文件夹提供了以下类型的内容同步，�
 
 ### 完整内容包同步 {#full-content-package-synchronization}
 
-在 **AEM** 菜单， **导出内容包** 或 **导入内容包** 选项允许将整个项目与服务器同步。
+在 **AEM** 菜单， **导出内容包** 或 **导入内容包** 选项允许您将整个项目与服务器同步。
 
 ![chlimage_1-57](assets/chlimage_1-57a.png)
 

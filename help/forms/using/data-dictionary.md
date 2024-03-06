@@ -6,7 +6,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '3842'
 ht-degree: 0%
@@ -298,7 +298,7 @@ ht-degree: 0%
    <td>DDE的子类型： ENUM。 仅允许用于STRING和NUMBER elementType。</td>
   </tr>
   <tr>
-   <td>键</td>
+   <td>关键值</td>
    <td>布尔值</td>
    <td>用于指示DDE是否为关键元素的布尔字段。</td>
   </tr>
@@ -308,7 +308,7 @@ ht-degree: 0%
    <td>用于指示是否计算DDE的布尔字段。 计算的DDE值是其他DDE值的函数。 默认情况下，支持jsp表达式。</td>
   </tr>
   <tr>
-   <td>表达式</td>
+   <td>运算式</td>
    <td>字符串</td>
    <td>“已计算”DDE的表达式。 默认提供的表达式计算服务支持JSP EL表达式。 您可以使用自定义实施替换表达式服务。</td>
   </tr>
@@ -463,7 +463,7 @@ ht-degree: 0%
 * 叶层不允许使用复合元素和收集元素。 叶级别只允许使用原始(String、Date、Number、Boolean)元素。 此验证可确保没有没有没有子DDE的组合和收集要素。
 * 上传XSD文件以创建数据字典时，数据字典编辑器会提示输入顶级元素（如果存在）以创建数据字典。
 * 名称是数据字典的唯一必需参数。
-* 父DDE（复合）不能有两个同名的子项
+* 父DDE（复合）不能有两个同名的子级
 * 确保仅在将DDE标记为非必需参数时将其标记为已计算。 无法计算所需的元素，也无法计算所需的元素。 此外，集合和复合元素不能是计算元素。
 * 确保仅在未计算DDE时将其标记为必需。 它还确保它不是表示收集类型的“collectionElement”（即收集要素的唯一子项）。
 * 数据字典或DDE的extendedProperties中不允许使用空键或重复键。

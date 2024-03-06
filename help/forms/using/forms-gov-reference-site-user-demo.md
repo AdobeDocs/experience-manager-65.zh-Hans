@@ -4,9 +4,9 @@ description: 使用虚构的用户和组通过We.Gov和We.Finance演示包执行
 contentOwner: anujkapo
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2475'
+source-wordcount: '2478'
 ht-degree: 1%
 
 ---
@@ -145,7 +145,7 @@ We.Gov演示包附带以下内置虚拟用户：
 
 1. 然后，Camila选择“Form Model（表单模型）” > “Select Form Data Model（从以下列表中选择）” > “Select We.gov Enrollment FDM（从选项列表中选择注册FDM）”。
 
-1. 单击“保存并关闭”。
+1. 单击保存并关闭。
 
    ![FDM选择](assets/aftia-select-fdm.jpg)
 
@@ -337,7 +337,7 @@ George批准Aya的申请，并且借助现有的自动化工作流，还会向Ay
 
 1. 导航到左上角并单击 **批准** 批准申请。
 1. 在该模式窗口中，您可以为CX销售线索留下一条消息。
-1. 单击完成。
+1. 单击“完成”。
 1. （公民角色）打开您的电子邮件客户端以查看发送到Aya的电子邮件。
 
    ![查看发送到Aya的电子邮件](/help/forms/using/assets/email_client.png)
@@ -386,7 +386,7 @@ George批准Aya的申请，并且借助现有的自动化工作流，还会向Ay
 
 1. 返回到AEM，导航到左上角并单击 **提交** 提交申请。
 1. 在该模式窗口中，您可以留言。
-1. 单击完成。
+1. 单击“完成”。
 
    ![“活动”选项卡](/help/forms/using/assets/activities_tab.png) ![确认新联系人](/help/forms/using/assets/confirm_new_contact.png)
 

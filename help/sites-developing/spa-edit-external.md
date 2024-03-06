@@ -2,10 +2,10 @@
 title: 在Adobe Experience Manager中编辑外部SPA
 description: 本文档介绍了将独立SPA上传到Adobe Experience Manager实例、添加内容的可编辑部分以及启用创作的建议步骤。
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2432'
-ht-degree: 1%
+source-wordcount: '2391'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 1%
 
 本文档介绍了将独立SPA上传到AEM实例、添加内容的可编辑部分以及启用创作的建议步骤。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 先决条件很简单。
 
@@ -153,7 +153,7 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 创建可创作的React组件后，即可在整个应用程序中使用它们。
 
-让我们举一个示例页面，该页面需要添加WKND SPA项目中的文本。 对于此示例，您要显示文本“Hello World！” 开启 `/content/wknd-spa-react/us/en/home.html`.
+让我们举一个示例页面，该页面需要添加WKND SPA项目中的文本。 对于此示例，您要显示文本“Hello World！” 日期 `/content/wknd-spa-react/us/en/home.html`.
 
 1. 确定要显示的节点的路径。
 
@@ -368,7 +368,7 @@ RemotePage组件希望实施提供类似于资产清单的资产清单 [在此�
 
 * [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
 * [WKND SPA项目](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=zh-Hans)
-* [利用 React 在 AEM 中开始使用 SPA](spa-getting-started-react.md)
+* [在AEM中使用React快速入门SPA](spa-getting-started-react.md)
 * [SPA参考资料（API参考）](spa-reference-materials.md)
 * [SPA Blueprint和PageModelManager](spa-blueprint.md#pagemodelmanager)
 * [SPA模型路由](spa-routing.md)

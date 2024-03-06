@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 9c97f99e-d6ef-4817-8b2a-201ab22f2b38
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
 # 配置视频组件 {#configure-the-video-component}
 
-此 [视频组件](/help/sites-authoring/default-components-foundation.md#video) 让您能够在页面上放置预定义的开箱即用(OOTB)视频资产。
+此 [视频组件](/help/sites-authoring/default-components-foundation.md#video) 让您能够在页面上放置预定义的、开箱即用的视频资产。
 
 为了进行正确的转码，管理员需单独安装FFmpeg。 请参阅 [安装FFmpeg并配置AEM](#install-ffmpeg). 管理员也是 [配置视频配置文件](#configure-video-profiles) 用于HTML5元素。
 
@@ -81,4 +81,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->升级AEM实例时，不会保留对默认现成(OOTB)工作流模型所做的更改。 Adobe建议先复制修改过的工作流模型，然后再进行编辑。 例如，复制OOTB [!UICONTROL DAM更新资产] 之前选择的模型。 [!UICONTROL DAM更新资产] 用于选取升级前存在的视频配置文件名称的模型。 然后，您可以叠加 `/apps` 节点，以便AEM检索对OOTB模型的自定义更改。
+>升级AEM实例时，不会保留对默认现成工作流模型所做的更改。 Adobe建议先复制修改过的工作流模型，然后再进行编辑。 例如，复制现成的 [!UICONTROL DAM更新资产] 之前选择的模型。 [!UICONTROL DAM更新资产] 用于选取升级前存在的视频配置文件名称的模型。 然后，您可以叠加 `/apps` 节点，以便AEM检索对现成模型的自定义更改。

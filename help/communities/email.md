@@ -8,7 +8,7 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '796'
 ht-degree: 0%
@@ -41,7 +41,7 @@ AEM Communities使用电子邮件执行以下操作：
 
 这是基于的文档 [配置电子邮件通知](../../help/sites-administering/notification.md)，但不同之处在于 `"From" address` 是 *非* 必填，且应留空。
 
-例如，（填入的值仅用于说明目的）：
+例如（填充的值仅用于说明目的）：
 
 ![email-config](assets/email-config.png)
 

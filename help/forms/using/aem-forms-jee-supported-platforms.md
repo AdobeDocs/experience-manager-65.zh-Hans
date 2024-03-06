@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 3fe9b3d4cf6ddf7d64dbece7d62d7f18dfa183f2
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '4054'
+source-wordcount: '4057'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ JEE服务器上的AEM Forms可以使用支持的操作系统、应用程序服�
 
 #### 完整安装程序
 
-- **对完整安装程序的升级支持**：随每6个AEM Service Pack版本发布一次完整安装程序。 例如，随6.5.12.0和6.5.18.0 SP发行版一起发行了完整的安装程序。 AEM Forms允许仅从最后两个完整安装程序进行直接升级。 例如，AEM Forms仅帮助从最后两个完整安装程序（即6.5.12.0和6.5.6.0）直接升级到版本6.5.18.0。如果您需要从以前的升级进行升级，则可以使用多级跳升级，以便首先转到受支持的完整安装程序版本，然后再转到最新版本。
+- **对完整安装程序的升级支持**：每六个AEM Service Pack版本发行一次完整安装程序。 例如，随6.5.12.0和6.5.18.0 SP发行版一起发行了完整的安装程序。 AEM Forms允许仅从最后两个完整安装程序进行直接升级。 例如，AEM Forms仅帮助从最后两个完整安装程序（即6.5.12.0和6.5.6.0）直接升级到版本6.5.18.0。如果您需要从以前的升级进行升级，则可以使用多级跳升级，以便首先转到受支持的完整安装程序版本，然后再转到最新版本。
 
 - **弃用和删除**：每个完整安装程序版本都会更新平台支持。 在完整安装程序版本期间在platform matrix中标记为已弃用的任何软件，都有权在后续的完整安装程序版本中从支持的平台矩阵中删除，这指示对软件的支持已终止。
 
@@ -73,21 +73,21 @@ Adobe会推荐这些配置，并在标准软件维护协议中提供完全支持
   </tr>
   <tr>
    <td>L：有限支持</td>
-   <td>在满足某些先决条件后，Adobe将为此配置提供完全支持和维护。 并非所有功能都可用于配置。 请联系 Adobe 企业支持部门以了解先决条件并提出支持请求。<br /> </td>
+   <td>在满足某些先决条件后，Adobe将为此配置提供完全支持和维护。 并非所有功能在配置中均可用。 联系Adobe企业支持以了解先决条件并提出支持请求。<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### 不受支持的配置 {#unsupported-configurations}
+### 不支持的配置 {#unsupported-configurations}
 
 | 支持级别 | 描述 |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | E：预期有效 | 该配置应可正常工作，并且没有相反的报告。 |
-| Z：不支持 | 不支持该配置。 Adobe 不会就该配置是否正常工作发表任何声明，因此不支持该配置。 |
+| Z：不支持 | 不支持该配置。 Adobe不发表任何关于配置是否有效的声明，也不支持配置。 |
 
 >[!NOTE]
 >
->为了帮助 AEM Forms 客户降低拥有成本、简化部署架构并实现开发堆栈现代化，Adobe Experience Manager 企业平台正在从基于应用程序服务器的部署转向基于 OSGi 的独立部署。 Adobe 继续通过减少基础架构组件矩阵来支持 AEM Forms JEE 堆栈。
+>为帮助AEM Forms客户降低拥有成本、简化部署架构并使开发栈栈现代化，Adobe Experience Manager企业平台正在从基于应用程序服务器的部署转向基于OSGi的独立部署。 Adobe通过减少的基础架构组件列表，继续支持AEM Forms JEE栈栈。
 >
 >在版本6.5中，不再支持Adobe客户中利用率最低的基础架构组件，如下所示：
 >
@@ -186,9 +186,9 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
    <td><p>支持</p> </td>
   </tr>
   <tr>
-   <td>IBM® DB2® 11.1（不推荐使用）</td>
+   <td>IBM® DB2® 11.1（已弃用）</td>
    <td>存储库微内核</td>
-   <td>R：受限支持</td>
+   <td>R：有限的支持</td>
   </tr>
   <tr>
   <tr>
@@ -200,8 +200,8 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
 </table>
 
 - 全新安装不支持IBM® DB2®。 仅支持现有客户升级到AEM 6.5 Forms。
-- MongoDB是第三方软件，不包含在AEM许可包中。 有关更多信息，请参阅 [MongoDB许可政策](https://www.mongodb.org/about/licensing/).
-- 为了充分利用您的AEM部署，Adobe建议许可MongoDB Enterprise版本以受益于专业支持。
+- MongoDB是第三方软件，未包含在AEM许可包中。 有关更多信息，请参阅 [MongoDB许可政策](https://www.mongodb.org/about/licensing/).
+- 为了充分利用AEM部署，Adobe建议许可MongoDB Enterprise版本，以获得专业支持。
 - Adobe客户关怀团队可协助处理与将MongoDB与AEM结合使用相关的问题。 欲了解更多信息，请参见 [适用于Adobe Experience Manager的MongoDB页面](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 - “文件系统”包括符合POSIX的块存储。 这包括网络存储技术。 请注意，文件系统性能可能会有所不同，并影响整体性能。 建议使用网络/远程文件系统对AEM进行负载测试。
 - 仅支持MongoDB存储引擎WiredTiger。
@@ -287,10 +287,10 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
    <tr>
    <td>Microsoft® Windows Server 2019（64位）（已弃用）</td>
    <td>答：支持</td>
-   <td>服务包和关键更新</td>
+   <td>Service Pack和关键更新</td>
   </tr>
      <tr>
-   <td>微软®视窗服务器 2022（64 位）</td>
+   <td>Microsoft® Windows Server 2022（64位）</td>
    <td>答：支持</td>
    <td>Service Pack和关键更新</td>
   </tr>
@@ -383,12 +383,12 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
 <table>
  <tbody>
   <tr>
-   <th><p><strong>产品（基础版本）</strong></p> </th>
+   <th><p><strong>产品（基本版本）</strong></p> </th>
    <th><p><strong>支持的修补程序定义</strong></p> </th>
   </tr>
   <tr>
    <td>Microsoft® Active Directory 2016（已弃用）</td>
-   <td>维护版本和修订包</td>
+   <td>维护版本和修复包</td>
   </tr>
   <tr>
    <td>Microsoft® Active Directory 2022</td>
@@ -496,11 +496,11 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
 >- PDF Generator无法使用Microsoft® Project 2019转换文件。
 >- 如果Microsoft® Office安装由于任何原因（例如，批量许可安装无法在指定时间段内找到KMS主机）而停用或取消许可，则在重新许可并重新激活安装之前，转换可能会失败。
 
-### 辅助功能支持的例外情况 {#exceptions-to-accessibility-support}
+### 辅助功能支持的异常 {#exceptions-to-accessibility-support}
 
-AEM Forms的以下子系统不符合 [508](https://www.section508.gov/) 标准：
+AEM Forms的以下子系统不是 [508](https://www.section508.gov/) 合规：
 
-- 自适应表单创作 UI
+- 自适应Forms创作UI
 - Forms Manager创作UI
 - 通信管理创作UI
 - 管理员UI（管理控制台UI）

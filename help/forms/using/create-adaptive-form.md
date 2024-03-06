@@ -3,9 +3,9 @@ title: '教程：创建自适应表单'
 description: 了解创建、布局和预览自适应表单。 此外，了解如何配置提交操作。
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1313'
+source-wordcount: '1314'
 ht-degree: 8%
 
 ---
@@ -94,14 +94,14 @@ AEM [!DNL Forms] 提供了多个组件以便在自适应表单上显示信息。
      </tr> 
      <tr> 
       <td>必填字段</td> 
-      <td>启用</td> 
-      <td>启用</td> 
-      <td>启用</td> 
+      <td>已启用</td> 
+      <td>已启用</td> 
+      <td>已启用</td> 
      </tr> 
      <tr> 
       <td>允许多行<br /> </td> 
       <td>已禁用</td> 
-      <td>启用</td> 
+      <td>已启用</td> 
       <td>已禁用</td> 
      </tr> 
     </tbody> 
@@ -114,7 +114,7 @@ AEM [!DNL Forms] 提供了多个组件以便在自适应表单上显示信息。
    | 标题 | 邮政编码 |
    | 元素名称 | customer_ZIPCode |
    | 最大数字数量 | 6 |
-   | 必填字段 | 启用 |
+   | 必填字段 | 已启用 |
    | 显示图案类型 | 无模式 |
 
 1. 拖动 **[!UICONTROL 电子邮件]** 页脚组件之前的组件。 打开组件的属性，设置下表中列出的值，然后选择 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -123,7 +123,7 @@ AEM [!DNL Forms] 提供了多个组件以便在自适应表单上显示信息。
    |---|---|
    | 标题 | 电子邮件 |
    | 元素名称 | customer_Email |
-   | 必填字段 | 启用 |
+   | 必填字段 | 已启用 |
 
 1. 拖动 **[!UICONTROL 文件附件]** 页脚组件之前的组件。 打开组件的属性，设置下表中列出的值，然后选择 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -143,7 +143,7 @@ AEM [!DNL Forms] 提供了多个组件以便在自适应表单上显示信息。
      </tr> 
      <tr> 
       <td>必填字段</td> 
-      <td>启用</td> 
+      <td>已启用</td> 
      </tr> 
     </tbody> 
    </table>
@@ -170,7 +170,7 @@ AEM [!DNL Forms] 提供了多个组件以便在自适应表单上显示信息。
    | 收件人 | `${customer_Email}` |
    | 主题 | 确认：您已在We.Retail网站上添加送货地址。 |
    | 电子邮件模板 | 您好 `${customer_Name}`，则会添加以下地址作为您帐户的送货地址： <br>`${customer_Name}`， `${customer_Shipping_Address}`， `${customer_State}`， `${customer_ZIPCode}`<br> 谨祝， We.Retail |
-   | 包括附件 | 启用 |
+   | 包括附件 | 已启用 |
 
    您的表单已准备就绪。 现在，您可以预览表单并测试功能。 如果您使用了本教程中提到的名称，并在运行AEM的计算机上访问了该表单 [!DNL Forms] 服务器，则表单可在 [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
 

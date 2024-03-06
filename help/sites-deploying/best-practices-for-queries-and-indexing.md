@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '4598'
-ht-degree: 6%
+source-wordcount: '4518'
+ht-degree: 5%
 
 ---
 
@@ -140,7 +140,7 @@ Lucene注册一个JMX Bean，它将提供有关索引内容的详细信息，包
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-在AEM 6.3中，上述两个参数是预配置的OOTB，可以通过OSGi QueryEngineSettings持久保留。
+在AEM 6.3中，上述两个参数是预配置的现成参数，可以通过OSGi QueryEngineSettings持久保留。
 
 下提供了更多信息： [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -211,7 +211,7 @@ Lucene索引的Oak文档列出了设计索引时需要考虑的几个事项：
 
 ### JCR查询备忘单 {#jcrquerycheatsheet}
 
-为了支持创建高效的 JCR 查询和索引定义，[JCR 查询备忘表](assets/JCR_query_cheatsheet-v1.1.pdf)可供下载，并可在开发过程中用作参考。它包含 QueryBuilder、XPath 和 SQL-2 的示例查询，并涵盖了在查询性能方面表现不同的多个场景。它还提供了关于如何构建或定制 Oak 索引的建议。本备忘单的内容适用于AEM 6.5和AEMas a Cloud Service。
+为了支持创建高效的JCR查询和索引定义， [JCR查询备忘单](assets/JCR_query_cheatsheet-v1.1.pdf) 可供下载，并可在开发过程中用作参考。 它包含 QueryBuilder、XPath 和 SQL-2 的示例查询，并涵盖了在查询性能方面表现不同的多个场景。它还提供了关于如何构建或定制 Oak 索引的建议。本备忘单的内容适用于AEM 6.5和AEMas a Cloud Service。
 
 ## 重新索引 {#re-indexing}
 
@@ -248,7 +248,7 @@ Lucene索引的Oak文档列出了设计索引时需要考虑的几个事项：
    * 所有Oak版本
    * 仅 [属性索引](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
 
-* 症状:
+* 症状：
 
    * 结果中缺少属性索引的定义更新之前存在的节点
 
@@ -273,7 +273,7 @@ Lucene索引的Oak文档列出了设计索引时需要考虑的几个事项：
    * 所有Oak版本
    * 仅 [lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
-* 症状:
+* 症状：
 
    * Lucene索引不包含预期结果
    * 查询结果未反映索引定义的预期行为
@@ -317,7 +317,7 @@ Lucene索引的Oak文档列出了设计索引时需要考虑的几个事项：
    * 所有Oak版本
    * 仅 [lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
-* 症状:
+* 症状：
 
    * Lucene索引不包含预期结果
 
@@ -348,7 +348,7 @@ Lucene索引的Oak文档列出了设计索引时需要考虑的几个事项：
    * 所有Oak版本
    * 仅 [lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
-* 症状:
+* 症状：
 
    * Lucene索引不包含预期结果
 

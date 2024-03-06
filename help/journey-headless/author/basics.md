@@ -2,10 +2,10 @@
 title: 学习创作基础知识
 description: 了解使用内容片段为 Headless CMS 创作内容的概念和机制。
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1691'
-ht-degree: 77%
+source-wordcount: '1694'
+ht-degree: 75%
 
 ---
 
@@ -98,11 +98,11 @@ AEM 安装通常至少包含两个环境：
 
 #### 创建文件夹 {#creating-folder}
 
-您可以通过在 Assets 控制台的&#x200B;**文件**&#x200B;部分中创建一系列文件夹来完成此操作。选择&#x200B;**创建**&#x200B;选项（右上角），然后选择&#x200B;**文件夹**：
+为此，您可以在中创建一系列文件夹 **文件** 资产控制台的部分。 选择&#x200B;**创建**&#x200B;选项（右上角），然后选择&#x200B;**文件夹**：
 
 ![“创建文件夹”选项](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
-这将打开一个对话框，您可以在其中输入详细信息，然后使用 **创建**：
+随后将打开一个对话框，您可在其中输入详细信息，然后用&#x200B;**创建**&#x200B;进行确认：
 
 ![“创建文件夹”对话框](/help/journey-headless/author/assets/headless-journey-author-folder-02.png)
 
@@ -126,7 +126,7 @@ AEM 安装通常至少包含两个环境：
 
 以防万一...
 
-您可能会获得一个初始文件夹，可以在其中创建文件夹。这是因为必须将一些配置详细信息应用于根文件夹（此操作通常由开发人员或系统管理员执行）。您可能对此不感兴趣，但如有必要，您可以检查文件夹&#x200B;**属性**&#x200B;的&#x200B;**云服务**&#x200B;中的&#x200B;**配置**：
+您可能会获得一个初始文件夹，可以在其中创建文件夹。这是因为必须将一些配置详细信息应用于根文件夹（此操作通常由开发人员或系统管理员执行）。您可能对此不感兴趣，但如果需要，您可以查看 **配置** 在 **Cloud Service** 文件夹的 **属性**：
 
 ![创建文件夹属性 – 配置](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 

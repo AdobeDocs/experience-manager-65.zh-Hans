@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2099'
+source-wordcount: '2100'
 ht-degree: 2%
 
 ---
@@ -99,7 +99,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 组件的标签或标题可标识表单组件所表示的内容。 例如，文本“名字”会告诉用户必须在文本字段中输入其名字。 为便于屏幕阅读器访问，标签以编程方式与表单组件关联。 或者，表单控件配置有附加的可访问性信息。
 
-屏幕阅读器感知到的标签不一定与可视字幕相同。 在某些情况下，您可能希望更详细地了解此控件的用途。 对于表单中的每个字段对象，可使用辅助功能选项指定屏幕阅读器标注的内容以标识特定表单字段。
+屏幕阅读器感知到的标签不需要与可视字幕相同。 在某些情况下，您可能希望更详细地了解此控件的用途。 对于表单中的每个字段对象，可使用辅助功能选项指定屏幕阅读器标注的内容以标识特定表单字段。
 
 要使用“辅助功能”选项，请执行以下步骤：
 

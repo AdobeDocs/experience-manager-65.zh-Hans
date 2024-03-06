@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3212'
+source-wordcount: '3156'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,7 @@ AEM配置为使用下列三种推送通知服务之一：
    1. 在页面的右上角，单击链接»*编辑身份池”*. 将显示身份池ID。 保存此文本供以后使用。
    1. 在同一页面上，选择“Unauthenticated role”旁边的下拉菜单，并确保它具有Cognito_角色&lt;pool name=&quot;&quot;>已选择UnauthRole。 保存更改。
 
-1. **配置访问权限**
+1. **配置访问**
 
    1. 登录 [身份和访问管理](https://console.aws.amazon.com/iam/home) (IAM)。
    1. 选择角色。
@@ -169,7 +169,7 @@ AEM配置为使用下列三种推送通知服务之一：
    <table>
     <tbody>
      <tr>
-     <td><p> </p> <p>{</p> <p> “版本”：“2012-10-17”，</p> <p> "语句": [</p> <p> {</p> <p> "操作": [</p> <p> "mobileanalytics：PutEvents"，</p> <p> “cognito-sync：*”，</p> <p> "SNS：CreatePlatformEndpoint"，</p> <p> "SNS：Subscribe"</p> <p> ],</p> <p> "Effect"： "Allow"，</p> <p> "资源": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
+     <td><p> </p> <p>{</p> <p> “版本”：“2012-10-17”，</p> <p> "Statement"： [</p> <p> {</p> <p> "Action"： [</p> <p> "mobileanalytics：PutEvents"，</p> <p> “cognito-sync：*”，</p> <p> "SNS：CreatePlatformEndpoint"，</p> <p> "SNS：Subscribe"</p> <p> ]，</p> <p> "Effect"： "Allow"，</p> <p> "Resource"： [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
      </tr>
     </tbody>
     </table>
@@ -288,7 +288,7 @@ CRXDE Lite：
 1. 发送通知
 
    * 在应用程序仪表板中，找到推送通知拼贴。
-   * 选择通知，或单击右下方的详细信息按钮( )。..)，显示通知列表。 此列表还指示通知是否已准备好发送、已发送，或者在发送过程中是否出现错误。
+   * 选择通知，或单击右下方的详细信息按钮(. ..)，显示通知列表。 此列表还指示通知是否已准备好发送、已发送，或者在发送过程中是否出现错误。
    * 选中一个通知的复选框（仅限），然后单击列表上方的“发送通知”按钮。 在出现的对话框中，您有机会“取消”或“发送”通知。
 
 1. 处理结果
@@ -368,7 +368,7 @@ CRXDE Lite：
 
 >[!NOTE]
 >
->**附加信息**:
+>**其他信息**：
 >
 >6.4版本之后不支持Pushwoosh和Amazon SNS，它们将作为一个加载项从包共享中提供。
 

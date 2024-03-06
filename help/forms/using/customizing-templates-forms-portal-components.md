@@ -7,16 +7,16 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
 
 # 自定义Forms Portal组件的模板{#customizing-templates-for-forms-portal-components}
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 [管理表单元数据](../../forms/using/manage-form-metadata.md)
 
@@ -82,19 +82,19 @@ Forms Portal允许您在表单列表中使用自定义元数据。 在为资源�
 
 任何Forms Portal组件的自定义模板都包含可重复和不可重复条目。 可重复条目是用于列出的基本实体。 可重复条目的示例包括Search &amp; Lister、Drafts &amp; Submissions和Link组件。
 
-Forms Portal为占位符提供了一个语法以显示自定义/OOTB元数据。 占位符在显示表单、草稿或提交的结果之后填充。
+Forms Portal为占位符提供了一个语法，用于显示自定义/现成元数据。 占位符在显示表单、草稿或提交的结果之后填充。
 
 要包含可重复条目，请配置属性的值 **数据可重复** 到 **true**.
 
 *在所讨论的示例中，自定义模板的顶部存在两个Div元素。 第一个带有“__FP_boxes-container”CSS类，可用作所列出表单的容器元素。 第二个具有“__FP_boxes”CSS类的模板用于基本实体，在本例中为“表单”。 此&#x200B;**数据可重复**Div元素中存在的属性具有值&#x200B;**true**.*
 
-每个占位符都有一个专用的OOTB元数据集。 要在表单上的特定位置显示自定义元数据，请添加 **${metadata_prop} 属性** 在那个地方。
+每个占位符都有一个专用的现成元数据集。 要在表单上的特定位置显示自定义元数据，请添加 **${metadata_prop} 属性** 在那个地方。
 
 *在本例中，元数据属性在多个实例中使用。 例如，它用于&#x200B;**描述**，**name**，**formUrl**，**htmlStyle**，**pdfUrl**，**pdf样式**、和&#x200B;**路径**按照规定的方式进行。*
 
 ## 开箱即用的元数据 {#out-of-the-box-metadata}
 
-各种Forms Portal组件提供了一组排他性的OOTB元数据，您可以将这些元数据用于列出。
+各种Forms Portal组件提供了排他性的现成元数据集，您可以将这些元数据用于列表。
 
 ### 搜索和列表组件 {#search-amp-lister-component}
 
@@ -146,7 +146,7 @@ Forms Portal为占位符提供了一个语法以显示自定义/OOTB元数据。
 * **今天**：在DD中创建草稿或提交文件的日期:MM:yyyy格式。
 * **TimeNow**：在HH中创建草稿或提交文件的时间:MM:SS 24小时格式
 
-*注意:*
+*注意：*
 
 1. 对于“草稿和提交”组件下“草稿”部分中的删除选项，请将CSS类命名为“__FP_deleteDraft”。 此外，还包含属性“draftID”和值 **${draftID}**，即相应草稿的草稿ID。
 
@@ -169,7 +169,7 @@ Forms Portal为占位符提供了一个语法以显示自定义/OOTB元数据。
 ## 提示、技巧和已知问题 {#tips-tricks-and-known-issues}
 
 1. 请勿在任何自定义模板中使用单引号(&#39;)。
-1. 对于自定义元数据，请将此属性存储在 **jcr：content/metadata** 仅节点。 如果将其存储在任何其他位置，Forms Portal将无法显示元数据。
+1. 对于自定义元数据，请将此属性存储在 **jcr：content/metadata** 仅节点。 如果您将其存储在任何其他位置，Forms Portal将无法显示元数据。
 1. 确保任何自定义元数据或现有元数据的名称不包含冒号( ： )。 如果是，则无法在用户界面上显示它。
 1. **数据可重复** 对于以下任何项目没有任何意义： **链接** 组件。 Adobe建议您避免在链接组件的模板中使用此属性。
 

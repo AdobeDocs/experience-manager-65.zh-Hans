@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1737'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 在AEM中获取管理会话或资源解析程序的主要方法是使用 `SlingRepository.loginAdministrative()` 和 `ResourceResolverFactory.getAdministrativeResourceResolver()` 方法由Sling提供。
 
-但是，这两种方法都不是围绕 [最小特权原则](https://en.wikipedia.org/wiki/Principle_of_least_privilege) 并且让开发人员很容易不去为内容规划适当的结构和相应的访问控制级别(ACL)。 如果此类服务中存在漏洞，则它通常会导致将权限提升到 `admin` 用户，即使代码本身不需要管理权限即可工作。
+但是，这两种方法都不是围绕 [最小特权原则](https://en.wikipedia.org/wiki/Principle_of_least_privilege). 这使得开发人员很容易不提前为其内容规划适当的结构和相应的访问控制级别(ACL)。 如果此类服务中存在漏洞，则它通常会导致将权限提升到 `admin` 用户，即使代码本身不需要管理权限即可工作。
 
 ## 如何逐步停用管理员会话 {#how-to-phase-out-admin-sessions}
 
 ### 优先级0：功能是否处于活动状态/需要/已弃用？ {#priority-is-the-feature-active-needed-derelict}
 
-在某些情况下，可能未使用管理员会话，或者该功能被完全禁用。 如果您的实施就是这种情况，请确保完全移除该功能或适合该功能 [NOP代码](https://en.wikipedia.org/wiki/NOP).
+在某些情况下，可能未使用管理员会话，或者该功能被完全禁用。 如果您的实施是这样的话，请确保完全移除该功能或适合该功能 [NOP代码](https://en.wikipedia.org/wiki/NOP).
 
 ### 优先级1：使用请求会话 {#priority-use-the-request-session}
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 ## 服务用户和映射 {#service-users-and-mappings}
 
-如果上述操作失败，Sling 7会提供服务用户映射服务，该服务允许配置捆绑包到用户的映射和两种相应的API方法：
+如果上述操作失败，则Sling 7会提供服务用户映射服务，该服务允许您配置捆绑包到用户的映射以及两种相应的API方法：
 
 * [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
 * [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
@@ -116,7 +116,7 @@ ht-degree: 0%
 
 ## 创建服务用户 {#creating-a-new-service-user}
 
-在您验证AEM服务用户列表中没有任何用户适用于您的用例并且相应的RTC问题已被批准后，您可以继续并将新用户添加到默认内容。
+在您验证AEM服务用户列表中没有任何用户适用于您的用例并且相应的RTC问题已被批准后，将新用户添加到默认内容。
 
 建议的方法是创建服务用户以使用位于的存储库资源管理器 *https://&lt;server>：&lt;port>/crx/explorer/index.jsp*
 
@@ -136,7 +136,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >没有与服务用户关联的mixin类型。 这意味着系统用户将没有访问控制策略。
+   >没有与服务用户关联的mixin类型。 这意味着系统用户没有访问控制策略。
 
 将相应的.content.xml添加到捆绑包的内容时，请确保已设置 `rep:authorizableId` 主要类型是 `rep:SystemUser`. 它应如下所示：
 
@@ -157,7 +157,7 @@ ht-degree: 0%
 1. 在此文件夹中，创建一个名为org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml，其中包含工厂配置的内容（包括所有子服务用户映射）。 示例：
 
 1. 创建 `SLING-INF/content` 下的文件夹 `src/main/resources` 文件夹的位置；
-1. 在此文件夹中创建文件 `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` 包含工厂配置的内容，包括所有子服务用户映射。
+1. 在此文件夹中，创建一个文件 `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` 包含工厂配置的内容，包括所有子服务用户映射。
 
    为了便于说明，请获取名为 `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`：
 
@@ -190,13 +190,13 @@ ht-degree: 0%
 
    * 转到位于的Web控制台 *https://serverhost:serveraddress/system/console/configMgr*
    * 搜索 **Apache Sling服务用户映射器服务修正**
-   * 单击链接以查看是否已正确配置。
+   * 单击链接，以便查看是否已正确配置。
 
 ## 在服务中处理共享会话 {#dealing-with-shared-sessions-in-services}
 
 调用对象 `loginAdministrative()` 通常与共享会话一起出现。 这些会话是在服务激活时获取的，仅在服务停止后注销。 虽然这是常见的做法，但会导致两个问题：
 
-* **安全性：** 此类管理会话用于缓存和返回绑定到共享会话的资源或其他对象。 稍后在调用栈栈中，这些对象可能会适应具有提升权限的会话或资源解析器，通常调用者并不清楚它们正在与哪个管理会话一起操作。
+* **安全性：** 此类管理会话用于缓存和返回绑定到共享会话的资源或其他对象。 稍后在调用栈栈中，这些对象可以适应具有提升权限的会话或资源解析器。 通常，调用者并不清楚这是他们运行的管理员会话。
 * **性能：** 在Oak中，共享会话可能会导致性能问题，建议您不要使用它们。
 
 对于安全风险，最显而易见的解决方案是直接更换 `loginAdministrative()` 通过调用 `loginService()` 一对一的权限受限的用户。 但是，这不会对任何潜在的性能下降产生任何影响。 一种缓解方法是，将所有请求的信息封装在与会话无关联的对象中。 然后，根据需要创建（或销毁）会话。

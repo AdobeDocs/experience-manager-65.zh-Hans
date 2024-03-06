@@ -2,10 +2,10 @@
 title: RemotePage 组件
 description: RemotePage组件是一个自定义页面组件，用于在AEM中编辑远程React SPA。
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '390'
-ht-degree: 2%
+source-wordcount: '364'
+ht-degree: 3%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 2%
 RemotePage组件从应用程序生成的中提取所有必需的资源 `asset-manifest.json` 和使用此项在AEM中呈现SPA。
 
 * RemotePage允许您将SPA的脚本和样式表插入AEM Page组件的正文中。
-* 虚拟前端组件允许在AEM SPA编辑器中将部分标记为可编辑。
+* 利用虚拟前端组件，您可以在AEM SPA编辑器中将部分标记为可编辑。
 * 托管在不同域上的SPA可以一起在AEM中编辑。
 
 请参阅文章 [在AEM中编辑外部SPA](spa-edit-external.md) 有关AEM中可编辑的外部SPA的更多详细信息。

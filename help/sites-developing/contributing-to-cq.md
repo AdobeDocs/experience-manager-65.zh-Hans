@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2635'
 ht-degree: 0%
 
 ---
@@ -175,6 +175,6 @@ java -jar <quickstartfilename>.jar -help
 
 **Tar存储(TarMK)** - TarMK是AEM中的默认持久性系统。 虽然AEM可以配置为使用其他持久性系统（如MongoDB），但TarMK具有某些优势，即它针对典型JCR用例进行了性能优化（因此非常快速），使用行业标准数据格式，并且可以快速轻松地备份。
 
-**模板**  — 在AEM中，模板指定特定类型的页面。 它定义页面的结构（通常还会指定缩略图图像以及各种属性）。 例如，您可能会有产品页面、站点地图和联系信息的单独模板。
+**模板**  — 在AEM中，模板指定特定类型的页面。 它定义页面的结构（通常还会指定缩略图图像以及各种属性）。 例如，您可以为产品页面、站点地图和联系人信息使用单独的模板。
 
 **工作流** - AEM Workflow系统允许创建涉及页面或资产的自动化流程。

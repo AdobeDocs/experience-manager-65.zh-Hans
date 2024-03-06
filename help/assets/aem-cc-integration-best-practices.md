@@ -7,10 +7,10 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3260'
-ht-degree: 15%
+source-wordcount: '3173'
+ht-degree: 11%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 到 [!DNL Creative Cloud] 文件夹共享已弃用，不再包含在本指南中。 Adobe建议使用较新的功能，例如 [Adobe资源链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 或 [Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html) 为创意用户提供对在中管理的资源的访问权限 [!DNL Experience Manager].
+>[!DNL Experience Manager] 到 [!DNL Creative Cloud] 文件夹共享已弃用，不再包含在本指南中。 Adobe建议使用较新的功能，例如 [Adobe资源链接](https://helpx.adobe.com/cn/cn/enterprise/using/adobe-asset-link.html) 或 [Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html) 为创意用户提供对在中管理的资源的访问权限 [!DNL Experience Manager].
 
 ## 创意人员、营销人员和DAM用户的协作需求 {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
@@ -43,7 +43,7 @@ ht-degree: 15%
 
 | 针对所涉角色的价值主张 | Adobe产品 | 涉及的曲面 |
 |---|---|---|
-| 创意用户从中发现资源 [!DNL Experience Manager]，打开并使用它们，编辑和上传更改到 [!DNL Experience Manager]，并将新文件上传到 [!DNL Experience Manager]，不离开 [!DNL Creative Cloud] 应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], 和 [!DNL Adobe InDesign]. |
+| 创意用户从中发现资源 [!DNL Experience Manager]，打开并使用它们，编辑和上传更改到 [!DNL Experience Manager]，并将新文件上传到 [!DNL Experience Manager]，不离开 [!DNL Creative Cloud] 应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/cn/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], 和 [!DNL Adobe InDesign]. |
 | 企业用户可简化打开和使用资产、编辑和上传更改的操作 [!DNL Experience Manager]，并将新文件上传到 [!DNL Experience Manager] 桌面环境中的。 他们使用通用集成在本机桌面应用程序中打开任何资源类型，包括非Adobe资源类型。 | [Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] Win和Mac桌面上的桌面应用程序 |
 | 营销人员和企业用户可发现、预览、许可并保存和管理 [!DNL Adobe Stock] 中的资产 [!DNL Experience Manager]. 许可和保存的资产提供选择 [!DNL Adobe Stock] 元数据以实现更好的管理。 | [Experience Manager与Adobe Stock集成](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Web界面 |
 
@@ -86,9 +86,9 @@ ht-degree: 15%
 * **正在进行的工作或正在进行的创意工作 (WIP)：**&#x200B;资产生命周期中的一个阶段，在此阶段中，资产会经历多次更改，通常尚未准备好与更广的团队共享。
 * **创意就绪资产：** [!DNL Assets] 已准备好与更广的团队共享，或者已经由创意团队选择或批准与营销或LOB团队共享。
 * **资产批准：**&#x200B;为已上传到 DAM 的资产运行的批准流程，通常包括品牌批准、法律批准等。
-* **最终资产：**&#x200B;已完成所有批准/元数据标记并可供更广的团队使用的资产。此类资产存储在 DAM 中，可供所有（或所有感兴趣的）用户使用。它可用于营销渠道或由创意团队用来创建设计。
-* **次要资产更新/更改：**&#x200B;对数字资产进行快速、微小的更改。它通常是响应润饰或次要编辑请求、资产审阅或批准（例如，重新定位、更改文本大小、调整饱和度/亮度、颜色等）而生成的。
-* **主要资产更新/更改：**&#x200B;需要大量工作，并且有时必须在较长的一段时间内完成的数字资产更改。它通常包括多项更改。更新资产时必须多次保存。主要资产更新通常会导致资产进入 WIP 阶段。
+* **最终资产：** 已完成所有批准/元数据标记并可供更广的团队使用的资产。 此类资产存储在 DAM 中，可供所有（或所有感兴趣的）用户使用。它可用于营销渠道或由创意团队用来创建设计。
+* **次要资产更新/更改：** 对数字资产进行快速、微小的更改。 它通常是响应润饰或次要编辑请求、资产审阅或批准（例如，重新定位、更改文本大小、调整饱和度/亮度、颜色等）而生成的。
+* **主要资产更新/更改：** 需要大量工作，并且有时必须在较长的一段时间内完成的数字资产更改。 它通常包括多项更改。更新资产时必须多次保存。主要资产更新通常会导致资产进入 WIP 阶段。
 * **DAM：**&#x200B;数字资产管理。在本文档中，它是的同义词 [!DNL Experience Manager Assets]，除非另有特别说明。
 * **创意用户：**&#x200B;使用 Creative Cloud 应用程序和服务创建数字资产的创意专业人士。在某些情况下，创意用户可能是使用 Creative Cloud 但不创建数字资产的创意团队成员（如创意总监或创意团队经理）。
 * **DAM 用户：** DAM 系统的典型用户。根据组织的不同，DAM用户可以是营销或非营销用户，例如业务线(LOB)用户、管理员、销售人员等。
@@ -97,16 +97,16 @@ ht-degree: 15%
 
 * 请参阅 [桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * 请参阅 [Adobe Stock集成](aem-assets-adobe-stock.md)
-* 请参阅 [Adobe资源链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
+* 请参阅 [Adobe资源链接](https://helpx.adobe.com/cn/cn/enterprise/using/adobe-asset-link.html)
 
 以下是对以下项目的最佳实践的简要总结 [!DNL Experience Manager] 和 [!DNL Creative Cloud] 集成。 请阅读本文档的其余部分以了解这些内容。
 
 * **对于在Photoshop、InDesign或Illustrator中工作的创意用户：** AdobeAsset Link提供了最佳用户体验，包括清晰处理从签出的正在进行的资源 [!DNL Experience Manager].
-* **简化从桌面访问任何通用文件格式或应用程序资产的操作：**[!DNL Experience Manager]请使用 桌面应用程序.
-* **了解在 DAM 中存储资产的原因和时间：**&#x200B;将提供给组织中更广泛团队的更新.
+* **简化从桌面访问任何通用文件格式或应用程序资产的操作：** 使用 [!DNL Experience Manager] 桌面应用程序。
+* **了解在DAM中存储资产的原因和时间：** 将提供给组织中更广泛团队的更新。
 * **关注共享的资产数量：**&#x200B;如果您的用例是资产分发，则管理和安全可能是最重要的方面。考虑使用为大规模操作而构建的工具，如 Brand Portal。
 * **了解资产生命周期：**&#x200B;了解组织中不同团队处理资产的方式
-* **谨慎处理对资产的频繁保存：** Adobe Asset Link 通过 PS、AI、ID 为您提供相关服务。对于其他应用程序，除非您需要在 DAM 中完成所有更改，否则不要在映射/共享文件夹中执行正在进行的任务
+* **谨慎处理对资产的频繁保存：** Adobe Asset Link 通过 PS、AI、ID 为您提供相关服务。对于其他应用程序，除非您需要在DAM中进行所有更改，否则不要在映射/共享文件夹中执行正在进行的任务
 
 ### 访问 [!DNL Adobe Stock] 资源来自 [!DNL Assets] {#access-to-adobe-stock-assets-from-aem-assets}
 
@@ -117,7 +117,7 @@ ht-degree: 15%
 * 当Adobe库存中的资源保存到的时间 [!DNL Experience Manager]，则成为常规 [!DNL Assets]，并将二进制文件保存到 [!DNL Experience Manager] 存储库。 一些元数据与 [!DNL Adobe Stock] 为资源保存在 [!DNL Experience Manager]否则，摄取过程将与任何其他文件相同。 例如，如果智能标记处于活动状态，则会在保存时将标记添加到这些资源。
 * 资源保存到 [!DNL Experience Manager] 是副本，而不是指向的链接 [!DNL Adobe Stock].
 
-**使用从保存的资产 [!DNL Adobe Stock] 到 [!DNL Experience Manager] 在[!DNL Creative Cloud]**. 此集成独立于 [!DNL Adobe Asset Link]，但 [!DNL Adobe Asset Link] 识别从中保存的这些资源 [!DNL Stock] 这样，会显示其他元数据和 [!DNL Adobe Stock] 这些资产上的徽标 [!DNL Adobe Asset Link] 中的扩展用户界面 [!DNL Photoshop]， [!DNL Illustrator]，或 [!DNL InDesign]. 这些文件可用于浏览、打开等 — 因为它们是保存到时的常规资源 [!DNL Experience Manager].
+**使用从保存的资产 [!DNL Adobe Stock] 到 [!DNL Experience Manager] 在[!DNL Creative Cloud]**. 此集成独立于 [!DNL Adobe Asset Link]，但 [!DNL Adobe Asset Link] 识别从中保存的这些资源 [!DNL Stock] 这样，会显示其他元数据和 [!DNL Adobe Stock] 这些资产上的徽标 [!DNL Adobe Asset Link] 中的扩展用户界面 [!DNL Photoshop]， [!DNL Illustrator]，或 [!DNL InDesign]. 这些文件可用于浏览、打开等，因为它们是保存到时的常规资源 [!DNL Experience Manager].
 创意用户使用 [!DNL Creative Cloud] 带以下功能的应用程序 [!DNL Adobe Asset Link] 除了可以从访问已许可的资源之外，该扩展还存在 [!DNL Adobe Stock] 到 [!DNL Experience Manager]，也可以使用 [!DNL Creative Cloud] 用于搜索、预览和许可的“库”面板 [!DNL Adobe Stock] 资产。
 [!DNL Assets] 从 [!DNL Adobe Stock] 已许可并保存到 [!DNL Experience Manager] 可供更广泛的团队访问 [!DNL Experience Manager Assets] 部署，而创意人员从获取资产许可 [!DNL Adobe Stock] via [!DNL Creative Cloud] 默认情况下，库面板仅在其中 [!DNL Creative Cloud] 帐户。
 
@@ -231,7 +231,7 @@ Adobe Asset Link为以下用例提供了良好的支持：
 
 >[!MORELIKETHIS]
 >
->* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
+>* [Adobe Asset Link](https://helpx.adobe.com/cn/cn/enterprise/using/adobe-asset-link.html)
 >* [Experience Manager桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [Experience ManagerBrand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Experience Manager与Adobe Stock集成](aem-assets-adobe-stock.md)

@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '3720'
+source-wordcount: '3722'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 0%
 
 #### 创建移动组件 {#creating-a-mobile-component}
 
-AEM移动框架允许开发对发出请求的设备敏感的组件。 以下代码示例说明了如何在组件jsp中使用AEM移动设备API，特别是如何：
+AEM Mobile Framework允许您开发对发出请求的设备敏感的组件。 以下代码示例说明了如何在组件jsp中使用AEM移动设备API，特别是如何：
 
 * 从请求中获取设备：
   `Device device = slingRequest.adaptTo(Device.class);`
@@ -355,7 +355,7 @@ AEM支持基于设备客户端检测 `BrowserMap`. `BrowserMap` 在AEM中作为�
 
 >[!NOTE]
 >
-有关客户端库集成的详细信息，请参阅 [使用客户端HTML库](/help/sites-developing/clientlibs.md).
+>有关客户端库集成的详细信息，请参阅 [使用客户端HTML库](/help/sites-developing/clientlibs.md).
 
 ### 提供备用链接 {#providing-alternate-links}
 
@@ -374,7 +374,7 @@ AEM支持基于设备客户端检测 `BrowserMap`. `BrowserMap` 在AEM中作为�
 
 >[!NOTE]
 >
-使用AEM时，可通过多种方法管理此类服务的配置设置；请参阅 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以了解更多详细信息和建议的做法。
+>使用AEM时，可通过多种方法管理此类服务的配置设置；请参阅 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以了解更多详细信息和建议的做法。
 
 ### 定义特定于设备组的URL {#defining-a-device-group-specific-url}
 
@@ -384,7 +384,7 @@ BrowserMap的设计方式允许通过创建具有相同名称的设备组并将�
 
 >[!NOTE]
 >
-有关更多详细信息，请参阅 [自定义的BrowserMap](#creatingacustomisedbrowsermap).
+>有关更多详细信息，请参阅 [自定义的BrowserMap](#creatingacustomisedbrowsermap).
 
 ### 定义基于选择器的URL {#defining-selector-based-urls}
 
@@ -410,7 +410,7 @@ BrowserMap的设计方式允许通过创建具有相同名称的设备组并将�
 
 >[!NOTE]
 >
-有关客户端库集成的详细信息，请参阅 [使用客户端HTML库](/help/sites-developing/clientlibs.md).
+>有关客户端库集成的详细信息，请参阅 [使用客户端HTML库](/help/sites-developing/clientlibs.md).
 
 创建您的自定义设置后 `BrowserMap` 客户端库，Adobe建议采用以下方法：
 
@@ -520,7 +520,7 @@ request.setAttribute("browsermap.enabled", false);
 
 >[!NOTE]
 >
-此 `wcmmode` 参数设置为 `disabled` 以模拟发布实例的行为。
+>此 `wcmmode` 参数设置为 `disabled` 以模拟发布实例的行为。
 
 覆盖的设备值存储在Cookie中，因此您可以浏览网站而不添加 `device` 参数到 `URL`.
 
@@ -528,7 +528,7 @@ request.setAttribute("browsermap.enabled", false);
 
 >[!NOTE]
 >
-BrowserMap将覆盖设备值存储在名为的Cookie中 `BMAP_device`. 删除此Cookie可确保CQ将根据您当前的设备（例如，桌面或移动设备）提供相应版本的网站。
+>BrowserMap将覆盖设备值存储在名为的Cookie中 `BMAP_device`. 删除此Cookie可确保CQ将根据您当前的设备（例如，桌面或移动设备）提供相应版本的网站。
 
 ## 移动请求处理 {#mobile-request-processing}
 
@@ -564,7 +564,7 @@ AEM会按如下方式处理由属于触控设备组的移动设备发出的请�
 
 >[!NOTE]
 >
-此 **统计数据** 在移动设备首次访问AEM并检测到该移动设备时创建页面。 在此之前，该函数不可用。
+>此 **统计数据** 在移动设备首次访问AEM并检测到该移动设备时创建页面。 在此之前，该函数不可用。
 
 如果需要在统计信息中生成一个条目，可以按如下方式继续操作：
 

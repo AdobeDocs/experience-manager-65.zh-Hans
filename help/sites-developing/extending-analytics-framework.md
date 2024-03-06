@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1609'
 ht-degree: 0%
@@ -59,7 +59,7 @@ s.doPlugins=s_doPlugins;
 
 ## 配置Adobe Analytics属性 {#configuring-adobe-analytics-properties}
 
-Adobe Analytics中有多个预定义变量可以在一个框架中进行配置。 此 **charset**， **cookieLifetime**， **currencyCode** 和 **trackInlineStats** 变量包含在 **常规Analytics设置** 默认列表。
+Adobe Analytics中有多个预定义变量可以在一个框架中进行配置。 此 **charset**， **cookieLifetime**， **currencyCode**、和 **trackInlineStats** 变量包含在 **常规Analytics设置** 默认列表。
 
 ![aa-22](assets/aa-22.png)
 
@@ -105,7 +105,7 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 >[!CAUTION]
 >
->此列表中的某些变量为 **必需** 以使Adobe Analytics调用正常运行(例如， **currencyCode**， **charSet**)
+>此列表中的某些变量为 **必需** 以使Adobe Analytics调用正常运行(例如， **currencyCode**， **charSet**)。
 >
 >因此，即使将它们从框架中删除，在进行Adobe Analytics调用时，它们仍会附加一个默认值。
 

@@ -2,7 +2,7 @@
 title: AEM常见问题解答
 description: 使用这些常见问题解答来了解、配置和解决AEM中的常见工作流或问题。
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 1a7805f063daf6f3dd07a2ff2d182e58fe7e63b8
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%
@@ -80,11 +80,11 @@ Adobe Experience Manager (AEM) 6.4附带SSL向导，并提供用于配置Jetty�
 
 如果用户上传的电影文件在资产节点下没有删除权限，则删除区块节点会失败，并且上传会重新启动。
 
-#### 创建语言副本时，OOTB配置的默认设置是什么？ {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
+#### 创建语言副本时，开箱即用配置的默认设置是什么？ {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
 通过Touch UI创建语言副本时(**引用** > **更新语言副本**)，将在新语言下创建新的DAM文件夹，并从中引用资产。
 
-这是OOTB配置的默认设置。 您可以设置 **翻译页面资产** = **不翻译** 在翻译配置中。
+这是现成配置的默认设置。 您可以设置 **翻译页面资产** = **不翻译** 在翻译配置中。
 对于AEM 6.4， **工具** > **Cloud Service** > **翻译云服务**.
 
 #### 如何禁用会导致AEM SegmentStore (AEM 6.3.1.1)呈指数增长的AEM组件？ {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

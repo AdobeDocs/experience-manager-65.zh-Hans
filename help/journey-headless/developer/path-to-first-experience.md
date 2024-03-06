@@ -2,9 +2,9 @@
 title: 首次 AEM Headless 使用体验的路径
 description: 在 AEM Headless 开发人员历程的这一部分中，您将了解在 AEM 中实施您的第一个 Headless 体验（包括规划注意事项）的步骤，并了解最佳实践以让您的历程尽可能顺畅。
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1990'
+source-wordcount: '1951'
 ht-degree: 91%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 91%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM Headless 历程的上一个文档 [AEM Headless 快速入门](getting-started.md)中，您学习了 Headless CMS 的含义的基本理论，现在应：
+在AEM Headless历程的上一个文档中， [AEM Headless快速入门](getting-started.md) 您学习了无头CMS是什么的基本理论，现在您应该：
 
 * 了解 AEM 的 Headless 功能的基础知识。
 * 了解使用 AEM 的 Headless 功能的先决条件。
@@ -35,7 +35,7 @@ ht-degree: 91%
 
 ## 要求 {#requirements}
 
-在继续阅读本文档之前，请确保您已查看 AEM Headless 开发人员历程中的上一个文档 [AEM Headless 快速入门](getting-started.md)，确保您：
+在继续本文之前，请确保您已查看了AEM Headless开发人员历程中的上一文档， [AEM Headless快速入门](getting-started.md) 确保您：
 
 * 符合列出的要求。
 * 已考虑您自己的项目定义，包括范围、角色和性能。
@@ -52,7 +52,7 @@ ht-degree: 91%
 
 相反，您应考虑如何基于编排原则（例如，品牌和产品层级、商品或表面的类别或客户历程中的步骤）来关联不同表面上的内容。例如，如果您有一组支持所制造的特定品牌汽车的表面，您可能希望从内容模型开始，以获取适用于整个汽车的一般信息，然后使用更具体的内容，例如汽车启动到出现服务问题时所需的内容。此类模型将强制继承一般汽车品牌内容，并允许根据所需的特定上下文进行转换。它还有助于对此内容的更新的将来管理，因为您可以根据角色实施控制，例如整个汽车品牌的整体营销人员或产品经理与负责“启动汽车”体验的作者。
 
-一旦您拥有内容模型并清晰地了解需要在其上显示内容的各种客户端，您就需要确保将与访问各种内容模型关联的 GraphQL/API 发布到需要此内容的所有客户端。关于访问某些内容的方式，提供了不同的选项。您可以请求一段特定的静态内容，以便缓存内容并提高性能。您还可以请求动态生成的内容，而这将需要进行更多的处理。确保客户使用的API在满足其业务需求方面最有效。
+一旦您拥有内容模型并清晰地了解需要在其上显示内容的各种客户端，您就需要确保将与访问各种内容模型关联的 GraphQL/API 发布到需要此内容的所有客户端。关于访问某些内容的方式，提供了不同的选项。您可以请求一段特定的静态内容，以便缓存内容并提高性能。您还可以请求动态生成的内容，而这将需要进行更多的处理。确保客户端使用的是最能满足其业务需求的 API。
 
 ## 了解您的环境 {#understanding-environments}
 
@@ -68,9 +68,9 @@ Headless 项目的暂存环境用于在新的 AEM 产品版本发布到生产环
 
 ### 开发人员和内容作者的合作 {#cooperation}
 
-开发人员需要使用填充的内容模型设置 AEM 开发环境。由于内容作者仍在创建内容，因此，开发人员开发的客户端将使用 AEM Headless 中的内容。这就是 API 定义之所以如此重要的原因。通过使用AEM SDK，开发人员可以创建测试挂接，以便创建客户端和单元测试，确保客户端能够正确呈现内容。
+开发人员需要使用填充的内容模型设置 AEM 开发环境。由于内容作者仍在创建内容，因此，开发人员开发的客户端将使用 AEM Headless 中的内容。这就是 API 定义之所以如此重要的原因。开发人员可使用 AEM SDK 创建测试挂钩，以便可创建客户端和单元测试以确保客户端能够正常地呈现内容。
 
-内容作者根据在暂存环境中定义的内容模型来创建内容。使用内容片段创作工具，作者将创建一个内容片段或编辑现有的内容片段。 在发布内容之前，作者可以预览它在客户端中的外观，方式是与开发人员合作，将内容模型推送到开发中，或设置一个开发人员环境以仅供作者预览它在客户端中的外观。
+内容作者根据已在暂存环境中定义的内容模型创建内容。作者将使用内容片段创作工具创建内容片段或编辑现有的内容片段。在发布内容之前，作者可以预览它在客户端中的外观，方式是与开发人员合作，将内容模型推送到开发中，或设置一个开发人员环境以仅供作者预览它在客户端中的外观。
 
 ## 设置 {#setup}
 
@@ -94,7 +94,7 @@ Headless 项目的暂存环境用于在新的 AEM 产品版本发布到生产环
 
 ## 最佳实践 {#best-practices}
 
-Headless 项目之所以能够获得成功，既要归功于实施的技术，又要归功于良好的规划和项目治理。以下是内容作者和开发人员在计划项目时要牢记的几个最佳实践。
+Headless 项目之所以能够获得成功，既要归功于实施的技术，又要归功于良好的规划和项目治理。以下是在规划项目时内容作者和开发人员要牢记的若干最佳实践。
 
 ### 组织您的内容 {#organizing-content}
 
@@ -143,7 +143,7 @@ Headless 项目之所以能够获得成功，既要归功于实施的技术，�
 我们建议您查看文档[如何将内容建模为 AEM 内容模型](model-your-content.md)来继续 Headless 开发历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续 Headless 历程所必需的。
 
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) - 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
-* [AEM Sites 的 Headless 开发](/help/sites-developing/headless/introduction.md) - 简要介绍如何帮助 AEM Headless 开发人员熟悉必要的功能
+* [AEM Sites的Headless开发](/help/sites-developing/headless/introduction.md)  — 快速介绍如何使AEM Headless开发人员具备必要功能
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 使用这些动手实践教程探索如何使用通过 AEM 将内容投放到 Headless 端点的各种选项并选择适合您的选项。
 * [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。需要通过 AdobeID 进行的身份验证。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – 此 GitHub 项目包含突出显示 AEM 的 GraphQL API 的示例应用程序。

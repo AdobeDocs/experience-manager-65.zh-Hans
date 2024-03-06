@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3360'
 ht-degree: 1%
 
 ---
@@ -451,7 +451,7 @@ Adobe建议在暂存实例上使用设计导入程序。 在暂存实例上，�
 
 删除登陆页面与删除普通AEM页面类似。
 
-唯一的例外是，当您删除桌面登陆页面时，它也会删除相应的移动设备登陆页面（如果存在），但反之则不会。
+唯一的例外是，当您删除桌面登陆页面时，它也会删除相应的移动设备登陆页面（如果存在），但不会发生相反情况。
 
 ### 发布登陆页面 {#publishing-a-landing-page}
 

@@ -2,7 +2,7 @@
 title: 如何为您的内容建模
 description: 在 AEM Headless 开发人员历程的这一部分中，了解如何使用内容建模与内容片段模型和内容片段对 AEM Headless 交付进行内容建模。
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 80e85ed78a26d784f4aa8e36c7de413cf9c03fa2
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '1795'
 ht-degree: 79%
@@ -45,7 +45,7 @@ ht-degree: 79%
 
 *这是一个大而复杂的领域*。
 
-也许是，也许不是。这当然是件大事 ***复杂*** 外面的世界。 数据建模用于定义非常（非常）小子部分的简化表示，使用特定目的所需的特定信息。
+也许是，也许不是。这当然是压倒性的 ***复杂*** 外面的世界。 数据建模用于定义非常（非常）小子部分的简化表示，使用特定目的所需的特定信息。
 
 >[!NOTE]
 >

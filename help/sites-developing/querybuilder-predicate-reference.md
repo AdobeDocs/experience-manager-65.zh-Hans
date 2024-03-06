@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 970e0a97d531d4cbae76119960972e54ef65dda0
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 3%
+source-wordcount: '2313'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 >有关完整信息，请参阅 **可用谓词** 在Query Builder Debugger控制台上；例如，位于：
 >* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 >
->例如，请参阅:
+>例如，请参阅：
 >
 >* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
@@ -46,7 +46,7 @@ ht-degree: 3%
 * [memberOf](/help/sites-developing/querybuilder-predicate-reference.md#memberof)
 * [节点名称](/help/sites-developing/querybuilder-predicate-reference.md#nodename)
 * [notexpired](/help/sites-developing/querybuilder-predicate-reference.md#notexpired)
-* [path](/help/sites-developing/querybuilder-predicate-reference.md#path)
+* [路径](/help/sites-developing/querybuilder-predicate-reference.md#path)
 * [属性](/help/sites-developing/querybuilder-predicate-reference.md#property)
 * [rangeproperty](/help/sites-developing/querybuilder-predicate-reference.md#rangeproperty)
 * [相对日期范围](/help/sites-developing/querybuilder-predicate-reference.md#relativedaterange)
@@ -94,17 +94,17 @@ ht-degree: 3%
 
 #### 属性 {#properties-2}
 
-* **property1**
+* **属性1**
 
   第一个日期属性的路径。
 
-* **property2**
+* **属性2**
 
   指向第二个日期属性的路径。
 
 * **操作**
 
-  &quot; `equals`“”表示完全匹配，“ `!=`“对于不平等比较，” `greater`&quot;对于property1，大于属性2， &quot; `>=`”表示property1大于或等于property2。 默认值为 &quot; `equals`&quot;.
+  &quot; `equals`“”表示完全匹配，“ `!=`“对于不平等比较，” `greater`&quot;对于property1，大于属性2， &quot; `>=`”表示property1大于或等于property2。 默认值为&#39;&#39; `equals`“。
 
 ### 日期范围 {#daterange}
 
@@ -315,7 +315,7 @@ group.2_group.type=dam:Asset
 
   JCR属性名称由前导@指示，例如， `@jcr:lastModified` 或 `@jcr:content/jcr:title`或查询中的其他谓词，例如， `2_property`，进行排序。
 
-* **排序**
+* **sort**
 
   排序方向，或者为“ `desc`”表示降序或“ `asc`”表示升序（默认）。
 
@@ -323,7 +323,7 @@ group.2_group.type=dam:Asset
 
   如果设置为 `ignore`，它使排序区分大小写，这意味着“a”在“B”之前输入；如果为空或缺席，则排序区分大小写，这意味着“B”在“a”之前输入
 
-### path {#path}
+### 路径 {#path}
 
 在给定路径内搜索。
 
@@ -343,7 +343,7 @@ group.2_group.type=dam:Asset
 
   仅搜索直接子项(如追加&quot; `/*`在xpath中为“”)(仅在“ `exact`&#39;不为true，可选)。
 
-* **self**
+* **自身**
 
   搜索子树，但包含作为路径指定的基础节点（无通配符）。
 
@@ -469,15 +469,15 @@ group.2_group.type=dam:Asset
 
   （仅适用于JSON servlet）选择点击作为JSON写入的方式，并使用这些标准点击（可通过ResultHitWriter服务扩展）：
 
-   * **简单**:
+   * **简单**：
 
      最小项目，如 `path`， `title`， `lastmodified`， `excerpt` （如果设置）。
 
-   * **全部**:
+   * **完整**：
 
      节点的Sling JSON渲染，使用 `jcr:path` 指示点击的路径：默认情况下，仅列出节点的直接属性，包括更深的树，其中 `p.nodedepth=N`，0表示整个，无限子树；添加 `p.acls=true` 在给定结果项中包含当前会话的JCR权限(映射： `create` = `add_node`， `modify` = `set_property`， `delete` = `remove`)。
 
-   * **选定属性**:
+   * **选择性**：
 
      仅在中指定属性 `p.properties`，以空格分隔（在URL中使用“+”）的相对路径列表；如果相对路径的深度大于1，则这些路径表示为子对象；特殊的jcr：path属性包括点击的路径
 
@@ -571,9 +571,9 @@ group.2_group.type=dam:Asset
 
   仅搜索特定本地化的标记标题(例如， `de`)。
 
-* **全部**
+* **所有**
 
-  （布尔）搜索整个标记全文，即所有标题、描述等(优先于“l” `ang`“)。
+  （布尔）搜索整个标记全文，即所有标题、描述等。 优先于“l” `ang`“。
 
 ### 类型 {#type}
 
@@ -583,6 +583,6 @@ group.2_group.type=dam:Asset
 
 #### 属性 {#Properties-2}
 
-* **类型**
+* **type**
 
   要搜索的节点类型或mixin名称，例如， `cq:Page`.

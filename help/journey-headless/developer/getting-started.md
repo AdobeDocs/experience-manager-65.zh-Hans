@@ -2,9 +2,9 @@
 title: AEM Headless 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2998'
+source-wordcount: '2999'
 ht-degree: 96%
 
 ---
@@ -113,7 +113,7 @@ AEM 支持 CMS 的完全 Headless 模型和传统的全栈或 Headful 模型。�
 
 ### 您没有 Headless 内容的外部使用者，例如单页应用程序 (SPA)。 {#do-not-have-a-spa}
 
-如果您的目标是创建一个 SPA 来以 Headless 方式使用 AEM 中的内容，则可以使用内容片段等功能来管理您的 Headless 内容，还可以使用 AEM 的 SPA 编辑器框架来构建 SPA。
+如果您的目标是创建以 Headless 方式从 AEM 消耗内容的 SPA，则可使用内容片段等功能管理您的 Headless 内容，还可用 AEM 的 SPA 编辑器框架构建 SPA。
 
 借助 SPA 编辑器，SPA 不仅可以使用 AEM 中的内容，还可以由内容作者在 AEM 中进行完全编辑，这将使您能够在 AEM 中灵活地进行 Headless 交付和上下文编辑。
 
@@ -258,7 +258,7 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 通常，不同的体验部分会具有不同的内容更新频率。了解这一点对于能够微调 CDN 和缓存配置非常重要。这也是[内容架构师](#content-architects)的重要输入，因为他们将设计模型来表示您的内容。请考虑：
 
 * 某些类型的内容是否必须在一段时间后过期？
-* 是否存在无法缓存的用户特定的元素？
+* 是否有特定于用户的元素，因此无法进行缓存？
 
 ## 后续内容 {#what-is-next}
 

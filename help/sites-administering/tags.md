@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '1761'
-ht-degree: 11%
+source-wordcount: '1769'
+ht-degree: 7%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 11%
 
 AEM中标记的部分功能包括：
 
-* 标记可以分组到各种命名空间中。此类层次结构允许构建分类。 这些分类在整个 AEM 中是全局性的。
+* 标记可以分组到各种命名空间中。 此类层次结构允许构建分类。 这些分类在整个 AEM 中是全局性的。
 * 新创建标记的主要限制是，它们必须在特定命名空间中是唯一的。
 * 标记的标题不应包含标记路径分隔字符（如果存在，也不会显示）
 
@@ -76,7 +76,7 @@ AEM中标记的部分功能包括：
 
 要创建命名空间，请选择 **`Create Namespace`** 图标。
 
-命名空间本身是一个标记，无需包含任何子标记。 但是，要继续创建分类， [创建子标记](#creating-tags)，则它可以是叶标记或容器标记。
+命名空间本身是一个标记，不包含任何子标记。 但是，要继续创建分类， [创建子标记](#creating-tags)，则它可以是叶标记或容器标记。
 
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![creating_tags_andnamespaces](assets/creating_tags_andnamespacesa.png)
 
@@ -84,7 +84,7 @@ AEM中标记的部分功能包括：
   *（必填）* 命名空间的显示标题。
 
 * **名称**
-  *（可选）* 命名空间的名称。 如果未指定，可从标题创建有效的节点名称。请参阅 [TagID](/help/sites-developing/framework.md#tagid)。
+  *（可选）* 命名空间的名称。 如果未指定，则从标题创建有效的节点名称。 请参阅 [TagID](/help/sites-developing/framework.md#tagid)。
 
 * **描述**
   *（可选）* 命名空间的描述。
@@ -157,7 +157,7 @@ AEM中标记的部分功能包括：
 *（必需） *标记的显示标题。
 
 * **名称**
-*（可选） *标记的名称。 如果未指定，可从标题创建有效的节点名称。请参阅 [TagID](/help/sites-developing/framework.md#tagid)。
+*（可选） *标记的名称。 如果未指定，则从标题创建有效的节点名称。 请参阅 [TagID](/help/sites-developing/framework.md#tagid)。
 
 * **描述**
 *（可选） *标记的描述。
@@ -221,7 +221,7 @@ AEM中标记的部分功能包括：
 >
 >合并后， **路径** 最初选定的将（实际上）不再存在。
 >
->在移动或合并引用的标记时，该标记不会被物理删除，以便能够维护引用。
+>移动或合并引用的标记时，不会实际删除该标记，因此可以保留引用。
 
 ### 发布标记 {#publishing-tags}
 
@@ -276,7 +276,7 @@ AEM中标记的部分功能包括：
 
 ## 管理不同语言的标记 {#managing-tags-in-different-languages}
 
-标记的 `title` 属性可翻译为多种语言。翻译后，相应的标记 `title`可根据用户语言或页面语言来显示。
+此 `title`标记属性可以翻译成多种语言。 翻译后，相应的标记 `title`可根据用户语言或页面语言来显示。
 
 ### 定义多种语言的标记标题 {#defining-tag-titles-in-multiple-languages}
 

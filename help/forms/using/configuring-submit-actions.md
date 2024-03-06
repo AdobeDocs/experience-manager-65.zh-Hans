@@ -6,9 +6,9 @@ topic-tags: author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: 6dbec0f41396c2b41d5324c4ecf6f1f33b1d0780
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2593'
 ht-degree: 48%
 
 ---
@@ -235,7 +235,7 @@ AEM 6.5 Forms Service Pack 19 (6.5.19.0)引入了提交到Microsoft®SharePoint�
 
 ### 在服务器上进行哪些验证？ {#what-to-validate-on-server-br}
 
-在服务器上重新运行的自适应表单的所有现成(OOTB)字段验证包括：
+在服务器上重新运行的自适应表单的所有现成字段验证包括：
 
 * 必填
 * 验证图片子句

@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '632'
-ht-degree: 35%
+source-wordcount: '633'
+ht-degree: 33%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 35%
 
 >[!NOTE]
 >
->请不要忘记，[评论](/help/sites-authoring/basic-handling.md#timeline)也可用于在页面中提供反馈。
+>别忘了 [评论](/help/sites-authoring/basic-handling.md#timeline) 也可用于在页面上提供反馈。
 
 >[!NOTE]
 >

@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '2672'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
@@ -60,7 +60,7 @@ ht-degree: 27%
   </tr>
   <tr>
    <td>标准转出配置</td>
-   <td>标准转出配置，允许在触发转出时启动转出流程，并执行以下操作: 创建、更新、删除内容和排序子节点。</td>
+   <td>标准转出配置，允许您在触发转出时开始转出流程，并执行以下操作：创建、更新、删除内容和排序子节点。</td>
    <td>转出</td>
    <td>contentupdate<br /> contentCopy<br /> contentDelete<br /> referencesupdate<br /> 产品更新<br /> orderChildren</td>
   </tr>
@@ -108,7 +108,7 @@ ht-degree: 27%
   </tr>
   <tr>
    <td>DPS 发布转出配置</td>
-   <td>DPS发布转出配置，允许在触发转出时启动转出过程，同时在初始转出时排除FolioProducer绑定属性</td>
+   <td>DPS发布转出配置，允许您在初始转出时排除FolioProducer绑定属性时在转出触发器中启动转出过程</td>
    <td>转出</td>
    <td>contentupdate<br /> contentCopy<br /> contentDelete<br /> referencesupdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>

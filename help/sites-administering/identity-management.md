@@ -7,9 +7,9 @@ topic-tags: Security
 content-type: reference
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1249'
 ht-degree: 1%
 
 ---
@@ -147,7 +147,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 * 对用户可见和访问
 * 为每个属性定义两个状态
-* 允许在定义的两个状态之间进行切换
+* 允许您在定义的两种状态之间进行切换
 
 此操作可通过以下方式完成：
 

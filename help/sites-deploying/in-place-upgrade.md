@@ -4,9 +4,9 @@ description: 了解如何执行AEM 6.5的就地升级。
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1214'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ java -Xmx4096m -jar aem-quickstart.jar -v -x crx2oak -xargs -- --load-profile <<
 
 如果您从6.3升级，请跳过此部分。虽然提供的crx2oak配置文件应该满足大多数客户的需求，但有时还需要额外的参数。 如果在迁移期间遇到错误，则环境的某些方面可能需要提供其他配置选项。 如果出现这种情况，您可能会遇到以下错误：
 
-**将不会复制检查点，因为未指定外部数据存储。 这将导致在第一次启动时完全重新索引存储库。 使用 — skip-checkpoints强制迁移，或者参阅https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration以了解更多信息。**
+**不会复制检查点，因为未指定外部数据存储。 这将导致在第一次启动时完全重新索引存储库。 使用 — skip-checkpoints强制迁移，或者参阅https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration以了解更多信息。**
 
 出于某种原因，迁移过程需要访问数据存储中的二进制文件，并且无法找到它。 要指定数据存储配置，请将以下标记包含在 `<<ADDITIONAL_FLAGS>>` 迁移命令的一部分：
 

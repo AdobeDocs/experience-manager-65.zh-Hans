@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '2971'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->启用 *ContentSync调试记录* 通过包上的OSGi记录器配置 *com.day.cq.contentsync*. 这允许跟踪运行了哪些处理程序以及它们是否更新了缓存和报告更新了缓存。
+>启用 *ContentSync调试记录* 通过包上的OSGi记录器配置 *com.day.cq.contentsync*. 这样，您就可以跟踪运行了哪些处理程序，以及这些处理程序是否更新了缓存和报告更新了缓存。
 
 ## 配置内容同步内容 {#configuring-the-content-sync-content}
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2957'
+source-wordcount: '2945'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 * **路径** - /content/dam下的资产文件夹的路径。
 * **节目**  — 类型是一个字符串数组，允许用户指定要使用的演绎版，而不是默认图像。 以下列表汇总了一些现成的演绎版，但您也可以使用工作流创建的任何演绎版：
 
-   * *原始*
+   * *原有*
    * *cq5dam.thumbnail.48.48.png*
    * *cq5dam.thumbnail.319.319.png*
    * *cq5dam.thumbnail.140.100.png*

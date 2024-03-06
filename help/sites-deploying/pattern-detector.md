@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '516'
+source-wordcount: '500'
 ht-degree: 1%
 
 ---
@@ -210,7 +210,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 
 ## 检测范围 {#scope}
 
-当前模式检测器允许检查：
+当前模式检测器允许您检查以下内容：
 
 * OSGi捆绑导出和导入不匹配
 * Sling资源类型和超级类型（具有搜索路径内容叠加）的使用情况

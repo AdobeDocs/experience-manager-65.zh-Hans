@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '631'
 ht-degree: 3%
 
 ---
@@ -96,7 +96,7 @@ ht-degree: 3%
  </tbody>
 </table>
 
-换句话说，将UI的一部分从经典UI迁移到触屏UI意味着移植 *ExtJS构件* 到 *Sling组件*. 为轻松实现此目标，触屏UI基于Granite UI框架，该框架已为UI提供了一些Sling组件（称为Granite UI组件）。
+换句话说，将UI的一部分从经典UI迁移到Touch UI意味着移植 *ExtJS构件* 到 *Sling组件*. 为轻松实现此目标，触屏UI基于Granite UI框架，该框架已为UI提供了一些Sling组件（称为Granite UI组件）。
 
 在开始之前，请检查状态和相关建议：
 
@@ -133,7 +133,7 @@ ht-degree: 3%
 虽然与迁移到触屏UI没有直接关系，但有些相关问题值得同时考虑，因为这也是推荐的实践：
 
 * [模板](/help/sites-developing/templates.md) - [可编辑的模板](/help/sites-developing/page-templates-editable.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]

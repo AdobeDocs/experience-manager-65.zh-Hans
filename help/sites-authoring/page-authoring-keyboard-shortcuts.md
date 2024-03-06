@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 52%
@@ -45,7 +45,7 @@ ht-degree: 52%
 
 >[!NOTE]
 >
->无论是否[已取消激活控制台快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)，编辑器键盘快捷键始终处于活动状态。
+无论是否[已取消激活控制台快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)，编辑器键盘快捷键始终处于活动状态。
 
 ## 特定于操作系统的修饰符键 {#os-specific-modifier-keys}
 

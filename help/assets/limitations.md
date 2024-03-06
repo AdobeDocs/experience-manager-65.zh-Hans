@@ -8,9 +8,9 @@ geptopics: SG_SCENESEVENONDEMAND_PK/categories/ecatalogs
 feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
-source-git-commit: cc219931430ba571745e6ef254a034a689acd1cf
+source-git-commit: 886edbf0e98f5cdee176aaa0a7dffcf18b1a7cc2
 workflow-type: tm+mt
-source-wordcount: '308'
+source-wordcount: '347'
 ht-degree: 2%
 
 ---
@@ -31,11 +31,12 @@ ht-degree: 2%
 | 资源 — 限制类型 | 最佳实践 | 施加的限制 |
 | --- | --- | --- |
 | **图像**  — 每个图像的智能裁剪数 | 5 | 100 |
-| **所有集**  — 每组重复的资源数 | 无重复项 | 20 |
+| **所有集**  — 每组重复的资源数 | 无重复项 | 20‡ |
 | **所有集**  — 每组最大资源数 | 每组5至10个图像 | 1000 |
 | **旋转集**  — 每个2D集的最大行/列数 | 每组12-18个图像 | 1000 |
 | **PDF**  — 考虑进行提取的PDF的最大页数 |  | 100(适用于所有PDF) |
 
+‡最佳实践是在一个集中没有重复的资产。 单个资产的限制为20个重复项。 如果为该资产添加其他重复项（在该集中），请求将会产生错误或忽略重复项。
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
 ## Dynamic Media不支持的Web浏览器和操作系统组合 {#unsupported-browser-os}

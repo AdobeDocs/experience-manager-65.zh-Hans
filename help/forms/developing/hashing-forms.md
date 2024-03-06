@@ -2,9 +2,9 @@
 title: 如何在动态PDF forms中生成和使用哈希？
 description: 在动态PDF forms中生成和使用哈希。
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ ht-degree: 0%
 
 请按照以下步骤尝试第一个示例：
 
-1. 下载并解压缩示例文件后，在JEE Designer中使用AEM Forms打开hashing_forms_sample1.pdf。 或者，您可以使用Adobe Reader或Adobe Acrobat Professional打开并查看示例，但将无法看到源代码。
+1. 下载并解压缩示例文件后，在JEE Designer中使用AEM Forms打开hashing_forms_sample1.pdf。 或者，您可以使用Adobe Reader或Adobe Acrobat Professional打开并查看示例，但看不到源代码。
 1. 在标记为的文本字段中 [!UICONTROL 清文本] 键入要经过哈希处理的密码或任何其他消息。
 1. 单击四个按钮之一以生成MD4、MD5、SHA-1或SHA-256哈希值。 根据您按下的按钮，将调用生成十六进制输出的四个哈希函数之一，并对字符串或消息进行哈希处理。
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
 请按照以下步骤尝试第二个示例：
 
-1. 打开 `hashing_forms_sample2.pdf` AEM Forms的JEE设计器。 或者，您可以使用Adobe Reader或Adobe Acrobat Professional打开并查看示例，但将无法看到源代码。
+1. 打开 `hashing_forms_sample2.pdf` AEM Forms的JEE设计器。 或者，您可以使用Adobe Reader或Adobe Acrobat Professional打开并查看示例，但看不到源代码。
 1. 选择两个口令字段之一，标签为 [!UICONTROL 密码手册] 或 [!UICONTROL 密码女性] 并键入密码：
    1. 此人的密码为 `bob`
    1. 女人的密码是 `alice`
@@ -109,7 +109,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## 从这里前往何处 {#next-steps}
 
-你在哪里需要这样的东西？ 考虑一个PDF表单，其中包含应仅由授权人员填写的字段。 通过使用密码保护这些字段（在Sample_2.pdf中无法以明文形式查看这些字段），您可以确保只有知道密码的用户才能访问这些字段。
+你在哪里需要这样的东西？ 考虑一个PDF表单，其中包含应仅由授权人员填写的字段。 通过使用密码保护这些字段（在Sample_2.pdf中文档的任何位置均无法以明文显示），您可以确保只有知道密码的用户才能访问这些字段。
 
 我鼓励您继续探索这两个示例PDF文件。  您可以使用Sample_1.pdf生成新的哈希值，并使用生成的值更改Sample_2.pdf中使用的密码或哈希函数。  归因部分中列出的资源还提供有关哈希处理以及本文中使用的特定JavaScript实施的更多信息。
 

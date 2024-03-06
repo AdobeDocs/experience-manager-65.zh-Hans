@@ -7,10 +7,10 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '2773'
-ht-degree: 1%
+source-wordcount: '2672'
+ht-degree: 0%
 
 ---
 
@@ -122,10 +122,10 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >可以随时添加或删除组。 但现有用户的成员资格不会受到影响。 自动成员资格仅适用于此字段更新后创建的新用户。 对于禁用匿名用户的站点，选择将用户添加到对应于该已关闭社区站点的社区成员组。
+   >可以随时添加或删除组。 但现有用户的成员资格不受影响。 自动成员资格仅适用于此字段更新后创建的新用户。 对于禁用匿名用户的站点，选择将用户添加到对应于该已关闭社区站点的社区成员组。
 
    * 选择 **[!UICONTROL 保存]**.
-   * **[!UICONTROL 发布]**.
+   * **[!UICONTROL Publish]**.
 
 结果是 [AdobeGranite OAuth应用程序和提供程序](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider) 除非添加其他范围（权限），否则不需要进一步修改的实例。 默认范围是Facebook登录的标准权限。 如果需要额外的范围，则需要直接编辑OSGI配置。 如果直接通过系统/控制台进行了修改，请避免从触屏UI编辑云服务配置以避免覆盖。
 
@@ -269,7 +269,7 @@ facebook和Twitter的后续步骤相同：
 
      (*必填*)输入 **使用者(API)密钥** 用于Twitter应用程序。 这标识了 [AdobeGranite OAuth应用程序和提供程序](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) 通过对话框创建的实例。
 
-   * **[!UICONTROL 使用者密钥]**
+   * **[!UICONTROL 使用者密码]**
 
      (*必填*)输入 ***使用者(API)密码*** 用于Twitter应用程序。
 
@@ -277,7 +277,7 @@ facebook和Twitter的后续步骤相同：
 
      如果选中，使用Twitter帐户登录将创建AEM用户条目，并将其作为成员添加到选定的用户组。 默认处于选中状态（强烈推荐）。
 
-   * **[!UICONTROL 隐藏用户 ID]**
+   * **[!UICONTROL 隐藏用户ID]**
 
      保持取消选中状态。
 
@@ -287,7 +287,7 @@ facebook和Twitter的后续步骤相同：
 
    >[!NOTE]
    >
-   >可以随时添加或删除组。 但现有用户的成员资格不会受到影响。 自动成员资格仅适用于此字段更新后创建的新用户。 对于禁用匿名用户的站点，将用户添加到对应于该已关闭社区站点的社区成员组。
+   >可以随时添加或删除组。 但现有用户的成员资格不受影响。 自动成员资格仅适用于此字段更新后创建的新用户。 对于禁用匿名用户的站点，将用户添加到对应于该已关闭社区站点的社区成员组。
    >
 
 1. 选择 **[!UICONTROL 保存]** 和 **[!UICONTROL Publish]**.
@@ -320,7 +320,7 @@ AEM Communities配置对 [AdobeGranite OAuth应用程序和提供程序](#adobe-
 
    * **[!UICONTROL OAuth提供程序服务配置]**
 
-     默认值为 `/apps/social/twitterprovider/config/`。请勿编辑。
+     默认值为 `/apps/social/twitterprovider/config/`. 请勿编辑。
 
    * **[!UICONTROL 用户路径]**
 
@@ -415,11 +415,11 @@ facebook和Twitter的后续步骤相同：
 
      (*必填*) OAuth配置ID必须是唯一的。 在创建云服务时自动生成。
 
-   * **[!UICONTROL 客户端 ID]**
+   * **[!UICONTROL 客户端ID]**
 
      (*必填*)创建云服务时提供的应用程序ID。
 
-   * **[!UICONTROL 客户端密钥]**
+   * **[!UICONTROL 客户端密码]**
 
      (*必填*)创建云服务时提供的应用程序密钥。
 
@@ -435,7 +435,7 @@ facebook和Twitter的后续步骤相同：
 
      (*推荐*)将一个或多个已创建用户添加到其中的成员组。 对于AEM Communities，建议列出社区站点的成员组。
 
-   * **[!UICONTROL 回调 URL]**
+   * **[!UICONTROL 回调URL]**
 
      (*可选*)使用OAuth提供程序配置的URL，用于将客户端重定向回。 使用相对URL以使用原始请求的主机。 留空将改用最初请求的URL。 后缀“/callback/j_security_check”会自动附加到此URL 。
 
@@ -491,6 +491,6 @@ facebook和Twitter的后续步骤相同：
 
 有关其他信息和工具，请参阅 [Oak查询和索引](../../help/sites-deploying/queries-and-indexing.md).
 
-## Dispatcher配置 {#dispatcher-configuration}
+## Dispatcher 配置 {#dispatcher-configuration}
 
 请参阅 [为社区配置Dispatcher](dispatcher.md).

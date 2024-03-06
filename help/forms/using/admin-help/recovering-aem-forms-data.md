@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
-source-wordcount: '1117'
+source-wordcount: '1118'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ AEM forms应该能够从以下故障中可靠地恢复：
 
 从备份还原到新系统时，以下配置可能不同。 此差异不应影响AEM forms应用程序的成功恢复：
 
-* IP地址
+* IP 地址
 * 物理系统配置（CPU、磁盘、内存）
 * GDS位置
 
