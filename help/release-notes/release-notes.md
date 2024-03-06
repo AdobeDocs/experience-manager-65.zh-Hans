@@ -2,9 +2,9 @@
 title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-source-git-commit: 70f52515fc877ad5f20e14c2a26a934d3dcdfe01
+source-git-commit: f00d2c88ba6727f8f8597fefeb467b612b23dea3
 workflow-type: tm+mt
-source-wordcount: '3486'
+source-wordcount: '3524'
 ht-degree: 2%
 
 ---
@@ -474,6 +474,8 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
       * [适用于Apple macOS的修补程序](/help/release-notes/assets/Hotfix-osx.zip)
 
    1. 通过上传并安装包(.zip) [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
+
+   1. 重新启动AEM服务器，并在重新启动过程完成后验证所有捆绑包的激活状态。 您可以通过访问以下内容监控捆绑的状态： `https://server:host/system/console/bundles`. 在继续执行其他任务之前，请确保所有捆绑包处于活动状态。
 
 * 预填充服务失败，交互式通信中出现空指针异常。 (CQDOC-21355)
 
