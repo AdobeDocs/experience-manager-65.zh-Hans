@@ -4,9 +4,9 @@ description: 自适应Forms提供了一种机制，可创建在任何自适应�
 topic-tags: author
 keywords: 添加自适应表单片段， 自适应表单片段， 创建表单片段， 将片段添加到自适应表单， 管理片段
 feature: Adaptive Forms, Core Components
-source-git-commit: 304b1bf2e19942fb728944330512a83a9006cb2a
+source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
 workflow-type: tm+mt
-source-wordcount: '1844'
+source-wordcount: '1840'
 ht-degree: 5%
 
 ---
@@ -61,7 +61,7 @@ ht-degree: 5%
 
 
 
-1. 单击“创建&#x200B;**”，然后单击“打开”****，以在编辑模式下使用默认模板打开**&#x200B;片段。在编辑模式下，您可以将任何自适应表单组件添加到片段。
+1. 单击“创建&#x200B;**”，然后单击“打开**”****，以在编辑模式下使用默认模板打开片段。在编辑模式下，您可以将任何自适应表单组件添加到片段。
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果您选择了 XML 架构或 XDP 表单模板作为片段的表单模型，则内容查找器中将显示一个显示表单模型层次结构的新选项卡。 它可让您将表单模型元素拖放到片段上。 添加的表单模型元素被转换为表单组件，同时保留关联XDP或XSD的原始属性。
 
@@ -180,7 +180,7 @@ Perform the following steps to show complete fragments in forms:
 ## 使用片段时要记住的要点 {#key-points-to-remember-when-working-with-fragments}
 
 * 确保片段名称是唯一的。 如果存在具有相同名称的现有片段，则创建片段失败。
-* 在基于XDP的自适应表单中，如果您将面板另存为包含其他XDP片段的片段，则生成的片段将自动绑定到子XDP片段。 在基于XSD的自适应表单中，生成的片段将绑定到架构根。
+* 在基于XDP的自适应表单中，如果您将面板另存为包含其他XDP片段的片段，则生成的片段将自动绑定到子XDP片段。 如果基于XSD的自适应表单，则生成的片段将绑定到架构根。
 * 创建自适应表单片段时，会在CRXDE Lite中创建片段节点，该节点与自适应表单的guideContainer节点类似。
 * 不支持自适应表单中使用其他表单数据模型的片段。 例如，基于XDP的片段在基于XSD的自适应表单中不受支持，反之亦然。
 * 自适应表单片段可通过AEM内容查找器中的自适应表单片段选项卡使用。

@@ -1,7 +1,7 @@
 ---
 title: PDF生成无法使用WorkBench打印大量PDF
 description: 当客户通过通过WorkBench实施的服务生成大量PDF时，打印服务将失败。
-source-git-commit: 9cdf22918f08fe505c3efd0ce43235e3442165d5
+source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Using the Designer, if we associate the template "BollatoRiservatiLandscape_tabl
 
 由于受到最大进程内存的限制，进程所消耗的内存不仅取决于数据文件的大小。 它与表单设计有着非常密切的关系，在某种程度上也与表单中合并的实际数据量有着密切的关系。
 
-如果表单有许多小节点，但数据很小，那么该过程将消耗更多内存（因此内存耗尽速度更快），而不是具有更少节点（即使）的表单具有大数据。
+如果表单有许多小节点，但数据很小，则该过程会消耗更多的内存（因此内存耗尽的速度会更快），而不是具有更少节点（即使）且数据较大的表单。
 
 阅读 [以下附录](#appendix) 有关更多信息，测试结果基于打印表单(无标记PDF)。 使用标记的PDF进程内存需求增加。 它还取决于表单中的字段数 — 大约流程内存需求是未标记PDF的1.5倍多。
 
