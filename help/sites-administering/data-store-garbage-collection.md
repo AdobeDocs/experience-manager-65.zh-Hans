@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: bd3c3c2f833e4d7e763e7726c5c75597523605d7
 workflow-type: tm+mt
-source-wordcount: '1891'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 >
 >不同时运行它的原因是，旧的（和未使用的）数据存储文件也会被备份，这样，如果需要回滚到旧的修订版本，则二进制文件仍然在备份中。
 
-如果您不想使用操作功能板中的每周维护窗口运行数据存储垃圾收集，还可以使用wget或curl HTTP客户端自动执行此操作。 以下是如何使用curl自动化备份的示例：
+如果您不想使用操作功能板中的每周维护窗口运行数据存储垃圾收集，还可以使用wget或curl HTTP客户端自动执行此操作。 以下是如何使用curl自动进行垃圾收集的示例：
 
 >[!CAUTION]
 >
