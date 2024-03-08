@@ -7,9 +7,9 @@ topic-tags: customization
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -143,8 +143,8 @@ Forms Portal为占位符提供了一个语法，用于显示自定义/现成元�
 * **diffTime**：当前时间和草稿的最后一次保存操作之间的差异。 或者，也可以选择当前时间与上次提交提交操作之间的差值。
 * **图标类**：用于显示草稿/提交内容的第一字母的CSS类。 Forms Portal包含以下类，这些类提供各种不同颜色的背景。
 * **所有者**：创建草稿/提交的用户。
-* **今天**：在DD中创建草稿或提交文件的日期:MM:yyyy格式。
-* **TimeNow**：在HH中创建草稿或提交文件的时间:MM:SS 24小时格式
+* **今天**：在中创建草稿或提交文件的日期 `DD:MM:YYYY` 格式。
+* **TimeNow**：在中创建草稿或提交文件的时间 `HH:MM:SS` 24小时制
 
 *注意：*
 

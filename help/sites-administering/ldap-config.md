@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,7 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
 >[!NOTE]
 >
-如果您计划在AEM实例中使用多个LDAP配置，则必须为每个配置创建单独的身份提供程序和同步处理程序。
+>如果您计划在AEM实例中使用多个LDAP配置，则必须为每个配置创建单独的身份提供程序和同步处理程序。
 
 ## 通过SSL配置LDAP {#configure-ldap-over-ssl}
 
@@ -277,12 +277,12 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
 * 日志级别： Debug
 * 日志文件logs/ldap.log
-* 消息模式： {0，date，dd.MM.yyyy HH:mm:ss.SSS} &amp;ast；{4}&amp;ast； {2} {3} {5}
+* 消息模式： {0，日期，`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast；{4}&amp;ast； {2} {3} {5}
 * 记录器：org.apache.jackrabbit.oak.security.authentication.ldap
 
 * 日志级别： Debug
 * 日志文件：logs/external.log
-* 消息模式： {0，date，dd.MM.yyyy HH:mm:ss.SSS} &amp;ast；{4}&amp;ast； {2} {3} {5}
+* 消息模式： {0，日期，`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast；{4}&amp;ast； {2} {3} {5}
 * 日志记录器：org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## 关于组隶属关系的消息 {#a-word-on-group-affiliation}

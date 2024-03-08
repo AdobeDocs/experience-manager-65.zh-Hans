@@ -4,9 +4,9 @@ description: 便于使用SCF的Handlebars帮助程序方法
 topic-tags: developing
 content-type: reference
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 787e5a87f13498006e2ce897e85ee12704b58f09
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1453'
+source-wordcount: '1445'
 ht-degree: 2%
 
 ---
@@ -135,7 +135,7 @@ Then content-loadmore would return
 
 * **格式**：字符串
 
-  （可选）要应用的日期格式。 默认值为“YYYY-MM-DDTHH”:mm:ss.sssZ”并且结果显示为“2015-03-18T18:17:13-07:00英寸
+  （可选）要应用的日期格式。 默认为&quot;`YYYY-MM-DDTHH:mm:ss.sssZ`”并且结果显示为“`2015-03-18T18:17:13-07:00`&quot;
 
 ### 示例 {#examples-1}
 
@@ -226,7 +226,7 @@ Then content-loadmore would return
 {{i18n "hello" comment="greeting" default="bonjour"}}
 ```
 
-## 包括 {#include}
+## 包含 {#include}
 
 用于将组件作为非现有资源包含在模板中的辅助函数。
 

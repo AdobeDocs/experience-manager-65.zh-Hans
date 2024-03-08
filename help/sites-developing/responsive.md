@@ -7,9 +7,9 @@ topic-tags: mobile-web
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '5375'
+source-wordcount: '5293'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ JSP脚本将生成引用样式表的以下HTML代码：
 
   此 —  `*alias*` 后缀是必需的，因为MobileEmulatorProvider服务是工厂服务。 使用对此工厂唯一的任何别名。
 
-* jcr:primaryType: `sling:OsgiConfig`
+* `jcr:primaryType`：`sling:OsgiConfig`
 
 添加以下节点属性：
 
@@ -225,7 +225,7 @@ JSP脚本将生成引用样式表的以下HTML代码：
 
 * 名称：`cq:deviceGroups`
 * 类型：`String[]`
-* 价值: `/etc/mobile/groups/responsive`
+* 值： `/etc/mobile/groups/responsive`
 
 使用“工具”控制台可以 [创建和编辑设备组](/help/sites-developing/groupfilters.md).
 
@@ -343,10 +343,10 @@ W3C [图片元素](https://html.spec.whatwg.org/multipage/embedded-content.html#
 
 浏览器加载页面时，它会使用src属性的值作为URL来请求图像。 Sling会解压缩URL：
 
-* 资源: `/content/mywebsite/en/_jcr_content/par/image_0`
+* 资源： `/content/mywebsite/en/_jcr_content/par/image_0`
 * 文件扩展名： `.jpg`
-* 选择器: `img`
-* 后缀: `1358372073597.jpg`
+* 选择器： `img`
+* 后缀： `1358372073597.jpg`
 
 此 `image_0` 节点具有 `jcr:resourceType` 值 `foundation/components/image`，它具有 `sling:resourceSuperType` 值 `foundation/components/parbase`. parbase组件包含与选择器和请求URL的文件名扩展名匹配的img.request.javaGET。 CQ使用此脚本(servlet)渲染图像。
 

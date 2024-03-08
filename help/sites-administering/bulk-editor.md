@@ -7,10 +7,10 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 1%
+source-wordcount: '1160'
+ht-degree: 0%
 
 ---
 
@@ -119,7 +119,8 @@ Geometrixx网站中包含一个说明此用例的示例：
 * **路径：** 仅搜索此路径下的节点。 如果指定了多个带有路径前缀的术语，则只考虑最后一个术语。
 * **类型：** 仅返回给定节点类型的节点。 这包括主要和mixin类型。 您可以指定多个逗号分隔的节点类型。 GQL返回任何指定类型的节点。
 * **订购：** 按给定属性对结果进行排序。 您可以指定多个以逗号分隔的属性名称。 要以降序排序结果，只需在属性名称的前面加一个减号即可。 例如，order：-name。 使用加号将按升序返回结果，这也是默认设置。
-* **限制：** 使用间隔限制结果的数量。 例如，limit：10..20间隔从零开始，开始是包含的，结束是排除的。 您还可以指定打开时间间隔:limit:10.. or limit：..20如果忽略点并且只指定一个值，则GQL最多返回此数量的结果。 例如，limit：10（返回前十个结果）。
+* **限制：** 使用间隔限制结果的数量。 例如，limit：10..20间隔从零开始，开始是包含的，结束是排除的。 您还可以指定一个open `interval:limit:10..` 或 `limit:..20`
+如果省略这些点并且只指定了一个值，则GQL最多返回此数量的结果。 例如， `limit:10` （返回前十个结果）。
 
 ### 导出内容 {#exporting-content}
 

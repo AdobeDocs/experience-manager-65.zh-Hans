@@ -11,16 +11,16 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '3794'
+source-wordcount: '3792'
 ht-degree: 7%
 
 ---
 
 # 管理Dynamic Media图像预设{#managing-image-presets}
 
-图像预设使Adobe Experience Manager资产能够动态交付不同大小、不同格式或具有动态生成的其他图像属性的图像。 每个图像预设表示用于显示图像的预定义的调整大小和格式命令集合。 创建图像预设时，可以选择图像投放的大小。 您还可以选择格式设置命令，以便在交付图像以进行查看时优化图像的外观。
+图像预设使Adobe Experience Manager Assets能够动态交付不同大小、不同格式的图像，或使用动态生成的其他图像属性。 每个图像预设表示用于显示图像的预定义的调整大小和格式命令集合。 创建图像预设时，可以选择图像投放的大小。 您还可以选择格式设置命令，以便在交付图像以进行查看时优化图像的外观。
 
 管理员可以创建用于导出资产的预设。 用户可以在导出图像时选择预设，这样还可以按照管理员指定的规范重新格式化图像。
 
@@ -195,7 +195,7 @@ Dynamic Media集成使用以下脚本：
 
 在 **[!UICONTROL Dynamic Media 流程图像资产]**&#x200B;步骤中，缩略图由图像服务器生成，此配置与应用于&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤的配置无关。通过&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤生成缩略图是创建缩览图最耗时、内存占用最多的方法。
 
-缩略图大小按以下格式定义： **[!UICONTROL 宽度:height:居中]**&#x200B;例如， `80:80:false`. 宽度和高度决定缩略图的大小（以像素为单位）。 中心值为false或true，如果设置为true，则表示缩略图图像大小与配置中给定的大小完全一样。 如果调整后的图像较小，则它会在缩略图内居中。
+缩略图大小按以下格式定义： **`width:height:center`**&#x200B;例如， `80:80:false`. 宽度和高度决定缩略图的大小（以像素为单位）。 中心值为false或true，如果设置为true，则表示缩略图图像大小与配置中给定的大小完全一样。 如果调整后的图像较小，则它会在缩略图内居中。
 
 >[!NOTE]
 >
@@ -362,7 +362,7 @@ Dynamic Media集成使用以下脚本：
    <td><strong>描述</strong></td>
   </tr>
   <tr>
-   <td><strong>色彩空间</strong></td>
+   <td><strong>颜色空间</strong></td>
    <td>选择 <strong>RGB， CMYK，</strong> 或 <strong>灰度</strong> 用于颜色空间。</td>
   </tr>
   <tr>

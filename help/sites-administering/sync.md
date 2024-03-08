@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '2434'
+source-wordcount: '2433'
 ht-degree: 1%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 以下是启用用户同步所需的步骤，随后是 [疑难解答](#troubleshooting) 部分：
 
-### 前提条件 {#prerequisites}
+### 先决条件 {#prerequisites}
 
 1. 如果已在一个发布实例上创建用户和用户组，则建议执行以下操作 [手动同步](#manually-syncing-users-and-user-groups) 将用户数据发送到所有发布实例，然后再配置并启用用户同步。
 
@@ -140,7 +140,7 @@ ht-degree: 1%
    * **主体**： *搜索为用户同步创建的用户*
    * **类型**：`Allow`
    * **权限**： `jcr:all`
-   * **限制** rep:glob: `*/activities/*`
+   * **限制** `rep:glob`： `*/activities/*`
    * 选择 **确定**
 
 * 选择 **全部保存**

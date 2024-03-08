@@ -1,5 +1,5 @@
 ---
-title: 为 Adobe Analytics 配置视频跟踪
+title: 为Adobe Analytics配置视频跟踪
 description: 了解如何为SiteCatalyst配置视频跟踪。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,14 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '1745'
-ht-degree: 2%
+source-wordcount: '1754'
+ht-degree: 0%
 
 ---
 
-# 为 Adobe Analytics 配置视频跟踪{#configuring-video-tracking-for-adobe-analytics}
+# 为Adobe Analytics配置视频跟踪{#configuring-video-tracking-for-adobe-analytics}
 
 有多种方法可用于跟踪视频事件，其中2种是旧版Adobe Analytics的旧版选项。 这些旧版选项为：旧版里程碑和旧版秒数。
 
@@ -117,7 +117,7 @@ XX后缀是定义里程碑的跟踪偏移。 例如，指定4、8、16、20和28
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>包含有关已查看区段的信息，例如2:O:4-8 </td>
+   <td>包含有关已查看区段的信息，例如， <code>2:O:4-8</code> </td>
   </tr>
  </tbody>
 </table>
@@ -199,7 +199,7 @@ XX后缀是定义里程碑的跟踪偏移。 例如，指定4、8、16、20和28
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>eVar3</td>
+   <td>EVAR3</td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -207,7 +207,7 @@ XX后缀是定义里程碑的跟踪偏移。 例如，指定4、8、16、20和28
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>eVar2</td>
+   <td>EVAR2</td>
   </tr>
  </tbody>
 </table>
@@ -317,7 +317,7 @@ eventdata.events.milestoneXX
 
    **示例调用** 使用DigitalPulse Debugger查看时，使用提供的示例访问Adobe Analytics应如下所示：
 
-   ![lmilestones1](assets/lmilestones1.png)
+   ![里程碑1](assets/lmilestones1.png)
 
    *此&#x200B;**pev3**调用中发送的变量包含以下信息：*
 

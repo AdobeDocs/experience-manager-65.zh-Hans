@@ -8,10 +8,10 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
-source-wordcount: '3032'
-ht-degree: 2%
+source-wordcount: '3034'
+ht-degree: 0%
 
 ---
 
@@ -157,14 +157,14 @@ Lucene索引具有以下配置选项：
 
 | <b>令牌</b> | <b>文档Id</b> |
 | --- | --- |
-| 194 | ..., 200,... |
-| 品牌 | ..., 100,... |
-| 多维数据集 | ..., 200, 300,... |
+| 194 | ...，200，... |
+| 品牌 | ...，100... |
+| 多维数据集 | ...，200,300，... |
 | 维度 | 300 |
-| 完成 | ..., 100,... |
+| 完成 | ...，100... |
 | 发明 | 200 |
-| 对象 | ..., 300,... |
-| 鲁比克 | ..., 100, 200,... |
+| 对象 | ...，300... |
+| 鲁比克 | ...，100,200，... |
 
 文档列表已排序。 这在查询时很方便。
 
@@ -187,8 +187,8 @@ Lucene索引具有以下配置选项：
 
 | <b>令牌</b> | <b>文档Id</b> |
 | --- | --- |
-| 鲁比克 | 10, 100, 200, 1000 |
-| 多维数据集 | 30, 200, 300, 2000 |
+| 鲁比克 | 10、100、200、1000 |
+| 多维数据集 | 30， 200， 300， 2000 |
 
 
 Lucene在两个列表（或循环调度程序）之间来回切换 `n` 列表，搜索时 `n` 单词数)：
@@ -222,20 +222,20 @@ Lucene在两个列表（或循环调度程序）之间来回切换 `n` 列表，
 select * from [nt:base] where [alias] = '/admin'
 ```
 
-要为上述查询定义Lucene属性索引，可通过在下创建节点来添加以下定义 **oak:index:**
+要为上述查询定义Lucene属性索引，可通过在下创建节点来添加以下定义 **`oak:index`：**
 
-* **名称:** `LucenePropertyIndex`
-* **类型:** `oak:QueryIndexDefinition`
+* **名称：** `LucenePropertyIndex`
+* **类型：** `oak:QueryIndexDefinition`
 
 创建节点后，添加以下属性：
 
-* **类型:**
+* **类型：**
 
   ```xml
   lucene (of type String)
   ```
 
-* **异步:**
+* **异步：**
 
   ```xml
   async (of type String)
@@ -283,24 +283,24 @@ select * from [nt:base] where [alias] = '/admin'
 
 1. 将属性添加到具有以下属性的默认节点：
 
-   * **名称:** `class`
-   * **类型:** `String`
-   * **值:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
+   * **名称：** `class`
+   * **类型：** `String`
+   * **值：** `org.apache.lucene.analysis.standard.StandardAnalyzer`
 
    该值是要使用的分析器类的名称。
 
    您还可以使用选项，将分析器设置为与特定Lucene版本一起使用 `luceneMatchVersion` 字符串属性。 将其与Lucene 4.7一起使用的有效语法为：
 
-   * **名称:** `luceneMatchVersion`
-   * **类型:** `String`
-   * **值:** `LUCENE_47`
+   * **名称：** `luceneMatchVersion`
+   * **类型：** `String`
+   * **值：** `LUCENE_47`
 
    如果 `luceneMatchVersion` 未提供，Oak使用的是随附的Lucene版本。
 
 1. 如果要向分析器配置添加stopwords文件，可以在 `default` 一个具有以下属性：
 
-   * **名称:** `stopwords`
-   * **类型:** `nt:file`
+   * **名称：** `stopwords`
+   * **类型：** `nt:file`
 
 #### 通过合成创建分析器 {#creating-analyzers-via-composition}
 
@@ -308,41 +308,41 @@ select * from [nt:base] where [alias] = '/admin'
 
 以此节点结构为例：
 
-* **名称:** `analyzers`
+* **名称：** `analyzers`
 
-   * **名称:** `default`
+   * **名称：** `default`
 
-      * **名称:** `charFilters`
-      * **类型:** `nt:unstructured`
+      * **名称：** `charFilters`
+      * **类型：** `nt:unstructured`
 
-         * **名称:** `HTMLStrip`
-         * **名称:** `Mapping`
+         * **名称：** `HTMLStrip`
+         * **名称：** `Mapping`
 
-      * **名称:** `tokenizer`
+      * **名称：** `tokenizer`
 
-         * **属性名称:** `name`
+         * **属性名称：** `name`
 
-            * **类型:** `String`
-            * **值:** `Standard`
+            * **类型：** `String`
+            * **值：** `Standard`
 
-      * **名称:** `filters`
-      * **类型:** `nt:unstructured`
+      * **名称：** `filters`
+      * **类型：** `nt:unstructured`
 
-         * **名称:** `LowerCase`
-         * **名称:** `Stop`
+         * **名称：** `LowerCase`
+         * **名称：** `Stop`
 
-            * **属性名称:** `words`
+            * **属性名称：** `words`
 
-               * **类型:** `String`
-               * **值:** `stop1.txt, stop2.txt`
+               * **类型：** `String`
+               * **值：** `stop1.txt, stop2.txt`
 
-            * **名称:** `stop1.txt`
+            * **名称：** `stop1.txt`
 
-               * **类型:** `nt:file`
+               * **类型：** `nt:file`
 
-            * **名称:** `stop2.txt`
+            * **名称：** `stop2.txt`
 
-               * **类型:** `nt:file`
+               * **类型：** `nt:file`
 
 过滤器、charFilters和tokenizers的名称是通过删除工厂后缀形成的。 因此：
 

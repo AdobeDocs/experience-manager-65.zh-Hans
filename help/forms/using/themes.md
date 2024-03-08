@@ -7,7 +7,7 @@ content-strategy: max-2018
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: db0e9d6105484b37e2e21e49bf0f95cef9da2a62
 workflow-type: tm+mt
 source-wordcount: '6084'
 ht-degree: 2%
@@ -119,7 +119,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>4.</td>
-   <td>创建时间</td>
+   <td>已创建</td>
    <td>否</td>
    <td>主题创建日期</td>
   </tr>
@@ -178,7 +178,7 @@ ht-degree: 2%
      <li>“/etc”中存储与此主题对应的clientlibs的用户定义存储库路径。</li>
      <li>默认值 — “/etc/clientlibs/fd/themes”+主题资源的相对路径。</li>
      <li>如果该位置不存在，则会自动生成文件夹层次结构。</li>
-     <li>更改此值后，clientlib节点结构将移至输入的新位置。<br /> <em><strong>注意：</strong> 如果更改默认clientlib位置，请在CRXDE存储库中分配 <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>到 <code>forms-users</code> 和 <code>crx:replicate</code>， <code>jcr:read </code>到 <code>fd-service</code> 在新位置。 另外通过添加添加其他ACL <code>deny jcr:addChildNodes</code> 对象 <code>forms-user</code></em></li>
+     <li>更改此值后，clientlib节点结构将移至输入的新位置。<br /> <em><strong>注意：</strong> 如果更改默认clientlib位置，请在CRXDE存储库中分配 <code>crx:replicate</code>， <code>rep:write</code>， <code>rep:glob:*</code>， <code>rep:itemNames::</code> <code>js.txt</code>， <code>jcr:read</code> 到 <code>forms-users</code> 和 <code>crx:replicate</code>， <code>jcr:read</code> 到 <code>fd-service</code> 在新位置。 另外通过添加添加其他ACL <code>deny jcr:addChildNodes</code> 对象 <code>forms-user</code></em></li>
     </ul> </td>
   </tr>
   <tr>
@@ -231,7 +231,7 @@ AEM Forms附带主题编辑器。 它是一个便于企业用户和Web设计人�
 
 [![突出显示边栏和画布的主题编辑器。](assets/themes.png)](assets/themes-1.png) **答：** 侧栏 **B.** 画布
 
-### 设置组件样式 {#styling-components}
+### 设置组件的样式 {#styling-components}
 
 您可以在多个自适应表单和交互式通信中使用主题，这会导入您在主题中指定的组件格式。 您可以设置各种组件的样式，如标题、描述、面板、字段、图标和文本框。 使用小组件配置主题中的组件属性。 虽然CSS覆盖部分允许您编写CSS代码或提供自定义选择器，但并不要求您事先了解CSS或LESS。 在侧栏中选择组件时，将显示“CSS覆盖”部分。
 
@@ -254,7 +254,7 @@ AEM Forms中的主题支持对表单和交互式通信中面板布局中的元�
 * 左侧选项卡
 * 顶部选项卡
 * 可折叠项
-* 响应式
+* 响应
 * 向导
 * 移动设备布局
 
