@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '9887'
+source-wordcount: '9814'
 ht-degree: 0%
 
 ---
@@ -1553,7 +1553,7 @@ WSE体系结构使用策略、声明和SecurityToken数据类型。 简言之，
                 try
                 {
                     //Because BLOB objects are used in both service references
-                    //it is necessary to fully-qualify the BLOB objects
+                    //it is necessary to fully qualify the BLOB objects
  
                     //Retrieve the form -- invoke the Forms service
                     SignInteractiveForm.ServiceReference2.BLOB formData = GetForm();

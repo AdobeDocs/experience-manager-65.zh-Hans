@@ -6,9 +6,9 @@ role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1026'
 ht-degree: 6%
 
 ---
@@ -58,7 +58,7 @@ ht-degree: 6%
 
 1. 要允许用户下载原始资源，请选择 **[!UICONTROL 允许下载原始文件]**. 要允许用户仅下载共享资源的演绎版，请选择 **[!UICONTROL 允许下载文件演绎版]**.
 
-1. 单击 **[!UICONTROL 共享]**. 将显示一条消息，确认通过电子邮件将链接与用户共享。
+1. 单击 **[!UICONTROL 共享]**. 将显示一条消息，确认通过电子邮件将该链接与用户共享。
 
 1. 要查看共享资产，请单击发送给用户的电子邮件中的链接。 要生成资源的预览，请单击共享资源。 要关闭预览，请单击 **[!UICONTROL 返回]**. 如果已共享文件夹，请单击 **[!UICONTROL 父文件夹]** 以返回到父文件夹。
 

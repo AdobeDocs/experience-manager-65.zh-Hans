@@ -2,10 +2,10 @@
 title: 访问和交付内容片段Headless快速入门指南
 description: 了解如何使用AEM Assets REST API管理内容片段，以及如何使用GraphQL API无头交付内容片段内容。
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '555'
-ht-degree: 49%
+ht-degree: 43%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 49%
 
 [现在您已经创建了一些内容片段，](create-content-fragment.md)您可以使用 AEM 的 API 以 Headless 的方式投放它们。
 
-* [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) 允许您创建请求来访问和投放内容片段。
+* [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) 允许您创建访问和投放内容片段的请求。
    * 要使用它， [必须在AEM中定义和启用端点](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)，如有必要， [已安装GraphiQL接口](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) 让您创建和修改内容片段（及其他资源）。
 
@@ -25,12 +25,12 @@ ht-degree: 49%
 
 ## 如何使用GraphQL投放内容片段 {#how-to-deliver-a-content-fragment}
 
-信息架构师必须为其渠道端点设计查询才能交付内容。 每个模型的每个端点只需考虑一次这些查询。 对于本指南快速入门，您只需要创建一个。
+信息架构师必须为其渠道端点设计查询才能交付内容。 每个模型的每个端点只能考虑一次这些查询。 对于本指南快速入门，您只能创建一个。
 
 1. 登录AEM并访问 [GraphiQL接口](/help/sites-developing/headless/graphql-api/graphiql-ide.md)：
    * 例如：`http://<host>:<port>/aem/graphiql.html`。
 
-1. GraphiQL 是用于 GraphQL 的浏览器中查询编辑器。您可以使用它来构建查询，以检索内容片段，并将它们作为JSON无意识地交付。
+1. GraphiQL是GraphQL的浏览器中查询编辑器。 您可以使用它来构建查询，以检索内容片段，并将它们作为JSON无意识地交付。
    * 左侧面板允许您构建查询。
    * 右侧窗格显示结果。
    * 查询编辑器具备代码完成和热键功能，可以轻松地执行查询。
@@ -60,7 +60,7 @@ ht-degree: 49%
 1. 单击 **执行查询** （向右箭头）图标或使用 `Ctrl-Enter` 热键和结果以JSON格式显示在右侧面板中。
    ![GraphiQL 结果](assets/graphiql-results.png)
 
-1. 单击:
+1. 单击：
    * **文档** 以显示in-context文档，帮助您构建适应您自己的模型的查询。
    * **历史记录** 顶部工具栏中显示之前的查询。
    * **另存为** 和 **保存** 以保存查询，之后可以从以下位置列出和检索查询： **持久查询** 面板和 **Publish**.

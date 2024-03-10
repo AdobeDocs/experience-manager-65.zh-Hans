@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '6061'
-ht-degree: 2%
+source-wordcount: '5868'
+ht-degree: 1%
 
 ---
 
@@ -103,15 +103,15 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
    应在新节点上设置以下属性：
 
-   * **名称:** `sling:resourceType`
+   * **名称：** `sling:resourceType`
 
-      * **类型:** `String`
-      * **值:** `granite/operations/components/mbean`
+      * **类型：** `String`
+      * **值：** `granite/operations/components/mbean`
 
-   * **名称:** `resource`
+   * **名称：** `resource`
 
-      * **类型:** `String`
-      * **值:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+      * **类型：** `String`
+      * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
 
    >[!NOTE]
    >
@@ -160,21 +160,21 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
    例如，如果您创建了一个配置并将 **hc.mbean.name** 值至 **磁盘使用**，则配置节点如下所示：
 
-   * **名称:** `Composite Health Check`
+   * **名称：** `Composite Health Check`
 
-      * **类型:** `nt:unstructured`
+      * **类型：** `nt:unstructured`
 
    具有以下属性：
 
-   * **名称:** `sling:resourceType`
+   * **名称：** `sling:resourceType`
 
-      * **类型:** `String`
-      * **值:** `granite/operations/components/mbean`
+      * **类型：** `String`
+      * **值：** `granite/operations/components/mbean`
 
-   * **名称:** `resource`
+   * **名称：** `resource`
 
-      * **类型:** `String`
-      * **值:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+      * **类型：** `String`
+      * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
 
    >[!NOTE]
    >
@@ -199,7 +199,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
    <td><p>观察队列长度遍历所有事件侦听器和后台观察器，比较它们的 <code>queueSize </code>敬他们的 <code>maxQueueSize</code> 和：</p>
     <ul>
      <li>返回严重状态，如果 <code>queueSize</code> 值超出 <code>maxQueueSize</code> 值（即事件被删除时）</li>
-     <li>如果符合以下条件，则返回Warn <code>queueSize</code> 值超过 <code>maxQueueSize * WARN_THRESHOLD</code> （默认值为0.75） </li>
+     <li>如果 <code>queueSize</code> 值超过 <code>maxQueueSize * WARN_THRESHOLD</code> （默认值为0.75） </li>
     </ul> <p>每个队列的最大长度来自单独的配置(Oak和AEM)，并且无法通过此运行状况检查进行配置。 此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=ObservationQueueLengthHealthCheck，type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
       <ul>
        <li>如果超过2小时前，则返回关键状态 </li>
        <li>如果时间介于2小时和45分钟之前，则返回警告状态 </li>
-       <li>如果小于45分钟前，则返回“正常”状态 </li>
+       <li>如果时间小于45分钟前，则返回“正常”状态 </li>
       </ul> </li>
      <li>如果不符合上述任何条件，则会返回“正常”状态</li>
     </ul> <p>“严重”和“警告”状态阈值均可配置。 此运行状况检查的Mbean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=asyncIndexHealthCheck，type=HealthCheck</a>.</p> <p><strong>注意： </strong>此运行状况检查在AEM 6.4中可用，并且已回溯到AEM 6.3.0.1。</p> </td>
@@ -264,9 +264,9 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
      <code>maxNumQueueJobs</code> 阈值和：
     </div>
     <ul>
-     <li>如果超过 <code>maxNumQueueJobs</code> 在队列中</li>
-     <li>如果存在早于1小时的长时间运行的活动作业，则返回Critical</li>
-     <li>如果存在已排队的作业，并且最后完成的作业时间早于1小时，则返回Critical</li>
+     <li>如果大于 <code>maxNumQueueJobs</code> 在队列中</li>
+     <li>如果存在早于1小时的长期运行活动作业，则返回“严重”</li>
+     <li>如果存在已排队的作业，并且上次完成的作业时间早于1小时，则返回“严重”</li>
     </ul> <p>只能配置已排队作业的最大数量参数，其默认值为1000。</p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=slingJobs，type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -286,7 +286,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
    <td><p>“磁盘空间”检查会查看 <code>FileStoreStats</code> MBean，检索节点存储的大小和节点存储分区上可用的磁盘空间量，并且：</p>
     <ul>
      <li>如果可用磁盘空间与存储库大小的比率小于警告阈值（默认值为10），则返回警告</li>
-     <li>如果可用磁盘空间与存储库大小之比小于关键阈值（默认值为2），则返回关键</li>
+     <li>如果可用磁盘空间与存储库大小的比率小于关键阈值（默认值为2），则返回关键</li>
     </ul> <p>两个阈值均可配置。 该检查仅适用于具有区段存储的实例。</p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=DiskSpaceHealthCheck，type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -309,8 +309,8 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
    <td>代码缓存检查</td>
    <td><p>运行状况检查验证多个JVM条件，这些条件可能会触发Java™ 7中存在的CodeCache错误：</p>
     <ul>
-     <li>如果实例在Java™ 7上运行，并且启用了代码缓存刷新，则返回Warn</li>
-     <li>如果实例在Java™ 7上运行，并且保留的代码缓存大小小于最小阈值（默认值为90 MB），则返回Warn</li>
+     <li>如果实例在Java™ 7上运行，并且启用了代码缓存刷新，则返回警告</li>
+     <li>如果实例在Java™ 7上运行，并且保留的代码缓存大小小于最小阈值（默认值为90 MB），则返回警告</li>
     </ul> <p>此 <code>minimum.code.cache.size</code> 阈值可配置。 有关Bug的详细信息，请参见 <a href="https://bugs.java.com/bugdatabase/"> 然后搜索Bug ID 8012547</a>.</p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=codeCacheHealthCheck，type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
@@ -581,7 +581,7 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 
 您可以从以下位置访问Lucene二进制文件清理任务： **AEM >工具>操作>维护>每日维护窗口> Lucene二进制文件清理**.
 
-### 数据存储垃圾收集 {#data-store-garbage-collection}
+### 数据存储垃圾回收 {#data-store-garbage-collection}
 
 有关数据存储垃圾收集的详细信息，请参阅专门的 [文档页面](/help/sites-administering/data-store-garbage-collection.md).
 
@@ -604,7 +604,7 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 
 您可以计划版本清除维护任务，以自动删除旧版本。 此操作可将手动使用的需求降至最低 [版本清除工具](/help/sites-deploying/version-purging.md). 您可以通过访问以下链接来计划和配置版本清除任务 **“工具”>“操作”>“维护”>“每周维护”窗口** 并按照以下步骤执行操作：
 
-1. 单击&#x200B;**添加**。
+1. 单击 **添加**.
 1. 选择 **版本清除** 从下拉菜单中。
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
@@ -899,9 +899,9 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
   </tr>
   <tr>
    <td>索引</td>
-   <td><p>显示:</p>
+   <td><p>显示：</p>
     <ul>
-     <li>"正在进行索引"</li>
+     <li>“正在编制索引”</li>
      <li>"正在进行查询"</li>
     </ul> <p>如果线程转储中存在索引或查询线程。</p> </td>
    <td>不适用</td>

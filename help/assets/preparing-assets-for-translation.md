@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Projects
 exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 每个语言文件夹都称为语言副本。 语言副本的根文件夹（称为语言根）标识了语言副本中内容的语言。 例如， */content/dam/it* 是意大利语副本的意大利语根。 语言副本必须使用 [已正确配置语言根](preparing-assets-for-translation.md#creating-a-language-root) 以便在翻译源资产时定位正确的语言。
 
-您最初添加资产的语言副本是主要语言。 主要语言是翻译成其他语言的源。 示例文件夹层次结构包括几个语言根：
+最初添加资产的语言副本是主要语言。 主要语言是翻译成其他语言的源。 示例文件夹层次结构包括几个语言根：
 
 ```shell
 /content

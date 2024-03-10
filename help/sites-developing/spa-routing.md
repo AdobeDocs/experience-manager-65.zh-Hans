@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '488'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-请注意，SPA的每条路由都应对应于AEM中的可访问资源(例如，&quot; `/content/mysite/mypage"`)，因为 `PageModelManager` 在选择路由后，将自动尝试加载相应的页面模型。 不过，如果需要，SPA还可以定义路由的“阻止列表”，应将其忽略 `PageModelManager`：
+请注意，SPA的每条路由都应对应于AEM中的可访问资源(例如， ” `/content/mysite/mypage"`)，因为 `PageModelManager` 在选择路由后，将自动尝试加载相应的页面模型。 不过，如果需要，SPA还可以定义路由的“阻止列表”，应将其忽略 `PageModelManager`：
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

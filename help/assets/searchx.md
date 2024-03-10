@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '822'
-ht-degree: 19%
+source-wordcount: '814'
+ht-degree: 16%
 
 ---
 
@@ -126,7 +126,7 @@ ht-degree: 19%
                "name": id + ".value"
            });
    
-           // Depending on the predicate additional parameters allow to configure the
+           // Depending on the predicate, additional parameters let you configure the
            // predicate. Here we add an operation parameter to create a "like" query.
            // Again note the name set to the id and a suffix.
            qb.addField({
@@ -271,7 +271,7 @@ ht-degree: 19%
 | 属性 | 类型 | 描述 |
 |---|---|---|
 | predicatename | 字符串 | 谓词的名称。 默认为 `path` |
-| rootPath | 字符串 | 谓词的根路径。 默认为 `/content/dam` |
+| 根路径 | 字符串 | 谓词的根路径。 默认为 `/content/dam` |
 | pathFieldPredicateName | 字符串 | 默认为 `folder` |
 | showFlatOption | 布尔值 | 用于显示复选框的标志 `search in subfolders`. 默认为true。 |
 

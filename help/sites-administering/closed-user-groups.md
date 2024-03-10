@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '6650'
 ht-degree: 0%
@@ -322,7 +322,7 @@ while (isSupportedPath(path)) {
 
 #### 按主体管理CUG策略 {#managing-cug-policies-by-pincipal}
 
-由定义的扩展 `JackrabbitAccessControlManager` 允许按主体编辑访问控制策略的策略未使用CUG访问控制管理实现，因为根据定义，CUG策略始终影响所有主体：以 `PrincipalSetPolicy` 将被授予读取权限，而所有其他主体将阻止读取目标节点定义的树中的内容。
+由定义的扩展 `JackrabbitAccessControlManager` 允许您按主体编辑访问控制策略的CUG访问控制管理并没有实现，因为根据定义，CUG策略始终影响所有主体：那些在 `PrincipalSetPolicy` 将被授予读取权限，而所有其他主体将阻止读取目标节点定义的树中的内容。
 
 相应方法始终返回空策略数组，但不会引发异常。
 

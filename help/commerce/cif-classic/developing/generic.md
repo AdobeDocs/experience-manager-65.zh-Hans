@@ -3,9 +3,9 @@ title: 开发（通用）
 description: 集成框架包括带有API的集成层，允许您为电子商务功能构建AEM组件。
 contentOwner: Guillaume Carlino
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1856'
 ht-degree: 0%
 
 ---
@@ -421,7 +421,7 @@ public class AxisFilter implements VariantFilter {
 
 ### 开发促销和优惠券 {#developing-promotions-and-vouchers}
 
-* 优惠券:
+* 优惠券：
 
    * 优惠券是一种基于页面的组件，使用网站控制台创建/编辑并存储在以下位置：
 
@@ -445,7 +445,7 @@ public class AxisFilter implements VariantFilter {
       * 用于管理（添加/删除）优惠券的编辑对话框（表单）。
       * 在购物车中添加/删除优惠券所需的操作。
 
-* 促销活动:
+* 促销活动：
 
    * 促销活动是一个基于页面的组件，它使用“网站”控制台创建/编辑并存储在以下位置：
 
@@ -471,7 +471,7 @@ public class AxisFilter implements VariantFilter {
 
    * ClientContext `SegmentMgr` 解析区段和ClientContext `CartMgr` 解析促销活动。 至少具有一个已解析区段的每个促销活动都会触发。
 
-      * 已触发的促销活动将通过AJAX调用发送回服务器以重新计算购物车。
+      * 已触发的促销活动会通过AJAX调用发送回服务器以重新计算购物车。
       * ClientContext面板中还会显示触发的促销活动（和添加的优惠券）。
 
 在购物车中添加/删除优惠券是通过 `CommerceSession` API：

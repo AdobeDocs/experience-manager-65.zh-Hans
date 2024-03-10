@@ -6,10 +6,10 @@ role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 4%
+source-wordcount: '857'
+ht-degree: 2%
 
 ---
 
@@ -47,10 +47,10 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
 
    | 导出或下载选项 | 描述 |
    |---|---|
-   | **[!UICONTROL 为每个资产创建单独的文件夹]** | 选择此选项可将下载的每个资产（包括嵌套在资产父文件夹下的子文件夹中的资产）包含到本地计算机上的一个文件夹中。 如果未选择此选项，则默认情况下会忽略文件夹层次结构，并且所有资产都下载到本地计算机上的一个文件夹中。 |
+   | **[!UICONTROL 为每个资源创建单独的文件夹]** | 选择此选项可将下载的每个资产（包括嵌套在资产父文件夹下的子文件夹中的资产）包含到本地计算机上的一个文件夹中。 如果未选择此选项，则默认情况下会忽略文件夹层次结构，并且所有资产都下载到本地计算机上的一个文件夹中。 |
    | **[!UICONTROL 电子邮件]** | 会向用户发送电子邮件通知。 标准电子邮件模板可在以下位置使用：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> 您可以在以下位置找到部署期间自定义的模板： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在以下位置存储特定于租户的自定义模板：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL 资产]** | 选择此选项可下载原始格式的资源，而无需任何演绎版。<br>如果原始资产具有子资产，则子资产选项可用。 |
-   | **[!UICONTROL 演绎版]** | 演绎版是资产的二进制表示形式。 资产具有主要表示形式 — 即上传文件的表示形式。 它们可以有任意数量的呈现。 <br> 使用此选项，您可以选择想要下载的演绎版。 可用的演绎版取决于您选择的资源。 如果资产具有任何演绎版，则该选项可用。 |
+   | **[!UICONTROL 节目]** | 演绎版是资产的二进制表示形式。 资产具有主要表示形式 — 即上传文件的表示形式。 它们可以有任意数量的呈现。 <br> 使用此选项，您可以选择想要下载的演绎版。 可用的演绎版取决于您选择的资源。 如果资产具有任何演绎版，则该选项可用。 |
    | **[!UICONTROL 智能裁剪]** | 选择此选项可从AEM中下载所选资源的所有智能裁剪演绎版。 将创建包含智能裁剪呈现的zip文件并下载到本地计算机。 |
    | **[!UICONTROL 动态演绎版]** | 选择此选项可实时生成一系列替代演绎版。 选择此选项时，您还可以通过从以下各项中选择要动态创建的演绎版 [图像预设](image-presets.md) 列表。 <br>此外，您还可以选择大小和测量单位、格式、颜色空间、分辨率以及任何可选的图像修饰符（如反转图像）。 仅当满足以下条件时，选项才可用 [!DNL Dynamic Media] 已启用。 |
 

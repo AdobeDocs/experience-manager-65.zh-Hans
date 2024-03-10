@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 >[!NOTE]
 >
-如果您有自定义组件，并且使用SOAP或EJB协议在同一本地服务器上调用DSC，并且这些调用在升级后停止工作，则使用VM内调用策略。 使用具有默认ServiceClientFactory的in-VM DSC调用方法，并且不要使用SOAP或EJB协议构建ServiceClientFactory。
+>如果您有自定义组件，并且使用SOAP或EJB协议在同一本地服务器上调用DSC，并且这些调用在升级后停止工作，则使用VM内调用策略。 使用具有默认ServiceClientFactory的in-VM DSC调用方法，并且不要使用SOAP或EJB协议构建ServiceClientFactory。
 
 ## 快速入门（SOAP模式）：使用Java™ API部署组件 {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 

@@ -1,15 +1,15 @@
 ---
 title: Java&trade； API快速入门简介
-description: 了解如何使用通过SOAP连接启用的强类型API，即AEM Forms Java&trade；来执行AEM Forms操作。
+description: 了解如何使用AEM Forms Java&trade；通过SOAP连接启用的强类型API来执行AEM Forms操作。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -85,4 +85,4 @@ JAR文件列表位于“快速入门”开头的注释部分中。 例如，以�
 
 >[!NOTE]
 >
-大多数Web服务快速启动都使用C#编写，并使用.NET Framework。 但是，您可以创建客户端应用程序逻辑，以便能够在支持SOAP标准的任何开发环境中调用AEM Forms服务。 (请参阅 [使用Web服务调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+>大多数Web服务快速启动都使用C#编写，并使用.NET Framework。 但是，您可以创建客户端应用程序逻辑，以便能够在支持SOAP标准的任何开发环境中调用AEM Forms服务。 (请参阅 [使用Web服务调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)

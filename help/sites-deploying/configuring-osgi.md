@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1954'
 ht-degree: 0%
@@ -247,7 +247,7 @@ Web控制台不显示存储库中已保存更改的位置，但可以轻松地�
    * 类型：根据需要。
    * 值：根据需要。
 
-   您只需为要配置的参数创建属性，其他参数仍采用AEM设置的默认值。
+   您只能为要配置的参数创建属性，而其他参数仍采用AEM设置的默认值。
 
 1. 保存所有更改。
 

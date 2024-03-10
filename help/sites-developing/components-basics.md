@@ -7,7 +7,7 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '4843'
 ht-degree: 0%
@@ -1026,7 +1026,7 @@ AEM中的组件遵循三个不同的层次结构：
 >  * `aftermove`
 >  * `aftercopy`
 
-事件处理程序可以通过自定义实施实施。 例如，(其中 `project.customerAction` 是静态方法)：
+事件处理程序可以通过自定义实施实施。 例如，其中 `project.customerAction` 是静态方法：
 
 `afteredit = "project.customerAction"`
 

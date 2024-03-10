@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1019'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -1687,7 +1687,7 @@ PDF以下代码示例使用 `PDFUtility`.
 
 >[!NOTE]
 >
-此 `PDFUtility` 只能密文那些使用Acrobat标记为密文的PDF。
+>此 `PDFUtility` 只能密文那些使用Acrobat标记为密文的PDF。
 
 ```java
 /*

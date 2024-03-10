@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '2092'
+source-wordcount: '2093'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Dispatcher是Adobe Experience Manager的用于缓存和/或负载平衡的工具
 
 [卸载](/help/sites-deploying/offloading.md) 在拓扑中的Experience Manager实例之间分发处理任务。 通过卸载，您可以使用特定的Experience Manager实例来执行特定类型的处理。 专业化的处理使您能够最大限度地利用可用的服务器资源。
 
-拓扑是参与卸载的松散耦合Experience Manager集群。 集群由一个或多个Experience Manager服务器实例组成（单个实例被视为集群）。
+拓扑是参与卸载的松散耦合的Experience Manager群集。 集群由一个或多个Experience Manager服务器实例组成（单个实例被视为集群）。
 
 有关如何查看或修改拓扑成员资格的详细信息，请参阅 [管理拓扑](/help/sites-deploying/offloading.md#administering-topologies) 部分。
 

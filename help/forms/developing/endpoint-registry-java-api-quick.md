@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 >[!NOTE]
 >
-无法使用Web服务处理端点。
+>无法使用Web服务处理端点。
 
 ## 快速启动：使用Java™ API添加EJB端点 {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
@@ -251,7 +251,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 >[!NOTE]
 >
-在项目中包括WatchedFolderEndpointConfigConstants.java文件，以便编译和运行以下快速入门。 (请参阅 [观察文件夹配置值常量文件](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>在项目中包括WatchedFolderEndpointConfigConstants.java文件，以便编译和运行以下快速入门。 (请参阅 [观察文件夹配置值常量文件](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```java
  /*
@@ -386,7 +386,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 >[!NOTE]
 >
-在项目中包括EmailEndpointConfigConstants.java文件，以便编译和运行以下快速入门。 (请参阅 [电子邮件配置值常量文件](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>在项目中包括EmailEndpointConfigConstants.java文件，以便编译和运行以下快速入门。 (请参阅 [电子邮件配置值常量文件](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```java
  /*

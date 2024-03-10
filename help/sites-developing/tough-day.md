@@ -4,7 +4,7 @@ description: Tough Day测试模拟了在所有操作同时进行的最坏情况�
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: b1012548630affd697edd27c90bdac4eeb35125f
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '1825'
 ht-degree: 1%
@@ -130,7 +130,7 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 | `--port=<Val>` | 主机的端口。 | 4502 |  |
 | `--user=<Val>` | 实例的用户名。 | 管理员 |  |
 | `--password=<Val>` | 给定用户的密码。 | 管理员 |  |
-| `--duration=<Val>` | 测试的持续时间。 可以表达为(**s**)秒，(**m**)分钟，(**h**)我们的和(**d**)天。 | 1d |  |
+| `--duration=<Val>` | 测试的持续时间。 可表达为 **s**&#x200B;秒， **m**&#x200B;因纽特， **h**&#x200B;我们的，以及 **d**&#x200B;是的。 | 1d |  |
 | `--timeout=<Val>` | 测试将运行多长时间，才会被中断并标记为失败。 以秒为单位表示。 | 180 |  |
 | `--suite=<Val>` | 该值可以是预定义测试包中的一个或列表（以逗号分隔）。 | toughday |  |
 | `--configfile=<Val>` | 目标yaml配置文件。 |  |  |

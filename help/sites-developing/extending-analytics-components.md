@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1273'
-ht-degree: 1%
+source-wordcount: '1244'
+ht-degree: 0%
 
 ---
 
@@ -155,9 +155,9 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 将topnav组件复制到CQ应用程序。 此过程要求在CRXDE Lite中设置应用程序。
 
-1. 右键单击 `/libs/foundation/components/topnav` 节点并单击 复制。
+1. 右键单击 `/libs/foundation/components/topnav` 节点，然后单击复制。
 1. 右键单击应用程序文件夹下的“组件”文件夹，然后单击“粘贴”。
-1. 单击全部保存。
+1. 单击“全部保存”。
 
 #### 将topnav与Adobe Analytics框架集成 {#integrating-topnav-with-the-adobe-analytics-framework}
 
@@ -192,7 +192,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
    * 类型：字符串
    * 值：常规
 
-1. 单击全部保存。
+1. 单击“全部保存”。
 1. 打开 `topnav.jsp` 文件。
 1. 在元素中，添加以下属性：
 
@@ -219,7 +219,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
    </script>
    ```
 
-1. 单击全部保存。
+1. 单击“全部保存”。
 
 的内容 `topnav.jsp` 文件应如下所示：
 
@@ -230,7 +230,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
   All Rights Reserved.
 
   This software is the confidential and proprietary information of
-  Day Management AG, ("Confidential Information"). You shall not
+  Day Management AG ("Confidential Information"). You shall not
   disclose such Confidential Information and shall use it only in
   accordance with the terms of the license agreement you entered into
   with Day.

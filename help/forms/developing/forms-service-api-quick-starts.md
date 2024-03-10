@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
@@ -1378,7 +1378,7 @@ Forms服务提供以下快速入门：
 
 >[!NOTE]
 >
-使用 `com.adobe.idp.Document` 对象和 `org.w3c.dom.Document` 在同一应用程序中，完全符合条件 `org.w3c.dom.Document`.
+>使用 `com.adobe.idp.Document` 对象和 `org.w3c.dom.Document` 在同一应用程序中，完全符合条件 `org.w3c.dom.Document`.
 
 ## 快速入门（SOAP模式）：使用Java™ API处理作为PDF提交的PDF forms {#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api}
 

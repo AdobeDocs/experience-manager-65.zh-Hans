@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: 2118d77f-1314-48f1-88e3-e27dd8e9f17b
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2278'
 ht-degree: 88%
@@ -73,10 +73,10 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 ```javascript
     {
-        "type": "SERVER_SIDE_VALIDATION/FORM_SUBMISSION/SERVICE_INVOCATION/FAILURE/VALIDATION_ERROR", (required)
-        "title": "Server side validation failed/Third party service invocation failed", (optional)
-        "detail": "", (optional)
-        "instance": "", (optional)
+        "type": "SERVER_SIDE_VALIDATION/FORM_SUBMISSION/SERVICE_INVOCATION/FAILURE/VALIDATION_ERROR" (required)
+        "title": "Server side validation failed/Third party service invocation failed" (optional)
+        "detail": "" (optional)
+        "instance": "" (optional)
         "validationErrors" : [ (required)
             {
                 "fieldName":"<qualified fieldname of the field whose data sent is invalid>",
@@ -85,7 +85,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
     
             }
         ],
-        "originCode": <Origin http status code>, (optional - if there is SERVER_SIDE_VALIDATION)
+        "originCode": <Origin http status code> (optional - if there is SERVER_SIDE_VALIDATION)
         "originMessage" : "<unstructured error message returned by service>" (optional - if there is SERVER_SIDE_VALIDATION)
     }
 ```
@@ -163,7 +163,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 +++
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 在自适应Forms中使用错误处理程序之前：
 

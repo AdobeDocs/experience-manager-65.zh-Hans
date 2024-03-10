@@ -4,7 +4,7 @@ description: 安装、配置和自定义AEM Forms演示包。
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '4535'
 ht-degree: 1%
@@ -155,8 +155,8 @@ ht-degree: 1%
 
 1. 将服务配置为连接到您选择的SMTP服务器：
 
-   1. **SMTP服务器主机名**：例如， (smtp.gmail.com)
-   1. **服务器端口**：例如，(465)适用于使用SSL的gmail
+   1. **SMTP服务器主机名**：例如(smtp.gmail.com)
+   1. **服务器端口**：例如，对于使用SSL的gmail，为(465)
    1. **SMTP用户：** 演示@ &lt;companyname> .com
    1. **“发件人”地址**： aemformsdemo@adobe.com
 

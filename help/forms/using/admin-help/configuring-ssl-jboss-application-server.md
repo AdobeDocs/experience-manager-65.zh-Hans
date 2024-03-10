@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '904'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ ht-degree: 0%
    `keytool -import -alias "AEMForms Cert" -file`*aemforms_cert* `.cer -keystore`*JAVA_HOME* `\jre\lib\security\cacerts`
 
 1. 类型 `changeit` 作为密码。 此密码是Java安装的默认密码，系统管理员可能已对其进行更改。
-1. 提示输入时 `Trust this certificate? [no]`：，类型 `yes`. 此时会显示确认“Certificate waded to keystore”。
+1. 提示输入时 `Trust this certificate? [no]`，类型 `yes`. 此时会显示确认“Certificate waded to keystore”。
 1. 如果通过SSL从Workbench连接，请在Workbench计算机上安装证书。
 1. 在文本编辑器中，打开以下文件进行编辑：
 

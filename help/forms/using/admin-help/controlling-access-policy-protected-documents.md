@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 0%
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 * 如果文档处于在线状态并已关闭，则下次收件人通过打开受策略保护的文档与Document Security同步时，更改将生效。
 * 如果文档在线且处于打开状态，则更改将在收件人关闭文档时生效。
-* 如果文档处于离线状态（在没有Internet连接的情况下使用，例如在笔记本电脑上），则下次收件人与document security同步时，更改将生效。
+* 如果文档处于脱机状态（即正在没有Internet连接的情况下使用，例如在笔记本电脑上），则下次收件人与document security同步时，更改将生效。
 
 **撤销对受策略保护文档的访问权限**
 
