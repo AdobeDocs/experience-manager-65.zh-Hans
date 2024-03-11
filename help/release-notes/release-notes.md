@@ -3,10 +3,10 @@ title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: a0ad6c5d61a971c5210f7d6dd7ef85e5effab44a
+source-git-commit: 4889c3c36ec86b1c9527cd2bc5eb77984e278342
 workflow-type: tm+mt
-source-wordcount: '3765'
-ht-degree: 2%
+source-wordcount: '3694'
+ht-degree: 1%
 
 ---
 
@@ -462,26 +462,12 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
 
 ### AEM Forms的已知问题 {#known-issues-aem-forms-6520}
 
-* 从AEM 6.5 Forms Service Pack 18 (6.5.18.0)或AEM 6.5 Forms Service Pack 19 (6.5.19.0)更新到AEM 6.5 Forms Service Pack 20 (6.5.20.0)后，用户遇到JSP编译错误。 他们无法打开或创建自适应表单，并且在页面编辑器、AEM Forms UI和AEM Workflow编辑器等其他AEM界面中遇到错误。 出现与以下内容类似的错误消息：
-
-  `Unable to compile class for JSP: An error occurred at line: 162 in the jsp file: /libs/granite/ui/components/coral/foundation/anchorbutton/anchorbutton.jsp The method transformLinkInUriIfExternal(String) is undefined for the type ComponentHelper`
-
-  要解决该问题，请执行以下操作：
-
-   1. 下载适用于您的操作系统的修补程序：
-      * [适用于Microsoft Windows的修补程序](/help/release-notes/assets/Hotfix-windows.zip)
-      * [适用于Linux的修补程序](/help/release-notes/assets/Hotfix-Linux.zip)
-      * [适用于Apple macOS的修补程序](/help/release-notes/assets/Hotfix-osx.zip)
-
-   1. 通过上传并安装包(.zip) [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=en#accessing).
-   1. 重新启动AEM服务器，并在重新启动过程完成后验证所有捆绑包的激活状态。 您可以通过访问以下内容监控捆绑的状态： `https://server:host/system/console/bundles`. 在继续执行其他任务之前，请确保所有捆绑包处于活动状态。
-
 * 预填充服务失败，交互式通信中出现空指针异常。 (CQDOC-21355)
 * 自适应Forms允许您在ECMAScript版本5或更早版本中使用自定义函数。 当自定义函数使用ECMAScript版本6或更高版本（如“let”、“const”或箭头函数）时，规则编辑器可能无法正确打开。
-* 用户无法创建通信管理信件。 当用户创建信件时，出现说明为“对象对象”的错误，并且信件未创建。 在信件创建屏幕上加载布局缩略图也失败。 (FORMS-13496)
-* 交互式通信服务会创建PDF文档，但用户数据不会自动填充到表单字段中。 预填充服务未按预期运行。 (FORMS-13413和FORMS-13493)
-* 无法加载automated forms conversion服务的审核和更正(RnC)编辑器。 (FORMS-13491)
-* 从AEM 6.5 Forms Service Pack 18 (6.5.18.0)或AEM 6.5 Forms Service Pack 19 (6.5.19.0)更新到AEM 6.5 Forms Service Pack 20 (6.5.20.0)后，用户遇到JSP编译错误。 他们无法打开或创建自适应表单，并且在页面编辑器、AEM Forms UI和AEM Workflow编辑器等其他AEM界面中遇到错误。 (FORMS-13492)
+* 用户无法创建通信管理信件。 当用户创建信件时，出现说明为“对象对象”的错误，并且信件未创建。 在信件创建屏幕上加载布局缩略图也失败。 您可以安装 [最新的AEM 6.5表单Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 以解决问题。 (FORMS-13496)
+* 交互式通信服务会创建PDF文档，但用户数据不会自动填充到表单字段中。 预填充服务未按预期运行。 您可以安装 [最新的AEM 6.5表单Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 以解决问题。 (FORMS-13413和FORMS-13493)
+* 无法加载automated forms conversion服务的审核和更正(RnC)编辑器。 您可以安装 [最新的AEM 6.5表单Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 以解决问题。 (FORMS-13491)
+* 从AEM 6.5 Forms Service Pack 18 (6.5.18.0)或AEM 6.5 Forms Service Pack 19 (6.5.19.0)更新到AEM 6.5 Forms Service Pack 20 (6.5.20.0)后，用户遇到JSP编译错误。 他们无法打开或创建自适应表单，并且在页面编辑器、AEM Forms UI和AEM Workflow编辑器等其他AEM界面中遇到错误。 您可以安装 [最新的AEM 6.5表单Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 以解决问题。 (FORMS-13492)
 
 客户可以安装最新的AEM 6.5 Forms Service Pack来解决上述问题。  以下是受支持操作系统的直接链接：
 * [适用于Forms macOS的AEM 6.5 Apple Service Pack 20](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
