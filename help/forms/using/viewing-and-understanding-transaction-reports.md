@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '881'
 ht-degree: 0%
 
 ---
 
-# 查看和了解事务处理报表{#viewing-and-understanding-transaction-reports}
+# 在OSGi上查看和了解AEM Forms的交易报表{#viewing-and-understanding-transaction-reports}
 
 通过事务报表，您可以捕获和跟踪已提交的表单、已处理的文档和已渲染文档的数量。 跟踪这些交易背后的目标是针对产品使用情况做出明智的决策，并重新平衡硬件和软件投资。 有关更多信息，请参阅 [AEM Forms交易报表概述](../../forms/using/transaction-reports-overview.md).
 
@@ -88,6 +88,6 @@ AEM Forms显示自配置日期以来的事务报表，如以下摘要报表中�
 
 ## 相关文章 {#related-articles}
 
-* [交易报表概述](../../forms/using/transaction-reports-overview.md)
-* [交易报告可记帐API](../../forms/using/transaction-reports-billable-apis.md)
-* [记录自定义实施的交易](/help/forms/using/record-transaction-custom-implementation.md)
+* [适用于OSGi上的AEM Forms的交易报表概述](../../forms/using/transaction-reports-overview.md)
+* [OSGi上AEM Forms的交易报告可计费API](../../forms/using/transaction-reports-billable-apis.md)
+* [在OSGi上记录AEM Forms的自定义实施交易](/help/forms/using/record-transaction-custom-implementation.md)

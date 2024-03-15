@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: e39c52bc658e3a286272d1c94106b17a2f5579ad
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '7355'
+source-wordcount: '7397'
 ht-degree: 20%
 
 ---
@@ -73,7 +73,7 @@ ht-degree: 20%
    + [内容处置过滤器](/help/sites-administering/content-disposition-filter.md)
    + [AEM 6.5中的自定义用户组映射](/help/sites-administering/cug-mapping.md)
    + [相同网站Cookie支持](/help/sites-administering/same-site-cookie-support.md)
-   + [Adobe Developer Console 中的 JWT 凭据弃用](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [在 Adobe Developer Console 中弃用 JWT 凭据](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
 + Sites {#sites}
    + 创作 {#authoring}
       + AEM创作的基本任务、工具和概念 {#essentials}
@@ -890,10 +890,16 @@ ht-degree: 20%
       + [根据使用的模板显示组件](/help/forms/using/displaying-components-based-on-template.md)
       + [创建自定义自适应表单主题](/help/forms/using/creating-custom-adaptive-form-themes.md)
    + 交易报告 {#transaction-reports}
-      + [交易报表概述](/help/forms/using/transaction-reports-overview.md)
-      + [查看和了解事务处理报表](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-      + [交易报告计费 API](/help/forms/using/transaction-reports-billable-apis.md)
-      + [记录自定义实施的交易](/help/forms/using/record-transaction-custom-implementation.md)
+      + [交易报告概览](/help/forms/using/transaction-reports-overview-jee-osgi.md)
+      + OSGi上AEM Forms的交易报表 {#transaction-reports-osgi}
+         + [交易报表](/help/forms/using/transaction-reports-overview.md)
+         + [查看和了解事务处理报表](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+         + [OSGi上AEM Forms的可计费API列表](/help/forms/using/transaction-reports-billable-apis.md)
+         + [记录自定义实施的交易](/help/forms/using/record-transaction-custom-implementation.md)
+      + JEE上AEM Forms的交易报表 {#transaction-reports-jee}
+         + [启用和查看事务报表](/help/forms/using/transaction-report-overview-jee.md)
+         + [适用于AEM Forms on JEE的可计费API列表](/help/forms/using/transaction-reports-billable-apis-jee.md)
+         + [记录自定义组件API的事务](/help/forms/using/record-transaction-custom-component-jee.md)
    + AEM Forms on JEE的管理员帮助 {#administrator-help}
       + 开始使用 {#get-started}
          + [AEM Forms常规设置](/help/forms/using/admin-help/configure-general-aem-forms-settings.md)

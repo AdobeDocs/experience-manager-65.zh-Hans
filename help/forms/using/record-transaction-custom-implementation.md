@@ -5,14 +5,15 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 0%
+source-wordcount: '222'
+ht-degree: 3%
 
 ---
 
-# 记录自定义实施的交易 {#record-a-transaction-for-custom-implementations}
+# 在OSGi上记录AEM Forms的自定义实施交易 {#record-a-transaction-for-custom-implementations}
 
 使用TransactionRecorder API自动记录未作为事务入帐的操作
 
@@ -88,6 +89,6 @@ $.ajax({
 
 ## 相关文章 {#related-articles}
 
-* [交易报表概述](/help/forms/using/transaction-reports-overview.md)
-* [查看和了解事务处理报表](/help/forms/using/viewing-and-understanding-transaction-reports.md)
-* [交易报告可记帐API](/help/forms/using/transaction-reports-billable-apis.md)
+* [适用于OSGi上的AEM Forms的交易报表概述](/help/forms/using/transaction-reports-overview.md)
+* [在OSGi上查看和了解AEM Forms的交易报表](/help/forms/using/viewing-and-understanding-transaction-reports.md)
+* [OSGi上AEM Forms的交易报告可计费API](/help/forms/using/transaction-reports-billable-apis.md)

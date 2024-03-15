@@ -6,24 +6,24 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Transaction Reports
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: 744cfcee691ea71f33cd56509f65d4f640d4c6e3
+source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
 
-# 交易报表概述{#transaction-reports-overview}
+# OSGi上AEM Forms的交易报表 {#transaction-reports-overview}
 
-## 简介 {#introduction}
+<!--## Introduction {#introduction}
 
-通过AEM Forms中的交易报表，您可以对自AEM Forms部署中的指定日期以来发生的所有交易进行计数。 目标是提供有关产品使用情况的信息，并帮助业务利益相关者了解他们的数字处理量。 事务示例包括：
+Transaction reports in AEM Forms let you keep a count of all transactions taken place since a specified date on your AEM Forms deployment. The objective is to provide information about product usage and help business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
-* 提交自适应表单、HTML5表单或表单集
-* 交互式通信的打印或Web版本的演绎版
-* 文档从一种文件格式转换为另一种文件格式
+* Submission of an adaptive form, an HTML5 Form, or a form set
+* Rendition of a print or a web version of an interactive communication
+* Conversion of a document from one file format to another
 
-有关什么是事务的详细信息，请参见 [可记帐API](../../forms/using/transaction-reports-billable-apis.md).
+For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis.md).-->
 
 默认情况下，事务记录处于禁用状态。 您可以 [启用事务记录](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) 从AEM Web控制台。 您可以查看有关创作、处理或发布实例的事务报表。 查看有关所有事务汇总的创作或处理实例的事务报表。 查看发布实例上的事务报告，了解仅在该报告运行所在的发布实例上发生的所有事务的计数。
 
@@ -57,6 +57,6 @@ ht-degree: 0%
 
 ## 相关文章 {#related-articles}
 
-* [查看和了解事务处理报表](../../forms/using/viewing-and-understanding-transaction-reports.md)
-* [交易报告可记帐API](../../forms/using/transaction-reports-billable-apis.md)
-* [记录自定义实施的交易](/help/forms/using/record-transaction-custom-implementation.md)
+* [在OSGi上查看和了解AEM Forms的交易报告](../../forms/using/viewing-and-understanding-transaction-reports.md)
+* [OSGi上AEM Forms的交易报告可计费API](../../forms/using/transaction-reports-billable-apis.md)
+* [在OSGi上记录AEM Forms的自定义实施交易](/help/forms/using/record-transaction-custom-implementation.md)
