@@ -3,9 +3,9 @@ title: 技术要求
 description: Adobe Experience Manager支持的客户端和服务器平台列表。
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 52969d5ab0975871c872195ab13649fb815cead8
+source-git-commit: b9a5b6f8f990a9dd0fcf77ea3972ad0c6f401831
 workflow-type: tm+mt
-source-wordcount: '3650'
+source-wordcount: '3652'
 ht-degree: 1%
 
 ---
@@ -202,7 +202,7 @@ Adobe Experience Manager可与以下服务器平台配合使用以用于生产�
 | oracleSolaris™ 11 | Z：不支持 |
 | IBM® AIX® 7.2 | Z：不支持 |
 
-1. Linux®内核2.6、3。 x， 4. x和5。 x包括来自Red Hat® Distribution的派生程序，包括Red Hat® Enterprise Linux®、CentOS、Oracle Linux®和Amazon Linux®。 只有CentOS 7、Red Hat® Enterprise Linux® 7、Red Hat® Enterprise Linux® 8和Red Hat® Enterprise Linux® 9支持AEM Forms附加功能。
+1. Linux®内核2.6、3。 x， 4. x， 5。 x和6。 x包括来自Red Hat® Distribution的派生程序，包括Red Hat® Enterprise Linux®、CentOS、Oracle Linux®和Amazon Linux®。 只有CentOS 7、Red Hat® Enterprise Linux® 7、Red Hat® Enterprise Linux® 8和Red Hat® Enterprise Linux® 9支持AEM Forms附加功能。
 1. Ubuntu 20.04 LTS支持AEM Forms。
 1. AdobeManaged Services支持的Linux®分发。
 
@@ -213,7 +213,7 @@ Adobe Experience Manager可与以下服务器平台配合使用以用于生产�
    >* libX11.x86_64 (1.6.7-4)
    >* zlib.x86-64 (1.2.7-17)
    >* libxcb.x86_64 （1.13-1.el7）
-   >* libXau.x86_64 (1.0.8-2.1.el7)
+   >* libXau.x86_64 （1.0.8-2.1.el7）
 
 1. Microsoft® Windows生产部署支持升级到6.5的客户和非生产使用。 AEM Sites和Assets会应请求进行新部署。
 1. Microsoft® Window Server上支持AEM Forms，但没有支持级别R限制。
@@ -244,9 +244,9 @@ Adobe还提供AdobeManaged Services以在Azure或AWS上部署AEM。 AdobeManaged
 
 ### Dispatcher平台（Web服务器） {#dispatcher-platforms-web-servers}
 
-Dispatcher是缓存和负载平衡组件。 [下载最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager6.5需要Dispatcher版本4.3.2或更高版本。
+Dispatcher是缓存和负载平衡组件。 [下载最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html). Experience Manager 6.5 需要 Dispatcher 4.3.2 或更高版本。
 
-以下Web服务器支持与Dispatcher版本4.3.2一起使用：
+支持以下 Web 服务器与调度程序版本 4.3.2 一起使用：
 
 | Platform | 支持级别 |
 |---|---|
@@ -254,7 +254,7 @@ Dispatcher是缓存和负载平衡组件。 [下载最新的Dispatcher版本](ht
 | Microsoft® IIS 10 （Internet Information Server） | 答：支持 |
 | Microsoft® IIS 8.5 （Internet Information Server） | Z：不支持 |
 
-1. 基于 Apache httpd 源代码构建的 Web 服务器的支持与其所基于的 httpd 版本一样多。 如有疑问，请要求Adobe确认与相应服务器产品相关的支持级别。 以下情况：
+1. 基于Apache httpd源代码构建的Web服务器与其所基于的httpd版本具有同样多的支持。 如有疑问，请要求Adobe确认与相应服务器产品相关的支持级别。 以下情况：
 
    1. HTTP服务器仅使用官方的Apache源分发生成，或者
    1. HTTP服务器是作为运行它的操作系统的一部分提供的。 示例： IBM® HTTP Server、OracleHTTP Server
@@ -303,7 +303,7 @@ AEM用户界面已针对大屏幕（通常是笔记本电脑和台式计算机�
    <td>答：支持</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox Last ESR [1]</td>
+   <td>Mozilla Firefox上一个ESR [1]</td>
    <td>答：支持</td>
    <td>答：支持</td>
   </tr>
@@ -330,10 +330,10 @@ AEM用户界面已针对大屏幕（通常是笔记本电脑和台式计算机�
  </tbody>
 </table>
 
-1. Firefox的扩展支持版本 [在mozilla.org上了解详情](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. Firefox [的扩展支持版本 了解有关 mozilla.org 的更多信息](https://www.mozilla.org/en-US/firefox/enterprise/)
 1. 支持 Apple iPad
 
-### 网站支持的浏览器 {#supported-browsers-for-websites}
+### 支持的网站浏览器 {#supported-browsers-for-websites}
 
 通常，AEM Sites渲染的网站的浏览器支持取决于AEM页面模板的实施、设计和组件输出，因此受实施这些部分的方的控制。
 
@@ -361,7 +361,7 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 当必须指定 IP 地址时，可以（根据需要）从以下选项中进行选择：
 
-* IPv6 地址。 例如，`https://[ab12::34c5:6d7:8e90:1234]:4502`
+* IPv6地址。 例如，`https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * IPv4地址。 例如，`https://123.1.1.4:4502`
 
@@ -409,11 +409,11 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 >[!NOTE]
 >
->**NUMA 架构：** 具有采用 AMD64 和英特尔® EM64T 的处理器的系统通常配置为非统一内存架构 （NUMA） 平台。 也就是说，内核在引导时构造多个内存节点，而不是构造单个内存节点。
+>**NUMA 架构：** 具有采用 AMD64 和英特尔® EM64T 的处理器的系统通常配置为非统一内存架构 （NUMA） 平台。 也就是说，内核在启动时构建多个内存节点，而不是构建单个内存节点。
 >
->多节点构造可能会导致在其他节点耗尽之前，一个或多个节点上的内存耗尽。 当内存耗尽时，即使存在可用内存，内核也可以决定终止进程（例如，图像服务器或平台服务器）。
+>该多节点结构可导致一个或多个节点上的存储器耗尽，而其它节点则被耗尽。 当内存耗尽时，即使存在可用内存，内核也可以决定终止进程（例如，图像服务器或平台服务器）。
 >
->因此，Adobe建议，如果运行的系统导致您使用 **numa=off** 引导选项，以避免内核终止这些进程。
+>因此，Adobe 建议您，如果您运行的系统需要使用 numa=off **引导选项关闭** NUMA，以避免内核终止这些进程。
 
 >[!NOTE]
 >
@@ -428,7 +428,7 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 要在Windows上使用Dynamic Media，请安装适用于x64和x86的Microsoft®Visual Studio 2010、2013和2015可再发行版本。
 
-对于 Windows x64：
+对于Windows x64：
 
 * 在 https://www.microsoft.com/en-us/download/details.aspx?id=26999 上 [获取 Microsoft® Visual Studio 2010 可再发行组件](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * 在 https://www.microsoft.com/en-us/download/details.aspx?id=40784 上 [获取 Microsoft® Visual Studio 2013 可再发行组件](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
@@ -438,7 +438,7 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 * 在以下位置获取Microsoft® Visual Studio 2010可再发行版本： [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * 在以下位置获取Microsoft® Visual Studio 2013可再发行版本： [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
-* 在以下位置获取Microsoft® Visual Studio 2015可再发行版本： [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
+* 在 https://www.microsoft.com/en-us/download/details.aspx?id=52685 上 [获取 Microsoft® Visual Studio 2015 可再发行组件](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
 #### macOS {#macos}
 
@@ -456,7 +456,7 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
    <th><p><strong>转换为 PDF 的支持格式</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 经典曲目</a> 最新版本</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic track</a> 最新版本</td>
    <td>XPS、图像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML、HTM、DWG、DXF和DWF</td>
   </tr>
   <tr>
@@ -522,13 +522,13 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 ### AEM Forms Designer的要求 {#requirements-for-aem-forms-designer}
 
-* Microsoft Windows 2016 Server、Microsoft Windows 2019 Server、Microsoft®®® Windows 10 或 Windows®®®® 11
+* Microsoft® Windows® 2016 Server、Microsoft® Windows® 2019 Server、Microsoft® Windows® 10 或 Windows® 11
 * 1 GHz 或速度更快的处理器，支持 PAE、NX 和 SSE2。
 * 32 位操作系统为 1 GB RAM，64 位操作系统为 2 GB RAM
 * 32 位操作系统为 16 GB 磁盘空间，64 位操作系统为 20 GB 磁盘空间
 * 图形内存 - 128 MB GPU（建议使用 256 MB）
 * 2.35 GB可用硬盘空间
-* 1024 X 768像素或更高的显示器分辨率
+* 1024 X 768 像素或更高的显示器分辨率
 * 视频硬件加速（可选）
 * Acrobat Pro DC、Acrobat Standard DC 或 Adobe Acrobat Reader DC
 * 安装 Designer 的管理权限
@@ -537,7 +537,7 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
 
 [安装和配置AEM Forms designer](/help/forms/using/installing-configuring-designer.md)
 
-### AEM Assets XMP 元数据写回的要求 {#requirements-for-aem-assets-xmp-metadata-write-back}
+### AEM Assets XMP元数据回写要求 {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 以下平台和文件格式支持并启用了 XMP 回写：
 
@@ -548,8 +548,8 @@ Adobe Experience Manager 的所有元素（实例、调度程序）均可安装�
    * Windows Server
    * macOS X（64位）
 
-* **文件格式**：JPEG、PNG、TIFF、PDF、INDD、AI和EPS。
+* **文件格式**：JPEG、PNG、TIFF、PDF、INDD、AI 和 EPS。
 
 ### AEM Assets 在 Linux® 上处理元数据密集型资产的要求 {#assetsonlinux}
 
-XMPFilesProcessor 进程需要库 GLIBC_2.14 才能工作。 使用包含GLIBC_2.14的Linux®内核，例如Linux®内核版本3.1.x。它提高了处理包含大量元数据的资源(如PSD文件)的性能。 使用以前版本的GLIBC会导致以开头的日志中出现错误 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
+XMPFilesProcessor进程需要库GLIBC_2.14才能工作。 使用包含GLIBC_2.14的Linux®内核，例如Linux®内核版本3.1.x。它提高了处理包含大量元数据的资源(如PSD文件)的性能。 使用以前版本的GLIBC会导致以开头的日志中出现错误 `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP`.
