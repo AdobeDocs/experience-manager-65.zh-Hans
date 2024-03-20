@@ -8,9 +8,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: af30cfed8f039207c0363d1ace5ac2b2a1cf84ba
 workflow-type: tm+mt
-source-wordcount: '6944'
+source-wordcount: '6607'
 ht-degree: 1%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 Adobe Experience Manager Forms中的规则编辑器功能使表单业务用户和开发人员能够编写关于自适应表单对象的规则。 这些规则根据预设条件、用户输入和用户对表单的操作，定义要在表单对象上触发的操作。 它有助于进一步简化表单填写体验，确保准确性和速度。
 
-规则编辑器提供了用于编写规则的直观且简化的用户界面。 规则编辑器为所有用户提供可视编辑器。 此外，仅对于表单超级用户，规则编辑器提供用于编写规则和脚本的代码编辑器。
+规则编辑器提供了用于编写规则的直观且简化的用户界面。 规则编辑器为所有用户提供了一个可视化编辑器。 此外，仅对于表单高级用户，规则编辑器提供了一个代码编辑器来编写规则和脚本。
 <!-- Some of the key actions that you can perform on adaptive form objects using rules are:
 
 * Show or hide an object
@@ -39,7 +39,7 @@ Adobe Experience Manager Forms中的规则编辑器功能使表单业务用户�
 * Invoke a form data model service and perform an operation
 * Set property of an object -->
 
-规则编辑器取代了AEM 6.1 Forms及更早版本中的脚本编写功能。 但是，现有脚本将保留在新规则编辑器中。 有关在规则编辑器中使用现有脚本的更多信息，请参阅 [规则编辑器对现有脚本的影响](#impact-of-rule-editor-on-existing-scripts).
+规则编辑器替换了AEM 6.1 Forms和早期版本中的脚本功能。 但是，现有脚本将保留在新规则编辑器中。 有关在规则编辑器中使用现有脚本的更多信息，请参阅 [规则编辑器对现有脚本的影响](#impact-of-rule-editor-on-existing-scripts).
 
 添加到forms-power-users组的用户可以创建新脚本并编辑现有脚本。 forms-users组中的用户可以使用脚本，但不能创建或编辑脚本。
 
@@ -71,13 +71,13 @@ Adobe Experience Manager Forms中的规则编辑器功能使表单业务用户�
 
 * 创建规则时，一个典型的经验法则是考虑您所编写规则的对象的上下文。 假定您要根据用户在字段A中指定的值隐藏或显示字段B。在这种情况下，您要评估字段A的条件，并根据它返回的值，触发字段B的操作。
 
-  因此，如果要对字段 B（要对其评估条件的对象）编写规则，请使用条件操作构造或 When 规则类型。 同样，对字段 A 使用操作条件构造或显示或隐藏规则类型。
+  因此，如果您在字段B（评估条件的对象）上编写规则，请使用condition-action结构或When规则类型。 同样，在字段A上使用操作条件结构或显示或隐藏规则类型。
 
-* 有时，您需要基于一个条件执行多个操作。 在这种情况下，建议使用条件操作构造。 在此构造中，您可以计算一次条件并指定多个操作语句。
+* 有时，您需要根据一个条件执行多个操作。 在这种情况下，建议使用条件 — 操作构造。 在此构造中，您可以计算一次条件并指定多个操作语句。
 
   例如，要根据检查用户在字段A中指定的值的条件隐藏字段B、C和D，请编写一条规则，其中在字段A上使用condition-action结构或When规则类型，并指定操作以控制字段B、C和D的可见性。否则，您需要在字段B、C和D上分别使用三个规则，其中每个规则都会检查条件，并显示或隐藏各自的字段。 在此示例中，在一个对象上编写When规则类型比在三个对象上编写Show或Hide规则类型更有效。
 
-* 要根据多个条件触发操作，建议使用action-condition构造。 例如，若要通过评估字段 B、C 和 D 的条件来显示和隐藏字段 A，请在字段 A 上使用“显示”或“隐藏规则类型”。
+* 要根据多个条件触发操作，建议使用action-condition构造。 例如，要通过评估字段B、C和D的条件来显示和隐藏字段A，请在字段A上使用显示或隐藏规则类型。
 * 如果规则包含一个条件的一个操作，则使用condition-action或action condition结构。
 * 如果规则检查条件，并在字段中提供值或退出字段时立即执行操作，则建议在评估条件的字段中编写具有condition-action结构或When规则类型的规则。
 * 当用户更改应用When规则的对象的值时，将评估When规则中的条件。 但是，如果您希望操作在服务器端更改时触发（例如在预填充值中），则建议编写一个When规则以在字段初始化时触发操作。
@@ -104,11 +104,11 @@ Adobe Experience Manager Forms中的规则编辑器功能使表单业务用户�
 
 ### 时间 {#whenruletype}
 
-此 **时间** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，首先指定求值的条件，然后指定满足该条件时要触发的操作( `True`)。 使用When规则类型时，您可以使用多个AND和OR运算符来创建 [嵌套表达式](#nestedexpressions).
+此 **时间** 规则类型遵循 **condition-action-alternate action** 规则结构，或者有时只是 **condition-action** 构造。 在此规则类型中，您首先指定评估条件，然后在满足条件时触发操作 （ `True`）。 使用 When 规则类型时，您可以使用多个 AND 和 OR 运算符来创建 [嵌套表达式](#nestedexpressions)。
 
-使用When规则类型，您可以评估表单对象的条件，并对一个或多个对象执行操作。
+使用 When 规则类型，您可以评估表单对象的条件并对一个或多个对象执行操作。
 
-简单地说，典型的When规则的结构如下所示：
+简单来说，典型的 When 规则结构如下：
 
 `When on Object A:`
 
@@ -116,9 +116,7 @@ Adobe Experience Manager Forms中的规则编辑器功能使表单业务用户�
 
 `Then, do the following:`
 
-关于对象B的行动2;
-和
-关于对象C的行动3;
+对对象B执行行动2；对对象C执行行动3；
 
 _
 
@@ -126,9 +124,9 @@ _
 
 例如，列表包含四个选项：红色、蓝色、绿色和黄色。 创建规则时，将自动检索选项（单选按钮）并使规则创建者可以使用此选项，如下所示：
 
-![multivaluefcdisplaysoptions](assets/multivaluefcdisplaysoptions.png)
+![多值fcdisplays选项](assets/multivaluefcdisplaysoptions.png)
 
-编写When规则时，可以触发Clear Value Of操作。 清除值操作清除指定对象的值。 通过在When语句中将Clear Value设置为选项，可以创建具有多个字段的复杂条件。
+编写 When 规则时，可以触发“清除值”操作。 清除操作值 清除指定对象的值。 在 When 语句中将“清除值”作为一个选项，可以创建具有多个字段的复杂条件。
 
 ![clearvalueof](assets/clearvalueof.png)
 
@@ -201,21 +199,25 @@ _
 
 此 **[!UICONTROL 设置值]** 规则类型允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性的值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
 
-“设置值”规则类型不适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
+“设置值”规则类型不适用于所有表单对象，例如面板和工具栏按钮。 标准“设置值”规则具有以下结构：
 
 
 
-将对象A的值设置为：
+将对象 A 的值设置为：
 
-（字符串ABC） OR（对象C的对象属性X） OR（函数值） OR（数学表达式值） OR（数据模型服务或Web服务的输出值）；
+（字符串 ABC）或
+（对象 C 的对象属性 X）或
+（来自函数的值）或
+（来自数学表达式的值）或
+（数据模型服务或 Web 服务的输出值）;
 
-时间（可选）：
+当（可选）时：
 
 （条件 1 和条件 2 和条件 3）为 TRUE;
 
 
 
-以下示例将字段中的值`dependentid`作为输入，并将字段的值`Relation`设置为表单数据模型服务的参数`getDependent`的`Relation`输出。
+以下示例将值引入到 `dependentid` 字段作为输入，并设置 `Relation` 字段到输出 `Relation` 的参数 `getDependent` 表单数据模型服务。
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -223,7 +225,7 @@ _
 
 >[!NOTE]
 >
->此外，您可以使用规则的“设置值”从表单数据模型服务或Web服务的输出填充下拉列表组件中的所有值。 但是，请确保您选择的输出参数为数组类型。 数组中返回的所有值在指定的下拉列表中变为可用。
+>此外，您可以使用规则的设置值从表单数据模型服务或 Web 服务的输出填充下拉列表组件中的所有值。 但是，请确保选择的输出参数是数组类型。 数组中返回的所有值都将在指定的下拉列表中可用。
 
 ### 显示 {#show}
 
@@ -367,13 +369,13 @@ _
 
 规则编辑器用户界面左侧的窗格包含两个选项卡： **[!UICONTROL Forms对象]** 和 **[!UICONTROL 函数]**.
 
-“表单对象”选项卡显示自适应表单中包含的所有对象的分层视图。 它显示对象的标题和类型。 在编写规则时，可以将表单对象拖放到规则编辑器中。 在将对象或函数拖放到占位符中时，在创建或编辑规则时，占位符会自动采用相应的值类型。
+“表单对象”选项卡显示自适应表单中包含的所有对象的分层视图。 它显示对象的标题和类型。 在编写规则时，可以将表单对象拖放到规则编辑器中。 在创建或编辑规则时，将对象或函数拖放到占位符中时，占位符会自动采用适当的值类型。
 
-应用了一个或多个有效规则的表单对象将标有绿点。 如果应用于表单对象的任意规则无效，则表单对象将标有黄点。
+应用了一个或多个有效规则的表单对象用绿点标记。 如果应用于表单对象的任何规则无效，则该表单对象将标有黄点。
 
-“函数”选项卡包括一组内置函数，例如“总和”、“最小值”、“最大值”、“平均值”、“数目”和“验证表单”。 您可以使用这些函数计算可重复面板和表格行中的值，并在编写规则时在操作和条件语句中使用它们。 不过，您也可以创建自定义 [函数](#custom-functions) 。
+“函数”选项卡包括一组内置函数，例如“总和”、“最小值”、“最大值”、“平均值”、“数目”和“验证表单”。 您可以使用这些函数计算可重复面板和表格行中的值，并在编写规则时在操作和条件语句中使用它们。 但是，您可以创建 [自定义函数](#custom-functions) 也是。
 
-![“功能”选项卡](assets/functions.png)
+![“函数”选项卡](assets/functions.png)
 
 >[!NOTE]
 >
@@ -637,35 +639,36 @@ AEM Forms会跟踪您上次用于编写规则的规则编辑器模式。 当您�
 >
 >使用自定义函数之前的注释进行摘要。 在遇到标记之前，摘要可以扩展到多行。 将大小限制为单个，以便在规则生成器中提供简要说明。
 
-**添加自定义函数**
+<!--
+**Adding a custom function**
 
-例如，要添加一个计算正方形区域的自定义函数。 侧边长度是自定义函数的用户输入，可使用表单中的数字框接受该输入。 计算的输出显示在表单的另一个数字框中。 要添加自定义函数，您必须先创建客户端库，然后将其添加到CRX存储库。
+For example, you want to add a custom function which calculates area of a square. Side length is the user input to the custom function, which is accepted using a numeric box in your form. The calculated output is displayed in another numeric box in your form. To add a custom function, you have to first create a client library, and then add it to the CRX repository.
 
-执行以下步骤可创建客户端库并将其添加到CRX存储库中。
+Perform the following steps to create a client library and add it in the CRX repository.
 
-1. 创建客户端库。 有关更多信息，请参阅 [使用客户端库](/help/sites-developing/clientlibs.md).
-1. 在CRXDE中，添加属性 `categories`字符串类型值为 `customfunction` 到 `clientlib` 文件夹。
+1. Create a client library. For more information, see [Using Client-Side Libraries](/help/sites-developing/clientlibs.md).
+2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
    >
-   >`customfunction`是一个示例类别。 您可以为在中创建的类别选择任意名称 `clientlib`文件夹。
+   >`customfunction`is an example category. You can choose any name for the category you create in the `clientlib`folder.
 
-在CRX存储库中添加客户端库后，在自适应表单中使用该库。 它可让您在表单中将自定义函数用作规则。 执行以下步骤以将客户端库添加到自适应表单中。
+After you have added your client library in the CRX repository, use it in your adaptive form. It lets you use your custom function as a rule in your form. Perform the following steps to add the client library in your adaptive form.
 
-1. 在编辑模式下打开表单。
-要在编辑模式下打开表单，请选择一个表单，然后选择 **打开**.
-1. 在编辑模式下，选择一个组件，然后选择 ![字段级](assets/field-level.png) > **自适应表单容器**，然后选择 ![cmppr](assets/cmppr.png).
-1. 在侧栏中的“Name of Client Library”（客户端库名称）下，添加您的客户端库。 ( `customfunction` 在此示例中。)
+1. Open your form in edit mode.
+   To open a form in edit mode, select a form and select **Open**.
+1. In the edit mode, select a component, then select ![field-level](assets/field-level.png) &gt; **Adaptive Form Container**, and then select ![cmppr](assets/cmppr.png).
+1. In the sidebar, under Name of Client Library, add your client library. ( `customfunction` in the example.)
 
-   ![添加自定义函数客户端库](assets/clientlib.png)
+   ![Adding the custom function client library](assets/clientlib.png)
 
-1. 选择输入数字框，然后选择 ![edit-rules](assets/edit-rules.png) 以打开规则编辑器。
-1. 选择 **创建规则**. 使用以下显示的选项，创建一个规则以在表单的“输出”字段中保存输入的平方值。
-   [![使用自定义函数创建规则](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)选择 **完成**. 您的自定义函数已添加。
+1. Select the input numeric box, and select ![edit-rules](assets/edit-rules.png) to open the rule editor.
+1. Select **Create Rule**. Using options shown below, create a rule to save the squared value of the input in the Output field of your form.
+   [ ![Using custom functions to create a rule](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Select **Done**. Your custom function is added.
 
-#### 函数声明支持的类型 {#function-declaration-supported-types}
+#### Function declaration supported types {#function-declaration-supported-types}
 
-**函数语句**
+**Function Statement**
 
 ```javascript
 function area(len) {
@@ -673,9 +676,9 @@ function area(len) {
 }
 ```
 
-此函数包含但不包含 `jsdoc` 注释。
+This function is included without `jsdoc` comments.
 
-**函数表达式**
+**Function Expression**
 
 ```javascript
 var area;
@@ -686,7 +689,7 @@ area = function(len) {
 };
 ```
 
-**函数表达式和语句**
+**Function Expression and Statement**
 
 ```javascript
 var b={};
@@ -696,7 +699,7 @@ b.area = function(len) {
 }
 ```
 
-**函数声明作为变量**
+**Function Declaration as Variable**
 
 ```javascript
 /** */
@@ -707,9 +710,9 @@ var x1,
     x2 =5, x3 =true;
 ```
 
-限制：自定义函数仅从变量列表中选取第一个函数声明（如果同时选取）。 您可以对每个声明的函数使用函数表达式。
+Limitation: custom function picks only the first function declaration from the variable list, if together. You can use function expression for every function declared.
 
-**函数声明作为对象**
+**Function Declaration as Object**
 
 ```javascript
 var c = {
@@ -724,7 +727,10 @@ var c = {
 
 >[!NOTE]
 >
->确保使用 `jsdoc` 每个自定义函数。 尽管 `jsdoc`鼓励发表评论，包括空的 `jsdoc`用于将函数标记为自定义函数的注释。 它支持默认处理自定义函数。
+>Ensure that you use `jsdoc` for every custom function. Although `jsdoc`comments are encouraged, include an empty `jsdoc`comment to mark your function as custom function. It enables default handling of your custom function.
+-->
+
+您还可以在规则编辑器中使用自定义函数。 有关创建自定义函数的说明，请参阅文章 [自适应Forms中的自定义函数](/help/forms/using/create-and-use-custom-functions.md).
 
 ## 管理规则 {#manage-rules}
 
@@ -835,17 +841,17 @@ var c = {
 
 在贷款申请表中，您要获取贷款申请人是否为现有客户。 根据用户提供的信息，客户ID字段应显示或隐藏。 此外，如果用户是现有客户，则还需要将焦点设置为“客户ID”字段。 贷款申请表包括以下组成部分：
 
-* 一个单选按钮， **您是现有的 Geometrixx 客户吗？**，提供“是”和“否”选项。 “是”的值为 0，“否”的值为 **** 1 **。**
+* 单选按钮， **您是否为Geometrixx现有客户？**，其中提供了“是”和“否”选项。 “是”的值为 **0** 不是 **1**.
 
-* 用于指定客户 ID 的文本字段 **Geometrixx 客户 ID**。
+* 文本字段， **Geometrixx客户ID**，以指定客户ID。
 
-在单选按钮上编写 When 规则以实现此行为时，该规则在可视规则编辑器中如下所示。  ![when-rule-example](assets/when-rule-example.png)
+在用于实施此行为的单选按钮上编写When规则时，该规则在可视规则编辑器中如下所示。  ![when-rule-example](assets/when-rule-example.png)
 
-可视化编辑器中的规则
+可视编辑器中的规则
 
-在示例规则中，When 部分中的语句是条件，当返回 True 时，将执行在 Then 部分中指定的操作。
+在示例规则中，When部分中的语句是条件，当返回True时，该条件将执行Then部分中指定的操作。
 
-该规则在代码编辑器中显示如下。
+该规则在代码编辑器中如下所示。
 
 ![when-rule-example-code](assets/when-rule-example-code.png)
 

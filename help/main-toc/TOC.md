@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
 workflow-type: tm+mt
-source-wordcount: '7397'
+source-wordcount: '7406'
 ht-degree: 20%
 
 ---
@@ -511,7 +511,7 @@ ht-degree: 20%
       + [自适应表单创作简介](/help/forms/using/introduction-forms-authoring.md)
       + [交互式通信简介](/help/forms/using/interactive-communications-overview.md)
       + [管理表单简介](/help/forms/using/introduction-managing-forms.md)
-      + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
+      + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
       + 教程：创建您的第一个自适应表单 {#create-first-adaptive-form}
          + [教程：创建您的第一个自适应表单](/help/forms/using/create-your-first-adaptive-form.md)
          + [教程：创建自适应表单](/help/forms/using/create-adaptive-form.md)
@@ -619,6 +619,7 @@ ht-degree: 20%
       + [创建基于核心组件的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [在自适应表单中创建和使用自适应Forms片段](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [为基于核心组件的自适应Forms创建主题](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+      + [在自适应表单中创建和使用自定义函数](/help/forms/using/create-and-use-custom-functions.md)
       + [为基于核心组件的自适应Forms创建和使用自定义错误处理程序](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
    + 自适应Forms — 基本创作 {#adaptive-forms-basic-authoring}
       + [使用自适应表单的最佳实践](/help/forms/using/adaptive-forms-best-practices.md)
@@ -1337,7 +1338,7 @@ ht-degree: 20%
          + [开发批量编辑器](/help/sites-developing/dev-bulk-editor.md)
          + [开发报告](/help/sites-developing/dev-reports.md)
       + 组件{#components}
-         + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+         + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
          + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/style-system.html)
          + [组件概述](/help/sites-developing/components.md)
          + [AEM组件 — 基础知识](/help/sites-developing/components-basics.md)
