@@ -4,7 +4,8 @@ description: 了解如何通过自适应表单为We.Finance参考网站的住房
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -21,7 +22,7 @@ Microsoft® Dynamics 365是一款客户关系管理(CRM)和企业资源规划(ER
 
 AEM Forms提供云服务以将Dynamics 365与 [Forms数据集成](/help/forms/using/data-integration.md) 模块。 在将“住房抵押贷款应用程序演练”与Microsoft® Dynamics结合使用之前，您需要配置Microsoft® Dynamics 365以与We.Finance参考网站一起使用。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 在开始设置和配置Dynamics 365之前，请确保您具有：
 

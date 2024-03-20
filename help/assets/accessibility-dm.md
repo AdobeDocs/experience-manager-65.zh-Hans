@@ -7,14 +7,15 @@ content-type: reference
 feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 1%
+source-wordcount: '585'
+ht-degree: 0%
 
 ---
 
-# [!DNL Dynamic Media] 中的辅助功能 {#working-with-three-d-assets-dm}
+# 中的辅助功能 [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media] 在整个创作用户界面中支持键盘控制和辅助技术，例如JAWS和NVDA屏幕阅读器。
 
@@ -69,4 +70,4 @@ Dynamic Media支持传送带隐藏式字幕的视频和自适应视频集。 字
 >[!MORELIKETHIS]
 >
 >* [Adobe解决方案的可访问性](https://www.adobe.com/accessibility.html)
->* [ [!DNL Experience Manager Assets]](/help/assets/accessibility.md) 中的辅助功能
+>* [中的辅助功能 [!DNL Experience Manager Assets]](/help/assets/accessibility.md)

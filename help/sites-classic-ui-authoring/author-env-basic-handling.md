@@ -1,15 +1,16 @@
 ---
 title: 基本操作
-description: 有关使用Adobe Experience Manager创作环境时基本处理的概述。 它使用 Sites 控制台作为基础。
+description: 有关使用Adobe Experience Manager创作环境时基本处理的概述。 它使用站点控制台作为基础。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 6%
+source-wordcount: '1161'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 6%
 >* 本页旨在概述使用Adobe Experience Manager (AEM)创作环境时的基本处理。 它使用&#x200B;**Sites**&#x200B;控制台作为基础。
 >
 >* 某些功能并非在所有控制台中均可用，而其他功能在某些控制台中可用。 有关各个控制台及其相关功能的特定信息，将在其他页面上详细介绍。
->* 用户在整个 AEM 环境中都可以使用各种键盘快捷键，尤其是在[使用控制台](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)和[编辑页面](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)时。
+>* 在整个AEM环境中都可以使用键盘快捷键。 尤其是当 [使用控制台](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) 和 [编辑页面](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## 欢迎屏幕 {#the-welcome-screen}
@@ -129,13 +130,13 @@ ht-degree: 6%
 >
 >设置属性的值：
 >`treeAutoExpandMax`
->开启:
+>日期：
 >`/apps/wcm/core/content/siteadmin`
 >
 >或者，在主题中全局查找：
 >设置值：
 >`TREE_AUTOEXPAND_MAX`
->in:
+>范围：
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
 >请参阅 [CQ小组件API中的SiteAdmin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) 以了解更多详细信息。
@@ -215,10 +216,10 @@ ht-degree: 6%
 |---|---|---|
 | 发布时间 | 绿色 | 发布成功。 内容已发布。 |
 | 发布时间 | 黄色 | 正在等待发布。 系统尚未收到发布确认。 |
-| 发布时间 | 红色 | 发布失败. 未与发布实例建立连接。 这还意味着该内容已被停用。 |
-| 发布时间 | *blank* | 此页面从未发布。 |
+| 发布时间 | 红色 | 发布失败。 未与发布实例建立连接。 这还意味着该内容已被停用。 |
+| 发布时间 | *空白* | 此页面从未发布。 |
 | 修改时间 | 蓝色 | 自上次发布后，页面已被修改。 |
-| 修改时间 | *blank* | 此页面从未被修改，或者自上次发布以来从未被修改。 |
+| 修改时间 | *空白* | 此页面从未被修改，或者自上次发布以来从未被修改。 |
 
 ## 上下文菜单 {#context-menus}
 

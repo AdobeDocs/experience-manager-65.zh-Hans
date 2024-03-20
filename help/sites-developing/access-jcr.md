@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
-source-git-commit: ff9d054d0b08f5f98f5edb63975a0dbc8370d42f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '567'
 ht-degree: 0%
@@ -23,11 +24,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-要使用JCR API，请添加 `jackrabbit-standalone-2.4.0.jar` 文件到Java™应用程序的类路径。 您可以从Java™ JCR API网页获取此JAR文件，网址为 [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+>要使用JCR API，请添加 `jackrabbit-standalone-2.4.0.jar` 文件到Java™应用程序的类路径。 您可以从Java™ JCR API网页获取此JAR文件，网址为 [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
-要了解如何使用JCR查询API查询Adobe CQ JCR，请参阅 [使用JCR API查询Adobe Experience Manager数据](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
+>要了解如何使用JCR查询API查询Adobe CQ JCR，请参阅 [使用JCR API查询Adobe Experience Manager数据](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html).
 
 ## 创建存储库实例 {#create-a-repository-instance}
 

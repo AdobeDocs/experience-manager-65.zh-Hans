@@ -2,7 +2,8 @@
 title: 创建内容片段模型Headless快速入门指南
 description: 定义您创建的内容的结构，并使用内容片段模型通过Adobe Experience Manager (AEM) Headless功能提供内容。
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%

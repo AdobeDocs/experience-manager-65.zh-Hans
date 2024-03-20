@@ -2,7 +2,8 @@
 title: 如何使用Apache Maven构建AEM项目
 description: 本文档介绍了如何设置基于Apache Maven的AEM项目
 exl-id: 451913bf-bb1e-4444-aee5-968ac30b5c9d
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 1%

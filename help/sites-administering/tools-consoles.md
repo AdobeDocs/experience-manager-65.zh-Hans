@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '594'
-ht-degree: 30%
+ht-degree: 25%
 
 ---
 
@@ -283,7 +284,7 @@ ht-degree: 30%
   </tr>
   <tr>
    <td> </td>
-   <td>Dynamic Media 配置<br /> </td>
+   <td>Dynamic Media配置<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -303,15 +304,15 @@ ht-degree: 30%
   </tr>
   <tr>
    <td> </td>
-   <td>Facebook 社交登录配置<br /> </td>
+   <td>facebook社交登录配置<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Twitter 社交登录配置<br /> </td>
+   <td>twitter社交登录配置<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Pinterest 社交登录配置<br /> </td>
+   <td>pinterest社交登录配置<br /> </td>
   </tr>
   <tr>
    <td>社区</td>
@@ -373,7 +374,7 @@ ht-degree: 30%
    <td>Client Context表示动态组合的用户数据集合。 默认和Experience Cloud配置保留在此处。<br /> </td>
   </tr>
   <tr>
-   <td>云服务配置<br /> </td>
+   <td>Cloud Service配置<br /> </td>
    <td>保存与与Adobe Experience Cloud集成相关的配置。</td>
   </tr>
   <tr>
@@ -410,7 +411,7 @@ ht-degree: 30%
   </tr>
   <tr>
    <td>外部链接检查程序</td>
-   <td>外部链接检查程序.</td>
+   <td>外部链接检查程序。</td>
   </tr>
   <tr>
    <td>移动设备</td>
@@ -425,7 +426,7 @@ ht-degree: 30%
    <td>用于在发布页面时，将数据从创作实例复制到发布，或使用反向复制将用户注释从发布环境返回到创作。</td>
   </tr>
   <tr>
-   <td>报表</td>
+   <td>报告</td>
    <td>AEM提供了一系列自定义报表，允许您创建自定义报表或开发自己的报表。</td>
   </tr>
   <tr>

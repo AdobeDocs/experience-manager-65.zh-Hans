@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '534'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 本文档介绍如何创建自定义表单映射。 当您完成本文档中的步骤时，将为用户提供事件页面，用户可在其中注册即将举行的事件。 然后，您可以通过Adobe Campaign跟进这些用户。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 您需要安装以下软件：
 

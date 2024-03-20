@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8fbff12a-4923-4151-a758-c1e44dee9160
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 1%

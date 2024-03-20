@@ -2,7 +2,8 @@
 title: Adobe内容包Maven插件
 description: 使用内容包Maven插件部署AEM应用程序
 exl-id: 002c00ba-eda1-4481-bc35-1f4d972e4073
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '138'
 ht-degree: 1%

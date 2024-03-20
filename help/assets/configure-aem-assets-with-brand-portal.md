@@ -1,5 +1,5 @@
 ---
-title: 使用 Brand Portal 配置 AEM Assets
+title: 使用Brand Portal配置AEM Assets
 description: 了解如何使用Brand Portal配置AEM Assets，以将资源和收藏集发布到Brand Portal。
 topic-tags: brand-portal
 content-type: reference
@@ -9,15 +9,16 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2130'
-ht-degree: 8%
+source-wordcount: '2068'
+ht-degree: 4%
 
 ---
 
 
-# 使用 Brand Portal 配置 AEM Assets {#configure-integration-65}
+# 使用Brand Portal配置AEM Assets {#configure-integration-65}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -53,7 +54,7 @@ AEM Assets是通过Brand Portal控制台使用Adobe Developer配置的，该控�
 
 * 使用Linux®和Microsoft® Windows操作系统。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 您需要以下各项才能使用 Brand Portal 配置 AEM Assets：
 
@@ -77,7 +78,7 @@ AEM Assets是通过Brand Portal控制台使用Adobe Developer配置的，该控�
 
 ### 下载并安装AEM最新服务包 {#servicepack}
 
-有关详细说明，请参阅当前的 [AEM 6.5 Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html).
+有关详细说明，请参阅当前的 [AEM 6.5 Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans).
 
 **联系Adobe客户支持** 如果您找不到最新的AEM包或Service Pack。
 
@@ -105,7 +106,7 @@ AEM Assets是通过Brand Portal控制台使用Adobe Developer配置的，该控�
 1. [配置云服务](#configure-the-cloud-service)
 1. [测试配置](#test-integration)
 
-### 创建 IMS 配置 {#create-ims-configuration}
+### 创建IMS配置 {#create-ims-configuration}
 
 IMS配置使用AEM Assets租户对您的Brand Portal创作实例进行身份验证。
 
@@ -294,7 +295,7 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 
    ![Brand Portal配置窗口](assets/create-cloud-service.png)
 
-1. 单击“**[!UICONTROL 保存并关闭]**”。将创建云配置。
+1. 单击 **[!UICONTROL 保存并关闭]**. 将创建云配置。
 
    您的AEM Assets创作实例现在已配置有Brand Portal租户。
 
@@ -341,9 +342,9 @@ Adobe I/O integration generates API Key, Client Secret, and Payload (JWT) which 
 
 您现在可以：
 
-* [将资产从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-assets.md)
-* [将资源从Brand Portal发布到AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html?lang=zh-Hans) - Brand Portal中的资源源
-* [将文件夹从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-folder.md)
+* [将资源从AEM Assets发布到Brand Portal](../assets/brand-portal-publish-assets.md)
+* [将资源从Brand Portal发布到AEM Assets](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) - Brand Portal中的资源源
+* [将文件夹从AEM Assets发布到Brand Portal](../assets/brand-portal-publish-folder.md)
 * [将收藏集从 AEM Assets 发布到 Brand Portal](../assets/brand-portal-publish-collection.md)
 * [将预设、架构和 Facet 发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/publish-schema-search-facets-presets.html)
 * [将标记发布到 Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/publish/brand-portal-publish-tags.html)

@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2684'
 ht-degree: 0%
@@ -39,7 +40,7 @@ AEM Forms数据集成模块允许您从不同的后端数据源(如AEM用户配�
 
 **答：** 配置的数据源 **B.** 数据源架构 **C.** 可用服务 **D.** 数据模型对象 **E.** 配置的服务
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 在开始之前，请确保您具备以下条件：
 

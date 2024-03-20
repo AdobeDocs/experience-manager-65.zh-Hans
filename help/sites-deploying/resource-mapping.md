@@ -8,10 +8,11 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 5%
+source-wordcount: '507'
+ht-degree: 2%
 
 ---
 
@@ -74,7 +75,7 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
 
 `https://localhost:4503/welcome` &quot;
 
-收件人:
+收件人：
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -106,7 +107,7 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
    * **名称** `localhost_any`
 
 1. 单击&#x200B;**全部保存**。
-1. **向该节点添加以下属性：**
+1. **添加** 此节点的以下属性：
 
    * **名称** `sling:match`
 

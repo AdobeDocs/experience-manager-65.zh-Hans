@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2503'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
@@ -313,7 +314,7 @@ ht-degree: 0%
 
 **从Acrobat调用MyApplication/EncryptDocument进程** {#invoke-process-acrobat}
 
-您可以使用REST请求从Acrobat调用Forms进程。 例如，您可以调用 *MyApplication/EncryptDocument* 进程。 要从Acrobat调用Forms进程，请在Designer的XDP文件上放置提交按钮。 (请参阅 [Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63_cn).)
+您可以使用REST请求从Acrobat调用Forms进程。 例如，您可以调用 *MyApplication/EncryptDocument* 进程。 要从Acrobat调用Forms进程，请在Designer的XDP文件上放置提交按钮。 (请参阅 [Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63).)
 
 指定用于在按钮的 *提交到URL* 字段，如下图所示。
 

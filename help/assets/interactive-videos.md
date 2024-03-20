@@ -9,9 +9,10 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '6035'
+source-wordcount: '5926'
 ht-degree: 2%
 
 ---
@@ -104,7 +105,7 @@ ht-degree: 2%
 >* 要通过触发概览向视频添加交互性。
 >* 您实施的Experience Manager会 *非* 使用电子商务集成框架，将产品数据从任何电子商务解决方案(如IBM®WebSphere®Commerce、Elastic Path、Hybris或Intershop)提取到Experience Manager中。 请参阅 [Experience Manager Assets中的电子商务概念](/help/commerce/cif-classic/administering/concepts.md).
 >
-如果您的Experience Manager实施使用的是电子商务，则可以跳过此任务并继续执行下一个任务。
+>如果您的Experience Manager实施使用的是电子商务，则可以跳过此任务并继续执行下一个任务。
 
 首先，标识现有Quickview实施使用的动态变量，以便您可以在交互式视频创建过程中将产品缩略图映射到其相应的产品Quickview。
 
@@ -245,7 +246,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-在Dynamic Media中，尚不支持将MXF视频格式与交互式视频一起使用。
+>在Dynamic Media中，尚不支持将MXF视频格式与交互式视频一起使用。
 
 如果您上传了错误的视频或图像，或者希望删除不再需要的已上传视频或图像，请参阅 [删除资源](/help/assets/manage-assets.md#deleting-assets).
 
@@ -268,11 +269,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-将查看器嵌入体验片段时，不支持交互式视频中的社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
+>将查看器嵌入体验片段时，不支持交互式视频中的社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
 
 >[!NOTE]
 >
-如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+>如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
 
 在当前创建/编辑会话期间，支持页面右上角附近的“撤消”和“重做”选项。
 
@@ -313,11 +314,11 @@ ht-degree: 2%
         </tr>
         <tr>
         <td>3分钟或更多</td>
-        <td>60 秒</td>
+        <td>60秒</td>
         </tr>
         <tr>
-        <td>2-3分钟</td>
-        <td>30 秒</td>
+        <td>2-3 分钟</td>
+        <td>30秒</td>
         </tr>
         <tr>
         <td>1-2 分钟</td>
@@ -325,11 +326,11 @@ ht-degree: 2%
         </tr>
         <tr>
         <td>30-60秒</td>
-        <td>10 秒</td>
+        <td>10秒</td>
         </tr>
         <tr>
         <td>30秒或更短</td>
-        <td>5 秒</td>
+        <td>5秒</td>
         </tr>
       </tbody>
     </table>
@@ -495,7 +496,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 此 `.vtt` 文件将保存到 `_VTT` 根目录下的文件夹 **[!UICONTROL 资产]**. 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
+   >在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 此 `.vtt` 文件将保存到 `_VTT` 根目录下的文件夹 **[!UICONTROL 资产]**. 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
 
 1. 发布交互式视频。 发布会创建您最终复制并粘贴到网站体验中的嵌入代码或URL。
 
@@ -505,7 +506,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   要使用Quickview发布购物视频，请确保同时从商务区单独发布视频的每个相关图像资产。
+   >要使用Quickview发布购物视频，请确保同时从商务区单独发布视频的每个相关图像资产。
 
    添加时间轴区段并发布交互式视频后，即可将其添加到现有网站登陆页面。 请参阅 [将交互式视频与您的网站集成](#integrating-an-interactive-video-with-your-website).
 
@@ -531,9 +532,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-此时，如果您只添加与超链接网页的交互，则操作已完成。
+>此时，如果您只添加与超链接网页的交互，则操作已完成。
 >
-但是，如果添加了任何交互性来触发快速视图，则交互式视频旁边的缩略图仅用于显示目的；它们尚未与现有的快速视图集成。 在这种情况下，必须将交互式视频与网站上的现有概览集成。
+>但是，如果添加了任何交互性来触发快速视图，则交互式视频旁边的缩略图仅用于显示目的；它们尚未与现有的快速视图集成。 在这种情况下，必须将交互式视频与网站上的现有概览集成。
 
 **示例**
 
@@ -576,7 +577,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-此任务仅适用于独立Experience Manager Assets客户。
+>此任务仅适用于独立Experience Manager Assets客户。
 
 此过程的最后一步是将交互式视频与网站上使用的现有Quickview实施集成。 集成没有适用于所有情况的解决方案。 每个概览实施都是独特的。 因此，需要一种包含前端IT人员帮助的具体方法。
 

@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '18956'
+source-wordcount: '18860'
 ht-degree: 0%
 
 ---
@@ -383,7 +384,7 @@ Output服务允许您以PDF(包括PDF/A文档)、PostScript、打印机控制语
 
 您可以使用Output服务创建PDF/A文档。 由于PDF/A是用于长期保存文档内容的存档格式，因此所有字体都将嵌入，并且文件是未压缩的。 因此，PDF/A 文档通常比标准 PDF 文档大。此外，PDF/文档不包含音频和视频内容。 与其他“输出”服务任务一样，提供表单设计和数据以与表单设计合并，以创建PDF/文档。
 
-PDF/A-1规范包含两个一致性级别，即a和b。两者之间的主要区别在于对逻辑结构（辅助功能）的支持，合规性级别b不需要该支持。无论符合性级别如何，PDF/A-1都会指示所有字体都嵌入到生成的PDF/A文档中。
+PDF/A-1规范包含两个一致性级别，即a和b。两者之间的主要区别在于对逻辑结构（辅助功能）的支持，一致性级别b不需要该支持。无论一致性级别如何，PDF/A-1都指示所有字体都嵌入到生成的PDF/A文档中。
 
 尽管PDF/A是归档PDF文档的标准，但是如果标准PDF文档满足公司的需要，则不必使用PDF/A进行归档。 PDF/A标准的目的是建立一个PDF文件，它可以长期存储并且满足文档保存要求。 例如，无法将URL嵌入到PDF/A中，因为随着时间的推移，该URL可能会变得无效。
 
@@ -1433,15 +1434,15 @@ ResourceRepositoryClient
    <td><p>默认或自定义xdc输出流创建dpl203.xdc。</p></td>
   </tr>
   <tr>
-   <td><p>DPL 300 DPI </p></td>
+   <td><p>DPL300DPI </p></td>
    <td><p>创建DPL 300 DPI输出流。</p></td>
   </tr>
   <tr>
-   <td><p>DPL 406 DPI </p></td>
+   <td><p>DPL406DPI </p></td>
    <td><p>创建DPL 400 DPI输出流。</p></td>
   </tr>
   <tr>
-   <td><p>DPL 600 DPI </p></td>
+   <td><p>DPL600DPI </p></td>
    <td><p>创建DPL 600 DPI输出流。</p></td>
   </tr>
   <tr>
@@ -1457,11 +1458,11 @@ ResourceRepositoryClient
    <td><p>创建自定义IPL输出流。</p></td>
   </tr>
   <tr>
-   <td><p>IPL 300 DPI </p></td>
+   <td><p>IPL300DPI </p></td>
    <td><p>创建IPL 300 DPI输出流。</p></td>
   </tr>
   <tr>
-   <td><p>IPL 400 DPI </p></td>
+   <td><p>IPL400DPI </p></td>
    <td><p>创建IPL 400 DPI输出流。</p></td>
   </tr>
   <tr>
@@ -1477,11 +1478,11 @@ ResourceRepositoryClient
    <td><p>创建自定义TPCL输出流。</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 305 DPI </p></td>
+   <td><p>TPCL305DPI </p></td>
    <td><p>创建TPCL 305 DPI输出流。</p></td>
   </tr>
   <tr>
-   <td><p>TPCL 600 DPI </p></td>
+   <td><p>TPCL600DPI </p></td>
    <td><p>创建TPCL 600 DPI输出流。</p></td>
   </tr>
   <tr>
@@ -1489,7 +1490,7 @@ ResourceRepositoryClient
    <td><p>创建ZPL 203 DPI输出流。</p></td>
   </tr>
   <tr>
-   <td><p>ZPL 300 DPI </p></td>
+   <td><p>ZPL300DPI </p></td>
    <td><p>创建ZPL 300 DPI输出流。</p></td>
   </tr>
  </tbody>

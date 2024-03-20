@@ -7,7 +7,8 @@ topic-tags: publish
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1666'
 ht-degree: 2%
@@ -23,7 +24,7 @@ ht-degree: 2%
 
 Forms门户组件为Web开发人员提供了组件，以便在使用Adobe Experience Manager (AEM)创作的网站上创建和自定义表单门户。 有关表单门户的快速概述，请参阅 [在门户上发布表单的简介](../../forms/using/introduction-publishing-forms.md).
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 默认情况下，Forms门户组件不可用。 确保按照中的说明启用以下Forms Portal组件类别 [启用Forms Portal组件](/help/forms/using/enabling-forms-portal-components.md).
 
@@ -71,11 +72,11 @@ Forms portal组件类别
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>资源文件夹</strong></code></td>
-   <td>添加项目</td>
+   <td>添加项</td>
    <td>配置使用AEM Forms UI上传资源的文件夹。 默认情况下，其中列出了所有上传的资源。 有关AEM Forms UI的更多信息，请参阅 <a href="../../forms/using/introduction-managing-forms.md" target="_blank">管理表单简介</a>.</td>
   </tr>
   <tr>
-   <td><p><span class="uicontrol"><strong>显示器</strong></code></p> </td>
+   <td><p><span class="uicontrol"><strong>显示区</strong></code></p> </td>
    <td>标题文本</td>
    <td>Search &amp; Lister组件的标题。 默认标题为 <strong>Forms门户。</strong></td>
   </tr>

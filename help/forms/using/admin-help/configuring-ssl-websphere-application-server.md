@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1222'
-ht-degree: 1%
+source-wordcount: '1220'
+ht-degree: 0%
 
 ---
 
@@ -26,21 +27,21 @@ ht-degree: 1%
 
 ### 为WebSphere创建Linux或UNIX用户 {#create-a-linux-or-unix-user-for-websphere}
 
-1. 以根用户登录。
-1. 在命令提示符下输入以下命令，以创建用户：
+1. 以根用户身份登录。
+1. 通过在命令提示符中输入以下命令来创建用户：
 
    * （Linux 和 Sun Solaris） `useradd`
    * （IBM AIX） `mkuser`
 
-1. 通过在命令提示符中输入 `passwd` ，设置新用户的密码。
-1. （Linux 和 Solaris）通过在命令提示符中输入 `pwconv` （无参数）来创建阴影密码文件。
+1. 通过在命令提示符中输入 `passwd` 来设置新用户的密码。
+1. （Linux 和 Solaris）通过在命令提示符中输入 `pwconv` （不带参数）来创建影子密码文件。
 
    >[!NOTE]
    >
-   >（Linux和Solaris）要使WebSphere Application Server本地OS安全注册表正常工作，必须存在卷影密码文件。 影子密码文件通常命名 **为/etc/shadow** ，基于/etc/passwd 文件。 如果影子密码文件不存在，则启用全局安全性并将用户注册表配置为本地操作系统后会出现错误。
+   >（Linux 和 Solaris）要使 WebSphere Application Server 本地操作系统安全注册表正常工作，必须存在影子密码文件。 影子密码文件通常名为 **/etc/shadow** ，基于 /etc/passwd 文件。 如果影子口令文件不存在，那么在启用全局安全性并将用户注册表配置为本地操作系统之后会发生错误。
 
-1. 在文本编辑者中，从/etc 目录打开群组文件。
-1. 将您在步骤2中创建的用户添加到 `root` 群组中。
+1. 在文本编辑器中从 /etc 目录中打开组文件。
+1. 将您在步骤 2 中创建的用户添加到组中 `root` 。
 1. 保存并关闭该文件。
 1. （启用SSL的UNIX）以root用户身份启动和停止WebSphere。
 
@@ -102,19 +103,19 @@ ht-degree: 1%
 1. 单击 **个人证书**.
 1. 如果您添加了已使用ikeyman创建的密钥库，则会显示您的证书。 否则，您需要通过执行以下步骤来添加新的自签名证书：
 
-   1. 选择 **创建 > 自签名证书** 。
-   1. 在证书表单中指定相应的值。 确保将别名和公用名保留为计算机的完全限定域名。
+   1. 选择“ **创建>自签名证书**”。
+   1. 在证书表单上指定适当的值。 确保将别名和公用名保留为计算机的完全限定域名。
    1. 单击&#x200B;**应用**。
 
-1. 重复步骤2至10以创建 truststore。
+1. 重复步骤 2 到 10 以创建信任库。
 
-## 应用自定义的密钥库和 truststore 至服务器 {#apply-custom-keystore-and-truststore-to-the-server}
+## 将定制密钥库和信任库应用于服务器 {#apply-custom-keystore-and-truststore-to-the-server}
 
-1. 在 WebSphere 管理控制台中，选择 **安全 > SSL 证书和密钥管理** 。
-1. 单击 **管理端点安全配置** 。 将打开 &quot;本地拓扑图&quot;。
-1. 在入站下，选择节点的直接子项。
-1. 在相关项目下，选择 **SSL 配置** 。
-1. 选择 **NodeDeafultSSLSetting** 。
+1. 在 WebSphere 管理控制台中，选择“安全性” **>“SSL 证书和密钥管理**”。
+1. 单击管理 **端点安全配置**。 将打开本地拓扑图。
+1. 在“入站”下，选择节点的直接子级。
+1. 在“相关项”下，选择“SSL 配置&#x200B;**”。**
+1. 选择“ **NodeDeafultSSLSetting**”。
 1. 从信任库名称和密钥库名称下拉列表中，选择您创建的自定义信任库和密钥库。
 1. 单击&#x200B;**应用**。
 1. 保存主配置。

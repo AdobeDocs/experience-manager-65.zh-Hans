@@ -7,9 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1348'
+source-wordcount: '1351'
 ht-degree: 19%
 
 ---
@@ -171,7 +172,7 @@ ht-degree: 19%
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
-1. 单击:
+1. 单击：
 
    1. **开始** 显示已发布页面在选定时间的内容。
    1. 显示该内容时，使用 **退出时间扭曲** 以退出并返回当前创作页面。

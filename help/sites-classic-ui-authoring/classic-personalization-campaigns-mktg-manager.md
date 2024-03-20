@@ -7,7 +7,8 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1161'
 ht-degree: 1%
@@ -59,7 +60,7 @@ AEM提供了各种报告来帮助您分析和监控实例的状态。 此MCM窗�
 * **[营销活动](#campaigns)**
 您可以在此处管理品牌、营销活动和体验。
 
-## 功能板 {#dashboard}
+## 仪表板 {#dashboard}
 
 仪表板会显示四个窗格，为您提供列表（潜在客户）、区段、报表和促销活动的概览。 此处还提供了这些应用程序的基本功能。
 

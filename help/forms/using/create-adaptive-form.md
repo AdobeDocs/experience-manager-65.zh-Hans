@@ -3,7 +3,8 @@ title: '教程：创建自适应表单'
 description: 了解创建、布局和预览自适应表单。 此外，了解如何配置提交操作。
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1314'
 ht-degree: 8%

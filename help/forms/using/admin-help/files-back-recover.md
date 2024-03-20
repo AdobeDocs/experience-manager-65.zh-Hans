@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2017'
 ht-degree: 0%
@@ -96,7 +97,7 @@ AEM Forms数据库将表单对象、服务配置、进程状态以及对GDS和�
 
 >[!NOTE]
 >
-如果您的AEM表单环境是从以前版本的AEM表单升级的，并且使用的是DB2，则不支持联机备份。 在这种情况下，必须关闭AEM表单并执行脱机备份。 AEM表单的未来版本将支持升级客户的在线备份。
+>如果您的AEM表单环境是从以前版本的AEM表单升级的，并且使用的是DB2，则不支持联机备份。 在这种情况下，必须关闭AEM表单并执行脱机备份。 AEM表单的未来版本将支持升级客户的在线备份。
 
 IBM提供了一套工具和帮助系统，可帮助数据库管理员管理其备份和恢复任务：
 
@@ -132,7 +133,7 @@ SQL Server还提供了两种备份和恢复工具：
 
 >[!NOTE]
 >
-MySQL的默认二进制日志记录模式是“语句”，它与Content Services使用的表不兼容（已弃用）。 在此默认模式下使用二进制日志记录会导致Content Services（已弃用）失败。 如果您的系统包含内容服务（已弃用），请使用“混合”日志记录模式。 要启用“混合”日志记录，请将以下参数添加到my.ini文件中： `binlog_format=mixed log-bin=logname`
+>MySQL的默认二进制日志记录模式是“语句”，它与Content Services使用的表不兼容（已弃用）。 在此默认模式下使用二进制日志记录会导致Content Services（已弃用）失败。 如果您的系统包含内容服务（已弃用），请使用“混合”日志记录模式。 要启用“混合”日志记录，请将以下参数添加到my.ini文件中： `binlog_format=mixed log-bin=logname`
 
 您可以使用mysqldump实用程序获取完整的数据库备份。 需要完全备份，但并不总是方便的。 它们会生成大型备份文件，并且需要时间才能生成。 要执行增量备份，请确保使用 —  `log-bin` 选项，如上一节所述。 每次MySQL服务器重新启动时，它都会停止写入当前二进制日志，并创建一个新日志，从那时起，新日志将成为当前二进制日志。 您可以使用手动强制切换 `FLUSH LOGS SQL` 命令。 在第一次完全备份后，后续增量备份将使用mysqladmin实用程序和 `flush-logs` 命令，用于创建下一个日志文件。
 
@@ -193,6 +194,6 @@ log-bin=logname
 
 >[!NOTE]
 >
-默认情况下，随AEM表单一起安装的Adobe字体位于 `[aem-forms root]/fonts` 目录。
+>默认情况下，随AEM表单一起安装的Adobe字体位于 `[aem-forms root]/fonts` 目录。
 
 如果您正在重新初始化主机计算机上的操作系统，并且希望使用上一个操作系统的字体，则系统字体目录的内容也应进行备份。 （有关具体说明，请参阅适用于您的操作系统的文档）。

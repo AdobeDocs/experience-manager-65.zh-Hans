@@ -6,7 +6,8 @@ topic-tags: integration
 content-type: reference
 description: 目录生成器
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -43,7 +44,7 @@ ht-degree: 0%
 
    ![create_catalog](assets/create_catalog.png)
 
-1. 单击 **保存**. 确认对话框会通知目录已创建。 单击 **完成** 以关闭对话框。
+1. 单击&#x200B;**保存**。确认对话框会通知目录已创建。 单击 **完成** 以关闭对话框。
 1. 要打开您创建的目录，请从 **目录** 页面。
 
    >[!NOTE]

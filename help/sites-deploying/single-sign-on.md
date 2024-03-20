@@ -7,7 +7,8 @@ topic-tags: configuring, Security
 content-type: reference
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 0%
@@ -80,19 +81,20 @@ SSO身份验证处理程序服务( `com.adobe.granite.auth.sso.impl.SsoAuthentic
 >
 >如果您还使用 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 使用Microsoft® Internet Information Server (IIS)时，需要在以下位置进行其他配置：
 >
-* `disp_iis.ini`
-* IIS
+>* `disp_iis.ini`
+>* IIS
 >
-在 `disp_iis.ini` set： (请参阅 [将Dispatcher与Microsoft® Internet Information Server一起安装](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) 以了解完整的详细信息)
+>在 `disp_iis.ini` 设置：
+>(请参阅 [将Dispatcher与Microsoft® Internet Information Server一起安装](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) 以了解完整的详细信息)
 >
-* `servervariables=1` （将IIS服务器变量作为请求标头转发到远程实例）
-* `replaceauthorization=1` （将除“Basic”以外的任何名为“Authorization”的标头替换为其“Basic”等效标头）
+>* `servervariables=1` （将IIS服务器变量作为请求标头转发到远程实例）
+>* `replaceauthorization=1` （将除“Basic”以外的任何名为“Authorization”的标头替换为其“Basic”等效标头）
 >
-在IIS中：
+>在IIS中：
 >
-* disable **匿名访问**
+>* disable **匿名访问**
 >
-* 启用 **集成的Windows身份验证**
+>* 启用 **集成的Windows身份验证**
 >
 
 您可以使用查看将哪个身份验证处理程序应用于内容树的任何部分 **验证者** 选项，例如：
@@ -151,7 +153,7 @@ Transfer-Encoding: chunked
 
 >[!NOTE]
 >
-在浏览器中使用请求参数时，您只会看到部分HTML（不带CSS）。 这是因为来自HTML的所有请求都是在不使用request参数的情况下进行的。
+>在浏览器中使用请求参数时，您只会看到部分HTML（不带CSS）。 这是因为来自HTML的所有请求都是在不使用request参数的情况下进行的。
 
 ## 删除AEM注销链接 {#removing-aem-sign-out-links}
 

@@ -7,10 +7,11 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2119'
-ht-degree: 2%
+source-wordcount: '2118'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +39,7 @@ CRXDE Lite会嵌入到AEM中，使您能够在该浏览器中执行标准开发�
 要开始使用CRXDE Lite，请按照以下步骤操作：
 
 1. 安装AEM。
-1. 在浏览器中，输入 `https://<host>:<port>/crx/de`. 默认情况下，这是 `https://localhost:4502/crx/de`。
+1. 在浏览器中，输入 `https://<host>:<port>/crx/de`. 默认情况下，它为 `https://localhost:4502/crx/de`.
 1. 输入您的 **用户名** 和 **密码**. 默认情况下，它为 `admin` 和 `admin`.
 
 1. 单击&#x200B;**确定**。
@@ -77,7 +78,7 @@ CRXDE Lite提供以下功能：
   </tr>
   <tr>
    <td>“访问控制”选项卡</td>
-   <td><p>根据路径、存储库级别或主体显示权限。</p> <p>权限划分为</p> <p>- <strong>适用的访问控制策略</strong>：可应用于所选内容的策略。</p> <p>- <strong>本地访问控制策略</strong>：本地应用于所选内容的策略。</p> <p>- <strong>有效的访问控制策略</strong>：应用于所选内容的策略可以在本地设置或从父节点继承。</p> <p>注意. 为了能够查看访问控制信息，登录到CRXDE Lite的用户必须对ACL条目具有读取权限。 匿名用户默认看不到此信息 — 例如，以管理员身份登录以查看此信息。</p> </td>
+   <td><p>根据路径、存储库级别或主体显示权限。</p> <p>权限划分为</p> <p>- <strong>适用的访问控制策略</strong>：可应用于所选内容的策略。</p> <p>- <strong>本地访问控制策略</strong>：本地应用于所选内容的策略。</p> <p>- <strong>有效的访问控制策略</strong>：应用于所选内容的策略可以在本地设置或从父节点继承。</p> <p>注意。 为了能够查看访问控制信息，登录到CRXDE Lite的用户必须对ACL条目具有读取权限。 匿名用户默认看不到此信息 — 例如，以管理员身份登录以查看此信息。</p> </td>
   </tr>
   <tr>
    <td>“复制”选项卡</td>
@@ -85,7 +86,7 @@ CRXDE Lite提供以下功能：
   </tr>
   <tr>
    <td>控制台选项卡<br /> </td>
-   <td><p><strong>服务器日志</strong>:</p> <p>显示日志消息。 您可以配置日志级别、清除控制台、固定到选定的滚动位置，以及启用或禁用消息的显示。<br /> </p> <p><strong>版本控制</strong>:</p> <p>显示版本控制消息。<br /> </p> </td>
+   <td><p><strong>服务器日志</strong>：</p> <p>显示日志消息。 您可以配置日志级别、清除控制台、固定到选定的滚动位置，以及启用或禁用消息的显示。<br /> </p> <p><strong>版本控制</strong>：</p> <p>显示版本控制消息。<br /> </p> </td>
   </tr>
   <tr>
    <td>“生成信息”选项卡<br /> </td>
@@ -97,10 +98,10 @@ CRXDE Lite提供以下功能：
   </tr>
   <tr>
    <td>全部保存</td>
-   <td><p><strong>全部保存</strong>:<br /> </p> <p>保存所做的所有更改。 在单击“保存”之前，更改是临时的，当您退出控制台时，这些更改将丢失。</p> <p><strong>还原</strong>:</p> <p>放弃自上次保存操作以来在选定节点上所做的所有更改，然后重新加载选定节点的存储库状态。</p> <p><strong>全部恢复</strong>:</p> <p>放弃自上次保存操作以来对整个存储库所做的所有更改，然后重新加载存储库的状态。</p> </td>
+   <td><p><strong>全部保存</strong>：<br /> </p> <p>保存所做的所有更改。 在单击“保存”之前，更改是临时的，当您退出控制台时，这些更改将丢失。</p> <p><strong>还原</strong>：</p> <p>放弃自上次保存操作以来在选定节点上所做的所有更改，然后重新加载选定节点的存储库状态。</p> <p><strong>全部还原</strong>：</p> <p>放弃自上次保存操作以来对整个存储库所做的所有更改，然后重新加载存储库的状态。</p> </td>
   </tr>
   <tr>
-   <td>创建 ...<br /> </td>
+   <td>创建……<br /> </td>
    <td><p>下拉菜单，用于在所选节点下创建以下内容：<br /> </p> <p>- <strong>节点</strong>：具有任意节点类型的节点<br /> </p> <p>- <strong>文件</strong>： nt：file节点及其nt：resource子节点</p> <p>- <strong>文件夹</strong>： nt：folder节点</p> <p>- <strong>模板</strong>：AEM模板</p> <p>- <strong>组件</strong>：AEM组件</p> <p>- <strong>对话框</strong>：AEM对话框</p> </td>
   </tr>
   <tr>
@@ -116,15 +117,15 @@ CRXDE Lite提供以下功能：
    <td>将复制的节点粘贴到所选节点下。<br /> </td>
   </tr>
   <tr>
-   <td>移动 ...<br /> </td>
+   <td>移动……<br /> </td>
    <td>将所选节点移动到通过对话框设置的节点。</td>
   </tr>
   <tr>
-   <td>重命名 ...<br /> </td>
+   <td>重命名……<br /> </td>
    <td>重命名选定的节点。<br /> </td>
   </tr>
   <tr>
-   <td>Mixin...<br /> </td>
+   <td>Mixins ...<br /> </td>
    <td>用于向节点类型添加mixin类型。 mixin类型主要用于向节点添加高级功能，例如版本控制、访问控制、引用和锁定。</td>
   </tr>
   <tr>
@@ -241,7 +242,7 @@ CRXDE Lite提供以下功能：
 
 1. 在浏览器中打开CRXDE Lite。
 1. 在“导航”窗格中，选择要添加新属性的节点。
-1. 在 **属性** 选项卡，输入 **名称**， **类型**，和 **值**. 单击&#x200B;**添加**。
+1. 在 **属性** 选项卡，输入 **名称**， **类型**，和 **值**. 单击 **添加**.
 
 1. 单击 **全部保存** 以保存服务器上的更改。
 

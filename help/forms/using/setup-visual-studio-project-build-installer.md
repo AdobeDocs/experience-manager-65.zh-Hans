@@ -4,7 +4,8 @@ description: 了解如何设置Visual Studio项目以构建AEM Forms Windows移�
 topic-tags: forms-app
 docset: aem65
 exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 2%

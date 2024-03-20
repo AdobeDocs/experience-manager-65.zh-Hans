@@ -6,9 +6,10 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1047'
 ht-degree: 2%
 
 ---
@@ -247,7 +248,7 @@ ht-degree: 2%
    <td><p>项目级别的自定义项必须剪切并粘贴到等效项下 <code>/apps</code> 或 <code>/conf</code> 路径（如果适用）。</p> <p>要与AEM 6.4存储库结构保持一致，请执行以下操作：</p>
     <ol>
      <li>从复制任何已修改的视频配置 <code>/etc/dam/video</code> 到 <code>/apps/settings/dam/video</code></li>
-     <li>删除 <code>/etc/dam/video</code></li>
+     <li>移除 <code>/etc/dam/video</code></li>
     </ol> </td>
   </tr>
   <tr>

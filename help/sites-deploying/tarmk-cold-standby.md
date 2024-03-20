@@ -8,9 +8,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2666'
 ht-degree: 0%
 
 ---
@@ -400,7 +401,7 @@ Adobe建议定期运行维护以防止存储库随时间推移过度增长。 �
 
 作为替代方法，在主存储库上运行压缩后，可以手动将主存储库复制到备用存储库，实际上每次压缩运行时都会重建备用存储库。
 
-### 数据存储垃圾收集 {#data-store-garbage-collection}
+### 数据存储垃圾回收 {#data-store-garbage-collection}
 
 不时必须对文件数据存储实例运行垃圾收集，否则，已删除的二进制文件将保留在文件系统上，最终将填满驱动器。 要运行垃圾回收，请按照以下步骤操作：
 

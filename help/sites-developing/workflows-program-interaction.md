@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '1857'
 ht-degree: 0%
 
 ---
@@ -151,7 +152,7 @@ REST API支持以下操作：
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>创建新工作流模型. 如果参数 <code>title</code> 之后，使用指定的标题创建新模型。 将JSON模型定义作为参数附加 <code>model</code> 根据提供的定义创建新的工作流模型。<br /> A <code>201</code> 响应(<code>CREATED</code>)发送回，且位置标头包含新工作流模型资源的URL。<br /> 当模型定义作为名为的文件参数附加时，也会发生同样的情况 <code>modelfile</code>.<br /> 在这两种情况下 <code>model</code> 和 <code>modelfile</code> 参数，一个名为的额外参数 <code>type</code> 是定义序列化格式所必需的。 可以使用OSGI API集成新的序列化格式。 标准JSON序列化程序与工作流引擎一起交付。 其类型为JSON。 有关格式的示例，请参见下文。</td>
+   <td>创建新的工作流模型。 如果参数 <code>title</code> 之后，使用指定的标题创建新模型。 将JSON模型定义作为参数附加 <code>model</code> 根据提供的定义创建新的工作流模型。<br /> A <code>201</code> 响应(<code>CREATED</code>)发送回，且位置标头包含新工作流模型资源的URL。<br /> 当模型定义作为名为的文件参数附加时，也会发生同样的情况 <code>modelfile</code>.<br /> 在这两种情况下 <code>model</code> 和 <code>modelfile</code> 参数，一个名为的额外参数 <code>type</code> 是定义序列化格式所必需的。 可以使用OSGI API集成新的序列化格式。 标准JSON序列化程序与工作流引擎一起交付。 其类型为JSON。 有关格式的示例，请参见下文。</td>
   </tr>
  </tbody>
 </table>
@@ -402,7 +403,7 @@ curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 
 要更改 **工作流标题** 显示在 **实例** 在“工作流”控制台的选项卡中，发送 `POST` 命令：
 
-* 到: `http://localhost:4502/etc/workflow/instances/{id}`
+* 至： `http://localhost:4502/etc/workflow/instances/{id}`
 
 * ，并使用以下参数：
 

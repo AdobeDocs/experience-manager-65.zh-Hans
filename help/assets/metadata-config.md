@@ -6,10 +6,11 @@ role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2000'
-ht-degree: 5%
+source-wordcount: '1978'
+ht-degree: 3%
 
 ---
 
@@ -93,7 +94,7 @@ ht-degree: 5%
 | [!UICONTROL 日期] | 字段标签， <br> 映射到属性， <br> 默认值 |
 | [!UICONTROL 标准标记] | 字段标签， <br> 映射到属性， <br> 默认值， <br> 描述 |
 
-1. 单击&#x200B;**[!UICONTROL 完成]**。元数据配置文件将添加到中的配置文件列表 **[!UICONTROL 元数据配置文件]** 页面。<br>
+1. 单击 **[!UICONTROL 完成]**. 元数据配置文件将添加到中的配置文件列表 **[!UICONTROL 元数据配置文件]** 页面。<br>
 
    ![元数据配置文件页面中添加了元数据配置文件](assets/MetadataProfiles-page.png)
 
@@ -185,12 +186,12 @@ To apply a metadata profile globally, follow these steps:
 | 组件名称 | 描述 |
 |---|---|
 | [!UICONTROL 章节标题] | 为常用组件列表添加章节标题。 |
-| [!UICONTROL 单行文本] | 添加单行文本属性。它存储为字符串。 |
-| [!UICONTROL 多值文本] | 添加多值文本属性。它存储为字符串数组。 |
+| [!UICONTROL 单行文本] | 添加单行文本属性。 它存储为字符串。 |
+| [!UICONTROL 多值文本] | 添加多值文本属性。 它存储为字符串数组。 |
 | [!UICONTROL 数字] | 添加一个数值组件。 |
 | [!UICONTROL 日期] | 添加一个日期组件。 |
 | [!UICONTROL 下拉列表] | 添加一个下拉列表。 |
-| [!UICONTROL 标准标记] | 添加标记. |
+| [!UICONTROL 标准标记] | 添加标记。 |
 | [!UICONTROL 隐藏字段] | 添加隐藏字段。 在保存资源时，它将作为POST参数发送。 |
 
 #### 编辑表单项目 {#editing-form-items}

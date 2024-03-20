@@ -9,7 +9,8 @@ docset: aem65
 feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2004'
 ht-degree: 8%
@@ -80,7 +81,7 @@ ht-degree: 8%
 
 1. [将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md) 或 [嵌入视频查看器或图像查看器](/help/assets/embed-code.md).
 
-   Adobe Experience Manager Assets会为旋转集创建URL调用，并在您发布旋转集后激活它们。 您可以在预览资产时复制这些URL。 或者，您可以将其嵌入到您的网站上。
+   Adobe Experience Manager Assets为旋转集创建URL调用，并在发布旋转集后激活它们。 您可以在预览资产时复制这些URL。 或者，您可以将其嵌入到您的网站上。
 
    选择旋转集，然后在左边栏下拉菜单中选择&#x200B;**[!UICONTROL 查看器]**。
 

@@ -8,7 +8,8 @@ feature: Adaptive Forms, Foundation Components, Acrobat Sign
 discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3875'
 ht-degree: 1%
@@ -45,7 +46,7 @@ ht-degree: 1%
 
 了解 [将Adobe Sign与自适应表单结合使用的最佳实践](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) 以创建更好的签名体验。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 使用前 [!DNL Adobe Sign] 在自适应表单中：
 

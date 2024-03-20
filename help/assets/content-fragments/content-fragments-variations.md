@@ -4,7 +4,8 @@ description: 了解变体如何允许您为片段创作内容，然后根据用�
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2309'
 ht-degree: 60%
@@ -234,14 +235,14 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
-英语是现成的。
+>英语是现成的。
 >
-其他语言作为语言模型包从包共享中提供：
+>其他语言作为语言模型包从包共享中提供：
 >
-* [法语 (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [德语 (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [意大利语 (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [西班牙语 (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [法语 (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [德语 (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [意大利语 (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [西班牙语 (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 1. 选择&#x200B;**主要变体**&#x200B;或所需的变体。
@@ -310,7 +311,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
   >[!NOTE]
   >
-  如果对一段文本应用了多个注释，则会提供一个下拉选择器。
+  >如果对一段文本应用了多个注释，则会提供一个下拉选择器。
 
 * 删除应用了注释的整个文本时，也会删除注释。
 
@@ -328,13 +329,13 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
-无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
+>无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
 >
-但是，必须在[页面编辑器](/help/sites-authoring/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
+>但是，必须在[页面编辑器](/help/sites-authoring/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 >
-将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
+>将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
 
 1. 将光标定位在要添加图像的位置。
 1. 使用&#x200B;**插入资源**&#x200B;图标，打开搜索对话框。
@@ -352,10 +353,10 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    >[!CAUTION]
    >
-   如果您在添加为资产后更改格式：
+   >如果您在添加为资产后更改格式：
    >
-   * **纯文本**：资产从片段中丢失。
-   * **Markdown**：资产不可见，但在您返回到 **富文本**.
+   >* **纯文本**：资产从片段中丢失。
+   >* **Markdown**：资产不可见，但在您返回到 **富文本**.
 
 ### 将内容片段插入片段 {#inserting-content-fragment-into-your-fragment}
 
@@ -365,17 +366,17 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!NOTE]
 >
-当您的&#x200B;**多行文本**&#x200B;配置为&#x200B;**允许片段引用**&#x200B;时，此选项可用。
+>当您的&#x200B;**多行文本**&#x200B;配置为&#x200B;**允许片段引用**&#x200B;时，此选项可用。
 
 >[!CAUTION]
 >
-无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
+>无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
 >
-但是，必须在[页面编辑器](/help/sites-authoring/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
+>但是，必须在[页面编辑器](/help/sites-authoring/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 >
-将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
+>将[图像](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets)添加到片段和/或页面有多种方法。
 
 1. 将光标定位在要添加片段的位置。
 1. 使用&#x200B;**插入内容片段**&#x200B;图标，打开搜索对话框。
@@ -393,10 +394,10 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    >[!CAUTION]
    >
-   如果更改格式，在添加对其他片段的引用后，将更改为：
+   >如果更改格式，在添加对其他片段的引用后，将更改为：
    >
-   * **纯文本**：引用从片段中丢失。
-   * **Markdown**：引用将保留。
+   >* **纯文本**：引用从片段中丢失。
+   >* **Markdown**：引用将保留。
 
 ## 管理变体 {#managing-variations}
 
@@ -414,11 +415,11 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    >[!NOTE]
    >
-   创建变体时，它始终为 **母版** 而不是打开的变体。
+   >创建变体时，它始终为 **母版** 而不是打开的变体。
 
    >[!NOTE]
    >
-   当您创建变体时，所有 **标记** 当前分配给 **母版** 变体将会复制到您的新变体中。
+   >当您创建变体时，所有 **标记** 当前分配给 **母版** 变体将会复制到您的新变体中。
 
 ### 编辑变体 {#editing-a-variation}
 
@@ -443,7 +444,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!NOTE]
 >
-这仅影响变体&#x200B;**标题**。
+>这仅影响变体&#x200B;**标题**。
 
 ### 删除变体 {#deleting-a-variation}
 
@@ -457,7 +458,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!NOTE]
 >
-无法删除&#x200B;**母版**。
+>无法删除&#x200B;**母版**。
 
 ### 与母版同步 {#synchronizing-with-master}
 
@@ -467,13 +468,13 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
-同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
+>同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
 >
-仅会同步变体的当前元素。
+>仅会同步变体的当前元素。
 >
-同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
+>同步仅适用于&#x200B;**多行文本**&#x200B;数据类型。
 >
-不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
+>不提供将更改&#x200B;*从变体传输到&#x200B;**母版***选项。
 
 <!-- needs new screenshot for synchronize effect -->
 

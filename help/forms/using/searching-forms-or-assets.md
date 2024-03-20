@@ -7,7 +7,8 @@ topic-tags: forms-manager
 docset: aem65
 role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 3%
@@ -74,7 +75,7 @@ Adobe Experience Manager在元数据属性中搜索输入的文本并返回相�
 
 * **修改时间**：搜索发布后修改或取消发布的所有资产。
 
-### 资产类型 {#asset-type}
+### 资源类型 {#asset-type}
 
 您可以选择任意数量的资源类型。 搜索将返回所有选定资产类型的并集。
 

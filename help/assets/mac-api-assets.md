@@ -1,14 +1,15 @@
 ---
-title: "[!DNL Assets] HTTP API."
+title: '"[!DNL Assets] HTTP API。”'
 description: 在中使用HTTP API创建、读取、更新、删除和管理数字资源 [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
-feature: APIs,Assets HTTP API,Developer Tools
+feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1775'
 ht-degree: 1%
 
 ---
@@ -55,7 +56,7 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 
 **实体**：文件夹的实体是它的子元素，可以是文件夹和资源。
 
-**属性**:
+**属性**：
 
 * `name` 是文件夹的名称。 这与URL路径中没有扩展的最后一个区段相同。
 * `title` 是文件夹的可选标题，可以显示它而不是其名称。
@@ -83,8 +84,8 @@ A [内容片段](/help/assets/content-fragments/content-fragments.md) 是一种�
 在 [!DNL Experience Manager] 文件夹具有以下组件：
 
 * 实体：资产的子项是其演绎版。
-* 属性.
-* 链接.
+* 属性。
+* 链接。
 
 此 [!DNL Assets] HTTP API包含以下功能：
 

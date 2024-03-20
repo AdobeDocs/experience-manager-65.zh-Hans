@@ -1,18 +1,19 @@
 ---
-title: Forms用户管理 |处理用户数据
+title: Forms用户管理 | 处理用户数据
 description: 了解AEM Forms JEE用户管理组件如何让您创建、授权和管理需要访问AEM Forms的用户。
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
 
 ---
 
-# Forms用户管理 |处理用户数据 {#forms-user-management-handling-user-data}
+# Forms用户管理 | 处理用户数据 {#forms-user-management-handling-user-data}
 
 用户管理是一个AEM Forms JEE组件，允许创建、管理和授权AEM Forms用户访问AEM Forms。 用户管理使用域作为获取用户信息的目录。 支持以下域类型：
 
@@ -111,13 +112,13 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 >
 >以下命令使用My SQL和IBM® DB2®数据库中的数据库表名。 在Oracle和MS® SQL数据库上运行这些命令时，请替换这些命令中的以下表名：
 >
-* 替换 `EdcPrincipalLocalAccountEntity` 替换为 `EdcPrincipalLocalAccount`
+>* 替换 `EdcPrincipalLocalAccountEntity` 替换为 `EdcPrincipalLocalAccount`
 >
-* 替换 `EdcPrincipalEmailAliasEntity` 替换为 `EdcPrincipalEmailAliasEn`
+>* 替换 `EdcPrincipalEmailAliasEntity` 替换为 `EdcPrincipalEmailAliasEn`
 >
-* 替换 `EdcPrincipalMappingEntity` 替换为 `EdcPrincipalMappingEntit`
+>* 替换 `EdcPrincipalMappingEntity` 替换为 `EdcPrincipalMappingEntit`
 >
-* 替换 `EdcPrincipalGrpCtmntEntity` 替换为 `EdcPrincipalGrpCtmntEnti`
+>* 替换 `EdcPrincipalGrpCtmntEntity` 替换为 `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql

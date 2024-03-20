@@ -6,10 +6,11 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3549'
-ht-degree: 2%
+source-wordcount: '3476'
+ht-degree: 1%
 
 ---
 
@@ -232,28 +233,28 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 >
 >S3连接器同时支持IAM用户身份验证和IAM角色身份验证。 要使用IAM角色身份验证，请忽略 `accessKey` 和 `secretKey` 配置文件中的值。 之后，S3连接器将默认为 [IAM角色](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) 已分配给实例。
 
-| 键 | 描述 | 默认 | 必填 |
+| 关键值 | 描述 | 默认 | 必填 |
 | --- | --- | --- | --- |
 | 访问密钥 | 有权访问存储桶的IAM用户的访问密钥ID。 | | 是，当不使用IAM角色时。 |
 | 密钥 | 有权访问存储桶的IAM用户的访问密钥。 | | 是，当不使用IAM角色时。 |
-| 缓存大小 | 本地缓存的大小（以字节为单位）。 | 64GB | 否. |
-| connectionTimeout | 设置初始建立连接时超时前等待的时间（以毫秒为单位）。 | 10000 | 否. |
-| maxCachedBinarySize | 大小小于或等于此值（以字节为单位）的二进制文件存储在内存缓存中。 | 17408 (17 KB) | 否. |
-| maxConnections | 设置允许的最大打开HTTP连接数。 | 50 | 否. |
-| maxErrorRetry | 设置失败（可重试）请求的最大重试次数。 | 3 | 否. |
-| minRecordLength | 应存储在数据存储中的对象的最小大小（以字节为单位）。 | 16384 | 否. |
-| path | AEM数据存储的本地路径。 | `crx-quickstart/repository/datastore` | 否. |
-| proxyHost | 设置客户端通过连接的可选代理主机。 | | 否. |
-| 代理端口 | 设置客户端通过连接的可选代理端口。 | | 否. |
+| 缓存大小 | 本地缓存的大小（以字节为单位）。 | 64GB | 不适用。 |
+| connectionTimeout | 设置初始建立连接时超时前等待的时间（以毫秒为单位）。 | 10000 | 不适用。 |
+| maxCachedBinarySize | 大小小于或等于此值（以字节为单位）的二进制文件存储在内存缓存中。 | 17408 (17 KB) | 不适用。 |
+| maxConnections | 设置允许的最大打开HTTP连接数。 | 50 | 不适用。 |
+| maxErrorRetry | 设置失败（可重试）请求的最大重试次数。 | 3 | 不适用。 |
+| minRecordLength | 应存储在数据存储中的对象的最小大小（以字节为单位）。 | 16384 | 不适用。 |
+| 路径 | AEM数据存储的本地路径。 | `crx-quickstart/repository/datastore` | 不适用。 |
+| proxyHost | 设置客户端通过连接的可选代理主机。 | | 不适用。 |
+| 代理端口 | 设置客户端通过连接的可选代理端口。 | | 不适用。 |
 | s3Bucket | S3存储桶的名称。 | | 是 |
-| s3EndPoint | S3 REST API端点。 | | 否. |
-| s3Region | 存储桶所在的区域。 查看此 [页面](https://docs.aws.amazon.com/general/latest/gr/s3.html) 以了解更多详细信息。 | 正在运行AWS实例的区域。 | 否. |
-| sockettimeout | 设置在连接超时并关闭之前，通过已建立的打开的连接传输数据等待的时间（以毫秒为单位）。 | 50000 | 否. |
-| stagingPurgeInterval | 从临时缓存中清除已完成上载的时间间隔（以秒为单位）。 | 300 | 否. |
-| stagingRetryInterval | 重试失败的上传的时间间隔（以秒为单位）。 | 600 | 否. |
-| stagingSplitPercentage | 百分比 `cacheSize` 用于暂存异步上载。 | 10 | 否. |
-| uploadThreads | 用于异步上传的上传线程数。 | 10 | 否. |
-| writeThreads | 通过S3传输管理器写入时使用的并发线程数。 | 10 | 否. |
+| s3EndPoint | S3 REST API端点。 | | 不适用。 |
+| s3Region | 存储桶所在的区域。 查看此 [页面](https://docs.aws.amazon.com/general/latest/gr/s3.html) 以了解更多详细信息。 | 正在运行AWS实例的区域。 | 不适用。 |
+| sockettimeout | 设置在连接超时并关闭之前，通过已建立的打开的连接传输数据等待的时间（以毫秒为单位）。 | 50000 | 不适用。 |
+| stagingPurgeInterval | 从临时缓存中清除已完成上载的时间间隔（以秒为单位）。 | 300 | 不适用。 |
+| stagingRetryInterval | 重试失败的上传的时间间隔（以秒为单位）。 | 600 | 不适用。 |
+| stagingSplitPercentage | 百分比 `cacheSize` 用于暂存异步上载。 | 10 | 不适用。 |
+| uploadThreads | 用于异步上传的上传线程数。 | 10 | 不适用。 |
+| writeThreads | 通过S3传输管理器写入时使用的并发线程数。 | 10 | 不适用。 |
 
 <!---
 ### Bucket region options {#bucket-region-options}

@@ -5,14 +5,15 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 24%
+source-wordcount: '1902'
+ht-degree: 23%
 
 ---
 
-# AEM Assets HTTP API 中的内容片段支持 {#content-fragments-support-in-aem-assets-http-api}
+# AEM Assets HTTP API中的内容片段支持 {#content-fragments-support-in-aem-assets-http-api}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -35,7 +36,7 @@ ht-degree: 24%
 
 此 [Assets REST API](/help/assets/mac-api-assets.md) 允许Adobe Experience Manager的开发人员通过CRUD操作（创建、读取、更新、删除），直接通过HTTP API访问内容(存储在AEM中)。
 
-该API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为Headless CMS（内容管理系统）运行。 或者，任何其他可以执行 HTTP 请求并处理 JSON 响应的应用程序。
+该API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为Headless CMS（内容管理系统）运行。 或任何可以执行HTTP请求并处理JSON响应的其他应用程序。
 
 例如，基于框架或自定义的单页应用程序(SPA)需要通过HTTP API提供的内容，通常采用JSON格式。
 
@@ -55,7 +56,7 @@ Assets REST API还允许开发人员通过创建新资产、更新或删除现�
 
 * 实施 [SIREN格式](https://github.com/kevinswiber/siren)
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 Assets REST API适用于最近的AEM版本的每个现成安装。
 
@@ -116,7 +117,7 @@ HTTP 方法决定了要执行的操作：
   <tr>
    <td>支持的操作</td>
    <td><p>创建、读取、更新、删除。</p> <p>根据实体类型执行其他操作。</p> </td>
-   <td>只读.</td>
+   <td>只读。</td>
   </tr>
   <tr>
    <td>访问</td>

@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '584'
 ht-degree: 2%
@@ -61,7 +62,7 @@ AEM Forms提供AEM Forms应用程序的完整源代码。 源包含用于构建�
 
    >[!NOTE]
    >
-   建议在将项目导入Android™ Studio之前，将提取的Android项目保留在系统驱动器中。
+   >建议在将项目导入Android™ Studio之前，将提取的Android项目保留在系统驱动器中。
 
 1. 启动Android™ Studio。
 

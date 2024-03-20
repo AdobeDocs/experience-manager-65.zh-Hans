@@ -6,10 +6,11 @@ content-type: reference
 topic-tags: author, correspondence-management
 feature: Adaptive Forms, Foundation Components
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: 4ecdcb2659b26043f95ba1dc3e907c33f65b8834
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1192'
-ht-degree: 4%
+ht-degree: 5%
 
 ---
 
@@ -46,10 +47,10 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->在桌面设备上多选：
+在桌面设备上多选：
 >
->* Windows：按住Ctrl并单击所需的组件。
->* macOS：按住Command并单击所需的组件。
+* Windows：按住Ctrl并单击所需的组件。
+* macOS：按住Command并单击所需的组件。
 >
 
 ## 主题编辑器  {#themeeditor}
@@ -64,7 +65,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->标有“&amp;ast；”的快捷键同时适用于macOS上的Ctrl和Command键。
+标有“&amp;ast；”的快捷键同时适用于macOS上的Ctrl和Command键。
 
 ## 内容浏览器  {#contentbrowser}
 

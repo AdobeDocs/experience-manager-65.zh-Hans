@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 3%
+source-wordcount: '365'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +56,7 @@ AEM附带了其他有助于开发的工具：
 
 有助于创建新项目的工具：
 
-* [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
+* [AEM项目原型](https://github.com/adobe/aem-project-archetype)
 * [AEM Lazybone模板](https://github.com/Adobe-Consulting-Services/lazybones-aem-templates)
 
 >[!NOTE]

@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 docset: aem65
 exl-id: 64b88423-aaae-4258-bf48-73df5c9353ea
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '328'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 动态填充下拉列表 {#dynamically-populating-drop-down-lists}
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 * [创建OSGi包](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [开发AEM组件](/help/sites-developing/components.md)

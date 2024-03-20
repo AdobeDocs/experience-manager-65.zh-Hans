@@ -3,7 +3,8 @@ title: 简介和概述
 description: 通过有关集成以及如何开始使用 AEM Storefront 的实用文章，了解如何使用和管理 AEM Content and Commerce。
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: fcf7f56fe04cffb077bb40d11429b0c425876489
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 88%

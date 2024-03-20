@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 3%
+ht-degree: 2%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 3%
 
 以下核对清单重点介绍了一些主要问题 — 有关完整的详细信息，请阅读与测试相关的其他部分。
 
-| 检查 | 响应 | 操作 | 所有者 | 到期日期 |
+| 检查 | 响应 | 操作 | 所有者 | 到期 |
 |---|---|---|---|---|
 | 是否已建立明确的定期报告机制？ |  |  |  |  |
 | 关键参与者（来自测试团队）是否参与状态会议？ |  |  |  |  |

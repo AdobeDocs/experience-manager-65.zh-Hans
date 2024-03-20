@@ -7,10 +7,11 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '762'
-ht-degree: 1%
+source-wordcount: '664'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +40,7 @@ ht-degree: 1%
 
 GITHUB上的代码
 
-您可以在 GitHub 上找到此页面的代码。
+您可以在GitHub上找到此页面的代码。
 
 * [在GitHub上打开aem-search-custom-predicate-evaluator项目](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * 将项目下载为 [ZIP文件](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
@@ -102,13 +103,13 @@ replic.action=Activate
 
 >[!NOTE]
 >
-以下文档介绍了使用maven设置新的Adobe Experience Manager (AEM)项目 [如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md).
+>以下文档介绍了使用maven设置新的Adobe Experience Manager (AEM)项目 [如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md).
 
 首先，更新项目的Maven依赖项。 此 `PredicateEvaluator` 是 `cq-search` 构件，因此必须将其添加到Maven pom.xml文件中。
 
 >[!NOTE]
 >
-范围 `cq-search` 依赖关系设置为 `provided` 因为 `cq-search` 由 `OSGi` 容器。
+>范围 `cq-search` 依赖关系设置为 `provided` 因为 `cq-search` 由 `OSGi` 容器。
 
 pom.xml
 
@@ -137,7 +138,7 @@ pom.xml
 
 >[!NOTE]
 >
-以下过程说明如何构建 `Xpath` 用于筛选数据的表达式。 另一种选择是实施 `includes` 逐行选择数据的方法。 请参阅 [Java™文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) 以了解更多信息。
+>以下过程说明如何构建 `Xpath` 用于筛选数据的表达式。 另一种选择是实施 `includes` 逐行选择数据的方法。 请参阅 [Java™文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) 以了解更多信息。
 
 1. 创建扩展的Java™类 `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. 使用为类添加批注 `@Component` 如下所示
@@ -165,13 +166,13 @@ pom.xml
 
 >[!NOTE]
 >
-此 `factory`必须为以开头的唯一字符串 `com.day.cq.search.eval.PredicateEvaluator/`并以您的自定义名称结尾 `PredicateEvaluator`.
+>此 `factory`必须为以开头的唯一字符串 `com.day.cq.search.eval.PredicateEvaluator/`并以您的自定义名称结尾 `PredicateEvaluator`.
 
 >[!NOTE]
 >
-的名称 `PredicateEvaluator` 是构建查询时使用的谓词名称。
+>的名称 `PredicateEvaluator` 是构建查询时使用的谓词名称。
 
-1. 替代:
+1. 覆盖：
 
    ```java
    public String getXPathExpression(Predicate predicate, EvaluationContext context)

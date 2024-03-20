@@ -8,9 +8,10 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -59,7 +60,7 @@ AEM长期以来使用叠加和Sling资源合并器的主体，允许客户扩展
 
 >[!NOTE]
 >
-这些策略仅针对基于Sling搜索路径的机制强制执行。 其他领域 **/libs** 例如，客户端库可以标记为 `Internal`，但仍可以与标准clientlib包含一起使用。 在这些情况下，客户必须继续遵守内部分类。
+>这些策略仅针对基于Sling搜索路径的机制强制执行。 其他领域 **/libs** 例如，客户端库可以标记为 `Internal`，但仍可以与标准clientlib包含一起使用。 在这些情况下，客户必须继续遵守内部分类。
 
 #### CRXDE Lite内容类型指示器 {#crxde-lite-content-type-indicators}
 
@@ -81,9 +82,9 @@ AEM长期以来使用叠加和Sling资源合并器的主体，允许客户扩展
 
 >[!NOTE]
 >
-从AEM 6.5开始，Adobe建议使用模式检测器来检测内容访问违规。 模式检测器报告更详细，检测更多问题，并降低误报概率。
+>从AEM 6.5开始，Adobe建议使用模式检测器来检测内容访问违规。 模式检测器报告更详细，检测更多问题，并降低误报概率。
 >
-有关更多信息，请参阅 [使用模式检测器评估升级复杂性](/help/sites-deploying/pattern-detector.md).
+>有关更多信息，请参阅 [使用模式检测器评估升级复杂性](/help/sites-deploying/pattern-detector.md).
 
 AEM 6.5附带运行状况检查，如果以与内容分类不一致的方式使用叠加或引用的内容，该检查会提醒客户。
 

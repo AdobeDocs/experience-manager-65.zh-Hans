@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1895'
 ht-degree: 17%
 
 ---
@@ -139,7 +140,7 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
 
 ### 组件 {#components}
 
-组件是AEM提供的元素，用于添加特定类型的内容。AEM附带一系列现成的组件，可提供全面的功能；这些组件包括：
+组件是AEM提供的元素，用于添加特定类型的内容。 AEM附带一系列现成的组件，可提供全面的功能；这些组件包括：
 
 * 文本
 * 图像
@@ -281,7 +282,7 @@ AEM提供了将内部链接更新到要重命名或移动的页面的功能。 �
 
      默认显示当前页面标签。 指定新页面标签（如有必要）。
 
-   * **调整**
+   * **Adjust**
 
      更新列出的页面上指向已移动页面的链接：例如，如果页面A具有指向页面B的链接，AEM会调整页面A中的链接，以防您移动页面B。
 

@@ -4,9 +4,10 @@ description: 公开服务属性和操作，以便能够使用JMX控制台创建�
 topic-tags: extending-aem
 content-type: reference
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1621'
 ht-degree: 0%
 
 ---
@@ -422,7 +423,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 
 为方便起见，您可以将以下XML代码复制并粘贴到项目pom.xml文件中，以生成组件捆绑包。 POM会引用多个必需的插件和依赖项。
 
-**插件:**
+**插件：**
 
 * Apache Maven编译器插件：从源代码中编译Java类。
 * Apache Felix Maven捆绑包插件：创建捆绑包和清单

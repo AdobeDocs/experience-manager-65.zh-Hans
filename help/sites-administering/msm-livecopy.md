@@ -3,7 +3,8 @@ title: 创建并同步 Live Copy
 description: 了解如何在Adobe Experience Manager中创建和同步活动副本。
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4194'
 ht-degree: 40%

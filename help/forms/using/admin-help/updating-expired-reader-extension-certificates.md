@@ -2,7 +2,8 @@
 title: Reader扩展证书过期及其影响
 description: Reader扩展证书过期及其影响
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 0%

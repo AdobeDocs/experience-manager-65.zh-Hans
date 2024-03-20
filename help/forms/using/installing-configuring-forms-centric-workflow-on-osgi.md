@@ -5,7 +5,8 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 3%
@@ -16,7 +17,7 @@ ht-degree: 3%
 
 ## 简介 {#introduction}
 
-企业收集和处理来自多个表单、后端系统和其他数据源的数据。 数据处理涉及审查和批准程序、重复性任务和数据存档。 例如，审阅表单并将其转换为 PDF 文档。 手动完成时，重复性任务可能需要大量时间和大量资源。
+企业收集和处理来自多个表单、后端系统和其他数据源的数据。 数据的处理涉及审核和批准程序、重复任务和数据存档。 例如，审阅表单并将其转换为 PDF 文档。 手动完成时，重复性任务可能需要大量时间和大量资源。
 
 您可以在 [OSGi](../../forms/using/aem-forms-workflow.md) 上使用以表单为中心的工作流来快速构建自适应的基于表单的工作流。 这些工作流可以帮助您自动执行审阅和审批工作流、业务流程工作流以及其他重复性任务。 这些工作流程还有助于处理文档（创建、组合、分发和归档 PDF 文档，添加数字签名以限制对文档的访问，解码条形码格式等），以及将 Adobe Sign 签名工作流程用于表单和文档。
 

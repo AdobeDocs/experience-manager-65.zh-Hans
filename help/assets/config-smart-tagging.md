@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2244'
-ht-degree: 25%
+source-wordcount: '2227'
+ht-degree: 20%
 
 ---
 
@@ -24,12 +25,12 @@ ht-degree: 25%
 
 在使用智能内容服务之前，请确保：
 
-* [使用 Adobe 开发人员控制台进行集成](#integrate-adobe-io).
+* [与Adobe Developer控制台集成](#integrate-adobe-io).
 * [培训智能内容服务](#training-the-smart-content-service).
 
 * 安装最新版本 [[!DNL Experience Manager] Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html).
 
-## 使用 Adobe 开发人员控制台进行集成 {#integrate-adobe-io}
+## 与Adobe Developer控制台集成 {#integrate-adobe-io}
 
 在与Adobe Developer控制台集成时， [!DNL Experience Manager] 在将您的请求转发到智能内容服务之前，服务器会使用Adobe Developer控制台网关验证您的服务凭据。 要集成，您需要一个对组织具有管理员权限的Adobe ID帐户，以及已为组织购买和启用的Smart Content Service许可证。
 
@@ -57,7 +58,7 @@ ht-degree: 25%
 
 1. 在 **[!UICONTROL AEM智能内容服务]** 对话框，请使用以下值：
 
-   **[!UICONTROL 服务 URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
+   **[!UICONTROL 服务URL]**： `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
    例如，`https://smartcontent.adobe.io/apac`。您可以指定 `na`， `emea`，或， `apac` 作为托管Experience Manager创作实例的地区。
 
@@ -66,7 +67,7 @@ ht-degree: 25%
    >如果Experience Manager托管服务是在2022年9月1日之前配置的，请使用以下服务URL：
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
-   **[!UICONTROL 授权服务器]**: `https://ims-na1.adobelogin.com`
+   **[!UICONTROL 授权服务器]**： `https://ims-na1.adobelogin.com`
 
    其他字段暂时留空（稍后提供）。 单击&#x200B;**[!UICONTROL 确定]**。
 
@@ -88,7 +89,7 @@ ht-degree: 25%
 
 #### 证书过期时重新配置 {#certrenew}
 
-证书过期后，将不再受信任。 无法续订已过期的证书。要添加证书，请执行以下步骤。
+证书过期后，将不再受信任。 无法续订已过期的证书。 要添加证书，请执行以下步骤。
 
 1. 以管理员身份登录 [!DNL Experience Manager] 部署。单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全]** > **[!UICONTROL 用户]**。
 
@@ -123,7 +124,7 @@ ht-degree: 25%
 
 1. 单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 在&#x200B;**[!UICONTROL 选择产品配置文件]**&#x200B;页面上，选择&#x200B;**[!UICONTROL 智能内容服务]**。单击&#x200B;**[!UICONTROL 保存配置的 API]**。
+1. 在&#x200B;**[!UICONTROL 选择产品配置文件]**&#x200B;页面上，选择&#x200B;**[!UICONTROL 智能内容服务]**。单击 **[!UICONTROL 保存配置的API]**.
 
    页面会显示有关配置的更多信息。保持此页面处于打开状态，以复制这些值并将其添加到中 [!UICONTROL 资产智能标记服务设置] 中的云配置 [!DNL Experience Manager] 以配置智能标记。
 
@@ -146,10 +147,10 @@ ht-degree: 25%
 
    | [!UICONTROL 资产智能标记服务设置] | [!DNL Adobe Developer Console] 集成字段 |
    |--- |--- |
-   | [!UICONTROL API 键] | [!UICONTROL 客户端ID] |
-   | [!UICONTROL 技术帐户 ID] | [!UICONTROL 技术帐户ID] |
-   | [!UICONTROL 组织 ID] | [!UICONTROL 组织 ID] |
-   | [!UICONTROL 客户端密钥] | [!UICONTROL 客户端密码] |
+   | [!UICONTROL Api密钥] | [!UICONTROL 客户端ID] |
+   | [!UICONTROL 技术帐户ID] | [!UICONTROL 技术帐户ID] |
+   | [!UICONTROL 组织ID] | [!UICONTROL 组织ID] |
+   | [!UICONTROL 客户端密码] | [!UICONTROL 客户端密码] |
 
 ### 验证配置 {#validate-the-configuration}
 
@@ -177,7 +178,7 @@ ht-degree: 25%
 
    ![在 DAM 更新资产工作流中的流程缩略图步骤之后添加智能标记资产步骤](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *图：在 DAM 更新资产工作流中的流程缩略图步骤之后添加智能标记资产步骤。*
+   *图：在中的流程缩略图步骤之后添加智能标记资产步骤 [!UICONTROL DAM更新资产] 工作流。*
 
 1. 在编辑模式下打开该步骤。在&#x200B;**[!UICONTROL 高级设置]**&#x200B;下，确保选中&#x200B;**[!UICONTROL 处理程序前进]**&#x200B;选项。
 
@@ -200,7 +201,7 @@ ht-degree: 25%
 
    *图：配置DAM更新资产工作流以添加智能标记步骤并选择忽略智能标记标志。*
 
-1. 单击&#x200B;**[!UICONTROL 确定]**，以关闭流程步骤，然后保存工作流。
+1. 单击 **[!UICONTROL 确定]** 以关闭流程步骤，然后保存工作流。
 
 ## 培训智能内容服务 {#training-the-smart-content-service}
 
@@ -238,7 +239,7 @@ ht-degree: 25%
 
 ![说明性图像以说明培训准则](/help/assets/assets/do-not-localize/distraction.png)
 
-**完整性：**&#x200B;如果图像符合多个标记的条件，请在包含培训图像之前添加所有适用的标记。例如，对于 `raincoat` 和 `model-side-view` 等标记，在将其加入培训之前，在符合条件的资产上添加这两个标记。
+**完整性：**&#x200B;如果图像符合多个标记的条件，请在包含培训图像之前添加所有适用的标记。例如，对于标记，如 `raincoat` 和 `model-side-view`，在将其加入培训之前，在符合条件的资产上添加这两个标记。
 
 ![说明性图像以说明培训准则](/help/assets/assets/do-not-localize/completeness.png)
 

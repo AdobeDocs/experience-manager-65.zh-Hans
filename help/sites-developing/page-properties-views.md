@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '475'
 ht-degree: 43%
@@ -68,14 +69,14 @@ ht-degree: 43%
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   但是，您 ***必须*** 不会更改中的任何内容 `/libs` 路径。
+   >但是，您 ***必须*** 不会更改中的任何内容 `/libs` 路径。
    >
-   这是因为 `/libs` 下次升级实例时将被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
+   >这是因为 `/libs` 下次升级实例时将被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
    >
-   建议用于配置和其他更改的方法是：
+   >建议用于配置和其他更改的方法是：
    >
-   1. 重新创建所需项目(即，它存在于 `/libs`)，在 `/apps`
-   1. 在中进行任何更改 `/apps`
+   >1. 重新创建所需项目(即，它存在于 `/libs`)，在 `/apps`
+   >1. 在中进行任何更改 `/apps`
 
 1. 将 `basic` 上的 `path` 属性设置为指向基本选项卡的覆盖（另请参阅下一步）。例如：
 
@@ -99,7 +100,7 @@ ht-degree: 43%
 
 >[!NOTE]
 >
-配置页面属性以用于Live Copies时，请参阅 [配置页面属性上的MSM锁定](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) 以了解更多详细信息。
+>配置页面属性以用于Live Copies时，请参阅 [配置页面属性上的MSM锁定](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) 以了解更多详细信息。
 
 ## 页面属性的示例配置 {#sample-configuration-of-page-properties}
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1832'
-ht-degree: 2%
+source-wordcount: '1833'
+ht-degree: 1%
 
 ---
 
@@ -62,12 +63,12 @@ ht-degree: 2%
   </tr>
   <tr>
    <td> colsValue / cv<br /> </td>
-   <td> 字符串[]</td>
+   <td> String[]</td>
    <td> 搜索的属性（colsSelection中的选中值显示为复选框）</td>
   </tr>
   <tr>
    <td> extraCols / ec<br /> </td>
-   <td> 字符串[]</td>
+   <td> String[]</td>
    <td> 额外的搜索属性（显示在逗号分隔的文本字段中）</td>
   </tr>
   <tr>
@@ -77,7 +78,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td> colsSelection / cs<br /> </td>
-   <td> 字符串[]</td>
+   <td> String[]</td>
    <td> 搜索属性选择（显示为复选框）</td>
   </tr>
   <tr>
@@ -273,7 +274,7 @@ ht-degree: 2%
    <td>定义</td>
   </tr>
   <tr>
-   <td>rootPath</td>
+   <td>根路径</td>
    <td>搜索根路径</td>
   </tr>
   <tr>
@@ -514,7 +515,7 @@ CSS和只读列
 
 **强制位置**
 
-强制位置元数据forcedPosition允许您指定列在网格中的放置位置：0是第一个位置，而 &lt;number of=&quot;&quot; columns=&quot;&quot;>-1是最后一个位置。 任何其他值将被忽略。 
+强制位置元数据forcedPosition允许您指定列在网格中的放置位置：0是第一个位置，而 &lt;number of=&quot;&quot; columns=&quot;&quot;>-1是最后一个位置。 任何其他值将被忽略。
 
 在前面的示例中，选择列是第一列，即forcedPosition=&quot;0&quot;。
 
@@ -564,7 +565,7 @@ CSS和只读列
 
 * 值： &lt;value>
 
-  示例: 12123
+  示例： 12123
 
 servlet需要知道catalogCode属性的存储位置。
 

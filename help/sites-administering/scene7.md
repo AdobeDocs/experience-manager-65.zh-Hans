@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5425'
 ht-degree: 0%
@@ -99,23 +100,23 @@ Dynamic MediaExperience Manager是直接在Experience Manager平台中统一的D
     <tr>
     <td>不熟悉Sites和Dynamic Media</td>
     <td>将资源上传至Experience Manager，并使用Experience ManagerDynamic Media组件在站点页面上创作资源</td>
-    <td><p>开启</p> <p>（请参阅步骤3）</p> </td>
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">开启</a></td>
+    <td><p>在</p> <p>（请参阅步骤3）</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">在</a></td>
     <td>关闭</td>
     <td>关闭</td>
     </tr>
     <tr>
     <td>零售业中，以及初次接触网站和Dynamic Media</td>
     <td>将非产品资源上传到Experience Manager以进行管理和交付。 将产品资源上传到Dynamic Media Classic，并使用Experience Manager和组件中的Dynamic Media Classic内容浏览器在站点上创作产品详细信息页面。</td>
-    <td><p>开启</p> <p>（请参阅步骤3）</p> </td>
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">开启</a></td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">开启</a></td>
+    <td><p>在</p> <p>（请参阅步骤3）</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">在</a></td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">在</a></td>
     <td>关闭</td>
     </tr>
     <tr>
     <td>初次使用Assets和Dynamic Media</td>
     <td>将资源上传到Experience Manager Assets并使用从Dynamic Media发布的URL/嵌入代码</td>
-    <td><p>开启</p> <p>（请参阅步骤3）</p> </td>
+    <td><p>在</p> <p>（请参阅步骤3）</p> </td>
     <td>关闭</td>
     <td>关闭</td>
     <td>关闭</td>
@@ -123,9 +124,9 @@ Dynamic MediaExperience Manager是直接在Experience Manager平台中统一的D
     <tr>
     <td>初次使用Dynamic Media和Templating</td>
     <td>将Dynamic Media用于成像和视频。 在Dynamic Media Classic中创作图像模板，并使用Dynamic Media Classic内容查找器在Sites页面中包含模板。</td>
-    <td><p>开启</p> <p>（请参阅步骤3）</p> </td>
-    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">开启</a></td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">开启</a></td>
+    <td><p>在</p> <p>（请参阅步骤3）</p> </td>
+    <td><a href="/help/assets/adding-dynamic-media-assets-to-pages.md">在</a></td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">在</a></td>
     <td>关闭</td>
     </tr>
     <tr>
@@ -133,7 +134,7 @@ Dynamic MediaExperience Manager是直接在Experience Manager平台中统一的D
     <td>将资源上传到Dynamic Media Classic并使用Experience ManagerDynamic Media Classic内容浏览器在站点页面上搜索和创作资源</td>
     <td>关闭</td>
     <td>关闭</td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">开启</a></td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">在</a></td>
     <td>关闭</td>
     </tr>
     <tr>
@@ -141,16 +142,16 @@ Dynamic MediaExperience Manager是直接在Experience Manager平台中统一的D
     <td>将资源上传到DAM并自动发布到Dynamic Media Classic以进行交付。 使用Experience ManagerDynamic Media Classic内容浏览器在站点页面上搜索和创作资源。</td>
     <td>关闭</td>
     <td>关闭</td>
-    <td><a href="/help/assets/scene7.md#scene-content-browser">开启</a></td>
-    <td><p><a href="#configuringautouploadingfromaemassets">开启</a></p> <p>（请参阅步骤4）</p> </td>
+    <td><a href="/help/assets/scene7.md#scene-content-browser">在</a></td>
+    <td><p><a href="#configuringautouploadingfromaemassets">在</a></p> <p>（请参阅步骤4）</p> </td>
     </tr>
     <tr>
     <td>现有Dynamic Media Classic客户和刚开始使用资产的人</td>
     <td><p>将资源上传到Experience Manager并使用Dynamic Media生成演绎版以供下载/共享。 自动将Experience Manager资源发布到Dynamic Media Classic以进行交付。</p> <p><strong>重要提示：</strong> 发生重复处理，在Experience Manager中生成的呈现版本不会同步到Dynamic Media Classic</p> </td>
-    <td><p>开启</p> <p>（请参阅步骤3）</p> </td>
+    <td><p>在</p> <p>（请参阅步骤3）</p> </td>
     <td>关闭</td>
     <td>关闭</td>
-    <td><p><a href="#configuringautouploadingfromaemassets">开启</a></p> <p>（请参阅步骤4）</p> </td>
+    <td><p><a href="#configuringautouploadingfromaemassets">在</a></p> <p>（请参阅步骤4）</p> </td>
     </tr>
     </tbody>
     </table>
@@ -377,7 +378,7 @@ Adobe建议通过让根文件夹仅指向子文件夹，而不是指向整个公
 
 >[!NOTE]
 >
-从Experience Manager Assets自动上传到Dynamic Media Classic的最大文件大小为500 MB。
+>从Experience Manager Assets自动上传到Dynamic Media Classic的最大文件大小为500 MB。
 
 **要从Experience Manager Assets自动上传，请执行以下操作：**
 
@@ -387,7 +388,7 @@ Adobe建议通过让根文件夹仅指向子文件夹，而不是指向整个公
 
    >[!NOTE]
    >
-   请参阅 [配置推送到Dynamic Media Classic的资源状态（已发布/未发布）](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) 有关以未发布状态将资产推送到Dynamic Media Classic的信息。
+   >请参阅 [配置推送到Dynamic Media Classic的资源状态（已发布/未发布）](#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) 有关以未发布状态将资产推送到Dynamic Media Classic的信息。
 
    ![screen_shot_2018-03-15at52501pm](assets/screen_shot_2018-03-15at52501pm.jpg)
 
@@ -398,8 +399,8 @@ Adobe建议通过让根文件夹仅指向子文件夹，而不是指向整个公
 
    >[!NOTE]
    >
-   * 在自动化后添加资源时，如果它们未放置在CQ目标文件夹中，则不会上传到Dynamic Media Classic。
-   * Experience Manager在将所有元数据上传到Dynamic Media Classic之前将其嵌入为XMP，因此元数据节点上的所有属性在Dynamic Media Classic as XMP中均可用。
+   >* 在自动化后添加资源时，如果它们未放置在CQ目标文件夹中，则不会上传到Dynamic Media Classic。
+   >* Experience Manager在将所有元数据上传到Dynamic Media Classic之前将其嵌入为XMP，因此元数据节点上的所有属性在Dynamic Media Classic as XMP中均可用。
 
 ### 配置推送到Dynamic Media Classic的资源状态（已发布/未发布） {#configuring-the-state-published-unpublished-of-assets-pushed-to-scene}
 
@@ -424,7 +425,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 仅当在Experience
 
 >[!NOTE]
 >
-如果您的安装环境是UNIX® 64位操作系统，请参见 [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) 关于您必须设置的其他配置选项。
+>如果您的安装环境是UNIX® 64位操作系统，请参见 [https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html) 关于您必须设置的其他配置选项。
 
 #### 推送处于未发布状态的资产的已知限制  {#known-limitations-for-pushing-assets-in-unpublished-state}
 
@@ -435,13 +436,13 @@ Dynamic Media Classic资源仍可通过安全预览使用。 仅当在Experience
 
 >[!NOTE]
 >
-如果您希望立即发布资产，最佳做法是保留 **[!UICONTROL 启用安全预览]** 设置为 **[!UICONTROL 立即]** 并使用 **[!UICONTROL 启用自动上传]** 功能。
+>如果您希望立即发布资产，最佳做法是保留 **[!UICONTROL 启用安全预览]** 设置为 **[!UICONTROL 立即]** 并使用 **[!UICONTROL 启用自动上传]** 功能。
 
 ### 将推送到Dynamic Media Classic的资源状态设置为未发布 {#setting-the-state-of-assets-pushed-to-scene-as-unpublished}
 
 >[!NOTE]
 >
-如果用户在Experience Manager中发布资源，则会自动将S7资源触发到生产/实时资源（资源不再处于安全预览/取消发布状态）。
+>如果用户在Experience Manager中发布资源，则会自动将S7资源触发到生产/实时资源（资源不再处于安全预览/取消发布状态）。
 
 **要将推送到Dynamic Media Classic的资源状态设置为未发布，请执行以下操作：**
 
@@ -513,7 +514,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 仅当在Experience
 
    >[!NOTE]
    >
-   如果只有一个配置，请选择 **[!UICONTROL 默认配置]** 复选框不起作用。
+   >如果只有一个配置，请选择 **[!UICONTROL 默认配置]** 复选框不起作用。
 
 ### 配置临时文件夹 {#configuring-the-ad-hoc-folder}
 
@@ -570,11 +571,11 @@ Dynamic Media Classic资源仍可通过安全预览使用。 仅当在Experience
 
    >[!NOTE]
    >
-   如果要上传PSD文件，并且希望使用图层提取将它们作为模板处理，请在 **[!UICONTROL jobParam]** 值字段：
+   >如果要上传PSD文件，并且希望使用图层提取将它们作为模板处理，请在 **[!UICONTROL jobParam]** 值字段：
    >
-   `process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
+   >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   确保PSD文件具有“图层”。 如果它严格是一个图像或带有蒙版的图像，则它作为图像处理，因为没有要处理的图层。
+   >确保PSD文件具有“图层”。 如果它严格是一个图像或带有蒙版的图像，则它作为图像处理，因为没有要处理的图层。
 
 1. 在“CRXDE Lite”页面的左上角，选择 **[!UICONTROL 全部保存]**.
 
@@ -616,6 +617,6 @@ Dynamic Media Classic资源仍可通过安全预览使用。 仅当在Experience
 
 >[!CAUTION]
 >
-从现有Dynamic Media Classic公司帐户导入资源可能需要很长时间才能在Experience Manager中显示。 确保在Dynamic Media Classic中指定了没有太多资源的文件夹。 例如，根文件夹通常包含太多资产。
+>从现有Dynamic Media Classic公司帐户导入资源可能需要很长时间才能在Experience Manager中显示。 确保在Dynamic Media Classic中指定了没有太多资源的文件夹。 例如，根文件夹通常包含太多资产。
 >
-如果要测试集成，请将根文件夹仅指向子文件夹，而不是整个公司。
+>如果要测试集成，请将根文件夹仅指向子文件夹，而不是整个公司。

@@ -7,9 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '5393'
+source-wordcount: '5333'
 ht-degree: 0%
 
 ---
@@ -652,7 +653,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 **Weblogic**
 
-以下示例显示 jndi 的属性文件的内容，用于连接到 WebLogic 上部署的 AEM Forms。
+以下示例显示用于连接到部署在 WebLogic 上的 AEM 表单的 jndi.properties 文件的内容。
 
 ```ini
  java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory
@@ -661,7 +662,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 **Jboss**
 
-以下示例显示 jndi 的属性文件的内容，用于连接到 JBoss 上部署的 AEM Forms。
+以下示例显示了用于连接到部署在 JBoss 上的 AEM 表单的 jndi.properties 文件的内容。
 
 ```ini
  java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory
@@ -675,11 +676,11 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
 
 **另请参阅**
 
-[包括 AEM Forms Java Libraries 文件](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[包括 AEM 表单 Java 库文件](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [使用 Java API 将数据传递到 AEM Forms 服务](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
 
-[使用 Java client 调用服务 Libraries](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
+[使用 Java 客户机库调用服务](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
 ## 使用 Java API 将数据传递到 AEM Forms 服务 {#passing-data-to-aem-forms-services-using-the-java-api}
 
@@ -825,9 +826,9 @@ A `com.adobe.idp.Document` 对象是Java可序列化的类型，因此可以通�
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
-C：/temp/input .pdf 文件必须位于客户端计算机上（而不是服务器计算机上）。 在客户端计算机上读取 URL，以及创建对象的位置 `com.adobe.idp.Document` 。
+c：/temp/input.pdf 文件必须位于客户端计算机上（而不是服务器计算机上）。 客户端计算机是读取 URL 和创建对象的位置 `com.adobe.idp.Document` 。
 
-**根据可从 URL 中访问的内容创建文档**
+**根据可通过 URL 访问的内容创建文档**
 
 ```java
  //Create a Document object based on a java.net.URL object
@@ -845,7 +846,7 @@ C：/temp/input .pdf 文件必须位于客户端计算机上（而不是服务�
 
 ### 处理返回的文档 {#handling-returned-documents}
 
-返回 PDF 文档（或其他数据类型，如 XML 数据）的服务操作会返回一个 `com.adobe.idp.Document` 对象。 收到 `com.adobe.idp.Document` 对象后，您可以将其转化为以下格式：
+将 PDF 文档（或其他数据类型，如 XML 数据）作为输出值的服务操作将返回一个 `com.adobe.idp.Document` 对象。 收到 `com.adobe.idp.Document` 对象后，可以将其转换为以下格式：
 
 * 一个 `java.io.File` 对象
 * 一个 `java.io.InputStream` 对象
@@ -966,18 +967,18 @@ AEM Forms服务操作可以通过使用服务的强类型API（称为Java客户�
 
 >[!NOTE]
 >
->要说明如何使用Java API调用服务，存储库服务的 `writeResource` 操作被调用。 此操作会将新资源放入存储库。
+>要说明如何使用Java API调用服务，存储库服务的 `writeResource` 操作被调用。 此操作会将新资源放入存储库中。
 
-您可以使用 Java client Libraries 和执行以下步骤来调用存储库服务：
+通过使用 Java 客户机库并执行以下步骤，可以调用存储库服务：
 
-1. 在 Java 项目的类路径中包含客户端 JAR 文件，例如 adobe-repository-client。 有关这些文件位置的信息，请参阅 [ 包含 AEM Forms Java Libraries 文件 ](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) 。
+1. 在 Java 项目的类路径中包含客户机 JAR 文件，如adobe-repository-client.jar。 有关这些文件的位置的信息，请参阅 [包括AEM Forms Java库文件](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 1. 设置调用服务所需的连接属性。
 1. 创建 `ServiceClientFactory` 对象，方法是调用 `ServiceClientFactory` 对象的静态 `createInstance` 方法和传递 `java.util.Properties` 包含连接属性的对象。
-1. 创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。 `ResourceRepositoryClient`使用对象来调用存储库服务操作。
-1. `RepositoryInfomodelFactoryBean`通过使用其构造函数并通过 `null` 来创建对象。此对象可让您创建 `Resource` 表示添加到存储库中的内容的对象。
-1. `Resource`通过调用 `RepositoryInfomodelFactoryBean` 对象的 `newImage` 方法并传递以下值来创建对象：
+1. 创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。 `ResourceRepositoryClient`使用该对象调用存储库服务操作。
+1. `RepositoryInfomodelFactoryBean`使用对象的构造函数创建对象并传递 `null`.此对象允许您创建一个 `Resource` 对象，该对象表示添加到存储库的内容。
+1. `Resource`通过调用`RepositoryInfomodelFactoryBean`对象的方法`newImage`并传递以下值来创建对象：
 
-   * 指定 `new Id()` 的唯一 ID 值。
+   * 通过指定 `new Id()`的唯一 ID 值。
    * 通过指定唯一的UUID值 `new Lid()`.
    * 资源的名称。 您可以指定XDP文件的文件名。
 

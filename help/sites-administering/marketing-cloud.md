@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 5%
+source-wordcount: '825'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +50,7 @@ ht-degree: 5%
 
 ## 与 Adobe Target 集成 {#integrating-with-adobe-target}
 
-[营销人员使用 Adobe Target 来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。](https://business.adobe.com/products/target/adobe-target.html)
+[Adobe Target](https://business.adobe.com/products/target/adobe-target.html) 营销人员用来设计和执行在线测试、创建动态受众区段（基于行为）以及自动定位内容和在线体验。
 
 如今，在线消费者不断演变的需求，期待来自各种网站和内容来源的相关内容，甚至个性化内容，以供他们选择。 要吸引在线受众，在线营销人员必须快速确定哪些选件和内容与其受众相关且具有吸引力。 凭借这些知识，营销人员需要能够不断改进其站点并将适当的内容定位到不同的受众。
 

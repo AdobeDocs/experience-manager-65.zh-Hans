@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '591'
 ht-degree: 1%
 
 ---
@@ -33,7 +34,8 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->LetterInstanceService是一种OSGI服务，可以使用Java™类中的@Reference或sling.getService(LetterInstanceService)检索其实例。 类)。
+>LetterInstanceService是一种OSGI服务，可以在Java中使用@Reference检索其实例™
+>类或sling.getService(LetterInstanceService)。 类)。
 
 ### 使用getAllLetterInstances {#using-nbsp-getallletterinstances}
 
@@ -145,7 +147,7 @@ CCR UI支持cmLetterInstanceId参数，该参数可用于重新加载书信。
 
 >[!NOTE]
 >
-重新加载通信时，不必指定cmLetterId或cmLetterName/State/Version，因为提交的数据已包含有关重新加载的通信的所有详细信息。 RandomNo用于避免浏览器缓存问题，您可以将时间戳用作随机数。
+>重新加载通信时，不必指定cmLetterId或cmLetterName/State/Version，因为提交的数据已包含有关重新加载的通信的所有详细信息。 RandomNo用于避免浏览器缓存问题，您可以将时间戳用作随机数。
 
 ### 打开已提交的书信实例 {#opening-submitted-letter-instance}
 

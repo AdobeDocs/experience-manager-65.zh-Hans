@@ -2,10 +2,11 @@
 title: 默认组件
 description: Adobe Experience Manager附带多种现成的组件，这些组件为网站作者提供了全面的功能。
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '425'
-ht-degree: 37%
+source-wordcount: '420'
+ht-degree: 34%
 
 ---
 
@@ -32,7 +33,8 @@ Adobe Experience Manager (AEM)附带多种现成的组件，这些组件为网�
 
 * [编辑内容 – 全屏模式](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-有关将组件添加到页面的更多信息，请参阅[编辑页面内容。](/help/sites-authoring/editing-content.md)组件根据称为组件组的各种类别进行排序。 此类组件组的示例包括：
+有关将组件添加到页面的详细信息，请参阅 [编辑页面内容](/help/sites-authoring/editing-content.md).
+组件根据称为组件组的各种类别进行排序。 此类组件组的示例包括：
 
 * **We.Retail**：包括代理用于的核心组件 [We.Retail参考实施](/help/sites-developing/we-retail.md).
 

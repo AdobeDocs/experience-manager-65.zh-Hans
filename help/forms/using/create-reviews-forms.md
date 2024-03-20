@@ -7,7 +7,8 @@ topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 9%
@@ -23,7 +24,7 @@ ht-degree: 9%
 | AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html) |
 | AEM 6.5 | 本文 |
 
-## 审核 {#review}
+## 审查 {#review}
 
 审阅是一种允许一个或多个审阅人对表单进行评论的机制。
 

@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ AEM Forms允许您将表单另存为草稿。 草稿功能允许您维护正在�
 
 默认情况下，AEM Forms会将与表单草稿和提交关联的用户数据存储在 `/content/forms/fp` 节点。 此外，AEM Forms Portal组件提供数据服务，您可以使用这些数据服务自定义存储草稿和提交的用户数据的实施。 例如，您可以将用户数据存储到数据存储中。
 
-## 前提条件  {#prerequisites}
+## 先决条件  {#prerequisites}
 
 * 启用 [Forms Portal组件](/help/forms/using/enabling-forms-portal-components.md)
 * 创建 [Forms Portal页面](/help/forms/using/creating-form-portal-page.md)

@@ -2,7 +2,8 @@
 title: 如何在JEE服务器群集中配置AEM Forms并对其进行故障排除
 description: 了解如何在JEE服务器群集上配置Adobe Experience Manager (AEM) Forms并对其进行故障排除。
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3945'
 ht-degree: 0%

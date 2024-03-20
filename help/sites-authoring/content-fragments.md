@@ -7,10 +7,11 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1132'
-ht-degree: 67%
+source-wordcount: '1138'
+ht-degree: 66%
 
 ---
 
@@ -124,7 +125,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 * **段落**：指定要包含的段落范围：
 
-   * **所有**
+   * **全部**
    * **范围**：例如 `1`、`3-5`、`9-*`
 
       * **将标题处理为它们自己的段落**
@@ -161,7 +162,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 >
 >您还可以[在片段本身中插入可视资源（图像）](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
 >
->在片段本身中插入的可视资源会附加到片段中的前一段落后面。这意味着无法在可视资源与前一段落之间放置中间内容。
+>在片段本身中插入的可视资源会附加到片段中的前一段落后面。这意味着无法在可视资产与前一段落之间放置中间内容。
 
 >[!CAUTION]
 >

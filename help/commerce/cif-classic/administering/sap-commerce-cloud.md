@@ -5,9 +5,10 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1574'
 ht-degree: 1%
 
 ---
@@ -38,7 +39,7 @@ ht-degree: 1%
 1. **打开编辑器** 对于 **clothescatalog的Solr配置示例**.
 
 1. 下 **目录版本** 使用 **添加目录版本** 添加 `outdoors-Staged` 和 `outdoors-Online` 到名单上。
-1. **保存配置。**
+1. **保存** 配置。
 1. 打开 **SOLR项类型** 添加 **SOLR排序** 到 `ClothesVariantProduct`：
 
    * 相关性（“相关性”，分数）
@@ -83,7 +84,7 @@ ht-degree: 1%
 
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
-1. **保存更改。**
+1. **保存** 这些变化。
 1. 再次从 **SOLR项类型**，调整 `price` Facet的屏幕截图如下所示。 与 `category`，双击 `price` 以打开 **索引属性** 选项卡：
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
@@ -92,7 +93,7 @@ ht-degree: 1%
 
    ![chlimage_1-41](/help/sites-administering/assets/chlimage_1-41a.png)
 
-1. **保存更改。**
+1. **保存** 这些变化。
 1. 打开 **系统**， **Facet搜索**，则 **索引器操作向导**. 启动cronjob：
 
    * **索引器操作**： `full`

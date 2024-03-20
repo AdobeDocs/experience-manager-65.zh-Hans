@@ -3,7 +3,8 @@ title: 使用布局模式调整自适应表单的组件大小
 description: 使用在布局模式下可用的响应式网格定义组件的位置
 feature: Adaptive Forms, Foundation Components
 exl-id: 5cf76cb1-c92c-4aed-9945-37494fef2d29
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1122'
 ht-degree: 6%

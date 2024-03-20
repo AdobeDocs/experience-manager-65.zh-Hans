@@ -5,7 +5,8 @@ topic-tags: installing
 docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 1%
@@ -63,7 +64,7 @@ AEM Forms Interactive Communications在AEM Forms的创作实例上运行管理�
   </tr>
   <tr>
    <td>libSM</td>
-   <td>zlib</td>
+   <td>兹利布</td>
    <td>libICE</td>
    <td>libuuid</td>
   </tr>
@@ -89,10 +90,10 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该软件包包含A
 1. 打开 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登录 Software Distribution。
 1. 选择 **[!UICONTROL 标题菜单中的 Adobe Experience Manager]** 。
 1. **[!UICONTROL 在“筛选器]**”部分中：
-   1. 从&#x200B;**[!UICONTROL “解决方案]**”下拉列表中选择“**[!UICONTROL 表单]**”。
+   1. 从“解决方案&#x200B;]**”下拉列表中选择**[!UICONTROL “表单&#x200B;]**”。**[!UICONTROL 
    2. 选择包的版本和类型。 您还可以使用“ **[!UICONTROL 搜索下载]** ”选项来筛选结果。
 1. 选择适用于您的操作系统的包名称，然后选择 **[!UICONTROL 接受EULA条款]**，并选择 **[!UICONTROL 下载]**.
-1. 打开 [程序包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  并单击“上传程序包” **[!UICONTROL 以上传程序包]** 。
+1. 打开[程序包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)并单击“上传程序包&#x200B;]**”**[!UICONTROL &#x200B;以上传程序包。
 1. 选择程序包，然后单击“安装&#x200B;]**”。**[!UICONTROL 
 
    您还可以通过AEM [Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 文章中列出的直接链接下载包。
@@ -144,7 +145,7 @@ AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCast
 
 在AEM 6.5 Forms中创建客户通信的默认和推荐方法是交互式通信。 如果您已从以前的版本升级或迁移，并计划继续使用信件（通信管理），请安装 [AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
 
-AEMFD 兼容性包允许您在 AEM 6.5 表单上使用 AEM 6.4 表单、AEM 6.3 表单和 AEM 6.2 表单中的以下资源：
+通过AEMFD兼容包，您可以使用AEM 6.5 Forms上AEM 6.4 Forms、AEM 6.3 Forms和AEM 6.2 Forms中的以下资源：
 
 * 文档片段
 * 书信

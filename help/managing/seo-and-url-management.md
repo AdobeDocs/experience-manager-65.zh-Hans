@@ -5,10 +5,11 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager 6.5
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '3677'
-ht-degree: 67%
+source-wordcount: '3524'
+ht-degree: 65%
 
 ---
 
@@ -44,7 +45,7 @@ SEO（搜索引擎优化）已成为许多营销人员关注的重点。 因此�
    * 如果可用，请使用目录结构指示信息架构。
    * 如果无法使用目录结构，请在 URL 中使用 Sling 选择器而非查询字符串。除了Sling选择器提供的SEO值之外，这些选择器还使得可为Dispatcher缓存页面。
 
-* URL越易懂越好。在URL中加入关键字可发挥作用。
+* URL越易懂越好。 在URL中加入关键字可发挥作用。
 
    * 在页面上使用选择器时，首选提供语义值的选择器。
    * 如果人们无法读取您的 URL，则搜索引擎也无法读取。

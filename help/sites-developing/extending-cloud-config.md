@@ -1,19 +1,20 @@
 ---
-title: Cloud Service 配置
+title: 云服务配置
 description: 您可以扩展现有实例以创建您自己的配置
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '552'
 ht-degree: 3%
 
 ---
 
-# Cloud Service 配置{#cloud-service-configurations}
+# 云服务配置{#cloud-service-configurations}
 
 配置旨在提供存储服务配置的逻辑和结构。
 
@@ -24,7 +25,7 @@ ht-degree: 3%
 开发配置时采用的原则基于以下概念：
 
 * 服务/适配器用于检索配置。
-* 配置（例如，属性/段落）继承自父项。
+* 配置（例如属性/段落）继承自父项。
 * 按路径从Analytics节点引用。
 * 易于扩展。
 * 能够灵活地满足更复杂的配置需求，例如 [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
@@ -36,11 +37,11 @@ ht-degree: 3%
 
 `/etc/cloudservices`。
 
-对于每种类型的配置，都会提供模板和组件。 这使得在自定义后能够满足大多数需求的配置模板成为可能。
+对于每种类型的配置，都会提供模板和组件。 这使得在自定义之后拥有可满足大多数需求的配置模板成为可能。
 
 要为新服务提供配置，请执行以下操作：
 
-* 在中创建服务区
+* 在中创建服务页面
 
   `/etc/cloudservices`
 
@@ -57,7 +58,7 @@ ht-degree: 3%
 
 `cq/cloudserviceconfigs/components/configpage`
 
-服务提供商还应提供以下服务页：
+服务提供商还应提供以下服务页面：
 
 `/etc/cloudservices/<service-name>`
 
@@ -90,7 +91,7 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 
 ### 组件 {#components}
 
-您的组件应扩展基本组件：
+您的组件应该扩展基本组件：
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -117,7 +118,7 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-配置存储在子节点下 `jcr:content`.
+这些配置存储在子节点下 `jcr:content`.
 
 * 在对话框中定义的固定属性应存储在 `jcr:node` 直接。
 * 动态元素(使用 `parsys` 或 `iparsys`)使用子节点存储组件数据。
@@ -137,32 +138,32 @@ propertyname
 
 ### AEM集成 {#aem-integration}
 
-可用的服务列在 **Cloud Services** 的选项卡 **页面属性** 对话框（继承自的任何页面的） `foundation/components/page` 或 `wcm/mobile/components/page`)。
+可用的服务列在 **Cloud Service** 选项卡 **页面属性** 对话框（继承自的任何页面） `foundation/components/page` 或 `wcm/mobile/components/page`)。
 
 该选项卡还提供：
 
-* 可启用服务的位置的链接
-* 从路径字段中选择配置（服务的子节点）
+* 指向可启用服务的位置的链接
+* 从路径字段选择配置（服务的子节点）
 
 #### 密码加密 {#password-encryption}
 
-存储服务的用户凭据时，所有密码都应加密。
+存储服务的用户凭据时，应对所有密码进行加密。
 
-您可以通过添加隐藏表单字段来实现此目的。 此字段应具有注释 `@Encrypted` 在属性名称中；即 `password` 字段名称将写成：
+您可以通过添加隐藏表单字段来实现这一点。 此字段应当具有注释 `@Encrypted` 在属性名称中；即 `password` 字段名称将写为：
 
 `password@Encrypted`
 
-然后，将自动对属性进行加密(使用 `CryptoSupport` service)，由 `EncryptionPostProcessor`.
+然后，将自动对属性进行加密(使用 `CryptoSupport` 服务)，由 `EncryptionPostProcessor`.
 
 >[!NOTE]
 >
->这类似于标准 ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` 注释。
+>这与标准类似 ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` 注释。
 
 >[!NOTE]
 >
->默认情况下， `EcryptionPostProcessor` 仅加密 `POST` 向发出的请求 `/etc/cloudservices`.
+>默认情况下， `EcryptionPostProcessor` 仅加密 `POST` 向以下对象发出的请求： `/etc/cloudservices`.
 
-#### “服务”页jcr：content节点的其他属性 {#additional-properties-for-service-page-jcr-content-nodes}
+#### 服务页jcr：content节点的其他属性 {#additional-properties-for-service-page-jcr-content-nodes}
 
 <table>
  <tbody>
@@ -172,7 +173,7 @@ propertyname
   </tr>
   <tr>
    <td>componentreference</td>
-   <td>自动包含在页面中的组件的引用路径。<br /> 这用于其他功能和JS包含。<br /> 这包括页面上的组件，其中<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 包含(通常早于 <code>body</code> 标记)。<br /> 对于Adobe Analytics和Adobe Target，我们使用它来包含其他功能，例如用于跟踪访客行为的JavaScript调用。</td>
+   <td>要自动包含在页面中的组件的引用路径。<br /> 这用于其他功能和JS包含项。<br /> 这包括页面上的组件，其中<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 包含在内(通常在 <code>body</code> 标记)。<br /> 对于Adobe Analytics和Adobe Target，我们使用此项来包含其他功能，例如用于跟踪访客行为的JavaScript调用。</td>
   </tr>
   <tr>
    <td>说明</td>
@@ -195,11 +196,11 @@ propertyname
    <td>服务网站的URL。</td>
   </tr>
   <tr>
-   <td>serviceUrlLabel</td>
+   <td>serviceURL标签</td>
    <td>服务URL标签。</td>
   </tr>
   <tr>
-   <td>thumbnailPath</td>
+   <td>thumbnailpath</td>
    <td>服务的缩略图路径。</td>
   </tr>
   <tr>

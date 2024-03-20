@@ -7,9 +7,10 @@ topic-tags: personalization
 content-type: reference
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '5004'
+source-wordcount: '4913'
 ht-degree: 2%
 
 ---
@@ -410,7 +411,7 @@ ContextHub.Store.JSONPStore扩展 [ContextHub.Store.Core](/help/sites-developing
    * port： (Number)服务的端口号。
    * secure： （字符串或布尔值）确定用于服务URL的协议：
 
-      * auto: //
+      * 自动： //
       * true： https://
       * false： https://
 
@@ -440,7 +441,7 @@ ContextHub.Store.JSONPStore扩展 [ContextHub.Store.Core](/help/sites-developing
 * **端口：** (Number)服务的端口号。
 * **安全：** （字符串或布尔值）确定用于服务URL的协议：
 
-   * auto: //
+   * 自动： //
    * true： https://
    * false： https://
 
@@ -477,7 +478,7 @@ A `string` 表示服务URL的值。
       * port： (Number)服务的端口号。
       * secure： （字符串或布尔值）确定用于服务URL的协议：
 
-         * auto: //
+         * 自动： //
          * true： https://
          * false： https://
 

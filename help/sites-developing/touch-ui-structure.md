@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 2%
+source-wordcount: '862'
+ht-degree: 1%
 
 ---
 
@@ -64,7 +65,7 @@ UI同时适用于移动设备和桌面设备，不过Adobe决定使用一种适�
 
 * **时间线**
 * **引用**
-* **过滤器**
+* **筛选**
 
 默认为 **仅内容** （隐藏边栏）。
 

@@ -2,10 +2,11 @@
 title: AEM Content and Commerce 2020版发行说明
 description: Adobe Experience Manager Content and Commerce 2020版发行说明。
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1352'
-ht-degree: 11%
+source-wordcount: '1257'
+ht-degree: 8%
 
 ---
 
@@ -89,7 +90,7 @@ ht-degree: 11%
 
 * 添加了痕迹导航组件以支持内容和商务页面。
 
-* 在页面属性上添加了商务选项卡，以显示登陆页面和体验片段的CIF属性。
+* 在页面属性上添加了商务选项卡，用于公开登陆页面和体验片段的CIF属性。
 
 * 改进了Searchbar组件，以支持显示占位符文本的选项
 

@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1339'
-ht-degree: 42%
+source-wordcount: '1257'
+ht-degree: 39%
 
 ---
 
@@ -104,7 +105,7 @@ GITHUB上的代码
 
 创作页面时，用户通常必须从资源（例如，页面、组件和资产）中进行选择。 这可以采用列表形式，例如，作者必须从中选择项目。
 
-为了使列表保持合理的大小并且与用例相关，可以通过自定义谓词的形式实施筛选条件。例如，如果 [`pathbrowser`Granite 组件用于允许用户选择特定资源的路径，则可以通过以下方式筛选所显示的路径：](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)[](/help/sites-developing/touch-ui-concepts.md#granite-ui)
+为了使列表保持合理的大小并且与用例相关，可以通过自定义谓词的形式实施筛选条件。例如，如果 [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui) 组件用于允许用户选择特定资源的路径，提供的路径可通过以下方式过滤：
 
 * 通过实施 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 界面来实施自定义谓词。
 * 指定谓词的名称，并在使用 `pathbrowser` 时引用该名称。
@@ -157,7 +158,7 @@ GITHUB上的代码
 
 1. 可以使用配置编辑器的其他配置详细信息 `config` 包含配置和 `plugin` 节点，以包含必要的插件配置详细信息。
 
-   以下是为图像组件的图像裁剪插件定义纵横比的示例。由于屏幕大小受限的可能性，裁切长宽比已移至全屏编辑器并且仅可在其中看到。
+   以下是为图像组件的图像裁剪插件定义长宽比的示例。 由于屏幕大小受限的可能性，裁切长宽比已移至全屏编辑器并且仅可在其中看到。
 
    ```xml
    <cq:inplaceEditing
@@ -189,7 +190,7 @@ GITHUB上的代码
 
 >[!NOTE]
 >
->例如，请参阅:
+>例如，请参阅：
 >`/libs/cq/gui/components/authoring/editors/clientlibs/core/js/editors/editorExample.js`
 
 1. 实施：

@@ -7,7 +7,8 @@ topic-tags: hTML5_forms
 discoiquuid: b8465471-0458-42d6-8209-8ba90f41154a
 feature: HTML5 Forms
 exl-id: c65f425b-b0bc-4ec7-ac56-7f24bd8b52d8
-source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '91'
 ht-degree: 0%

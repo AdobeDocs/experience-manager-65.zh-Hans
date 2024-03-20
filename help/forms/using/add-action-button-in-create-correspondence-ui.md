@@ -7,9 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1879'
+source-wordcount: '1854'
 ht-degree: 2%
 
 ---
@@ -22,7 +23,7 @@ ht-degree: 2%
 
 本文档中的方案说明如何在“创建通信”用户界面中创建按钮，以将信件共享为附加到电子邮件的审阅PDF。
 
-### 前提条件 {#prerequisites}
+### 先决条件 {#prerequisites}
 
 要完成此方案，您需要满足以下条件：
 

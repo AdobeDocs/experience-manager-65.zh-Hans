@@ -3,7 +3,8 @@ title: 翻译最佳实践
 description: 查找由Adobe工程和咨询团队编译的最佳实践，帮助您启动和运行翻译项目。
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 93%

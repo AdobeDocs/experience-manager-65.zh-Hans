@@ -5,10 +5,11 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '717'
-ht-degree: 2%
+source-wordcount: '712'
+ht-degree: 1%
 
 ---
 
@@ -45,7 +46,7 @@ ht-degree: 2%
 >
 >* 支持版本18.11及更高版本。
 >* 您需要Java™ 7来运行 [hybris 5服务器。](https://www.sap.com/products/crm.html)
-* hybris附加模块 [电信加速器](https://www.sap.com/products/crm.html)AEM扩展不支持。
+>* hybris附加模块 [电信加速器](https://www.sap.com/products/crm.html)AEM扩展不支持。
 >
 
 ### 带有hybris的电子商务所需的包 {#packages-needed-for-ecommerce-with-hybris}
@@ -91,11 +92,11 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
-使用hybris服务器需要单独的hybris许可证。
+>使用hybris服务器需要单独的hybris许可证。
 
 >[!NOTE]
 >
-对于开发人员， [API文档](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 也可供下载。
+>对于开发人员， [API文档](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 也可供下载。
 
 ### 下载并构建hybris服务器 {#download-and-build-your-hybris-server}
 
@@ -103,17 +104,17 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
-不支持5.5.1之前的Hybris版本。
+>不支持5.5.1之前的Hybris版本。
 
 >[!NOTE]
 >
-要完成此操作，您需要 [Groovy](https://groovy-lang.org/) 安装在系统上。
+>要完成此操作，您需要 [Groovy](https://groovy-lang.org/) 安装在系统上。
 
 1. 下载 **hybris Commerce Suite** 从hybris下载站点分发。
 
    >[!CAUTION]
    >
-   您需要一个帐户（来自hybris）才能访问此。
+   >您需要一个帐户（来自hybris）才能访问此。
 
 1. 将分发文件解压缩到所需的位置(称为 &lt;hybris-root-directory>)。
 1. 在命令行中，执行以下命令：
@@ -127,11 +128,11 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   运行时：
+   >运行时：
    >
-   `ant clean all`
+   >`ant clean all`
    >
-   按 `Return` 需要时。
+   >按 `Return` 需要时。
 
 1. 将以下文件下载到解压缩的hybris分发的根文件夹，
 
@@ -144,7 +145,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   对于hybris 5.6.0及更高版本，请使用以下setup.groovy。
+   >对于hybris 5.6.0及更高版本，请使用以下setup.groovy。
 
    5.6.0及更高版本
 
@@ -165,7 +166,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   根据您的系统，完成其中的几个步骤可能需要花费几分钟时间。
+   >根据您的系统，完成其中的几个步骤可能需要花费几分钟时间。
 
 1. 在浏览器中，导航到 **hybris管理控制台** 在：
 
@@ -177,7 +178,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   根据您的系统，这可能需要几分钟才能完成。
+   >根据您的系统，这可能需要几分钟才能完成。
 
 ### 设置Geometrixx Outdoors商店 {#setup-the-geometrixx-outdoors-store}
 

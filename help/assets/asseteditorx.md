@@ -5,10 +5,11 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '687'
-ht-degree: 13%
+source-wordcount: '653'
+ht-degree: 12%
 
 ---
 
@@ -196,7 +197,7 @@ Geometrixx中包含以下示例页面：
    </div>
    ```
 
-1. 为了使组件可用，您需要能够对其进行编辑。要使组件可编辑，请在CRXDE Lite中添加一个节点 `cq:editConfig` 主要类型的 `cq:EditConfig`. 为了删除段落，请添加带有单个值 `cq:actions` 的多值属性 `DELETE`。
+1. 为了使组件可用，您需要能够对其进行编辑。要使组件可编辑，请在CRXDE Lite中添加一个节点 `cq:editConfig` 主要类型的 `cq:EditConfig`. 为了能够删除段落，请添加多值属性 `cq:actions` 单个值为 `DELETE`.
 
 1. 导航到浏览器，并在示例页面中导航(例如， `asseteditor.html`)切换到设计模式并为段落系统启用新组件。
 

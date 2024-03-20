@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 47%
@@ -170,7 +171,7 @@ ht-degree: 47%
 <table>
  <tbody>
   <tr>
-   <th><strong>资产类型</strong></th>
+   <th><strong>资源类型</strong></th>
    <th><strong>结果组件类型</strong></th>
   </tr>
   <tr>

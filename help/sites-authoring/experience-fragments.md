@@ -2,7 +2,8 @@
 title: 体验片段
 description: Adobe Experience Manager Sites创作中的体验片段。
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: f60795363b977fa74361fb7faa8ba1138c0c4ebf
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1468'
 ht-degree: 74%

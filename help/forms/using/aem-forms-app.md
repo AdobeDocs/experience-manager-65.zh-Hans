@@ -6,7 +6,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2410'
 ht-degree: 0%
@@ -31,7 +32,7 @@ iOS、Android和Windows设备支持AEM Forms应用程序。 您可以从Google P
 
 要在iOS、Android或Windows设备上安装、自定义和分发应用程序，请参阅 [自定义、构建和分发AEM Forms应用程序](#customize-build-distribute).
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 AEM Forms应用程序需要AEM Forms服务器。 用户可以渲染您在AEM Forms服务器中创建的表单、填写表单、另存为草稿并提交表单。 应用程序会连接到服务器并从其中获取启用的表单。 AEM Forms应用程序与服务器同步，一旦表单加载到应用程序中，用户就可以脱机工作。 如果应用程序处于离线状态，则数据会保存在设备上，并在应用程序处于在线状态时与服务器同步。
 

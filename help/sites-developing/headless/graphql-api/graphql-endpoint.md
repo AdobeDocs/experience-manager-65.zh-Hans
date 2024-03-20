@@ -2,10 +2,11 @@
 title: 在 AEM 中管理 GraphQL 端点
 description: 了解如何在Adobe Experience Manager中为Headless内容投放管理GraphQL端点。
 exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '510'
-ht-degree: 93%
+ht-degree: 91%
 
 ---
 
@@ -69,7 +70,7 @@ AEM 全局端点的 GraphQL 的存储库路径为：
    >
    >对话框中显示以下警告：
    >
-   >* *如果不对 GraphQL 端点仔细管理，则可能会带来数据安全和性能问题。请确保在创建端点后设置适当的权限。*
+   >* *如果管理不当，GraphQL 端点可能会引入数据安全和性能问题。请确保在创建端点后设置适当的权限。*
 
 1. 选择&#x200B;**创建**&#x200B;来确认。
 1. **后续步骤**&#x200B;对话框将提供直接指向安全性控制台的链接，这样您可以确保新创建的端点具有合适的权限。

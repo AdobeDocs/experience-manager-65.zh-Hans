@@ -5,9 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -54,7 +55,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **connect(handler， context)** 与FormBridge建立连接，并在建立连接且Form State初始化后执行函数
 
-* **输入**:
+* **输入**：
 
    * **处理程序**：连接Form Bridge后执行的函数
    * **上下文**：上下文(this)的目标对象 *处理程序* 函数已设置。
@@ -64,7 +65,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **getDataXML(options)** 以XML格式返回当前表单数据
 
-* **输入:**
+* **输入：**
 
    * **选项：** 包含以下属性的JavaScript对象：
 
@@ -79,7 +80,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **registerConfig(configName， config)** 向FormBridge注册用户/门户特定配置。 这些配置将覆盖默认配置。 支持的配置在配置部分中指定。
 
-* **输入:**
+* **输入：**
 
    * **configName：** 要覆盖的配置名称
 
@@ -124,7 +125,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **hideFields(fieldArray)** 隐藏fieldArray中提供Som表达式的字段。 将指定字段的presence属性设置为不可见
 
-* **输入:**
+* **输入：**
 
    * **字段数组：** 要隐藏的字段的Som表达式数组
 
@@ -133,7 +134,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **showFields(fieldArray)** 显示其Som表达式在fieldArray中提供的字段。 将所提供字段的presence属性设置为可见
 
-* **输入:**
+* **输入：**
 
    * **字段数组：** 要显示的字段的Som表达式数组
 
@@ -155,7 +156,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **restoreFormState(options)** 从选项对象中提供的JSON状态恢复表单状态。 应用状态，并在操作完成后调用成功或错误处理程序
 
-* **输入:**
+* **输入：**
 
    * **选项：** 包含以下属性的JavaScript对象：
 
@@ -175,7 +176,7 @@ window.addEventListener("FormBridgeInitialized",
 
 **setFieldValue (som， value)** 设置给定Som表达式的字段值
 
-* **输入:**
+* **输入：**
 
    * **som：** 包含字段的Som表达式的数组。 用于设置字段值的som表达式。
    * **值：** 数组，其中包含与中提供的Som表达式对应的值 **som**&#x200B;数组。 如果该值的数据类型与fieldType不同，则不会修改该值。
@@ -205,7 +206,7 @@ if(a.errors) {
 
 **getFieldProperties(som， property)** 检索Som表达式中指定的字段的给定属性的值列表
 
-* **输入:**
+* **输入：**
 
    * **som：** 包含字段的Som表达式的数组
    * **属性**：需要其值的属性的名称
@@ -216,7 +217,7 @@ if(a.errors) {
 
 **setFieldProperties（som，属性，值）** 为Som表达式中指定的所有字段设置给定属性的值
 
-* **输入:**
+* **输入：**
 
    * **som：** 包含必须设置其值的字段的Som表达式的数组
    * **属性**：必须设置其值的属性

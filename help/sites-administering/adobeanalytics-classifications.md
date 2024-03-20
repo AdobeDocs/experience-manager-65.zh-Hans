@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 0e675ce8-ba3b-481d-949e-0c85c97054d2
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '612'
 ht-degree: 5%
@@ -41,7 +42,7 @@ Adobe分类将分类数据导出到 [Adobe Analytics](/help/sites-administering/
 
    | **字段** | **描述** |
    |---|---|
-   | 启用 | 选择 **是** 以启用“Adobe分类”设置。 |
+   | 已启用 | 选择 **是** 以启用“Adobe分类”设置。 |
    | 发生冲突时覆盖 | 选择 **是** 覆盖所有数据冲突。 默认情况下，设置为 **否**. |
    | 删除已处理的项目 | 如果设置为 **是**，会在导出后删除已处理的节点。 默认为 **假**. |
    | 导出作业描述 | 输入Adobe分类作业的说明。 |
@@ -94,7 +95,7 @@ Adobe分类将分类数据导出到 [Adobe Analytics](/help/sites-administering/
 
 | **键** | **产品** | **价格** | **大小** | **颜色** | **颜色^代码** |
 |---|---|---|---|---|---|
-| 1 | 我的产品名称 | 120.90 | M | black | 101 |
+| 1 | 我的产品名称 | 120.90 | 周一 | black | 101 |
 
 这些属性包括：
 

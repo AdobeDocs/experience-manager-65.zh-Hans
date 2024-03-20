@@ -7,10 +7,11 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1764'
-ht-degree: 1%
+source-wordcount: '1767'
+ht-degree: 0%
 
 ---
 
@@ -141,7 +142,7 @@ ht-degree: 1%
 >
 >默认情况下，该参数的值为 `localhost:4502` 如果正在运行的实例的端口发生更改，则无法完成和操作。
 
-在常用的电子邮件客户端之间切换，查看您的新闻稿在潜在客户端的外观如何。默认情况下，会打开您的新闻稿，但不会选择任何电子邮件客户端。
+在常用的电子邮件客户端之间切换，查看您的新闻稿在潜在客户端的外观如何。 默认情况下，会打开您的新闻稿，但不会选择任何电子邮件客户端。
 
 目前，您可以在以下电子邮件客户端中查看新闻稿：
 

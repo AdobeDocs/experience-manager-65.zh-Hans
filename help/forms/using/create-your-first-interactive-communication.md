@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communications, introduction
 feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '976'
 ht-degree: 0%
@@ -43,7 +44,7 @@ ht-degree: 0%
 * 指向账单Web版本的链接，在本教程中称为Web渠道。 账单的Web版本，除了PDF版本中涵盖的详细信息之外，还提供使用详细信息的图形表示以及基于Adobe Target的个性化优惠。 Web版本还包含在线支付表单。 它有助于在不离开集成电路的情况下进行在线支付。
 * 指向增值服务的链接，如在线存储、音乐订阅和点播视频订阅。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 * 设置AEM创作实例。
 * 安装 [AEM Forms加载项](/help/forms/using/installing-configuring-aem-forms-osgi.md) 在创作实例上

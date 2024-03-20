@@ -8,7 +8,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 0%
@@ -215,7 +216,7 @@ Forms服务将返回以下值，以指示它是否已完成处理数据：
 
       * 此 `com.adobe.idp.Document` 包含表单数据的对象。
       * 一个字符串值，它指定包含所有相关HTTP标头的环境变量。 指定要处理的内容类型。 要处理XML数据，请为此参数指定以下字符串值： `CONTENT_TYPE=text/xml`. 要处理PDF数据，请为此参数指定以下字符串值： `CONTENT_TYPE=application/pdf`.
-      * 一个字符串值，它指定 `HTTP_USER_AGENT` 标头值，例如。 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 此参数值是可选的。
+      * 一个字符串值，它指定 `HTTP_USER_AGENT` 标头值，例如。 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。此参数值是可选的。
       * A `RenderOptionsSpec` 存储运行时选项的对象。
 
      此 `processFormSubmission` 方法返回 `FormsResult` 包含表单提交结果的对象。

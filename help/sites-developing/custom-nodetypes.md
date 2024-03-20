@@ -1,21 +1,22 @@
 ---
 title: 自定义节点类型
-description: Adobe Experience Manager (AEM)基于Sling，使用JCR存储库和由两者提供的节点类型，但AEM也提供了一系列自定义节点类型
+description: Adobe Experience Manager (AEM)基于Sling，使用具有由两者提供的节点类型的JCR存储库，但AEM还提供一系列自定义节点类型
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1866'
-ht-degree: 9%
+source-wordcount: '1848'
+ht-degree: 5%
 
 ---
 
 # 自定义节点类型{#custom-node-types}
 
-由于Adobe Experience Manager (AEM)基于Sling并使用JCR存储库，因此这两者提供的节点类型均可供使用：
+由于Adobe Experience Manager (AEM)基于Sling并使用JCR存储库，因此可使用这两种工具提供的节点类型：
 
 * [JCR节点类型](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling节点类型](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -104,10 +105,10 @@ ht-degree: 9%
 
 **描述**
 
-定义以小数位数(DD)表示的地理位置的mixin
+以小数度(DD)定义地理位置的Mixin
 
 * `@prop latitude`  — 使用小数位数编码为双精度的latitude
-* `@prop longitude`  — 使用小数位数编码为双倍的经度
+* `@prop longitude`  — 使用小数位数编码为双精度形式的经度
 
 **定义**
 
@@ -145,7 +146,7 @@ ht-degree: 9%
 
 **描述**
 
-定义将节点标记为伪页面的mixin类型。 换句话说，这意味着它们可以适应页面和WCM编辑支持。
+定义将节点标记为伪页面的mixin类型。 换句话说，这意味着它们可以适合于Page和WCM编辑支持。
 
 **定义**
 
@@ -196,15 +197,15 @@ ht-degree: 9%
 
 * `@node jcr:content`  — 新页面的默认内容。
 * `@node icon.png`  — 包含特征图标的文件。
-* `@node thumbnail.png`  — 包含特征缩略图图像的文件。
-* `@node workflows`  — 自动分配工作流配置。 配置遵循以下结构：
+* `@node thumbnail.png`  — 保存特征缩略图图像的文件。
+* `@node workflows`  — 自动分配工作流配置。 该配置遵循以下结构：
    * `+ workflows`
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
 * `@prop allowedParents`  — 用于确定允许作为父模板的模板的路径的正则表达式模式。
 * `@prop allowedChildren`  — 用于确定允许作为子模板的模板的路径的正则表达式模式。
-* `@prop ranking`  — 在“创建页面”对话框的模板列表中的位置。
+* `@prop ranking`  — 在创建页面对话框的模板列表中的位置。
 
 **定义**
 
@@ -230,16 +231,16 @@ ht-degree: 9%
 * `@prop jcr:description`  — 组件的描述。
 * `@node dialog`  — 主对话框。
 * `@prop dialogPath`  — 主对话框路径（对话框的替代方法）。
-* `@node design_dialog`  — “设计”对话框。
+* `@node design_dialog`  — 设计对话框。
 * `@prop cq:cellName`  — 设计单元格的名称。
-* `@prop cq:isContainer`  — 指示它是否为容器组件。 强制使用子组件的单元格名称而不是路径名称。 例如， `parsys` 是一个容器组件。 如果未定义此值，则会根据是否存在 `cq:childEditConfig`.
+* `@prop cq:isContainer`  — 指示它是否为容器组件。 强制使用子组件的单元格名称而不是路径名称。 例如， `parsys` 是容器组件。 如果未定义此值，则会根据是否存在 `cq:childEditConfig`.
 * `@prop cq:noDecoration`  — 如果为true，则无修饰 `div` 标记在包含此组件时绘制。
 * `@node cq:editConfig`  — 定义编辑栏参数的配置。
-* `@node cq:childEditConfig`  — 由子组件继承的编辑配置。
+* `@node cq:childEditConfig`  — 子组件继承的编辑配置。
 * `@node cq:htmlTag`  — 定义添加到“周围”的其他标记属性 `div` 标记。
 * `@node icon.png` — 包含特征图标的文件。
-* `@node thumbnail.png`  — 包含特征缩略图图像的文件。
-* `@prop allowedParents`  — 用于确定允许作为父组件的组件的组件的路径的正则表达式模式。
+* `@node thumbnail.png`  — 保存特征缩略图图像的文件。
+* `@prop allowedParents`  — 用于确定允许作为父组件的组件的组件路径的正则表达式模式。
 * `@prop allowedChildren`  — 用于确定允许作为子组件的组件的组件的路径的正则表达式模式。
 * `@node virtual`  — 包含反映用于组件拖放的虚拟组件的子节点。
 * `@prop componentGroup`  — 组件组的名称，用于组件拖放。
@@ -314,7 +315,7 @@ ht-degree: 9%
 
 **描述**
 
-配置组件的一个放置目标。 此节点的名称用作拖放的ID。
+配置组件的一个放置目标。 此节点的名称将用作拖放的ID。
 
 * `@prop accept`  — 此放置目标接受的mime类型列表；例如， `["image/*"]`
 * `@prop groups`  — 接受源的拖放组列表。
@@ -339,9 +340,9 @@ ht-degree: 9%
 * `@node cq:editConfig`  — 编辑定义编辑栏参数的配置。
 * `@node cq:childEditConfig` — 编辑由子组件继承的配置。
 * `@node icon.png`  — 包含特征图标的文件。
-* `@node thumbnail.png`  — 包含特征缩略图图像的文件。
-* `@prop allowedParents`  — 用于确定作为父组件的组件路径的正则表达式模式。
-* `@prop allowedChildren`  — 用于确定允许作为子组件的组件的组件的路径的正则表达式模式。
+* `@node thumbnail.png`  — 保存特征缩略图图像的文件。
+* `@prop allowedParents`  — 用于确定允许作为父组件的组件的组件路径的正则表达式模式。
+* `@prop allowedChildren`  — 用于确定允许作为子组件的组件的组件路径的正则表达式模式。
 * `@prop componentGroup`  — 用于组件拖放的组件组的名称。
 
 **定义**
@@ -371,7 +372,7 @@ ht-degree: 9%
 * `@prop afteredit`  — 在编辑（修改）组件后触发。
 * `@prop afterdelete`  — 删除组件后触发。
 * `@prop afterinsert`  — 将组件添加到此容器后触发。
-* `@prop afterremove`  — 从容器中删除组件后触发。
+* `@prop afterremove`  — 从此容器中删除组件后触发。
 * `@prop aftermove`  — 在此容器中移动组件后触发。
 
 **定义**
@@ -444,9 +445,9 @@ DAM资产。
 
 **描述**
 
-节点类型 `cq:attributes` 用于ContentBus版本标记。 此节点只有一系列属性；其中三个属性是预定义的“created”、“csd”和“timestamp”。
+节点类型 `cq:attributes` 用于ContentBus版本标记。 此节点只有一系列属性；其中三个是预定义的“created”、“csd”和“timestamp”。
 
-* `@prop created (long) mandatory copy`  — 创建版本信息的时间戳，通常是以前版本的签入时间或页面创建时间。
+* `@prop created (long) mandatory copy`  — 版本信息的创建时间戳，通常是上一版本的签入时间或页面创建时间。
 * `@prop csd (string) mandatory copy` - csd标准属性，页面节点的cq：csd属性的副本
 * `@prop timestamp (long) mandatory copy`  — 上次版本修改的时间戳，通常为签入时间。
 * `@prop * (string) copy`  — 其他属性，使用父节点进行版本控制。
@@ -463,12 +464,12 @@ DAM资产。
 
 **描述**
 
-节点类型 `cq:contentPage` 包含ContentBus内容页的属性和子节点定义。 仅当将此mixin类型添加到类型的节点时 `cq:page`，节点将变为ContentBus内容页。
+节点类型 `cq:contentPage` 包含ContentBus内容页的属性和子节点定义。 仅当将此mixin类型添加到类型节点时 `cq:page`，节点会变为ContentBus内容页面。
 
 中的项目 `cq:Cq4ContentPage` 为：
 
 * `@prop cq:csd`  — 页面的ContentBusCSD。
-* `@node cq:content`  — 页面的内容。 如果页面节点处于“Existing without content”或“Deleted”状态，则此子节点不存在。
+* `@node cq:content`  — 页面的内容。 如果页面节点处于“现有不含内容”或“已删除”状态，则此子节点不存在。
 * `@node cq:attributes`  — 页面属性的列表，以前称为版本标记。 对于cq：contentPage类型，此节点是必需的。 当页面为节点进行版本控制时，将对“属性”节点进行版本控制。
 
 **定义**
@@ -485,7 +486,7 @@ DAM资产。
 
 轮询配置。
 
-* `@prop source (String) mandatory`  — 数据源URI。 必需，不得为空。
+* `@prop source (String) mandatory`  — 数据源URI。 必填，且不能为空。
 * `@prop target (String)`  — 存储从数据源检索的数据的目标位置。 可选，默认为cq：PollConfig节点。
 * `@prop interval (Long)`  — 轮询数据源中新数据或更新数据的时间间隔（以秒为单位）。 可选，默认为30分钟（1800秒）。
 * [为Adobe Experience Manager创建自定义数据导入器服务](https://helpx.adobe.com/experience-manager/using/polling.html)
@@ -514,10 +515,10 @@ DAM资产。
 
 **描述**
 
-定义以小数度(DD)为单位的地理位置的mixin。
+以小数度(DD)定义地理位置的mixin。
 
 * `@prop latitude`  — 使用小数位数编码为双精度的Latitude。
-* `@prop longitude`  — 使用小数位数编码为双倍的经度。
+* `@prop longitude`  — 使用小数位数编码为双精度值的经度。
 
 **定义**
 
@@ -548,7 +549,7 @@ MailerService节点类型 邮件程序使用具有此mixin的节点作为消息�
 
 **描述**
 
-定义LiveRelationship mixin。 可通过LiveRelationship虚拟链接主源（控制）节点和Live Copy（控制）节点。
+定义LiveRelationship mixin。 可以通过LiveRelationship虚拟链接主源（控制）节点和Live Copy（控制）节点。
 
 **定义**
 
@@ -561,7 +562,7 @@ MailerService节点类型 邮件程序使用具有此mixin的节点作为消息�
 
 **描述**
 
-定义LiveSync Mixin。 如果某个节点与主源（控制）节点和Live Copy（控制）节点的LiveRelationship有关，则该节点将标记为LiveSync。
+定义LiveSync Mixin。 如果某个节点与主源（控制）节点和Live Copy（控制）节点有关联，则该节点将标记为LiveSync。
 
 * `@prop cq:master` - LiveRelationship的主源（控制）的路径。
 * `@prop cq:isDeep`  — 定义关系是否可用于子项。
@@ -578,7 +579,7 @@ MailerService节点类型 邮件程序使用具有此mixin的节点作为消息�
 
 **描述**
 
-定义LiveSyncCanceled mixin。 取消LiveRelationship中可能涉及的Live Copy（受控）节点的LiveSync行为，因为该节点的一个父节点有关。
+定义LiveSyncCanceled mixin。 取消LiveCopy（受控）节点的LiveSync行为，该节点可能因其父节点之一而参与LiveRelationship。
 
 * `@prop cq:isCancelledForChildren`  — 定义是否取消了LiveSync；也适用于子项。
 
@@ -649,7 +650,7 @@ Blueprint操作
 定义复制状态信息mixin。
 
 * `@prop cq:lastPublished` — 上次发布页面（不再使用）的日期。
-* `@prop cq:lastPublishedBy` — 最后发布页面的用户（不再使用）。
+* `@prop cq:lastPublishedBy` — 上次发布页面的用户（不再使用）。
 * `@prop cq:lastReplicated`  — 上次复制页面的日期。
 * `@prop cq:lastReplicatedBy`  — 最后复制页面的用户。
 * `@prop cq:lastReplicationAction`  — 复制操作：激活或停用。
@@ -754,7 +755,7 @@ Blueprint操作
 
 **描述**
 
-定义一个mixin类型，用于标记可使用组件提取器打开的文件。
+定义一个mixin类型，用于标记可以使用组件提取器打开的文件。
 
 **定义**
 
@@ -780,7 +781,7 @@ Blueprint操作
 
 **描述**
 
-可标记内容的抽象基本mixin。
+用于可标记内容的抽象基本mixin。
 
 * `@node cq:tags`
 
@@ -803,7 +804,7 @@ Blueprint操作
 
 **描述**
 
-任何用户/公共网站都可以标记内容（Web2.0样式），该内容在cq：userContent中使用。
+任何用户/公共网站都可以为cq：userContent中使用的内容（Web2.0样式）添加标签。
 
 **定义**
 
@@ -814,7 +815,7 @@ Blueprint操作
 
 **描述**
 
-添加 `cq:userContent` 可由用户修改的子节点。 每个用户都有自己的 `cq:userContent/<userid>` 子节点，通常具有mixin `cq:UserTaggable`.
+添加 `cq:userContent` 用户可修改的子节点。 每个用户都有自己的 `cq:userContent/<userid>` 子节点，通常具有mixin `cq:UserTaggable`.
 
 **定义**
 
@@ -884,7 +885,7 @@ Blueprint操作
 
 **描述**
 
-构件集合
+构件收藏集
 
 **定义**
 
@@ -1062,7 +1063,7 @@ Wiki属性
 
 **描述**
 
-自动分配工作流配置。 配置遵循以下结构：
+自动分配工作流配置。 该配置遵循以下结构：
 * `workflows`
    * `+ name1`
       * `- cq:path`

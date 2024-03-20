@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1898'
+source-wordcount: '1889'
 ht-degree: 0%
 
 ---
@@ -103,7 +104,7 @@ AEM forms提供了一个默认的业务日历(名为 *内置日历*)将星期六
    如果用户管理管理员未定义任何业务日历键，则列表将为空。
 
 1. 为UM业务日历键列表中的每个项目选择一个日历。
-1. 单击保存。
+1. 单击“保存”。
 
 ### 根据目录服务组将业务日历与用户和组相关联 {#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}
 
@@ -116,7 +117,7 @@ AEM forms提供了一个默认的业务日历(名为 *内置日历*)将星期六
    >在Workbench中，如果您已将用户服务配置为使用业务日历，并且已将该服务分配给某个组，则AEM Forms会使用此处指定的组映射来解析该组的日历。 AEM Forms始终使用组映射来解析组的日历，即使您使用业务日历键为用户解析日历也是如此。 如果未找到组映射，则使用默认的业务日历。
 
 1. 对于“目录服务组”列表中的每个项目，选择日历。
-1. 单击保存。
+1. 单击“保存”。
 
 ## 导出和导入业务日历 {#exporting-and-importing-business-calendars}
 
@@ -143,4 +144,4 @@ AEM表单允许您将业务日历导出为XML文件并将其导入。 您可以�
 
 1. 在管理控制台中，单击服务> Forms工作流>业务日历。
 1. 选择日历。
-1. 单击删除。
+1. 单击“删除”。

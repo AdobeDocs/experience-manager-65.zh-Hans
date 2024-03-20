@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 800bffd5-0cdc-4251-bba4-e350f226f019
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '944'
 ht-degree: 2%
@@ -57,7 +58,7 @@ Acrobat Reader DC扩展证书的“友好”名称是一个描述证书属性的
   <tr>
    <td><p>P1</p></td>
    <td><p>SAP生产</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产</p></td>
   </tr>
   <tr>
@@ -69,7 +70,7 @@ Acrobat Reader DC扩展证书的“友好”名称是一个描述证书属性的
   <tr>
    <td><p>P3</p></td>
    <td><p>Acrobat Reader DC扩展，生产</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产</p></td>
   </tr>
   <tr>
@@ -93,49 +94,49 @@ Acrobat Reader DC扩展证书的“友好”名称是一个描述证书属性的
   <tr>
    <td><p>P8</p></td>
    <td><p>Forms，生产</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产</p></td>
   </tr>
   <tr>
    <td><p>P9</p></td>
    <td><p>Adobe Acrobat 7.x，生产</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产</p></td>
   </tr>
   <tr>
    <td><p>I10</p></td>
    <td><p>Forms；可供OEM使用</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产和评估</p></td>
   </tr>
   <tr>
    <td><p>I11</p></td>
    <td><p>Forms；可供OEM使用</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产和评估</p></td>
   </tr>
   <tr>
    <td><p>I12</p></td>
    <td><p>仅签名；可由OEM使用</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产和评估</p></td>
   </tr>
   <tr>
    <td><p>I13</p></td>
    <td><p>仅离线注释；可由OEM使用</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产和评估</p></td>
   </tr>
   <tr>
    <td><p>I14</p></td>
    <td><p>仅注释；可由OEM使用</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产和评估</p></td>
   </tr>
   <tr>
    <td><p>I15</p></td>
    <td><p>完全权限；可由OEM使用</p></td>
-   <td><p>Max</p></td>
+   <td><p>最大值</p></td>
    <td><p>生产和评估</p></td>
   </tr>
  </tbody>

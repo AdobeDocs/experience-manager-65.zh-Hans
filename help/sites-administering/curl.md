@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '884'
 ht-degree: 2%
@@ -299,7 +300,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 请参阅 [在AEM中启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md) 以了解详细信息。
 
-### 数据存储垃圾收集 {#data-store-garbage-collection}
+### 数据存储垃圾回收 {#data-store-garbage-collection}
 
 请参阅 [数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) 以了解详细信息。
 

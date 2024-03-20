@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '7143'
+source-wordcount: '7164'
 ht-degree: 0%
 
 ---
@@ -51,7 +52,7 @@ ht-degree: 0%
 
    有关支持的属性的完整列表，请参阅 [观察文件夹属性](#watchedfolderproperties).
 
-1. 单击&#x200B;**全部保存**。创建节点并保存属性后。 此 `input`， `result`， `failure`， `preserve`、和 `stage`文件夹是在指定的路径创建的 `folderPath` 属性。
+1. 单击 **全部保存**. 创建节点并保存属性后。 此 `input`， `result`， `failure`， `preserve`、和 `stage`文件夹是在指定的路径创建的 `folderPath` 属性。
 
    扫描作业以定义的时间间隔开始扫描观察文件夹。
 
@@ -120,7 +121,7 @@ ht-degree: 0%
 有关文件模式的详细信息，请参见 [关于文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
 * **waitTime（长）**：文件夹或文件创建后等待扫描的时间，以毫秒为单位。 例如，如果等待时间为3,600,000毫秒（1小时），文件是在一分钟前创建的，则将在59分钟或更长时间后提取此文件。 默认值为 0。此设置对于确保将文件或文件夹完全复制到输入文件夹非常有用。 例如，如果您要处理大文件，并且下载该文件需要10分钟，则将等待时间设置为10&#42;60 &#42;1000毫秒。 这样可防止Watched Folder在文件未满十分钟时扫描文件。
-* **purgeDuration（长）**：当结果文件夹中的文件和文件夹早于此值时会将其清除。 此值以天为单位。 此设置有助于确保结果文件夹不会变满。 值为–1天表示从不删除结果文件夹。 默认值为–1。
+* **purgeDuration（长）**：当结果文件夹中的文件和文件夹早于此值时会将其清除。 此值以天为单位。 此设置有助于确保结果文件夹不会变满。 值为–1天表示从不删除结果文件夹。 默认值为 -1。
 * **resultFolderName（字符串）**：存储所保存结果的文件夹。 如果结果未出现在此文件夹中，请检查失败文件夹。 只读文件不会被处理，并保存在失败文件夹中。 此值可以是具有以下文件模式的绝对路径或相对路径：
 
    * %F =文件名前缀
@@ -291,7 +292,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 1. 以编程方式或通过控制台https://&#39;创建系统用户[服务器]：[端口]&#39;/crx/explorer. 您也可以使用现有系统用户。 请务必在此处与系统用户而非正常用户合作。
 1. 在存储脚本的自定义位置向新创建的或现有的系统用户提供读取权限。 您可以有多个自定义位置。 至少向所有自定义位置提供读取权限。
 1. 在Felix配置控制台(/system/console/configMgr)中，找到监视文件夹的服务用户映射。 此映射类似于“映射： adobe-aemds-core-watch-folder=...”。
-1. 单击映射。 对于“adobe-aemds-core-watch-folder：scripts=fd-service”条目，请将fd-service更改为自定义系统用户的ID。 单击保存。
+1. 单击映射。 对于“adobe-aemds-core-watch-folder：scripts=fd-service”条目，请将fd-service更改为自定义系统用户的ID。 单击“保存”。
 
 现在，您可以使用配置的自定义位置来保存脚本。
 

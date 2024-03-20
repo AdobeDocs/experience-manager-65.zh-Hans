@@ -2,7 +2,8 @@
 title: 基础组件
 description: 了解Adobe Experience Manager 6.5中的基础组件。
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6873'
 ht-degree: 3%
@@ -15,7 +16,7 @@ ht-degree: 3%
 >
 >大多数基础组件现已在AEM 6.5中弃用。请参阅 [发行说明](/help/release-notes/deprecated-removed-features.md) 以了解详细信息。
 >
->Adobe建议使用更新式、更可扩展的 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 在AEM项目中。 这些组件是 [We.Retail示例内容](/help/sites-developing/we-retail.md) 也可以 [单独安装并用于开发](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) 由您的管理员执行。
+>Adobe建议使用更新式、更可扩展的 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 在AEM项目中。 这些组件是 [We.Retail示例内容](/help/sites-developing/we-retail.md) 也可以 [单独安装并用于开发](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) 由您的管理员执行。
 >
 >您可以使用 [AEM Modernize Tools Suite](https://opensource.adobe.com/aem-modernize-tools/) 重构基于基础组件的站点以使用核心组件。
 
@@ -216,7 +217,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 图表组件允许您添加条形图、折线图或饼图。 AEM会根据您提供的数据创建一个图表。 提供数据的方法是直接在“数据”选项卡中键入内容，或者复制并粘贴电子表格。
 
@@ -259,7 +260,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 利用此组件，可上传包含设计包的zip文件。
 
@@ -267,7 +268,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 下载组件在选定网页上创建一个链接，用于下载特定文件。 您可以从内容查找器拖动资产或上传文件。
 
@@ -287,7 +288,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 外部应用程序集成组件(**外部**)使您可以使用iframe将外部应用程序嵌入到AEM页面。
 
@@ -317,7 +318,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 >[!CAUTION]
 >
@@ -531,7 +532,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 >[!CAUTION]
 >
@@ -967,7 +968,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->已弃用基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 表单组件用于创建表单，以供访客提交输入。 Forms和表单组件可用于收集包括用户反馈（例如客户满意度调查表）和用户信息（例如用户注册）的信息。
 
@@ -1097,7 +1098,7 @@ Forms由几个不同的组件组成：
 
 >[!NOTE]
 >
->基础组件表单组件仅支持使用其他基础组件表单组件（按钮、文本、隐藏等）。 使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 不支持基础组件表单中的表单组件（反之）。
+>基础组件表单组件仅支持使用其他基础组件表单组件（按钮、文本、隐藏等）。 使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 不支持基础组件表单中的表单组件（反之）。
 
 #### 表单的开头 {#start-of-form}
 
@@ -1337,7 +1338,7 @@ Forms由几个不同的组件组成：
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 >[!CAUTION]
 >
@@ -1371,7 +1372,7 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 允许您提供输入信用卡详细信息所需的字段。 您可以对其进行配置，以指定接受的卡类型以及所需的信息（例如安全代码）。
 
@@ -1399,7 +1400,7 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 文件上传组件为用户提供了一种选择和上传文件的机制。
 
@@ -1439,7 +1440,7 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 图像上传组件为用户提供了一种选择和上传图像文件的机制。
 
@@ -1449,7 +1450,7 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 链接字段允许用户指定URL：
 
@@ -1461,7 +1462,7 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 允许用户输入密码：
 
@@ -1471,7 +1472,7 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 此组件为用户提供以下两个字段：
 
@@ -1518,7 +1519,7 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!CAUTION]
 >
->已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) 而是。
+>已弃用此基础组件。 Adobe建议使用 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 而是。
 
 此字段允许您选择标记：
 

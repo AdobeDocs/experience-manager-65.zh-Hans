@@ -3,7 +3,8 @@ title: 创建“邀请外部用户”处理程序
 description: 了解如何创建邀请外部用户处理程序。 它允许Rights Management服务邀请外部用户成为Rights Management用户。
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: d195ac80ee59439bab5b1219a2c1f16e93e3d22b
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1160'
 ht-degree: 0%

@@ -1,16 +1,17 @@
 ---
 title: 使用标记
-description: 标记是用于对网站中的内容进行分类的简单快捷方法.
+description: 标记是一种对网站中的内容进行分类的快速轻松的方法。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: 27e5c7fea4e90873bf80f976e179b5af0088f550
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '563'
-ht-degree: 85%
+ht-degree: 80%
 
 ---
 
@@ -41,7 +42,7 @@ ht-degree: 85%
 
 在创作环境中，作者可以通过访问页面属性并在&#x200B;**标记/关键字**&#x200B;字段中输入一个或多个标记来应用标记。
 
-要申请 [预定义标记](/help/sites-administering/tags.md)，在 **页面属性** 窗口使用 **标记** 字段和 **选择标记** 窗口。 **标准标记**&#x200B;选项卡是默认的命名空间，这意味着分类前面没有 `namespace-string:` 前缀。
+要申请 [预定义标记](/help/sites-administering/tags.md)，在 **页面属性** 窗口使用 **标记** 字段和 **选择标记** 窗口。 此 **标准标记** tab是默认的命名空间，这意味着没有 `namespace-string:` 在分类前添加前缀。
 
 ![“选择标记”窗口；使用X按钮取消选择当前选定的标记](assets/chlimage_1-41.png)
 

@@ -5,7 +5,9 @@ contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 hide: true
-source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
+exl-id: c84ce84a-1e52-48fd-a16c-38c7769df9af
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '498'
 ht-degree: 1%

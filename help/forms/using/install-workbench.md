@@ -5,9 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2184'
 ht-degree: 0%
 
 ---
@@ -119,7 +120,7 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
   </tr>
   <tr>
    <td><p>Designer（独立）</p> </td>
-   <td><p>无。<br />Workbench中包含的Designer版本仅限英语。 <br />Workbench安装程序不会重新安装新版本的Designer。 而是修补与Workbench安装程序捆绑在一起的更新版本。 这还允许您在Workbench中使用本地化版本的Designer。<br /> </p> </td>
+   <td><p>无。 <br />Workbench中包含的Designer版本仅限英语。 <br />Workbench安装程序不会重新安装新版本的Designer。 而是修补与Workbench安装程序捆绑在一起的更新版本。 这还允许您在Workbench中使用本地化版本的Designer。<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -158,13 +159,13 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 
    >[!NOTE]
    >
-   通过取消选择此选项，您可以继续使用随Acrobat 10一起安装的Designer。
+   >通过取消选择此选项，您可以继续使用随Acrobat 10一起安装的Designer。
 
 1. 接受列出的默认目录，或单击“选择”并导航到要安装Workbench的目录，然后单击“下一步”。
 
    >[!NOTE]
    >
-   安装目录路径不应包含# （井号）和$ （美元）字符。
+   >安装目录路径不应包含# （井号）和$ （美元）字符。
 
 1. 查看预安装摘要，然后单击“安装”。 安装程序显示安装进度。
 1. 查看安装摘要。 选择启动AEM Forms Workbench ，以启动Workbench ，然后单击下一步。
@@ -184,7 +185,7 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 
 >[!NOTE]
 >
-如果您将AEM Forms配置为使用EMC Documentum®或IBM® FileNet存储库提供程序，并且希望登录到其他存储库(在AEM Forms管理控制台中配置为默认的存储库)，请以username@Repository的形式提供用户名。
+>如果您将AEM Forms配置为使用EMC Documentum®或IBM® FileNet存储库提供程序，并且希望登录到其他存储库(在AEM Forms管理控制台中配置为默认的存储库)，请以username@Repository的形式提供用户名。
 
 ### 配置超时设置 {#configuring-timeout-settings}
 
@@ -196,7 +197,7 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 
 >[!NOTE]
 >
-[Workbench_HOME] 表示安装Workbench的目录。 默认位置为C:\Program Files (x86)\Adobe Experience Manager Forms Workbench。
+>[Workbench_HOME] 表示安装Workbench的目录。 默认位置为C:\Program Files (x86)\Adobe Experience Manager Forms Workbench。
 
 请确保使用证书中指定的名称连接到HTTPS。 此名称通常是完全限定的主机名。
 
@@ -205,12 +206,13 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 
    >[!NOTE]
    >
-   要导出证书，请打开Web浏览器并登录到管理控制台。 在浏览器中安装证书，然后将证书从浏览器导出到临时存储位置(或直接导出到 [Workbench_HOME]/workbench/jre/lib/security directory)。
+   >要导出证书，请打开Web浏览器并登录到管理控制台。 在浏览器中安装证书，然后将证书从浏览器导出到临时存储位置(或直接导出到 [Workbench_HOME]/workbench/jre/lib/security directory)。
 
 1. 将证书复制到 [Workbench_HOME]/workbench/jre/lib/security目录。
 
 1. 打开命令提示符窗口，导航至 [Workbench_HOME]/workbench/jre/bin ，然后键入以下命令：
-   `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`其中：
+   `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
+其中：
    * `changeit` 是cacerts keystore的默认密码。
    * certname是您在步骤1中选择的证书。
    * 示例是您为证书选择的别名。 此值可更改。

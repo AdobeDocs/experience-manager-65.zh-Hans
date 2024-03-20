@@ -6,7 +6,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: b2a6ba3a-0f4c-44b1-8f9a-c15c6fb8c305
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 0%
@@ -73,7 +74,7 @@ AEM Forms工作区按管理员或流程设计者设置的类别来组织流程�
 * 读取/编辑/删除
 * 读取/编辑
 * 读取/删除
-* 无权访问
+* 无访问权限
 
 1. 打开任务并单击 **注释** 选项卡（如果进程允许）。
 1. 在中键入注释的标题 **标题** 框，并在 **注意** 盒子。
@@ -88,7 +89,7 @@ AEM Forms工作区按管理员或流程设计者设置的类别来组织流程�
 * 读取/编辑/删除
 * 读取/编辑
 * 读取/删除
-* 无权访问
+* 无访问权限
 
 1. 单击 **附件** 选项卡并选择 **附件**.
 1. 单击 **浏览** 以选择要附加的文件。

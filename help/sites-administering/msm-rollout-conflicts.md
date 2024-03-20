@@ -7,10 +7,11 @@ topic-tags: site-features
 content-type: reference
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 23%
+ht-degree: 20%
 
 ---
 
@@ -46,7 +47,7 @@ ht-degree: 23%
 
   在Live Copy分支中手动创建的页面；具有一个子页面， `lc-level-1`.
 
-   * 在发布为 `/b` 时与子页面一起激活.
+   * 发布时激活为 `/b`，以及子页面。
 
 **转出前**
 
@@ -94,8 +95,8 @@ AEM 提供：
 
    * `ResourceNameRolloutConflictHandler`
 
-* 实施[自定义处理程序](#customized-handlers)的可能性。
-* 服务排名机制，可让您设置每个单独处理程序的优先级. 使用排名最高的服务。
+* 实施 [自定义处理程序](#customized-handlers).
+* 服务排名机制，允许您设置每个单独处理程序的优先级。 使用排名最高的服务。
 
 ### 默认冲突处理程序 {#default-conflict-handler}
 
@@ -103,7 +104,7 @@ AEM 提供：
 
 * 称为 `ResourceNameRolloutConflictHandler`
 
-* 使用此处理程序时，Blueprint页面将获得优先权。
+* 对于此处理程序，Blueprint 页面将获得优先权。
 * 此处理程序的服务排名设置得很低(即低于 `service.ranking` 属性)，因为假设自定义处理程序需要更高的排名。 然而，排名并不是在必要时确保灵活性的绝对最低标准。
 
 此处理程序为 Blueprint 页面提供优先权。Live Copy页面 `/b` （在live copy分支中）移至 `/b_msm_moved`.

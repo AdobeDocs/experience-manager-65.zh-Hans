@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 0%
@@ -221,7 +222,7 @@ Distiller服务( `DistillerService`)将PostScript、封装的PostScript (EPS)和
 
 >[!NOTE]
 >
-仅在通过SSL（使用LDAPS）保护连接时使用简单身份验证（用户名和密码）。
+>仅在通过SSL（使用LDAPS）保护连接时使用简单身份验证（用户名和密码）。
 
 **兼容模式：**
 
@@ -429,7 +430,7 @@ Microsoft SharePoint配置服务有以下设置可用：
 
 >[!NOTE]
 >
-如果已启用离线支持，然后又禁用它，则会立即更新用户的设置配置文件，或者在用户在线时立即更新配置文件。 如果用户一直在脱机工作，则所有待处理任务都将返回到其“任务”列表，并且其队列中的所有项目（包括待处理表单、任务以及包含验证错误的表单）都将从队列中删除。
+>如果已启用离线支持，然后又禁用它，则会立即更新用户的设置配置文件，或者在用户在线时立即更新配置文件。 如果用户一直在脱机工作，则所有待处理任务都将返回到其“任务”列表，并且其队列中的所有项目（包括待处理表单、任务以及包含验证错误的表单）都将从队列中删除。
 
 **Android：** 允许Android设备连接到服务器。
 
@@ -731,7 +732,7 @@ PDFG清理扫描秒的默认值为 `43200` （12小时）。 作业过期秒数�
 
 >[!NOTE]
 >
-结果文件夹的大小越小， Watched文件夹的性能就越好。 例如，如果观察文件夹的预计负载为每小时1000个文件，请尝试以下模式 `result/%Y%M%D%H` 以便每小时创建一个新的子文件夹。 如果负载较小（例如，每天1000个文件），则可以使用以下模式 `result/%Y%M%D`.
+>结果文件夹的大小越小， Watched文件夹的性能就越好。 例如，如果观察文件夹的预计负载为每小时1000个文件，请尝试以下模式 `result/%Y%M%D%H` 以便每小时创建一个新的子文件夹。 如果负载较小（例如，每天1000个文件），则可以使用以下模式 `result/%Y%M%D`.
 
 **暂存文件夹：** 观察文件夹中舞台文件夹的默认名称。
 
@@ -813,7 +814,7 @@ XSLT转换服务( `XSLTService`)使进程能够对XML文档应用可扩展样式
 
    >[!NOTE]
    >
-   与xfaForm、文档表单和表单变量一起使用的渲染和提交服务始终使用系统用户帐户执行。
+   >与xfaForm、文档表单和表单变量一起使用的渲染和提交服务始终使用系统用户帐户执行。
 
 1. 单击“添加主体”指定用户和组对此服务具有的权限。
 1. “选择承担者”屏幕显示在“用户管理”中配置的用户和组。 如果未显示所需的用户或组，请使用搜索功能查找该用户或组。 单击用户或组名。

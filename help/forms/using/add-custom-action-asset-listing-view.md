@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1351'
-ht-degree: 4%
+source-wordcount: '1333'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +28,7 @@ ht-degree: 4%
 
 此自定义项通过向“资源列表”视图中添加命令“下载平面PDF”的方案进行演示。 此自定义方案允许用户下载单个选定书信的平面PDF。
 
-### 前提条件 {#prerequisites}
+### 先决条件 {#prerequisites}
 
 要完成以下方案或类似方案，您需要了解：
 
@@ -68,7 +69,7 @@ ht-degree: 4%
 
       ![覆盖节点](assets/2_createnodedownloadflatpdf.png)
 
-   1. 单击&#x200B;**确定**。文件夹结构将在apps文件夹中创建。
+   1. 单击 **确定**. 文件夹结构将在apps文件夹中创建。
 
       单击&#x200B;**全部保存**。
 
@@ -94,7 +95,7 @@ ht-degree: 4%
         <td><strong>值和描述</strong></td>
         </tr>
         <tr>
-        <td>class</td>
+        <td>类</td>
         <td>字符串</td>
         <td>foundation-collection-action</td>
         </tr>
@@ -150,7 +151,7 @@ ht-degree: 4%
 
       **匹配节点类型：** 已选择
 
-   1. 单击&#x200B;**确定**。文件夹结构将在apps文件夹中创建。 单击&#x200B;**全部保存**。
+   1. 单击 **确定**. 文件夹结构将在apps文件夹中创建。 单击&#x200B;**全部保存**。
 
 1. 在js文件夹中，创建一个名为formaction.js的文件，该文件包含以下步骤的按钮操作处理代码：
 
@@ -240,7 +241,7 @@ ht-degree: 4%
 
       **匹配节点类型：** 已选择
 
-   1. 单击&#x200B;**确定**。文件夹结构将在apps文件夹中创建。
+   1. 单击 **确定**. 文件夹结构将在apps文件夹中创建。
 
    1. 单击&#x200B;**全部保存**。
 

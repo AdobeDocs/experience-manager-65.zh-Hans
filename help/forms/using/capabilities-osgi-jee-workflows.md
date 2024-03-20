@@ -3,10 +3,11 @@ title: OSGi和AEM Forms JEE工作流中以表单为中心的AEM工作流的操�
 description: OSGi和AEM Forms JEE工作流中以表单为中心的AEM工作流的操作和功能
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '925'
-ht-degree: 23%
+source-wordcount: '933'
+ht-degree: 20%
 
 ---
 
@@ -120,12 +121,12 @@ OSGi和AEM Forms JEE Workflows上以表单为中心的AEM Workflow (AEM Forms on
   <tr>
    <td>潦草签名</td>
    <td>支持</td>
-   <td>支持<br />。 </td>
+   <td>支持<br /> </td>
   </tr>
   <tr>
    <td>自定义电子邮件模板</td>
    <td>支持</td>
-   <td>支持<br />。 </td>
+   <td>支持<br /> </td>
   </tr>
   <tr>
    <td>定义任务优先级</td>
@@ -170,7 +171,7 @@ OSGi和AEM Forms JEE Workflows上以表单为中心的AEM Workflow (AEM Forms on
   <tr>
    <td>将已完成的任务渲染为自适应表单或PDF文档</td>
    <td>支持</td>
-   <td>支持 [4]</td>
+   <td>支持[4]</td>
   </tr>
   <tr>
    <td>与通信管理集成</td>

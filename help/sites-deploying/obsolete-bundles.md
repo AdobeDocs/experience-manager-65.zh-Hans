@@ -7,7 +7,8 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 0defbdc7-d414-4662-a31f-88c8d63d68eb
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%

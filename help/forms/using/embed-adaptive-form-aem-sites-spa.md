@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: b549f176-409a-4d81-8c2b-73d0dd0c6649
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 4%
@@ -25,7 +26,7 @@ AEM Forms允许表单开发人员将自适应表单和交互式通信无缝嵌�
 
 有关在非SPA AEM Sites中嵌入自适应表单的信息，请参阅 [在AEM Sites页面中嵌入自适应表单或交互式通信](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 要使用AEM Forms SPA Container组件在AEM Sites SPA中嵌入自适应表单或交互式通信，请确保您已安装：
 

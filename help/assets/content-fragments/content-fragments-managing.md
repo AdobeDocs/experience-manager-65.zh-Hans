@@ -4,10 +4,11 @@ description: 了解如何使用Assets控制台管理您的AEM内容片段，即H
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1715'
-ht-degree: 78%
+source-wordcount: '1712'
+ht-degree: 76%
 
 ---
 
@@ -68,7 +69,7 @@ ht-degree: 78%
 
         片段标题。
 
-        强制.
+        必填。
 
       * **描述**
 
@@ -103,7 +104,7 @@ ht-degree: 78%
    * 将片段另存为ZIP文件；您可以定义是否包含元素、变体、元数据。
 
 * **创建**
-* **签出**
+* **结帐**
 * **属性**
 
    * 允许您查看和/或编辑片段的元数据。
@@ -134,7 +135,7 @@ ht-degree: 78%
 
 >[!CAUTION]
 >
->要编辑内容片段，您需要相应的权限。如果您遇到问题，请联系您的系统管理员。
+>要编辑内容片段，您需要相应的权限。 如果您遇到问题，请联系您的系统管理员。
 
 1. 使用 **资产** 控制台以导航到内容片段的位置。
 1. 打开片段进行编辑，方法是：
@@ -299,16 +300,16 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-评论包括：
+>评论包括：
 >
-* 所有资源的标准功能
-* 在时间线中制造
-* 与片段资源相关
+>* 所有资源的标准功能
+>* 在时间线中制造
+>* 与片段资源相关
 >
-注释（适用于内容片段）包括：
+>注释（适用于内容片段）包括：
 >
-* 在片段编辑器中输入
-* 特定于片段中选定的文本区段
+>* 在片段编辑器中输入
+>* 特定于片段中选定的文本区段
 >
 
 例如：
@@ -339,7 +340,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!NOTE]
 >
-比较片段时无法编辑片段内容。
+>比较片段时无法编辑片段内容。
 
 ![比较](assets/cfm-managing-06.png)
 
@@ -357,19 +358,19 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 >[!CAUTION]
 >
-如果您的片段基于模型，则应确保[模型已发布](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
+>如果您的片段基于模型，则应确保[模型已发布](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)。
 >
-如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
+>如果发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
 必须发布内容片段才能在发布环境中使用。 它们可以发布：
 
 * 创建后；使用 [资产控制台中可用的操作](#actions-for-a-content-fragment-assets-console).
-* 从[内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor).
+* 从 [内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor).
 * 当您 [发布使用片段的页面](/help/sites-authoring/content-fragments.md#publishing)；片段将在页面引用中列出。
 
 >[!CAUTION]
 >
-片段发布和/或引用后，当作者再次打开片段进行编辑时，AEM 将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
+>片段发布和/或引用后，当作者再次打开片段进行编辑时，AEM 将显示警告。 这是为了警告，对片段所做的更改也会影响引用的页面。
 
 ## 删除片段 {#deleting-a-fragment}
 
@@ -380,11 +381,11 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!NOTE]
    >
-   **删除**&#x200B;操作不能作为快速操作使用。
+   >**删除**&#x200B;操作不能作为快速操作使用。
 
 3. 从工具栏中选择&#x200B;**删除**。
 4. 确认&#x200B;**删除**&#x200B;操作。
 
    >[!CAUTION]
    >
-   如果片段已在页面中被引用，您将看到一条警告消息，需要您确认是否继续执行&#x200B;**强制删除**。片段及其内容片段组件将从任何内容页面中删除。
+   >如果片段已在页面中被引用，您将看到一条警告消息，需要您确认是否继续执行&#x200B;**强制删除**。片段及其内容片段组件将从任何内容页面中删除。

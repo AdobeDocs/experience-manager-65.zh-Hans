@@ -5,10 +5,11 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1791'
-ht-degree: 8%
+source-wordcount: '1739'
+ht-degree: 6%
 
 ---
 
@@ -16,7 +17,7 @@ ht-degree: 8%
 
 将资产迁移到时 [!DNL Adobe Experience Manager]，则需要考虑以下几个步骤。 从当前主目录中提取资源和元数据超出了此文档的范围，因为不同实施之间的资产和元数据差别很大，但本文档介绍了如何将这些资产提取到 [!DNL Experience Manager]，应用其元数据，生成演绎版，并将其激活到发布实例。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 在实际执行此方法中的任何步骤之前，请查看并实施 [资产性能调整提示](performance-tuning-guidelines.md). 通过配置最大并发作业等许多步骤，可以大大提高服务器在负载下的稳定性和性能。 加载系统资产后，其他步骤（如配置文件数据存储）的执行难度会大得多。
 

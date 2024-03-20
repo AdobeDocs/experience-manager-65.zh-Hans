@@ -2,9 +2,10 @@
 title: SPA 中的复合组件
 description: 了解如何创建自己的复合组件，这些组件由使用AEM单页应用程序(SPA)编辑器的其他组件组成。
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '783'
 ht-degree: 1%
 
 ---
@@ -21,7 +22,7 @@ ht-degree: 1%
 
 本文将以典型卡组件作为示例用例。 信息卡是许多数字体验的公用UI元素，通常由图像和相关文本或标题组成。 作者希望能够拖放整个卡片，但能够单独编辑卡片的图像并自定义关联的文本。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 以下支持复合组件用例的模型需要以下先决条件。
 

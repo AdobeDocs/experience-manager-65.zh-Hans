@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ Gloria登录到AEM实例，单击 **汽车保险续约，** 然后单击 **打�
 
 Sarah收到一封电子邮件，主题为“您的汽车保险续订”。
 
-![代理 UI](assets/agent_ui_email_new.png)
+![代理UI](assets/agent_ui_email_new.png)
 
 #### 亲眼看看 {#see-it-yourself}
 

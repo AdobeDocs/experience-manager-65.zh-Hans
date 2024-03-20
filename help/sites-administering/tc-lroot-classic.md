@@ -4,9 +4,10 @@ description: 了解如何使用Classic UI在Adobe Experience Manager中创建语
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '317'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ ht-degree: 0%
 
    | 语言副本类型 | 描述 |
    |---|---|
-   | auto | 使用父页面的行为 |
+   | 自动 | 使用父页面的行为 |
    | 忽略 | 不创建此页面及其子页面的副本 |
    | `<language>+` （例如，French+） | 从该语言复制页面及其所有子页面 |
    | `<language>` （例如，法语） | 仅复制该语言的页面 |

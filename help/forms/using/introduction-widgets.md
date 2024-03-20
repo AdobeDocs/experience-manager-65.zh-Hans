@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: 3458471a-9815-463e-8044-68631073863c
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 2%
@@ -251,7 +252,7 @@ Forms(自适应表单和HTML5表单)使用 [jQuery](https://jquery.com/)， [Bac
    <td><p>允许的状态数。 </p> <p>两个用于自适应表单（开、关），三个用于HTML5表单（开、关、中性）。</p> </td>
   </tr>
   <tr>
-   <td>状态</td>
+   <td>州/省</td>
    <td><p>元素的当前状态。</p> <p>两个用于自适应表单（开、关），三个用于HTML5表单（开、关、中性）。</p> </td>
   </tr>
  </tbody>

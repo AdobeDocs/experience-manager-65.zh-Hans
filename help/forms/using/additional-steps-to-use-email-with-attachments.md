@@ -2,7 +2,8 @@
 title: 获取带有附件的电子邮件的其他步骤
 description: 了解如何在无法检索JEE平台上的AEM Forms的带附件的电子邮件时修复错误。
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 553aef43342a709dd8e645279999a71b9e0185f0
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%

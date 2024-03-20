@@ -7,7 +7,8 @@ topic-tags: adaptive_forms, author
 docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 7%

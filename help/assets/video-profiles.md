@@ -10,7 +10,8 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3770'
 ht-degree: 7%
@@ -65,7 +66,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件。 此现成
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
-   <td>auto</td>
+   <td>自动</td>
    <td>360</td>
    <td>是</td>
    <td>730</td>
@@ -75,7 +76,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件。 此现成
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
-   <td>auto</td>
+   <td>自动</td>
    <td>540</td>
    <td>是</td>
    <td>2000<br /> </td>
@@ -85,7 +86,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件。 此现成
   </tr>
   <tr>
    <td><p>MP4 H.264 (mp4)</p> </td>
-   <td>auto</td>
+   <td>自动</td>
    <td>720<br /> </td>
    <td>是</td>
    <td>3000<br /> </td>

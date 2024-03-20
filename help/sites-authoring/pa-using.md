@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 4%
@@ -149,7 +150,7 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
    * 显示（链接类型和数量）
    * 隐藏未获得任何点击量的链接所对应的叠加图
 
-* 实时版
+* 实时
 
    * 显示排名最前的（获胜方或失败方）
    * 排除最低的%

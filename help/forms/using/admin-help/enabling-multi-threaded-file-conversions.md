@@ -7,9 +7,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '870'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ PDF Generator允许您为某些类型的文件启用多线程文件转换。 多
 
 >[!NOTE]
 >
-Microsoft® Excel、Microsoft® Visio、Microsoft® Project或Microsoft® Publisher不支持多线程文件转换。
+>Microsoft® Excel、Microsoft® Visio、Microsoft® Project或Microsoft® Publisher不支持多线程文件转换。
 
 每个OpenOffice或PDFMaker实例都使用单独的用户帐户启动。 您添加的每个用户帐户都必须是具有对Forms Server计算机的管理权限的有效用户。 在群集环境中，同一组用户必须对群集的所有节点有效。
 
@@ -67,7 +68,7 @@ Microsoft® Excel、Microsoft® Visio、Microsoft® Project或Microsoft® Publis
 
    >[!NOTE]
    >
-   确保已将系统用户和PDFG用户角色分配给“user1”和“user2” 。 要将PDFG角色分配给用户，请参阅 [添加用户帐户](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >确保已将系统用户和PDFG用户角色分配给“user1”和“user2” 。 要将PDFG角色分配给用户，请参阅 [添加用户帐户](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. 此外，在/etc/sudoers文件中，通过在行首添加数字符号(#)来查找并注释掉此行：
 
@@ -88,7 +89,7 @@ Microsoft® Excel、Microsoft® Visio、Microsoft® Project或Microsoft® Publis
 
 >[!NOTE]
 >
-OpenOffice必须安装在所有PDFG用户可以访问的目录位置。 您可以通过以PDFG用户身份登录并检查是否可以正常启动OpenOffice来验证这一点。
+>OpenOffice必须安装在所有PDFG用户可以访问的目录位置。 您可以通过以PDFG用户身份登录并检查是否可以正常启动OpenOffice来验证这一点。
 
 ### 添加用户帐户 {#add-a-user-account}
 
@@ -97,7 +98,7 @@ OpenOffice必须安装在所有PDFG用户可以访问的目录位置。 您可�
 
    >[!NOTE]
    >
-   如果为OpenOffice配置用户，OpenOffice实例数不能大于此步骤中指定的用户帐户数。
+   >如果为OpenOffice配置用户，OpenOffice实例数不能大于此步骤中指定的用户帐户数。
 
 1. 重新启动Forms服务器。
 

@@ -1,22 +1,23 @@
 ---
 title: 配置帐户环境
-description: Adobe Experience Manager (AEM)允许您配置帐户和创作环境的某些方面。
+description: Adobe Experience Manager (AEM) 提供了配置帐户和创作环境的某些方面的功能。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 16%
+source-wordcount: '228'
+ht-degree: 32%
 
 ---
 
 # 配置帐户环境{#configuring-your-account-environment}
 
-Adobe Experience Manager (AEM)允许您配置帐户和创作环境的某些方面。
+Adobe Experience Manager (AEM) 提供了配置帐户和创作环境的某些方面的功能。
 
 使用 [帐户设置](#account-settings) 和 [用户首选项](#user-preferences) 可以定义以下选项和首选项：
 
@@ -33,7 +34,8 @@ Adobe Experience Manager (AEM)允许您配置帐户和创作环境的某些方�
 * **语言**
 用于创作环境UI的语言。 从可用列表中选择所需语言。
 
-* **窗口管理**&#x200B;选择：
+* **窗口管理**
+选择：
 
    * 将在新窗口中打开多个Windows（默认）页面。
    * 单个窗口页面在当前窗口中打开。

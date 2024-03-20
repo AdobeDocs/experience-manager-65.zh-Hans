@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author, interactive-communications
 feature: Adaptive Forms, Foundation Components
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 5%
@@ -37,7 +38,7 @@ AEM Forms提供了一个组件，您可以将该组件添加到网站页面。 A
 * **[资产浏览器](/help/forms/using/embed-adaptive-form-aem-sites.md#asset-browser)**
 您创建的所有表单和交互式通信均可在Assets下使用。 您可以将表单作为资源拖放到页面上。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 要在使用可编辑模板的AEM Sites页面中嵌入自适应表单或交互式通信，请确保在相关模板中将AEM表单组件配置为允许的组件。 有关更多信息，请参阅 **策略和属性（布局容器）** 中的部分 [创建页面模板](/help/sites-authoring/templates.md).
 

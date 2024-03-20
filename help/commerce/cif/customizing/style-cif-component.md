@@ -9,10 +9,11 @@ feature: Commerce Integration Framework
 kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '2531'
-ht-degree: 3%
+source-wordcount: '2338'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +31,7 @@ ht-degree: 3%
 
 ![您将构建的内容](../assets/style-cif-component/what-you-will-build.png)
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 需要本地开发环境才能完成本教程。 这包括正在运行的AEM实例，该实例已配置并连接到Adobe Commerce实例。 查看的要求和步骤 [使用AEM设置本地开发](../develop.md).
 
@@ -223,7 +224,7 @@ ht-degree: 3%
 
 1. 选择 **页面信息** 菜单并单击 **查看已发布的项目**：
 
-   ![以发布的形式查看](../assets/style-cif-component/view-as-published.png)
+   ![查看已发布的项目](../assets/style-cif-component/view-as-published.png)
 
    这将打开页面，而不加载任何AEM创作JavaScript，因为它将显示在已发布的网站上。 请注意，url具有查询参数 `?wcmmode=disabled` 已附加。 在开发CSS和JavaScript时，最好使用此参数来简化页面，而无需使用AEM创作中的任何内容。
 
@@ -477,7 +478,7 @@ AEM还会尝试缓存客户端库以提高性能。 有时，在代码部署后�
 
 ## 其他资源 {#additional-resources}
 
-* [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
+* [AEM项目原型](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)
 * [设置本地AEM开发环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
 * [客户端库](/help/sites-developing/clientlibs.md)

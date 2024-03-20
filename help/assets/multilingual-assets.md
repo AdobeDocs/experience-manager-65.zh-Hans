@@ -1,32 +1,33 @@
 ---
 title: 多语言资源
-description: 了解如何自动执行将资产（包括二进制文件、元数据和标记）翻译成多种语言的工作流。
+description: 了解如何自动执行工作流以将资源（包括二进制文件、元数据和标记）翻译成多种语言。
 contentOwner: AG
 feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '187'
-ht-degree: 8%
+source-wordcount: '179'
+ht-degree: 7%
 
 ---
 
-# 多语言资产 {#multilingual-assets}
+# 多语言资源 {#multilingual-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
 | AEM 6.5 | 本文 |
 
-[!DNL Adobe Experience Manager Assets] 允许您自动执行资产（包括二进制文件、元数据和标记）上的翻译工作流，以生成其他语言的资产以用于多语言项目。
+[!DNL Adobe Experience Manager Assets] 允许您自动执行资产（包括二进制文件、元数据和标记）的翻译工作流，以生成其他语言的资产以用于多语言项目。
 
-要自动化翻译工作流，您需要将翻译服务提供商与 [!DNL Experience Manager] 并创建项目以将资产翻译成多种语言。 [!DNL Experience Manager] 支持人工翻译工作流和机器翻译工作流。
+要自动化翻译工作流，您可以将翻译服务提供商与集成 [!DNL Experience Manager] 并创建项目以将资产翻译成多种语言。 [!DNL Experience Manager] 支持人工翻译工作流和机器翻译工作流。
 
-人工翻译：已翻译资产将返回并导入 [!DNL Experience Manager]. 当您的翻译提供商与集成时 [!DNL Experience Manager]，资源会在以下时间之间自动发送： [!DNL Experience Manager] 以及翻译提供商。
+人工翻译：已翻译的资产将返回并导入到 [!DNL Experience Manager]. 当您的翻译提供商与集成时 [!DNL Experience Manager]，资源会在以下时间之间自动发送： [!DNL Experience Manager] 以及翻译提供商。
 
-机器翻译：机器翻译服务会立即翻译资产的元数据和标记。
+机器翻译：机器翻译服务将立即翻译资产的元数据和标记。
 
 翻译资产包括以下各项：
 

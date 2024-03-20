@@ -8,7 +8,8 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 0%
@@ -191,12 +192,12 @@ You can find the packages at these locations:
   </tr>
   <tr>
    <td><code>runAllPreUpgradeTasks()</code></td>
-   <td>动作</td>
+   <td>操作</td>
    <td>运行列表中的所有升级前维护任务。</td>
   </tr>
   <tr>
    <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td>
-   <td>动作</td>
+   <td>操作</td>
    <td>运行升级前维护任务，其名称作为参数给定。</td>
   </tr>
   <tr>
@@ -211,22 +212,22 @@ You can find the packages at these locations:
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td>
-   <td>动作</td>
+   <td>操作</td>
    <td>显示升级前维护任务的确切运行时间，其名称作为参数提供。</td>
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunState(preUpgradeTaskName)</code></td>
-   <td>动作</td>
+   <td>操作</td>
    <td>显示升级前维护任务的上次运行状态，其名称作为参数提供。</td>
   </tr>
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
-   <td>动作</td>
+   <td>操作</td>
    <td><p>运行所有升级前运行状况检查，并将其状态保存在名为的文件中 <code>preUpgradeHCStatus.properties</code> 在sling home的路径上。 如果 <code>shutDownOnSuccess</code> 参数设置为 <code>true</code>，AEM实例将关闭，但前提是所有升级前运行状况检查的状态均为“正常”。</p> <p>属性文件用作任何未来升级的前提条件<br /> 并且如果升级前运行状况检查，升级过程将停止<br /> 执行失败。 如果您要忽略预升级的结果<br /> 运行状况检查并启动升级，但您可以删除文件。</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
-   <td>动作</td>
+   <td>操作</td>
    <td>列出所有导入的包，这些包在<br /> 升级到指定的AEM版本。 目标AEM版本必须为<br /> 以参数形式给出。</td>
   </tr>
  </tbody>

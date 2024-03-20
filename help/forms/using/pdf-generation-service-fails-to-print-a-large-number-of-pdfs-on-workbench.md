@@ -1,7 +1,9 @@
 ---
 title: PDF生成无法使用WorkBench打印大量PDF
 description: 当客户通过通过WorkBench实施的服务生成大量PDF时，打印服务将失败。
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+exl-id: f3746b8e-4c38-447a-b5bf-d11fc77556f7
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '775'
 ht-degree: 0%

@@ -1,21 +1,22 @@
 ---
 title: 针对EMC Documentum&reg；用户的连接器备份战略
-description: 了解如何为EMC Documentum&reg；用户创建Connector备份战略。
+description: 了解如何为EMC Documentum&reg；用户创建Connector的备份战略。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b759b936-5907-4311-a5cc-60f321476368
-source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '155'
 ht-degree: 0%
 
 ---
 
-# 针对EMC Documentum®用户的连接器备份战略 {#backup-strategy-for-connector-for-emc-documentum-users}
+# 针对EMC Documentum®用户的Connector备份战略 {#backup-strategy-for-connector-for-emc-documentum-users}
 
-如果安装了Connector for EMC Documentum® ，除了本章中的说明外，您的备份和恢复战略还必须包括备份（或恢复）安装ECM系统的计算机。 (请参阅ECM Documentum®文档)。
+如果安装了Connector for EMC Documentum® ，则除了本章中的说明之外，您的备份和恢复策略还必须包括备份（或恢复）安装ECM系统的计算机。 (请参阅ECM Documentum®文档)。
 
 使用ECM存储库并执行以下任务来备份AEM表单环境：
 

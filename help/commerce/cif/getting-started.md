@@ -1,17 +1,18 @@
 ---
-title: AEM Content and Commerce快速入门
+title: AEM Content and Commerce 快速入门
 description: 了解如何部署AEM Content and Commerce项目。
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '714'
-ht-degree: 5%
+source-wordcount: '685'
+ht-degree: 3%
 
 ---
 
-# AEM Content and Commerce快速入门 {#start}
+# AEM Content and Commerce 快速入门 {#start}
 
 要开始使用AEM Content and Commerce，您需要安装适用于AEM 6.5的AEM Content and Commerce加载项。
 
@@ -93,6 +94,6 @@ CIF加载项在以下位置提供了一个GraphQL代理servlet： `/api/graphql`
 
 ## 其他资源 {#additional-resources}
 
-- [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
+- [AEM项目原型](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia参考存储](https://github.com/adobe/aem-cif-guides-venia)
 - [Commerce多商店设置](configuring/multi-store-setup.md)

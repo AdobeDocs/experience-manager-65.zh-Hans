@@ -2,10 +2,11 @@
 title: 使用IMS与Adobe Analytics集成
 description: 了解如何使用IMS将AEM与Adobe Analytics集成
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 55%
+source-wordcount: '1042'
+ht-degree: 52%
 
 ---
 
@@ -133,7 +134,7 @@ ht-degree: 55%
 
 ## 为 Adobe Developer Console 集成项目存储的详细信息 {#details-stored-for-the-ims-integration-project}
 
-从“Adobe Developer 项目”控制台中，您可以查看所有集成项目的列表：
+从“Adobe Developer项目”控制台中，您可以查看所有集成项目的列表：
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
@@ -217,7 +218,7 @@ ht-degree: 55%
 
 1. 要初始化与Adobe Analytics的连接，请单击 **连接到Analytics**.
 
-   如果连接成功，则将显示消息&#x200B;**连接成功**。
+   如果连接成功，则消息为 **连接成功** 将显示。
 
 1. 选择 **确定** 在消息上。
 

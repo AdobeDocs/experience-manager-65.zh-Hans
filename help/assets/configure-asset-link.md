@@ -5,16 +5,17 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3148'
-ht-degree: 1%
+source-wordcount: '3060'
+ht-degree: 0%
 
 ---
 
 # 为AdobeAsset Link配置Experience Manager Assets {#adobe-asset-link}
 
-[AdobeAsset Link (AAL)](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html) 在内容创建过程中，可简化创意专业人士与营销人员之间的协作。 它将Adobe Experience Manager资产与Creative Cloud桌面应用程序Adobe InDesign、Adobe Photoshop和Adobe Illustrator连接起来。 AdobeAsset Link面板允许创意人员访问和修改存储在AEM Assets中的内容，而无需离开他们最熟悉的创意应用程序。
+[AdobeAsset Link (AAL)](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html) 在内容创建过程中，可简化创意专业人士与营销人员之间的协作。 它将Adobe Experience Manager Assets与Creative Cloud桌面应用程序Adobe InDesign、Adobe Photoshop和Adobe Illustrator连接起来。 AdobeAsset Link面板允许创意人员访问和修改存储在AEM Assets中的内容，而无需离开他们最熟悉的创意应用程序。
 
 要配置要与Asset Link一起使用的Experience Manager Assets，请实施以下任务。 使用Experience Manager管理员帐户进行配置：
 
@@ -48,7 +49,7 @@ Adobe建议您安装 [adobe-asset-link-config](https://experience.adobe.com/#/do
 
 1. 要打开包管理器，请在Experience ManagerWeb界面中，访问 **[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 包共享]**. 安装 `adobe-asset-link-config` 包。
 
-1. 访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 运营]** > **[!UICONTROL Web 控制台]**。定位 **[!UICONTROL AdobeGranite OAuth IMS提供程序]** 配置，然后单击以编辑它。
+1. 访问 **[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**. 定位 **[!UICONTROL AdobeGranite OAuth IMS提供程序]** 配置，然后单击以编辑它。
 
    设置以下属性并保存更改。
 
@@ -287,6 +288,6 @@ Experience Manager提供仅用于置入(FPO)的演绎版。 这些FPO呈现版�
 
 >[!MORELIKETHIS]
 >
->* [关于 Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
+>* [关于 Adobe Asset Link](https://helpx.adobe.com/cn/cn/enterprise/using/adobe-asset-link.html)
 >* [在Creative Cloud桌面应用程序中使用Asset Link管理资源](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)
->* [as a Cloud Service配置Adobe Experience Manager Assets](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html).
+>* [配置Adobe Experience Manager Assetsas a Cloud Service](https://helpx.adobe.com/cn/enterprise/using/configure-aem-assets-for-asset-link.html).

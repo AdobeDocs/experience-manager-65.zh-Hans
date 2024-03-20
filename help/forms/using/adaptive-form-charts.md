@@ -4,7 +4,9 @@ description: 在自适应表单中使用图表使表单更具信息性。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 53a6914792bb15773c8f91a2bb6295ab69b3b1bf
+exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 0%
@@ -190,5 +192,3 @@ chartType属性指定图表的类型。 可能的值为饼图、圆环图、条�
 1. 单击完成以保存规则。
 
 现在，您可以从下拉列表中选择图表类型，然后单击刷新以重新绘制图表。
-
-

@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '845'
+source-wordcount: '846'
 ht-degree: 3%
 
 ---
@@ -30,19 +31,19 @@ ht-degree: 3%
   <tr>
    <td><p>缩进</p> </td>
    <td>模块缩进<p> </p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12.7毫米</p> </td>
    <td><p>任意数字</p> </td>
   </tr>
   <tr>
    <td>数字最小宽度</td>
    <td>使用罗马数字以外的编号列表时，应用于项目符号/编号字段的最小宽度</td>
-   <td>8.0mm</td>
+   <td>8.0毫米</td>
    <td>任意数字</td>
   </tr>
   <tr>
    <td><p>罗马数字最小宽度</p> </td>
    <td><p>使用罗马数字时要应用于项目符号/数字字段的最小宽度</p> </td>
-   <td><p>12.7mm</p> </td>
+   <td><p>12.7毫米</p> </td>
    <td><p>任意数字</p> </td>
   </tr>
   <tr>
@@ -66,7 +67,7 @@ ht-degree: 3%
   <tr>
    <td><p>目标高亮颜色</p> </td>
    <td><p>创建通信应用程序中的目标高亮颜色</p> </td>
-   <td><p>90;155;245</p> </td>
+   <td><p>90；155；245</p> </td>
    <td><p>R；G；B格式的任意RGB</p> </td>
   </tr>
   <tr>
@@ -78,7 +79,7 @@ ht-degree: 3%
   <tr>
    <td><p>内容高亮颜色</p> </td>
    <td><p>创建通信应用程序中的内容高亮颜色</p> </td>
-   <td><p>210;225;245</p> </td>
+   <td><p>210；225；245</p> </td>
    <td><p>R；G；B格式的任意RGB</p> </td>
   </tr>
   <tr>
@@ -90,7 +91,7 @@ ht-degree: 3%
   <tr>
    <td><p>字段高亮颜色</p> </td>
    <td><p>创建通信应用程序中的字段高亮颜色</p> </td>
-   <td><p>210;225;245</p> </td>
+   <td><p>210；225；245</p> </td>
    <td><p>R；G；B格式的任意RGB</p> </td>
   </tr>
   <tr>
@@ -157,7 +158,7 @@ ht-degree: 3%
    <td><p>数据编辑格式</p> </td>
    <td><p>编辑数据格式。 当将数据写入字符串或从字符串中解析数据时，将使用此选项</p> </td>
    <td><p>locale=en_US； dateFormat=dd-MM-yyyy； numberDecimalSeparator=.； numberGroupSeparator=，； numberUseGroupSeparator=true</p> </td>
-   <td>--<p> </p> </td>
+   <td>—<p> </p> </td>
   </tr>
   <tr>
    <td><p>管理发布时的书信实例</p> </td>
@@ -240,7 +241,7 @@ ht-degree: 3%
   <tr>
    <td><p>CM用户根目录</p> </td>
    <td><p>包含所有通信管理用户资产的文件夹的URL</p> </td>
-   <td><p>--</p> </td>
+   <td><p>—</p> </td>
    <td><p>有效的文件夹位置</p> </td>
   </tr>
   <tr>

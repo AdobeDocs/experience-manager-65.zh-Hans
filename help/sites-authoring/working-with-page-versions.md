@@ -2,7 +2,8 @@
 title: 使用内容页面版本
 description: 在Adobe Experience Manager中创建、比较和恢复页面版本。
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 65%

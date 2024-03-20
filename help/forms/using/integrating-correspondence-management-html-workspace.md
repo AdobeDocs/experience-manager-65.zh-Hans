@@ -5,9 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -56,7 +57,7 @@ AEM Forms工作区支持管理表单和文档的任务分配和完成活动。 �
 
 1. 单击管理操作配置文件。 此时将显示“管理操作配置文件”对话框。 确保正确选择呈现进程和提交进程。
 1. 要打开带有数据XML文件的信件，请在“准备数据流程”中浏览并选择适当的数据文件。
-1. 单击确定。
+1. 单击“确定”。
 1. 定义起点输出和任务附件的变量。 定义的变量包含“起始点输出”和“任务附件”数据。
 1. （可选）要在工作流中添加其他用户，请拖动活动选取器并对其进行配置，然后将其分配给用户。 编写自定义包装器（下面给出一个示例）或下载并安装DSC（下面给出一个示例）以提取信件模板、起点输出和任务附件。
 

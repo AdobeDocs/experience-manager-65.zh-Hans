@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -24,7 +25,7 @@ AEM Forms允许用户将自适应表单另存为草稿。 草稿功能为用户�
 
 要自定义用户数据的存储，您必须实施 [草稿数据](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) 和 [提交数据](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) 服务。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 * 启用 [Forms Portal组件](/help/forms/using/enabling-forms-portal-components.md)
 * 创建 [Forms Portal页面](/help/forms/using/creating-form-portal-page.md)

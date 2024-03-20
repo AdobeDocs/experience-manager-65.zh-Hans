@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 12%
@@ -39,7 +40,7 @@ ht-degree: 12%
 
 本文档将详细介绍其中的每个步骤。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 * Adobe Campaign Standard的管理员访问权限
    * 如果您需要有关如何设置和配置Adobe Campaign Standard的更多详细信息，请参阅 [Adobe Campaign Standard文档。](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)

@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '6130'
 ht-degree: 1%
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 交互式通信可集中管理个性化交互式信函的创建、编排和交付。 利用打印作为Web的主通道，您可以在创建交互式通信的Web输出时最大限度地减少重复工作。
 
-### 前提条件 {#prerequisites}
+### 先决条件 {#prerequisites}
 
 以下是创建交互式通信的先决条件：
 

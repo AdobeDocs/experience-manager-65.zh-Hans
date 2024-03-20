@@ -6,7 +6,8 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -39,7 +40,7 @@ ht-degree: 0%
 1. 查找用户，如中所述 [查看用户的外出信息](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. 单击要更改的用户名。
 1. 从 *用户名* 位于当前列表中，选择在办公室中或外出办公室。
-1. 单击保存。
+1. 单击“保存”。
 
 ## 为用户添加外出日期范围 {#add-an-out-of-office-date-range-for-a-user}
 
@@ -47,7 +48,7 @@ ht-degree: 0%
 1. 单击要更改的用户名。
 1. 单击添加日期范围。
 1. 输入开始时间和结束时间。 您可以单击日历图标以选择日期。 如果不指定结束时间，则会将用户无限期地设置为不在办公室。
-1. 单击保存。
+1. 单击“保存”。
 
 ## 为外出任务分配用户 {#assign-a-user-for-out-of-office-tasks}
 
@@ -65,4 +66,4 @@ ht-degree: 0%
       如果列表中未显示相应的用户名，请单击“查找用户”，然后使用“查找用户”对话框搜索该用户。 从列表中选择适当的用户，然后单击“选择用户”。 您还可以单击“查找用户”对话框中的“查看用户计划”来查看选定用户的外出计划。
 
    1. 如果有任何不应发送给默认用户的进程，请单击添加例外，然后选择该进程并从列表中选择另一个用户。 您还可以选择“不分配”，以将任务保持分配给不在办公室的用户。
-   1. 单击保存。
+   1. 单击“保存”。

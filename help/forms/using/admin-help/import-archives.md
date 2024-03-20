@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1470'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -45,7 +46,7 @@ ht-degree: 0%
    * 要添加REST端点，请单击添加REST并指定端点的名称和描述。 请注意添加REST端点页面上显示的REST调用URL。
    * 要删除端点，请选中该端点旁边的复选框，然后单击“删除”。
 
-1. 单击“下一个”。
+1. 单击“下一步”。
 1. 如果LCA中的进程或服务具有配置参数，则会显示“配置参数”页，您可以在此配置服务参数并单击下一步。
 1. 在“配置安全性概要文件”页上，根据需要进行任何更改：
 
@@ -112,7 +113,7 @@ ht-degree: 0%
    * 要添加REST端点，请单击添加REST并指定端点的名称和描述。 请注意添加REST端点页面上显示的REST调用URL。
    * 要删除端点，请选中该端点旁边的复选框，然后单击“删除”。
 
-1. 单击“下一个”。
+1. 单击“下一步”。
 1. 如果LCA中的进程或服务具有配置参数，则会显示“配置参数”页，您可以在此配置服务参数并单击下一步。
 1. 在“配置安全性概要文件”页上，您可以进行所需的任何更改：
 

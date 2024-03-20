@@ -2,10 +2,11 @@
 title: 使用IMS与Adobe Target集成
 description: 了解如何使用IMS将AEM与Adobe Target集成。
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 43%
+source-wordcount: '1533'
+ht-degree: 40%
 
 ---
 
@@ -89,7 +90,7 @@ ht-degree: 43%
 
 1. 依次选择 **添加到项目**&#x200B;和 **API**：
 
-   ![Adobe Developer Console](assets/integration-target-io-10.png)
+   ![Adobe Developer控制台](assets/integration-target-io-10.png)
 
 1. 依次选择 **Adobe Target** 和&#x200B;**下一步**：
 
@@ -196,7 +197,7 @@ ht-degree: 43%
 1. 选择您的配置。
 1. 从工具栏中选择&#x200B;**检查运行状况**，然后选择&#x200B;**查看**。
 
-   ![Adobe IMS 配置](assets/integrate-target-io-12.png)
+   ![Adobe IMS配置](assets/integrate-target-io-12.png)
 
 1. 如果成功，您将看到以下消息：
 
@@ -241,7 +242,7 @@ ht-degree: 43%
 
    * **API类型**：REST
 
-   * **A4T Analytics Cloud配置**：选择用于Target活动目标和量度的Analytics Cloud配置。 如果您在定位内容时使用 Adobe Analytics 作为报告源，则需要此项。如果您看不到云配置，请参阅中的注释 [配置A4T Analytics Cloud配置](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+   * **A4T Analytics Cloud配置**：选择用于Target活动目标和量度的Analytics Cloud配置。 如果您在定位内容时使用Adobe Analytics作为报表源，则需要此项。 如果您看不到云配置，请参阅中的注释 [配置A4T Analytics Cloud配置](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
 
    * **使用准确定位**：默认情况下，此复选框处于选中状态。 如果选中，云服务配置会等待上下文加载完后再加载内容。 请参阅以下注释。
 
@@ -259,7 +260,7 @@ ht-degree: 43%
 
 1. 单击 **连接到Target** 初始化与Adobe Target的连接。
 
-   如果连接成功，则将显示消息&#x200B;**连接成功**。
+   如果连接成功，则消息为 **连接成功** 将显示。
 
 1. 选择 **确定** 在消息上，后接 **确定** ，以便您确认配置。
 

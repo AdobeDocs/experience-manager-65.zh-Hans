@@ -5,9 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools,Asset Management
 exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2110'
+source-wordcount: '2088'
 ht-degree: 1%
 
 ---
@@ -211,11 +212,11 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 
 使用Geometrixx资产编辑器模板创建的基本页面如下所示：
 
-![assetshare5](assets/assetshare5.png)
+![资产共享5](assets/assetshare5.png)
 
 要自定义资产编辑器页面，请使用sidekick中的元素。 可从访问的资产编辑器页面 **Geometrixx新闻中心** 是基于此模板的页面的自定义版本：
 
-![assetshare6](assets/assetshare6.png)
+![资产共享6](assets/assetshare6.png)
 
 #### 将资产编辑器设置为从资产共享页面打开 {#setting-which-asset-editor-opens-from-an-asset-share-page}
 
@@ -376,7 +377,7 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 | 操作 | 描述 |
 |---|---|
 | [!UICONTROL 下载] | 允许用户将选定的资产下载到其计算机。 |
-| [!UICONTROL 编辑器] | 允许用户编辑图像（交互式编辑） |
+| [!UICONTROL 编辑者] | 允许用户编辑图像（交互式编辑） |
 | [!UICONTROL 灯箱] | 将资产保存到“灯箱”中，您可以在其中执行其他操作。 在处理多个页面中的资产时，这非常有用。 |
 | [!UICONTROL 锁定] | 允许用户锁定资源。 默认情况下不启用此功能，必须在组件列表中启用此功能。 |
 | [!UICONTROL 引用] | 单击此项可显示在哪些页面上正在使用资产。 |

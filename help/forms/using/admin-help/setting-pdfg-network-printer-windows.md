@@ -7,9 +7,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -49,7 +50,7 @@ PDFG网络打印机允许用户从任何支持打印的应用程序生成PDF文�
    * 要调用的服务的操作的名称
    * 在服务或进程的component.xml文件中指定的输入参数的名称。 PDF文档用作该输入参数的值。
 
-1. 单击保存。
+1. 单击“保存”。
 
 如果要还原为原始的默认电子邮件文本，请单击“还原电子邮件内容”。
 
@@ -65,4 +66,4 @@ PDFG网络打印机允许用户从任何支持打印的应用程序生成PDF文�
 
    ***注意&#x200B;**：如果用户密码更改，则用户必须在其计算机上重新安装PDFG网络打印机。 无法从管理控制台更新密码。*
 
-1. 单击确定。
+1. 单击“确定”。

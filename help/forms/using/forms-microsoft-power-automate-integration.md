@@ -3,13 +3,14 @@ title: 如何连接自适应表单数据并将其发送到Microsoft&reg； Power
 description: 将自适应表单数据连接并发送到Microsoft&reg； Power Automate的分步指南。
 keywords: 自适应Forms Microsoft Power Automate，将自适应Forms数据提交到Microsoft Power Automate
 feature: Adaptive Forms, Foundation Components
-source-git-commit: 27eb8a53a198efd2cb059a2884b3b5ed60730806
+exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 15%
 
 ---
-
 
 # 连接自适应表单数据并将其提交到Microsoft® Power Automate {#connect-adaptive-form-with-power-automate}
 
@@ -192,4 +193,3 @@ ht-degree: 15%
 * [创建自适应表单](create-an-adaptive-form-core-components.md)
 * [配置提交操作](configuring-submit-actions.md)
 * [适用于Microsoft的Adobe Experience Manager Connector®Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
-

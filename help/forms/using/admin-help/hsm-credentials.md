@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1323'
+source-wordcount: '1322'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ AEM forms Digital Signatures可以使用存储在HSM上的凭据来应用服务�
 1. 在管理控制台中，单击“设置”>“信任存储区管理”>“HSM凭据”，然后单击“添加”。
 1. 在“配置文件名称”框中，键入用于标识别名的字符串。 此值用作某些数字签名操作（如“签名签名字段”操作）的属性。
 1. 在“PKCS11库”框中，键入服务器上HSM客户端库的完全限定路径。 例如，`c:\Program Files\LunaSA\cryptoki.dll`。在群集环境中，此路径对于群集中的所有服务器必须相同。
-1. 单击“测试HSM连通性”。 如果AEM Forms能够连接到HSM设备，则会显示一条消息，说明HSM可用。 单击“下一个”。
+1. 单击“测试HSM连通性”。 如果AEM Forms能够连接到HSM设备，则会显示一条消息，说明HSM可用。 单击“下一步”。
 1. 使用令牌名称、插槽ID或插槽列表索引来标识凭据在HSM上的存储位置。
 
    * **令牌名称：** 对应于要使用的HSM分区的名称（例如HSMPART1）。
@@ -38,14 +39,14 @@ AEM forms Digital Signatures可以使用存储在HSM上的凭据来应用服务�
    * **插槽列表索引：** 如果选择“槽列表索引”，请将“槽信息”设置为与槽相对应的整数。 这是一个基于0的索引，这意味着如果客户端首先在HSMPART1分区中注册，则使用SlotListIndex值0引用HSMPART1。
 
 1. 在“令牌固定”框中，键入访问HSM密钥所需的密码，然后单击“下一步”。
-1. 在“凭据”框中，选择一个凭据。 单击保存。
+1. 在“凭据”框中，选择一个凭据。 单击“保存”。
 
 ## 在HSM设备脱机时创建HSM凭据的别名 {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
 
 1. 在管理控制台中，单击“设置”>“信任存储区管理”>“HSM凭据”，然后单击“添加”。
 1. 在“配置文件名称”框中，键入用于标识别名的字符串。 此值用作某些数字签名操作（如“签名签名字段”操作）的属性。
 1. 在“PKCS11库”框中，键入服务器上HSM客户端库的完全限定路径。 例如，`c:\Program Files\LunaSA\cryptoki.dll`。在群集环境中，此路径对于群集中的所有服务器必须相同。
-1. 选中Offline Profile Creation复选框。 单击“下一个”。
+1. 选中Offline Profile Creation复选框。 单击“下一步”。
 1. 在HSM设备列表中，选择存储凭据的HSM设备的制造商。
 1. 在“插槽类型”列表中，选择“插槽ID”、“插槽索引”或“令牌名称”，然后在“插槽信息”框中指定一个值。 AEM Forms使用这些设置来确定凭据在HSM中的存储位置。
 

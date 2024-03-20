@@ -4,7 +4,8 @@ description: 了解在OSGi服务器上保护AEM Forms安全的建议和最佳实
 topic-tags: Security
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%

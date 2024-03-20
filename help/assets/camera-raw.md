@@ -1,14 +1,15 @@
 ---
-title: ”[!DNL Adobe Camera Raw] 支持处理数字资产”
+title: '"[!DNL Adobe Camera Raw] 支持处理数字资产”'
 description: 了解如何启用 [!DNL Adobe Camera Raw] 中的支持 [!DNL Adobe Experience Manager Assets]
 contentOwner: AG
 role: Admin
 feature: Developer Tools
 exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 1%
+source-wordcount: '340'
+ht-degree: 0%
 
 ---
 
@@ -18,17 +19,17 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->功能仅支持JPEG呈现版本。 它在Windows 64位、Mac OS和RHEL 7.x上受支持。
+>该功能仅支持JPEG呈现。 它在Windows 64位、Mac OS和RHEL 7.x上受支持。
 
-启用 [!DNL Camera Raw] 中的支持 [!DNL Experience Manager Assets]，请按照以下步骤操作：
+要启用 [!DNL Camera Raw] 中的支持 [!DNL Experience Manager Assets]，请按照以下步骤操作：
 
-1. 下载 [[!DNL Camera Raw] 包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) 起始日期 [!DNL Software Distribution].
+1. 下载 [[!DNL Camera Raw] 包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) 从 [!DNL Software Distribution].
 1. 访问 `https://[aem_server]:[port]/workflow`. 打开 **[!UICONTROL DAM更新资产]** 工作流。
 1. 编辑 **[!UICONTROL 进程缩略图]** 步骤。
 1. 在中提供以下配置 **[!UICONTROL 缩略图]** 选项卡：
 
    * **[!UICONTROL 缩略图]**： `140:100:false, 48:48:false, 319:319:false`
-   * **[!UICONTROL 跳过 MIME 类型]**: `skip:image/dng, skip:image/x-raw-(.*)`
+   * **[!UICONTROL 跳过MIME类型]**： `skip:image/dng, skip:image/x-raw-(.*)`
 
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
@@ -49,13 +50,13 @@ ht-degree: 1%
 
    ![chlimage_1-130](assets/chlimage_1-336.png)
 
-1. 单击“**[!UICONTROL 保存]**”。
+1. 单击&#x200B;**[!UICONTROL 保存]**。
 
 >[!NOTE]
 >
->确保上述配置与 **[!UICONTROL 具有Camera Raw和DNG处理步骤的DAM更新资源示例]** 配置。
+>确保上述配置与 **[!UICONTROL 具有Camera Raw和DNG处理步骤的示例DAM更新资源]** 配置。
 
-您现在可以将Camera Raw文件导入Assets。 安装Camera Raw包并配置所需的工作流后， **[!UICONTROL 图像调整]** 选项将显示在侧窗格列表中。
+您现在可以将Camera Raw文件导入到Assets中。 安装Camera Raw包并配置所需的工作流后， **[!UICONTROL 图像调整]** 选项将显示在侧窗格的列表中。
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 
@@ -63,14 +64,14 @@ ht-degree: 1%
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*图：使用选项对图像进行轻量级编辑。*
+*图：使用选项对图像进行轻量编辑。*
 
-将编辑内容保存到之后 [!DNL Camera Raw] 图像，新演绎版 `AdjustedPreview.jpg` 为图像生成。 对于其他图像类型，不包括 [!DNL Camera Raw]，则更改会反映在所有演绎版中。
+将编辑内容保存到 [!DNL Camera Raw] 图像，新演绎版 `AdjustedPreview.jpg` 为图像生成。 对于其他图像类型，不包括 [!DNL Camera Raw]时，更改会反映在所有演绎版中。
 
 ## 最佳实践、已知问题和限制 {#best-practices}
 
 该功能具有以下限制：
 
-* 功能仅支持JPEG呈现版本。 它在Windows 64位、Mac操作系统和RHEL 7.x上受支持。
+* 该功能仅支持JPEG呈现。 它在Windows 64位、Mac OS和RHEL 7.x上受支持。
 * RAW和DNG格式不支持元数据写回。
-* 此 [!DNL Camera Raw] 库在每次可处理的总像素数方面存在限制。 目前，它最多可以在文件的长边处理65000像素，或者处理无论首先遇到什么标准的512 MP文件。
+* 此 [!DNL Camera Raw] 库在每次可处理的总像素数方面存在限制。 目前，它最多可在文件的长边处理65000个像素，或者处理任何先满足条件的文件，最大为512 MP。

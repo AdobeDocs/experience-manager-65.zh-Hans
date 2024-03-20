@@ -7,7 +7,8 @@ topic-tags: platform
 content-type: reference
 feature: Tagging
 exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
-source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '98'
 ht-degree: 20%

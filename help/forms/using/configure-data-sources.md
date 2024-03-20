@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 6b24067c1808475044a612f21d5d4d2793c13e17
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2073'
 ht-degree: 1%
@@ -93,7 +94,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->配置RESTful、SOAP和OData服务的云服务需要配置云服务文件夹。
+配置RESTful、SOAP和OData服务的云服务需要配置云服务文件夹。
 
 AEM中的所有云服务配置都整合到中 `/conf` AEM存储库中的文件夹。 默认情况下， `conf` 文件夹包含 `global` 文件夹，您可以在该文件夹中创建云服务配置。 但是，您需要为云配置手动启用它。 您还可以创建其他文件夹，位于 `conf` 创建和组织云服务配置。
 
@@ -191,8 +192,8 @@ OData服务由其服务根URL标识。 要在AEM云服务中配置OData服务，
 
 >[!NOTE]
 >
->表单数据模型支持 [OData版本4](https://www.odata.org/documentation/).
->有关配置Microsoft Dynamics 365的分步指南（在线或内部部署），请参阅 [Microsoft Dynamics OData配置](/help/forms/using/ms-dynamics-odata-configuration.md).
+表单数据模型支持 [OData版本4](https://www.odata.org/documentation/).
+有关配置Microsoft Dynamics 365的分步指南（在线或内部部署），请参阅 [Microsoft Dynamics OData配置](/help/forms/using/ms-dynamics-odata-configuration.md).
 
 1. 转到 **[!UICONTROL “工具”>“Cloud Service”>“数据源”]**. 选择以选择要创建云配置的文件夹。
 
@@ -206,7 +207,7 @@ OData服务由其服务根URL标识。 要在AEM云服务中配置OData服务，
 
    >[!NOTE]
    >
-   >选择OAuth 2.0身份验证类型以使用OData端点作为服务根连接到Microsoft Dynamics服务。
+   选择OAuth 2.0身份验证类型以使用OData端点作为服务根连接到Microsoft Dynamics服务。
 
 1. 选择 **创建** 以创建OData服务的云配置。
 

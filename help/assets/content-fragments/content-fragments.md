@@ -4,9 +4,10 @@ description: 了解Adobe Experience Manager (AEM)中的内容片段如何让您�
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1966'
 ht-degree: 70%
 
 ---
@@ -37,7 +38,7 @@ ht-degree: 70%
 本页和以下页面介绍了创建、配置、维护和使用内容片段的任务：
 
 * [为您的实例启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-* [内容片段模型](/help/assets/content-fragments/content-fragments-models.md) – 启用、创建和定义模型
+* [内容片段模型](/help/assets/content-fragments/content-fragments-models.md) – 启用、创建和定义您的模型
 * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 创建内容片段；然后编辑、发布和引用
 * [变体 – 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md) – 创作片段内容并创建主控
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) – 使用片段的 markdown 语法
@@ -93,7 +94,7 @@ ht-degree: 70%
 
 AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，而不只是关注网页。
 
-它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。 这些渠道可以包括：
+它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。这些渠道可以包括：
 
 * 单页面应用程序
 * 本机移动设备应用程序
@@ -101,7 +102,7 @@ AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，�
 
 使用 JSON 导出程序以 JSON 格式进行投放。
 
-AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可包含各种内容类型的模型中定义；包括文本、数值数据、布尔值、日期和时间等。
+AEM 内容片段可用于描述和管理结构化内容。结构化内容在可包含各种内容类型的模型中定义；包括文本、数值数据、布尔值、日期和时间等。
 
 随后，此结构化内容与 AEM 核心组件的 JSON 导出功能一起，可用于将 AEM 内容投放到 AEM 页面以外的渠道。
 
@@ -298,4 +299,4 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 ## 使用示例 {#example-usage}
 
-片段及其元素和变体可用于为多个渠道创建一致的内容。 在设计片段时，必须考虑使用的内容以及使用的位置。
+片段及其元素和变体可用于为多个渠道创建一致的内容。在设计片段时，必须考虑使用的内容以及使用的位置。

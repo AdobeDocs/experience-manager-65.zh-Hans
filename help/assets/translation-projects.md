@@ -5,10 +5,11 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1867'
-ht-degree: 14%
+source-wordcount: '1889'
+ht-degree: 13%
 
 ---
 
@@ -29,9 +30,9 @@ ht-degree: 14%
 
 您可以使用创建和翻译工作流首次生成特定语言的语言副本。 工作流提供了以下选项：
 
-* 只创建结构.
-* 创建翻译项目.
-* 添加到现有翻译项目.
+* 仅创建结构。
+* 创建翻译项目。
+* 添加到现有翻译项目。
 
 ### 只创建结构 {#create-structure-only}
 
@@ -108,7 +109,7 @@ ht-degree: 14%
    >
    >此功能对资源和文件夹均可用。 选择资源而不是文件夹时，将复制语言根之前文件夹的整个层次结构，以创建资源的语言副本。
 
-### 添加到现有翻译项目 {#add-to-existing-translation-project}
+### 添加至现有翻译项目 {#add-to-existing-translation-project}
 
 如果使用此选项，则对于运行以前的翻译工作流后添加到源文件夹中的资产，翻译工作流会运行。 只有新添加的资产才会复制到包含以前翻译的资产的目标文件夹。 在这种情况下，不会创建新的翻译项目。
 
@@ -165,7 +166,7 @@ ht-degree: 14%
 运行此工作流可翻译任何其他资产集，并将其包含在特定区域设置的语言副本中。 在这种情况下，已翻译资产会添加到已包含先前已翻译资产的目标文件夹。 根据选项选择，将为新资产创建翻译项目或更新现有翻译项目。 更新语言副本工作流包含以下选项：
 
 * 创建翻译项目
-* 添加到现有翻译项目
+* 添加至现有翻译项目
 
 ### 创建翻译项目 {#create-a-new-translation-project-1}
 
@@ -210,7 +211,7 @@ ht-degree: 14%
 
 1. 导航至 [!DNL Assets] 用户界面，并打开每个已翻译资产的属性页面以查看已翻译的元数据。
 
-### 添加到现有翻译项目 {#add-to-existing-translation-project-1}
+### 添加至现有翻译项目 {#add-to-existing-translation-project-1}
 
 如果使用此选项，则资源集将添加到现有翻译项目中，以更新所选区域设置的语言副本。
 

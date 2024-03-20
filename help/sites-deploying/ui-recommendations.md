@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: best-practices
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 0%
@@ -96,7 +97,7 @@ Adobe建议客户计划在2018/19年度切换到新UI。 这可以在更新6.5�
  </tbody>
 </table>
 
-### 常见问题 {#faq}
+### 常见问题解答 {#faq}
 
 请参阅知识库文章， [触控UI创作常见问题解答](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html)，以了解详细信息；包括有关经典UI弃用计划的任何信息。
 

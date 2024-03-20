@@ -8,9 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '295'
 ht-degree: 1%
 
 ---
@@ -24,10 +25,10 @@ AEM引入了记录权限更改的功能，以便您以后可以审核这些更�
 增强功能允许对用户的权限和组分配执行审核CRUD（创建、读取、更新、删除）操作。 更具体地说，它会记录：
 
 * 正在创建新用户
-* 正在添加到组的用户
+* 正在添加到组中的用户
 * 现有用户或组的权限更改
 
-默认情况下，这些条目会写入 `error.log` 文件。 为便于监视，建议将它们重定向到单独的日志文件。 有关如何执行此操作的更多信息，请参阅以下段落。
+默认情况下，这些条目会写入 `error.log` 文件。 为了更便于监视，建议将它们重定向到单独的日志文件。 有关如何执行此操作的更多信息，请参阅以下段落。
 
 ## 将输出重定向到单独的日志文件 {#redirecting-the-output-to-a-separate-log-file}
 
@@ -42,7 +43,7 @@ AEM引入了记录权限更改的功能，以便您以后可以审核这些更�
    * **消息模式：** 级别默认值
    * **记录器：** com.adobe.granite.security.user.internal.audit， com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   将两个记录器输入到 **Logger** 字段，则必须输入第一个日志记录器的名称，然后按“+”按钮并输入第二个日志记录器的名称来创建另一个字段。
+   将两个记录器输入到 **Logger** 字段中，必须输入第一个日志记录器的名称，然后按“+”按钮并输入第二个日志记录器的名称来创建另一个字段。
 
 ## 示例输出 {#example-output}
 
@@ -80,7 +81,7 @@ AEM引入了记录权限更改的功能，以便您以后可以审核这些更�
 
 ## 经典 UI {#classic-ui}
 
-在经典UI中，审核日志中记录的有关添加和删除用户的CRUD操作的信息仅限于受影响的用户的ID以及发生更改的时间。
+在经典UI中，审核日志中记录的有关添加和删除用户的CRUD操作的信息，仅限于受影响用户的ID以及发生更改的时间。
 
 例如：
 

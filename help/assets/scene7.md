@@ -9,7 +9,8 @@ feature: Dynamic Media Classic
 role: User, Admin
 mini-toc-levels: 3
 exl-id: 815f577d-4774-4830-8baf-0294bd085b83
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2851'
 ht-degree: 0%
@@ -331,7 +332,7 @@ Dynamic Media Classic内容浏览器允许您直接在Experience Manager中查�
 >* 在经典UI中，您还可以搜索 **Flash** 和 **FXG**. 不支持在触屏优化UI中筛选这些类型。
 >
 >* 搜索视频时，您将搜索单个演绎版。 结果返回原始演绎版（仅&amp;ast；.mp4）和编码的演绎版。
->* 搜索自适应视频集时，您将搜索文件夹和所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，则Experience Manager不会搜索子文件夹。
+* 搜索自适应视频集时，您将搜索文件夹和所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，则Experience Manager不会搜索子文件夹。
 >
 
 **[!UICONTROL 发布状态]**  — 您可以根据发布状态筛选资源： **[!UICONTROL 已取消发布]** 或 **[!UICONTROL 已发布]**. 如果您未选择任何 **[!UICONTROL 发布状态]**，默认情况下，Experience Manager会搜索所有发布状态。

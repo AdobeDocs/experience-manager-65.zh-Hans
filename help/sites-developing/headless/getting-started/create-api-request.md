@@ -2,7 +2,8 @@
 title: 访问和交付内容片段Headless快速入门指南
 description: 了解如何使用AEM Assets REST API管理内容片段，以及如何使用GraphQL API无头交付内容片段内容。
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 43%

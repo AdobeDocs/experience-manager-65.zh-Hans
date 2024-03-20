@@ -5,7 +5,8 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 0%
@@ -79,7 +80,7 @@ ht-degree: 0%
 
 1. 将摘要URL定义为包含服务器详细信息的XPath表达式，以及 **ptoSummaryNodePath**.
 
-   XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
+   XPath： `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
 在AEM Forms工作区中，当您打开任务时，摘要URL将访问CRX节点，并且HTML渲染器会显示摘要。
 

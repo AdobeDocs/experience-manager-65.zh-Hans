@@ -7,7 +7,8 @@ topic-tags: forms-manager
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1967'
 ht-degree: 2%
@@ -78,7 +79,7 @@ AEM Forms支持以下资源类型：
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>创建时间</td> 
+   <td>已创建</td> 
    <td>所有</td> 
    <td>指定资源创建时间的只读值。</td> 
   </tr> 

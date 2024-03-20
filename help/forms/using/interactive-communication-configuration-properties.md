@@ -8,7 +8,8 @@ topic-tags: interactive-communications
 docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 6%
@@ -134,7 +135,7 @@ ht-degree: 6%
   <tr> 
    <td>字体列表名称</td> 
    <td>创建自适应Forms和交互式通信时可用的字体列表。</td> 
-   <td><p>格鲁吉亚</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>影响</p> <p>Palatino Linotype</p> </td> 
+   <td><p>Georgia</p> <p>Book Antiqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>影响</p> <p>Palatino Linotype</p> </td> 
    <td>所有有效的Adobe服务器字体</td> 
   </tr> 
  </tbody> 

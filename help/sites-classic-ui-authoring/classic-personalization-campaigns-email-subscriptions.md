@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '913'
+source-wordcount: '917'
 ht-degree: 0%
 
 ---
@@ -54,7 +55,7 @@ ht-degree: 0%
    >
    >您的对话框可能会因电子邮件服务提供商的不同而有所不同。
 
-1. 在 **表单** 选项卡，选择用户提交表单后要前往的感谢页面（如果留空，表单会在提交时重新显示）。 单击&#x200B;**确定**。An **电子邮件ID** 组件显示在表单中，通过它，可创建表单，用户可在其中提交电子邮件地址以订阅或取消订阅邮件列表。
+1. 在 **表单** 选项卡，选择用户提交表单后要前往的感谢页面（如果留空，表单会在提交时重新显示）。 单击 **确定**. An **电子邮件ID** 组件显示在表单中，通过它，可创建表单，用户可在其中提交电子邮件地址以订阅或取消订阅邮件列表。
 1. 添加 **提交** 按钮组件 **表单** 在sidekick中的部分。
 
    表单已准备就绪。 发布上述步骤中配置的页面以及 **谢谢** 页面到发布实例。 任何访问页面的潜在订阅者都可以填写表单并订阅配置中提供的列表。

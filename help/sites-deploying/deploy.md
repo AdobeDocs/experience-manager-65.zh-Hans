@@ -7,7 +7,8 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1792'
 ht-degree: 3%
@@ -28,7 +29,7 @@ ht-degree: 3%
 
 * [快速入门](#getting-started)
 
-   * [前提条件](#prerequisites)
+   * [先决条件](#prerequisites)
    * [获取软件](#getting-the-software)
    * [默认本地安装](#default-local-install)
    * [创作和发布安装](#author-and-publish-installs)
@@ -131,7 +132,7 @@ AEM Managed Services是数字体验管理的完整解决方案。 它提供了�
 
 ## 快速入门 {#getting-started}
 
-### 前提条件 {#prerequisites}
+### 先决条件 {#prerequisites}
 
 生产实例在运行官方支持的操作系统的专用计算机上运行时(请参阅 [技术要求](/help/sites-deploying/technical-requirements.md))，则Experience Manager服务器实际上将在任何支持 [**Java™标准版8**](https://www.oracle.com/java/technologies/downloads/#java8).
 

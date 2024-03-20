@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '621'
-ht-degree: 1%
+source-wordcount: '620'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +42,7 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 * **体验**
 重点内容构成了各种体验，在提供给访客的 **接触点**. 有多种类型的体验可用：
 
-   * **Teaser**
+   * **Teasers**
      [Teaser页面/段落](#teasers) 用于控制特定访客 **区段** 专注于他们的兴趣的内容。
 
      Teaser页面可以：
@@ -59,7 +60,7 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 
      这允许与Adobe Target（以前称为Test&amp;Target）集成，后者为营销人员提供了一个转化网站优化工具，让他们拥有必要的功能，以便始终提供与其客户更密切相关的在线内容和选件，从而产生更高的转化。 Adobe Target提供了一个直观的界面，可用于从单个应用程序设计和执行测试、创建受众区段和定位内容。
 
-* **Touchpoints**
+* **接触点**
 
   这些是访客与您的营销活动之间的联系点。 接触点会连接到您创建的体验。
 

@@ -7,9 +7,10 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '597'
 ht-degree: 1%
 
 ---
@@ -55,7 +56,7 @@ ht-degree: 1%
 
       ![覆盖节点](assets/2.png)
 
-   1. 单击&#x200B;**确定**。文件夹结构将在apps文件夹中创建。
+   1. 单击 **确定**. 文件夹结构将在apps文件夹中创建。
 
    1. 单击&#x200B;**全部保存**。
 

@@ -7,10 +7,11 @@ feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2359'
-ht-degree: 11%
+source-wordcount: '2332'
+ht-degree: 10%
 
 ---
 
@@ -113,11 +114,11 @@ ht-degree: 11%
 
    | 元数据导入参数 | 描述 |
    |:---|:---|
-   | [!UICONTROL 批量大小] | 要为其导入元数据的批次中的资源数。 默认值为 50。最大值为100。 |
+   | [!UICONTROL 批次大小] | 要为其导入元数据的批次中的资源数。 默认值为50。 最大值为100。 |
    | [!UICONTROL 字段分隔符] | 默认值为 `,` （逗号）。 您可以指定任何其他字符。 |
    | [!UICONTROL 多值分隔符] | 元数据值的分隔符。 默认值为 `|`. |
    | [!UICONTROL 启动工作流] | 默认为False。 当设置为 `true` 和默认设置对有效 [!UICONTROL DAM元数据回写] 工作流(将元数据写入二进制XMP数据)。 启用工作流会减慢系统速度。 |
-   | [!UICONTROL 资产路径列名称] | 定义包含资产的CSV文件的列名称。 |
+   | [!UICONTROL 资源路径列名称] | 定义包含资产的CSV文件的列名称。 |
 
 1. 单击 **[!UICONTROL 导入]** 工具栏中。 导入元数据后，通知显示在中 [!UICONTROL 通知] 收件箱。
 

@@ -8,9 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2455'
 ht-degree: 0%
 
 ---
@@ -23,7 +24,7 @@ Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF forms
 
 >[!NOTE]
 >
->在使用Forms服务呈现表单之前，请先创建表单设计。 通常，表单设计会在Designer中创建，并保存为XDP文件。 有关创建表单设计的信息，请参阅 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_cn).
+>在使用Forms服务呈现表单之前，请先创建表单设计。 通常，表单设计会在Designer中创建，并保存为XDP文件。 有关创建表单设计的信息，请参阅 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **贷款申请示例**
 

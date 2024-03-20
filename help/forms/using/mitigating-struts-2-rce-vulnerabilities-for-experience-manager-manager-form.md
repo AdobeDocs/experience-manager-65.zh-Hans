@@ -6,13 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-source-git-commit: f928256920499ab4744b5d8173b449c8fa7f3b8d
+exl-id: 73b5aff2-1320-4d9a-8972-54c4fdd3a2c2
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 1%
 
 ---
-
 
 # 缓解Experience Manager Forms的Struts 2漏洞 {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 

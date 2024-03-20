@@ -9,9 +9,10 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '4722'
+source-wordcount: '4680'
 ht-degree: 2%
 
 ---
@@ -50,7 +51,7 @@ ht-degree: 2%
 
 1. [识别热点和图像映射变量](#identifying-hotspot-and-image-map-variables) (仅适用于使用Experience Manager Assets + Dynamic Media的客户)
 
-   首先，标识现有Quickview实施使用的动态变量，以便您可以在Adobe Experience Manager Assets中的轮播横幅创建过程中正确输入热点和图像映射数据。
+   首先，确定现有“快速视图”实施使用的动态变量，以便您可以在Adobe Experience Manager Assets中的轮播横幅创建过程中正确输入热点和图像映射数据。
 
    >[!NOTE]
    >
@@ -222,7 +223,7 @@ ht-degree: 2%
    >对于轮播横幅，您可以调整以下内容：
    >
    >    * 图像显示的持续时间。 默认情况下，每个图像会显示9秒。
-   >    * 动画. 默认情况下，每个幻灯片过渡都是淡入淡出。 您可以将其更改为幻灯片过渡。
+   >    * 动画。 默认情况下，每个幻灯片过渡都是淡入淡出。 您可以将其更改为幻灯片过渡。
    >    * 按钮的样式。 用户可以通过点按每个点或数字来旋转横幅。 您可以更改设置指示器按钮的显示位置（以及数字或点线样式）和大小。
    >    * 更改图像映射的高亮样式或热点图标。
    >    * 在编辑查看器预设之前，请选择预设的样式。 如果未选择样式，则在开始编辑查看器预设时，如果决定更改为其他预设，则会丢失所有更改。
@@ -257,11 +258,11 @@ ht-degree: 2%
 >
 >将热点添加到中的图像时 [交互式图像](/help/assets/interactive-images.md) 对于轮播横幅，热点信息存储在相同的元数据位置。 该位置相对于图像的位置，无论图像是交互式图像还是轮播横幅。 这项功能意味着您可以在任一查看器中轻松重用同一图像，及其定义的热点数据。
 >
-但是，请注意，轮播横幅支持在可能还包含热点的图像上进行图像映射；而交互式图像则不支持。 如果您打算创建使用同一图像的交互式图像或轮播横幅，请记住此规则。 请考虑改用同一图像的单独副本来创建交互式图像和轮播横幅。
+>但是，请注意，轮播横幅支持在可能还包含热点的图像上进行图像映射；而交互式图像则不支持。 如果您打算创建使用同一图像的交互式图像或轮播横幅，请记住此规则。 请考虑改用同一图像的单独副本来创建交互式图像和轮播横幅。
 
 >[!NOTE]
 >
-如果您正在编辑具有热点的交互式图像并裁切图像，则将删除您的热点。
+>如果您正在编辑具有热点的交互式图像并裁切图像，则将删除您的热点。
 
 另请参阅 [添加图像映射](/help/assets/image-maps.md).
 
@@ -299,7 +300,7 @@ ht-degree: 2%
       * 如果您是Experience Manager Sites客户，请选择站点选择器图标（文件夹）以导航到URL。
         >[!NOTE]
         >
-        如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+        >如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
 
       * 如果您是独立客户，请在HREF文本字段中指定链接网页的完整URL路径。
 
@@ -316,9 +317,9 @@ ht-degree: 2%
 
         >[!NOTE]
         >
-        将查看器嵌入体验片段时，不支持轮播横幅中的社交媒体共享工具。
+        >将查看器嵌入体验片段时，不支持轮播横幅中的社交媒体共享工具。
         >
-        要解决此问题，请创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
+        >要解决此问题，请创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -335,7 +336,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-必须将非管理用户添加到 **[!UICONTROL dam-users]** 组才能创建或编辑轮播横幅。 如果您在创建或编辑时遇到问题，请咨询您的系统管理员，管理员可以将您添加到 **[!UICONTROL dam-users]** 组。
+>必须将非管理用户添加到 **[!UICONTROL dam-users]** 组才能创建或编辑轮播横幅。 如果您在创建或编辑时遇到问题，请咨询您的系统管理员，管理员可以将您添加到 **[!UICONTROL dam-users]** 组。
 
 您可以对轮播集执行各种编辑任务，如下所示：
 
@@ -368,7 +369,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   如果您正在编辑具有热点的交互式图像并裁切图像，则将删除您的热点。
+   >如果您正在编辑具有热点的交互式图像并裁切图像，则将删除您的热点。
    >
    >
 
@@ -391,7 +392,7 @@ ht-degree: 2%
 
    ![experience_fragment-carouselbanner-viewerdropdown](assets/experience_fragment-carouselbanner-viewerdropdown.png)
 
-1. 选择&#x200B;**[!UICONTROL 预览]**。
+1. 选择 **[!UICONTROL 预览]**.
 1. 选择图像上的热点或图像映射，以便测试其关联的操作。
 
 **要从查看器列表中预览轮播横幅，请执行以下操作：**
@@ -407,9 +408,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-如果为轮播横幅使用带热点的现有交互式图像，则必须在发布轮播横幅后单独发布交互式图像。
+>如果为轮播横幅使用带热点的现有交互式图像，则必须在发布轮播横幅后单独发布交互式图像。
 >
-此外，如果修改在轮播横幅中使用的预先存在的已发布交互式图像，则必须先发布该交互式图像，然后这些更改才会反映在轮播横幅中。
+>此外，如果修改在轮播横幅中使用的预先存在的已发布交互式图像，则必须先发布该交互式图像，然后这些更改才会反映在轮播横幅中。
 
 请参阅 [发布Dynamic Media资源](/help/assets/publishing-dynamicmedia-assets.md) 有关如何发布轮播横幅的信息。
 
@@ -419,7 +420,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-如果您是Experience Manager Sites客户，则可以通过将交互式媒体组件拖动到页面，将轮播横幅直接添加到页面。 请参阅 [将Dynamic Media资源添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md).
+>如果您是Experience Manager Sites客户，则可以通过将交互式媒体组件拖动到页面，将轮播横幅直接添加到页面。 请参阅 [将Dynamic Media资源添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 但是，如果您是独立的Experience Managerassets客户，则可以手动将轮播横幅添加到网站登陆页面，如本节所述。
 
@@ -433,7 +434,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
-仅当您是独立的Experience Manager Assets客户时，此步骤才适用。
+>仅当您是独立的Experience Manager Assets客户时，此步骤才适用。
 
 此过程的最后一步是将轮播横幅与网站上现有的概览实施集成。 每个概览实施都是独一无二的，因此需要涉及前端IT人员帮助的具体方法。
 

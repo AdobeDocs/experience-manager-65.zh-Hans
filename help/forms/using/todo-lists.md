@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '4024'
 ht-degree: 0%
@@ -162,7 +163,7 @@ AEM Forms工作区具有以下三种类型的待办事项列表：
    >
    >您还可以在附件旁添加注释。
 
-1. 单击 **上传**. 该文件附在表单上。
+1. 单击&#x200B;**上传**。该文件附在表单上。
 
 **查看附件**
 

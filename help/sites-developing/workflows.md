@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 041b1767-8b6c-4887-a70d-abc96a116976
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1460'
 ht-degree: 3%
@@ -42,7 +43,7 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
 >* 对信息位置的更改请参阅 [AEM 6.5中的存储库重组](/help/sites-deploying/repository-restructuring.md) 和 [工作流最佳实践 — 位置](/help/sites-developing/workflows-best-practices.md#locations).
 >
 
-## 型号 {#model}
+## 模型 {#model}
 
 A `WorkflowModel` 表示工作流的定义（模型）。 它由以下部分组成 `WorkflowNodes` 和 `WorkflowTransitions`. 过渡连接节点并定义 *流量*. 模型始终具有开始节点和结束节点。
 
@@ -194,7 +195,7 @@ A `WorkItem` 是通过 `Workflow` 实例 `WorkflowModel`. 它包含 `WorkflowDat
    |---|---|
    | 步骤 1 | 创建 |
    | 步骤 2 | 创建 |
-   | 步骤 3 | 审核 |
+   | 步骤 3 | 审查 |
    | 步骤 4 | 批准 |
    | 步骤 5 | 完成 |
    | 步骤 6 | 完成 |

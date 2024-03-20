@@ -2,9 +2,10 @@
 title: 页面导出程序
 description: 了解如何使用Adobe Experience Manager (AEM)页面导出程序。
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -136,7 +137,7 @@ Adobe Experience Manager (AEM)允许您将页面导出为包括图像的完整�
 * `design`
 设计节点用于复制用于导出页面的设计。 它具有以下特性：
 
-   * 可选.
+   * 可选。
    * 位于下方 `/etc/contentsync/templates/<mysite>`.
    * 使用属性定义 `Name` 设置为 `design`.
    * 节点类型为 `nt:unstructured`.
@@ -150,7 +151,7 @@ Adobe Experience Manager (AEM)允许您将页面导出为包括图像的完整�
 * `generic`
 通用节点用于复制clientlibs等资源 `.js` 或 `.css` 文件到zip文件。 它具有以下特性：
 
-   * 可选.
+   * 可选。
    * 位于下方 `/etc/contentsync/templates/<mysite>`.
    * 无特定名称。
    * 节点类型为 `nt:unstructured`.

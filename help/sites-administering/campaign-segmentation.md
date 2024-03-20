@@ -7,7 +7,8 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1128'
 ht-degree: 7%
@@ -152,7 +153,7 @@ AEM可让您轻松创建和更新区段、Teaser和营销活动。 它还允许�
 
 男性和16至65岁
 
-或
+OR
 
 女性和16至62岁
 

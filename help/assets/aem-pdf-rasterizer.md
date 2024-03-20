@@ -5,9 +5,10 @@ contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools,Renditions
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
-source-git-commit: e6e0ad29bc5b3a644f74427d8d60233c9e26aa03
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '694'
 ht-degree: 0%
 
 ---
@@ -50,7 +51,7 @@ Adobe建议为以下内容使用PDF光栅器库：
 1. 为配置以下参数 **[!UICONTROL PDF光栅器处理程序]** 步骤：
 
    * MIME类型： `application/pdf` 或 `application/postscript`
-   * 命令: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
+   * 命令： `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * 添加缩略图大小：319:319、140:100、48:48。 添加自定义缩略图配置（如有必要）。
 
    的命令行参数 `PDFRasterizer` 命令可以包括以下内容：
@@ -63,7 +64,7 @@ Adobe建议为以下内容使用PDF光栅器库：
 
    * `-i`：输入PDF的路径。 它是必需参数。
 
-   * `-h`: 帮助
+   * `-h`：帮助
 
 1. 要删除中间格式副本，请选择 **[!UICONTROL 删除生成的呈现版本]**.
 1. 要让PDF光栅器生成Web呈现形式，请选择 **[!UICONTROL 生成Web演绎版]**.
@@ -80,7 +81,7 @@ Adobe建议为以下内容使用PDF光栅器库：
 1. 为配置以下参数 **[!UICONTROL PDF光栅器处理程序]** 步骤：
 
    * MIME类型： `application/pdf` 或 `application/postscript`
-   * 命令: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
+   * 命令： `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * 添加缩略图大小： `319:319`， `140:100`， `48:48`. 根据需要添加自定义缩略图配置。
 
    的命令行参数 `PDFRasterizer` 命令可以包括以下内容：
@@ -93,7 +94,7 @@ Adobe建议为以下内容使用PDF光栅器库：
 
    * `-i`：输入PDF的路径。 它是必需参数。
 
-   * `-h`: 帮助
+   * `-h`：帮助
 
 1. 要删除中间格式副本，请选择 **[!UICONTROL 删除生成的呈现版本]**.
 1. 要让PDF光栅器生成Web呈现形式，请选择 **[!UICONTROL 生成Web演绎版]**.

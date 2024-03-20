@@ -6,9 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2452'
 ht-degree: 0%
 
 ---
@@ -228,7 +229,7 @@ CQ标记库包含有用的函数。
 
 * 一个布尔值，用于控制是否应忽略组件层次结构以实现脚本解析。 如果为true，则仅遵循搜索路径。
 
-**示例:**
+**示例：**
 
 ```xml
 <%@taglib prefix="cq" uri="https://www.day.com/taglibs/cq/1.0" %><%
@@ -472,7 +473,7 @@ CQ标记库包含有用的函数。
 
 * 要添加参数的值
 
-**示例:**
+**示例：**
 
 ```xml
 <a title="filter results" href="<cq:requestURL><cq:addParam name="language" value="${bucket.value}"/></cq:requestURL>">${label} (${bucket.count})</a>
@@ -518,7 +519,7 @@ Sling标记库包含有用的Sling函数。
 
 * 一个布尔值，定义是否在包含目标之前刷新输出。
 
-**resource**
+**资源**
 
 * 要包含在当前请求处理中的资源对象。 必须指定资源或路径。 如果同时指定了两者，则资源优先。
 
@@ -595,7 +596,7 @@ Sling标记库包含有用的Sling函数。
 
 * SlingScriptHelper对象，包含方便的脚本方法，主要是sling.include(&#39;/some/other/resource&#39;)，用于在响应中包含其他资源的响应（例如，嵌入标头html代码片段）和sling.getService(foo.bar.Service.class)，以检索Sling中提供的OSGi服务（类表示法，具体取决于脚本语言）。
 
-**resource**
+**资源**
 
 * 要处理的当前资源对象，具体取决于请求的URL。 它与slingRequest.getResource()相同。
 
@@ -619,7 +620,7 @@ l **ogName资源解析程序名称**
 
 **slingName**
 
-**示例:**
+**示例：**
 
 ```xml
 <%@page session="false" %><%

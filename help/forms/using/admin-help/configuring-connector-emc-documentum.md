@@ -6,9 +6,10 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1020'
 ht-degree: 1%
 
 ---
@@ -37,7 +38,7 @@ Connector for EMC Documentum实现了AEM Forms与EMC Documentum之间的通信�
 
 1. 在管理控制台中，单击“服务”>“EMC Documentum连接器”>“配置设置”。
 1. 在“Documentum配置信息”区域中，输入连接代理的主机名或IP地址和端口号。 端口号必须是正整数（例如，1489）。
-1. 单击保存。
+1. 单击“保存”。
 
 ### 配置主体凭据 {#configure-principal-credentials}
 
@@ -51,7 +52,7 @@ Connector for EMC Documentum实现了AEM Forms与EMC Documentum之间的通信�
 1. 在管理控制台中，单击“服务”>“EMC Documentum连接器”>“配置设置”。
 1. 在“Documentum主体凭据信息”区域中，键入具有超级管理员权限的用户名和密码。
 1. 如果在登录期间未提供显式存储库名称，请输入凭据关联的存储库名称。
-1. 单击保存。
+1. 单击“保存”。
 
 ### 更改存储库服务提供程序 {#change-the-repository-service-provider}
 
@@ -69,7 +70,7 @@ Connector for EMC Documentum实现了AEM Forms与EMC Documentum之间的通信�
 
 1. 在管理控制台中，单击“服务”>“EMC Documentum连接器”>“配置设置”。
 1. 在“资料库服务提供程序信息”区域中，选择替代资料库服务提供程序。
-1. 单击保存。
+1. 单击“保存”。
 
 ## 配置存储库凭据 {#configuring-repository-credentials}
 
@@ -78,10 +79,10 @@ Documentum凭据信息在AEM表单系统上下文中使用。 存储库凭据特
 ### 添加存储库凭据 {#add-a-repository-credential}
 
 1. 在管理控制台中，单击“服务”>“EMC Documentum连接器”>“存储库凭据设置”。
-1. 单击添加。此时将显示“Documentum系统凭据信息”页。
+1. 单击“添加”。 此时将显示“Documentum系统凭据信息”页。
 1. 输入存储库的名称。
 1. 输入用户名和密码。
-1. 单击保存。
+1. 单击“保存”。
 
 如果Content Repository Connector for EMC Documentum服务和/或Repository Service for EMC Documentum正在运行，则在将凭据信息存储在数据库中之前，会针对指定的存储库进行验证。 如果凭据无效或存在，则会显示错误消息。
 
@@ -95,7 +96,7 @@ Documentum凭据信息在AEM表单系统上下文中使用。 存储库凭据特
 1. 在管理控制台中，单击“服务”>“EMC Documentum连接器”>“配置设置”。
 1. 单击要编辑其凭据的存储库的名称。
 1. 更改存储库的用户名或密码，或同时更改两者。 （存储库名称是只读的。）
-1. 单击保存。
+1. 单击“保存”。
 
 如果Content Repository Connector for EMC Documentum服务和/或Repository Service for EMC Documentum正在运行，则在将凭据信息存储在数据库中之前，会针对指定的存储库进行验证。 如果凭据无效或存在，则会显示错误消息。
 

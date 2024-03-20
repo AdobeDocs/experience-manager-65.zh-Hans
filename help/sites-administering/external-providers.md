@@ -7,10 +7,11 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -67,7 +68,7 @@ _gaq.push(['_trackPageview']);
 1. 从左窗格中，展开 **Cloud Service配置**.
 1. 双击 **Generic Analytics代码片段** 要打开页面，请执行以下操作：
 
-   ![Generic Analytics Snippet](assets/analytics_genericoverview.png)
+   ![Generic Analytics代码片段](assets/analytics_genericoverview.png)
 
 1. 单击+以使用该对话框添加新配置。 请至少指定一个名称，例如Google Analytics：
 

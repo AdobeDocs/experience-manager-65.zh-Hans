@@ -1,19 +1,20 @@
 ---
-title: 与Adobe Sign集成 |处理用户数据
+title: 与Adobe Sign集成 | 处理用户数据
 description: 了解AEM Forms与Adobe Sign的集成，以在自适应表单中进行电子签名。 它支持各种工作流的多个签名选项。
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '316'
 ht-degree: 0%
 
 ---
 
-# 与Adobe Sign集成 |处理用户数据 {#integration-with-adobe-sign-handling-user-data}
+# 与Adobe Sign集成 | 处理用户数据 {#integration-with-adobe-sign-handling-user-data}
 
 [!DNL AEM Forms] 集成[!DNL  Adobe Sign] 启用自适应表单中的电子签名工作流，以处理法律、销售、工资单、人力资源管理工作流的表单或协议。 它允许单个和多用户签名、顺序和同步签名工作流、以匿名或登录用户身份签名表单以及多种验证用户的方法。
 
@@ -31,4 +32,4 @@ ht-degree: 0%
 
 [!DNL Adobe Sign] 提供一个Web应用程序，允许按参与者搜索协议，并在必要时删除协议。 有关更多信息，请参阅 [Adobe Sign — 功能：删除用户信息](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
 
-配置为使用Forms Portal提交操作的自适应表单的协议数据也保存在Forms Portal数据存储中。 要访问和删除Forms Portal数据存储中的数据，请参阅 [Forms门户 |处理用户数据](/help/forms/using/forms-portal-handling-user-data.md).
+配置为使用Forms Portal提交操作的自适应表单的协议数据也保存在Forms Portal数据存储中。 要访问和删除Forms Portal数据存储中的数据，请参阅 [Forms门户 | 处理用户数据](/help/forms/using/forms-portal-handling-user-data.md).

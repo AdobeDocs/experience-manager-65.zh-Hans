@@ -3,10 +3,12 @@ title: 了解如何将GraphQL与AEM结合使用 — 示例内容和查询
 description: 了解如何将GraphQL与AEM结合使用，通过浏览示例内容和查询来无头提供内容。
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+solution: Experience Manager, Experience Manager Sites
+role: Developer
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1586'
-ht-degree: 74%
+source-wordcount: '1588'
+ht-degree: 83%
 
 ---
 
@@ -22,8 +24,7 @@ ht-degree: 74%
 >* [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 >* [用于内容片段的 AEM GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-
-要开始使用GraphQL查询以及它们如何与AEM内容片段一起使用，查看一些实际示例会有所帮助。
+要开始使用GraphQL查询以及它们如何与AEM内容片段结合使用，看一些实际示例会有所帮助。
 
 有关这方面的帮助，请查看：
 
@@ -38,7 +39,7 @@ ht-degree: 74%
 
 >[!NOTE]
 >
->根据您的实例，您可以直接访问 [AEM GraphQL API中包含的GraphiQL接口](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) 用于提交和测试查询。
+>根据您的实例，您可以直接访问 [AEM GraphQL API 中包含的 GraphiQL 接口](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface)，用于提交和测试查询。
 >
 >例如：`http://localhost:4502/content/graphiql.html`
 
@@ -152,7 +153,7 @@ ht-degree: 74%
 }
 ```
 
-运行时，系统自动扩展查询以包含所有字段：
+在运行时，系统会自动扩展查询，以包含所有字段：
 
 ```graphql
 {
@@ -224,7 +225,7 @@ ht-degree: 74%
 
 ### 示例查询 – 所有城市的名称 {#sample-names-all-cities}
 
-此示例查询是一个直接的查询，用于返回 `name`中所有条目的 `city`架构。
+此示例查询是一个直接的查询，返回 `name`中所有条目的 `city`架构。
 
 **示例查询**
 
@@ -274,7 +275,7 @@ query {
 
 ### 示例查询 – 一个特定城市片段 {#sample-single-specific-city-fragment}
 
-此示例查询是一种返回存储库中特定位置单个片段条目的详细信息的查询。
+此示例查询是用于返回存储库中特定位置的单个片段条目的详细信息的查询。
 
 **示例查询**
 
@@ -315,7 +316,7 @@ query {
 
 ### 示例查询 – 具有指定变体的所有城市 {#sample-cities-named-variation}
 
-如果您创建一个名为“柏林中心”的变体(`berlin_centre`)，对于 `city` 柏林，您可以使用查询返回变体的详细信息。
+如果您创建名为“柏林中心”的变体(`berlin_centre`)，对于 `city` 柏林，您可以使用查询返回变体的详细信息。
 
 **示例查询**
 
@@ -356,14 +357,14 @@ query {
 }
 ```
 
-### 示例查询 – 所有城市的名称 已标记为城市间断 {#sample-names-all-cities-tagged-city-breaks}
+### 示例查询 — 标记为城市分隔符的所有城市的名称 {#sample-names-all-cities-tagged-city-breaks}
 
 如果您：
 
-* 创建各种标记，已命名 `Tourism` ： `Business`， `City Break`， `Holiday`
-* 并将这些标记分配给各种主控变体 `City` 实例
+* 创建各种标签，并命名为 `Tourism` : `Business`, `City Break`, `Holiday`
+* 并将这些标记分配给各种 `City` 实例
 
-然后，您可以使用查询返回 `name` 和 `tags`中所有标记为“城市间断”的条目 `city`架构。
+然后，您可以使用查询返回`city`模式中标记为 City Breaks 的所有条目的 `name` 和 `tags` 的详细信息。
 
 **示例查询**
 
@@ -702,9 +703,9 @@ query {
 }
 ```
 
-### 示例查询 — 德国或瑞士境内人口为400000到999999的所有城市 {#sample-all-cities-d-ch-population}
+### 示例查询 — 德国或瑞士人口为400000到999999的所有城市。 {#sample-all-cities-d-ch-population}
 
-此处筛选了字段组合。 使用 `AND`（隐式）来选择 `population` 范围，使用 `OR`（显式）来选择所需的城市。
+以下是筛选的字段组合。使用 `AND`（隐式）来选择 `population` 范围，使用 `OR`（显式）来选择所需的城市。
 
 **示例查询**
 
@@ -1146,13 +1147,13 @@ query {
 
 ## 使用 WKND 项目的示例查询 {#sample-queries-using-wknd-project}
 
-这些示例查询基于 WKND 项目。它具有以下功能：
+这些示例查询基于 WKND 项目。它包括以下内容：
 
 * 在以下位置提供的内容片段模型：
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * 在以下位置提供的内容片段（和其他内容）：
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
@@ -1332,7 +1333,7 @@ query {
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询以 `fragments` 数组形式传递 `[Article]`。
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询提供 `fragments` 作为数组 `[Article]`.
 
 ```graphql
 {
@@ -1427,7 +1428,7 @@ query {
 
 #### 具有附件的多个内容片段的示例查询 {#sample-wknd-multiple-fragments-attachments}
 
-以下查询返回所有 `attachments`  — 类型为的特定字段（子组） `content-reference`：
+以下查询返回所有 `attachments` – 类型为 `content-reference` 的特定字段（子组）：
 
 >[!NOTE]
 >
@@ -1565,7 +1566,7 @@ query {
 
 此查询查找：
 
-* 类型为的内容片段 `article` 和所有变体
+* `article` 类型和所有变体的内容片段
 
 **示例查询**
 
@@ -1588,11 +1589,11 @@ query {
 }
 ```
 
-### 附加了特定标记的给定模型的内容片段变体示例查询{#sample-wknd-fragment-variations-given-model-specific-tag}
+### 附加了特定标签的给定模型的内容片段变体的示例查询{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 此查询查找：
 
-* 类型为的内容片段 `article` 具有一个或多个标记的变体 `WKND : Activity / Hiking`
+* 带有一个或多个标签为 `WKND : Activity / Hiking` 的变体的 `article` 类型的内容片段
 
 **示例查询**
 
@@ -1666,7 +1667,7 @@ query {
 
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
-| 公司名称 | 单行文本 |  |
+| 公司名称 | 单行文本 | |
 | CEO | 片段引用（单个字段） | [人员](#model-person) |
 | 员工 | 片段引用（多个字段） | [人员](#model-person) |
 
@@ -1676,8 +1677,8 @@ query {
 
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
-| 名称 | 单行文本 |  |
-| 名字 | 单行文本 |  |
+| 名称 | 单行文本 | |
+| 名字 | 单行文本 | |
 | 奖励 | 片段引用（多个字段） | [奖励](#model-award) |
 
 #### 奖励 {#model-award}
@@ -1686,8 +1687,8 @@ query {
 
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
-| 简称/ID | 单行文本 |  |
-| 标题 | 单行文本 |  |
+| 简称/ID | 单行文本 | |
+| 标题 | 单行文本 | |
 
 #### 城市 {#model-city}
 
@@ -1695,10 +1696,10 @@ query {
 
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
-| 名称 | 单行文本 |  |
-| 国家/地区 | 单行文本 |  |
-| 人口 | 数字 |  |
-| 类别 | 标记 |  |
+| 名称 | 单行文本 | |
+| 国家/地区 | 单行文本 | |
+| 人口 | 数字 | |
+| 类别 | 标记 | |
 
 ### 示例内容片段 {#sample-content-fragments}
 
@@ -1716,7 +1717,7 @@ query {
 
 | 姓名 | 名字 | 奖励 |
 |--- |--- |--- |
-| Lincoln | Abe |  |
+| Lincoln | Abe | |
 | Smith | Adam |   |
 | Slade | Cutter | Gameblitz<br>Gamestar |
 | Marsh | Duke |   |   |

@@ -1,5 +1,5 @@
 ---
-title: 建立组件数据与 Adobe Analytics 属性的映射
+title: 将组件数据映射到Adobe Analytics属性
 description: 了解如何使用SiteCatalyst属性映射组件数据。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -7,14 +7,15 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1439'
-ht-degree: 1%
+source-wordcount: '1449'
+ht-degree: 0%
 
 ---
 
-# 建立组件数据与 Adobe Analytics 属性的映射{#mapping-component-data-with-adobe-analytics-properties}
+# 将组件数据映射到Adobe Analytics属性{#mapping-component-data-with-adobe-analytics-properties}
 
 将组件添加到框架中以收集要发送到Adobe Analytics的数据。 用于收集Analytics数据的组件会将数据存储到相应的位置 **CQ变量**. 将此类组件添加到框架时，该框架会显示CQ变量列表，以便您可以将每个变量添加到相应的框架中 **Analytics变量**.
 
@@ -175,19 +176,19 @@ AEM使用命名产品相关变量和事件的约定来命名这些要映射到Ad
 
 1. 三个表（流量、转化、事件）列出了所有可用的Adobe Analytics变量。 属于选定的RSID。 此处显示的映射应该与AEM视图中的映射相同：
 
-   * **流量**:
+   * **流量**：
 
       * 流量变量( `prop1`)映射到CQ变量( `eventdata.downloadLink`)
 
       * 当组件旁边有挂锁时，这意味着该组件继承自父框架，因此无法编辑
 
-   * **转化**:
+   * **转化**：
 
       * 转化变量( `eVar1`)映射到CQ变量( `pagedata.title`)
 
       * 转化变量( `eVar3`)，通过双击CQ变量字段并手动输入代码，映射到内联添加的JavaScript表达式
 
-   * **事件**:
+   * **事件**：
 
       * 事件变量( `event1`)映射到CQ事件( `eventdata.events.pageView`)
 
@@ -197,9 +198,9 @@ AEM使用命名产品相关变量和事件的约定来命名这些要映射到Ad
 >
 >例如，在 `prop3` 您可以添加：
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-发送 *标题* 与其连接的页面的 *sitesection* 使用 *：* （冒号）并以为前缀 *Adobe* 作为 `prop3`
+>发送 *标题* 与其连接的页面的 *sitesection* 使用 *：* （冒号）并以为前缀 *Adobe* 作为 `prop3`
 >
 
 >[!CAUTION]
 >
-在任意给定时间，只能将一个CQ变量映射到Adobe Analytics变量。
+>在任意给定时间，只能将一个CQ变量映射到Adobe Analytics变量。

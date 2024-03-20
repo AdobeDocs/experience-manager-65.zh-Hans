@@ -2,10 +2,11 @@
 title: Adobe Experience Manager Content and Commerce 2021版发行说明
 description: Adobe Experience Manager Content and Commerce 2021年发行说明。
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 13%
+source-wordcount: '1088'
+ht-degree: 12%
 
 ---
 

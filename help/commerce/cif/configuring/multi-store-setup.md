@@ -7,9 +7,10 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '369'
 ht-degree: 2%
 
 ---
@@ -22,7 +23,7 @@ AEM CIF核心组件可用于多个AEM站点结构，并且底层GraphQL客户端
 
 >[!VIDEO](https://video.tv.adobe.com/v/28952/?quality=12)
 
-Live Copy和Language Copy的AEM多站点管理功能与Commerce Integration Framework一起使用，以全局方式跨区域和区域管理站点。
+Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration framework配合使用，以全局方式跨地区和区域管理站点。
 
 建议的设置是在AEM网站与Adobe Commerce商店视图之间使用1:1关系。
 

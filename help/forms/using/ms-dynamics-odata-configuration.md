@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 1%
@@ -37,7 +38,7 @@ AEM Forms附加组件包还包括引用OData配置，可使用该配置快速将
 
 仅当Microsoft实例的运行模式设置为时，表单数据模型中预配置的AEM Dynamics实体和服务才在您的AEM Forms实例上可用 `samplecontent` （默认）。 MS Dynamics ODataCloud Service（OData服务）也可用于其他运行模式。 有关为AEM实例配置运行模式的详细信息，请参阅 [运行模式](/help/sites-deploying/configure-runmodes.md).
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 在开始设置和配置Microsoft Dynamics之前，请确保您具有：
 

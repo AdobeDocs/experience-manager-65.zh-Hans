@@ -2,9 +2,10 @@
 title: 使用API的电子商务集成层
 description: 集成框架允许您将产品数据提取到AEM中并为商业功能构建AEM组件。
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '144'
 ht-degree: 3%
 
 ---

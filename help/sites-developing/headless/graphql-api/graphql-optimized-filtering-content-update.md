@@ -1,21 +1,22 @@
 ---
 title: 更新内容片段以进行优化的 GraphQL 筛选
-description: 了解如何在 Adobe Experience Manager 中更新内容片段以进行优化的 GraphQL 筛选，从而进行 Headless 内容投放。
-source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
+description: 了解如何在Adobe Experience Manager中为优化的GraphQL筛选更新内容片段，以便进行Headless内容交付。
+exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 42%
+source-wordcount: '255'
+ht-degree: 49%
 
 ---
 
-
 # 更新内容片段以进行优化的 GraphQL 筛选 {#updating-content-fragments-for-optimized-graphql-filtering}
 
-要优化GraphQL筛选器的性能，请运行过程以更新内容片段。
+要优化 GraphQL 筛选的性能，可运行一个程序来更新内容片段。
 
 >[!NOTE]
 >
->更新内容片段后，您可以遵循以下推荐： [优化GraphQL查询](/help/sites-developing/headless/graphql-api/graphql-optimization.md).
+>更新内容片段后，可遵循[优化 GraphQL 查询](/help/sites-developing/headless/graphql-api/graphql-optimization.md)的建议。
 
 ## 前提条件 {#prerequisites}
 
@@ -31,18 +32,18 @@ ht-degree: 42%
 
 1. 在对话框中，按以下方式设置这两个参数：
 
-   * **ContentFragmentMigration：Enabled** ： `1`
+   * **ContentFragmentMigration：已启用** ： `1`
    * **ContentFragmentMigration：强制** ： `1`
 
 1. **保存** 规范 — 更新过程启动。
 
-1. 等待该过程完成。 当属性为 `cfGlobalVersion` 显示于 `/content/dam` 并且将设置为 `1`.
+1. 请等待该过程完成。 当属性为 `cfGlobalVersion` 显示于 `/content/dam` 并且设置为 `1`.
 
 1. 返回到OSGi配置以取消激活该过程。
 
    在的对话框中 **内容片段迁移作业配置** 按以下方式设置这两个参数：
 
-   * **ContentFragmentMigration：Enabled** ： `0`
+   * **ContentFragmentMigration：已启用** ： `0`
    * **ContentFragmentMigration：强制** ： `0`
 
 ## 限制 {#limitations}

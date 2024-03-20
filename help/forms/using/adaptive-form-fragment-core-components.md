@@ -4,7 +4,9 @@ description: 自适应Forms提供了一种机制，可创建在任何自适应�
 topic-tags: author
 keywords: 添加自适应表单片段， 自适应表单片段， 创建表单片段， 将片段添加到自适应表单， 管理片段
 feature: Adaptive Forms, Core Components
-source-git-commit: 518207a0d8a95ef17b0972855a58f124fb215c85
+exl-id: 4a1ba259-8eb5-408f-8ee7-4868f98cca03
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 5%

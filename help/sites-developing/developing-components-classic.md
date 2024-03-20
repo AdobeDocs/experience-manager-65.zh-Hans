@@ -7,10 +7,11 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2384'
-ht-degree: 1%
+source-wordcount: '2340'
+ht-degree: 0%
 
 ---
 
@@ -89,15 +90,15 @@ JSP脚本文件 `global.jsp` 用于提供对用于呈现组件的任何JSP脚本
 
 * 通过 `currentPage` 中引入的对象 `global.jsp`：
 
-  此 `currentPage` 对象是页面的实例(请参阅 [AEM API](https://helpx.adobe.com/cn/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html))。 page类提供了一些访问内容的方法。
+  此 `currentPage` 对象是页面的实例(请参阅 [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html))。 page类提供了一些访问内容的方法。
 
-  示例: `String pageTitle = currentPage.getTitle();`
+  示例： `String pageTitle = currentPage.getTitle();`
 
 * Via `currentNode` 中引入的对象 `global.jsp`：
 
   此 `currentNode` 对象是节点的实例(请参阅 [JCR API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html))。 可以通过访问节点的属性 `getProperty()` 方法。
 
-  示例: `String pageTitle = currentNode.getProperty("jcr:title");`
+  示例： `String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## JSP标记库 {#jsp-tag-libraries}
 
@@ -269,7 +270,7 @@ JSP脚本文件 `global.jsp` 用于提供对用于呈现组件的任何JSP脚本
    >对话框定义取决于UI：
    >
    >* 触屏优化UI： `textimage/cq:dialog`
-   >* 经典 UI: `textimage/dialog`
+   >* 经典UI： `textimage/dialog`
 
 1. 编辑组件元数据：
 
@@ -386,7 +387,7 @@ JSP脚本文件 `global.jsp` 用于提供对用于呈现组件的任何JSP脚本
 
    ![chlimage_1-63](assets/chlimage_1-63a.png)
 
-1. 单击&#x200B;**全部保存**。该组件已准备好进行测试。
+1. 单击 **全部保存**. 该组件已准备好进行测试。
 1. 以Geometrixx（如英语/公司）打开页面。
 1. 切换到设计模式并激活图像（扩展）。
 1. 切换回编辑模式并将其添加到段落系统。 在下一张图片中，您可以看到原始图像组件与您创建的组件之间的差异。

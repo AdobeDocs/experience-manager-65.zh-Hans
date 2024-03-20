@@ -8,9 +8,10 @@ content-type: reference
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '2969'
 ht-degree: 0%
 
 ---
@@ -497,13 +498,13 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
    * 组：客户端上下文
 
 1. 在“创建组件”对话框中，单击每一页上的“下一步”，直到启用“确定”按钮，然后单击“确定”。
-1. 单击全部保存。
+1. 单击“全部保存”。
 
 ### 创建“地理位置编辑”对话框 {#create-the-geoloc-edit-dialog}
 
 上下文存储组件需要一个“编辑”对话框。 地理位置编辑对话框包含一条静态消息，指示没有要配置的属性。
 
-1. 右键单击 `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` 节点并单击 复制。
+1. 右键单击 `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` 节点，然后单击复制。
 1. 右键单击 `/apps/myapp/contextstores/geoloc` 节点，然后单击粘贴。
 1. 删除/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items节点下的所有子节点：
 
@@ -524,7 +525,7 @@ window.CQMobileSlider["geometrixx-outdoors"] = {
    | text | 字符串 | geoloc组件无需配置。 |
    | xtype | 字符串 | 静态 |
 
-1. 单击全部保存。
+1. 单击“全部保存”。
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
@@ -585,7 +586,7 @@ init.js.jsp文件在页面加载Client Context时执行。 到那时，将加载
    </div>
    ```
 
-1. 单击全部保存。
+1. 单击“全部保存”。
 
 ### 将组件添加到客户端上下文 {#add-the-component-to-client-context}
 

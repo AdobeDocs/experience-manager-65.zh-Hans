@@ -5,9 +5,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1059'
 ht-degree: 1%
 
 ---
@@ -57,7 +58,7 @@ ht-degree: 1%
   <tr>
    <td>getdirectchildcategories</td>
    <td>ProcessManagementStartpointService</td>
-   <td>getDirectChildCategories2</td>
+   <td>getdirectchildcategories2</td>
    <td>它会获取某个类别的所有直接子级。</td>
   </tr>
   <tr>

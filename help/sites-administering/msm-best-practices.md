@@ -4,10 +4,11 @@ description: 查找由Adobe工程和咨询团队编译的最佳实践，帮助�
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1604'
-ht-degree: 40%
+source-wordcount: '1599'
+ht-degree: 35%
 
 ---
 
@@ -29,7 +30,7 @@ MSM 是用于自动化内容部署的可配置框架。实施通常涉及网站�
 >
 >有关使用MSM的更多信息，请参阅知识库文章：
 >
->* [解决 MSM 问题和常见问题](troubleshoot-msm.md)
+>* [MSM问题疑难解答和常见问题](troubleshoot-msm.md)
 >
 
 >[!NOTE]
@@ -67,7 +68,7 @@ MSM 是用于自动化内容部署的可配置框架。实施通常涉及网站�
 
 这意味着组件将被视为聚合，并且在转出时，组件本身及其所有子组件都将替换为 Blueprint 中的组件。这意味着，如果本地将资源添加到此类组件中，它将在转出时移至 Blueprint 的内容中。
 
-为了支持组件的嵌套，以便在转出中维护本地添加的组件，必须将组件声明为容器。例如，默认的parsys声明为容器，以便支持本地添加的内容。
+为了支持组件的嵌套，以便在转出中维护本地添加的组件，必须将组件声明为容器。 例如，默认的parsys声明为容器，以便支持本地添加的内容。
 
 >[!NOTE]
 >
@@ -148,7 +149,7 @@ MSM 可通过两种方式来帮助创建多语言网站：
 
    * 要完全转出页面移动，同时在Live Copy中的旧位置删除相应的页面，请执行以下操作：
 
-      * 将新创建的配置放置在标准转出配置的前面。
+      * 将新创建的配置放置在标准转出配置之前。
 
         标准转出配置将负责删除旧位置的页面。
 
@@ -171,7 +172,7 @@ MSM 转出配置是高度自定义的。自动化转出可能会产生深远的�
 
 在使用[转出触发器](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` 时，您应考虑：
 
-* 使用 `onModify` 触发器自动化转出可能会对创作性能产生负面影响，因为它们会在每次修改页面后触发转出。**
+* 使用自动化转出 `onModify` 触发器可能会对创作性能产生负面影响，因为它们会在之后触发转出 *每* 页面修改。
 
 * 转出结果可能与预期结果不同：
 

@@ -1,19 +1,20 @@
 ---
-title: 内容片段 – 删除注意事项
-description: 在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
+title: 内容片段 – 关于删除的注意事项
+description: 在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
 feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '509'
+source-wordcount: '510'
 ht-degree: 79%
 
 ---
 
 # 内容片段 – 删除注意事项 {#content-fragments-delete-considerations}
 
-在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
+在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
 
 ## 权限 – 删除或不删除 {#permissions-delete-or-not-delete}
 
@@ -24,7 +25,7 @@ ht-degree: 79%
 1. **内容片段作为单个实体。**
 
    * **用例**：需要编辑/更新内容片段的用户 – **并删除整个片段**。
-   * **权限**：此 [删除](/help/sites-administering/security.md#actions) 权限可以是 [通过用户和/或组管理分配](/help/sites-administering/security.md#managing-permissions).
+   * **权限**：和 [删除](/help/sites-administering/security.md#actions) 权限可以是 [通过用户和/或组管理分配](/help/sites-administering/security.md#managing-permissions).
 
 2. **构成内容片段的多个子实体；例如，变体、子节点。**
 
@@ -83,7 +84,7 @@ ht-degree: 79%
 
 这些 `remove` 权限必须为 [在CRXDE Lite中使用访问控制列表进行管理](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-此 `add` 和 `modify` 权限也可以在CRXDE Lite中管理，也可以使用“用户管理”控制台进行管理。
+此 `add` 和 `modify` 权限也可以在CRXDE Lite中管理，或者使用“用户管理”控制台进行管理。
 
 例如，定义 `remove` 组的权限 `content-authors-no-delete`：
 

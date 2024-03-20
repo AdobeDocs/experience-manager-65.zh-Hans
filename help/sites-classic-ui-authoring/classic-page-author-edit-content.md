@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1829'
 ht-degree: 16%
@@ -89,7 +90,7 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 
 这适用于以下资产类型（某些资产取决于页面/段落系统）：
 
-| 资产类型 | 结果组件类型 |
+| 资源类型 | 结果组件类型 |
 |---|---|
 | 图像 | 图像 |
 | 文档 | 下载 |
@@ -219,7 +220,7 @@ Sidekick的底部边框中有两个对预览页面很重要的图标：
 
   ![以AEM为标题的栏，标题右侧显示一个编辑模式图标，该图标由向下箭头符号指示。](do-not-localize/chlimage_1-8.png)
 
-## 查找并替换 {#find-replace}
+## 查找和替换 {#find-replace}
 
 要更大规模地编辑相同的短语a **[查找并替换](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** 菜单选项允许您在网站的部分中搜索和替换字符串的多个实例。
 

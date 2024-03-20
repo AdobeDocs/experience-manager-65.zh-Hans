@@ -2,7 +2,8 @@
 title: 缓存和性能
 description: 了解可用于启用GraphQL和内容缓存以优化Commerce实施性能的各种配置。
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager,Commerce
+source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%

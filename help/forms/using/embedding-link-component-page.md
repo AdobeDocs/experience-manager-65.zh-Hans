@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 # 在页面中嵌入链接组件{#embedding-link-component-in-a-page}
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 链接组件是Document Services类别的成员。 确保Document Services类别在AEM组件浏览器中可见。 如果未列出该类别，请按照 [启用Forms Portal组件](/help/forms/using/enabling-forms-portal-components.md).
 

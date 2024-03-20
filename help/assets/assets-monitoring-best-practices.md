@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 1%
+source-wordcount: '1639'
+ht-degree: 0%
 
 ---
 
@@ -91,7 +92,7 @@ ht-degree: 1%
 内存
 
 * `MBean: lava.lang:type=Memory`
-* URL: `/system/console/jmx/java.lang:type=Memory`
+* URL： `/system/console/jmx/java.lang:type=Memory`
 * 实例：所有服务器
 * 警报阈值：当栈或非栈内存利用率超过相应最大内存的75%时。
 * 警报定义：可能是系统内存不足，或者代码中存在内存泄漏。 分析线程转储以得出定义。
@@ -103,7 +104,7 @@ ht-degree: 1%
 Threads
 
 * MBean： `java.lang:type=Threading`
-* URL: `/system/console/jmx/java.lang:type=Threading`
+* URL： `/system/console/jmx/java.lang:type=Threading`
 * 实例：所有服务器
 * 警报阈值：当线程数大于基线的150%时。
 * 警报定义：要么是一个活动的失控进程，要么是低效的操作占用了大量资源。 分析线程转储以得出定义。
@@ -117,7 +118,7 @@ Threads
 复制代理
 
 * MBean： `com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
-* URL: `/system/console/jmx/com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
+* URL： `/system/console/jmx/com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * 实例：一个创作实例和所有发布实例（用于刷新代理）
 * 警报阈值：当 `QueueBlocked` 是 `true` 或的值 `QueueNumEntries` 大于基线的150%。
 
@@ -143,7 +144,7 @@ Threads
 
 * 系统检查
    * MBean： `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
    * 实例：一个作者，所有发布服务器
    * 警报阈值：当状态不是“正常”时
    * 警报定义：其中一个量度的状态为WARN或CRITICAL。 检查日志属性以了解有关问题原因的更多信息。
@@ -151,7 +152,7 @@ Threads
 * 复制队列
 
    * MBean： `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
    * 实例：一个作者，所有发布服务器
    * 警报阈值：当状态不是“正常”时
    * 警报定义：其中一个量度的状态为WARN或CRITICAL。 检查日志属性，了解有关导致问题的队列的更多信息。
@@ -159,7 +160,7 @@ Threads
 * 响应性能
 
    * MBean： `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
    * 实例：所有服务器
    * 警报持续时间：当状态不是“正常”时
    * 警报定义：其中一个量度的状态为WARN或CRITICAL。 检查日志属性，了解有关导致问题的队列的更多信息。
@@ -167,7 +168,7 @@ Threads
 * 查询性能
 
    * MBean： `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
+   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
    * 实例：一个作者，所有发布服务器
    * 警报阈值：当状态不是“正常”时
    * 警报定义：一个或多个查询在系统中运行缓慢。 检查日志属性，了解有关导致问题的查询的更多信息。
@@ -175,7 +176,7 @@ Threads
 * 活动包
 
    * MBean： `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
    * 实例：所有服务器
    * 警报阈值：当状态不是“正常”时
    * 警报定义：系统上存在非活动或未解析的OSGi捆绑包。 检查日志属性，以了解有关导致问题的捆绑包的更多信息。
@@ -183,7 +184,7 @@ Threads
 * 日志错误
 
    * MBean： `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * URL: `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
    * 实例：所有服务器
    * 警报阈值：当状态不是“正常”时
    * 警报定义：日志文件中有错误。 检查日志属性以了解有关问题原因的更多信息。

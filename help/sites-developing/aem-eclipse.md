@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '792'
-ht-degree: 3%
+source-wordcount: '746'
+ht-degree: 2%
 
 ---
 
@@ -127,7 +128,7 @@ AEM Development Tools for Eclipse附带了一个透视，您可以通过该透�
 1. 选择所有已创建的项目。
 1. 右键单击。 在菜单中 **Maven**，选择 **更新项目**.
 1. Check **强制更新快照/版本**.
-1. 单击&#x200B;**确定**。Eclipse会尝试下载所需的依赖项。
+1. 单击 **确定**. Eclipse会尝试下载所需的依赖项。
 
 ### 在JSP文件中启用标记库自动完成 {#enabling-tag-library-autocompletion-in-jsp-files}
 

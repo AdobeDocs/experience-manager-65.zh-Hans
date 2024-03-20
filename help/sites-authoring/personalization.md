@@ -2,10 +2,11 @@
 title: 个性化和内容定位
 description: 了解Adobe Experience Manager 6.5如何创建个性化内容。
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 40%
+source-wordcount: '526'
+ht-degree: 36%
 
 ---
 
@@ -57,7 +58,7 @@ AEM提供了一个内置定位引擎，用于处理页面请求并确定要显�
 
 ### Adobe Target {#adobe-target}
 
-Adobe Target 定位引擎允许从 Adobe Target 中跟踪的页面访问收集信息。
+Adobe Target定位引擎允许从Adobe Target中跟踪的页面访问收集信息。
 
 * 使用此定位引擎时，您可以使用从 Adobe Target 导入的区段来定义体验受众。
 * 使用 Adobe Target 引擎的活动会[同步到 Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target)。

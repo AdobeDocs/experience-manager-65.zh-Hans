@@ -7,7 +7,8 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: d2c0dea636280c28e1d5a76d1c5375f21b6eb111
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5991'
 ht-degree: 3%
@@ -187,7 +188,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->您可以为Adobe Experience Manager创建一个自定义轮播组件，该组件在AEM DAM中显示数字资源。
+您可以为Adobe Experience Manager创建一个自定义轮播组件，该组件在AEM DAM中显示数字资源。
 
 ### 图表 {#chart}
 
@@ -222,9 +223,9 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->内容片段管理的完整功能仅适用于触控优化的UI。
+内容片段管理的完整功能仅适用于触控优化的UI。
 >
->可以在经典UI Sidekick中看到内容片段组件，但无法提供其他功能。
+可以在经典UI Sidekick中看到内容片段组件，但无法提供其他功能。
 
 [内容片段](/help/sites-classic-ui-authoring/classic-page-author-content-fragments.md) 创建和管理为独立于页面的资产。 您随后可以在创作内容页面时使用这些片段及其变体。
 
@@ -276,7 +277,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->根据您的用例，集成外部应用程序时可使用其他选项，例如 [Portlet的集成](/help/sites-administering/aem-as-portal.md).
+根据您的用例，集成外部应用程序时可使用其他选项，例如 [Portlet的集成](/help/sites-administering/aem-as-portal.md).
 
 ### 闪光灯 {#flash}
 
@@ -330,11 +331,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->无法使用Internet Explorer监视上载进度。
+无法使用Internet Explorer监视上载进度。
 >
->Internet Explorer用户必须上传图像并单击 **确定**，然后重新打开图像以在预览中查看上传的文件，并能够执行修改（即裁切）。
+Internet Explorer用户必须上传图像并单击 **确定**，然后重新打开图像以在预览中查看上传的文件，并能够执行修改（即裁切）。
 >
->请参阅 [认证平台](/help/release-notes/release-notes.md#certifiedplatforms) 部分以详细了解AEM使用的HTML5功能。
+请参阅 [认证平台](/help/release-notes/release-notes.md#certifiedplatforms) 部分以详细了解AEM使用的HTML5功能。
 
 加载图像时，可以配置以下内容：
 
@@ -386,7 +387,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->虽然布局容器组件在经典UI中可用，但其完整功能仅在触屏UI中可用。 有关详细信息，请参阅 [响应式布局](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
+虽然布局容器组件在经典UI中可用，但其完整功能仅在触屏UI中可用。 有关详细信息，请参阅 [响应式布局](/help/sites-classic-ui-authoring/classic-page-author-responsive-layout.md).
 
 ### 列表 {#list}
 
@@ -649,9 +650,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此 **表** 组件基于 [富文本编辑器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)，即为 **[文本](#text)** 组件。
+此 **表** 组件基于 [富文本编辑器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)，即为 **[文本](#text)** 组件。
 >
->Adobe建议您使用 **表** 表组件，尽管它们也可以使用 **文本** 组件。
+Adobe建议您使用 **表** 表组件，尽管它们也可以使用 **文本** 组件。
 
 此 **表** 组件已预配置为允许您构建、填充和格式化表。 使用该对话框，您可以配置表格并从头开始创建内容，或者通过从外部编辑器（如Excel、OpenOffice或记事本）复制并粘贴电子表格或表格来创建内容。
 
@@ -684,9 +685,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->此 **文本** 组件基于 [富文本编辑器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)，即为 **[表](#table)** 组件。
+此 **文本** 组件基于 [富文本编辑器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)，即为 **[表](#table)** 组件。
 >
->Adobe建议您使用 **表** 表组件，尽管它们也可以使用 **文本** 组件。
+Adobe建议您使用 **表** 表组件，尽管它们也可以使用 **文本** 组件。
 
 文本组件允许您使用WYSIWYG编辑器输入文本块，该编辑器具有下列功能： [富文本编辑器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md). 通过一系列图标可以设置文本的格式，包括字体特征、对齐方式、链接、列表和缩进。
 
@@ -796,11 +797,11 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->支持的格式包括：
+支持的格式包括：
 >
->* `.mp4`
->* `Ogg`
->* `FLV` (Flash视频)
+* `.mp4`
+* `Ogg`
+* `FLV` (Flash视频)
 >
 
 ## 列 {#columns}
@@ -835,7 +836,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->请参阅 [AEM Forms帮助](/help/forms/using/introduction-aem-forms.md) 了解有关AEM Forms的信息。
+请参阅 [AEM Forms帮助](/help/forms/using/introduction-aem-forms.md) 了解有关AEM Forms的信息。
 
 Forms由几个不同的组件组成：
 
@@ -857,7 +858,7 @@ Forms由几个不同的组件组成：
 
 >[!NOTE]
 >
->有关开发和自定义表单的信息，请访问 [“开发Forms”页面](/help/sites-developing/developing-forms.md). 此表单自定义包括添加操作、约束、预加载字段以及使用脚本调用服务到操作等。
+有关开发和自定义表单的信息，请访问 [“开发Forms”页面](/help/sites-developing/developing-forms.md). 此表单自定义包括添加操作、约束、预加载字段以及使用脚本调用服务到操作等。
 
 ### （许多）表单组件的通用设置 {#settings-common-to-many-form-components}
 
@@ -883,7 +884,7 @@ Forms由几个不同的组件组成：
 
 >[!NOTE]
 >
->您看到的字段因各个组件而存在显着差异。
+您看到的字段因各个组件而存在显着差异。
 
 这些选项卡为您提供了必要的参数。 这些选项卡取决于单个组件类型，但可包括以下内容：
 
@@ -1191,9 +1192,9 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!NOTE]
 >
->使用 **项目加载路径** 可以使用值预加载复选框组列表。
+使用 **项目加载路径** 可以使用值预加载复选框组列表。
 >
->请参阅 [预载具有多个值的表单字段](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+请参阅 [预载具有多个值的表单字段](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### 信用卡详细信息 {#credit-card-details}
 
@@ -1211,9 +1212,9 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!NOTE]
 >
->使用 **项目加载路径** 您可以使用值预加载下拉列表。
+使用 **项目加载路径** 您可以使用值预加载下拉列表。
 >
->请参阅 [预载具有多个值的表单字段](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+请参阅 [预载具有多个值的表单字段](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### 文件上传 {#file-upload}
 
@@ -1231,9 +1232,9 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!NOTE]
 >
->您还可以自定义表单，以根据表单中其他字段的值显示或隐藏特定表单组件。 仅在特定条件下需要表单字段时，更改该字段的可见性很有用。
+您还可以自定义表单，以根据表单中其他字段的值显示或隐藏特定表单组件。 仅在特定条件下需要表单字段时，更改该字段的可见性很有用。
 >
->请参阅 [显示和隐藏表单组件](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
+请参阅 [显示和隐藏表单组件](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components).
 
 ### 图像按钮 {#image-button}
 
@@ -1282,9 +1283,9 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!NOTE]
 >
->使用 **项目加载路径** 可以使用值预加载单选按钮组。
+使用 **项目加载路径** 可以使用值预加载单选按钮组。
 >
->请参阅 [预载具有多个值的表单字段](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
+请参阅 [预载具有多个值的表单字段](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values).
 
 ### “提交”按钮 {#submit-button}
 

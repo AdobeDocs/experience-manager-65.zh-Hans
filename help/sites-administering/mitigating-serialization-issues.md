@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 01e9ab67-15e2-4bc4-9b8f-0c84bcd56862
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '904'
 ht-degree: 0%
@@ -73,9 +74,9 @@ NotSoSerial代理未包含在应用程序服务器的AEM的标准分发中。 �
 
    >[!NOTE]
    >
-   您还可以通过访问位于以下位置的URL直接访问配置页面：
+   >您还可以通过访问位于以下位置的URL直接访问配置页面：
    >
-   * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+   >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 此配置包含允许列表 列入阻止列表、序列化和反序列化日志记录。
 
@@ -107,7 +108,7 @@ NotSoSerial代理未包含在应用程序服务器的AEM的标准分发中。 �
 
 >[!NOTE]
 >
-如果添加 `org.apache.commons.collections.functors` 对于允许列表，运行状况检查始终失败。
+>如果添加 `org.apache.commons.collections.functors` 对于允许列表，运行状况检查始终失败。
 
 ## 处理动态代理加载的错误 {#handling-errors-with-dynamic-agent-loading}
 
@@ -123,11 +124,11 @@ NotSoSerial代理未包含在应用程序服务器的AEM的标准分发中。 �
 
    >[!NOTE]
    >
-   还需要使用 — nofork CQ/AEM选项以及相应的JVM内存设置，因为未在分支JVM上启用代理。
+   >还需要使用 — nofork CQ/AEM选项以及相应的JVM内存设置，因为未在分支JVM上启用代理。
 
    >[!NOTE]
    >
-   NotSoSerial代理jar的Adobe分布可在 `crx-quickstart/opt/notsoserial/` AEM安装的文件夹。
+   >NotSoSerial代理jar的Adobe分布可在 `crx-quickstart/opt/notsoserial/` AEM安装的文件夹。
 
 1. 停止并重新启动JVM；
 

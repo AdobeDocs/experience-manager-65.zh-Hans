@@ -5,7 +5,8 @@ role: User, Developer
 level: Beginner, Intermediate
 feature: Adaptive Forms, Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 7%
@@ -22,7 +23,7 @@ ht-degree: 7%
 | AEM 6.5 | 本文 |
 
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 使用JSON架构作为自适应表单的表单模型创作时，需要基本了解JSON架构。 建议在阅读本文之前通读以下内容。
 
@@ -394,7 +395,7 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
    <td>计算</td>
    <td>可见性</td>
    <td>验证</td>
-   <td>启用</td>
+   <td>已启用</td>
    <td>值提交</td>
    <td>单击 </td>
    <td>选项</td>

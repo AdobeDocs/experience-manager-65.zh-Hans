@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '461'
-ht-degree: 13%
+source-wordcount: '400'
+ht-degree: 12%
 
 ---
 
@@ -17,7 +18,7 @@ ht-degree: 13%
 
 内容片段允许您创建渠道中性内容，以及各种（特定于渠道的）变量。 **We.Retail** (在Adobe Experience Manager的现成实例中可用)提供片段 **洛福滕北极冲浪** 作为基本样本。 这说明：
 
-* Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创建和管理](/help/assets/content-fragments/content-fragments.md)。它们允许您创建渠道中性内容，以及各种（特定于渠道的）变体。
+* Adobe Experience Manager (AEM)内容片段包括 [创建并管理为独立于页面的资产](/help/assets/content-fragments/content-fragments.md). 它们允许您创建渠道中性内容，以及各种（特定于渠道的）变体。
 
    * 请参阅 [在We.Retail中的何处查找内容片段资产](#where-to-find-content-fragments-in-we-retail)
 

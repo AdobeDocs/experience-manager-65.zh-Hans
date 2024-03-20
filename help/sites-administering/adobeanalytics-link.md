@@ -1,20 +1,21 @@
 ---
-title: 为 Adobe Analytics 配置链接跟踪
+title: 为Adobe Analytics配置链接跟踪
 description: 了解如何为SiteCatalyst配置链接跟踪。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '1615'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 
-# 为 Adobe Analytics 配置链接跟踪{#configuring-link-tracking-for-adobe-analytics}
+# 为Adobe Analytics配置链接跟踪{#configuring-link-tracking-for-adobe-analytics}
 
 当用户单击网站页面上的链接时，您可以在Adobe Analytics中捕获相关信息。 例如，使用链接跟踪功能了解用户如何与您的网站进行交互、跟踪文件下载以及跟踪退出链接。
 
@@ -41,7 +42,7 @@ ht-degree: 1%
 * mpg
 * avi
 * wmv
-* doc
+* 文档
 * pdf
 * xls
 
@@ -165,7 +166,7 @@ s.linkTrackVars= 'prop4';
   <tr>
    <td>pagedata.title</td>
    <td>自定义eVar1 (eVar1)</td>
-   <td>eVar1</td>
+   <td>EVAR1</td>
   </tr>
   <tr>
    <td>eventdata.events.pageView</td>
@@ -187,12 +188,12 @@ s.linkTrackVars= 'prop4';
   <tr>
    <td>eventdata.keyword</td>
    <td>自定义eVar2 (eVar2)</td>
-   <td>eVar2</td>
+   <td>EVAR2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
    <td>自定义eVar3 (eVar3)</td>
-   <td>eVar3</td>
+   <td>EVAR3</td>
   </tr>
   <tr>
    <td>eventdata.events.search</td>

@@ -7,7 +7,8 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '3545'
 ht-degree: 0%
@@ -392,7 +393,7 @@ Dynamic Media Classic (Scene7)内容浏览器允许您直接在Experience Manage
 >* 在经典UI中，您还可以搜索 **Flash** 和 **FXG**. 不支持在触屏优化UI中过滤这两个术语。
 >
 >* 搜索视频时，您将搜索单个演绎版。 结果将返回原始演绎版(仅限 &#42;.mp4)和编码的演绎版。
->* 搜索自适应视频集时，您将搜索文件夹及其所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，则Experience Manager不会搜索子文件夹。
+* 搜索自适应视频集时，您将搜索文件夹及其所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，则Experience Manager不会搜索子文件夹。
 >
 
 **发布状态**  — 您可以根据发布状态筛选资源：已取消发布或已发布。 如果您未选择任何发布状态，Experience Manager将默认搜索所有发布状态。

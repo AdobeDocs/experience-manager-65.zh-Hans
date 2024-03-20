@@ -1,18 +1,19 @@
 ---
-title: OSGi上以Forms为中心的工作流 |处理用户数据
-description: OSGi上以Forms为中心的工作流 |处理用户数据
+title: OSGi上以Forms为中心的工作流 | 处理用户数据
+description: OSGi上以Forms为中心的工作流 | 处理用户数据
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 1%
 
 ---
 
-# OSGi上以Forms为中心的工作流 |处理用户数据 {#forms-centric-workflows-on-osgi-handling-user-data}
+# OSGi上以Forms为中心的工作流 | 处理用户数据 {#forms-centric-workflows-on-osgi-handling-user-data}
 
 以Forms为中心的AEM工作流使您能够自动执行以Forms为中心的实际业务流程。 工作流由一系列步骤组成，这些步骤按照关联工作流模型中指定的顺序执行。 每个步骤都会执行特定操作，例如向用户分配任务或发送电子邮件。 工作流可与存储库中的资产、用户帐户和服务进行交互。 因此，工作流可以协调涉及Experience Manager任何方面的复杂活动。
 
@@ -59,7 +60,7 @@ ht-degree: 1%
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [日期]/[工作流实例]/draft/[工作项目]/</td>
   </tr>
   <tr>
-   <td><strong>历史</strong></td>
+   <td><strong>历史记录</strong></td>
    <td>/var/fd/dashboard/instances/[server_id]/<br /> [日期]/[工作流实例]/history/</td>
    <td>/etc/fd/dashboard/instances/[server_id]/<br /> [日期]/[工作流实例]/history/</td>
   </tr>

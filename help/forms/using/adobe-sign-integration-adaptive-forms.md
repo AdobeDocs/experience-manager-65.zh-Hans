@@ -7,7 +7,8 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms, Foundation Components, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 16%
@@ -34,7 +35,7 @@ ht-degree: 16%
 
 连接 **[!DNL AEM Forms]** 替换为 **[!DNL Adobe Acrobat Sign]**，设置先决条件部分中列出的软件和帐户，并将Adobe Sign连接到您的所有AEM Forms创作和发布实例：
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 要集成，您需要以下项 [!DNL Adobe Sign] 使用AEM [!DNL Forms]：
 

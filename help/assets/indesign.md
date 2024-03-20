@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1589'
-ht-degree: 4%
+source-wordcount: '1555'
+ht-degree: 2%
 
 ---
 
@@ -120,7 +121,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 >[!CAUTION]
 >
->请勿更改 ExtendScript 库。此库提供与Sling通信所需的HTTP功能。 此设置指定要发送到的库 [!DNL InDesign Server] 以便在此使用。
+>请勿更改ExtendScript库。 此库提供与Sling通信所需的HTTP功能。 此设置指定要发送到的库 [!DNL InDesign Server] 以便在此使用。
 
 此 `ThumbnailExport.jsx` 通过“媒体提取”工作流步骤运行的脚本会生成JPG格式的缩略图演绎版。 此演绎版由流程缩略图工作流步骤用于生成所需的静态演绎版 [!DNL Experience Manager].
 
@@ -134,7 +135,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
-* **页面提取处理程序**：从弹出列表中，选择要使用的处理程序。 提取处理程序对相关 `RenditionPicker` 选择的特定演绎版发挥作用（请参阅 `ExtractionHandler` API）。在标准中 [!DNL Experience Manager] 安装可以使用以下选项：
+* **页面提取处理程序**：从弹出列表中，选择要使用的处理程序。 提取处理程序对相关选择的特定演绎版发挥作用 `RenditionPicker` (请参阅 `ExtractionHandler` API)。 在标准中 [!DNL Experience Manager] 安装可以使用以下选项：
    * IDML导出提取句柄：对 `IDML` MediaExtract步骤中生成的演绎版。
 
 * **页面名称**：指定要分配给结果页面的名称。 如果留空，则名称为“page”（如果“page”已存在，则为派生项）。
@@ -191,7 +192,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 1. 选择IDS处理队列，位于 `Apache Sling Job Queue Configuration`.
 
-1. 套:
+1. 已设置：
 
    * **类型** - `Parallel`
    * **最大并行作业数** - `<*x*>` （如上计算）

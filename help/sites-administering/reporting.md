@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2777'
-ht-degree: 4%
+source-wordcount: '2782'
+ht-degree: 3%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 4%
 
 * [组件报告](#component-report)
 * [磁盘使用情况](#disk-usage)
-* [运行状况检查](#health-check)
+* [健康检查](#health-check)
 * [页面活动报告](#page-activity-report)
 * [用户生成的内容报表](#user-generated-content-report)
 * [用户报告](#user-report)
@@ -160,7 +161,7 @@ ht-degree: 4%
 
 数据收集开始时，您可以选择：
 
-* **时间段**
+* **期间**
 
   您可以选择报表数据的开始日期和结束日期。
 
@@ -329,7 +330,7 @@ ht-degree: 4%
 
 ![reportdiskusage](assets/reportdiskusage.png)
 
-### 运行状况检查 {#health-check}
+### 健康检查 {#health-check}
 
 此报表会分析当前的请求日志：
 
@@ -343,15 +344,15 @@ ht-degree: 4%
 
   要分析的小时数（过去）。
 
-  默认: `24`
+  默认： `24`
 
-* **最大. 结果**
+* **max. 结果**
 
   最大输出行数。
 
-  默认: `50`
+  默认： `50`
 
-* **最大. 请求**
+* **max. 请求**
 
   要分析的请求的最大数量。
 
@@ -492,7 +493,7 @@ ht-degree: 4%
 * 发起者
 * 模型
 * 有效负荷
-* 启动时间
+* 开始
 * 状态
 
 这意味着您可以：
@@ -546,11 +547,11 @@ ht-degree: 4%
 
   `user administrators`  — 读取和写入
 
-* **页面活动报告**
+* **页面活动报表**
 
   `contributors`  — 读取和写入
 
-* **组件报告**
+* **组件报表**
 
   `contributors`  — 读取和写入
 

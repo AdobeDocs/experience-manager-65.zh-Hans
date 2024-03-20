@@ -7,10 +7,11 @@ content-type: reference
 topic-tags: site-features
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '289'
-ht-degree: 9%
+source-wordcount: '281'
+ht-degree: 7%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 9%
 
 为某个页面（或一组页面）创建启动项后，您可以在页面的启动项副本中编辑内容。
 
-1. 打开要编辑的页面。
+1. 打开页面进行编辑。
 1. 在Sidekick中，选择 **版本控制** 选项卡，然后展开 **启动次数** 组。 当前正在编辑的启动项的标题使用粗体字体。
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)

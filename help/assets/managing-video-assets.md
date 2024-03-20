@@ -6,7 +6,8 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: 0d30d42e606f1abcf20869c40ca87a78d496e2e7
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '5466'
 ht-degree: 7%
@@ -488,7 +489,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
 1. 导航到要从YouTube渠道取消发布的视频资源。
 1. 在资源选择模式下，选择一个或多个已发布的视频资源。
-1. 在工具栏上，单击 **[!UICONTROL 管理发布]**. 选择三个圆点图标(...) 工具栏上，因此 **[!UICONTROL 管理发布]** 打开。
+1. 在工具栏上，单击 **[!UICONTROL 管理发布]**. 选择三个圆点图标(. ..) 工具栏上，因此 **[!UICONTROL 管理发布]** 打开。
 1. 在管理发布页面上，选择 **[!UICONTROL 取消发布]**.
 1. 在页面的右上角，选择 **[!UICONTROL 下一个]**.
 1. 在页面的右上角，选择 **[!UICONTROL 取消发布]**.

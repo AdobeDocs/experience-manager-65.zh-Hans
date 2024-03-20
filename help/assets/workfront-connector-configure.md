@@ -2,10 +2,11 @@
 title: 配置 [!DNL Workfront for Experience Manager enhanced connector]
 description: 配置 [!DNL Workfront for Experience Manager enhanced connector]
 role: Admin
-feature: Integrations
+feature: Workfront Integrations and Apps
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 2cf980f643e1896ecd581fec44f963d7eb44766d
+solution: Experience Manager, Workfront
+source-git-commit: 5ccac0aadce3971e66da052d393cbd33b61e94f7
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 1%

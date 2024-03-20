@@ -3,10 +3,11 @@ title: 处理Adobe Experience Manager Foundation的GDPR请求
 description: 处理Adobe Experience Manager Foundation的GDPR请求
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 45%
+source-wordcount: '458'
+ht-degree: 40%
 
 ---
 
@@ -74,7 +75,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 1. 如上所述，打开用户管理控制台并搜索有问题的用户。
 1. 将鼠标悬停在用户上方并单击选择图标。配置文件显示为灰色，表明它已被选中。
 
-1. 按上方菜单中的禁用按钮禁用用户：
+1. 按上方菜单中的“禁用”按钮禁用用户：
 
    ![userdisable](assets/userdisable.png)
 

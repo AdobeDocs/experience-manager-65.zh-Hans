@@ -6,10 +6,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01e966f6-a650-4565-80d1-e2297f25da5c
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '167'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -28,7 +29,7 @@ ht-degree: 1%
 1. 在管理控制台中，单击“设置”>“信任存储区管理”>“证书吊销列表”。
 1. 单击CRL的别名以便导出，然后单击“导出”。
 1. 按照说明导出CRL。 CRL以Base64编码导出。
-1. 单击确定。
+1. 单击“确定”。
 
 ## 删除CRL {#delete-a-crl}
 

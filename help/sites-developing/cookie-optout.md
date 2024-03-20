@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '550'
-ht-degree: 4%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
@@ -26,7 +27,7 @@ AEM提供的服务允许您配置并控制如何将Cookie用于网页：
 
 配置AdobeGranite选择退出服务以指定如何在您的网页上使用Cookie。 下表描述了可以配置的属性。
 
-要配置服务，您可以使用 [Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 或 [将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). 下表描述了任一方法所需的属性。对于OSGi配置，服务PID为 `com.adobe.granite.optout`.
+要配置服务，您可以使用 [Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 或 [将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). 下表描述了任一方法所需的属性。 对于OSGi配置，服务PID为 `com.adobe.granite.optout`.
 
 | 属性名称（Web 控制台） | OSGi 属性名称 | 描述 |
 |---|---|---|

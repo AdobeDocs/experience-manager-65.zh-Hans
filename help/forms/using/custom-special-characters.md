@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 3%
+source-wordcount: '656'
+ht-degree: 1%
 
 ---
 
@@ -88,7 +89,7 @@ ht-degree: 3%
 <table>
  <tbody>
   <tr>
-   <td><strong>收件人...</strong></td>
+   <td><strong>收件人……</strong></td>
    <td><strong>完成以下步骤</strong></td>
   </tr>
   <tr>
@@ -106,7 +107,7 @@ ht-degree: 3%
     <ol>
      <li>按照上文所述覆盖要更新的节点，并验证标记和类。</li>
      <li>更改任何值，例如caption、value、endValue和multipleCaption。 </li>
-     <li>单击全部保存。 </li>
+     <li>单击“全部保存”。 </li>
      <li>刷新文本编辑器\创建通信UI，以便您能够看到所做的更改。</li>
     </ol> </td>
   </tr>
@@ -116,7 +117,7 @@ ht-degree: 3%
     <ol>
      <li>覆盖要在“/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters”下隐藏的节点</li>
      <li>将sling：hideResource（布尔值）属性添加到节点（在应用程序下）以隐藏。 </li>
-     <li>单击全部保存。 </li>
+     <li>单击“全部保存”。 </li>
      <li>刷新文本编辑器\创建通信UI，以便您能够看到所做的更改。<br /> </li>
     </ol> </td>
   </tr>
@@ -126,7 +127,7 @@ ht-degree: 3%
     <ol>
      <li>将属性“sling：hideChildren （String或String[]）”添加到“/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters”。 </li>
      <li>添加节点名称（要隐藏的特殊字符）作为“sling：hideChildren”属性的值。 </li>
-     <li>单击全部保存。 </li>
+     <li>单击“全部保存”。 </li>
      <li>刷新文本编辑器\创建通信UI，以便您能够看到所做的更改。<br /> </li>
     </ol> </td>
   </tr>
@@ -137,7 +138,7 @@ ht-degree: 3%
      <li>在“/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters”下添加具有强制属性的子节点。 </li>
      <li>将“sling：orderBefore (String)”属性添加到新创建的子节点。 </li>
      <li>将节点名称添加为值，新添加的特殊字符将显示在该值之前。 </li>
-     <li>单击全部保存。 </li>
+     <li>单击“全部保存”。 </li>
      <li>刷新文本编辑器\创建通信UI，以便您能够看到所做的更改。<br /> </li>
     </ol> </td>
   </tr>

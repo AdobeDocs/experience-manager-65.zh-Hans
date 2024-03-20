@@ -5,10 +5,11 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Assets
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 1%
+source-wordcount: '680'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +23,7 @@ ImageMagick是一个用于创建、编辑、合成或转换位图图像的软件
 
 >[!NOTE]
 >
->如果您使用 [!DNL Experience Manager] 日期 [!DNL Adobe Managed Services] (AMS)，如果您计划处理许多高分辨率PSD或PSB文件，请联系Adobe客户支持。 [!DNL Experience Manager] 可能无法处理超过 30000 x 23000 像素的高分辨率 PSB 文件。
+>如果您使用 [!DNL Experience Manager] 日期 [!DNL Adobe Managed Services] (AMS)，如果您计划处理许多高分辨率PSD或PSB文件，请联系Adobe客户支持。 [!DNL Experience Manager] 不能处理超过30000 x 23000像素的超高分辨率PSB文件。
 
 ## 安装ImageMagick {#installing-imagemagick}
 

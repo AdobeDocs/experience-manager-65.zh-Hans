@@ -7,10 +7,11 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 2%
+source-wordcount: '221'
+ht-degree: 0%
 
 ---
 
@@ -37,8 +38,8 @@ ht-degree: 2%
 
 1. 使用创建叠加 **覆盖节点** 选项；例如：
 
-   * **路径**: `/apps/cq/core/content/nav/sites`
-   * **覆盖位置**: `/apps/`
+   * **路径**： `/apps/cq/core/content/nav/sites`
+   * **叠加位置**： `/apps/`
    * **匹配节点类型**：活动（选中复选框）
 
 1. 将以下布尔属性添加到覆盖的节点：

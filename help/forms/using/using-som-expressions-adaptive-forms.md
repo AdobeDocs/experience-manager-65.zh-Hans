@@ -7,7 +7,8 @@ feature: Adaptive Forms, Foundation Components
 discoiquuid: 13f00bb2-561f-4d64-8829-292c663abeab
 docset: aem65
 exl-id: 6a158e18-b7d0-45fb-b4fc-4770e66982b4
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%

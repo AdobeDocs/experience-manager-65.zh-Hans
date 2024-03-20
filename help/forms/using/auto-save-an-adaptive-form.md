@@ -4,7 +4,9 @@ description: 您可以将自适应表单配置为根据事件或预定义的时�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms, Foundation Components
-source-git-commit: d85fc98d9a31bc4014aef4311ba0f838c7ef619a
+exl-id: ff9bf466-228d-40e6-9389-15c1f2ed1d2e
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '736'
 ht-degree: 7%

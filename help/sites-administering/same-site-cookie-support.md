@@ -3,10 +3,11 @@ title: AEM 6.5支持的相同站点Cookie
 description: 了解对AEM 6.5的相同站点Cookie支持。
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+solution: Experience Manager, Experience Manager Sites
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '220'
-ht-degree: 74%
+source-wordcount: '222'
+ht-degree: 72%
 
 ---
 

@@ -8,7 +8,8 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: HTML5 Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
-source-git-commit: 524475c8f9dbd02bae30ecd558a376505fbe0aed
+solution: Experience Manager, Experience Manager Forms
+source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 2%
@@ -79,7 +80,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>页面</td>
-   <td>页</td>
+   <td>页面</td>
    <td>用户定义的名称<br /> 或<br /> 页面&lt;pagenumber&gt; （默认）</td>
   </tr>
   <tr>
@@ -108,7 +109,7 @@ ht-degree: 2%
    <td>用户定义的名称</td>
   </tr>
   <tr>
-   <td>描述</td>
+   <td>题注</td>
    <td>题注</td>
    <td>NA</td>
   </tr>
@@ -231,7 +232,7 @@ AEM Forms Designer支持表单中各种类型的字段，如NumericField、Decim
 | 文本 | text |
 | 图像 | 图像 |
 | 矩形 | 矩形 |
-| Line | 折线图 |
+| 线条 | 折线图 |
 
 ## 设置窗体其他部分的样式 {#styling-other-parts-of-the-form}
 
