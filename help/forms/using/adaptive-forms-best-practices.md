@@ -3,12 +3,12 @@ title: 使用自适应表单的最佳实践
 description: 介绍设置AEM Forms项目、开发自适应表单和优化AEM Forms系统性能的最佳实践。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 474a14a247afecdd8415f75997279d1ecd394cda
 workflow-type: tm+mt
-source-wordcount: '4668'
+source-wordcount: '5504'
 ht-degree: 1%
 
 ---
@@ -355,5 +355,66 @@ AEM提供可用于本地化自适应表单的翻译工作流。 有关信息，�
 
 * 使用安全的外部存储（如数据库）存储草稿和已提交表单中的数据。 请参阅 [为草稿和已提交的表单数据配置外部存储](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * 使用条款和条件表单组件，在启用自动保存之前获得用户的明确同意。 在这种情况下，仅当用户同意条款和条件组件中的条件时才启用自动保存。
+
+## 为自适应表单选择规则编辑器、代码编辑器或自定义客户端库 {#RuleEditor-CodeEditor-ClientLibs}
+
+### 规则编辑器 {#rule-editor}
+
+<!--The AEM Forms Rule Editor offers predefined functions for defining rules in adaptive forms without extensive programming. It facilitates the implementation of conditional logic, data validation, and integration with external sources. This visual interface is especially valuable for business users and form designers, enabling them to create dynamic and complex rules with ease, here we discusss few use cases where rule editor allows you to:-->
+
+AEM Forms规则编辑器提供了一个用于创建和管理规则的可视化界面，无需进行大量编码。 这对于不具备高级编程技能但需要在表单中定义和维护业务规则的业务用户或表单设计人员特别有用，这里我们将讨论一些使用案例，其中规则编辑器允许您：
+
+* <!-- Allows you --> 为表单定义业务规则，而无需大量的编程。
+* <!-- Use the Rule Editor when you need --> 在表单中实施条件逻辑。 这包括显示或隐藏表单元素、根据特定条件更改字段值或动态更改表单的行为。
+* <!--When you want --> 要对表单提交强制实施数据验证规则，可以使用规则编辑器来定义验证条件。
+* <!-- When you need --> 要将表单与外部数据源(FDM)或服务集成，规则编辑器可帮助定义用于在表单交互期间获取、显示或处理数据的规则。
+* <!-- If you want -->要创建响应用户操作的动态和交互式表单，您可以使用规则编辑器定义实时控制表单元素行为的规则。
+
+规则编辑器适用于AEM Forms Foundation组件和核心组件。
+
+### 代码编辑器 {#code-editor}
+
+代码编辑器是Adobe Experience Manager (AEM) Forms中的一个工具，允许您编写自定义脚本和代码，以在表单中实现更复杂和高级的功能，这里我们将讨论一些用例：
+
+* 需要实施超出AEM Forms规则编辑器功能的自定义客户端逻辑或行为时。 代码编辑器允许您编写JavaScript代码以处理复杂的交互、计算或验证。
+* 如果您的表单需要服务器端处理或与外部系统集成，您可以使用代码编辑器编写自定义服务器端脚本。 您可以在代码编辑器中访问guideBridge API，以在表单事件和对象上实施任何复杂的逻辑。
+* 当需要超出AEM Forms组件标准功能的高度自定义用户界面时，代码编辑器允许您实施自定义样式、行为，甚至创建自定义表单组件。
+* 如果您的表单涉及异步操作（如异步数据加载），您可以使用代码编辑器通过自定义异步JavaScript代码管理这些操作。
+
+请务必注意，使用代码编辑器需要很好地了解JavaScript和AEM Forms架构。 此外，在实施自定义代码时，请确保遵循最佳实践、遵守安全准则并彻底测试您的代码以防止生产环境中出现潜在问题。 您可以使用代码编辑器为FDM实施回调。
+
+代码编辑器仅可用于AEM Forms Foundation组件。 对于自适应表单核心组件，您可以使用自定义函数创建自己的表单规则，如下节所述。
+
+### 自定义函数 {#custom-client-libs}
+
+在各种场景中，使用AEM Forms (Adobe Experience Manager Forms)中的自定义客户端库可能会有助于增强表单的功能、样式或行为。 以下是可能需要使用自定义客户端库的一些情况：
+
+* 如果您的表单需要实施独特的设计或品牌策略，而这些设计或品牌策略超出了AEM Forms提供的默认样式选项的功能，则您可以选择创建自定义客户端库来控制外观。
+* 当需要自定义客户端逻辑时，无法通过标准AEM Forms功能实现跨多个表单或行为的方法的可重用性。 这可能包括动态表单交互、自定义验证或与第三方库的集成。
+* 通过优化和缩小客户端资源来提高表单性能。 自定义客户端库可用于捆绑和压缩JavaScript和CSS文件，从而缩短整个页面加载时间。
+* 适用于需要集成未包含在默认AEM Forms设置中的其他JavaScript库或框架的情况。 增强型日期选取器、图表或其他交互式组件等功能可能需要此项。
+
+在决定使用自定义客户端库之前，请务必考虑维护开销、与未来更新的潜在冲突以及遵守最佳实践的情况。 确保您的自定义项得到妥善的记录和测试，以避免在升级期间或与其他开发人员协作时出现问题。
+
+>[!NOTE]
+> 自定义函数适用于AEM Forms基础组件和核心组件。
+
+**自定义函数的优势：**
+
+**自定义函数** 提供了明显优于 **代码编辑器** 因为它在内容和代码之间提供了清晰的区分，从而加强了协作并简化了工作流。 为获得以下优势，建议使用自定义函数：
+
+* **无缝使用版本控制，如Git：**
+   * 从内容中分离代码可显着减少内容管理期间的Git冲突，并提升组织良好的存储库。
+   * 自定义函数对于有多个参与者同时工作的项目非常有用。
+
+* **技术优势：**
+   * 自定义函数提供了模块性和封装。
+   * 模块可以独立开发、测试和维护。
+   * 增强了代码的可重用性和可维护性。
+
+* **高效开发流程：**
+   * 模块化允许开发人员专注于特定功能。
+   * 通过降低整个代码库的复杂程度来降低开发人员的负担，从而实现更有效的开发过程。
+
 
 
