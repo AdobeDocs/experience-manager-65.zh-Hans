@@ -7,7 +7,7 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20fb57a51e47562a290e3608a2fe080a39774998
 workflow-type: tm+mt
 source-wordcount: '2781'
 ht-degree: 2%
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 自适应表单为具有动态脚本编写功能的最终用户提供经过优化和简化的表单填写体验。 它允许您编写表达式以添加各种行为，如动态显示/隐藏字段和面板。 它还允许您添加计算字段、使字段只读、添加验证逻辑等。 动态行为基于用户输入或预填充的数据。
 
-JavaScript是自适应表单的表达式语言。 所有表达式都是有效的JavaScript表达式，并使用自适应表单脚本模型API。 这些表达式返回某些类型的值。 有关自适应表单类、事件、对象和公共API的完整列表，请参阅 [自适应表单的JavaScript库API参考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+JavaScript是自适应表单的表达式语言。 所有表达式都是有效的JavaScript表达式，并使用自适应表单脚本模型API。 这些表达式返回某些类型的值。 有关自适应表单类、事件、对象和公共API的完整列表，请参阅 [自适应表单的JavaScript库API参考。](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 ## 编写表达式的最佳实践 {#best-practices-for-writing-expressions}
 
@@ -35,7 +35,7 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 * 要创建重复面板，请在面板对话框中，打开设置，并将最大计数字段的值设置为大于1。
 * 面板重复设置的最小计数值可以是一个或多个，但不能超过最大计数值。
 * 当表达式引用重复面板的字段时，表达式中的字段名称解析为最接近的重复元素。
-* 自适应表单提供了一些特殊函数来简化可重复面板的计算，例如sum、count、min、max、filter等。 有关函数的完整列表，请参见 [自适应表单的JavaScript库API参考](https://helpx.adobe.com/aem-forms/6/javascript-api/af.html)
+* 自适应表单提供了一些特殊函数来简化可重复面板的计算，例如sum、count、min、max、filter等。 有关函数的完整列表，请参见 [自适应表单的JavaScript库API参考](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 * 用于处理重复面板的实例的API包括：
 
    * 要添加面板实例，请执行以下操作： `panel1.instanceManager.addInstance()`
@@ -81,7 +81,7 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 
 ### 单击表达式 {#click-expression}
 
-click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱即用地提供API来执行各种功能，例如提交和验证与单击表达式一起使用的功能。 有关API的完整列表，请参阅 [GuideBridge API](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱即用地提供API来执行各种功能，例如提交和验证与单击表达式一起使用的功能。 有关API的完整列表，请参阅 [GuideBridge API。](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 **应用于**：按钮字段
 
@@ -212,7 +212,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 ### GuideBridge - API和事件 {#guidebridge-apis-and-events}
 
-GuideBridge是API的集合，可用于与浏览器内存模型中的自适应表单交互。 有关Guide Bridge API、类方法、公开事件的详细介绍，请参阅 [自适应表单的JavaScript库API参考](https://helpx.adobe.com/aem-forms/6/javascript-api/).
+GuideBridge是API的集合，可用于与浏览器内存模型中的自适应表单交互。 有关Guide Bridge API、类方法、公开事件的详细介绍，请参阅 [自适应表单的JavaScript库API参考。](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/index.html)
 
 >[!NOTE]
 >
@@ -258,7 +258,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 #### GuideBridge事件 {#guidebridge-events}
 
-GuideBridge还为托管页面上的外部脚本提供了某些事件。 外部脚本可以侦听这些事件并执行各种操作。 例如，每当表单中的用户名发生更改时，页面标题中显示的名称也会更改。 有关此类事件的更多详细信息，请参阅 [自适应表单的JavaScript库API参考](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge还为托管页面上的外部脚本提供了某些事件。 外部脚本可以侦听这些事件并执行各种操作。 例如，每当表单中的用户名发生更改时，页面标题中显示的名称也会更改。 有关此类事件的更多详细信息，请参阅 [自适应表单的JavaScript库API参考。](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javascript-api/GuideBridge.html)
 
 使用以下代码注册处理程序：
 
