@@ -3,10 +3,10 @@ title: 体验片段
 description: Adobe Experience Manager Sites创作中的体验片段。
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 5d37e4ec23bbbd838f4787622648aad7e1c1905b
 workflow-type: tm+mt
-source-wordcount: '1468'
-ht-degree: 74%
+source-wordcount: '1489'
+ht-degree: 73%
 
 ---
 
@@ -225,6 +225,10 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
    * **变体**
    * **变量为 [live-copy](/help/sites-administering/msm.md#live-copies)**.
+
+     >[!NOTE]
+     >
+     >将初始变体创建为Live Copy将通过使用主变体Live Copy源继承标题。
 
 1. 定义所需属性：
 
