@@ -10,7 +10,7 @@ feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0915db99a2d3589994d6267119a5443d69f9f1f7
+source-git-commit: beef1f49b7563d824357043f4ed78fdaf70015cd
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 0%
