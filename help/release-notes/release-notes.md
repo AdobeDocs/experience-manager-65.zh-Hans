@@ -3,9 +3,9 @@ title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 7f150219bce3036c0e330b7349e679fdf19797d1
+source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
 workflow-type: tm+mt
-source-wordcount: '3688'
+source-wordcount: '3735'
 ht-degree: 1%
 
 ---
@@ -462,6 +462,7 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
 
 * 从AEM 6.5.15开始，Rhino JavaScript引擎由 ```org.apache.servicemix.bundles.rhino``` 捆绑有新的提升行为。 使用严格模式(```use strict;```)必须正确声明其变量，否则它们不会运行，而是会引发运行时错误。
 
+* 通过官方更新包（包括Service Pack、Security Service Pack、Extended Feature Pack、Cumulative Feature Pack、修补程序等）安装与标记相关的现成内容，会重置 `/content/cq:tags` 节点默认为。 因此，在安装之前，必须从属性中添加它。
 
 ### AEM Forms的已知问题 {#known-issues-aem-forms-6520}
 
