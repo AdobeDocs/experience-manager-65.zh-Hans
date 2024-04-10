@@ -3,10 +3,12 @@ title: 在 Adobe Developer Console 中弃用 JWT 凭据
 description: 了解在 Adobe Developer Console 中弃用 JWT 凭据对 AEM 产生的影响
 exl-id: f19a92de-ba6a-4f6d-9e12-60ad1bad2e74
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: dec88af3b2345d142d0cc3bc27cfbc27804ab57e
+feature: Security
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '456'
-ht-degree: 53%
+ht-degree: 58%
 
 ---
 
@@ -15,7 +17,7 @@ ht-degree: 53%
 >[!NOTE]
 > AEM as a Cloud Service应参考 [本文](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/security/jwt-credentials-deprecation-in-adobe-developer-console.html) 以了解更多信息。
 
-Adobe 客户使用 [Adobe Developer Console](https://developer.adobe.com/console) 生成通过其可访问各种 API 的凭据。客户可选择从 OAuth 服务器到服务器到单页应用程序的多种凭据类型。已弃用其中一种凭据类型，服务帐户 (JWT) 凭据，改为使用 OAuth 服务器到服务器凭据。2024年6月3日或之后无法创建新服务帐户(JWT)凭据，并且现有JWT凭据在2025年1月27日或之后将无法工作。 可[了解该弃用](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)。
+Adobe 客户使用 [Adobe Developer Console](https://developer.adobe.com/console) 生成通过其可访问各种 API 的凭据。客户可选择从 OAuth 服务器到服务器到单页应用程序的多种凭据类型。已弃用其中一种凭据类型，服务帐户 (JWT) 凭据，改为使用 OAuth 服务器到服务器凭据。从 2024 年 6 月 3 日起无法创建新的服务帐户 (JWT) 凭据，而现有的 JWT 凭据将从 2025 年 1 月 1 日起失效。可[了解该弃用](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)。
 
 本文提供了有关AEM 6.5客户应如何处理弃用的其他上下文。
 

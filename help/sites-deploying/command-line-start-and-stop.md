@@ -7,7 +7,9 @@ content-type: reference
 topic-tags: deploying
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Administering
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%

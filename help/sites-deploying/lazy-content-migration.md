@@ -9,7 +9,8 @@ docset: aem65
 feature: Upgrading
 exl-id: 946c7c2a-806b-4461-a38b-9c2e5ef1e958
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '693'
 ht-degree: 2%
