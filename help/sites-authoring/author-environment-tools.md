@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2246'
 ht-degree: 47%
@@ -223,7 +225,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * 语言副本
 * 传入链接
 * 对引用组件的使用：借入和借出的内容
-* 对产品页面的引用（从“商务 — 产品”控制台）
+* 对产品页面的引用(从Commerce — 产品控制台)
 
 打开所需的控制台，然后导航到所需资源并使用以下方法打开&#x200B;**引用**：
 
@@ -241,7 +243,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 * 使用&#x200B;**引用**&#x200B;组件的借入和借出内容的实例，您可以从此处导航至正在引用/引用的页面
 
-* [对产品页面的引用](/help/commerce/cif-classic/administering/generic.md#showing-product-references) （可从“商业 — 产品”控制台中获取）
+* [对产品页面的引用](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (可从“Commerce — 产品”控制台中获取)
 * [启动次数](/help/sites-authoring/launches.md) 提供对相关启动项的访问。
 * [Live Copy](/help/sites-administering/msm.md) 显示基于选定资源的所有 Live Copy 的路径。
 * [Blueprint](/help/sites-administering/msm-best-practices.md) 提供详细信息和各种操作。

@@ -2,10 +2,13 @@
 title: 了解 CMS Headless 开发
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 Headless 技术以及使用它的原因。
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: bd86d647fdc203015bc70a0f57d5b94b4c634bf9
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1601'
-ht-degree: 87%
+ht-degree: 90%
 
 ---
 
@@ -56,19 +59,19 @@ ht-degree: 87%
 
 任何系统的头通常都是该系统的输出呈现器，通常采用 GUI 或其他图形输出的形式。
 
-例如，Headless服务器可能位于某个服务器机房的机架中，且未连接显示器。 要访问该服务器，您必须远程连接到它。在此情况下，监视器是头，因为它负责呈现服务器的输出。作为服务消费者，您在远程连接到服务器时提供自己的头（监视器）。
+例如，Headless 服务器可能位于服务器机房某处的机架中，并且未连接监视器。要访问该服务器，您必须远程连接到它。在此情况下，监视器是头，因为它负责呈现服务器的输出。作为服务消费者，您在远程连接到服务器时提供自己的头（监视器）。
 
 就 Headless CMS 而言，CMS 将管理内容并继续将内容交付给消费者。但是，通过仅以标准化方式交付&#x200B;**内容**，Headless CMS 会省略最终的输出呈现，而只保留要&#x200B;**呈现**&#x200B;给消费服务的内容。
 
 ![Headless CMS](assets/headless-cms.png)
 
-消费服务（无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等）都将从 Headless CMS 获取内容并提供它们自己的呈现。它们负责为您的内容提供它们自己的头。
+消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
 
 忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 
 ## 分离 {#decoupling}
 
-通过公开一组强大而灵活的应用程序编程接口(API)（您的所有体验都可以选择该接口），可以实现Headless交付。 API 充当服务之间的通用语言，通过标准化内容交付在内容级别将它们捆绑起来，但允许它们灵活地实施自己的解决方案。
+通过公开一组可靠且灵活的应用程序编程接口 (API) 来供所有体验使用，可以实施 Headless 交付。API 充当服务之间的通用语言，通过标准化内容交付在内容级别将它们捆绑起来，但允许它们灵活地实施自己的解决方案。
 
 Headless 是从内容的呈现中分离内容的示例。或者，从更通用的意义上讲，将前端与服务堆栈的后端分离。在 Headless 设置中，呈现系统（头）与内容管理（尾）分离。两者仅通过 API 调用进行交互。
 

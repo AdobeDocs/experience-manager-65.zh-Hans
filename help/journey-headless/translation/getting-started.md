@@ -2,7 +2,10 @@
 title: AEM Headless 翻译快速入门
 description: 了解如何组织您的 Headless 内容以及 AEM 的翻译工具的工作原理。
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 89%
@@ -80,7 +83,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 
 1. 导航到 **工具** > **资产** > **内容片段模型**.
 1. 内容片段模型通常存储在文件夹结构中。单击项目的文件夹。
-1. 这将列出模型。单击模型查看详细信息。
+1. 随后将列出模型。单击模型查看详细信息。
    ![内容片段模型](assets/content-fragment-models.png)
 1. **内容片段模型编辑器**&#x200B;将打开。
    1. 左列包含模型的字段。我们对此列感兴趣。

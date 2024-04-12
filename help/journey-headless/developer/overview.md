@@ -2,7 +2,10 @@
 title: AEM Headless 开发人员历程
 description: AEM Headless CMS 文档。从这里开始，引导您了解AEM强大而灵活的Headless特性、它们的功能以及如何在您的第一个开发项目中使用它们。
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: 487136be68e04fd74affe43790587b37d4c3d3ef
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1204'
 ht-degree: 74%
@@ -94,4 +97,4 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 
    * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
 
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

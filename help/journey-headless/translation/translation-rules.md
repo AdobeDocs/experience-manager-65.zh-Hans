@@ -2,7 +2,10 @@
 title: 配置翻译规则
 description: 了解如何定义翻译规则，标识要翻译的内容。
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 85%
@@ -59,7 +62,7 @@ ht-degree: 85%
 1. 导航到&#x200B;**工具** > **常规**。
 1. 单击 **翻译配置**.
 
-在&#x200B;**翻译配置** UI 中，提供了可用于翻译规则的多个选项。在这里，我们重点介绍基本 Headless 本地化配置所需的大多数必需和典型的步骤。
+在&#x200B;**翻译配置** UI 中，有若干选项可用于您的翻译规则。下面我们重点介绍基本 Headless 本地化配置所需的最为必要和典型的步骤。
 
 1. 单击 **添加上下文**，可添加路径。 这是受规则影响的内容的路径。
    ![添加上下文](assets/add-translation-context.png)
@@ -79,9 +82,9 @@ ht-degree: 85%
 
 您现在已配置翻译规则。
 
-## 高级使用 {#advanced-usage}
+## 高级用法 {#advanced-usage}
 
-可以将多个附加属性配置为翻译规则的一部分。此外，您可以手动将规则指定为 XML，这可以提高特殊性和灵活性。
+有若干其他属性可配置为您的翻译规则的一部分。此外，还可手动将规则指定为 XML，而这可提高独特性和灵活性。
 
 通常，无需此类功能即可开始本地化您的 Headless 内容，但如果您愿意，可以参阅[其他资源](#additional-resources)部分以了解详细信息。
 

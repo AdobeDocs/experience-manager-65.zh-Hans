@@ -3,7 +3,9 @@ title: 默认组件
 description: Adobe Experience Manager附带多种现成的组件，这些组件为网站作者提供了全面的功能。
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 34%
@@ -38,7 +40,7 @@ Adobe Experience Manager (AEM)附带多种现成的组件，这些组件为网�
 
 * **We.Retail**：包括代理用于的核心组件 [We.Retail参考实施](/help/sites-developing/we-retail.md).
 
-* **We.Retail商务**：包括商业组件，例如购物车和产品网格
+* **We.Retail Commerce**：包括商业组件，例如购物车和产品网格
 
 * **常规**：包括布局容器和体验片段
 

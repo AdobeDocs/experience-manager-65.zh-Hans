@@ -2,10 +2,13 @@
 title: Adobe Experience Manager Headless内容架构师历程
 description: 简单介绍Adobe Experience Manager强大而灵活的Headless功能，以及如何对项目内容进行建模。
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 79%
+source-wordcount: '720'
+ht-degree: 83%
 
 ---
 
@@ -50,7 +53,7 @@ ht-degree: 79%
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消费服务，无论是AR体验、网络商店、移动体验、渐进式Web应用程序(PWA)等，都会从Headless CMS中获取内容并提供自己的渲染。 它们负责为您的内容提供它们自己的头。
+消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
 
 忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 

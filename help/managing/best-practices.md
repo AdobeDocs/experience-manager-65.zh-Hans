@@ -8,7 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Compliance
+role: Admin,Architect,Data Architect,Developer,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '3214'
 ht-degree: 0%
@@ -206,7 +208,7 @@ ht-degree: 0%
    * 模板/组件及其关系的划分
    * 所需自定义设置的高级详细信息（特定叠加图稍后提供）
    * 设计解决方案所需的工作流（例如，内容创建、批准、发布、转换、导入和导出）
-   * 任何复杂模块（如MSM、商务、第三方集成）的特别注意事项
+   * 任何复杂模块(如MSM、Commerce、第三方集成)的特别注意事项
 
 * **系统集成**
 

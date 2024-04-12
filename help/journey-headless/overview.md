@@ -2,7 +2,10 @@
 title: AEM Headless 历程
 description: 描述如何将 Adobe Experience Manager 用作 Headless CMS 的文档历程的集合。
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
-source-git-commit: 719dd7b30c8ce3f02fe46c632b1589fcc74a1759
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Developing,Content Fragments
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '457'
 ht-degree: 63%

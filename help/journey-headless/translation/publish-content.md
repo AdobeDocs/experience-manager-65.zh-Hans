@@ -2,7 +2,10 @@
 title: 发布翻译的内容
 description: 了解如何发布翻译的内容并在该内容更新时更新翻译。
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
-source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 80%
@@ -64,7 +67,7 @@ ht-degree: 80%
 此路径下提供了每种翻译语言的子文件夹，并且您可以选择要发布的语言。
 
 1. 转到&#x200B;**导航** > **资源** > **文件**，然后打开项目文件夹。
-1. 在这里，您可以看到语言根文件夹和所有其他语言文件夹。选择您希望发布的一种或多种本地化语言。
+1. 您将在此处看到语言根文件夹和所有其他语言文件夹。选择您希望发布的一种或多种本地化语言。
    ![选择语言文件夹](assets/select-language-folder.png)
 1. 单击 **管理发布**.
 1. 在&#x200B;**管理发布**&#x200B;窗口中，确保自动在&#x200B;**操作**&#x200B;下选中&#x200B;**发布**，并在&#x200B;**计划**&#x200B;下自动选中&#x200B;**现在**。单击&#x200B;**下一步**。
@@ -118,7 +121,7 @@ You see that a new job card was added to the project. In this example, another S
 ![Additional translation job added](assets/additional-translation-job.png)
 -->
 
-您可能会发现，新信息卡上列出的统计数据（资源和内容片段数量）有所不同。这是因为 AEM 可以识别自上次翻译以来发生的变化，并且仅包含必须翻译的内容。这包括已更新内容的重新翻译以及新内容的首次翻译。
+您可能会发现，新信息卡上列出的统计数据（资源和内容片段数量）有所不同。这是因为 AEM 识别自上次翻译以来发生变化的内容，并且仅包括必须翻译的内容。这包括已更新内容的重新翻译以及新内容的首次翻译。
 
 从此时起，您可以[像处理初始翻译一样启动和管理您的翻译作业。](translate-content.md#using-translation-project)
 
@@ -148,7 +151,7 @@ You see that a new job card was added to the project. In this example, another S
 >
 >路径浏览器的功能强大的过滤器在查找已更新的内容时同样有用。
 >
->有关路径浏览器的更多信息，请参阅[“其他资源”部分。](#additional-resources)
+>可在[其他资源](#additional-resources)部分中详细了解路径浏览器。
 
 从此时起，您可以[像处理初始翻译一样启动和管理您的翻译作业。](translate-content.md#using-translation-project)
 

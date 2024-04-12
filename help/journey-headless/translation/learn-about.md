@@ -2,10 +2,13 @@
 title: 了解 AEM 中的 Headless 内容及其翻译方法
 description: 了解 Headless 概念、它们如何映射到 AEM 以及 AEM 翻译理论。
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,Language Copy
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '757'
-ht-degree: 94%
+source-wordcount: '747'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +36,7 @@ ht-degree: 94%
 * 系统的所有服务都是集成的。
 * 内容创作是无缝进行的。
 
-因此，如果必须添加新渠道或支持新类型的体验，可以将一个（或多个）新组件插入堆栈中，并且只能在一个位置进行更改。
+因此，如果必须添加新渠道或需要支持新类型的体验，则可将一个（或多个）新组件插入到堆栈中，并且只有一处可作出更改。
 
 ![向堆栈添加新渠道](/help/journey-headless/developer/assets/adding-channel.png)
 
@@ -47,7 +50,7 @@ ht-degree: 94%
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消费服务，无论是AR体验、Web商店、移动体验、渐进式Web应用程序(PWA)等，都会从Headless CMS中获取内容并提供自己的渲染。 它们负责为您的内容提供它们自己的头。
+消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
 
 忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 

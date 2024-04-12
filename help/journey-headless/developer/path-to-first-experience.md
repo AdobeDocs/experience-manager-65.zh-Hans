@@ -2,7 +2,10 @@
 title: 首次 AEM Headless 使用体验的路径
 description: 在 AEM Headless 开发人员历程的这一部分中，您将了解在 AEM 中实施您的第一个 Headless 体验（包括规划注意事项）的步骤，并了解最佳实践以让您的历程尽可能顺畅。
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '1951'
 ht-degree: 91%
@@ -151,4 +154,4 @@ Headless 项目之所以能够获得成功，既要归功于实施的技术，�
 * [创建内容片段模型](/help/assets/content-fragments/content-fragments-models.md) – 有关内容片段模型的技术文档
 * [创建内容片段](/help/assets/content-fragments/content-fragments.md) – 有关内容片段的技术文档
 * [使用 GraphQL 查询内容](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) – 关于 GraphQL API 的技术文档
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

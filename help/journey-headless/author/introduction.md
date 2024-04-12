@@ -2,7 +2,10 @@
 title: 使用Adobe Experience Manager为Headless创作
 description: 简单介绍Adobe Experience Manager强大而灵活的Headless功能，以及如何为项目创作内容。
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: f349c8fd9c370ba589d217cd3b1d0521ae5c5597
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 87%

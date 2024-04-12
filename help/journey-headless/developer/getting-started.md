@@ -2,7 +2,10 @@
 title: AEM Headless 快速入门
 description: 在 AEM Headless 开发人员历程的这一部分中，了解 AEM Headless 的先决条件。
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
+role: Admin, Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '2999'
 ht-degree: 96%
@@ -295,4 +298,4 @@ GraphQL 充当 AEM 和 Headless 内容使用者之间的“粘合剂”。GraphQ
 * [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) – 说明如何创建请求来访问和交付内容片段的技术文档
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) – 说明如何创建和修改内容片段（及其他资源）的技术文档
 * [持久查询](/help/sites-developing/headless/graphql-api/persisted-queries.md) – 有关 AEM 中的持久查询的技术文档
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

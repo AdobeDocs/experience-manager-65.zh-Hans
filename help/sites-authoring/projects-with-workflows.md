@@ -7,7 +7,9 @@ topic-tags: projects
 content-type: reference
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring,Workflow
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 41%
@@ -23,7 +25,7 @@ ht-degree: 41%
 * **请求启动项** – 此工作流用于请求启动项。
 * **请求登陆页面** – 此工作流用于请求登陆页面。
 * **请求电子邮件** – 此工作流用于请求电子邮件。
-* **产品照片拍摄和产品照片拍摄（商务）**  — 将资产与产品映射
+* **产品照片拍摄和产品照片拍摄(Commerce)**  — 将资产与产品映射
 * **DAM 创建和翻译副本以及 DAM 创建语言副本** - 为资源和文件夹创建已翻译的二进制文件、元数据和标记。
 
 根据您选择的项目模板，您可以使用特定工作流：
@@ -32,7 +34,7 @@ ht-degree: 41%
 |---|:-:|:-:|:-:|:-:|
 | 请求复制 |  | x |  |  |
 | 产品照片拍摄 |  | x | x |  |
-| 产品照片拍摄（商务） |  |  | x |  |
+| 产品照片拍摄(Commerce) |  |  | x |  |
 | 项目审批 | x |  |  |  |
 | 请求启动项 | x |  |  |  |
 | 请求登陆页面 | x |  |  |  |

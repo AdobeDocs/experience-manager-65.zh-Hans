@@ -4,7 +4,9 @@ description: 了解在AEM Commerce中处理GDPR请求的过程以及如何使用
 contentOwner: carlino
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Compliance
+role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -25,7 +27,7 @@ ht-degree: 0%
 
 ![screen_shot_2018-03-22at111606](assets/screen_shot_2018-03-22at111606.jpg)
 
-通过Adobe的开箱即用的Commerce集成，AEM成为体验层，使用服务并将数据发送回以Headless模式运行的客户Commerce平台。
+通过Adobe现成的Commerce集成，AEM成为体验层，使用服务并将数据发送回以Headless模式运行的客户商务平台。
 
 对于某些商业平台，Adobe存储个人资料信息( `/home/users`)和AEM中的商务令牌（登录到commerce平台）。 对于这些用例，请阅读 [处理AEM平台的GDPR请求](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
 
@@ -35,7 +37,7 @@ ht-degree: 0%
 
 对于SalesforceCommerce Cloud集成，AEM Commerce不会存储任何GDPR相关信息。 将请求转发到 [Salesforce Cloud](https://documentation.b2c.commercecloud.salesforce.com/DOC1/index.jsp).
 
-对于hybris和HCL WebSphere® Commerce的集成，在AEM中有一些数据。 使用 [AEM平台GDPR说明](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) 并思考以下问题：
+对于hybris和HCL WebSphere® Commerce的集成，AEM中提供了一些数据。 使用 [AEM平台GDPR说明](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md) 并思考以下问题：
 
 1. **我的数据存储/使用位置？** 缓存的用户配置文件信息，例如名称、商业用户标识符、令牌、密码和地址数据，如AEM中所示。
 1. **我应当与谁共享包含的GDPR数据？** AEM Commerce中GDPR相关数据的任何更新都不会存储（除了上述相关的用户档案信息之外），而是通过代理传回Commerce平台。

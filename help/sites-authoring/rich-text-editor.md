@@ -3,7 +3,9 @@ title: 使用富文本编辑器创作内容
 description: 使用富文本编辑器在Adobe Experience Manager 6.5中创作内容。
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 32%

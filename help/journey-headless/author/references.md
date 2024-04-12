@@ -2,10 +2,13 @@
 title: 了解如何在内容片段中使用引用
 description: 了解如何在内容片段中对内容、其他片段和其他资源（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager, Experience Manager Sites
+feature: Headless,Content Fragments
+role: Admin, Architect,Data Architect,Developer,User,Leader
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '722'
-ht-degree: 90%
+ht-degree: 95%
 
 ---
 
@@ -39,11 +42,11 @@ ht-degree: 90%
 
 ## 内容引用 {#content-references}
 
-内容引用仅用于此目的，可让您引用任何其他内容。 这将打开一个浏览器，允许您选择内容项目。
+内容引用仅用于此目的，可让您引用任何其他内容。 这将打开一个浏览器，其中您可选择内容项。
 
 ## 资源/媒体引用 {#assets-media-references}
 
-可以使用&#x200B;**插入资源**&#x200B;选项在文本块中引用资源（例如，图像或媒体）。这将打开一个浏览器，供您选择资产。
+可以使用&#x200B;**插入资源**&#x200B;选项在文本块中引用资源（例如，图像或媒体）。这将打开一个浏览器，其中您可选择资源。
 
 ![内容片段 – 插入资源](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +61,7 @@ ht-degree: 90%
 * 人员
 * 奖励
 
-看似直截了当，但一家公司既有CEO又有EMPLOYEES....他们每个人都被定义为一个人员。
+看似简单明了，但公司有 CEO 和员工....他们每个人都被定义为一个人员。
 
 一个人员可以获得一个（或两个）奖励。
 

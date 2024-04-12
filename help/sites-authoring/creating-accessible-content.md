@@ -3,7 +3,9 @@ title: 创建适用于Adobe Experience Manager的易访问内容（WCAG 2.1合�
 description: 使用AEM帮助残障人士访问并使用Web内容
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User,Admin,Architect,Developer
+source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '13636'
 ht-degree: 82%
