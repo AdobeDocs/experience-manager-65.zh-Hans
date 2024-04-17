@@ -6,10 +6,11 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 docset: aem65
-feature: Context Hub
+feature: Context Hub,Developing,Personalization
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2969'
 ht-degree: 0%
@@ -261,7 +262,7 @@ AEM提供了可以扩展的genericstore和genericstoreproperties上下文存储�
 <personalization:storePropertyTag propertyName="authorizableId" store="profile"/>
 ```
 
-#### HTML结构 {#html-structure}
+#### HTML 结构 {#html-structure}
 
 personalization.ui客户端库文件夹(/etc/clientlibs/foundation/personalization/ui/themes/default)提供了客户端上下文用于设置HTML代码格式的CSS样式。 以下代码说明了用于显示存储数据的建议结构：
 

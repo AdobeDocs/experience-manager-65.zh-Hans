@@ -7,7 +7,9 @@ topic-tags: authoring
 content-type: reference
 exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Authoring
+role: User
+source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '1635'
 ht-degree: 2%
@@ -157,8 +159,8 @@ Dynamic Media组件是智能的 — 根据您添加的是图像还是视频，�
 
 您可以编辑以下内容 **[!UICONTROL 添加到购物车]** 设置(通过单击 **[!UICONTROL 编辑]** 在组件中。
 
-**[!UICONTROL 显示产品资产]**  — 默认情况下，此值处于选中状态。 产品资产会按照商务模块中的定义显示产品的图像。 清除复选标记将不显示产品资产。
+**[!UICONTROL 显示产品资产]**  — 默认情况下，此值处于选中状态。 产品资产会显示在Commerce模块中定义的产品图像。 清除复选标记将不显示产品资产。
 
-**[!UICONTROL 显示产品价格]**  — 默认情况下，此值处于选中状态。 产品价格显示商业模块中定义的项目价格。 清除复选标记将不显示产品价格。
+**[!UICONTROL 显示产品价格]**  — 默认情况下，此值处于选中状态。 产品价格显示Commerce模块中定义的项目价格。 清除复选标记将不显示产品价格。
 
 **[!UICONTROL 显示产品表单]**  — 默认情况下，不选中此值。 产品表单包括任何产品变体，如大小和颜色。 清除复选标记将不显示产品变型。

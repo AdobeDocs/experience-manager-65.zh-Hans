@@ -3,7 +3,9 @@ title: 在Adobe Experience Manager中编辑外部SPA
 description: 本文档介绍了将独立SPA上传到Adobe Experience Manager实例、添加内容的可编辑部分以及启用创作的建议步骤。
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Developing,SPA Editor
+role: Developer
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 0%
