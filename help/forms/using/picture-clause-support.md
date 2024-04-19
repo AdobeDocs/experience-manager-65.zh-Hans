@@ -9,9 +9,9 @@ discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 feature: HTML5 Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 9e1c93a0d55d88c08b67392a9f16bfce2ac62445
+source-git-commit: 6990a68e92885fcf9b94a511e8bf5c729195849f
 workflow-type: tm+mt
-source-wordcount: '658'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Date Picture子句支持的表达式：
 
 >[!NOTE]
 >
-> 根据设计，HTML5 Forms中的日期字段不支持 `MM-YYYY` 在编辑格式中。 但是，在显示格式中支持此格式。
+> 根据设计，HTML5 Forms中的日期字段不支持 `MM-YYYY` 编辑格式中的模式。 但是，显示格式支持该模式。
 
 ## Numeric图片子句 {#numeric-picture-clause}
 

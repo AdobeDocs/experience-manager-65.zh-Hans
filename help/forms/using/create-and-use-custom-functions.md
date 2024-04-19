@@ -6,7 +6,7 @@ contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms, Core Components
 exl-id: a328b4a8-e8dd-42a0-b73b-94e76c7692a8
-source-git-commit: 91ab786cd7e0dd75b9ad15058a125605245ec5bb
+source-git-commit: a5b48f1f4072f3e10273ec90d6f505815fe584a3
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 5%
@@ -27,7 +27,6 @@ AEM Forms 6.5引入了用于定义JavaScript函数的功能，这些函数可用
 
 自定义函数通过促进对输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们还支持根据预定义标准动态更改表单行为。
 在自适应Forms中，您可以使用中的自定义函数 [自适应表单的规则编辑器](/help/forms/using/rule-editor.md) 创建表单字段的特定验证规则。
-
 让我们了解自定义功能的使用，用户可以在其中输入电子邮件地址，您希望确保输入的电子邮件地址遵循特定格式（其中包含“@”符号和域名）。 创建自定义函数为“ValidateEmail”，该函数将电子邮件地址作为输入，如果有效，则返回true；否则返回false。
 
 ```javascript
