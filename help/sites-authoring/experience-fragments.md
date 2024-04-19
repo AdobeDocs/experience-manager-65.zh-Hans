@@ -5,16 +5,16 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
+source-git-commit: b90b62418edfa9cef36d99de554a340fad07d978
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 72%
+source-wordcount: '1509'
+ht-degree: 71%
 
 ---
 
 # 体验片段{#experience-fragments}
 
-体验片段是由一个或多个组件组成的组，其中包括可在页面中引用的内容和布局。 它们可以包含任何组件。
+在Adobe Experience Manager (AEM)中，体验片段由一个或多个组件组成，其中包括可在页面中引用的内容和布局。 它们可以包含任何组件。
 
 体验片段：
 
