@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 096fd2ac-616f-484a-b093-9d98b2f87093
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 2%
@@ -243,7 +243,7 @@ Assembler服务返回的XML文档指定输入PDF文档是否符合PDF/A。 例�
 
    * 访问 `AssemblerResult` 对象的 `documents` 字段，即 `Map` 包含指定输入PDF文档是否为PDF/A文档的XML数据的对象。
    * 循环访问 `Map` 对象以获取每个结果文档。 然后，将该数组成员的值转换为 `BLOB`.
-   * 通过访问代表XML数据的二进制数据 `BLOB` 对象的 `MTOM` 字段。 此字段存储可以作为XML文件写入的字节数组。
+   * 通过访问代表XML数据的二进制数据 `BLOB` 对象的 `MTOM` 字段。 此字段存储可作为XML文件写入的字节数组。
 
 **另请参阅**
 

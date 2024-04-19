@@ -10,9 +10,9 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4130'
+source-wordcount: '4132'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ ht-degree: 1%
 
 首先，标识由您现有的概览实施使用的动态变量，以便您可以输入热点数据来创建交互式图像。
 
-在Experience Manager Assets中将热点添加到横幅图像时，必须为每个热点分配一个SKU（库存保管单位和可选的其他变量）。 此类热点变量稍后用于匹配热点与Quickview内容。
+在Experience Manager Assets中将热点添加到横幅图像时，必须为每个热点分配一个SKU（库存保管单位和可选的额外变量）。 此类热点变量稍后用于匹配热点与Quickview内容。
 
 正确标识要与热点数据关联的变量的数量和类型很重要。 添加到横幅图像的每个热点都必须包含足够的信息，以便明确标识现有后端系统中的产品。
 
@@ -113,7 +113,7 @@ ht-degree: 1%
 
 最简单的例子是，概观URL中的唯一变量部分是产品SKU。 在这种情况下，SKU值是向横幅图像添加热点所需的唯一数据块。
 
-但是，在复杂的情况下，除了SKU之外，概览URL还具有不同的变化元素，例如类别ID、颜色代码和大小代码。 在这种情况下，在Experience Manager Assets的可购物交互式图像功能中，每个元素都是热点数据定义中的一个单独变量。
+但是，在复杂的情况下，概览URL具有与SKU不同的不同元素，例如类别ID、颜色代码和大小代码。 在这种情况下，在Experience Manager Assets的可购物交互式图像功能中，每个元素都是热点数据定义中的一个单独变量。
 
 请仔细研究一下以下概览实例URL及其生成的热点变量：
 
@@ -271,7 +271,7 @@ ht-degree: 1%
 
    1. 在“热点管理”页面的左上角附近，选择 **[!UICONTROL 热点]**.
    1. 在图像上，选择要显示热点的位置。 如有必要，可拖动热点以调整其位置。
-   1. 重复步骤a和b，根据需要添加其他热点。
+   1. 重复步骤a和b，根据需要添加额外的热点。
    1. （可选）要删除热点，请在图像上选择该热点，然后选择 **[!UICONTROL 删除]** （垃圾桶图标） **[!UICONTROL 热点]** 标题。
 
 1. 在“名称”文本字段中，键入热点的名称。 此名称也会显示在选定热点下拉列表中。
@@ -375,9 +375,9 @@ ht-degree: 1%
 
 要在响应式环境中将“裁切”应用于购物交互式图像，您可以包括交互式图像配置属性 `ZoomView.iscommand` 到那条路。 组件 `ZoomView` 称为和 `iscommand` 是您应用的“裁切”图像服务命令。
 
-请参阅 [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) 配置属性。
+请参阅 [ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand) 配置属性。
 
-请参阅 [裁切](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) 图像服务命令。
+请参阅 [裁切](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop) 图像服务命令。
 
 现在，您便可以将交互式图像与网站上的现有概览集成。
 

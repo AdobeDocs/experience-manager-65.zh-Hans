@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '9814'
 ht-degree: 0%
@@ -1600,7 +1600,7 @@ WSE体系结构使用策略、声明和SecurityToken数据类型。 简言之，
                     SignInteractiveForm.ServiceReference2.BLOB formData = new SignInteractiveForm.ServiceReference2.BLOB();
                     SignInteractiveForm.ServiceReference2.BLOB pdfForm = new SignInteractiveForm.ServiceReference2.BLOB();
  
-                    //Specify a XML form data
+                    //Specify an XML form data
                     string path = "C:\\Adobe\Loan.xml";
                     FileStream fs = new FileStream(path, FileMode.Open);
  
@@ -1611,7 +1611,7 @@ WSE体系结构使用策略、声明和SecurityToken数据类型。 简言之，
                     fs.Read(ByteArray, 0, len);
                     formData.MTOM = ByteArray;
  
-                    //Specify a XML form data
+                    //Specify an XML form data
                     string path2 = "C:\\Adobe\LoanSigXFA.pdf";
                     FileStream fs2 = new FileStream(path2, FileMode.Open);
  

@@ -10,10 +10,10 @@ role: User, Admin
 exl-id: 62d4a38c-2873-4560-8d58-ad172288764d
 feature: Components,Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '3219'
-ht-degree: 5%
+source-wordcount: '3218'
+ht-degree: 6%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 5%
 
 要将Dynamic Media功能添加到您在网站上使用的资源，您可以添加 **Dynamic Media**， **交互式媒体**， **全景媒体**，或 **Video 360媒体** 组件直接显示在页面上。 您可以通过进入布局模式并启用Dynamic Media组件来添加组件。 然后，您可以将这些组件添加到页面，并将资产添加到该组件。 Dynamic media组件是智能的——它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
 
-如果您使用Dynamic Media作为WCM，则可以直接将Adobe Experience Manager资源添加到页面。 如果您为WCM使用第三方，则可以 [链接](/help/assets/linking-urls-to-yourwebapplication.md) 或 [嵌入](/help/assets/embed-code.md) 您的资产。 有关响应式第三方网站，请参阅[将优化的图像交付到响应式网站](/help/assets/responsive-site.md)。
+如果您使用Dynamic Media作为WCM，则可以直接将Adobe Experience Manager资源添加到页面。 如果您为 WCM 使用第三方，请[链接](/help/assets/linking-urls-to-yourwebapplication.md)或[嵌入](/help/assets/embed-code.md)资产。有关响应式第三方网站，请参阅[将优化的图像交付到响应式网站](/help/assets/responsive-site.md)。
 
 >[!NOTE]
 >
@@ -301,9 +301,9 @@ Dynamic Media通过选择 **[!UICONTROL 编辑]** 图标，然后 **[!UICONTROL 
 
   您可以编辑以下内容 **[!UICONTROL 添加到购物车]** 通过选择 **[!UICONTROL 编辑]** 在组件中。
 
-* **[!UICONTROL 显示产品资产]**  — 默认情况下，此值处于选中状态。 产品资产会按照商务模块中的定义显示产品的图像。 清除复选标记将不显示产品资产。
+* **[!UICONTROL 显示产品资产]**  — 默认情况下，此值处于选中状态。 产品资产会显示在Commerce模块中定义的产品图像。 清除复选标记将不显示产品资产。
 
-* **[!UICONTROL 显示产品价格]**  — 默认情况下，此值处于选中状态。 产品价格显示商业模块中定义的项目价格。 清除复选标记将不显示产品价格。
+* **[!UICONTROL 显示产品价格]**  — 默认情况下，此值处于选中状态。 产品价格显示Commerce模块中定义的项目价格。 清除复选标记将不显示产品价格。
 
 * **[!UICONTROL 显示产品表单]**  — 默认情况下，不选中此值。 产品表单包括任何产品变体，如大小和颜色。 清除复选标记将不显示产品变型。
 

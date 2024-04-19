@@ -8,9 +8,9 @@ content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2317'
+source-wordcount: '2318'
 ht-degree: 1%
 
 ---
@@ -234,7 +234,7 @@ Apache Sling作业使用者管理器服务提供主题允许列表和阻止列�
 
 >[!CAUTION]
 >
->自动生成复制代理的一个已知问题要求您手动创建新的复制代理。
+>自动生成的复制代理的一个已知问题要求您手动创建新的复制代理。
 
 创建用于在实例之间传输作业负载以进行卸载的复制代理。 下图显示了从创作实例卸载到工作实例所需的代理。 作者的Sling ID为1，而工作实例的Sling ID为2：
 

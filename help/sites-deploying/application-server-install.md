@@ -9,9 +9,9 @@ exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -236,17 +236,17 @@ AEM作为单个war文件来部署。
 
 * **部署AEM Web应用程序**
 
-   * 下载AEM war文件
-   * 如果需要，在web.xml中进行配置（请参阅上面的“一般说明”）
+   * 下载AEM war文件。
+   * 如果需要，在web.xml中进行配置（请参阅上面的“一般说明”）。
 
-      * 解压缩WEB-INF/web.xml文件
-      * 将sling.run.modes参数更改为发布
-      * 取消对sling.home初始参数的注释并根据需要设置此路径
-      * 重新打包web.xml文件
+      * 解压缩WEB-INF/web.xml文件。
+      * 将sling.run.modes参数更改为发布。
+      * 取消对sling.home初始参数的注释，并根据需要设置此路径。
+      * 重新打包web.xml文件。
 
-   * 将AEM war文件重命名为ROOT.war（如果您要将其部署为根Web应用程序），请将其重命名为，例如，如果您要将aemauthor作为上下文根，请将其重命名为aemauthor.war
-   * 将其复制到tomcat的webapps文件夹中
-   * 等待安装AEM
+   * 如果要将AEM war文件部署为根Web应用程序，请将其重命名为ROOT.war。 如果要将aemauthor重命名为上下文根，请将其重命名为aemauthor.war。
+   * 将其复制到tomcat的webapps文件夹中。
+   * 等待安装AEM。
 
 ## 疑难解答 {#troubleshooting}
 

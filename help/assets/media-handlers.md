@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2136'
+source-wordcount: '2113'
 ht-degree: 3%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 3%
 
 [!DNL Adobe Experience Manager Assets] 附带一组用于处理资产的默认工作流和媒体处理程序。 工作流定义要在资产上执行的任务，然后将特定任务委派给媒体处理程序，例如缩略图生成或元数据提取。
 
-可以将工作流配置为在上传特定MIME类型的资产时自动执行。 处理步骤由一系列 [!DNL Assets] 媒体处理程序。 [!DNL Experience Manager] 提供了一些 [内置处理程序，](#default-media-handlers) 其他选项可以是 [已开发自定义](#creating-a-new-media-handler) 或通过将流程委派给 [命令行工具](#command-line-based-media-handler).
+可以将工作流配置为在上传特定MIME类型的资产时自动执行。 处理步骤由一系列 [!DNL Assets] 媒体处理程序。 [!DNL Experience Manager] 提供了一些 [内置处理程序](#default-media-handlers)，额外的选件可以是 [已开发自定义](#creating-a-new-media-handler) 或通过将流程委派给 [命令行工具](#command-line-based-media-handler).
 
-媒体处理程序是中的服务 [!DNL Assets] 对资产执行特定操作的受众。 例如，将MP3音频文件上传到时 [!DNL Experience Manager]，工作流会触发提取元数据并生成缩略图的MP3处理程序。 媒体处理程序通常与工作流结合使用。 中支持最常见的MIME类型 [!DNL Experience Manager]. 可以通过扩展/创建工作流、扩展/创建媒体处理程序或禁用/启用媒体处理程序对资产执行特定任务。
+媒体处理程序是中的服务 [!DNL Assets] 对资产执行特定操作的受众。 例如，将MP3音频文件上传到时 [!DNL Experience Manager]，工作流会触发提取元数据并生成缩略图的MP3处理程序。 媒体处理程序与工作流一起使用。 中支持最常见的MIME类型 [!DNL Experience Manager]. 可以通过扩展或创建工作流、扩展或创建媒体处理程序或禁用和启用媒体处理程序来对资产执行特定任务。
 
 >[!NOTE]
 >
->请参阅 [资源支持的格式](assets-formats.md) 页面，了解支持的所有格式的描述 [!DNL Assets] 和每种格式支持的功能。
+>请参阅 [支持的资源格式](assets-formats.md) 页面，了解支持的所有格式的描述 [!DNL Assets] 和每种格式支持的功能。
 
 ## 默认媒体处理程序 {#default-media-handlers}
 
@@ -38,7 +38,7 @@ ht-degree: 3%
 | [!UICONTROL 文本处理程序] | com.day.cq.dam.core.impl.handler.TextHandler | text/plain |
 | [!UICONTROL PdfHandler] | com.day.cq.dam.handler.standard.pdf.PdfHandler | <ul><li>application/pdf</li><li>application/illustrator</li></ul> |
 | [!UICONTROL JpegHandler] | com.day.cq.dam.core.impl.handler.JpegHandler | image/jpeg |
-| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>重要</b>  — 上传MP3文件时，它是 [使用第三方库处理](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). 如果MP3具有可变比特率(VBR)，则库会计算不准确的近似长度。 |
+| [!UICONTROL Mp3Handler] | com.day.cq.dam.handler.standard.mp3.Mp3Handler | audio/mpeg<br><b>重要</b>  — 上传的MP3文件为 [使用第三方库处理](https://www.zxdr.it/programmi/SistEvolBDD/LibJava/doc/de/vdheide/mp3/MP3File.html). 如果MP3具有可变比特率(VBR)，则库会计算不准确的近似长度。 |
 | [!UICONTROL ZipHandler] | com.day.cq.dam.handler.standard.zip.ZipHandler | <ul><li>application/java-archive </li><li> application/zip</li></ul> |
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>application/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
@@ -65,7 +65,7 @@ ht-degree: 3%
 
 ## 在工作流中使用媒体处理程序对资产执行任务 {#using-media-handlers-in-workflows-to-perform-tasks-on-assets}
 
-媒体处理程序是与工作流结合使用的服务。
+媒体处理程序是与工作流一起使用的服务。
 
 [!DNL Experience Manager] 有一些用于处理资产的默认工作流。 要查看工作流，请打开工作流控制台，然后单击 **[!UICONTROL 模型]** 选项卡：以开头的工作流标题 [!DNL Assets] 是特定于资产的受众。
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 
 开始实施的最佳方法是继承所提供的抽象实施，该实施会处理大多数事务并提供合理的默认行为： `com.day.cq.dam.core.AbstractAssetHandler` 类。
 
-此类已提供抽象服务描述符。 因此，如果您继承自此类并使用maven-sling-plugin，请确保将继承标志设置为 `true`.
+此类已提供抽象服务描述符。 因此，如果您从此类继承并使用maven-sling-plugin，请确保将继承标志设置为 `true`.
 
 实施以下方法：
 
@@ -108,14 +108,14 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 接口和类包括：
 
-* `com.day.cq.dam.api.handler.AssetHandler` 接口：此接口描述添加了对特定MIME类型的支持的服务。 添加新的MIME类型需要实现此接口。 该界面包含用于导入和导出特定文档、用于创建缩略图和提取元数据的方法。
+* `com.day.cq.dam.api.handler.AssetHandler` 接口：此接口描述添加了对特定MIME类型的支持的服务。 添加MIME类型需要实现此接口。 该界面包含用于导入和导出特定文档、用于创建缩略图和提取元数据的方法。
 * `com.day.cq.dam.core.AbstractAssetHandler` 类：此类用作所有其他资产处理程序实现的基础，并提供常用功能。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:
-   * 此类用作所有其他资产处理程序实现的基础，并为子资产提取提供常用功能以及常用功能。
+   * 此类用作所有其他资产处理程序实现的基础，并提供常用功能以及子资产提取的常用功能。
    * 启动实现的最佳方法是继承提供的抽象实现，该实现处理大多数事务并提供合理的默认行为：com.day.cq.dam.core.AbstractAssetHandler类。
-   * 此类已提供抽象服务描述符。 因此，如果您继承自此类并使用maven-sling-plugin，请确保将继承标志设置为true。
+   * 此类已提供抽象服务描述符。 因此，如果您从此类继承并使用maven-sling-plugin，请确保将继承标志设置为true。
 
-需要实施以下方法：
+必须实施以下方法：
 
 * `extractMetadata()`：此方法提取所有可用的元数据。
 * `getThumbnailImage()`：此方法根据传递的资源创建缩略图图像。
@@ -127,13 +127,13 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 接口和类包括：
 
-* `com.day.cq.dam.api.handler.AssetHandler` 接口：此接口描述添加了对特定MIME类型的支持的服务。 添加新的MIME类型需要实现此接口。 该界面包含用于导入和导出特定文档、用于创建缩略图和提取元数据的方法。
+* `com.day.cq.dam.api.handler.AssetHandler` 接口：此接口描述添加了对特定MIME类型的支持的服务。 添加MIME类型需要实现此接口。 该界面包含用于导入和导出特定文档、用于创建缩略图和提取元数据的方法。
 * `com.day.cq.dam.core.AbstractAssetHandler` 类：此类用作所有其他资产处理程序实现的基础，并提供常用功能。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` 类：此类用作所有其他资产处理程序实现的基础，并为子资产提取提供常用功能以及常用功能。
 
 #### 示例：创建特定的文本处理程序 {#example-create-a-specific-text-handler}
 
-在此部分中，您将创建一个特定的文本处理程序，以生成带水印的缩略图。
+在此部分中，您将创建一个特定的文本处理程序，以生成带有水印的缩略图。
 
 按照以下步骤操作：
 
@@ -144,7 +144,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 1. 在Eclipse中，创建 `myBundle` [!DNL Maven] 项目：
 
    1. 在菜单栏中，单击 **[!UICONTROL 文件]** > **[!UICONTROL 新建]** > **[!UICONTROL 其他]**.
-   1. 在对话框中，展开 [!DNL Maven] 文件夹，选择 [!DNL Maven] 项目并单击 **[!UICONTROL 下一个]**.
+   1. 在对话框中，展开 [!DNL Maven] 文件夹，选择 [!DNL Maven] 项目，然后单击 **[!UICONTROL 下一个]**.
    1. 选中创建简单项目框和使用默认工作区位置框，然后单击 **[!UICONTROL 下一个]**.
    1. 定义 [!DNL Maven] 项目：
 
@@ -155,10 +155,10 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
    1. 单击 **[!UICONTROL 完成]**.
 
-1. 设置 [!DNL Java] 编译器到版本1.5：
+1. 设置 [!DNL Java™] 编译器到版本1.5：
 
    1. 右键单击 `myBundle` 项目，选择 [!UICONTROL 属性].
-   1. 选择 [!UICONTROL Java编译器] 并将以下属性设置为1.5：
+   1. 选择 [!UICONTROL Java™编译器] 并将以下属性设置为1.5：
 
       * 编译器符合性级别
       * 生成的.class文件兼容性
@@ -283,16 +283,16 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
     </dependencies>
    ```
 
-1. 创建包 `com.day.cq5.myhandler` 包含 [!DNL Java] 下的类 `myBundle/src/main/java`：
+1. 创建包 `com.day.cq5.myhandler` 包含 [!DNL Java™] 下的类 `myBundle/src/main/java`：
 
    1. 在myBundle下，右键单击 `src/main/java`，选择新建，然后选择包。
    1. 将其命名为 `com.day.cq5.myhandler` 然后单击“完成”。
 
-1. 创建 [!DNL Java] 类 `MyHandler`：
+1. 创建 [!DNL Java™] 类 `MyHandler`：
 
    1. 在 [!DNL Eclipse]，下 `myBundle/src/main/java`，右键单击 `com.day.cq5.myhandler` 包。 选择 [!UICONTROL 新建]，则 [!UICONTROL 类].
-   1. 在对话框窗口中，将 [!DNL Java] 类 `MyHandler` 并单击 [!UICONTROL 完成]. [!DNL Eclipse] 创建并打开文件 `MyHandler.java`.
-   1. 在 `MyHandler.java` 使用以下内容替换现有代码，然后保存更改：
+   1. 在对话框窗口中，将 [!DNL Java™] 类 `MyHandler` 并单击 [!UICONTROL 完成]. [!DNL Eclipse] 创建并打开文件 `MyHandler.java`.
+   1. 在 `MyHandler.java`，使用以下内容替换现有代码，然后保存更改：
 
    ```java
    package com.day.cq5.myhandler;
@@ -434,7 +434,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
    }
    ```
 
-1. 编译 [!DNL Java] 类并创建捆绑包：
+1. 编译 [!DNL Java™] 类并创建捆绑包：
 
    1. 右键单击 `myBundle` 项目，选择 **[!UICONTROL 运行方式]**，则 **[!UICONTROL Maven安装]**.
    1. 捆绑包 `myBundle-0.0.1-SNAPSHOT.jar` （包含编译的类）创建于 `myBundle/target`.
@@ -445,20 +445,20 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 ## 基于命令行的媒体处理程序 {#command-line-based-media-handler}
 
-[!DNL Experience Manager] 允许您在工作流中运行任何命令行工具来转换资产(例如 [!DNL ImageMagick])，并将新演绎版添加到资源。 您只需在托管的磁盘上安装命令行工具 [!DNL Experience Manager] ，以在工作流中添加和配置流程步骤。 调用的进程，称为 `CommandLineProcess`，还可根据特定的MIME类型进行筛选以及根据新演绎版创建多个缩略图。
+[!DNL Experience Manager] 允许您在工作流中运行任何命令行工具来转换资产(例如 [!DNL ImageMagick])，并将新演绎版添加到资源。 仅在托管的磁盘上安装命令行工具 [!DNL Experience Manager] ，并为工作流添加和配置进程步骤。 调用的进程，称为 `CommandLineProcess`，则还会根据特定的MIME类型进行筛选，并根据新演绎版创建多个缩略图。
 
 以下转化可以自动运行并存储于 [!DNL Assets]：
 
 * EPS和AI转换使用 [ImageMagick](https://www.imagemagick.org/script/index.php) 和 [Ghostscript](https://www.ghostscript.com/).
 * 使用的FLV视频转码 [FFmpeg](https://ffmpeg.org/).
 * 使用的MP3编码 [LAME](https://lame.sourceforge.io/).
-* 使用进行音频处理 [SOX](https://sox.sourceforge.io/).
+* 使用进行音频处理 [SOX](https://sourceforge.net/projects/sox/).
 
 >[!NOTE]
 >
 >在非Windows系统上，FFmpeg工具在为文件名中包含单引号(&#39;)的视频资源生成演绎版时返回错误。 如果您的视频文件的名称包含单引号，请先将其删除，然后再上传到 [!DNL Experience Manager].
 
-此 `CommandLineProcess` 进程会按照列出的顺序执行以下操作：
+此 `CommandLineProcess` 进程按列出的顺序执行以下操作：
 
 * 根据特定的MIME类型筛选文件（如果指定）。
 * 在托管的磁盘上创建临时目录 [!DNL Experience Manager] 服务器。
@@ -470,14 +470,14 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 ### 使用的示例 [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-以下示例显示了如何设置命令行流程步骤，以便每次将具有miMIME e类型GIF或TIFF的资源添加到时 `/content/dam` 在 [!DNL Experience Manager] 服务器，将创建原始文件的翻转图像以及三个其他缩略图（140x100、48x48和10x250）。
+以下示例显示了如何设置命令行流程步骤，以便每次将具有miMIME e类型GIF或TIFF的资源添加到时 `/content/dam` 在 [!DNL Experience Manager] 服务器，将创建原始文件的翻转图像。 还创建了另外三个缩略图140x100、48x48和10x250。
 
 为此，请使用 [!DNL ImageMagick]. [!DNL ImageMagick] 是一个免费的命令行软件，用于创建、编辑和合成位图图像。
 
 安装 [!DNL ImageMagick] 在托管的磁盘上 [!DNL Experience Manager] 服务器：
 
 1. 安装 [!DNL ImageMagick]：请参阅 [ImageMagick文档](https://www.imagemagick.org/script/download.php).
-1. 设置工具，以便在命令行中运行转换。
+1. 设置该工具，以便在命令行中运行 `convert`.
 1. 要查看工具是否正确安装，请运行以下命令 `convert -h` 在命令行上。
 
    它会显示一个帮助屏幕，其中包含转换工具的所有可能选项。
@@ -506,7 +506,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 | 参数 — 格式 | 描述 |
 |---|---|
-| mime：&lt;mime-type> | 可选参数。 如果资产与参数具有相同的MIME类型，则应用该流程。 <br>可以定义几种MIME类型。 |
+| mime：&lt;mime-type> | 可选参数。 如果资产的MIME类型与参数中的相同，则会应用该流程。 <br>可以定义几种MIME类型。 |
 | 吨：&lt;width>：&lt;height> | 可选参数。 该过程会使用参数中定义的维度创建一个缩略图。 <br>可以定义多个缩略图。 |
 | cmd： &lt;command> | 定义执行的命令。 语法取决于命令行工具。 只能定义一个命令。 <br>以下变量可用于创建命令：<br>`${filename}`：输入文件的名称，例如original.jpg <br> `${file}`：输入文件的完整路径名称，例如， `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`：输入文件的目录，例如， `/tmp/cqdam0816.tmp` <br>`${basename}`：不带扩展名的输入文件的名称，例如，原始文件 <br>`${extension}`：输入文件的扩展名，例如JPG。 |
 
@@ -514,7 +514,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-然后，当工作流运行时，该步骤仅适用于具有 `image/gif` 或 `mime:image/tiff` 作为 `mime-types`，它会创建原始图像的翻转图像，将其转换为JPG并创建三个尺寸为：140x100、48x48和10x250的缩略图。
+然后，当工作流运行时，该步骤仅适用于具有 `image/gif` 或 `mime:image/tiff` 作为 `mime-types`. 它创建原始图像的翻转图像，将其转换为JPG，并创建三个尺寸为140x100、48x48和10x250的缩略图。
 
 使用以下内容 [!UICONTROL 进程参数] 要使用创建三个标准缩略图，请执行以下操作 [!DNL ImageMagick]：
 

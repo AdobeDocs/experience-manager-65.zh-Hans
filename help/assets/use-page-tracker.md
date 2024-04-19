@@ -6,7 +6,7 @@ role: Architect, Admin
 feature: Asset Reports
 exl-id: 14d02015-df00-4566-a098-de76eaf42605
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '173'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 页面跟踪器是一段JavaScript代码，您可以将该代码包含在第三方网站的代码中，从而使Adobe Analytics能够捕获周围的使用情况数据 [!DNL Adobe Experience Manager Assets] 这些网站上的。
 
-要捕获特定于资产的事件（例如单击次数），您还必须在第三方网站的代码中包含嵌入代码。
+要捕获事件（例如特定于资产的点击次数），您还必须在第三方网站的代码中包含嵌入代码。
 
 以下示例代码显示了包含页面跟踪器代码和嵌入代码的网页的外观：
 

@@ -5,9 +5,9 @@ exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '548'
 ht-degree: 43%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 43%
 
 ## 如何使用GraphQL投放内容片段 {#how-to-deliver-a-content-fragment}
 
-信息架构师必须为其渠道端点设计查询才能交付内容。 每个模型的每个端点只能考虑一次这些查询。 对于本指南快速入门，您只能创建一个。
+信息架构师必须为其渠道端点设计查询才能交付内容。 每个端点、每个模型只考虑这些查询一次。 对于本快速入门指南，请仅创建一个。
 
 1. 登录AEM并访问 [GraphiQL接口](/help/sites-developing/headless/graphql-api/graphiql-ide.md)：
    * 例如：`http://<host>:<port>/aem/graphiql.html`。

@@ -10,9 +10,9 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '5926'
+source-wordcount: '5927'
 ht-degree: 2%
 
 ---
@@ -39,7 +39,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果在用户选择缩略图图像时创建交互式视频以启动网页，则某些设备会阻止打开弹出网页。 在这种情况下，必须更改设备上的弹出窗口阻止程序设置。 例如，在Apple iPhone 6上，导航到 **[!UICONTROL 设置]** > **Safari** > **阻止弹出窗口**，然后将控件滑动到 **[!UICONTROL 关闭]**. 现在，当您播放交互式视频并选择缩略图时，如果想要打开弹出窗口，系统会提示您进行选择。 如果接受，将打开网页。
+>如果在用户选择缩略图图像时创建交互式视频以启动网页，则某些设备会阻止打开弹出网页。 在这种情况下，必须更改设备上的弹出窗口阻止程序设置。 例如，在Apple iPhone 6上，导航到 **[!UICONTROL 设置]** > **Safari** > **阻止弹出窗口**，然后将控件滑动到 **[!UICONTROL 关闭]**. 现在，在播放交互式视频并选择缩略图时，如果想要打开弹出窗口，系统会提示您进行选择。 如果接受，将打开网页。
 
 ### 观看如何创建交互式视频 {#watch-how-interactive-videos-are-created}
 
@@ -48,7 +48,7 @@ ht-degree: 2%
 
 ### Adobe客户解决方案网络研讨会 {#adobe-customer-success-webinar}
 
-“在Experience Manager Assets中使用交互式视频、链接共享和YouTube共享”网络研讨会教您如何使用交互式视频和其他功能将转化驱动型事件与视频营销内容关联起来。
+“在Experience Manager Assets中使用交互式视频、链接共享和YouTube共享”网络研讨会教您如何使用交互式视频和其他功能将转化驱动型事件绑定到视频营销内容。
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ ht-degree: 2%
 
 最简单的例子是，概观URL中的唯一变量部分是产品SKU。 在这种情况下，产品SKU值是向Experience Manager交互式视频中的时间段添加缩略图所需的唯一数据块。
 
-但是，在复杂的情况下，除了产品SKU之外，快速视图URL还有不同的元素，例如类别ID、颜色代码和大小代码。 在这种情况下，在Experience Manager的缩略图数据定义中，每个此类元素都会成为单独的变量。
+但是，在复杂的情况下，概览URL具有不同于产品SKU的各种元素，例如类别ID、颜色代码和大小代码。 在这种情况下，在Experience Manager的缩略图数据定义中，每个此类元素都会成为单独的变量。
 
 请仔细研究一下以下概览实例URL及其生成的缩略图变量：
 
@@ -228,7 +228,7 @@ ht-degree: 2%
 
 如果要使用默认的、现成的交互式视频查看器预设类型，则可以跳过此任务并继续执行下一个任务 `Shoppable_Video_dark` 或 `Shoppable_Video_light`.
 
-在创作环境中选择缩略图时，将显示“概观”对话框的预览。
+在创作环境中选择缩略图时，会显示“概览”对话框的预览。
 
 ![chlimage_1-21](assets/chlimage_1-127.png)
 
@@ -300,7 +300,7 @@ ht-degree: 2%
 
      在时间轴上您要添加区段的各个点继续播放和暂停视频，直到视频结束。
 
-1. （可选）将栏拖动到 **[!UICONTROL 时间轴范围滑块]** 左键放大或右键缩小，这样您就可以控制所添加区段的详细程度。
+1. （可选）将栏拖动到 **[!UICONTROL 时间轴范围滑块]** 左键放大或右键缩小，以便您可以控制所添加区段的详细程度。
 
    ![chlimage_1-22](assets/chlimage_1-128.png)
 
@@ -375,7 +375,7 @@ ht-degree: 2%
 
    * 删除区段
 
-     选择时间轴上的最后一个区段，然后在工具栏上，选择 **[!UICONTROL 删除区段]**. 如果选择了两个或多个区段，则将禁用“删除区段”功能。
+     选择时间轴上的最后一个区段，然后在工具栏上，选择 **[!UICONTROL 删除区段]**. 如果选择了两个或多个区段， **[!UICONTROL 删除区段]** 已禁用。
 
      您只能删除最后一个区段。 例如，如果要删除时间轴上的所有区段，则必须始终选择最后一个区段，然后选择 **[!UICONTROL 删除区段]**.
 
@@ -414,7 +414,7 @@ ht-degree: 2%
       <td>将选定的缩略图图像与概览关联</td> 
       <td><p>在操作类型下，选择 <strong>概览</strong>.</p> <p>如果您是Experience Manager Sites和电子商务客户：</p> 
        <ul> 
-       <li>请注意，“SKU值”文本字段已预填充了所选产品的SKU（库存单位），该SKU是您提供的每个不同产品或服务的唯一标识符。 当图像与Experience Manager商业中的产品关联时，将自动填充此值。</li> 
+       <li>请注意，“SKU值”文本字段已预填充了所选产品的SKU（库存单位），该SKU是您提供的每个不同产品或服务的唯一标识符。 当图像与Experience ManagerCommerce中的产品关联时，将自动填充此值。</li> 
        <li>如果预填充的SKU不正确，请选择“产品选取器”图标（放大镜）以打开“选择产品”页面。 选择要使用的产品，然后选择页面右上角的复选标记，以便您可以返回到交互式视频编辑器。</li> 
        </ul> <p> 如果您是 <em>非</em> Experience Manager Sites或电子商务客户</p> 
        <ul> 
@@ -476,7 +476,7 @@ ht-degree: 2%
 
    将两个选定的5秒区段合并为1个10秒区段。
 
-   * **[!UICONTROL 拆分区段]**  — 您可以将单个区段划分为两个等时区段。 如果已有产品缩略图分配给区段，则这些缩略图将合并到左侧区段中。
+   * **[!UICONTROL 拆分区段]**  — 可将单个区段划分为两个相等的时间区段。 如果已有产品缩略图分配给区段，则这些缩略图将合并到左侧区段中。
 
      在时间轴上，选择要分成两半的区段，然后选择 **[!UICONTROL 拆分区段]** 工具栏上。
 
@@ -693,7 +693,7 @@ Experience Manager返回的嵌入代码已具有现成的事件处理程序。 �
 /datafeed/$CategoryId$-$SKU$.json
 ```
 
-可以在中轻松重构此URL `quickViewActivate` 处理程序使用 `categoryId` 和 `sku` 中的可用字段 `inData` 对象通过查看器的代码传递给处理程序，如下所示：
+可以在中轻松重构此URL `quickViewActivate` 处理程序，使用 `categoryId` 和 `sku` 中的可用字段 `inData` 对象通过查看器的代码传递给处理程序，如下所示：
 
 ```xml
 var sku=inData.sku;
@@ -707,7 +707,7 @@ var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 loadQuickView(quickViewUrl);
 ```
 
-最后，确保概览对话框已附加到查看器的容器元素。 默认嵌入代码提供了实现此功能的示例步骤。 要获取对查看器容器元素的引用，您可以使用以下代码行：
+最后，确保概览对话框已附加到查看器的容器元素。 嵌入的代码提供了实现此功能的示例步骤。 要获取对查看器容器元素的引用，您可以使用以下代码行：
 
 ```xml
 var sdkContainerId = s7interactivevideoviewer.getComponent("container").getInnerContainerId(); // get viewer container component

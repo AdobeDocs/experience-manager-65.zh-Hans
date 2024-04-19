@@ -10,9 +10,9 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '3442'
+source-wordcount: '3441'
 ht-degree: 0%
 
 ---
@@ -368,11 +368,11 @@ HTML标记，以在导入的zip文件中包含图形链接组件。 此处“fir
 
 ### Parsys {#parsys}
 
-AEM parsys组件是可以包含其他AEM组件的容器组件。 可以在导入的HTML中添加parsys组件。 这允许用户向登陆页面添加/删除可编辑的AEM组件，即使是在已导入之后。
+AEM Parsys组件是可以包含其他AEM组件的容器组件。 可以在导入的HTML中添加Parsys组件。 这允许用户向登陆页面添加/删除可编辑的AEM组件，即使是在已导入之后。
 
 段落系统使用户能够使用Sidekick添加组件。
 
-用于插入parsys组件的HTML标记( `foundation/components/parsys`HTML )中，完成以下操作：
+用于插入Parsys组件的HTML标记( `foundation/components/parsys`HTML )中，完成以下操作：
 
 ```xml
 <div data-cq-component="parsys">
@@ -383,9 +383,9 @@ AEM parsys组件是可以包含其他AEM组件的容器组件。 可以在导入
 
 在HTML中包含上述标记会执行以下操作：
 
-* 在导入设计包后创建的登陆页中插入AEM parsys组件(foundation/components/parsys)。
-* 使用默认组件初始化sidekick。 通过将组件从sidekick拖到parsys组件上，可以将新组件添加到登陆页面。
-* 两个标题组件也是parsys的一部分。
+* 在导入设计包后创建的登陆页中插入AEM Parsys组件(foundation/components/parsys)。
+* 使用默认组件初始化sidekick。 通过将组件从Sidekick拖到Parsys组件上，可以将新组件添加到登陆页面。
+* 两个标题组件也是Parsys的一部分。
 
 ### 目标 {#target}
 
@@ -441,7 +441,7 @@ AEM parsys组件是可以包含其他AEM组件的容器组件。 可以在导入
 
 ### 覆盖模板 {#overlaying-template}
 
-可以通过在下列位置创建一个空白登陆页面模板来覆盖该模板： `/apps/<appName>/designimporter/templates/<templateName>`
+通过在以下位置创建一个空白登陆页面模板，可以对该模板进行叠加： `/apps/<appName>/designimporter/templates/<templateName>`
 
 说明了在AEM中创建模板的步骤 [此处](/help/sites-developing/templates.md).
 
@@ -543,7 +543,7 @@ data-cq-component中的路径应为组件的resourceType。
 
 ### 使用登陆页面相关组件初始化Sidekick {#initialization-of-sidekick-with-landing-page-relevant-components}
 
-如果设计包包含parsys组件标记，则在导入后，sidekick将开始显示与登陆页相关的组件。 您可以将新组件拖放到登陆页面中的parsys组件上。 您还可以转到设计模式并将新组件添加到Sidekick。
+如果设计包包含Parsys组件标记，则在导入后，Sidekick将开始显示与登陆页面相关的组件。 您可以将新组件拖放到登陆页面中的Parsys组件上。 您还可以转到设计模式并将新组件添加到Sidekick。
 
 ### 导入期间显示的错误消息 {#error-messages-displayed-during-import}
 

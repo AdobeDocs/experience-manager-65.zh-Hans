@@ -7,9 +7,9 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1226'
 ht-degree: 4%
 
 ---
@@ -52,7 +52,7 @@ AEM Forms提供了一种方法，帮助您将自适应表单的字段与稍后�
 
 1. `sample-form.xdp`：用作示例的XFA表单模板
 
-1. `sample-xfa-af`：基于sample-form.xdp文件的自适应表单。 但是，此自适应表单不包括任何字段。 在下一步中，我们将向此自适应表单添加内容。
+1. `sample-xfa-af`：基于sample-form.xdp文件的自适应表单。 但是，此自适应表单不包括任何字段。 在下一步中，将内容添加到此自适应表单。
 
 ### 将内容添加到自适应表单 {#add-content-to-adaptive-form-br}
 
@@ -63,7 +63,7 @@ AEM Forms提供了一种方法，帮助您将自适应表单的字段与稍后�
 
 >[!NOTE]
 >
->在前面的步骤中，我们覆盖了XDP文件中字段的属性。 因此，如果稍后修改XDP文件中的相应属性，则不会同步此属性。
+>在前面的步骤中，您覆盖了XDP文件中字段的属性。 因此，如果稍后编辑XDP文件中的相应属性，则此属性不会同步。
 
 ## 检测XDP文件中的更改 {#detecting-changes-in-xdp-file}
 
@@ -133,7 +133,7 @@ AEM Forms提供了一种方法，帮助您将自适应表单的字段与稍后�
 
 >[!NOTE]
 >
->自适应表单中的字段具有不正确的绑定（无效） `bindRef` （例如，编辑对话框中的值）也被视为已删除的字段。 如果作者未修复这些错误并发布自适应表单，则该字段被视为普通未捆绑的自适应表单字段，并包含在输出XML文件的未捆绑部分中。
+>自适应表单中的字段具有不正确的绑定（无效） `bindRef` （例如，编辑对话框中的值）也被视为已删除的字段。 如果作者未修复这些错误并发布自适应表单，则该字段被视为普通未绑定的自适应表单字段，并包含在输出XML文件的未绑定部分中。
 
 ## 下载 {#downloads}
 

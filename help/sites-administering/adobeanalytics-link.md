@@ -9,7 +9,7 @@ exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 0%
@@ -282,7 +282,7 @@ Adobe Marketing Cloud Debugger中显示的调用详细信息类似于以下示�
 
 >[!NOTE]
 >
->XSS Antisamy配置现在位于SLING路径下 **/libs/sling/xss.config.xml** 并且需要在中添加以下规则，临时链接才能正常工作：
+>XSS Antisamy配置现在位于SLING路径下 **/libs/sling/xss.config.xml** 并且需要向ad-hoc添加以下规则，以便关联正常工作：
 
 #### 锚点标记规则扩展 {#anchor-tag-rule-extension}
 

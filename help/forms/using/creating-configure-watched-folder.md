@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 在配置watched文件夹之前，请确保：
 
 * Watched文件夹是AEM表单的高级功能。 它需要AEM Forms附加组件包才能正常运行。 确保已安装并配置适当的AEM Forms附加组件包。
-* 您可以在共享存储或本地存储中创建观察文件夹。 确保配置为运行watched文件夹的AEM forms用户对watched文件夹具有读写权限。
+* 您可以在共享存储或本地存储中创建watched文件夹。 确保配置为运行watched文件夹的AEM forms用户对watched文件夹具有读写权限。
 * 您可以使用服务、工作流或脚本来自动执行监视文件夹的操作。 确保相应的服务、工作流或脚本已创建并准备运行。 有关创建服务、工作流和脚本的信息，请参见 [处理文件的各种方法](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files).
 * 观察文件夹具有各种属性，请参见 [观察文件夹属性](watched-folder-in-aem-forms.md#watchedfolderproperties).
 

@@ -7,20 +7,20 @@ docset: aem65
 feature: Adaptive Forms, Foundation Components
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2100'
+source-wordcount: '2099'
 ht-degree: 2%
 
 ---
 
 # 创建无障碍的自适应表单{#creating-accessible-adaptive-forms}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
 
 ## 简介 {#introduction}
 
-可访问的表单是每个人都能使用的表单，包括有特殊需求的用户。 自适应Forms包括多种特性和功能，可增强具有不同功能的用户的可用性。 将辅助功能构建到自适应表单中不仅可以使内容具有尽可能广泛的受众，而且在要求遵守辅助功能标准的地理位置提供文档时，这也是一项要求。 AEM Forms帮助表单开发人员符合辅助功能标准。
+可访问的表单是每个人都能使用的表单，包括有特殊需求的用户。 自适应Forms包括多种特性和功能，可增强具有不同功能的用户的可用性。 将辅助功能构建到自适应表单中不仅允许尽可能广泛的受众访问内容，而且在要求遵守辅助功能标准的地理位置提供文档时，这也是一项要求。 AEM Forms帮助表单开发人员符合辅助功能标准。
 
 在创作自适应表单时，作者应考虑以下几点来创建无障碍的自适应表单：
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 * 检测键盘辅助功能和颜色对比度问题
 * 明确标识符合标准的屏幕阅读器内容
 
-ANDI可与所有主要的Internet浏览器配合使用。 看， [ANDI的文档](https://www.ssa.gov/accessibility/andi/help/install.html) 有关配置和使用工具的详细说明。
+ANDI可与所有主要的Internet浏览器配合使用。 请参阅 [ANDI的文档](https://www.ssa.gov/accessibility/andi/help/install.html) 以获取有关如何配置和使用工具的详细说明。
 
 ### 下载并安装Ultramarine-Access主题
 
@@ -70,7 +70,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 1. 在自适应表单中为徽标图像添加有意义的替换文本。
 
-   为自适应表单模板的页眉和页脚组件中的图像提供有意义的替换文本。 修复模板并使用它创建自适应表单时，自适应表单会继承应用于模板页眉和页脚的所有辅助功能相关修复。  对于现有的自适应表单，在自适应表单级别进行更改。 对自适应表单模板所做的更改不会自动流向现有的自适应表单。
+   为自适应表单模板的页眉和页脚组件中的图像提供有意义的替换文本。 修复模板并使用它创建自适应表单时，自适应表单会继承应用于模板页眉和页脚的所有与辅助功能相关的修复。  对于现有的自适应表单，在自适应表单级别进行更改。 对自适应表单模板所做的更改不会自动流向现有的自适应表单。
 
 1. 将包含表单名称的标题组件添加到自适应表单。 如果窗体设计指定了公司名称，则还要为公司名称添加单独的标题组件。
 
@@ -90,7 +90,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 1. 为日期选取器组件设置自定义辅助功能文本。 例如，输入您的出生日期。 屏幕阅读器阅读这些自定义辅助功能文本。
 
-1. 对自适应表单组件使用简短描述而不是详细说明。 较长的描述会添加帮助按钮。 确保自适应没有任何帮助按钮。
+1. 对自适应表单组件使用简短描述而不是详细说明。 较长的描述会添加帮助按钮。 确保自适应没有任何“帮助”按钮。
 
 1. 向表的所有只读单元格添加自定义辅助功能文本。 另外，禁用表的所有只读单元格。
 

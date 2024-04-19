@@ -9,9 +9,9 @@ exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Multi Site Manager
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2837'
+source-wordcount: '2838'
 ht-degree: 83%
 
 ---
@@ -210,7 +210,7 @@ ht-degree: 83%
 
 ## 将站点链接到区域 {#linking-sites-to-an-area}
 
-您可以将区域链接到页面或站点。所有子页面都会继承区域，除非子页面上的映射会覆盖这些页面。 不过，通常而言，您需要在站点级别建立链接。
+您可以将区域链接到页面或站点。所有子页面都会继承区域，除非子页面上的映射覆盖了这些页面。 不过，通常而言，您需要在站点级别建立链接。
 
 建立链接后，只能使用选定区域中的活动、体验和优惠。这样可以防止意外搞混单独管理的内容。如果没有配置任何其他区域，则会使用每个品牌的主区域。
 

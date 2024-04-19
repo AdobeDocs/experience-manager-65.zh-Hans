@@ -1,6 +1,6 @@
 ---
 title: 将Forms渲染为HTML
-description: 使用Forms服务将表单渲染为HTML，以响应来自Web浏览器的HTTP请求。 您可以使用Java API和Web服务API将表单渲染为HTML。
+description: 使用Forms服务将表单渲染为HTML，以响应来自Web浏览器的HTTP请求。 您可以使用Java&trade； API和Web服务API将表单渲染为HTML。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
@@ -9,9 +9,9 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '4104'
+source-wordcount: '4099'
 ht-degree: 0%
 
 ---
@@ -64,17 +64,17 @@ Forms服务将表单渲染为HTML，以响应来自Web浏览器的HTTP请求。 
 >
 >如果要自定义HTML表单上“HTML数字签名”按钮的外观，则必须更改fscdigsig.css文件（在adobe-forms-ds.ear > adobe-forms-ds.war文件中）中的以下属性：
 
-**.fsc-ds-ssb**：此样式表适用于符号字段为空的情况。
+**`.fsc-ds-ssb`**：此样式表适用于符号字段为空的情况。
 
-**.fsc-ds-ssv**：此样式表适用于存在有效签名字段的情况。
+**`.fsc-ds-ssv`**：此样式表适用于存在有效签名字段的情况。
 
-**.fsc-ds-ssc**：此样式表适用于存在有效符号字段但数据已更改的情况。
+**`.fsc-ds-ssc`**：此样式表适用于存在有效符号字段但数据已更改的情况。
 
-**.fsc-ds-ssi**：此样式表适用于符号字段无效的情况。
+**`.fsc-ds-ssi`**：此样式表适用于符号字段无效的情况。
 
-**.fsc-ds-popup-bg**：未使用此样式表属性。
+**`.fsc-ds-popup-bg`**：未使用此样式表属性。
 
-**.fsc-ds-popup-btn**：未使用此样式表属性。
+**。`fsc-ds-popup-btn`**：未使用此样式表属性。
 
 ## 正在运行脚本 {#running-scripts}
 

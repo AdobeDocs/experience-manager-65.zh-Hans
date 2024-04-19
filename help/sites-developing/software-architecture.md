@@ -9,9 +9,9 @@ exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '612'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ SOLID是描述应遵循的五个体系结构原则的缩写：
 
 ### 遵循鲁棒性原则 {#follow-the-robustness-principle}
 
-“稳健性原则”规定，对于发送的内容，您应保持保守，但在接受的内容上应保持自由。 换言之，在将消息发送给第三方时，您应完全符合规范。 但是，当您收到来自第三方的消息时，只要该消息的含义明确，您就应该接受不符合规则的消息。
+“稳健性原则”规定，对于发送的内容，您应保持保守，但在接受的内容上应保持自由。 换言之，在将消息发送到第三方时，您应完全符合规范。 但是，当您从第三方接收消息时，只要消息的含义明确，您就应该接受不合规的消息。
 
 ### 在其自己的模块中实施峰值 {#implement-spikes-in-their-own-modules}
 

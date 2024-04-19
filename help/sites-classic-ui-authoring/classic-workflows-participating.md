@@ -9,10 +9,10 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
 source-wordcount: '541'
-ht-degree: 42%
+ht-degree: 39%
 
 ---
 
@@ -40,7 +40,7 @@ ht-degree: 42%
 
 * **回退**
 
-  如果您发现需要重复一个步骤或一系列步骤，您可以执行回退。此操作让您选择之前已在工作流中执行过的步骤，以进行重新处理。工作流会返回到您指定的步骤，然后从此处继续执行。
+  如果您发现需要重复一个步骤或一系列步骤，您可以执行回退。这使您能够选择在工作流中先前发生的步骤以进行重新处理。 工作流会返回到您指定的步骤，然后从此处继续执行。
 
 ## 参与工作流 {#participating-in-a-workflow}
 
