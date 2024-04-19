@@ -9,10 +9,10 @@ exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '727'
-ht-degree: 7%
+ht-degree: 6%
 
 ---
 
@@ -35,10 +35,10 @@ We.Retail使用最新的Adobe Experience Manager (AEM)技术，例如HTL、响�
 | [全局化站点结构](/help/sites-administering/tc-bp.md) | We.Retail包括语言母版，这些母版将实时复制到国家/地区特定的站点中。 | [试试看！](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [响应式布局](/help/sites-authoring/responsive-layout.md) | 所有页面都具有响应式布局，可动态调整以适应屏幕和设备大小。 | [试试看！](/help/sites-developing/we-retail-responsive-layout.md) |
 | [可编辑的模板](/help/sites-developing/page-templates-editable.md) | 所有页面都基于可编辑的模板，允许非开发人员调整和自定义模板。 | [试试看！](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML模板语言](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 所有组件都基于HTL |  |
+| [HTML模板语言](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | 所有组件都基于HTL |  |
 | [电子商务功能](/help/commerce/cif-classic/developing/ecommerce.md) | 功能产品目录 |  |
 | [社区站点](/help/communities/overview.md) | 允许访客加入社区讨论、阅读博客等 |  |
-| [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) | 所有组件都基于新的核心组件，并且更加可用，可开箱即用且可由用户配置 | [试试看！](/help/sites-developing/we-retail-core-components.md) |
+| [核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/introduction) | 所有组件都基于新的核心组件，并且更加可用，可开箱即用且可由用户配置 | [试试看！](/help/sites-developing/we-retail-core-components.md) |
 | [内容片段](/help/assets/content-fragments/content-fragments.md) | We.Retail体验部分展示了通过内容片段重用内容的强大功能。 | [试试看！](/help/sites-developing/we-retail-content-fragments.md) |
 | [体验片段](/help/sites-authoring/experience-fragments.md) | 体验片段是由一个或多个组件组成的组，其中包括可在页面中引用的内容和布局。 | [试试看！](/help/sites-developing/we-retail-experience-fragments.md) |
 

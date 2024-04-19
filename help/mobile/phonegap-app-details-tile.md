@@ -1,14 +1,14 @@
 ---
 title: 管理应用程序磁贴
-description: 关注此页面，了解应用程序仪表板上的“管理应用程序”拼贴，该拼贴提供了修改有关应用程序的详细信息的功能。
+description: 了解有关应用程序仪表板上“管理应用程序”图块的更多信息，该图块允许您编辑有关应用程序的详细信息。
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 9d497413d0ca72f22712581cf7eda1413eb8d643
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1218'
 ht-degree: 1%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 1%
 >
 >Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
 
-此 **管理应用程序** 通过应用程序仪表板上的磁贴，可以修改有关应用程序的详细信息。 要打开“详细信息”页面，请单击“管理应用程序”拼贴的详细信息链接。 在“管理应用程序”页面中，您可以编辑PhoneGap应用程序配置(config.xml)设置，并准备应用程序以提交到各种应用程序商店。
+此 **`Manage App`** 通过应用程序仪表板上的图块，可编辑有关应用程序的详细信息。 要打开“详细信息”页面，请单击 **`Manage App`** 图块的详细信息链接。 从 **`Manage App`** 页面上，您可以编辑PhoneGap应用程序配置(config.xml)设置，并准备应用程序以提交到各种应用程序存储。
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-## 了解“管理应用程序”拼贴 {#understanding-the-manage-app-tile}
+## 了解 `Manage App` 磁贴 {#understanding-the-manage-app-tile}
 
-您可以深入了解 **管理应用程序** 通过单击右下角的“……”来查看或编辑详细信息的拼贴。
+您可以深入了解 **`Manage App`** 通过单击右下角的“……”来查看或编辑详细信息的拼贴。
 
 ### “基本”选项卡 {#the-basic-tab}
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->AEM Verify应用程序允许在AEM中直接将屏幕截图发送到应用程序详细信息。
+>AEM Verify应用程序允许您在AEM中将屏幕截图直接发送到应用程序详细信息。
 >
 >请参阅 [适用于AEM的Mobile Quickstart验证](/help/mobile/phonegap-mobile-quickstart.md) 以了解更多详细信息。
 
@@ -60,7 +60,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->在您熟悉 **管理应用程序** 图块，请参见 [编辑应用程序元数据](/help/mobile/phonegap-editmetadata.md) 查看和编辑元数据。
+>在您熟悉 **`Manage App`** 图块，请参见 [编辑应用程序元数据](/help/mobile/phonegap-editmetadata.md) 查看和编辑元数据。
 
 #### 通用元数据 {#common-metadata}
 
@@ -70,11 +70,11 @@ ht-degree: 1%
 
 在此部分中，您可以定义内容更新服务器URL、移动应用程序的登陆页面、用于编译的PhoneGap版本、应用程序版本、名称、描述等。
 
-**应用程序版本** 是应用程序的工作版本。 通常的最佳做法是使用3位小数表示法，并且在首次发布之前的1.0.0以下开始。
+**应用程序版本** 是应用程序的工作版本。 通常的最佳做法是使用3位小数表示法，并且从低于1.0.0的第一次发布开始。
 
 **PhoneGap版本** 是您希望使用PhoneGap编译应用程序的版本。 最佳实践是与当前版本保持同步，以确保您获得最新、最大的功能和错误修复。
 
-**内容更新服务器URL** 是应用程序将用于调用ContentSync更新的URL。 必须将其设置为您的Dispatcher URL，或者，如果不使用Dispatcher，则设置为用于向应用程序提供ContentSync更新的发布实例之一。
+**内容更新服务器URL** 是应用程序用于调用ContentSync更新的URL。 必须将其设置为您的Dispatcher URL，或者，如果不使用Dispatcher，则设置为用于向应用程序提供ContentSync更新的发布实例之一。
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -82,25 +82,25 @@ ht-degree: 1%
 >
 >除非有数据填充字段，否则此部分可能显示为空。
 >
->在详细信息视图的顶部，您会看到应用程序版本、PhoneGap版本和更新URL，其中的每个值都可以在通用元数据部分中进行设置。 但是，无法编辑应用程序ID。
+>在详细信息视图的顶部，您会看到应用程序版本、PhoneGap版本和更新URL，其中每个值都可以在通用元数据部分中进行设置。 但是，无法编辑应用程序ID。
 
 #### 平台元数据 {#platform-metadata}
 
 PhoneGap config.xml中定义的每个平台都可以包含自定义平台属性。 AEM开发人员必须贡献内容结构才能捕获这些属性。 可以找到iOS的特定于平台的属性的已提供示例。
 
-现在，所有已配置平台的元数据会同时显示在“管理应用程序”拼贴的“高级”选项卡中。
+现在，所有已配置平台的元数据会同时在的高级选项卡上显示 `Manage App` 磁贴。
 
 >[!NOTE]
 >
->PhoneGap在CLI或远程PhoneGap Build期间不使用平台元数据部分，而使用AEM尝试捕获平台的元数据，以便稍后在提交到目标供应商的应用程序存储区时使用这些元数据。
+>在CLI或构建远程PhoneGap期间，PhoneGap不会使用平台元数据部分。 相反，AEM会尝试捕获平台的元数据，以便稍后在提交到目标供应商的应用程序存储区时使用这些元数据。
 
-对于AEM不了解的平台，AEM开发人员仍可以扩展UI以捕获此元数据，这些元数据以后可以在应用程序提交过程中导出和使用。
+对于AEM不了解的平台，AEM开发人员仍可以扩展UI以捕获此元数据，之后可以在应用程序提交过程中导出和使用这些元数据。
 
 #### iOS 元数据 {#ios-metadata}
 
-Apple AppStore需要其他元数据来提交您的应用程序以进行分发。 iOS元数据部分尝试收集所需的信息，Apple的iTMSTransporter工具可使用这些信息将元数据发布到关联的Apple开发人员帐户。
+Apple AppStore需要额外的元数据才能提交您的申请进行分发。 iOS元数据部分尝试收集所需的信息，Apple的iTMSTransporter工具可使用这些信息将元数据发布到关联的Apple开发人员帐户。
 
-要获取特定于Apple的元数据，您首先需要在上创建应用程序 [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). 在创建应用程序时，如果您希望使用Apple iTMSTransporter工具验证元数据并将其上传到itunesconnect.apple.com，则Apple将生成iOS元数据部分所需的元数据。 如果您只想获取要收集的元数据，则无需填写特定于iOS的元数据。 您仍然可以导出将iOS与常用元数据合并的元数据，并将所有屏幕截图收集到一个zip文件中，可以随时下载。
+要获取特定于Apple的元数据，请在以下位置创建您的应用程序： [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). 创建应用程序时，如果您希望使用Apple iTMSTransporter工具验证元数据并将其上传到itunesconnect.apple.com，则Apple会生成iOS元数据部分所需的元数据。 如果要获取要收集的元数据，则无需填写特定于iOS的元数据。 您仍然可以导出合并iOS和常用元数据的元数据，并将所有屏幕截图收集到一个zip文件中，该文件可以随时下载。
 
 下载的zip文件包含一个itmsp文件，可检查该文件是否包含metadata.xml。 itmsp文件包含导出的元数据（在metadata.xml文件中）以及所有关联的屏幕截图。
 
@@ -126,7 +126,7 @@ AEM Apps的一项重要功能是，移动应用程序可以通过ContentSync请�
 
 >[!NOTE]
 >
->如果您的作者服务器实例复制到多个发布服务器实例(AEM的通用架构)，则每个发布服务器都将具有相同的更新内容，因为更新是在创作实例上构建的，并且已复制到所有发布实例。 基本上，完全支持负载平衡和故障切换。
+>如果您的创作服务器实例复制到多个发布服务器实例(AEM的通用架构)，则每个发布服务器具有相同的更新内容。 原因是更新基于创作实例构建并复制到所有发布实例。 基本上，完全支持负载平衡和故障切换。
 
 ### “插件”选项卡 {#the-plugins-tab}
 

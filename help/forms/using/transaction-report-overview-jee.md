@@ -1,15 +1,16 @@
 ---
 title: AEM Forms on JEE的交易报表概述
-description: 保留已提交、已呈现、已转换为另一种格式的文档及其他
+description: 记录已提交、已呈现、文档已转换为另一种格式等所有表单的计数。
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
+source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
 
-# 在JEE上启用和查看AEM Forms的交易报告 {#transaction-reports-overview}
+# 在JEE上启用和查看AEM Forms的交易报表 {#transaction-reports-overview}
 
 <!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
 
@@ -31,7 +32,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1. 重新启动服务器。
-1. 除了服务器上的更改之外，您还需要在客户端更新 `adobe-livecycle-client.jar` 文件（如果您使用相同的文件）。
+1. 除了服务器上的更改之外，您必须在客户端更新 `adobe-livecycle-client.jar` 文件（如果您使用相同的文件）。
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -74,7 +75,7 @@ For Jboss Cluster:
 ```
 
 示例事务记录的示例：
-`[2024-02-28 06:11:27] [INFO] TransactionRecord{service=‘GeneratePDFService’, operation=‘HtmlFileToPDF’, internalService=‘GeneratePDFService’, internalOperation=‘HtmlFileToPDF’, transactionOperationType=‘CONVERT’, transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
+`[2024-02-28 06:11:27] [INFO] TransactionRecord{service='GeneratePDFService', operation='HtmlFileToPDF', internalService='GeneratePDFService', internalOperation='HtmlFileToPDF', transactionOperationType='CONVERT', transactionCount=1, elapsedTime=1906, transactionDate=Wed Feb 28 06:11:25 UTC 2024}`
 
 #### 交易记录 {#transaction-record-structure-jee}
 
@@ -96,8 +97,8 @@ TransactionRecord
 
 * **服务**：服务的名称。
 * **操作**：操作名称。
-* **internalService**：内部调用的被调用方的名称，其他情况与服务名称相同。
-* **internalOperation**：内部调用的被调用方的名称，其他情况下与操作名称相同。
+* **internalService**：如果存在内部调用，则为被调用方的名称，否则与服务名称相同。
+* **internalOperation**：存在内部调用的被调用方的名称，其他情况与操作名称相同。
 * **transactionOperationType**：交易类型（提交、渲染、转换）。
 * **transactioncount**：交易总数。
 * **经过的时间**：呼叫启动与收到响应之间的时间。
@@ -125,7 +126,7 @@ TransactionRecord
 
 记录事务的频率由服务器上对成功提交、渲染或转换的每个表单的更新操作确定。
 
-* 在 **仪表板** 事务计数会定期更新，默认设置为1分钟。 可以通过在设置系统属性来更新频率 `"com.adobe.idp.dsc.transaction.recordFrequency"`. 例如，在JBoss®上的AEM Forms for JEE中，添加 `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` 在 `JAVA_OPTS` 将更新频率设置为5分钟。
+* 在 **仪表板**，则事务计数会定期更新，默认值为1分钟。 可以通过在设置系统属性来更新频率 `"com.adobe.idp.dsc.transaction.recordFrequency"`. 例如，在JBoss®上的AEM Forms for JEE中，添加 `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` 在 `JAVA_OPTS` 将更新频率设置为5分钟。
 
 * 在 **事务日志**，则在成功提交、渲染或转换表单时，会立即更新每个交易。
 
