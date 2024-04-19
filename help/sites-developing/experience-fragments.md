@@ -10,9 +10,9 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1781'
+source-wordcount: '1795'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,8 @@ HTML演绎版使用Sling重写器管道生成。 管道定义于 `/libs/experien
 >[!CAUTION]
 >
 >***仅*** [可编辑的模板](/help/sites-developing/page-templates-editable.md) 支持使用体验片段。
+>
+>体验片段只能在基于可编辑模板的页面上使用。
 
 为体验片段开发新模板时，您可以遵循的标准实践 [可编辑模板](/help/sites-developing/page-templates-editable.md).
 

@@ -5,10 +5,10 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: fde290e30335b0785d12ea9b5ab6081b1401d230
 workflow-type: tm+mt
-source-wordcount: '1489'
-ht-degree: 73%
+source-wordcount: '1504'
+ht-degree: 72%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 73%
 体验片段：
 
 * 体验的一部分（页面）。
-* 可以跨多个页面使用。
+* 可以跨多个页面（基于可编辑模板）使用。
 * 基于模板（仅可编辑）来定义结构和组件。
 * 此模板用于创建体验片段的&#x200B;*根页面*。
 * 由段落系统中的一个或多个的组件及布局构成。
@@ -251,6 +251,10 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 您现在可以在创作页面时使用您的体验片段：
 
 1. 打开要编辑的任何页面。
+
+   >[!NOTE]
+   >
+   >该页面必须基于可编辑的模板。
 
    例如： [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
