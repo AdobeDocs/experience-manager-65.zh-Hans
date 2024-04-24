@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b2a5de0-e7c7-4417-a217-4b929bc7dcfb
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '473'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -63,11 +66,11 @@ ht-degree: 4%
 
   如果选中，“活动”页面会包含一个选项卡，该选项卡会根据当前成员在社区内生成的活动来筛选活动。 默认值为选中。
 
-* **显示“全部活动”视图**
+* **显示“所有活动”视图**
 
   如果选中，活动页面将包含一个选项卡，其中包含当前成员有权访问的社区内生成的所有活动。 默认值为选中。
 
-* **显示“关注”视图**
+* **显示以下视图**
 
   如果选中，“活动”页面会包含一个选项卡，该选项卡会根据当前成员所关注的活动来筛选活动。 默认值为选中。
 

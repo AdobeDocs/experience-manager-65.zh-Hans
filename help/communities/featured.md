@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 76b76e0e-531b-4f80-be70-68532ef81a7f
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 5%
+source-wordcount: '339'
+ht-degree: 2%
 
 ---
 
@@ -54,7 +57,7 @@ ht-degree: 5%
 
 ![configure-new](assets/configure-new.png)
 
-![featuredcontent1](assets/featuredcontent1.png)
+![功能内容1](assets/featuredcontent1.png)
 
 ### “设置”选项卡 {#settings-tab}
 

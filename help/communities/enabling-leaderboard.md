@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 9%
+source-wordcount: '418'
+ht-degree: 2%
 
 ---
 
@@ -101,7 +104,7 @@ ht-degree: 9%
 
 * 设置选项卡：
 
-   * 显示名称 = `Participation Board`
+   * 显示名称= `Participation Board`
    * `checked`：
 
       * 徽章
@@ -110,10 +113,10 @@ ht-degree: 9%
 
 * “规则”选项卡：
 
-   * 规则位置 = `/content/sites/<site name>/jcr:content`
-   * 评分规则 = `/libs/settings/community/scoring/rules/forums-scoring`
-   * 徽章规则 = `/libs/settings/community/badging/rules//reference-badging`
-   * 显示限制 = `10`
+   * 规则位置= `/content/sites/<site name>/jcr:content`
+   * 评分规则= `/libs/settings/community/scoring/rules/forums-scoring`
+   * 徽章规则= `/libs/settings/community/badging/rules//reference-badging`
+   * 显示限制= `10`
 
 ![参与者 — 排行榜](assets/participants-leaderboard.png)
 
@@ -125,18 +128,18 @@ ht-degree: 9%
 
 * 设置选项卡：
 
-   * 显示名称 = `Expertise Board`
-   * `checked`:
+   * 显示名称= `Expertise Board`
+   * `checked`：
 
       * 徽章
       * 使用头像
 
 * “规则”选项卡：
 
-   * 规则位置 = `/content/sites/<site name>/jcr:content`
-   * 评分规则 = `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * 徽章规则 = `/libs/settings/community/badging/rules/adv-forums-badging`
-   * 显示限制 = `10`
+   * 规则位置= `/content/sites/<site name>/jcr:content`
+   * 评分规则= `/libs/settings/community/scoring/rules/adv-forums-scoring`
+   * 徽章规则= `/libs/settings/community/badging/rules/adv-forums-badging`
+   * 显示限制= `10`
 
 ![专家 — 排行榜](assets/experts-leaderboard.png)
 

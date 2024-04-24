@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1148'
-ht-degree: 6%
+source-wordcount: '1158'
+ht-degree: 0%
 
 ---
 
@@ -51,7 +54,7 @@ ht-degree: 6%
 
 在 **设置** 选项卡，指定是否允许将标记应用于日历条目。
 
-* **每页的事件数**
+* **每页事件数**
 
   定义每页显示的事件数。 默认值为10。
 
@@ -109,7 +112,7 @@ ht-degree: 6%
 
 * **显示痕迹导航**
 
-  在事件页面上显示痕迹导航. 默认值为选中。
+  在事件页面上显示痕迹导航。 默认值为选中。
 
 * **日期范围筛选器**
 

@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1054'
 ht-degree: 0%
 
 ---
@@ -104,7 +107,7 @@ AdobeMobile Analytics SDK提供了以下功能：
 
 现在，移动设备应用程序已经有权访问ADBMobileConfig.json文件，它已经知道如何与Adobe Analytics通信并开始报告有助于推动应用程序成功的重要量度值。
 
-## 后续内容? {#what-s-next}
+## 接下来呢？ {#what-s-next}
 
 1. [开始我的AEM Mobile应用程序体验](/help/mobile/starting-aem-phonegap-app.md)
 1. [管理我的应用程序内容](/help/mobile/phonegap-manage-app-content.md)

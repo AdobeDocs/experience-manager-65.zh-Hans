@@ -2,9 +2,12 @@
 title: 触屏 UI 功能状态
 description: 特定于的发行说明 [!DNL Adobe Experience Manager] 触屏优化UI。
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1067'
+source-wordcount: '1076'
 ht-degree: 15%
 
 ---
@@ -106,7 +109,7 @@ Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release
 | 移动页面 | 已删除 | 使用站点管理员可以 [移动页面](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
 | 删除页面 | 已删除 | 使用站点管理员可以 [删除页面](/help/sites-authoring/managing-pages.md#deleting-a-page). |
 | 显示引用 | 已删除 | 使用站点管理员查看 [详细参考列表](/help/sites-authoring/author-environment-tools.md#references). |
-| 审查日志 | 已删除 | 使用站点管理和 [打开活动边栏](/help/sites-authoring/author-environment-tools.md#events-timeline). |
+| 审核日志 | 已删除 | 使用站点管理和 [打开活动边栏](/help/sites-authoring/author-environment-tools.md#events-timeline). |
 | 创建版本 | 已删除 | 使用站点管理员可以 [创建新版本](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
 | 恢复版本 | 已删除 | 使用站点管理员可以 [恢复版本](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
 | 切换启动项 | 已删除 | 使用站点管理员可以 [在启动项之间切换](/help/sites-authoring/launches-promoting.md). |
@@ -173,6 +176,6 @@ Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release
 | 转出配置UI | 缺失 | 使用经典UI。 |
 | 用户、组和权限UI | 大部分完成 | 要进行高级权限编辑，请使用经典UI。 |
 | 清除版本(`/etc/versioning/purge.html`) | 缺失 | 使用经典UI。 |
-| 外部链接检查程序 (`/etc/linkchecker.html`) | 缺失 | 使用经典UI。 |
+| 外部链接检查程序(`/etc/linkchecker.html`) | 缺失 | 使用经典UI。 |
 | 批量编辑器(`/etc/importers/bulkeditor.html`) | 缺失 | 使用经典UI。 |
 | 上传缩略图以添加或覆盖这些缩略图 | 缺失 | 使用经典UI。 |

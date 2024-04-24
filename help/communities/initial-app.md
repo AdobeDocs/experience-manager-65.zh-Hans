@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '626'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -33,10 +36,10 @@ ht-degree: 2%
 
 1. 在创建模板对话框中，键入以下值，然后单击 **[!UICONTROL 下一个]**：
 
-   * 标签: `playpage`
-   * 标题: `An SCF Sandbox Play Template`
-   * 描述: `An SCF Sandbox template for play pages`
-   * 资源类型: `an-scf-sandbox/components/playpage`
+   * 标签： `playpage`
+   * 标题： `An SCF Sandbox Play Template`
+   * 描述： `An SCF Sandbox template for play pages`
+   * 资源类型： `an-scf-sandbox/components/playpage`
    * 排名： &lt;leave as=&quot;&quot; default=&quot;&quot;>
 
    标签用于节点名称。

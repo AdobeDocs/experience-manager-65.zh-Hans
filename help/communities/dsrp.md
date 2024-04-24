@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '617'
-ht-degree: 3%
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
@@ -73,7 +75,7 @@ ht-degree: 3%
 * 选择 **[!UICONTROL 数据库存储资源提供程序(DSRP)]**
 * **数据库配置**
 
-   * **[!UICONTROL JDBC 数据源名称]**
+   * **[!UICONTROL JDBC数据源名称]**
 
      为MySQL连接指定的名称必须与中输入的名称相同 [JDBC OSGi配置](dsrp-mysql.md#configurejdbcconnections)
 
@@ -87,7 +89,7 @@ ht-degree: 3%
 
 * **SolrConfiguration**
 
-   * **[](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)Zookeeper 主机**
+   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) 主机**
 
      如果使用内部ZooKeeper运行Solr，则将此值留空。 否则，在中运行时 [SolrCloud模式](solr.md#solrcloud-mode) 使用外部ZooKeeper，将此值设置为ZooKeeper的URI，例如 *my.server.com:80*
 
@@ -97,7 +99,7 @@ ht-degree: 3%
 
      *默认*： https://127.0.0.1:8983/solr/
 
-   * **[!UICONTROL Solr 收藏集]**
+   * **[!UICONTROL Solr收藏集]**
 
      *默认*：收藏集1
 
@@ -123,7 +125,7 @@ ht-degree: 3%
 
    * 从主菜单导航到 **[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 复制]**
    * 双击 **[!UICONTROL 激活树]**
-   * **开始路径**:
+   * **起始路径**：
 
       * 浏览至 `/etc/socialconfig/srpc/`
 

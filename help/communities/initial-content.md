@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 2%
+source-wordcount: '487'
+ht-degree: 1%
 
 ---
 
@@ -47,7 +50,7 @@ ht-degree: 2%
 
    在 **[!UICONTROL 创建页面]** 对话框，请输入以下内容：
 
-   * 标题: `SCF Sandbox Site`
+   * 标题： `SCF Sandbox Site`
    * 名称：`an-scf-sandbox`
    * 选择 **[!UICONTROL SCF沙盒播放模板]**
    * 单击 **[!UICONTROL 创建]**
@@ -56,14 +59,14 @@ ht-degree: 2%
 
 1. 在资源管理器窗格中，选择您创建的页面， `/Websites/SCF Sandbox Site`，然后单击 **[!UICONTROL 新建]** > **[!UICONTROL 新建页面]**：
 
-   * 标题: `SCF Sandbox`
+   * 标题： `SCF Sandbox`
    * 名称：`en`
    * 选择 **[!UICONTROL SCF沙盒播放模板]**
    * 单击 **[!UICONTROL 创建]**
 
 1. 在资源管理器窗格中，选择您创建的页面， `/Websites/SCF Sandbox Site/SCF Sandbox`，然后单击 **[!UICONTROL 新建]** > **[!UICONTROL 新建页面]**
 
-   * 标题: `SCF Play`
+   * 标题： `SCF Play`
    * 名称：`play`
    * 选择 **[!UICONTROL SCF沙盒播放模板]**
    * 单击 **[!UICONTROL 创建]**
@@ -89,7 +92,7 @@ ht-degree: 2%
 
    * 名称：`cq:designPath`
    * 类型：`String`
-   * 价值: `/etc/designs/an-scf-sandbox`
+   * 值： `/etc/designs/an-scf-sandbox`
 
 * 单击绿色 `[+] Add`
 

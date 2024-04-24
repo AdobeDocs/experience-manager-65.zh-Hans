@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 25%
+ht-degree: 14%
 
 ---
 
@@ -39,16 +42,16 @@ ht-degree: 25%
 >
 >读取 [社区组件基础知识](/help/communities/basics.md) 因为它包含使用Communities组件进行创作所需的信息。
 
-| **组件标题** | **专题** |
+| **组件标题** | **功能** |
 |---|---|
 | 活动流 | [活动流](/help/communities/activities.md) |
 | 博客 | [博客](/help/communities/blog-feature.md) |
 | 博客侧栏 | [博客](/help/communities/blog-feature.md) |
-| 日程表 | [日程表](/help/communities/calendar.md) |
+| 日程表 | [日历](/help/communities/calendar.md) |
 | 评论 | [评论](/help/communities/comments.md) |
 | 社区活动列表 | [活动趋势](/help/communities/trends.md) |
 | 社区组成员列表 | [社区组](/help/communities/creating-groups.md) |
-| 撰写消息 | [消息](/help/communities/configure-messaging.md) |
+| 撰写消息 | [消息传送](/help/communities/configure-messaging.md) |
 | 专题内容 | [专题内容](/help/communities/featured.md) |
 | 文件库 | [文件库](/help/communities/file-library.md) |
 | 关注 | [社交图](/help/communities/socialgraph.md) |
@@ -57,12 +60,12 @@ ht-degree: 25%
 | 构思 | [构思](/help/communities/ideation-feature.md) |
 | 排行榜 | [评分和徽章](/help/communities/enabling-leaderboard.md) |
 | 点赞 | [点赞](/help/communities/liking.md) |
-| 消息 | [消息](/help/communities/configure-messaging.md) |
-| 消息列表 | [消息](/help/communities/configure-messaging.md) |
-| 问题与解答 | [问题与解答](/help/communities/working-with-qna.md) |
+| 消息 | [消息传送](/help/communities/configure-messaging.md) |
+| 消息列表 | [消息传送](/help/communities/configure-messaging.md) |
+| 问题与解答 | [问题与回答](/help/communities/working-with-qna.md) |
 | 快速搜索 | [搜索](/help/communities/search.md) |
-| 评分 | [评分](/help/communities/rating.md) |
-| 相关问题 | [问题与解答](/help/communities/working-with-qna.md) |
+| 评分 | [评级](/help/communities/rating.md) |
+| 相关问题 | [问题与回答](/help/communities/working-with-qna.md) |
 | 审核 | [审核](/help/communities/reviews.md) |
 | 审核摘要（显示） | [审核](/help/communities/reviews.md) |
 | 搜索 | [搜索](/help/communities/search.md) |

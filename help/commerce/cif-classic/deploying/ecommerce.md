@@ -4,7 +4,8 @@ description: AEM通用电子商务作为标准安装的一部分提供，它提�
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '268'
 ht-degree: 2%
@@ -20,7 +21,7 @@ Adobe提供以下两个版本的Commerce integration framework：
 |                         | CIF内部部署 | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | 支持的 AEM 版本 | 内部部署AEM或AMS 6.x | AEM AMS 6.4和6.5 |
-| 后端 | - AEM、Java™ <br>  — 整体集成，预建映射（模板）<br> - JCR存储库 | - ADOBE COMMERCE <br>- Java和JavaScript <br>- JCR存储库中未存储Commerce数据 |
+| 后端 | - AEM、Java™ <br>  — 整体集成，预建映射（模板）<br> - JCR存储库 | - ADOBE COMMERCE <br>- Java和JavaScript <br>- JCR存储库中未存储任何Commerce数据 |
 | 前端 | AEM服务器端渲染的页面 | 混合页面应用程序（混合渲染） |
 | 产品目录 |  — 产品导入器、编辑器、AEM中的缓存 <br> — 包含AEM或代理页面的常规目录 |  — 无产品导入 <br> — 通用模板 <br> — 通过连接器按需提供数据 |
 | 可扩展性 |  — 最多可支持数百万个产品（取决于用例） <br> - Dispatcher上的缓存 |  — 无音量限制 <br>- Dispatcher或CDN上的缓存 |

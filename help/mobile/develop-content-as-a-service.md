@@ -5,9 +5,12 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -28,13 +31,13 @@ ht-degree: 0%
 
 Content Services提供了三种主要类型的资料：
 
-1. **资源**
+1. **资产**
 1. **打包的HTML内容(HTML/CSS/JS)**
 1. **独立于渠道的内容**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## 资源 {#assets}
+## 资产 {#assets}
 
 资源收藏集是包含对其他收藏集的引用的AEM构造。
 

@@ -7,10 +7,12 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '324'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -59,10 +61,10 @@ AEM Communities的控制台可在全局导航面板的创作环境中使用，�
 
   “成员”和“组”控制台用于从创作环境管理发布环境中存在的社区成员和成员组。
 
-* [报表](reports.md)
+* [报告](reports.md)
 
   在“报表”控制台中，当社区站点满足以下条件时，可能会生成有关工作总揽、页面查看和已发布内容(UGC)的报表 [已启用Adobe Analytics](sites-console.md#analytics). 该控制台仅在创作环境中可用。
 
-## “工具”控制台 {#tools-console}
+## 工具控制台 {#tools-console}
 
 要访问 [Communities工具](tools.md) （以前称为管理控制台），从全局导航： **[!UICONTROL 工具]** > **[!UICONTROL Communities]**

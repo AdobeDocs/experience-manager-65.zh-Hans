@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1578'
-ht-degree: 2%
+source-wordcount: '1556'
+ht-degree: 0%
 
 ---
 
@@ -37,8 +40,8 @@ ht-degree: 2%
 
 在 [站点模板步骤](/help/communities/sites-console.md#step2013asitetemplate)，输入URL的标题、描述和名称，然后选择社区站点模板，例如：
 
-* **社区站点标题**: `Getting Started Tutorial`
-* **社区站点描述**: `A site for engaging with the community.`
+* **社区站点标题**： `Getting Started Tutorial`
+* **社区站点描述**： `A site for engaging with the community.`
 * **社区站点根目录**：(对于默认根，保留为空 `/content/sites`)
 * **云配置**：（如果未指定云配置，则保留为空）提供指定云配置的路径。
 * **社区站点基本语言**：（对于单语言：英语，保持不变）使用下拉列表选择一种语言 *或更多* 可用语言的基础语言 — 德语、意大利语、法语、日语、西班牙语、葡萄牙语（巴西）、繁体中文、简体中文。 系统会为添加的每个语言创建一个社区站点，并按照中所述的最佳实践存在于同一站点文件夹中 [翻译多语言站点的内容](/help/sites-administering/translation.md). 每个站点的根页面都包含一个由所选语言之一的语言代码命名的子页面，例如“en”表示英语，“fr”表示法语。
@@ -272,13 +275,13 @@ ht-degree: 2%
 
 1. 具有新创建的 `localhost.4503` 选定的节点：
 
-   * 添加属性:
+   * 添加属性：
 
    * **名称** sling：match
       * **类型** 字符串
       * **值** localhost.4503/$（必须以“$”字符结尾）
 
-   * 添加属性:
+   * 添加属性：
 
       * **名称** sling：internalRedirect
       * **类型** 字符串

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1376'
-ht-degree: 7%
+source-wordcount: '1389'
+ht-degree: 0%
 
 ---
 
@@ -55,7 +58,7 @@ ht-degree: 7%
 
 在 **设置** 选项卡，指定主题（问题）和回复（回答）的设置：
 
-* **允许附加缩略图**
+* **允许附件缩略图**
 
   如果选中，则会创建附加图像的缩略图。
 
@@ -67,7 +70,7 @@ ht-degree: 7%
 
   用于为内嵌图像生成缩略图的图像最小尺寸（以字节为单位）。 默认值为100000字节(100 kb)。
 
-* **缩略图大小最大值**
+* **最大缩略图大小**
 
   内嵌图像的缩略图图像的最大尺寸（以像素为单位）。 默认值为800 x 800。
 
@@ -135,11 +138,11 @@ ht-degree: 7%
 
   如果选中，则仅允许拥有权限的成员创建内容。
 
-* **在作者编辑模式下阻止“用户生成内容”**
+* **在作者编辑模式下阻止用户生成的内容**
 
   如果启用，则在创作模式下编辑时会阻止用户生成的内容。
 
-* **将选定的答案移到顶部**
+* **将所选答案移至顶部**
 
   如果选中，则显示的第一个答案为已选答案。 默认值为取消选中。
 * **显示徽章**
@@ -158,7 +161,7 @@ ht-degree: 7%
 
   限制帖子中允许的最多提及次数。 默认值为10。
 
-* **UI 提及模式**
+* **UI提及模式**
 
   指定允许的样式字符串以在帖子中标记(@mention)已注册用户。 例如：`~{{familyName}}{{givenName}}`。
 
@@ -166,7 +169,7 @@ ht-degree: 7%
 
 在 **用户审核** 选项卡，指定如何管理发布的主题（问题）和答案（用户生成内容）。 有关更多信息，请参阅 [审核用户生成的内容](/help/communities/moderate-ugc.md).
 
-* **拒绝回答**
+* **拒绝答案**
 
   如果选中，则允许受信任的成员版主拒绝已发布的答案，并阻止这些答案显示在公共问答论坛中。 默认值为取消选中。
 
@@ -217,7 +220,7 @@ ht-degree: 7%
 
   检查所有允许的排序选择： `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 默认为 `Newest, Oldest, Last Updated`.
 
-* **设置为默认**
+* **设置为默认值**
 
   下拉以选择其中一个选中的排序选项以显示为默认选项。 默认为 `Newest`.
 

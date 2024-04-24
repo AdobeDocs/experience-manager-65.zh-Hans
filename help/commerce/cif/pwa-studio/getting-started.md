@@ -1,11 +1,12 @@
 ---
 title: AEMPWA Studio扩展快速入门
-description: 了解如何使用PWA Studio部署AEM Headless Content and Commerce项目。
+description: 了解如何使用PWA Studio部署AEM Headless Content和Commerce项目。
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 0%

@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '555'
-ht-degree: 3%
+source-wordcount: '558'
+ht-degree: 1%
 
 ---
 
@@ -52,15 +55,15 @@ A [社区组模板](/help/communities/tools-groups.md) 在动态创建社区组�
 
   邀请加入组的成员列表。 提前输入搜索可提供社区成员邀请的建议。
 
-* **组 URL 名称**
+* **组URL名称**
 
   成为URL一部分的组页面的名称。
 
-* **开放组**
+* **打开组**
 
   选择 `Open Group` 指示任何匿名网站访客可以查看内容，并取消选择 `Member Only Group`.
 
-* **仅限成员加入的组**
+* **仅限成员的组**
 
   选择 `Member Only Group` 指示只有组的成员可以查看内容，然后取消选择 `Open Group`.
 

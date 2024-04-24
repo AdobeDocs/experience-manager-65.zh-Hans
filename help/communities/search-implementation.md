@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1188'
-ht-degree: 4%
+source-wordcount: '1158'
+ht-degree: 3%
 
 ---
 
@@ -108,13 +111,13 @@ ht-degree: 4%
 | 读取 | *布尔型* |
 | 影响 | *布尔型* |
 | 附件 | *布尔型* |
-| 情绪 | *长整型* |
+| 情绪 | *长* |
 | 已标记 | *布尔型* |
 | 已添加 | *日期* |
 | modifieddate | *日期* |
-| 状态 | *字符串* |
+| 州/省 | *字符串* |
 | 用户标识符 | *字符串* |
-| 回复 | *长整型* |
+| 回复 | *长* |
 | jcr:title | *字符串* |
 | jcr：description | *字符串* |
 | sling:resourceType | *字符串* |
@@ -145,13 +148,13 @@ Solr是使用架构的查询语言的示例。
 | **后缀** | **数据类型** |
 |---|---|
 | _b | *布尔型* |
-| _dt | *日程表* |
-| _d | *双精度型* |
-| _tl | *长整型* |
+| _dt | *日历* |
+| _d | *多次* |
+| _tl | *长* |
 | _s | *字符串* |
 | _t | *文本* |
 
-**注释:**
+**注释：**
 
 * *文本* 是一个标记化字符串， *字符串* 不是。 使用 *文本* 用于模糊（更类似于）搜索。
 
@@ -178,7 +181,7 @@ AND和OR逻辑的过滤器语法如下所示（在URL编码之前显示）：
 
 筛选器运算符为：
 
-| EQ | equals |
+| EQ | 等于 |
 |---|---|
 | NE | 不等于 |
 | LT | 小于 |

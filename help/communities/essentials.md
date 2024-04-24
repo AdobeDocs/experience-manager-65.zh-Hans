@@ -6,18 +6,21 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 17%
+source-wordcount: '208'
+ht-degree: 15%
 
 ---
 
 # 组件、功能和功能要点  {#component-function-and-feature-essentials}
 
-Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员并登录 [社区站点](overview.md#communitiessites) 才能发布内容。 因此， [社区站点模板](sites.md)，社区站点从中为 [已创建](sites-console.md)，旨在包含登录功能和用户配置文件、消息传送、搜索、审核和翻译。
+Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员并登录 [社区站点](overview.md#communitiessites) 才能发布内容。 因此， [社区站点模板](sites.md)，社区站点将从此处获得 [已创建](sites-console.md)，旨在包含登录功能和用户配置文件、消息传送、搜索、审核和翻译。
 
-当满足以下条件时，社区站点支持成员创建社区组 [社区组功能](functions.md#groups-function) 包含在选定的社区站点模板中。
+在以下情况下，社区站点支持成员创建社区组： [社区组功能](functions.md#groups-function) 包含在选定的社区站点模板中。
 
 以下是Communities组件、功能和特性的基本信息链接。
 
@@ -44,7 +47,7 @@ Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员�
 * [组](essentials-groups.md)
 * [构思](ideation.md)
 * [排行榜](leaderboard.md)
-* [问题与解答](qna-essentials.md) `(QnA)`
+* [问题与回答](qna-essentials.md) `(QnA)`
 
 ## 功能 {#features}
 
@@ -63,10 +66,10 @@ Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员�
 
 ## Javadocs {#javadocs}
 
-此 [在线javadoc](../../help/sites-developing/reference-materials.md) 反映了AEM 6.3版本中可用的API。
+此 [在线javadocs](../../help/sites-developing/reference-materials.md) 反映AEM 6.3版本中可用的API。
 社区API位于 `com.adobe.cq.social.*` 包。
 
-针对每个 [功能包](deploy-communities.md#latestfeaturepack)，提供了javadoc jar。 有关详细信息，请访问 [使用Maven for Communities](maven.md#javadocs).
+对于每个 [功能包](deploy-communities.md#latestfeaturepack)，则会提供javadoc jar。 有关详细信息，请访问 [使用Maven for Communities](maven.md#javadocs).
 
 ## 附加信息 {#additional-information}
 

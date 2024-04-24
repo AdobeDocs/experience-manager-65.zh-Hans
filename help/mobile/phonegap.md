@@ -5,10 +5,13 @@ contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '228'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -24,7 +27,7 @@ Adobe Experience Manager (AEM) Mobile只是构成完整AEM平台的支柱之一�
 
 * **管理员**
 * **开发人员**
-* **创作**
+* **作者**
 
 ## 创作PhoneGap应用程序 {#authoring-phonegap-applications}
 

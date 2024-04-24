@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: 04050f31742c926b45235595f6318929d3767bd8
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '1235'
 ht-degree: 0%

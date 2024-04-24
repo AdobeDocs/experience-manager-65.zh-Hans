@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '593'
-ht-degree: 6%
+ht-degree: 4%
 
 ---
 
@@ -25,7 +28,7 @@ ht-degree: 6%
 
 第一步是将资源超级类型属性添加到 `/apps/an-scf-sandbox/components/playpage` 节点，以便继承超级类型的脚本和属性。
 
-使用 CRXDE Lite:
+使用CRXDE Lite：
 
 1. 选择节点 `/apps/an-scf-sandbox/components/playpage`.
 1. 在属性选项卡中，输入具有以下值的新属性：
@@ -34,7 +37,7 @@ ht-degree: 6%
 
    类型：`String`
 
-   价值: `foundation/components/page`
+   值： `foundation/components/page`
 
 1. 单击绿色 **[!UICONTROL +添加]** 按钮。
 1. 单击&#x200B;**[!UICONTROL 全部保存]**。
@@ -118,7 +121,7 @@ ht-degree: 6%
 
 **在浏览器中以编辑模式查看页面：**
 
-* 标准 UI: `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
+* 标准UI： `http://localhost:4502/editor.html/content/an-scf-sandbox/en/play.html`
 
 您不应仅看到标题 **社区播放**，以及用于编辑页面内容的UI。
 
@@ -126,7 +129,7 @@ ht-degree: 6%
 
 ![view-page](assets/view-page.png)
 
-* 经典 UI: `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
+* 经典UI： `http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html`
 
 以下是“播放”页面在经典UI中的显示方式，包括使用content finder (cf)：
 
@@ -152,7 +155,7 @@ ht-degree: 6%
 * 图像
 * 表
 * 文本
-* 标题 (Foundation)
+* 标题（基础）
 
 >[!NOTE]
 >

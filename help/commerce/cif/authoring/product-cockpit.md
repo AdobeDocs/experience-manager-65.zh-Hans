@@ -3,7 +3,9 @@ title: 产品 Cockpit
 description: 使用产品驾驶舱，其中提供链接的产品目录和相关内容的统一概述。
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '428'
 ht-degree: 1%
@@ -34,7 +36,7 @@ ht-degree: 1%
 
 ## 打开产品驾驶舱 {#opening-product-cockpit}
 
-访问产品驾驶舱的最简单方法是通过AEM主菜单中的“商务”菜单。 也可以使用Omnisearch（搜索商业）或opening `https://<yourAEMInstance>/commerce.html`.
+访问产品驾驶舱的最简单方法是通过AEM主菜单中的“Commerce”菜单。 也可以使用Omnisearch(搜索Commerce)或 `https://<yourAEMInstance>/commerce.html`.
 
 ![AEM菜单](/help/commerce/cif/assets/aem-menu.png)
 

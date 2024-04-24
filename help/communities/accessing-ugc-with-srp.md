@@ -7,9 +7,12 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 1157366f-2cc5-46e4-8ec6-e66fe5d0a0f6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---

@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: ee94f093-fd14-49f2-9990-fbe853d924b1
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '841'
-ht-degree: 1%
+source-wordcount: '840'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +101,7 @@ AEM Communities的消息传送功能允许登录的网站访客（成员）向�
 
   如果启用了组消息，请指定一次可向其发送组消息的最大收件人数。 默认为 *100*.
 
-* **批量大小**
+* **批次大小**
 
   发送给大量收件人时要批处理在一起进行发送的消息数。 默认为 *100*.
 

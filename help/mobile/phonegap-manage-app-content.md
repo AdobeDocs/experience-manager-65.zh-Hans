@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '700'
-ht-degree: 1%
+source-wordcount: '706'
+ht-degree: 0%
 
 ---
 
@@ -17,57 +20,57 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于需要基于单页应用程序框架的客户端渲染（例如React）的项目，Adobe建议使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
 
-管理应用程序内容需要来自以下人员的共同努力 [开发人员](#developer)，内容 [作者](#author)、和 [管理员](#administrator). 作者处理基于模板和应用程序开发人员生成的组件的页面。
+管理应用程序内容需要来自的集体努力 [开发人员](#developer)，内容 [作者](#author)、和 [管理员](#administrator). 作者处理基于模板和应用程序开发人员生成的组件的页面。
 
-最后，管理员可从战略上发布更新的应用程序内容。
+最后，管理员策略性地发布更新的应用程序内容。
 
 >[!NOTE]
 >
->**先决条件**:
+>**先决条件**：
 >
->In [部署和维护](/help/sites-deploying/deploy.md)、开发人员熟悉Adobe Experience Manager (AEM)中的系统组件和模板。
+>在 [部署和维护](/help/sites-deploying/deploy.md)、开发人员熟悉Adobe Experience Manager (AEM)中的系统组件和模板。
 
 ## “管理页面内容”拼贴 {#the-manage-page-content-tile}
 
 >[!CAUTION]
 >
->如果您没有使用现成可用的应用程序模板，则要启用新应用程序内容以在OTA中发布，您必须配置内容同步处理程序。
+>如果您没有使用现成的应用程序模板，则要启用要通过OTA发布的新应用程序内容，必须配置内容同步处理程序。
 >
->参见 [通过内容同步移动设备](/help/mobile/phonegap-contentsync.md) 有关详细信息，请参阅开发人员部分。
+>请参阅 [通过内容同步处理移动设备](/help/mobile/phonegap-contentsync.md) 有关详细信息，请参阅开发人员部分。
 
-在这里，您可以在AEM Mobile中创建、编辑和删除内容，其方式与在AEM Sites中的方式非常相同。
+在这里，可以像在AEM Sites中一样在AEM Mobile中创建、编辑和删除内容。
 
 此 **“管理页面内容”拼贴** 显示托管内容的页数以及上次为特定有效负载修改的页数。 您可以通过单击图块中的每个记录，深入查看内容以创建、复制、移动、删除和更新页面。
 
-内容更新后，管理员可以通过向客户发布内容更新有效负荷Over-The-Air (OTA) **“管理内容包”拼贴。**
+内容更新后，管理员可以通过向客户发布内容更新有效负荷Over-The-Air (OTA) **“管理内容包”图块。**
 
 ![chlimage_1-161](assets/chlimage_1-161.png)
 
-选择列出的内容包之一以创建或编辑内容，例如创建、编辑或删除页面、更改导航和页面顺序、创建或更新内容(例如复制（文本）和媒体)。
+选择列出的内容包之一以创建或编辑内容，如创建、编辑或删除页面，更改导航和页面顺序，创建或更新内容，如复制（文本）和媒体。
 
-注释 *一切都是内容*，这意味着应用程序样式、复制（文本）、媒体、页面、导航和内容定位都可以通过OTA进行编辑和更新，而无需前往应用商店。
+注意 *一切都是内容*，这意味着应用程序样式、复制（文本）、媒体、页面、导航和内容定位都可以在OTA中编辑和更新，而无需前往应用商店。
 
-要编辑AEM Mobile内容，*AEM作者*需要对AEM内容编辑界面有深入的了解： [在AEM中创作页面。](/help/sites-authoring/qg-page-authoring.md)
+要编辑AEM Mobile内容，*AEM作者*需要对AEM内容编辑界面有一定的了解： [在AEM中创作页面。](/help/sites-authoring/qg-page-authoring.md)
 
-## “管理内容包”拼贴 {#the-manage-content-packages-tile}
+## “管理内容包”图块 {#the-manage-content-packages-tile}
 
-此处， *AEM管理员* 可以快速、轻松地更新其应用程序以提供引人入胜的体验和最新内容，从而推动品牌参与度并实现业务目标，而无需开发人员或应用商店重新提交。
+此处， *AEM管理员* 可以快速轻松地更新其应用程序以提供引人入胜的体验和最新内容，从而推动品牌参与度并实现业务目标，而无需重新提交开发人员或应用商店。
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-一次 *AEM作者* 已通过“管理内容”拼贴添加或修改了内容， *AEM管理员* 能够通过内容包更新将这些更改推送给客户。
+一次 *AEM作者* 通过“管理内容”拼贴添加或修改了内容， *AEM管理员* 能够通过内容包更新将这些更改推送到客户。
 
-“内容包”操作允许 *AEM创作* 在开发团队更改主机应用程序设计和实施（包括导航、样式、服务器端逻辑、模板和组件）的同时创建和编辑页面内容，然后将这些更改从OTA推送到客户，而无需重新提交到各个商店进行分发。
+内容包操作允许 *AEM创作* 在开发团队更改主机应用程序设计和实施（包括导航、样式、服务器端逻辑、模板和组件）的同时创建和编辑页面内容，然后将这些更改从OTA推送给客户，而无需重新提交到各个商店进行分发。
 
 **发布新内容或更新内容**
 
-从图块中选择一个内容包，在本例中是英文包。 请注意，内容更新对话框列出了相关的 *内容同步* 配置。 如果自上次更新以来修改了应用程序内容，则将显示状态 *待处理*，如下所示。
+从图块中选择一个内容包，在本例中是英文包。 请注意，内容更新对话框将列出相关的 *内容同步* 配置。 如果自上次更新以来已修改应用程序内容，则将显示状态 *待处理*，如下所示。
 
 ![chlimage_1-163](assets/chlimage_1-163.png)
 
-接下来，选择 **暂存** 操作。 添加相应的更新信息，然后按“完成”。
+接下来，选择 **Stage** 操作。 添加相应的更新信息，然后按“完成”。
 
 ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -79,7 +82,7 @@ ht-degree: 1%
 >
 >暂存内容可在发布之前使用AEM Verify应用程序进行验证。
 >
->参见 [AEM Mobile Quickstart验证](/help/mobile/phonegap-mobile-quickstart.md) 有关AEM Verify应用程序的更多详细信息。
+>请参阅 [适用于AEM的Mobile Quickstart验证](/help/mobile/phonegap-mobile-quickstart.md) 有关AEM Verify应用程序的更多详细信息。
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 

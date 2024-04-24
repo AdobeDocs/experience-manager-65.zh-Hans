@@ -8,9 +8,11 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1056'
 ht-degree: 1%
 
 ---
@@ -130,12 +132,12 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>徽章路径</td>
-   <td>字符串[]</td>
+   <td>String[]</td>
    <td><em>（必需）</em> 徽章图像的多值字符串，最大数量为badgingLevels。 必须订购徽章图像路径，以便将第一个授予最高的专家。 如果badgingLevels指示的徽章较少，则数组中的最后一个徽章将填充数组的其余部分。 示例条目：<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
    <td>badgingLevels</td>
-   <td>长整型</td>
+   <td>长</td>
    <td><em>（可选）</em> 指定要授予的专业知识级别。 例如，如果应该有一个 <code>expert </code>和 <code>almost expert</code> （两个徽章），则值应设置为2。 badgingLevel应与badgingPath属性中列出的专家相关徽章图像数量相对应。 默认值为1。</td>
   </tr>
   <tr>
@@ -145,7 +147,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>评分规则</td>
-   <td>字符串[]</td>
+   <td>String[]</td>
    <td><em>（可选）</em> 一个多值字符串，用于限制标记规则只查看由列出的一个或多个评分规则标识的评分事件。<br /> 示例条目：<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> 默认值为无限制。</td>
   </tr>
  </tbody>
@@ -196,7 +198,7 @@ ht-degree: 1%
    /libs/settings/community/scoring/rules/sub-rules/adv-voting-rule-owner
    ```
 
-**注释:**
+**注释：**
 
 * 两者 `rules` 和 `sub-rules` 节点的类型为 `cq:Page`.
 * `subRules` 是字符串类型的属性`[]` 在规则的 `jcr:content` 节点。
@@ -211,7 +213,7 @@ ht-degree: 1%
 * `/libs/settings/community/badging/rules/adv-comments-badging`
 * `/libs/settings/community/badging/rules/adv-forums-badging`
 
-**注释:**
+**注释：**
 
 * `rules` 节点的类型为cq：Page。
 * `rules` 应位于存储库位置，且每个人都具有读取权限。

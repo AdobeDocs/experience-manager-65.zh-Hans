@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '658'
 ht-degree: 1%
 
 ---
@@ -88,9 +91,9 @@ phonegap run ios
 >1. 运行 `phonegap create helloWorld`
 >1. 导航到helloWorld (cd helloWorld)
 >1. 运行 `phonegap run android` (或将Android™替换为iOS，如上所述)。
-1. 运行新创建的PhoneGap应用程序时，模拟器会打开，并显示“设备就绪”（如果到本机的JavaScript桥接器可正常运行）。
+>1. 运行新创建的PhoneGap应用程序时，模拟器会打开，并显示“设备就绪”（如果到本机的JavaScript桥接器可正常运行）。
 >
-此故障排除可验证您的PhoneGap CLI开发环境是否正常运行。
+>此故障排除可验证您的PhoneGap CLI开发环境是否正常运行。
 
 ## 使用Safari和IOS调试调试JavaScript {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -151,7 +154,7 @@ phonegap run <platform> --emulator
 
 >[!NOTE]
 >
-要查看当前方法中变量的值，请将鼠标悬停在上。
+>要查看当前方法中变量的值，请将鼠标悬停在上。
 
 ## 后续步骤 {#the-next-steps}
 

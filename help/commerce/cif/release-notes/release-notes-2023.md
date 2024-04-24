@@ -1,9 +1,11 @@
 ---
-title: AEM Content and Commerce 2023版发行说明
-description: Adobe Experience Manager Content and Commerce 2023版发行说明。
+title: AEM内容和Commerce 2023年发行说明
+description: Adobe Experience Manager内容和Commerce 2023年发行说明。
 exl-id: 00349400-6860-4e3c-ba56-fa12afc5db1d
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '166'
 ht-degree: 15%

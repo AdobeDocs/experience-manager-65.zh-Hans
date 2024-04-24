@@ -1,5 +1,5 @@
 ---
-title: 开发AEM商务
+title: 开发AEM Commerce
 description: 了解如何使用AEM项目原型生成支持AEM的commerce项目。 了解如何构建项目并将其部署到本地开发环境。
 topics: Commerce, Development
 feature: Commerce Integration Framework
@@ -8,7 +8,8 @@ kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 2%
@@ -17,7 +18,7 @@ ht-degree: 2%
 
 # 开发AEM Commerce {#develop}
 
-与其他的AEM项目一样，根据Commerce integration framework(CIF)为AEM开发AEM Commerce项目遵循相同的规则和最佳实践。 请先查看以下内容：
+根据适用于AEM的Commerce integration framework(CIF)开发AEM Commerce项目时，遵循与其他AEM项目相同的规则和最佳实践。 请先查看以下内容：
 
 - [AEM 6.5 Developing 用户指南](/help/sites-developing/getting-started.md)
 - [AEM核心概念](/help/sites-developing/the-basics.md)
@@ -32,7 +33,7 @@ ht-degree: 2%
 >
 >以下说明可帮助您使用带有AEM 6.5的CIF为AEM Commerce设置本地AEM开发环境。 如果您使用的是AEMas a Cloud Service，请参阅 [AEM Commerceas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) 文档。
 
-适用于AEM 6.5的AEM Commerce加载项aka。 CIF加载项也可用于本地开发，并作为AEM包提供。 可从以下位置下载： [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 作为功能包。
+适用于AEM 6.5 aka的AEM Commerce加载项。 CIF加载项也可用于本地开发，并作为AEM包提供。 可从以下位置下载： [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 作为功能包。
 
 ### 所需的软件
 
@@ -149,7 +150,7 @@ mvn -B archetype:generate \
 >
 >Venia Reference Store项目包含AEMas a Cloud Service和AEM 6.5的两个生成配置文件。查看 [项目readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) 了解它们的使用方式。 对于AEM 6.5，使用 `classic` 个人资料。
 
-### 将AEM连接到Commerce System
+### 将AEM连接到Commerce系统
 
 要将您的项目连接到Commerce System，必须使用Commerce System的GraphQL端点配置AEM。
 
@@ -157,7 +158,7 @@ mvn -B archetype:generate \
 
 替换 `url` 在 `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` 使用项目使用的商务系统的GraphQL端点。
 
-AEM Commerce附加组件和CIF核心组件通过AEM服务器和直接通过浏览器连接到商务GraphQL端点。 默认情况下，客户端CIF核心组件和CIF附加组件创作工具连接到 `/api/graphql`. 如果需要，可以通过CIFCloud Service配置来调整此设置（请参阅下文）。
+AEM Commerce加载项和CIF核心组件通过AEM服务器并直接通过浏览器连接到商务GraphQL端点。 默认情况下，客户端CIF核心组件和CIF附加组件创作工具连接到 `/api/graphql`. 如果需要，可以通过CIFCloud Service配置来调整此设置（请参阅下文）。
 
 CIF加载项在以下位置提供GraphQL代理servlet： `/api/graphql`. 如果您不计划使用本地AEM Dispatcher，则建议同时配置GraphQL代理servlet。
 

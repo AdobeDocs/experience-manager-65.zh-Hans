@@ -4,14 +4,15 @@ description: Adobe Experience Manager 6.5中比前八个Service Pack版本所具
 content-type: reference
 docset: aem65
 feature: Release Information
-role: User, Admin
-source-git-commit: 0aa929021aa724e4ec18d49fea26f8c0b0538bdc
+role: User,Admin,Architect,Developer
+exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
+solution: Experience Manager
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2334'
 ht-degree: 28%
 
 ---
-
 
 # 主要功能和增强功能汇总
 

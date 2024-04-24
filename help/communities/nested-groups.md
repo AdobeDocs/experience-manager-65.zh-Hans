@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '599'
-ht-degree: 4%
+ht-degree: 1%
 
 ---
 
@@ -43,7 +46,7 @@ ht-degree: 4%
 
 * 选择 **[!UICONTROL 创建组]**
 
-* **社区组模板**:
+* **社区组模板**：
 
    * **[!UICONTROL 社区组标题]**：艺术
    * **[!UICONTROL 社区组描述]**：各种艺术团体的父组
@@ -68,14 +71,14 @@ ht-degree: 4%
 
       * 留空（继承自父站点）。
 
-   * **[!UICONTROL 成员资格]**
+   * **[!UICONTROL 会员资格]**
 
       * 使用默认值 `Optional Membership.`
 
       * **[!UICONTROL 缩略图]**
          * `optional.*`
 
-      * **[!UICONTROL 选择下一步]**。
+      * **[!UICONTROL 选择下一步]**.
 
 * 选择&#x200B;**[!UICONTROL 创建]**。
 
@@ -99,23 +102,23 @@ ht-degree: 4%
 
 1. **[!UICONTROL 可视化]**
 
-   * 标题: `Visual Arts`
+   * 标题： `Visual Arts`
    * 名称：`visual`
-   * 模板: `Reference Group`
+   * 模板： `Reference Group`
    * 成员资格：选择 `Optional Membership`，一个公共组，对所有成员开放。
 
 1. **[!UICONTROL 听觉]**
 
-   * 标题: `Auditory Arts`
+   * 标题： `Auditory Arts`
    * 名称：`auditory`
-   * 模板: `Reference Group`
+   * 模板： `Reference Group`
    * 成员资格：选择 `Required Membership`，开放组，可供成员加入。
 
-1. **[!UICONTROL 历史]**
+1. **[!UICONTROL 历史记录]**
 
-   * 标题: `Art History`
+   * 标题： `Art History`
    * 名称：`history`
-   * 模板: `Reference Group`
+   * 模板： `Reference Group`
    * 成员资格：选择 `Restricted Membership`，一个机密组，仅对受邀成员可见。 例如，邀请 [演示用户](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
 刷新页面，以便您能够查看所有三个嵌套的组（子社区）。

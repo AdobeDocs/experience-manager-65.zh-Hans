@@ -9,10 +9,12 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1688'
-ht-degree: 2%
+source-wordcount: '1698'
+ht-degree: 1%
 
 ---
 
@@ -81,7 +83,7 @@ ht-degree: 2%
 
   组的描述。
 
-* **社区组根路径**
+* **社区组根目录**
 
   组的根路径。
 默认根是父站点，但根可以移动到网站内的任何位置。 不建议更改此设置。
@@ -140,7 +142,7 @@ ht-degree: 2%
 
 ![选择社区组成员角色](assets/group-admin.png)
 
-**社区组版主**
+**社区组审查方**
 
 默认情况下，父社区站点的审查方列表会被继承。
 

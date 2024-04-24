@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1219'
-ht-degree: 8%
+source-wordcount: '1233'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +61,7 @@ ht-degree: 8%
 
 在 **设置** 选项卡，指定主题和回复的设置：
 
-* **允许附加缩略图**
+* **允许附件缩略图**
 
   如果选中，则会创建附加图像的缩略图。
 
@@ -67,7 +70,7 @@ ht-degree: 8%
   附件缩略图图像的最大尺寸（以像素为单位）。 默认值为800 x 800。
 
 * **缩略图的最小图像大小**
-* **缩略图大小最大值**
+* **最大缩略图大小**
 
   内嵌图像的缩略图图像的最大尺寸（以像素为单位）。 默认值为800 x 800。
 
@@ -146,7 +149,7 @@ ht-degree: 8%
 
   如果选中，则仅允许拥有权限的成员创建内容。
 
-* **允许的拥有权限的成员**
+* **允许拥有权限的成员**
 
   添加有权创建内容的成员。
 
@@ -162,7 +165,7 @@ ht-degree: 8%
 
   限制帖子中允许的最多提及次数。 默认值为10。
 
-* **UI 提及模式**
+* **UI提及模式**
 
   指定允许的样式字符串以在帖子中标记(@mention)已注册用户。 例如：`~{{familyName}}{{givenName}}`。
 
@@ -234,7 +237,7 @@ ht-degree: 8%
 
   检查所有允许的排序选择： `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 默认为 `Newest, Oldest, Last Updated`.
 
-* **设置为默认**
+* **设置为默认值**
 
   下拉以选择其中一个选中的排序选项以显示为默认选项。 默认为 `Newest`.
 

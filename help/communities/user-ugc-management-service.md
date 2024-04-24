@@ -8,7 +8,9 @@ topic-tags: administering
 docset: aem65
 role: Admin
 exl-id: 526ef0fa-3f20-4de4-8bc5-f435c60df0d0
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%
@@ -31,7 +33,7 @@ AEM Communities提供现成的API来管理用户配置文件和批量管理用�
 
 要将这些API投入使用，您需要启用 `/services/social/ugcmanagement` 通过激活UserUgcManagement服务终结点。 要激活此服务，请安装 [示例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet) 可用日期 [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet). 然后，使用http请求通过相应的参数点击社区站点发布实例上的端点，如下所示：
 
-`https://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation=<getUgc>`. 但是，您还可以构建UI（用户界面）来管理系统中的用户配置文件和用户生成的内容。
+`https://localhost:port/services/social/ugcmanagement?user=<authorizable ID>&operation=<getUgc>`。但是，您还可以构建UI（用户界面）来管理系统中的用户配置文件和用户生成的内容。
 
 这些API允许执行以下功能。
 

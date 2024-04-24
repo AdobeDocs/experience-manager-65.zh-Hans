@@ -1,22 +1,23 @@
 ---
-title: AEM 6.5中的电子商务存储库重构
-description: 了解如何进行必要的更改，以迁移到AEM 6.5 for E-Commerce中的新存储库结构。
+title: AEM 6.5中的E-Commerce存储库重组
+description: 了解如何进行必要的更改，以迁移到AEM 6.5中适用于E-Commerce的新存储库结构。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: 78b7c497-c474-4308-bfab-8f424b5f7268
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 1%
 
 ---
 
-# AEM 6.5中的电子商务存储库重构{#e-commerce-repository-restructuring-in-aem}
+# AEM 6.5中的E-Commerce存储库重组{#e-commerce-repository-restructuring-in-aem}
 
-如父项中所述 [AEM 6.5中的存储库重组](/help/sites-deploying/repository-restructuring.md) 页面，升级到AEM 6.5的客户应使用此页面评估与影响AEM E-Commerce Solution的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
+如父项中所述 [AEM 6.5中的存储库重组](/help/sites-deploying/repository-restructuring.md) 页面，升级到AEM 6.5的客户应使用此页面评估与影响AEM E-Commerce解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
 ## 6.5版升级 {#with-upgrade}
 

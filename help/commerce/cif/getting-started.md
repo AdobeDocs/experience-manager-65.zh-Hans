@@ -1,11 +1,12 @@
 ---
 title: AEM Content and Commerce 快速入门
-description: 了解如何部署AEM Content and Commerce项目。
+description: 了解如何部署AEM内容和Commerce项目。
 topics: Commerce
 feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 3%
@@ -14,7 +15,7 @@ ht-degree: 3%
 
 # AEM Content and Commerce 快速入门 {#start}
 
-要开始使用AEM Content and Commerce，您需要安装适用于AEM 6.5的AEM Content and Commerce加载项。
+要开始使用AEM Content和Commerce，您需要安装适用于AEM 6.5的AEM Content和Commerce加载项。
 
 ## 最低软件要求
 
@@ -22,7 +23,7 @@ ht-degree: 3%
 
 ## 入门培训 {#onboarding}
 
-AEM Content and Commerce的入门培训分为两步：
+AEM Content和Commerce的入门培训分为两步：
 
 1. 安装适用于AEM 6.5的AEM Content and Commerce加载项
 
@@ -30,7 +31,7 @@ AEM Content and Commerce的入门培训分为两步：
 
 ### 安装适用于AEM 6.5的AEM Content and Commerce加载项 {#install-add-on}
 
-从下载并安装适用于AEM 6.5的AEM Commerce加载项 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 门户。
+从下载并安装适用于AEM 6.5的AEM Commerce附加组件 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 门户。
 
 启动并安装所需的AEM 6.5 Service Pack。 我们建议安装最后一个可用的Service Pack。
 
@@ -48,7 +49,7 @@ AEM可以连接到任何具有AEM的GraphQL端点可访问的commerce system。 
 
 替换 `url` 在 `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` 与商务系统的GraphQL端点配合使用。 此配置可通过OSGI控制台或通过项目部署OSGI配置来完成。 使用不同的AEM运行模式支持用于暂存和生产系统的不同配置。
 
-AEM Content and Commerce附加组件和CIF核心组件同时使用AEM服务器端和客户端连接。 默认情况下，客户端CIF核心组件和CIF附加创作工具连接到 `/api/graphql`. 如果需要，可以通过CIFCloud Service配置调整此设置（请参阅下文）。
+AEM Content和Commerce附加组件以及CIF核心组件同时使用AEM服务器端和客户端连接。 默认情况下，客户端CIF核心组件和CIF附加创作工具连接到 `/api/graphql`. 如果需要，可以通过CIFCloud Service配置调整此设置（请参阅下文）。
 
 CIF加载项在以下位置提供了一个GraphQL代理servlet： `/api/graphql` 可以选择用于 [本地开发](develop.md). 对于生产部署，强烈建议通过AEM Dispatcher或其他网络层（如CDN）设置商务GraphQL端点的反向代理。
 

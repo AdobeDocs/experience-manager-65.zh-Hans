@@ -1,14 +1,17 @@
 ---
 title: 发展中的社区
-description: 创建和自定义社区功能，例如论坛、用户组等。
+description: 创建和自定义社区功能，如论坛、用户组等。
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '390'
 ht-degree: 5%
 
 ---
@@ -17,9 +20,9 @@ ht-degree: 5%
 
 ## 概述 {#overview}
 
-Adobe Experience Manager (AEM) Communities简化了社区功能（如论坛、用户组、博客、Q&amp;A、日历、评论、评论、投票、评级和分配等）的创建和自定义。 这些功能导致在发布环境中输入用户生成的内容(UGC)。
+Adobe Experience Manager (AEM)社区简化了社区功能（如论坛、用户组、博客、Q&amp;A、日历、评论、评论、投票、评级和分配等）的创建和自定义。 这些功能导致在发布环境中输入用户生成的内容(UGC)。
 
-的基础 [社区站点](overview.md#communitiessites) 是 [社交组件框架](scf.md) (SCF)。 社区站点的创建从选择开始 [社区站点模板](sites-console.md) 由以下各项组成 [社区功能](functions.md).
+a的基础 [社区站点](overview.md#communitiessites) 是 [社交组件框架](scf.md) (SCF)。 创建社区站点首先要选择 [社区站点模板](sites-console.md) 由 [社区功能](functions.md).
 
 有关概述和入门教程，请访问：
 
@@ -33,7 +36,7 @@ Adobe Experience Manager (AEM) Communities简化了社区功能（如论坛、�
 ## 建议的部署 {#recommended-deployments}
 
 * [社区内容存储](working-with-srp.md)：讨论UGC公用存储可用的社交资源提供程序(SRP)选择
-* [推荐的社区拓扑](topologies.md)：讨论基于用例和SRP选择的拓扑
+* [推荐的社区拓扑](topologies.md)：根据用例和SRP选择讨论拓扑
 
 ## 社交组件框架 {#social-component-framework}
 
@@ -45,7 +48,7 @@ Adobe Experience Manager (AEM) Communities简化了社区功能（如论坛、�
 * [编码准则](code-guide.md)：指南、提示和技巧。
 * [社区组件指南](components-guide.md)：交互式开发工具。
 
-## Component、Function和Feature Essentials {#component-function-and-feature-essentials}
+## 组件、功能和功能要点 {#component-function-and-feature-essentials}
 
 AEM Communities组件、功能和功能提供了构建块， [社区站点](sites-console.md).
 
@@ -88,8 +91,8 @@ AEM Communities组件、功能和功能提供了构建块， [社区站点](site
 
 ## 相关社区文档 {#related-communities-documentation}
 
-* 访问 [部署社区](deploy-communities.md) 了解建议的部署和Dispatcher配置。
+* 访问 [部署社区](deploy-communities.md) 以了解建议的部署和Dispatcher配置。
 
 * 访问 [管理社区站点](administer-landing.md) 了解有关创建社区站点、配置社区站点模板、审核社区内容、管理成员和配置消息传送的信息。
 
-* 访问 [创作社区组件](author-communities.md) 了解如何使用创作和配置社区组件。
+* 访问 [创作社区组件](author-communities.md) 了解如何使用及配置社区组件进行创作。

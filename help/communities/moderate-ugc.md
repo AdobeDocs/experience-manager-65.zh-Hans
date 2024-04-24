@@ -8,9 +8,11 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1516'
+source-wordcount: '1519'
 ht-degree: 2%
 
 ---
@@ -73,7 +75,7 @@ ht-degree: 2%
    <td><strong>管理员</strong></td>
    <td><strong>审查方</strong></td>
    <td><strong>创建者</strong></td>
-   <td><strong>成员</strong></td>
+   <td><strong>会员</strong></td>
    <td><strong>访客</strong></td>
    <td><strong>事件<br /> 已触发</strong></td>
    <td><strong>已预审</strong></td>
@@ -161,7 +163,7 @@ ht-degree: 2%
 
 ![帕斯泰乌奇](assets/pasteugc.png)
 
-![pasteugc1](assets/pasteugc1.png)
+![巴斯德乌格1](assets/pasteugc1.png)
 
 ### 拒绝 {#deny}
 

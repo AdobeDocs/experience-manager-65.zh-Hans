@@ -6,9 +6,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -17,9 +20,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于需要基于单页应用程序框架的客户端渲染（例如React）的项目，Adobe建议使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
 
-熟悉文章、横幅和收藏集的内容管理操作后，即可发布内容。 您还可以取消发布内容。
+熟悉关于文章、横幅和收藏集的内容管理操作后，即可发布您的内容。 您还可以取消发布内容。
 
 >[!NOTE]
 >
@@ -27,19 +30,19 @@ ht-degree: 1%
 
 ## 发布/取消发布内容 {#publishing-unpublishing-the-content}
 
-这与“AEM发布”不同。 您未将内容推送到AEM发布服务器实例以使其可公开查看。 在这里，您告知Mobile On-Demand选定的内容应在实时Mobile On-Demand应用程序中公开。
+这与“AEM发布”不同。 您不会将内容推送到AEM发布服务器实例以使内容可公开查看。 在此，您正在通知Mobile On-Demand选定的内容应在实时Mobile On-Demand应用程序中公开。
 
 >[!NOTE]
 >
 >内容必须先上传到Mobile On-Demand，然后才能发布。
 
-发布/取消发布文章的常规工作流：
+用于发布/取消发布文章的常规工作流：
 
-1. 从Mobile中，从目录中选择您的Mobile On-Demand应用程序。
+1. 在Mobile中，从目录中选择您的Mobile On-Demand应用程序。
 1. 选择文章。
 1. 如果需要，可从列表视图添加其他文章。
 1. 从操作栏中选择发布。 片刻后，您的文章将公开。
-1. 使用上述相同步骤取消发布文章。
+1. 使用上述相同步骤取消发布发布文章。
 
 <!-- FAIL >>[!NOTE]
 >

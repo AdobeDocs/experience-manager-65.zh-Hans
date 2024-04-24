@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: e130bab4-524d-4413-ba8b-53d0ed9e8623
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1122'
-ht-degree: 9%
+source-wordcount: '1132'
+ht-degree: 0%
 
 ---
 
@@ -56,13 +59,13 @@ ht-degree: 9%
 
 在 **[!UICONTROL 设置]** 选项卡，指定想法和评论的设置：
 
-* **允许附加缩略图**
+* **允许附件缩略图**
 * **附加缩略图时的大小上限**
 * **缩略图的最小图像大小**
-* **缩略图大小最大值**
+* **最大缩略图大小**
 * **允许拥有权限的成员**
-* **允许的拥有权限的成员**
-* **在作者编辑模式下阻止“用户生成内容”**
+* **允许拥有权限的成员**
+* **在作者编辑模式下阻止用户生成的内容**
 * **构思标题**
 
 * 创意的显示标题。 默认为 `Ideation`.
@@ -142,7 +145,7 @@ ht-degree: 9%
 
 * **启用提及功能**
 * **最大提及次数**
-* **UI 提及模式**
+* **UI提及模式**
 
 #### “用户审核”选项卡 {#user-moderation-tab}
 
@@ -196,7 +199,7 @@ ht-degree: 9%
 
   检查所有允许的排序选择： `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 默认为 `Newest, Oldest, Last Updated`.
 
-* **设置为默认**
+* **设置为默认值**
 
   下拉以选择其中一个选中的排序选项以显示为默认选项。 默认为 `Newest`.
 

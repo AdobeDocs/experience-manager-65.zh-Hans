@@ -7,10 +7,13 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 1%
+source-wordcount: '1195'
+ht-degree: 0%
 
 ---
 
@@ -128,9 +131,9 @@ ht-degree: 1%
 1. 选择 **新建组**
 1. **“设置”选项卡**
 
-   * 组名称 : `Sports`
-   * 描述 : `A parent group for various sporting groups`.
-   * 组 URL 名称 : `sports`
+   * 组名称： `Sports`
+   * 描述： `A parent group for various sporting groups`.
+   * 组URL名称： `sports`
    * 选择 `Open Group` （允许任何社区成员通过加入进行参与）
 
 1. **“模板”选项卡**
@@ -159,7 +162,7 @@ ht-degree: 1%
    * 将其设置更改为 `Member Only Group` （受限成员资格）。
    * 在模板选项卡上，选择 `Conversational Group`.
 
-**通知**:
+**注意**：
 
 * 在显示这两个组之前，可能需要刷新页面。
 * 此模板可以 *非* 包括“组”功能，因此不可能进一步嵌套组。
@@ -221,7 +224,7 @@ ht-degree: 1%
 
 登录后，显示的第一个页面是 `Profile` 页面进行个性化设置。
 
-![侧面像](assets/profile.png)
+![个人资料](assets/profile.png)
 
 如果成员忘记了登录ID，则恢复操作可能会使用其电子邮件地址。
 

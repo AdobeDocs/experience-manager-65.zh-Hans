@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2701'
-ht-degree: 4%
+source-wordcount: '2658'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +60,7 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 1. [Publish](#publish-community-site-and-analytics-cloud-service) 社区站点
 1. 配置 [导入报表数据](#obtaining-reports-from-analytics) 从Adobe Analytics到社区站点
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 要配置Analytics for Communities功能，必须与您的客户代表一起设置Adobe Analytics帐户，并 [报告包](#adobe-analytics-report-suite-for-video-reporting). 建立后，应提供以下信息：
 
@@ -98,9 +100,9 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
    * **`event1`** 到 **`event7`** 已启用
 
-   * 类型 **`Counter`**
+   * type **`Counter`**
 
-      * 否 **`Counter (no subrelations)`**
+      * 非 **`Counter (no subrelations)`**
 
    * 可以重新利用（重命名）现有事件或创建要用于Communities功能的事件
 
@@ -216,11 +218,11 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
   保留为默认值（取消选中）。
 
-* **使用 AppMeasurement**
+* **使用AppMeasurement**
 
   保留为默认值（取消选中）。
 
-* **夜间不导入页面展示（创作）**
+* **每夜不导入页面展示（创作）**
 
   保留为默认值（取消选中）。
 
@@ -302,7 +304,7 @@ Sidekick不是必需的变量，可以将其最小化，这样它就不会妨碍
 
 1. 选择 `Run Mode`.
 
-1. 选择 **Publish**.
+1. 选择&#x200B;**发布**。
 
 ![analytics-framework2](assets/analytics-framework2.png)
 
@@ -407,15 +409,15 @@ Analytics自动用于多个Communities功能。
   </tr>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>eVar1</strong></td>
-   <td><strong>eVar2</strong></td>
-   <td><strong>eVar3</strong></td>
-   <td><strong>eVar4</strong></td>
-   <td><strong>eVar5</strong></td>
-   <td><strong>eVar6</strong></td>
-   <td><strong>eVar7</strong></td>
-   <td><strong>eVar8</strong></td>
-   <td><strong>eVar9</strong></td>
+   <td><strong>EVAR1</strong></td>
+   <td><strong>EVAR2</strong></td>
+   <td><strong>EVAR3</strong></td>
+   <td><strong>EVAR4</strong></td>
+   <td><strong>EVAR5</strong></td>
+   <td><strong>EVAR6</strong></td>
+   <td><strong>EVAR7</strong></td>
+   <td><strong>EVAR8</strong></td>
+   <td><strong>EVAR9</strong></td>
    <td><strong>eVar10</strong></td>
   </tr>
   <tr>

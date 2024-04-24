@@ -7,10 +7,13 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '397'
-ht-degree: 3%
+source-wordcount: '362'
+ht-degree: 2%
 
 ---
 
@@ -123,10 +126,10 @@ ht-degree: 3%
 1. 以管理员身份登录 ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
 1. 创建 `bundle node`在 `/apps/engage/install` ，例如：
 
-   * 符号名称: `com.engage.media.social.messaging.MessagingNotification`
+   * 符号名称： `com.engage.media.social.messaging.MessagingNotification`
    * 名称：入门教程消息通知
    * 描述：用于在用户收到消息时向其发送电子邮件通知的示例服务
-   * 包: `com.engage.media.social.messaging.notification`
+   * 包： `com.engage.media.social.messaging.notification`
 
 1. 导航到 `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`，然后：
 

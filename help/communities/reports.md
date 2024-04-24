@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '405'
-ht-degree: 9%
+source-wordcount: '411'
+ht-degree: 6%
 
 ---
 
@@ -27,7 +29,7 @@ ht-degree: 9%
 
   按社区成员和站点访客提供任意社区站点的内容视图图表。
 
-* [发布报表](#posts-report)
+* [帖子报表](#posts-report)
 
   提供社区成员在任何社区站点上发表的各种类型的帖子的图表。
 
@@ -41,11 +43,11 @@ ht-degree: 9%
 
 * 选择自：
 
-   * **[!UICONTROL 指定报表]**
+   * **[!UICONTROL 指定任务报表]**
 
       * 为选定的社区站点、用户或组以及分配生成报告。
 
-   * **[!UICONTROL 发布报表]**
+   * **[!UICONTROL 帖子报表]**
 
       * 为选定的社区站点、内容类型和时间段生成报告。
 

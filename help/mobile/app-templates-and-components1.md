@@ -6,7 +6,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '408'
 ht-degree: 1%
@@ -17,14 +20,14 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->对于需要基于单页应用程序框架的客户端渲染（例如React）的项目，Adobe建议使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md).
+>Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
 
-模板用于创建页面，并定义可以在所选范围内使用的组件。 模板是一种节点层次结构，其结构与要创建页面的结构相同，但没有任何实际内容。
+模板用于创建页面，并定义可在所选范围内使用的组件。 模板是一种节点层次结构，与要创建页面的结构相同，但没有任何实际内容。
 
-每个模板都为您提供一系列可供使用的组件。
+每个模板都会为您提供一系列可供使用的组件。
 
-* 模板由以下项构建： [组件](/help/sites-developing/components.md)；
-* 组件使用和允许对构件的访问，构件和构件用于呈现内容。
+* 模板由构建 [组件](/help/sites-developing/components.md)；
+* 组件使用并允许访问Widget，这些构件用于呈现内容。
 
 >[!NOTE]
 >
@@ -32,9 +35,9 @@ ht-degree: 1%
 
 模板是页面的基础。
 
-要创建页面，必须复制模板（节点树） **/apps/&lt;myapp>/templates/&lt;mytemplate>**)中的相应位置：如果使用以下方式创建页面，则会发生这种情况 **网站** 选项卡。
+要创建页面，必须复制模板（节点树） **/apps/&lt;myapp>/templates/&lt;mytemplate>**)中的相应位置：如果使用以下方式创建页面，则会发生这种情况： **网站** 选项卡。
 
-此复制操作还会为页面提供其初始内容（通常为顶级内容）和属性sling：resourceType，用于呈现页面的页面组件的路径（子节点jcr：content中的所有内容）。
+此复制操作还会为页面提供其初始内容（通常是仅顶级内容）和属性sling：resourceType，以及用于呈现页面的页面组件的路径（子节点jcr：content中的所有内容）。
 
 ## 模板的结构 {#structure-of-a-template}
 
@@ -43,14 +46,14 @@ ht-degree: 1%
 * 模板本身的结构
 * 使用模板时生成的内容的结构
 
-在类型节点下创建模板 **cq：Template**.
+在类型为的节点下创建模板 **cq：Template**.
 
 可以设置各种属性，特别是：
 
 * **jcr：title**  — 模板的标题；在创建页面时显示在对话框中。
 * **jcr：description**  — 模板的描述；在创建页面时显示在对话框中。
 
-此节点包含 *jcr：content (cq：PageContent)* 用作结果页面的内容节点的基的节点。 此引用，使用 *sling：resourceType*，用于呈现新页面的实际内容的组件。
+此节点包含 *jcr：content (cq：PageContent)* 节点，用作结果页面的内容节点的基础。 此引用，使用 *sling：resourceType*，用于呈现新页面实际内容的组件。
 
 >[!NOTE]
 >
@@ -71,5 +74,5 @@ ht-degree: 1%
 
 要了解有关移动应用程序的其他主题，请参阅以下链接：
 
-* [通过内容同步移动设备](/help/mobile/mobile-ondemand-contentsync.md)
+* [通过内容同步处理移动设备](/help/mobile/mobile-ondemand-contentsync.md)
 * [测试移动应用程序](/help/mobile/develop-mobile-apps-testing.md)

@@ -1,9 +1,11 @@
 ---
-title: Adobe Experience Manager Content and Commerce 2021版发行说明
-description: Adobe Experience Manager Content and Commerce 2021年发行说明。
+title: Adobe Experience Manager内容和Commerce 2021年发行说明
+description: Adobe Experience Manager内容和Commerce 2021年发行说明。
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '1088'
 ht-degree: 12%
@@ -50,13 +52,13 @@ ht-degree: 12%
 
 ### 新增功能 {#what-is-new-october}
 
-* CIF加载项支持带有新GraphQL API和架构的最新Commerce v2.4.3
+* CIF加载项支持带有新Commerce API和架构的最新GraphQL v2.4.3
 
 * 作者可以使用富文本编辑器(RTE)在文本字段中添加指向产品和目录页面的链接。 RTE工具栏中添加了CIF图标，该图标可打开选取器，以便在不离开上下文的情况下快速搜索和选择产品或类别。
 
 * 现有的弹出购物车和结帐已替换为专用的AEM购物车和结帐页面。 这些页面上的组件是使用Adobe Commerce的可扩展Peregrine组件构建的
 
-* 商家可以使用Commerce后端在导航中隐藏某些产品目录类别。 CIF导航核心组件遵循Commerce后端配置“包含在菜单中”以在导航中显示/隐藏类别
+* 商家可以使用Commerce后端隐藏导航中的某些产品目录类别。 CIF导航核心组件遵循Commerce后端配置“包含在菜单中”以在导航中显示/隐藏类别
 
 * 如果找不到类别或产品页面，AEM Storefront Venia返回HTTP 404错误
 
@@ -236,7 +238,7 @@ ht-degree: 12%
 
 ### 新增功能 {#what-is-new-january}
 
-* 产品体验管理：为资源和体验片段新增了“商务”属性选项卡。 利用此选项卡，可将资产和体验片段链接到产品和类别。 该选项卡还显示链接商务对象的实时数据以及一个链接，该链接用于在产品控制台中显示详细信息。
+* 产品体验管理：为资源和体验片段新增了“Commerce”属性选项卡。 利用此选项卡，可将资产和体验片段链接到产品和类别。 该选项卡还显示链接商务对象的实时数据以及一个链接，该链接用于在产品控制台中显示详细信息。
 
 ### 改进内容  {#what-is-improved-january}
 

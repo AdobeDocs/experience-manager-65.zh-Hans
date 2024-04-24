@@ -6,10 +6,13 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+solution: Experience Manager
+feature: Mobile
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2607'
-ht-degree: 1%
+source-wordcount: '2571'
+ht-degree: 0%
 
 ---
 
@@ -214,7 +217,7 @@ head.html和body.html的示例可在 [AEM Mobile混合引用应用程序](https:
   </tr>
   <tr>
    <td>includedPageTypes</td>
-   <td><p>"cq/personalization/components/teaserpage",</p> <p>"cq/personalization/components/offerproxy"</p> </td>
+   <td><p>"cq/personalization/components/teaserpage"，</p> <p>"cq/personalization/components/offerproxy"</p> </td>
    <td>includePageTypes属性是可选属性，默认使用资源类型为cq/personalization/components/teaserpage和cq/personalization/components/offerproxy的页面。 这两种资源类型是定位内容时使用的默认资源类型。 如果必须支持其他资源类型，请将其添加到includePageTypes列表。</td>
   </tr>
   <tr>
@@ -248,7 +251,7 @@ head.html和body.html的示例可在 [AEM Mobile混合引用应用程序](https:
    <td>如果为true，则会呈现选件中包含的任何视频。 如果为false，则会跳过视频。</td>
   </tr>
   <tr>
-   <td>path</td>
+   <td>路径</td>
    <td>/content/campaigns/&lt;brand&gt;</td>
    <td>指向选件参与的活动品牌。 当前，所有选件必须来自同一营销活动。</td>
   </tr>
@@ -275,7 +278,7 @@ head.html和body.html的示例可在 [AEM Mobile混合引用应用程序](https:
 
 对于每个mbox，属性为 **cq-targeting** 添加了功能，允许应用程序开发人员编写自定义代码以根据需要使用和使用。 此 [AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 有一个使用cq-targeting属性的Angular指令示例。 内容替换的概念（何时以及如何替换）由移动应用程序开发人员决定。 有一个Mobile SDK，通过AEM /etc/clientlibs/mobileapps/js/mobileapps.js交付，它提供了一个API来调用Adobe定位服务。 取决于应用程序开发人员来指定何时应根据他们的应用程序的设计进行该调用。
 
-## 后续内容? {#what-s-next}
+## 接下来呢？ {#what-s-next}
 
 1. [开始我的AEM Mobile应用程序体验](/help/mobile/starting-aem-phonegap-app.md)
 1. [管理我的应用程序内容](/help/mobile/phonegap-manage-app-content.md)

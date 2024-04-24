@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1670'
-ht-degree: 6%
+source-wordcount: '1696'
+ht-degree: 0%
 
 ---
 
@@ -71,7 +74,7 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
 在 **设置** 选项卡，指定博客的基本功能：
 
-* **允许附加缩略图**
+* **允许附件缩略图**
 
   如果选中，则会创建附加图像的缩略图。
 
@@ -83,7 +86,7 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
   用于为内嵌图像生成缩略图的图像最小尺寸（以字节为单位）。 默认值为100000字节(100 kb)。
 
-* **缩略图大小最大值**
+* **最大缩略图大小**
 
   内嵌图像的缩略图图像的最大尺寸（以像素为单位）。 默认值为800 x 800。
 
@@ -91,7 +94,7 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
   如果选中，则仅允许拥有权限的成员创建内容。
 
-* **允许的拥有权限的成员**
+* **允许拥有权限的成员**
 
   添加有权创建内容的成员。
 
@@ -109,7 +112,7 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 >
 >从您在此处指定的日志标题中最多使用50个字符（额外使用5个字符作为唯一性）来创建博客的URL。
 
-* **日志描述**
+* **日志说明**
 
   博客说明。
 
@@ -187,7 +190,7 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
   限制帖子中允许的最多提及次数。 默认值为10。
 
-* **UI 提及模式**
+* **UI提及模式**
 
   指定允许的样式字符串以在帖子中标记(@mention)已注册用户。 例如：`~{{familyName}}{{givenName}}`。
 

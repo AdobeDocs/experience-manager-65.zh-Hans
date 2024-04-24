@@ -2,7 +2,10 @@
 title: 的常规发行说明 [!DNL Adobe Experience Manager] 6.5
 description: '"[!DNL Adobe Experience Manager] 6.5版本说明概述了版本信息、新增功能、安装方法和详细的更改列表。”'
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 3bcdbfc17efe1f4c6069fd97fd6a16ec41d0579e
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4484'
 ht-degree: 2%
@@ -329,7 +332,7 @@ AEM 6.5引入了以下功能和增强功能，以提高AEM用户、DAM角色以�
 
 [!DNL Adobe Asset Link] 在内容创建过程中加强创意人员与营销人员之间的协作。 创意人员可以访问中存储的内容 [!DNL Experience Manager Assets]，而不离开他们最熟悉的应用程序。 创意人员可以使用中的应用程序内面板无缝浏览、搜索、签出和签入资源 [!DNL Adobe Photoshop]， [!DNL Adobe Illustrator]、和 [!DNL Adobe InDesign] 应用程序。
 
-[!DNL Adobe Asset Link] 是的一部分 [企业Creative Cloud](https://www.adobe.com/cn/creativecloud/business/enterprise.html) 主动出击。 有关该集成的详细信息，包括 [!DNL Experience Manager] 部署，请参阅 [Adobe资源链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] 是的一部分 [企业Creative Cloud](https://www.adobe.com/cn/creativecloud/business/enterprise.html) 主动出击。 有关该集成的详细信息，包括 [!DNL Experience Manager] 部署，请参阅 [Adobe资源链接](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
 ![在Adobe Photoshop中搜索资源](/help/release-notes/assets/asset_search_photoshop.png)
 
@@ -552,7 +555,7 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * **处理页面版本**： [如果页面已移动，您将无法再对移动之前创建的任何版本执行预览](/help/sites-authoring/working-with-page-versions.md#previewing-a-version).
 
-### 资源 {#assets}
+### 资产 {#assets}
 
 * **搜索：** 如果搜索字符串包含前导空格([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **文件夹元数据架构**：添加选择按钮后，ID和值字段未按预期呈现，并且删除功能无法正常工作。 (CQ-4261144)

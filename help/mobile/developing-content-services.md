@@ -5,10 +5,13 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+solution: Experience Manager
+feature: Mobile
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '310'
-ht-degree: 2%
+source-wordcount: '313'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Content Services可以将内容作为资源、打包HTML(HTML/CSS/JS)或独立�
 
 >[!CAUTION]
 >
->**前提条件:**
+>**先决条件：**
 >
 >在开始使用Content Services之前，请确保启用Content Services标志。 要在应用程序中启用模型的创建和管理，请在配置浏览器中启用数据模型。
 >

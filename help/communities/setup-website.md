@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+solution: Experience Manager
+feature: Communities
+role: Developer
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 1%
@@ -39,8 +42,8 @@ ht-degree: 1%
 >* 节点名称可以包含空格，但在URI中使用时，该空格必须编码为“%20”或“+”。
 >* 节点名称可以包含连字符和下划线，但是当节点名称在Java™文件中作为包名称引用时，必须对它们进行编码。 连字符和下划线均使用下划线进行转义，后跟其Unicode值：
 >
-* 连字符变为“_002d”
-* 下划线变为“_005f”
+>   * 连字符变为“_002d”
+>   * 下划线变为“_005f”
 
 ## 设置应用程序目录(/apps) {#setup-the-application-directory-apps}
 

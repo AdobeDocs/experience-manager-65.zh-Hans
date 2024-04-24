@@ -7,7 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 14ecaef7-d9fc-45ea-8feb-16ad8946508e
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '90'
 ht-degree: 2%

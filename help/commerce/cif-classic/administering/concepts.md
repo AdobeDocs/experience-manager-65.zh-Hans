@@ -4,7 +4,9 @@ description: 通过Adobe Experience Manager了解电子商务的一般概念。
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '4439'
 ht-degree: 0%
@@ -128,7 +130,7 @@ AEM eCommerce是通过电子商务引擎实现的：
 >
 >  标准AEM安装包含 [通用电子商务实施](/help/commerce/cif-classic/administering/generic.md).
 
-### 商业提供程序 {#commerce-providers}
+### Commerce提供商 {#commerce-providers}
 
 将数据从商业引擎导入到AEM电子商务网站时，会使用商业提供程序向导入程序提供数据。 一个商务提供商可以支持多个导入程序。
 
@@ -148,7 +150,7 @@ AEM目前有两个示例商业提供程序：
 >
 >Geometrixx导入器使用CSV文件；其实现上方的注释中包含接受的架构描述（允许自定义属性）。
 
-此 [产品服务经理](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) 维护(通过 [osgi](/help/sites-deploying/configuring.md#osgi-configuration-settings))的实施列表 [产品导入程序](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 和 [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 界面。 这些项目列于 **导入程序/商务提供程序** 导入器向导的下拉字段(使用 `commerceProvider` 属性作为名称)。
+此 [产品服务经理](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) 维护(通过 [osgi](/help/sites-deploying/configuring.md#osgi-configuration-settings))的实施列表 [产品导入程序](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) 和 [CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) 界面。 这些项目列于 **导入程序/Commerce提供程序** 导入器向导的下拉字段(使用 `commerceProvider` 属性作为名称)。
 
 如果下拉菜单中提供了特定的导入程序/商务提供程序，则必须在以下任一位置定义所需的任何补充数据（取决于导入程序类型）：
 
@@ -392,7 +394,7 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 
 * 内容卷
 
-   * 资源
+   * 资产
    * 本地化的I18ned产品和SKU
 
 * 用户活动：
@@ -454,7 +456,7 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 
 产品页面提供有关各个产品的全面信息。 来自的动态更新也会反映在中；例如，在电子商务引擎上注册的价格变化。
 
-AEM产品页面是指使用 **产品** 组件；例如，在 **商业产品** 模板：
+AEM产品页面是指使用 **产品** 组件；例如，在 **Commerce产品** 模板：
 
 ![e-commerce_nairobirunnersgreen](/help/sites-administering/assets/ecommerce_nairobirunnersgreen.png)
 

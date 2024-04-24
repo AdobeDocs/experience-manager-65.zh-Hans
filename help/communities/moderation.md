@@ -8,10 +8,12 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+solution: Experience Manager
+feature: Communities
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2038'
-ht-degree: 4%
+source-wordcount: '2028'
+ht-degree: 2%
 
 ---
 
@@ -155,14 +157,14 @@ ht-degree: 4%
 内容类型将引用的UGC显示限制为所选资源类型的帖子。 可以选择以下一种或多种类型。 如果未选择任何类型，则会显示所有类型。
 
 * **注释**
-* **论坛 - 主题**
+* **论坛主题**
 * **论坛回复**
-* **问题与解答 - 问题**
-* **问题与解答 - 回答**
+* **问题与解答问题**
+* **问题与解答答案**
 * **博客文章**
 * **博客评论**
 * **日历事件**
-* **日历注释**
+* **日历评论**
 * **文件库文件夹**
 * **文件库文档**
 * **构思**
@@ -186,7 +188,7 @@ ht-degree: 4%
 
   ![additional-contenttype](assets/additional-contenttype.png)
 
-* 选择保存。
+* 选择“保存”。
 * 刷新社区 — 审核控制台。
 
 结果会为生成一个新的可选过滤器 `Voting` 在 `Content Type` 筛选组。
@@ -229,7 +231,7 @@ ht-degree: 4%
 
 ![情绪](assets/sentiment.png)
 
-## 自定义筛选条件 {#custom-filters}
+## 自定义过滤器 {#custom-filters}
 
 除了开箱即用的过滤器 [筛选器边栏](/help/communities/moderation.md#ootbfilters)，可以向审核UI中添加其他关于元数据的自定义过滤器。 开发人员可以在GitHub中使用示例代码来扩展现有的审核UI过滤器。
 
@@ -369,4 +371,4 @@ ht-degree: 4%
 
 例如：
 
-![view1](assets/view1.png)
+![视图1](assets/view1.png)

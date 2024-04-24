@@ -7,7 +7,9 @@ content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '2907'
 ht-degree: 2%
@@ -114,7 +116,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
      `/etc/commerce/products/<*store name*>/`
 
-   * **商业提供程序**
+   * **Commerce提供程序**
 
      您的导入程序 [商业提供程序](/help/commerce/cif-classic/administering/concepts.md#commerce-providers)；默认情况下，Geometrixx。
 
@@ -633,7 +635,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 ### 将优惠券添加到购物车 {#adding-vouchers-to-a-cart}
 
-要允许用户将优惠券添加到其购物车，您可以使用内置 **优惠券** 组件（商业类别）。 将此项添加到显示购物车的同一页面（但这不是强制性的）。 优惠券组件只是用户可以在其中输入优惠券代码的表单，它是实际显示应用优惠券及其折扣列表的购物车组件。
+要允许用户将优惠券添加到其购物车，您可以使用内置 **优惠券** 组件(Commerce类别)。 将此项添加到显示购物车的同一页面（但这不是强制性的）。 优惠券组件只是用户可以在其中输入优惠券代码的表单，它是实际显示应用优惠券及其折扣列表的购物车组件。
 
 在演示站点(Geometrixx Outdoors语 — 英语)中，您可以在购物车页面上看到实际购物车下的优惠券表单。
 

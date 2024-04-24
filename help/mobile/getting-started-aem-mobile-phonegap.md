@@ -6,7 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
-source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
+solution: Experience Manager
+feature: Mobile
+role: User
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 0%
@@ -31,7 +34,7 @@ AEM Mobile的真正力量在于 *精通* ***AEM开发人员*** 可以扩展和�
 >
 >当 *AEM创作* 确信应用程序已就绪，他们可以首先让利益相关者下载应用程序， **[Adobe验证](/help/mobile/phonegap-mobile-quickstart.md)** （在AppStore和PlayStore中均可用）以供审阅和批准。 收到绿灯后，他们可以通过AEM Mobile ContentSync内容发布管理功能板，直接向其用户发布这些新的或更新后的内容。 一个人可以担任任意数量的角色，具体取决于您和您的治理策略。
 
-## 前提条件 {#prerequisites}
+## 先决条件 {#prerequisites}
 
 AEM Mobile只是构成整个AEM平台的支柱之一。
 

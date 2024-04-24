@@ -6,10 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 2%
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +60,7 @@ ht-degree: 2%
 
 ![要求评级](assets/configure-review2.png)
 
-* **[!UICONTROL 所需的评级]**
+* **[!UICONTROL 所需评级]**
 
   允许的评级子集，指示所需的评级。
 

@@ -3,7 +3,9 @@ title: 创作Commerce体验
 description: CIF加载项通过特定于Commerce的功能扩展了Adobe Experience Manager创作。
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
-source-git-commit: 1751bfb32386685e3a159939113b9667b5e17f0e
+feature: Commerce Integration Framework
+role: Admin, Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -66,7 +68,7 @@ CIF加载项通过特定于commerce的功能扩展了AEM创作。 这允许作�
 
 ### 使用RTE在文本字段中添加链接 {#rte}
 
-CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌入常规AEM页面那样嵌入超链接。 CIF在RTE（富文本编辑器）中添加了新操作“Commerce链接”。 此操作的工作方式与常规的“超链接”操作完全相同，但允许作者使用选取器选择产品或类别。
+CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌入常规AEM页面那样嵌入超链接。 CIF向RTE（富文本编辑器）添加了新操作“Commerce链接”。 此操作的工作方式与常规的“超链接”操作完全相同，但允许作者使用选取器选择产品或类别。
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
@@ -78,7 +80,7 @@ CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌�
 
 ### 访问关联的产品内容 {#associated-content}
 
-如果通用编辑器识别页面上的1：n产品，则侧面板将自动显示“关联的商务内容”选项卡。 利用此选项卡，作者可以快速访问使用产品标记的AEM内容(请参阅 [用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md) 了解更多信息)。 此选项卡提供下拉列表，用于在页面上具有多个产品时根据内容类型和特定产品进行过滤。 使用内容的工作方式与使用“资源”选项卡中的内容的工作方式完全相同。
+如果通用编辑器识别页面上的1：n产品，则侧面板将自动显示“关联的Commerce内容”选项卡。 利用此选项卡，作者可以快速访问使用产品标记的AEM内容(请参阅 [用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md) 了解更多信息)。 此选项卡提供下拉列表，用于在页面上具有多个产品时根据内容类型和特定产品进行过滤。 使用内容的工作方式与使用“资源”选项卡中的内容的工作方式完全相同。
 
 ![产品数据侧面板](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 

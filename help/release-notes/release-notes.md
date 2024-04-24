@@ -3,10 +3,13 @@ title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: f22f51b4d65abf4cf1f6e04952f873eca5119727
+solution: Experience Manager
+feature: Release Information
+role: User,Admin,Architect,Developer
+source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '3735'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -159,7 +162,7 @@ ht-degree: 1%
 * 当用户在iOS设备上的附件组件中使用“拍摄照片”单击图像时，所有图像都会添加到该文件夹中的相同名称。 (FORMS-12224)
 * 当用户更新单选按钮组中的现有选项时，会发布不正确的翻译值。 (FORMS-12575)
 * 当用户向Android™设备上的自适应表单添加字符时，在Android™设备上，用户在focus out上的文本字段中键入的字符数可以超过定义的最大字符数。 但是，当用户选择HTML5输入类型时，它才起作用。 (FORMS-12748)
-* 由于标签匹配Arial® labelledby和Arial® label，屏幕阅读器无法区分这两者。 要解决此问题 — 对于表单字段，标签“aria-labelledby”会被替换为“aria-describedby”。 (FORMS-12436)
+* 由于标签匹配Arial® labelledby和Arial® label，屏幕阅读器无法区分这两者。 为了解决这个问题，表单字段的标签“aria-labelledby”被替换为“aria-describedby”。(FORMS-12436)
 * 当作者使用“自适应Forms — 嵌入(v2)”组件在其站点页面中嵌入自适应表单，并且嵌入的表单上包含CAPTCHA组件（CAPTCHA服务 — > reCAPTCHA，设置 — > reCAPTCHA-v2）时，当用户尝试在创作实例上使用“以发布的形式查看”查看站点页面时，站点页面不会呈现。 以下错误显示为(FORMS-11859)：
   `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
 

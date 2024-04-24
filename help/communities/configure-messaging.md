@@ -7,10 +7,13 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
-source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
+solution: Experience Manager
+feature: Communities
+role: Admin
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '954'
-ht-degree: 3%
+source-wordcount: '952'
+ht-degree: 0%
 
 ---
 
@@ -115,7 +118,7 @@ ht-degree: 3%
 
   如果选中，将显示 **`Reply`**， **`Reply All`**， **`Forward`**、和 **`Delete`** 按钮允许重新发送或删除消息。 在以下情况下复制删除功能 **`Delete Button`** 也会被选中。
 
-* **每个页面的消息数**
+* **每页消息数**
 
   指定的数字是分页方案中每页显示的最大消息数。 如果未指定数字（留空），则会显示所有消息并且没有分页。
 
@@ -149,7 +152,7 @@ ht-degree: 3%
 
   输入发送消息后显示的页面URL。 例如：`../messaging.html`。
 
-* **取消 URL**
+* **取消Url**
 
   输入发送者取消邮件时显示的页面URL。 例如：`../messaging.html`。
 
