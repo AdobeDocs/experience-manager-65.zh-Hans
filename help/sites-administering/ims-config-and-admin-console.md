@@ -9,9 +9,9 @@ exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
 workflow-type: tm+mt
-source-wordcount: '1604'
+source-wordcount: '1603'
 ht-degree: 6%
 
 ---
@@ -127,7 +127,7 @@ User Sync是通过AdobeGithub存储库在以下位置分发的：
 >
 >User Sync Tool需要使用描述的过程注册为Adobe I/O客户端UMAPI [此处](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->可以找到Adobe I/O控制台文档 [此处](https://developer.adobe.com/developer-console/docs/guides/).
+>可以找到Adobe Developer控制台文档 [此处](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
 >此 [!DNL User Management] 本课程介绍用户同步工具使用的API [位置](https://adobe-apiplatform.github.io/umapi-documentation/en/).
