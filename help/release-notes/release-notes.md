@@ -6,9 +6,9 @@ exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 685d8016400570170dc02dc2be77651aea6e028c
+source-git-commit: 4f4d5494d4e630e6f16f8a8e6a6a609925a91457
 workflow-type: tm+mt
-source-wordcount: '3783'
+source-wordcount: '3828'
 ht-degree: 2%
 
 ---
@@ -244,6 +244,12 @@ ht-degree: 2%
 * 当用户在AEM Forms Designer上创建XDP时，在PDF输出上，按钮表单标记未嵌套在父段落标记(p-tag)中。 (LC-3921719)
 
 * 当用户在AEM Forms Designer上创建XDP时，当用户浏览表单标签时，在PDF输出上，后台对象也被标记。 (LC-3921687)
+
+#### [!DNL Document Services] {#forms-document-services-6520}
+
+* (仅限JEE上的AEM Forms)PDF Generator服务无法枚举服务器上可用的字体。 因此，PDFG管理UI中“Adobe PDF设置”页面上的“字体选择”面板始终为空，从而有效防止所选字体被取消嵌入。 (FORMS-12095)
+
+
 
 ### Foundation {#foundation-6520}
 
