@@ -3,7 +3,8 @@ title: 使用OAuth 2.0客户端凭据流将Salesforce与AEM Forms集成
 description: 使用OAuth 2.0客户端凭据流将Salesforce集成与AEM Forms集成的步骤
 exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 68%

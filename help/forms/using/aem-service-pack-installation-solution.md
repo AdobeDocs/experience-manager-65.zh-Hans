@@ -3,7 +3,8 @@ title: 安装最新的6.5.15.0 service pack后，出现CRX/捆绑包和起始页
 description: 安装最新的6.5.15.0 service pack后，出现CRX/捆绑包和起始页服务不可用错误
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '276'
 ht-degree: 2%

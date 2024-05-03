@@ -6,7 +6,8 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: 3458471a-9815-463e-8044-68631073863c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1152'
 ht-degree: 2%
@@ -263,6 +264,6 @@ Forms(自适应表单和HTML5表单)使用 [jQuery](https://jquery.com/)， [Bac
 | 选项 | 描述 |
 |---|---|
 | 天 | 该字段的本地化日期名称。 |
-| 个月 | 该字段的本地化月份名称。 |
+| 月 | 该字段的本地化月份名称。 |
 | 零 | 数字0的本地化文本。 |
 | 明文 | 清除按钮的本地化文本。 |

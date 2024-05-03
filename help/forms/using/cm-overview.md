@@ -7,10 +7,11 @@ topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: c7f1acf3-ec2b-4a71-83a4-c71981d4cefa
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -29,7 +30,7 @@ ht-degree: 0%
 * 使用专为业务用户设计的直观界面部署和管理模板和内容
 * 从预批准内容和自定义创作内容中快速汇编通信
 
-### 受管 {#managed}
+### 托管 {#managed}
 
 它提供了更高质量的通信，使您能够：
 

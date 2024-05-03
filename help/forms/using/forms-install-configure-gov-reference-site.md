@@ -5,7 +5,8 @@ contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '4534'
 ht-degree: 1%

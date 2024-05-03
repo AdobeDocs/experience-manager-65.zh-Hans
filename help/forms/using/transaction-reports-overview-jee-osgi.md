@@ -3,7 +3,9 @@ title: 交易报表概述AEM Forms。
 description: 记录已提交的所有表单、已提交的文档、已呈现的交互式通信、已转换为另一种格式的文档等的计数。
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: 6e5e29ef-eb90-4573-8745-1966a238bc03
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -33,5 +35,3 @@ ht-degree: 0%
 * [在OSGi上查看和了解AEM Forms的交易报告](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [OSGi上AEM Forms的可计费API列表](/help/forms/using/transaction-reports-billable-apis.md)
 * [在OSGi上记录AEM Forms自定义实施的交易](/help/forms/using/record-transaction-custom-implementation.md)
-
-

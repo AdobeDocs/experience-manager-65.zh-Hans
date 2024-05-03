@@ -6,7 +6,8 @@ keywords: 添加自适应表单片段， 自适应表单片段， 创建表单�
 feature: Adaptive Forms, Core Components
 exl-id: 4a1ba259-8eb5-408f-8ee7-4868f98cca03
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: Admin, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1840'
 ht-degree: 5%

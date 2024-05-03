@@ -3,7 +3,8 @@ title: 在升级到MySQL的6.5.12.0时无法备份数据库。
 description: 当用户升级到Experience Manager6.5.12.0并单击“升级MySQL”时，配置管理器无法备份以前的Experience Manager Forms数据库。
 exl-id: 1af000fa-439b-4ffd-8b5a-3ba45f0c524c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '105'
 ht-degree: 0%

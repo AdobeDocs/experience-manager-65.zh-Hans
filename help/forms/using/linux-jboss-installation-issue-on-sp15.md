@@ -3,7 +3,8 @@ title: 在JBoss® Linux®环境中安装AEM Forms JEE 6.5.15.0 Service Pack时�
 description: AEM Forms JEE 6.5.15.0 service pack未在JBoss® Linux®环境中正确安装，任何修补程序更改都不会应用到应用程序服务器。 将'RUP_BOM.xml'文件添加到XML目录中。
 exl-id: 96ecbe58-a859-4432-a2d8-3d5dc0eaf989
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+role: User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '204'
 ht-degree: 1%

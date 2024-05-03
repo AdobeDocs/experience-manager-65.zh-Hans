@@ -3,7 +3,9 @@ title: 交易报告AEM Forms on JEE的可计费API。
 description: 作为AEM Forms on JEE的交易入账的所有API的列表。
 topic-tags: forms-manager
 feature: Transaction Reports
-source-git-commit: d0db00de6b767a12a9492bbbcec49a8c5d25ff27
+exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
+role: Admin, User, Developer
+source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '803'
 ht-degree: 3%
