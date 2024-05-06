@@ -8,12 +8,11 @@ topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
 feature: Adaptive Forms, Core Components
-exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1733'
-ht-degree: 34%
+source-wordcount: '1794'
+ht-degree: 33%
 
 ---
 
@@ -166,6 +165,21 @@ ht-degree: 34%
    ![单击扳手图标以打开自适应表单容器对话框以配置重定向页面或感谢消息](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
 1. 选择表单数据模型。 打开 **[!UICONTROL 基本]** 选项卡。 在预填充服务中，选择 **[!UICONTROL 表单数据模型预填充服务]**.
 1. 单击 **[!UICONTROL 完成]**. 您的自适应表单现在配置为使用表单数据模型预填充。 您现在可以使用 [规则编辑器](rule-editor.md) 创建规则以预填充表单的字段。
+
+## 如何重命名AEM自适应表单？{#rename-an-AEM-Adaptive-Form}
+
+要重命名自适应表单，请执行以下步骤：
+
+1. 在AEM Forms用户界面中选择自适应表单。
+1. 单击 **属性** 位于上边栏上。
+
+   ![属性](/help/forms/using/assets/rename-form-properties.png)
+
+1. 在中更改表单名称 **标题** 选项卡，如下图所示。
+1. 单击 **保存并关闭**.
+
+   ![重命名AEM自适应表单](/help/forms/using/assets/rename-form-title.png)
+
 
 <!--
 ## Edit Form Model properties of an Adaptive Form {#edit-form-model}

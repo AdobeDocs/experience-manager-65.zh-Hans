@@ -4,12 +4,11 @@ description: 了解如何使用创建自适应表单 [!DNL Experience Manager Fo
 role: User, Developer
 level: Beginner
 feature: Adaptive Forms, Foundation Components
-exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d2be8d93c64ca18352a0e811605c526a8dae488f
 workflow-type: tm+mt
-source-wordcount: '1923'
-ht-degree: 9%
+source-wordcount: '1984'
+ht-degree: 8%
 
 ---
 
@@ -210,3 +209,18 @@ XML和JSON架构表示组织中的后端系统生成或使用数据的结构。 
    >要使自动保存选项适用于匿名用户，请确保将Forms通用配置服务配置为允许所有用户预览、验证和签署表单。
    >
    >要配置服务，请转到Adobe Experience Manager Web控制台配置，网址为 `https://'[server]:[port]'system/console/configMgr` 并编辑 **[!UICONTROL Forms通用配置服务]** 以选择 **[!UICONTROL 所有用户]** 中的选项 **[!UICONTROL 允许]** 字段，并保存配置。
+
+
+## 如何重命名AEM自适应表单？ {#rename-an-AEM-Adaptive-Form}
+
+要重命名自适应表单，请执行以下步骤：
+
+1. 在AEM Forms用户界面中选择自适应表单。
+1. 单击 **属性** 位于上边栏上。
+
+   ![属性](/help/forms/using/assets/rename-form-properties.png)
+
+1. 在中更改表单名称 **标题** 选项卡，如下图所示。
+1. 单击 **保存并关闭**.
+
+   ![重命名AEM自适应表单](/help/forms/using/assets/rename-form-title.png)
