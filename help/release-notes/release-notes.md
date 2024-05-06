@@ -5,10 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: d6435255835d91729519f7822b9677608b6b9f1e
+source-git-commit: 14b52e7763c4d83a4dcce593f155cb1bb8f56b97
 workflow-type: tm+mt
-source-wordcount: '2063'
-ht-degree: 5%
+source-wordcount: '2356'
+ht-degree: 4%
 
 ---
 
@@ -32,7 +32,7 @@ ht-degree: 5%
 
 ## 中包括的内容 [!DNL Experience Manager] 6.5.21.0 {#what-is-included-in-aem-6521}
 
-[!DNL Experience Manager] 6.5.21.0包括自2019年4月6.5首次发布以来的新功能、关键客户请求的增强功能、错误修复以及性能、稳定性和安全性改进。 [安装此Service Pack](#install) 日期 [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.21.0包括自2019年4月首次推出6.5以来发布的新功能、关键客户请求的增强功能、错误修复以及性能、稳定性和安全性改进。 [安装此Service Pack](#install) 日期 [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -56,7 +56,7 @@ ht-degree: 5%
 
 #### 辅助功能 {#sites-accessibility-6521}
 
-* 此 **[!UICONTROL 保存的搜索]** 标签不是永久性的。 占位符用作文本字段的唯一可视标签。(SITES-3050)
+* 此 **[!UICONTROL 保存的搜索]** 标签不是永久性的。 占位符用作文本字段的唯一可视标签。 (SITES-3050)
 
 #### 管理员用户界面{#sites-adminui-6521}
 
@@ -69,7 +69,7 @@ ht-degree: 5%
 #### [!DNL Content Fragments]{#sites-contentfragments-6521}
 
 * 修复了重复包含表单元素的问题。 (SITES-21109)阻止程序
-* 创建内容片段时，“关闭”按钮有时变得无响应，导致整个页面冻结，并需要页面刷新以关闭内容片段。 至于版本创建问题，系统正在创建新版本的内容片段，即使用户没有进行任何更改，只需与RTE或文本字段交互即可。 (SITES-21187)主要
+* 创建内容片段时，“关闭”按钮有时变得无响应，导致整个页面冻结，并需要页面刷新以关闭内容片段。 至于版本创建问题，系统正在创建新版本的内容片段。 即使用户未进行任何更改，仅通过与RTE或文本字段交互也会发生这种情况。 (SITES-21187)主要
 
 
 #### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6521}
@@ -110,7 +110,7 @@ ht-degree: 5%
 
 #### 启动项{#sites-launches-6521}
 
-* 此 `sourceRootResource` 在CRXDE Lite的Launch配置中配置的启动项指向不再存在的内容，这会导致在尝试删除启动项时无法正常运行。 即使页面被删除或路径不同，您也应该能够删除启动项。 (SITES-20750)
+* 此 `sourceRootResource` 在CRXDE Lite的Launch配置中配置的启动项指向不再存在的内容，这会导致在尝试删除启动项时无法正常运行。 即使页面被删除或路径不相同，仍会删除启动项。 (SITES-20750)
 
 #### MSM — 活动副本{#sites-msm-live-copies-6521}
 
@@ -163,24 +163,36 @@ ht-degree: 5%
 
 ### Foundation {#foundation-6521}
 
-
-
 #### Apache Felix {#felix-6521}
 
 * 在AEM 6.5 Service Pack 19 (SP19)中升级的问题，该问题导致在安装SP19之后对Apache Felix的未授权请求缺少应用程序服务器上下文根路径。 更新至Apache Felix Web Management Console 4.9.8。 (NPR-41933)
 
 * U
 
+#### 营销活动{#campaign-6521}
+
+* AEM 6.5 Service Pack 15正在生成包含重要条目的连续错误日志。 报告了以下问题：
+
+   * 路径中缺少资源时出现404 INFO错误 `/libs/granite/ui/content/shell/start.html`
+   * 未捕获的SlingException的错误日志条目，原因是 `NullPointerException` 在 `CampaignsDataSourceServlet.java:147`
+
+  错误日志中不应填充频繁且大量的错误条目，AEM实例应该可以正常运行，而不会出现与缺少资源或异常相关的问题。 (CQ-4357064)
+
 #### 社区 {#communities-6521}
 
-* 周二
+* U
 
 #### 内容分发{#foundation-content-distribution-6521}
 
 * 周二
 
+#### Granite{#granite-6521}
+
+* **删除** 或 **修改** 如果没有权限，则无法选择权限 **浏览** 权限。 (GRANITE-51002)
+
 #### 集成{#integrations-6521}
 
+* 相关 `cq-target-integration`，需要删除Google Guava的非测试用法。 (CQ-4357101)
 * 使用OAuth2服务器到服务器凭据（也称为服务主体）替换服务帐户（JSON Web令牌或JWT）凭据。(NPR-41994)主要
 * 创建Audience请求失败，无法进行IMS (Identity Management System)配置。 (NPR-41888)主要
 * 当客户尝试查看有效负载页面时，由于URL格式不正确，内容无法正确显示；显示404错误。 该错误是由于URL中的查询参数之前缺少问号符号导致的。 此问题要求客户手动插入问号符号以正确查看有效负载页面。 (NPR-41957)
@@ -190,6 +202,7 @@ ht-degree: 5%
 #### 本地化{#localization-6521}
 
 * 在模板编辑器中，文本字符串 *`No video available.`* 未本地化。 (SITES-13190)
+* 激活或停用用户后的字符串在中未本地化 **工具** > **安全性** > **用户** > *任意用户名* > **激活** > **确定**，并选择 *任意用户名* > **取消激活** > **确定**. (NPR-41737)
 
 #### Platform{#foundation-platform-6521}
 
@@ -201,12 +214,17 @@ ht-degree: 5%
 
 #### 翻译{#foundation-translation-6521}
 
+* AEM 6.5.19现成翻译状态无法按启动项预期更新的问题。 在将翻译文件导入与AEM启动关联的翻译作业后，状态应更改为 `Approved`. 相反，状态更改为 `Ready for Review`，这不是预期行为。 (NPR-41756)主要
 * 在创建多个配置并转到翻译Cloud Service配置时，并非所有元素都会显示在UI中。 仅显示前40个元素/文件夹，并触发延迟加载，但不添加更多内容。 (NPR-41829)
+* 在触控用户界面的“权限”页面上，如果为日语，则会出现乱码字符。 (NPR-41794)
 
 #### 用户界面{#foundation-ui-6521}
 
+* 在工具>安全>用户>中 &lt;user_name> >用户档案，在 **编辑用户设置** 对话框，单击“取消”不会退出对话框。 (NPR-41793)主要
 * Granite `pathfield` 组件位于 `/libs/granite/ui/components/coral/foundation/form/pathfield` 无法启用 **[!UICONTROL 选择]** 按钮。 在弹出路径字段并且用户选中资产复选框后， **[!UICONTROL 选择]** 按钮未启用；它不会从灰色更改为蓝色。 (NPR-41970)
 * AEM中的内容片段模型(CFM)引用字段存在问题。 尽管CFM参考字段设置为必填字段，但系统允许用户单击“保存”，以在某些情况下使用非CFM值保存内容。 保存按钮应灰显（不可用）。 (NPR-41894)
+* 标准Coral用户界面对话框，使用 `successresponse` 操作必须在操作之后触发成功响应。 但在AEM 6.5 Service Pack 19中，不会调用重新加载操作，并且不会显示任何消息。 (NPR-41797)
+* AEM通知链接在AEM 6.5 Service Pack 18中不起作用。 升级到Service Pack 18时，通过“通知”按钮选择消息时，“AEM通知”链接不起作用。 (NPR-41792)
 
 #### WCM{#wcm-6521}
 
@@ -214,14 +232,14 @@ ht-degree: 5%
 
 #### 工作流{#foundation-workflow-6521}
 
-* 周二
+* 在AEM 6.5.18中，在清除期间从用户元数据缓存中删除时反复出现错误。 (NPR-41762)
 
 ## 安装 [!DNL Experience Manager] 6.5.21.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
 * [!DNL Experience Manager] 6.5.21.0需要 [!DNL Experience Manager] 6.5.见 [升级文档](/help/sites-deploying/upgrade.md) 以获取详细说明。 <!-- UPDATE FOR EACH NEW RELEASE -->
-* 可在Adobe上获取Service Pack下载 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip).
+* 可在Adobe上下载Service Pack [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip).
 * 在具有MongoDB和多个实例的部署中，安装 [!DNL Experience Manager] 使用包管理器对某个Author实例执行6.5.21.0。<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
@@ -236,7 +254,7 @@ ht-degree: 5%
 
 1. 安装之前，请拍摄快照或进行全新备份 [!DNL Experience Manager] 实例。
 
-1. 从以下位置下载Service Pack [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 下载Service Sack，从 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip). <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 打开包管理器，然后选择 **[!UICONTROL 上传包]** 以上传包。 要了解更多信息，请参阅 [包管理器](/help/sites-administering/package-manager.md).
 
@@ -394,7 +412,7 @@ UberJar用于 [!DNL Experience Manager] 6.5.21.0可从以下网站获取： [Mav
   "refresh": true
   ```
 
-* 如果您升级您的 [!DNL Experience Manager] 从6.5.0 - 6.5.4到Java™ 11上最新Service Pack的实例，请参见 `RRD4JReporter` 中的例外 `error.log` 文件。 要停止例外，请重新启动您的实例 [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* 如果您升级您的 [!DNL Experience Manager] 从6.5.0到6.5.4的实例一直到Java™ 11上的最新Service Pack，请参见 `RRD4JReporter` 中的例外 `error.log` 文件。 要停止例外，请重新启动您的实例 [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * 用户可以在以下位置重命名层级中的文件夹： [!DNL Assets] 并将嵌套文件夹发布到 [!DNL Brand Portal]. 但是，文件夹的标题不会在中更新 [!DNL Brand Portal] 直到重新发布根文件夹。
 
