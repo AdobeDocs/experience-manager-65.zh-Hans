@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 52aa367a8d7ebff2f2e1355274ffe357979cac85
+source-git-commit: d5554718d663515d84878ff94555ac6cadcab891
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7408'
 ht-degree: 20%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 20%
 + 发行说明 {#release-notes}
    + [发行说明](/help/release-notes/release-notes.md)
    + 以前的发行说明 {#service-pack}
+      + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
@@ -1203,7 +1204,7 @@ ht-degree: 20%
       + [使用WS-Security标头传递凭据](/help/forms/developing/passing-credentials.md)
 + Content and Commerce {#commerce}
    + [简介和概述](/help/commerce/cif/introduction.md)
-   + [对AEM Content and Commerce的显着更改](/help/commerce/cif/changes.md)
+   + [对AEM Content和Commerce的显着更改](/help/commerce/cif/changes.md)
    + 集成 {#integrations}
       + [Adobe Commerce](/help/commerce/cif/integrating/magento.md)
       + [第三方商业解决方案](/help/commerce/cif/integrating/third-party.md)
@@ -1605,7 +1606,7 @@ ht-degree: 20%
          + [AEM 6.5中的Assets存储库重构](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md)
          + [AEM 6.5中的Dynamic Media存储库重构](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
          + [AEM 6.5中的Forms存储库重构](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
-         + [AEM 6.5中的电子商务存储库重构](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+         + [AEM 6.5中的E-Commerce存储库重组](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
          + [AEM Communities 6.5中的存储库重构](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
       + 最佳实践 {#practices}
          + [部署最佳实践](/help/sites-deploying/best-practices.md)

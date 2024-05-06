@@ -2,14 +2,13 @@
 title: 的发行说明 [!DNL Adobe Experience Manager] 6.5
 description: 查找版本信息、新增功能、安装操作说明以及的详细更改列表 [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 4
-exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 4f4d5494d4e630e6f16f8a8e6a6a609925a91457
+source-git-commit: d6435255835d91729519f7822b9677608b6b9f1e
 workflow-type: tm+mt
-source-wordcount: '3828'
-ht-degree: 2%
+source-wordcount: '2063'
+ht-degree: 5%
 
 ---
 
@@ -26,291 +25,208 @@ ht-degree: 2%
 
 | 产品 | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| 版本 | 6.5.20.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 版本 | 6.5.21.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 类型 | Service Pack版本 |
-| 日期 | 2024年2月22日星期四 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| 日期 | 2024年5月23日星期四 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 下载 URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## 中包括的内容 [!DNL Experience Manager] 6.5.20.0 {#what-is-included-in-aem-6520}
+## 中包括的内容 [!DNL Experience Manager] 6.5.21.0 {#what-is-included-in-aem-6521}
 
-[!DNL Experience Manager] 6.5.20.0包括自2019年4月首次推出6.5以来发布的新功能、关键客户请求的增强功能、错误修复以及性能、稳定性和安全性改进。 [安装此Service Pack](#install) 日期 [!DNL Experience Manager] 6.5.
+[!DNL Experience Manager] 6.5.21.0包括自2019年4月6.5首次发布以来的新功能、关键客户请求的增强功能、错误修复以及性能、稳定性和安全性改进。 [安装此Service Pack](#install) 日期 [!DNL Experience Manager] 6.5.
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 主要功能和增强功能
 
-<!-- * _6.5.20.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
+<!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
 此版本中的某些主要功能和增强功能包括：
 
-* Dynamic Media现在支持Apple iOS/iPadOS的无损HEIC图像格式。 请参阅 [格式](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt) 在Dynamic Media图像服务和渲染API中。
-* 多站点管理器(MSM)现在支持体验片段结构（包括文件夹和子文件夹），以便有效地将体验片段批量转出到活动副本。
+* 用于服务器到服务器身份验证的更易于使用的新凭据，替换了现有的服务帐户(JWT)凭据。 (NPR-41994)主要
 
 ### [!DNL Forms]
 
-* **JEE上的AEM Forms中的Transaction Reporting**：在JEE上为AEM Forms引入了事务报表功能，以便全面记录文档事务，如转化、演绎版和提交。 此增强功能可提高效率并有助于更好地保存记录。 默认情况下，该功能处于禁用状态。 您可以从管理员UI中启用它。
-* **通过ECDSA支持增强的安全性**：AEM Forms现在跨JEE和OSGi栈栈提供对椭圆曲线数字签名算法(ECDSA)的强大支持。 用户现在可以对PDF文档进行签名、认证和验证，而安全性更高。 支持的EC曲线算法包括：
-   * 采用SHA256摘要算法的ECDSA椭圆曲线P256
-   * 采用SHA384摘要算法的ECDSA椭圆曲线P384
-   * 采用SHA512摘要算法的ECDSA椭圆曲线P512
-* **与Windows 11无缝兼容，适用于Forms Designer**：AEM Forms Designer现在支持Windows 11，从而确保顺利安装和操作。 用户可以放心地升级到Windows 11，而不必重新安装Forms Designer或担心兼容性问题，从而确保工作流不会中断。
-* **AEM Forms Designer中的自定义“Caption”角色增强了辅助功能**：AEM Forms Designer现在包含一个名为“Caption”的自定义辅助功能角色，使用户能够使用个性化字幕元素创建XDP。 此功能通过允许用户将自定义字幕集成到其文档设计中来增强辅助功能，以便他们提高包容性和用户体验。
-
-<!-- ### [!DNL Forms]
-
-* text -->
+* A
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## 修复了Service Pack 20中的问题 {#fixed-issues}
+## 修复了Service Pack 21中的问题 {#fixed-issues}
 
-### [!DNL Sites]{#sites-6520}
+### [!DNL Sites]{#sites-6521}
 
-<!--#### Accessibility{#sites-accessibility-6520}
+#### 辅助功能 {#sites-accessibility-6521}
 
-* text -->
+* 此 **[!UICONTROL 保存的搜索]** 标签不是永久性的。 占位符用作文本字段的唯一可视标签。(SITES-3050)
 
-#### 管理员用户界面{#sites-adminui-6520}
+#### 管理员用户界面{#sites-adminui-6521}
 
-* 此 `Workflow Title` 字段标记为 `*` 根据要求，但没有验证。 (SITES-16491)
+* 当您单击 **[!UICONTROL 站点]** > **[!UICONTROL 核心组件]** > **[!UICONTROL 属性]** > **[!UICONTROL 权限]** 选项卡> **[!UICONTROL 有效权限]**， **有效权限** 对话框在中未打开。 (SITES-17378)
 
-<!--#### Classic UI{#sites-classicui-6520}
+#### 经典 UI{#sites-classicui-6521}
 
-* text -->
+* 周二
 
-#### [!DNL Content Fragments]{#sites-contentfragments-6520}
+#### [!DNL Content Fragments]{#sites-contentfragments-6521}
 
-* 升级到AEM 6.5.18或AEM 6.5.19后，嵌套配置文件夹不再受支持，内容片段模型文件夹不再可见。 (SITES-18110)
-* 某些子文件夹无法从继承的内容片段模型中选取。 它必须支持文件夹而不具有 `jcr:content` 属性，即使通过用户界面创建的DAM文件夹具有此类节点。 (SITES-17943)
+* 修复了重复包含表单元素的问题。 (SITES-21109)阻止程序
+* 创建内容片段时，“关闭”按钮有时变得无响应，导致整个页面冻结，并需要页面刷新以关闭内容片段。 至于版本创建问题，系统正在创建新版本的内容片段，即使用户没有进行任何更改，只需与RTE或文本字段交互即可。 (SITES-21187)主要
 
-#### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6520}
 
-<!-- REMOVED AS PER EMAIL FROM SAMEER DHAWAN FEBRUARY 19, 2024 * When upgrading AEM from 6.5.19.0 to 6.5.20.0, the path `/libs/cq/graphql/sites/graphiql` was getting deleted. (SITES-19530) CRITICAL -->
-* 在对执行GraphQL查询时 [筛选结果](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#filtering) 使用可选变量(如果特定值为 **非** 为可选变量提供的，则在过滤器评估中忽略该变量。 (SITES-17051)
+#### [!DNL Content Fragments] - GRAPHQL API {#sites-graphql-api-6521}
 
-<!--#### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6520}
+* 将Adobe Experience Manager从6.5.19.0升级到6.5.20.0时，路径 `/libs/cq/graphql/sites/graphiql` 正在被删除。 (SITES-20098)关键
 
-* text -->
 
-#### [!DNL Content Fragments] - REST API{#sites-restapi-6520}
 
-* 随着 `org.json` 库中，小数点的反序列化方式发生了变化。 之前，它们被“默认地”转换为双面，现在则转换为大小数。 相反，通过REST API存储的元数据属性值应该从BigDecimal转换为Double。 (SITES-16857)
 
-#### 核心后端{#sites-core-backend-6520}
+#### [!DNL Content Fragments] - GraphQL查询编辑器{#sites-graphql-query-editor-6521}
 
-* 使用内容片段的快速发布时，它会继续加载并且不会发布。 也就是说，从AEM 6.5.7升级到AEM 6.5.17的Service Pack后，快速发布不适用于内容片段。当用户尝试托管发布时，该操作有效。 但是，当他们尝试快速发布时，它未发布。 具体来说， `com.day.cq.wcm.core.impl.reference.ActivationReferenceSearchBuilder` 导致系统崩溃。 (SITES-17311)
-* 无法使用Jackson导出程序序列化内容片段：当页面中引用的内容片段（使用Jackson导出程序代码）和任何标记被添加到内容片段时，页面加载会中断。 (SITES-18096)
+* 周三
 
-#### 核心组件{#sites-core-components-6520}
+#### [!DNL Content Fragments] - REST API{#sites-restapi-6521}
 
-* 在CIF上安装AEM核心组件包导致 `:type` 要更改的现有组件的值。 此更改意味着它们不再呈现在已添加到的页面上。 (SITES-17601)
+* 周三
 
-#### Campaign集成{#sites-campaign-integration-6520}
+#### 核心后端{#sites-core-backend-6521}
 
-* AEM使用的允许列表也称为 `whitelist` — 由于漏洞报告。 该允许列表使客户无法使用所需的功能。 (SITES-16822)
+* 周三
 
-#### 体验片段{#sites-experiencefragments-6520}
+#### 核心组件{#sites-core-components-6521}
 
-* MSM for Experience Fragments现在支持批量转出到体验片段内容结构，包括文件夹和子文件夹。 (SITES-16004)
+* I
 
-<!--#### Foundation Components (Legacy){#sites-foundation-components-legacy-6520}
+#### Campaign集成{#sites-campaign-integration-6521}
 
-* text
+* A
 
-#### Launches{#sites-launches-6520}
+#### 体验片段{#sites-experiencefragments-6521}
 
-* text -->
+* 从中转出体验片段 `masters/language` 到 `country/language` 不会更新交叉引用。 (SITES-20559)阻止程序
+* 模板不仅在 `cq:allowedTemplates`，但模板具有 `allowedPaths` 在模板级别配置，在创建新体验片段时显示为选项。 (SITES-20855)主要
 
-#### MSM — 活动副本{#sites-msm-live-copies-6520}
+#### 基础组件（旧版）{#sites-foundation-components-legacy-6521}
 
-* 一个“`Is not modifiable`转出组件时引发“ ”异常。 具体而言， `org.apache.sling.servlets.post.impl.operations.ModifyOperation` 处理响应期间出现异常。 (SITES-18809)
-* 无法转出对体验片段的特定活动副本的更改。 (SITES-17930)
-* 当用户将注释添加到Blueprint页面上的组件，然后将其转出时，Live Copy上的注释计数显示不正确。 (SITES-17099)
-* 在触控图形用户界面中，从父页面到子页面的MSM转出按钮被损坏；选中时，显示以下错误： `Uncaught TypeError: _g.shared is undefined`. (SITES-16991)
+* 周二
 
-#### 页面编辑器{#sites-pageeditor-6520}
+#### 启动项{#sites-launches-6521}
 
-* Forms主题编辑器预览已损坏。 选择“预览”时，仅显示加载图标。 (SITES-17164)
+* 此 `sourceRootResource` 在CRXDE Lite的Launch配置中配置的启动项指向不再存在的内容，这会导致在尝试删除启动项时无法正常运行。 即使页面被删除或路径不同，您也应该能够删除启动项。 (SITES-20750)
 
-### [!DNL Assets]{#assets-6520}
+#### MSM — 活动副本{#sites-msm-live-copies-6521}
 
-* 无法在元数据编辑器帮助程序中验证基于规则的字段，并显示错误消息“缺少必填字段”。 (ASSETS-31396)
-* 将PDF移动到另一个位置后， **[!UICONTROL 查看页面]** 选项将消失。 (ASSETS-30538)
-* 无法选择具有读取权限的图像。 (ASSETS-32199)
-* 无法在视图设置中更改卡片大小。 (ASSETS-31667)
-* 上传.oft文件类型时上传失败。 (ASSETS-30109)
-* 当您尝试将自定义元数据字段作为附加列添加到报表时，未选中复选框。 (ASSETS-31671)
-* 资源移动操作在Experience ManagerService Pack 16中无法正常工作。 (ASSETS-30598)
+* 叠加页面组件以在页面属性中添加选项卡。 其中之一是页面配置，并具有用于添加体验片段URL的属性。 在体验片段的页面属性中配置的链接，不会更改为该页面创建的任何语言副本。 配置的链接应随语言副本URL而更改。 (SITES-19580)主要
 
-#### [!DNL Dynamic Media]{#assets-dm-6520}
+#### 页面编辑器{#sites-pageeditor-6521}
+
+* 编辑模式应用灰色背景的方式不一致，因此无法符合WCAG（Web内容辅助功能准则）颜色对比度标准。 (SITES-20060)
+
+### [!DNL Assets]{#assets-6521}
+
+* U
+
+#### [!DNL Dynamic Media]{#assets-dm-6521}
 
 * 自2024年5月1日起，AdobeDynamic Media将停止支持以下内容：
-
    * SSL（安全套接字层）2.0
    * SSL 3.0
    * TLS（传输层安全性） 1.0和1.1
    * TLS 1.2中的以下弱加密：
-      * TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384
-      * TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA
-      * TLS_RSA_WITH_AES_256_GCM_SHA384
-      * TLS_RSA_WITH_AES_256_CBC_SHA256
-      * TLS_RSA_WITH_AES_256_CBC_SHA
-      * TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256
-      * TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA
-      * TLS_RSA_WITH_AES_128_GCM_SHA256
-      * TLS_RSA_WITH_AES_128_CBC_SHA256
-      * TLS_RSA_WITH_AES_128_CBC_SHA
-      * TLS_RSA_WITH_CAMELLIA_256_CBC_SHA
-      * TLS_RSA_WITH_CAMELLIA_128_CBC_SHA
-      * TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA
-      * TLS_RSA_WITH_SDES_EDE_CBC_SHA
+      * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA384`
+      * `TLS_ECDHE_RSA_WITH_AES_256_CBC_SHA`
+      * `TLS_RSA_WITH_AES_256_GCM_SHA384`
+      * `TLS_RSA_WITH_AES_256_CBC_SHA256`
+      * `TLS_RSA_WITH_AES_256_CBC_SHA`
+      * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA256`
+      * `TLS_ECDHE_RSA_WITH_AES_128_CBC_SHA`
+      * `TLS_RSA_WITH_AES_128_GCM_SHA256`
+      * `TLS_RSA_WITH_AES_128_CBC_SHA256`
+      * `TLS_RSA_WITH_AES_128_CBC_SHA`
+      * `TLS_RSA_WITH_CAMELLIA_256_CBC_SHA`
+      * `TLS_RSA_WITH_CAMELLIA_128_CBC_SHA`
+      * `TLS_ECDHE_RSA_WITH_3DES_EDE_CBC_SHA`
+      * `TLS_RSA_WITH_SDES_EDE_CBC_SHA`
 
-  另请参阅 [Dynamic Media限制](/help/assets/limitations.md).
-* 将资源上传到AEM后， `Update_asset` 工作流已触发。 但是，该工作流永远不会完成。 该工作流仅在产品上传步骤之前完成。 下一步是Scene7批量上传，但不会将该流程提取到AEM中。 (ASSETS-30443)
-* 需要一种更好的方式才能在Dynamic Media组件中正常处理非Dynamic Media视频。 此问题提供了实例化异常 `dynamicmedia_sly.js`. (ASSETS-31301)
-* 预览适用于所有资产、自适应视频集和视频。 但是，它引发了403错误 `.m3u8` 文件（顺便说一下，这些文件仍通过公共链接使用）。 (ASSETS-31882)
-* 此 `scene7SmartCropProcessingStatus` 已更正状态。 智能裁剪视频元数据曾用于显示失败，即使成功也是如此。 (ASSETS-31255)
+### [!DNL Forms]{#forms-6521}
 
-### [!DNL Forms]{#forms-6520}
-
-<!--Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of Forms fixes and enhancements is added to this section post the release.-->
+<!--Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.21.0 Forms add-on package release is scheduled for Thursday, May 30, 2024. A list of Forms fixes and enhancements is added to this section post the release.-->
 
 #### [!DNL Adaptive Forms]
 
-* 当用户尝试将AEM Forms集成到具有AEM已发布URL的邮件平台时，AEM Forms未添加 `method=post` 渲染页面时。 即使出现此问题 `POST` 在包含URL的提交操作中设置。 它会导致邮件平台不识别此表单。 (FORMS-12614)
-* 当用户在AEM Form Service Pack 6.5.18.0中选择具有显示模式的日期字段时，用户无法使用键盘选择当前日期。 (FORMS-12736)
-* 在AEM Forms Service Pack 6.5.17.0和Service Pack 6.5.18.0上，当用户在日历小组件中的月份之间切换时，日期选取器组件会显示一行。 (FORMS-11869)
-* 当用户在iOS设备上的附件组件中使用“拍摄照片”单击图像时，所有图像都会添加到该文件夹中的相同名称。 (FORMS-12224)
-* 当用户更新单选按钮组中的现有选项时，会发布不正确的翻译值。 (FORMS-12575)
-* 当用户向Android™设备上的自适应表单添加字符时，在Android™设备上，用户在focus out上的文本字段中键入的字符数可以超过定义的最大字符数。 但是，当用户选择HTML5输入类型时，它才起作用。 (FORMS-12748)
-* 由于标签匹配Arial® labelledby和Arial® label，屏幕阅读器无法区分这两者。 为了解决这个问题，表单字段的标签“aria-labelledby”被替换为“aria-describedby”。(FORMS-12436)
-* 作者使用“自适应Forms — 嵌入(v2)”组件在其站点页面中嵌入自适应表单。 当嵌入式表单上包含CAPTCHA组件（CAPTCHA Service > reCAPTCHA，设置> reCAPTCHA-v2）时，站点页面不呈现。 当用户尝试在创作实例上使用“以发布的形式查看”来查看站点页面时，就会发生这种情况。 以下错误显示为(FORMS-11859)：
-  `Failed to construct 'URL': Invalid base URL at Object.renderRecaptcha`
-
-* 当用户尝试使用日期选取器组件选择日期时，值未更新并显示NULL。 (FORMS-12742和FORMS-12736)
-
-* 当用户升级到AEM Form Service Pack 6.5.19.0时，在将新语言更新到现有词典后，它不会与“guideContainer”行合并以向表单添加区域设置。 (FORMS-12947)
-
-* 在AEM Forms Service Pack 6.5.19.0上，在Java™ 11上调用的Web服务操作失败，并返回错误(FORMS-12329)：
-  `java.lang.NoClassDefFoundError message:sun/misc/BASE64Decoder`
-
-* 当用户在AEM Forms Service Pack 6.5.18.0上调用“EmailService”的“接收”操作时，出现异常(FORMS-12050)：
-  `java.util.ServiceConfigurationError: javax.mail.Provider: Provider com.sun.mail.imap.IMAPProvider not a subtype`
-
-* 在AEM Forms Service Pack 6.5.18.0上启用FIPS模式后，在默认DOM下创建用户失败，并出现错误(FORMS-11857)：
-  `com.adobe.idp.cx.a: error seeding random number generator`
-
-* 当用户在ADMINUI中选择路径下的字体时 `Home>Services>PDF Generator>Adobe PDF Settings`，则不会选中它。 此外，在标准或个性化配置文件中，可用的字体列表框为空。 因此，无法个性化以下项的子列表： **始终嵌入** 或 **从不嵌入**. 用户无法使用PDF Generator配置其PDF的字体。 日志不会显示任何相关的错误消息。 (FORMS-12095)
-
-* 在AEM Forms Service Pack 6.5.18.0上，用户无法创建安全设置，它不显示错误或服务器日志，但屏幕上会显示弹出错误消息。 (FORMS-12212)
-
-* 当AEM Forms Service Pack 6.5.18.0上的用户在JEE工作流中提交自适应表单时，自适应表单中的附件未发送到JEE流程，从而导致应用程序失败。 (FORMS-12232和FORMS-12228)
-
-* 当用户将PDF转换为PDF/A-2b或PDF/A-3B时，转换失败，错误显示为：(FORMS-12790)
-
-  ```
-  OCCD contains Order key that does not reference all layers.
-  -> Optional content configuration dictionary has no Name entry.
-  -> Font not embedded (and text rendering mode not 3).
-  obj(65, 0)
-  Page: 1
-  -> Font not embedded (and text rendering mode not 3).
-  obj(67, 0)
-  Page: 1
-  -> PDF/A entry missing. 
-  -> PDF/A entry missing.
-  ```
-
-* 在AEM Forms 6.5.18.0上，发布自适应表单时，其所有依赖项（包括策略）都会重新发布，即使尚未对它们进行任何修改也是如此。 (FORMS-10454)
-
-* 当用户在带有JBoss® Turnkey设置的AEM Forms 6.5.19.1上运行配置管理器时选择“Microsoft® SharePoint”时，LiveCycleJBoss® EAR安装失败，并显示以下错误：(FORMS-12463)
-
-  ` Caused by: org.jboss.as.server.deployment.DeploymentUnitProcessingException: WFLYEE0031: Unable to process modules in application.xml for EAR ["/C:/AEM/jboss/bin/content/ adobe-livecycle-jboss.ear "], module file adobe-connectorformssharepoint-config-ejb.jar not found.`
-
-* 当用户在AEM Forms Service Pack 6.5.19.0中使用表单数据模型创建文档片段时，变量名称在侧面板上显示为未定义。 但是，将变量名称拖放到表单面板上或单击变量名称时，将显示这些名称。 (FORMS-13238)
+* 
+  <!-- THIS BUG WAS ALREADY REPORTED IN 6.5.20.0 RELEASE NOTES. IS IT NEEDED AGAIN IN THE 6.5.21.0 RELEASE NOTES? (AEM Forms on JEE Only) The PDF Generator service fails to enumerate the fonts available on the server. Consequently, the font selection panel on the Adobe PDF Settings page in the PDFG Admin UI remains empty, effectively preventing (un)embedding of chosen fonts. (FORMS-12095) -->
 
 
-#### [!DNL Forms Designer] {#forms-designer-6520}
+#### [!DNL Forms Designer] {#forms-designer-6521}
+
+* 周三
 
 
-* 当用户升级到AEM Forms Service Pack 6.5.18.0时，由于缺少异常处理，通过启用了标记PDF选项的输出服务传递的XDP失败。 (LC-3921757)
-
-* 当用户使用AEM Forms Designer生成PDF时，标题级别与图形元素（例如，矩形框）一起在辅助功能树中进行标记。 (LC-3921687)
-
-* 在通过Workbench安装的AEM Forms Designer上，版本信息未明确显示在 `Control Panel/Programs/Programs and Features`. (LC-3921976)
-
-<!--* When a user creates an XDP on AEM Forms Designer, the user is not able to add the custom Caption Tag. (LC-3921246)-->
-
-* 当用户在AEM Forms Designer上创建XDP时，在PDF输出上，按钮表单标记未嵌套在父段落标记(p-tag)中。 (LC-3921719)
-
-* 当用户在AEM Forms Designer上创建XDP时，当用户浏览表单标签时，在PDF输出上，后台对象也被标记。 (LC-3921687)
-
-#### [!DNL Document Services] {#forms-document-services-6520}
-
-* (仅限JEE上的AEM Forms)PDF Generator服务无法枚举服务器上可用的字体。 因此，PDFG管理UI中“Adobe PDF设置”页面上的“字体选择”面板始终为空，从而有效防止所选字体被取消嵌入。 (FORMS-12095)
+### Foundation {#foundation-6521}
 
 
 
-### Foundation {#foundation-6520}
+#### Apache Felix {#felix-6521}
 
-#### 社区 {#communities-6520}
+* 在AEM 6.5 Service Pack 19 (SP19)中升级的问题，该问题导致在安装SP19之后对Apache Felix的未授权请求缺少应用程序服务器上下文根路径。 更新至Apache Felix Web Management Console 4.9.8。 (NPR-41933)
 
-* 成功配置用户同步后，用户同步诊断失败。 (NPR-41693)
+* U
 
-<!-- #### Content distribution{#foundation-content-distribution-6520}
+#### 社区 {#communities-6521}
 
-* text -->
+* 周二
 
-#### 集成{#integrations-6520}
+#### 内容分发{#foundation-content-distribution-6521}
 
-* 从AEM 6.5中删除AdobeSearch&amp;Promote的所有代码和依赖项。 (NPR-40856)
+* 周二
 
-#### 本地化{#localization-6520}
+#### 集成{#integrations-6521}
 
-* Aria标签“关闭”在中未本地化 **[!UICONTROL 资产]** > **[!UICONTROL 文件]**，选择一个文件夹，然后在工具栏上，选择 **[!UICONTROL 属性]** > **[!UICONTROL 权限]** 选项卡>成员名称。 (NPR-41705)
-* 的工具提示被截断 **[!UICONTROL 密钥存储密码]** 区域设置ENG、FRA、KOR、DEU和PTB的“SSL设置”页面上的字段。 (NPR-41367)
+* 使用OAuth2服务器到服务器凭据（也称为服务主体）替换服务帐户（JSON Web令牌或JWT）凭据。(NPR-41994)主要
+* 创建Audience请求失败，无法进行IMS (Identity Management System)配置。 (NPR-41888)主要
+* 当客户尝试查看有效负载页面时，由于URL格式不正确，内容无法正确显示；显示404错误。 该错误是由于URL中的查询参数之前缺少问号符号导致的。 此问题要求客户手动插入问号符号以正确查看有效负载页面。 (NPR-41957)
+* 从AEM 6.5中删除已达到的AdobeSearch&amp;Promote的代码和依赖项 [2022年9月生命周期终止（根据通知）](https://experienceleague.adobe.com/en/docs/discontinued/using/search-promote). (NPR-41855)
 
-#### Platform{#foundation-platform-6520}
 
-* 将Campaign与AEM集成时存在的问题，原因是/api servlet未在href json中返回正确的方案。 原因是AEM未接收X-Forward-Proto标头，该标头强制请求使用HTTP方案而不是HTTPS方案进行响应。 因此，应添加基于OSGI配置切换方案选择的功能。 (GRANITE-48454)
+#### 本地化{#localization-6521}
 
-#### Sling{#foundation-sling-6520}
+* 在模板编辑器中，文本字符串 *`No video available.`* 未本地化。 (SITES-13190)
 
-* 此 `org.apache.sling.resourceMerger` 捆绑包1.4.2从AEM 6.5、Service Pack 17及更高版本中引发异常。 Service Pack 20中应包含Sling资源合并器1.4.4。 (NPR-41630)
+#### Platform{#foundation-platform-6521}
 
-#### 翻译{#foundation-translation-6520}
+* 此 `Unclosed resource resolver` 以下对象正在遇到错误 `com.day.cq.mailer.impl.DefaultMailService`. 此 `MessageGatewayService` 类是现成的，在没有资源解析程序的情况下使用。 任何带有表单提交按钮的页面出现问题，该按钮使用此类发送电子邮件。 (NPR-41853)
 
-* 部署AEM 6.5 Service Pack 18后，翻译规则编辑器中的过滤器选项卡出现问题。 选择上下文后，单击“编辑”>“保存”，下次打开同一上下文时，将出现一个双引号作为HTML字符。 本质上，翻译规则无法正确保存。 (NPR-41624)
-* 与内容片段翻译相关的问题，其中已翻译字符串从翻译提供商发送回AEM，但被卡在 `/content/projects` 级别而不更新内容片段。 (NPR-41516)
-* 创建语言副本时显示错误消息。 它发生在具有在页面属性中引用的内容片段的页面上，使用内容片段模型。 (NPR-41441)
-* 在语言复制过程中，体验片段中的链接未调整为正确的语言。 相反，体验片段指向主区域设置。 (NPR-41343)
+#### Sling{#foundation-sling-6521}
 
-#### 用户界面{#foundation-ui-6520}
+* 周二
 
-* 升级到AEM 6.5 Service Pack 18后，出现控制台错误。 错误位于 `coralUI3.js` 文件，当您在AEM中选择任意下拉列表时，会出现此情况。 具体来说，它发生在 `onOverlayToggle` 事件。 错误 `Uncaught TypeError: Cannot read properties of null (reading 'innerText')` 将显示。 (NPR-41467)
-* 在AEM中， **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 标记]** > **[!UICONTROL 创建]** > **[!UICONTROL 创建标记]**，在中输入非拉丁字符 **标题** 字段导致 **名称** 要仅用连字符填充的字段( `-` )。 (NPR-41623)
-* 中的版权年度不正确 `About Adobe Experience Manager` 对话框。 (NPR-41526)
-* 有未翻译的 **[!UICONTROL 配置文件属性]** 编辑用户设置时的字符串。 在所有区域设置中发生。 (NPR-41365)
+#### 翻译{#foundation-translation-6521}
 
-<!-- #### WCM{#wcm-6520}
+* 在创建多个配置并转到翻译Cloud Service配置时，并非所有元素都会显示在UI中。 仅显示前40个元素/文件夹，并触发延迟加载，但不添加更多内容。 (NPR-41829)
 
-* text
+#### 用户界面{#foundation-ui-6521}
 
-#### Workflow{#foundation-workflow-6520}
+* Granite `pathfield` 组件位于 `/libs/granite/ui/components/coral/foundation/form/pathfield` 无法启用 **[!UICONTROL 选择]** 按钮。 在弹出路径字段并且用户选中资产复选框后， **[!UICONTROL 选择]** 按钮未启用；它不会从灰色更改为蓝色。 (NPR-41970)
+* AEM中的内容片段模型(CFM)引用字段存在问题。 尽管CFM参考字段设置为必填字段，但系统允许用户单击“保存”，以在某些情况下使用非CFM值保存内容。 保存按钮应灰显（不可用）。 (NPR-41894)
 
-* text -->
+#### WCM{#wcm-6521}
 
-## 安装 [!DNL Experience Manager] 6.5.20.0{#install}
+* 周二
+
+#### 工作流{#foundation-workflow-6521}
+
+* 周二
+
+## 安装 [!DNL Experience Manager] 6.5.21.0{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.20.0需要 [!DNL Experience Manager] 6.5.见 [升级文档](/help/sites-deploying/upgrade.md) 以获取详细说明。 <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.21.0需要 [!DNL Experience Manager] 6.5.见 [升级文档](/help/sites-deploying/upgrade.md) 以获取详细说明。 <!-- UPDATE FOR EACH NEW RELEASE -->
 * 可在Adobe上获取Service Pack下载 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.20.0.zip).
-* 在具有MongoDB和多个实例的部署中，安装 [!DNL Experience Manager] 使用包管理器对某个Author实例执行6.5.20.0。<!-- UPDATE FOR EACH NEW RELEASE -->
+* 在具有MongoDB和多个实例的部署中，安装 [!DNL Experience Manager] 使用包管理器对某个Author实例执行6.5.21.0。<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe不建议您删除或卸载 [!DNL Experience Manager] 6.5.20.0包。 因此，在安装该包之前，您应该创建 `crx-repository` 万一你一定要把它退回。 <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe不建议您删除或卸载 [!DNL Experience Manager] 6.5.21.0程序包。 因此，在安装该包之前，您应该创建 `crx-repository` 万一你一定要把它退回。 <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
@@ -334,20 +250,20 @@ ht-degree: 2%
 
 **自动安装**
 
-可以使用两种不同的方法来自动安装 [!DNL Experience Manager] 6.5.20.0。<!-- UPDATE FOR EACH NEW RELEASE -->
+可以使用两种不同的方法来自动安装 [!DNL Experience Manager] 6.5.21.0。<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * 将包放入 `../crx-quickstart/install` 文件夹（当服务器联机时）。 软件包会自动安装。
 * 使用 [包管理器中的HTTP API](/help/sites-administering/package-manager.md#package-share). 使用 `cmd=install&recursive=true` 以便安装嵌套包。
 
 >[!NOTE]
 >
->Experience Manager6.5.20.0不支持Bootstrap安装。 <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager6.5.21.0不支持Bootstrap安装。 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **验证安装**
 
 要了解经认证可与本版本配合使用的平台，请参阅 [技术要求](/help/sites-deploying/technical-requirements.md).
 
-1. 产品信息页面(`/system/console/productinfo`)显示更新的版本字符串 `Adobe Experience Manager (6.5.20.0)` 下 [!UICONTROL 已安装的产品]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. 产品信息页面(`/system/console/productinfo`)显示更新的版本字符串 `Adobe Experience Manager (6.5.21.0)` 下 [!UICONTROL 已安装的产品]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 所有OSGi捆绑包包 **[!UICONTROL 活动]** 或 **[!UICONTROL 片段]** 在OSGi控制台中(使用Web控制台： `/system/console/bundles`)。
 
@@ -359,7 +275,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
+>在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
 
 ### 安装用于Experience Manager内容片段的GraphQL索引包{#install-aem-graphql-index-add-on-package}
 
@@ -375,7 +291,7 @@ ht-degree: 2%
 
 ### UberJar{#uber-jar}
 
-UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Maven中央存储库](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.20/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar用于 [!DNL Experience Manager] 6.5.21.0可从以下网站获取： [Maven中央存储库](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.20/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 要在Maven项目中使用UberJar，请参阅 [如何使用UberJar](/help/sites-developing/ht-projects-maven.md) 并在项目POM中包含以下依赖项： <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -383,7 +299,7 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
   <dependency>
   <groupId>com.adobe.aem</groupId>
   <artifactId>uber-jar</artifactId>
-  <version>6.5.20</version>
+  <version>6.5.21</version>
   <scope>provided</scope>          
   </dependency>
 ```
@@ -494,60 +410,30 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
 
 * 通过官方更新包（包括Service Pack、Security Service Pack、Extended Feature Pack、Cumulative Feature Pack、修补程序等）安装与标记相关的现成内容，会重置 `/content/cq:tags` 节点默认为。 因此，在安装之前，必须从属性中添加它。
 
-### AEM Forms的已知问题 {#known-issues-aem-forms-6520}
+### AEM Sites的已知问题 {#known-issues-aem-sites-6521}
 
-* 预填充服务失败，交互式通信中出现空指针异常。 (CQDOC-21355)
-* 自适应Forms允许您在ECMAScript版本5或更早版本中使用自定义函数。 当自定义函数使用ECMAScript版本6或更高版本（如“let”、“const”或箭头函数）时，规则编辑器可能无法正确打开。
-* 用户无法创建通信管理信件。 当用户创建信件时，出现描述“ ”的错误`Object Object`“”出现，且书信未创建。 在信件创建屏幕上加载布局缩略图也失败。 您可以安装 [最新的AEM 6.5表单Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 以解决问题。 (FORMS-13496)
-* 交互式通信服务会创建PDF文档，但用户数据不会自动填充到表单字段中。 预填充服务未按预期运行。 您可以安装 [最新的AEM 6.5表单Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 以解决问题。 (FORMS-13413和FORMS-13493)
-* 无法加载automated forms conversion服务的审核和更正(RnC)编辑器。 您可以安装 [最新的AEM 6.5表单Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 以解决问题。 (FORMS-13491)
-* 从AEM 6.5 Forms Service Pack 18 (6.5.18.0)或AEM 6.5 Forms Service Pack 19 (6.5.19.0)更新到AEM 6.5 Forms Service Pack 20 (6.5.20.0)后，用户遇到JSP编译错误。 他们无法打开或创建自适应表单，并且在页面编辑器、AEM Forms UI和AEM Workflow编辑器等其他AEM界面中遇到错误。 您可以安装 [最新的AEM 6.5表单Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 以解决问题。 (FORMS-13492)
+* SITES-17934 - 内容片段 - 由于大型片段树的 DoS 保护，预览失败。请参阅 [关于默认GraphQL查询执行器配置选项的知识库文章](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)
 
-<!--Customers can install the  latest AEM 6.5 Forms Service Pack to resolve the aforementioned issues.  Here are the direct links for the supported operating systems:
-* [AEM 6.5 Forms Service Pack 20 for Apple macOS](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-OSX-PKG-6.0.1192.zip)
-* [AEM 6.5 Forms Service Pack 20 for Microsoft Windows](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-WIN-PKG-6.0.1192.zip)
-* [AEM 6.5 Forms Service Pack 20 for Linux](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/ADOBE-AEMFD-LINUX-PKG-6.0.1192.zip)
--->
+### AEM Forms的已知问题 {#known-issues-aem-forms-6521}
 
-<!--Known issues in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.20.0 Forms add-on package release is scheduled for Thursday, February 29, 2024. A list of known issues for forms is added to this section post the release.-->
-
-<!--
-#### Install the servlet fragment (AEM Service Pack 6.5.14.0 or earlier)
-
-* If you are upgrading to AEM Service Pack 6.5.15.0 or higher, and your AEM instance is operating on Tomcat 8.5.88, it is mandatory that you install the servlet fragment *before* you proceed with the installation of Service Pack 6.5.15.0 or higher.
-* It is mandatory that you install the servlet fragment for all application servers except those running on JBoss&reg; EAP 7.4.0.
-
-**To install the servlet fragment:**
-
-1. Download the servlet fragment from [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar).
-1. Start the application server. 
-1. Wait for the logs to stabilize and check the bundle state.
-1. Open Web Console Bundles. The default URL is `http://[Server]:[Port]/system/console/bundles`.
-1. Select **[!UICONTROL Install]** or **[!UICONTROL Update]**. 
-1. Select the downloaded fragment 
-`org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar` 
-1. Select **[!UICONTROL Install]** or **[!UICONTROL Update]**. 
-1. Wait for the application server to stabilize.
-1. Stop the application server.
-
--->
+* 周二
 
 ## 包含的OSGi包和内容包{#osgi-bundles-and-content-packages-included}
 
 以下文本文档列出了此包中包含的OSGi包和内容包 [!DNL Experience Manager] 6.5 Service Pack版本：
 
-* [Experience Manager6.5.20.0中包含的OSGi包列表](/help/release-notes/assets/65200-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager6.5.20.0中包含的内容包列表](/help/release-notes/assets/65200-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager6.5.21.0中包含的OSGi包列表](/help/release-notes/assets/65200-bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager6.5.21.0中包含的内容包列表](/help/release-notes/assets/65200-packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限制的网站{#restricted-sites}
 
 这些网站仅供客户使用。 如果您是客户并且需要访问权限，请联系您的Adobe客户经理。
 
 * [产品下载地址：licensing.adobe.com](https://licensing.adobe.com/)
-* [联系Adobe客户支持](https://experienceleague.adobe.com/en/docs/customer-one/using/home).
+* [联系Adobe客户支持](https://experienceleague.adobe.com/docs/customer-one/using/home.html).
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/en/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans)
 >* [订阅Adobe产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)

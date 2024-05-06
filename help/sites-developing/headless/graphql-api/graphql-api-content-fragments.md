@@ -5,10 +5,10 @@ feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 47aac4b19bfbd29395fb09f3c27c981e7aa908f6
 workflow-type: tm+mt
-source-wordcount: '4796'
-ht-degree: 58%
+source-wordcount: '4984'
+ht-degree: 55%
 
 ---
 
@@ -1046,6 +1046,39 @@ query {
 >所有 GraphQL [架构](#schema-generation)（派生自&#x200B;**已启用**&#x200B;的内容片段模型）可通过 GraphQL 端点读取。
 >
 >此功能意味着您必须确保没有敏感数据可用，因为这样可能会泄露这些数据。 例如，它包括可在模型定义中作为字段名称显示的信息。
+
+## 限制 {#limitations}
+
+为了防止潜在问题，您的查询存在默认限制：
+
+* 查询不能包含超过1M (1024 * 1024)个字符
+* 查询不能包含超过15000个令牌
+* 查询不能包含超过200000个空白令牌
+
+您还需要了解：
+
+* 当GraphQL查询包含两个（或更多）模型中同名的字段，并且满足以下条件时，将返回字段冲突错误：
+
+   * 因此，在何处：
+
+      * 两个（或多个模型）作为可能的参照；当它们被定义为允许参照时 **模型类型** 在内容片段引用中。
+
+     和：
+
+      * 这两个模型具有具有相同名称的字段；这意味着两个模型中出现相同的名称。
+
+     和
+
+      * 这些字段的数据类型不同。
+
+   * 例如：
+
+      * 当两个（或多个）片段具有不同模型时(例如， `M1`， `M2`)用作其他片段中的可能引用（内容引用或片段引用）；例如， `Fragment1` `MultiField/List`
+      * 这两个片段具有不同的模型(`M1`， `M2`)的字段具有相同名称，但类型不同。
+举例说明：
+         * `M1.Title` 作为 `Text`
+         * `M2.Title` 作为 `Text/MultiField`
+      * 如果GraphQL查询包含 `Title` 字段。
 
 ## 身份验证 {#authentication}
 
