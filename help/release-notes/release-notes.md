@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 2e5754022fb40409500bb57b3b7576bf8ec9a605
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 566230aa14f24c2401d1e77965b542825eeb7fc9
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3908'
 ht-degree: 3%
 
 ---
@@ -489,6 +490,11 @@ UberJar用于 [!DNL Experience Manager] 6.5.20.0可从以下网站获取： [Mav
 
 ### AEM Forms的已知问题 {#known-issues-aem-forms-6520}
 
+* 在基于XDP的自适应表单中，如果复选框上嵌入了脚本，则此类复选框之后的元素将不会执行脚本。 (FORMS-14244)
+* 在弹出小部件中遍历具有编辑/显示模式的字段的月份时，日期选取器小部件中的行会被截断。 (FORMS-13620)
+* 尝试在后端使用DOR（记录文档）服务时，表单提交失败。 遇到的错误消息是：“提交操作无法完成，因为未正确分配表单资源。” (FORMS-13798)
+* 将自适应表单从Adobe Experience Manager发布实例提交到Adobe Experience Manager Workflow时，工作流无法保存附件。 (FORMS-14209)
+* 安装AEM 6.5 Forms Service Pack 20包(适用于SP20的AEM Forms附加组件包)时，AEM Sites用户界面(UI)性能会显着降低。 (FORMS-13791)
 * 预填充服务失败，交互式通信中出现空指针异常。 (CQDOC-21355)
 * 自适应Forms允许您在ECMAScript版本5或更早版本中使用自定义函数。 当自定义函数使用ECMAScript版本6或更高版本（如“let”、“const”或箭头函数）时，规则编辑器可能无法正确打开。
 * 用户无法创建通信管理信件。 当用户创建信件时，出现描述“ ”的错误`Object Object`“”出现，且书信未创建。 在信件创建屏幕上加载布局缩略图也失败。 您可以安装 [最新的AEM 6.5表单Service Pack 20 (6.5.20.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases) 以解决问题。 (FORMS-13496)
