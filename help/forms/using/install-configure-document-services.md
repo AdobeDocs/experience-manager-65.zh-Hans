@@ -3,11 +3,10 @@ title: 安装和配置文档服务
 description: 安装AEM Forms文档服务以创建、汇编、分发、存档PDF文档，添加数字签名以限制对文档的访问，以及对条形码Forms进行解码。
 topic-tags: installing
 role: Admin, User, Developer
-exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '5633'
+source-wordcount: '5703'
 ht-degree: 1%
 
 ---
@@ -298,6 +297,10 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
 1. 打开Microsoft® Windows的组策略编辑器。 要打开组策略编辑器，请单击 **[!UICONTROL 开始]**，类型 **gpedit.msc** 在“Start Search（开始搜索）”框中，单击 **[!UICONTROL 组策略编辑器]**.
 1. 导航到 **[!UICONTROL 本地计算机策略]** > **[!UICONTROL 计算机配置]** > **[!UICONTROL Windows设置]** > **[!UICONTROL 安全设置]** > **[!UICONTROL 本地策略]** > **[!UICONTROL 用户权限分配]** 并编辑 **[!UICONTROL 替换进程级令牌]** 策略和包含管理员组。
 1. 将用户添加到“替换进程级令牌”条目。
+
+>[!NOTE]
+>
+> 如果AEM服务器作为LSA下的服务运行，则可能不需要向用户显式分配此权限，这意味着如果除了虚拟机上PDFG所需的应用程序/组件之外，没有安装其他应用程序/组件，则无需向任何其他帐户授予 **向右替换进程级令牌** 只有本地服务和网络服务帐户才有权限。
 
 ### （仅限Windows）为非管理员启用PDF Generator服务 {#enable-the-pdf-generator-service-for-non-administrators}
 

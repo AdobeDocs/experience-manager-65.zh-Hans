@@ -8,14 +8,19 @@ feature: Transaction Reports
 exl-id: e92f1b59-79ef-40fa-af9a-7380cd701a75
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
 workflow-type: tm+mt
-source-wordcount: '1739'
-ht-degree: 7%
+source-wordcount: '1754'
+ht-degree: 8%
 
 ---
 
 # OSGi上AEM Forms的交易报告可计费API {#transaction-reports-billable-apis}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/transaction-reports-billable-apis) |
+| AEM 6.5 | 本文 |
 
 AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某些API作为交易入账，而其他API则作为自由使用。 本文档提供了在交易报表中作为交易入账的所有API的列表。 以下是一些使用计费API的常见方案：
 
