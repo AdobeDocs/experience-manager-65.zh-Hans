@@ -6,10 +6,10 @@ feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: b7082aaee83fba88b47447b8553563264eedb713
 workflow-type: tm+mt
-source-wordcount: '1497'
-ht-degree: 41%
+source-wordcount: '1493'
+ht-degree: 40%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 41%
 创建用于将 AEM 连接到您的翻译服务提供商的云配置。默认情况下，AEM具有连接到Microsoft Translator的功能。
 以下翻译供应商为翻译项目提供新API的实施。 用于了解有关集成的更多信息的链接：
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)（Adobe Exchange 首选合作伙伴）
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
 * [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
