@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 55421ab730382eb9aa603f898182865649f66349
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ ht-degree: 0%
 
 ### 根据电子邮件域自动创建动态组 {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. 在管理控制台中，单击设置>用户管理>配置>配置高级系统属性。
+1. 单击设置>用户管理>配置>配置高级系统属性。
 1. 在“自动创建动态组”下，选中复选框。
 1. 指定用户管理器何时检查新电子邮件域。 该时间应晚于域同步时间，因为仅当完成域同步后，创建动态组才是逻辑的。
 
