@@ -9,7 +9,7 @@ feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 066528bd9c2d7db9705a9d47ed6ea91a584129cb
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 1%
@@ -119,9 +119,7 @@ ht-degree: 1%
    1. 从编辑属性窗格下的读取服务字段中选择获取或获取服务。
    1. 选择读取服务参数的铅笔图标以将参数绑定到请求属性，并指定绑定值。 它将服务参数绑定到指定的绑定属性或文本值，该属性或文本值作为参数传递给服务，以从数据源获取与指定值关联的详细信息。
 
-      <br>
-        在此示例中，id参数接受用户配置文件的id属性的值，并将其作为参数传递给读取服务。 它会从指定id的员工数据模型对象中读取并返回关联属性的值。 因此，如果您在表单的id字段中指定00250，则读取服务将读取具有员工id00250员工的详细信息。
-        <br>
+      在此示例中，id参数接受用户配置文件的id属性的值，并将其作为参数传递给读取服务。 它会从指定id的员工数据模型对象中读取并返回关联属性的值。 因此，如果您在表单的id字段中指定00250，则读取服务将读取具有员工id00250员工的详细信息。
 
       ![配置请求属性](assets/request-attribute.png)
 
