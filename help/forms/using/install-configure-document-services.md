@@ -4,13 +4,13 @@ description: 安装AEM Forms文档服务以创建、汇编、分发、存档PDF�
 topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
+exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
+source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
 workflow-type: tm+mt
-source-wordcount: '5703'
+source-wordcount: '5660'
 ht-degree: 1%
 
 ---
-
 
 # 安装和配置文档服务 {#installing-and-configuring-document-services}
 
@@ -300,7 +300,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
 
 >[!NOTE]
 >
-> 如果AEM服务器作为LSA下的服务运行，则可能不需要向用户显式分配此权限，这意味着如果除了虚拟机上PDFG所需的应用程序/组件之外，没有安装其他应用程序/组件，则无需向任何其他帐户授予 **向右替换进程级令牌** 只有本地服务和网络服务帐户才有权限。
+> 如上所示，如果AEM服务器是以LocalSystem帐户(LSA)下的服务方式运行的，则不必向用户显式分配此权限。
 
 ### （仅限Windows）为非管理员启用PDF Generator服务 {#enable-the-pdf-generator-service-for-non-administrators}
 
