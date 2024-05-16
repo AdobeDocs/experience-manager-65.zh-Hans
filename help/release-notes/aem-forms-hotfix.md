@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 5e2799505bc6d69cd5898445a9300ad162ef74fd
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,26 @@ ht-degree: 0%
     <td><strong>日期</strong></td>
     <td><strong>修补程序下载链接(AEM Software Distribution链接)</strong></td>
     <td><strong>修复的问题</strong></td>
+  </tr>
+  <tr>
+    <td>2024年5月16日</td>
+     <td>
+     <ul>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-win-pkg-6.0.1192-010.zip">适用于Microsoft Windows的AEM Service Pack 6.5.20.0的修补程序</a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-linux-pkg-6.0.1192-010.zip">适用于Linux的AEM Service Pack 6.5.20.0的修补程序 </a> </li>
+     <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/adobe-aemfd-osx-pkg-6.0.1192-010.zip">适用于Apple macOS的AEM Service Pack 6.5.20.0的修补程序</a> </li>
+     </ul>
+     </td>
+    <td>
+    <ul>
+    <li>在基于XDP的自适应表单中，如果复选框上嵌入了脚本，则此类复选框之后的元素将不会执行脚本。 有针对此问题的修补程序。 (FORMS-14244) </li>
+     <li> 在弹出小部件中遍历具有编辑/显示模式的字段的月份时，日期选取器小部件中的行会被截断。 有针对此问题的修补程序。 (FORMS-13620) </li>
+     <li>尝试在后端使用DOR（记录文档）服务时，表单提交失败。 遇到的错误消息是：“提交操作无法完成，因为未正确分配表单资源。” (FORMS-13798) </li>
+     <li>将自适应表单从Adobe Experience Manager发布实例提交到Adobe Experience Manager Workflow时，工作流无法保存附件。  (FORMS-14209) </li>
+     <li> 安装AEM 6.5 Forms Service Pack 20包(适用于SP20的AEM Forms附加组件包)时，AEM Sites用户界面(UI)性能会显着降低。  (FORMS-13791) </li>
+     <li>预填充服务失败，交互式通信中出现空指针异常。 (CQDOC-21355)</li>
+    </ul>
+    </td>    
   </tr>
   <tr>
     <td>2024年1月29日</td>
