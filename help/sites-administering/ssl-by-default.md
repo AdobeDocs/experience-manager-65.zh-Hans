@@ -10,7 +10,7 @@ exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
 workflow-type: tm+mt
 source-wordcount: '828'
 ht-degree: 0%
@@ -183,13 +183,13 @@ it for any subsequent updating of the private key or certificate.</dd>
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
    ```
 
-将私钥转换为DER格式。 这是因为SSL向导要求密钥为DER格式：
+1. 将私钥转换为DER格式。 这是因为SSL向导要求密钥为DER格式：
 
-```shell
-openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
-```
+   ```shell
+   openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
+   ```
 
-最后，上传 **localhostprivate.der** 作为私钥和 **localhost.crt** 如本页开头描述的图形SSL/TLS向导步骤2中的SSL/TLS证书一样。
+1. 最后，上传 **localhostprivate.der** 作为私钥和 **localhost.crt** 如本页开头描述的图形SSL/TLS向导步骤2中的SSL/TLS证书一样。
 
 ### 通过cURL更新SSL/TLS配置 {#updating-the-ssl-tls-configuration-via-curl}
 
