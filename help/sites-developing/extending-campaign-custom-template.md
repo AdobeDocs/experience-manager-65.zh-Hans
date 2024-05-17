@@ -9,20 +9,27 @@ exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: ad8f849384e58511de97611d1b26c4fc96022062
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
 
 # 使用Adobe Campaign表单组件创建自定义AEM页面模板{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-本页介绍如何构建使用的自定义页面模板 [Adobe Campaign表单](/help/sites-authoring/adobe-campaign-components.md) 通过检查Geometrixx-outdoors模板( `/apps/geometrixx-outdoors/components/page_campaign_profile`)，并指出了创建自己的自定义模板时可能需要的重要信息。
+本页介绍如何构建使用的自定义页面模板 [Adobe Campaign表单](/help/sites-authoring/adobe-campaign-components.md) 通过检查Geometrixx-outdoors模板(`/apps/geometrixx-outdoors/components/page_campaign_profile`)，并指出了创建自己的自定义模板时可能需要的重要信息。
 
 >[!NOTE]
 >
 >[电子邮件和表单示例仅在Geometrixx中可用](/help/sites-developing/we-retail.md). 从包共享下载示例Geometrixx内容。
+
+>[!CAUTION]
+>
+>已弃用AEM电子邮件组件。 由于电子邮件将内容和样式融合在一起，因此由AEM提供的现成可用电子邮件组件对于客户的重用受到限制，因为需要将自定义样式实施到项目所需的任何组件中。
+>
+>电子邮件组件可以在项目级别实施，已弃用的AEM电子邮件组件说明了如何实现这一点。 但是，请勿在项目中使用这些已弃用的组件。
+
 
 要使用Adobe Campaign表单组件创建自定义AEM页面模板，请确保您满足以下条件：
 
