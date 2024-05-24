@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
 workflow-type: tm+mt
-source-wordcount: '2334'
+source-wordcount: '2335'
 ht-degree: 28%
 
 ---
@@ -46,7 +46,7 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
 ## AEM 6.5，Service Pack 18—2023年8月24日
 
-* Dynamic Media的Assets - [Dynamic Media中支持视频的多字幕和多音频轨道](/help/assets/video.md#about-msma) — 您现在可以轻松地将多个字幕和多个音轨添加到主视频中。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
+* Dynamic Media的Assets - [Dynamic Media中的视频支持多个字幕和音轨](/help/assets/video.md#about-msma) — 您现在可以轻松地将多个字幕和多个音轨添加到主视频中。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 * 资源 — 现在，您可以在搜索结果中导航到包含资源的文件夹位置，以便执行各种资源管理任务。
 * 内容片段中的Sites Polaris选取器改进了性能。
 * 允许站点页面编辑器/图像组件用户从远程AssetsCloud Service引用资源。

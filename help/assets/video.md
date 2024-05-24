@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media 中的视频
-description: 了解如何在Dynamic Media中使用视频，例如编码视频的最佳实践、向视频添加多音频和多字幕以及视频缩略图。
+description: 了解如何在Dynamic Media中使用视频，例如编码视频的最佳实践、将多个音频和字幕轨道添加到视频以及视频缩略图。
 mini-toc-levels: 3
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
 workflow-type: tm+mt
-source-wordcount: '11187'
+source-wordcount: '11213'
 ht-degree: 2%
 
 ---
@@ -425,7 +425,7 @@ VBR编码时间较长，但产生的结果最理想；媒体文件的质量更�
 
 Dynamic Media建议使用MP4 H.264视频编码预设。 由于MP4文件使用H.264视频编解码器，因此它以压缩文件大小提供高品质视频。
 
-### 在您的Dynamic Media帐户中启用DASH、多字幕和多音频轨道支持 {#enable-dash}
+### 在您的Dynamic Media帐户中启用DASH、多字幕和音轨支持 {#enable-dash}
 
 **关于启用帐户上的DASH**
 DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广泛地应用于不同的视频观看者中。 在您的帐户上启用DASH后，您可以选择使用DASH或HLS进行自适应视频流传输。 或者，您可以在以下情况下同时选择这两个选项：在播放器之间自动切换 **[!UICONTROL 自动]** 在查看器预设中选择作为播放类型。
@@ -444,15 +444,15 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 * 将Dynamic Media配置为使用DASH，以便您自行完成此操作。
 * 将Experience Manager6.5配置为使用DASH，此操作可通过您创建和提交的Adobe客户支持案例来完成。
 
-**关于启用帐户上的多字幕和多音频轨道支持**
+**关于启用帐户上的多个字幕和音频跟踪支持**
 
-在您创建一个Adobe支持案例以为其帐户启用DASH的同时，自动启用多字幕和多声道支持也会为您带来好处。 启用后，您上传的所有后续视频都使用新的后端架构进行处理，该架构支持向视频添加多字幕和多音频轨道。
+在您创建一个Adobe支持案例以在自己的帐户中启用DASH的同时，自动启用多个字幕和音轨支持也会让您受益。 启用后，您上传的所有后续视频都将采用新的后端架构进行处理，该架构支持向视频添加多个字幕和音频轨道。
 
 >[!IMPORTANT]
 >
->您上传的任何视频 *早于* 在您的Dynamic Media帐户中启用多字幕和多音频轨道支持， [必须重新处理](/help/assets/processing-profiles.md#reprocessing-assets). 此视频重新处理步骤是必需的，这样他们就可以使用多字幕和多音频跟踪功能。 重新处理之后，视频URL可继续像往常一样正常工作和播放。
+>您上传的任何视频 *早于* 在您的Dynamic Media帐户中启用多个字幕和音轨支持， [必须重新处理](/help/assets/processing-profiles.md#reprocessing-assets). 此视频重新处理步骤是必需的，这样他们才能使用多个字幕和音频跟踪功能。 重新处理之后，视频URL可继续像往常一样正常工作和播放。
 
-**要在您的Dynamic Media帐户中启用DASH、多字幕和多音频轨道支持，请执行以下操作：**
+**要在您的Dynamic Media帐户中启用DASH、多字幕和多声道支持，请执行以下操作：**
 
 <!-- 1. **Configure Dynamic Media for DASH** - In Dynamic Media on Experience Manager 6.5, navigate to [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 
@@ -471,7 +471,7 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 
    * 主要联系人姓名、电子邮件、电话。
    * 您的Dynamic Media帐户的名称。
-   * 指定在Experience Manager6.5上的Dynamic Media帐户中启用DASH、多字幕和多音频轨道支持。
+   * 在Experience Manager6.5中指定在Dynamic Media帐户中启用DASH、多个字幕和多声道支持。
 
 1. Adobe客户支持根据提交请求的顺序将您添加到客户等待列表中。
 1. 当Adobe准备好处理您的请求时，客户支持联系您以协调并设置目标启用日期。
@@ -479,7 +479,7 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 1. 现在，您可以执行以下任一操作：
 
    * 创建您的 [视频查看器预设](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) 和往常一样。
-   * [添加多字幕和多音频轨道](#add-msma) 到您的视频中。
+   * [添加多个字幕和音轨](#add-msma) 到您的视频中。
 
 ## 查看视频报表 {#viewing-video-reports}
 
@@ -593,13 +593,13 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 
 
 
-## 关于Dynamic Media中对视频的多字幕和多音频轨道支持{#about-msma}
+## 关于Dynamic Media中对视频的多个字幕和音轨支持{#about-msma}
 
-借助Dynamic Media中的多字幕和多声道功能，您可以轻松地将多个字幕和声道添加到主视频中。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
+借助Dynamic Media中的多个字幕和音轨功能，您可以轻松地将多个字幕和音轨添加到主视频中。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 
 ![Dynamic Media中的字幕和音轨选项卡，以及显示视频的上传.VTT字幕文件和上传的.MP3音轨文件的表。](assets-dm/msma-subtitle-audiotracks-tab.png)
 
-在向主视频中添加多字幕和多音频曲目时需要考虑的一些用例包括：
+向主视频添加多个字幕和音频轨道需要考虑的一些用例包括：
 
 | 类型 | 用例 |
 |--- |--- |
@@ -609,28 +609,28 @@ DASH(Digital Adaptive Streaming over HTTP)是视频流的国际标准，被广�
 |  | 评论轨道 |
 |  | 描述性音频 |
 
-全部 [Dynamic Media中支持的视频格式](/help/assets/assets-formats.md) 和所有Dynamic Media视频查看器 — Dynamic Media除外 *Video_360* 查看器 — 支持与多字幕和多音频轨道一起使用。
+全部 [Dynamic Media中支持的视频格式](/help/assets/assets-formats.md) 和所有Dynamic Media视频查看器 — Dynamic Media除外 *Video_360* 查看器 — 支持与多个字幕和音频轨道一起使用。
 
-通过必须由Adobe客户支持启用（打开）的功能切换，您的Dynamic Media帐户可以使用多字幕和多音频跟踪功能。
+您的Dynamic Media帐户可通过功能切换提供多个字幕和音频跟踪功能，该功能必须由Adobe客户支持启用（打开）。
 
-### 为视频添加多字幕和多音频轨道 {#add-msma}
+### 向视频中添加多个字幕和音频轨道 {#add-msma}
 
-在添加多字幕和多音频曲目到视频之前，请确保已具备以下功能：
+在将多个字幕和音频轨道添加到视频之前，请确保已具备以下功能：
 
 * Dynamic Media是在AEM环境中设置的。
 * A [Dynamic Media视频配置文件将应用于从中摄取视频的文件夹](/help/assets/video-profiles.md#applying-a-video-profile-to-folders).
-* [已在您的Dynamic Media帐户中启用多字幕和多音频轨道](#enable-dash).
+* [已在您的Dynamic Media帐户中启用多个字幕和音轨](#enable-dash).
 
 WebVTT和AdobeVTT格式支持添加字幕和字幕。 此外，添加的MP3格式音频轨道文件也受支持。
 
 >[!IMPORTANT]
 >
->您上传的任何视频 *早于* 在您的Dynamic Media帐户中启用多字幕和多音频轨道支持， [必须重新处理](/help/assets/processing-profiles.md#reprocessing-assets). 此视频重新处理步骤是必需的，这样他们就可以使用多字幕和多音频跟踪功能。 重新处理之后，视频URL可继续像往常一样正常工作和播放。
+>您上传的任何视频 *早于* 在您的Dynamic Media帐户中启用多个字幕和音轨支持， [必须重新处理](/help/assets/processing-profiles.md#reprocessing-assets). 此视频重新处理步骤是必需的，这样他们才能使用多个字幕和音频跟踪功能。 重新处理之后，视频URL可继续像往常一样正常工作和播放。
 
-**要将多字幕和多音频曲目添加到视频，请执行以下操作：**
+**要在视频中添加多个字幕和音频轨道，请执行以下操作：**
 
 1. [将主视频上传到文件夹](/help/assets/managing-video-assets.md#upload-and-preview-video-assets) 已分配了视频配置文件的用户。
-1. 导航到要添加多字幕和多音频轨道的上传视频资产。
+1. 导航到要添加多个字幕和音频轨道的上传视频资产。
 1. 在资源选择模式下，从“列表视图”或“卡片视图”中选择视频资源。
 1. 在工具栏上，选择“属性”图标（一个带有“i”的圆形）。
    ![所选的视频资产在视频缩略图图像上带有复选标记，并且工具栏上高亮显示了“查看属性”。](assets-dm/msma-selectedasset-propertiesbutton.png)*在卡片视图中选择了视频资产。*
@@ -853,7 +853,7 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
 
 >[!IMPORTANT]
 >
->Adobe建议您 [启用多字幕和多音频跟踪功能](#enable-dash) 在您的Dynamic Media帐户上。 这样，您就可以利用最新的Dynamic Media后端架构和简化的工作流程，为您的视频添加字幕、字幕和音轨。
+>Adobe建议您 [启用多个字幕和音频跟踪功能](#enable-dash) 在您的Dynamic Media帐户上。 这样，您就可以利用最新的Dynamic Media后端架构和简化的工作流程，为您的视频添加字幕、字幕和音轨。
 
 通过将隐藏式字幕添加到单个视频或自适应视频集，您可以将视频扩展到全球市场。 通过添加隐藏式字幕，您无需对音频进行配音，也无需使用母语人士重新录制每种语言的音频。 视频以所录制的语言播放。 出现外语字幕是为了让不同语言的人仍然能够理解音频部分。
 
