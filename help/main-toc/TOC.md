@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 9bacc16657c83329ff7b02dc8b233908e9deb2e1
+source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7400'
 ht-degree: 20%
 
 ---
@@ -74,6 +74,7 @@ ht-degree: 20%
    + [AEM 6.5中的自定义用户组映射](/help/sites-administering/cug-mapping.md)
    + [相同网站Cookie支持](/help/sites-administering/same-site-cookie-support.md)
    + [在 Adobe Developer Console 中弃用 JWT 凭据](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
+   + [为AEM设置IMS集成](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
 + Sites {#sites}
    + 创作 {#authoring}
       + AEM创作的基本任务、工具和概念 {#essentials}
@@ -114,7 +115,7 @@ ht-degree: 20%
          + [内容分析](/help/sites-authoring/content-insights.md)
          + [创建无障碍内容（WCAG 2.1 合规性）](/help/sites-authoring/creating-accessible-content.md)
          + [在设计模式下配置组件](/help/sites-authoring/default-components-designmode.md)
-         + [基础组件](/help/sites-authoring/default-components-foundation.md)
+         + [Foundation 组件 ](/help/sites-authoring/default-components-foundation.md)
          + [基架](/help/sites-authoring/scaffolding.md)
          + [查看页面分析数据](/help/sites-authoring/page-analytics-using.md)
       + 项目 {#projects}
@@ -226,7 +227,6 @@ ht-degree: 20%
          + [为Adobe Analytics配置链接跟踪](/help/sites-administering/adobeanalytics-link.md)
          + [将组件数据映射到Adobe Analytics属性](/help/sites-administering/adobeanalytics-mapping.md)
          + [为Adobe Analytics配置视频跟踪](/help/sites-administering/adobeanalytics-video.md)
-         + [使用IMS与Adobe Analytics集成](/help/sites-administering/integration-analytics-ims.md)
          + [HTTP2 内容投放常见问题解答](/help/sites-administering/scene7-http2faq.md)
          + [Adobe Campaign集成疑难解答](/help/sites-administering/troubleshooting-campaignintegration.md)
          + [SharePoint连接器许可证、版权声明和免责声明](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -250,7 +250,6 @@ ht-degree: 20%
          + [与Adobe Marketing Cloud集成](/help/sites-administering/marketing-cloud.md)
          + [手动配置与Adobe Target的集成](/help/sites-administering/target-configuring.md)
          + [与Adobe Target集成的先决条件](/help/sites-administering/target-requirements.md)
-         + [使用IMS与Adobe Target集成](/help/sites-administering/integration-target-ims.md)
          + [Adobe分类](/help/sites-administering/adobeanalytics-classifications.md)
          + [解决方案集成](/help/sites-administering/integration.md)
          + [将体验片段导出到 Adobe Target](/help/sites-administering/experience-fragments-target.md)
@@ -1292,7 +1291,7 @@ ht-degree: 20%
          + [AEM核心概念](/help/sites-developing/the-basics.md)
          + [AEM触屏优化UI的结构](/help/sites-developing/touch-ui-structure.md)
          + [AEM触屏优化UI的概念](/help/sites-developing/touch-ui-concepts.md)
-         + [AEM开发 — 准则和最佳实践](/help/sites-developing/dev-guidelines-bestpractices.md)
+         + [AEM 开发 - 准则和最佳实践](/help/sites-developing/dev-guidelines-bestpractices.md)
          + [使用客户端库](/help/sites-developing/clientlibs.md)
          + [开发和页面差异](/help/sites-developing/pagediff.md)
          + [编辑器限制](/help/sites-developing/editor-limitations.md)

@@ -10,38 +10,14 @@ exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1513'
+source-wordcount: '1438'
 ht-degree: 41%
 
 ---
 
 # 将体验片段导出到 Adobe Target{#exporting-experience-fragments-to-adobe-target}
-
->[!CAUTION]
->
->此页面上的某些功能需要应用AEM 6.5.3.0（或更高版本）。
->
->6.5.3.0：
->
->* **Externalizer域** 现在可以选中。
->  **注意：** 外部化器域仅与发送到Target的体验片段的内容相关，与查看选件内容等元数据无关。
->
->6.5.2.0：
->
->* 体验片段可以导出到：
->
->   * 默认工作区。
->   * 在云配置中指定的命名工作区。
->   * **注意：** 要导出到特定的工作区，需要使用Adobe Target Premium。
->
->* AEM必须 [使用IMS与Adobe Target集成](/help/sites-administering/integration-target-ims.md).
->
->AEM 6.5.0.0和6.5.1.0：
->
->* AEM 体验片段将导出到 Adobe Target 的默认工作区。
->* 必须按照[与 Adobe Target 集成](/help/sites-administering/target.md)下的说明将 AEM 与 Adobe Target 集成。
 
 您可以导出 [体验片段](/help/sites-authoring/experience-fragments.md)，在Adobe Experience Manager (AEM)中创建的，指向Adobe Target (Target)。 然后，可以将它们用作Target活动中的选件，以大规模测试和个性化体验。
 
@@ -51,7 +27,13 @@ ht-degree: 41%
 * JSON：支持 Headless 内容交付
 * HTML 和 JSON
 
-AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也可以导出到Adobe Target的用户定义的工作区。 可使用Adobe Developer控制台完成此操作，对于该控制台，AEM必须 [使用IMS与Adobe Target集成](/help/sites-administering/integration-target-ims.md).
+AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也可以导出到Adobe Target的用户定义的工作区。 可使用Adobe Developer控制台完成此操作，对于该控制台，AEM必须 [使用IMS与Adobe Target集成](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+>[!NOTE]
+>
+>[IMS集成现在已使用S2S OAuth进行配置](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+>
+>以前的配置使用的是 [现在可在Adobe Developer控制台中弃用的JWT凭据](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
 
 >[!NOTE]
 >
@@ -69,16 +51,19 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 >* [核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
 >
 
-## 先决条件 {#prerequisites}
-
->[!CAUTION]
->
->本页上的某些功能需要应用AEM 6.5.3.0。
+## 前提条件 {#prerequisites}
 
 需要执行各种操作：
 
-1. 您必须 [使用IMS将AEM与Adobe Target集成](/help/sites-administering/integration-target-ims.md).
-2. 体验片段将从AEM创作实例中导出，因此您必须 [配置AEM链接外部化器](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) 在创作实例上，确保体验片段中的任何引用都外部化以进行Web交付。
+1. 您必须 [使用IMS将AEM与Adobe Target集成](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+
+   >[!NOTE]
+   >
+   >[IMS集成现在已使用S2S OAut进行配置](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >
+   >以前的配置使用的是 [现在可在Adobe Developer控制台中弃用的JWT凭据](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+
+1. 体验片段将从AEM创作实例中导出，因此您必须 [配置AEM链接外部化器](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) 在创作实例上，确保体验片段中的任何引用都外部化以进行Web交付。
 
    >[!NOTE]
    >
