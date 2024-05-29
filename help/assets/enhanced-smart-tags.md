@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '1559'
+source-wordcount: '1575'
 ht-degree: 1%
 
 ---
@@ -194,3 +194,9 @@ ht-degree: 1%
 * 智能内容服务的使用限制为每年最多200万个标记图像。 任何经过处理和标记的重复图像均计为已标记的图像。
 * 如果从时间线运行标记工作流，则一次最多可以对15个资产应用标记。
 * 智能标记仅适用于PNG和JPG图像格式。 因此，如果支持的资源具有以这两种格式创建的演绎版，则会使用智能标记进行标记。
+
+>[!MORELIKETHIS]
+>
+>* [概述以及如何培训智能标记](enhanced-smart-tags.md)
+>* [配置智能标记](config-smart-tagging.md)
+>* [有关智能标记的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

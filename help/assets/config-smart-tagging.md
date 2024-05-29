@@ -6,10 +6,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 45452acf73adc76aacebff9aa0dd42565abbd358
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 20%
+source-wordcount: '2415'
+ht-degree: 19%
 
 ---
 
@@ -135,6 +135,13 @@ ht-degree: 20%
 
 ### 配置智能内容服务 {#configure-smart-content-service}
 
+>[!CAUTION]
+>
+>以前，使用JWT凭据进行的配置现在可在Adobe Developer控制台中弃用。 2024年6月3日之后，您将无法创建新的JWT凭据。 无法再创建或更新此类配置，但可以将它们迁移到 OAuth 配置。
+> 请参阅 [为AEM设置IMS集成](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+>请参阅 [为内部部署用户配置OAuth的步骤](#config-oauth-onprem)
+> 请参阅 [OAuth凭据的智能标记疑难解答](#config-smart-tagging.md)
+
 要配置集成，请使用 [!UICONTROL 技术帐户ID]， [!UICONTROL 组织ID]， [!UICONTROL 客户端密码]、和 [!UICONTROL 客户端ID] Adobe Developer控制台集成中的字段。 创建智能标记云配置允许对来自的API请求进行身份验证 [!DNL Experience Manager] 部署。
 
 1. 在 [!DNL Experience Manager]，导航到 **[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 旧版Cloud Service]** 以打开 [!UICONTROL Cloud Service] 控制台。
@@ -151,6 +158,37 @@ ht-degree: 20%
    | [!UICONTROL 技术帐户ID] | [!UICONTROL 技术帐户ID] |
    | [!UICONTROL 组织ID] | [!UICONTROL 组织ID] |
    | [!UICONTROL 客户端密码] | [!UICONTROL 客户端密码] |
+
+### 为内部部署用户配置OAuth {#config-oauth-onprem}
+
+#### 先决条件 {#prereqs-config-oauth-onprem}
+
+授权范围是包含以下先决条件的OAuth字符串：
+
+* 在中创建新的OAuth集成 [开发人员控制台](https://developer.adobe.com/console/user/servicesandapis) 使用 `ClientID`， `ClientSecretID`、和 `OrgID`.
+* 在此路径中添加以下文件 `/apps/system/config in crx/de`：
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+
+#### 为内部部署用户配置OAuth {#steps-config-oauth-onprem}
+
+1. 在中添加或更新以下属性 `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`：
+
+   * `auth.token.provider.authorization.grants="client_credentials"`
+   * `auth.token.provider.orgId="<OrgID>"`
+   * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
+   * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+     `auth.token.validator.type="adobe-ims-similaritysearch"`
+   * 更新 `auth.token.provider.client.id` 与新OAuth配置的客户端ID一起使用。
+   * 更新 `auth.access.token.request` 到 `"https://ims-na1.adobelogin.com/ims/token/v3"`
+2. 将文件重命名为 `com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`.
+3. 在中执行以下步骤 `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`：
+   * 通过新的OAuth集成，使用客户端密钥更新属性auth.ims.client.secret。
+   * 将文件重命名为 `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
+4. 在内容存储库开发控制台（例如CRXDE）中保存所有更改。
+5. 导航到 `/system/console/configMgr` 并从替换OSGi配置 `.<randomnumber>` 到 `-<randomnumber>`.
+6. 删除的旧配置 `"Access Token provider name: adobe-ims-similaritysearch"` 在 `/system/console/configMgr`.
+7. 重新启动控制台。
 
 ### 验证配置 {#validate-the-configuration}
 
@@ -299,5 +337,6 @@ ht-degree: 20%
 
 >[!MORELIKETHIS]
 >
+>* [OAuth凭据的智能标记疑难解答](#config-smart-tagging.md)
 >* [概述以及如何培训智能标记](enhanced-smart-tags.md)
 >* [有关智能标记的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
