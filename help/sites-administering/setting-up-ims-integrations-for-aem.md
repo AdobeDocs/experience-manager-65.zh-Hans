@@ -1,19 +1,21 @@
 ---
 title: 为AEM设置IMS集成
 description: 了解如何为AEM设置IMS集成
-source-git-commit: ea7454fa57d503eb12efe5074c8a82ab3d8e280b
+source-git-commit: 8540b1af3c0779f692f829d4c61112d36bd81a00
 workflow-type: tm+mt
-source-wordcount: '437'
-ht-degree: 80%
+source-wordcount: '354'
+ht-degree: 90%
 
 ---
 
 
 # 为AEM设置IMS集成 {#setting-up-ims-integrations-for-aem}
 
+<!--
+
 >[!NOTE]
 >
->Adobe 客户使用 [Adobe Developer Console](https://developer.adobe.com/console) 生成通过其可访问各种 API 的凭据。客户可选择从 OAuth 服务器到服务器到单页应用程序的多种凭据类型。这些凭据类型之一，服务帐户(JWT)凭据已弃用，推荐使用Service Pack 20的OAuth服务器到服务器凭据。 此更改可重新移植到旧版Service Pack，从Service Pack 11到Service Pack 20，并使用可在此处下载的修补程序。
+>Adobe customers use [Adobe Developer Console](https://developer.adobe.com/console) to generate credentials that enable access to various APIs. Customers select from various credential types ranging from OAuth Server-to-Server to Single-Page App. One of those credential types, Service Account (JWT) credentials, has been deprecated in favor of the OAuth Server-to-Server credentials with Service Pack 20. This change can be back ported to older Service Packs, starting with Service Pack 11 up to Service Pack 20 with the use of a hotfix that you can download here. -->
 
 Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例如，Adobe Target、Adobe Analytics 等。
 
