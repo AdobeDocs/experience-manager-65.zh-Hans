@@ -5,7 +5,7 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 54f2b7fda39f97c4f8a1d28ac51b7b998bf8e4a1
+source-git-commit: ddd411a5dde57cf66cbcb458578b0aa32139b649
 workflow-type: tm+mt
 source-wordcount: '2302'
 ht-degree: 1%
@@ -50,7 +50,7 @@ Venia品牌最近开始使用可持续材料生产一些产品，该公司希望
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. 添加必要的OSGi配置，以便将AEM实例连接到Adobe Commerce实例，或将配置添加到新创建的项目。
@@ -392,7 +392,7 @@ AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖 [HT
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. 打开新的浏览器窗口，然后导航至AEM和 **OSGi控制台** > **状态** > **Sling模型**： [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
@@ -471,7 +471,7 @@ AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖 [HT
 
    ```shell
    $ cd aem-cif-guides-venia/
-   $ mvn clean install -PautoInstallSinglePackage -Pclassic,cloud
+   $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
 1. 刷新至 **Venia主页** 在 [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html) 添加了Product Teaser的位置。
