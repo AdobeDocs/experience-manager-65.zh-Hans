@@ -6,7 +6,7 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 17a8dc53d77dfbc3dc3a4dc2f2176eaba3e1cb7c
+source-git-commit: 5aff321eb52c97e076c225b67c35e9c6d3371154
 workflow-type: tm+mt
 source-wordcount: '2415'
 ht-degree: 19%
@@ -338,5 +338,5 @@ ht-degree: 19%
 >[!MORELIKETHIS]
 >
 >* [概述以及如何培训智能标记](enhanced-smart-tags.md)
->* [OAuth凭据的智能标记疑难解答](config-smart-tagging.md)
+>* [OAuth凭据的智能标记疑难解答](config-oauth.md)
 >* [有关智能标记的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
