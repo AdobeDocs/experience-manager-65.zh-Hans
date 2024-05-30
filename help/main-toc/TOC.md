@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: b274d150ccffb93858de6a3a8f7e05441776d0fb
+source-git-commit: 671d35086981b5967c28b399050aef0e070ecddf
 workflow-type: tm+mt
-source-wordcount: '7400'
+source-wordcount: '7406'
 ht-degree: 20%
 
 ---
@@ -351,6 +351,7 @@ ht-degree: 20%
       + [预览 3D 资源](/help/assets/previewing-3d-assets.md)
       + [审核文件夹资源和收藏集](/help/assets/bulk-approval.md)
       + [增强型智能标记](/help/assets/enhanced-smart-tags.md)
+      + [OAuth凭据的智能标记疑难解答](/help/assets/config-oauth.md)
       + [时间轴中的活动流](/help/assets/activity-stream.md)
       + [处理资产](/help/assets/assets-workflow.md)
       + [添加图像映射](/help/assets/image-maps.md)
