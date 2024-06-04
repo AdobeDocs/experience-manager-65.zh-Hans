@@ -10,10 +10,10 @@ role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: ba60ff06097b7f88ad64dda8ad1575bb88743588
+source-git-commit: 2a6cf0e85aace1516818ce87bc35b1b35f3da6e8
 workflow-type: tm+mt
-source-wordcount: '741'
-ht-degree: 4%
+source-wordcount: '672'
+ht-degree: 5%
 
 ---
 
@@ -45,11 +45,12 @@ AEM Assets是通过Brand Portal控制台使用Adobe Developer配置的，该控�
 >
 >Adobe建议您继续使用现有的旧版OAuth网关配置。 如果您遇到旧版OAuth网关配置问题，请删除现有配置，并通过Adobe Developer控制台创建配置。
 
-此帮助描述了以下两个用例：
+<!--
+This help describes the following two use-cases:
 
-* [新配置](#configure-new-integration-65)：如果您是新Brand Portal用户，并且想要使用Brand Portal配置您的AEM Assets创作实例，可以通过Adobe Developer Console创建配置。
-* [升级配置](#upgrade-integration-65)：如果您是在旧版OAuth网关上进行配置的现有Brand Portal用户，请删除现有配置，并通过Adobe Developer控制台创建配置。
-
+* [New configuration](#configure-new-integration-65): If you are a new Brand Portal user and want to configure your AEM Assets Author instance with Brand Portal, you can create a configuration by way of the Adobe Developer Console. 
+* [Upgrade configuration](#upgrade-integration-65): If you are an existing Brand Portal user having configuration on legacy OAuth Gateway, delete the existing configuration and create a configuration by way of Adobe Developer Console.
+-->
 所提供的信息基于这样一种假设，即任何阅读本“帮助”的人员都熟悉以下技术：
 
 * 安装、配置和管理Adobe Experience Manager和AEM软件包。
@@ -112,7 +113,7 @@ AEM Assets是通过Brand Portal控制台使用Adobe Developer配置的，该控�
 
 如果您是首次使用Brand Portal配置AEM Assets，请按照列出的顺序执行以下步骤：
 
-### 创建配置 {#create-new-configuration}
+### 创建新配置 {#create-new-configuration}
 
 按照指定的顺序执行以下步骤，使用Brand Portal配置Experience Manager Assets。
 
