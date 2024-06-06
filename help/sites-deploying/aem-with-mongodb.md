@@ -10,16 +10,16 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a8203a6bccff821dd6ca3f63c196829379aabe55
 workflow-type: tm+mt
-source-wordcount: '6185'
+source-wordcount: '6192'
 ht-degree: 0%
 
 ---
 
 # 带有MongoDB的Adobe Experience Manager{#aem-with-mongodb}
 
-本文意在增进对使用MongoDB成功部署AEM (Adobe Experience Manager)所必需的任务和注意事项的了解。
+本文旨在帮助您更好地了解成功使用MongoDB部署AEM (Adobe Experience Manager)所需的任务和注意事项。
 
 有关更多与部署相关的信息，请参阅 [部署和维护](/help/sites-deploying/deploy.md) 一节。
 
@@ -46,7 +46,7 @@ MongoDB通常用于支持符合以下条件之一的AEM创作部署：
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-最低的部署需要三个 `mongod` 配置为复制副本集的实例。 一个实例被选为初级实例，而其他实例被选为次级实例，该选举由管理 `mongod`. 连接到每个实例的是本地磁盘。 因此，群集可以支持该负载，建议最小吞吐量为每秒12 MB，并且每秒I/O操作(IOPS)超过3000个。
+最低的部署需要三个 `mongod` 配置为复制副本集的实例。 一个实例被选为初级实例，而其他实例被选为次级实例，该选举由管理 `mongod`. 连接到每个实例的是本地磁盘。 因此，群集可以支持负载，建议最小吞吐量为每秒12 MB，并且每秒的I/O操作(IOPS)超过3000个。
 
 AEM作者已连接到 `mongod` 实例，每个AEM作者都连接到所有三个 `mongod` 实例。 写操作被发送到主数据库，并且可以从任何实例读取数据。 流量根据Dispatcher的负载分发到任何一个活动的AEM创作实例。 Oak数据存储是 `FileDataStore`和MongoDB监控由MMS或MongoDB Ops Manager提供，具体取决于部署的位置。 操作系统级别和日志监控由第三方解决方案（如Splunk或Ganglia）提供。
 
@@ -60,7 +60,7 @@ AEM作者已连接到 `mongod` 实例，每个AEM作者都连接到所有三个 
 
 如果运行项目的不同技术团队之间通信良好，则支持虚拟化环境。 这种支持包括运行AEM的团队、拥有操作系统的团队以及管理虚拟化基础架构的团队。
 
-有些特定要求涵盖MongoDB实例的I/O容量，这些要求必须由管理虚拟化环境的团队进行管理。 如果项目使用云部署(如Amazon Web Services)，则必须为实例配置足够的I/O容量和一致性，以支持MongoDB实例。 否则，MongoDB进程和Oak存储库会不可靠和不稳定地执行。
+对于MongoDB实例的I/O容量有特定的要求，必须由管理虚拟化环境的团队进行管理。 如果项目使用云部署(如Amazon Web Services)，则必须为实例配置足够的I/O容量和一致性，以支持MongoDB实例。 否则，MongoDB进程和Oak存储库会不可靠和不稳定地执行。
 
 在虚拟化环境中，MongoDB需要特定的I/O和VM配置，以确保MongoDB的存储引擎不会受到VMWare资源分配策略的损害。 成功的实施可确保各个团队之间不存在障碍，并且所有团队都已注册以提供所需的性能。
 
@@ -105,7 +105,7 @@ MongoDB 3.0中的WiredTiger存储引擎也存在同样的限制，但工作集�
 
 ### MongoDB Cloud Manager {#mongodb-cloud-manager}
 
-MongoDB Cloud Manager是MongoDB提供的免费服务，用于监视和管理MongoDB实例。 它提供了实时查看MongoDB群集的性能和运行状况的视图。 它同时管理云实例和私有托管实例，前提是实例可以访问Cloud Manager监控服务器。
+MongoDB Cloud Manager是MongoDB提供的免费服务，用于监视和管理MongoDB实例。 它实时提供有关MongoDB群集的性能和运行状况的视图。 它同时管理云实例和私有托管实例，前提是实例可以访问Cloud Manager监控服务器。
 
 它要求在MongoDB实例上安装连接到监控服务器的代理。 代理分为三个级别：
 
@@ -113,7 +113,7 @@ MongoDB Cloud Manager是MongoDB提供的免费服务，用于监视和管理Mong
 * 可以监视的监视代理 `mongod` 实例，
 * 可对数据进行定时备份的备份代理。
 
-虽然使用Cloud Manager来自动维护MongoDB群集使许多例行任务更加容易，但它不是必需的，也不用于备份。 但是，在选择Cloud Manager进行监视时，需要监视。
+虽然使用Cloud Manager来自动维护MongoDB群集使许多例行任务更加容易，但它不是必需的，也不用于备份。 但是，在选择要监视的Cloud Manager时，需要监视。
 
 有关MongoDB Cloud Manager的更多信息，请参阅 [MongoDB文档](https://docs.cloud.mongodb.com/).
 
@@ -125,7 +125,7 @@ MongoDB Ops Manager与MongoDB Cloud Manager是相同的软件。 注册后，可
 
 运行AEM MongoDB群集需要操作系统级别的监控。
 
-Ganglia是此类系统的一个良好示例，它提供了所需信息的范围和详细信息，这些信息超出基本运行状况指标，如CPU、平均负载和可用磁盘空间。 要诊断问题，需要较低级别的信息，例如熵池级别、CPU I/O等待、处于FIN_WAIT2状态的套接字。
+Ganglia是此类系统的一个良好示例，它提供了所需信息的范围和详细信息，这些信息超出基本健康指标，如CPU、负载平均和可用磁盘空间。 要诊断问题，需要较低级别的信息，例如熵池级别、CPU I/O等待、处于FIN_WAIT2状态的套接字。
 
 ### 日志聚合 {#log-aggregation}
 
@@ -188,7 +188,7 @@ MongoDB服务器AEM必须连接到。 与默认复制副本集的所有已知成
 高速缓存大小(MB)。 此空间分布在 `DocumentNodeStore`. 默认值为256 MB。 但是，Oak读取性能受益于较大的缓存。
 
 * `blobCacheSize`
-AEM可能会缓存经常使用的Blob，以避免从数据存储中重新获取它们。 这样做对性能影响更大，尤其是在MongoDB数据库中存储Blob时。 所有基于文件系统的Data Stores都受益于操作系统级别的磁盘缓存。
+AEM可能会缓存经常使用的Blob，以避免从数据存储中重新获取它们。 这样做会对性能产生更大的影响，尤其是在MongoDB数据库中存储Blob时。 所有基于文件系统的Data Stores都受益于操作系统级别的磁盘缓存。
 
 #### 数据存储配置 {#data-store-configuration}
 
@@ -233,7 +233,7 @@ cacheSizeInMB=128
 
 ### 操作系统支持 {#operating-system-support}
 
-MongoDB 2.6使用内存映射存储引擎，该引擎对RAM和磁盘之间操作系统级别管理的某些方面很敏感。 MongoDB实例的查询和读取性能依赖于避免或消除通常称为页面错误的慢速I/O操作。 这些问题都是适用于 `mongod` 尤其是流程。 不要与操作系统级别的页面错误混淆。
+MongoDB 2.6使用内存映射存储引擎，该引擎对RAM和磁盘之间操作系统级别管理的某些方面很敏感。 MongoDB实例的查询和读取性能依赖于避免或消除通常称为页面错误的慢速I/O操作。 这些问题都是适用于 `mongod` 尤其是流程。 请勿将此与操作系统级别的页面错误混为一谈。
 
 为了快速操作，MongoDB数据库应仅访问RAM中已存在的数据。 它必须访问的数据由索引和数据组成。 此索引和数据集合称为工作集。 当工作集大于可用RAM时，MongoDB必须从磁盘中分页该数据，从而产生I/O开销，并逐出内存中已有的其他数据。 如果逐出导致从磁盘重新加载数据，则页面故障会占主导地位，性能会降低。 如果工作集是动态的、可变的，则会产生更多的页面错误来支持操作。
 
@@ -241,7 +241,7 @@ MongoDB运行在多种操作系统上，包括各种Linux®风格、Windows和ma
 
 #### Linux® {#linux}
 
-* 关闭透明的拥抱和碎片整理。 请参阅 [透明的大页面设置](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) 以了解更多信息。
+* 关闭透明的hugepages和碎片整理。 请参阅 [透明的大页面设置](https://docs.mongodb.com/manual/tutorial/transparent-huge-pages/) 以了解更多信息。
 * [调整预读设置](https://docs.mongodb.com/manual/administration/production-notes/#readahead) 在存储数据库文件的设备上，以适合您的用例。
 
    * 对于MMAPv1存储引擎，如果您的工作集大于可用的RAM，并且文档访问模式是随机的，请考虑将预读数降低到32或16。 评估不同的设置，以便找到使驻留内存最大化并降低页面错误数的最佳值。
@@ -342,7 +342,7 @@ WiredTiger日志使用 [跳动](https://docs.mongodb.com/manual/core/journaling/
 
 WiredTiger内部缓存中的数据与磁盘格式的数据使用不同的表示形式：
 
-* 文件系统缓存中的数据与磁盘上的格式相同，包括任何数据文件压缩的优点。 操作系统使用文件系统缓存来减少磁盘I/O。
+* 文件系统缓存中的数据与磁盘上的格式相同，包括对数据文件进行任何压缩的好处。 操作系统使用文件系统缓存来减少磁盘I/O。
 
 加载到WiredTiger内部缓存中的索引与磁盘格式的数据表示不同，但仍可以利用索引前缀压缩来减少RAM使用量。
 
@@ -405,7 +405,7 @@ MongoDB进程在不同的分配策略下的行为有所不同：
 
 #### 远程文件系统 {#remote-filesystems}
 
-不建议将NFS等远程文件系统用于MongoDB的内部数据文件（mongod进程数据库文件），因为它们引入太多延迟。 不要混淆Oak Blob (FileDataStore)的存储所需的共享文件系统，建议使用NFS。
+对于MongoDB的内部数据文件（mongod进程数据库文件），不建议使用NFS等远程文件系统，因为它们引入太多延迟。 不要混淆Oak Blob (FileDataStore)的存储所需的共享文件系统，建议使用NFS。
 
 #### 预读 {#read-ahead}
 
@@ -567,13 +567,13 @@ echo "{nThreads:32,fileSizeMB:1000,w:true}" | mongoperf
 1. 关闭内存膨胀
 1. 为托管MongoDB数据库的虚拟机预分配和保留内存
 1. 使用存储I/O控制将足够的I/O分配给 `mongod` 进程。
-1. 通过设置来保证托管MongoDB的计算机的CPU资源 [CPU保留](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
+1. 通过设置，确保托管MongoDB的计算机的CPU资源 [CPU保留](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)
 
-1. 考虑使用ParaVirtual I/O驱动程序。 请参阅 [知识库文章](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&amp;cmd=displayKC&amp;externalId=1010398).
+1. 考虑使用ParaVirtual I/O驱动程序。 <!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
 ### Amazon Web Services {#amazon-web-services}
 
-有关如何使用Amazon Web Services设置MongoDB的文档，请查看 [配置AWS集成](https://docs.cloud.mongodb.com/tutorial/configure-aws-settings/) MongoDB网站上的文章。
+有关如何使用Amazon Web Services设置MongoDB的文档，请查看 [配置AWS集成](https://www.mongodb.com/docs/cloud-manager/tutorial/configure-aws-integration/) MongoDB网站上的文章。
 
 ## 在部署之前保护MongoDB {#securing-mongodb-before-deployment}
 
@@ -595,7 +595,7 @@ echo "{nThreads:32,fileSizeMB:1000,w:true}" | mongoperf
 
 在不使用Dispatcher的情况下运行AEM需要由其他应用程序执行SSL终止和负载平衡。 之所以需要这样做，是因为会话必须与创建它们的AEM实例具有相关性，这个概念称为粘性连接。 原因是要确保对内容的更新显示最小的延迟。
 
-查看 [Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 有关如何配置的详细信息。
+查看 [Dispatcher文档](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/dispatcher) 有关如何配置的详细信息。
 
 ### 其他配置 {#additional-configuration}
 

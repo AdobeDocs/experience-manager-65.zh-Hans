@@ -8,9 +8,9 @@ feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: ed7183efa57db6d97941e3acc99d126c2fc0f6c5
 workflow-type: tm+mt
-source-wordcount: '585'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 Dynamic Media支持传送带隐藏式字幕的视频和自适应视频集。 字幕必须显示在视频内容的顶部。
 
-请参阅 [Dynamic Media中的视频 — 向视频添加隐藏式字幕或字幕](/help/assets/video.md#adding-captions-to-video).
+请参阅 [Dynamic Media中的视频 — 向视频添加隐藏式字幕](/help/assets/video.md#adding-captions-to-video).
 
 >[!MORELIKETHIS]
 >
