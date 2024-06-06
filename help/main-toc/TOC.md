@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 671d35086981b5967c28b399050aef0e070ecddf
+source-git-commit: 79ae35f35d33a072480bd9cde19274d89c8ef903
 workflow-type: tm+mt
-source-wordcount: '7406'
+source-wordcount: '7408'
 ht-degree: 20%
 
 ---
@@ -19,6 +19,7 @@ ht-degree: 20%
 + 发行说明 {#release-notes}
    + [发行说明](/help/release-notes/release-notes.md)
    + 以前的发行说明 {#service-pack}
+      + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
       + [6.5.17](/help/release-notes/previous/6-5-17.md)
@@ -511,7 +512,7 @@ ht-degree: 20%
       + [自适应表单创作简介](/help/forms/using/introduction-forms-authoring.md)
       + [交互式通信简介](/help/forms/using/interactive-communications-overview.md)
       + [管理表单简介](/help/forms/using/introduction-managing-forms.md)
-      + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html)
+      + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
       + 教程：创建您的第一个自适应表单 {#create-first-adaptive-form}
          + [教程：创建您的第一个自适应表单](/help/forms/using/create-your-first-adaptive-form.md)
          + [教程：创建自适应表单](/help/forms/using/create-adaptive-form.md)
@@ -1338,7 +1339,7 @@ ht-degree: 20%
          + [开发批量编辑器](/help/sites-developing/dev-bulk-editor.md)
          + [开发报告](/help/sites-developing/dev-reports.md)
       + 组件{#components}
-         + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+         + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
          + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/style-system.html)
          + [组件概述](/help/sites-developing/components.md)
          + [AEM组件 — 基础知识](/help/sites-developing/components-basics.md)
