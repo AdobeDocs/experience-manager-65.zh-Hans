@@ -8,7 +8,7 @@ docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: c49bff425ccbd00480e5b17fa50ca8f25df80d2f
 workflow-type: tm+mt
 source-wordcount: '4010'
 ht-degree: 0%
@@ -545,6 +545,26 @@ AEM Forms的以下子系统不是 [508](https://www.section508.gov/) 合规：
 - [JEE上单服务器AEM Forms部署的系统要求](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
 - [JEE部署上的群集AEM Forms的系统要求](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
+### Adobe Acrobat和Adobe Reader {#adobe-acrobat-and-adobe-reader}
+
+<table>
+ <tbody>
+  <tr>
+   <th><p><strong>Acrobat和Adobe Reader（基本）</strong></p> </th>
+   <th><p><strong>支持的修补程序定义</strong></p> </th>
+  </tr>
+  <tr>
+   <td>Acrobat 2020（传统途径）</td>
+   <td>版本20.004.30006或更高版本<br /> </td>
+  </tr>
+
+</tbody>
+</table>
+
+>[!NOTE]
+>
+>Acrobat DC产品系列为Acrobat和Reader引入了两个路径，它们是不同的产品：“Classic”和“Continuous”。 有关详细信息和两个跟踪的比较，请参阅 [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
+
 ## AEM Forms on JEE支持的客户端 {#supported-clients-for-aem-forms-on-jee}
 
 ### Workbench {#workbench}
@@ -591,26 +611,6 @@ AEM Forms的以下子系统不是 [508](https://www.section508.gov/) 合规：
 - Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC
 - 安装设计器的管理权限
 - Microsoft® Visual C++ 2019（VC 14.28或更高版本）32位运行时
-
-### Adobe Acrobat和Adobe Reader {#adobe-acrobat-and-adobe-reader}
-
-<table>
- <tbody>
-  <tr>
-   <th><p><strong>Acrobat和Adobe Reader（基本）</strong></p> </th>
-   <th><p><strong>支持的修补程序定义</strong></p> </th>
-  </tr>
-  <tr>
-   <td>Acrobat 2020（传统途径）</td>
-   <td>版本20.004.30006或更高版本<br /> </td>
-  </tr>
-
-</tbody>
-</table>
-
->[!NOTE]
->
->Acrobat DC产品系列为Acrobat和Reader引入了两个路径，它们是不同的产品：“Classic”和“Continuous”。 有关详细信息和两个跟踪的比较，请参阅 [https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html).
 
 ### 浏览器 {#browsers}
 
