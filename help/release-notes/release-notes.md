@@ -5,9 +5,10 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 6bf2d6409a15be02a247fab84caa743e8542da13
+exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
+source-git-commit: 4035bfae6a525292ca71b182ebed2ac9839426b8
 workflow-type: tm+mt
-source-wordcount: '3032'
+source-wordcount: '3050'
 ht-degree: 3%
 
 ---
@@ -219,6 +220,12 @@ ht-degree: 3%
 
 * 在模板编辑器中，文本字符串 *`No video available.`* 未本地化。 (SITES-13190)
 * 激活或停用用户后的字符串在中未本地化 **工具** > **安全性** > **用户** > *任意用户名* > **激活** > **确定**，并选择 *任意用户名* > **取消激活** > **确定**. (NPR-41737)
+
+#### Oak {#foundation-oak-6521}
+
+* 性能回归修复 — 避免对类似条件进行范围查询。 (OAK-9481)
+
+* 新的Oak版本是1.22.20。
 
 #### Platform{#foundation-platform-6521}
 
@@ -484,4 +491,3 @@ UberJar用于 [!DNL Experience Manager] 6.5.21.0可从以下网站获取： [Mav
 >* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [订阅Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)
-
