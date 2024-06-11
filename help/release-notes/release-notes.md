@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 4035bfae6a525292ca71b182ebed2ac9839426b8
+source-git-commit: 004cf5b30fa3bd108a45a8b6322f2ee3d3085ee5
 workflow-type: tm+mt
 source-wordcount: '3050'
 ht-degree: 3%
@@ -224,7 +224,6 @@ ht-degree: 3%
 #### Oak {#foundation-oak-6521}
 
 * 性能回归修复 — 避免对类似条件进行范围查询。 (OAK-9481)
-
 * 新的Oak版本是1.22.20。
 
 #### Platform{#foundation-platform-6521}
