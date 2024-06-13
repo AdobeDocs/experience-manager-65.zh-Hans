@@ -5,7 +5,7 @@ topic-tags: installing
 role: Admin, User, Developer
 solution: Experience Manager, Experience Manager Forms
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 0a1a0d8e3a2794bda247e7b07a2ef9d9fcac7c13
+source-git-commit: 7b0f8222408d43a298fa2036020963721cfbd1f9
 workflow-type: tm+mt
 source-wordcount: '5660'
 ht-degree: 1%
@@ -78,8 +78,8 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
 
 >[!NOTE]
 >
->* 在Microsoft® Windows上，PDF Generator支持WebKit、Acrobat WebCapture和PhantomJS转换路由，以将HTML文件转换为PDF文档。
->* 在基于UNIX的操作系统上，PDF Generator支持WebKit和PhantomJS转换路径以将HTML文件转换为PDF文档。
+>* 在Microsoft® Windows上，PDF Generator支持将HTML文件转换为PDF文档的WebKit、Acrobat WebCapture和WebToPDF转换途径。
+>* 在基于UNIX的操作系统上，PDF Generator支持WebKit和WebToPDF转换路径以将HTML文件转换为PDF文档。
 >
 
 ### 基于UNIX的操作系统的额外要求 {#extrarequirements}
@@ -168,7 +168,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
    * /usr/lib/libcrypto.so
    * /usr/lib/libssl.so
 
-* **(仅限PDF Generator)** PDF Generator服务支持将HTML文件转换为PDF文档的WebKit和PhantomJS路由。 要启用PhantomJS路由的转换，请安装下面列出的64位库。 通常，这些库已经安装。 如果缺少任何库，请手动进行安装：
+* **(仅限PDF Generator)** PDF Generator服务支持WebKit和WebToPDF路由将HTML文件转换为PDF文档。 要启用WebToPDF路由的转换，请安装下面列出的64位库。 通常，这些库已经安装。 如果缺少任何库，请手动进行安装：
 
    * linux-gate.so.1
    * libz.so.1
@@ -336,7 +336,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
 
 ### （仅限Windows）配置HTML到PDF的转换 {#configure-html-to-pdf-conversion}
 
-PDF Generator服务提供WebKit、WebCapture和PhantomJS路由或将HTML文件转换为PDF文档的方法。 在Windows上，要启用WebKit和Acrobat WebCapture路由的转换，请将Unicode字体复制到%windir%\fonts目录。
+PDF Generator服务提供WebKit、WebCapture和WebToPDF路由或将HTML文件转换为PDF文档的方法。 在Windows上，要启用WebKit和Acrobat WebCapture路由的转换，请将Unicode字体复制到%windir%\fonts目录。
 
 >[!NOTE]
 >
@@ -344,7 +344,7 @@ PDF Generator服务提供WebKit、WebCapture和PhantomJS路由或将HTML文件�
 
 ### （仅限基于UNIX的平台）用于HTML到PDF转换的额外配置  {#extra-configurations-for-html-to-pdf-conversion}
 
-在基于UNIX的平台上，PDF Generator服务支持WebKit和PhantomJS路由将HTML文件转换为PDF文档。 要启用HTML到PDF的转换，请执行以下适用于您的首选转换路由的配置：
+在基于UNIX的平台上，PDF Generator服务支持WebKit和WebToPDF路由将HTML文件转换为PDF文档。 要启用HTML到PDF的转换，请执行以下适用于您的首选转换路由的配置：
 
 ### （仅限基于UNIX的平台）启用对Unicode字体的支持（仅限WebKit） {#enable-support-for-unicode-fonts-webkit-only}
 
@@ -485,7 +485,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该资源包中包�
 
 ### （仅限Windows）配置HTML到PDF转换的主路由 {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-PDF Generator服务提供将HTML文件转换为PDF文档的多种途径：Webkit、Acrobat WebCapture（仅限Windows）和PhantomJS。 Adobe建议使用PhantomJS路由，因为它能够处理动态内容，并且不依赖于32位库或不需要额外字体。 此外，PhantomJS路由不需要sudo或root访问权限才能运行转换。
+PDF Generator服务提供将HTML文件转换为PDF文档的多种途径：Webkit、Acrobat WebCapture（仅限Windows）和WebToPDF。 Adobe建议使用WebToPDF路由，因为它能够处理动态内容，并且不依赖于32位库或不需要额外字体。 此外，WebToPDF路由不需要sudo或root访问权限即可运行转换。
 
 HTML到PDF转换的默认主要路由为Webkit。 要更改转换路线，请执行以下操作：
 
@@ -583,7 +583,7 @@ Assembler服务依赖于Reader扩展服务、签名服务、Forms服务和输出
 
 1. 导航到 `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`。
 
-1. 运行以下命令以列出PhantomJS需要用于HTML到PDF转换的所有库。
+1. 运行以下命令以列出WebToPDF需要用于HTML到PDF转换的所有库。
 
    `ldd phantomjs`
 
@@ -691,11 +691,11 @@ Assembler服务依赖于Reader扩展服务、签名服务、Forms服务和输出
 
 * 确保在Fonts配置UI中添加了PDF Generator目录。
 
-**Linux和Solaris（PhantomJS转换路由）**
+**Linux和Solaris（WebToPDF转换途径）**
 
-* 确保对于基于Webkit的HTMLToPDF转换有32位库(libicudata.so.42)可用，对于基于PhantomJS的HTMLToPDF转换有64位(libicudata.so.42库可用。
+* 确保对于基于Webkit的HTMLToPDF转换可用32位库(libicudata.so.42)，对于基于WebToPDF的HTMLToPDF转换可用64位（libicudata.so.42库）。
 
-* 运行以下命令列出phantomjs缺少的库：
+* 运行以下命令列出WebToPDF缺少的库：
 
   ```
   ldd phantomjs | grep not
