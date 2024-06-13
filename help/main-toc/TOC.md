@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 79ae35f35d33a072480bd9cde19274d89c8ef903
+source-git-commit: bd661b0a73046e7ccfb07a430983857f753ed442
 workflow-type: tm+mt
-source-wordcount: '7408'
+source-wordcount: '7421'
 ht-degree: 20%
 
 ---
@@ -621,6 +621,8 @@ ht-degree: 20%
       + [在自适应表单中创建和使用自适应Forms片段](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [为基于核心组件的自适应Forms创建主题](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
       + [在自适应表单中创建和使用自定义函数](/help/forms/using/create-and-use-custom-functions.md)
+      + [规则编辑器](/help/forms/using/rule-editor-core-components.md)
+      + [在自适应表单核心组件中创建和使用自定义函数](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [为基于核心组件的自适应Forms创建和使用自定义错误处理程序](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
    + 自适应Forms — 基本创作 {#adaptive-forms-basic-authoring}
       + [使用自适应表单的最佳实践](/help/forms/using/adaptive-forms-best-practices.md)

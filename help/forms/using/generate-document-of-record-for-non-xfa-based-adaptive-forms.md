@@ -1,17 +1,16 @@
 ---
 title: 为自适应表单生成记录文档
-description: 介绍如何为自适应表单的记录文档(DoR)生成模板。
+description: 介绍如何为自适应表单生成记录文档(DoR)。
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms, Foundation Components
-exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
 workflow-type: tm+mt
-source-wordcount: '4256'
+source-wordcount: '4308'
 ht-degree: 3%
 
 ---
@@ -315,47 +314,52 @@ ht-degree: 3%
 1. 选择 ![多塔布](/help/forms/using/assets/dortab.png). 此时将显示记录文档选项卡。
 1. 选择用于呈现记录文档的默认模板或自定义模板。 如果选择默认模板，则记录文档的缩略图预览将显示在“模板”下拉列表下方。
 
-   ![品牌模板](/help/forms/using/assets/brandingtemplate.png)
+   ![品牌模板](/help/forms/using/assets/brandingtemplateupdate.png)
 
    如果选择选择自定义模板，请在AEM Forms服务器上浏览并选择XDP。 如果要使用AEM Forms服务器上尚未存在的模板，则需要先将XDP上传到AEM Forms服务器。
 
-1. 根据您选择默认模板还是自定义模板，以下部分或全部属性将出现在“记录文档”选项卡中。 请适当指定以下内容：
+### 母版页属性(#master-page-properties)
 
-   * **徽标图像**：您可以选择使用自适应表单中的徽标图像，从DAM中选择徽标图像，或从计算机上传徽标图像。
-   * **表单标题**
-   * **标题文本**
-   * **免责声明标签**
-   * **免责声明**
-   * **免责声明文本**
-   * **重点颜色**：标题文本和分隔行在文档或记录PDF中呈现的颜色
-   * **字体系列**：记录文档PDF中文本的字体系列
-   * **对于复选框和单选按钮组件，仅显示选定值**
-   * **用于多个选定值的分隔符**
-   * **包括未绑定到数据模型的表单对象**
-   * **从记录文档排除隐藏字段**
-   * **隐藏面板描述**
+根据您是选择默认模板还是自定义模板，以下部分或全部母版页属性将显示在“记录文档”选项卡中，如上图所示。 请适当指定以下内容：
 
-   如果您选择的自定义XDP模板包含多个母版页，则这些页的属性将显示在 **[!UICONTROL 内容]** 的部分 **[!UICONTROL 记录文档]** 选项卡。
+* **徽标图像**：您可以选择使用自适应表单中的徽标图像，从DAM中选择徽标图像，或从计算机上传徽标图像。
+* **表单标题**
+* **标题文本**
+* **免责声明标签**
+* **免责声明**
+* **免责声明文本**
 
-   ![母版页属性](assets/master-page-properties.png)
+  <!--
+    * **Accent Color**: The color in which header text and separator lines are rendered in the document or record PDF
+    * **Font Family**: Font family of the text in the document of record PDF
+    * **For Check Box and Radio Button components, show only the selected values**
+    * **Separator for multiple selected value(s)**
+    * **Include form objects that are not bound to data model**
+    * **Exclude hidden fields from the document of record**
+    * **Hide description of panels**
+    -->
 
-   母版页属性包括徽标图像、页眉文本、表单标题、免责声明标签和免责声明文本。 您可以将自适应表单或XDP模板属性应用于记录文档。 默认情况下，AEM Forms将模板属性应用于记录文档。 您还可以定义母版页属性的自定义值。 有关如何在记录文档中应用多个母版页的信息，请参阅 [将多个母版页应用于记录文档](#apply-multiple-master-pages-dor).
+  如果您选择的自定义XDP模板包含多个母版页，则这些页的属性将显示在 **[!UICONTROL 内容]** 的部分 **[!UICONTROL 记录文档]** 选项卡。
 
-   >[!NOTE]
-   >
-   >如果您使用的是使用6.3之前的Designer版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
+  ![母版页属性](assets/master-page-properties.png)
 
-   ```xml
-   <proto>
-   <font typeface="Arial"/>
-   <fill>
-   <color value="4,166,203"/>
-   </fill>
-   <edge>
-   <color value="4,166,203"/>
-   </edge>
-   </proto>
-   ```
+  母版页属性包括徽标图像、页眉文本、表单标题、免责声明标签和免责声明文本。 您可以将自适应表单或XDP模板属性应用于记录文档。 默认情况下，AEM Forms将模板属性应用于记录文档。 您还可以定义母版页属性的自定义值。 有关如何在记录文档中应用多个母版页的信息，请参阅 [将多个母版页应用于记录文档](#apply-multiple-master-pages-dor).
+
+  >[!NOTE]
+  >
+  >如果您使用的是使用6.3之前的Designer版本创建的自适应表单模板，为了使重音颜色和字体系列属性正常工作，请确保根子表单下的自适应表单模板中存在以下内容：
+
+  ```xml
+  <proto>
+  <font typeface="Arial"/>
+  <fill>
+  <color value="4,166,203"/>
+  </fill>
+  <edge>
+  <color value="4,166,203"/>
+  </edge>
+  </proto>
+  ```
 
 1. 要保存品牌策略更改，请选择“完成”。
 
@@ -413,8 +417,23 @@ ht-degree: 3%
 
 **表单级别设置**
 
-* **包括DoR中未绑定的字段：** 设置属性后，记录文档中包含来自基于架构的自适应表单的未绑定字段。 默认情况下，它为true。
-* **若隐藏自DoR排除栏位：** 设置属性以从中排除隐藏字段 [!UICONTROL 记录文档] 在提交表单时。 当您启用时 [在服务器上重新验证](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)，服务器会先重新计算隐藏字段，然后再将这些字段从 [!UICONTROL 记录文档].
+* **[!UICONTROL 基本]**
+   * **模板：** 您可以选择模板“默认”或“自定义”。
+     ![替换文本](image.png)
+   * **重点颜色：** 您可以预定义 [!UICONTROL 记录文档].
+   * **字体系列：** 选择字体类型 [!UICONTROL 记录文档] 短信。
+   * **包括DoR中未绑定的字段：** 设置属性后，将包含中基于架构的自适应表单中未绑定的字段 [!UICONTROL 记录文档]. 默认情况下，它为true。
+   * **若隐藏自DoR排除栏位：** 设置属性以从中排除隐藏字段 [!UICONTROL 记录文档] 在提交表单时。 当您启用时 [在服务器上重新验证](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)，服务器会先重新计算隐藏字段，然后再将这些字段从 [!UICONTROL 记录文档]
+* **[!UICONTROL 表单字段属性]**
+   * 如果勾选此选项 **对于复选框和单选按钮组件，仅显示选定值**，它将生成仅具有选定值的DoR输出。
+   * 可以为多个选定值选择分隔符，也可以选择任何其他分隔符类型。
+   * 选项对齐
+      * 垂直
+      * 水平
+      * 与自适应表单相同
+     >[!NOTE]
+     > 垂直对齐和水平对齐仅适用于单选按钮和复选框
+* **[!UICONTROL 母版页属性]** 单击以了解有关 [母版页属性](#master-page-properties-master-page-properties)
 
 ## 在记录文档中应用分页符 {#apply-page-breaks-in-dor}
 
