@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 1ba2782fcc81e5090dced4eed83a3a4911676f09
+source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
 workflow-type: tm+mt
-source-wordcount: '3819'
+source-wordcount: '3825'
 ht-degree: 2%
 
 ---
@@ -199,7 +199,7 @@ ht-degree: 2%
 
 * 当用户尝试在页面加载时查看表单时，无法呈现。 (FORMS-13594)
 * 在Internet Explorer兼容模式下，日期输入字段组件在Microsoft Edge上无法正常工作。 (FORMS-13170)
-* 修复以下内容时，无法发送已停止的带有附件的电子邮件通知 [附加步骤以使用带有附件的电子邮件](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) 在服务器上执行。 (FORMS-14227)
+* 修复以下内容时，无法发送已停止的带有附件的电子邮件通知 [使用带有附件的电子邮件的其他步骤](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/troubleshooting/additional-steps-to-use-email-with-attachments) 在服务器上执行。 (FORMS-14227)
 * 在Service Pack 18 (6.5.18.0)上的AEM Forms Workspace上，用户评论任何上传的文档时，都会导致文档文件损坏。 (FORMS-13735)
 * 在AEM Forms Service Pack 18 (6.5.18.0)、Service Pack 19 (6.5.19.0)或Service Pack 20 (6.5.20.0)上，当用户尝试从侧面板搜索自适应表单时，搜索失败。 (FORMS-14117)
 * 当用户编辑以德语创建并翻译为英语的表单时，会导致“预览”和“编辑”模式之间的语言显示不一致。 这会导致RadioButton和Checkbox组件在“编辑”模式下以英语显示，而在“预览”模式下以德语正确显示。 (FORMS-13910)
@@ -212,7 +212,7 @@ ht-degree: 2%
    * 某些字段无法填充已翻译的数据。
    * 即使数据成功保存到词典，某些字段也不会翻译成新语言。
 
-#### [!DNL Forms Designer] {#forms-desgner-6520}
+#### [!DNL Forms Designer] {#forms-desgner-6521}
 
 * 当用户在AEM Forms Service Pack 19 (6.5.19.0)环境中使用AEM Forms Designer向现有表单添加新表时，它会崩溃。 (LC-3921978)
 * 当用户在Linux®环境中呈现自适应表单时，字段组件之间出现额外的空间。 (LC-3921957)

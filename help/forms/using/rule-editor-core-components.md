@@ -4,20 +4,19 @@ description: 自适应Forms规则编辑器允许您添加动态行为并将复�
 feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
-source-git-commit: 7e9b4cc233d4040faf61241b3cbe52d26bfdba1e
+source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
 workflow-type: tm+mt
-source-wordcount: '5599'
+source-wordcount: '5588'
 ht-degree: 1%
 
 ---
 
 # 将规则添加到自适应表单核心组件 {#adaptive-forms-rule-editor}
 
-<span class="preview"> 本文包含一些预发行版功能的内容。 这些预发行版功能只能通过我们的 [预发行渠道](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/release-notes#forms). 预发行计划下的功能包括：
+本文包含自适应Forms核心组件的最新规则编辑器功能，包括：
 * 支持使用When-then-else功能实施嵌套条件
 * 验证或重置面板和表单，包括字段
 * 支持自定义函数中的现代 JavaScript 功能，例如 let 和箭头函数（ES10 支持）。
-</span>
 
 规则编辑器功能有助于表单业务用户和开发人员编写关于自适应表单对象的规则。 这些规则根据预设条件、用户输入和用户对表单的操作，定义要在表单对象上触发的操作。 它有助于进一步简化表单填写体验，确保准确性和速度。
 
@@ -269,27 +268,23 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 将对象A的值设置为：
 
-（字符串 ABC）或
-（对象 C 的对象属性 X）或
-（来自函数的值）或
-（来自数学表达式的值）或
-（数据模型服务的输出值）;
+（字符串ABC） OR（对象C的对象属性X） OR（函数值） OR（数学表达式值） OR（数据模型服务的输出值）；
 
-当（可选）时：
+时间（可选）：
 
 （条件 1 和条件 2 和条件 3）为 TRUE;
 
-以下示例选择 `Question2` 作为 `True` 并设置 `Result` 作为 `correct`.
+下面的示例选择 as `True` 的值`Question2`并设置 as `correct`的值`Result`。
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表单数据模型服务的设置值规则的示例。
+使用表单数据模型服务的设置值规则示例。
 
 ### [!UICONTROL 显示] {#show}
 
 使用 **[!UICONTROL 显示]** 规则类型，您可以编写规则以根据是否满足条件来显示或隐藏表单对象。 显示规则类型也会在条件不满足或返回时触发“隐藏”操作 `False`.
 
-典型的显示规则结构如下：
+典型的显示规则的结构如下所示：
 
 `Show Object A;`
 
@@ -453,25 +448,25 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. Click **[!UICONTROL Save]**.
 -->
 
-### E. “完成”和“取消”按钮 {#done-and-cancel-buttons}
+### E.完成和取消按钮 {#done-and-cancel-buttons}
 
-“完成&#x200B;]**”**[!UICONTROL &#x200B;按钮用于保存规则。您可以保存不完整的规则。 但是，不完整是无效的，不会运行。 下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
+此 **[!UICONTROL 完成]** 按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整是无效的，不会运行。 下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
 
 “ **[!UICONTROL 取消]** ”按钮将放弃对规则所做的任何更改并关闭规则编辑器。
 
-## 写入规则 {#write-rules}
+## 编写规则 {#write-rules}
 
-您可以使用可视规则编辑器编写规则 <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+您可以使用可视化规则编辑器编写规则 <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
 
 我们首先看一下如何使用可视编辑器编写规则。
 
 ### 使用可视编辑器 {#using-visual-editor}
 
-让我们了解如何使用以下示例表单在可视化编辑器中创建规则。
+让我们了解如何使用以下示例表单在可视编辑器中创建规则。
 
 ![Create-rule-example](assets/create-rule-example.png)
 
-示例贷款申请表中的“贷款要求”部分要求申请人指定其婚姻状况、工资，如果已婚，还须指定其配偶的工资。 根据用户输入，规则将计算贷款资格金额，并显示在贷款资格字段中。 应用以下规则来实施方案：
+示例贷款申请表中的“贷款要求”部分要求申请人指定其婚姻状况、工资，如果已婚，则说明其配偶的工资。 根据用户输入，规则将计算贷款资格金额，并显示在贷款资格字段中。 应用以下规则来实施方案：
 
 * 配偶的“薪金”字段仅在婚姻状况为已婚时显示。
 * 贷款资格金额为工资总额的50%。
@@ -566,7 +561,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   在扩展表达式字段中，从&#x200B;**[!UICONTROL “选择运算符]**”字段中选择“除以”]**，从**[!UICONTROL “选择选项&#x200B;]**”字段中选择**[!UICONTROL “数字&#x200B;]****[!UICONTROL ”。然后，在数字字段中指定 **[!UICONTROL 2]** 。
+   在扩展表达式字段中，选择 **[!UICONTROL 除以]** 从 **[!UICONTROL 选择运算符]** 字段和 **[!UICONTROL 数字]** 从 **[!UICONTROL 选择选项]** 字段。 然后，指定 **[!UICONTROL 2]** 在数字字段中。
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
@@ -574,9 +569,9 @@ Users in the forms-power-users group can access code editor. For other users, co
    >
    >您可以使用“选择选项”字段中的组件、函数、数学表达式和属性值来创建复杂的表达式。
 
-   接下来，创建一个条件，当该条件返回True时，表达式将执行。
+   接下来，创建一个条件，当返回 True 时，表达式将执行。
 
-1. 选择 **[!UICONTROL 添加条件]** 添加When语句。
+1. 选择“添加条件&#x200B;]**”**[!UICONTROL &#x200B;以添加 When 语句。
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
@@ -856,7 +851,7 @@ var c = {
 
 ![复杂表达式](assets/complexexpression.png)
 
-您还可以拖放规则中的条件以进行编辑。 选择并将鼠标悬停在句柄上( ![句柄](assets/drag-handle.svg))。 如下所示，一旦指针变成手形符号，即可将条件拖放到规则中的任意位置。 规则结构将发生更改。
+您还可以拖放规则中的条件以进行编辑。 选择并将鼠标悬停在句柄上( ![句柄](assets/drag-handle.svg))。 指针变为手形符号后（如下所示），将条件拖放到规则中的任意位置。 规则结构会发生变化。
 
 ![拖放](assets/drag-and-drop.png)
 
@@ -866,7 +861,7 @@ var c = {
 
 下面是一个示例条件，如果房屋的抵押已经获得，则显示静态文本对象，用户通过填写日期字段来表示。
 
-当用户填写的财产抵押日期为过去时，自适应表单会显示有关收入计算的说明。 以下规则将用户填写的日期与当前日期进行比较，如果用户填写的日期早于当前日期，则表单将显示文本消息（名为Income）。
+当用户填写的财产抵押日期是过去时，自适应表单将显示有关收入计算的注释。 以下规则将用户填写的日期与当前日期进行比较，如果用户填写的日期早于当前日期，则表单将显示文本消息（名为“收入”）。
 
 ![日期表达式条件](assets/dateexpressioncondition.png)
 
@@ -878,7 +873,7 @@ var c = {
 
 规则编辑器可让您创建比较两个数字的条件。
 
-下面是一个示例条件，它显示申请人在当前地址停留的月数小于36时的静态文本对象。
+下面是一个示例条件，如果申请人在当前地址停留的月数少于 36 个月，则显示静态文本对象。
 
 ![数字比较条件](assets/numbercomparisoncondition.png)
 

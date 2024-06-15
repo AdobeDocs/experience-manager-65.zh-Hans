@@ -10,9 +10,9 @@ role: Admin, User, Developer
 feature: Forms Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 09eae6e3550e9e8505c042e23d6569971841d441
+source-git-commit: 6ef7e07f0b83b76981240533122aee8c3ee298c7
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '787'
 ht-degree: 0%
 
 ---
@@ -108,8 +108,11 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
 
 ## 常见问题解答 {#fandq}
 
-* **用户能否直接升级到64位？**
-   * 可以，用户可以直接升级到64位设计器。 要升级，请安装 [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) designer完整安装程序并应用后续的designer修补程序版本。
+* **用户能否直接升级或安装64位设计器？**
+   * 可以，用户可以直接升级或安装64位设计器。 要升级，请安装 [SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip) designer完整安装程序并应用后续的designer修补程序版本。
+
+     >[!NOTE]
+     > 在升级到64位设计器之前，请先卸载32位设计器（如果存在）。
 
 * **用户是否可以在系统上同时安装32位和64位？**
    * 不可以，32位和64位安装不能在同一台计算机上工作。 用户可以使用32位设计器或64位设计器。
@@ -117,6 +120,6 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
 * **如何检查用户使用的是64位设计器还是32位设计器？**
    * 可通过两种方式检查Forms Designer版本：
 
-      1. 打开“设计器”，转到“帮助”，单击“关于设计器”，您会看到设计器版本信息以及bits信息，例如，您会看到64位写在结尾处，如下所示：
+      1. 打开“设计器”，转到“帮助”，单击“关于设计器”，您会看到设计器版本信息以及bits信息，例如，您会看到64位写入版本末尾，如下所示：
          `6.5.21.20240522.1.161 | 64 bit`
-      1. 打开设计器，左上角显示一个品牌图标，其中包含产品名称的64位信息。
+      1. 打开设计器，左上角显示一个品牌图标，其中包含带有产品名称的64位信息。
