@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: e3219d57e069e546b177015e675666a8b927fb49
+source-git-commit: 84e56b9e9552903fa210cd680a64c268d5e15626
 workflow-type: tm+mt
-source-wordcount: '3825'
+source-wordcount: '3823'
 ht-degree: 2%
 
 ---
@@ -527,16 +527,15 @@ UberJar用于 [!DNL Experience Manager] 6.5.21.0可从以下网站获取： [Mav
 ### AEM Forms的已知问题 {#known-issues-aem-forms-6521}
 
 
-* 安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果您发现Geode jar的重复条目 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 在 `<AEM_Forms_Installation>/lib/caching/lib` 文件夹(FORMS-14926)。
+* 安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果您发现Geode jar的重复条目 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)` 在 `<AEM_Forms_Installation>/lib/caching/lib` 文件夹(FORMS-14926)中，执行以下步骤来解决问题：
 
-  执行以下步骤来解决问题：
+   1. 如果定位器正在运行，请停止它们。
+   1. 停止AEM服务器。
+   1. 转到 `<AEM_Forms_Installation>/lib/caching/lib`.
+   1. 删除所有Geode修补程序文件，但 `geode-*-1.15.1.2.jar`. 确认只有具有的Geode jar `version 1.15.1.2` 存在。
+   1. 在管理员模式下打开命令提示符。
+   1. 使用安装Geode修补程序 `geode-*-1.15.1.2.jar` 文件。
 
-   1. 按指定的顺序停止定位器和服务器（如果它们正在运行）。
-   1. 在管理员模式下运行修补程序安装程序以重新安装修补程序（重要信息）。
-   1. 确认只有具有的Geode jar `version 1.15.1.2` 存在。
-
-  >[!NOTE]
-  > 如果只有Geode jar具有 `version 1.15.1.2` 存在。
 
 ## 包含的OSGi包和内容包{#osgi-bundles-and-content-packages-included}
 
