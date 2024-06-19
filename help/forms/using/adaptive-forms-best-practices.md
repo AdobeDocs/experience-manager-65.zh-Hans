@@ -7,9 +7,9 @@ feature: Adaptive Forms, Foundation Components, Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 4637779a38e05b3a88adc644c52e574155cba4b5
 workflow-type: tm+mt
-source-wordcount: '5504'
+source-wordcount: '5538'
 ht-degree: 1%
 
 ---
@@ -63,6 +63,7 @@ Adobe Experience Manager (AEM) forms可以帮助您将复杂的交易转换为�
 设置AEM项目后，定义用于创作和自定义自适应表单模板和组件的策略。
 
 * 自适应表单模板是一种专门的AEM页面，用于定义自适应表单的结构和页眉页脚信息。 模板具有预配置的自适应表单布局、样式和基本结构。 AEM Forms提供了可用于创作自适应表单的开箱即用模板和组件。 但是，您可以根据需要创建自定义模板和组件。 建议收集在自适应表单中所需的其他模板和组件的要求。 有关详细信息，请参阅 [自定义自适应表单和组件](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
+* 建议使用表单管理器用户界面而不是CRX包管理器用户界面上传表单包，因为通过CRX包管理器上传包有时可能会导致异常。
 * AEM Forms允许您基于以下表单模型创建自适应表单。 表单模型用作表单与AEM系统之间数据交换的接口，并为自适应表单内外的数据流提供基于XML的结构。 此外，表单模型以模式和XFA约束的形式对自适应表单施加规则和约束。
 
    * **无**：使用此选项创建的自适应表单不使用任何表单模型。 从此类表单生成的数据 XML 具有带字段和相应值的平面结构。
