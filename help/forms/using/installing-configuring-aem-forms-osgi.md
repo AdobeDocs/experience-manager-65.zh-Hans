@@ -7,7 +7,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms, OSGI
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1882'
 ht-degree: 4%
@@ -18,7 +19,7 @@ ht-degree: 4%
 
 ## 简介 {#introduction}
 
-AEM Forms提供了一组表单以从最终用户获取数据：自适应表单、HTML5 Forms和PDF forms。 它还提供了用于列出网页上所有可用表单、分析表单使用情况以及根据用户档案定位用户的工具。 这些功能包含在AEM Forms附加组件包中。 附加组件包部署在AEM的创作或发布实例上。
+AEM Forms提供了一组表单以从最终用户获取数据：自适应表单、HTML5 Forms和PDF forms。 它还提供了用于列出网页上所有可用表单、分析表单使用情况以及根据用户档案定位用户的工具。 这些功能包含在AEM Forms附加组件包中。 附加组件包部署在AEM的Author或Publish实例上。
 
 **自适应表单：** 这些表单会根据设备的屏幕大小更改外观，具有引人入胜的互动性。 自适应Forms还可以与Adobe Analytics、Adobe Sign和Adobe Target集成。 它使您能够根据用户的人口统计和其他功能，为其提供个性化的表单和面向流程的体验。 您还可以将自适应表单与Adobe Sign集成。
 
@@ -30,7 +31,7 @@ AEM Forms是一个功能强大的企业级平台，数据捕获(自适应表单�
 
 ## 部署拓扑 {#deployment-topology}
 
-AEM Forms附加组件包是部署在AEM上的应用程序。 您只需要至少一个AEM创作和AEM发布实例即可运行AEM Forms数据捕获功能。 建议通过以下拓扑来运行AEM Forms AEM Forms数据捕获功能。 有关拓扑的详细信息，请参见 [AEM Forms的架构和部署拓扑](/help/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms附加组件包是部署在AEM上的应用程序。 您只需要至少一个AEM Author和AEM Publish实例即可运行AEM Forms数据捕获功能。 建议通过以下拓扑来运行AEM Forms AEM Forms数据捕获功能。 有关拓扑的详细信息，请参见 [AEM Forms的架构和部署拓扑](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![推荐拓扑](assets/recommended-topology.png)
 
@@ -41,7 +42,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 您只需要至少�
 * 硬件和软件基础架构已准备就绪。 有关支持的硬件和软件的详细列表，请参阅 [技术要求](/help/sites-deploying/technical-requirements.md).
 
 * AEM实例的安装路径不包含空格。
-* AEM实例已启动并正在运行。 对于Windows用户，请在提升的模式下安装AEM实例。 在AEM术语中，“实例”是在创作或发布模式下在服务器上运行的AEM的副本。 您至少需要两个 [AEM实例（一个创作实例和一个发布实例）](/help/sites-deploying/deploy.md) 要运行AEM Forms数据捕获功能，请执行以下操作：
+* AEM实例已启动并正在运行。 对于Windows用户，请在提升的模式下安装AEM实例。 在AEM术语中，“实例”是在创作或发布模式下在服务器上运行的AEM的副本。 您至少需要两个 [AEM实例(一个作者和一个Publish)](/help/sites-deploying/deploy.md) 要运行AEM Forms数据捕获功能，请执行以下操作：
 
    * **作者**：用于创建、上载和编辑内容以及管理网站的AEM实例。 内容准备好上线后，即会复制到发布实例。
    * **Publish**：AEM实例，通过Internet或内部网络向公众提供已发布的内容。
@@ -124,7 +125,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该资源包中包�
    >
    > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
-1. 对所有创作实例和发布实例重复步骤1-7。
+1. 对所有Author和Publish实例重复步骤1-7。
 
 ### （仅限Windows）自动安装Visual Studio可再发行组件 {#automatic-installation-visual-studio-redistributables}
 
@@ -166,16 +167,16 @@ AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCast
    ```
 
 1. 保存并关闭文件，然后启动AEM实例。
-1. 对所有创作实例和发布实例重复步骤1-4。
+1. 对所有Author和Publish实例重复步骤1-4。
 
 #### 配置序列化代理 {#configure-the-serialization-agent}
 
-列入允许列表对所有Author和Publish实例执行以下步骤，将包添加到中：
+对所有Author和Publish列入允许列表实例执行以下步骤，将包添加到Author中：
 
 1. 在浏览器窗口中打开AEM Configuration Manager。 默认URL为 `https://'[server]:[port]'/system/console/configMgr`.
 1. 搜索 **com.adobe.cq.deserfw.impl.DeserializationFirewallImpl.name** 并打开配置。
 1. 添加 **sun.util.calendar** 打包到 **允许列表** 字段。 单击&#x200B;**保存**。
-1. 对所有创作实例和发布实例重复步骤1-3。
+1. 对所有Author和Publish实例重复步骤1-3。
 
 ### 可选安装后配置 {#optional-post-installation-configurations}
 

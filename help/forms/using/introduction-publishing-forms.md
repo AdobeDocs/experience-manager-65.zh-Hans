@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 1%
@@ -80,7 +81,7 @@ Forms门户允许您将表单从表单存储库列出到门户页面上。 它�
 1. **为草稿和已提交的表单数据配置存储：** 默认情况下，草稿和提交数据存储在AEM存储库中。 在生产环境中，建议不要将草稿或已提交的表单数据存储在AEM存储库中。 [配置Forms Portal组件以将数据保存到安全位置](../../forms/using/draft-submission-component.md#customizing-the-storage).
 1. **（可选）自定义Forms Portal组件：** [自定义Forms Portal页面模板](../../forms/using/customizing-templates-forms-portal-components.md) 为组件提供独特的外观。
 1. **（可选）将自定义元数据添加到表单：** [将自定义元数据添加到表单](../../forms/using/customizing-templates-forms-portal-components.md) 以改善列表和搜索体验。
-1. **发布Forms Portal页面：** 您的Forms门户页面现已准备就绪。 发布页面。
+1. **Publish Forms Portal页面：** 您的Forms门户页面现已准备就绪。 Publish页面。
 
 ## 相关文章 {#related-articles}
 

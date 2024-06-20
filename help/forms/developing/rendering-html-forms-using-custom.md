@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1682'
 ht-degree: 0%
@@ -66,7 +66,7 @@ Forms服务可静默解析自定义CSS文件。 也就是说，Forms服务不会
 
 **呈现HTML表单**
 
-要呈现HTML表单，请指定在Designer中创建并保存为XDP文件的表单设计。 选择HTML转换类型。 例如，您可以指定用于呈现Internet Explorer 5.0或更高版本的动态HTML的HTML转换类型。
+要呈现HTML表单，请指定在Designer中创建并另存为XDP文件的表单设计。 选择HTML转换类型。 例如，您可以指定用于呈现Internet Explorer 5.0或更高版本的动态HTML的HTML转换类型。
 
 呈现HTML表单还需要值，例如呈现其他表单类型所需的URI值。
 
@@ -136,7 +136,7 @@ Forms服务可静默解析自定义CSS文件。 也就是说，Forms服务不会
 
 [使用自定义CSS文件渲染HTMLForms](#rendering-html-forms-using-custom-css-files)
 
-[快速入门（SOAP模式）：呈现使用CSS文件的HTML表单（使用Java API）](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
+[快速入门(SOAP模式)：渲染使用CSS文件的HTML表单（使用Java API）](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

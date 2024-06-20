@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+feature: Adaptive Forms
+source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 0%
@@ -28,7 +29,7 @@ Forms服务允许您创建交互式数据捕获客户端应用程序，这些应
 
 根据客户端应用程序的类型，可以将表单写入客户端Web浏览器或将表单另存为PDF文件。 基于Web的应用程序可以将表单写入Web浏览器。 桌面应用程序可以将表单另存为PDF文件。 要演示如何向Web浏览器和PDF文件写出，可以从 *呈现Forms* 部分按以下方式组织：
 
-* Java API强类型（SOAP模式）示例是一个Java servlet。
+* Java API强类型(SOAP模式)示例是一个Java servlet。
 * Web服务(Java Base64)示例是一个Java servlet。
 * Web服务(MTOM)示例是控制台应用程序（并非所有快速启动都有MTOM示例）。
 

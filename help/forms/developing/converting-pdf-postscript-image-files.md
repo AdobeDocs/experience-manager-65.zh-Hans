@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2774'
 ht-degree: 0%
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 [步骤摘要](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[快速入门（SOAP模式）：使用Java API将PDF文档转换为PostScript](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API将PDF文档转换为PostScript](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -249,7 +249,7 @@ ht-degree: 0%
 
 **从收藏集中检索图像文件**
 
-您可以从ConvertPDF服务返回的集合对象中检索图像文件。 收藏集中的每个元素都是一个 `com.adobe.idp.Document` 实例(或 `BLOB` （例如，如果您使用的是Web服务）可以另存为图像文件，如JPG文件。
+您可以从ConvertPDF服务返回的集合对象中检索图像文件。 收藏集中的每个元素都是一个 `com.adobe.idp.Document` 实例(或 `BLOB` 实例标识)，您可以将其另存为图像文件，例如JPG文件。
 
 图像文件的格式取决于 `ImageConvertFormat` 运行时选项。 也就是说，如果您设置 `ImageConvertFormat` 运行时选项用于 `ImageConvertFormat.JPEG`，则可以将图像文件另存为JPG文件。
 
@@ -303,7 +303,7 @@ ht-degree: 0%
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API将PDF文档转换为JPEG文件](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API将PDF文档转换为JPEG文件](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 ### 使用Web服务API将PDF文档转换为图像文件 {#convert-a-pdf-document-to-image-files-using-the-web-service-api}
 

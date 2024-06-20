@@ -8,7 +8,8 @@ topic-tags: operations
 role: Developer
 exl-id: c5e712e0-5c3f-48cd-91cf-fd347222a6b2
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1749'
 ht-degree: 0%
@@ -167,7 +168,7 @@ ht-degree: 0%
 
 [以编程方式拆分PDF文档](#programmatically-disassembling-pdf-documents)
 
-[快速入门（SOAP模式）：使用Java API拆分PDF文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API拆分PDF文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

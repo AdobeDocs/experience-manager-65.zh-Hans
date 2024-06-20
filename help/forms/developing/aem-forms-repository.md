@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '9036'
 ht-degree: 0%
@@ -45,7 +45,7 @@ AEM Forms存储库中资源的路径为：
 
 >[!NOTE]
 >
->您可以使用Web浏览器浏览AEM Forms存储库。 要浏览存储库，请在Web浏览器中输入以下URL `https://[server name]:[server port]/repository`. 您可以使用Web浏览器验证与使用AEM Forms存储库部分关联的快速入门结果。 例如，如果将内容添加到AEM Forms存储库，则可以在Web浏览器中查看该内容。 (请参阅 [快速入门（SOAP模式）：使用Java API编写资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>您可以使用Web浏览器浏览AEM Forms存储库。 要浏览存储库，请在Web浏览器中输入以下URL `https://[server name]:[server port]/repository`. 您可以使用Web浏览器验证与使用AEM Forms存储库部分关联的快速入门结果。 例如，如果将内容添加到AEM Forms存储库，则可以在Web浏览器中查看该内容。 (请参阅 [快速入门(SOAP模式)：使用Java API编写资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
 存储库API提供了几种可用于存储和检索存储库信息的操作。 例如，在处理应用程序时需要资源时，您可以获取资源列表或检索存储在存储库中的特定资源。
 
@@ -162,7 +162,7 @@ AEM Forms存储库中资源的路径为：
 
 [创建文件夹](aem-forms-repository.md#creating-folders)
 
-[快速入门（SOAP模式）：使用Java API创建文件夹](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API创建文件夹](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -308,7 +308,7 @@ AEM Forms存储库中资源的路径为：
 
 [写入资源](aem-forms-repository.md#writing-resources)
 
-[快速入门（SOAP模式）：使用Java API编写资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API编写资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -434,7 +434,7 @@ AEM Forms存储库中资源的路径为：
 
 [列出资源](aem-forms-repository.md#listing-resources).
 
-[快速入门（SOAP模式）：使用Java API列出资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API列出资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -549,7 +549,7 @@ AEM Forms存储库中资源的路径为：
 
 [正在读取资源](aem-forms-repository.md#reading-resources)
 
-[快速入门（SOAP模式）：使用Java API读取资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API读取资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -665,7 +665,7 @@ AEM Forms存储库中资源的路径为：
 
 [更新资源](aem-forms-repository.md#updating-resources)
 
-[快速入门（SOAP模式）：使用Java API更新资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API更新资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -845,7 +845,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 [搜索资源](aem-forms-repository.md#searching-for-resources)
 
-[快速入门（SOAP模式）：使用Java API搜索资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API搜索资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -941,7 +941,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 [创建资源关系](aem-forms-repository.md#creating-resource-relationships)
 
-[快速入门（SOAP模式）：使用Java API创建资源之间的关系](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API创建资源之间的关系](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1093,7 +1093,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 [锁定资源](aem-forms-repository.md#locking-resources)
 
-[快速启动（SOAP模式）：使用Java API锁定资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API锁定资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1219,7 +1219,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 [删除资源](aem-forms-repository.md#deleting-resources)
 
-[快速入门（SOAP模式）：使用Java API搜索资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API搜索资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

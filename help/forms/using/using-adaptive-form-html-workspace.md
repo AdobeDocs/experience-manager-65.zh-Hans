@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 JEE上的AEM Forms提供了在HTML Workspace中使用自适应表单的功能。
 
-由于可以在流程设计期间选择XDP，因此添加了从现有自适应表单AEM存储库中浏览的功能。 此功能使流程设计人员能够在起点和任务中配置自适应表单。
+由于可以在流程设计期间选择XDP，因此添加了从现有自适应表单AEM存储库中浏览的功能。 此功能使Process Designer能够在“起点”和“任务”中配置自适应表单。
 
 ## 流程设计经验 {#process-design-experience}
 

@@ -7,8 +7,9 @@ topic-tags: integrations
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 0%
@@ -61,7 +62,7 @@ AEM Forms与Adobe Experience Cloud解决方案Adobe Target集成，跨多个数�
 1. 单击 **AEM Forms Target配置**.
 1. 选择 **目标框架**.
 1. 在 **目标URL** 字段中，指定运行A/B测试的所有URL。 例如， https://&lt;*主机名*>：&lt;*端口*>/ for AEM Forms Server on OSGi或https://&lt;*主机名*>：&lt;*端口*>/lc/(适用于JEE上的AEM Forms Server)。
-假定您要为发布实例配置Target URL，并且您的客户可以使用主机名或IP地址访问它。 在这种情况下，您必须将两者都配置为Target URL — 使用主机名和IP地址。 如果仅配置其中一个URL，则不会为来自其他URL的客户运行A/B测试。 单击 **+** 以指定多个URL。
+假定您要为Publish实例配置Target URL，并且您的客户可以使用主机名或IP地址访问它。 在这种情况下，您必须将两者都配置为Target URL — 使用主机名和IP地址。 如果仅配置其中一个URL，则不会为来自其他URL的客户运行A/B测试。 单击 **+** 以指定多个URL。
 
 1. 单击&#x200B;**保存**。
 

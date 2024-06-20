@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1822'
 ht-degree: 0%
@@ -143,7 +143,7 @@ Forms服务还可以解决表单设计中链接内容的位置。 例如，从�
 
 [按值呈现Forms](/help/forms/developing/rendering-forms.md)
 
-[快速入门（SOAP模式）：使用Java API按值渲染](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API按值渲染](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

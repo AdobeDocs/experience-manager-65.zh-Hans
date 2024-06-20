@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2328'
 ht-degree: 0%
@@ -180,7 +180,7 @@ fscCSS是与特定节点关联的样式表。 CSS文件中的样式指定工具�
 
 **呈现HTML表单**
 
-要呈现HTML表单，请指定在Designer中创建并保存为XDP文件的表单设计。 另外，选择HTML转换类型。 例如，您可以指定用于呈现Internet Explorer 5.0或更高版本的动态HTML的HTML转换类型。
+要呈现HTML表单，请指定在Designer中创建并另存为XDP文件的表单设计。 另外，选择HTML转换类型。 例如，您可以指定用于呈现Internet Explorer 5.0或更高版本的动态HTML的HTML转换类型。
 
 呈现HTML表单还需要值，例如用于呈现其他表单类型的URI值。
 
@@ -256,7 +256,7 @@ fscCSS是与特定节点关联的样式表。 CSS文件中的样式指定工具�
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API通过自定义工具栏呈现HTML表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API通过自定义工具栏呈现HTML表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -6,8 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 solution: Experience Manager, Experience Manager Forms
+feature: Release Information
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 39%
@@ -40,9 +41,9 @@ Experience Manager6.5.19.0包括自2019年4月首次推出6.5以来发布的新�
 
 * **[垂直选项卡组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**：基于核心组件的自适应表单现在可将表单内容整理到选项卡垂直列表中，从而提供结构化的、可导航的布局。在表单中使用垂直选项卡可通过简化导航并改进表单内容的组织而增强整体用户体验，特别是在表单包含多个部分或复杂信息的情况下。
 
-#### AEM Forms Designer 64位版本
+#### AEM Forms Designer的64位版本
 
-此 [AEM Forms Designer 64位版本](/help/forms/using/installing-configuring-designer.md) 提供增强的性能、可扩展性和内存管理，以增强您的表单创建体验。 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
+此 [AEM Forms Designer的64位版本](/help/forms/using/installing-configuring-designer.md) 提供增强的性能、可扩展性和内存管理，以增强您的表单创建体验。 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
 
 #### 将自适应Forms连接到Microsoft® SharePoint列表
 

@@ -2,10 +2,10 @@
 title: 如何重新启动AEM SDK？
 description: 重新启动AEM SDK的最佳实践
 role: Admin, Developer, User
-feature: Adaptive Forms
+feature: Adaptive Forms, Troubleshooting
 exl-id: f5d69d04-b842-4329-b1b3-57b88266d13d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 1%

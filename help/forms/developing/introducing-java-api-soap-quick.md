@@ -1,6 +1,6 @@
 ---
 title: Java&trade； API快速入门简介
-description: 了解如何使用AEM Forms Java&trade；通过SOAP连接启用的强类型API来执行AEM Forms操作。
+description: 了解如何使用通过SOAP连接启用的强类型API，即AEM Forms Java&trade；来执行AEM Forms操作。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,8 @@ topic-tags: develop, development-tools
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms
+source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
 workflow-type: tm+mt
 source-wordcount: '532'
 ht-degree: 0%
@@ -66,19 +67,19 @@ JAR文件列表位于“快速入门”开头的注释部分中。 例如，以�
 
 最快速入门 *在JEE中使用AEM Forms编程* 调用特定服务以执行操作。 但是，有些快速入门会调用多个AEM Forms服务来执行给定工作流。 以下列表提供了可调用多个AEM Forms服务的Java™快速启动：
 
-[快速入门（SOAP模式）：使用Java™ API将AEM Forms存储库中的文档传递到输出服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) （调用Repository and Output服务）
+[快速入门(SOAP模式)：使用Java™ API将AEM Forms存储库中的文档传递到Output服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) （调用Repository and Output服务）
 
-[快速入门（SOAP模式）：使用Java™ API基于片段创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) （调用Assembler and Output服务）
+[快速入门(SOAP模式)：使用Java™ API基于片段创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) （调用Assembler and Output服务）
 
-[快速入门（SOAP模式）：使用Java™ API创建包含提交的XML数据的PDF文档](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (调用Forms、输出和文档管理服务)
+[快速入门(SOAP模式)：使用Java™ API创建包含提交的XML数据的PDF文档](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (调用Forms、输出和文档管理服务)
 
-[快速入门（SOAP模式）：使用Java™ API将文档传递到Forms服务](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (调用Forms和文档管理服务)
+[快速入门(SOAP模式)：使用Java™ API将文档传递到Forms服务](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (调用Forms和文档管理服务)
 
-[快速入门（SOAP模式）：使用Java™ API对基于XFA的表单进行数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (调用Forms和签名服务)
+[快速入门(SOAP模式)：使用Java™ API对基于XFA的表单进行数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (调用Forms和签名服务)
 
-[快速入门（SOAP模式）：使用Java™ API管理角色和权限](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) （调用DirectoryManager和AuthorizationManager服务）
+[快速入门(SOAP模式)：使用Java™ API管理角色和权限](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) （调用DirectoryManager和AuthorizationManager服务）
 
-[快速入门（SOAP模式）：使用Java™ API将文档传递到输出服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) （调用Output and Document Management服务）
+[快速入门(SOAP模式)：使用Java™ API将文档传递到输出服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) （调用Output and Document Management服务）
 
 >[!NOTE]
 >

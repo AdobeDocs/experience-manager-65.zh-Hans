@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1447'
 ht-degree: 0%
@@ -131,7 +131,7 @@ Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrob
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API呈现启用权限的表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API呈现启用权限的表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

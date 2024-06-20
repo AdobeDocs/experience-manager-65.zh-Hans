@@ -6,7 +6,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Interactive Communication
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1624'
 ht-degree: 3%
@@ -116,7 +117,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包中包含有�
    >
    > 建议使用“Ctrl + C”命令重新启动 SDK。 使用替代方法（例如，停止 Java 进程）重新启动 AEM SDK 可能会导致 AEM 开发环境中出现不一致。
 
-1. 对所有创作实例和发布实例重复步骤1-7。
+1. 对所有Author和Publish实例重复步骤1-7。
 
 ## 安装后配置 {#post-installation-configurations}
 
@@ -140,16 +141,16 @@ AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCast
    ```
 
 1. 保存并关闭文件，然后启动AEM实例。
-1. 对所有创作实例和发布实例重复步骤1-4。
+1. 对所有Author和Publish实例重复步骤1-4。
 
 #### 配置序列化代理 {#configure-the-serialization-agent}
 
-列入允许列表对所有Author和Publish实例执行以下步骤，将包添加到中：
+对所有Author和Publish列入允许列表实例执行以下步骤，将包添加到Author中：
 
 1. 在浏览器窗口中打开AEM Configuration Manager。 默认URL为https://&#39;[服务器]：[端口]&#39;/system/console/configMgr.
 1. 搜索并打开 **反序列化防火墙配置**.
 1. 添加 **sun.util.calendar** 打包到 **允许列表** 字段。 单击“保存”。
-1. 对所有创作实例和发布实例重复步骤1-3。
+1. 对所有Author和Publish实例重复步骤1-3。
 
 ### 可选安装后配置 {#optional-post-installation-configurations}
 

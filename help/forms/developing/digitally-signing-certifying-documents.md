@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '16917'
 ht-degree: 0%
@@ -294,7 +294,7 @@ ht-degree: 0%
 
 [正在检索签名字段名称](digitally-signing-certifying-documents.md#retrieving-signature-field-names)
 
-[快速入门（SOAP模式）：使用Java API检索签名字段名称](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API检索签名字段名称](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -608,7 +608,7 @@ PDF文件采用公钥技术签名。 签名者有两个密钥：公钥和私钥�
 
 如果您尝试使用签名服务API对基于XFA的表单进行签名，则可能缺少 `View` `Signed` `Version` 在Acrobat中。 例如，请考虑以下工作流：
 
-* 使用使用Designer创建的XDP文件，合并包含签名字段的表单设计以及包含表单数据的XML数据。 您可以使用Forms服务生成交互式PDF文档。
+* 使用通过Designer创建的XDP文件，合并包含签名字段的表单设计以及包含表单数据的XML数据。 您可以使用Forms服务生成交互式PDF文档。
 * 您可以使用签名服务API对PDF文档进行签名。
 
 ### 步骤摘要 {#summary_of_steps-3}
@@ -639,7 +639,7 @@ PDF文件采用公钥技术签名。 签名者有两个密钥：公钥和私钥�
 
 **获取要签名的PDF文档**
 
-要签署PDF文档，必须获取包含签名字段的PDF文档。 如果PDF文档不包含签名字段，则无法对其进行签名。 签名字段可以通过使用设计器或以编程方式添加。
+要签署PDF文档，必须获取包含签名字段的PDF文档。 如果PDF文档不包含签名字段，则无法对其进行签名。 签名字段可以通过使用Designer或以编程方式添加。
 
 **签署PDF文档**
 
@@ -1122,13 +1122,13 @@ PDF文件采用公钥技术签名。 签名者有两个密钥：公钥和私钥�
 
 **获取要认证的PDF文档**
 
-要认证PDF单据，必须获得包含签名字段的PDF单据。 如果PDF文档不包含签名字段，则无法对其进行认证。 签名字段可以通过使用设计器或以编程方式添加。 有关以编程方式添加签名字段的信息，请参见 [添加签名字段](digitally-signing-certifying-documents.md#adding-signature-fields).
+要认证PDF单据，必须获得包含签名字段的PDF单据。 如果PDF文档不包含签名字段，则无法对其进行认证。 签名字段可以通过使用Designer或以编程方式添加。 有关以编程方式添加签名字段的信息，请参见 [添加签名字段](digitally-signing-certifying-documents.md#adding-signature-fields).
 
 **认证PDF文档**
 
 要成功认证PDF文档，您需要以下供签名服务用于认证PDF文档的输入值：
 
-* **PDF文档**：包含签名字段的PDF文档，签名字段是包含已验证签名的图形表示的表单字段。 PDF文档必须包含签名字段，然后才能进行认证。 签名字段可以通过使用设计器或以编程方式添加。 (请参阅 [添加签名字段](digitally-signing-certifying-documents.md#adding-signature-fields).)
+* **PDF文档**：包含签名字段的PDF文档，签名字段是包含已验证签名的图形表示的表单字段。 PDF文档必须包含签名字段，然后才能进行认证。 签名字段可以通过使用Designer或以编程方式添加。 (请参阅 [添加签名字段](digitally-signing-certifying-documents.md#adding-signature-fields).)
 * **签名字段名称**：已验证的签名字段的完全限定名称。 以下是示例： `form1[0].#subform[1].SignatureField3[3]`. 在使用XFA表单字段时，也可以使用签名字段的部分名称： `SignatureField3[3]`. 如果为字段名称传递了null值，则会动态创建并验证不可见的签名字段。
 * **安全凭据**：用于验证PDF文档的凭据。 此安全凭据包含密码和别名，它们必须与Credential服务内凭据中显示的别名匹配。 别名是对PKCS#12文件（扩展名为.pfx）或硬件安全模块(HSM)中实际凭据的引用。
 * **Hash算法**：用于摘要PDF文档的哈希算法。
@@ -1207,7 +1207,7 @@ PDF文件采用公钥技术签名。 签名者有两个密钥：公钥和私钥�
 
 [认证PDF文档](digitally-signing-certifying-documents.md#certifying-pdf-documents)
 
-[快速入门（SOAP模式）：使用Java API认证PDF文档](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API认证PDF文档](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1444,7 +1444,7 @@ PDF文件采用公钥技术签名。 签名者有两个密钥：公钥和私钥�
 
 [验证数字签名](#verify-digital-signatures-using-the-java-api)
 
-[快速入门（SOAP模式）：使用Java API验证数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API验证数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1657,7 +1657,7 @@ AEM Forms提供了验证PDF文档中的所有数字签名的方法。 假设PDF�
 
 [验证多个数字签名](#verifying-multiple-digital-signatures)
 
-[快速入门（SOAP模式）：使用Java API验证多个数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API验证多个数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1823,7 +1823,7 @@ AEM Forms提供了验证PDF文档中的所有数字签名的方法。 假设PDF�
 
 [删除数字签名](digitally-signing-certifying-documents.md#removing-digital-signatures)
 
-[快速入门（SOAP模式）：使用Java API删除数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API删除数字签名](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

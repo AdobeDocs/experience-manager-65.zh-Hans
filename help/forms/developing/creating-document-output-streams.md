@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '18860'
 ht-degree: 0%
@@ -282,7 +282,7 @@ Output服务允许您以PDF(包括PDF/A文档)、PostScript、打印机控制语
 
 [快速入门（EJB模式）：使用Java API创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[快速入门（SOAP模式）：使用Java API创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -540,7 +540,7 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
 [步骤摘要](creating-document-output-streams.md#summary-of-steps)
 
-[快速入门（SOAP模式）：使用Java API创建PDF/文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API创建PDF/A文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -629,7 +629,7 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
 ## 将Content Services中的文档（已弃用）传递到Output Service {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
-Output服务呈现基于表单设计的非交互式PDF表单，该表单通常保存为XDP文件并在Designer中创建。 您可以传递 `com.adobe.idp.Document` 包含表单设计到Output服务的对象。 然后，Output服务在 `com.adobe.idp.Document` 对象。
+Output服务可呈现基于表单设计的非交互式PDF表单，该表单通常保存为XDP文件并在Designer中创建。 您可以传递 `com.adobe.idp.Document` 包含表单设计到Output服务的对象。 然后，Output服务在 `com.adobe.idp.Document` 对象。
 
 通过的优势 `com.adobe.idp.Document` 对象到Output服务，即其他AEM Forms服务操作返回 `com.adobe.idp.Document` 实例。 那就是，你可以 `com.adobe.idp.Document` 来自另一个服务操作的实例并呈现它。 例如，假设XDP文件存储在名为的内容服务（已弃用）节点中 `/Company Home/Form Designs`，如下图所示。
 
@@ -736,7 +736,7 @@ Output服务呈现基于表单设计的非交互式PDF表单，该表单通常�
 
 [快速启动（EJB模式）：使用Java API将文档传递到Output Service](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[快速入门（SOAP模式）：使用Java API将文档传递到输出服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API将文档传递到输出服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -818,7 +818,7 @@ Output服务呈现基于表单设计的非交互式PDF表单，该表单通常�
 
 ## 将存储库中的文档传递到Output服务 {#passing-documents-located-in-the-repository-to-the-output-service}
 
-Output服务呈现基于表单设计的非交互式PDF表单，该表单通常保存为XDP文件并在Designer中创建。 您可以传递 `com.adobe.idp.Document` 包含表单设计到Output服务的对象。 然后，Output服务在 `com.adobe.idp.Document` 对象。
+Output服务可呈现基于表单设计的非交互式PDF表单，该表单通常保存为XDP文件并在Designer中创建。 您可以传递 `com.adobe.idp.Document` 包含表单设计到Output服务的对象。 然后，Output服务在 `com.adobe.idp.Document` 对象。
 
 通过的优势 `com.adobe.idp.Document` 对象到Output服务，即其他AEM Forms服务操作返回 `com.adobe.idp.Document` 实例。 那就是，你可以 `com.adobe.idp.Document` 来自另一个服务操作的实例并呈现它。 例如，假设XDP文件存储在AEM Forms存储库中，如下图所示。
 
@@ -1052,7 +1052,7 @@ ResourceRepositoryClient
 
 [快速入门（EJB模式）：使用Java API基于片段创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[快速入门（SOAP模式）：使用Java API基于片段创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API基于片段创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1272,7 +1272,7 @@ ResourceRepositoryClient
 
 [步骤摘要](creating-document-output-streams.md#summary-of-steps)
 
-[快速入门（SOAP模式）：使用Java API打印到文件](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API打印到文件](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2085,7 +2085,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
 [快速入门（EJB模式）：使用Java API创建搜索规则](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[快速入门（SOAP模式）：使用Java API创建搜索规则](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API创建搜索规则](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2299,7 +2299,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
 [快速入门（EJB模式）：使用Java API转换PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-[快速入门（SOAP模式）：使用Java API转换PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API转换PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

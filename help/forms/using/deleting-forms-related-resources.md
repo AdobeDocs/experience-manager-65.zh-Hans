@@ -7,7 +7,8 @@ topic-tags: forms-manager
 role: Admin,User
 exl-id: b31f9f56-dd33-4478-ad34-01ac7d5a1b40
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '369'
 ht-degree: 0%
@@ -18,7 +19,7 @@ ht-degree: 0%
 
 您可以删除表单和资源，以从存储库中删除这些资源。 删除操作适用于所有资源类型和文件夹。
 
-如果从创作实例中删除资产，则该资产也会从发布实例中删除。 AEM Forms服务器由创作实例和发布实例组成。 创作实例用于创建和管理表单资源和资源。 发布实例包含可供最终用户使用的已发布表单资源和相关资源。
+如果您从创作实例中删除某个资源，则该资源也会从Publish实例中删除。 AEM Forms服务器由创作实例和Publish实例组成。 创作实例用于创建和管理表单资源和资源。 Publish实例包含可供最终用户使用的已发布的表单资源和相关资源。
 
 ## 如何删除表单 {#how-to-delete-a-form}
 

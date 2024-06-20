@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: e485980d-f200-46b7-9284-c9996003aa47
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1690'
 ht-degree: 0%
@@ -54,10 +54,10 @@ ht-degree: 0%
 
 可以设置的可选运行时选项是 `SeedPDF` 选项。 此 `SeedPDF` 选项将PDF容器(种子PDF文档)与表单设计和XML数据相结合。 表单设计和XML数据都会交付到Acrobat或Adobe Reader，表单会在该位置渲染。 此 `SeedPDF` 当客户端计算机没有在表单中使用的字体时（例如，当最终用户未获得使用已授予表单所有者使用权限的字体时），可以使用选项。
 
-可以使用Designer创建一个简单的动态PDF文件用作种子PDF文件。 要执行此任务，需要执行以下步骤：
+您可以使用Designer创建一个简单的动态PDF文件用作种子PDF文件。 要执行此任务，需要执行以下步骤：
 
-1. 确定是否需要在种子PDF文件中嵌入任何字体。 种子PDF文件必须包含渲染的表单所需的其他字体。 将字体嵌入种子PDF文件时，请确保不违反任何字体许可协议。 在Designer中，您可以确定是否可合法嵌入字体。 保存时，如果存在无法嵌入表单中的字体，则Designer会显示一条消息，列出无法嵌入的字体。 对于静态PDF文档，此消息不会显示在设计器中。
-1. 如果要在Designer中创建种子PDF文件，建议至少添加一个包含消息的文本字段。 该消息应发送给早期版本的Adobe Reader用户，声明他们需要Acrobat 7.0或更高版本或者Adobe Reader 7.0或更高版本才能查看文档。
+1. 确定是否需要在种子PDF文件中嵌入任何字体。 种子PDF文件必须包含渲染的表单所需的其他字体。 将字体嵌入种子PDF文件时，请确保不违反任何字体许可协议。 在Designer中，您可以确定是否可合法嵌入字体。 保存后，如果存在无法嵌入表单中的字体，Designer会显示一条消息，列出无法嵌入的字体。 对于静态PDF文档，此消息不会显示在Designer中。
+1. 如果要在Designer中创建种子PDF文件，建议至少添加包含消息的文本字段。 该消息应发送给早期版本的Adobe Reader用户，声明他们需要Acrobat 7.0或更高版本或者Adobe Reader 7.0或更高版本才能查看文档。
 1. 将种子PDF文件另存为具有PDF文件扩展名的动态PDF文件。
 
 >[!NOTE]
@@ -130,7 +130,7 @@ Forms服务会创建一个您必须写入客户端Web浏览器的表单数据流
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API在客户端渲染表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API在客户端渲染表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

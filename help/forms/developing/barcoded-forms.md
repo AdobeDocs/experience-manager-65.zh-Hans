@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1911'
 ht-degree: 0%
@@ -163,7 +163,7 @@ ht-degree: 0%
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API解码条形码表单数据](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API对条形码表单数据进行解码](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

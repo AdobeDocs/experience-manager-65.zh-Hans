@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '10702'
 ht-degree: 0%
@@ -451,7 +452,7 @@ Microsoft SharePoint配置服务有以下设置可用：
 
 ## 输出服务设置 {#output-service-settings}
 
-输出服务 `(OutputService)`允许您将XML表单数据与在AEM Forms Designer中创建的表单设计合并，以创建以下格式之一的文档输出流：
+输出服务 `(OutputService)`允许您将XML表单数据与AEM forms Designer中创建的表单设计合并，以创建以下格式之一的文档输出流：
 
 * PDF或PDF/文档输出流。
 * Adobe PostScript输出流。
@@ -749,7 +750,7 @@ Web服务( `WebService`)允许进程调用Web服务操作。
 
 Web服务使进程能够调用Web服务操作。 例如，组织可能希望通过调用服务提供商公开的Web服务来集成存储和检索信息（如联系人和帐户详细信息）的流程。 Web服务调用指定的Web服务并传递其每个参数的值。 然后，它将操作返回的值保存到进程中的指定变量中。
 
-Web服务通过发送和接收SOAP消息与Web服务进行交互。 该服务还支持使用WS-Attachment协议通过SOAP消息发送MIME、MTOM和SwaRef附件。 Web服务交互与SAP系统和.NET Web服务兼容。
+Web服务通过发送和接收SOAP消息与Web服务进行交互。 该服务还支持使用WS-Attachment协议在SOAP消息中发送MIME、MTOM和SwaRef附件。 Web服务交互与SAP系统和.NET Web服务兼容。
 
 以下设置可用于Web服务服务。
 

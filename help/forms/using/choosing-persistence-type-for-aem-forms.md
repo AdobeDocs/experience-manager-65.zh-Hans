@@ -8,7 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 1%
@@ -56,7 +57,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-TarMK旨在提高性能，而MongoMK和RDBMK旨在实现可扩展性。 Adobe强烈建议将TarMK作为所有AEM Forms部署方案（创作实例和发布实例）的默认持久性技术，但一节中概述的使用案例除外 [在TarMK上选择Mongo或关系数据库微内核](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+TarMK旨在提高性能，而MongoMK和RDBMK旨在实现可扩展性。 Adobe强烈建议将TarMK作为所有AEM Forms部署方案(对于Author和Publish实例)的默认持久性技术，但一节中概述的使用案例除外 [在TarMK上选择Mongo或关系数据库微内核](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
 
 有关支持的微内核列表，请参见 [AEM Forms on OSGi技术要求](/help/sites-deploying/technical-requirements.md) 或 [JEE上的AEM Forms支持的平台组合](/help/forms/using/aem-forms-jee-supported-platforms.md) 文章。
 

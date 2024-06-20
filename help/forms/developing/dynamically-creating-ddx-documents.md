@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2153'
 ht-degree: 0%
@@ -185,7 +185,7 @@ PDF通过调用 `invokeDDX` 操作。 传递动态创建的DDX文档。 Assemble
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API动态创建DDX文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API动态创建DDX文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

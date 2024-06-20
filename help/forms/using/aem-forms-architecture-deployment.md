@@ -8,7 +8,8 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms, Foundation Components
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2469'
 ht-degree: 0%
@@ -38,7 +39,7 @@ AEM Forms的架构包含以下组件：
    * **表单呈现和提交前端**：面向最终用户的界面，供AEM Forms的最终用户（例如，访问政府网站的公民）使用。 这提供了表单呈现（在Web浏览器中显示表单）和提交功能。
    * **REST API**：JSP和servlet导出表单服务的子集，以供基于HTTP的客户端（例如forms移动SDK）远程使用。
 
-**OSGi上的AEM Forms：** OSGi环境上的AEM Forms是标准的AEM Author或AEM Publish ，并在其上部署了AEM Forms包。 您可以在OSGi上运行AEM Forms [单服务器环境、群组和群集设置](/help/sites-deploying/recommended-deploys.md). 集群设置仅可用于AEM Author实例。
+**OSGi上的AEM Forms：** OSGi环境上的AEM Forms是标准的AEM Author或部署了AEM Forms包的AEM Publish。 您可以在OSGi上运行AEM Forms [单服务器环境、群组和群集设置](/help/sites-deploying/recommended-deploys.md). 集群设置仅可用于AEM Author实例。
 
 **AEM Forms在JEE：** JEE上的AEM Forms是在JEE栈栈上运行的AEM Forms服务器。 它在应用程序服务器中运行的单个JEE栈栈上联合部署了AEM Author和AEM Forms附加组件包及其他AEM Forms JEE功能。 您可以在单服务器和群集设置中在JEE上运行AEM Forms。 只有运行Document Security、流程管理以及升级到AEM Forms的LiveCycle客户，才需要JEE上的AEM Forms。 以下是一些在JEE上使用AEM Forms的其他方案：
 
@@ -65,7 +66,7 @@ OSGi上的AEM Forms和JEE上的AEM Forms都具有工作流功能。 您可以在
 * **创作和管理表单和交互式通信：** 设计人员和开发人员可以创建和编辑自适应表单和交互式通信，上传外部创建的其他类型的表单，例如在AdobeForms Designer中创建的表单，并使用Forms Manager控制台管理这些资源。
 * **表单和交互式通信发布：** 可以将在创作实例上托管的资产发布到发布实例以执行运行时操作。 资产发布使用AEM复制功能。 Adobe建议在所有创作实例上配置复制代理，以手动将发布的表单推送到处理实例，并在使用处理实例时配置另一个复制代理。 *接收时* 触发器已启用，可自动将收到的表单复制到发布实例。
 
-**发布：** 发布实例是在标准发布运行模式下运行的AEM Forms服务器。 发布实例面向基于表单的应用程序的最终用户，例如访问公共网站和提交表单的用户。 它支持以下功能：
+**发布：** 发布实例是在标准AEM Forms运行模式下运行的Publish服务器。 Publish实例面向基于表单的应用程序的最终用户，例如访问公共网站和提交表单的用户。 它支持以下功能：
 
 * 呈现和提交最终用户的Forms。
 * 将原始提交的表单数据传输到处理实例，以供进一步处理并存储在最终记录系统中。 AEM Forms中提供的默认实施是使用AEM的反向复制功能来实现这一点的。 此外，还可以使用替代实施将表单数据直接推送到处理服务器，而不是先在本地保存（后者是激活反向复制的先决条件）。 担心发布实例上存储潜在敏感数据的客户可以加入讨论 [替代实施](/help/forms/using/configuring-draft-submission-storage.md)，因为处理实例通常位于更安全的区域中。
@@ -73,21 +74,21 @@ OSGi上的AEM Forms和JEE上的AEM Forms都具有工作流功能。 您可以在
 
 **正在处理：** AEM Forms实例在创作运行模式下运行，未将任何用户分配给forms-manager组。 您可以在JEE上部署AEM Forms，或在OSGi上部署AEM Forms作为处理实例。 未分配用户以确保表单创作和管理活动不在处理实例上执行，并且仅在创作实例上发生。 处理实例可启用以下功能：
 
-* **处理从发布实例到达的原始表单数据：** 这主要在通过AEM工作流处理的实例上实现，当数据到达时，将触发该工作流。 工作流可以使用现成的表单数据模型步骤将数据或文档存档到适当的数据存储。
-* **安全存储表单数据**：处理过程为与用户隔离的原始表单数据提供了一个防火墙后的存储库。 创作实例上的表单设计人员和发布实例上的最终用户均无法访问此存储库。
+* **处理从Publish实例到达的原始表单数据：** 这主要在通过AEM工作流处理的实例上实现，当数据到达时，将触发该工作流。 工作流可以使用现成的表单数据模型步骤将数据或文档存档到适当的数据存储。
+* **安全存储表单数据**：处理过程为与用户隔离的原始表单数据提供了一个防火墙后的存储库。 创作实例上的表单设计人员和Publish实例上的最终用户均无法访问此存储库。
 
   >[!NOTE]
   >
   >Adobe建议使用第三方数据存储来保存最终处理数据，而不是使用AEM存储库。
 
-* **对从Publish实例到达的通信数据的存储和后处理：** AEM工作流可对相应的信件定义执行可选的后处理。 这些工作流可以将最终处理的数据保存到合适的外部数据存储中。
+* **对来自Publish实例的通信数据的存储和后处理：** AEM工作流可对相应的信件定义执行可选的后处理。 这些工作流可以将最终处理的数据保存到合适的外部数据存储中。
 
 * **HTML工作区托管**：处理实例托管HTML工作区的前端。 HTML工作区为审阅和批准流程提供了相关任务/组分配的UI。
 
 处理实例配置为在创作运行模式下运行，因为：
 
-* 它允许从发布实例反向复制原始表单数据。 默认数据存储处理程序需要反向复制功能。
-* 建议在创作样式系统上运行AEM工作流，这是处理从发布实例到达的原始表单数据的主要方式。
+* 它允许从Publish实例反向复制原始表单数据。 默认数据存储处理程序需要反向复制功能。
+* 建议在创作样式系统上运行AEM工作流，这是处理来自Publish实例的原始表单数据的主要方式。
 
 ## JEE上AEM Forms的物理拓扑示例 {#sample-physical-topologies-for-aem-forms-on-jee}
 

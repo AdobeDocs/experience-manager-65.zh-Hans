@@ -8,7 +8,8 @@ noindex: true
 role: Admin,User
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # 适用于AEM Forms的Adobe Experience Manager (AEM)桌面应用程序 {#aem-desktop-app-for-aem-forms}
 
-AEM桌面应用程序允许您将Adobe Experience Manager (AEM) Assets存储库和AEM Forms二进制文件映射到系统上的网络目录。 您可以在文件资源管理器中查看同步的资源和二进制文件，并根据需要使用各种应用程序编辑文件。 除了查看文件之外，您还可以创建、上载和删除二进制文件。 您还可以直接从软件打开、编辑和保存文件。 例如，您可以从Designer直接打开和编辑XDP文件。 在本地对资源所做的更改将反映在AEM Assets存储库和AEM Forms用户界面中。
+AEM桌面应用程序允许您将Adobe Experience Manager (AEM) Assets存储库和AEM Forms二进制文件映射到系统上的网络目录。 您可以在文件资源管理器中查看同步的资源和二进制文件，并根据需要使用各种应用程序编辑文件。 除了查看文件之外，您还可以创建、上载和删除二进制文件。 您还可以直接从软件打开、编辑和保存文件。 例如，您可以直接从Designer打开和编辑XDP文件。 在本地对资源所做的更改将反映在AEM Assets存储库和AEM Forms用户界面中。
 
 您可以从AEM实例下载应用程序。 有关下载应用程序的详细信息，请参阅 [AEM桌面应用程序发行说明](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
 

@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '15394'
 ht-degree: 0%
@@ -261,7 +261,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 有关使用Document Security服务的代码示例，请参阅以下内容：
 
-* “快速入门（SOAP模式）：使用Java API创建策略”
+* “快速入门(SOAP模式)：使用Java API创建策略”
 
 ### 使用Web服务API创建策略 {#create-a-policy-using-the-web-service-api}
 
@@ -401,7 +401,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 **代码示例**
 
-有关使用Document Security服务的代码示例，请参阅快速入门（SOAP模式）：使用Java API修改策略部分。
+有关使用Document Security服务的代码示例，请参阅快速入门(SOAP模式)：使用Java API修改策略部分。
 
 ### 使用Web服务API修改现有策略 {#modify-existing-policies-using-the-web-service-api}
 
@@ -504,7 +504,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 有关使用Document Security服务的代码示例，请参阅以下快速入门：
 
-* “快速入门（SOAP模式）：使用Java API删除策略”
+* “快速入门(SOAP模式)：使用Java API删除策略”
 
 ### 使用Web服务API删除策略 {#delete-policies-using-the-web-service-api}
 
@@ -640,7 +640,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 有关使用Document Security服务的代码示例，请参阅以下快速入门：
 
 * “快速入门（EJB模式）：使用Java API将策略应用到PDF文档”
-* “快速入门（SOAP模式）：使用Java API将策略应用于PDF文档”
+* “快速入门(SOAP模式)：使用Java API将策略应用于PDF文档”
 
 **另请参阅**
 
@@ -791,7 +791,7 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 有关使用Document Security服务的代码示例，请参阅以下快速入门：
 
-* “快速入门（SOAP模式）：使用Java API从PDF文档中删除策略”
+* “快速入门(SOAP模式)：使用Java API从PDF文档中删除策略”
 
 ### 使用Web服务API删除策略 {#remove-a-policy-using-the-web-service-api}
 
@@ -934,7 +934,7 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 有关使用Document Security服务的代码示例，请参阅以下快速入门：
 
-* “快速入门（SOAP模式）：使用Java API撤销文档”
+* “快速入门(SOAP模式)：使用Java API撤销文档”
 
 ### 使用Web服务API撤销对文档的访问 {#revoke-access-to-documents-using-the-web-service-api}
 
@@ -1066,7 +1066,7 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 有关使用Document Security服务的代码示例，请参阅以下快速入门：
 
-* “快速入门（SOAP模式）：使用Web服务API恢复对已吊销文档的访问”
+* “快速入门(SOAP模式)：使用Web服务API恢复对已吊销文档的访问”
 
 ### 使用Web服务API恢复对已撤消文档的访问 {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
@@ -1200,7 +1200,7 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 有关使用Document Security服务的代码示例，请参阅以下快速入门：
 
-* “快速入门（SOAP模式）：使用Java API检查受策略保护的PDF文档”
+* “快速入门(SOAP模式)：使用Java API检查受策略保护的PDF文档”
 
 ### 使用Web服务API的Inspect受策略保护的PDF文档 {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
@@ -1420,7 +1420,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 有关使用Document Security服务的代码示例，请参阅以下快速入门：
 
-* “快速入门（SOAP模式）：使用Java API创建水印”
+* “快速入门(SOAP模式)：使用Java API创建水印”
 
 ### 使用Web服务API创建水印 {#create-watermarks-using-the-web-service-api}
 
@@ -1567,7 +1567,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 **代码示例**
 
-有关使用Document Security服务的代码示例，请参阅快速入门（SOAP模式）：使用Java API修改水印部分。
+有关使用Document Security服务的代码示例，请参阅快速入门(SOAP模式)：使用Java API修改水印部分。
 
 ### 使用Web服务API修改水印 {#modify-watermarks-using-the-web-service-api}
 
@@ -2039,7 +2039,7 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 有关使用Document Security服务的代码示例，请参阅以下快速入门：
 
-* “快速入门（SOAP模式）：使用Java API将策略应用到Word文档”
+* “快速入门(SOAP模式)：使用Java API将策略应用到Word文档”
 
 ### 使用Web服务API将策略应用到Word文档 {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
@@ -2183,7 +2183,7 @@ Document Security服务从Word文档中删除策略后，您可以将不安全�
 
 有关使用Document Security服务的代码示例，请参阅以下快速入门：
 
-* “快速入门（SOAP模式）：使用Java API从Word文档中删除策略”
+* “快速入门(SOAP模式)：使用Java API从Word文档中删除策略”
 
 ### 使用Web服务API从Word文档中删除策略 {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 

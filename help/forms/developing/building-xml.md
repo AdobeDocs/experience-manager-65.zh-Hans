@@ -3,8 +3,9 @@ title: 如何在AEM Forms on JEE Workbench中使用execute脚本服务来构建X
 description: 使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '983'
 ht-degree: 0%

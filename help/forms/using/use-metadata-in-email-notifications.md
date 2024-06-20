@@ -5,8 +5,9 @@ topic-tags: publish
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Workflow
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -101,7 +102,7 @@ AEM Forms应用程序提供了多个开箱即用的元数据变量（键值对�
 <table>
  <tbody> 
   <tr> 
-   <td>关键值</td> 
+   <td>键</td> 
    <td>描述</td> 
   </tr> 
   <tr> 

@@ -7,8 +7,9 @@ topic-tags: forms-workspace
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 solution: Experience Manager, Experience Manager Forms
+feature: HTML5 Forms, Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +28,7 @@ AEM Forms工作区是AEM Forms的一部分。 工作区有助于在PDF forms之�
 
 ## 熟悉 {#getting-familiar}
 
-要熟悉创建表单应用程序以实现业务流程自动化的端到端过程，请按照以下步骤进行操作。 在逐步演示之后，您可以使用Workbench、Designer和AEM Forms Workspace创建、管理和测试应用程序。 有关实施详细信息，请参阅 [创建您的第一个AEM Forms应用程序](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+要熟悉创建表单应用程序以实现业务流程自动化的端到端过程，请按照以下步骤进行操作。 按照演练后的步骤，您可以使用Workbench、Designer和AEM Forms工作区创建、管理和测试应用程序。 有关实施详细信息，请参阅 [创建您的第一个AEM Forms应用程序](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## 功能概述 {#functional-overview}
 

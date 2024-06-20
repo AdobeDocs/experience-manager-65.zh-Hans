@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1077'
 ht-degree: 0%
@@ -126,7 +126,7 @@ ht-degree: 0%
 
 [使用信任管理器API导入凭据](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
-[快速入门（SOAP模式）：使用Java API导入凭据](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API导入凭据](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -199,7 +199,7 @@ ht-degree: 0%
 
 [使用信任管理器API删除凭据](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-[快速入门（SOAP模式）：使用Java API删除凭据](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API删除凭据](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

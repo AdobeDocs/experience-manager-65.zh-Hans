@@ -8,7 +8,8 @@ docset: aem65
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1967'
 ht-degree: 2%
@@ -113,12 +114,12 @@ AEM Forms支持以下资源类型：
    <td>一个只读值，指定上次发布表单的时间。</td> 
   </tr> 
   <tr> 
-   <td>发布开启/结束时间</td> 
+   <td>Publish开启/结束时间</td> 
    <td>除资源以外的所有其他资源</td> 
    <td><p>计划自动发布/取消发布表单的时间。 用户在编辑元数据时设置此值。</p> 
     <ul> 
-     <li>发布开始时间和发布结束时间均应在当前日期之后。 </li> 
-     <li>发布关闭时间应在发布开启时间之后。 </li> 
+     <li>Publish的打开和关闭时间都应晚于当前日期。 </li> 
+     <li>Publish关闭时间应在发布开启时间之后。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -126,7 +127,7 @@ AEM Forms支持以下资源类型：
    <td><p>表单模板</p> <p>PDF表单</p> </td> 
    <td><p>配置用户指定的URL以将表单数据提交到servlet。</p> <p>可以使用以下任一方法配置提交URL，并按优先级顺序列出：</p> 
     <ul> 
-     <li>在AEM Forms Designer中创建XFA表单时，通过使用HTTP提交按钮，直接在表单模板中指定提交URL。</li> 
+     <li>在AEM Forms Designer中创建XFA表单时，使用HTTP提交按钮直接在表单模板中指定提交URL。</li> 
      <li>在AEM Forms UI中，选择表单并在编辑元数据属性时指定提交URL。</li> 
      <li>在Forms Portal中，编辑Search &amp; Lister组件，然后在“表单链接”选项卡下指定提交URL。</li> 
     </ul> </td> 

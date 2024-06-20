@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: d2bd7c3e-4f75-4234-a7aa-ee8524430493
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1815'
 ht-degree: 0%
@@ -183,7 +184,7 @@ PDFPortfolio在集合对象中返回。 循环访问收藏集对象并将PDFPort
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API组合PDFPortfolio](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API组合PDFPortfolio](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

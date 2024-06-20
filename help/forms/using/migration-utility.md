@@ -10,7 +10,8 @@ docset: aem65
 role: Admin,User
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1736'
 ht-degree: 1%
@@ -58,7 +59,7 @@ ht-degree: 1%
 * 文本模块中的列表已得到改进，现在呈现方式有所不同。 视觉上可能有所差异。 Adobe建议您渲染并查看您在文本模块中使用列表的字母。
 * 由于图像内容模块已转换为DAM资源并在迁移期间将布局和片段添加到表单，因此这些模块的“更新者”属性将更改为“管理员”。
 * 资产的版本历史记录未迁移，且在迁移后不可用。 迁移后的后续版本历史记录将得到维护。
-* 由于AEM 6.1 Forms已弃用发布准备就绪状态，因此所有处于发布准备就绪状态的资源都将更改为已修改状态。
+* 由于AEM 6.1 Forms已弃用“准备就绪Publish”状态，因此“准备就绪Publish”状态的所有资源都将更改为“已修改”状态。
 * 由于用户界面在AEM Forms 6.3中进行了更新，因此执行自定义设置的步骤也有所不同。 如果您是从6.3之前的版本迁移，请重做自定义设置。
 * 布局片段移自 `/content/apps/cm/layouts/fragmentlayouts/1001` 到 `/content/apps/cm/modules/fragmentlayouts`. 资产中的数据字典引用显示数据字典的路径而不是其名称。
 * 必须重新调整用于文本模块中对齐的任何制表符空格。 有关更多信息，请参阅 [通信管理 — 使用制表符间距排列文本](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html).
@@ -173,9 +174,9 @@ ht-degree: 1%
 
    1. [以zip文件格式下载XFA](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) 从Forms用户界面访问。
    1. 提取文件。
-   1. 在最新的设计器中打开XFA文件并保存。 XFA的版本将更新到最新版本。
+   1. 在最新的Designer中打开XFA文件并保存。 XFA的版本将更新到最新版本。
    1. 在Forms用户界面中上传XFA。
 
-1. 发布迁移前在上一个系统中发布的所有资源。 迁移实用程序仅在创作实例上更新资产，要更新发布实例上的资产，您必须发布资产。
+1. Publish迁移前在上一个系统中发布的所有资源。 迁移实用程序仅会更新创作实例上的资源，要更新Publish实例上的资源，您必须发布资源。
 
 1. 在AEM Forms 6.4和6.5中，更改了Forms用户组的某些权限。 如果您希望您的任何用户能够上传包含脚本的XDP和自适应Forms或使用代码编辑器，则必须将它们添加到forms-power-users组。 同样，模板作者无法在规则编辑器中再使用代码编辑器。 要使用户能够使用代码编辑器，请将其添加到af-template-script-writers组。 有关将用户添加到组的说明，请参阅 [管理用户和用户组](/help/communities/users.md).

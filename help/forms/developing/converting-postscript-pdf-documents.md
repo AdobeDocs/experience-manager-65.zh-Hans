@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '1315'
 ht-degree: 0%
@@ -128,7 +128,7 @@ Distiller®服务可将PostScript®、封装的PostScript (EPS)和PRN文件转�
 
 [步骤摘要](converting-postscript-pdf-documents.md#summary-of-steps)
 
-[快速入门（SOAP模式）：使用Java API将PostScript文件转换为PDF文档](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API将PostScript文件转换为PDF文档](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

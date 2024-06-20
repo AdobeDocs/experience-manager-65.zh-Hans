@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1442'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # 配置输出的缓存  {#configuring-caching-for-output}
 
-Output服务将XML表单数据与在Designer中创建的表单设计合并，以创建各种格式的文档输出流。
+输出服务将XML表单数据与Designer中创建的表单设计合并，以创建各种格式的文档输出流。
 
 管理控制台中的“输出”页面包含控制“输出”服务缓存项目的方式的设置。 您可以调整这些设置以优化Output服务的性能。
 

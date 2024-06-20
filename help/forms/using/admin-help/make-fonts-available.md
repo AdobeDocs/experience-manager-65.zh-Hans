@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e9eae896-b1e4-4caa-b466-ac8c9e7416a4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # 使字体可用 {#make-fonts-available}
 
-确保表单中使用的字体可用于托管AEM表单的J2EE应用程序服务器。 例如，请考虑以下方案。 窗体设计器将字体添加到Designer使用的字体目录中，并创建在单独的计算机上使用该字体的窗体。 要使Output服务使用该字体，请将其放置在Customer fonts目录中。 如果Customer fonts目录不存在，请在托管AEM表单的J2EE应用程序服务器上创建一个目录。
+确保表单中使用的字体可用于托管AEM表单的J2EE应用程序服务器。 例如，请考虑以下方案。 表单设计人员将字体添加到Designer使用的字体目录中，并创建在单独的计算机上使用该字体的表单。 要使Output服务使用该字体，请将其放置在Customer fonts目录中。 如果Customer fonts目录不存在，请在托管AEM表单的J2EE应用程序服务器上创建一个目录。
 
 有关其他字体设置的信息，请参阅 [配置常规AEM表单设置](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).
 

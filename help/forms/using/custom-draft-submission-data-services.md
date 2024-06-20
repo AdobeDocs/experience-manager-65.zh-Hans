@@ -1,13 +1,13 @@
 ---
 title: 自定义草稿和提交数据服务
-description: 默认情况下，AEM Forms会将草稿和提交的自适应表单存储在发布实例的默认节点中。 但是，您可以配置AEM Forms的草稿和提交数据服务，以自定义草稿和提交的自适应表单的存储。
+description: 默认情况下，AEM Forms会将草稿和提交的自适应表单存储在Publish实例的默认节点中。 但是，您可以配置AEM Forms的草稿和提交数据服务，以自定义草稿和提交的自适应表单的存储。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM Forms允许用户将自适应表单另存为草稿。 草稿功能为用户提供了维护工作进行中表单的选项。 然后，用户可随时从任何设备填写并提交表单。
 
-默认情况下，AEM Forms会将与草稿和提交关联的用户数据存储在的发布实例上 `/content/forms/fp` 节点。
+默认情况下，AEM Forms会将与草稿和提交相关的用户数据存储在Publish实例中的 `/content/forms/fp` 节点。
 
 但是，AEM Forms Portal组件提供了数据服务，通过这些数据服务，您可以自定义存储草稿和提交的用户数据的实施。 例如，您可以将数据存储在组织中当前实施的数据存储中。
 

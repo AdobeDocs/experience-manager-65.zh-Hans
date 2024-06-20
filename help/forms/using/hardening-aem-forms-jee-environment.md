@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '7608'
 ht-degree: 1%
@@ -264,7 +265,7 @@ Configuration Manager使用部署在您的应用程序服务器上的servlet对J
 
 **锁定对信任存储区的远程访问**
 
-通过Configuration Manager，您可以将Acrobat Reader DC扩展凭据上传到JEE信任存储区上的AEM Forms 。 这意味着通过远程协议（SOAP和EJB）访问Trust Store Credential Service在默认情况下处于启用状态。 在使用Configuration Manager上载权限凭据或决定稍后使用管理控制台管理凭据后，不再需要此访问。
+通过Configuration Manager，您可以将Acrobat Reader DC扩展凭据上传到JEE信任存储区上的AEM Forms 。 这意味着默认情况下已启用通过远程协议(SOAP和EJB)访问Trust Store Credential Service。 在使用Configuration Manager上载权限凭据或决定稍后使用管理控制台管理凭据后，不再需要此访问。
 
 您可以按照一节中的步骤禁用对所有Trust Store服务的远程访问 [禁用对服务的非必要远程访问](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
@@ -835,9 +836,9 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
    <td> 
     <ul> 
      <li><p>Web服务客户端应用程序，如.NET应用程序</p> </li> 
-     <li><p>Adobe Reader®对JEE服务器Web服务上的AEM Forms使用SOAP</p> </li> 
+     <li><p>Adobe Reader®在JEE服务器Web服务上使用SOAP for AEM Forms</p> </li> 
      <li><p>AdobeFlash®应用程序使用SOAP进行Forms Server Web服务</p> </li> 
-     <li><p>在SOAP模式下使用时，对JEE SDK调用使用AEM Forms</p> </li> 
+     <li><p>在SOAP模式下使用JEE SDK调用时，使用AEM Forms</p> </li> 
      <li><p>Workbench设计环境</p> </li> 
     </ul> </td> 
   </tr> 

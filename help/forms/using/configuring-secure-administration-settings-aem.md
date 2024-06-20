@@ -7,7 +7,8 @@ products: SG_EXPERIENCEMANAGER/6.4
 role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -24,7 +25,7 @@ ht-degree: 0%
 
 ## 禁用对服务的非必要远程访问 {#disabling-non-essential-remote-access-to-services}
 
-安装并配置JEE上的AEM Forms后，可以通过SOAP和Enterprise JavaBeans™ (EJB)进行远程调用的许多服务。在本例中，术语remote是指对应用程序服务器的SOAP、EJB或Action Message Format (AMF)端口具有网络访问权限的任何调用方。
+安装并配置JEE上的AEM Forms后，可以通过SOAP和Enterprise JavaBeans™ (EJB)进行远程调用的许多服务。在本例中，术语remote是指对应用程序服务器中的SOAP、EJB或Action Message Format (AMF)端口具有网络访问权限的任何调用方。
 
 尽管JEE服务上的AEM Forms要求向授权调用方传递有效凭据，但您应仅允许远程访问您需要远程访问的服务。 要获得有限的可访问性，您应该尽可能减少可远程访问的服务集，以便系统正常工作，然后为您所需的其他服务启用远程调用。
 
@@ -61,7 +62,7 @@ JEE服务上的AEM Forms始终需要至少SOAP访问权限。 Workbench通常需
    * WorkspaceSingleSignOn
    * 应用程序管理器
 
-1. 单击 **下一个** 对于不在上述列表中的SOAP端点，重复上一步骤。 在删除端点之前，请确保在提供程序列中列出SOAP。
+1. 单击 **下一个** 对不在上面列表中的SOAP端点重复上一步骤。 在删除端点之前，请确保SOAP列在“提供程序”列中。
 
 ## 禁用对服务的非基本匿名访问 {#disabling-non-essential-anonymous-access-to-services}
 

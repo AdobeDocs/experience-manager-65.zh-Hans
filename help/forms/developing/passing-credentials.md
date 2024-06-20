@@ -3,8 +3,9 @@ title: 使用WS-security标头传递凭据
 description: 了解如何使用WS-security标头传递凭据
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Document Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%
@@ -15,7 +16,7 @@ ht-degree: 0%
 
 使用Web服务在JEE服务上调用AEM Forms时，您可以使用WS-Security标头传递AEM Forms on JEE所需的客户端身份验证信息。 WS-Security定义SOAP扩展以实现客户端身份验证、消息机密性和消息完整性。 因此，当JEE上的AEM Forms部署为独立服务器或群集环境时，您可以调用JEE上的AEM Forms 。
 
-如何在JEE上将WS-Security标头传递到AEM Forms取决于您使用的是轴生成的Java类，还是使用服务的本机SOAP栈栈的.NET客户端程序集。
+如何在JEE上将WS-Security标头传递到AEM Forms，取决于您使用的是轴生成的Java类，还是使用服务的本机SOAP栈栈的.NET客户端程序集。
 
 >[!NOTE]
 >

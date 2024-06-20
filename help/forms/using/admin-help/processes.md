@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1631'
 ht-degree: 0%
@@ -129,7 +130,7 @@ ht-degree: 0%
 
 **进程ID：** 形成工作流在实例化进程（即，当用户或自动步骤启动进程时）时分配的正整数。 您可以使用此标识符跟踪流程实例的生命周期。
 
-**进程名称 — 版本：** 进程的名称，如Designer中所定义。
+**进程名称 — 版本：** 在Designer中定义的进程名称。
 
 **状态：** 指示进程实例是正常运行、正在更改状态还是已停止。 （请参阅关于流程实例状态。）
 

@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 699a7309-a976-480e-886f-2e466a477348
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 XMP Utilities服务提供了以下快速启动功能。
 
-[快速入门（SOAP模式）：使用Java API导出XMP元数据](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API导出XMP元数据](xmp-utilities-service-java-api.md#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api)
 
-[快速入门（SOAP模式）：使用Java API导入XMP元数据](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API导入XMP元数据](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
 AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应设置为SOAP。
 
@@ -29,7 +29,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 >
 >如果使用UNIX等其他操作系统，请将Windows特定的路径替换为适用操作系统支持的路径，则“使用AEM进行编程”表单中的快速入门将基于Forms服务器。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 快速入门（SOAP模式）：使用Java API导出XMP元数据 {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
+## 快速入门(SOAP模式)：使用Java API导出XMP元数据 {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
 以下代码示例可检索、检查和保存XMP元数据。 (请参阅 [从PDF文档导出元数据](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
@@ -134,7 +134,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API导入XMP元数据 {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
+## 快速入门(SOAP模式)：使用Java API导入XMP元数据 {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
 以下代码示例导入XMP元数据并将新的PDF文件保存到磁盘。 PDF文档基于名为Loan.pdf的PDF文件。 包含要导入到PDF文档中的元数据的XML文档基于一个名为的XML文件 *LoanMetaData.xml*. 有关此XML文件的信息，请参见 [将元数据导入PDF文档](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 

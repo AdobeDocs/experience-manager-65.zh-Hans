@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '4099'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Forms服务将表单渲染为HTML，以响应来自Web浏览器的HTTP请求。 将表单渲染为HTML的好处是，客户端Web浏览器所在的计算机不需要Adobe Reader、Acrobat或Flash Player(适用于表单指南（已弃用）)。
 
-要将表单渲染为HTML，必须将表单设计另存为XDP文件。 保存为PDF文件的表单设计无法呈现为HTML。 在Designer中开发将渲染为HTML的表单设计时，请考虑以下条件：
+要将表单渲染为HTML，必须将表单设计另存为XDP文件。 保存为PDF文件的表单设计无法呈现为HTML。 在Designer中开发将作为HTML呈现的表单设计时，请考虑以下条件：
 
 * 请勿使用对象的边框属性在表单上绘制线条、框或网格。 某些浏览器可能不会将边框与预览中显示的边框完全对齐。 对象可能显示为分层，也可能将其他对象推离其预期位置。
 * 可以使用直线、矩形和圆定义背景。
@@ -34,7 +34,7 @@ Forms服务将表单渲染为HTML，以响应来自Web浏览器的HTTP请求。 
 
 ## HTML页面 {#html-pages}
 
-当窗体设计呈现为HTML窗体时，每个第二级子窗体呈现为HTML页（面板）。 可以在Designer中查看子表单的层次结构。 属于根子表单的子表单（根子表单的默认名称为form1）是面板子表单。 以下示例显示了窗体设计的子窗体。
+当窗体设计呈现为HTML窗体时，每个第二级子窗体呈现为HTML页（面板）。 您可以在Designer中查看子表单的层次结构。 属于根子表单的子表单（根子表单的默认名称为form1）是面板子表单。 以下示例显示了窗体设计的子窗体。
 
 ```java
      form1
@@ -233,7 +233,7 @@ XFA子集定义映射到HTML事件的XFA事件。 计算事件和验证事件的
 
 **呈现HTML表单**
 
-要呈现HTML表单，请指定在Designer中创建并保存为XDP文件的表单设计。 选择HTML转换类型。 例如，您可以指定用于呈现Internet Explorer 5.0或更高版本的动态HTML的HTML转换类型。
+要呈现HTML表单，请指定在Designer中创建并另存为XDP文件的表单设计。 选择HTML转换类型。 例如，您可以指定用于呈现Internet Explorer 5.0或更高版本的动态HTML的HTML转换类型。
 
 呈现HTML表单还需要值，例如呈现其他表单类型所需的URI值。
 
@@ -311,7 +311,7 @@ XFA子集定义映射到HTML事件的XFA事件。 计算事件和验证事件的
 
 [将Forms渲染为HTML](#rendering-forms-as-html)
 
-[快速入门（SOAP模式）：使用Java API呈现HTML表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API呈现HTML表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '955'
 ht-degree: 0%
@@ -31,7 +32,7 @@ ht-degree: 0%
 
 **Null引用：** 当您打开新的浏览器窗口或Tab，然后键入地址并按Enter键时，反向链接为Null。 该请求是全新请求，并非源自父网页；因此，不存在该请求的反向链接。 Forms服务器可以从以下位置接收Null反向链接：
 
-* 在Acrobat的SOAP或REST端点上发出的请求
+* 在SOAP或REST端点上发出的来自Acrobat的请求
 * 在AEM Forms SOAP或REST端点上发出HTTP请求的任何桌面客户端
 * 打开新的浏览器窗口并输入任何AEM forms web应用程序登录页的URL时
 

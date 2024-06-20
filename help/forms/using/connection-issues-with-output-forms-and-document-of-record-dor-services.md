@@ -7,7 +7,8 @@ docset: aem65
 role: Admin
 exl-id: bd58099c-08cd-4056-afb6-a5935454429a
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms, Troubleshooting
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '168'
 ht-degree: 1%

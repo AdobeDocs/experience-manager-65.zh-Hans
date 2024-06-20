@@ -7,8 +7,9 @@ topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 solution: Experience Manager, Experience Manager Forms
+feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '935'
 ht-degree: 0%
@@ -19,7 +20,7 @@ ht-degree: 0%
 
 在以表单为中心的门户部署设置中，表单开发和门户开发是两个不同的活动。 当表单设计人员将表单设计和存储在存储库中时，Web开发人员会创建一个Web应用程序来列出表单并处理提交。 Forms随后将复制到Web层，因为Forms存储库和Web应用程序之间没有通信。
 
-这通常会导致在管理设置和生产延迟时出现问题。 例如，如果存储库中有较新版本的表单，则表单设计器会替换Web层上的表单，修改Web应用程序，并在公共站点上重新部署表单。 重新部署Web应用程序可能会导致某些服务器停机。 由于服务器停机是计划的活动，因此不能将更改立即推送到公共站点。
+这通常会导致在管理设置和生产延迟时出现问题。 例如，如果存储库中有较新版本的表单，则Designer表单会替换Web层上的表单、修改Web应用程序并重新部署公共站点上的表单。 重新部署Web应用程序可能会导致某些服务器停机。 由于服务器停机是计划的活动，因此不能将更改立即推送到公共站点。
 
 Forms Portal可减少管理开销和生产延迟。 它为Web开发人员配备了组件，以便在使用Forms (AEM)创作的网站上创建和自定义Adobe Experience Manager门户。
 
@@ -29,7 +30,7 @@ Forms Portal可减少管理开销和生产延迟。 它为Web开发人员配备�
 
 导航到已发布的Forms Portal页面。 有关创建Forms Portal页面的更多信息，请参阅 [创建Forms门户页面](../../forms/using/creating-form-portal-page.md).
 
-Forms Portal的搜索和列表程序组件显示AEM服务器的发布实例上可用的表单。 此列表包含在创作Forms Portal页面时在筛选器中定义的所有表单或表单。 Forms Portal页面看起来类似于，如下图所示：
+Forms Portal的搜索和列表程序组件显示AEM服务器的Publish实例上可用的表单。 此列表包含在创作Forms Portal页面时在筛选器中定义的所有表单或表单。 Forms Portal页面看起来类似于，如下图所示：
 
 ![一个示例表单门户页面 ](assets/forms-portal-page.png)
 

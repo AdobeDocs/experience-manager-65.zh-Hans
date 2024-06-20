@@ -7,8 +7,9 @@ topic-tags: forms-manager, introduction
 docset: aem65
 exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: Admin, User
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '1566'
 ht-degree: 1%
@@ -98,7 +99,7 @@ AEM [!DNL Forms] 信件是一种安全、个性化的交互式信件。 您可�
   ![AEM Forms工具](assets/aem_forms_tools_new.png)
 
 * **配置PDF Generator：** 管理员可以配置AEM [!DNL Forms] PDF Generator设置、添加用户帐户以及将配置导入或导出到PDF Generator。
-* **发布相应的管理资源：** AEM [!DNL Forms] 允许您同时从创作实例发布所有字母、文档片段和数据字典以及相关的依赖项。 已发布的资产包括所有相应的管理资产和相关依赖项。 有关详细信息，请参阅 [发布和取消发布表单和文档](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
+* **Publish相应的管理资源：** AEM [!DNL Forms] 允许您同时从创作实例发布所有字母、文档片段和数据字典以及相关的依赖项。 已发布的资产包括所有相应的管理资产和相关依赖项。 有关详细信息，请参阅 [发布和取消发布表单和文档](../../forms/using/publishing-unpublishing-forms.md#publishallthecorrespondencemanagementassets).
 * **导出相应的管理资源：** 您可以从AEM中作为包下载所有相应的管理资源和相关依赖项 [!DNL Forms] 实例。 有关详细步骤，请参阅 [将资源导入和导出到AEM Forms](../../forms/using/import-export-forms-templates.md#importandexportassetsincorrespondencemanagement)
 
 ## 用户界面的常见元素 {#commonelements}

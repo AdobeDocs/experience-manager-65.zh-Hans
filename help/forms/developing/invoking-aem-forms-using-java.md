@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '5333'
 ht-degree: 0%
@@ -443,7 +443,7 @@ Java API支持以下功能：
 
 * **DSC_CREDENTIAL_USERNAME：** 指定AEM表单用户名。 用户要成功调用AEM Forms服务，需要服务用户角色。 用户还可以具有另一个包含“服务调用”权限的角色。 否则，当他们尝试调用服务时会引发异常。 如果禁用了服务安全性，则不必指定此连接属性。
 * **DSC_CREDENTIAL_PASSWORD：** 指定相应的密码值。 如果禁用了服务安全性，则不必指定此连接属性。
-* **DSC_REQUEST_TIMEOUT：** soap请求的默认请求超时限制为1200000毫秒（20分钟）。 有时，请求可能需要较长时间才能完成操作。 例如，检索大量记录的SOAP请求可能需要较长的超时限制。 您可以使用 `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` 增加SOAP请求的请求调用超时限制。
+* **DSC_REQUEST_TIMEOUT：** SOAP请求的默认请求超时限制为1200000毫秒（20分钟）。 有时，请求可能需要较长时间才能完成操作。 例如，检索大量记录的SOAP请求可能需要较长的超时限制。 您可以使用 `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` 增加SOAP请求的请求调用超时限制。
 
   **注意**：只有基于SOAP的调用才支持DSC_REQUEST_TIMEOUT属性。
 
@@ -651,7 +651,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
-**Weblogic**
+**WebLogic**
 
 以下示例显示用于连接到部署在 WebLogic 上的 AEM 表单的 jndi.properties 文件的内容。
 
@@ -660,7 +660,7 @@ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, 
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
-**Jboss**
+**JBoss**
 
 以下示例显示了用于连接到部署在 JBoss 上的 AEM 表单的 jndi.properties 文件的内容。
 

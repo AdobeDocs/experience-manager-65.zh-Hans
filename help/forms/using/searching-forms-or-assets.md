@@ -8,7 +8,8 @@ docset: aem65
 role: Admin,User
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '689'
 ht-degree: 3%

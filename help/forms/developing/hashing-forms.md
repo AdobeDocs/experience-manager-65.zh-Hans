@@ -3,8 +3,9 @@ title: 如何在动态PDF forms中生成和使用哈希？
 description: 在动态PDF forms中生成和使用哈希。
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms, Document Security
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 0%
@@ -27,7 +28,7 @@ ht-degree: 0%
 
 哈希函数将任意长度的长字符串（或消息）作为输入，并生成固定长度的字符串作为输出，有时称为消息摘要或数字指纹。
 
-通过JEE Designer上的AEM Forms，您可以在脚本对象中作为JavaScript实施各种哈希函数，并在动态PDF文档中运行这些函数。 本文示例文件包含的示例PDF使用以下散列函数的开源实现：
+通过JEE Designer上的AEM Forms，您可以像JavaScript那样在脚本对象中实施各种哈希函数，并在动态PDF文档中运行这些函数。 本文示例文件包含的示例PDF使用以下散列函数的开源实现：
 
 * MD4和MD5 — 由Ronald Rivest设计
 
@@ -41,7 +42,7 @@ ht-degree: 0%
 
 ## 检查脚本对象 {#examining-script-objects}
 
-在JEE设计器的AEM Forms中打开两个提供的示例之一时，您可以在层级组件面板中找到四个脚本对象（请参阅下图）。
+在JEE Designer上的AEM Forms中打开提供的两个示例之一时，您可以在层级调色板中找到四个脚本对象（请参阅下图）。
 
 ![变量](assets/variables.jpg)
 
@@ -91,7 +92,7 @@ ht-degree: 0%
 
 请按照以下步骤尝试第二个示例：
 
-1. 打开 `hashing_forms_sample2.pdf` AEM Forms的JEE设计器。 或者，您可以使用Adobe Reader或Adobe Acrobat Professional打开并查看示例，但看不到源代码。
+1. 打开 `hashing_forms_sample2.pdf` 与AEM Forms在JEE Designer上。 或者，您可以使用Adobe Reader或Adobe Acrobat Professional打开并查看示例，但看不到源代码。
 1. 选择两个口令字段之一，标签为 [!UICONTROL 密码手册] 或 [!UICONTROL 密码女性] 并键入密码：
    1. 此人的密码为 `bob`
    1. 女人的密码是 `alice`

@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '3478'
 ht-degree: 0%
@@ -101,7 +101,7 @@ ht-degree: 0%
 
 ### 窗体设计注意事项 {#form-design-considerations}
 
-带有可流动布局的Forms基于在Designer中创建的表单设计。 表单设计指定一组布局、呈现和数据捕获规则，包括基于用户输入计算值。 数据输入到表单中时将应用规则。 添加到表单的字段是表单设计内的子表单。 例如，在上图所示的采购订单表单中，每行都是一个子表单。 有关创建包含子表单的表单设计的信息，请参阅 [创建具有流式布局的采购订单表单](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
+带可流动布局的Forms基于在Designer中创建的表单设计。 表单设计指定一组布局、呈现和数据捕获规则，包括基于用户输入计算值。 数据输入到表单中时将应用规则。 添加到表单的字段是表单设计内的子表单。 例如，在上图所示的采购订单表单中，每行都是一个子表单。 有关创建包含子表单的表单设计的信息，请参阅 [创建具有流式布局的采购订单表单](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
 ### 了解数据子组 {#understanding-data-subgroups}
 
@@ -305,7 +305,7 @@ XML数据源用于预先填充具有固定布局和可流动布局的表单。 �
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API在可流式布局中预填充Forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API在可流式布局中预填充Forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

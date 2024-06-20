@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: c9ebad8b-b631-492d-99a3-094e892b2ddb
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '3674'
 ht-degree: 0%
@@ -422,7 +422,7 @@ Java Servlet通过使用以下Java代码捕获从HTML页面发布的数据：
 
 >[!NOTE]
 >
->在上图中，JPG文件可被任何JPG图像文件替换。
+>在上图中，可以将JPG文件替换为任何JPG图像文件。
 
 **将Web应用程序打包到WAR文件：**
 

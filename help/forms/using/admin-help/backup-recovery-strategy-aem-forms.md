@@ -7,8 +7,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1518'
 ht-degree: 0%
@@ -86,7 +87,7 @@ AEM Forms备份策略包含两种类型的备份：
    1. 单击 **开始** 从存储库同步资产。
 
 1. 在群集环境中，主节点(对于AEM)应在辅助节点之前启动。
-1. 确保在验证系统的正常操作之前，不会从内部或外部源（如Web、SOAP或EJB进程启动器）启动任何进程。
+1. 在验证系统的正常运行之前，请确保不从内部或外部源(如Web、SOAP或EJB进程启动器)启动任何进程。
 
 如果移动或更改了主AEM表单数据库，请查看与您的应用程序服务器相关的安装指南，以了解有关更新AEM表单数据源IDP_DS和EDC_DS的数据库连接信息的信息。
 

@@ -10,7 +10,8 @@ docset: aem65
 role: Developer
 exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1859'
 ht-degree: 0%
@@ -117,7 +118,7 @@ DDX文档包含一个XDP `result` 指定结果名称的标记。 在这种情况
 
 **参考XDP文档**
 
-要组合多个XDP文档，请引用用于组合结果XDP文档的所有XDP文件。 确保XDP文档中包含的、由引用的 `source` 属性在 `fragment` 属性。 子表单在Designer中定义。 例如，请考虑以下XML。
+要组合多个XDP文档，请引用用于组合结果XDP文档的所有XDP文件。 确保XDP文档中包含的、由引用的 `source` 属性在 `fragment` 属性。 在Designer中定义子表单。 例如，请考虑以下XML。
 
 ```xml
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
@@ -204,7 +205,7 @@ DDX文档包含一个XDP `result` 指定结果名称的标记。 在这种情况
 **另请参阅**
 
 [组装多个XDP片段](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[快速入门（SOAP模式）：使用Java API汇编多个XDP片段](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API汇编多个XDP片段](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 

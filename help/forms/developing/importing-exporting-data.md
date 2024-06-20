@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2754'
 ht-degree: 0%
@@ -24,7 +24,7 @@ ht-degree: 0%
 表单数据集成服务可以将数据导入PDF表单并从PDF表单导出数据。 导入和导出操作支持两种类型的PDF forms：
 
 * Acrobat表单(在Acrobat中创建)是包含表单字段的PDF文档。
-* AdobeXML表单（在Designer中创建）是符合XMLAdobeXML Forms架构(XFA)的PDF文档。
+* AdobeXML表单(在Designer中创建)是符合XMLAdobeXML Forms架构(XFA)的PDF文档。
 
 根据PDF表单的类型，表单数据可以以下列格式之一存在：
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 您可以使用表单数据集成服务将表单数据导入交互式PDF forms。 交互式PDF表单是一种PDF文档，其中包含一个或多个用于从User收集信息或用于显示自定义信息的字段。 表单数据集成服务不支持表单计算、验证或脚本。
 
-要将数据导入到在Designer中创建的表单中，必须引用有效的XDP XML数据源。 考虑以下抵押贷款申请表示例。
+要将数据导入到Designer中创建的表单，必须引用有效的XDP XML数据源。 考虑以下抵押贷款申请表示例。
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
@@ -116,11 +116,11 @@ ht-degree: 0%
 
 **引用PDF表单**
 
-要将数据导入PDF表单，必须引用在Designer中创建的XML表单或在Acrobat中创建的Acrobat表单。
+要将数据导入PDF表单，您必须引用在Designer中创建的XML表单或在Acrobat中创建的Acrobat表单。
 
 **引用XML数据源**
 
-要导入表单数据，必须引用有效的数据源。 要将数据导入到在Designer中创建的XFA XML表单中，必须使用XDP XML数据源。 如果引用Acrobat表单，则必须使用XFDF数据源。 对于要将数据导入到的每个字段，必须指定值。 如果XML数据源中的元素与表单中的字段不对应，则该元素将被忽略。
+要导入表单数据，必须引用有效的数据源。 要将数据导入到Designer中创建的XFA XML表单中，您必须使用XDP XML数据源。 如果引用Acrobat表单，则必须使用XFDF数据源。 对于要将数据导入到的每个字段，必须指定值。 如果XML数据源中的元素与表单中的字段不对应，则该元素将被忽略。
 
 **将数据导入PDF表单**
 
@@ -185,7 +185,7 @@ ht-degree: 0%
 
 [步骤摘要](importing-exporting-data.md#summary-of-steps)
 
-[快速入门（SOAP模式）：使用Java API导入表单数据](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API导入表单数据](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -256,7 +256,7 @@ ht-degree: 0%
 
 ## 导出表单数据 {#exporting-form-data}
 
-您可以使用表单数据集成服务从交互式PDF表单中导出表单数据。 所导出数据的格式取决于表单类型。 如果表单类型是在Acrobat中创建的Acrobat表单，则导出的数据为XFDF。 如果表单类型是在Designer中创建的XML表单，则导出的数据为XDP。
+您可以使用表单数据集成服务从交互式PDF表单中导出表单数据。 所导出数据的格式取决于表单类型。 如果表单类型是在Acrobat中创建的Acrobat表单，则导出的数据为XFDF。 如果表单类型是在Designer中创建的XML表单，则导出的数据是XDP。
 
 >[!NOTE]
 >
@@ -290,7 +290,7 @@ ht-degree: 0%
 
 **引用PDF表单**
 
-要从PDF表单导出数据，必须引用在Designer或Acrobat中创建的、包含表单数据的PDF表单。 如果尝试从空的PDF表单中导出数据，您将获得空的XML架构。
+要从PDF表单导出数据，您必须引用在Designer或Acrobat中创建的、包含表单数据的PDF表单。 如果尝试从空的PDF表单中导出数据，您将获得空的XML架构。
 
 **从PDF表单导出数据**
 
@@ -345,7 +345,7 @@ ht-degree: 0%
 
 [步骤摘要](importing-exporting-data.md#summary-of-steps)
 
-[快速入门（SOAP模式）：使用Java API导出表单数据](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API导出表单数据](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

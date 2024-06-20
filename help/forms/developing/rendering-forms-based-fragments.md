@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2189'
 ht-degree: 0%
@@ -35,8 +35,8 @@ A *脚本片段* 包含可重复使用的JavaScript函数或与任何特定对�
 * **内容重用**：您可以使用片段在多个表单设计中重用内容。 当需要在多个表单中使用一些相同的内容时，使用片段比复制或重新创建内容更快、更简单。 使用片段还可确保表单设计中经常使用的部分在所有引用表单中都具有一致的内容和外观。
 * **全局更新**：您可以使用片段仅在一个文件中对多个表单进行一次全局更改。 您可以更改片段中的内容、脚本对象、数据绑定、布局或样式，并且引用片段的所有XDP表单都将反映这些更改。
 * 例如，许多表单的共同元素可能是包含国家/地区下拉列表对象的地址块。 如果需要更新下拉列表对象的值，则必须打开多个表单进行更改。 如果在片段中包含地址块，则只需打开一个片段文件即可进行更改。
-* 要更新PDF表单中的片段，必须在设计器中重新保存该表单。
-* **共享表单创建**：您可以使用片段在多种资源中共享表单的创建。 具有脚本或Designer其他高级功能专业知识的表单开发人员可以开发和共享利用脚本和动态属性的片段。 窗体设计人员可以使用这些片段来布局窗体设计，并确保窗体的所有部分在由多个人员设计的多个窗体中具有一致的外观和功能。
+* 要更新PDF表单中的片段，必须在Designer中重新保存该表单。
+* **共享表单创建**：您可以使用片段在多种资源中共享表单的创建。 在脚本或Designer的其他高级功能方面拥有专业知识的表单开发人员可以开发和共享利用脚本和动态属性的片段。 窗体设计人员可以使用这些片段来布局窗体设计，并确保窗体的所有部分在由多个人员设计的多个窗体中具有一致的外观和功能。
 
 ### 组装使用片段组装的表单设计 {#assembling-a-form-design-assembled-using-fragments}
 
@@ -148,7 +148,7 @@ Forms服务渲染表单时，会返回一个您必须写入客户端Web浏览器
 
 [基于片段渲染Forms](#rendering-forms-based-on-fragments)
 
-[快速入门（SOAP模式）：使用Java API基于片段呈现表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API基于片段呈现表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -6,7 +6,8 @@ topic-tags: author
 role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Workbench, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2184'
 ht-degree: 0%
@@ -61,7 +62,7 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
 
 下图描述了Workbench的安装，包括：
 * 使用Workbench进行流程设计
-* 使用设计器的表单设计
+* 使用Designer进行表单设计
 
 >[!NOTE]
 >
@@ -78,7 +79,7 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
 **Workbench**
 建议满足以下最低要求：安装所需的磁盘空间：
 * 仅680 MB for Workbench。
-* 2.15 GB的容量，用于完整安装Workbench、设计人员和示例程序集。
+* 2.15 GB的容量，可完全安装Workbench、Designer和示例程序集。
 * 临时安装目录为400 MB — 用户\temp目录为200 MB，Windows临时目录为200 MB。
 
 >[!NOTE]
@@ -102,33 +103,33 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
 
 ## Designer安装注意事项 {#designer-installation-considerations}
 
-默认情况下，Workbench安装包含对应的纯英语版本的Designer。 如果Workbench安装应用程序检测到计算机上存在设计器的现有版本，安装可能会终止，并且您需要先删除设计器的当前版本，然后才能继续。
-下表完整列出了您在安装Workbench时可能遇到的设计器安装方案以及必须执行的任何操作。
+默认情况下，Workbench安装包含相应的Designer纯英语版本。 如果Workbench安装应用程序检测到计算机上存在Designer版本，则安装可能会终止，并且您需要先删除当前版本的Designer，然后才能继续。
+下表完整列出了您在安装Workbench时可能遇到的Designer安装场景以及必须执行的任何操作。
 
 <table>
  <tbody>
   <tr>
-   <td><p><strong>当前已安装的设计器版本</strong></p> </td>
+   <td><p><strong>当前已安装的Designer版本</strong></p> </td>
    <td><p><strong>必需操作</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Acrobat Pro或Acrobat Pro Extended（包括设计器）</p> </td>
+   <td><p>Acrobat Pro或Acrobat Pro Extended(包括Designer)</p> </td>
    <td><p>无。<br /> 
 Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended一起安装的Designer实例。<br />
-不同版本的Designer可以共存于同一系统中，例如，适用于Workbench 6.4的Designer 6.4.x和适用于Workbench 6.5的Designer 6.5.0.x。无需卸载随Acrobat 10 Pro或Acrobat 10 Pro Extended或更高版本一起安装的Designer版本。
+不同版本的Designer可以共存于同一系统中，例如，Designer 6.4.x for Workbench 6.4和Designer 6.5.0.x for Workbench 6.5。无需卸载随Acrobat 10 Pro或Acrobat 10 Pro Extended或更高版本安装的Designer版本。
 <br /></p> </td>
   </tr>
   <tr>
    <td><p>Designer（独立）</p> </td>
-   <td><p>无。 <br />Workbench中包含的Designer版本仅限英语。 <br />Workbench安装程序不会重新安装新版本的Designer。 而是修补与Workbench安装程序捆绑在一起的更新版本。 这还允许您在Workbench中使用本地化版本的Designer。<br /> </p> </td>
+   <td><p>无。 <br />Workbench中包含的Designer版本仅支持英语。 <br />Workbench安装程序不会重新安装新版本的Designer。 而是修补与Workbench安装程序捆绑在一起的更新版本。 这还允许您在Workbench中使用本地化版本的Designer。<br /> </p> </td>
   </tr>
  </tbody>
 </table>
 
-### 在Windows 10上卸载Designer （独立） {#uninstall-designer-standalone-windows10}
+### 在Windows 10上卸载Designer（独立） {#uninstall-designer-standalone-windows10}
 
 1. 转到 **控制面板>程序>程序和功能**
-1. 在当前安装的程序列表中，选择 **Adobe设计器**.
+1. 在当前安装的程序列表中，选择 **AdobeDesigner**.
 1. 单击 **卸载** 然后单击 **是**.
 
 ## 安装Workbench {#installing-workbench}
@@ -155,11 +156,11 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 
 1. 在“Introduction（简介）”屏幕上，单击“Next（下一步）”。
 1. 阅读产品许可协议，选择“I accept the terms of the License Agreement（我接受许可协议的条款）” ，然后单击“Next（下一步）”。
-1. （可选）如果需要此工具创建和修改表单，请选择安装Adobe设计器。
+1. （可选）如果需要此工具创建和修改表单，请选择安装AdobeDesigner 。
 
    >[!NOTE]
    >
-   >通过取消选择此选项，您可以继续使用随Acrobat 10一起安装的Designer。
+   >通过保持取消选中此选项，您可以继续使用随Acrobat 10安装的Designer。
 
 1. 接受列出的默认目录，或单击“选择”并导航到要安装Workbench的目录，然后单击“下一步”。
 
@@ -172,7 +173,7 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 1. 查看发行说明，然后单击完成。
 1. 以下项目现已安装在您的计算机上：
    * **Workbench**：要从“开始”菜单中运行Workbench，请选择所有程序> AEM Forms > Workbench（如果您选择将快捷文件夹存储在该处）。 有关信息，请参见 <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">使用Workbench</a> 文档。
-   * **设计器**：您可以从Workbench内部访问设计器。 有关信息，请参阅中的快速入门主题 <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer帮助</a>.
+   * **设计器**：您可以从Workbench内部访问Designer。 有关信息，请参阅中的快速入门主题 <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer帮助</a>.
    * **AEM FORMS SDK**：有关使用SDK的更多信息，请参阅 <a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">使用AEM Forms编程</a>.
 
 ## 升级流程 {#upgrading-processes}

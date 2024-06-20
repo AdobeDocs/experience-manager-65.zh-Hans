@@ -1,14 +1,15 @@
 ---
 title: 输出服务概述
-description: 输出允许您将XML表单数据与在Designer中创建的表单设计合并，以创建各种格式的文档输出流。
+description: 输出允许您将XML表单数据与Designer中创建的表单设计合并，以创建各种格式的文档输出流。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e99b72d0-fbd5-4150-a225-1a91ad4c5867
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # 输出服务概述 {#overview-of-output-service}
 
-输出允许您将XML表单数据与在Designer中创建的表单设计合并，以创建各种格式的文档输出流。 输出流可以发送到网络打印机、本地打印机或磁盘文件
+输出允许您将XML表单数据与Designer中创建的表单设计合并，以创建各种格式的文档输出流。 输出流可以发送到网络打印机、本地打印机或磁盘文件
 
 可以使用管理控制台中的“输出”页管理Output服务。 如果未通过AEM Forms API指定等效设置，则在运行时将使用您配置的设置。 通过AEM Forms SDK完成的配置将覆盖使用管理控制台配置的设置。
 

@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2455'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF forms
 
 >[!NOTE]
 >
->在使用Forms服务呈现表单之前，请先创建表单设计。 通常，表单设计会在Designer中创建，并保存为XDP文件。 有关创建表单设计的信息，请参阅 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+>在使用Forms服务呈现表单之前，请先创建表单设计。 通常，表单设计在Designer中创建，并保存为XDP文件。 有关创建表单设计的信息，请参阅 [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **贷款申请示例**
 
@@ -146,7 +146,7 @@ Forms应用程序中资源的路径为：
 
 渲染交互式表单时，您可以定义URI值，例如将表单数据发布到的目标URL。 可通过以下方式之一定义目标URL：
 
-* 在Designer中设计表单设计时显示提交按钮
+* 在Designer中设计表单设计时单击提交按钮
 * 通过使用Forms服务客户端API
 
 如果在表单设计内定义了目标URL，请勿使用Forms服务客户端API覆盖它。 也就是说，使用Forms API设置目标URL会将表单设计中指定的URL重置为使用API指定的URL。 如果要将PDF表单提交到表单设计中指定的目标URL，则以编程方式将目标URL设置为空字符串。

@@ -6,7 +6,8 @@ docset: aem65
 role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Interactive Communication
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1383'
 ht-degree: 1%
@@ -17,7 +18,7 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-AEM Form能够集中创建、汇编、管理和提交安全的交互式文档，如商业信函、文档、对帐单、福利通知、市场营销邮件、账单和欢迎资料包。 此功能称为交互式通信。 此功能包含在AEM Forms附加组件包中。 附加组件包部署在AEM的创作或发布实例上。
+AEM Form能够集中创建、汇编、管理和提交安全的交互式文档，如商业信函、文档、对帐单、福利通知、市场营销邮件、账单和欢迎资料包。 此功能称为交互式通信。 此功能包含在AEM Forms附加组件包中。 附加组件包部署在AEM的Author或Publish实例上。
 
 您可以使用交互式通信功能以多种格式生成通信。 例如，Web和PDF。 您可以将交互式通信与AEM Workflow集成在一起，通过客户选择的渠道处理和交付组合通信。 例如，通过电子邮件向最终用户发送通信。
 
@@ -31,7 +32,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 您只需要至少�
 
 ![推荐拓扑](assets/recommended-topology.png)
 
-AEM Forms Interactive Communications在AEM Forms的创作实例上运行管理、创作和代理用户界面。 发布实例托管交互式通信的最终版本，可供最终用户使用。
+AEM Forms Interactive Communications在AEM Forms的创作实例上运行管理、创作和代理用户界面。 Publish实例托管交互式通信的最终版本，可供最终用户使用。
 
 ## 系统要求 {#system-requirements}
 
@@ -49,7 +50,7 @@ AEM Forms Interactive Communications在AEM Forms的创作实例上运行管理�
 
 * 满足内存要求。 AEM Forms插件包需要：
 
-   * 15 GB 的临时空间，用于基于 Microsoft® Windows 的安装。
+   * 15 GB 临时空间，用于基于 Windows Microsoft®安装。
    * 用于基于UNIX的安装的6 GB临时空间。
 
 * 基于UNIX的系统的额外要求：如果您使用的是基于UNIX的操作系统，请从相应操作系统的安装媒体安装以下软件包。
@@ -104,7 +105,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该软件包包含A
    >
    > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
-1. 对所有创作实例和发布实例重复步骤1-7。
+1. 对所有Author和Publish实例重复步骤1-7。
 
 ## 安装后配置 {#post-installation-configurations}
 
@@ -128,16 +129,16 @@ AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCast
    ```
 
 1. 保存并关闭文件，然后启动AEM实例。
-1. 对所有创作实例和发布实例重复步骤1-4。
+1. 对所有Author和Publish实例重复步骤1-4。
 
 #### 配置序列化代理 {#configure-the-serialization-agent}
 
-列入允许列表对所有Author和Publish实例执行以下步骤，将包添加到中：
+对所有Author和Publish列入允许列表实例执行以下步骤，将包添加到Author中：
 
 1. 在浏览器窗口中打开AEM Configuration Manager。 默认URL为https://&#39;[服务器]：[端口]&#39;/system/console/configMgr.
 1. 搜索并打开 **反序列化防火墙配置**.
 1. 添加 **sun.util.calendar** 打包到 **允许列表** 字段。 单击“保存”。
-1. 对所有创作实例和发布实例重复步骤1-3。
+1. 对所有Author和Publish实例重复步骤1-3。
 
 ### 可选安装后配置 {#optional-post-installation-configurations}
 

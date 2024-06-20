@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: 4677b9e5-3811-4de3-b4f4-9574b5898486
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 0%
@@ -153,7 +154,7 @@ ht-degree: 0%
    * 创建 `java.io.File` 对象并确保文件扩展名为.pdf。
    * 调用 `Document` 对象的 `copyToFile` 用于复制 `Document` 对象到文件。 确保您使用 `Document` 对象 `invokeOneDocument` 方法已返回。
 
-* “快速入门（SOAP模式）：使用Java API汇编非交互式PDF文档”
+* “快速入门(SOAP模式)：使用Java API汇编非交互式PDF文档”
 
 ## 使用Web服务API组合非交互式PDF文档 {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 

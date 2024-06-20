@@ -9,7 +9,8 @@ topic-tags: operations
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,  Document Services
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '2519'
 ht-degree: 0%
@@ -237,7 +238,7 @@ ht-degree: 0%
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API组合带有书签的PDF文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API组合带有书签的PDF文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

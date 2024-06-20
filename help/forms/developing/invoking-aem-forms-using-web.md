@@ -8,7 +8,7 @@ topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '9814'
 ht-degree: 0%
@@ -31,10 +31,10 @@ AEM Forms服务通过SOAP协议公开，并符合WSI Basic Profile 1.1。 Web服
 AEM Forms支持以下Web服务标准：
 
 * **编码**：仅支持文档和文本编码（根据WSI基本配置文件，这是首选编码）。 (请参阅 [使用Base64编码调用AEM Forms](#invoking-aem-forms-using-base64-encoding).)
-* **MTOM**：表示一种使用SOAP请求编码附件的方法。 (请参阅 [使用MTOM调用AEM Forms](#invoking-aem-forms-using-mtom).)
-* **SwaRef**：表示使用SOAP请求编码附件的另一种方法。 (请参阅 [使用SwaRef调用AEM Forms](#invoking-aem-forms-using-swaref).)
-* **带有附件的SOAP**：支持MIME和DIME(Direct Internet Message Encapsulation)。 这些协议是通过SOAP发送附件的标准方法。 Microsoft Visual Studio .NET应用程序使用DIME。 (请参阅 [使用Base64编码调用AEM Forms](#invoking-aem-forms-using-base64-encoding).)
-* **WS-Security**：支持用户名密码令牌配置文件，这是作为WS安全SOAP标头的一部分发送用户名和密码的标准方法。 AEM Forms还支持HTTP基本身份验证。 s
+* **MTOM**：表示一种使用SOAP请求对附件进行编码的方式。 (请参阅 [使用MTOM调用AEM Forms](#invoking-aem-forms-using-mtom).)
+* **SwaRef**：表示使用SOAP请求编码附件的另一种方式。 (请参阅 [使用SwaRef调用AEM Forms](#invoking-aem-forms-using-swaref).)
+* **带有附件的SOAP**：支持MIME和DIME(Direct Internet Message Encapsulation)。 这些协议是通过SOAP发送附件的标准方式。 Microsoft Visual Studio .NET应用程序使用DIME。 (请参阅 [使用Base64编码调用AEM Forms](#invoking-aem-forms-using-base64-encoding).)
+* **WS-Security**：支持用户名密码令牌配置文件，这是一种作为WS Security SOAP标头的一部分发送用户名和密码的标准方式。 AEM Forms还支持HTTP基本身份验证。 s
 
 要使用Web服务调用AEM Forms服务，通常需要创建一个使用服务WSDL的代理库。 此 *使用Web服务调用AEM Forms* 部分使用JAX-WS创建Java代理类来调用服务。 (请参阅 [使用JAX-WS创建Java代理类](#creating-java-proxy-classes-using-jax-ws).)
 
@@ -224,7 +224,7 @@ A `BLOB` 对象向和从AEM Forms服务发送和检索二进制数据(例如，P
 返回的传输协议 `BLOB` 对象取决于多个因素，这些因素按照以下顺序考虑，当满足主要条件时停止：
 
 1. **目标URL指定传输协议**. 如果在SOAP调用中指定的目标URL包含参数 `blob="`*BLOB类型*“，则 *BLOB类型* 确定传输协议。 *BLOB类型* 是base64、dime、mime、http、mtom或swaref的占位符。
-1. **服务SOAP终结点是智能的**. 如果满足以下条件，则使用与输入文档相同的传输协议返回输出文档：
+1. **服务SOAP端点为智能**. 如果满足以下条件，则使用与输入文档相同的传输协议返回输出文档：
 
    * 服务的SOAP端点参数“输出Blob对象的默认协议”设置为“智能”。
 
@@ -245,9 +245,9 @@ A `BLOB` 对象向和从AEM Forms服务发送和检索二进制数据(例如，P
 以下是传输类型与从中获取数据的字段之间的相关性：
 
 * **Base64格式**：设置 `blob` 后缀至 `base64` 以返回数据 `BLOB.binaryData` 字段。
-* **MIME或DIME附件**：设置 `blob` 后缀至 `DIME` 或 `MIME` 将数据作为对应的附件类型返回，并将中返回的附件标识符作为 `BLOB.attachmentID` 字段。 使用SOAP框架的专有API从附件中读取数据。
+* **MIME或DIME附件**：设置 `blob` 后缀至 `DIME` 或 `MIME` 将数据作为对应的附件类型返回，并将中返回的附件标识符作为 `BLOB.attachmentID` 字段。 使用SOAP Framework的专有API从附件读取数据。
 * **远程URL**：设置 `blob` 后缀至 `http` 将数据保留在应用程序服务器上，并返回指向 `BLOB.remoteURL` 字段。
-* **MTOM或SwaRef**：设置 `blob` 后缀至 `mtom` 或 `swaref` 将数据作为对应的附件类型返回，并将中返回的附件标识符作为 `BLOB.MTOM` 或 `BLOB.swaRef` 字段。 使用SOAP框架的本机API从附件中读取数据。
+* **MTOM或SwaRef**：设置 `blob` 后缀至 `mtom` 或 `swaref` 将数据作为对应的附件类型返回，并将中返回的附件标识符作为 `BLOB.MTOM` 或 `BLOB.swaRef` 字段。 使用SOAP Framework的本机API从附件中读取数据。
 
 >[!NOTE]
 >
@@ -285,11 +285,11 @@ A `BLOB` 对象向和从AEM Forms服务发送和检索二进制数据(例如，P
   </tr>
   <tr>
    <td><p><code>java.util.Date</code></p></td>
-   <td><p>此 <code>DATE</code> 类型，在服务WSDL中定义如下：</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>如果AEM Forms服务操作需要 <code>java.util.Date</code> 值作为输入，SOAP客户端应用程序必须将日期 <code>DATE.date</code> 字段。 设置 <code>DATE.calendar</code> 字段在此情况下会导致运行时异常。 如果服务返回 <code>java.util.Date</code>，日期将在中返回 <code>DATE.date</code> 字段。</p></td>
+   <td><p>此 <code>DATE</code> 类型，在服务WSDL中定义如下：</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>如果AEM Forms服务操作需要 <code>java.util.Date</code> 输入的值，则SOAP客户端应用程序必须将日期 <code>DATE.date</code> 字段。 设置 <code>DATE.calendar</code> 字段在此情况下会导致运行时异常。 如果服务返回 <code>java.util.Date</code>，日期将在中返回 <code>DATE.date</code> 字段。</p></td>
   </tr>
   <tr>
    <td><p><code>java.util.Calendar</code></p></td>
-   <td><p>此 <code>DATE</code> 类型，在服务WSDL中定义如下：</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>如果AEM Forms服务操作需要 <code>java.util.Calendar</code> 值作为输入，SOAP客户端应用程序必须将日期 <code>DATE.caledendar</code> 字段。 设置 <code>DATE.date</code> 字段会导致运行时异常。 如果服务返回 <code>java.util.Calendar</code>，则日期会返回到 <code>DATE.calendar</code> 字段。 </p></td>
+   <td><p>此 <code>DATE</code> 类型，在服务WSDL中定义如下：</p><p><code>&lt;complexType name="DATE"&gt;</code></p><p><code>&lt;sequence&gt;</code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="date" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;element maxOccurs="1" minOccurs="0" name="calendar" </code><code>type="xsd:dateTime" /&gt; </code></p><p><code>&lt;/sequence&gt;</code></p><p><code>&lt;/complexType&gt;</code></p><p>如果AEM Forms服务操作需要 <code>java.util.Calendar</code> 输入的值，则SOAP客户端应用程序必须将日期 <code>DATE.caledendar</code> 字段。 设置 <code>DATE.date</code> 字段会导致运行时异常。 如果服务返回 <code>java.util.Calendar</code>，则日期会返回到 <code>DATE.calendar</code> 字段。 </p></td>
   </tr>
   <tr>
    <td><p><code>java.math.BigDecimal</code></p></td>
@@ -422,7 +422,7 @@ A `BLOB` 对象向和从AEM Forms服务发送和检索二进制数据(例如，P
     http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1
    ```
 
-1. 创建BAT文件以执行Ant构建脚本。 以下命令可以位于负责执行Ant构建脚本的BAT文件中：
+1. 创建BAT文件以执行Ant生成脚本。 以下命令可以位于负责执行Ant构建脚本的BAT文件中：
 
    ```java
     ant -buildfile "build.xml" wsdl
@@ -505,7 +505,7 @@ A `BLOB` 对象向和从AEM Forms服务发送和检索二进制数据(例如，P
 
    在此Ant生成脚本中，请注意 `url` 属性设置为引用在localhost上运行的加密服务WSDL。 此 `username` 和 `password` 属性必须设置为有效的AEM表单用户名和密码。
 
-1. 创建BAT文件以执行Ant构建脚本。 以下命令可以位于负责执行Ant构建脚本的BAT文件中：
+1. 创建BAT文件以执行Ant生成脚本。 以下命令可以位于负责执行Ant构建脚本的BAT文件中：
 
    ```java
     ant -buildfile "build.xml" encryption-wsdl2java-client
@@ -829,7 +829,7 @@ A `BLOB` 对象向和从AEM Forms服务发送和检索二进制数据(例如，P
 
 ## 使用SwaRef调用AEM Forms {#invoking-aem-forms-using-swaref}
 
-您可以使用SwaRef调用AEM Forms服务。 的内容 `wsi:swaRef` XML元素作为附件在SOAP主体中发送，SOAP主体存储对附件的引用。 使用SwaRef调用Forms服务时，请使用Java API for XML Web Services (JAX-WS)创建Java代理类。 (请参阅 [适用于XML Web服务的Java API](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
+您可以使用SwaRef调用AEM Forms服务。 的内容 `wsi:swaRef` XML元素将作为附件发送到SOAP正文中，正文存储了对附件的引用。 使用SwaRef调用Forms服务时，请使用Java API for XML Web Services (JAX-WS)创建Java代理类。 (请参阅 [适用于XML Web服务的Java API](https://jax-ws.dev.java.net/jax-ws-ea3/docs/mtom-swaref.html).)
 
 此处的讨论将调用以下Forms短期进程，该进程名为 `MyApplication/EncryptDocument` 通过使用SwaRef。
 
@@ -929,7 +929,7 @@ A `BLOB` 对象向和从AEM Forms服务发送和检索二进制数据(例如，P
 
 >[!NOTE]
 >
->建议您熟悉使用SOAP调用AEM Forms 。 (请参阅 [使用Web服务调用AEM Forms](#invoking-aem-forms-using-web-services).)
+>建议您熟悉使用SOAP调用AEM Forms。 (请参阅 [使用Web服务调用AEM Forms](#invoking-aem-forms-using-web-services).)
 
 ### 创建通过HTTP使用数据的.NET客户端程序集 {#creating-a-net-client-assembly-that-uses-data-over-http}
 
@@ -1118,14 +1118,14 @@ A `BLOB` 对象向和从AEM Forms服务发送和检索二进制数据(例如，P
 
 您可以使用Apache Axis WSDL2Java工具将服务WSDL转换为Java代理类，以便调用服务操作。 使用Apache Ant，您可以通过AEM Forms服务WSDL生成Axis库文件，从而调用该服务。 (请参阅 [使用Apache Axis创建Java代理类](#creating-java-proxy-classes-using-apache-axis).)
 
-Apache Axis WSDL2Java工具生成JAVA文件，这些文件包含用于向服务发送SOAP请求的方法。 服务接收的SOAP请求由轴生成的库解码并返回为方法和参数。
+Apache Axis WSDL2Java工具会生成JAVA文件，其中包含用于向服务发送SOAP请求的方法。 服务接收的SOAP请求由轴生成的库进行解码，并返回为方法和参数。
 
 要调用 `MyApplication/EncryptDocument` 服务（在Workbench中构建）使用轴生成的库文件和DIME，请执行以下步骤：
 
 1. 创建使用 `MyApplication/EncryptDocument` 使用Apache Axis为WSDL提供服务。 (请参阅 [使用Apache Axis创建Java代理类](#creating-java-proxy-classes-using-apache-axis).)
 1. 将Java代理类包含在类路径中。
 1. 创建 `MyApplicationEncryptDocumentServiceLocator` 对象。
-1. 创建 `URL` 对象，方法是使用其构造函数并传递一个字符串值，该值指定AEM Forms服务WSDL定义。 请确保您指定 `?blob=dime` SOAP端点URL末尾。 例如，使用
+1. 创建 `URL` 对象，方法是使用其构造函数并传递一个字符串值，该值指定AEM Forms服务WSDL定义。 请确保您指定 `?blob=dime` 位于SOAP端点URL的末尾。 例如，使用
 
    ```java
     https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=dime.
@@ -1338,7 +1338,7 @@ WSE体系结构使用策略、声明和SecurityToken数据类型。 简言之，
 
 **创建断言和过滤器**
 
-以下C#代码示例创建过滤器和断言类。 此代码示例创建一个SamlAssertionOutputFilter。 在将SOAP请求发送到AEM Forms之前，此过滤器由WSE框架调用。
+以下C#代码示例创建过滤器和断言类。 此代码示例创建一个SamlAssertionOutputFilter。 在将SOAP请求发送到AEM Forms之前，WSE框架会调用此过滤器。
 
 ```java
  class LCSamlPolicyAssertion : Microsoft.Web.ServicES4.Design.PolicyAssertion

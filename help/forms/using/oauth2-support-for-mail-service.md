@@ -3,8 +3,9 @@ title: 为Microsoft® (Forms JEE OAuth)配置基于OAuth2的身份验证；Offic
 description: 为Microsoft® (Forms JEE OAuth)配置基于OAuth2的身份验证；Office 365邮件服务器协议
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
+feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 5%

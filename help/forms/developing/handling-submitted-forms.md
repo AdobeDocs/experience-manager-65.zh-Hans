@@ -9,7 +9,7 @@ topic-tags: operations
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '2894'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 使用户能够填写交互式表单的基于Web的应用程序要求将数据提交回服务器。 使用Forms服务，您可以检索用户在交互式表单中输入的数据。 检索数据后，您可以处理数据以满足业务要求。 例如，您可以将数据存储在数据库中，将数据发送到另一个应用程序，将数据发送到另一个服务，在表单设计中合并数据，在Web浏览器中显示数据，等等。
 
-表单数据将作为XML或PDF数据（在设计器中设置的选项）提交到Forms服务。 以XML形式提交的表单允许您提取单个字段数据值。 即，您可以提取用户在表单中输入的每个表单字段的值。 作为PDF数据提交的表单是二进制数据，而不是XML数据。 您可以将表单另存为PDF文件，或将表单发送到其他服务。 如果要从以XML形式提交的表单中提取数据，然后使用该表单数据创建PDF文档，请调用另一个AEM Forms操作。 (请参阅 [使用提交的XML数据创建PDF文档](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+表单数据将作为XML或PDF数据(在Designer中设置的一个选项)提交到Forms服务。 以XML形式提交的表单允许您提取单个字段数据值。 即，您可以提取用户在表单中输入的每个表单字段的值。 作为PDF数据提交的表单是二进制数据，而不是XML数据。 您可以将表单另存为PDF文件，或将表单发送到其他服务。 如果要从以XML形式提交的表单中提取数据，然后使用该表单数据创建PDF文档，请调用另一个AEM Forms操作。 (请参阅 [使用提交的XML数据创建PDF文档](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 下图显示了提交到名为的Java Servlet的数据 `HandleData` 从Web浏览器中显示的交互式表单。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>用户填写交互式表单并单击提交按钮。 该表单将作为PDF数据提交回Forms服务。 此选项在Designer中设置。</p></td>
+   <td><p>用户填写交互式表单并单击提交按钮。 该表单将作为PDF数据提交回Forms服务。 此选项是在Designer中设置的。</p></td>
   </tr>
   <tr>
    <td><p>4</p></td>
@@ -251,11 +251,11 @@ Forms服务将返回以下值，以指示它是否已完成处理数据：
 
 **另请参阅**
 
-[快速入门（SOAP模式）：使用Java API处理以XML形式提交的PDF forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API处理作为XML提交的PDF forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
-[快速入门（SOAP模式）：使用Java API处理以XML形式提交的HTML表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API处理作为XML提交的HTML表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[快速入门（SOAP模式）：使用Java API处理作为PDF提交的PDF forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[快速入门(SOAP模式)：使用Java API处理作为PDF提交的PDF forms](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

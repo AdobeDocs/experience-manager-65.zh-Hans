@@ -8,7 +8,7 @@ topic-tags: operations
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '10800'
 ht-degree: 1%
@@ -32,7 +32,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 >[!NOTE]
 >
->SOAP、EJB和(不适用于JEE上的AEM Forms)远程端点会自动为每个激活的服务创建。 SOAP和EJB端点为所有服务操作启用SOAP和EJB。
+>SOAP、EJB和(已为JEE上的AEM Forms弃用)远程端点会自动为每个激活的服务创建。 SOAP和EJB端点为所有服务操作启用SOAP和EJB。
 
 远程端点使Flex客户端能够调用对该端点所添加到的AEM Forms服务的操作。 将创建与端点同名的Flex目标，并且Flex客户端可以创建指向此目标的RemoteObjects以调用对相关服务的操作。
 
@@ -165,7 +165,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 >[!NOTE]
 >
->通常，默认情况下会向服务添加SOAP端点。但是，可以将SOAP端点添加到以编程方式部署的进程中，或者在删除了SOAP端点且必须再次添加时。
+>通常，SOAP端点会默认添加到服务。但是，SOAP端点可以添加到以编程方式部署的进程中，或者在删除SOAP端点且必须再次添加时。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -173,7 +173,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 1. 包括项目文件。
 1. 创建 `EndpointRegistryClient` 对象。
-1. 设置SOAP终结点属性。
+1. 设置SOAP端点属性。
 1. 创建SOAP端点。
 1. 启用端点。
 
@@ -188,13 +188,13 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 * adobe-utilities.jar(如果在JBoss Application Server上部署了AEM Forms，则此为必填字段)
 * jbossall-client.jar(如果将AEM Forms部署在JBoss Application Server上，则此为必需字段)
 
-创建SOAP端点需要这些JAR文件。 但是，如果使用SOAP端点调用服务，则需要添加的JAR文件。 有关AEM Forms JAR文件的信息，请参见 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+创建SOAP端点需要这些JAR文件。 但是，如果您使用SOAP端点调用服务，则需要添加JAR文件。 有关AEM Forms JAR文件的信息，请参见 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 **创建EndpointRegistry客户端对象**
 
 要以编程方式将SOAP端点添加到服务，您必须创建 `EndpointRegistryClient` 对象。
 
-**设置SOAP终结点属性**
+**设置SOAP端点属性**
 
 要向服务添加SOAP端点，请指定以下值：
 
@@ -206,7 +206,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 **创建SOAP端点**
 
-设置SOAP终结点属性后，可以创建SOAP终结点。
+设置SOAP端点属性后，您可以创建SOAP端点。
 
 **启用端点**
 
@@ -222,7 +222,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 ### 使用Java API添加SOAP端点 {#add-a-soap-endpoint-using-the-java-api}
 
-使用Java API向服务添加SOAP端点：
+使用Java API将SOAP端点添加到服务：
 
 1. 包括项目文件。
 
@@ -233,7 +233,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
    * 创建 `ServiceClientFactory` 包含连接属性的对象。
    * 创建 `EndpointRegistryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
 
-1. 设置SOAP终结点属性。
+1. 设置SOAP端点属性。
 
    * 创建 `CreateEndpointInfo` 对象。
    * 通过调用 `CreateEndpointInfo` 对象的 `setConnectorId` 方法和传递字符串值 `SOAP`.
@@ -254,7 +254,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 [步骤摘要](programmatically-endpoints.md#summary-of-steps)
 
-[快速启动：使用Java API添加SOAP端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
+[快速入门：使用Java API添加SOAP端点](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-soap-endpoint-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

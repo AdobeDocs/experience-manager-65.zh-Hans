@@ -1,6 +1,6 @@
 ---
 title: 端点注册表Java&trade； API QuickStart(SOAP)
-description: 了解如何使用Java&trade； API添加EJB、SOAP、Watched Folder、电子邮件端点和远程端点以及编辑、删除和检索端点。
+description: 了解如何使用Java&trade； API添加EJB、SOAP、Watched Folder、Email端点和远程端点以及编辑、删除和检索端点。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,7 +8,7 @@ topic-tags: develop
 role: Developer
 exl-id: 985a6fc5-6675-4c25-80e4-34dcb658de72
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 872e2de411f51b5f0b26a2ff47cb49f01313d39f
 workflow-type: tm+mt
 source-wordcount: '553'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 端点注册表Java™ API快速入门(SOAP) {#endpoint-registry-java-api-quickstart-soap}
 
-Java™ API快速入门(SOAP)可用于端点注册表。
+Java™ API快速入门(SOAP)适用于端点注册表。
 
 [快速启动：使用Java添加EJB端点](endpoint-registry-java-api-quick.md#quickstart-adding-an-ejb-endpoint-using-the-java-api)
 
@@ -146,7 +146,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
  
 ```
 
-## 快速启动：使用Java™ API添加SOAP端点 {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## 快速入门：使用Java™ API添加SOAP端点 {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
 以下Java™代码示例将SOAP端点添加到名为的服务 *MyApplication/EncryptDocument*. (请参阅 [添加SOAP端点](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 

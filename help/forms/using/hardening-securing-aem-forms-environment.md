@@ -5,7 +5,8 @@ topic-tags: Security
 role: Admin,User
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Security, Adaptive Forms
+source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '1434'
 ht-degree: 0%
@@ -104,7 +105,7 @@ AEM Forms具有高度可自定义性，可以在许多不同的环境中工作�
    <td>URI</td> 
   </tr>
   <tr>
-   <td>发布场（发布节点）</td> 
+   <td>Publish场（发布节点）</td> 
    <td>/bin/receive</td> 
   </tr>
   <tr>
