@@ -1,26 +1,28 @@
 ---
 title: 为AEM设置IMS集成
 description: 了解如何为AEM设置IMS集成
-source-git-commit: bca98907b79f12572879273ece41ec8d82fed1b8
+feature: Security
+role: Admin
+exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
+source-git-commit: c2d996586d2ec7299e856a97ae1b744245c730bb
 workflow-type: tm+mt
-source-wordcount: '438'
-ht-degree: 79%
+source-wordcount: '433'
+ht-degree: 63%
 
 ---
-
 
 # 为AEM设置IMS集成 {#setting-up-ims-integrations-for-aem}
 
 
 >[!NOTE]
 >
->Adobe 客户使用 [Adobe Developer Console](https://developer.adobe.com/console) 生成通过其可访问各种 API 的凭据。客户可选择从 OAuth 服务器到服务器到单页应用程序的多种凭据类型。这些凭据类型之一，服务帐户(JWT)凭据已弃用，推荐使用Service Pack 20的OAuth服务器到服务器凭据。 此更改可以重新移植到旧版Service Pack，从Service Pack 11开始直到Service Pack 20，并使用您可以下载的修补程序 [此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Adobe客户使用 [Adobe Developer控制台](https://developer.adobe.com/console) 生成凭据以启用对各种API的访问。 客户可选择从 OAuth 服务器到服务器到单页应用程序的多种凭据类型。凭据类型服务帐户(JWT)现已弃用，推荐使用Service Pack 20的OAuth服务器到服务器凭据。 此更改可以重新移植到旧版Service Pack，从Service Pack 11开始直到Service Pack 20，并使用您可以下载的修补程序 [此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
 
 Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例如，Adobe Target、Adobe Analytics 等。
 
 这些集成使用配置了 S2S OAuth 的 IMS 集成。
 
-* 创建以下配置后：
+* 创建后：
 
    * [Developer Console 中的凭据](#credentials-in-the-developer-console)
 
@@ -38,9 +40,9 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
 ## Developer Console 中的凭据 {#credentials-in-the-developer-console}
 
-第一步，您需要在 Adobe Developer Console 中配置 OAuth 凭据。
+第一步，您必须在Adobe Developer控制台中配置OAuth凭据。
 
-有关如何执行此操作的详细信息，请参阅开发者控制台文档，具体取决于您的要求：
+有关如何执行此配置的详细信息，请参阅开发人员控制台文档，具体取决于您的要求：
 
 * 概述：
 
@@ -88,7 +90,7 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
    ![选择 JWT 配置](assets/ims-migrate-jwt-select-configuration.png)
 
-1. 配置将以只读模式打开：
+1. 该配置将以只读方式打开：
 
    ![配置属性 - 只读](assets/ims-migrate-jwt-properties-read-only.png)
 
@@ -96,9 +98,9 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
    ![选择身份验证类型](assets/ims-migrate-jwt-authentication-type.png)
 
-1. 将更新可用的属性。使用 Developer Console 中的详细信息来完成以下操作：
+1. 可用属性已更新。 使用 Developer Console 中的详细信息来完成以下操作：
 
    ![填写 OAuth 详细信息](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. 使用&#x200B;**保存并关闭**来保存您的更新。
-当您返回控制台时，**JWT 凭据（已弃用）**&#x200B;警告将消失。
+当您返回到控制台时， **JWT凭据（已弃用）** 警告已消失。
