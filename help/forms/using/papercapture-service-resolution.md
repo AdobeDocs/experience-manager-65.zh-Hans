@@ -4,15 +4,16 @@ description: 了解解决PaperCapture服务无法对PDF执行OCR（光学字符�
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 18005ba060954151df126789496c81f7238e32f6
+exl-id: 64e120ee-5f16-4cd3-9ae9-95b165169e47
+source-git-commit: e682381f08e143c1bf14d7dcee4f022e684ee1f2
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '176'
 ht-degree: 1%
 
 ---
 
 
-# PaperCature服务无法对PDF执行OCR
+# PaperCature服务无法对PDF执行OCR操作
 
 ## 问题
 
@@ -20,7 +21,7 @@ ht-degree: 1%
 
 ## 解决方案
 
-1. 下载 [修补程序](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Ca285aedf27094c9e8d9b08dc91e26aa7%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545648843177070%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=uWk0PsSSDjLRxqEMGMW%2BbD%2Fv4egR4vWL%2B0mfKpXdrKQ%3D&amp;reserved=0) 从软件分发门户访问。
+1. 下载 [修补程序](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0) 从软件分发门户访问。
 1. 提取并复制下载文件夹的内容。
 1. 导航到以下相应应用程序服务器的路径：
    * **jboss**：
@@ -31,7 +32,10 @@ ht-degree: 1%
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **OSGi设置**：\
      `..\quickstart\crx-quickstart\bedrock\svcnative\PaperCaptureSvc`
+1. 停止AEM应用程序服务器。
 1. 替换现有内容 `PaperCaptureSvc` 包含复制内容的文件夹。
-1. [重新启动AEM实例](/help/forms/using/restart-aem-sdk.md).
+1. 重新启动AEM应用程序服务器。
 
-
+   >[!NOTE]
+   >
+   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
