@@ -9,9 +9,9 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
 workflow-type: tm+mt
-source-wordcount: '10702'
+source-wordcount: '10828'
 ht-degree: 0%
 
 ---
@@ -226,7 +226,7 @@ Distiller服务( `DistillerService`)将PostScript、封装的PostScript (EPS)和
 >
 >仅在通过SSL（使用LDAPS）保护连接时使用简单身份验证（用户名和密码）。
 
-**兼容模式：**
+<!-- **Compatibility Mode:**-->
 
 ## FTP服务设置 {#ftp-service-settings}
 
@@ -254,7 +254,11 @@ FTP服务( `FTP`)使进程能够与FTP服务器交互。 FTP服务操作可以�
 
 **文件类型设置：** 要应用于转换作业的预配置文件类型设置的名称（如果这些设置未作为API调用参数的一部分指定）。 通过单击“服务”>“PDF Generator”>“文件类型设置”，可在管理控制台中配置文件类型设置。
 
-**使用Acrobat WebCapture（仅限Windows）：** 当此设置为true时，生成PDF服务会将Acrobat X Pro用于所有HTMLPDF转化。 虽然性能可能会稍有降低，但这可以提高HTML生成的PDF文件的质量。 默认值为false。
+**使用WebCapture（仅限Windows）：** 当此设置为true时，生成PDF服务会将Acrobat用于所有HTML以PDF转化。 虽然性能可能会稍有降低，但这可以提高HTML生成的PDF文件的质量。 默认值为false。
+
+**用于HTML到PDF转换的主要转换器：** “生成PDF”服务提供将HTML文件转换为PDF文档的多种途径：Webkit、WebCapture（仅限Windows）和WebToPDF。 此设置允许用户选择主转换器将HTML转换为PDF。 默认情况下，选择WebToPDF。
+
+**用于HTML到PDF转换的回退转换器：** 如果主转换器出现故障，请为HTML到PDF转换指定转换器。 默认情况下，选择WebCapture（仅限Windows）。
 
 **使用Acrobat映像转换（仅限Windows）：** 当此设置为true时，生成PDF服务会使用Acrobat X Pro执行所有图像到PDF的转换。 仅当默认的纯Java转换机制无法成功转换大部分输入图像时，此设置才有用。 默认值为false。
 
@@ -268,21 +272,23 @@ FTP服务( `FTP`)使进程能够与FTP服务器交互。 FTP服务操作可以�
 
 **OCR池大小：** PDF Generator用于OCR的PaperCaptureService的池大小。 此设置的默认值（建议用于单处理器系统）为3，您可以在多处理器系统上增加此值。 此设置仅在Windows系统中有效。
 
+**内存中用于TIFF转换的ImageToPDF最大页数：** 该设置确定在转换为PDF期间刷新到磁盘之前内存中可以保留的TIFF映像的最大页数。 此设置的默认值为500，如果为ImageToPDF转换器进程分配了额外的内存，则可以增加此值。
+
 **HTML到PDF转换的回退字体系列：** 当原始HTML中使用的字体对AEM Forms Server不可用时，在PDF文档中使用的字体系列的名称。 如果要转换使用不可用字体的HTML页，请指定字体系列。 例如，以区域语言编写的页面可能会使用不可用的字体。
 
 **重试本机转换逻辑** 管理在首次尝试转换失败时重试的PDF生成：
 
-**不重试**
+* **不重试**
 
-如果首次转换尝试失败，请勿重试PDF转换
+  如果首次转换尝试失败，请勿重试PDF转换
 
-**重试**
+* **重试**
 
-无论是否已达到超时阈值，都重试PDF转换。 第一次尝试的默认超时持续时间为270秒。
+  无论是否已达到超时阈值，都重试PDF转换。 第一次尝试的默认超时持续时间为270秒。
 
-**如果时间允许，重试**
+* **如果时间允许，重试**
 
-如果首次转换尝试所用的时间小于指定的超时持续时间，请重试PDF转换。 例如，如果超时持续时间为270秒，而第一次尝试耗时200秒，则PDF Generator将重新尝试转换。 如果第一次尝试本身用了270秒，则不会重试转换。
+  如果首次转换尝试所用的时间小于指定的超时持续时间，请重试PDF转换。 例如，如果超时持续时间为270秒，而第一次尝试耗时200秒，则PDF Generator将重新尝试转换。 如果第一次尝试本身用了270秒，则不会重试转换。
 
 ## 指南ES4 Utilities服务设置 {#guides-es4-utilities-service-settings}
 
