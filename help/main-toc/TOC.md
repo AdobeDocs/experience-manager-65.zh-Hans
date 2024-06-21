@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 4994a015099e1e50bf59342a8973ce68b9347568
+source-git-commit: 2513ae7e193bdae3387210b07661b9c7a22b0156
 workflow-type: tm+mt
-source-wordcount: '7421'
+source-wordcount: '7429'
 ht-degree: 20%
 
 ---
@@ -1198,6 +1198,7 @@ ht-degree: 20%
       + [在升级到6.5.12.0 for MySQL时无法备份数据库](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [PDF生成无法在WorkBench上打印大量PDF](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [如何正确重新启动AEM SDK](/help/forms/using/restart-aem-sdk.md)
+      + [PaperCapture服务无法在PDF上执行OCR](/help/forms/using/papercapture-service-resolution.md)
    + 旧版文档 {#legacy-documentation}
       + [使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据](/help/forms/developing/building-xml.md)
       + [在JEE自定义DSC中使用AEM Forms压缩和解压缩文件](/help/forms/developing/compressing-decompressing-custom-dsc.md)
