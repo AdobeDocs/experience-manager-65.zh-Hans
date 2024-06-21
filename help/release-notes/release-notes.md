@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 2513ae7e193bdae3387210b07661b9c7a22b0156
+source-git-commit: e6fa020bac624c53abdebc528b5a0bf0e979b986
 workflow-type: tm+mt
 source-wordcount: '4006'
 ht-degree: 2%
@@ -542,7 +542,7 @@ UberJar用于 [!DNL Experience Manager] 6.5.21.0可从以下网站获取： [Mav
 
 * 如果用户尝试预览包含保存的XML数据的草稿信件，则会卡入 `Loading` 一些特定字母的状态。 (FORMS-14521)要解决此问题，请执行以下步骤：
    1. 下载 [修补程序](https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fccm-ccr-content-10.0.206.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7C6fb8db1c81c84470d7ff08dc911c1e41%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638544797146701276%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=MhuthPPLjZcWuQsRAtSiwEZ2MljeNrpLumlWo6iolFI%3D&amp;reserved=0) 从软件分发门户访问。
-   1. 通过上传并安装包(.zip) [CRX包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
+   1. 使用上载并安装包(.zip) [CRX包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing).
 
 * 升级到AEM Forms Service Pack 6.5.21.0后， `PaperCapture` 服务无法对PDF执行OCR（光学字符识别）操作。 该服务不会以PDF或日志文件的形式生成输出。 要解决此问题，请参阅 [故障排除](/help/forms/using/papercapture-service-resolution.md) 文章。 (CQDOC-21680)
 
