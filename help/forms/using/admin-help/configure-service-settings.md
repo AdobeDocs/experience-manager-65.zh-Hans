@@ -9,9 +9,9 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms, Workbench
 role: User, Developer
-source-git-commit: 1e978cbece1401a18137ef98a3a9bf6cd666e48f
+source-git-commit: f1a18575e8b8f925f8adbe18e189f3916b5e353d
 workflow-type: tm+mt
-source-wordcount: '10828'
+source-wordcount: '10824'
 ht-degree: 0%
 
 ---
@@ -260,9 +260,9 @@ FTP服务( `FTP`)使进程能够与FTP服务器交互。 FTP服务操作可以�
 
 **用于HTML到PDF转换的回退转换器：** 如果主转换器出现故障，请为HTML到PDF转换指定转换器。 默认情况下，选择WebCapture（仅限Windows）。
 
-**使用Acrobat映像转换（仅限Windows）：** 当此设置为true时，生成PDF服务会使用Acrobat X Pro执行所有图像到PDF的转换。 仅当默认的纯Java转换机制无法成功转换大部分输入图像时，此设置才有用。 默认值为false。
+**使用Acrobat映像转换（仅限Windows）：** 当此设置为true时，生成PDF服务会使用Acrobat进行所有图像到PDF的转换。 仅当默认的纯Java转换机制无法成功转换大部分输入图像时，此设置才有用。 默认值为false。
 
-**启用基于Acrobat的AutoCAD转换（仅限Windows）：** 当此设置为true时，“生成PDF”服务会将Acrobat X Pro用于所有DWG以PDF转化。 仅当服务器上未安装AutoCAD或AutoCAD转换机制无法成功转换文件时，此设置才有用。
+**启用基于Acrobat的AutoCAD转换（仅限Windows）：** 当此设置为true时，生成PDF服务会将Acrobat用于所有DWG以PDF转化。 仅当服务器上未安装AutoCAD或AutoCAD转换机制无法成功转换文件时，此设置才有用。
 
 **用于查找用户名中禁止使用的特殊字符的正则表达式（仅限Windows）：** 指定当字符出现在用户名中时干扰Export PDF和Optimize PDF操作的字符。
 
