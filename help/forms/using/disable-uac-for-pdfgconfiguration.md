@@ -3,9 +3,9 @@ title: 禁用适用于JEE和OSGI的PDFG配置UAC
 description: 了解如何为PDFG配置禁用UAC以修复Word到PDF转换的步骤。
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
 solution: Experience Manager, Experience Manager Forms
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms,Document Services
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 3%

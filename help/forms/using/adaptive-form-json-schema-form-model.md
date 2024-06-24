@@ -3,10 +3,10 @@ title: 如何使用JSON架构创建自适应Forms？
 description: 了解如何使用JSON架构作为表单模型创建自适应表单。 您可以使用现有JSON架构创建自适应表单。 深入了解JSON模式示例，在JSON模式定义中预配置字段，限制自适应表单组件的可接受值，并了解不受支持的结构。
 role: User, Developer
 level: Beginner, Intermediate
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1844'
 ht-degree: 7%

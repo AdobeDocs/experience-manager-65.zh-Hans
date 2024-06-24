@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-feature: Document Services
+feature: Document Services,Reader Extensions, Forms Service,PDF Generator
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 1%
@@ -39,7 +39,7 @@ AEM Document Services是用于创建、汇编和保护PDF文档的一组OSGi服�
 
 >[!NOTE]
 >
->通常使用Designer创建窗体设计。 有关为Output服务创建表单设计的信息，请参阅Designer帮助。
+>表单设计通常使用Designer创建。 有关为Output服务创建表单设计的信息，请参阅Designer帮助。
 
 使用Output服务将XML数据与表单设计合并时，结果为非交互式PDF文档。 非交互式PDF文档不允许用户在其字段中输入数据。 相反，您可以使用Forms服务创建一个交互式PDF表单，让用户能够在其字段中输入数据。
 
@@ -58,7 +58,7 @@ Assembler服务允许您组合、重新排列和增加PDF和XDP文档，并获�
 除上述功能外，汇编程序服务可以：
 
 * 将PDF文档转换为PDF/A标准。
-* 将PDF forms、XML表单（在Designer中创建）和PDF forms(在Acrobat中创建)转换为PDF/A-1b、PDF/A-2b和PDFA/A-3b。
+* 将PDF forms、XML表单(在Designer中创建)和PDF forms(在Acrobat中创建)转换为PDF/A-1b、PDF/A-2b和PDFA/A-3b。
 * 转换已签名或未签名的PDF文档（需要数字签名）。
 * 验证PDF/A文件的符合性，并在必要时对其进行转换。
 

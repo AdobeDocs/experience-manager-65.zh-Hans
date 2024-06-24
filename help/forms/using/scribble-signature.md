@@ -6,11 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: designer
 docset: aem65
-feature: Forms Designer
+feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 在HTML5表单中使用涂写签名{#using-scribble-signature-in-html-forms}
 
-HTML5表单越来越多地用于触摸设备，并且通常会要求支持签名。 脚本编写（使用手写笔或手指书写）正在成为在移动设备上签名表单的一种可接受的方式。 HTML5表单和Forms Designer现在启用了表单上涂写签名字段的选项。 在浏览器中呈现表单时，可以使用手写笔、鼠标或触摸登录这些字段。
+HTML5表单越来越多地用于触摸设备，并且通常会要求支持签名。 脚本编写（使用手写笔或手指书写）正在成为在移动设备上签名表单的一种可接受的方式。 HTML5表单和Forms Designer现在支持在表单上涂写签名字段的选项。 在浏览器中呈现表单时，可以使用手写笔、鼠标或触摸登录这些字段。
 
 ## 如何使用涂鸦签名字段设计表单 {#how-to-design-a-form-using-scribble-signature-field}
 
@@ -30,7 +30,7 @@ HTML5表单越来越多地用于触摸设备，并且通常会要求支持签名
 
    >[!NOTE]
    >
-   >呈现字段时，将反映在Forms Designer中选择的字段的Dimension。 但是，呈现的签名框的尺寸是根据字段的长宽比计算的，而不是根据Forms Designer中指定的尺寸计算的。
+   >呈现字段时，将反映在Forms Designer中选择的字段的Dimension。 但是，呈现的签名框的维度是根据字段的长宽比计算的，而不是根据Forms Designer中指定的维度计算的。
 
 1. 配置签名涂写字段。
 

@@ -5,11 +5,11 @@ contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms, Foundation Components, Acrobat Sign
+feature: Adaptive Forms,Foundation Components,Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2071'
 ht-degree: 16%
@@ -34,7 +34,7 @@ ht-degree: 16%
 
 ## 将AEM Forms与Adobe Acrobat Sign连接 {#adobe-sign}
 
-连接 **[!DNL AEM Forms]** 替换为 **[!DNL Adobe Acrobat Sign]**，设置先决条件部分中列出的软件和帐户，并将Adobe Sign连接到您的所有AEM Forms创作和发布实例：
+连接 **[!DNL AEM Forms]** 替换为 **[!DNL Adobe Acrobat Sign]**，设置先决条件部分中列出的软件和帐户，并将Adobe Sign连接到您的所有AEM Forms创作实例和Publish实例：
 
 ## 先决条件 {#prerequisites}
 
@@ -146,7 +146,7 @@ ht-degree: 16%
 1. 打开AEM Web控制台。 URL为 `https://'[server]:[port]'/system/console/configMgr`
 1. 打开 **[!UICONTROL Forms通用配置服务].**
 1. 在 **[!UICONTROL 允许]** 字段， **选择** 所有用户 — 所有用户（匿名或已登录）都可以预览附件、验证和签署表单，然后单击 **[!UICONTROL 保存].** 创作实例配置为使用 [!DNL Adobe Sign].
-1. 发布配置。
+1. Publish配置。
 1. 使用 [复制](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) 以在相应的发布实例上创建相同的配置。
 
 现在， [!DNL Adobe Sign] 与AEM集成 [!DNL Forms] 并准备用于自适应表单。 至 [在自适应表单中使用Adobe Sign服务](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)，指定上文在自适应表单属性中创建的配置容器。
@@ -261,7 +261,7 @@ Adobe Acrobat Sign政府解决方案团队要求 `re-direct URL` 以及要为您
 1. 打开 **[!UICONTROL Forms通用配置服务].**
 1. 在 **[!UICONTROL 允许]** 字段， **选择** 所有用户 — 所有用户（匿名或已登录）都可以预览附件、验证和签署表单，然后单击 **[!UICONTROL 保存].** 创作实例配置为使用 [!DNL Adobe Sign].
 
-1. 发布配置。
+1. Publish配置。
 1. 使用 [复制](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html) 以在相应的发布实例上创建相同的配置。
 
 现在，您可以 [在自适应表单中使用添加Adobe Acrobat Sign字段](working-with-adobe-sign.md) 或 [AEM Workflow](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step). 确保将用于Cloud Service配置的配置容器添加到启用的所有自适应Forms [!DNL Adobe Acrobat Sign]. 您可以从自适应表单的属性中指定配置容器。

@@ -2,11 +2,11 @@
 title: 如何连接自适应表单数据并将其发送到Microsoft&reg； Power Automate？
 description: 将自适应表单数据连接并发送到Microsoft&reg； Power Automate的分步指南。
 keywords: 自适应Forms Microsoft Power Automate，将自适应Forms数据提交到Microsoft Power Automate
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1179'
 ht-degree: 15%
@@ -41,7 +41,7 @@ ht-degree: 15%
 1. [创建Microsoft](#ms-power-automate-application)
 1. [创建Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
 1. [创建Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [发布Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [Publish Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### 创建Microsoft® Azure Active Directory应用程序 {#ms-power-automate-application}
 
@@ -110,7 +110,7 @@ ht-degree: 15%
 
 1. 导航到 **[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL Cloud Service]** > **[!UICONTROL Microsoft®® Power Automate Dataverse]** 并打开您在上一个页面中创建的配置容器 [创建Microsoft® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration) 部分。
 1. 选择 `dataverse` 配置和选择 **[!UICONTROL Publish]**.
-1. 在发布页面上，选择 **[!UICONTROL 所有配置]** 并选择 **[!UICONTROL Publish]**. 发布Power Automate Dataverse和Power Automate流服务云配置。
+1. 在Publish页面上，选择 **[!UICONTROL 所有配置]** 并选择 **[!UICONTROL Publish]**. Publish Power Automate Dataverse和Power Automate Flow Service云配置。
 
 您的AEM Forms创作实例现在已与Microsoft® Power Automate连接。 您现在可以将自适应Forms数据发送到Power Automate流。
 

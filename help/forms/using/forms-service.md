@@ -4,11 +4,11 @@ description: 本文介绍Forms服务以及您可以使用Forms服务执行的表
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-feature: Document Services
+feature: Document Services,Forms Service,PDF Generator
 exl-id: 6580fe6f-3cdb-45ec-8ba3-51dc60d1965e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '685'
 ht-degree: 0%
@@ -31,7 +31,7 @@ Forms服务还使企业能够通过部署电子表单作为AdobePDF来扩展其�
 
 ## 创建PDF forms  {#creating-pdf-forms-nbsp}
 
-使用表单服务创建用于数据捕获的PDF forms。 通常，您首先使用AEM Forms Designer模板。 使用 `renderPDFForm` Forms （链接到Javadoc）操作，以将此模板转换为PDF表单。
+使用表单服务创建用于数据捕获的PDF forms。 通常，您首先会使用AEM Forms Designer模板。 使用 `renderPDFForm` Forms （链接到Javadoc）操作，以将此模板转换为PDF表单。
 
 的第一个参数 `renderPDFForm` 操作是模板文件的名称(例如， `ExpenseClaim.xdp`)。 您可以将模板文件存储在本地文件系统、CRX存储库或HTTP或FTP位置。 您可以通过在以下位置设置内容根来指定模板文件的位置： `PDFFormRenderOptions` 的参数 `renderPDFForm` 操作。 有关可以为指定的其他选项的详细信息，请参阅Javadoc `PDFFormRenderOptions` 参数。
 

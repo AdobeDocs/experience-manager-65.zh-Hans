@@ -5,10 +5,11 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f8013aeedb79f900158df2291f7f641353bb4c05
+exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '4308'
 ht-degree: 3%
@@ -533,5 +534,3 @@ XCI文件可帮助您设置文档的各种属性。 <!-- Forms as a Cloud Servic
 1. 打开 <!--Cloud Service SDK--> 配置管理器。 <!--The default URL is: <http://localhost:4502/system/console/configMgr>.-->
 1. 找到并打开 **[!UICONTROL 自适应Forms和交互式通信Web渠道]** 配置。
 1. 指定XCI文件的路径，然后单击 **[!UICONTROL 保存]**.
-
-

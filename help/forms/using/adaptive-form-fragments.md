@@ -3,13 +3,13 @@ title: 自适应表单片段
 description: 自适应表单提供一种机制，可创建在任何自适应表单中使用的表单区段，例如面板或一组字段。 您还可以将现有面板另存为片段。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2372'
 ht-degree: 3%
@@ -27,7 +27,7 @@ ht-degree: 3%
 
 虽然每个表单都专为特定目的而设计，但大多数表单中都存在一些通用区段，例如提供个人详细信息，如姓名和地址、家庭详细信息和收入详细信息。 每次创建新表单时，表单开发人员都需要创建这些常用区段。
 
-自适应表单提供了一种便捷的机制，只需创建一次表单段（如面板或一组字段），并在自适应表单中重复使用它们。 这些可重复使用的独立片段称为自适应表单片段。
+自适应表单提供了一种便捷的机制，只需像创建面板或一组字段一样创建表单片段一次，即可在自适应表单中重复使用。 这些可重复使用的独立片段称为自适应表单片段。
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ ht-degree: 3%
 
 1. 单击&#x200B;**确定**。
 
-   面板将保存在存储库中的指定位置或默认位置。 在自适应表单中，面板被片段的快照所取代。 如下所示，“常规信息”面板及其子面板“个人信息和地址”将另存为片段。
+   面板将保存在存储库中的指定位置或默认位置。 在自适应表单中，面板被片段的快照所取代。 如下所示，“常规信息”面板及其子面板“个人信息”和“地址”将另存为片段。
 
    要编辑片段，请单击 **[!UICONTROL 编辑资源]** 在面板工具栏中。 片段在编辑模式下的新选项卡或窗口中打开。
 

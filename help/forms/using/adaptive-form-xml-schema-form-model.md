@@ -1,12 +1,12 @@
 ---
 title: 如何使用XML架构创建自适应Forms？
 description: 了解如何在自适应表单中将XML架构用作表单模型。 您可以应用现有XSD模板来创建自适应表单，并将架构元素从XSD拖放到自适应表单上。 深入了解XML架构示例，使用XML架构向字段添加特殊属性，并限制自适应表单组件可接受的值。
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1121'
 ht-degree: 9%

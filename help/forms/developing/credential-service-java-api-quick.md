@@ -1,5 +1,5 @@
 ---
-title: 凭据服务Java&trade； API QuickStart(SOAP)
+title: 凭据服务Java&trade； API快速启动(SOAP)
 description: 了解如何使用Java&trade； API快速入门(SOAP)在AEM Forms中导入和删除凭据。
 contentOwner: admin
 content-type: reference
@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: 0ea00ef5-9923-4c03-a724-32f9ebdc650f
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
@@ -19,9 +20,9 @@ ht-degree: 0%
 
 Java™ API快速入门(SOAP)可用于Credential服务。
 
-[快速入门（SOAP模式）：使用Java导入凭据](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[快速入门(SOAP模式)：使用Java导入凭据](credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[快速启动（SOAP模式）：使用Java删除凭据](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[快速入门(SOAP模式)：使用Java删除凭据](credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应设置为SOAP。
 
@@ -33,7 +34,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 >
 >无法使用Web服务执行凭据服务操作。
 
-## 快速入门（SOAP模式）：使用Java™ API导入凭据 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
+## 快速入门(SOAP模式)：使用Java™ API导入凭据 {#quick-start-soap-mode-importing-credentials-using-the-java-api}
 
 以下代码示例根据名为的文件导入凭据 *cred.p12*. 用于导入凭据的别名值为 `Secure`. (请参阅 [使用信任管理器API导入凭据](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
@@ -134,7 +135,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java™ API删除凭据 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
+## 快速入门(SOAP模式)：使用Java™ API删除凭据 {#quick-start-soap-mode-deleting-credentials-using-the-java-api}
 
 以下代码示例根据别名值删除凭据 *secure*. (请参阅 [使用信任管理器API删除凭据](/help/forms/developing/credentials.md#deleting-credentials-by-using-the-trust-manager-api).)
 

@@ -2,10 +2,10 @@
 title: 如何重新启动AEM SDK？
 description: 重新启动AEM SDK的最佳实践
 role: Admin, Developer, User
-feature: Adaptive Forms, Troubleshooting
+feature: Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi
 exl-id: f5d69d04-b842-4329-b1b3-57b88266d13d
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 1%

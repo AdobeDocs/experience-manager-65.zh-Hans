@@ -1,14 +1,14 @@
 ---
 title: 生成XDP表单的HTML5预览
-description: LiveCycle设计器中的“预览HTML”选项卡可用于预览显示在浏览器中的表单。
+description: LiveCycleDesigner中的“预览HTML”选项卡可用于预览表单在浏览器中显示的效果。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 # 生成XDP表单的HTML5预览{#generate-html-preview-of-an-xdp-form}
 
-在AEM Forms Designer中设计表单时，除了预览表单的PDF呈现版本外，您还可以预览表单的HTML5呈现版本。 您可以使用 **预览HTML** 制表符以预览显示在浏览器中的表单。
+在AEM Forms Designer中设计表单时，除了预览表单的PDF呈现版本之外，您还可以预览表单的HTML5呈现版本。 您可以使用 **预览HTML** 制表符以预览显示在浏览器中的表单。
 
-## 在Designer中启用XDP表单的HTML预览 {#html-preview-of-forms-in-forms-designer}
+## 在Designer中为XDP表单启用HTML预览 {#html-preview-of-forms-in-forms-designer}
 
 要使Designer能够生成XDP表单的HTML预览，请执行以下配置：
 
@@ -66,13 +66,13 @@ ht-degree: 0%
 
 ### 提供AEM Forms服务器的详细信息 {#provide-details-of-aem-forms-server}
 
-1. 在设计器中，转到 **工具** > **选项**.
+1. 在Designer中，转到 **工具** > **选项**.
 1. 在“选项”窗口中，选择 **服务器选项** 页面，提供以下详细信息，然后单击 **确定**.
 
    * **服务器URL**：AEM Forms服务器URL。
 
    * **HTTP端口号**：AEM服务器端口。 默认值为 4502。
-   * **HTML预览上下文：** 用于渲染XFA表单的配置文件的路径。 以下默认配置文件用于在Designer中预览表单。 但是，您还可以指定自定义配置文件的路径。
+   * **HTML预览上下文：** 用于渲染XFA表单的配置文件的路径。 以下默认配置文件用于预览Designer中的表单。 但是，您还可以指定自定义配置文件的路径。
 
       * `/content/xfaforms/profiles/default.html` (OSGi上的AEM Forms)
 
@@ -105,13 +105,13 @@ ht-degree: 0%
 
    >[!CAUTION]
    >
-   >要测试真正的最终用户体验，还可以在外部浏览器(Google Chrome、Microsoft Edge、Mozilla Firefox等)中预览表单。 由于每个浏览器使用单独的引擎来呈现HTML，因此在设计器中的表单预览方式与外部浏览器中可能存在一些差异。
+   >要测试真正的最终用户体验，还可以在外部浏览器(Google Chrome、Microsoft Edge、Mozilla Firefox等)中预览表单。 由于每个浏览器使用单独的引擎来呈现HTML，因此Designer中的表单预览方式与外部浏览器中可能存在一些差异。
 
 ## 使用示例数据预览表单 {#to-preview-a-form-using-sample-data}
 
 Designer允许您使用示例XML数据预览和测试表单。 建议您经常使用示例数据测试表单，以确保表单正确呈现。
 
-如果没有示例数据，Designer可以创建它，也可以自己创建它。 (请参阅 [自动生成示例数据以预览表单](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) 和 [创建示例数据以预览表单](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+如果您没有示例数据，Designer可以创建它，也可以自己创建它。 (请参阅 [自动生成示例数据以预览表单](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) 和 [创建示例数据以预览表单](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
 使用示例数据源测试表单可确保映射数据和字段，并确保重复的子表单按预期重复。 您可以创建一个平衡的表单布局，为每个对象提供适当的空间以显示合并的数据。
 

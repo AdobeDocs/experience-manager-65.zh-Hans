@@ -5,11 +5,11 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '6086'
 ht-degree: 2%
@@ -145,13 +145,13 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>8.</td>
-   <td>准时发布</td>
+   <td>Publish On Time</td>
    <td>是</td>
    <td>自动发布主题的时间。</td>
   </tr>
   <tr>
    <td>9.</td>
-   <td>发布关闭时间</td>
+   <td>Publish关闭时间</td>
    <td>是</td>
    <td>自动取消发布主题的时间。</td>
   </tr>
@@ -604,7 +604,7 @@ Canvas中数字框上的组件工具栏
 
 ## 对其他自适应表单用例的影响 {#impact-on-other-adaptive-form-use-cases}
 
-* **发布/取消发布表单：** 发布表单时，也会发布应用于的主题（如果尚未发布）
+* **Publish/取消发布表单：** 发布表单时，也会发布应用于的主题（如果尚未发布）
 * **导入/导出表单：** 在导入或导出表单时，也会自动导入或导出与其关联的主题。
 * **表单的引用：** 表单引用中的“引用”部分包含额外的主题条目。
 * **表单的上次修改时间：** 在更改相关主题时更新。

@@ -3,13 +3,13 @@ title: 自适应表单的布局功能
 description: 自适应表单在各种设备上的布局和外观受布局设置控制。 了解各种布局及其应用方式。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 discoiquuid: 9459c414-eac9-4bd9-a773-cceaeb736c56
 docset: aem65
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1193'
 ht-degree: 5%

@@ -4,11 +4,11 @@ description: Forms允许您配置提交操作以定义提交后处理自适应�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 docset: aem65
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2593'
 ht-degree: 48%
@@ -269,6 +269,6 @@ AEM 6.5 Forms Service Pack 19 (6.5.19.0)引入了提交到Microsoft®SharePoint�
 
 ## 提交操作的错误处理 {#error-handling-on-submit-action}
 
-作为Experience Manager安全和强化指南的一部分，请配置自定义错误页面，如404.jsp和500.jsp。 提交表单时出现404或500错误时，将调用这些处理程序。 在Publish节点上触发这些错误代码时，也会调用处理程序。
+作为Experience Manager安全和强化指南的一部分，请配置自定义错误页面，如404.jsp和500.jsp。 提交表单时出现404或500错误时，将调用这些处理程序。 在Publish节点上触发这些错误代码时，还会调用处理程序。
 
 有关更多信息，请参阅 [自定义错误处理程序显示的页面](/help/sites-developing/customizing-errorhandler-pages.md).

@@ -7,10 +7,10 @@ topic-tags: designer
 geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin, User, Developer
-feature: Forms Designer
+feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 6ef7e07f0b83b76981240533122aee8c3ee298c7
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '787'
 ht-degree: 0%

@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
 docset: aem65
-feature: Document Services
+feature: Document Services,Assembler,Barcoded Forms
 exl-id: d4b5cacd-0bac-48b5-a8a6-0f58883136d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '1003'
 ht-degree: 0%
@@ -102,13 +102,13 @@ ht-degree: 0%
 
 ### 推荐的编码和解码格式 {#recommended-encoding-and-decoding-formats}
 
-鼓励条形码表单作者在条形码中编码数据时使用简单的分隔格式（如制表符分隔）。 此外，请避免使用回车作为字段分隔符。 Designer提供了分隔编码选项，这些编码可自动生成JavaScript脚本来编码条形码。 解码的数据在第一行上具有字段名称，在第二行上具有它们的值，每个字段之间具有制表符。
+鼓励条形码表单作者在条形码中编码数据时使用简单的分隔格式（如制表符分隔）。 此外，请避免使用回车作为字段分隔符。 Designer提供一系列分隔的编码，这些编码可自动生成JavaScript脚本来编码条形码。 解码的数据在第一行上具有字段名称，在第二行上具有它们的值，每个字段之间具有制表符。
 
 在解码条形码时，请指定用于分隔字段的字符。 为解码指定的字符必须与用于编码条形码的字符相同。 例如，在使用建议的制表符分隔格式时，“提取到XML”操作必须使用字段分隔符的默认值Tab。
 
 ### 用户指定的字符集 {#user-specified-character-sets}
 
-当表单作者使用Designer将条形码对象添加到其表单时，他们可以指定字符编码。 认可的编码为UTF-8、ISO-8859-1、ISO-8859-2、ISO-8859-7、Shift-JIS、KSC-5601、Big-Five、GB-2312、UTF-16。 默认情况下，所有数据都使用条形码编码为UTF-8。
+当表单作者使用Designer将条形码对象添加到其表单时，可以指定字符编码。 认可的编码为UTF-8、ISO-8859-1、ISO-8859-2、ISO-8859-7、Shift-JIS、KSC-5601、Big-Five、GB-2312、UTF-16。 默认情况下，所有数据都使用条形码编码为UTF-8。
 
 在解码条形码时，您可以指定要使用的字符集编码。 为确保所有数据都正确解码，请指定在设计表单时表单作者指定的相同字符集。
 

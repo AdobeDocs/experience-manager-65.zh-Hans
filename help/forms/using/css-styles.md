@@ -6,11 +6,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '812'
 ht-degree: 2%
@@ -226,7 +226,7 @@ AEM Forms Designer支持表单中各种类型的字段，如NumericField、Decim
 
 ## 不同绘制元素的CSS类 {#css-classes-for-different-draw-elements}
 
-可以使用AEM Forms Designer插入静态绘制元素，如文本和图像。 对于每个绘制元素，单独的CSS类与该元素关联。 绘制元素的CSS类列表如下所列。 每个绘制元素都有一个与之关联的绘制类。
+您可以使用AEM Forms Designer插入静态绘制元素，如文本和图像。 对于每个绘制元素，单独的CSS类与该元素关联。 绘制元素的CSS类列表如下所列。 每个绘制元素都有一个与之关联的绘制类。
 
 | **Draw Type** | **CSS类** |
 |---|---|

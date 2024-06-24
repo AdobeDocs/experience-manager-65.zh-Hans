@@ -6,10 +6,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-feature: Adaptive Forms, Core Components
+feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 14%
@@ -27,7 +27,7 @@ ht-degree: 14%
 
 通过启用自适应Forms核心组件，您可以开始创建、发布和交付 [基于核心组件的自适应Forms](create-an-adaptive-form-core-components.md) 和 [Headless自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) 从AEM 6.5 Forms环境中。
 
-要在AEM 6.5 Forms环境中启用自适应Forms核心组件，请设置和部署 [AEM Archetype 41或更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 基于所有创作和发布实例上的项目（启用了表单选项）。
+要在AEM 6.5 Forms环境中启用自适应Forms核心组件，请设置和部署 [AEM Archetype 41或更高版本](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 基于所有创作实例和Publish实例上的项目（启用了表单选项）。
 
 本文介绍了如何在您的AEM 6.5 Forms环境中设置和部署基于AEM Archetype 41或更高版本的项目以启用自适应Forms核心组件。 您可以参阅下面的列表，以了解 **AEM 6.5** 用于启用Forms核心组件的兼容版本：
 
@@ -43,7 +43,7 @@ ht-degree: 14%
 
 ## 创建和部署最新的基于AEM原型的项目
 
-创建AEM Archetype 41或 [稍后](https://github.com/adobe/aem-project-archetype) 基于的项目并将其部署到所有创作和发布实例：
+创建AEM Archetype 41或 [稍后](https://github.com/adobe/aem-project-archetype) 基于项目并将其部署到所有创作实例和Publish实例：
 
 1. 以管理员身份登录到您的计算机，托管并运行AEM 6.5 Forms实例。
 1. 打开命令提示符或终端，然后运行以下命令以创建AEM Archetype项目（启用表单选项）：
@@ -134,13 +134,13 @@ ht-degree: 14%
 
    成功构建AEM原型项目后，将生成AEM包。 您可以在以下位置找到该包： [AEM原型项目文件夹]\all\target\[appid].all-[版本].zip
 
-1. 使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) 以部署 [AEM原型项目文件夹]\all\target\[appid].all-[版本].zip包。
+1. 使用 [包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en) 以部署 [AEM原型项目文件夹]\all\target\[appid].all-[版本]Publish .zip包。
 
 >[!NOTE]
 >
 >
 >
-> * 如果您在发布实例上访问登录对话框时遇到困难，要通过包管理器安装包，请尝试使用URL： `http://[Publish Server URL]:[PORT]/system/console` 以登录。 这使您可以在发布实例上访问登录页面，从而允许您继续安装过程。
+> * 如果您在发布实例上访问登录对话框时遇到困难，要通过包管理器安装包，请尝试使用URL： `http://[Publish Server URL]:[PORT]/system/console` 以登录。 这使您能够访问Publish实例的登录页面，从而允许您继续安装过程。
 > * 将原型项目部署到您的环境后，请勿将其删除或放弃。 要将自定义主题和新的自适应Forms核心组件主题添加到您的环境中，需要原型项目。
 
 为您的环境启用了核心组件。 将基于空白核心组件的自适应表单模板和画布3.0主题部署到您的环境，使您能够 [创建基于核心组件的自适应Forms](create-an-adaptive-form-core-components.md).
@@ -149,7 +149,7 @@ ht-degree: 14%
 
 ### 什么是核心组件？
 
-[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)是一组用于 AEM 的标准化 Web 内容管理 (WCM) 组件，以缩短您网站的开发时间并降低维护成本。
+[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)是一组用于 AEM 的标准化 Web 内容管理 (WCM) 组件，以缩短您网站的开发时间并降低维护成本。
 
 ### 在启用核心组件上添加了哪些功能？
 

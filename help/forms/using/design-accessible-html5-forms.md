@@ -5,11 +5,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
@@ -22,7 +22,7 @@ HTML5表单使用ARIAHTML5辅助功能标准生成无障碍的HTML表单。 这�
 
 *注意：选项卡式导航不包含受保护字段，例如显示值总和的计算字段。 要使屏幕阅读器读取受保护字段的值，请在受保护字段的顶部或旁边放置一个空的只读字段。 将受保护字段的值分配给新的只读字段。 屏幕阅读器或选项卡式导航器可以选取此只读字段，并将其作为受保护字段的值发出。*
 
-AEM Forms Designer包含多个“说文字”选项，可传递给屏幕阅读器。 对于表单中的每个对象，用户可以为屏幕阅读器文本指定以下几种设置之一：
+AEM Forms Designer包含多个可传递给屏幕阅读器的说文本选项。 对于表单中的每个对象，用户可以为屏幕阅读器文本指定以下几种设置之一：
 
 * 自定义屏幕阅读器文本，可以使用“辅助功能”面板进行设置。 作者可以注释按钮和字段的名称及其用途。
 * 工具提示，可在“辅助功能”面板中设置这些提示。

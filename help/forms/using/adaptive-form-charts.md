@@ -3,11 +3,11 @@ title: 在自适应表单中使用图表。
 description: 在自适应表单中使用图表使表单更具信息性。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-feature: Adaptive Forms, Foundation Components
+feature: Adaptive Forms,Foundation Components
 exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '2005'
 ht-degree: 0%

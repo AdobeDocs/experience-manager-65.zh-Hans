@@ -1,15 +1,15 @@
 ---
 title: 为HTML5表单设计表单模板
-description: AEM Forms可以将XFA表单模板渲染为HTML5格式。 窗体设计人员可以使用Designer设计窗体HTML并使用Template5呈现功能。
+description: AEM Forms可以将XFA表单模板渲染为HTML5格式。 表单设计人员可以使用Designer设计表单模板并使用HTML5呈现功能。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
 docset: aem65
-feature: HTML5 Forms
+feature: HTML5 Forms,Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '480'
 ht-degree: 0%

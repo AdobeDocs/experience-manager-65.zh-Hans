@@ -5,7 +5,8 @@ docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+feature: Adaptive Forms
+source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
 source-wordcount: '1762'
 ht-degree: 0%
@@ -178,7 +179,7 @@ AEM Forms集成 [Adobe Analytics](https://experienceleague.adobe.com/docs/analyt
    >[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
-### 发布流 {#publish-flow}
+### Publish流程 {#publish-flow}
 
 创建数据元素并在规则中使用它们后，发布配置以在中收集表单数据 [!DNL Adobe Analytics].
 
@@ -190,11 +191,11 @@ AEM Forms集成 [Adobe Analytics](https://experienceleague.adobe.com/docs/analyt
 
 1. 选择 **[!UICONTROL 添加所有已更改资源]** 然后选择 **[!UICONTROL 保存并生成到开发环境]**.
 
-1. 在 **[!UICONTROL 开发]** 部分，选择 ![更多选项](/help/forms/using/assets/more-options-icon.svg) 然后选择 **[!UICONTROL 批准并发布到生产环境]**.
+1. 在 **[!UICONTROL 开发]** 部分，选择 ![更多选项](/help/forms/using/assets/more-options-icon.svg) 然后选择 **[!UICONTROL 批准并将Publish投入生产]**.
 
 1. 确认更改，发布流将很快显示在中 **[!UICONTROL 已发布]** 部分。
 
-![发布流程](/help/forms/using/assets/publish-flow.png)
+![Publish流量](/help/forms/using/assets/publish-flow.png)
 
 ## 2.配置AEM Forms {#configure-aem-forms}
 
@@ -218,7 +219,7 @@ AEM Forms集成 [Adobe Analytics](https://experienceleague.adobe.com/docs/analyt
 
 1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
-1. 发布配置。
+1. Publish配置。
 
 ### 启用 [!DNL Adobe Analytics] 自适应表单 {#enable-analytics-adaptive-form}
 
@@ -228,7 +229,7 @@ AEM Forms集成 [Adobe Analytics](https://experienceleague.adobe.com/docs/analyt
 1. 选择自适应表单，然后选择 **[!UICONTROL 属性]**.
 1. 在 **[!UICONTROL 基本]** 选项卡，选择 [配置容器](#create-adobe-launch-configuration) 在创建Adobe启动项配置时使用。
 1. 选择 **[!UICONTROL 保存并关闭]**. 自适应表单已启用 [!DNL Adobe Analytics].
-1. 发布表单。
+1. Publish表单。
 
 启用后 [!DNL Adobe Analytics] 对于自适应表单，您可以 [验证](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) 如果AEM Forms与之间有适当的数据事件流 [!DNL Adobe Analytics]. AEM Forms与Adobe Analytics的集成已完成。 您现在可以 [在Adobe Analytics中配置和查看报表](#view-reports-adobe-analytics).
 

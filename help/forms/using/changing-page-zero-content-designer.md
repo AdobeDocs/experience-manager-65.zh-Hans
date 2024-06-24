@@ -4,11 +4,11 @@ description: 在非Adobe PDF查看器中查看XFAPDF时，您知道如何更改�
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
-feature: Adaptive Forms, Forms Designer
+feature: Adaptive Forms,Forms Designer,Designer
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 627da08fd74fb6b0fb6cf6ec072c1863f759240c
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%

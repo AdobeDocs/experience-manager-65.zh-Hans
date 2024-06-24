@@ -4,10 +4,11 @@ description: 了解如何使用Document Services API对文档进行数字签名�
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-feature: Document Services
+feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 341ad5a1f8c0e0cde95c97871da889c17868ef9b
+exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '6409'
 ht-degree: 1%

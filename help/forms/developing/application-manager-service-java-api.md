@@ -8,7 +8,8 @@ topic-tags: develop
 role: Developer
 exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+feature: Adaptive Forms,APIs & Integrations
+source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
@@ -17,7 +18,7 @@ ht-degree: 0%
 
 # 应用程序管理器服务JavaAPI快速入门(SOAP) {#application-manager-service-javaapi-quick-start-soap}
 
-Java API快速入门(SOAP)可用于Application Manager服务。
+Java API快速入门(SOAP)适用于Application Manager服务。
 
 [快速入门：使用Java API(SOAP)部署应用程序](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
@@ -31,9 +32,9 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 >[!NOTE]
 >
->如果使用Unix等其他操作系统，请将Windows特定的路径替换为适用操作系统支持的路径，则“使用AEM进行编程”中的Java API(SOAP)快速入门基于Forms。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>如果使用Unix等其他操作系统，请将Windows特定路径替换为适用操作系统支持的路径，则AEM表单编程中的Java API(SOAP)快速入门将基于Forms。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## 快速入门（SOAP模式）：使用Java API部署应用程序 {#quick-start-soap-mode-deploying-applications-using-the-java-api}
+## 快速入门(SOAP模式)：使用Java API部署应用程序 {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
 以下Java代码示例根据名为的现有LCA文件导入应用程序 *EncryptDocument.lca*.
 
@@ -135,7 +136,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
  
 ```
 
-## 快速入门（SOAP模式）：使用Java API删除应用程序 {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## 快速入门(SOAP模式)：使用Java API删除应用程序 {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
 以下Java代码示例删除名为的应用程序 *加密文档*.
 
