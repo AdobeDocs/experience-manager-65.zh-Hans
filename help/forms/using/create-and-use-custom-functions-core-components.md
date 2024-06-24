@@ -4,7 +4,9 @@ description: AEM Forms支持自定义函数，这些函数允许用户在规则�
 keywords: 添加自定义函数、使用自定义函数、创建自定义函数、在规则编辑器中使用自定义函数。
 content-type: reference
 feature: Adaptive Forms, Core Components
-source-git-commit: f633fdfda531cc29ce6274e0367708cc4909a0cd
+roles: Admin, Developer
+exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
+source-git-commit: 6c902ca08b7689e428facdc4150f443dad089bff
 workflow-type: tm+mt
 source-wordcount: '3385'
 ht-degree: 2%
@@ -14,6 +16,7 @@ ht-degree: 2%
 # 自适应核心组件中的自定义函数Forms
 
 本文介绍了如何使用最新的自适应表单核心组件创建自定义函数，这些组件具有最新的功能，例如：
+
 * 自定义函数的缓存功能
 * 自定义函数的全局范围对象和字段对象支持
 * 支持现代JavaScript功能，如let和arrow函数（ES10支持）
@@ -1003,5 +1006,3 @@ In case, the custom submit action fails to perform as expected in existing AEM p
    * 类方法
    * 默认参数
    * Rest参数
-
-
