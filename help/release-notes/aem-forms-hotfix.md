@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
+source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
