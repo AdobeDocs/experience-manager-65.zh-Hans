@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f9e98d7de24d516eab163d42f6c1c3155915856e
+source-git-commit: ad71f1c92bba90000f72319536fffd255fb4db6e
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ ht-degree: 0%
      </td>
     <td>
     <ul>
-    <li> 升级到AEM Forms Service Pack 6.5.21.0后，PaperCapture服务无法在PDF上执行OCR（光学字符识别）操作。 要解决此问题，请参阅 <a href="/help/forms/using/papercapture-service-resolution.md"> 故障排除</a> 文章。(CQDOC-21680) </li>
+    <li> 升级到AEM Forms Service Pack 6.5.21.0后，PaperCapture服务无法在PDF上执行OCR（光学字符识别）操作。 有关安装说明，请参阅 <a href="/help/forms/using/papercapture-service-resolution.md"> 故障排除</a> 文章。(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -54,7 +54,7 @@ ht-degree: 0%
      </td>
     <td>
     <ul>
-    <li>预览期间，包含XML数据的草稿信件卡在加载状态。 要下载并安装修补程序，请参阅<a href="#install-hotfix"> 下载并安装草稿书信问题的修补程序</a> 部分。(FORMS-14521)</li>
+    <li>预览期间，包含XML数据的草稿信件卡在加载状态。 有关该修补程序的下载和安装说明，请参阅<a href="#install-hotfix"> 下载并安装草稿书信问题的修补程序</a> 部分。(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
