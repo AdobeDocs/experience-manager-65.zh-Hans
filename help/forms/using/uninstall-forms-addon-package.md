@@ -6,9 +6,9 @@ feature: Adaptive Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 975f1f580404ea1f2940aec5981f5668dced4b95
+source-git-commit: 2755e414ea23ebc1472e9c08d832eca93f28311b
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 1%
 
 # 从AEM实例中卸载AEM Forms附加组件包
 
-本文概述了从AEM Forms SDK实例正确卸载AEM Forms附加组件包所需的步骤。 执行以下步骤可确保删除Forms附加组件包，防止您的AEM环境出现潜在问题。
+本文概述了从AEM Forms SDK实例正确卸载AEM Forms附加组件包所需的步骤。 请按照以下步骤操作，确保删除Forms附加组件包，从而防止您的AEM环境出现潜在问题。
 
 ## 先决条件
 
-确保对表单和数据进行备份，以避免任何数据丢失。
+确保进行备份以避免任何数据丢失。
 
 ## 卸载AEM Forms附加组件包
 
