@@ -9,9 +9,9 @@ content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3565'
+source-wordcount: '3568'
 ht-degree: 1%
 
 ---
@@ -168,18 +168,22 @@ Official Service Pack
 
 ![“筛选器”选项卡](assets/edit-filter.png)
 
-创建过滤器时，您可以定义路径或使用正则表达式来指定要包含或排除的所有节点。
+创建规则时，您可以定义正则表达式（也称为正则表达式、正则表达式或正则表达式），以指定要包含或排除的所有节点。
 
 | 规则类型 | 描述 |
 |---|---|
-| include | 包括一个目录将包括该目录以及该目录中的所有文件和文件夹（即整个子树），但是 **不会** 包括指定根路径下的其他文件或文件夹。 |
-| 排除 | 排除目录将排除该目录以及该目录中的所有文件和文件夹（即整个子树）。 |
+| include | Include将包括指定目录中与正则表达式匹配的所有文件和文件夹。 包括 **不会** 包括指定根路径下的其他文件或文件夹。 |
+| 排除 | 排除将排除与正则表达式匹配的所有文件和文件夹。 |
 
 通常，当您首次定义包过滤器时 [创建包。](#creating-a-new-package) 但是，它们也可以稍后进行编辑，之后应重建包以根据新的筛选器定义更新其内容。
 
 >[!TIP]
 >
 >一个包可以包含多个过滤器定义，以便来自不同位置的节点可以轻松组合到一个包中。
+
+>[!TIP]
+>
+>有关背景信息，请参阅 [Apache Jackrabbit — 工作区过滤器](https://jackrabbit.apache.org/filevault/filter.html) 文档。
 
 ### 依赖项 {#dependencies}
 
