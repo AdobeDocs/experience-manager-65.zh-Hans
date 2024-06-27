@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5409'
 ht-degree: 1%
 
 ---
@@ -96,7 +96,7 @@ AEM WCM安装了多个用户和组。 在安装后首次访问Security Console�
   <tr>
    <td>参与者</td>
    <td>组</td>
-   <td><p>允许用户写入内容的基本权限（如中所示，仅限功能）。</p> <p>不向/content树分配任何权限。 必须为单个组或用户分配。</p> </td>
+   <td><p>允许用户编写内容的基本权限（如中所示，仅具有基本功能所需的权限）。</p> <p>不分配任何权限来访问/content树本身。 这些必须专门分配给各个组或用户。</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -196,7 +196,7 @@ AEM使用ACL来确定用户或组可以执行的操作以及在何处可以执�
   </tr>
   <tr>
    <td>复制</td>
-   <td>用户可以将内容复制到其他环境（例如，发布环境）。 该权限还应用于任何子页面。</td>
+   <td>用户可以将内容复制到其他环境(例如，Publish环境)。 该权限还应用于任何子页面。</td>
   </tr>
  </tbody>
 </table>
@@ -242,7 +242,7 @@ AEM WCM使用访问控制列表(ACL)来组织应用于各种页面的权限。
 
 这些权限也将应用于任何子页面。
 
-如果权限不是从父节点继承，而是至少具有一个本地条目，则以下符号将附加到复选框。 本地条目是在CRX 2.2接口中创建的条目（当前只能在CRX中创建通配符ACL。）
+如果权限不是从父节点继承，而是至少具有一个本地条目，则以下符号将附加到复选框。 本地条目是在CRX 2.2界面中创建的条目(当前只能在CRX中创建通配符ACL。)
 
 对于给定路径下的操作：
 
@@ -293,7 +293,7 @@ AEM WCM使用访问控制列表(ACL)来组织应用于各种页面的权限。
 
   Adobe建议您使用“允许”而不是“拒绝”，请参见 [最佳实践](#best-practices).
 
-在修改任一权限之前，请确保您了解它们的工作方式和相互关系。 请参阅说明AEM WCM方式的CRX文档 [评估访问权限](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)、以及有关设置访问控制列表的示例。
+在修改任一权限之前，请确保您了解它们的工作方式和相互关系。 请参阅说明AEM WCM的CRX文档 [评估访问权限](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)、以及有关设置访问控制列表的示例。
 
 ### 权限 {#permissions}
 
