@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 8f5b6aee8a48690f1ac2706f25d45e7e9424e219
+source-git-commit: b24a1b225b2d798db26be1533e2e74bf08fdaa5d
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4070'
 ht-degree: 2%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 2%
 * **用于PDF辅助功能的AutoTag API**：OSGi上的AEM Forms现在支持新的AutoTag API，可通过添加标记（段落和列表）来增强对辅助功能标准的PDF。 它借助辅助技术使PDF更易于访问。
 * **支持16位PNG**：PDF Generator的ImageToPdf服务现在支持转换具有16位色深的PNG。
 * **将工件应用于XDP中的单个文本块**：Forms Designer现在允许用户在XDP文件中配置单个文本块上的设置。 此功能允许您控制在生成的PDF中被视为工件的元素。 辅助技术可访问这些元素，例如页眉和页脚。 主要功能包括将文本块标记为工件，并将这些设置嵌入到XDP元数据中。 Forms Output服务在PDF生成期间应用这些设置，确保正确的PDF/UA标记。
-* **AEM Forms Designer已通过认证 `GB18030:2022` 标准**：使用 `GB18030:2022` 认证，现在Forms Designer支持中文Unicode字符集，该字符集允许您在所有可编辑的字段和对话框中输入中文字符。
+* **AEM Forms Designer已通过认证 `GB18030:2022` 标准**：使用 `GB18030:2022` 认证，Forms Designer现在支持中文Unicode字符集，该字符集允许您在所有可编辑的字段和对话框中输入汉字符。
 * **在JEE服务器中支持WebToPDF路由**：除Webkit和WebCapture（仅限Windows）路由外，PDF Generator服务现在还支持将HTML文件转换为JEE上的PDF文档的WebToPDF路由。 虽然WebToPDF路由已在OSGi上可用，但现在已扩展以也包含在JEE中。 在JEE和OSGi平台上，PDF Generator服务都支持跨不同操作系统的以下路由：
    * **Windows**：Webkit、WebCapture、WebToPDF
    * **Linux**：Webkit、WebToPDF
@@ -152,7 +152,7 @@ ht-degree: 2%
 ### [!DNL Assets]{#assets-6521}
 
 * 如果将资产发布到Brand Portal，则发布状态将保持不一致。 (ASSETS-36807)
-* 使用API调用从实例中删除资产时，不会删除资产。 (ASSETS-35131)
+* 使用API调用从实例中删除Assets时，不会删除它们。 (ASSETS-35131)
 * 当您尝试导入元数据时， `question mark (?)` 替换以英语以外的任何语言插入的字符。  (ASSETS-35091)
 * 时间 `dc:title` 属性与数据类型字符串一起使用，安装Service Pack 6.5.19后，资产内容树无法正常工作。 (ASSETS-34684)
 * 如果资产名称中包含任何特殊字符，则会显示错误。 (ASSETS-33248)
@@ -161,7 +161,7 @@ ht-degree: 2%
 
 * 在AEM 6.5.18中，当您编辑热点时，不会显示添加到资源的所有热点。 但是，所有热点都可以在已发布的资产中使用，但如果您需要编辑，则以后无法再编辑它们。 (ASSETS-33609)
 * 上传的最新EPS文件在重新处理后不会生成缩略图。 (ASSETS-32617)
-* 在“工具”>“Assets”>“Dynamic Media发布设置”>“请求属性”选项卡中，输入以下内容 `Width(px)` 和 `Height(px)` 西班牙语、意大利语和葡萄牙语看起来都不一样。 对于这些位置，它们彼此不对齐。 (ASSETS-31896)
+* 在“工具”>“Assets”>“Dynamic Media Publish设置”>“请求属性”选项卡中，输入以下内容 `Width(px)` 和 `Height(px)` 西班牙语、意大利语和葡萄牙语看起来都不一样。 对于这些位置，它们彼此不对齐。 (ASSETS-31896)
 * 自2024年5月1日起，AdobeDynamic Media停止支持以下内容：
    * SSL（安全套接字层）2.0
    * SSL 3.0
@@ -186,7 +186,7 @@ ht-degree: 2%
 
 #### [!DNL Adaptive Forms] {#forms-6520}
 
-* 将自适应表单从Adobe Experience Manager发布实例提交到Adobe Experience Manager Workflow时，工作流无法保存附件。 (FORMS-14209)
+* 将自适应表单从Adobe Experience Manager Publish实例提交到Adobe Experience Manager Workflow时，工作流无法保存附件。 (FORMS-14209)
 * 用户单击时 **打印到PDF** 在OSGi上的AEM Forms Service Pack 15 (6.5.15.0)上，客户端验证失败，由Developer Tools Console窗口中显示的错误消息可见。 (FORMS-14029)
 * 当用户在AEM 6.5 Forms Service Pack 17 (6.5.17.0)或Service Pack 18 (6.5.18.0) Service Pack 19 (6.5.19.0)上提交表单时，“感谢”消息的翻译无法正常工作。 但是，消息在词典中可正确翻译。 (FORMS-13846)
 * 当用户预览具有日期选取器组件的表单时，日期选取器字段与其他表单字段不匹配。 (FORMS-13763)
@@ -384,7 +384,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 >[!NOTE]
 >
->在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
+>在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
 
 ### 安装用于Experience Manager内容片段的GraphQL索引包{#install-aem-graphql-index-add-on-package}
 
@@ -543,6 +543,10 @@ UberJar用于 [!DNL Experience Manager] 6.5.21.0可从以下网站获取： [Mav
 * 如果用户尝试预览包含保存的XML数据的草稿信件，则会卡入 `Loading` 一些特定字母的状态。 要下载并安装修补程序，请参阅 [Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 文章。 (FORMS-14521)
 
 * 升级到AEM Forms Service Pack 6.5.21.0后， `PaperCapture` 服务无法对PDF执行OCR（光学字符识别）操作。 该服务不会以PDF或日志文件的形式生成输出。 要下载并安装修补程序，请参阅 [Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms) 文章。 (CQDOC-21680)
+
+* 当用户从AEM 6.5 Forms Service Pack 18 (6.5.18.0)或AEM 6.5 Forms Service Pack 19 (6.5.19.0)更新到AEM 6.5 Forms Service Pack 20 (6.5.20.0)或AEM 6.5 Forms Service Pack 21 (6.5.21.0)时，用户会遇到JSP编译错误，这会阻止用户打开或创建自适应表单，还会导致页面编辑器、AEM Forms UI和AEM工作流编辑器等其他AEM界面出错。 (FORMS-15256)
+
+
 
 ## 包含的OSGi包和内容包{#osgi-bundles-and-content-packages-included}
 

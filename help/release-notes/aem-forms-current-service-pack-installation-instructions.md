@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 2266f67d834341715b7300ff366f93d960110dac
+source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
 workflow-type: tm+mt
-source-wordcount: '1734'
+source-wordcount: '1697'
 ht-degree: 6%
 
 ---
@@ -57,7 +57,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++1. 备份现有环境
 
-1. 备份 [CRX存储库、数据库模式和GDS（全局文档存储）](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
+1. 备份 [CRX存储库、数据库架构和GDS（全局文档存储）](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html).
 1. 备份&lt;*AEM_forms_root*>/部署文件夹。
 
 >[!NOTE]
@@ -140,12 +140,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++5. 安装servlet片段(AEM Service Pack 6.5.14.0或更低版本)(**强制安装**)
++++5. 如果未安装，请安装servlet片段(**必需步骤**)
 
->[!NOTE]
->
-> * 如果您要从 **AEM Service Pack 6.5.15.0**，安装 **servlet片段** 非必填。 对于版本 **AEM Service Pack 6.5.14.0** 或者更早的 **必须安装** servlet片段。
-
+<!-- >[!NOTE] > > * If you are upgrading from **AEM Service Pack 6.5.15.0**, the installation of the **servlet fragment** is not required. For versions **AEM Service Pack 6.5.14.0** or earlier, it is **mandatory to install** the servlet fragment. -->
 
 要下载并安装servlet片段，请执行以下操作：
 
