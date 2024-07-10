@@ -9,10 +9,10 @@ exl-id: a7281ca0-461f-4762-a631-6bb539596200
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 6fb844ea428c15adab71503dde6138e46eabf0a3
 workflow-type: tm+mt
-source-wordcount: '1552'
-ht-degree: 53%
+source-wordcount: '1564'
+ht-degree: 52%
 
 ---
 
@@ -89,6 +89,10 @@ AEM和Campaign之间的集成需要在这两种解决方案中执行多个步骤
 
 1. 选择适当的安全区域，并根据需要定义受信任的 IP 掩码。
 
+   >[!CAUTION]
+   >
+   >要配置的安全区域为 **私有公司网络(VPN+LAN)**.
+
 1. 单击&#x200B;**”保存“**。
 
 1. 注销 Adobe Campaign 客户端。
@@ -155,7 +159,7 @@ AEM 现在可以与 Adobe Campaign 通信。
 >
 >确保您的 Adobe Campaign 服务器可以通过 Internet 访问。AEM无法访问专用网络。
 
-## 配置到AEM发布实例的复制 {#replication}
+## 配置到AEM Publish实例的复制 {#replication}
 
 Campaign内容由内容作者在AEM创作实例上创建。 此实例通常仅在贵组织内部可用。 要使营销活动的收件人能够访问图像和资产等内容，您需要发布该内容。
 
