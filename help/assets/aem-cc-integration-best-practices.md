@@ -8,7 +8,7 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a144f7cc75b1a5cdb45d2aaf90e87013ac68a431
 workflow-type: tm+mt
 source-wordcount: '3173'
 ht-degree: 11%
@@ -19,7 +19,7 @@ ht-degree: 11%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Experience Manager Assets] 是一个可与集成的数字资产管理(DAM)解决方案 [!DNL Adobe Creative Cloud] 为了帮助DAM用户与创意团队合作，请简化内容创建过程中的协作。
@@ -30,9 +30,9 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->[!DNL Experience Manager] 到 [!DNL Creative Cloud] 文件夹共享已弃用，不再包含在本指南中。 Adobe建议使用较新的功能，例如 [Adobe资源链接](https://helpx.adobe.com/cn/cn/enterprise/using/adobe-asset-link.html) 或 [Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html) 为创意用户提供对在中管理的资源的访问权限 [!DNL Experience Manager].
+>[!DNL Experience Manager] 到 [!DNL Creative Cloud] 文件夹共享已弃用，不再包含在本指南中。 Adobe建议使用较新的功能，例如 [Adobe资源链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 或 [Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html) 为创意用户提供对在中管理的资源的访问权限 [!DNL Experience Manager].
 
-## 创意人员、营销人员和DAM用户的协作需求 {#collaboration-needs-of-creatives-marketers-and-dam-users}
+## 创意人员、营销人员和DAM用户的Collaboration需求 {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | 要求 | 用例 | 涉及的曲面 |
 |---|---|---|
@@ -44,7 +44,7 @@ ht-degree: 11%
 
 | 针对所涉角色的价值主张 | Adobe产品 | 涉及的曲面 |
 |---|---|---|
-| 创意用户从中发现资源 [!DNL Experience Manager]，打开并使用它们，编辑和上传更改到 [!DNL Experience Manager]，并将新文件上传到 [!DNL Experience Manager]，不离开 [!DNL Creative Cloud] 应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/cn/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], 和 [!DNL Adobe InDesign]. |
+| 创意用户从中发现资源 [!DNL Experience Manager]，打开并使用它们，编辑和上传更改到 [!DNL Experience Manager]，并将新文件上传到 [!DNL Experience Manager]，不离开 [!DNL Creative Cloud] 应用程序。 | [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], 和 [!DNL Adobe InDesign]. |
 | 企业用户可简化打开和使用资产、编辑和上传更改的操作 [!DNL Experience Manager]，并将新文件上传到 [!DNL Experience Manager] 桌面环境中的。 他们使用通用集成在本机桌面应用程序中打开任何资源类型，包括非Adobe资源类型。 | [Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | [!DNL Experience Manager] Win和Mac桌面上的桌面应用程序 |
 | 营销人员和企业用户可发现、预览、许可并保存和管理 [!DNL Adobe Stock] 中的资产 [!DNL Experience Manager]. 许可和保存的资产提供选择 [!DNL Adobe Stock] 元数据以实现更好的管理。 | [Experience Manager与Adobe Stock集成](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Web界面 |
 
@@ -98,7 +98,7 @@ ht-degree: 11%
 
 * 请参阅 [桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
 * 请参阅 [Adobe Stock集成](aem-assets-adobe-stock.md)
-* 请参阅 [Adobe资源链接](https://helpx.adobe.com/cn/cn/enterprise/using/adobe-asset-link.html)
+* 请参阅 [Adobe资源链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
 
 以下是对以下项目的最佳实践的简要总结 [!DNL Experience Manager] 和 [!DNL Creative Cloud] 集成。 请阅读本文档的其余部分以了解这些内容。
 
@@ -144,14 +144,14 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 
 创意团队（和组织）通常对存储资产生命周期每个阶段的资产不感兴趣。 例如，它们避免在以下情况下存储资产：
 
-* 尚未完成或需要进行试验的资产。
-* 未通过创意/内部团队审核周期的资产。
+* 尚未完成或有待试验的Assets。
+* 未通过创意/内部团队审核周期的Assets。
 * 与相关资产相比，该团队拥有更好的候选人来向外部团队代表其工作。
 
 通常，以下类资产存储在DAM中：
 
-* 达到一定到期日并被视为可共享资产。
-* 创意团队预先选择的资产。
+* 达到一定成熟度并被视为可共享的Assets。
+* 由创意团队预先选择的Assets。
 * 营销活动可使用或请求的特定资源格式，具体取决于特定合同或协议(例如，从RAW文件转换的JPG文件、来自PSD原始文件的TIFF/图像)。
 
 #### 当资产的更新存储在DAM中时 {#when-updates-to-assets-are-stored-in-dam}
@@ -232,7 +232,7 @@ Adobe Asset Link为以下用例提供了良好的支持：
 
 >[!MORELIKETHIS]
 >
->* [Adobe Asset Link](https://helpx.adobe.com/cn/cn/enterprise/using/adobe-asset-link.html)
+>* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
 >* [Experience Manager桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
 >* [Experience ManagerBrand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Experience Manager与Adobe Stock集成](aem-assets-adobe-stock.md)
