@@ -18,7 +18,7 @@ ht-degree: 7%
 
 # 正在处理资产{#working-with-assets}
 
-此 [创作环境和工具](/help/sites-authoring/author-environment-tools.md) 部分提供了有关使用 [!UICONTROL 内容查找器] 以在编辑页面时查找和使用资源。 AEM Assets提供了处理资源的其他方法：
+[创作环境和工具](/help/sites-authoring/author-environment-tools.md)部分提供了有关在编辑页面时使用[!UICONTROL 内容查找器]查找和使用资产的信息。 AEM Assets提供了处理资源的其他方法：
 
 * [将Dynamic Media Classic功能添加到您的页面](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [使用Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)

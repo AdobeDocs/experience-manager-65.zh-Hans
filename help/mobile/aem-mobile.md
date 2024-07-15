@@ -24,7 +24,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果您没有使用AdobeExperience Manager (AEM)作为内容管理源，请参阅 [AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>如果您未使用AdobeExperience Manager (AEM)作为内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
 
 ## AEM 管理员 {#aem-administrator}
 
@@ -32,17 +32,17 @@ ht-degree: 2%
 >
 >**先决条件：**
 >
->在开始为AEM Mobile On-demand Services设置环境之前，请参阅 [AEM Mobile应用程序仪表板或控制中心](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>在开始设置AEM Mobile On-demand Services环境之前，请参阅[AEM Mobile应用程序仪表板或控制中心](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
 
-An ***AEM管理员*** 负责将应用程序添加到AEM Mobile目录，方法是使用创建向导创建应用程序，或导入现有应用程序。 使用AEM Mobile创建应用程序的AEM管理员 *创建向导* 通常从Adobe的开箱即用参考示例或（通常）由创建的自定义应用程序模板中选择所需的应用程序模板之一 *AEM开发人员。*
+***AEM管理员***&#x200B;负责通过使用创建向导创建应用程序或导入现有应用程序将应用程序添加到AEM Mobile目录。 使用AEM Mobile的&#x200B;*创建向导*&#x200B;创建应用程序的AEM管理员通常会从Adobe的现成引用示例或（通常）由&#x200B;*AEM开发人员创建的自定义应用程序模板中选择所需的应用程序模板之一。*
 
 >[!NOTE]
 >
->有关设置AEM组和权限的详细信息，请单击 [创建用户角色和授予访问权限](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) 在线帮助中。
+>有关设置AEM组和权限的详细信息，请在联机帮助中单击[创建用户角色和授予访问权限](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)。
 
 AEM管理员在使用AEM Mobile On-demand Services创建应用程序时负责以下任务：
 
-* [设置AEM Mobile](/help/mobile/aem-mobile-setup.md) 涵盖
+* [设置涵盖的AEM Mobile](/help/mobile/aem-mobile-setup.md)
 
    * AEM Mobile配置
    * 为AEM Mobile创建项目

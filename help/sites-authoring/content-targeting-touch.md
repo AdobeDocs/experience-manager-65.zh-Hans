@@ -30,18 +30,18 @@ ht-degree: 72%
 * 模拟用户体验。
 * 配置 Target 组件，以进行更多自定义。
 
-您可以将 AEM 或 Adobe Target 用作定位引擎（您必须拥有有效的 Adobe Target 帐户才能使用 Adobe Target）。如果您使用的是 Adobe Target，则必须先配置集成。请参阅 [与Adobe Target集成的说明](/help/sites-administering/target.md).
+您可以将 AEM 或 Adobe Target 用作定位引擎（您必须拥有有效的 Adobe Target 帐户才能使用 Adobe Target）。如果您使用的是 Adobe Target，则必须先配置集成。请参阅有关集成Adobe Target](/help/sites-administering/target.md)的[说明。
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
-您在Target模式下看到的活动和体验反映了 [活动控制台](/help/sites-authoring/activitylib.md)：
+您在Target模式下看到的活动和体验反映了[活动控制台](/help/sites-authoring/activitylib.md)：
 
 * 使用定位模式对活动和体验所做的更改会反映在“活动”控制台中。
 * 在“活动”控制台中所做的更改也会反映在定位模式中。
 
 >[!NOTE]
 >
->在Adobe Target中创建营销活动时，会分配一个名为的属性 `thirdPartyId`参加每个活动。 在 Adobe Target 中删除营销活动时，不会删除 thirdPartyId。您不能为不同类型（AB、XT）的营销活动重复使用 `thirdPartyId`，也不能手动删除此属性。为避免出现此问题，请为每个营销活动指定唯一的名称；营销活动名称不能在不同营销活动类型中重复使用。
+>在Adobe Target中创建营销活动时，会为每个营销活动分配名为`thirdPartyId`的属性。 在 Adobe Target 中删除营销活动时，不会删除 thirdPartyId。您不能为不同类型（AB、XT）的营销活动重复使用 `thirdPartyId`，也不能手动删除此属性。为避免出现此问题，请为每个营销活动指定唯一的名称；营销活动名称不能在不同营销活动类型中重复使用。
 >
 >如果在同一促销活动类型中使用相同的名称，则会覆盖现有的促销活动。
 >
@@ -62,7 +62,7 @@ ht-degree: 72%
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
-1. 单击 **定位**. 定位选项随即会显示在页面顶部。
+1. 单击&#x200B;**定位**。 定位选项随即会显示在页面顶部。
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -82,12 +82,12 @@ ht-degree: 72%
 
    >[!NOTE]
    >
-   >Adobe建议您 [通过“活动”控制台创建品牌](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe建议您[通过“活动”控制台](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console)创建品牌。
    >
    >
    >如果您以任何其他方式创建品牌，请确保存在节点 `/campaigns/<brand>/master`，否则在您尝试创建活动时将产生错误。
 
-1. 单击“+”旁边的 **活动** 下拉菜单。
+1. 单击&#x200B;**Activity**&#x200B;下拉菜单旁边的+。
 1. 键入活动的名称。
 
    >[!NOTE]
@@ -98,9 +98,9 @@ ht-degree: 72%
 
    * 如果您选择 **ContextHub AEM**，则其余字段会变暗且不再可用。单击&#x200B;**创建**。
 
-   * 如果您选择 **Adobe Target**，您可以选择配置(默认情况下，它是您在执行以下操作时提供的配置： [已配置帐户](/help/sites-administering/opt-in.md))和活动类型。
+   * 如果选择&#x200B;**Adobe Target**，则可以选择一个配置（默认情况下，该配置是您[配置帐户](/help/sites-administering/opt-in.md)时提供的配置）和活动类型。
 
-   * 如果您使用AEM/Adobe Campaign集成并发送目标内容（新闻稿），请选择 **Adobe Campaign**. 请参阅 [与Adobe Campaign集成](/help/sites-administering/campaign.md) 以了解更多信息。
+   * 如果您使用AEM/Adobe Campaign集成并发送目标内容（新闻稿），请选择&#x200B;**Adobe Campaign**。 有关详细信息，请参阅[与Adobe Campaign集成](/help/sites-administering/campaign.md)。
 
 1. 在“活动”菜单中，选择&#x200B;**体验定位**&#x200B;或 **A/B 测试**。
 
@@ -125,13 +125,13 @@ ht-degree: 72%
 
 1. 在&#x200B;**品牌**&#x200B;下拉菜单中，选择包含要处理的活动的品牌。
 1. 在&#x200B;**活动**&#x200B;下拉菜单中，选择要为其创作目标内容的活动。
-1. 要显示引导您完成定位过程的控件，请单击 **开始定位**.
+1. 要显示引导您完成定位过程的控件，请单击&#x200B;**开始定位**。
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    >[!NOTE]
    >
-   >要更改正在使用的活动，请单击 **返回**.
+   >若要更改正在使用的活动，请单击&#x200B;**上一步**。
 
 ## 创建：创作体验 {#create-authoring-the-experiences}
 
@@ -183,7 +183,7 @@ ht-degree: 72%
 
 要添加体验，请执行以下操作：
 
-1. 要添加体验，请单击 **+** **添加体验定位** 显示在中现有体验的下方 **受众** 窗格。
+1. 要添加体验，请单击&#x200B;**受众**&#x200B;窗格中现有体验下方显示的&#x200B;**+** **添加体验定位**。
 1. 选择受众。默认情况下，受众名称是体验的名称。如有需要，您可以键入其他名称。单击&#x200B;**确定**。
 
 #### 使用定位模式删除体验 {#removing-experiences-using-targeting-mode}
@@ -274,7 +274,7 @@ ht-degree: 72%
 
 在编辑模式下，Target 组件具有一个靶心图标。
 
-![编辑模式下的目标组件](do-not-localize/chlimage_1-1.png)
+在编辑模式下![目标组件](do-not-localize/chlimage_1-1.png)
 
 将组件拖放到 Target 组件后，它们即成为目标组件。
 
@@ -284,7 +284,7 @@ ht-degree: 72%
 
 您可以在编辑模式或定位模式下将 Target 组件添加到页面。但是，您只能在定位模式下向 Target 组件中添加组件。Target 组件属于个性化组件组中的组件。
 
-如果编辑目标内容，则必须单击 **开始定位** 在这样做之前。
+如果编辑目标内容，则必须单击&#x200B;**开始定位**，然后才能进行编辑。
 
 1. 将 Target 组件拖动到要在其中显示选件的页面。
 1. 默认情况下，不会设置任何位置 ID。单击配置齿轮来设置位置。
@@ -294,7 +294,7 @@ ht-degree: 72%
    >如果管理员进行了相应设置，您可能需要明确设置此位置。
    >
    >
-   >管理员可以决定是否需要在以下位置设置此配置： **https://&lt;host>：&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >管理员可以决定是否需要在&#x200B;**https://&lt;主机>：&lt;端口>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**&#x200B;处设置此配置
    >
    >
    要要求用户输入位置，请选中**强制位置**复选框。
@@ -347,11 +347,11 @@ ht-degree: 72%
 
    您可以使用选件选取器浏览或筛选选件。浏览或筛选选件时，您可能还希望对选件进行排序，并更改查看选件的方式。右上方的数字表示当前库中提供了多少个选件。
 
-   * 单击 **浏览** 以导航到其他文件夹。 导航窗格随即会打开，单击箭头可向下浏览文件夹。单击 **浏览** 再次关闭导航窗格。
+   * 单击&#x200B;**浏览**&#x200B;导航到其他文件夹。 导航窗格随即会打开，单击箭头可向下浏览文件夹。再次单击&#x200B;**浏览**&#x200B;以关闭导航窗格。
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-   * 单击 **筛选** 根据关键字或标记筛选选件。 可输入关键字，并从下拉菜单中选择标记。单击 **筛选** 以关闭筛选窗格。
+   * 单击&#x200B;**筛选器**&#x200B;可按关键字或标记筛选选件。 可输入关键字，并从下拉菜单中选择标记。再次单击&#x200B;**筛选器**&#x200B;以关闭筛选窗格。
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
@@ -359,7 +359,7 @@ ht-degree: 72%
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
-   单击旁边的图标 **查看方式** 以图块或列表形式查看选件。
+   单击&#x200B;**查看为**&#x200B;旁边的图标可采用拼贴或列表方式查看选件。
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -370,7 +370,7 @@ ht-degree: 72%
 有关如何使用“选件”控制台创建可重复使用的选件的信息，请参阅[将选件添加到选件库](/help/sites-authoring/offerlib.md#add-an-offer-to-an-offer-library)。
 
 1. 选择体验以显示自定义选件。
-1. 单击自定义选件以显示选件菜单，然后单击 **将选件保存到选件库** 图标。
+1. 单击自定义选件以显示选件菜单，然后单击&#x200B;**将选件保存到选件库**&#x200B;图标。
 
    ![将选件保存到选件库](do-not-localize/chlimage_1-4.png)
 
@@ -411,15 +411,15 @@ ht-degree: 72%
 
 请勿将受众用于多个体验。 如果将某个体验映射到的受众已映射到其他体验，则该体验旁边会显示一个警告符号。
 
-![映射到映射到映射到另一个体验的受众时的警告符号](do-not-localize/chlimage_1-6.png)
+![映射到映射到映射到其他体验的受众时的警告符号](do-not-localize/chlimage_1-6.png)
 
 ### 将体验与受众关联（AEM 或 Adobe Target） {#associating-experiences-with-audiences-aem-or-adobe-target}
 
 使用 AEM 定位（或 Adobe Target 体验定位）时，请使用以下操作过程将体验与受众关联：
 
 1. 单击映射到体验的受众框中的下拉箭头。
-1. （可选）单击 **编辑** 然后键入关键字以搜索所需的区段。
-1. 在受众列表中，选择受众，然后单击 **确定**.
+1. （可选）单击&#x200B;**编辑**，然后键入关键字以搜索所需的区段。
+1. 在受众列表中，选择受众，然后单击&#x200B;**确定**。
 
 ### 如果您使用的是A/B测试(Adobe Target) ... {#if-you-are-using-a-b-testing-adobe-target}
 
@@ -433,7 +433,7 @@ ht-degree: 72%
 
 1. 单击映射到体验的受众旁边的下拉框。
 1. （可选）单击&#x200B;**编辑**，然后键入关键字以搜索所需区段。
-1. 单击 **好的。**
+1. 单击&#x200B;**确定。**
 1. 输入百分比，以配置路由到每个体验的受众流量。总和必须等于 100。
 1. （可选）单击体验名称旁边的下拉菜单，以编辑体验名称。
 
@@ -465,8 +465,8 @@ ht-degree: 72%
    <td><strong>转化</strong></td>
    <td><p>已单击正在测试的体验的任何部分的访客的百分比。转化可以按每个访客计数一次，也可以在每次访客完成转化时计数一次。转化量度设置为以下项之一：</p>
     <ul>
-     <li><strong>已查看页面</strong>  — 您可以通过选择任意一项来定义受众查看的页面 <strong>URL为</strong> 然后定义URL或多个URL，或者通过选择 <strong>URL包含</strong> 然后添加路径或关键字。</li>
-     <li><strong>已查看mbox</strong>  — 通过输入mbox的名称，您可以定义受众查看的mbox。 您可以通过单击输入多个mbox <strong>添加Mbox</strong>.</li>
+     <li><strong>已查看页面</strong> — 您可以通过选择<strong>URL为</strong>，然后定义URL或多个URL，或者通过选择<strong>URL包含</strong>，然后添加路径或关键字来定义受众查看的页面。</li>
+     <li><strong>已查看mbox</strong> — 您可以通过输入mbox的名称来定义受众查看的mbox。 您可以通过单击<strong>添加Mbox</strong>来输入多个mbox。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -563,7 +563,7 @@ ht-degree: 72%
    * **指定的日期和时间**：特定的时间。选择此选项时，单击日历图标，选择日期，然后指定活动结束时间。
 
 1. 要指定活动的优先级，请使用滑块选择&#x200B;**低**、**标准**&#x200B;或&#x200B;**高。**
-1. 如果您已使用Adobe Target帐户配置Adobe Analytics，则会看到 **报表源** 下拉菜单。 选 **择Adobe Target****或Adobe Analytics** 作为源。
+1. 如果您已使用Adobe Target帐户配置Adobe Anaytics，则会显示&#x200B;**报告Source**&#x200B;下拉菜单。 选 **择Adobe Target****或Adobe Analytics** 作为源。
 
    如果选择 **Adobe Analytics**，请选择公司和报表包。如果选择 **Adobe Target**，则不需要执行任何操作。
 
@@ -595,10 +595,10 @@ ht-degree: 72%
    >
    您也可以删除其他目标，方法是单击或点按三个圆点，然后再单击或点按&#x200B;**删除。** AEM 要求您至少定义一个目标。
 
-1. 如果您希望更好地控制成功量度的计数方式，请单击 **高级设置** 来访问这些文件。
+1. 如果您希望更好地控制成功量度的计数方式，请单击&#x200B;**高级设置**&#x200B;以访问这些设置。
 1. 单击&#x200B;**保存**。
 
-配置完成后，对于使用 Adobe Target（体验定位或 A/B 测试定位）的活动，您可以[查看活动业绩。](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)此外，通过A/B测试定位，您可以 [转换入选者。](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+配置完成后，对于使用 Adobe Target（体验定位或 A/B 测试定位）的活动，您可以[查看活动业绩。](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)此外，通过A/B测试定位，您可以[转化入选者。](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
 
 ## 模拟体验 {#simulating-an-experience}
 
@@ -623,7 +623,7 @@ ht-degree: 72%
 * 定位模式下的模拟活动：该页面显示用于当前在 Context Hub 中选择的用户的选件。您可以编辑以该用户作为目标的选件。
 * 预览模式：使用 Context Hub 选择满足体验所基于的区段标准的用户和位置。如果在 Context Hub 中所做的选择发生更改，目标内容也会相应地更改。
 
-1. 要切换到预览模式，请在工具栏上单击 **预览**.
+1. 要切换到预览模式，请在工具栏上单击&#x200B;**预览**。
 1. 单击工具栏上的Context Hub图标。
 
    ![上下文中心](do-not-localize/chlimage_1-7.png)
@@ -650,7 +650,7 @@ ht-degree: 72%
 
 1. 或者，要在全屏模式下访问这些设置，请在Target组件选项窗口中，单击全屏图标。
 
-   ![“目标组件选项”窗口](do-not-localize/chlimage_1-9.png)
+   ![Target组件选项窗口](do-not-localize/chlimage_1-9.png)
 
    AEM 随即会显示 Target 组件选项全屏窗口。
 
@@ -670,7 +670,7 @@ ht-degree: 72%
   </tr>
   <tr>
    <td><strong>引擎</strong></td>
-   <td>选择范围 <strong>客户端规则（无跟踪）、Adobe Target、ContextHub、 </strong>和<strong> Adobe Campaign </strong>具体取决于您要使用的引擎。</td>
+   <td>根据您要使用的引擎，在<strong>客户端规则（无跟踪）、Adobe Target、ContextHub、</strong>和<strong> Adobe Campaign </strong>之间进行选择。</td>
   </tr>
  </tbody>
 </table>
@@ -687,7 +687,7 @@ ht-degree: 72%
   </tr>
   <tr>
    <td><strong>准确定位</strong></td>
-   <td><p>启用“准确定位”可告知组件等到客户端上下文或上下文中心数据可用之后，再将请求发送到 Adobe Target。这可能会增加加载时间。在创作时，“准确定位”始终处于启用状态。</p> <p>如果您选择 <strong>准确定位</strong> 复选框，mbox将执行 <code>mboxDefine</code> 第一个和 <code>mboxUpdate</code> 之后，在数据可用时生成Ajax请求。</p> <p>如果您不选择 <strong>准确定位</strong> 复选框，mbox将执行 <code>mboxCreate</code> 立即生成同步请求（在这种情况下，并非所有上下文数据都可用）。</p> <p><strong>注意：</strong> 在特定组件上启用或禁用“准确定位”不会影响已设置的全局设置。 您始终可以通过在组件中选择“准确定位”来覆盖全局设置。</p> </td>
+   <td><p>启用“准确定位”可告知组件等到客户端上下文或上下文中心数据可用之后，再将请求发送到 Adobe Target。这可能会增加加载时间。在创作时，“准确定位”始终处于启用状态。</p> <p>如果选中<strong>准确定位</strong>复选框，在数据可用后，mbox会先执行<code>mboxDefine</code>，然后再执行<code>mboxUpdate</code>，从而生成Ajax请求。</p> <p>如果未选中<strong>准确定位</strong>复选框，mbox将执行<code>mboxCreate</code>，从而立即生成同步请求（在这种情况下，并非所有上下文数据都可用）。</p> <p><strong>注意：</strong>对特定组件启用或禁用“准确定位”不会影响已设置的全局设置。 您始终可以通过在组件中选择“准确定位”来覆盖全局设置。</p> </td>
   </tr>
   <tr>
    <td><strong>包含已解析的区段</strong></td>
@@ -699,11 +699,11 @@ ht-degree: 72%
   </tr>
   <tr>
    <td><strong>上下文参数</strong></td>
-   <td>单击 <strong>添加字段</strong> 以配置其他上下文参数（与Target框架中可用的参数相同）。 将应用添加到组件的上下文参数 <i>仅限</i> 添加到组件，而不是添加到其他组件，这与将上下文参数直接添加到框架的情况相同。</td>
+   <td>单击<strong>添加字段</strong>可配置其他上下文参数（与Target框架中可用的参数相同）。 添加到该组件的上下文参数仅将<i>应用</i>到该组件，而不应用到其他组件，这与将上下文参数直接添加到框架的情况相同。</td>
   </tr>
   <tr>
    <td><strong>静态参数</strong></td>
-   <td>单击 <strong>添加字段</strong> 以配置其他静态参数（与Target框架中可用的参数相同）。 将应用添加到组件的静态参数 <i>仅限</i> 添加到组件，而不是添加到其他组件，这与将静态参数直接添加到框架的情况相同。 静态参数不是来自于上下文（内容中心的客户端上下文）。</td>
+   <td>单击<strong>添加字段</strong>可配置其他静态参数（与Target框架中可用的参数相同）。 添加到该组件的静态参数仅将<i>应用</i>到该组件，而不应用到其他组件，这与将静态参数直接添加到框架的情况相同。 静态参数不是来自于上下文（内容中心的客户端上下文）。</td>
   </tr>
  </tbody>
 </table>
@@ -726,14 +726,14 @@ ht-degree: 72%
    <td><strong>客户端选项 — 策略</strong></td>
    <td><p>从以下选项中进行选择：</p>
     <ul>
-     <li><strong>第一</strong>：在营销活动中排序的列表中排名最前的体验。</li>
-     <li><strong>Random</strong>：使用任何体验。</li>
-     <li><strong>Clickstream分数</strong>：使用在客户端上下文中跟踪的标记和相关标记点击。 比较Teaser页面上定义的标记的点击率。</li>
+     <li><strong>前</strong>：在营销活动中排序的列表中排名最前的体验。</li>
+     <li><strong>Random</strong>：已使用任何体验。</li>
+     <li><strong>点击流得分</strong>：使用在客户端上下文中跟踪的标记和相关标记点击。 比较Teaser页面上定义的标记的点击率。</li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-如果要将 AEM 与 Adobe Campaign 集成，请选择 **Adobe Campaign** 作为引擎。请参阅 [将AEM与Adobe Campaign集成](/help/sites-administering/campaign.md) 以了解更多信息。
+如果要将 AEM 与 Adobe Campaign 集成，请选择 **Adobe Campaign** 作为引擎。有关详细信息，请参阅[将AEM与Adobe Campaign集成](/help/sites-administering/campaign.md)。
 
-如果要使用 ContextHub 进行定位，请选择 **ContextHub** 作为引擎。请参阅 [正在配置ContextHub。](/help/sites-developing/ch-configuring.md)
+如果要使用 ContextHub 进行定位，请选择 **ContextHub** 作为引擎。请参阅[配置ContextHub。](/help/sites-developing/ch-configuring.md)

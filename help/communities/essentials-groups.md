@@ -20,7 +20,7 @@ ht-degree: 1%
 
 社区组功能允许子社区由发布和创作环境中的授权用户在社区站点中动态创建。
 
-截止社区 [功能包1](deploy-communities.md#latestfeaturepack)时，组可以嵌套在其他组内。
+自Communities [功能包1](deploy-communities.md#latestfeaturepack)起，组可以嵌套在其他组内。
 
 ## 适用于客户端的Essentials {#essentials-for-client-side}
 
@@ -46,7 +46,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>属性</strong></td>
-   <td>请参阅 <a href="creating-groups.md">社区组</a></td>
+   <td>查看<a href="creating-groups.md">社区组</a></td>
   </tr>
  </tbody>
 </table>
@@ -86,15 +86,15 @@ ht-degree: 1%
 
 ### 组功能 {#groups-function}
 
-社区站点结构包括 [“组”功能](functions.md#groups-function) 支持创建新的 `community groups` 发布和创作环境。 创建的社区组包括 `community groups member list` 列出组成员的组件。
+包含[组函数](functions.md#groups-function)的社区站点结构支持从发布和创作环境创建新`community groups`。 创建的社区组包含列出了组成员的`community groups member list`组件。
 
-一个或多个 [社区组模板](tools-groups.md)提供了社区组页面设计，可以为“组”功能进行配置。 将函数添加到时为true [社区站点模板](sites.md) 或嵌套在社区组模板内。
+可以为“组”功能配置一个或多个[社区组模板](tools-groups.md)，这些模板提供社区组页面的设计。 将函数添加到[社区站点模板](sites.md)或嵌套在社区组模板中时，会出现这种情况。
 
-可以选择多个社区组模板。 即，在为社区站点创建社区组时向授权用户呈现的设计选择。 请参阅以下部分 [社区组](creating-groups.md) 供作者使用。
+可以选择多个社区组模板。 即，在为社区站点创建社区组时向授权用户呈现的设计选择。 请参阅有关作者的[社区组](creating-groups.md)的部分。
 
 ### 嵌套组 {#nested-groups}
 
-截止社区 [FP1](deploy-communities.md#latestfeaturepack)，组模板中可以包含组函数，这样可以嵌套组（子社区）。
+从社区[FP1](deploy-communities.md#latestfeaturepack)开始，组功能可以包含在组模板中，从而允许嵌套的组（子社区）。
 
 当社区站点或组模板包含组功能时，可以：
 

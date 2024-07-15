@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # 在HTML5表单中创建自定义外观{#create-custom-appearances-in-html-forms}
 
-您可以将自定义构件插入到Mobile Forms。 您可以扩展现有的jQuery小组件，也可以使用外观框架开发自己的自定义小组件。 XFA引擎使用各种小组件，请参见 [自适应表单和HTML5表单的外观框架](/help/forms/using/introduction-widgets.md) 以了解详细信息。
+您可以将自定义构件插入到Mobile Forms。 您可以扩展现有的jQuery小组件，也可以使用外观框架开发自己的自定义小组件。 XFA引擎使用各种小组件，有关详细信息，请参阅自适应表单和HTML5表单的[外观框架](/help/forms/using/introduction-widgets.md)。
 
-![默认小部件和自定义小部件的示例](assets/custom-widgets.jpg)
+![默认和自定义构件的示例](assets/custom-widgets.jpg)
 
 默认小部件和自定义小部件的示例
 
@@ -29,11 +29,11 @@ ht-degree: 0%
 
 ### 创建用户档案  {#create-a-profile-nbsp}
 
-您可以创建配置文件或选择现有配置文件以添加自定义构件。 有关创建用户档案的详细信息，请参阅 [创建自定义配置文件](/help/forms/using/custom-profile.md).
+您可以创建配置文件或选择现有配置文件以添加自定义构件。 有关创建配置文件的详细信息，请参阅[创建自定义配置文件](/help/forms/using/custom-profile.md)。
 
 ### 创建构件 {#create-a-widget}
 
-HTML5提供了构件框架的一种实现方式，通过扩展这种实现方式可创建新构件。 实施是一个jQuery构件 *抽象构件* 可以扩展以编写新的构件。 只有通过扩展/覆盖以下提及的函数，才能使新构件正常工作。
+HTML5提供了构件框架的一种实现方式，通过扩展这种实现方式可创建新构件。 该实现是一个jQuery小组件&#x200B;*abstractWidget*，可以扩展它以编写新的小组件。 只有通过扩展/覆盖以下提及的函数，才能使新构件正常工作。
 
 <table>
  <tbody>
@@ -43,11 +43,11 @@ HTML5提供了构件框架的一种实现方式，通过扩展这种实现方式
   </tr>
   <tr>
    <td>渲染</td>
-   <td>渲染函数为小部件的默认HTML元素返回jQuery对象。 默认的HTML元素应为可聚焦类型。 例如， &lt;a&gt;， &lt;input&gt;、和 &lt;li&gt;. 返回的元素用作$userControl。 如果$userControl指定上述约束，则AbstractWidget类的函数将按预期工作，否则，某些常用API（集中、单击）需要更改。 </td>
+   <td>渲染函数为小部件的默认HTML元素返回jQuery对象。 默认的HTML元素应为可聚焦类型。 例如，&lt;a&gt;、&lt;input&gt;和&lt;li&gt;。 返回的元素用作$userControl。 如果$userControl指定上述约束，则AbstractWidget类的函数将按预期工作，否则，某些常用API（集中、单击）需要更改。 </td>
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>返回将HTML事件转换为XFA事件的映射。 <br /> {<br /> 模糊：XFA_EXIT_EVENT，<br /> }<br /> 此示例显示模糊是一个HTML事件，而XFA_EXIT_EVENT是相应的XFA事件。 </td>
+   <td>返回将HTML事件转换为XFA事件的映射。 <br /> {<br /> blur： XFA_EXIT_EVENT，<br /> }<br />此示例显示该blur是一个HTML事件，而XFA_EXIT_EVENT是相应的XFA事件。 </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -68,7 +68,7 @@ HTML5提供了构件框架的一种实现方式，通过扩展这种实现方式
  </tbody>
 </table>
 
-要创建自己的构件，请在上面创建的配置文件中，包含对JavaScript文件的引用，该文件包含覆盖的函数和新添加的函数。 例如， *sliderNumericFieldWidget* 是数值字段的小部件。 要在用户档案中的标题部分中使用构件，请包括以下行：
+要创建自己的小组件，请在上面创建的配置文件中，包含JavaScript文件的引用，该文件包含被覆盖的函数和新添加的函数。 例如，*sliderNumericFieldWidget*&#x200B;是数值字段的小部件。 要在用户档案中的标题部分中使用构件，请包括以下行：
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
@@ -76,7 +76,7 @@ window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 
 ### 向XFA脚本引擎注册自定义构件  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
-当自定义构件代码准备就绪时，请使用在脚本引擎中注册该构件 `registerConfig`API [Form Bridge](/help/forms/using/form-bridge-apis.md). 它将widgetConfigObject作为输入。
+当自定义构件代码准备就绪时，请使用适用于[表单Bridge](/help/forms/using/form-bridge-apis.md)的`registerConfig`API在脚本引擎中注册该构件。 它将widgetConfigObject作为输入。
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig",

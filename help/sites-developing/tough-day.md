@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## 第2天是多么艰难 {#what-is-tough-day}
 
-“Touch Day 2”是一款应用程序，可让您对AEM实例的限制进行压力测试。 它可以直接与默认测试套件一起运行，也可以根据测试需要进行配置。 你可以看 [此录制](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) 以展示应用程序。
+“Touch Day 2”是一款应用程序，可让您对AEM实例的限制进行压力测试。 它可以直接与默认测试套件一起运行，也可以根据测试需要进行配置。 您可以观看[此录制](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html)以演示应用程序。
 
 >[!CAUTION]
 >
@@ -26,13 +26,13 @@ ht-degree: 1%
 
 ## 如何应对艰难的第2天 {#how-to-run-tough-day}
 
-从以下网站下载最新版本的“Tough Day 2（棘手第2天）”： [Adobe存储库](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/). 下载应用程序后，您可以通过提供 `host` 参数。 在以下示例中，AEM实例在本地运行，因此 `localhost` 值中使用了：
+从[Adobe存储库](https://repo1.maven.org/maven2/com/adobe/qe/toughday2/)下载最新版本的“困难日2”。 下载应用程序后，您可以通过提供`host`参数来开箱即用。 在以下示例中，AEM实例在本地运行，因此使用了`localhost`值：
 
 ```xml
 java -jar toughday2.jar --host=localhost
 ```
 
-添加参数后运行的默认套件名为 `toughday`. 它包含以下用例：
+添加参数后运行的默认套件名为`toughday`。 它包含以下用例：
 
 * 为其创建页面和活动副本（包括转出）
 * 获取主页
@@ -42,7 +42,7 @@ java -jar toughday2.jar --host=localhost
 
 该套件包含15%的写入操作和85%的读取操作。
 
-要运行包测试，Tough Day 2将安装其默认内容包。 可以通过设置 `installsamplecontent`参数至 `false`，但请记住，您还应该更改要运行的测试的默认路径。 如果在没有参数的情况下运行jar，则“Tough Day 2”（严格第2天）将显示 [帮助信息](/help/sites-developing/tough-day.md#getting-help).
+要运行包测试，Tough Day 2将安装其默认内容包。 通过将`installsamplecontent`参数设置为`false`可以避免这种情况，但请记住，您还应更改要运行的测试的默认路径。 如果jar在没有参数的情况下运行，“第2天”会显示[帮助信息](/help/sites-developing/tough-day.md#getting-help)。
 
 通常，您可以按照以下模式使用该应用程序：
 
@@ -93,22 +93,22 @@ java -jar toughday2.jar --help_full
    <td> </td>
   </tr>
   <tr>
-   <td> —help —runmode/publishmode type=&lt;mode&gt;</td>
+   <td> —help —runmode/publishmode type=&lt;模式&gt;</td>
    <td>列出有关指定的运行或发布模式的信息。</td>
    <td><p>Java™ -jar toughday2.jar —help —runmode type=constantload</p> <p>Java™ -jar toughday2.jar —help —publishmode type=intervals</p> </td>
   </tr>
   <tr>
-   <td>—help —suite=&lt;suitename&gt;</td>
+   <td>—help —suite=&lt;SuiteName&gt;</td>
    <td>列出给定包的所有测试及其各自的可配置属性。</td>
    <td><br /> Java™ -jar toughday2.jar —help —suite=get_tests</td>
   </tr>
   <tr>
-   <td> —help —tag=&lt;tag&gt;</td>
+   <td> —help —tag=&lt;Tag&gt;</td>
    <td><br /> 列出具有指定标记的所有项目。</td>
    <td>Java™ -jar toughday2.jar —help —tag=publish</td>
   </tr>
   <tr>
-   <td> — 帮助 &lt;testclass publisherclass=""&gt;</td>
+   <td>—help &lt;测试类/发布器类&gt;</td>
    <td><br /> 列出给定测试或发布者的所有可配置属性。</td>
    <td><p>Java™ -jar toughday2.jar —help UploadPDFTest</p> <p>Java™ -jar toughday2.jar — 帮助CSVPublisher</p> </td>
   </tr>
@@ -125,7 +125,7 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 
 您可以在下面的列表中找到相关参数：
 
-| **参数** | **描述** | **默认值** | **可能值** |
+| **参数** | **描述** | **默认值** | **可能的值** |
 |---|---|---|---|
 | `--installsamplecontent=<Val>` | 安装或跳过默认的“第2天困难”内容包。 | true | true或false |
 | `--protocol=<Val>` | 用于主机的协议。 | http | http或https |
@@ -133,7 +133,7 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 | `--port=<Val>` | 主机的端口。 | 4502 |  |
 | `--user=<Val>` | 实例的用户名。 | 管理员 |  |
 | `--password=<Val>` | 给定用户的密码。 | 管理员 |  |
-| `--duration=<Val>` | 测试的持续时间。 可表达为 **s**&#x200B;秒， **m**&#x200B;因纽特， **h**&#x200B;我们的，以及 **d**&#x200B;是的。 | 1d |  |
+| `--duration=<Val>` | 测试的持续时间。 可以用&#x200B;**秒**&#x200B;秒、**分钟**&#x200B;分钟、**小时**&#x200B;天和&#x200B;**天**&#x200B;天表示。 | 1d |  |
 | `--timeout=<Val>` | 测试将运行多长时间，才会被中断并标记为失败。 以秒为单位表示。 | 180 |  |
 | `--suite=<Val>` | 该值可以是预定义测试包中的一个或列表（以逗号分隔）。 | toughday |  |
 | `--configfile=<Val>` | 目标yaml配置文件。 |  |  |
@@ -143,13 +143,13 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 
 ## 自定义 {#customizing}
 
-可通过两种方式实现自定义：命令行参数或yaml配置文件。 **配置文件用于大型自定义套件，它们会覆盖Tough Day 2默认参数。 命令行参数会覆盖配置文件和缺省参数。**
+可通过两种方式实现自定义：命令行参数或yaml配置文件。 **配置文件用于大型自定义套件，它们会覆盖“第2天”默认参数。 命令行参数会覆盖配置文件和默认参数。**
 
 保存测试配置的唯一方法是以yaml格式复制它。
 
 ### 添加新测试 {#adding-a-new-test}
 
-如果您不想使用默认 `toughday` 套件，您可以通过使用 `add` 参数。 以下示例显示如何添加 `CreateAssetTreeTest` 使用命令行参数或yaml配置文件进行测试。
+如果您不想使用默认`toughday`套件，可以使用`add`参数添加您选择的测试。 以下示例说明如何使用命令行参数或yaml配置文件添加`CreateAssetTreeTest`测试。
 
 通过使用命令行参数：
 
@@ -192,7 +192,7 @@ tests:
 
 ### 更改测试属性 {#changing-the-test-properties}
 
-如果需要更改一个或多个测试属性，可将该属性添加到命令行或yaml配置文件中。 要查看所有可用的测试属性，请添加 `--help <TestClass/PublisherClass>` 命令行参数，例如：
+如果需要更改一个或多个测试属性，可将该属性添加到命令行或yaml配置文件中。 要查看所有可用的测试属性，请将`--help <TestClass/PublisherClass>`参数添加到命令行中，例如：
 
 ```xml
 java -jar toughday2.jar --help CreatePageTreeTest
@@ -200,7 +200,7 @@ java -jar toughday2.jar --help CreatePageTreeTest
 
 请记住， yaml配置文件将覆盖Touch Day 2默认参数，而命令行参数将覆盖配置文件和默认值。
 
-以下示例显示如何更改 `template` 的属性 `CreatePageTreeTest` 使用命令行参数或yaml配置文件进行测试。
+以下示例显示如何使用命令行参数或yaml配置文件更改`CreatePageTreeTest`测试的`template`属性。
 
 通过使用命令行参数：
 
@@ -223,7 +223,7 @@ tests:
 
 以下示例显示如何向预定义套件添加测试，以及如何重新配置和从预定义套件中排除现有测试。
 
-您可以使用向预定义套件添加新测试 `add` 参数和指定目标预定义套件。
+您可以使用`add`参数并指定目标预定义套件向预定义套件添加新测试。
 
 通过使用命令行参数：
 
@@ -241,9 +241,9 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-还可以使用重新配置给定套件中的现有测试。 `config`* *参数。 还应指定测试套件名称和实际名称（而不是测试类名称）。 您可以在以下位置找到测试名称 `name` Test类的属性。 有关如何查找测试属性的详细信息，请参阅 [更改测试属性](/help/sites-developing/tough-day.md#changing-the-test-properties) 部分。
+还可以使用`config`* *参数重新配置给定套件中的现有测试。 还应指定测试套件名称和实际名称（而不是测试类名称）。 您可以在测试类的`name`属性中找到测试名称。 有关如何查找测试属性的详细信息，请阅读[更改测试属性](/help/sites-developing/tough-day.md#changing-the-test-properties)部分。
 
-在以下示例中，的默认资产标题 `CreatePageTreeTest` (已命名 `UploadAsset`)被更改为“NewAsset”。
+在下面的示例中，`CreatePageTreeTest`（名为`UploadAsset`）的默认资产标题被更改为“NewAsset”。
 
 通过使用命令行参数：
 
@@ -263,7 +263,7 @@ tests:
       title : NewAsset
 ```
 
-此外，您还可以通过使用，将测试从默认配置中删除预定义套件或发布者的测试 `exclude` 参数。 还应指定测试套件名称和实际名称（不是测试C） `lass` 名称)。 您可以在以下位置找到测试名称 `name` 测试类的属性。 在以下示例中， `CreatePageTreeTest` (已命名 `UploadAsset`)从toughday套件中删除测试。
+此外，您还可以使用`exclude`参数从默认配置中删除预定义套件或发布者的测试。 同时指定测试套件名称和实际名称（不是测试C `lass`名称）。 您可以在测试类的`name`属性中找到测试名称。 在以下示例中，从toughday套件中删除了`CreatePageTreeTest` （名为`UploadAsset`）测试。
 
 通过使用命令行参数：
 
@@ -283,13 +283,13 @@ tests:
 
 ### 运行模式 {#run-modes}
 
-“第2天非常艰难”可以使用以下模式之一运行： **普通** 和 **恒定载荷**.
+“困难第2天”可以使用以下模式之一运行： **正常**&#x200B;和&#x200B;**常量负载**。
 
-此 **普通** 运行模式有两个参数：
+**正常**&#x200B;运行模式有两个参数：
 
 * `concurrency` - concurrency表示“第2天”将为测试执行创建的线程数。 在这些线程上，将执行测试，直到持续时间耗尽或没有其他要执行的测试为止。
 
-* `waittime`  — 同一线程上两次连续测试执行之间的等待时间。 该值必须以毫秒为单位表示。
+* `waittime` — 同一线程上两次连续测试执行之间的等待时间。 该值必须以毫秒为单位表示。
 
 以下示例说明如何使用命令行添加参数：
 
@@ -306,13 +306,13 @@ runmode:
   concurrency : 200
 ```
 
-此 **恒定载荷** 运行模式与正常运行模式不同，它生成的是固定数量的已启动测试执行，而不是固定数量的线程。 可以使用同名的运行模式参数来设置载荷。
+**常量负载**&#x200B;运行模式不同于正常运行模式，它生成了常量已启动测试执行次数，而不是常量线程数。 可以使用同名的运行模式参数来设置载荷。
 
 ### 测试选择 {#test-selection}
 
-两种运行模式的测试选择过程相同，如下所示：所有测试都有 `weight` 属性，确定线程中执行的可能性。 例如，如果您有两个测试，一个权重为5，另一个权重为10，则后者比前者执行的可能性高两倍。
+两种运行模式的测试选择过程相同，如下所示：所有测试都具有`weight`属性，该属性确定线程中执行的可能性。 例如，如果您有两个测试，一个权重为5，另一个权重为10，则后者比前者执行的可能性高两倍。
 
-此外，测试可以具有 `count` 属性，用于将执行次数限制为给定数字。 通过此数字后，将不会再执行测试。 所有已运行的测试实例都将按配置完成运行。 以下示例说明如何在命令行或使用yaml配置文件添加这些参数。
+此外，测试可以具有`count`属性，该属性将执行数量限制为给定数字。 通过此数字后，将不会再执行测试。 所有已运行的测试实例都将按配置完成运行。 以下示例说明如何在命令行或使用yaml配置文件添加这些参数。
 
 ```xml
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20
@@ -333,7 +333,7 @@ java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --ad
 
 >[!NOTE]
 >
->由于并行执行，测试运行的实际数量不会完全等于 `count` 参数。 期望偏差与正在运行的线程数成比例(由 `concurrency parameter`)。
+>由于并行执行，实际测试运行数不会与`count`参数中配置的数量完全相同。 期望偏差与正在运行的线程数成比例（由`concurrency parameter`控制）。
 
 ### 试运行 {#dry-run}
 
@@ -349,36 +349,36 @@ java -jar toughday2.jar --host=localhost --suite=toughday --add CreatePageTreeTe
 
 ### 测试指标 {#test-metrics}
 
-“第2天非常艰难”当前报告了9个您可以评估的测试指标。 包含的量度 **&#42;** 符号仅在成功运行后报告：
+“第2天非常艰难”当前报告了9个您可以评估的测试指标。 只有在成功运行后才会报告具有&#x200B;**&#42;**&#x200B;符号的量度：
 
 | **名称** | **描述** |
 |---|---|
 | 时间戳 | 上次完成的测试运行的时间戳。 |
 | 已通过 | 成功运行的次数。 |
 | 失败 | 失败的运行数。 |
-| 最小值&#42; | 测试执行的最短持续时间。 |
-| Max&#42; | 测试执行的最长持续时间。 |
+| 最小&#42; | 测试执行的最短持续时间。 |
+| 最大&#42; | 测试执行的最长持续时间。 |
 | 中间值&#42; | 计算的所有测试执行的中位持续时间。 |
-| Average&#42; | 计算的所有测试执行的平均持续时间。 |
-| 标准开发&#42; | 标准偏差。 |
+| 平均&#42; | 计算的所有测试执行的平均持续时间。 |
+| StdDev&#42; | 标准偏差。 |
 | 90p&#42; | 百分之90。 |
 | 99p&#42; | 99%。 |
-| 99.9便士&#42; | 99.9%。 |
+| 99.9p&#42; | 99.9%。 |
 | 实际吞吐量&#42; | 运行次数除以经过的执行时间。 |
 
-这些量度是在发布者的帮助下编写的，发布者可以使用 `add` 参数（与添加测试类似）。 目前，有两个选项：
+这些量度是在发布者的帮助下编写的，发布者可以使用`add`参数添加（与添加测试类似）。 目前，有两个选项：
 
-* **CSVPublisher**  — 输出为CSV文件。
-* **控制台发布者**  — 控制台中将显示输出。
+* **CSVPublisher** — 输出为CSV文件。
+* **ConsolePublisher** — 控制台中显示输出。
 
 默认情况下，这两个发布者均处于启用状态。
 
 此外，还有两种报告量度的模式：
 
-* 此 **简单** 发布模式 — 报告从执行开始到发布时的结果。
-* 此 **间隔** 发布模式 — 报告给定时间范围内的结果。 您可以使用以下方式设置时间范围 **间隔** 发布模式参数。
+* **简单**&#x200B;发布模式 — 报告从执行开始到发布时的结果。
+* **间隔**&#x200B;发布模式 — 报告给定时间范围内的结果。 可以使用&#x200B;**interval**&#x200B;发布模式参数设置时间范围。
 
-以下示例说明如何配置 `intervals` 命令行中的参数或使用yaml配置文件中的参数。
+以下示例说明如何在命令行或使用yaml配置文件配置`intervals`参数。
 
 通过使用命令行参数：
 
@@ -403,7 +403,7 @@ publishmode:
 * **toughday.log**：包含与应用程序状态、调试信息和全局消息相关的消息。
 * **toughday_&lt;testname>.log**：与指定测试相关的消息。
 
-不会覆盖日志，后续运行会将消息附加到现有日志。 日志包含多个级别，有关详细信息，请参阅 [loglevel参数。](#global-parameters).
+不会覆盖日志，后续运行会将消息附加到现有日志。 日志具有多个级别，有关详细信息，请参阅[loglevel参数。](#global-parameters)。
 
 <!--
 #### Example Usage {#example-usage}

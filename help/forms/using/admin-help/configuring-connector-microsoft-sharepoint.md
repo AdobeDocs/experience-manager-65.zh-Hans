@@ -18,16 +18,16 @@ ht-degree: 1%
 
 # 为Microsoft SharePoint配置连接器 {#configuring-connector-for-microsoft-sharepoint}
 
-Microsoft SharePoint的连接器支持在AEM表单与Microsoft SharePoint之间进行通信。 有关其他背景信息，请参阅中的“Connectors for ECM” [服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+Microsoft SharePoint的连接器支持在AEM表单与Microsoft SharePoint之间进行通信。 有关其他背景信息，请参阅[服务参考](https://www.adobe.com/go/learn_aemforms_services_63)中的“Connectors for ECM”。
 
 1. 在管理控制台中，单击服务>Microsoft SharePoint的连接器。
 1. 为您的SharePoint服务器指定以下设置：
 
-   **SharePoint服务器主机名：** SharePoint服务器上Web应用程序的主机名端口号，格式为 `[hostname]:'port'`.
+   **SharePoint服务器主机名：** SharePoint服务器上Web应用程序的主机名端口号，格式为`[hostname]:'port'`。
 
-   **用户名：** 用于连接到SharePoint服务器的用户帐户。
+   **用户名：**&#x200B;用于连接到SharePoint服务器的用户帐户。
 
-   **密码：** 用于连接到SharePoint服务器的用户帐户的密码
+   **密码：**&#x200B;用于连接到SharePoint服务器的用户帐户的密码
 
    **域名：** SharePoint服务器所在的域。
 
@@ -35,10 +35,10 @@ Microsoft SharePoint的连接器支持在AEM表单与Microsoft SharePoint之间�
 
 ## Microsoft SharePoint配置服务 {#microsoft-sharepoint-configuration-service}
 
-Microsoft SharePoint配置服务 `(MSSharePointConfigService)` 允许您为具有模拟权限的AEM表单用户指定凭据。 有关模拟权限的信息，请参阅 [为Microsoft SharePoint配置连接器](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). 按照以下步骤指定设置 `MSSharePointConfigService`：
+Microsoft SharePoint配置服务`(MSSharePointConfigService)`允许您为具有模拟权限的AEM表单用户指定凭据。 有关模拟权限的信息，请参阅[配置Microsoft SharePoint的连接器](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html)。 按照以下步骤指定`MSSharePointConfigService`的设置：
 
 1. 在管理控制台中，单击服务>应用程序和服务>服务管理。
-1. 导航服务列表，然后单击 `MSSharePointConfigService`.
+1. 导航服务列表并单击`MSSharePointConfigService`。
 1. 在“配置”页上指定以下设置：
 
    * 具有模拟权限的用户的用户名

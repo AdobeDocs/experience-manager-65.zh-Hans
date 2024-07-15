@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Apache Sling Discovery功能提供了一个Java API，使您能够创建使用JobManager作业和作业使用者服务。
 
-有关创建卸载拓扑和配置主题消耗的信息，请参阅 [卸载作业](/help/sites-deploying/offloading.md).
+有关创建卸载拓扑和配置主题消耗的信息，请参阅[卸载作业](/help/sites-deploying/offloading.md)。
 
 ## 处理作业负载 {#handling-job-payloads}
 
@@ -29,7 +29,7 @@ Apache Sling Discovery功能提供了一个Java API，使您能够创建使用Jo
 * `offloading.job.input.payload`：以逗号分隔的内容路径列表。 内容将复制到执行作业的实例。
 * `offloading.job.output.payload`：以逗号分隔的内容路径列表。 作业执行完成后，作业有效负载将复制到创建该作业的实例上的这些路径。
 
-使用 `OffloadingJobProperties` 枚举以引用属性名称：
+使用`OffloadingJobProperties`枚举引用属性名称：
 
 * `OffloadingJobProperties.INPUT_PAYLOAD.propertyName()`
 * `OffloadingJobProperties.OUTPUT_PAYLOAD.propetyName()`
@@ -42,7 +42,7 @@ Apache Sling Discovery功能提供了一个Java API，使您能够创建使用Jo
 
 * 主题：作业主题。
 * 名称： （可选）
-* 属性映射： A `Map<String, Object>` 包含任意数量属性的对象，如输入有效负荷路径和输出有效负荷路径。 此Map对象可用于执行作业的JobConsumer对象。
+* 属性映射：包含任意数量属性的`Map<String, Object>`对象，例如输入有效负载路径和输出有效负载路径。 此Map对象可用于执行作业的JobConsumer对象。
 
 以下示例服务为给定主题和输入有效负载路径创建作业。
 
@@ -92,7 +92,7 @@ public class JobGeneratorImpl implements JobGenerator  {
 }
 ```
 
-当对调用JobGeneratorImpl.createJob时，日志包含以下消息 `com/adobe/example/offloading` 主题和 `/content/geometrixx/de/services` 有效负载：
+当为`com/adobe/example/offloading`主题和`/content/geometrixx/de/services`有效负载调用JobGeneratorImpl.createJob时，日志包含以下消息：
 
 ```shell
 10.06.2013 15:43:33.868 *INFO* [JobHandler: /etc/workflow/instances/2013-06-10/model_1554418768647484:/content/geometrixx/en/company] com.adobe.example.offloading.JobGeneratorImpl Received request to make job for topic com/adobe/example/offloading and payload /content/geometrixx/de/services
@@ -100,9 +100,9 @@ public class JobGeneratorImpl implements JobGenerator  {
 
 ## 开发工作消费者 {#developing-a-job-consumer}
 
-要使用作业，请开发一个实施 `org.apache.sling.event.jobs.consumer.JobConsumer` 界面。 使用要使用的主题进行标识 `JobConsumer.PROPERTY_TOPICS` 属性。
+要使用作业，请开发实现`org.apache.sling.event.jobs.consumer.JobConsumer`接口的OSGi服务。 使用`JobConsumer.PROPERTY_TOPICS`属性识别要使用的主题。
 
-以下示例JobConsumer实施向 `com/adobe/example/offloading` 主题。 使用者只需将有效负荷内容节点的Consumed属性设置为true即可。
+以下示例JobConsumer实现向`com/adobe/example/offloading`主题注册。 使用者只需将有效负荷内容节点的Consumed属性设置为true即可。
 
 ```java
 package com.adobe.example.offloading;

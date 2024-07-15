@@ -38,7 +38,7 @@ ht-degree: 40%
 * [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
 * [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [阿尔特朗](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
+* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft (AEM中预安装了Microsoft Translator)
 
 >[!NOTE]
@@ -70,7 +70,7 @@ ht-degree: 40%
 
 配置翻译集成框架后，可[将它与使用它的页面关联](/help/sites-administering/tc-prep.md)。
 
-**注意：** 有关AEM中内容翻译功能的概述，请参阅 [翻译多语言站点的内容](/help/sites-administering/translation.md).
+**注意：**&#x200B;有关AEM中内容翻译功能的概述，请参阅[翻译多语言站点的内容](/help/sites-administering/translation.md)。
 
 只有一个框架配置可控制如何翻译页面内容、社区内容和资产。
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -112,11 +112,11 @@ ht-degree: 40%
   </tr>
   <tr>
    <td>翻译页面资源</td>
-   <td><p>选择如何翻译从文件系统添加到组件或从资源引用的资源：</p>
+   <td><p>选择如何翻译从文件系统添加到组件或从Assets引用的资源：</p>
     <ul>
      <li>不翻译：不翻译页面资产。</li>
-     <li>使用站点翻译工作流：根据站点选项卡上的配置属性处理资产。</li>
-     <li>使用资产翻译工作流：根据在资产选项卡上配置的属性处理资产。</li>
+     <li>使用站点翻译工作流：根据在站点选项卡上配置的属性处理Assets。</li>
+     <li>使用Assets翻译工作流：根据Assets选项卡上的属性配置处理Assets。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -128,13 +128,13 @@ ht-degree: 40%
 
 ### 社区配置属性 {#communities-configuration-properties}
 
-社区属性控制如何执行用户生成的内容的翻译。 用户生成的内容的翻译始终使用机器翻译。 有关更多信息，请参阅 [翻译用户生成的内容](/help/communities/translate-ugc.md).
+社区属性控制如何执行用户生成的内容的翻译。 用户生成的内容的翻译始终使用机器翻译。 有关详细信息，请参阅[翻译用户生成的内容](/help/communities/translate-ugc.md)。
 
 | 属性 | 描述 |
 |---|---|
 | 翻译提供商 | 选择要执行翻译的翻译提供商。 为其创建云配置的提供商将显示在列表中。 |
 | 内容类别 | 描述所翻译内容的类别。 在翻译内容时，类别可能会影响术语和措辞的选择。 |
-| 选择要用作全局共享存储的区域设置 | （可选）通过选择存储UGC的区域设置，所有语言副本中的帖子将显示在一个全局对话中。 按照惯例，选择 [基本语言](/help/communities/sites-console.md#translation) 用于网站。 选择无公用存储将禁用全局翻译。 默认情况下，全局翻译处于禁用状态。 |
+| 选择要用作全局共享存储的区域设置 | （可选）通过选择存储UGC的区域设置，所有语言副本中的帖子将显示在一个全局对话中。 按照惯例，为网站选择[基本语言](/help/communities/sites-console.md#translation)的区域设置。 选择无公用存储将禁用全局翻译。 默认情况下，全局翻译处于禁用状态。 |
 
 ### 资源配置属性 {#assets-configuration-properties}
 
@@ -152,7 +152,7 @@ ht-degree: 40%
     <ul>
      <li>机器翻译：翻译提供商使用机器翻译立即执行翻译。</li>
      <li>人工翻译：自动将内容发送到翻译提供商，以供人工翻译。 </li>
-     <li>不翻译：不发送资源以供翻译。</li>
+     <li>不翻译：不发送Assets以供翻译。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -189,7 +189,7 @@ ht-degree: 40%
    * 如果配置已经存在，请单击“显示配置”，然后单击“可用配置”旁边显示的+链接。
 
 1. 键入配置的名称，然后单击“创建”。
-1. 在“站点”、“社区”和“资产”选项卡上配置属性，然后单击“确定”。
+1. 在站点、社区和Assets选项卡上配置属性，然后单击确定。
 
 ## 配置页面以供翻译 {#configuring-pages-for-translation}
 
@@ -204,7 +204,7 @@ ht-degree: 40%
 
 必要时，可在后代页面上取代该关联。例如，网站的内容主要与服装有关。 但某个分支的页面介绍公司情况。站点的根页面与指定使用“服装”类别进行机器翻译的翻译集成框架关联。 描述公司情况的分支使用框架，该框架使用“常规”类别执行机器翻译。
 
-此外，对于任何社区 [SCF组件](/help/communities/scf.md) 在页面上，用户生成的内容(UGC)将包括用户翻译内容的功能。 有关更多信息，请参阅 [用户生成的内容的翻译](/help/communities/translate-ugc.md).
+此外，对于页面上的任何社区[SCF组件](/help/communities/scf.md)，用户生成的内容(UGC)将包括用户翻译内容的功能。 有关详细信息，请参阅[用户生成的内容的翻译](/help/communities/translate-ugc.md)。
 
 ### 将页面与翻译提供商关联 {#associating-a-page-with-a-translation-provider}
 

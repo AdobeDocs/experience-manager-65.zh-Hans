@@ -22,12 +22,12 @@ ht-degree: 1%
 
 DocConverter服务可以将PDF文档转换为PDA/A文档。 您可以使用此服务完成这些任务：
 
-* 将PDF文档转换为PDF/A文档。 (请参阅 [将文档转换为PDF/A文档](pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
-* 确定PDF文档是否为PDF/A文档。 (请参阅 [以编程方式确定PDF/A合规性](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
+* 将PDF文档转换为PDF/A文档。 (请参阅[将文档转换为PDF/A文档](pdf-a-documents.md#converting-documents-to-pdf-a-documents)。)
+* 确定PDF文档是否为PDF/A文档。 (请参阅[以编程方式确定PDF/合规性](pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)。)
 
 >[!NOTE]
 >
->有关DocConverter服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关DocConverter服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 将文档转换为PDF/A文档 {#converting-documents-to-pdf-a-documents}
 
@@ -39,7 +39,7 @@ PDF/A-1规范包含两个一致性级别，即A和B。两者之间的主要区�
 
 >[!NOTE]
 >
->有关DocConverter服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关DocConverter服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -64,13 +64,13 @@ PDF/A-1规范包含两个一致性级别，即A和B。两者之间的主要区�
 * adobe-utilities.jar(如果在JBoss Application Server上部署了AEM Forms，则此为必填字段)
 * jbossall-client.jar(如果将AEM Forms部署在JBoss Application Server上，则此为必需字段)
 
-有关这些JAR文件位置的信息，请参见 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+有关这些JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建DocConvert客户端**
 
-必须先创建DocConverter客户端，然后才能以编程方式执行DocConverter操作。 如果您使用的是Java API，请创建 `DocConverterServiceClient` 对象。 如果您使用DocConverter Web服务API，请创建 `DocConverterServiceService` 对象。
+必须先创建DocConverter客户端，然后才能以编程方式执行DocConverter操作。 如果您使用的是Java API，请创建一个`DocConverterServiceClient`对象。 如果您使用的是DocConverter Web服务API，请创建一个`DocConverterServiceService`对象。
 
-**引用要转换为PDF/PDF的文档**
+**引用要转换为PDF/A文档的PDF文档**
 
 检索PDF文档以转换为PDF/A文档。 如果尝试将PDF文档(如Acrobat表单)转换为PDF/A文档，则会导致出现异常。
 
@@ -108,33 +108,33 @@ PDF/A-1规范包含两个一致性级别，即A和B。两者之间的主要区�
 
 1. 创建DocConvert客户端
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `DocConverterServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`DocConverterServiceClient`对象并传递`ServiceClientFactory`对象。
 
 1. 引用要转换为PDF/PDF的文档
 
-   * 创建 `java.io.FileInputStream` 表示要转换的PDF文档的对象，转换方法是使用其构造函数并传递一个指定PDF文件位置的字符串值。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 创建一个`java.io.FileInputStream`对象，该对象表示要使用其构造函数转换的PDF文档，并传递一个指定PDF文件位置的字符串值。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 设置跟踪信息
 
-   * 创建 `PDFAConversionOptionSpec` 对象。
-   * 通过调用 `PDFAConversionOptionSpec` 对象的 `setLogLevel` 方法，并传递一个指定跟踪级别的字符串值。 例如，传递值 `FINE`. 有关不同值的信息，请参见 `setLogLevel` 中的方法 [AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * 使用构造函数创建`PDFAConversionOptionSpec`对象。
+   * 通过调用`PDFAConversionOptionSpec`对象的`setLogLevel`方法并传递指定跟踪级别的字符串值来设置信息跟踪级别。 例如，传递值`FINE`。 有关不同值的信息，请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)中的`setLogLevel`方法。
 
 1. 转换文档
 
-   通过调用，将PDF文档转换为PDF/A文档 `DocConverterServiceClient` 对象的 `toPDFA` 方法并传递以下值：
+   通过调用`DocConverterServiceClient`对象的`toPDFA`方法并传递以下值，将PDF文档转换为PDF/A文档：
 
-   * 此 `com.adobe.idp.Document` 包含要转换的PDF文档的对象
-   * 此 `PDFAConversionOptionSpec` 指定跟踪信息的对象
+   * 包含要转换的PDF文档的`com.adobe.idp.Document`对象
+   * 指定跟踪信息的`PDFAConversionOptionSpec`对象
 
-   此 `toPDFA` 方法返回 `PDFAConversionResult` 包含PDF/A文档的对象。
+   `toPDFA`方法返回包含PDF/A文档的`PDFAConversionResult`对象。
 
 1. 保存PDF/文档
 
-   * 通过调用PDF/文档 `PDFAConversionResult` 对象的 `getPDFA` 方法。 此方法会返回 `com.adobe.idp.Document` 表示PDF/A文档的对象。
-   * 创建 `java.io.File` 表示PDF/A文件的对象。 确保文件扩展名为.pdf。
-   * 通过调用PDF/A数据填充文件 `com.adobe.idp.Document` 对象的 `copyToFile` 方法和传递 `java.io.File` 对象。
+   * 通过调用`PDFAConversionResult`对象的`getPDFA`方法检索PDF/文档。 此方法返回表示PDF/A文档的`com.adobe.idp.Document`对象。
+   * 创建表示PDF/A文件的`java.io.File`对象。 确保文件扩展名为.pdf。
+   * 通过调用`com.adobe.idp.Document`对象的`copyToFile`方法并传递`java.io.File`对象，使用PDF/A数据填充文件。
 
 **另请参阅**
 
@@ -157,38 +157,38 @@ PDF/A-1规范包含两个一致性级别，即A和B。两者之间的主要区�
 
 1. 创建DocConvert客户端
 
-   * 使用Microsoft .NET客户端程序集，创建 `DocConverterServiceService` 对象。
-   * 设置 `DocConverterServiceService` 对象的 `Credentials` 具有的数据成员 `System.Net.NetworkCredential` 指定用户名和密码值的值。
+   * 使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`DocConverterServiceService`对象。
+   * 使用`System.Net.NetworkCredential`值设置`DocConverterServiceService`对象的`Credentials`数据成员，该值指定用户名和密码值。
 
 1. 引用要转换为PDF/PDF的文档
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储转换为PDF/A文档的PDF文档。
-   * 创建 `System.IO.FileStream` 对象，方法是：调用其构造函数，并传递一个字符串值，该值表示PDF文档的文件位置以及用于打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `binaryData` 属性与字节数组的内容。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储转换为PDF/A文档的PDF文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示PDF文档的文件位置以及用于打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容指定其`binaryData`属性以填充`BLOB`对象。
 
 1. 设置跟踪信息
 
-   * 创建 `PDFAConversionOptionSpec` 对象。
-   * 通过分配一个值来设置信息跟踪级别，该值将指定跟踪级别 `PDFAConversionOptionSpec` 对象的 `logLevel` 数据成员。 例如，分配值 `FINE` 至此数据成员。
+   * 使用构造函数创建`PDFAConversionOptionSpec`对象。
+   * 通过分配一个值来设置信息跟踪级别，该值指定对`PDFAConversionOptionSpec`对象的`logLevel`数据成员的跟踪级别。 例如，将值`FINE`分配给此数据成员。
 
 1. 转换文档
 
-   通过调用，将PDF文档转换为PDF/A文档 `DocConverterServiceService` 对象的 `toPDFA` 方法并传递以下值：
+   通过调用`DocConverterServiceService`对象的`toPDFA`方法并传递以下值，将PDF文档转换为PDF/A文档：
 
-   * 此 `BLOB` 包含要转换的PDF文档的对象
-   * 此 `PDFAConversionOptionSpec` 指定跟踪信息的对象
+   * 包含要转换的PDF文档的`BLOB`对象
+   * 指定跟踪信息的`PDFAConversionOptionSpec`对象
 
-   此 `toPDFA` 方法返回 `PDFAConversionResult` 包含PDF/A文档的对象。
+   `toPDFA`方法返回包含PDF/A文档的`PDFAConversionResult`对象。
 
 1. 保存PDF/文档
 
-   * 创建 `BLOB` 通过获取PDF/文档的值来存储文档/文档的对象 `PDFAConversionResult` 对象的 `PDFADocument` 数据成员。
-   * 创建一个字节数组，用于存储 `BLOB` 使用返回的对象 `PDFAConversionResult` 对象。 通过获取的值，填充字节数组 `BLOB` 对象的 `binaryData` 数据成员。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个表示PDF/文档的文件位置的字符串值。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
-   * PDF通过调用 `System.IO.BinaryWriter` 对象的 `Write` 和传递字节数组。
+   * 通过获取`PDFAConversionResult`对象的`PDFADocument`数据成员的值，创建存储PDF/文档的`BLOB`对象。
+   * 创建一个字节数组，用于存储使用`PDFAConversionResult`对象返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`binaryData`数据成员的值填充字节数组。
+   * 通过调用其构造函数并传递表示PDF/A文档的文件位置的字符串值来创建`System.IO.FileStream`对象。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
+   * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
 
@@ -200,11 +200,11 @@ PDF/A-1规范包含两个一致性级别，即A和B。两者之间的主要区�
 
 ## 以编程方式确定PDF/A合规性 {#programmatically-determining-pdf-a-compliancy}
 
-您可以使用DocConverter服务来确定PDF文档是否符合PDF/A标准。 有关PDF/文档以及如何将PDF文档转换为PDF/文档的信息，请参阅 [将文档转换为PDF/A文档](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
+您可以使用DocConverter服务来确定PDF文档是否符合PDF/A标准。 有关PDF/A文档以及如何将PDF文档转换为PDF/A文档的信息，请参阅[将文档转换为PDF/A文档](pdf-a-documents.md#converting-documents-to-pdf-a-documents)。
 
 >[!NOTE]
 >
->有关DocConverter服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关DocConverter服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -228,11 +228,11 @@ PDF/A-1规范包含两个一致性级别，即A和B。两者之间的主要区�
 * adobe-utilities.jar(如果在JBoss Application Server上部署了AEM Forms，则此为必填字段)
 * jbossall-client.jar(如果将AEM Forms部署在JBoss Application Server上，则此为必需字段)
 
-有关这些JAR文件位置的信息，请参见 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+有关这些JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建DocConvert客户端**
 
-必须先创建DocConverter客户端，然后才能以编程方式执行DocConverter操作。 如果您使用的是Java API，请创建 `DocConverterServiceClient` 对象。 如果您使用DocConverter Web服务API，请创建 `DocConverterServiceService` 对象。
+必须先创建DocConverter客户端，然后才能以编程方式执行DocConverter操作。 如果您使用的是Java API，请创建一个`DocConverterServiceClient`对象。 如果您使用的是DocConverter Web服务API，请创建一个`DocConverterServiceService`对象。
 
 **引用用于确定PDF/A合规性的PDF文档**
 
@@ -266,28 +266,28 @@ PDF/A-1规范包含两个一致性级别，即A和B。两者之间的主要区�
 
 1. 创建DocConvert客户端
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `DocConverterServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`DocConverterServiceClient`对象并传递`ServiceClientFactory`对象。
 
 1. 引用用于确定PDF/A合规性的PDF文档
 
-   * 创建 `java.io.FileInputStream` 表示要转换的PDF文档的对象，转换方法是使用其构造函数并传递一个指定PDF文件位置的字符串值。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 创建一个`java.io.FileInputStream`对象，该对象表示要使用其构造函数转换的PDF文档，并传递一个指定PDF文件位置的字符串值。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 设置运行时选项
 
-   * 创建 `PDFAValidationOptionSpec` 对象。
-   * 通过调用 `PDFAValidationOptionSpec` 对象的 `setCompliance` 方法和传递 `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
-   * 通过调用 `PDFAValidationOptionSpec` 对象的 `setLogLevel` 方法，并传递一个指定跟踪级别的字符串值。 例如，传递值 `FINE`. 有关不同值的信息，请参见 `setLogLevel` 中的方法 [AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * 使用构造函数创建`PDFAValidationOptionSpec`对象。
+   * 通过调用`PDFAValidationOptionSpec`对象的`setCompliance`方法并传递`PDFAValidationOptionSpec.Compliance.PDFA_1B`来设置符合性级别。
+   * 通过调用`PDFAValidationOptionSpec`对象的`setLogLevel`方法并传递指定跟踪级别的字符串值来设置信息跟踪级别。 例如，传递值`FINE`。 有关不同值的信息，请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)中的`setLogLevel`方法。
 
 1. 检索有关PDF文档的信息
 
-   PDF通过调用 `DocConverterServiceClient` 对象的 `isPDFA` 方法并传递以下值：
+   通过调用`DocConverterServiceClient`对象的`isPDFA`方法并传递以下值来确定PDF/A合规性：
 
-   * 此 `com.adobe.idp.Document` 包含PDF文档的对象。
-   * 此 `PDFAValidationOptionSpec` 指定运行时选项的对象。
+   * 包含PDF文档的`com.adobe.idp.Document`对象。
+   * 指定运行时选项的`PDFAValidationOptionSpec`对象。
 
-   此 `isPDFA` 方法返回 `PDFAValidationResult` 包含此操作结果的对象。
+   `isPDFA`方法返回包含此操作结果的`PDFAValidationResult`对象。
 
 **另请参阅**
 
@@ -310,31 +310,31 @@ PDF/A-1规范包含两个一致性级别，即A和B。两者之间的主要区�
 
 1. 创建DocConvert客户端
 
-   * 使用Microsoft .NET客户端程序集，创建 `DocConverterServiceService` 对象。
-   * 设置 `DocConverterServiceService` 对象的 `Credentials` 具有的数据成员 `System.Net.NetworkCredential` 指定用户名和密码值的值。
+   * 使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`DocConverterServiceService`对象。
+   * 使用`System.Net.NetworkCredential`值设置`DocConverterServiceService`对象的`Credentials`数据成员，该值指定用户名和密码值。
 
 1. 引用用于确定PDF/A合规性的PDF文档
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储转换为PDF/A文档的PDF文档。
-   * 创建 `System.IO.FileStream` 对象，方法是：调用其构造函数，并传递一个字符串值，该值表示PDF文档的文件位置以及用于打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `binaryData` 属性与字节数组的内容。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储转换为PDF/A文档的PDF文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示PDF文档的文件位置以及用于打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容指定其`binaryData`属性以填充`BLOB`对象。
 
 1. 设置运行时选项
 
-   * 创建 `PDFAValidationOptionSpec` 对象。
-   * 通过分配 `PDFAValidationOptionSpec` 对象的 `compliance` 具有值的数据成员 `PDFAConversionOptionSpec_Compliance.PDFA_1B`.
-   * 通过分配 `PDFAValidationOptionSpec` 对象的 `resultLevel` 具有值的数据成员 `PDFAValidationOptionSpec_ResultLevel.DETAILED`.
+   * 使用构造函数创建`PDFAValidationOptionSpec`对象。
+   * 通过分配值为`PDFAConversionOptionSpec_Compliance.PDFA_1B`的`PDFAValidationOptionSpec`对象的`compliance`数据成员来设置合规性级别。
+   * 通过分配值为`PDFAValidationOptionSpec_ResultLevel.DETAILED`的`PDFAValidationOptionSpec`对象的`resultLevel`数据成员来设置信息跟踪级别。
 
 1. 检索有关PDF文档的信息
 
-   PDF通过调用 `DocConverterServiceService` 对象的 `isPDFA` 方法并传递以下值：
+   通过调用`DocConverterServiceService`对象的`isPDFA`方法并传递以下值来确定PDF/A合规性：
 
-   * 此 `BLOB` 包含PDF文档的对象。
-   * 此 `PDFAValidationOptionSpec` 包含运行时选项的对象。
+   * 包含PDF文档的`BLOB`对象。
+   * 包含运行时选项的`PDFAValidationOptionSpec`对象。
 
-   此 `isPDFA` 方法返回 `PDFAValidationResult` 包含此操作结果的对象。
+   `isPDFA`方法返回包含此操作结果的`PDFAValidationResult`对象。
 
 **另请参阅**
 

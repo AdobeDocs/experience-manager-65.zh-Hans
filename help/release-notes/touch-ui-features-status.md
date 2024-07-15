@@ -1,6 +1,6 @@
 ---
 title: 触屏 UI 功能状态
-description: 特定于的发行说明 [!DNL Adobe Experience Manager] 触屏优化UI。
+description: 特定于 [!DNL Adobe Experience Manager] 触屏UI的发行说明。
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
@@ -14,15 +14,15 @@ ht-degree: 15%
 
 # 触屏 UI 功能状态 {#touch-ui-feature-status}
 
-Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release-notes/deprecated-removed-features.md). Adobe不再对经典UI进行任何增强，我们鼓励用户使用触屏UI中提供的强大新功能。
+Adobe Experience Manager (AEM) 6.4及更高版本[已弃用经典UI](../release-notes/deprecated-removed-features.md)。 Adobe不再对经典UI进行任何增强，我们鼓励用户使用触屏UI中提供的强大新功能。
 
-从版本6.0开始，AEM引入了一个称为“触屏UI”（称为“触屏UI”）的新用户界面，该界面与 [!DNL Adobe Experience Cloud] 以及整个Adobe用户界面指南。 随着功能接近等同性，这已成为AEM中的标准UI，具有称为“经典UI”的旧式面向桌面的界面。
+从版本6.0开始，AEM引入了一个称为“触屏UI”（称为“触屏UI”）的新用户界面，该界面与[!DNL Adobe Experience Cloud]和整个Adobe用户界面准则保持一致。 随着功能接近等同性，这已成为AEM中的标准UI，具有称为“经典UI”的旧式面向桌面的界面。
 
 虽然触屏UI中已存在大多数功能，但仍有一些功能尚不完整，而且也有一些功能有待在将来的版本中添加。
 
 以下列表显示了AEM 6.5中实现的功能的状态。
 
-有关对升级到AEM 6.5的客户的建议，请参阅 [客户的用户界面推荐](/help/sites-deploying/ui-recommendations.md).
+有关升级到AEM 6.5的客户的建议，请参阅[客户的用户界面建议](/help/sites-deploying/ui-recommendations.md)。
 
 >[!NOTE]
 >
@@ -35,18 +35,18 @@ Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release
 ## 图例 {#legend}
 
 * **完成**：该功能在触屏UI中完全可用。
-* **大部分**：该功能主要在触屏UI中可用。
-* **缺失**：触屏UI中不存在该功能，必须使用经典UI执行此操作。
-* **已替换**：该功能已被替换为工作方式不同的新实施。
-* **已删除**：该功能在触屏优化UI中不再存在，并且不会被替换。
+* **大部分时间**：该功能主要在触屏UI中可用。
+* **缺失**：触屏优化UI中不存在该功能，必须使用经典UI执行此操作。
+* **已替换**：该功能已替换为工作方式不同的新实现。
+* **已删除**：触屏UI中不再存在该功能，不会将其替换。
 
 ## 功能状态：站点管理员 {#feature-status-sites-admin}
 
-这是经典UI站点管理员(`/siteadmin`)在触屏UI中具有和状态(`/sites.html`)。
+这是经典UI站点管理员(`/siteadmin`)的功能列表，以及触控式UI (`/sites.html`)中的状态。
 
 | 专题 | 状态 | 注释 |
 |--- |--- |--- |
-| 导航站点层次结构 | 完成 | AEM 6.4引入了 [内容树视图](/help/sites-authoring/basic-handling.md#content-tree). |
+| 导航站点层次结构 | 完成 | AEM 6.4引入了[内容树视图](/help/sites-authoring/basic-handling.md#content-tree)。 |
 | 启动工作流 | 完成 |  |
 | 创建新页面 | 完成 |  |
 | 创建新站点 | 完成 |  |
@@ -57,10 +57,10 @@ Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release
 | 搜索 | 完成 |  |
 | 复制并粘贴页面（复制） | 完成 |  |
 | 移动页面 | 完成 |  |
-| 发布页面 | 完成 |  |
-| 发布没有复制权限的页面 | 完成 |  |
+| Publish页面 | 完成 |  |
+| 没有复制权限的Publish页面 | 完成 |  |
 | 稍后发布 | 完成 |  |
-| 发布树 | 完成 |  |
+| Publish树 | 完成 |  |
 | 取消发布页面 | 完成 |  |
 | 取消发布没有复制权限的页面 | 完成 |  |
 | 稍后取消发布 | 完成 |  |
@@ -80,7 +80,7 @@ Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release
 
 ## 功能状态：页面编辑器 {#feature-status-page-editor}
 
-这是经典UI页面编辑器的功能列表(`/cf#`)具有并且状态为已启用触控(`/editor.html`)。
+这是经典UI页面编辑器(`/cf#`)所具有的功能的列表，以及已启用触控(`/editor.html`)中的状态。
 
 | 专题 | 状态 | 注释 |
 |--- |--- |--- |
@@ -105,18 +105,18 @@ Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release
 | 锁定/解锁页面 | 完成 |  |
 | 发布页面 | 完成 |  |
 | 取消发布页面 | 完成 |  |
-| 复制页面 | 已删除 | 使用站点管理员可以 [复制页面](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page). |
-| 移动页面 | 已删除 | 使用站点管理员可以 [移动页面](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page). |
-| 删除页面 | 已删除 | 使用站点管理员可以 [删除页面](/help/sites-authoring/managing-pages.md#deleting-a-page). |
-| 显示引用 | 已删除 | 使用站点管理员查看 [详细参考列表](/help/sites-authoring/author-environment-tools.md#references). |
-| 审核日志 | 已删除 | 使用站点管理和 [打开活动边栏](/help/sites-authoring/author-environment-tools.md#events-timeline). |
-| 创建版本 | 已删除 | 使用站点管理员可以 [创建新版本](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
-| 恢复版本 | 已删除 | 使用站点管理员可以 [恢复版本](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
-| 切换启动项 | 已删除 | 使用站点管理员可以 [在启动项之间切换](/help/sites-authoring/launches-promoting.md). |
-| 翻译页面 | 已删除 | 使用站点管理员可以 [将页面添加到翻译项目](/help/sites-administering/tc-manage.md). |
+| 复制页面 | 已删除 | 使用站点管理员[复制页面](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page)。 |
+| 移动页面 | 已删除 | 使用网站管理员[移动页面](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)。 |
+| 删除页面 | 已删除 | 使用站点管理员[删除页面](/help/sites-authoring/managing-pages.md#deleting-a-page)。 |
+| 显示引用 | 已删除 | 使用站点管理员查看[详细引用列表](/help/sites-authoring/author-environment-tools.md#references)。 |
+| 审核日志 | 已删除 | 使用站点管理员并[打开活动边栏](/help/sites-authoring/author-environment-tools.md#events-timeline)。 |
+| 创建版本 | 已删除 | 使用站点管理员[创建新版本](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version)。 |
+| 恢复版本 | 已删除 | 使用站点管理员[还原版本](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version)。 |
+| 切换启动项 | 已删除 | 使用“站点管理员”可在启动项](/help/sites-authoring/launches-promoting.md)之间[切换。 |
+| 翻译页面 | 已删除 | 使用站点管理员[将页面添加到翻译项目](/help/sites-administering/tc-manage.md)。 |
 | 时间扭曲（选择日期/时间并浏览当时的网站） | 完成 |  |
 | 设置权限 | 完成 |  |
-| 客户端上下文UI | 已替换 | 使用 [ContextHub](/help/sites-authoring/ch-previewing.md) UI以后。 |
+| 客户端上下文UI | 已替换 | 以后请使用[ContextHub](/help/sites-authoring/ch-previewing.md) UI。 |
 | 各种媒体类型的内容查找器 | 完成 |  |
 | 组件列表 | 完成 |  |
 | 复制并粘贴组件 | 完成 |  |
@@ -132,7 +132,7 @@ Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release
 | 专题 | 状态 | 注释 |
 |--- |--- |--- |
 | 富文本编辑器 | 完成 | 可在原位、对话框和全屏中使用。 |
-| 启用/禁用RTE插件 | 完成 | 可以使用来完成 [模板编辑器](/help/sites-authoring/templates.md). |
+| 启用/禁用RTE插件 | 完成 | 可以使用[模板编辑器](/help/sites-authoring/templates.md)完成此操作。 |
 | 将RTE用于纯文本 | 完成 |  |
 | RTE插件：链接和锚点 | 完成 |  |
 | RTE插件：字符映射 | 完成 |  |
@@ -145,7 +145,7 @@ Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release
 | RTE插件：列表（项目符号/编号） | 完成 |  |
 | RTE插件：段落格式 | 完成 |  |
 | RTE插件：文本样式 | 完成 |  |
-| RTE插件：源代码编辑器(编辑HTML) | 完成 | 仅在对话框和全屏中可用。 |
+| RTE插件：Source编辑器(编辑HTML) | 完成 | 仅在对话框和全屏中可用。 |
 | RTE插件：拼写检查程序 | 完成 |  |
 | RTE插件：表（嵌入式表编辑器） | 完成 |  |
 | RTE插件：撤消/重做 | 完成 |  |
@@ -153,7 +153,7 @@ Adobe Experience Manager (AEM) 6.4及更高版本 [已弃用经典UI](../release
 | 表编辑器 | 完成 | 可在原位、对话框和全屏中使用。 |
 | 将图像拖入表单元格 | 完成 | 可内嵌使用 |
 | 图像编辑器 | 完成 | 可在原位、对话框和全屏中使用。 |
-| 启用/禁用IPE插件 | 完成 | AEM 6.3在中引入了UI [模板编辑器](/help/sites-authoring/templates.md). |
+| 启用/禁用IPE插件 | 完成 | AEM 6.3在[模板编辑器](/help/sites-authoring/templates.md)中引入了用户界面。 |
 | IPE插件：裁切 | 完成 |  |
 | IPE插件：翻转 | 完成 |  |
 | IPE插件：撤消/重做 | 完成 |  |

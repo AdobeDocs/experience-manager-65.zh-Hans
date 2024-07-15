@@ -32,7 +32,7 @@ ht-degree: 0%
 
 1. [将组件添加到DOM](#dynamically-add-component-to-dom)
 
-1. [侧载组件](#sideload-by-invoking-scf) 使用以下两种方法之一：
+1. [使用以下两种方法之一侧载组件](#sideload-by-invoking-scf)：
 
 * [动态包含](#dynamic-inclusion)
    * 引导所有动态添加的组件
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->侧载 [非现有资源](scf.md#add-or-include-a-communities-component) 不受支持。
+>不支持[非现有资源](scf.md#add-or-include-a-communities-component)的旁加载。
 
 ## 将组件动态添加到DOM {#dynamically-add-component-to-dom}
 
@@ -88,4 +88,4 @@ ht-degree: 0%
 
 `SCF.addComponent(document.getElementById(*someId*));`
 
-位置 `someId` 的值为 `data-component-id` 属性。
+其中`someId`是`data-component-id`属性的值。

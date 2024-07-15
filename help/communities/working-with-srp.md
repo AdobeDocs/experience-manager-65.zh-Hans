@@ -25,19 +25,19 @@ ht-degree: 0%
 
 与以前的版本不同，UGC不会跨AEM实例进行反向/正向复制。 相反，SRP允许直接从所有创作和发布实例中访问UGC以进行创建、读取、更新和删除(CRUD)操作，但JSRP除外。
 
-以下是 [每个SRP选项的特性](#characteristics-of-srp-options)，这是选择合适的SRP和进行决策时所需的关键信息。 [基础部署](/help/communities/topologies.md).
+以下是每个SRP选项](#characteristics-of-srp-options)的[特性，在选择适当的SRP和[基础部署](/help/communities/topologies.md)时，这些特性对于决策过程至关重要。
 
-有关使用SRP for UGC的详细信息，请参阅 [存储资源提供程序概述](/help/communities/srp.md).
+有关使用SRP for UGC的详细信息，请参阅[存储资源提供程序概述](/help/communities/srp.md)。
 
 >[!NOTE]
 >
->SRP仅适用于社区内容。 它不会影响网站内容的存储位置([节点存储](/help/sites-deploying/data-store-config.md))，并且不会影响在AEM实例之间安全处理用户注册、用户配置文件和用户组(另请参阅 [管理用户数据](#managing-user-data))。
+>SRP仅适用于社区内容。 它不影响站点内容的存储位置（[节点存储](/help/sites-deploying/data-store-config.md)），也不影响AEM实例之间用户注册、用户配置文件和用户组的安全处理（另请参阅[管理用户数据](#managing-user-data)）。
 
 >[!CAUTION]
 >
->自AEM 6.1起， [从不复制UGC](#ugc-never-replicated).
+>截至AEM 6.1，[UGC从未复制](#ugc-never-replicated)。
 >
->当部署不包含公用存储（如默认存储）时 [JSRP](/help/communities/topologies.md#jsrp) 拓扑中，UGC仅在输入它的AEM发布或创作实例上可见。 仅当拓扑包含发布群集时，UGC才在任何发布实例上可见。
+>当部署不包含公用存储（如默认的[JSRP](/help/communities/topologies.md#jsrp)拓扑）时，UGC将仅在输入它的AEM发布或创作实例上可见。 仅当拓扑包含发布群集时，UGC才在任何发布实例上可见。
 
 ## SRP选项的特性 {#characteristics-of-srp-options}
 
@@ -105,7 +105,7 @@ JSRP：
 
 ## 配置SRP {#configuring-srp}
 
-根据基础部署指定默认存储选项，操作是通过 [存储配置控制台](/help/communities/srp-config.md).
+通过[存储配置控制台](/help/communities/srp-config.md)，基于基础部署指定默认存储选项。
 
 有关每个选项的详细配置信息，请参阅：
 
@@ -130,12 +130,12 @@ JSRP：
 
 ### 管理用户数据 {#managing-user-data}
 
-社区感兴趣的还有 [*用户*， *用户组*、和 *用户配置文件*](/help/communities/users.md). 当拓扑为时，在发布环境中创建和更新此用户相关数据时，需要使其可用于其他发布实例 [发布场](/help/sites-deploying/recommended-deploys.md#tarmk-farm).
+CommunitIes感兴趣的还有&#x200B;[*用户*、*用户组*&#x200B;和&#x200B;*用户配置文件*](/help/communities/users.md)。 当拓扑是[发布场](/help/sites-deploying/recommended-deploys.md#tarmk-farm)时，在发布环境中创建和更新此用户相关数据时，这些数据需要可供其他发布实例使用。
 
-从AEM Communities 6.1开始，使用Sling分发而不是复制来同步用户相关数据。 有关详细信息，请访问 [用户同步](/help/communities/sync.md).
+从AEM Communities 6.1开始，使用Sling分发而不是复制来同步用户相关数据。 有关详细信息，请访问[用户同步](/help/communities/sync.md)。
 
 ### 升级到AEM Communities 6.5 {#upgrading-to-aem-communities}
 
 在升级到AEM 6.5 Communities时，如果需要保留预先存在的UGC，则应该根据AEM 5.6.1或AEM 6.0社区使用的是Adobe按需存储还是UGC本地存储来采取步骤。
 
-有关详细信息，请访问 [升级到AEM Communities 6.5](/help/communities/upgrade.md).
+有关详细信息，请访问[升级到AEM Communities 6.5](/help/communities/upgrade.md)。

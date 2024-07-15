@@ -18,7 +18,7 @@ ht-degree: 30%
 
 # Live Copy 概述控制台{#live-copy-overview-console}
 
-此 **Live Copy概述** 使您能够：
+通过&#x200B;**Live Copy概述**，您可以：
 
 * 跨站点查看/管理继承：
 
@@ -40,15 +40,15 @@ ht-degree: 30%
 可以从&#x200B;**Sites**&#x200B;控制台的&#x200B;**引用**&#x200B;侧面板打开 **Live Copy 概述**：
 
 1. 在&#x200B;**Sites**&#x200B;控制台中，[导航到您的 Blueprint 页面并将其选定。](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
-1. 打开 **[引用](/help/sites-authoring/basic-handling.md#references)** 面板并选择 **活动副本**.
+1. 打开&#x200B;**[引用](/help/sites-authoring/basic-handling.md#references)**&#x200B;面板，然后选择&#x200B;**活动副本**。
 
-   ![“引用”面板 — 活动副本](assets/chlimage_1-359.png)
+   ![引用面板 — 活动副本](assets/chlimage_1-359.png)
 
    >[!NOTE]
    >
    >您还可以先打开引用，然后选择Blueprint。
 
-1. 选择 **Live Copy概述** 用于显示和使用与所选Blueprint相关的所有活动副本的概述。
+1. 选择&#x200B;**Live Copy概述**&#x200B;以显示和使用与所选Blueprint相关的所有活动副本的概述。
 1. 使用&#x200B;**关闭**&#x200B;以退出，并返回到&#x200B;**Sites**&#x200B;控制台。
 
 ### 打开Live Copy概述 — Blueprint页面的属性 {#opening-live-copy-overview-properties-of-a-blueprint-page}
@@ -60,26 +60,26 @@ ht-degree: 30%
 
    ![Blueprint选项卡 — Live Copy概述](assets/chlimage_1-360.png)
 
-1. 选择 **Live Copy概述** 用于显示和使用与当前Blueprint相关的所有活动副本的概述。
+1. 选择&#x200B;**Live Copy概述**&#x200B;以显示和使用与当前Blueprint相关的所有活动副本的概述。
 
    >[!NOTE]
    >
-   >有关详细信息，另请参阅知识库文章 [Livecopy状态消息 — 最新/绿色/正在同步](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html).
+   >有关详细信息，另请参阅知识库文章[Livecopy状态消息 — 最新/绿色/同步](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html)。
 
 1. 使用&#x200B;**关闭**&#x200B;以退出，并返回到&#x200B;**Sites**&#x200B;控制台。
 
 ## 使用 Live Copy 概述 {#using-the-live-copy-overview}
 
-此 **Live Copy概述** 还可用于对Live Copy执行操作：
+**Live Copy概述**&#x200B;也可用于对Live Copy执行操作：
 
 1. 打开 **Live Copy 概述**。
-1. 选择所需的Blueprint或Live Copy页面 — 工具栏将更新以显示可用的操作。 此 [操作](/help/sites-administering/msm.md#terms-used) 是否可用取决于您是否选择 [Blueprint](#actions-for-a-blueprint-page) 或 [live copy](#actions-for-a-live-copy-page) 页面：
+1. 选择所需的Blueprint或Live Copy页面 — 工具栏将更新以显示可用的操作。 可用的[操作](/help/sites-administering/msm.md#terms-used)取决于您选择的是[Blueprint](#actions-for-a-blueprint-page)还是[Live Copy](#actions-for-a-live-copy-page)页面：
 
 ### 适用于 Blueprint 页面的操作 {#actions-for-a-blueprint-page}
 
 在选择 Blueprint 页面时，以下操作可用：
 
-![已选择Blueprint — 可用操作](assets/chlimage_1-361.png)
+![所选Blueprint — 可用操作](assets/chlimage_1-361.png)
 
 * 编辑
 
@@ -125,7 +125,7 @@ ht-degree: 30%
 
 ## 关系状态 {#relationship-status}
 
-此 **关系状态** console有两个选项卡，提供了一系列功能：
+**关系状态**&#x200B;控制台具有两个选项卡，提供了一系列功能：
 
 * [关系状态信息](#relationship-status-information)
 * [Live Copy信息](#live-copy-information)

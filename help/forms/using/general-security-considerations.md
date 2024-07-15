@@ -63,7 +63,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>oracleLinux® 7更新3</td>
-   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">版本7的安全指南</a><br /> </td>
+   <td>版本7</a><br />的<a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">安全指南 </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -96,7 +96,7 @@ ht-degree: 1%
  <tbody>
   <tr>
    <td><p>WebLogicOracle®</p> </td>
-   <td><p>在下列位置搜索了解WebLogic安全性 <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
+   <td><p>在<a href="https://docs.oracle.com/">https://docs.oracle.com/</a>处搜索了解WebLogic安全性。</p> </td>
   </tr>
   <tr>
    <td><p>IBM® WebSphere®</p> </td>
@@ -142,12 +142,12 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><p>oracle® 12c</p> </td>
-   <td><p>请参阅 <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">oracle12g文档</a></p> </td>
+   <td><p>请参阅<a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle12g文档</a>中的“安全”一章</p> </td>
   </tr>
  </tbody>
 </table>
 
-此表描述了在AEM Forms on JEE配置过程中需要打开的默认端口。 如果通过https进行连接，请相应地调整端口信息和IP地址。 有关配置端口的详细信息，请参见 *在JEE上安装和部署AEM Forms* 应用程序服务器的文档。
+此表描述了在AEM Forms on JEE配置过程中需要打开的默认端口。 如果通过https进行连接，请相应地调整端口信息和IP地址。 有关配置端口的详细信息，请参阅应用程序服务器的&#x200B;*在JEE上安装和部署AEM Forms*&#x200B;文档。
 
 <table>
  <thead>
@@ -214,7 +214,7 @@ JBoss®应用程序服务器使用8080作为默认HTTP端口。 JBoss®还具有
 
    群集安装： [JBoss® root]/domain/configuration/domain.xml
 
-1. 更改的值 **端口** 中的属性 **&lt;socket-binding>** 标记到自定义端口号。 例如，以下端口使用端口8090：
+1. 将&#x200B;**&lt;socket-binding>**&#x200B;标记中的&#x200B;**port**&#x200B;属性的值更改为自定义端口号。 例如，以下端口使用端口8090：
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
@@ -241,7 +241,7 @@ JEE上的AEM Forms使用JEE上的AEM Forms数据库来存储敏感文档密钥�
 
 用于在JEE上运行AEM Forms的应用程序服务器需要其自身的配置，才能通过在该应用程序服务器上配置的数据源访问数据库。 确保应用程序服务器不会在其数据源配置文件中以明文形式公开数据库密码。
 
-lc_[数据库].xml文件不应包含明文格式的密码。 有关如何为应用程序服务器加密这些密码的信息，请咨询您的应用程序服务器供应商。
+lc_[database].xml文件不应包含明文格式的密码。 有关如何为应用程序服务器加密这些密码的信息，请咨询您的应用程序服务器供应商。
 
 >[!NOTE]
 >

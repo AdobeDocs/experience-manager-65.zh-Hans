@@ -32,7 +32,7 @@ ht-degree: 49%
 
 ## 使用分段 {#using-segmentation}
 
-区段定义于 [配置分段](/help/sites-administering/campaign-segmentation.md). 它们用于控制特定目标受众看到的实际内容。
+区段是在[配置分段](/help/sites-administering/campaign-segmentation.md)中定义的。 它们用于控制特定目标受众看到的实际内容。
 
 ## 分段术语 {#segmentation-terminology}
 
@@ -80,4 +80,4 @@ ht-degree: 49%
 
 >[!NOTE]
 >
->请参阅 [分段](/help/sites-administering/campaign-segmentation.md) 有关Adobe Experience Manager中的区段的更多信息，
+>有关Adobe Experience Manager中的区段的详细信息，请参阅[分段](/help/sites-administering/campaign-segmentation.md)。

@@ -19,13 +19,13 @@ ht-degree: 3%
 
 # 迁移到Touch UI{#migration-to-the-touch-ui}
 
-从版本6.0开始，Adobe Experience Manager (AEM)引入了一个新的用户界面，称为 *触屏优化UI* (也简称为 *触控UI*)。 它与Adobe Experience Cloud以及整个Adobe用户界面准则保持一致。 这已成为AEM中的标准UI，而旧版、面向桌面的界面称为 *经典UI*.
+从版本6.0开始，Adobe Experience Manager (AEM)引入了一个称为&#x200B;*触屏UI*&#x200B;的新用户界面（也简称为&#x200B;*触屏UI*）。 它与Adobe Experience Cloud以及整个Adobe用户界面准则保持一致。 通过称为&#x200B;*经典UI*&#x200B;的旧版面向桌面的界面，这已成为AEM中的标准UI。
 
 如果您一直在将AEM与经典UI一起使用，请采取措施迁移您的实例。 本页旨在通过提供指向单个资源的链接来充当跳板。
 
 >[!NOTE]
 >
->此类迁移项目可能会对您的实例产生重大影响。 请参阅 [管理项目 — 最佳实践](/help/managing/best-practices.md) 推荐的指南。
+>此类迁移项目可能会对您的实例产生重大影响。 请参阅[管理项目 — 最佳实践](/help/managing/best-practices.md)以了解建议的准则。
 
 ## 基础知识 {#the-basics}
 
@@ -38,7 +38,7 @@ ht-degree: 3%
    <td>触屏优化UI</td>
   </tr>
   <tr>
-   <td>在JCR存储库中，将描述为节点结构。 表示UI元素的每个节点称为 <em>ExtJS构件</em> 并在客户端渲染由 <code>ExtJS</code>.</td>
+   <td>在JCR存储库中，将描述为节点结构。 表示UI元素的每个节点都称为<em>ExtJS小组件</em>，由<code>ExtJS</code>在客户端渲染。</td>
    <td>在JCR存储库中还描述为节点结构。 但是，在这种情况下，每个节点都引用一个Sling资源类型（Sling组件），负责其呈现。 因此，UI（基本）呈现在服务器端。</td>
   </tr>
   <tr>
@@ -99,7 +99,7 @@ ht-degree: 3%
  </tbody>
 </table>
 
-换句话说，将UI的一部分从经典UI迁移到Touch UI意味着移植 *ExtJS构件* 到 *Sling组件*. 为轻松实现此目标，触屏UI基于Granite UI框架，该框架已为UI提供了一些Sling组件（称为Granite UI组件）。
+换句话说，将UI的一部分从经典UI迁移到Touch UI意味着将&#x200B;*ExtJS小组件*&#x200B;移植到&#x200B;*Sling组件*。 为轻松实现此目标，触屏UI基于Granite UI框架，该框架已为UI提供了一些Sling组件（称为Granite UI组件）。
 
 在开始之前，请检查状态和相关建议：
 
@@ -115,33 +115,33 @@ ht-degree: 3%
 
 迁移组件时，对话框是一个主要因素：
 
-* [开发AEM组件](/help/sites-developing/developing-components.md) （带有触屏优化UI）
+* [正在开发AEM组件](/help/sites-developing/developing-components.md)（使用支持触屏的UI）
 * [从经典组件迁移](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
-* [AEM现代化工具](/help/sites-developing/modernization-tools.md)  — 帮助您将经典UI组件的对话框转换为Touch UI
+* [AEM现代化工具](/help/sites-developing/modernization-tools.md) — 帮助您将经典UI组件的对话框转换为触控UI
 
    * 在触屏UI中提供了一个兼容层，用于在“触屏UI包装器”中打开经典UI对话框，但此功能有限，不建议长期使用。
 
 * [在触屏UI中自定义对话框字段](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [创建新的Granite UI字段组件](/help/sites-developing/granite-ui-component.md)
-* [自定义页面创作](/help/sites-developing/customizing-page-authoring-touch.md) （带有触屏优化UI）
+* [自定义页面创作](/help/sites-developing/customizing-page-authoring-touch.md)（使用支持触屏的UI）
 
 ## 迁移控制台 {#migrating-consoles}
 
 您还可以自定义控制台：
 
-* [自定义控制台](/help/sites-developing/customizing-consoles-touch.md) （适用于触屏优化UI）
+* [自定义控制台](/help/sites-developing/customizing-consoles-touch.md)（对于支持触摸的UI）
 
 ## 相关注意事项 {#related-considerations}
 
 虽然与迁移到触屏UI没有直接关系，但有些相关问题值得同时考虑，因为这也是推荐的实践：
 
 * [模板](/help/sites-developing/templates.md) - [可编辑的模板](/help/sites-developing/page-templates-editable.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 >[!NOTE]
 >
->另请参阅 [开发 — 最佳实践](/help/sites-developing/best-practices.md).
+>另请参阅[开发 — 最佳实践](/help/sites-developing/best-practices.md)。
 
 ## 更多资源 {#further-resources}
 

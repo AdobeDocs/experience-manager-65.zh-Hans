@@ -29,9 +29,9 @@ ht-degree: 4%
 
 ## Adobe Campaign新闻稿组件 {#adobe-campaign-newsletter-components}
 
-所有Campaign组件都遵循中概述的最佳实践 [电子邮件模板的最佳实践](/help/sites-administering/best-practices-for-email-templates.md) 并且基于Adobe标记语言 [HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html).
+所有Campaign组件都遵循[电子邮件模板最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳实践，并且基于Adobe标记语言[HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html)。
 
-当您打开配置为与Adobe Campaign集成的新闻稿/电子邮件时，您应会在中看到以下组件 **Adobe Campaign新闻稿** 部分：
+当您打开配置为与Adobe Campaign集成的新闻稿/电子邮件时，您应会在&#x200B;**Adobe Campaign新闻稿**&#x200B;部分中看到以下组件：
 
 * 标题（营销活动）
 * 图像（营销活动）
@@ -49,10 +49,10 @@ ht-degree: 4%
 
 标题组件可以：
 
-* 通过离开 **标题** 字段为空。
-* 显示您在 **标题** 字段。
+* 将&#x200B;**标题**&#x200B;字段留空以显示当前页面的名称。
+* 显示您在&#x200B;**标题**&#x200B;字段中指定的文本。
 
-您编辑 **标题（营销活动）** 直接组件。 留空将使用页面标题。
+直接编辑&#x200B;**标题（营销活动）**&#x200B;组件。 留空将使用页面标题。
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -61,7 +61,7 @@ ht-degree: 4%
 * **标题**
 如果要使用页面标题以外的名称，请在此处输入该名称。
 
-* **标题级别(1、2、3、4)**
+* **标题级别(1， 2， 3， 4)**
 标题级别基于HTML标题大小1-4。
 
 以下示例显示了正在显示的标题（营销活动）组件。
@@ -74,13 +74,13 @@ ht-degree: 4%
 
 您可以上传图像，然后对其进行编辑和处理（例如，裁切、旋转、添加链接/标题/文本）。
 
-您可以上传图像，然后对其进行编辑和处理（例如，裁切、旋转、添加链接/标题/文本）。 您可以从以下位置拖放图像 [内容查找器](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) 直接转到组件或其“编辑”对话框。 您还可以双击“编辑”对话框的中心区域来浏览本地文件系统并上传图像。 “编辑”对话框的两个选项卡还控制图像的所有定义和操作：
+您可以上传图像，然后对其进行编辑和处理（例如，裁切、旋转、添加链接/标题/文本）。 您可以从[内容查找器](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui)将图像直接拖放到组件或其“编辑”对话框中。 您还可以双击“编辑”对话框的中心区域来浏览本地文件系统并上传图像。 “编辑”对话框的两个选项卡还控制图像的所有定义和操作：
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
 加载图像时，可以配置以下内容：
 
-* **地图**
+* **映射**
 要映射图像，请选择映射。 您可以指定创建图像映射的方式（矩形、多边形等）以及区域应指向的位置。
 
 * **裁切**
@@ -92,7 +92,8 @@ ht-degree: 4%
 * **清除**
 删除当前图像。
 
-* 缩放栏（仅限经典）要放大和缩小图像，请使用图像下方的滑动栏（在“确定”和“取消”按钮上方）
+* 缩放栏（仅限经典）
+要放大和缩小图像，请使用图像下方的滑动条（在“确定”和“取消”按钮上方）
 * **标题**
 图像的标题。
 
@@ -110,7 +111,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->在 **替换文本** 中的字段 **高级** 制表符，否则图像无法保存，并且您会看到以下错误消息：
+>在&#x200B;**高级**&#x200B;选项卡的&#x200B;**替换文本**&#x200B;字段中输入信息，否则图像无法保存，您会看到以下错误消息：
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -125,7 +126,7 @@ ht-degree: 4%
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-您可在以下位置配置以下内容： **显示**， **URL信息**，或 **高级** 选项卡：
+您可以在&#x200B;**显示**、**URL信息**&#x200B;或&#x200B;**高级**&#x200B;选项卡中配置以下内容：
 
 * **链接标题**
 链接的描述。 这是用户看到的文本。
@@ -133,15 +134,15 @@ ht-degree: 4%
 * **链接工具提示**
 添加了关于如何使用链接的其他信息。
 
-* **链接类型**
-在下拉列表中，选择 **自定义URL** 和 **自适应文档**. 此字段为必填字段。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
+* **LinkType**
+在下拉列表中，选择**自定义URL**&#x200B;和&#x200B;**自适应文档**。 此字段为必填字段。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
 
 * **其他URL参数**
 添加任何其他URL参数。 单击“添加项目”可添加多个项目。
 
 >[!NOTE]
 >
->在 **链接类型** 中的字段 **URL信息** 选项卡，或组件无法保存，此时您会看到以下错误消息：
+>在&#x200B;**URL信息**&#x200B;选项卡的&#x200B;**链接类型**&#x200B;字段中输入信息，否则组件无法保存，您将看到以下错误消息：
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -156,7 +157,7 @@ ht-degree: 4%
 
 在此组件中，您可以导航到目标段落以将其选定。
 
-单击下拉菜单以导航到要引用的段落。 完成后，单击 **确定**.
+单击下拉菜单以导航到要引用的段落。 完成后，单击&#x200B;**确定**。
 
 ### 文本与图像（营销活动） {#text-image-campaign}
 
@@ -164,7 +165,7 @@ ht-degree: 4%
 
 ![chlimage_1-88](assets/chlimage_1-88.png)
 
-与文本和个性化（营销活动）和图像（营销活动）组件一样，您可以配置：
+与文本和Personalization (Campaign)及图像(Campaign)组件一样，您可以配置：
 
 * **文本**
 输入文本。 使用工具栏修改格式、创建列表和添加链接。
@@ -172,7 +173,8 @@ ht-degree: 4%
 * **图像**
 从内容查找器中拖动图像，或单击以浏览到图像。 根据需要裁切或旋转。
 
-* **图像属性** (**高级图像属性**)用于指定以下内容：
+* **图像属性** （**高级图像属性**）
+用于指定以下内容：
 
    * **标题**
 块的标题；由mouseover显示。
@@ -191,7 +193,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->此 **替换文本** 中的字段 **高级** 选项卡为必填项，或者组件无法保存，此时您会看到以下错误消息：
+>**高级**&#x200B;选项卡中的&#x200B;**替换文本**&#x200B;字段为必填项，或者该组件无法保存，您会看到以下错误消息：
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -202,7 +204,7 @@ ht-degree: 4%
 
 ### 文本与个性化（营销活动） {#text-personalization-campaign}
 
-文本与个性化（营销活动）组件允许您使用WYSIWYG编辑器输入文本块，该编辑器具有以下功能 [富文本编辑器](/help/sites-authoring/rich-text-editor.md). 此外，通过此组件，您可以使用Adobe Campaign中可用的上下文字段和个性化块；另请参阅 [插入个性化](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
+文本与Personalization（营销活动）组件允许您使用WYSIWYG编辑器和[富文本编辑器](/help/sites-authoring/rich-text-editor.md)提供的功能输入文本块。 此外，此组件允许您使用Adobe Campaign中可用的上下文字段和个性化块；另请参阅[插入Personalization](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization)。
 
 图标的选择允许您设置文本格式，包括字体特征、对齐方式、链接、列表和缩进。
 
@@ -214,15 +216,15 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->仅中定义的字段 **nms：seedMember** 架构或其扩展之一将被考虑在内。 链接到的表的属性 `nms:seedMember` 不可用。
+>只考虑在&#x200B;**nms：seedMember**&#x200B;架构或其扩展中定义的字段。 链接到`nms:seedMember`的表的属性不可用。
 
 ## Adobe Campaign表单组件 {#adobe-campaign-form-components}
 
-您可以使用Adobe Campaign组件创建一个用户填写的表单，以订阅新闻稿、取消订阅新闻稿或更新其用户配置文件。 请参阅 [创建Adobe Campaign Forms](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md) 以了解更多信息。
+您可以使用Adobe Campaign组件创建一个用户填写的表单，以订阅新闻稿、取消订阅新闻稿或更新其用户配置文件。 有关详细信息，请参阅[创建Adobe Campaign Forms](/help/sites-classic-ui-authoring/classic-personalization-ac-forms.md)。
 
-每个组件字段都可以链接到Adobe Campaign数据库字段。 可用字段因包含的数据类型而异，如一节所述 [组件和数据类型](#components-and-data-type). 如果您在Adobe Campaign中扩展收件人模式，则数据类型匹配的组件中将提供新字段。
+每个组件字段都可以链接到Adobe Campaign数据库字段。 可用字段因它们包含的数据类型而异，如[组件和数据类型](#components-and-data-type)部分所述。 如果您在Adobe Campaign中扩展收件人模式，则数据类型匹配的组件中将提供新字段。
 
-当您打开配置为与Adobe Campaign集成的表单时，您会在页面的 **Adobe Campaign** 部分：
+当您打开配置为与Adobe Campaign集成的表单时，您会在&#x200B;**Adobe Campaign**&#x200B;部分中看到以下组件：
 
 * 复选框（营销活动）
 * 日期字段（营销活动）和日期字段/HTML5（营销活动）
@@ -302,13 +304,13 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 * **映射**
 选择适当的Adobe Campaign个性化字段。
 
-* **对帐密钥**
+* **协调密钥**
 如果此字段是对帐密钥的一部分，则选中此复选框。
 
 #### 约束 {#constraints}
 
-* **必填**  — 选中此复选框可使此组件为必需组件；即，用户必须输入一个值。
-* **必需消息**  — （可选）添加一条消息，说明该字段为必填字段。
+* **必需** — 选中此复选框可使此组件为必需；即，用户必须输入一个值。
+* **必需消息** — 或者，添加一条消息，说明该字段为必需字段。
 
 #### 样式 {#styling}
 
@@ -319,7 +321,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 利用复选框（营销活动）组件，用户可修改布尔数据类型的Adobe Campaign配置文件字段。 例如，您可以有一个复选框（营销活动）组件，它允许收件人指定不希望通过任何渠道与其联系。
 
-您可以 [配置大多数Adobe Campaign组件通用的设置](#settings-common-to-most-components) 在复选框（营销活动）组件中。
+您可以[在复选框（营销活动）组件中配置大多数Adobe Campaign组件共有的设置](#settings-common-to-most-components)。
 
 以下示例显示了所显示的复选框（营销活动）组件。
 
@@ -329,12 +331,12 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 使用日期字段可允许收件人输入日期；例如，您可能希望收件人指定其出生日期。 日期格式与Adobe Campaign实例中使用的格式匹配。
 
-此外 [大多数Adobe Campaign组件通用的设置](#settings-common-to-most-components)中，您可以配置以下各项：
+除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**  — 您可以选择 —  **无** 或 **日期** 添加日期限制或无限制。 如果选择日期，则用户在字段中输入的答案必须采用日期格式。
+* **约束 — 约束** — 您可以选择 — **无**&#x200B;或&#x200B;**日期**&#x200B;添加日期或无约束的约束。 如果选择日期，则用户在字段中输入的答案必须采用日期格式。
 
-* **约束消息**  — 此外，您还可以添加一条限制消息，以便用户知道如何正确设置其答案的格式。
-* **样式 — 宽度**  — 通过单击或点按 **+** 和 **-** 图标或输入数字。
+* **约束消息** — 此外，您还可以添加约束消息，以便用户了解如何正确设置其答案的格式。
+* **样式 — 宽度** — 通过单击或点按&#x200B;**+**&#x200B;和&#x200B;**-**&#x200B;图标或输入数字来调整字段的宽度。
 
 下方的示例显示了一个已调整宽度的日期字段（营销活动）组件。
 
@@ -342,14 +344,14 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 ### 已加密的主要密钥（营销活动） {#encrypted-primary-key-campaign}
 
-此组件定义将包含Adobe Campaign配置文件的标识符的URL参数的名称(**主资源标识符** 或 **加密的主密钥** (包括在Adobe Campaign Standard和6.1中)。
+此组件定义URL参数的名称，该参数将包含Adobe Campaign配置文件的标识符(分别为&#x200B;**主资源标识符**&#x200B;或&#x200B;**Adobe Campaign Standard中的Encrypted主密钥**&#x200B;和6.1)。
 
-显示和修改Adobe Campaign配置文件数据的每个表单 **必须** 包括一个加密主密钥组件。
+显示和修改Adobe Campaign配置文件数据&#x200B;**的每个表单都必须**&#x200B;包含加密的主密钥组件。
 
 您可以在加密的主密钥(Campaign)组件中配置以下内容：
 
-* **标题和文本 — 元素名称**  — 默认为encryptedPK。 当元素名称与表单上其他元素的名称冲突时，您只需更改元素名称。 任何两个表单字段都不能具有相同的元素名称。
-* **Adobe Campaign - URL参数**  — 为EPK添加URL参数。 例如，您可以使用值 **epk**.
+* **标题和文本 — 元素名称** — 默认为encryptedPK。 当元素名称与表单上其他元素的名称冲突时，您只需更改元素名称。 任何两个表单字段都不能具有相同的元素名称。
+* **Adobe Campaign - URL参数** — 为EPK添加URL参数。 例如，您可以使用值&#x200B;**epk**。
 
 以下示例显示了正在显示的加密主密钥(Campaign)组件。
 
@@ -369,8 +371,8 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 您可以在隐藏的对帐密钥（营销活动）组件中配置以下内容：
 
-* **标题和文本 — 元素名称**  — 默认为reconclKey。 当元素名称与表单上其他元素的名称冲突时，您只需更改元素名称。 任何两个表单字段都不能具有相同的元素名称。
-* **Adobe Campaign — 映射**  — 映射到Adobe Campaign个性化字段。
+* **标题和文本 — 元素名称** — 默认为reconcilKey。 当元素名称与表单上其他元素的名称冲突时，您只需更改元素名称。 任何两个表单字段都不能具有相同的元素名称。
+* **Adobe Campaign — 映射** — 映射到Adobe Campaign个性化字段。
 
 以下示例显示了正在显示的隐藏的对帐密钥（营销活动）组件。
 
@@ -380,12 +382,13 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 使用数字字段可允许收件人输入数字，例如年龄。
 
-此外 [大多数Adobe Campaign组件通用的设置](#settings-common-to-most-components)中，您可以配置以下各项：
+除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束** 下拉菜单您可以选择 —  **无** 或 **数值 —** 添加数值或无约束的约束。 如果选择数字，则用户在字段中输入的答案必须是数字。
+* **约束 — 约束**下拉列表
+您可以选择 — **无**&#x200B;或&#x200B;**数值 —**&#x200B;来添加数值或无约束的约束。 如果选择数字，则用户在字段中输入的答案必须是数字。
 
-* **约束消息**  — 此外，您还可以添加一条限制消息，以便用户知道如何正确设置其答案的格式。
-* **样式 — 宽度**  — 通过单击或点按 **+** 和 **-** 图标或输入数字。
+* **约束消息** — 此外，您还可以添加约束消息，以便用户了解如何正确设置其答案的格式。
+* **样式 — 宽度** — 通过单击或点按&#x200B;**+**&#x200B;和&#x200B;**-**&#x200B;图标或输入数字来调整字段的宽度。
 
 以下示例显示了一个已配置宽度的数字字段（营销活动）组件。
 
@@ -395,7 +398,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 此下拉列表允许您选择一个选项；例如，收件人的性别或状态。
 
-您可以 [配置大多数Adobe Campaign组件通用的设置](#settings-common-to-most-components) 在选项字段（营销活动）组件中。 要填充下拉列表，请通过单击或点按Adobe Campaign符号并导航到Adobe Campaign个性化字段中选择相应的字段。
+您可以[在选项字段(Campaign)组件中配置大多数Adobe Campaign组件共有的设置](#settings-common-to-most-components)。 要填充下拉列表，请通过单击或点按Adobe Campaign符号并导航到Adobe Campaign个性化字段中选择相应的字段。
 
 以下示例显示了正在显示的选项字段（营销活动）组件。
 
@@ -403,15 +406,15 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 ### 订阅核对清单（营销活动） {#subscriptions-checklist-campaign}
 
-使用 **订阅核对清单（营销活动）** 组件来修改与Adobe Campaign配置文件关联的订阅。
+使用&#x200B;**订阅核对清单（营销活动）**&#x200B;组件修改与Adobe Campaign配置文件关联的订阅。
 
-添加到表单时，此组件将所有可用的订阅显示为复选框，并允许用户选择所需的订阅。 当用户提交表单时，此组件根据表单操作类型(**Adobe Campaign：订阅服务** 或 **Adobe Campaign：取消订阅服务**)。
+添加到表单时，此组件将所有可用的订阅显示为复选框，并允许用户选择所需的订阅。 当用户提交表单时，此组件根据表单操作类型(**Adobe Campaign：订阅服务**&#x200B;或&#x200B;**Adobe Campaign：取消订阅服务**)，为用户订阅或取消订阅所选服务。
 
 >[!NOTE]
 >
 >组件不会检查用户已订阅/取消订阅的服务。
 
-您可以 [配置大多数Adobe Campaign组件通用的设置](#settings-common-to-most-components) 在订阅核对清单（营销活动）组件中。 (此组件没有Adobe Campaign配置可用。)
+您可以[在订阅核对清单(Campaign)组件中](#settings-common-to-most-components)配置大多数Adobe Campaign组件通用的设置。 (此组件没有Adobe Campaign配置可用。)
 
 以下示例显示了正在显示的订阅核对清单（营销活动）组件。
 
@@ -421,12 +424,12 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 文本字段（营销活动）组件，允许您输入字符串类型数据，如名字、姓氏、地址、电子邮件地址等。
 
-此外 [大多数Adobe Campaign组件通用的设置](#settings-common-to-most-components)中，您可以配置以下各项：
+除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**  — 下拉列表 — 您可以选择 —  **无**， **电子邮件**， **名称** （无变音）以添加电子邮件地址、名称或无限制的约束。 如果选择电子邮件，则用户在字段中输入的答案必须是电子邮件地址。 如果选择名称，则必须为名称（不允许使用变音）。
+* **约束 — 约束** — 下拉列表 — 您可以选择 — **无**、**电子邮件**、**名称**（无变音）来添加电子邮件地址、名称或无约束的约束。 如果选择电子邮件，则用户在字段中输入的答案必须是电子邮件地址。 如果选择名称，则必须为名称（不允许使用变音）。
 
-* **约束消息**  — 此外，您还可以添加一条限制消息，以便用户知道如何正确设置其答案的格式。
-* **样式 — 宽度**  — 通过单击或点按 **+** 和 **-** 图标或输入数字。
+* **约束消息** — 此外，您还可以添加约束消息，以便用户了解如何正确设置其答案的格式。
+* **样式 — 宽度** — 通过单击或点按&#x200B;**+**&#x200B;和&#x200B;**-**&#x200B;图标或输入数字来调整字段的宽度。
 
 以下示例显示了正在显示的文本字段(Campaign)组件。
 

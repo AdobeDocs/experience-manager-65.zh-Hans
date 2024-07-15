@@ -39,14 +39,14 @@ ht-degree: 0%
 
 ## 更改用户的外出状态 {#change-a-user-s-out-of-office-status}
 
-1. 查找用户，如中所述 [查看用户的外出信息](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+1. 查找用户，如[查看用户的外出信息](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)中所述。
 1. 单击要更改的用户名。
-1. 从 *用户名* 位于当前列表中，选择在办公室中或外出办公室。
+1. 从&#x200B;*用户名*&#x200B;当前列表中，选择“在办公室”或“不在办公室”。
 1. 单击“保存”。
 
 ## 为用户添加外出日期范围 {#add-an-out-of-office-date-range-for-a-user}
 
-1. 查找用户，如中所述 [查看用户的外出信息](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+1. 查找用户，如[查看用户的外出信息](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)中所述。
 1. 单击要更改的用户名。
 1. 单击添加日期范围。
 1. 输入开始时间和结束时间。 您可以单击日历图标以选择日期。 如果不指定结束时间，则会将用户无限期地设置为不在办公室。
@@ -61,7 +61,7 @@ ht-degree: 0%
 * 分配一个默认用户，该用户将接收该用户的大部分任务，但指定将某些流程中的任务重新分配给其他用户或保留分配给不在办公室的用户。
 * 不要分配默认用户，而是将某些进程中的某些任务分配给特定用户。
 
-   1. 查找用户，如中所述 [查看用户的外出信息](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
+   1. 查找用户，如[查看用户的外出信息](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)中所述。
    1. 单击要更改的用户名。
    1. 在“Default User For Out Office Tasks（外出任务的默认用户）”列表中，选择一个用户。 如果不想指定默认用户接收重新分配的物料，请选择“不分配”。
 

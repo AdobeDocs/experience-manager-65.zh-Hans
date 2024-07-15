@@ -27,15 +27,15 @@ ht-degree: 26%
 
 项目实施标准的AEM功能，无需任何其他设置。
 
-但是，对于项目中的用户，如果要在使用项目（如在创建项目、创建任务/工作流或查看和管理团队时）时查看其他用户/组，这些用户需要拥有读取权限 `/home/users` 和 `/home/groups`.
+但是，对于项目中的用户，如果要在使用项目（如在创建项目、创建任务/工作流或查看和管理团队时）时查看其他用户/组，这些用户需要拥有`/home/users`和`/home/groups`的读取权限。
 
-最简单的方法是给出 **projects — 用户** 对的组读取访问权限 `/home/users` 和 `/home/groups`.
+最简单的方法是授予&#x200B;**projects-users**&#x200B;组对`/home/users`和`/home/groups`的读取权限。
 
 ## “项目”控制台 {#projects-console}
 
 在“项目”控制台中，您可以访问和管理 AEM 中的项目。
 
-![“项目”控制台](assets/screen-shot_2019-03-05at125110.png)
+![项目控制台](assets/screen-shot_2019-03-05at125110.png)
 
 项目控制台与AEM中的其他控制台类似，允许对单个项目执行多个操作，并调整您的项目视图。
 
@@ -51,9 +51,9 @@ ht-degree: 26%
 
 #### 时间线 {#timeline}
 
-时间线视图允许您选择单个项目并查看其上的活动。 使用边栏选择器或热键 `alt+1` 以更改此视图。
+时间线视图允许您选择单个项目并查看其上的活动。 使用边栏选择器或热键`alt+1`更改此视图。
 
-![时间轴模式](assets/project-timeline.png)
+![时间线模式](assets/project-timeline.png)
 
 ### 切换视图 {#views}
 
@@ -65,7 +65,7 @@ ht-degree: 26%
 
 您可以使用该过滤器在所有项目之间切换，而仅切换处于活动状态的项目。
 
-![筛选](assets/projects-filter.png)
+![筛选器](assets/projects-filter.png)
 
 ### 选择和查看项目 {#selecting}
 
@@ -75,11 +75,11 @@ ht-degree: 26%
 
 ### 创建新项目 {#creating}
 
-单击 **创建** 以添加新项目。
+单击&#x200B;**创建**&#x200B;以添加新项目。
 
 ## 项目拼贴 {#project-tiles}
 
-项目由您希望一起管理的不同类型的信息组成。 此信息由不同的 **磁贴**.
+项目由您希望一起管理的不同类型的信息组成。 此信息由不同的&#x200B;**磁贴**&#x200B;表示。
 
 您可以将以下图块与您的项目关联。
 
@@ -117,9 +117,9 @@ ht-degree: 26%
 
 ### 体验 {#experiences}
 
-此 **体验** 通过磁贴，可将移动应用程序、网站或发布添加到项目中。
+**体验**&#x200B;图块允许您向项目添加移动应用程序、网站或发布。
 
-![“体验”拼贴](assets/project-tile-experiences.png)
+![体验拼贴](assets/project-tile-experiences.png)
 
 这些图标指示表示的体验类型。
 
@@ -128,25 +128,25 @@ ht-degree: 26%
 
 ### 链接 {#links}
 
-此 **链接** 利用图块，可将外部链接与项目相关联。
+**链接**&#x200B;拼贴允许您关联外部链接与项目。
 
-![“链接”拼贴](assets/project-tile-links.png)
+![链接磁贴](assets/project-tile-links.png)
 
 您可以使用易于识别的名称来命名链接并更改其缩略图。
 
 ### 项目信息 {#project-info}
 
-此 **项目信息** 拼贴提供有关项目的一般信息，包括描述、项目状态（非活动或活动）、截止日期和成员。 此外，您还可以添加项目缩略图，该缩略图会显示在“项目”主页上。
+**项目信息**&#x200B;拼贴提供有关项目的一般信息，包括描述、项目状态（非活动或活动）、截止日期和成员。 此外，您还可以添加项目缩略图，该缩略图会显示在“项目”主页上。
 
-![“项目信息”拼贴](assets/project-tile-info.png)
+![项目信息拼贴](assets/project-tile-info.png)
 
 ### 翻译作业 {#translation-job}
 
-此 **翻译作业** 图块是开始翻译的位置，也是查看翻译状态的位置。
+**翻译作业**&#x200B;拼贴是您开始翻译的位置，也是您查看翻译状态的位置。
 
 ![翻译作业拼贴](assets/project-tile-translation.png)
 
-要设置翻译，请参阅文档 [创建翻译项目。](/help/assets/translation-projects.md)
+要设置翻译，请参阅文档[创建翻译项目。](/help/assets/translation-projects.md)
 
 ### 团队 {#team}
 
@@ -158,50 +158,50 @@ ht-degree: 26%
 
 ### 登陆页面 {#landing-pages}
 
-此 **登陆页面** 通过图块，可请求新的登陆页面。
+**登陆页面**&#x200B;图块允许您请求新的登陆页面。
 
-![登陆页面拼贴](assets/project-tile-landing.png)
+![登陆页面磁贴](assets/project-tile-landing.png)
 
-文档中介绍了此工作流[创建登陆页面工作流。](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
+此工作流在文档[创建登陆页面工作流中进行了描述。](/help/sites-authoring/projects-with-workflows.md#request-landing-page-workflow)
 
 ### 电子邮件 {#emails}
 
-此 **电子邮件** 图块帮助您管理电子邮件请求。 它会开始 **电子邮件请求** 工作流。
+**电子邮件**&#x200B;图块可帮助您管理电子邮件请求。 它会启动&#x200B;**电子邮件**&#x200B;请求工作流。
 
-![“电子邮件”拼贴](assets/project-tile-email.png)
+![电子邮件磁贴](assets/project-tile-email.png)
 
-欲知更多信息，请参见 [请求电子邮件工作流。](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
+[请求电子邮件工作流中介绍了更多信息。](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### 工作流 {#workflows}
 
-您可以启动项目的工作流。 如果有任何工作流正在运行，其状态会显示在 **工作流** 磁贴。
+您可以启动项目的工作流。 如果有任何工作流正在运行，其状态将显示在&#x200B;**工作流**&#x200B;拼贴中。
 
-![“工作流”拼贴](assets/project-tile-workflows.png)
+![工作流拼贴](assets/project-tile-workflows.png)
 
 根据您创建的项目，有不同的可用工作流。
 
-有关这些功能的说明，请参见 [使用项目工作流。](/help/sites-authoring/projects-with-workflows.md)
+[使用项目工作流](/help/sites-authoring/projects-with-workflows.md)中介绍了这些内容。
 
 ### 启动项 {#launches}
 
-此 **启动次数** 图块显示已请求的任何启动项 [请求启动工作流。](/help/sites-authoring/projects-with-workflows.md)
+**启动项**&#x200B;图块显示通过[请求启动项工作流](/help/sites-authoring/projects-with-workflows.md)请求的任何启动项。
 
-![“启动项”拼贴](assets/project-tile-launches.png)
+![启动项拼贴](assets/project-tile-launches.png)
 
 ### 任务 {#tasks}
 
 “任务”拼贴允许您监测任何项目相关任务（包括工作流）的状态。[处理任务](/help/sites-authoring/task-content.md)中详细介绍了任务。
 
-![“任务”拼贴](assets/project-tile-tasks.png)
+![任务拼贴](assets/project-tile-tasks.png)
 
 ## 项目模板 {#project-templates}
 
 模板是启动项目的基础。 AEM提供这些标准项目模板。
 
-* **媒体项目**  — 这是媒体相关活动的参考示例项目。 它包括多个与媒体相关的项目角色，还包括与媒体内容相关的工作流。
-* **[产品照片拍摄项目](/help/sites-authoring/managing-product-information.md)**  — 这是用于管理电子商务相关产品摄影的参考示例。
-* **[翻译项目](/help/sites-administering/translation.md)**  — 这是用于管理翻译相关活动的参考示例。 它包括基本角色和用于管理翻译的工作流。
-* **简单项目**  — 这是任何不适合其他类别的项目的参考示例。 它包括三个基本角色和四个常规AEM工作流。
+* **媒体项目** — 这是媒体相关活动的参考示例项目。 它包括多个与媒体相关的项目角色，还包括与媒体内容相关的工作流。
+* **[产品照片拍摄项目](/help/sites-authoring/managing-product-information.md)** — 这是用于管理电子商务相关产品照片的参考示例。
+* **[翻译项目](/help/sites-administering/translation.md)** — 这是用于管理翻译相关活动的参考示例。 它包括基本角色和用于管理翻译的工作流。
+* **简单项目** — 这是任何不适合其他类别的项目的参考示例。 它包括三个基本角色和四个常规AEM工作流。
 
 根据您选择的模板，您在项目中可以选择不同的选项，例如提供的用户角色和工作流。
 
@@ -217,8 +217,8 @@ ht-degree: 26%
 | 角色 | 描述 | 权限 | 组成员资格 |
 |---|---|---|---|
 | 观察者 | 具有此角色的用户可以查看项目详细信息，包括项目状态。 | 项目的只读权限 | `workflow-users` 组 |
-| 编辑器 | 具有此角色的用户可以上传和编辑项目的内容。 | 对项目、关联的元数据和相关资源的读写访问权限<br>上传拍摄列表、照片拍摄以及查看和审批资源的权限<br>的写入权限 `/etc/commerce`<br>修改特定项目的权限 | `workflow-users` 组 |
-| 所有者 | 具有此角色的用户可以创建项目、在项目中启动工作，并将批准的资产移动到生产文件夹。 所有者还可以查看和执行项目中的所有其他任务。 | `/etc/commerce` 的写入权限 | `dam-users` 组才能创建项目<br>`projects-administrators` 组，以便能够创建项目和移动资产 |
+| 编辑器 | 具有此角色的用户可以上传和编辑项目的内容。 | 对项目、相关元数据和相关资源的读写访问权限<br>上传拍摄列表、照片拍摄以及查看和批准资源的权限<br>对`/etc/commerce`<br>特定项目的修改权限的写入权限 | `workflow-users` 组 |
+| 所有者 | 具有此角色的用户可以创建项目、在项目中启动工作，并将批准的资产移动到生产文件夹。 所有者还可以查看和执行项目中的所有其他任务。 | `/etc/commerce` 的写入权限 | `dam-users`组能够创建项目<br>`projects-administrators`组能够创建项目和移动资产 |
 
 对于创意项目，还提供了诸如摄影师等其他角色。 您可以使用这些角色来派生特定项目的自定义角色。
 
@@ -226,9 +226,9 @@ ht-degree: 26%
 
 在创建项目并将用户添加到各种角色时，将自动创建与项目关联的组以管理关联的权限。
 
-例如，名为Myproject的项目将有三个组 **Myproject所有者**， **Myproject编辑器**， **Myproject观察者**.
+例如，名为Myproject的项目将有三个组&#x200B;**Myproject所有者**、**Myproject编辑器**、**Myproject观察者**。
 
-如果删除了项目，则只有在选择适当的选项时，才会删除这些组 [删除项目时。](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 管理员还可以手动删除中的组 **工具** > **安全性** > **组**.
+如果删除了项目，则只有在删除项目时选择适当的选项[时，才会删除这些组。](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project)管理员还可以手动删除&#x200B;**工具** > **安全** > **组**&#x200B;中的组。
 
 ## 其他资源 {#additional-resources}
 

@@ -1,6 +1,6 @@
 ---
 title: 国际化UI字符串
-description: Java&trade；和JavaScript API使您能够国际化字符串
+description: Java&amp；trade；和JavaScript API使您能够国际化字符串
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -25,11 +25,11 @@ Java™和JavaScript API使您能够国际化以下资源类型中的字符串�
 * 客户端库或页面源中的JavaScript。
 * 对话框和组件配置属性中使用的JCR节点属性值。
 
-有关国际化和本地化过程的概述，请参阅 [国际化组件](/help/sites-developing/i18n.md).
+有关国际化和本地化过程的概述，请参阅[国际化组件](/help/sites-developing/i18n.md)。
 
 ## 在Java™和JSP代码中国际化字符串 {#internationalizing-strings-in-java-and-jsp-code}
 
-此 `com.day.cq.i18n` 通过Java™包，您可以在UI中显示本地化的字符串。 此 `I18n` 类提供 `get` 方法，用于从Adobe Experience Manager (AEM)词典检索本地化的字符串。 唯一需要的 `get` 方法是英语中的字符串文字。 英语是UI的默认语言。 下面的示例将单词本地化 `Search`：
+`com.day.cq.i18n` Java™包允许您在UI中显示本地化的字符串。 `I18n`类提供从Adobe Experience Manager (AEM)词典中检索本地化字符串的`get`方法。 `get`方法的唯一必需参数是英语中的字符串文字。 英语是UI的默认语言。 以下示例将单词`Search`本地化：
 
 `i18n.get("Search");`
 
@@ -51,13 +51,13 @@ Java™和JavaScript API使您能够国际化以下资源类型中的字符串�
 
 I18n类提供两个构造函数。 如何确定用户的首选语言决定了要使用的构造函数。
 
-要以用户帐户中指定的语言呈现字符串，请使用以下构造函数（导入后） `com.day.cq.i18n.I18n)`：
+若要以用户帐户中指定的语言呈现字符串，请使用以下构造函数（在导入`com.day.cq.i18n.I18n)`之后）：
 
 ```java
 I18n i18n = new I18n(slingRequest);
 ```
 
-构造函数使用 `SlingHTTPRequest` 以检索用户的语言设置。
+构造函数使用`SlingHTTPRequest`来检索用户的语言设置。
 
 要使用页面区域设置确定语言，请首先获取所请求页面语言的ResourceBundle：
 
@@ -69,11 +69,11 @@ I18n i18n = new I18n(resourceBundle);
 
 #### 将字符串国际化 {#internationalizing-a-string}
 
-使用 `get` 方法 `I18n` 对象以国际化字符串。 唯一需要的 `get` 方法是要国际化的字符串。 该字符串对应于Translator字典中的字符串。 get方法在词典中查找字符串并返回当前语言的翻译。
+使用`I18n`对象的`get`方法将字符串国际化。 `get`方法的唯一必需参数是要国际化的字符串。 该字符串对应于Translator字典中的字符串。 get方法在词典中查找字符串并返回当前语言的翻译。
 
-第一个参数用于 `get` 方法必须符合以下规则：
+`get`方法的第一个参数必须符合以下规则：
 
-* 该值必须为字符串文字。 类型变量 `String` 不可接受。
+* 该值必须为字符串文字。 不接受`String`类型的变量。
 * 字符串文字必须用一行表示。
 * 字符串区分大小写。
 
@@ -83,9 +83,9 @@ i18n.get("Enter a search keyword");
 
 #### 使用翻译提示 {#using-translation-hints}
 
-指定 [翻译提示](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings) 用于区分词典中重复字符串的国际化字符串。 使用第二个可选参数 `get` 方法以提供翻译提示。 翻译提示必须与词典中项目的Comment属性完全匹配。
+指定国际化字符串的[翻译提示](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings)以区分词典中的重复字符串。 使用`get`方法的第二个可选参数来提供翻译提示。 翻译提示必须与词典中项目的Comment属性完全匹配。
 
-例如，词典包含字符串 `Request` 两次：一次作为动词，一次作为名词。 以下代码包含翻译提示作为中的参数 `get` 方法：
+例如，词典包含字符串`Request`两次：一次作为动词，一次作为名词。 以下代码包含翻译提示作为`get`方法中的参数：
 
 ```java
 i18n.get("Request","A noun, as in a request for a web page");
@@ -95,17 +95,17 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 在本地化字符串中包含变量以将上下文含义构建到句子中。 例如，在登录到Web应用程序后，主页显示消息“欢迎返回管理员”。 您的收件箱中有两封邮件。” 页面上下文确定用户名和消息数。
 
-[在词典中](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings)中，变量以字符串形式表示为带括号的索引。 将变量的值指定为的参数 `get` 方法。 参数位于翻译提示的后面，索引与参数的顺序相对应：
+[在词典](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings)中，变量以字符串的形式表示为带括号的索引。 将变量的值指定为`get`方法的参数。 参数位于翻译提示的后面，索引与参数的顺序相对应：
 
 ```xml
 i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messages", user.getDisplayName(), numItems);
 ```
 
-国际化字符串和翻译提示必须与词典中的字符串和注释完全匹配。 您可以通过提供 `null` value作为第二个参数。
+国际化字符串和翻译提示必须与词典中的字符串和注释完全匹配。 通过提供`null`值作为第二个参数，可以省略本地化提示。
 
 #### 使用静态获取方法 {#using-the-static-get-method}
 
-此 `I18N` 类定义一个静态 `get` 方法，在必须本地化几个字符串时很有用。 除了对象的参数之外 `get` 方法，静态方法需要 `SlingHttpRequest` 对象或 `ResourceBundle` 您正在使用的语言（根据您确定用户首选语言的方式）：
+`I18N`类定义了一个静态`get`方法，当您必须本地化几个字符串时，此方法非常有用。 除了对象`get`方法的参数之外，静态方法还需要`SlingHttpRequest`对象或您正在使用的`ResourceBundle`，具体取决于您确定用户首选语言的方式：
 
 * 使用用户的语言首选项：提供SlingHttpRequest作为第一个参数。
 
@@ -116,17 +116,17 @@ i18n.get("Welcome back {0}. You have {1} messages.", "user name, number of messa
 
 ### 在JavaScript代码中国际化字符串 {#internationalizing-strings-in-javascript-code}
 
-JavaScript API允许您在客户端本地化字符串。 与 [Java™和JSP](#internationalizing-strings-in-java-and-jsp-code) 代码，JavaScript API使您能够识别要本地化的字符串，提供本地化提示，并在本地化的字符串中包含变量。
+JavaScript API允许您在客户端本地化字符串。 与[Java™和JSP](#internationalizing-strings-in-java-and-jsp-code)代码一样，JavaScript API使您能够识别要本地化的字符串，提供本地化提示，并在本地化的字符串中包含变量。
 
-此 `granite.utils` [客户端库文件夹](/help/sites-developing/clientlibs.md) 提供JavaScript API。 要使用API，请在您的页面上包含此客户端库文件夹。 本地化函数使用 `Granite.I18n` 命名空间。
+`granite.utils` [客户端库文件夹](/help/sites-developing/clientlibs.md)提供JavaScript API。 要使用API，请在您的页面上包含此客户端库文件夹。 本地化函数使用`Granite.I18n`命名空间。
 
-在显示本地化的字符串之前，请使用 `Granite.I18n.setLocale` 函数。 函数需要区域设置的语言代码作为参数：
+在显示本地化字符串之前，请使用`Granite.I18n.setLocale`函数设置区域设置。 函数需要区域设置的语言代码作为参数：
 
 ```
 Granite.I18n.setLocale("fr");
 ```
 
-要呈现本地化的字符串，请使用 `Granite.I18n.get` 函数：
+要呈现本地化的字符串，请使用`Granite.I18n.get`函数：
 
 ```
 Granite.I18n.get("string to localize");
@@ -154,9 +154,9 @@ Granite.I18n.get("Welcome back {0}. You have {1} new messages in your inbox.", [
 
 ### 将JCR节点中的字符串国际化 {#internationalizing-strings-from-jcr-nodes}
 
-UI字符串通常基于JCR节点属性。 例如， `jcr:title` 页面的属性通常用作 `h1` 元素。 此 `I18n` 类提供 `getVar` 本地化这些字符串的方法。
+UI字符串通常基于JCR节点属性。 例如，页面的`jcr:title`属性通常用作页面代码中`h1`元素的内容。 `I18n`类提供了用于本地化这些字符串的`getVar`方法。
 
-以下示例JSP脚本检索 `jcr:title` 属性，并在页面上显示本地化的字符串：
+以下示例JSP脚本从存储库检索`jcr:title`属性并在页面上显示本地化的字符串：
 
 ```java
 <% title = properties.get("jcr:title", String.class);%>
@@ -165,11 +165,11 @@ UI字符串通常基于JCR节点属性。 例如， `jcr:title` 页面的属性�
 
 #### 指定JCR节点的翻译提示 {#specifying-translation-hints-for-jcr-nodes}
 
-类似于 [Java™ API中的翻译提示](#using-translation-hints)中，您可以提供翻译提示以区分词典中的重复字符串。 提供翻译提示作为包含国际化属性的节点的属性。 hint属性的名称由国际化属性的名称组成，其中 `_commentI18n` 后缀：
+与Java™ API](#using-translation-hints)中的[翻译提示类似，您可以提供翻译提示以区分词典中的重复字符串。 提供翻译提示作为包含国际化属性的节点的属性。 hint属性的名称由带`_commentI18n`后缀的国际化属性名称组成：
 
 `${prop}_commentI18n`
 
-例如， `cq:page` 节点包含正在本地化的jcr：title属性。 提示作为名为jcr：title_commentI18n的属性的值提供。
+例如，`cq:page`节点包含正在本地化的jcr：title属性。 提示作为名为jcr：title_commentI18n的属性的值提供。
 
 ### 测试国际化范围 {#testing-internationalization-coverage}
 

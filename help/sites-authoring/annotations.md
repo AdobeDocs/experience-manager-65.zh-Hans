@@ -44,14 +44,14 @@ ht-degree: 33%
 
 >[!NOTE]
 >
->别忘了 [评论](/help/sites-authoring/basic-handling.md#timeline) 也可用于在页面上提供反馈。
+>请不要忘记，[评论](/help/sites-authoring/basic-handling.md#timeline)也可用于在页面上提供反馈。
 
 >[!NOTE]
 >
 >您可以对各种资源添加注释：
 >
->* [对资产添加注释](/help/assets/manage-assets.md#annotating)
->* [对视频资产添加注释](/help/assets/managing-video-assets.md#annotate-video-assets)
+>* [为资产添加批注](/help/assets/manage-assets.md#annotating)
+>* [为视频资源添加批注](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
 ### 对组件添加注释 {#annotating-a-component}

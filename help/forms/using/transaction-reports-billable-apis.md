@@ -35,9 +35,9 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
 
 计费API不考虑页数、文档或表单的长度或渲染文档的最终格式。 事务报表将事务分为两类：已渲染的文档和Forms已提交。
 
-* **Forms已提交：** 如果从使用AEM Forms创建的任何类型的表单提交数据，并且将数据提交到任何数据存储存储库或数据库，则被视为表单提交。 例如，提交自适应表单、HTML5表单、PDF forms和表单集均被视为提交的表单。 表单集中的每个表单都被视为提交。 例如，如果一个表单集有5个表单，在提交该表单集时，transaction reporting服务将其计为5次提交。
+* **Forms已提交：**&#x200B;如果从使用AEM Forms创建的任何类型的表单提交数据，并且将数据提交到任何数据存储存储库或数据库，则视为表单提交。 例如，提交自适应表单、HTML5表单、PDF forms和表单集均被视为提交的表单。 表单集中的每个表单都被视为提交。 例如，如果一个表单集有5个表单，在提交该表单集时，transaction reporting服务将其计为5次提交。
 
-* **呈现的文档：** 通过组合模板和数据来生成文档、对文档进行数字签名或认证、使用用于文档服务的可计费文档服务API或将文档从一种格式转换为另一种格式来生成文档，均被视为已渲染的文档。
+* **呈现的文档：**&#x200B;通过组合模板和数据来生成文档、对文档进行数字签名或认证、使用用于文档服务的计费文档服务API或将文档从一种格式转换为另一种格式均被视为呈现的文档。
 
 >[!NOTE]
 >
@@ -202,17 +202,17 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePDFOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PDFOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePDFOutputBatch</a></td>
    <td>合并数据和模板以创建一组PDF文档。</td>
    <td>已处理的文档</td>
-   <td> generatePDFOutputBatch API将表单模板与记录组合在一起，并生成PDF。 当您处理一批记录时，交易报告服务会将每个记录计为单独的PDF演绎版。 <br> 您可以使用 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFile</a> 用于将多个呈现组合为单个PDF文件的标记。 无论标志的状态如何，该服务都把每个记录计为单独的PDF演绎版。 </td>
+   <td> generatePDFOutputBatch API将表单模板与记录组合在一起，并生成PDF。 当您处理一批记录时，交易报告服务会将每个记录计为单独的PDF演绎版。 <br>您可以使用<a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a>标志将多个格式副本合并到单个PDF文件。 无论标志的状态如何，该服务都把每个记录计为单独的PDF演绎版。 </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-com.adobe.aemfd.docmanager.Document-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
-   <td>将XDP和PDF文档转换为PostScript (PS)、Printer Command Language (PCL)和ZPL文件格式。 </td>
+   <td>将XDP和PDF文档转换为PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
    <td>已处理的文档</td>
    <td> </td>
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutput-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.output.api.PrintedOutputOptions-" target="_blank">generatePrintedOutput</a></td>
-   <td>将XDP和PDF文档转换为PostScript (PS)、Printer Command Language (PCL)和ZPL文件格式。 </td>
+   <td>将XDP和PDF文档转换为PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
    <td>已处理的文档</td>
    <td> </td>
   </tr>
@@ -220,7 +220,7 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>将一组XDP和PDF文档转换为一组PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
    <td>已处理的文档</td>
-   <td> generatePDFOutputBatch API将表单模板与记录组合在一起，并生成PDF。 当您处理一批记录时，交易报告服务会将每个记录计为单独的PDF演绎版。 <br> 您可以使用 <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFile</a> 用于将多个呈现组合为单个PDF文件的标记。 无论标志的状态如何，该服务都把每个记录计为单独的PDF演绎版。 </td>
+   <td> generatePDFOutputBatch API将表单模板与记录组合在一起，并生成PDF。 当您处理一批记录时，交易报告服务会将每个记录计为单独的PDF演绎版。 <br>您可以使用<a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a>标志将多个格式副本合并到单个PDF文件。 无论标志的状态如何，该服务都把每个记录计为单独的PDF演绎版。 </td>
   </tr>
  </tbody>
 </table>
@@ -268,7 +268,7 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
-   <td>使用选项规范中指定的选项将FlatPDF文件转换为PostScript格式。</td>
+   <td>使用选项规范中指定的选项将平面PDF文件转换为PostScript格式。</td>
    <td>已处理的文档</td>
    <td> </td>
   </tr>
@@ -306,7 +306,7 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-">调用</a></td>
-   <td>执行指定的DDX文档并返回 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">Assemblerresult</a> 包含结果文档的对象。 </td>
+   <td>执行指定的DDX文档并返回包含结果文档的<a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a>对象。 </td>
    <td>已处理的文档</td>
    <td>下列操作不作为交易入账：
     <ul>
@@ -316,7 +316,7 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">调用</a></td>
-   <td>执行指定的DDX文档并返回 <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">Assemblerresult</a> 包含结果文档的对象。 </td>
+   <td>执行指定的DDX文档并返回包含结果文档的<a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a>对象。 </td>
    <td>已处理的文档</td>
    <td>PDF Generator、Forms和输出服务支持的所有输入文件格式，汇编程序服务支持所有这些格式作为输出文件格式。 </td>
   </tr>
@@ -360,7 +360,7 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
 
 ## 计费数据捕获API {#billable-data-capture-apis}
 
-自适应表单、HTML5 Forms和表单集的所有提交事件都将计为交易。 默认情况下，提交PDF表单不会作为交易记帐。 使用提供的 [交易记录器API](record-transaction-custom-implementation.md) 将PDF forms提交记录为事务处理。
+自适应表单、HTML5 Forms和表单集的所有提交事件都将计为交易。 默认情况下，提交PDF表单不会作为交易记帐。 使用提供的[事务记录器API](record-transaction-custom-implementation.md)将PDF forms提交记录为事务。
 
 ### 自适应表单 {#adaptive-forms}
 
@@ -504,7 +504,7 @@ AEM Forms提供了多个API来提交表单、处理文档和渲染文档。 某�
 
 ## 将可记帐API记录为自定义代码的交易 {#recording-billable-apis-as-transactions-for-custom-code}
 
-提交PDF表单、使用代理UI预览交互式通信、使用非标准表单提交和自定义实现等操作不计入事务。 AEM Forms提供了一个API，用于将此类操作记录为交易。 您可以从自定义实施中调用API以 [记录交易](/help/forms/using/record-transaction-custom-implementation.md).
+提交PDF表单、使用代理UI预览交互式通信、使用非标准表单提交和自定义实现等操作不计入事务。 AEM Forms提供了一个API，用于将此类操作记录为交易。 您可以从自定义实施中调用API以[记录事务](/help/forms/using/record-transaction-custom-implementation.md)。
 
 ## 相关文章 {#related-articles}
 

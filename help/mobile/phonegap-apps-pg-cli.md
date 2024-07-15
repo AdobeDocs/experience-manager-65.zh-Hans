@@ -32,15 +32,15 @@ ht-degree: 1%
 
 对于iOS：要针对iPhone和iPad进行开发，您需要Apple的Xcode IDE。
 
-* 免费下载 [此处](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
+* 在[此处](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1)免费下载。
 * PhoneGap iOS平台指南(`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 对于Android™：要针对iPhone和iPad进行开发，您需要Google的Android™ Stuido IDE。
 
-* 免费下载 [此处](https://developer.android.com/studio).
+* 在[此处](https://developer.android.com/studio)免费下载。
 * PhoneGap Android™平台指南(`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
-## 下载源 {#download-the-source}
+## 下载Source {#download-the-source}
 
 成功引导开发环境后，请从AEM App Build拼贴下载源：
 
@@ -48,8 +48,8 @@ ht-degree: 1%
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
-* 单击“Download Source（下载源）”。
-* 从下载源模式中选择所需的源。
+* 单击下载Source。
+* 从下载Source模式中选择所需的源。
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -88,14 +88,14 @@ phonegap run ios
 >
 >1. 创建文件夹（mkdir测试）
 >1. 导航到此新文件夹（cd测试）
->1. 运行 `phonegap create helloWorld`
+>1. 运行`phonegap create helloWorld`
 >1. 导航到helloWorld (cd helloWorld)
->1. 运行 `phonegap run android` (或将Android™替换为iOS，如上所述)。
->1. 运行新创建的PhoneGap应用程序时，模拟器会打开，并显示“设备就绪”（如果到本机的JavaScript桥接器可正常运行）。
+>1. 运行`phonegap run android`(或将Android™替换为iOS，如上所述)。
+>1. 运行新创建的PhoneGap应用程序时，模拟器会打开，并显示“设备就绪”(如果JavaScript Bridge to native可运行)。
 >
 >此故障排除可验证您的PhoneGap CLI开发环境是否正常运行。
 
-## 使用Safari和IOS调试调试JavaScript {#debug-javascripts-with-safari-and-ios-debug}
+## 使用Safari和IOS Debug调试JavaScript {#debug-javascripts-with-safari-and-ios-debug}
 
 您可以像调试Web应用程序一样，使用Safari的开发人员工具调试应用程序的JavaScript。
 
@@ -150,7 +150,7 @@ phonegap run <platform> --emulator
 
 * 使用控制按钮继续执行、逐步、单步执行或逐出方法：
 
-![五个功能不同的控制按钮对齐水平行。](do-not-localize/chlimage_1-4.png)
+![水平行中有五个功能不同的控件按钮对齐。](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
@@ -158,4 +158,4 @@ phonegap run <platform> --emulator
 
 ## 后续步骤 {#the-next-steps}
 
-了解如何使用PhoneGap CLI开发应用程序后，请参阅 [访问设备功能](/help/mobile/phonegap-access-device-features.md).
+了解如何使用PhoneGap CLI开发应用后，请参阅[访问设备功能](/help/mobile/phonegap-access-device-features.md)。

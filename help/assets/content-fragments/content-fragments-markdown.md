@@ -14,7 +14,7 @@ ht-degree: 88%
 
 # Markdown {#markdown}
 
-当您 [创作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)，内容片段编辑器使用 *Markdown* 语法让您轻松编写Headless内容：
+当您[创作](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content)时，内容片段编辑器使用&#x200B;*Markdown*&#x200B;语法来让您轻松编写Headless内容：
 
 ![Markdown 编辑器](/help/assets/content-fragments/assets/cfm-markdown-01.png)
 

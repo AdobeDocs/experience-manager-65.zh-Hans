@@ -22,9 +22,9 @@ ht-degree: 0%
 
 “用户管理”具有两种类型的角色：
 
-**可变角色：** 可以编辑和删除此类角色，也可以从这些角色类型中添加和删除角色权限。 您创建的任何角色都被视为可变角色。 您可以添加或删除分配给可变角色的用户和组。
+**可变角色：**&#x200B;可以编辑和删除此类型的角色，并且可以从这些角色类型中添加和删除角色权限。 您创建的任何角色都被视为可变角色。 您可以添加或删除分配给可变角色的用户和组。
 
-**不可变角色：** “用户管理”中包含的默认角色是不可变角色。 无法编辑或删除这些角色。 但是，您可以添加或删除分配给不可变角色的用户和组。
+**不可变角色：**&#x200B;用户管理中包含的默认角色是不可变角色。 无法编辑或删除这些角色。 但是，您可以添加或删除分配给不可变角色的用户和组。
 
 可变和不可变角色也可以通过AEM Forms API创建。
 
@@ -32,67 +32,67 @@ ht-degree: 0%
 
 “用户管理”数据库中包括以下默认角色。
 
-**管理控制台用户：** 可以访问管理控制台。
+**管理控制台用户：**&#x200B;可以访问管理控制台。
 
-**应用程序管理员：** 可以使用所有Workbench功能。 可以使用Administration Console中的“应用程序和服务”页来配置服务运行时属性、端点和安全性。
+**应用程序管理员：**&#x200B;可以使用所有Workbench功能。 可以使用Administration Console中的“应用程序和服务”页来配置服务运行时属性、端点和安全性。
 
-**AEM Forms管理员：** 可以为所有已安装的服务执行所有任务。
+**AEM Forms管理员：**&#x200B;可以为所有已安装的服务执行所有任务。
 
-**安全管理员：** 控制用户管理设置，并管理与任何用户管理器域关联的用户和组
+**安全管理员：**&#x200B;控制用户管理设置，并管理与任何用户管理器域关联的用户和组
 
-**服务用户：** 可以查看和调用任何服务
+**服务用户：**&#x200B;可以查看和调用任何服务
 
-**超级管理员：** 有权访问系统中的所有管理功能，包括服务
+**超级管理员：**&#x200B;可以访问系统中的所有管理功能，包括服务
 
-**信任管理器：** 可以管理从管理控制台的“信任存储区管理”页面管理的PKI信任设置和PKI凭据
+**信任管理员：**&#x200B;可以管理从管理控制台的“信任存储管理”页管理的PKI信任设置和PKI凭据
 
 ### 其他默认角色 {#additional-default-roles}
 
 根据您安装的AEM Forms组件，可能包括以下其他默认角色
 
-**文档上载应用程序用户：** 可以使用Flex Remoting上传文档。
+**Document Upload Application User：**&#x200B;可以使用Flex Remoting上载文档。
 
-**Forms管理员：** 可以在管理控制台的Forms页面中查看和修改设置
+**Forms管理员：**&#x200B;可以从“管理控制台”的Forms页面查看和修改设置
 
-**AEM Forms Contentspace管理员：** 可以在管理控制台的Content Services（已弃用）页面中查看和修改设置
+**AEM Forms Contentspace管理员：**&#x200B;可以从管理控制台中的“内容服务（已弃用）”页面查看和修改设置
 
-**AEM Forms Contentspace用户：** 可以登录Contentspace（已弃用）网页
+**AEM forms Contentspace用户：**&#x200B;可以登录Contentspace（已弃用）网页
 
-**Documentum Connector管理员：** 可以在管理控制台的Connector for EMC Documentum页面中查看和修改设置
+**Documentum Connector Administrator：**&#x200B;可以从管理控制台中的“EMC Documentum连接器”页面查看和修改设置
 
-**AEM Forms FileNet连接器管理员：** 可以在管理控制台的“IBM FileNet的连接器”页中查看和修改设置
+**AEM Forms FileNet连接器管理员：**&#x200B;可以从管理控制台中的IBM FileNet连接器页面查看和修改设置
 
-**AEM forms IBM CM连接器管理员：** 可以在管理控制台的“IBM Content Manager的连接器”页面中查看和修改设置
+**AEM forms IBM CM连接器管理员：**&#x200B;可以从管理控制台中的IBM Content Manager连接器页面查看和修改设置
 
-**Rights Management管理员：** 执行相关Rights Management页上所有服务器配置所需的所有任务
+**Rights Management管理员：**&#x200B;执行相关Rights Management页上所有服务器配置所需的所有任务
 
-**Rights Management最终用户：** 可以访问Rights Management最终用户网页
+**Rights Management最终用户：**&#x200B;可以访问Rights Management最终用户网页
 
-**Rights Management邀请用户：** 可以邀请用户
+**Rights Management邀请用户：**&#x200B;可以邀请用户
 
-**Rights Management管理受邀用户和本地用户：** 可以执行管理相关Rights Management页上的所有受邀用户和本地用户所需的任务
+**Rights Management管理受邀用户和本地用户：**&#x200B;可以执行管理相关Rights Management页上的所有受邀用户和本地用户所需的任务
 
-**Rights Management策略集管理员：** 执行相关Rights Management页上所有策略集所需的所有任务
+**Rights Management策略集管理员：**&#x200B;执行相关Rights Management页上所有策略集所需的所有任务
 
-**超级管理员Rights Management：** 执行Rights Management页所需的所有任务
+**Rights Management超级管理员：**&#x200B;执行Rights Management页所需的所有任务
 
-**AEM Forms工作区管理员：** 可以在管理控制台的Workspace页中查看和修改设置
+**AEM forms Workspace管理员：**&#x200B;可以在“管理控制台”的Workspace页面中查看和修改设置
 
-***注意&#x200B;**：Flex工作区在AEM Forms版本中被弃用。*
+***注意&#x200B;**： AEM Forms版本已弃用Flex Workspace。*
 
-**工作区用户：** 可以登录到Workspace最终用户应用程序
+**Workspace用户：**&#x200B;可以登录Workspace最终用户应用程序
 
-**输出管理员：** 可以在Administration Console的“输出”页中查看和修改设置
+**输出管理员：**&#x200B;可以从管理控制台的“输出”页面查看和修改设置
 
-**PDFG管理员：** 可以在管理控制台的“PDF Generator”页中查看和修改设置
+**PDFG管理员：**&#x200B;可以从管理控制台的“PDF Generator”页面查看和修改设置
 
-**PDFG用户：** 可以访问PDF Generator的所有非管理功能
+**PDFG用户：**&#x200B;可以访问PDF Generator的所有非管理功能
 
-**Acrobat Reader DC扩展Web应用程序：** 可以使用Acrobat Reader DC扩展Web应用程序
+**Acrobat Reader DC扩展Web应用程序：**&#x200B;可以使用Acrobat Reader DC扩展Web应用程序
 
 >[!NOTE]
 >
->出于安全原因，具有特定类型管理员权限的用户无法访问Workspace最终用户网页。 由于这些页面可能存在于防火墙之外，因此允许管理级任务可能会带来安全风险。 只有具有AEM Forms Workspace管理员或AEM Forms Workspace用户权限的用户才能访问Workspace最终用户网页。
+>出于安全原因，具有特定类型管理员权限的用户无法访问Workspace最终用户网页。 由于这些页面可能存在于防火墙之外，因此允许管理级任务可能会带来安全风险。 只有具有AEM forms Workspace管理员或AEM forms Workspace用户权限的用户才能访问Workspace最终用户网页。
 
 >[!NOTE]
 >
@@ -178,63 +178,63 @@ ht-degree: 0%
 
 ### AEM forms权限 {#aem-forms-permissions}
 
-**ADD_REMOVE_ENDPOINT_PERM：** 添加、删除和修改服务的端点
+**ADD_REMOVE_ENDPOINT_PERM：**&#x200B;添加、删除和修改服务的端点
 
-**Admin Console登录：** 查看管理控制台
+**登录Admin Console：**&#x200B;查看管理控制台
 
-**证书修改：** 修改信任存储区中任意证书的信任设置
+**证书修改：**&#x200B;修改信任存储区中任意证书的信任设置
 
-**证书读取：** 读取信任存储区中的任何证书
+**证书读取：**&#x200B;读取信任存储区中的任何证书
 
-**证书写入：** 将证书添加到信任存储区
+**证书写入：**&#x200B;将证书添加到信任存储区
 
-**组件添加：** 在系统中安装新组件
+**组件添加：**&#x200B;在系统中安装新组件
 
-**组件删除：** 删除系统中的任何组件
+**组件删除：**&#x200B;删除系统中的任何组件
 
-**组件读取：** 读取系统中的任何组件
+**组件读取：**&#x200B;读取系统中的任何组件
 
-**Contentspace管理员：** Contentspace（已弃用）管理员的权限
+**Contentspace管理员：** Contentspace管理员（已弃用）的权限
 
-**Contentspace控制台登录：** Contentspace（已弃用）控制台登录的权限
+**Contentspace控制台登录：**&#x200B;权限用于Contentspace（已弃用）控制台登录
 
-**核心设置控制：** 在管理控制台的“核心系统设置”页面上管理设置
+**核心设置控制：**&#x200B;在管理控制台的“核心系统设置”页面上管理设置
 
-**CREATE_VERSION_PERM：** 创建服务的版本
+**CREATE_VERSION_PERM：**&#x200B;创建服务的版本
 
-**凭据修改：** 修改信任存储区中的任何签名凭据
+**凭据修改：**&#x200B;修改信任存储区中的任何签名凭据
 
-**凭据读取：** 读取信任存储区中的任何签名凭据
+**凭据读取：**&#x200B;读取信任存储区中的任何签名凭据
 
-**凭据写入：** 将签名凭据添加到信任存储区
+**凭据写入：**&#x200B;将签名凭据添加到信任存储区
 
-**CRL修改：** 修改信任存储区中的任意CRL（证书吊销列表）
+**CRL修改：**&#x200B;修改信任存储区中的任意CRL（证书吊销列表）
 
-**CRL读取：** 读取信任存储区中的任意CRL
+**CRL读取：**&#x200B;读取信任存储区中的任何CRL
 
-**CRL写入：** 将CRL添加到信任存储区
+**CRL写入：**&#x200B;向信任存储区添加CRL
 
-**委派：** 在资源上设置ACL
+**委派：**&#x200B;在资源上设置ACL
 
-**DELETE版本PERM：** 删除服务的版本
+**DELETE_版本_PERM：**&#x200B;删除服务的版本
 
-**文档上传：** 在AEM表单中上传文档
+**文档上载：**&#x200B;在AEM表单中上载文档
 
-**域控制：** 创建、删除或修改任何用户管理域的设置，包括其身份验证和目录提供程序
+**域控制：**&#x200B;创建、删除或修改任何用户管理域的设置，包括其身份验证和目录提供程序
 
-**事件类型编辑：** 编辑事件类型
+**事件类型编辑：**&#x200B;编辑事件类型
 
-**身份模拟控制：** 在用户管理器中模拟身份
+**身份模拟控件：**&#x200B;在用户管理器中模拟身份
 
-**INVOKE_PERM：** 对服务调用所有操作
+**INVOKE_PERM：**&#x200B;调用服务上的所有操作
 
-**LCDS数据模型控制：** 读取和部署数据服务中的数据模型
+**LCDS数据模型控件：**&#x200B;读取和部署数据服务中的数据模型
 
-**License Manager更新：** 更新许可证信息
+**许可证管理器更新：**&#x200B;更新许可证信息
 
-**MODIFY_CONFIG_PERM：** 修改服务的配置
+**MODIFY_CONFIG_PERM：**&#x200B;修改服务的配置
 
-**术语** 修改服务的版本
+**TERM**&#x200B;修改服务的版本
 
 **PDFGAdminPermission：** PDFG管理员
 
@@ -244,99 +244,99 @@ ht-degree: 0%
 
 **PERM_FILENET_ADMIN：** FileNet连接器管理员
 
-**PERM_FORMS_管理员：** Forms管理员
+**PERM_FORMS_ADMIN：** Forms管理员
 
-**PERM_IBMCM_ADMIN：** IBM CM连接器管理员
+**PERM_IBMCM_ADMIN：** IBM CM Connector管理员
 
-**PERM_OUTPUT_ADMIN：** 输出管理员
+**PERM_OUTPUT_ADMIN：**&#x200B;输出管理员
 
-**PERM_APPLICATION_EXTENSIONS_WEB_READER：** 使用Acrobat Reader DC扩展Web应用程序
+**PERM_READER_扩展_WEB_APPLICATION：**&#x200B;使用Acrobat Reader DC扩展Web应用程序
 
-**PERM_SP管理员：** 管理SharePoint连接器设置
+**PERM_SP_ADMIN：**&#x200B;管理SharePoint连接器设置
 
-**PERM_工作区_管理员：** 管理工作区设置
+**PERM_WORKSPACE_ADMIN：**&#x200B;管理Workspace设置
 
-**PERM_WORKSPACE_USER：** 登录到Workspace最终用户应用程序
+**PERM_WORKSPACE_USER：**&#x200B;登录到Workspace最终用户应用程序
 
-**主体控制：** 管理任何域的用户和组，以及管理任何域中所有用户和组的角色分配
+**主体控件：**&#x200B;管理任何域的用户和组，并管理任何域中所有用户和组的角色分配
 
-**处理记录读取/删除：** 列出和检索工作流审核实例
+**处理记录读取/删除：**&#x200B;列表并检索工作流审核实例
 
-**PROCESS_OWNER_PERM：** 查看趋势数据并对从流程创建的服务执行管理操作
+**PROCESS_OWNER_PERM：**&#x200B;查看趋势数据并对从进程创建的服务执行管理操作
 
-**阅读：** 读取资源的内容
+**读取：**&#x200B;读取资源的内容
 
-**READ_PERM：** 读取或查看服务
+**READ_PERM：**&#x200B;读取或查看服务
 
-**续订断言：** 在用户管理中续订断言
+**续订断言：**&#x200B;在用户管理中续订断言
 
-**存储库委派：** 在资源上设置ACL
+**存储库委派：**&#x200B;在资源上设置ACL
 
-**存储库读取：** 读取资源的内容
+**存储库读取：**&#x200B;读取资源的内容
 
-**存储库遍历：** 在列表资源请求中包含资源或读取资源的元数据
+**存储库遍历：**&#x200B;在列表资源请求中包含资源或读取资源的元数据
 
-**存储库写入：** 写入存储库元数据和内容
+**存储库写入：**&#x200B;写入存储库元数据和内容
 
-**Rights Management更改策略所有者：** 更改策略所有者
+**Rights Management更改策略所有者：**&#x200B;更改策略所有者
 
-**最终用户控制台登录Rights Management：** 登录到Rights Management最终用户UI
+**Rights Management最终用户控制台登录：**&#x200B;登录到Rights Management最终用户UI
 
-**Rights Management管理配置：** 管理服务器配置
+**Rights Management管理配置：**&#x200B;管理服务器配置
 
-**Rights Management管理受邀用户和本地用户：** 管理受邀用户和本地用户
+**Rights Management管理受邀用户和本地用户：**&#x200B;管理受邀用户和本地用户
 
-**Rights Management管理策略集：** 管理任何策略集中的所有策略和文档
+**Rights Management管理策略集：**&#x200B;管理任何策略集中的所有策略和文档
 
-**Rights Management策略集添加协调器：** 添加、删除和更改策略集协调器的权限
+**Rights Management策略集添加协调器：**&#x200B;添加、删除和更改策略集协调器的权限
 
-**Rights Management策略集创建策略：** 为策略集创建策略
+**Rights Management策略集创建策略：**&#x200B;为策略集创建策略
 
-**Rights Management策略集删除策略：** 从策略集中删除策略
+**Rights Management策略集删除策略：**&#x200B;从策略集中删除策略
 
-**Rights Management策略集编辑策略：** 编辑策略集中的策略
+**Rights Management策略集编辑策略：**&#x200B;编辑策略集中的策略
 
-**Rights Management策略集管理文档发布者：** 创建策略集时，可以为用户分配文档发布者的角色。 文档发布者是使用策略保护文档的用户。
+**Rights Management策略集管理文档发布者：**&#x200B;在创建策略集时，您为用户分配文档发布者的角色。 文档发布者是使用策略保护文档的用户。
 
-**Rights Management策略集删除协调器：** 从策略集中删除策略集协调器
+**Rights Management策略集删除协调器：**&#x200B;从策略集中删除策略集协调器
 
-**Rights Management策略集撤销文档：** 撤销对策略集中文档的访问权限
+**Rights Management策略集撤销文档：**&#x200B;撤销对策略集中文档的访问权限
 
-**Rights Management策略集切换策略：** 切换文档的策略
+**Rights Management策略集切换策略：**&#x200B;文档切换策略
 
-**Rights Management策略集取消撤销文档：** 取消撤销文档
+**Rights Management策略集取消撤销文档：**&#x200B;取消撤销文档
 
-**Rights Management策略集查看事件：** 查看策略集中任何策略或文档的策略和文档事件
+**Rights Management策略集查看事件：**&#x200B;查看策略集中任何策略或文档的策略和文档事件
 
-**Rights Management查看服务器事件：** 搜索并查看所有审核事件
+**Rights Management查看服务器事件：**&#x200B;搜索并查看所有审核事件
 
-**角色控制：** 在用户管理中创建、删除和修改角色
+**角色控制：**&#x200B;创建、删除和修改用户管理中的角色
 
-**服务激活：** 启动任何服务，使其可用于调用
+**服务激活：**&#x200B;启动任何服务，使其可用于调用
 
-**服务添加：** 将新服务部署到服务注册表。 这包括添加新流程和流程变体
+**服务添加：**&#x200B;将新服务部署到服务注册表。 这包括添加新流程和流程变体
 
-**服务停用：** 停止系统中的任何服务
+**服务停用：**&#x200B;停止系统中的任何服务
 
-**服务删除：** 删除系统中的任何服务，包括流程和流程变体
+**服务删除：**&#x200B;删除系统中的任何服务，包括进程和进程变体
 
-**服务调用：** 在运行时调用服务注册表中的任何服务
+**服务调用：**&#x200B;调用运行时可用的服务注册表中的任何服务
 
-**服务修改：** 修改系统中任何服务的配置属性。 这包括锁定和解锁IDE中的服务，以及添加或删除服务的端点
+**服务修改：**&#x200B;修改系统中任何服务的配置属性。 这包括锁定和解锁IDE中的服务，以及添加或删除服务的端点
 
-**服务读取：** 读取系统中的所有服务。 这包括所有进程和进程变体
+**服务读取：**&#x200B;读取系统中的任何服务。 这包括所有进程和进程变体
 
-**SERVICE_AGENT_PERM：** 查看从流程创建的服务的数据，并与流程实例交互
+**SERVICE_AGENT_PERM：**&#x200B;查看从进程创建的服务的数据，并与进程实例交互
 
-**SERVICE_MANAGER_PERM：** 对从进程创建的服务执行负载平衡和其他管理操作
+**SERVICE_MANAGER_PERM：**&#x200B;对从进程创建的服务执行负载平衡和其他管理操作
 
-**START_STOP_PERM：** 启动或停止服务
+**START_STOP_PERM：**&#x200B;启动或停止服务
 
-**SUPERVISOR_PERM：** 查看从进程创建的服务的进程实例数据
+**SUPERVISOR_PERM：**&#x200B;查看从进程创建的服务的进程实例数据
 
-**遍历：** 在列表资源请求中包含资源或读取资源的元数据
+**遍历：**&#x200B;在列表资源请求中包含资源或读取资源的元数据
 
-**写入：** 写入存储库元数据和内容
+**写入：**&#x200B;写入存储库元数据和内容
 
 **在Workbench中打开文件**
 

@@ -34,29 +34,29 @@ AEM portal体系结构包括portal和portlet的定义。
 
 门户是一种Web应用程序，它提供个性化、单点登录、来自不同来源的内容集成，并承载信息系统的表示层。
 
-您可以在AEM中运行符合JSR 286标准的Portlet。 利用portlet组件，可在页面上嵌入portlet。 请参阅 [管理AEM内容Portlet](#administeringthecqcontentportlet).
+您可以在AEM中运行符合JSR 286标准的Portlet。 利用portlet组件，可在页面上嵌入portlet。 请参阅[管理AEM内容Portlet](#administeringthecqcontentportlet)。
 
 ### 什么是portlet？ {#what-is-a-portlet}
 
 Portlet是部署在生成动态内容的容器中的Web组件。 Portlet接口打包并部署为Portlet容器中的.war文件。 如果您将AEM作为门户运行，则需要Portlet的.war文件才能运行Portlet。
 
-要将AEM内容配置为显示在门户中，请参阅 [在Portlet中安装、配置和使用AEM](#installingconfiguringandusingcqinaportlet).
+要将AEM内容配置为显示在门户中，请参阅[在Portlet中安装、配置和使用AEM](#installingconfiguringandusingcqinaportlet)。
 
 ### AEM Portal Director {#aem-portal-director}
 
 >[!CAUTION]
 >
->AEM Portal Director自AEM 6.4起已弃用。请参阅 [已弃用和已删除的功能](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>AEM Portal Director自AEM 6.4起已弃用。请参阅[已弃用和已删除的功能](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html)。
 
 ## 管理AEM内容Portlet {#administering-the-aem-content-portlet}
 
-AEM内容Portlet允许您在门户中显示AEM内容。 Portlet位于 `/crx-quickstart/opt/portal`、和可以通过各种方式进行自定义。 例如，您可以通过部署自己的身份验证服务来自定义SSO/身份验证处理，从而为AEM生成覆盖默认行为所需的身份验证信息。 这些插件使用定义的API，允许您通过根据API构建插件来添加自己的功能。 可以将插件部署到正在运行的Portlet中。 为了正常运行，它需要在启动时显示AEM创作和发布实例的配置以及内容路径。
+AEM内容Portlet允许您在门户中显示AEM内容。 该Portlet在`/crx-quickstart/opt/portal`上可用，并且可以通过多种方式进行自定义。 例如，您可以通过部署自己的身份验证服务来自定义SSO/身份验证处理，从而为AEM生成覆盖默认行为所需的身份验证信息。 这些插件使用定义的API，允许您通过根据API构建插件来添加自己的功能。 可以将插件部署到正在运行的Portlet中。 为了正常运行，它需要在启动时显示AEM创作和发布实例的配置以及内容路径。
 
-某些配置可通过portlet首选项更改，而其他配置可通过OSGi服务配置更改。 您可使用更改这些配置 **config** 文件或OSGi Web控制台。
+某些配置可通过portlet首选项更改，而其他配置可通过OSGi服务配置更改。 您可以使用&#x200B;**配置**&#x200B;文件或OSGi Web控制台更改这些配置。
 
 ### Portlet首选项 {#portlet-preferences}
 
-可以在部署时在门户服务器中或通过编辑 **WEB-INF/portlet.xml** 文件，然后再部署portlet web应用程序。 默认情况下，portlet.xml文件显示如下：
+在部署portlet web应用程序之前，可以在门户服务器中进行部署时配置Porlet首选项，也可以编辑&#x200B;**WEB-INF/portlet.xml**&#x200B;文件来进行配置。 默认情况下，portlet.xml文件显示如下：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -109,11 +109,11 @@ AEM内容Portlet允许您在门户中显示AEM内容。 Portlet位于 `/crx-quic
  <tbody>
   <tr>
    <td>start路径</td>
-   <td><p>这是Portlet的开始路径：它定义最初显示的内容。</p> <p><strong>重要</strong>：如果Portlet配置为连接到在上下文路径上运行的AEM创作和发布实例，该上下文路径不是<strong> /</strong>，您需要启用该力 <strong>CQUrlInfo</strong> 在这些AEM实例的Html库管理器配置中（例如，通过Felix Webconsole），或编辑将不起作用，并且不会显示首选项对话框。</p> </td>
+   <td><p>这是Portlet的开始路径：它定义最初显示的内容。</p> <p><strong>重要信息</strong>：如果将Portlet配置为连接到在<strong> /</strong>以外的上下文路径上运行的AEM创作和发布实例，则需要在这些AEM实例的Html库管理器配置（例如，通过Felix Webconsole）中启用强制<strong>CQUrlInfo</strong>，否则将无法进行编辑，并且不会显示首选项对话框。</p> </td>
   </tr>
   <tr>
    <td>html选择器</td>
-   <td>附加到每个url的选择器。 默认情况下，这是 <strong>portlet</strong>，因此所有对html页面的请求都使用以结尾的url <strong>.portlet.html。</strong> 这允许在AEM中使用自定义脚本来渲染portlet。</td>
+   <td>附加到每个url的选择器。 默认情况下，这是<strong>portlet</strong>，因此对html页面的所有请求都使用以<strong>.portlet.html结尾的url。</strong>这允许在AEM中使用自定义脚本来渲染portlet。</td>
   </tr>
   <tr>
    <td>addCssToPortalHeader</td>
@@ -133,16 +133,16 @@ AEM内容Portlet允许您在门户中显示AEM内容。 Portlet位于 `/crx-quic
   </tr>
   <tr>
    <td>initialRedirect</td>
-   <td>默认情况下， portlet会在第一次调用时对整个门户页面执行javascript重定向。 这是为了支持现代门户服务器的拖放方案。 在生产环境中，很少需要此重定向，因此可以将此首选项设置为并关闭 <em>false</em>.</td>
+   <td>默认情况下， portlet会在第一次调用时对整个门户页面执行javascript重定向。 这是为了支持现代门户服务器的拖放方案。 在生产环境中，很少需要此重定向，因此可以将此首选项设置为<em>false</em>来将其关闭。</td>
   </tr>
  </tbody>
 </table>
 
 #### OSGi Web控制台 {#osgi-web-console}
 
-假定门户服务器在主机localhost上运行，端口8080 ，并且AEM portlet web应用程序装载在Web应用程序上下文中 *cqportlet*，Web控制台的URL为 `https://localhost:8080/cqportlet/cqbridge/system/console`. 默认的用户和密码为 **管理员**.
+假定门户服务器在主机localhost（端口8080）上运行，并且AEM portlet web应用程序装载在Web应用程序上下文&#x200B;*cqportlet*&#x200B;中，则Web控制台的URL为`https://localhost:8080/cqportlet/cqbridge/system/console`。 默认用户和密码为&#x200B;**admin**。
 
-打开 **配置** 选项卡并选择 **门户目录CQ服务器配置**. 您可以在此处指定作者和发布实例的基本URL。 此过程在中介绍 [配置Portlet](#configuring-the-portlet).
+打开&#x200B;**配置**&#x200B;选项卡并选择&#x200B;**门户目录CQ服务器配置**。 您可以在此处指定作者和发布实例的基本URL。 [配置Portlet](#configuring-the-portlet)中介绍了此过程。
 
 >[!NOTE]
 >
@@ -152,13 +152,13 @@ AEM内容Portlet允许您在门户中显示AEM内容。 Portlet位于 `/crx-quic
 
 为了支持自动部署和配置预配， AEM content portlet具有内置的配置支持，它尝试从提供给portlet应用程序的类路径中读取配置。
 
-启动时，系统属性 **com.day.cq.portet.config** 读取以检测当前环境。 通常，此属性的值类似于 **开发**， **prod**， **测试**，等等。 如果未设置环境，则不会读取任何配置。
+启动时，读取系统属性&#x200B;**com.day.cq.portet.config**&#x200B;以检测当前环境。 通常，此属性的值类似于&#x200B;**dev**、**prod**、**test**&#x200B;等。 如果未设置环境，则不会读取任何配置。
 
-如果设置了环境，则会在* *的类路径中搜索配置文件&#x200B;**com/day/cq/portlet/{env}.config** 位置 **环境** 替换为环境的实际值。 此文件应列出此环境的所有配置文件。 这些文件将相对于配置文件的位置进行搜索。 例如，如果文件包含行 `my.service.xml,` 此文件是从的类路径中读取的 `com/day/cq/portlet/my.service.config.` 文件的名称由服务的持久性ID组成，后跟有 **.config**. 在上一个示例中，持久性ID是 **my.service**. 配置文件的格式，是Apache Sling OSGi安装程序使用的格式。
+如果设置了环境，则会在at* ***com/day/cq/portlet/{env}.config**&#x200B;的类路径中搜索配置文件，其中&#x200B;**env**&#x200B;被替换为环境的实际值。 此文件应列出此环境的所有配置文件。 这些文件将相对于配置文件的位置进行搜索。 例如，如果文件包含一行`my.service.xml,`，则此文件将从位于`com/day/cq/portlet/my.service.config.`的类路径中读取。文件的名称由服务的持久性ID组成，后跟&#x200B;**.config**。 在上一个示例中，持久性ID是&#x200B;**my.service**。 配置文件的格式，是Apache Sling OSGi安装程序使用的格式。
 
 这意味着，对于每个环境，需要添加相应的配置文件。 应应用于所有环境的配置需要在所有这些文件中输入 — 如果仅用于单个环境，则只需在该文件中输入。 此机制可确保完全控制在哪个环境中读取哪个配置。
 
-可以使用其他系统属性来检测环境。 指定系统属性 **com.day.cq.portet.configproperty** 包含要使用的系统属性的名称，而不是 **com.day.cq.portet.config**.
+可以使用其他系统属性来检测环境。 指定包含要使用的系统属性名称的系统属性&#x200B;**com.day.cq.portet.configproperty**，而不是&#x200B;**com.day.cq.portet.config**。
 
 #### 缓存和缓存失效 {#caching-and-caching-invalidation}
 
@@ -166,13 +166,13 @@ Portlet在其默认配置中将从AEM WCM收到的响应缓存在用户特定的
 
 Portlet可以配置自己的缓存，以便显示Portlet中的内容而不需要访问AEM。 该门户可作为/libs/portal/director中的内容使用。 要访问内容，请启动AEM实例，并使用CRXDE Lite或Webdav从该位置下载文件。
 
-您可以在运行时部署此捆绑包，也可以将其添加到位于的portlet web应用程序中 `WEB-INF/lib/resources/bundles` 部署之前。
+您可以在运行时部署此捆绑包，或者在部署之前将其添加到位于`WEB-INF/lib/resources/bundles`的Portlet Web应用程序。
 
 部署缓存后，portlet将缓存发布实例中的内容。 可以通过AEM中的Dispatcher刷新使Portlet缓存失效。 要将Portlet配置为使用自己的缓存，请执行以下操作：
 
 1. 在作者中配置以门户服务器为目标的复制代理。
-1. 假定门户服务器在主机上运行 **localhost**，**端口8080 **，AEM portlet web应用程序装载在上下文中 **cqportlet**，刷新缓存的url为 `https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. 使用GET作为方法。
-   **注意：** 您可以发送名为的http标头，而不是使用请求参数 **路径**.
+1. 假定门户服务器在主机&#x200B;**localhost** **port 8080 **上运行，并且上下文&#x200B;**cqportlet**&#x200B;中装载了AEM portlet Web应用程序，则用于刷新缓存的URL为`https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`。 使用GET作为方法。
+   **注意：**&#x200B;您可以发送名为&#x200B;**Path**&#x200B;的http标头，而不使用请求参数。
 
 #### 通过复制代理刷新缓存 {#flushing-the-cache-via-replication-agent}
 
@@ -183,12 +183,12 @@ Portlet可以配置自己的缓存，以便显示Portlet中的内容而不需要
 要为入口配置复制代理，请执行以下操作：
 
 1. 登录到创作实例。
-1. 在网站选项卡中，单击 *工具* 选项卡。
-1. 单击 **新建页面……** 在复制代理中 **新建……** 菜单。
+1. 在“网站”选项卡中，单击&#x200B;*工具*&#x200B;选项卡。
+1. 在复制代理&#x200B;**新建……**&#x200B;菜单中单击&#x200B;**新建页面……**。
 
    ![screen_shot_2012-02-15at40647pm](assets/screen_shot_2012-02-15at40647pm.png)
 
-1. 在 *模板*，选择 *复制代理*，并输入代理的名称。 单击&#x200B;*创建*。
+1. 在&#x200B;*模板*&#x200B;中，选择&#x200B;*复制代理*，然后输入代理的名称。 单击&#x200B;*创建*。
 
    ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
@@ -196,13 +196,13 @@ Portlet可以配置自己的缓存，以便显示Portlet中的内容而不需要
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
-1. 单击 **编辑。**
-1. 在 **设置** 选项卡，选择 **已启用** 复选框，选择 **Dispatcher刷新** 作为序列化类型，并输入重试超时(例如，60000)。
+1. 单击&#x200B;**编辑。**
+1. 在&#x200B;**设置**&#x200B;选项卡中，选中&#x200B;**已启用**&#x200B;复选框，选择&#x200B;**Dispatcher刷新**&#x200B;作为序列化类型，并输入重试超时(例如，60000)。
 
    ![screen_shot_2012-02-15at42101pm](assets/screen_shot_2012-02-15at42101pm.png)
 
-1. 单击 **传输** 选项卡。
-1. 在 **URI** 字段中，输入Portlet的刷新URI (URL)。 URI的格式如下：
+1. 单击“**传输**”选项卡。
+1. 在&#x200B;**URI**&#x200B;字段中，输入Portlet的刷新URI (URL)。 URI的格式如下：
 
    ```xml
    https://<wps-host>:<port>/<wps-context>/<cq5-portlet-context>/cqbridge/cqpcache
@@ -210,31 +210,31 @@ Portlet可以配置自己的缓存，以便显示Portlet中的内容而不需要
 
    ![screen_shot_2012-02-15at42322pm](assets/screen_shot_2012-02-15at42322pm.png)
 
-1. 单击 **扩展** 选项卡。
+1. 单击&#x200B;**扩展**&#x200B;选项卡。
 
    ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
 
-1. 在 **HTTP方法** 字段，类型 **GET**.
-1. 在 **HTTP头** 字段，请单击 **+** 添加新条目并键入 **路径： {path}**.
-1. 如有必要，请单击 **代理** 选项卡，并输入代理的代理信息。
-1. 单击 **确定** 以保存更改。
-1. 要测试连接，请单击 **测试连接** 链接。 将显示一条日志消息，指示复制测试是否成功。 例如：
+1. 在&#x200B;**HTTP方法**&#x200B;字段中，键入&#x200B;**GET**。
+1. 在&#x200B;**HTTP标头**&#x200B;字段中，单击&#x200B;**+**&#x200B;以添加新条目并键入&#x200B;**路径： {path}**。
+1. 如有必要，请单击&#x200B;**代理**&#x200B;选项卡，然后输入代理的代理信息。
+1. 单击&#x200B;**确定**&#x200B;以保存更改。
+1. 要测试连接，请单击&#x200B;**测试连接**&#x200B;链接。 将显示一条日志消息，指示复制测试是否成功。 例如：
 
    ![screen_shot_2012-02-15at42639pm](assets/screen_shot_2012-02-15at42639pm.png)
 
 #### 手动刷新Portlet缓存 {#manually-flushing-the-portlet-cache}
 
-您可以通过访问为复制代理配置的相同URL来手动刷新Portlet缓存。 请参阅 [刷新缓存](#flushing-the-cache-via-replication-agent) （对于URL形式）。 此外，需要使用URL参数Path=来扩展URL&lt;path> 以指示要刷新的内容。
+您可以通过访问为复制代理配置的相同URL来手动刷新Portlet缓存。 有关URL的形式，请参阅[刷新缓存](#flushing-the-cache-via-replication-agent)。 此外，需要使用URL参数Path=&lt;path>来扩展URL以指示要刷新的内容。
 
 例如：
 
-`https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=*` 刷新完整的缓存。 `https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=/content/mypage/xyz` 刷新 `/content/mypage/xyz` 从缓存中。
+`https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=*`刷新完整的缓存。 `https://10.0.20.99:10040/wps/PA_CQ5_Portlet/cqbridge/cqpcache?Path=/content/mypage/xyz`从缓存中刷新`/content/mypage/xyz`。
 
 ### 门户安全 {#portal-security}
 
 门户是驱动身份验证机制。 您可以通过技术用户、门户用户、群组等登录AEM。 Portlet无法访问门户中用户的密码，因此，如果Portlet不知道成功登录用户的所有凭据，则必须使用SSO解决方案。 在这种情况下， AEM portlet将所有必需的信息转发到AEM ，再将此信息转发到底层AEM存储库。 此行为是可插拔的，并且可以自定义。
 
-### 发布时身份验证 {#authentication-on-publish}
+### Publish上的身份验证 {#authentication-on-publish}
 
 本节介绍Portlet在与基础AEM WCM实例通信时可以使用的可用身份验证模式。
 
@@ -248,7 +248,7 @@ Portlet在AEM WCM实例中使用的身份验证配置选项在Web控制台（OSG
 >
 >使用AEM时，可通过多种方法管理OSGi服务的配置设置（控制台或存储库节点）。
 >
->请参阅 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以了解全部详细信息。
+>有关完整详细信息，请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md)。
 
 要访问Portlet的身份验证配置：
 
@@ -260,16 +260,16 @@ Portlet在AEM WCM实例中使用的身份验证配置选项在Web控制台（OSG
 
    `https://wps-host:10040/wps/PA_CQ5_Portlet/cqbridge/system/console`
 
-1. 登录到Web控制台。 默认凭据为 `admin/admin`.
-1. 在控制台中，选择 **配置**.
-1. 在 **配置** 菜单，选择要配置的特定服务。 服务由Portlet在OSGi框架中提供。
+1. 登录到Web控制台。 默认凭据为`admin/admin`。
+1. 在控制台中选择&#x200B;**配置**。
+1. 在&#x200B;**配置**&#x200B;菜单中，选择要配置的特定服务。 服务由Portlet在OSGi框架中提供。
 
    | 服务名称 | 描述 |
    |---|---|
    | Day Portal Director Authenticator | 配置用于AEM WCM实例的身份验证模式。 根据所选模式，可以指定技术用户或SSO Cookie的名称。 此外，可以启用AEM WCM发布实例的身份验证。 |
    | Day Portal Director文件缓存 | 配置Portlet如何缓存其从AEM WCM实例接收的响应的参数。 |
    | Day Portal Director HTTP客户端服务 | 配置Portlet如何通过HTTP连接到底层AEM WCM实例。 例如，您可以指定代理服务器。 |
-   | Day Portal Director区域设置处理程序 | 配置portlet支持的区域设置。 对AEM WCM实例的请求基于用户区域设置；例如，用户语言*德语*将请求 `/content/geometrixx/de/`.... |
+   | Day Portal Director区域设置处理程序 | 配置portlet支持的区域设置。 对AEM WCM实例的请求基于用户区域设置；例如，用户语言*德语*将请求`/content/geometrixx/de/`.... |
    | Day Portal Director权限管理器 | 配置portlet是否应该根据当前登录的用户来测试Websites选项卡。 |
    | Day Portal Director工具栏渲染器 | 自定义Portlet工具栏的呈现。 |
 
@@ -279,13 +279,13 @@ Portlet在AEM WCM实例中使用的身份验证配置选项在Web控制台（OSG
 
 在默认模式下，由Portlet针对AEM WCM创作实例发出的所有请求都使用同一技术用户进行验证，而不管当前是Portal用户。 默认情况下，“技术用户”模式处于启用状态。 您可以在OSGi管理控制台的相应配置屏幕中启用/禁用此模式：
 
-如果符合以下条件，指定的技术用户必须存在于AEM WCM创作实例和发布实例上 **发布时进行身份验证** 已启用。 请确保授予用户足够的访问权限以进行创作工作。
+如果启用了Publish **上的**&#x200B;身份验证，指定的技术用户必须存在于AEM WCM创作实例和发布实例上。 请确保授予用户足够的访问权限以进行创作工作。
 
 #### SSO {#sso}
 
-Portlet支持开箱即用的AEM的SSO。 验证器服务可以配置为使用SSO并以格式传输当前门户用户 **基本** 作为名为的Cookie `cqpsso` 到AEM。 应将AEM配置为对路径/使用SSO身份验证处理程序。 还需要在此处配置Cookie名称。
+Portlet支持开箱即用的AEM的SSO。 验证器服务可以配置为使用SSO并将格式为&#x200B;**Basic**&#x200B;的当前门户用户作为名为`cqpsso`的Cookie传输到AEM。 应将AEM配置为对路径/使用SSO身份验证处理程序。 还需要在此处配置Cookie名称。
 
-此 `crx-quickstart/repository/repository.xml` (对于AEM存储库)需要相应地配置：
+需要相应地配置AEM存储库的`crx-quickstart/repository/repository.xml`：
 
 ```xml
 <LoginModule class="com.day.crx.security.authentication.CRXLoginModule">
@@ -297,7 +297,7 @@ Portlet支持开箱即用的AEM的SSO。 验证器服务可以配置为使用SSO
 
 #### SSO身份验证模式 {#sso-authentication-mode}
 
-Portlet可以使用单点登录(SSO)方案为AEM WCM进行身份验证。 在此模式下，当前登录到门户的用户将以SSO Cookie的形式转发到AEM WCM。 如果使用SSO模式，则底层AEM WCM实例必须知道所有有权访问AEM Portlet的门户用户，最常见的方式是将AEM WCM连接到LDAP，或事先手动创建用户。 此外，在Portlet中启用SSO之前，底层AEM WCM创作实例(和发布实例，如果 **发布时进行身份验证** （已启用）需要配置为接受基于SSO的请求。
+Portlet可以使用单点登录(SSO)方案为AEM WCM进行身份验证。 在此模式下，当前登录到门户的用户将以SSO Cookie的形式转发到AEM WCM。 如果使用SSO模式，则底层AEM WCM实例必须知道所有有权访问AEM Portlet的门户用户，最常见的方式是将AEM WCM连接到LDAP，或事先手动创建用户。 此外，在Portlet中启用SSO之前，需要将基础AEM WCM创作实例(和发布实例，如果在Publish **上启用了**&#x200B;身份验证)配置为接受基于SSO的请求。
 
 要将Portlet配置为使用SSO身份验证模式，请完成以下步骤（以下各节中详述）：
 
@@ -313,7 +313,7 @@ Portlet可以使用单点登录(SSO)方案为AEM WCM进行身份验证。 在此
 
    `//crx-quickstart/repository/repository.xml`
 
-1. 在XML文件中，找到 **登录模块** 并将trust_credentials_attribute添加到其配置中：
+1. 在XML文件中，找到&#x200B;**LoginModule**&#x200B;的条目，并将trust_credentials_attribute添加到其配置中：
 
    ```xml
    <LoginModule class="com.day.crx.security.authentication.CRXLoginModule">
@@ -329,24 +329,24 @@ Portlet可以使用单点登录(SSO)方案为AEM WCM进行身份验证。 在此
 
 要在AEM WCM中启用SSO，请在AEM WCM的Apache Felix Web管理控制台(OSGi)中访问相关的配置条目：
 
-1. 通过其URI (位于https:// )访问控制台&lt;aem-host>：&lt;port>/system/console。
+1. 通过其URI访问该控制台，该URI位于https://&lt;AEM-host>：&lt;port>/system/console。
 1. 在配置菜单中，选择SSO身份验证处理程序。 在此示例中，SSO处理程序根据AEM Portlet提供的Cookie接受所有路径的SSO请求。 您的配置可能有所不同。
 
    | 路径 | / | 为所有请求启用SSO处理程序 |
    |---|---|---|
    | Cookie名称 | cqpsso | 由Portlet提供的Cookie的名称，如Portlet的OSGi控制台中所配置。 |
 
-1. 单击 **保存** 以启用SSO。 SSO现在是主要的身份验证方案。
+1. 单击&#x200B;**保存**&#x200B;以启用SSO。 SSO现在是主要的身份验证方案。
 
 对于AEM WCM收到的每个请求，首先会尝试基于SSO的身份验证。 失败时，执行对常规基本身份验证方案的回退。 因此，与没有SSO的AEM WCM的正常连接仍然可用。
 
 #### 在AEM Portlet中启用SSO身份验证 {#enabling-sso-authentication-in-a-aem-portlet}
 
-为了使底层AEM WCM实例接受SSO请求，必须将portlet的身份验证模式从 **技术** 到 **SSO**.
+为了使基础AEM WCM实例接受SSO请求，必须将Portlet的身份验证模式从&#x200B;**技术**&#x200B;切换到&#x200B;**SSO**。
 
 要在AEM Portlet中启用SSO身份验证，请执行以下操作：
 
-1. 通过其URI (位于https:// )访问控制台&lt;aem-host>：&lt;port>/system/console。
+1. 通过其URI访问该控制台，该URI位于https://&lt;aem-host>：&lt;port>/system/console。
 1. 在配置菜单中，从可用配置列表中选择Day Portal Director Authenticator 。
 1. 在模式中，选择SSO。 将其他参数保留为其默认值。
 
@@ -389,8 +389,8 @@ C-12-#002289 -> [ ]
    </LoginModule>
    ```
 
-1. 在OSGi配置控制台中，默认位于https://localhost:4502/system/console/configMgr，选择 **CQ PIN身份验证处理程序** 从下拉菜单中。
-1. 编辑 **URL根路径** 参数以仅包含单个值 **/**.
+1. 在OSGi配置控制台中，默认位于https://localhost:4502/system/console/configMgr，从下拉菜单中选择&#x200B;**CQ PIN身份验证处理程序**。
+1. 编辑&#x200B;**URL根路径**&#x200B;参数以仅包含单个值&#x200B;**/**。
 
 ### 特权 {#privileges}
 
@@ -418,9 +418,9 @@ portlet的某些功能受权限保护。 当前用户需要具有此权限才能
 
 工具栏及其按钮是可配置的，并且可以对其进行自定义。 您可以将自己的按钮添加到工具栏中，或者定义在哪种模式下显示哪些按钮。 每个按钮都是可通过OSGi配置配置的OSGi服务。
 
-OSGi Web控制台列出了 **配置** 选项卡。 对于每个按钮，您可以定义此按钮在何种模式下显示。 例如，通过删除所有模式，可禁用按钮。
+OSGi Web控制台列出了&#x200B;**配置**&#x200B;选项卡上的所有按钮配置。 对于每个按钮，您可以定义此按钮在何种模式下显示。 例如，通过删除所有模式，可禁用按钮。
 
-默认情况下， AEM内容Portlet使用内联编辑功能。 但是，如果您希望切换到AEM创作实例进行编辑，请启用 **站点管理员按钮** 和 **ContentFinder按钮**，但禁用 **编辑按钮**. 在这种情况下，请确保在AEM中正确配置PIN身份验证。
+默认情况下， AEM内容Portlet使用内联编辑功能。 但是，如果您希望切换到AEM创作实例进行编辑，请启用&#x200B;**SiteAdmin按钮**&#x200B;和&#x200B;**ContentFinder按钮**，但禁用&#x200B;**编辑按钮**。 在这种情况下，请确保在AEM中正确配置PIN身份验证。
 
 通过通过portlet的Felix Web控制台(在预定义位置包含自定义CSS/HTML)安装捆绑包，可以自定义portlet的工具栏布局。
 
@@ -471,25 +471,25 @@ HTML/CSS/图像位于/com/day/cq/portlet/toolbar/layout文件夹中的事实是p
 
 Portlet的工具栏基本上有两种视图状态。 每个视图和相关的按钮可以用相应的HTML文件定制。
 
-#### 发布视图 {#publish-view}
+#### Publish视图 {#publish-view}
 
-发布视图只有一个按钮，可用于将工具栏切换到“管理”视图。 发布视图由publish.html文件表示，位于 [上一个捆绑包](/help/sites-deploying/configuring-osgi.md#bundles). 在HTML中，您可以使用以下占位符，在呈现时，这些占位符将被Portlet替换为相应的内容：
+发布视图只有一个按钮，可用于将工具栏切换到“管理”视图。 发布视图由[上一个包](/help/sites-deploying/configuring-osgi.md#bundles)中的publish.html文件表示。 在HTML中，您可以使用以下占位符，在呈现时，这些占位符将被Portlet替换为相应的内容：
 
-#### 发布视图占位符 {#publish-view-placeholders}
+#### Publish视图占位符 {#publish-view-placeholders}
 
 | 占位符字符串 | 描述 |
 |---|---|
-| {buttonManage} | 占位符替换为 **管理** 按钮，用于将portlet状态切换到管理状态。 |
+| {buttonManage} | 占位符由&#x200B;**管理**&#x200B;按钮替换，该按钮会将Portlet状态转换为管理状态。 |
 
 #### 管理视图 {#manage-view}
 
-“管理”视图包含四个按钮：“编辑”、“网站”选项卡、“刷新”和“上一步”。 “管理”视图由manage.html文件表示，位于 [上一个捆绑包](/help/sites-deploying/configuring-osgi.md#bundles). 在HTML中，您可以使用以下占位符，在呈现时，这些占位符将被Portlet替换为相应的内容：
+“管理”视图包含四个按钮：“编辑”、“网站”选项卡、“刷新”和“上一步”。 管理视图由[上一个包](/help/sites-deploying/configuring-osgi.md#bundles)中的manage.html文件表示。 在HTML中，您可以使用以下占位符，在呈现时，这些占位符将被Portlet替换为相应的内容：
 
 #### 管理视图占位符 {#manage-view-placeholders}
 
 | 占位符字符串 | 描述 |
 |---|---|
-| {buttonEdit} | 占位符替换为 **编辑** 按钮，用于在AEM编辑模式下打开一个包含当前页面的新窗口。 |
+| {buttonEdit} | 占位符已被&#x200B;**编辑**&#x200B;按钮替换，该按钮将在AEM编辑模式下打开一个包含当前页面的新窗口。 |
 | {buttonWebsites选项卡} | 占位符，替换为打开AEM WCM的“网站”选项卡的按钮。 |
 | {buttonRefresh} | 刷新当前视图。 |
 | {buttonBack} | 将portlet切换回发布视图。 |
@@ -500,15 +500,15 @@ Portlet的工具栏基本上有两种视图状态。 每个视图和相关的按
 
 在HTML中，您可以使用以下占位符，在呈现时，这些占位符将被Portlet替换为相应的内容：
 
-#### “管理”和“发布”视图按钮 {#manage-and-publish-view-buttons}
+#### “管理”和“Publish查看”按钮 {#manage-and-publish-view-buttons}
 
 | 占位符字符串 | 描述 |
 |---|---|
-| {name} | 按钮的名称，例如，**作者，上一步，刷新**，等等。 |
+| {name} | 按钮的名称，例如，**author、back、refresh**&#x200B;等。 |
 | {id} | 按钮的CSS id。 |
 | {url} | 按钮目标的URL。 |
 | {text} | 按钮的标签。 |
-| {onclick} | JavaScript **onclick** 函数(包含 {url})。 |
+| {onclick} | JavaScript **onclick**&#x200B;函数（包含{url}）。 |
 
 button.html文件示例：
 
@@ -547,9 +547,9 @@ AEM内容Portlet具有内置的本地化功能，可确保AEM中的内容使用�
 此过程分两步完成：
 
 1. 门户目录区域设置检测器通过从门户获取区域设置来检测门户用户的区域设置。 必须使用AEM中的可用语言列表配置此服务。
-1. 门户Director区域设置处理程序处理当前请求的本地化。 它会采用所请求内容的路径，例如， `/content/geometrixx/en/company.html`根据配置，它重写了 **en** 用户的实际区域设置。
+1. 门户Director区域设置处理程序处理当前请求的本地化。 它采用所请求内容的路径，例如`/content/geometrixx/en/company.html`，并根据配置，使用用户的实际区域设置重写&#x200B;**en**。
 
-可以为Portal Director区域设置处理程序配置检查区域设置信息的路径 — 通常这包括 `/content` 以及路径中区域设置信息的位置。 默认情况下，区域设置处理程序遵循AEM中结构化多语言站点的重新通用方式。
+可以为Portal Director区域设置处理程序配置检查区域设置信息的路径 — 通常这包括`/content`下的所有内容以及路径中区域设置信息的位置。 默认情况下，区域设置处理程序遵循AEM中结构化多语言站点的重新通用方式。
 
 如果您的站点对于处理路径中的区域设置信息没有严格的规则，则可以使用您自己的实施替换区域设置处理程序。
 
@@ -565,7 +565,7 @@ AEM内容Portlet具有内置的本地化功能，可确保AEM中的内容使用�
   </tr>
   <tr>
    <td>InvocationContextListener</td>
-   <td>在对portlet的每个请求的开始和结束处调用的监听程序。 监听器可用于更改或添加当前请求的信息。<br /> </td>
+   <td>在对portlet的每个请求的开始和结束处调用的监听程序。 侦听器可用于更改或添加当前请求的信息。<br /> </td>
   </tr>
   <tr>
    <td>错误处理程序</td>
@@ -610,7 +610,7 @@ AEM内容Portlet具有内置的本地化功能，可确保AEM中的内容使用�
 
 以下服务在内容portlet中具有默认实施（具有相应的Java接口）。 要进行自定义，需要将包含新服务实施的捆绑部署到portlet应用程序中。
 
-实施此类服务时，请确保将 **service.ranking** 正值的服务的属性。 默认实施使用排名**0**，而Portlet使用排名最高的服务。
+实施此类服务时，请确保将该服务的&#x200B;**service.ranking**&#x200B;属性设置为正值。 默认实施使用排名**0**，而Portlet使用排名最高的服务。
 
 | **名称** | **描述** | **默认行为** |
 |---|---|---|
@@ -643,7 +643,7 @@ Portlet API (JSR-286)指定Portlet事件。 AEM内容Portlet具有集成的网�
 
 >[!NOTE]
 >
->仅当AEM部署为Web应用程序时才可以使用Portlet组件。 ([请参阅使用应用程序服务器安装AEM](/help/sites-deploying/application-server-install.md).)
+>仅当AEM部署为Web应用程序时才可以使用Portlet组件。 ([请参阅将AEM与应用程序服务器一起安装](/help/sites-deploying/application-server-install.md)。)
 
 ### 安装portlet组件 {#installing-the-portlet-component}
 
@@ -656,7 +656,7 @@ AEM快速入门JAR文件包含Portlet组件文件。 要获取文件(cq-portlet-
 
 1. 打开部署到应用程序服务器的CQ5创作实例的包管理器。 (https://*appserverhost*：*端口*/cq5author/crx/packmgr)
 
-1. 使用包管理器可以 [上传并安装](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) cq-portlets-components.zip包。
+1. 使用包管理器[上载并安装](/help/sites-administering/package-manager.md#uploading-packages-from-your-file-system) cq-portlets-components.zip包。
 
    该软件包将cq-portlet-director-sharedlibs-x.x.x.jar安装在存储库的/libs/portal/director文件夹中。
 
@@ -668,9 +668,9 @@ AEM快速入门JAR文件包含Portlet组件文件。 要获取文件(cq-portlet-
 将portlet组件添加到段落系统中，以便作者可以使用。
 
 1. 在Sidekick中，单击标尺图标以进入设计模式。
-1. 在 `Design of par` 标题在第一段上方，单击 **编辑**.
+1. 在第一段上方的`Design of par`标题旁边，单击&#x200B;**编辑**。
 
-1. 在 **常规** 组件类别中，选中Portlet组件旁边的复选框，然后单击确定。
+1. 在&#x200B;**常规**&#x200B;组件类别中，选中Portlet组件旁边的复选框，然后单击确定。
 
 ![chlimage_1-25](assets/chlimage_1-25.jpeg)
 
@@ -680,7 +680,7 @@ AEM快速入门JAR文件包含Portlet组件文件。 要获取文件(cq-portlet-
 
 1. 提取portlet应用程序WAR文件的内容。
 
-   **提示：** jar xf *nameofapp*.war命令将解压文件。
+   **提示：** jar xf *nameofapp*.war命令将提取文件。
 
 1. 在文本编辑器中打开web.xml文件。
 1. 在Web应用程序元素中添加以下servlet配置：
@@ -699,7 +699,7 @@ AEM快速入门JAR文件包含Portlet组件文件。 要获取文件(cq-portlet-
 
 1. 保存web.xml文件并重新封装WAR文件。
 
-   **提示：** 此 `jar cvf nameofapp.war *` 命令将当前目录的内容添加到nameofapp.war文件中。
+   **提示：** `jar cvf nameofapp.war *`命令将当前目录的内容添加到nameofapp.war文件中。
 
 1. 将portlet应用程序部署到应用程序服务器。 有关信息，请参阅应用程序服务器的文档。
 
@@ -707,22 +707,22 @@ AEM快速入门JAR文件包含Portlet组件文件。 要获取文件(cq-portlet-
 
 使用门户组件向网页添加Portlet窗口。 使用组件属性指定要显示的portlet。
 
-1. 在网页上，拖动 **Portlet** 组件从常规组到页面的Sidekick。
+1. 在网页上，将&#x200B;**Portlet**&#x200B;组件从Sidekick中的General组拖到网页上。
 
    >[!NOTE]
    >
    >将组件拖动到页面后，请重新加载页面以确保它正常工作。
 
 1. 双击组件以打开Portlet属性。
-1. 在 **Portlet实体** 下拉菜单中，从列表中选择portlet。
+1. 在&#x200B;**Portlet实体**&#x200B;下拉菜单中，从列表中选择Portlet。
 1. 选择或清除**隐藏标题栏**复选框，具体取决于您是否希望看到Portlet的标题栏。
-1. 在 **Portlet窗口** 字段，根据需要输入唯一的Portlet窗口ID。
+1. 如果需要，在&#x200B;**Portlet窗口**&#x200B;字段中输入唯一的Portlet窗口ID。
 
    >[!NOTE]
    >
    >如果计划在同一页面上多次使用同一Portlet ，请为每个Portlet指定不同的窗口ID。
 
-1. 单击 **确定**. Portlet将显示在您的AEM页面上。
+1. 单击&#x200B;**确定**。 Portlet将显示在您的AEM页面上。
 
    ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -736,7 +736,7 @@ AEM快速入门JAR文件包含Portlet组件文件。 要获取文件(cq-portlet-
 
 1. 使用Webdav或CRXDE Lite，导航到/libs/portal/director。
 
-1. 下载 *cq-portlet-webapp.war*.
+1. 下载&#x200B;*cq-portlet-webapp.war*。
 
 >[!NOTE]
 >
@@ -750,7 +750,7 @@ AEM快速入门JAR文件包含Portlet组件文件。 要获取文件(cq-portlet-
 1. 导航到Web门户的Portlet管理部分。
 1. 单击安装并浏览到您下载的AEM portlet应用程序(cq-portlet-webapp.war)，然后输入有关该portlet的其他重要信息。
 
-   对于其他重要的portlet信息，您可以接受默认值或更改值。 如果您接受默认值，则可在https://上找到Portlet&lt;wps-host>：&lt;port>/wps/PA_CQ5_Portlet。 通过Portlet提供的OSGi管理控制台位于https://&lt;wps-host>：&lt;port>/wps/ PA_CQ5_Portlet/cqbridge/system/console （默认的用户名/密码是admin/admin）。
+   对于其他重要的portlet信息，您可以接受默认值或更改值。 如果接受默认值，则可在https://&lt;wps-host>：&lt;port>/wps/PA_CQ5_Portlet上找到Portlet。 通过Portlet提供的OSGi管理控制台位于https://&lt;wps-host>：&lt;port>/wps/ PA_CQ5_Portlet/cqbridge/system/console （默认的用户名/密码为admin/admin）。
 
 1. 通过选择该选项或复选框并保存更改，确保Portlet应用程序自动启动。 您会看到一条消息，指出您的安装已成功。
 
@@ -761,21 +761,22 @@ AEM快速入门JAR文件包含Portlet组件文件。 要获取文件(cq-portlet-
 要配置portlet ，请执行以下操作：
 
 1. 在应用程序服务器的门户管理窗口中，导航到portlet管理（其中列出了所有portlet），然后选择AEM Portal Director portlet。
-1. 根据需要配置portlet。 例如，您可能需要更改创作和发布实例的URL以及起始路径的URL。 有关默认配置的说明，请参见 [Portlet首选项](/help/sites-administering/aem-as-portal.md#portlet-preferences).
+1. 根据需要配置portlet。 例如，您可能需要更改创作和发布实例的URL以及起始路径的URL。 默认配置在[Portlet首选项](/help/sites-administering/aem-as-portal.md#portlet-preferences)中说明。
 
    >[!NOTE]
    >
-   >如果将portlet配置为连接到在上下文路径上运行的AEM创作和发布实例，该上下文路径不是 **/**，您需要启用该力 **CQUrlInfo** 在这些AEM实例的Html库管理器配置中（例如，通过Felix Webconsole），或编辑将不起作用，并且不会显示首选项对话框。
+   >如果Portlet配置为连接到在非&#x200B;**/**&#x200B;的上下文路径上运行的AEM创作和发布实例，则需要在这些AEM实例的Html库管理器配置（例如，通过Felix Webconsole）中启用强制&#x200B;**CQUrlInfo**，否则将无法进行编辑，并且不会显示首选项对话框。
 
 1. 将配置更改保存在应用程序服务器中。
 
-1. 导航到portlet的OSGI管理控制台。 默认位置为 `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`. 默认的用户名/密码为 **管理员/管理员**.
+1. 导航到portlet的OSGI管理控制台。 默认位置为`https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`。 默认的用户名/密码为&#x200B;**admin/admin**。
 
-1. 选择 **Day Portal Director CQ服务器配置** 配置并编辑以下值：
+1. 选择&#x200B;**Day Portal Director CQ Server配置**&#x200B;配置并编辑以下值：
 
-   * **作者基本URL**：AEM创作实例的基本URL。
-   * **发布基本URL**：AEM发布实例的基本URL。
-   * **“作者”用作“发布”**：创作实例是否用作发布实例（用于开发）？
+   * **作者基本URL**： AEM作者实例的基本URL。
+   * **Publish基本URL**： AEM发布实例的基本URL。
+   * **Author用作Publish**：是否将Author实例用作发布
+实例（用于开发）？
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 
@@ -783,21 +784,21 @@ AEM快速入门JAR文件包含Portlet组件文件。 要获取文件(cq-portlet-
 
 ### 内容URL {#content-urls}
 
-从AEM请求内容时， portlet使用当前显示模式（发布或创作）和当前路径来组合完整的URL。 对于默认值，第一个URL为 `https://localhost:4503/content/geometrixx/en.portlet.html`. 的值 `htmlSelector` 会自动添加到扩展之前的URL中。
+从AEM请求内容时， portlet使用当前显示模式（发布或创作）和当前路径来组合完整的URL。 使用默认值，第一个URL为`https://localhost:4503/content/geometrixx/en.portlet.html`。 `htmlSelector`的值会自动添加到扩展之前的URL中。
 
-如果portlet切换到帮助模式，并且 `appendHelpViewModeAsSelector` 已选中，则 `help` 例如，还会附加选择器， `https://localhost:4503/content/geometrixx/en.portlet.html.help`. 如果portlet窗口最大化，并且 `appendMaxWindowStateAsSelector` ，则也会附加选择器，例如， `https://localhost:4503/content/geometrixx/en.portlet.max.help`.
+如果portlet切换到帮助模式并且选择了`appendHelpViewModeAsSelector`，则还将附加`help`选择器，例如`https://localhost:4503/content/geometrixx/en.portlet.html.help`。 如果最大化了Portlet窗口并选择`appendMaxWindowStateAsSelector`，则也会附加选择器，例如`https://localhost:4503/content/geometrixx/en.portlet.max.help`。
 
 可以在AEM中评估选择器，并且不同的模板可用于不同的选择器。
 
 ### 在AEM中使用内容Url映射 {#using-a-content-url-map-in-aem}
 
-通常，起始路径直接指向AEM中的内容。 但是，如果要在AEM中而不是在portlet首选项中维护起始路径，则可以在AEM中指向内容映射的起始路径，如 `/var/portlets`. 在这种情况下，在AEM中运行的脚本可以使用portlet中提交的信息来确定哪个url是起始URL。 它应该发布到正确URL的重定向。
+通常，起始路径直接指向AEM中的内容。 但是，如果要在AEM中而不是在portlet首选项中维护开始路径，则可以在AEM中指向内容映射的开始路径，如`/var/portlets`。 在这种情况下，在AEM中运行的脚本可以使用portlet中提交的信息来确定哪个url是起始URL。 它应该发布到正确URL的重定向。
 
 #### 将Portlet添加到门户页 {#adding-the-portlet-to-the-portal-page}
 
 要将portlet添加到门户页面，请执行以下操作：
 
-1. 确保您位于应用程序服务器的管理窗口中，并导航到您管理页面的位置。 (例如，在WebSphere 6.1中，单击 **管理页面**)。
+1. 确保您位于应用程序服务器的管理窗口中，并导航到您管理页面的位置。 （例如，在WebSphere 6.1中，单击&#x200B;**管理页面**）。
 1. 选择Portlet的名称，然后选择现有页面或创建页面。
 1. 编辑页面布局。
 1. 选择Portlet并将其添加到容器中。

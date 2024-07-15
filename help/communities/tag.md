@@ -22,13 +22,13 @@ ht-degree: 2%
 
 发布环境中应用的标记的基础基础结构与创作环境中应用于内容的标记的基础基础结构相同，例如页面和资产：
 
-* 请参阅 [管理标记](../../help/sites-administering/tags.md) 和 [标记用户生成的内容](tag-ugc.md) (UGC)。
+* 有关创建和管理标记的信息，请参阅[管理标记](../../help/sites-administering/tags.md)和[标记用户生成的内容](tag-ugc.md) (UGC)。
 
-* 请参阅 [为开发人员添加标记](../../help/sites-developing/tags.md) 有关 [标记框架](../../help/sites-developing/framework.md) 并在中包含和扩展标记 [自定义应用程序](../../help/sites-developing/building.md).
+* 有关[标记框架](../../help/sites-developing/framework.md)以及在[自定义应用程序](../../help/sites-developing/building.md)中包括和扩展标记的信息，请参阅[针对开发人员的标记](../../help/sites-developing/tags.md)。
 
-* 请参阅 [使用社交标签云](tagcloud.md) 供作者参考，了解如何添加 `social tag cloud` 页面组件，用于突出显示发布环境中应用于UGC的标记。
+* 有关如何将`social tag cloud`组件添加到页面以突出显示发布环境中应用于UGC的标记的信息，请参阅[使用Social Tag Cloud](tagcloud.md)。
 
-配置 [社区站点](sites-console.md#tagging) 或以下功能之一：
+配置[社区站点](sites-console.md#tagging)或以下功能之一时，可以启用UGC标记：
 
 * [博客](blog-feature.md)
 * [日程表](calendar.md)
@@ -64,7 +64,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>属性</strong></td>
-   <td>请参阅 <a href="tagcloud.md">使用社交标签云</a></td>
+   <td>请参阅<a href="tagcloud.md">使用Social Tag Cloud</a></td>
   </tr>
  </tbody>
 </table>
@@ -73,7 +73,7 @@ ht-degree: 2%
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [社交标记云API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [社交标签云API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
 * [社交标签管理器](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
@@ -81,6 +81,6 @@ ht-degree: 2%
 
 ## 标记搜索 {#tag-searching}
 
-截至 [功能包1](deploy-communities.md#latestfeaturepack) (FP1)，使用执行标签搜索 [标记标题](../../help/sites-developing/framework.md#tag-characteristics).
+自[功能包1](deploy-communities.md#latestfeaturepack) (FP1)起，使用[标记标题](../../help/sites-developing/framework.md#tag-characteristics)执行标记搜索。
 
-在FP1之前，使用执行搜索 [标记ID](../../help/sites-developing/framework.md#tagid).
+在FP1之前，使用[标记ID](../../help/sites-developing/framework.md#tagid)执行了搜索。

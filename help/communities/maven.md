@@ -22,7 +22,7 @@ ht-degree: 0%
 
 此外，Adobe Experience Manager (AEM) Communities文档的此部分还包含：
 
-* [使用Apache Maven构建AEM项目](../../help/sites-developing/ht-projects-maven.md).
+* [使用Apache Maven构建AEM项目](../../help/sites-developing/ht-projects-maven.md)。
 
 只有一个“uber”工件可以取代单个工件：
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 >
 >及时了解最新的Communities版本。
 >
->请参阅 [最新版本](deploy-communities.md#latest-releases) 可在其中标识最新版本的部分。
+>请参阅[最新版本](deploy-communities.md#latest-releases)部分，您可以在其中标识最新版本。
 
 ## Maven依赖关系示例 {#maven-dependency-example}
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->请参阅 [AEM Uber jar存储库](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) 在这里，您可以识别最新的Uber jar工件。
+>查看[AEM Uber jar存储库](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar)，您可以在其中识别最新的Uber jar项目。
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

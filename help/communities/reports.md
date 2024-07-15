@@ -25,11 +25,11 @@ ht-degree: 6%
 
 一般来说，各种报告包括：
 
-* [查看次数报表](#views-report)
+* [查看报告](#views-report)
 
   按社区成员和站点访客提供任意社区站点的内容视图图表。
 
-* [帖子报表](#posts-report)
+* [发布报告](#posts-report)
 
   提供社区成员在任何社区站点上发表的各种类型的帖子的图表。
 
@@ -39,29 +39,29 @@ ht-degree: 6%
 
 ### 社区站点报表 {#reports-for-community-sites}
 
-* 从全局导航： **[!UICONTROL 导航]** > **[!UICONTROL Communities]** >  **[!UICONTROL 报表]**
+* 从全局导航： **[!UICONTROL 导航]** > **[!UICONTROL 社区]** > **[!UICONTROL 报告]**
 
 * 选择自：
 
-   * **[!UICONTROL 指定任务报表]**
+   * **[!UICONTROL 工作分配报表]**
 
       * 为选定的社区站点、用户或组以及分配生成报告。
 
-   * **[!UICONTROL 帖子报表]**
+   * **[!UICONTROL 发布报告]**
 
       * 为选定的社区站点、内容类型和时间段生成报告。
 
-   * **[!UICONTROL 查看次数报表]**
+   * **[!UICONTROL 查看报告]**
 
       * 为选定的社区站点、内容类型和时间段生成报告。
 
-![报表](assets/reports1.png)
+![报告](assets/reports1.png)
 
 ## 查看次数报表 {#views-report}
 
 通过视图控制台，可按社区功能生成给定时间段内的页面查看报告。
 
-![view-report](assets/view-report.png)
+![查看报告](assets/view-report.png)
 
 选择报告的标准：
 
@@ -82,7 +82,7 @@ ht-degree: 6%
    * 过去 90 天
    * 去年
 
-选择 **[!UICONTROL 生成]** 以创建报表。
+选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报告。
 
 ![生成视图](assets/generate-views.png)
 
@@ -90,7 +90,7 @@ ht-degree: 6%
 
 “帖子”控制台允许生成给定时间段内社区功能的帖子数量报告。
 
-![帖子报表](assets/posts-report.png)
+![个帖子报告](assets/posts-report.png)
 
 选择报告的标准：
 
@@ -111,9 +111,9 @@ ht-degree: 6%
    * 过去 90 天
    * 去年
 
-选择 **[!UICONTROL 生成]** 以创建报表。
+选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报告。
 
-![generate-report](assets/generate-posts-report.png)
+![生成报告](assets/generate-posts-report.png)
 
 ## 疑难解答 {#troubleshooting}
 
@@ -123,6 +123,6 @@ ht-degree: 6%
 
 ### 报告未显示在AEM创作实例中 {#reports-do-not-show-in-aem-author-instance}
 
-如果报表未显示在AEM创作实例中，请检查是否存在自定义设置，例如发布实例上的URL映射。 如果仅在Communities站点的AEM Publish实例上完成URL映射，请确保已在的AEM Author实例中配置相同内容 **站点趋势报表社交组件工厂** 配置。
+如果报表未显示在AEM创作实例中，请检查是否存在自定义设置，例如Publish实例上的URL映射。 如果仅在Communities站点的AEM Publish实例上完成URL映射，请确保在&#x200B;**站点趋势报表社交组件工厂**&#x200B;配置中的AEM创作实例中已配置相同内容。
 
-![AEM作者上的URL映射](assets/sitetrend.png)
+AEM作者上的![URL映射](assets/sitetrend.png)

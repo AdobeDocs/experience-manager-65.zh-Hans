@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-如果不熟悉存储资源提供程序(SRP)及其与用户生成内容(UGC)的关系，请访问 [社区内容存储](working-with-srp.md) 和 [存储资源提供程序概述](srp.md).
+如果不熟悉存储资源提供程序(SRP)及其与用户生成内容(UGC)的关系，请访问[社区内容存储](working-with-srp.md)和[存储资源提供程序概述](srp.md)。
 
 此文档的此部分提供了有关SRP和UGC的一些基本信息。
 
@@ -36,13 +36,13 @@ SRP API不是抽象类，它是一个接口。 不应轻率地执行自定义实
 
 使用SRP API的方法是通过提供的实用程序，例如SocialResourceUtilities包中的实用程序。
 
-从AEM 6.0或更低版本升级时，需要为具有开源工具的所有SRP迁移UGC。 请参阅 [升级到AEM Communities 6.3](upgrade.md).
+从AEM 6.0或更低版本升级时，需要迁移所有SRP的UGC(开放式Source工具适用)。 请参阅[升级到AEM Communities 6.3](upgrade.md)。
 
 >[!NOTE]
 >
 >过去，用于访问UGC的实用程序位于SocialUtils包中，该包不再存在。
 >
->有关替换实用程序，请参阅 [SocialUtils重构](socialutils.md).
+>有关替换实用工具，请参阅[SocialUtils重构](socialutils.md)。
 
 ## 访问UGC的实用程序方法 {#utility-method-to-access-ugc}
 
@@ -63,13 +63,13 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 }
 ```
 
-有关其他SocialUtils替换，请参阅 [SocialUtils重构](socialutils.md).
+有关其他SocialUtils替换，请参阅[SocialUtils重构](socialutils.md)。
 
-有关编码准则，请访问 [使用SRP访问UGC](accessing-ugc-with-srp.md).
+有关编码准则，请访问[使用SRP访问UGC](accessing-ugc-with-srp.md)。
 
 >[!CAUTION]
 >
->resourceToUGCStoragePath()返回的路径为 *非* 适合 [ACL检查](srp.md#for-access-control-acls).
+>返回的resourceToUGCStoragePath()路径为&#x200B;*不适用于[ACL检查](srp.md#for-access-control-acls)的*。
 
 ## 访问ACL的实用程序方法 {#utility-method-to-access-acls}
 
@@ -96,38 +96,38 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 >[!CAUTION]
 >
->resourceToACLPath()返回的路径为 *非* 适合 [访问UGC](#utility-method-to-access-acls) 本身。
+>resourceToACLPath()返回的路径为&#x200B;*不适用于[访问UGC](#utility-method-to-access-acls)本身*。
 
 ## 与UGC相关的存储位置 {#ugc-related-storage-locations}
 
-以下对存储位置的说明在使用JSRP或MSRP进行开发时可能会有所帮助。 与JSRP一样，当前没有用于访问ASRP中存储的UGC的UI([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md))和MSRP （MongoDB工具）。
+以下对存储位置的说明在使用JSRP或MSRP进行开发时可能会有所帮助。 当前没有用于访问ASRP中存储的UGC的UI，因为存在JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md))和MSRP （MongoDB工具）。
 
 **组件位置**
 
 当成员在发布环境中进入UGC时，他们作为AEM站点的一部分与组件交互。
 
-以下是此类组件的示例 [注释组件](http://localhost:4502/content/community-components/en/comments.html) 中存在于 [社区组件指南](components-guide.md) 站点。 本地存储库中注释节点的路径为：
+此类组件的示例是[社区组件指南](components-guide.md)网站中存在的[注释组件](http://localhost:4502/content/community-components/en/comments.html)。 本地存储库中注释节点的路径为：
 
 * 组件路径= `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **影子节点位置**
 
-创建UGC还会创建 [影子节点](srp.md#about-shadow-nodes-in-jcr) 应用必要的ACL。 本地存储库中相应影子节点的路径是预置影子节点根路径到组件路径的结果：
+创建UGC还会创建应用了必要ACL的[影子节点](srp.md#about-shadow-nodes-in-jcr)。 本地存储库中相应影子节点的路径是预置影子节点根路径到组件路径的结果：
 
 * 根路径= `/content/usergenerated`
 * 评论影子节点= `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 **UGC位置**
 
-UGC不会在这两个位置中创建，因此只能使用 [效用法](#utility-method-to-access-ugc) 调用SRP API。
+UGC既未在这两个位置创建，也只能使用调用SRP API的[实用程序方法](#utility-method-to-access-ugc)访问。
 
 * 根路径= `/content/usergenerated/asi/srp-choice`
 * JSRP的UGC节点= `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*注意*，对于JSRP，UGC节点将 *仅限* 出现在输入它的AEM实例上（创作或发布）。 如果在发布实例中输入，则无法从“创作”的审核控制台中进行审核。
+*请注意*，对于JSRP，UGC节点将&#x200B;*仅*&#x200B;出现在输入它的AEM实例（创作或发布）上。 如果在发布实例中输入，则无法从“创作”的审核控制台中进行审核。
 
 ## 相关信息 {#related-information}
 
-* [存储资源提供程序概述](srp.md)  — 简介和存储库使用情况概述。
-* [使用SRP访问UGC](accessing-ugc-with-srp.md)  — 编码准则。
-* [SocialUtils重构](socialutils.md)  — 将已弃用的实用程序方法映射到当前SRP实用程序方法。
+* [存储资源提供程序概述](srp.md) — 简介和存储库使用情况概述。
+* [使用SRP访问UGC](accessing-ugc-with-srp.md) — 编码准则。
+* [SocialUtils重构](socialutils.md) — 将已弃用的实用工具方法映射到当前SRP实用工具方法。

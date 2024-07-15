@@ -24,14 +24,14 @@ ht-degree: 13%
 | AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-layout-of-an-adaptive-form/inline-style-adaptive-forms.html) |
 | AEM 6.5 | 本文 |
 
-您可以通过以下方式指定样式，来定义自适应表单的整体外观和样式： [主题编辑器](../../forms/using/themes.md). 此外，您还可以将内联CSS样式应用于各个自适应表单组件并即时预览更改。 内联样式会覆盖主题中提供的样式。
+可以使用[主题编辑器](../../forms/using/themes.md)指定样式来定义自适应表单的整体外观和样式。 此外，您还可以将内联CSS样式应用于各个自适应表单组件并即时预览更改。 内联样式会覆盖主题中提供的样式。
 
 ## 应用内联CSS属性 {#apply-inline-css-properties}
 
 要将内联样式添加到组件，请执行以下操作：
 
-1. 在表单编辑器中打开表单，并将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中选择 ![画布下拉列表](assets/canvas-drop-down.png) > **样式**.
-1. 在页面中选择组件，然后选择编辑按钮 ![编辑按钮](assets/edit-button.png). 样式属性在侧栏中打开。
+1. 在表单编辑器中打开表单，并将模式更改为样式模式。 要将模式更改为样式模式，请在页面工具栏中选择![画布下拉列表](assets/canvas-drop-down.png) > **样式**。
+1. 在页面中选择组件，然后选择编辑按钮![edit-button](assets/edit-button.png)。 样式属性在侧栏中打开。
 
    您还可以从侧栏中的表单层次结构树中选择组件。 表单层次结构树在侧栏中可用作表单对象。
 
@@ -49,13 +49,13 @@ ht-degree: 13%
    * 高级（允许您为组件编写自定义CSS）
 
 1. 同样，可以为组件的其他部分（如小组件、标题和帮助）应用样式。
-1. 选择 **完成** 确认更改或 **取消** 以放弃更改。
+1. 选择&#x200B;**完成**&#x200B;以确认更改，或选择&#x200B;**取消**&#x200B;以放弃更改。
 
 ## 示例：字段组件的内联样式 {#example-inline-styles-for-a-field-component}
 
 以下图像描述了应用内联样式之前和之后的文本字段。
 
-![应用内联样式之前的文本框组件](assets/no-style.png)
+应用内联样式之前的![文本框组件](assets/no-style.png)
 
 应用内联样式属性之前的文本框组件
 
@@ -102,7 +102,7 @@ ht-degree: 13%
  </tbody>
 </table>
 
-![应用内联样式后的文本框样式](assets/applied-style.png)
+应用内联样式后的![文本框样式](assets/applied-style.png)
 
 应用内联样式属性后的文本框组件
 

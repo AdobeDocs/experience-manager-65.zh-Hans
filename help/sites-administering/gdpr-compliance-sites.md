@@ -26,41 +26,41 @@ ht-degree: 54%
 
 AEM Sites随时准备帮助客户履行其GDPR合规义务。 本页将指导客户完成在AEM Sites中处理GDPR请求的过程。 它描述了私有数据的存储位置，以及如何手动或使用代码删除私有数据。
 
-欲知更多信息，请参见 [Adobe隐私中心的GDPR页面](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+有关详细信息，请参阅Adobe隐私中心](https://www.adobe.com/privacy/general-data-protection-regulation.html)的[GDPR页面。
 
 >[!NOTE]
 >
->请参阅 [AEM GDPR就绪](/help/managing/data-protection-and-privacy.md) 以了解更多详细信息。
+>有关更多详细信息，请参阅[AEM GDPR准备工作](/help/managing/data-protection-and-privacy.md)。
 
 ## 作者服务器 {#author-server}
 
-创作服务器上的用户帐户和UGC内容包含在 [平台GDPR文档](/help/managing/data-protection-and-privacy.md).
+作者服务器上的用户帐户和UGC内容包含在[Platform GDPR文档](/help/managing/data-protection-and-privacy.md)中。
 
-## 发布服务器 {#publish-server}
+## Publish Server {#publish-server}
 
-用于对网站上的访客进行身份验证的用户帐户以及发布服务器上的UGC内容包含在 [平台GDPR文档](/help/managing/data-protection-and-privacy.md).
+[平台GDPR文档](/help/managing/data-protection-and-privacy.md)涵盖了用于验证网站访客的用户帐户以及发布服务器上的UGC内容。
 
 默认情况下，AEM Sites 组件不会存储访客在发布服务器上输入的表单数据。建议将数据转发到第三方系统或 Adobe Campaign 以供进一步处理。
 
 ## 选择加入/选择退出 {#opt-in-opt-out}
 
-AEM具有 [Cookie选择退出服务](/help/sites-developing/cookie-optout.md) 可用于管理用户的选择启用/选择禁用。
+AEM具有[Cookie选择退出服务](/help/sites-developing/cookie-optout.md)，可用于管理用户的选择加入/选择退出。
 
 ## Analytics的增强见解 {#enhanced-insights-by-analytics}
 
 AEM Sites包括与Analytics的增强型分析的可选集成，该集成使用Adobe Analytics按需服务中的功能。
 
-有关管理与Adobe Analytics相关的GDPR数据主体请求的更多信息，请参阅 [Adobe Analytics和GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
+有关管理与Adobe Analytics相关的GDPR数据主体请求的更多信息，请参阅[Adobe Analytics和GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)。
 
-## 按目标显示的增强型个性化 {#enhanced-personalization-by-target}
+## 增强的Personalization by Target {#enhanced-personalization-by-target}
 
 AEM Sites包括与Enhanced Personalization by Target的可选集成，该集成使用Adobe Target按需服务中的功能。
 
-有关管理与Adobe Target相关的GDPR数据主体请求的更多信息，请参阅 [Adobe Target — 隐私和《通用数据保护条例》](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en).
+有关管理与Adobe Target相关的GDPR数据主体请求的更多信息，请参阅[Adobe Target — 隐私和一般数据保护条例](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)。
 
 ## ContextHub {#contexthub}
 
-AEM提供了一个可选的数据层，它具有 [ContextHub](/help/sites-developing/contexthub.md). 这会将特定于访客的数据保留在浏览器中，以用于基于规则的个性化。
+AEM提供了一个可选的数据层和[ContextHub](/help/sites-developing/contexthub.md)。 这会将特定于访客的数据保留在浏览器中，以用于基于规则的个性化。
 
 默认情况下，此访客数据不会存储在 AEM 中；AEM 将规则发送到数据层，以在浏览器中做出个性化决策。
 

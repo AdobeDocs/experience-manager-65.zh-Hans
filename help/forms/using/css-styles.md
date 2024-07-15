@@ -25,13 +25,13 @@ ht-degree: 2%
 >
 >在CSS类中，请勿更改width、height、border-thickness、top、left、right、bottom、padding、margin以及其他位置和大小属性的值。 位置和大小属性的任何更改都会使表单的布局发生变化。
 
-## 元素的CSS类  {#css-classes-nbsp-for-elements-nbsp}
+## CSS类  用于元素  {#css-classes-nbsp-for-elements-nbsp}
 
 每个元素都包含明确定义的CSS类。 可以修改这些类以更改元素的外观。 每个元素（字段和绘制元素除外）都有两个CSS类 — Type类和Name类。
 
-* 此 **类型类** 表示XFA字段的类型。 您可以覆盖 `type` 类，用于修改特定类型的所有元素的样式。
+* **Type类**&#x200B;表示XFA字段的类型。 您可以覆盖`type`类以修改特定类型的所有元素的样式。
 
-* 此 **Name类** 对应于XFA字段的名称。 您可以覆盖 `name` 类，用于修改自定义样式并将自定义样式应用于元素。
+* **Name类**&#x200B;对应于XFA字段的名称。 您可以覆盖`name`类以修改自定义样式并将其应用于元素。
 
 >[!NOTE]
 >
@@ -43,13 +43,13 @@ ht-degree: 2%
 
 字段元素包含两个嵌套元素：小部件和标题。
 
-**构件元素**
+**小组件元素**
 
 构件元素包含用于与用户交互的用户界面元素。 它有三个CSS类：
 
-* **构件**：每个构件都具有此类。
-* **name**：AEM随附的所有构件都包含构件名称类。 对于自定义构件，构件开发人员提供构件名称类。
-* **type**：每个构件都有一个用户界面元素。 此类定义用户界面元素的类型。
+* **小组件**：每个小组件都有此类。
+* **name**： AEM随附的所有构件都包含构件名称类。 对于自定义构件，构件开发人员提供构件名称类。
+* **类型**：每个小组件都有一个用户界面元素。 此类定义用户界面元素的类型。
 
 ```xml
 <!--field with caption-->
@@ -68,7 +68,7 @@ ht-degree: 2%
 </div>
 ```
 
-除了类型和名称类之外，字段组件还包含一个名为的附加CSS类 **子类型**. 子类型标识它的字段类型，例如NumericField、DateField、TextField。 可以覆盖子类型类来修改所有类型、子类型字段的样式。
+除了类型和名称类之外，字段组件还包含一个名为&#x200B;**子类型**&#x200B;的附加CSS类。 子类型标识它的字段类型，例如NumericField、DateField、TextField。 可以覆盖子类型类来修改所有类型、子类型字段的样式。
 
 ## 不同组件的CSS类 {#css-classes-for-different-components}
 
@@ -82,7 +82,7 @@ ht-degree: 2%
   <tr>
    <td>页面</td>
    <td>页面</td>
-   <td>用户定义的名称<br /> 或<br /> 页面&lt;pagenumber&gt; （默认）</td>
+   <td>用户定义的名称<br />或<br /> Page&lt;pageNumber&gt;（默认）</td>
   </tr>
   <tr>
    <td>内容区域</td>
@@ -141,21 +141,21 @@ AEM Forms Designer支持表单中各种类型的字段，如NumericField、Decim
    <td>按钮<br type="_moz" /> </td>
    <td>NA</td>
    <td>xfaButton<br type="_moz" /> </td>
-   <td>buttonfield构件<br type="_moz" /> </td>
+   <td>buttonfieldwidget<br type="_moz" /> </td>
    <td>输入类型=按钮<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>勾选按钮<br type="_moz" /> </td>
-   <td>复选框字段<br /> </td>
+   <td>CheckButton<br type="_moz" /> </td>
+   <td>checkboxfield<br /> </td>
    <td>XfaCheckBox<br type="_moz" /> </td>
-   <td>复选框字段小组件<br type="_moz" /> </td>
-   <td>input type=checkbox<br type="_moz" /> </td>
+   <td>checkboxfieldwidget<br type="_moz" /> </td>
+   <td>输入类型=复选框<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>日期字段<br type="_moz" /> </td>
    <td>datefield<br type="_moz" /> </td>
-   <td>dateField<br type="_moz" /> </td>
-   <td>日期字段小组件<br type="_moz" /> </td>
+   <td>日期字段<br type="_moz" /> </td>
+   <td>datefieldwidget<br type="_moz" /> </td>
    <td>输入类型=文本<br type="_moz" /> </td>
   </tr>
   <tr>
@@ -168,7 +168,7 @@ AEM Forms Designer支持表单中各种类型的字段，如NumericField、Decim
   <tr>
    <td>DecimalField<br type="_moz" /> </td>
    <td>numericfield<br type="_moz" /> </td>
-   <td>数值输入<br type="_moz" /> </td>
+   <td>numericInput<br type="_moz" /> </td>
    <td>numericfieldwidget<br type="_moz" /> </td>
    <td>输入类型=文本<br type="_moz" /> </td>
   </tr>
@@ -187,48 +187,48 @@ AEM Forms Designer支持表单中各种类型的字段，如NumericField、Decim
    <td>ol</td>
   </tr>
   <tr>
-   <td>数值字段<br type="_moz" /> </td>
+   <td>NumericField<br type="_moz" /> </td>
    <td>numericfield<br type="_moz" /> </td>
-   <td>数值输入<br type="_moz" /> </td>
+   <td>numericInput<br type="_moz" /> </td>
    <td>numericfieldwidget<br type="_moz" /> </td>
    <td>输入类型=文本<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>密码字段<br type="_moz" /> </td>
    <td>密码字段<br type="_moz" /> </td>
-   <td>defaultwidget<br type="_moz" /> </td>
-   <td>密码字段小组件<br type="_moz" /> </td>
-   <td>input type=password<br type="_moz" /> </td>
+   <td>defaultWidget<br type="_moz" /> </td>
+   <td>passwordfieldwidget<br type="_moz" /> </td>
+   <td>输入类型=密码<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>单选按钮<br type="_moz" /> </td>
-   <td>辐射场<br type="_moz" /> </td>
+   <td>无线电场<br type="_moz" /> </td>
    <td>XfaCheckBox<br type="_moz" /> </td>
-   <td>Radiofield小组件<br type="_moz" /> </td>
-   <td>input type=radio<br type="_moz" /> </td>
+   <td>radiofieldwidget<br type="_moz" /> </td>
+   <td>输入类型=radio<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>文本字段<br type="_moz" /> </td>
+   <td>TextField<br type="_moz" /> </td>
    <td>textfield<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
-   <td>文本字段小组件<br type="_moz" /> </td>
+   <td>textfieldwidget<br type="_moz" /> </td>
    <td>输入类型=文本<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>TimeField<br type="_moz" /> </td>
+   <td>时间字段<br type="_moz" /> </td>
    <td>textfield<br type="_moz" /> </td>
    <td>textField<br type="_moz" /> </td>
-   <td>文本字段小组件<br type="_moz" /> </td>
+   <td>textfieldwidget<br type="_moz" /> </td>
    <td>输入类型=文本<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
 
-## 不同绘制元素的CSS类 {#css-classes-for-different-draw-elements}
+## 其他Draw元素的CSS类 {#css-classes-for-different-draw-elements}
 
 您可以使用AEM Forms Designer插入静态绘制元素，如文本和图像。 对于每个绘制元素，单独的CSS类与该元素关联。 绘制元素的CSS类列表如下所列。 每个绘制元素都有一个与之关联的绘制类。
 
-| **Draw Type** | **CSS类** |
+| **Draw类型** | **CSS类** |
 |---|---|
 | 文本 | text |
 | 图像 | 图像 |
@@ -241,12 +241,12 @@ AEM Forms Designer支持表单中各种类型的字段，如NumericField、Decim
 
 `Styling Inline Errors`
 
-如果字段的验证导致错误，则字段处于活动状态时会显示内联错误。 要更改内联错误的样式，请覆盖CSS ID **error-msg**.
+如果字段的验证导致错误，则字段处于活动状态时会显示内联错误。 要更改内联错误的样式，请覆盖CSS ID **error-msg**。
 
 `Styling Inline Warnings`
 
-当字段的验证导致警告时，如果字段处于活动状态，则显示内联警告。 要更改这些内联警告的样式，请覆盖CSS ID **warning-msg**.
+当字段的验证导致警告时，如果字段处于活动状态，则显示内联警告。 若要更改这些内联警告的样式，请覆盖CSS ID **warning-msg**。
 
 `Styling Fields with Validation Errors`
 
-当字段验证失败时，小组件的样式会更改。 此样式更改通过应用CSS类来完成 **widgetError** 在构件组件上。 要修改默认样式，请覆盖 **widgetError** 类。
+当字段验证失败时，小组件的样式会更改。 此样式更改通过在构件组件上应用CSS类&#x200B;**widgetError**&#x200B;来完成。 要修改默认样式，请覆盖&#x200B;**widgetError**&#x200B;类。

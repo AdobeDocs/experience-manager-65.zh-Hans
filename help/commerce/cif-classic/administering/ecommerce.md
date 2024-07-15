@@ -123,15 +123,15 @@ AEM eCommerce帮助营销人员跨Web、移动和社交接触点交付品牌化�
 
 >[!NOTE]
 >
->要将集成框架与外部电子商务提供商一起使用，您首先需要安装所需的包。 有关更多信息，请参阅 [部署电子商务](/help/commerce/cif-classic/deploying/ecommerce.md).
+>要将集成框架与外部电子商务提供商一起使用，您首先需要安装所需的包。 有关详细信息，请参阅[部署电子商务](/help/commerce/cif-classic/deploying/ecommerce.md)。
 >
->有关扩展电子商务功能的信息，请参阅 [发展电子商务](/help/commerce/cif-classic/developing/ecommerce.md).
+>有关扩展电子商务功能的信息，请参阅[开发电子商务](/help/commerce/cif-classic/developing/ecommerce.md)。
 
 ## 主要功能 {#main-features}
 
 AEM eCommerce提供：
 
-* 数量 **现成的AEM组件** 要说明可为您的项目实现什么，请执行以下操作：
+* 许多&#x200B;**现成的AEM组件**，用于说明可为您的项目实现什么：
 
    * 产品显示
    * 购物车
@@ -146,7 +146,7 @@ AEM eCommerce提供：
   >
   >通过AEM提供的集成框架，您还可以独立于特定的电子商务引擎为商业功能构建其他AEM组件。
 
-* **Search**  — 使用：
+* **搜索** — 使用：
 
    * AEM搜索
    * 电子商务系统的搜寻
@@ -155,26 +155,26 @@ AEM eCommerce提供：
 
   ![搜索示例](/help/sites-administering/assets/chlimage_1-131.png)
 
-* 使用AEM功能 **在多个渠道上展示您的内容**，可以是整个浏览器窗口或移动设备。 这将以访客所需的格式提供您的内容。
+* 使用AEM功能&#x200B;**在多个渠道**&#x200B;上展示您的内容，无论该渠道是完整的浏览器窗口还是移动设备。 这将以访客所需的格式提供您的内容。
 
-  ![移动设备视图示例](/help/sites-administering/assets/chlimage_1-132.png)
+  ![移动视图示例](/help/sites-administering/assets/chlimage_1-132.png)
 
-* 能够 **根据以下内容开发您自己的集成实施 [AEM电子商务框架](#the-framework)**.
+* 能够基于[AEM电子商务框架&#x200B;](#the-framework)**来**&#x200B;开发您自己的集成实现。
 
   当前可用的两个实施均基于相同的基础构建 — 基于常规API（框架）。 实施新集成仅涉及实施您的集成所需的功能。 任何新实施均可使用前端组件，因为它们使用接口（因此独立于实施）。
 
-* 开发以下项目的可能性 **基于购物者数据和活动的体验驱动型商务**. 这让您可以了解许多场景：
+* 基于购物者数据和活动&#x200B;**开发**&#x200B;体验驱动型商务的可能性。 这让您可以了解许多场景：
 
    * 例如，当订单总额超过特定数量时，可以降低运费。
    * 另一种方法可能会让您提供使用用户档案数据的季节性选件（例如，位置）。 之后，可以高亮显示这些内容，在必要时同样取决于其他因素。
 
   在下面的示例中，显示了一个Teaser，因为购物车的内容不到$75：
 
-  ![具有客户上下文的购物车](/help/sites-administering/assets/chlimage_1-133.png)
+  具有客户端上下文的![购物车](/help/sites-administering/assets/chlimage_1-133.png)
 
   当购物车内容超过$75时，可以更改此设置：
 
-  ![更改后具有客户端上下文的购物车](/help/sites-administering/assets/chlimage_1-134.png)
+  更改后![带有客户端上下文的购物车](/help/sites-administering/assets/chlimage_1-134.png)
 
 * 以及其他功能，包括：
 
@@ -184,7 +184,7 @@ AEM eCommerce提供：
 
 ## 框架 {#the-framework}
 
-此 [概念](/help/commerce/cif-classic/administering/concepts.md) 部分将更详细地介绍该框架，但以下部分提供了该框架的高级、高速视图：
+[概念](/help/commerce/cif-classic/administering/concepts.md)部分更详细地介绍了该框架，但以下部分提供了该框架的高级、高速视图：
 
 ### 什么？ {#what}
 

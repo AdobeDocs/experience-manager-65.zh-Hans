@@ -28,7 +28,7 @@ ht-degree: 0%
 
 哈希函数将任意长度的长字符串（或消息）作为输入，并生成固定长度的字符串作为输出，有时称为消息摘要或数字指纹。
 
-通过JEE Designer上的AEM Forms，您可以像JavaScript那样在脚本对象中实施各种哈希函数，并在动态PDF文档中运行这些函数。 本文示例文件包含的示例PDF使用以下散列函数的开源实现：
+通过JEE Designer上的AEM Forms，您可以在as JavaScript的脚本对象中实施各种哈希函数，并在动态PDF文档中运行这些函数。 本文示例文件包含的示例PDF使用以下散列函数的开源实现：
 
 * MD4和MD5 — 由Ronald Rivest设计
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->MD4或MD5存在一些已知的安全问题（称为哈希冲突）。 由于这些散列碰撞和其他SHA-1攻击（包括彩虹表），我决定集中研究第二个样本中的SHA-256散列函数。 欲了解更多信息，请参见 [冲突](https://en.wikipedia.org/wiki/Hash_collision) 和 [彩虹表](https://en.wikipedia.org/wiki/Rainbow_table) 维基百科的页面。
+>MD4或MD5存在一些已知的安全问题（称为哈希冲突）。 由于这些散列碰撞和其他SHA-1攻击（包括彩虹表），我决定集中研究第二个样本中的SHA-256散列函数。 有关详细信息，请参阅Wikipedia中的[冲突](https://en.wikipedia.org/wiki/Hash_collision)和[彩虹表](https://en.wikipedia.org/wiki/Rainbow_table)页。
 
 ## 检查脚本对象 {#examining-script-objects}
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ![变量](assets/variables.jpg)
 
-要查看这些脚本对象中散列函数的JavaScript实现，请选择脚本对象并在脚本编辑器中浏览代码。 您可以看到以下每个哈希函数的实现方式：
+要查看这些脚本对象中哈希函数的JavaScript实施，请选择脚本对象，然后在脚本编辑器中浏览代码。 您可以看到以下每个哈希函数的实现方式：
 
 * soHASHING_MD4.hex_md4()
 * soHASHING_MD4.b64_md4()
@@ -61,7 +61,7 @@ ht-degree: 0%
 * soHASHING_SHA256.b64_sha256()
 * soHASHING_SHA256.str_sha256()
 
-正如您从该列表中看到的，对于散列的不同输出类型，有不同的函数可用。 您可以选择 `hex_` 对于十六进制数字， `b64_` 对于Base64编码输出，或者 `str_` 用于简单字符串编码。
+正如您从该列表中看到的，对于散列的不同输出类型，有不同的函数可用。 您可以选择十六进制数字为`hex_`，Base64编码输出为`b64_`，简单字符串编码为`str_`。
 
 根据您选择的哈希函数，哈希的长度会有所不同：
 
@@ -79,10 +79,10 @@ ht-degree: 0%
 请按照以下步骤尝试第一个示例：
 
 1. 下载并解压缩示例文件后，在JEE Designer中使用AEM Forms打开hashing_forms_sample1.pdf。 或者，您可以使用Adobe Reader或Adobe Acrobat Professional打开并查看示例，但看不到源代码。
-1. 在标记为的文本字段中 [!UICONTROL 清文本] 键入要经过哈希处理的密码或任何其他消息。
+1. 在标记为[!UICONTROL 纯文本]的文本字段中，键入要经过哈希处理的密码或任何其他消息。
 1. 单击四个按钮之一以生成MD4、MD5、SHA-1或SHA-256哈希值。 根据您按下的按钮，将调用生成十六进制输出的四个哈希函数之一，并对字符串或消息进行哈希处理。
 
-哈希操作的结果显示在标记为的字段中 [!UICONTROL 哈希]. 哈希长度因您选择的哈希函数而异。
+哈希操作的结果显示在标记为[!UICONTROL 哈希]的字段中。 哈希长度因您选择的哈希函数而异。
 
 所有示例都使用十六进制数字作为输出类型。 您可以使用脚本编辑器修改示例，并将输出类型更改为Base64或简单字符串。
 
@@ -92,11 +92,11 @@ ht-degree: 0%
 
 请按照以下步骤尝试第二个示例：
 
-1. 打开 `hashing_forms_sample2.pdf` 与AEM Forms在JEE Designer上。 或者，您可以使用Adobe Reader或Adobe Acrobat Professional打开并查看示例，但看不到源代码。
-1. 选择两个口令字段之一，标签为 [!UICONTROL 密码手册] 或 [!UICONTROL 密码女性] 并键入密码：
-   1. 此人的密码为 `bob`
-   1. 女人的密码是 `alice`
-1. 当您将焦点移出密码字段或按Enter键时，系统会自动生成您输入的密码散列，并与后台存储的正确密码散列进行比较。 正确的散列密码存储在标记为的不可见文本字段中 `passwd_man_hashed` 和 `passwd_woman_hashed`. 如果键入该人的正确密码，则文本字段中标有 `Man 1` 和 `Man 2` 设置为可访问，以便您能够在其中键入文本。 同样的行为也适用于妇女的田地。
+1. 在JEE Designer中使用AEM Forms打开`hashing_forms_sample2.pdf`。 或者，您可以使用Adobe Reader或Adobe Acrobat Professional打开并查看示例，但看不到源代码。
+1. 从标记为[!UICONTROL Password MAN]或[!UICONTROL Password WOMAN]的两个密码字段中选择一个并键入密码：
+   1. 此人的密码是`bob`
+   1. 该女人的密码是`alice`
+1. 当您将焦点移出密码字段或按Enter键时，系统会自动生成您输入的密码散列，并与后台存储的正确密码散列进行比较。 正确的散列密码存储在标记为`passwd_man_hashed`和`passwd_woman_hashed`的不可见文本字段中。 如果您为联系人键入了正确的密码，则标记为`Man 1`和`Man 2`的文本字段将变为可访问状态，以便您能够在其中键入文本。 同样的行为也适用于妇女的田地。
 1. 或者，您可以单击标记为“删除密码”的按钮，这将禁用文本字段并更改其边框。
 
 用于比较两个哈希值并启用文本字段的代码非常简单：
@@ -114,7 +114,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 你在哪里需要这样的东西？ 考虑一个PDF表单，其中包含应仅由授权人员填写的字段。 通过使用密码保护这些字段（在Sample_2.pdf中文档的任何位置均无法以明文显示），您可以确保只有知道密码的用户才能访问这些字段。
 
-我鼓励您继续探索这两个示例PDF文件。  您可以使用Sample_1.pdf生成新的哈希值，并使用生成的值更改Sample_2.pdf中使用的密码或哈希函数。  归因部分中列出的资源还提供有关哈希处理以及本文中使用的特定JavaScript实施的更多信息。
+我鼓励您继续探索这两个示例PDF文件。  您可以使用Sample_1.pdf生成新的哈希值，并使用生成的值更改Sample_2.pdf中使用的密码或哈希函数。  归因部分中列出的资源还提供有关哈希处理以及本文中使用的特定JavaScript实现的其他信息。
 
 ## 归因 {#attributions}
 

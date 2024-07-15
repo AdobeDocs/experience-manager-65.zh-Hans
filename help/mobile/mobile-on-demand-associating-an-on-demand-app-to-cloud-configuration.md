@@ -32,11 +32,11 @@ ht-degree: 2%
 >
 >在开始为On-Demand应用程序配置云配置之前，您必须熟悉AEM Mobile配置和配置AEM Mobile On-demand Services客户端。
 >
->有关详细信息，请参阅 [设置AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) 在管理部分中。
+>有关详细信息，请参阅管理部分中的[设置AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md)。
 
-要配置Mobile On-DemandCloud Service，请单击 **管理连接** 从应用程序仪表板中拼贴。
+要配置Mobile On-DemandCloud Service，请单击应用程序仪表板中&#x200B;**管理连接**&#x200B;图块右上角的顶部齿轮。
 
-您应该熟悉应用程序功能板和可用的磁贴。 请参阅 [AEM Mobile应用程序功能板](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 以了解更多详细信息。
+您应该熟悉应用程序功能板和可用的磁贴。 有关更多详细信息，请参阅[AEM Mobile应用程序功能板](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
 
 ### 设置指向云配置的链接 {#setting-up-link-to-cloud-configuration}
 
@@ -44,26 +44,26 @@ ht-degree: 2%
 >
 >确保您具有现有的按需客户端和云配置。
 >
->有关详细信息，请参阅 [设置AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) 在管理部分中。
+>有关详细信息，请参阅管理部分中的[设置AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md)。
 
 以下步骤描述了如何设置指向云配置的链接：
 
-1. 从 **移动设备**，选择 **应用程序** 以及目录中的Mobile On-Demand应用程序。
-1. 单击 **管理连接** 磁贴。
+1. 从&#x200B;**Mobile**&#x200B;中选择&#x200B;**应用**，然后从目录中选择您的Mobile On-Demand应用。
+1. 单击&#x200B;**管理连接**&#x200B;拼贴上的齿轮图标。
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. 输入现有配置，或通过输入 **配置标题**， **设备ID**、和 **设备令牌**.
+1. 输入现有的配置，或通过输入&#x200B;**配置标题**、**设备ID**&#x200B;和&#x200B;**设备令牌**&#x200B;创建配置。
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. 一旦您的 **设备ID** 和 **设备令牌** 通过验证，从列表中选择您的按需项目。
+1. 验证您的&#x200B;**设备ID**&#x200B;和&#x200B;**设备令牌**&#x200B;后，从列表中选择您的按需项目。
 
    单击&#x200B;**“提交”。**
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   此 **管理连接** 图块显示您的云配置。
+   **管理连接**&#x200B;图块显示您的云配置。
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 

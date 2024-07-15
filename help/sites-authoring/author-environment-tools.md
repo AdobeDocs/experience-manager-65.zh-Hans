@@ -23,7 +23,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 管理您的站点 {#managing-your-site}
 
-此 **站点** 通过console，您可以使用标题栏、工具栏、操作图标（适用于所选资源）、痕迹导航以及辅助边栏（例如时间轴和引用）来导航和管理您的网站。
+通过&#x200B;**站点**&#x200B;控制台，您可以使用标题栏、工具栏、操作图标（适用于所选资源）、痕迹导航以及辅助边栏（例如时间轴和引用）来导航和管理您的网站。
 
 例如，列视图：
 
@@ -47,8 +47,8 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 在编辑页面时，**帮助**&#x200B;可从以下位置访问：
 
-* 该 [**页面信息**](/help/sites-authoring/editing-page-properties.md#page-properties) 选择器；这将显示幻灯片介绍（在您第一次访问编辑器时显示）。
-* 该 [配置](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 用于特定组件的对话框(使用问号(？) 图标)；这将显示上下文相关的“帮助”。
+* [**页面信息**](/help/sites-authoring/editing-page-properties.md#page-properties)&#x200B;选择器；这将显示幻灯片介绍（在您第一次访问编辑器时显示）。
+* 特定组件的[配置](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)对话框(使用问号(？) 图标)；这将显示上下文相关的“帮助”。
 
 其他[与帮助相关的资源可以从控制台中访问](/help/sites-authoring/basic-handling.md#accessing-help)。
 
@@ -60,7 +60,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![ateat-03](assets/ateat-03.png)
 
-打开侧面板时，它从左侧滑开(选择 **组件** 选项卡)。 打开后，您可以浏览所有可用于页面的组件。
+打开侧面板时，左侧会打开该面板（如果需要，请选择&#x200B;**组件**&#x200B;选项卡）。 打开后，您可以浏览所有可用于页面的组件。
 
 实际外观和操作取决于您所使用的设备类型：
 
@@ -93,26 +93,26 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
       * 标准组件的图标是单色的。
       * 缩写始终由组件名称的前两个字符组成。
 
-  从顶部工具栏的 **组件** 浏览器中，您可以执行以下操作：
+  从&#x200B;**组件**&#x200B;浏览器的顶部工具栏中，您可以执行以下操作：
 
    * 按名称筛选组件。
    * 使用下拉选择框将显示内容限定为特定组。
 
-  有关组件的更多详细说明，您可以单击中组件旁边的信息图标 **组件** 浏览器（如果可用）。 例如，对于&#x200B;**布局容器**：
+  有关组件的更多详细说明，您可以在&#x200B;**组件**&#x200B;浏览器（如果可用）中单击组件旁边的信息图标。 例如，对于&#x200B;**布局容器**：
 
   ![ateat-06](assets/ateat-06.png)
 
-  有关可供您使用的组件的更多信息，请参阅 [组件控制台](/help/sites-authoring/default-components-console.md).
+  有关对您可用的组件的更多信息，请参阅[组件控制台](/help/sites-authoring/default-components-console.md)。
 
 ## 资源浏览器 {#assets-browser}
 
 资源浏览器会显示当前页面上可直接使用的所有[资源](/help/assets/assets.md)。
 
-资产浏览器是侧面板中的一个选项卡，侧面板中还包含 [组件浏览](/help/sites-authoring/author-environment-tools.md#components-browser)r和 [内容树](/help/sites-authoring/author-environment-tools.md#content-tree). 要打开或关闭侧面板，请使用工具栏左上角的图标：
+资产浏览器是侧面板中的一个选项卡，以及[组件浏览](/help/sites-authoring/author-environment-tools.md#components-browser)r和[内容树](/help/sites-authoring/author-environment-tools.md#content-tree)。 要打开或关闭侧面板，请使用工具栏左上角的图标：
 
 ![ateat-03-1](assets/ateat-03-1.png)
 
-打开侧面板时，它从左侧滑开。 选择 **资产** 选项卡（如有必要）。
+打开侧面板时，它从左侧滑开。 根据需要选择&#x200B;**Assets**&#x200B;选项卡。
 
 ![ateat-07](assets/ateat-07.png)
 
@@ -126,7 +126,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
    * 例如，可以将图像类型的资源拖动到图像组件上。
 
-* A [占位符](/help/sites-authoring/editing-content.md#component-placeholder) 在段落系统中创建相应类型的组件。
+* 段落系统中用于创建相应类型组件的[占位符](/help/sites-authoring/editing-content.md#component-placeholder)。
 
    * 例如，可以将图像类型的资源拖动到段落系统中，以创建图像组件。
 
@@ -165,13 +165,13 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
   ![ateat-10](assets/ateat-10.png)
 
-如果您必须快速更改资产，则可以启动 [资产编辑器](/help/assets/manage-assets.md) 直接从资产浏览器中，单击资产名称旁边显示的编辑图标。
+如果必须快速更改资产，可以直接从资产浏览器启动[资产编辑器](/help/assets/manage-assets.md)，方法是单击资产名称旁边显示的编辑图标。
 
-![资产浏览器桌面设备](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Assets浏览器桌面设备](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## 内容树 {#content-tree}
 
-此 **内容树** 以层次结构概览页面上的所有组件，以便您一眼就能看到页面的构成方式。
+**内容树**&#x200B;提供层次结构中页面上所有组件的概述，以便您一眼就能看到页面的构成方式。
 
 内容树是侧面板中的一个选项卡（侧面板中还有组件浏览器和资源浏览器）。要打开或关闭侧面板，请使用工具栏左上角的图标：
 
@@ -205,7 +205,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
   ![扳手图标 — 编辑](do-not-localize/screen_shot_2018-03-22at142725.png)
 
-* 或属于某个页面的 [活动副本](/help/sites-administering/msm.md)，其中组件继承自其他页面；例如：
+* 或属于[livecopy](/help/sites-administering/msm.md)的一部分（其中组件继承自其他页面）的页面；例如：
 
   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
@@ -213,11 +213,11 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ## 片段 – 关联的内容浏览器 {#fragments-associated-content-browser}
 
-如果您的页面包含内容片段，则您有权访问 [关联内容的浏览器](/help/sites-authoring/content-fragments.md#using-associated-content).
+如果您的页面包含内容片段，则您有权访问[浏览器以获取关联内容](/help/sites-authoring/content-fragments.md#using-associated-content)。
 
 ## 引用 {#references}
 
-**引用** 显示选定页面的连接：
+**引用**&#x200B;显示与选定页面的连接：
 
 * Blueprint
 * 启动项
@@ -231,23 +231,23 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
-[选择所需的资源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) 显示与该资源相关的引用类型列表：
+[选择您需要的资源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)显示与该资源相关的引用类型列表：
 
 ![ateat-22](assets/ateat-22.png)
 
 选择相应的引用类型可获取详细信息。在某些情况下，当您选择特定引用时，还可以执行其他操作，包括：
 
-* **传入链接** 提供引用页面的页面列表以及直接访问 **编辑** 选择特定链接时显示的页面之一。
+* **传入链接**&#x200B;提供引用该页面的页面列表，以及在选择特定链接时直接访问&#x200B;**编辑**&#x200B;这些页面之一。
 
    * 这只能显示静态链接，而不能显示动态生成的链接；例如，来自列表组件的链接。
 
 * 使用&#x200B;**引用**&#x200B;组件的借入和借出内容的实例，您可以从此处导航至正在引用/引用的页面
 
-* [对产品页面的引用](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (可从“Commerce — 产品”控制台中获取)
-* [启动次数](/help/sites-authoring/launches.md) 提供对相关启动项的访问。
+* [对产品页面的引用](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (可从Commerce-Products控制台中获取)
+* [启动项](/help/sites-authoring/launches.md)提供对相关启动项的访问。
 * [Live Copy](/help/sites-administering/msm.md) 显示基于选定资源的所有 Live Copy 的路径。
-* [Blueprint](/help/sites-administering/msm-best-practices.md) 提供详细信息和各种操作。
-* [语言副本](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) 提供详细信息和各种操作。
+* [Blueprint](/help/sites-administering/msm-best-practices.md)提供详细信息和各种操作。
+* [语言副本](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel)提供详细信息和各种操作。
 
 例如，可以修复“参照”元件中的断开参照：
 
@@ -277,16 +277,16 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 * [锁定页面](/help/sites-authoring/editing-content.md#locking-a-page)
 * [发布页面](/help/sites-authoring/publishing-pages.md#main-pars-title-10)
 * [取消发布页面](/help/sites-authoring/publishing-pages.md#main-pars-title-5)
-* [编辑模板](/help/sites-authoring/templates.md)；当页面基于 [可编辑模板](/help/sites-authoring/templates.md#editable-and-static-templates)
+* [编辑模板](/help/sites-authoring/templates.md)；页面基于[可编辑模板](/help/sites-authoring/templates.md#editable-and-static-templates)时
 
 * [以发布的形式查看](/help/sites-authoring/editing-content.md#view-as-published)
-* 在Admin中查看；在 [站点控制台](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* 在Admin中查看；在[站点控制台](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中打开页面
 * [帮助](/help/sites-authoring/basic-handling.md#accessing-help)
 
-例如，适当时， **页面信息** 还有以下选项：
+例如，在适当时，**页面信息**&#x200B;还有以下选项：
 
-* [提升启动项](/help/sites-authoring/launches-promoting.md) 如果页面是启动项
-* [在经典UI中打开](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) 如果此选项为 [由管理员启用](/help/sites-administering/enable-classic-ui-editor.md)
+* 如果该页面是启动项，则[提升启动项](/help/sites-authoring/launches-promoting.md)
+* [在经典UI中打开](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page)（如果此选项由管理员启用[）](/help/sites-administering/enable-classic-ui-editor.md)
 
 另外，在适当时，**页面信息**&#x200B;还允许访问分析和建议。
 
@@ -294,16 +294,16 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 编辑页面时可以使用多种模式来执行不同的操作：
 
-* [编辑](/help/sites-authoring/editing-content.md)  — 在编辑页面内容时使用此模式。
-* [布局](/help/sites-authoring/responsive-layout.md)  — 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
+* [编辑](/help/sites-authoring/editing-content.md) — 在编辑页面内容时使用此模式。
+* [布局](/help/sites-authoring/responsive-layout.md) — 允许您创建和编辑依赖于设备的响应式布局（如果页面基于布局容器）
 
-* [基架](/help/sites-authoring/scaffolding.md)  — 帮助您创建大量共享结构但内容不同的页面。
-* [开发人员](/help/sites-developing/developer-mode.md)  — 可让您执行各种操作（需要权限）。 这包括检查页面及其组件的技术详细信息。
+* [基架](/help/sites-authoring/scaffolding.md) — 帮助您创建共享结构但内容不同的大量页面。
+* [开发人员](/help/sites-developing/developer-mode.md) — 允许您执行各种操作（需要权限）。 这包括检查页面及其组件的技术详细信息。
 
-* [设计](/help/sites-authoring/default-components-designmode.md)  — 允许您启用/禁用要在页面上使用的组件，并配置组件的设计(如果页面基于 [静态模板](/help/sites-authoring/templates.md#editable-and-static-templates))。
+* [设计](/help/sites-authoring/default-components-designmode.md) — 允许您启用/禁用要在页面上使用的组件，并配置组件的设计（如果页面基于[静态模板](/help/sites-authoring/templates.md#editable-and-static-templates)）。
 
 * [定位](/help/sites-authoring/content-targeting-touch.md) - 通过在所有渠道中进行定位和衡量来提高内容相关性。
-* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor)  — 显示页面的Analytics数据。
+* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) — 显示页面的Analytics数据。
 
 * [时间扭曲](/help/sites-authoring/working-with-page-versions.md#timewarp) - 让您查看页面在特定时间点的状态。
 * [Live Copy 状态](/help/sites-authoring/editing-content.md#live-copy-status) – 允许快速查看 Live Copy 状态以及继承/未继承的组件。
@@ -320,7 +320,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 >* 根据页面的特性，某些模式可能不可用。
 >* 访问某些模式需要相应的权限。
 >* 由于空间限制，“开发人员”模式在移动设备上不可用。
->* 有一个 [键盘快捷键](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`)以在 **预览** 和当前选择的模式(例如， **编辑**、和 **布局**)。
+>* 有一个[键盘快捷键](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) (`Ctrl-Shift-M`)可在&#x200B;**预览**&#x200B;和当前选择的模式（例如，**编辑**&#x200B;和&#x200B;**布局**）之间切换。
 >
 
 ## 路径选择 {#path-selection}
@@ -329,7 +329,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ### 路径字段 {#path-fields}
 
-此处所用的说明示例是图像组件。有关使用和编辑组件的更多信息，请参阅 [用于页面创作的组件](/help/sites-authoring/default-components.md).
+此处所用的说明示例是图像组件。有关使用和编辑组件的详细信息，请参阅[用于页面创作的组件](/help/sites-authoring/default-components.md)。
 
 路径字段现在具有自动完成和先行智能功能，可更方便地查找资源。
 
@@ -347,8 +347,8 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* 选择资源后，对话框右上角的&#x200B;**选择**&#x200B;按钮将变为活动状态。单击以确认选择或 **取消** 中止。
-* 如果上下文允许选择多个资源，则选择某个资源也会激活“选择 **** ”按钮，但也会将选定资源的计数添加到窗口的右上角。单击 **X** ，取消选择全部。
+* 选择资源后，对话框右上角的&#x200B;**选择**&#x200B;按钮将变为活动状态。单击以确认选择，或单击&#x200B;**取消**&#x200B;以中止。
+* 如果上下文允许选择多个资源，则选择某个资源也会激活“选择 **** ”按钮，但也会将选定资源的计数添加到窗口的右上角。单击该数字旁边的&#x200B;**X**&#x200B;可取消选择全部。
 * 在树中导航时，您的位置会反映在对话框顶部的痕迹导航中。还可使用这些痕迹导航在资源层次结构中快速跳转。
 * 您可以随时使用对话框顶部的搜索字段。 单击搜索字段中的 **X** 可清除搜索。
 * 要缩小搜索范围，您可以显示过滤器选项并按特定路径筛选结果。

@@ -22,13 +22,13 @@ ht-degree: 1%
 
 要生成用于语义更改的缩小代码，请执行以下步骤。
 
-1. 复制 `client-html/src/main/webapp/js` 文件系统上的src-package。
+1. 从文件系统上的src-package复制`client-html/src/main/webapp/js`。
 
    >[!NOTE]
    >
-   >请参阅 [自定义AEM Forms工作区简介](/help/forms/using/introduction-customizing-html-workspace.md) 以了解有关包的更多详细信息。
+   >有关包的更多详细信息，请参阅[自定义AEM Forms工作区简介](/help/forms/using/introduction-customizing-html-workspace.md)。
 
-1. 更新中的路径 `main.js` 位于client-html/src/main/webapp/js下，用于添加/更新模型/视图。
+1. 为添加/更新的模型/视图，更新位于client-html/src/main/webapp/js下的`main.js`中的路径。
 
    例如，添加新的Sharequeue模型（如mySharequeue）会更改：
 
@@ -42,7 +42,7 @@ ht-degree: 1%
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. 更新 `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` 如果更改/添加别名， `main.js`.
+1. 在`main.js`中更改/添加别名时更新`registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,`。
 
    例如，添加新的Sharequeue模型（如mySharequeue）会更改：
 

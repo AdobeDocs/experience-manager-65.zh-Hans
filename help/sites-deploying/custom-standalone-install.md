@@ -16,19 +16,19 @@ ht-degree: 0%
 
 # 自定义独立安装{#custom-standalone-install}
 
-本节介绍安装独立AEM实例时可用的选项。 您也可以阅读 [存储元素](/help/sites-deploying/storage-elements-in-aem-6.md) 有关全新安装AEM 6后选择后端存储类型的更多信息。
+本节介绍安装独立AEM实例时可用的选项。 您还可以阅读[存储元素](/help/sites-deploying/storage-elements-in-aem-6.md)以了解有关全新安装AEM 6后选择后端存储类型的详细信息。
 
 ## 通过重命名文件更改端口号 {#changing-the-port-number-by-renaming-the-file}
 
-AEM的默认端口为4502。 如果该端口不可用或已在使用中，则Quickstart自动将其自身配置为使用第一个可用的端口号，如下所示：4502、8080、8081、8082、8083、8084、8085、8888、9362， `<*random*>`.
+AEM的默认端口为4502。 如果该端口不可用或已在使用中，Quickstart会自动将其自身配置为使用第一个可用的端口号，如下所示：4502、8080、8081、8082、8083、8084、8085、8888、9362、`<*random*>`。
 
-您还可以通过重命名快速入门jar文件来设置端口号，以便文件名包含端口号；例如， `cq5-publish-p4503.jar` 或 `cq5-author-p6754.jar`.
+您还可以通过重命名快速入门jar文件来设置端口号，以便文件名包含端口号；例如，`cq5-publish-p4503.jar`或`cq5-author-p6754.jar`。
 
 重命名快速入门jar文件时，将遵循各种规则：
 
-* 重命名文件时，该文件必须以 `cq;` 如所示 `cq5-publish-p4503.jar`.
+* 重命名文件时，必须以`cq;`开头，如`cq5-publish-p4503.jar`所示。
 
-* 建议您 *始终* 为端口号添加前缀 — p；如cq5-publish-p4503.jar或cq5-author-p6754.jar中所示。
+* 建议您&#x200B;*始终*&#x200B;在端口号前面加上 — p；如cq5-publish-p4503.jar或cq5-author-p6754.jar中所示。
 
 >[!NOTE]
 >
@@ -36,25 +36,25 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，则Qui
 >
 >* 端口号必须为4或5位数
 >* 这些数字必须位于短划线之后
->* 如果文件名中有任何其他数字，则必须为端口号添加前缀 `-p`
+>* 如果文件名中有任何其他数字，则端口号必须以`-p`为前缀
 >* 文件名开头的“cq5”前缀将被忽略
 >
 
 >[!NOTE]
 >
->您还可以使用更改端口号 `-port` 选项。
+>您还可以使用start命令中的`-port`选项更改端口号。
 
 ### Java 11注意事项 {#java-considerations}
 
 如果您运行OracleJava 11（或者Java的通常版本高于8），则在启动AEM时，必须在命令行中添加其他开关。
 
-* 以下 —  `-add-opens` 需要添加交换机以防止相关的反射访问中的警告消息 `stdout.log`
+* 需要添加以下 — `-add-opens`开关以防止在`stdout.log`中出现相关的反射访问警告消息
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* 此外，您需要使用 `-XX:+UseParallelGC` 切换以缓解任何潜在的性能问题。
+* 此外，您需要使用`-XX:+UseParallelGC`开关来缓解任何潜在的性能问题。
 
 以下是在Java 11上启动AEM时其他JVM参数的外观示例：
 
@@ -62,19 +62,19 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，则Qui
 -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-最后，如果运行的是从AEM 6.3升级的实例，请确保将以下属性设置为 **true** 下 `sling.properties`：
+最后，如果您正在运行从AEM 6.3升级的实例，请确保在`sling.properties`下将以下属性设置为&#x200B;**true**：
 
 * `felix.bootdelegation.implicit`
 
 ## 运行模式 {#run-modes}
 
-**运行模式** 您可以根据特定目的调整AEM实例；例如，创作或发布、测试、开发、内联网等。 这些模式还允许您控制示例内容的使用。 此示例内容是在构建快速入门之前定义的，可以包含包、配置等。 如果您希望保持安装精简并且没有示例内容，这对于生产就绪型安装尤其有用。 有关更多信息，请参阅：
+**运行模式**&#x200B;允许您针对特定目的调整AEM实例；例如，创作或发布、测试、开发、Intranet等。 这些模式还允许您控制示例内容的使用。 此示例内容是在构建快速入门之前定义的，可以包含包、配置等。 如果您希望保持安装精简并且没有示例内容，这对于生产就绪型安装尤其有用。 有关更多信息，请参阅：
 
 * [运行模式](/help/sites-deploying/configure-runmodes.md)
 
 ## 添加文件安装提供程序 {#adding-a-file-install-provider}
 
-默认文件夹 `crx-quickstart/install` 将监视文件。
+默认情况下，将监视文件夹`crx-quickstart/install`中的文件。
 此文件夹不存在，但只能在运行时创建。
 
 如果将捆绑包、配置包或内容包放入此目录中，则会自动选取并安装该捆绑包。 如果将其删除，则将其卸载。
@@ -84,19 +84,19 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，则Qui
 
 * 在开发过程中，将某些内容放入文件系统中可能会更容易。
 * 如果出现问题，将无法访问Web控制台和存储库。 这样，您可以将其他捆绑包放入此目录中，并且应该安装这些捆绑包。
-* 此 `crx-quickstart/install` 可以在快速入门开始之前创建文件夹，还可以将其他包放置在该文件夹中。
+* 可以在快速入门开始之前创建`crx-quickstart/install`文件夹，还可以将其他包放在该文件夹中。
 
 >[!NOTE]
 >
->另请参阅 [如何在服务器启动时自动安装CRX软件包](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html) 例如。
+>有关示例，另请参阅[如何在服务器启动时自动安装CRX包](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html)。
 
 ## 安装和启动Adobe Experience Manager as a Windows Service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
 >
->确保在以管理员身份登录时执行以下过程，或使用启动/运行这些步骤 **以管理员身份运行** 上下文菜单选择。
+>确保在以管理员身份登录时执行以下过程，或者使用&#x200B;**以管理员身份运行**&#x200B;上下文菜单选择启动/运行这些步骤。
 >
->以具有管理员权限的用户身份登录是 **不足**. 如果您在完成这些步骤时未以管理员身份登录，您将收到 **访问被拒绝** 错误。
+>以具有管理员权限的用户登录&#x200B;**不足**。 如果您在完成这些步骤时未以管理员身份登录，则会收到&#x200B;**访问被拒绝**&#x200B;错误。
 
 要安装和启动AEM as a Windows服务，请执行以下操作：
 
@@ -108,7 +108,7 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，则Qui
 
    此命令调用相应的脚本，该脚本在64位Java而不是32位Java中启动Windows服务守护程序。
 
-1. 要防止进程分叉到多个进程中，请增加PermGen JVM参数。 找到 `set jvm_options` 命令并设置值，如下所示：
+1. 要防止进程分叉到多个进程中，请增加PermGen JVM参数。 找到`set jvm_options`命令并设置值，如下所示：
 
    `set jvm_options=-Xmx1792m`
 
@@ -116,7 +116,7 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，则Qui
 
    `instsrv.bat cq5`
 
-   要验证服务是否已创建，请打开“管理工具”控制面板中的“服务”或键入 `start services.msc` 在命令提示符下。 cq5服务将显示在列表中。
+   要验证是否已创建该服务，请在“管理工具”控制面板中打开“服务”，或在命令提示符下键入`start services.msc`。 cq5服务将显示在列表中。
 
 1. 通过执行以下操作之一启动服务：
 
@@ -128,7 +128,7 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，则Qui
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-1. Windows指示服务正在运行。 AEM将启动，并且prunsrv可执行文件会显示在任务管理器中。 在Web浏览器中，导航到AEM，例如， `https://localhost:4502` 以开始使用AEM。
+1. Windows指示服务正在运行。 AEM将启动，并且prunsrv可执行文件会显示在任务管理器中。 在Web浏览器中，导航到AEM，例如`https://localhost:4502`以开始使用AEM。
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -138,15 +138,15 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，则Qui
 
 >[!NOTE]
 >
->安装AEM即服务时，必须在中提供日志目录的绝对路径 `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` 从Configuration Manager。
+>安装AEM即服务时，必须从Configuration Manager为`com.adobe.xmp.worker.files.ncomm.XMPFilesNComm`中的日志目录提供绝对路径。
 
-要卸载服务，请单击 **停止** 在 **服务** 在控制面板或命令行中，导航到文件夹并键入 `instsrv.bat -uninstall cq5`. 该服务将从的列表中删除 **服务** 或从命令行中的列表进行键入 `net start`.
+要卸载该服务，请在&#x200B;**服务**&#x200B;控制面板中单击&#x200B;**停止**，或在命令行中导航到文件夹并键入`instsrv.bat -uninstall cq5`。 该服务将从&#x200B;**服务**&#x200B;控制面板的列表中删除，或者在您键入`net start`时从命令行中的列表中删除。
 
 ## 重新定义临时工作目录的位置 {#redefining-the-location-of-the-temporary-work-directory}
 
-Java计算机临时文件夹的缺省位置为 `/tmp`. 例如，在构建包时，AEM也使用此文件夹。
+Java计算机的临时文件夹的默认位置为`/tmp`。 例如，在构建包时，AEM也使用此文件夹。
 
-如果要更改临时文件夹的位置（例如，需要具有更多可用空间的目录），请定义* `<new-tmp-path>`*通过添加JVM参数：
+如果要更改临时文件夹的位置（例如，需要具有更多可用空间的目录），请通过添加JVM参数来定义* `<new-tmp-path>`*：
 
 `-Djava.io.tmpdir="/<*new-tmp-path*>"`
 
@@ -274,11 +274,11 @@ Log files
 
 ## 在Amazon EC2环境中安装AEM {#installing-aem-in-the-amazon-ec-environment}
 
-在Amazon Elastic Compute Cloud (EC2)实例上安装AEM时，如果同时在EC2实例上安装author和publish，则会按照以下步骤正确安装Author实例： [安装AEM Manager的实例](#installinginstancesofaemmanager)；但是，“发布”实例会变为“创作”。
+在Amazon Elastic Compute Cloud (EC2)实例上安装AEM时，如果同时在EC2实例上安装author和publish，则会按照[安装AEM Manager实例](#installinginstancesofaemmanager)中的过程正确安装Author实例；但是，Publish实例会变为Author。
 
-在EC2环境中安装发布实例之前，请执行以下操作：
+在EC2环境中安装Publish实例之前，请执行以下操作：
 
-1. 在首次启动实例之前，解压缩发布实例的jar文件。 要解压缩文件，请使用以下命令：
+1. 在首次启动实例之前，解压缩Publish实例的jar文件。 要解压缩文件，请使用以下命令：
 
    ```xml
    java -jar quickstart.jar -unpack
@@ -286,7 +286,7 @@ Log files
 
    >[!NOTE]
    >
-   >如果更改模式 **之后** 首次启动实例时，无法更改运行模式。
+   >如果在首次启动实例后&#x200B;**更改模式**，则无法更改运行模式。
 
 1. 通过运行以下命令启动实例：
 
@@ -298,7 +298,7 @@ Log files
    >
    >请确保先运行实例，然后再通过运行上面的命令将其解包。 否则，将不会生成quickstart.properties填充。 如果没有此文件，任何未来的AEM升级都将失败。
 
-1. 在 **纸盒** 文件夹，打开 **开始** 脚本并选中以下部分：
+1. 在&#x200B;**bin**&#x200B;文件夹中，打开&#x200B;**start**&#x200B;脚本并检查以下部分：
 
    ```xml
    # runmode(s)
@@ -307,7 +307,7 @@ Log files
    fi
    ```
 
-1. 将运行模式更改为 **发布** 并保存文件。
+1. 将运行模式更改为&#x200B;**发布**&#x200B;并保存文件。
 
    ```xml
    # runmode(s)
@@ -316,11 +316,11 @@ Log files
    fi
    ```
 
-1. 停止实例，然后通过运行 **开始** 脚本。
+1. 通过运行&#x200B;**start**&#x200B;脚本停止实例并重新启动它。
 
 ## 验证安装 {#verifying-the-installation}
 
-以下链接可用于验证您的安装是否可正常运行（所有示例均基于实例在本地主机的端口8080上运行，且CRX安装在/crx下且Launchpad位于/下）：
+以下链接可用于验证您的安装是否可正常运行(所有示例都基于实例在本地主机的端口8080上运行，CRX安装在/crx下，而Launchpad安装在/下)：
 
 * `https://localhost:8080/crx/de`
 CRXDE Lite控制台。
@@ -332,19 +332,19 @@ Web控制台。
 
 尽管配置AEM WCM有许多可能性，但应该执行某些操作，或至少在安装后立即检查：
 
-* 请参阅 [安全核对清单](/help/sites-administering/security-checklist.md) 用于确保系统安全所需的任务。
-* 查看随AEM WCM一起安装的默认用户和组的列表。 检查您是否想对任何其他帐户执行操作 — 请参阅 [安全和用户管理](/help/sites-administering/security.md) 以了解更多详细信息。
+* 有关确保系统安全所需的任务，请参阅[安全核对清单](/help/sites-administering/security-checklist.md)。
+* 查看随AEM WCM一起安装的默认用户和组的列表。 检查您是否想对任何其他帐户执行操作 — 有关更多详细信息，请参阅[安全和用户管理](/help/sites-administering/security.md)。
 
 ## 访问CRXDE Lite和Web控制台 {#accessing-crxde-lite-and-the-web-console}
 
 AEM WCM启动后，您还可以访问：
 
-* [CRXDE Lite](#accessing-crxde-lite)  — 用于访问和管理存储库
-* [Web控制台](#accessing-the-web-console)  — 用于管理或配置OSGi包（也称为OSGi控制台）
+* [CRXDE Lite](#accessing-crxde-lite) — 用于访问和管理存储库
+* [Web控制台](#accessing-the-web-console) — 用于管理或配置OSGi包（也称为OSGi控制台）
 
 ### 访问CRXDE Lite {#accessing-crxde-lite}
 
-要打开CRXDE Lite，您可以选择 **CRXDE Lite** ，或者使用浏览器导航到
+要打开CRXDE Lite，您可以从欢迎屏幕中选择&#x200B;**CRXDE Lite**，或者使用浏览器导航到
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -357,7 +357,7 @@ AEM WCM启动后，您还可以访问：
 
 #### 访问Web控制台 {#accessing-the-web-console}
 
-要访问Adobe CQ Web控制台，您可以选择 **OSGi控制台** ，或者使用浏览器导航到
+要访问Adobe CQ Web控制台，您可以从欢迎屏幕中选择&#x200B;**OSGi控制台**，或者使用浏览器导航至
 
 ```
  https://<host>:<port>/system/console
@@ -370,7 +370,7 @@ AEM WCM启动后，您还可以访问：
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-请参阅 [使用Web控制台进行OSGi配置](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 以了解更多详细信息。
+有关更多详细信息，请参阅使用Web控制台[OSGi配置](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)。
 
 ## 疑难解答 {#troubleshooting}
 
@@ -386,6 +386,6 @@ AEM WCM启动后，您还可以访问：
 
 >[!NOTE]
 >
->Adobe强烈建议您在删除AEM之前备份存储库。 如果您删除整个 &lt;cq-installation-directory>，您将删除存储库。 要在删除之前保留存储库数据，请移动或复制 &lt;cq-installation-directory>/crx-quickstart/repository文件夹中的其他位置，然后再删除其他文件夹。
+>Adobe强烈建议您在删除AEM之前备份存储库。 如果删除整个&lt;cq-installation-directory>，则将删除存储库。 要在删除之前保留存储库数据，请在删除其他文件夹之前将&lt;cq-installation-directory>/crx-quickstart/repository文件夹移动或复制到其他位置。
 
 如果您安装的AEM使用外部存储（例如，数据库服务器），则删除文件夹不会自动删除数据，但会删除存储配置，这会使恢复JCR内容变得困难。

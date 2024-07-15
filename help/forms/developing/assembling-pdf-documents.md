@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 组合PDF文档 {#assembling-pdf-documents}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 **关于汇编程序服务**
 
@@ -29,4 +29,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关汇编程序服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Assembler服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。

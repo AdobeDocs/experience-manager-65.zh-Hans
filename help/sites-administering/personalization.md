@@ -18,11 +18,11 @@ ht-degree: 2%
 
 # 个性化 {#personalization}
 
-## 什么是个性化？ {#what-is-personalization}
+## 什么是Personalization？ {#what-is-personalization}
 
 如今，可用内容量不断增加，无论是在互联网、外联网还是内联网网站上。
 
-个性化的核心是为用户提供量身定制的环境，其中显示根据其特定需求选择的动态内容；可以根据预定义的配置文件、用户选择或交互式用户行为选择动态内容。
+Personalization的核心是为用户提供量身定制的环境，其中显示根据用户特定需求选择的动态内容；可以根据预定义的用户档案、用户选择或交互式用户行为选择内容。
 
 个性化涉及三个主要元素：
 
@@ -43,7 +43,7 @@ ht-degree: 2%
 
 * 定义个性化实际发生的方式 — 用户可以查看哪些内容以及何时查看。
 
-个性化可以是：
+Personalization可以是：
 
 #### 显式 {#explicit}
 
@@ -55,9 +55,9 @@ ht-degree: 2%
 * 简单筛选：根据用户和/或组级别的预定义用户档案进行选择。
 * 协作/推荐筛选：根据预定义规则注册用户行为。 这些规则基于与志同道合的个人共同观察的行为。 收集的信息用于定制显示给用户的信息，特别是以推荐形式显示的信息。
 
-## 如何以及何时可以使用个性化？ {#how-and-when-can-personalization-be-used}
+## 如何使用Personalization以及何时使用？ {#how-and-when-can-personalization-be-used}
 
-个性化可用于多种情况，例如：
+Personalization可用于多种情况，例如：
 
 ### Intranet页面 {#intranet-pages}
 
@@ -79,12 +79,12 @@ ht-degree: 2%
 
 * 许多主要的搜索引擎网站都有非常强大的分析工具，记录用户行为、他们使用的搜索词以及他们实际访问的网站。 然后使用该内容来自定义提供的内容 — 特别是关于显示广告的内容。
 
-### 个性化的优势和需要考虑的要点 {#strengths-of-personalization-and-points-to-consider}
+### Personalization的优势和需要考虑的因素 {#strengths-of-personalization-and-points-to-consider}
 
 以下是使用个性化设置的原因：
 
 * 用户可以体验舒适、专注的网站。
-* 个性化可用于自动将访问权限传播到最新版本的内容。
+* Personalization可用于自动传播对最新版本内容的访问权限。
 * 社交协作功能可供用户相互通信，因为它们可以通过其用户档案进行标识。
 * 可以为用户提供完成特定任务所需的内容。 在公司的内联网中，这可以成为传播信息的宝贵工具。
 * 可以为用户提供他们需要/想要的内容，从而减少他们执行搜索操作所需的时间。
@@ -99,7 +99,7 @@ ht-degree: 2%
 
 #### 授权 {#authorization}
 
-* 个性化需要使用登录机制，因为网站必须能够识别用户。
+* Personalization需要登录机制，因为网站必须能够识别用户。
 
 #### 缓存 {#caching}
 
@@ -108,32 +108,32 @@ ht-degree: 2%
 
 >[!TIP]
 >
->文档中进一步讨论了个性化对性能的影响，以及相关的缓存主题 [性能优化。](/help/sites-deploying/configuring-performance.md)
+>Personalization对性能的影响和相关缓存主题将在文档[性能优化](/help/sites-deploying/configuring-performance.md)中进一步讨论。
 
 #### 规则的准确性 {#accuracy}
 
-* 通过跟踪用户的行为或根据用户配置文件设置规则来实现的个性化必须准确且符合逻辑。
+* 通过跟踪用户行为或根据用户配置文件设置规则而实现的Personalization必须准确且符合逻辑。
 * 因为规则的逻辑不准确，用户被强制提供或拒绝提供内容是最令其沮丧的。
 * 因此，必须仔细考虑规则 — 将用户的要求放在前台。 这可能需要花费很多时间，并且不会被低估；在实施个性化时，定义业务规则通常比技术工作更费力。
 
 #### 使用时间 {#when-to-use}
 
-* 与Web上的许多功能一样，应谨慎使用个性化。 其使用是否真的会给用户带来好处？ 应该始终是首要考虑因素，或者是否可以通过其他方法用更少的工作量实现预期目标。 个性化可能会成为用户配置一次（查看其工作方式）和仅配置一次的功能，因为它没有为他们带来真正的优势。
-* 仅当内容是动态的 — 以某种方式依赖于用户时，个性化才有意义。 如果所有用户都看到相同的内容，则个性化是多余的。
+* 与Web上的许多功能一样，应谨慎使用个性化。 其使用是否真的会给用户带来好处？ 应该始终是首要考虑因素，或者是否可以通过其他方法用更少的工作量实现预期目标。 Personalization可能会有一项功能被用户配置一次（查看其工作方式），并且只配置一次，因为它没有为他们带来真正的优势。
+* 仅当内容是动态的 — 以某种方式取决于用户时，Personalization才有意义。 如果所有用户都看到相同的内容，则个性化是多余的。
 
 #### 机密性 {#confidentiality}
 
 * 许多用户担心数据保护和安全性。 尤其涉及在跟踪网上冲浪时的行为时检索的数据。
 
-## 个性化和访问 {#personalization-and-access}
+## Personalization和Access {#personalization-and-access}
 
-个性化应与访问控制分开考虑，但它们确实相关。
+Personalization应与访问控制分开考虑，但它们确实相关。
 
-个性化本身不会创建任何形式的访问控制。 它只是控制用户看到内容的一种方法；不会限制用户访问其他内容，并且与任何内容一样，需要已分配正确的访问控制。
+Personalization本身不会创建任何形式的访问控制。 它只是控制用户看到内容的一种方法；不会限制用户访问其他内容，并且与任何内容一样，需要已分配正确的访问控制。
 
 但是，访问控制可用于创建某种形式的个性化。 如果您允许或拒绝用户访问内容，这将不可避免地影响他们可用的内容选择，从而个性化他们的Web体验。
 
-## 可用于个性化的组件 {#components-available-for-personalization}
+## 适用于Personalization的组件 {#components-available-for-personalization}
 
 AEM提供了各种组件以进行个性化。 有些功能允许用户登录并编辑其配置文件，有些功能（如“我的小工具”）允许用户配置特定页面：
 
@@ -168,11 +168,11 @@ AEM提供了各种组件以进行个性化。 有些功能允许用户登录并�
 | 标记云 | 标记云，用于以图形方式显示网站中的标记选择 |
 | Teaser | 显示在主页上的内容（通常是图像），用于“诱惑”用户访问底层内容。 |
 
-## 个性化和社区内容 {#personalization-and-community-content}
+## Personalization和社区内容 {#personalization-and-community-content}
 
-博客、论坛和日历等社区功能会创建社区内容，通常称为用户生成内容(UGC)。 在包含多个AEM实例的发布环境中输入UGC时(a [发布场](/help/communities/topologies.md))，一个主要问题是如何在所有实例中同步UGC。
+博客、论坛和日历等社区功能会创建社区内容，通常称为用户生成内容(UGC)。 在包含多个AEM实例（[发布场](/help/communities/topologies.md)）的发布环境中输入UGC时，一个主要问题是如何在所有实例中同步UGC。
 
-替换为 [AEM Communities 6.1](/help/communities/overview.md) 扩展，此问题可通过使用 [用于UGC的公用存储](/help/communities/working-with-srp.md). 关于个性化，社区包括 [社交登录](/help/communities/social-login.md)  — 为网站访客提供使用Facebook和Twitter登录的选项。
+使用[AEM Communities 6.1](/help/communities/overview.md)扩展，可通过使用UGC](/help/communities/working-with-srp.md)的[公用存储来解决此问题。 关于个性化，Communities包括[社交登录](/help/communities/social-login.md) — 为网站访客提供使用Facebook和Twitter登录选项的功能。
 
 如果不进行社区扩展，则探索各种方法来解决UGC一致性问题，包括：
 

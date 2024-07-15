@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 先决条件 {#prerequisite}
 
-在创建自定义工具栏操作之前，请熟悉 [使用客户端库](/help/sites-developing/clientlibs.md) 和 [使用CRXDE Lite进行开发](/help/sites-developing/developing-with-crxde-lite.md).
+在创建自定义工具栏操作之前，请熟悉[使用客户端库](/help/sites-developing/clientlibs.md)和[使用CRXDE Lite进行开发](/help/sites-developing/developing-with-crxde-lite.md)。
 
 ## 什么是操作 {#what-is-an-action-br}
 
@@ -34,16 +34,16 @@ ht-degree: 0%
 
 为了说明自定义工具栏操作的创建，以下步骤将指导您创建按钮，以便最终用户在提交填写的表单之前查看所有自适应表单字段。
 
-1. 自适应表单支持的所有默认操作都存在于 `/libs/fd/af/components/actions` 文件夹。 在CRXDE中，复制 `fileattachmentlisting` 节点来源 `/libs/fd/af/components/actions/fileattachmentlisting` 到 `/apps/customaction`.
+1. 自适应表单支持的所有默认操作都存在于`/libs/fd/af/components/actions`文件夹中。 在CRXDE中，将`fileattachmentlisting`节点从`/libs/fd/af/components/actions/fileattachmentlisting`复制到`/apps/customaction`。
 
-1. 将节点复制到之后 `apps/customaction` 文件夹，将节点名称重命名为 `reviewbeforesubmit`. 此外，更改 `jcr:title` 和 `jcr:description` 节点的属性。
+1. 将节点复制到`apps/customaction`文件夹后，将节点名称重命名为`reviewbeforesubmit`。 此外，更改节点的`jcr:title`和`jcr:description`属性。
 
-   此 `jcr:title` 属性包含工具栏对话框中显示的操作的名称。 此 `jcr:description` 属性包含当用户将鼠标指针悬停在操作上时显示的更多信息。
+   `jcr:title`属性包含工具栏对话框中显示的操作的名称。 `jcr:description`属性包含当用户将指针悬停在操作上时显示的更多信息。
 
-   ![用于自定义工具栏的节点层次结构](assets/action3.png)
+   ![自定义工具栏的节点层次结构](assets/action3.png)
 
-1. 选择 `cq:template` 中的节点 `reviewbeforesubmit` 节点。 确保 `guideNodeClass` 属性为 `guideButton` 和更改 `jcr:title` 产之权益。
-1. 在中更改type属性 `cq:Template` 节点。 对于当前示例，请将type属性更改为button。
+1. 选择`reviewbeforesubmit`节点中的`cq:template`节点。 确保`guideNodeClass`属性的值为`guideButton`并相应地更改`jcr:title`属性。
+1. 更改`cq:Template`节点中的类型属性。 对于当前示例，请将type属性更改为button。
 
    类型值在为该组件生成的HTML中添加为CSS类。 用户可以使用该CSS类来设置其操作的样式。 为按钮、提交、重置和保存类型值提供了移动设备和桌面设备的默认样式。
 
@@ -51,9 +51,9 @@ ht-degree: 0%
 
    ![自定义操作在工具栏中可用](assets/custom_action_available_in_toolbar.png) ![显示自定义创建的工具栏操作](assets/action7.png)
 
-1. 要为“审阅”按钮提供功能，请在init.jsp文件中添加一些JavaScript和CSS代码以及服务器端代码，这些文件位于 `reviewbeforesubmit` 节点。
+1. 要为“审阅”按钮提供功能，请在`reviewbeforesubmit`节点内的init.jsp文件中添加一些JavaScript和CSS代码以及服务器端代码。
 
-   在中添加以下代码 `init.jsp`.
+   在`init.jsp`中添加以下代码。
 
    ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -111,7 +111,7 @@ ht-degree: 0%
    </div><!-- /.modal -->
    ```
 
-   将以下代码添加到 `ReviewBeforeSubmit.js` 文件。
+   在`ReviewBeforeSubmit.js`文件中添加以下代码。
 
    ```javascript
    /*anonymous function to handle show of review before submit view */
@@ -146,7 +146,7 @@ ht-degree: 0%
    });
    ```
 
-   将以下代码添加到 `ReviewBeforeSubmit.css` 文件。
+   将以下代码添加到`ReviewBeforeSubmit.css`文件。
 
    ```css
    .modal-list .reviewlabel {
@@ -179,7 +179,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >此 `GuideBridge` 在创作模式下未加载库。 因此，此自定义操作在创作模式下不起作用。
+   >在创作模式下未加载`GuideBridge`库。 因此，此自定义操作在创作模式下不起作用。
 
    ![自定义审核按钮操作的演示](assets/action9.png)
 

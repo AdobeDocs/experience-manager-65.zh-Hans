@@ -48,7 +48,7 @@ ht-degree: 8%
 
 * 添加了新类别轮盘组件，以允许商业用户将此组件拖放到AEM内容页面上，以使用商业数据扩充内容页面。
 
-* 扩展了CIF核心组件，以通过发送商业数据来水合Adobe客户端数据层。 Adobe客户端数据层是一种标准化方法，用于收集数据并将数据传递到Digital Analytics和报表服务器。 有关更多详细信息，请参阅 [Adobe客户端数据层](https://github.com/adobe/adobe-client-data-layer/wiki).
+* 扩展了CIF核心组件，以通过发送商业数据来水合Adobe客户端数据层。 Adobe客户端数据层是一种标准化方法，用于收集数据并将数据传递到Digital Analytics和报表服务器。 有关详细信息，请参阅[Adobe客户端数据层](https://github.com/adobe/adobe-client-data-layer/wiki)。
 
 * 扩展了“产品详细信息”和“产品列表”页面，以自动填充从Adobe Commerce管理UI中配置的SEO元数据（如标题、元描述、元关键词）
 
@@ -92,7 +92,7 @@ ht-degree: 8%
 
 * 添加了痕迹导航组件以支持内容和商务页面。
 
-* 在页面属性上添加了商务选项卡，用于公开登陆页面和体验片段的CIF属性。
+* 在页面属性上添加了Commerce选项卡，用于公开登陆页面和体验片段的CIF属性。
 
 * 改进了Searchbar组件，以支持显示占位符文本的选项
 
@@ -116,7 +116,7 @@ ht-degree: 8%
 
 * CIF Venia引用站点是从CIF Archetype存储库中提取的，现在是一个独立的GitHub存储库。
 
-* CIF原型与AEM项目原型合并。 对于新项目，请使用 [AEM项目原型](https://github.com/adobe/aem-project-archetype) 作为起点。
+* CIF原型与AEM项目原型合并。 对于新项目，请使用[AEM项目原型](https://github.com/adobe/aem-project-archetype)作为起点。
 
 * 添加了通讯簿管理，以允许登录用户管理其地址。
 
@@ -172,7 +172,7 @@ ht-degree: 8%
 
 * “搜索页面”和“产品列表页面”中添加了Facet搜索支持，以允许购物者根据产品Facet筛选搜索结果。
 
-* 添加了新的OSGi服务，以自定义用于SEO的PDP/PLP URL。 欲知更多详情，请参见 [文档](https://github.com/adobe/aem-core-cif-components).
+* 添加了新的OSGi服务，以自定义用于SEO的PDP/PLP URL。 有关详细信息，请参阅[文档](https://github.com/adobe/aem-core-cif-components)。
 
 * 创建云配置时，会自动创建产品绑定。
 
@@ -192,7 +192,7 @@ ht-degree: 8%
 
 ### 新增功能 {#what-is-new-april}
 
-* 统一并简化了CIF Connector的配置设置。 有关更多详细信息，请查看 [快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) 或 [新建AEM CIF项目设置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
+* 统一并简化了CIF Connector的配置设置。 有关详细信息，请查看[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)或[新的AEM CIF项目设置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
 
 ### 改进内容 {#what-is-improved-april}
 

@@ -38,7 +38,7 @@ ht-degree: 24%
 
 >[!NOTE]
 >
->批量编辑也可用于资产。 其操作大体相同，只有少数几点差别。请参阅 [编辑多个资产的属性](/help/assets/metadata.md) 获取完整信息。 您可以使用自定义资产的批量元数据编辑器中的字段 [架构编辑器](/help/assets/metadata-schemas.md).
+>批量编辑也可用于Assets。 其操作大体相同，只有少数几点差别。有关完整信息，请参阅[编辑多个Assets的属性](/help/assets/metadata.md)。 您可以使用[架构编辑器](/help/assets/metadata-schemas.md)自定义Assets的批量元数据编辑器中的字段。
 
 ## 启用字段 {#enabling-a-field}
 
@@ -54,7 +54,7 @@ ht-degree: 24%
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
 
-在页面组件上启用字段(*非* （在模板上）：
+已在页面组件中启用字段（在模板中为&#x200B;*而非*）：
 
 1. 使用CRXDE Lite（或等效方法）打开页面组件。
 
@@ -62,7 +62,7 @@ ht-degree: 24%
 
    >[!NOTE]
    >
-   >此示例假设核心组件已安装在实例上，如果实例运行的是We.Retail示例内容，就是这种情况。 请参阅 [核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 以了解更多信息。
+   >此示例假设核心组件已安装在实例上，如果实例运行的是We.Retail示例内容，就是这种情况。 有关详细信息，请参阅[核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)。
 
 1. 导航至`cq:dialog` 定义中的必填字段。
 1. 在字段节点上定义以下属性：
@@ -71,7 +71,7 @@ ht-degree: 24%
    * **类型**：`Boolean`
    * **值**：`true`
 
-   例如，对于标准页面 [基础组件](/help/sites-authoring/default-components-foundation.md)：
+   例如，对于标准页面[基础组件](/help/sites-authoring/default-components-foundation.md)：
 
    `/libs/foundation/components/page`
 
@@ -81,13 +81,13 @@ ht-degree: 24%
 
    >[!CAUTION]
    >
-   >您 ***必须*** 不会更改中的任何内容 `/libs` 路径。
+   >您&#x200B;***必须***&#x200B;不更改`/libs`路径中的任何内容。
    >
-   >这是因为 `/libs` 下次升级实例时将被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
+   >这是因为下次升级实例时`/libs`的内容会被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
    >
    >建议用于配置和其他更改的方法是：
    >
-   >    1. 重新创建所需项目(即，它存在于 `/libs`)，在 `/apps`
-   >    1. 在中进行任何更改 `/apps`
+   >    1. 在`/apps`下重新创建所需项（即`/libs`中存在的项）
+   >    1. 在`/apps`中进行任何更改
 
 1. 选择&#x200B;**保存全部**，以保留您的更新。

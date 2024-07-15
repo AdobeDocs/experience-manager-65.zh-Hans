@@ -1,6 +1,6 @@
 ---
 title: 支持的文件格式和MIME类型
-description: 支持的文件格式和MIME类型 [!DNL Assets] 和 [!DNL Dynamic Media] 以及每种格式支持的功能。
+description: ' [!DNL Assets] 和 [!DNL Dynamic Media] 支持的文件格式和MIME类型以及每种格式支持的功能。'
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -15,9 +15,9 @@ ht-degree: 25%
 
 ---
 
-# 中支持的格式 [!DNL Adobe Experience Manager Assets] {#assets-supported-formats}
+# [!DNL Adobe Experience Manager Assets]中支持的格式 {#assets-supported-formats}
 
-[!DNL Experience Manager Assets] 支持广泛的文件格式，各种功能支持的各样MIME类型也各不相同。 要集成 [!DNL Assets] 与其他符合标准的数字资产管理(DAM)解决方案和桌面软件配合使用，请使用Adobe [!DNL Extensible Metadata Platform] (XMP)。
+[!DNL Experience Manager Assets]支持广泛的文件格式，并且每种功能对于不同的MIME类型都有不同的支持。 要将[!DNL Assets]与其他符合标准的数字资产管理(DAM)解决方案和桌面软件集成，请使用Adobe的[!DNL Extensible Metadata Platform] (XMP)。
 
 使用图例了解支持级别。
 
@@ -27,9 +27,9 @@ ht-degree: 25%
 | &#42; | 支持附加功能 |
 | − | 不适用 |
 
-## 中支持的栅格图像格式 [!DNL Experience Manager] {#supported-raster-image-formats}
+## [!DNL Experience Manager]中支持的栅格图像格式 {#supported-raster-image-formats}
 
-中支持的栅格图像格式 [!DNL Assets] 为：
+[!DNL Assets]中支持的光栅图像格式为：
 
 | 格式 | 存储 | 元数据管理 | 元数据提取 | 缩略图生成 | 编辑 | 元数据写回 | 见解 |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
@@ -51,17 +51,17 @@ ht-degree: 25%
 
 除上述信息外，请考虑以下事项：
 
-* 对EPS文件的支持仅适用于光栅图像。 例如，默认情况下不支持生成EPS矢量图像的缩略图。 要添加支持， [配置ImageMagick](best-practices-for-imagemagick.md). 要集成第三方工具以启用其他功能，请参阅 [基于命令行的媒体处理程序](media-handlers.md#command-line-based-media-handler).
+* 对EPS文件的支持仅适用于光栅图像。 例如，默认情况下不支持生成EPS矢量图像的缩略图。 要添加支持，请[配置ImageMagick](best-practices-for-imagemagick.md)。 要集成第三方工具以启用其他功能，请参阅[基于命令行的媒体处理程序](media-handlers.md#command-line-based-media-handler)。
 
-* 将元数据写回添加到PSB文件格式时，它适用于PSB文件格式 `NComm` 处理程序。
+* 元数据写回在添加到`NComm`处理程序中时适用于PSB文件格式。
 
-* 对于EPS文件，PostScript Document Structuring Convention (PS-Document)版本3.0或更高版本支持Adobe写回。
+* 对于EPS文件，PostScript Document Structuring Convention (PS-Adobe)版本3.0或更高版本支持元数据写回。
 
 ## 支持的3D格式 {#support-3d-formats}
 
 支持以下3D格式列表。
 
-另请参阅 [在Dynamic Media中使用3D资源。](/help/assets/assets-3d.md)
+另请参阅[在Dynamic Media中使用3D资源。](/help/assets/assets-3d.md)
 
 | 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -74,13 +74,13 @@ ht-degree: 25%
 
 ## 支持的PDF光栅器库 {#supported-pdf-rasterizer-library}
 
-Adobe PDF光栅器库可为大型和内容密集型应用程序生成高质量的缩略图和预览 [!DNL Adobe Illustrator] 和PDF文件。 Adobe建议为以下内容使用PDF光栅器库：
+Adobe PDF光栅器库为大型且内容密集的[!DNL Adobe Illustrator]和PDF文件生成高质量的缩略图和预览。 Adobe建议为以下内容使用PDF光栅器库：
 
 * 要处理的资源密集型AI/PDF文件。
 * AI/PDF文件，默认情况下不为其生成缩略图。
 * 具有Pantone匹配系统(PMS)颜色的AI文件。
 
-请参阅 [使用PDF光栅器](aem-pdf-rasterizer.md).
+请参阅[使用PDF光栅器](aem-pdf-rasterizer.md)。
 
 ## 支持的图像转码库 {#supported-image-transcoding-library}
 
@@ -88,19 +88,19 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 
 图像转码库支持JPG/JPEG、PNG（8位和16位）、GIF、BMP、TIFF/压缩TIFF(32位TIFF文件和PTIFF文件除外)、ICO和ICN MIME类型。
 
-请参阅 [图像转码库](imaging-transcoding-library.md).
+请参阅[图像转码库](imaging-transcoding-library.md)。
 
 ## 支持的Camera Raw {#supported-camera-raw}
 
-此 [!DNL Adobe Camera Raw] 库启用 [!DNL Assets] 摄取原始图像。 请参阅 [Camera Raw支持](camera-raw.md).
+[!DNL Adobe Camera Raw]库允许[!DNL Assets]摄取原始图像。 请参阅[Camera Raw支持](camera-raw.md)。
 
-## 支持 [!DNL Assets] 文档格式 {#supported-document-formats}
+## 支持的[!DNL Assets]文档格式 {#supported-document-formats}
 
 资产管理功能支持的文档格式如下：
 
-| 格式 | 存储 | [元数据管理](metadata.md) | 全文<br> 提取 | [元数据提取](metadata.md) | 缩略图<br> 生成 | [子资产提取](managing-linked-subassets.md) | [元数据写回](xmp-writeback.md) | [连接的资产](use-assets-across-connected-assets-instances.md) |
+| 格式 | 存储 | [元数据管理](metadata.md) | 全文<br>提取 | [元数据提取](metadata.md) | 缩略图<br>生成 | [子资产提取](managing-linked-subassets.md) | [元数据写回](xmp-writeback.md) | [连接的资产](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
-| [人工智能](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
 | DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
 | DOCX | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
 | ODT | ✓ | ✓ | ✓ | − | − | − | − | ✓ |
@@ -164,7 +164,7 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | VTT | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | XML | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
-| JavaScript（配置了自己的投放域时） | − | − | − | − | − | ✓ |
+| JavaScript（使用自己的投放域配置时） | − | − | − | − | − | ✓ |
 
 >[!NOTE]
 >
@@ -172,13 +172,13 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 
 ## 支持的MIME类型 {#supported-mime-types}
 
-默认情况下， [!DNL Experience Manager] 使用文件扩展名检测文件类型。 [!DNL Experience Manager] 可以从文件的内容中检测它。 对于后者，选择 [!UICONTROL 从内容中检测MIME] 中的选项 [!UICONTROL Day CQ DAM Mime类型服务] 在 [!DNL Experience Manager] Web控制台。
+默认情况下，[!DNL Experience Manager]使用文件扩展名检测文件类型。 [!DNL Experience Manager]可以从文件的内容中检测它。 对于后者，在[!DNL Experience Manager] Web控制台的[!UICONTROL Day CQ DAM Mime类型服务]中选择[!UICONTROL 从内容中检测MIME]选项。
 
-CRXDE Lite中提供了支持的MIME类型列表，网址为 `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+在`/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`处的CRXDE Lite中提供了支持的MIME类型列表。
 
 | 文件扩展名 | MIME类型/ Internet媒体类型 | 默认jobParam值 | 允许的jobParam值 |
 |---|---|---|---|
-| 图像 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 默认jobParam适用于所有图像MIME类型资源。<ul><li>[挖空背景选项](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html)</li><li>[manualCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html)</li><li>[autoSetcreationOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html)</li><li>[电子邮件设置](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html)</li><li>[xmpKeywords](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html)</li></ul> |
+| 图像 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 默认jobParam适用于所有图像MIME类型资源。<ul><li>[挖空背景选项](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html)</li><li>[manualCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html)</li><li>[autoSetCreationOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html)</li><li>[电子邮件设置](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html)</li><li>[xmpKeywords](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html)</li></ul> |
 | 3G2 | video/3gpp2 | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | 3GP | video/3gpp | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html) |
 | AAC | audio/x-aac | | |
@@ -254,11 +254,11 @@ CRXDE Lite中提供了支持的MIME类型列表，网址为 `/conf/global/settin
 
 ## Dynamic Media — 支持的文档格式 {#supported-document-formats-dynamic-media}
 
-| 格式 | 上传<br> （输入格式） | 创建<br> 图像<br> 预设<br> （输出格式） | 预览<br> 动态<br> 节目 | Deliver<br> 动态<br> 节目 | 下载<br> 动态<br> 节目 |
+| 格式 | 上传<br> （输入格式） | 创建<br>图像<br>预设<br>（输出格式） | 预览<br>动态<br>呈现版本 | 投放<br>动态<br>演绎版 | 下载<br>动态<br>呈现版本 |
 |---|:---:|:---:|:---:|:---:|:---:|
-| [人工智能](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
+| [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
-| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) （请参阅下面的注释） | ✓ | ✓ | ✓ | ✓ | ✓ |
+| [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)（请参阅下面的注释） | ✓ | ✓ | ✓ | ✓ | ✓ |
 
 >[!NOTE]
 >
@@ -266,42 +266,42 @@ CRXDE Lite中提供了支持的MIME类型列表，网址为 `/conf/global/settin
 
 除了上述功能外，请考虑以下事项：
 
-* 要使用Dynamic Media为PDF文件生成动态演绎版，请参阅 [Adobe Illustrator (AI)、Postscript (EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media为PDF文件生成动态演绎版，请参阅[Adobe Illustrator (AI)、Postscript (EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 要使用Dynamic Media预览和生成AI文件的动态演绎版，请参阅 [Adobe Illustrator (AI)、Postscript (EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用Dynamic Media预览和生成AI文件的动态演绎版，请参阅[Adobe Illustrator (AI)、Postscript (EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 要使用Dynamic Media为INDD文件生成动态演绎版，请参阅 [InDesign(INDD)文件格式](../assets/managing-image-presets.md#indesign-indd-file-format).
+* 要使用Dynamic Media生成INDD文件的动态格式副本，请参阅[InDesign(INDD)文件格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
 
 ## Dynamic Media — 支持的栅格图像格式 {#supported-raster-image-formats-dynamic-media}
 
 | 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 投放动态演绎版 | 下载动态演绎版 | 设置支持此格式的类型 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
-| BMP | ✓ | − | − | − | − | [图像](/help/assets/image-sets.md)， [混合媒体](/help/assets/mixed-media-sets.md)、和 [旋转](/help/assets/spin-sets.md) |
+| BMP | ✓ | − | − | − | − | [图像](/help/assets/image-sets.md)、[混合媒体](/help/assets/mixed-media-sets.md)和[旋转](/help/assets/spin-sets.md) |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | HEIC | − | − | − | ✓ | − | − |
-| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/image-sets.md)， [混合媒体](/help/assets/mixed-media-sets.md)、和 [旋转](/help/assets/spin-sets.md) |
+| JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/image-sets.md)、[混合媒体](/help/assets/mixed-media-sets.md)和[旋转](/help/assets/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
-| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/image-sets.md)， [混合媒体](/help/assets/mixed-media-sets.md)、和 [旋转](/help/assets/spin-sets.md) |
+| PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/image-sets.md)、[混合媒体](/help/assets/mixed-media-sets.md)和[旋转](/help/assets/spin-sets.md) |
 | PSD‡ | ✓ | − | − | − | − | − |
-| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/image-sets.md)， [混合媒体](/help/assets/mixed-media-sets.md)、和 [旋转](/help/assets/spin-sets.md) |
+| TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/image-sets.md)、[混合媒体](/help/assets/mixed-media-sets.md)和[旋转](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
 ‡将从PSD文件中提取合并的图像。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像不一定是实际图像。
 
-* 对EPS文件的支持仅适用于光栅图像。 例如，默认情况下不支持生成EPS矢量图像的缩略图。 要添加支持， [配置ImageMagick](best-practices-for-imagemagick.md). 要集成第三方工具以启用其他功能，请参阅 [基于命令行的媒体处理程序](media-handlers.md#command-line-based-media-handler).
+* 对EPS文件的支持仅适用于光栅图像。 例如，默认情况下不支持生成EPS矢量图像的缩略图。 要添加支持，请[配置ImageMagick](best-practices-for-imagemagick.md)。 要集成第三方工具以启用其他功能，请参阅[基于命令行的媒体处理程序](media-handlers.md#command-line-based-media-handler)。
 
-* 使用 [!DNL Dynamic Media] 要预览和生成EPS文件的动态演绎版，请参阅 [Adobe Illustrator (AI)、Postscript (EPS)和PDF文件格式。](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* 要使用[!DNL Dynamic Media]预览和生成EPS文件的动态演绎版，请参阅[Adobe Illustrator (AI)、Postscript (EPS)和PDF文件格式。](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 对于EPS文件，PostScript Document Structuring Convention (PS-Document)版本3.0或更高版本支持Adobe写回。
+* 对于EPS文件，PostScript Document Structuring Convention (PS-Adobe)版本3.0或更高版本支持元数据写回。
 
 ## Dynamic Media — 不支持的栅格图像格式 {#unsupported-image-formats-dynamic-media}
 
-下表描述了光栅图像文件格式的子类型，这些子类型是 *非* 在Dynamic Media中支持。
+下表介绍了Dynamic Media中不支持&#x200B;*的*&#x200B;光栅图像文件格式的子类型。
 
-另请参阅 [检测Dynamic Media不支持的文件格式](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html) 知识库文章。
+另请参阅[检测Dynamic Media不支持的文件格式](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)知识库文章。
 
 * IDAT区块大小大于100 MB的PNG文件。
 * psb文件。
@@ -332,7 +332,7 @@ The following table describes the sub-types of raster image formats that are *no
 
 Dynamic Media支持以下3D格式。
 
-另请参阅 [在Dynamic Media中使用3D资源](/help/assets/assets-3d.md).
+另请参阅[在Dynamic Media中使用3D资源](/help/assets/assets-3d.md)。
 
 | 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
 |---|---|---|---|
@@ -343,5 +343,5 @@ Dynamic Media支持以下3D格式。
 
 >[!MORELIKETHIS]
 >
->* [启用基于MIME类型的资源和Dynamic Media Classic上传作业参数支持](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
->* [为上载作业参数支持配置基于MIME类型](config-dynamic.md).
+>* [启用基于MIME类型的Assets和Dynamic Media Classic上载作业参数支持](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)。
+>* [为上载作业参数支持配置基于MIME类型的](config-dynamic.md)。

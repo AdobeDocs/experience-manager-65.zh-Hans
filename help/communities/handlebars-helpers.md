@@ -24,13 +24,13 @@ Handlebars帮助程序（帮助程序）是可从Handlebars脚本中调用的方
 
 该实施包括客户端和服务器端定义。 开发人员还可以创建自定义帮助程序。
 
-与AEM Communities一起提供的自定义SCF帮助程序在中定义 [客户端库](../../help/sites-developing/clientlibs.md)：
+与AEM Communities一起提供的自定义SCF帮助程序在[客户端库](../../help/sites-developing/clientlibs.md)中定义：
 
 * `/etc/clientlibs/social/commons/scf/helpers.js`
 
 >[!NOTE]
 >
->请务必安装 [最新的Communities功能包](deploy-communities.md#latestfeaturepack).
+>请务必安装[最新的Communities功能包](deploy-communities.md#latestfeaturepack)。
 
 ## 缩写 {#abbreviate}
 
@@ -56,7 +56,7 @@ Handlebars帮助程序（帮助程序）是可从Handlebars脚本中调用的方
 
   （可选）默认值为修剪字符串中的字数。
 
-* **安全字符串**：布尔型
+* **safeString**：布尔型
 
   （可选）如果为true，则返回Handlebars.SafeString()。 默认值为false。
 
@@ -100,7 +100,7 @@ Then abbreviate would return
 
   （可选）不显示全文时要显示的字符数。 默认值为100。
 
-* **更多文本**：字符串
+* **moreText**：字符串
 
   （可选）要显示的文本，指示要显示的文本更多。 默认值为“更多”。
 
@@ -108,7 +108,7 @@ Then abbreviate would return
 
   （可选）显示的文本，指示存在隐藏文本。 默认值为“……”。
 
-* **安全字符串**：布尔型
+* **safeString**：布尔型
 
   （可选）布尔值，指示在返回结果之前是否应用Handlebars.SafeString()。 默认值为false。
 
@@ -138,7 +138,7 @@ Then content-loadmore would return
 
 * **格式**：字符串
 
-  （可选）要应用的日期格式。 默认为&quot;`YYYY-MM-DDTHH:mm:ss.sssZ`”并且结果显示为“`2015-03-18T18:17:13-07:00`&quot;
+  （可选）要应用的日期格式。 默认值为“`YYYY-MM-DDTHH:mm:ss.sssZ`”，结果显示为“`2015-03-18T18:17:13-07:00`”
 
 ### 示例 {#examples-1}
 
@@ -160,11 +160,11 @@ Then content-loadmore would return
 
 ### 参数 {#parameters-3}
 
-* **值**：字符串
+* **lvalue**：字符串
 
   要比较的左侧值。
 
-* **值**：字符串
+* **rvalue**：字符串
 
   要比较的右侧值。
 
@@ -180,7 +180,7 @@ Then content-loadmore would return
 
 ## If-wcm-mode {#if-wcm-mode}
 
-一个块帮助程序，用于测试以下项的当前值： [WCM模式](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) 针对以字符串分隔的模式列表。
+块帮助程序根据字符串分隔的模式列表测试[WCM模式](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html)的当前值。
 
 ### 参数 {#parameters-4}
 
@@ -190,7 +190,7 @@ Then content-loadmore would return
 
 * **模式**：字符串
 
-  （可选）以逗号分隔的 [WCM模式](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) 以测试是否设置。
+  （可选）要测试是否设置的[WCM模式](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html)的逗号分隔列表。
 
 ### 示例 {#example-2}
 
@@ -206,7 +206,7 @@ Then content-loadmore would return
 
 此辅助函数覆盖Handlebars辅助函数“i18n”。
 
-另请参阅 [在JavaScript代码中国际化字符串](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code).
+另请参阅[在JavaScript代码中国际化字符串](../../help/sites-developing/i18n-dev.md#internationalizing-strings-in-javascript-code)。
 
 ### 参数 {#parameters-5}
 
@@ -214,7 +214,7 @@ Then content-loadmore would return
 
   （可选）要翻译的字符串。 如果未提供默认值，则此为必填字段。
 
-* **默认**：字符串
+* **默认值**：字符串
 
   （可选）要翻译的默认字符串。 如果未提供上下文，则此为必填字段。
 
@@ -233,11 +233,11 @@ Then content-loadmore would return
 
 用于将组件作为非现有资源包含在模板中的辅助函数。
 
-与添加为JCR节点的资源相比，此方法允许更轻松地以编程方式自定义资源。 请参阅 [添加或包含社区组件](scf.md#add-or-include-a-communities-component).
+与添加为JCR节点的资源相比，此方法允许更轻松地以编程方式自定义资源。 请参阅[添加或包含社区组件](scf.md#add-or-include-a-communities-component)。
 
-只有少数几个社区组件可供包含。 <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
+只有少数几个社区组件可供包含。<!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
-此辅助函数仅适用于服务器端，它提供的功能与 [cq：include](../../help/sites-developing/taglib.md) 用于JSP脚本。
+此帮助程序仅适用于服务器端，可提供类似于JSP脚本的[cq：include](../../help/sites-developing/taglib.md)的功能。
 
 ### 参数 {#parameters-6}
 
@@ -245,9 +245,9 @@ Then content-loadmore would return
 
   （可选，除非提供相对路径）
 
-  使用 `this` 以传递当前上下文。
+  使用`this`传递当前上下文。
 
-  使用 `this.id` 要获取资源，请执行以下操作 `id` 用于呈现请求的resourceType。
+  使用`this.id`在`id`处获取用于呈现所请求的resourceType的资源。
 
 * **resourceType**：字符串
 
@@ -261,7 +261,7 @@ Then content-loadmore would return
 
   （必需）资源的路径。 如果路径是相对路径，则必须提供上下文，否则返回空字符串。
 
-* **authoringDisabled**：布尔型
+* **authoringDisabled**：布尔值
 
   （可选）默认值为false。 仅供内部使用。
 
@@ -271,13 +271,13 @@ Then content-loadmore would return
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-在中包含新的注释组件 `this.id` + /comments.
+在`this.id` + /comments中包含新的comments组件。
 
 ## IncludeClientLib {#includeclientlib}
 
 一个包含AEM html客户端库的帮助程序，该客户端库可以是js、css或主题库。 对于不同类型的多个包含项（例如js和css），必须在Handlebars脚本中多次使用此标记。
 
-此辅助函数仅适用于服务器端，它提供的功能与 [ui：includeClientLib](../../help/sites-developing/taglib.md) 用于JSP脚本。
+此帮助程序仅适用于服务器端，它提供的功能与JSP脚本的[ui：includeClientLib](../../help/sites-developing/taglib.md)类似。
 
 ### 参数 {#parameters-7}
 
@@ -352,7 +352,7 @@ Then content-loadmore would return
 
   要与“现在”进行比较的过去的时间。 时间表示为从1970年1月1日起偏移的毫秒值（纪元）。
 
-* **daysCutoff**：数字
+* **天截止日期**：数字
 
   切换到实际日期之前的天数。 默认值为60。
 
@@ -412,7 +412,7 @@ Depending on how long in the past, may return
 
 一个帮助程序，用于对要写入JavaScript字符串内容的源字符串进行编码以帮助防范XSS。
 
-注意：此帮助程序不是验证器，不用于写入任意JavaScript。
+注意：此辅助函数不是验证器，不得用于写入任意JavaScript。
 
 ### 参数 {#parameters-11}
 
@@ -446,15 +446,15 @@ var input = {{xss-jsString topic-title}}
 
 ## Handlebars.js基本概述 {#handlebars-js-basic-overview}
 
-* Handlebars帮助程序调用是一个简单标识符(即 *name* )，后跟零个或多个以空格分隔的参数。
+* Handlebars帮助程序调用是一个简单标识符（帮助程序的&#x200B;*name*），后跟零个或多个以空格分隔的参数。
 * 参数可以是简单字符串、数字、布尔值或JSON对象，也可以是键值对（哈希参数）的可选序列作为最后一个参数。
 * 哈希参数中的键必须是简单标识符。
 * 散列参数中的值是Handlebars表达式：简单标识符、路径或字符串。
-* 当前上下文， `this`，始终可供Handlebars帮助程序使用。
+* 当前上下文`this`始终可供Handlebars帮助程序使用。
 * 上下文可以是字符串、数字、布尔值或JSON数据对象。
-* 可以将嵌套在当前上下文中的对象作为上下文传递，例如 `this.url` 或 `this.id` （请参阅以下简单帮助程序和块帮助程序的示例）。
+* 可以将嵌套在当前上下文中的对象作为上下文传递，如`this.url`或`this.id`（请参阅以下简单帮助程序和块帮助程序的示例）。
 
-* 块帮助程序是从模板中的任何位置调用的函数。 它们每次可以使用不同的上下文零次或更多次调用模板块。 它们包含下列内容之间的上下文： `{{#*name*}}` 和 `{{/*name*}}`.
+* 块帮助程序是从模板中的任何位置调用的函数。 它们每次可以使用不同的上下文零次或更多次调用模板块。 它们包含介于`{{#*name*}}`和`{{/*name*}}`之间的上下文。
 
 * Handlebars为名为“options”的帮助程序提供最终参数。 特殊对象“options”包括
 
@@ -488,7 +488,7 @@ template(context);
 将呈现：
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>发帖！&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post！&lt;/a>&lt;/li>
 &lt;/ul>
 
 ### Handlebars.js文档中的块帮助程序示例： {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -514,7 +514,7 @@ template(data);
 将呈现：
 &lt;ul>
 &lt;li>&lt;a href=&quot;/people/1&quot;>艾伦&lt;/a>&lt;/li>
-&lt;li>&lt;a href=&quot;/people/2&quot;>耶胡达语&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/people/2&quot;>耶胡达&lt;/a>&lt;/li>
 &lt;/ul>
 
 ## 自定义SCF帮助程序 {#custom-scf-helpers}
@@ -523,7 +523,7 @@ template(data);
 
 ### 服务器端自定义帮助程序 {#server-side-custom-helpers}
 
-要在服务器端实施和注册自定义SCF帮助程序，只需实施Java™接口 [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html)，使其成为 [OSGi服务](../../help/sites-developing/the-basics.md#osgi) 并将其作为OSGi捆绑包的一部分进行安装。
+要在服务器端实施和注册自定义SCF帮助程序，只需实施Java™接口[TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html)，使其成为[OSGi服务](../../help/sites-developing/the-basics.md#osgi)，并将其作为OSGi捆绑包的一部分进行安装。
 
 例如：
 
@@ -571,7 +571,7 @@ public class FooTextHelper implements TemplateHelper<String>{
 
 ### 客户端自定义帮助程序 {#client-side-custom-helpers}
 
-客户端帮助程序是通过调用注册的Handlebars脚本 `Handlebars.registerHelper()`.
+客户端帮助程序是通过调用`Handlebars.registerHelper()`注册的Handlebars脚本。
 例如：
 
 ### custom-helpers.js {#custom-helpers-js}
@@ -592,11 +592,11 @@ function(Handlebars, SCF, $CQ) {
 必须将自定义客户端帮助程序添加到自定义客户端库中。
 clientlib必须：
 
-* 包含依赖项 `cq.social.scf`.
+* 包括对`cq.social.scf`的依赖项。
 * 加载Handlebars后加载。
-* 是 [已包括](clientlibs.md).
+* 为[包含](clientlibs.md)。
 
-注意：SCF帮助程序定义于 `/etc/clientlibs/social/commons/scf/helpers.js`.
+注意： SCF帮助程序在`/etc/clientlibs/social/commons/scf/helpers.js`中定义。
 
 | **[⇐功能要点](essentials.md)** | **[服务器端自定义⇒](server-customize.md)** |
 |---|---|

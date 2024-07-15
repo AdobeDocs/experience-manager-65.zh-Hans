@@ -19,7 +19,7 @@ ht-degree: 1%
 
 AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该API来查询和检索一组符合搜索条件的表单。 您可以使用API根据各种筛选器搜索表单。 响应对象包含表单属性、属性和渲染表单端点。
 
-要使用REST API搜索表单，请向服务器发送一个GET请求，地址为 `https://'[server]:[port]'/libs/fd/fm/content/manage.json` 查询参数对应的章节。
+要使用REST API搜索表单，请使用下述查询参数向`https://'[server]:[port]'/libs/fd/fm/content/manage.json`上的服务器发送GET请求。
 
 ## 查询参数 {#query-parameters}
 
@@ -31,17 +31,17 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
   </tr>
   <tr>
    <td>函数<br /> </td>
-   <td><p>指定要调用的函数。 要搜索表单，请设置 <code>func </code>属性至 <code>searchForms</code>.</p> <p>例如， <code class="code">
+   <td><p>指定要调用的函数。 要搜索表单，请将<code>func </code>属性的值设置为<code>searchForms</code>。</p> <p>例如， <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
        entityBuilder.add("func", "searchForms");</code></p> <p><strong>注意：</strong> <em>此参数是必需的。</em><br /> </p> </td>
   </tr>
   <tr>
-   <td>应用程序路径<br /> </td>
-   <td><p>指定用于搜索表单的应用程序路径。 默认情况下，appPath属性会搜索根节点级别的所有可用应用程序。<br /> </p> <p>您可以在单个搜索查询中指定多个应用程序路径。 使用管道字符(|)分隔多个路径。 </p> </td>
+   <td>appPath<br /> </td>
+   <td><p>指定用于搜索表单的应用程序路径。 默认情况下，appPath属性搜索根节点级别的所有可用应用程序。<br /> </p> <p>您可以在单个搜索查询中指定多个应用程序路径。 使用管道字符(|)分隔多个路径。 </p> </td>
   </tr>
   <tr>
    <td>剪切点<br /> </td>
-   <td><p>指定要通过资源获取的属性。 可以使用星号(*)一次获取所有属性。 使用管道(|)运算符指定多个属性。 </p> <p>例如， <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>注意</strong>： </p>
+   <td><p>指定要通过资源获取的属性。 可以使用星号(*)一次获取所有属性。 使用管道(|)运算符指定多个属性。 </p> <p>例如， <code>cutPoints=propertyName1|propertyName2|propertyName3</code></p> <p><strong>注释</strong>： </p>
     <ul>
      <li><em>始终获取ID、路径和名称等属性。 </em></li>
      <li><em>每个资产都具有一组不同的属性。 formUrl、pdfUrl和guideUrl等属性不依赖于cutpoints属性。 这些属性取决于资源类型并相应地获取。 </em></li>
@@ -52,8 +52,8 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
    <td>指定要与搜索结果一起获取的相关资源。 您可以选择以下选项之一来获取相关资源：
     <ul>
      <li><strong>NO_RELATION</strong>：不获取相关资源。</li>
-     <li><strong>立即</strong>：获取与搜索结果直接相关的资源。</li>
-     <li><strong>所有</strong>：获取直接和间接相关的资产。</li>
+     <li><strong>IMMEDIATE</strong>：获取与搜索结果直接相关的资源。</li>
+     <li><strong>ALL</strong>：获取直接或间接相关的资产。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -77,8 +77,8 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
        statement.put("operator", "EQ"); statementArray.put(statement);</code></p> <p>在上例中， </p>
     <ul>
      <li><strong>name</strong>：指定要搜索的属性的名称。</li>
-     <li><strong>值</strong>：指定要搜索的属性的值。</li>
-     <li><strong>运算符</strong>：指定搜索时要应用的运算符。 支持以下运算符：
+     <li><strong>value</strong>：指定要搜索的属性的值。</li>
+     <li><strong>operator</strong>：指定搜索时要应用的运算符。 支持以下运算符：
       <ul>
        <li>EQ — 等于 </li>
        <li>NEQ — 不等于</li>
@@ -114,7 +114,7 @@ AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该A
   </tr>
   <tr>
    <td>includeXdp</td>
-   <td>指定是否检索二进制内容。 此 <code>includeXdp</code> 属性适用于以下类型的资产 <code>FORM</code>， <code>PDFFORM</code>、和 <code>PRINTFORM</code>.</td>
+   <td>指定是否检索二进制内容。 <code>includeXdp</code>属性适用于<code>FORM</code>、<code>PDFFORM</code>和<code>PRINTFORM</code>类型的资产。</td>
   </tr>
   <tr>
    <td>资产类型</td>

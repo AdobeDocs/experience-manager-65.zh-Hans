@@ -25,7 +25,7 @@ ht-degree: 3%
 >
 >有关日志的详细信息，请参阅：
 >
->* [AEM中的审核日志维护](/help/sites-administering/operations-audit-log.md)
+>* 在AEM中维护[审核日志](/help/sites-administering/operations-audit-log.md)
 >* [使用审核记录和日志文件](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX会记录详细的日志。 打开包装并启动“快速入门”后，您可以在以下位置找到日志：
@@ -56,13 +56,13 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 | 0 | 致命错误 | 操作失败，安装程序无法继续。 |
 |---|---|---|
-| 1 | 错误 | 操作失败。 安装将继续，但部分CRX未正确安装，将无法正常工作。 |
-| 2 | 警告 | 操作已成功，但遇到了问题。 CRX可能无法正常工作。 |
+| 1 | 错误 | 操作失败。 虽然安装会继续，但部分CRX未正确安装，因此将无法正常运行。 |
+| 2 | 警告 | 操作已成功，但遇到了问题。 CRX可能会正常工作，也可能无法正常工作。 |
 | 3 | 信息 | 操作已成功。 |
 
 ## 用于故障排除的详细选项 {#verbose-option-used-for-troubleshooting}
 
-启动CRX时，可以将 — v (verbose)选项添加到命令行中，如下所示：
+启动CRX时，您可以将 — v (verbose)选项添加到命令行中，如下所示：
 
 ` java -jar crx-<*version*>-<*edition*>.jar -v`
 

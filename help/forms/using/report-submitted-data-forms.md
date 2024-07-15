@@ -21,7 +21,7 @@ AEM Forms提供了可用于查询通过表单门户提交的表单数据的API�
 
 >[!NOTE]
 >
->必须将调用API的用户添加到审阅人组，如中所述 [将提交审阅人关联到表单](/help/forms/using/adding-reviewers-form.md).
+>必须将调用API的用户添加到审阅人组，如[将提交审阅人关联到表单](/help/forms/using/adding-reviewers-form.md)中所述。
 
 ## GET/content/forms/portal/submission.review.json？func=getFormsForSubmissionReview {#get-content-forms-portal-submission-review-json-func-getformsforsubmissionreview-br}
 
@@ -73,31 +73,31 @@ https://[host]:[port]/content/forms/portal/submission.review.json?func=getFormsF
   </tr>
   <tr>
    <td><code>formPath</code></td>
-   <td>指定表单所在的CRX存储库路径。 如果不指定表单路径，则会返回空响应。<br /> </td>
+   <td>指定表单所在的CRX存储库路径。 如果不指定表单路径，则返回空响应。<br /> </td>
   </tr>
   <tr>
    <td><code>offset</code><br /> （可选）</td>
-   <td>指定结果集索引中的起点。 默认值为 <strong>0</strong>.</td>
+   <td>指定结果集索引中的起点。 默认值为<strong>0</strong>。</td>
   </tr>
   <tr>
    <td><code>limit</code><br /> （可选）</td>
-   <td>限制结果的数量。 默认值为 <strong>30</strong>.</td>
+   <td>限制结果的数量。 默认值为<strong>30</strong>。</td>
   </tr>
   <tr>
    <td><code>orderby</code> <br /> （可选）</td>
-   <td>指定用于排序结果的属性。 默认值为 <strong>jcr：lastModified</strong>，根据上次修改时间对结果进行排序。</td>
+   <td>指定用于排序结果的属性。 默认值为<strong>jcr：lastModified</strong>，该值根据上次修改时间对结果进行排序。</td>
   </tr>
   <tr>
    <td><code>sort</code> <br /> （可选）</td>
-   <td>指定排序结果的顺序。 默认值为 <strong>desc</strong>，按降序对结果进行排序。 您可以指定 <code>asc</code> 以对结果进行升序排序。</td>
+   <td>指定排序结果的顺序。 默认值为<strong>desc</strong>，该值按降序对结果进行排序。 您可以指定<code>asc</code>以对结果进行升序排序。</td>
   </tr>
   <tr>
    <td><code>cutPoints</code> <br /> （可选）</td>
-   <td>指定要包含在结果中的表单属性的逗号分隔列表。 默认属性为：<br /> <code>formName</code>， <code>formPath</code>， <code>submitID</code>， <code>formType</code>， <code>jcr:lastModified</code>， <code>owner</code></td>
+   <td>指定要包含在结果中的表单属性的逗号分隔列表。 默认属性为：<br /> <code>formName</code>、<code>formPath</code>、<code>submitID</code>、<code>formType</code>、<code>jcr:lastModified</code>， <code>owner</code></td>
   </tr>
   <tr>
    <td><code>search</code> <br /> （可选）</td>
-   <td>在表单属性中搜索指定的值并返回具有匹配值的表单。 默认值为 <strong>“”</strong>.</td>
+   <td>在表单属性中搜索指定的值并返回具有匹配值的表单。 默认值为<strong>“</strong>”。</td>
   </tr>
  </tbody>
 </table>

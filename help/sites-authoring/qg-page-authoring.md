@@ -49,12 +49,12 @@ ht-degree: 62%
 
 * 导航链接
 
-   * 当您处于&#x200B;***编辑***&#x200B;模式下时，**链接不可用于导航**。要通过链接导航，您需要 [预览页面](/help/sites-authoring/editing-content.md#previewing-pages) 使用：
+   * 当您处于&#x200B;***编辑***&#x200B;模式下时，**链接不可用于导航**。若要使用链接进行导航，您需要使用以下任一方式[预览页面](/help/sites-authoring/editing-content.md#previewing-pages)：
 
       * [预览模式](/help/sites-authoring/editing-content.md#preview-mode)
       * [以发布的形式查看](/help/sites-authoring/editing-content.md#view-as-published)
 
-* 无法从页面编辑器启动/创建版本；现在，可以从站点控制台完成(通过 **创建** 或 [时间线](/help/sites-authoring/basic-handling.md#timeline) （对于所选资源）。
+* 无法从页面编辑器启动/创建版本；现在，可以从站点控制台完成（通过对所选资源选择&#x200B;**创建**&#x200B;或[时间轴](/help/sites-authoring/basic-handling.md#timeline)）。
 
 >[!NOTE]
 >
@@ -68,9 +68,9 @@ ht-degree: 62%
 
 查找页面时存在很多方面；您可以导航和/或搜索：
 
-1. 打开 **站点** 控制台(使用 **站点** 中的选项 [全局导航](/help/sites-authoring/basic-handling.md#global-navigation)) — 当您选择Adobe Experience Manager链接（左上方）时，就会触发（下拉列表）。
+1. 打开&#x200B;**站点**&#x200B;控制台（使用[全局导航](/help/sites-authoring/basic-handling.md#global-navigation)中的&#x200B;**站点**&#x200B;选项） — 此操作将在您选择Adobe Experience Manager链接（左上方）时触发（下拉列表）。
 
-1. 通过点按/单击相应的页面，在树中向下导航。 页面资源的显示方式取决于您所使用的视图 —  [卡片、列表或列](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)：
+1. 通过点按/单击相应的页面，在树中向下导航。 页面资源的显示方式取决于您使用的视图 — [卡片、列表或列](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)：
 
    ![screen_shot_2018-03-21at160214](assets/screen_shot_2018-03-21at160214.png)
 
@@ -84,9 +84,9 @@ ht-degree: 62%
 
 ### 创建新页面 {#creating-a-new-page}
 
-至 [创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)：
+要[创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)：
 
-1. [导航到位置](#finding-your-page) 要在其中创建页面的位置。
+1. [导航到要创建页面的位置](#finding-your-page)。
 1. 使用&#x200B;**创建**&#x200B;图标，然后从列表中选择&#x200B;**页面**：
 
    ![qgtap-02](assets/qgtap-02.png)
@@ -109,10 +109,10 @@ ht-degree: 62%
 
 1. 卡片视图：
 
-   * 进入选择模式的方式 [选择所需的资源](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources) 替换为：
+   * 通过以下方式进入选择模式：[选择所需的资源](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources)：
 
       * 移动设备：选择并按住
-      * 桌面： [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)  — 勾选图标：
+      * 桌面： [快速操作](/help/sites-authoring/basic-handling.md#quick-actions) — 勾号图标：
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
@@ -120,7 +120,7 @@ ht-degree: 62%
 
    >[!NOTE]
    >
-   >在选择模式中 **选择** 图标（勾号）将更改为 **取消选择** 图标（十字形）。
+   >进入选择模式后，**Select**&#x200B;图标（勾号）将更改为&#x200B;**Deselect**&#x200B;图标（交叉号）。
 
 ### 快速操作（仅限卡片视图/桌面） {#quick-actions-card-view-desktop-only}
 
@@ -148,7 +148,7 @@ ht-degree: 62%
    * 通过以下方式[向页面中添加新组件](/help/sites-authoring/editing-content.md#inserting-a-component)：
 
       * 打开侧面板
-      * 选择组件选项卡( [组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser))
+      * 选择“组件”选项卡（[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)）
       * 将所需的组件拖动到页面上。
 
      可以通过以下图标打开（或关闭）侧面板：
@@ -170,11 +170,11 @@ ht-degree: 62%
    * 通过以下任一方式[移动组件](/help/sites-authoring/editing-content.md#moving-a-component)：
 
       * 将所需组件拖动到新位置。
-      * 通过单击打开组件工具栏。 使用 **剪切** 则 **粘贴** 所需的图标。
+      * 通过单击打开组件工具栏。 必要时使用&#x200B;**剪切**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
 
    * [复制（并粘贴）](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)组件：
 
-      * 通过单击打开组件工具栏。 使用 **复制** 则 **粘贴** 图标。
+      * 通过单击打开组件工具栏。 根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
 
    >[!NOTE]
    >
@@ -182,7 +182,7 @@ ht-degree: 62%
 
    * [删除](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)组件：
 
-      * 单击以打开组件工具栏，然后使用 **删除** 图标。
+      * 单击打开组件工具栏，然后使用&#x200B;**删除**&#x200B;图标。
 
    * 向页面[添加注释](/help/sites-authoring/annotations.md#annotations)：
 
@@ -198,7 +198,7 @@ ht-degree: 62%
 
    >[!NOTE]
    >
-   >要使用内容中的链接进行导航，您必须使用 [预览模式](/help/sites-authoring/editing-content.md#preview-mode).
+   >要使用内容中的链接进行导航，您必须使用[预览模式](/help/sites-authoring/editing-content.md#preview-mode)。
 
 ### 编辑页面属性 {#editing-the-page-properties}
 
@@ -294,7 +294,7 @@ ht-degree: 62%
 
 ### 访问页面引用 {#accessing-page-references}
 
-[快速访问引用](/help/sites-authoring/author-environment-tools.md#references) 对于页面或从页面，引用边栏会提供。
+[在“引用”边栏中，可以快速访问对某个页面或某个页面的引用](/help/sites-authoring/author-environment-tools.md#references)。
 
 1. 使用工具栏图标选择&#x200B;**引用**（在[选择您的页面](#selecting-your-page-for-further-action)之前或之后）：
 
@@ -314,7 +314,7 @@ ht-degree: 62%
 
    ![screen_shot_2018-03-21at161355](assets/screen_shot_2018-03-21at161355.png)
 
-1. 单击“时间轴”列右下方的向上箭头以显示其他按钮，包括 **另存为版本**.
+1. 单击“时间轴”列右下方的向上箭头以显示其他按钮，包括&#x200B;**另存为版本**。
 
    ![screen-shot_2019-03-05at114600](assets/screen-shot_2019-03-05at114600.png)
 

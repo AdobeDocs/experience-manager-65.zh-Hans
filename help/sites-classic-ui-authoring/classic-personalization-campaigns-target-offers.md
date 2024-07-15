@@ -25,8 +25,8 @@ ht-degree: 8%
 
    ![列表视图](do-not-localize/chlimage_1-11.png)
 
-1. 单击 **新建……**
-1. 您可以指定 **标题**， **名称** 和要创建的体验类型；在本例中，为Test&amp;Target选件。
+1. 单击&#x200B;**新建……**
+1. 您可以指定要创建的&#x200B;**标题**、**名称**&#x200B;和体验类型；在本例中，为Test&amp;Target选件。
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -34,8 +34,8 @@ ht-degree: 8%
 
    >[!NOTE]
    >
-   >Test&amp;Target体验当前未列在MCM中。 可从以下位置访问它们 **网站** 控制台（在“营销活动”下）。
+   >Test&amp;Target体验当前未列在MCM中。 可从“促销活动”下的&#x200B;**网站**&#x200B;控制台访问它们。
 
 ## 与 Adobe Target 集成 {#integrating-with-adobe-target}
 
-请参阅 [与Adobe集成](/help/sites-administering/target.md) [Target](/help/sites-administering/target.md) 以了解全部详细信息。
+有关完整的详细信息，请参阅[与Adobe](/help/sites-administering/target.md)集成[Target](/help/sites-administering/target.md)。

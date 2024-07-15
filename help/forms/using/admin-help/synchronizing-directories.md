@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 同步目录 {#synchronizing-directories}
 
-要同步域，您可以选择手动同步或定时同步。 A *手动同步* 同步任何选定的域。 A *计划同步* 同步所有域。
+要同步域，您可以选择手动同步或定时同步。 *手动同步*&#x200B;同步所有选定的域。 *计划的同步*&#x200B;同步所有域。
 
 目录同步用于将您在目录设置中指定的目录服务器的详细信息提取到User Management数据库中。 稍后，如果目录服务器上发生更改或更新，您也可以执行手动同步。 例如，如果添加用户和组或者对用户帐户进行更改，则可以执行手动同步。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe®LiveCycle®内容服务ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 Content Services（已弃用）支持于2014年12月31日终止。 请参阅 [Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe®LiveCycle®内容服务ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 Content Services（已弃用）支持于2014年12月31日终止。 请参阅[Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
 
 ## 启用增量目录同步 {#enable-delta-directory-synchronization}
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 1. 在管理控制台中，单击设置>用户管理>域管理。
 1. 在“增量同步”下，选中该复选框，然后单击“保存”。
-1. 编辑将使用增量目录同步功能的每个企业域的目录设置。 在用户设置和组设置页面上，找到修改时间戳设置并输入 `modify TimeStamp` 作为值。 有关编辑企业域的详细信息，请参阅 [编辑和转换现有域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. 编辑将使用增量目录同步功能的每个企业域的目录设置。 在“用户设置”和“组设置”页面上，找到“修改时间戳”设置并输入`modify TimeStamp`作为值。 有关编辑企业域的详细信息，请参阅[编辑和转换现有域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)。
 
 ## 在同步期间启用或禁用详细日志记录 {#enable-or-disable-detailed-logging-during-synchronization}
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 1. 在管理控制台中，单击设置>用户管理>配置>配置高级系统属性。
 1. 在Synch Finisher Cron表达式下，输入一个cron表达式，该表达式表示用户管理重试失败的同步的时间间隔。 cron表达式的使用基于Quartz开源作业调度系统1.4.0版。
 
-   缺省值为0 0/13 &amp;ast； ？ &amp;ast； ，这意味着每13分钟进行一次检查。
+   默认值为0 0/13 &amp;amp；ast； ？ &amp;amp；ast； ，这意味着每13分钟进行一次检查。
 
 ## 手动同步目录 {#manually-synchronize-directories}
 

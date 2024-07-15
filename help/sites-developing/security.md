@@ -26,25 +26,25 @@ ht-degree: 0%
 
 AEM应用了在输出时筛选所有用户提供的内容的原则。 在开发和测试过程中，防御XSS都被列为最高优先事项。
 
-AEM提供的XSS保护机制基于 [AntiSamy Java™库](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) 提供者 [OWASP(Open Web Application Security Project)](https://owasp.org/). 默认的AntiSamy配置位于
+AEM提供的XSS保护机制基于[OWASP (Open Web Application Security Project)](https://owasp.org/)提供的[AntiSamy Java™库](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project)。 默认的AntiSamy配置位于
 
 `/libs/cq/xssprotection/config.xml`
 
-通过覆盖配置文件来调整此配置，使其符合您自己的安全需求非常重要。 官方 [AntiSamy文档](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) 为您提供实施安全要求所需的所有信息。
+通过覆盖配置文件来调整此配置，使其符合您自己的安全需求非常重要。 官方[AntiSamy文档](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project)为您提供了实施安全要求所需的所有信息。
 
 >[!NOTE]
 >
->Adobe建议您始终使用访问XSS保护API [AEM提供的XSSAPI](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
+>Adobe建议您始终使用AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html)提供的[XSSAPI访问XSS保护API。
 
-此外，Web应用程序防火墙，例如 [适用于Apache的mod_security](https://www.modsecurity.org)中，提供了对部署环境的安全性的可靠、集中控制，并防止了以前未检测到的跨站点脚本攻击。
+此外，Web应用程序防火墙（如Apache的[mod_security](https://www.modsecurity.org)）可以对部署环境的安全提供可靠的集中控制，并保护用户免受以前未检测到的跨站点脚本攻击。
 
 ## 访问Cloud Service信息 {#access-to-cloud-service-information}
 
 >[!NOTE]
 >
->Cloud Service信息的ACL和确保实例安全所需的OSGi设置作为 [生产就绪模式](/help/sites-administering/production-ready.md). 虽然这意味着您无需手动更改配置，但仍建议您在开始部署之前查看配置。
+>作为[生产就绪模式](/help/sites-administering/production-ready.md)的一部分，Cloud Service信息的ACL以及保护实例所需的OSGi设置会自动完成。 虽然这意味着您无需手动更改配置，但仍建议您在开始部署之前查看配置。
 
-当您 [将AEM实例与Adobe Experience Cloud集成](/help/sites-administering/marketing-cloud.md)，您使用 [Cloud Service配置](/help/sites-developing/extending-cloud-config.md). 有关这些配置的信息以及收集的任何统计信息都存储在资料档案库中。 Adobe建议，如果使用此功能，应检查此信息的默认安全性是否符合您的要求。
+当您[将AEM实例与Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md)集成时，您使用[Cloud Service配置](/help/sites-developing/extending-cloud-config.md)。 有关这些配置的信息以及收集的任何统计信息都存储在资料档案库中。 Adobe建议，如果使用此功能，应检查此信息的默认安全性是否符合您的要求。
 
 webservicesupport模块将统计信息和配置信息写入以下位置：
 
@@ -52,10 +52,10 @@ webservicesupport模块将统计信息和配置信息写入以下位置：
 
 具有默认权限：
 
-* 创作环境： `read` 对象 `contributors`
+* 创作环境：`contributors`的`read`
 
-* 发布环境： `read` 对象 `everyone`
+* Publish环境：`everyone`的`read`
 
 ## Protect抵御跨站点请求伪造攻击 {#protect-against-cross-site-request-forgery-attacks}
 
-有关AEM用于缓解CSRF攻击的安全机制的更多信息，请参阅 [Sling引用过滤器](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) 安全核对清单和 [CSRF保护框架文档](/help/sites-developing/csrf-protection.md).
+有关AEM用于缓解CSRF攻击的安全机制的更多信息，请参阅安全核对清单的[Sling引用过滤器](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery)部分和[CSRF保护框架文档](/help/sites-developing/csrf-protection.md)。

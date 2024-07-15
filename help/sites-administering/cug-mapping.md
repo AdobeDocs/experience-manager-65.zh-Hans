@@ -31,12 +31,12 @@ ht-degree: 0%
   <tr>
    <td><p>属性：cq：cugEnabled</p> <p>声明节点类型： N/A，剩余属性</p> </td>
    <td><p>授权：</p> <p>节点：节点类型rep：CugPolicy的rep：cugPolicy</p> <p>声明节点类型：rep：CugMixin</p> <p> </p> <p> </p> <p> </p> 身份验证：</p> <p>Mixin类型： granite：AuthenticationRequired</p> </td>
-   <td><p>为了限制读取访问，将专用CUG策略应用于目标节点。</p> <p>注意：策略只能在配置的受支持路径上应用。</p> <p>名为rep：cugPolicy且类型为rep：CugPolicy的节点受到保护，无法使用常规JCR API调用进行写入；请改用JCR访问控制管理。</p> <p>请参阅 <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">此页面</a> 以了解更多信息。</p> <p>要在节点上强制实施身份验证要求，只需添加mixin类型granite：AuthenticationRequired即可。</p> <p>注意：仅遵循所配置的受支持路径下方。</p> </td>
+   <td><p>为了限制读取访问，将专用CUG策略应用于目标节点。</p> <p>注意：策略只能在配置的受支持路径上应用。</p> <p>名为rep：cugPolicy且类型为rep：CugPolicy的节点受到保护，无法使用常规JCR API调用进行写入；请改用JCR访问控制管理。</p> <p>有关详细信息，请参阅<a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">此页面</a>。</p> <p>要在节点上强制实施身份验证要求，只需添加mixin类型granite：AuthenticationRequired即可。</p> <p>注意：仅遵循所配置的受支持路径下方。</p> </td>
   </tr>
   <tr>
    <td><p>属性：cq：cugPrincipals</p> <p>声明节点类型： NA，剩余属性</p> </td>
    <td><p>属性： rep：principalNames</p> <p>声明节点类型：rep：CugPolicy</p> </td>
-   <td><p>属性包含允许读取受限CUG下内容的主体的名称，该属性受到保护，不能使用常规JCR API调用写入，请改用JCR访问控制管理。</p> <p>请参阅 <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">此页面</a> 以了解关于实施的更多详细信息。</p> </td>
+   <td><p>属性包含允许读取受限CUG下内容的主体的名称，该属性受到保护，不能使用常规JCR API调用写入，请改用JCR访问控制管理。</p> <p>有关实现的更多详细信息，请参阅<a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">此页面</a>。</p> </td>
   </tr>
   <tr>
    <td><p>属性：cq：cugLoginPage</p> <p>声明节点类型： NA，剩余属性</p> </td>
@@ -80,14 +80,14 @@ ht-degree: 0%
 
   ConfigurationPolicy =必需
 
-**评论**
+**个评论**
 
 * 配置CUG授权并启用/禁用评估。
 用于配置不受CUG授权影响的主体排除列表的服务。
 
   >[!NOTE]
   > 
-  >如果 `CugExcludeImpl` 未配置， `CugConfiguration` 回退到默认值。
+  >如果未配置`CugExcludeImpl`，则`CugConfiguration`将回退到默认值。
 
   如果有特殊需求，可以插入自定义CugExclude实施。
 

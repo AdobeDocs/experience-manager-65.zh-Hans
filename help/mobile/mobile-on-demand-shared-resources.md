@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要详细了解AEM Mobile应用程序的设计注意事项，请参阅 [AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 在线帮助中。
+>要详细了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)。
 
 >[!CAUTION]
 >
@@ -36,16 +36,16 @@ ht-degree: 0%
 
 通常，文章等内容需要在所有作者甚至应用程序中具有相同的外观和风格。 因此，使脚本、css和字体对所有人都可用至关重要。 此操作将此类共享资源发送到Mobile On-Demand，然后可以根据需要使用。
 
-配置应用程序并将其关联到云配置后，即可上传共享资源。 有关将应用程序关联到云配置的详细步骤，请单击 [此处](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md).
+配置应用程序并将其关联到云配置后，即可上传共享资源。 有关将应用程序关联到云配置的详细步骤，请单击[此处](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)。
 
 >[!NOTE]
 >
->共享资源使用ContentSync收集所有不同的资源。 请参阅 [使用ContentSync的移动设备](/help/mobile/mobile-ondemand-contentsync.md) 以了解更多详细信息。
+>共享资源使用ContentSync收集所有不同的资源。 有关更多详细信息，请参阅[带有ContentSync的移动设备](/help/mobile/mobile-ondemand-contentsync.md)。
 
 请按照以下步骤为文章上传共享资源：
 
-1. 从中选择文章 **管理文章** 磁贴。
-1. 单击 **上传共享资源** 以上传共享的HTML资源。
+1. 从&#x200B;**管理文章**&#x200B;拼贴中选择文章。
+1. 单击&#x200B;**上传共享资源**&#x200B;以上传共享HTML资源。
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 

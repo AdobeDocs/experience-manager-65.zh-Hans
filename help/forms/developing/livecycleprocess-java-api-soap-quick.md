@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # LiveCycleProcess Java API (SOAP)快速启动 {#livecycleprocess-java-api-soap-quick-start}
 
-Java API(SOAP)快速入门适用于流程。 A *流程实例* 通过调用方法（如调用API）或从Workspace中启动的特定进程的发生次数。
+Java API(SOAP)快速入门适用于流程。 *进程实例*&#x200B;是某个特定进程的实例，该进程是由调用API之类的调用方法或从Workspace中启动的。
 
 [快速入门(SOAP模式)：使用Java API搜索流程实例](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
@@ -36,11 +36,11 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 >[!NOTE]
 >
->如果使用Unix等其他操作系统，请将Windows特定的路径替换为适用操作系统支持的路径，则“使用AEM Forms进行编程”中的快速入门将基于Forms。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 (请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>如果使用Unix等其他操作系统，请将Windows特定的路径替换为适用操作系统支持的路径，则“使用AEM Forms进行编程”中的快速入门将基于Forms。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 （请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。）
 
 ## 快速入门(SOAP模式)：使用Java API搜索流程实例 {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
-以下Java代码示例搜索基于 *MortgageLoan — 预建* 进程。
+以下Java代码示例搜索基于&#x200B;*MortgageLoan — 预构建*&#x200B;进程的进程实例。
 
 ```java
  /*
@@ -429,7 +429,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API清除流程数据 {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-以下Java代码从名为的进程中清除数据 *安全文档*. 过滤器用于指定清除流程变量命名的那些流程实例的数据 *inValue* 大于200。
+以下Java代码从名为&#x200B;*SecureDocument*&#x200B;的进程中清除数据。 使用了筛选器，该筛选器指定清除那些名为&#x200B;*inValue*&#x200B;的进程变量大于200的进程实例的数据。
 
 ```java
  /*

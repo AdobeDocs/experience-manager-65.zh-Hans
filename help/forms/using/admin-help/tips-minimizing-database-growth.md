@@ -34,4 +34,4 @@ ht-degree: 0%
 
 有效地使用全局文档存储(GDS)。 Forms服务器上的GDS目录用于存储（其中包括）传递到进程中AEM表单一部分的服务的文件。 为了提高性能，较小的文档存储在内存中并保留在数据库中。
 
-管理控制台显示Default Document Max Inline Size属性，用于配置存储在内存中并保留在数据库中的文档的最大大小。 (请参阅 [配置常规AEM表单设置](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) 如果将此属性设置为低值，则大多数文档将保留在GDS目录而非数据库中。 优点在于，当文件存储在GDS目录中时，可以更轻松地删除不再需要的文件。
+管理控制台显示Default Document Max Inline Size属性，用于配置存储在内存中并保留在数据库中的文档的最大大小。 (请参阅[配置常规AEM表单设置](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)。) 如果将此属性设置为低值，则大多数文档将保留在GDS目录而非数据库中。 优点在于，当文件存储在GDS目录中时，可以更轻松地删除不再需要的文件。

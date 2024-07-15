@@ -27,7 +27,7 @@ AEM Mobile随时准备帮助客户履行其GDPR合规义务。 AEM Mobile中未�
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe的数字发布产品(在AEM Mobile之前)支持Adobe的GDPR准备工作。 请参阅 [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). 下面提供了有关在Digital Publishing Suite产品中支持GDPR相关功能的详细信息，包括如何与Adobe合作来启动GDPR请求。
+Adobe的数字发布产品(在AEM Mobile之前)支持Adobe的GDPR准备工作。 请参阅[https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html)。 下面提供了有关在Digital Publishing Suite产品中支持GDPR相关功能的详细信息，包括如何与Adobe合作来启动GDPR请求。
 
 要确保不会将AEM Mobile与旧版Digital Publishing Suite产品混淆，您可以在此处登录Digital Publishing Suite产品：
 
@@ -45,33 +45,33 @@ Adobe的数字发布产品(在AEM Mobile之前)支持Adobe的GDPR准备工作。
 
 提供以下至少一项内容：
 
-* 最终用户客户提供的OAuth ID（客户直接授权系统中使用的ID）： *dpsc-directEntitlementId*
-* 对于Windows应用程序用户，最终用户的App Store ID： *dpsc-windowsAppStoreId*
-* 最终用户用于与DPS应用程序进行交互的电子邮件地址： *电子邮件*
+* 最终用户的客户提供的OAuth ID（在客户的直接授权系统中使用的ID）： *dpsc-directEntitlementId*
+* 对于Windows应用用户，最终用户的App Store ID： *dpsc-windowsAppStoreId*
+* 最终用户用于与DPS应用程序交互的电子邮件地址： *电子邮件*
 
 ### 常见问题解答(FAQ) {#frequently-asked-questions-faq}
 
-**启动DELETE请求时，Adobe是否删除我的App Store购买项目？**
+**启动Adobe请求时，DELETE是否正在删除我的App Store购买项目？**
 
 Adobe会删除与应用商店购买（订阅等）相关的信息，但购买行为仍会记录在应用商店中。 如果应用程序（最终用户）已登录到应用商店，则会再次提取这些回执，并将其发送给Adobe。 稍后，这些内容会被视为新购买，并由应用程序恢复，然后再次访问。
 
-**启动Adobe请求时，DELETE是否删除客户提供的权利？**
+**启动DELETEAdobe时请求是否正在删除客户提供的权利？**
 
 Adobe删除其拥有的客户额外直接权利津贴信息。 如果应用程序（最终用户）登录到客户使用的OAuth机制，则会向Adobe发送信息，然后服务会再次获取额外权利。
 
-**对最终用户的要求是什么？**
+**最终用户需要什么？**
 
 由于为应用程序分配权限的键作为查看器软件的一部分驻留在设备上，因此最终用户应卸载应用程序。 最终用户应该认识到，如果他们重新安装应用程序，则现有购买（与应用商店用户关联）和直接权利津贴（与客户的OAuth用户关联）仍会恢复。
 
-**当应用程序在设备上的用户之间共享时，会发生什么情况？**
+**当设备上的人员共享某个应用程序时，会发生什么情况？**
 
 Adobe具有最少的信息，可直接关联回特定用户。 它使用随机创建的UUID关联数据，该UUID保留在应用程序数据中，并在应用程序发起的每个请求中传递。 这意味着在同一设备上共享应用程序的最终用户使用的是相同的UUID，并且所有数据都被视为归GDPR请求人所有。 对于访问和删除请求，DPSC都将共享应用程序的人员视为一个人。
 
-**Analytics会跟踪哪些个人数据？**
+**Analytics跟踪了哪些个人数据？**
 
 无。 虽然会跟踪数据，但跟踪的数据属于应用程序级别（而非个人数据）。 这包括启动次数、崩溃次数、关闭次数、活动、购买次数或作品集叠加等事件。 不会跟踪地理位置、名称、设备ID或IP地址。
 
-**最终用户提供了他们的信息，但未找到任何内容。 为什么不呢？**
+**最终用户提供了其信息，但未找到任何内容。 为什么不？**
 
 随着Digital Publishing Suite产品的发展，服务实现发生了变化，更多数据被混淆。 如果使用用户提供的数据未找到任何数据，则意味着用户的数据无法跟踪回该人员。
 

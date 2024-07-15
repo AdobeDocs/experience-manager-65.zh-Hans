@@ -15,13 +15,13 @@ ht-degree: 0%
 
 # 使用经典UI创建语言根{#creating-a-language-root-using-the-classic-ui}
 
-以下过程使用经典UI创建站点的语言根。 有关更多信息，请参阅 [创建语言根](/help/sites-administering/tc-prep.md#creating-a-language-root).
+以下过程使用经典UI创建站点的语言根。 有关详细信息，请参阅[创建语言根](/help/sites-administering/tc-prep.md#creating-a-language-root)。
 
 1. 在网站控制台的网站树中，选择站点的根页面。 ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. 添加新的子页面以表示站点的语言版本：
 
    1. 单击“新建”>“新建页面”。
-   1. 在对话框中，指定标题和名称。 名称必须采用格式 `<language-code>` 或 `<language-code>_<country-code>`例如，en、en_US、en_us、en_GB、en_gb。
+   1. 在对话框中，指定标题和名称。 名称必须采用`<language-code>`或`<language-code>_<country-code>`格式，例如en、en_US、en_us、en_GB、en_gb。
 
       * 支持的语言代码是由ISO-639-1定义的小写形式的双字母代码
       * 支持的国家/地区代码是由ISO 3166定义的小写或大写形式的两字母代码

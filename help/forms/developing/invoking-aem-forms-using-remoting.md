@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 使用Remoting调用AEM Forms {#invoking-aem-forms-using-remoting}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 在Workbench中创建的进程可以通过使用远程处理进行调用。 即，您可以从使用AEM Forms构建的客户端应用程序中调用Flex进程。 此功能基于数据服务。
 
@@ -30,7 +30,7 @@ ht-degree: 0%
 >
 >如果未将AEM Forms服务配置为允许匿名访问，则来自Flex客户端的请求会导致Web浏览器质询。 用户必须输入用户名和密码凭据。
 
-以下AEM Forms短期进程，已命名 `MyApplication/EncryptDocument`，可以使用Remoting调用。 (有关此进程的信息（如其输入和输出值），请参见 [短期进程示例](/help/forms/developing/aem-forms-processes.md).)
+可以使用Remoting调用以下名为`MyApplication/EncryptDocument`的AEM Forms短时间进程。 （有关此进程的信息，例如其输入和输出值，请参阅[短期进程示例](/help/forms/developing/aem-forms-processes.md)。）
 
 ![iu_iu_encryptdocumentprocess2](assets/iu_iu_encryptdocumentprocess2.png)
 
@@ -40,17 +40,17 @@ ht-degree: 0%
 
 调用此进程时，将执行以下操作：
 
-1. 获取作为输入值传递的不安全PDF单据。 此操作基于 `SetValue` 操作。 输入参数的名称为 `inDoc` 并且其数据类型为 `document`. (此 `document` 数据类型是Workbench中的可用数据类型。)
-1. 使用密码加密PDF文档。 此操作基于 `PasswordEncryptPDF` 操作。 此进程的输出值的名称为 `outDoc` 和表示密码加密的PDF文档。 outDoc的数据类型是 `document`.
-1. 将密码加密的PDF文件作为PDF文件保存到本地文件系统。 此操作基于 `WriteDocument` 操作。
+1. 获取作为输入值传递的不安全PDF单据。 此操作基于`SetValue`操作。 输入参数的名称为`inDoc`，其数据类型为`document`。 （`document`数据类型是Workbench中的可用数据类型。）
+1. 使用密码加密PDF文档。 此操作基于`PasswordEncryptPDF`操作。 此进程输出值的名称为`outDoc`，表示密码加密的PDF文档。 outDoc的数据类型是`document`。
+1. 将密码加密的PDF文件作为PDF文件保存到本地文件系统。 此操作基于`WriteDocument`操作。
 
 >[!NOTE]
 >
->此 `MyApplication/EncryptDocument` 进程并非基于现有AEM Forms进程。 要遵循代码示例中的说明，请创建一个名为的进程 `MyApplication/EncryptDocument` 使用Workbench。
+>`MyApplication/EncryptDocument`进程不基于现有AEM Forms进程。 要遵循代码示例，请使用Workbench创建名为`MyApplication/EncryptDocument`的进程。
 
 >[!NOTE]
 >
->有关使用Remoting调用长生命周期进程的信息，请参阅 [调用以人为中心的长期进程](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).
+>有关使用Remoting调用长期进程的信息，请参阅[调用以人为中心的长期进程](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)。
 
 **另请参阅**
 
@@ -82,7 +82,7 @@ ht-degree: 0%
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-  其中&lt;*install目录*>是AEM Forms的安装目录。
+  其中， &lt;*install_directory*>是AEM Forms的安装目录。
 
 **另请参阅**
 
@@ -96,13 +96,13 @@ ht-degree: 0%
 
 ## 使用远程处理文档 {#handling-documents-with-remoting}
 
-AEM Forms中使用的最重要的非原始Java™类型之一是 `com.adobe.idp.Document` 类。 调用AEM Forms操作通常需要文档。 它主要是PDF文档，但可以包含其他文档类型，如SWF、HTML、XML或DOC文件。 (请参阅 [使用Java API将数据传递到AEM Forms服务](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api).)
+AEM Forms中使用的最重要的非原始Java™类型之一是`com.adobe.idp.Document`类。 调用AEM Forms操作通常需要文档。 它主要是PDF文档，但可以包含其他文档类型，如SWF、HTML、XML或DOC文件。 (请参阅[使用Java API将数据传递到AEM Forms服务](/help/forms/developing/invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)。)
 
 使用Flex构建的客户端应用程序无法直接请求文档。 例如，您无法启动Adobe Reader以请求生成PDF文件的URL。 对文档类型(如PDF和Microsoft®Word文档)的请求将返回一个结果，即URL。 客户有责任显示URL的内容。 文档管理服务可帮助生成URL和内容类型信息。 对XML文档的请求在结果中返回完整的XML文档。
 
 ### 将文档作为输入参数传递 {#passing-a-document-as-an-input-parameter}
 
-使用Flex构建的客户端应用程序无法将文档直接传递到AEM Forms进程。 相反，客户端应用程序使用 `mx.rpc.livecycle.DocumentReference` ActionScript类，用于将输入参数传递到需要一个 `com.adobe.idp.Document` 实例。 Flex客户端应用程序有多个选项可用于设置 `DocumentReference` 对象：
+使用Flex构建的客户端应用程序无法将文档直接传递到AEM Forms进程。 相反，客户端应用程序使用`mx.rpc.livecycle.DocumentReference`ActionScript类的实例将输入参数传递给预期`com.adobe.idp.Document`实例的操作。 Flex客户端应用程序具有几个用于设置`DocumentReference`对象的选项：
 
 * 当文档在服务器上且其文件位置已知时，将DocumentReference对象的referenceType属性设置为REF_TYPE_FILE。 将fileRef属性设置为文件的位置，如以下示例所示：
 
@@ -128,14 +128,14 @@ docRef.referenceType = DocumentReference.REF_TYPE_INLINE; 
 docRef.text = "Text for my document";  // Optionally, you can override the server's default character set  // if necessary:  // docRef.charsetName=CharacterSetName  ...
 ```
 
-* 当文档不在服务器上时，使用远程上传servlet将文档上传到AEM Forms。 AEM Forms的新增功能是能够上传安全文档。 上传安全文档时，您必须使用具有 *文档上载应用程序用户* 角色。 如果没有此角色，用户将无法上传安全文档。 建议您使用单点登录上载安全文档。 (请参阅 [使用远程处理传递安全文档以调用进程](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
+* 当文档不在服务器上时，使用远程上传servlet将文档上传到AEM Forms。 AEM Forms的新增功能是能够上传安全文档。 上载安全文档时，必须使用具有&#x200B;*文档上载应用程序用户*&#x200B;角色的用户。 如果没有此角色，用户将无法上传安全文档。 建议您使用单点登录上载安全文档。 （请参阅[传递安全文档以使用Remoting](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)调用进程。）
 
 >[!NOTE]
 >
-如果将AEM Forms配置为允许上传不安全的文档，则您可以使用没有文档上传应用程序用户角色的用户来上传文档。 用户还可以具有文档上传权限。 但是，如果将AEM Forms配置为仅允许安全文档，请确保用户具有“文档上传应用程序用户”角色或“文档上传”权限。 (请参阅 [配置AEM Forms以接受安全和不安全的文档](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
+如果将AEM Forms配置为允许上传不安全的文档，则您可以使用没有文档上传应用程序用户角色的用户来上传文档。 用户还可以具有文档上传权限。 但是，如果将AEM Forms配置为仅允许安全文档，请确保用户具有“文档上传应用程序用户”角色或“文档上传”权限。 (请参阅[将AEM Forms配置为接受安全且不安全的文档](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)。
 
-您对指定的上传URL使用标准Flash上传功能： `https://SERVER:PORT/remoting/lcfileupload`. 然后，您可以使用 `DocumentReference` 输入参数类型为 `Document` 预计
-` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`远程快速入门使用远程上传servlet将PDF文件传递到 `MyApplication/EncryptDocument`进程。 (请参阅 [通过使用(不推荐用于AEM表单)AEM Forms Remoting传递不安全的文档来调用短暂的过程](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+您对指定的上载URL使用标准Flash上载功能： `https://SERVER:PORT/remoting/lcfileupload`。 然后，只要需要`Document`类型的输入参数，您就可以使用`DocumentReference`对象
+` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`远程快速入门使用远程上传Servlet将PDF文件传递到`MyApplication/EncryptDocument`进程。 (请参阅[使用(不适用于AEM表单)AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)传递不安全的文档以调用短暂的进程。)
 
 ```java
  
@@ -168,11 +168,11 @@ function completeHandler(event: DataEvent): void  { 
 }
 ```
 
-远程快速入门使用远程上传servlet将PDF文件传递到 `MyApplication/EncryptDocument`进程。 (请参阅 [通过使用(不推荐用于AEM表单)AEM Forms Remoting传递不安全的文档来调用短暂的过程](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting).)
+远程快速启动使用远程上传Servlet将PDF文件传递到`MyApplication/EncryptDocument`进程。 (请参阅[使用(不适用于AEM表单)AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)传递不安全的文档以调用短暂的进程。)
 
 ### 将文档传递回客户端应用程序 {#passing-a-document-back-to-a-client-application}
 
-客户端应用程序接收类型为的对象 `mx.rpc.livecycle.DocumentReference` 对于返回 `com.adobe.idp.Document` 实例作为输出参数。 由于客户端应用程序处理ActionScript对象而非Java，因此无法将基于Java的Document对象传递回Flex客户端。 服务器而是为文档生成一个URL，并将该URL传递回客户端。 此 `DocumentReference` 对象的 `referenceType` 属性指定内容是否位于 `DocumentReference` 对象或必须从以下位置的URL中检索： `DocumentReference.url` 属性。 此 `DocumentReference.contentType` 属性指定文档的类型。
+客户端应用程序接收服务操作的`mx.rpc.livecycle.DocumentReference`类型的对象，该服务操作将`com.adobe.idp.Document`实例作为输出参数返回。 由于客户端应用程序处理ActionScript对象而非Java，因此无法将基于Java的Document对象传递回Flex客户端。 服务器而是为文档生成一个URL，并将该URL传递回客户端。 `DocumentReference`对象的`referenceType`属性指定内容是在`DocumentReference`对象中，还是必须从`DocumentReference.url`属性中的URL中检索。 `DocumentReference.contentType`属性指定文档类型。
 
 **另请参阅**
 
@@ -190,26 +190,26 @@ function completeHandler(event: DataEvent): void  { 
 
 要从使用AEM Forms构建的应用程序中调用Flex进程，请执行以下任务：
 
-1. 创建 `mx:RemoteObject` 实例。
-1. 创建 `ChannelSet` 实例。
+1. 创建`mx:RemoteObject`实例。
+1. 创建`ChannelSet`实例。
 1. 传递所需的输入值。
 1. 处理返回值。
 
 >[!NOTE]
 >
-本节讨论如何调用AEM Forms进程，以及当AEM Forms配置为上传不安全的文档时如何上传文档。 有关如何调用AEM Forms进程和上传安全文档以及如何配置AEM Forms以接受安全和不安全文档的信息，请参阅 [使用远程处理传递安全文档以调用进程](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
+本节讨论如何调用AEM Forms进程，以及当AEM Forms配置为上传不安全的文档时如何上传文档。 有关如何调用AEM Forms进程和上载安全文档以及如何配置AEM Forms以接受安全和不安全文档的信息，请参阅[传递安全文档以使用远程处理调用进程](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)。
 
-**创建mx：RemoteObject实例**
+**正在创建mx：RemoteObject实例**
 
-您创建 `mx:RemoteObject` 实例调用Workbench中创建的AEM Forms进程。 创建 `mx:RemoteObject` 实例中，指定以下值：
+您可以创建一个`mx:RemoteObject`实例，以调用在Workbench中创建的AEM Forms进程。 要创建`mx:RemoteObject`实例，请指定以下值：
 
-* **id：** 的名称 `mx:RemoteObject` 表示要调用的进程的实例。
-* **目标：** 要调用的AEM Forms进程的名称。 例如，要调用 `MyApplication/EncryptDocument` 进程，指定 `MyApplication/EncryptDocument`.
-* **结果：** 处理结果的Flex方法的名称。
+* **id：**&#x200B;表示要调用的进程的`mx:RemoteObject`实例的名称。
+* **目标：**&#x200B;要调用的AEM Forms进程的名称。 例如，要调用`MyApplication/EncryptDocument`进程，请指定`MyApplication/EncryptDocument`。
+* **结果：**&#x200B;处理结果的Flex方法的名称。
 
-在 `mx:RemoteObject` 标记，指定 `<mx:method>` 标记，指定进程的调用方法的名称。 通常，Forms调用方法的名称为 `invoke`.
+在`mx:RemoteObject`标记内，指定指定进程调用方法名称的`<mx:method>`标记。 通常，Forms调用方法的名称为`invoke`。
 
-以下代码示例创建 `mx:RemoteObject` 调用 `MyApplication/EncryptDocument` 进程。
+以下代码示例创建调用`MyApplication/EncryptDocument`进程的`mx:RemoteObject`实例。
 
 ```java
  <mx:RemoteObject id="EncryptDocument" destination="MyApplication/EncryptDocument" result="resultHandler(event);">
@@ -217,9 +217,9 @@ function completeHandler(event: DataEvent): void  { 
       </mx:RemoteObject>
 ```
 
-**创建指向AEM Forms的渠道**
+**创建AEM Forms频道**
 
-客户端应用程序可以通过在MXML或ActionScript中指定渠道来调用AEM Forms，如以下ActionScript示例所示。 渠道必须为 `AMFChannel`， `SecureAMFChannel`， `HTTPChannel`，或 `SecureHTTPChannel`.
+客户端应用程序可以通过在MXML或ActionScript中指定渠道来调用AEM Forms，如以下ActionScript示例所示。 渠道必须是`AMFChannel`、`SecureAMFChannel`、`HTTPChannel`或`SecureHTTPChannel`。
 
 ```java
      ...
@@ -233,13 +233,13 @@ function completeHandler(event: DataEvent): void  { 
      ...
 ```
 
-分配 `ChannelSet` 实例到 `mx:RemoteObject` 实例的 `channelSet` 字段（如上一个代码示例所示）。 通常，在调用时，应在import语句中导入channel类，而不是指定完全限定的名称 `ChannelSet.addChannel` 方法。
+将`ChannelSet`实例分配给`mx:RemoteObject`实例的`channelSet`字段（如上一个代码示例所示）。 通常，在调用`ChannelSet.addChannel`方法时在import语句中导入通道类，而不是指定完全限定的名称。
 
 **传递输入值**
 
-在Workbench中创建的进程可以接受零个或多个输入参数并返回输出值。 客户端应用程序将输入参数传递到 `ActionScript` 包含与AEM Forms进程参数对应的字段的对象。 短暂的进程，已命名 `MyApplication/EncryptDocument`，需要一个名为的输入参数 `inDoc`. 该进程公开的操作的名称为 `invoke` （短期进程的默认名称）。 (请参阅 [使用AEM Forms调用(已为AEM表单弃用) AEM Forms远程处理](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+在Workbench中创建的进程可以接受零个或多个输入参数并返回输出值。 客户端应用程序使用与AEM Forms进程参数对应的字段，在`ActionScript`对象中传递输入参数。 名为`MyApplication/EncryptDocument`的短暂进程需要一个名为`inDoc`的输入参数。 进程公开的操作的名称为`invoke`（短时间进程的默认名称）。 (请参阅[使用调用AEM Forms(不推荐用于AEM表单)AEM Forms远程处理](invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
 
-以下代码示例将PDF文档传递到 `MyApplication/EncryptDocument` 进程：
+以下代码示例将PDF文档传递到`MyApplication/EncryptDocument`进程：
 
 ```java
      ...
@@ -254,11 +254,11 @@ function completeHandler(event: DataEvent): void  { 
      ...
 ```
 
-在此代码示例中， `pdfDocument` 是 `DocumentReference` 包含不安全PDF文档的实例。 有关 `DocumentReference`，请参见 [使用AEM Forms Remoting处理文档(AEM Forms已弃用)](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting).
+在此代码示例中，`pdfDocument`是包含不安全PDF文档的`DocumentReference`实例。 有关`DocumentReference`的信息，请参阅[使用(不建议用于AEM表单)AEM Forms远程处理处理文档](invoking-aem-forms-using-remoting.md#handling-documents-with-remoting)。
 
 **调用服务的特定版本**
 
-您可以使用调用Forms服务的特定版本 `_version` 调用参数映射中的参数。 例如，要调用版本1.2的 `MyApplication/EncryptDocument` 服务：
+您可以使用调用参数映射中的`_version`参数来调用特定版本的Forms服务。 例如，要调用`MyApplication/EncryptDocument`服务的版本1.2：
 
 ```java
  var params:Object = new Object();
@@ -267,11 +267,11 @@ function completeHandler(event: DataEvent): void  { 
  var token:AsyncToken = echoService.echoString(params);
 ```
 
-此 `version` 参数必须是包含单个句点的字符串。 句点左侧、主要版本和右侧、次要版本的值必须是整数。 如果未指定此参数，则调用head活动版本。
+`version`参数必须是包含单个句点的字符串。 句点左侧、主要版本和右侧、次要版本的值必须是整数。 如果未指定此参数，则调用head活动版本。
 
-**处理返回值**
+**正在处理返回值**
 
-AEM Forms进程输出参数被反序列化为ActionScript对象，客户端应用程序可按名称从中提取特定参数，如以下示例所示。 (的输出值 `MyApplication/EncryptDocument` 进程已命名 `outDoc`.)
+AEM Forms进程输出参数被反序列化为ActionScript对象，客户端应用程序可按名称从中提取特定参数，如以下示例所示。 （`MyApplication/EncryptDocument`进程的输出值名为`outDoc`。）
 
 ```java
      ...
@@ -280,15 +280,15 @@ AEM Forms进程输出参数被反序列化为ActionScript对象，客户端应�
      ...
 ```
 
-**调用MyApplication/EncryptDocument进程**
+**正在调用MyApplication/EncryptDocument进程**
 
-您可以调用 `MyApplication/EncryptDocument` 通过以下步骤进行处理：
+您可以通过执行以下步骤来调用`MyApplication/EncryptDocument`进程：
 
-1. 创建 `mx:RemoteObject` 通过ActionScript或MXML实例访问。 请参阅创建mx：RemoteObject实例。
-1. 设置 `ChannelSet` 实例以与AEM Forms通信，并将其与 `mx:RemoteObject` 实例。 请参阅创建AEM Forms渠道。
-1. 调用ChannelSet `login` 方法或服务的 `setCredentials` 用于指定用户标识符值和密码的方法。 (请参阅 [使用单点登录](invoking-aem-forms-using-remoting.md#using-single-sign-on).)
-1. 填充 `mx.rpc.livecycle.DocumentReference` 具有要传递到的不安全PDF文档的实例 `MyApplication/EncryptDocument` 进程。 (请参阅 [将文档作为输入参数传递](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter).)
-1. PDF通过调用 `mx:RemoteObject` 实例的 `invoke` 方法。 传递 `Object` 包含输入参数(即无保护PDF文档)。 请参阅传递输入值。
+1. 通过ActionScript或MXML创建`mx:RemoteObject`实例。 请参阅创建mx：RemoteObject实例。
+1. 设置`ChannelSet`实例以与AEM Forms通信，并将其与`mx:RemoteObject`实例关联。 请参阅创建AEM Forms渠道。
+1. 调用ChannelSet的`login`方法或服务的`setCredentials`方法以指定用户标识符值和密码。 （请参阅[使用单点登录](invoking-aem-forms-using-remoting.md#using-single-sign-on)。）
+1. 使用不安全的PDF文档填充`mx.rpc.livecycle.DocumentReference`实例以传递到`MyApplication/EncryptDocument`进程。 （请参阅[将文档作为输入参数传递](invoking-aem-forms-using-remoting.md#passing-a-document-as-an-input-parameter)。）
+1. 通过调用`mx:RemoteObject`实例的`invoke`方法来加密PDF文档。 传递包含输入参数(这是不安全的PDF文档)的`Object`。 请参阅传递输入值。
 1. 检索从进程返回的密码加密PDF文档。 请参阅处理返回值。
 
 [快速入门：通过使用(不推荐用于AEM表单)AEM Forms Remoting传递不安全的文档来调用短暂的过程](/help/forms/developing/invocation-api-quick-starts.md#quick-start-invoking-a-short-lived-process-by-passing-an-unsecure-document-using-deprecated-for-aem-forms-aem-forms-remoting)
@@ -303,25 +303,25 @@ AEM forms user Manager可以通过多种方式对来自Flex应用程序的远程
 
 >[!NOTE]
 >
-有关使用HTTP令牌执行身份验证的信息，请参阅 [创建使用HTTP令牌执行SSO身份验证的Flash Builder应用程序](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
+有关使用HTTP令牌执行身份验证的信息，请参阅[创建使用HTTP令牌执行SSO身份验证的Flash Builder应用程序](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)。
 
 ### 使用自定义身份验证 {#using-custom-authentication}
 
-您可通过在远程端点上将身份验证方法从“基本”更改为“自定义”，在管理控制台中启用自定义身份验证。 如果您使用自定义身份验证，您的客户端应用程序将调用 `ChannelSet.login` 登录方法和 `ChannelSet.logout` 方法注销。
+您可通过在远程端点上将身份验证方法从“基本”更改为“自定义”，在管理控制台中启用自定义身份验证。 如果使用自定义身份验证，则客户端应用程序将调用`ChannelSet.login`方法登录，调用`ChannelSet.logout`方法注销。
 
 >[!NOTE]
 >
-在AEM Forms的早期版本中，您可以通过调用 `RemoteObject.setCredentials` 方法。 此 `setCredentials` 在组件第一次尝试连接到服务器之前，方法实际上并未将凭据传递到服务器。 因此，如果组件发出错误事件，则您无法确定该错误是由于身份验证错误还是其他原因造成的。 此 `ChannelSet.login` 方法会在您调用服务器时连接到该服务器，以便您可以立即处理身份验证问题。 虽然您可以继续使用 `setCredentials` 方法，建议您使用 `ChannelSet.login` 方法。
+在上一版AEM Forms中，您通过调用`RemoteObject.setCredentials`方法向目标发送了凭据。 在组件第一次尝试连接到服务器之前，`setCredentials`方法实际上并未将凭据传递到服务器。 因此，如果组件发出错误事件，则您无法确定该错误是由于身份验证错误还是其他原因造成的。 `ChannelSet.login`方法在调用服务器时连接到该服务器，以便您可以立即处理身份验证问题。 尽管您可以继续使用`setCredentials`方法，但建议您使用`ChannelSet.login`方法。
 
-由于多个目标可以使用相同的渠道和相应的ChannelSet对象，因此登录到某个目标会将用户登录到使用相同渠道或渠道的任何其他目标。 如果两个组件对同一ChannelSet对象应用不同的凭据，则使用应用的最后一个凭据。 如果多个组件使用相同的已验证ChannelSet对象，则调用 `logout` 方法会将所有组件从目标中注销。
+由于多个目标可以使用相同的渠道和相应的ChannelSet对象，因此登录到某个目标会将用户登录到使用相同渠道或渠道的任何其他目标。 如果两个组件对同一ChannelSet对象应用不同的凭据，则使用应用的最后一个凭据。 如果多个组件使用相同的已验证ChannelSet对象，则调用`logout`方法会将所有组件从目标中注销。
 
-以下示例使用 `ChannelSet.login` 和 `ChannelSet.logout` 方法与RemoteObject控件。 此应用程序执行以下操作：
+以下示例将`ChannelSet.login`和`ChannelSet.logout`方法与RemoteObject控件一起使用。 此应用程序执行以下操作：
 
-* 创建 `ChannelSet` 中的对象 `creationComplete` 此处理程序表示使用的渠道 `RemoteObject` 组件
-* 通过调用 `ROLogin` 函数来响应按钮点击事件
+* 在`creationComplete`处理程序中创建一个`ChannelSet`对象，该对象表示`RemoteObject`组件使用的渠道
+* 通过调用`ROLogin`函数将凭据传递到服务器，以响应Button单击事件
 * 使用RemoteObject组件向服务器发送一个字符串，以响应Button单击事件。 服务器将相同的字符串返回给RemoteObject组件
 * 使用RemoteObject组件的结果事件在TextArea控件中显示字符串
-* 通过调用 `ROLogout` 函数来响应按钮点击事件
+* 通过调用`ROLogout`函数以响应Button单击事件注销服务器
 
 ```java
  <?xml version="1.0"?>
@@ -443,7 +443,7 @@ AEM forms user Manager可以通过多种方式对来自Flex应用程序的远程
  </mx:Application>
 ```
 
-此 `login` 和 `logout` 方法返回AsyncToken对象。 将事件处理程序分配给AsyncToken对象，以便结果事件处理成功的调用，并使错误事件处理失败。
+`login`和`logout`方法返回AsyncToken对象。 将事件处理程序分配给AsyncToken对象，以便结果事件处理成功的调用，并使错误事件处理失败。
 
 ### 使用单点登录 {#using-single-sign-on}
 
@@ -451,7 +451,7 @@ AEM forms用户可以连接到多个AEM Forms Web应用程序来执行任务。 
 
 每个AEM Forms Web应用程序都打包到自己的Web存档(WAR)文件中，然后该文件打包为Enterprise Archive (EAR)文件的一部分。 由于应用程序服务器不允许跨不同Web应用程序共享会话数据，因此AEM Forms使用HTTP Cookie来存储身份验证信息。 身份验证Cookie使用户能够登录到Forms应用程序，然后连接到其他AEM Forms Web应用程序。 此技术称为单点登录。
 
-AEM Forms开发人员编写客户端应用程序以扩展表单指南（已弃用）的功能并自定义工作区。 例如，Workspace应用程序可以启动进程。 然后，客户端应用程序使用远程端点从Forms服务检索数据。
+AEM Forms开发人员编写客户端应用程序以扩展表单指南（已弃用）的功能并自定义Workspace。 例如，Workspace应用程序可以启动一个流程。 然后，客户端应用程序使用远程端点从Forms服务检索数据。
 
 当使用(不推荐用于AEM表单)AEM Forms Remoting调用AEM Forms服务时，客户端应用程序将传递身份验证Cookie作为请求的一部分。 由于用户已经过身份验证，因此无需额外登录即可从客户端应用程序连接到AEM Forms服务。
 
@@ -461,7 +461,7 @@ AEM Forms开发人员编写客户端应用程序以扩展表单指南（已弃�
 
 您可以通过编写自行登录和注销的客户端应用程序来绕过AEM Forms单点登录机制。 如果绕过单点登录机制，则可以对应用程序使用基本身份验证或自定义身份验证。
 
-由于此机制不使用AEM Forms单点登录机制，因此不会向客户端写入身份验证Cookie。 登录凭据存储在 `ChannelSet` 远程渠道的对象。 因此，任何 `RemoteObject` 您通过相同方式进行的呼叫 `ChannelSet` 都是在这些凭证的背景下作出的。
+由于此机制不使用AEM Forms单点登录机制，因此不会向客户端写入身份验证Cookie。 登录凭据存储在远程渠道的`ChannelSet`对象中。 因此，您在同一`ChannelSet`上进行的任何`RemoteObject`调用都是在这些凭据的上下文中进行的。
 
 ### 在AEM Forms中设置单点登录 {#setting-up-single-sign-on-in-aem-forms}
 
@@ -469,11 +469,11 @@ AEM Forms开发人员编写客户端应用程序以扩展表单指南（已弃�
 
 ### 编写使用单点登录的客户端应用程序 {#writing-a-client-application-that-uses-single-sign-on}
 
-利用单点登录机制时，您希望用户在启动客户端应用程序之前使用集中式登录服务进行登录。 也就是说，客户端应用程序不会通过浏览器或调用 `ChannelSet.login` 方法。
+利用单点登录机制时，您希望用户在启动客户端应用程序之前使用集中式登录服务进行登录。 也就是说，客户端应用程序不会通过浏览器或通过调用`ChannelSet.login`方法登录。
 
 如果您使用的是AEM Forms单点登录机制，请将Remoting端点配置为使用自定义身份验证，而不是基本身份验证。 否则，在使用基本身份验证时，身份验证错误会导致浏览器质询，您不希望用户看到该质询。 相反，您的应用程序会检测身份验证错误，然后显示一条消息，指示用户使用集中式登录服务登录。
 
-客户端应用程序使用通过远程端点访问AEM Forms `RemoteObject` 组件，如以下示例所示。
+客户端应用程序使用`RemoteObject`组件通过远程端点访问AEM Forms，如以下示例所示。
 
 ```java
  <?xml version="1.0"?>
@@ -522,11 +522,11 @@ AEM Forms开发人员编写客户端应用程序以扩展表单指南（已弃�
 
 在来自客户端应用程序的下一个请求中，AEM Forms检测到Cookie已更改，并注销用户。 因此，Cookie更改后的第一个请求会失败。 所有后续请求都是在新Cookie的上下文中发出的，并且成功。
 
-**注销**
+**正在注销**
 
 要注销AEM Forms并使会话失效，必须从客户端计算机中删除身份验证Cookie。 由于单点登录的目的是允许用户登录一次，因此您不希望客户端应用程序删除Cookie。 此操作会有效地注销用户。
 
-因此，调用 `RemoteObject.logout` 客户端应用程序中的方法会在客户端上生成一条错误消息，指定会话未注销。 相反，用户可以使用集中式登录服务注销并删除身份验证Cookie。
+因此，调用客户端应用程序中的`RemoteObject.logout`方法会在客户端上生成一条错误消息，指定会话未注销。 相反，用户可以使用集中式登录服务注销并删除身份验证Cookie。
 
 **在Flex应用程序仍在运行时注销**
 
@@ -546,15 +546,15 @@ AEM Forms开发人员编写客户端应用程序以扩展表单指南（已弃�
 
 ## 使用远程处理传递安全文档以调用进程 {#passing-secure-documents-to-invoke-processes-using-remoting}
 
-在调用需要一个或多个文档的进程时，您可以将安全文档传递到AEM Forms。 通过传递安全文档，您可以保护业务信息和机密文档。 在这种情况下，文档可以称为PDF文档、XML文档、Word文档等。 如果将AEM Forms配置为允许安全文档，则需要将安全文档从在Flex中编写的客户端应用程序传递到AEM Forms。 (请参阅 [配置AEM Forms以接受安全和不安全的文档](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
+在调用需要一个或多个文档的进程时，您可以将安全文档传递到AEM Forms。 通过传递安全文档，您可以保护业务信息和机密文档。 在这种情况下，文档可以称为PDF文档、XML文档、Word文档等。 如果将AEM Forms配置为允许安全文档，则需要将安全文档从在Flex中编写的客户端应用程序传递到AEM Forms。 (请参阅[将AEM Forms配置为接受安全且不安全的文档](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)。)
 
-AEM传递安全文档时，请使用单点登录并指定具有 *文档上载应用程序用户* 角色。 如果没有此角色，用户将无法上传安全文档。 您可以通过编程方式为用户分配角色。 (请参阅 [管理角色和权限](/help/forms/developing/users.md#managing-roles-and-permissions).)
+传递安全文档时，请使用单点登录并指定具有&#x200B;*文档上载应用程序用户*&#x200B;角色的AEM表单用户。 如果没有此角色，用户将无法上传安全文档。 您可以通过编程方式为用户分配角色。 （请参阅[管理角色和权限](/help/forms/developing/users.md#managing-roles-and-permissions)。）
 
 >[!NOTE]
 >
 在创建角色并希望该角色的成员上载安全文档时，请确保指定“文档上载”权限。
 
-AEM Forms支持一项名为的操作 `getFileUploadToken` 将返回传递给上传servlet的令牌。 此 `DocumentReference.constructRequestForUpload` 方法需要指向AEM Forms的URL以及返回的令牌 `LC.FileUploadAuthenticator.getFileUploadToken` 方法。 此方法会返回 `URLRequest` 在上载servlet的调用中使用的对象。 以下代码演示了此应用程序逻辑。
+AEM Forms支持名为`getFileUploadToken`的操作，该操作返回传递给上传servlet的令牌。 `DocumentReference.constructRequestForUpload`方法需要指向AEM Forms的URL以及`LC.FileUploadAuthenticator.getFileUploadToken`方法返回的令牌。 此方法返回在上载servlet调用中使用的`URLRequest`对象。 以下代码演示了此应用程序逻辑。
 
 ```java
      ...
@@ -614,8 +614,8 @@ AEM Forms支持一项名为的操作 `getFileUploadToken` 将返回传递给上�
 可使用管理控制台指定在将文档从Flex客户端应用程序传递到AEM Forms进程时文档是否安全。 默认情况下，AEM Forms配置为接受安全文档。 您可以通过执行以下步骤，将AEM Forms配置为接受安全文档：
 
 1. 登录到管理控制台。
-1. 单击 **设置**.
-1. 单击 **核心系统设置。**
+1. 单击&#x200B;**设置**。
+1. 单击&#x200B;**核心系统设置。**
 1. 单击Configurations。
 1. 确保取消选中允许从Flex应用程序上传不安全的文档选项。
 
@@ -627,11 +627,11 @@ AEM Forms支持一项名为的操作 `getFileUploadToken` 将返回传递给上�
 
 ### 快速入门：通过使用Remoting传递安全文档来调用短期进程 {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
 
-以下代码示例调用 `MyApplication/EncryptDocument.`用户必须登录才能单击“选择文件”按钮，该按钮用于上载PDF文件并调用进程。 即，用户进行身份验证后，将启用“选择文件”按钮。 下图显示了用户进行身份验证后的Flex客户端应用程序。 请注意，已启用经过身份验证的复选框。
+以下代码示例调用`MyApplication/EncryptDocument.`用户必须登录才能单击“选择文件”按钮，该按钮用于上传PDF文件并调用进程。 即，用户进行身份验证后，将启用“选择文件”按钮。 下图显示了用户进行身份验证后的Flex客户端应用程序。 请注意，已启用经过身份验证的复选框。
 
 ![iu_iu_securemotelogin](assets/iu_iu_secureremotelogin.png)
 
-如果将AEM Forms配置为仅允许上传安全文档，而用户没有 *文档上载应用程序用户* 角色，则会引发异常。 如果用户确实具有此角色，则会上传文件并调用进程。
+如果将AEM Forms配置为仅允许上载安全文档，并且该用户没有&#x200B;*Document Upload Application User*&#x200B;角色，则会引发异常。 如果用户确实具有此角色，则会上传文件并调用进程。
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>
@@ -895,7 +895,7 @@ AEM Forms支持一项名为的操作 `getFileUploadToken` 将返回传递给上�
 
 您可以使用远程处理在自定义组件中调用服务。 例如，考虑包含客户服务的银行组件。 您可以使用在Flex中编写的客户端应用程序调用属于客户服务的操作。 您必须先创建Bank自定义组件，然后才能执行与此部分关联的快速入门。
 
-客户服务将公开一个名为的操作 `createCustomer`. 本讨论介绍如何创建可调用客户服务并创建客户的Flex客户端应用程序。 此操作需要类型复杂的对象 `com.adobe.livecycle.sample.customer.Customer` 代表新客户。 下图显示了调用客户服务并创建新客户的客户端应用程序。 此 `createCustomer` 操作返回客户标识符值。 标识符值显示在“客户标识符”文本框中。
+客户服务公开名为`createCustomer`的操作。 本讨论介绍如何创建可调用客户服务并创建客户的Flex客户端应用程序。 此操作需要代表新客户的类型为`com.adobe.livecycle.sample.customer.Customer`的复杂对象。 下图显示了调用客户服务并创建新客户的客户端应用程序。 `createCustomer`操作返回客户标识符值。 标识符值显示在“客户标识符”文本框中。
 
 ![iu_iu_flexnewcust](assets/iu_iu_flexnewcust.png)
 
@@ -939,20 +939,20 @@ AEM Forms支持一项名为的操作 `getFileUploadToken` 将返回传递给上�
   </tr>
   <tr>
    <td><p>txtCustId</p></td>
-   <td><p>指定新帐户所属的客户标识符值。 此文本框由客户服务的 <code>createCustomer</code> 操作。 </p></td>
+   <td><p>指定新帐户所属的客户标识符值。 此文本框由客户服务<code>createCustomer</code>操作的返回值填充。 </p></td>
   </tr>
  </tbody>
 </table>
 
 ### 映射AEM Forms复杂数据类型 {#mapping-aem-forms-complex-data-types}
 
-某些AEM Forms操作需要复杂的数据类型作为输入值。 这些复杂数据类型定义操作使用的运行时值。 例如，客户服务的 `createCustomer` 操作需要 `Customer` 包含服务所需的运行时值的实例。 如果没有复杂类型，客户服务将引发异常，并且不会执行该操作。
+某些AEM Forms操作需要复杂的数据类型作为输入值。 这些复杂数据类型定义操作使用的运行时值。 例如，客户服务的`createCustomer`操作需要一个包含服务所需的运行时值的`Customer`实例。 如果没有复杂类型，客户服务将引发异常，并且不会执行该操作。
 
 调用AEM Forms服务时，请创建映射到所需AEM Forms复杂类型的ActionScript对象。 对于每个操作所需的复杂数据类型，请创建一个单独的ActionScript对象。
 
-在ActionScript类中，使用 `RemoteClass` 要映射到AEM Forms复杂类型的元数据标记。 例如，调用客户服务的 `createCustomer` 操作，创建映射到的ActionScript类 `com.adobe.livecycle.sample.customer.Customer` 数据类型。
+在ActionScript类中，使用`RemoteClass`元数据标记映射到AEM Forms复杂类型。 例如，在调用客户服务的`createCustomer`操作时，创建映射到`com.adobe.livecycle.sample.customer.Customer`数据类型的ActionScript类。
 
-以下名为“客户”的ActionScript类显示了如何映射到AEM Forms数据类型 `com.adobe.livecycle.sample.customer.Customer`.
+以下名为Customer的ActionScript类显示了如何映射到AEM Forms数据类型`com.adobe.livecycle.sample.customer.Customer`。
 
 ```java
  package customer
@@ -973,7 +973,7 @@ AEM Forms支持一项名为的操作 `getFileUploadToken` 将返回传递给上�
 
 AEM Forms复杂类型的完全限定数据类型将分配给别名标记。
 
-ActionScript类的字段与属于AEM Forms复杂类型的字段匹配。 客户ActionScript类中的六个字段与属于以下类别的字段匹配 `com.adobe.livecycle.sample.customer.Customer`.
+ActionScript类的字段与属于AEM Forms复杂类型的字段匹配。 CustomerActionScript类中的六个字段与属于`com.adobe.livecycle.sample.customer.Customer`的字段匹配。
 
 >[!NOTE]
 >
@@ -985,7 +985,7 @@ CustomerActionScript类属于名为customer的包。 建议您将映射到复杂
 
 ### 快速入门：使用Remoting调用客户自定义服务 {#quick-start-invoking-the-customer-custom-service-using-remoting}
 
-以下代码示例调用Customer service并创建客户。 运行此代码示例时，请确保填写所有文本框。 此外，请确保您创建了映射到以下位置的Customer.as文件 `com.adobe.livecycle.sample.customer.Customer`.
+以下代码示例调用Customer service并创建客户。 运行此代码示例时，请确保填写所有文本框。 另外，请确保创建映射到`com.adobe.livecycle.sample.customer.Customer`的Customer.as文件。
 
 >[!NOTE]
 >
@@ -1182,7 +1182,7 @@ CustomerActionScript类属于名为customer的包。 建议您将映射到复杂
 
 **样式表**
 
-此快速入门包含一个名为的样式表 *bank.css*. 以下代码表示所使用的样式表。
+此快速入门包含一个名为&#x200B;*bank.css*&#x200B;的样式表。 以下代码表示所使用的样式表。
 
 ```css
  /* CSS file */

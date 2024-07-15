@@ -26,35 +26,35 @@ ht-degree: 0%
 文档的此部分描述
 
 * 将日历功能添加到AEM站点
-* 配置设置 `Calendar` 组件
+* `Calendar`组件的配置设置
 
 ## 向页面添加日历 {#adding-a-calendar-to-a-page}
 
-添加 `Calendar` 组件到创作模式下的页面，请使用组件浏览器查找
+要将`Calendar`组件添加到创作模式下的页面，请使用组件浏览器来查找
 
 * `Communities / Calendar`
 
 并将其拖动到页面上的适当位置，例如相对于要供用户查看的功能的位置。
 
-有关必要信息，请访问 [社区组件基础知识](/help/communities/basics.md).
+有关必要的信息，请访问[社区组件基础知识](/help/communities/basics.md)。
 
-当 [所需的客户端库](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side) 包括，这就是 `Calendar` 组件出现。
+当包含[所需的客户端库](/help/communities/calendar-basics-for-developers.md#essentials-for-client-side)时，`Calendar`组件的显示方式如下所示。
 
 ![日历组件](assets/calendar-component.png)
 
 ### 配置日历 {#configuring-calendar}
 
-选择已放置的 `Calendar` 组件，以便您能够访问和选择 `Configure` 图标打开“编辑”对话框。
+选择放置的`Calendar`组件，以便您可以访问并选择用于打开“编辑”对话框的`Configure`图标。
 
 ![配置](assets/configure-new.png)
 
-![configure-calendar](assets/configure-calendar1.png)
+![配置 — 日历](assets/configure-calendar1.png)
 
 #### “设置”选项卡 {#settings-tab}
 
-在 **设置** 选项卡，指定是否允许将标记应用于日历条目。
+在&#x200B;**设置**&#x200B;选项卡下，指定是否允许将标记应用于日历条目。
 
-* **每页事件数**
+* 每页&#x200B;**个事件**
 
   定义每页显示的事件数。 默认值为10。
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 * **允许标记**
 
-  如果选中，则允许成员向其发布的事件添加标记标签(请参阅 **标记字段** 选项卡)。 默认值为选中。
+  如果选中，则允许成员向其发布的事件添加标记标签（请参阅&#x200B;**标记字段**&#x200B;选项卡）。 默认值为选中。
 
 * **允许文件上传**
 
@@ -84,25 +84,25 @@ ht-degree: 0%
 
 * **最大文件大小**
 
-  相关条件仅限于 `Allow File Uploads` 已选中。 此字段限制已上传文件的大小（以字节为单位）。 默认值为104857600 (10 Mb)。
+  仅在选中`Allow File Uploads`时才相关。 此字段限制已上传文件的大小（以字节为单位）。 默认值为104857600 (10 Mb)。
 
 * **允许的文件类型**
 
-  相关条件仅限于 `Allow File Uploads` 已选中。 包含“点”分隔符的逗号分隔文件扩展名列表。 例如，.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何文件类型，则无法上载未指定的文件类型。 默认值为无指定以便允许所有文件类型。
+  仅在选中`Allow File Uploads`时才相关。 包含“点”分隔符的逗号分隔文件扩展名列表。 例如，.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何文件类型，则无法上载未指定的文件类型。 默认值为无指定以便允许所有文件类型。
 
-* **附加图像文件最大大小**
+* **附加图像文件大小上限**
 
   仅在选中允许文件上传时才相关。 上传的图像文件可以包含的最大字节数。 默认值为2097152** **(2 Mb)。
 
 * **允许的封面图像类型**
 
-  以“点”分隔符分隔的图像文件扩展名列表。 默认为 `.jpg,.jpeg,.png,.gif,.bmp`.
+  以“点”分隔符分隔的图像文件扩展名列表。 默认值为`.jpg,.jpeg,.png,.gif,.bmp`。
 
-* **允许主题回复**
+* **允许线程回复**
 
   如果选中，则允许对发布到日历事件的评论进行回复。 默认值为选中。
 
-* **允许用户删除评论和事件**
+* **允许用户删除评论和活动**
 
   如果选中，则允许成员删除他们发布的评论和日历事件。 默认值为选中。
 
@@ -118,11 +118,11 @@ ht-degree: 0%
 
   定义添加到当前日期的天数，以计算日历事件列表页面过滤器的“到”值。 默认数字为30。
 
-* **允许专题内容**
+* **允许精选内容**
 
-  如果选中，该创意可识别为 [专题内容](/help/communities/featured.md). 默认值为未选中。
+  如果选中，该创意可标识为[精选内容](/help/communities/featured.md)。 默认值为未选中。
 
-在 **用户审核** 选项卡，指定如何管理发布的主题和回复（用户生成的内容）。 有关更多信息，请参阅 [审核用户生成的内容](/help/communities/moderate-ugc.md).
+在&#x200B;**用户审核**&#x200B;选项卡下，指定如何管理发布的主题和回复（用户生成的内容）。 有关详细信息，请参阅[审核用户生成的内容](/help/communities/moderate-ugc.md)。
 
 #### “用户审核”选项卡 {#user-moderation-tab}
 
@@ -142,7 +142,7 @@ ht-degree: 0%
 
   如果选中，则允许成员从下拉列表中选择将事件或评论标记为不适当的原因。 默认值为未选中。
 
-* **自定义标志原因**
+* **自定义标记原因**
 
   如果选中，则允许成员输入他们自己的将事件或评论标记为不适当的原因。 默认值为未选中。
 
@@ -156,11 +156,11 @@ ht-degree: 0%
 
 #### “标记字段”选项卡 {#tag-field-tab}
 
-在 **标记字段** 选项卡中，如果下的允许，则可能应用的标记 **设置** 选项卡，将根据选择的命名空间进行限制。
+在&#x200B;**标记字段**&#x200B;选项卡下，如果允许在&#x200B;**设置**&#x200B;选项卡下应用，则可能应用的标记将根据所选的命名空间而受限。
 
 * **允许的命名空间**
 
-  相关，如果 `Allow Tagging` 已检查 **设置** 选项卡。 可以应用的标记仅限于所选命名空间类别中的标记。 命名空间列表包括“标准标记”（默认命名空间）和“包括所有标记”。 默认设置为“无”复选框，这意味着允许使用所有命名空间。
+  如果在&#x200B;**设置**&#x200B;选项卡下选中`Allow Tagging`，则相关。 可以应用的标记仅限于所选命名空间类别中的标记。 命名空间列表包括“标准标记”（默认命名空间）和“包括所有标记”。 默认设置为“无”复选框，这意味着允许使用所有命名空间。
 
 * **建议限制**
 
@@ -168,11 +168,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->访问 [管理标记](/help/sites-administering/tags.md) 在这里，您可以了解如何添加标记命名空间（分类）。
+>访问[管理标记](/help/sites-administering/tags.md)，了解如何添加标记命名空间（分类）。
 
 #### “翻译”选项卡 {#translation-tab}
 
-在 **翻译** 选项卡，如果为社区站点启用了翻译，则可以将翻译设置为翻译整个线程（事件和评论）而不是特定帖子。
+在&#x200B;**翻译**&#x200B;选项卡下，如果为社区站点启用了翻译，则可以将翻译设置为翻译整个线程（事件和评论）而不是特定帖子。
 
 * **全部翻译**
 
@@ -188,25 +188,25 @@ ht-degree: 0%
 
 ### 审查方和管理员 {#moderators-and-administrators}
 
-当登录用户具有版主或管理员权限时，他们能够执行 [审核任务](/help/communities/moderate-ugc.md) （在组件配置允许的情况下）对于发布到事件的所有日历事件和评论。
+当登录用户具有审阅人或管理员权限时，他们能够对发布到事件的所有日历事件和评论执行[审阅任务](/help/communities/moderate-ugc.md)（组件配置所允许）。
 
 ![审查方 — 视图](assets/moderators-view.png)
 
 #### 成员 {#members}
 
-当登录用户是社区成员或 [特权成员](/help/communities/users.md#privileged-members-group) （根据配置），他们能够选择 `New Event` 创建和发布新的日历事件。
+当登录用户是社区成员或[特权成员](/help/communities/users.md#privileged-members-group)（取决于配置）时，他们能够选择`New Event`以创建和发布新的日历事件。
 
 具体而言，他们可以：
 
 * 创建日历事件
-* 将评论发布到日历事件
+* Post日历事件的评论
 * 编辑他们自己的日历事件或评论
 * 删除他们自己的日历事件或评论
 * 标记其他人的日历事件或评论
 
 ![create-event](assets/configure-calendar2.png)
 
-![event-post](assets/configure-calendar3.png)
+![事件帖子](assets/configure-calendar3.png)
 
 #### 匿名 {#anonymous}
 
@@ -216,10 +216,10 @@ ht-degree: 0%
 
 ## 附加信息 {#additional-information}
 
-欲知更多信息，请访问 [日历要点](/help/communities/calendar-basics-for-developers.md) 适用于开发人员的页面。
+可在面向开发人员的[Calendar Essentials](/help/communities/calendar-basics-for-developers.md)页面上找到更多信息。
 
-有关日历活动和注释的审核，请参阅 [审核用户生成的内容](/help/communities/moderate-ugc.md).
+有关审核日历事件和评论的信息，请参阅[审核用户生成的内容](/help/communities/moderate-ugc.md)。
 
-有关标记日历事件和注释，请参阅 [标记用户生成的内容](/help/communities/tag-ugc.md).
+有关标记日历事件和评论的信息，请参阅[标记用户生成的内容](/help/communities/tag-ugc.md)。
 
-有关日历事件和注释的翻译，请参阅 [翻译用户生成的内容](/help/communities/translate-ugc.md).
+有关日历事件和注释的翻译，请参阅[翻译用户生成的内容](/help/communities/translate-ugc.md)。

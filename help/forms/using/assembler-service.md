@@ -18,7 +18,7 @@ ht-degree: 6%
 
 # 使用汇编程序服务{#using-assembler-service}
 
-Assembler服务允许您组合、重新排列和增加PDF和XDP文档，并获取有关PDF文档的信息。 提交给Assembler服务的每个作业包括Document Description XML (DDX)文档、源文档和外部资源（字符串和图形）。 有关汇编程序服务的详细信息，请参见 [汇编程序服务概述](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
+Assembler服务允许您组合、重新排列和增加PDF和XDP文档，并获取有关PDF文档的信息。 提交给Assembler服务的每个作业包括Document Description XML (DDX)文档、源文档和外部资源（字符串和图形）。 有关汇编程序服务的详细信息，请参阅[汇编程序服务概述](../../forms/using/overview-aem-document-services.md#p-assembler-service-p)。
 
 您可以将Assemble服务用于以下操作：
 
@@ -149,11 +149,11 @@ Assembler服务可以创建包含文档集合和自含用户界面的PDFPortfoli
   </tr> 
   <tr> 
    <td>相对</td> 
-   <td>在源XDP中嵌入通过相对引用引用的所有图像<br /> 文档。</td> 
+   <td>在源XDP<br />文档中嵌入通过相对引用引用的所有图像。</td> 
   </tr> 
   <tr> 
    <td>绝对</td> 
-   <td>在源XDP中嵌入通过绝对引用引用的所有图像<br /> 文档。</td> 
+   <td>在源XDP<br />文档中嵌入通过绝对引用引用的所有图像。</td> 
   </tr> 
  </tbody> 
 </table>
@@ -223,7 +223,7 @@ fragment="myFragment"/>
 
 支持动态插入表单片段支持单一源代码控制。 您可以维护常用组件的单一来源。 例如，您可以为公司横幅创建片段。 如果横幅发生更改，您只需修改片段。 包含片段的其他表单保持不变。
 
-表单设计器使用LiveCycle设计器创建表单片段。 这些片段是XFA表单中唯一命名的子表单。 表单设计器还使用设计器创建具有唯一名称插入点的XFA表单。 您（程序员）编写DDX文档来指定如何将片段插入XFA表单。
+表单设计器使用LiveCycleDesigner创建表单片段。 这些片段是XFA表单中唯一命名的子表单。 表单设计器还使用Designer创建具有唯一名称插入点的XFA表单。 您（程序员）编写DDX文档来指定如何将片段插入XFA表单。
 
 下图显示了两个XML表单（XFA模板）。 左侧的表单包含一个名为myInsertionPoint的插入点。 右侧的表单包含一个名为myFragment的片段。
 
@@ -328,7 +328,7 @@ source="myFragmentSource"/>
 
 **Reader扩展服务**：使Adobe Reader用户能够对生成的PDF文档进行数字签名。
 
-**Forms服务**：合并XDP文件和XML数据文件以生成包含已填充交互式表单的PDF文档。
+**Forms服务**：合并XDP文件和XML数据文件以生成包含已填写的交互式表单的PDF文档。
 
 **输出服务**：将动态XML表单转换为包含非交互式表单的PDF文档（拼合表单）。 Assembler服务拼合静态XML表单和Acrobat表单，而不调用Output服务。
 

@@ -20,13 +20,13 @@ ht-degree: 7%
 
 ## AEM Communities {#aem-communities}
 
-对于AEM Communities，必须配置Dispatcher以确保正常运行 [社区站点](overview.md#community-sites). 在包含社交登录等功能时，需要额外的配置。
+对于AEM Communities，必须配置Dispatcher以确保[社区站点](overview.md#community-sites)正常运行。 在包含社交登录等功能时，需要额外的配置。
 
 了解您的特定部署和站点设计所需的内容
 
 * 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)
 
-另请参阅主要的 [Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html).
+另请参阅主[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
 
 ## Dispatcher缓存 {#dispatcher-caching}
 
@@ -36,13 +36,13 @@ AEM Communities的Dispatcher缓存让Dispatcher能够为社区站点的页面提
 
 目前，它仅支持匿名网站访客，例如浏览社区网站或因搜索而登陆社区页面的用户，以及索引页面的搜索引擎。 这样做的好处是，匿名用户和搜索引擎可以体验到改进的性能。
 
-对于已登录的成员，Dispatcher会绕过缓存，将请求直接转发给发布者，以便动态生成并交付所有页面。
+对于已登录的成员，Dispatcher会绕过缓存，直接将请求转给发布者，以便动态生成并交付所有页面。
 
-在配置为支持Dispatcher缓存时，会向标头添加基于TTL的“最大期限”过期时间，以确保Dispatcher缓存的页面是最新的。
+在配置为支持Dispatcher缓存时，会向标头添加基于TTL的“最大期限”过期时间，以确保Dispatcher缓存的页面为最新页面。
 
 ### 要求 {#requirements}
 
-* Dispatcher版本4.1.2或更高版本(请参阅 [安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html) （适用于最新版本）
+* Dispatcher版本4.1.2或更高版本(有关最新版本，请参阅[安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html))
 * [ACS AEM Commons包](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 版本3.3.2或更高版本
@@ -50,32 +50,32 @@ AEM Communities的Dispatcher缓存让Dispatcher能够为社区站点的页面提
 
 ### 配置 {#configuration}
 
-OSGi配置 **ACS AEM Commons - Dispatcher缓存控制标头 — 最大保留时间** 设置显示在指定路径下的缓存页面的过期时间。
+OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**&#x200B;设置出现在指定路径下的缓存页面的过期时间。
 
-* 从 [Web控制台](../../help/sites-deploying/configuring-osgi.md).
+* 从[Web控制台](../../help/sites-deploying/configuring-osgi.md)。
 
-   * 例如， [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+   * 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
-* 定位 `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
+* 找到`ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * 选择“+”图标以创建连接配置。
 
-  ![dispatcher](assets/dispatcher.png)
+  ![调度程序](assets/dispatcher.png)
 
 * **筛选模式**
-  *（必填）* 社区页面的一个或多个路径。 例如：`/content/sites/engage/(.*)`。
+  *（必需）*&#x200B;一条或多条指向社区页面的路径。 例如：`/content/sites/engage/(.*)`。
 
-* **Cache-Control最长使用时间**
-  *（必填）* 添加到Cache Control标头的最长时间（以秒为单位）。 该值必须大于零(0)。
+* **Cache-Control最大保留时间**
+  *（必需）*&#x200B;要添加到Cache Control标头的最长时间（以秒为单位）。 该值必须大于零(0)。
 
-## Dispatcher过滤器 {#dispatcher-filters}
+## Dispatcher筛选器 {#dispatcher-filters}
 
-的/filter部分 `dispatcher.any` 文件记录于 [配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html).
+`dispatcher.any`文件的/filter部分记录在[配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)中。
 
 本节介绍社区功能正常运行可能需要的条目。
 
 过滤器属性名称遵循使用四位数字表示应用过滤器模式的顺序的约定。 对一个请求应用了多个过滤模式时，最后一个应用的过滤模式生效。 因此，第一个过滤模式通常用于拒绝所有内容，使得以下模式用于以受控方式恢复访问。
 
-以下示例使用的属性名称可能必须修改以适合任何特定情况 `dispatcher.any` 文件。
+以下示例使用的属性名称可能必须修改以适合任何特定的`dispatcher.any`文件。
 
 另请参阅：
 
@@ -84,7 +84,7 @@ OSGi配置 **ACS AEM Commons - Dispatcher缓存控制标头 — 最大保留时�
 >[!NOTE]
 >
 >**属性名称示例**
->显示的所有属性名称，例如 **/0050** 和 **/0170**，应该进行调整以适合现有的 `dispatcher.any` 配置文件。
+>显示的所有属性名称（如&#x200B;**/0050**&#x200B;和&#x200B;**/0170**）都应调整为适合现有的`dispatcher.any`配置文件。
 >
 
 >[!CAUTION]
@@ -224,7 +224,7 @@ OSGi配置 **ACS AEM Commons - Dispatcher缓存控制标头 — 最大保留时�
 
 ## Dispatcher规则 {#dispatcher-rules}
 
-的规则部分 `dispatcher.any` 定义应根据请求的URL缓存哪些响应。 对于社区，规则部分用于定义绝不应缓存的内容。
+`dispatcher.any`的规则部分定义根据所请求的URL应缓存哪些响应。 对于社区，规则部分用于定义绝不应缓存的内容。
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -278,7 +278,7 @@ OSGi配置 **ACS AEM Commons - Dispatcher缓存控制标头 — 最大保留时�
 
 ## 示例dispatcher.any {#sample-dispatcher-any}
 
-以下是示例 `dispatcher.any` 包含Communities /filters和/rules的文件。
+以下是包含Communities /filters和/rules的示例`dispatcher.any`文件。
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->

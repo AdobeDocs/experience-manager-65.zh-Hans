@@ -21,7 +21,7 @@ ht-degree: 2%
 
 AEM Communities允许企业从站点模板库创建专用的品牌社区体验。 论坛、群组、博客、文件共享、日历、活动信息源以及扩展的用户配置文件可以集成到您的网站中，以促进主题、客户和公司之间的交互。
 
-以下是关于快速设置 [参与社区](/help/communities/overview.md#engagement-community) 用于演示或开发目的。
+以下教程介绍如何快速设置[参与社区](/help/communities/overview.md#engagement-community)以进行演示或开发。
 
 * [初始设置](/help/communities/setup.md)
 

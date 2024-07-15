@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ### 使用getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-以下API根据查询对象（已提交和草稿）查找书信实例。 如果查询对象为null，则返回所有信件实例。 此API返回列表 [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) 对象，可用于提取信件实例的附加信息。
+以下API根据查询对象（已提交和草稿）查找书信实例。 如果查询对象为null，则返回所有信件实例。 此API返回[LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html)对象的列表，该列表可用于提取信件实例的附加信息。
 
 **语法**： `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -59,7 +59,7 @@ ht-degree: 1%
 
 #### 示例1：提取SUBMITTED类型的所有信件实例 {#example-fetch-all-the-letter-instances-of-type-submitted}
 
-以下代码返回已提交书信实例的列表。 要仅获取草稿，请更改 `LetterInstanceType.COMPLETE.name()` 到 `LetterInstanceType.DRAFT.name().`
+以下代码返回已提交书信实例的列表。 要仅获取草稿，请将`LetterInstanceType.COMPLETE.name()`更改为`LetterInstanceType.DRAFT.name().`
 
 ```java
 @Reference

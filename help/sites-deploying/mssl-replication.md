@@ -25,10 +25,10 @@ ht-degree: 3%
 1. 为创作实例和发布实例创建或获取私钥和证书。
 1. 在创作实例和发布实例上安装密钥和证书：
 
-   * 作者：作者的私钥和发布的证书。
-   * 发布：发布的私钥和作者的证书。 证书与通过复制代理验证的用户帐户相关联。
+   * 作者：作者的私钥和Publish的证书。
+   * 发布：Publish的私钥和作者的证书。 证书与通过复制代理验证的用户帐户相关联。
 
-1. 在发布实例上配置基于Jetty的HTTP服务。
+1. 在Publish实例上配置基于Jetty的HTTP服务
 1. 配置复制代理的传输和SSL属性。
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
@@ -45,9 +45,9 @@ ht-degree: 3%
 
 ### JKS格式 {#jks-format}
 
-以JKS格式生成私钥和证书。 私钥存储在KeyStore文件中，证书存储在TrustStore文件中。 使用 [Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html) 以创建两者。
+以JKS格式生成私钥和证书。 私钥存储在KeyStore文件中，证书存储在TrustStore文件中。 使用[Java `keytool`](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/keytool.html)创建这两者。
 
-使用Java执行以下步骤 `keytool` 要创建私钥和凭据，请执行以下操作：
+使用Java `keytool`执行以下步骤以创建私钥和凭据：
 
 1. 在KeyStore中生成私钥 — 公钥对。
 1. 创建或获取证书：
@@ -84,7 +84,7 @@ ht-degree: 3%
 
 ### pkcs#12格式 {#pkcs-format}
 
-以pkcs#12格式生成私钥和证书。 使用 [openSSL](https://www.openssl.org/) 来生成它们。 使用以下过程可生成私钥和证书请求。 要获取证书，请使用私钥（自签名证书）签署请求或将请求发送到CA。 然后，生成包含私钥和证书的pkcs#12档案。
+以pkcs#12格式生成私钥和证书。 使用[openSSL](https://www.openssl.org/)生成它们。 使用以下过程可生成私钥和证书请求。 要获取证书，请使用私钥（自签名证书）签署请求或将请求发送到CA。 然后，生成包含私钥和证书的pkcs#12档案。
 
 1. 打开命令行窗口或终端。 要创建私钥，请使用下表中的选项值输入以下命令：
 
@@ -162,7 +162,7 @@ ht-degree: 3%
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### 安装发布证书 {#install-the-publish-certificate}
+### 安装Publish证书 {#install-the-publish-certificate}
 
 1. 打开创作实例的“用户管理”页面。 ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. 要打开用户帐户的属性，请单击您的用户名。
@@ -177,7 +177,7 @@ ht-degree: 3%
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## 在发布时安装私钥和TrustStore {#install-private-key-and-truststore-on-publish}
+## 在Publish上安装私钥和TrustStore {#install-private-key-and-truststore-on-publish}
 
 在发布实例上安装以下项目：
 
@@ -186,7 +186,7 @@ ht-degree: 3%
 
 要执行以下过程，您必须以发布实例管理员身份登录。
 
-### 安装发布私钥 {#install-the-publish-private-key}
+### 安装Publish私钥 {#install-the-publish-private-key}
 
 1. 打开发布实例的“用户管理”页面。 ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. 要打开用户帐户的属性，请单击您的用户名。
@@ -206,9 +206,9 @@ ht-degree: 3%
 1. 确保选中将证书映射到用户选项。 单击“选择证书文件”，选择“author.cer”，然后单击“打开”。
 1. 单击“提交”，然后关闭“TrustStore管理”对话框。
 
-## 在发布时配置HTTP服务 {#configure-the-http-service-on-publish}
+## 在Publish上配置HTTP服务 {#configure-the-http-service-on-publish}
 
-在发布实例上配置基于Apache Felix Jetty的HTTP服务的属性，以便在访问Granite Keystore时使用该服务。 服务的PID为 `org.apache.felix.http`.
+在发布实例上配置基于Apache Felix Jetty的HTTP服务的属性，以便在访问Granite Keystore时使用该服务。 服务的PID为`org.apache.felix.http`。
 
 下表列出了配置是否使用Web控制台时需要配置的OSGi属性。
 
@@ -221,7 +221,7 @@ ht-degree: 3%
 
 ## 在创作实例上配置复制代理 {#configure-the-replication-agent-on-author}
 
-将创作实例上的复制代理配置为在连接到发布实例时使用HTTPS协议。 有关配置复制代理的完整信息，请参阅 [配置复制代理](/help/sites-deploying/replication.md#configuring-your-replication-agents).
+将创作实例上的复制代理配置为在连接到发布实例时使用HTTPS协议。 有关配置复制代理的完整信息，请参阅[配置复制代理](/help/sites-deploying/replication.md#configuring-your-replication-agents)。
 
 要启用MSSL，请根据下表配置“传输”选项卡上的属性：
 

@@ -19,11 +19,11 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->[联系支持人员](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) 以获取详细信息或获取修补程序。
+>[联系支持人员](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)以获取详细信息或获取修补程序。
 
 ## 关于修补程序安装程序 {#about-the-patch-installer}
 
-AEM 6.5 Forms JEE修补程序安装程序包含在此修补程序发布之前可用的AEM 6.5 Forms JEE所有组件的所有已修复问题。 查看最新信息  [Service Pack发行说明](release-notes.md) 以获取已修复问题的完整列表。
+AEM 6.5 Forms JEE修补程序安装程序包含在此修补程序发布之前可用的AEM 6.5 Forms JEE所有组件的所有已修复问题。 有关已修复问题的完整列表，请参阅最新的[Service Pack发行说明](release-notes.md)。
 
 ## 安装补丁程序的先决条件 {#prerequisites-to-installing-the-patch}
 
@@ -31,7 +31,7 @@ AEM 6.5 Forms JEE修补程序安装程序包含在此修补程序发布之前可
 
 ## 安装和配置修补程序 {#installing-and-configuring-the-patch}
 
-1. 备份&lt;*AEM_forms_root*>/部署文件夹。 如果您决定卸载快速修补程序，则必须执行此操作。
+1. 备份&lt;*AEM_forms_root*>/deploy文件夹。 如果您决定卸载快速修补程序，则必须执行此操作。
 1. 停止应用程序服务器。
 1. 将补丁安装程序存档文件提取到硬盘驱动器。
 1. 在根据您所使用的操作系统命名的目录中：
@@ -43,40 +43,40 @@ AEM 6.5 Forms JEE修补程序安装程序包含在此修补程序发布之前可
       * （Windows 64位） `Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-导航到相应的目录，然后在命令提示符下键入 `./aem65_cfp_install.bin`.
+导航到相应的目录，然后在命令提示符下键入`./aem65_cfp_install.bin`。
 
       * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    这会启动安装向导，引导您完成安装。
 
 1. 在“Introduction”面板上，单击 **[!UICONTROL Next]**。
-1. 在 **选择安装文件夹** 屏幕，验证显示的默认位置对于您的现有安装是否正确，或者单击 **[!UICONTROL 浏览]** 选择安装AEM表单的备用文件夹，然后单击 **[!UICONTROL 下一个]**.
+1. 在&#x200B;**选择安装文件夹**&#x200B;屏幕上，验证显示的默认位置对于您的现有安装是否正确，或者单击&#x200B;**[!UICONTROL 浏览]**&#x200B;以选择安装AEM表单的备用文件夹，然后单击&#x200B;**[!UICONTROL 下一步]**。
 1. 阅读“Quick Fix Patch Summary”信息，然后单击 **[!UICONTROL Next]**。
 1. 阅读“Pre-Installation Summary”信息，然后单击 **[!UICONTROL Install]**。
 1. 安装完成后，单击 **[!UICONTROL Next]** 以将快速修补程序更新应用到已安装的文件。
 
-1. **[仅适用于Windows]：** 执行以下操作：
-   * 取消选择 **启动Configuration Manager** 选项，然后再单击 **[!UICONTROL 完成]**. 运行 **配置管理器** 通过使用 **ConfigurationManager.bat** 文件位置 `[aem-forms root]\configurationManager\bin`.
+1. **[仅适用于Windows]：**&#x200B;执行以下操作：
+   * 在单击&#x200B;**[!UICONTROL 完成]**&#x200B;之前，请取消选择&#x200B;**Start Configuration Manager**&#x200B;选项。 在`[aem-forms root]\configurationManager\bin`中使用&#x200B;**ConfigurationManager.bat**&#x200B;文件运行&#x200B;**Configuration Manager**。
 
-   * 或者取消选择 **启动Configuration Manager** 选项，然后再单击 **[!UICONTROL 完成]**. 运行之前 **配置管理器** 使用 **Configurationmanager.exe** 或 **ConfigurationManager_IPv6.exe**，导航到 *`<AEMForms_Install_Dir>\configurationManager\bin`* 目录并替换 **配置管理器.lax** 和 **ConfigurationManager_IPV6.lax** 使用最新的 [配置管理器.lax](/help/assets/ConfigurationManager.lax) 和 [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) 文件、搜索和替换 **axis-1.4.1.1.jar** 替换为 **axis-1.4.1.2.jar** 在这两个文件中。
+   * 或者取消选择&#x200B;**Start Configuration Manager**&#x200B;选项，然后再单击&#x200B;**[!UICONTROL 完成]**。 在使用&#x200B;**ConfigurationManager.exe**&#x200B;或&#x200B;**ConfigurationManager_IPv6.exe**&#x200B;运行&#x200B;**Configuration Manager**&#x200B;之前，导航到&#x200B;*`<AEMForms_Install_Dir>\configurationManager\bin`*&#x200B;目录，并用最新的[ConfigurationManager.lax](/help/assets/ConfigurationManager.lax)和[ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax)文件替换&#x200B;**ConfigurationManager.lax**&#x200B;和&#x200B;**ConfigurationManager_IPV6.LAX**。这两个文件中包含&#x200B;**AXIS-1.4.1.2.JAR**&#x200B;的1.1.JAR **。**
 
    >[!NOTE]
    >
-   >使用 **ConfigurationManager.bat** 文件可帮助您避免手动更新.lax文件的名称。
+   >使用&#x200B;**ConfigurationManager.bat**&#x200B;文件有助于避免手动更新.lax文件的名称。
    >
 
-1. **[仅适用于基于Unix的]：**
+1. **[仅基于Unix]：**
 
-   * 此 **启动Configuration Manager** 复选框默认处于选中状态。 单击 **[!UICONTROL 完成]** 立即运行配置管理器或运行 **配置管理器** 稍后，取消选择 **启动Configuration Manager** 选项，然后再单击 **[!UICONTROL 完成]**. 您可以开始 **配置管理器** 稍后使用中的相应脚本 `[AEM_forms_root]/configurationManager/bin` 目录。
+   * 默认情况下，**启动配置管理器**&#x200B;复选框处于选中状态。 单击&#x200B;**[!UICONTROL 完成]**&#x200B;以立即运行配置管理器，或稍后运行&#x200B;**配置管理器**，取消选择&#x200B;**启动配置管理器**&#x200B;选项，然后再单击&#x200B;**[!UICONTROL 完成]**。 稍后可以使用`[AEM_forms_root]/configurationManager/bin`目录中的相应脚本启动&#x200B;**配置管理器**。
 
-1. 根据您的应用程序服务器，选择以下文档之一，然后按照 *配置和部署AEM表单* 部分。
+1. 根据您的应用程序服务器，选择以下文档之一，然后按照&#x200B;*配置和部署AEM表单*&#x200B;部分中的说明操作。
 
    * [安装和部署AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [安装和部署AEM forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [安装和部署AEM Forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. (仅限JBoss®)安装修补程序并配置服务器后，删除JBoss®应用程序服务器的tmp和工作目录。
 
-## 部署后配置 {#post-deployment-configurations}
+## Post部署配置 {#post-deployment-configurations}
 
 ### SAML配置 {#saml-configurations}
 

@@ -16,7 +16,7 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->Adobe客户使用 [Adobe Developer控制台](https://developer.adobe.com/console) 生成凭据以启用对各种API的访问。 客户可选择从 OAuth 服务器到服务器到单页应用程序的多种凭据类型。凭据类型服务帐户(JWT)现已弃用，推荐使用Service Pack 20的OAuth服务器到服务器凭据。 此更改可以重新移植到旧版Service Pack，从Service Pack 11开始直到Service Pack 20，并使用您可以下载的修补程序 [此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip).
+>Adobe客户使用[Adobe Developer Console](https://developer.adobe.com/console)生成凭据以启用对各种API的访问。 客户可选择从 OAuth 服务器到服务器到单页应用程序的多种凭据类型。凭据类型服务帐户(JWT)现已弃用，推荐使用Service Pack 20的OAuth服务器到服务器凭据。 此更改可以重新移植到旧版Service Pack，从Service Pack 11开始一直到Service Pack 20，并使用修补程序下载[此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/ims-jwt-compatibility-package-6.5-1.0.zip)。
 
 Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例如，Adobe Target、Adobe Analytics 等。
 
@@ -40,9 +40,9 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
 ## Developer Console 中的凭据 {#credentials-in-the-developer-console}
 
-第一步，您必须在Adobe Developer控制台中配置OAuth凭据。
+第一步，您必须在Adobe Developer Console中配置OAuth凭据。
 
-有关如何执行此配置的详细信息，请参阅开发人员控制台文档，具体取决于您的要求：
+有关如何执行此配置的详细信息，请参阅Developer Console文档，具体取决于您的要求：
 
 * 概述：
 
@@ -103,4 +103,4 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
    ![填写 OAuth 详细信息](assets/ims-migrate-jwt-complete-oauth-details.png)
 
 1. 使用&#x200B;**保存并关闭**来保存您的更新。
-当您返回到控制台时， **JWT凭据（已弃用）** 警告已消失。
+返回控制台时，**JWT凭据（已弃用）**&#x200B;警告消失。

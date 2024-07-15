@@ -14,7 +14,7 @@ ht-degree: 83%
 
 # 使用 AEM 对 Headless 进行内容建模 – 简介 {#architect-headless-introduction}
 
-在这部分中 [AEM Headless内容架构师历程](overview.md)中，您可以了解为使用Adobe Experience Manager (AEM)交付headless内容而建模的内容所必需的（基本）概念和术语。
+在[AEM Headless内容架构师历程](overview.md)的这一部分中，您可以了解了解使用Adobe Experience Manager (AEM)进行Headless内容投放的内容建模所必需的（基本）概念和术语。
 
 本文档可帮助您了解 Headless 内容交付、AEM 支持 Headless 的方式以及如何对 Headless 进行内容建模。阅读本文档后，您应：
 

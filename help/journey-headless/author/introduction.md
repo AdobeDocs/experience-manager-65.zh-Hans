@@ -14,7 +14,7 @@ ht-degree: 87%
 
 # 使用 AEM 为 Headless 创作 – 简介 {#author-headless-introduction}
 
-在这部分中 [AEM Headless内容创作历程](overview.md)中，您可以了解使用Adobe Experience Manager (AEM)交付headless内容所需的创作内容的（基本）概念和术语。
+在[AEM Headless内容创作历程](overview.md)的这一可选部分中，您可以学习必要的（基本）概念和术语，以了解如何通过Adobe Experience Manager (AEM)为Headless内容投放创作内容。
 
 ## 目标 {#objective}
 

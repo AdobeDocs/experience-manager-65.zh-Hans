@@ -23,7 +23,7 @@ ht-degree: 8%
 使用Dynamic Media，您有多个选项：
 
 * 如果您的网站托管在Adobe Experience Manager上，那么您希望直接将Dynamic Media资源添加到您的页面。
-* 如果您的网站不在Experience Manager中，请参阅 [投放Dynamic Media资源](/help/assets/delivering-dynamic-media-assets.md) （在启用了触屏操作的用户界面中）。
+* 如果您的网站未在Experience Manager上，请参阅已启用触控功能的用户界面中的[交付Dynamic Media资产](/help/assets/delivering-dynamic-media-assets.md)。
 
 有关更多信息，请参阅以下主题：
 

@@ -45,17 +45,17 @@ ht-degree: 58%
 * [为Adobe Analytics配置视频跟踪](/help/sites-administering/adobeanalytics-video.md)
 * [Adobe分类](/help/sites-administering/adobeanalytics-classifications.md)
 
-您也可以使用 [选择加入向导](/help/sites-administering/opt-in.md) 以轻松执行集成。
+您还可以使用[选择加入向导](/help/sites-administering/opt-in.md)轻松执行集成。
 
 >[!NOTE]
 >
->另请参阅操作方法文章： [使用DTM将AEM与Adobe Target和Adobe Analytics集成](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>另请参阅操作方法文章：[使用DTM将AEM与Adobe Target和Adobe Analytics集成](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)。
 
 ## 更多信息 {#further-information}
 
 请参阅：
 
-* [扩展Adobe Analytics集成](/help/sites-developing/extending-analytics.md) 有关开发用于收集用户数据的组件和自定义Adobe Analytics框架的信息。
+* [扩展Adobe Analytics集成](/help/sites-developing/extending-analytics.md)，了解有关开发用于收集用户数据的组件和自定义Adobe Analytics框架的信息。
 * 知识库文章 [Adobe Analytics 集成 – 解决问题](https://helpx.adobe.com/cn/experience-manager/kb/sitecatalystintegrationtroubleshooting.html)，了解有关排查 Adobe Analytics 集成问题的信息。
 
 >[!NOTE]

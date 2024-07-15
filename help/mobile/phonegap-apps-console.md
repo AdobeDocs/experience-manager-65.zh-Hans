@@ -40,7 +40,7 @@ AEM Mobile提供了用于创建移动应用程序的Phonegap应用程序Blueprin
 
 您在AEM中创建的移动设备应用程序的根页面将显示在“应用程序”控制台中。
 
-根页面存储在创建应用程序时指定的应用程序的“目标路径”属性下（默认路径为/content/phonegap/apps）。 页面名称是应用程序的Name属性。 例如，站点的根页面的默认URL名为 `myphonegapapp` 是 `http://localhost:4502/content/phonegap/apps/myphonegapapp.html`.
+根页面存储在创建应用程序时指定的应用程序的“目标路径”属性下（默认路径为/content/phonegap/apps）。 页面名称是应用程序的Name属性。 例如，名为`myphonegapapp`的站点的根页面的默认URL为`http://localhost:4502/content/phonegap/apps/myphonegapapp.html`。
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -48,7 +48,7 @@ AEM Mobile提供了用于创建移动应用程序的Phonegap应用程序Blueprin
 
 根页面的第一个子页面是应用程序的语言变体。 每个页面的名称是为其创建应用程序的语言。 例如， English是应用程序的英文变体的名称。
 
-**注意：** 默认的PhoneGap Blueprint仅创建英语应用程序。 您的开发人员可以修改Blueprint，以便创建更多语言变量。
+**注意：**&#x200B;默认的PhoneGap Blueprint只创建英文应用程序。 您的开发人员可以修改Blueprint，以便创建更多语言变量。
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -67,19 +67,19 @@ AEM Mobile提供了用于创建移动应用程序的Phonegap应用程序Blueprin
 
 移动设备应用程序基于定义页面结构和属性的Blueprint。 您可以配置以下应用程序属性：
 
-* **标题：** 应用程序标题。
-* **目标路径：** 存储库中存储应用程序的位置。 保留默认值以根据应用程序名称创建路径。
+* **标题：**&#x200B;应用程序标题。
+* **目标路径：**&#x200B;存储库中存储应用程序的位置。 保留默认值以根据应用程序名称创建路径。
 
-* **名称：** 默认值为删除了空格字符的Title属性的值。 该名称在CQ中用于引用应用程序，例如，表示该应用程序的存储库节点。
-* **描述：** 应用程序的描述。
-* **服务器URL：** 为应用程序提供Over-the-Air (OTA)内容更新的URL。 默认值为用于创建应用程序的实例的发布服务器URL（获取自外部化器服务）。 注意，这必须是发布服务器实例，而不是作者，后者需要身份验证。
+* **名称：**&#x200B;默认值为删除了空格字符的Title属性的值。 该名称在CQ中用于引用应用程序，例如，表示该应用程序的存储库节点。
+* **描述：**&#x200B;应用程序的描述。
+* **服务器URL：**&#x200B;为应用程序提供Over-The-Air (OTA)内容更新的URL。 默认值为用于创建应用程序的实例的发布服务器URL（获取自外部化器服务）。 注意，这必须是发布服务器实例，而不是作者，后者需要身份验证。
 
 您还可以提供要用作应用程序缩略图的图像文件，选择要使用的PhoneGap Build配置，然后选择要使用的移动设备应用程序分析配置。 此图像仅用作缩略图，以在Experience Manager的移动应用程序控制台中表示您的移动应用程序。
 
 存在用于构建Cloud Service以及将AdobeMobile Services SDK插件集成到应用程序中的其他（和可选）选项卡。
 
 * 构建：单击管理配置并在此处设置您的build.phonegap.com构建服务。 然后，您可以从下拉菜单中选择新创建的PhoneGap Build云服务。
-* Analytics：单击管理配置并设置您的 [AdobeMobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) 云服务。 然后，您可以从下拉菜单中选择新创建的移动服务，以将其集成到移动应用程序中。
+* Analytics：单击管理配置并设置您的[AdobeMobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)云服务。 然后，您可以从下拉菜单中选择新创建的移动服务，以将其集成到移动应用程序中。
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ AEM Mobile提供了用于创建移动应用程序的Phonegap应用程序Blueprin
 1. 在边栏上，单击应用程序。
 1. 单击创建图标。
 
-   ![正方形内由加号表示的“创建”图标。](do-not-localize/chlimage_1-7.png)
+   ![正方形内加号表示的“创建”图标。](do-not-localize/chlimage_1-7.png)
 
 1. （可选）在高级选项卡上，提供应用程序的说明，并根据需要更改服务器URL。
 1. （可选）如果要使用PhoneGap Build编译应用程序，请在“生成”选项卡上选择要使用的配置。
@@ -113,7 +113,7 @@ AEM Mobile提供了用于创建移动应用程序的Phonegap应用程序Blueprin
 1. 在边栏上，单击应用程序。
 1. 选择要配置的应用程序，然后单击查看页面属性图标。
 
-   ![圆圈中的字母I表示的“查看页面属性”图标。](do-not-localize/chlimage_1-8.png)
+   ![圆圈内的字母I指示的“查看页面属性”图标。](do-not-localize/chlimage_1-8.png)
 
 1. 要更改属性值，请单击编辑图标。
 
@@ -121,14 +121,14 @@ AEM Mobile提供了用于创建移动应用程序的Phonegap应用程序Blueprin
 
 1. 配置基本和高级属性，然后单击完成图标。
 
-   ![由复选标记符号指示的“完成”图标。](do-not-localize/chlimage_1-10.png)
+   ![复选标记符号表示的“完成”图标。](do-not-localize/chlimage_1-10.png)
 
 #### 配置应用程序的语言变体 {#configure-a-language-variation-of-the-application}
 
 1. 在边栏上，单击应用程序。
 1. 单击以深入查看要在应用程序Admin Console中编辑的移动应用程序。 选择要配置的应用程序的语言版本，然后单击查看应用程序属性图标。
 
-   ![圆圈内的字母I表示的View Application Properties图标。](do-not-localize/chlimage_1-11.png)
+   ![圆圈内的字母I指示的“查看应用程序属性”图标。](do-not-localize/chlimage_1-11.png)
 
 1. 要更改属性值，请单击编辑图标。
 
@@ -136,7 +136,7 @@ AEM Mobile提供了用于创建移动应用程序的Phonegap应用程序Blueprin
 
 1. 在“基本”、“高级”、“生成”和“Analytics”选项卡上配置属性，然后单击“完成”图标。
 
-   ![由复选标记符号指示的“完成”图标。](do-not-localize/chlimage_1-13.png)
+   ![复选标记符号表示的“完成”图标。](do-not-localize/chlimage_1-13.png)
 
 ### 创作移动应用程序的内容 {#authoring-the-content-of-a-mobile-application}
 
@@ -166,7 +166,7 @@ AEM发布实例上的内容同步缓存用作移动设备应用程序的内容�
 1. 在边栏上，单击应用程序，然后单击您的应用程序。
 1. 选择启动页面，然后单击更新缓存图标。
 
-   ![“更新缓存”图标由带有循环符号的条状边栏表示。](do-not-localize/chlimage_1-14.png)
+   ![更新缓存图标由带有回收符号的条状条形图指示。](do-not-localize/chlimage_1-14.png)
 
 ### 使用应用程序模板 {#using-app-templates}
 
@@ -290,7 +290,7 @@ Geometrixx Outdoors应用程序是一个示例PhoneGap应用程序，用于演�
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-**“轮播属性”选项卡**
+**轮播属性选项卡**
 
 配置轮播的行为：
 
@@ -333,7 +333,7 @@ Order By属性不会影响固定列表的顺序。
 
 **高级搜索**
 
-使用填充列表 [Querybuilder](/help/sites-developing/querybuilder-api.md) 查询。
+使用[Querybuilder](/help/sites-developing/querybuilder-api.md)查询填充列表。
 
 ### 图像 {#image}
 

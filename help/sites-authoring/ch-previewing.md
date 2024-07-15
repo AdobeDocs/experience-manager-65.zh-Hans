@@ -18,14 +18,14 @@ ht-degree: 24%
 
 # 使用 ContextHub 数据预览页面{#previewing-pages-using-contexthub-data}
 
-此 [ContextHub](/help/sites-developing/contexthub.md) 工具栏显示ContextHub存储区中的数据，并允许您更改存储区数据。 ContextHub工具栏可用于预览由ContextHub存储区中的数据确定的内容。
+[ContextHub](/help/sites-developing/contexthub.md)工具栏显示ContextHub存储区中的数据，并允许您更改存储区数据。 ContextHub工具栏可用于预览由ContextHub存储区中的数据确定的内容。
 
 工具栏包含一系列用户界面模式，这些模式包含一个或多个UI模块。
 
 * UI模式是显示在工具栏左侧的图标。 单击某个图标时，工具栏会显示它包含的UI模块。
 * UI模块显示来自一个或多个ContextHub存储的数据。 某些UI模块还允许您处理存储数据。
 
-ContextHub安装多个UI模式和UI模块。 您的管理员可能已 [已配置ContextHub](/help/sites-developing/ch-configuring.md) 以显示不同的标记。
+ContextHub安装多个UI模式和UI模块。 您的管理员可能已[将ContextHub](/help/sites-developing/ch-configuring.md)配置为显示其他内容。
 
 ![screen_shot_2018-03-23at093446](assets/screen_shot_2018-03-23at093446.png)
 

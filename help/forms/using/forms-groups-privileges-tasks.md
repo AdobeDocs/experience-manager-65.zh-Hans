@@ -24,9 +24,9 @@ ht-degree: 6%
 | AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
 | AEM 6.5 | 本文 |
 
-您可以 [创建组](/help/sites-administering/user-group-ac-admin.md#group-administration) 并分配策略和 [用户](/help/sites-administering/user-group-ac-admin.md#user-administration) 到Adobe Experience Manager (AEM)中的组。 这些策略控制属于组的用户的权限。
+您可以[创建组](/help/sites-administering/user-group-ac-admin.md#group-administration)并将策略和[用户](/help/sites-administering/user-group-ac-admin.md#user-administration)分配给Adobe Experience Manager (AEM)中的组。 这些策略控制属于组的用户的权限。
 
-安装之后 [AEM Forms附加组件包](../../forms/using/installing-configuring-aem-forms-osgi.md)，则本文中提到的组（例如forms-users和forms-power-user）会自动可用于分配。 下表列出了用户可基于组分配在OSGi上为AEM Forms执行的任务：
+安装[AEM Forms附加组件包](../../forms/using/installing-configuring-aem-forms-osgi.md)后，本文中提到的组（如forms-users和forms-power-user）将自动可供分配。 下表列出了用户可基于组分配在OSGi上为AEM Forms执行的任务：
 
 <table>
  <tbody>
@@ -35,7 +35,7 @@ ht-degree: 6%
    <td>任务</td> 
   </tr>
   <tr>
-   <td>forms-users <sup>[1]</sup></td> 
+   <td>表单用户<sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>创建、预览、发布和提交自适应表单</li> 
@@ -65,7 +65,7 @@ ht-degree: 6%
     </ul> </td> 
   </tr>
   <tr>
-   <td>模板作者 <sup>[2]</sup></td> 
+   <td>模板作者<sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>创建和预览自适应表单或交互式通信模板</li> 
@@ -97,7 +97,7 @@ ht-degree: 6%
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>使用AEM收件箱应用程序<br /> <strong>注意： </strong>您必须具有cm-agent-users和workflow-users组分配，才能访问AEM收件箱中的交互式通信代理UI。</li> 
+     <li>使用AEM收件箱应用程序<br /> <strong>注意： </strong>您必须分配有cm-agent-users和workflow-users组，才能访问AEM收件箱中的交互式通信代理UI。</li> 
      <li>管理工作流实例</li> 
     </ul> </td> 
   </tr>

@@ -36,13 +36,13 @@ ht-degree: 5%
 
 ## 资源 {#assets}
 
-以下主题介绍了有关资源的最佳实践，包括Dynamic Media功能和Dynamic Media Classic集成：
+以下主题介绍了有关Assets的最佳实践，包括Dynamic Media功能和Dynamic Media Classic集成：
 
 <table>
  <tbody>
   <tr>
    <td>文件格式</td>
-   <td><a href="/help/assets/assets-file-format-best-practices.md">资产文件格式最佳实践</a></td>
+   <td><a href="/help/assets/assets-file-format-best-practices.md">Assets文件格式最佳实践</a></td>
    <td>描述AEM Assets中有关文件支持的最佳实践。</td>
   </tr>
   <tr>
@@ -56,7 +56,7 @@ ht-degree: 5%
    <td><p>描述如何在使用Dynamic Media功能或与Dynamic Media Classic集成时锐化图像以获得最佳结果以及优化图像质量的最佳方法。 </p> </td>
   </tr>
   <tr>
-   <td>多语言资源</td>
+   <td>多语言Assets</td>
    <td><a href="/help/assets/best-practices-for-translating-assets-efficiently.md">翻译最佳实践</a></td>
    <td>描述高效翻译AEM资源的最佳实践。</td>
   </tr>

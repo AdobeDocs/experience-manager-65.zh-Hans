@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 指定XCI配置选项 {#specify-xci-configuration-options}
 
-输出允许您指定用于呈现的自定义XCI文件。 请参阅 [指定输出的文件位置](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).
+输出允许您指定用于呈现的自定义XCI文件。 请参阅[指定输出](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)的文件位置。
 
 默认情况下，“输出”会覆盖XCI文件中指定的某些选项，包括：
 
@@ -29,6 +29,6 @@ ht-degree: 1%
 
 您可以选择取消上面所列选项覆盖的选项，在这种情况下，输出使用自定义XCI文件中指定的值。
 
-1. 在管理控制台中，单击 **服务** >输出。
+1. 在管理控制台中，单击&#x200B;**服务** >输出。
 1. 选中或取消选中使用系统默认XCI选项复选框。 如果选择该选项， Output将对数据包、创建者、生成者和compressObjectStream设置使用其默认值。 取消选择此选项时，输出使用自定义XCI文件中指定的值。
 1. 单击&#x200B;**保存**。

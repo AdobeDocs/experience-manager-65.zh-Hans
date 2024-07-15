@@ -57,14 +57,14 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 | # | 文章 | 描述 |
 |---|---|---|
 | 0 | AEM Headless 内容作者历程 | 本文档 |
-| 1 | [AEM Headless创作 — 简介](introduction.md) | 简单介绍Adobe Experience Manager的Headless功能，以及如何为项目创作内容。 |
+| 1 | [为AEM Headless创作 — 简介](introduction.md) | 简单介绍Adobe Experience Manager的Headless功能，以及如何为项目创作内容。 |
 | 2 | [使用 AEM 为 Headless 创作基本内容](basics.md) | 了解使用内容片段为 Headless CMS 创作内容的概念和机制。 |
 | 3 | [了解如何在内容片段中使用引用](references.md) | 了解如何在内容片段中使用引用。利用这些功能，还可使用嵌套片段为Headless CMS创建和管理多个级别的结构。 |
 | 4 | [了解如何为内容片段定义元数据和标记](metadata-tagging.md) | 了解如何为内容片段定义元数据和标记。 |
 
 ## 后续内容 {#what-is-next}
 
-您现在已准备好开始您的 Adobe Headless 历程。我们鼓励您继续此历程的下一部分，并阅读此文章 [AEM Headless创作 — 简介。](introduction.md)
+您现在已准备好开始您的 Adobe Headless 历程。我们鼓励您继续此历程的下一部分，并阅读文章[为AEM Headless创作 — 简介。](introduction.md)
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
@@ -83,8 +83,8 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
-* [Headless架构师历程](/help/journey-headless/architect/overview.md)  — 从这里开始了解Adobe Experience Manager强大而灵活的Headless功能，以及如何对项目内容进行建模。
-* [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans)  — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
+* [Headless架构师历程](/help/journey-headless/architect/overview.md) — 从这里开始了解Adobe Experience Manager强大而灵活的Headless功能，以及如何对项目内容进行建模。
+* [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans) — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
    * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)

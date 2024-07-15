@@ -20,26 +20,26 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-社区成员关注的功能 [活动](activities.md) 并且要遵循的是通过两个组件建立的： `Follow` 和 `Following`.
+社区成员关注[活动](activities.md)且被关注的能力是通过两个组件建立的： `Follow`和`Following`。
 
-此 `Follow` 组件必须与其他资源相关联，并且已为社区成员和功能建立此关联。
+`Follow`组件必须与其他资源关联，并且已为社区成员和功能建立此关联。
 
-此 `Following` 组件仅列出当前成员后面或当前成员后面的成员。 成员之间关系的社交图包含在为创建的用户配置文件中 [社区站点](overview.md#communitiessites).
+`Following`组件仅列出位于当前成员后面或位于当前成员后面的成员。 此成员间关系的社交图包含在为[社区站点](overview.md#communitiessites)建立的用户个人资料中。
 
 ## 向页面添加以下内容 {#adding-following-to-a-page}
 
-如果想要添加 `Following` 组件到创作模式下的页面，找到该组件 `Communities / Following` 并将其拖动到应显示社交图的页面上的适当位置。
+如果想要将`Following`组件添加到创作模式下的页面，请找到组件`Communities / Following`，并将其拖动到应显示社交图的页面上的适当位置。
 
-有关必要信息，请访问 [社区组件基础知识](basics.md).
+有关必要的信息，请访问[社区组件基础知识](basics.md)。
 
-当 [所需的客户端库](essentials-socialgraph.md#essentials-for-client-side) 包括，这就是 `Following` 组件出现：
+当包含[所需的客户端库](essentials-socialgraph.md#essentials-for-client-side)时，`Following`组件的显示方式如下：
 
-![关注](assets/following.png)
+![正在关注](assets/following.png)
 
 ## 配置以下 {#configuring-following}
 
-目前，需要设置属性以确定组件是否显示 `follows` 关系，或 `following` 关系。
+当前，需要设置属性以确定组件显示`follows`关系还是`following`关系。
 
 ## 附加信息 {#additional-information}
 
-欲知更多信息，请访问 [社交图要点](essentials-socialgraph.md) 适用于开发人员的页面。
+更多信息可在[Social Graph Essentials](essentials-socialgraph.md)页面上找到开发人员。

@@ -24,17 +24,17 @@ Adobe Experience Manager (AEM)提供了多个API用于开发应用程序和扩�
 
 * [AdobeAEM 6.5.0 API](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/index.html)
 * [Granite用户界面（触屏）API文档](https://www.adobe.io/experience-manager/reference-materials/6-5/granite-ui/api/index.html)
-* [Coral用户界面指南](https://www.adobe.io/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+* [Coral UI指南](https://www.adobe.io/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 * [Widget API（经典用户界面）文档](https://www.adobe.io/experience-manager/reference-materials/6-5/widgets-api/index.html)
-* [用户界面测试框架JavaScript API参考](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
-* [编辑器核心JavaScript API参考](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
+* [UI测试框架JavaScript API引用](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
+* [编辑器核心JavaScript API引用](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM单页应用程序(SPA)编辑器SDK框架JavaScript API参考：
 
 * [组件映射](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [页面模型管理器](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [React可编辑组件](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [angular可编辑组件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Angular的可编辑组件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 AEM交付和内容管理API：
 
@@ -42,11 +42,11 @@ AEM交付和内容管理API：
 
    * [JSON导出程序](/help/sites-developing/json-exporter.md)
    * [为组件启用 JSON 导出](/help/sites-developing/json-exporter-components.md)
-   * 请参阅 [《开发用户指南》中的“组件”部分](/help/sites-developing/getting-started.md) 了解更多信息
+   * 有关详细信息，请参阅《开发用户指南》](/help/sites-developing/getting-started.md)中的[组件部分
 
-* **资产**：Assets HTTP API允许对Assets执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括二进制、元数据、演绎版和注释。 请参阅 [AEM ASSETS HTTP API](/help/assets/mac-api-assets.md)
+* **Assets**： Assets HTTP API允许对Assets执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括二进制文件、元数据、呈现版本和注释。 查看[AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **内容片段** (CF)： [Assets HTTP API中的CF支持](/help/assets/assets-api-content-fragments.md) 和 [AEM Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **内容片段** (CF)：在Assets HTTP API](/help/assets/assets-api-content-fragments.md)和[AEM Assets API中支持[CF — 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
 以下外部资源仅供参考：
 

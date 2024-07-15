@@ -30,6 +30,6 @@ ht-degree: 1%
 
 1. 在“国际化”下的“字符集”列表中，选择一个字符集。 此设置取决于所使用的API，即renderHTMLForm或renderPDFForm。 要指定列出的字符集以外的字符集，请选择自定义，然后在显示的框中指定编码值。
 
-   对于HTML转换，AEM表单支持由定义的字符编码值。 `java.nio.charset` 包。 如果sFormPreference为PDForm，则仅支持特定字符集。 字符集必须是有效的规范名称。 默认值为ISO-8859-1。
+   对于HTML转换，AEM表单支持由`java.nio.charset`包定义的字符编码值。 如果sFormPreference为PDForm，则仅支持特定字符集。 字符集必须是有效的规范名称。 默认值为ISO-8859-1。
 
 1. 单击“保存”。

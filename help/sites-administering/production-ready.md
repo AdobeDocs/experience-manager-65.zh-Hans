@@ -18,19 +18,19 @@ ht-degree: 3%
 
 # 在生产就绪模式下运行AEM{#running-aem-in-production-ready-mode}
 
-通过AEM 6.1，Adobe引入了新的 `"nosamplecontent"` 运行模式，旨在自动执行准备AEM实例以在生产环境中部署所需的步骤。
+在AEM 6.1中，Adobe引入了新的`"nosamplecontent"`运行模式，旨在自动执行准备AEM实例以在生产环境中部署所需的步骤。
 
 新的运行模式不仅会自动配置实例以遵循安全核对清单中所述的安全最佳实践，还会在此过程中删除所有示例Geometrixx应用程序和配置。
 
 >[!NOTE]
 >
->由于实际的原因，AEM生产就绪模式将仅涵盖保护实例所需的大多数任务，因此强烈建议您查阅 [安全核对清单](/help/sites-administering/security-checklist.md) 在生产环境上线之前。
+>由于实际原因，AEM生产就绪模式将仅涵盖保护实例所需的大多数任务，因此强烈建议您在投入生产环境之前参考[安全核对清单](/help/sites-administering/security-checklist.md)。
 >
->另请注意，以生产就绪模式运行AEM将有效地禁用对CRXDE Lite的访问。 如果您出于调试目的而需要它，请参阅 [在AEM中启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+>另请注意，以生产就绪模式运行AEM将有效地禁用对CRXDE Lite的访问。 如果出于调试目的需要它，请参阅[在AEM中启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md)。
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-要在生产就绪模式下运行AEM，您必须添加 `nosamplecontent` 通过 `-r` 运行模式切换到现有的启动参数：
+要在生产就绪模式下运行AEM，您必须通过`-r`运行模式开关将`nosamplecontent`添加到现有的启动参数：
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -46,25 +46,25 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 更具体地说，当AEM以生产就绪模式运行时，将执行以下配置更改：
 
-1. 此 **CRXDE支持捆绑包** ( `com.adobe.granite.crxde-support`)在生产就绪模式下默认处于禁用状态。 可以随时从Adobe的公共Maven存储库安装它。 AEM 6.1需要版本3.0.0。
+1. 在生产就绪模式下，**CRXDE支持包** (`com.adobe.granite.crxde-support`)默认处于禁用状态。 可以随时从Adobe的公共Maven存储库安装它。 AEM 6.1需要版本3.0.0。
 
-1. 此 **Apache Sling对存储库的简单WebDAV访问** ( `org.apache.sling.jcr.webdav`)包将仅在 **作者** 实例。
+1. **Apache Sling Simple WebDAV对存储库** (`org.apache.sling.jcr.webdav`)的访问权限将仅在&#x200B;**作者**&#x200B;实例上可用。
 
 1. 新创建的用户需要在首次登录时更改密码。 这不适用于管理员用户。
-1. **生成调试信息** 已为禁用 **Apache Sling JavaScript处理程序**.
+1. 已为&#x200B;**Apache Sling JavaScript处理程序**&#x200B;禁用&#x200B;**生成调试信息**。
 
-1. **映射的内容** 和 **生成调试信息** 已禁用 **Apache Sling JSP脚本处理程序**.
+1. 已为&#x200B;**Apache Sling JSP脚本处理程序**&#x200B;禁用&#x200B;**映射的内容**&#x200B;和&#x200B;**生成调试信息**。
 
-1. 此 **Day CQ WCM过滤器** 设置为 `edit` 日期 **作者** 和 `disabled` 日期 **发布** 实例。
+1. **作者**&#x200B;的&#x200B;**Day CQ WCM筛选器**&#x200B;设置为`edit`，在&#x200B;**发布**&#x200B;实例的`disabled`设置为。
 
-1. 此 **AdobeGraniteHTML库管理器** 进行了以下设置：
+1. **AdobeGraniteHTML库管理器**&#x200B;配置有以下设置：
 
-   1. **缩小：** `enabled`
+   1. **最小化：** `enabled`
    1. **调试：** `disabled`
    1. **Gzip：** `enabled`
    1. **计时：** `disabled`
 
-1. 此 **Apache SlingGETServlet** 设置为默认支持安全配置，如下所示：
+1. 默认情况下，**Apache SlingGETServlet**&#x200B;设置为支持安全配置，如下所示：
 
 | **配置** | **作者** | **Publish** |
 |---|---|---|

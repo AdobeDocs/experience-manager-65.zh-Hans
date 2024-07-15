@@ -36,18 +36,18 @@ ht-degree: 1%
 
 * 使用插件功能的模板应以这样的方式编写，即仍然可以在浏览器中创作这些模板，而无需使用插件桥。
 
-   * 例如，确保等待 *deviceready* 函数。
+   * 例如，在尝试访问插件的API之前，请确保等待&#x200B;*deviceready*&#x200B;函数。
 
 ## AEM开发人员指南 {#guidelines-for-aem-developers}
 
 以下准则可帮助符合条件的AEM开发人员创建要构建移动应用程序模板和组件的网站：
 
-**构建AEM站点模板以鼓励重复使用和可扩展性**
+**构建AEM站点模板以鼓励重复使用和扩展**
 
 * 与单个整体脚本文件相比，更喜欢多个组件脚本文件
 
-   * 提供了多个空扩展点，例如 *customheaderlibs.html* 和 *customfooterlibs.html*，这允许开发人员更改页面模板，同时尽可能少地复制核心代码
-   * 随后，可通过Sling的 *sling：resourceSuperType* 机理
+   * 提供了多个空扩展点，如&#x200B;*customheaderlibs.html*&#x200B;和&#x200B;*customfooterlibs.html*，它们允许开发人员更改页面模板，同时尽可能少地复制核心代码
+   * 随后，可通过Sling的&#x200B;*sling：resourceSuperType*&#x200B;机制扩展和自定义模板
 
 * 与将JSP作为模板语言相比，首选Sightly/HTL
 
@@ -61,27 +61,27 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您可以详细了解渲染阻止外部脚本 [此处](https://developers.google.com/speed/docs/insights/BlockingJS).
+>您可以在[此处](https://developers.google.com/speed/docs/insights/BlockingJS)详细了解渲染阻止外部脚本。
 
-**与特定于Web的相比，更喜欢特定于应用程序的客户端JS和CSS库**
+**首选特定于应用程序的客户端JS和CSS库而非Web特定的库**
 
 * 避免jQuery Mobile等库处理大量设备和浏览器的开销
-* 当模板在应用程序的Webview中运行时，您可以控制应用程序将支持的平台和版本，并了解是否支持JavaScript。 例如，与jQuery Mobile和Onsen UI相比，偏好Ionic（只是CSS）与Bootstrap。
+* 当模板在应用程序的Webview中运行时，您可以控制应用程序将支持的平台和版本，并且您会知道JavaScript支持。 例如，与jQuery Mobile和Onsen UI相比，偏好Ionic（只是CSS）与Bootstrap。
 
 >[!NOTE]
 >
->要更深入地了解jQuery移动设备，请单击 [此处](https://jquerymobile.com/browser-support/1.4/).
+>若要深入了解jQuery移动设备，请单击[此处](https://jquerymobile.com/browser-support/1.4/)。
 
-**与全栈库相比，更倾向于使用微库**
+**首选微库而非全栈库**
 
 * 将内容放到设备玻璃上的时间被您的文章所依赖的每个库所减慢。 使用新的Web视图呈现每篇文章时，这种减速会更加严重，因此必须从头开始再次初始化每个库
 * 如果您的文章未构建为SPA（单页应用程序），则可能不需要包含Angular等全栈库
-* 首选更小的单用途库，这些库可帮助添加页面所需的交互性，例如 [Fastclick](https://github.com/ftlabs/fastclick) 或 [Velocity.js](https://velocityjs.org)
+* 首选更小的单用途库，这些库可帮助添加页面所需的交互性，例如[Fastclick](https://github.com/ftlabs/fastclick)或[Velocity.js](https://velocityjs.org)
 
 **最小化文章有效负载的大小**
 
 * 使用尽可能最小的资产，以便以合理的分辨率有效地覆盖您支持的最大视区
-* 使用工具，如 *ImageOptim* 以删除任何多余的元数据
+* 在图像上使用诸如&#x200B;*ImageOptim*&#x200B;之类的工具，以便删除任何多余的元数据
 
 ## 快速入门 {#getting-ahead}
 

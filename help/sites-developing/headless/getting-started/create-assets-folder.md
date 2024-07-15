@@ -1,5 +1,5 @@
 ---
-title: 创建资源文件夹Headless快速入门指南
+title: 创建Assets文件夹Headless快速入门指南
 description: 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 solution: Experience Manager, Experience Manager Sites
@@ -12,7 +12,7 @@ ht-degree: 78%
 
 ---
 
-# 创建资源文件夹Headless快速入门指南 {#creating-an-assets-folder}
+# 创建Assets文件夹Headless快速入门指南 {#creating-an-assets-folder}
 
 使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。然后，将内容片段存储在资源文件夹中。
 
@@ -22,14 +22,14 @@ ht-degree: 78%
 
 但是，您首先需要创建用于存储这些内容的资源文件夹。
 
-资源文件夹用于 [组织传统内容资产](/help/assets/manage-assets.md) 如图像和视频以及内容片段。
+Assets文件夹用于[组织传统内容资源](/help/assets/manage-assets.md)，如图像、视频和内容片段。
 
 ## 如何创建资源文件夹 {#how-to-create-an-assets-folder}
 
 管理员只需要偶尔创建文件夹，在创建内容时用于组织内容。对于本指南快速入门，我们只需要创建一个文件夹。
 
-1. 登录AEM，从主菜单选择 **导航>资产>文件**.
-1. 单击 **“创建”>“文件夹”**.
+1. 登录AEM，从主菜单选择&#x200B;**导航> Assets >文件**。
+1. 单击&#x200B;**创建>文件夹**。
 1. 提供文件夹的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
    * **名称**&#x200B;将成为存储库中的节点名称。
@@ -37,12 +37,12 @@ ht-degree: 78%
       * 如有必要可以调整。
 
    ![创建文件夹](assets/assets-folder-create.png)
-1. 选择您创建的文件夹，然后选择 **属性** 工具栏中(或使用 `p` [键盘快捷键。](/help/sites-authoring/keyboard-shortcuts.md))
+1. 选择您创建的文件夹，然后从工具栏中选择&#x200B;**属性**（或者使用`p` [键盘快捷键。](/help/sites-authoring/keyboard-shortcuts.md)）
 1. 在&#x200B;**属性**&#x200B;窗口中，选择 **Cloud Services** 选项卡。
 1. 对于&#x200B;**云配置**，选择[您之前创建的配置。](create-configuration.md)
    ![配置资源文件夹](assets/assets-folder-configure.png)
 1. 单击“**保存并关闭**”。
-1. 单击 **确定** 在确认窗口中。
+1. 在确认窗口中单击&#x200B;**确定**。
 
    ![确认窗口](assets/assets-folder-confirmation.png)
 

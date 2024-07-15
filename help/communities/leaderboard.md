@@ -20,9 +20,9 @@ ht-degree: 4%
 
 本页提供了使用排行榜功能的基本信息。
 
-在页面上包含排行榜组件之前，需要配置 [社区评分和徽章](implementing-scoring.md).
+在页面上包含排行榜组件之前，需要配置[社区评分和徽章](implementing-scoring.md)。
 
-请参阅 [评分和徽章要点](configure-scoring.md).
+查看[评分和徽章要点](configure-scoring.md)。
 
 ## 适用于客户端的Essentials {#essentials-for-client-side}
 
@@ -50,7 +50,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong> 属性</strong></td>
-   <td>请参阅 <a href="enabling-leaderboard.md">排行榜功能</a></td>
+   <td>查看<a href="enabling-leaderboard.md">排行榜功能</a></td>
   </tr>
  </tbody>
 </table>
@@ -59,4 +59,4 @@ ht-degree: 4%
 
 ### 文件库功能 {#file-library-function}
 
-社区站点结构包括 [排行榜功能](functions.md#leaderboard-function)，包括已配置的 `leaderboard` 组件。
+包含[排行榜功能](functions.md#leaderboard-function)的社区站点结构包含配置的`leaderboard`组件。

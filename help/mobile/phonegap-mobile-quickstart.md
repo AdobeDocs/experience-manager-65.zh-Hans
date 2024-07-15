@@ -1,6 +1,6 @@
 ---
 title: 移动快速入门
-description: 按照本页了解AEM Verify应用程序。 AEM验证应用程序是在任何iOS或Android移动设备上运行AEM移动应用程序的快速轻松的方法。
+description: 按照本页了解AEM Verify应用程序。 AEM Verify应用程序是在任何iOS或Android移动设备上运行AEM移动应用程序的快速轻松的方法。
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE

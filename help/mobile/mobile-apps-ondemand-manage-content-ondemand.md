@@ -28,15 +28,15 @@ ht-degree: 1%
 
 想一想在线杂志，主要内容包括文章、广告和封面。 在AEM中可以创建三种主要类型的Mobile On-Demand内容：
 
-* **文章**：基于文本以及艺术来传递信息
-* **横幅：** 通常是图形促销链接
-* **收藏集：** 代表一个明确定义的 *分段* 填入适合封面主题的文章或横幅等内容
+* **文章**：基于文本与艺术一起传递信息
+* **横幅：**&#x200B;通常是图形促销链接
+* **收藏集：**&#x200B;表示定义明确的&#x200B;*存储桶*，其中包含适合封面主题的文章或横幅等内容
 
-* **共享资源：** 允许跨文章重复使用或共享公共片段
+* **共享资源：**&#x200B;允许跨文章重复使用或共享公共片段
 
 >[!NOTE]
 >
->要详细了解AEM Mobile应用程序的设计注意事项，请参阅 [AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) 在线帮助中。
+>要详细了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)。
 
 ## 创建和管理内容 {#creating-and-managing-content}
 
@@ -46,11 +46,11 @@ ht-degree: 1%
 * [管理横幅](/help/mobile/mobile-on-demand-managing-banners.md)
 * [管理收藏集](/help/mobile/mobile-on-demand-managing-collections.md)
 * [上传共享资源](/help/mobile/mobile-on-demand-shared-resources.md)
-* [发布取消发布内容](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish取消发布内容](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
->通常，发布内容之前应预检。 请参阅 [使用Preflight预览](/help/mobile/aem-mobile-manage-ondemand-services.md) 以了解更多详细信息。
+>通常，发布内容之前应预检。 有关更多详细信息，请参阅[使用预检](/help/mobile/aem-mobile-manage-ondemand-services.md)预览。
 
 ### 其他资源 {#additional-resources}
 

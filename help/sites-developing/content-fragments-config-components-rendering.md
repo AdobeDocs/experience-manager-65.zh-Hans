@@ -18,13 +18,13 @@ ht-degree: 6%
 
 # 配置用于呈现的组件的内容片段{#content-fragments-configuring-components-for-rendering}
 
-有几个 [高级服务](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) 与内容片段的呈现相关。 要使用这些服务，必须使内容片段框架知道这些组件的资源类型。
+有几个[高级服务](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration)与内容片段的呈现相关。 要使用这些服务，必须使内容片段框架知道这些组件的资源类型。
 
-这可以通过配置 [OSGi服务 — 内容片段组件配置](#osgi-service-content-fragment-component-configuration).
+这是通过配置[OSGi服务 — 内容片段组件配置](#osgi-service-content-fragment-component-configuration)完成的。
 
 >[!CAUTION]
 >
->如果您不需要 [高级服务](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration) 如下所述，您可以忽略此配置。
+>如果您不需要下面描述的[高级服务](/help/sites-developing/content-fragments-config-components-rendering.md#definition-of-advanced-services-that-need-configuration)，则可以忽略此配置。
 
 >[!CAUTION]
 >
@@ -42,22 +42,22 @@ ht-degree: 6%
 
 * 在发布期间正确确定依赖关系（即，如果片段和模型自上次发布以来已更改，请确保它们可以随页面自动发布）。
 * 支持全文搜索中的内容片段。
-* 管理/处理 *中间内容。*
-* 管理/处理 *混合媒体资产。*
-* 引用的片段的Dispatcher刷新（如果重新发布包含片段的页面）。
+* *中间内容的管理/处理。*
+* 管理/处理&#x200B;*混合媒体资产。*
+* Dispatcher刷新引用的片段（如果重新发布包含片段的页面）。
 * 使用基于段落的渲染。
 
 如果您需要这些功能中的一个或多个功能，则（通常）使用现成功能比从头开始开发更容易。
 
 ## OSGi服务 — 内容片段组件配置 {#osgi-service-content-fragment-component-configuration}
 
-配置需要绑定到OSGi服务 **内容片段组件配置**：
+该配置需要绑定到OSGi服务&#x200B;**内容片段组件配置**：
 
 `com.adobe.cq.dam.cfm.impl.component.ComponentConfigImpl`
 
 >[!NOTE]
 >
->请参阅 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以了解更多详细信息。
+>有关详细信息，请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md)。
 
 例如：
 
@@ -75,12 +75,12 @@ OSGi配置为：
   <tr>
    <td><strong>资源类型</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>要注册的资源类型；例如， <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>要注册的资源类型；例如，<br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>引用属性</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>包含片段引用的属性的名称；例如， <code>fragmentPath</code> 或 <code>fileReference</code></td>
+   <td>包含对片段的引用的属性的名称；例如，<code>fragmentPath</code>或 <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>元素属性</strong></td>
@@ -105,15 +105,15 @@ OSGi配置为：
   </tr>
   <tr>
    <td><code>paragraphRange</code></td>
-   <td><p>一个字符串属性，定义在中要输出的段落范围 <em>单元素渲染模式</em>.</p> <p>格式：</p>
+   <td><p>一个字符串属性，定义在<em>单元素渲染模式</em>下要输出的段落范围。</p> <p>格式：</p>
     <ul>
-     <li><code>1</code> 或 <code>1-3</code> 或 <code>1-3;6;7-8</code> 或 <code>*-3;5-*</code></li>
-     <li>仅在以下情况下评估 <code>paragraphScope</code> 设置为 <code>range</code></li>
+     <li><code>1</code> 或<code>1-3</code>或<code>1-3;6;7-8</code>或 <code>*-3;5-*</code></li>
+     <li>仅在<code>paragraphScope</code>设置为时评估 <code>range</code></li>
     </ul> </td>
   </tr>
   <tr>
    <td><code>paragraphScope</code></td>
-   <td><p>一个字符串属性，定义在中时如何输出段落 <em>单元素渲染模式</em>.</p> <p>值：</p>
+   <td><p>一个字符串属性，它定义在<em>单元素呈现模式</em>下段落的输出方式。</p> <p>值：</p>
     <ul>
      <li><code>all</code> ：渲染所有段落</li>
      <li><code>range</code> ：呈现以下项提供的段落范围： <code>paragraphRange</code></li>
@@ -121,7 +121,7 @@ OSGi配置为：
   </tr>
   <tr>
    <td><code>paragraphHeadings</code></td>
-   <td>一个布尔属性，定义标题(例如， <code>h1</code>， <code>h2</code>， <code>h3</code>)将被计算为段落(<code>true</code>)或不是(<code>false</code>)</td>
+   <td>一个布尔属性，定义标题（例如<code>h1</code>、<code>h2</code>、<code>h3</code>）是否计为段落(<code>true</code>)(<code>false</code>)</td>
   </tr>
  </tbody>
 </table>

@@ -26,7 +26,7 @@ Process Reporting提供了一组现成的报告，可让您筛选、查看有关
 
 此外，“流程报表”提供了一个界面，用于运行临时查询并将自定义报表视图集成到“流程报表”用户界面中。
 
-有关支持的浏览器的列表，请参阅 [AEM Forms支持的平台](/help/forms/using/aem-forms-jee-supported-platforms.md).
+有关支持的浏览器的列表，请参阅[AEM Forms支持的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)。
 
 进程报告基于以下模块构建：
 
@@ -46,7 +46,7 @@ Process Reporting提供了一组现成的报告，可让您筛选、查看有关
 
 ### 临时报表 {#adhoc-reports}
 
-![打印与彩色](assets/print-&-colour.png)
+![打印&amp; — 颜色](assets/print-&-colour.png)
 
 使用筛选器获取数据的特定视图。
 

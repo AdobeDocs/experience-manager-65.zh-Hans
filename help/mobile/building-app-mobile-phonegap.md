@@ -24,9 +24,9 @@ ht-degree: 0%
 
 构建您的应用程序以安装到设备或模拟器以进行测试或发布到应用商店。 您可以使用PhoneGap命令行界面在本地构建应用程序，也可以使用PhoneGap Build在云中构建应用程序。
 
-提供了有关如何使用GitHub中提供的代码构建移动应用程序的完整分步文章 [此处](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html).
+有关如何使用GitHub中提供的代码构建移动应用程序的完整分步文章，请参阅[此处](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html)。
 
-## 将应用程序移动到发布实例 {#moving-the-application-to-the-publish-instance}
+## 将应用程序移动到Publish实例 {#moving-the-application-to-the-publish-instance}
 
 将应用程序文件移动到发布实例，以便您可以为已安装的移动应用程序实例提供内容更新，并使用已发布的内容构建应用程序。 应用程序由存储库中的两个节点分支组成：
 
@@ -37,16 +37,16 @@ ht-degree: 0%
 >
 >如果不将应用程序文件移动到发布实例，则内容作者无法更新内容同步缓存。
 
-您只需将文件移到 `/content/phonegap/content/<application name>` 分支到发布实例。 中的文件 `/content/phonegap/apps/<application name>` 分支会在作者激活页面时移动。
+您只需要将`/content/phonegap/content/<application name>`分支中的文件移动到发布实例。 当作者激活页面时，`/content/phonegap/apps/<application name>`分支中的文件将被移动。
 
 AEM提供了两种将批量内容移动到发布实例的方法：
 
-* [使用“激活树”命令](/help/sites-authoring/publishing-pages.md) 在复制控制台上。
-* [创建资源包](/help/sites-administering/package-manager.md) 包含内容并复制包的位置。
+* [在复制控制台上使用“激活树”命令](/help/sites-authoring/publishing-pages.md)。
+* [创建包含内容的包](/help/sites-administering/package-manager.md)并复制该包。
 
 例如，将创建一个名为phonegapapp的移动应用程序。 必须将以下节点移到发布实例：/content/phonegap/content/phonegapapp。
 
-**提示：** 要将包从创作实例移动到发布实例，请使用包上的“复制”命令。
+**提示：**&#x200B;要将包从创作实例移动到发布实例，请对包使用Replicate命令。
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -58,14 +58,14 @@ AEM提供了两种将批量内容移动到发布实例的方法：
 
 要使用PhoneGap CLI进行构建，您需要安装Node.js和PhoneGap客户端实用程序。 您需要连接Internet才能执行以下步骤。
 
-1. 下载并安装 [Node.js](https://nodejs.org/en).
+1. 下载并安装[Node.js](https://nodejs.org/en)。
 1. 打开终端或命令提示符并输入以下节点命令以安装PhoneGap实用程序：
 
    ```shell
    npm install -g phonegap
    ```
 
-   在UNIX®或Linux®系统上，可能需要为命令添加前缀 `sudo`.
+   在UNIX®或Linux®系统上，可能需要在命令的前缀中加上`sudo`。
 
    该终端显示了一系列HTTPGET命令的结果。 安装成功后，终端会显示库的安装位置，类似于以下示例：
 
@@ -86,8 +86,8 @@ AEM提供了两种将批量内容移动到发布实例的方法：
 
 1. （可选）获取要定位的移动平台的SDK：
 
-   * 要为iOS平台构建应用程序，请安装最新版本的 [Xcode](https://developer.apple.com/xcode/).
-   * 要构建Android™应用程序，请安装 [Android™ SDK](https://developer.android.com/).
+   * 若要为iOS平台构建应用程序，请安装最新版本的[Xcode](https://developer.apple.com/xcode/)。
+   * 要构建Android™应用程序，请安装[Android™ SDK](https://developer.android.com/)。
 
 ### 下载内容ZIP文件 {#downloading-the-content-zip-file}
 
@@ -96,15 +96,15 @@ AEM提供了两种将批量内容移动到发布实例的方法：
 1. 在“移动设备应用程序”页面上，选择您的应用程序。
 1. （可选）要构建应用程序以完成安装，请在工具栏上单击清除缓存图标。
 
-   ![清除由断开的链接符号指示的缓存图标。](do-not-localize/chlimage_1.png)
+   ![清除由断开的链接符号表示的缓存图标。](do-not-localize/chlimage_1.png)
 
    >[!NOTE]
    >
    >缓存保存已安装应用程序的内容更新。 清除缓存将会使所有缓存的更新失效。
 
-1. 在工具栏上，单击下载CLI资产图标。
+1. 在工具栏上，单击下载CLI Assets图标。
 
-   ![下载CLI资产图标，图标由重叠的平板电脑符号表示。](do-not-localize/chlimage_1-1.png)
+   ![下载CLI Assets图标，以重叠的平板电脑符号表示。](do-not-localize/chlimage_1-1.png)
 
 1. 保存ZIP文件后，在“成功”对话框中单击“关闭”。
 1. 解压缩ZIP文件的内容。
@@ -119,7 +119,7 @@ AEM提供了两种将批量内容移动到发布实例的方法：
    cd ~/Downloads/ng-app-cli.1392137825303
    ```
 
-1. 输入要定位的平台的phonegap命令。 例如，以下命令可构建Android™应用程序：
+1. 输入要定位的平台的phonegap命令。 例如，以下命令可为Android构建应用程序™：
 
    ```shell
    phonegap build android
@@ -149,7 +149,7 @@ AEM提供了两种将批量内容移动到发布实例的方法：
 1. 在移动设备应用程序页面上，打开您的移动设备应用程序。 ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
 1. （可选）要为完整的安装构建应用程序，请选择该应用程序，然后单击“清除缓存”图标。
 
-   ![清除由断开的链接符号指示的缓存图标。](do-not-localize/chlimage_1-2.png)
+   ![清除由断开的链接符号表示的缓存图标。](do-not-localize/chlimage_1-2.png)
 
    >[!NOTE]
    >
@@ -157,13 +157,13 @@ AEM提供了两种将批量内容移动到发布实例的方法：
 
 1. 选择启动页面，然后单击构建远程图标。
 
-   ![由两个倒圆角齿轮指示的“构建远程”图标。](do-not-localize/chlimage_1-3.png)
+   ![由两个圆齿轮指示的“生成远程”图标。](do-not-localize/chlimage_1-3.png)
 
-   **注意：** 构建成功完成时，测试版AEM Beta不会创建收件箱通知。
+   **注意：** AEM Beta的Beta版本在生成成功完成时未创建收件箱通知。
 
-1. 在成功对话框中，单击PhoneGap Build以打开Adobe PhoneGap Build页面，网址为 `https://build.phonegap.com/apps`. 如果您正在等待应用程序显示，可以在以下位置查看PhoneGap Build状态： `https://status.build.phonegap.com/`.
+1. 在“成功”对话框中，单击“PhoneGap Build”以打开`https://build.phonegap.com/apps`处的Adobe PhoneGap Build页面。 如果您正在等待应用程序出现，则可以在`https://status.build.phonegap.com/`上查看PhoneGap Build状态。
 
-   有关安装内部版本的信息，请参阅 [PhoneGap Build文档](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
+   有关安装内部版本的信息，请参阅[PhoneGap Build文档](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build)。
 
    >[!NOTE]
    >
@@ -171,4 +171,4 @@ AEM提供了两种将批量内容移动到发布实例的方法：
 
 ### 后续步骤 {#the-next-steps}
 
-构建过程后的下一步是了解 [应用程序的结构](/help/mobile/phonegap-structure-an-app.md).
+构建过程后的下一步是了解应用程序](/help/mobile/phonegap-structure-an-app.md)的[结构。

@@ -18,11 +18,11 @@ ht-degree: 3%
 
 # 站点模板 {#site-templates}
 
-站点模板控制台类似于 [组模板](tools-groups.md) 控制台，侧重于社区组感兴趣的功能。
+站点模板控制台类似于[组模板](tools-groups.md)控制台，其侧重于社区组感兴趣的功能。
 
 >[!NOTE]
 >
->用于创建的控制台 [社区站点](sites-console.md)， [社区站点模板](sites.md)， [社区组模板](tools-groups.md)、和 [社区功能](functions.md) 仅供在创作环境中使用。
+>用于创建[社区站点](sites-console.md)、[社区站点模板](sites.md)、[社区组模板](tools-groups.md)和[社区功能](functions.md)的控制台仅在创作环境中使用。
 
 ## 站点模板控制台 {#site-templates-console}
 
@@ -30,13 +30,13 @@ ht-degree: 3%
 
 * 从全局导航： **[!UICONTROL 工具>社区>站点模板]**
 
-此控制台显示从中创建 [社区站点](sites-console.md) 可以创建，并允许创建新站点模板。
+此控制台显示可从中创建[社区站点](sites-console.md)的模板，并允许创建新站点模板。
 
-![site-template](assets/site-template.png)
+![站点模板](assets/site-template.png)
 
 ## 创建站点模板 {#create-site-template}
 
-要开始创建站点模板，请选择 `Create`.
+要开始创建站点模板，请选择`Create`。
 
 这将打开站点编辑器面板，其中包含三个子面板：
 
@@ -60,7 +60,7 @@ ht-degree: 3%
 
 ### 缩略图 {#thumbnail}
 
-![site-thumnail](assets/site-thumbnail.png)
+![站点缩略图](assets/site-thumbnail.png)
 
 （可选）选择上传图像图标以显示缩略图，以及社区站点创建者的名称和描述。
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 
 要添加社区功能，请按照站点菜单链接出现的顺序，从右向左拖动。 样式在创建站点期间应用到模板。
 
-例如，如果您希望创建主页，请从库拖动“页面”函数，然后将其放到模板生成器下。 这将导致打开页面配置对话框。 请参阅 [函数控制台](functions.md) 有关配置对话框的信息。
+例如，如果您希望创建主页，请从库拖动“页面”函数，然后将其放到模板生成器下。 这将导致打开页面配置对话框。 有关配置对话框的信息，请参阅[函数控制台](functions.md)。
 
 继续拖放基于此模板的社区站点所需的任何其他社区功能。
 
@@ -78,9 +78,9 @@ page函数提供一个空页面。 “组”功能允许您在社区站点中创
 
 >[!CAUTION]
 >
->“组”功能必须 *不是第一个，也不是唯一的* 在站点结构中的函数。
+>Groups函数不能&#x200B;*是网站结构中的第一个或唯一的*&#x200B;函数。
 >
->任何其他函数，如 [页面函数](functions.md#page-function)，必须先包含并列出。
+>任何其他函数（如[page函数](functions.md#page-function)）都必须包含并首先列出。
 
 ![站点编辑器](assets/site-editor.png)
 
@@ -90,16 +90,16 @@ page函数提供一个空页面。 “组”功能允许您在社区站点中创
 
 >[!CAUTION]
 >
->“组”功能必须 *不是第一个，也不是唯一的* 在站点结构中的函数。
+>Groups函数不能&#x200B;*是网站结构中的第一个或唯一的*&#x200B;函数。
 
-![站点功能](assets/site-functions.png)
+![站点函数](assets/site-functions.png)
 
 通过选择两个或多个社区组模板，可在社区中实际创建组时为组管理员提供一个选择。
 
-![站点功能](assets/site-functions1.png)
+![站点函数](assets/site-functions1.png)
 
 ## 编辑站点模板 {#edit-site-template}
 
-在主视图中查看站点模板时 [站点模板控制台](#site-templates-console)，则可以选择要编辑的现有站点模板。
+在主[站点模板控制台](#site-templates-console)中查看站点模板时，可以选择编辑现有站点模板。
 
-此过程提供的面板与相同 [创建站点模板](#create-site-template).
+此过程提供的面板与[创建站点模板](#create-site-template)的面板相同。

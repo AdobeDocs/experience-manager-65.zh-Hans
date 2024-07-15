@@ -44,15 +44,15 @@ AEM 6.5环境为基于核心组件的自适应Forms提供了以下列出的主�
 
 主题是一个包，其中包含定义自适应Forms样式的CSS文件、JavaScript文件和资源（如图标）。 自适应表单主题遵循特定的组织，由以下组件组成：
 
-* `src/theme.scss`：此文件夹包括对整个主题产生广泛影响的CSS文件。 它用作定义和管理主题样式和行为的集中位置。 通过编辑此文件，您可以做出在整个主题中普遍应用的更改，从而影响自适应Forms和AEM Sites页面的外观和功能。
+* `src/theme.scss`：此文件夹包含对整个主题具有广泛影响的CSS文件。 它用作定义和管理主题样式和行为的集中位置。 通过编辑此文件，您可以做出在整个主题中普遍应用的更改，从而影响自适应Forms和AEM Sites页面的外观和功能。
 
 * `src/site`：此文件夹包含应用于整个AEM站点页面的CSS文件。 这些文件由代码和样式组成，这些代码和样式会影响AEM站点页面的整体功能和布局。 此处所做的任何修改都会反映在网站的所有页面中。
 
-* `src/components`：此文件夹中的CSS文件是为单个AEM核心组件设计的。 组件的每个专用文件夹包括 `.scss` 在自适应表单中为该特定组件设置样式的文件。 例如， `/src/components/button/_button.scss` 文件包含自适应Forms按钮组件的样式信息。
+* `src/components`：此文件夹中的CSS文件是为单个AEM核心组件设计的。 组件的每个专用文件夹都包含一个`.scss`文件，该文件在自适应表单中为该特定组件设置样式。 例如，`/src/components/button/_button.scss`文件包含自适应Forms按钮组件的样式信息。
 
   ![画布主题结构](/help/forms/using/assets/component-based-theme-folder-structure.png)
 
-* `src/resources`：此文件夹包含图标、徽标和字体等静态文件。 这些资源用于增强主题的可视化元素和总体设计。
+* `src/resources`：此文件夹包含静态文件，如图标、徽标和字体。 这些资源用于增强主题的可视化元素和总体设计。
 
 ## 创建主题
 
@@ -64,7 +64,7 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 * [公共主题](https://github.com/adobe/aem-forms-theme-public)
 * [制造主题](https://github.com/adobe/aem-forms-theme-manufacturing)
 
-您可以 [自定义这些主题中的任意主题以创建主题](#customize-a-theme-core-components).
+您可以[自定义其中的任何主题以创建主题](#customize-a-theme-core-components)。
 
 ## 自定义主题 {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -72,16 +72,16 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 
 >[!NOTE]
 >
-> * 使用包管理器在所有创作实例和发布实例上部署主题。
+> * 使用包管理器在所有Author和Publish实例上部署主题。
 > * 主题客户端库与任何其他包一样，通过包管理器导入或导出。
 
 ### 自定义主题的先决条件 {#prerequisites}
 
-* [启用自适应Forms核心组件](/help/forms/using/enable-adaptive-forms-core-components.md) 为您的环境而设计。
+* 为您的环境[启用自适应Forms核心组件](/help/forms/using/enable-adaptive-forms-core-components.md)。
 
-* 安装最新版本的 [Apache Maven。](https://maven.apache.org/download.cgi) Apache Maven是一种常用于Java™项目的构建自动化工具。 安装最新版本可确保您具有主题自定义所需的依赖项。
+* 安装[Apache Maven的最新版本。](https://maven.apache.org/download.cgi) Apache Maven是常用于Java™项目的生成自动化工具。 安装最新版本可确保您具有主题自定义所需的依赖项。
 
-* 了解如何创建 [Adobe Experience Manager中的客户端库](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html). AEM提供了客户端库，这使您可以在存储库中存储客户端代码，将其整理到不同类别中，并定义何时以及如何向客户端提供每种类别的代码。
+* 了解如何在Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)中创建[客户端库。 AEM提供了客户端库，这使您可以在存储库中存储客户端代码，将其整理到不同类别中，并定义何时以及如何向客户端提供每种类别的代码。
 
 * 安装纯文本编辑器。 例如，Microsoft® Visual Studio Code。 使用Microsoft等纯文本编辑器®Visual Studio Code为编辑和修改主题文件提供了用户友好的环境。
 
@@ -89,9 +89,9 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 
 ### 自定义主题的注意事项 {#consideration}
 
-* 确保使用 [用于启用自适应Forms核心组件的原型项目](/help/forms/using/enable-adaptive-forms-core-components.md) 以自定义主题。
+* 请确保您使用[在您的环境中启用自适应Forms核心组件](/help/forms/using/enable-adaptive-forms-core-components.md)的Archetype项目来自定义主题。
 
-* 发布自适应表单时，客户端库不会在发布实例上自动发布。 确保手动将在自适应表单中引用的客户端库发布到发布环境。
+* 发布自适应表单时，不会在Publish实例上自动发布客户端库。 确保手动将在自适应表单中引用的客户端库发布到Publish环境。
 
 * Adobe建议不要更改客户端库的类名。
 
@@ -101,7 +101,7 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 
 1. [克隆主题](#clone-git-repo-of-theme)
 1. [自定义主题的外观](#customize-the-theme)
-1. [准备好本地部署的主题](#generate-the-clientlib)
+1. [为本地部署准备主题](#generate-the-clientlib)
 1. [在本地环境中部署主题](#deploy-the-theme-on-a-local-environment)
 1. [在生产环境中部署主题](#5-deploy-a-theme-on-your-production-environment)
 
@@ -109,7 +109,7 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-文档中提供的示例基于 **画布** 主题，但您可以克隆任何主题并使用相同的说明对其进行自定义。 这些说明适用于任何主题，允许您根据特定需求修改主题。
+文档中提供的示例基于&#x200B;**画布**&#x200B;主题，但您可以克隆任何主题并使用相同的说明对其进行自定义。 这些说明适用于任何主题，允许您根据特定需求修改主题。
 
 #### 1.克隆主题的Git存储库 {#clone-git-repo-of-theme}
 
@@ -123,13 +123,13 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 
 1. 在本地开发环境中打开命令提示符或终端窗口。
 
-1. 运行 `git clone` 命令以克隆主题。
+1. 运行`git clone`命令以克隆主题。
 
    ```
       git clone [Path of Git Repository of the theme]
    ```
 
-   替换 [主题的Git存储库路径] 以及主题的相应Git存储库的实际URL
+   将主题]的Git存储库的[路径替换为主题的相应Git存储库的实际URL
 
    例如，要克隆画布主题，请执行以下命令：
 
@@ -139,7 +139,7 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 
 1. 选择&#x200B;**信任父文件夹中所有文件的作者**，并单击&#x200B;**是的，我信任作者**。
 
-成功执行命令后，您的计算机上将有一个主题的本地副本，位于  `aem-forms-theme-canvas` 文件夹。
+成功执行命令后，`aem-forms-theme-canvas`文件夹中提供了计算机上主题的本地副本。
 
 #### 2.自定义主题 {#customize-the-theme}
 
@@ -151,24 +151,24 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 
 ##### 设置主题级别样式 {#theme-customization-global-level}
 
-此 `variable.scss` 文件包含主题的全局变量。 通过更新这些变量，您可以在主题级别进行与样式相关的更改。 要应用主题级别的样式，请执行以下步骤：
+`variable.scss`文件包含主题的全局变量。 通过更新这些变量，您可以在主题级别进行与样式相关的更改。 要应用主题级别的样式，请执行以下步骤：
 
-1. 打开 `<your-theme-sources>/src/site/_variables.scss` 要编辑的文件。
-1. 更改任何属性的值。 例如，缺省错误颜色为红色。 要将错误颜色从红色更改为蓝色，请将 `$error`变量。 例如：`$error: #196ee5`。
+1. 打开`<your-theme-sources>/src/site/_variables.scss`文件进行编辑。
+1. 更改任何属性的值。 例如，缺省错误颜色为红色。 要将错误颜色从红色更改为蓝色，请更改`$error`变量的颜色十六进制代码。 例如：`$error: #196ee5`。
 
    ![示例：错误颜色设置为蓝色](/help/forms/using/assets/theme-level-changes.png)
 
 1. 保存并关闭该文件。
 
 
-同样，您可以使用 `variable.scss` 文件设置字体系列和类型、主题和字体颜色、字体大小、主题间距、错误图标、主题边框样式以及影响多个自适应表单组件的更多变量。
+同样，您可以使用`variable.scss`文件设置字体系列和类型、主题和字体颜色、字体大小、主题间距、错误图标、主题边框样式以及影响多个自适应表单组件的更多变量。
 
 ##### 设置组件级别样式 {#component-based-customization}
 
 您还可以选择自定义特定自适应表单核心组件（如按钮、复选框、容器、页脚等）的字体、颜色、大小及其他CSS属性。 通过编辑与特定组件关联的CSS文件，您可以将其样式与组织的品牌保持一致。 要自定义组件的样式，请执行以下步骤：
 
-1. 打开文件 `<your-theme-sources>/src/components/<component>/<component.scss>` 进行编辑。 例如，要更改按钮组件的字体颜色，请打开 `<your-theme-sources>/src/components/button/button.scss`，文件。
-1. 根据您的要求更改任意的值。 例如，要将鼠标悬停时按钮组件的颜色更改为绿色，请将 `color: $white` 中的属性 `cmp-adaptiveform-button__widget:hover` 类到十六进制代码#12b453或任何其他绿色阴影。 最终代码如下所示：
+1. 打开文件`<your-theme-sources>/src/components/<component>/<component.scss>`进行编辑。 例如，要更改按钮组件的字体颜色，请打开`<your-theme-sources>/src/components/button/button.scss`文件。
+1. 根据您的要求更改任意的值。 例如，要将鼠标悬停时按钮组件的颜色更改为绿色，请将`cmp-adaptiveform-button__widget:hover`类中`color: $white`属性的值更改为十六进制代码#12b453或任何其他绿色阴影。 最终代码如下所示：
 
    ```
     .cmp-adaptiveform-button__widget:hover {
@@ -195,20 +195,20 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 要将主题部署到AEM实例，需要将其转换为客户端库。 按照以下步骤将主题转换为客户端库：
 
 1. 打开命令提示符或终端窗口。
-1. 导航至 `<your-theme-sources>` 文件夹。 例如，`C:\aem-forms-theme-canvas`
+1. 导航到`<your-theme-sources>`文件夹。 例如，`C:\aem-forms-theme-canvas`
 1. 运行以下命令：
 
    ```
       npm run create-clientlib --category=adaptiveform.theme.[yourtheme]
    ```
 
-   替换 `[yourtheme]` 使用自定义主题的名称。 例如，如果自定义主题的名称为 `customcanvastheme`，运行以下命令
+   将`[yourtheme]`替换为自定义主题的名称。 例如，如果自定义主题的名称为`customcanvastheme`，请运行以下命令
 
    ```
        npm run create-clientlib --category=adaptiveform.theme.customcanvastheme
    ```
 
-   成功执行该命令后，将在以下位置创建一个客户端库文件夹： `themerepo\theme-clientlibs\[yourtheme]`.
+   成功执行该命令后，将在`themerepo\theme-clientlibs\[yourtheme]`处创建一个客户端库文件夹。
 
    ![客户端库生成](/help/forms/using/assets/clientlib_created.png)
 
@@ -229,7 +229,7 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 
    `mvn clean install`
 
-   ![客户端库构建](/help/forms/using/assets/mvndeploy.png)
+   ![客户端库生成](/help/forms/using/assets/mvndeploy.png)
 
 <!--
 
@@ -268,12 +268,12 @@ The selected theme is applied to the Adaptive Form.
 
 #### 5.在生产环境中部署主题 {#deploy-theme}
 
-在本地开发环境中成功测试主题后，您可以继续将主题部署到生产环境，包括创作实例和发布实例。 按照以下步骤在生产环境中部署主题：
+在本地开发环境中成功测试主题后，您可以继续将主题部署到生产环境，包括创作实例和Publish实例。 按照以下步骤在生产环境中部署主题：
 
 1. 登录到您的AEM环境。
-1. 打开包管理器。 默认URL为 `https://localhost:4502/crx/packmgr/index.jsp`.
-1. 单击 **上传包** 并单击 **浏览**.
-1. 导航到并选择 `[AEM Archetype Project Folder]\all\target[appid].all-[version].zip`. 单击 **打开**.
+1. 打开包管理器。 默认URL为`https://localhost:4502/crx/packmgr/index.jsp`。
+1. 单击&#x200B;**上传包**，然后单击&#x200B;**浏览**。
+1. 导航到`[AEM Archetype Project Folder]\all\target[appid].all-[version].zip`并选择。 单击&#x200B;**打开**。
 1. 单击“安装”。 在所有生产环境中重复该步骤。
 
 
@@ -284,23 +284,23 @@ The selected theme is applied to the Adaptive Form.
 >[!NOTE]
 >
 >
-> 如果在发布实例上访问登录对话框以通过包管理器安装包时遇到困难，请尝试通过以下URL登录： `http://[Publish Server URL]:[PORT]/system/console`. 这允许访问登录到Publish实例，允许您继续安装过程。
+> 如果您在访问发布实例的登录对话框以通过包管理器安装包时遇到困难，请尝试通过以下URL登录： `http://[Publish Server URL]:[PORT]/system/console`。 这允许访问Publish实例，允许您继续安装过程。
 
 ## 将主题应用于自适应表单 {#using-theme-in-adaptive-form}
 
 将主题应用于自适应表单的步骤如下：
 
 1. 登录到本地AEM创作实例。
-1. 在 Experience Manager 登录页面上输入您的凭据。选择 **Adobe Experience Manager** > **Forms** > **Forms和文档**.
-1. 单击 **创建** > **自适应Forms**.
-1. 选择自适应Forms核心组件模板并单击 **下一个**. 此 **添加属性** 显示
-1. 指定 **名称** 用于您的自适应表单。
+1. 在 Experience Manager 登录页面上输入您的凭据。选择&#x200B;**Adobe Experience Manager** > **Forms** > **Forms和文档**。
+1. 单击&#x200B;**创建** > **自适应Forms**。
+1. 选择自适应Forms核心组件模板，然后单击&#x200B;**下一步**。 出现&#x200B;**添加属性**
+1. 为自适应表单指定&#x200B;**Name**。
 
 
    >[!NOTE]
    >
-   > * 默认情况下， `adaptiveform.theme.canvas3` 已选择主题。
-   > * 您可以从中选择不同的主题 **主题客户端库** 下拉菜单。
+   > * 默认情况下，选择`adaptiveform.theme.canvas3`主题。
+   > * 您可以从&#x200B;**主题客户端库**&#x200B;下拉菜单中选择其他主题。
 
 1. 单击&#x200B;**创建**。
 
@@ -311,24 +311,24 @@ The selected theme is applied to the Adaptive Form.
 要删除不使用的或不需要的主题，请执行以下操作：
 
 1. 登录您的创作实例。
-1. 打开 `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
+1. 打开`http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
 1. 导航到 `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`。
 1. 删除主题文件夹并保存更改。
 
 
 ## 常见问题解答 {#faq}
 
-**问：** 在全局级别和组件级别的主题文件夹中进行自定义时，哪种自定义设置优先？
+**问：**&#x200B;在全局级别和组件级别的主题文件夹中进行自定义时，哪个自定义项优先？
 
-**Ans：** 在主题和组件级别上同时定义样式时，在组件级别上定义的样式优先。
+**Ans：**&#x200B;在主题和组件级别上同时定义样式时，在组件级别上定义的样式优先。
 
-**问：** 如果自定义主题在中不可见，应该采取哪些步骤 **[!UICONTROL 主题客户端库]**？
+**问：**&#x200B;如果自定义主题在&#x200B;**[!UICONTROL 主题客户端库]**&#x200B;中不可见，应该执行哪些步骤？
 
-**Ans：**  如果您的自定义主题未出现在 **[!UICONTROL 主题客户端库]** 下拉列表中，按照以下步骤操作：
+**Ans：**&#x200B;如果您的自定义主题未出现在&#x200B;**[!UICONTROL 主题客户端库]**&#x200B;下拉列表中，请按照以下步骤操作：
 
-1. 导航到将自定义主题客户端库添加到的位置。 推荐的路径为 `/ui.apps/src/main/content/jcr_root/apps[AEM Archetype Project Folder]/clientlibs/<yourtheme>`.
+1. 导航到将自定义主题客户端库添加到的位置。 建议的路径为`/ui.apps/src/main/content/jcr_root/apps[AEM Archetype Project Folder]/clientlibs/<yourtheme>`。
 
-1. 打开 `.content.xml` 文件并包含以下元数据：
+1. 打开`.content.xml`文件并包含以下元数据：
 
    ```
        formstheme:true
@@ -344,4 +344,4 @@ The selected theme is applied to the Adaptive Form.
 * [创建或自定义基于核心组件的自适应Forms的主题](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [为基于核心组件的自适应Forms创建模板](template-editor.md)
 * [创建自适应表单或将其添加到AEM Sites页面或体验片段](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [示例主题模板和表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

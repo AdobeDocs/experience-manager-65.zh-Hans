@@ -22,14 +22,14 @@ ht-degree: 5%
 
 当成员与社区功能交互时，会发送可触发异步侦听器的OSGi事件，例如通知或游戏化（评分和徽章）。
 
-组件的 [社交事件](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 实例将事件记录为 `actions` 发生于 `topic`. SocialEvent包括用于返回 `verb` 与操作相关联。 有一个 *n-1* 关系介于 `actions` 和 `verbs`.
+组件的[SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html)实例将事件记录为`topic`发生的`actions`。 SocialEvent包含用于返回与操作关联的`verb`的方法。 `actions`和`verbs`之间存在&#x200B;*n-1*&#x200B;关系。
 
-对于发行版中交付的Communities组件，下表介绍了 `verbs` 为每项定义 `topic` 可供使用。
+对于发行版中交付的Communities组件，下表描述了为每个`topic`定义的`verbs`可供使用。
 
 ## 主题和动词 {#topics-and-verbs}
 
 [日历组件](calendar-basics-for-developers.md)
-社交事件 `topic`= com/adobe/cq/social/calendar
+社交活动`topic`= com/adobe/cq/social/calendar
 
 | **动词** | **描述** |
 |---|---|
@@ -39,7 +39,7 @@ ht-degree: 5%
 | 删除 | 成员的日历事件或评论已删除 |
 
 [注释组件](essentials-comments.md)
-社交事件 `topic`= com/adobe/cq/social/comment
+SocialEvent `topic`= com/adobe/cq/social/comment
 
 | **动词** | **描述** |
 |---|---|
@@ -49,7 +49,7 @@ ht-degree: 5%
 | 删除 | 已删除成员的评论 |
 
 [文件库组件](essentials-file-library.md)
-社交事件 `topic`= com/adobe/cq/social/fileLibrary
+SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
 | **动词** | **描述** |
 |---|---|
@@ -59,7 +59,7 @@ ht-degree: 5%
 | 删除 | 成员删除文件夹或文件 |
 
 [论坛组件](essentials-forum.md)
-社交事件 `topic`= com/adobe/cq/social/forum
+SocialEvent `topic`= com/adobe/cq/social/forum
 
 | **动词** | **描述** |
 |---|---|
@@ -69,7 +69,7 @@ ht-degree: 5%
 | 删除 | 已删除成员的论坛主题或回复 |
 
 [日志组件](blog-developer-basics.md)
-社交事件 `topic`= com/adobe/cq/social/journal
+SocialEvent `topic`= com/adobe/cq/social/journal
 
 | **动词** | **描述** |
 |---|---|
@@ -78,8 +78,8 @@ ht-degree: 5%
 | 更新 | 编辑成员的博客文章或评论 |
 | 删除 | 已删除成员的博客文章或评论 |
 
-[问题与解答组件](qna-essentials.md)
-社交事件 `topic` = com/adobe/cq/social/qna
+[QnA组件](qna-essentials.md)
+SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **动词** | **描述** |
 |---|---|
@@ -90,8 +90,8 @@ ht-degree: 5%
 | 取消选择 | 已取消选择成员的答案 |
 | 删除 | 已删除成员的问题或答案 |
 
-[审核组件](reviews-basics.md)
-社交事件 `topic`= com/adobe/cq/social/review
+[审阅组件](reviews-basics.md)
+SocialEvent `topic`= com/adobe/cq/social/review
 
 | **动词** | **描述** |
 |---|---|
@@ -100,7 +100,7 @@ ht-degree: 5%
 | 删除 | 已删除成员的审核 |
 
 [评级组件](rating-basics.md)
-社交事件 `topic`= com/adobe/cq/social/tally
+SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **动词** | **描述** |
 |---|---|
@@ -108,7 +108,7 @@ ht-degree: 5%
 | 删除评级 | 成员内容已降级 |
 
 [投票组件](essentials-voting.md)
-社交事件 `topic`= com/adobe/cq/social/tally
+SocialEvent `topic`= com/adobe/cq/social/tally
 
 | **动词** | **描述** |
 |---|---|
@@ -116,7 +116,7 @@ ht-degree: 5%
 | 删除投票 | 成员内容已被否决 |
 
 **启用审核的组件**
-社交事件 `topic`= com/adobe/cq/social/moderation
+SocialEvent `topic`= com/adobe/cq/social/moderation
 
 | **动词** | **描述** |
 |---|---|
@@ -129,9 +129,9 @@ ht-degree: 5%
 
 ## 自定义组件的事件 {#events-for-custom-components}
 
-对于自定义组件， [SocialEvent抽象类](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html) 必须扩展才能将组件的事件记录为 `actions`发生于 `topic`.
+对于自定义组件，[SocialEvent抽象类](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html)必须扩展为d，以将组件的事件记录为`topic`发生的`actions`。
 
-自定义事件将覆盖方法 `getVerb()` 以便适当地 `verb`针对每个维度返回 `action`. 此 `verb` 针对操作返回的可能是常用的(例如 `POST`)或组件专用的(例如 `ADD RATING`)。 有一个 *n-1* 关系介于 `actions`和 `verbs`.
+自定义事件将覆盖方法`getVerb()`，以便为每个`action`返回适当的`verb`。 为操作返回的`verb`可以是常用的（如`POST`）或组件专用的（如`ADD RATING`）。 `actions`和`verbs`之间存在&#x200B;*n-1*&#x200B;关系。
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ ht-degree: 5%
 
 [org.osgi.service.event.Event](https://osgi.org/javadoc/r4v41/org/osgi/service/event/Event.html)；
 [com.adobe.cq.social.scf.core.SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html)；
-[com.adobe.granite.activitystreams.ObjectType](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html)；
+[com.adobe.granite.activitystreams.ObjectTypes](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ObjectTypes.html)；
 [com.adobe.granite.activitystreams.Verbs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/Verbs.html)；
 
 ```java
@@ -246,7 +246,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 ### EventListener伪代码 {#pseudo-code-for-eventlistener}
 
-需要 [最新功能包](deploy-communities.md#latestfeaturepack).
+需要[最新的功能包](deploy-communities.md#latestfeaturepack)。
 
 ```java
 package my.company.comments;

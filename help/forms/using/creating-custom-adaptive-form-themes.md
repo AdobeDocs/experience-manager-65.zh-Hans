@@ -19,19 +19,19 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Adobe Experience Manager (AEM) Forms提供 [主题编辑器](/help/forms/using/themes.md) 能够创建和修改自适应表单 [主题](/help/forms/using/themes.md). 仅当从没有的版本升级时，才执行本文中列出的步骤 [主题编辑器](/help/forms/using/themes.md) 而且您已经在使用Less/CSS文件（预主题编辑器方法）创建的主题方面有所投资。
+>Adobe Experience Manager (AEM) Forms提供了[主题编辑器](/help/forms/using/themes.md)功能来创建和修改自适应表单[主题](/help/forms/using/themes.md)。 仅当从没有[主题编辑器](/help/forms/using/themes.md)的版本升级，并且您对使用Less/CSS文件（预主题编辑器方法）创建的主题已有投资时，才执行本文中列出的步骤。
 
 ## 先决条件 {#prerequisites}
 
 * 了解LESS (Leaner CSS)框架
 * 如何在Adobe Experience Manager中创建客户端库
-* [创建自适应表单模板](/help/forms/using/custom-adaptive-forms-templates.md) 用于使用您创建的主题
+* [创建自适应表单模板](/help/forms/using/custom-adaptive-forms-templates.md)，以便使用您创建的主题
 
 ## 自适应表单主题 {#adaptive-form-theme}
 
-An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应表单的样式（外观）。
+**自适应表单主题**&#x200B;是用于定义自适应表单样式（外观）的AEM客户端库。
 
-您创建 **自适应模板** 并将主题应用于模板。 然后，您可以使用此自定义模板创建 **自适应表单**.
+创建&#x200B;**自适应模板**&#x200B;并将主题应用于该模板。 然后，您可以使用此自定义模板创建&#x200B;**自适应表单**。
 
 ![自适应表单和客户端库](assets/hierarchy.png)
 
@@ -46,29 +46,29 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
 ![林主题的自适应表单快照](assets/thumbnail.png)
 **图：** *林主题示例*
 
-1. 创建节点类型 `cq:ClientLibraryFolder` 在 `/apps`节点。
+1. 在`/apps`节点下创建类型为`cq:ClientLibraryFolder`的节点。
 
    例如，创建以下节点：
 
    `/apps/myAfThemes/forestTheme`
 
-1. 添加多值字符串属性 `categories` ，并相应地设置其值。
+1. 向节点添加多值字符串属性`categories`并相应地设置其值。
 
-   例如，将属性设置为： `af.theme.forest`.
+   例如，将属性设置为： `af.theme.forest`。
 
    ![CRX存储库快照](assets/3-2.png)
 
-1. 添加两个文件夹， `less` 和 `css`和文件 `css.txt` 到步骤1中创建的节点：
+1. 将两个文件夹`less`和`css`以及文件`css.txt`添加到步骤1中创建的节点：
 
-   * `less` 文件夹：包含 `less` 变量文件，在其中定义 `less` 变量和 `less mixins` 用于管理.css样式的属性。
+   * `less`文件夹：包含用于定义`less`变量和用于管理.css样式的`less mixins`变量文件的`less`变量文件。
 
-     此文件夹包括 `less` 变量文件， `less` mixin文件， `less` 使用mixin和变量定义样式的文件。 还有这些 `less` 然后文件会以styles.less格式导入。
+     此文件夹包含`less`个变量文件、`less`个mixin文件、`less`个使用mixin定义样式的文件以及变量。 然后以样式导入所有`less`文件.less.
 
    * `css`文件夹：包含.css文件，您可以在其中定义要在主题中使用的静态样式。
 
-   **变量较少的文件**：这些是您在其中定义或覆盖在定义CSS样式中使用的变量的文件。
+   **较少变量文件**：这些是您定义或覆盖用于定义CSS样式的变量的文件。
 
-   自适应表单提供以下定义的现成变量 `.less` 文件：
+   自适应表单提供以下`.less`文件中定义的现成变量：
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -77,7 +77,7 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   您可以使用 `less` 自适应表单随附的变量，您可以覆盖这些变量，也可以新建 `less` 变量。
+   您可以使用随自适应表单一起提供的`less`变量，可以覆盖这些变量，也可以创建新的`less`变量。
 
    >[!NOTE]
    >
@@ -93,7 +93,7 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
    @button-font-color: #ffffff;
    ```
 
-   要覆盖 `less`变量：
+   要覆盖`less`变量：
 
    1. 导入默认自适应表单变量：
 
@@ -108,7 +108,7 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **更少的mixin文件：** 您可以定义接受变量作为参数的函数。 这些函数的输出是生成的样式。 请在不同的样式中使用这些mixin，以避免重复CSS样式。
+   **更少的mixin文件：**&#x200B;您可以定义接受变量作为参数的函数。 这些函数的输出是生成的样式。 请在不同的样式中使用这些mixin，以避免重复CSS样式。
 
    自适应表单提供中定义的现成mixin：
 
@@ -134,11 +134,11 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
    }
    ```
 
-   **Styles.less文件：** 使用此文件可包含所有 `less` 必须在客户端库中使用的文件（变量、mixin、样式）。
+   **Styles.less文件：**&#x200B;使用此文件包括必须在客户端库中使用的所有`less`文件（变量、mixin、样式）。
 
-   在以下示例中 `styles.less` 文件，导入语句可以按任意顺序放置。
+   在以下示例`styles.less`文件中，导入语句可以按任意顺序放置。
 
-   用于导入以下项的语句 `.less` 文件是必需的：
+   用于导入以下`.less`文件的语句是必需的：
 
    * `globalvariables.less`
    * `layoutvariables.less`
@@ -173,7 +173,7 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
    }
    ```
 
-   此 `css.txt` 包含要为库下载的.css文件的路径。
+   `css.txt`包含要为库下载的.css文件的路径。
 
    例如：
 
@@ -207,11 +207,11 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
 
 创建自适应表单主题后，执行以下步骤以在自适应表单中使用此主题：
 
-1. 要包含在中创建的主题，请执行以下操作 [创建自适应表单主题](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) 部分，创建类型为的自定义页面 `cq:Component`.
+1. 要包含在[中创建的主题以创建自适应表单主题](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p)部分，请创建类型为`cq:Component`的自定义页面。
 
    例如，`/apps/myAfCustomizations/myAfPages/forestPage`
 
-   1. 添加 `sling:resourceSuperType` 属性并将其值设置为 `fd/af/components/page/base`.
+   1. 添加`sling:resourceSuperType`属性并将其值设置为`fd/af/components/page/base`。
 
       ![CRX存储库快照](assets/1-2.png)
 
@@ -219,7 +219,7 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
 
       然后，您可以导入在本文的创建自适应表单主题部分中创建的主题。
 
-      以下示例代码片段导入 `af.theme.forest` 主题。
+      以下示例代码片段导入`af.theme.forest`主题。
 
       ```jsp
       <%@include file="/libs/fd/af/components/guidesglobal.jsp"%>
@@ -228,7 +228,7 @@ An **自适应表单主题** 是一个AEM客户端库，可用于定义自适应
 
    1. **可选**：在自定义页面中，根据需要覆盖header.jsp、footer.jsp和body.jsp。
 
-1. 创建自定义模板(例如： `/apps/myAfCustomizations/myAfTemplates/forestTemplate`)的jcr：content指向在上一步中创建的自定义页面(例如： `myAfCustomizations/myAfPages/forestPage)`.
+1. 创建一个自定义模板（例如： `/apps/myAfCustomizations/myAfTemplates/forestTemplate`），其jcr：content指向在上一步中创建的自定义页面（例如： `myAfCustomizations/myAfPages/forestPage)`）。
 
    ![CRX存储库快照](assets/2-1.png)
 

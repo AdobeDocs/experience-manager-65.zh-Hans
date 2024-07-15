@@ -17,9 +17,9 @@ ht-degree: 7%
 
 # AEM 6.5中的Forms存储库重构{#forms-repository-restructuring-in-aem}
 
-如父项中所述 [AEM 6.5中的存储库重组](/help/sites-deploying/repository-restructuring.md) 页面，升级到AEM 6.5的客户应使用此页面评估与影响AEM Forms解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
+如AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Forms解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
-**6.5版升级**
+升级为6.5的&#x200B;****
 
 * [杂项](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
@@ -95,7 +95,7 @@ ht-degree: 7%
 | **上一个位置** | `/etc/cloudservices/echosign` |
 |---|---|
 | **新位置** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **重组指南** | 此 [延迟内容迁移](/help/sites-deploying/lazy-content-migration.md) 将从Forms迁移UI触发的实用程序。 |
+| **重组指南** | 将从Forms迁移UI触发[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
 ### RecaptchaCloud Service配置 {#recaptcha-cloud-service-configurations}
@@ -103,7 +103,7 @@ ht-degree: 7%
 | **上一个位置** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **新位置** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **重组指南** | 此 [延迟内容迁移](/help/sites-deploying/lazy-content-migration.md) 将从Forms迁移UI触发的实用程序。 |
+| **重组指南** | 将从Forms迁移UI触发[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
 ### TypekitCloud Service配置 {#typekit-cloud-service-configurations}
@@ -111,7 +111,7 @@ ht-degree: 7%
 | **上一个位置** | `/etc/cloudservices/typekit` |
 |---|---|
 | **新位置** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **重组指南** | 此 [延迟内容迁移](/help/sites-deploying/lazy-content-migration.md) 将从Forms迁移UI触发的实用程序。 |
+| **重组指南** | 将从Forms迁移UI触发[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
 ### 杂项 {#misc-1}
@@ -119,11 +119,11 @@ ht-degree: 7%
 | **上一个位置** | `/etc/cloudservices/fdm` |
 |---|---|
 | **新位置** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **重组指南** | 此 [延迟内容迁移](/help/sites-deploying/lazy-content-migration.md) 将从Forms迁移UI触发的实用程序。 |
+| **重组指南** | 将从Forms迁移UI触发[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
 | **上一个位置** | `/etc/designs/fd/fp` |
 |---|---|
 | **新位置** | `/libs/fd/fp` |
-| **重组指南** | 更新对/etc模板的任何引用以指向其 `/libs` 交易方。 |
+| **重组指南** | 更新对/etc模板的任何引用，以指向其`/libs`对应。 |
 | **注释** | 不适用 |

@@ -18,7 +18,7 @@ ht-degree: 7%
 
 # 使用Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html) 帮助按需提供丰富的视觉推销和营销资产，自动针对Web、移动和社交网站上的消费进行扩展。 Dynamic Media使用一组主要源资源，通过其可扩展、性能优化的全球网络实时生成并提供多种丰富内容变体。
+[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可帮助按需提供丰富的视觉营销和营销资源，可自动扩展以用于Web、移动和社交网站上的使用。 Dynamic Media使用一组主要源资源，通过其可扩展、性能优化的全球网络实时生成并提供多种丰富内容变体。
 
 Dynamic Media提供交互式查看体验，包括缩放、360度旋转和视频。 Dynamic Media独特地整合了Adobe Experience Manager数字资产管理(Assets)解决方案的工作流，以简化和简化数字营销活动管理流程。
 
@@ -28,7 +28,7 @@ Dynamic Media提供交互式查看体验，包括缩放、360度旋转和视频�
 
 ## 使用Dynamic Media可以做什么 {#what-you-can-do-with-dynamic-media}
 
-通过Dynamic Media，您可以在发布资产之前管理资产。 中详细介绍了如何使用一般资产 [使用数字资产](manage-assets.md). 一般主题包括上传、下载、编辑和发布资源；查看和编辑属性以及搜索资源。
+通过Dynamic Media，您可以在发布资产之前管理资产。 [使用数字资产](manage-assets.md)中详细说明了如何使用常规资产。 一般主题包括上传、下载、编辑和发布资源；查看和编辑属性以及搜索资源。
 
 仅限Dynamic Media的功能包括：
 
@@ -45,11 +45,11 @@ Dynamic Media提供交互式查看体验，包括缩放、360度旋转和视频�
 * [管理资源](managing-assets.md)
 * [使用 Quickview 创建自定义弹出窗口](custom-pop-ups.md)
 
-另请参阅 [设置Dynamic Media](administering-dynamic-media.md).
+另请参阅[设置Dynamic Media](administering-dynamic-media.md)。
 
 >[!NOTE]
 >
->要了解使用Dynamic Media与将Dynamic Media Classic与Adobe Experience Manager集成之间的区别，请参阅 [Dynamic Media Classic集成与Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media).
+>要了解使用Dynamic Media与将Dynamic Media Classic与Adobe Experience Manager集成之间的区别，请参阅[Dynamic Media Classic集成与Dynamic Media](/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media)的对比。
 
 ## 启用Dynamic Media与禁用Dynamic Media {#dynamic-media-on-versus-dynamic-media-off}
 
@@ -59,11 +59,11 @@ Dynamic Media提供交互式查看体验，包括缩放、360度旋转和视频�
 * 图像集、旋转集和混合媒体集均可用。
 * 创建PTIFF演绎版。
 
-当您选择图像资源时，资源的视图与Dynamic Media不同 [已启用](config-dynamic.md#enabling-dynamic-media). Dynamic Media使用按需HTML5查看器。
+当您选择图像资源时，启用[Dynamic Media](config-dynamic.md#enabling-dynamic-media)后，资源的视图会发生变化。 Dynamic Media使用按需HTML5查看器。
 
 ### 动态演绎版 {#dynamic-renditions}
 
-动态演绎版，例如图像和查看器预设(在 **[!UICONTROL 动态]**)在启用Dynamic Media时可用。
+启用Dynamic Media后，可以使用动态演绎版，例如图像和查看器预设（位于&#x200B;**[!UICONTROL Dynamic]**&#x200B;下）。
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
@@ -75,13 +75,13 @@ Dynamic Media提供交互式查看体验，包括缩放、360度旋转和视频�
 
 ### PTIFF演绎版 {#ptiff-renditions}
 
-启用了Dynamic Media的资源包括 `pyramid.tiffs`.
+启用了Dynamic Media的资源包括`pyramid.tiffs`。
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### 资源视图更改 {#asset-views-change}
 
-启用Dynamic Media后，您可以通过单击 `+` 和 `-` 按钮。 您还可以单击放大特定区域。 还原将您带入原始版本，您可以通过单击对角线箭头使图像变为全屏。 已启用Dynamic Media的示例如下：
+启用Dynamic Media后，您可以通过单击`+`和`-`按钮进行放大和缩小。 您还可以单击放大特定区域。 还原将您带入原始版本，您可以通过单击对角线箭头使图像变为全屏。 已启用Dynamic Media的示例如下：
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

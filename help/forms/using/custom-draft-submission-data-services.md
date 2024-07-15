@@ -21,22 +21,22 @@ ht-degree: 0%
 
 AEM Forms允许用户将自适应表单另存为草稿。 草稿功能为用户提供了维护工作进行中表单的选项。 然后，用户可随时从任何设备填写并提交表单。
 
-默认情况下，AEM Forms会将与草稿和提交相关的用户数据存储在Publish实例中的 `/content/forms/fp` 节点。
+默认情况下，AEM Forms会将与草稿和提交关联的用户数据存储在`/content/forms/fp`节点的Publish实例上。
 
 但是，AEM Forms Portal组件提供了数据服务，通过这些数据服务，您可以自定义存储草稿和提交的用户数据的实施。 例如，您可以将数据存储在组织中当前实施的数据存储中。
 
-要自定义用户数据的存储，您必须实施 [草稿数据](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p) 和 [提交数据](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p) 服务。
+要自定义用户数据的存储，您必须实施[草稿数据](/help/forms/using/custom-draft-submission-data-services.md#p-draft-data-service-p)和[提交数据](/help/forms/using/custom-draft-submission-data-services.md#p-submission-data-service-p)服务。
 
 ## 先决条件 {#prerequisites}
 
-* 启用 [Forms Portal组件](/help/forms/using/enabling-forms-portal-components.md)
-* 创建 [Forms Portal页面](/help/forms/using/creating-form-portal-page.md)
-* 启用 [Forms Portal自适应表单](/help/forms/using/draft-submission-component.md)
-* 学习 [自定义存储的实施详细信息](/help/forms/using/draft-submission-component.md#customizing-the-storage)
+* 启用[Forms Portal组件](/help/forms/using/enabling-forms-portal-components.md)
+* 创建[Forms门户页面](/help/forms/using/creating-form-portal-page.md)
+* 为Forms Portal启用[自适应表单](/help/forms/using/draft-submission-component.md)
+* 了解自定义存储的[实现详细信息](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## 草稿数据服务 {#draft-data-service}
 
-要自定义用户草稿数据的存储，您必须为的所有方法提供实施 `DraftAFDataService` 界面。
+要自定义用户草稿数据的存储，必须提供`DraftAFDataService`接口的所有方法的实现。
 
 以下接口的代码示例中提供了这些方法及其参数的说明：
 
@@ -83,7 +83,7 @@ public interface DraftAFDataService {
 
 ## 提交数据服务 {#submission-data-service}
 
-要自定义用户提交数据的存储，您必须为的所有方法提供实现 `SubmittedAFDataService` 界面。
+要自定义用户提交数据的存储，必须提供`SubmittedAFDataService`接口的所有方法的实现。
 
 以下接口的代码示例中提供了这些方法及其参数的说明：
 

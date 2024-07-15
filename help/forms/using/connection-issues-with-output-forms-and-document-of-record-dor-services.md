@@ -19,14 +19,14 @@ ht-degree: 1%
 
 ## 问题
 
-安装AEM Forms 6.5 Service Pack 19后，尝试使用输出服务、Forms服务或记录文档(DoR)服务可能会导致出现以下问题 `Connection to failed service` 错误。
+安装AEM Forms 6.5 Service Pack 19后，尝试使用输出服务、Forms服务或记录文档(DoR)服务可能会导致`Connection to failed service`错误。
 
 ## 解决方案
 
 要解决此问题：
 
 1. 停止AEM 6.5 Forms实例。
-1. 下载并安装 [适用于Visual Studio 2015、2017、2019和2022的64位版Microsoft Visual C++可再发行软件包](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022) 在安装了AEM 6.5 Forms的计算机上。
+1. 在安装了AEM 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的[64位版本的Microsoft Visual C++可再发行包。
 1. 重新启动AEM Forms服务器。
 
    >[!NOTE]

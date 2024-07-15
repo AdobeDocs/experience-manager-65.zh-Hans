@@ -34,7 +34,7 @@ HTML5表单以HTML5格式呈现表单。 根据窗体大小和窗体中的图像
 
 Apache可以使用HTTP或AJP协议与JBoss通信。
 
-1. 在中取消注释以下模块配置 *APACHE_HOME/conf/httpd.conf* 文件。
+1. 在&#x200B;*APACHE_HOME/conf/httpd.conf*&#x200B;文件中取消注释以下模块配置。
 
    ```java
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -48,7 +48,7 @@ Apache可以使用HTTP或AJP协议与JBoss通信。
 
 1. 在JBoss的端口8080上配置代理。
 
-   将以下配置添加到 *APACHE_HOME/conf/httpd.conf* 配置文件。
+   将以下配置添加到&#x200B;*APACHE_HOME/conf/httpd.conf*&#x200B;配置文件。
 
    ```java
    ProxyPass / https://<server_Name>:8080/
@@ -59,13 +59,13 @@ Apache可以使用HTTP或AJP协议与JBoss通信。
    >
    >使用代理时，需要进行以下配置更改：
    >
-   >* 访问： *https://&lt;server>：&lt;port>/system/console/configMgr*
+   >* 访问： *https://&lt;服务器>：&lt;端口>/system/console/configMgr*
    * 编辑Apache Sling引用过滤器配置
    * 在允许主机中，添加代理服务器的条目
 
 1. 启用压缩。
 
-   将以下配置添加到 *APACHE_HOME/conf/httpd.conf* 配置文件。
+   将以下配置添加到&#x200B;*APACHE_HOME/conf/httpd.conf*&#x200B;配置文件。
 
    ```xml
    <Location /content/xfaforms>
@@ -83,4 +83,4 @@ Apache可以使用HTTP或AJP协议与JBoss通信。
    </Location>
    ```
 
-1. 要访问AEM服务器，请使用https://[Apache_server]：80.
+1. 要访问AEM服务器，请使用https://[Apache_server]：80。

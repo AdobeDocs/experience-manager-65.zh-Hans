@@ -24,15 +24,15 @@ ht-degree: 0%
 
 Forms Portal可减少管理开销和生产延迟。 它为Web开发人员配备了组件，以便在使用Forms (AEM)创作的网站上创建和自定义Adobe Experience Manager门户。
 
-有关Forms Portal及其功能的更多信息，请参阅 [在门户上发布表单的简介](/help/forms/using/introduction-publishing-forms.md).
+有关Forms门户及其功能的详细信息，请参阅[在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md)。
 
 ## Forms Portal快速入门 {#getting-started-with-forms-portal}
 
-导航到已发布的Forms Portal页面。 有关创建Forms Portal页面的更多信息，请参阅 [创建Forms门户页面](../../forms/using/creating-form-portal-page.md).
+导航到已发布的Forms Portal页面。 有关创建Forms Portal页面的详细信息，请参阅[创建Forms Portal页面](../../forms/using/creating-form-portal-page.md)。
 
 Forms Portal的搜索和列表程序组件显示AEM服务器的Publish实例上可用的表单。 此列表包含在创作Forms Portal页面时在筛选器中定义的所有表单或表单。 Forms Portal页面看起来类似于，如下图所示：
 
-![一个示例表单门户页面 ](assets/forms-portal-page.png)
+![示例表单门户页面](assets/forms-portal-page.png)
 
 Forms Portal页面示例
 
@@ -75,7 +75,7 @@ Forms Portal页面示例
 
 #### 草稿和提交 {#drafts-and-submission}
 
-用户可以选择通过单击保存表单草稿 **保存**. 这样，用户就可以在提交表单之前处理一段时间内的表单。
+用户可以通过单击&#x200B;**保存**&#x200B;来选择保存表单草稿。 这样，用户就可以在提交表单之前处理一段时间内的表单。
 
 在表单中填写的数据（包括附件）将作为草稿保存在服务器上。 表单的草稿可以保存任意次数。 保存的表单将显示在页面的“草稿和提交”组件的“草稿”选项卡中。
 
@@ -83,7 +83,7 @@ Forms Portal页面示例
 
 >[!NOTE]
 >
->仅当自适应表单的提交操作配置为Forms Portal提交操作时，已提交的表单才会显示在已提交的Forms选项卡中。 有关提交操作的详细信息，请参阅 [配置提交操作](../../forms/using/configuring-submit-actions.md).
+>仅当自适应表单的提交操作配置为Forms Portal提交操作时，已提交的表单才会显示在已提交的Forms选项卡中。 有关提交操作的详细信息，请参阅[配置提交操作](../../forms/using/configuring-submit-actions.md)。
 
 ![草稿和提交组件](assets/draft-submission.png)
 
@@ -93,8 +93,8 @@ Forms Portal页面示例
 
 有些表格您必须经常填写和提交。 例如，每年都会提交个人纳税申报单。 在这种情况下，尽管每次填写表单时某些信息都会更改，但大多数信息（如个人和家庭详细信息）不会更改。 但是，您仍需要从头开始再次填写整个表单。
 
-AEM Forms可帮助优化表单填写体验，并显着减少再次填写和提交表单的时间。 最终用户可使用已提交表单中的数据启动新表单。 此功能内置于中 [草稿和提交组件](../../forms/using/draft-submission-component.md). 将草稿和提交组件添加到Forms Portal页面并进行发布时，最终用户会在已提交的Forms和草稿Forms选项卡中看到一个选项。 利用选项，可使用已提交表单中的数据创建新表单。 下图突出显示了该选项。
+AEM Forms可帮助优化表单填写体验，并显着减少再次填写和提交表单的时间。 最终用户可使用已提交表单中的数据启动新表单。 此功能内置于[草稿和提交组件](../../forms/using/draft-submission-component.md)中。 将草稿和提交组件添加到Forms Portal页面并进行发布时，最终用户会在已提交的Forms和草稿Forms选项卡中看到一个选项。 利用选项，可使用已提交表单中的数据创建新表单。 下图突出显示了该选项。
 
-![开始 — 新建 — 表单](assets/start-a-new-form.png)
+![开始新表单](assets/start-a-new-form.png)
 
 当您单击按钮以创建新表单时，它会打开一个新表单，其中包含来自相应已提交表单的数据。 您现在可以根据需要查看和更新信息，并提交表单。

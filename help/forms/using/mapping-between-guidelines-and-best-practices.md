@@ -82,7 +82,7 @@ ht-degree: 1%
 
 | 优先级2检查点 | 检查点说明 | 合规性所需的LiveCycle最佳实践 | 注释 |
 |------------|------------------------|-------------------------------------------------|-------|
-| [2.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast) | 当有人看到颜色有缺陷的人或在黑白屏幕上查看时，请确保前景色和背景色组合提供足够的对比度。 [图像的优先级2，文本的优先级3]. | 2.8负责任地使用颜色 | |
+| [2.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-color-contrast) | 当有人看到颜色有缺陷的人或在黑白屏幕上查看时，请确保前景色和背景色组合提供足够的对比度。 [图像的优先级2，文本的优先级3]。 | 2.8负责任地使用颜色 | |
 | [3.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-use-markup) | 当存在合适的标记语言时，使用标记而不是图像来传递信息。 | <ul><li>2.1保持表单简单易用</li><li> 2.1.1避免移动、闪烁或闪烁内容</li> <li>2.2配置表单属性以生成辅助功能信息始终使用实际文本而不是文本的图像。</li> | |
 | [3.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-identify-grammar) | 创建验证已发布的正式语法的文档。 | | PDF forms必须匹配已发布的PDF规范，才能在Adobe Reader中渲染。 |
 | [3.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-style-sheets) | 使用样式表控制布局和演示。 | 不适用 | |
@@ -98,7 +98,7 @@ ht-degree: 1%
 | [7.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement) | 在用户代理允许用户冻结移动内容之前，请避免在页面中移动。 | 2.1保持表单简单易用 | |
 | [7.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh) | 在用户代理提供停止刷新的功能之前，请勿定期创建自动刷新页面。 | 不适用 | |
 | [7.5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-auto-forward) | 在用户代理提供停止自动重定向功能之前，请勿使用标记自动重定向页面。 而是将服务器配置为执行重定向。 | 不适用 | |
-| [8.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-directly-accessible) | 使编程元素（如脚本和小程序）可直接访问或与辅助技术兼容 [优先级1（如果功能重要且未在其他位置显示），否则优先级2。] | 2.11避免中断脚本编写 | |
+| [8.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-directly-accessible) | 使编程元素（如脚本和小程序）可直接访问或与辅助技术兼容[优先级1（如果功能重要且不在其他位置显示），否则优先级2.] | 2.11避免中断脚本编写 | |
 | [9.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable) | 确保任何具有自己界面的元素均能够以独立于设备的方式操作。 | 2.7确保可使用键盘访问表单控件 | |
 | [9.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-device-independent-events) | 对于脚本，请指定逻辑事件处理程序，而不是依赖于设备的事件处理程序。 | 2.7确保可使用键盘访问表单控件 | |
 | [10.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-pop-ups) | 在用户代理允许用户关闭衍生窗口之前，请勿导致出现弹出窗口或其他窗口，也不要在未通知用户的情况下更改当前窗口。 | 2.11避免中断脚本编写 | |
@@ -143,25 +143,25 @@ ht-degree: 1%
 | 1.4.5 [文本的图像](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-presentation.html) | 无特定的LiveCycle技术 | |
 | 1.4.6 [对比度（增强）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast7.html) | 2.8负责任地使用颜色 | |
 | 1.4.7 [低背景音频或无背景音频](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-noaudio.html) | 无特定的LiveCycle技术 | |
-| 1.4.9 [文本的图像（无例外）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html) | 无特定的LiveCycle技术 | |
+| 1.4.9 [文本的图像（无异常）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-text-images.html) | 无特定的LiveCycle技术 | |
 | 2.1 [无障碍键盘](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html) | | |
 | 2.1.1 [键盘](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html) | 2.6确保读取和制表符顺序正确 | |
 | | 2.7确保可使用键盘访问表单控件 | |
 | 2.1.2 [无键盘陷阱](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-trapping.html) | 2.7确保可使用键盘访问表单控件 | |
-| 2.1.3 [键盘（无例外）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html) | 2.6确保读取和制表符顺序正确 | |
+| 2.1.3 [键盘（无异常）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-all-funcs.html) | 2.6确保读取和制表符顺序正确 | |
 | | 2.7确保可使用键盘访问表单控件 | |
 | 2.2 [充足的时间](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits.html) | | |
 | 2.2.1 [计时可调](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html) | 无特定的LiveCycle技术 | |
-| 2.2.2 [暂停、停止、隐藏](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1保持表单简单易用 | |
+| 2.2.2 [暂停，停止，隐藏](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1保持表单简单易用 | |
 | 2.2.3 [无计时](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | 无特定的LiveCycle技术 | |
 | 2.2.4 [中断](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html) | 无特定的LiveCycle技术 | |
-| 2.2.5 [重新身份验证](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | 无特定的LiveCycle技术 | |
+| 2.2.5 [正在重新进行身份验证](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | 无特定的LiveCycle技术 | |
 | 2.3 [癫痫发作] | | |
 | 2.3.1 [三个Flash或低于阈值](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1保持表单简单易用 | |
 | 2.3.2 [三个Flash](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1保持表单简单易用 | |
 | 2.4 [可导航](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
 | 2.4.1 [绕过块](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10提供可导航表单结构 | |
-| 2.4.2 [页面带有标题](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | 无特定的LiveCycle技术 | |
+| 2.4.2 [页面标题为](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | 无特定的LiveCycle技术 | |
 | 2.4.3 [焦点顺序](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6确保读取和制表符顺序正确 | |
 | 2.4.4 [链接目的（在上下文中）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | 无特定的LiveCycle技术 | 链接目的取决于作者是否为链接的元素选择有意义的文本。 |
 | 2.4.5 [多种方式](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10提供可导航表单结构 | |
@@ -169,21 +169,21 @@ ht-degree: 1%
 | 2.4.7 [焦点可见](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | 无特定的LiveCycle技术 | LiveCycle表单中的默认焦点可见。 |
 | 2.4.8 [位置](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html) | 无特定的LiveCycle技术 | 不适用：LiveCycle表单不需要导航系统。 |
 | 2.4.9 [链接目的（仅限链接）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | 无特定的LiveCycle技术 | 链接目的取决于作者是否为链接的元素选择有意义的文本。 |
-| 2.4.10 [章节标题](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10提供可导航表单结构 | |
+| 2.4.10 [节标题](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10提供可导航表单结构 | |
 | 3.1 [可读](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning.html) | | |
 | 3.1.1 [页面语言](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-doc-lang-id.html) | 2.13识别自然语言和语言的任何变化 | |
-| 3.1.2 [局部语言](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html) | 2.13识别自然语言和语言的任何变化 | |
-| 3.1.3 [不寻常字词](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html) | 无特定的LiveCycle技术 | |
+| 3.1.2 [部分语言](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-other-lang-id.html) | 2.13识别自然语言和语言的任何变化 | |
+| 3.1.3 [不寻常的单词](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-idioms.html) | 无特定的LiveCycle技术 | |
 | 3.1.4 [缩写](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-located.html) | 无特定的LiveCycle技术 | |
-| 3.1.5 [读取级别](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html) | 无特定的LiveCycle技术 | |
+| 3.1.5 [正在读取级别](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-supplements.html) | 无特定的LiveCycle技术 | |
 | 3.1.6 [发音](https://www.w3.org/TR/UNDERSTANDING-WCAG20/meaning-pronunciation.html) | 无特定的LiveCycle技术 | |
 | 3.2 [可预测](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior.html) | | |
 | 3.2.1 [聚焦](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-receive-focus.html) | 2.11避免中断脚本编写 | |
 | 3.2.2 [输入](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-unpredictable-change.html) | 2.11避免中断脚本编写 | |
 | 3.2.3 [一致的导航](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-locations.html) | 2.10提供可导航表单结构 | |
 | 3.2.4 [一致的标识](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-consistent-functionality.html) | <ul><li>2.3选择正确的控件</li><li>2.5为表单控件提供适当的标签</li> | |
-| 3.2.5 [按请求更改](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html) | 2.11避免中断脚本编写 | |
-| 3.3 [辅助输入](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html) | | |
+| 3.2.5 [更改请求](https://www.w3.org/TR/UNDERSTANDING-WCAG20/consistent-behavior-no-extreme-changes-context.html) | 2.11避免中断脚本编写 | |
+| 3.3 [输入辅助](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error.html) | | |
 | 3.3.1 [错误标识](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-identified.html) |  | LiveCycleDesigner提供了一些工具，用于根据需要标记表单字段和执行表单输入验证。 |
 | 3.3.2 [标签或说明](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html) | 2.5为表单控件提供适当的标签 | |
 | 3.3.3 [错误建议](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html) |  | LiveCycleDesigner提供了一些工具，用于根据需要标记表单字段和执行表单输入验证。 |
@@ -192,7 +192,7 @@ ht-degree: 1%
 | 3.3.6 [错误预防（全部）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | 无特定的LiveCycle技术 | |
 | 4.1 [兼容](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
 | 4.1.1 [解析](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | 无特定的LiveCycle技术 | |
-| 4.1.2 [名称、角色、值](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3选择正确的控件</li> <li>2.5为表单控件提供适当的标签</li> | |
+| 4.1.2 [名称，角色，值](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3选择正确的控件</li> <li>2.5为表单控件提供适当的标签</li> | |
 
 
 

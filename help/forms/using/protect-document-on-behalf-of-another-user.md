@@ -1,6 +1,6 @@
 ---
 title: Protect代表另一个用户的文档
-description: 了解AEM Forms Document Security Java&trade； SDK如何为用户帐户提供API以代表其他用户保护文档。
+description: 了解AEM Forms Document Security Java&amp；trade； SDK如何为用户帐户提供API来代表其他用户保护文档。
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004

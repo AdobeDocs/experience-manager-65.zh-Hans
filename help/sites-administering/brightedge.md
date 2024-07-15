@@ -63,10 +63,10 @@ ht-degree: 0%
 激活BrightEdge配置以将其复制到发布实例上，并使已发布的页面能够与BrightEdge服务交互。
 
 1. 在边栏上，单击站点，然后浏览并选择与BrightEdge配置关联的页面。
-1. 单击“发布”图标，然后单击“发布”。
+1. 单击Publish图标，然后单击Publish。
 
    ![chlimage_1-7](assets/chlimage_1-7a.png)
 
-1. 在显示的配置列表中，确保已选择BrightEdge配置，然后单击“发布”。
+1. 在显示的配置列表中，确保已选择BrightEdge配置，然后单击Publish。
 
    ![chlimage_1-8](assets/chlimage_1-8a.png)

@@ -24,4 +24,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->虽然有脚手架 [模式](/help/sites-authoring/author-environment-tools.md#page-modes) 如果可用，则在经典UI中维护和创建基架以及从基架创建新页面。 请参阅 [基架](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) 有关详细信息，请参阅经典UI创作文档。
+>虽然有基架[模式](/help/sites-authoring/author-environment-tools.md#page-modes)可用，但基架的维护和创建以及从基架创建新页面是在经典UI中完成的。 有关详细信息，请参阅经典UI创作文档中的[基架](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)。

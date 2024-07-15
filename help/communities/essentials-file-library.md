@@ -46,7 +46,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong> 属性</strong></td>
-   <td>请参阅 <a href="file-library.md">文件库功能</a></td>
+   <td>请参阅<a href="file-library.md">文件库功能</a></td>
   </tr>
  </tbody>
 </table>
@@ -63,20 +63,20 @@ ht-degree: 2%
 
 ### 文件库功能 {#file-library-function}
 
-社区站点结构包括 [文件库功能](functions.md#file-library-function)，包括已配置的 `file library` 组件。
+包含[文件库函数](functions.md#file-library-function)的社区站点结构包含配置的`file library`组件。
 
 ### 访问为文件库(UGC)发布的注释 {#accessing-comments-posted-for-file-libraries-ugc}
 
 UGC应使用标准审核方法之一进行审核。
-请参阅 [审核用户生成的内容](moderate-ugc.md).
+请参阅[审核用户生成的内容](moderate-ugc.md)。
 
-自AEM 6.1 Communities起，使用 [公用存储](working-with-srp.md) for UGC包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）是什么。
+截至AEM 6.1 Communities，使用用于UGC的[公用存储](working-with-srp.md)包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）如何。
 
-**UGC在存储库中的位置和格式可能会发生更改，恕不发出警告**.
+**存储库中UGC的位置和格式可能会发生更改，而不会出现警告**。
 
 请参阅：
 
-* [存储资源提供程序概述](srp.md)  — 简介和存储库使用情况概述。
-* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例。
-* [使用SRP访问UGC](accessing-ugc-with-srp.md)  — 编码准则。
-* [SocialUtils重构](socialutils.md)  — 将已弃用的实用程序方法映射到当前SRP实用程序方法。
+* [存储资源提供程序概述](srp.md) — 简介和存储库使用情况概述。
+* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用工具方法和示例。
+* [使用SRP访问UGC](accessing-ugc-with-srp.md) — 编码准则。
+* [SocialUtils重构](socialutils.md) — 将已弃用的实用工具方法映射到当前的SRP实用工具方法。

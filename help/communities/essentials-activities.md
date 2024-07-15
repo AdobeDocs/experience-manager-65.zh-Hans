@@ -23,17 +23,17 @@ ht-degree: 2%
 
 当社区成员关注感兴趣的帖子或其他社区成员时，关注功能会添加另一组活动。
 
-全部 [社区站点](/help/communities/overview.md#communitiessites) 包括已登录成员的用户配置文件页面，该页面将以相同方式显示成员活动。
+所有[社区站点](/help/communities/overview.md#communitiessites)都包含已登录成员的用户配置文件页面，该页面将以相同方式显示成员活动。
 
 ## 概念 {#concepts}
 
-An *活动流* 是成员最近执行的活动的列表或单个内容线程上的最近活动的列表，如论坛主题或博客。
+*活动流*&#x200B;是成员最近执行的活动的列表或单个内容线程上最近活动的列表，如论坛主题或博客。
 
 成员可以关注活动流，方法是关注另一个个人或内容。
 
-A *新闻馈送* 是成员后面紧跟的活动流合并到单个流中。
+*新闻馈送*&#x200B;是将成员所跟踪的活动流合并到单个流中。
 
-A *[社交图](/help/communities/essentials-socialgraph.md)* 捕获一个成员与另一个成员的以下关系。
+*[社交图](/help/communities/essentials-socialgraph.md)*&#x200B;捕获了一个成员与另一个成员的以下关系。
 
 ## 适用于客户端的Essentials {#essentials-for-client-side}
 
@@ -61,7 +61,7 @@ A *[社交图](/help/communities/essentials-socialgraph.md)* 捕获一个成员�
   </tr>
   <tr>
    <td><strong> 属性</strong></td>
-   <td>请参阅 <a href="/help/communities/activities.md">活动流功能</a></td>
+   <td>请参阅<a href="/help/communities/activities.md">活动流功能</a></td>
   </tr>
  </tbody>
 </table>
@@ -78,4 +78,4 @@ A *[社交图](/help/communities/essentials-socialgraph.md)* 捕获一个成员�
 
 ### 活动流功能 {#activity-stream-function}
 
-社区站点结构包括 [活动流功能](/help/communities/functions.md#activity-stream-function)，包括已配置的 `activity streams` 组件。
+包含[活动流函数](/help/communities/functions.md#activity-stream-function)的社区站点结构包含配置的`activity streams`组件。

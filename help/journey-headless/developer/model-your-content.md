@@ -18,7 +18,7 @@ ht-degree: 79%
 
 ## 迄今为止的故事 {#story-so-far}
 
-一开始， [了解CMS Headless开发](learn-about.md) 涵盖了Headless内容投放以及应当使用它的原因。 则 [AEM Headless快速入门](getting-started.md) 在您自己的项目上下文中描述了AEM Headless。
+首先，[了解CMS Headless开发](learn-about.md)介绍了Headless内容投放以及为什么要使用它。 然后[AEM Headless快速入门](getting-started.md)在您自己的项目上下文中描述了AEM Headless。
 
 在 AEM Headless 历程的上一个文档[首次 AEM Headless 使用体验的路径](path-to-first-experience.md)中，您已了解实施第一个项目所需的步骤。阅读本文档后，您应：
 
@@ -48,7 +48,7 @@ ht-degree: 79%
 
 *这是一个大而复杂的领域*。
 
-也许是，也许不是。这当然是压倒性的 ***复杂*** 外面的世界。 数据建模用于定义非常（非常）小子部分的简化表示，使用特定目的所需的特定信息。
+也许是，也许不是。这当然是一个极其复杂的&#x200B;***世界***。 数据建模用于定义非常（非常）小子部分的简化表示，使用特定目的所需的特定信息。
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ ht-degree: 79%
 
 ### 概念 {#concepts}
 
-您要描述的内容称为 **实体**  — 基本上就是您要存储其相关信息的“内容”。
+要描述的内容称为&#x200B;**实体** — 基本上就是要存储相关信息的“内容”。
 
 您要存储的其相关信息是&#x200B;**特性**（属性），例如教师的姓名和资历。
 
@@ -94,7 +94,7 @@ ht-degree: 79%
 
 ### 基本信息 {#basics}
 
-通常，可以通过绘制 **概念架构** 用于描述实体及其关系。 通常这是高层次的（概念性的）。
+通常，您可以首先绘制描述实体及其关系的&#x200B;**概念架构**。 通常这是高层次的（概念性的）。
 
 在此稳定之后，您可以将模型转换用于描述实体、属性和关系的&#x200B;**逻辑架构**。在此级别，仔细检查定义以消除重复项并优化您的设计。
 
@@ -169,9 +169,9 @@ AEM 使用内容片段提供以 Headless 方式将内容交付到应用程序所
 
 在模型中：
 
-1. **数据类型** 允许您定义各个属性。
+1. **数据类型**允许您定义各个属性。
 例如，以**文本**&#x200B;形式定义包含教师姓名的字段，并以&#x200B;**数字**&#x200B;形式定义其服务年数。
-1. 数据类型 **内容引用** 和 **片段引用** 允许您创建与AEM中其他内容的关系。
+1. 数据类型&#x200B;**内容引用**&#x200B;和&#x200B;**片段引用**&#x200B;允许您创建与AEM中其他内容的关系。
 1. **片段引用**&#x200B;数据类型可让您通过嵌套内容片段（根据模型类型）来实施结构的多个层次。这对于您的内容建模是至关重要的。
 
 例如：
@@ -217,7 +217,7 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 >
 >请参阅“其他资源 – 配置浏览器中的内容片段”
 
-之后，可以创建内容片段模型并定义结构。可以在工具>资产>内容片段模型下执行此操作。 例如：
+之后，可以创建内容片段模型并定义结构。可以在“工具”>“Assets”>“内容片段模型”下执行此操作。 例如：
 
 ![内容片段模型](assets/cfm-model.png)
 
@@ -273,10 +273,10 @@ tbc...
 
 ## 其他资源 {#additional-resources}
 
-* [使用内容片段](/help/assets/content-fragments/content-fragments.md)  — 内容片段的导入页面。
-   * [配置浏览器中的内容片段](/help/assets/content-fragments/content-fragments-configuration-browser.md)  — 在配置浏览器中启用内容片段功能。
-   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)  — 创建和编辑内容片段模型。
-   * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 创建和创作内容片段；此页将引导您进入其他详细部分。
+* [使用内容片段](/help/assets/content-fragments/content-fragments.md) — 内容片段的导入页面。
+   * [配置浏览器中的内容片段](/help/assets/content-fragments/content-fragments-configuration-browser.md) — 启用配置浏览器中的内容片段功能。
+   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md) — 创建和编辑内容片段模型。
+   * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md) — 创建和创作内容片段；此页将引导您进入其他详细部分。
 * [AEM GraphQL架构](access-your-content.md) - GraphQL如何实现模型。
 * [示例内容片段结构](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [AEM Headless 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 一个简短的视频教程系列，概述了如何使用 AEM 的 Headless 功能，包括内容建模和 GraphQL。

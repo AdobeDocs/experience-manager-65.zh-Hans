@@ -29,14 +29,14 @@ ht-degree: 0%
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-请参阅 [将AEM与Adobe Campaign Classic集成](/help/sites-administering/campaignonpremise.md) 以了解更多信息。
+有关详细信息，请参阅[将AEM与Adobe Campaign Classic集成](/help/sites-administering/campaignonpremise.md)。
 
 ## 创建自定义表单映射 {#creating-custom-form-mappings-2}
 
 要创建自定义表单映射，您需要按照以下各节中详述的这些高级步骤进行操作：
 
 1. 创建自定义表。
-1. 扩展 **种子** 表格。
+1. 扩展&#x200B;**seed**&#x200B;表。
 1. 创建自定义映射。
 1. 根据自定义映射创建投放。
 1. 在AEM中构建表单，该表单将使用创建的投放。
@@ -55,15 +55,15 @@ ht-degree: 0%
 </element>
 ```
 
-创建事件表后，运行 **更新数据库结构向导** 以创建表。
+创建事件表后，运行&#x200B;**更新数据库结构向导**&#x200B;以创建该表。
 
 ### 扩展种子表 {#extending-the-seed-table}
 
-在Adobe Campaign中，选择 **添加** 创建 **种子地址(nms)** 表格。
+在Adobe Campaign中，选择&#x200B;**添加**&#x200B;以创建&#x200B;**种子地址(nms)**&#x200B;表的扩展。
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-现在，使用 **事件** 表以扩展 **种子** 表：
+现在，使用&#x200B;**event**&#x200B;表中的字段扩展&#x200B;**seed**&#x200B;表：
 
 ```xml
 <element label="Event" name="custom_cus_event">
@@ -74,31 +74,31 @@ ht-degree: 0%
  </element>
 ```
 
-之后，运行 **更新数据库向导** 以应用更改。
+之后，运行&#x200B;**更新数据库向导**&#x200B;以应用更改。
 
 ### 创建自定义目标映射 {#creating-custom-target-mapping}
 
-在 **管理/营销活动管理** t，转到 **目标映射** 并添加新的T **目标映射。**
+在&#x200B;**管理/营销活动管理** t中，转到&#x200B;**目标映射**&#x200B;并添加新的T **目标映射。**
 
 >[!NOTE]
 >
->请确保对以下内容使用有意义的名称： **内部名称**.
+>确保为&#x200B;**内部名称**&#x200B;使用有意义的名称。
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
 ### 创建自定义投放模板 {#creating-a-custom-delivery-template}
 
-在此步骤中，您将添加一个使用所创建的 **目标映射**.
+在此步骤中，您将添加一个使用创建的&#x200B;**目标映射**&#x200B;的投放模板。
 
-在 **资源/模板**，导航到投放模板并复制现有AEM投放。 当您单击 **至**，选择创建事件 **目标映射**.
+在&#x200B;**资源/模板**&#x200B;中，导航到投放模板并复制现有AEM投放。 单击&#x200B;**To**&#x200B;后，选择创建事件&#x200B;**目标映射**。
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### 在AEM中构建表单 {#building-the-form-in-aem}
 
-在AEM中，确保您已在中配置Cloud Service **页面属性**.
+在AEM中，确保已在&#x200B;**页面属性**&#x200B;中配置了Cloud Service。
 
-然后，在 **Adobe Campaign** 选项卡，选择在中创建的投放 [创建自定义投放模板](#creating-a-custom-delivery-template).
+然后在&#x200B;**Adobe Campaign**&#x200B;选项卡中，选择在[创建自定义投放模板](#creating-a-custom-delivery-template)中创建的投放。
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -106,7 +106,7 @@ ht-degree: 0%
 
 配置字段后，您需要手动更改映射。
 
-在CRXDE-Lite中，转到 **jcr：content** （属于页面）节点，并更改 **acMapping** 的内部名称的值 **目标映射**.
+在CRXDE-LITE中，转到&#x200B;**jcr：content**（页面的）节点，并将&#x200B;**acMapping**&#x200B;值更改为&#x200B;**目标映射**&#x200B;的内部名称。
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -122,8 +122,8 @@ ht-degree: 0%
 
 ## 疑难解答 {#troubleshooting}
 
-**“元素‘@eventdate’的值‘02/02/2015’的类型无效(类型为‘Event ([adb：event])&#39;)”**
+**“元素“@eventdate”的值“02/02/2015”的类型无效(类型为“Event ([adb：event])”的文档)”**
 
-提交表单时，此错误将记录在 **error.log** 在AEM中。
+提交表单时，此错误记录在AEM的&#x200B;**error.log**&#x200B;中。
 
-这是由于日期字段的格式无效。 解决方法是提供 **yyyy-mm-dd** 作为值。
+这是由于日期字段的格式无效。 解决方法是提供&#x200B;**yyyy-mm-dd**&#x200B;作为值。

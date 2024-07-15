@@ -20,13 +20,13 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-FFmpeg是一种用于转换和流式传输音频和视频的解决方案，安装后用于正确的转码 [视频资产](../../help/sites-authoring/default-components-foundation.md#video).
+FFmpeg是一种用于转换和流式传输音频和视频的解决方案，安装后用于对[视频资产](../../help/sites-authoring/default-components-foundation.md#video)进行正确的转码。
 
 ## 安装FFmpeg {#installing-ffmpeg}
 
-FFmpeg应安装在托管AEM的服务器上 *作者* 实例。
+FFmpeg应安装在托管AEM *作者*&#x200B;实例的服务器上。
 
-1. 转到 [https://www.ffmpeg.org](https://www.ffmpeg.org/).
+1. 转到[https://www.ffmpeg.org](https://www.ffmpeg.org/)。
 1. 针对您的特定环境（Macintosh、Windows或Linux）下载最新版本的FFmpeg。
 
    * 由于旧版本中存在安全漏洞，请务必保持FFmpeg处于最新状态。
@@ -41,26 +41,26 @@ FFmpeg应安装在托管AEM的服务器上 *作者* 实例。
 
 ## 配置FFmpeg转码服务 {#configure-ffmpeg-transcoding-service}
 
-默认情况下，在安装FFmpeg时，将根据 [!UICONTROL DAM更新资产] 工作流定义。
+默认情况下，在安装FFmpeg时，将根据[!UICONTROL DAM更新资产]工作流定义配置多个演绎版（转码）。
 
 由于转码需要占用大量CPU，因此建议修改目标演绎版列表。 在大多数情况下，不需要转码。
 
-要修改 [!UICONTROL DAM更新资产] 工作流，在本例中，要关闭转码：
+要修改[!UICONTROL DAM更新资产]工作流，并在此示例中关闭转码，请执行以下操作：
 
 * 使用管理权限登录创作实例。
-* 在全局导航中，导航到 **[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**.
-* 定位 **[!UICONTROL DAM更新资产]**.
+* 从全局导航中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]**。
+* 找到&#x200B;**[!UICONTROL DAM更新资产]**。
 * 双击以打开工作流，以便在经典UI中进行编辑。
 
   结果位置： [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* 双击 **[!UICONTROL FFmpeg转码]** 步骤以访问步骤属性对话框。
-* 在 **[!UICONTROL 进程]** 选项卡：
+* 双击&#x200B;**[!UICONTROL FFmpeg转码]**&#x200B;步骤以访问“步骤属性”对话框。
+* 在&#x200B;**[!UICONTROL 进程]**&#x200B;选项卡下：
 
    * **[!UICONTROL 参数]**：清除所有条目以禁用转码默认值： `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 
-* 选择 **[!UICONTROL 确定]** 关闭 `Step Properties` 对话框。
+* 选择&#x200B;**[!UICONTROL 确定]**&#x200B;以关闭`Step Properties`对话框。
 
-* 选择 **[!UICONTROL 保存]** 以保存 `DAM Update Asset` 工作流。
+* 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存`DAM Update Asset`工作流。

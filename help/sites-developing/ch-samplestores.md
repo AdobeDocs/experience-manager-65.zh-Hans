@@ -32,13 +32,13 @@ ContextHub提供了几个可在解决方案中使用的示例商店候选项。 
 
 存储已解析和未解析的ContextHub区段。 自动从ContextHub SegmentManager检索区段。
 
-### 源位置 {#source-location-segmentation}
+### Source位置 {#source-location-segmentation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/segmentation`
 
 ### 基本实施 {#base-implementation-segmentation}
 
-aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+aem.segmentation存储候选扩展了[`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)。
 
 ### 配置 {#configuration-segmentation}
 
@@ -58,13 +58,13 @@ aem.segmentation存储候选扩展 [`ContextHub.Store.PersistedJSONPStore`](/hel
 
 contexthub.geolocation示例存储候选文件使用Google Maps获取并存储有关客户端位置的信息。
 
-### 源位置 {#source-location-geolocation}
+### Source位置 {#source-location-geolocation}
 
 `/libs/settings/cloudsettings/legacy/contexthub/geolocation`
 
 ### 基本实施 {#base-implementation-geolocation}
 
-contexthub.geolocation存储候选项扩展 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+contexthub.geolocation存储候选扩展了[`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)。
 
 ### 配置 {#configuration-geolocation}
 
@@ -110,23 +110,23 @@ contexthub.geolocation存储候选项扩展 [`ContextHub.Store.PersistedJSONPSto
 
 >[!NOTE]
 >
->Chrome 50.x中引入的安全策略要求所有与地理位置相关的调用都通过安全连接进行。 因此，如果AEM也通过https运行，则AEM强制对地理位置API调用使用https。 否则，将使用http来遵守相同来源的策略。 请参阅 [此Google博客帖子](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) 以了解有关Chrome中更改的更多详细信息。
+>Chrome 50.x中引入的安全策略要求所有与地理位置相关的调用都通过安全连接进行。 因此，如果AEM也通过https运行，则AEM强制对地理位置API调用使用https。 否则，将使用http来遵守相同来源的策略。 有关Chrome中更改的更多详细信息，请参阅[此Google博客文章](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)。
 
 ## contexthub.surferinfo示例存储候选项 {#contexthub-surferinfo-sample-store-candidate}
 
 存储有关当前客户端环境的信息，如设备、窗口、浏览器、日期和时间。
 
-### 源位置 {#source-location-surferinfo}
+### Source位置 {#source-location-surferinfo}
 
 `/libs/settings/cloudsettings/legacy/contexthub/surferinfo`
 
 ### 基本实施 {#base-implementation-surferinfo}
 
-contexthub.datetime存储候选项扩展 [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+contexthub.datetime存储候选扩展了[`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)。
 
 ### 配置 {#configuration-surferinfo}
 
-默认配置继承自 `ContextHub.Store.PersistedStore`.
+默认配置继承自`ContextHub.Store.PersistedStore`。
 
 ### 数据项 {#data-items-surferinfo}
 
@@ -183,17 +183,17 @@ contexthub.datetime存储候选项扩展 [`ContextHub.Store.PersistedStore`](/he
 
 granite.emulators示例存储候选项存储有关客户端设备的信息。
 
-### 源位置 {#source-location-emulators}
+### Source位置 {#source-location-emulators}
 
 `/libs/settings/cloudsettings/legacy/contexthub/emulators`
 
 ### 基本实施 {#base-implementation-emulators}
 
-contexthub.geolocation存储候选项扩展 [`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore).
+contexthub.geolocation存储候选扩展了[`ContextHub.Store.PersistedStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedstore)。
 
 ### 配置 {#configuration-emulators}
 
-默认配置包括一个名为的数组 `defaultEmulators` 其中包含有关不同设备的信息。 在创建存储时，根据需要在详细配置属性中提供不同的设备配置文件，使用的格式如下例所示：
+默认配置包括一个名为`defaultEmulators`的数组，其中包含有关不同设备的信息。 在创建存储时，根据需要在详细配置属性中提供不同的设备配置文件，使用的格式如下例所示：
 
 ```xml
 {
@@ -316,13 +316,13 @@ contexthub.geolocation存储候选项扩展 [`ContextHub.Store.PersistedStore`](
 
 存储有关当前用户的信息。
 
-### 源位置 {#source-location-profile}
+### Source位置 {#source-location-profile}
 
 `/libs/settings/cloudsettings/legacy/contexthub/profile`
 
 ### 基本实施 {#base-implementation-profile}
 
-contexthub.datetime存储候选项扩展 [`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore).
+contexthub.datetime存储候选扩展了[`ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)。
 
 ### 配置 {#configuration-profile}
 

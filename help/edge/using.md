@@ -60,4 +60,4 @@ AEM Assets 的 Sidekick 插件支持访问以下项目：
 * 有关如何开始使用 Edge Delivery 的详细信息，请参阅 Edge Delivery 文档的[构建](https://www.hlx.live/docs/#build)部分。
 * 要了解如何使用 Edge Delivery 创作和发布内容，请参阅[“发布”部分](https://www.hlx.live/docs/authoring)。
 * 要了解如何使用 Sidekick 扩展，请参阅[使用 Sidekick](https://www.hlx.live/docs/sidekick) 页面。
-* 有关AEM创作，请参阅 [“创作概念”页](/help/sites-authoring/author.md))
+* 有关AEM创作，请参阅[创作概念页](/help/sites-authoring/author.md)

@@ -31,7 +31,7 @@ ht-degree: 4%
 * 从所需数据源获取的XML数据的URL（使用cmDataUrl参数）。
 
 例如，自定义门户会将URL准备为\
-`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`，这可以是门户上链接的href。
+`https://'[server]:[port]'/[contextPath]/aem/forms/createcorrespondence.html?random=[timestamp]&cmLetterId=[letter identifier]&cmDataUrl=[data URL]`，这可能是来自门户上链接的href。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ ht-degree: 4%
 
 ## 基于数据的内联调用 {#inline-data-based-invocation}
 
-调用“创建通信”应用程序的另一个（也是更安全的）方法可能是，只需点击位于https://&#39;的URL即可[服务器]：[端口]&#39;/[contextpath]/aem/forms/createcorrespondence.html中，在发送参数和数据，以作为POST请求调用创建通信应用程序时（对最终用户隐藏这些参数和数据）。 这也意味着您现在可以内联为“创建通信”应用程序传递XML数据（作为同一请求的一部分，使用cmData参数），这在之前的方法中是不可能的/理想的。
+调用创建通信应用程序的另一个（也是更安全的）方法可能是，在发送参数和数据以作为POST请求调用创建通信应用程序时，仅点击位于https://&#39;[server]：[port]&#39;/[contextPath]/aem/forms/createcorrespondence.html的URL（对最终用户隐藏这些参数和数据）。 这也意味着您现在可以内联为“创建通信”应用程序传递XML数据（作为同一请求的一部分，使用cmData参数），这在之前的方法中是不可能的/理想的。
 
 ### 用于指定书信的参数 {#parameters-for-specifying-letter}
 
@@ -66,7 +66,7 @@ ht-degree: 4%
   <tr>
    <td>cmDataUrl<br /> </td> 
    <td>URL</td> 
-   <td>使用基本协议（如cq、ftp、http或file）从源文件中获取XML数据。<br /> </td> 
+   <td>使用基本协议（如cq、ftp、http或file）的源文件中的XML数据。<br /> </td> 
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
@@ -95,7 +95,7 @@ ht-degree: 4%
   <tr>
    <td>cmPreview<br /> </td> 
    <td>布尔值</td> 
-   <td>如果为True，则在预览模式下打开书信<br /> </td> 
+   <td>若为True，则以预览模式打开书信<br /> </td> 
   </tr>
   <tr>
    <td>随机</td> 

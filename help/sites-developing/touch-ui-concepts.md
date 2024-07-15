@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Adobe Experience Manager触屏优化UI的概念{#concepts-of-the-aem-touch-enabled-ui}
 
-Adobe Experience Manager (AEM)的触屏UI具有 [响应式设计](/help/sites-authoring/responsive-layout.md) 适用于设计用于触摸和桌面设备的创作环境。
+Adobe Experience Manager (AEM)为创作环境提供了带[响应式设计](/help/sites-authoring/responsive-layout.md)的触控式UI，该设计可在触控和桌面设备上运行。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Adobe Experience Manager (AEM)的触屏UI具有 [响应式设计](/help/sites-au
    * 指示您当前在该控制台中使用哪个控制台，或您的位置，或同时使用两者
    * 为左侧边栏选择
    * 痕迹导航
-   * 访问适当的 **创建** 操作
+   * 访问适当的&#x200B;**创建**&#x200B;操作
    * 查看选择
 * 内容区域：
    * 列出内容项目（页面、资产、论坛帖子等）
@@ -51,12 +51,12 @@ Adobe Experience Manager (AEM)的触屏UI具有 [响应式设计](/help/sites-au
 
 >[!NOTE]
 >
->几乎所有的AEM功能都已移植到触屏UI。 但是，在某些有限的情况下，功能会还原为经典UI。 请参阅 [触屏UI功能状态](/help/release-notes/touch-ui-features-status.md) 以了解更多信息。
+>几乎所有的AEM功能都已移植到触屏UI。 但是，在某些有限的情况下，功能会还原为经典UI。 有关详细信息，请参阅[触屏UI功能状态](/help/release-notes/touch-ui-features-status.md)。
 
 触屏优化UI由Adobe设计，旨在提供跨多个产品的一致性用户体验。 它基于：
 
-* **Coral UI** (CUI)触屏UI中Adobe视觉样式的实现。 Coral UI提供了您的产品/项目/Web应用程序采用UI可视化样式所需的一切。
-* **Granite UI** 组件是使用Coral UI构建的。
+* **Coral UI** (CUI)针对触屏UI实现Adobe的可视样式。 Coral UI提供了您的产品/项目/Web应用程序采用UI可视化样式所需的一切。
+* **Granite UI**&#x200B;组件是使用Coral UI生成的。
 
 触屏UI的基本原则包括：
 
@@ -68,7 +68,7 @@ Adobe Experience Manager (AEM)的触屏UI具有 [响应式设计](/help/sites-au
 * 包含嵌入的测试
 * 自下而上的设计，以确保将这些原则应用于每个元素和组件
 
-有关触屏UI结构的更多概述，请参阅 [AEM触屏优化UI的结构](/help/sites-developing/touch-ui-structure.md).
+有关触屏UI结构的更多概述，请参阅[AEM触屏启用UI的结构](/help/sites-developing/touch-ui-structure.md)。
 
 ## AEM技术栈栈 {#aem-technology-stack}
 
@@ -92,7 +92,7 @@ Granite是Adobe的Open Web栈栈，提供各种组件，包括：
 >
 >Granite作为Adobe中的一个开放开发项目运行：在整个公司中对代码、讨论和问题做出贡献。
 >
->但是，Granite会 **非** 开源项目。 它在很大程度上基于多个开源项目（特别是Apache Sling、Felix、Jackrabbit和Lucene），但Adobe在公共项目和内部项目之间划清了界限。
+>但是，Granite是&#x200B;**不是**&#x200B;开源项目。 它在很大程度上基于多个开源项目（特别是Apache Sling、Felix、Jackrabbit和Lucene），但Adobe在公共项目和内部项目之间划清了界限。
 
 ## Granite UI {#granite-ui}
 
@@ -124,7 +124,7 @@ Granite UI：
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-* [Granite UI基础组件](#granite-ui-foundation-components)
+* [Granite UI Foundation组件](#granite-ui-foundation-components)
 此基础组件库可由其他库使用或扩展。
 * [Granite UI管理组件](#granite-ui-administration-components)
 
@@ -139,13 +139,13 @@ Granite UI中的客户端 — 服务器通信由超文本组成，而不是对�
 
 #### 客户端 {#client-side}
 
-它使用HTML词表的扩展，但前提是作者可以表达构建交互式Web应用程序的意图。 这是类似的方法 [WAI-ARIA](https://www.w3.org/TR/wai-aria/) 和 [微格式](https://microformats.org/).
+它使用HTML词表的扩展，但前提是作者可以表达构建交互式Web应用程序的意图。 这是类似于[WAI-ARIA](https://www.w3.org/TR/wai-aria/)和[微格式](https://microformats.org/)的方法。
 
 它主要由客户端上运行的JS和CSS代码解释的一组交互模式（例如，异步提交表单）组成。 客户端的作用是增强标记（由服务器作为超媒体提供者提供）以进行交互。
 
 客户端独立于任何服务器技术。 只要服务器给出相应的标记，客户端就可以完成它的任务。
 
-目前，JS和CSS代码以Granite形式交付 [clientlibs](/help/sites-developing/clientlibs.md) 在类别下：
+目前，JS和CSS代码以Granite [clientlibs](/help/sites-developing/clientlibs.md)的形式在以下类别下交付：
 
 `granite.ui.foundation and granite.ui.foundation.admin`
 
@@ -155,7 +155,7 @@ Granite UI中的客户端 — 服务器通信由超文本组成，而不是对�
 
 #### 服务器端 {#server-side}
 
-这是由sling组件的集合构成的，这些组件使作者能够 *撰写* 网络应用程序速度很快。 开发人员开发组件，作者将组件组装为Web应用程序。 服务器端的角色是为客户端提供超媒体可供性（标记）。
+这是由sling组件的集合形成的，该集合使作者能够&#x200B;*快速撰写* Web应用程序。 开发人员开发组件，作者将组件组装为Web应用程序。 服务器端的角色是为客户端提供超媒体可供性（标记）。
 
 目前，组件位于Granite存储库中：
 
@@ -200,7 +200,7 @@ Granite UI和ExtJS（用于经典UI）之间的差异也令人感兴趣：
 
 ### Granite UI基础组件 {#granite-ui-foundation-components}
 
-此 [Granite UI基础组件](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 提供构建任何UI所需的基本构建块。 其中包括：
+[Granite UI基础组件](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)提供了构建任何UI所需的基本构建块。 其中包括：
 
 * 按钮
 * 超链接
@@ -257,7 +257,7 @@ Granite UI和ExtJS（用于经典UI）之间的差异也令人感兴趣：
 
 ### Granite UI管理组件 {#granite-ui-administration-components}
 
-此 [Granite UI管理组件](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) 构建于基础组件之上，以提供任何管理应用程序都可以实施的通用构建块。 其中包括：
+[Granite UI管理组件](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)构建在基础组件上，以提供任何管理应用程序都可以实现的通用构建块。 其中包括：
 
 * 全局导航栏
 * 边栏（骨架）
@@ -314,7 +314,7 @@ HTML元素提供所有基本UI元素（包括导航栏、按钮、菜单、边�
 
 在最基本的级别上，HTML元素是具有专用类名称的HTML标记。 更复杂的元素可以由多个标签组成，这些标签彼此嵌套（以特定方式）。
 
-CSS用于提供实际外观。 为了能够轻松自定义外观（例如，对于品牌策略），实际样式值声明为变量，变量由 [更少](https://lesscss.org/) 运行期间的预处理程序。
+CSS用于提供实际外观。 为了能够轻松自定义外观（例如，对于品牌策略），实际样式值在运行时声明为由[LESS](https://lesscss.org/)预处理程序扩展的变量。
 
 用途：
 
@@ -323,7 +323,7 @@ CSS用于提供实际外观。 为了能够轻松自定义外观（例如，对�
 
 实现：
 
-* 带有灵感来源于以下样式的标记HTML [Bootstrap](https://twitter.github.com/bootstrap/)
+* 带有灵感来自[Bootstrap](https://twitter.github.com/bootstrap/)的样式的HTML标签
 * 类在LESS文件中定义
 * 图标被定义为字体拼写
 
@@ -360,24 +360,24 @@ look-and-feel在LESS中定义，通过专用类名称绑定到元素（为简洁
 
 ### 元素插件 {#element-plugins}
 
-许多HTML元素需要表现出某种动态行为，如打开和关闭弹出菜单。 这是元素插件的角色，这些插件通过使用JavaScript操作DOM来完成此类任务。
+许多HTML元素需要表现出某种动态行为，如打开和关闭弹出菜单。 这是元素插件的作用，这些插件通过使用JavaScript操作DOM来完成此类任务。
 
 插件具有以下任一属性：
 
-* 设计用于操作特定的DOM元素。 例如，一个对话框插件需要找到 `DIV class=dialog`
-* 本质上是通用的。 例如，布局管理器为任何列表提供布局 `DIV` 或 `LI` 元素
+* 设计用于操作特定的DOM元素。 例如，一个对话框插件需要找到`DIV class=dialog`
+* 本质上是通用的。 例如，布局管理器为`DIV`或`LI`元素的任何列表提供布局
 
 插件行为可通过以下任一方式使用参数自定义：
 
 * 通过JavaScript调用传递参数
-* 使用专用 `data-*` 与HTML标记关联的属性
+* 使用与HTML标记关联的专用`data-*`属性
 
 尽管开发人员可以为任何插件选择最佳方法，但经验法则是：
 
-* `data-*` 与HTML布局相关的选项的属性。 例如，指定列数
+* 与HTML布局相关的选项的`data-*`属性。 例如，指定列数
 * 用于与数据相关的功能的API选项/类。 例如，构造要显示的项目列表
 
-使用相同的概念来实施表单验证。 对于要验证的元素，必须将所需的输入表单指定为自定义 `data-*` 属性。 此属性随后用作验证插件的选项。
+使用相同的概念来实施表单验证。 对于要验证的元素，必须将所需的输入表单指定为自定义`data-*`属性。 此属性随后用作验证插件的选项。
 
 >[!NOTE]
 >
@@ -393,9 +393,9 @@ look-and-feel在LESS中定义，通过专用类名称绑定到元素（为简洁
 实现：
 
 * jQuery插件，绑定到特定的DOM元素
-* 使用 `data-*` 用于自定义行为的属性
+* 使用`data-*`属性自定义行为
 
-示例标记的提取(请注意指定为data-&#42; 属性)：
+示例标记的提取（请注意指定为data-&#42;属性的选项）：
 
 ```xml
 <ul data-column-width="220" data-layout="card" class="cards">
@@ -429,11 +429,11 @@ $('.cards').cardlayout ();
 
 ![chlimage_1-86](assets/chlimage_1-86.png)
 
-此 `cardLayout` 插件列出了包含的 `UL` 元素，并考虑父项的宽度。
+`cardLayout`插件根据元素各自的高度并考虑父项的宽度来布局包含的`UL`元素。
 
 ### HTML元素小组件 {#html-elements-widgets}
 
-构件将一个或多个基本元素与JavaScript插件组合在一起，形成“更高级别”的UI元素。 这些元素可以实施比单个元素所能提供的更复杂的行为，以及更复杂的外观。 标记选取器或边栏构件就是一个很好的示例。
+构件将一个或多个基本元素与JavaScript插件相结合，形成“更高级别”UI元素。 这些元素可以实施比单个元素所能提供的更复杂的行为，以及更复杂的外观。 标记选取器或边栏构件就是一个很好的示例。
 
 小组件可以触发和侦听自定义事件，以与页面上的其他小组件协作。 某些构件是使用CoralHTML元素的本机jQuery构件。
 
@@ -482,7 +482,7 @@ $(".tagManager").tagsManager({
 
 ### 实用程序库 {#utility-library}
 
-此库是符合以下条件的JavaScript帮助程序插件和/或函数的集合：
+此库是JavaScript帮助程序插件和/或函数的集合，这些插件和/或函数包括：
 
 * 独立于UI
 * 但是，对于构建功能齐全的Web应用程序来说，这一点至关重要

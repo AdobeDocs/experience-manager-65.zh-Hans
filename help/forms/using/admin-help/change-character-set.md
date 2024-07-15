@@ -20,10 +20,10 @@ ht-degree: 1%
 
 您可以指定用于编码输出流的字符集。
 
-1. 在管理控制台中，单击 **[!UICONTROL 服务>输出]**.
-1. 在“国际化”下的“字符集”列表中，选择一个字符集。 此设置取决于 `TransformationFormat` 和 `PrintFormat` 通过API指定。 要指定列出的字符集以外的字符集，请选择自定义，然后在显示的框中指定编码值。
+1. 在管理控制台中，单击&#x200B;**[!UICONTROL 服务>输出]**。
+1. 在“国际化”下的“字符集”列表中，选择一个字符集。 此设置依赖于通过API指定的`TransformationFormat`和`PrintFormat`。 要指定列出的字符集以外的字符集，请选择自定义，然后在显示的框中指定编码值。
 
-   如果 `TransformationFormat` 是PDF和PDF/A还是 `PrintFormat` 是PCL、PostScript、Zebra标签、IPL、DPL、TPCL、GenericColorPCL或GenericPSLevel3，仅支持特定字符集。
+   如果`TransformationFormat`PDF且PDF/A或`PrintFormat`为PCL、PostScript、Zebra标签、IPL、DPL、TPCL、GenericColorPCL或GenericPSLevel3，则仅支持特定字符集。
 
    字符集必须是有效的规范名称。 默认值为ISO-8859-1。
 

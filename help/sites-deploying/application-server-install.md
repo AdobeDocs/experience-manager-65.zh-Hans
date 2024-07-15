@@ -20,10 +20,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`JAR` 和 `WAR` Adobe Experience Manager (AEM)是在中发布的文件类型。 这些格式正在进行质量保证，以满足Adobe承诺的支持级别。
+>`JAR`和`WAR`是Adobe Experience Manager (AEM)中发布的文件类型。 这些格式正在进行质量保证，以满足Adobe承诺的支持级别。
 >
 
-本节介绍如何通过应用程序服务器安装Adobe Experience Manager (AEM)。 请参阅 [支持的平台](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) 部分以了解为各个应用程序服务器提供的特定支持级别。
+本节介绍如何通过应用程序服务器安装Adobe Experience Manager (AEM)。 请参阅[支持的平台](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers)部分，了解为各个应用程序服务器提供的特定支持级别。
 
 以下应用程序服务器的安装步骤已说明：
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您在WAR部署中使用Dynamic Media，请参阅 [Dynamic Media文档](/help/assets/config-dynamic.md#enabling-dynamic-media).
+>如果您在WAR部署中使用Dynamic Media，请参阅[Dynamic Media文档](/help/assets/config-dynamic.md#enabling-dynamic-media)。
 
 ## 常规描述 {#general-description}
 
@@ -46,22 +46,22 @@ AEM作为单个war文件来部署。
 
 如果部署，则默认情况下会发生以下情况：
 
-* 运行模式为 `author`
-* 实例（存储库、Felix OSGI环境、捆绑包等）安装在中 `${user.dir}/crx-quickstart`位置 `${user.dir}` 是当前工作目录，将调用crx-quickstart的此路径 `sling.home`
+* 运行模式为`author`
+* 实例（存储库、Felix OSGI环境、捆绑包等）安装在`${user.dir}/crx-quickstart`中，其中`${user.dir}`是当前工作目录，指向crx-quickstart的路径称为`sling.home`
 
-* 上下文根目录是war文件名，例如，  `aem-6`
+* 上下文根是war文件名，例如`aem-6`
 
 #### 配置 {#configuration}
 
 您可以通过以下方式更改默认行为：
 
-* 运行模式：配置 `sling.run.modes` 中的参数 `WEB-INF/web.xml` 部署前的AEM war文件
+* 运行模式：在部署之前在AEM war文件的`WEB-INF/web.xml`文件中配置`sling.run.modes`参数
 
-* sling.home：配置 `sling.home` 中的参数 `WEB-INF/web.xml`部署前的AEM war文件
+* sling.home：在部署之前在AEM war文件的`WEB-INF/web.xml`文件中配置`sling.home`参数
 
 * 上下文根目录：重命名AEM war文件
 
-#### 发布安装 {#publish-installation}
+#### Publish安装 {#publish-installation}
 
 要部署发布实例，您需要将运行模式设置为发布：
 
@@ -74,8 +74,8 @@ AEM作为单个war文件来部署。
 
 要检查是否已安装所有组件，您可以：
 
-* 跟踪 `error.log`文件以查看是否已安装所有内容
-* 查看 `/system/console` 已安装所有包
+* 跟踪`error.log`文件以查看是否已安装所有内容
+* 在`/system/console`中查找是否已安装所有包
 
 #### 同一应用程序服务器上的两个实例 {#two-instances-on-the-same-application-server}
 
@@ -87,7 +87,7 @@ AEM作为单个war文件来部署。
 1. 将sling.run.modes更改为发布实例的发布。
 1. 重新打包web.xml文件。
 1. 请重命名war文件，使其名称不同。 例如，一个重命名为aemauthor.war，另一个重命名为aempublish.war。
-1. 使用更高的内存设置。 例如，默认AEM实例使用 `-Xmx3072m`
+1. 使用更高的内存设置。 例如，默认AEM实例使用`-Xmx3072m`
 1. 部署两个Web应用程序。
 1. 部署后，停止两个Web应用程序。
 1. 在创作实例和发布实例中，均确保在sling.properties文件中，属性felix.service.urlhandlers=false设置为false（默认设置为true）。
@@ -97,7 +97,7 @@ AEM作为单个war文件来部署。
 
 ### WebSphere® 8.5 {#websphere}
 
-在部署之前阅读 [常规描述](#general-description) 以上。
+在部署之前，请阅读上面的[常规说明](#general-description)。
 
 **服务器准备**
 
@@ -105,7 +105,7 @@ AEM作为单个war文件来部署。
 
    * 允许AEM对用户进行身份验证的一种方法是禁用WebSphere®服务器的全局管理安全性，要实现此目的：转到“安全性”>“全局安全性”，然后取消选中“启用管理安全性”复选框，保存并重新启动服务器。
 
-* 设置 `"JAVA_OPTS= -Xmx2048m"`
+* 设置`"JAVA_OPTS= -Xmx2048m"`
 * 如果要使用上下文根= /安装AEM，请更改现有默认Web应用程序的上下文根。
 
 **部署AEM Web应用程序**
@@ -126,15 +126,15 @@ AEM作为单个war文件来部署。
 
 #### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
 
-在部署之前阅读 [常规描述](#general-description) 以上。
+在部署之前，请阅读上面的[常规说明](#general-description)。
 
 **准备JBoss®服务器**
 
-在conf文件中设置内存参数(例如， `standalone.conf`)
+在conf文件中设置内存参数（例如，`standalone.conf`）
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-如果您使用部署扫描程序来安装AEM Web应用程序，则增加 `deployment-timeout,` 对于该集 `deployment-timeout` 属性(例如， `configuration/standalone.xml)`：
+如果您使用部署扫描程序安装AEM Web应用程序，则在实例的xml文件(例如，`configuration/standalone.xml)`：`deployment-timeout,``deployment-timeout`
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -150,30 +150,30 @@ AEM作为单个war文件来部署。
 
 #### oracleWebLogic 12.1.3/12.2 {#oracle-weblogic}
 
-在部署之前阅读 [常规描述](#general-description) 以上。
+在部署之前，请阅读上面的[常规说明](#general-description)。
 
 该配置使用仅具有管理服务器的简单服务器布局。
 
 **WebLogic服务器准备**
 
-* 在 `${myDomain}/config/config.xml`将添加到security-configuration部分：
+* 在`${myDomain}/config/config.xml`中，将添加到安全配置部分：
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` 查看日期 [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) 正确的位置（默认情况下，将其定位在部分的末尾是ok）
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>`在[https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd)上查看正确的位置（默认情况下，将其定位在部分的结尾即可）
 
 * 增加VM内存设置：
 
-   * open `${myDomain}/bin/setDomainEnv.cmd` （表示.sh）搜索WLS_MEM_ARGS，设置例如，设置 `WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
+   * 打开`${myDomain}/bin/setDomainEnv.cmd` (resp .sh)搜索WLS_MEM_ARGS，例如设置`WLS_MEM_ARGS_64BIT=-Xms256m -Xmx2048m`
    * 重新启动WebLogic Server
 
-* 在中创建 `${myDomain}` 包文件夹，位于cq文件夹内和计划文件夹中
+* 在`${myDomain}`中创建包文件夹，并在cq文件夹内和计划文件夹中创建
 
 **部署AEM Web应用程序**
 
 * 下载AEM war文件
-* 将AEM war文件放入${myDomain}/packages/cq文件夹
-* 在中进行配置 `WEB-INF/web.xml` 如有需要（请参阅上面的“一般说明”）
+* 将AEM war文件放入${myDomain}/packages/cq文件夹中
+* 如有需要，在`WEB-INF/web.xml`中进行配置（请参阅上面的常规说明）
 
-   * 解包 `WEB-INF/web.xml`文件
+   * 解压缩`WEB-INF/web.xml`文件
    * 将sling.run.modes参数更改为发布
    * 取消对sling.home初始参数的注释，并根据需要设置此路径（请参阅常规描述）
    * 重新打包web.xml文件
@@ -181,22 +181,22 @@ AEM作为单个war文件来部署。
 * 将AEM war文件部署为应用程序（对于其他设置，使用默认设置）
 * 安装可能需要一些时间……
 * 检查安装是否已完成，如常规描述中所述（例如，跟踪error.log）
-* 可以在WebLogic中Web应用程序的“配置”选项卡中更改上下文根目录 `/console`
+* 您可以在WebLogic `/console`中的Web应用程序的“配置”选项卡中更改上下文根目录
 
 #### Tomcat 8/8.5 {#tomcat}
 
-在部署之前阅读 [常规描述](#general-description) 以上。
+在部署之前，请阅读上面的[常规说明](#general-description)。
 
 * **准备Tomcat服务器**
 
    * 增加VM内存设置：
 
-      * 在 `bin/catalina.bat` (响应 `catalina.sh` 在UNIX®上)添加以下设置：
+      * 在`bin/catalina.bat`中(在UNIX®上为`catalina.sh`)添加以下设置：
       * `set "JAVA_OPTS= -Xmx2048m`
 
-   * 在安装时，Tomcat不启用管理员或管理员访问权限。 因此，您必须手动编辑 `tomcat-users.xml` 要允许这些帐户访问，请执行以下操作：
+   * 在安装时，Tomcat不启用管理员或管理员访问权限。 因此，您必须手动编辑`tomcat-users.xml`以允许访问这些帐户：
 
-      * 编辑 `tomcat-users.xml` 以包含管理员和经理的访问权限。 该配置应类似于以下示例：
+      * 编辑`tomcat-users.xml`以包括管理员和经理的访问权限。 该配置应类似于以下示例：
 
         ```xml
         <?xml version='1.0' encoding='utf-8'?>
@@ -223,7 +223,7 @@ AEM作为单个war文件来部署。
 
      `webapps/manager/WEB-INF/web.xml`
 
-     并将max-file-size和max-request-size增加到至少500MB，请参见以下内容 `multipart-config` 示例 `web.xml` 文件。
+     并将max-file-size和max-request-size增加到至少500MB，请参阅以下`multipart-config`示例，了解此类`web.xml`文件。
 
      ```xml
      <multipart-config>

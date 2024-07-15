@@ -1,5 +1,5 @@
 ---
-title: 输出服务Java API快速入门(SOAP)
+title: Output Service Java API快速入门(SOAP)
 description: 使用输出服务Java API快速入门(SOAP)创建PDF文档、基于应用程序XDP文件创建PDF文档、创建PDF/A文档、将文档传递到输出服务、将AEM Forms存储库中的文档传递到输出服务、基于片段创建PDF文档、打印到文件、将打印流发送到网络打印机、创建多个PDF文件、创建搜索规则、转换PDF文档。
 contentOwner: admin
 content-type: reference
@@ -46,11 +46,11 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 >[!NOTE]
 >
->AEM表单编程快速入门基于Forms Server操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将特定于Windows的路径替换为适用的操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>AEM表单编程快速入门基于Forms Server操作系统。 但是，如果您使用的是其他操作系统（如UNIX），请将特定于Windows的路径替换为适用的操作系统支持的路径。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速入门(SOAP模式)：使用Java API创建PDF文档 {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
-以下Java代码示例创建了一个名为的PDF文档 *Loan.pdf*. 此PDF文档基于一个名为的表单设计 *Loan.xdp* 和名为的XML数据文件 *Loan.xml*. 此 *Loan.pdf* 将写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹，而不是客户端计算机上。 (请参阅 [创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+以下Java代码示例创建了一个名为&#x200B;*Loan.pdf*&#x200B;的PDF文档。 此PDF文档基于名为&#x200B;*Loan.xdp*&#x200B;的表单设计和名为&#x200B;*Loan.xml*&#x200B;的XML数据文件。 *Loan.pdf*&#x200B;写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹，而不是客户端计算机。 (请参阅[创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。)
 
 ```java
  /*
@@ -168,11 +168,11 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API基于应用程序XDP文件创建PDF文档 {#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api}
 
-以下Java代码示例创建了一个名为的PDF文档 *Loan.pdf*. 此PDF文档基于一个名为的表单设计 *Loan.xdp* 和名为的XML数据文件 *Loan.xml*. XDP文件作为名为的AEM Forms应用程序的一部分进行部署 `Applications/FormsApplication`. 请注意，URI路径为 `repository:///Applications/FormsApplication/1.0/FormsFolder/`. 此 *Loan.pdf* 将写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹，而不是客户端计算机上。 (请参阅 [创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+以下Java代码示例创建了一个名为&#x200B;*Loan.pdf*&#x200B;的PDF文档。 此PDF文档基于名为&#x200B;*Loan.xdp*&#x200B;的表单设计和名为&#x200B;*Loan.xml*&#x200B;的XML数据文件。 XDP文件作为名为`Applications/FormsApplication`的AEM Forms应用程序的一部分进行部署。 请注意，URI路径为`repository:///Applications/FormsApplication/1.0/FormsFolder/`。 *Loan.pdf*&#x200B;写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹，而不是客户端计算机。 (请参阅[创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。)
 
 >[!NOTE]
 >
->在运行此快速入门之前，请确保创建一个名为Applications/FormsApplication的AEM Forms应用程序。 在名为FormsFolder的应用程序中创建文件夹，并将XDP文件放置在文件夹中。 有关更多信息，请参阅 [生成PDF文档&#x200B;](/help/forms/developing/creating-document-output-streams.md)*.*
+>在运行此快速入门之前，请确保创建一个名为Applications/FormsApplication的AEM Forms应用程序。 在名为FormsFolder的应用程序中创建文件夹，并将XDP文件放置在文件夹中。 有关详细信息，请参阅[生成PDF文档&#x200B;](/help/forms/developing/creating-document-output-streams.md)*。*
 
 ```java
  /*
@@ -291,19 +291,19 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API将存储库中的文档传递到Output服务 {#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api}
 
-以下Java代码从存储库检索XDP文件，并将其传递到中的输出服务 `com.adobe.idp.Document` 实例。 XDP文件作为名为的AEM Forms应用程序的一部分进行部署 `Applications/FormsApplication`. 请注意，URI路径为 `repository:///Applications/FormsApplication/1.0/FormsFolder/`.
+以下Java代码从存储库中检索XDP文件，并将其传递到`com.adobe.idp.Document`实例中的输出服务。 XDP文件作为名为`Applications/FormsApplication`的AEM Forms应用程序的一部分进行部署。 请注意，URI路径为`repository:///Applications/FormsApplication/1.0/FormsFolder/`。
 
 >[!NOTE]
 >
->存储库API用于从此位置检索XDP文件。 (请参阅 [正在读取资源](/help/forms/developing/aem-forms-repository.md#reading-resources).)
+>存储库API用于从此位置检索XDP文件。 （请参阅[正在读取资源](/help/forms/developing/aem-forms-repository.md#reading-resources)。）
 
-另请注意内容根值 `repository:///Applications/FormsApplication/1.0/FormsFolder/` 传递到 `OutputClient` 对象的 `generatePDFOutput2` 方法（第二个参数）。 此值将传递给Output服务，以通知Output服务表单宣传品（如图像）存储在此位置。
+另请注意，内容根值`repository:///Applications/FormsApplication/1.0/FormsFolder/`被传递到`OutputClient`对象的`generatePDFOutput2`方法（第二个参数）。 此值将传递给Output服务，以通知Output服务表单宣传品（如图像）存储在此位置。
 
 >[!NOTE]
 >
->您可以按照在调用时相同的方式设置内容根值 `generatePrintedOutput2` 方法。
+>在调用`generatePrintedOutput2`方法时，您可以采用相同的方式设置内容根值。
 
-此 *Loan.pdf* 将写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹中。 (请参阅 [将存储库中的文档传递到Output服务](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-the-repository-to-the-output-service).)
+*Loan.pdf*&#x200B;将写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹中。 （请参阅[将存储库中的文档传递到输出服务](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-the-repository-to-the-output-service)。）
 
 >[!NOTE]
 >
@@ -443,7 +443,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API创建PDF文档 {#quick_start_soap_mode_creating_a_pdf_document_using_the_java_api-1}
 
-以下Java代码示例创建了一个名为的PDF文档 *Loan.pdf*. 此PDF文档基于一个名为的表单设计 *Loan.xdp* 和名为的XML数据文件 *Loan.xml*. 此 *Loan.pdf* 将写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹，而不是客户端计算机上。 (请参阅 [创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents).)
+以下Java代码示例创建了一个名为&#x200B;*Loan.pdf*&#x200B;的PDF文档。 此PDF文档基于名为&#x200B;*Loan.xdp*&#x200B;的表单设计和名为&#x200B;*Loan.xml*&#x200B;的XML数据文件。 *Loan.pdf*&#x200B;写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹，而不是客户端计算机。 (请参阅[创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents)。)
 
 ```java
  /*
@@ -553,7 +553,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API创建PDF/A文档 {#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api}
 
-以下Java代码示例创建了一个名为的PDF/文档 *LoanArchive.pdf*. 此PDF文档基于一个名为的表单设计 *Loan.xdp* 和名为的XML数据文件 *Loan.xml*. 此 *LoanArchive.pdf* 将写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹，而不是客户端计算机上。 (请参阅 [创建PDF/A文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents).)
+以下Java代码示例创建一个名为&#x200B;*LoanArchive.pdf*&#x200B;的PDF/文档。 此PDF文档基于名为&#x200B;*Loan.xdp*&#x200B;的表单设计和名为&#x200B;*Loan.xml*&#x200B;的XML数据文件。 *LoanArchive.pdf*&#x200B;将写入位于托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹，而不是客户端计算机。 (请参阅[创建PDF/A文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-a-documents)。)
 
 ```java
  /*
@@ -671,7 +671,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API将文档传递到输出服务 {#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api}
 
-以下Java快速入门将检索文件 *Loan.xdp* 来自Content Services。 此XDP文件位于 `space /Company Home/Form Designs`. XDP文件将在 `com.adobe.idp.Document` 实例。 此 `com.adobe.idp.Document` 实例被传递到Output服务。 非交互式表单在客户端计算机上保存为名为*Loan.pdf *的PDF文件。 由于设置了文件URI选项，因此PDF文件*Loan.pdf *也会保存在托管AEM Forms的J2EE应用程序服务器上。 (请参阅 [将Content Services ES2中的文档传递到Output Service](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+以下Java快速入门从Content Services中检索文件&#x200B;*Loan.xdp*。 此XDP文件在`space /Company Home/Form Designs`中。 在`com.adobe.idp.Document`实例中返回XDP文件。 `com.adobe.idp.Document`实例已传递到输出服务。 非交互式表单在客户端计算机上保存为名为*Loan.pdf *的PDF文件。 由于设置了文件URI选项，因此PDF文件*Loan.pdf *也会保存在托管AEM Forms的J2EE应用程序服务器上。 （请参阅[将Content Services ES2中的文档传递到输出服务](/help/forms/developing/creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)。）
 
 ```java
  /*
@@ -810,7 +810,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API基于片段创建PDF文档 {#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api}
 
-以下Java代码示例创建了一个PDF文档，该文档基于由Assembler服务组装的表单设计。 Assembler服务将多个XDP文件中的片段组合到单个表单设计中。 调用Assembler服务的应用程序逻辑位于用户定义的名为 `GetFormDesign`. 非交互式表单在客户端计算机上保存为名为*Loan.pdf *的PDF文件。 (请参阅 [使用片段创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments).)
+以下Java代码示例创建了一个PDF文档，该文档基于由Assembler服务组装的表单设计。 Assembler服务将多个XDP文件中的片段组合到单个表单设计中。 调用Assembler服务的应用程序逻辑位于名为`GetFormDesign`的用户定义方法中。 非交互式表单在客户端计算机上保存为名为*Loan.pdf *的PDF文件。 (请参阅[使用片段创建PDF文档](/help/forms/developing/creating-document-output-streams.md#creating-pdf-documents-using-fragments)。)
 
 ```java
  /*
@@ -1018,7 +1018,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API打印到文件 {#quick-start-soap-mode-printing-to-a-file-using-the-java-api}
 
-以下Java代码示例将输出流打印到名为的PostScript文件 *MortgageForm.ps*. (请参阅 [打印到文件](/help/forms/developing/creating-document-output-streams.md#printing-to-files).)
+以下Java代码示例将输出流打印到名为&#x200B;*MortgageForm.ps*&#x200B;的PostScript文件。 （请参阅[打印到文件](/help/forms/developing/creating-document-output-streams.md#printing-to-files)。）
 
 ```java
  /*
@@ -1130,7 +1130,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API将打印流发送到网络打印机 {#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api}
 
-以下Java代码示例将PostScript打印流发送到名为的网络打印机 *\\打印机1\打印机*. 向打印机发送两份拷贝。 (请参阅 [将打印流发送到打印机](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers).)
+以下Java代码示例将PostScript打印流发送到名为&#x200B;*\\Printer1\Printer*&#x200B;的网络打印机。 向打印机发送两份拷贝。 （请参阅[将打印流发送到打印机](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers)。）
 
 ```java
  /*
@@ -1255,7 +1255,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API创建多个PDF文件 {#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api}
 
-以下Java代码为名为的XML数据文件中的每个数据记录创建多个PDF文件 *Loan_data_batch.xml*. 文件将写入C:\Adobe目录。 PDF文件将写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹中，而不是客户端计算机上。 (请参阅 [创建多个输出文件](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files).)
+以下Java代码为名为&#x200B;*Loan_data_batch.xml*&#x200B;的XML数据文件中的每个数据记录创建多个PDF文件。 文件将写入C:\Adobe目录。 PDF文件将写入到托管AEM Forms的J2EE应用程序服务器上的C:\Adobe文件夹中，而不是客户端计算机上。 （请参阅[创建多个输出文件](/help/forms/developing/creating-document-output-streams.md#creating-multiple-output-files)。）
 
 ```java
  /*
@@ -1376,7 +1376,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API创建搜索规则 {#quick-start-soap-mode-creating-search-rules-using-the-java-api}
 
-以下Java代码示例创建Output服务搜索的两个文本模式。 第一个文本模式是“按揭”。 如果找到，Output服务将使用名为的表单设计 *Mortgage.xdp*. 第二种文本模式为“汽车”。 如果找到，Output服务将使用名为的表单设计 *汽车贷款.xdp*. 如果找不到文本模式，输出服务将使用名为* Loan.xdp的默认表单设计。 *(请参阅 [创建搜索规则](/help/forms/developing/creating-document-output-streams.md#creating-search-rules).)
+以下Java代码示例创建Output服务搜索的两个文本模式。 第一个文本模式是“按揭”。 如果找到，Output服务将使用名为&#x200B;*Mortgage.xdp*&#x200B;的表单设计。 第二种文本模式为“汽车”。 如果找到，Output服务将使用名为&#x200B;*AutomobileLoan.xdp*&#x200B;的表单设计。 如果找不到文本模式，输出服务将使用名为* Loan.xdp的默认表单设计。 *（请参阅[创建搜索规则](/help/forms/developing/creating-document-output-streams.md#creating-search-rules)。）
 
 ```java
  /*
@@ -1508,7 +1508,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API转换PDF文档 {#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api}
 
-以下Java代码示例对名为的交互式PDF文档进行转换 *Loan.pdf* 到名为的非交互式PDF文档 *NonInteractiveLoan.pdf*. (请参阅 [拼合PDF文档](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+以下Java代码示例将名为&#x200B;*Loan.pdf*&#x200B;的交互式PDF文档转换为名为&#x200B;*NonInteractiveLoan.pdf*&#x200B;的非交互式PDF文档。 (请参阅[拼合PDF文档](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。)
 
 ```java
  /*

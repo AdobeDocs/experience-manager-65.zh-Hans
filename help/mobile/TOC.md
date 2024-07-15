@@ -19,24 +19,24 @@ ht-degree: 11%
 # AEM 6.5 Mobile 用户指南 {#mobile}
 
 + [Mobile用户指南概述](home.md)
-+ AEM Mobile简介 {#introduction}
++ AEM Mobile简介{#introduction}
    + [AEM Mobile快速入门](getting-started-aem-mobile.md)
    + [AEM Mobile On-Demand](getting-started-aem-mobile-on-demand.md)
    + [移动应用程序](mobile-apps.md)
    + [AEM Adobe PhoneGap](getting-started-aem-mobile-phonegap.md)
    + [AEM Mobile - GDPR就绪](aem-mobile-gdpr-compliance.md)
    + [开发移动应用程序](develop-mobile-apps.md)
-+ 创作On-Demand Services应用程序 {#authoring}
++ 创作On-Demand Services应用{#authoring}
    + [Mobile On-Demand](mobile-apps-ondemand.md)
    + [管理内容](mobile-apps-ondemand-manage-content-ondemand.md)
-   + [发布取消发布内容](mobile-on-demand-publishing-unpublishing.md)
+   + [Publish取消发布内容](mobile-on-demand-publishing-unpublishing.md)
    + [AEM Mobile应用程序功能板](mobile-apps-ondemand-application-dashboard.md)
    + [应用程序创建和配置操作](mobile-apps-ondemand-application-create-configure-action.md)
    + [管理文章](mobile-on-demand-managing-articles.md)
    + [上传共享资源](mobile-on-demand-shared-resources.md)
    + [云配置](mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
    + [管理横幅](mobile-on-demand-managing-banners.md)
-+ 开发On-Demand Services应用程序 {#developing}
++ 正在开发On-Demand Services应用{#developing}
    + [AEM Mobile On-Demand](aem-mobile-on-demand.md)
    + [应用程序模板和组件](app-templates-and-components1.md)
    + [内容属性和节点](content-properties.md)
@@ -50,7 +50,7 @@ ht-degree: 11%
    + [呈现和交付](rendering-and-delivery.md)
    + [Content Services](developing-content-services.md)
    + [内容交付](develop-content-as-a-service.md)
-+ 管理On-Demand Services应用程序 {#administering}
++ 管理On-Demand Services应用{#administering}
    + [AEM Mobile On-Demand](aem-mobile.md)
    + [AEM Mobile设置](aem-mobile-setup.md)
    + [配置用户和用户组](aem-mobile-configure-users.md)

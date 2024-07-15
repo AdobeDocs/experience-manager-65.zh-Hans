@@ -23,18 +23,18 @@ ht-degree: 1%
 
 AEM 6中的操作仪表板可帮助系统操作员一目了然地监控AEM系统运行状况。 它还提供有关AEM相关方面的自动生成诊断信息，并可让您配置和运行自包含的维护自动化，从而显着减少项目操作和支持案例。 操作功能板可通过自定义运行状况检查和维护任务进行扩展。 此外，可通过JMX从外部监控工具访问操作仪表板数据。
 
-**操作功能板：**
+**操作仪表板：**
 
 * 是一键式系统状态，可帮助运营部门提高效率
 * 在单个集中位置提供系统运行状况概述
 * 缩短查找、分析和修复问题的时间
 * 提供独立的维护自动化，帮助显着降低项目运营成本
 
-可以通过以下位置访问它： **工具** - **操作** 从AEM欢迎屏幕。
+通过从AEM欢迎屏幕转到&#x200B;**工具** - **操作**&#x200B;可访问该区域。
 
 >[!NOTE]
 >
->要能够访问操作仪表板，登录用户必须是“操作员”用户组的一部分。 有关详细信息，请参阅相关文档 [用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md).
+>要能够访问操作仪表板，登录用户必须是“操作员”用户组的一部分。 有关详细信息，请参阅有关[用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md)的文档。
 
 ## 健康报表 {#health-reports}
 
@@ -44,15 +44,15 @@ AEM 6中的操作仪表板可帮助系统操作员一目了然地监控AEM系统
 
 ## 运行状况检查 {#health-checks}
 
-此 **运行状况报表** 是一个卡片系统，用于指示特定产品区域的健康状况是好是坏。 这些卡片是Sling运行状况检查的可视化图表，用于聚合来自JMX和其他源的数据，并再次将处理过的信息作为MBean显示。 这些MBean也可在 [JMX Web控制台](/help/sites-administering/jmx-console.md)，位于 **org.apache.sling.healthcheck** 域。
+**运行状况报告**&#x200B;是一个卡片系统，用于指示特定产品区域的运行状况是好还是坏。 这些卡片是Sling运行状况检查的可视化图表，用于聚合来自JMX和其他源的数据，并再次将处理过的信息作为MBean显示。 也可以在&#x200B;**org.apache.sling.healthcheck**&#x200B;域下的[JMX Web控制台](/help/sites-administering/jmx-console.md)中检查这些MBean。
 
-运行状况报告界面可通过 **工具** - **操作** - **运行状况报表** AEM欢迎使用屏幕上的菜单，或直接通过以下URL访问：
+可通过AEM欢迎屏幕上的&#x200B;**工具** - **操作** - **运行状况报告**&#x200B;菜单或直接通过以下URL访问运行状况报告界面：
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-卡系统显示三种可能的状态： **确定**， **警告** 和 **关键**. 状态是规则和阈值的结果，可以通过将鼠标悬停在信息卡上，然后单击操作栏中的齿轮图标来配置这些规则和阈值：
+卡片系统可能会显示三种状态：**正常**、**警告**&#x200B;和&#x200B;**严重**。 状态是规则和阈值的结果，可以通过将鼠标悬停在信息卡上，然后单击操作栏中的齿轮图标来配置这些规则和阈值：
 
 ![chlimage_1-117](assets/chlimage_1-117.png)
 
@@ -63,11 +63,11 @@ AEM 6中有两种类型的运行状况检查：
 1. 个人运行状况检查
 1. 复合运行状况检查
 
-An **个人运行状况检查** 是与状态卡对应的单个运行状况检查。 可以使用规则或阈值配置各个运行状况检查，它们可以提供一个或多个提示和链接以解决已识别的运行状况问题。 让我们以“日志错误”检查为例：如果实例日志中存在ERROR条目，请在运行状况检查的详细信息页面上查找它们。 在页面顶部，您可以看到“诊断工具”部分中“日志消息”分析器的链接，该链接允许您更详细地分析这些错误并重新配置日志程序。
+**个人运行状况检查**&#x200B;是与状态卡相对应的单个运行状况检查。 可以使用规则或阈值配置各个运行状况检查，它们可以提供一个或多个提示和链接以解决已识别的运行状况问题。 让我们以“日志错误”检查为例：如果实例日志中存在ERROR条目，请在运行状况检查的详细信息页面上查找它们。 在页面顶部，您可以看到“诊断工具”部分中“日志消息”分析器的链接，该链接允许您更详细地分析这些错误并重新配置日志程序。
 
-A **复合运行状况检查** 是汇总来自几项单独检查的信息的检查。
+**复合运行状况检查**&#x200B;是汇总来自多个单独检查的信息的检查。
 
-复合运行状况检查可通过以下工具进行配置 **筛选标记**. 实质上，具有相同过滤器标记的所有单次检查都分组为复合运行状况检查。 仅当所有其聚合的单项检查的状态均为OK时，复合运行状况检查的状态才为OK。
+复合运行状况检查是通过&#x200B;**筛选标记**&#x200B;配置的。 实质上，具有相同过滤器标记的所有单次检查都分组为复合运行状况检查。 仅当所有其聚合的单项检查的状态均为OK时，复合运行状况检查的状态才为OK。
 
 ### 如何创建运行状况检查 {#how-to-create-health-checks}
 
@@ -77,7 +77,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
 创建单个运行状况检查涉及两个步骤：实施Sling运行状况检查和在功能板的配置节点中添加运行状况检查条目。
 
-1. 要创建Sling运行状况检查，请创建一个实施Sling运行状况检查接口的OSGI组件。 将此组件添加到捆绑包中。 组件的属性可完全标识运行状况检查。 安装组件后，将自动为运行状况检查创建JMX MBean。 请参阅 [Sling运行状况检查文档](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html) 以了解更多信息。
+1. 要创建Sling运行状况检查，请创建一个实施Sling运行状况检查接口的OSGI组件。 将此组件添加到捆绑包中。 组件的属性可完全标识运行状况检查。 安装组件后，将自动为运行状况检查创建JMX MBean。 有关详细信息，请参阅[Sling运行状况检查文档](https://sling.apache.org/documentation/bundles/sling-health-check-tool.html)。
 
    使用OSGI服务组件注释编写的Sling运行状况检查组件示例：
 
@@ -99,9 +99,9 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
    >[!NOTE]
    >
-   >此 `MBEAN_NAME` 属性定义为此运行状况检查生成的mbean的名称。
+   >`MBEAN_NAME`属性定义为此运行状况检查生成的mbean的名称。
 
-1. 创建运行状况检查后，必须创建新的配置节点，才能在操作功能板界面中访问该节点。 对于此步骤，必须知道运行状况检查的JMX Mbean名称( `MBEAN_NAME` 属性)。 要为运行状况检查创建配置，请打开CRXDE并添加节点(类型为 **nt：unstructured**)，路径如下： `/apps/settings/granite/operations/hc`
+1. 创建运行状况检查后，必须创建新的配置节点，才能在操作功能板界面中访问该节点。 对于此步骤，需要知道运行状况检查的JMX Mbean名称（`MBEAN_NAME`属性）。 要为运行状况检查创建配置，请打开CRXDE并在以下路径下添加一个节点（类型为&#x200B;**nt：unstructured**）： `/apps/settings/granite/operations/hc`
 
    应在新节点上设置以下属性：
 
@@ -117,7 +117,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
    >[!NOTE]
    >
-   >上述资源路径按如下方式创建：如果运行状况检查的mbean名称为“test”，请在路径末尾添加“test” `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
+   >上述资源路径按如下方式创建：如果运行状况检查的mbean名称为“test”，请将“test”添加到路径`/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`的末尾
    >
    >因此，最终路径如下：
    >
@@ -125,7 +125,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
    >[!NOTE]
    >
-   >确保 `/apps/settings/granite/operations/hc` path的以下属性设置为true：
+   >确保`/apps/settings/granite/operations/hc`路径具有以下属性设置为true：
    >
    >
    >`sling:configCollectionInherit`
@@ -133,14 +133,14 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
    >`sling:configPropertyInherit`
    >
    >
-   >此过程会告知配置管理器将新配置与中的现有配置合并 `/libs`.
+   >此过程告知配置管理器将新配置与`/libs`中的现有配置合并。
 
 ### 创建复合运行状况检查 {#creating-a-composite-health-check}
 
 复合运行状况检查的作用是聚合多个单独的运行状况检查，这些检查共享一组常用功能。 例如，安全复合运行状况检查将执行安全相关验证的所有单独运行状况检查分组。 创建复合检查的第一步是添加OSGI配置。 要使它显示在“操作仪表板”中，必须以简单检查的方式添加新配置节点。
 
-1. 转到OSGI控制台中的Web配置管理器。 访问 `https://serveraddress:port/system/console/configMgr`
-1. 搜索名为的条目 **Apache Sling复合运行状况检查**. 找到后，请注意已有两个配置可用：一个用于系统检查，另一个用于安全检查。
+1. 转到OSGI控制台中的Web配置管理器。 访问`https://serveraddress:port/system/console/configMgr`
+1. 搜索名为&#x200B;**Apache Sling复合运行状况检查**&#x200B;的项目。 找到后，请注意已有两个配置可用：一个用于系统检查，另一个用于安全检查。
 1. 通过按配置右侧的“+”按钮创建配置。 将显示一个新窗口，如下所示：
 
    ![chlimage_1-23](assets/chlimage_1-23.jpeg)
@@ -149,18 +149,18 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
    每个配置属性的用途如下：
 
-   * **名称(hc.name)：** 复合运行状况检查的名称。 建议使用有意义的名称。
-   * **标记(hc.tags)：** 此运行状况检查的标记。 如果此复合运行状况检查要作为另一个复合运行状况检查（例如，在运行状况检查的层次结构中）的一部分，请添加此复合与之相关的标记。
-   * **MBean名称(hc.mbean.name)：** 为此复合运行状况检查的JMX MBean指定的Mbean的名称。
-   * **筛选标记(filter.tags)：** 特定于复合运行状况检查的属性。 这些标记由复合聚合。 复合运行状况检查将在其组下聚合所有具有与此复合的任何过滤器标记匹配的标记的运行状况检查。 例如，具有过滤器标记的复合运行状况检查 **测试** 和 **check**，汇总具有任意 **测试** 和 **check** 标记属性中的标记( `hc.tags`)。
+   * **名称(hc.name)：**&#x200B;复合运行状况检查的名称。 建议使用有意义的名称。
+   * **标记(hc.tags)：**&#x200B;此运行状况检查的标记。 如果此复合运行状况检查要作为另一个复合运行状况检查（例如，在运行状况检查的层次结构中）的一部分，请添加此复合与之相关的标记。
+   * **MBean名称(hc.mbean.name)：**&#x200B;为此复合运行状况检查的JMX MBean指定的Mbean的名称。
+   * **筛选标记(filter.tags)：**&#x200B;特定于复合运行状况检查的属性。 这些标记由复合聚合。 复合运行状况检查将在其组下聚合所有具有与此复合的任何过滤器标记匹配的标记的运行状况检查。 例如，具有筛选器标记&#x200B;**test**&#x200B;和&#x200B;**check**&#x200B;的组合运行状况检查聚合其标记属性(`hc.tags`)中具有任何&#x200B;**test**&#x200B;和&#x200B;**check**&#x200B;标记的所有单独和组合运行状况检查。
 
    >[!NOTE]
    >
    >为Apache Sling复合运行状况检查的每个新配置创建一个新的JMX Mbean。**
 
-1. 最后，必须将已创建的复合运行状况检查条目添加到操作仪表板配置节点中。 该过程与单独的运行状况检查的过程相同：节点类型为 **nt：unstructured** 必须创建于 `/apps/settings/granite/operations/hc`. 节点的资源属性由的值定义 **hc.mean.name** 在OSGI配置中。
+1. 最后，必须将已创建的复合运行状况检查条目添加到操作仪表板配置节点中。 此过程与单个运行状况检查的过程相同：必须在`/apps/settings/granite/operations/hc`下创建类型为&#x200B;**nt：unstructured**&#x200B;的节点。 节点的资源属性由OSGI配置中的&#x200B;**hc.mean.name**&#x200B;值定义。
 
-   例如，如果您创建了一个配置并将 **hc.mbean.name** 值至 **磁盘使用**，则配置节点如下所示：
+   例如，如果您创建了配置并将&#x200B;**hc.mbean.name**&#x200B;值设置为&#x200B;**diskusage**，则配置节点如下所示：
 
    * **名称：** `Composite Health Check`
 
@@ -182,7 +182,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
    >
    >如果创建逻辑上属于复合检查的各个运行状况检查（默认情况下，该复合检查已存在于仪表板中），则会在相应的复合检查下自动捕获和分组这些运行状况检查。 因此，无需为这些检查创建配置节点。
    >
-   >例如，如果您创建单个安全运行状况检查，请为其分配&quot;**安全性**“ ”标记，并且它已经安装。 它自动显示在“操作”操控板的“安全检查”复合检查下。
+   >例如，如果您创建单独的安全运行状况检查，请为其分配“**安全**”标记，然后安装该标记。 它自动显示在“操作”操控板的“安全检查”复合检查下。
 
 ### AEM提供的运行状况检查 {#health-checks-provided-with-aem}
 
@@ -194,54 +194,54 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
   </tr>
   <tr>
    <td>查询性能</td>
-   <td><p>此运行状况检查已得到简化 <strong>在AEM 6.4中</strong>，现在会检查最近重构的 <code>Oak QueryStats</code> MBean，更具体地说 <code>SlowQueries </code>属性。 如果统计信息包含任何慢查询，则运行状况检查将返回警告。 否则，它会返回OK状态。<br /> </p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=queriesStatus，type=HealthCheck</a>.</p> </td>
+   <td><p>此运行状况检查已在AEM 6.4</strong>中进行了简化<strong>，现在将检查最近重构的<code>Oak QueryStats</code> MBean，更具体而言是<code>SlowQueries </code>属性。 如果统计信息包含任何慢查询，则运行状况检查将返回警告。 否则，它会返回OK状态。<br /> </p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=queriesStatus，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>观察队列长度</td>
-   <td><p>观察队列长度遍历所有事件侦听器和后台观察器，比较它们的 <code>queueSize </code>敬他们的 <code>maxQueueSize</code> 和：</p>
+   <td><p>观察队列长度遍历所有事件侦听器和后台观察器，将其<code>queueSize </code>与其<code>maxQueueSize</code>进行比较，并：</p>
     <ul>
-     <li>返回严重状态，如果 <code>queueSize</code> 值超出 <code>maxQueueSize</code> 值（即事件被删除时）</li>
-     <li>如果 <code>queueSize</code> 值超过 <code>maxQueueSize * WARN_THRESHOLD</code> （默认值为0.75） </li>
-    </ul> <p>每个队列的最大长度来自单独的配置(Oak和AEM)，并且无法通过此运行状况检查进行配置。 此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=ObservationQueueLengthHealthCheck，type=HealthCheck</a>.</p> </td>
+     <li>如果<code>queueSize</code>值超过<code>maxQueueSize</code>值（即事件将被删除时），则返回严重状态</li>
+     <li>如果<code>queueSize</code>值超过<code>maxQueueSize * WARN_THRESHOLD</code>，则返回警告（默认值为0.75） </li>
+    </ul> <p>每个队列的最大长度来自单独的配置(Oak和AEM)，并且无法通过此运行状况检查进行配置。 此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=ObservationQueueLengthHealthCheck，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>查询遍历限制</td>
-   <td><p>查询遍历限制检查 <code>QueryEngineSettings</code> MBean，更具体地说 <code>LimitInMemory</code> 和 <code>LimitReads</code> 属性，并返回以下状态：</p>
+   <td><p>查询遍历限制检查<code>QueryEngineSettings</code> MBean，更具体地说<code>LimitInMemory</code>和<code>LimitReads</code>属性，并返回以下状态：</p>
     <ul>
      <li>如果其中一个限制等于或大于 <code>Integer.MAX_VALUE</code></li>
-     <li>如果其中一个限制小于10000（Oak中的推荐设置），则返回警告状态</li>
-     <li>返回严重状态，如果 <code>QueryEngineSettings</code> 或无法检索任何限制</li>
-    </ul> <p>此运行状况检查的Mbean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=queryTraversalLimitsBundle，type=HealthCheck</a>.</p> </td>
+     <li>如果其中一个限制小于10000(Oak中的推荐设置)，则返回警告状态</li>
+     <li>如果无法检索<code>QueryEngineSettings</code>或任何限制，则返回“严重”状态</li>
+    </ul> <p>此运行状况检查的Mbean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=queryTraversalLimitsBundle，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>同步的时钟</td>
-   <td><p>此检查仅与以下内容相关 <a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">document nodestore聚类</a>. 它会返回以下状态：</p>
+   <td><p>此检查仅与<a href="https://github.com/apache/sling-old-svn-mirror/blob/4df9ab2d6592422889c71fa13afd453a10a5a626/bundles/extensions/discovery/oak/src/main/java/org/apache/sling/discovery/oak/SynchronizedClocksHealthCheck.java">文档节点存储群集</a>相关。 它会返回以下状态：</p>
     <ul>
      <li>当实例时钟不同步并超过预定义的低阈值时，返回警告状态</li>
      <li>当实例时钟不同步并超过预定义的高阈值时，返回严重状态</li>
-    </ul> <p>此运行状况检查的Mbean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=slingDiscoveryOakSynchronizedClocks，type=HealthCheck</a>.</p> </td>
+    </ul> <p>此运行状况检查的Mbean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingDiscoveryOakSynchronizedClocks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=slingDiscoveryOakSynchronizedClocks，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>异步索引</td>
    <td><p>异步索引检查：</p>
     <ul>
      <li>如果至少有一个索引通道失败，则返回关键状态</li>
-     <li>检查 <code>lastIndexedTime</code> 对于所有索引通道和：
+     <li>检查<code>lastIndexedTime</code>的所有索引通道并：
       <ul>
        <li>如果超过2小时前，则返回关键状态 </li>
        <li>如果时间介于2小时和45分钟之前，则返回警告状态 </li>
        <li>如果时间小于45分钟前，则返回“正常”状态 </li>
       </ul> </li>
      <li>如果不符合上述任何条件，则会返回“正常”状态</li>
-    </ul> <p>“严重”和“警告”状态阈值均可配置。 此运行状况检查的Mbean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=asyncIndexHealthCheck，type=HealthCheck</a>.</p> <p><strong>注意： </strong>此运行状况检查在AEM 6.4中可用，并且已回溯到AEM 6.3.0.1。</p> </td>
+    </ul> <p>“严重”和“警告”状态阈值均可配置。 此运行状况检查的Mbean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=asyncIndexHealthCheck，type=HealthCheck</a>。</p> <p><strong>注意： </strong>此运行状况检查在AEM 6.4中可用，并且已回溯到AEM 6.3.0.1。</p> </td>
   </tr>
   <tr>
    <td>大型 Lucene 索引</td>
-   <td><p>此检查使用由以下对象公开的数据 <code>Lucene Index Statistics</code> 用于标识大型索引和返回的MBean：</p>
+   <td><p>此检查使用<code>Lucene Index Statistics</code> MBean公开的数据来识别大型索引并返回：</p>
     <ul>
      <li>如果索引中的文档超过10亿，则显示警告状态</li>
      <li>a如果索引中的文档超过15亿，则为严重状态</li>
-    </ul> <p>阈值可配置，运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=largeIndexHealthCheck，type=HealthCheck。</a></p> <p><strong>注意： </strong>此检查在AEM 6.4中可用，并且已回溯到AEM 6.3.2.0。</p> </td>
+    </ul> <p>阈值可配置，运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=largeIndexHealthCheck，type=HealthCheck。</a></p> <p><strong>注意： </strong>此检查在AEM 6.4中可用，并且已回溯到AEM 6.3.2.0。</p> </td>
   </tr>
   <tr>
    <td>系统维护</td>
@@ -250,54 +250,54 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
      <li>每个维护任务都附带一个关联的运行状况检查</li>
      <li>如果任务未添加到维护窗口，则其运行状况检查将返回“严重”</li>
      <li>配置“审核日志”和“工作流清除”维护任务，或将其从维护窗口中删除。 如果未配置，这些任务在首次尝试运行时将失败，因此“系统维护”检查会返回“严重”状态。</li>
-     <li><strong>使用AEM 6.4</strong>，则还会检查 <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Lucene二进制文件维护</a> 任务</li>
+     <li><strong>使用AEM 6.4</strong>时，还会检查<a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">Lucene二进制文件维护</a>任务</li>
      <li>在AEM 6.2及更低版本上，系统维护检查在启动后立即返回警告状态，因为任务从不运行。 从6.3开始，如果尚未到达第一个维护时段，它们会返回OK。</li>
-    </ul> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=systemchecks，type=HealthCheck</a>.</p> </td>
+    </ul> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=systemchecks，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>复制队列</td>
-   <td><p>此检查跨复制代理反复进行，并查看其队列。 对于队列顶部的项目，该检查会查看代理重试复制的次数。 如果代理重试的复制次数大于 <code>numberOfRetriesAllowed</code> 参数，则会返回警告。 此 <code>numberOfRetriesAllowed</code> 参数是可配置的。 </p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=replicationQueue，type=HealthCheck</a>.</p> </td>
+   <td><p>此检查跨复制代理反复进行，并查看其队列。 对于队列顶部的项目，该检查会查看代理重试复制的次数。 如果代理重试的复制次数大于<code>numberOfRetriesAllowed</code>参数的值，则会返回警告。 <code>numberOfRetriesAllowed</code>参数可配置。 </p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DreplicationQueue%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=replicationQueue，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>Sling 作业</td>
    <td>
     <div>
       Sling作业检查JobManager中排队的作业数，并将其与
-     <code>maxNumQueueJobs</code> 阈值和：
+     <code>maxNumQueueJobs</code>阈值，并且：
     </div>
     <ul>
-     <li>如果大于 <code>maxNumQueueJobs</code> 在队列中</li>
+     <li>如果队列中超过<code>maxNumQueueJobs</code>个，则返回“严重”</li>
      <li>如果存在早于1小时的长期运行活动作业，则返回“严重”</li>
      <li>如果存在已排队的作业，并且上次完成的作业时间早于1小时，则返回“严重”</li>
-    </ul> <p>只能配置已排队作业的最大数量参数，其默认值为1000。</p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=slingJobs，type=HealthCheck</a>.</p> </td>
+    </ul> <p>只能配置已排队作业的最大数量参数，其默认值为1000。</p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingJobs%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=slingJobs，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>请求性能</td>
-   <td><p>此检查将查看 <code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling量度 </a>和：</p>
+   <td><p>此检查检查<code>granite.request.metrics.timer</code> <a href="http://localhost:4502/system/console/slingmetrics" target="_blank">Sling量度</a>和：</p>
     <ul>
      <li>如果第75百分位值超过关键阈值（默认值为500毫秒），则返回“关键”</li>
      <li>如果第75百分位值超过警告阈值（默认值为200毫秒），则返回警告</li>
-    </ul> <p>此运行状况检查的MBean为<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=requestsStatus，type=HealthCheck</a>.</p> </td>
+    </ul> <p>此运行状况检查的MBean为<em> </em><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DrequestsStatus%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=requestsStatus，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>日志错误</td>
-   <td><p>如果日志中有错误，此检查会返回警告状态。</p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlogErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=logErrorHealthCheck，type=HealthCheck</a>.</p> </td>
+   <td><p>如果日志中有错误，此检查会返回警告状态。</p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlogErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=logErrorHealthCheck，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>磁盘空间</td>
-   <td><p>“磁盘空间”检查会查看 <code>FileStoreStats</code> MBean，检索节点存储的大小和节点存储分区上可用的磁盘空间量，并且：</p>
+   <td><p>磁盘空间检查检查<code>FileStoreStats</code> MBean，检索节点存储的大小和节点存储分区上的可用磁盘空间量，并且：</p>
     <ul>
      <li>如果可用磁盘空间与存储库大小的比率小于警告阈值（默认值为10），则返回警告</li>
      <li>如果可用磁盘空间与存储库大小的比率小于关键阈值（默认值为2），则返回关键</li>
-    </ul> <p>两个阈值均可配置。 该检查仅适用于具有区段存储的实例。</p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=DiskSpaceHealthCheck，type=HealthCheck</a>.</p> </td>
+    </ul> <p>两个阈值均可配置。 该检查仅适用于具有区段存储的实例。</p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DDiskSpaceHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=DiskSpaceHealthCheck，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>计划程序运行状况检查</td>
-   <td><p>如果实例的Quartz作业运行时间超过60秒，则此检查会返回警告。 可以配置可接受的持续时间阈值。</p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingCommonsSchedulerHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=slingCommonsSchedulerHealthCheck，type=HealthCheck</a><em>.</em></p> </td>
+   <td><p>如果实例的Quartz作业运行时间超过60秒，则此检查会返回警告。 可以配置可接受的持续时间阈值。</p> <p>此运行状况检查的MBean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DslingCommonsSchedulerHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=slingCommonsSchedulerHealthCheck，type=HealthCheck</a><em>.</em></p> </td>
   </tr>
   <tr>
    <td>安全检查</td>
-   <td><p>安全检查是一种组合检查，用于聚合多个安全相关检查的结果。 这些单独的健康检查可解决 <a href="/help/sites-administering/security-checklist.md">安全核对清单文档页面。</a> 该检查在实例启动时可用作安全冒烟测试。 </p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=securitychecks，type=HealthCheck</a></p> </td>
+   <td><p>安全检查是一种组合检查，用于聚合多个安全相关检查的结果。 这些个人运行状况检查可解决<a href="/help/sites-administering/security-checklist.md">安全核对清单文档页面提供的安全核对清单中的不同问题。</a>该检查在启动实例时可用作安全冒烟测试。 </p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=securitychecks，type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>活动包</td>
@@ -305,7 +305,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
     <ul>
      <li>如果有任何捆绑包未处于活动状态或（从延迟激活开始），则返回警告状态</li>
      <li>它忽略忽略列表中的捆绑包状态</li>
-    </ul> <p>ignore list参数是可配置的。</p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=inactiveBundles，type=HealthCheck</a>.</p> </td>
+    </ul> <p>ignore list参数是可配置的。</p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DinactiveBundles%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=inactiveBundles，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>代码缓存检查</td>
@@ -313,14 +313,14 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
     <ul>
      <li>如果实例在Java™ 7上运行，并且启用了代码缓存刷新，则返回警告</li>
      <li>如果实例在Java™ 7上运行，并且保留的代码缓存大小小于最小阈值（默认值为90 MB），则返回警告</li>
-    </ul> <p>此 <code>minimum.code.cache.size</code> 阈值可配置。 有关Bug的详细信息，请参见 <a href="https://bugs.java.com/bugdatabase/"> 然后搜索Bug ID 8012547</a>.</p> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=codeCacheHealthCheck，type=HealthCheck</a>.</p> </td>
+    </ul> <p><code>minimum.code.cache.size</code>阈值可配置。 有关Bug的详细信息，请参阅<a href="https://bugs.java.com/bugdatabase/">，然后搜索Bug ID 8012547</a>。</p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=codeCacheHealthCheck，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>资源搜索路径错误</td>
-   <td><p>检查路径中是否有任何资源 <code>/apps/foundation/components/primary</code> 和：</p>
+   <td><p>检查路径<code>/apps/foundation/components/primary</code>中是否存在任何资源，并且：</p>
     <ul>
      <li>如果下有子节点，则返回警告 <code>/apps/foundation/components/primary</code></li>
-    </ul> <p>此运行状况检查的MBean为 <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=resourceSearchPathErrorHealthCheck，type=HealthCheck</a>.</p> </td>
+    </ul> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DresourceSearchPathErrorHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=resourceSearchPathErrorHealthCheck，type=HealthCheck</a>。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -329,7 +329,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
 默认情况下，对于现成的AEM实例，运行状况检查每60秒运行一次。
 
-您可以配置 **期间** 使用 [OSGi配置](/help/sites-deploying/configuring-osgi.md) **查询运行状况检查配置** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics)。
+您可以使用[OSGi配置](/help/sites-deploying/configuring-osgi.md) **查询运行状况检查配置** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics)配置&#x200B;**Period**。
 
 ## 使用Nagios进行监控 {#monitoring-with-nagios}
 
@@ -340,14 +340,14 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
    >[!NOTE]
    >
-   >有关如何在系统上安装Nagios和NRPE的详细信息，请参阅 [Nagios文档](https://library.nagios.com/library/products/nagios-core/manuals//).
+   >有关如何在系统上安装Nagios和NRPE的详细信息，请参阅[Nagios文档](https://library.nagios.com/library/products/nagios-core/manuals//)。
 
 1. 添加AEM服务器的主机定义。 您可以使用Configuration Manager通过Nagios XI Web界面完成此任务：
 
    1. 打开浏览器并指向Nagios服务器。
-   1. 按 **配置** 按钮进行修改。
-   1. 在左窗格中，按 **核心配置管理器** 下 **高级配置**.
-   1. 按 **主机** 链接位于 **监控** 部分。
+   1. 按顶部菜单中的&#x200B;**配置**&#x200B;按钮。
+   1. 在左窗格中，按&#x200B;**高级配置**&#x200B;下的&#x200B;**核心配置管理器**。
+   1. 按&#x200B;**监视**&#x200B;部分下的&#x200B;**主机**&#x200B;链接。
    1. 添加主机定义：
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
@@ -367,7 +367,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
    ```
 
 1. 在AEM服务器上安装Nagios和NRPE。
-1. 安装 [check_http_json](https://github.com/phrawzty/check_http_json) 插件。
+1. 在两个服务器上安装[check_http_json](https://github.com/phrawzty/check_http_json)插件。
 1. 在两个服务器上定义通用JSON检查命令：
 
    ```xml
@@ -410,7 +410,7 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 * 访问栈和线程转储的功能
 * 请求和查询性能分析器
 
-您可以通过以下方式访问“诊断工具”屏幕 **工具 — 操作 — 诊断** 从AEM欢迎屏幕。 您还可以通过直接访问以下URL来访问屏幕： `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
+您可以从AEM欢迎屏幕转到&#x200B;**工具 — 操作 — 诊断**&#x200B;来访问“诊断工具”屏幕。 您还可以通过直接访问以下URL来访问屏幕： `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -420,14 +420,14 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
 日志消息使用内存中的日志附加器，因此与日志文件无关。 另一个后果是，更改此UI中的日志级别不会更改记录到传统日志文件中的信息。 在此UI中添加和删除记录器仅影响内存记录器。 此外，更改记录器配置将反映在内存记录器的未来中。 已记录且不再相关的条目不会被删除，但将来不会记录类似的条目。
 
-您可以通过从UI的左上角齿轮按钮提供记录器配置来配置记录的内容。 在那里，您可以添加、删除或更新记录器配置。 日志记录器配置由 **日志级别** （警告/信息/调试）和 **筛选器名称**. 此 **筛选器名称** 具有筛选被记录的日志消息的源的角色。 或者，如果日志记录器应捕获指定级别的所有日志消息，则过滤器名称应为&#39;&#39;**根**“。 设置记录器的级别将触发捕获级别等于或高于指定级别的所有消息。
+您可以通过从UI的左上角齿轮按钮提供记录器配置来配置记录的内容。 在那里，您可以添加、删除或更新记录器配置。 记录器配置由&#x200B;**日志级别** (WARN / INFO / DEBUG)和&#x200B;**筛选器名称**&#x200B;组成。 **筛选器名称**&#x200B;具有筛选要记录的日志消息源的角色。 或者，如果日志记录器应捕获指定级别的所有日志消息，则筛选器名称应为“**root**”。 设置记录器的级别将触发捕获级别等于或高于指定级别的所有消息。
 
 示例：
 
-* 如果您计划捕获所有 **错误** 消息 — 无需配置。 默认情况下会捕获所有错误消息。
-* 如果您计划捕获所有 **错误**， **警告** 和 **信息** messages — 记录器名称应设置为： &quot;**根**“，记录器级别为： **信息**.
+* 如果您计划捕获所有&#x200B;**ERROR**&#x200B;消息，则无需配置。 默认情况下会捕获所有错误消息。
+* 如果您计划捕获所有&#x200B;**ERROR**、**WARN**&#x200B;和&#x200B;**INFO**&#x200B;消息，则记录器名称应设置为“**root**”，记录器级别应设置为&#x200B;**INFO**。
 
-* 如果您计划捕获来自特定包（例如com.adobe.granite）的所有消息，则应将记录器名称设置为“com.adobe.granite”。 并且，日志记录器级别设置为： **调试** (这样做可以捕获所有 **错误**， **警告**， **信息**、和 **调试** 消息)，如下图所示。
+* 如果您计划捕获来自特定包（例如com.adobe.granite）的所有消息，则应将记录器名称设置为“com.adobe.granite”。 而且，记录器级别设置为&#x200B;**DEBUG** （这样做会捕获所有&#x200B;**ERROR**、**WARN**、**INFO**&#x200B;和&#x200B;**DEBUG**&#x200B;消息），如下图所示。
 
 ![chlimage_1-121](assets/chlimage_1-121.png)
 
@@ -441,11 +441,11 @@ A **复合运行状况检查** 是汇总来自几项单独检查的信息的检�
 
 >[!NOTE]
 >
->诊断页面中的设置不会影响记录到日志文件的内容，反之亦然。 因此，尽管错误日志可能会捕获INFO消息，但您可能会在日志消息UI中看不到它们。 此外，通过UI，还可以捕获特定包中的DEBUG消息，而不会影响错误日志。 有关如何配置日志文件的详细信息，请参见 [记录](/help/sites-deploying/configure-logging.md).
+>诊断页面中的设置不会影响记录到日志文件的内容，反之亦然。 因此，尽管错误日志可能会捕获INFO消息，但您可能会在日志消息UI中看不到它们。 此外，通过UI，还可以捕获特定包中的DEBUG消息，而不会影响错误日志。 有关如何配置日志文件的详细信息，请参阅[日志记录](/help/sites-deploying/configure-logging.md)。
 
 >[!NOTE]
 >
->**使用AEM 6.4**，维护任务会以丰富的信息格式在INFO级别立即注销。 此工作流可让您更好地了解维护任务的状态。
+>**使用AEM 6.4**，维护任务将以INFO级别中信息丰富的格式立即注销。 此工作流可让您更好地了解维护任务的状态。
 >
 >如果您使用第三方工具（如Splunk）来监控和响应维护任务活动，则可以使用以下log语句：
 
@@ -458,9 +458,9 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 使用“请求性能”页可以分析处理的最慢的页面请求。 此页面上仅注册内容请求。 更具体地说，将捕获以下请求：
 
-1. 请求访问下的资源 `/content`
-1. 请求访问下的资源 `/etc/design`
-1. 请求具有 `".html"` 扩展
+1. 请求访问`/content`下的资源
+1. 请求访问`/etc/design`下的资源
+1. 具有`".html"`扩展名的请求
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
@@ -474,7 +474,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### 查询性能 {#query-performance}
 
-使用“查询性能”页可以分析系统执行的最慢查询。 此信息由JMX Mbean中的存储库提供。 在杰克拉比， `com.adobe.granite.QueryStat` JMX Mbean提供此信息，而在Oak存储库中，此信息由提供 `org.apache.jackrabbit.oak.QueryStats.`
+使用“查询性能”页可以分析系统执行的最慢查询。 此信息由JMX Mbean中的存储库提供。 在Jackrabbit中，`com.adobe.granite.QueryStat` JMX Mbean提供此信息，而在Oak存储库中，此信息由`org.apache.jackrabbit.oak.QueryStats.`提供
 
 此时将显示页面：
 
@@ -488,9 +488,9 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### 说明查询 {#explain-query}
 
-对于任何给定的查询，Oak会尝试根据下存储库中定义的Oak索引找出最佳执行方式 **oak：index** 节点。 根据查询的不同，Oak可能会选择不同的索引。 了解Oak如何执行查询是优化查询的第一步。
+对于任何给定的查询，Oak会尝试根据&#x200B;**oak：index**&#x200B;节点下的存储库中定义的Oak索引找出最佳执行方式。 Oak可能会根据查询选择不同的索引。 了解Oak如何执行查询是优化查询的第一步。
 
-Explain查询是一种说明Oak如何执行查询的工具。 可以通过以下位置访问它： **工具 — 操作 — 诊断** 从AEM欢迎屏幕。 然后，单击 **查询性能** 并切换到 **说明查询** 选项卡。
+Explain查询是一种用于说明Oak如何执行查询的工具。 通过从AEM欢迎屏幕转到&#x200B;**工具 — 操作 — 诊断**&#x200B;可访问该区域。 然后，单击&#x200B;**查询性能**&#x200B;并切换到&#x200B;**解释查询**&#x200B;选项卡。
 
 **功能**
 
@@ -498,10 +498,10 @@ Explain查询是一种说明Oak如何执行查询的工具。 可以通过以下
 * 报告所提供的查询的实际执行时间
 * 检测较慢的查询，并警告可能较慢的查询
 * 报告用于执行查询的Oak索引
-* 显示实际Oak查询引擎说明
+* 显示实际的Oak查询引擎说明
 * 提供慢速查询和常用查询的点击加载列表
 
-进入Explain查询UI后，输入查询，然后按 **说明** 按钮：
+进入Explain查询UI后，输入查询，然后按&#x200B;**Explain**&#x200B;按钮：
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
@@ -509,7 +509,7 @@ Explain查询是一种说明Oak如何执行查询的工具。 可以通过以下
 
 第二个条目是执行计划。
 
-勾选 **包括执行时间** 运行查询之前的框还会显示运行查询所用的时间。 此 **包括节点数** 选项报告节点计数。 该报告提供了可用于优化应用程序或部署的索引的更多信息。
+在运行查询前勾选&#x200B;**包括执行时间**&#x200B;框也会显示查询运行的时间。 **包含节点数**&#x200B;选项报告节点数。 该报告提供了可用于优化应用程序或部署的索引的更多信息。
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
@@ -517,17 +517,17 @@ Explain查询是一种说明Oak如何执行查询的工具。 可以通过以下
 
 索引管理器的目的是促进索引管理，如维护索引或查看索引的状态。
 
-通过从“Welcome Screen（欢迎屏幕）”转到**Tools - Operations - Diagnosis **，然后单击 **索引管理器** 按钮。
+通过从“欢迎屏幕”转到**工具 — 操作 — 诊断**，然后单击&#x200B;**索引管理器**&#x200B;按钮可访问该区域。
 
 也可以通过以下URL直接访问它： `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
-![index_manager](assets/index_manager.png)
+![索引管理器](assets/index_manager.png)
 
 UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键入过滤条件。
 
 ### 下载状态ZIP {#download-status-zip}
 
-此操作会触发下载zip文件，其中包含有关系统状态和配置的有用信息。 存档包含实例配置、包列表、OSGI、Sling量度和统计数据，这可能会导致产生大文件。 您可以使用来减少大型状态文件的影响 **下载状态ZIP**&#x200B;窗口。 可从以下位置访问该窗口：**AEM >工具>操作>诊断>下载状态ZIP。**
+此操作会触发下载zip文件，其中包含有关系统状态和配置的有用信息。 存档包含实例配置、包列表、OSGI、Sling量度和统计数据，这可能会导致产生大文件。 您可以使用&#x200B;**下载状态ZIP**&#x200B;窗口来减少大型状态文件的影响。 可从以下位置访问该窗口：**AEM >工具>操作>诊断>下载状态ZIP。**
 
 从该窗口中，您可以选择要导出的内容（日志文件和/或线程转储）以及相对于当前日期包含在下载中的日志天数。
 
@@ -545,18 +545,18 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 
 在“自动维护任务”页面中，您可以查看和跟踪计划定期执行的建议维护任务。 这些任务与运行状况检查系统集成。 任务也可以从界面手动执行。
 
-要转到操作仪表板中的“维护”页面，请从AEM的“欢迎”屏幕转到 **工具 — 操作 — 功能板 — 维护**，或直接关注此链接：
+要转到操作功能板中的“维护”页面，请从AEM欢迎屏幕转到&#x200B;**工具 — 操作 — 功能板 — 维护**，或直接关注此链接：
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
 “操作功能板”中提供了以下任务：
 
-1. 此 **修订清理**&#x200B;任务，位于 **每日维护窗口** 菜单。
-1. 此 **Lucene二进制文件清理** 任务，位于 **每日维护窗口** 菜单。
-1. 此 **工作流清除** 任务，位于 **每周维护时段** 菜单。
-1. 此 **数据存储垃圾收集** 任务，位于 **每周维护时段** 菜单。
-1. 此 **审核日志维护** 任务，位于 **每周维护时段** 菜单。
-1. 此 **版本清除维护** 任务，位于 **每周维护时段** 菜单。
+1. **修订清理**&#x200B;任务，位于&#x200B;**每日维护窗口**&#x200B;菜单下。
+1. 位于&#x200B;**每日维护窗口**&#x200B;菜单下的&#x200B;**Lucene二进制文件清理**&#x200B;任务。
+1. 位于&#x200B;**每周维护时段**&#x200B;菜单下的&#x200B;**工作流清除**&#x200B;任务。
+1. **数据存储垃圾收集**&#x200B;任务，位于&#x200B;**每周维护时段**&#x200B;菜单下。
+1. 位于&#x200B;**每周维护窗口**&#x200B;菜单下的&#x200B;**审核日志维护**&#x200B;任务。
+1. 位于&#x200B;**每周维护时段**&#x200B;菜单下的&#x200B;**版本清除维护**&#x200B;任务。
 
 日常维护时段默认时间是凌晨2:00至凌晨5:00。配置为在每周维护窗口中运行的任务在星期六凌晨1:00到凌晨2:00之间运行。
 
@@ -570,55 +570,55 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 
 ### 修订清理 {#revision-clean-up}
 
-有关执行修订清除的详细信息， [请参阅此专用文章](/help/sites-deploying/revision-cleanup.md).
+有关执行修订清理的详细信息，[请参阅此专用文章](/help/sites-deploying/revision-cleanup.md)。
 
 ### Lucene 二进制文件清理 {#lucene-binaries-cleanup}
 
-通过使用Lucene二进制文件清理任务，您可以清除Lucene二进制文件并减少正在运行的数据存储大小要求。 Lucene的二进制流失率每天都会回收，而不是以前依赖成功的迁移 [数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md) 跑。
+通过使用Lucene二进制文件清理任务，您可以清除Lucene二进制文件并减少正在运行的数据存储大小要求。 每天回收Lucene的二进制流失，而不是早先依赖成功的[数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md)运行。
 
 尽管开发维护任务是为了减少Lucene相关的修订垃圾，但运行任务时普遍存在效率提高：
 
 * 每周运行一次的数据存储垃圾收集任务可以更快地完成。
 * 它也可能略微改善整体AEM性能。
 
-您可以从以下位置访问Lucene二进制文件清理任务： **AEM >工具>操作>维护>每日维护窗口> Lucene二进制文件清理**.
+您可以从&#x200B;**AEM > Tools > Operations > Maintenance > Daily Maintenance Window > Lucene Binaries Cleanup**&#x200B;访问Lucene二进制文件清理任务。
 
 ### 数据存储垃圾回收 {#data-store-garbage-collection}
 
-有关数据存储垃圾收集的详细信息，请参阅专门的 [文档页面](/help/sites-administering/data-store-garbage-collection.md).
+有关数据存储垃圾收集的详细信息，请参阅专用的[文档页面](/help/sites-administering/data-store-garbage-collection.md)。
 
 ### 工作流清除 {#workflow-purge}
 
 还可以从维护功能板中清除工作流。 要运行工作流清除任务，请执行以下操作：
 
-1. 单击 **每周维护时段** 页面。
-1. 在以下页面中，单击 **播放** 在 **工作流清除** 卡片。
+1. 单击&#x200B;**每周维护时段**&#x200B;页面。
+1. 在以下页面中，单击&#x200B;**工作流清除**&#x200B;信息卡中的&#x200B;**播放**。
 
 >[!NOTE]
 >
->有关工作流维护的更多详细信息，请参阅 [此页面](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances).
+>有关工作流维护的详细信息，请参阅[此页面](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)。
 
 ### 审核日志维护 {#audit-log-maintenance}
 
-有关审核日志维护，请参见 [单独的文档页面。](/help/sites-administering/operations-audit-log.md)
+有关审核日志维护，请参阅[单独的文档页面。](/help/sites-administering/operations-audit-log.md)
 
 ### 版本清除 {#version-purge}
 
-您可以计划版本清除维护任务，以自动删除旧版本。 此操作可将手动使用的需求降至最低 [版本清除工具](/help/sites-deploying/version-purging.md). 您可以通过访问以下链接来计划和配置版本清除任务 **“工具”>“操作”>“维护”>“每周维护”窗口** 并按照以下步骤执行操作：
+您可以计划版本清除维护任务，以自动删除旧版本。 此操作将手动使用[版本清除工具](/help/sites-deploying/version-purging.md)的需要降至最低。 您可以通过访问&#x200B;**Tools > Operations > Maintenance > Weekly Maintenance Window**&#x200B;并按照以下步骤来计划和配置版本清除任务：
 
-1. 单击 **添加**.
-1. 选择 **版本清除** 从下拉菜单中。
+1. 单击&#x200B;**添加**。
+1. 从下拉菜单中选择&#x200B;**版本清除**。
 
    ![version_purge_maintenancetask](assets/version_purge_maintenancetask.png)
 
-1. 要配置版本清除任务，请单击 **齿轮** 图标（在新创建的版本清除维护卡上）。
+1. 要配置版本清除任务，请单击新创建的版本清除维护信息卡上的&#x200B;**齿轮**&#x200B;图标。
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
-**使用AEM 6.4**，您可以按如下方式停止版本清除维护任务：
+**使用AEM 6.4**，您可以按如下方式停止“版本清除”维护任务：
 
 * 自动 — 如果计划的维护窗口在任务完成之前关闭，则任务会自动停止。 当下一个维护窗口打开时，它将恢复。
-* 手动 — 要手动停止任务，请在“版本清除”维护卡上单击 **停止** 图标。 在下次执行时，任务将安全地恢复。
+* 手动 — 要手动停止任务，请在“版本清除”维护卡上单击&#x200B;**停止**&#x200B;图标。 在下次执行时，任务将安全地恢复。
 
 >[!NOTE]
 >
@@ -630,7 +630,7 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 
 ## 自定义维护任务 {#custom-maintenance-tasks}
 
-自定义维护任务可以作为OSGi服务实施。 由于维护任务基础架构基于Apache Sling的作业处理，因此维护任务必须实施Java™接口 ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. 此外，它必须声明若干服务注册属性以作为维护任务进行检测，如下所示：
+自定义维护任务可以作为OSGi服务实施。 由于维护任务基础结构基于Apache Sling的作业处理，因此维护任务必须实施Java™接口` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`。 此外，它必须声明若干服务注册属性以作为维护任务进行检测，如下所示：
 
 <table>
  <tbody>
@@ -666,16 +666,16 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>维护任务的唯一主题。<br /> Apache Sling作业处理将启动一个与此主题完全相同的作业来运行维护任务，当针对此主题注册任务时，该任务将运行。<br /> 主题必须开始于 <i>com/adobe/granite/maintenance/job/</i></td>
+   <td>维护任务的唯一主题。<br /> Apache Sling作业处理将启动一个与此主题完全相同的作业来运行维护任务，当针对此主题注册任务时，该任务将运行。<br />主题必须以<i>com/adobe/granite/maintenance/job/</i>开头</td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
    <td>必填</td>
   </tr>
  </tbody>
 </table>
 
-除上述服务物业外， `process()` 方法 `JobConsumer` 接口必须通过添加应为维护任务执行的代码来实现。 提供的 `JobExecutionContext` 可用于输出状态信息，检查作业是否由用户停止并创建结果（成功或失败）。
+除了上述服务属性之外，`JobConsumer`接口的`process()`方法必须通过添加应为维护任务执行的代码来实现。 提供的`JobExecutionContext`可用于输出状态信息，检查作业是否被用户停止并创建结果（成功或失败）。
 
-对于不应在所有安装上运行维护任务的情况（例如，仅在发布实例上运行），您可以通过添加以下内容使服务要求配置处于活动状态 `@Component(policy=ConfigurationPolicy.REQUIRE)`. 然后，您可以将相应的配置标记为依赖于存储库中的运行模式。 有关更多信息，请参阅 [配置OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository).
+对于不应在所有安装上运行维护任务的情况（例如，仅在发布实例上运行），您可以通过添加`@Component(policy=ConfigurationPolicy.REQUIRE)`使服务需要配置才能处于活动状态。 然后，您可以将相应的配置标记为依赖于存储库中的运行模式。 有关详细信息，请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md#creating-the-configuration-in-the-repository)。
 
 以下是自定义维护任务的示例，该任务从可配置的临时目录中删除过去24小时内修改过的文件：
 
@@ -695,19 +695,19 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-此操作在/apps/granite/operations/config/maintenance/中添加相应的资源`schedule`/`taskname`. 如果任务依赖于运行模式，则必须在该节点上使用对此维护任务必须处于活动状态的运行模式值设置属性granite.operations.conditions.runmode。
+此操作在/apps/granite/operations/config/maintenance/`schedule`/`taskname`处添加相应的资源。 如果任务依赖于运行模式，则必须在该节点上使用对此维护任务必须处于活动状态的运行模式值设置属性granite.operations.conditions.runmode。
 
 ## 系统概览 {#system-overview}
 
-此 **系统概述功能板** 显示AEM实例的配置、硬件和运行状况的高级概述。 系统运行状况是透明的，所有信息都汇总在单个仪表板中。
+**系统概述仪表板**&#x200B;显示AEM实例的配置、硬件和运行状况的高级概述。 系统运行状况是透明的，所有信息都汇总在单个仪表板中。
 
 >[!NOTE]
 >
->您还可以 [观看此视频](https://video.tv.adobe.com/v/21340) 有关系统概述功能板的介绍。
+>您也可以[观看此视频](https://video.tv.adobe.com/v/21340)，了解系统概述仪表板的简介。
 
 ### 如何访问 {#how-to-access}
 
-要访问系统概述功能板，请导航至 **“工具”>“操作”>“系统概述”**.
+要访问系统概述仪表板，请导航到&#x200B;**工具>操作>系统概述**。
 
 ![system_overview_dashboard](assets/system_overview_dashboard.png)
 
@@ -715,7 +715,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 下表描述了“系统概述仪表板”中显示的所有信息。 当没有要显示的相关信息（例如，备份未进行，没有关键的运行状况检查）时，相应的部分将显示“没有条目”消息。
 
-您也可以下载 `JSON` 文件通过单击 **下载** 按钮来修改仪表板的右上角。 此 `JSON` 终结点为 `/libs/granite/operations/content/systemoverview/export.json` 并且它可用于 `curl` 用于外部监视的脚本。
+您还可以通过单击仪表板右上角的&#x200B;**下载**&#x200B;按钮，下载摘要仪表板信息的`JSON`文件。 `JSON`终结点为`/libs/granite/operations/content/systemoverview/export.json`，可以在`curl`脚本中使用它进行外部监视。
 
 <table>
  <tbody>
@@ -732,7 +732,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
      <li>处于“严重”状态的检查列表</li>
      <li>处于警告状态的检查列表</li>
     </ul> </td>
-   <td>以可视方式指示：<br />
+   <td>以可视方式显示：<br />
     <ul>
      <li>严重检查的红色标记</li>
      <li>用于警告检查的橙色标记</li>
@@ -768,9 +768,9 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>
     <ul>
      <li>操作系统和操作系统版本(例如，macOS X)</li>
-     <li>系统平均负载，检索自 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
+     <li>从<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a>检索到的系统平均负载</li>
      <li>磁盘空间（主目录所在的分区）</li>
-     <li>最大栈，由返回 <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
+     <li>最大栈，由<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a>返回</li>
     </ul> </td>
    <td>不适用</td>
    <td>不适用</td>
@@ -821,7 +821,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
     <ul>
      <li>红色标记表示被阻止的代理或配置错误</li>
      <li>用于暂停的试剂的橙色标记</li>
-     <li>用于暂停、空闲或正在运行的代理的灰色标记<br /> </li>
+     <li>暂停、空闲或正在运行的代理的灰色标记<br /> </li>
     </ul> </td>
    <td>分发页面<br /> </td>
   </tr>
@@ -833,7 +833,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
      <li>空闲代理的列表</li>
      <li>正在运行的代理（当前正在处理条目）列表</li>
     </ul> </td>
-   <td><p>以可视方式指示：<br /> </p>
+   <td><p>以可视方式显示：<br /> </p>
     <ul>
      <li>被阻止代理的红色标记</li>
      <li>暂停代理的灰色标记</li>

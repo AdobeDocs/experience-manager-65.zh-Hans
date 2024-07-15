@@ -6,7 +6,7 @@ contentOwner: jsyal
 source-git-commit: 8b4cb4065ec14e813b49fb0d577c372790c9b21a
 workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 6%
+ht-degree: 7%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 6%
   </tr>
   <tr>
    <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
-   <td><p><strong>3.2.72</strong>  — 可在Apple商店中获取</p> <p> </p> </td> 
+   <td><p><strong>3.2.72</strong> — 可在Apple商店中获取</p> <p> </p> </td> 
   </tr>
   <tr>
    <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 
@@ -83,9 +83,9 @@ aem-screens-player-windows-1.0.48-signed.exe.zip
 
 ## Android Player {#android-player}
 
-| **AEM服务器版本** | **Android Player** |
+| **AEM服务器版本** | **Android播放器** |
 |---|---|
-| **AEM 6.3+SP1+Screens FP1(1.0.64_B002)** | **3.2.68 -** (可在Macromedia网站上找到)和Google Play Store |
+| **AEM 6.3+SP1+Screens FP1(1.0.64_B002)** | **3.2.68 -**(可在Macromedia网站上找到)和Google Play应用商店 |
 | **AEM 6.3+SP1+Screens FP2(1.0.298)** | **3.3.0** |
 | **AEM 6.4** | **3.3.0** |
 
@@ -103,15 +103,15 @@ aem-screens-player-android-3.3.0.apk.zip
    <td><strong>AEM服务器版本</strong></td> 
    <td><strong>iOS Player</strong></td> 
    <td><strong>Windows10播放器</strong></td> 
-   <td><strong>Chrome操作系统播放器</strong><br /> </td> 
+   <td><strong>Chrome OS播放器</strong><br /> </td> 
    <td><strong>Android Player</strong></td> 
   </tr>
   <tr>
    <td><strong>AEM 6.3+SP1+Screens FP1(1.0.64_B002)</strong></td> 
-   <td><p><strong>3.2.72 - </strong>可在Apple Store上获取</p> <p><strong>3.3.0</strong>  — 不起作用</p> <p> </p> </td> 
-   <td><strong>1.0.12</strong> -(在Macromedia上提供)</td> 
-   <td><p><strong>1.0.30 -</strong> 可在Chrome Store上获取。</p> <p>功能包1不支持</p> </td> 
-   <td><strong>3.2.68 -</strong> (可在Macromedia网站上找到)和Google Play Store</td> 
+   <td><p><strong>3.2.72 - </strong>可在Apple应用商店中使用</p> <p><strong>3.3.0</strong> — 不起作用</p> <p> </p> </td> 
+   <td><strong>1.0.12</strong> - (在Macromedia上提供)</td> 
+   <td><p><strong>1.0.30 -</strong>在Chrome Store上可用。</p> <p>功能包1不支持</p> </td> 
+   <td><strong>3.2.68 -</strong>(可在Macromedia网站上找到)和Google Play应用商店</td> 
   </tr>
   <tr>
    <td><strong><strong>AEM 6.3+SP1+Screens FP2(1.0.298)</strong></strong></td> 

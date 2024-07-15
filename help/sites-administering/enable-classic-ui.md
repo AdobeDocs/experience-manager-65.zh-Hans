@@ -25,4 +25,4 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关与经典UI的功能对等状态的详细信息，请参阅 [触屏UI对等功能](/help/release-notes/touch-ui-features-status.md) 文档。
+>有关经典UI的功能对等状态的详细信息，请参阅[触控UI功能对等](/help/release-notes/touch-ui-features-status.md)文档。

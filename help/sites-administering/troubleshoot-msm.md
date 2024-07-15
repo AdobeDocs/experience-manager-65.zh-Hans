@@ -44,7 +44,7 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 * `cq:LiveSync` mixin 类型
    * 它在 `jcr:content` 节点上设置，并定义根 Live Copy 页面。
-   * 这些页面具有 `cq:LiveSyncConfig` 类型的子节点 `cq:LiveCopy` 通过以下属性包含有关Live Copy的基本和强制性信息：
+   * 这些页面具有类型为`cq:LiveCopy`的`cq:LiveSyncConfig`子节点，这些子节点通过下列属性包含有关Live Copy的基本和强制性信息：
       * `cq:master` 指向 Live Copy 的 Blueprint 页面。
       * `cq:rolloutConfigs` 表示应用于 Live Copy 的活动转出配置。
       * 如果此根 Live Copy 页面的子页面包含在 Live Copy 中，则 `cq:isDeep` 为 true。
@@ -84,7 +84,7 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 如果转出Blueprint页面，它将更新其Live Copy页面或创建一个新的Live Copy页面（如果尚不存在）。 例如，首次转出它或手动删除 Live Copy 页面时。
 
-但在后一种情况下，如果页面不包含 `cq:LiveRelationship` 属性存在且名称相同，此页面在创建Live Copy页面之前会被重命名。
+但在后一种情况下，如果存在不带`cq:LiveRelationship`属性的同名页面，则在创建Live Copy页面之前会重命名此页面。
 
 默认情况下，转出需要一个链接的Live Copy页面，Blueprint的更新将转出到该页面。 或者，它期望在创建Live Copy页面时完全没有页面。
 

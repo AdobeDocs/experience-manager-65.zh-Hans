@@ -25,7 +25,7 @@ ht-degree: 3%
 
 ## 配置 {#configuration}
 
-要配置自定义HTTP标头，必须首先定义它们。 必须首先通过将自定义HTTP标头添加到来定义它们 `com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl` 使用OSGi配置的服务配置。
+要配置自定义HTTP标头，必须首先定义它们。 必须首先通过使用OSGi配置将自定义HTTP标头添加到`com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl`服务配置来定义它们。
 
 您可以在项目的“Cloud Service配置”页中配置HTTP标头的值：
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 限制 {#restrictions}
 
-虽然该服务允许定义任何标头名称，包括标准名称，但它们不可配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 可以找到受限制的标头名称列表 [此处](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers). 除了这些标头之外，还有两个标头无法使用：
+虽然该服务允许定义任何标头名称，包括标准名称，但它们不可配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 [此处](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)可找到受限标头名称列表。 除了这些标头之外，还有两个标头无法使用：
 
 * &quot;Store&quot; - CIF用于识别Adobe Commerce商店
 * &quot;Preview-Version&quot; — 由CIF用于检索暂存产品

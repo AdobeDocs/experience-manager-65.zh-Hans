@@ -8,7 +8,7 @@ role: Admin,Architect,Data Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 65%
+ht-degree: 66%
 
 ---
 
@@ -30,16 +30,16 @@ ht-degree: 65%
 
 管理员只需要创建配置一次，或者在极少数情况下，需要新工作区用于组织内容模型时进行创建。对于本指南快速入门，我们只需要创建一个配置。
 
-1. 登录AEM，从主菜单选择 **“工具”>“常规”>“配置浏览器”**.
-1. 提供 **标题** 用于您的配置。
-   * 名称将根据标题自动生成，并根据以下内容进行调整： [AEM命名约定。](/help/sites-developing/naming-conventions.md)。它将成为存储库中的节点名称。
+1. 登录AEM，从主菜单选择&#x200B;**工具>常规>配置浏览器**。
+1. 为您的配置提供&#x200B;**标题**。
+   * 名称将根据标题自动生成，并根据[AEM命名约定进行调整。](/help/sites-developing/naming-conventions.md)。它将成为存储库中的节点名称。
 1. 查看以下选项：
    * **内容片段模型**
    * **GraphQL 持久查询**
 
    ![创建配置](assets/create-configuration.png)
 
-1. 单击 **创建**
+1. 单击&#x200B;**创建**
 
 您可以根据需要创建多个配置。 配置也可以嵌套。
 

@@ -35,14 +35,14 @@ ht-degree: 6%
 
 ## 资源 {#assets}
 
-以下主题介绍了有关资源的最佳实践，包括Dynamic Media功能和Dynamic Media Classic集成：
+以下主题介绍了有关Assets的最佳实践，包括Dynamic Media功能和Dynamic Media Classic集成：
 
 <table>
  <tbody>
   <tr>
-   <td>围绕Assets的不同区域的最佳实践，用于增强系统在负载下的稳定性和性能</td>
+   <td>Assets周围不同区域的最佳实践，用于增强负载下的系统稳定性和性能</td>
    <td><a href="/help/assets/best-practices-for-assets.md">用于资产的最佳实践</a></td>
-   <td>包含指向Assets不同区域最佳实践指南的链接。 查看这些文档后，您将拥有构建和管理企业资产管理系统的知识和工具。</td>
+   <td>包含指向Assets周围不同区域的最佳实践指南的链接。 查看这些文档后，您将拥有构建和管理企业资产管理系统的知识和工具。</td>
   </tr>
   <tr>
    <td>如何组织内容（文件夹层次结构）</td>
@@ -52,12 +52,12 @@ ht-degree: 6%
   <tr>
    <td>Scene7与AEM集成</td>
    <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">将Scene7与AEM集成的最佳实践</a></td>
-   <td><p>描述何时启用轮询导入程序、如何测试您的集成，以及何时使用内容浏览器而不是直接上传到资产。</p> </td>
+   <td><p>描述何时启用轮询导入程序、如何测试您的集成，以及何时使用内容浏览器而不是直接上传到Assets。</p> </td>
   </tr>
   <tr>
    <td>图像预设选项</td>
-   <td>了解 <a href="/help/assets/managing-image-presets.md#understanding-image-presets">图像预设</a> 和 <a href="/help/assets/managing-image-presets.md#image-preset-options">图像预设最佳实践</a></td>
-   <td>作为以下文档的一部分： <a href="/help/assets/managing-image-presets.md">管理图像预设</a>，这些主题将介绍什么是图像预设以及有关选择图像预设选项的最佳实践。</td>
+   <td>了解<a href="/help/assets/managing-image-presets.md#understanding-image-presets">图像预设</a>和<a href="/help/assets/managing-image-presets.md#image-preset-options">图像预设最佳实践</a></td>
+   <td>作为有关<a href="/help/assets/managing-image-presets.md">管理图像预设</a>的文档的一部分，这些主题描述了什么是图像预设以及有关选择图像预设选项的最佳实践。</td>
   </tr>
   <tr>
    <td>Dynamic Media与与Scene7的直接集成</td>

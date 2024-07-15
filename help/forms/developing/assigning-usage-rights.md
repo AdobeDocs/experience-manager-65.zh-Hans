@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 分配使用权限 {#assigning-usage-rights}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 ## 关于Acrobat Reader DC扩展服务 {#about-the-acrobat-reader-dc-extensions-service}
 
@@ -26,13 +26,13 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 您可以使用Acrobat Reader DC扩展服务完成这些任务：
 
-* 将使用权限应用于PDF文档。 有关信息，请参阅 [将使用权限应用于PDF文档](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
-* 从PDF文档中删除使用权限。 有关信息，请参阅 [从PDF文档中删除使用权限](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents).
-* 检索凭据详细信息。 有关信息，请参阅 [正在检索凭据信息](assigning-usage-rights.md#retrieving-credential-information).
+* 将使用权限应用于PDF文档。 有关信息，请参阅[将使用权限应用于PDF文档](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)。
+* 从PDF文档中删除使用权限。 有关信息，请参阅[从PDF文档中删除使用权限](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)。
+* 检索凭据详细信息。 有关信息，请参阅[检索凭据信息](assigning-usage-rights.md#retrieving-credential-information)。
 
 >[!NOTE]
 >
->有关Acrobat Reader DC扩展服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Acrobat Reader DC扩展服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 将使用权限应用于PDF文档 {#applying-usage-rights-to-pdf-documents}
 
@@ -40,11 +40,11 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 >[!NOTE]
 >
->使用将使用权限应用于PDF文档时 `applyUsageRights` 方法，是Java API的一部分，您可以设置 `isModeFinal` 的参数 `ReaderExtensionsOptionSpec` 对象对象 `false`. 这会导致表单处理的计数器未更新并改进性能。 如果您不介意更新表单处理计数器，建议您将 `isModeFinal` 参数至 `false`.
+>当使用属于Java API一部分的`applyUsageRights`方法向PDF文档应用使用权限时，可以将`ReaderExtensionsOptionSpec`对象的`isModeFinal`参数设置为`false`。 这会导致表单处理的计数器未更新并改进性能。 如果您不关心更新已处理的表单计数器，建议将`isModeFinal`参数设置为`false`。
 
 >[!NOTE]
 >
->有关Acrobat Reader DC扩展服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Acrobat Reader DC扩展服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -63,7 +63,7 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 **创建Acrobat Reader DC扩展客户端对象**
 
-要以编程方式执行Acrobat Reader DC扩展服务操作，您必须创建Acrobat Reader DC扩展服务客户端对象。 如果您使用Acrobat Reader DC扩展Java API，请创建 `ReaderExtensionsServiceClient` 对象。 如果您使用Acrobat Reader DC扩展Web服务API，请创建 `ReaderExtensionsServiceService` 对象。
+要以编程方式执行Acrobat Reader DC扩展服务操作，您必须创建Acrobat Reader DC扩展服务客户端对象。 如果您使用Acrobat Reader DC扩展Java API，请创建一个`ReaderExtensionsServiceClient`对象。 如果您使用Acrobat Reader DC扩展Web服务API，请创建一个`ReaderExtensionsServiceService`对象。
 
 **检索PDF文档**
 
@@ -77,7 +77,7 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 >
 >如果尝试分配凭据不允许的使用权限，则会导致异常。
 
-**对PDF文档应用使用权限**
+**将使用权限应用于PDF文档**
 
 要对PDF文档应用使用权限，请引用用于应用使用权限的凭据的别名(凭据通常在安装AEM Forms期间安装)。 另外，您必须指定应用了使用权限的PDF文档。 有关配置凭据的信息，请参阅应用程序服务器的安装和部署指南。
 
@@ -107,40 +107,40 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 1. 创建Acrobat Reader DC扩展客户端对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `ReaderExtensionsServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`ReaderExtensionsServiceClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索PDF文档。
 
-   * 创建 `java.io.FileInputStream` 通过使用其构造函数并传递指定PDF文档位置的字符串值来表示PDF文档的对象。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 通过使用其构造函数并传递指定PDF文档位置的字符串值，创建表示PDF文档的`java.io.FileInputStream`对象。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 指定要应用的使用权限。
 
-   * 创建 `UsageRights` 通过其构造函数表示使用权限的对象。
-   * 对于要应用的每个使用权限，调用属于 `UsageRights` 对象。 例如，要添加 `enableFormFillIn` 使用权限，调用 `UsageRights` 对象的 `enableFormFillIn` 方法和路径 `true`. （对要应用的每个使用权限重复此步骤）。
+   * 使用构造函数创建表示使用权限的`UsageRights`对象。
+   * 对于要应用的每个使用权限，调用属于`UsageRights`对象的相应方法。 例如，要添加`enableFormFillIn`使用权限，请调用`UsageRights`对象的`enableFormFillIn`方法并传递`true`。 （对要应用的每个使用权限重复此步骤）。
 
 1. 对PDF文档应用使用权限。
 
-   * 创建 `ReaderExtensionsOptionSpec` 对象。 此对象包含Acrobat Reader DC扩展服务所需的运行时选项。 调用此构造函数时，必须指定以下值：
+   * 使用构造函数创建`ReaderExtensionsOptionSpec`对象。 此对象包含Acrobat Reader DC扩展服务所需的运行时选项。 调用此构造函数时，必须指定以下值：
 
-      * 此 `UsageRights` 包含应用于文档的使用权限的对象。
+      * 包含要应用于文档的使用权限的`UsageRights`对象。
       * 一个字符串值，指定在Adobe Reader 7.x中打开启用了权限的PDF文档时，用户会看到的消息。Adobe Reader 8.0中不显示此消息。
 
-   * PDF通过调用 `ReaderExtensionsServiceClient` 对象的 `applyUsageRights` 方法并传递以下值：
+   * 通过调用`ReaderExtensionsServiceClient`对象的`applyUsageRights`方法并传递以下值，将使用权限应用于PDF文档：
 
-      * 此 `com.adobe.idp.Document` 包含应用了使用权限的PDF文档的对象。
+      * 包含应用了使用权限的PDF文档的`com.adobe.idp.Document`对象。
       * 一个字符串值，它指定可让您应用使用权限的凭据别名。
-      * 指定相应密码值的字符串值。 (当前忽略此参数。 你可以通过 `null`.)
+      * 指定相应密码值的字符串值。 (当前忽略此参数。 您可以传递`null`。)
 
-   * 此 `ReaderExtensionsOptionSpec` 包含运行时选项的对象。
+   * 包含运行时选项的`ReaderExtensionsOptionSpec`对象。
 
-   此 `applyUsageRights` 方法返回 `com.adobe.idp.Document` 包含启用权限的PDF文档的对象。
+   `applyUsageRights`方法返回包含启用权限的PDF文档的`com.adobe.idp.Document`对象。
 
 1. 保存启用权限的PDF文档。
 
-   * 创建 `java.io.File` 对象并确保文件扩展名为.pdf。
-   * 调用 `com.adobe.idp.Document` 对象的 `copyToFile` 用于复制 `com.adobe.idp.Document` 对象到文件(确保您使用 `com.adobe.idp.Document` 返回的对象 `applyUsageRights` 方法)。
+   * 创建`java.io.File`对象并确保文件扩展名为.pdf。
+   * 调用`com.adobe.idp.Document`对象的`copyToFile`方法以将`com.adobe.idp.Document`对象的内容复制到文件中（确保您使用`applyUsageRights`方法返回的`com.adobe.idp.Document`对象）。
 
 **另请参阅**
 
@@ -158,59 +158,59 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Acrobat Reader DC扩展客户端对象。
 
-   * 创建 `ReaderExtensionsServiceClient` 对象使用默认构造函数。
-   * 创建 `ReaderExtensionsServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. 请确保您指定 `?blob=mtom`.)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `ReaderExtensionsServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`ReaderExtensionsServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`ReaderExtensionsServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`）。 请确保指定`?blob=mtom`。)
+   * 通过获取`ReaderExtensionsServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+      * 将AEM表单用户名分配给字段`ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索PDF文档。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储应用了使用权限的PDF文档。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法。 传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 属性与字节数组的内容。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储应用了使用权限的PDF文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示PDF文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法，使用流数据填充字节数组。 传递字节数组、起始位置和要读取的流长度。
+   * 使用字节数组的内容指定其`MTOM`属性以填充`BLOB`对象。
 
 1. 指定要应用的使用权限。
 
-   * 创建 `UsageRights` 通过其构造函数表示使用权限的对象。
-   * 对于要应用的每个使用权限，分配值 `true` 到属于的相应数据成员 `UsageRights` 对象。 例如，要添加 `enableFormFillIn` 使用权限，分配 `true` 到 `UsageRights` 对象的 `enableFormFillIn` 数据成员。 （对要应用的每个使用权限重复此步骤）。
+   * 使用构造函数创建表示使用权限的`UsageRights`对象。
+   * 对于要应用的每个使用权限，将值`true`分配给属于`UsageRights`对象的相应数据成员。 例如，要添加`enableFormFillIn`使用权限，请将`true`分配给`UsageRights`对象的`enableFormFillIn`数据成员。 （对要应用的每个使用权限重复此步骤）。
 
 1. 对PDF文档应用使用权限。
 
-   * 创建 `ReaderExtensionsOptionSpec` 对象。 此对象包含Acrobat Reader DC扩展服务所需的运行时选项。
-   * 分配 `UsageRights` 对象 `ReaderExtensionsOptionSpec` 对象的 `usageRights` 数据成员。
-   * 指定一个字符串值，该值指定在Adobe Reader中打开启用了权限的PDF文档时用户看到的消息 `ReaderExtensionsOptionSpec` 对象的 `message` 数据成员。
-   * PDF通过调用 `ReaderExtensionsServiceClient` 对象的 `applyUsageRights` 方法并传递以下值：
+   * 使用构造函数创建`ReaderExtensionsOptionSpec`对象。 此对象包含Acrobat Reader DC扩展服务所需的运行时选项。
+   * 将`UsageRights`对象分配给`ReaderExtensionsOptionSpec`对象的`usageRights`数据成员。
+   * 指定一个字符串值，该值指定在Adobe Reader中打开启用了权限的PDF文档时用户看到的消息到`ReaderExtensionsOptionSpec`对象的`message`数据成员。
+   * 通过调用`ReaderExtensionsServiceClient`对象的`applyUsageRights`方法并传递以下值，将使用权限应用于PDF文档：
 
-      * 此 `BLOB` 包含应用了使用权限的PDF文档的对象。
+      * 包含应用了使用权限的PDF文档的`BLOB`对象。
       * 一个字符串值，它指定可让您应用使用权限的凭据别名。
-      * 指定相应密码值的字符串值。 (当前忽略此参数。 你可以通过 `null`.)
+      * 指定相应密码值的字符串值。 (当前忽略此参数。 您可以传递`null`。)
 
-   * 此 `ReaderExtensionsOptionSpec` 包含运行时选项的对象。
+   * 包含运行时选项的`ReaderExtensionsOptionSpec`对象。
 
-   此 `applyUsageRights` 方法返回 `BLOB` 包含启用权限的PDF文档的对象。
+   `applyUsageRights`方法返回包含启用权限的PDF文档的`BLOB`对象。
 
 1. 保存启用权限的PDF文档。
 
-   * 创建 `System.IO.FileStream` 对象通过调用其构造函数。 传递一个字符串值，该值表示启用权限的PDF文档的文件位置。
-   * 创建一个字节数组，用于存储 `BLOB` 返回的对象 `applyUsageRights` 方法。 通过获取的值，填充字节数组 `BLOB` 对象的 `MTOM` 数据成员。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
-   * PDF通过调用 `System.IO.BinaryWriter` 对象的 `Write` 和传递字节数组。
+   * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，该值表示启用权限的PDF文档的文件位置。
+   * 创建一个字节数组，用于存储`applyUsageRights`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值填充字节数组。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
+   * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
 
@@ -226,7 +226,7 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 >[!NOTE]
 >
->有关Acrobat Reader DC扩展服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Acrobat Reader DC扩展服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -244,7 +244,7 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 **创建Acrobat Reader DC扩展客户端对象**
 
-您必须先创建Acrobat Reader DC扩展服务客户端对象，然后才能以编程方式执行Acrobat Reader DC扩展服务操作。 如果您使用的是Java API，请创建 `ReaderExtensionsServiceClient` 对象。 如果您使用Acrobat Reader DC扩展Web服务API，请创建 `ReaderExtensionsServiceService` 对象。
+您必须先创建Acrobat Reader DC扩展服务客户端对象，然后才能以编程方式执行Acrobat Reader DC扩展服务操作。 如果您使用的是Java API，请创建一个`ReaderExtensionsServiceClient`对象。 如果您使用Acrobat Reader DC扩展Web服务API，请创建一个`ReaderExtensionsServiceService`对象。
 
 **检索启用权限的PDF文档**
 
@@ -282,21 +282,21 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 1. 创建Acrobat Reader DC扩展客户端对象。
 
-   创建 `ReaderExtensionsServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ReaderExtensionsServiceClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 检索PDF文档。
 
-   * 创建 `java.io.FileInputStream` 对象，通过使用其构造函数并传递指定PDF文档位置的字符串值，来表示启用权限的PDF文档。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 使用启用权限的PDF文档的构造函数并传递指定PDF文档位置的字符串值，创建表示该文档的`java.io.FileInputStream`对象。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 从PDF文档中删除使用权限。
 
-   通过调用，从PDF文档中删除使用权限 `ReaderExtensionsServiceClient` 对象的 `removeUsageRights` 方法和传递 `com.adobe.idp.Document` 包含启用权限的PDF文档的对象。 此方法会返回 `com.adobe.idp.Document` 包含没有使用权限的PDF文档的对象。
+   通过调用`ReaderExtensionsServiceClient`对象的`removeUsageRights`方法并传递包含启用权限的PDF文档的`com.adobe.idp.Document`对象，从PDF文档中删除使用权限。 此方法返回的`com.adobe.idp.Document`对象包含没有使用权限的PDF文档。
 
 1. 对PDF文档应用使用权限。
 
-   * 创建 `java.io.File` 对象并确保文件扩展名为。PDF。
-   * 调用 `Document` 对象的 `copyToFile` 用于复制 `Document` 对象到文件(确保您使用 `Document` 返回的对象 `removeUsageRights` 方法)。
+   * 创建`java.io.File`对象并确保文件扩展名为。PDF。
+   * 调用`Document`对象的`copyToFile`方法以将`Document`对象的内容复制到文件中（确保您使用`removeUsageRights`方法返回的`Document`对象）。
 
 **另请参阅**
 
@@ -314,42 +314,42 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Acrobat Reader DC扩展客户端对象。
 
-   * 创建 `ReaderExtensionsServiceClient` 对象使用默认构造函数。
-   * 创建 `ReaderExtensionsServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. 请确保您指定 `?blob=mtom`.)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `ReaderExtensionsServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`ReaderExtensionsServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`ReaderExtensionsServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`）。 请确保指定`?blob=mtom`。)
+   * 通过获取`ReaderExtensionsServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+      * 将AEM表单用户名分配给字段`ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索PDF文档。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储启用权限的PDF文档，使用权限将从该文档中删除。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 属性与字节数组的内容。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储已启用权限的PDF文档，该文档中的使用权限已被删除。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示PDF文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容指定其`MTOM`属性以填充`BLOB`对象。
 
 1. 从PDF文档中删除使用权限。
 
-   通过调用，从PDF文档中删除使用权限 `ReaderExtensionsServiceClient` 对象的 `removeUsageRights` 方法和传递 `BLOB` 包含启用权限的PDF文档的对象。 此方法会返回 `BLOB` 包含没有使用权限的PDF文档的对象。
+   通过调用`ReaderExtensionsServiceClient`对象的`removeUsageRights`方法并传递包含启用权限的PDF文档的`BLOB`对象，从PDF文档中删除使用权限。 此方法返回的`BLOB`对象包含没有使用权限的PDF文档。
 
 1. 对PDF文档应用使用权限。
 
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个表示PDF文件位置的字符串值。
-   * 创建一个字节数组，用于存储 `BLOB` 返回的对象 `removeUsageRights` 方法。 通过获取的值，填充字节数组 `BLOB` 对象的 `MTOM` 数据成员。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
+   * 通过调用其构造函数并传递表示PDF文件位置的字符串值来创建`System.IO.FileStream`对象。
+   * 创建一个字节数组，用于存储`removeUsageRights`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值填充字节数组。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
 
 **另请参阅**
 
@@ -365,7 +365,7 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 >[!NOTE]
 >
->有关Acrobat Reader DC扩展服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Acrobat Reader DC扩展服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-2}
 
@@ -382,7 +382,7 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 **创建Acrobat Reader DC扩展客户端对象**
 
-您必须先创建Acrobat Reader DC扩展服务客户端对象，然后才能以编程方式执行Acrobat Reader DC扩展服务操作。 如果您使用的是Java API，请创建 `ReaderExtensionsServiceClient` 对象。 如果您使用Acrobat Reader DC扩展Web服务API，请创建 `ReaderExtensionsServiceService` 对象。
+您必须先创建Acrobat Reader DC扩展服务客户端对象，然后才能以编程方式执行Acrobat Reader DC扩展服务操作。 如果您使用的是Java API，请创建一个`ReaderExtensionsServiceClient`对象。 如果您使用Acrobat Reader DC扩展Web服务API，请创建一个`ReaderExtensionsServiceService`对象。
 
 **检索启用权限的PDF文档**
 
@@ -420,18 +420,18 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 1. 创建Acrobat Reader DC扩展客户端对象。
 
-   创建 `ReaderExtensionsServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ReaderExtensionsServiceClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 检索PDF文档。
 
-   * 创建 `java.io.FileInputStream` 对象，通过使用该对象的构造函数并传递指定启用权限的PDF文档位置的字符串值来表示启用权限的PDF文档。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 使用启用权限的PDF文档的构造函数并传递指定启用权限的PDF文档位置的字符串值，创建表示该文档的`java.io.FileInputStream`对象。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 从PDF文档中删除使用权限。
 
-   * 通过调用，检索有关用于向PDF文档应用使用权限的凭据的信息 `ReaderExtensionsServiceClient` 对象的 `getDocumentUsageRights` 方法和传递 `com.adobe.idp.Document` 包含启用权限的PDF文档的对象。 此方法返回 `GetUsageRightsResult` 包含凭据信息的对象。
-   * 通过调用 `GetUsageRightsResult` 对象的 `getNotAfter` 方法。 此方法会返回 `java.util.Date` 表示凭据不再有效的日期的对象。
-   * 通过调用，检索在启用权限的PDF文档打开时在Adobe Reader中显示的消息 `GetUsageRightsResult` 对象的 `getMessage` 方法。 此方法返回代表消息的字符串值。
+   * 通过调用`ReaderExtensionsServiceClient`对象的`getDocumentUsageRights`方法并传递包含启用权限的PDF文档的`com.adobe.idp.Document`对象，检索有关用于向PDF文档应用使用权限的凭据的信息。 此方法返回包含凭据信息的`GetUsageRightsResult`对象。
+   * 通过调用`GetUsageRightsResult`对象的`getNotAfter`方法，检索凭据不再有效的日期。 此方法返回表示凭据不再有效的日期的`java.util.Date`对象。
+   * 通过调用`GetUsageRightsResult`对象的`getMessage`方法，检索在启用权限的PDF文档打开时在Adobe Reader中显示的消息。 此方法返回代表消息的字符串值。
 
 **另请参阅**
 
@@ -449,39 +449,39 @@ Acrobat Reader DC扩展服务通过扩展Adobe Reader的功能，使您的组织
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/ReaderExtensionsService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Acrobat Reader DC扩展客户端对象。
 
-   * 创建 `ReaderExtensionsServiceClient` 对象使用默认构造函数。
-   * 创建 `ReaderExtensionsServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. 请确保您指定 `?blob=mtom`.)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `ReaderExtensionsServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`ReaderExtensionsServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`ReaderExtensionsServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`）。 请确保指定`?blob=mtom`。)
+   * 通过获取`ReaderExtensionsServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+      * 将AEM表单用户名分配给字段`ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索PDF文档。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储启用权限的PDF文档。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示启用权限的PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 属性与字节数组的内容。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储启用权限的PDF文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示启用权限的PDF文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容指定其`MTOM`属性以填充`BLOB`对象。
 
 1. 从PDF文档中删除使用权限。
 
-   * 通过调用，检索有关用于向PDF文档应用使用权限的凭据的信息 `ReaderExtensionsServiceClient` 对象的 `getDocumentUsageRights` 方法和传递 `com.adobe.idp.Document` 包含启用权限的PDF文档的对象。 此方法会返回 `GetUsageRightsResult` 包含凭据信息的对象。
-   * 通过获取的值，检索凭据不再有效的日期 `GetUsageRightsResult` 对象的 `notAfter` 数据成员。 此数据成员的数据类型为 `System.DateTime`.
-   * 获取启用了权限的PDF文档在Adobe Reader中打开时显示的消息，方法是 `GetUsageRightsResult` 对象的 `message` 数据成员。 此数据成员的数据类型是一个字符串。
-   * 通过获取值，检索凭据的使用次数 `GetUsageRightsResult` 对象的 `useCount` 数据成员。 此数据成员的数据类型是整数。
+   * 通过调用`ReaderExtensionsServiceClient`对象的`getDocumentUsageRights`方法并传递包含启用权限的PDF文档的`com.adobe.idp.Document`对象，检索有关用于向PDF文档应用使用权限的凭据的信息。 此方法返回包含凭据信息的`GetUsageRightsResult`对象。
+   * 通过获取`GetUsageRightsResult`对象的`notAfter`数据成员的值，检索凭据不再有效的日期。 此数据成员的数据类型为`System.DateTime`。
+   * 通过获取`GetUsageRightsResult`对象的`message`数据成员的值，检索在Adobe Reader中打开启用权限的PDF文档时显示的消息。 此数据成员的数据类型是一个字符串。
+   * 通过获取`GetUsageRightsResult`对象的`useCount`数据成员的值检索凭据的使用次数。 此数据成员的数据类型是整数。
 
 **另请参阅**
 

@@ -22,13 +22,13 @@ ht-degree: 0%
 
 Adobe Experience Manager Forms可以使用存储在HSM上的凭据或电子令牌进行eSign或对文档应用服务器端数字签名。 要在AEM Forms中使用HSM或etoken设备，请执行以下操作：
 
-1. [启用DocAssurance服务](#configuredocassurance).
-1. [在AEM Web控制台中创建HSM或etoken设备的别名](#configuredeviceinaemconsole).
-1. [使用DocAssurance服务API签署或验证设备上存储的数字密钥](#programatically).
+1. [启用DocAssurance服务](#configuredocassurance)
+1. [在AEM Web控制台中为HSM或etoken设备创建别名](#configuredeviceinaemconsole)。
+1. [使用DocAssurance服务API签署或验证存储在设备上的数字密钥](#programatically)。
 
 ## 使用AEM Forms配置HSM或etoken设备之前 {#configurehsmetoken}
 
-* 安装 [AEM Forms加载项](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 包。
+* 安装[AEM Forms附加组件](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)包。
 * 在与AEM服务器相同的计算机上安装和配置HSM或etoken客户端软件。 客户端软件需要与HSM和etoken设备进行通信。
 
 ## 启用DocAssurance服务 {#configuredocassurance}
@@ -37,11 +37,11 @@ Adobe Experience Manager Forms可以使用存储在HSM上的凭据或电子令�
 
 1. 停止AEM Forms环境的创作实例。
 
-1. 打开 [AEM_root]\crx-quickstart\conf\sling.properties文件进行编辑。
+1. 打开[AEM_root]\crx-quickstart\conf\sling.properties文件进行编辑。
 
    >[!NOTE]
    >
-   >如果您已使用 [AEM_root]\crx-quickstart\bin\start.bat文件启动AEM实例，然后打开 [AEM_root]\crx-quickstart\sling.properties文件进行编辑。
+   >如果您已使用[AEM_root]\crx-quickstart\bin\start.bat文件启动AEM实例，请打开[AEM_root]\crx-quickstart\sling.properties文件进行编辑。
 
 1. 在sling.properties文件中添加或替换以下属性：
 
@@ -100,18 +100,18 @@ Perform the following steps to setup certificates:
 别名包含HSM或etoken所需的所有参数。 执行以下说明，为eSign或Digital Signatures使用的每个HSM或电子令牌凭据创建别名：
 
 1. 打开AEM控制台。 AEM控制台的默认URL为https://&lt;host>：&lt;port>/system/console/configMgr
-1. 打开 **HSM凭据配置服务** 并指定以下字段的值：
+1. 打开&#x200B;**HSM凭据配置服务**&#x200B;并指定以下字段的值：
 
    * **凭据别名**：指定用于标识别名的字符串。 此值用作某些数字签名操作（如“签名签名字段”操作）的属性。
-   * **DLL路径**：指定HSM或etoken客户端库在服务器上的路径。 例如，`C:\Program Files\LunaSA\cryptoki.dll`。在群集环境中，必须确保群集中的所有服务器必须使用相同的路径。
+   * **DLL路径**：指定服务器上HSM或etoken客户端库的路径。 例如，`C:\Program Files\LunaSA\cryptoki.dll`。在群集环境中，必须确保群集中的所有服务器必须使用相同的路径。
    * **HSM Pin**：指定访问设备密钥所需的密码。
-   * **HSM插槽ID**：指定整数类型的时隙标识符。 插槽ID是逐个客户端设置的。 用于标识HSM上包含用于签名/认证的私钥的插槽。
+   * **HSM插槽ID**：指定整数类型的插槽标识符。 插槽ID是逐个客户端设置的。 用于标识HSM上包含用于签名/认证的私钥的插槽。
 
    >[!NOTE]
    >
    >配置Etoken时，请为HSM插槽ID字段指定一个数值。 需要数值才能使签名操作正常工作。
 
-   * **证书SHA1**：为您使用的凭据指定公钥(.cer)文件的SHA1值（指纹）。 确保SHA1值中没有使用空格。
+   * **证书SHA1**：为正在使用的凭据指定公钥(.cer)文件的SHA1值（指纹）。 确保SHA1值中没有使用空格。
    * **HSM设备类型**：选择HSM（Luna或其他）或eToken设备的制造商。
 
    单击&#x200B;**保存**。为AEM Forms配置了硬件安全模块。 现在，您可以将Hardware Security Module与AEM Forms结合使用来签署或认证文档。
@@ -415,4 +415,4 @@ public class Sign{
  public CredentialContext(String credentialAlias, ResourceResolver resourceResolver, boolean isHSMCredential);
 ```
 
-有关DocAssurance服务的API和示例代码的详细信息，请参阅 [以编程方式使用AEM文档服务](/help/forms/using/aem-document-services-programmatically.md).
+有关DocAssurance服务的API和示例代码的详细信息，请参阅[以编程方式使用AEM Document Services](/help/forms/using/aem-document-services-programmatically.md)。

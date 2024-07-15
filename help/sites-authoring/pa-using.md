@@ -24,7 +24,7 @@ ht-degree: 4%
 
 ![aa-10](assets/aa-10.png)
 
-页面分析数据显示在 [列表视图](/help/sites-authoring/basic-handling.md#list-view) 站点控制台的。 当页面以列表格式显示时，默认情况下可以使用以下列：
+页面分析数据显示在站点控制台的[列表视图](/help/sites-authoring/basic-handling.md#list-view)中。 当页面以列表格式显示时，默认情况下可以使用以下列：
 
 * 页面视图
 * 独特访客
@@ -34,12 +34,12 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->要更改更新周期， [配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>要更改更新周期，[配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval)。
 
-1. 打开 **站点** 控制台；例如， [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
-1. 在工具栏的最右侧（右上角），单击图标以选择 **列表视图** (显示的图标将取决于 [当前视图](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources))。
+1. 打开&#x200B;**站点**&#x200B;控制台；例如，[http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
+1. 在工具栏的最右侧（右上角），单击图标以选择&#x200B;**列表视图** （显示的图标取决于[当前视图](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)）。
 
-1. 再次单击工具栏最右侧的图标，然后选择 **查看设置**. 此 **配置列** 对话框打开。 进行所需的任何更改并通过进行确认 **更新**.
+1. 再次，在工具栏的最右侧（右上角），单击图标，然后选择&#x200B;**查看设置**。 将打开&#x200B;**配置列**&#x200B;对话框。 进行所需的任何更改并通过&#x200B;**更新**&#x200B;确认。
 
    ![aa-04](assets/aa-04.png)
 
@@ -62,11 +62,11 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 >
 >当页面树包含与不同Adobe Analytics云配置关联的子项时，无法为页面配置可用数据列。
 
-1. 在列表视图中，使用视图选择器（工具栏的右侧），选择 **查看设置** 然后 **添加自定义分析数据**.
+1. 在“列表视图”中，使用视图选择器（工具栏的右侧），选择&#x200B;**视图设置**，然后选择&#x200B;**添加自定义分析数据**。
 
    ![aa-15](assets/aa-15.png)
 
-1. 在站点控制台中选择要向作者显示的量度，然后单击 **添加**.
+1. 在Sites控制台中选择要向作者公开的量度，然后单击&#x200B;**添加**。
 
    显示的列是从Adobe Analytics中检索的。
 
@@ -74,7 +74,7 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 
 ### 从站点打开内容分析 {#opening-content-insights-from-sites}
 
-打开 [内容分析](/help/sites-authoring/content-insights.md) 以进一步调查页面有效性。
+从站点控制台打开[内容分析](/help/sites-authoring/content-insights.md)以进一步调查页面有效性。
 
 1. 在站点控制台中，选择要查看其内容分析的页面。
 1. 在工具栏上，单击Analytics和Recommendations图标。
@@ -85,25 +85,25 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 
 >[!NOTE]
 >
->如果符合以下条件，则显示此字段 [Activity Map已配置](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map) 用于您的网站。
+>如果您的网站配置了[Activity Map](/help/sites-administering/adobeanalytics-connect.md#configuring-for-the-activity-map)，则会显示此信息。
 
 >[!NOTE]
 >
 >Activity Map的数据获取自Adobe Analytics。
 
-当您的网站 [为Adobe Analytics配置](/help/sites-administering/adobeanalytics-connect.md)，您可以使用 [模式Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) 以查看相关数据。 例如：
+当您的网站已[配置为Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md)时，您可以使用[模式Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes)查看相关数据。 例如：
 
 ![aa-07](assets/aa-07.png)
 
 ### 访问Activity Map {#accessing-the-activity-map}
 
-选择 [Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) 模式时，将要求您输入Adobe Analytics凭据。
+选择[Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes)模式后，将要求您输入Adobe Analytics凭据。
 
 ![aa-03](assets/aa-03.png)
 
-此 **分析** 此时将显示浮动工具栏；您可以：
+此时将显示&#x200B;**Analytics**&#x200B;浮动工具栏；您可以：
 
-* 使用双箭头(**>>**)
+* 使用双箭头(**>**)更改工具栏格式
 * 切换页面详细信息（眼睛图标）
 * 配置Activity Map设置（cog图标）
 * 选择要显示的分析（各种下拉选择器）
@@ -115,11 +115,11 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 
 您可以使用各种标准选择要显示的分析数据及其显示方式：
 
-* **标准**/**实时**
+* **标准**/**上线**
 
 * 事件类型
 * 用户组
-* **气泡**/**渐变**/**获胜方和失败方**/**关闭**
+* **气泡**/**渐变**/**获胜方和失败方**/**关**
 
 * 要显示的期间
 
@@ -127,11 +127,11 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 
 ### 配置Activity Map {#configuring-the-activity-map}
 
-使用 **显示设置** 图标以打开 **Activity Map设置** 对话框。
+使用&#x200B;**显示设置**&#x200B;图标打开&#x200B;**Activity Map设置**&#x200B;对话框。
 
 ![aa-04-1](assets/aa-04-1.png)
 
-此 **Activity Map设置** 对话框在三个选项卡上提供了一系列选项：
+**Activity Map设置**&#x200B;对话框在三个选项卡上提供了一系列选项：
 
 ![aa-06](assets/aa-06.png)
 

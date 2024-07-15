@@ -39,21 +39,21 @@ ht-degree: 0%
 
 ## 配置 {#configuration}
 
-自适应渲染选择器可以配置用于现有设备组或 [您自己创建的组。](/help/sites-developing/mobile.md#device-groups)
+可以为现有设备组或您自己创建的[组配置自适应渲染选择器。](/help/sites-developing/mobile.md#device-groups)
 
-在本例中，您将配置现有的设备组 **智能手机** 将自适应渲染选择器作为 **体验页面** We.Retail中的模板。
+对于此示例，您将配置现有的设备组&#x200B;**智能手机**，使其在We.Retail中的&#x200B;**体验页面**&#x200B;模板中包含自适应渲染选择器。
 
-1. 在中编辑需要自适应选择器的设备组 `http://localhost:4502/miscadmin#/etc/mobile/groups`
+1. 在`http://localhost:4502/miscadmin#/etc/mobile/groups`中编辑需要自适应选择器的设备组
 
-   设置选项 **禁用模拟器** 并保存。
+   设置选项&#x200B;**禁用模拟器**&#x200B;并保存。
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. 选择器可用于 **BlackBerry®** 和 **IPHONE 4** 已提供设备组 **智能手机** 会添加到模板和页面结构中。
+1. 选择器可用于&#x200B;**BlackBerry®**&#x200B;和&#x200B;**iPhone 4**，前提是按以下步骤将设备组&#x200B;**Smartphone**&#x200B;添加到模板和页面结构。
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. 使用CRXDE Lite，通过将设备组添加到多值字符串属性，允许在模板上使用设备组 `cq:deviceGroups` 模板的结构中。
+1. 使用CRXDE Lite，通过将设备组添加到模板结构上的多值字符串属性`cq:deviceGroups`中，允许在模板上使用设备组。
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -63,19 +63,19 @@ ht-degree: 0%
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. 使用CRXDE Lite，通过将设备组添加到多值字符串属性，允许在您的网站上使用该设备组 `cq:deviceGroups` 在网站的结构中。
+1. 使用CRXDE Lite，通过将设备组添加到网站结构上的多值字符串属性`cq:deviceGroups`中，允许在网站上使用该设备组。
 
    `/content/<your-site>/jcr:content`
 
-   例如，如果要允许 **智能手机** 设备组：
+   例如，如果要允许&#x200B;**智能手机**&#x200B;设备组：
 
    `/content/we-retail/jcr:content`
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-现在，使用 [模拟器](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) 在页面编辑器中(例如 [修改布局](/help/sites-authoring/responsive-layout.md))，并且您选择了所配置设备组中的设备，则页面将在URL中通过选择器呈现。
+现在，在页面编辑器中使用[模拟器](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)时（例如，在[修改布局](/help/sites-authoring/responsive-layout.md)时），当您选择已配置设备组的某个设备时，页面将作为URL的一部分呈现为选择器。
 
-在本例中，当编辑基于 **体验页面** 模板，并在仿真器中选择iPhone 4，则会呈现页面，其中包括作为的选择器 `arctic-surfing-in-lofoten.smart.html` 而不是 `arctic-surfing-in-lofoten.html`
+在此示例中，在编辑基于&#x200B;**Experience Page**&#x200B;模板的页面，并在模拟器中选择iPhone 4时，该页面将呈现为`arctic-surfing-in-lofoten.smart.html`，而不是`arctic-surfing-in-lofoten.html`
 
 也可以使用此选择器直接调用页面。
 

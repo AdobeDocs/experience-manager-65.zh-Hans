@@ -26,13 +26,13 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->由于电子商务框架可与任何电子商务解决方案一起使用，请参阅 [开发（通用）](/help/commerce/cif-classic/developing/generic.md) 以获取有关开发可能性的更多信息。
+>由于电子商务框架可与任何电子商务解决方案一起使用，因此有关开发可能性的详细信息，请参阅[开发（通用）](/help/commerce/cif-classic/developing/generic.md)。
 
 >[!NOTE]
 >
->要将集成框架与外部电子商务提供商一起使用，您首先需要安装所需的包。 有关更多信息，请参阅 [部署电子商务](/help/commerce/cif-classic/deploying/ecommerce.md).
+>要将集成框架与外部电子商务提供商一起使用，您首先需要安装所需的包。 有关详细信息，请参阅[部署电子商务](/help/commerce/cif-classic/deploying/ecommerce.md)。
 >
->有关概念和管理电子商务实施的信息，请参阅 [管理电子商务](/help/commerce/cif-classic/administering/ecommerce.md).
+>有关概念和管理电子商务实施的信息，请参阅[管理电子商务](/help/commerce/cif-classic/administering/ecommerce.md)。
 
 ## API文档 {#api-documentation}
 
@@ -40,4 +40,4 @@ ht-degree: 3%
 
 `com.adobe.cq.commerce.*`
 
-请参阅 [API文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html) 以了解详细信息。
+有关详细信息，请参阅[API文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html)。

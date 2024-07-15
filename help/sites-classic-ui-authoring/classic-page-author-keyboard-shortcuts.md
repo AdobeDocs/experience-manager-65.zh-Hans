@@ -18,11 +18,11 @@ ht-degree: 14%
 
 # 编辑页面时的键盘快捷键{#keyboard-shortcuts-when-editing-pages}
 
-在整个 AEM 环境中都可以使用各种键盘快捷键。有些可应用于编辑页面，另一些可应用于 [使用控制台](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+在整个 AEM 环境中都可以使用各种键盘快捷键。某些可应用于编辑页面，其他可应用于控制台[的使用](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
->在下表中，对于以下组中的键组合： **快捷键** 列中，Ctrl和Command键均可在macOS上使用。
+>在下表中，对于&#x200B;**快捷方式**&#x200B;列中的组合键，Ctrl和Command键均适用于macOS。
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ ht-degree: 14%
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>剪切选定的段落。<strong><br /> 注意：</strong> 在将剪切的段落粘贴到新位置之前，它不会消失。</td>
+   <td>剪切选定的段落。<strong><br />注意：</strong>剪切的段落在粘贴到新位置之前不会消失。</td>
   </tr>
   <tr>
    <td> </td>
@@ -99,7 +99,7 @@ ht-degree: 14%
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>显示 <a href="/help/sites-administering/client-context.md">客户端上下文</a>.</td>
+   <td>显示<a href="/help/sites-administering/client-context.md">客户端上下文</a>。</td>
   </tr>
   <tr>
    <td>富文本编辑器<br /> </td>
@@ -164,7 +164,7 @@ ht-degree: 14%
   </tr>
   <tr>
    <td>编辑模式</td>
-   <td>在URL中设置以下后缀：<br /> <code>?debugClientLibs=true</code><br /> 然后使用：<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
+   <td>在URL中设置以下后缀： <br /> <code>?debugClientLibs=true</code><br />然后使用：<br /> <strong><code>Ctrl-Shift-U</code></strong></td>
    <td>要查看页面加载的时间统计信息，请执行以下操作：</td>
   </tr>
  </tbody>

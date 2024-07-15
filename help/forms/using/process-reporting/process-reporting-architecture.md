@@ -42,13 +42,13 @@ ht-degree: 0%
 
 ProcessDataPublisher服务器定期在AEM Forms数据库上运行，并提取自上次运行服务以来更改的数据。 然后，它将数据发布到Process Data Storage服务。
 
-有关配置服务的详细信息，请参阅 [配置ProcessDataPublisher服务](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p).
+有关配置服务的详细信息，请参阅[配置ProcessDataPublisher服务](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)。
 
 ### ProcessDataStorageProvider服务 {#processdatastorageprovider-service-br}
 
 ProcessDataStorageProvider服务从ProcessDataPublisher服务接收流程数据，并将该数据保存到Process Reporting存储库。
 
-有关配置服务的详细信息，请参阅 [配置ProcessDataStorageProvider服务](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p).
+有关配置服务的详细信息，请参阅[配置ProcessDataStorageProvider服务](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)。
 
 ### OSGi服务 {#osgi-service-br}
 
@@ -64,7 +64,7 @@ QueryDataServlet服务接受来自Process Reporting用户界面的查询。
 
 进程报表用户界面是一个基于Web浏览器的界面。 您可以使用此界面查看从AEM Forms数据库发布的进程和任务信息。
 
-有关Process Reporting用户界面的介绍，请参见 [Process Reporting用户界面](/help/forms/using/process-reporting/introduction-process-reporting.md).
+有关“流程报表”用户界面的介绍，请参阅[流程报表用户界面](/help/forms/using/process-reporting/introduction-process-reporting.md)。
 
 ### QueryDataServlet服务 {#querydataservlet-service-br-1}
 
@@ -76,4 +76,4 @@ QueryDataServlet服务接受来自Process Reporting用户界面的查询。
 
 您可以创建自己的自定义报表，并在“流程报表”用户界面的“自定义报表”选项卡中显示这些报表。
 
-有关创建自定义报表的步骤，请参阅文章中的创建自定义报表 [正在报告中的自定义报表](/help/forms/using/process-reporting/process-reporting-custom-reports.md).
+有关创建自定义报告的步骤，请参阅[进程报告中的自定义报告](/help/forms/using/process-reporting/process-reporting-custom-reports.md)一文中的要创建自定义报告。

@@ -29,22 +29,22 @@ AEM引入了记录权限更改的功能，以便您以后可以审核这些更�
 * 正在添加到组中的用户
 * 现有用户或组的权限更改
 
-默认情况下，这些条目会写入 `error.log` 文件。 为了更便于监视，建议将它们重定向到单独的日志文件。 有关如何执行此操作的更多信息，请参阅以下段落。
+默认情况下，这些条目将写入`error.log`文件。 为了更便于监视，建议将它们重定向到单独的日志文件。 有关如何执行此操作的更多信息，请参阅以下段落。
 
 ## 将输出重定向到单独的日志文件 {#redirecting-the-output-to-a-separate-log-file}
 
-要将日志记录输出重定向到单独的日志文件，请创建 **Apache Sling日志记录器** 配置。 让我们使用 `useraudit.log` 作为下例中单独文件的名称。
+要将日志记录输出重定向到单独的日志文件，请创建&#x200B;**Apache Sling日志记录器**&#x200B;配置。 在下面的示例中，我们使用`useraudit.log`作为单独文件的名称。
 
-1. 通过浏览至Web控制台 *https://serveraddress:serverport/system/console/configMgr*
-1. 搜索 **Apache Sling日志记录器配置**. 然后，按条目右侧的“+”以创建工厂配置。
+1. 通过浏览到&#x200B;*https://serveraddress:serverport/system/console/configMgr*&#x200B;转到Web控制台
+1. 搜索&#x200B;**Apache Sling日志记录器配置**。 然后，按条目右侧的“+”以创建工厂配置。
 1. 创建以下配置：
 
-   * **日志级别：** 信息
+   * **日志级别：**&#x200B;信息
    * **日志文件：** logs/useraudit.log
-   * **消息模式：** 级别默认值
+   * **消息模式：**&#x200B;级别默认值
    * **记录器：** com.adobe.granite.security.user.internal.audit， com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   将两个记录器输入到 **Logger** 字段中，必须输入第一个日志记录器的名称，然后按“+”按钮并输入第二个日志记录器的名称来创建另一个字段。
+   要在&#x200B;**记录器**&#x200B;字段中输入两个记录器，必须输入第一个记录器的名称，然后按“+”按钮并输入第二个记录器的名称来创建另一个字段。
 
 ## 示例输出 {#example-output}
 

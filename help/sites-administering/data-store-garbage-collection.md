@@ -28,15 +28,15 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 * 生成和下载的软件包
 * 为发布复制创建的临时文件
 * 工作流负载
-* 在DAM渲染期间临时创建的资产
+* 在DAM渲染期间临时创建的Assets
 
-当这些临时对象中的任意对象足够大，需要存储在数据存储中，并且当对象最终退出使用时，数据存储记录本身将保留为“垃圾”。 在典型的WCM创作/发布应用程序中，此类垃圾的最大来源通常是发布激活过程。 将数据复制到Publish时，如果首先以高效的数据格式（称为“Durbo”）收集数据，并将其存储在下的存储库中， `/var/replication/data`. 数据包通常大于数据存储的临界大小阈值，因此最终存储为数据存储记录。 复制完成后，中的节点 `/var/replication/data` 将被删除，但数据存储记录仍保留为“垃圾”。
+当这些临时对象中的任意对象足够大，需要存储在数据存储中，并且当对象最终退出使用时，数据存储记录本身将保留为“垃圾”。 在典型的WCM创作/发布应用程序中，此类垃圾的最大来源通常是发布激活过程。 将数据复制到Publish时，如果首先在集合中以称为“Durbo”的有效数据格式收集数据，并将其存储在`/var/replication/data`下的存储库中，则不会复制这些数据。 数据包通常大于数据存储的临界大小阈值，因此最终存储为数据存储记录。 复制完成后，`/var/replication/data`中的节点将被删除，但数据存储记录仍保留为“垃圾桶”。
 
 可回收垃圾的另一个来源是包。 包数据（与其他所有内容一样）存储在存储库中，因此对于大于4KB的包，存储在数据存储中。 在开发项目过程中或随着时间的推移在维护系统的同时，可能会多次构建和重建包，每次构建都会产生新的数据存储记录，从而孤立以前的构建记录。
 
 ## 数据存储垃圾收集如何工作？ {#how-does-data-store-garbage-collection-work}
 
-如果存储库配置了外部数据存储， [数据存储垃圾收集将自动运行](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) 作为每周维护窗口的一部分。 系统管理员还可以 [手动运行数据存储垃圾收集](#running-data-store-garbage-collection) 根据需要。 通常，建议定期执行数据存储垃圾收集，但在规划数据存储垃圾收集时请考虑以下因素：
+如果存储库配置了外部数据存储，则[数据存储垃圾收集将作为每周维护时段的一部分自动运行](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection)。 系统管理员还可以在需要时手动[运行数据存储垃圾收集](#running-data-store-garbage-collection)。 通常，建议定期执行数据存储垃圾收集，但在规划数据存储垃圾收集时请考虑以下因素：
 
 * 数据存储垃圾收集需要时间，并且可能会影响性能，因此应该相应地规划垃圾收集。
 * 删除数据存储垃圾记录不会影响正常性能，因此这不是性能优化。
@@ -61,10 +61,10 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 
 根据运行AEM的数据存储设置，有三种方法可运行数据存储垃圾收集：
 
-1. Via [修订版清理](/help/sites-deploying/revision-cleanup.md)  — 通常用于节点存储清理的垃圾收集机制。
+1. 通过[修订清理](/help/sites-deploying/revision-cleanup.md) — 通常用于节点存储清理的垃圾收集机制。
 
-1. Via [数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard)  — 特定于外部数据存储的垃圾收集机制，可在操作功能板上找到。
-1. 通过 [JMX控制台](/help/sites-administering/jmx-console.md).
+1. 通过[数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-operations-dashboard) — 操作功能板上提供的专门用于外部数据存储的垃圾收集机制。
+1. 通过[JMX控制台](/help/sites-administering/jmx-console.md)。
 
 如果TarMK同时用作节点存储和数据存储，则修订清理可用于节点存储和数据存储的垃圾收集。 但是，如果配置了外部数据存储（如文件系统数据存储），则必须独立于修订清理显式触发数据存储垃圾收集。 数据存储垃圾收集可以通过操作仪表板或JMX控制台触发。
 
@@ -75,7 +75,7 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
   <tr>
    <td><strong>节点存储</strong><br /> </td>
    <td><strong>数据存储</strong></td>
-   <td><strong>垃圾收集机构</strong><br /> </td>
+   <td><strong>垃圾收集机制</strong><br /> </td>
   </tr>
   <tr>
    <td>tarmk</td>
@@ -102,18 +102,18 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 
 ### 通过操作仪表板运行数据存储垃圾收集 {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-内置的“每周维护”窗口，可通过 [操作功能板](/help/sites-administering/operations-dashboard.md)，包含一个内置任务，用于在星期日凌晨1点触发数据存储垃圾收集。
+通过[操作功能板](/help/sites-administering/operations-dashboard.md)提供的内置每周维护窗口，包含要在星期日凌晨1点触发数据存储垃圾收集的内置任务。
 
 如果您需要在此时间之外运行数据存储垃圾收集，则可以通过操作仪表板手动触发。
 
 在运行数据存储垃圾收集之前，您应该检查当时是否没有运行任何备份。
 
-1. 打开操作功能板的方法有： **导航** > **工具** > **操作** > **维护**.
-1. 单击 **每周维护时段**.
+1. 通过&#x200B;**导航** > **工具** > **操作** > **维护**&#x200B;打开操作仪表板。
+1. 单击&#x200B;**每周维护时段**。
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. 选择 **数据存储垃圾收集** 任务，然后单击 **运行** 图标。
+1. 选择&#x200B;**数据存储垃圾收集**&#x200B;任务，然后单击&#x200B;**运行**&#x200B;图标。
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -123,11 +123,11 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 
 >[!NOTE]
 >
->数据存储垃圾收集任务仅在您配置了外部文件数据存储的情况下可见。 请参阅 [在AEM 6中配置节点存储和数据存储](/help/sites-deploying/data-store-config.md#file-data-store) 有关如何设置文件数据存储的信息。
+>数据存储垃圾收集任务仅在您配置了外部文件数据存储的情况下可见。 有关如何设置文件数据存储的信息，请参阅[在AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)中配置节点存储和数据存储。
 
 ### 通过JMX控制台运行数据存储垃圾收集 {#running-data-store-garbage-collection-via-the-jmx-console}
 
-本节介绍如何通过JMX控制台手动运行数据存储垃圾收集。 如果在没有外部数据存储的情况下设置安装，则这不适用于您的安装。 相反，请参阅下有关如何运行修订清理的说明 [维护存储库](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+本节介绍如何通过JMX控制台手动运行数据存储垃圾收集。 如果在没有外部数据存储的情况下设置安装，则这不适用于您的安装。 请改为参阅有关如何在[维护存储库](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)下运行修订清理的说明。
 
 >[!NOTE]
 >
@@ -135,16 +135,16 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 
 要运行垃圾收集，请执行以下操作：
 
-1. 在Apache Felix OSGi管理控制台中，突出显示 **主要** 选项卡并选择 **JMX** 从以下菜单中。
-1. 接下来，搜索并单击 **存储库管理器** MBean(或转到 `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`)。
-1. 单击 **startDataStoreGC(boolean markOnly)**.
-1. 输入&quot;`true`”用于 `markOnly` 参数（如果需要）：
+1. 在Apache Felix OSGi Management Console中，突出显示&#x200B;**Main**&#x200B;选项卡，然后从以下菜单中选择&#x200B;**JMX**。
+1. 接下来，搜索并单击&#x200B;**存储库管理器** MBean（或转到`https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`）。
+1. 单击&#x200B;**startDataStoreGC(boolean markOnly)**。
+1. 如有必要，请为`markOnly`参数输入“`true`”：
 
    | **选项** | **描述** |
    |---|---|
    | 布尔markOnly | 设置为true以仅标记参照而不扫描标记和扫描操作。 在多个不同存储库之间共享基础BlobStore时，将使用此模式。 对于所有其他情况，将其设置为false以执行完全垃圾回收。 |
 
-1. 单击 **调用**. CRX运行垃圾收集并指示其完成时间。
+1. 单击&#x200B;**调用**。 CRX运行垃圾收集并指示其完成时间。
 
 >[!NOTE]
 >
@@ -152,13 +152,13 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 
 >[!NOTE]
 >
->仅当配置了外部文件数据存储时，数据存储垃圾收集任务才会启动。 如果尚未配置外部文件数据存储，则任务将返回消息 `Cannot perform operation: no service of type BlobGCMBean found` 调用之后。 请参阅 [在AEM 6中配置节点存储和数据存储](/help/sites-deploying/data-store-config.md#file-data-store) 有关如何设置文件数据存储的信息。
+>仅当配置了外部文件数据存储时，数据存储垃圾收集任务才会启动。 如果尚未配置外部文件数据存储，则任务将在调用后返回消息`Cannot perform operation: no service of type BlobGCMBean found`。 有关如何设置文件数据存储的信息，请参阅[在AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)中配置节点存储和数据存储。
 
 ## 自动化数据存储垃圾收集 {#automating-data-store-garbage-collection}
 
 如果可能，应在系统负荷很小时（例如，在早上）运行数据存储垃圾收集。
 
-内置的“每周维护”窗口，可通过 [操作功能板](/help/sites-administering/operations-dashboard.md)，包含一个内置任务，用于在星期日凌晨1点触发数据存储垃圾收集。 您还应检查此时是否没有运行任何备份。 必要时，可以通过仪表板自定义维护窗口的开始。
+通过[操作功能板](/help/sites-administering/operations-dashboard.md)提供的内置每周维护窗口，包含要在星期日凌晨1点触发数据存储垃圾收集的内置任务。 您还应检查此时是否没有运行任何备份。 必要时，可以通过仪表板自定义维护窗口的开始。
 
 >[!NOTE]
 >
@@ -168,7 +168,7 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 
 >[!CAUTION]
 >
->在以下示例中 `curl` 命令可能需要为实例配置各种参数；例如，主机名( `localhost`)，端口( `4502`)，管理员密码( `xyz`)以及实际数据存储垃圾收集的各种参数。
+>在以下示例中，`curl`命令可能需要为实例配置各种参数；例如，主机名(`localhost`)、端口(`4502`)、管理员密码(`xyz`)以及实际数据存储垃圾收集的各种参数。
 
 以下是一个示例curl命令，用于通过命令行调用数据存储垃圾收集：
 
@@ -182,11 +182,11 @@ curl命令会立即返回。
 
 数据存储一致性检查将报告任何缺失但仍被引用的数据存储二进制文件。 要开始一致性检查，请执行以下步骤：
 
-1. 转到JMX控制台。 有关如何使用JMX控制台的信息，请参见 [本文](/help/sites-administering/jmx-console.md#using-the-jmx-console).
-1. 搜索 **BlobGarbageCollection** Mbean并单击它。
-1. 单击 `checkConsistency()` 链接。
+1. 转到JMX控制台。 有关如何使用JMX控制台的信息，请参阅[本文](/help/sites-administering/jmx-console.md#using-the-jmx-console)。
+1. 搜索&#x200B;**BlobGarbageCollection** Mbean并单击它。
+1. 单击`checkConsistency()`链接。
 
-一致性检查完成后，将显示一条消息，显示报告的二进制文件数缺失。 如果数字大于0，请检查 `error.log` 以了解有关缺少的二进制文件的更多详细信息。
+一致性检查完成后，将显示一条消息，显示报告的二进制文件数缺失。 如果数字大于0，请检查`error.log`以了解有关缺少的二进制文件的更多详细信息。
 
 下面您将找到如何在日志中报告缺少的二进制文件的示例：
 

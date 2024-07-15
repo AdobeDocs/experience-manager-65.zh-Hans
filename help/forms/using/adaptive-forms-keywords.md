@@ -241,4 +241,4 @@ ht-degree: 26%
  </tbody>
 </table>
 
-除了上面列出的关键字外，请避免使用与以下内容类似的名称： [自适应表单JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63).
+除了上面列出的关键字之外，请避免使用与[自适应表单JavaScript API](https://adobe.com/go/learn_aemforms_javascript_api_63)类似的名称。

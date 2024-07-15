@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # 通信管理配置属性 {#correspondence-management-configuration-properties}
 
-要配置这些属性，请在浏览器中打开以下URL： `https://<server>:<port>/<contextPath>/system/console/configMgr` 并选择 **通信管理配置**.
+要配置这些属性，请在浏览器中打开以下URL： `https://<server>:<port>/<contextPath>/system/console/configMgr`并选择&#x200B;**通信管理配置**。
 
 通信管理具有以下配置属性：
 
@@ -162,8 +162,8 @@ ht-degree: 3%
    <td>—<p> </p> </td>
   </tr>
   <tr>
-   <td><p>管理发布时的书信实例</p> </td>
-   <td><p>启用/禁用管理书信功能（仅适用于发布服务器）</p> </td>
+   <td><p>在Publish中管理书信实例</p> </td>
+   <td><p>启用/禁用管理书信功能(仅适用于Publish服务器)</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -198,7 +198,7 @@ ht-degree: 3%
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>启用发布审核</p> </td>
+   <td><p>启用Publish审核</p> </td>
    <td><p>启用/禁用资产发布的审核功能</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
@@ -247,13 +247,13 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>书信缓存大小</p> </td>
-   <td><p>指定缓存中保留的最大字母数。</p> <p>更改此值将导致清理 <code>in-memory</code> 缓存。</p> </td>
+   <td><p>指定缓存中保留的最大字母数。</p> <p>更改此值将导致清理<code>in-memory</code>缓存。</p> </td>
    <td><p>100</p> </td>
    <td><p>任何数值</p> </td>
   </tr>
   <tr>
    <td><p>启用书信缓存</p> </td>
-   <td><p>启用/禁用信件缓存。</p> <p>更改此值将导致清理 <code>in-memory </code> 缓存。</p> </td>
+   <td><p>启用/禁用信件缓存。</p> <p>更改此值将导致清理<code>in-memory </code>缓存。</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -289,7 +289,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>调试目录 </p> <p> </p> </td>
-   <td>用于调试的文件系统文件夹位置。 如果目录没有 <code>exists</code>，将不会生成调试转储。</td>
+   <td>用于调试的文件系统文件夹位置。 如果目录不是<code>exists</code>，则不会生成调试转储。</td>
    <td>acm.debugDirectory</td>
    <td> </td>
   </tr>

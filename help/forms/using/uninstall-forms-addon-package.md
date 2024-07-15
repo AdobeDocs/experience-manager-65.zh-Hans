@@ -1,6 +1,6 @@
 ---
-title: 本文介绍了如何使用CRX包管理器卸载Forms附加组件包。
-description: 了解使用CRX包管理器卸载Forms附加组件包的步骤。
+title: 本文介绍了如何使用Forms包管理器卸载CRX附加组件包。
+description: 了解使用Forms包管理器卸载CRX附加组件包的步骤。
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
@@ -27,14 +27,14 @@ ht-degree: 1%
 要卸载AEM Forms附加组件包，请执行以下步骤：
 
 1. **卸载AEM Forms附加组件包：**
-   1. 导航至 `http://[host]:[port]/crx/de/index.jsp`.
-   1. 找到并卸载 `AEM Forms add-on package`.
+   1. 导航到`http://[host]:[port]/crx/de/index.jsp`。
+   1. 找到并卸载`AEM Forms add-on package`。
 
    ![卸载包](/help/forms/using/assets/uninstall-aem-forms-package.png)
 
-1. **从CRXDE中删除本地文件夹：**
-   1. 导航至 `http://[host]:[port]/crx/de/index.jsp`.
-   1. 转到 `/libs/fd/native/install` 并删除 `native` CRXDE中的文件夹。
+1. **从CRXDE中删除本机文件夹：**
+   1. 导航到`http://[host]:[port]/crx/de/index.jsp`。
+   1. 转到`/libs/fd/native/install`并删除CRXDE中的`native`文件夹。
 
       ![从CRX/de中删除本机节点](/help/forms/using/assets/native-install-folder-crxde.png)
    1. 保存更改。
@@ -43,16 +43,16 @@ ht-degree: 1%
    1. 使用“Ctrl + C”命令停止AEM Forms SDK实例。
 
 1. **检查crx-quickstart文件夹中的基岩并安装文件夹**
-   1. 导航到 `..author\crx-quickstart` AEM Forms SDK实例的文件夹。
-   1. 搜索名为的文件夹 `bedrock` 和 `install`.
-如果找到，请确保将其从 `crx-quickstart` AEM Forms SDK实例的文件夹。
+   1. 导航到AEM Forms SDK实例中的`..author\crx-quickstart`文件夹。
+   1. 搜索名为`bedrock`和`install`的文件夹。
+如果找到，请确保将其从AEM Forms SDK实例的`crx-quickstart`文件夹中删除。
 
    >[!NOTE]
    >
-   > 此 `bedrock` 重新启动AEM Forms SDK实例后，会自动重新创建文件夹。
+   > 重新启动AEM Forms SDK实例后，将自动再次创建`bedrock`文件夹。
 
 1. **重新启动AEM实例：**
-   1. 完成前面所有步骤后， [重新启动AEM Forms SDK实例](/help/forms/using/restart-aem-sdk.md).
+   1. 完成前面的所有步骤后，[重新启动AEM Forms SDK实例](/help/forms/using/restart-aem-sdk.md)。
 
 
 

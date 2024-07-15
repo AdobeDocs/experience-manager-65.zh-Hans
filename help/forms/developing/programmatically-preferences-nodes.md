@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # 以编程方式管理首选项节点 {#programmatically-managing-the-preferencesnodes}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 本主题介绍如何使用首选项管理器服务API (Java)以编程方式管理首选项节点。
 
-您可以从管理员UI手动更改配置设置。 要更改选项，请导航至 `Home>Settings>User Management> Configuration>Manual Configuration`. 导入 `config.xml` 进行更改后，您会注意到除了在节点进行的更改之外的所有更改 `/Adobe/Adobe Experience Manager Forms/Config/UM persist` 都迷路了。 用户管理导入和导出预览不支持更改其他组件的配置设置。 现在，可以使用进行这些更改 `PreferencesManagerServiceClient` API。
+您可以从管理员UI手动更改配置设置。 要更改选项，请导航到`Home>Settings>User Management> Configuration>Manual Configuration`。 进行更改后导入`config.xml`，您会注意到除了在节点`/Adobe/Adobe Experience Manager Forms/Config/UM persist`进行的更改之外的所有更改都将丢失。 用户管理导入和导出预览不支持更改其他组件的配置设置。 现在，可以使用`PreferencesManagerServiceClient` API进行这些更改。
 
 **步骤摘要**&#x200B;要以编程方式管理首选项节点，请执行以下步骤：
 
@@ -38,6 +38,6 @@ ht-degree: 0%
 
 必须先创建PreferencesManagerService客户端，然后才能以编程方式执行用户管理PreferencesManagerService操作。 使用Java API可通过创建PreferencesManagerServiceClient对象来实现这一点。
 
-**调用相应的角色或权限操作**
+**调用适当的角色或权限操作**
 
 创建服务客户端后，可以调用Preferences Manager操作。 服务客户端允许您读取和设置权限。

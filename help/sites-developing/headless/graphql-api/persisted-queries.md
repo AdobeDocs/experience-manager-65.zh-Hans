@@ -14,7 +14,7 @@ ht-degree: 85%
 
 # 持久 GraphQL 查询 {#persisted-queries-caching}
 
-持久查询是在GraphQL (AEM)服务器上创建和存储的Adobe Experience Manager查询。 它们可以经客户端应用程序以 GET 请求方式请求。GET请求的响应可以缓存在Dispatcher和Content Delivery Network (CDN)层，最终改进请求客户端应用程序的性能。 这与标准的 GraphQL 查询不同，后者使用 POST 请求执行，而在 POST 请求中，无法轻松缓存响应。
+持久查询是在GraphQL (AEM)服务器上创建和存储的Adobe Experience Manager查询。 它们可以经客户端应用程序以 GET 请求方式请求。GET请求的响应可以缓存在Dispatcher和内容交付网络(CDN)层，最终改进请求客户端应用程序的性能。 这与标准的 GraphQL 查询不同，后者使用 POST 请求执行，而在 POST 请求中，无法轻松缓存响应。
 
 <!--
 >[!NOTE]
@@ -290,7 +290,7 @@ query getAdventuresByActivity($activity: String!) {
 这些值：
 
 * 无法用OSGi配置覆盖
-* 可能会被使用cURL定义HTTP标头设置的请求覆盖；它应包含适用于的设置 `cache-control` 和/或 `surrogate-control`；有关示例，请参阅 [在持久查询级别管理缓存](#cache-persisted-query-level)
+* 可由使用cURL定义HTTP标头设置的请求覆盖；它应包含适用于`cache-control`和/或`surrogate-control`的设置；例如，请参阅[在持久查询级别管理缓存](#cache-persisted-query-level)
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -353,7 +353,7 @@ curl -u admin:admin -X POST \
 
 ### 使用 OSGi 配置管理缓存 {#cache-osgi-configration}
 
-要全局管理缓存，您可以 [配置OSGi设置](/help/sites-deploying/configuring-osgi.md) 对于 **持久查询服务配置**. 否则，此OSGi配置使用 [发布实例的默认值](#publish-instances).
+要全局管理缓存，您可以[为&#x200B;**持久查询服务配置**&#x200B;配置OSGi设置](/help/sites-deploying/configuring-osgi.md)。 否则，此OSGi配置对发布实例](#publish-instances)使用[默认值。
 
 >[!NOTE]
 >
@@ -400,12 +400,12 @@ URL 可以划分为以下部分：
 要创建包：
 
 1. 导航到&#x200B;**工具** > **部署** > **包**。
-1. 通过点按创建包 **创建包**. 这将打开一个用于定义包的对话框。
+1. 通过点按&#x200B;**创建包**&#x200B;创建包。 这将打开一个用于定义包的对话框。
 1. 在包定义对话框中，在&#x200B;**常规**&#x200B;下输入&#x200B;**名称**，如“wknd-persistent-queries”。
 1. 输入版本号，如“1.0”。
-1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。使用路径查找器选择 `persistentQueries` 文件夹。例如，对于 `wknd` 配置完整路径 `/conf/wknd/settings/graphql/persistentQueries`.
-1. 选择 **保存** 以保存新的包定义并关闭对话框。
-1. 选择 **生成** 按钮创建包定义。
+1. 在&#x200B;**过滤器**&#x200B;下添加新的&#x200B;**过滤器**。使用路径查找器选择 `persistentQueries` 文件夹。例如，对于`wknd`配置，完整路径将为`/conf/wknd/settings/graphql/persistentQueries`。
+1. 选择&#x200B;**保存**&#x200B;以保存新的包定义并关闭对话框。
+1. 在新创建的包定义中选择&#x200B;**生成**&#x200B;按钮。
 
 生成包后，您可以：
 

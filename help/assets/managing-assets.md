@@ -20,13 +20,13 @@ ht-degree: 7%
 
 在上传图像、视频和交互式资源等Dynamic Media资源后，对其进行管理，涉及到预览、下载或发布等多项任务。
 
-在预览时，您还可以应用图像预设（仅适用于图像）或查看器预设（适用于视频和图像）。 不能将两者都应用于资源。 请参阅 [应用查看器预设](/help/assets/viewer-presets.md) 和 [应用图像预设](/help/assets/image-sets.md).
+在预览时，您还可以应用图像预设（仅适用于图像）或查看器预设（适用于视频和图像）。 不能将两者都应用于资源。 请参阅[应用查看器预设](/help/assets/viewer-presets.md)和[应用图像预设](/help/assets/image-sets.md)。
 
-有关管理资产的一般信息，请参阅 [管理资源](/help/assets/manage-assets.md).
+有关管理资源的一般信息可在[管理资源](/help/assets/manage-assets.md)中找到。
 
 以下主题介绍了如何管理Dynamic Media资源：
 
 * [优化图像质量的最佳实践](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
 * [预览Dynamic Media资源](/help/assets/previewing-assets.md)
-* [发布Dynamic Media资产](/help/assets/publishing-dynamicmedia-assets.md)
+* [发布Dynamic Media Assets](/help/assets/publishing-dynamicmedia-assets.md)
 * [使用选择器](/help/assets/working-with-selectors.md)

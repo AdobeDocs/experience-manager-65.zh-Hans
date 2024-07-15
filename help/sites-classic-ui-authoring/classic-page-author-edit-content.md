@@ -25,7 +25,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->您的帐户需要 [适当的访问权限](/help/sites-administering/security.md) 和 [权限](/help/sites-administering/security.md#permissions) 编辑页面；例如，添加、编辑或删除组件、注释、解锁。
+>您的帐户需要[适当的访问权限](/help/sites-administering/security.md)和[权限](/help/sites-administering/security.md#permissions)才能编辑页面；例如，添加、编辑或删除组件、添加注释、解锁。
 >
 >如果您遇到任何问题，我们建议您与系统管理员联系。
 
@@ -53,9 +53,9 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 * [显示引用](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
 * [访问审核日志](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#audit-log)
 * [切换模式](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
-* [创建](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version)， [正在恢复](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) 和 [比较](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) 版本
+* [正在创建](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version)，[正在还原](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick)和[正在比较](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version)个版本
 
-* [发布](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page)， [取消发布](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page) 页面
+* [发布](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page)，[取消发布](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page)页面
 
 * [编辑页面属性](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
@@ -73,22 +73,22 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 
 1. 有多种方法可用于选择要插入的段落类型：
 
-   * 双击标记为的区域 **将组件或资源拖动到此处……** - **插入新组件** 工具栏打开。 选择元件并单击 **确定**.
+   * 双击标记为&#x200B;**将组件或资源拖动到此处……**&#x200B;的区域 — **插入新组件**&#x200B;工具栏打开。 选择一个组件并单击&#x200B;**确定**。
 
    * 从浮动工具栏中拖动组件（称为sidekick）以插入新段落。
-   * 右键单击现有段落并选择 **新建……**  — 插入新组件工具栏打开。 选择元件并单击 **确定**.
+   * 右键单击现有段落并选择&#x200B;**新建……** — 将打开“插入新组件”工具栏。 选择一个组件并单击&#x200B;**确定**。
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. 在副手和 **插入新组件** 工具栏您会看到可用组件（段落类型）的列表。 它们可以分成不同的部分（例如，常规、列等），这些部分可根据需要展开。
+1. 在sidekick和&#x200B;**插入新组件**&#x200B;工具栏中，您都可以看到可用组件（段落类型）的列表。 它们可以分成不同的部分（例如，常规、列等），这些部分可根据需要展开。
 
-   根据您的生产环境，这些选项可能会有所不同。 有关组件的完整详细信息，请参阅 [默认组件](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
+   根据您的生产环境，这些选项可能会有所不同。 有关组件的完整详细信息，请参阅[默认组件](/help/sites-classic-ui-authoring/classic-page-author-default-components.md)。
 
 1. 在页面上插入所需的组件。 然后双击该段落，将打开一个窗口，允许您配置段落并添加内容。
 
 ### 使用内容查找器插入组件 {#inserting-a-component-using-the-content-finder}
 
-您还可以通过从以下位置拖动资产，向页面中添加新组件： [内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). 这会自动创建包含资产的相应类型的组件。
+您还可以通过从[内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)拖动资产来向页面添加新组件。 这会自动创建包含资产的相应类型的组件。
 
 这适用于以下资产类型（某些资产取决于页面/段落系统）：
 
@@ -101,27 +101,27 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 
 >[!NOTE]
 >
->可针对您的安装配置此行为。请参阅 [配置段落系统以便拖动资产可创建组件实例](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) 以了解更多详细信息。
+>可针对您的安装配置此行为。有关更多详细信息，请参阅[配置段落系统以便通过拖动资产创建组件实例](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance)。
 
 要通过拖动以上某一资源类型创建组件，请执行以下操作：
 
 1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)。
-1. 打开 [内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
-1. 将所需的资源拖动到所需位置。此 [组件占位符](#componentplaceholder) 显示组件的放置位置。
+1. 打开[内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)。
+1. 将所需的资源拖动到所需位置。[组件占位符](#componentplaceholder)显示组件将放置的位置。
 
    将在所需位置创建一个适合该资源类型的组件 — 该组件将包含选定的资源。
 
-1. [编辑](#editmovecopypastedelete) 组件（如有必要）。
+1. 如有必要，请[编辑](#editmovecopypastedelete)该组件。
 
 ## 编辑组件（内容和属性） {#editing-a-component-content-and-properties}
 
 要编辑现有段落，请执行下列操作之一：
 
-* **双击** 打开该段落的链接。 您会看到与创建包含现有内容的段落时相同的窗口。 进行更改并单击 **确定**.
+* **双击**&#x200B;该段落以将其打开。 您会看到与创建包含现有内容的段落时相同的窗口。 进行更改并单击&#x200B;**确定**。
 
-* **右键单击** 段落并单击 **编辑**.
+* **右键单击**&#x200B;该段落，然后单击&#x200B;**编辑**。
 
-* **单击** 在段落上单击两次（缓慢双击）以进入就地编辑模式。 您将能够直接编辑页面上的文本，而不是在对话框窗口中编辑。 在此模式下，将为您提供位于页面顶部的工具栏。 只需进行更改，更改将自动保存。
+* **在段落上单击**&#x200B;两次（缓慢双击）以进入就地编辑模式。 您将能够直接编辑页面上的文本，而不是在对话框窗口中编辑。 在此模式下，将为您提供位于页面顶部的工具栏。 只需进行更改，更改将自动保存。
 
 ## 移动组件 {#moving-a-component}
 
@@ -144,28 +144,28 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 
 要删除段落，请执行以下操作：
 
-1. 选择段落并 **右键单击**：
+1. 选择段落，然后&#x200B;**右键单击**：
 
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. 选择 **删除** 菜单。 AEM WCM请求确认您要删除段落，因为此操作无法撤消。
+1. 从菜单中选择&#x200B;**删除**。 AEM WCM请求确认您要删除段落，因为此操作无法撤消。
 1. 单击&#x200B;**确定**。
 
 >[!NOTE]
 >
->如果您已设置 [用户属性，显示全局编辑工具栏](/help/sites-classic-ui-authoring/author-env-user-props.md) 您还可以对段落执行某些操作，方法是使用 **复制**， **剪切**， **粘贴**， **删除** 按钮可用。
+>如果您已将[用户属性设置为显示全局编辑工具栏](/help/sites-classic-ui-authoring/author-env-user-props.md)，您还可以使用可用的&#x200B;**复制**、**剪切**、**粘贴**、**删除**&#x200B;按钮对段落执行某些操作。
 >
->各种 [键盘快捷键](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 也提供。
+>还提供各种[键盘快捷键](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)。
 
 ## 剪切/复制/粘贴组件 {#cut-copy-paste-a-component}
 
-作为时间 [删除组件](#deleting-a-component) 您可以使用上下文菜单复制、剪切和/或粘贴组件
+与[删除组件](#deleting-a-component)时一样，您可以使用上下文菜单复制、剪切和/或粘贴组件
 
 >[!NOTE]
 >
->如果您已设置 [用户属性，显示全局编辑工具栏](/help/sites-classic-ui-authoring/author-env-user-props.md) 您还可以对段落执行某些操作，方法是使用 **复制**， **剪切**， **粘贴**， **删除** 按钮可用。
+>如果您已将[用户属性设置为显示全局编辑工具栏](/help/sites-classic-ui-authoring/author-env-user-props.md)，您还可以使用可用的&#x200B;**复制**、**剪切**、**粘贴**、**删除**&#x200B;按钮对段落执行某些操作。
 >
->各种 [键盘快捷键](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 也提供。
+>还提供各种[键盘快捷键](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
@@ -175,9 +175,9 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 
 继承组件可能是多种情况的产物，包括：
 
-* [多站点管理](/help/sites-administering/msm.md)；也与 [基架](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [多站点管理](/help/sites-administering/msm.md)；也与[基架](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance)相结合。
 
-* [启动次数](/help/sites-classic-ui-authoring/classic-launches.md) （当基于livecopy时）。
+* [启动项](/help/sites-classic-ui-authoring/classic-launches.md)（当基于活动副本时）。
 * 特定组件；例如，Geometrixx中的继承段落系统。
 
 您可以取消（随后也可以重新启用）继承。根据组件，可以从以下位置执行此操作：
@@ -202,17 +202,17 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 
 ## 添加注释 {#adding-annotations}
 
-[注释](/help/sites-classic-ui-authoring/classic-page-author-annotations.md) 允许其他作者提供关于您的内容的反馈。 这通常用于审阅和验证。
+[批注](/help/sites-classic-ui-authoring/classic-page-author-annotations.md)允许其他作者对您的内容提供反馈。 这通常用于审阅和验证。
 
 ## 预览页面 {#previewing-pages}
 
 Sidekick的底部边框中有两个对预览页面很重要的图标：
 
-![副手的底部边框，水平行由七个图标组成。 行开头的两个图标（编辑图标和预览模式图标）分别由铅笔符号和放大镜符号表示。](do-not-localize/chlimage_1-5.png)
+![Sidekick的下边框，水平行包含七个图标。 行开头的两个图标（编辑图标和预览模式图标）分别由铅笔符号和放大镜符号表示。](do-not-localize/chlimage_1-5.png)
 
 * 铅笔图标显示您当前处于编辑模式，您可以在其中添加、修改、移动或删除内容。
 
-  ![铅笔符号指示的编辑图标。](do-not-localize/chlimage_1-6.png)
+  ![铅笔符号指示的“编辑”图标。](do-not-localize/chlimage_1-6.png)
 
 * 利用放大镜图标，可选择预览模式，在该模式下页面会显示在发布环境中（有时还需要刷新页面）：
 
@@ -224,7 +224,7 @@ Sidekick的底部边框中有两个对预览页面很重要的图标：
 
 ## 查找和替换 {#find-replace}
 
-要更大规模地编辑相同的短语a **[查找并替换](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** 菜单选项允许您在网站的部分中搜索和替换字符串的多个实例。
+对于同一短语进行更大规模的编辑，**[查找和替换](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)**&#x200B;菜单选项允许您在网站的部分中搜索和替换字符串的多个实例。
 
 ## 锁定页面 {#locking-a-page}
 
@@ -236,13 +236,13 @@ AEM允许您锁定页面，这样其他人就无法更改其内容。 当您要�
 
 锁定页面：
 
-1. 在 **网站** 选项卡，选择要锁定的页面。
+1. 在&#x200B;**网站**&#x200B;选项卡中，选择要锁定的页面。
 1. 双击页面以将其打开以进行编辑。
-1. 在 **页面** Sidekick的选项卡，选择 **锁定页面**：
+1. 在sidekick的&#x200B;**页面**&#x200B;选项卡中，选择&#x200B;**锁定页面**：
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   此时将显示一条消息，表明您的页面已被其他用户锁定。 此外，在 **网站** 控制台中，AEM WCM将页面显示为已锁定，并指示哪个用户已锁定该页面。
+   此时将显示一条消息，表明您的页面已被其他用户锁定。 此外，在&#x200B;**网站**&#x200B;控制台的右侧窗格中，AEM WCM将显示已锁定页面，并指示哪个用户已锁定该页面。
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -250,9 +250,9 @@ AEM允许您锁定页面，这样其他人就无法更改其内容。 当您要�
 
 要解锁页面，请执行以下操作：
 
-1. 在 **网站** 选项卡，选择要解锁的页面。
+1. 在&#x200B;**网站**&#x200B;选项卡中，选择要解锁的页面。
 1. 双击页面以将其打开。
-1. 在 **页面** Sidekick的选项卡，选择 **解锁页面**.
+1. 在sidekick的&#x200B;**页面**&#x200B;选项卡中，选择&#x200B;**解锁页面**。
 
 ## 撤消和重做页面编辑 {#undoing-and-redoing-page-edits}
 
@@ -271,7 +271,7 @@ AEM允许您锁定页面，这样其他人就无法更改其内容。 当您要�
 
 >[!NOTE]
 >
->您的系统管理员可以 [配置撤消/重做功能的各个方面](/help/sites-administering/config-undo.md) 根据您实例的要求。
+>系统管理员可以根据您实例的要求[配置撤消/重做功能的各个方面](/help/sites-administering/config-undo.md)。
 
 AEM会存储您执行的操作的历史记录以及执行操作的顺序。 因此，您可以按照执行顺序撤消多个操作。 然后，可以使用重做重新应用一个或多个操作。
 
@@ -285,7 +285,7 @@ AEM会存储您执行的操作的历史记录以及执行操作的顺序。 因�
 >
 >* 重做操作，只要您在使用撤消后未进行任何页面编辑即可。
 >* 撤消最多20个编辑操作（默认设置）。
->* 还使用 [键盘快捷键](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 用于撤消和重做。
+>* 还使用[键盘快捷键](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)进行撤消和重做。
 >
 
 您可以对以下类型的页面更改使用撤消和重做：

@@ -26,7 +26,7 @@ ht-degree: 6%
 
 ## 简介 {#introduction}
 
-您是否正在寻找适合移动设备的 **表单体验** 简化注册流程，提高参与度，缩短周转时间， **自适应表单** 很适合你。 自适应表单提供易于移动、自动化和分析处理的表单体验。 您可以轻松构建响应式且交互式表单，使用自动化流程减少管理和重复任务，并使用数据分析改善和个性化客户对表单的体验。
+您是否正在寻找适合移动设备的&#x200B;**表单体验**，以便简化注册流程、提高参与度并减少周转时间，**自适应表单**&#x200B;非常适合您。 自适应表单提供易于移动、自动化和分析处理的表单体验。 您可以轻松构建响应式且交互式表单，使用自动化流程减少管理和重复任务，并使用数据分析改善和个性化客户对表单的体验。
 
 本教程提供了一个用于创建自适应表单的端到端框架。 本教程将组织为一个用例和多份指南。 每份指南都可帮助您学习并将新功能添加到本教程创建的自适应表单中。 在每份指南之后，您都有一个有效的自适应表单。 提供了创建自适应表单的指南。 后续指南即将推出。 在本教程结束时，您应该能够执行以下操作：
 
@@ -41,15 +41,15 @@ ht-degree: 6%
 
 网站为各种客户提供一系列产品。 客户浏览门户，选择并订购产品。 每个客户都会创建一个帐户，并提供送货地址和账单地址。 现有客户Sara Rose希望将自己的送货地址添加到该网站。 该网站提供了一个在线表单，用于添加和更新送货地址。
 
-网站在Adobe Experience Manager (AEM)上运行并使用AEM [!DNL Forms] 用于数据捕获和处理。 地址添加和更新表单是自适应表单。 网站将客户详细信息存储在数据库中。 他们使用地址添加和更新表单来检索和显示可用地址。 他们还会使用自适应表单来接受更新后的和新的地址。
+网站在Adobe Experience Manager (AEM)上运行，并使用AEM [!DNL Forms]进行数据捕获和处理。 地址添加和更新表单是自适应表单。 网站将客户详细信息存储在数据库中。 他们使用地址添加和更新表单来检索和显示可用地址。 他们还会使用自适应表单来接受更新后的和新的地址。
 
 ### 先决条件 {#prerequisite}
 
-* 设置 [AEM创作实例](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
-* 安装 [AEM Forms加载项](../../forms/using/installing-configuring-aem-forms-osgi.md) 在创作实例上。
-* 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于 [!DNL MySQL] 数据库和使用 [!DNL Oracle's] [MySQL JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* 设置[AEM创作实例](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/deploying/deploying/deploy.html#author-and-publish-installs)
+* 在创作实例上安装[AEM Forms加载项](../../forms/using/installing-configuring-aem-forms-osgi.md)。
+* 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于[!DNL MySQL]数据库并使用[!DNL Oracle's] [MySQL JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
-* 使用下面显示的字段设置包含客户数据的数据库。 数据库对于创建自适应表单并不是必需的。 本教程使用数据库来显示AEM的表单数据模型和持久性功能 [!DNL Forms].
+* 使用下面显示的字段设置包含客户数据的数据库。 数据库对于创建自适应表单并不是必需的。 本教程使用数据库来显示AEM [!DNL Forms]的表单数据模型和持久性功能。
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
@@ -57,7 +57,7 @@ ht-degree: 6%
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-自适应表单本质上是新一代的、引人入胜的、响应式的、动态的和自适应的。 使用自适应表单，您可以提供个性化和有针对性的体验。 AEM [!DNL Forms] 提供拖放WYSIWYG编辑器以创建自适应表单。 有关自适应表单的更多信息，请参阅 [自适应表单创作简介](../../forms/using/introduction-forms-authoring.md).
+自适应表单本质上是新一代的、引人入胜的、响应式的、动态的和自适应的。 使用自适应表单，您可以提供个性化和有针对性的体验。 AEM [!DNL Forms]提供了用于创建自适应表单的拖放WYSIWYG编辑器。 有关自适应表单的详细信息，请参阅[自适应表单创作简介](../../forms/using/introduction-forms-authoring.md)。
 
 目标：
 
@@ -76,8 +76,8 @@ ht-degree: 6%
 
 目标：
 
-* 配置网站的数据库实例([!DNL MySQL] 数据库)作为数据源。
-* 使用以下方式创建表单数据模型 [!DNL MySQL] 数据库作为数据源。
+* 将网站的数据库实例（[!DNL MySQL]数据库）配置为数据源。
+* 使用[!DNL MySQL]数据库作为数据源创建表单数据模型。
 * 添加数据模型对象，以便形成数据模型。
 * 为表单数据模型配置读写服务。
 * 测试表单数据模型，并使用测试数据配置服务。
@@ -99,9 +99,9 @@ ht-degree: 6%
 
 ## 第4步：设置自适应表单的样式 {#step-style-your-adaptive-form}
 
-![自适应表单样式](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![adaptive-form-styling](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
-自适应表单提供主题和 [编辑者](../../forms/using/themes.md) 为自适应表单创建主题。 主题包含组件和面板的样式详细信息，您可以在不同的表单中重复使用主题。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。将主题应用于表单时，指定的样式会反映在表单的相应组件上。 自适应表单还支持特定于表单的样式的内联样式。
+自适应表单提供主题和[编辑器](../../forms/using/themes.md)以创建自适应表单的主题。 主题包含组件和面板的样式详细信息，您可以在不同的表单中重复使用主题。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。将主题应用于表单时，指定的样式会反映在表单的相应组件上。 自适应表单还支持特定于表单的样式的内联样式。
 
 目标：
 
@@ -111,16 +111,16 @@ ht-degree: 6%
 
 [![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## 步骤5：发布自适应表单 {#step-publish-your-adaptive-form}
+## 步骤5：Publish您的自适应表单 {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-您可以将自适应表单发布为独立表单（单页应用程序），包括在AEM中 [站点页面](/help/forms/using/embed-adaptive-form-aem-sites.md)，或在AEM中列出 [!DNL Site] 使用 [Forms门户](../../forms/using/introduction-publishing-forms.md).
+您可以将自适应表单发布为独立表单（单页应用程序）、包含在AEM [Sites页面](/help/forms/using/embed-adaptive-form-aem-sites.md)中，或使用[Forms门户](../../forms/using/introduction-publishing-forms.md)在AEM [!DNL Site]上列出。
 
 目标：
 
-* 将自适应表单发布为AEM页面。
-* 将自适应表单嵌入到AEM [!DNL Sites] 页面。
+* 将自适应表单作为AEM页面Publish。
+* 将自适应表单嵌入到AEM [!DNL Sites]页面中。
 * 将自适应表单嵌入到外部网页(托管在AEM外部的非AEM网页)中。
 
 [![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)

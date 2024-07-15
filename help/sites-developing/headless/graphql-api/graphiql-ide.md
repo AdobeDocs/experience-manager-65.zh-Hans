@@ -14,7 +14,7 @@ ht-degree: 93%
 
 # 使用 GraphiQL IDE {#graphiql-ide}
 
-标准的实施 [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE可以与Adobe Experience Manager (AEM)的GraphQL API一起使用。
+标准[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE的实施可与Adobe Experience Manager (AEM)的GraphQL API一起使用。
 
 >[!NOTE]
 >
@@ -85,7 +85,7 @@ ht-degree: 93%
 
 在两种情况下，编辑器面板中显示的查询都是在以下情况下执行的查询：
 
-* 单击 **执行查询** 图标
+* 单击&#x200B;**执行查询**&#x200B;图标
 * 使用键盘组合`Control-Enter`
 
 ## 查询变量 {#query-variables}
@@ -135,7 +135,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 ## 正在发布持久查询 {#publishing-persisted-queries}
 
-选择您的 [持久查询](/help/sites-developing/headless/graphql-api/persisted-queries.md) 从列表（左面板）中，您可以使用 **Publish** 和 **取消发布** 操作。 这会将它们激活到您的发布环境（例如，`dev-publish`），以便您的应用程序在测试时轻松访问。
+一旦从列表（左面板）中选择了[持久查询](/help/sites-developing/headless/graphql-api/persisted-queries.md)，您就可以使用&#x200B;**Publish**&#x200B;和&#x200B;**取消发布**&#x200B;操作。 这会将它们激活到您的发布环境（例如，`dev-publish`），以便您的应用程序在测试时轻松访问。
 
 >[!NOTE]
 >

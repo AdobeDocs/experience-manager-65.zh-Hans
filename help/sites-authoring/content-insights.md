@@ -37,7 +37,7 @@ ht-degree: 0%
 * Target：报告页面包含选件的促销活动。
 * BrightEdge：报告提高搜索引擎查看页面可见性的页面功能，并推荐应实施的功能。
 
-请参阅 [为页面打开Analytics和Recommendations](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
+请参阅[打开页面的Analytics和Recommendations](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page)。
 
 ## 报告时段
 
@@ -45,15 +45,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->内容分析功能板的时间线位于 `GMT`.
+>内容分析仪表板的时间表在`GMT`之内。
 
 您还可以指定报告数据的粒度，例如，您可以查看每日、每周、每月或每年数据。
 
-请参阅 [更改报告周期](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
+请参阅[更改报告周期](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period)。
 
 >[!NOTE]
 >
->内容分析报表要求您的管理员已将AEM与SiteCatalyst、Target和BrightEdge集成。 请参阅 [与SightCatalyst集成](/help/sites-administering/adobeanalytics.md)， [与Adobe Target集成](/help/sites-administering/target.md)、和 [与BrightEdge集成](/help/sites-administering/brightedge.md).
+>内容分析报表要求您的管理员已将AEM与SiteCatalyst、Target和BrightEdge集成。 查看[与SightCatalyst集成](/help/sites-administering/adobeanalytics.md)、[与Adobe Target集成](/help/sites-administering/target.md)以及[与BrightEdge集成](/help/sites-administering/brightedge.md)。
 
 ## “查看次数”报表 {#the-views-report}
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 ## 促销活动报表 {#the-campaign-activity-report}
 
-对于页面处于活动状态的每个营销活动，都会显示一个报表，其名称为 *营销活动名称* 活动。 此报表显示提供了选件的每个区段的页面展示次数和转化次数。
+对于页面处于活动状态的每个营销活动，都会显示一个名为&#x200B;*营销活动名称*&#x200B;活动的报表。 此报表显示提供了选件的每个区段的页面展示次数和转化次数。
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
@@ -98,6 +98,6 @@ ht-degree: 0%
 
 SEO Recommendations报表包含针对该页面的BrightEdge分析结果。 该报告是页面功能的核对清单，指示页面包含和不包含哪些功能，以便使用搜索引擎最大程度地提高查找能力。
 
-通过报告可创建任务，以便做出改进来改善页面可查找性。 Recommendations指示已创建用于实施推荐的任务。 请参阅 [为SEO Recommendations分配任务](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+通过报告可创建任务，以便做出改进来改善页面可查找性。 Recommendations指示已创建用于实施推荐的任务。 请参阅[为SEO Recommendations分配任务](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations)。
 
 ![chlimage_1-317](assets/chlimage_1-317.png)

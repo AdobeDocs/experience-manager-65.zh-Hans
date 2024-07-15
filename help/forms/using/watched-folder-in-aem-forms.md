@@ -18,16 +18,16 @@ ht-degree: 0%
 
 # AEM Forms中的Watched文件夹{#watched-folder-in-aem-forms}
 
-管理员可以配置网络文件夹（称为Watched文件夹），以便当用户将文件(如PDF文件)放入Watched文件夹时，可以启动预先配置的工作流、服务或脚本操作来处理添加的文件。 服务执行指定的操作后，将结果文件保存在指定的输出文件夹中。 有关工作流、服务和脚本的更多信息，请参阅 [处理文件的各种方法](#variousmethodsforprocessingfiles).
+管理员可以配置网络文件夹（称为Watched文件夹），以便当用户将文件(如PDF文件)放入Watched文件夹时，可以启动预先配置的工作流、服务或脚本操作来处理添加的文件。 服务执行指定的操作后，将结果文件保存在指定的输出文件夹中。 有关工作流、服务和脚本的详细信息，请参阅[处理文件的各种方法](#variousmethodsforprocessingfiles)。
 
 ## 创建观察文件夹 {#create-a-watched-folder}
 
 可以使用以下方法之一在文件系统上创建Watched文件夹：
 
-* 在配置Watched Folder配置节点的属性时，在folderPath属性中键入父目录的完整路径，并附加要创建的Watched文件夹的名称，如以下示例所示： `C:/MyPDFs/MyWatchedFolder`
-此 `MyWatchedFolder`文件夹不存在，AEM Forms会尝试在指定路径创建文件夹。
+* 在配置Watched文件夹配置节点的属性时，在folderPath属性中键入父目录的完整路径，并附加要创建的Watched文件夹的名称，如以下示例所示： `C:/MyPDFs/MyWatchedFolder`
+`MyWatchedFolder`文件夹不存在，AEM Forms会尝试在指定路径创建该文件夹。
 
-* 在配置Watched Folder端点之前，在文件系统上创建文件夹，然后在folderPath属性中提供完整路径。 有关folderPath属性的详细信息，请参见 [观察文件夹属性](#watchedfolderproperties).
+* 在配置Watched Folder端点之前，在文件系统上创建文件夹，然后在folderPath属性中提供完整路径。 有关folderPath属性的详细信息，请参阅[观察文件夹属性](#watchedfolderproperties)。
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 1. 以管理员身份登录到CRX-DE Lite并导航到/etc/fd/watchfolder/config文件夹。
 
-1. 创建节点类型 `nt:unstructured`. 例如， watchedfolder
+1. 创建类型为`nt:unstructured`的节点。 例如， watchedfolder
 
    >[!NOTE]
    >
@@ -52,9 +52,9 @@ ht-degree: 0%
    * `inputProcessorId`
    * `outputFilePattern`
 
-   有关支持的属性的完整列表，请参阅 [观察文件夹属性](#watchedfolderproperties).
+   有关支持的属性的完整列表，请参阅[观察文件夹属性](#watchedfolderproperties)。
 
-1. 单击 **全部保存**. 创建节点并保存属性后。 此 `input`， `result`， `failure`， `preserve`、和 `stage`文件夹是在指定的路径创建的 `folderPath` 属性。
+1. 单击&#x200B;**全部保存**。 创建节点并保存属性后。 `input`、`result`、`failure`、`preserve`和`stage`文件夹是在`folderPath`属性中指定的路径创建的。
 
    扫描作业以定义的时间间隔开始扫描观察文件夹。
 
@@ -62,15 +62,15 @@ ht-degree: 0%
 
 您可以为Watched文件夹配置以下属性。
 
-* **folderPath （字符串）**：在定义的时间间隔内扫描的文件夹的路径。 对于群集环境，文件夹必须位于共享位置，且所有服务器均具有服务器的完全访问权限。 它是必需属性。
-* **inputProcessorType（字符串）**：要启动的进程类型。 您可以指定工作流、脚本或服务。 它是必需属性。
-* **inputProcessorId（字符串）**：inputProcessorId属性的行为基于为inputProcessorType属性指定的值。 它是必需属性。 以下列表详细列出了inputProcessorType属性的所有可能值以及inputProcessorType属性的相应先决条件：
+* **folderPath (String)**：要按定义的时间间隔扫描的文件夹的路径。 对于群集环境，文件夹必须位于共享位置，且所有服务器均具有服务器的完全访问权限。 它是必需属性。
+* **inputProcessorType （字符串）**：要启动的进程类型。 您可以指定工作流、脚本或服务。 它是必需属性。
+* **inputProcessorId （字符串）**： inputProcessorId属性的行为基于为inputProcessorType属性指定的值。 它是必需属性。 以下列表详细列出了inputProcessorType属性的所有可能值以及inputProcessorType属性的相应先决条件：
 
-   * 对于工作流，请指定要执行的工作流模型。 例如，/etc/workflow/models/&lt;workflow_name>/jcr：content/model
+   * 对于工作流，请指定要执行的工作流模型。 例如，/etc/workflow/models/&lt;工作流名称>/jcr：content/model
    * 对于脚本，请指定要执行的脚本的JCR路径。 例如， /etc/fd/watchfolder/test/testScript.ecma
    * 对于服务，指定用于查找OSGi服务的过滤器。 该服务已注册为com.adobe.aemfd.watchfolder.service.api.ContentProcessor Interface的实现。
 
-* **runModes（字符串）**：工作流执行所允许的运行模式列表（以逗号分隔）。 一些示例包括：
+* **runModes （字符串）**：允许用于工作流执行的运行模式的逗号分隔列表。 一些示例包括：
 
    * 作者
 
@@ -84,47 +84,47 @@ ht-degree: 0%
 >
 >如果托管Watched文件夹的服务器没有指定的任何运行模式，则Watched文件夹始终激活，而不管服务器上的运行模式如何。
 
-* **outputFilePattern（字符串）**：输出文件的模式。 您可以指定文件夹或文件模式。 如果指定了文件夹模式，则输出文件的名称将如工作流中所述。 如果指定了文件模式，则输出文件的名称如文件模式中所述。 [文件和文件夹模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) 还可以指定输出文件的目录结构。 它是必需属性。
+* **outputFilePattern （字符串）**：输出文件的模式。 您可以指定文件夹或文件模式。 如果指定了文件夹模式，则输出文件的名称将如工作流中所述。 如果指定了文件模式，则输出文件的名称如文件模式中所述。 [文件和文件夹模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)还可以为输出文件指定目录结构。 它是必需属性。
 
-* **stageFileExpirationDuration（长，默认为–1）**：已选取进行处理的输入文件/文件夹应被视为已超时并标记为失败之前等待的秒数。 仅当此属性的值为正数时，此到期机制才会激活。
+* **stageFileExpirationDuration （Long，默认值–1）**：已选取进行处理的输入文件/文件夹应被视为已超时并标记为失败之前等待的秒数。 仅当此属性的值为正数时，此到期机制才会激活。
 
 >[!NOTE]
 >
 >即使使用此机制将输入标记为已超时，它仍可能在后台处理，但只是花费的时间比预期要长。 如果在超时机制被引入之前消耗了输入内容，则处理甚至可能稍后继续完成，并将输出转储到结果文件夹中。 如果在超时之前未使用内容，则在稍后尝试使用内容时，处理很有可能出错，并且此错误也将记录到同一输入的失败文件夹中。 另一方面，如果由于间歇性工作/工作流误发（到期机制旨在解决这种情况）而从未激活对输入的处理，则这两种情况都不会发生。 因此，对于失败文件夹中由于超时而被标记为失败的任何条目(查找窗体“文件在很长时间后未处理，标记为失败！”的消息。 在失败日志中)，建议扫描结果文件夹（以及失败文件夹本身，以查找相同输入的其他条目），以检查先前描述的任何事件是否实际发生。
 
-* **deleteExpiredStageFileOnlyWhenThrottled （Boolean，默认为true）：** 是否应在限制监视文件夹时激活到期机制。 由于以未处理状态延迟的少量文件（由于间歇性作业/工作流错误触发）可能会在启用限制时阻塞整个批次的处理，因此该机制与受限制的监视文件夹更相关。 如果此属性保持为true（默认值），将不会为不受限制的监视文件夹激活到期机制。 如果属性保留为false，则只要stageFileExpirationDuration属性为正数，机制将始终激活。
+* **deleteExpiredStageFileOnlyWhenThrottled （布尔值，默认为true）：**&#x200B;是否应在限制监视文件夹时激活到期机制。 由于以未处理状态延迟的少量文件（由于间歇性作业/工作流错误触发）可能会在启用限制时阻塞整个批次的处理，因此该机制与受限制的监视文件夹更相关。 如果此属性保持为true（默认值），将不会为不受限制的监视文件夹激活到期机制。 如果属性保留为false，则只要stageFileExpirationDuration属性为正数，机制将始终激活。
 
-* **pollInterval （长）**：扫描观察文件夹以进行输入的间隔（以秒为单位）。 除非启用“限制”设置，否则“轮询间隔”应大于处理平均作业的时间；否则，系统可能会过载。 默认值为 5。有关其他信息，请参阅批量大小的说明。 轮询间隔的值必须大于或等于1。
-* **excludeFilePattern（字符串）**：分号(；)分隔的模式列表，观察文件夹使用该列表来确定要扫描和选取的文件和文件夹。 不会扫描任何具有此模式的文件或文件夹以进行处理。 当输入是具有多个文件的文件夹时，此设置很有用。 文件夹的内容可以复制到一个名称由Watched文件夹选取的文件夹中。 这样可防止Watched文件夹在将该文件夹完全复制到输入文件夹之前拾取要处理的文件夹。 默认值为null。
-您可以使用 [文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) 要排除，请执行以下操作：
+* **pollInterval (Long)**：扫描观察文件夹以进行输入的间隔（以秒为单位）。 除非启用“限制”设置，否则“轮询间隔”应大于处理平均作业的时间；否则，系统可能会过载。 默认值为 5。有关其他信息，请参阅批量大小的说明。 轮询间隔的值必须大于或等于1。
+* **excludeFilePattern （字符串）**：以分号(；)分隔的模式列表，Watched文件夹使用该列表来确定要扫描和选取的文件和文件夹。 不会扫描任何具有此模式的文件或文件夹以进行处理。 当输入是具有多个文件的文件夹时，此设置很有用。 文件夹的内容可以复制到一个名称由Watched文件夹选取的文件夹中。 这样可防止Watched文件夹在将该文件夹完全复制到输入文件夹之前拾取要处理的文件夹。 默认值为null。
+您可以使用[文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)排除：
 
-   * 具有特定文件扩展名的文件；例如， &#42;.dat， &#42;.xml、.pdf、 &#42;.&#42;
-   * 具有特定名称的文件；例如，数据&#42; 将排除名为data1、data2等的文件和文件夹。
+   * 具有特定文件扩展名的文件；例如，&#42;.dat、&#42;.xml、.pdf、&#42;.&#42;
+   * 具有特定名称的文件；例如，data&#42;将排除名为data1、data2等的文件和文件夹。
    * 名称和扩展名中包含复合表达式的文件，如以下示例所示：
 
-      * 数据[0-9][0-9][0-9].[分日][aA]&#39;端口&#39;
-      * &#42;。[分日][Aa]&#39;端口&#39;
-      * &#42;。[Xx][Mm][Ll]
+      * 数据[0-9][0-9][0-9]。[d][aA]&#39;端口&#39;
+      * &#42;。[d][Aa]&#39;端口&#39;
+      * &#42;。[Xx][毫米][Ll]
 
-有关文件模式的详细信息，请参见 [关于文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+有关文件模式的详细信息，请参阅[关于文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
 
-* **includeFilePattern（字符串）**：分号(；)分隔的模式列表，Watched文件夹使用该模式来确定要扫描和选取的文件夹和文件。 例如，如果输入了IncludeFilePattern&#42;，与输入匹配的所有文件和文件夹&#42; 被接走了。 这包括名为input1、input2等的文件和文件夹。 默认值为 &#42; 和指示所有文件和文件夹。 您可以使用文件模式来包括：
+* **includeFilePattern （字符串）**：以分号(；)分隔的模式列表，Watched文件夹使用该模式来确定要扫描和选取的文件夹和文件。 例如，如果IncludeFilePattern是input&#42;，则选取与输入&#42;匹配的所有文件和文件夹。 这包括名为input1、input2等的文件和文件夹。 默认值为&#42;，表示所有文件和文件夹。 您可以使用文件模式来包括：
 
-   * 具有特定文件扩展名的文件；例如， &#42;.dat， &#42;.xml、.pdf、 &#42;.&#42;
-   * 具有特定名称的文件；例如，数据。&#42; 将包括名为data1、data2等的文件和文件夹。
+   * 具有特定文件扩展名的文件；例如，&#42;.dat、&#42;.xml、.pdf、&#42;.&#42;
+   * 具有特定名称的文件；例如，数据。&#42;将包括名为data1、data2等的文件和文件夹。
 
 * 名称和扩展名中包含复合表达式的文件，如以下示例所示：
 
-   * 数据[0-9][0-9][0-9].[分日][aA]&#39;端口&#39;
+   * 数据[0-9][0-9][0-9]。[d][aA]&#39;端口&#39;
 
-      * &#42;。[分日][Aa]&#39;端口&#39;
-      * &#42;。[Xx][Mm][Ll]
+      * &#42;。[d][Aa]&#39;端口&#39;
+      * &#42;。[Xx][毫米][Ll]
 
-有关文件模式的详细信息，请参见 [关于文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
+有关文件模式的详细信息，请参阅[关于文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
-* **waitTime（长）**：文件夹或文件创建后等待扫描的时间，以毫秒为单位。 例如，如果等待时间为3,600,000毫秒（1小时），文件是在一分钟前创建的，则将在59分钟或更长时间后提取此文件。 默认值为 0。此设置对于确保将文件或文件夹完全复制到输入文件夹非常有用。 例如，如果您要处理大文件，并且下载该文件需要10分钟，则将等待时间设置为10&#42;60 &#42;1000毫秒。 这样可防止Watched Folder在文件未满十分钟时扫描文件。
-* **purgeDuration（长）**：当结果文件夹中的文件和文件夹早于此值时会将其清除。 此值以天为单位。 此设置有助于确保结果文件夹不会变满。 值为–1天表示从不删除结果文件夹。 默认值为 -1。
-* **resultFolderName（字符串）**：存储所保存结果的文件夹。 如果结果未出现在此文件夹中，请检查失败文件夹。 只读文件不会被处理，并保存在失败文件夹中。 此值可以是具有以下文件模式的绝对路径或相对路径：
+* **waitTime (Long)**：在创建文件夹或文件后，扫描文件夹或文件之前等待的时间（以毫秒为单位）。 例如，如果等待时间为3,600,000毫秒（1小时），文件是在一分钟前创建的，则将在59分钟或更长时间后提取此文件。 默认值为 0。此设置对于确保将文件或文件夹完全复制到输入文件夹非常有用。 例如，如果您要处理一个大文件，而下载该文件需要10分钟，则将等待时间设置为10&#42;60 &#42;1000毫秒。 这样可防止Watched Folder在文件未满十分钟时扫描文件。
+* **purgeDuration (Long)**：结果文件夹中的文件和文件夹早于此值时会被清除。 此值以天为单位。 此设置有助于确保结果文件夹不会变满。 值为–1天表示从不删除结果文件夹。 默认值为 -1。
+* **resultFolderName (String)**：保存结果的文件夹。 如果结果未出现在此文件夹中，请检查失败文件夹。 只读文件不会被处理，并保存在失败文件夹中。 此值可以是具有以下文件模式的绝对路径或相对路径：
 
    * %F =文件名前缀
    * %E =文件扩展名
@@ -143,14 +143,14 @@ ht-degree: 0%
 
   例如，如果在2009年7月17日晚上8点，并且您指定C：/Test/WF0/failure/%Y/%M/%D/%H/，则结果文件夹为C：/Test/WF0/failure/2009/07/17/20
 
-  如果路径不是绝对路径而是相对路径，则在Watched文件夹内创建该文件夹。 默认值为result/%Y/%M/%D/，它是Watched文件夹内的Result文件夹。 有关文件模式的详细信息，请参见 [关于文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
+  如果路径不是绝对路径而是相对路径，则在Watched文件夹内创建该文件夹。 默认值为result/%Y/%M/%D/，它是Watched文件夹内的Result文件夹。 有关文件模式的详细信息，请参阅[关于文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
 
 >[!NOTE]
 >
 >结果文件夹的大小越小，“观察文件夹”的性能越好。 例如，如果监视文件夹的预计负载为每小时1000个文件，请尝试使用result/%Y%M%D%H之类的模式，以便每小时创建一个新的子文件夹。 如果负载较小（例如，每天1000个文件），则可以使用诸如result/%Y%M%D之类的模式。
 
-* **failureFolderName（字符串）**：保存失败文件的文件夹。 此位置始终相对于Watched文件夹。 您可以使用文件模式，如“结果文件夹”中所述。 只读文件不会被处理，并保存在失败文件夹中。 默认值为失败/%Y/%M/%D/。
-* **preserveFolderName（字符串）：** 成功处理文件后存储文件的位置。 路径可以是绝对、相对或空目录路径。 您可以使用文件模式，如“结果文件夹”中所述。 默认值为preserve/%Y/%M/%D/。
+* **failureFolderName (String)**：保存失败文件的文件夹。 此位置始终相对于Watched文件夹。 您可以使用文件模式，如“结果文件夹”中所述。 只读文件不会被处理，并保存在失败文件夹中。 默认值为失败/%Y/%M/%D/。
+* **preserveFolderName (String)：**&#x200B;成功处理文件后存储文件的位置。 路径可以是绝对、相对或空目录路径。 您可以使用文件模式，如“结果文件夹”中所述。 默认值为preserve/%Y/%M/%D/。
 * **batchSize (Long)**：每次扫描要提取的文件或文件夹数。 用于防止系统过载；一次扫描太多文件可能会导致崩溃。 默认值为 2。
 
   “轮询间隔”和“批处理大小”设置可确定Watched Folder在每次扫描中选取的文件数。 观察文件夹使用Quartz线程池扫描输入文件夹。 线程池与其他服务共享。 如果扫描间隔很小，则线程会经常扫描输入文件夹。 如果文件经常被放入Watched文件夹，则应该保持较小的扫描间隔。 如果文件不经常被丢弃，请使用较大的扫描间隔，以便其他服务可以使用线程。
@@ -159,36 +159,36 @@ ht-degree: 0%
 
   当文件被放入Watched文件夹时，它会列出输入中的文件，如果每秒都进行扫描，则可能会降低性能。 增加扫描间隔可以提高性能。 如果正在删除的文件量很小，请相应地调整批处理大小和轮询间隔。 例如，如果每秒丢弃10个文件，请尝试将pollInterval设置为1秒，并将Batch Size设置为10
 
-* **throttleOn（布尔值）**：选中此选项后，它会限制AEM Forms在任何给定时间处理的观察文件夹作业数。 最大作业数由“批次大小”值决定。 默认值为true。 (请参阅 [关于限制](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (Boolean)**：选择此选项时，它会限制AEM Forms在任何给定时间处理的观察文件夹作业数。 最大作业数由“批次大小”值决定。 默认值为true。 （请参阅[关于限制](../../forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p)。）
 
 * **overwriteDuplicateFilename（布尔值）**：设置为True时，将覆盖结果文件夹和保留文件夹中的文件。 当设置为False时，使用具有数字索引后缀的文件和文件夹作为名称。 默认值为False。
-* **preserveOnFailure（布尔值）**：如果对服务运行操作失败，则保留输入文件。 默认值为true。
-* **inputFilePattern（字符串）**：指定Watched文件夹的输入文件模式。 创建文件的允许列表。
-* **异步（布尔值）**：将调用类型标识为异步或同步。 默认值为true（异步）。 文件处理是一项消耗资源的任务，将异步标志的值保持为true可防止阻塞扫描作业的主线程。 在群集环境中，保持标记为true对于启用跨可用服务器处理的文件的负载平衡至关重要。 如果标志为false，则扫描作业将尝试在其自己的线程中依次对每个顶级文件/文件夹执行处理。 如果没有特定原因（例如，在单服务器设置上基于工作流的处理），请勿将标志设置为false。
+* **preserveOnFailure （布尔值）**：如果无法对服务运行操作，则保留输入文件。 默认值为true。
+* **inputFilePattern （字符串）**：指定Watched文件夹的输入文件模式。 创建文件的允许列表。
+* **asynch （布尔值）**：将调用类型标识为异步或同步。 默认值为true（异步）。 文件处理是一项消耗资源的任务，将异步标志的值保持为true可防止阻塞扫描作业的主线程。 在群集环境中，保持标记为true对于启用跨可用服务器处理的文件的负载平衡至关重要。 如果标志为false，则扫描作业将尝试在其自己的线程中依次对每个顶级文件/文件夹执行处理。 如果没有特定原因（例如，在单服务器设置上基于工作流的处理），请勿将标志设置为false。
 
 >[!NOTE]
 >
 >工作流在设计上是异步的。 即使将该值设置为false，工作流也会以异步模式启动。
 
 * **已启用（布尔值）**：停用并激活对Watched文件夹的扫描。 将enabled设置为true ，以开始扫描Watched文件夹。 默认值为true。
-* **payloadMapperFilter：** 当文件夹配置为watched文件夹时，将在watched文件夹内创建一个文件夹结构。 该结构具有文件夹，用于提供输入、接收输出（结果）、保存故障数据、保存长期流程的数据以及保存各个阶段的数据。 观察文件夹的文件夹结构可用作以Forms为中心的工作流的负载。 有效负荷映射器允许您定义有效负荷的结构，该有效负荷使用观察文件夹进行输入、输出和处理。 例如，如果使用默认映射器，它将监视文件夹的内容映射为 [有效负荷]\输入和 [有效负荷]\output文件夹 提供了两种现成的有效负载映射器实施。 如果您没有 [自定义实施](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)，请使用以下现成的实施之一：
+* **payloadMapperFilter：**&#x200B;将文件夹配置为watched文件夹时，将在watched文件夹内创建文件夹结构。 该结构具有文件夹，用于提供输入、接收输出（结果）、保存故障数据、保存长期流程的数据以及保存各个阶段的数据。 观察文件夹的文件夹结构可用作以Forms为中心的工作流的负载。 有效负荷映射器允许您定义有效负荷的结构，该有效负荷使用观察文件夹进行输入、输出和处理。 例如，如果使用默认映射器，它将映射具有[有效负载]\input和[有效负载]\output文件夹的观察文件夹的内容。 提供了两种现成的有效负载映射器实施。 如果您没有[自定义实施](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)，请使用以下现成实施之一：
 
-   * **默认映射器：** 使用默认有效负荷映射器将watched文件夹的输入和输出内容保留在有效负荷的单独输入和输出文件夹中。 此外，在工作流的有效负荷路径中，使用 [有效负荷]/input/和 [有效负荷]/output路径以检索和保存内容。
+   * **默认映射器：**&#x200B;使用默认有效负荷映射器将watched文件夹的输入和输出内容保留在有效负荷的单独输入和输出文件夹中。 此外，在工作流的负载路径中，使用[负载]/输入/和[负载]/输出路径来检索和保存内容。
 
-   * **基于文件的简单有效负载映射器：** 使用基于简单文件的有效负荷映射器，将输入和输出内容直接保留在有效负荷文件夹中。 它不会创建任何额外的层次结构，如默认映射器。
+   * **基于简单文件的负载映射器：**&#x200B;使用基于简单文件的负载映射器将输入和输出内容直接保留在负载文件夹中。 它不会创建任何额外的层次结构，如默认映射器。
 
 ### 自定义配置参数 {#custom-configuration-parameters}
 
 除了上面列出的观察文件夹配置属性外，您还可以指定自定义配置参数。 自定义参数将传递到文件处理代码。 它允许代码根据参数的值更改其行为。 要指定参数，请执行以下操作：
 
 1. 登录到CRXDE-Lite并导航到“观察文件夹”配置节点。
-1. 添加属性参数。&lt;property_name> 到“观察文件夹”配置节点。 属性的类型只能为Boolean、Date、Decimal、Double、Long和String。 您可以指定单值和多值属性。
+1. 添加属性参数。&lt;property_name>转到Watched Folder配置节点。 属性的类型只能为Boolean、Date、Decimal、Double、Long和String。 您可以指定单值和多值属性。
 
 >[!NOTE]
 >
 >如果属性的数据类型是Double，则在此类属性的值中指定小数点。 对于所有属性（其中数据类型为Double且在值中未指定小数点），类型将转换为Long。
 
-这些属性作为Map类型的不可变映射传递&lt;string object=&quot;&quot;> 到处理代码中。 处理代码可以是ECMAScript、工作流或服务。 为属性提供的值在映射中作为键值对提供。 键是属性的名称，值是属性的值。 有关自定义配置参数的更多信息，请参阅以下图像：
+这些属性作为Map&lt;String， Object>类型的不可变映射传递到处理代码。 处理代码可以是ECMAScript、工作流或服务。 为属性提供的值在映射中作为键值对提供。 键是属性的名称，值是属性的值。 有关自定义配置参数的更多信息，请参阅以下图像：
 
 ![具有强制属性、一些可选属性和一些配置参数的监视文件夹配置节点示例](assets/custom-configuration-parameters.png)
 
@@ -200,7 +200,7 @@ ht-degree: 0%
 
 1. 登录到CRXDE-Lite并导航到“观察文件夹”配置节点。
 
-1. 添加属性workflow.var。&lt;variable_name> 到“观察文件夹”配置节点。
+1. 添加属性workflow.var。&lt;variable_name>转到“观察文件夹”配置节点。
 
    属性的类型只能为Boolean、Date、Decimal、Double、Long和String。 还支持多值属性。 对于多值属性，工作流步骤可用的值是指定类型的数组。
 
@@ -212,7 +212,7 @@ ht-degree: 0%
 >
 >JCR规范规定了属性的默认值。 默认值可用于工作流的步骤以进行处理。 因此，请指定正确的默认值。
 
-![custom-configuration-parameters2](assets/custom-configuration-parameters2.png)
+![自定义配置参数2](assets/custom-configuration-parameters2.png)
 
 ## 处理文件的各种方法 {#variousmethodsforprocessingfiles}
 
@@ -220,17 +220,20 @@ ht-degree: 0%
 
 ### 使用服务处理观察文件夹的文件   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
-服务是以下内容的自定义实施 `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` 界面。 它向OSGi注册以及一些自定义属性。 实施的自定义属性使其具有唯一性，并有助于识别实施。
+服务是`com.adobe.aemfd.watchfolder.service.api.ContentProcessor`接口的自定义实现。 它向OSGi注册以及一些自定义属性。 实施的自定义属性使其具有唯一性，并有助于识别实施。
 
 #### ContentProcessor界面的自定义实施 {#custom-implementation-of-the-contentprocessor-interface}
 
-自定义实施接受处理上下文（com.adobe.aemfd.watchfolder.service.api.ProcessorContext类型的对象），从上下文读取输入文档和配置参数，处理输入，并将输出添加回上下文。 ProcessorContext具有以下API：
+自定义实施接受处理上下文（com.adobe.aemfd.watchfolder.service.api.ProcessorContext类型的对象），从上下文读取输入文档和配置参数，处理输入，并将输出添加回
+上下文。 ProcessorContext具有以下API：
 
 * **getWatchFolderId**：返回观察文件夹的ID。
 * **getInputMap**：返回映射类型的映射。 映射的键是输入文件的文件名和包含文件内容的文档对象。 使用getinputMap API读取输入文件。
-* **getconfigparameters**：返回映射类型的不可变映射。 映射包含观察文件夹的配置参数。
+* **getConfigParameters**：返回映射类型的不可变映射。 该映射包含
+观察文件夹的配置参数。
 
-* **setResult**：ContentProcessor实施使用API将输出文档写入结果文件夹。 您可以为setResult API的输出文件提供一个名称。 API可能会根据指定的输出文件夹/文件模式选择使用或忽略提供的文件。 如果指定了文件夹模式，则输出文件的名称将如工作流中所述。 如果指定了文件模式，则输出文件的名称如文件模式中所述。
+* **setResult**： ContentProcessor实现
+使用API将输出文档写入结果文件夹。 您可以为setResult API的输出文件提供一个名称。 API可能会根据指定的输出文件夹/文件模式选择使用或忽略提供的文件。 如果指定了文件夹模式，则输出文件的名称将如工作流中所述。 如果指定了文件模式，则输出文件的名称如文件模式中所述。
 
 例如，以下代码是使用自定义foo=bar属性的ContentProcessor界面的自定义实施。
 
@@ -241,9 +244,9 @@ ht-degree: 0%
 public class OutputWriter implements ContentProcessor {
 ```
 
-同时 [配置观察文件夹](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)，如果将inputProcessorId属性指定为(foo=bar)，将inputProcessorType属性指定为Service ，则使用上述服务（自定义实施）处理Watched文件夹的输入文件。
+在[配置Watched文件夹](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)时，如果将inputProcessorId属性指定为(foo=bar)，将inputProcessorType属性指定为Service，则使用上述服务（自定义实现）处理Watched文件夹的输入文件。
 
-以下示例也是ContentProcessor界面的自定义实现。 在示例中，服务接受输入文件，将文件复制到临时位置，并返回包含文件内容的文档对象。 文档对象的内容将保存到结果文件夹中。 结果文件夹的物理路径配置于 [观察文件夹配置节点](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+以下示例也是ContentProcessor界面的自定义实现。 在示例中，服务接受输入文件，将文件复制到临时位置，并返回包含文件内容的文档对象。 文档对象的内容将保存到结果文件夹中。 在[观察文件夹配置节点](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)中配置了结果文件夹的物理路径。
 
 ```java
 @Component(immediate = true)
@@ -267,10 +270,10 @@ public class TestContentProcessor1 implements ContentProcessor {
 
 * **getWatchFolderId**：返回观察文件夹的ID。
 * **getInputMap**：返回映射类型的映射。 映射的键是输入文件的文件名和包含文件内容的文档对象。 使用getinputMap API读取输入文件。
-* **getconfigparameters**：返回映射类型的不可变映射。 映射包含观察文件夹的配置参数。
-* **setResult**：ContentProcessor实施使用API将输出文档写入结果文件夹。 您可以为setResult API的输出文件提供一个名称。 API可能会根据指定的输出文件夹/文件模式选择使用或忽略提供的文件。 如果指定了文件夹模式，则输出文件的名称将如工作流中所述。 如果指定了文件模式，则输出文件的名称如文件模式中所述。
+* **getConfigParameters**：返回映射类型的不可变映射。 映射包含观察文件夹的配置参数。
+* **setResult**： ContentProcessor实现使用API将输出文档写入结果文件夹。 您可以为setResult API的输出文件提供一个名称。 API可能会根据指定的输出文件夹/文件模式选择使用或忽略提供的文件。 如果指定了文件夹模式，则输出文件的名称将如工作流中所述。 如果指定了文件模式，则输出文件的名称如文件模式中所述。
 
-以下代码是一个示例ECMAScript。 它接受输入文件，将文件复制到临时位置，并返回包含文件内容的文档对象。 文档对象的内容将保存到结果文件夹中。 结果文件夹的物理路径配置于 [观察文件夹配置节点](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p).
+以下代码是一个示例ECMAScript。 它接受输入文件，将文件复制到临时位置，并返回包含文件内容的文档对象。 文档对象的内容将保存到结果文件夹中。 在[观察文件夹配置节点](../../forms/using/watched-folder-in-aem-forms.md#p-create-watched-folder-configuration-node-p)中配置了结果文件夹的物理路径。
 
 >[!NOTE]
 >
@@ -291,7 +294,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 
 如果您计划将脚本放置在自定义位置，则默认服务用户可能没有对自定义位置的读取权限。 对于这种情况，请执行以下步骤以提供对自定义位置的必要权限：
 
-1. 以编程方式或通过控制台https://&#39;创建系统用户[服务器]：[端口]&#39;/crx/explorer. 您也可以使用现有系统用户。 请务必在此处与系统用户而非正常用户合作。
+1. 以编程方式或通过控制台https://&#39;[server]：[port]&#39;/crx/explorer创建系统用户。 您也可以使用现有系统用户。 请务必在此处与系统用户而非正常用户合作。
 1. 在存储脚本的自定义位置向新创建的或现有的系统用户提供读取权限。 您可以有多个自定义位置。 至少向所有自定义位置提供读取权限。
 1. 在Felix配置控制台(/system/console/configMgr)中，找到监视文件夹的服务用户映射。 此映射类似于“映射： adobe-aemds-core-watch-folder=...”。
 1. 单击映射。 对于“adobe-aemds-core-watch-folder：scripts=fd-service”条目，请将fd-service更改为自定义系统用户的ID。 单击“保存”。
@@ -309,7 +312,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 
 执行以下步骤以使用工作流处理文件：
 
-1. 创建实施 `com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor` 界面。 它类似于为服务创建的实施。
+1. 创建`com.adobe.aemfd.watchfolder.workflow.api.WorkflowContextProcessor`接口的实现。 它类似于为服务创建的实施。
 
    >[!NOTE]
    >
@@ -333,13 +336,13 @@ processWorkflowContext()的参数是com.adobe.aemfd.watchfolder.workflow.api.Wor
 * getMetadata：返回元数据变量的值。 变量将传递到WorkflowContextService.execute()方法。
 * getCommittedVariables：返回表示由先前步骤设置的变量的只读对象映射。 如果变量未在前面的任何步骤中修改，则会返回在配置Watched文件夹时指定的默认值。
 * getCommittedResults：返回只读文档映射。 该映射表示通过上述步骤生成的输出文件。
-* setVariable： WorkflowContextProcessor实施使用变量来操作变量，这些变量表示在步骤之间流动的自定义动态数据。 变量的名称和类型与期间指定的变量的名称相同。 [配置观察文件夹](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p). 要更改变量的值，请使用非null值调用setVariable API。 要删除变量，请使用null值调用setVariable()。
+* setVariable： WorkflowContextProcessor实施使用变量来操作变量，这些变量表示在步骤之间流动的自定义动态数据。 变量的名称和类型与[配置Watched文件夹](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)期间指定的变量的名称相同。 要更改变量的值，请使用非null值调用setVariable API。 要删除变量，请使用null值调用setVariable()。
 
 以下ProcessorContext API也可用：
 
 * getWatchFolderId：返回观察文件夹的ID。
-* getInputMap：返回映射类型的映射&lt;string document=&quot;&quot;>. 映射的键是输入文件的文件名和包含文件内容的文档对象。 使用getinputMap API读取输入文件。
-* getConfigParameters：返回类型为Map的不可变映射&lt;string object=&quot;&quot;>. 映射包含观察文件夹的配置参数。
+* getInputMap：返回Map&lt;字符串， Document>类型的映射。 映射的键是输入文件的文件名和包含文件内容的文档对象。 使用getinputMap API读取输入文件。
+* getConfigParameters：返回Map&lt;字符串，对象>类型的不可变映射。 映射包含观察文件夹的配置参数。
 * setResult： ContentProcessor实施使用API将输出文档写入结果文件夹。 您可以为setResult API的输出文件提供一个名称。 API可能会根据指定的输出文件夹/文件模式选择使用或忽略提供的文件。 如果指定了文件夹模式，则输出文件的名称将如工作流中所述。 如果指定了文件模式，则输出文件的名称如文件模式中所述
 
 setResult API在工作流中使用的注意事项：
@@ -399,11 +402,11 @@ log.info("Exiting workflow script!")
 
 #### 创建自定义有效负载映射器过滤器 {#creating-a-custom-payload-mapper-filter}
 
-1. 下载 [Adobe客户端SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/).
+1. 下载[Adobe的客户端SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)。
 1. 在基于maven的项目的构建路径中设置客户端SDK。 要开始配置，您可以在所选的IDE中下载并打开以下基于maven的项目。
 1. 编辑示例包中可用的有效负载映射器过滤器代码以满足您的要求。
 1. 使用maven创建自定义有效负载映射器过滤器的捆绑包。
-1. 使用 [AEM包控制台](https://localhost:4502/system/console/bundles) 以安装捆绑包。
+1. 使用[AEM包控制台](https://localhost:4502/system/console/bundles)安装该包。
 
    现在，AEM Watched文件夹UI中列出了自定义有效负载映射器筛选器。 您可以将其用于工作流。
 
@@ -512,8 +515,8 @@ log.info("Exiting workflow script!")
 限制功能可防止Watched文件夹在前面的作业未完成时调用新作业。 观察文件夹检测正在进行的作业，并根据批处理大小减去正在进行的作业来处理新作业。 例如，在第二次调用中，如果完成的作业数只有三个，并且一个作业仍在进行中，则Watched Folder将仅调用另外三个作业。
 
 * 观察文件夹依赖于暂存文件夹中的文件数，以确定正在进行多少个作业。 如果文件在stage文件夹中保持未处理状态，Watched Folder将不再调用任何作业。 例如，如果批处理大小为4个且已停止三个作业，则Watched文件夹在后续调用中仅调用一个作业。 有多个情况可能会导致文件在stage文件夹中保持未处理状态。 当作业停止时，管理员可以在“进程管理”管理页面上终止进程，以便Watched Folder将文件移出stage文件夹。
-* 如果AEM Forms服务器在Watched Folder调用作业之前关闭，管理员可以将文件移出stage文件夹。 有关信息，请参阅 [故障点和恢复](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
-* 如果AEM Forms服务器正在运行，但在作业管理器服务回调时观察文件夹未运行（当服务未按顺序启动时会发生回调），则管理员可以将文件移出暂存文件夹。 有关信息，请参阅 [故障点和恢复](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p).
+* 如果AEM Forms服务器在Watched Folder调用作业之前关闭，管理员可以将文件移出stage文件夹。 有关信息，请参阅[故障点和恢复](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
+* 如果AEM Forms服务器正在运行，但在作业管理器服务回调时观察文件夹未运行（当服务未按顺序启动时会发生回调），则管理员可以将文件移出暂存文件夹。 有关信息，请参阅[故障点和恢复](../../forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)。
 
 ### 故障点和恢复故障点和恢复 {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -525,8 +528,8 @@ log.info("Exiting workflow script!")
 
 * 如果Watched Folder已成功为stage文件夹中的每个文件创建调用请求，并且服务器崩溃，则根据调用类型有两种行为：
 
-   * **同步**：如果观察文件夹配置为同步调用服务，则stage文件夹中的所有文件在stage文件夹中保持未处理状态。
-   * **异步**：在这种情况下， Watched文件夹依赖作业管理器服务。 如果作业管理器服务回调Watched文件夹，则根据调用的结果，会将暂存文件夹中的文件移到preserve或failure文件夹。 如果作业管理器服务没有回调“观察文件夹”，则文件在stage文件夹中将保持未处理状态。 当作业管理器回拨时，Watched文件夹未运行，会发生这种情况。
+   * **Synchronous**：如果监视文件夹配置为同步调用服务，则stage文件夹中的所有文件在stage文件夹中保持未处理状态。
+   * **异步**：在这种情况下，观察文件夹依赖于作业管理器服务。 如果作业管理器服务回调Watched文件夹，则根据调用的结果，会将暂存文件夹中的文件移到preserve或failure文件夹。 如果作业管理器服务没有回调“观察文件夹”，则文件在stage文件夹中将保持未处理状态。 当作业管理器回拨时，Watched文件夹未运行，会发生这种情况。
 
 #### 恢复暂存文件夹中未处理的源文件 {#recover-unprocessed-source-files-in-the-stage-folder}
 
@@ -561,13 +564,13 @@ log.info("Exiting workflow script!")
 
 管理员可以指定可以调用服务的文件类型。 可以为每个Watched文件夹建立多个文件模式。 文件模式可以是以下文件属性之一：
 
-* 具有特定文件扩展名的文件；例如， &#42;.dat， &#42;.xml、.pdf、 &#42;.&#42;
+* 具有特定文件扩展名的文件；例如，&#42;.dat、&#42;.xml、.pdf、&#42;.&#42;
 * 具有特定名称的文件；例如，数据。&#42;
 * 名称和扩展名中包含复合表达式的文件，如以下示例所示：
 
-   * 数据[0-9][0-9][0-9].[分日][aA]&#39;端口&#39;
-   * &#42;。[分日][Aa]&#39;端口&#39;
-   * &#42;。[Xx][Mm][Ll]
+   * 数据[0-9][0-9][0-9]。[d][aA]&#39;端口&#39;
+   * &#42;。[d][Aa]&#39;端口&#39;
+   * &#42;。[Xx][毫米][Ll]
 
 * 管理员可以定义用于存储结果的输出文件夹的文件模式。 对于输出文件夹（“结果”、“保留”和“失败”），管理员可以指定以下任何文件模式：
 * %Y =年（完整）
@@ -585,8 +588,8 @@ log.info("Exiting workflow script!")
 
 输出参数映射还可以指定其他模式，例如：
 
-* %F =源文件名
-* %E =源文件扩展名
+* %F = Source文件名
+* %E = Source文件扩展名
 
 如果输出参数映射模式以“File.separator”（路径分隔符）结尾，则会创建一个文件夹，并将内容复制到该文件夹中。 如果模式不以“File.separator”结尾，则会使用该名称创建内容（结果文件或文件夹）。
 
@@ -604,7 +607,7 @@ log.info("Exiting workflow script!")
 
 ECMAScript将使用PDF Generator的createPDF API将Microsoft Word (.docx)文档转换为PDF文档。 执行以下步骤以创建脚本：
 
-1. 在浏览器窗口中打开CRXDE Lite。 URL为https://&#39;[服务器]：[端口]&#39;/crx/de.
+1. 在浏览器窗口中打开CRXDE Lite。 URL是https://&#39;[服务器]：[端口]&#39;/crx/de。
 
 1. 导航到/etc/workflow/scripts并创建一个名为PDFG的文件夹。
 
@@ -640,19 +643,19 @@ ECMAScript将使用PDF Generator的createPDF API将Microsoft Word (.docx)文档�
 1. 在浏览器窗口中打开AEM Workflow UI。
    <https://[servername>]：&#39;端口&#39;/工作流
 
-1. 在“模型”视图中，单击 **新建**. 在新增工作流对话框中，指定 **标题**，然后单击 **确定**.
+1. 在“模型”视图中，单击&#x200B;**新建**。 在新工作流对话框中，指定&#x200B;**标题**，然后单击&#x200B;**确定**。
 
    ![create-a-workflow-pdf](assets/create-a-workflow-pdf.png)
 
-1. 选择新创建的工作流，然后单击 **编辑**. 工作流将在新窗口中打开。
+1. 选择新创建的工作流，然后单击&#x200B;**编辑**。 工作流将在新窗口中打开。
 
 1. 删除默认工作流步骤。 将流程步骤从Sidekick拖放到工作流。
 
    ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
-1. 右键单击流程步骤并选择 **编辑**. 出现“Step Properties（步骤属性）”窗口。
+1. 右键单击流程步骤并选择&#x200B;**编辑**。 出现“Step Properties（步骤属性）”窗口。
 
-1. 在“流程”选项卡中，选择ECMAScript。 例如，在中创建的pdfg-openOffice-sample.ecma脚本 [创建ECMAScript](#p-create-an-ecmascript-p). 启用 **处理程序前进** 选项并单击 **确定**.
+1. 在“流程”选项卡中，选择ECMAScript。 例如，在[创建ECMAScript](#p-create-an-ecmascript-p)中创建的pdfg-openOffice-sample.ecma脚本。 启用&#x200B;**处理程序前进**&#x200B;选项，然后单击&#x200B;**确定**。
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
@@ -673,7 +676,7 @@ inputProcessorType （字符串）：要启动的进程的类型。 在本教程
 
    * outputFilePattern （字符串）：输出文件的模式。 您可以指定文件夹或文件模式。 如果指定了文件夹模式，则输出文件的名称将如工作流中所述。 如果指定了文件模式，则输出文件的名称如文件模式中所述。
 
-   除了上述强制属性外，Watched文件夹还支持一些可选属性。 有关可选属性的完整列表和说明，请参阅 [观察文件夹属性](#watchedfolderproperties).
+   除了上述强制属性外，Watched文件夹还支持一些可选属性。 有关可选属性的完整列表和说明，请参阅[观察文件夹属性](#watchedfolderproperties)。
 
 ## 已知问题 {#watched-folder-known-issues}
 

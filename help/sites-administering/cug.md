@@ -23,13 +23,13 @@ ht-degree: 1%
 
 要在网站中配置此类区域，您可以：
 
-* [创建实际的已关闭用户组并分配成员](#creating-the-user-group-to-be-used).
+* [创建实际的已关闭用户组并分配成员](#creating-the-user-group-to-be-used)。
 
-* [将此组应用到所需的页面](#applying-your-closed-user-group-to-content-pages) 并选择（或创建）CUG成员使用的登录页面；将CUG应用于内容页面时也会指定登录页面。
+* [将此组应用于所需的页面](#applying-your-closed-user-group-to-content-pages)，并选择（或创建）登录页面以供CUG的成员使用；将CUG应用于内容页面时也指定了该登录页面。
 
-* [创建某种形式的链接，至少指向保护区内的一个页面](#linking-to-the-cug-pages)，否则它将不可见。
+* [创建指向受保护区域](#linking-to-the-cug-pages)内至少一个页面的某种形式的链接，否则该链接将不可见。
 
-* [配置调度程序](#configure-dispatcher-for-cugs) 如果正在使用中。
+* [配置Dispatcher](#configure-dispatcher-for-cugs)（如果正在使用中）。
 
 >[!CAUTION]
 >
@@ -43,49 +43,49 @@ ht-degree: 1%
 
 要创建已关闭的用户组，请执行以下操作：
 
-1. 转到 **工具 — 安全性** 从AEM主屏幕上。
+1. 从AEM homescreen转到&#x200B;**Tools - Security**。
 
    >[!NOTE]
    >
-   >请参阅 [管理用户和组](/help/sites-administering/security.md#managing-users-and-groups) 有关创建和配置用户和组的完整信息。
+   >有关创建和配置用户和组的完整信息，请参阅[管理用户和组](/help/sites-administering/security.md#managing-users-and-groups)。
 
-1. 选择 **组** 下一屏幕中的信息卡。
+1. 从下一个屏幕中选择&#x200B;**组**&#x200B;信息卡。
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. 按 **创建** 按钮创建组。
-1. 命名您的新组；例如， `cug_access`.
+1. 按右上角的&#x200B;**创建**&#x200B;按钮创建组。
+1. 命名您的新组；例如，`cug_access`。
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
-1. 转到 **成员** 选项卡，并将所需的用户分配给此组。
+1. 转到&#x200B;**成员**&#x200B;选项卡，将所需用户分配给此组。
 
    ![screenshot_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
-1. 激活您分配给CUG的任何用户；在本例中，是所有 `cug_access`.
-1. 激活已关闭的用户组，使其在发布环境中可用；在本例中， `cug_access`.
+1. 激活您分配给CUG的任何用户；在本例中，为`cug_access`的所有成员。
+1. 激活已关闭的用户组，使其在发布环境中可用；在本例中，`cug_access`。
 
 ## 将已关闭的用户组应用于内容页面 {#applying-your-closed-user-group-to-content-pages}
 
 要将CUG应用到一个或多个页面，请执行以下操作：
 
 1. 导航到要分配给CUG的受限制部分的根页面。
-1. 单击页面的缩略图，然后选择 **属性** 工具栏中。
+1. 通过单击页面的缩略图并选择顶部工具栏中的&#x200B;**属性**&#x200B;来选择页面。
 
    ![screenshot_2018-10-30at162632](assets/screenshot_2018-10-30at162632.png)
 
-1. 在以下窗口中，打开 **高级** 选项卡。
+1. 在以下窗口中，打开&#x200B;**高级**&#x200B;选项卡。
 
-1. 向下滚动到 **身份验证要求** 部分。
+1. 向下滚动到&#x200B;**身份验证要求**&#x200B;部分。
 
-   1. 激活 **启用** 勾选框。
+   1. 激活&#x200B;**启用**&#x200B;复选框。
 
-   1. 将路径添加到 **登录页面**.
+   1. 添加您的&#x200B;**登录页面**的路径。
 这是可选操作，如果留空，则使用标准登录页面。
 
-   ![已添加CUG](assets/cug-authentication-requirement.png)
+   已添加![CUG](assets/cug-authentication-requirement.png)
 
-1. 接下来，转到 **权限** 选项卡并选择 **编辑已关闭的用户组**.
+1. 接下来，转到&#x200B;**权限**&#x200B;选项卡并选择&#x200B;**编辑已关闭的用户组**。
 
    ![screenshot_2018-10-30at163003](assets/screenshot_2018-10-30at163003.png)
 
@@ -93,19 +93,19 @@ ht-degree: 1%
    >
    >“权限”选项卡中的 CUG 无法从 Blueprint 转出到 Live Copy。在配置Live Copy时对此进行规划。
    >
-   >有关更多信息，请参阅 [此页面](closed-user-groups.md#aem-livecopy).
+   >有关详细信息，请参阅[此页面](closed-user-groups.md#aem-livecopy)。
 
-1. 此 **编辑已关闭的用户组** 对话框打开。 在此处，您可以搜索并选择您的CUG，然后使用确认组选择 **保存**.
+1. 将打开&#x200B;**编辑已关闭的用户组**&#x200B;对话框。 您可以在此搜索并选择您的CUG，然后通过&#x200B;**保存**&#x200B;确认组选择。
 
-   该组将被添加到列表中；例如，组 **cug_access**.
+   该组将被添加到列表中；例如，组&#x200B;**cug_access**。
 
-   ![已添加CUG](assets/cug-added.png)
+   已添加![CUG](assets/cug-added.png)
 
-1. 使用确认更改 **保存并关闭**.
+1. 通过&#x200B;**保存并关闭**&#x200B;确认更改。
 
 >[!NOTE]
 >
->请参阅 [Identity Management](/help/sites-administering/identity-management.md) 有关发布环境中的用户档案以及提供用于登录和退出的表单的信息。
+>有关发布环境中用户档案以及提供登录和退出表单的信息，请参阅[Identity Management](/help/sites-administering/identity-management.md)。
 
 ## 链接到CUG页面 {#linking-to-the-cug-pages}
 
@@ -117,13 +117,13 @@ ht-degree: 1%
 
 如果您使用的是Dispatcher，则需要使用以下属性定义Dispatcher场：
 
-* [虚拟主机](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)：匹配CUG应用于的页面的路径。
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#identifying-virtual-hosts-virtualhosts)：与CUG应用于的页面的路径匹配。
 * \sessionmanagement：请参见下文。
-* [缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)：专用于CUG应用于的文件的缓存目录。
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)： CUG所应用文件的专用缓存目录。
 
 ### 为CUG配置Dispatcher会话管理 {#configuring-dispatcher-session-management-for-cugs}
 
-配置 [dispatcher.any文件中的会话管理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) CUG的。 在请求访问CUG页面时使用的身份验证处理程序决定了如何配置会话管理。
+在dispatcher.any文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)中为CUG配置[会话管理。 在请求访问CUG页面时使用的身份验证处理程序决定了如何配置会话管理。
 
 ```xml
 /sessionmanagement
@@ -137,7 +137,7 @@ ht-degree: 1%
 >当Dispatcher场启用了会话管理时，不会缓存场处理的所有页面。 要缓存超出CUG的页面，请在dispatcher.any中创建第二个场
 >处理非CUG页面。
 
-1. 配置 [/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement) 通过定义 `/directory`；例如：
+1. 通过定义`/directory`配置[/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)；例如：
 
    ```xml
    /sessionmanagement
@@ -147,4 +147,4 @@ ht-degree: 1%
      }
    ```
 
-1. 设置 [/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used) 到 `0`.
+1. 将[/allowAuthorized](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#caching-when-authentication-is-used)设置为`0`。

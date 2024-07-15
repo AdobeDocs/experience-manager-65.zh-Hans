@@ -21,18 +21,18 @@ ht-degree: 0%
 
 要访问社区工具控制台，请登录您的创作实例：
 
-* 从全局导航： **[!UICONTROL 工具]** > **[!UICONTROL Communities]**.
+* 从全局导航： **[!UICONTROL 工具]** > **[!UICONTROL 社区]**。
 
   ![社区](assets/communities-home.png)
 
-* [站点模板](sites.md)  — 用于站点模板创建和管理的控制台。
+* [站点模板](sites.md) — 用于创建和管理站点模板的控制台。
 
-* [组模板](tools-groups.md)  — 用于创建和管理组模板的控制台。
+* [组模板](tools-groups.md) — 用于创建和管理组模板的控制台。
 
-* [社区功能](functions.md)  — 社区功能创建和管理控制台。
+* [社区功能](functions.md) — 用于创建和管理社区功能的控制台。
 
-* [存储配置](srp-config.md)  — 用于配置和选择 [默认SRP](working-with-srp.md).
+* [存储配置](srp-config.md) — 用于配置和选择[默认SRP](working-with-srp.md)的控制台。
 
-* [组件指南](components-guide.md)  — 打开一个交互式站点，该站点允许试验SCF组件的工作方式以及如何对其进行配置或自定义。
+* [组件指南](components-guide.md) — 打开一个交互式站点，该站点允许试验SCF组件的工作方式以及如何对其进行配置或自定义。
 
-* [徽章](badges.md)  — 可在其中添加自定义徽章以用于的控制台 [评分和徽章规则](implementing-scoring.md)
+* [徽章](badges.md) — 可在其中添加自定义徽章以用于[评分和徽章规则](implementing-scoring.md)的控制台

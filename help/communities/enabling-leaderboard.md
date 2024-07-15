@@ -21,24 +21,24 @@ ht-degree: 2%
 
 ## 简介 {#introduction}
 
-此 `Leaderboard` 组件可帮助您通过根据获得的点数（基本评分）或其专业知识（高级评分）对成员进行排名，了解成员如何在社区内进行交互。
+`Leaderboard`组件通过根据获得的点数（基本评分）或其专业知识（高级评分）对成员进行排名，帮助您了解成员如何在社区中交互。
 
-在页面上包含排行榜组件之前，需要配置 [社区评分和徽章](/help/communities/implementing-scoring.md).
+在页面上包含排行榜组件之前，需要配置[社区评分和徽章](/help/communities/implementing-scoring.md)。
 
 此文档的此部分描述了：
 
-* 添加 `Leaderboard` 组件到 [社区站点](/help/communities/overview.md#community-sites).
-* 的配置设置 `Leaderboard` 组件。
+* 正在将`Leaderboard`组件添加到[社区站点](/help/communities/overview.md#community-sites)。
+* `Leaderboard`组件的配置设置。
 
 ### 将排行榜添加到页面 {#adding-a-leaderboard-to-a-page}
 
-添加 `Leaderboard` 组件到创作模式下的页面，找到该组件
+要将`Leaderboard`组件添加到创作模式下的页面，请找到该组件
 
 * `Communities / Leaderboard`
 
 并将其拖动到页面上的适当位置。
 
-有关必要信息，请访问 [社区组件基础知识](/help/communities/basics.md).
+有关必要的信息，请访问[社区组件基础知识](/help/communities/basics.md)。
 
 首次放到社区站点的页面时，该组件的显示方式如下：
 
@@ -46,20 +46,20 @@ ht-degree: 2%
 
 ### 配置排行榜 {#configuring-leaderboard}
 
-选择已放置的 `Leaderboard` 组件，以便您能够访问和选择 `Configure` 图标打开“编辑”对话框。
+选择放置的`Leaderboard`组件，以便您可以访问并选择用于打开“编辑”对话框的`Configure`图标。
 
-![configure-new](assets/configure-new.png)
+![配置 — 新](assets/configure-new.png)
 
 ![configure-leaderboard](assets/configure-leaderboard.png)
 
 #### “设置”选项卡 {#settings-tab}
 
-在 **[!UICONTROL 设置]** 选项卡，指定与显示的成员相关的信息：
+在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡下，指定显示与成员相关的信息：
 
 * **显示名称**
 
   为展示板显示的描述性名称，反映为显示徽章和分数而选择的规则。
-默认为 `Leaderboard` 如果未输入任何内容。
+如果未输入任何内容，则默认值为`Leaderboard`。
 
 * **徽章**
 
@@ -78,7 +78,7 @@ ht-degree: 2%
 
 #### “规则”选项卡 {#rules-tab}
 
-在 **规则** 选项卡、社区站点及其评分和标记规则
+在&#x200B;**规则**&#x200B;选项卡下，社区站点及其评分和徽章规则
 
 * **规则位置**
 
@@ -145,6 +145,6 @@ ht-degree: 2%
 
 ### 附加信息 {#additional-information}
 
-欲知更多信息，请访问 [排行榜要点](/help/communities/leaderboard.md) 适用于开发人员的页面。
+更多信息可在面向开发人员的[排行榜要点](/help/communities/leaderboard.md)页面上找到。
 
-有关创建规则的说明，请参见 [社区评分和徽章](/help/communities/implementing-scoring.md) 页面。
+有关创建规则的说明，请参见[社区评分和徽章](/help/communities/implementing-scoring.md)页面，以供管理员使用。

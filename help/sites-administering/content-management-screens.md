@@ -1,6 +1,6 @@
 ---
-title: 屏幕内容管理
-description: 了解屏幕内容管理的基础知识。
+title: Screens的内容管理
+description: 了解Screens的内容管理基础知识。
 contentOwner: Jyotika Syal
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
@@ -16,9 +16,9 @@ ht-degree: 1%
 
 ---
 
-# 屏幕内容管理{#content-management-for-screens}
+# Screens的内容管理{#content-management-for-screens}
 
-A ***内容管理器*** 因为AEM Screens是一位与营销紧密合作的创意专业人士，并且了解营销活动、受众和所需焦点。 内容管理员负责通过开发不同的渠道并将序列分配给定时渠道体验来创建和编排最终用户体验。
+AEM Screens的&#x200B;***内容经理***&#x200B;是一名创意专业人员，与营销部门密切合作，了解营销活动、受众和所需焦点。 内容管理员负责通过开发不同的渠道并将序列分配给定时渠道体验来创建和编排最终用户体验。
 
 Content Manager for Screens设计位置和计划，维护渠道完整性，执行分析和报告，以及维护视频配置文件。
 

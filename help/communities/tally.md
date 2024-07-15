@@ -22,15 +22,15 @@ Tally是一个抽象类，它提供了一种标准方法，用于收集成员关
 
 通过扩展抽象tally类，可创建自定义的tally组件。
 
-[点赞](essentials-liking.md) 是一种简单的计数的实现方式，表达积极的观点。
+[点赞](essentials-liking.md)是一种简单的计数的实现，它表达积极的意见。
 
-[投票](essentials-voting.md) 是一种简单形式的计数的实现，用于表达积极或消极的观点。
+[投票](essentials-voting.md)是一种简单形式的计数的实现，表示正面或负面意见。
 
-[评级](rating-basics.md) 是一种使用星形系统表示从正面到负面的一系列意见的计数的实现。
+[评级](rating-basics.md)是一种使用星型系统表示从正到负的一系列意见的计分方法。
 
 自AEM 6.1起，轮询组件不再可用。
 
-[审核](reviews-basics.md) 是一个SCF组件，它是 [评论](essentials-comments.md) 和 [评级](rating-basics.md).
+[评论](reviews-basics.md)是[评论](essentials-comments.md)和[评级](rating-basics.md)的混合的SCF组件。
 
 ## 适用于客户端的Essentials {#essentials-for-client-side}
 
@@ -38,24 +38,24 @@ Tally是一个抽象类，它提供了一种标准方法，用于收集成员关
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [标签API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [计费API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [标签端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [计数的端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 
 ### 访问已过帐的表(UGC) {#accessing-posted-tallies-ugc}
 
 UGC应使用标准审核方法之一进行审核。
-请参阅 [审核用户生成的内容](moderate-ugc.md).
+请参阅[审核用户生成的内容](moderate-ugc.md)。
 
-自AEM 6.1 Communities起，使用 [公用存储](working-with-srp.md) for UGC包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）是什么。
+截至AEM 6.1 Communities，使用用于UGC的[公用存储](working-with-srp.md)包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）如何。
 
-**UGC在存储库中的位置和格式可能会发生更改，恕不发出警告**.
+**存储库中UGC的位置和格式可能会发生更改，而不会出现警告**。
 
 请参阅：
 
-* [存储资源提供程序概述](srp.md)  — 简介和存储库使用情况概述。
-* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例。
-* [使用SRP访问UGC](accessing-ugc-with-srp.md)  — 编码准则。
-* [SocialUtils重构](socialutils.md)  — 将已弃用的实用程序方法映射到当前SRP实用程序方法。
+* [存储资源提供程序概述](srp.md) — 简介和存储库使用情况概述。
+* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用工具方法和示例。
+* [使用SRP访问UGC](accessing-ugc-with-srp.md) — 编码准则。
+* [SocialUtils重构](socialutils.md) — 将已弃用的实用工具方法映射到当前SRP实用工具方法。

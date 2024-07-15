@@ -20,9 +20,9 @@ ht-degree: 0%
 
 ## 在页面组件中包含Adobe Analytics模块 {#including-the-adobe-analytics-module-in-a-page-component}
 
-页面模板组件(例如， `head.jsp, body.jsp`)需要JSP包含才能加载ContextHub和Adobe Analytics集成(它是Cloud Service的一部分)。 全部包括加载JavaScript文件。
+页面模板组件（例如`head.jsp, body.jsp`）需要JSP include才能加载ContextHub和Adobe Analytics集成(它是Cloud Service的一部分)。 全部包括加载JavaScript文件。
 
-ContextHub条目应直接包含在 `<head>` 标记，而Cloud Service应包含在 `<head>` 并且在 `</body>` 部分；例如：
+ContextHub条目应直接包含在`<head>`标记的下方，而Cloud Service应包含在`<head>`中和`</body>`部分之前；例如：
 
 ```xml
 <head>
@@ -37,11 +37,11 @@ ContextHub条目应直接包含在 `<head>` 标记，而Cloud Service应包含�
 </body>
 ```
 
-此 `contexthub` 您插入到的脚本位于 `<head>` 元素将ContextHub功能添加到页面中。
+您在`<head>`元素之后插入的`contexthub`脚本将ContextHub功能添加到页面中。
 
-此 `cloudservices` 您在中添加的脚本 `<head>` 和 `<body>` 部分适用于添加到该页面的云服务配置。 (如果页面使用多个Cloud Service配置，则必须仅包含一次ContextHub jsp和Cloud Servicejsp。)
+您在`<head>`和`<body>`部分中添加的`cloudservices`脚本适用于添加到该页面的云服务配置。 (如果页面使用多个Cloud Service配置，则必须仅包含一次ContextHub jsp和Cloud Servicejsp。)
 
-将Adobe Analytics框架添加到页面时， `cloudservices` 脚本会生成与Adobe Analytics相关的JavaScript以及对客户端库的引用，类似于以下示例：
+将Adobe Analytics框架添加到页面时，`cloudservices`脚本会生成与Adobe Analytics相关的JavaScript和对客户端库的引用，类似于以下示例：
 
 ```xml
 <div class="sitecatalyst cloudservice">
@@ -113,35 +113,35 @@ $CQ(function(){
 
 ### sitecatalystAfterCollect事件 {#the-sitecatalystaftercollect-event}
 
-此 `cloudservices` 脚本触发 `sitecatalystAfterCollect` 事件：
+`cloudservices`脚本触发`sitecatalystAfterCollect`事件：
 
 ```
 $CQ(document).trigger("sitecatalystAfterCollect");
 ```
 
-触发此事件即表示页面跟踪已完成。 如果在此页面上执行其他跟踪操作，则应侦听此事件，而不是文档加载或文档就绪事件。 使用 `sitecatalystAfterCollect` 事件可避免冲突或其他不可预测的行为。
+触发此事件即表示页面跟踪已完成。 如果在此页面上执行其他跟踪操作，则应侦听此事件，而不是文档加载或文档就绪事件。 使用`sitecatalystAfterCollect`事件可避免冲突或其他不可预测的行为。
 
 >[!NOTE]
 >
->此 `/libs/cq/analytics/clientlibs/sitecatalyst/sitecatalyst.js` 库中包含来自Adobe Analytics的代码 `s_code.js` 文件。
+>`/libs/cq/analytics/clientlibs/sitecatalyst/sitecatalyst.js`库包含Adobe Analytics `s_code.js`文件中的代码。
 
 ## 为自定义组件实施Adobe Analytics跟踪 {#implementing-adobe-analytics-tracking-for-custom-components}
 
 启用AEM组件以与Adobe Analytics框架交互。 然后，配置您的框架，以便Adobe Analytics跟踪组件数据。
 
-在编辑框架时，与Adobe Analytics框架交互的组件会显示在Sidekick中。 将组件拖到框架中后，将显示组件属性，然后可以使用Adobe Analytics属性映射这些属性。 (请参阅 [设置基本跟踪的框架](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework).)
+在编辑框架时，与Adobe Analytics框架交互的组件会显示在Sidekick中。 将组件拖到框架中后，将显示组件属性，然后可以使用Adobe Analytics属性映射这些属性。 （请参阅[为基本跟踪设置框架](/help/sites-administering/adobeanalytics-connect.md#creating-a-adobe-analytics-framework)。）
 
-当组件具有名为的子节点时，组件可以与Adobe Analytics框架进行交互 `analytics`. 此 `analytics` 节点具有以下属性：
+当组件具有名为`analytics`的子节点时，组件可以与Adobe Analytics框架进行交互。 `analytics`节点具有以下属性：
 
 * `cq:trackevents`：标识组件公开的CQ事件。 （请参阅自定义事件。）
-* `cq:trackvars`：命名通过Adobe Analytics属性映射的CQ变量。
-* `cq:componentName`：在Sidekick中显示的组件的名称。
-* `cq:componentGroup`：Sidekick中包含组件的组。
+* `cq:trackvars`：命名使用Adobe Analytics属性映射的CQ变量。
+* `cq:componentName`：Sidekick中显示的组件的名称。
+* `cq:componentGroup`：Sidekick中包含该组件的组。
 
-组件JSP中的代码会将JavaScript添加到触发跟踪的页面，并定义跟踪的数据。 JavaScript中使用的事件名称和数据名称必须匹配 `analytics` 节点属性。
+组件JSP中的代码会将JavaScript添加到触发跟踪的页面，并定义跟踪的数据。 JavaScript中使用的事件名称和数据名称必须匹配`analytics`节点属性的相应值。
 
-* 使用data-tracking属性可在页面加载时跟踪事件数据。 (请参阅 [跟踪页面加载的自定义事件](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
-* 使用CQ_Analytics.record函数可在用户与页面功能交互时跟踪事件数据。 (请参阅 [在页面加载后跟踪自定义事件](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
+* 使用data-tracking属性可在页面加载时跟踪事件数据。 （请参阅[跟踪页面加载中的自定义事件](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load)。）
+* 使用CQ_Analytics.record函数可在用户与页面功能交互时跟踪事件数据。 （请参阅[在页面加载后跟踪自定义事件](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load)。）
 
 使用这些数据跟踪方法时，Adobe Analytics集成模块会自动执行Adobe Analytics调用，以记录事件和数据。
 
@@ -158,7 +158,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 将topnav组件复制到CQ应用程序。 此过程要求在CRXDE Lite中设置应用程序。
 
-1. 右键单击 `/libs/foundation/components/topnav` 节点，然后单击复制。
+1. 右键单击`/libs/foundation/components/topnav`节点，然后单击“复制”。
 1. 右键单击应用程序文件夹下的“组件”文件夹，然后单击“粘贴”。
 1. 单击“全部保存”。
 
@@ -196,7 +196,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
    * 值：常规
 
 1. 单击“全部保存”。
-1. 打开 `topnav.jsp` 文件。
+1. 打开`topnav.jsp`文件。
 1. 在元素中，添加以下属性：
 
    ```xml
@@ -224,7 +224,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 1. 单击“全部保存”。
 
-的内容 `topnav.jsp` 文件应如下所示：
+`topnav.jsp`文件的内容应如下所示：
 
 ```xml
 <%@page session="false"%><%--
@@ -288,7 +288,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 >[!NOTE]
 >
->通常需要从ContextHub跟踪数据。 有关使用JavaScript获取此信息的信息，请参阅 [访问ContextHub中的值](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+>通常需要从ContextHub跟踪数据。 有关使用JavaScript获取此信息的信息，请参阅[访问ContextHub中的值](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub)。
 
 #### 将跟踪组件添加到Sidekick {#adding-the-tracking-component-to-sidekick}
 
@@ -297,7 +297,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 1. 从Adobe Analytics配置中打开Adobe Analytics框架。 ([http://localhost:4502/etc/cloudservices/sitecatalyst.html](http://localhost:4502/etc/cloudservices/sitecatalyst.html))
 1. 在Sidekick上，单击“设计”按钮。
 
-   ![设计按钮具有直角正方形。](assets/chlimage_1a.png)
+   ![设计按钮，以直角正方形为特征。](assets/chlimage_1a.png)
 
 1. 在链接跟踪配置区域中，单击配置继承。
 
@@ -308,7 +308,7 @@ $CQ(document).trigger("sitecatalystAfterCollect");
 
 #### 将topnav组件添加到框架 {#adding-the-topnav-component-to-your-framework}
 
-将topnav组件拖动到Adobe Analytics框架，并将组件变量和事件映射到Adobe Analytics变量和事件。 (请参阅 [设置基本跟踪的框架](/help/sites-administering/adobeanalytics-connect.md).)
+将topnav组件拖动到Adobe Analytics框架，并将组件变量和事件映射到Adobe Analytics变量和事件。 （请参阅[为基本跟踪设置框架](/help/sites-administering/adobeanalytics-connect.md)。）
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
@@ -318,8 +318,8 @@ topnav组件现已与Adobe Analytics Framework集成。 将组件添加到页面
 
 组件可以为发送到Adobe Analytics的s.products变量生成数据。 将组件设计为s.products变量的组成部分：
 
-* 记录名为的值 `product` 特定结构的URL。
-* 公开的数据成员 `product` 值，以便可以在Adobe Analytics框架中使用Adobe Analytics变量进行映射。
+* 记录特定结构的名为`product`的值。
+* 公开`product`值的数据成员，以便它们可以与Adobe Analytics框架中的Adobe Analytics变量进行映射。
 
 Adobe Analytics s.products变量使用以下语法：
 
@@ -327,7 +327,7 @@ Adobe Analytics s.products变量使用以下语法：
 s.products="category;product;quantity;price;eventY={value}|eventZ={value};evarA={value}|evarB={value}"
 ```
 
-Adobe Analytics集成模块构建 `s.products` 变量使用 `product` AEM组件生成的值。 此 `product` AEM组件生成的JavaScript中的值是具有以下结构的值数组：
+Adobe Analytics集成模块使用AEM组件生成的`product`值构造`s.products`变量。 AEM组件生成的JavaScript中的`product`值是具有以下结构的值的数组：
 
 ```
 "product": [{
@@ -346,13 +346,13 @@ Adobe Analytics集成模块构建 `s.products` 变量使用 `product` AEM组件�
 }]
 ```
 
-当省略了数据项时 `product` 值，它将作为s.products中的空字符串发送。
+如果`product`值中省略了某个数据项，则会在s.products中将该数据项作为空字符串发送。
 
 >[!NOTE]
 >
->当没有事件与产品值相关联时，Adobe Analytics使用 `prodView` 事件。
+>当没有事件与产品值关联时，Adobe Analytics默认使用`prodView`事件。
 
-此 `analytics` 组件的节点必须使用 `cq:trackvars` 属性：
+组件的`analytics`节点必须使用`cq:trackvars`属性公开变量名称：
 
 * product.category
 * product.sku
@@ -363,7 +363,7 @@ Adobe Analytics集成模块构建 `s.products` 变量使用 `product` AEM组件�
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-电子商务模块提供了多个用于生成s.products变量数据的组件。 例如， `submitorder` 组件([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp))生成与以下示例类似的JavaScript：
+电子商务模块提供了多个用于生成s.products变量数据的组件。 例如，`submitorder`组件([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp))生成与以下示例类似的JavaScript：
 
 ```
 <script type="text/javascript">
@@ -439,6 +439,6 @@ Adobe Analytics集成模块构建 `s.products` 变量使用 `product` AEM组件�
 
 #### 限制跟踪调用的大小 {#limiting-the-size-of-tracking-calls}
 
-通常，Web浏览器会限制GET请求的大小。 由于CQ产品和SKU值是存储库路径，因此包含多个值的产品阵列可能会超过请求大小限制。 因此，组件应限制 `product` 每个的数组 `CQ_Analytics.record function`. 如果必须跟踪的项目数可能超过限制，请创建多个函数。
+通常，Web浏览器会限制GET请求的大小。 由于CQ产品和SKU值是存储库路径，因此包含多个值的产品阵列可能会超过请求大小限制。 因此，组件应限制每个`CQ_Analytics.record function`的`product`数组中的项数。 如果必须跟踪的项目数可能超过限制，请创建多个函数。
 
-例如，电子商务 `submitorder` 组件限制 `product` 个项目。 当购物车包含四个以上的产品时，将生成多个 `CQ_Analytics.record` 函数。
+例如，电子商务`submitorder`组件将调用中的`product`项数限制为4。 当购物车包含四个以上的产品时，它将生成多个`CQ_Analytics.record`功能。

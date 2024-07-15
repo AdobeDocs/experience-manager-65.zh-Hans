@@ -67,7 +67,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 其中：
 
 * `errorCausedBy` 描述失败的原因。
-* `errors` 提及未能通过验证标准的字段的限定字段名以及验证错误消息。
+* `errors`提及验证条件失败的字段的限定字段名以及验证错误消息。
 * `originCode` 字段由 AEM 添加，包含由外部服务返回的 http 状态代码。
 * `originMessage` 字段由 AEM 添加，包含由外部服务返回的原始错误数据。
 
@@ -169,9 +169,9 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 在自适应Forms中使用错误处理程序之前：
 
-* [为您的环境启用自适应Forms核心组件](enable-adaptive-forms-core-components.md).
-* 基础知识到 [创建自定义函数](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
-* 安装最新版本的 [Apache Maven](https://maven.apache.org/download.cgi).
+* [为您的环境启用自适应Forms核心组件](enable-adaptive-forms-core-components.md)。
+* [创建自定义函数](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.)的基本知识。
+* 安装[Apache Maven](https://maven.apache.org/download.cgi)的最新版本。
 
 ## 使用规则编辑器添加错误处理程序 {#add-error-handler-using-rule-editor}
 
@@ -193,7 +193,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 如果错误响应处于标准架构或服务器端验证失败，则支持默认错误处理程序以在字段上显示错误消息。
 为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)操作来使用默认错误处理程序，以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用默认错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用规则编辑器的调用服务操作添加默认错误处理程序，请执行以下步骤：
 
-1. 在创作模式下打开自适应表单，选择表单组件，然后选择 **[!UICONTROL 规则编辑器]** 以打开规则编辑器。
+1. 在创作模式下打开自适应表单，选择一个表单组件，然后选择&#x200B;**[!UICONTROL 规则编辑器]**&#x200B;以打开规则编辑器。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在规则的 **When** 部分中创建条件。例如，**在更改[宠物名称 ID 字段]**&#x200B;时，会从&#x200B;**选择状态**&#x200B;下拉列表中更改选择。
 1. 在 **Then** 部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 调用服务]**。
@@ -218,7 +218,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 除了上述操作之外，还可使用自定义错误处理程序来执行符合特定用户要求的自定义函数。
 
-自定义错误处理程序是一个函数（客户端库），旨在响应由外部服务返回的错误并向最终用户提供自定义响应。任何带注释 `@errorHandler` 的客户端库均被视为自定义错误处理程序函数。此注释有助于识别 `.js` 文件。
+自定义错误处理程序是一个函数（客户端库），旨在响应由外部服务返回的错误并向最终用户提供自定义响应。任何带注释 `@errorHandler` 的客户端库均被视为自定义错误处理程序函数。此注释有助于识别`.js`文件中指定的错误处理程序函数。
 
 为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=en#invoke)操作来创建和使用自定义错误处理程序，我们以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用自定义错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。
 
@@ -231,28 +231,28 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 要创建自定义错误函数，请执行以下步骤：
 
-1. 登录 `http://server:port/crx/de/index.jsp#`.
-1. 在 `/apps` 文件夹下创建一个文件夹。例如，创建一个名为的文件夹 `experience-league`.
+1. 登录`http://server:port/crx/de/index.jsp#`。
+1. 在 `/apps` 文件夹下创建一个文件夹。例如，创建名为`experience-league`的文件夹。
 1. 保存更改。
-1. 导航到已创建的文件夹并创建节点类型 `cq:ClientLibraryFolder` 作为 `clientlibs`.
-1. 导航到新创建的 `clientlibs` 文件夹并添加 `allowProxy` 和 `categories` 属性：
+1. 导航到已创建的文件夹，并创建类型为`cq:ClientLibraryFolder`的节点作为`clientlibs`。
+1. 导航到新创建的`clientlibs`文件夹并添加`allowProxy`和`categories`属性：
 
    ![自定义库节点属性](/help/forms/using/assets/customlibrary-properties.png)
 
    >[!NOTE]
    >
-   > 您可以提供任意名称来取代 `customfunctionsdemo`.
+   > 您可以提供任意名称来取代`customfunctionsdemo`。
 
 1. 保存更改。
 
-1. 创建名为的文件夹 `js` 在 `clientlibs` 文件夹。
-1. 创建名为的JavaScript文件 `functions.js` 在 `js` 文件夹
-1. 创建名为的文件 `js.txt` 在 `clientlibs` 文件夹。
+1. 在`clientlibs`文件夹下创建名为`js`的文件夹。
+1. 在`js`文件夹下创建名为`functions.js`的JavaScript文件
+1. 在`clientlibs`文件夹下创建名为`js.txt`的文件。
 1. 保存更改。
 创建的文件夹结构如下所示：
 
    ![创建的客户端库文件夹结构](/help/forms/using/assets/customclientlibrary_folderstructure.png)
-1. 双击 `functions.js` 文件以打开编辑器。 该文件包含自定义错误处理程序的代码。
+1. 双击`functions.js`文件以打开编辑器。 该文件包含自定义错误处理程序的代码。
 让我们将以下代码添加到该 JavaScript 文件中，以在浏览器控制台中显示从 REST 服务端点接收到的响应和标头。
 
    ```javascript
@@ -275,8 +275,8 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
    要从自定义错误处理程序调用默认错误处理程序，请使用以下示例代码行：
    `globals.invoke('defaultErrorHandler',response, headers) `
 
-1. 保存 `function.js`.
-1. 导航到 `js.txt` 并添加以下代码：
+1. 保存`function.js`。
+1. 导航到`js.txt`并添加以下代码：
 
    ```javascript
        #base=js
@@ -293,11 +293,11 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。它还提�
 
 ![在自适应表单容器配置中添加客户端库的名称](/help/forms/using/assets/client-library-category-name-core-component.png)
 
-在本例中，客户端库名称提供为 `customfunctionsdemo` 在 `.content.xml` 文件。
+在这种情况下，客户端库名称在`.content.xml`文件中提供为`customfunctionsdemo`。
 
 要通过&#x200B;**[!UICONTROL 规则编辑器的调用服务]**&#x200B;操作使用自定义错误处理程序，请执行以下操作：
 
-1. 在创作模式下打开自适应表单，选择表单组件，然后选择 **[!UICONTROL 规则编辑器]** 以打开规则编辑器。
+1. 在创作模式下打开自适应表单，选择一个表单组件，然后选择&#x200B;**[!UICONTROL 规则编辑器]**&#x200B;以打开规则编辑器。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
 1. 在规则的 **When** 部分中创建条件。例如，在更改&#x200B;**[宠物名称 ID 字段]**&#x200B;时，会从&#x200B;**选择状态**&#x200B;下拉列表&#x200B;**更改**&#x200B;选择。
 1. 在 **Then** 部分中，从&#x200B;**选择操作**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 调用服务]**。

@@ -18,11 +18,11 @@ ht-degree: 2%
 
 # 社交图要点  {#social-graph-essentials}
 
-社区成员可以关注的功能 [活动](essentials-activities.md) 并且要遵循的是通过两个组件建立的：
+社区成员关注[活动](essentials-activities.md)且被关注的能力是通过两个组件建立的：
 
-此 `following` 组件必须与其他资源相关联，并且已为中的现有Communities成员和功能建立此关联 [社区站点](overview.md#communitiessites).
+`following`组件必须与其他资源关联，而且此关联已针对[社区站点](overview.md#communitiessites)中的现有社区成员和功能建立。
 
-此 `following` 组件列出位于当前成员后面或位于当前成员后面的成员。 成员之间关系的社交图包含在为社区站点建立的用户配置文件中。
+`following`组件列出位于当前成员后面或位于当前成员后面的成员。 成员之间关系的社交图包含在为社区站点建立的用户配置文件中。
 
 ## 适用于客户端的Essentials {#essentials-for-client-side}
 
@@ -52,20 +52,20 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong> 属性</strong></td>
-   <td>请参阅 <a href="socialgraph.md">使用社交图</a></td>
+   <td>查看<a href="socialgraph.md">使用社交图</a></td>
   </tr>
   <tr>
-   <td><strong> 可选<br /> 属性</strong></td>
+   <td><strong> 可选<br />属性</strong></td>
    <td>
     <ul>
      <li>名称: <strong><code>outgoing</code></strong></li>
      <li>类型：布尔值</li>
-     <li>值：<br />
+     <li>值： <br />
       <ul>
-       <li><i>True </i>- <code>following</code> 组件列出已登录的成员 <code>follows</code></li>
-       <li><i>假 </i>- <code>following</code> 组件列出了满足以下条件的成员 <code>follow </code>已登录的成员</li>
+       <li><i>True </i>- <code>following</code>组件列出了登录成员 <code>follows</code></li>
+       <li><i>False </i>- <code>following</code>组件列出了<code>follow </code>登录成员的成员</li>
       </ul> </li>
-    </ul> <p>默认为 <i>true</i> 如果属性缺失。 无法在“创作”模式下使用“编辑”对话框设置此属性。 必须将属性添加到的实例 <code>following</code> 节点，使用 <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>如果缺少属性，则默认为<i>true</i>。 无法在“创作”模式下使用“编辑”对话框设置此属性。 必须使用<a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>将该属性添加到<code>following</code>节点的实例中。</p> </td>
   </tr>
  </tbody>
 </table>

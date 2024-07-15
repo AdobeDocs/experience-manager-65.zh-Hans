@@ -27,25 +27,25 @@ ht-degree: 0%
 * Adobe Experience Manager
 * Adobe Campaign 6.1
 
-请参阅 [将AEM与Adobe Campaign 6.1集成](/help/sites-administering/campaignonpremise.md) 以了解更多信息。
+有关详细信息，请参阅[将AEM与Adobe Campaign 6.1集成](/help/sites-administering/campaignonpremise.md)。
 
 ## 示例1：从AEM到Adobe Campaign {#example-aem-to-adobe-campaign}
 
-AEM和Campaign之间的标准集成基于JSON和JSSP (JavaScript Server Page)。 这些JSSP文件可以在Campaign控制台中找到，并且所有文件的开头都为 **aec** (Adobe Experience Cloud)。
+AEM和Campaign之间的标准集成基于JSON和JSSP (JavaScript Server Page)。 这些JSSP文件可在Campaign控制台中找到，且全部以&#x200B;**aec** (Adobe Experience Cloud)开头。
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
->[对于此示例，请参阅Geometrixx](/help/sites-developing/we-retail.md)，该页面可从包共享中获取。
+>[对于此示例，请参阅“包共享”中提供的Geometrixx](/help/sites-developing/we-retail.md)。
 
 在此示例中，创建了新的自定义JSSP文件，并从AEM端调用该文件以检索结果。 例如，它可用于从Adobe Campaign中检索数据，或将数据保存到Adobe Campaign中。
 
-1. 在Adobe Campaign中，要创建JSSP文件，请单击 **新建** 图标。
+1. 在Adobe Campaign中，要创建JSSP文件，请单击&#x200B;**新建**&#x200B;图标。
 
-   ![“新建”图标，如左上角附近带有星号的页面所指示。](do-not-localize/chlimage_1-4a.png)
+   ![左上角附近带有星号的页面所指示的“新建”图标。](do-not-localize/chlimage_1-4a.png)
 
-1. 输入此JSSP文件的名称。 在此示例中， **cus：custom.jssp** 使用(表示它位于 **cus** 命名空间)。
+1. 输入此JSSP文件的名称。 在此示例中，使用了&#x200B;**cus：custom.jssp**（这意味着它位于&#x200B;**cus**&#x200B;命名空间中）。
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -62,9 +62,9 @@ AEM和Campaign之间的标准集成基于JSON和JSSP (JavaScript Server Page)。
 1. 在AEM端创建一个简单的servlet，以便调用此JSSP。 在此示例中，您可以假设以下情况：
 
    * 您在AEM和Campaign之间建立了连接
-   * campaign云服务配置于 **/content/geometrixx-outdoors**
+   * 已在&#x200B;**/content/geometrixx-outdoors**&#x200B;上配置Campaign云服务
 
-   此示例中最重要的对象是 **GenericCampaignConnector**，用于在Adobe Campaign端调用（获取和发布）jssp文件。
+   此示例中最重要的对象是&#x200B;**GenericCampaignConnector**，它允许您在Adobe Campaign端调用（获取和发布）jssp文件。
 
    以下是一个小的代码片段：
 
@@ -169,7 +169,7 @@ AEM提供现成的API，用于检索可在siteadmin资源管理器视图中任�
 
 >[!NOTE]
 >
->[对于此示例，请参阅Geometrixx](/help/sites-developing/we-retail.md)，该页面可从包共享中获取。
+>[对于此示例，请参阅“包共享”中提供的Geometrixx](/help/sites-developing/we-retail.md)。
 
 对于资源管理器中的每个节点，都有一个API链接到该节点。 例如，对于节点：
 
@@ -179,13 +179,13 @@ API是：
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-URL的结尾 **.1.json** 可替换为 **.2.json**， **.3.json**，根据您感兴趣的子级别数量而定。 要获得所有关键字， **无限** 可用于：
+URL **.1.json**&#x200B;的末尾可以替换为&#x200B;**.2.json**、**.3.json**（根据您感兴趣的子级别数）。 若要获取所有关键字，可以使用&#x200B;**infinity**：
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 为使用API，AEM默认使用基本身份验证。
 
-名为的JS库 **amcIntegration.js** 在6.1.1（内部版本8624及更高版本）中提供，它会在多个其他版本中实施该逻辑。
+名为&#x200B;**amcIntegration.js**&#x200B;的JS库在6.1.1（内部版本8624及更高版本）中可用，该库在其他多个库中实现该逻辑。
 
 ### AEM API调用 {#aem-api-call}
 

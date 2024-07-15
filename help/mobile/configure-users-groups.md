@@ -51,13 +51,13 @@ ht-degree: 0%
 
    将应用程序作者添加到“作者”组
 
-1. 现在您已经创建了应用程序作者用户组，接下来可以通过 [用户Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. 现在您已创建应用程序作者用户组，可以通过[用户Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md)将个别团队成员添加到此新组。
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
    编辑用户组
 
-1. 导航至 [权限控制台](http://localhost:4502/useradmin) 并添加权限以管理cloudservices
+1. 导航到[权限控制台](http://localhost:4502/useradmin)并添加权限以管理cloudservices
 
    * /etc/cloudservices上的（读取）
 
@@ -67,7 +67,7 @@ ht-degree: 0%
 
 ### AEM Mobile应用程序管理员组（app-admins组） {#aem-mobile-application-administrators-group-app-admins-group}
 
-app-admins组的成员可以使用与应用程序作者相同的权限来创作应用程序内容 **和** 此外，还负责：
+应用程序管理员组的成员可以使用与应用程序作者&#x200B;**和**&#x200B;相同的权限创作应用程序内容，此外，他们还负责：
 
 * 在AEM中配置PhoneGap Build和AdobeMobile Services云服务
 * 暂存、发布和清除应用程序内容同步OTA更新
@@ -88,7 +88,7 @@ app-admins组的成员可以使用与应用程序作者相同的权限来创作�
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. 导航至 [权限控制台](http://localhost:4502/useradmin) 并添加权限以管理cloudservices
+1. 导航到[权限控制台](http://localhost:4502/useradmin)并添加权限以管理cloudservices
 
    * （读取、修改、创建、删除、复制）
    * （读取、修改、创建、删除、复制）
@@ -114,14 +114,14 @@ app-admins组的成员可以使用与应用程序作者相同的权限来创作�
 
 仪表板磁贴可能会根据用户拥有的权限公开不同的操作。 下面描述了每个图块可用的操作。
 
-除了这些权限之外，还可以根据当前应用程序的配置方式显示/隐藏操作。 例如，如果尚未将PhoneGap云配置分配给应用程序，则没有必要公开“远程构建”操作。 下面列出了&#39;**配置条件**&#39;节。
+除了这些权限之外，还可以根据当前应用程序的配置方式显示/隐藏操作。 例如，如果尚未将PhoneGap云配置分配给应用程序，则没有必要公开“远程构建”操作。 下面的“**配置条件**”部分列出了这些条件。
 
 ### 管理应用程序磁贴 {#manage-app-tile}
 
 图块当前没有需要权限的操作，但应用程序的详细信息页面具有以下操作：
 
-* *编辑* 对于app-author和app-admin （UI触发器 — jcr：write - on /content/phonegap/）{suffix})
-* *下载* 对于app-author和app-admin (UI Trigger - on /content/phonegap/{suffix})
+* 为app-author和app-admin *编辑* （UI触发器 — jcr：write - on /content/phonegap/{suffix}）
+* *下载app-author和app-admin的* （UI触发器 — 位于/content/phonegap/{suffix}）
 
 下图显示了应用程序的“下载”和“编辑”选项：
 

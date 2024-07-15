@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Assets] 大小调整指南”'
-description: 确定高效指标以评估部署所需的基础架构和资源的最佳实践 [!DNL Adobe Experience Manager Assets].
+title: "[!DNL Assets]大小调整指南"
+description: 确定有效量度以估计部署 [!DNL Adobe Experience Manager Assets]所需的基础结构和资源的最佳实践。
 contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
@@ -13,30 +13,30 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Assets] 大小调整指南 {#assets-sizing-guide}
+# [!DNL Assets]大小调整指南 {#assets-sizing-guide}
 
-调整环境大小时 [!DNL Adobe Experience Manager Assets] 实现，确保磁盘、CPU、内存、IO和网络吞吐量方面有足够的可用资源非常重要。 调整其中许多资源的大小需要了解有多少资源正在加载到系统中。 如果没有更好的量度，您可以将现有库的大小除以库的存留期，以找出创建资产的速率。
+在调整[!DNL Adobe Experience Manager Assets]实施的环境大小时，必须确保有足够的可用资源，如磁盘、CPU、内存、IO和网络吞吐量。 调整其中许多资源的大小需要了解有多少资源正在加载到系统中。 如果没有更好的量度，您可以将现有库的大小除以库的存留期，以找出创建资产的速率。
 
 ## 磁盘 {#disk}
 
 ### 数据存储 {#datastore}
 
-调整所需的磁盘空间大小时出现的一个常见错误 [!DNL Assets] 实施是根据要摄取到系统中的原始图像的大小进行计算。 默认情况下， [!DNL Experience Manager] 除了原始图像之外，还创建三个演绎版以用于渲染 [!DNL Experience Manager] 用户界面元素。 在以前的实施中，已观察到这些演绎版假定的资源大小是摄取资源大小的两倍。
+在调整[!DNL Assets]实施的所需磁盘空间时经常会犯一个错误，即计算时基于要摄取到系统中的原始映像的大小。 默认情况下，[!DNL Experience Manager]除了原始图像之外，还将创建三个演绎版，以用于演绎版[!DNL Experience Manager]用户界面元素。 在以前的实施中，已观察到这些演绎版假定的资源大小是摄取资源大小的两倍。
 
-除了开箱即用的呈现版本之外，大多数用户还会定义自定义呈现版本。 除了演绎版， [!DNL Assets] 允许您从常见文件类型中提取子资产，例如 [!DNL Adobe InDesign] 和 [!DNL Adobe Illustrator].
+除了开箱即用的呈现版本之外，大多数用户还会定义自定义呈现版本。 除了演绎版之外，[!DNL Assets]还允许您从常见文件类型（如[!DNL Adobe InDesign]和[!DNL Adobe Illustrator]）中提取子资产。
 
-最后，的版本控制功能 [!DNL Experience Manager] 在版本历史记录中存储资产的重复项。 您可以配置要经常清除的版本。 但是，许多用户选择将版本保留在系统中很长时间，这会占用额外的存储空间。
+最后，[!DNL Experience Manager]的版本控制功能会在版本历史记录中存储资源的重复项。 您可以配置要经常清除的版本。 但是，许多用户选择将版本保留在系统中很长时间，这会占用额外的存储空间。
 
 考虑到这些因素，您需要一种方法来计算存储用户资产所需的存储空间，此存储空间精确到可以接受的程度。
 
 1. 确定加载到系统中的资源的大小和数量。
-1. 获取要上传到的资源的代表性示例 [!DNL Experience Manager]. 例如，如果您计划将PSD、JPG、AI和PDF文件加载到系统中，则需要每种文件格式的多个示例图像。 此外，这些示例应该能够代表不同的文件大小和图像的复杂性。
+1. 获取要上传到[!DNL Experience Manager]中的具有代表性的资源示例。 例如，如果您计划将PSD、JPG、AI和PDF文件加载到系统中，则需要每种文件格式的多个示例图像。 此外，这些示例应该能够代表不同的文件大小和图像的复杂性。
 1. 定义要使用的演绎版。
-1. 在中创建节目 [!DNL Experience Manager] 使用 [!DNL ImageMagick] 或 [!DNL Adobe Creative Cloud] 应用程序。 除了用户指定的呈现版本之外，还应创建现成的呈现版本。 对于实施Dynamic Media的用户，可以使用IC二进制文件生成要存储在Experience Manager中的PTIFF演绎版。
+1. 使用[!DNL ImageMagick]或[!DNL Adobe Creative Cloud]应用程序在[!DNL Experience Manager]中创建演绎版。 除了用户指定的呈现版本之外，还应创建现成的呈现版本。 对于实施Dynamic Media的用户，可以使用IC二进制文件生成要存储在Experience Manager中的PTIFF演绎版。
 1. 如果您计划使用子资产，请为相应的文件类型生成它们。
 1. 比较输出图像、演绎版和子资源与原始图像的大小。 它允许您在系统加载时生成预期的增长因子。 例如，如果在处理1 GB的资源后生成大小合计为3 GB的演绎版和子资源，则演绎版增长因子为3。
 1. 确定在系统中维护资源版本的最长时间。
-1. 确定在系统中修改现有资产的频率。 如果 [!DNL Experience Manager] 用作创意工作流的协作中心，更改量很大。 如果仅将完成的资产上传到系统，则此数字会低得多。
+1. 确定在系统中修改现有资产的频率。 如果将[!DNL Experience Manager]用作创意工作流的协作中心，则更改量会很大。 如果仅将完成的资产上传到系统，则此数字会低得多。
 1. 确定每月加载到系统中的资产数量。 如果您不确定，请确定当前可用的资产数量，然后将该数量除以最早资产的年限来计算大约数量。
 
 执行上述步骤可帮助您确定以下内容：
@@ -49,7 +49,7 @@ ht-degree: 0%
 * 每月加载的新资源数。
 * 存储空间分配的多年增长。
 
-您可以在网络大小调整电子表格中指定这些数字，以确定数据存储所需的总空间。 此外，它还是确定在中维护资产版本或修改资产的影响的有用工具 [!DNL Experience Manager] 磁盘增长。
+您可以在网络大小调整电子表格中指定这些数字，以确定数据存储所需的总空间。 此外，它还是确定在[!DNL Experience Manager]中维护资产版本或修改资产对磁盘增长的影响的有用工具。
 
 该工具中填充的示例数据说明了执行上述步骤的重要性。 如果您仅根据正在加载的原始图像调整数据存储的大小(1 TB)，则可能会将存储库大小低估了15倍。
 
@@ -104,24 +104,24 @@ S3实施中的延迟由后台写入线程引入。 备份过程必须考虑这�
 
 ## 网络 {#network}
 
-[!DNL Assets] 有几个使用案例使网络性能比我们的许多产品更重要 [!DNL Experience Manager] 项目。 客户可以拥有快速服务器，但如果网络连接不够大，不足以支持从系统上传和下载资产的用户的负载，则服务器速度仍会显得缓慢。 有一种很有效的方法来确定用户与的网络连接中的阻塞点 [!DNL Experience Manager] 在 [用户体验、实例大小调整、工作流评估和网络拓扑的资源注意事项](/help/assets/assets-network-considerations.md).
+[!DNL Assets]有多个使用案例，使得网络性能比我们的[!DNL Experience Manager]项目中的许多项目更重要。 客户可以拥有快速服务器，但如果网络连接不够大，不足以支持从系统上传和下载资产的用户的负载，则服务器速度仍会显得缓慢。 在用户与[!DNL Experience Manager]的网络连接中，在[Assets考虑用户体验、实例大小调整、工作流评估和网络拓扑](/help/assets/assets-network-considerations.md)时，有一个确定阻塞点的好方法。
 
 ## 限制 {#limitations}
 
-在调整实施规模时，请务必牢记系统限制。 如果建议的实施超出这些限制，则采用创意策略，例如跨多个分区资产 [!DNL Assets] 实施。
+在调整实施规模时，请务必牢记系统限制。 如果建议的实施超出这些限制，则采用创意策略，例如跨多个[!DNL Assets]实施对资产进行分区。
 
-文件大小不是导致内存不足(OOM)问题的唯一因素。 它还取决于图像的尺寸。 通过在启动时提供更大的栈大小可避免OOM问题 [!DNL Experience Manager].
+文件大小不是导致内存不足(OOM)问题的唯一因素。 它还取决于图像的尺寸。 启动[!DNL Experience Manager]时，通过提供更大的栈大小可避免OOM问题。
 
-此外，您还可以编辑的阈值大小属性 `com.day.cq.dam.commons.handler.StandardImageHandler` 组件来使用大于零的中间临时文件。
+此外，您还可以在Configuration Manager中编辑`com.day.cq.dam.commons.handler.StandardImageHandler`组件的阈值大小属性以使用大于零的中间临时文件。
 
 ## 最大资源数 {#maximum-number-of-assets}
 
 由于文件系统限制，数据存储中可以存在的文件数限制可能为21亿。 存储库可能会在达到数据存储限制之前很长时间由于节点过多而遇到问题。
 
-如果格式副本的生成不正确，请使用Camera Raw的库。 但是，在这种情况下，图像的最长边不应大于65000像素。 此外，图像不应包含超过512 MP （512 x 1024 x 1024像素）。 资产规模并不重要。
+如果格式副本的生成不正确，请使用Camera Raw库。 但是，在这种情况下，图像的最长边不应大于65000像素。 此外，图像不应包含超过512 MP （512 x 1024 x 1024像素）。 资产规模并不重要。
 
-很难准确估计使用的特定栈支持的现成TIFF文件的大小 [!DNL Experience Manager] 因为其他因素（如像素大小）会影响处理。 有可能 [!DNL Experience Manager] 可以立即处理大小为255 MB的文件，但不能处理大小为18 MB的文件，因为后者的像素数异常高于前者。
+由于其他因素（如像素大小）会影响处理，因此很难准确地估计使用特定栈为[!DNL Experience Manager]现成支持的TIFF文件的大小。 [!DNL Experience Manager]可以处理现成255 MB的文件，但无法处理18 MB的文件，因为后者包含的像素数异常高于前者。
 
 ## 资源大小 {#size-of-assets}
 
-默认情况下， [!DNL Experience Manager] 允许您上传文件大小最大为2 GB的资产。 在中上传非常大的资产 [!DNL Experience Manager]，请参见 [用于上传超大资产的配置](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+默认情况下，[!DNL Experience Manager]允许您上传文件大小最大为2 GB的资产。 要在[!DNL Experience Manager]中上传非常大的资产，请参阅[配置以上传非常大的资产](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb)。

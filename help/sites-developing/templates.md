@@ -21,9 +21,9 @@ ht-degree: 0%
 
 模板在AEM中的各个时间点使用：
 
-* [创建页面时，您可以选择模板](#templates-pages). 此模板用作新页面的基础。 模板定义页面的结构、任何初始内容以及 [组件](/help/sites-authoring/default-components.md) 可以使用的属性（设计属性）。
+* [创建页面时，请选择模板](#templates-pages)。 此模板用作新页面的基础。 模板定义了页面的结构、任何初始内容以及可用的[组件](/help/sites-authoring/default-components.md)（设计属性）。
 
-* [在创建内容片段时，您还可以选择模板](#templates-content-fragments). 此模板定义结构、初始元素和变体。
+* [在创建内容片段时，您还应选择模板](#templates-content-fragments)。 此模板定义结构、初始元素和变体。
 
 以下模板将详细介绍：
 
@@ -38,7 +38,7 @@ AEM现在提供了两种用于创建页面的基本模板类型：
 
 >[!NOTE]
 >
->将模板用于 [创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)，则没有可见差异（对于页面作者），也未指示所使用的模板类型。
+>使用模板来[创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)时，没有可见差异（对页面作者而言），也未指示所使用的模板类型。
 
 ### 可编辑模板 {#editable-templates}
 
@@ -46,7 +46,7 @@ AEM现在提供了两种用于创建页面的基本模板类型：
 
 可编辑模板的优势：
 
-* 可以是 [已创建](/help/sites-authoring/templates.md#creating-a-new-template-template-author) 和 [已编辑](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) 你的作者写的。
+* 可以由您的作者[创建](/help/sites-authoring/templates.md#creating-a-new-template-template-author)和[编辑](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)。
 
 * 引入后，您可以为使用该模板创建的任何页面定义以下内容：
 
@@ -56,12 +56,12 @@ AEM现在提供了两种用于创建页面的基本模板类型：
 
 * 创建新页面后，页面和模板之间会保持动态连接。 此连接意味着对模板结构的更改会反映在使用该模板创建的任何页面上；对初始内容的更改不会反映在页面上。
 * 使用内容策略（从模板编辑器编辑）来保留设计属性（不使用页面编辑器中的设计模式）。
-* 存储在 `/conf`
-* 请参阅 [可编辑的模板](/help/sites-developing/page-templates-editable.md) 以了解详细信息。
+* 存储在`/conf`下
+* 有关详细信息，请参阅[可编辑模板](/help/sites-developing/page-templates-editable.md)。
 
 >[!NOTE]
 >
->请参阅 [使用可编辑页面模板开发Experience Manager站点](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html).
+>请参阅[使用可编辑的页面模板开发Experience Manager站点](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)。
 
 ### 静态模板 {#static-templates}
 
@@ -71,59 +71,59 @@ AEM现在提供了两种用于创建页面的基本模板类型：
 * AEM的原始模板系统已经有许多版本可用。
 * 静态模板是指与要创建页面具有相同结构，但没有任何实际内容的节点的层次结构。
 * 创建页面时复制了此变量，此后不存在动态连接。
-* 用途 [设计模式](/help/sites-authoring/default-components-designmode.md) 以保留设计属性。
-* 存储在 `/apps`
-* 请参阅 [静态模板](/help/sites-developing/page-templates-static.md) 以了解详细信息。
+* 使用[设计模式](/help/sites-authoring/default-components-designmode.md)保存设计属性。
+* 存储在`/apps`下
+* 有关详细信息，请参阅[静态模板](/help/sites-developing/page-templates-static.md)。
 
 >[!NOTE]
 >
 >从AEM 6.5开始，使用静态模板不被视为最佳实践。 请改用可编辑的模板。
 >
->[AEM现代化](modernization-tools.md) 工具可以帮助您从静态模板迁移到可编辑模板。
+>[AEM现代化](modernization-tools.md)工具可以帮助您从静态模板迁移到可编辑模板。
 
 ### 模板可用性 {#template-availability}
 
 >[!CAUTION]
 >
->AEM提供了多个属性来控制下允许的模板 **站点**. 但是，将它们组合在一起可能会导致难以跟踪和管理的复杂规则。
+>AEM提供了多个属性以控制&#x200B;**站点**&#x200B;下允许的模板。 但是，将它们组合在一起可能会导致难以跟踪和管理的复杂规则。
 >
 >因此，Adobe建议您从定义以下内容开始：
 >
->* 仅 `cq:allowedTemplates` 属性
+>* 仅`cq:allowedTemplates`属性
 >
 >* 仅在站点根目录上
 >
 >有关示例，请参阅We.Retail： `/content/we-retail/jcr:content`
 >
->属性 `allowedPaths`， `allowedParents`、和 `allowedChildren` 还可以放置在模板上以定义更复杂的规则。 但是，如果可能，它是 *很多* 更简单以进一步定义 `cq:allowedTemplates` 属性。
+>属性`allowedPaths`、`allowedParents`和`allowedChildren`也可以放在模板上以定义更复杂的规则。 但是，如果可能的话，如果需要进一步限制允许的模板，在网站的子区域上定义其他`cq:allowedTemplates`属性会更简单&#x200B;*许多*。
 >
->另一个优势是 `cq:allowedTemplates` 作者可以在以下位置更新属性 **高级** 选项卡 **页面属性**. 无法使用（标准）UI更新其他模板属性，因此需要开发人员维护规则和每次更改的代码部署。
+>另一个优势是作者可以在&#x200B;**页面属性**&#x200B;的&#x200B;**高级**&#x200B;选项卡中更新`cq:allowedTemplates`属性。 无法使用（标准）UI更新其他模板属性，因此需要开发人员维护规则和每次更改的代码部署。
 
 在站点管理界面中创建页面时，可用模板的列表取决于新页面的位置以及在每个模板中指定的版面限制。
 
-以下属性确定模板是否 `T` 用于作为页面的子项放置的新页面 `P`. 以下每个属性都是一个多值字符串，其中包含零个或多个用于与路径匹配的正则表达式：
+以下属性确定模板`T`是否用于要作为页面`P`的子页面放置的新页面。 以下每个属性都是一个多值字符串，其中包含零个或多个用于与路径匹配的正则表达式：
 
-* 此 `cq:allowedTemplates` 的属性 `jcr:content` 子节点 `P` 或祖先 `P`.
+* `P`的`jcr:content`子节点或`P`的上级的`cq:allowedTemplates`属性。
 
-* 此 `allowedPaths` 属性 `T`.
+* `T`的`allowedPaths`属性。
 
-* 此 `allowedParents` 属性 `T`.
+* `T`的`allowedParents`属性。
 
-* 此 `allowedChildren` 模板的属性 `P`.
+* `P`模板的`allowedChildren`属性。
 
 评估工作如下：
 
-* 第一个非空 `cq:allowedTemplates` 在页面层次结构中以开始升序时发现属性 `P` 的路径匹配 `T`. 如果没有任何值匹配， `T` 被拒绝。
+* 以`P`开头的页面层次结构升序时找到的第一个非空`cq:allowedTemplates`属性与`T`的路径匹配。 如果没有任何匹配的值，则会拒绝`T`。
 
-* 如果 `T` 具有非空 `allowedPaths` 属性，但没有值匹配路径 `P`， `T` 被拒绝。
+* 如果`T`具有非空的`allowedPaths`属性，但没有值与`P`的路径匹配，则`T`被拒绝。
 
-* 如果以上属性为空或不存在， `T` 被拒绝，除非它属于与相同的应用程序 `P`. `T` 属于与相同的应用程序 `P` 当且仅当第二级路径的名称 `T` 与的路径的第二级名称相同 `P`. 例如，模板 `/apps/geometrixx/templates/foo` 属于与页面相同的应用程序 `/content/geometrixx`.
+* 如果上述两个属性都为空或不存在，`T`将被拒绝，除非它与`P`属于同一应用程序。 当且仅当`T`路径的第二级名称与`P`路径的第二级名称相同时，`T`与`P`属于同一应用程序。 例如，模板`/apps/geometrixx/templates/foo`与页面`/content/geometrixx`属于同一应用程序。
 
-* 如果 `T` 具有非空 `allowedParents` 属性，但没有值匹配路径 `P`， `T` 被拒绝。
+* 如果`T`具有非空的`allowedParents`属性，但没有值与`P`的路径匹配，则`T`被拒绝。
 
-* 如果模板 `P` 具有非空 `allowedChildren` 属性，但没有值匹配路径 `T`， `T` 被拒绝。
+* 如果`P`的模板具有非空的`allowedChildren`属性，但没有值与`T`的路径匹配，则`T`被拒绝。
 
-* 在所有其他情况下， `T` 允许。
+* 在所有其他情况下，允许`T`。
 
 下图描述了模板评估流程：
 
@@ -131,12 +131,12 @@ AEM现在提供了两种用于创建页面的基本模板类型：
 
 #### 限制子页面中使用的模板 {#limiting-templates-used-in-child-pages}
 
-要限制哪些模板可用于在给定页面下创建子页面，请使用 `cq:allowedTemplates` 属性 `jcr:content` 页面的节点，用于指定允许作为子页面的模板列表。 列表中的每个值都必须是允许的子页面模板的绝对路径，例如， `/apps/geometrixx/templates/contentpage`.
+要限制哪些模板可用于在给定页面下创建子页面，请使用页面`jcr:content`节点的`cq:allowedTemplates`属性指定允许作为子页面的模板列表。 列表中的每个值都必须是允许的子页面的模板的绝对路径，例如`/apps/geometrixx/templates/contentpage`。
 
-您可以使用 `cq:allowedTemplates` 模板的属性  `jcr:content` 节点，用于将此配置应用于使用此模板的所有新创建的页面。
+您可以在模板的`jcr:content`节点上使用`cq:allowedTemplates`属性，将此配置应用于使用此模板的所有新创建的页面。
 
-例如，如果要添加更多关于模板层次结构的约束，可以使用 `allowedParents/allowedChildren` 属性。 然后，您可以明确指定从模板T创建的页面必须是从模板T创建的页面的父项/子项。
+如果要添加更多约束（例如，关于模板层次结构），可以在模板上使用`allowedParents/allowedChildren`属性。 然后，您可以明确指定从模板T创建的页面必须是从模板T创建的页面的父项/子项。
 
 ## 模板 — 内容片段 {#templates-content-fragments}
 
-请参阅 [内容片段模板](/help/sites-developing/content-fragment-templates.md).
+请参阅[内容片段模板](/help/sites-developing/content-fragment-templates.md)。

@@ -21,70 +21,70 @@ ht-degree: 9%
 
 AEM会向符合以下条件的用户发送电子邮件通知：
 
-* 已订阅页面事件，例如，修改或复制。 此 [通知收件箱](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) 部分介绍了如何订阅此类事件。
+* 已订阅页面事件，例如，修改或复制。 [通知收件箱](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications)部分介绍了如何订阅此类事件。
 
 * 已订阅论坛活动。
-* 必须在工作流中执行步骤。 此 [参与者步骤](/help/sites-developing/workflows-step-ref.md#participant-step) 部分介绍如何在工作流中触发电子邮件通知。
+* 必须在工作流中执行步骤。 [参与者步骤](/help/sites-developing/workflows-step-ref.md#participant-step)部分介绍了如何在工作流中触发电子邮件通知。
 
 先决条件：
 
 * 用户需要在其个人资料中定义有效的电子邮件地址。
-* 此 **Day CQ邮件服务** 需要正确配置。
+* 需要正确配置&#x200B;**天CQ邮件服务**。
 
 当用户收到通知时，将收到其用户档案中定义的语言版本的电子邮件。 每种语言都有其自己的可自定义的模板。 可以为新语言添加新电子邮件模板。
 
 >[!NOTE]
 >
->使用AEM时，可通过多种方法管理此类服务的配置设置；请参阅 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以了解更多详细信息和建议的做法。
+>使用AEM时，可通过多种方法管理此类服务的配置设置；请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md)以了解更多详细信息和建议的做法。
 
 ## 配置邮件服务 {#configuring-the-mail-service}
 
-要使AEM能够发送电子邮件，请 **Day CQ邮件服务** 需要正确配置。 您可以在Web控制台中查看配置。 使用AEM时，可通过多种方法管理此类服务的配置设置；请参阅 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以了解更多详细信息和建议的做法。
+为了使AEM能够发送电子邮件，需要正确配置&#x200B;**Day CQ邮件服务**。 您可以在Web控制台中查看配置。 使用AEM时，可通过多种方法管理此类服务的配置设置；请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md)以了解更多详细信息和建议的做法。
 
 以下约束适用：
 
-* 此 **SMTP服务器端口** 必须为25或更高。
+* **SMTP服务器端口**&#x200B;必须为25或更高。
 
-* 此 **SMTP服务器主机名** 不得为空。
-* 此 **“发件人”地址** 不得为空。
+* **SMTP服务器主机名**&#x200B;不能为空。
+* **“发件人”地址**&#x200B;不能为空。
 
-为了帮助您调试的问题， **Day CQ邮件服务**，您可以查看服务的日志：
+为了帮助您调试&#x200B;**Day CQ邮件服务**&#x200B;的问题，您可以查看该服务的日志：
 
 `com.day.cq.mailer.DefaultMailService`
 
 该配置在Web控制台中如下所示：
 
-![Day CQ邮件服务OSGi配置窗口](assets/chlimage_1-276.png)
+![Day CQ Mail Service OSGi配置窗口](assets/chlimage_1-276.png)
 
 ## 配置电子邮件通知渠道 {#configuring-the-email-notification-channel}
 
-当您订阅页面或论坛事件通知时，发件人电子邮件地址设置为 `no-reply@acme.com` 默认。 您可以通过配置 **通知电子邮件渠道** Web控制台中的服务。
+当您订阅页面或论坛事件通知时，发件人电子邮件地址默认设置为`no-reply@acme.com`。 您可以通过在Web控制台中配置&#x200B;**通知电子邮件渠道**&#x200B;服务来更改此值。
 
-要配置发件人电子邮件地址，请添加 `sling:OsgiConfig` 节点到存储库。 使用以下过程使用CRXDE Lite直接添加节点：
+要配置发件人电子邮件地址，请向存储库添加一个`sling:OsgiConfig`节点。 使用以下过程使用CRXDE Lite直接添加节点：
 
-1. 在CRXDE Lite中，添加名为的文件夹 `config` 位于应用程序文件夹下。
+1. 在CRXDE Lite中，在应用程序文件夹下添加名为`config`的文件夹。
 1. 在配置文件夹中，添加一个名为的节点：
 
-   `com.day.cq.wcm.notification.email.impl.EmailChannel` 类型 `sling:OsgiConfig`
+   `sling:OsgiConfig`类型的`com.day.cq.wcm.notification.email.impl.EmailChannel`
 
-1. 添加 `String` 属性到指定的节点 `email.from`. 对于值，指定要使用的电子邮件地址。
+1. 将`String`属性添加到名为`email.from`的节点。 对于值，指定要使用的电子邮件地址。
 
 1. 单击&#x200B;**全部保存**。
 
 请按下列步骤在内容包源文件夹中定义节点：
 
-1. 在您的 `jcr_root/apps/*app_name*/config folder`，创建一个名为的文件 `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`
+1. 在您的`jcr_root/apps/*app_name*/config folder`中创建名为`com.day.cq.wcm.notification.email.impl.EmailChannel.xml`的文件
 
 1. 添加以下XML以表示节点：
 
    `<?xml version="1.0" encoding="UTF-8"?> <jcr:root xmlns:sling="https://sling.apache.org/jcr/sling/1.0" xmlns:jcr="https://www.jcp.org/jcr/1.0" jcr:primaryType="sling:OsgiConfig" email.from="name@server.com"/>`
-1. 替换 `email.from` 属性( `name@server.com`)。
+1. 将`email.from`属性的值(`name@server.com`)替换为您的电子邮件地址。
 
 1. 保存文件。
 
 ## 配置工作流电子邮件通知服务 {#configuring-the-workflow-email-notification-service}
 
-当您收到工作流电子邮件通知时，发件人电子邮件地址和主机URL前缀都会设置为默认值。 您可以通过配置 **Day CQ工作流电子邮件通知服务** 在Web控制台中。 如果这样做，建议将更改保留在存储库中。
+当您收到工作流电子邮件通知时，发件人电子邮件地址和主机URL前缀都会设置为默认值。 您可以通过在Web控制台中配置&#x200B;**Day CQ工作流电子邮件通知服务**&#x200B;来更改这些值。 如果这样做，建议将更改保留在存储库中。
 
 在Web控制台中，默认配置如下所示：
 
@@ -96,7 +96,7 @@ AEM会向符合以下条件的用户发送电子邮件通知：
 
 `/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
-默认英语模板( `en.txt`)的定义如下：
+默认英语模板(`en.txt`)的定义如下：
 
 ```xml
 subject=[CQ Page Event Notification]: Page Event
@@ -135,16 +135,16 @@ This is an automatically generated message. Please do not reply.
  footer=<text_4>
 ```
 
-位置 &lt;text_x> 可以是静态文本和动态字符串变量的组合。 以下变量可在电子邮件模板中用于页面通知：
+其中，&lt;text_x>可以是静态文本和动态字符串变量的组合。 以下变量可在电子邮件模板中用于页面通知：
 
-* `${time}`，表示事件的日期和时间。
+* `${time}`，事件的日期和时间。
 
 * `${userFullName}`，触发事件的用户的全名。
 
 * `${userId}`，触发事件的用户的ID。
-* `${modifications}`，采用以下格式描述页面事件的类型和页面路径：
+* `${modifications}`，以格式描述页面事件的类型和页面路径：
 
-  &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
+  &lt;页面事件类型> => &lt;页面路径>
 
   例如：
 
@@ -199,11 +199,11 @@ subject=<text_1>
 
 >[!NOTE]
 >
->位置 `<text_x>` 可以是静态文本和动态字符串变量的组合。 每行 `<text_x>` 项必须以反斜杠( `\`)，但最后一个实例除外，因为缺少反斜杠表示 `<text_x>` 字符串变量。
+>其中`<text_x>`可以是静态文本和动态字符串变量的组合。 `<text_x>`项的每一行都需要以反斜杠(`\`)结尾，但最后一个实例除外，因为缺少反斜杠表示`<text_x>`字符串变量的结尾。
 >
->有关模板格式的更多信息，请参阅 [Properties.load()的Javadocs](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-) 方法。
+>有关模板格式的详细信息，可在Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)方法的[javadocs中找到。
 
-方法 `${payload.path.open}` 显示工作项的有效负荷的路径。 例如，对于Sites中的页面，则 `payload.path.open` 将类似于 `/bin/wcmcommand?cmd=open&path=…`.；这没有服务器名称，因此模板会在它前面加上 `${host.prefix}`.
+方法`${payload.path.open}`显示工作项的有效负荷的路径。 例如，对于网站中的页面，则`payload.path.open`将类似于`/bin/wcmcommand?cmd=open&path=…`。；这没有服务器名称，因此模板会将此前面加上`${host.prefix}`。
 
 可在电子邮件模板中使用以下变量：
 
@@ -215,15 +215,15 @@ subject=<text_1>
 * `${initiator.name}`，启动器名称
 
 * `${initiator.email}`，发起人的电子邮件地址
-* `${item.id}`，工作项的id
-* `${item.node.id}`，与此工作项关联的工作流模型中的节点的ID
+* `${item.id}`，工作项的ID
+* `${item.node.id}`，与此工作项关联的工作流模型中节点的ID
 * `${item.node.title}`，工作项的标题
 * `${participant.email}`，参与者的电子邮件地址
-* `${participant.name}`，参与者的姓名
+* `${participant.name}`，参与者的名称
 * `${participant.familyName}`，参与者的姓氏
-* `${participant.id}`，参与者的id
+* `${participant.id}`，参与者的ID
 * `${participant.language}`，参与者语言
-* `${instance.id}`，工作流id
+* `${instance.id}`，工作流ID
 * `${instance.state}`，工作流状态
 * `${model.title}`，工作流模型的标题
 * `${model.id}`，工作流模型的id
@@ -239,7 +239,7 @@ subject=<text_1>
 
 要添加新语言的模板，请执行以下操作：
 
-1. 在CRXDE中，添加文件 `<language-code>.txt` 下：
+1. 在CRXDE中，添加以下文件`<language-code>.txt`：
 
    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` ：用于页面通知
    * `/libs/settings/workflow/notification/email/default` ：用于工作流通知
@@ -249,15 +249,15 @@ subject=<text_1>
 
 >[!NOTE]
 >
->此 `<language-code>` 用作电子邮件模板的文件名需要是AEM可识别的双字母小写语言代码。 对于语言代码，AEM依赖于ISO-639-1。
+>用作电子邮件模板文件名的`<language-code>`需要是AEM可识别的双字母小写语言代码。 对于语言代码，AEM依赖于ISO-639-1。
 
 ## 配置AEM Assets电子邮件通知 {#assetsconfig}
 
 在共享或取消共享AEM Assets中的收藏集时，用户可以从AEM接收电子邮件通知。 要配置电子邮件通知，请执行以下步骤。
 
-1. 配置电子邮件服务，如中所述 [配置邮件服务](/help/sites-administering/notification.md#configuring-the-mail-service).
-1. 以管理员身份登录AEM。 单击 **工具** >  **操作** >  **Web控制台** 以打开Web控制台配置。
-1. 编辑 **Day CQ DAM资源收集Servlet**. 选择 **发送电子邮件**. 单击&#x200B;**保存**。
+1. 配置电子邮件服务，如[配置邮件服务](/help/sites-administering/notification.md#configuring-the-mail-service)中所述。
+1. 以管理员身份登录AEM。 单击&#x200B;**工具** > **操作** > **Web控制台**&#x200B;以打开Web控制台配置。
+1. 编辑&#x200B;**Day CQ DAM资源收集Servlet**。 选择&#x200B;**发送电子邮件**。 单击&#x200B;**保存**。
 
 ## 设置OAuth {#setting-up-oauth}
 
@@ -271,13 +271,13 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
 
 ### Gmail {#gmail}
 
-1. 创建项目，位于 `https://console.developers.google.com/projectcreate`
-1. 选择您的项目，然后转到 **API和服务** - **功能板 — 凭据**
+1. 在`https://console.developers.google.com/projectcreate`创建项目
+1. 选择您的项目，然后转到&#x200B;**API和服务** - **仪表板 — 凭据**
 1. 根据您的要求配置OAuth同意屏幕
 1. 在后续的更新屏幕中，添加这两个范围：
    * `https://mail.google.com/`
    * `https://www.googleapis.com//auth/gmail.send`
-1. 添加范围后，请返回 **凭据** ，然后转到 **创建凭据** - **OAuth客户端ID** - **桌面应用程序**
+1. 添加作用域后，请返回左侧菜单中的&#x200B;**凭据**，然后转到&#x200B;**创建凭据** - **OAuth客户端ID** - **桌面应用程序**
 1. 此时将打开一个包含客户端ID和客户端密钥的新窗口。
 1. 保存这些凭据。
 
@@ -289,22 +289,22 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
 
 首先，配置邮件服务：
 
-1. 打开AEM Web Console，方法是转到 `http://serveraddress:serverport/system/console/configMgr`
-1. 查找，然后单击 **Day CQ邮件服务**
+1. 转到`http://serveraddress:serverport/system/console/configMgr`打开AEM Web控制台
+1. 查找，然后单击&#x200B;**Day CQ邮件服务**
 1. 添加以下设置：
    * SMTP服务器主机名： `smtp.gmail.com`
-   * SMTP服务器端口： `25` 或 `587`，具体取决于要求
-   * 勾选选复选框 **SMPT使用StarTLS** 和 **SMTP需要StarTLS**
-   * Check **OAuth流** 并单击 **保存**.
+   * SMTP服务器端口： `25`或`587`，具体取决于要求
+   * 选中&#x200B;**SMPT的复选框使用StarTLS**，**SMTP需要StarTLS**
+   * 检查&#x200B;**OAuth流程**&#x200B;并单击&#x200B;**保存**。
 
 接下来，按照以下过程配置您的SMTP OAuth提供程序：
 
-1. 打开AEM Web Console，方法是转到 `http://serveraddress:serverport/system/console/configMgr`
-1. 查找，然后单击 **CQ邮件程序SMTP OAuth2提供程序**
+1. 转到`http://serveraddress:serverport/system/console/configMgr`打开AEM Web控制台
+1. 查找，然后单击&#x200B;**CQ Mailer SMTP OAuth2提供程序**
 1. 按如下方式填写所需信息：
    * 授权URL： `https://accounts.google.com/o/oauth2/auth`
    * 令牌URL： `https://accounts.google.com/o/oauth2/token`
-   * 范围： `https://www.googleapis.com/auth/gmail.send` 和 `https://mail.google.com/`. 通过按 **+** 按钮以打开每个已配置作用域的右侧。
+   * 范围： `https://www.googleapis.com/auth/gmail.send`和`https://mail.google.com/`。 通过按每个已配置作用域右侧的&#x200B;**+**&#x200B;按钮，可以添加多个作用域。
    * 客户端ID和客户端密码：使用您在上面段落中检索到的值配置这些字段。
    * 刷新令牌URL： `https://accounts.google.com/o/oauth2/token`
    * 刷新令牌过期：从不
@@ -328,10 +328,10 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
 
 最后，通过以下方式确认配置：
 
-1. 转到发布实例的地址，并以管理员身份登录。
-1. 在浏览器中打开新选项卡，然后转到 `http://serveraddress:serverport/services/mailer/oauth2/authorize`. 这会将您重定向到SMTP提供商的页面，在本例中为Gmail。
+1. 转到Publish实例的地址，并以管理员身份登录。
+1. 在浏览器中打开新选项卡，然后转到`http://serveraddress:serverport/services/mailer/oauth2/authorize`。 这会将您重定向到SMTP提供商的页面，在本例中为Gmail。
 1. 登录并同意授予所需权限
-1. 同意后，令牌将存储在存储库中。 您可以在以下位置访问它 `accessToken` 直接访问发布实例上的此URL： `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
+1. 同意后，令牌将存储在存储库中。 您可以通过直接访问发布实例上的此URL在`accessToken`下访问它： `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
 1. 对每个发布实例重复以上步骤
 
 <!-- clarify if the ip/server address in the last procedure is that of the publish instance -->
@@ -342,9 +342,9 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
 1. 在搜索栏中搜索 **Azure Active Directory**，并单击搜索结果。或者，您可以直接浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. 单击&#x200B;**应用程序注册** - **新注册**
 
-   ![配置Microsoft Outlook时的“新建注册”按钮](assets/oauth-outlook1.png)
+   ![配置Microsoft Outlook时的新注册按钮](assets/oauth-outlook1.png)
 
-1. 根据您的要求填写信息，然后单击 **注册**
+1. 根据您的要求填写信息，然后单击&#x200B;**注册**
 1. 转至新创建的应用程序，并选择 **API 权限**
 1. 转至&#x200B;**添加权限** - **图表权限** - **委派权限**
 1. 为应用程序选择以下权限，然后单击&#x200B;**添加权限**：
@@ -353,11 +353,11 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
    * `Mail.Send`
    * `openid`
    * `offline_access`
-1. 转到 **身份验证** - **添加平台** - **Web**、和 **重定向Url** 部分，添加以下URL以重定向OAuth代码，然后按 **配置**：
+1. 转到&#x200B;**身份验证** - **添加平台** - **Web**，然后在&#x200B;**重定向URL**&#x200B;部分中添加以下URL以重定向OAuth代码，然后按&#x200B;**配置**：
    * `http://localhost:4503/services/mailer/oauth2/token`
 1. 对每个发布实例重复以上步骤
 1. 根据您的要求配置设置
-1. 接下来，转到 **证书和密钥**，单击 **新客户端密码** 并按照屏幕上的步骤创建密码。 请务必记下此密码供以后使用
+1. 接下来，转到&#x200B;**证书和密码**，单击&#x200B;**新建客户端密码**，并按照屏幕上的步骤创建密码。 请务必记下此密码供以后使用
 1. 按左窗格中的&#x200B;**概述**，复制&#x200B;**应用程序（客户端）ID** 和&#x200B;**目录（租户）ID** 的值供以后使用
 
 回顾一下，您必须具有以下信息才能在AEM端为邮件程序服务配置OAuth2：
@@ -372,18 +372,18 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
 
 接下来，将您的OAuth2设置与AEM集成：
 
-1. 通过浏览到以下内容，转到本地实例的Web控制台 `http://serveraddress:serverport/system/console/configMgr`
-1. 查找并单击 **Day CQ邮件服务**
+1. 通过浏览到`http://serveraddress:serverport/system/console/configMgr`转到本地实例的Web控制台
+1. 查找并单击&#x200B;**天CQ邮件服务**
 1. 添加以下设置：
    * SMTP服务器主机名： `smtp.office365.com`
    * SMTP用户：您的用户名，采用电子邮件格式
    * “发件人”地址：在邮件程序发送的邮件的“发件人：”字段中使用的电子邮件地址
-   * SMTP服务器端口： `25` 或 `587` 具体取决于要求
-   * 勾选选复选框 **SMPT使用StarTLS** 和 **SMTP需要StarTLS**
-   * Check **OAuth流** 并单击 **保存**.
-1. 查找，然后单击 **CQ邮件程序SMTP OAuth2提供程序**
+   * SMTP服务器端口： `25`或`587`，具体取决于要求
+   * 选中&#x200B;**SMPT的复选框使用StarTLS**，**SMTP需要StarTLS**
+   * 检查&#x200B;**OAuth流程**&#x200B;并单击&#x200B;**保存**。
+1. 查找，然后单击&#x200B;**CQ Mailer SMTP OAuth2提供程序**
 1. 按如下方式填写所需信息：
-   * 按照中的说明构造授权URL、令牌URL和刷新令牌URL [本过程的结束](#microsoft-outlook)
+   * 按照此过程末尾的[处所述，通过构造授权URL、令牌URL和刷新令牌URL来填写它们](#microsoft-outlook)
    * 客户端ID和客户端密钥：使用如上所述检索到的值配置这些字段。
    * 将以下范围添加到配置：
       * openid
@@ -411,7 +411,7 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
 
 最后，通过以下方式确认配置：
 
-1. 转到发布实例的地址，并以管理员身份登录。
-1. 在浏览器中打开新选项卡，然后转到 `http://serveraddress:serverport/services/mailer/oauth2/authorize`. 这会将您重定向到SMTP提供商的页面，在本例中为Outlook。
+1. 转到Publish实例的地址，并以管理员身份登录。
+1. 在浏览器中打开新选项卡，然后转到`http://serveraddress:serverport/services/mailer/oauth2/authorize`。 这会将您重定向到SMTP提供商的页面，在本例中为Outlook。
 1. 登录并同意授予所需权限
-1. 同意后，令牌将存储在存储库中。 您可以在以下位置访问它 `accessToken` 直接访问发布实例上的此URL： `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
+1. 同意后，令牌将存储在存储库中。 您可以通过直接访问发布实例上的此URL在`accessToken`下访问它： `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`

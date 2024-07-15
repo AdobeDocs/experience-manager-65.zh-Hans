@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在通信管理中，信件模板包含典型的表单字段、布局功能（如页眉和页脚）以及用于内容投放的空“目标区域”。
 
-通信管理在中提供信件模板 [AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 您可以根据品牌和业务需求在Designer中自定义模板。 该资源包包含以下模板：
+通信管理在[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)中提供书信模板。 您可以根据品牌和业务需求在Designer中自定义模板。 该资源包包含以下模板：
 
 * Classic
 * Classic简单用法
@@ -48,7 +48,7 @@ ht-degree: 0%
 
 Classic模板顶部带有徽标，非常适合于普通专业信件。
 
-![classic](assets/classic.png)
+![经典](assets/classic.png)
 
 使用ClassicPDF创建的信件的模板预览
 
@@ -56,7 +56,7 @@ Classic模板顶部带有徽标，非常适合于普通专业信件。
 
 包含用于捕获电话号码和电子邮件地址的字段。 Classic Simple模板与Classic模板类似，不同之处在于它没有可输入收件人地址的字段。
 
-![联系信息片段](assets/classicsimple.png)
+![联系人信息片段](assets/classicsimple.png)
 
 使用Classic SimplePDF创建的信件的模板预览
 
@@ -64,7 +64,7 @@ Classic模板顶部带有徽标，非常适合于普通专业信件。
 
 “平衡左侧”模板在信件左侧包含徽标。
 
-![向左平衡](assets/balancedleft.png)
+![balancedleft](assets/balancedleft.png)
 
 使用“左平衡”模板创建的信件的PDF预览
 

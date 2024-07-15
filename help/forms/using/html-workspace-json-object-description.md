@@ -1,6 +1,6 @@
 ---
 title: AEM Forms工作区JSON对象说明
-description: 有关LiveCycleAEM Forms Workspace中使用的JSON JavaScript对象的概念信息，以进行自定义、扩展、修改和重用。
+description: 有关LiveCycleAEM Forms Workspace中使用的JSON JavaScript对象的概念信息，可用于自定义、扩展、修改和重用。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -38,7 +38,7 @@ ht-degree: 8%
   <tr>
    <td>id</td>
    <td>周五</td>
-   <td>类别Id<br type="_moz" /> </td>
+   <td>类别ID<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>描述<br type="_moz" /> </td>
@@ -48,17 +48,17 @@ ht-degree: 8%
   <tr>
    <td>parentOid<br type="_moz" /> </td>
    <td>周五</td>
-   <td>包含父类别的OID<br type="_moz" /> </td>
+   <td>包含父类别<br type="_moz" />的oid </td>
   </tr>
   <tr>
-   <td>起始点列表<br type="_moz" /> </td>
+   <td>startPointsList<br type="_moz" /> </td>
    <td>周二</td>
    <td>包含某个类别中存在的所有起点的列表</td>
   </tr>
   <tr>
    <td>categorylist</td>
    <td>周二</td>
-   <td>包含类别的直接子类别的列表<br type="_moz" /> </td>
+   <td>包含类别<br type="_moz" />的直接子类别的列表 </td>
   </tr>
  </tbody>
 </table>
@@ -71,7 +71,7 @@ ht-degree: 8%
 
    启动点用于在调用时从工作区启动进程。
 
-   | **属性** | **仅限客户端** | **评论** |
+   | **属性** | **仅客户端** | **个评论** |
    |---|---|---|
    | categoryId | 周五 | 它包含起点所属类别的ID。 |
    | 说明 | 周五 | 它包含对起点的描述。 |
@@ -92,13 +92,13 @@ ht-degree: 8%
  <tbody>
   <tr>
    <td>属性<br /> </td>
-   <td>仅限客户端<br /> </td>
+   <td>仅客户端<br /> </td>
    <td>评论<br /> </td>
   </tr>
   <tr>
    <td>classOfTask</td>
    <td>周五</td>
-   <td>当任务为LC8任务时，任务类为“LC8”，否则为“标准”。<br /> </td>
+   <td>当任务为“LC8”任务时，任务类为“LC8”，否则为“标准”。<br /> </td>
   </tr>
   <tr>
    <td>completeTime<br /> </td>
@@ -108,7 +108,7 @@ ht-degree: 8%
   <tr>
    <td>consultGroupId<br /> </td>
    <td>周五</td>
-   <td>它包含可向其咨询任务的组的ID。 它是在设计过程中设置的。<br /> </td>
+   <td>它包含可向其咨询任务的组的ID。 它在设计过程中设置。<br /> </td>
   </tr>
   <tr>
    <td>createTime<br /> </td>
@@ -121,7 +121,7 @@ ht-degree: 8%
    <td>它包含创建任务的用户的ID。<br /> </td>
   </tr>
   <tr>
-   <td>当前工作<br /> </td>
+   <td>currentAssignment<br /> </td>
    <td>周五</td>
    <td>它包含有关当前任务分配的详细信息。<br /> </td>
   </tr>
@@ -136,14 +136,14 @@ ht-degree: 8%
    <td>它包含任务的描述。<br /> </td>
   </tr>
   <tr>
-   <td>显示名称<br /> </td>
+   <td>displayName<br /> </td>
    <td>周五</td>
    <td>它包含任务的显示名称。<br /> </td>
   </tr>
   <tr>
    <td>forwardGroupId<br /> </td>
    <td>周五</td>
-   <td>它包含任务可转发到的组的ID。 它是在设计过程中设置的。<br /> </td>
+   <td>它包含任务可转发到的组的ID。 它在设计过程中设置。<br /> </td>
   </tr>
   <tr>
    <td>说明<br /> </td>
@@ -163,7 +163,7 @@ ht-degree: 8%
   <tr>
    <td>isOpenFullScreen<br /> </td>
    <td>周五</td>
-   <td>如果为true，则在打开任务时，表单首次会进入全屏。<br /> </td>
+   <td>如果为true，则在打开任务时，表单首次会以完整屏幕显示。<br /> </td>
   </tr>
   <tr>
    <td>isRouteSelectionRequired<br /> </td>
@@ -206,49 +206,49 @@ ht-degree: 8%
    <td>任务的进程实例的状态。<br /> </td>
   </tr>
   <tr>
-   <td>提醒计数<br /> </td>
+   <td>reminderCount<br /> </td>
    <td>周五</td>
    <td>它包含任务的提醒计数。<br /> </td>
   </tr>
   <tr>
    <td>routeList<br /> </td>
    <td>周五</td>
-   <td>它包含与任务关联的路由列表。 用户可以通过从路由列表中选择路由中的任何一条来完成该任务。<br /> </td>
+   <td>它包含与任务关联的路由列表。 用户可以通过从路由列表中选择路由中的任意一个来完成任务。<br /> </td>
   </tr>
   <tr>
-   <td>选定路由<br /> </td>
+   <td>selectedRoute<br /> </td>
    <td>周五</td>
-   <td>它包含任务完成时选择的路由的名称。<br /> </td>
+   <td>它包含任务完成时所选路由的名称。<br /> </td>
   </tr>
   <tr>
    <td>serializedImageTicket<br /> </td>
    <td>周五</td>
-   <td>它包含与任务对应的图像票证。 此图像票证用于任务的imageUrl字段中，以从服务器获取任务的图像。<br /> <br /> </td>
+   <td>它包含与任务对应的图像票证。 此图像票证在任务的imageUrl字段中使用，以从服务器获取任务的图像。<br /> <br /> </td>
   </tr>
   <tr>
-   <td>serviceName<br /> </td>
+   <td>服务名称<br /> </td>
    <td>周五</td>
-   <td>它包含用于任务的服务的名称。<br /> </td>
+   <td>它包含任务的服务名称。<br /> </td>
   </tr>
   <tr>
    <td>服务标题<br /> </td>
    <td>周五</td>
-   <td>它包含用于任务的服务的标题。<br /> </td>
+   <td>它包含任务的服务标题。<br /> </td>
   </tr>
   <tr>
    <td>状态<br /> </td>
    <td>周五</td>
-   <td>1 =已创建（从起始点创建任务。）<br /> 2 =创建并保存（从起始点创建并保存任务。）<br /> 3 =已分配（任务在流程启动后分配给用户。）<br /> 4 =已分配和保存（任务已分配和保存。）<br /> 100 =已完成（任务已完成。）<br /> 101 =已截止（任务已达到截止日期。）<br /> 102 =已终止<br /> </td>
+   <td>1 =已创建（从起始点创建任务。）<br /> 2 =已创建并保存（任务是从起点创建并保存的。）<br /> 3 =已分配（任务在进程启动后分配给用户。）<br /> 4 =已分配并已保存（任务已分配并已保存。）<br /> 100 =已完成（任务已完成。）<br /> 101 =已截止（任务已达到截止日期。）<br /> 102 =已终止<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
    <td>周五</td>
-   <td>它包含流程设计期间任务集的名称。<br /> </td>
+   <td>它包含进程设计期间任务集的名称。<br /> </td>
   </tr>
   <tr>
    <td>summaryUrl<br /> </td>
    <td>周五</td>
-   <td>它包含任务摘要url。<br /> </td>
+   <td>它包含任务摘要URL。<br /> </td>
   </tr>
   <tr>
    <td>taskACL<br /> </td>
@@ -256,12 +256,12 @@ ht-degree: 8%
    <td>它是任务的访问控制列表。<br /> </td>
   </tr>
   <tr>
-   <td>taskid<br /> </td>
+   <td>任务ID<br /> </td>
    <td>周五</td>
    <td>任务的ID。<br /> </td>
   </tr>
   <tr>
-   <td>updatetime<br /> </td>
+   <td>updateTime<br /> </td>
    <td>周五</td>
    <td>上次更新任务的时间戳。<br /> </td>
   </tr>
@@ -271,9 +271,9 @@ ht-degree: 8%
    <td>它包含任务的表单URL。<br /> </td>
   </tr>
   <tr>
-   <td>任务表单类型<br /> </td>
+   <td>taskFormType<br /> </td>
    <td>周二</td>
-   <td>它包含任务表单类型。 使用此字段，任务在客户端上呈现为pdf for、swf表单等。<br /> </td>
+   <td>它包含任务表单类型。 使用此字段，任务在客户端上呈现为PDF for、swf表单等。<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -283,15 +283,15 @@ ht-degree: 8%
   <tr>
    <td>showACLActions<br /> </td>
    <td>周二</td>
-   <td>如果为true，则转发、咨询、共享等操作在工作区中可见。<br /> </td>
+   <td>如果为true，则在workspace中可以看到转发、咨询、共享等操作。<br /> </td>
   </tr>
   <tr>
-   <td>supportsoffline<br /> </td>
+   <td>supportsOffline<br /> </td>
    <td>周二</td>
    <td>如果为true，则可以将表单脱机。 这仅适用于PDF表单。<br /> </td>
   </tr>
   <tr>
-   <td>supportssave<br /> </td>
+   <td>supportsSave<br /> </td>
    <td>周二</td>
    <td>如果为true，则用户可以保存任务。<br /> </td>
   </tr>
@@ -313,27 +313,27 @@ ht-degree: 8%
   <tr>
    <td>isOwner<br /> </td>
    <td>周二</td>
-   <td>如果登录用户是任务的所有者，则为True。<br /> </td>
+   <td>如果登录的用户是任务的所有者，则为True。<br /> </td>
   </tr>
   <tr>
-   <td>可用命令<br /> </td>
+   <td>availableCommands<br /> </td>
    <td>周二</td>
-   <td>它包含可对任务执行的所有操作。<br /> </td>
+   <td>它包含可以对任务执行的所有操作。<br /> </td>
   </tr>
   <tr>
    <td>availableCommands.directCommands<br /> </td>
    <td>周二</td>
-   <td>它包含可用于任务的所有路由操作。<br /> </td>
+   <td>它包含任务可用的所有路由操作。<br /> </td>
   </tr>
   <tr>
    <td>availableCommands.taskACLCommands<br /> </td>
    <td>周二</td>
-   <td>它包含forward 、 share和consult等命令（如果可用于任务）。<br /> </td>
+   <td>它包含forward、share和consult等命令（如果可用于任务）。<br /> </td>
   </tr>
   <tr>
    <td>availableCommands.otherCommands<br /> </td>
    <td>周二</td>
-   <td>它包含lock、unlock、absout、return、claim等可用命令。<br /> </td>
+   <td>它包含锁定、解锁、放弃、返回、声明等可用命令。<br /> </td>
   </tr>
   <tr>
    <td>processInstanceInfo<br /> </td>
@@ -376,7 +376,7 @@ ht-degree: 8%
    <td>任务的附件列表。<br /> </td>
   </tr>
   <tr>
-   <td>指定任务<br /> </td>
+   <td>工作<br /> </td>
    <td>周二</td>
    <td>任务的分配列表。<br /> </td>
   </tr>
@@ -400,7 +400,7 @@ ht-degree: 8%
    <td>如果队列是登录用户的默认队列，则为true，否则为false。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>name<br type="_moz" /> </td>
+   <td>名称<br type="_moz" /> </td>
    <td>周五</td>
    <td>队列所有者的名称。<br type="_moz" /> </td>
   </tr>
@@ -422,7 +422,7 @@ ht-degree: 8%
   <tr>
    <td>任务</td>
    <td>周二</td>
-   <td>它包含属于某个过滤器的所有任务的列表。<br type="_moz" /> </td>
+   <td>它包含属于某个筛选器的所有任务的列表。<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -435,8 +435,8 @@ ht-degree: 8%
  <tbody>
   <tr>
    <td><strong>属性</strong><br type="_moz" /> </td>
-   <td><strong>仅限客户端</strong><br type="_moz" /> </td>
-   <td><strong>评论</strong><br type="_moz" /> </td>
+   <td><strong>仅客户端</strong><br type="_moz" /> </td>
+   <td><strong>个评论</strong><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>日期范围<br type="_moz" /> </td>
@@ -446,17 +446,17 @@ ht-degree: 8%
   <tr>
    <td>isNoPrimaryDecision<br type="_moz" /> </td>
    <td>周五</td>
-   <td>如果用户不在办公室，则没有主指定，则为True。<br type="_moz" /> </td>
+   <td>如果用户不在办公室，则没有主指定。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
    <td>周五</td>
-   <td>如果用户不在办公室，则为真。<br type="_moz" /> </td>
+   <td>如果用户不在办公室，则为True。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>outOfOfficeDegine<br type="_moz" /> </td>
+   <td>outOfOfficeIdentigate<br type="_moz" /> </td>
    <td>周五</td>
-   <td>它包含由用户分配为主指定用户的详细信息。<br type="_moz" /> </td>
+   <td>它包含被用户指定为主指定的用户的详细信息。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
@@ -471,12 +471,12 @@ ht-degree: 8%
   <tr>
    <td>initialOutOfOfficeSettings<br type="_moz" /> </td>
    <td>周二</td>
-   <td>它包含最初获取的用户的初始外出设置。<br type="_moz" /> </td>
+   <td>它包含最初获取的用户初始外出设置。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>outOfOfficeSettings<br type="_moz" /> </td>
    <td>周二</td>
-   <td>它包含已修改的“外出”设置。<br type="_moz" /> </td>
+   <td>它包含已修改的邮件答录机设置。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td>
@@ -500,22 +500,22 @@ ht-degree: 8%
   <tr>
    <td>描述<br type="_moz" /> </td>
    <td>周五</td>
-   <td>流程实例描述<br type="_moz" /> </td>
+   <td>进程实例<br type="_moz" />的说明 </td>
   </tr>
   <tr>
    <td>发起者</td>
    <td>周五</td>
-   <td>进程实例的启动器名称。<br type="_moz" /> </td>
+   <td>进程实例的发起程序名称。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>initiatorId</td>
    <td>周五</td>
-   <td>进程实例的发起者的ID。<br type="_moz" /> </td>
+   <td>进程实例的发起者ID。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processCompleteTime<br type="_moz" /> </td>
    <td>周五</td>
-   <td>流程完成时的时间戳。<br type="_moz" /> </td>
+   <td>进程完成时的时间戳。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processInstanceId<br type="_moz" /> </td>
@@ -525,10 +525,10 @@ ht-degree: 8%
   <tr>
    <td>processInstanceStatus<br type="_moz" /> </td>
    <td>周五</td>
-   <td>0 =已启动<br /> 1 =正在运行<br /> 2 =完成<br /> 3 =正在完成<br /> 4 =已终止<br /> 5 =正在终止<br /> 6 =已暂停<br /> 7 =暂停<br /> 8 =取消暂停<br type="_moz" /> </td>
+   <td>0 =已启动<br /> 1 =正在运行<br /> 2 =完成<br /> 3 =正在完成<br /> 4 =已终止<br /> 5 =正在终止<br /> 6 =已暂停<br /> 7 =正在暂停<br /> 8 =正在取消暂停<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>processname<br type="_moz" /> </td>
+   <td>processName<br type="_moz" /> </td>
    <td>周五</td>
    <td>进程的名称。<br type="_moz" /> </td>
   </tr>
@@ -540,7 +540,7 @@ ht-degree: 8%
   <tr>
    <td>processVariables<br type="_moz" /> </td>
    <td>周五</td>
-   <td>流程变量的对象数组。 每个进程变量对象包含进程变量名称、进程变量值和进程变量类型。<br type="_moz" /> </td>
+   <td>流程变量的对象数组。 每个进程变量对象包含进程变量名称、进程变量值和进程变量类型名称。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>任务列表<br type="_moz" /> </td>
@@ -570,12 +570,12 @@ ht-degree: 8%
    <td>进程的次要版本。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>processname<br type="_moz" /> </td>
+   <td>processName<br type="_moz" /> </td>
    <td>周五</td>
    <td>进程的名称。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>进程标题<br type="_moz" /> </td>
+   <td>processTitle<br type="_moz" /> </td>
    <td>周五</td>
    <td>进程的标题。<br type="_moz" /> </td>
   </tr>
@@ -606,7 +606,7 @@ ht-degree: 8%
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>周五</td>
-   <td>0 =初始分配<br /> 1 =转发（任务已转发到任务的当前所有者。）<br /> 2 =已返回（任务已由任务的先前所有者返回到任务的当前所有者。）<br /> 3 =已声明（任务已由任务的当前所有者声明。）<br /> 4 =提升（在提升后，任务已分配给任务的当前所有者。）<br /> 5 =管理员已分配（任务已由管理员分配给任务的当前所有者。）<br /> 6 =已咨询（已咨询任务当前所有者。）<br type="_moz" /> </td>
+   <td>0 =初始分配<br /> 1 =转发（任务已转发到任务的当前所有者。）<br /> 2 =已返回（任务已由任务的先前所有者返回到任务的当前所有者。）<br /> 3 =已声明（任务当前所有者已声明任务。）<br /> 4 =提升（提升后任务已分配给当前任务所有者。）<br /> 5 =管理员已分配（任务已由管理员分配给任务的当前所有者。）<br /> 6 =已咨询（已咨询任务给任务的当前所有者。）<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
@@ -650,22 +650,22 @@ ht-degree: 8%
   <tr>
    <td>canAddNotes<br type="_moz" /> </td>
    <td>周五</td>
-   <td>如果为true，则可以将注释添加到任务。<br type="_moz" /> </td>
+   <td>如果为true，则可以将备注添加到任务中。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canClaim<br type="_moz" /> </td>
    <td>周五</td>
-   <td>如果为true，则可以声明任务。<br type="_moz" /> </td>
+   <td>如果为true，则表示可以声明任务。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canConsult<br type="_moz" /> </td>
    <td>周五</td>
-   <td>如果为true，则可查阅任务。<br type="_moz" /> </td>
+   <td>如果为true，则可以查阅任务。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canForward<br type="_moz" /> </td>
    <td>周五</td>
-   <td>如果为true，则可以转发任务。<br type="_moz" /> </td>
+   <td>如果为true，则任务可以转发。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canShare<br type="_moz" /> </td>
@@ -709,7 +709,7 @@ ht-degree: 8%
   <tr>
    <td>文件名<br type="_moz" /> </td>
    <td>周五</td>
-   <td>附件的名称。<br type="_moz" /> </td>
+   <td>附件名称。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>id<br type="_moz" /> </td>
@@ -722,7 +722,7 @@ ht-degree: 8%
    <td>上次修改附件时的时间戳。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>注释已扩展<br type="_moz" /> </td>
+   <td>注释扩展<br type="_moz" /> </td>
    <td>周五</td>
    <td>如果为true，则注释为扩展（长）注释。<br type="_moz" /> </td>
   </tr>
@@ -737,29 +737,29 @@ ht-degree: 8%
    <td>附件大小（以字节为单位）。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>taskid<br type="_moz" /> </td>
+   <td>任务ID<br type="_moz" /> </td>
    <td>周五</td>
    <td>向其中添加附件的任务的ID。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>type<br type="_moz" /> </td>
+   <td>类型<br type="_moz" /> </td>
    <td>周五</td>
-   <td>“类型”是文件的附件，“类型”是注释的注释。<br type="_moz" /> </td>
+   <td>类型是文件的附件，类型是注释的注释。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>formattedCreationDate<br type="_moz" /> </td>
    <td>周二</td>
-   <td>根据用户的UI设置，该日期包含附件创建日期。<br type="_moz" /> </td>
+   <td>根据用户的UI设置，它包含附件创建日期。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>formattedDescription<br type="_moz" /> </td>
    <td>周二</td>
-   <td>格式化的附件说明。 用于显示AEM Forms工作区附件描述中出现的特殊字符。<br type="_moz" /> </td>
+   <td>格式化的附件说明。 用于显示AEM Forms工作区附件描述中存在的特殊字符。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>格式化的文件名<br type="_moz" /> </td>
+   <td>formattedFileName<br type="_moz" /> </td>
    <td>周二</td>
-   <td>格式化的附件名称。 用于显示AEM Forms工作区附件名称中存在的特殊字符。 这仅适用于注释。<br type="_moz" /> </td>
+   <td>格式化的附件名称。 用于显示AEM Forms工作区附件名称中存在的特殊字符。 这仅供笔记使用。<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>
@@ -783,7 +783,7 @@ ht-degree: 8%
   <tr>
    <td>commonName<br type="_moz" /> </td>
    <td>周五</td>
-   <td>用户的常用名称。<br type="_moz" /> </td>
+   <td>用户的公用名。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>描述<br type="_moz" /> </td>
@@ -791,12 +791,12 @@ ht-degree: 8%
    <td>用户的描述。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>directGroupMembership<br type="_moz" /> </td>
+   <td>directGroupMemberships<br type="_moz" /> </td>
    <td>周五</td>
    <td>用户组的列表。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>显示名称<br type="_moz" /> </td>
+   <td>displayName<br type="_moz" /> </td>
    <td>周五</td>
    <td>用户的显示名称。<br type="_moz" /> </td>
   </tr>
@@ -808,7 +808,7 @@ ht-degree: 8%
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
    <td>周五</td>
-   <td>如果用户不在办公室，则为真。<br type="_moz" /> </td>
+   <td>如果用户不在办公室，则为True。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>姓氏<br type="_moz" /> </td>
@@ -826,12 +826,12 @@ ht-degree: 8%
    <td>用户的ID。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>org<br type="_moz" /> </td>
+   <td>组织<br type="_moz" /> </td>
    <td>周五</td>
    <td>用户的组织名称。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>邮政地址<br type="_moz" /> </td>
+   <td>postalAddress<br type="_moz" /> </td>
    <td>周五</td>
    <td>用户的邮政地址。<br type="_moz" /> </td>
   </tr>
@@ -841,12 +841,12 @@ ht-degree: 8%
    <td>用户的联系电话。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>telephonenumber<br type="_moz" /> </td>
+   <td>telephoneNumber<br type="_moz" /> </td>
    <td>周五</td>
    <td>用户的联系电话。<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>userid<br type="_moz" /> </td>
+   <td>用户ID<br type="_moz" /> </td>
    <td>周五</td>
    <td>用户的登录ID。<br type="_moz" /> </td>
   </tr>

@@ -43,19 +43,19 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 要创建表，请从自适应表单的Sidekick中的组件浏览器拖放表组件。 默认情况下，该表包含两列和三行，包括标题行。
 
-![AEM侧栏中的表组件](assets/sidebar-tables.png)
+AEM侧边栏中的![表组件](assets/sidebar-tables.png)
 
 ### 关于标题和正文单元格 {#about-header-and-body-cells}
 
-标题单元格是文本字段。 要更改标题的标签，请右键单击标题单元格并单击 **编辑**. 在“编辑”对话框中，更新 **值** 字段并单击 **确定**.
+标题单元格是文本字段。 要更改标题的标签，请右键单击标题单元格并单击&#x200B;**编辑**。 在“编辑”对话框中，更新&#x200B;**值**&#x200B;字段中的标签，然后单击&#x200B;**确定**。
 
 默认情况下，正文单元格是文本框。 您可以将正文单元格替换为Sidekick中提供的任何其他自适应表单组件，例如数值框、日期选取器或下拉列表。
 
 例如，下表中的第一行正文包括文本框、日期选取器和下拉列表组件，作为单元格。
 
-![row-cell-type](assets/row-cell-types.png)
+![行单元格类型](assets/row-cell-types.png)
 
-通过选择要合并的单元格、右键单击并选择 **合并**. 此外，也可以通过右键单击合并的单元格并选择 **拆分单元格**.
+您可以通过选择要合并的单元格、右键单击并选择&#x200B;**合并**&#x200B;来合并两个或多个正文单元格。 此外，也可以通过右键单击合并的单元格并选择&#x200B;**拆分单元格**&#x200B;来拆分合并的单元格。
 
 ### 添加、删除、移动行和列 {#add-delete-move-rows-and-columns}
 
@@ -79,7 +79,7 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 您可以添加表格的说明，以说明屏幕阅读器可以解释和阅读的信息组织方式。 要添加说明，请执行以下操作：
 
-1. 选择表并选择 ![cmppr](assets/cmppr.png) 以在侧栏中查看其属性。
+1. 选择表并选择![cmppr](assets/cmppr.png)以在侧栏中查看其属性。
 1. 在“辅助功能”选项卡中指定摘要。
 1. 单击&#x200B;**完成**。
 
@@ -97,13 +97,13 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 要启用排序，请执行以下操作：
 
-1. 选择表并选择 ![configure_icon](assets/configure_icon.png) （配置）。 您也可以使用 **内容** 交互式通信中的浏览器。
-1. 选择 **启用排序**.
-1. 选择 ![完成图标](assets/done_icon.png) 以保存表属性。 列标题中的排序图标（向上箭头和向下箭头）表示已启用排序。
+1. 选择表并选择![configure_icon](assets/configure_icon.png) （配置）。 您还可以在交互式通信的Sidekick中使用&#x200B;**Content**&#x200B;浏览器选择表。
+1. 选择&#x200B;**启用排序**。
+1. 选择![done_icon](assets/done_icon.png)以保存表属性。 列标题中的排序图标（向上箭头和向下箭头）表示已启用排序。
 
    ![启用排序](assets/enable_sorting_new.png)
 
-1. 切换到 **预览** 模式以查看输出。 该表会根据表的第一列自动排序。
+1. 切换到&#x200B;**预览**&#x200B;模式以查看输出。 该表会根据表的第一列自动排序。
 1. 单击列标题可根据列对值进行排序。
 
    带向上箭头的列标题表示表根据该列排序。 此外，列中的值以升序显示。
@@ -112,40 +112,40 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
    同样，带有向下箭头的列标题表示列中的值以降序显示。
 
-   您还可以在以下表格中进行更改： **预览** 模式，然后再次单击列标题可对列值进行排序。
+   您还可以在&#x200B;**预览**&#x200B;模式下更改表，然后再次单击列标题以对列值进行排序。
 
 ## 设置表的列宽 {#set-column-width}
 
 执行以下步骤可设置表的列宽：
 
-1. 在 **[!UICONTROL 内容]** 选项卡，选择 **[!UICONTROL 表]** 组件并选择配置(![配置](assets/configure-icon.svg))图标。
+1. 在&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中，选择&#x200B;**[!UICONTROL Table]**&#x200B;组件并选择“配置”（![配置](assets/configure-icon.svg)）图标。
 
-1. 在中输入以逗号分隔的值列表 **[!UICONTROL 列宽]** 字段，用于指定表格中每列的比例宽度。 例如，对于包含3列的表，将2,4，6指定为 **[!UICONTROL 列宽]** 字段导致将第一列的宽度设置为2/12，第二列的宽度设置为4/12，第三列的宽度设置为6/12。 2/12，因为第一列的宽度是表格宽度的六分之一。 同样，4/12将第二列宽设置为表格宽度的三分之一，6/12将第三列宽设置为表格宽度的一半。
+1. 在&#x200B;**[!UICONTROL 列宽]**&#x200B;字段中输入以逗号分隔的值列表，以指定表中每列的按比例宽度。 例如，对于包含3列的表，在&#x200B;**[!UICONTROL 列宽]**&#x200B;字段中指定2,4，6作为值会导致将第一列的宽度设置为2/12，将第二列的宽度设置为4/12，将第三列的宽度设置为6/12。 2/12，因为第一列的宽度是表格宽度的六分之一。 同样，4/12将第二列宽设置为表格宽度的三分之一，6/12将第三列宽设置为表格宽度的一半。
 
 ## 配置表样式 {#configure}
 
 您可以使用页面工具栏中的“样式”模式来定义表的样式。 执行以下步骤以切换到样式模式并编辑表样式
 
-1. 在页面工具栏中的预览之前，选择 ![画布下拉列表](assets/canvas-drop-down.png) > **样式**.
+1. 在页面工具栏中的“预览”之前，选择![画布下拉列表](assets/canvas-drop-down.png) > **样式**。
 
-1. 在侧栏中，选择表格并选择编辑按钮 ![编辑按钮](assets/edit-button.png).
+1. 在侧栏中选择表并选择编辑按钮![edit-button](assets/edit-button.png)。
 您可以在侧栏中看到样式属性。
 
-![表格的样式属性](assets/style-table.png)
+![表的样式属性](assets/style-table.png)
 
 >[!NOTE]
 >
->您可以通过更改LESS变量的值来更改标题行和正文行的颜色主题。 有关更多信息，请参阅 [AEM Forms中的主题](/help/forms/using/themes.md).
+>您可以通过更改LESS变量的值来更改标题行和正文行的颜色主题。 有关详细信息，请参阅AEM Forms中的[主题](/help/forms/using/themes.md)。
 
 ## 动态添加或删除行 {#add-or-delete-a-row-dynamically}
 
 表为在运行时动态添加或删除行提供开箱即用支持。
 
-1. 选择表格行并选择 ![cmppr](assets/cmppr.png).
+1. 选择表行并选择![cmppr](assets/cmppr.png)。
 1. 在重复设置选项卡中，指定最小和最大计数以限制表中的行数。
 1. 单击&#x200B;**完成**。
 
-在运行时，您将看到 **+** 和 *-* 按钮以添加或删除行。
+在运行时，您将看到&#x200B;**+**&#x200B;和&#x200B;*-*&#x200B;添加或删除行的按钮。
 
 ![add-delete-rows-dynamic](assets/add-delete-rows-dynamically.png)
 
@@ -155,25 +155,25 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 ## 表中的表达式 {#expressions-in-a-table}
 
-自适应表单中的表允许您在JavaScript中编写表达式来诱导行为，如显示或隐藏表或行、合计所有数字并在单元格中显示总计、启用或禁用单元格、验证用户输入等。 这些表达式使用自适应表单脚本模型API。
+自适应表单中的表允许您在JavaScript中编写表达式以诱导行为，如显示或隐藏表或行，合计所有数字并显示单元格中的总计，启用或禁用单元格，验证用户输入等。 这些表达式使用自适应表单脚本模型API。
 
 虽然表和行仅支持可见性表达式，以根据表达式返回的值来控制它们的可见性，但单元格支持以下表达式：
 
-* **初始化脚本：** 在字段初始化时执行操作。
-* **值提交脚本：** 在字段值更改后更改表单的组件。
+* **初始化脚本：**，用于在初始化字段时执行操作。
+* **值提交脚本：**&#x200B;用于在字段值更改后更改表单组件。
 
 >[!NOTE]
 >
 >如果XFA更改/退出脚本也应用于同一字段，则XFA更改/退出脚本将在值提交脚本之前执行。
 
 * **计算表达式**：用于自动计算字段的值。
-* **验证表达式**：验证字段。
+* **验证表达式**：用于验证字段。
 * **访问表达式**：启用/禁用字段。
-* **可见性表达式**：控制字段和面板的可见性。
+* **可见性表达式**：用于控制字段和面板的可见性。
 
 表或行的可见性表达式可以在它们对应的“编辑组件”对话框的“面板属性”选项卡中定义。 单元格的表达式可在其“编辑组件”对话框的“脚本”选项卡中定义。
 
-有关自适应表单类、事件、对象和公共API的完整列表，请参阅 [自适应表单的JavaScript库API参考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
+有关自适应表单类、事件、对象和公共API的完整列表，请参阅自适应表单的[JavaScript库API参考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)。
 
 ## 移动设备布局 {#mobile-layouts}
 
@@ -189,7 +189,7 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 标题位于左侧布局的表的桌面视图
 
-![左侧标题](assets/headersontheleft_new.png)
+![标题位于左侧](assets/headersontheleft_new.png)
 
 页眉位于左侧布局的表的移动设备视图
 
@@ -203,29 +203,29 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 
 下图比较了表在带有折叠和展开列的设备上的外观。
 
-![collaced-column](assets/collapsed-column.png)
+![折叠列](assets/collapsed-column.png)
 
 在移动设备上只显示两列的表折叠列
 
-![collapsel_column](assets/collapsible_column.png)
+![collapsible_column](assets/collapsible_column.png)
 
 移动设备上表的已展开列
 
 ## 合并表中的数据 {#merge-data-in-a-table}
 
-自适应表单中的表允许您在运行时使用XML文件中的数据填充该表。 数据XML文件可以驻留在运行AEM Forms服务器的计算机的本地文件系统或CRX存储库中。
+自适应表单中的表允许您在运行时使用XML文件中的数据填充该表。 数据XML文件可以驻留在运行AEM Forms Server的计算机的本地文件系统中，也可以驻留在CRX存储库中。
 
 让我们以以下银行交易摘要表为例，该表要填入来自XML文件的数据。
 
-![data-merge-table](assets/data-merge-table.png)
+![数据合并表](assets/data-merge-table.png)
 
 在此示例中，的Element name属性用于：
 
-* 行是 **Row1**
-* “交易日期”下的正文单元格为 **tableItem1**
-* “描述”下的正文单元格为 **tableItem2**
-* 交易类型下的正文单元格为 **type**
-* “金额（美元）”下的正文单元格为 **表项目3**
+* 该行是&#x200B;**Row1**
+* 交易日期下的正文单元格为&#x200B;**tableItem1**
+* 描述下的正文单元格为&#x200B;**tableItem2**
+* 事务类型下的正文单元格为&#x200B;**类型**
+* “金额（美元）”下的正文单元格为&#x200B;**tableItem3**
 
 包含采用以下格式的数据的XML文件：
 
@@ -285,9 +285,9 @@ AEM Forms在侧栏的组件浏览器中提供了表组件，允许您在自适�
 </afData>
 ```
 
-在示例XML中，行的数据由 `<Row1>` 标记，即表中行的元素名称。 在 `<Row1>` 标签中，每个单元格的数据在其元素名称对应的标签中定义，例如 `<tableItem1>`， `<tableItem2>`， `<tableItem3>`、和 `<type>`.
+在示例XML中，行的数据由`<Row1>`标记定义，该标记是表中行的元素名称。 在`<Row1>`标记内，每个单元格的数据在其元素名称（如`<tableItem1>`、`<tableItem2>`、`<tableItem3>`和`<type>`）的标记中定义。
 
-要在运行时将此数据与表合并，我们需要将包含该表的自适应表单指向禁用wcmmode的绝对XML位置。 例如，如果自适应表单位于 *https://localhost:4502/myForms/bankTransaction.html* 数据XML文件保存在 *C：/myTransactions/bankSummary.xml*，您可以在以下URL查看包含数据的表：
+要在运行时将此数据与表合并，我们需要将包含该表的自适应表单指向禁用wcmmode的绝对XML位置。 例如，如果自适应表单位于&#x200B;*https://localhost:4502/myForms/bankTransaction.html*，而数据XML文件保存在&#x200B;*C：/myTransactions/bankSummary.xml*，则您可以在以下URL查看包含数据的表：
 
 *https://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C：/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 

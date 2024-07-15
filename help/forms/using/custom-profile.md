@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # 为HTML5表单创建自定义配置文件 {#creating-a-custom-profile-for-html-forms}
 
-配置文件是中的资源节点 [Apache Sling](https://sling.apache.org/). 它表示HTML5表单呈现服务的自定义版本。 您可以使用HTML5表单演绎版服务自定义HTML5表单的外观、行为和交互。 中存在配置文件节点 `/content` JCR存储库中的文件夹。 您可以将节点直接放在 `/content` 文件夹或其任何子文件夹 `/content` 文件夹。
+配置文件是[Apache Sling](https://sling.apache.org/)中的资源节点。 它表示HTML5表单呈现服务的自定义版本。 您可以使用HTML5表单演绎版服务自定义HTML5表单的外观、行为和交互。 JCR存储库的`/content`文件夹中存在配置文件节点。 您可以将节点直接放置到`/content`文件夹或`/content`文件夹的任何子文件夹下。
 
-配置文件节点具有 **sling：resourceSuperType** 属性，默认值为 **xfaforms/profile**. 节点的渲染脚本位于/libs/xfaforms/profile。
+配置文件节点具有&#x200B;**sling：resourceSuperType**&#x200B;属性，默认值为&#x200B;**xfaforms/profile**。 节点的渲染脚本位于/libs/xfaforms/profile。
 
-Sling脚本是JSP脚本。 这些JSP脚本用作容器，用于将所请求表单的HTML和所需的JS/CSS工件组合在一起。 这些Sling脚本也称为 **配置文件渲染器脚本**. 配置文件渲染器调用Forms OSGi服务来渲染请求的表单。
+Sling脚本是JSP脚本。 这些JSP脚本用作容器，用于将所请求表单的HTML和所需的JS/CSS工件组合在一起。 这些Sling脚本也称为&#x200B;**配置文件渲染器脚本**。 配置文件渲染器调用Forms OSGi服务来渲染请求的表单。
 
 POST对于GET和POST请求，配置文件脚本位于html.jsp和html.request.jsp中。 您可以复制和修改一个或多个文件以覆盖和添加自定义项。 不进行任何就地更改，修补程序更新将覆盖此类更改。
 
@@ -58,28 +58,28 @@ footer.jsp模块为空。 它允许您添加仅用于用户交互的脚本。
 
 ### 创建配置文件节点 {#create-profile-node}
 
-1. 导航到CRX DE接口，网址为： `https://'[server]:[port]'/crx/de` 并使用管理员凭据登录到界面。
+1. 导航到URL为`https://'[server]:[port]'/crx/de`的CRX DE界面，然后使用管理员凭据登录该界面。
 
-1. 在左窗格中，导航到位置 */content/xfaforms/profiles*.
+1. 在左窗格中，导航到位置&#x200B;*/content/xfaforms/profiles*。
 
-1. 复制节点默认值，并将节点粘贴到其他文件夹中(*/content/profiles*)，其名称为 *hrform*.
+1. 复制节点默认值，并将该节点粘贴到名为&#x200B;*hrform*&#x200B;的不同文件夹(*/content/profiles*)中。
 
-1. 选择新节点， *hrform*，并添加字符串属性： *sling：resourceType* 值： *hrform/demo*.
+1. 选择新节点&#x200B;*hrform*，然后添加一个字符串属性： *sling：resourceType*，其值： *hrform/demo*。
 
 1. 单击工具栏菜单中的“全部保存”以保存更改。
 
 ### 创建配置文件渲染器脚本 {#create-the-profile-renderer-script}
 
-创建自定义配置文件后，将渲染信息添加到此配置文件。 在收到对新配置文件的请求时，CRX会验证要呈现的JSP页面的/apps文件夹是否存在。 在/apps文件夹中创建JSP页。
+创建自定义配置文件后，将渲染信息添加到此配置文件。 在收到新配置文件的请求时，CRX会验证要呈现的JSP页的/apps文件夹是否存在。 在/apps文件夹中创建JSP页。
 
-1. 在左窗格中，导航到 `/apps` 文件夹。
-1. 右键单击 `/apps` 文件夹并选择创建名为的文件夹 **hrform**.
-1. 内部人员 **hrform** 文件夹创建名为的文件夹 **演示**.
-1. 单击 **全部保存** 按钮。
-1. 导航到 `/libs/xfaforms/profile/html.jsp` 并复制节点 **html.jsp**.
-1. 粘贴 **html.jsp** 节点移入 `/apps/hrform/demo` 上面创建的具有相同名称的文件夹 **html.jsp** 并单击 **保存**.
+1. 在左窗格中，导航到`/apps`文件夹。
+1. 右键单击`/apps`文件夹，然后选择创建名为&#x200B;**hrform**&#x200B;的文件夹。
+1. **hrform**&#x200B;文件夹的内部人员创建名为&#x200B;**demo**&#x200B;的文件夹。
+1. 单击&#x200B;**全部保存**&#x200B;按钮。
+1. 导航到`/libs/xfaforms/profile/html.jsp`并复制节点&#x200B;**html.jsp**。
+1. 将&#x200B;**html.jsp**&#x200B;节点粘贴到上面创建的同名&#x200B;**html.jsp**&#x200B;的`/apps/hrform/demo`文件夹中，然后单击&#x200B;**保存**。
 1. 如果您有配置文件脚本的任何其他组件，请按照步骤1-6复制/apps/hrform/demo文件夹中的组件。
 
 1. 要验证是否已创建配置文件，请打开URL `https://'[server]:[port]'/content/xfaforms/profiles/hrform.html`
 
-要验证您的表单， [导入您的表单](/help/forms/using/get-xdp-pdf-documents-aem.md) 从本地文件系统到AEM Forms和 [预览表单](/help/forms/using/previewing-forms.md) 在AEM服务器创作实例上。
+要验证您的表单，请[将表单从本地文件系统导入](/help/forms/using/get-xdp-pdf-documents-aem.md)到AEM Forms，并在AEM服务器创作实例上[预览表单](/help/forms/using/previewing-forms.md)。

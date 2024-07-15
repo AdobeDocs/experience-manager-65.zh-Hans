@@ -34,21 +34,21 @@ PDF/A-1规范包含两个一致性级别，即A和B。两个级别之间的主�
  </DDX>
 ```
 
-在此DDX文档中， `DocumentInformation` 元素指示Assembler服务返回有关输入PDF文档的信息。 在 `DocumentInformation` 元素， `PDFAValidation` 元素指示Assembler服务指示输入PDF文档是否符合PDF/A。
+在此DDX文档中，`DocumentInformation`元素指示Assembler服务返回有关输入PDF文档的信息。 在`DocumentInformation`元素中，`PDFAValidation`元素指示Assembler服务指示输入PDF文档是否符合PDF/A标准。
 
-Assembler服务返回指定输入PDF文档在包含的XML文档中是否符合PDF/A标准的信息 `PDFAConformance` 元素。 如果输入PDF文档符合PDF/A标准，则其值 `PDFAConformance` 元素的 `isCompliant` 属性为 `true`. 如果PDF文档不符合PDF/A标准，则 `PDFAConformance` 元素的 `isCompliant` 属性为 `false`.
-
->[!NOTE]
->
->因为在此部分中指定的DDX文档包含 `DocumentInformation` 元素时，Assembler服务返回XML数据而不是PDF文档。 也就是说，Assembler服务不组装或拆卸PDF文档；它返回有关XML文档中输入PDF文档的信息。
+Assembler服务返回指定输入PDF文档在包含`PDFAConformance`元素的XML文档中是否符合PDF/A标准的信息。 如果输入PDF文档与PDF/A兼容，`PDFAConformance`元素的`isCompliant`属性的值为`true`。 如果PDF文档不符合PDF/A标准，则`PDFAConformance`元素的`isCompliant`属性的值为`false`。
 
 >[!NOTE]
 >
->有关汇编程序服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>由于此节中指定的DDX文档包含`DocumentInformation`元素，因此Assembler服务返回XML数据，而不是PDF文档。 也就是说，Assembler服务不组装或拆卸PDF文档；它返回有关XML文档中输入PDF文档的信息。
 
 >[!NOTE]
 >
->有关DDX文档的详细信息，请参见 [汇编程序服务和DDX参考](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>有关Assembler服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+
+>[!NOTE]
+>
+>有关DDX文档的更多信息，请参阅[汇编程序服务和DDX引用](https://www.adobe.com/go/learn_aemforms_ddx_63)。
 
 ## 步骤摘要 {#summary-of-steps}
 
@@ -74,7 +74,7 @@ Assembler服务返回指定输入PDF文档在包含的XML文档中是否符合PD
 * adobe-utilities.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
 * jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
 
-如果AEM Forms部署在除JBoss之外的受支持J2EE应用程序服务器上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为JAR文件，这些文件特定于部署AEM Forms的J2EE应用程序服务器。 有关所有AEM Forms JAR文件的位置的信息，请参见 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+如果AEM Forms部署在除JBoss之外的受支持J2EE应用程序服务器上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为JAR文件，这些文件特定于部署AEM Forms的J2EE应用程序服务器。 有关所有AEM Forms JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建PDF汇编程序客户端**
 
@@ -82,7 +82,7 @@ Assembler服务返回指定输入PDF文档在包含的XML文档中是否符合PD
 
 **引用现有DDX文档**
 
-必须引用DDX文档才能执行Assembler服务操作。 要确定输入PDF文档是否符合PDF/A标准，请确保DDX文档包含 `PDFAValidation` 中的元素 `DocumentInformation` 元素。 此 `PDFAValidation` 元素指示Assembler服务返回指定输入PDF文档是否符合PDF/A标准的XML文档。
+必须引用DDX文档才能执行Assembler服务操作。 要确定输入PDF文档是否符合PDF/A标准，请确保DDX文档在`DocumentInformation`元素中包含`PDFAValidation`元素。 `PDFAValidation`元素指示Assembler服务返回指定输入PDF文档是否符合PDF/A标准的XML文档。
 
 **引用用于确定PDF/A合规性的PDF文档**
 
@@ -90,11 +90,11 @@ Assembler服务返回指定输入PDF文档在包含的XML文档中是否符合PD
 
 **设置运行时选项**
 
-您可以设置运行时选项，以控制Assembler服务执行作业时的行为。 例如，您可以设置一个选项，在遇到错误时指示Assembler服务继续处理作业。 有关可设置的运行时选项的信息，请参见 `AssemblerOptionSpec` 中的类引用 [AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+您可以设置运行时选项，以控制Assembler服务执行作业时的行为。 例如，您可以设置一个选项，在遇到错误时指示Assembler服务继续处理作业。 有关可设置的运行时选项的信息，请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)中的`AssemblerOptionSpec`类引用。
 
 **检索有关PDF文档的信息**
 
-创建Assembler服务客户端、引用DDX文档、引用交互式PDF文档并设置运行时选项后，可以调用 `invokeDDX` 操作。 因为DDX文档包含 `DocumentInformation` 元素时，Assembler服务返回XML数据而不是PDF文档。
+创建Assembler服务客户端、引用DDX文档、引用交互式PDF文档并设置运行时选项后，可以调用`invokeDDX`操作。 由于DDX文档包含`DocumentInformation`元素，因此Assembler服务返回XML数据，而不是PDF文档。
 
 **保存返回的XML文档**
 
@@ -128,50 +128,50 @@ Assembler服务返回的XML文档指定输入PDF文档是否符合PDF/A。 例�
 
 1. 创建PDF汇编程序客户端。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `AssemblerServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用构造函数创建`AssemblerServiceClient`对象并传递`ServiceClientFactory`对象。
 
 1. 引用现有DDX文档。
 
-   * 创建 `java.io.FileInputStream` 通过使用其构造函数并传递指定DDX文件位置的字符串值来表示DDX文档的对象。 要确定PDF文档是否符合PDF/A标准，请确保DDX文档包含 `PDFAValidation` 包含在以下项中的元素 `DocumentInformation` 元素。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 通过使用其构造函数并传递指定DDX文件位置的字符串值，创建表示DDX文档的`java.io.FileInputStream`对象。 要确定PDF文档是否符合PDF/A标准，请确保DDX文档包含包含在`DocumentInformation`元素中的`PDFAValidation`元素。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 引用用于确定PDF/A合规性的PDF文档。
 
-   * 创建 `java.io.FileInputStream` 对象，使用对象的构造函数并传递用于确定PDF/A合规性的PDF文档的位置。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 包含PDF文档的对象。
-   * 创建 `java.util.Map` 使用存储输入PDF文档的对象 `HashMap` 构造函数。
-   * 将条目添加到 `java.util.Map` 对象(通过调用其 `put` 方法并传递以下参数：
+   * 使用对象的构造函数创建`java.io.FileInputStream`对象，并传递用于确定PDF/A合规性的PDF文档的位置。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象，并传递包含PDF文档的`java.io.FileInputStream`对象。
+   * 使用`HashMap`构造函数创建用于存储输入PDF文档的`java.util.Map`对象。
+   * 通过调用其`put`方法并传递以下参数，向`java.util.Map`对象添加一个条目：
 
       * 表示键名的字符串值。 此值必须与DDX文档中指定的源元素的值匹配。 例如，本节介绍的DDX文档中源元素的值为Loan.pdf。
-      * A `com.adobe.idp.Document` 包含输入PDF文档的对象。
+      * 包含输入PDF文档的`com.adobe.idp.Document`对象。
 
 1. 设置运行时选项。
 
-   * 创建 `AssemblerOptionSpec` 使用构造函数存储运行时选项的对象。
-   * 通过调用属于 `AssemblerOptionSpec` 对象。 例如，要指示Assembler服务在发生错误时继续处理作业，请调用 `AssemblerOptionSpec` 对象的 `setFailOnError` 方法和路径 `false`.
+   * 使用构造函数创建存储运行时选项的`AssemblerOptionSpec`对象。
+   * 通过调用属于`AssemblerOptionSpec`对象的方法，设置运行时选项以满足您的业务要求。 例如，要指示Assembler服务在发生错误时继续处理作业，请调用`AssemblerOptionSpec`对象的`setFailOnError`方法并传递`false`。
 
 1. 检索有关PDF文档的信息。
 
-   调用 `AssemblerServiceClient` 对象的 `invokeDDX` 方法，并传递以下必需值：
+   调用`AssemblerServiceClient`对象的`invokeDDX`方法并传递以下必需值：
 
-   * A `com.adobe.idp.Document` 表示要使用的DDX文档的对象
-   * A `java.util.Map` 包含用于确定PDF/A兼容性的输入PDF文件的对象
-   * A `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` 指定运行时选项的对象
+   * 表示要使用的DDX文档的`com.adobe.idp.Document`对象
+   * 包含用于确定PDF/A兼容性的输入PDF文件的`java.util.Map`对象
+   * 指定运行时选项的`com.adobe.livecycle.assembler.client.AssemblerOptionSpec`对象
 
-   此 `invokeDDX` 方法返回 `com.adobe.livecycle.assembler.client.AssemblerResult` 包含指定输入PDF文档是否符合PDF/A标准的XML数据的对象。
+   `invokeDDX`方法返回包含指定输入PDF文档是否符合PDF/A标准的XML数据的`com.adobe.livecycle.assembler.client.AssemblerResult`对象。
 
 1. 保存返回的XML文档。
 
    要获取指定输入PDF文档是否为PDF/A文档的XML数据，请执行以下步骤：
 
-   * 调用 `AssemblerResult` 对象的 `getDocuments` 方法。 这会返回 `java.util.Map` 对象。
-   * 循环访问 `java.util.Map` 对象，直到找到结果为止 `com.adobe.idp.Document` 对象。
-   * 调用 `com.adobe.idp.Document` 对象的 `copyToFile` 用于提取XML文档的方法。 确保将XML数据另存为XML文件。
+   * 调用`AssemblerResult`对象的`getDocuments`方法。 这将返回`java.util.Map`对象。
+   * 反复查找`java.util.Map`对象，直到找到结果`com.adobe.idp.Document`对象。
+   * 调用`com.adobe.idp.Document`对象的`copyToFile`方法来提取XML文档。 确保将XML数据另存为XML文件。
 
 **另请参阅**
 
-[快速入门(SOAP模式)：使用Java API确定文档是否符合PDF/A标准](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api) (SOAP模式)
+[快速入门(SOAP模式)：使用Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)(SOAP模式)确定文档是否符合PDF/A标准
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -183,68 +183,68 @@ Assembler服务返回的XML文档指定输入PDF文档是否符合PDF/A。 例�
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建PDF汇编程序客户端。
 
-   * 创建 `AssemblerServiceClient` 对象使用默认构造函数。
-   * 创建 `AssemblerServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/AssemblerService?blob=mtom`)。 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `AssemblerServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`AssemblerServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`AssemblerServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/AssemblerService?blob=mtom`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`AssemblerServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `AssemblerServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+      * 将AEM表单用户名分配给字段`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`AssemblerServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用现有DDX文档。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储DDX文档。
-   * 创建 `System.IO.FileStream` 对象，方法是：调用其构造函数，并传递一个字符串值，该值表示DDX文档的文件位置以及用于打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储DDX文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示DDX文档的文件位置以及用于打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 引用用于确定PDF/A合规性的PDF文档。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储输入PDF文档。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示输入PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 属性与字节数组的内容。
-   * 创建 `MyMapOf_xsd_string_To_xsd_anyType` 对象。 此收藏集对象用于存储PDF文档。
-   * 创建 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象。
-   * 将代表键名的字符串值分配给 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象的 `key` 字段。 此值必须与DDX文档中指定的PDF源元素的值匹配。
-   * 分配 `BLOB` 将PDF文档存储到的对象 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象的 `value` 字段。
-   * 添加 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象 `MyMapOf_xsd_string_To_xsd_anyType` 对象。 调用 `MyMapOf_xsd_string_To_xsd_anyType` 对象 `Add` 方法并传递 `MyMapOf_xsd_string_To_xsd_anyType` 对象。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储输入PDF文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示输入PDF文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容指定其`MTOM`属性以填充`BLOB`对象。
+   * 创建`MyMapOf_xsd_string_To_xsd_anyType`对象。 此收藏集对象用于存储PDF文档。
+   * 创建`MyMapOf_xsd_string_To_xsd_anyType_Item`对象。
+   * 将表示键名的字符串值分配给`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`key`字段。 此值必须与DDX文档中指定的PDF源元素的值匹配。
+   * 将存储PDF文档的`BLOB`对象分配给`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`value`字段。
+   * 将`MyMapOf_xsd_string_To_xsd_anyType_Item`对象添加到`MyMapOf_xsd_string_To_xsd_anyType`对象。 调用`MyMapOf_xsd_string_To_xsd_anyType`对象&#39; `Add`方法并传递`MyMapOf_xsd_string_To_xsd_anyType`对象。
 
 1. 设置运行时选项。
 
-   * 创建 `AssemblerOptionSpec` 使用构造函数存储运行时选项的对象。
-   * 通过为属于以下对象的数据成员分配值，设置运行时选项以满足您的业务要求 `AssemblerOptionSpec` 对象。 例如，要指示Assembler服务在发生错误时继续处理作业，请分配 `false` 到 `AssemblerOptionSpec` 对象的 `failOnError` 数据成员。
+   * 使用构造函数创建存储运行时选项的`AssemblerOptionSpec`对象。
+   * 通过为属于`AssemblerOptionSpec`对象的数据成员分配值，设置运行时选项以满足您的业务要求。 例如，要指示Assembler服务在发生错误时继续处理作业，请将`false`分配给`AssemblerOptionSpec`对象的`failOnError`数据成员。
 
 1. 检索有关PDF文档的信息。
 
-   调用 `AssemblerServiceService` 对象的 `invoke` 方法并传递以下值：
+   调用`AssemblerServiceService`对象的`invoke`方法并传递以下值：
 
-   * A `BLOB` 表示DDX文档的对象。
-   * 此 `MyMapOf_xsd_string_To_xsd_anyType` 包含输入PDF文档的对象。 其键必须与PDF源文件的名称匹配，其值必须是 `BLOB` 与输入PDF文件对应的对象。
-   * An `AssemblerOptionSpec` 指定运行时选项的对象。
+   * 表示DDX文档的`BLOB`对象。
+   * 包含输入PDF文档的`MyMapOf_xsd_string_To_xsd_anyType`对象。 其键必须与PDF源文件的名称匹配，并且其值必须是与输入PDF文件相对应的`BLOB`对象。
+   * 指定运行时选项的`AssemblerOptionSpec`对象。
 
-   此 `invoke` 方法返回 `AssemblerResult` 包含XML数据的对象，用于指定输入PDF文档是否为PDF/A文档。
+   `invoke`方法返回包含指定输入PDF文档是否为PDF/A文档的XML数据的`AssemblerResult`对象。
 
 1. 保存返回的XML文档。
 
    要获取指定输入PDF文档是否为PDF/A文档的XML数据，请执行以下步骤：
 
-   * 访问 `AssemblerResult` 对象的 `documents` 字段，即 `Map` 包含指定输入PDF文档是否为PDF/A文档的XML数据的对象。
-   * 循环访问 `Map` 对象以获取每个结果文档。 然后，将该数组成员的值转换为 `BLOB`.
-   * 通过访问代表XML数据的二进制数据 `BLOB` 对象的 `MTOM` 字段。 此字段存储可作为XML文件写入的字节数组。
+   * 访问`AssemblerResult`对象的`documents`字段，该字段是一个`Map`对象，其中包含指定输入PDF文档是否为PDF/A文档的XML数据。
+   * 对`Map`对象进行迭代以获取每个结果文档。 然后，将该数组成员的值转换为`BLOB`。
+   * 通过访问其`BLOB`对象的`MTOM`字段提取表示XML数据的二进制数据。 此字段存储可作为XML文件写入的字节数组。
 
 **另请参阅**
 

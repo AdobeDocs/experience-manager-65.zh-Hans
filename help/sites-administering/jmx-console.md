@@ -21,9 +21,9 @@ ht-degree: 0%
 
 通过JMX控制台，您可以监视和管理CRX服务器上的服务。 后面的部分总结了通过JMX框架公开的属性和操作。
 
-有关如何使用控制台控件的信息，请参见 [使用JMX控制台](#using-the-jmx-console). 有关JMX的背景信息，请参见 [Java管理扩展(JMX)技术](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) oracle网站上的页面。
+有关如何使用控制台控件的信息，请参阅[使用JMX控制台](#using-the-jmx-console)。 有关JMX的背景信息，请参阅Oracle网站上的[Java Management Extensions (JMX)技术](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html)页。
 
-有关创建MBean以使用JMX控制台管理服务的信息，请参见 [将服务与JMX控制台集成](/help/sites-developing/jmx-integration.md).
+有关创建MBean以使用JMX控制台管理服务的信息，请参阅[将服务与JMX控制台集成](/help/sites-developing/jmx-integration.md)。
 
 ## 工作流维护 {#workflow-maintenance}
 
@@ -34,21 +34,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->请参阅 [工作流控制台](/help/sites-administering/workflows-administering.md) 以获取其他工作流管理工具以及可能的工作流实例状态的描述。
+>有关其他工作流管理工具和可能的工作流实例状态的说明，请参阅[工作流控制台](/help/sites-administering/workflows-administering.md)。
 
 ### 运营 {#operations}
 
-**listRunningWorkflowsPerModel** 列出为每个工作流模型运行的工作流实例数。
+**listRunningWorkflowsPerModel**&#x200B;列出每个工作流模型正在运行的工作流实例数。
 
 * 参数：无
 * 返回的值：包含Count和ModelId列的表格式数据。
 
-**listCompletedWorkflowsPerModel** 列出每个工作流模型的已完成工作流实例数。
+**listCompletedWorkflowsPerModel**&#x200B;列出每个工作流模型的已完成工作流实例数。
 
 * 参数：无
 * 返回的值：包含Count和ModelId列的表格式数据。
 
-**returnWorkflowQueueInfo** 列出有关已处理的工作流项目以及已排队等待处理的工作流项目的信息。
+**returnWorkflowQueueInfo**&#x200B;列出有关已处理的工作流项和已排队等待处理的工作流项的信息。
 
 * 参数：无
 * 返回值：包含以下列的表格式数据：
@@ -64,7 +64,7 @@ ht-degree: 0%
    * 已处理的作业
    * 排队的作业
 
-**returnWorkflowJobTopicInfo** 列出工作流作业的处理信息，按主题组织。
+**returnWorkflowJobTopicInfo**&#x200B;按主题列出工作流作业的处理信息。
 
 * 参数：无
 * 返回值：包含以下列的表格式数据：
@@ -77,7 +77,7 @@ ht-degree: 0%
    * 已完成的作业
    * 已处理的作业
 
-**returnFailedWorkflowCount** 显示失败的工作流实例数。 您可以指定工作流模型来查询或检索所有工作流模型的信息。
+**returnFailedWorkflowCount**&#x200B;显示失败的工作流实例数。 您可以指定工作流模型来查询或检索所有工作流模型的信息。
 
 * 参数：
 
@@ -87,17 +87,17 @@ ht-degree: 0%
 
 * 返回的值：失败的工作流实例数。
 
-**returnFailedWorkflowCountPerModel** 显示每个工作流模型失败的工作流实例数。
+**returnFailedWorkflowCountPerModel**&#x200B;显示每个工作流模型失败的工作流实例数。
 
 * 参数：无。
 * 返回的值：包含“计数”和“模型ID”列的表格数据。
 
-**terminateFailedInstances** 终止失败的工作流实例。 您可以终止所有失败的实例，或仅终止特定模型的失败实例。 或者，您可以在实例终止后重新启动实例。 也可以测试操作以查看结果，而无需实际执行该操作。
+**terminateFailedInstances**&#x200B;终止失败的工作流实例。 您可以终止所有失败的实例，或仅终止特定模型的失败实例。 或者，您可以在实例终止后重新启动实例。 也可以测试操作以查看结果，而无需实际执行该操作。
 
 * 参数：
 
-   * 重新启动实例： （可选）指定值 `true` 在实例终止后重新启动实例。 默认值 `false` 导致无法重新启动已终止的工作流实例。
-   * 试运行： （可选）指定值 `true` 查看操作的结果，而不实际执行该操作。 默认值 `false` 导致执行操作。
+   * 重新启动实例： （可选）指定值`true`以在实例终止后重新启动实例。 默认值`false`导致无法重新启动已终止的工作流实例。
+   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
    * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的失败实例。 ID是模型节点的路径，例如：
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
@@ -111,11 +111,11 @@ ht-degree: 0%
    * 开始注释
    * 工作流标题
 
-**retryFailedWorkItems** 尝试执行失败的工作项步骤。 您可以针对特定工作流模型重试所有失败的工作项或仅重试失败的工作项。 您可以选择测试工序以查看结果，而无需实际执行该工序。
+**retryFailedWorkItems**&#x200B;尝试执行工作项步骤失败。 您可以针对特定工作流模型重试所有失败的工作项或仅重试失败的工作项。 您可以选择测试工序以查看结果，而无需实际执行该工序。
 
 * 参数：
 
-   * 试运行： （可选）指定值 `true` 查看操作的结果，而不实际执行该操作。 默认值 `false` 导致执行操作。
+   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
    * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的失败工作项。 ID是模型节点的路径，例如：
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
@@ -129,7 +129,7 @@ ht-degree: 0%
    * 开始注释
    * 工作流标题
 
-**清除活动** 删除特定页面的活动工作流实例。 您可以清除所有模型的活动实例，或仅清除特定模型的实例。 您可以选择测试工序以查看结果，而无需实际执行该工序。
+**PurgeActive**&#x200B;删除特定时期的活动工作流实例。 您可以清除所有模型的活动实例，或仅清除特定模型的实例。 您可以选择测试工序以查看结果，而无需实际执行该工序。
 
 * 参数：
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * 自工作流启动以来的天数：要清除的工作流实例的时限（以天为单位）。
-   * 试运行： （可选）指定值 `true` 查看操作的结果，而不实际执行该操作。 默认值 `false` 导致执行操作。
+   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
 
 * 返回值：有关已清除的活动工作流实例的表格数据，包括以下列：
 
@@ -148,7 +148,7 @@ ht-degree: 0%
    * 开始注释
    * 工作流标题
 
-**countStaleWorkflows** 返回失效的工作流实例数。 您可以检索所有工作流模型或特定模型的过时实例数。
+**countStaleWorkflows**&#x200B;返回过期的工作流实例数。 您可以检索所有工作流模型或特定模型的过时实例数。
 
 * 参数：
 
@@ -158,23 +158,23 @@ ht-degree: 0%
 
 * 返回的值：过期的工作流实例数。
 
-**restartStaleWorkflows** 重新启动过时的工作流实例。 您可以重新启动所有过时实例，或仅重新启动特定模型的过时实例。 也可以测试操作以查看结果，而无需实际执行该操作。
+**restartStaleWorkflows**&#x200B;重新启动过时的工作流实例。 您可以重新启动所有过时实例，或仅重新启动特定模型的过时实例。 也可以测试操作以查看结果，而无需实际执行该操作。
 
 * 参数：
 
    * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的过时实例。 ID是模型节点的路径，例如：
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * 试运行： （可选）指定值 `true` 查看操作的结果，而不实际执行该操作。 默认值 `false` 导致执行操作。
+   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
 
 * 返回的值：已重新启动的工作流实例的列表。
 
-**fetchModelList** 列出所有工作流模型。
+**fetchModelList**&#x200B;列出所有工作流模型。
 
 * 参数：无
 * 返回值：标识工作流模型（包括ModelId和ModelName列）的表格数据。
 
-**countRunningWorkflows** 返回正在运行的工作流实例数。 您可以检索所有工作流模型或特定模型的运行实例数。
+**countRunningWorkflows**&#x200B;返回正在运行的工作流实例数。 您可以检索所有工作流模型或特定模型的运行实例数。
 
 * 参数：
 
@@ -184,7 +184,7 @@ ht-degree: 0%
 
 * 返回的值：正在运行的工作流实例的数量。
 
-**countCompletedWorkflows** 返回已完成的工作流实例数。 您可以检索所有工作流模型或特定模型的已完成实例数。
+**countCompletedWorkflows**&#x200B;返回已完成的工作流实例数。 您可以检索所有工作流模型或特定模型的已完成实例数。
 
 * 参数：
 
@@ -194,7 +194,7 @@ ht-degree: 0%
 
 * 返回的值：已完成的工作流实例的数量。
 
-**purgeCompleted** 从存储库中删除已完成的特定页面工作流记录。 当您大量使用工作流时，请定期使用此操作以最大限度地减小存储库的大小。 您可以清除所有模型的已完成实例，或仅清除特定模型的实例。 您可以选择测试工序以查看结果，而无需实际执行该工序。
+**purgeCompleted**&#x200B;从存储库中删除已完成的特定时期工作流的记录。 当您大量使用工作流时，请定期使用此操作以最大限度地减小存储库的大小。 您可以清除所有模型的已完成实例，或仅清除特定模型的实例。 您可以选择测试工序以查看结果，而无需实际执行该工序。
 
 * 参数：
 
@@ -202,7 +202,7 @@ ht-degree: 0%
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * 自工作流完成以来的天数：工作流实例处于已完成状态的天数。
-   * 试运行： （可选）指定值 `true` 查看操作的结果，而不实际执行该操作。 默认值 `false` 导致执行操作。
+   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
 
 * 返回值：有关已清除的已完成工作流实例的表格数据，包括以下列：
 
@@ -224,26 +224,26 @@ ht-degree: 0%
 
 **名称** JCR存储库实施的名称。 只读。
 
-**版本** 存储库实施版本。 只读。
+**版本**&#x200B;存储库实施版本。 只读。
 
-**HomeDir** 存储库所在的目录。 默认位置为 &lt;quickstart_jar_location>/crx-quickstart/repository。 只读。
+**HomeDir**&#x200B;存储库所在的目录。 默认位置为&lt;QuickStart_Jar_Location>/crx-quickstart/repository。 只读。
 
-**客户名称** 向其颁发软件许可证的客户的名称。 只读。
+**CustomerName**&#x200B;软件许可证颁发给的客户的名称。 只读。
 
-**许可证密钥** 用于此存储库安装的唯一许可证密钥。 只读。
+**LicenseKey**&#x200B;此存储库安装的唯一许可证密钥。 只读。
 
-**可用磁盘空间** 此存储库实例可用的磁盘空间（以MB为单位）。 只读。
+**可用磁盘空间**&#x200B;此存储库实例可用的磁盘空间（以MB为单位）。 只读。
 
-**MaximumNumberOfOpenFiles** 一次可以打开的文件数。 只读。
+**MaximumNumberOfOpenFiles**&#x200B;一次可以打开的文件数。 只读。
 
 **SessionTracker** crx.debug.sessions系统变量的值。 true表示调试会话。 false表示正常会话。 读/写。
 
-**描述符** 表示存储库属性的一组键值对。 所有属性均为只读。
+**描述符**&#x200B;表示存储库属性的键值对集。 所有属性均为只读。
 
 <table>
  <tbody>
   <tr>
-   <th>关键值</th>
+   <th>键</th>
    <th>价值</th>
   </tr>
   <tr>
@@ -488,21 +488,21 @@ ht-degree: 0%
  </tbody>
 </table>
 
-**工作区名称** 存储库中工作区的名称。 只读。
+**工作区名称**&#x200B;存储库中工作区的名称。 只读。
 
-**DataStoreGarbageCollectionDelay** 扫描每10个节点后垃圾收集休眠的时间（以毫秒为单位）。 读/写。
+**DataStoreGarbageCollectionDelay**&#x200B;扫描每10个节点后垃圾收集休眠的时间（以毫秒为单位）。 读/写。
 
-**BackupDelay** 备份过程在备份的每个步骤之间休眠的时间（以毫秒为单位）。 读/写。
+**BackupDelay**&#x200B;备份过程在备份的每个步骤之间休眠的时间（以毫秒为单位）。 读/写。
 
-**备份进行中** 值为true表示正在执行备份进程。 只读。
+**BackupInProgress** true值表示正在执行备份进程。 只读。
 
-**备份进度** 对于当前备份，已备份的所有文件的百分比。 只读。
+**BackupProgress**&#x200B;对于当前备份，已备份的所有文件的百分比。 只读。
 
-**当前备份目标** 对于当前备份，为存储备份文件的ZIP文件。 当备份未进行时，不会显示任何值。 只读。
+**CurrentBackupTarget**&#x200B;对于当前备份，为存储备份文件的ZIP文件。 当备份未进行时，不会显示任何值。 只读。
 
-**BackupWasSuccessful** 值为true表示当前备份期间没有发生错误，或者没有进行备份。 false表示当前备份期间出错。 只读。
+**BackupWasSuccessful**&#x200B;值为true表示当前备份期间没有发生错误，或者没有正在进行备份。 false表示当前备份期间出错。 只读。
 
-**BackupResult** 当前备份的状态。 可以使用以下值：
+**BackupResult**&#x200B;当前备份的状态。 可以使用以下值：
 
 * 正在进行备份：当前正在执行备份。
 * 已取消备份：已取消备份。
@@ -512,23 +512,23 @@ ht-degree: 0%
 
 只读。
 
-**TarOptimizationRunningSince** 当前TAR文件优化过程的开始时间。 只读。
+**TarOptimizationRunningSince**&#x200B;当前TAR文件优化进程开始的时间。 只读。
 
-**TarOptimizationDelay** TAR优化进程在进程每个步骤之间休眠的时间（以毫秒为单位）。 读/写。
+**TarOptimizationDelay** TAR优化进程在每个步骤之间休眠的时间（以毫秒为单位）。 读/写。
 
-**群集属性** 表示群集属性和值的一组键值对。 表中的每一行代表一个群集属性。 只读。
+**ClusterProperties**&#x200B;表示群集属性和值的一组键值对。 表中的每一行代表一个群集属性。 只读。
 
-**群集节点** 存储库群集的成员。
+**ClusterNodes**&#x200B;存储库群集的成员。
 
-**群集ID** 此存储库集群的标识符。 只读。
+**ClusterId**&#x200B;此存储库群集的标识符。 只读。
 
-**ClusterMasterId** 此存储库群集的主节点的标识符。 只读。
+**ClusterMasterId**&#x200B;此存储库群集的主节点的标识符。 只读。
 
-**ClusterNodeId** 存储库群集的此节点的标识符。 只读。
+**ClusterNodeId**&#x200B;存储库群集的此节点的标识符。 只读。
 
 ### 运营 {#operations-1}
 
-**createWorkspace** 在此存储库中创建工作区。
+**createWorkspace**&#x200B;在此存储库中创建工作区。
 
 * 参数：
 
@@ -536,7 +536,7 @@ ht-degree: 0%
 
 * 返回值：无
 
-**runDataStoreGarbageCollection** 对存储库节点执行垃圾回收。
+**runDataStoreGarbageCollection**&#x200B;对存储库节点执行垃圾收集。
 
 * 参数：
 
@@ -544,51 +544,51 @@ ht-degree: 0%
 
 * 返回值：无
 
-**stopDataStoreGarbageCollection** 停止正在运行的数据存储垃圾收集。
+**stopDataStoreGarbageCollection**&#x200B;停止正在运行的数据存储垃圾收集。
 
 * 参数：无
 * 返回值：当前状态的字符串表示形式
 
-**startBackup** 以ZIP文件备份存储库数据。
+**startBackup**&#x200B;在ZIP文件中备份存储库数据。
 
 * 参数：
 
-   * `target`：（可选）A `String` 值，表示要将存储库数据存档到的ZIP文件或目录的名称。 要使用ZIP文件，请包含ZIP文件扩展名。 要使用目录，请不要包含文件扩展名。
+   * `target`：（可选）一个`String`值，表示要将存储库数据存档到的ZIP文件或目录的名称。 要使用ZIP文件，请包含ZIP文件扩展名。 要使用目录，请不要包含文件扩展名。
 
      要执行增量备份，请指定以前用于备份的目录。
 
      您可以指定绝对路径或相对路径。 相对路径相对于crx-quickstart目录的父级路径。
 
-     未指定值时，默认值为 `backup-currentdate.zip` 被使用，其中 `currentdate` 采用格式 `yyyyMMdd-HHmm`.
+     未指定值时，将使用默认值`backup-currentdate.zip`，其中`currentdate`的格式为`yyyyMMdd-HHmm`。
 
 * 返回值：无
 
-**取消备份** 停止当前的备份过程，并删除该过程为归档数据而创建的临时归档。
+**cancelBackup**&#x200B;停止当前的备份进程，并删除该进程为存档数据而创建的临时存档。
 
 * 参数：无
 * 返回值：无
 
-**blockrepositorwrites** 阻止对存储库数据进行更改。 所有资料库备份侦听程序都会收到有关该块的通知。
+**blockRepositoryWrites**&#x200B;阻止对存储库数据的更改。 所有资料库备份侦听程序都会收到有关该块的通知。
 
 * 参数：无
 * 返回值：无
 
-**unblockRepositoryWrites** 从存储库中删除块。 所有资料库备份侦听程序都会收到块删除的通知。
+**unblockRepositoryWrites**&#x200B;从存储库中删除块。 所有资料库备份侦听程序都会收到块删除的通知。
 
 * 参数：无
 * 返回值：无
 
-**startTarOptimization** 使用tarOptimizationDelay的缺省值启动TAR文件优化过程。
+**startTarOptimization**&#x200B;使用tarOptimizationDelay的默认值启动TAR文件优化过程。
 
 * 参数：无
 * 返回值：无
 
-**stopTarOptimization** 停止TAR文件优化。
+**stopTarOptimization**&#x200B;停止TAR文件优化。
 
 * 参数：无
 * 返回值：无
 
-**tarIndexMerge** 合并所有TAR集的顶级索引文件。 顶级索引文件是具有不同主版本的文件。 例如，以下文件将合并到文件index_3_1.tar中： index_1_1.tar 、 index_2_0.tar 、 index_3_0.tar。 已合并的文件将被删除（在前面的示例中，删除了index_1_1.tar、index_2_0.tar和index_3_0.tar）。
+**tarIndexMerge**&#x200B;合并所有TAR集的顶级索引文件。 顶级索引文件是具有不同主版本的文件。 例如，以下文件将合并到文件index_3_1.tar中： index_1_1.tar 、 index_2_0.tar 、 index_3_0.tar。 已合并的文件将被删除（在前面的示例中，删除了index_1_1.tar、index_2_0.tar和index_3_0.tar）。
 
 * 参数：
 
@@ -596,32 +596,32 @@ ht-degree: 0%
 
 * 返回值：无
 
-**beforeClusterMaster** 将此存储库节点设置为群集的主节点。 如果尚未为主节点，则此命令将停止当前主实例的侦听器，并在当前节点上启动主侦听器。 然后，将此节点设置为主节点并重新启动，从而导致群集中的所有其他节点（即由主节点控制的节点）连接到此实例。
+**becomeClusterMaster**&#x200B;将此存储库节点设置为群集的主节点。 如果尚未为主节点，则此命令将停止当前主实例的侦听器，并在当前节点上启动主侦听器。 然后，将此节点设置为主节点并重新启动，从而导致群集中的所有其他节点（即由主节点控制的节点）连接到此实例。
 
 * 参数：无
 * 返回值：无
 
-**joinCluster** 将此存储库作为由群集主节点控制的节点添加到群集。 提供用户名和密码以进行身份验证。 连接使用基本身份验证。 安全凭据在发送到服务器之前进行base-64编码。
+**joinCluster**&#x200B;将此存储库作为群集主节点添加到群集。 提供用户名和密码以进行身份验证。 连接使用基本身份验证。 安全凭据在发送到服务器之前进行base-64编码。
 
 * 参数：
 
-   * `master`：一个字符串值，表示运行主存储库节点的计算机的IP地址或计算机名称。
-   * `username`：用于向群集进行身份验证的名称。
+   * `master`：一个字符串值，表示运行主存储库节点的计算机的IP地址或计算机名。
+   * `username`：用于对群集进行身份验证的名称。
    * `password`：用于身份验证的密码。
 
 * 返回值：无
 
-**traversalcheck** 遍历子树中的不一致，并可选择修复从特定节点开始的不一致。 有关持久性管理器的文档将对此进行详细介绍。
+**traversalCheck**&#x200B;从特定节点开始遍历子树并可以选择修复其中的不一致。 有关持久性管理器的文档将对此进行详细介绍。
 
-**consistencyCheck** 检查和（可选）修复数据存储中的一致性。 数据存储上的文档将对此进行详细介绍。
+**consistencyCheck**&#x200B;检查并（可选）修复数据存储中的一致性。 数据存储上的文档将对此进行详细介绍。
 
 ## 存储库统计数据（时间序列） {#repository-statistics-timeseries}
 
-每个统计类型的“时间序列”字段的值 `org.apache.jackrabbit.api.stats.RepositoryStatistics` 定义。
+`org.apache.jackrabbit.api.stats.RepositoryStatistics`定义的每种统计类型的TimeSeries字段的值。
 
 * 域： `com.adobe.granite`
 * 类型：`TimeSeries`
-* 名称：以下值之一： `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` 枚举类：
+* 名称： `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Enum类中的以下值之一：
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
@@ -664,22 +664,22 @@ ht-degree: 0%
 
 ### 属性 {#attributes-2}
 
-**慢查询** 有关完成时间最长的存储库查询的信息。 只读。
+**SlowQueries**&#x200B;有关完成时间最长的存储库查询的信息。 只读。
 
-**SlowQueriesQueueSize** SlowQueries列表中包含的最大查询数。 读写。
+**SlowQueriesQueueSize**&#x200B;要包含在SlowQueries列表中的最大查询数。 读写。
 
-**PopularQueries** 有关发生次数最多的存储库查询的信息。 只读。
+**PopularQueries**&#x200B;有关发生次数最多的存储库查询的信息。 只读。
 
 **PopularQueriesQueueSize** PopularQueries列表中的最大查询数。 读写。
 
 ### 运营 {#operations-2}
 
-**clearSlowQueriesQueue** 从SlowQueries列表中删除所有查询。
+**clearSlowQueriesQueue**&#x200B;从SlowQueries列表中删除所有查询。
 
 * 参数：无
 * 返回值：无
 
-**clearPopularQueriesQueue** 从PopularQueries列表中删除所有查询。
+**clearPopularQueriesQueue**&#x200B;从PopularQueries列表中删除所有查询。
 
 * 参数：无
 * 返回值：无
@@ -689,58 +689,58 @@ ht-degree: 0%
 监视每个复制代理的服务。 创建复制代理时，服务会自动显示在JMX控制台中。
 
 * **域：** com.adobe.granite.replication
-* **类型：** 代理
-* **名称：** 无值
-* **属性：** {id=&quot;*名称*“}，其中 *名称* 是代理名称属性的值。
+* **类型：**&#x200B;代理
+* **名称：**&#x200B;没有值
+* **属性：** {id=&quot;*名称*&quot;}，其中&#x200B;*名称*&#x200B;是代理Name属性的值。
 
 ### 属性 {#attributes-3}
 
-**Id** 表示复制代理配置的标识符的字符串值。 多个代理可以使用相同的配置。 只读。
+**Id**&#x200B;表示复制代理配置的标识符的字符串值。 多个代理可以使用相同的配置。 只读。
 
-**有效** 一个布尔值，指示代理配置是否正确：
+**有效**&#x200B;指示代理配置是否正确的布尔值：
 
-* `true`：有效配置。
+* `true`：配置有效。
 * `false` ：配置包含错误。
 
 只读。
 
-**已启用** 指示代理是否已启用的布尔值：
+**已启用**&#x200B;指示代理是否已启用的布尔值：
 
 * `true`：已启用。
 * `false`：已禁用。
 
-**已阻止队列** 一个布尔值，指示队列是否存在且被阻止：
+**QueueBlocked**&#x200B;布尔值，指示队列是否存在且被阻止：
 
 * `true`：已阻止。 正在等待自动重试。
 * `false`：未阻止或不存在。
 
 只读。
 
-**已暂停队列** 一个布尔值，指示作业队列是否已暂停：
+**QueuePaused**&#x200B;指示作业队列是否暂停的布尔值：
 
 * `true`：已暂停（已暂停）
 * `false`：未暂停或不存在。
 
 读写。
 
-**QueueNumEntries** int值，表示代理队列中的作业数。 只读。
+**QueueNumEntries**&#x200B;表示代理队列中的作业数的int值。 只读。
 
-**QueueStatusTime** 日期值，指示获取显示的状态值时服务器上的时间。 该值对应于加载页面的时间。 只读。
+**QueueStatusTime**&#x200B;日期值，指示获取显示的状态值时服务器上的时间。 该值对应于加载页面的时间。 只读。
 
-**QueueNextRetryTime** 对于阻塞的队列，为日期值，指示下次自动重试的时间。 如果没有显示时间，则不会阻止队列。 只读。
+**QueueNextRetryTime**&#x200B;对于被阻止的队列，使用日期值指示下次自动重试的时间。 如果没有显示时间，则不会阻止队列。 只读。
 
-**QueueProcessingSince** 日期值，指示当前作业的处理开始时间。 如果未显示时间，则队列将被阻塞或闲置。 只读。
+**QueueProcessingSince**&#x200B;日期值，指示当前作业的处理开始时间。 如果未显示时间，则队列将被阻塞或闲置。 只读。
 
-**QueueLastProcessTime** 日期值，指示上一个作业完成的时间。 只读。
+**QueueLastProcessTime**&#x200B;指示上一个作业何时完成的日期值。 只读。
 
 ### 运营 {#operations-3}
 
-**queueForceRetry** 对于被阻止的队列，向队列发出重试命令。
+**queueForceRetry**&#x200B;对于被阻止的队列，向队列发出重试命令。
 
 * 参数：无
 * 返回值：无
 
-**queueClear** 从队列中删除所有作业。
+**queueClear**&#x200B;从队列中删除所有作业。
 
 * 参数：无
 * 返回值：无
@@ -755,35 +755,35 @@ ht-degree: 0%
 
 ### 属性 {#attributes-4}
 
-**请求计数** 自上次重置统计信息以来发生的请求数。
+**RequestsCount**&#x200B;自上次重置统计信息以来发生的请求数。
 
-**MinRequestDurationMsec** 自上次重置统计信息以来处理请求所需的最短时间（以毫秒为单位）。
+**MinRequestDurationMsec**&#x200B;自上次重置统计信息以来处理请求所需的最短时间（以毫秒为单位）。
 
-**MaxRequestDurationMsec** 自上次重置统计信息以来，处理请求所需的最长时间（以毫秒为单位）。
+**MaxRequestDuratioMsec**&#x200B;自上次重置统计信息以来，处理请求所需的最长时间（以毫秒为单位）。
 
-**StandardDeviationDurationMsec** 处理请求所需时间的标准偏差。 使用自上次重置统计信息以来的所有请求计算标准偏差。
+**StandardDeviationDurationMsec**&#x200B;处理请求所需时间的标准偏差。 使用自上次重置统计信息以来的所有请求计算标准偏差。
 
-**MeanRequestDurationMsec** 处理请求所需的平均时间。 使用自上次重置统计信息以来的所有请求计算平均值
+**MeanRequestDurationMsec**&#x200B;处理请求所需的平均时间。 使用自上次重置统计信息以来的所有请求计算平均值
 
 ### 运营 {#operations-4}
 
-**resetStatistics** 将所有统计信息设置为零。 当您需要分析特定时间范围内的请求处理性能时，请重置统计信息。
+**resetStatistics**&#x200B;将所有统计信息设置为零。 当您需要分析特定时间范围内的请求处理性能时，请重置统计信息。
 
 * 参数：无
 * 返回值：无
 
-**id** 程序包ID的字符串表示形式。
+**id**&#x200B;包ID的字符串表示形式。
 
-**已安装** 一个布尔值，指示软件包是否已安装：
+**已安装**&#x200B;指示是否已安装包的布尔值：
 
 * `true`：已安装。
 * `false`：未安装。
 
-**installedBy** 上次安装包的用户的ID。
+**installedBy**&#x200B;上次安装包的用户的ID。
 
-**installedDate** 上次安装包的日期。
+**installedDate**&#x200B;上次安装包的日期。
 
-**大小** 长值，保存包的大小（以字节为单位）。
+**size**&#x200B;保存包大小（字节）的长值。
 
 
 ## 快速入门启动器 {#quickstart-launcher}
@@ -801,7 +801,7 @@ ht-degree: 0%
 
 参数：
 
-* p1：A `String` 表示要显示的消息的值。
+* p1：表示要显示的消息的`String`值。
 * 返回值：无
 
 **startupFinished**
@@ -854,7 +854,7 @@ ht-degree: 0%
      <li>运行时</li>
      <li>线程</li>
     </ul> </td>
-   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a> 包</td>
+   <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a>包</td>
   </tr>
   <tr>
    <td>java.util.logging</td>
@@ -870,7 +870,7 @@ ht-degree: 0%
      <li>packageState</li>
      <li>serviceState</li>
     </ul> </td>
-   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a> 包</td>
+   <td><a href="https://osgi.org/specification/osgi.enterprise/7.0.0/service.jmx.html#d0e42567">org.osgi.jmx.framework</a>包</td>
   </tr>
  </tbody>
 </table>
@@ -893,7 +893,7 @@ JMX控制台的主页包括一个服务表。 表中的每一行表示一个由M
 
 ## 使用外部JMX应用程序进行监控 {#using-external-jmx-applications-for-monitoring}
 
-CRX允许外部应用程序通过与Managed Bean (MBean)交互 [Java管理扩展(JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). 使用通用控制台，例如 [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) 或特定于域的监控应用程序，允许获取和设置CRX配置和属性，以及监控性能和资源使用情况。
+CRX允许外部应用程序通过[Java管理扩展(JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html)与托管Bean (MBean)交互。 使用通用控制台（如[JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html)或特定于域的监视应用程序），可以获取和设置CRX配置和属性，以及监视性能和资源使用情况。
 
 ### 使用JConsole连接到CRX {#using-jconsole-to-connect-to-crx}
 
@@ -920,13 +920,13 @@ JConsole将显示本地Java虚拟机进程的列表。 该列表将包含两个�
 
 `com.sun.management.jmxremote.port=portNum`
 
-在上述属性中， `portNum` 是要启用JMX RMI连接的端口号。 请确保指定一个未使用的端口号。 除了发布RMI连接器以进行本地访问外，设置此属性还会在专用只读注册表中使用已知名称“jmxrmi”在指定端口发布其他RMI连接器。
+在上述属性中，`portNum`是您要启用JMX RMI连接的端口号。 请确保指定一个未使用的端口号。 除了发布RMI连接器以进行本地访问外，设置此属性还会在专用只读注册表中使用已知名称“jmxrmi”在指定端口发布其他RMI连接器。
 
 默认情况下，启用JMX代理进行远程监视时，它使用基于密码文件的密码验证，启动Java VM时需要使用以下系统属性指定该密码文件：
 
 `com.sun.management.jmxremote.password.file=pwFilePath`
 
-请参阅 [相关JMX文档](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html) 有关设置密码文件的详细说明。
+有关设置密码文件的详细说明，请参阅[相关的JMX文档](https://docs.oracle.com/javase/6/docs/technotes/guides/management/agent.html)。
 
 示例：
 
@@ -939,11 +939,11 @@ $ java
 
 ### 使用CRX提供的MBean {#using-the-mbeans-provided-by-crx}
 
-连接到快速启动过程后，JConsole为运行CRX的JVM提供了一系列常规监视工具。
+在连接到快速入门流程后，JConsole为CRX所运行的JVM提供了一系列常规监视工具。
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
-要访问CRX的内部监控和配置选项，请转到MBeans选项卡，然后从左侧的层次内容树中选择您感兴趣的属性或操作部分。 例如，com.adobe.granite/Repository/Operations部分。
+要访问CRX的内部监控和配置选项，请转到MBeans选项卡，然后从左侧的分层内容树中，选择您感兴趣的属性或操作部分。 例如，com.adobe.granite/Repository/Operations部分。
 
 在该部分中，在左窗格中选择所需的属性或操作。
 

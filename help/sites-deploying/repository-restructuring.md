@@ -46,7 +46,7 @@ ht-degree: 0%
 * [AEM Assets Dynamic Media存储库重组](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-5.md)
 * [AEM Forms存储库重组](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)
 * [AEM Communities存储库重组](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md)
-* [AEM Commerce存储库重组](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
+* [AEM Commerce存储库重构](/help/sites-deploying/ecommerce-repository-restructuring-in-aem-6-5.md)
 
 每个页面包含两个部分，对应于必要更改的紧迫性。 “使用6.5升级”部分下的任何问题都应在AEM 6.5升级项目中处理。 您可以选择将“将来升级之前”下的任何内容推迟到升级后。
 

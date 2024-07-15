@@ -18,7 +18,7 @@ ht-degree: 9%
 
 # 可重用组件的描述 {#description-of-reusable-components}
 
-AEM Forms工作区由 [可重用](/help/forms/using/integrating-html-ws-components-web.md) 以特定方式组织的组件 [文件夹结构](/help/forms/using/folder-structure.md) 在CRX™中。 每个组件在文件夹结构中指定的位置都有模型、视图和模板文件，JavaScript™依赖于其他组件文件、组件侦听的事件以及在AEM Forms工作区中触发这些事件的JavaScript对象。 此处提供了包含组成文件名和依赖关系的可重用组件的完整列表。
+AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-components-web.md)组件组成，这些组件在CRX™中以特定的[文件夹结构](/help/forms/using/folder-structure.md)组织。 每个组件在文件夹结构中指定的位置都有model、view和template文件，JavaScript™依赖于其他组件文件、由组件侦听的事件以及JavaScript对象，这些事件在AEM Forms workspace中触发。 此处提供了包含组成文件名和依赖关系的可重用组件的完整列表。
 
 ## 任务列表 {#tasklist}
 
@@ -110,7 +110,7 @@ AEM Forms工作区由 [可重用](/help/forms/using/integrating-html-ws-componen
 
 >[!NOTE]
 >
->工作区调用TaskList模型的fetchTasks函数以创建此组件的任务模型。
+>Workspace调用TaskList模型的fetchTasks函数为此组件创建Task模型。
 
 ## 筛选列表 {#filterlist}
 
@@ -923,7 +923,7 @@ AEM Forms工作区由 [可重用](/help/forms/using/integrating-html-ws-componen
    <td>
     <ul>
      <li>userImageUrlFetched - userinfo模型</li>
-     <li>sessionRevened - userinfo模型 <br /> </li>
+     <li>sessionRevened — 用户信息模型<br /> </li>
      <li>sessionExpired - userinfo模型 </li>
     </ul> </td>
   </tr>
@@ -1084,7 +1084,7 @@ AEM Forms工作区由 [可重用](/help/forms/using/integrating-html-ws-componen
   </tr>
   <tr>
    <td><p>JS依赖项</p> </td>
-   <td>无<br /> </td>
+   <td>不适用<br /> </td>
   </tr>
   <tr>
    <td><p>事件已侦听（事件名称 — 触发器）</p> </td>

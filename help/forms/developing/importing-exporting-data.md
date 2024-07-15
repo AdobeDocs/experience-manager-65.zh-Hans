@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 导入和导出数据 {#importing-and-exporting-data}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 ## 关于表单数据集成服务 {#about-the-form-data-integration-service}
 
@@ -34,12 +34,12 @@ ht-degree: 0%
 
 您可以使用表单数据集成服务完成这些任务：
 
-* 将数据导入PDF forms。 有关信息，请参阅 [导入表单数据](importing-exporting-data.md#importing-form-data).
-* 从PDF forms导出数据。 有关信息，请参阅 [导出表单数据](importing-exporting-data.md#exporting-form-data).
+* 将数据导入PDF forms。 有关信息，请参阅[导入表单数据](importing-exporting-data.md#importing-form-data)。
+* 从PDF forms导出数据。 有关信息，请参阅[导出表单数据](importing-exporting-data.md#exporting-form-data)。
 
 >[!NOTE]
 >
->有关“表单数据集成”服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关表单数据集成服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 导入表单数据 {#importing-form-data}
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关“表单数据集成”服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关表单数据集成服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -109,11 +109,11 @@ ht-degree: 0%
 * adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
 * jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
 
-有关这些JAR文件位置的信息，请参见 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+有关这些JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建表单数据集成服务客户端**
 
-您必须先创建数据集成服务客户端，然后才能以编程方式将数据导入PDF表单客户端API。 创建服务客户端时，您可以定义调用服务所需的连接设置。 有关信息，请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+您必须先创建数据集成服务客户端，然后才能以编程方式将数据导入PDF表单客户端API。 创建服务客户端时，您可以定义调用服务所需的连接设置。 有关信息，请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 **引用PDF表单**
 
@@ -155,32 +155,32 @@ ht-degree: 0%
 
 1. 创建表单数据集成服务客户端。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `FormDataIntegrationClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`FormDataIntegrationClient`对象并传递`ServiceClientFactory`对象。
 
 1. 引用PDF表单。
 
-   * 创建 `java.io.FileInputStream` 对象。 传递一个指定PDF表单位置的字符串值。
-   * 创建 `com.adobe.idp.Document` 使用存储PDF表单的对象 `com.adobe.idp.Document` 构造函数。 传递 `java.io.FileInputStream` 包含构造函数的PDF表单的对象。
+   * 使用构造函数创建`java.io.FileInputStream`对象。 传递一个指定PDF表单位置的字符串值。
+   * 使用`com.adobe.idp.Document`构造函数创建存储PDF表单的`com.adobe.idp.Document`对象。 将包含PDF表单的`java.io.FileInputStream`对象传递给构造函数。
 
 1. 引用XML数据源。
 
-   * 创建 `java.io.FileInputStream` 对象，然后传递一个字符串值，该值指定包含要导入表单的数据的XML文件的位置。
-   * 创建 `com.adobe.idp.Document` 使用存储表单数据的对象 `com.adobe.idp.Document` 构造函数。 传递 `java.io.FileInputStream` 包含表单数据到构造函数的对象。
+   * 使用对象的构造函数创建`java.io.FileInputStream`对象，并传递一个字符串值，该值指定包含要导入表单的数据的XML文件的位置。
+   * 使用`com.adobe.idp.Document`构造函数创建用于存储表单数据的`com.adobe.idp.Document`对象。 将包含表单数据的`java.io.FileInputStream`对象传递给构造函数。
 
 1. 将数据导入PDF表单。
 
-   PDF通过调用 `FormDataIntegrationClient` 对象的 `importData` 方法并传递以下值：
+   通过调用`FormDataIntegrationClient`对象的`importData`方法并传递以下值，将数据导入PDF表单：
 
-   * 此 `com.adobe.idp.Document` 存储PDF表单的对象。
-   * 此 `com.adobe.idp.Document` 存储表单数据的对象。
+   * 存储PDF表单的`com.adobe.idp.Document`对象。
+   * 存储表单数据的`com.adobe.idp.Document`对象。
 
-   此 `importData` 方法返回 `com.adobe.idp.Document` 一个对象，用于存储包含XML数据源中数据的PDF表单。
+   `importData`方法返回一个`com.adobe.idp.Document`对象，该对象存储的PDF表单包含XML数据源中的数据。
 
 1. 将PDF表单另存为PDF文件。
 
-   * 创建 `java.io.File` 对象并确保文件扩展名为“。PDF”。
-   * 调用 `Document` 对象的 `copyToFile` 用于复制 `Document` 对象到文件(确保您使用 `Document` 返回的对象 `importData` 方法)。
+   * 创建`java.io.File`对象并确保文件扩展名为“。PDF”。
+   * 调用`Document`对象的`copyToFile`方法以将`Document`对象的内容复制到文件中（确保您使用`importData`方法返回的`Document`对象）。
 
 **另请参阅**
 
@@ -198,56 +198,56 @@ ht-degree: 0%
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建表单数据集成服务客户端。
 
-   * 创建 `FormDataIntegrationClient` 对象使用默认构造函数。
-   * 创建 `FormDataIntegrationClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。 但是，请指定 `?blob=mtom` 使用MTOM。
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `FormDataIntegrationClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`FormDataIntegrationClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`FormDataIntegrationClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。 但是，指定`?blob=mtom`以使用MTOM。
+   * 通过获取`FormDataIntegrationClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+      * 将AEM表单用户名分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用PDF表单。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储PDF表单。
-   * 创建 `System.IO.FileStream` 对象通过调用其构造函数。 传递一个字符串值，该值指定PDF表单的位置和打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法。 传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 此`BLOB`对象用于存储PDF表单。
+   * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，该值指定PDF表单的位置和打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法，使用流数据填充字节数组。 传递字节数组、起始位置和要读取的流长度。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 引用XML数据源。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储导入到表单中的数据。
-   * 创建 `System.IO.FileStream` 对象通过调用其构造函数。 传递一个字符串值，该值指定包含要导入的数据的XML文件的位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法。 传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 此`BLOB`对象用于存储导入到表单中的数据。
+   * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，该值指定包含要导入的数据的XML文件的位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法，使用流数据填充字节数组。 传递字节数组、起始位置和要读取的流长度。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 将数据导入PDF表单。
 
-   PDF通过调用 `FormDataIntegrationClient` 对象的 `importData` 方法并传递以下值：
+   通过调用`FormDataIntegrationClient`对象的`importData`方法并传递以下值，将数据导入PDF表单：
 
-   * 此 `BLOB` 存储PDF表单的对象。
-   * 此 `BLOB` 存储表单数据的对象。
+   * 存储PDF表单的`BLOB`对象。
+   * 存储表单数据的`BLOB`对象。
 
-   此 `importData` 方法返回 `BLOB` 一个对象，用于存储包含XML数据源中数据的PDF表单。
+   `importData`方法返回一个`BLOB`对象，该对象存储的PDF表单包含XML数据源中的数据。
 
 1. 将PDF表单另存为PDF文件。
 
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个表示PDF文件的文件位置的字符串值。
-   * 创建一个字节数组，用于存储 `BLOB` 返回的对象 `importData` 方法。 通过获取的值，填充字节数组 `BLOB` 对象的 `MTOM` 字段。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
-   * PDF通过调用 `System.IO.BinaryWriter` 对象的 `Write` 和传递字节数组。
+   * 通过调用其构造函数并传递表示PDF文件的文件位置的字符串值来创建`System.IO.FileStream`对象。
+   * 创建一个字节数组，用于存储`importData`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值填充字节数组。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
+   * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
 
@@ -261,7 +261,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关“表单数据集成”服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关表单数据集成服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -287,7 +287,7 @@ ht-degree: 0%
 
 **创建表单数据集成服务客户端**
 
-您必须先创建数据集成服务客户端，然后才能以编程方式将数据导入PDF表单客户端API。 创建服务客户端时，您可以定义调用服务所需的连接设置。 有关信息， [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+您必须先创建数据集成服务客户端，然后才能以编程方式将数据导入PDF表单客户端API。 创建服务客户端时，您可以定义调用服务所需的连接设置。 有关信息，[正在设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 **引用PDF表单**
 
@@ -325,22 +325,22 @@ ht-degree: 0%
 
 1. 创建表单数据集成服务客户端。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `FormDataIntegrationClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`FormDataIntegrationClient`对象并传递`ServiceClientFactory`对象。
 
 1. 引用PDF表单。
 
-   * 创建 `java.io.FileInputStream` 对象，并传递一个字符串值，该值指定包含要导出数据的PDF表单的位置。
-   * 创建 `com.adobe.idp.Document` 使用存储PDF表单的对象 `com.adobe.idp.Document` 构造函数。 传递 `java.io.FileInputStream` 包含构造函数的PDF表单的对象。
+   * 使用对象的构造函数创建`java.io.FileInputStream`对象，并传递一个字符串值，该值指定包含要导出数据的PDF表单的位置。
+   * 使用`com.adobe.idp.Document`构造函数创建存储PDF表单的`com.adobe.idp.Document`对象。 将包含PDF表单的`java.io.FileInputStream`对象传递给构造函数。
 
 1. 从PDF表单导出数据。
 
-   通过调用 `FormDataIntegrationClient` 对象的 `exportData` 方法并传递 `com.adobe.idp.Document` 存储PDF表单的对象。 此方法会返回 `com.adobe.idp.Document` 将表单数据存储为XML架构的对象。
+   通过调用`FormDataIntegrationClient`对象的`exportData`方法导出表单数据，并传递存储PDF表单的`com.adobe.idp.Document`对象。 此方法返回将表单数据存储为XML架构的`com.adobe.idp.Document`对象。
 
 1. 将PDF表单另存为PDF文件。
 
-   * 创建 `java.io.File` 对象并确保文件扩展名为XML。
-   * 调用 `Document` 对象的 `copyToFile` 用于复制 `Document` 对象到文件(确保您使用 `Document` 返回的对象 `exportData` 方法)。
+   * 创建`java.io.File`对象并确保文件扩展名为XML。
+   * 调用`Document`对象的`copyToFile`方法以将`Document`对象的内容复制到文件中（确保您使用`exportData`方法返回的`Document`对象）。
 
 **另请参阅**
 
@@ -358,41 +358,41 @@ ht-degree: 0%
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/FormDataIntegration?WSDL&lc_version=9.0.1`。
 
-   * 替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   * 将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建表单数据集成服务客户端。
 
-   * 创建 `FormDataIntegrationClient` 对象使用默认构造函数。
-   * 创建 `FormDataIntegrationClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。 但是，请指定 `?blob=mtom` 使用MTOM。
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `FormDataIntegrationClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`FormDataIntegrationClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`FormDataIntegrationClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。 但是，指定`?blob=mtom`以使用MTOM。
+   * 通过获取`FormDataIntegrationClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `FormDataIntegrationClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `FormDataIntegrationClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+      * 将AEM表单用户名分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用PDF表单。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储从中导出数据的PDF表单。
-   * 创建 `System.IO.FileStream` 对象通过调用其构造函数。 传递一个字符串值，该值指定PDF表单的位置和打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 此`BLOB`对象用于存储从中导出数据的PDF表单。
+   * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，该值指定PDF表单的位置和打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 从PDF表单导出数据。
 
-   PDF通过调用 `FormDataIntegrationClient` 对象的 `exportData` 方法并传递 `BLOB` 存储PDF表单的对象。 此方法会返回 `BLOB` 将表单数据存储为XML架构的对象。
+   通过调用`FormDataIntegrationClient`对象的`exportData`方法将数据导入PDF表单，并传递存储PDF表单的`BLOB`对象。 此方法返回将表单数据存储为XML架构的`BLOB`对象。
 
 1. 将PDF表单另存为PDF文件。
 
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个表示XML文件位置的字符串值。
-   * 创建一个字节数组，用于存储 `BLOB` 返回的对象 `exportData` 方法。 通过获取的值，填充字节数组 `BLOB` 对象的 `MTOM` 字段。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
-   * 通过调用 `System.IO.BinaryWriter` 对象的 `Write` 和传递字节数组。
+   * 通过调用其构造函数并传递表示XML文件位置的字符串值来创建`System.IO.FileStream`对象。
+   * 创建一个字节数组，用于存储`exportData`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值填充字节数组。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
+   * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入XML文件。
 
 **另请参阅**
 

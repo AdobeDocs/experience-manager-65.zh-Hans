@@ -29,14 +29,14 @@ We.Finance是一个允许候选人通过参考网站门户申请就业的组织�
 
 >[!NOTE]
 >
->雇员招聘用例可在We.Finance和We.Gov参考站点中找到。 演练中使用的示例、图像和描述使用We.Finance参考站点。 但是，您也可以运行这些用例并使用We.Gov查看工件。 为此，请替换 **We金融** 替换为 **we-gov** 在提及的URL中。
+>雇员招聘用例可在We.Finance和We.Gov参考站点中找到。 演练中使用的示例、图像和描述使用We.Finance参考站点。 但是，您也可以运行这些用例并使用We.Gov查看工件。 为此，请在所提及的URL中将&#x200B;**we-finance**&#x200B;替换为&#x200B;**we-gov**。
 
 ### 涉及的工作流模型 {#workflow-models-involved}
 
 员工招聘用例涉及两个工作流：
 
 * 面试前 — 我们财务员工招聘工作流
-* 面试之后 — 我们财务员工招聘职位面试工作流
+* 面试后 — 我们财务员工招聘Post面试工作流
 
 这些工作流是在AEM中创建的，可在以下位置找到：
 
@@ -48,9 +48,9 @@ We.Finance是一个允许候选人通过参考网站门户申请就业的组织�
 
 ![we-finance-employee-recruiting-workflow](assets/we-finance-employee-recruiting-workflow.png)
 
-#### We Finance员工招聘面试工作流 {#we-finance-employee-recruiting-post-interview-workflow}
+#### 我们财务员工招聘Post面试工作流 {#we-finance-employee-recruiting-post-interview-workflow}
 
-下面是本文档中遵循的We Finance员工面试招聘工作流模型。
+以下是本文档中遵循的“我们财务员工Post面试招聘”工作流模型。
 
 ![we-finance-employee-recruiting-post-interview-workflow](assets/we-finance-employee-recruiting-post-interview-workflow.png)
 
@@ -81,11 +81,11 @@ Sarah在发布招聘信息时单击“申请”。 此时将打开作业申请�
 
 ### 工作原理 {#how-it-works}
 
-We.Finance主页和职业主页都是AEM Sites页面。 职业页面嵌入了一个自适应表单，该表单使用可重复的面板获取使用服务的职位空缺并将其列在页面上。 您可以在以下位置查看自适应表单： `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`.
+We.Finance主页和职业主页都是AEM Sites页面。 职业页面嵌入了一个自适应表单，该表单使用可重复的面板获取使用服务的职位空缺并将其列在页面上。 您可以在`https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/employee/recruitment/jobs.html`上查看自适应表单。
 
 ### 亲眼看看 {#see-it-yourself}
 
-转到 `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` 并单击 **[!UICONTROL 职业]**. 单击 **[!UICONTROL Search]** 以便填充作业列表，然后单击 **[!UICONTROL 应用]** 找一份工作。 在表格中填写详情并提交申请。
+转到`https://[publishHost]:[publishPort]/content/we-finance/global/en.html`并单击&#x200B;**[!UICONTROL 职业]**。 单击&#x200B;**[!UICONTROL 搜索]**&#x200B;以填充作业列表，然后单击&#x200B;**[!UICONTROL 应用]**&#x200B;以应用作业。 在表格中填写详情并提交申请。
 
 请确保在应用程序中指定有效的电子邮件ID，因为通过此演练进行的任何通信都会发送到指定的电子邮件ID。
 
@@ -101,19 +101,19 @@ John的AEM收件箱
 
 约翰·雅各布斯将莎拉·罗丝的简介列入了招聘经理的筛选名单
 
-**工作原理**
+**工作方式**
 
 “作业申请”表单中的提交操作会触发一个工作流，该工作流会在John Jacob收件箱中创建用于筛选申请的任务。 当John审核并甄选申请时，工作流程会在招聘经理Gloria的收件箱中创建一个任务。
 
 ### 亲眼看看 {#see-it-yourself-1}
 
-转到 `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`并使用jjacobs/密码作为John Jacobs的用户名/密码登录。 打开“候选人配置文件复查”任务并将申请人列入候选名单。
+转到`https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`并使用jjacobs/密码作为John Jacobs的用户名/密码登录。 打开“候选人配置文件复查”任务并将申请人列入候选名单。
 
 ## Gloria审核申请并批准申请人的面试 {#gloria-reviews-the-application-and-approves-the-applicant-for-an-interview}
 
 招聘经理Gloria将入围的个人资料作为AEM收件箱中的一项任务进行接收。 她审核并批准候选人莎拉·罗斯接受采访。
 
-![gloriainbox](assets/gloriainbox.png)
+![荣耀收件箱](assets/gloriainbox.png)
 
 Gloria的AEM收件箱
 
@@ -121,15 +121,15 @@ Gloria的AEM收件箱
 
 格洛丽亚批准莎拉·罗斯接受采访
 
-**工作原理**
+**工作方式**
 
 当Gloria批准面试候选人时，工作流会在We.Finance的招聘人员John Doe的AEM收件箱中创建任务。
 
 ### 亲眼看看 {#see-it-yourself-2}
 
-转到 `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` 并使用jjacobs/密码作为John Jacobs的用户名/密码登录。 打开“候选人配置文件复查”任务并将申请人列入候选名单。
+转到`https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`并使用jjacobs/密码作为John Jacobs的用户名/密码登录。 打开“候选人配置文件复查”任务并将申请人列入候选名单。
 
-转到 `https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html` 并使用grios/password作为Gloria Rios的用户名/密码登录。 打开“候选人配置文件复查”任务，然后单击计划面试。
+转到`https://[publishHost]:[publishPort]/content/we-finance/global/en/login.html?resource=/aem/inbox.html`并使用grios/密码作为Gloria Rios的用户名/密码登录。 打开“候选人配置文件复查”任务，然后单击计划面试。
 
 ## John Doe安排了一次面试 {#john-doe-schedules-an-interview}
 
@@ -147,7 +147,7 @@ John Doe安排了面试，并将详细信息发送给Sarah Rose
 
 Sarah Rose会收到一封电子邮件，其中包含面试时间表、地点和其他详细信息。 Sarah点击“接受”表示她同意面试的时间表和地点。 在精确信息的指引下，莎拉接受了采访。
 
-![萨拉赫罗塞维耶维耶韦邮件](assets/sarahroseinterviewemail.png)
+![sarahroseinterviewemail](assets/sarahroseinterviewemail.png)
 
 莎拉·罗斯收到面试表
 
@@ -159,7 +159,7 @@ Sarah Rose会收到一封电子邮件，其中包含面试时间表、地点和�
 
 Gloria的AEM收件箱
 
-![gloriariosselectcoidate](assets/gloriariosselectcandidate.png)
+![gloriariosselectcandidate](assets/gloriariosselectcandidate.png)
 
 格洛丽亚·里奥斯在面试后选择了莎拉·罗斯
 
@@ -167,7 +167,7 @@ Gloria的AEM收件箱
 
 在请求候选人加入该组织之前，必须检查Sarah的背景。 John Doe打开并查看选定申请人的详细信息，发现她的一些雇佣和教育详细信息尚未填写。 John Doe点击需要更多信息。
 
-![Johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
+![johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
 
 John Doe向Sarah Rose索取有关其教育和工作经历的更多信息
 
@@ -175,7 +175,7 @@ John Doe向Sarah Rose索取有关其教育和工作经历的更多信息
 
 Sarah Rose收到一封电子邮件，通知她需要更多信息，才能处理她的就业申请。 该电子邮件包含一个指向表单的链接，用于填写所需信息。
 
-![萨拉赫罗瑟emailmoredetails](assets/sarahroseemailmoredetails.png)
+![sarahrosemailmoredetails](assets/sarahroseemailmoredetails.png)
 
 Sarah Rose收到一封电子邮件，通知她需要更多信息，才能处理她的就业申请
 
@@ -193,11 +193,11 @@ Sarah填写John Doe请求的其他信息并单击“提交”
 
 John Doe选择候选审核请求并打开它。 John Doe发现Sarah已根据需要填写了所有信息。 查看应用程序后，John Doe单击“批准”。 经John Doe批准后，向John Jacobs转发对Sarah Rose进行背景检查的请求。
 
-![Johndoadditionainformationinbox](assets/johndoeadditionainformationinbox.png)
+![johndoeadditionainformationinbox](assets/johndoeadditionainformationinbox.png)
 
 John Doe的AEM收件箱
 
-![johndoeditionalinformationreview-copy](assets/johndoeadditionalinformationreview-copy.png)
+![johndoeadditionalinformationreview-copy](assets/johndoeadditionalinformationreview-copy.png)
 
 John Doe将审核并批准Sarah提供的其他信息
 

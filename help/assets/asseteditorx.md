@@ -17,43 +17,43 @@ ht-degree: 12%
 
 资产编辑器是一个页面，单击通过资产共享找到的资产时，将打开该页面，以便用户编辑资产的方面，如元数据、缩略图、标题和标记。
 
-有关使用预定义编辑组件配置编辑器的信息，请参见 [创建和配置资产编辑器页面](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page).
+[创建和配置资产编辑器页面](assets-finder-editor.md#creating-and-configuring-an-asset-editor-page)中介绍了使用预定义编辑组件的编辑器配置。
 
-除了使用预先存在的编辑器组件之外， [!DNL Adobe Experience Manager] 开发人员还可以创建自己的组件。
+除了使用预先存在的编辑器组件之外，[!DNL Adobe Experience Manager]开发人员还可以创建自己的组件。
 
 ## 创建资产编辑器模板 {#creating-an-asset-editor-template}
 
 Geometrixx中包含以下示例页面：
 
-* Geometrixx示例页面： `/content/geometrixx/en/press/asseteditor.html`
+* 示例页面Geometrixx： `/content/geometrixx/en/press/asseteditor.html`
 * 示例模板： `/apps/geometrixx/templates/asseteditor`
 * 示例页面组件： `/apps/geometrixx/components/asseteditor`
 
 ### 配置Clientlib {#configuring-clientlib}
 
-[!DNL Assets] 组件使用WCM edit clientlib的扩展。 clientlibs通常加载到 `init.jsp`.
+[!DNL Assets]组件使用WCM edit clientlib的扩展。 clientlibs通常加载到`init.jsp`中。
 
-与默认的clientlib加载相比(在 `init.jsp`)，和 [!DNL Assets] 模板必须具有以下属性：
+与默认的clientlib加载（在核心的`init.jsp`中）相比，[!DNL Assets]模板必须具有以下内容：
 
-* 模板必须包括 `cq.dam.edit` clientlib(而不是 `cq.wcm.edit`)。
+* 模板必须包含`cq.dam.edit` clientlib （而不是`cq.wcm.edit`）。
 
 * clientlib 还必须包含在禁用的 WCM 模式中（例如，在&#x200B;**发布**&#x200B;时加载）才能渲染谓词、操作和镜头。
 
-在大多数情况下，复制现有示例 `init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`)应该满足这些需求。
+在大多数情况下，复制现有示例`init.jsp` (`/apps/geometrixx/components/asseteditor/init.jsp`)应满足这些需求。
 
 ### 配置JS操作 {#configuring-js-actions}
 
-一些 [!DNL Assets] 组件需要在中定义的JS函数 `component.js`. 将此文件复制到组件目录并将其链接。
+某些[!DNL Assets]组件需要在`component.js`中定义的JS函数。 将此文件复制到组件目录并将其链接。
 
 ```javascript
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-此示例将此JavaScript源加载到 `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)。
+该示例在`head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`)中加载此JavaScript源。
 
 ### 其他样式表 {#additional-style-sheets}
 
-一些 [!DNL Assets] 组件使用构件库。 要在内容上下文中正确呈现，必须加载其他样式表。 标记操作组件需要多个。
+某些[!DNL Assets]组件使用构件库。 要在内容上下文中正确呈现，必须加载其他样式表。 标记操作组件需要多个。
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -61,7 +61,7 @@ Geometrixx中包含以下示例页面：
 
 ### Geometrixx样式表 {#geometrixx-style-sheet}
 
-示例页面组件要求所有选择器都以 `.asseteditor` 之 `static.css` (`/etc/designs/geometrixx/static.css`)。 最佳实践：复制所有 `.asseteditor` 选择器添加到样式表中，并根据需要调整规则。
+示例页面组件要求所有选择器以`static.css` (`/etc/designs/geometrixx/static.css`)的`.asseteditor`开头。 最佳实践：将所有`.asseteditor`选择器复制到样式表并根据需要调整规则。
 
 ### FormChooser：最终加载资源的调整 {#formchooser-adjustments-for-eventually-loaded-resources}
 
@@ -70,9 +70,9 @@ Geometrixx中包含以下示例页面：
 例如：
 
 * 纯表单页面： [http://localhost:4502/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/geometrixx/en/press/asseteditor.html)
-* 资产已加载到表单页面： [http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
+* 资产已加载到表单页面：[http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html](http://localhost:4502/content/dam/geometrixx/icons/diamond.png.form.html/content/geometrixx/en/press/asseteditor.html)
 
-中的示例句柄 `head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`)执行以下操作：
+`head.jsp` (`/apps/geometrixx/components/asseteditor/head.jsp`)中的示例句柄执行以下操作：
 
 * 它们可检测是否加载了资产或是否必须显示普通表单。
 * 如果加载了资产，则会禁用WCM模式，因为Parsys只能在纯表单页面上编辑。
@@ -126,8 +126,8 @@ Geometrixx中包含以下示例页面：
 
 此示例介绍如何构建一个组件，该组件显示并显示加载的资源的元数据。
 
-1. 在项目目录中创建组件文件夹，例如， `/apps/geometrixx/components/samplemeta`.
-1. 添加 `content.xml` 包含以下代码片段：
+1. 在项目目录中创建组件文件夹，例如`/apps/geometrixx/components/samplemeta`。
+1. 使用以下代码片段添加`content.xml`：
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -139,7 +139,7 @@ Geometrixx中包含以下示例页面：
        componentGroup="Asset Editor"/>
    ```
 
-1. 添加 `samplemeta.jsp` 包含以下代码片段：
+1. 使用以下代码片段添加`samplemeta.jsp`：
 
    ```javascript
    <%--
@@ -197,25 +197,25 @@ Geometrixx中包含以下示例页面：
    </div>
    ```
 
-1. 为了使组件可用，您需要能够对其进行编辑。要使组件可编辑，请在CRXDE Lite中添加一个节点 `cq:editConfig` 主要类型的 `cq:EditConfig`. 为了能够删除段落，请添加多值属性 `cq:actions` 单个值为 `DELETE`.
+1. 为了使组件可用，您需要能够对其进行编辑。要使组件可编辑，请在CRXDE Lite中添加主类型`cq:EditConfig`的节点`cq:editConfig`。 为了删除段落，请添加一个单值为`DELETE`的多值属性`cq:actions`。
 
-1. 导航到浏览器，并在示例页面中导航(例如， `asseteditor.html`)切换到设计模式并为段落系统启用新组件。
+1. 导航到浏览器，在示例页面（例如，`asseteditor.html`）上切换到设计模式并为段落系统启用新组件。
 
 1. 在&#x200B;**编辑**&#x200B;模式中，新组件（例如，**示例元数据**）现在可在 Sidekick 中使用（位于&#x200B;**资产编辑器**&#x200B;组中）。插入组件。要能够存储元数据，必须将其添加到元数据表单中。
 
 ## 修改元数据选项 {#modifying-metadata-options}
 
-您可以修改中可用的命名空间 [元数据表单](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component).
+您可以修改[元数据表单](assets-finder-editor.md#metadata-form-and-text-field-configuring-the-view-metadata-component)中可用的命名空间。
 
-当前可用的元数据在中定义 `/libs/dam/options/metadata`：
+当前可用的元数据在`/libs/dam/options/metadata`中定义：
 
 * 此目录中的第一个级别包含命名空间。
 * 每个命名空间中的项表示元数据，例如本地部件项中的结果。
 * 元数据内容包含有关类型和多值选项的信息。
 
-可以在以下位置覆盖这些选项： `/apps/dam/options/metadata`：
+可以在`/apps/dam/options/metadata`中覆盖这些选项：
 
-1. 从以下位置复制目录 `/libs` 到 `/apps`.
+1. 将目录从`/libs`复制到`/apps`。
 
 1. 删除、修改或添加项目。
 

@@ -58,7 +58,7 @@ ht-degree: 0%
 >
 >* 已启用粘性会话，或者
 >
->* 同步启动时已在AEM中创建用户。 这意味着在处理程序的情况下，不支持封装令牌 **创建** 同步过程中的用户。
+>* 同步启动时已在AEM中创建用户。 这意味着在同步过程中处理程序&#x200B;**创建**&#x200B;用户的情况下，不支持封装令牌。
 
 配置封装令牌时需要考虑以下几点：
 
@@ -70,11 +70,11 @@ ht-degree: 0%
 要跨实例复制密钥，您需要：
 
 1. 访问AEM实例，通常是创作实例，其中包含要复制的关键材料；
-1. 找到 `com.adobe.granite.crypto.file` 捆绑在本地文件系统中。 例如，在此路径下：
+1. 在本地文件系统中找到`com.adobe.granite.crypto.file`包。 例如，在此路径下：
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
-   此 `bundle.info` 每个文件夹中的文件将标识包名称。
+   每个文件夹中的`bundle.info`文件将标识包名称。
 
 1. 导航到数据文件夹。 例如：
 
@@ -86,7 +86,7 @@ ht-degree: 0%
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. 粘贴您之前复制的两个文件。
-1. [刷新加密捆绑包](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) 如果目标实例已在运行。
+1. 如果目标实例已在运行，请[刷新加密包](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle)。
 
 1. 对要向其复制密钥的所有实例重复上述步骤。
 
@@ -94,6 +94,6 @@ ht-degree: 0%
 
 复制HMAC密钥后，您可以通过Web控制台启用封装令牌：
 
-1. 将浏览器指向 `https://serveraddress:port/system/console/configMgr`
-1. 查找名为的项目 **Granite令牌身份验证处理程序Adobe** 单击它。
-1. 在以下窗口中，勾选 **启用封装令牌支持** 方框并按 **保存**.
+1. 将浏览器指向`https://serveraddress:port/system/console/configMgr`
+1. 查找名为&#x200B;**AdobeGranite令牌身份验证处理程序**&#x200B;的条目，然后单击该条目。
+1. 在以下窗口中，勾选&#x200B;**启用封装令牌支持**&#x200B;框并按&#x200B;**保存**。

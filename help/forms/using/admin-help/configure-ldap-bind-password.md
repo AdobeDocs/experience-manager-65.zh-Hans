@@ -22,7 +22,7 @@ ht-degree: 0%
 
 1. 在管理控制台中，单击设置>用户管理>配置>导入和导出配置文件。
 1. 要将当前配置设置导出到文件，请单击“导出”并将配置文件保存到其他位置。
-1. 在文件中，找到 `Domains` > *[您的域名]* > `DirectoryConfigs` > `LDAPGroupConfig` 节点。 示例如下：
+1. 在文件中，找到`Domains` > *[您的域名]* > `DirectoryConfigs` > `LDAPGroupConfig`节点。 示例如下：
 
    ```xml
     <node name="LDAPGroupConfig">
@@ -35,9 +35,9 @@ ht-degree: 0%
         </map>
    ```
 
-   键入值 `bindpassword` 并保存更改。
+   键入`bindpassword`的值并保存更改。
 
-1. 在文件中，找到 `Domains` > *[您的域名]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig` 节点。 示例如下：
+1. 在文件中，找到`Domains` > *[您的域名]* > `DirectoryConfigs` > `LDAPGroupConfig` > `LDAPUserConfig`节点。 示例如下：
 
    ```xml
     <node name="LDAPUserConfig">
@@ -50,7 +50,7 @@ ht-degree: 0%
         </map>
    ```
 
-   键入值 `bindpassword` 并保存更改。
+   键入`bindpassword`的值并保存更改。
 
 1. 要导入更新的文件，请在“用户管理”中单击“配置”>“导入和导出配置文件”。
 1. 单击“浏览”查找文件，单击“导入”，然后单击“确定”。

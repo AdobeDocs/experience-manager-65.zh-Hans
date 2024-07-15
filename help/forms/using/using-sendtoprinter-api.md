@@ -21,17 +21,17 @@ ht-degree: 14%
 
 在AEM Forms中，您可以使用SendToPrinter服务将文档发送到打印机。 SendToPrinter服务支持以下打印访问机制：
 
-* **直接访问的打印机** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
+* **可直接访问的打印机** `: A printer that is installed on the same computer is called a direct accessible printer, and the computer is named printer host. This type of printer can be a local printer that is connected to the computer directly.`
 
 * **可间接访问的打印机** `: The printer that is installed on a print server is accessed from other computers. Technologies such as the common UNIX® printing system (CUPS) and the Line Printer Daemon (LPD) protocol are available to connect to a network printer. To access an indirect accessible printer, specify the print server’s IP or host name. Using this mechanism, you can send a document to an LPD URI when the network has an LPD running. The mechanism lets you route the document to any printer that is connected to the network that has an LPD running.`
 
   在将文档发送到打印机时，请指定以下打印协议之一：
 
    * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * &quot;**DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * &quot;**LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **共享打印机** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIF**：输出服务支持通用Internet文件系统(CIF)打印协议。
+   * **DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+   * **LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+   * **CIF**： Output服务支持Common Internet File System (CIF)打印协议。
 
 ## 使用SendToPrinter服务 {#using-sendtoprinter-service}
 
@@ -66,6 +66,6 @@ ht-degree: 14%
 
 1. 转到https://&lt;server>：&lt;port>/system/console。
 
-1. 转到 **[!UICONTROL 主要]** > **[!UICONTROL 加密支持]**.
+1. 转到&#x200B;**[!UICONTROL Main]** > **[!UICONTROL 加密支持]**。
 
-1. 输入一些纯文本，然后单击 **[!UICONTROL Protect]**.
+1. 输入一些纯文本，然后单击&#x200B;**[!UICONTROL Protect]**。

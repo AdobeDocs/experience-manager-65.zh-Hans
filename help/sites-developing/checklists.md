@@ -35,4 +35,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->您还可以看到 [管理项目 — 最佳实践核对清单](/help/managing/best-practices.md) 以获取与整个项目相关的更多核对清单。
+>您还可以看到[管理项目 — 最佳实践核对清单](/help/managing/best-practices.md)，了解与整个项目相关的更多核对清单。

@@ -20,7 +20,7 @@ ht-degree: 7%
 
 本文包括概述、示例用例、创建工作流以及交互式通信与信件之间的区别。
 
-![hero-image](do-not-localize/correspondence-management.png)
+![主页图像](do-not-localize/correspondence-management.png)
 
 交互式通信可以集中管理安全、个性化的交互式信函的创建、编排和交付，例如业务信函、文档、声明、福利通知、市场营销邮件、账单和欢迎资料包。
 
@@ -41,22 +41,22 @@ ht-degree: 7%
 
 ### 工作流 {#workflow}
 
-要创建交互式通信，请 [构建基块](#buildingblocks) 准备交互式通信，然后完成以下步骤：
+要创建交互式通信，请准备好交互式通信的[构建基块](#buildingblocks)，然后完成以下步骤：
 
-1. 选择以 [创建交互式通信](/help/forms/using/create-interactive-communication.md).
+1. 选择[创建交互式通信](/help/forms/using/create-interactive-communication.md)。
 
-1. 指定 [表单数据模型](/help/forms/using/data-integration.md)、预填充服务和 [打印和Web渠道模板](/help/forms/using/web-channel-print-channel.md). 您可以选择从打印渠道生成Web渠道。
+1. 指定[表单数据模型](/help/forms/using/data-integration.md)、预填充服务以及[打印和Web渠道模板](/help/forms/using/web-channel-print-channel.md)。 您可以选择从打印渠道生成Web渠道。
 
-1. 使用 [拖放界面](/help/forms/using/introduction-interactive-communication-authoring.md)，根据需要添加要打印的文档片段、图像、组件以及交互式通信的Web渠道。
+1. 使用[拖放界面](/help/forms/using/introduction-interactive-communication-authoring.md)，根据需要添加要打印的文档片段、图像、组件以及交互式通信的Web渠道。
 1. 为插入的组件配置属性，如下所示：
 
    1. [图像](/help/forms/using/create-interactive-communication.md#step2)
-   1. [表](/help/forms/using/create-interactive-communication.md#tables) （包括布局片段）
+   1. [表](/help/forms/using/create-interactive-communication.md#tables)（包括布局片段）
    1. [图表](/help/forms/using/chart-component-interactive-communications.md)
    1. [文档片段](/help/forms/using/create-interactive-communication.md#document-fragment-properties)
 
 1. 预览打印和Web渠道，并在必要时编辑交互式通信。
-1. 代理使用代理UI来 [准备交互式通信](/help/forms/using/prepare-send-interactive-communication.md) 用于将其发送到收件人/帖子流程。
+1. 代理使用代理UI [准备交互式通信](/help/forms/using/prepare-send-interactive-communication.md)，以将其发送到收件人/帖子进程。
 
 ### 构建基块 {#buildingblocks}
 
@@ -66,11 +66,11 @@ ht-degree: 7%
 - [打印和Web渠道模板](/help/forms/using/web-channel-print-channel.md)
 - [文档片段](/help/forms/using/document-fragments.md)
 - 图像
-- [主题](/help/forms/using/themes.md) 对于Web渠道
+- Web渠道的[主题](/help/forms/using/themes.md)
 
 ## 交互式通信与通信管理 {#interactive-communications-vs-correspondence-management}
 
-交互式通信是创建客户通信的默认和推荐方法。 要继续使用在AEM 6.3 Forms和AEM 6.2 Forms中创建的字母，您需要 [安装兼容包](/help/forms/using/compatibility-package.md). 以下是交互式通信与信件功能之间的比较。
+交互式通信是创建客户通信的默认和推荐方法。 若要继续使用在AEM 6.3 Forms和AEM 6.2 Forms中创建的字母，您需要[安装兼容包](/help/forms/using/compatibility-package.md)。 以下是交互式通信与信件功能之间的比较。
 
 <table>
  <tbody>

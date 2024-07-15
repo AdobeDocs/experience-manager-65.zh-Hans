@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # Web 控制台{#web-console}
 
-Adobe Experience Manager (AEM)中的Web控制台基于 [Apache Felix Web管理控制台](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix是社区努力实施OSGi R4服务平台，其中包括OSGi框架和标准服务。
+Adobe Experience Manager (AEM)中的Web控制台基于[Apache Felix Web管理控制台](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)。 Apache Felix是社区努力实施OSGi R4服务平台，其中包括OSGi框架和标准服务。
 
 >[!NOTE]
 >
@@ -27,25 +27,25 @@ Adobe Experience Manager (AEM)中的Web控制台基于 [Apache Felix Web管理�
 
 Web控制台提供了一系列用于维护OSGi捆绑包的选项卡，包括：
 
-* [配置](#configuration)：用于配置OSGi包，因此是配置AEM系统参数的底层机制
+* [配置](#configuration)：用于配置OSGi包，因此是配置AEM系统参数的基础机制
 * [包](#bundles)：用于安装包
 * [组件](#components)：用于控制AEM所需组件的状态
 
 所做的任何更改都将立即应用于正在运行的系统。 无需重新启动。
 
-可以从以下位置访问该控制台： `../system/console`；例如：
+可以从`../system/console`访问该控制台；例如：
 
 `http://localhost:4502/system/console/components`
 
 ## 配置 {#configuration}
 
-此 **配置** tab用于配置OSGi捆绑包，因此是用于配置AEM系统参数的底层机制。
+**Configuration**&#x200B;选项卡用于配置OSGi捆绑包，因此是配置AEM系统参数的基础机制。
 
 >[!NOTE]
 >
->请参阅 [使用Web控制台进行OSGi配置](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 以了解更多详细信息。
+>有关更多详细信息，请参阅使用Web控制台[OSGi配置](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)。
 
-此 **配置** 选项卡可通过以下任一方式访问：
+可通过以下任一方式访问&#x200B;**配置**&#x200B;选项卡：
 
 * 下拉菜单：
 
@@ -104,7 +104,7 @@ Web控制台提供了一系列用于维护OSGi捆绑包的选项卡，包括：
 
 ## 包 {#bundles}
 
-此 **包** tab是用于安装AEM所需的OSGi捆绑包的机制。 可通过以下任一方法访问选项卡：
+**包**&#x200B;选项卡是安装AEM所需的OSGi包的机制。 可通过以下任一方法访问选项卡：
 
 * 下拉菜单：
 
@@ -122,7 +122,7 @@ Web控制台提供了一系列用于维护OSGi捆绑包的选项卡，包括：
 
 * **安装或更新**
 
-  您可以 **浏览** 查找包含捆绑包的文件，并指定它是否应 **开始** 立即且 **开始级别**.
+  您可以&#x200B;**浏览**&#x200B;以查找包含捆绑包的文件，并指定它是否应立即&#x200B;**启动**，以及启动级别&#x200B;**为**。
 
 * **重新加载**
 
@@ -152,11 +152,11 @@ Web控制台提供了一系列用于维护OSGi捆绑包的选项卡，包括：
 
 >[!NOTE]
 >
->之后 **更新**，Adobe建议您执行 **刷新包**.
+>在&#x200B;**更新**&#x200B;之后，Adobe建议您执行&#x200B;**刷新包**。
 
 ## 组件 {#components}
 
-此 **组件** 选项卡可让您启用和/或禁用各种组件。 可以通过以下任一方式访问该区域：
+通过&#x200B;**组件**&#x200B;选项卡，您可以启用和/或禁用各种组件。 可以通过以下任一方式访问该区域：
 
 * 下拉菜单：
 
@@ -176,6 +176,6 @@ Web控制台提供了一系列用于维护OSGi捆绑包的选项卡，包括：
 
 >[!NOTE]
 >
->启用或禁用组件只适用于AEM/CRX重新启动之前。
+>启用或禁用组件仅适用于AEM/CRX重新启动之前。
 >
 >开始状态在组件描述符中定义，组件描述符在开发期间生成，并在包创建时存储在包中。

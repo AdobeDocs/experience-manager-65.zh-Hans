@@ -1,6 +1,6 @@
 ---
 title: 为We.Finance参考网站的住房抵押贷款工作流配置Microsoft Dynamics 365
-description: 了解如何通过自适应表单为We.Finance参考网站的住房抵押贷款工作流使用Microsoft&reg； Dynamics 365服务。
+description: 了解如何通过自适应表单为We.Finance参考网站的住房抵押贷款工作流使用Microsoft&amp；reg； Dynamics 365服务。
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Microsoft® Dynamics 365是一款客户关系管理(CRM)和企业资源规划(ERP)软件，可提供用于创建和管理客户帐户、联系人、潜在客户、机会和案例的企业解决方案。
 
-AEM Forms提供云服务以将Dynamics 365与 [Forms数据集成](/help/forms/using/data-integration.md) 模块。 在将“住房抵押贷款应用程序演练”与Microsoft® Dynamics结合使用之前，您需要配置Microsoft® Dynamics 365以与We.Finance参考网站一起使用。
+AEM Forms提供云服务以将Dynamics 365与[Forms数据集成](/help/forms/using/data-integration.md)模块集成。 在将“住房抵押贷款应用程序演练”与Microsoft® Dynamics结合使用之前，您需要配置Microsoft® Dynamics 365以与We.Finance参考网站一起使用。
 
 ## 先决条件 {#prerequisites}
 
@@ -44,7 +44,7 @@ AEM Forms提供云服务以将Dynamics 365与 [Forms数据集成](/help/forms/us
 
    ![calculatorconfigurepanel](assets/calculatorconfigurepanel.png)
 
-1. 在编辑AEM Forms容器对话框中，浏览资产路径并选择以下路径的home-mortgage-calculator并选择 **确认**：
+1. 在“编辑AEM Forms容器”对话框中，浏览资产路径并在以下路径中选择home-mortgage-calculator并选择&#x200B;**确认**：
 
    formsanddocuments/We.Finance/MS Dynamics/
 
@@ -63,7 +63,7 @@ AEM Forms提供云服务以将Dynamics 365与 [Forms数据集成](/help/forms/us
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. 将解决方案包导入Microsoft® Dynamics实例。 在Microsoft® Dynamics实例中，转到 **设置** > **解决方案** 然后选择 **导入**.
+   1. 将解决方案包导入Microsoft® Dynamics实例。 在Microsoft® Dynamics实例中，转到&#x200B;**设置** > **解决方案**，然后选择&#x200B;**导入**。
 
 1. 要设置重新网站中使用的用户联系人详细信息，请将Sarah Rose Contact.CSV包导入您的Microsoft® Dynamics实例：
 
@@ -71,4 +71,4 @@ AEM Forms提供云服务以将Dynamics 365与 [Forms数据集成](/help/forms/us
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. 将程序包导入您的Microsoft® Dynamics实例。 在Microsoft® Dynamics实例中，转到 **销售** > **联系人** 然后选择 **导入数据**.
+   1. 将程序包导入您的Microsoft® Dynamics实例。 在Microsoft® Dynamics实例中，转到&#x200B;**Sales** > **Contacts**，然后选择&#x200B;**导入数据**。

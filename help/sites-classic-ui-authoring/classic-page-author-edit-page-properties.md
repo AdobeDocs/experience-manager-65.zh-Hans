@@ -28,7 +28,7 @@ ht-degree: 18%
 
 * **标题**
 
-  页面的标题会显示在各种不同的位置。 例如， **网站** 选项卡列表和 **站点** 卡片/列表视图。
+  页面的标题会显示在各种不同的位置。 例如，**网站**&#x200B;选项卡列表和&#x200B;**站点**&#x200B;卡片/列表视图。
 
   这是必填字段。
 
@@ -44,7 +44,7 @@ ht-degree: 18%
    * 使用下拉列表功能，可从现有标记中进行选择。
    * 当您将鼠标悬停在选择框中的标记条目上时，会显示x；这可用于为此页面删除该标记。
 
-* **在导航中隐藏**
+* **隐藏导航**
 
   用于指示页面在页面导航中是显示还是隐藏的切换开关。
 
@@ -64,7 +64,7 @@ ht-degree: 18%
 
   页面的描述、用途或要添加的任何其他详细信息。
 
-* **准时**
+* **开启时间**
 
   激活已发布页面的日期和时间。 发布后，此页面将保持休眠状态，直到指定的时间。
 
@@ -80,7 +80,7 @@ ht-degree: 18%
 
   允许您输入此页面的虚URL。 这样可让您的URL更短、更具表现力。
 
-  例如，如果虚URL设置为w `elcome`到由路径/标识的页面 `v1.0/startpage`网站h `ttp://example.com,` 然后h `ttp://example.com/welcome`将成为h的虚URL `ttp://example.com/content/v1.0/startpage`
+  例如，如果将网站h `ttp://example.com,`的虚URL设置为路径/ `v1.0/startpage`所标识的页面w `elcome`，则h `ttp://example.com/welcome`将成为h `ttp://example.com/content/v1.0/startpage`的虚URL
 
   >[!CAUTION]
   >
@@ -105,7 +105,7 @@ ht-degree: 18%
 
 * **Design**
 
-  指示 [设计](/help/sites-developing/designer.md) 将用于此页面。
+  指示要用于此页面的[设计](/help/sites-developing/designer.md)。
 
 * **别名**
 
@@ -113,13 +113,13 @@ ht-degree: 18%
 
 * **启用已关闭的用户组**
 
-  启用（或禁用）使用 [封闭用户组](/help/sites-administering/cug.md) (CUG)。
+  启用（或禁用）使用[封闭用户组](/help/sites-administering/cug.md) (CUG)。
 
 * **登录页面**
 
   用于登录的页面。
 
-* **公认组**
+* **公认的组**
 
   有资格登录CUG的组。
 
@@ -149,7 +149,7 @@ ht-degree: 18%
 
 * **Cloud Service**
 
-  定义属性 [云服务](/help/sites-developing/extending-cloud-config.md).
+  定义[云服务](/help/sites-developing/extending-cloud-config.md)的属性。
 
 ### 个性化 {#personalization}
 
@@ -161,23 +161,23 @@ ht-degree: 18%
 
 * **权限** （触控优化的UI）
 
-  查看 [有效权限和添加新权限](/help/sites-administering/user-group-ac-admin.md).
+  查看[有效权限并添加新权限](/help/sites-administering/user-group-ac-admin.md)。
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-  在中定义Blueprint页面的属性 [多站点管理](/help/sites-administering/msm.md). 控制将修改传播到Live Copy的情况。
+  在[多站点管理](/help/sites-administering/msm.md)中为Blueprint页面定义属性。 控制将修改传播到Live Copy的情况。
 
 ### Live Copy {#live-copy}
 
 * **Live Copy**
 
-  在中定义Live Copy页面的属性 [多站点管理](/help/sites-administering/msm.md). 控制从Blueprint传播修改的情况。
+  在[多站点管理](/help/sites-administering/msm.md)中为Live Copy页面定义属性。 控制从Blueprint传播修改的情况。
 
 ### 站点结构 {#site-structure}
 
-* 提供具有全站点功能的页面的链接，例如 **注册页面**， **脱机页面**，等等。
+* 提供具有全网站功能的页面的链接，如&#x200B;**注册页面**、**脱机页面**&#x200B;等。
 
 ## 编辑页面属性 {#editing-page-properties-2}
 
@@ -187,8 +187,8 @@ ht-degree: 18%
 
 1. 打开要编辑的页面。
 
-1. 在副手手上打开 **页面** 选项卡，然后选择 **页面属性……**
+1. 在Sidekick中，打开&#x200B;**页面**&#x200B;选项卡，然后选择&#x200B;**页面属性……**
 
    这将打开一个包含多个选项卡的对话框。
 
-1. 进行所需的更改，然后单击 **确定** 以保存。
+1. 进行所需的更改，然后单击&#x200B;**确定**&#x200B;进行保存。

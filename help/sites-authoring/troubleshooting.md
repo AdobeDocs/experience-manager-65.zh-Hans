@@ -22,21 +22,21 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->如果遇到问题，也值得检查 [已知问题](/help/release-notes/release-notes.md) 适用于您的实例（发行版和Service Pack）。
+>如果遇到问题，也值得检查实例（发行版和Service Pack）的[已知问题](/help/release-notes/release-notes.md)列表。
 
 >[!NOTE]
 >
->具有管理员权限的用户以及希望对AEM问题进行故障排除的用户，可以使用中所述的故障排除方法 [AEM故障诊断（适用于管理员）](/help/sites-administering/troubleshoot.md). 如果您没有足够的权限，请与系统管理员联系，了解有关AEM疑难解答的信息。
+>具有管理员权限的用户以及希望对AEM问题进行故障排除的用户，可以使用[AEM故障诊断（适用于管理员）](/help/sites-administering/troubleshoot.md)中所述的故障排除方法。 如果您没有足够的权限，请与系统管理员联系，了解有关AEM疑难解答的信息。
 
 ## 发布站点上仍显示旧的页面版本 {#old-page-version-still-on-published-site}
 
 * **问题**：
 
-   * 您已经更改了一个页面，并将该页面复制到发布站点，但是 *旧* 发布网站上仍显示该页面的版本。
+   * 您已经更改了一个页面，并将该页面复制到发布站点，但该页面的&#x200B;*旧*&#x200B;版本仍显示在发布站点上。
 
 * **原因**：
 
-   * 这可能有多种原因，通常是缓存（本地浏览器或Dispatcher），但有时也可能是复制队列问题。
+   * 这可能有多种原因，通常是缓存(本地浏览器或Dispatcher)，但有时也可能是复制队列问题。
 
 * **解决方案**：
 

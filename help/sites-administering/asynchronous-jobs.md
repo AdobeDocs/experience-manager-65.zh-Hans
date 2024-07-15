@@ -24,7 +24,7 @@ ht-degree: 84%
 * 从远程 Experience Manager 部署获取超过阈值限制设置的资产
 * 转出 Live Copy
 
-您可以从以下位置查看异步作业的状态 **[!UICONTROL 异步作业状态]** 仪表板位置 **全局导航** > **工具** > **操作** > **作业**.
+您可以从&#x200B;**[!UICONTROL 异步作业状态]**&#x200B;仪表板的&#x200B;**全局导航** > **工具** > **操作** > **作业**&#x200B;查看异步作业的状态。
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ ht-degree: 84%
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. 要查看其他详细信息（例如，说明和日志），请选择操作并单击 **[!UICONTROL 打开]** 工具栏中。
+1. 要查看其他详细信息（例如，说明和日志），请选择操作，然后单击工具栏中的&#x200B;**[!UICONTROL 打开]**。
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -133,7 +133,7 @@ AEM 每天 01:00 运行清除作业，以删除已完成的已超过一天的异
 >
 >* [创建和组织页面](/help/sites-authoring/managing-pages.md)
 >* [创建和同步活动副本](/help/sites-administering/msm-livecopy.md)
->* [在Experience Manager中配置电子邮件](/help/sites-administering/notification.md).
->* [导入资源元数据](/help/assets/metadata.md#import-metadata).
->* [导出资源元数据](/help/assets/metadata.md#export-metadata).
+>* [在Experience Manager](/help/sites-administering/notification.md)中配置电子邮件。
+>* [导入资源元数据](/help/assets/metadata.md#import-metadata)。
+>* [导出资源元数据](/help/assets/metadata.md#export-metadata)。
 >* [使用“连接的资产”从远程部署中共享 DAM 资产](/help/assets/use-assets-across-connected-assets-instances.md)。

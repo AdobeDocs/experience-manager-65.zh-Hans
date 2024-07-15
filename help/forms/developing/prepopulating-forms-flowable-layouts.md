@@ -37,9 +37,9 @@ ht-degree: 0%
 
 在预填充已包含数据的表单时，必须指定已在XML数据源中显示的数据。 假设包含10个字段的表单在四个字段中有数据。 接下来，假设您希望预填充其余六个字段。 在这种情况下，必须在XML数据源中指定用于预填充表单的10个XML元素。 如果仅指定六个元素，则原始的四个字段为空。
 
-例如，您可以预填充窗体，如示例确认窗体。 (请参阅以下位置中的“确认表单”： [呈现交互式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+例如，您可以预填充窗体，如示例确认窗体。 (请参阅[呈现交互式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)中的“确认表单”。)
 
-要预填充示例确认表单，您必须创建一个XML数据源，该数据源包含与表单中的三个字段匹配的三个XML元素。 此表单包含以下三个字段： `FirstName`， `LastName`、和 `Amount`. 第一步是创建一个XML数据源，该数据源包含与表单设计中的字段匹配的XML元素。 下一步是将数据值分配给XML元素，如以下XML代码中所示。
+要预填充示例确认表单，您必须创建一个XML数据源，该数据源包含与表单中的三个字段匹配的三个XML元素。 此表单包含以下三个字段：`FirstName`、`LastName`和`Amount`。 第一步是创建一个XML数据源，该数据源包含与表单设计中的字段匹配的XML元素。 下一步是将数据值分配给XML元素，如以下XML代码中所示。
 
 ```xml
      <Untitled>
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 ### 窗体设计注意事项 {#form-design-considerations}
 
-带可流动布局的Forms基于在Designer中创建的表单设计。 表单设计指定一组布局、呈现和数据捕获规则，包括基于用户输入计算值。 数据输入到表单中时将应用规则。 添加到表单的字段是表单设计内的子表单。 例如，在上图所示的采购订单表单中，每行都是一个子表单。 有关创建包含子表单的表单设计的信息，请参阅 [创建具有流式布局的采购订单表单](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
+带可流动布局的Forms基于在Designer中创建的表单设计。 表单设计指定一组布局、呈现和数据捕获规则，包括基于用户输入计算值。 数据输入到表单中时将应用规则。 添加到表单的字段是表单设计内的子表单。 例如，在上图所示的采购订单表单中，每行都是一个子表单。 有关创建包含子表单的表单设计的信息，请参阅[创建具有可流动布局的采购订单表单](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)。
 
 ### 了解数据子组 {#understanding-data-subgroups}
 
@@ -174,9 +174,9 @@ XML数据源用于预先填充具有固定布局和可流动布局的表单。 �
 * 物料数量
 * 单价
 
-数据子组的父XML元素的名称必须与窗体设计中的子窗体的名称匹配。 例如，在上图中，请注意数据子组的父XML元素的名称为 `detail`. 这与采购订单表单所基于的表单设计中子表单的名称相对应。 如果数据子组的父XML元素的名称与子表单不匹配，则不会预填充服务器端表单。
+数据子组的父XML元素的名称必须与窗体设计中的子窗体的名称匹配。 例如，在上一个图中，请注意数据子组的父XML元素的名称为`detail`。 这与采购订单表单所基于的表单设计中子表单的名称相对应。 如果数据子组的父XML元素的名称与子表单不匹配，则不会预填充服务器端表单。
 
-每个数据子组都必须包含与子表单中的字段名称匹配的XML元素。 此 `detail` 表单设计中的子表单包含以下字段：
+每个数据子组都必须包含与子表单中的字段名称匹配的XML元素。 窗体设计中的`detail`子窗体包含以下字段：
 
 * txtPartNum
 * txtDescription
@@ -185,11 +185,11 @@ XML数据源用于预先填充具有固定布局和可流动布局的表单。 �
 
 >[!NOTE]
 >
->如果您尝试使用包含重复XML元素的数据源预填充表单，并且您设置了 `RenderAtClient` 选项至 `No`，则只有第一个数据记录会合并到表单中。 为确保所有数据记录都合并到表单中，请设置 `RenderAtClient` 到 `Yes`. 欲知关于 `RenderAtClient` 选项，请参见 [在客户端渲染Forms](/help/forms/developing/rendering-forms-client.md).
+>如果您尝试使用包含重复XML元素的数据源预填充表单，并将`RenderAtClient`选项设置为`No`，则只有第一个数据记录会合并到表单中。 为确保所有数据记录都合并到表单中，请将`RenderAtClient`设置为`Yes`。 有关`RenderAtClient`选项的信息，请参阅[在客户端渲染Forms](/help/forms/developing/rendering-forms-client.md)。
 
 >[!NOTE]
 >
->有关Forms服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Forms服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -208,21 +208,21 @@ XML数据源用于预先填充具有固定布局和可流动布局的表单。 �
 
 在开发项目中包含必要的文件。 如果要使用Java创建客户端应用程序，请包含必要的JAR文件。 如果使用Web服务，请确保包含代理文件。
 
-**创建内存中XML数据源**
+**创建内存中的XML数据源**
 
-您可以使用 `org.w3c.dom` 用于创建内存中XML数据源的类，以便使用可流布局预填充表单。 将数据放置到符合表单的XML数据源中。 有关具有流式布局的表单与XML数据源之间的关系的信息，请参阅 [了解数据子组](#understanding-data-subgroups).
+可以使用`org.w3c.dom`类创建内存中的XML数据源，以预填充具有可流动布局的表单。 将数据放置到符合表单的XML数据源中。 有关具有可流动布局的表单与XML数据源之间的关系的信息，请参阅[了解数据子组](#understanding-data-subgroups)。
 
 **转换XML数据源**
 
-内存中的XML数据源，它使用创建 `org.w3c.dom` 类可以转换为 `com.adobe.idp.Document` 对象之前，填充该对象以预填充表单。 内存中的XML数据源可以使用Java XML转换类进行转换。
+使用`org.w3c.dom`类创建的内存中XML数据源可以转换为`com.adobe.idp.Document`对象，然后才可用于预填充表单。 内存中的XML数据源可以使用Java XML转换类进行转换。
 
 >[!NOTE]
 >
->如果您使用Forms服务的WSDL来预填充表单，则必须将 `org.w3c.dom.Document` 对象转换为 `BLOB` 对象。
+>如果您使用Forms服务的WSDL预填充表单，则必须将`org.w3c.dom.Document`对象转换为`BLOB`对象。
 
 **呈现预填充的表单**
 
-您可以像呈现其他表单一样呈现预填充的表单。 唯一的区别是您使用 `com.adobe.idp.Document` 包含要预填充表单的XML数据源的对象。
+您可以像呈现其他表单一样呈现预填充的表单。 唯一的区别是，您使用包含XML数据源的`com.adobe.idp.Document`对象来预填充表单。
 
 **另请参阅**
 
@@ -242,67 +242,67 @@ XML数据源用于预先填充具有固定布局和可流动布局的表单。 �
 
 1. 包含项目文件
 
-   在Java项目的类路径中包含客户端JAR文件，例如adobe-forms-client.jar。 有关这些文件的位置的信息，请参见 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   在Java项目的类路径中包含客户端JAR文件，例如adobe-forms-client.jar。 有关这些文件的位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 1. 创建内存中XML数据源
 
-   * 创建Java `DocumentBuilderFactory` 对象，方法是 `DocumentBuilderFactory` 类&#39; `newInstance` 方法。
-   * 创建Java `DocumentBuilder` 对象，方法是 `DocumentBuilderFactory` 对象的 `newDocumentBuilder` 方法。
-   * 调用 `DocumentBuilder` 对象的 `newDocument` 实例化的方法 `org.w3c.dom.Document` 对象。
-   * 通过调用 `org.w3c.dom.Document` 对象的 `createElement` 方法。 这会创建 `Element` 表示根元素的对象。 将表示元素名称的字符串值传递给 `createElement` 方法。 将返回值强制转换为 `Element`. 接下来，通过调用 `Document` 对象的 `appendChild` 方法，并将根元素对象作为参数传递。 以下代码行显示了此应用程序逻辑：
+   * 通过调用`DocumentBuilderFactory`类`newInstance`方法创建Java `DocumentBuilderFactory`对象。
+   * 通过调用`DocumentBuilderFactory`对象的`newDocumentBuilder`方法创建Java `DocumentBuilder`对象。
+   * 调用`DocumentBuilder`对象的`newDocument`方法以实例化`org.w3c.dom.Document`对象。
+   * 通过调用`org.w3c.dom.Document`对象的`createElement`方法创建XML数据源的根元素。 这将创建一个表示根元素的`Element`对象。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 接下来，通过调用`Document`对象的`appendChild`方法将根元素附加到文档，并将根元素对象作为参数传递。 以下代码行显示了此应用程序逻辑：
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * 通过调用 `Document` 对象的 `createElement` 方法。 将表示元素名称的字符串值传递给 `createElement` 方法。 将返回值强制转换为 `Element`. 接下来，通过调用 `root` 对象的 `appendChild` 方法，并将标头元素对象作为参数传递。 附加到标题元素的XML元素对应于表单的静态部分。 以下代码行显示此应用程序逻辑：
+   * 通过调用`Document`对象的`createElement`方法创建XML数据源的标头元素。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 接下来，通过调用`root`对象的`appendChild`方法，将标头元素附加到根元素，并将标头元素对象作为参数传递。 附加到标题元素的XML元素对应于表单的静态部分。 以下代码行显示此应用程序逻辑：
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * 通过调用 `Document` 对象的 `createElement` 方法，并传递表示元素名称的字符串值。 将返回值强制转换为 `Element`. 接下来，通过调用其子元素的 `appendChild` 方法，并传递 `Document` 对象的 `createTextNode` 方法作为参数。 指定作为子元素的值显示的字符串值。 最后，通过调用标头元素的 `appendChild` 方法，并将子元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
+   * 通过调用`Document`对象的`createElement`方法，创建属于标头元素的子元素，并传递表示该元素名称的字符串值。 将返回值强制转换为`Element`。 接下来，通过调用子元素的`appendChild`方法为其设置值，并将`Document`对象的`createTextNode`方法作为参数传递。 指定作为子元素的值显示的字符串值。 最后，通过调用标头元素的`appendChild`方法将子元素附加到标头元素，并将子元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * 通过重复表单静态部分中出现的每个字段的最后一个子步骤（在XML数据源图表中，这些字段显示在A部分中），将所有剩余的元素添加到标题元素中。(请参阅 [了解数据子组](#understanding-data-subgroups).)
-   * 通过调用 `Document` 对象的 `createElement` 方法。 将表示元素名称的字符串值传递给 `createElement` 方法。 将返回值强制转换为 `Element`. 接下来，通过调用 `root` 对象的 `appendChild` 方法，并将detail元素对象作为参数传递。 附加到详细信息元素的XML元素对应于表单的动态部分。 以下代码行显示此应用程序逻辑：
+   * 通过重复表单静态部分中出现的每个字段的上一个子步骤，将所有剩余的元素添加到标题元素中(在XML数据源图表中，这些字段显示在A部分中。（请参阅[了解数据子组](#understanding-data-subgroups)）
+   * 通过调用`Document`对象的`createElement`方法创建XML数据源的详细信息元素。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 接下来，通过调用`root`对象的`appendChild`方法，将detail元素附加到根元素，并将该detail元素对象作为参数传递。 附加到详细信息元素的XML元素对应于表单的动态部分。 以下代码行显示此应用程序逻辑：
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * 通过调用 `Document` 对象的 `createElement` 方法，并传递表示元素名称的字符串值。 将返回值强制转换为 `Element`. 接下来，通过调用其子元素的 `appendChild` 方法，并传递 `Document` 对象的 `createTextNode` 方法作为参数。 指定作为子元素的值显示的字符串值。 最后，通过调用detail元素的 `appendChild` 方法，并将子元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
+   * 通过调用`Document`对象的`createElement`方法，创建属于该详细信息元素的子元素，并传递表示该元素名称的字符串值。 将返回值强制转换为`Element`。 接下来，通过调用子元素的`appendChild`方法为其设置值，并将`Document`对象的`createTextNode`方法作为参数传递。 指定作为子元素的值显示的字符串值。 最后，通过调用detail元素的`appendChild`方法，将子元素附加到detail元素，并将子元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * 对所有XML元素重复最后一个子步骤以附加到详细信息元素。 要正确创建用于填充采购订单表单的XML数据源，必须将以下XML元素附加到明细元素中： `txtDescription`， `numQty`、和 `numUnitPrice`.
+   * 对所有XML元素重复最后一个子步骤以附加到详细信息元素。 要正确创建用于填充采购订单表单的XML数据源，必须将以下XML元素附加到详细信息元素： `txtDescription`、`numQty`和`numUnitPrice`。
    * 对用于预填充表单的所有数据项重复前两个子步骤。
 
 1. 转换XML数据源
 
-   * 创建 `javax.xml.transform.Transformer` 对象，方法是调用 `javax.xml.transform.Transformer` 对象的静态 `newInstance` 方法。
-   * 创建 `Transformer` 对象，方法是调用 `TransformerFactory` 对象的 `newTransformer` 方法。
-   * 创建 `ByteArrayOutputStream` 对象。
-   * 创建 `javax.xml.transform.dom.DOMSource` 对象，使用它的构造函数传递 `org.w3c.dom.Document` 步骤1中创建的对象。
-   * 创建 `javax.xml.transform.dom.DOMSource` 对象，使用它的构造函数传递 `ByteArrayOutputStream` 对象。
-   * 填充Java `ByteArrayOutputStream` 对象，方法是调用 `javax.xml.transform.Transformer` 对象的 `transform` 方法和传递 `javax.xml.transform.dom.DOMSource` 和 `javax.xml.transform.stream.StreamResult` 对象。
-   * 创建字节数组并分配 `ByteArrayOutputStream` 对象。
-   * 通过调用 `ByteArrayOutputStream` 对象的 `toByteArray` 方法。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递字节数组。
+   * 通过调用`javax.xml.transform.Transformer`对象的静态`newInstance`方法创建`javax.xml.transform.Transformer`对象。
+   * 通过调用`TransformerFactory`对象的`newTransformer`方法创建`Transformer`对象。
+   * 使用构造函数创建`ByteArrayOutputStream`对象。
+   * 使用对象的构造函数创建`javax.xml.transform.dom.DOMSource`对象，并传递在步骤1中创建的`org.w3c.dom.Document`对象。
+   * 使用对象的构造函数创建`javax.xml.transform.dom.DOMSource`对象并传递`ByteArrayOutputStream`对象。
+   * 通过调用`javax.xml.transform.Transformer`对象的`transform`方法并传递`javax.xml.transform.dom.DOMSource`和`javax.xml.transform.stream.StreamResult`对象来填充Java `ByteArrayOutputStream`对象。
+   * 创建字节数组并将`ByteArrayOutputStream`对象的大小分配给字节数组。
+   * 通过调用`ByteArrayOutputStream`对象的`toByteArray`方法填充字节数组。
+   * 使用对象的构造函数并传递字节数组来创建一个`com.adobe.idp.Document`对象。
 
 1. 呈现预填充的表单
 
-   调用 `FormsServiceClient` 对象的 `renderPDFForm` 方法并传递以下值：
+   调用`FormsServiceClient`对象的`renderPDFForm`方法并传递以下值：
 
    * 一个字符串值，它指定窗体设计名称，包括文件扩展名。
-   * A `com.adobe.idp.Document` 包含要与表单合并的数据的对象。 确保您使用 `com.adobe.idp.Document` 在步骤1和步骤2中创建的对象。
-   * A `PDFFormRenderSpec` 存储运行时选项的对象。
-   * A `URLSpec` 包含Forms服务所需的URI值的对象。
-   * A `java.util.HashMap` 存储文件附件的对象。 这是一个可选参数，您可以指定 `null` 如果您不想将文件附加到表单。
+   * 包含要与表单合并的数据的`com.adobe.idp.Document`对象。 确保使用在步骤1和步骤2中创建的`com.adobe.idp.Document`对象。
+   * 存储运行时选项的`PDFFormRenderSpec`对象。
+   * 包含Forms服务所需URI值的`URLSpec`对象。
+   * 存储文件附件的`java.util.HashMap`对象。 这是一个可选参数，如果您不想将文件附加到表单，则可以指定`null`。
 
-   此 `renderPDFForm` 方法返回 `FormsResult` 包含必须写入客户端Web浏览器的表单数据流的对象。
+   `renderPDFForm`方法返回的`FormsResult`对象包含必须写入客户端Web浏览器的表单数据流。
 
-   * 创建 `javax.servlet.ServletOutputStream` 用于将表单数据流发送到客户端Web浏览器的对象。
-   * 创建 `com.adobe.idp.Document` 对象，方法是调用 `FormsResult` 对象 `getOutputContent` 方法。
-   * 创建 `java.io.InputStream` 对象，方法是调用 `com.adobe.idp.Document` 对象的 `getInputStream` 方法。
-   * 创建一个字节数组，通过调用 `InputStream` 对象的 `read` 方法并将字节数组作为参数传递。
-   * 调用 `javax.servlet.ServletOutputStream` 对象的 `write` 将表单数据流发送到客户端Web浏览器的方法。 将字节数组传递给 `write` 方法。
+   * 创建用于将表单数据流发送到客户端Web浏览器的`javax.servlet.ServletOutputStream`对象。
+   * 通过调用`FormsResult`对象的`getOutputContent`方法创建`com.adobe.idp.Document`对象。
+   * 通过调用`com.adobe.idp.Document`对象的`getInputStream`方法创建`java.io.InputStream`对象。
+   * 通过调用`InputStream`对象的`read`方法并将该字节数组作为参数传递，创建字节数组以表单数据流填充该字节数组。
+   * 调用`javax.servlet.ServletOutputStream`对象的`write`方法将表单数据流发送到客户端Web浏览器。 将字节数组传递给`write`方法。
 
 **另请参阅**
 
@@ -318,77 +318,77 @@ XML数据源用于预先填充具有固定布局和可流动布局的表单。 �
 
 1. 包含项目文件
 
-   * 创建使用Forms服务WSDL的Java代理类。 (请参阅 [使用Apache Axis创建Java代理类](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
+   * 创建使用Forms服务WSDL的Java代理类。 （请参阅[使用Apache Axis创建Java代理类](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis)。）
    * 将Java代理类包含在类路径中。
 
 1. 创建内存中XML数据源
 
-   * 创建Java `DocumentBuilderFactory` 对象，方法是 `DocumentBuilderFactory` 类&#39; `newInstance` 方法。
-   * 创建Java `DocumentBuilder` 对象，方法是 `DocumentBuilderFactory` 对象的 `newDocumentBuilder` 方法。
-   * 调用 `DocumentBuilder` 对象的 `newDocument` 实例化的方法 `org.w3c.dom.Document` 对象。
-   * 通过调用 `org.w3c.dom.Document` 对象的 `createElement` 方法。 这会创建 `Element` 表示根元素的对象。 将表示元素名称的字符串值传递给 `createElement` 方法。 将返回值强制转换为 `Element`. 接下来，通过调用 `Document` 对象的 `appendChild` 方法，并将根元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
+   * 通过调用`DocumentBuilderFactory`类`newInstance`方法创建Java `DocumentBuilderFactory`对象。
+   * 通过调用`DocumentBuilderFactory`对象的`newDocumentBuilder`方法创建Java `DocumentBuilder`对象。
+   * 调用`DocumentBuilder`对象的`newDocument`方法以实例化`org.w3c.dom.Document`对象。
+   * 通过调用`org.w3c.dom.Document`对象的`createElement`方法创建XML数据源的根元素。 这将创建一个表示根元素的`Element`对象。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 接下来，通过调用`Document`对象的`appendChild`方法将根元素附加到文档，并将根元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
 
      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
-   * 通过调用 `Document` 对象的 `createElement` 方法。 将表示元素名称的字符串值传递给 `createElement` 方法。 将返回值强制转换为 `Element`. 接下来，通过调用 `root` 对象的 `appendChild` 方法，并将标头元素对象作为参数传递。 附加到标题元素的XML元素对应于表单的静态部分。 以下代码行显示此应用程序逻辑：
+   * 通过调用`Document`对象的`createElement`方法创建XML数据源的标头元素。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 接下来，通过调用`root`对象的`appendChild`方法，将标头元素附加到根元素，并将标头元素对象作为参数传递。 附加到标题元素的XML元素对应于表单的静态部分。 以下代码行显示此应用程序逻辑：
 
      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * 通过调用 `Document` 对象的 `createElement` 方法，并传递表示元素名称的字符串值。 将返回值强制转换为 `Element`. 接下来，通过调用其子元素的 `appendChild` 方法，并传递 `Document` 对象的 `createTextNode` 方法作为参数。 指定作为子元素的值显示的字符串值。 最后，通过调用标头元素的 `appendChild` 方法，并将子元素对象作为参数传递。 以下代码行显示了此应用程序逻辑：
+   * 通过调用`Document`对象的`createElement`方法，创建属于标头元素的子元素，并传递表示该元素名称的字符串值。 将返回值强制转换为`Element`。 接下来，通过调用子元素的`appendChild`方法为其设置值，并将`Document`对象的`createTextNode`方法作为参数传递。 指定作为子元素的值显示的字符串值。 最后，通过调用标头元素的`appendChild`方法将子元素附加到标头元素，并将子元素对象作为参数传递。 以下代码行显示了此应用程序逻辑：
 
      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * 通过重复表单静态部分中出现的每个字段的最后一个子步骤（在XML数据源图表中，这些字段显示在A部分中），将所有剩余的元素添加到标题元素中。(请参阅 [了解数据子组](#understanding-data-subgroups).)
-   * 通过调用 `Document` 对象的 `createElement` 方法。 将表示元素名称的字符串值传递给 `createElement` 方法。 将返回值强制转换为 `Element`. 接下来，通过调用 `root` 对象的 `appendChild` 方法，并将detail元素对象作为参数传递。 附加到详细信息元素的XML元素对应于表单的动态部分。 以下代码行显示了此应用程序逻辑：
+   * 通过重复表单静态部分中出现的每个字段的上一个子步骤，将所有剩余的元素添加到标题元素中(在XML数据源图表中，这些字段显示在A部分中。（请参阅[了解数据子组](#understanding-data-subgroups)）
+   * 通过调用`Document`对象的`createElement`方法创建XML数据源的详细信息元素。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 接下来，通过调用`root`对象的`appendChild`方法，将detail元素附加到根元素，并将该detail元素对象作为参数传递。 附加到详细信息元素的XML元素对应于表单的动态部分。 以下代码行显示了此应用程序逻辑：
 
      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * 通过调用 `Document` 对象的 `createElement` 方法，并传递表示元素名称的字符串值。 将返回值强制转换为 `Element`. 接下来，通过调用其子元素的 `appendChild` 方法，并传递 `Document` 对象的 `createTextNode` 方法作为参数。 指定作为子元素的值显示的字符串值。 最后，通过调用detail元素的 `appendChild` 方法，并将子元素对象作为参数传递。 以下代码行显示了此应用程序逻辑：
+   * 通过调用`Document`对象的`createElement`方法，创建属于该详细信息元素的子元素，并传递表示该元素名称的字符串值。 将返回值强制转换为`Element`。 接下来，通过调用子元素的`appendChild`方法为其设置值，并将`Document`对象的`createTextNode`方法作为参数传递。 指定作为子元素的值显示的字符串值。 最后，通过调用detail元素的`appendChild`方法，将子元素附加到detail元素，并将子元素对象作为参数传递。 以下代码行显示了此应用程序逻辑：
 
      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * 对所有XML元素重复最后一个子步骤以附加到详细信息元素。 要正确创建用于填充采购订单表单的XML数据源，必须将以下XML元素附加到明细元素中： `txtDescription`， `numQty`、和 `numUnitPrice`.
+   * 对所有XML元素重复最后一个子步骤以附加到详细信息元素。 要正确创建用于填充采购订单表单的XML数据源，必须将以下XML元素附加到详细信息元素： `txtDescription`、`numQty`和`numUnitPrice`。
    * 对用于预填充表单的所有数据项重复前两个子步骤。
 
 1. 转换XML数据源
 
-   * 创建 `javax.xml.transform.Transformer` 对象，方法是调用 `javax.xml.transform.Transformer` 对象的静态 `newInstance` 方法。
-   * 创建 `Transformer` 对象，方法是调用 `TransformerFactory` 对象的 `newTransformer` 方法。
-   * 创建 `ByteArrayOutputStream` 对象。
-   * 创建 `javax.xml.transform.dom.DOMSource` 对象，使用它的构造函数传递 `org.w3c.dom.Document` 步骤1中创建的对象。
-   * 创建 `javax.xml.transform.dom.DOMSource` 对象，使用它的构造函数传递 `ByteArrayOutputStream` 对象。
-   * 填充Java `ByteArrayOutputStream` 对象，方法是调用 `javax.xml.transform.Transformer` 对象的 `transform` 方法和传递 `javax.xml.transform.dom.DOMSource` 和 `javax.xml.transform.stream.StreamResult` 对象。
-   * 创建字节数组并分配 `ByteArrayOutputStream` 对象。
-   * 通过调用 `ByteArrayOutputStream` 对象的 `toByteArray` 方法。
-   * 创建 `BLOB` 对象，通过调用其构造函数 `setBinaryData` 方法，并传递字节数组。
+   * 通过调用`javax.xml.transform.Transformer`对象的静态`newInstance`方法创建`javax.xml.transform.Transformer`对象。
+   * 通过调用`TransformerFactory`对象的`newTransformer`方法创建`Transformer`对象。
+   * 使用构造函数创建`ByteArrayOutputStream`对象。
+   * 使用对象的构造函数创建`javax.xml.transform.dom.DOMSource`对象，并传递在步骤1中创建的`org.w3c.dom.Document`对象。
+   * 使用对象的构造函数创建`javax.xml.transform.dom.DOMSource`对象并传递`ByteArrayOutputStream`对象。
+   * 通过调用`javax.xml.transform.Transformer`对象的`transform`方法并传递`javax.xml.transform.dom.DOMSource`和`javax.xml.transform.stream.StreamResult`对象来填充Java `ByteArrayOutputStream`对象。
+   * 创建字节数组并将`ByteArrayOutputStream`对象的大小分配给字节数组。
+   * 通过调用`ByteArrayOutputStream`对象的`toByteArray`方法填充字节数组。
+   * 使用构造函数创建`BLOB`对象并调用其`setBinaryData`方法并传递字节数组。
 
 1. 呈现预填充的表单
 
-   调用 `FormsService` 对象的 `renderPDFForm` 方法并传递以下值：
+   调用`FormsService`对象的`renderPDFForm`方法并传递以下值：
 
    * 一个字符串值，它指定窗体设计名称，包括文件扩展名。
-   * A `BLOB` 包含要与表单合并的数据的对象。 确保您使用 `BLOB` 在步骤1和步骤2中创建的对象。
-   * A `PDFFormRenderSpecc` 存储运行时选项的对象。 有关更多信息，请参阅 [AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
-   * A `URLSpec` 包含Forms服务所需的URI值的对象。
-   * A `java.util.HashMap` 存储文件附件的对象。 这是一个可选参数，您可以指定 `null` 如果您不想将文件附加到表单。
-   * 空的 `com.adobe.idp.services.holders.BLOBHolder` 方法填充的对象。 用于存储渲染的PDF表单。
-   * 空的 `javax.xml.rpc.holders.LongHolder` 方法填充的对象。 （此参数将存储表单中的页数）。
-   * 空的 `javax.xml.rpc.holders.StringHolder` 方法填充的对象。 （此参数将存储区域设置值）。
-   * 空的 `com.adobe.idp.services.holders.FormsResultHolder` 将包含此操作结果的对象。
+   * 包含要与表单合并的数据的`BLOB`对象。 确保您使用在步骤1和步骤2中创建的`BLOB`对象。
+   * 存储运行时选项的`PDFFormRenderSpecc`对象。 有关详细信息，请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
+   * 包含Forms服务所需URI值的`URLSpec`对象。
+   * 存储文件附件的`java.util.HashMap`对象。 这是一个可选参数，如果您不想将文件附加到表单，则可以指定`null`。
+   * 方法填充的空`com.adobe.idp.services.holders.BLOBHolder`对象。 用于存储渲染的PDF表单。
+   * 方法填充的空`javax.xml.rpc.holders.LongHolder`对象。 （此参数将存储表单中的页数）。
+   * 方法填充的空`javax.xml.rpc.holders.StringHolder`对象。 （此参数将存储区域设置值）。
+   * 将包含此操作结果的空`com.adobe.idp.services.holders.FormsResultHolder`对象。
 
-   此 `renderPDFForm` 方法填充 `com.adobe.idp.services.holders.FormsResultHolder` 作为最后一个参数值传递的对象，该对象具有必须写入客户端Web浏览器的表单数据流。
+   `renderPDFForm`方法使用必须写入客户端Web浏览器的表单数据流填充作为最后一个参数值传递的`com.adobe.idp.services.holders.FormsResultHolder`对象。
 
-   * 创建 `FormResult` 对象，方法是获取 `com.adobe.idp.services.holders.FormsResultHolder` 对象的 `value` 数据成员。
-   * 创建 `BLOB` 通过调用 `FormsResult` 对象的 `getOutputContent` 方法。
-   * 获取的内容类型 `BLOB` 对象(通过调用其 `getContentType` 方法。
-   * 设置 `javax.servlet.http.HttpServletResponse` 通过调用对象的内容类型 `setContentType` 方法和传递的内容类型 `BLOB` 对象。
-   * 创建 `javax.servlet.ServletOutputStream` 用于通过调用 `javax.servlet.http.HttpServletResponse` 对象的 `getOutputStream` 方法。
-   * 创建字节数组，并通过调用 `BLOB` 对象的 `getBinaryData` 方法。 此任务分配 `FormsResult` 对象。
-   * 调用 `javax.servlet.http.HttpServletResponse` 对象的 `write` 将表单数据流发送到客户端Web浏览器的方法。 将字节数组传递给 `write` 方法。
+   * 通过获取`com.adobe.idp.services.holders.FormsResultHolder`对象的`value`数据成员的值创建`FormResult`对象。
+   * 通过调用`FormsResult`对象的`getOutputContent`方法，创建包含表单数据的`BLOB`对象。
+   * 通过调用其`getContentType`方法获取`BLOB`对象的内容类型。
+   * 通过调用其`setContentType`方法并传递`BLOB`对象的内容类型来设置`javax.servlet.http.HttpServletResponse`对象的内容类型。
+   * 通过调用`javax.servlet.http.HttpServletResponse`对象的`getOutputStream`方法，创建用于将表单数据流写入客户端Web浏览器的`javax.servlet.ServletOutputStream`对象。
+   * 创建字节数组，并通过调用`BLOB`对象的`getBinaryData`方法填充该数组。 此任务将`FormsResult`对象的内容分配给字节数组。
+   * 调用`javax.servlet.http.HttpServletResponse`对象的`write`方法将表单数据流发送到客户端Web浏览器。 将字节数组传递给`write`方法。
 
    >[!NOTE]
    >
-   >此 `renderPDFForm` 方法填充 `com.adobe.idp.services.holders.FormsResultHolder` 作为最后一个参数值传递的对象，该对象具有必须写入客户端Web浏览器的表单数据流。
+   >`renderPDFForm`方法使用必须写入客户端Web浏览器的表单数据流填充作为最后一个参数值传递的`com.adobe.idp.services.holders.FormsResultHolder`对象。
 
 **另请参阅**
 

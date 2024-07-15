@@ -49,7 +49,7 @@ ht-degree: 83%
 
 ### 示例查询 – 所有可用架构和数据类型 {#sample-all-schemes-datatypes}
 
-此示例查询返回所有 `types` 用于所有可用架构。
+此示例查询返回所有可用架构的所有`types`。
 
 **示例查询**
 
@@ -225,7 +225,7 @@ ht-degree: 83%
 
 ### 示例查询 – 所有城市的名称 {#sample-names-all-cities}
 
-此示例查询是一个直接的查询，返回 `name`中所有条目的 `city`架构。
+此示例查询是一个直接的查询，返回`city`架构中所有条目的`name`。
 
 **示例查询**
 
@@ -316,7 +316,7 @@ query {
 
 ### 示例查询 – 具有指定变体的所有城市 {#sample-cities-named-variation}
 
-如果您创建名为“柏林中心”的变体(`berlin_centre`)，对于 `city` 柏林，您可以使用查询返回变体的详细信息。
+如果您创建名为“柏林中心”(`berlin_centre`)的变体，则对于`city`柏林，您可以使用查询返回变体的详细信息。
 
 **示例查询**
 
@@ -362,7 +362,7 @@ query {
 如果您：
 
 * 创建各种标签，并命名为 `Tourism` : `Business`, `City Break`, `Holiday`
-* 并将这些标记分配给各种 `City` 实例
+* 并将这些标记分配给各种`City`实例的主变量
 
 然后，您可以使用查询返回`city`模式中标记为 City Breaks 的所有条目的 `name` 和 `tags` 的详细信息。
 
@@ -539,7 +539,7 @@ query {
 
 ### 示例查询 – 所有名为“Jobs”或“Smith”的人 {#sample-all-persons-jobs-smith}
 
-此示例查询筛选所有 `persons` 任何具有此名称的 `Jobs`或 `Smith`.
+此示例查询筛选名为`Jobs`或`Smith`的任何的所有`persons`。
 
 **示例查询**
 
@@ -593,7 +593,7 @@ query {
 
 ### 示例查询 – 所有名字不是“Jobs”的人 {#sample-all-persons-not-jobs}
 
-此示例查询筛选所有 `persons` 任何具有此名称的 `Jobs`或 `Smith`.
+此示例查询筛选名为`Jobs`或`Smith`的任何的所有`persons`。
 
 **示例查询**
 
@@ -1333,7 +1333,7 @@ query {
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询提供 `fragments` 作为数组 `[Article]`.
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询将`fragments`作为`[Article]`的数组提供。
 
 ```graphql
 {
@@ -1516,7 +1516,7 @@ query {
 此查询查找：
 
 * 特定路径下类型为 `article` 的单个内容片段
-   * 在该路径中，数据关联到变体： `variation1`
+   * 在该路径中，与变体相关的数据： `variation1`
 
 **示例查询**
 

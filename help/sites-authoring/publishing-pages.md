@@ -14,7 +14,7 @@ ht-degree: 66%
 
 # 发布页面 {#publishing-pages}
 
-在创作环境中创建和审查内容后， [使其在您的公共网站上可用](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) （您的发布环境）。
+在创作环境中创建并审阅内容后，[将其发布到公共网站](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)（您的发布环境）。
 
 这称为“发布页面”。当您要从发布环境中删除页面时，此过程称为“取消发布”。在发布和取消发布时，页面会保留在创作环境中以供进一步更改，直到将其删除为止。
 
@@ -39,7 +39,7 @@ ht-degree: 66%
 >如果您没有必要的权限来发布特定页面：
 >
 >* 将触发一个工作流，通知请求发布的适当人员。
->* 此 [可能已自定义工作流](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) 由您的开发团队提供。
+>* 您的开发团队可能已自定义此[工作流](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6)。
 >* 将显示一条简短的消息，通知您工作流已经触发。
 >
 
@@ -63,7 +63,7 @@ ht-degree: 66%
    * 如果不包含要发布的引用，则将直接发布页面。
    * 如果页面包含需要发布的引用，则将在&#x200B;**发布**&#x200B;向导中列出该内容，从该向导中可以：
 
-      * 指定要与页面一起发布的资产或标记，然后使用 **Publish** 以完成该过程。
+      * 指定要与页面一起发布的资源或标记，然后使用&#x200B;**Publish**&#x200B;完成该过程。
 
       * 使用&#x200B;**取消**&#x200B;中止操作。
 
@@ -98,11 +98,11 @@ Sites 控制台中有两个用于发布的选项：
 
 要使用“快速发布”发布页面，请执行以下操作：
 
-1. 在站点控制台中选择一个或多个页面，然后单击 **快速发布** 按钮。
+1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**快速Publish**&#x200B;按钮。
 
    ![pp-02](assets/pp-02.png)
 
-1. 在快速发布对话框中，单击以确认发布 **Publish** 或单击 **取消**. 请记住，任何未发布的引用也将被自动发布。
+1. 在“快速Publish”对话框中，单击&#x200B;**Publish**&#x200B;以确认发布，或单击&#x200B;**取消**&#x200B;以取消发布。 请记住，任何未发布的引用也将被自动发布。
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -114,11 +114,11 @@ Sites 控制台中有两个用于发布的选项：
 
 #### 管理发布 {#manage-publication}
 
-**管理发布** 与“快速发布”相比，提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
+与“快速Publish”相比，**管理发布**&#x200B;提供了更多选项，允许包含子页面、自定义引用和启动任何适用的工作流，并且还提供了在以后的日期发布的选项。
 
 要使用“管理发布”发布或取消发布页面，请执行以下操作：
 
-1. 在站点控制台中选择一个或多个页面，然后单击 **管理发布** 按钮。
+1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**管理发布**&#x200B;按钮。
 
    ![pp-02-1](assets/pp-02-1.png)
 
@@ -135,7 +135,7 @@ Sites 控制台中有两个用于发布的选项：
 
    单击&#x200B;**下一步**&#x200B;以继续。
 
-1. 在“管理发布”向导的下一步中， **范围**，您可以定义发布/取消发布的范围，如包括子页面和/或包括引用。
+1. 在“管理发布”向导的下一个步骤&#x200B;**范围**&#x200B;中，您可以定义发布/取消发布的范围，例如包括子页面和/或包括引用。
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
@@ -169,9 +169,9 @@ Sites 控制台中有两个用于发布的选项：
 
    ![pp-04](assets/pp-04.png)
 
-   此 **已发布引用** 对话框显示选定内容的引用。 默认情况下，这些引用全部处于选中状态并将进行发布/取消发布，但您可以取消选中以取消选中它们，以便将它们排除在操作之外。
+   **已发布引用**&#x200B;对话框将显示选定内容的引用。 默认情况下，这些引用全部处于选中状态并将进行发布/取消发布，但您可以取消选中以取消选中它们，以便将它们排除在操作之外。
 
-   单击 **完成** 保存更改或 **取消** 以取消所做的选择并返回到向导。
+   单击&#x200B;**完成**&#x200B;以保存更改，或单击&#x200B;**取消**&#x200B;以取消选择并返回向导。
 
    返回到向导后，**引用**&#x200B;列将进行相应的更新，以反映您选择的要发布或取消发布的引用。
 
@@ -185,12 +185,12 @@ Sites 控制台中有两个用于发布的选项：
 
    >[!NOTE]
    >
-   >根据用户可能拥有或可能没有的权限显示&#x200B;**工作流程**&#x200B;步骤。请参阅 [此页面上的上一注释](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) 关于发布权限和 [管理工作流的访问权限](/help/sites-administering/workflows-managing.md) 和 [将工作流应用到页面](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) 以了解详细信息。
+   >根据用户可能拥有或可能没有的权限显示&#x200B;**工作流程**&#x200B;步骤。有关详细信息，请参阅此页面上的[上一备注](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd)中有关发布权限的内容，以及[管理工作流的访问权限](/help/sites-administering/workflows-managing.md)和[将工作流应用到页面](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)的内容。
 
    资源将按触发的工作流程分组，并且每组都提供了用于执行以下操作的选项：
 
    * 定义工作流程的标题。
-   * 保留工作流包，前提是工作流具有 [多资源支持](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
+   * 保留工作流包，前提是工作流具有[多资源支持](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)。
    * 在选择保留工作流程包的选项时，定义工作流程包的标题。
 
    单击&#x200B;**发布**&#x200B;或&#x200B;**稍后发布**&#x200B;以完成发布。
@@ -218,7 +218,7 @@ Sites 控制台中有两个用于发布的选项：
 
 正如[使用“管理发布”选项发布页面](/help/sites-authoring/publishing-pages.md#manage-publication)一样，也可以使用它来取消发布页面。
 
-1. 在站点控制台中选择一个或多个页面，然后单击 **管理发布** 按钮。
+1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**管理发布**&#x200B;按钮。
 1. 此时会启动&#x200B;**管理发布**&#x200B;向导。在第一个步骤&#x200B;**选项**&#x200B;中，选择&#x200B;**取消发布**，而不是默认选项&#x200B;**发布**。
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
@@ -227,7 +227,7 @@ Sites 控制台中有两个用于发布的选项：
 
    如果您要稍后撤消发布/取消发布页面，请转到[“工作流程”控制台](/help/sites-administering/workflows.md)以终止相应的工作流程。
 
-1. 要完成取消发布，请按照之前的步骤继续完成向导 [发布页面](/help/sites-authoring/publishing-pages.md#manage-publication).
+1. 要完成取消发布，请按照与[发布页面](/help/sites-authoring/publishing-pages.md#manage-publication)类似的过程继续完成向导。
 
 ## 发布和取消发布树 {#publishing-and-unpublishing-a-tree}
 
@@ -241,22 +241,22 @@ Sites 控制台中有两个用于发布的选项：
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. 在 **包括子项** 对话框，请取消选中以下选项：
+1. 在&#x200B;**包括子项**&#x200B;对话框中，取消选中以下选项：
 
    * 仅包括直接子项
    * 仅包括已发布的页面
 
-   这些选项默认处于选中状态，因此您必须记得取消选择它们。 单击 **添加** 以确认并将内容添加到发布/取消发布。
+   这些选项默认处于选中状态，因此您必须记得取消选择它们。 单击&#x200B;**添加**&#x200B;以确认并将内容添加到发布/取消发布。
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
-1. 此 **管理发布** 向导列出树的内容以供审阅。 您可以通过添加其他页面或删除所选页面来进一步自定义选择。
+1. **管理发布**&#x200B;向导列出了树的内容以供审阅。 您可以通过添加其他页面或删除所选页面来进一步自定义选择。
 
    ![screen_shot_2018-03-21at154237](assets/screen_shot_2018-03-21at154237.png)
 
    请记住，您还可以通过&#x200B;**已发布引用**&#x200B;选项查看要发布的引用。
 
-1. [照常继续执行“管理发布”向导](#manage-publication) 完成发布或取消发布树。
+1. [继续正常的“管理发布”向导](#manage-publication)以完成发布或取消发布树的过程。
 
 ## 确定发布状态 {#determining-publication-status}
 

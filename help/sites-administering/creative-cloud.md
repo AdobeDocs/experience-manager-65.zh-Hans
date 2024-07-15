@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->已弃用AEM到Creative Cloud的文件夹共享功能。 建议客户使用较新的功能，例如 [Adobe资源链接](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) 或 [AEM桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). 了解详情，请参阅 [AEM和Creative Cloud集成最佳实践](/help/assets/aem-cc-integration-best-practices.md).
+>已弃用AEM到Creative Cloud的文件夹共享功能。 建议客户使用较新的功能，如[AdobeAsset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)或[AEM桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)。 请参阅[AEM和Creative Cloud集成最佳实践](/help/assets/aem-cc-integration-best-practices.md)以了解详情。
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

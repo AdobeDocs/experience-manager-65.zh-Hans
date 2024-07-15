@@ -13,19 +13,19 @@ ht-degree: 0%
 
 ---
 
-# 自定义和扩展 [!DNL Assets] {#customizing-and-extending-assets}
+# 自定义和扩展[!DNL Assets] {#customizing-and-extending-assets}
 
 Asset Editor是AdobeEnterprise Manager网站的用户用于查找、查看和处理存储库中数字资源的主要访问点。
 
-作为 [!DNL Experience Manager] 开发人员，您可以通过多种方式自定义和扩展资产编辑器，从而为用户提供量身定制的界面和功能集。
+作为[!DNL Experience Manager]开发人员，您可以通过多种方式自定义和扩展资产编辑器，从而为用户提供量身定制的界面和功能集。
 
 可以自定义或增强功能的以下方面：
 
 * [扩展资产编辑器](asseteditorx.md)
-* [扩展资产搜索](searchx.md)
-* [使用媒体处理程序和工作流处理资源](media-handlers.md)
-* [将资产与活动流集成](extending-activity-stream.md)
-* [资产代理开发](proxy.md)
+* [扩展Assets搜索](searchx.md)
+* [使用媒体处理程序和工作流处理Assets](media-handlers.md)
+* [将Assets与活动流集成](extending-activity-stream.md)
+* [Assets代理开发](proxy.md)
 * [配置ImageMagick的最佳实践](best-practices-for-imagemagick.md)
 
 ## 自定义外观 {#customizing-the-look-and-feel}
@@ -38,6 +38,6 @@ Asset Editor的以下外观和风格是可自定义的：
 
 ## 自定义演绎版 {#customizing-renditions}
 
-在 [!DNL Experience Manager Assets] 术语演绎版是资产的显示形式。 通常，特定资产可以具有多个演绎版。 例如，全色图像可能有一个原始大小的演绎版，另一个是按比例缩小大小的演绎版，另一个是按比例缩小并转换为灰度的演绎版。
+在[!DNL Experience Manager Assets]术语中，演绎版是用来展示资源的形式。 通常，特定资产可以具有多个演绎版。 例如，全色图像可能有一个原始大小的演绎版，另一个是按比例缩小大小的演绎版，另一个是按比例缩小并转换为灰度的演绎版。
 
 可以自定义特定资源可用的演绎版并创建新演绎版。

@@ -40,16 +40,16 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本�
 * [AEM版本6.5.4或更高版本](/help/release-notes/release-notes.md)
    * 您必须拥有系统的管理员权限。
 * [GitHub 上提供的示例 WKND SPA Project 应用程序](https://github.com/adobe/aem-guides-wknd-spa)
-   * 下载 [最新版本的React应用程序。](https://github.com/adobe/aem-guides-wknd-spa/releases) 其命名将类似于 `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
-   * 下载 [最新示例图像](https://github.com/adobe/aem-guides-wknd-spa/releases) 应用程序的。 其命名将类似于 `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [使用包管理器](/help/sites-administering/package-manager.md) 以安装包，就像安装AEM中的任何其他包一样。
+   * 下载[最新版本的React应用程序。](https://github.com/adobe/aem-guides-wknd-spa/releases)其名称将类似于`wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`。
+   * 下载应用程序的[最新示例图像](https://github.com/adobe/aem-guides-wknd-spa/releases)。 其名称类似于`wknd-spa-sample-images-X.Y.Z.zip`。
+   * [使用包管理器](/help/sites-administering/package-manager.md)像在AEM中安装任何其他包一样安装包。
    * 在本演练中，无需使用 Maven 安装应用程序。
 
 >[!CAUTION]
 >
->本文档使用 [WKND Spa项目应用程序](https://github.com/adobe/aem-guides-wknd-spa) 仅供演示之用。 请勿用于任何项目工作。
+>本文档仅将[WKND Spa项目应用程序](https://github.com/adobe/aem-guides-wknd-spa)用于演示目的。 请勿用于任何项目工作。
 >
->任何AEM项目都应使用 [AEM项目原型，](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 其中使用React或Angular支持SPA项目并使用SPA SDK。
+>任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，该原型支持使用React或Angular的SPA项目并使用SPA SDK。
 
 ### 什么是 SPA？ {#what-is-a-spa}
 
@@ -94,9 +94,9 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
 >[!NOTE]
 >
->有关SPA如何在AEM中工作的技术详细信息，请参阅文章 [AEM中的SPA入门](/help/sites-developing/spa-getting-started-react.md).
+>有关SPA如何在AEM中工作的技术详细信息，请参阅文章[AEM中的SPA快速入门](/help/sites-developing/spa-getting-started-react.md)。
 >
->要更详细地了解SPA编辑器的设计、架构和技术工作流，请参阅文章 [SPA编辑器概述](/help/sites-developing/spa-overview.md).
+>有关SPA编辑器的设计、架构和技术工作流的详细信息，请参阅文章[SPA编辑器概述](/help/sites-developing/spa-overview.md)。
 
 ## SPA 的内容编辑体验 {#content-editing-experience-with-spa}
 
@@ -118,7 +118,7 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
    >[!NOTE]
    >
-   >请参阅 [SPA编辑器概述](spa-overview.md#requirements-limitations) 有关就地文本编辑器和SPA的更多信息。
+   >有关就地文本编辑器和SPA的更多信息，请参阅[SPA编辑器概述](spa-overview.md#requirements-limitations)。
 
 1. 使用资源浏览器将新图像拖放到图像组件中。
 
@@ -164,7 +164,7 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
 那么，如果在子页面中导航时没有重新加载页面，如何加载页面呢？
 
-下一节， [加载SPA应用程序，](#loading-an-spa-application) 深入了解加载SPA的机制，以及如何同步和异步加载内容。
+下一部分[加载SPA应用程序](#loading-an-spa-application)深入探究了加载SPA的机制，以及如何同步和异步加载内容。
 
 ### 加载 SPA 应用程序 {#loading-an-spa-application}
 
@@ -184,7 +184,7 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
    ![步骤4](assets/spa-walkthrough-step-1-4.png)
 
-1. 切换到 **网络** 选项卡，然后重新加载页面。
+1. 切换到开发人员工具的&#x200B;**网络**&#x200B;选项卡并重新加载页面。
 
    忽略图像请求，为页面加载的主要资源为页面本身、CSS、React JavaScript、其依赖项以及页面的JSON数据。
 
@@ -228,7 +228,7 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
 1. 使用浏览器的内置开发人员工具检查页面内容。使用选择工具，在页面上选择一个可编辑的组件并查看元素详细信息。
 
-   组件具有新的数据属性 `data-cq-data-path`.
+   该组件具有新的数据属性`data-cq-data-path`。
 
    ![步骤2](assets/spa-walkthrough-step-2-2.png)
 
@@ -244,7 +244,7 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
    >[!NOTE]
    >
-   >这是AEM中服务器端渲染页面的行为更改，其中有一个 `cq` 为每个可编辑组件插入的元素。
+   >这是AEM中服务器端渲染页面的行为更改，其中为每个可编辑组件插入`cq`元素。
    >
    >
    >SPA中的此方法无需注入自定义元素，只需依赖其他数据属性，使得前端开发人员更容易标记这些元素。
@@ -253,6 +253,6 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
 现在，您已了解 AEM 中的 SPA 编辑体验以及 SPA 与 SPA 编辑器的关系，请更深入地了解 SPA 的构建方式。
 
-* [AEM中的SPA入门](/help/sites-developing/spa-getting-started-react.md) 显示了如何构建基本SPA以便在AEM中使用SPA编辑器
+* [AEM中的SPA快速入门](/help/sites-developing/spa-getting-started-react.md)显示了如何在AEM中构建基本SPA以使用SPA编辑器
 * [SPA 编辑器概述](/help/sites-developing/spa-overview.md)更深入地介绍了 AEM 和 SPA 之间的通信模型。
 * [为 AEM 开发 SPA](/help/sites-developing/spa-architecture.md) 介绍了如何让前端开发人员为 AEM 开发 SPA，以及 SPA 如何与 AEM 的架构进行交互。

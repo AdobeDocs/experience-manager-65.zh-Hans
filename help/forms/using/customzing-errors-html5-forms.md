@@ -34,10 +34,10 @@ ht-degree: 3%
 
 ### 自定义错误消息的位置  {#customizing-the-position-of-error-messages-nbsp}
 
-要自定义错误消息的位置，请添加 &lt;div> 标记每个错误和警告字段，放置 &lt;div> 标签上的样式，并将css样式应用于 &lt;div> 标记之前。 有关详细步骤，请参阅以下步骤：
+要自定义错误消息的位置，请为每个错误和警告字段添加&lt;div>标记，将&lt;div>标记放在左侧或右侧，并在&lt;div>标记上应用css样式。 有关详细步骤，请参阅以下步骤：
 
-1. 导航至 `CustomErrorManager-1.0-SNAPSHOT`文件夹并打开 `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` 文件夹。
-1. 打开 `customErrorManager.js` 文件以供编辑。此 `markError` 函数接受以下参数：
+1. 导航到`CustomErrorManager-1.0-SNAPSHOT`文件夹并打开`etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`文件夹。
+1. 打开 `customErrorManager.js` 文件以供编辑。文件中的`markError`函数接受以下参数：
 
    |   |  |
    |---|---|
@@ -75,7 +75,7 @@ ht-degree: 3%
    ```
 
 1. 保存并关闭该文件。
-1. 导航至 `CustomErrorManager-1.0-SNAPSHOT` 文件夹并创建jcr_root和META-INF文件夹的归档文件。 将存档重命名为CustomErrorManager-1.0-SNAPSHOT.zip。
+1. 导航到`CustomErrorManager-1.0-SNAPSHOT`文件夹并创建jcr_root和META-INF文件夹的存档。 将存档重命名为CustomErrorManager-1.0-SNAPSHOT.zip。
 1. 使用包管理器上传并安装包。
 
 ## 显示多个字段的错误消息  {#display-error-messages-for-multiple-fields-nbsp}

@@ -37,7 +37,7 @@ ht-degree: 8%
 
 ## 幕后 {#behind-the-scenes}
 
-您可以在父表单中添加基于XSD的自适应表单和片段。 父窗体的结构与 [任意自适应表单](../../forms/using/prepopulate-adaptive-form-fields.md). 将自适应表单作为子表单添加时，它会作为面板添加到父表单中。 绑定子表单的数据存储在 `data`根目录 `afBoundData` 部分。
+您可以在父表单中添加基于XSD的自适应表单和片段。 父表单的结构与[任何自适应表单](../../forms/using/prepopulate-adaptive-form-fields.md)相同。 将自适应表单作为子表单添加时，它会作为面板添加到父表单中。 绑定子表单的数据存储在父表单XML架构的`afBoundData`部分的`data`根下。
 
 例如，您的客户填写申请表。 表单的前两个字段是名称和身份。 其XML为：
 
@@ -55,7 +55,7 @@ ht-degree: 8%
 </afData>
 ```
 
-在应用程序中添加其他表单，以便客户填写其办公室地址。 子表单的架构根为 `officeAddress`. 应用 `bindref` `/application/officeAddress` 或 `/officeAddress`. 如果 `bindref`未提供，子表单将添加为 `officeAddress` 子树。 请参阅以下格式的XML：
+在应用程序中添加其他表单，以便客户填写其办公室地址。 子表单的架构根为`officeAddress`。 应用`bindref` `/application/officeAddress`或`/officeAddress`。 如果未提供`bindref`，则子表单将添加为`officeAddress`子树。 请参阅以下格式的XML：
 
 ```xml
 <afData>
@@ -75,7 +75,7 @@ ht-degree: 8%
 </afData>
 ```
 
-如果插入其他允许客户提供住宅地址的表单，请应用 `bindref` `/application/houseAddress or /houseAddress.`XML如下所示：
+如果插入另一个允许客户提供住宅地址的表单，请应用`bindref` `/application/houseAddress or /houseAddress.`XML如下所示：
 
 ```xml
 <afData>
@@ -99,9 +99,9 @@ ht-degree: 8%
 </afData>
 ```
 
-如果要保留与架构根相同的子根名称( `Address`在此示例中)，使用索引的bindrefs。
+如果要保留与架构根相同的子根名称（本示例中为`Address`），请使用索引的bindrefs。
 
-例如，应用bindrefs `/application/address[1]` 或 `/address[1]` 和 `/application/address[2]` 或 `/address[2]`. 表单的XML为：
+例如，应用bindrefs `/application/address[1]`或`/address[1]`和`/application/address[2]`或`/address[2]`。 表单的XML为：
 
 ```xml
 <afData>
@@ -125,11 +125,11 @@ ht-degree: 8%
 </afData>
 ```
 
-您可以使用更改自适应表单/片段的默认子树 `bindRef` 属性。 此 `bindRef` 属性用于指定指向XML架构树结构中某个位置的路径。
+您可以使用`bindRef`属性更改自适应表单/片段的默认子树。 `bindRef`属性允许您指定指向XML架构树结构中某个位置的路径。
 
-如果子表单未绑定，则其数据将存储在 `data`根目录 `afUnboundData` 部分。
+如果子表单未绑定，则其数据存储在父表单的XML架构的`afUnboundData`部分的`data`根下。
 
-您可以多次将自适应表单添加为子表单。 确保 `bindRef` 进行了适当修改，以便自适应表单的每个已使用实例指向数据根下的不同子根。
+您可以多次将自适应表单添加为子表单。 确保正确修改了`bindRef`，以便自适应表单的每个使用实例都指向数据根下的不同子根。
 
 >[!NOTE]
 >
@@ -140,8 +140,8 @@ ht-degree: 8%
 执行以下步骤，使用资产浏览器将自适应表单添加为子表单。
 
 1. 在编辑模式下打开父窗体。
-1. 在侧栏中，单击 **资产** ![assets浏览器](assets/assets-browser.png). 在Assets下，选择 **自适应表单** 从下拉菜单中查找。
+1. 在侧栏中，单击&#x200B;**Assets** ![assets-browser](assets/assets-browser.png)。 在Assets下，从下拉列表中选择&#x200B;**自适应表单**。
    [![在Assets下选择自适应表单](assets/asset.png)](assets/asset-1.png)
 
 1. 拖放要作为子表单添加的自适应表单。
-   [![将自适应表单拖放到网站中](assets/drag-drop.png)](assets/drag-drop-1.png)您拖放的自适应表单将添加为子表单。
+   [![将自适应表单拖放到您的网站中](assets/drag-drop.png)](assets/drag-drop-1.png)您拖放的自适应表单已添加为子表单。

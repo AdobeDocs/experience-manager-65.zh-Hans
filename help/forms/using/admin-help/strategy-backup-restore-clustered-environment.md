@@ -43,46 +43,46 @@ ht-degree: 0%
 
 ### 离线备份与停机时间 {#offline-backup-with-downtime}
 
-1. 关闭整个群集和相关服务。 (请参阅 [启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. 在任何节点上，备份数据库、 GDS和连接器。 (请参阅 [要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. 关闭整个群集和相关服务。 （请参阅[启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)）
+1. 在任何节点上，备份数据库、 GDS和连接器。 （请参阅[要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)）
 1. 要脱机备份AEM存储库，请执行以下步骤：
 
    1. 对于每个群集节点，备份包含群集节点ID的文件。
    1. 备份任何辅助群集节点的所有文件，包括子目录。
    1. 分别备份每个群集节点的存储库/系统ID。
 
-   有关详细步骤，请参阅 [备份和恢复](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   有关详细步骤，请参阅[备份和还原](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)。
 
 1. 备份任何其他数据，如客户字体。
 1. 再次启动群集。
 
 ### 离线备份，无需停机 {#offline-backup-with-no-downtime}
 
-1. 进入滚动备份模式。 (请参阅 [进入备份模式](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. 进入滚动备份模式。 （请参阅[进入备份模式](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes)）
 
    恢复后退出滚动备份模式。
 
-1. 关闭与AEM有关的群集的任何辅助节点。 (请参阅 [启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. 在任何节点上，备份数据库、 GDS和连接器。 (请参阅 [要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. 关闭与AEM有关的群集的任何辅助节点。 （请参阅[启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)）
+1. 在任何节点上，备份数据库、 GDS和连接器。 （请参阅[要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)）
 1. 要脱机备份AEM存储库，请执行以下步骤：
 
    1. 对于每个群集节点，备份包含群集节点ID的文件。
    1. 备份任何辅助群集节点的所有文件，包括子目录。
    1. 分别备份每个群集节点的repository/system.id。
 
-   有关详细步骤，请参阅 [备份和恢复](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+   有关详细步骤，请参阅[备份和还原](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)。
 
 1. 备份任何其他数据，如客户字体。
 1. 再次启动群集。
 
 ### 在线备份，无停机时间但响应延迟 {#online-backup-with-no-downtime-but-delay-in-response}
 
-1. 进入滚动备份模式。 (请参阅 [进入备份模式](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes))
+1. 进入滚动备份模式。 （请参阅[进入备份模式](/help/forms/using/admin-help/backing-aem-forms-data.md#entering-the-backup-modes)）
 
    恢复后退出滚动备份模式。
 
-1. 关闭与AEM有关的群集的任何辅助节点。 (请参阅 [启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))
-1. 在任何节点上，备份数据库、 GDS和连接器。 (请参阅 [要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover))
+1. 关闭与AEM有关的群集的任何辅助节点。 （请参阅[启动和停止服务](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services)）
+1. 在任何节点上，备份数据库、 GDS和连接器。 （请参阅[要备份和恢复的文件](/help/forms/using/admin-help/files-back-recover.md#files-to-back-up-and-recover)）
 1. 要联机备份AEM存储库，请执行以下步骤：
 
    1. 对于每个群集节点，备份包含cluster_node.id的文件。
@@ -120,7 +120,7 @@ ht-degree: 0%
 
 1. 从系统映像重新创建物理系统。
 1. 将自映像生成以来应用的修补程序或更新应用到AEM表单。 此信息是在备份过程中记录的。 必须将AEM表单恢复到与备份系统时相同的修补程序级别。
-1. (*可选*)如果所有其他节点均可正常运行，则AEM存储库也可能会损坏。 在这种情况下，您将在AEM存储库的error.log文件中看到一条存储库取消同步消息。
+1. （*可选*）如果所有其他节点工作正常，则AEM存储库可能也已损坏。 在这种情况下，您将在AEM存储库的error.log文件中看到一条存储库取消同步消息。
 
    要恢复存储库，请执行以下步骤。
 
@@ -133,7 +133,7 @@ ht-degree: 0%
    1. 删除节点上的文件clusterNode/revision.log 。
    1. 删除节点上的.lock （如果存在）。
    1. 删除节点上的repository/system.id （如果存在）。
-   1. 删除节点上的文件&amp;ast；&amp;ast；/listener.properties （如果存在）。
+   1. 删除节点上的文件&amp;amp；ast；&amp;amp；ast；/listener.properties （如果存在）。
    1. 恢复单个群集节点的repository/cluster_node.id 。
 
 >[!NOTE]
@@ -163,7 +163,7 @@ ht-degree: 0%
    1. 删除所有群集节点上的文件clusterNode/revision.log 。
    1. 删除所有群集节点上的.lock （如果存在）。
    1. 删除repository/system.id所有群集节点（如果存在）。
-   1. 删除所有群集节点上的文件&amp;ast；&amp;ast；/listener.properties （如果存在）。
+   1. 删除所有群集节点上的文件&amp;amp；ast；&amp;amp；ast；/listener.properties （如果存在）。
    1. 恢复单个群集节点的repository/cluster_node.id 。
 
 >[!NOTE]
@@ -176,15 +176,15 @@ ht-degree: 0%
 
 ## 备份和恢复Correspondence Management Solution发布节点 {#back-up-and-restore-correspondence-management-solution-publish-node}
 
-发布服务器节点在群集环境中没有任何主 — 辅关系。 您可以通过以下方式备份任何发布者节点 [备份和恢复](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+发布服务器节点在群集环境中没有任何主 — 辅关系。 您可以执行[备份和还原](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)来备份任何发布服务器节点。
 
 ### 恢复单个发布者节点 {#recover-a-single-publisher-node}
 
 1. 关闭必须恢复的节点，并在节点再次启动之前不执行任何发布活动。
-1. 使用以下方式恢复Publish节点 [恢复备份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. 使用[还原备份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)还原Publish节点。
 
 ### 恢复群集 {#recover-a-cluster}
 
 1. 关闭群集。
-1. 使用以下方式恢复Publish节点 [恢复备份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html).
+1. 使用[还原备份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)还原Publish节点。
 1. 启动主节点，然后启动创作群集的辅助节点。

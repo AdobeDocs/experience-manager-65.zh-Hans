@@ -29,14 +29,14 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 >
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-authoring/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
 >
->* **内容片段** 是可编辑内容，主要为文本和相关图像。 它们是纯内容，没有设计和布局。
+>* **内容片段**&#x200B;是可编辑内容，主要为文本和相关图像。 它们是纯内容，没有设计和布局。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 
 >[!CAUTION]
 >
->必须使用此页面读取 [使用内容片段](/help/assets/content-fragments/content-fragments.md) （和相关页面），因为它不仅介绍了基本术语和概念，还介绍了如何创建和管理片段。
+>必须使用[使用内容片段](/help/assets/content-fragments/content-fragments.md)（及相关页面）阅读此页面，因为它不仅介绍了基本术语和概念，还介绍了如何创建和管理片段。
 
 内容片段允许：
 
@@ -74,13 +74,13 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
    * 打开&#x200B;**资源**&#x200B;浏览器并筛选&#x200B;**内容片段**（默认为图像）。然后，将所需的片段拖到组件实例上。
 
-   * 选择内容片段组件，然后从工具栏中选择&#x200B;**配置**。在该对话框中，可以打开选择对话框以浏览并选择所需的 **内容片段**.
+   * 选择内容片段组件，然后从工具栏中选择&#x200B;**配置**。在该对话框中，您可以打开选择对话框以浏览并选择所需的&#x200B;**内容片段**。
 
    >[!NOTE]
    >
    >备选方法是将特定的内容片段直接拖到页面上。这会自动创建关联的组件（内容片段）。
 
-1. 最初，内容来自 **主要** 元素和 **母版** （变量）显示。 您可以根据需要[选择其他元素和/或变体](#selecting-the-element-or-variation)。
+1. 最初显示&#x200B;**Main**&#x200B;元素和&#x200B;**Master**（变量）中的内容。 您可以根据需要[选择其他元素和/或变体](#selecting-the-element-or-variation)。
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -97,7 +97,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 ### 选择元素或变体 {#selecting-the-element-or-variation}
 
-打开片段的 **配置** 对话框，以便您可以配置片段在当前页面上使用。 该对话框取决于所使用的组件。
+打开片段的&#x200B;**配置**&#x200B;对话框，以便配置片段在当前页面上使用。 该对话框取决于所使用的组件。
 
 在相应的配置对话框中，您可以选择可用的参数，包括：
 
@@ -113,7 +113,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 * **元素**
 
-   * 默认 **主要** 始终可用。
+   * 默认&#x200B;**Main**&#x200B;始终可用。
    * 如果片段是使用相应的模板创建的，则可以进行选择。
 
   >[!NOTE]
@@ -122,7 +122,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 * **变体**
 
-   * 默认 **母版** 始终可用。
+   * 默认&#x200B;**主控**&#x200B;始终可用。
    * 如果变体是为片段而创建的，则有可选择的变体可用。
 
 * **段落**：指定要包含的段落范围：
@@ -136,7 +136,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 ### 到片段编辑器的快速连接 {#quick-connection-to-fragment-editor}
 
-您可以打开片段源，以使用组件工具栏中的&#x200B;**编辑**&#x200B;图标编辑（资源）。这允许您 [编辑和管理内容片段](/help/assets/content-fragments/content-fragments.md).
+您可以打开片段源，以使用组件工具栏中的&#x200B;**编辑**&#x200B;图标编辑（资源）。这允许您[编辑和管理内容片段](/help/assets/content-fragments/content-fragments.md)。
 
 >[!CAUTION]
 >
@@ -180,7 +180,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 ### 使用关联内容 {#using-associated-content}
 
-如果您拥有 [关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md) 使用 [内容片段](/help/assets/content-fragments/content-fragments.md)，这些资产从侧面板（在将片段放置到内容页面后）中可用。 关联内容实际上是中间内容的[特殊内容源](#adding-in-between-content)。
+如果您有[与[内容片段](/help/assets/content-fragments/content-fragments.md)关联的内容](/help/assets/content-fragments/content-fragments-assoc-content.md)，则这些资产可从侧面板（在将片段放置到内容页面后）中获取。 关联内容实际上是中间内容的[特殊内容源](#adding-in-between-content)。
 
 >[!NOTE]
 >
@@ -188,9 +188,9 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 >[!NOTE]
 >
->如果单个页面上有多个内容片段，则 **关联内容** 选项卡显示适用于所有片段的资产。
+>如果单个页面上有多个内容片段，则&#x200B;**关联内容**&#x200B;选项卡会显示适用于所有片段的资产。
 
-将具有关联内容的片段添加到页面后，会创建一个新选项卡(**关联内容**)在侧面板中打开。
+将具有关联内容的片段添加到页面后，将在侧面板中打开一个新选项卡（**关联内容**）。
 
 从此处，您可以将资源拖到所需的位置（可以是一个现有的组件，或是在其中创建合适组件的所需位置）：
 
@@ -198,7 +198,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 ### 插入到片段中的资源 {#assets-inserted-into-the-fragment}
 
-如果已在片段本身中插入资产（例如图像），则页面编辑器中用于编辑这些资产的选项会受到限制。 <!-- Removed link as it was a 404 on helpx -->
+如果已在片段本身中插入资产（例如图像），则页面编辑器中用于编辑这些资产的选项会受到限制。<!-- Removed link as it was a 404 on helpx -->
 
 例如，您可以对图像执行以下操作
 
@@ -214,4 +214,4 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 必须发布片段，以便在已发布的网页上使用这些片段：
 
 * 可于[在资产控制台中创建片段](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment)之后发布的片段。
-* 如果 *未发布的片段* 在即将发布的页面上使用，片段现在也可以发布。
+* 如果在正在发布的页面上使用&#x200B;*未发布的片段*，则也可以立即发布该片段。

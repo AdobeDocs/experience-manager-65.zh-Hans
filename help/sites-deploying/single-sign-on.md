@@ -20,7 +20,7 @@ ht-degree: 0%
 
 单点登录(SSO)允许用户在提供一次身份验证凭据（如用户名和密码）后访问多个系统。 独立的系统（称为可信验证器）执行验证并向Experience Manager提供用户凭据。 Experience Manager会检查并强制实施用户的访问权限（即确定允许用户访问的资源）。
 
-SSO身份验证处理程序服务( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`)处理受信任的验证程序提供的验证结果。 SSO身份验证处理程序按以下顺序在下列位置搜索SSO标识符(SSID)作为特殊属性的值：
+SSO身份验证处理程序服务(`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`)处理受信任的身份验证程序提供的身份验证结果。 SSO身份验证处理程序按以下顺序在下列位置搜索SSO标识符(SSID)作为特殊属性的值：
 
 1. 请求标头
 1. Cookies
@@ -33,33 +33,33 @@ SSO身份验证处理程序服务( `com.adobe.granite.auth.sso.impl.SsoAuthentic
 * 登录模块。
 * SSO身份验证服务。
 
-为两个服务指定相同的属性名称。 该属性包含在 `SimpleCredentials` 提供给 `Repository.login`. 属性的值是无关的和被忽略的，仅仅它的存在是很重要和可以验证的。
+为两个服务指定相同的属性名称。 该属性包含在提供给`Repository.login`的`SimpleCredentials`中。 属性的值是无关的和被忽略的，仅仅它的存在是很重要和可以验证的。
 
 ## 配置SSO {#configuring-sso}
 
-要为AEM实例配置SSO，您需要配置 [SSO身份验证处理程序](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler)：
+要为AEM实例配置SSO，请配置[SSO身份验证处理程序](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler)：
 
-1. 使用AEM时，可通过多种方法管理此类服务的配置设置；请参阅 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以了解更多详细信息和建议的做法。
+1. 使用AEM时，可通过多种方法管理此类服务的配置设置；请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md)以了解更多详细信息和建议的做法。
 
    例如，对于NTLM set：
 
-   * **路径：** 根据需要；例如， `/`
-   * **标题名称**： `LOGON_USER`
+   * **路径：**&#x200B;为必填项；例如，`/`
+   * **标头名称**： `LOGON_USER`
    * **ID格式**： `^<DOMAIN>\\(.+)$`
 
-     位置 `<*DOMAIN*>` 将替换为您自己的域名。
+     其中`<*DOMAIN*>`被替换为您自己的域名。
 
    对于CoSign：
 
-   * **路径：** 根据需要；例如， `/`
-   * **标题名称**： remote_user
-   * **ID格式：** 原样
+   * **路径：**&#x200B;为必填项；例如，`/`
+   * **标头名称**： remote_user
+   * **ID格式：**&#x200B;原样
 
    对于SiteMinder：
 
-   * **路径：** 根据需要；例如， `/`
-   * **标题名称：** SM_USER
-   * **ID格式**：原样
+   * **路径：**&#x200B;为必填项；例如，`/`
+   * **标头名称：** SM_USER
+   * **ID格式**： AsIs
 
 1. 确认单点登录是否按要求工作；包括授权。
 
@@ -76,39 +76,39 @@ SSO身份验证处理程序服务( `com.adobe.granite.auth.sso.impl.SsoAuthentic
 
 >[!NOTE]
 >
->单点登录通常用于 [LDAP](/help/sites-administering/ldap-config.md).
+>单点登录通常用于[LDAP](/help/sites-administering/ldap-config.md)。
 
 >[!NOTE]
 >
->如果您还使用 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 使用Microsoft® Internet Information Server (IIS)时，需要在以下位置进行其他配置：
+>如果您还将[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)与Microsoft® Internet Information Server (IIS)一起使用，则需要在中进行其他配置：
 >
 >* `disp_iis.ini`
 >* IIS
 >
->在 `disp_iis.ini` 设置：
->(请参阅 [将Dispatcher与Microsoft® Internet Information Server一起安装](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server) 以了解完整的详细信息)
+>在`disp_iis.ini`集合中：
+>(有关完整详细信息，请参阅[将Dispatcher与Microsoft® Internet Information Server一起安装](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server))
 >
 >* `servervariables=1` （将IIS服务器变量作为请求标头转发到远程实例）
 >* `replaceauthorization=1` （将除“Basic”以外的任何名为“Authorization”的标头替换为其“Basic”等效标头）
 >
 >在IIS中：
 >
->* disable **匿名访问**
+>* 禁用&#x200B;**匿名访问**
 >
->* 启用 **集成的Windows身份验证**
+>* 启用&#x200B;**集成Windows身份验证**
 >
 
-您可以使用查看将哪个身份验证处理程序应用于内容树的任何部分 **验证者** 选项，例如：
+您可以使用Felix控制台的&#x200B;**Authenticator**&#x200B;选项查看正在将哪个身份验证处理程序应用于内容树的任何部分；例如：
 
 `http://localhost:4502/system/console/slingauth`
 
-首先查询与路径最匹配的处理程序。 例如，如果为路径配置处理程序A `/` 和处理程序 — B中的路径 `/content`，然后请求到 `/content/mypage.html` 将首先查询处理程序B。
+首先查询与路径最匹配的处理程序。 例如，如果您为路径`/`配置处理程序A，为路径`/content`配置处理程序B，则对`/content/mypage.html`的请求将首先查询处理程序B。
 
 ![screen_shot_2012-02-15at21006pm](assets/screen_shot_2012-02-15at21006pm.png)
 
 ### 示例 {#example}
 
-对于Cookie请求(使用URL `http://localhost:4502/libs/wcm/content/siteadmin.html`)：
+对于Cookie请求（使用URL `http://localhost:4502/libs/wcm/content/siteadmin.html`）：
 
 ```xml
 GET /libs/cq/core/content/welcome.html HTTP/1.1
@@ -120,7 +120,7 @@ Cookie: TestCookie=admin
 
 * **路径**： `/`
 
-* **标题名称**： `TestHeader`
+* **标头名称**： `TestHeader`
 
 * **Cookie名称**： `TestCookie`
 
@@ -149,7 +149,7 @@ Transfer-Encoding: chunked
 如果您请求，这也适用：
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-或者，您可以使用以下curl命令发送 `TestHeader` 标题至 `admin:`
+或者，您可以使用以下curl命令将`TestHeader`标头发送到`admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]
@@ -162,14 +162,14 @@ Transfer-Encoding: chunked
 
 可以使用以下步骤删除欢迎屏幕上的注销链接。
 
-1. 叠加 `/libs/cq/core/components/welcome/welcome.jsp` 到 `/apps/cq/core/components/welcome/welcome.jsp`
+1. 覆盖`/libs/cq/core/components/welcome/welcome.jsp`到`/apps/cq/core/components/welcome/welcome.jsp`
 1. 从jsp中删除以下部分。
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
 要删除用户右上角个人菜单中的注销链接，请执行以下步骤：
 
-1. 叠加 `/libs/cq/ui/widgets/source/widgets/UserInfo.js` 到 `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
+1. 覆盖`/libs/cq/ui/widgets/source/widgets/UserInfo.js`到`/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 
 1. 从文件中删除以下部分：
 

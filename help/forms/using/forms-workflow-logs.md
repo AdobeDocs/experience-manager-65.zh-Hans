@@ -20,7 +20,7 @@ ht-degree: 5%
 
 Forms Workflow步骤提供详细的日志，可方便地调试与工作流相关的问题。 为AEM Forms工作流启用调试日志记录以查看日志。
 
-默认情况下，所有日志记录信息在 **error.log** 文件位于 */crx-repository/logs/* 目录。
+默认情况下，**error.log**&#x200B;文件中所有日志记录信息在&#x200B;*/crx-repository/logs/*&#x200B;目录中可用。
 
 表单工作流的调试日志包括：
 
@@ -83,13 +83,13 @@ Forms Workflow步骤提供详细的日志，可方便地调试与工作流相关
 
    https://&#39;[服务器]：[端口]&#39;/system/console/configMgr
 
-1. 选择 **[!UICONTROL Sling]** > **[!UICONTROL 日志支持]**.
-1. 选择 **[!UICONTROL 添加新记录器。]**
-1. 选择 **[!UICONTROL 调试]** 作为 **[!UICONTROL 日志级别]**.
+1. 选择&#x200B;**[!UICONTROL Sling]** > **[!UICONTROL 日志支持]**。
+1. 选择&#x200B;**[!UICONTROL 添加新记录器。]**
+1. 选择&#x200B;**[!UICONTROL 调试]**&#x200B;作为&#x200B;**[!UICONTROL 日志级别]**。
 1. 指定日志文件的位置。 日志文件的默认位置为： *logs\error.log*
-1. 将程序包名称指定为 **com.adobe.granite.workflow.core** 在 **[!UICONTROL Logger]** 列。
+1. 在&#x200B;**[!UICONTROL 记录器]**&#x200B;列中指定包名称为&#x200B;**com.adobe.granite.workflow.core**。
 
-   执行这些步骤可以存储调试日志 **com.adobe.granite.workflow.core** 包。 选择 **[!UICONTROL +]** 并将以下包名称添加到列表中：
+   执行这些步骤可以存储&#x200B;**com.adobe.granite.workflow.core**&#x200B;包的调试日志。 选择&#x200B;**[!UICONTROL +]**&#x200B;并将以下包名称添加到列表：
 
    * com.adobe.fd.workflow
    * com.adobe.fd.workspace

@@ -30,8 +30,8 @@ ht-degree: 3%
 * 配置（例如属性/段落）继承自父项。
 * 按路径从Analytics节点引用。
 * 易于扩展。
-* 能够灵活地满足更复杂的配置需求，例如 [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* 支持依赖项(例如， [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 插件需要 [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) 配置)。
+* 能够灵活地满足更复杂的配置，如[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)。
+* 支持依赖项(例如，[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)插件需要[Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)配置)。
 
 ## 结构 {#structure}
 
@@ -52,7 +52,7 @@ ht-degree: 3%
    * 配置模板
    * 配置组件
 
-模板和组件必须继承 `sling:resourceSuperType` 从基本模板中：
+模板和组件必须从基础模板继承`sling:resourceSuperType`：
 
 `cq/cloudserviceconfigs/templates/configpage`
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 
 `cq/cloudserviceconfigs/templates/configpage`
 
-并定义 `resourceType` 指向自定义组件。
+并定义指向自定义组件的`resourceType`。
 
 ```xml
 /libs/cq/analytics/templates/sitecatalyst
@@ -109,7 +109,7 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 
 ### 内容模型 {#content-model}
 
-内容模型存储为 `cq:Page` 在：
+内容模型作为`cq:Page`存储在以下位置：
 
 `/etc/cloudservices/<service-name>(/*)`
 
@@ -120,10 +120,10 @@ sling:resourceType = cq/analytics/components/generictrackerpage
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-这些配置存储在子节点下 `jcr:content`.
+这些配置存储在子节点`jcr:content`下。
 
-* 在对话框中定义的固定属性应存储在 `jcr:node` 直接。
-* 动态元素(使用 `parsys` 或 `iparsys`)使用子节点存储组件数据。
+* 在对话框中定义的固定属性应直接存储在`jcr:node`上。
+* 动态元素（使用`parsys`或`iparsys`）使用子节点存储组件数据。
 
 ```xml
 /etc/cloudservices/service/config/jcr:content as nt:unstructured
@@ -136,11 +136,11 @@ propertyname
 
 ### API {#api}
 
-有关API的参考文档，请参阅 [com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html).
+有关API的参考文档，请参阅[com.day.cq.wcm.webservicesupport](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html)。
 
 ### AEM集成 {#aem-integration}
 
-可用的服务列在 **Cloud Service** 选项卡 **页面属性** 对话框（继承自的任何页面） `foundation/components/page` 或 `wcm/mobile/components/page`)。
+可用服务在&#x200B;**Cloud Service**&#x200B;对话框（继承自`foundation/components/page`或`wcm/mobile/components/page`的任何页面）的&#x200B;**属性**&#x200B;选项卡中列出。
 
 该选项卡还提供：
 
@@ -151,19 +151,19 @@ propertyname
 
 存储服务的用户凭据时，应对所有密码进行加密。
 
-您可以通过添加隐藏表单字段来实现这一点。 此字段应当具有注释 `@Encrypted` 在属性名称中；即 `password` 字段名称将写为：
+您可以通过添加隐藏表单字段来实现这一点。 该字段的属性名称中应该有注释`@Encrypted`；也就是说，对于`password`字段，其名称将写成：
 
 `password@Encrypted`
 
-然后，将自动对属性进行加密(使用 `CryptoSupport` 服务)，由 `EncryptionPostProcessor`.
+然后，`EncryptionPostProcessor`将自动对属性进行加密（使用`CryptoSupport`服务）。
 
 >[!NOTE]
 >
->这与标准类似 ` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)` 注释。
+>这类似于标准` [SlingPostServlet](https://sling.apache.org/site/manipulating-content-the-slingpostservlet-servletspost.html)`注释。
 
 >[!NOTE]
 >
->默认情况下， `EcryptionPostProcessor` 仅加密 `POST` 向以下对象发出的请求： `/etc/cloudservices`.
+>默认情况下，`EcryptionPostProcessor`只加密向`/etc/cloudservices`发出的`POST`请求。
 
 #### 服务页jcr：content节点的其他属性 {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -175,11 +175,11 @@ propertyname
   </tr>
   <tr>
    <td>componentreference</td>
-   <td>要自动包含在页面中的组件的引用路径。<br /> 这用于其他功能和JS包含项。<br /> 这包括页面上的组件，其中<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> 包含在内(通常在 <code>body</code> 标记)。<br /> 对于Adobe Analytics和Adobe Target，我们使用此项来包含其他功能，例如用于跟踪访客行为的JavaScript调用。</td>
+   <td>要自动包含在页面中的组件的引用路径。<br />这用于其他功能和JS包含。<br />这包括包含<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br />的页面上的组件（通常在<code>body</code>标记之前）。<br />对于Adobe Analytics和Adobe Target，我们使用此项来包含其他功能，例如用于跟踪访客行为的JavaScript调用。</td>
   </tr>
   <tr>
    <td>说明</td>
-   <td>服务的简短描述。<br /> </td>
+   <td>服务的简短说明。<br /> </td>
   </tr>
   <tr>
    <td>descriptionExtended</td>
@@ -216,7 +216,7 @@ propertyname
 
 默认提供以下服务：
 
-* [跟踪器代码片段](/help/sites-administering/external-providers.md) (Google、WebTrends等)
+* [跟踪器代码片段](/help/sites-administering/external-providers.md)(Google、WebTrends等)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [Test&amp;Target](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 <!-- Search&Promote is end of life as of September 1, 2022 * [Search&Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote) -->
@@ -224,4 +224,4 @@ propertyname
 
 >[!NOTE]
 >
->另请参阅 [创建自定义Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md).
+>另请参阅[创建自定义Cloud Service](/help/sites-developing/extending-cloud-config-custom-cloud.md)。

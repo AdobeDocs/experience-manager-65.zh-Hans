@@ -31,11 +31,11 @@ AEM 提供了用于配置帐户和创作环境的某些方面的功能。
 
 * 模拟为
 
-   * 使用 [模拟为](/help/sites-administering/security.md#impersonating-another-user) 用户可代表其他用户工作的功能。
+   * 通过使用[模拟为](/help/sites-administering/security.md#impersonating-another-user)功能，用户可以代表其他用户工作。
 
 * 配置文件
 
-   * 提供指向您的网站的便捷链接 [用户设置](/help/sites-administering/security.md))
+   * 提供指向您的[用户设置](/help/sites-administering/security.md)的便捷链接
 
 * [我的偏好设置](/help/sites-authoring/user-properties.md#my-preferences)
 
@@ -106,9 +106,9 @@ AEM 提供了用于配置帐户和创作环境的某些方面的功能。
 
   此选项可启用键盘快捷键。默认情况下启用这些键盘快捷键，但也可禁用，例如，如果用户有特定的辅助功能要求。
 
-* **使用经典版创作体验**
+* **使用经典创作体验**
 
-  此选项启用 [经典UI](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)基于的页面创作。 默认情况下，使用标准UI。
+  此选项启用基于[经典UI](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)的页面创作。 默认情况下，使用标准UI。
 
 * **启用资源主页**
 

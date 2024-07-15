@@ -1,6 +1,6 @@
 ---
-title: Java&trade；包名称中的命名约定
-description: 了解命名惯例以及Java&trade；包名称中连字符的使用。
+title: Java&amp；贸易；包名称中的命名约定
+description: 了解命名惯例以及Java&amp；trade；包名称中连字符的使用。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -24,8 +24,8 @@ ht-degree: 1%
 
 虽然在AEM开发中，建议在存储库项目的名称中使用连字符，但Java™包名称中的连字符非法。
 
-底层CRX平台必须能够区分实际下划线 `_ `和连字符 `-`. 因此，在JCR中，连字符必须替换为其Unicode值(u002d)，并使用下划线进行转义 `_`.
+基础CRX平台必须能够区分实际下划线`_ `和连字符`-`。 因此，在JCR中，连字符必须替换为其Unicode值(u002d)，并使用下划线`_`进行转义。
 
-例如，如果存储库路径为 **/apps/my-example/component/info/Info.java**，包名称应为 `java package apps.my_002dexample.component.info;`
+例如，如果存储库路径为&#x200B;**/apps/my-example/component/info/Info.java**，则包名称应为`java package apps.my_002dexample.component.info;`
 
-请注意，下划线必须同样进行转义，以便 `_` 变为 `_005f`.
+请注意，下划线同样必须转义，这样`_`将变为`_005f`。

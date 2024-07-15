@@ -20,7 +20,7 @@ ht-degree: 0%
 
 将PDF文件上传到Acrobat Reader DC Extensions Web应用程序时，您可以查看此信息以确定它是否进行了Reader扩展、应用了任何使用权限以及它们的过期日期。
 
-1. 登录到Acrobat Reader DC Extensions Web应用程序，网址为 `http://[localhost]:[port]/ReaderExtensions` (其中 *[端口]* 是应用程序服务器的端口号)。
+1. 登录位于`http://[localhost]:[port]/ReaderExtensions`的Acrobat Reader DC Extensions Web应用程序（其中&#x200B;*[端口]*&#x200B;是应用程序服务器的端口号）。
 1. 单击“浏览”上传PDF文件，然后单击“信息”。 该信息显示在文件名下方。
 
    有关修改文件使用权限的详细信息，请参阅Acrobat Reader DC扩展帮助。

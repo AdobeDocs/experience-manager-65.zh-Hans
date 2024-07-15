@@ -31,7 +31,7 @@ Adobe Campaign是一套解决方案，可让您在所有线上和线下渠道之
 * [Adobe Campaign组件](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
 * [定位Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-您之前必须已 [AEM与Adobe Campaign集成](/help/sites-administering/campaign.md).
+您以前必须将[AEM与Adobe Campaign集成](/help/sites-administering/campaign.md)。
 
 此外，如果要自定义集成，请参阅以下主题：
 

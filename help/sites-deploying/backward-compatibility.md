@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->有关不包含在兼容性包范围内的内容和配置更改的列表，请参阅 [AEM中的存储库重组](/help/sites-deploying/repository-restructuring.md).
+>有关不在此兼容性包范围内的内容和配置更改的列表，请参阅[AEM中的存储库重构](/help/sites-deploying/repository-restructuring.md)。
 
 在Adobe Experience Manager (AEM) 6.5中，开发所有功能时都考虑到了向后兼容性。
 
@@ -37,9 +37,9 @@ ht-degree: 1%
 >
 >兼容性包只是一个临时解决方案，它推迟了与AEM 6.5兼容所需的开发。 只有在升级后无法立即通过开发解决兼容性问题时，Adobe才建议将其作为最后一个选项。 此外，Adobe建议您在决定继续基于6.5的自定义开发并充分利用完整的6.5功能后，切换到本机模式并卸载兼容包。
 
-![Sase](assets/sase.png)
+![sase](assets/sase.png)
 
-兼容包有两种模式： **已启用路由** 和 **已禁用路由**.
+兼容包有两种模式：**启用路由**&#x200B;和&#x200B;**禁用路由**。
 
 这允许AEM 6.5以三种模式运行：
 
@@ -49,11 +49,11 @@ ht-degree: 1%
 
 这意味着升级后必须立即调整应用程序。
 
-**兼容模式：在启用了路由的情况下安装兼容包**
+**兼容模式：安装的兼容包启用了路由**
 
 “兼容模式”适用于自定义不向后兼容的界面的客户。 这允许AEM在兼容模式下运行，并针对与某些自定义代码不兼容的新AEM功能推迟所需的自定义开发。
 
-**旧版模式：兼容包在禁用路由的情况下安装**
+**旧模式：兼容包已安装，路由已禁用**
 
 旧版模式适用于具有自定义界面的客户，这些界面基于兼容性包中已移出的AEM旧版或已弃用的代码。
 
@@ -61,10 +61,10 @@ ht-degree: 1%
 
 ## 如何设置 {#how-to-set-up}
 
-此 **适用于6.5的AEM 6.4兼容包** 可以使用包管理器作为包进行安装。 您可以下载 [Software Distribution中适用于6.5的AEM 6.4兼容包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64) 站点。
+可以使用包管理器将6.5 **的** AEM 6.4兼容包作为包进行安装。 您可以从Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64)站点下载[AEM 6.4 Compatibility Pack for 6.5。
 
 安装兼容包后，可以使用OSGI配置中的交换机启用或禁用路由，如下所示：
 
-![兼容交换机](assets/compat-switches.png)
+![兼容开关](assets/compat-switches.png)
 
 安装并设置兼容包后，将根据所选的兼容模式使用功能。

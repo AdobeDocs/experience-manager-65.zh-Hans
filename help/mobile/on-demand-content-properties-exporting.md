@@ -22,13 +22,13 @@ ht-degree: 3%
 >
 >Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
 
-应用程序表示为 *cq：Pages* 在AEM中。
+在AEM中，应用表示为&#x200B;*cq：Pages*。
 
-它们共享在任意 *cq：Page* 以及下面显示的其他表示支持资产的集成。
+除了下面显示的表示支持属性的集成的其他属性之外，它们还共享在任何&#x200B;*cq：Page*&#x200B;中找到的相同公共属性。
 
 ## 应用程序属性 {#app-properties}
 
-下表显示 **应用程序属性和节点**.
+下表显示了&#x200B;**应用程序属性和节点**。
 
 <table>
  <tbody>
@@ -45,7 +45,7 @@ ht-degree: 3%
   <tr>
    <td>dps-exportTemplate</td>
    <td>String：Path</td>
-   <td><p>应用程序导出配置的路径。 导出配置是一个包含2个子ContentSync导出配置模板的文件夹；</p> <p><i>dps-article</i>： ContentSync导出配置以导出文章内容</p> <p><i>dps-HTMLResources</i>：ContentSync导出配置以导出应用程序/文章共享资源</p> </td>
+   <td><p>应用程序导出配置的路径。 导出配置是一个包含2个子ContentSync导出配置模板的文件夹；</p> <p><i>dps-article</i>： ContentSync导出配置以导出文章内容</p> <p><i>dps-HTMLResources</i>： ContentSync导出配置以导出应用程序/文章共享资源</p> </td>
   </tr>
   <tr>
    <td>dps-projectId</td>
@@ -80,12 +80,12 @@ ht-degree: 3%
   <tr>
    <td>sling:resourceType</td>
    <td>String：Path</td>
-   <td><p>已添加或扩展的cq：Component的路径 <i>mobileapps/core/components/instance.</i></p> <p>这会在应用程序目录中提供状态和渲染。</p> </td>
+   <td><p>属于或扩展<i>mobileapps/core/components/instance的cq：Component的路径。</i></p> <p>这会在应用程序目录中提供状态和渲染。</p> </td>
   </tr>
  </tbody>
 </table>
 
-您可以使用 ***内容属性*** 以创建内容。 有关创建和导出文章和共享资源，请参阅以下资源：
+您可以使用&#x200B;***内容属性***&#x200B;创建内容。 有关创建和导出文章和共享资源，请参阅以下资源：
 
 * [内容属性](/help/mobile/content-properties.md)
 * [创建文章导出配置](/help/mobile/creating-article-export-configuration.md)

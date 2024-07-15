@@ -27,14 +27,14 @@ ht-degree: 1%
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
-体验片段是Adobe Experience Manager的一项功能，允许营销人员创建 **非结构化** 可重复使用的内容。 体验片段可以与产品SKU或目录ID关联。 关联后，营销人员即可根据页面上显示的产品轻松发现相关片段。 体验片段还可以通过使用占位符和关联动态包含在产品目录页面上。
+体验片段是Adobe Experience Manager的一项功能，它允许营销人员创建&#x200B;**非结构化**&#x200B;可重复使用的内容。 体验片段可以与产品SKU或目录ID关联。 关联后，营销人员即可根据页面上显示的产品轻松发现相关片段。 体验片段还可以通过使用占位符和关联动态包含在产品目录页面上。
 
 ## 内容片段
 
 >[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 
-内容片段是Adobe Experience Manager的一项功能，允许营销人员创建 **结构化** 可重复使用的内容。 内容片段可以与产品SKU或目录ID关联。 关联后，营销人员即可根据页面上显示的产品轻松发现相关片段。 还可以通过使用占位符和关联将内容片段动态包含在产品目录页面上。
+内容片段是Adobe Experience Manager的一项功能，它允许营销人员创建&#x200B;**结构化**&#x200B;可重复使用的内容。 内容片段可以与产品SKU或目录ID关联。 关联后，营销人员即可根据页面上显示的产品轻松发现相关片段。 还可以通过使用占位符和关联将内容片段动态包含在产品目录页面上。
 
 ## 相关资源 {#related}
 
-也可以为一组特定的产品或类别自定义整个模板。 通过以下方式了解如何操作 [创建多个类别和产品页面](/help/commerce/cif/configuring/multi-template-usage.md).
+也可以为一组特定的产品或类别自定义整个模板。 通过[创建多个类别和产品页面](/help/commerce/cif/configuring/multi-template-usage.md)了解如何操作。

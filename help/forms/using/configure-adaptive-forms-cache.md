@@ -22,48 +22,48 @@ ht-degree: 1%
 
 ## 在创作实例和发布实例中配置自适应表单缓存 {#configure-adaptive-forms-caching-at-author-and-publish-instances}
 
-1. 转到位于的AEM Web控制台配置管理器 `https://[server]:[port]/system/console/configMgr`.
-1. 单击 **[!UICONTROL 自适应表单和交互式通信Web渠道配置]** 以编辑其配置值。
-1. 在 [!UICONTROL 编辑配置值] 对话框，指定AEM实例的最大表单数或文档数 [!DNL Forms] 服务器可以在以下位置缓存： **[!UICONTROL 自适应Forms的数量]** 字段。 默认值为 100。
+1. 转到`https://[server]:[port]/system/console/configMgr`上的AEM Web控制台配置管理器。
+1. 单击&#x200B;**[!UICONTROL 自适应表单和交互式通信Web渠道配置]**&#x200B;以编辑其配置值。
+1. 在[!UICONTROL 编辑配置值]对话框中，指定AEM [!DNL Forms]服务器的实例可在&#x200B;**[!UICONTROL 自适应Forms的数量]**&#x200B;字段中缓存的最大表单数或文档数。 默认值为 100。
 
    >[!NOTE]
    >
-   >要禁用缓存，请将自适应Forms数量字段中的值设置为 **0**. 禁用或更改缓存配置时，将重置缓存并从缓存中删除所有表单和文档。
+   >要禁用缓存，请将“自适应Forms数量”字段中的值设置为&#x200B;**0**。 禁用或更改缓存配置时，将重置缓存并从缓存中删除所有表单和文档。
 
-   ![自适应表单HTML缓存的“配置”对话框](assets/cache-configuration-edit.png)
+   自适应表单HTML缓存的![配置对话框](assets/cache-configuration-edit.png)
 
-1. 单击 **[!UICONTROL 保存]** 以保存配置。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存配置。
 
 您的环境配置为使用缓存自适应表单和相关资源。
 
 
-## （可选）在Dispatcher上配置自适应表单缓存 {#configure-the-cache}
+## （可选）在Dispatcher配置自适应表单缓存 {#configure-the-cache}
 
-您还可以在Dispatcher上配置自适应表单缓存，以获得额外的性能提升。
+您还可以在Dispatcher配置自适应表单缓存，以获得额外的性能提升。
 
 ### 先决条件 {#pre-requisites}
 
-* 启用 [在客户端合并或预填充数据](prepopulate-adaptive-form-fields.md#prefill-at-client) 选项。 它有助于合并预填充表单的每个实例的唯一数据。
+* 启用[在客户端](prepopulate-adaptive-form-fields.md#prefill-at-client)合并或预填充数据选项。 它有助于合并预填充表单的每个实例的唯一数据。
 
 ### 在Dispatcher上缓存自适应表单的注意事项 {#considerations}
 
-* 使用自适应表单缓存时，请使用AEM [!DNL Dispatcher] 缓存自适应表单的客户端库（CSS和JavaScript）。
+* 使用自适应表单缓存时，请使用AEM [!DNL Dispatcher]来缓存自适应表单的客户端库(CSS和JavaScript)。
 * 在开发自定义组件时，在用于开发的服务器上，将禁用自适应表单缓存。
-* 不缓存不带扩展名的URL。 例如，包含模式的URL `/content/forms/[folder-structure]/[form-name].html` 将被缓存，缓存会忽略具有模式的URL `/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`. 因此，请使用带有扩展名的URL来获得缓存的好处。
+* 不缓存不带扩展名的URL。 例如，缓存了模式为`/content/forms/[folder-structure]/[form-name].html`的URL，缓存时忽略模式为`/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`的URL。 因此，请使用带有扩展名的URL来获得缓存的好处。
 * 本地化自适应表单的注意事项：
-   * 使用URL格式 `http://host:port/content/forms/af/<afName>.<locale>.html` 要请求自适应表单的本地化版本，而不是 `http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`
-   * [禁用使用浏览器区域设置](supporting-new-language-localization.md#how-localization-of-adaptive-form-works) 格式为 `http://host:port/content/forms/af/<adaptivefName>.html`.
-   * 当您使用URL格式时 `http://host:port/content/forms/af/<adaptivefName>.html`、和 **[!UICONTROL 使用浏览器区域设置]** 在configuration manager中处于禁用状态时，将提供自适应表单的非本地化版本。 非本地化语言是开发自适应表单时使用的语言。 不会考虑为您的浏览器配置的区域设置（浏览器区域设置），并且会提供自适应表单的非本地化版本。
-   * 当您使用URL格式时 `http://host:port/content/forms/af/<adaptivefName>.html`、和 **[!UICONTROL 使用浏览器区域设置]** 在配置管理器中，会提供自适应表单的本地化版本（如果可用）。 本地化的自适应表单的语言基于为您的浏览器配置的区域设置（浏览器区域设置）。 它可能会导致 [仅缓存自适应表单的第一个实例]. 要防止问题在实例中发生，请参阅 [故障排除](#only-first-insatnce-of-adptive-forms-is-cached).
+   * 使用URL格式`http://host:port/content/forms/af/<afName>.<locale>.html`而不是`http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`请求自适应表单的本地化版本
+   * [禁止对格式为`http://host:port/content/forms/af/<adaptivefName>.html`的URL使用浏览器区域设置](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)。
+   * 当您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`，并且在配置管理器中禁用了&#x200B;**[!UICONTROL 使用浏览器区域设置]**&#x200B;时，会提供自适应表单的非本地化版本。 非本地化语言是开发自适应表单时使用的语言。 不会考虑为您的浏览器配置的区域设置（浏览器区域设置），并且会提供自适应表单的非本地化版本。
+   * 当您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`并在配置管理器中启用&#x200B;**[!UICONTROL 使用浏览器区域设置]**&#x200B;时，会提供自适应表单的本地化版本（如果可用）。 本地化的自适应表单的语言基于为您的浏览器配置的区域设置（浏览器区域设置）。 它可能会导致[仅缓存自适应表单]的第一个实例。 若要防止实例上发生此问题，请参阅[疑难解答](#only-first-insatnce-of-adptive-forms-is-cached)。
 
-### 在调度程序上启用缓存
+### 在Dispatcher中启用缓存
 
 要在Dispatcher上启用和配置缓存自适应表单，请执行以下步骤：
 
-1. 为环境的每个发布实例打开以下URL，并 [为环境的发布实例启用刷新代理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)：
+1. 为环境的每个发布实例打开以下URL，并[为环境的发布实例启用刷新代理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)：
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [将以下内容添加到您的dispatcher.any文件中](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files)：
+1. [将以下内容添加到您的dispatcher.any文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files)：
 
    ```JSON
       /invalidate
@@ -91,8 +91,8 @@ ht-degree: 1%
 
    * 自适应表单会保留在缓存中，直到未发布表单的更新版本为止。
 
-   * 发布自适应表单中引用的资源的较新版本时，受影响的自适应表单会自动失效。 引用的资源自动失效有一些例外。 有关例外的解决方法，请参见 [故障排除](#troubleshooting) 部分。
-1. [添加以下规则dispatcher.any或自定义规则文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). 它不包括不支持缓存的URL。 例如，交互式通信。
+   * 发布自适应表单中引用的资源的较新版本时，受影响的自适应表单会自动失效。 引用的资源自动失效有一些例外。 有关异常的解决方法，请参阅[疑难解答](#troubleshooting)部分。
+1. [添加以下规则dispatcher.any或自定义规则文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache)。 它不包括不支持缓存的URL。 例如，交互式通信。
 
    ```JSON
       /0000 {
@@ -126,7 +126,7 @@ ht-degree: 1%
       }
    ```
 
-您的AEM环境配置为缓存自适应表单。 它会缓存所有类型的自适应表单。 如果在交付缓存的页面之前需要检查页面的用户访问权限，请参阅 [缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans).
+您的AEM环境配置为缓存自适应表单。 它会缓存所有类型的自适应表单。 如果在传递缓存的页面之前需要检查页面的用户访问权限，请参阅[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans)。
 
 ## 疑难解答 {#troubleshooting}
 
@@ -134,7 +134,7 @@ ht-degree: 1%
 
 #### 问题 {#issue1}
 
-当您通过资产浏览器选择图像或视频并将其添加到自适应表单并在资产编辑器中编辑这些图像或视频时，包含此类图像的自适应表单不会自动从Dispatcher缓存中失效。
+当您通过资产浏览器选择图像或视频并将其添加到自适应表单并在Assets编辑器中编辑这些图像和视频时，包含此类图像的自适应表单不会自动从Dispatcher缓存中失效。
 
 #### 解决方案 {#Solution1}
 
@@ -144,7 +144,7 @@ ht-degree: 1%
 
 #### 问题 {#issue3}
 
-当自适应表单URL没有任何本地化信息时，并且 **[!UICONTROL 使用浏览器区域设置]** 在配置管理器中，提供了自适应表单的本地化版本。 仅缓存自适应表单的第一个实例并将其交付给每个后续用户。
+当自适应表单URL没有任何本地化信息，并且在配置管理器中启用了&#x200B;**[!UICONTROL 使用浏览器区域设置]**&#x200B;时，将提供自适应表单的本地化版本。 仅缓存自适应表单的第一个实例并将其交付给每个后续用户。
 
 #### 解决方案 {#Solution3}
 

@@ -51,7 +51,7 @@ ht-degree: 75%
 
 这些列出的组合键采用的是 Windows [修饰符键](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys)。
 
-桌面用户在使用时，还可以使用各种键盘快捷键 [页面编辑器](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) 以创作页面。
+在使用[页面编辑器](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)创作页面时，桌面用户也可以使用各种键盘快捷键。
 
 ## 特定于操作系统的修饰符键 {#os-specific-modifier-keys}
 

@@ -16,13 +16,13 @@ ht-degree: 0%
 
 下面提供了两种使用AEM进行创作的概述：
 
-* [作者的首要步骤](/help/sites-authoring/first-steps.md)  — 新作者的简介
+* [作者的首要步骤](/help/sites-authoring/first-steps.md) — 新作者的简介
 
-* [页面创作快速指南](/help/sites-authoring/qg-page-authoring.md)  — 主要操作的快速指南（高级别）
+* [页面创作快速指南](/help/sites-authoring/qg-page-authoring.md) — 主要操作的快速指南（高级）
 
 >[!NOTE]
 >
->本节介绍创作内容页面时涉及的任务。 还有许多与页面创作密切相关的其他功能，这些功能在 [Authoring指南](/help/sites-authoring/first-steps.md).
+>本节介绍创作内容页面时涉及的任务。 [创作指南](/help/sites-authoring/first-steps.md)的其他部分介绍了许多与页面创作密切相关的附加功能。
 
 ## 用于创作页面的功能的快速概述 {#quick-overview-of-features-used-for-authoring-pages}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 * **拖放**
 只需将组件（如文本、图像）和数字资产（如图像）拖放到所需位置，即可将其放置在页面上。
 
-* **编辑**
+* **正在编辑**
 定位到页面上后，可以打开特定于组件的对话框来输入内容和/或配置该组件的特征（例如，图像大小）。
 
 * **就地编辑**
@@ -46,8 +46,8 @@ ht-degree: 0%
 * **组件工具栏**
 一次或慢速双击都会显示相应的工具栏（单用于就地编辑工具栏，慢速双击用于完整工具栏）。
 
-* **[响应式布局](/help/sites-authoring/responsive-layout.md)**
+* **[响应布局](/help/sites-authoring/responsive-layout.md)**
 这提供了一个段落系统，允许您在响应式网格中放置组件。
 
-* **按键入内容搜索**
+* **键入时搜索**
 在某些情况下（例如，编辑对话框中的路径选择），通过AEM界面搜索内容会在您键入查询时显示动态匹配。

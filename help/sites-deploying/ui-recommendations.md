@@ -68,66 +68,66 @@ Adobe建议客户计划在2018/19年度切换到新UI。 这可以在更新6.5�
    <td>使用默认UI。</td>
   </tr>
   <tr>
-   <td><p>已使用AEM一段时间。</p> <p>使用了现成的产品UI，并为站点开发了自定义组件。<br /> </p> </td>
+   <td><p>已使用AEM一段时间。</p> <p>已使用现成的产品UI并为站点开发自定义组件。<br /> </p> </td>
    <td>
     <ol>
      <li>更新至6.5</li>
-     <li>使用默认UI进行站点管理、资产等。 等等。<br /> </li>
-     <li>配置“编辑页面”操作以打开经典UI页面编辑器。 请参阅 <a href="#selecting-your-ui">选择您的UI</a>.</li>
+     <li>使用默认UI进行站点管理、资产等。 etc.<br /> </li>
+     <li>配置“编辑页面”操作以打开经典UI页面编辑器。 查看<a href="#selecting-your-ui">选择您的UI</a>。</li>
     </ol> <p>然后，在第二阶段：</p>
     <ol>
-     <li>更新组件对话框以使用Coral 3对话框格式。 Adobe建议使用 <a href="/help/sites-developing/modernization-tools.md">AEM现代化工具</a> 以更新组件。</li>
+     <li>更新组件对话框以使用Coral 3对话框格式。 Adobe建议使用<a href="/help/sites-developing/modernization-tools.md">AEM现代化工具</a>来更新组件。</li>
     </ol> </td>
   </tr>
   <tr>
-   <td>已构建一个使用ClientContext与集成的站点。<br /> </td>
+   <td>已构建一个使用该ClientContext与集成的站点。<br /> </td>
    <td>
     <ol>
      <li>更新至6.5</li>
      <li>使用默认UI进行站点管理、资产等。 以此类推。</li>
-     <li>配置“编辑页面”操作以打开经典UI页面编辑器。 请参阅 <a href="#selecting-your-ui">选择您的UI</a>.</li>
+     <li>配置“编辑页面”操作以打开经典UI页面编辑器。 查看<a href="#selecting-your-ui">选择您的UI</a>。</li>
     </ol> <p>然后，在第二阶段：</p>
     <ol>
-     <li>更新组件对话框以使用Coral 3对话框格式。 Adobe建议使用 <a href="/help/sites-developing/modernization-tools.md">AEM现代化工具</a> 以更新组件。</li>
+     <li>更新组件对话框以使用Coral 3对话框格式。 Adobe建议使用<a href="/help/sites-developing/modernization-tools.md">AEM现代化工具</a>来更新组件。</li>
      <li>配置ContextHub(ClientContext的替代项)并更新页面模板以使用ContextHub。 ContextHub具有允许加载自定义ClientContext存储的兼容模式。</li>
     </ol> </td>
   </tr>
   <tr>
    <td><p>已使用CQ/AEM多年。</p> <p>扩展了产品UI（例如站点管理员），并构建了具有大量编辑对话框的组件。</p> </td>
-   <td><p>更新至6.5并将经典UI配置为所有用户的页面创作的默认用户界面。 请参阅 <a href="#selecting-your-ui">选择您的UI</a>.</p> <p>然后，启动一个项目以应用自定义并优化Coral 3格式的组件对话框。 请参阅 <a href="#resources-to-help">需要帮助的资源</a>.<br /> </p> </td>
+   <td><p>更新至6.5并将经典UI配置为所有用户的页面创作的默认用户界面。 查看<a href="#selecting-your-ui">选择您的UI</a>。</p> <p>然后，启动一个项目以应用自定义并优化Coral 3格式的组件对话框。 查看<a href="#resources-to-help">要帮助的资源</a>。<br /> </p> </td>
   </tr>
  </tbody>
 </table>
 
 ### 常见问题解答 {#faq}
 
-请参阅知识库文章， [触控UI创作常见问题解答](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html)，以了解详细信息；包括有关经典UI弃用计划的任何信息。
+有关详细信息（包括有关经典UI弃用计划的任何信息），请参阅知识库文章[触控UI创作常见问题解答](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html)。
 
 ### 选择您的UI {#selecting-your-ui}
 
-请参阅 [选择您的UI](/help/sites-authoring/select-ui.md) 有关根据需要配置系统的信息。
+有关根据需要配置系统的信息，请参阅[选择您的用户界面](/help/sites-authoring/select-ui.md)。
 
 ### 触屏优化UI状态 {#touch-enabled-ui-status}
 
-有关AEM 6.5中针对触屏UI所做的增强功能的详细信息，请参阅 [新增功能](/help/release-notes/release-notes.md#what-s-new) 在发行说明中。
+有关AEM 6.5中针对触控式UI所做的增强功能的详细信息，请参阅发行说明中的[新增功能](/help/release-notes/release-notes.md#what-s-new)。
 
-完整的概述，请参见 [触屏UI功能状态](/help/release-notes/touch-ui-features-status.md) 页面
+完整的概述请参阅[触屏UI功能状态](/help/release-notes/touch-ui-features-status.md)页面
 
 ### 需要帮助的资源 {#resources-to-help}
 
 有关基本处理的背景信息：
 
-* [创作页面](/help/sites-authoring/page-authoring.md).
+* [创作页面](/help/sites-authoring/page-authoring.md)。
 
 有关详细开发信息：
 
-* [触屏优化UI架构](/help/sites-developing/touch-ui-concepts.md).
-* 使用 [AEM现代化工具](/help/sites-developing/modernization-tools.md) 将组件“编辑”对话框从经典UI转换为触控式UI。
+* [触屏优化UI体系结构](/help/sites-developing/touch-ui-concepts.md)。
+* 使用[AEM现代化工具](/help/sites-developing/modernization-tools.md)将组件“编辑”对话框从经典UI转换为触屏UI。
 
-* [触屏优化UI的结构](/help/sites-developing/touch-ui-structure.md).
+* [触屏UI的结构](/help/sites-developing/touch-ui-structure.md)。
 
-* [在触屏UI中自定义控制台](/help/sites-developing/customizing-consoles-touch.md) （包括示例代码）。
+* [在触屏UI中自定义控制台](/help/sites-developing/customizing-consoles-touch.md)（包括示例代码）。
 
-* [在触屏UI中自定义页面创作](/help/sites-developing/customizing-page-authoring-touch.md) （包括示例代码）。
+* [在触屏UI中自定义页面创作](/help/sites-developing/customizing-page-authoring-touch.md)（包括示例代码）。
 
-* [Granite UI文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+* [Granite用户界面文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)。

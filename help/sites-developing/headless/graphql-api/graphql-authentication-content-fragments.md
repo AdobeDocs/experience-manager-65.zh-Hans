@@ -14,7 +14,7 @@ ht-degree: 42%
 
 # 对内容片段的远程Adobe Experience Manager GraphQL查询的身份验证 {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
-的主要用例 [用于内容片段投放的Adobe Experience Manager (AEM) GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) 是接受来自第三方应用程序或服务的远程查询。 这些远程查询可能需要经过身份验证的 API 访问，以保护 Headless 内容投放。
+用于内容片段投放的[Adobe Experience Manager (AEM) GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)的主要用例是接受来自第三方应用程序或服务的远程查询。 这些远程查询可能需要经过身份验证的 API 访问，以保护 Headless 内容投放。
 
 >[!NOTE]
 >

@@ -35,16 +35,16 @@ ht-degree: 1%
 ## 使用Preflight预览 {#previewing-with-preflight-1}
 
 1. 在Mobile中，从目录中选择您的Mobile On-Demand应用程序。
-1. 单击中的省略号(...) **管理文章** （或横幅/收藏集）拼贴。
-1. 选择 **Preflight** 从操作栏中。
-1. 单击 **激活Preflight** 从对话框中。
+1. 单击&#x200B;**管理文章**（或横幅/收藏集）拼贴中的省略号(...)。
+1. 从操作栏中选择&#x200B;**印前检查**。
+1. 从对话框中单击&#x200B;**激活印前检查**。
 1. 您的应用程序现在可以在Mobile On-Demand Preflight应用程序上预览。
 
 ![chlimage_1-8](assets/chlimage_1-8.gif)
 
 >[!NOTE]
 >
->AEM Preflight应用程序用于预览内容和浏览页面。 要深入了解预检应用程序，请单击 [此处](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>AEM Preflight应用程序用于预览内容和浏览页面。 若要深入了解预检应用程序，请单击[此处](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
 >
 
 ### 快速入门 {#getting-ahead}

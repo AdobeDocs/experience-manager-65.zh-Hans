@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 将Landing Pages与Adobe Analytics集成{#integrating-landing-pages-with-adobe-analytics}
 
-AEM已将登陆页面解决方案与集成 [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) 通过以下行动号召(CTA)组件：
+AEM已使用以下行动号召(CTA)组件将登陆页面解决方案与[Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst)集成：
 
 1. 点进组件
 1. 图形链接组件
@@ -27,11 +27,11 @@ AEM已将登陆页面解决方案与集成 [Adobe Analytics](https://www.omnitur
 
 ## 先决条件 {#prerequisites}
 
-Adobe建议您浏览 [现有AEM-Adobe Analytics集成](/help/sites-administering/adobeanalytics.md) 以了解此集成的工作方式。
+Adobe建议您通过[现有AEM-Adobe Analytics集成](/help/sites-administering/adobeanalytics.md)了解此集成的工作方式。
 
 ## 可用于映射的组件 {#components-available-for-mapping}
 
-在AEM中， **行动动员** 组件 —  **点进链接** 和 **GraphicalLink**  — 显示在sidekick的此处，可以映射到Adobe Analytics变量。
+在AEM中，显示在sidekick中的&#x200B;**行动号召**&#x200B;组件 — **ClickThroughLink**&#x200B;和&#x200B;**GraphicLink** — 可以映射到Adobe Analytics变量。
 
 ![chlimage_1-21](assets/chlimage_1-21a.jpeg)
 
@@ -56,7 +56,7 @@ Adobe建议您浏览 [现有AEM-Adobe Analytics集成](/help/sites-administering
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>事件数据.clickthroughLinkTarget</i> <br /> </td>
+   <td><i>eventdata.clickthroughLinkTarget</i> <br /> </td>
    <td>单击链接时拍摄的目标 </td>
   </tr>
   <tr>
@@ -81,14 +81,14 @@ Adobe建议您浏览 [现有AEM-Adobe Analytics集成](/help/sites-administering
   </tr>
   <tr>
    <td><br type="_moz" /> </td>
-   <td><i>eventdata.events.clickthroughImageClick</i> <br /> </td>
+   <td><i>eventdata.events.clickgroughImageClick</i> <br /> </td>
    <td>点击事件</td>
   </tr>
  </tbody>
 </table>
 
 1. 将这些公开的属性与内容查找器中的任何Adobe Analytics变量进行映射。 该框架现在可以使用。
-1. 您现在可以创建登陆页面，或使用现有CTA组件打开现有登陆页面，然后单击 **Cloud Service** tab in **页面属性** 从sidekick(在触屏优化UI中，选择 **打开属性** 并单击 **Cloud Service**)并配置要与登陆页面一起使用的框架。 从下拉列表中选择框架。
+1. 您现在可以创建登陆页面，或使用现有CTA组件打开现有登陆页面，然后从Sidekick中单击&#x200B;**Cloud Service属性**&#x200B;中的&#x200B;**属性**&#x200B;选项卡（在触控优化的UI中，选择&#x200B;**打开属性**，然后单击&#x200B;**属性**），并将框架配置为与登陆页面一起使用。Cloud Service 从下拉列表中选择框架。
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

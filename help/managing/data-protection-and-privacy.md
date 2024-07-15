@@ -91,23 +91,23 @@ Adobe提供了用于处理与访问、删除和选择退出Adobe Experience Mana
 
 ## AEM Foundation {#aem-foundation}
 
-请参阅 [处理AEM Foundation的数据保护和隐私请求](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md).
+请参阅[处理AEM Foundation的数据保护和隐私请求](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)。
 
 ## AEM选择收集汇总使用情况统计数据 {#aem-opting-into-aggregate-usage-statistics-collection}
 
-请参阅 [收集汇总的使用情况统计数据](/help/sites-deploying/opt-in-aggregated-usage-statistics.md).
+请参阅[汇总的使用情况统计信息收集](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)。
 
 ## AEM Sites {#aem-sites}
 
-请参阅 [AEM Sites — 数据保护和隐私就绪。](/help/sites-administering/gdpr-compliance-sites.md)
+请参阅[AEM Sites — 数据保护和隐私就绪。](/help/sites-administering/gdpr-compliance-sites.md)
 
 ## AEM Commerce {#aem-commerce}
 
-请参阅 [AEM Commerce — 数据保护和隐私就绪](/help/sites-administering/gdpr-compliance-commerce.md).
+请参阅[AEM Commerce — 数据保护和隐私就绪](/help/sites-administering/gdpr-compliance-commerce.md)。
 
 ## AEM Mobile {#aem-mobile}
 
-请参阅 [AEM Mobile — 数据保护和隐私就绪](/help/mobile/aem-mobile-gdpr-compliance.md).
+请参阅[AEM Mobile — 数据保护和隐私就绪](/help/mobile/aem-mobile-gdpr-compliance.md)。
 
 ## AEM与Adobe Target和Adobe Analytics的集成 {#aem-integration-with-adobe-target-adobe-analytics}
 
@@ -121,7 +121,7 @@ Adobe提供了用于处理与访问、删除和选择退出Adobe Experience Mana
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities赋予数据主体数据可移植性、访问权和被遗忘权 [开箱即用的API](/help/communities/user-ugc-management-service.md). 这些API支持批量删除和批量导出用户生成的内容，并禁用通过其可授权ID标识的用户帐户。 但是，通过删除CRXDE Lite中的用户节点，可以永久删除用户帐户，从而解决了轻松选择退出系统的需求。
+AEM Communities赋予数据主体数据可移植性、访问权以及被[现成API](/help/communities/user-ugc-management-service.md)遗忘的权利。 这些API支持批量删除和批量导出用户生成的内容，并禁用通过其可授权ID标识的用户帐户。 但是，通过删除CRXDE Lite中的用户节点，可以永久删除用户帐户，从而解决了轻松选择退出系统的需求。
 
 此外，AEM Communities还通过其“批量审核”控制台的设计提供了隐私权，该控制台允许拥有权限的成员查找和删除用户的参与和详细信息。 成员管理控制台允许将限制到禁止投稿人的程度。 此外，它还授权数据主体删除他们创作的投稿。
 
@@ -133,6 +133,6 @@ AEM Forms包括捕获、处理和存储数据以编排业务流程和完成数�
 * [通信管理](/help/forms/using/correspondence-management-handling-user-data.md)
 * [与Adobe Sign集成](/help/forms/using/integration-adobe-sign-handling-user-data.md)
 * [OSGi上以Forms为中心的工作流](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Forms JEE工作流](/help/forms/using/forms-workflow-jee-handling-user-data.md) (仅限AEM Forms JEE)
-* [Document Security](/help/forms/using/document-security-handling-user-data.md) (仅限AEM Forms JEE)
-* [User Management](/help/forms/using/user-management-handling-user-data.md) (仅限AEM Forms JEE)
+* [Forms JEE工作流](/help/forms/using/forms-workflow-jee-handling-user-data.md)(仅限AEM Forms JEE)
+* [Document Security](/help/forms/using/document-security-handling-user-data.md)(仅限AEM Forms JEE)
+* [用户管理](/help/forms/using/user-management-handling-user-data.md)(仅限AEM Forms JEE)

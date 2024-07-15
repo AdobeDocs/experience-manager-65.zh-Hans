@@ -52,7 +52,7 @@ ht-degree: 6%
 
 * 产品详细信息页面和产品列表页面的完全可创作模板。 作者现在可以创建模板，并将产品列表和产品详细信息组件拖放到这些模板上。 除了添加其他组件外，作者现在还可以更改这些模板的布局，为他们提供无限制的自由，以便结合营销和商业内容创建令人惊叹的体验。
 
-* 所有便于作者使用的CIF核心组件均已增强以支持 [AEM样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html). 为产品列表组件提供了示例样式。
+* 所有便于作者使用的CIF核心组件都已增强，以支持[AEM样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)。 为产品列表组件提供了示例样式。
 
 * 用于帐户管理的基于React的客户端组件。 此版本支持以下功能：登录、忘记密码和创建帐户。
 

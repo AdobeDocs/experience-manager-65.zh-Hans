@@ -18,9 +18,9 @@ ht-degree: 15%
 
 # 组件、功能和功能要点  {#component-function-and-feature-essentials}
 
-Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员并登录 [社区站点](overview.md#communitiessites) 才能发布内容。 因此， [社区站点模板](sites.md)，社区站点将从此处获得 [已创建](sites-console.md)，旨在包含登录功能和用户配置文件、消息传送、搜索、审核和翻译。
+Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员并登录[社区站点](overview.md#communitiessites)，然后才能发布内容。 因此，[社区站点模板](sites.md)（从中创建社区站点[](sites-console.md)）设计为包括登录功能和用户配置文件、消息传送、搜索、审核和翻译。
 
-在以下情况下，社区站点支持成员创建社区组： [社区组功能](functions.md#groups-function) 包含在选定的社区站点模板中。
+当[社区组功能](functions.md#groups-function)包含在选定的社区站点模板中时，社区站点支持成员创建社区组。
 
 以下是Communities组件、功能和特性的基本信息链接。
 
@@ -38,7 +38,7 @@ Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员�
 ## 具有函数的组件 {#components-with-functions}
 
 * [活动流](essentials-activities.md)
-* [博客](blog-developer-basics.md) ( `Journal`)
+* [博客](blog-developer-basics.md) (`Journal`)
 
 * [日程表](calendar-basics-for-developers.md)
 * [专题内容](essentials-featured.md)
@@ -47,7 +47,7 @@ Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员�
 * [组](essentials-groups.md)
 * [构思](ideation.md)
 * [排行榜](leaderboard.md)
-* [问题与回答](qna-essentials.md) `(QnA)`
+* [问题和答案](qna-essentials.md) `(QnA)`
 
 ## 功能 {#features}
 
@@ -66,10 +66,10 @@ Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员�
 
 ## Javadocs {#javadocs}
 
-此 [在线javadocs](../../help/sites-developing/reference-materials.md) 反映AEM 6.3版本中可用的API。
-社区API位于 `com.adobe.cq.social.*` 包。
+[在线Javadocs](../../help/sites-developing/reference-materials.md)反映了AEM 6.3版本中可用的API。
+社区API位于`com.adobe.cq.social.*`包中。
 
-对于每个 [功能包](deploy-communities.md#latestfeaturepack)，则会提供javadoc jar。 有关详细信息，请访问 [使用Maven for Communities](maven.md#javadocs).
+对于每个[功能包](deploy-communities.md#latestfeaturepack)，都提供了javadoc jar。 有关详细信息，请访问[使用Maven for Communities](maven.md#javadocs)。
 
 ## 附加信息 {#additional-information}
 

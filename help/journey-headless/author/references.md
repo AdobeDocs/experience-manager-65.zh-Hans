@@ -126,7 +126,7 @@ ht-degree: 95%
       * [内容片段模型 – 属性](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * 快速入门指南
-   * [创建资源文件夹Headless快速入门指南](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [创建Assets文件夹Headless快速入门指南](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [AEM Headless 内容架构师历程](/help/journey-headless/architect/overview.md)
 

@@ -12,7 +12,7 @@ ht-degree: 68%
 
 ---
 
-# 使用OAuth 2.0客户端凭据流集成Salesforce  {#configure-salesforce-with-ouath-2.0-client-credential}
+# 使用OAuth 2.0客户端凭据流{#configure-salesforce-with-ouath-2.0-client-credential}集成Salesforce
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -58,7 +58,7 @@ AEM Forms交换在Salesforce连接的应用程序中定义的客户端凭据（�
 
 1. 通过单击&#x200B;**[!UICONTROL 浏览]**&#x200B;从本地计算机上传创建的 swagger 文件。
 1. 选择&#x200B;**[!UICONTROL 身份验证类型]**&#x200B;为 **[!UICONTROL OAuth 2.0]**，**[!UICONTROL 身份验证设置]**&#x200B;面板随即出现。
-1. 选择 **[!UICONTROL 授权类型]** 作为 **[!UICONTROL 客户端凭据]**.
+1. 选择&#x200B;**[!UICONTROL 授权类型]**&#x200B;作为&#x200B;**[!UICONTROL 客户端凭据]**。
 1. 指定从 Salesforce 连接的应用程序获取的&#x200B;**[!UICONTROL 客户端 ID]**&#x200B;和&#x200B;**[!UICONTROL 客户端密码]**。
 1. 用以下格式指定&#x200B;**[!UICONTROL 访问令牌 URL]**
    `https://[MyDomainName].my.salesforce.com/services/oauth2/token`。
@@ -70,4 +70,4 @@ AEM Forms交换在Salesforce连接的应用程序中定义的客户端凭据（�
 1. 单击&#x200B;**[!UICONTROL 测试连接]**。
 1. 如果连接成功，请单击&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
 
-现在，您可以 [创建表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) 将配置的数据源与您的自适应Forms集成。
+现在，您可以[创建表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en)以将配置的数据源与您的自适应Forms集成。

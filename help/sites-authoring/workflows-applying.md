@@ -37,13 +37,13 @@ ht-degree: 82%
 >
 >另请参阅：
 >
->* [如何将工作流应用于DAM资产](/help/assets/assets-workflow.md).
+>* [如何将工作流应用于DAM资源](/help/assets/assets-workflow.md)。
 >* [使用项目工作流](/help/sites-authoring/projects-with-workflows.md)。
 >
 
 >[!NOTE]
 >
->AEM管理员可以 [使用其他几种方法启动工作流](/help/sites-administering/workflows-starting.md).
+>AEM管理员可以使用多种其他方法[启动工作流](/help/sites-administering/workflows-starting.md)。
 
 ## 从 Sites 控制台启动工作流 {#starting-a-workflow-from-the-sites-console}
 
@@ -106,7 +106,7 @@ ht-degree: 82%
 
    >[!NOTE]
    >
-   >此 **保留工作流包** 为配置工作流后，选项可用 [多资源支持](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) 并选择了多个资源。
+   >为[多资源支持](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)配置了工作流并选择了多个资源时，**保留工作流包**&#x200B;选项可用。
 
    完成后，单击&#x200B;**下一步**&#x200B;继续。
 
@@ -114,7 +114,7 @@ ht-degree: 82%
 
 1. 在&#x200B;**范围**&#x200B;步骤中，您可以选择：
 
-   * **添加内容** 以打开 [路径浏览器](/help/sites-authoring/author-environment-tools.md#path-browser) 并选择其他资源；在浏览器中，单击 **选择** 将内容添加到工作流实例。
+   * **添加内容**&#x200B;以打开[路径浏览器](/help/sites-authoring/author-environment-tools.md#path-browser)并选择其他资源；在浏览器中，单击&#x200B;**选择**&#x200B;以将内容添加到工作流实例。
 
    * 现有资源以查看其他操作：
 

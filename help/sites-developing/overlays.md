@@ -18,52 +18,53 @@ ht-degree: 1%
 
 # 叠加{#overlays}
 
-Adobe Experience Manager (AEM)（以及之前的CQ）一直使用叠加原理来允许您扩展和自定义 [控制台](/help/sites-developing/customizing-consoles-touch.md) 和其他功能(例如， [页面创作](/help/sites-developing/customizing-page-authoring-touch.md))。
+Adobe Experience Manager (AEM)（以及之前的CQ）长期以来使用叠加原理来允许您扩展和自定义[控制台](/help/sites-developing/customizing-consoles-touch.md)和其他功能（例如，[页面创作](/help/sites-developing/customizing-page-authoring-touch.md)）。
 
 “叠加”是在许多上下文中使用的术语。 在此上下文中(扩展AEM)，叠加意味着采用预定义功能并将您自己的定义强加于此预定义功能之上（以自定义标准功能）。
 
-在标准实例中，预定义功能保存在 `/libs` 推荐做法是在下定义您的叠加（自定义） `/apps` 分支。 AEM使用搜索路径来查找资源，首先搜索 `/apps` 分支，然后 `/libs` 分支( [可以配置搜索路径](#configuring-the-search-paths))。 此机制意味着您的叠加（以及其中定义的自定义项）具有优先级。
+在标准实例中，预定义功能保存在`/libs`下，建议在`/apps`分支下定义叠加（自定义项）。 AEM使用搜索路径查找资源，首先搜索`/apps`分支，然后搜索`/libs`分支（可以配置[搜索路径](#configuring-the-search-paths)）。 此机制意味着您的叠加（以及其中定义的自定义项）具有优先级。
 
 自AEM 6.0起，对叠加的实施和使用方式进行了更改：
 
-* AEM 6.0及更高版本 — 用于 [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) — 相关的叠加图（即触屏UI）
+* AEM 6.0及更高版本 — 适用于[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)相关的叠加图（即支持触摸的UI）
 
    * 方法
 
-      * 重建适当的 `/libs` 结构 `/apps`.
+      * 在`/apps`下重新构建相应的`/libs`结构。
 
-        这不需要一对一的拷贝， [Sling资源合并器](/help/sites-developing/sling-resource-merger.md) 用于交叉引用所需的原始定义。 Sling资源合并器提供访问资源并将其与差异（差异）机制合并的服务。
+        这不需要1:1的副本，使用[Sling资源合并器](/help/sites-developing/sling-resource-merger.md)交叉引用所需的原始定义。 Sling资源合并器提供访问资源并将其与差异（差异）机制合并的服务。
 
-      * 下 `/apps`，进行任何更改。
+      * 在`/apps`下，进行任何更改。
 
    * 优点
 
-      * 对下的更改更加强健 `/libs`.
+      * 对`/libs`下的更改更可靠。
       * 仅重新定义所需的内容。
 
 * AEM 6.0之前的非Granite叠加和叠加
 
    * 方法
 
-      * 复制内容来源 `/libs` 到 `/apps`
+      * 将内容从`/libs`复制到`/apps`
 
         复制整个子分支，包括资产。
 
-      * 下 `/apps`，进行任何更改。
+      * 在`/apps`下，进行任何更改。
 
    * 缺点
 
-      * 尽管当下面的内容发生更改时，您的更改不会丢失 `/libs`，您可能必须重新创建在下叠加中发生的某些更改 `/apps`.
+      * 虽然当某些内容在`/libs`下更改时，您的更改不会丢失，但您可能必须重新创建在`/apps`下的叠加中发生的某些更改。
 
 >[!CAUTION]
 >
->此 [Sling资源合并器](/help/sites-developing/sling-resource-merger.md) 并且相关方法只能用于 [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html). 这意味着创建具有框架结构的叠加仅适用于支持触摸的标准用户界面。
+>[Sling资源合并器](/help/sites-developing/sling-resource-merger.md)和相关方法只能与[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)一起使用。 这意味着创建具有框架结构的叠加仅适用于支持触摸的标准用户界面。
 >
 >其他区域（包括经典UI）的叠加包括复制相应的节点和整个子结构，然后进行所需的更改。
 
-叠加是适用于许多更改的推荐方法，例如 [配置控制台](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) 或 [在侧面板的资源浏览器中创建选择类别](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) （在创作页面时使用）。 它们必须是：
+叠加是进行许多更改的推荐方法，例如[配置控制台](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)或[向侧面板中的资产浏览器创建选择类别](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser)（在创作页面时使用）。 它们必须是：
 
-* ***不要* 在中更改 `/libs` 分支&#x200B;**您所做的任何更改都可能会丢失，因为每当您：
+* ***不要*&#x200B;在`/libs`分支&#x200B;**中进行更改
+您所做的任何更改都可能会丢失，因为每当您：
 
    * 在实例上升级
    * 应用修补程序
@@ -75,10 +76,10 @@ Adobe Experience Manager (AEM)（以及之前的CQ）一直使用叠加原理来
 
 对于叠加图，交付的资源是检索到的资源和属性的汇总，具体取决于可以定义的搜索路径：
 
-* 资源 **解析程序搜索路径** 如 [OSGi配置](/help/sites-deploying/configuring-osgi.md) 对于 **Apache Sling Resource Resolver Factory**.
+* 在&#x200B;**Apache Sling Resource Resolver Factory**&#x200B;的[OSGi配置](/help/sites-deploying/configuring-osgi.md)中定义的资源&#x200B;**解析程序搜索路径**。
 
    * 搜索路径的自上而下顺序指示其各自的优先级。
-   * 在标准安装中，主要缺省值为 `/apps`， `/libs`  — 因此，此页面的 `/apps` 具有比以下项更高的优先级 `/libs` (也就是说， *叠加* 它)。
+   * 在标准安装中，主默认值是`/apps`，`/libs` — 因此`/apps`的内容具有比`/libs`更高的优先级（即&#x200B;*覆盖*）。
 
 * 两个服务用户需要对脚本存储位置具有JCR：READ访问权限。 这些用户是： components-search-service(由com.day.cq.wcm.coreto用于访问/缓存组件)和sling-scripting（由org.apache.sling.servlets.resolver用于查找servlet）。
 * 还必须根据脚本放置位置（本示例中位于/etc、/libs或/apps下）来配置以下配置。

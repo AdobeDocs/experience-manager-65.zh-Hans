@@ -12,7 +12,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '798'
-ht-degree: 2%
+ht-degree: 3%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 - [AEM 6.5 Developing 用户指南](/help/sites-developing/getting-started.md)
 - [AEM核心概念](/help/sites-developing/the-basics.md)
-- [AEM开发 — 准则和最佳实践](/help/sites-developing/dev-guidelines-bestpractices.md)
+- [AEM 开发 - 准则和最佳实践](/help/sites-developing/dev-guidelines-bestpractices.md)
 - [如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md)
 
 ## AEM Commerce的本地开发 {#local}
@@ -31,9 +31,9 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->以下说明可帮助您使用带有AEM 6.5的CIF为AEM Commerce设置本地AEM开发环境。 如果您使用的是AEMas a Cloud Service，请参阅 [AEM Commerceas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html) 文档。
+>以下说明可帮助您使用具有适用于AEM 6.5的CIF为AEM Commerce设置本地AEM开发环境。 如果您使用的是AEM as a Cloud Service，请参阅[AEM Commerceas a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)文档。
 
-适用于AEM 6.5 aka的AEM Commerce加载项。 CIF加载项也可用于本地开发，并作为AEM包提供。 可从以下位置下载： [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 作为功能包。
+适用于AEM 6.5 aka的AEM Commerce加载项。 CIF加载项也可用于本地开发，并作为AEM包提供。 可以从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下载它作为功能包。
 
 ### 所需的软件
 
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 ### 访问CIF加载项
 
-CIF加载项可以从以下位置下载： [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)，搜索“AEM Commerce加载项”。
+CIF加载项可从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下载，请搜索“AEM Commerce加载项”。
 
 >[!TIP]
 >
@@ -61,15 +61,15 @@ CIF加载项可以从以下位置下载： [软件分发门户](https://experien
 
 1. 获取AEM 6.5版本并安装AEM 6.5 Service Pack。 需要AEM 6.5 Service Pack 7，但Adobe建议安装最后一个可用的Service Pack。
 
-1. 解压缩AEM .jar以创建 `crx-quickstart` 文件夹，运行：
+1. 解压缩AEM .jar以创建`crx-quickstart`文件夹，运行：
 
    ```bash
    java -jar <jar name> -unpack
    ```
 
-1. 创建 `crx-quickstart/install` 文件夹
+1. 创建`crx-quickstart/install`文件夹
 
-1. 将从软件分发门户下载的CIF附加组件所有包复制到 `crx-quickstart/install` 文件夹。
+1. 将从软件分发门户下载的CIF附加组件所有包复制到`crx-quickstart/install`文件夹中。
 
 >[!TIP]
 >
@@ -77,7 +77,7 @@ CIF加载项可以从以下位置下载： [软件分发门户](https://experien
 
 1. 启动AEM快速入门
 
-通过OSGI控制台验证设置： `http://localhost:4502/system/console/osgi-installer`. 该列表应包含与CIF附加组件相关的包、内容包和OSGI配置。 确保所有捆绑包都已启动。
+通过OSGI控制台验证设置： `http://localhost:4502/system/console/osgi-installer`。 该列表应包含与CIF附加组件相关的包、内容包和OSGI配置。 确保所有捆绑包都已启动。
 
 ## 项目设置 {#project}
 
@@ -85,13 +85,13 @@ CIF加载项可以从以下位置下载： [软件分发门户](https://experien
 
 ### 使用AEM项目原型
 
-此 [AEM项目原型](https://github.com/adobe/aem-project-archetype) 是引导预配置项目以开始使用CIF的主要工具。 CIF核心组件和所有必需的配置都可以在生成的项目中包含一个额外选项。
+[AEM项目原型](https://github.com/adobe/aem-project-archetype)是引导预配置项目以开始使用CIF的主要工具。 CIF核心组件和所有必需的配置都可以在生成的项目中包含一个额外选项。
 
 >[!TIP]
 >
->使用 [AEM项目原型25或更高版本](https://github.com/adobe/aem-project-archetype/releases) 以生成项目。
+>使用[AEM Project Archetype 25或更高版本](https://github.com/adobe/aem-project-archetype/releases)生成项目。
 
-请参阅AEM项目原型 [使用说明](https://github.com/adobe/aem-project-archetype#usage) 有关如何生成AEM项目。 要将CIF包含在项目中，请使用 `includeCommerce` 选项。
+有关如何生成AEM项目，请参阅AEM项目原型[使用说明](https://github.com/adobe/aem-project-archetype#usage)。 要将CIF包含在项目中，请使用`includeCommerce`选项。
 
 例如：
 
@@ -108,7 +108,7 @@ mvn -B archetype:generate \
  -D includeCommerce=y
 ```
 
-通过包含提供的，可以在任何项目中使用CIF核心组件 `all` 使用CIF内容包和相关OSGi捆绑包的包或个人。 要手动将CIF核心组件添加到项目，请使用以下依赖项：
+CIF核心组件可以通过包括提供的`all`包在任何项目中使用，或通过使用CIF内容包和相关OSGi捆绑包在单个项目中使用。 要手动将CIF核心组件添加到项目，请使用以下依赖项：
 
 ```java
 <dependency>
@@ -142,29 +142,29 @@ mvn -B archetype:generate \
 
 ### 使用AEM Venia Reference Store
 
-启动CIF项目的第二个选项是克隆并使用 [AEM Venia参考存储](https://github.com/adobe/aem-cif-guides-venia). AEM Venia Reference Store是一个示例参考店面应用程序，用于演示如何将CIF核心组件用于AEM。 它旨在作为一组最佳实践示例以及开发您自己的功能的潜在起点。
+启动CIF项目的第二个选项是克隆并使用[AEM Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)。 AEM Venia Reference Store是一个示例参考店面应用程序，用于演示如何将CIF核心组件用于AEM。 它旨在作为一组最佳实践示例以及开发您自己的功能的潜在起点。
 
-要开始使用Venia引用存储，只需克隆 [Git存储库](https://github.com/adobe/aem-cif-guides-venia) 并开始根据您的需求自定义项目。
+要开始使用Venia引用存储，只需克隆[Git存储库](https://github.com/adobe/aem-cif-guides-venia)并开始根据需要自定义项目。
 
 >[!NOTE]
 >
->Venia Reference Store项目包含AEMas a Cloud Service和AEM 6.5的两个生成配置文件。查看 [项目readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md) 了解它们的使用方式。 对于AEM 6.5，使用 `classic` 个人资料。
+>Venia Reference Store项目包含AEM as a Cloud Service和AEM 6.5的两个生成配置文件。查看[项目readme.md](https://github.com/adobe/aem-cif-guides-venia/blob/main/README.md)以了解它们的使用方式。 对于AEM 6.5，使用`classic`配置文件。
 
 ### 将AEM连接到Commerce系统
 
 要将您的项目连接到Commerce System，必须使用Commerce System的GraphQL端点配置AEM。
 
-两者都是由生成的项目 [AEM项目原型](https://github.com/adobe/aem-project-archetype) 或 [AEM Venia参考存储](https://github.com/adobe/aem-cif-guides-venia)，已包括 [默认配置](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) 必须调整的。
+由[AEM项目原型](https://github.com/adobe/aem-project-archetype)或[AEM Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)生成的项目已包含必须调整的[默认配置](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json)。
 
-替换 `url` 在 `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` 使用项目使用的商务系统的GraphQL端点。
+将`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`中`url`的值替换为项目使用的商务系统的GraphQL端点。
 
-AEM Commerce加载项和CIF核心组件通过AEM服务器并直接通过浏览器连接到商务GraphQL端点。 默认情况下，客户端CIF核心组件和CIF附加组件创作工具连接到 `/api/graphql`. 如果需要，可以通过CIFCloud Service配置来调整此设置（请参阅下文）。
+AEM Commerce加载项和CIF核心组件通过AEM服务器并直接通过浏览器连接到商务GraphQL端点。 默认情况下，客户端CIF核心组件和CIF附加组件创作工具连接到`/api/graphql`。 如果需要，可以通过CIFCloud Service配置来调整此设置（请参阅下文）。
 
-CIF加载项在以下位置提供GraphQL代理servlet： `/api/graphql`. 如果您不计划使用本地AEM Dispatcher，则建议同时配置GraphQL代理servlet。
+CIF加载项提供了位于`/api/graphql`的GraphQL代理servlet。 如果您不打算使用本地AEM Dispatcher，则建议同时配置GraphQL代理servlet。
 
-导航到http://localhost:4502/system/console/configMgr并创建OSGI配置，用于 `Adobe CIF GraphQL Proxy Configuration` 服务。 使用与上述用于GraphQL客户端的相同的GraphQL商务系统端点。
+导航到http://localhost:4502/system/console/configMgr并为`Adobe CIF GraphQL Proxy Configuration`服务创建OSGI配置。 使用与上述用于GraphQL客户端的相同的GraphQL商务系统端点。
 
 ## 其他资源
 
 - [AEM项目原型](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia参考存储](https://github.com/adobe/aem-cif-guides-venia)
+- [AEM Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)

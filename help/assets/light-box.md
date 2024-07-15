@@ -17,18 +17,18 @@ ht-degree: 0%
 
 Lightbox是一种特殊的收藏集，可让您轻松访问资产。 您可以快速访问Lightbox以添加或删除资源。 它用作您的个人图像库。
 
-如果您是 [!DNL Adobe Experience Manager Assets] 用户，首次登录应用程序时会自动创建Lightbox。 这是登录名独占的内容。 其他用户无法访问您的Lightbox。
+如果您是[!DNL Adobe Experience Manager Assets]用户，则会在您首次登录应用程序时自动创建Lightbox。 这是登录名独占的内容。 其他用户无法访问您的Lightbox。
 
 ## 将资源添加到Lightbox {#adding-assets-to-lightbox}
 
-1. 从 [!DNL Assets] 用户界面中，选择要添加到Lightbox的资源。
-1. 将资源拖动到 **[!UICONTROL 放入Lightbox]** 区域。 当拖放区域变为活动状态并且其标签更改为 **[!UICONTROL 放置以添加]**.
+1. 从[!DNL Assets]用户界面中，选择要添加到Lightbox的资源。
+1. 将资源拖到Lightbox ]**区域中的**[!UICONTROL &#x200B;拖放位置。 当拖放区域变为活动状态并且其标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时释放。
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. 在对话框中，单击 **[!UICONTROL 添加]**，然后将其关闭以完成该过程。 选定的资产将会添加到Lightbox。
+1. 在该对话框中，单击&#x200B;**[!UICONTROL 添加]**，然后关闭它以完成该过程。 选定的资产将会添加到Lightbox。
 1. 要查看Lightbox，请转到收藏集控制台。
-1. 单击 **[!UICONTROL 灯箱]** 以查看其中的资源。
+1. 单击&#x200B;**[!UICONTROL 灯箱]**&#x200B;查看其中的资源。
 
    >[!NOTE]
    >
@@ -38,5 +38,5 @@ Lightbox是一种特殊的收藏集，可让您轻松访问资产。 您可以�
 
 1. 导航到收藏集控制台，单击Lightbox以查看其资源。
 1. 选择要删除的资源。
-1. 在工具栏中，单击 **[!UICONTROL 移除]**.
-1. 在对话框中，单击 **[!UICONTROL 移除]** 以确认删除操作。 资源将从Lightbox中删除。
+1. 在工具栏中，单击&#x200B;**[!UICONTROL 删除]**。
+1. 在对话框中，单击&#x200B;**[!UICONTROL 删除]**&#x200B;以确认删除操作。 资源将从Lightbox中删除。

@@ -24,33 +24,33 @@ ht-degree: 0%
 
 ## 解决方案 {#solution}
 
-1. 将jar下载为 [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar) 并解压缩下载的jar文件以获取清单文件。
+1. 将jar下载为[java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar)，然后解压缩下载的jar文件以获取清单文件。
 
-1. 使用的清单文件 `java.mail-1.0.jar` 从步骤1中检索以创建自定义jar文件，例如 `java.mail-1.5.jar`.
+1. 使用从步骤1检索到的`java.mail-1.0.jar`的清单文件创建自定义jar文件，如`java.mail-1.5.jar`。
 
-1. 打开清单文件并替换所有出现的 `1.5.0` 替换为 `1.5.6` 和 `Bundle-Version: 1.0` 替换为 `Bundle-Version:1.5`
+1. 打开清单文件，并将`1.5.0`的所有匹配项替换为`1.5.6`，将`Bundle-Version: 1.0`替换为`Bundle-Version:1.5`
 
-1. 创建自定义jar (`java.mail-1.5.jar`)文件，方法为 `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` 文件夹为：
+1. 使用以下命令在`C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin`文件夹中创建自定义jar (`java.mail-1.5.jar`)文件，如下所示：
    `jar -cfm java.mail-1.5.jar manifest.mf`
 
-   在上述命令中， *manifest.mf* 是清单文件的名称，并且 *java.mail-1.5.jar* 是执行上述命令后创建的文件的名称。
+   在上述命令中，*manifest.mf*&#x200B;是清单文件的名称，*java.mail-1.5.jar*&#x200B;是在执行上述命令后创建的文件的名称。
 
-1. 下载 [javax.mail-1.5.6.redhat-1.jar](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1).
+1. 下载[javax.mail-1.5.6.redhat-1.jar](https://mvnrepository.com/artifact/com.sun.mail/javax.mail/1.5.6.redhat-1)。
 
-1. 导航到 `http://<server name>:<port>/lc/system/console/bundles`并删除名为 `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
+1. 导航到`http://<server name>:<port>/lc/system/console/bundles`并删除名为`JavaMail API (com.sun.mail.javax.mail) version 1.6.2`的包。
 
-1. 安装 `java.mail-1.5.jar` 步骤3得到的。 此步骤将重新启动JEE部署的sling属性。 等待已安装的捆绑包，位于 `http://<server name>:<port>/lc/system/console/bundles` 将状态显示为 **活动**.
+1. 安装从步骤3获得的`java.mail-1.5.jar`。 此步骤将重新启动JEE部署的sling属性。 等待`http://<server name>:<port>/lc/system/console/bundles`处安装的包将状态显示为&#x200B;**活动**。
 
-   >如果状态仍为 **处于活动状态**，重新启动   **JBoss®** 从 **服务控制台**.
+   >如果状态仍为&#x200B;**InActive**，请重新启动   从&#x200B;**服务控制台**&#x200B;中的&#x200B;**JBoss®**。
 
 
-1. 安装 `javax.mail-1.5.6.redhat-1.jar`使用步骤5下载的文件。
+1. 安装使用步骤5下载的`javax.mail-1.5.6.redhat-1.jar`文件。
 
-1. 停止 **JBoss®** 从 **服务控制台** 并将以下属性附加到 **Sling.properties** 文件：
+1. 从&#x200B;**服务控制台**&#x200B;停止&#x200B;**JBoss®**，并将以下属性附加到&#x200B;**Sling.properties**&#x200B;文件：
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`
    * `sling.bootdelegation.activation=javax.activation.*`
 
-1. 重新启动 **JBoss®**.
+1. 重新启动&#x200B;**JBoss®**。
 
 >[!NOTE]
 >

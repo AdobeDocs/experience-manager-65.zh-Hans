@@ -35,7 +35,7 @@ ht-degree: 4%
 
 在创作环境中，导航到徽章控制台：
 
-* 从全局导航： **[!UICONTROL 工具]** > **[!UICONTROL Communities]** > **[!UICONTROL 徽章]**
+* 从全局导航： **[!UICONTROL 工具]** > **[!UICONTROL 社区]** > **[!UICONTROL 徽章]**
 
 此控制台显示当前可用的徽章，并可从中添加新徽章。
 
@@ -43,30 +43,30 @@ ht-degree: 4%
 
 ## 创建徽章 {#create-badge}
 
-通过上载适当小图像（高度为26-32像素的72 dpi）并提供名称来创建徽章。 徽章图像存储在存储库中的 `/libs/settings/community/badging/images` 和会自动复制到发布环境。
+通过上载适当小图像（高度为26-32像素的72 dpi）并提供名称来创建徽章。 徽章图像存储在`/libs/settings/community/badging/images`的存储库中，并自动复制到发布环境。
 
-如果发布环境是发布者场，则需要配置 [用户同步](/help/communities/sync.md).
+如果发布环境是发布服务器场，则需要配置[用户同步](/help/communities/sync.md)。
 
-![create-badge](assets/create-badge.png)
+![创建徽章](assets/create-badge.png)
 
 * **上传图像**
 
-  (*必填*)以JPEG或PNG格式表示的徽章图像，建议大小为32 x 32像素(72 dpi)。
+  （*必需*）徽章图像，建议大小为32 x 32像素，以72 dpi为JPEG或PNG格式。
 
 * **名称**
 
-  (*必填*)徽章名称。 这是默认设置 `Display Name` 以及存储库节点名称。 如果 `Name` 不是有效的存储库节点名称，已被修改。
+  （*必需*）徽章名称。 它是默认`Display Name`和存储库节点名称。 如果`Name`不是有效的存储库节点名称，则会修改它。
 
 * **显示名称**
 
-  (*可选*)用户界面中徽章显示的名称。 默认值为为输入的未更改文本 `Name`.
+  （*可选*）用户界面中为徽章显示的名称。 默认值是为`Name`输入的未更改文本。
 
 * **描述**
 
-  (*可选*)徽章的描述。
+  （*可选*）徽章的说明。
 
 ## 附加信息 {#additional-information}
 
-有关设置评分和徽章规则的详细信息，请参阅 [评分和徽章](/help/communities/implementing-scoring.md).
+有关设置评分和徽章规则的详细信息，请参阅[评分和徽章](/help/communities/implementing-scoring.md)。
 
-有关管理成员的徽章，请参阅 [成员控制台](/help/communities/members.md).
+有关管理成员的徽章，请参阅[成员控制台](/help/communities/members.md)。

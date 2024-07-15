@@ -54,41 +54,41 @@ AEM中的许多性能度量（如查询响应时间）都可能会受系统上�
 
 #### 测试工具 {#testing-tools}
 
-* Adobe **艰难的一天** 工具可用于在AEM实例上生成负载并收集性能数据。 Adobe的AEM工程团队实际上使用该工具来对AEM产品本身进行负载测试。 在“困难日”中执行的脚本通过属性文件和JMX XML文件进行配置。 欲了解更多信息，请参见 [Touch Day文档](/help/sites-developing/tough-day.md).
+* Adobe的&#x200B;**困难日**&#x200B;工具可用于在AEM实例上生成负载并收集性能数据。 Adobe的AEM工程团队实际上使用该工具来对AEM产品本身进行负载测试。 在“困难日”中执行的脚本通过属性文件和JMX XML文件进行配置。 有关详细信息，请参阅[工作日文档](/help/sites-developing/tough-day.md)。
 
-* AEM提供了开箱即用的工具，用于快速查看有问题的查询、请求和错误消息。 欲了解更多信息，请参见 [诊断工具](/help/sites-administering/operations-dashboard.md#diagnosis-tools) 部分。
-* Apache提供了一个名为的产品 **JMet** 可用于性能和负载测试，以及功能行为。 它是一款开源软件，可以免费使用，但功能集比企业产品更小，学习曲线也更陡峭。 您可以在Apache网站上找到JMeter，网址为 [https://jmeter.apache.org/](https://jmeter.apache.org/)
+* AEM提供了开箱即用的工具，用于快速查看有问题的查询、请求和错误消息。 有关详细信息，请参阅操作仪表板文档的[诊断工具](/help/sites-administering/operations-dashboard.md#diagnosis-tools)部分。
+* Apache提供了一个名为&#x200B;**JMeter**&#x200B;的产品，该产品可用于性能和负载测试以及功能行为。 它是一款开源软件，可以免费使用，但功能集比企业产品更小，学习曲线也更陡峭。 可在Apache网站上找到JMeter，网址为[https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **加载运行程序** 是企业级负载测试产品。 提供了免费的评估版。 欲知更多信息，请访问 [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
+* **Load Runner**&#x200B;是企业级负载测试产品。 提供了免费的评估版。 有关详细信息，请访问[https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
-* 网站负载测试工具，如 [韦尔卡拉](https://vercara.com/website-performance-management) 也可以使用。
+* 也可以使用[Vercara](https://vercara.com/website-performance-management)等网站负载测试工具。
 * 测试移动或响应式网站时，必须使用一组单独的工具。 它们通过调节网络带宽来工作，模拟速度较慢的移动连接，如3G或EDGE。 使用范围更广的工具包括：
 
-   * **[网络链路调节器](https://nshipster.com/network-link-conditioner/)**  — 它提供了易于使用的UI，并且在网络栈栈上以相当低的级别工作。 它包括OS X和iOS的版本；
-   * [**Charles**](https://www.charlesproxy.com/)  — 一个Web调试代理应用程序，除了若干其他用途外，还提供网络调节。 为Windows、OS X和Linux®提供了版本。
+   * **[网络链接调节器](https://nshipster.com/network-link-conditioner/)** — 它提供了易于使用的UI，并且在网络栈栈上以相当低的级别工作。 它包括OS X和iOS的版本；
+   * [**Charles**](https://www.charlesproxy.com/) - Web调试代理应用程序，除了多种其他用途之外，还提供网络调节。 为Windows、OS X和Linux®提供了版本。
 
 #### 优化工具 {#optimization-tools}
 
-**监控**
+**正在监视**
 
-此 [监控性能](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) 文档是有关工具和方法的有用资源，可用于诊断问题并查明需要调整的区域。
+[监控性能](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)文档是可用于诊断问题并查明要调整的区域的工具和方法的有用资源。
 
-**触屏UI中的开发人员模式**
+触屏UI中的&#x200B;**开发人员模式**
 
-AEM 6触控UI中的一项新增功能是开发人员模式。 就像作者可以在编辑和预览模式之间切换一样，开发人员也可以在作者UI中切换到开发人员模式。 这样，您就可以查看页面上每个组件的渲染时间，并查看任何错误的栈栈跟踪。 有关开发人员模式的更多信息，请参阅此 [CQ Gems演示](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html).
+AEM 6触控UI中的一项新增功能是开发人员模式。 就像作者可以在编辑和预览模式之间切换一样，开发人员也可以在作者UI中切换到开发人员模式。 这样，您就可以查看页面上每个组件的渲染时间，并查看任何错误的栈栈跟踪。 有关开发人员模式的详细信息，请参阅此[CQ Gems演示](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)。
 
 **使用rlog.jar读取请求日志**
 
-要更全面地分析AEM系统上的请求日志， `rlog.jar` 可用于搜索和排序 `request.log` AEM生成的文件。 此jar文件包含在中的AEM安装 `/crx-quickstart/opt/helpers` 文件夹。 有关rlog工具和请求登录常规的详细信息，请参阅 [监控和维护](/help/sites-deploying/monitoring-and-maintaining.md) 文档。
+为了更全面地分析AEM系统上的请求日志，`rlog.jar`可用于对AEM生成的`request.log`文件进行搜索和排序。 此jar文件包含在`/crx-quickstart/opt/helpers`文件夹中的AEM安装中。 有关rlog工具和请求登录常规的详细信息，请参阅[监视和维护](/help/sites-deploying/monitoring-and-maintaining.md)文档。
 
-**Explain查询工具**
+**解释查询工具**
 
-此 [说明查询工具](/help/sites-administering/operations-dashboard.md#explain-query) 在ACS中，AEM工具可用于查看运行查询时使用的索引。 此工具在优化运行缓慢的查询时很有用。
+ACS AEM工具中的[Explain查询工具](/help/sites-administering/operations-dashboard.md#explain-query)可用于查看运行查询时使用的索引。 此工具在优化运行缓慢的查询时很有用。
 
-**PageSpeed Tools**
+**PageSpeed工具**
 
-Google的PageSpeed工具提供网站分析，以遵守页面性能最佳实践，并提供可与Apache实例上的Dispatcher一起安装的插件，以进行其他优化。
-请参阅 [PageSpeed Tools网站](https://developers.google.com/speed).
+Google的PageSpeed工具提供了网站分析功能，用于确保对页面性能最佳实践的遵守情况，以及可在Apache实例上与Dispatcher一起安装的插件，用于进行其他优化。
+请参阅[PageSpeed Tools网站](https://developers.google.com/speed)。
 
 ## 创作环境 {#author-environment}
 
@@ -98,29 +98,29 @@ Google的PageSpeed工具提供网站分析，以遵守页面性能最佳实践�
 
 有许多可用于性能和负载测试的自动化框架。 自定义脚本可以记录在这些工具中，然后回放以模拟同时执行类似内容创建和激活活动的作者数量峰值。 建议您使用“Touch Day”工具来模拟上传数千个资产或激活大量页面等活动。
 
-对于需要大量资产加载或页面创作的环境类型，必须使用“Touch Day”等工具。 这样做可确保环境在峰值负载下高效运行。 [WebDAV](/help/sites-administering/webdav-access.md) 是一种不需要编写脚本的工具，也可用于加载大量资产。
+对于需要大量资产加载或页面创作的环境类型，必须使用“Touch Day”等工具。 这样做可确保环境在峰值负载下高效运行。 [WebDAV](/help/sites-administering/webdav-access.md)是一种不需要编写脚本的工具，也可以用来加载大量资源。
 
 #### MongoDB特定步骤 {#mongodb-specific-steps}
 
-在具有MongoDB后端的系统上，AEM提供了多个 [JMX](/help/sites-administering/jmx-console.md) 执行负载或性能测试时必须监视的MBean：
+在具有MongoDB后端的系统上，AEM提供了多个[JMX](/help/sites-administering/jmx-console.md) MBean，在执行负载或性能测试时必须监视它们：
 
-* 此 **已整合的缓存统计数据** MBean。 可以通过以下位置直接访问它：
+* **统一缓存统计信息** MBean。 可以通过以下位置直接访问它：
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-对于命名的缓存 **Document-Diff**，则命中率应大于 `.90`. 如果点击率降至90%以下，您可能需要编辑 `DocumentNodeStoreService` 配置。 Adobe产品支持可为您的环境推荐最佳设置。
+对于名为&#x200B;**Document-Diff**&#x200B;的缓存，命中率应超过`.90`。 如果点击率低于90%，则可能必须编辑`DocumentNodeStoreService`配置。 Adobe产品支持可为您的环境推荐最佳设置。
 
-* 此 **Oak存储库统计数据** Mbean。 可以通过以下位置直接访问它：
+* **Oak存储库统计信息** Mbean。 可以通过以下位置直接访问它：
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-此 **ObservationqueueMaxLength** 部分显示Oak的观察队列中在过去小时、分钟、秒和周内的事件数。 在“每小时”部分中查找事件的最大数量。 将此数字与 `oak.observation.queue-length` 设置。 如果为观察队列显示的最大数量超过 `queue-length` 设置：
+**ObservationQueueMaxLength**&#x200B;部分显示Oak的观察队列中过去小时、分钟、秒和周内的事件数。 在“每小时”部分中查找事件的最大数量。 将此数字与`oak.observation.queue-length`设置进行比较。 如果为观察队列显示的最大数量超过`queue-length`设置：
 
-1. 创建名为的文件： `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg` 包含参数 `oak.observation.queue‐length=50000`
+1. 创建名为`com.adobe.granite.repository.impl.SlingRepositoryManager.cfg`的文件，该文件包含参数`oak.observation.queue‐length=50000`
 1. 将其放在/crx-quickstart/install文件夹下。
 
 >[!NOTE]
->请参阅 [AEM 6.x | 性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>请参阅[AEM 6.x | 性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 默认设置为10,000，但大多数部署都必须将其增加到20,000或50,000。
 
@@ -136,23 +136,23 @@ Google的PageSpeed工具提供网站分析，以遵守页面性能最佳实践�
 
 在不要求高级别个性化的系统上，Dispatcher应缓存大多数请求。 因此，发布实例上的负载应保持相对平坦。 如果需要高级别的个性化，则建议对个性化内容使用iFrame或AJAX请求等技术，以尽可能多地允许Dispatcher缓存。
 
-对于基本测试，Apache Bench可用于测量Web服务器的响应时间，并帮助创建负载以测量内存泄漏等情况。 请参阅以下示例中的 [监控文档](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
+对于基本测试，Apache Bench可用于测量Web服务器的响应时间，并帮助创建负载以测量内存泄漏等情况。 请参阅[监控文档](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench)中的示例。
 
 ## 性能问题疑难解答 {#troubleshooting-performance-issues}
 
 在创作实例上运行性能测试后，必须调查、诊断和解决任何问题。 在执行分析和解决问题时，您可以使用多种工具和技术：
 
-* 您可以检查 [请求性能日志](/help/sites-administering/operations-dashboard.md#request-performance) 操作功能板中的。 此工具可用于识别较慢的页面请求
-* 使用分析运行缓慢的查询 [查询性能工具](/help/sites-administering/operations-dashboard.md#query-performance)
+* 您可以在操作功能板中检查[请求性能日志](/help/sites-administering/operations-dashboard.md#request-performance)。 此工具可用于识别较慢的页面请求
+* 使用[查询性能工具](/help/sites-administering/operations-dashboard.md#query-performance)分析运行缓慢的查询
 
-* 观察错误日志中是否有错误或警告。 有关更多信息，请参阅 [记录](/help/sites-deploying/configure-logging.md).
+* 观察错误日志中是否有错误或警告。 有关详细信息，请参阅[日志记录](/help/sites-deploying/configure-logging.md)。
 * 监视系统硬件资源，如内存和CPU利用率、磁盘I/O或网络I/O。这些资源通常是造成性能瓶颈的原因。
 * 优化页面的架构以及如何寻址页面，以最大限度地减少URL参数的使用，从而尽可能多地允许缓存。
-* 请遵循 [性能优化](/help/sites-deploying/configuring-performance.md) 和 [性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html) 文档。
+* 遵循[性能优化](/help/sites-deploying/configuring-performance.md)和[性能优化提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)文档。
 
 * 如果在创作实例上编辑某些页面或组件时出现问题，请使用TouchUI开发人员模式检查有问题的页面。 这样做可划分页面上的每个内容区域及其加载时间。
-* 缩小网站上的所有JS和CSS。 查看此 [博客帖子](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
+* 缩小网站上的所有JS和CSS。 查看此[博客帖子](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)。
 * 从组件中消除嵌入的CSS和JS。 它们应当包含在客户端库中并对其进行缩小，以最大限度地减少呈现页面所需的请求数。
-* 要检查服务器请求并查看哪些请求占用的时间最长，请使用Chrome的“网络”选项卡等浏览器工具。
+* 要检查服务器请求并查看哪些请求花费的时间最长，请使用Chrome的“网络”选项卡等浏览器工具。
 
 一旦识别出问题区域，就可以检查应用程序代码以优化性能。 任何无法正常执行的现成AEM功能都可以通过Adobe支持来解决。

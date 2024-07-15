@@ -19,11 +19,11 @@ ht-degree: 6%
 
 # 配置搜索表单{#configuring-search-forms}
 
-使用 **搜索Forms** 自定义在创作环境的各种AEM控制台和/或面板中提供的搜索面板中使用的搜索谓词选择。 自定义这些面板可根据您的特定需求使搜索功能通用。
+使用&#x200B;**搜索Forms**&#x200B;可以自定义搜索面板中使用的搜索谓词选择，这些面板可在各种AEM控制台和/或创作环境的面板中使用。 自定义这些面板可根据您的特定需求使搜索功能通用。
 
-A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加多个谓词，其中包括“属性”谓词，以搜索与您指定的单个属性匹配的资产。 或者，使用“选项”谓词来搜索与您为特定属性指定的一个或多个值匹配的资产。
+[范围的谓词](#predicates-and-their-settings)现成可用。 您可以添加多个谓词，其中包括“属性”谓词，以搜索与您指定的单个属性匹配的资产。 或者，使用“选项”谓词来搜索与您为特定属性指定的一个或多个值匹配的资产。
 
-您可以 [配置搜索表单](#configuring-your-search-forms) 用于各种控制台和资产浏览器（编辑页面时）。 此 [用于配置这些表单的对话框](#configuring-your-search-forms) 可以通过以下方式访问：
+您可以[配置在各种控制台和资产浏览器（编辑页面时）中使用的搜索表单](#configuring-your-search-forms)。 可通过以下方式访问用于配置这些表单](#configuring-your-search-forms)的[对话框：
 
 * **工具**
 
@@ -31,7 +31,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
       * **搜索Forms**
 
-首次访问此控制台时，您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置 — 无法删除。 自定义配置后，锁定将消失，除非您 [删除自定义配置](#deleting-a-configuration-to-reinstate-the-default). 在这种情况下，将恢复缺省值（和挂锁指示器）。
+首次访问此控制台时，您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置 — 无法删除。 自定义配置后，锁定将消失，除非您[删除自定义配置](#deleting-a-configuration-to-reinstate-the-default)。 在这种情况下，将恢复缺省值（和挂锁指示器）。
 
 ![搜索表单窗口](assets/chlimage_1-374.png)
 
@@ -63,7 +63,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
   此配置定义在资产浏览器中搜索产品时（编辑页面时）可用的选项。
 
-* **页面编辑器(Dynamic Media Classic) [以前称为Scene7] search)**：
+* **页面编辑器(Dynamic Media Classic [以前为Scene7]搜索)**：
 
   此配置定义在资源浏览器中搜索Scene7资源（编辑页面时）时可用的选项。
 
@@ -75,7 +75,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
   此配置定义在资产浏览器中搜索视频时（编辑页面时）可用的选项。
 
-* **资产管理搜索边栏：**
+* **Assets管理员搜索边栏：**
 
   此配置定义用户在使用Assets控制台时可用的搜索选项。
 
@@ -123,7 +123,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
   </tr>
   <tr>
    <td>上次修改的资源 </td>
-   <td>上次修改资源的日期。<br /> </td>
+   <td>上次修改资产的日期。<br /> </td>
    <td>自定义谓词，基于日期谓词。</td>
   </tr>
   <tr>
@@ -194,7 +194,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
   </tr>
   <tr>
    <td>选项 </td>
-   <td><p>选项是由用户创建的内容节点。</p> <p>请参阅 <a href="#addinganoptionspredicate">添加选项谓词</a> 以了解更多信息。</p> </td>
+   <td><p>选项是由用户创建的内容节点。</p> <p>有关详细信息，请参阅<a href="#addinganoptionspredicate">添加选项谓词</a>。</p> </td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -244,7 +244,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
    <td>无</td>
   </tr>
   <tr>
-   <td>发布状态 </td>
+   <td>Publish状态 </td>
    <td>根据资产的发布状态搜索资产</td>
    <td>
     <ul>
@@ -265,7 +265,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
   </tr>
   <tr>
    <td>范围选项 </td>
-   <td>资产的特定搜索谓词，与常见的滑块谓词相同。 由于向后兼容问题，仍然可用。</td>
+   <td>Assets的特定搜索谓词，与常用滑块谓词相同。 由于向后兼容问题，仍然可用。</td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -287,7 +287,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
   </tr>
   <tr>
    <td>相对日期 </td>
-   <td>根据资产的相对创建日期搜索资产<br /> </td>
+   <td>根据资产的创建相对日期搜索资产<br /> </td>
    <td>
     <ul>
      <li>字段标签</li>
@@ -339,7 +339,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * 这些功能已弃用，仅可用于向后兼容。
 >
->此信息仅供参考。 请勿更改 `/libs`.
+>此信息仅供参考。 不更改`/libs`。
 
 ### 谓词设置 {#predicate-settings}
 
@@ -359,9 +359,9 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
 * **属性名称**
 
-  要搜索的属性。 它使用相对路径和通配符 `*/*/*` 指定相对于的属性深度 `jcr:content` 节点（每个星号代表一个节点级别）。
+  要搜索的属性。 它使用相对路径，通配符`*/*/*`指定相对于`jcr:content`节点的属性深度（每个星号表示一个节点级别）。
 
-  如果只想在具有 `x` 上的属性 `jcr:content` 节点使用 `*/jcr:content/x`
+  如果只想在`jcr:content`节点上具有`x`属性的资源的第一级子节点上搜索，请使用`*/jcr:content/x`
 
 * **属性深度**
 
@@ -369,43 +369,43 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
 * **属性值**
 
-  作为绝对字符串或表达式语言的属性值；例如， `cq:Page` 或
+  作为绝对字符串或表达式语言的属性值；例如，`cq:Page`或
 
   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`。
 
 * **范围文本**
 
-  中范围字段的标签 **日期范围** 谓词。
+  **日期范围**&#x200B;谓词中范围字段的标签。
 
 * **选项路径**
 
-  用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择后 **+**，图标用于将所选内容添加到有效选项列表中(然后 **-** 图标以删除)。
+  用户可以使用谓词设置选项卡中的路径浏览器选择路径。 选择&#x200B;**+**&#x200B;后，使用图标将所选内容添加到有效选项列表中（如有必要，则使用&#x200B;**-**&#x200B;图标删除）。
 
   这些选项是由用户创建的内容节点，具有以下结构：
 
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **选项节点路径**
-实际上与 **选项路径**，只有公用谓词字段中有此变量，其他变量专用于资产。
+与**选项路径**&#x200B;几乎相同，只是该路径位于公共谓词字段中，其他路径专用于资产。
 
 * **单选**
 如果选中，这些选项将呈现为仅允许单个选择的复选框。 如果错误地选中此复选框，则可取消选中此复选框。
 
-* **发布和Live Copy属性名称**
+* **Publish和Live Copy属性名称**
 站点特定谓词的发布和Live Copy复选框的标签。
 
-* 中的字段标签上的&amp;ast； **设置** 制表符表示必填字段，如果留空，将显示错误消息。
+* **设置**&#x200B;选项卡中的字段标签上的&amp;amp；ast；表示这些字段是必填字段，如果保留为空，则会显示错误消息。
 
 ## 配置搜索Forms {#configuring-your-search-forms}
 
 ### 创建/打开自定义配置 {#creating-opening-a-customized-configuration}
 
-1. 导航到 **工具** >>  **常规** >> **搜索Forms**.
+1. 导航到&#x200B;**工具** >> **常规** >> **搜索Forms**。
 
 1. 选择要自定义的配置。
-1. 使用 **编辑** 图标以打开配置以进行更新。
-1. 如果进行了新的自定义，则您可能希望 [添加新谓词字段并定义设置](#add-edit-a-predicate-field-and-define-field-settings) 根据需要。 如果存在自定义项，则可以选择现有字段并 [更新设置](#add-edit-a-predicate-field-and-define-field-settings).
-1. 选择 **完成** 以保存配置。
+1. 使用&#x200B;**编辑**&#x200B;图标打开配置以进行更新。
+1. 如果进行了新的自定义，则可能需要[添加新的谓词字段并根据需要定义设置](#add-edit-a-predicate-field-and-define-field-settings)。 如果存在自定义设置，则可以选择现有字段并[更新设置](#add-edit-a-predicate-field-and-define-field-settings)。
+1. 选择&#x200B;**完成**&#x200B;以保存配置。
 
    >[!NOTE]
    >
@@ -418,8 +418,8 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
 您可以添加或编辑字段并定义/更新其设置：
 
-1. [打开自定义配置](#creating-opening-a-customized-configuration) 以进行更新。
-1. 如果要添加字段，请打开 **选择谓词** 制表符并将所需的谓词拖到所需的位置。 例如， **日期范围谓词**：
+1. [打开自定义配置](#creating-opening-a-customized-configuration)以进行更新。
+1. 如果要添加字段，请打开&#x200B;**选择谓词**&#x200B;选项卡，并将所需的谓词拖到所需位置。 例如，**日期范围谓词**：
 
    ![编辑搜索表单](assets/chlimage_1-375.png)
 
@@ -427,17 +427,17 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
    * 您正在添加一个字段：
 
-     添加谓词后， **设置** 选项卡将打开并显示可以定义的属性。
+     添加谓词后，**设置**&#x200B;选项卡打开，并显示可定义的属性。
 
    * 要更新现有的谓词：
 
-     选择谓词字段（位于右侧），然后打开 **设置** 选项卡。
+     选择谓词字段（位于右侧），然后打开&#x200B;**设置**&#x200B;选项卡。
 
-   例如， **日期范围谓词**：
+   例如，**日期范围谓词**&#x200B;的设置：
 
-   ![日期范围谓词的属性](assets/chlimage_1-376.png)
+   日期范围谓词](assets/chlimage_1-376.png)的![属性
 
-1. 根据需要进行更改并通过进行确认 **完成**.
+1. 根据需要进行更改，并通过&#x200B;**完成**&#x200B;确认。
 
 ### 预览搜索配置 {#previewing-the-search-configuration}
 
@@ -449,18 +449,18 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
    ![预览搜索表单](assets/chlimage_1-377.png)
 
-1. **关闭** 预览，以便您能够返回并完成配置。
+1. **关闭**&#x200B;预览，以便返回并完成配置。
 
 ### 删除谓词字段 {#deleting-a-predicate-field}
 
-1. [打开自定义配置](#creating-opening-a-customized-configuration) 以进行更新。
-1. 选择谓词字段（位于右侧），打开 **设置** 选项卡，然后选择 **删除** 图标（左下方）。
+1. [打开自定义配置](#creating-opening-a-customized-configuration)以进行更新。
+1. 选择谓词字段（位于右侧），打开&#x200B;**设置**&#x200B;选项卡，然后选择&#x200B;**删除**&#x200B;图标（左下方）。
 
    ![“删除”图标](do-not-localize/chlimage_1-32.png)
 
 1. 此时将显示一个对话框，要求确认删除操作。
 
-1. 通过确认此更改和任何其他更改 **完成**.
+1. 使用&#x200B;**完成**&#x200B;确认此更改和任何其他更改。
 
 ### 删除配置（恢复默认设置） {#deleting-a-configuration-to-reinstate-the-default}
 
@@ -472,7 +472,7 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
 从控制台中删除自定义配置已完成：
 
-1. 选择所需的配置(例如， **页面编辑器（段落搜索）**)，然后 **删除** 工具栏中的图标：
+1. 选择所需的配置(例如，**页面编辑器（段落搜索）**)，然后在工具栏中选择&#x200B;**删除**&#x200B;图标：
 
    ![删除表单](assets/chlimage_1-378.png)
 
@@ -490,28 +490,28 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
    单个选项的节点需要以下属性：
 
-   * `jcr:title`  — 要在搜索边栏中显示的字段标签
-   * `value`  — 要搜索的属性值
+   * `jcr:title` — 要在搜索边栏中显示的字段标签
+   * `value` — 要搜索的属性值
 
    ![在CRXDE中添加选项](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
-   >Do ***非*** 更改 `/libs` 路径。
+   >执行&#x200B;***不***&#x200B;更改`/libs`路径中的任何内容。
    >
-   >这是因为 `/libs` 下次升级实例时将被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
+   >这是因为下次升级实例时`/libs`的内容会被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
    >
    >建议用于配置和其他更改的方法是：
    >
-   >1. 重新创建所需的项目，因为它存在于中 `/libs`，下 `/apps`. 在本例中，来自：
+   >1. 在`/apps`下重新创建所需项，因为它存在于`/libs`中。 在本例中，来自：
    >1. `/libs/cq/gui/content/common/options/predicates`
-   >1. 在中进行任何更改 `/apps.`
+   >1. 在`/apps.`中进行任何更改
 
-1. 打开 **搜索Forms** 控制台并选择要更新的配置。 例如， **站点管理员搜索边栏**.
+1. 打开&#x200B;**搜索Forms**&#x200B;控制台，然后选择要更新的配置。 例如，**站点管理员搜索边栏**。
 
-   然后单击 **编辑搜索表单** 图标。
+   然后单击&#x200B;**编辑搜索表单**&#x200B;图标。
 
-1. 根据配置，添加 **选项** 或 **Options属性** 到配置。
+1. 根据配置，将&#x200B;**Options**&#x200B;或&#x200B;**Options属性**&#x200B;添加到配置中。
 1. 更新这些字段，特别是：
 
    * **属性名称**
@@ -526,10 +526,10 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
 
      `/apps/cq/gui/content/common/options/predicates/templatetype`
 
-   ![添加属性路径](assets/chlimage_1-380.png)
+   ![正在添加属性路径](assets/chlimage_1-380.png)
 
-1. 选择 **完成** 以保存您的配置。
-1. 导航到相应的控制台(在本例中， **站点**)并打开 **Search** 边栏。 新定义的搜索表单以及各种选项均可见。 选择所需的选项，以便查看搜索结果：
+1. 选择&#x200B;**完成**&#x200B;以保存您的配置。
+1. 导航到相应的控制台（在此示例中为&#x200B;**站点**）并打开&#x200B;**搜索**&#x200B;边栏。 新定义的搜索表单以及各种选项均可见。 选择所需的选项，以便查看搜索结果：
 
    ![最终结果](assets/chlimage_1-381.png)
 
@@ -545,15 +545,15 @@ A [谓词范围](#predicates-and-their-settings)s现成可用。 您可以添加
   </tr>
   <tr>
    <td>编辑 </td>
-   <td>对的读、写权限 <code>/apps </code>节点。</td>
+   <td><code>/apps </code>节点的读、写权限。</td>
   </tr>
   <tr>
    <td>删除</td>
-   <td>对的读、写、删除权限 <code>/apps</code> 节点</td>
+   <td><code>/apps</code>节点的读取、写入和删除权限</td>
   </tr>
   <tr>
    <td>预览</td>
-   <td>对的读、写、删除权限 <code>/var/dam/content</code> 节点。<br /> 对的读、写权限 <code>/apps</code> 节点。</td>
+   <td><code>/var/dam/content</code>节点的读取、写入和删除权限。<code>/apps</code>节点上的<br />读、写权限。</td>
   </tr>
  </tbody>
 </table>

@@ -24,13 +24,13 @@ ht-degree: 0%
 
 * 先有数据，后有结构。 也许吧。
 * 推动内容层次结构，不要让它发生。
-* 工作区用于 `clone()`， `merge()`、和 `update()`.
+* 工作区用于`clone()`、`merge()`和`update()`。
 * 注意同名同胞。
 * 引用内容被视为有害。
 * 文件就是文件。
 * 身份识别是邪恶的。
 
-大卫的模特可以在Jackrabbit维基百科上找到，网址为 [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+David模型可在Jackrabbit维基百科上找到，网址为[https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel)。
 
 ### 一切都是内容 {#everything-is-content}
 

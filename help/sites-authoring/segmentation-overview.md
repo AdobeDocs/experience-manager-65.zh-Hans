@@ -32,7 +32,7 @@ ht-degree: 42%
 
 ## 使用分段 {#using-segmentation}
 
-区段定义于 [配置分段](/help/sites-administering/campaign-segmentation.md). 它们用于控制特定目标受众看到的实际内容。
+区段是在[配置分段](/help/sites-administering/campaign-segmentation.md)中定义的。 它们用于控制特定目标受众看到的实际内容。
 
 ## 分段术语 {#segmentation-terminology}
 
@@ -62,9 +62,9 @@ ht-degree: 42%
 * 性别
 * 位置
 
-**派生的特征**  — 在未注册的情况下，某些人口统计特征很难确定，但可以通过组合行为和人口统计特征来推断。
+**派生特征** — 某些人口统计特征在未注册的情况下很难确定，但可以通过组合行为和人口统计特征来派生。
 
-例如，将反向链接URL（作为行为特征）与人口统计数据（从以下工具获取）组合 [Google Ad Planner](https://www.google.com/adplanner/))允许站点所有者推导其访客的人口统计特征。
+例如，通过将引用URL（作为行为特征）与人口统计数据(通过诸如[Google Ad Planner](https://www.google.com/adplanner/)之类的工具获取)相结合，网站所有者可以推断其访客的人口统计特征。
 
 **子区段** – 一个区段可以划分为若干个子区段。 这可以通过定义其他特征来完成。
 
@@ -78,4 +78,4 @@ ht-degree: 42%
 
 >[!NOTE]
 >
->请参阅 [分段](/help/sites-administering/campaign-segmentation.md) 有关Adobe Experience Manager中的区段的更多信息，
+>有关Adobe Experience Manager中的区段的详细信息，请参阅[分段](/help/sites-administering/campaign-segmentation.md)。

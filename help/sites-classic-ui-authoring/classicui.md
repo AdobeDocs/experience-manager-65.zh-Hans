@@ -22,7 +22,7 @@ ht-degree: 0%
 
 经典UI是自CQ5(AEM的前身)以来提供的面向桌面的用户界面。 以下有关创作的文档侧重于此UI。
 
-触屏优化UI是适用于AEM的新标准用户界面，专为触摸和桌面设备而设计。 请参阅 [标准创作文档](/help/sites-authoring/author.md) 以了解更多信息。
+触屏优化UI是适用于AEM的新标准用户界面，专为触摸和桌面设备而设计。 有关详细信息，请参阅[标准创作文档](/help/sites-authoring/author.md)。
 
 >[!NOTE]
 >
@@ -30,4 +30,4 @@ ht-degree: 0%
 
 ## 创作（和发布）概念 {#concept-of-authoring-and-publishing}
 
-无论UI如何选择，创作都会用到某些概念和想法，这些概念和想法都得到了很好的描述 [请参阅标准创作文档](/help/sites-authoring/author.md#concept-of-authoring-and-publishing).
+无论UI如何选择，创作都有一些共同的概念和想法，标准创作文档](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)中的[对此进行了详尽描述。

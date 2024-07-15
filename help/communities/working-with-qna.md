@@ -34,21 +34,21 @@ ht-degree: 0%
 该文档描述了：
 
 * 将QnA论坛功能添加到AEM站点。
-* 的配置设置 `QnA`组件。
+* `QnA`组件的配置设置。
 
 ## 向页面添加Q&amp;A论坛 {#adding-a-q-a-forum-to-a-page}
 
-添加 `QnA` 组件到创作模式下的页面，请使用组件浏览器查找 `Communities / QnA` 并将其拖动到应显示QnA论坛的页面上。
+要在创作模式下将`QnA`组件添加到页面，请使用组件浏览器找到`Communities / QnA`，并将其拖动到应显示QnA论坛的页面上的适当位置。
 
-有关必要信息，请访问 [社区组件基础知识](/help/communities/basics.md).
+有关必要的信息，请访问[社区组件基础知识](/help/communities/basics.md)。
 
-当 [所需的客户端库](/help/communities/qna-essentials.md#essentials-for-client-side) 包括，这就是 `QnA` 组件出现：
+当包含[所需的客户端库](/help/communities/qna-essentials.md#essentials-for-client-side)时，`QnA`组件的显示方式如下：
 
-![问题与解答组件](assets/qna-component.png)
+![qna-component](assets/qna-component.png)
 
 ### 配置问题与解答 {#configuring-qna}
 
-选择已放置的 `QnA` 组件，以便您能够访问和选择 `Configure` 图标打开“编辑”对话框。
+选择放置的`QnA`组件，以便您可以访问并选择用于打开“编辑”对话框的`Configure`图标。
 
 ![配置](assets/configure-new.png)
 
@@ -56,17 +56,17 @@ ht-degree: 0%
 
 #### “设置”选项卡 {#settings-tab}
 
-在 **设置** 选项卡，指定主题（问题）和回复（回答）的设置：
+在&#x200B;**设置**&#x200B;选项卡下，指定主题（问题）和回复（回答）的设置：
 
 * **允许附件缩略图**
 
   如果选中，则会创建附加图像的缩略图。
 
-* **附加缩略图时的大小上限**
+* **附加缩略图大小上限**
 
   附件缩略图图像的最大尺寸（以像素为单位）。 默认值为800 x 800。
 
-* **缩略图的最小图像大小**
+* 缩略图的最小图像大小&#x200B;**分钟**
 
   用于为内嵌图像生成缩略图的图像最小尺寸（以字节为单位）。 默认值为100000字节(100 kb)。
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
   内嵌图像的缩略图图像的最大尺寸（以像素为单位）。 默认值为800 x 800。
 
-* **每页主题数**
+* 每页&#x200B;**个主题**
 
   定义每个页面显示的问题/帖子数。 默认值为10。
 
@@ -92,7 +92,7 @@ ht-degree: 0%
 
 * **允许标记**
 
-  如果选中，则允许成员向其帖子添加标记标签(请参阅 **标记字段** 选项卡)。 默认值为取消选中。
+  如果选中，则允许成员向其帖子添加标记标签（请参阅&#x200B;**标记字段**&#x200B;选项卡）。 默认值为取消选中。
 
 * **允许文件上传**
 
@@ -100,7 +100,7 @@ ht-degree: 0%
 
 * **允许关注**
 
-  如果选中，则为论坛帖子提供以下功能，允许成员成为 [已通知](/help/communities/notifications.md) 新职位。 默认值为取消选中。
+  如果选中，则为论坛帖子提供以下功能，此功能允许成员接收新帖子的[通知](/help/communities/notifications.md)。 默认值为取消选中。
 
 * **允许固定**
 
@@ -108,17 +108,17 @@ ht-degree: 0%
 
 * **允许电子邮件订阅**
 
-  如果选中，则允许成员通过电子邮件接收新帖子的通知([订阅](/help/communities/subscriptions.md))。 需要选中“允许关注”并 [已配置电子邮件](/help/communities/email.md). 默认值为取消选中。
+  如果选中，则允许成员通过电子邮件接收新帖子的通知（[订阅](/help/communities/subscriptions.md)）。 需要检查“允许关注”并配置[电子邮件](/help/communities/email.md)。 默认值为取消选中。
 
 * **最大文件大小**
 
-  相关条件仅限于 `Allow File Uploads` 已选中。 此字段限制已上传文件的大小（以字节为单位）。 默认值为104857600 (10 Mb)。
+  仅在选中`Allow File Uploads`时才相关。 此字段限制已上传文件的大小（以字节为单位）。 默认值为104857600 (10 Mb)。
 
 * **允许的文件类型**
 
-  相关条件仅限于 `Allow File Uploads` 已选中。 包含“点”分隔符的逗号分隔文件扩展名列表。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何文件类型，则无法上载未指定的文件类型。 默认值为无指定，以便 **所有** 允许文件类型。
+  仅在选中`Allow File Uploads`时才相关。 包含“点”分隔符的逗号分隔文件扩展名列表。 例如： .jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何文件类型，则无法上载未指定的文件类型。 默认值为无指定，因此允许使用&#x200B;**所有**&#x200B;文件类型。
 
-* **附加图像文件最大大小**
+* **附加图像文件大小上限**
 
   仅在选中允许文件上传时才相关。 上传的图像文件可以包含的最大字节数。 默认值为2097152 (2 Mb)。
 
@@ -147,11 +147,11 @@ ht-degree: 0%
   如果选中，则显示的第一个答案为已选答案。 默认值为取消选中。
 * **显示徽章**
 
-  如果选中，则显示已获得和已分配 [徽章](/help/communities/implementing-scoring.md) 使用成员的博客条目。 默认值为取消选中。
+  如果选中，则使用成员的博客条目显示已获得和分配的[徽章](/help/communities/implementing-scoring.md)。 默认值为取消选中。
 
-* **允许专题内容**
+* **允许精选内容**
 
-  如果选中，该创意可识别为 [专题内容](/help/communities/featured.md). 默认值为取消选中。
+  如果选中，该创意可标识为[精选内容](/help/communities/featured.md)。 默认值为取消选中。
 
 * **启用提及功能**
 
@@ -167,9 +167,9 @@ ht-degree: 0%
 
 #### “用户审核”选项卡 {#user-moderation-tab}
 
-在 **用户审核** 选项卡，指定如何管理发布的主题（问题）和答案（用户生成内容）。 有关更多信息，请参阅 [审核用户生成的内容](/help/communities/moderate-ugc.md).
+在&#x200B;**用户审核**&#x200B;选项卡下，指定如何管理发布的主题（问题）和答案（用户生成的内容）。 有关详细信息，请参阅[审核用户生成的内容](/help/communities/moderate-ugc.md)。
 
-* **拒绝答案**
+* **拒绝回答**
 
   如果选中，则允许受信任的成员版主拒绝已发布的答案，并阻止这些答案显示在公共问答论坛中。 默认值为取消选中。
 
@@ -188,7 +188,7 @@ ht-degree: 0%
 
   如果选中，则允许成员从下拉列表中选择将问题或答案标记为不适当的原因。 默认值为取消选中。
 
-* **自定义标志原因**
+* **自定义标记原因**
 
   如果选中，则允许成员输入将问题或答案标记为不适当的原因。 默认值为取消选中。
 
@@ -202,11 +202,11 @@ ht-degree: 0%
 
 #### “标记字段”选项卡 {#tag-field-tab}
 
-在 **标记字段** 选项卡中，可以应用的标记（如果下允许） **设置** 选项卡，将根据选择的命名空间进行限制。
+在&#x200B;**标记字段**&#x200B;选项卡下，可应用的标记（如果在&#x200B;**设置**&#x200B;选项卡下允许）将根据所选的命名空间而受限。
 
 * **允许的命名空间**
 
-  相关，如果 `Allow Tagging` 已检查 **设置** 选项卡。 可应用的标记仅限于所选命名空间类别中的标记。 命名空间列表包括“标准标记”（默认命名空间）和“包括所有标记”。 默认设置为“无”复选框，这意味着允许使用所有命名空间。
+  如果在&#x200B;**设置**&#x200B;选项卡下选中`Allow Tagging`，则相关。 可应用的标记仅限于所选命名空间类别中的标记。 命名空间列表包括“标准标记”（默认命名空间）和“包括所有标记”。 默认设置为“无”复选框，这意味着允许使用所有命名空间。
 
 * **建议限制**
 
@@ -214,29 +214,29 @@ ht-degree: 0%
 
 #### “排序设置”选项卡 {#sort-settings-tab}
 
-在 **排序设置** 选项卡，指定在显示时发布评论的排序方式。
+在&#x200B;**排序设置**&#x200B;选项卡下，指定在显示时如何对发布的评论进行排序。
 
 * **排序方式**
 
-  检查所有允许的排序选择： `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. 默认为 `Newest, Oldest, Last Updated`.
+  检查所有允许的排序选择： `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`。 默认值为`Newest, Oldest, Last Updated`。
 
 * **设置为默认值**
 
-  下拉以选择其中一个选中的排序选项以显示为默认选项。 默认为 `Newest`.
+  下拉以选择其中一个选中的排序选项以显示为默认选项。 默认值为`Newest`。
 
-* **选择分析排序的时间选项**
+* **选择Analytics排序的时间选项**
 
-  下拉以选择其中一项 `All, Last 24 Hours, Last 7 Days, Last 30 Days`. 默认为 `All`.
+  下拉以选择`All, Last 24 Hours, Last 7 Days, Last 30 Days`之一。 默认值为`All`。
 
 ## 网站访客体验 {#site-visitor-experience}
 
 ### 识别答案 {#identifying-answers}
 
-可以使用以下代码将一个答案标记为正确或有用的答案 `Select Answer` 按钮。 问题标记为“已回答”后，在取消选择第一个答案之前，不能选择其他答案 `Unmark Chosen Answer` 按钮。
+可以使用`Select Answer`按钮将一个答案标记为正确或有用的答案。 将问题标记为“已回答”后，只有在使用`Unmark Chosen Answer`按钮取消选择第一个答案后，才能选择其他答案。
 
-选作可行答案后，可使用 `Unmark Chosen Answer` 按钮。
+选作可行答案后，可使用`Unmark Chosen Answer`按钮取消选择该答案。
 
-一旦一个答案被选为可行的答案，就表明这个问题已经解决了 `Answered` 显示在主QnA页面上的问题主题旁边。
+选择某个答案作为可行答案后，将在主QnA页面上的问题主题旁边显示问题已`Answered`的指示。
 
 #### 审查方和管理员 {#moderators-and-administrators}
 
@@ -248,7 +248,7 @@ ht-degree: 0%
 
 在站点访客登录时，根据配置，他们可以：
 
-* 发布一个新问题。
+* Post的新问题。
 * 编辑或删除他们创作的问题。
 * 标记其他成员的问题或答案。
 * 找出他们所编写问题的答案。
@@ -259,8 +259,8 @@ ht-degree: 0%
 
 ## 附加信息 {#additional-information}
 
-欲知更多信息，请访问 [问题与解答要点](/help/communities/qna-essentials.md) 适用于开发人员的页面。
+可在[QnA Essentials](/help/communities/qna-essentials.md)页面上找到开发人员的详细信息。
 
-有关审核已发布的主题和评论，请参阅 [审核用户生成的内容](/help/communities/moderate-ugc.md).
+有关审核已发布的主题和评论，请参阅[审核用户生成的内容](/help/communities/moderate-ugc.md)。
 
-有关标记已发布的主题和评论，请参阅 [标记用户生成的内容](/help/communities/tag-ugc.md).
+有关标记已发布的主题和评论，请参阅[标记用户生成的内容](/help/communities/tag-ugc.md)。

@@ -24,22 +24,22 @@ ht-degree: 52%
 
 >[!NOTE]
 >
->要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。(请参阅 [为不同渠道创建Live Copy](/help/sites-administering/msm-livecopy.md).)
+>要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。（请参阅[为不同的渠道创建Live Copy](/help/sites-administering/msm-livecopy.md)。）
 >
->AEM 开发人员可以创建新设备组。(请参阅 [正在创建设备组筛选器。](/help/sites-developing/groupfilters.md))
+>AEM 开发人员可以创建新设备组。（请参阅[创建设备组筛选器。](/help/sites-developing/groupfilters.md)）
 
 请使用以下过程来创作移动页面：
 
-1. 在浏览器中，转到 **Siteadmin** 控制台。
-1. 打开 **产品** 页面如下 **网站** >> **GeometrixxMobile演示站点** >> **英语**.
+1. 在浏览器中，转到&#x200B;**Siteadmin**&#x200B;控制台。
+1. 打开&#x200B;**网站** >> **Geometrixx移动演示站点** >> **英语**&#x200B;下的&#x200B;**产品**&#x200B;页面。
 
 1. 切换到其他模拟器。 为此，您可以：
 
    * 单击页面顶部的设备图标。
-   * 单击 **编辑** 中的按钮 **Sidekick** ，然后在下拉菜单中选择设备。
+   * 单击&#x200B;**设备**&#x200B;中的&#x200B;**编辑** Sidekick，然后在下拉菜单中选择该设备。
 
-1. 拖放 **文本和图像** 组件从页面的“移动”选项卡移至Sidekick。
-1. 编辑组件并添加一些文本。 单击 **确定** 以保存更改。
+1. 将&#x200B;**文本和图像**&#x200B;组件从Sidekick的“移动设备”选项卡拖放到页面上。
+1. 编辑组件并添加一些文本。 单击&#x200B;**确定**&#x200B;以保存更改。
 
 该页面看起来与以下内容相同：
 

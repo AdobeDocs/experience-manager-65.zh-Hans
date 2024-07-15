@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # 使用API执行服务操作 {#performing-service-operations-using-apis}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
-在开始使用AEM Forms API开发客户端应用程序之前，Adobe建议您先阅读调用AEM Forms ，其中介绍了调用服务的各种方式。 (请参阅 [服务容器](/help/forms/developing/service-container.md#service-container).)
+在开始使用AEM Forms API开发客户端应用程序之前，Adobe建议您先阅读调用AEM Forms ，其中介绍了调用服务的各种方式。 （请参阅[服务容器](/help/forms/developing/service-container.md#service-container)。）
 
 熟悉不同的调用方法后，您可以了解如何以编程方式与每个服务交互。 您可以在AdobeFlex®生成器™、Java™开发环境中或诸如Microsoft® Visual Studio .NET之类的环境中开发客户端应用程序，该环境允许您使用公开的WSDL在本机SOAP栈栈上使用。
 

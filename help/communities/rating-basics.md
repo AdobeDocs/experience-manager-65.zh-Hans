@@ -18,9 +18,9 @@ ht-degree: 1%
 
 # Rating Essentials {#rating-essentials}
 
-评级组件a [总计](tally.md) 子类，允许登录的社区成员对网站上的功能进行评级。
+评级组件[总计](tally.md)子类允许登录的社区成员对网站上的功能进行评级。
 
-允许在同一页面上放置投票组件的多个实例；必须为每个实例配置一个唯一的 `tally name` 属性。
+允许将投票组件的多个实例放在同一页面上；必须为每个实例配置唯一的`tally name`属性。
 
 不支持匿名发布评级。 网站访客必须注册并登录才能参与评级一次。 登录的访客（会员）可随时更改其评级。
 
@@ -34,7 +34,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td> <a href="scf.md#add-or-include-a-communities-component"><strong>可包含</strong></a></td>
-   <td>是 — 属性可在以下位置编辑： <i>设计 </i>模式</td>
+   <td>是 — 可在<i>设计</i>模式下编辑属性</td>
   </tr>
   <tr>
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td>
@@ -50,7 +50,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>属性</strong></td>
-   <td><p>请参阅 <a href="rating.md">使用评级</a></p> </td>
+   <td><p>查看<a href="rating.md">使用评级</a></p> </td>
   </tr>
  </tbody>
 </table>
@@ -59,24 +59,24 @@ ht-degree: 1%
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [标签API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [计费API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [标签端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [计数的端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 
 ### 访问已发布的评级(UGC) {#accessing-posted-ratings-ugc}
 
 UGC应使用标准审核方法之一进行审核。
-请参阅 [审核用户生成的内容](moderate-ugc.md).
+请参阅[审核用户生成的内容](moderate-ugc.md)。
 
-自AEM 6.1 Communities起，使用 [公用存储](working-with-srp.md) for UGC包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）是什么。
+截至AEM 6.1 Communities，使用用于UGC的[公用存储](working-with-srp.md)包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）如何。
 
-**UGC在存储库中的位置和格式可能会发生更改，恕不发出警告**.
+**存储库中UGC的位置和格式可能会发生更改，而不会出现警告**。
 
 请参阅：
 
-* [存储资源提供程序概述](srp.md)  — 简介和存储库使用情况概述。
-* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例。
-* [使用SRP访问UGC](accessing-ugc-with-srp.md)  — 编码准则。
-* [SocialUtils重构](socialutils.md)  — 将已弃用的实用程序方法映射到当前SRP实用程序方法。
+* [存储资源提供程序概述](srp.md) — 简介和存储库使用情况概述。
+* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用工具方法和示例。
+* [使用SRP访问UGC](accessing-ugc-with-srp.md) — 编码准则。
+* [SocialUtils重构](socialutils.md) — 将已弃用的实用工具方法映射到当前的SRP实用工具方法。

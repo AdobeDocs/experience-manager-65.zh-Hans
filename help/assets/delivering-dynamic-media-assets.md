@@ -28,11 +28,11 @@ ht-degree: 9%
 
    * 将视频或图像嵌入到网站中。
    * 将URL链接到您的Web应用程序。 当您希望将视频播放器作为弹出窗口或模式窗口交付时，请使用链接。
-   * 如果您的网站是响应式的，您可以 [传送优化的图像](/help/assets/responsive-site.md).
+   * 如果您的网站是响应式的，您可以[交付优化的图像](/help/assets/responsive-site.md)。
 
 >[!NOTE]
 >
->智能成像可与您现有的图像预设配合使用，并在交付的最后毫秒内使用智能功能，以根据浏览器或网络连接速度进一步减小图像文件大小。 请参阅 [智能成像](/help/assets/imaging-faq.md) 以了解更多信息。
+>智能成像可与您现有的图像预设配合使用，并在交付的最后毫秒内使用智能功能，以根据浏览器或网络连接速度进一步减小图像文件大小。 有关详细信息，请参阅[智能成像](/help/assets/imaging-faq.md)。
 
 有关更多信息，请参阅以下主题：
 
@@ -50,4 +50,4 @@ ht-degree: 9%
 
 Experience Manager现在支持通过HTTP/2交付所有Dynamic Media内容（图像和视频）。 即，图像或视频的已发布URL或嵌入代码可用于与接受托管资产的任何应用程序集成。 随后，该已发布的资产将通过HTTP/2协议进行交付。 这种交付方法改进了浏览器和服务器的通信方式，使得所有Dynamic Media资源都有更好的响应和加载时间。
 
-要了解更多信息，请参阅 [HTTP/2内容交付常见问题解答](/help/sites-administering/scene7-http2faq.md).
+若要了解更多信息，请参阅[HTTP/2内容交付常见问题解答](/help/sites-administering/scene7-http2faq.md)。

@@ -20,7 +20,7 @@ ht-degree: 13%
 
 >[!IMPORTANT]
 >
->[AdobeLivefyre正式于2021年11月30日停止服务](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html).
+>[AdobeLivefyre正式于2021年11月30日停止服务](https://experienceleague.adobe.com/docs/discontinued/using/livefyre.html)。
 
 <!-- Learn how to integrate Livefyre's industry-leading curation capabilities with your AEM 6.5 instance, allowing you to publish valuable user-generated content (UGC) from social networks to your site in minutes.
 

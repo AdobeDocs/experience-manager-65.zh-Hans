@@ -20,7 +20,7 @@ ht-degree: 0%
 
 如果AEM Forms安装的用户使用Content Services的数据捕获功能（已弃用），则建议为这些用户创建具有只读访问权限的角色。
 
-***注意&#x200B;**：Adobe®LiveCycle®内容服务ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 Content Services（已弃用）支持于2014年12月31日终止。 请参阅 [Adobe产品生命周期文档](https://helpx.adobe.com/cn/support/programs/eol-matrix.html).*
+***注意&#x200B;**：Adobe®LiveCycle®内容服务ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 Content Services（已弃用）支持于2014年12月31日终止。 请参阅[Adobe产品生命周期文档](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)。*
 
 数据捕获要求您分配用户角色以访问SampleReaderExtensionsCredential。 您可以分配标准的信任管理员角色。 但是，请考虑一下，此角色赋予了常规的非管理用户管理员权限，这些权限可控制PKI信任设置并管理PKI凭据，这可能会危及在生产环境中安装AEM表单的安全性。 建议AEM Forms系统管理员创建一个仅授予信任存储区只读访问权限的角色，并将此新角色分配给使用数据捕获的非管理员用户。
 

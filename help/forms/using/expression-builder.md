@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## 使用表达式生成器创建表达式和远程函数 {#creating-expressions-and-remote-functions-with-expression-builder}
 
-表达式生成器内部使用JSP EL库，因此表达式遵循JSPEL语法。 有关更多信息，请参阅 [表达式示例](#exampleexpressions).
+表达式生成器内部使用JSP EL库，因此表达式遵循JSPEL语法。 有关详细信息，请参阅[示例表达式](#exampleexpressions)。
 
 ![表达式生成器](assets/expressionbuilder.png)
 
@@ -36,11 +36,11 @@ ht-degree: 1%
 
 * 添加两个数字： ${number1 + number2}
 * 要连接两个字符串： ${str1} ${str2}
-* 要比较两个数字：${age &lt; 18}
+* 要比较两个数字： ${age &lt; 18}
 
-欲知更多信息，请参见 [JSP EL规范](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf). 客户端表达式管理器不支持JSP EL规范中的某些变量和函数，具体为：
+您可以在[JSP EL规范](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)中找到更多信息。 客户端表达式管理器不支持JSP EL规范中的某些变量和函数，具体为：
 
-* 集合索引和映射键(使用 [] 表示法)不支持在客户端计算的表达式的变量名称中使用。
+* 在客户端计算的表达式的变量名不支持集合索引和映射键（使用[]表示法）。
 * 以下是表达式中使用的参数类型或函数的返回类型：
 
    * java.lang.String
@@ -80,7 +80,7 @@ ht-degree: 1%
 
    1. **已启用**：确定是否启用此方法。 表达式管理器会忽略已禁用的方法。
    1. **familyId**：指定方法的系列（组）。 如果为空，则Expression Manager假定该方法属于默认系列。 没有从中选择函数的家族的注册表（默认家族除外）。 Expression Manager通过获取由各种捆绑导出的所有函数指定的所有系列ID的并集来动态创建注册表。 由于他们在此指定的ID也会显示在表达式创作用户界面中，因此请确保该ID可合理读取。
-   1. **显示名称**：人类可读的函数名称。 此名称用于创作用户界面中的显示。 如果为空，则Expression Manager将使用函数的前缀和local-name构造默认名称。
+   1. **displayName**：易于用户识别的函数名称。 此名称用于创作用户界面中的显示。 如果为空，则Expression Manager将使用函数的前缀和local-name构造默认名称。
    1. **描述**：函数的详细描述。 此描述用于创作用户界面中的显示目的。 如果为空，则Expression Manager将使用函数的前缀和local-name构建默认说明。
 
    ```java
@@ -126,7 +126,7 @@ ht-degree: 1%
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-exm.service=true条目指示Expression Manager，该服务包含适合在表达式中使用的远程函数。 此 &lt;service_id> 值必须是有效的Java标识符（字母数字、$、_且不含其他特殊字符）。 此值以REMOTE_关键字为前缀，构成表达式内部使用的前缀。 例如，可以在使用REMOTE_foo：bar()的表达式中引用带有注释方法bar()的接口以及服务属性中的服务ID foo。
+exm.service=true条目指示Expression Manager，该服务包含适合在表达式中使用的远程函数。 &lt;service_id>值必须是有效的Java标识符（字母数字、$、_且不含其他特殊字符）。 此值以REMOTE_关键字为前缀，构成表达式内部使用的前缀。 例如，可以在使用REMOTE_foo：bar()的表达式中引用带有注释方法bar()的接口以及服务属性中的服务ID foo。
 
 ```java
 package mergeandfuse.com;
@@ -154,8 +154,8 @@ public class RemoteFuntionImpl implements RemoteFunction {
 
 以下是要使用的示例存档：
 
-* **GoodFunctions.jar.zip** 是带有包的jar文件，其中包含示例远程函数定义。 下载GoodFunctions.jar.zip文件并将其解压缩以获取jar文件。
-* **GoodFunctions.zip** 是用于定义自定义远程函数并为其创建捆绑包的源代码包。
+* **GoodFunctions.jar.zip**&#x200B;是包含包含示例远程函数定义的包的jar文件。 下载GoodFunctions.jar.zip文件并将其解压缩以获取jar文件。
+* **GoodFunctions.zip**&#x200B;是用于定义自定义远程函数并为其创建捆绑包的源代码包。
 
 GoodFunctions.jar.zip
 

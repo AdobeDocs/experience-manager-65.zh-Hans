@@ -15,19 +15,19 @@ ht-degree: 20%
 
 # OSGi和AEM Forms JEE工作流中以表单为中心的AEM工作流的操作和功能 {#actions-and-capabilities-of-form-centric-aem-workflows-on-osgi-and-aem-forms-jee-workflows}
 
-## AEM收件箱和HTML工作区 {#aem-inbox-and-html-workspace}
+## AEM收件箱和HTMLWorkspace {#aem-inbox-and-html-workspace}
 
-您可以使用AEM收件箱在OSGi上运行和监视以Forms为中心的AEM Workflow。 而HTML工作区允许您运行和监控AEM Forms JEE Workflow。 下表可帮助您了解OSGi上以AEM为中心的Forms AEM Workflow的OSGi收件箱中和AEM Forms JEE Workflow的HTML Workspace中可用的各种重要操作。
+您可以使用AEM收件箱在OSGi上运行和监视以Forms为中心的AEM Workflow。 而HTMLWorkspace允许您运行和监控AEM Forms JEE Workflow。 下表可帮助您了解OSGi上以AEM为中心的Forms AEM Workflow的“收件箱”中和AEM Forms JEE Workflow的HTMLWorkspace中可用的各种重要操作。
 
 <table>
  <tbody>
   <tr>
    <td>操作</td>
    <td>AEM 收件箱</td>
-   <td>HTML工作区</td>
+   <td>HTMLWorkspace</td>
   </tr>
   <tr>
-   <td>启动流程、任务或表单应用程序<br /> </td>
+   <td>正在启动进程、任务或表单应用程序<br /> </td>
    <td>支持<br /> </td>
    <td>支持<br /> </td>
   </tr>
@@ -107,7 +107,7 @@ OSGi和AEM Forms JEE Workflows上以表单为中心的AEM Workflow (AEM Forms on
  <tbody>
   <tr>
    <td>功能</td>
-   <td>OSGi上以表单为中心的AEM工作流<br /> </td>
+   <td>OSGi<br />上以表单为中心的AEM工作流 </td>
    <td>AEM Forms JEE工作流</td>
   </tr>
   <tr>
@@ -157,18 +157,18 @@ OSGi和AEM Forms JEE Workflows上以表单为中心的AEM Workflow (AEM Forms on
   </tr>
   <tr>
    <td>电子签名(Adobe Sign)</td>
-   <td>支持 <sup>[1]</sup></td>
-   <td>支持 <sup>[5]</sup></td>
+   <td>支持的<sup>[1]</sup></td>
+   <td>支持的<sup>[5]</sup></td>
   </tr>
   <tr>
    <td>管理任务和表单应用程序</td>
-   <td>支持 <sup>[2]</sup><br /> </td>
-   <td>支持 <sup>[2]</sup></td>
+   <td>支持的<sup>[2]</sup><br /> </td>
+   <td>支持的<sup>[2]</sup></td>
   </tr>
   <tr>
    <td>文档服务</td>
-   <td>支持 <sup>[3]</sup></td>
-   <td>支持 <sup>[3]</sup></td>
+   <td>支持的<sup>[3]</sup></td>
+   <td>支持的<sup>[3]</sup></td>
   </tr>
   <tr>
    <td>将已完成的任务渲染为自适应表单或PDF文档</td>
@@ -202,7 +202,7 @@ OSGi和AEM Forms JEE Workflows上以表单为中心的AEM Workflow (AEM Forms on
   </tr>
   <tr>
    <td>在工作流结束时发送电子邮件</td>
-   <td>支持 <sup>[7]</sup></td>
+   <td>支持<sup>[7]</sup></td>
    <td>支持</td>
   </tr>
   <tr>
@@ -316,7 +316,7 @@ OSGi和AEM Forms JEE Workflows上以表单为中心的AEM Workflow (AEM Forms on
    <td>支持 </td>
   </tr>
   <tr>
-   <td>使用现有流程数据启动流程<br /> </td>
+   <td>使用现有进程数据启动进程<br /> </td>
    <td>不支持</td>
    <td>支持 </td>
   </tr>
@@ -337,7 +337,7 @@ OSGi和AEM Forms JEE Workflows上以表单为中心的AEM Workflow (AEM Forms on
   </tr>
   <tr>
    <td>与第三方应用程序集成</td>
-   <td>不支持 <sup>[6]</sup></td>
+   <td>不支持<sup>[6]</sup></td>
    <td>支持</td>
   </tr>
   <tr>
@@ -388,18 +388,18 @@ OSGi和AEM Forms JEE Workflows上以表单为中心的AEM Workflow (AEM Forms on
  </tbody>
 </table>
 
-1. 您可以在OSGi上使用以表单为中心的AEM Workflows来签名已填写的自适应表单。 OSGi上以表单为中心的AEM Workflow支持表单签名之外的其他内容。 此 [表单内签名](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience) 不支持体验。
+1. 您可以在OSGi上使用以表单为中心的AEM Workflows来签名已填写的自适应表单。 OSGi上以表单为中心的AEM Workflow支持表单签名之外的其他内容。 不支持[表单内签名](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience)体验。
 
-1. 您需要访问AEM收件箱才能在AEM Forms OSGi和HTML Workspace上运行和监控以表单为中心的工作流，从而运行和监控AEM Forms JEE Workflow。
+1. 您需要访问AEM收件箱才能在AEM Forms OSGi上运行和监控以表单为中心的工作流，并且HTMLWorkspace以运行和监控AEM Forms JEE工作流。
 1. 本机AEM Forms文档服务适用于OSGi上的以表单为中心的AEM Workflow和JEE Workflow上的AEM Forms 。 AEM Workflow在OSGi和AEM Forms JEE （流程管理）工作流中使用本机文档服务来处理以表单为中心的AEM Workflow。
 1. AEM Forms JEE工作流只能渲染自适应表单。 它不支持将自适应表单渲染为PDF文档。
-1. AEM Forms JEE工作流没有适用于Adobe Sign的单独步骤。 您需要为AEM Forms JEE Workflow提供启用Adobe Sign的自适应表单。 有关更多详细信息，请参阅 [Adobe Sign文档](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. 您可以使用 [调用表单数据模型服务](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p) 用于调用Web服务以及发布或检索来自第三方应用程序的数据的步骤。
-1. 您可以使用 [发送电子邮件](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step) 步骤以发送电子邮件。
+1. AEM Forms JEE工作流没有适用于Adobe Sign的单独步骤。 您需要为AEM Forms JEE Workflow提供启用Adobe Sign的自适应表单。 有关详细信息，请参阅[Adobe Sign文档](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component)。
+1. 您可以使用[调用表单数据模型服务](../../forms/using/aem-forms-workflow-step-reference.md#p-invoke-form-data-model-service-step-p)步骤来调用Web服务服务，并从第三方应用程序中发布或检索数据。
+1. 您可以使用[发送电子邮件](../../forms/using/aem-forms-workflow-step-reference.md#send-email-step)步骤发送电子邮件。
 
 ## AEM收件箱和AEM Forms应用程序功能之间的差异 {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-启动以Forms为中心的工作流的两种主要方法是 [AEM收件箱](../../forms/using/manage-applications-inbox.md) 和AEM Forms应用程序。 但是，AEM收件箱和AEM Forms应用程序的功能有所不同。 AEM收件箱仅适用于 [以Forms为中心的工作流](../../forms/using/aem-forms-workflow.md) 而AEM Forms应用程序可同时使用以Forms为中心的工作流和流程管理。
+启动以Forms为中心的工作流的两种主要方法是使用[AEM收件箱](../../forms/using/manage-applications-inbox.md)和AEM Forms应用程序。 但是，AEM收件箱和AEM Forms应用程序的功能有所不同。 AEM收件箱仅适用于以[Forms为中心的工作流](../../forms/using/aem-forms-workflow.md)，而AEM Forms应用程序同时适用于以Forms为中心的工作流和流程管理。
 
 下表列出了AEM收件箱和AEM Forms应用程序的功能：
 

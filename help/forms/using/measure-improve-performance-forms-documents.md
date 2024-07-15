@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 解决方案 {#the-solution}
 
-AEM Forms集成 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) 解决方案 —  [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) 和 [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html)  — 可以帮助您监控和分析表单的执行情况，并让您试验并确定提高转化率的体验。
+AEM Forms与[Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)解决方案([Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html)和[Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html))集成，这些解决方案可以帮助您监视和分析表单的执行情况，并让您试验并识别可提高转化率的体验。
 
 ## 工作流 {#the-workflow}
 
@@ -68,11 +68,11 @@ AEM Forms集成 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 1. 在AEM中配置AEM Forms Analytics配置服务
 1. 在AEM中对表单启用分析
 
-有关详细步骤，请参阅 [为自适应表单配置分析和报表](../../forms/using/configure-analytics-forms-documents.md).
+有关详细步骤，请参阅[为自适应表单配置分析和报表](../../forms/using/configure-analytics-forms-documents.md)。
 
-**配置Tar**
+**配置Target**
 
-要为自适应表单创建和运行A/B测试，请在AEM Forms中配置Target，如中所述 [在AEM Forms中设置并集成Target](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+要为自适应表单创建和运行A/B测试，请在AEM Forms中配置Target，如[在AEM Forms中设置并集成Target](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p)中所述。
 
 #### 第2步：查看分析报表 {#step-view-analytics-report-br}
 
@@ -80,25 +80,25 @@ AEM Forms集成 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 
 您可以从启用了Analytics的表单的AEM中查看报表并分析数据。 要查看报表，请执行以下操作：
 
-1. 在AEM服务器上，导航到 **Forms > Forms和文档**.
+1. 在AEM服务器上，导航到&#x200B;**Forms > Forms和文档**。
 1. 选择要为其生成分析报表的表单。
 1. 单击Analytics报表图标。 此时会显示报表。
 
 让我们看一下Analytics为表单收集和报告的数据点。
 
-**Forms分析报表**
+**Forms分析报告**
 
 自适应表单分析报表可在表单级别捕获以下关键绩效指标(KPI)：
 
-* **平均填充时间**：填写表单所用的平均时间
+* **平均填写时间**：填写表单所花费的平均时间
 * **展示次数**：表单在搜索结果中出现的次数
 
-* **节目**：表单被呈现或打开的次数
-* **草稿**：表单另存为草稿的次数
+* **呈现版本**：呈现或打开表单的次数
+* **草稿**：将表单另存为草稿的次数
 
 * **提交内容**：提交表单的次数
-* **中止**：用户未完成表单而离开的次数
-* **访问/提交次数**：每次提交的访问次数比率
+* **中止**：用户未完成表单的剩余次数
+* **访问/提交**：每次提交的访问比率
 
 此外，您还可以在表单中获取有关每个面板的以下详细信息：
 
@@ -106,11 +106,11 @@ AEM Forms集成 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 
 * **错误**：每1000个表单呈现的面板及其字段上遇到的错误数
 
-* **帮助**：用户每1000个表单演绎版访问面板及其字段的上下文帮助的次数
+* **帮助**：用户每1000个表单转译访问面板及其字段的上下文帮助的次数
 
-![自适应表单的示例Analytics报表](assets/summary-report.png)
+![自适应表单的分析报告示例](assets/summary-report.png)
 
-有关Forms Analytics报表的更多详细信息，请参阅 [查看和了解AEM Forms Analytics报表](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+有关Forms Analytics报表的详细信息，请参阅[查看和了解AEM Forms Analytics报表](../../forms/using/view-understand-aem-forms-analytics-reports.md)。
 
 >[!NOTE]
 >
@@ -134,7 +134,7 @@ AEM Forms集成 [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.ht
 
 AEM Forms与Target的集成允许为自适应表单创建A/B测试。 在A/B测试中，您可以实时向客户随机展示表单的不同体验，以了解哪个体验效果更佳或导致转化率更高。 一旦您掌握了重要数据，表明某个体验提供了比另一个体验更好的转化，您就可以将该体验声明为入选者，此后，该体验将成为对所有客户可见的默认体验。
 
-有关为自适应表单创建A/B测试的更多信息，请参阅 [自适应表单的A/B测试](../../forms/using/ab-testing-adaptive-forms.md).
+有关为自适应表单创建A/B测试的更多信息，请参阅[自适应表单的A/B测试](../../forms/using/ab-testing-adaptive-forms.md)。
 
 ![自适应表单的A/B测试摘要报告示例](assets/ab-test-report-4.png)
 

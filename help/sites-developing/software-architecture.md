@@ -34,11 +34,11 @@ ht-degree: 0%
 
 SOLID是描述应遵循的五个体系结构原则的缩写：
 
-* **S**&#x200B;单一责任原则 — 每个模块、类、方法等只能有一个责任。
-* **O**&#x200B;钢笔/闭合原理 — 模块应该打开进行扩展，并且关闭进行修改。
+* **S**&#x200B;单个责任原则 — 每个模块、类、方法等只能有一个责任。
+* **O**&#x200B;笔/闭合原则 — 模块应为开放扩展和关闭进行修改。
 * **L** iskov替换原则 — 类型应该由其子类型替换。
-* **I**&#x200B;接口隔离原则 — 不应强制任何客户依赖其不使用的方法。
-* **D**&#x200B;依赖性反转原理 — 高层模块不应依赖低层模块。 两者都应该依靠抽象。 抽象不应依赖于细节。 细节应取决于抽象。
+* **I**&#x200B;接口隔离原则 — 不应强制任何客户端依赖它未使用的方法。
+* **D**&#x200B;依赖性反转原则 — 高级别模块不应依赖于低级别模块。 两者都应该依靠抽象。 抽象不应依赖于细节。 细节应取决于抽象。
 
 努力遵守这五项原则应导致一种严格区分关切的制度。
 
@@ -62,4 +62,4 @@ SOLID是描述应遵循的五个体系结构原则的缩写：
 
 ### 遵循POM文件中发布的Maven惯例 {#follow-published-maven-conventions-in-pom-files}
 
-Apache已在以下位置发布样式约定： [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html). 最好遵循这些惯例，因为这样可以更轻松地使新资源快速上线。
+Apache已在[https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html)上发布样式约定。 最好遵循这些惯例，因为这样可以更轻松地使新资源快速上线。

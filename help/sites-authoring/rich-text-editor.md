@@ -22,7 +22,7 @@ ht-degree: 32%
 
 ## 就地编辑 {#in-place-editing}
 
-通过单击选择基于文本的组件将显示 [组件工具栏](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) 与任何组件一样。
+通过单击选择基于文本的组件，将像任何其他组件一样显示[组件工具栏](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -32,7 +32,7 @@ ht-degree: 32%
 
 此工具栏提供了以下选项：
 
-* **格式**：可让您设置粗体、斜体和下划线。
+* **格式**：允许您设置粗体、斜体和下划线。
 * **列表**：创建项目符号或编号列表，或者设置缩进。
 * **超链接**
 * **取消链接**
@@ -42,9 +42,9 @@ ht-degree: 32%
 
 ## 全屏编辑 {#full-screen-editing}
 
-对于基于文本的组件，从工具栏中点按全屏模式 ![全屏编辑模式](do-not-localize/screen_shot_2018-03-21at163236.png) 打开富文本编辑器并隐藏页面内容的其余部分。
+对于基于文本的组件，从工具栏![全屏编辑模式](do-not-localize/screen_shot_2018-03-21at163236.png)中点按全屏模式将打开富文本编辑器，并隐藏页面内容的其余部分。
 
-全屏模式会显示可用于创作的所有已配置选项。 可用性是选项 [取决于配置](/help/sites-administering/rich-text-editor.md).
+全屏模式会显示可用于创作的所有已配置选项。 可用性是选项[取决于配置](/help/sites-administering/rich-text-editor.md)。
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 

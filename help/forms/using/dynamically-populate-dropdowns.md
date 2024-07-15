@@ -20,14 +20,14 @@ ht-degree: 0%
 
 ## 先决条件 {#prerequisites}
 
-* [创建OSGi包](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
+* [正在创建OSGI包](https://helpx.adobe.com/experience-manager/using/creating-osgi-bundles-digital-marketing.html)
 * [开发AEM组件](/help/sites-developing/components.md)
 * [创建自适应表单](../../forms/using/creating-adaptive-form.md)
 * [创作自适应表单](../../forms/using/introduction-forms-authoring.md)
 
 ## 动态填充下拉列表的过程 {#procedure-to-dynamically-populate-drop-down-lists}
 
-假设您想在场景中填充 **状态** 下拉列表中选定的值 **国家/地区** 下拉列表。 如果您在 **国家/地区** 下拉列表， **状态** 下拉列表显示了澳大利亚境内的各个州。 以下过程介绍了如何完成此任务。
+假设您想根据在&#x200B;**国家/地区**&#x200B;下拉列表中选择的值填充&#x200B;**国家/地区**&#x200B;下拉列表。 如果在&#x200B;**国家/地区**&#x200B;下拉列表中选择澳大利亚，则&#x200B;**国家/地区**&#x200B;下拉列表将显示澳大利亚境内的国家/地区。 以下过程介绍了如何完成此任务。
 
 1. 创建包含以下模块的项目：
 
@@ -145,7 +145,7 @@ ht-degree: 0%
    }
    ```
 
-1. 在应用程序中的特定文件夹层次结构下创建下拉节点（例如，在/apps/myfolder/demo下创建节点）。 确保 `sling:resourceType` 节点的参数与servlet指向的参数相同(/apps/populatedropdown)。
+1. 在应用程序中的特定文件夹层次结构下创建下拉节点（例如，在/apps/myfolder/demo下创建节点）。 确保节点的`sling:resourceType`参数与servlet指向的参数相同(/apps/populatedropdown)。
 
    ![创建下拉节点](assets/dropdown-node.png)
 
@@ -154,7 +154,7 @@ ht-degree: 0%
 
    添加要在国家/地区列表中显示的国家/地区名称。 在“州”列表中，添加一个脚本，以根据“国家/地区”列表中的国家/地区名称填充该脚本。
 
-   ![添加国家/地区名称](assets/country-dropdown.png) ![添加脚本以填充状态名称](assets/state-dropdown.png) ![要收集的“国家/地区”和“州/省”下拉列表](assets/2dropdowns.png)
+   ![正在添加国家/地区名称](assets/country-dropdown.png) ![正在添加脚本以填充省/市/自治区名称](assets/state-dropdown.png) ![要收集的国家/地区和省/市/自治区下拉列表](assets/2dropdowns.png)
 
    ```javascript
    JSON.parse(

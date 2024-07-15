@@ -27,11 +27,11 @@ AEM通常用于高影响力的部署，这些部署可能会为数百万用户�
 
 AEM升级过程需要仔细处理规划、分析和执行阶段，并为每个阶段定义关键交付项。
 
-可以直接从AEM版本6.0升级到6.5。运行5.6.x及更低版本的客户需要首先升级到版本6.0或更高版本，推荐使用6.0 (SP3)。 此外，从6.3开始，新的Oak区段Tar格式现在用于区段节点存储，即使对于6.0、6.1和6.2，存储库迁移到此新格式也是强制性的。
+可以直接从AEM版本6.0升级到6.5。运行5.6.x及更低版本的客户需要首先升级到版本6.0或更高版本，推荐使用6.0 (SP3)。 此外，从6.3开始，新的Oak区段Tar格式现在用于区段节点存储，即使对于6.0、6.1和6.2，存储库也必须迁移到此新格式。
 
 >[!CAUTION]
 >
->如果您要从AEM 6.2升级到6.3，您应该从各个版本(**6.2-SP1-CFP1 —6.2 SP1-CFP12.1**)或 **6.2 SP1-CFP15** 从上往下。 否则，如果您要从 **6.2 SP1-CFP13/6.2 SP1CFP14** 到AEM 6.3，您还必须至少升级到版本 **6.3.2.2**. 否则，AEM Sites将在升级后失败。
+>如果您要从AEM 6.2升级到6.3，则应该从版本(**6.2-SP1-CFP1 —6.2SP1-CFP12.1**)或从&#x200B;**6.2SP1-CFP15**&#x200B;开始升级。 否则，如果您要从&#x200B;**6.2 SP1-CFP13/6.2 SP1CFP14**&#x200B;升级到AEM 6.3，则还必须至少升级到版本&#x200B;**6.3.2.2**。 否则，AEM Sites将在升级后失败。
 
 ## 升级范围和要求 {#upgrade-scope-requirements}
 
@@ -57,17 +57,17 @@ AEM升级过程需要仔细处理规划、分析和执行阶段，并为每个�
   <tr>
    <td>硬件</td>
    <td>中等影响</td>
-   <td>联机修订版清理需要免费<br /> 磁盘空间等于存储库大小的25%和15%的可用栈空间<br /> 以成功完成。 您可能需要将硬件升级到<br /> 确保有足够的资源进行联机修订清理，以完全<br /> 跑。 此外，如果从AEM 6之前的版本升级，则<br /> 可能是额外的存储要求。</td>
+   <td>联机修订清理需要相当于存储库大小25%的可用磁盘空间<br />和15%的可用栈空间<br />才能成功完成。 您可能需要将硬件升级到<br />，确保有足够的资源进行联机修订清理，以完全运行<br />。 此外，如果从AEM 6之前的版本升级，则可能有<br />额外的存储要求。</td>
   </tr>
   <tr>
-   <td>内容存储库（CRX或Oak）</td>
+   <td>内容存储库(CRX或Oak)</td>
    <td>高影响力</td>
-   <td>从版本6.1开始，AEM不支持CRX2，因此迁移到<br /> 如果从旧版本升级，则需要Oak (CRX3)。 AEM 6.3具有<br /> 实施了一个新的区段节点存储，该存储也需要迁移。 此<br /> crx2oak工具用于此目的。</td>
+   <td>从版本6.1开始，AEM不支持CRX2，因此如果从旧版本升级，则需要迁移到<br /> Oak (CRX3)。 AEM 6.3已实施<br />新区段节点存储，该存储也需要迁移。 <br /> crx2oak工具用于此目的。</td>
   </tr>
   <tr>
    <td>AEM组件/内容</td>
    <td>中等影响</td>
-   <td><code>/libs</code> 和 <code>/apps</code> 可以通过升级轻松处理，但是 <code>/etc</code> 通常需要手动重新应用一些自定义设置。</td>
+   <td><code>/libs</code> 和<code>/apps</code>可通过升级轻松处理，但<code>/etc</code>通常需要手动重新应用某些自定义设置。</td>
   </tr>
   <tr>
    <td>AEM服务</td>
@@ -77,17 +77,17 @@ AEM升级过程需要仔细处理规划、分析和执行阶段，并为每个�
   <tr>
    <td>自定义应用程序服务</td>
    <td>从低到高影响</td>
-   <td>根据应用程序和自定义，可能存在<br /> 依赖于JVM、操作系统版本和一些与索引相关的索引<br /> 更改，因为索引不会在Oak中自动生成。</td>
+   <td>根据应用程序和自定义，可能存在<br />个依赖于JVM、操作系统版本以及某些与索引相关的<br />更改，因为索引不会在Oak中自动生成。</td>
   </tr>
   <tr>
    <td>自定义应用程序内容</td>
    <td>从低到高影响</td>
-   <td>无法通过升级处理的内容可以备份<br /> 在进行升级之前，请先将其移回存储库。<br /> 大多数内容都可以通过迁移工具来处理。</td>
+   <td>无法通过升级处理的内容可以在升级发生之前进行备份<br />，然后移回存储库。<br />大多数内容都可以通过迁移工具来处理。</td>
   </tr>
  </tbody>
 </table>
 
-务必确保您运行的是受支持的操作系统、Java™运行时、httpd和Dispatcher版本。 欲了解更多信息，请参见 [AEM 6.5技术要求页面](/help/sites-deploying/technical-requirements.md). 必须在项目计划中考虑升级这些组件，并且应在升级AEM之前进行升级。
+务必确保您运行的是受支持的操作系统、Java™运行时、httpd和Dispatcher版本。 有关详细信息，请参阅[AEM 6.5技术要求页](/help/sites-deploying/technical-requirements.md)。 必须在项目计划中考虑升级这些组件，并且应在升级AEM之前进行升级。
 
 ## 项目阶段 {#project-phases}
 
@@ -99,7 +99,7 @@ AEM升级过程需要仔细处理规划、分析和执行阶段，并为每个�
 
 ![unu_cropped](assets/unu_cropped.png)
 
-AEM 6.5中的新增功能位于 [adobe.com的AEM部分](/help/release-notes/release-notes.md). 请务必注意对组织中常用的UI或产品功能所做的任何更改。 浏览新功能时，请注意对您的组织有价值的任何功能。 查看AEM 6.5中的更改后，为作者制定培训计划。 这可能涉及使用免费提供的资源，例如帮助功能视频或提供的正式培训 [Adobe数字学习服务](https://learning.adobe.com/).
+可以在adobe.com](/help/release-notes/release-notes.md)的[AEM部分找到AEM 6.5中的新增功能。 请务必注意对组织中常用的UI或产品功能所做的任何更改。 浏览新功能时，请注意对您的组织有价值的任何功能。 查看AEM 6.5中的更改后，为作者制定培训计划。 这可能涉及使用免费提供的资源，如通过[Adobe数字学习服务](https://learning.adobe.com/)提供的帮助功能视频或正式培训。
 
 ### 创建测试计划 {#creating-a-test-plan}
 
@@ -117,7 +117,7 @@ AEM 6.5中的新增功能位于 [adobe.com的AEM部分](/help/release-notes/rele
 
 查看AEM 6.5的技术要求，并确保您当前的硬件和软件足以满足要求。 有关操作流程的潜在更改，请参阅以下文档：
 
-**监控和维护：**
+**监视和维护：**
 
 [操作功能板](/help/sites-administering/operations-dashboard.md)
 
@@ -127,7 +127,7 @@ AEM 6.5中的新增功能位于 [adobe.com的AEM部分](/help/release-notes/rele
 
 [修订版清理](/help/sites-deploying/revision-cleanup.md)
 
-**备份/恢复和灾难恢复：**
+**备份/还原和灾难恢复：**
 
 [备份和恢复](/help/sites-administering/backup-and-restore.md)
 
@@ -137,7 +137,7 @@ AEM 6.5中的新增功能位于 [adobe.com的AEM部分](/help/release-notes/rele
 
 #### 内容重构注意事项 {#content-restructuring-considerations}
 
-AEM已对存储库结构进行了更改，这有助于使升级更加顺畅。 这些更改涉及根据Adobe或客户是否拥有内容，将内容从/etc文件夹移出到/libs、/apps和/content等文件夹，从而限制在发布期间覆盖内容的机会。 存储库重组已经完成，因此在6.5版升级时不需要更改代码，但建议查看详细信息： [AEM中的存储库重组](/help/sites-deploying/repository-restructuring.md) 在计划升级时。
+AEM已对存储库结构进行了更改，这有助于使升级更加顺畅。 这些更改涉及根据Adobe或客户是否拥有内容，将内容从/etc文件夹移出到/libs、/apps和/content等文件夹，从而限制在发布期间覆盖内容的机会。 存储库重组已经完成，因此在6.5升级时不需要更改代码，尽管建议在计划升级时在[AEM中的存储库重组](/help/sites-deploying/repository-restructuring.md)中查看详细信息。
 
 ### 评估升级复杂性 {#assessing-upgrade-complexity}
 
@@ -145,11 +145,11 @@ AEM已对存储库结构进行了更改，这有助于使升级更加顺畅。 �
 
 您可以使用两种方法来评估升级的复杂性，一种是初步阶段可以使用新引入的模式检测器，该检测器可在AEM 6.1、6.2和6.3实例上运行。 模式检测器是使用报告的模式来评估预期升级的整体复杂性的最简单方法。 模式检测器报表包含用于识别自定义代码库正在使用的不可用API的模式（这是使用6.3中的升级前兼容性检查完成的）。
 
-在初始评估后，更全面的下一步可能是对测试实例执行升级并执行一些基本的烟雾测试。 Adobe也提供了一些。 另外， [已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md) 不仅要检查要升级到的版本，还要检查源版本和目标版本之间的任何版本。 例如，如果从AEM 6.2升级到6.5，则除了那些用于AEM 6.5的功能之外，查看AEM 6.3已弃用和已删除的功能也非常重要。
+在初始评估后，更全面的下一步可能是对测试实例执行升级并执行一些基本的烟雾测试。 Adobe也提供了一些。 此外，不仅要针对要升级到的版本查看[已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md)列表，还要针对源版本和目标版本之间的任何版本进行查看。 例如，如果从AEM 6.2升级到6.5，则除了那些用于AEM 6.5的功能之外，查看AEM 6.3已弃用和已删除的功能也非常重要。
 
 ![trei_cropped](assets/trei_cropped.png)
 
-最近推出的模式检测器应该可以非常准确地估计在大多数情况下升级过程中会出现的情况。 但是，对于具有不兼容更改的更复杂的自定义和部署，您可以按照中的说明将开发实例升级到AEM 6.5 [执行就地升级](/help/sites-deploying/in-place-upgrade.md). 完成后，在此环境中执行一些高级烟雾测试。 本练习的目标不是详尽地完成测试用例清单并生成正式的缺陷清单，而是粗略估计升级代码以实现6.5兼容性所需的工作量。 当与 [模式检测](/help/sites-deploying/pattern-detector.md) 以及上节确定的架构变化，可向项目管理小组提供粗略的估计，以规划升级。
+最近推出的模式检测器应该可以非常准确地估计在大多数情况下升级过程中会出现的情况。 但是，对于具有不兼容更改的更复杂的自定义和部署，您可以根据[执行就地升级](/help/sites-deploying/in-place-upgrade.md)中的说明将开发实例升级到AEM 6.5。 完成后，在此环境中执行一些高级烟雾测试。 本练习的目标不是详尽地完成测试用例清单并生成正式的缺陷清单，而是粗略估计升级代码以实现6.5兼容性所需的工作量。 在与[模式检测](/help/sites-deploying/pattern-detector.md)和上一节中确定的体系结构更改结合使用时，可以为项目管理团队提供粗略的估计值，以便规划升级。
 
 ### 构建升级和回滚Runbook {#building-the-upgrade-and-rollback-runbook}
 
@@ -157,13 +157,13 @@ AEM已对存储库结构进行了更改，这有助于使升级更加顺畅。 �
 
 ![runbook-diagram](assets/runbook-diagram.png)
 
-Adobe在中提供了升级和回滚过程 [升级过程](/help/sites-deploying/upgrade-procedure.md) 以及执行中的应用升级的分步说明 [就地升级](/help/sites-deploying/in-place-upgrade.md). 您应该查看这些说明并与您的系统体系结构、定制和停机时间容差一起考虑，以确定在升级期间将执行的适当的切换和回滚过程。 在起草您的自定义Runbook时，应包括对架构或服务器大小所做的任何更改。 必须指出，这应作为第一稿处理。 当您的团队完成QA和开发周期并将升级部署到暂存环境时，可能需要执行一些其他步骤。 理想情况下，此文档应包含足够的信息，以便交给您的操作人员后，他们就可以完全根据文档中包含的信息完成升级。
+Adobe已在[升级过程](/help/sites-deploying/upgrade-procedure.md)中提供升级和回滚过程，并提供了执行[就地升级](/help/sites-deploying/in-place-upgrade.md)中应用升级的分步说明。 您应该查看这些说明并与您的系统体系结构、定制和停机时间容差一起考虑，以确定在升级期间将执行的适当的切换和回滚过程。 在起草您的自定义Runbook时，应包括对架构或服务器大小所做的任何更改。 必须指出，这应作为第一稿处理。 当您的团队完成QA和开发周期并将升级部署到暂存环境时，可能需要执行一些其他步骤。 理想情况下，此文档应包含足够的信息，以便交给您的操作人员后，他们就可以完全根据文档中包含的信息完成升级。
 
 ### 制定项目计划 {#developing-a-project-plan}
 
 先前练习的输出可用于构建项目计划，涵盖测试或开发工作、培训和实际升级执行的预期时间线。
 
-![开发 — 项目 — 计划](assets/develop-project-plan.png)
+![develop-project-plan](assets/develop-project-plan.png)
 
 全面的项目计划应包括：
 
@@ -178,7 +178,7 @@ Adobe在中提供了升级和回滚过程 [升级过程](/help/sites-deploying/u
 
 ### 执行开发和QA {#performing-development-and-qa}
 
-Adobe为以下方面提供了程序 [升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md) 以与AEM 6.5兼容。在运行此迭代过程时，应根据需要对Runbook进行更改。 另请参阅 [AEM 6.5中的向后兼容性](/help/sites-deploying/backward-compatibility.md) 此信息介绍了自定义项如何保持向后兼容，通常在升级后无需立即开发。
+Adobe提供了[升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md)以与AEM 6.5兼容的过程。在运行此迭代过程时，应根据需要对Runbook进行更改。 另请参阅[AEM 6.5](/help/sites-deploying/backward-compatibility.md)中的向后兼容性，了解自定义项如何保持向后兼容，通常在升级后无需立即开发。
 
 ![patru_cropped](assets/patru_cropped.png)
 
@@ -194,8 +194,8 @@ Adobe建议在代码库获得贵组织的QA团队认证后进行最后一轮测�
 
 ### 执行升级 {#performing-the-upgrade}
 
-一旦从所有利益相关者那里收到最终签发，就应该按照定义的Runbook过程执行。 Adobe提供了升级和回滚的步骤 [升级过程](/help/sites-deploying/upgrade-procedure.md) 和安装步骤执行 [就地升级](/help/sites-deploying/in-place-upgrade.md) 作为参考点。
+一旦从所有利益相关者那里收到最终签发，就应该按照定义的Runbook过程执行。 Adobe提供了在[升级过程](/help/sites-deploying/upgrade-procedure.md)中升级和回滚的步骤，以及在执行[就地升级](/help/sites-deploying/in-place-upgrade.md)中作为参考点的安装步骤。
 
-![perform-upgrade](assets/perform-upgrade.png)
+![执行升级](assets/perform-upgrade.png)
 
-Adobe在环境验证的升级说明中提供了一些步骤。 这些功能包括一些基本检查，如扫描升级日志和验证所有OSGi捆绑包是否已正确启动，但Adobe建议也根据您的业务流程使用您自己的测试用例进行验证。 Adobe还建议检查AEM联机修订清理及相关例程的时间表，以确保在您的公司安静时间执行这些操作。 这些例程对于AEM的长期性能至关重要。
+Adobe在环境验证的升级说明中提供了一些步骤。 这些功能包括一些基本检查，如扫描升级日志和验证所有OSGi捆绑包是否已正确启动，但Adobe建议也根据您的业务流程使用您自己的测试用例进行验证。 Adobe还建议检查AEM联机修订清理计划和相关例程，以确保在公司安静的时间进行这些操作。 这些例程对于AEM的长期性能至关重要。

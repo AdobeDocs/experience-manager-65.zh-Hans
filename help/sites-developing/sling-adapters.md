@@ -18,7 +18,7 @@ ht-degree: 4%
 
 # 使用 Sling 适配器{#using-sling-adapters}
 
-[Sling](https://sling.apache.org) 选件和 [适配器模式](https://sling.apache.org/documentation/the-sling-engine/adapters.html) 方便地翻译实现 [可适应](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 界面。 此界面提供了一般 [adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) 将对象转换为作为参数传递的类类型的方法。
+[Sling](https://sling.apache.org)提供[适配器模式](https://sling.apache.org/documentation/the-sling-engine/adapters.html)，以便方便地翻译实现[Adaptable](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)接口的对象。 此接口提供了一个通用[adaptTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29)方法，它将对象转换为作为参数传递的类类型。
 
 例如，要将Resource对象转换为对应的Node对象，您只需执行以下操作：
 
@@ -32,19 +32,19 @@ Node node = resource.adaptTo(Node.class);
 
 * 获取特定于实施的对象。
 
-  例如，基于JCR的泛型实现 [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) 接口提供对基础JCR的访问 [`Node`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
+  例如，通用[`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html)接口的基于JCR的实现提供了对基础JCR [`Node`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html)的访问。
 
 * 快捷方式创建需要传递内部上下文对象的对象。
 
-  例如，基于JCR [`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html) 包含对请求的 [`JCR Session`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)，而基于请求会话工作的许多对象又需要这些会话，例如 [`PageManager`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html) 或 [`UserManager`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/security/UserManager.html).
+  例如，基于JCR的[`ResourceResolver`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ResourceResolver.html)保留对请求的[`JCR Session`](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Session.html)的引用，而基于该请求会话工作的许多对象（如[`PageManager`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html)或[`UserManager`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/security/UserManager.html)）需要该引用。
 
 * 服务的快捷方式。
 
-  一个罕见的案例。 `sling.getService()` 也很简单。
+  极少数情况 — `sling.getService()`也非常简单。
 
 ### Null返回值 {#null-return-value}
 
-`adaptTo()` 返回空值。
+`adaptTo()`返回null。
 
 原因有多种，包括：
 
@@ -57,32 +57,32 @@ Node node = resource.adaptTo(Node.class);
 
 ### 缓存 {#caching}
 
-为了提高性能，实施可以缓存从返回的对象 `obj.adaptTo()` 呼叫。 如果 `obj` 相同，则返回的对象是相同的。
+为了提高性能，实施可以缓存从`obj.adaptTo()`调用返回的对象。 如果`obj`是相同的，则返回的对象是相同的。
 
-此缓存针对所有 `AdapterFactory` 基于案例。
+对所有基于`AdapterFactory`的案例执行此缓存。
 
-但是，没有一般规则 — 对象可以是新实例或现有实例。 这意味着您无法依赖这两种行为。 因此，它很重要，尤其是在内部 `AdapterFactory`，在这种情况下，对象可重用。
+但是，没有一般规则 — 对象可以是新实例或现有实例。 这意味着您无法依赖这两种行为。 因此，对象可在此方案中重用，这一点很重要，尤其是在`AdapterFactory`内。
 
 ### 工作原理 {#how-it-works}
 
-有多种方式可以 `Adaptable.adaptTo()` 可以实现：
+有多种方法可以实现`Adaptable.adaptTo()`：
 
 * 对象本身；实现方法本身并映射到某些对象。
-* 按 [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)，可以映射任意对象。
+* 通过[`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html)，可以映射任意对象。
 
-  对象仍必须实施 `Adaptable` 接口，并且必须扩展 [`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (通过 `adaptTo` 调用中央适配器管理器)。
+  对象仍必须实现`Adaptable`接口，并且必须扩展[`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/adapter/SlingAdaptable.html)（它将`adaptTo`调用传递到中央适配器管理器）。
 
-  这允许挂接到 `adaptTo` 用于现有类的机制，例如 `Resource`.
+  这允许挂接到现有类（如`Resource`）的`adaptTo`机制。
 
 * 两者的组合。
 
-对于第一种情况，Java™文档可以说明 `adaptTo-targets` 是可能的。 但是，对于特定的子类（如基于JCR的资源），通常无法执行此操作。 在后一种情况下，实施 `AdapterFactory` 通常是捆绑包的私有类的一部分，因此不会在客户端API中公开，也不会在Java™文档中列出。 从理论上讲，访问所有 `AdapterFactory` 实施来自 [osgi](/help/sites-deploying/configuring-osgi.md) 服务运行时并查看其“可适应的”（源和目标）配置，但不会将它们相互映射。 最终，这取决于内部逻辑，必须记录在案。 因此，此参考内容。
+对于第一种情况，Java™文档可以说明哪些`adaptTo-targets`是可能的。 但是，对于特定的子类（如基于JCR的资源），通常无法执行此操作。 在后一种情况下，`AdapterFactory`的实现通常是捆绑包的私有类的一部分，因此未在客户端API中公开，也未在Java™文档中列出。 从理论上讲，可以从[OSGi](/help/sites-deploying/configuring-osgi.md)服务运行时访问所有`AdapterFactory`实现并查看其“可适应的”（源和目标）配置，但不能将它们相互映射。 最终，这取决于内部逻辑，必须记录在案。 因此，此参考内容。
 
 ## 引用 {#reference}
 
 ### Sling {#sling}
 
-[**资源**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) 可适应：
+[**资源**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html)已适应：
 
 <table>
  <tbody>
@@ -104,19 +104,19 @@ Node node = resource.adaptTo(Node.class);
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">值映射</a></td>
-   <td>如果这是基于JCR节点的资源（或其他支持值的资源映射），则返回便于使用的属性映射。 也可使用（更简单地）实现<br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> （处理null大小写等）</td>
+   <td>如果这是基于JCR节点的资源（或其他支持值的资源映射），则返回便于使用的属性映射。 也可以使用<br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code>实现（更简单地）（处理null大小写等）</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
-   <td>扩展 <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">值映射</a> 这允许在查找资产时考虑资源的层次结构</td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>的扩展，允许在查找属性时考虑资源的层次结构</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ModifiableValueMap.html">ModifiableValueMap</a></td>
-   <td>的扩展 <a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">值映射</a>，可修改该节点的属性</td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a>的扩展，允许您修改该节点上的属性</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/InputStream.html">输入流</a></td>
-   <td>返回文件资源的二进制内容(如果这是基于JCR节点的资源，并且节点类型为 <code>nt:file</code> 或 <code>nt:resource</code>；如果这是捆绑资源；如果这是文件系统资源，则为文件内容)或二进制JCR属性资源的数据</td>
+   <td>返回文件资源的二进制内容（如果这是基于JCR节点的资源，且节点类型为<code>nt:file</code>或<code>nt:resource</code>；如果这是捆绑资源；如果这是文件系统资源，则返回文件内容）或二进制JCR属性资源的数据</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/net/URL.html">URL</a></td>
@@ -135,7 +135,7 @@ Node node = resource.adaptTo(Node.class);
    <td>如果此资源是为其向sling注册脚本引擎的脚本（例如jsp文件），或者如果这是servlet资源。</td>
   </tr>
   <tr>
-   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">字符串</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">布尔型</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">长</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">多次</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">日历</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">值</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">日历[]</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">值[]</a></td>
+   <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Double.html">Double</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">日历</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">值</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/String.html">String[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Boolean.html">Boolean[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/lang/Long.html">Long[]</a><br /> <a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/util/Calendar.html">Calendar[]</a><br /> <a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Value.html">值[]</a></td>
    <td>如果这是基于JCR属性的资源（且值适合），则返回值。</td>
   </tr>
   <tr>
@@ -144,11 +144,11 @@ Node node = resource.adaptTo(Node.class);
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html">页面</a></td>
-   <td>如果这是基于JCR节点的资源，并且节点为 <code>cq:Page</code> (或 <code>cq:PseudoPage</code>)</td>
+   <td>如果这是基于JCR节点的资源，并且该节点是<code>cq:Page</code>（或<code>cq:PseudoPage</code>）</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/components/Component.html">组件</a></td>
-   <td>如果这是 <code>cq:Component</code> 节点资源</td>
+   <td>如果这是<code>cq:Component</code>节点资源</td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/designer/Design.html">设计</a></td>
@@ -156,11 +156,11 @@ Node node = resource.adaptTo(Node.class);
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Template.html">模板</a></td>
-   <td>如果这是 <code>cq:Template</code> 节点资源</td>
+   <td>如果这是<code>cq:Template</code>节点资源</td>
   </tr>  
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/Blueprint.html">Blueprint</a></td>
-   <td>如果这是 <code>cq:Template</code> 节点资源</td>
+   <td>如果这是<code>cq:Template</code>节点资源</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/dam/api/Asset.html">资源</a></td>
@@ -172,7 +172,7 @@ Node node = resource.adaptTo(Node.class);
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/Tag.html">标记</a></td>
-   <td>如果这是 <code>cq:Tag</code> 节点资源</td>
+   <td>如果这是<code>cq:Tag</code>节点资源</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/security/UserManager.html">用户管理器</a></td>
@@ -204,16 +204,16 @@ Node node = resource.adaptTo(Node.class);
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/config/package-summary.html">配置</a></td>
-   <td>如果这是 <code>cq:ContentSyncConfig</code> 节点资源</td>
+   <td>如果这是<code>cq:ContentSyncConfig</code>节点资源</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/config/package-summary.html">ConfigEntry</a></td>
-   <td>如果低于 <code>cq:ContentSyncConfig</code> 节点资源</td>
+   <td>如果它在<code>cq:ContentSyncConfig</code>节点资源下</td>
   </tr>
  </tbody>
 </table>
 
-[**ResourceResolver**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceResolver.html) 可适应：
+[**ResourceResolver**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceResolver.html)适应：
 
 <table>
  <tbody>
@@ -230,7 +230,7 @@ Node node = resource.adaptTo(Node.class);
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/designer/Designer.html">设计器</a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/designer/Designer.html">Designer</a></td>
    <td> </td>
   </tr>
   <tr>
@@ -260,16 +260,16 @@ Node node = resource.adaptTo(Node.class);
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html">外部化器</a></td>
-   <td>用于外部化绝对URL，即使没有请求对象也是如此<br /> </td>
+   <td>用于外部化绝对URL，即使没有请求对象<br /> </td>
   </tr>
  </tbody>
 </table>
 
-[**SlingHttpServletRequest**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) 可适应：
+[**SlingHttpServletRequest**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)适应：
 
 还没有目标，但实施了Adaptable，并且可以在自定义AdapterFactory中用作源。
 
-[**SlingHttpServletResponse**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) 可适应：
+[**SlingHttpServletResponse**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)适应：
 
 <table>
  <tbody>
@@ -282,7 +282,7 @@ Node node = resource.adaptTo(Node.class);
 
 #### WCM {#wcm}
 
-**[页面](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html)** 可适应：
+**[页面](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html)**&#x200B;适应：
 
 <table>
  <tbody>
@@ -305,15 +305,15 @@ Node node = resource.adaptTo(Node.class);
  </tbody>
 </table>
 
-**[组件](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/components/Component.html)** 可适应：
+**[组件](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/components/Component.html)**&#x200B;适应：
 
 | [Resource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) | 组件的资源。 |
 |---|---|
-| [LabeledResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/LabeledResource.html) | 已标记的资源(==此)。 |
+| [标记资源](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/LabeledResource.html) | 已标记的资源(==此)。 |
 | [节点](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 组件的节点。 |
 | ... | 组件资源可以适应的一切。 |
 
-**[模板](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Template.html)** 可适应：
+**[模板](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Template.html)**&#x200B;适应：
 
 <table>
  <tbody>
@@ -338,15 +338,15 @@ Node node = resource.adaptTo(Node.class);
 
 #### 安全性 {#security}
 
-**可授权**、 **User和 **组** 适应：
+**可授权**、{User**和&#x200B;**组**&#x200B;适应：
 
 | [节点](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 返回用户/组主节点。 |
 |---|---|
-| [复制状态](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/replication/ReplicationStatus.html) | 返回用户/组主节点的复制状态。 |
+| [ReplicationStatus](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/replication/ReplicationStatus.html) | 返回用户/组主节点的复制状态。 |
 
 #### DAM {#dam}
 
-**资产** 可适应：
+**资源**&#x200B;已适应：
 
 | [Resource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) | 资源的资源。 |
 |---|---|
@@ -355,7 +355,7 @@ Node node = resource.adaptTo(Node.class);
 
 #### 标记 {#tagging}
 
-**标记** 可适应：
+**标记**&#x200B;适应：
 
 | [Resource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) | 标记的资源。 |
 |---|---|
@@ -364,4 +364,4 @@ Node node = resource.adaptTo(Node.class);
 
 #### 其他 {#other}
 
-此外，Sling/JCR/OCM还提供 ` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)` 用于自定义OCM ([对象内容映射](https://jackrabbit.apache.org/jcr/object-content-mapping.html))对象。
+此外，Sling / JCR / OCM还为自定义OCM （[对象内容映射](https://jackrabbit.apache.org/jcr/object-content-mapping.html)）对象提供了` [AdapterFactory](https://sling.apache.org/site/adapters.html#Adapters-AdapterFactory)`。

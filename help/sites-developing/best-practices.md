@@ -80,13 +80,13 @@ Adobe工程和咨询团队已经为AEM开发人员制定了一组全面的最佳
 
 ## 社区 {#communities}
 
-[AEM Communities](/help/communities/overview.md) 简化了内部部署社区的创建和管理。
+[AEM Communities](/help/communities/overview.md)简化了本地社区的创建和管理。
 
 此处介绍了社区的一些最佳实践：
 
 |  |  |  |
 |---|---|---|
-| 使用用户生成内容(UGC)的最佳实践 | [编码准则](/help/communities/code-guide.md) | 为开发灵活、可移植的代码指南 [社交组件框架](/help/communities/scf.md) (SCF)。 |
+| 使用用户生成内容(UGC)的最佳实践 | [编码准则](/help/communities/code-guide.md) | 为[社交组件框架](/help/communities/scf.md) (SCF)开发灵活、可移植代码的准则。 |
 | Communities组件的使用示例 | [社区组件指南](/help/communities/components-guide.md) | 交互式开发工具。 |
 
 ## 工具/HTL {#tooling-htl}

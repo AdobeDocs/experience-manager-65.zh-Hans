@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >Adobe不打算进一步增强对AEM SMTP服务发送的已打开/退回电子邮件的跟踪。
 >
->建议是 [使用Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md).
+>建议您[使用Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
 
 当您向许多用户发送新闻稿时，通常列表中会有一些无效的电子邮件地址。 向这些地址发送新闻稿会退回。 AEM可以管理这些退回，并可在超出配置的退回计数器后停止向这些地址发送新闻稿。 默认情况下，跳出率设置为3，但可配置。
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 要配置馈送导入程序以跟踪退回的电子邮件，请执行以下操作：
 
-1. 在 **工具**&#x200B;中，选择馈送导入程序。
+1. 在&#x200B;**工具**&#x200B;中，选择信息源导入程序。
 
-1. 单击 **添加** 以创建配置。
+1. 单击&#x200B;**添加**&#x200B;以创建配置。
 
    ![chlimage_1](assets/chlimage_1a.png)
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
    **POP3配置属性：**
 
-   `pop3.leave.on.server`：定义是否在服务器上保留消息。 设置为true会在服务器上保留消息，否则为false。 默认为true。
+   `pop3.leave.on.server`：定义是否在服务器上保留邮件。 设置为true会在服务器上保留消息，否则为false。 默认为true。
 
    **POP3示例：**
 
@@ -64,9 +64,9 @@ ht-degree: 0%
 
    允许您设置要搜索的标志。
 
-   `imap.flag.SEEN`：对于新/未查看的消息，设置为false；对于已读取的消息，设置为true
+   `imap.flag.SEEN`：将新/未查看的消息设为false，已读取的消息设为true
 
-   请参阅 [https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html) 以获取完整的标志列表。
+   有关标记的完整列表，请参阅[https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html)。
 
    **IMAP示例：**
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 要配置新闻稿服务，请执行以下操作：
 
-1. 在OSGi控制台中，位于 `<host>:<port>/system/console/configMgr`，导航到 **MCM新闻稿**.
+1. 在`<host>:<port>/system/console/configMgr`处的OSGi控制台中，导航到&#x200B;**MCM新闻稿**。
 
 1. 配置服务并在完成后保存更改。
 

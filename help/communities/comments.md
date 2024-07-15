@@ -25,8 +25,8 @@ ht-degree: 1%
 
 本文档描述了：
 
-* 正在添加 `Comments` 到页面。
-* 的配置设置 `Comments` 组件。
+* 正在将`Comments`添加到页面。
+* `Comments`组件的配置设置。
 
 >[!NOTE]
 >
@@ -34,39 +34,39 @@ ht-degree: 1%
 
 ### 向页面添加评论 {#adding-comments-to-a-page}
 
-添加 `Comments` 组件到创作模式下的页面，请使用组件浏览器查找
+要将`Comments`组件添加到创作模式下的页面，请使用组件浏览器来查找
 
 * `Communities / Comments`
 
 并将其拖动到页面上的适当位置，例如相对于要供用户注释的功能的位置，或仅拖动到页面底部。
 
-有关必要信息，请访问 [社区组件基础知识](/help/communities/basics.md).
+有关必要的信息，请访问[社区组件基础知识](/help/communities/basics.md)。
 
-当 [所需的客户端库](/help/communities/essentials-comments.md#essentials-for-client-side) 包括，这就是 `Comments` 组件出现。
+当包含[所需的客户端库](/help/communities/essentials-comments.md#essentials-for-client-side)时，`Comments`组件的显示方式如下所示。
 
-![comments组件](assets/comments-component.png)
+![comments-component](assets/comments-component.png)
 
 >[!NOTE]
 >
->只有一个 `Comments` 组件可能存在于页面上。 请注意，若干社区功能已经包含评论，例如博客、日历、论坛、问题与解答以及评论。
+>一个页面上只能存在一个`Comments`组件。 请注意，若干社区功能已经包含评论，例如博客、日历、论坛、问题与解答以及评论。
 
 ### 配置评论 {#configuring-comments}
 
-选择已放置的 `Comments` 组件以访问和选择 `Configure` 图标打开“编辑”对话框。
+选择要访问的已放置的`Comments`组件，并选择用于打开“编辑”对话框的`Configure`图标。
 
-![“配置”图标](assets/configure.png)
+![配置图标](assets/configure.png)
 
 ![注释设置](assets/commentssettings.png)
 
 #### “评论”选项卡 {#comments-tab}
 
-在 **评论** 选项卡，指定访客输入评论的方式。
+在&#x200B;**评论**&#x200B;选项卡下，指定访客输入评论的方式。
 
 * **允许回复**
 
   如果选中，则允许成员回复现有注释。 默认值为取消选中。
 
-* **每页的评论数**
+* 每页&#x200B;**条评论**
 
   限制每页显示的评论数和显示的回复数。 默认值为10。
 
@@ -104,7 +104,7 @@ ht-degree: 1%
 
 #### “用户审核”选项卡 {#user-moderation-tab}
 
-在 **用户审核** 选项卡，指定如何管理发布的评论。 有关更多信息，请参阅 [审核用户生成的内容](/help/communities/moderate-ugc.md).
+在&#x200B;**用户审核**&#x200B;选项卡下，指定如何管理发布的评论。 有关详细信息，请参阅[审核用户生成的内容](/help/communities/moderate-ugc.md)。
 
 * **预审**
 
@@ -118,7 +118,7 @@ ht-degree: 1%
 
   如果选中，则允许审查方拒绝评论。 默认值为取消选中。
 
-* **关闭/重新打开注释**
+* **关闭/重新打开评论**
 
   如果选中，则允许审查方关闭和重新打开评论。 默认值为取消选中。
 
@@ -130,7 +130,7 @@ ht-degree: 1%
 
   如果选中，则允许成员从下拉列表中选择将评论标记为不适当的原因。 默认值为取消选中。
 
-* **自定义标志原因**
+* **自定义标记原因**
 
   如果选中，则允许成员输入将评论标记为不适当的原因。 默认值为取消选中。
 
@@ -140,45 +140,45 @@ ht-degree: 1%
 
 * **标记限制**
 
-  输入在将评论从公开视图隐藏之前必须对其标记的次数。 此数字必须大于或等于 **审核阈值**. 默认值为5。
+  输入在将评论从公开视图隐藏之前必须对其标记的次数。 此数字必须大于或等于&#x200B;**审核阈值**。 默认值为5。
 
 #### “排序设置”选项卡 {#sort-settings-tab}
 
-在 **排序设置** 选项卡，指定在显示时发布评论的排序方式。
+在&#x200B;**排序设置**&#x200B;选项卡下，指定在显示时如何对发布的评论进行排序。
 
 * **排序字段**
 
-  下拉以选择其中一项 `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`，或 `Most Liked`.
+  下拉以选择`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`或`Most Liked`之一。
 
 * **排序顺序**
 
-  下拉以选择其中一项 `Ascending` 或 `Descending`.
+  下拉以选择`Ascending`或`Descending`之一。
 
 ### 更改为自定义评论类型 {#changing-to-a-custom-comment-type}
 
 通过更改“注释资源类型”，注释系统不再使用缺省值生成注释的实例，而是由开发人员自定义（扩展）的实例。
 
-一旦知道自定义资源类型，请输入 [设计模式](/help/sites-authoring/default-components-designmode.md) 并双击所放置的 `Comments` 组件打开带有额外选项卡的对话框。
+在已知自定义资源类型后，输入[设计模式](/help/sites-authoring/default-components-designmode.md)并双击放置的`Comments`组件以打开带有额外选项卡的对话框。
 
-在 **资源类型** 选项卡，为的新实例指定自定义resourceType `Comments or Voting` 组件：
+在&#x200B;**资源类型**&#x200B;选项卡下，为`Comments or Voting`组件的新实例指定自定义resourceType：
 
-![resource-type](assets/resource-type.png)
+![资源类型](assets/resource-type.png)
 
 * **评论资源类型**
 
-  导航到扩展的resourceType `comment` /apps中的组件（单个注释）。 例如，`/apps/social/commons/components/hbs/comments/comment`
+  导航到/apps中的扩展`comment`组件的resourceType（单个注释）。 例如，`/apps/social/commons/components/hbs/comments/comment`
 
   此资源标识访客发表评论时创建的UGC的resourceType。
 
 * **投票资源类型**
 
-  导航到扩展的resourceType `voting` /apps中的组件 例如，`/apps/social/components/hbs/voting`
+  导航到/apps中扩展`voting`组件的resourceType。 例如，`/apps/social/components/hbs/voting`
 
   此资源标识访客发表投票时创建的UGC的资源类型。
 
 * **注释系统资源类型**
 
-  导航到扩展的resourceType `comments`/apps中的组件（注释系统） 除非页面模板，否则留空 [动态包括](/help/communities/scf.md#add-or-include-a-communities-component) 基础脚本中的注释系统，而不是作为资源（注释节点）添加到页面。 通过阅读有关 [`{{include}}` 辅助函数](/help/communities/handlebars-helpers.md#include).
+  导航到/apps中的扩展`comments`组件（注释系统）的resourceType。 留空，除非页面模板[在基础脚本中动态包含](/help/communities/scf.md#add-or-include-a-communities-component)注释系统，而不是作为资源（注释节点）添加到页面。 通过阅读有关[`{{include}}`帮助程序](/help/communities/handlebars-helpers.md#include)的信息了解详情。
 
 ### 网站访客体验 {#site-visitor-experience}
 
@@ -190,7 +190,7 @@ ht-degree: 1%
 
 当网站访客登录时，根据配置，他们可能
 
-* 发表新评论
+* Post新评论
 * 编辑他们自己的评论
 * 删除他们自己的评论
 * 标记其他人的评论
@@ -201,8 +201,8 @@ ht-degree: 1%
 
 ### 附加信息 {#additional-information}
 
-欲知更多信息，请访问 [注释要点](/help/communities/essentials-comments.md) 适用于开发人员的页面。
+可在面向开发人员的[Comments Essentials](/help/communities/essentials-comments.md)页面上找到更多信息。
 
-有关审核已发布的评论，请参阅 [审核用户生成的内容](/help/communities/moderate-ugc.md).
+有关审核已发布的评论，请参阅[审核用户生成的内容](/help/communities/moderate-ugc.md)。
 
-有关已发布评论的翻译，请参阅 [翻译用户生成的内容](/help/communities/translate-ugc.md).
+有关已发布评论的翻译，请参阅[翻译用户生成的内容](/help/communities/translate-ugc.md)。

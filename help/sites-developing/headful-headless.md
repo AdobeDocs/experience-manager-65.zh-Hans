@@ -46,7 +46,7 @@ AEM 还可用于简单地管理内容，并允许呈现和交付要由另一个�
 
 >[!NOTE]
 >
->当然，您也可以将网上商店 SPA 作为功能齐全的 AEM SPA 重新实施，方式是[使用 AEM SPA Editor 框架。](/help/sites-developing/spa-walkthrough.md) 如果您已经拥有AEM并且想要创建Web商店或其他SPA，则推荐使用此方法，但它超出了此文档的范围。
+>当然，您也可以将网上商店 SPA 作为功能齐全的 AEM SPA 重新实施，方式是[使用 AEM SPA Editor 框架。](/help/sites-developing/spa-walkthrough.md)如果您已经拥有AEM并且要创建Web商店或其他SPA，则建议使用此方法，但它超出了此文档的范围。
 
 ## SPA 集成级别 {#integration-levels}
 

@@ -56,14 +56,14 @@ AEM 安装通常至少包含两个环境：
 
 首次登录时，简短的在线教程将重点介绍用户界面的一些主要功能。
 
-之后，您可以使用导航面板访问 AEM 的关键区域。对于内容片段，您将使用 **资产控制台**.
+之后，您可以使用导航面板访问 AEM 的关键区域。对于内容片段，您将使用&#x200B;**Assets控制台**。
 
 要打开“导航”面板，请选择左上角的Adobe图标，然后按小指南针图标：
 
 ![“导航”面板](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
->尽管内容片段是AEM的一项功能 **站点**，可在 **资产** 控制台。 这是一个技术细节，应该不会影响您，但了解它可能会有所帮助。
+>尽管内容片段是AEM **Sites**&#x200B;的功能，但在&#x200B;**Assets**&#x200B;控制台中找到它们。 这是一个技术细节，应该不会影响您，但了解它可能会有所帮助。
 
 在控制台中，您可以选择文件夹以导航到您的内容片段，或选择痕迹导航（在标题中）以导航到备份树。
 
@@ -71,9 +71,9 @@ AEM 安装通常至少包含两个环境：
 
 ### 操作、选择、查看 {#actions-selecting-viewing}
 
-此 **资产** 控制台已专用 **操作工具栏**、和 **快速操作** 在选择资源（例如，文件夹或内容片段）后可以使用的区段。
+**Assets**&#x200B;控制台具有专用的&#x200B;**操作工具栏**&#x200B;和&#x200B;**快速操作**，您可以在选择资源（例如，文件夹或内容片段）后使用这些工具。
 
-快速操作适用于单个资源，请参阅 **巴塞尔** 在以下示例中：
+快速操作适用于单个资源，请参阅以下示例中的&#x200B;**Basel**：
 
 ![快速操作](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
@@ -83,7 +83,7 @@ AEM 安装通常至少包含两个环境：
 
 您可以使用视图选择器选择用于查看资源的格式：
 
-![视图选择器](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
+![查看选择器](/help/journey-headless/author/assets/headless-journey-author-navigation-03.png)
 
 您可以使用边栏选择器查看有关项目的其他信息。 这样还可以访问其他操作。
 
@@ -101,7 +101,7 @@ AEM 安装通常至少包含两个环境：
 
 #### 创建文件夹 {#creating-folder}
 
-为此，您可以在中创建一系列文件夹 **文件** 资产控制台的部分。 选择&#x200B;**创建**&#x200B;选项（右上角），然后选择&#x200B;**文件夹**：
+为此，您可以在Assets控制台的&#x200B;**文件**&#x200B;部分中创建一系列文件夹。 选择&#x200B;**创建**&#x200B;选项（右上角），然后选择&#x200B;**文件夹**：
 
 ![“创建文件夹”选项](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -129,7 +129,7 @@ AEM 安装通常至少包含两个环境：
 
 以防万一...
 
-您可能会获得一个初始文件夹，可以在其中创建文件夹。这是因为必须将一些配置详细信息应用于根文件夹（此操作通常由开发人员或系统管理员执行）。您可能对此不感兴趣，但如果需要，您可以查看 **配置** 在 **Cloud Service** 文件夹的 **属性**：
+您可能会获得一个初始文件夹，可以在其中创建文件夹。这是因为必须将一些配置详细信息应用于根文件夹（此操作通常由开发人员或系统管理员执行）。您可能对此不感兴趣，但如有必要，可以检查文件夹&#x200B;**Cloud Service**&#x200B;的&#x200B;**属性**&#x200B;中的&#x200B;**配置**：
 
 ![创建文件夹属性 – 配置](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
@@ -139,23 +139,23 @@ AEM 安装通常至少包含两个环境：
 
 ### 创建内容片段 {#creating-fragment}
 
-创建内容片段非常相似 — 您只需使用 **内容片段** 选项：
+创建内容片段非常相似 — 您只需改用&#x200B;**内容片段**&#x200B;选项：
 
-![“创建内容片段”选项](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
+![创建内容片段选项](/help/journey-headless/author/assets/headless-journey-author-content-fragment-01.png)
 
 此时将打开向导。 第一步是选择片段将基于的内容片段模型：
 
 ![创建内容片段 — 选择模型](/help/journey-headless/author/assets/headless-journey-author-content-fragment-02.png)
 
-继续使用后 **下一个** 您可以提供详细信息(**基本** 和 **高级**)对于您的片段：
+继续使用&#x200B;**下一步**&#x200B;后，您可以为片段提供详细信息（**基本**&#x200B;和&#x200B;**高级**）：
 
 ![创建内容片段 – 提供名称](/help/journey-headless/author/assets/headless-journey-author-content-fragment-03.png)
 
-确认 **创建** 然后你可以 **打开** 编辑器中的片段。
+使用&#x200B;**创建**&#x200B;进行确认，然后您可以在编辑器中&#x200B;**打开**&#x200B;您的片段。
 
 ### 编辑片段 {#editing-fragment}
 
-您可以在创建片段后立即打开它，也可以通过从资产控制台中选择它来打开片段。
+您可以在创建片段后立即打开它，也可以通过从Assets控制台中选择它来打开片段。
 
 在编辑器首次打开时，您将看到：
 
@@ -220,7 +220,7 @@ AEM 安装通常至少包含两个环境：
 
 完成片段后，您可以&#x200B;**发布**&#x200B;它，以便 Headless 应用程序可使用它。
 
-发布操作在编辑器中可用(或者从 **资产** 控制台)：
+发布操作在编辑器中可用(或从&#x200B;**Assets**&#x200B;控制台的工具栏中可用)：
 
 ![内容片段编辑器 – 我的片段](/help/journey-headless/author/assets/headless-journey-author-content-fragment-06.png)
 
@@ -265,7 +265,7 @@ AEM 安装通常至少包含两个环境：
       * [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * 快速入门指南
-   * [创建资源文件夹Headless快速入门指南](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+   * [创建Assets文件夹Headless快速入门指南](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [AEM Headless 内容架构师历程](/help/journey-headless/architect/overview.md)
 

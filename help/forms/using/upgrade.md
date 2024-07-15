@@ -24,7 +24,7 @@ ht-degree: 6%
 | AEM 6.5 | 本文 |
 
 
-AEM 6.5 Forms包括多项新增功能和增强功能，可简化表单和交易记录的创建、管理和用户体验。 要了解AEM 6.5 Forms的所有新增功能和增强功能，请参阅 [新增功能摘要文档](../../forms/using/whats-new.md).
+AEM 6.5 Forms包括多项新增功能和增强功能，可简化表单和交易记录的创建、管理和用户体验。 要了解AEM 6.5 Forms的所有新增功能和增强功能，请参阅[新增功能摘要文档](../../forms/using/whats-new.md)。
 
 您可以升级现有的LiveCycle或AEM Forms安装，以获取AEM 6.5 Forms中提供的新功能和增强功能，同时保持现有数据、流程和资产不变。 升级时，还会保留进程的元数据和状态。 您可以选择升级路径以开始升级。
 
@@ -61,17 +61,17 @@ AEM 6.5 Forms包括多项新增功能和增强功能，可简化表单和交易�
 * JEE上的AEM 6.1 Forms
 * JEE上的AEM 6.2 Forms
 
-JEE上的AEM 6.5.18.0 Forms提供两种类型的安装程序： [完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) 和 [修补程序安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+JEE上的AEM 6.5.18.0 Forms提供两种类型的安装程序： [完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)和[修补程序安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
 
-**完整安装程序**：您可以使用完整安装程序设置新的AEM Forms实例，或执行从JEE上的AEM 6.5.x.x Forms升级到JEE上的AEM 6.5.18.0 Forms的升级。
+**完整安装程序**：您可以使用完整安装程序设置新的AEM Forms实例，或从JEE上的AEM 6.5.x.x Forms升级到JEE上的AEM 6.5.18.0 Forms。
 
-**修补程序安装程序**：修补程序安装程序适用于已经在使用AEM 6.5.x.x版本的客户。 您可以使用修补程序安装程序升级到AEM Forms的最新版本。
+**修补程序安装程序**：修补程序安装程序适用于已使用AEM 6.5.x.x版本的客户。 您可以使用修补程序安装程序升级到AEM Forms的最新版本。
 
 下图描述了使用完整安装程序和修补程序安装程序的场景。
 
 ![完整安装程序和修补程序安装程序](/help/forms/using/assets/full-and-patch-installer.png)
 
-请参阅 [AEM 6.5 Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) 文章以安装最新的Service Pack for JEE环境。
+请参阅[AEM 6.5 Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html)文章，安装最新的Service Pack for JEE环境。
 
 <!--
 [Work in Progress]

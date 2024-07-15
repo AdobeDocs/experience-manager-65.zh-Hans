@@ -30,7 +30,7 @@ ht-degree: 1%
 
 ### 瞬态工作流 {#transient-workflows}
 
-要优化高摄取负载，您可以定义 [作为临时工作流](/help/sites-developing/workflows.md#transient-workflows).
+要优化高摄取负载，您可以将[工作流定义为临时](/help/sites-developing/workflows.md#transient-workflows)。
 
 当工作流是瞬态时，与中间工作步骤相关的运行时数据在运行时不会保留在JCR中（保留输出演绎版）。
 
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ### 调整DAM工作流 {#tuning-dam-workflows}
 
-有关DAM工作流的性能优化准则，请参阅 [AEM Assets Performance Tuning指南](/help/assets/performance-tuning-guidelines.md).
+有关DAM工作流的性能优化准则，请参阅[AEM Assets性能优化指南](/help/assets/performance-tuning-guidelines.md)。
 
 ### 配置最大并发工作流数 {#configure-the-maximum-number-of-concurrent-workflows}
 
@@ -55,19 +55,19 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
 
 如果正在执行的工作流需要系统资源，这可能意味着AEM几乎无法将其用于其他任务，例如渲染创作UI。 因此，系统在批量图像上传等活动期间可能会变得缓慢。
 
-要解决此问题，Adobe建议将 **最大并行作业数** 介于系统处理器核心数量的一半到四分之三之间。 这应该允许系统在处理这些工作流时保持响应性的足够容量。
+要解决此问题，Adobe建议将&#x200B;**最大并行作业数**&#x200B;配置为系统处理器内核数的一半到四分之三之间。 这应该允许系统在处理这些工作流时保持响应性的足够容量。
 
-配置 **最大并行作业数**，您可以：
+要配置&#x200B;**最大并行作业数**，您可以：
 
-* 配置 **[OSGi配置](/help/sites-deploying/configuring-osgi.md)** 从AEM Web控制台；对于 **队列： Granite工作流队列** (一 **Apache Sling作业队列配置**)。
+* 从AEM Web控制台配置&#x200B;**[OSGi配置](/help/sites-deploying/configuring-osgi.md)**；对于&#x200B;**队列： Granite工作流队列** （一个&#x200B;**Apache Sling作业队列配置**）。
 
-* 配置队列可以从 **Sling作业** AEM选项；对于 **作业队列配置： Granite工作流队列**，在 `http://localhost:4502/system/console/slingevent`.
+* 可以从AEM Web控制台的&#x200B;**Sling作业**&#x200B;选项配置队列；对于&#x200B;**作业队列配置： Granite工作流队列**，位于`http://localhost:4502/system/console/slingevent`。
 
-此外，还有单独的配置 **Granite工作流外部进程作业队列**. 这用于启动外部二进制文件的工作流进程，例如 **InDesign Server** 或 **Magick图像**.
+此外，**Granite工作流外部进程作业队列**&#x200B;有单独的配置。 用于启动外部二进制文件的工作流进程，如&#x200B;**InDesign Server**&#x200B;或&#x200B;**图像Magick**。
 
 ### 配置单个作业队列 {#configure-individual-job-queues}
 
-在某些情况下，配置单个作业队列来控制并发线程或基于单个作业的其他队列选项会很有用。 您可以通过以下方式从Web控制台添加和配置单个队列 **Apache Sling作业队列配置** 工厂。 要查找要列出的相应主题，请执行工作流模型并在 **Sling作业** 控制台；例如，在 `http://localhost:4502/system/console/slingevent`.
+在某些情况下，配置单个作业队列来控制并发线程或基于单个作业的其他队列选项会很有用。 您可以通过&#x200B;**Apache Sling作业队列配置**&#x200B;工厂从Web控制台添加和配置单个队列。 要查找要列出的相应主题，请执行工作流的模型并在&#x200B;**Sling作业**&#x200B;控制台中查找它；例如，位于`http://localhost:4502/system/console/slingevent`。
 
 也可以为临时工作流添加单个作业队列。
 
@@ -77,9 +77,9 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-默认情况下， **每周维护时段** 具有 **工作流清除** 任务，但需要在运行之前对其进行配置。 要配置工作流清除，请使用 **AdobeGranite工作流清除配置** 必须在Web控制台中添加。
+默认情况下，**每周维护时段**&#x200B;具有&#x200B;**工作流清除**&#x200B;任务，但需要先配置该任务才能运行。 要配置工作流清除，必须在Web控制台中添加新的&#x200B;**AdobeGranite工作流清除配置**。
 
-有关AEM中维护任务的更多详细信息，请参阅 [操作功能板](/help/sites-administering/operations-dashboard.md).
+有关AEM中维护任务的更多详细信息，请参阅[操作功能板](/help/sites-administering/operations-dashboard.md)。
 
 ## 自定义 {#customization}
 
@@ -91,7 +91,7 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
 
 >[!NOTE]
 >
->另请参阅 [AEM 6.5中的存储库重组](/help/sites-deploying/repository-restructuring.md).
+>另请参阅AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的[存储库重新构建。
 
 #### 位置 — 工作流模型 {#locations-workflow-models}
 
@@ -106,7 +106,7 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
   >请勿：
   >
   >* 将您的任何自定义工作流模型放置在此文件夹中
-  >* 编辑任何内容 `/libs`
+  >* 在`/libs`中编辑任何内容
   >
   >因为任何更改都可能在升级时或在安装热修复程序、累积修补程序包或Service Pack时被覆盖。
 
@@ -126,7 +126,7 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
 
   >[!NOTE]
   >
-  >如果编辑这些设计 *使用AEM UI*，则详细信息将会复制到新位置。
+  >如果这些设计是使用&#x200B;*AEM UI*&#x200B;编辑的，则详细信息将复制到新位置。
 
 #### 位置 — 工作流启动器 {#locations-workflow-launchers}
 
@@ -141,7 +141,7 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
   >请勿：
   >
   >* 将您的任何自定义工作流启动器放置在此文件夹中
-  >* 编辑任何内容 `/libs`
+  >* 在`/libs`中编辑任何内容
   >
   >因为任何更改都可能在升级时或在安装热修复程序、累积修补程序包或Service Pack时被覆盖。
 
@@ -157,7 +157,7 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
 
   >[!NOTE]
   >
-  >如果编辑了这些定义 *使用AEM UI*，则详细信息将会复制到新位置。
+  >如果这些定义是使用&#x200B;*AEM UI*&#x200B;编辑的，则详细信息将复制到新位置。
 
 #### 位置 — 工作流脚本 {#locations-workflow-scripts}
 
@@ -172,7 +172,7 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
   >请勿：
   >
   >* 将您的任何自定义工作流脚本放在此文件夹中
-  >* 编辑任何内容 `/libs`
+  >* 在`/libs`中编辑任何内容
   >
   >因为任何更改都可能在升级时或在安装热修复程序、累积修补程序包或Service Pack时被覆盖。
 
@@ -199,7 +199,7 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
   >请勿：
   >
   >* 将您的任何自定义工作流通知定义放在此文件夹中
-  >* 编辑任何内容 `/libs`
+  >* 在`/libs`中编辑任何内容
   >
   >因为任何更改都可能在升级时或在安装热修复程序、累积修补程序包或Service Pack时被覆盖。
 
@@ -244,10 +244,10 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 保存会话：
 
-* 在工作流进程内，如果 `WorkflowSession` 正用于修改存储库，但不明确保存会话 — 工作流完成时将保存会话。
-* `Session.Save` 不应从工作流步骤中调用：
+* 在工作流进程内，如果`WorkflowSession`正用于修改存储库，则不要显式保存会话 — 工作流完成时将保存会话。
+* 不应从工作流步骤中调用`Session.Save`：
 
-   * 建议调整工作流jcr会话； `save` 没有必要使用，因为工作流引擎会在工作流执行完成后自动保存会话。
+   * 建议调整工作流jcr会话；那么`save`不是必需的，因为工作流引擎在工作流执行完成后自动保存会话。
    * 建议不要对流程步骤创建自己的jcr会话。
 
 * 通过消除不必要的保存，您可以减少开销，从而使工作流更加高效。
@@ -258,7 +258,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 ### 最大程度地减少启动器的数量/范围 {#minimize-the-number-scope-of-launchers}
 
-有一个监听器负责所有 [工作流启动器](/help/sites-administering/workflows-starting.md#workflows-launchers) 注册的：
+有一个侦听器负责已注册的所有[工作流启动器](/help/sites-administering/workflows-starting.md#workflows-launchers)：
 
 * 它会侦听在其他启动器的通配属性中指定的所有路径上的更改。
 * 调度事件后，工作流引擎将评估每个启动器，以确定它是否应运行。
@@ -271,7 +271,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 ### 启动器的配置增强功能 {#configuration-enhancements-for-launchers}
 
-自定义 [启动器配置](/help/sites-administering/workflows-starting.md#workflows-launchers) 已得到增强，可支持以下内容：
+自定义[启动器配置](/help/sites-administering/workflows-starting.md#workflows-launchers)已得到增强，可支持以下内容：
 
 * 同时具备多个条件“AND”。
 * 在单个条件中具有OR条件。
@@ -282,7 +282,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 工作流可能会产生大量开销，无论是在内存中创建的对象还是在存储库中跟踪的节点。 因此，最好让工作流在自身中进行处理，而不是启动其他工作流。
 
-例如，某个工作流在一组内容上实施业务流程，然后激活该内容。 最好创建一个自定义工作流进程来激活其中的每个节点，而不是启动 **激活内容** 需要发布的每个内容节点的模型。 此方法将需要额外的开发工作，但在执行时比为每个激活启动单独的工作流实例更有效。
+例如，某个工作流在一组内容上实施业务流程，然后激活该内容。 最好创建一个自定义工作流进程来激活其中的每个节点，而不是为每个需要发布的内容节点启动&#x200B;**激活内容**&#x200B;模型。 此方法将需要额外的开发工作，但在执行时比为每个激活启动单独的工作流实例更有效。
 
 另一个示例是处理多个节点、创建工作流包，然后激活所述包的工作流。 您无需创建资源包，然后启动一个将资源包作为有效负载的单独工作流，您可以在创建资源包的步骤中更改工作流的有效负载，然后调用该步骤以激活同一工作流模型中的资源包。
 
@@ -294,13 +294,13 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 ### 工作流暂存 {#workflow-stages}
 
-您可以定义 [工作流暂存](/help/sites-developing/workflows.md#workflow-stages)，然后将任务/步骤分配给特定工作流暂存。
+您可以定义[工作流阶段](/help/sites-developing/workflows.md#workflow-stages)，然后将任务/步骤分配给特定的工作流阶段。
 
-此信息用于在单击 [**工作流信息** 选项卡中的工作项 **收件箱**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions). 可以编辑现有工作流模型以添加暂存。
+当您从&#x200B;**收件箱**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;单击工作项的&#x200B;[**工作流信息**&#x200B;选项卡时，此信息用于显示工作流的进度。 可以编辑现有工作流模型以添加暂存。
 
 ### 激活页面流程步骤 {#activate-page-process-step}
 
-此 **激活页面进程** 步骤将为您激活页面，但不会自动查找任何引用的DAM资产并激活这些资产。
+**激活页面进程**&#x200B;步骤将为您激活页面，但不会自动查找任何引用的DAM资产并将其激活。
 
 如果您计划将此步骤用作工作流模型的一部分，请牢记这一点。
 
@@ -309,17 +309,17 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 升级实例时：
 
 * 确保在升级实例之前备份任何自定义工作流模型。
-* 确认您的自定义工作流均未存储在 [位置](#locations)：
+* 确认您的自定义工作流没有存储在[位置](#locations)下：
 
    * `/libs/settings/workflow/models/projects`
 
 >[!NOTE]
 >
->另请参阅 [AEM 6.5中的存储库重组](/help/sites-deploying/repository-restructuring.md).
+>另请参阅AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的[存储库重新构建。
 
 ## 系统工具 {#system-tools}
 
-有许多系统工具可以帮助监控、维护和排除工作流故障。 以下所有示例URL都使用 `localhost:4502`，但应在任何创作实例上可用( `<hostname>:<port>`)。
+有许多系统工具可以帮助监控、维护和排除工作流故障。 以下所有示例URL都使用`localhost:4502`，但应在任何作者实例(`<hostname>:<port>`)上可用。
 
 ### Sling作业处理控制台 {#sling-job-handling-console}
 

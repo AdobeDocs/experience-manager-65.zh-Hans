@@ -24,15 +24,15 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本文档是 [Adobe Experience Manager (AEM) Mobile快速入门](/help/mobile/getting-started-aem-mobile.md) 指南，AEM Mobile参考的推荐起点。
+>本文档是[Adobe Experience Manager (AEM) Mobile快速入门](/help/mobile/getting-started-aem-mobile.md)指南的一部分，该指南是AEM Mobile参考的推荐起点。
 
 在内容作者开始为移动应用程序生成目标内容之前，必须执行多个步骤：为用户和组获取正确的权限集、创建云服务、为活动配置应用程序，以及最终生成内容。
 
-未来的假设是 [AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 已成功部署并可通过AEM Mobile仪表板访问。
+将来的假设是[AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)已成功部署并可通过AEM Mobile仪表板访问。
 
 ## 权限 {#permissions}
 
-需要访问个性化控制台的用户必须属于 `target-activity-authors` 组。 建议作为用户和组设置的一部分，将target-activity-group添加到apps-admins组中。 通过添加target-activity-authors组，用户能够查看个性化导航菜单条目。
+需要访问个性化控制台的用户必须属于`target-activity-authors`组。 建议作为用户和组设置的一部分，将target-activity-group添加到apps-admins组中。 通过添加target-activity-authors组，用户可以看到Personalization导航菜单条目。
 
 如果忘记将您要拥有个性化Admin Console访问权限的用户或组添加到target-activity-authors组，则会阻止用户查看个性化控制台。
 
@@ -64,7 +64,7 @@ ht-degree: 0%
 
 ### 客户代码 {#client-code}
 
-要登录AMS服务，请访问 [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)，选择移动设备应用程序，然后单击设置。 找到SDK Target选项字段，将客户端代码置于该字段中，然后单击保存。
+要登录AMS服务，请访问[https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)，选择移动应用程序，然后单击设置。 找到SDK Target选项字段，将客户端代码置于该字段中，然后单击保存。
 
 ![chlimage_1-11](assets/chlimage_1-11.png)
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-从创建或选择向导步骤中，选择移动服务下拉列表，然后选择创建配置条目。 提供标题、公司、用户名、密码并选择适当的数据中心。 如果您不知道这些值，请与AdobeMobile Service管理员联系以获取它们。 填写完所有字段后，单击 **验证**. 验证过程将转至AMS并验证帐户的凭据，在验证成功后，将填充移动设备应用程序列表，您可以从下拉列表中选择关联的移动设备应用程序。 单击“提交”按钮以完成向导。 该过程可能需要一些时间来获取配置数据以及与该应用程序关联的任何分析。 完成该过程后，单击 **完成** 从该模式返回Adobe移动设备仪表板。
+从创建或选择向导步骤中，选择移动服务下拉列表，然后选择创建配置条目。 提供标题、公司、用户名、密码并选择适当的数据中心。 如果您不知道这些值，请与AdobeMobile Service管理员联系以获取它们。 填写完所有字段后，单击&#x200B;**验证**。 验证过程将转至AMS并验证帐户的凭据，在验证成功后，将填充移动设备应用程序列表，您可以从下拉列表中选择关联的移动设备应用程序。 单击“提交”按钮以完成向导。 该过程可能需要一些时间来获取配置数据以及与该应用程序关联的任何分析。 该过程完成后，单击模式窗口中的&#x200B;**完成**&#x200B;以返回到Adobe移动设备仪表板。
 
 返回到“移动设备功能板”后，“管理Cloud Service”图块将包含AMS云服务。 此外，分析量度图块中会填充生命周期报表。
 
@@ -88,9 +88,9 @@ ht-degree: 0%
 
 ## Target内容同步处理程序 {#target-content-sync-handlers}
 
-为了向用户设备交付内容，通过呈现由AEM内容作者创建的选件来生成内容。 为了处理目标选件的渲染，新增了一个用于处理选件的内容同步处理程序。 使用混合引用应用程序作为示例，en（英语）内容包包含的ContentSyncConfig具有 [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) 处理程序。 下一步是将选件呈现到设备时非常关键。 mobileappoffers处理程序具有路径属性，该属性标识用于应用程序的个性化活动的路径。
+为了向用户设备交付内容，通过呈现由AEM内容作者创建的选件来生成内容。 为了处理目标选件的渲染，新增了一个用于处理选件的内容同步处理程序。 使用混合引用应用程序作为示例，en （英语）内容包包含具有[mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml)处理程序的ContentSyncConfig。 下一步是将选件呈现到设备时非常关键。 mobileappoffers处理程序具有路径属性，该属性标识用于应用程序的个性化活动的路径。
 
-例如，如果在以下位置有活动： */content/campaigns/hybridref*，复制此路径并将其作为值粘贴到 *路径* mobileappoffers处理程序的属性。
+例如，如果在&#x200B;*/content/campaigns/hybridref*&#x200B;处有活动，请复制此路径并将其作为值粘贴到mobileappoffers处理程序的&#x200B;*path*&#x200B;属性。
 
 对于混合引用应用程序，有两个mobileappoffers处理程序，一个用于开发，另一个用于生产。
 
@@ -98,7 +98,7 @@ ht-degree: 0%
 
 ### 渲染模式 {#render-mode}
 
-对于发布和开发设置，mobileappoffers处理程序的配置方式不同。 对于发布设置，有一个名为的属性 *渲染模式* 值为 *发布* 在cq：ContentSyncConfig节点上设置。 mobileappoffers处理程序引用renderMode，如果设置为publish，则编辑所创建的mbox id。 默认情况下，由AEM创建的mbox有一个 — author值附加到mbox ID。 这会标识该活动尚未发布，应当使用未发布的促销活动来获取优惠解决方案。
+对于发布和开发设置，mobileappoffers处理程序的配置方式不同。 对于发布设置，在cq：ContentSyncConfig节点上设置了名为&#x200B;*renderMode*&#x200B;且值为&#x200B;*publish*&#x200B;的属性。 mobileappoffers处理程序引用renderMode，如果设置为publish，则编辑所创建的mbox id。 默认情况下，由AEM创建的mbox有一个 — author值附加到mbox ID。 这会标识该活动尚未发布，应当使用未发布的促销活动来获取优惠解决方案。
 
 通过Adobe移动设备仪表板暂存内容时，暂存内容会被视为生产就绪内容，并通过非开发内容同步配置进行渲染。 按此方式呈现会导致从所有mbox ID中删除 — author，并预期Target服务器上会提供一个已发布的活动。 在测试暂存内容之前，请确保已发布该活动。
 

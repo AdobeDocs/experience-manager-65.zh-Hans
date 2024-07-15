@@ -18,21 +18,21 @@ ht-degree: 0%
 
 # 使用AEM Forms存储库 {#working-with-aem-forms-repository}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 **关于存储库服务**
 
-存储库服务为AEM Forms提供资源存储和管理服务。 当开发人员创建 *AEM Forms* 应用程序中，他们可以在存储库中部署资产，而不是部署文件系统。 资产可以包括任何类型的附属资料，包括XML表单、PDF forms(包括Acrobat表单)、表单片段、图像、配置文件、策略、SWF文件、DDX文件、XML架构、WSDL文件和测试数据。
+存储库服务为AEM Forms提供资源存储和管理服务。 当开发人员创建&#x200B;*AEM Forms*&#x200B;应用程序时，他们可以在存储库中部署资源，而不是在文件系统中部署资源。 资产可以包括任何类型的附属资料，包括XML表单、PDF forms(包括Acrobat表单)、表单片段、图像、配置文件、策略、SWF文件、DDX文件、XML架构、WSDL文件和测试数据。
 
-例如，考虑以下名为的Forms应用程序 *Applications/FormsApplication*：
+例如，考虑以下名为&#x200B;*Applications/FormsApplication*&#x200B;的Forms应用程序：
 
 ![ww_ww_formrepository](assets/ww_ww_formrepository.png)
 
-请注意，FormsFolder中有一个名为Loan.xdp的文件。 要访问此表单设计，请指定完整路径（包括版本）： `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+请注意，FormsFolder中有一个名为Loan.xdp的文件。 要访问此窗体设计，请指定完整路径（包括版本）： `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
 
 >[!NOTE]
 >
->有关使用Workbench创建Forms应用程序的信息，请参阅 [Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>有关使用Workbench创建Forms应用程序的信息，请参阅[Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_63)。
 
 AEM Forms存储库中资源的路径为：
 
@@ -46,7 +46,7 @@ AEM Forms存储库中资源的路径为：
 
 >[!NOTE]
 >
->您可以使用Web浏览器浏览AEM Forms存储库。 要浏览存储库，请在Web浏览器中输入以下URL `https://[server name]:[server port]/repository`. 您可以使用Web浏览器验证与使用AEM Forms存储库部分关联的快速入门结果。 例如，如果将内容添加到AEM Forms存储库，则可以在Web浏览器中查看该内容。 (请参阅 [快速入门(SOAP模式)：使用Java API编写资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
+>您可以使用Web浏览器浏览AEM Forms存储库。 要浏览存储库，请在Web浏览器`https://[server name]:[server port]/repository`中输入以下URL。 您可以使用Web浏览器验证与使用AEM Forms存储库部分关联的快速入门结果。 例如，如果将内容添加到AEM Forms存储库，则可以在Web浏览器中查看该内容。 (请参阅[快速入门(SOAP模式)：使用Java API编写资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)。)
 
 存储库API提供了几种可用于存储和检索存储库信息的操作。 例如，在处理应用程序时需要资源时，您可以获取资源列表或检索存储在存储库中的特定资源。
 
@@ -56,15 +56,15 @@ AEM Forms存储库中资源的路径为：
 
 使用存储库服务API，您可以完成以下任务：
 
-* 创建文件夹。 请参阅 [创建文件夹](aem-forms-repository.md#creating-folders).
-* 编写资源及其属性。 请参阅 [写入资源](aem-forms-repository.md#writing-resources).
-* 列出给定收藏集中的资源或其他相关资源。 请参阅 [列出资源](aem-forms-repository.md#listing-resources).
-* 读取资源及其属性。 请参阅 [正在读取资源](aem-forms-repository.md#reading-resources).
-* 更新资源及其属性。 请参阅 [更新资源](aem-forms-repository.md#updating-resources).
-* 搜索资源，包括其历史记录、相关资源和属性。 请参阅 [搜索资源](aem-forms-repository.md#searching-for-resources).
-* 指定资源之间的关系。 请参阅 [创建资源关系](aem-forms-repository.md#creating-resource-relationships).
-* 管理资源访问控制，包括锁定和解锁资源，以及读写访问控制列表(ACL)。 请参阅 [锁定资源](aem-forms-repository.md#locking-resources).
-* 删除资源及其属性。 请参阅 [删除资源](aem-forms-repository.md#deleting-resources).
+* 创建文件夹。 请参阅[创建文件夹](aem-forms-repository.md#creating-folders)。
+* 编写资源及其属性。 请参阅[正在写入资源](aem-forms-repository.md#writing-resources)。
+* 列出给定收藏集中的资源或其他相关资源。 请参阅[列出资源](aem-forms-repository.md#listing-resources)。
+* 读取资源及其属性。 请参阅[正在读取资源](aem-forms-repository.md#reading-resources)。
+* 更新资源及其属性。 请参阅[更新资源](aem-forms-repository.md#updating-resources)。
+* 搜索资源，包括其历史记录、相关资源和属性。 请参阅[搜索资源](aem-forms-repository.md#searching-for-resources)。
+* 指定资源之间的关系。 请参阅[创建资源关系](aem-forms-repository.md#creating-resource-relationships)。
+* 管理资源访问控制，包括锁定和解锁资源，以及读写访问控制列表(ACL)。 请参阅[锁定资源](aem-forms-repository.md#locking-resources)。
+* 删除资源及其属性。 请参阅[删除资源](aem-forms-repository.md#deleting-resources)。
 
 >[!NOTE]
 >
@@ -76,7 +76,7 @@ AEM Forms存储库中资源的路径为：
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 创建文件夹 {#creating-folders}
 
@@ -86,7 +86,7 @@ AEM Forms存储库中资源的路径为：
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -135,29 +135,29 @@ AEM Forms存储库中资源的路径为：
 
 1. 创建服务客户端
 
-   创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ResourceRepositoryClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 创建文件夹
 
-   要创建资源集合，必须先创建 `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` 对象。
+   要创建资源集合，必须首先创建`com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean`对象。
 
-   调用 `repositoryInfomodelFactoryBean` 对象的 `newResourceCollection` 方法，并传入以下参数：
+   调用`repositoryInfomodelFactoryBean`对象的`newResourceCollection`方法，并传入以下参数：
 
-   * A `com.adobe.repository.infomodel.Id` 要分配给资源的UUID标识符。
-   * A `com.adobe.repository.infomodel.Lid` 要分配给资源的UUID标识符。
-   * A `java.lang.String` 包含资源集合的名称。 例如：`FormsFolder`。
+   * 要分配给资源的`com.adobe.repository.infomodel.Id` UUID标识符。
+   * 要分配给资源的`com.adobe.repository.infomodel.Lid` UUID标识符。
+   * 包含资源集合名称的`java.lang.String`。 例如：`FormsFolder`。
 
-   此方法会返回 `com.adobe.repository.infomodel.bean.ResourceCollection` 表示新文件夹的对象。
+   该方法返回表示新文件夹的`com.adobe.repository.infomodel.bean.ResourceCollection`对象。
 
-   使用设置文件夹的描述 `setDescription` 方法，并传入以下参数：
+   使用`setDescription`方法设置文件夹的描述，并传入以下参数：
 
-   * A `String` 描述资源集合。 在此示例中， `"test Folder"` 已使用 `.`
+   * 描述资源集合的`String`。 在此示例中，`"test Folder"`被使用`.`
 
 1. 将文件夹写入存储库
 
-   调用 `ResourceRepositoryClient` 对象的 `writeResource` 方法，并在文件夹的URI中传递和 `ResourceCollection` 对象。 例如，文件夹的URI可以是以下值 `/Applications/FormsApplication/1.0/`.
+   调用`ResourceRepositoryClient`对象的`writeResource`方法并传入文件夹的URI和`ResourceCollection`对象。 例如，文件夹的URI可以是以下值`/Applications/FormsApplication/1.0/`。
 
-   方法返回新创建的实例 `com.adobe.repository.infomodel.bean.Resource` 对象。 例如，您可以通过调用 `com.adobe.repository.infomodel.bean.Resource` 对象的 `getId` 方法。
+   该方法返回新创建的`com.adobe.repository.infomodel.bean.Resource`对象的实例。 例如，您可以通过调用`com.adobe.repository.infomodel.bean.Resource`对象的`getId`方法检索新资源的标识符值。
 
 **另请参阅**
 
@@ -180,24 +180,24 @@ AEM Forms存储库中资源的路径为：
 
 1. 创建服务客户端
 
-   使用Microsoft .NET客户端程序集，创建 `RepositoryServiceService` 对象。 设置其 `Credentials` 属性使用 `System.Net.NetworkCredential` 包含用户名和密码的对象。
+   使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`RepositoryServiceService`对象。 使用包含用户名和密码的`System.Net.NetworkCredential`对象设置其`Credentials`属性。
 
 1. 创建文件夹
 
-   使用默认构造函数创建文件夹 `ResourceCollection` 类并传入以下参数：
+   使用`ResourceCollection`类的默认构造函数创建文件夹，并传入以下参数：
 
-   * An `Id` 对象，这是通过调用 `Id` 类并分配给 `Resource` 对象的 `id` 字段。
-   * An `Lid` 对象，这是通过调用 `Lid` 类并分配给 `Resource` 对象的 `lid` 字段。
-   * 一个字符串，其中包含分配给 `Resource` 对象的 `name` 字段。 本示例中使用的名称为 `"testfolder"`.
-   * 包含资源集合说明的字符串，该资源集合已分配给 `Resource` 对象的 `description` 字段。 本示例中使用的描述为 `"test folder"`.
+   * `Id`对象，通过调用`Id`类的默认构造函数创建并分配给`Resource`对象的`id`字段。
+   * `Lid`对象，通过调用`Lid`类的默认构造函数创建并分配给`Resource`对象的`lid`字段。
+   * 一个字符串，其中包含分配给`Resource`对象的`name`字段的资源集合名称。 此示例中使用的名称为`"testfolder"`。
+   * 一个字符串，其中包含分配给`Resource`对象的`description`字段的资源集合描述。 此示例中使用的描述是`"test folder"`。
 
 1. 将文件夹写入存储库
 
-   调用 `RepositoryServiceService` 对象的 `writeResource` 方法并传递以下参数：
+   调用`RepositoryServiceService`对象的`writeResource`方法并传入以下参数：
 
    * 要创建文件夹的路径。
-   * 此 `ResourceCollection` 表示文件夹的对象。
-   * 通过 `null` 其他两个参数。
+   * 表示文件夹的`ResourceCollection`对象。
+   * 为其他两个参数传递`null`。
 
 **另请参阅**
 
@@ -217,7 +217,7 @@ AEM Forms存储库中资源的路径为：
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -238,7 +238,7 @@ AEM Forms存储库中资源的路径为：
 
 **为资源指定目标文件夹的URI**
 
-创建包含要读取的资源URI的字符串。 语法包括正斜杠，如以下示例所示：&quot;/*路径*/*文件夹*“。
+创建包含要读取的资源URI的字符串。 语法包含正斜杠，如以下示例所示：&quot;/*path*/*folder*&quot;。
 
 **创建资源**
 
@@ -274,36 +274,36 @@ AEM Forms存储库中资源的路径为：
 
 1. 创建服务客户端
 
-   创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ResourceRepositoryClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 为资源指定目标文件夹的URI
 
-   为资源指定目标文件夹的URI。 在本例中，因为指定的资源 `testResource` 将存储在名为的文件夹中 `testFolder`，文件夹的URI为 `"/testFolder"`. URI存储为 `java.lang.String` 对象。
+   为资源指定目标文件夹的URI。 在这种情况下，由于名为`testResource`的资源将存储在名为`testFolder`的文件夹中，因此该文件夹的URI为`"/testFolder"`。 URI存储为`java.lang.String`对象。
 
 1. 创建资源
 
-   要创建资源，必须先创建 `com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean` 对象。
+   要创建资源，必须首先创建`com.adobe.repository.infomodel.bean.RepositoryInfomodelFactoryBean`对象。
 
-   调用 `RepositoryInfomodelFactoryBean` 对象的 `newResource` 方法，用于创建 `com.adobe.repository.infomodel.bean.Resource` 对象。 在此示例中，提供了以下参数：
+   调用`RepositoryInfomodelFactoryBean`对象的`newResource`方法，这将创建一个`com.adobe.repository.infomodel.bean.Resource`对象。 在此示例中，提供了以下参数：
 
-   * A `com.adobe.repository.infomodel.Id` 对象，这是通过调用 `Id` 类。
-   * A `com.adobe.repository.infomodel.Lid` 对象，这是通过调用 `Lid` 类。
-   * A `java.lang.String` 包含资源的文件名。
+   * 通过调用`Id`类的默认构造函数创建的`com.adobe.repository.infomodel.Id`对象。
+   * 通过调用`Lid`类的默认构造函数创建的`com.adobe.repository.infomodel.Lid`对象。
+   * 包含资源文件名的`java.lang.String`。
 
-   要指定资源的说明，请调用 `Resource` 对象的 `setDescription` 方法，并传递包含描述的字符串。 在此示例中，描述为 `"test resource"`.
+   要指定资源的描述，请调用`Resource`对象的`setDescription`方法，并传递包含描述的字符串。 在此示例中，描述为`"test resource"`。
 
 1. 指定资源内容
 
-   要为资源创建内容，请调用 `RepositoryInfomodelFactoryBean` 对象的 `newResourceContent` 方法，返回 `com.adobe.repository.infomodel.bean.ResourceContent` 对象。 将内容添加到 `ResourceContent` 对象。 在本例中，可通过执行以下任务来实现这一点：
+   要为资源创建内容，请调用`RepositoryInfomodelFactoryBean`对象的`newResourceContent`方法，该方法返回`com.adobe.repository.infomodel.bean.ResourceContent`对象。 将内容添加到`ResourceContent`对象。 在本例中，可通过执行以下任务来实现这一点：
 
-   * 调用 `ResourceContent` 对象的 `setDataDocument` 方法并传入 `com.adobe.idp.Document` 对象
-   * 调用 `ResourceContent` 对象的 `setSize` 方法并传入的大小（以字节为单位） `Document` 对象
+   * 正在调用`ResourceContent`对象的`setDataDocument`方法并传入`com.adobe.idp.Document`对象
+   * 正在调用`ResourceContent`对象的`setSize`方法并传入`Document`对象的大小（以字节为单位）
 
-   通过调用 `Resource` 对象的 `setContent` 方法并传入 `ResourceContent` 对象。 有关更多信息，请参阅 [AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   通过调用`Resource`对象的`setContent`方法并在`ResourceContent`对象中传递来将内容添加到资源。 有关详细信息，请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
 1. 将资源写入目标文件夹
 
-   调用 `ResourceRepositoryClient` 对象的 `writeResource` 方法，并在文件夹的URI中传递， `Resource` 对象。
+   调用`ResourceRepositoryClient`对象的`writeResource`方法并传入文件夹的URI和`Resource`对象。
 
 **另请参阅**
 
@@ -326,33 +326,33 @@ AEM Forms存储库中资源的路径为：
 
 1. 创建服务客户端
 
-   使用Microsoft .NET客户端程序集，创建 `RepositoryServiceService` 对象。 设置其 `Credentials` 属性使用 `System.Net.NetworkCredential` 包含用户名和密码的对象。
+   使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`RepositoryServiceService`对象。 使用包含用户名和密码的`System.Net.NetworkCredential`对象设置其`Credentials`属性。
 
 1. 为资源指定目标文件夹的URI
 
-   为资源指定目标文件夹的URI。 在本例中，因为指定的资源 `testResource` 将存储在名为的文件夹中 `testFolder`，文件夹的URI为 `"/testFolder"`. 使用与Microsoft .NET Framework兼容的语言时（例如，C#），将URI存储在 `System.String` 对象。
+   为资源指定目标文件夹的URI。 在这种情况下，由于名为`testResource`的资源将存储在名为`testFolder`的文件夹中，因此该文件夹的URI为`"/testFolder"`。 使用与Microsoft .NET Framework兼容的语言时（例如，C#），请将URI存储在`System.String`对象中。
 
 1. 创建资源
 
-   要创建资源，请调用 `Resource` 类。 在此示例中，以下信息存储在 `Resource` 对象：
+   要创建资源，请调用`Resource`类的默认构造函数。 在此示例中，以下信息存储在`Resource`对象中：
 
-   * A `com.adobe.repository.infomodel.Id` 对象，这是通过调用 `Id` 类并分配给 `Resource` 对象的 `id` 字段。
-   * A `com.adobe.repository.infomodel.Lid` 对象，这是通过调用 `Lid` 类并分配给 `Resource` 对象的 `lid` 字段。
-   * 一个字符串，其中包含分配给的资源的文件名。 `Resource` 对象的 `name` 字段。 本示例中使用的名称为 `"testResource"`.
-   * 一个字符串，其中包含分配给的资源的描述。 `Resource` 对象的 `description` 字段。 本示例中使用的描述为 `"test resource"`.
+   * `com.adobe.repository.infomodel.Id`对象，通过调用`Id`类的默认构造函数创建并分配给`Resource`对象的`id`字段。
+   * `com.adobe.repository.infomodel.Lid`对象，通过调用`Lid`类的默认构造函数创建并分配给`Resource`对象的`lid`字段。
+   * 一个字符串，其中包含分配给`Resource`对象的`name`字段的资源文件名。 此示例中使用的名称为`"testResource"`。
+   * 一个字符串，其中包含分配给`Resource`对象的`description`字段的资源描述。 此示例中使用的描述是`"test resource"`。
 
 1. 指定资源内容
 
-   要为资源创建内容，请调用 `ResourceContent` 类。 然后将内容添加到 `ResourceContent` 对象。 在本例中，可通过执行以下任务来实现这一点：
+   要为资源创建内容，请调用`ResourceContent`类的默认构造函数。 然后将内容添加到`ResourceContent`对象。 在本例中，可通过执行以下任务来实现这一点：
 
-   * 分配 `BLOB` 包含文档的对象 `ResourceContent` 对象的 `dataDocument` 字段。
-   * 分配的大小（以字节为单位） `BLOB` 对象 `ResourceContent` 对象的 `size` 字段。
+   * 正在将包含文档的`BLOB`对象分配给`ResourceContent`对象的`dataDocument`字段。
+   * 正在将`BLOB`对象的大小以字节为单位，分配给`ResourceContent`对象的`size`字段。
 
-   通过分配 `ResourceContent` 对象 `Resource` 对象的 `content` 字段。
+   通过将`ResourceContent`对象分配到`Resource`对象的`content`字段，将内容添加到资源。
 
 1. 将资源写入目标文件夹
 
-   调用 `RepositoryServiceService` 对象的 `writeResource` 方法，并在文件夹的URI中传递， `Resource` 对象。 通过 `null` 其他两个参数。
+   调用`RepositoryServiceService`对象的`writeResource`方法并传入文件夹的URI和`Resource`对象。 为其他两个参数传递`null`。
 
 **另请参阅**
 
@@ -370,7 +370,7 @@ AEM Forms存储库中资源的路径为：
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-2}
 
@@ -391,7 +391,7 @@ AEM Forms存储库中资源的路径为：
 
 **指定文件夹路径**
 
-创建一个字符串，其中包含包含资源的文件夹的路径。 语法包括正斜杠，如以下示例所示：&quot;/*路径*/*文件夹*“。
+创建一个字符串，其中包含包含资源的文件夹的路径。 语法包含正斜杠，如以下示例所示：&quot;/*path*/*folder*&quot;。
 
 **检索资源列表**
 
@@ -419,21 +419,21 @@ AEM Forms存储库中资源的路径为：
 
 1. 创建服务客户端
 
-   创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ResourceRepositoryClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 指定文件夹路径
 
-   指定要查询的资源集合的URI。 在这种情况下，其URI为 `"/testFolder"`. URI存储为 `java.lang.String` 对象。
+   指定要查询的资源集合的URI。 在这种情况下，其URI为`"/testFolder"`。 URI存储为`java.lang.String`对象。
 
 1. 检索资源列表
 
-   调用 `ResourceRepositoryClient` 对象的 `listMembers` 方法，并在文件夹的URI中传递。
+   调用`ResourceRepositoryClient`对象的`listMembers`方法并传入文件夹的URI。
 
-   此方法会返回 `java.util.List` 之 `com.adobe.repository.infomodel.bean.Resource` 源对象 `com.adobe.repository.infomodel.bean.Relation` 类型 `Relation.TYPE_MEMBER_OF` 并将资源收集URI作为目标。 您可以对此进行迭代 `List` 以检索每个资源。 在此示例中，将显示每个资源的名称和说明。
+   此方法返回一个`java.util.List`对象（共`com.adobe.repository.infomodel.bean.Resource`个），这些对象是类型为`Relation.TYPE_MEMBER_OF`的`com.adobe.repository.infomodel.bean.Relation`的源，并且以资源集合URI作为目标。 您可以通过此`List`进行迭代以检索每个资源。 在此示例中，将显示每个资源的名称和说明。
 
 **另请参阅**
 
-[列出资源](aem-forms-repository.md#listing-resources).
+[正在列出资源](aem-forms-repository.md#listing-resources)。
 
 [快速入门(SOAP模式)：使用Java API列出资源](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
@@ -452,21 +452,21 @@ AEM Forms存储库中资源的路径为：
 
 1. 创建服务客户端
 
-   使用Microsoft .NET客户端程序集，创建 `RepositoryServiceService` 对象。 设置其 `Credentials` 属性使用 `System.Net.NetworkCredential` 包含用户名和密码的对象。
+   使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`RepositoryServiceService`对象。 使用包含用户名和密码的`System.Net.NetworkCredential`对象设置其`Credentials`属性。
 
 1. 指定文件夹路径
 
-   指定包含要查询的文件夹URI的字符串。 在这种情况下，其URI为 `"/testFolder"`. 使用与Microsoft .NET Framework兼容的语言时（例如，C#），将URI存储在 `System.String` 对象。
+   指定包含要查询的文件夹URI的字符串。 在这种情况下，其URI为`"/testFolder"`。 使用与Microsoft .NET Framework兼容的语言时（例如，C#），请将URI存储在`System.String`对象中。
 
 1. 检索资源列表
 
-   调用 `RepositoryServiceService` 对象的 `listMembers` 方法，并在文件夹的URI中传递作为第一个参数。 通过 `null` 其他两个参数。
+   调用`RepositoryServiceService`对象的`listMembers`方法，并将文件夹的URI作为第一个参数传递。 为其他两个参数传递`null`。
 
-   方法返回一个对象数组，可以将这些对象强制转换为 `Resource` 对象。 您可以循环遍历对象数组以检索每个相关资源。 在此示例中，将显示每个资源的名称和说明。
+   该方法返回可转换为`Resource`对象的对象数组。 您可以循环遍历对象数组以检索每个相关资源。 在此示例中，将显示每个资源的名称和说明。
 
 **另请参阅**
 
-[列出资源](aem-forms-repository.md#listing-resources).
+[正在列出资源](aem-forms-repository.md#listing-resources)。
 
 [使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
@@ -476,10 +476,10 @@ AEM Forms存储库中资源的路径为：
 
 存储库具有以下四种权限类型：
 
-* **遍历**：用于列出资源；即读取资源元数据，但不读取资源内容
-* **读取**：用于读取资源内容
-* **写入**：用于编写资源内容
-* **管理访问控制列表(ACL)**：用于处理资源上的ACL
+* **遍历**：允许您列出资源；即读取资源元数据，但不读取资源内容
+* **读取**：允许您读取资源内容
+* **写入**：允许您写入资源内容
+* **管理访问控制列表(ACL)**：允许您处理资源上的ACL
 
 用户只有在拥有运行进程的权限时，才能运行进程。 IDE用户需要遍历和读取权限才能与存储库同步。 ACL仅在设计时应用，因为运行时发生在系统上下文中。
 
@@ -487,7 +487,7 @@ AEM Forms存储库中资源的路径为：
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-3}
 
@@ -508,7 +508,7 @@ AEM Forms存储库中资源的路径为：
 
 **指定要读取的资源的URI**
 
-创建包含要读取的资源URI的字符串。 语法包括正斜杠，如以下示例所示：&quot;/*路径*/*资源*“。
+创建包含要读取的资源URI的字符串。 语法包括正斜杠，如以下示例所示：&quot;/*path*/*resource*&quot;。
 
 **读取资源**
 
@@ -536,15 +536,15 @@ AEM Forms存储库中资源的路径为：
 
 1. 创建服务客户端
 
-   创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ResourceRepositoryClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 指定要读取的资源的URI
 
-   指定一个字符串值，该值表示要检索的资源的URI。 例如，假定资源名为 *testResource* 位于名为的文件夹中 *testFolder*，指定 `/testFolder/testResource`.
+   指定一个字符串值，该值表示要检索的资源的URI。 例如，假定名为&#x200B;*testResource*&#x200B;的资源位于名为&#x200B;*testFolder*&#x200B;的文件夹中，请指定`/testFolder/testResource`。
 
 1. 读取资源
 
-   调用 `ResourceRepositoryClient` 对象的 `readResource` 方法将资源的URI作为参数传递。 此方法会返回 `Resource` 表示资源的实例。
+   调用`ResourceRepositoryClient`对象的`readResource`方法，并将资源的URI作为参数传递。 此方法返回表示资源的`Resource`实例。
 
 **另请参阅**
 
@@ -562,20 +562,20 @@ AEM Forms存储库中资源的路径为：
 
 1. 包含项目文件
 
-   * 创建使用存储库WSDL的Microsoft .NET客户端程序集。 (请参阅 [创建使用Base64编码的.NET客户端程序集](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
-   * 引用Microsoft .NET客户端程序集。 (请参阅 [创建使用Base64编码的.NET客户端程序集](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding).)
+   * 创建使用存储库WSDL的Microsoft .NET客户端程序集。 （请参阅[创建使用Base64编码的.NET客户端程序集](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)。）
+   * 引用Microsoft .NET客户端程序集。 （请参阅[创建使用Base64编码的.NET客户端程序集](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)。）
 
 1. 创建服务客户端
 
-   使用Microsoft .NET客户端程序集，创建 `RepositoryServiceService` 对象。 设置其 `Credentials` 属性使用 `System.Net.NetworkCredential` 包含用户名和密码的对象。
+   使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`RepositoryServiceService`对象。 使用包含用户名和密码的`System.Net.NetworkCredential`对象设置其`Credentials`属性。
 
 1. 指定要读取的资源的URI
 
-   指定包含要检索的资源URI的字符串。 在本例中，因为指定的资源 `testResource` 位于名为的文件夹中 `testFolder`，其URI为 `"/testFolder/testResource"`. 使用与Microsoft .NET Framework兼容的语言时（例如，C#），将URI存储在 `System.String` 对象。
+   指定包含要检索的资源URI的字符串。 在这种情况下，由于名为`testResource`的资源位于名为`testFolder`的文件夹中，其URI为`"/testFolder/testResource"`。 使用与Microsoft .NET Framework兼容的语言时（例如，C#），请将URI存储在`System.String`对象中。
 
 1. 读取资源
 
-   调用 `RepositoryServiceService` 对象的 `readResource` 方法，并将资源的URI作为第一个参数传递。 通过 `null` 其他两个参数。
+   调用`RepositoryServiceService`对象的`readResource`方法，并将资源的URI作为第一个参数传递。 为其他两个参数传递`null`。
 
 **另请参阅**
 
@@ -597,7 +597,7 @@ AEM Forms存储库中资源的路径为：
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-4}
 
@@ -618,7 +618,7 @@ AEM Forms存储库中资源的路径为：
 
 **检索要更新的资源**
 
-读取资源。 有关更多信息，请参阅 [正在读取资源](aem-forms-repository.md#reading-resources).
+读取资源。 有关详细信息，请参阅[读取资源](aem-forms-repository.md#reading-resources)。
 
 **更新资源**
 
@@ -646,21 +646,21 @@ AEM Forms存储库中资源的路径为：
 
 1. 创建服务客户端
 
-   创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ResourceRepositoryClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 检索要更新的资源
 
-   指定要检索和读取资源的资源URI。 在此示例中，资源的URI为 `"/testFolder/testResource"`.
+   指定要检索和读取资源的资源URI。 在此示例中，资源的URI是`"/testFolder/testResource"`。
 
 1. 更新资源
 
-   更新 `Resource` 对象的信息。 在此示例中，要更新说明，请调用 `Resource` 对象的 `setDescription` 方法将新的描述字符串作为参数传递。
+   更新`Resource`对象的信息。 在此示例中，要更新描述，请调用`Resource`对象的`setDescription`方法，并将新的描述字符串作为参数传递。
 
-   然后调用 `ServiceClientFactory` 对象的 `updateResource` 方法，并传入以下参数：
+   然后调用`ServiceClientFactory`对象的`updateResource`方法，并传入以下参数：
 
-   * A `java.lang.String` 包含资源URI的对象。
-   * 此 `Resource` 包含已更新资源信息的对象。
-   * A `boolean` 指示是更新主要版本还是次要版本的值。 在此示例中，值为 `true` 传递以指示主版本将递增。
+   * 包含资源URI的`java.lang.String`对象。
+   * 包含已更新资源信息的`Resource`对象。
+   * 一个`boolean`值，指示是更新主要版本还是次要版本。 在此示例中，传入值`true`以指示主版本将递增。
 
 **另请参阅**
 
@@ -683,22 +683,22 @@ AEM Forms存储库中资源的路径为：
 
 1. 创建服务客户端
 
-   使用Microsoft .NET客户端程序集，创建 `RepositoryServiceService` 对象。 设置其 `Credentials` 属性使用 `System.Net.NetworkCredential` 包含用户名和密码的对象。
+   使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`RepositoryServiceService`对象。 使用包含用户名和密码的`System.Net.NetworkCredential`对象设置其`Credentials`属性。
 
 1. 检索要更新的资源
 
-   指定要检索的资源的URI并读取该资源。 在此示例中，资源的URI为 `"/testFolder/testResource"`. 有关更多信息，请参阅 [正在读取资源](aem-forms-repository.md#reading-resources).
+   指定要检索的资源的URI并读取该资源。 在此示例中，资源的URI是`"/testFolder/testResource"`。 有关详细信息，请参阅[读取资源](aem-forms-repository.md#reading-resources)。
 
 1. 更新资源
 
-   更新 `Resource` 对象的信息。 在本例中，要更新说明，请为 `Resource` 对象的 `description` 字段。
+   更新`Resource`对象的信息。 在此示例中，要更新描述，请为`Resource`对象的`description`字段分配一个新值。
 
-1. 调用 `RepositoryServiceService` 对象的 `updateResource` 方法，并传入以下参数：
+1. 调用`RepositoryServiceService`对象的`updateResource`方法，并传入以下参数：
 
-   * A `System.String` 包含资源URI的对象。
-   * 此 `Resource` 包含已更新资源信息的对象。
-   * A `boolean` 指示是更新主要版本还是次要版本的值。 在此示例中，值为 `true` 传递以指示主版本将递增。
-   * 通过 `null` 对于其余两个参数。
+   * 包含资源URI的`System.String`对象。
+   * 包含已更新资源信息的`Resource`对象。
+   * 一个`boolean`值，指示是更新主要版本还是次要版本。 在此示例中，传入值`true`以指示主版本将递增。
+   * 对其余两个参数传递`null`。
 
 **另请参阅**
 
@@ -714,19 +714,19 @@ AEM Forms存储库中资源的路径为：
 
 **查询语句**
 
-A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由一个左操作数、一个运算符和一个右操作数组成。 此外，您还可以指定用于搜索结果的排序顺序。 此 *排序顺序* 包含与SQL等效的信息 `ORDER BY` 子句并且由元素组成，这些元素包含搜索所基于的属性，以及一个指示要使用升序还是降序的值。
+*查询*&#x200B;包含一个或多个用条件逻辑联接的语句。 *语句*&#x200B;由左操作数、运算符和右操作数组成。 此外，您还可以指定用于搜索结果的排序顺序。 *排序顺序*&#x200B;包含与SQL `ORDER BY`子句等同的信息，该排序顺序由元素组成，这些元素包含搜索所基于的属性，以及指示要使用升序还是降序的值。
 
 您可以使用存储库服务Java API以编程方式搜索资源。 此时，无法使用Web服务API来搜索资源。
 
 **排序行为**
 
-调用时未遵循排序顺序 `ResourceRepositoryClient` 对象的 `searchProperties` 方法和指定排序顺序。 例如，假设您创建了一个具有三个自定义属性的资源，其中属性名称为 `name`， `secondName`、和 `asecondName`. 接下来，在属性名称上创建排序顺序元素，并设置 `ascending` 值至 `true`.
+调用`ResourceRepositoryClient`对象的`searchProperties`方法并指定排序顺序时，未遵循排序顺序。 例如，假设您创建了一个具有三个自定义属性的资源，其中属性名称为`name`、`secondName`和`asecondName`。 接下来，在属性名称上创建排序顺序元素，并将`ascending`值设置为`true`。
 
-然后调用 `ResourceRepositoryClient` 对象的 `searchProperties` 方法，并按排序顺序传递。 搜索将返回正确的资源，并具有三个属性。 但是，属性不按属性名称排序。 它们会按添加顺序返回： `name`， `secondName`、和 `asecondName`.
+然后调用`ResourceRepositoryClient`对象的`searchProperties`方法并按排序顺序传递。 搜索将返回正确的资源，并具有三个属性。 但是，属性不按属性名称排序。 它们按添加顺序返回： `name`、`secondName`和`asecondName`。
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-5}
 
@@ -751,7 +751,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 **指定搜索的目标文件夹**
 
-创建一个字符串，其中包含进行搜索的基本路径。 语法包括正斜杠，如以下示例所示：&quot;/*路径*/*文件夹*“。
+创建一个字符串，其中包含进行搜索的基本路径。 语法包含正斜杠，如以下示例所示：&quot;/*path*/*folder*&quot;。
 
 **指定搜索中使用的属性**
 
@@ -793,54 +793,54 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 1. 创建服务客户端
 
-   创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ResourceRepositoryClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 指定搜索的目标文件夹
 
-   指定要从中执行搜索的基本路径的URI。 在此示例中，资源的URI为 `/testFolder`.
+   指定要从中执行搜索的基本路径的URI。 在此示例中，资源的URI是`/testFolder`。
 
 1. 指定搜索中使用的属性
 
-   指定要执行搜索的属性的值。 属性存在于 `com.adobe.repository.infomodel.bean.Resource` 对象。 在本例中，将对name属性进行搜索；因此， `java.lang.String` 包含 `Resource` 使用的对象名称为 `testResource` 这种情况下。
+   指定要执行搜索的属性的值。 属性存在于`com.adobe.repository.infomodel.bean.Resource`对象中。 在此示例中，将对name属性执行搜索；因此，使用了包含`Resource`对象名称的`java.lang.String`，在本例中为`testResource`。
 
 1. 创建搜索中使用的查询
 
-   要创建查询，请创建 `com.adobe.repository.query.Query` 对象，方法是 `Query` 类并向查询中添加语句。
+   要创建查询，请通过调用`Query`类的默认构造函数创建一个`com.adobe.repository.query.Query`对象，并将语句添加到查询中。
 
-   要创建语句，请调用 `com.adobe.repository.query.Query.Statement` 类并传入以下参数：
+   要创建语句，请调用`com.adobe.repository.query.Query.Statement`类的构造函数，并传入以下参数：
 
-   * 包含资源属性常量的左操作数。 在本例中，由于资源的名称用作搜索的基础，因此使用静态值 `Resource.ATTRIBUTE_NAME` 已使用。
-   * 包含搜索属性时使用的条件的运算符。 运算符必须是 `Query.Statement` 类。 在此示例中，静态值 `Query.Statement.OPERATOR_BEGINS_WITH` 已使用。
-   * 包含进行搜索的属性值的右操作数。 在此示例中，name属性a `String` 包含值 `"testResource"`，使用。
+   * 包含资源属性常量的左操作数。 在此示例中，由于资源的名称用作搜索的基础，因此使用静态值`Resource.ATTRIBUTE_NAME`。
+   * 包含搜索属性时使用的条件的运算符。 运算符必须是`Query.Statement`类中的静态常量之一。 在此示例中，使用了静态值`Query.Statement.OPERATOR_BEGINS_WITH`。
+   * 包含进行搜索的属性值的右操作数。 在此示例中，使用了name属性（包含值`"testResource"`的`String`）。
 
-   通过调用 `Query.Statement` 对象的 `setNamespace` 方法，并传入包含在 `com.adobe.repository.infomodel.bean.ResourceProperty` 类。 在此示例中，使用 `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY`。
+   通过调用`Query.Statement`对象的`setNamespace`方法并传递`com.adobe.repository.infomodel.bean.ResourceProperty`类中包含的某个静态值来指定左操作数的命名空间。 在此示例中，使用 `ResourceProperty.RESERVED_NAMESPACE_REPOSITORY`。
 
-   通过调用 `Query` 对象的 `addStatement` 方法并传入 `Query.Statement` 对象。
+   通过调用`Query`对象的`addStatement`方法并传入`Query.Statement`对象，将每个语句添加到查询中。
 
 1. 为搜索结果创建排序顺序
 
-   要指定搜索结果中使用的排序顺序，请创建 `com.adobe.repository.query.sort.SortOrder` 对象，方法是 `SortOrder` 类，并向排序顺序中添加元素。
+   要指定搜索结果中使用的排序顺序，请通过调用`SortOrder`类的默认构造函数创建`com.adobe.repository.query.sort.SortOrder`对象，并将元素添加到排序顺序中。
 
-   要为排序顺序创建元素，请调用以下项的构造函数之一： `com.adobe.repository.query.sort.SortOrder.Element` 类。 在本例中，由于资源的名称用作搜索的基础，因此使用静态值 `Resource.ATTRIBUTE_NAME` 用作第一个参数，按升序排列(a `boolean` 值 `true`)指定为第二个参数。
+   要为排序顺序创建元素，请为`com.adobe.repository.query.sort.SortOrder.Element`类调用一个构造函数。 在此示例中，由于资源的名称用作搜索的基础，因此静态值`Resource.ATTRIBUTE_NAME`用作第一个参数，而升序（`true`的`boolean`值）指定为第二个参数。
 
-   通过调用 `SortOrder` 对象的 `addSortElement` 方法并传入 `SortOrder.Element` 对象。
+   通过调用`SortOrder`对象的`addSortElement`方法并传入`SortOrder.Element`对象，将每个元素添加到排序顺序中。
 
 1. 搜索资源
 
-   要搜索 `resources` 根据属性属性，调用 `ResourceRepositoryClient` 对象的 `searchProperties` 方法并传递以下参数：
+   要基于属性属性搜索`resources`，请调用`ResourceRepositoryClient`对象的`searchProperties`方法，并传入以下参数：
 
-   * A `String` 包含执行搜索的基本路径。 在本例中， `"/testFolder"` 已使用。
+   * 包含从中执行搜索的基本路径的`String`。 在这种情况下，使用`"/testFolder"`。
    * 搜索中使用的查询。
-   * 搜索的深度。 在本例中， `com.adobe.repository.infomodel.bean.ResourceCollection.DEPTH_INFINITE` 用于指示要使用基本路径及其所有文件夹。
-   * An `int` 表示从中选择未分页结果集的第一行的值。 在此示例中， `0` 已指定。
-   * An `int` 表示返回的最大结果数的值。 在此示例中， `10` 已指定。
+   * 搜索的深度。 在这种情况下，`com.adobe.repository.infomodel.bean.ResourceCollection.DEPTH_INFINITE`用于指示要使用基本路径及其所有文件夹。
+   * 一个`int`值，表示从中选择未分页结果集的第一行。 在此示例中，指定了`0`。
+   * `int`值，表示返回的最大结果数。 在此示例中，指定了`10`。
    * 搜索中使用的排序顺序。
 
-   此方法会返回 `java.util.List` 之 `Resource` 对象按指定的排序顺序。
+   该方法按指定的排序顺序返回`java.util.List`个对象（共`Resource`个）。
 
 1. 从搜索结果中检索资源
 
-   要检索搜索结果中包含的资源，请通过 `List` 并将每个对象转换为 `Resource` 以提取其信息。 在此示例中，将显示每个资源的名称。
+   要检索搜索结果中包含的资源，请对`List`进行迭代，并将每个对象转换为`Resource`以提取其信息。 在此示例中，将显示每个资源的名称。
 
 **另请参阅**
 
@@ -856,9 +856,9 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 您可以指定存储库中资源之间的关系。 有三种关系：
 
-* **依赖性**：资源依赖其他资源的关系，这意味着存储库中需要所有相关资源。
+* **依赖关系**：资源依赖其他资源的关系，这意味着存储库中需要所有相关资源。
 * **成员资格（文件系统）**：资源位于给定文件夹中的关系。
-* **自定义**：在资源之间指定的关系。 例如，如果一个资源已被弃用，而另一个资源被引入存储库，则您可以指定自己的替换关系。
+* **自定义**：资源之间指定的关系。 例如，如果一个资源已被弃用，而另一个资源被引入存储库，则您可以指定自己的替换关系。
 
 您可以创建自己的自定义关系。 例如，如果将HTML文件存储在存储库中并且它使用图像，则可以指定自定义关系以将HTML文件与图像相关联（因为通常只有XML文件使用存储库定义的依赖关系与图像相关联）。 另一个自定义关系示例是，如果您想使用循环图结构而不是树结构构建存储库的不同视图。 您可以定义循环图以及查看器来遍历这些关系。 最后，您可以指明一个资源将替换另一个资源，即使这两个资源完全不同。 在这种情况下，您可以在保留范围之外定义关系类型，并在这两个资源之间创建关系。 您的应用程序将是唯一能够检测并处理这种关系的客户，并且可用于对该关系进行搜索。
 
@@ -866,7 +866,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-6}
 
@@ -887,7 +887,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 **指定要关联的资源的URI**
 
-创建包含要关联的资源的URI的字符串。 语法包括正斜杠，如以下示例所示：&quot;/*路径*/*资源*“。
+创建包含要关联的资源的URI的字符串。 语法包括正斜杠，如以下示例所示：&quot;/*path*/*resource*&quot;。
 
 **创建关系**
 
@@ -915,28 +915,28 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 1. 创建服务客户端
 
-   创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ResourceRepositoryClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 指定要关联的资源的URI
 
-   指定要关联的资源的URI。 在这种情况下，因为资源已命名 `testResource1` 和 `testResource2` 和位于名为的文件夹中 `testFolder`，它们的URI为 `"/testFolder/testResource1"` 和 `"/testFolder/testResource2"`. URI存储为 `java.lang.String` 对象。 在本例中，首先向存储库写入资源，然后检索其URI。 有关编写资源的详细信息，请参见 [写入资源](aem-forms-repository.md#writing-resources).
+   指定要关联的资源的URI。 在这种情况下，由于资源名为`testResource1`和`testResource2`，并且位于名为`testFolder`的文件夹中，因此其URI为`"/testFolder/testResource1"`和`"/testFolder/testResource2"`。 URI存储为`java.lang.String`对象。 在本例中，首先向存储库写入资源，然后检索其URI。 有关写入资源的详细信息，请参阅[写入资源](aem-forms-repository.md#writing-resources)。
 
 1. 创建关系
 
-   调用 `ResourceRepositoryClient` 对象的 `createRelationship` 方法并传递以下参数：
+   调用`ResourceRepositoryClient`对象的`createRelationship`方法并传入以下参数：
 
    * 源资源的URI。
    * 目标资源的URI。
-   * 关系的类型，它是 `com.adobe.repository.infomodel.bean.Relation` 类。 在此示例中，通过指定值来建立依赖关系 `Relation.TYPE_DEPENDANT_OF`.
-   * A `boolean` 指示目标资源是否自动更新到的值 `com.adobe.repository.infomodel.Id`新head资源的基于的标识符。 在此示例中，由于依赖关系，值 `true` 已指定。
+   * 关系的类型，它是`com.adobe.repository.infomodel.bean.Relation`类中的静态常量之一。 在此示例中，通过指定值`Relation.TYPE_DEPENDANT_OF`来建立依赖关系。
+   * 一个`boolean`值，指示目标资源是否自动更新为新head资源的基于`com.adobe.repository.infomodel.Id`的标识符。 在此示例中，由于依赖关系，指定了值`true`。
 
-   您还可以通过调用 `ResourceRepositoryClient` 对象的 `getRelated` 方法并传入以下参数：
+   您还可以通过调用`ResourceRepositoryClient`对象的`getRelated`方法并传入以下参数来检索给定资源的相关资源列表：
 
-   * 要检索相关资源的资源的URI。 在此示例中，源资源( `"/testFolder/testResource1"`)指定了。
-   * A `boolean` 指示指定的资源是否为关系中的源资源的值。 在此示例中，值 `true` 指定了，因为情况如此。
-   * 关系类型，它是 `Relation` 类。 在本例中，使用先前使用的相同值指定依赖关系： `Relation.TYPE_DEPENDANT_OF`.
+   * 要检索相关资源的资源的URI。 在此示例中，指定了源资源(`"/testFolder/testResource1"`)。
+   * 一个`boolean`值，指示指定的资源是否为关系中的源资源。 在此示例中，指定值`true`，因为情况如此。
+   * 关系类型，它是`Relation`类中的静态常量之一。 在此示例中，使用先前使用的相同值指定了依赖关系： `Relation.TYPE_DEPENDANT_OF`。
 
-   此 `getRelated` 方法返回 `java.util.List` 之 `Resource` 对象，通过它可以迭代检索每个相关资源，转换包含在 `List` 到 `Resource` 就象你一样。 在此示例中， `testResource2` 应包含在返回的资源的列表中。
+   `getRelated`方法返回`Resource`个对象的`java.util.List`，通过它您可以迭代检索每个相关资源，并在执行此操作时将包含在`List`中的对象转换为`Resource`。 在此示例中，`testResource2`应位于返回的资源的列表中。
 
 **另请参阅**
 
@@ -959,33 +959,33 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 1. 创建服务客户端
 
-   使用Microsoft .NET客户端程序集，创建 `RepositoryServiceService` 对象。 设置其 `Credentials` 属性使用 `System.Net.NetworkCredential` 包含用户名和密码的对象。
+   使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`RepositoryServiceService`对象。 使用包含用户名和密码的`System.Net.NetworkCredential`对象设置其`Credentials`属性。
 
 1. 指定要关联的资源的URI
 
-   指定要关联的资源的URI。 在这种情况下，因为资源已命名 `testResource1` 和 `testResource2` 和位于名为的文件夹中 `testFolder`，它们的URI为 `"/testFolder/testResource1"` 和 `"/testFolder/testResource2"`. 使用与Microsoft .NET Framework兼容的语言（例如C#）时，URI存储为 `System.String` 对象。 在本例中，首先向存储库写入资源，然后检索其URI。 有关编写资源的详细信息，请参见 [写入资源](aem-forms-repository.md#writing-resources).
+   指定要关联的资源的URI。 在这种情况下，由于资源名为`testResource1`和`testResource2`，并且位于名为`testFolder`的文件夹中，因此其URI为`"/testFolder/testResource1"`和`"/testFolder/testResource2"`。 使用与Microsoft .NET Framework兼容的语言（例如，C#）时，URI将存储为`System.String`对象。 在本例中，首先向存储库写入资源，然后检索其URI。 有关写入资源的详细信息，请参阅[写入资源](aem-forms-repository.md#writing-resources)。
 
 1. 创建关系
 
-   调用 `RepositoryServiceService` 对象的 `createRelationship` 方法并传递以下参数：
+   调用`RepositoryServiceService`对象的`createRelationship`方法并传入以下参数：
 
    * 源资源的URI。
    * 目标资源的URI。
-   * 关系的类型。 在此示例中，通过指定值来建立依赖关系 `3`.
-   * A `boolean` 指示是否指定了关系类型的值。 在此示例中，值 `true` 已指定。
-   * A `boolean` 指示目标资源是否自动更新到的值 `Id`新head资源的基于的标识符。 在此示例中，由于依赖关系，值 `true` 已指定。
-   * A `boolean` 指示是否指定了目标标头的值。 在此示例中，值 `true` 已指定。
-   * 通过 `null` 最后一个参数。
+   * 关系的类型。 在此示例中，通过指定值`3`来建立依赖关系。
+   * 指示是否指定了关系类型的`boolean`值。 在此示例中，指定了值`true`。
+   * 一个`boolean`值，指示目标资源是否自动更新为新head资源的基于`Id`的标识符。 在此示例中，由于依赖关系，指定了值`true`。
+   * 指示是否指定了目标标头的`boolean`值。 在此示例中，指定了值`true`。
+   * 为最后一个参数传递`null`。
 
-   您还可以通过调用 `RepositoryServiceService` 对象的 `getRelated` 方法并传入以下参数：
+   您还可以通过调用`RepositoryServiceService`对象的`getRelated`方法并传入以下参数来检索给定资源的相关资源列表：
 
-   * 要检索相关资源的资源的URI。 在此示例中，源资源( `"/testFolder/testResource1"`)指定了。
-   * A `boolean` 指示指定的资源是否为关系中的源资源的值。 在此示例中，值 `true` 指定了，因为情况如此。
-   * A `boolean` 指示是否指定了源资源的值。 在此示例中，值 `true` 提供了。
-   * 包含关系类型的整数数组。 在本例中，使用与之前使用的值相同的数组来指定依赖关系： `3`.
-   * 通过 `null` 对于其余两个参数。
+   * 要检索相关资源的资源的URI。 在此示例中，指定了源资源(`"/testFolder/testResource1"`)。
+   * 一个`boolean`值，指示指定的资源是否为关系中的源资源。 在此示例中，指定值`true`，因为情况如此。
+   * 指示是否指定了源资源的`boolean`值。 在此示例中，提供了值`true`。
+   * 包含关系类型的整数数组。 在此示例中，使用与之前使用的值相同的数组来指定依赖关系： `3`。
+   * 对其余两个参数传递`null`。
 
-   此 `getRelated` 方法返回可强制转换为的对象数组 `Resource` 用于迭代检索每个相关资源的对象。 在此示例中， `testResource2` 应包含在返回的资源的列表中。
+   `getRelated`方法返回一个对象数组，这些对象可以转换为`Resource`个对象，您可以通过这些对象进行迭代以检索每个相关资源。 在此示例中，`testResource2`应位于返回的资源的列表中。
 
 **另请参阅**
 
@@ -1005,7 +1005,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-7}
 
@@ -1028,7 +1028,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 **指定要锁定的资源的URI**
 
-创建包含要锁定的资源的URI的字符串。 语法包括正斜杠，如以下示例所示：&quot;/*路径*/*资源*“。
+创建包含要锁定的资源的URI的字符串。 语法包括正斜杠，如以下示例所示：&quot;/*path*/*resource*&quot;。
 
 **锁定资源**
 
@@ -1064,31 +1064,31 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 1. 创建服务客户端
 
-   创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ResourceRepositoryClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 指定要锁定的资源的URI
 
-   指定要锁定的资源的URI。 在本例中，因为指定的资源 `testResource` 位于名为的文件夹中 `testFolder`，其URI为 `"/testFolder/testResource"`. URI存储为 `java.lang.String` 对象。
+   指定要锁定的资源的URI。 在这种情况下，由于名为`testResource`的资源位于名为`testFolder`的文件夹中，其URI为`"/testFolder/testResource"`。 URI存储为`java.lang.String`对象。
 
 1. 锁定资源
 
-   调用 `ResourceRepositoryClient` 对象的 `lockResource` 方法并传递以下参数：
+   调用`ResourceRepositoryClient`对象的`lockResource`方法并传入以下参数：
 
    * 资源的URI。
-   * 锁定范围。 在本例中，由于资源将被锁定以便独占使用，因此锁定范围指定为 `com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`.
-   * 锁定深度。 在本例中，由于锁定将仅应用于特定资源而不应用于其任何成员或子资源，因此锁定深度指定为 `Lock.DEPTH_ZERO`.
+   * 锁定范围。 在此示例中，由于资源将被锁定以便独占使用，因此锁定范围指定为`com.adobe.repository.infomodel.bean.Lock.SCOPE_EXCLUSIVE`。
+   * 锁定深度。 在本例中，由于锁定将仅应用于特定资源而不应用于其任何成员或子级，因此锁定深度指定为`Lock.DEPTH_ZERO`。
 
    >[!NOTE]
    >
-   >重载版本的 `lockResource` 需要四个参数的方法会引发异常。 确保使用 `lockResource` 方法需要三个参数，如本演练中所示。
+   >需要四个参数的`lockResource`方法的重载版本引发异常。 请确保使用需要三个参数的`lockResource`方法，如本演练中所示。
 
 1. 检索资源的锁定
 
-   调用 `ResourceRepositoryClient` 对象的 `getLocks` 方法将资源的URI作为参数传递。 该方法会返回一个Lock对象列表，您可以通过该列表进行迭代。 在此示例中，通过调用每个锁定对象的 `getOwnerUserId`， `getDepth`、和 `getType` 方法。
+   调用`ResourceRepositoryClient`对象的`getLocks`方法，并将资源的URI作为参数传递。 该方法会返回一个Lock对象列表，您可以通过该列表进行迭代。 在此示例中，通过分别调用每个锁定对象的`getOwnerUserId`、`getDepth`和`getType`方法，为每个对象打印锁定所有者、深度和范围。
 
 1. 解锁资源
 
-   调用 `ResourceRepositoryClient` 对象的 `unlockResource` 方法将资源的URI作为参数传递。 欲了解更多信息，请参见 [AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   调用`ResourceRepositoryClient`对象的`unlockResource`方法，并将资源的URI作为参数传递。 有关详细信息，请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。
 
 **另请参阅**
 
@@ -1111,29 +1111,29 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 1. 创建服务客户端
 
-   使用Microsoft .NET客户端程序集，创建 `RepositoryServiceService` 对象。 设置其 `Credentials` 属性使用 `System.Net.NetworkCredential` 包含用户名和密码的对象。
+   使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`RepositoryServiceService`对象。 使用包含用户名和密码的`System.Net.NetworkCredential`对象设置其`Credentials`属性。
 
 1. 指定要锁定的资源的URI
 
-   指定包含要锁定的资源的URI的字符串。 在本例中，因为指定的资源 `testResource` 在文件夹中 `testFolder`，其URI为 `"/testFolder/testResource"`. 使用与Microsoft .NET Framework兼容的语言时（例如，C#），将URI存储在 `System.String` 对象。
+   指定包含要锁定的资源的URI的字符串。 在这种情况下，由于名为`testResource`的资源位于文件夹`testFolder`中，其URI为`"/testFolder/testResource"`。 使用与Microsoft .NET Framework兼容的语言时（例如，C#），请将URI存储在`System.String`对象中。
 
 1. 锁定资源
 
-   调用 `RepositoryServiceService` 对象的 `lockResource` 方法并传递以下参数：
+   调用`RepositoryServiceService`对象的`lockResource`方法并传入以下参数：
 
    * 资源的URI。
-   * 锁定范围。 在本例中，由于资源将被锁定以便独占使用，因此锁定范围指定为 `11`.
-   * 锁定深度。 在本例中，由于锁定将仅应用于特定资源而不应用于其任何成员或子资源，因此锁定深度指定为 `2`.
-   * An `int` 表示锁定到期前的秒数的值。 在此示例中，的值 `1000` 已使用。
-   * 通过 `null` 最后一个参数。
+   * 锁定范围。 在此示例中，由于资源将被锁定以便独占使用，因此锁定范围指定为`11`。
+   * 锁定深度。 在本例中，由于锁定将仅应用于特定资源而不应用于其任何成员或子级，因此锁定深度指定为`2`。
+   * `int`值，指示锁定到期前的秒数。 在此示例中，使用`1000`的值。
+   * 为最后一个参数传递`null`。
 
 1. 检索资源的锁定
 
-   调用 `RepositoryServiceService` 对象的 `getLocks` 方法将资源的URI作为第一个参数传递和 `null` 用于第二个参数。 此方法会返回 `object` 数组，包含 `Lock` 可对其进行迭代的对象。 在此示例中，通过访问每个对象来打印每个对象的锁所有者、深度和范围 `Lock` 对象的 `ownerUserId`， `depth`、和 `type` 字段。
+   调用`RepositoryServiceService`对象的`getLocks`方法并传递资源的URI作为第一个参数，传递第二个参数的`null`。 此方法返回一个包含`Lock`对象的`object`数组，您可以通过该数组对其进行迭代。 在此示例中，通过分别访问每个`Lock`对象的`ownerUserId`、`depth`和`type`字段，为每个对象打印锁定所有者、深度和范围。
 
 1. 解锁资源
 
-   调用 `RepositoryServiceService` 对象的 `unlockResource` 方法将资源的URI作为第一个参数传递和 `null` 用于第二个参数。
+   调用`RepositoryServiceService`对象的`unlockResource`方法并传递资源的URI作为第一个参数，传递第二个参数的`null`。
 
 **另请参阅**
 
@@ -1153,11 +1153,11 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 >[!NOTE]
 >
->使用时 `com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()` 方法使用ECM存储库( EMC Documentum Content Server和IBM FileNet P8 Content Manager )，如果删除指定资源之一失败，则不会回滚事务，这意味着无法取消删除已删除的文件。
+>在将`com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient.deleteResources()`方法与ECM存储库( EMC Documentum Content Server和IBM FileNet P8 Content Manager )结合使用时，如果删除指定资源之一失败，则事务将不会回滚，这意味着无法删除已删除的文件。
 
 >[!NOTE]
 >
->有关Repository服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关存储库服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-8}
 
@@ -1178,7 +1178,7 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 **指定要删除的资源的URI**
 
-创建包含要删除的资源URI的字符串。 语法包括正斜杠，如以下示例所示：&quot;/*路径*/*资源*“。 如果要删除的资源是文件夹，则删除操作将递归。
+创建包含要删除的资源URI的字符串。 语法包括正斜杠，如以下示例所示：&quot;/*path*/*resource*&quot;。 如果要删除的资源是文件夹，则删除操作将递归。
 
 **删除资源**
 
@@ -1206,15 +1206,15 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 1. 创建服务客户端
 
-   创建 `ResourceRepositoryClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`ResourceRepositoryClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 指定要删除的资源的URI
 
-   指定要检索的资源的URI。 在这种情况下，由于名为testResourceToBeDeleted的资源位于名为testFolder的文件夹中，其URI为 `/testFolder/testResourceToBeDeleted`. URI存储为 `java.lang.String` 对象。 在本例中，首先将资源写入存储库，并检索其URI。 有关编写资源的详细信息，请参见 [写入资源](aem-forms-repository.md#writing-resources).
+   指定要检索的资源的URI。 在这种情况下，由于名为testResourceToBeDeleted的资源位于名为testFolder的文件夹中，其URI为`/testFolder/testResourceToBeDeleted`。 URI存储为`java.lang.String`对象。 在本例中，首先将资源写入存储库，并检索其URI。 有关写入资源的详细信息，请参阅[写入资源](aem-forms-repository.md#writing-resources)。
 
 1. 删除资源
 
-   调用 `ResourceRepositoryClient` 对象的 `deleteResource` 方法将资源的URI作为参数传递。
+   调用`ResourceRepositoryClient`对象的`deleteResource`方法，并将资源的URI作为参数传递。
 
 **另请参阅**
 
@@ -1237,15 +1237,15 @@ A *查询* 包含一个或多个用条件逻辑连接的语句。 A *语句* 由
 
 1. 创建服务客户端
 
-   使用Microsoft .NET客户端程序集，创建 `RepositoryServiceService` 对象。 设置其 `Credentials` 属性使用 `System.Net.NetworkCredential` 包含用户名和密码的对象。
+   使用Microsoft .NET客户端程序集，通过调用其默认构造函数创建`RepositoryServiceService`对象。 使用包含用户名和密码的`System.Net.NetworkCredential`对象设置其`Credentials`属性。
 
 1. 指定要删除的资源的URI
 
-   指定要检索的资源的URI。 在本例中，因为指定的资源 `testResourceToBeDeleted` 位于名为的文件夹中 `testFolder`，其URI为 `"/testFolder/testResourceToBeDeleted"`. 在本例中，首先将资源写入存储库，并检索其URI。 有关编写资源的详细信息，请参见 [写入资源](aem-forms-repository.md#writing-resources).
+   指定要检索的资源的URI。 在这种情况下，由于名为`testResourceToBeDeleted`的资源位于名为`testFolder`的文件夹中，其URI为`"/testFolder/testResourceToBeDeleted"`。 在本例中，首先将资源写入存储库，并检索其URI。 有关写入资源的详细信息，请参阅[写入资源](aem-forms-repository.md#writing-resources)。
 
 1. 删除资源
 
-   调用 `RepositoryServiceService` 对象的 `deleteResources` 方法和传递 `System.String` 数组，包含作为第一个参数的资源URI。 通过 `null` 用于第二个参数。
+   调用`RepositoryServiceService`对象的`deleteResources`方法，并传递包含资源URI的`System.String`数组作为第一个参数。 为第二个参数传递`null`。
 
 **另请参阅**
 

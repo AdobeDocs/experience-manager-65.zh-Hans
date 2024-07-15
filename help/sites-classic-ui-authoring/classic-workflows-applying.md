@@ -30,13 +30,13 @@ ht-degree: 15%
 
 >[!NOTE]
 >
->AEM管理员可以使用以下方式启动工作流 [其他几种方法](/help/sites-administering/workflows-starting.md).
+>AEM管理员可以使用[多种其他方法](/help/sites-administering/workflows-starting.md)启动工作流。
 
 ## 应用工作流 {#applying-workflows}
 
 工作流可以从“网站”控制台启动，或者在编辑页面时从Sidekick启动。
 
-此 **状态** 中的列 **网站** 控制台指示工作流是否已应用于页面：
+**网站**&#x200B;控制台中的&#x200B;**状态**&#x200B;列指示工作流是否已应用于页面：
 
 ![workflowstatus](assets/workflowstatus.png)
 
@@ -52,8 +52,8 @@ ht-degree: 15%
 1. 打开“网站”控制台。
 1. 打开所需的页面。
 1. 从Sidekick中选择Workflow选项卡。
-1. 展开 **工作流** 对话框，允许您选择 **工作流** （可选）输入 **工作流标题** 和 **注释**.
+1. 展开&#x200B;**工作流**&#x200B;对话框，允许您选择&#x200B;**工作流**，并可以选择输入&#x200B;**工作流标题**&#x200B;和&#x200B;**评论**。
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
-1. 单击 **启动工作流** ，以启动新的工作流实例，其中使用您配置的属性和当前页面作为有效负载。 现在工作流正在运行。
+1. 单击&#x200B;**启动工作流**&#x200B;以启动新的工作流实例，该实例具有您配置的属性和当前页面作为有效负载。 现在工作流正在运行。

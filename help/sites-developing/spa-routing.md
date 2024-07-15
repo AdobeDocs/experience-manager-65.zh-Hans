@@ -26,27 +26,27 @@ ht-degree: 0%
 
 ## 项目路由 {#project-routing}
 
-该应用程序拥有路由，随后由项目前端开发人员实施。 本文档描述特定于AEM服务器返回模型的路由。 页面模型数据结构会公开基础资源的URL。 前端项目可以使用任何自定义或第三方库提供路由功能。 一旦路由需要模型的片段，就会调用 `PageModelManager.getData()` 函数可以生成。 当模型路由发生更改时，必须触发一个事件来警告侦听库，如页面编辑器。
+该应用程序拥有路由，随后由项目前端开发人员实施。 本文档描述特定于AEM服务器返回模型的路由。 页面模型数据结构会公开基础资源的URL。 前端项目可以使用任何自定义或第三方库提供路由功能。 一旦路由需要模型的片段，就可以调用`PageModelManager.getData()`函数。 当模型路由发生更改时，必须触发一个事件来警告侦听库，如页面编辑器。
 
 ## 架构 {#architecture}
 
-欲知详细说明，请参见 [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) SPA部分。
+有关详细说明，请参阅SPA Blueprint文档的[PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)部分。
 
 ## 模型路由器 {#modelrouter}
 
-此 `ModelRouter`  — 启用时 — 封装HTML5 History API函数 `pushState` 和 `replaceState` 以确保预先获取并访问模型的给定片段。 然后，它通知注册的前端组件模型已被修改。
+`ModelRouter`（启用时）封装HTML5 History API函数`pushState`和`replaceState`，以确保预先获取和访问给定的模型片段。 然后，它通知注册的前端组件模型已被修改。
 
 ## 人工与自动模型工艺路线 {#manual-vs-automatic-model-routing}
 
-此 `ModelRouter` 自动获取模型的片段。 但就像任何自动化工具一样，它也有局限性。 需要时 `ModelRouter` 可以禁用或配置为使用元属性忽略路径(请参阅 [SPA页面组件](/help/sites-developing/spa-page-component.md) 文档)。 然后，前端开发人员可以通过请求 `PageModelManager` 使用加载模型的任何给定片段 `getData()` 函数。
+`ModelRouter`会自动获取模型的片段。 但就像任何自动化工具一样，它也有局限性。 需要时，可以禁用`ModelRouter`或将其配置为使用元属性忽略路径(请参阅[SPA页面组件](/help/sites-developing/spa-page-component.md)文档的“元属性”部分)。 然后，前端开发人员可以通过请求`PageModelManager`使用`getData()`函数加载任何给定模型片段来实施自己的模型路由层。
 
 >[!NOTE]
 >
->此 [We.Retail日志](https://github.com/adobe/aem-sample-we-retail-journal) 示例React项目说明了自动方法，而Angular项目说明了手动方法。 半自动化方法也是有效的用例。
+>[We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal)示例React项目说明了自动方法，而Angular项目说明了手动方法。 半自动化方法也是有效的用例。
 
 >[!CAUTION]
 >
->当前版本的 `ModelRouter` 仅支持使用指向Sling模型入口点的实际资源路径的URL。 它不支持使用虚URL或别名。
+>`ModelRouter`的当前版本仅支持使用指向Sling模型入口点的实际资源路径的URL。 它不支持使用虚URL或别名。
 
 ## 路由选择合同 {#routing-contract}
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ### 配置 {#configuration}
 
-此 `ModelRouter` 支持模型路由的概念 `pushState` 和 `replaceState` 调用以预取模型片段。 在内部，它会触发 `PageModelManager` 加载与给定URL对应的模型并触发 `cq-pagemodel-route-changed` 其他模块可以侦听的事件。
+`ModelRouter`在侦听`pushState`和`replaceState`预取模型片段的调用时支持模型路由的概念。 在内部，它会触发`PageModelManager`加载与给定URL对应的模型，并触发其他模块可以侦听的`cq-pagemodel-route-changed`事件。
 
 默认情况下，此行为会自动启用。 要禁用它，SPA应呈现以下元属性：
 
@@ -62,7 +62,7 @@ ht-degree: 0%
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-请注意，SPA的每条路由都应对应于AEM中的可访问资源(例如， ” `/content/mysite/mypage"`)，因为 `PageModelManager` 在选择路由后，将自动尝试加载相应的页面模型。 不过，如果需要，SPA还可以定义路由的“阻止列表”，应将其忽略 `PageModelManager`：
+请注意，SPA的每个路由都应对应于AEM中的可访问资源（例如，“`/content/mysite/mypage"`”），因为`PageModelManager`在选择路由后将自动尝试加载相应的页面模型。 但是，如果需要，SPA还可以定义应被`PageModelManager`忽略的路由的“阻止列表”：
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

@@ -48,9 +48,9 @@ ht-degree: 0%
 ## 先决条件 {#prerequisites}
 
 * 设置AEM创作实例。
-* 安装 [AEM Forms加载项](/help/forms/using/installing-configuring-aem-forms-osgi.md) 在创作实例上
+* 在创作实例上安装[AEM Forms加载项](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 * 设置MYSQL数据库
-* 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于MySQL数据库并使用Oracle的 [MySQL JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html).
+* 从数据库提供程序获取JDBC数据库驱动程序（JAR文件）。 本教程中的示例基于MySQL数据库并使用Oracle的[MySQL JDBC数据库驱动程序](https://dev.mysql.com/downloads/connector/j/5.1.html)。
 
 ## 步骤1：规划交互式通信 {#step-plan-the-interactive-communication}
 
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-表单数据模型允许您将交互式通信连接到不同的数据源。 例如，AEM用户配置文件、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库。 表单数据模型是连接数据源中可用的业务实体和服务的统一数据表示架构。 您可以将表单数据模型与交互式通信结合使用，以从连接的数据源中检索数据。 有关表单数据模型的更多信息，请参阅 [AEM Forms数据集成](/help/forms/using/data-integration.md).
+表单数据模型允许您将交互式通信连接到不同的数据源。 例如，AEM用户配置文件、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库。 表单数据模型是连接数据源中可用的业务实体和服务的统一数据表示架构。 您可以将表单数据模型与交互式通信结合使用，以从连接的数据源中检索数据。 有关表单数据模型的详细信息，请参阅[AEM Forms数据集成](/help/forms/using/data-integration.md)。
 
 **目标：**
 
@@ -140,7 +140,7 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 
 [](/help/forms/using/create-interactive-communication0.md)
 
-## 步骤6：发布交互式通信 {#step-publish-your-interactive-communication}
+## 步骤6：Publish交互式通信 {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

@@ -26,7 +26,7 @@ ht-degree: 65%
 
 * 在实施网站设计时，模板开发人员还应注意到此类问题。
 
-Adobe Experience Manager与 [准则](#wcag-accessibility-guidelines) 由 [万维网联盟](#world-wide-web-consortium).
+Adobe Experience Manager符合[万维网联盟](#world-wide-web-consortium)提供的[准则](#wcag-accessibility-guidelines)。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ WCAG 2.1 提供了[涵盖无障碍级别和如何符合这些级别的准则（�
 
 * [创建无障碍内容](/help/sites-authoring/creating-accessible-content.md)详细介绍了这些内容与 AEM 的关系。
 
-* [配置富文本编辑器以创建可访问的站点](/help/sites-administering/rte-accessible-content.md)
+* [配置富文本编辑器以生成可访问的站点](/help/sites-administering/rte-accessible-content.md)
 关于管理员如何配置AEM以生成无障碍内容的指南。
 
 * [创建无障碍的自适应Forms](/help/forms/using/creating-accessible-adaptive-forms.md)
@@ -62,4 +62,4 @@ Adobe Experience Manager (AEM)包括多项特性和功能，可为具有不同�
 
 ## Adobe 辅助功能 {#accessibility-at-adobe}
 
-欲了解更多信息，请访问 [Adobe辅助功能资源中心](https://www.adobe.com/cn/accessibility/).
+有关详细信息，请访问[Adobe辅助功能资源中心](https://www.adobe.com/cn/accessibility/)。

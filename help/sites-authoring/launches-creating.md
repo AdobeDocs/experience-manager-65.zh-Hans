@@ -86,7 +86,7 @@ ht-degree: 81%
    * **启动项标题**：启动项的名称。该名称应当体现出作者的相关信息。
    * **包含现有内容**：使用原始内容创建启动项。
    * **使用新模板替换页面**：有关更多详细信息，请参阅[使用新模板创建启动项](#create-launch-with-new-template)。
-   * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过将启动项设为 [live copy](/help/sites-administering/msm.md).
+   * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过将启动项设为[Live Copy](/help/sites-administering/msm.md)来实现此目标。
 
      默认情况下，此选项处于选中状态。
 
@@ -98,12 +98,12 @@ ht-degree: 81%
 
    如果您返回控制台（单击&#x200B;**完成**），则可以从以下任一位置查看（并访问）您的启动项：
 
-   * 该 [**启动次数** 控制台](/help/sites-authoring/launches.md#the-launches-console)
-   * 该 [**引用** 在 **站点** 控制台](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * [**启动项**&#x200B;控制台](/help/sites-authoring/launches.md#the-launches-console)
+   * **站点**&#x200B;控制台](/help/sites-authoring/launches.md#launches-in-references-sites-console)中的&#x200B;[**引用**
 
 ### 使用新模板创建启动项 {#create-launch-with-new-template}
 
-时间 [创建启动项](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) 您可以通过以下选项选择是否使用新模板： **使用新模板替换页面**
+在[创建启动项](/help/sites-authoring/launches-creating.md#create-launch-with-new-template)时，您可以选择是否使用新模板和选项： **使用新模板替换页面**
 
 >[!CAUTION]
 >
@@ -141,7 +141,7 @@ ht-degree: 81%
 
    ![选择启动项](assets/chlimage_1-230.png)
 
-1. 继续 **下一个** 并完成 **属性** 与其他任何启动项一样。
+1. 继续执行&#x200B;**下一步**，并像任何其他启动项一样完成&#x200B;**属性**。
 
    ![指定属性](assets/chlimage_1-231.png)
 

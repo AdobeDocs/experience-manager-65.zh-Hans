@@ -24,15 +24,16 @@ ht-degree: 0%
 
 ### Dispatcher重新获取失败 {#dispatcher-refetch-fails}
 
-将Dispatcher 4.1.5与较新版本的Jetty一起使用时，重新获取可能会在等待请求超时后导致“无法从远程服务器接收响应”。
+在将Dispatcher 4.1.5与较新版本的Jetty一起使用时，重新获取可能会在等待请求超时后导致“无法从远程服务器接收响应”。
 
 使用Dispatcher 4.1.6或更高版本解决了此问题。
 
-### 从CQ 5.4升级后无法访问论坛 {#cannot-access-forum-post-after-upgrading-from-cq}
+### 从CQ 5.4升级后无法访问论坛Post {#cannot-access-forum-post-after-upgrading-from-cq}
 
 如果在CQ 5.4上创建论坛并发布主题，然后站点升级到AEM 5.6.1或更高版本，则尝试查看现有帖子可能会导致页面上出现错误：
 
-非法的模式字符“a”无法将请求提供给 `/content/demoforums/forum-test.html` 和日志中包含以下内容：
+非法的模式字符&#39;a&#39;
+无法为此服务器上的`/content/demoforums/forum-test.html`提供请求，并且日志包含以下内容：
 
 ```xml
 20.03.2014 22:49:35.805 ERROR [10.177.45.32 [1395380975744] GET /content/demoforums/forum-test.html HTTP/1.1] com.day.cq.wcm.tags.IncludeTag Error while executing script content.jsp
@@ -45,12 +46,12 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 因此，任何使用RelativeTimeFormat() API的代码都必须更改：
 
-* 从： `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* 收件人： `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* 发件人： `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
+* 收件人：`final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-在“创作”和“发布”页面上，失败情况不同。 在创作时，它静默失败，只是不显示论坛主题。 发布时，会在页面上引发错误。
+Author和Publish上的失败情况不同。 在创作时，它静默失败，只是不显示论坛主题。 在Publish上，它会在页面上引发错误。
 
-请参阅 [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API以了解更多信息。
+有关详细信息，请参阅[com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API。
 
 ## 常见问题 {#common-concerns}
 
@@ -58,9 +59,9 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 在启动期间（不是第一个，但之后的每一个），日志中可能会显示以下警告：
 
-* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` 已替换为 `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
+* `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'`已替换为`com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-可以安全地忽略此警告，因为 `jknack.handlebars.Handlebars`，用于 [SCF](scf.md#handlebarsjavascripttemplatinglanguage)，自带了i18n助手实用程序。 启动时，它会被替换为特定于AEM的 [i18n助手](handlebars-helpers.md#i-n). 此警告由第三方库生成，用于确认覆盖现有帮助程序。
+此警告可以安全地忽略，因为[SCF](scf.md#handlebarsjavascripttemplatinglanguage)使用的`jknack.handlebars.Handlebars`带有自己的i18n帮助程序实用程序。 启动时，已将其替换为特定于AEM的[i18n帮助程序](handlebars-helpers.md#i-n)。 此警告由第三方库生成，用于确认覆盖现有帮助程序。
 
 ### 日志中的警告： OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 

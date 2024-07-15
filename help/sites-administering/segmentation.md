@@ -20,22 +20,22 @@ ht-degree: 62%
 
 >[!NOTE]
 >
->本节介绍如何在使用ContextHub时配置分段。 如果您使用的是“客户端上下文”功能，请参阅相关的文档 [为Client Context配置分段](/help/sites-administering/campaign-segmentation.md).
+>本节介绍如何在使用ContextHub时配置分段。 如果您正在使用客户端上下文功能，请参阅有关[为客户端上下文配置分段](/help/sites-administering/campaign-segmentation.md)的文档。
 >
 
-分段是创建营销活动时的主要考虑事项。请参阅 [管理受众](/help/sites-authoring/managing-audiences.md) 有关分段的工作方式和关键术语的信息。
+分段是创建营销活动时的主要考虑事项。有关分段的工作方式和关键术语的信息，请参阅[管理受众](/help/sites-authoring/managing-audiences.md)。
 
 根据您收集到的有关网站访客的信息以及要实现的目标，必须定义目标内容所需的区段和策略。
 
-之后，这些区段可用于为访客提供具体的目标内容。此内容维护于 [个性化](/help/sites-authoring/personalization.md) 部分。 此处定义的[活动](/help/sites-authoring/activitylib.md)可以包含在任何页面上，并定义专用内容适用于的访客区段。
+之后，这些区段可用于为访客提供具体的目标内容。此内容在网站的[Personalization](/help/sites-authoring/personalization.md)部分中维护。 此处定义的[活动](/help/sites-authoring/activitylib.md)可以包含在任何页面上，并定义专用内容适用于的访客区段。
 
 AEM可让您轻松个性化用户体验。 它还让您验证区段定义的结果。
 
 ## 访问区段 {#accessing-segments}
 
-此 [受众](/help/sites-authoring/managing-audiences.md) 控制台用于管理ContextHub或Client Context的区段以及Adobe Target帐户的受众。 本文档介绍了如何管理ContextHub的区段。 对象 [客户端上下文区段](/help/sites-administering/campaign-segmentation.md) 和Adobe Target区段，请参阅相关文档。
+[受众](/help/sites-authoring/managing-audiences.md)控制台用于管理ContextHub或Client Context的区段以及Adobe Target帐户的受众。 本文档介绍了如何管理ContextHub的区段。 有关[客户端上下文区段](/help/sites-administering/campaign-segmentation.md)和Adobe Target区段，请参阅相关文档。
 
-要访问区段，您需要选择配置。 在全局导航中，选择 **导航>个性化>受众**. 您将看到可用的配置：
+要访问区段，您需要选择配置。 在全局导航中，选择&#x200B;**导航> Personalization >受众**。 您将看到可用的配置：
 
 ![受众 — 配置](assets/segmentation-access-confs.png)
 
@@ -45,13 +45,13 @@ AEM可让您轻松个性化用户体验。 它还让您验证区段定义的结�
 
 ## 区段编辑器 {#segment-editor}
 
-**区段编辑器**&#x200B;可让您轻松修改区段。要编辑区段，请在 [区段列表](/help/sites-administering/segmentation.md#accessing-segments) 然后单击 **编辑** 按钮。
+**区段编辑器**&#x200B;可让您轻松修改区段。要编辑区段，请在[区段列表](/help/sites-administering/segmentation.md#accessing-segments)中选择一个区段，然后单击&#x200B;**编辑**&#x200B;按钮。
 
 ![segmenteditor](assets/segmenteditor.png)
 
 利用组件浏览器，您可以添加 **AND** 和 **OR** 容器来定义区段逻辑，然后添加其他组件以比较属性和值，或参考脚本和其他区段以定义选择标准（请参阅[创建新区段](#creating-a-new-segment)），从而定义选择区段的确切场景。
 
-当整个语句的计算结果为 true 时，表示该区段已解析。如果有多个适用的区段，则 **提升** 还使用了因子。 请参阅 [创建新区段](#creating-a-new-segment) ，以了解有关 [提升因子。](/help/sites-administering/campaign-segmentation.md#boost-factor)
+当整个语句的计算结果为 true 时，表示该区段已解析。如果有多个适用的区段，则还会使用&#x200B;**Boost**&#x200B;因子。 有关[提升因子的详细信息，请参阅[创建新区段](#creating-a-new-segment)。](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -64,7 +64,7 @@ AEM可让您轻松个性化用户体验。 它还让您验证区段定义的结�
 <table>
  <tbody>
   <tr>
-   <td>容器AND<br /> </td>
+   <td>容器和<br /> </td>
    <td>布尔AND运算符<br /> </td>
   </tr>
   <tr>
@@ -82,11 +82,11 @@ AEM可让您轻松个性化用户体验。 它还让您验证区段定义的结�
  <tbody>
   <tr>
    <td>属性值<br /> </td>
-   <td>将存储的一个属性与定义的值进行比较<br /> </td>
+   <td>将存储的一个属性与定义的值<br />进行比较 </td>
   </tr>
   <tr>
    <td>Property-Property</td>
-   <td>将存储的一个属性与另一个属性进行比较<br /> </td>
+   <td>将存储的一个属性与另一个属性<br />进行比较 </td>
   </tr>
   <tr>
    <td>Property-Segment 引用</td>
@@ -94,11 +94,11 @@ AEM可让您轻松个性化用户体验。 它还让您验证区段定义的结�
   </tr>
   <tr>
    <td>Property-Script 引用</td>
-   <td>将存储的一个属性与脚本的结果进行比较<br /> </td>
+   <td>将存储的一个属性与脚本<br />的结果进行比较 </td>
   </tr>
   <tr>
    <td>区段 Reference-Script 引用</td>
-   <td>将引用的区段与脚本的结果进行比较<br /> </td>
+   <td>将引用的区段与脚本<br />的结果进行比较 </td>
   </tr>
  </tbody>
 </table>
@@ -136,11 +136,11 @@ AEM可让您轻松个性化用户体验。 它还让您验证区段定义的结�
 
 1. 在[访问区段](/help/sites-administering/segmentation.md#accessing-segments)后，[导航到文件夹](#organizing-segments)，您要在该文件夹中创建区段。
 
-1. 单击创建按钮并选择 **创建ContextHub区段**.
+1. 单击“创建”按钮并选择&#x200B;**创建ContextHub区段**。
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. 在 **新ContextHub区段**，输入区段的标题和boost值（如有必要），然后单击 **创建**.
+1. 在&#x200B;**新ContextHub区段**&#x200B;中，根据需要输入区段的标题和Boost值，然后单击&#x200B;**创建**。
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 
@@ -156,7 +156,7 @@ AEM可让您轻松个性化用户体验。 它还让您验证区段定义的结�
 
    始终设置&#x200B;**数据类型**（如果可能）以确保正确评估比较。有关更多信息，请参阅[比较](/help/sites-administering/segmentation.md#comparisons)。
 
-1. 单击 **确定** 要保存定义，请执行以下操作：
+1. 单击&#x200B;**确定**&#x200B;保存您的定义：
 1. 根据需要添加更多组件。您可以使用用于 AND 和 OR 比较的容器组件来制定布尔表达式（请参阅下面的[使用 AND 和 OR 容器](/help/sites-administering/segmentation.md#using-and-and-or-containers)）。利用区段编辑器，您可以删除不再需要的组件，或将它们拖到语句中的新位置。
 
 ### 使用 AND 和 OR 容器 {#using-and-and-or-containers}
@@ -236,7 +236,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ### 创建新文件夹 {#create-folder}
 
-1. 之后 [访问区段](#accessing-segments)，单击 **创建** 按钮并选择 **文件夹**.
+1. 在[访问区段](#accessing-segments)后，单击&#x200B;**创建**&#x200B;按钮并选择&#x200B;**文件夹**。
 
    ![添加文件夹](assets/contexthub-create-segment.png)
 
@@ -259,13 +259,13 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ### 修改现有文件夹 {#modify-folders}
 
-1. 之后 [访问区段](#accessing-segments)，单击要修改的文件夹以将其选定。
+1. 在[访问区段](#accessing-segments)后，单击要修改的文件夹以将其选定。
 
    ![选择文件夹](assets/contexthub-select-folder.png)
 
-1. 单击 **重命名** 以重命名文件夹。
+1. 单击工具栏中的&#x200B;**重命名**&#x200B;以重命名文件夹。
 
-1. 提供新的 **文件夹标题** 并单击 **保存**.
+1. 提供新的&#x200B;**文件夹标题**，然后单击&#x200B;**保存**。
 
    ![重命名文件夹](assets/contexthub-rename-folder.png)
 
@@ -275,25 +275,25 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 ### 删除文件夹
 
-1. 之后 [访问区段](#accessing-segments)，单击要修改的文件夹以将其选定。
+1. 在[访问区段](#accessing-segments)后，单击要修改的文件夹以将其选定。
 
    ![选择文件夹](assets/contexthub-select-folder.png)
 
-1. 单击 **删除** 以删除文件夹。
+1. 单击工具栏中的&#x200B;**删除**&#x200B;以删除文件夹。
 
 1. 这将显示一个对话框，其中包含已选择删除的文件夹的列表。
 
    ![确认删除](assets/contexthub-confirm-segment-delete.png)
 
-   * 单击 **删除** 以确认。
-   * 单击 **取消** 中止。
+   * 单击&#x200B;**删除**&#x200B;以确认。
+   * 单击&#x200B;**取消**&#x200B;中止。
 
 1. 如果任意选定文件夹包含子文件夹或区段，则必须确认将其删除。
 
    ![确认删除子级](assets/contexthub-confirm-segment-child-delete.png)
 
-   * 单击 **强制删除** 以确认。
-   * 单击 **取消** 中止。
+   * 单击&#x200B;**强制删除**&#x200B;以确认。
+   * 单击&#x200B;**取消**&#x200B;中止。
 
 >[!NOTE]
 >
@@ -322,7 +322,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 此类测试也可在内容页面上执行，并与目标内容以及相关的&#x200B;**活动**&#x200B;和&#x200B;**体验**&#x200B;相结合。
 
-如果您使用上面的主要年龄组区段示例设置了活动和体验，则可以轻松地使用活动测试区段。 有关设置活动的详细信息，请参阅相关 [有关创作目标内容的文档](/help/sites-authoring/content-targeting-touch.md).
+如果您使用上面的主要年龄组区段示例设置了活动和体验，则可以轻松地使用活动测试区段。 有关设置活动的详细信息，请参阅有关创作目标内容](/help/sites-authoring/content-targeting-touch.md)的[文档。
 
 1. 在已设置目标内容的页面的编辑模式下，您可以看到已通过内容上的箭头图标来目标内容。
 

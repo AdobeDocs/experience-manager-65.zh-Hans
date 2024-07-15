@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->无法通过导入自定义native2pdfconfig.xml文件来更改PDF Generator的超时设置。 该文件中的超时设置仅供参考，并在PDF Generator中显示当前设置。 要更改超时设置，请参阅中的“设置PDF Generator性能参数”。 [安装和部署AEM Forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>无法通过导入自定义native2pdfconfig.xml文件来更改PDF Generator的超时设置。 该文件中的超时设置仅供参考，并在PDF Generator中显示当前设置。 要更改超时设置，请参阅[安装和部署AEM表单](https://www.adobe.com/go/learn_aemforms_installJBoss_63)中的“设置PDF Generator性能参数”。
 
 ## 导出当前配置文件 {#export-your-current-configuration-file}
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 1. 在管理控制台中，单击服务>PDF Generator>配置文件>导入配置。
 1. 选择“导入现有配置文件”。
-1. 要在“配置文件”框中指定文件位置，请单击“浏览”查找并选择该文件，然后单击 **导入**.
+1. 若要在“配置文件”框中指定文件位置，请单击“浏览”查找并选择该文件，然后单击“**导入**”。
 
 ## 转换AutoCAD文件中的所有图层 {#convert-all-layers-within-autocad-files}
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 1. 在管理控制台中，单击服务>PDF Generator>配置文件>导出配置。
 1. 选择下载整个配置，然后单击下载。
-1. 在文本编辑器中，打开下载的文件，并在 `AutoCAD` 标记中 `PDFMaker` 标记，添加文本 `convertAllPages="true"`.
+1. 在文本编辑器中，打开下载的文件，并在`PDFMaker`标记内的`AutoCAD`标记下添加文本`convertAllPages="true"`。
 1. 在管理控制台中，单击服务>PDF Generator>配置文件>导入配置。
 1. 选择“导入现有配置文件”，指定更新的文件，然后单击“导入”。
 

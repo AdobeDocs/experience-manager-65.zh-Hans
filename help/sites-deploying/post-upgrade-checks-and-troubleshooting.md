@@ -1,5 +1,5 @@
 ---
-title: 升级后检查和故障排除
+title: Post升级检查和故障排除
 description: 了解如何对升级后可能显示的问题进行故障排除。
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 ---
 
-# 升级后检查和故障排除{#post-upgrade-checks-and-troubleshooting}
+# Post升级检查和故障排除{#post-upgrade-checks-and-troubleshooting}
 
-## 升级后检查 {#post-upgrade-checks}
+## Post升级检查 {#post-upgrade-checks}
 
-遵循 [就地升级](/help/sites-deploying/in-place-upgrade.md) 应执行以下活动以完成升级。 我们假定AEM已使用6.5 jar启动，并且已部署升级的代码库。
+在[就地升级](/help/sites-deploying/in-place-upgrade.md)后，应执行以下活动以完成升级。 我们假定AEM已使用6.5 jar启动，并且已部署升级的代码库。
 
 * [验证日志以确认升级成功](#main-pars-header-290365562)
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 * 升级框架检测到的升级故障集中在一个升级报告中；
 * 升级报告包含有关必要手动干预的指标。
 
-为了满足此要求，已对生成日志的方式进行了更改 `upgrade.log` 文件。
+为了适应这种情况，已在`upgrade.log`文件中更改生成日志的方式。
 
 以下是一个示例报表，该报表在升级期间未显示任何错误：
 
@@ -69,27 +69,27 @@ ht-degree: 0%
 
 **error.log**
 
-在使用目标版本jar启动AEM期间和之后，应该仔细查看error.log。 应审查任何警告或错误。 通常，最好在日志的开头查找问题。 日志中稍后发生的错误实际上可能是文件早期调出的根本原因的副作用。 如果重复出现错误和警告，请参阅下面的 [分析升级问题](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade).
+在使用目标版本jar启动AEM期间和之后，应该仔细查看error.log。 应审查任何警告或错误。 通常，最好在日志的开头查找问题。 日志中稍后发生的错误实际上可能是文件早期调出的根本原因的副作用。 如果出现重复错误和警告，请参阅下面的[分析升级问题](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade)。
 
 ### 验证OSGi包 {#verify-osgi-bundles}
 
-导航到OSGi控制台 `/system/console/bundles` 并查看是否有任何捆绑包未启动。 如果有任何捆绑包处于已安装状态，请查阅 `error.log` 以确定根本问题。
+导航到OSGi控制台`/system/console/bundles`，并查看是否有任何捆绑包未启动。 如果有任何捆绑包处于已安装状态，请查阅`error.log`以确定根问题。
 
 ### 验证Oak版本 {#verify-oak-version}
 
-升级后，您应该会看到Oak版本已更新到 **1.10.2**. 要验证Oak版本，请导航到OSGi控制台并查看与Oak捆绑包关联的版本：Oak Core、Oak Commons、Oak Segment Tar。
+升级后，您应会看到Oak版本已更新为&#x200B;**1.10.2**。 要验证Oak版本，请导航到OSGi控制台，并查看与Oak捆绑包关联的版本：Oak Core、Oak Commons、Oak Segment Tar。
 
 ### Inspect PreUpgradeBackup文件夹 {#inspect-preupgradebackup-folder}
 
-在升级过程中，AEM会尝试备份自定义项并将其存储在下面 `/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`. 要在CRXDE Lite中查看此文件夹，您可能需要 [临时启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md).
+在升级期间，AEM会尝试备份自定义项并将其存储在`/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`下。 若要在CRXDE Lite中查看此文件夹，您可能需要[临时启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md)。
 
-具有时间戳的文件夹应具有名为的属性 `mergeStatus` 值为 `COMPLETED`. 此 **待处理** 文件夹应为空，并且 **已覆盖** 节点指示在升级期间被覆盖的节点。 Leftovers节点下的内容表示在升级期间无法安全合并的内容。 如果您的实施依赖于任何子节点（并且尚未由升级后的代码包安装），则需要手动合并这些子节点。
+具有时间戳的文件夹应具有名为`mergeStatus`的属性，其值为`COMPLETED`。 **to-process**&#x200B;文件夹应为空，**覆盖**&#x200B;节点指示在升级期间覆盖哪些节点。 Leftovers节点下的内容表示在升级期间无法安全合并的内容。 如果您的实施依赖于任何子节点（并且尚未由升级后的代码包安装），则需要手动合并这些子节点。
 
 如果在暂存或生产环境中，则禁用本练习后的CRXDE Lite。
 
 ### 页面初始验证 {#initial-validation-of-pages}
 
-对AEM中的多个页面执行初始验证。 如果升级创作环境，请打开开始页面和欢迎页面( `/aem/start.html`， `/libs/cq/core/content/welcome.html`)。 在创作和发布环境中，打开几个应用程序页面并进行冒烟测试，以使其正确呈现。 如果有任何问题，请参阅 `error.log` 以进行故障排除。
+对AEM中的多个页面执行初始验证。 如果升级创作环境，请打开起始页和欢迎页( `/aem/start.html`， `/libs/cq/core/content/welcome.html`)。 在“创作”和“Publish”环境中，打开几个应用程序页面，并进行烟雾测试，以正确呈现这些页面。 如果发生任何问题，请查阅`error.log`以进行故障排除。
 
 ### 应用AEM Service Pack {#apply-aem-service-packs}
 
@@ -97,13 +97,13 @@ ht-degree: 0%
 
 ### 迁移AEM功能 {#migrate-aem-features}
 
-升级后，AEM中的多项功能需要执行其他步骤。 有关这些功能的完整列表以及在AEM 6.5中迁移这些功能的步骤，请访问 [升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md) 页面。
+升级后，AEM中的多项功能需要执行其他步骤。 在AEM 6.5中迁移这些功能和步骤的完整列表可在[升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md)页面上找到。
 
 ### 验证计划的维护配置 {#verify-scheduled-maintenance-configurations}
 
 #### 启用数据存储垃圾收集 {#enable-data-store-garbage-collection}
 
-如果使用文件数据存储，请确保已启用数据存储垃圾收集任务并将其添加到每周维护列表。 说明已概述 [此处](/help/sites-administering/data-store-garbage-collection.md).
+如果使用文件数据存储，请确保已启用数据存储垃圾收集任务并将其添加到每周维护列表。 说明概述于[此处](/help/sites-administering/data-store-garbage-collection.md)。
 
 >[!NOTE]
 >
@@ -111,15 +111,15 @@ ht-degree: 0%
 
 #### 启用联机修订清理 {#enable-online-revision-cleanup}
 
-如果使用MongoMK或新的TarMK区段格式，请确保已启用“修订版清理”任务并将其添加到“每日维护”列表中。 说明概述 [此处](/help/sites-deploying/revision-cleanup.md).
+如果使用MongoMK或新的TarMK区段格式，请确保已启用“修订版清理”任务并将其添加到“每日维护”列表中。 [此处](/help/sites-deploying/revision-cleanup.md)列出的说明。
 
 ### 执行测试计划 {#execute-test-plan}
 
-根据定义执行详细的测试计划 [升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md) 在 **测试过程** 部分。
+在&#x200B;**测试过程**&#x200B;部分下，针对定义的[升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md)执行详细的测试计划。
 
 ### 启用复制代理 {#enable-replication-agents}
 
-完全升级并验证发布环境后，在创作环境中启用复制代理。 验证代理是否能够连接到各自的发布实例。 参见U [升级过程](/help/sites-deploying/upgrade-procedure.md) 以了解有关事件顺序的更多详细信息。
+完全升级并验证发布环境后，在创作环境中启用复制代理。 验证代理是否能够连接到相应的Publish实例。 有关事件顺序的更多详细信息，请参阅[升级过程](/help/sites-deploying/upgrade-procedure.md)。
 
 ### 启用自定义计划作业 {#enable-custom-scheduled-jobs}
 
@@ -133,25 +133,25 @@ ht-degree: 0%
 
 ### 存储库迁移失败  {#repository-migration-failing-}
 
-从CRX2到Oak的数据迁移对于任何从基于CQ 5.4的源实例开始的场景都应该可行。请确保完全按照本文档中的升级说明进行操作，包括准备 `repository.xml`，确保在开始迁移之前，没有通过JAAS启动自定义身份验证器，并且已检查实例是否不一致。
+从基于CQ 5.4的CRX实例开始的任何场景，都应该适合从Source2到Oak的数据迁移。请确保完全按照本文档中的升级说明进行操作，包括准备`repository.xml`，并确保未通过JAAS启动自定义身份验证器，并且在开始迁移之前已检查实例是否不一致。
 
-如果迁移仍然失败，您可以通过检查 `upgrade.log`. 如果问题尚不清楚，请向客户支持部门报告。
+如果迁移仍然失败，您可以通过检查`upgrade.log`找出根本原因。 如果问题尚不清楚，请向客户支持部门报告。
 
 ### 升级未运行 {#the-upgrade-did-not-run}
 
-在开始准备步骤之前，请确保运行 **源** 首先使用Java™ -jar aem-quickstart.jar命令执行实例。 这是确保正确生成quickstart.properties文件所必需的。 如果缺少该参数，升级将无法工作。 或者，您可以通过查看以下内容来检查文件是否存在 `crx-quickstart/conf` 在源实例的安装文件夹中。 此外，在启动AEM以开始升级时，必须使用Java™ -jar aem-quickstart.jar命令执行该升级。 从启动脚本启动不会以升级模式启动AEM。
+在开始准备步骤之前，请确保先运行&#x200B;**source**&#x200B;实例，方法是使用Java™ -jar aem-quickstart.jar命令执行该实例。 这是确保正确生成quickstart.properties文件所必需的。 如果缺少该参数，升级将无法工作。 或者，您可以通过查看源实例安装文件夹中的`crx-quickstart/conf`来检查文件是否存在。 此外，在启动AEM以开始升级时，必须使用Java™ -jar aem-quickstart.jar命令执行该升级。 从启动脚本启动不会以升级模式启动AEM。
 
 ### 包和捆绑包无法更新  {#packages-and-bundles-fail-to-update-}
 
-如果在升级期间无法安装包，则也不会更新包中包含的包。 此类问题是由数据存储配置错误导致的。 它们还将显示为 **错误** 和 **警告** error.log中的消息。 由于大多数情况下，默认登录可能无法工作，因此您可以直接使用CRXDE检查并查找配置问题。
+如果在升级期间无法安装包，则也不会更新包中包含的包。 此类问题是由数据存储配置错误导致的。 它们还将在error.log中显示为&#x200B;**ERROR**&#x200B;和&#x200B;**WARN**&#x200B;消息。 由于大多数情况下，默认登录可能无法工作，因此您可以直接使用CRXDE检查并查找配置问题。
 
 ### 某些AEM捆绑包未切换到活动状态 {#some-aem-bundles-are-not-switching-to-the-active-state}
 
 如果存在未启动的包，请检查是否存在任何未满足的依赖项。
 
-如果出现此问题，但此问题基于失败的软件包安装，从而导致捆绑包无法升级，则系统将认为它们与新版本不兼容。 有关如何对此进行故障排除的更多信息，请参阅 **包和捆绑包无法更新** 以上。
+如果出现此问题，但此问题基于失败的软件包安装，从而导致捆绑包无法升级，则系统将认为它们与新版本不兼容。 有关如何解决此问题的更多信息，请参阅上面的&#x200B;**无法更新的包和包**。
 
-此外，还建议将新的AEM 6.5实例的捆绑包列表与已升级的实例进行比较，以检测未升级的捆绑包。 这将提供更密切的内容范围，让您能够在 `error.log`.
+此外，还建议将新的AEM 6.5实例的捆绑包列表与已升级的实例进行比较，以检测未升级的捆绑包。 这将提供在`error.log`中搜索内容的更近范围。
 
 ### 自定义捆绑包未切换到活动状态 {#custom-bundles-not-switching-to-the-active-state}
 
@@ -165,7 +165,7 @@ ht-degree: 0%
 
 如果某些UI功能在升级后无法正常工作，则应该首先检查界面的自定义叠加图。 某些结构可能已更改，并且叠加可能需要更新或已过时。
 
-接下来，检查是否存在任何可以跟踪到与客户端库关联的自定义添加扩展的JavaScript错误。 这同样适用于可能导致AEM布局问题的自定义CSS。
+接下来，检查是否存在任何可向下跟踪到与客户端库关联的自定义添加扩展的JavaScript错误。 这同样适用于可能导致AEM布局问题的自定义CSS。
 
 最后，检查JavaScript可能无法处理的配置错误。 如果扩展未正确停用，则通常会出现这种情况。
 
@@ -173,13 +173,13 @@ ht-degree: 0%
 
 通常，这些问题的根本原因与未启动的捆绑包或未安装的捆绑包相同，只是首次使用组件时问题开始发生。
 
-处理错误自定义代码的方法是首先执行烟雾测试以识别原因。 找到后，请查看此文档中的推荐 [链接] 部分以了解修复方法。
+处理错误自定义代码的方法是首先执行烟雾测试以识别原因。 找到建议后，请查看文章的此[链接]部分中的建议以了解修复方法。
 
 ### /etc下缺少自定义项 {#missing-customizations-under-etc}
 
-`/apps` 和 `/libs` 升级处理得当，但更改位于 `/etc` 可能需要从手动恢复 `/var/upgrade/PreUpgradeBackup` 升级后。 请确保检查此位置，以查看是否有任何需要手动合并的内容。
+升级处理得当`/apps`和`/libs`，但在升级后可能需要从`/var/upgrade/PreUpgradeBackup`手动还原`/etc`下的更改。 请确保检查此位置，以查看是否有任何需要手动合并的内容。
 
-### 分析error.log和upgrade.log {#analyzing-the-error.log-and-upgrade.log}
+### 正在分析error.log和upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 在大多数情况下，需要查阅日志来查找错误原因。 但是，在升级时，由于旧捆绑包可能无法正确升级，因此还需要监视依赖项问题。
 
@@ -191,11 +191,11 @@ grep -v UnrelatedErrorString
 
 某些错误消息可能不会立即说明问题。 在这种情况下，查看发生错误的上下文也有助于了解错误是在何处创建的。 您可以使用以下内容分隔错误：
 
-* `grep -B` 在错误前添加行；
+* 用于在错误之前添加行的`grep -B`；
 
 或
 
-* `grep -A` 用于在之后添加行。
+* `grep -A`在之后添加行。
 
 在少数情况下，还可以找到错误WARN消息，因为可能存在导致此状态的有效案例，并且应用程序并不总是能够确定这是否是实际错误。 请务必查阅这些信息。
 

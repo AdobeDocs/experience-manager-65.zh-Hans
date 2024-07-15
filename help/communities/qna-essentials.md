@@ -29,7 +29,7 @@ ht-degree: 2%
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">include</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">包括</a></td>
    <td>否</td>
   </tr>
   <tr>
@@ -46,7 +46,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td> 属性</td>
-   <td>请参阅 <a href="working-with-qna.md">问答论坛功能</a></td>
+   <td>查看<a href="working-with-qna.md">问答论坛功能</a></td>
   </tr>
  </tbody>
 </table>
@@ -57,26 +57,26 @@ ht-degree: 2%
 
 * [问题与解答API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [问题与解答端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [QnA端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 
 ### 问题与解答功能 {#qna-function}
 
-社区站点结构包括 [问题与解答功能](functions.md#qna-function) 已配置 `QnA` 影响审核和标记的组件和设置。 QnA函数支持识别 [特权成员用户组](users.md#privileged-members-group).
+包含[QnA函数](functions.md#qna-function)的社区站点结构具有已配置的`QnA`组件以及影响审核和标记的设置。 QnA函数支持识别[特权成员用户组](users.md#privileged-members-group)。
 
 ### 访问问题与解答论坛帖子(UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC应使用标准审核方法之一进行审核。
-请参阅 [审核用户生成的内容](moderate-ugc.md).
+请参阅[审核用户生成的内容](moderate-ugc.md)。
 
-自AEM 6.1 Communities起，使用 [公用存储](working-with-srp.md) for UGC包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）是什么。
+截至AEM 6.1 Communities，使用用于UGC的[公用存储](working-with-srp.md)包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）如何。
 
-**UGC在存储库中的位置和格式可能会发生更改，恕不发出警告**.
+**存储库中UGC的位置和格式可能会发生更改，而不会出现警告**。
 
 请参阅：
 
-* [存储资源提供程序概述](srp.md)  — 简介和存储库使用情况概述。
-* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用程序方法和示例。
-* [使用SRP访问UGC](accessing-ugc-with-srp.md)  — 编码准则。
-* [SocialUtils重构](socialutils.md)  — 将已弃用的实用程序方法映射到当前SRP实用程序方法。
+* [存储资源提供程序概述](srp.md) — 简介和存储库使用情况概述。
+* [SRP和UGC Essentials](srp-and-ugc.md) - SRP实用工具方法和示例。
+* [使用SRP访问UGC](accessing-ugc-with-srp.md) — 编码准则。
+* [SocialUtils重构](socialutils.md) — 将已弃用的实用工具方法映射到当前的SRP实用工具方法。

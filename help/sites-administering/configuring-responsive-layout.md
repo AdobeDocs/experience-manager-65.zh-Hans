@@ -19,11 +19,11 @@ ht-degree: 4%
 
 # 配置布局容器和布局模式{#configuring-layout-container-and-layout-mode}
 
-[响应式布局](/help/sites-authoring/responsive-layout.md) 是一种用于实现 [响应式网页设计](https://en.wikipedia.org/wiki/Responsive_web_design). 这允许用户创建网页，这些网页的布局和尺寸取决于用户使用的设备。
+[响应式布局](/help/sites-authoring/responsive-layout.md)是一种用于实现[响应式网页设计](https://en.wikipedia.org/wiki/Responsive_web_design)的机制。 这允许用户创建网页，这些网页的布局和尺寸取决于用户使用的设备。
 
 >[!NOTE]
 >
->这可以与 [移动Web](/help/sites-developing/mobile-web.md) 机制，使用自适应Web设计（主要用于经典UI）。
+>这可以与[移动Web](/help/sites-developing/mobile-web.md)机制进行比较，后者使用自适应Web设计（主要用于经典UI）。
 
 AEM 使用一组机制为页面实现响应式布局：
 
@@ -31,7 +31,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
   此组件提供了一个网格段落系统，允许您在响应式网格中添加和放置组件。 它可以用作页面的默认Parsys，和/或在组件浏览器中提供给作者。
 
-   * 默认 **布局容器** 组件在下定义：
+   * 默认&#x200B;**布局容器**&#x200B;组件定义于：
 
      /libs/wcm/foundation/components/responsivegrid
 
@@ -44,14 +44,14 @@ AEM 使用一组机制为页面实现响应式布局：
         您可以将布局容器作为页面的标准，同时允许用户在此中添加更多布局容器；例如，实现列控件。
 
 * **[布局模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-将布局容器放置到页面上后，您便可以使用 **布局** 模式，用于将内容放置在响应式网格中。
+将布局容器放置到页面上后，即可使用**布局**&#x200B;模式在响应式网格内放置内容。
 
 * [**模拟器**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 这让您创建和编辑响应式网站，通过以交互的方式调整组件大小，根据设备/窗口大小重新排列布局。然后，用户可以使用模拟器查看内容的呈现方式。
 
 >[!CAUTION]
 >
->尽管 **布局容器** 组件在经典UI中可用，其完整功能仅在触屏UI中可用。
+>尽管&#x200B;**布局容器**&#x200B;组件在经典UI中可用，但其完整功能仅在触屏UI中可用。
 
 通过这些响应式网格机制，您可以：
 
@@ -62,27 +62,27 @@ AEM 使用一组机制为页面实现响应式布局：
 
 >[!NOTE]
 >
->在开箱即用的安装中，已为以下对象配置了响应式布局 [We.Retail引用站点](/help/sites-developing/we-retail.md). [激活布局容器组件](#enable-the-layout-container-component-for-page) 用于其他页面。
+>在开箱即用的安装中，已为[We.Retail参考网站](/help/sites-developing/we-retail.md)配置了响应式布局。 [为其他页面激活布局容器组件](#enable-the-layout-container-component-for-page)。
 
 ## 配置响应式模拟器 {#configuring-the-responsive-emulator}
 
-此任务允许您查看响应式 **模拟器** 在您的网站上。
+此任务允许您在网站上看到响应式&#x200B;**模拟器**。
 
 ### 注册页面组件以进行模拟 {#register-your-page-components-for-emulation}
 
-要使模拟器能够支持您的页面，您必须注册页面组件。 请参阅 [注册用于模拟的页面组件](/help/sites-developing/responsive.md#registering-page-components-for-simulation).
+要使模拟器能够支持您的页面，您必须注册页面组件。 请参阅[为模拟注册页面组件](/help/sites-developing/responsive.md#registering-page-components-for-simulation)。
 
 ### 指定设备组 {#specify-the-device-groups}
 
-要指定出现在模拟器的设备列表中的设备组，请参阅 [指定设备组](/help/sites-developing/responsive.md#specifying-the-device-groups).
+要指定出现在模拟器的“设备”列表中的设备组，请参阅[指定设备组](/help/sites-developing/responsive.md#specifying-the-device-groups)。
 
 ### 将您的站点链接到指定的设备组 {#link-your-site-to-the-specified-device-groups}
 
-要包含模拟器，请将您的站点链接到设备组。 请参阅 [添加设备列表](/help/sites-developing/responsive.md#adding-the-devices-list) （适用于经典用户界面和触屏优化用户界面）。
+要包含模拟器，请将您的站点链接到设备组。 请参阅[添加设备列表](/help/sites-developing/responsive.md#adding-the-devices-list)（对于经典用户界面和触控优化用户界面）。
 
 ## 激活网站的布局模式 {#activate-layout-mode-for-your-site}
 
-这些过程用于启用 **布局** 模式。
+这些过程用于在您的网站上启用&#x200B;**布局**&#x200B;模式。
 
 ### 配置断点 {#configure-the-breakpoints}
 
@@ -101,7 +101,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 * 使用模拟器时，在页面编辑器顶部显示为标记。
 * 继承自父节点层次结构，可以随意覆盖。
-* 有一个默认（开箱即用）断点，它覆盖最后一个断点以上的所有内容 *已配置* 断点。
+* 有一个默认（开箱即用）断点，它覆盖上一个&#x200B;*配置的*&#x200B;断点之上的所有内容。
 
 它们可以使用CRXDE Lite或XML进行定义。
 
@@ -123,9 +123,9 @@ AEM 使用一组机制为页面实现响应式布局：
 1. 使用CRXDE Lite（或等效项），导航到：
 
    * 您的模板定义。
-   * 此 `jcr:content` 节点。
+   * 页面的`jcr:content`节点。
 
-1. 下 `jcr:content` 创建节点：
+1. 在`jcr:content`下创建节点：
 
    * 名称：`cq:responsive`
    * 类型：`nt:unstructured`
@@ -144,7 +144,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 #### 使用XML配置断点 {#configuring-breakpoints-using-xml}
 
-断点位于 `<jcr:content>` 的部分 `.context.html` 在相应的模板（或内容）文件夹下。
+断点位于`.context.html`的`<jcr:content>`部分中，位于相应的模板（或内容）文件夹下。
 
 示例定义：
 
@@ -163,13 +163,13 @@ AEM 使用一组机制为页面实现响应式布局：
 >
 >仅当页面组件不是基于基础页面组件时，才需要此操作。
 
-复制以下内容 `cq:infoProviders` 将节点结构放入父页面组件中：
+将以下`cq:infoProviders`节点结构复制到父页面组件中：
 
 `/libs/foundation/components/page/cq:infoProviders/responsive`
 
 ## 为页面启用组件调整大小 {#enable-component-resizing-for-the-page}
 
-这些过程是必需的，这样您就可以在中 **布局** 模式。
+需要这些过程，以便您可以在&#x200B;**布局**&#x200B;模式下调整组件大小。
 
 ### 将布局容器设置为主Parsys {#set-layout-container-as-main-parsys}
 
@@ -202,7 +202,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项目中。
 
-您还必须创建 [客户端库](https://experienceleague.adobe.com/docs/) 以提供额外的配置和函数调用。 以下LESS提取是您必须添加到项目的最小值示例：
+您还必须创建一个[客户端库](https://experienceleague.adobe.com/docs/)以提供额外的配置和函数调用。 以下LESS提取是您必须添加到项目的最小值示例：
 
 ```java
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -258,7 +258,7 @@ AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项�
 
 * `afterchildedit`
 
-要正确调整响应式网格中包含的自适应图像的大小并更新其内容，您需要添加 `afterEdit` 设置为 `REFRESH_PAGE` 侦听器 `EditConfig` 每个包含的组件的文件。
+要正确调整响应式网格中包含的自适应图像的大小并更新其内容，您需要将设置为`REFRESH_PAGE`的`afterEdit`侦听器添加到每个包含组件的`EditConfig`文件中。
 
 例如：
 
@@ -272,7 +272,7 @@ AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项�
 
 ## 为页面启用布局容器组件 {#enable-the-layout-container-component-for-page}
 
-这些任务允许作者拖动 **布局容器** 组件放到页面上。
+这些任务允许作者将&#x200B;**布局容器**&#x200B;组件的实例拖动到页面上。
 
 ### 启用布局容器组件以进行页面编辑 {#enable-the-layout-container-component-for-page-editing}
 
@@ -280,11 +280,11 @@ AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项�
 
 * **创作环境**
 
-  使用 [设计模式](/help/sites-authoring/default-components-designmode.md) 以激活 **图层容器** 页面组件。
+  使用[设计模式](/help/sites-authoring/default-components-designmode.md)激活页面的&#x200B;**层容器**&#x200B;组件。
 
 * **组件定义**
 
-  使用 `allowedComponent` 或定义组件时的静态include 。
+  定义组件时，请使用`allowedComponent`或静态包含。
 
 ### 配置布局容器的网格 {#configure-the-grid-of-the-layout-container}
 
@@ -294,7 +294,7 @@ AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项�
 
    您可以配置可用于布局容器每个特定实例的列数。
 
-   为此，请使用 [设计模式](/help/sites-authoring/default-components-designmode.md)，然后打开所需容器的“设计”对话框。 您可以在此指定有多少列可用于定位和大小调整。 默认值为12。
+   为此，请使用[设计模式](/help/sites-authoring/default-components-designmode.md)，然后打开所需容器的“设计”对话框。 您可以在此指定有多少列可用于定位和大小调整。 默认值为12。
 
 1. **XML**
 

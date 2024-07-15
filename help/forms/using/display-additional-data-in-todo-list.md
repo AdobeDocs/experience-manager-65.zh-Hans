@@ -20,22 +20,22 @@ ht-degree: 0%
 
 默认情况下，AEM Forms工作区的待办事项列表会显示任务显示名称和描述。 但是，您可以添加其他信息，如创建日期、截止日期等。 您还可以添加图标和更改显示样式。
 
-![查看显示默认配置的HTML工作区待办事项选项卡](assets/html-todo-list.png)
+![查看HTMLWorkspace待办事项选项卡，其中显示默认配置](assets/html-todo-list.png)
 
 本文详细介绍了添加要为ToDo列表中的每个任务显示的信息所需的步骤。
 
 ## 可添加的内容 {#what-can-be-added}
 
-您可以添加以下位置提供的信息： `task.json` 由服务器发送。 信息可以纯文本形式添加，也可以使用样式设置信息的格式。
+您可以添加服务器发送的`task.json`中可用的信息。 信息可以纯文本形式添加，也可以使用样式设置信息的格式。
 
-有关JSON对象描述的详细信息，请参见 [此](/help/forms/using/html-workspace-json-object-description.md) 文章。
+有关JSON对象描述的详细信息，请参阅[此](/help/forms/using/html-workspace-json-object-description.md)文章。
 
 ## 显示任务信息 {#displaying-information-on-a-task}
 
-1. 请遵循 [AEM Forms工作区自定义的常规步骤](../../forms/using/generic-steps-html-workspace-customization.md).
-1. 要显示任务的附加信息，必须在的任务块中添加相应的键值对 `translation.json`.
+1. 按照[通用步骤自定义AEM Forms工作区](../../forms/using/generic-steps-html-workspace-customization.md)。
+1. 要显示任务的附加信息，必须在`translation.json`的任务块中添加相应的键值对。
 
-   例如，更改 `/apps/ws/locales/en-US/translation.json` 对于英语：
+   例如，将`/apps/ws/locales/en-US/translation.json`更改为英语：
 
    ```json
    "task" : {
@@ -122,7 +122,7 @@ ht-degree: 0%
 
 ## 为新属性定义CSS {#defining-css-for-the-new-property}
 
-1. 可以将样式应用于添加到任务的信息（属性）。 为此，您需要为添加到的新属性添加样式信息 `/apps/ws/css/newStyle.css`.
+1. 可以将样式应用于添加到任务的信息（属性）。 为此，您需要为添加到`/apps/ws/css/newStyle.css`的新属性添加样式信息。
 
    例如，添加：
 
@@ -138,14 +138,14 @@ ht-degree: 0%
 
 最后，您需要在开发包中为要添加到任务的每个属性包含一个条目。 要创建工作区代码，请参阅构建AEM Forms工作区代码。
 
-1. 复制 `task.html`：
+1. 复制`task.html`：
 
-   * 从： `/libs/ws/js/runtime/templates/`
-   * 至： `/apps/ws/js/runtime/templates/`
+   * 发件人： `/libs/ws/js/runtime/templates/`
+   * 收件人：`/apps/ws/js/runtime/templates/`
 
-1. 添加新信息到 `/apps/ws/js/runtime/templates/task.html`.
+1. 将新信息添加到`/apps/ws/js/runtime/templates/task.html`。
 
-   例如，添加在 `div class="taskProperties"`：
+   例如，在`div class="taskProperties"`下添加：
 
    ```jsp
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>

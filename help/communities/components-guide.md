@@ -18,11 +18,11 @@ ht-degree: 0%
 
 # 社区组件指南  {#community-components-guide}
 
-社区组件指南是适用于以下对象的交互式开发工具： [社交组件框架(SCF)](scf.md). 它提供了可用Adobe Experience Manager (AEM) Communities组件的列表，或由多个组件构建的更复杂功能的列表。
+社区组件指南是[社交组件框架(SCF)](scf.md)的交互式开发工具。 它提供了可用Adobe Experience Manager (AEM) Communities组件的列表，或由多个组件构建的更复杂功能的列表。
 
 除了每个组件的基本信息外，本指南还允许试验SCF组件/功能的工作方式以及配置或自定义它们的方法。
 
-有关与每个组件相关的开发必需项的信息，请参阅 [功能和组件要点](essentials.md).
+有关与每个组件相关的开发必需项的信息，请参阅[功能和组件必需项](essentials.md)。
 
 ## 快速入门 {#getting-started}
 
@@ -30,24 +30,24 @@ ht-degree: 0%
 
 通过浏览到，可访问社区组件站点
 
-* [https://&lt;server>：&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
+* [https://&lt;服务器>：&lt;端口>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
 与社区组件的交互方式因以下因素而异：
 
 * 服务器（创作或发布）。
 * 网站访客是否已登录。
 * 如果登录，则为成员分配权限。
-* 无论是默认SRP、 [JSRP](jsrp.md)，正在使用中。
+* 是否正在使用默认SRP [JSRP](jsrp.md)。
 
-在创作时，要进入编辑模式，请插入以下任一选项 `editor.html` 或 `cf#` 作为服务器名称后的第一个路径段：
+在作者上，要进入编辑模式，请在服务器名称后插入`editor.html`或`cf#`作为第一个路径段：
 
 * 标准UI：
 
-  [https://&lt;server>：&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+  [https://&lt;服务器>：&lt;端口>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * 经典UI：
 
-  [https://&lt;server>：&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+  [https://&lt;服务器>：&lt;端口>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -57,9 +57,9 @@ ht-degree: 0%
 >
 >在浏览器中显示组件页面后，返回到编辑模式以打开组件的编辑对话框。
 >
->有关一般创作信息，请查看 [页面创作快速指南](../../help/sites-authoring/qg-page-authoring.md).
+>有关一般创作信息，请查看[页面创作快速指南](../../help/sites-authoring/qg-page-authoring.md)。
 >
->如果不熟悉AEM，请查看文档 [基本处理](../../help/sites-authoring/basic-handling.md).
+>如果不熟悉AEM，请查看有关[基本处理](../../help/sites-authoring/basic-handling.md)的文档。
 
 ### 主页 {#home-page}
 
@@ -73,13 +73,13 @@ ht-degree: 0%
 
 从页面上左侧的列表中选择一个组件。
 
-![community-component-page](assets/community-component2.png)
+![社区组件页面](assets/community-component2.png)
 
 此时将显示指南的主体：
 
 1. 标题：所选组件的名称
-1. [客户端库](#client-side-libraries)：一个或多个所需类别的列表
-1. [可包含](scf.md#add-or-include-a-communities-component)：如果可以动态包含组件，则可以在创作编辑模式下切换状态：
+1. [客户端库](#client-side-libraries)：包含一个或多个所需类别的列表
+1. [可包含](scf.md#add-or-include-a-communities-component)：如果组件可以动态包含，则可以在创作编辑模式下切换状态：
 
    * 如果添加，则显示文本为：“此组件通过其par节点包括在内。”
    * 如果包括，则显示的文本为：“此组件是动态包括的。”
@@ -93,17 +93,17 @@ ht-degree: 0%
 
 ### 作者交互 {#author-interactions}
 
-在创作实例上使用指南时，可以通过打开组件对话框来体验配置组件的过程。 有关开发人员的信息，请参见 [组件和功能要点](essentials.md) 一节，而中介绍了对话框设置 [Communities组件](author-communities.md) 部分。
+在创作实例上使用指南时，可以通过打开组件对话框来体验配置组件的过程。 在文档的[组件和Feature Essentials](essentials.md)部分中为开发人员提供了信息，而对话框设置则在供作者使用的[社区组件](author-communities.md)部分中进行了说明。
 
-在社区组件指南中，某些组件对话框设置上覆盖了 [可包含](scf.md#add-or-include-a-communities-component) 切换状态。 要在使用现有资源或动态包含的资源之间进行切换，请在编辑模式下同时选择组件和可包含的文本，然后双击以打开编辑对话框：
+对于社区组件指南，某些组件对话框设置使用[Inclustable](scf.md#add-or-include-a-communities-component)切换状态覆盖。 要在使用现有资源或动态包含的资源之间进行切换，请在编辑模式下同时选择组件和可包含的文本，然后双击以打开编辑对话框：
 
-![community-component3](assets/community-component3.png)
+![社区组件3](assets/community-component3.png)
 
-在 **模板** 选项卡：
+在&#x200B;**模板**&#x200B;选项卡下：
 
 ![community-component4](assets/community-component4.png)
 
-* **通过sling：include包含子组件**
+* **包含具有sling：include**&#x200B;的子组件
 
   如果未选中，《组件指南》将使用存储库中的现有资源（一个jcr节点，它是par节点的子节点）。
 
@@ -115,25 +115,25 @@ ht-degree: 0%
 
   默认值为未选中。
 
-### 发布交互 {#publish-interactions}
+### Publish交互 {#publish-interactions}
 
 在发布实例上使用本指南时，能够以网站访客（未登录）以及登录时具有各种权限的成员身份体验组件和功能。
 
 >[!NOTE]
 >
->请注意，如果SRP默认为 [JSRP](jsrp.md)，则在发布实例中输入的UGC将仅在发布中可见，并且将 *非* 在 [审核](moderate-ugc.md) 创作实例上的控制台。
+>请注意，如果SRP默认为[JSRP](jsrp.md)，则发布实例上输入的UGC将仅在发布中可见，并且&#x200B;*不会*&#x200B;在创作实例上的[审核](moderate-ugc.md)控制台中可见。
 
 ## 客户端库 {#client-side-libraries}
 
-为每个组件列出的客户端库(clientlibs)是 *必填* 将组件放在页面上时要引用的组件。 clientlibs提供了一种方法，用于管理和优化在浏览器中呈现组件所使用的JavaScript和CSS的下载。
+为每个组件列出的客户端库(clientlibs)是将组件放置到页面上时要引用的&#x200B;*必需*。 clientlibs提供了一种方法，用于管理和优化在浏览器中呈现组件的JavaScript和CSS的下载。
 
-有关详细信息，请访问 [适用于社区组件的Clientlibs](clientlibs.md).
+有关详细信息，请访问[社区组件的Clientlibs](clientlibs.md)。
 
 ## 模拟 {#impersonation}
 
-在作者实例上（通常是以管理员或开发人员的身份登录），要以其他用户身份体验组件登录，请使用 **[!UICONTROL 模拟]** 按钮键入用户名或从下拉列表中选择，然后单击按钮。 单击还原以注销并结束模拟。
+在作者实例（通常以管理员或开发人员身份登录）上，要以其他用户身份体验组件登录，请使用&#x200B;**[!UICONTROL 模拟]**&#x200B;按钮左侧的文本框键入用户名或从下拉列表中选择，然后单击该按钮。 单击还原以注销并结束模拟。
 
-无需模拟发布实例。 只需使用“登录/注销”链接来模拟各种用户即可，例如 [演示用户](tutorials.md#demo-users).
+无需模拟发布实例。 只需使用“登录/注销”链接来模拟各种用户，如[演示用户](tutorials.md#demo-users)。
 
 ## 自定义 {#customization}
 
@@ -143,17 +143,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**此工具是只读的**. 对模板、CSS或数据所做的任何编辑都不会保存到存储库中。
+>**此工具是只读的**。 对模板、CSS或数据所做的任何编辑都不会保存到存储库中。
 
-要快速试验自定义设置，请 `scg:showIde`必须将属性添加到组件页面的内容JCR节点并设置为true。
+要快速试验自定义项，必须将`scg:showIde`属性添加到组件页面的内容JCR节点并设置为true。
 
 以注释组件为例，在创作或发布实例上使用管理员权限登录：
 
-1. 浏览至 [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. 浏览[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
-   例如， [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
+   例如，[http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
-1. 选择组件的 `jcr:content` 节点
+1. 选择组件的`jcr:content`节点
 
    例如，`/content/community-components/en/comments/jcr:content`
 
@@ -163,16 +163,16 @@ ht-degree: 0%
    * **类型** `String`
    * **值** `true`
 
-1. 选择 **[!UICONTROL 全部保存]**
+1. 选择&#x200B;**[!UICONTROL 全部保存]**
 1. 重新加载指南中的“评论”页面
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
 
 1. 请注意，现在有三个选项卡：“模板”、“CSS”和“数据”。
 
-![community-component5](assets/community-component5.png)
+![社区组件5](assets/community-component5.png)
 
-![community-component6](assets/community-component6.png)
+![社区组件6](assets/community-component6.png)
 
 ### “模板”选项卡 {#templates-tab}
 

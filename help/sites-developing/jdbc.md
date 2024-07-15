@@ -20,15 +20,15 @@ ht-degree: 0%
 
 访问外部SQL数据库，以便CQ应用程序可以与数据交互：
 
-1. [创建或获取用于导出JDBC驱动程序包的OSGi捆绑包](#bundling-the-jdbc-database-driver).
-1. [配置JDBC数据源池提供程序](#configuring-the-jdbc-connection-pool-service).
-1. [获取数据源对象并在代码中创建连接](#connecting-to-the-database).
+1. [创建或获取用于导出JDBC驱动程序包的OSGi包](#bundling-the-jdbc-database-driver)。
+1. [配置JDBC数据源池提供程序](#configuring-the-jdbc-connection-pool-service)。
+1. [获取数据源对象并在代码中创建连接](#connecting-to-the-database)。
 
 ## 捆绑JDBC数据库驱动程序 {#bundling-the-jdbc-database-driver}
 
-某些数据库供应商在OSGi捆绑包中提供JDBC驱动程序，例如， [MySQL](https://dev.mysql.com/downloads/connector/j/). 如果数据库的JDBC驱动程序不能作为OSGi捆绑包使用，请获取驱动程序JAR并将其包装在OSGi捆绑包中。 捆绑包必须导出与数据库服务器交互所需的包。 捆绑包还必须导入其引用的包。
+某些数据库供应商在OSGi捆绑包中提供JDBC驱动程序，例如[MySQL](https://dev.mysql.com/downloads/connector/j/)。 如果数据库的JDBC驱动程序不能作为OSGi捆绑包使用，请获取驱动程序JAR并将其包装在OSGi捆绑包中。 捆绑包必须导出与数据库服务器交互所需的包。 捆绑包还必须导入其引用的包。
 
-以下示例使用 [适用于Maven的捆绑包插件](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) 将HSQLDB驱动程序封装在OSGi包中。 POM指示插件嵌入标识为依赖项的hsqldb.jar文件。 将导出所有org.hsqldb软件包。
+以下示例使用Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)的[Bundle插件将HSQLDB驱动程序封装在OSGi捆绑包中。 POM指示插件嵌入标识为依赖项的hsqldb.jar文件。 将导出所有org.hsqldb软件包。
 
 插件会自动确定要导入的包，并在包的MANIFEST.MF文件中列出这些包。 如果CQ服务器上没有任何软件包，则安装时不会启动捆绑包。 两种可能的解决方案如下：
 
@@ -86,47 +86,47 @@ ht-degree: 0%
 以下链接可打开某些常用数据库产品的下载页面：
 
 * [Microsoft® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
-* [oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
+* [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 * [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
 ### 配置JDBC连接池服务 {#configuring-the-jdbc-connection-pool-service}
 
 为使用JDBC驱动程序创建数据源对象的JDBC连接池服务添加配置。 您的应用程序代码使用此服务来获取对象并连接到数据库。
 
-JDBC连接池( `com.day.commons.datasource.jdbcpool.JdbcPoolService`)是工厂服务。 如果需要使用不同属性（例如，只读或读/写访问）的连接，请创建多个配置。
+JDBC连接池(`com.day.commons.datasource.jdbcpool.JdbcPoolService`)是工厂服务。 如果需要使用不同属性（例如，只读或读/写访问）的连接，请创建多个配置。
 
-使用CQ时，可通过多种方法管理此类服务的配置设置；请参阅 [配置OSGi](/help/sites-deploying/configuring-osgi.md) 以了解全部详细信息。
+使用CQ时，可通过多种方法管理此类服务的配置设置；有关完整的详细信息，请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md)。
 
-以下属性可用于配置池连接服务。 在Web控制台中列出的属性名称如下所示。 的相应名称 `sling:OsgiConfig` 节点显示在括号中。 对于HSQLDB服务器和别名为 `mydb`：
+以下属性可用于配置池连接服务。 在Web控制台中列出的属性名称如下所示。 `sling:OsgiConfig`节点的相应名称显示在括号中。 显示了HSQLDB服务器和别名为`mydb`的数据库示例值：
 
-* JDBC驱动程序类( `jdbc.driver.class`)：用于实现java.sql.Driver接口的Java™类，例如， `org.hsqldb.jdbc.JDBCDriver`. 数据类型是 `String`.
+* JDBC驱动程序类(`jdbc.driver.class`)：用于实现java.sql.Driver接口的Java™类，例如`org.hsqldb.jdbc.JDBCDriver`。 数据类型是`String`。
 
-* JDBC连接URI ( `jdbc.connection.uri`)：用于创建连接的数据库URL，例如， `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. URL的格式必须对java.sql.DriverManager类的getConnection方法有效。 数据类型是 `String`.
+* JDBC连接URI (`jdbc.connection.uri`)：用于创建连接的URL，例如`jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`。 URL的格式必须对java.sql.DriverManager类的getConnection方法有效。 数据类型是`String`。
 
-* 用户名( `jdbc.username`)：用于向数据库服务器进行身份验证的用户名。 数据类型是 `String`.
+* 用户名( `jdbc.username`)：用于向数据库服务器进行身份验证的用户名。 数据类型是`String`。
 
-* 密码( `jdbc.password`)：用于用户身份验证的密码。 数据类型是 `String`.
+* 密码( `jdbc.password`)：用于验证用户的密码。 数据类型是`String`。
 
-* 验证查询( `jdbc.validation.query`)：用于验证连接是否成功的SQL语句，例如， `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. 数据类型是 `String`.
+* 验证查询( `jdbc.validation.query`)：用于验证连接是否成功的SQL语句，例如`select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`。 数据类型是`String`。
 
-* 默认只读(default.readonly)：如果希望连接提供只读访问权限，请选择此选项。 数据类型是 `Boolean`.
-* 默认自动提交( `default.autocommit`)：选择此选项可以为发送到数据库的每个SQL命令创建单独的事务，并且每个事务都会自动提交。 在代码中明确提交事务时，请勿选择此选项。 数据类型是 `Boolean`.
+* 默认只读(default.readonly)：如果希望连接提供只读访问权限，请选择此选项。 数据类型是`Boolean`。
+* 默认自动提交(`default.autocommit`)：选择此选项可以为发送到数据库的每个SQL命令创建单独的事务，并且每个事务都会自动提交。 在代码中明确提交事务时，请勿选择此选项。 数据类型是`Boolean`。
 
-* 池大小( `pool.size`)：可供数据库使用的同时连接数。 数据类型是 `Long`.
+* 池大小( `pool.size`)：数据库可用的同时连接数。 数据类型是`Long`。
 
-* 池等待( `pool.max.wait.msec`)：连接请求超时之前经过的时间。 数据类型是 `Long`.
+* 池等待(`pool.max.wait.msec`)：连接请求超时之前经过的时间。 数据类型是`Long`。
 
-* 数据源名称( `datasource.name`)：此数据源的名称。 数据类型是 `String`.
+* 数据源名称( `datasource.name`)：此数据源的名称。 数据类型是`String`。
 
-* 其他服务属性( `datasource.svc.properties`)：要附加到连接URL的一组名称/值对。 数据类型是 `String[]`.
+* 其他服务属性( `datasource.svc.properties`)：要附加到连接URL的一组名称/值对。 数据类型是`String[]`。
 
-JDBC连接池服务是一个工厂。 因此，如果您使用 `sling:OsgiConfig` 节点要配置连接服务，节点的名称必须包含工厂服务PID，后面跟有 *`-alias`*. 您使用的别名对于该PID的所有配置节点必须是唯一的。 示例节点名称为 `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+JDBC连接池服务是一个工厂。 因此，如果您使用`sling:OsgiConfig`节点配置连接服务，则该节点的名称必须包含工厂服务PID，后跟&#x200B;*`-alias`*。 您使用的别名对于该PID的所有配置节点必须是唯一的。 示例节点名称为`com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`。
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
 ### 连接到数据库 {#connecting-to-the-database}
 
-在Java™代码中，使用DataSourcePool服务获取 `javax.sql.DataSource` 您创建的配置的对象。 DataSourcePool服务提供 `getDataSource` 返回 `DataSource` 给定数据源名称的对象。 作为方法参数，使用数据源名称的值(或 `datasource.name`)属性，指定用于JDBC连接池配置。
+在Java™代码中，使用DataSourcePool服务为您创建的配置获取`javax.sql.DataSource`对象。 DataSourcePool服务提供`getDataSource`方法，该方法返回给定数据源名称的`DataSource`对象。 作为方法参数，请使用为JDBC连接池配置指定的数据源名称（或`datasource.name`）属性的值。
 
 以下示例JSP代码获取hsqldbds数据源的实例，执行简单的SQL查询，并显示返回的结果数。
 

@@ -1,6 +1,6 @@
 ---
 title: 骨干交互
-description: 有关在AEM Forms工作区中使用骨干JavaScript模型的概念信息。
+description: 有关在AEM Forms Workspace中使用骨干JavaScript模型的概念信息。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 # 骨干交互{#backbone-interaction}
 
-Backbone是一个库，它有助于在Web应用程序中创建和遵循MVC架构。 Backbone的基本思想是将界面组织为逻辑视图，以模型为后盾，每个模型都可以在模型更改时独立更新，而无需重新绘制页面。 有关主干的详细信息，请参见 [https://backbonejs.org](https://backbonejs.org/).
+Backbone是一个库，它有助于在Web应用程序中创建和遵循MVC架构。 Backbone的基本思想是将界面组织为逻辑视图，以模型为后盾，每个模型都可以在模型更改时独立更新，而无需重新绘制页面。 有关主干的更多信息，请参阅[https://backbonejs.org](https://backbonejs.org/)。
 
 一些关键概念如下所示：
 
-**骨干模型** 包含数据以及与此数据相关的大多数逻辑。
+**骨干模型**&#x200B;包含数据，以及与此数据相关的大部分逻辑。
 
-**主干视图** 用于表示相应模型的状态。 骨干视图的行为实际上类似于控制器，侦听用户界面事件（如用户点击）或为事件建模（如数据已更改），并根据需要修改用户界面。
+**主干视图**&#x200B;用于表示相应模型的状态。 骨干视图的行为实际上类似于控制器，侦听用户界面事件（如用户点击）或为事件建模（如数据已更改），并根据需要修改用户界面。
 
-**HTML模板** 具有由模型填充的占位符的包装器模板。
+**HTML模板**&#x200B;包含由模型填充的占位符的包装器模板。
 
-**AEM Forms工作区** 包含多个单独的组件。 每个组件：
+**AEM Forms工作区**&#x200B;包含多个单独的组件。 每个组件：
 
 * 表示单个逻辑用户界面元素。
 * 可以是类似组件的集合。
@@ -46,7 +46,7 @@ Backbone是一个库，它有助于在Web应用程序中创建和遵循MVC架构
 
 初始化视图后，该视图会调用其相应的模型以从服务器获取数据。 视图所需的所有数据都可用后，视图将按照HTML模板指定的格式呈现数据。 多个视图可以共享相同的通信模型。
 
-![AEM forms骨干视图](do-not-localize/aem_forms_workflow.png)
+![AEM表单主干视图](do-not-localize/aem_forms_workflow.png)
 
 示例：
 

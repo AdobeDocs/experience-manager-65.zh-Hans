@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe现在提供 [适用于Eclipse的AEM开发工具](/help/sites-developing/aem-eclipse.md) 这有助于您使用Eclipse开发AEM解决方案。
+>Adobe现在提供了[AEM Eclipse开发工具](/help/sites-developing/aem-eclipse.md)，可帮助您使用Eclipse开发AEM解决方案。
 
 ## 概述 {#overview}
 
@@ -41,29 +41,29 @@ ht-degree: 0%
 
 ## 安装Eclipse {#install-eclipse}
 
-从下载“适用于Java EE开发人员的Eclipse IDE” [Eclipse下载页面](https://www.eclipse.org/downloads/).
+从[Eclipse下载页面](https://www.eclipse.org/downloads/)下载“面向Java EE开发人员的Eclipse IDE”。
 
-按照以下说明安装Eclipse [安装说明](https://wiki.eclipse.org/Eclipse/Installation).
+按照[安装说明](https://wiki.eclipse.org/Eclipse/Installation)安装Eclipse。
 
 ## 基于Maven设置您的AEM项目 {#set-up-your-aem-project-based-on-maven}
 
-接下来，使用Maven设置项目，如中所述 [如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md).
+接下来，使用Maven设置项目，如[如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md)中所述。
 
 ## 为Eclipse准备JSP支持 {#prepare-jsp-support-for-eclipse}
 
 Eclipse还可以在使用JSP时提供支持，例如，
 
 * 自动完成标记库
-* 对由定义的对象的日蚀感知 &lt;cq:defineobjects /> 和 &lt;sling:defineobjects />
+* 由&lt;cq：defineObjects />和&lt;sling：defineObjects />定义的对象的Eclipse感知
 
 要使此功能正常工作，请执行以下操作：
 
-1. 请按照 [如何使用JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) 在 [如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md).
-1. 将以下内容添加到 &lt;build /> 部分（位于内容模块的POM中）。
+1. 按照[如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md)中的[如何使用JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)的说明进行操作。
+1. 将以下内容添加到内容模块POM的&lt;build />部分中。
 
    Eclipse的Maven支持插件m2e不提供maven-jspc-plugin支持，此配置告知m2e忽略插件以及清理临时编译结果的相关任务。
 
-   这并不是问题：如中所述 [如何使用JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)，则本设置中的maven-jspc-plugin仅用于验证JSP是否会在构建过程中编译。 Eclipse已报告JSP中的任何问题，并且不依赖此Maven插件来执行此操作。
+   这不是问题：如[如何使用JSP](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps)中所述，此设置中的maven-jspc-plugin仅用于验证JSP是否会在构建过程中编译。 Eclipse已报告JSP中的任何问题，并且不依赖此Maven插件来执行此操作。
 
    **myproject/content/pom.xml**
 
@@ -132,4 +132,4 @@ Eclipse还可以在使用JSP时提供支持，例如，
 
    >[!NOTE]
    >
-   >如果您包括 `/libs/foundation/global.jsp` 或其他JSP `/libs`中，您必须将其复制到项目中，以便Eclipse能够解析包含的内容。 同时，您需要确保它未由Maven捆绑到您的内容包中。 中介绍了如何实现这一点 [如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md).
+   >如果在`/libs`中包含`/libs/foundation/global.jsp`或其他JSP，则必须将其复制到项目，以便Eclipse能够解析该包含。 同时，您需要确保它未由Maven捆绑到您的内容包中。 有关如何实现此目标请参见[如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md)。

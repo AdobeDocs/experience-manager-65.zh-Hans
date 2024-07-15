@@ -43,19 +43,19 @@ AEM 6.5是适用于Headless实施模型的灵活工具，它提供了三种强�
 1. 内容片段
    * 内容片段是内容模型的实例化。
    * 这些内容由内容作者使用AEM内容片段编辑器创建。
-   * 它们存储在AEM Assets并在Assets Admin UI中进行管理。
+   * 它们存储在AEM Assets中并在Assets管理UI中进行管理。
 1. 用于投放的内容API
    * AEM GraphQL API 支持内容片段投放。
    * AEM Assets REST API 支持内容片段 CRUD 操作。
-   * 也可以使用直接内容投放 [内容片段核心组件的JSON导出。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
+   * 通过[内容片段核心组件的JSON导出，也可以进行直接内容投放。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)
 
 ## 使用 AEM Headless 的第一步 {#first-steps}
 
-有多个资源可供您开始使用AEM Headless功能。 它们适用于不同的用例，但它们都为AEM Headless功能提供了可靠的概述。
+有多个资源可帮助您开始使用AEM Headless功能。 它们适用于不同的用例，但它们都为AEM的Headless功能提供了可靠的概述。
 
 | 资源 | 描述 | 类型 | 受众 | 估计用时 |
 |---|---|---|---|---|
-| [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | **适用于初次使用AEM和Headless的用户** 技术，从这里开始全面了解AEM及其Headless功能，从Headless的理论直到您的第一个Headless项目。 | 指南 | **刚开始接触 AEM 和 Headless** 的开发人员 | 1 小时 |
-| [Headless快速入门指南](/help/sites-developing/headless/getting-started/introduction.md) | **面向有经验的 AEM 用户**，在需要关键 AEM Headless 功能的简短摘要时，可以查看此快速入门概览。 | 快速入门 | **具有 AEM 经验**&#x200B;的开发人员、管理员 | 20 分钟 |
-| [AEM Headless快速入门实践教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=zh-Hans) | **如果您偏好实践方法并且熟悉AEM**，本教程将直接深入到创建简单的Headless项目。 | 教程 | 开发人员 | 2 小时 |
-| [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans) | 此资源集合是为两者提供的 **新建** 和 **经验丰富** 开发人员。 | 资源集合 | 开发人员 | |
+| [Headless 开发人员历程](/help/journey-headless/developer/overview.md) | **面向刚开始接触AEM和Headless**&#x200B;技术的用户，从这里开始全面了解AEM及其Headless功能，从Headless的理论直到您的第一个Headless项目。 | 指南 | **刚开始接触 AEM 和 Headless** 的开发人员 | 1 小时 |
+| [Headless入门指南](/help/sites-developing/headless/getting-started/introduction.md) | **面向有经验的 AEM 用户**，在需要关键 AEM Headless 功能的简短摘要时，可以查看此快速入门概览。 | 快速入门 | **具有 AEM 经验**&#x200B;的开发人员、管理员 | 20 分钟 |
+| [AEM Headless实践教程快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=zh-Hans) | **如果您偏好实践方法并且熟悉AEM**，本教程将直接深入到创建简单的Headless项目。 | 教程 | 开发人员 | 2 小时 |
+| [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans) | 此资源集合是为&#x200B;**新**&#x200B;和&#x200B;**经验丰富的**&#x200B;开发人员提供的。 | 资源集合 | 开发人员 | |

@@ -46,7 +46,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong> 属性</strong></td>
-   <td>请参阅 <a href="ideation-feature.md">构思特征</a></td>
+   <td>查看<a href="ideation-feature.md">构思功能</a></td>
   </tr>
  </tbody>
 </table>
@@ -55,4 +55,4 @@ ht-degree: 3%
 
 ### 构思功能 {#ideation-function}
 
-社区站点结构包括 [构思功能](functions.md#ideation-function)，包括已配置的 `ideation` 组件。
+包含[构思功能](functions.md#ideation-function)的社区站点结构包含配置的`ideation`组件。

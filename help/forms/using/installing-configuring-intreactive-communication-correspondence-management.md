@@ -22,13 +22,13 @@ AEM Form能够集中创建、汇编、管理和提交安全的交互式文档，
 
 您可以使用交互式通信功能以多种格式生成通信。 例如，Web和PDF。 您可以将交互式通信与AEM Workflow集成在一起，通过客户选择的渠道处理和交付组合通信。 例如，通过电子邮件向最终用户发送通信。
 
-如果您从以前的版本进行升级，并且已经在通信管理方面进行了投资，则可以安装 [兼容包](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) 以继续使用通信管理。 有关交互式通信与通信管理之间区别的信息，请参阅 [交互式通信概述](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
+如果您要从以前的版本升级，并且已投资通信管理，则可以安装[兼容包](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package)以继续使用通信管理。 有关交互式通信与通信管理之间差异的信息，请参阅[交互式通信概述](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management)。
 
-AEM Forms是一个功能强大的企业级平台。 交互式通信只是AEM Forms的功能之一。 有关权能的完整列表，请参见 [AEM Forms简介](../../forms/using/introduction-aem-forms.md).
+AEM Forms是一个功能强大的企业级平台。 交互式通信只是AEM Forms的功能之一。 有关功能的完整列表，请参阅[AEM Forms简介](../../forms/using/introduction-aem-forms.md)。
 
 ## 部署拓扑 {#deployment-topology}
 
-AEM Forms附加组件包是部署在AEM上的应用程序。 您只需要至少一个AEM创作和处理实例即可运行交互式通信功能。 以下拓扑是指示性拓扑，用于在OSGi功能上运行AEM Forms交互式通信、通信管理、AEM Forms数据捕获和以Forms为中心的工作流。 有关拓扑的详细信息，请参见 [AEM Forms的架构和部署拓扑](/help/forms/using/aem-forms-architecture-deployment.md).
+AEM Forms附加组件包是部署在AEM上的应用程序。 您只需要至少一个AEM创作和处理实例即可运行交互式通信功能。 以下拓扑是指示性拓扑，用于在OSGi功能上运行AEM Forms交互式通信、通信管理、AEM Forms数据捕获和以Forms为中心的工作流。 有关拓扑的详细信息，请参阅[AEM Forms的架构和部署拓扑](/help/forms/using/aem-forms-architecture-deployment.md)。
 
 ![推荐拓扑](assets/recommended-topology.png)
 
@@ -38,15 +38,15 @@ AEM Forms Interactive Communications在AEM Forms的创作实例上运行管理�
 
 在开始安装和配置AEM Forms的交互式通信和通信管理功能之前，请确保：
 
-* 硬件和软件基础架构已准备就绪。 有关支持的硬件和软件的详细列表，请参阅 [技术要求](/help/sites-deploying/technical-requirements.md).
+* 硬件和软件基础架构已准备就绪。 有关支持的硬件和软件的详细列表，请参阅[技术要求](/help/sites-deploying/technical-requirements.md)。
 
 * AEM实例的安装路径不包含空格。
 * AEM实例已启动并正在运行。 在AEM术语中，“实例”是在创作或发布模式下在服务器上运行的AEM的副本。 您需要至少一个AEM实例（创作或处理）才能运行AEM Forms交互式通信和通信管理功能：
 
    * **作者**：用于创建、上载和编辑内容以及管理网站的AEM实例。 内容准备好上线后，即会复制到发布实例。
-   * **正在处理：** 处理实例是 [强化的AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md) 实例。 您可以设置“创作”实例，并在执行安装后进行强化。
+   * **正在处理：**&#x200B;处理实例是[强制AEM Author](/help/forms/using/hardening-securing-aem-forms-environment.md)实例。 您可以设置“创作”实例，并在执行安装后进行强化。
 
-   * **Publish**：AEM实例，通过Internet或内部网络向公众提供已发布的内容。
+   * **Publish**：通过Internet或内部网络向公众提供已发布内容的AEM实例。
 
 * 满足内存要求。 AEM Forms插件包需要：
 
@@ -93,7 +93,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该软件包包含A
 1. **[!UICONTROL 在“筛选器]**”部分中：
    1. 从“解决方案&#x200B;]**”下拉列表中选择**[!UICONTROL “表单&#x200B;]**”。**[!UICONTROL 
    2. 选择包的版本和类型。 您还可以使用“ **[!UICONTROL 搜索下载]** ”选项来筛选结果。
-1. 选择适用于您的操作系统的包名称，然后选择 **[!UICONTROL 接受EULA条款]**，并选择 **[!UICONTROL 下载]**.
+1. 选择适用于您的操作系统的包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
 1. 打开[程序包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)并单击“上传程序包&#x200B;]**”**[!UICONTROL &#x200B;以上传程序包。
 1. 选择程序包，然后单击“安装&#x200B;]**”。**[!UICONTROL 
 
@@ -107,7 +107,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该软件包包含A
 
 1. 对所有Author和Publish实例重复步骤1-7。
 
-## 安装后配置 {#post-installation-configurations}
+## Post安装配置 {#post-installation-configurations}
 
 AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCastle库和序列化代理。 可选配置包括配置Dispatcher和Adobe Target。
 
@@ -118,9 +118,9 @@ AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCast
 在所有Author和Publish实例上执行以下步骤以引导委派库：
 
 1. 停止基础AEM实例。
-1. 打开 [AEM安装目录]\crx-quickstart\conf\sling.properties文件进行编辑。
+1. 打开[AEM安装目录]\crx-quickstart\conf\sling.properties文件进行编辑。
 
-   如果您使用 [AEM安装目录]\crx-quickstart\bin\start.bat以启动AEM，然后编辑位于的sling.properties [AEM_root]\crx-quickstart\。
+   如果您使用[AEM安装目录]\crx-quickstart\bin\start.bat来启动AEM，请编辑位于[AEM_root]\crx-quickstart\的sling.properties。
 
 1. 将以下属性添加到sling.properties文件：
 
@@ -135,16 +135,16 @@ AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCast
 
 对所有Author和Publish列入允许列表实例执行以下步骤，将包添加到Author中：
 
-1. 在浏览器窗口中打开AEM Configuration Manager。 默认URL为https://&#39;[服务器]：[端口]&#39;/system/console/configMgr.
-1. 搜索并打开 **反序列化防火墙配置**.
-1. 添加 **sun.util.calendar** 打包到 **允许列表** 字段。 单击“保存”。
+1. 在浏览器窗口中打开AEM Configuration Manager。 默认URL为https://&#39;[服务器]：[端口]&#39;/system/console/configMgr。
+1. 搜索并打开&#x200B;**反序列化防火墙配置**。
+1. 将&#x200B;**sun.util.calendar**&#x200B;程序包添加到&#x200B;**允许列表**&#x200B;字段。 单击“保存”。
 1. 对所有Author和Publish实例重复步骤1-3。
 
 ### 可选安装后配置 {#optional-post-installation-configurations}
 
 #### 安装兼容包 {#install-compatibility-package}
 
-在AEM 6.5 Forms中创建客户通信的默认和推荐方法是交互式通信。 如果您已从以前的版本升级或迁移，并计划继续使用信件（通信管理），请安装 [AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en).
+在AEM 6.5 Forms中创建客户通信的默认和推荐方法是交互式通信。 如果您已从以前的版本升级或迁移，并计划继续使用字母（通信管理），请安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en)。
 
 通过AEMFD兼容包，您可以使用AEM 6.5 Forms上AEM 6.4 Forms、AEM 6.3 Forms和AEM 6.2 Forms中的以下资源：
 
@@ -153,9 +153,9 @@ AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCast
 * 数据字典
 * 自适应表单弃用的模板和页面
 
-#### 配置Dispatch {#configure-dispatcher}
+#### 配置Dispatcher {#configure-dispatcher}
 
-Dispatcher是Adobe Experience Manager的缓存和负载平衡工具，与企业级Web服务器一起使用。 如果您使用 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)，然后为AEM Forms执行以下配置：
+Dispatcher是Adobe Experience Manager的缓存和负载平衡工具，与企业级Web服务器一起使用。 如果您使用[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)，请为AEM Forms执行以下配置：
 
 1. 配置AEM Forms的访问权限：
 
@@ -163,17 +163,17 @@ Dispatcher是Adobe Experience Manager的缓存和负载平衡工具，与企业�
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   保存并关闭文件。 有关过滤器的详细信息，请参阅 [Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans).
+   保存并关闭文件。 有关筛选器的详细信息，请参阅[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)。
 
 1. 配置反向链接筛选服务：
 
-   以管理员身份登录Apache Felix配置管理器。 配置管理器的默认URL为https://&#39;server&#39; ：[端口号]/system/console/configMgr。 在 **配置** 菜单，选择 **Apache Sling引用过滤器** 选项。 在允许主机字段中，输入Dispatcher的主机名以允许其作为反向链接，然后单击 **保存**. 条目的格式为https://&#39;[服务器]：[端口]’。
+   以管理员身份登录Apache Felix配置管理器。 配置管理器的默认URL为https://&#39;server&#39;：[port_number]/system/console/configMgr。 在&#x200B;**配置**&#x200B;菜单中，选择&#x200B;**Apache Sling引用过滤器**&#x200B;选项。 在“允许主机”字段中，输入Dispatcher的主机名以允许其作为反向链接，然后单击&#x200B;**保存**。 条目的格式为https://&#39;[server]：[port]&#39;。
 
 #### 集成Adobe Target {#integrate-adobe-target}
 
 如果交互式通信提供的体验不吸引人，您的客户可能会放弃交互式通信。 虽然这令客户感到沮丧，但也提高了贵组织的支持量和成本。 确定并提供提高转化率的正确客户体验是关键而富有挑战性的。 AEM forms拥有解决此问题的关键。
 
-AEM forms与Adobe Experience Cloud解决方案Adobe Target集成，跨多个数字渠道提供个性化且引人入胜的客户体验。 要使用Adobe Target使交互式通信个性化， [将Adobe Target与AEM Forms集成](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms).
+AEM forms与Adobe Experience Cloud解决方案Adobe Target集成，跨多个数字渠道提供个性化且引人入胜的客户体验。 要使用Adobe Target个性化交互式通信，请[将Adobe Target与AEM Forms集成](../../forms/using/ab-testing-adaptive-forms.md#setupandintegratetargetinaemforms)。
 
 #### 为表单数据模型配置SSL通信  {#configure-ssl-communcation-for-form-data-model}
 

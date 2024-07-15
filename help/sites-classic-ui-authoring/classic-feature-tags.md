@@ -42,7 +42,7 @@ ht-degree: 41%
 
 在创作环境中，作者可以通过访问页面属性并在&#x200B;**标记/关键字**&#x200B;字段中输入一个或多个标记来应用标记。
 
-要申请 [预定义标记](/help/sites-administering/tags.md)，在 **页面属性** 窗口使用 `Tags/Keywords` 字段下拉列表，以从页面允许的标记列表中进行选择。 此 **标准标记** tab是默认的命名空间，这意味着没有 `namespace-string:` 在分类前添加前缀。
+要应用[预定义标记](/help/sites-administering/tags.md)，请在&#x200B;**页面属性**&#x200B;窗口中使用`Tags/Keywords`字段下拉菜单从该页面允许的标记列表中进行选择。 **标准标记**&#x200B;选项卡是默认的命名空间，这意味着分类前面没有`namespace-string:`前缀。
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -60,7 +60,7 @@ ht-degree: 41%
 >
 >激活页面时，会自动打开一个对话框，通过该对话框可以激活属于该页面的未激活标记。
 
-**取消激活**
+**停用**
 
 * 取消激活选定标记。
 
@@ -68,7 +68,7 @@ ht-degree: 41%
 
 标记云显示当前页面、整个网站或最常访问的网站的标记云。 标记云是一种突出显示用户感兴趣的问题（已）的方法。 用于显示标记的文本的大小因使用而异。
 
-此 [标记云](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) 组件（常规组件组）用于将标记云添加到页面。
+[标记云](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud)组件（常规组件组）用于将标记云添加到页面。
 
 ## 在标记上搜索 {#searching-on-tags}
 
@@ -76,6 +76,6 @@ ht-degree: 41%
 
 ### 使用搜索组件 {#using-search-component}
 
-添加 [搜索组件](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) “到”页面提供了搜索功能，其中包括标记，可在创作和发布环境中使用。
+将[搜索组件](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search)添加到页面可提供搜索功能，该功能包括标记并可在创作和发布环境中使用。
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)

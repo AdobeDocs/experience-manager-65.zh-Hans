@@ -1,6 +1,6 @@
 ---
 title: AEM Forms工作区中使用的API
-description: 公共Java&trade；以及JavaScript API和LiveCycleAEM Forms工作区的方法，公开用于自定义和自动化。
+description: 公共Java&amp；贸易；和JavaScript API以及LiveCycleAEM Forms工作区的方法，公开用于自定义和自动化。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -235,7 +235,7 @@ ht-degree: 1%
    <td>getAllQueues<br /> </td>
    <td>ProcessManagementQueueService<br /> </td>
    <td>getAllQueues<br /> </td>
-   <td>它获取登录用户可访问的所有队列（自己的、共享和组队列）。<br /> </td>
+   <td>它获取登录用户可访问的所有队列（自己的队列、共享队列和组队列）。<br /> </td>
   </tr>
   <tr>
    <td>getOutOfOfficeSettings</td>
@@ -265,7 +265,7 @@ ht-degree: 1%
    <td>getProcessInstance<br /> </td>
    <td>ProcessManagementProcessService<br /> </td>
    <td>getProcessInstance<br /> </td>
-   <td>它会获取进程实例的详细信息。<br /> </td>
+   <td>它获取进程实例的详细信息。<br /> </td>
   </tr>
   <tr>
    <td>getProcessInstances</td>
@@ -355,19 +355,19 @@ ht-degree: 1%
    <td>removeProperty</td>
    <td>WorkspacePropertyService</td>
    <td>删除</td>
-   <td>它会为用户删除Workspace属性。</td>
+   <td>它会为用户删除Workspace资产。</td>
   </tr>
   <tr>
    <td>getProperties</td>
    <td>WorkspacePropertyService</td>
    <td>getPropertiesAsMap</td>
-   <td>它会返回用户的所有Workspace属性。</td>
+   <td>它会返回用户的所有Workspace资产。</td>
   </tr>
   <tr>
    <td>setproperty</td>
    <td>WorkspacePropertyService</td>
    <td>setproperty</td>
-   <td>它为用户设置工作区属性。</td>
+   <td>它会为用户设置Workspace属性。</td>
   </tr>
   <tr>
    <td>getCurrentUserImageUrl</td>
@@ -388,7 +388,7 @@ ht-degree: 1%
    <td>它会为一项任务在服务器上上传注释。</td>
   </tr>
   <tr>
-   <td>uploadRMAToServer（也可以直接从html模板调用）<br /> </td>
+   <td>uploadRMAToServer（也直接从html模板调用）<br /> </td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>上载附件</td>
    <td>它将为任务在服务器上上传附件。</td>

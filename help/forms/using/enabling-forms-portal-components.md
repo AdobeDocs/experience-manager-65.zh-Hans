@@ -28,19 +28,19 @@ ht-degree: 5%
 
 1. 对于使用静态模板的页面，请执行以下步骤：
 
-   1. 在页眉中，选择 ![画布下拉列表](assets/canvas-drop-down.png) > **设计** 以在设计模式下打开页面。
-   1. 选择任意组件（使用蓝色边框），然后选择 ![字段级](assets/field-level.png) 以选择包含当前组件的段落系统。
-   1. 在段落系统中，选择 ![settings_icon](assets/settings_icon.png) 打开段落系统的“编辑”对话框。
-   1. 从列表 **[!UICONTROL 允许的组件]**，启用复选框 **[!UICONTROL 文档服务]** 和 **[!UICONTROL 文档服务谓词]** 组件。 选择 **[!UICONTROL 确定]**.
+   1. 在页眉中，选择![画布下拉列表](assets/canvas-drop-down.png) > **设计**&#x200B;以设计模式打开该页面。
+   1. 选择任意组件（带蓝色边框），然后选择![字段级](assets/field-level.png)以选择包含当前组件的段落系统。
+   1. 在段落系统中，选择![settings_icon](assets/settings_icon.png)以打开段落系统的“编辑”对话框。
+   1. 从&#x200B;**[!UICONTROL 允许的组件]**&#x200B;列表中，启用&#x200B;**[!UICONTROL 文档服务]**&#x200B;和&#x200B;**[!UICONTROL 文档服务谓词]**&#x200B;组件的复选框。 选择&#x200B;**[!UICONTROL 确定]**。
 
 1. 对于使用动态模板的页面，请执行以下步骤：
 
-   1. 在页眉中，选择 ![属性](assets/properties.png) > **编辑模板** 以打开页面的模板。
-   1. 选择 **布局容器** 并选择 ![信息源管理](/help/forms/using/assets/feedmanagement.png). 在 **允许的组件** 选项卡，启用 **文档服务和文档服务谓词** 选项，然后选择 ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. 在页眉中，选择![属性](assets/properties.png) > **编辑模板**&#x200B;以打开该页面的模板。
+   1. 选择&#x200B;**布局容器**&#x200B;并选择![FeedManagement](/help/forms/using/assets/feedmanagement.png)。 在&#x200B;**允许的组件**&#x200B;选项卡中，启用&#x200B;**Document Services和Document Services谓词**&#x200B;选项，并选择![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)。
 
 >[!NOTE]
 >
->您还可以通过选择组件来启用这些类别中的特定组件。 有关组件及其用法的更多信息，请参阅 [创建表单门户页面](/help/forms/using/creating-form-portal-page.md) 和 [在页面中嵌入链接组件](/help/forms/using/embedding-link-component-page.md).
+>您还可以通过选择组件来启用这些类别中的特定组件。 有关这些组件及其用法的详细信息，请参阅[创建表单门户页面](/help/forms/using/creating-form-portal-page.md)和[在页面中嵌入链接组件](/help/forms/using/embedding-link-component-page.md)。
 
 现在，在组件浏览器中提供了Document Services和Document Services谓词组件类别。 对于使用同一模板的所有页面，都会启用这些组件。
 

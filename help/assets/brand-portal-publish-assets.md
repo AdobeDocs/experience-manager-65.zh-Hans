@@ -1,5 +1,5 @@
 ---
-title: 将资源发布到Brand Portal
+title: Publish资源到Brand Portal
 description: 了解如何将资源发布和取消发布到Brand Portal。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -18,7 +18,7 @@ ht-degree: 40%
 
 ---
 
-# 将资源发布到Brand Portal {#publish-assets-to-brand-portal}
+# Publish资源到Brand Portal {#publish-assets-to-brand-portal}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -33,37 +33,37 @@ ht-degree: 40%
 >
 >Adobe 建议实施错峰发布，最好在非高峰时段发布，这样 AEM 作者就不会占用过多的资源。
 
-1. 在Assets控制台中，选择要发布的资产/文件夹，然后单击 **[!UICONTROL 快速发布]** 工具栏中的选项。
+1. 在Assets控制台中，选择要发布的资源/文件夹，然后单击工具栏中的&#x200B;**[!UICONTROL 快速Publish]**&#x200B;选项。
 
    或者，选择要发布到Brand Portal的资源。
 
    ![publish2bp-2](assets/publish2bp.png)
 
 1. 要将资源发布到Brand Portal，可以使用以下两个选项：
-   * [立即发布资源](#publish-to-bp-now)
-   * [稍后发布资产](#publish-to-bp-now)
+   * [Publish资源立即](#publish-to-bp-now)
+   * [稍后Publish资源](#publish-to-bp-now)
 
-## 立即发布资产 {#publish-to-bp-now}
+## Publish资源立即 {#publish-to-bp-now}
 
 要将选定资产发布到 Brand Portal，请执行以下任一操作：
 
-* 在工具栏中，选择&#x200B;**[!UICONTROL 快速发布]**。然后从菜单中选择 **[!UICONTROL 发布到Brand Portal]**.
+* 在工具栏中，选择&#x200B;**[!UICONTROL 快速发布]**。然后从菜单中选择&#x200B;**[!UICONTROL Publish到Brand Portal]**。
 
 * 在工具栏中，选择&#x200B;**[!UICONTROL 管理发布]**。
 
-   1. 然后，从 **[!UICONTROL 操作]** 选择 **[!UICONTROL 发布到Brand Portal]**、和从 **[!UICONTROL 正在计划]** 选择 **[!UICONTROL 现在]**. 单击&#x200B;**[!UICONTROL 下一步]**。
+   1. 然后从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL Publish到Brand Portal]**，并从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL 立即]**。 单击&#x200B;**[!UICONTROL 下一步]**。
 
-   2. 范围 **[!UICONTROL 范围]**，确认您的选择，然后单击 **[!UICONTROL 发布到Brand Portal]**.
+   2. 在&#x200B;**[!UICONTROL 范围]**&#x200B;内，确认您的选择，然后单击&#x200B;**[!UICONTROL Publish到Brand Portal]**。
 
 此时将显示一条消息，表明资产已排队等候发布到 Brand Portal。登录到 Brand Portal 界面可查看已发布的资产。
 
-## 稍后发布资产 {#publish-to-bp-later}
+## 稍后Publish资源 {#publish-to-bp-later}
 
 要计划在稍后的日期或时间将资产发布到 Brand Portal，请执行以下操作：
 
-1. 选择要发布的资产/文件夹后，选择 **[!UICONTROL 管理发布]** 从顶部的工具栏删除。
+1. 选择要发布的资产/文件夹后，从顶部的工具栏中选择&#x200B;**[!UICONTROL 管理发布]**。
 
-1. 开启 **[!UICONTROL 管理发布]** 页面，选择 **[!UICONTROL 发布到Brand Portal]** 从 **[!UICONTROL 操作]** 并选择 **[!UICONTROL 稍后]** 从 **[!UICONTROL 正在计划]**.
+1. 在&#x200B;**[!UICONTROL 管理发布]**&#x200B;页面上，从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL Publish到Brand Portal]**，并从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL 稍后]**。
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
@@ -85,7 +85,7 @@ ht-degree: 40%
 
    ![bp_landingpage](assets/bp_landingpage.png)
 
-1. 切换到列表视图 ![列表视图](assets/list-view.svg) 以查看资源的当前发布状态。
+1. 切换到列表视图![列表视图](assets/list-view.svg)以查看资源的当前发布状态。
 
 <!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 

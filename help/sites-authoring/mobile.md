@@ -24,16 +24,16 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。(请参阅 [为不同渠道创建Live Copy](/help/sites-administering/msm-livecopy.md).)
+>要创建基于现有标准站点的移动站点，请创建标准站点的 Live Copy。（请参阅[为不同的渠道创建Live Copy](/help/sites-administering/msm-livecopy.md)。）
 >
->AEM 开发人员可以创建新设备组。(请参阅 [创建设备组筛选器](/help/sites-developing/groupfilters.md).)
+>AEM 开发人员可以创建新设备组。（请参阅[创建设备组筛选器](/help/sites-developing/groupfilters.md)。）
 
 请使用以下过程来创作移动页面：
 
 1. 从全局导航中打开&#x200B;**Sites**&#x200B;控制台。
-1. 打开页面 **We.Retail** > **美国** > **英语**.
+1. 打开页面&#x200B;**We.Retail** > **美国** > **英语**。
 
-1. 切换到 **预览** 模式。
+1. 切换到&#x200B;**预览**&#x200B;模式。
 1. 单击页面顶部的设备图标以切换到所需的模拟器。
 1. 将组件从组件浏览器拖放到页面。
 

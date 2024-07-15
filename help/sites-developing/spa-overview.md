@@ -38,7 +38,7 @@ AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中�
 有关 AEM 中的 SPA 的更多详细信息，请参阅以下文档：
 
 * [SPA Blueprint](/help/sites-developing/spa-blueprint.md)，了解 SPA 的技术要求
-* [AEM中的SPA入门](/help/sites-developing/spa-getting-started-react.md) 快速浏览简单的SPA
+* [AEM中的SPA快速入门](/help/sites-developing/spa-getting-started-react.md)，快速浏览简单的SPA
 
 ## 设计 {#design}
 
@@ -46,7 +46,7 @@ SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素
 
 ### 页面模型管理 {#page-model-management}
 
-页面模型的解析和管理工作将委派给提供的 `PageModel` 库。SPA必须使用页面模型库进行初始化，并由SPA编辑器进行创作。 页面模型库通过 `aem-react-editable-components` npm 间接提供给 AEM 页面组件。页面模型是 AEM 和 SPA 之间的解释器，因此必须始终存在。创作页面时，会生成一个额外的库 `cq.authoring.pagemodel.messaging` 必须添加才能启用与页面编辑器的通信。
+页面模型的解析和管理工作将委派给提供的 `PageModel` 库。SPA必须使用页面模型库进行初始化，并由SPA编辑器进行创作。 页面模型库通过 `aem-react-editable-components` npm 间接提供给 AEM 页面组件。页面模型是 AEM 和 SPA 之间的解释器，因此必须始终存在。在创作页面时，必须添加其他库`cq.authoring.pagemodel.messaging`才能启用与页面编辑器的通信。
 
 如果 SPA 页面组件继承自页面核心组件，则可通过两个选项使 `cq.authoring.pagemodel.messaging` 客户端库类别可用：
 
@@ -158,7 +158,7 @@ SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素
 
 ## 要求和限制 {#requirements-limitations}
 
-要使作者能够使用页面编辑器编辑 SPA 的内容，必须实施您的 SPA 应用程序以便与 AEM SPA Editor SDK 进行交互。请参阅 [AEM中的SPA入门](/help/sites-developing/spa-getting-started-react.md) 你至少需要知道的才能跑起来。
+要使作者能够使用页面编辑器编辑 SPA 的内容，必须实施您的 SPA 应用程序以便与 AEM SPA Editor SDK 进行交互。请参阅[AEM中的SPA快速入门](/help/sites-developing/spa-getting-started-react.md)，了解运行它所需了解的最少信息。
 
 ### 支持的框架 {#supported-frameworks}
 
@@ -171,20 +171,20 @@ SPA 编辑器 SDK 支持以下最低版本：
 
 ### 其他框架 {#additional-frameworks}
 
-可以实施其他 SPA 框架以与 AEM SPA Editor SDK 结合使用。请参阅 [SPA Blueprint](/help/sites-developing/spa-blueprint.md) 满足框架必须满足的要求，以便创建由模块、组件和服务组成的框架特定层，以便用于AEM SPA编辑器。
+可以实施其他 SPA 框架以与 AEM SPA Editor SDK 结合使用。请参阅[SPA Blueprint](/help/sites-developing/spa-blueprint.md)，了解框架必须满足哪些要求才能创建由模块、组件和服务组成的特定于AEM SPA Editor的层。
 
 ### 使用多个选择器 {#multiple-selectors}
 
-可以定义其他自定义选择器并将其用作针对 AEM SPA SDK 开发的 SPA 的一部分。但是，此支持要求客户能够 `model` 选择器是第一个选择器，扩展是 `.json` 作为 [JSON导出程序要求。](json-exporter-components.md#multiple-selectors)
+可以定义其他自定义选择器并将其用作针对 AEM SPA SDK 开发的 SPA 的一部分。但是，此支持要求`model`选择器是第一个选择器，扩展名为`.json`，因为JSON导出程序需要[。](json-exporter-components.md#multiple-selectors)
 
 ### 文本编辑器要求 {#text-editor-requirements}
 
 如果您想使用在 SPA 中创建的文本组件的就地编辑器，则需要进行额外配置。
 
-1. 在包含文本 HTML 的容器包装器元素上设置属性（可以是任意属性）。如果存在WKND日志示例内容，则它为 `<div>` 元素和已使用的选择器为 `data-rte-editelement`.
+1. 在包含文本 HTML 的容器包装器元素上设置属性（可以是任意属性）。如果存在WKND日志示例内容，则它是`<div>`元素，并且已使用的选择器是`data-rte-editelement`。
 1. 在指向该选择器的相应 AEM 文本组件的 `cq:InplaceEditingConfig` 上设置配置 `editElementQuery`，例如 `data-rte-editelement`。这可让编辑器知道哪个 HTML 元素包装了 HTML 文本。
 
-有关如何执行此操作的示例，请参见 [wknd日志示例内容。](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
+有关如何完成此操作的示例，请参阅[WKND日志示例内容。](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 
 有关富文本编辑器的 `editElementQuery` 属性和配置的更多信息，请参阅[配置富文本编辑器。](/help/sites-administering/rich-text-editor.md)
 

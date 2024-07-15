@@ -26,7 +26,7 @@ ht-degree: 9%
 
 ## 将XML架构用作表单模型 {#using-an-xml-schema-as-form-model}
 
-[!DNL Experience Manager Forms] 支持使用现有XML架构作为表单模型来创建自适应表单。 此XML架构表示组织中的后端系统生成或使用数据的结构。
+[!DNL Experience Manager Forms]支持使用现有XML架构作为表单模型来创建自适应表单。 此XML架构表示组织中的后端系统生成或使用数据的结构。
 
 使用XML架构的主要功能包括：
 
@@ -140,7 +140,7 @@ XML架构由简单和复杂的元素类型组成。 元素具有向元素添加�
   </tr>
   <tr>
    <td><code>use=required </code></td>
-   <td>将字段标记为必填<br /> </td>
+   <td>标记必填字段<br /> </td>
    <td>属性</td>
   </tr>
   <tr>
@@ -169,7 +169,7 @@ XML架构由简单和复杂的元素类型组成。 元素具有向元素添加�
 >* 将元素名称的第一个字符变为大写
 >* 在“驼峰式大小写”边界处插入空格。
 >
->例如，如果添加 `userFirstName` 架构元素中，在自适应表单中生成的标题为 `User First Name`.
+>例如，如果添加`userFirstName`架构元素，则自适应表单中生成的标题为`User First Name`。
 
 ## 限制自适应表单组件的可接受值 {#limit-acceptable-values-for-an-adaptive-form-component}
 
@@ -289,15 +289,15 @@ XML架构由简单和复杂的元素类型组成。 元素具有向元素添加�
 
 **如何知道树中的哪个元素与哪个XML元素关联？**
 
-在内容查找器中双击某个元素时，弹出窗口会显示一个字段名称和名为的属性 `bindRef`. 此属性将树元素映射到架构中的元素或属性。
+在内容查找器中双击某个元素时，弹出窗口会显示字段名称和名为`bindRef`的属性。 此属性将树元素映射到架构中的元素或属性。
 
 ![XML架构元素的bindref字段](assets/dblclick.png)
 
-此 <code>bindRef</code> 字段显示树元素与架构中的元素或属性之间的关联。
+<code>bindRef</code> 字段显示树元素与架构中的元素或属性之间的关联。
 
 >[!NOTE]
 >
->属性具有 `@` 符号所在的 `bindRef`值，以将其与元素区分开。 例如：`/config/projectDetails/@duration`。
+>属性的`bindRef`值中具有`@`符号，以便与元素区分开。 例如：`/config/projectDetails/@duration`。
 
 **为什么我无法为可重复的子表单（minOccours或maxOccurs值大于1）拖动子表单的单个元素（从任何复杂类型生成的结构）？**
 
@@ -312,4 +312,4 @@ XML架构由简单和复杂的元素类型组成。 元素具有向元素添加�
 
 **什么是bindRef？**
 
-A `bindRef` 是自适应表单组件与架构元素或属性之间的连接。 它规定 `XPath` 其中从此组件或字段捕获的值在输出XML中可用。 A `bindRef`在从预填充（预填充）的XML中预填充字段值时也可使用。
+`bindRef`是自适应表单组件与架构元素或属性之间的连接。 它指示从此组件或字段中捕获的值在输出XML中可用的`XPath`。 从预填充（预填充）的XML中预填充字段值时，也使用`bindRef`。

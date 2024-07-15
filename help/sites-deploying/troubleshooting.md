@@ -34,11 +34,11 @@ ht-degree: 0%
 
 ## 配置日志文件和审核日志 {#configuring-log-files-and-audit-logs}
 
-AEM会记录您可能想要配置的详细日志，以解决安装问题。 有关信息，请参见 [使用审核记录和日志文件](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) 部分。
+AEM会记录您可能想要配置的详细日志，以解决安装问题。 有关信息，请参阅[使用审核记录和日志文件](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)部分。
 
 ## 使用Verbose选项 {#using-the-verbose-option}
 
-启动AEM WCM时，可以将 — v (verbose)选项添加到命令行中，如java -jar cq-wcm-quickstart-&lt;version>.jar -v.
+启动AEM WCM时，可以将 — v (verbose)选项添加到命令行中，如java -jar cq-wcm-quickstart-&lt;version>.jar -v中所示。
 
 详细选项在控制台上显示一些快速入门日志输出，因此可用于进行故障排除。
 
@@ -67,12 +67,12 @@ AEM会记录您可能想要配置的详细日志，以解决安装问题。 有�
 
 >[!NOTE]
 >
->另请参阅 [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
+>另请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)。
 
 
-CRX本身的内存占用量很低。 如果在CRX中运行的应用程序具有更大的内存需求或请求内存密集型操作（例如，大型事务），则运行CRX的JVM实例必须使用适当的内存设置启动。
+CRX本身内存占用较少。 如果在CRX中运行的应用程序有更大的内存需求或请求内存密集型操作（例如，大型事务），则运行CRX的JVM实例必须使用适当的内存设置启动。
 
-使用Java™命令选项定义JVM的内存设置（例如，使用java -Xmx512m -jar crx&amp;ast；.jar将heapsize设置为512 MB）。
+使用Java™命令选项定义JVM的内存设置（例如，java -Xmx512m -jar crx&amp;amp；ast；.jar将heapsize设置为512 MB）。
 
 从命令行启动AEM WCM时指定内存设置选项。 还可以修改用于管理AEM WCM启动的AEM WCM启动/停止脚本或自定义脚本，以定义所需的内存设置。
 
@@ -80,16 +80,16 @@ CRX本身的内存占用量很低。 如果在CRX中运行的应用程序具有�
 
 要在内存不足时自动创建栈转储，请使用以下命令：
 
-java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;ast；.jar
+java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;amp；ast；.jar
 
-此方法会生成栈转储文件(**java_...hprof**)。 生成栈转储后，该进程可能会继续运行。
+只要进程内存不足，此方法就会生成栈转储文件(**java_...hprof**)。 生成栈转储后，该进程可能会继续运行。
 
 通常，需要在一段时间内收集的三个栈转储文件来分析问题：
 
 * 在失败发生之前
 * 故障1期间
 * 故障2期间
-* *理想情况下，在事件解决后收集信息也会有帮助*
+* *理想情况下，最好在事件解决后收集信息*
 
 这些功能可以比较以查看更改以及对象如何使用内存。
 
@@ -115,7 +115,7 @@ java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;ast；.jar
 
 如果出现此问题，请执行以下操作：
 
-1. 打开 `sling.properties` 文件位于 `crx-quickstart/conf/` 文件夹
+1. 打开`crx-quickstart/conf/`文件夹下的`sling.properties`文件
 1. 找到以下行：
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.`
@@ -134,13 +134,13 @@ java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;ast；.jar
 
 对geometrixx-outdoors/en页面的请求返回404（页面未找到）时，您可以重新检查是否已在这些特定应用程序服务器所需的sling.properties文件中设置了其他sling属性。
 
-在中查看 *部署AEM Web应用程序* 详细步骤。
+有关详细信息，请参阅&#x200B;*部署AEM Web应用程序*&#x200B;步骤。
 
 ### 响应标头大小可以大于4 KB {#response-header-size-can-be-greater-than-kb}
 
 502错误可能表示Web服务器无法处理AEM HTTP响应标头的大小。 AEM可以生成包含大小大于4 KB的Cookie的HTTP响应标头。 确保已配置Servlet容器，以便最大响应标头大小可以超过4 KB。
 
-例如，对于Tomcat 7.0，其属性为 [HTTP连接器](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) 控制标头大小限制。
+例如，对于Tomcat 7.0，[HTTP Connector](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html)的maxHttpHeaderSize属性控制对标头大小的限制。
 
 ## 卸载Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
@@ -150,11 +150,11 @@ java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;ast；.jar
 
 >[!NOTE]
 >
->Adobe建议您在删除AEM之前备份存储库。 如果您删除整个 &lt;cq-installation-directory>，则还会删除存储库。 要在删除之前保留存储库数据，请移动或复制 &lt;cq-installation-directory>/crx-quickstart/repository文件夹中的其他位置，然后再删除其他文件夹。
+>Adobe建议您在删除AEM之前备份存储库。 如果删除整个&lt;cq-installation-directory>，则也会删除存储库。 要在删除之前保留存储库数据，请在删除其他文件夹之前将&lt;cq-installation-directory>/crx-quickstart/repository文件夹移动或复制到其他位置。
 
 如果您安装的AEM使用外部存储（例如，数据库服务器），则删除文件夹不会自动删除数据，但会删除存储配置，这会使恢复JCR内容变得困难。
 
 ### JSP文件未在JBoss上编译® {#jsp-files-are-not-compiled-on-jboss}
 
 如果安装或更新要在JBoss®上Experience Manager的JSP文件，但未编译相应的servlet，请确保正确配置了JBoss® JSP编译器。 有关信息，请参见
-[JBoss中的JSP编译问题®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) 文章。
+JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html)文章中的[JSP编译问题。

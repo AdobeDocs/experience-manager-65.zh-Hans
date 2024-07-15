@@ -35,21 +35,21 @@ Output 服务使您能够创建应用程序，这些应用程序允许您：
 
 ## 创建非交互式表单文档 {#creating-non-interactive-form-documents}
 
-![usingoutput_modified](assets/usingoutput_modified.png)
+![使用output_modified](assets/usingoutput_modified.png)
 
-通常，您可以使用AEM Forms Designer创建模板。 此 `generatePDFOutput` 和 `generatePrintedOutput` Output服务的API允许您直接将这些模板转换为各种格式，包括PDF、PostScript、ZPL和PCL。
+通常，您可以使用AEM Forms Designer创建模板。 Output服务的`generatePDFOutput`和`generatePrintedOutput` API允许您直接将这些模板转换为各种格式，包括PDF、PostScript、ZPL和PCL。
 
-此 `generatePDFOutput` 操作会生成PDF，而 `generatePrintedOutput` 操作生成PostScript、ZPL和PCL格式。 两个操作的第一个参数都接受模板文件的名称(例如， `ExpenseClaim.xdp`)或包含模板的Document对象。 指定模板文件的名称时，还应指定内容根目录作为包含模板的文件夹的路径。 您可以使用以下任一方式指定内容根 `PDFOutputOptions` 或 `PrintedOutputOptions` 参数。 有关可以使用这些参数指定的其他选项的详细信息，请参阅Javadoc 。
+`generatePDFOutput`操作生成PDF，而`generatePrintedOutput`操作生成PostScript、ZPL和PCL格式。 这两个操作的第一个参数接受模板文件的名称（例如，`ExpenseClaim.xdp`）或包含该模板的Document对象。 指定模板文件的名称时，还应指定内容根目录作为包含模板的文件夹的路径。 您可以使用`PDFOutputOptions`或`PrintedOutputOptions`参数指定内容根。 有关可以使用这些参数指定的其他选项的详细信息，请参阅Javadoc 。
 
 第二个参数在生成输出文档时接受与模板合并的XML文档。
 
-此 `generatePDFOutput` 操作也可以接受基于XFA的PDF表单作为输入，并返回PDF表单的非交互版本作为输出。
+`generatePDFOutput`操作还可以接受基于XFA的PDF表单作为输入，并返回PDF表单的非交互版本作为输出。
 
 ## 生成非交互式表单文档 {#generating-non-interactive-form-documents}
 
 假设您有一个或多个模板，并且每个模板有多个XML数据记录。
 
-使用 `generatePDFOutputBatch` 和 `generatePrintedOutputBatch` Output服务的操作，用于为每个记录生成打印文档。
+使用Output服务的`generatePDFOutputBatch`和`generatePrintedOutputBatch`操作为每个记录生成打印文档。
 
 您还可以将记录合并到单个文档中。 这两个操作都需要4个参数。
 
@@ -57,10 +57,10 @@ Output 服务使您能够创建应用程序，这些应用程序允许您：
 
 第二个参数是不同的Map，其值是包含XML数据的Document对象。 该键与为第一个参数指定的键相同。
 
-的第三个参数 `generatePDFOutputBatch` 或 `generatePrintedOutputBatch` 属于类型 `PDFOutputOptions` 或 `PrintedOutputOptions` 的量度。
+`generatePDFOutputBatch`或`generatePrintedOutputBatch`的第三个参数分别为类型`PDFOutputOptions`或`PrintedOutputOptions`。
 
-参数类型与的参数类型相同 `generatePDFOutput` 和 `generatePrintedOutput` 和操作具有相同的效果。
+参数类型与`generatePDFOutput`和`generatePrintedOutput`操作的参数类型相同，具有相同的效果。
 
-第四个参数的类型为 `BatchOptions`，用于指定是否可以为每个记录生成单独的文件。 此参数的默认值为false。
+第四个参数是`BatchOptions`类型，您可以使用它来指定是否可以为每个记录生成单独的文件。 此参数的默认值为false。
 
-两者 `generatePrintedOutputBatch` 和 `generatePDFOutputBatch` 返回类型的值 `BatchResult`. 该值包含生成的文档列表。 它还包含一个XML格式的元数据文档，其中包含与生成的每个文档相关的信息。
+`generatePrintedOutputBatch`和`generatePDFOutputBatch`都返回类型`BatchResult`的值。 该值包含生成的文档列表。 它还包含一个XML格式的元数据文档，其中包含与生成的每个文档相关的信息。

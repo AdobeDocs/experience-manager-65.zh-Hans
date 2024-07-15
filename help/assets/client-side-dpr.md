@@ -24,13 +24,13 @@ ht-degree: 0%
 
 **服务器端渲染的应用程序**
 
-1. 加载Service Worker初始化(`srvinit.js`)，方法是在您的HTML页面的标题部分中包含以下脚本：
+1. 通过在HTML页的标头部分中包含以下脚本来加载Service Worker初始化(`srvinit.js`)：
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe建议您加载此脚本 _早于_ 任何其他脚本，以便Service Worker立即开始初始化。
+   Adobe建议您在&#x200B;_之前加载此脚本_，以便Service Worker立即开始初始化。
 
 1. 在HTML页面的body部分的顶部包含以下DPR图像标记代码：
 
@@ -43,7 +43,7 @@ ht-degree: 0%
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   必须包含此DPR图像标记代码 _早于_ HTML页中的所有静态图像。
+   您必须在HTML页的所有静态图像之前&#x200B;_包含此DPR图像标记代码_。
 
 **客户端渲染的应用程序**
 
@@ -56,8 +56,8 @@ ht-degree: 0%
 
    您可以将两个DPR脚本合并到一个脚本中，以避免多个网络请求。
 
-   Adobe建议您加载这些脚本 _早于_ “HTML”页中的任何其他脚本。
-Adobe还建议您将应用程序Bootstrap在差异HTML标记下，而不是在正文元素下。 原因在于 `dprImageInjection.js` 动态插入“HTML”页面中“正文”部分顶部的图像标记。
+   Adobe建议您在HTML页的&#x200B;_之前加载这些脚本_。
+Adobe还建议您将应用程序Bootstrap在差异HTML标记下，而不是在正文元素下。 原因是`dprImageInjection.js`动态注入HTML页主体部分顶部的图像标签。
 
 ## JavaScript文件下载 {#client-side-dpr-script}
 

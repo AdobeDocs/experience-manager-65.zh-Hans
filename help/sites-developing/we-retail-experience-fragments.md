@@ -20,7 +20,7 @@ ht-degree: 22%
 
 在We.Retail中尝试体验片段
 
-An [体验片段](/help/sites-authoring/experience-fragments.md) 是一个或多个组件的组，这些组件包括可在页面中引用的内容和布局。 它们可以包含任何组件。
+[体验片段](/help/sites-authoring/experience-fragments.md)是由一个或多个组件组成的组，这些组件包括可在页面中引用的内容和布局。 它们可以包含任何组件。
 
 它们允许作者重复使用页面的各个部分（体验的片段），而无需复制和粘贴内容。
 
@@ -37,11 +37,11 @@ An [体验片段](/help/sites-authoring/experience-fragments.md) 是一个或多
 
 ## 在We.Retail中创建体验片段的位置 {#where-to-create-experience-fragments-in-we-retail}
 
-选择 **体验片段** 从全局导航中。 您在此处配置， [创建](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment) 和 [编辑](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment) 您的体验片段和任何相关 [变体](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation).
+从全局导航中选择&#x200B;**体验片段**。 在此处配置，[创建](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment)和[编辑](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment)您的体验片段以及任何相关的[变量](/help/sites-authoring/experience-fragments.md#creating-an-experience-fragment-variation)。
 
 ## 在We.Retail中的何处使用体验片段 {#where-to-use-experience-fragments-in-we-retail}
 
-您可以使用 [体验片段](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment) （与任何其他组件一样） [任意页面](/help/sites-authoring/editing-content.md) 下 **站点** 在全局导航中。
+您可以在全局导航的&#x200B;**站点**&#x200B;下的[任何页面](/help/sites-authoring/editing-content.md)上使用您的[体验片段](/help/sites-authoring/experience-fragments.md#using-your-experience-fragment)（与任何其他组件一样）。
 
 ## 更多信息 {#further-information}
 

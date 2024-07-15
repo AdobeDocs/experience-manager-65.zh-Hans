@@ -44,7 +44,7 @@ ht-degree: 87%
 
 那么，为什么需要另一个 API 呢？
 
-资源HTTP API允许您 **读取** 您的内容，但它还允许您 **创建**， **更新** 和 **删除** content - GraphQL API无法执行的操作。
+Assets HTTP API允许您&#x200B;**读取**&#x200B;您的内容，但它还允许您&#x200B;**创建**、**更新**&#x200B;和&#x200B;**删除**&#x200B;内容 — GraphQL API无法执行的操作。
 
 Assets REST API适用于安装最新Adobe Experience Manager版本的每个现成版本。
 
@@ -57,7 +57,7 @@ Assets HTTP API 包含：
 
 Assets HTTP API 的当前实施基于 **REST** 架构样式，并使您能够通过 **CRUD** 操作（创建、读取、更新、删除）访问内容（存储在 AEM 中）。
 
-通过这些操作，API允许您通过向JavaScript前端应用程序提供内容服务，将Adobe Experience Manager作为Headless CMS（内容管理系统）运行。 或者，任何其他可以执行 HTTP 请求并处理 JSON 响应的应用程序。例如，基于框架或自定义的单页应用程序 (SPA) 需要通过 API 提供的内容（通常采用 JSON 格式）。
+通过这些操作，API允许您通过向Adobe Experience Manager前端应用程序提供内容服务，将JavaScript作为Headless CMS（内容管理系统）运行。 或者，任何其他可以执行 HTTP 请求并处理 JSON 响应的应用程序。例如，基于框架或自定义的单页应用程序 (SPA) 需要通过 API 提供的内容（通常采用 JSON 格式）。
 
 <!--
 >[!NOTE]
@@ -253,7 +253,7 @@ API 引用文档中将定义受支持请求的准确格式。
 
 >[!CAUTION]
 >
->AEM实例上的Dispatcher配置可能会阻止对的访问 `/api`.
+>AEM实例上的Dispatcher配置可能会阻止对`/api`的访问。
 
 >[!NOTE]
 >
@@ -320,7 +320,7 @@ API 引用文档中将定义受支持请求的准确格式。
 
 <!--You should continue your AEM headless journey by next reviewing the document [How to Put It All Together - Your App and Your Content in AEM Headless](put-it-all-together.md) where you learn how to take your AEM Headless project and prepare it for going live.-->
 
-您应该通过下一次查看文档来继续您的AEM Headless历程 [如何使用Headless应用程序上线](go-live.md) AEM Headless项目实际上线的位置！
+您应该继续您的AEM Headless之旅，接下来查看文档[How to Live with Your Headless Application](go-live.md)，您实际上是将AEM Headless项目上线了！
 
 ## 其他资源 {#additional-resources}
 

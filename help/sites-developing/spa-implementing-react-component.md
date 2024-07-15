@@ -33,10 +33,10 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 本文说明了We.Retail Journal示例SPA上的天气组件示例。
 
-您应该熟悉 [适用于AEM的SPA应用程序的结构](/help/sites-developing/spa-getting-started-react.md) ，然后再阅读本文。
+在阅读本文之前，您应该熟悉AEM](/help/sites-developing/spa-getting-started-react.md)的SPA应用程序的[结构。
 
 >[!CAUTION]
->本文档使用 [We.Retail日志应用程序](https://github.com/adobe/aem-sample-we-retail-journal) 仅供演示之用。 请勿将其用于任何项目工作。
+>本文档仅将[We.Retail Journal应用程序](https://github.com/adobe/aem-sample-we-retail-journal)用于演示目的。 请勿将其用于任何项目工作。
 >
 >任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
@@ -62,20 +62,20 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 ### 天气组件实施 {#weather-component-implementation}
 
-天气组件基于公开可用的React组件，称为 [React Open Weather](https://www.npmjs.com/package/react-open-weather). 它已调整为在We.Retail Journal示例SPA应用程序中用作组件。
+天气组件基于公开可用的React组件，名为[React Open Weather](https://www.npmjs.com/package/react-open-weather)。 它已调整为在We.Retail Journal示例SPA应用程序中用作组件。
 
 以下是React Open Weather组件用法的NPM文档片段。
 
 ![screen_shot_2018-06-08at144723](assets/screen_shot_2018-06-08at144723.png) ![screen_shot_2018-06-08at144215](assets/screen_shot_2018-06-08at144215.png)
 
-查看自定义天气组件的代码( `Weather.js`)在We.Retail日志应用程序中：
+查看We.Retail日志应用程序中自定义的天气组件(`Weather.js`)的代码：
 
-* **16号线**：根据需要加载React Open Weather构件。
-* **46号线**：和 `MapTo` 函数将此React组件与相应的AEM组件相关联，以便在SPA编辑器中编辑它。
+* **行16**：根据需要加载React Open Weather构件。
+* **第46**&#x200B;行： `MapTo`函数将此React组件与相应的AEM组件相关联，以便在SPA编辑器中编辑它。
 
-* **第22-29行**：和 `EditConfig` 定义，检查是否已填充城市，如果为空，则定义值。
+* **行22-29**：定义了`EditConfig`，检查是否已填充城市，如果为空，则定义值。
 
-* **第31-44行**：天气组件扩展 `Component` 类，并按照React Open Weather组件的NPM使用文档中的定义提供所需数据并呈现该组件。
+* **行31-44**：天气组件扩展`Component`类，并按照React Open Weather组件的NPM使用文档中的定义提供所需数据并呈现该组件。
 
 ```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -130,4 +130,4 @@ MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig)
 
 ## 后续步骤 {#next-step}
 
-有关为AEM开发SPA的更多信息，请参阅文章 [开发SPA for AEM](/help/sites-developing/spa-architecture.md).
+有关为AEM开发SPA的更多信息，请参阅文章[为AEM开发SPA](/help/sites-developing/spa-architecture.md)。

@@ -24,13 +24,13 @@ ht-degree: 0%
 
 有关如何基于AEM Forms技术栈栈启用交易、可计费API列表和自定义记录器实施的全面说明，您可以参阅以下内容：
 
-**JEE上AEM Forms的Transaction Reporting**
+JEE上的AEM Forms的&#x200B;**Transaction Reporting**
 
 * [在JEE上启用和查看AEM Forms的交易报告](/help/forms/using/transaction-report-overview-jee.md)
 * [适用于AEM Forms on JEE的可计费API列表](/help/forms/using/transaction-reports-billable-apis-jee.md)
 * [记录自定义组件API的事务](/help/forms/using/record-transaction-custom-component-jee.md)
 
-**在OSGi上适用于AEM Forms的Transaction Reporting**
+在OSGi上&#x200B;**AEM Forms的Transaction Reporting**
 
 * [OSGi上AEM Forms的交易报表](/help/forms/using/transaction-reports-overview.md)
 * [在OSGi上查看和了解AEM Forms的交易报告](/help/forms/using/viewing-and-understanding-transaction-reports.md)

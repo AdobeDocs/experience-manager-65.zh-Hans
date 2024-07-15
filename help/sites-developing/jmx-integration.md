@@ -18,7 +18,7 @@ ht-degree: 0%
 
 创建并部署MBean以使用JMX控制台管理服务。 公开服务属性和操作，以便执行管理任务。
 
-有关使用JMX控制台的信息，请参见 [使用JMX控制台监控服务器资源](/help/sites-administering/jmx-console.md).
+有关使用JMX控制台的信息，请参阅[使用JMX控制台监视服务器资源](/help/sites-administering/jmx-console.md)。
 
 ## Felix和CQ5中的JMX框架 {#the-jmx-framework-in-felix-and-cq}
 
@@ -38,24 +38,24 @@ ht-degree: 0%
 
 ### 使用注释提供MBean信息 {#using-annotations-to-provide-mbean-information}
 
-此 [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) 包提供了多个注释和类，用于轻松将MBean元数据提供给JMX控制台。 使用这些注释和类，而不是直接向MBean的MBeanInfo对象添加信息。
+[com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)包提供了几个注释和类，以便轻松地将MBean元数据提供给JMX控制台。 使用这些注释和类，而不是直接向MBean的MBeanInfo对象添加信息。
 
 **注释**
 
-将注释添加到管理界面以指定MBean元数据。 该信息显示在JMX控制台中，供每个已部署的实现类使用。 以下注释可供使用(有关完整信息，请参阅 [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html))：
+将注释添加到管理界面以指定MBean元数据。 该信息显示在JMX控制台中，供每个已部署的实现类使用。 有以下批注可用（有关完整信息，请参阅[com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)）：
 
-* **描述：** 提供MBean类或方法的说明。 在类声明上使用时，该说明将显示在MBean的“JMX控制台”页上。 在方法上使用时，说明显示为相应属性或操作的悬停文本。
-* **影响：** 方法的影响。 有效参数值是由定义的字段 [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
+* **描述：**&#x200B;提供MBean类或方法的描述。 在类声明上使用时，该说明将显示在MBean的“JMX控制台”页上。 在方法上使用时，说明显示为相应属性或操作的悬停文本。
+* **影响：**&#x200B;方法的影响。 有效参数值是由[javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html)定义的字段。
 
-* **名称：** 指定操作参数的显示名称。 使用此注释可覆盖接口中使用的方法参数的实际名称。
-* **OpenTypeInfo：** 指定用于在JMX控制台中表示复合数据或表格数据的类。 与Open MBean一起使用
-* **TabularTypeInfo：** 用于对用于表示表格数据的类进行注释。
+* **名称：**&#x200B;指定要为操作参数显示的名称。 使用此注释可覆盖接口中使用的方法参数的实际名称。
+* **OpenTypeInfo：**&#x200B;指定用于在JMX控制台中表示复合数据或表格数据的类。 与Open MBean一起使用
+* **TabularTypeInfo：**&#x200B;用于注释用于表示表格数据的类。
 
 **类**
 
 提供了用于创建使用您添加到其接口中的注释的动态MBean的类：
 
-* **AnnotatedStandardMBean：** javax.management.StandardMBean类的子类，用于自动向JMX控制台提供注释元数据。
+* **AnnotatedStandardMBean：** javax.management.StandardMBean类的子类，自动向JMX控制台提供注释元数据。
 * **OpenAnnotatedStandardMBean：** AnnotatedStandardMBean类的子类，用于创建使用OpenTypeInfo注释的Open Mbean。
 
 ### 开发MBean {#developing-mbeans}
@@ -88,7 +88,7 @@ public interface ExampleMBean {
 }
 ```
 
-实施类使用SlingRepository服务检索有关CRX存储库的信息。
+implementation类使用SlingRepository服务检索有关CRX存储库的信息。
 
 #### MBean实现类 {#mbean-implementation-class}
 
@@ -135,15 +135,15 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 除了与OSGi相关的元数据之外，您还必须提供在MBean服务器中注册MBean时Aries JMX白板模块所需的元数据：
 
-* **DynamicMBean接口的名称：** 声明MBean服务实现 `javax.management.DynamicMBea`n接口。 此声明通知Aries JMX白板模块该服务是MBean服务。
+* **DynamicMBean接口的名称：**&#x200B;声明MBean服务实现`javax.management.DynamicMBea`n接口。 此声明通知Aries JMX白板模块该服务是MBean服务。
 
-* **MBean域和密钥属性：** 在Felix上，您将此信息作为MBean的OSGi服务的属性提供。 该信息与您通常在MBean服务器提供的 `javax.management.ObjectName` 对象。
+* **MBean域和密钥属性：**&#x200B;在Felix上，您将此信息作为MBean的OSGi服务的属性提供。 这是您通常在`javax.management.ObjectName`对象中向MBean服务器提供的相同信息。
 
 当您的MBean反映为单个服务时，只需要一个MBean服务实例。 在这种情况下，如果您使用Felix SCR Maven插件，则可以使用MBean实现类上的Apache Felix服务组件运行时(SCR)注释来指定与JMX相关的元数据数据。 要实例化多个MBean实例，您可以创建另一个类来执行MBean的OSGi服务的注册。 在这种情况下，与JMX相关的元数据在运行时生成。
 
-**单个MBean**
+**单MBean**
 
-可以在设计时为其定义所有属性和操作的MBean可以使用MBean实现类中的SCR注释进行部署。 在以下示例中， `value` 的属性 `Service` 注释声明服务实施 `DynamicMBean` 界面。 此 `name` 的属性 `Property` 注释指定JMX域和键属性。
+可以在设计时为其定义所有属性和操作的MBean可以使用MBean实现类中的SCR注释进行部署。 在以下示例中，`Service`注释的`value`属性声明服务实现`DynamicMBean`接口。 `Property`注释的`name`属性指定JMX域和键属性。
 
 #### 带有SCR注释的MBean实现类 {#mbean-implementation-class-with-scr-annotations}
 
@@ -214,7 +214,7 @@ ServiceRegistration serviceregistration =
 * WorkflowMBeanManager： MBean管理器类的接口。
 * WorkflowMBeanManagerImpl： MBean管理器的实现类。
 
-**注意：** 为简单起见，此示例中的代码不会执行日志记录或应对抛出的异常。
+**注意：**&#x200B;为简单起见，此示例中的代码不会执行日志记录或响应抛出的异常。
 
 WorkflowMBeanManagerImpl包括组件激活方法。 激活组件后，方法会执行以下任务：
 
@@ -229,7 +229,7 @@ MBean元数据显示在JMX控制台中，其中包含com.adobe.example域、work
 
 ### 示例MBean {#the-example-mbean}
 
-此示例需要一个MBean接口和实现，该接口和实现反映在 `com.day.cq.workflow.model.WorkflowModel` 界面。 MBean非常简单，因此示例可以侧重于设计的配置和部署方面。 MBean公开单个属性，即模型名称。
+此示例需要一个MBean接口和在`com.day.cq.workflow.model.WorkflowModel`接口上反映的实现。 MBean非常简单，因此示例可以侧重于设计的配置和部署方面。 MBean公开单个属性，即模型名称。
 
 #### WorkflowMBean接口 {#workflowmbean-interface}
 
@@ -431,7 +431,7 @@ public class WorkflowMBeanManagerImpl implements WorkflowMBeanManager {
 * Apache Felix Maven捆绑包插件：创建捆绑包和清单
 * Apache Felix Maven SCR插件：创建组件描述符文件并配置服务组件清单标头。
 
-**注意：** 在编写时，maven scr插件与Eclipse的m2e插件不兼容。 (请参阅 [Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) 要使用Eclipse IDE，请安装Maven并使用命令行界面执行生成。
+**注意：**&#x200B;在编写时，maven scr插件与Eclipse的m2e插件不兼容。 （请参阅[Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170)。） 要使用Eclipse IDE，请安装Maven并使用命令行界面执行生成。
 
 #### 示例POM文件 {#example-pom-file}
 

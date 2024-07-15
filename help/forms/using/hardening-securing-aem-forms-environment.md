@@ -28,7 +28,7 @@ ht-degree: 0%
 
 下图显示了典型AEM Forms部署中使用的组件和协议，包括相应的防火墙拓扑：
 
-![典型架构](assets/typical-architecture.png)
+![典型体系结构](assets/typical-architecture.png)
 
 AEM Forms具有高度可自定义性，可以在许多不同的环境中工作。 某些建议可能不适用于您的组织。
 
@@ -123,9 +123,9 @@ AEM Forms具有高度可自定义性，可以在许多不同的环境中工作�
 
 默认情况下，发布节点上可用的资源可供所有人访问。 已为所有资源启用只读访问权限。 必须启用匿名访问。 如果您计划限制表单查看并仅向经过身份验证的用户提交访问权限，则使用通用组以允许仅经过身份验证的用户对发布节点上可用的资源具有只读访问权限。 以下位置/目录包含需要强化的forms资源（已验证用户的只读访问权限）：
 
-* /content/&amp;ast；
-* /etc.clientlibs/fd/&amp;ast；
-* /libs/fd/&amp;ast；
+* /content/&amp;amp；ast；
+* /etc.clientlibs/fd/&amp;amp；ast；
+* /libs/fd/&amp;amp；ast；
 
 ## 安全地处理表单数据  {#securely-handle-forms-data}
 
@@ -139,20 +139,20 @@ AEM Forms将数据存储到预定义的位置和临时文件夹。 您应该保�
 
 ### 通过Forms Portal提交操作保存的安全数据 {#secure-data-saved-by-forms-portal-submit-action}
 
-默认情况下，自适应表单的Forms Portal提交操作会将数据保存在发布节点的本地存储库中。 数据保存在/content/forms/fp中。 **建议不要将数据存储在发布实例上。**
+默认情况下，自适应表单的Forms Portal提交操作会将数据保存在发布节点的本地存储库中。 数据保存在/content/forms/fp中。 **不建议将数据存储在发布实例上。**
 
 您可以将存储服务配置为直接发送到处理群集，而无需在发布节点上本地保存任何内容。 处理群集位于专用防火墙后面的安全区域中，数据保持安全。
 
-使用AEM DS设置服务的处理服务器的凭据将数据从发布节点发布到处理服务器。 使用对处理服务器的存储库具有读写访问权限的受限制的非管理用户的凭据。 有关更多信息，请参阅 [为草稿和提交配置存储服务](/help/forms/using/configuring-draft-submission-storage.md).
+使用AEM DS设置服务的处理服务器的凭据将数据从发布节点发布到处理服务器。 使用对处理服务器的存储库具有读写访问权限的受限制的非管理用户的凭据。 有关详细信息，请参阅[为草稿和提交配置存储服务](/help/forms/using/configuring-draft-submission-storage.md)。
 
 ### 由表单数据模型(FDM)处理的安全数据 {#secure-data-handled-by-form-data-model-fdm}
 
 使用具有最低所需权限的用户帐户为表单数据模型(FDM)配置数据源。 使用管理帐户可以向未授权用户提供元数据和架构实体的开放访问。\
 数据集成还提供了授权FDM服务请求的方法。 您可以插入执行前和执行后授权机制来验证请求。 服务请求是在预填表单、提交表单和通过规则调用服务时生成的。
 
-**预处理授权：** 您可以使用预处理授权在执行请求之前验证请求的真实性。 您可以使用输入、服务和请求详细信息来允许或停止执行请求。 如果停止执行，您可以返回数据集成异常OPERATION_ACCESS_DENIED。 您也可以在发送客户端请求以供执行之前对其进行修改。 例如，更改输入和添加其他信息。
+**预处理授权：**&#x200B;您可以使用预处理授权在执行请求之前验证请求的真实性。 您可以使用输入、服务和请求详细信息来允许或停止执行请求。 如果停止执行，您可以返回数据集成异常OPERATION_ACCESS_DENIED。 您也可以在发送客户端请求以供执行之前对其进行修改。 例如，更改输入和添加其他信息。
 
-**后处理授权：** 您可以使用后处理授权来验证和控制结果，然后再将结果返回给请求者。 您还可以过滤、修剪和向结果插入附加数据。
+**Post进程授权：**&#x200B;您可以使用进程后授权来验证和控制结果，然后再将结果返回给请求者。 您还可以过滤、修剪和向结果插入附加数据。
 
 ### 限制用户访问 {#limit-user-access}
 
@@ -196,4 +196,4 @@ AEM Forms将数据存储到预定义的位置和临时文件夹。 您应该保�
 
 ### 使用AEM最佳实践来保护AEM Forms环境的安全 {#use-aem-best-practices-to-secure-an-aem-forms-environment}
 
-本文档提供了特定于AEM Forms环境的说明。 您应该采取以确保在部署时基础AEM安装是安全的。 有关详细说明，请参阅 [AEM安全核对清单](/help/sites-administering/security-checklist.md) 文档。
+本文档提供了特定于AEM Forms环境的说明。 您应该采取以确保在部署时基础AEM安装是安全的。 有关详细说明，请参阅[AEM安全核对清单](/help/sites-administering/security-checklist.md)文档。

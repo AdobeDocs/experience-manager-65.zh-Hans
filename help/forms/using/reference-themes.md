@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 参考主题{#reference-themes}
 
-[主题](../../forms/using/themes.md) 让您能够在对CSS没有深入了解的情况下为表单设置样式。 除了默认主题之外，您还可以通过安装 [AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)：
+[主题](../../forms/using/themes.md)允许您在不了解CSS的情况下设置表单样式。 除了默认主题之外，您还可以通过安装[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)获取以下主题：
 
 * 贝里尔
 * 执行
@@ -30,17 +30,17 @@ ht-degree: 0%
 
 每个主题都包含独特而优雅的样式，可用于为用户创建令人愉悦的自适应表单。 它包含面板、文本框、数字框、单选按钮、表格和开关等选择器的独特样式。 这些主题中的样式是根据需求而定的。 例如，在特定场景中，您需要使用简洁字体的最小主题。 自由主题可让您获得这样的外观。
 
-![参考主题](assets/ref-themes.png)
+![引用主题](assets/ref-themes.png)
 
 此包中包含的主题是响应式的，这些主题中的样式是为移动和桌面显示定义的。 各种设备上的大多数现代浏览器都可以轻松渲染应用了这些主题之一的表单。
 
-有关安装软件包的更多信息，请参阅 [如何使用包](/help/sites-administering/package-manager.md).
+有关安装包的详细信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
 
 ## 贝里尔 {#beryl}
 
 We.Gov自适应表单使用Beryl主题，并强调使用背景图像、透明度以及大平面图标。 在下面的屏幕截图中，您可以看到贝里尔主题的外观，以及它如何增强表单的样式。
 
-![柏瑞尔主题](assets/beryl.png)
+![贝里尔主题](assets/beryl.png)
 
 <!--[Click to enlarge
 
@@ -70,7 +70,7 @@ Exec Light主题使用空格创建无缝体验。 “下一个”和“提交”
 
 自由主义主题使用极简主义的方法突出其重要性。 例如，已访问选项卡的字体颜色将变为绿色。 您只能看到文本框的底部轮廓，该文本框模拟带有线条的纸制表单的外观。 活动文本框具有黑底轮廓，而其他文本框则具有浅灰底轮廓。
 
-![Liberty主题](assets/liberty.png)
+![自由主题](assets/liberty.png)
 
 <!--[Click to enlarge
 

@@ -27,36 +27,36 @@ ht-degree: 2%
 
 自适应表单的本地化依赖于两种类型的区域设置词典：
 
-**表单特定词典** 包含自适应表单中使用的字符串。 例如，标签、字段名称、错误消息、帮助描述等。 它作为每个区域设置的一组XLIFF文件进行管理，您可以在以下位置访问它： `https://<host>:<port>/libs/cq/i18n/translator.html`.
+**表单特定词典**&#x200B;包含自适应表单中使用的字符串。 例如，标签、字段名称、错误消息、帮助描述等。 它作为每个区域设置的一组XLIFF文件进行管理，您可以在`https://<host>:<port>/libs/cq/i18n/translator.html`处访问它。
 
-**全局词典** AEM客户端库中有两个作为JSON对象管理的全局词典。 这些词典包含默认错误消息、月份名称、货币符号、日期和时间模式等。 您可以在CRXDe Lite的/libs/fd/xfaforms/clientlibs/I18N中找到这些词典。 这些位置包含每个区域设置的单独文件夹。 由于全局字典通常不经常更新，因此为每个区域设置保留单独的JavaScript文件使浏览器能够在同一服务器上访问不同的自适应表单时缓存这些文件并降低网络带宽使用量。
+**全局词典** AEM客户端库中有两个作为JSON对象管理的全局词典。 这些词典包含默认错误消息、月份名称、货币符号、日期和时间模式等。 您可以在CRXDe Lite的/libs/fd/xfaforms/clientlibs/I18N中找到这些词典。 这些位置包含每个区域设置的单独文件夹。 由于全局词典通常不经常更新，因此对于每种区域设置保留单独的JavaScript文件使浏览器能够在同一服务器上访问不同的自适应表单时缓存这些文件并降低网络带宽使用率。
 
 ### 自适应表单本地化的工作原理 {#how-localization-of-adaptive-form-works}
 
 可以使用两种方法识别自适应表单的区域设置。 呈现自适应表单时，它通过以下方式标识请求的区域设置：
 
-* 查看 `[local]` 自适应表单URL中的选择器。 URL 的格式为 `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用 `[local]` 选择器允许缓存自适应表单。
+* 正在查看自适应表单URL中的`[local]`选择器。 URL 的格式为 `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用`[local]`选择器允许缓存自适应表单。
 
 * 按指定顺序查看以下参数：
 
-   * 请求参数 `afAcceptLang`
-要覆盖用户的浏览器区域设置，您可以传递 `afAcceptLang` 请求参数强制区域设置。 例如，以下URL强制以日语区域设置呈现表单：
+   * 请求参数`afAcceptLang`
+要覆盖用户的浏览器区域设置，您可以传递`afAcceptLang`请求参数以强制实施区域设置。 例如，以下URL强制以日语区域设置呈现表单：
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
-   * 用户的浏览器区域设置设置，该设置在使用请求的请求中指定 `Accept-Language` 标题。
+   * 使用`Accept-Language`标头在请求中指定的用户的浏览器区域设置。
 
    * AEM中指定的用户的语言设置。
 
    * 默认情况下，浏览器区域设置处于启用状态。 要更改浏览器区域设置设置，
-      * 打开配置管理器。 URL为 `http://[server]:[port]/system/console/configMgr`
-      * 找到并打开 **[!UICONTROL 自适应表单和交互式通信Web渠道]** 配置。
-      * 更改状态 **[!UICONTROL 使用浏览器区域设置]** 期权及  **[!UICONTROL 保存]** 配置。
+      * 打开配置管理器。 URL是`http://[server]:[port]/system/console/configMgr`
+      * 找到并打开&#x200B;**[!UICONTROL 自适应表单和交互式通信Web渠道]**&#x200B;配置。
+      * 更改&#x200B;**[!UICONTROL 使用浏览器区域设置]**&#x200B;选项和&#x200B;**[!UICONTROL 保存]**&#x200B;配置的状态。
 
 标识区域设置后，自适应表单会选取特定于表单的词典。 如果未找到所请求区域设置的表单特定词典，则它会使用用于创作自适应表单的语言的词典。
 
 如果未提供区域设置信息，则自适应表单将采用表单的原始语言交付。 原始语言是开发自适应表单时使用的语言。
 
-如果所请求区域设置的客户端库不存在，它将检查客户端库是否存在区域设置中存在的语言代码。 例如，如果请求的区域设置为 `en_ZA` （南非英语）和客户图书馆 `en_ZA` 不存在，自适应表单将使用客户端库 `en` （英语）语言（如果存在）。 但是，如果这些规则都不存在，则自适应表单会将该词典用于 `en` 区域设置。
+如果所请求区域设置的客户端库不存在，它将检查客户端库是否存在区域设置中存在的语言代码。 例如，如果所请求的区域设置为`en_ZA` （南非英语）并且`en_ZA`的客户端库不存在，则自适应表单将使用`en` （英语）语言的客户端库（如果存在）。 但是，如果这些字典都不存在，则自适应表单会使用词典进行`en`区域设置。
 
 ## 为不受支持的区域设置添加本地化支持 {#add-localization-support-for-non-supported-locales}
 
@@ -75,18 +75,18 @@ AEM Forms当前支持英语(en)、西班牙语(es)、法语(fr)、意大利语(i
 ### 向指南本地化服务添加区域设置 {#add-a-locale-to-the-guide-localization-service-br}
 
 1. 转到 `https://'[server]:[port]'/system/console/configMgr`.
-1. 单击以编辑 **指南本地化服务** 组件。
+1. 单击以编辑&#x200B;**指南本地化服务**&#x200B;组件。
 1. 将要添加的区域设置添加到支持的区域设置列表中。
 
 ![GuideLocalizationService](assets/configservice.png)
 
 ### 为区域设置添加XFA客户端库 {#add-xfa-client-library-for-a-locale-br}
 
-创建节点类型 `cq:ClientLibraryFolder` 下 `etc/<folderHierarchy>`，使用类别 `xfaforms.I18N.<locale>`，并将以下文件添加到客户端库：
+在`etc/<folderHierarchy>`下创建类别为`xfaforms.I18N.<locale>`的`cq:ClientLibraryFolder`类型的节点，并将以下文件添加到客户端库：
 
-* **I18N.js** 定义 `xfalib.locale.Strings` 对于 `<locale>` 中的定义 `/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`.
+* **I18N.js**&#x200B;定义了`/etc/clientlibs/fd/xfaforms/I18N/ja/I18N`中定义的`<locale>`的`xfalib.locale.Strings`。
 
-* **js.txt** 包含以下内容：
+* **js.txt**&#x200B;包含以下内容：
 
 ```text
 /libs/fd/xfaforms/clientlibs/I18N/Namespace.js
@@ -96,13 +96,13 @@ I18N.js
 
 ### 为区域设置添加自适应表单客户端库 {#add-adaptive-form-client-library-for-a-locale-br}
 
-创建节点类型 `cq:ClientLibraryFolder` 下 `etc/<folderHierarchy>`，类别为 `guides.I18N.<locale>` 和依赖关系 `xfaforms.3rdparty`， `xfaforms.I18N.<locale>` 和 `guide.common`.&quot;
+在`etc/<folderHierarchy>`下创建类型为`cq:ClientLibraryFolder`的节点，类别为`guides.I18N.<locale>`，依赖项为`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`和`guide.common`。 ”
 
 将以下文件添加到客户端库：
 
-* **i18n.js** 定义 `guidelib.i18n`，具有“calendarSymbols”模式， `datePatterns`， `timePatterns`， `dateTimeSymbols`， `numberPatterns`， `numberSymbols`， `currencySymbols`， `typefaces` 对于 `<locale>` 按照XFA规范，请参见 [区域设置规范](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf). 您还可以在中看到如何为其他支持的区域设置定义它 `/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`.
-* **logmessages.js** 定义 `guidelib.i18n.strings` 和 `guidelib.i18n.LogMessages` 对于 `<locale>` 中的定义 `/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`.
-* **js.txt** 包含以下内容：
+* **i18n.js**&#x200B;定义`guidelib.i18n`，根据[区域设置集规范](https://helpx.adobe.com/content/dam/Adobe/specs/xfa_spec_3_3.pdf)中描述的XFA规范，其模式为`<locale>`的“calendarSymbols”、`datePatterns`、`timePatterns`、`dateTimeSymbols`、`numberPatterns`、`numberSymbols`、`currencySymbols`和`typefaces`。 您还可以看到如何为`/etc/clientlibs/fd/af/I18N/fr/javascript/i18n.js`中其他支持的区域设置定义它。
+* **LogMessages.js**&#x200B;定义了`/etc/clientlibs/fd/af/I18N/fr/javascript/LogMessages.js`中定义的`<locale>`的`guidelib.i18n.strings`和`guidelib.i18n.LogMessages`。
+* **js.txt**&#x200B;包含以下内容：
 
 ```text
 i18n.js
@@ -111,16 +111,16 @@ LogMessages.js
 
 ### 为字典添加区域设置支持 {#add-locale-support-for-the-dictionary-br}
 
-仅当满足以下条件，才执行此步骤： `<locale>` 您添加的内容不属于 `en`， `de`， `es`， `fr`， `it`， `pt-br`， `zh-cn`， `zh-tw`， `ja`， `ko-kr`.
+仅当要添加的`<locale>`不属于`en`、`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr`时才执行此步骤。
 
-1. 创建 `nt:unstructured` 节点 `languages` 下 `etc`，如果尚未存在。
+1. 在`etc`下创建一个`nt:unstructured`节点`languages`（如果尚未存在）。
 
-1. 添加多值字符串属性 `languages` 到节点（如果尚不存在）。
-1. 添加 `<locale>` 默认区域设置值 `de`， `es`， `fr`， `it`， `pt-br`， `zh-cn`， `zh-tw`， `ja`， `ko-kr`，如果尚未存在。
+1. 将多值字符串属性`languages`添加到节点（如果尚不存在）。
+1. 添加`<locale>`默认区域设置值`de`、`es`、`fr`、`it`、`pt-br`、`zh-cn`、`zh-tw`、`ja`、`ko-kr`（如果尚未存在）。
 
-1. 添加 `<locale>` 至的值 `languages` 属性 `/etc/languages`.
+1. 将`<locale>`添加到`/etc/languages`的`languages`属性的值。
 
-此 `<locale>` 将显示在 `https://'[server]:[port]'/libs/cq/i18n/translator.html`.
+`<locale>`将显示在`https://'[server]:[port]'/libs/cq/i18n/translator.html`。
 
 ### 重新启动服务器 {#restart-the-server}
 

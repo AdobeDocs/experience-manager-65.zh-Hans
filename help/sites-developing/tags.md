@@ -21,10 +21,10 @@ ht-degree: 20%
 标记允许对内容进行分类和组织。 标记可以按命名空间和分类法进行分类。
 
 * 有关创建和管理标记以及已将标记应用于哪些内容的信息，请参阅[管理标记](/help/sites-administering/tags.md)。
-* 请参阅 [使用标记](/help/sites-authoring/tags.md) 以了解有关标记内容的信息。
+* 有关标记内容的信息，请参阅[使用标记](/help/sites-authoring/tags.md)。
 
 以下信息可供开发人员使用：
 
-* [AEM标记框架](/help/sites-developing/framework.md)  — 用于标记的节点和属性的描述
+* [AEM标记框架](/help/sites-developing/framework.md) — 用于标记的节点和属性的说明
 
-* [在AEM应用程序中生成标记](/help/sites-developing/building.md)  — 从客户端和服务器端代码描述与标记框架结合使用的API
+* [将标记生成到AEM应用程序中](/help/sites-developing/building.md) — 客户端和服务器端代码中用于标记框架的API的说明

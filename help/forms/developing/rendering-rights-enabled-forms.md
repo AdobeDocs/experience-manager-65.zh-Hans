@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrobat中默认提供的功能有关，但在Adobe Reader中不可用，例如向表单添加注释或填写表单字段并保存表单的功能。 对其应用了使用权限的Forms称为启用权限的表单。 在Adobe Reader中打开启用了权限的表单的用户可以执行为该表单启用的操作。
 
-要对表单应用使用权限，AEM表单安装中必须包含Acrobat Reader DC扩展服务。 此外，您必须具有有效的凭据，以便能够对PDF文档应用使用权限。 也就是说，在渲染启用权限的表单之前，必须正确配置Acrobat Reader DC扩展服务。 (请参阅 [关于Acrobat Reader DC扩展服务](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+要对表单应用使用权限，AEM表单安装中必须包含Acrobat Reader DC扩展服务。 此外，您必须具有有效的凭据，以便能够对PDF文档应用使用权限。 也就是说，在渲染启用权限的表单之前，必须正确配置Acrobat Reader DC扩展服务。 (请参阅[关于Acrobat Reader DC扩展服务](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)。)
 
 >[!NOTE]
 >
@@ -29,11 +29,11 @@ Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrob
 
 >[!NOTE]
 >
->指定以下使用权限时，不能使用XML数据预填充表单： `enableComments`， `enableCommentsOnline`， `enableEmbeddedFiles`，或 `enableDigitalSignatures`. (请参阅 [使用可流布局预填充Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+>指定以下使用权限时，不能使用XML数据预填充表单： `enableComments`、`enableCommentsOnline`、`enableEmbeddedFiles`或`enableDigitalSignatures`。 (请参阅[使用可流动布局预填充Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)
 
 >[!NOTE]
 >
->有关Forms服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Forms服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 步骤摘要 {#summary-of-steps}
 
@@ -95,40 +95,40 @@ Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrob
 
 1. 创建Forms客户端API对象
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `FormsServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用构造函数创建`FormsServiceClient`对象并传递`ServiceClientFactory`对象。
 
 1. 设置使用权限运行时选项
 
-   * 创建 `ReaderExtensionSpec` 对象。
-   * 通过调用 `ReaderExtensionSpec` 对象的 `setReCredentialAlias` 方法，并指定表示别名值的字符串值。
-   * 通过调用属于 `ReaderExtensionSpec` 对象。 但是，只有引用凭据允许您设置使用权限，您才能设置使用权限。 也就是说，如果凭据不允许设置使用权限，则无法设置该权限。 例如。 要设置使用户能够填写表单字段并保存表单的使用权限，请调用 `ReaderExtensionSpec` 对象的 `setReFillIn` 方法和路径 `true`.
+   * 使用构造函数创建`ReaderExtensionSpec`对象。
+   * 通过调用`ReaderExtensionSpec`对象的`setReCredentialAlias`方法指定凭据的别名，并指定表示该别名值的字符串值。
+   * 通过调用属于`ReaderExtensionSpec`对象的相应方法来设置每个使用权限。 但是，只有引用凭据允许您设置使用权限，您才能设置使用权限。 也就是说，如果凭据不允许设置使用权限，则无法设置该权限。 例如。 要设置允许用户填写表单字段并保存表单的使用权限，请调用`ReaderExtensionSpec`对象的`setReFillIn`方法并传递`true`。
 
    >[!NOTE]
    >
-   >无需调用 `ReaderExtensionSpec` 对象的 `setReCredentialPassword` 方法。 Forms服务不使用此方法。
+   >无需调用`ReaderExtensionSpec`对象的`setReCredentialPassword`方法。 Forms服务不使用此方法。
 
 1. 呈现启用权限的表单
 
-   调用 `FormsServiceClient` 对象的 `renderPDFFormWithUsageRights` 方法并传递以下值：
+   调用`FormsServiceClient`对象的`renderPDFFormWithUsageRights`方法并传递以下值：
 
-   * 一个字符串值，它指定窗体设计名称，包括文件扩展名。 如果您引用的表单设计是Forms应用程序的一部分，请确保您指定完整的路径，例如 `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `com.adobe.idp.Document` 包含要与表单合并的数据的对象。 如果不想合并数据，请传递一个空值 `com.adobe.idp.Document` 对象。
-   * A `PDFFormRenderSpec` 存储运行时选项的对象。
-   * A `ReaderExtensionSpec` 存储使用权限运行时选项的对象。
-   * A `URLSpec` 包含Forms服务所需的URI值的对象。
+   * 一个字符串值，它指定窗体设计名称，包括文件扩展名。 如果您引用的表单设计是Forms应用程序的一部分，请确保指定完整路径，如`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
+   * 包含要与表单合并的数据的`com.adobe.idp.Document`对象。 如果不想合并数据，请传递一个空的`com.adobe.idp.Document`对象。
+   * 存储运行时选项的`PDFFormRenderSpec`对象。
+   * 存储使用权限运行时选项的`ReaderExtensionSpec`对象。
+   * 包含Forms服务所需URI值的`URLSpec`对象。
 
-   此 `renderPDFFormWithUsageRights` 方法返回 `FormsResult` 包含必须写入客户端Web浏览器的表单数据流的对象。
+   `renderPDFFormWithUsageRights`方法返回的`FormsResult`对象包含必须写入客户端Web浏览器的表单数据流。
 
 1. 将表单数据流写入客户端Web浏览器
 
-   * 创建 `com.adobe.idp.Document` 对象，方法是调用 `FormsResult` 对象 `getOutputContent` 方法。
-   * 获取的内容类型 `com.adobe.idp.Document` 对象(通过调用其 `getContentType` 方法。
-   * 设置 `javax.servlet.http.HttpServletResponse` 通过调用对象的内容类型 `setContentType` 方法和传递的内容类型 `com.adobe.idp.Document` 对象。
-   * 创建 `javax.servlet.ServletOutputStream` 用于通过调用 `javax.servlet.http.HttpServletResponse` 对象的 `getOutputStream` 方法。
-   * 创建 `java.io.InputStream` 对象，方法是调用 `com.adobe.idp.Document` 对象的 `getInputStream` 方法。
-   * 创建一个字节数组，通过调用 `InputStream` 对象的 `read` 方法并将字节数组作为参数传递。
-   * 调用 `javax.servlet.ServletOutputStream` 对象的 `write` 将表单数据流发送到客户端Web浏览器的方法。 将字节数组传递给 `write` 方法。
+   * 通过调用`FormsResult`对象的`getOutputContent`方法创建`com.adobe.idp.Document`对象。
+   * 通过调用其`getContentType`方法获取`com.adobe.idp.Document`对象的内容类型。
+   * 通过调用其`setContentType`方法并传递`com.adobe.idp.Document`对象的内容类型来设置`javax.servlet.http.HttpServletResponse`对象的内容类型。
+   * 通过调用`javax.servlet.http.HttpServletResponse`对象的`getOutputStream`方法，创建用于将表单数据流写入客户端Web浏览器的`javax.servlet.ServletOutputStream`对象。
+   * 通过调用`com.adobe.idp.Document`对象的`getInputStream`方法创建`java.io.InputStream`对象。
+   * 通过调用`InputStream`对象的`read`方法并将该字节数组作为参数传递，创建字节数组以表单数据流填充该字节数组。
+   * 调用`javax.servlet.ServletOutputStream`对象的`write`方法将表单数据流发送到客户端Web浏览器。 将字节数组传递给`write`方法。
 
 **另请参阅**
 
@@ -149,34 +149,34 @@ Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrob
 
 1. 创建Forms客户端API对象
 
-   创建 `FormsService` 对象并设置身份验证值。
+   创建`FormsService`对象并设置身份验证值。
 
 1. 设置使用权限运行时选项
 
-   * 创建 `ReaderExtensionSpec` 对象。
-   * 通过调用 `ReaderExtensionSpec` 对象的 `setReCredentialAlias` 方法，并指定表示别名值的字符串值。
-   * 通过调用属于 `ReaderExtensionSpec` 对象。 但是，只有引用凭据允许您设置使用权限，您才能设置使用权限。 也就是说，如果凭据不允许设置使用权限，则无法设置该权限。 要设置使用户能够填写表单字段并保存表单的使用权限，请调用 `ReaderExtensionSpec` 对象的 `setReFillIn` 方法和路径 `true`.
+   * 使用构造函数创建`ReaderExtensionSpec`对象。
+   * 通过调用`ReaderExtensionSpec`对象的`setReCredentialAlias`方法指定凭据的别名，并指定表示该别名值的字符串值。
+   * 通过调用属于`ReaderExtensionSpec`对象的相应方法来设置每个使用权限。 但是，只有引用凭据允许您设置使用权限，您才能设置使用权限。 也就是说，如果凭据不允许设置使用权限，则无法设置该权限。 要设置允许用户填写表单字段并保存表单的使用权限，请调用`ReaderExtensionSpec`对象的`setReFillIn`方法并传递`true`。
 
 1. 呈现启用权限的表单
 
-   调用 `FormsService` 对象的 `renderPDFFormWithUsageRights` 方法并传递以下值：
+   调用`FormsService`对象的`renderPDFFormWithUsageRights`方法并传递以下值：
 
-   * 一个字符串值，它指定窗体设计名称，包括文件扩展名。 如果您引用的表单设计是Forms应用程序的一部分，请确保您指定完整的路径，例如 `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * A `BLOB` 包含要与表单合并的数据的对象。 如果不想将数据与表单合并，则必须传递 `BLOB` 基于空XML数据源的对象。 您无法传递 `BLOB` 空的对象；否则，将引发异常。
-   * A `PDFFormRenderSpec` 存储运行时选项的对象。
-   * A `ReaderExtensionSpec` 存储使用权限运行时选项的对象。
-   * A `URLSpec` 包含Forms服务所需的URI值的对象。
+   * 一个字符串值，它指定窗体设计名称，包括文件扩展名。 如果您引用的表单设计是Forms应用程序的一部分，请确保指定完整路径，如`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
+   * 包含要与表单合并的数据的`BLOB`对象。 如果不想将数据与表单合并，则必须传递基于空XML数据源的`BLOB`对象。 无法传递空的`BLOB`对象；否则，将引发异常。
+   * 存储运行时选项的`PDFFormRenderSpec`对象。
+   * 存储使用权限运行时选项的`ReaderExtensionSpec`对象。
+   * 包含Forms服务所需URI值的`URLSpec`对象。
 
-   此 `renderPDFFormWithUsageRights` 方法返回 `FormsResult` 包含必须写入客户端Web浏览器的表单数据流的对象。
+   `renderPDFFormWithUsageRights`方法返回的`FormsResult`对象包含必须写入客户端Web浏览器的表单数据流。
 
 1. 将表单数据流写入客户端Web浏览器
 
-   * 创建 `BLOB` 通过调用 `FormsResult` 对象的 `getOutputContent` 方法。
-   * 获取的内容类型 `BLOB` 对象(通过调用其 `getContentType` 方法。
-   * 设置 `javax.servlet.http.HttpServletResponse` 通过调用对象的内容类型 `setContentType` 方法和传递的内容类型 `BLOB` 对象。
-   * 创建 `javax.servlet.ServletOutputStream` 用于通过调用 `javax.servlet.http.HttpServletResponse` 对象的 `getOutputStream` 方法。
-   * 创建字节数组，并通过调用 `BLOB` 对象的 `getBinaryData` 方法。 此任务分配 `FormsResult` 对象。
-   * 调用 `javax.servlet.http.HttpServletResponse` 对象的 `write` 将表单数据流发送到客户端Web浏览器的方法。 将字节数组传递给 `write` 方法。
+   * 通过调用`FormsResult`对象的`getOutputContent`方法，创建包含表单数据的`BLOB`对象。
+   * 通过调用其`getContentType`方法获取`BLOB`对象的内容类型。
+   * 通过调用其`setContentType`方法并传递`BLOB`对象的内容类型来设置`javax.servlet.http.HttpServletResponse`对象的内容类型。
+   * 通过调用`javax.servlet.http.HttpServletResponse`对象的`getOutputStream`方法，创建用于将表单数据流写入客户端Web浏览器的`javax.servlet.ServletOutputStream`对象。
+   * 创建字节数组，并通过调用`BLOB`对象的`getBinaryData`方法填充该数组。 此任务将`FormsResult`对象的内容分配给字节数组。
+   * 调用`javax.servlet.http.HttpServletResponse`对象的`write`方法将表单数据流发送到客户端Web浏览器。 将字节数组传递给`write`方法。
 
 **另请参阅**
 

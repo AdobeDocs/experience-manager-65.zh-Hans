@@ -57,12 +57,12 @@ ht-degree: 1%
  </tbody>
 </table>
 
-TarMK旨在提高性能，而MongoMK和RDBMK旨在实现可扩展性。 Adobe强烈建议将TarMK作为所有AEM Forms部署方案(对于Author和Publish实例)的默认持久性技术，但一节中概述的使用案例除外 [在TarMK上选择Mongo或关系数据库微内核](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p).
+TarMK旨在提高性能，而MongoMK和RDBMK旨在实现可扩展性。 对于Author和Publish实例，Adobe强烈建议将TarMK作为所有AEM Forms部署方案的默认持久性技术，但[选择Mongo或关系数据库微内核而非TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p)部分中概述的用例除外。
 
-有关支持的微内核列表，请参见 [AEM Forms on OSGi技术要求](/help/sites-deploying/technical-requirements.md) 或 [JEE上的AEM Forms支持的平台组合](/help/forms/using/aem-forms-jee-supported-platforms.md) 文章。
+有关支持的微内核列表，请参阅[OSGi上的AEM Forms技术要求](/help/sites-deploying/technical-requirements.md)或[JEE上的AEM Forms支持的平台组合](/help/forms/using/aem-forms-jee-supported-platforms.md)篇文章。
 
 ## 在TarMK上选择Mongo或关系数据库微内核 {#choosing-mongo-or-a-relational-database-microkernel-over-tarmk}
 
 可扩展（集群）AEM Forms环境是由两个或多个水平配置的活动创作实例组成的集合。 如果支持所有并发创作活动的单个服务器不再可持续，您可以选择运行多个创作实例。
 
-JEE上的可缩放（集群）AEM Forms仅支持MongoMK和RDBMK持久性类型。 服务器的数量或可扩展环境的大小因每次安装而异。 有关注意事项和示例的列表，请参见 [建议的部署](/help/sites-deploying/recommended-deploys.md) 和/或 [AEM Forms的架构和部署拓扑](/help/forms/using/aem-forms-architecture-deployment.md) 文章。 您还可以联系AEM Forms支持，以获取有关使用RDBMK和TarMK的AEM Forms容量规划的详细信息。
+JEE上的可缩放（集群）AEM Forms仅支持MongoMK和RDBMK持久性类型。 服务器的数量或可扩展环境的大小因每次安装而异。 有关注意事项和示例的列表，请参阅[推荐的部署](/help/sites-deploying/recommended-deploys.md)和/或[AEM Forms的架构和部署拓扑](/help/forms/using/aem-forms-architecture-deployment.md)文章。 您还可以联系AEM Forms支持，以获取有关使用RDBMK和TarMK的AEM Forms容量规划的详细信息。

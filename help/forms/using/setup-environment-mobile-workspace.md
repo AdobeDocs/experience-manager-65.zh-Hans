@@ -38,9 +38,9 @@ ht-degree: 0%
 
 ## 对于Android™设备 {#for-android-devices}
 
-* Android™ Development Toolkit （ADT包）可从以下位置下载： [https://developer.android.com/studio](https://developer.android.com/studio)
+* 可从[https://developer.android.com/studio](https://developer.android.com/studio)下载的Android™ Development Toolkit （ADT包）
 * 如果在Mac系统上设置了环境，则ADT应安装在Applications文件夹中。
-* 如果ADT安装在Mac上的任何其他位置，或者环境设置在Windows系统上，则必须在中更新ADT SDK路径 `local.properties` 文件。 此文件可在 `src\android` 解压缩后的源存档中的文件夹 `mobileworkspace-src.zip`. 在此文件中，指向 `sdk.dir` 变量到桌面上的ADT SDK位置。
+* 如果ADT安装在Mac上的任何其他位置，或者如果在Windows系统上设置了环境，则必须在`local.properties`文件中更新ADT SDK路径。 此文件在提取的源存档`mobileworkspace-src.zip`的`src\android`文件夹中可用。 在此文件中，将`sdk.dir`变量指向桌面上的ADT SDK位置。
 
 >[!NOTE]
 >

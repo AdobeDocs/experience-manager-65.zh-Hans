@@ -23,9 +23,9 @@ ht-degree: 4%
 
 AEM Forms允许表单开发人员将自适应表单和交互式通信无缝嵌入到AEM Sites单页应用程序(SPA)中。 嵌入式自适应表单和交互式通信功能完善，用户无需离开页面即可填写并提交表单。 它有助于用户停留在网页上其他元素的上下文中，同时与自适应表单或交互式通信交互。
 
-在AEM Sites单页应用程序中，您可以使用添加自适应表单或交互式通信 [AEM Forms SPA容器组件](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[.](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component) 它是AEM Sites SPA的AEM Forms组件，您可以将其添加到站点页面。
+在AEM Sites单页应用程序中，您可以使用[AEM Forms SPA Container组件](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)[添加自适应表单或交互式通信。](../../forms/using/embed-adaptive-form-aem-sites-spa.md#af-component)它是AEM Sites SPA的AEM Forms组件，您可以添加到站点页面。
 
-有关在非SPA AEM Sites中嵌入自适应表单的信息，请参阅 [在AEM Sites页面中嵌入自适应表单或交互式通信](/help/forms/using/embed-adaptive-form-aem-sites.md).
+有关在非SPA AEM Sites中嵌入自适应表单的信息，请参阅[在AEM Sites页面中嵌入自适应表单或交互式通信](/help/forms/using/embed-adaptive-form-aem-sites.md)。
 
 ## 先决条件 {#prerequisites}
 
@@ -34,19 +34,19 @@ AEM Forms允许表单开发人员将自适应表单和交互式通信无缝嵌�
 * Java SE Development Kit 8或更高版本
 * Apache Maven 3.3.1或更高版本
 * AEM创作实例
-* [AEM Forms 6.4.2附加组件包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) 在创作实例上
+* 创作实例上的[AEM Forms 6.4.2附加组件包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 
 ## 安装AEM Forms SPA容器组件 {#install-aem-forms-spa-container-component}
 
 执行以下步骤安装AEM Forms SPA Container组件：
 
-1. [克隆或下载适用于SPA的AEM Forms组件](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa).
-1. 安装适用于SPA的AEM Forms组件。 有关安装组件的说明，请参见 [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa#aem-form-component) 文件。
+1. [克隆或下载SPA的AEM Forms组件](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa)。
+1. 安装适用于SPA的AEM Forms组件。 [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa#aem-form-component)文件中提供了安装该组件的说明。
 
-   该组件包括 [示例React组件](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component) ，可用于将SPA容器组件与基于React的SPA项目集成。
+   该组件包含一个[示例React组件](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component)，可用于将SPA容器组件与基于React的SPA项目集成。
 
-1. [克隆或下载基于React的SPA项目](https://github.com/adobe/aem-sample-we-retail-journal).
-1. SPA SPA使用 [README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor) 文件。
+1. [克隆或下载基于React的SPA项目](https://github.com/adobe/aem-sample-we-retail-journal)。
+1. 使用[README.md](https://github.com/Adobe-Marketing-Cloud/aem-forms/tree/master/forms-spa/react-component#aem-form-react-component-for-spa---editor)文件中提供的说明将SPA容器组件与基于React的SPA项目集成。
 
    安装AEM Forms SPA Container组件并将该组件与基于React的SPA项目集成后，您可以在AEM Sites页面中嵌入自适应表单和交互式通信。
 
@@ -55,30 +55,30 @@ AEM Forms允许表单开发人员将自适应表单和交互式通信无缝嵌�
 要使用AEM Forms for SPA容器组件嵌入自适应表单或交互式通信，请执行以下操作：
 
 1. 在编辑模式下打开AEM sites页面，您要在该页面中嵌入自适应表单或交互式通信。
-1. 插入 **SPA的AEM表单** 组件时，使用以下任一选项：
+1. 使用以下任一选项在页面上插入&#x200B;**AEM Form for SPA**&#x200B;组件：
 
-   * 在站点页面上选择布局容器，然后选择 **+** 并选择 **SPA的AEM表单** 组件。
+   * 在“站点”页面上选择布局容器，选择&#x200B;**+**，然后选择&#x200B;**AEM Form for SPA**&#x200B;组件。
 
-   * 在组件浏览器面板中，拖放 **SPA的AEM表单** 组件。
+   * 从组件浏览器面板中，将&#x200B;**AEM表单(适用于SPA**&#x200B;组件)拖放到页面上。
    * 在Assets浏览器中搜索自适应表单或交互式通信，并将其拖放到站点页面上。 它将表单嵌入到AEM Forms for SPA组件容器中。
 
    >[!NOTE]
    >
    >不支持在页面上呈现多个AEM Forms SPA Container组件。 您可以在一个页面上有多个AEM Forms SPA Container，但一次只能呈现一个组件。 确保页面上只显示一个组件，以避免出现差异。
 
-1. 在站点页面中选择嵌入的AEM Forms SPA容器组件，然后选择 ![settings_icon](assets/settings_icon.png) 在操作栏上。 此 **编辑AEM Forms SPA容器** 对话框打开。
-1. 在 **编辑AEM Forms容器** 对话框，请指定以下内容：
+1. 在站点页面中选择嵌入的AEM Forms SPA Container组件，然后在操作栏上选择![settings_icon](assets/settings_icon.png)。 将打开&#x200B;**编辑AEM Forms SPA容器**&#x200B;对话框。
+1. 在&#x200B;**编辑AEM Forms容器**&#x200B;对话框中，指定以下内容：
 
-   * **资源类型：** 选择要嵌入的资源类型。 选项包括 **自适应表单** 和 **交互式通信**
+   * **资源类型：**&#x200B;选择要嵌入的资源类型。 选项为&#x200B;**自适应表单**&#x200B;和&#x200B;**交互式通信**
 
    * **资产路径**：浏览并选择要嵌入的自适应表单或交互式通信。 如果使用Assets浏览器插入自适应表单或交互式通信，则会自动填充字段。
-   * **渠道** （仅限交互式通信）：选择要嵌入的交互式渠道类型。 选项包括 **Web渠道** 和 **打印渠道**.
+   * **渠道** （仅限交互式通信）：选择要嵌入的交互式渠道类型。 选项为&#x200B;**Web Channel**&#x200B;和&#x200B;**Print Channel**。
 
-   * **主题**：选择用于定义自适应表单或交互式通信组件样式的主题。 样式设置包括外观属性，如字体样式、背景颜色、尺寸和对齐方式。
+   * **主题**：选择定义自适应表单或交互式通信组件样式的主题。 样式设置包括外观属性，如字体样式、背景颜色、尺寸和对齐方式。
 
-1. 选择 ![完成图标](assets/done_icon.png) 以保存设置。 自适应表单或交互式通信现在嵌入到页面中。
+1. 选择![done_icon](assets/done_icon.png)以保存设置。 自适应表单或交互式通信现在嵌入到页面中。
 
-## 发布嵌入式自适应表单和交互式通信 {#publish-embedded-adaptive-form-and-interactive-communication}
+## Publish嵌入式自适应表单和交互式通信 {#publish-embedded-adaptive-form-and-interactive-communication}
 
 考虑以下在AEM Sites页面上发布嵌入资产（自适应表单或交互式通信）的情景：
 
@@ -93,7 +93,7 @@ AEM sites页在AEM Forms容器中维护对自适应表单和交互式通信的�
 要修改嵌入式自适应表单和交互式通信的任何配置或属性，请执行以下操作之一。
 
 * 在相应编辑器中打开自适应表单或交互式通信中的原始表单，然后对其进行修改。
-* 在编辑模式下，从站点页面中选择自适应表单或交互式通信，然后选择 **在新窗口中编辑**. 原始表单将在编辑模式下打开。
+* 在编辑模式下从站点页面中选择自适应表单或交互式通信，然后选择&#x200B;**在新窗口中编辑**。 原始表单将在编辑模式下打开。
 
 ## 注意事项和最佳实践 {#considerations-and-best-practices}
 

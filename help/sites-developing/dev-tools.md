@@ -20,13 +20,13 @@ ht-degree: 1%
 
 要开发JCR、Apache Sling或Adobe Experience Manager (AEM)应用程序，可以使用以下工具集：
 
-* 一组包含 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 和WebDAV。 CRXDE Lite会嵌入到CRX/AEM中，使您能够在该浏览器中执行标准开发任务。 使用CRXDE Lite，您可以在记录和与SVN集成时创建和编辑文件(如.jsp和.java)、文件夹、模板、组件、对话框、节点、属性和捆绑包。
+* 一个由[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)和WebDAV组成的集。 CRXDE Lite会嵌入到CRX/AEM中，使您能够在该浏览器中执行标准开发任务。 使用CRXDE Lite，您可以在记录和与SVN集成时创建和编辑文件(如.jsp和.java)、文件夹、模板、组件、对话框、节点、属性和捆绑包。
 
-  当您无法直接访问CRX/AEM服务器，当您通过扩展或修改现成的组件和Java™捆绑包来开发应用程序，或者当您不需要专用的CRXDE Lite、代码完成和语法突出显示时，建议使用调试器。
+  当您无法直接访问CRX/AEM服务器，或者当您通过扩展或修改现成的组件和Java™捆绑包来开发应用程序，或者当您不需要专用的CRXDE Lite器、代码完成和语法突出显示时，建议使用Debugger。
 
 * 一组包含以下内容：
-   * 集成开发环境。 例如， [Eclipse](/help/sites-developing/howto-projects-eclipse.md) 或 [IntelliJ](/help/sites-developing/ht-intellij.md).
-   * 构建工具。 例如， [Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   * 集成开发环境。 例如，[Eclipse](/help/sites-developing/howto-projects-eclipse.md)或[IntelliJ](/help/sites-developing/ht-intellij.md)。
+   * 构建工具。 例如，[Apache Maven](/help/sites-developing/ht-projects-maven.md)。
    * FileVault由Adobe开发，用于将存储库映射到文件系统，即版本控制系统。 例如，Subversion。
    * 错误跟踪器系统。 例如，Jira。
    * 一种中央依赖性管理系统。 例如，Apache Archiva。

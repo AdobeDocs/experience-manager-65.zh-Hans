@@ -55,7 +55,7 @@ Date Picture子句支持的表达式：
   </tr>
   <tr>
    <td>DD</td>
-   <td>每月以零填充两位数(01-31)的日期。<br /> </td>
+   <td>每月两位(01-31)的补零日期。<br /> </td>
   </tr>
   <tr>
    <td>周一</td>
@@ -67,19 +67,19 @@ Date Picture子句支持的表达式：
   </tr>
   <tr>
    <td>MMM</td>
-   <td>当前区域设置的缩写月份名称<br /> </td>
+   <td>当前区域设置<br />的缩写月份名称 </td>
   </tr>
   <tr>
    <td>MMMM</td>
-   <td>当前区域设置的完整月份名称<br /> </td>
+   <td>当前区域设置<br />的完整月份名称 </td>
   </tr>
   <tr>
    <td>EEE</td>
-   <td>当前区域设置的简化工作日名称<br /> </td>
+   <td>当前区域设置<br />的缩写工作日名称 </td>
   </tr>
   <tr>
    <td>EEEE</td>
-   <td>当前区域设置的完整工作日名称<br /> </td>
+   <td>当前区域设置<br />的完整工作日名称 </td>
   </tr>
   <tr>
    <td>YY</td>
@@ -94,23 +94,23 @@ Date Picture子句支持的表达式：
 
 >[!NOTE]
 >
-> 根据设计，HTML5 Forms中的日期字段不支持 `MM-YYYY` 编辑格式中的模式。 但是，显示格式支持该模式。
+> 根据设计，HTML5 Forms中的日期字段不支持编辑格式中的`MM-YYYY`模式。 但是，显示格式支持该模式。
 
 ## Numeric图片子句 {#numeric-picture-clause}
 
 HTML5表单支持数字图片符号。 但是，PDF forms和HTMLForms之间的支持存在差异。
 
-在 **PDF forms**，数字的格式与Picture子句中的符号数无关，
+在&#x200B;**PDF forms**&#x200B;中，数字的格式与Picture子句中的符号数无关
 
-在 **HTMLForms**，仅当数字的位数小于Picture子句中的符号数时，才会格式化该数字。
+在&#x200B;**HTMLForms**&#x200B;中，仅当数字的位数小于Picture子句中的符号数时，才会格式化该数字。
 
-**示例**：以Picture子句为例： num{zzz，zzz，zz9}。
+**示例**：考虑使用Picture子句： num{zzz，zzz，zz9}。
 
-编号 **10000** 格式为 **10,000** 在HTML和PDF forms中。
+在HTML和PDF forms中，数字&#x200B;**10000**&#x200B;的格式均为&#x200B;**10,000**。
 
 数字1000000PDF forms格式为1,000,000。 但是，在HTMLForms中，该数字保持为1000000格式。
 
-中支持的Numeric Picture子句表达式 **HTMLForms** 为：
+**HTMLForms**&#x200B;中Numeric Picture子句支持的表达式包括：
 
 * num.integer{}
 * num.decimal{}
@@ -127,17 +127,17 @@ HTML5表单支持数字图片符号。 但是，PDF forms和HTMLForms之间的�
   </tr>
   <tr>
    <td>9</td>
-   <td><strong>输出格式</strong>：一位数字。 或者，如果输入数据为空或在相应位置有空格，则为零位数。<br /> </td>
+   <td><strong>输出格式</strong>：一位数。 或者，如果输入数据为空或相应位置有空格，则为零位数。<br /> </td>
    <td>单数字</td>
   </tr>
   <tr>
    <td>Z</td>
-   <td><strong>输出格式</strong>：一位数字。 或者，对于空间（如果输入数据为空）、空间或相应位置的零位数。<br /> </td>
+   <td><strong>输出格式</strong>：一位数。 或者，如果输入数据为空、空格或对应位置中的零位数，则为空格。<br /> </td>
    <td>一位数或空格</td>
   </tr>
   <tr>
    <td>z</td>
-   <td><strong>输出格式</strong>：一位数字。 或者，如果输入数据为空、有空格或相应位置中的零位数，则无意义。<br /> </td>
+   <td><strong>输出格式</strong>：一位数。 或者，如果输入数据为空、有空格或对应位置中的零位数，则无意义。<br /> </td>
    <td>一位数或无</td>
   </tr>
   <tr>
@@ -146,13 +146,13 @@ HTML5表单支持数字图片符号。 但是，PDF forms和HTMLForms之间的�
    <td>与输出格式设置相同</td>
   </tr>
   <tr>
-   <td>cr或cr<br /> </td>
+   <td>CR或cr<br /> </td>
    <td>如果数字为负，则为贷方符号(CR)。 否则什么也没有。</td>
    <td><br type="_moz" /> </td>
   </tr>
   <tr>
    <td>S或s<br /> </td>
-   <td>输出格式：数字为负数时为负号。 其他空格。<br /> </td>
+   <td>输出格式：数字为负数时为负号。 其他空间。<br /> </td>
    <td>如果数字为负数，则使用负号。 如果数字为正，则使用加号</td>
   </tr>
   <tr>

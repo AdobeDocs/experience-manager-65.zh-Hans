@@ -21,7 +21,7 @@ ht-degree: 6%
 >
 >Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
 
-Adobe Experience Manager (AEM)内容可以通过以下方式轻松渲染 [Sling默认Servlet](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 要渲染 [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) 和其他格式。
+通过[Sling默认Servlet](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)可轻松呈现Adobe Experience Manager (AEM)内容，以呈现[JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering)和其他格式。
 
 这些开箱即用的渲染通常在存储库中导航，并按原样返回内容。
 
@@ -35,21 +35,21 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
 
 ## 请求JSON {#requesting-json}
 
-使用 **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot;no&quot; />.[&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.][&lt;export-config span=&quot;&quot; id=&quot;0&quot; translate=&quot;no&quot; />.json** 以请求JSON。]
+使用&#x200B;**&lt;资源.caas[。&lt;EXPORT-CONFIG][。&lt;EXPORT-CONFIG].json**&#x200B;以请求JSON。
 
 <table>
  <tbody>
   <tr>
    <td>资源</td>
-   <td>/content/entities下的实体资源<br /> 或 <br /> /content下的内容资源</td>
+   <td>/content/entities<br />或<br />下的实体资源是/content下的内容资源</td>
   </tr>
   <tr>
    <td>EXPORT-CONFIG</td>
-   <td><p><strong>可选</strong><br /> </p> <p>/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG下的导出配置<br /> <br /> 如果忽略，则应用默认导出配置 </p> </td>
+   <td><p><strong>可选</strong><br /> </p> <p>在/apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br />下找到的导出配置如果省略，则应用默认的导出配置 </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>可选</strong><br /> <br /> 用于呈现子项的深度递归，如Sling呈现中所用</td>
+   <td>在Sling渲染中使用的用于渲染子项的<strong>可选</strong><br /> <br />深度递归</td>
   </tr>
  </tbody>
 </table>
@@ -58,7 +58,7 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
 
 可创建导出配置以自定义JSON渲染。
 
-您可以在下创建配置节点 */apps/mobileapps/caas/exportConfigs.*
+您可以在&#x200B;*/apps/mobileapps/caas/exportConfigs.*&#x200B;下创建一个配置节点。
 
 | 节点名称 | 配置的名称（用于呈现选择器） |
 |---|---|
@@ -108,7 +108,7 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
    <td>String[]</td>
    <td>包括所有内容</td>
    <td>属性名称</td>
-   <td><p>如果设置了excludePropertyPrefixes<br /> 这包括指定的属性，尽管与要排除的前缀匹配，</p> <p>else（忽略排除属性）仅包括这些属性</p> </td>
+   <td><p>如果excludePropertyPrefixes设置<br />，这将包含指定的属性，尽管这与要排除的前缀匹配，</p> <p>else（忽略排除属性）仅包括这些属性</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
@@ -128,7 +128,7 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
    <td>renameProperties</td>
    <td>String[]<br /> <br /> </td>
    <td>不重命名任何内容</td>
-   <td>&lt;actual_property_name&gt;，&lt;replacement_property_name&gt;</td>
+   <td>&lt;实际属性名称&gt;，&lt;替换属性名称&gt;</td>
    <td>使用替换重命名属性</td>
   </tr>
  </tbody>
@@ -136,7 +136,7 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
 
 ### 资源类型导出覆盖 {#resource-type-export-overrides}
 
-在下创建配置节点 */apps/mobileapps/caas/exportConfigs.*
+在&#x200B;*/apps/mobileapps/caas/exportConfigs下创建配置节点。*
 
 | name | resourceTypeOverrides |
 |---|---|
@@ -154,11 +154,11 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
    <td><strong>描述</strong></td>
   </tr>
   <tr>
-   <td>&lt;SELECTOR_TO_INC&gt;</td>
+   <td>&lt;选择器TO_INC&gt;</td>
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>对于以下sling资源类型，请勿返回默认的CaaS json导出。<br /> 通过将资源呈现为，返回客户json导出；<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>对于以下sling资源类型，请勿返回默认的CaaS json导出。<br />通过将资源呈现为；<br /> &lt;RESOURCE&gt;返回客户json导出。&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -174,7 +174,7 @@ Content Services包括两种导出配置：
 
 如果在请求的URI中指定了配置，则会应用Content Services默认导出配置。
 
-&lt;resource>.caas[.&lt;depth-int>].json
+&lt;资源>.caas[。&lt;DEPTH-INT>].json
 
 <table>
  <tbody>
@@ -221,7 +221,7 @@ Content Services包括两种导出配置：
 
 此配置扩展了缺省设置，以包含子节点下的分组子节点。
 
-&lt;site_page>.caas.page[.&lt;depth-int>].json
+&lt;SITE_PAGE>.caas.page[。&lt;DEPTH-INT>].json
 
 ### 其他资源 {#additional-resources}
 

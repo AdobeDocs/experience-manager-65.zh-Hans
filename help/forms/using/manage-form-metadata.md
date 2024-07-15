@@ -29,7 +29,7 @@ ht-degree: 2%
 
 默认情况下，AEM Forms会为每个资源类型提供一组定义的元数据。 除了默认元数据之外，您还可以将自定义元数据添加到每个资源类型。 AEM Forms还为您提供了合适的方法，来为您的表单高效地创建、管理和交换所有这些元数据。
 
-如果您是开发人员或站点所有者，则可以自定义AEM Forms的最终用户界面Forms Portal，以反映您在组织中使用的元数据。 有关Forms Portal的更多信息，请参阅 [在门户上发布表单的简介](../../forms/using/introduction-publishing-forms.md).
+如果您是开发人员或站点所有者，则可以自定义AEM Forms的最终用户界面Forms Portal，以反映您在组织中使用的元数据。 有关Forms门户的更多信息，请参阅[在门户上发布表单简介](../../forms/using/introduction-publishing-forms.md)。
 
 ## AEM Forms中的元数据 {#metadata-in-aem-forms}
 
@@ -157,9 +157,9 @@ AEM Forms支持以下资源类型：
    <td><p>自适应表单</p> <p>表单模板</p> <p>资源</p> </td> 
    <td><p>与此表单相关的资产（其他表单或资源）列表。 这些资产可以分为以下两类：</p> 
     <ul> 
-     <li>引用：当前表单引用的资源。</li> 
-     <li>引用者：引用当前资产的资产。</li> 
-    </ul> <p>这些资源显示为链接，通过单击这些资源可以直接访问其元数据。<br /> </p> </td> 
+     <li>引用：当前表单引用的Assets。</li> 
+     <li>引用者：引用当前资源的Assets。</li> 
+    </ul> <p>这些资源显示为链接，通过单击这些链接可以直接访问其元数据。<br /> </p> </td> 
   </tr> 
   <tr> 
    <td>表单模型(XDP/XSD)选择</td> 
@@ -179,27 +179,27 @@ AEM Forms支持以下资源类型：
 
 ## 查看表单元数据 {#view-form-metadata}
 
-资产具有现有的属性值，可以在只读模式下查看这些值。 此元数据源自表单上传或表单创建时。
+Assets具有现有的属性值，可以在只读模式下查看这些值。 此元数据源自表单上传或表单创建时。
 
 1. 导航到要查看元数据的资源的位置。
 
 1. 使用以下方式之一打开属性页面：
 
-   1. 单击“查看属性” ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) 图标（位于快速操作中）。
+   1. 单击“快速操作”中的查看属性![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png)图标。
 
       >[!NOTE]
       >
       >快速操作是在鼠标悬停时显示在缩略图上的操作项。
 
-   1. 选择表单并单击查看属性 ![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png) 工具栏中显示的图标。
-   1. 在不处于选择模式时，通过单击表单缩略图导航到表单详细信息页面。 现在，单击 ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) 右上角的眼睛图标，然后单击其下方列表中的“属性”。
+   1. 选择表单，然后单击工具栏中显示的查看属性![e_reviewmode_properties_n](assets/e_reviewmode_properties_n.png)图标。
+   1. 在不处于选择模式时，通过单击表单缩略图导航到表单详细信息页面。 现在，单击右上角的![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png)眼睛图标，然后单击其下方列表中的“属性”。
 
 1. 打开的属性页显示的方案仅包含那些保存某些值的元数据属性。
 
    属性页面有一个包含两个操作图标的工具栏：
 
-   * 编辑： ![aem6forms_edit](assets/aem6forms_edit.png) 编辑元数据属性值
-   * 查看： ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png) 导航到表单详细信息页面，该页面将在预览模式下打开表单。
+   * 编辑： ![aem6forms_edit](assets/aem6forms_edit.png)编辑元数据属性值
+   * 视图： ![aem6forms_eye_viewon](assets/aem6forms_eye_viewon.png)导航到表单详细信息页面，该页面将在预览模式下打开表单。
 
    内容部分分为两部分：
 
@@ -214,7 +214,7 @@ AEM Forms支持以下资源类型：
 
 1. 按照上一节中提到的步骤打开属性页面，可以在其中查看所选表单的现有元数据。
 
-1. 在工具栏中，单击编辑图标 ![aem6forms_edit](assets/aem6forms_edit.png) 将页面的模式从只读更改为读/写。
+1. 在工具栏中，单击编辑图标![aem6forms_edit](assets/aem6forms_edit.png)以将页面的模式从只读更改为读/写。
 
 1. 打开的属性页面包含一个混合了可编辑输入字段和静态文本的架构。
 
@@ -224,8 +224,8 @@ AEM Forms支持以下资源类型：
 
    此页面有一个工具栏，其中包含两个与视图模式不同的操作图标：
 
-   * 取消： ![aem6forms_close](assets/aem6forms_close.svg_w24.png) 取消迄今为止对元数据属性值所做的任何更改
-   * 完成： ![aem6forms_check](assets/aem6forms_check.png) 保存迄今为止对元数据属性值所做的所有更改
+   * 取消： ![aem6forms_close](assets/aem6forms_close.svg_w24.png)取消迄今为止对元数据属性值所做的任何更改
+   * 完成： ![aem6forms_check](assets/aem6forms_check.png)保存迄今为止对元数据属性值所做的所有更改
 
    这两个操作都会将用户引导回包含更新值的属性页的只读模式。
 
@@ -233,9 +233,9 @@ AEM Forms支持以下资源类型：
 
 属性页面中的左侧面板显示表单的缩略图。 默认情况下，显示的缩略图是创建表单（自适应表单）时或上传表单时生成的缩略图。
 
-对于所有表单类型，您可以选择通过单击 **[!UICONTROL 上传图像]** 并从本地目录中浏览图像文件。 所选图像将用作缩略图，而不是默认图像。
+对于所有表单类型，您可以选择通过单击&#x200B;**[!UICONTROL 上传图像]**&#x200B;并从本地目录浏览图像文件来上传图像。 所选图像将用作缩略图，而不是默认图像。
 
-对于自适应表单，还提供了附加功能，允许用户生成缩略图作为当前自适应表单预览的快照。 由于AEM Forms还支持创作自适应表单，因此每次更改自适应表单时，自适应表单的预览都可能会发生更改。 此功能可生成缩略图，从而帮助您根据当前预览状态为自适应表单获取新的缩略图。 单击 **[!UICONTROL 生成预览]** 执行此项操作。
+对于自适应表单，还提供了附加功能，允许用户生成缩略图作为当前自适应表单预览的快照。 由于AEM Forms还支持创作自适应表单，因此每次更改自适应表单时，自适应表单的预览都可能会发生更改。 此功能可生成缩略图，从而帮助您根据当前预览状态为自适应表单获取新的缩略图。 单击&#x200B;**[!UICONTROL 生成预览]**&#x200B;以执行此操作。
 
 >[!NOTE]
 >
@@ -247,15 +247,15 @@ AEM Forms支持以下资源类型：
 
 除了开箱即用的元数据之外，AEM Forms还支持新的自定义元数据。
 
-提供了一个工具（元数据架构编辑器）来定义元数据布局的架构；即， **[!UICONTROL 属性]** 表单的页面。 通过元数据架构编辑器，可为资源添加或修改自定义架构。
+提供了一个工具（元数据架构编辑器）来定义元数据布局的架构；即表单的&#x200B;**[!UICONTROL 属性]**&#x200B;页面中显示的布局。 通过元数据架构编辑器，可为资源添加或修改自定义架构。
 
 AEM Forms在此工具中公开受支持表单类型的元数据架构。 通过这种方式，您可以访问这些架构，并使用元数据架构编辑器中提供的功能来添加自定义属性。
 
 ### 导航到元数据架构编辑器 {#navigate-the-metadata-schema-editor}
 
-1. 导航到 **[!UICONTROL 工具>资产>元数据架构]**.
+1. 导航到&#x200B;**[!UICONTROL 工具> Assets >元数据架构]**。
 
-1. 单击 **[!UICONTROL 表单]** 从列出的架构表单中。
+1. 从列出的架构表单中单击&#x200B;**[!UICONTROL 表单]**。
 
 1. 在打开的列表中，单击要为其添加自定义元数据的资源类型。
 
@@ -263,13 +263,13 @@ AEM Forms在此工具中公开受支持表单类型的元数据架构。 通过�
    >
    >这些架构包含现成提供的元数据属性，不得更改/编辑（选中复选框并单击工具栏中的编辑）以避免功能问题。
 
-1. 单击的任何资产类型都会打开一个列表，其中包含 `extendedmetadata` 选项。 编辑此架构。
+1. 单击的任何资产类型都会打开一个包含`extendedmetadata`选项的列表。 编辑此架构。
 
-1. 选中旁边的复选框 `extendedmetadata` 然后单击编辑 ![aem6forms_edit](assets/aem6forms_edit.png) 工具栏中显示的图标。
+1. 选中`extendedmetadata`旁边的复选框，然后单击工具栏中显示的编辑![aem6forms_edit](assets/aem6forms_edit.png)图标。
 
 1. AEM Forms会打开所选资源类型的元数据架构编辑器/表单生成器（在本例中为“自适应表单”）。
 
-   ![自适应表单类型的元数据架构编辑器](assets/metadata-schema-editor-for-adaptive-form-type.png)
+   自适应表单类型的![元数据架构编辑器](assets/metadata-schema-editor-for-adaptive-form-type.png)
 
    元数据编辑器
 
@@ -279,14 +279,14 @@ AEM Forms在此工具中公开受支持表单类型的元数据架构。 通过�
 
    1. 单击+符号可添加其他选项卡。
 
-   1. 您可以通过从以下位置拖动字段组件来添加所需类型的自定义字段： **[!UICONTROL 构建表单]** 部分（位于“架构”页面）。
-   1. 此字段的规范可在 **[!UICONTROL 设置]** 字段后的部分。
+   1. 您可以添加所需类型的自定义字段，方法是将&#x200B;**[!UICONTROL 构建表单]**&#x200B;分区中的字段组件拖到架构页面上。
+   1. 单击该字段后，可在&#x200B;**[!UICONTROL 设置]**&#x200B;部分下提供该字段的规范。
 
 ### 在架构编辑器中添加自定义元数据属性 {#add-custom-metadata-property-in-schema-editor}
 
 1. 导航到要添加自定义属性的选项卡（现有或新）。
 
-1. 从拖动所需类型的组件 **[!UICONTROL 构建表单]** 部分到左侧面板，并放置在方便的位置。
+1. 将所需类型的组件从&#x200B;**[!UICONTROL 构建表单]**&#x200B;区域拖到左侧面板并放置在方便的位置。
 
    >[!NOTE]
    >
@@ -295,7 +295,7 @@ AEM Forms在此工具中公开受支持表单类型的元数据架构。 通过�
 1. 单击刚刚拖动的组件。 在右侧面板中打开的设置选项卡中，填写以下字段的信息：
 
    1. 指定字段标签，该标签用作位于架构中的字段上方的显示名称（例如：Department）
-   1. 在映射到属性字段下，您可以看到预填充的值 **’。/jcr：content/metadata/default&#39;**. 更改&#39;**默认**”到所需的属性名称，该名称用于在crx存储库中存储属性(例如： &#39;。/jcr：content/metadata/department&#39;)
+   1. 在映射到属性字段下，您可以看到预填充的值&#x200B;**。/jcr：content/metadata/default“**”。 将“**default**”更改为所需的属性名称，该属性名称用于存储crx存储库中的属性(例如：“”。/jcr：content/metadata/department&#39;)
 
       >[!NOTE]
       >
@@ -304,10 +304,10 @@ AEM Forms在此工具中公开受支持表单类型的元数据架构。 通过�
       >此外，属性名称必须是唯一的，以避免在存储库中的同一位置写入两个或更多属性的值。 因此，建议您更改“default”值。
 
    1. 根据需要填写其他设置。 例如：如果要使字段成为必填字段，请选择必填选项。
-   1. 要删除添加的字段，请选择该字段，然后单击删除 ![delete-1](assets/delete-1.png) 图标。
+   1. 要删除您添加的字段，请选择该字段，然后单击删除![delete-1](assets/delete-1.png)图标。
 
 1. 如有必要，请按照步骤1 - 3添加其他资产。
-1. 单击 **完成** 完成所有更改之后。
+1. 完成所有更改后，单击&#x200B;**完成**。
 
    您已成功添加自定义元数据属性。
 

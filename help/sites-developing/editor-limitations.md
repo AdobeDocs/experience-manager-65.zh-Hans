@@ -26,13 +26,13 @@ ht-degree: 6%
 
 ### 链接无效 {#links-not-active}
 
-时间 [编辑页面](/help/sites-authoring/editing-content.md)中，链接处于非活动状态。
+在[编辑页面](/help/sites-authoring/editing-content.md)时，链接处于非活动状态。
 
-* [切换到 **预览** 模式](/help/sites-authoring/editing-content.md#preview-mode) 以使用内容中的链接进行导航。
+* [切换到&#x200B;**预览**&#x200B;模式](/help/sites-authoring/editing-content.md#preview-mode)以使用内容中的链接进行导航。
 
 ### 结构页面 {#structure-pages}
 
-不能为页面命名 `structure`. 已命名的页面 `structure` 在页面编辑器中不可编辑。
+不能将页面命名为`structure`。 名为`structure`的页面在页面编辑器中不可编辑。
 
 ## CSS限制 {#css-limitations}
 
@@ -46,13 +46,13 @@ ht-degree: 6%
 
 ### vh单位 {#vh-units}
 
-`vh` 单位不受支持，因为iframe高度必须由Adobe Experience Manager (AEM)自动调整。
+不支持`vh`个单位，因为iframe高度必须由Adobe Experience Manager (AEM)自动调整。
 
 ### 固定背景图像 {#fixed-background-images}
 
 由于固定背景图像嵌入在iframe中，因此滚动时可能无法显示为固定背景图像。
 
-* 选择 **查看已发布的页面** 在标题栏中，操作可正确显示页面。
+* 在标题栏操作中选择&#x200B;**以发布的形式查看页面**&#x200B;可正确显示页面。
 
 ### 100%高度 {#height}
 

@@ -24,26 +24,26 @@ ht-degree: 1%
 
 AEM平台使用节点存储区，将站点内容从创作复制到发布，而AEM Communities使用单个通用存储区来存储UGC，且永远不会复制该存储。
 
-对于常见的UGC存储，需要选择 [存储资源提供程序(SRP)](working-with-srp.md). 建议的选项包括：
+对于公共UGC存储，需要选择[存储资源提供程序(SRP)](working-with-srp.md)。 建议的选项包括：
 
 * [DSRP — 关系数据库存储资源提供程序](dsrp.md)
 * [MSRP - MongoDB存储资源提供程序](msrp.md)
 * [ASRP -Adobe存储资源提供程序](asrp.md)
 
-一个其他SRP选项， [JSRP - JCR存储资源提供程序](jsrp.md)中，不支持将公共UGC存储区用于作者和发布环境的访问。
+另一个SRP选项[JSRP - JCR存储资源提供程序](jsrp.md)不支持作者和发布环境同时访问公共UGC存储。
 
 要求公用存储会导致以下推荐的拓扑。
 
 >[!NOTE]
 >
->对于AEM Communities， [从不复制UGC](working-with-srp.md#ugc-never-replicated).
+>对于AEM Communities，[UGC从未复制](working-with-srp.md#ugc-never-replicated)。
 >
->当部署不包含 [公用存储](working-with-srp.md)，UGC将仅在输入它的AEM发布或创作实例上可见。
+>当部署不包含[公用存储](working-with-srp.md)时，UGC将仅在输入它的AEM发布或创作实例上可见。
 >
 
 >[!NOTE]
 >
->有关AEM平台的更多信息，请参阅 [建议的部署](../../help/sites-deploying/recommended-deploys.md) 和 [AEM平台简介](../../help/sites-deploying/data-store-config.md).
+>有关AEM平台的详细信息，请参阅[建议的部署](../../help/sites-deploying/recommended-deploys.md)和[AEM平台简介](../../help/sites-deploying/data-store-config.md)。
 
 ## 用于生产 {#for-production}
 
@@ -51,17 +51,17 @@ AEM平台使用节点存储区，将站点内容从创作复制到发布，而AE
 
 两个示例：
 
-1. 如果UGC的预期容量很高，则可以选择使用本地MongoDB实例 [MSRP](msrp.md).
+1. 如果UGC的预期容量很高，并且可以使用本地MongoDB实例，则选择为[MSRP](msrp.md)。
 
-1. 为获得页面内容的最佳性能，请选择 [发布场](../../help/sites-deploying/recommended-deploys.md#tarmk-farm) 和 [ASRP](asrp.md) 将通过相对直接的操作提供最佳的UGC扩展。
+1. 为获得页面内容的最佳性能，选择[发布场](../../help/sites-deploying/recommended-deploys.md#tarmk-farm)和[ASRP](asrp.md)将通过相对直接的操作提供最佳的UGC缩放。
 
 对于这两者，部署可能基于任何OAK微内核。
 
-要选择适当的常用存储，请仔细考虑独特的 [特征](working-with-srp.md#characteristics-of-srp-options) 各自的。
+要选择适当的公用存储区，请仔细考虑每个存储区的唯一[特性](working-with-srp.md#characteristics-of-srp-options)。
 
-有关Oak微内核的更多详细信息，请访问 [建议的部署](../../help/sites-deploying/recommended-deploys.md).
+有关Oak微内核的更多详细信息，请访问[推荐的部署](../../help/sites-deploying/recommended-deploys.md)。
 
-### TarMK发布场 {#tarmk-publish-farm}
+### TarMKPublish农场 {#tarmk-publish-farm}
 
 当拓扑是发布场时，重要的相关主题包括：
 
@@ -82,13 +82,13 @@ AEM平台使用节点存储区，将站点内容从创作复制到发布，而AE
 | 部署 | 站点内容存储库 | 用户生成的内容存储库 | 存储资源提供程序 | 公用存储 |
 |----------------------|------------------------|----------------------------------|---------------------------|---------------------------------|
 | TarMK场（默认） | JCR | JCR | JSRP | 否 |
-| Oak集群 | JCR | JCR | JSRP | 仅用于发布环境 |
+| Oak群集 | JCR | JCR | JSRP | 仅用于发布环境 |
 
 ## 用于开发 {#for-development}
 
-对于非生产环境， [JSRP](jsrp.md) 简化了用一个创作实例和一个发布实例设置开发环境的过程。
+对于非生产环境，[JSRP](jsrp.md)简化了用一个创作实例和一个发布实例设置开发环境的过程。
 
-如果选择 [ASRP](asrp.md)， [DSRP](dsrp.md) 或 [MSRP](msrp.md) 对于生产，还可以使用Adobe按需存储或MongoDB设置类似的开发环境。 有关示例，请参见 [如何设置MongoDB以进行演示](demo-mongo.md).
+如果为生产选择[ASRP](asrp.md)、[DSRP](dsrp.md)或[MSRP](msrp.md)，也可以使用Adobe按需存储或MongoDB设置类似的开发环境。 有关示例，请参阅[如何设置MongoDB以进行演示](demo-mongo.md)。
 
 ## 引用 {#references}
 

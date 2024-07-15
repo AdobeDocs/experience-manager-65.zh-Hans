@@ -49,7 +49,7 @@ AEM Forms提供门户组件，可减少管理开销和生产延迟。 这些组�
 
 ## 可用的AEM Forms Portal组件 {#available-aem-forms-portal-components}
 
-AEM Forms现成提供以下门户组件，这些组件分组在 **文档服务** 和 **文档服务谓词** 组件组：
+AEM Forms提供以下现成的门户组件，这些组件分组在&#x200B;**Document Services**&#x200B;和&#x200B;**Document Services谓词**&#x200B;组件组下：
 
 ### 搜索和列表程序 {#search-amp-lister}
 
@@ -67,21 +67,21 @@ AEM Forms现成提供以下门户组件，这些组件分组在 **文档服务**
 
 Forms门户允许您将表单从表单存储库列出到门户页面上。 它还允许您指定搜索条件，以使门户用户能够在表单列表中搜索。 您还可以使用草稿和提交组件显示另存为草稿的表单，以供稍后完成和提交表单。 在这些功能在Sites页面上可用之前，您需要执行一组特定操作。 按照列出的顺序执行步骤，使组件和相应的功能在站点页面上可用：
 
-1. **启用Forms Portal组件**：现成的Forms Portal组件不可使用。 [从AEM Sidekick启用组件](/help/forms/using/enabling-forms-portal-components.md) 用于AEM Sites页面。
-1. **在页面上列出表单(创建Forms Portal页面)：** 您可以在AEM Sites和非AEM站点页面上列出表单。 该列表包含发布实例上可用的表单。 用户可以打开表单并开始填写这些表单。 每当用户打开表单时，都会创建一个表单的新实例：
+1. **启用Forms Portal组件**：现成可用的Forms Portal组件不可用。 [为AEM Sites页面启用AEM sidekick](/help/forms/using/enabling-forms-portal-components.md)中的组件。
+1. **在页面上列出表单(创建Forms Portal页面)：**&#x200B;您可以在AEM Sites和非AEM站点页面上列出表单。 该列表包含发布实例上可用的表单。 用户可以打开表单并开始填写这些表单。 每当用户打开表单时，都会创建一个表单的新实例：
 
-   1. **在AEM Sites页面上列出表单**：添加 **[搜索和列表程序](../../forms/using/creating-form-portal-page.md)** 组件到页面并配置 **[列表窗格](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** 在中，在页面上列出表单。 添加并配置 **搜索窗格** 组件到 **搜索和列表程序** 组件向页面中添加搜索功能。 将包含Forms Portal组件的页面称为 [Forms Portal页面](../../forms/using/creating-form-portal-page.md).
+   1. **在AEM Sites页面上列出表单**：将&#x200B;**[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)**&#x200B;组件添加到该页面并在其中配置&#x200B;**[列表窗格](../../forms/using/creating-form-portal-page.md#p-list-pane-p)**，以便在页面上列出表单。 向&#x200B;**搜索和列表程序**&#x200B;组件添加并配置&#x200B;**搜索窗格**&#x200B;组件，以便向该页面添加搜索功能。 包含Forms Portal组件的页面称为[Forms Portal页面](../../forms/using/creating-form-portal-page.md)。
 
-   1. **在非AEM Sites页面上列出表单：** 使用 [Forms Portal搜索API](/help/forms/using/listing-forms-webpage-using-apis.md) 在非AEM Sites页面上查询、检索和列出表单。
+   1. **在非AEM Sites页面上列出表单：**&#x200B;使用[Forms Portal搜索API](/help/forms/using/listing-forms-webpage-using-apis.md)在非AEM Sites页面上查询、检索和列出表单。
 
-1. **在Forms门户页面上列出草稿和已提交的表单**：将草稿和提交组件添加并配置到Forms Portal页面。 组件列出了处于草稿状态的所有表单以及已提交的表单。
+1. **在Forms Portal页面上列出草稿和已提交的表单**：将草稿和提交组件添加并配置到Forms Portal页面。 组件列出了处于草稿状态的所有表单以及已提交的表单。
 
-   要使提交的自适应表单显示在提交选项卡中，请设置 **提交操作** 到 **[Forms Portal提交操作](configuring-submit-actions.md).** 或者，启用Forms Portal提交选项。 每当用户提交表单时，该表单都会添加到提交选项卡。
+   要使提交的自适应表单显示在提交选项卡中，请将&#x200B;**提交操作**&#x200B;设置为&#x200B;**[Forms Portal提交操作](configuring-submit-actions.md)。**&#x200B;或者，启用Forms Portal提交选项。 每当用户提交表单时，该表单都会添加到提交选项卡。
 
-1. **为草稿和已提交的表单数据配置存储：** 默认情况下，草稿和提交数据存储在AEM存储库中。 在生产环境中，建议不要将草稿或已提交的表单数据存储在AEM存储库中。 [配置Forms Portal组件以将数据保存到安全位置](../../forms/using/draft-submission-component.md#customizing-the-storage).
-1. **（可选）自定义Forms Portal组件：** [自定义Forms Portal页面模板](../../forms/using/customizing-templates-forms-portal-components.md) 为组件提供独特的外观。
-1. **（可选）将自定义元数据添加到表单：** [将自定义元数据添加到表单](../../forms/using/customizing-templates-forms-portal-components.md) 以改善列表和搜索体验。
-1. **Publish Forms Portal页面：** 您的Forms门户页面现已准备就绪。 Publish页面。
+1. **为草稿和已提交的表单数据配置存储：**&#x200B;默认情况下，草稿和提交数据存储在AEM存储库中。 在生产环境中，建议不要将草稿或已提交的表单数据存储在AEM存储库中。 [配置Forms门户组件以将数据保存到安全位置](../../forms/using/draft-submission-component.md#customizing-the-storage)。
+1. **（可选）自定义Forms Portal组件：** [自定义Forms Portal页面模板](../../forms/using/customizing-templates-forms-portal-components.md)为组件提供独特的外观。
+1. **（可选）将自定义元数据添加到表单：** [将自定义元数据添加到表单](../../forms/using/customizing-templates-forms-portal-components.md)以改善列表和搜索体验。
+1. **Publish Forms Portal页面：**&#x200B;您的Forms Portal页面现已准备就绪。 Publish页面。
 
 ## 相关文章 {#related-articles}
 

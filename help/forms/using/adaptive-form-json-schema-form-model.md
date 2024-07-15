@@ -32,7 +32,7 @@ ht-degree: 7%
 
 ## 使用JSON架构作为表单模型  {#using-a-json-schema-as-form-model}
 
-[!DNL Adobe Experience Manager Forms] 支持使用现有JSON架构作为表单模型来创建自适应表单。 此JSON架构表示组织中的后端系统生成或使用数据的结构。 您使用的JSON架构应符合 [v4规范](https://json-schema.org/draft-04/schema).
+[!DNL Adobe Experience Manager Forms]支持使用现有JSON架构作为表单模型来创建自适应表单。 此JSON架构表示组织中的后端系统生成或使用数据的结构。 您使用的JSON架构应符合[v4规范](https://json-schema.org/draft-04/schema)。
 
 使用JSON架构的主要功能包括：
 
@@ -91,15 +91,15 @@ JSON元素与自适应表单组件的映射如下所示：
   </tr>
   <tr>
    <td>数字属性<br /> </td>
-   <td>子类型设置为float的数字字段<br /> </td>
+   <td>子类型设置为float<br />的数值字段 </td>
   </tr>
   <tr>
-   <td>integer属性<br /> </td>
-   <td>子类型设置为整数的数字字段<br /> </td>
+   <td>整数属性<br /> </td>
+   <td>子类型设置为integer<br />的数字字段 </td>
   </tr>
   <tr>
    <td>布尔属性<br /> </td>
-   <td>切换<br /> </td>
+   <td>交换机<br /> </td>
   </tr>
   <tr>
    <td>对象属性<br /> </td>
@@ -107,7 +107,7 @@ JSON元素与自适应表单组件的映射如下所示：
   </tr>
   <tr>
    <td>数组属性</td>
-   <td>可重复面板，最小值和最大值分别等于minItems和maxItems。 仅支持同质数组。 因此项约束必须是对象，而不是数组。<br /> </td>
+   <td>可重复面板，最小值和最大值分别等于minItems和maxItems。 仅支持同质数组。 因此，项约束必须是对象，而不是数组。<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -116,17 +116,17 @@ JSON元素与自适应表单组件的映射如下所示：
 
 自适应表单使用JSON架构中可用的信息来映射每个生成的字段。 特别是：
 
-* 此 `title` 属性用作自适应表单组件的标签。
-* 此 `description` 属性设置为自适应表单组件的完整描述。
-* 此 `default` 属性用作自适应表单字段的初始值。
-* 此 `maxLength` 属性设置为 `maxlength` 文本字段组件的属性。
-* 此 `minimum`， `maximum`， `exclusiveMinimum`、和 `exclusiveMaximum` 属性用于数值框组件。
-* 要支持的范围，请执行以下操作 `DatePicker component` 其他JSON架构属性 `minDate` 和 `maxDate` 提供……
-* 此 `minItems` 和 `maxItems` 属性用于限制可从面板组件添加或删除的项目/字段数。
-* 此 `readOnly` 属性设置 `readonly` 自适应表单组件的属性。
-* 此 `required` 属性将自适应表单字段标记为必填字段，而在面板（其中类型为对象）中，最终提交的JSON数据具有的字段具有对应于该对象的空值。
-* 此 `pattern` 属性设置为自适应表单中的验证模式（正则表达式）。
-* JSON架构文件的扩展名必须保留为.schema.json。 例如， &lt;filename>.schema.json。
+* `title`属性用作自适应表单组件的标签。
+* `description`属性设置为自适应表单组件的完整描述。
+* `default`属性用作自适应表单字段的初始值。
+* `maxLength`属性设置为文本字段组件的`maxlength`属性。
+* `minimum`、`maximum`、`exclusiveMinimum`和`exclusiveMaximum`属性用于数值框组件。
+* 为了支持`DatePicker component`范围，提供了其他JSON架构属性`minDate`和`maxDate`。
+* `minItems`和`maxItems`属性用于限制可从面板组件添加或删除的项/字段数。
+* `readOnly`属性设置自适应表单组件的`readonly`属性。
+* `required`属性将自适应表单字段标记为必填字段，而在面板（其中类型为对象）中，最终提交的JSON数据具有的字段具有对应于该对象的空值。
+* `pattern`属性设置为自适应表单中的验证模式（正则表达式）。
+* JSON架构文件的扩展名必须保留为.schema.json。 例如，&lt;文件名>.schema.json。
 
 ## 示例JSON架构 {#sample-json-schema}
 
@@ -343,7 +343,7 @@ JSON元素与自适应表单组件的映射如下所示：
 
 ## 在JSON架构定义中预配置字段 {#pre-configuring-fields-in-json-schema-definition}
 
-您可以使用 **aem：afProperties** 属性，用于预配置要映射到自定义自适应表单组件的JSON架构字段。 下面列出了一个示例：
+您可以使用&#x200B;**aem：afProperties**&#x200B;属性预配置JSON架构字段以映射到自定义自适应表单组件。 下面列出了一个示例：
 
 ```json
 {
@@ -365,7 +365,7 @@ JSON元素与自适应表单组件的映射如下所示：
 
 ## 为表单对象配置脚本或表达式  {#configure-scripts-or-expressions-for-form-objects}
 
-JavaScript是自适应表单的表达式语言。 所有表达式都是有效的JavaScript表达式，并使用自适应表单脚本模型API。 您可以预配置表单对象，以 [计算表达式](adaptive-form-expressions.md) 在表单事件中。
+JavaScript是自适应表单的表达式语言。 所有表达式都是有效的JavaScript表达式，都使用自适应表单脚本模型API。 您可以预先配置表单对象，以便[评估表单事件上的表达式](adaptive-form-expressions.md)。
 
 使用aem：afproperties属性为自适应表单组件预配置自适应表单表达式或脚本。 例如，触发初始化事件时，以下代码设置telephone字段的值并将值打印到日志：
 
@@ -385,13 +385,13 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 }
 ```
 
-您应该是 [表单 — 超级用户组](forms-groups-privileges-tasks.md) 为表单对象配置脚本或表达式。 下表列出了自适应表单组件支持的所有脚本事件。
+您应该是[forms-power-user组](forms-groups-privileges-tasks.md)的成员才能配置表单对象的脚本或表达式。 下表列出了自适应表单组件支持的所有脚本事件。
 
 <table>
  <tbody>
   <tr>
    <th><strong></strong>组件\事件</th>
-   <th>初始化 <br /> </th>
+   <th>初始化<br /> </th>
    <td>计算</td>
    <td>可见性</td>
    <td>验证</td>
@@ -590,7 +590,7 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
  </tbody>
 </table>
 
-在JSON中使用事件的一些示例包括：在初始化事件上隐藏字段，以及在值提交事件上配置另一个字段的值。 有关为脚本事件创建表达式的详细信息，请参见 [自适应表单表达式](adaptive-form-expressions.md).
+在JSON中使用事件的一些示例包括：在初始化事件上隐藏字段，以及在值提交事件上配置另一个字段的值。 有关为脚本事件创建表达式的详细信息，请参阅[自适应表单表达式](adaptive-form-expressions.md)。
 
 以下是前面提到的示例的JSON代码示例。
 
@@ -735,10 +735,10 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 
 要启用所有基于JSON架构的自适应Forms在提交表单时生成与架构兼容的数据，请执行以下步骤：
 
-1. 转到Experience ManagerWeb控制台，网址为 `https://server:host/system/console/configMgr`.
-1. 定位 **[!UICONTROL 自适应表单和互动通信Web渠道配置]**.
+1. 转到`https://server:host/system/console/configMgr`上的Experience ManagerWeb控制台。
+1. 找到&#x200B;**[!UICONTROL 自适应表单和交互通信Web渠道配置]**。
 1. 选择以在编辑模式下打开配置。
-1. 选择 **[!UICONTROL 生成符合架构的数据]** 复选框。
+1. 选中&#x200B;**[!UICONTROL 生成符合架构的数据]**&#x200B;复选框。
 1. 保存设置。
 
 ![自适应表单和交互式通信Web渠道配置](/help/forms/using/assets/af-ic-web-channel-configuration.png)
@@ -767,4 +767,4 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 
 **JSON架构文件的扩展名应该是什么？**
 
-JSON架构文件的扩展名必须是.schema.json。 例如， &lt;filename>.schema.json。
+JSON架构文件的扩展名必须是.schema.json。 例如，&lt;文件名>.schema.json。

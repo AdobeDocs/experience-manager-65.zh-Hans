@@ -52,7 +52,7 @@ Adobe Experience Manager (AEM)部署通常包含多个环境，分别用于不�
 * 实现设计
 * 开发必要的服务和脚本以实施所需的功能
 
-的配置 [开发](/help/sites-developing/best-practices.md) 环境可能取决于多种因素，但由以下部分组成：
+[开发](/help/sites-developing/best-practices.md)环境的配置可能取决于各种因素，但由以下因素组成：
 
 * 具有版本控制的集成开发系统，可提供集成代码库。它可用于合并和强化每个开发人员使用的各个开发环境中的代码。
 * 每个开发人员的个人环境；通常驻留在其本地计算机上。以适当的时间间隔将代码与版本控制系统同步
@@ -61,7 +61,7 @@ Adobe Experience Manager (AEM)部署通常包含多个环境，分别用于不�
 
 ### 质量保证 {#quality-assurance}
 
-质量保证团队使用此环境来综合管理 [测试](/help/sites-developing/test-plan.md) 您的新系统；设计和功能。 它应同时具有创作和发布环境（包含适当的内容），并提供所有必要的服务以启用完整的测试套件。
+质量保证团队使用此环境来全面[测试](/help/sites-developing/test-plan.md)您的新系统；包括设计和功能。 它应同时具有创作和发布环境（包含适当的内容），并提供所有必要的服务以启用完整的测试套件。
 
 ### 暂存 {#staging}
 
@@ -139,6 +139,6 @@ AEM项目通常会触发代码部署：
 内容可以传输：
 
 * 在不同环境之间 - 通过导出和导入包。
-* 在不同实例之间 — 通过直接复制([AEM复制](/help/sites-deploying/replication.md))，内容（使用HTTP或HTTPS连接）。
+* 在不同实例之间 — 通过直接复制([AEM复制](/help/sites-deploying/replication.md))内容（使用HTTP或HTTPS连接）。
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

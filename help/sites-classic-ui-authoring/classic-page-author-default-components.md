@@ -19,7 +19,7 @@ ht-degree: 20%
 
 # 组件{#components}
 
-Adobe Experience Manager (AEM)附带多种现成的组件，这些组件为网站作者提供了全面的功能。 在以下情况下，它们可用 [编辑页面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) 和按主要功能区域（即组件组）分组以帮助筛选。
+Adobe Experience Manager (AEM)附带多种现成的组件，这些组件为网站作者提供了全面的功能。 在[编辑页面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)时，这些组件可供使用，并且为便于筛选，这些组件按主要功能区域（即组件组）进行分组。
 
 >[!CAUTION]
 >
@@ -33,12 +33,12 @@ Adobe Experience Manager (AEM)附带多种现成的组件，这些组件为网�
 
 * [用于页面创作的组件](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-  用于创建标准页面内容的组件主要包含在组中 **常规**， **列** 和 **Forms**.
+  用于创建标准页面内容的组件主要包含在组&#x200B;**常规**、**列**&#x200B;和&#x200B;**Forms**&#x200B;中。
 
 * [电子商务](/help/commerce/cif-classic/administering/ecommerce.md)
 
-  AEM中的电子商务功能还包括一系列组件，这些组件包含在 **商务** 组。 实际使用情况取决于所使用的商业引擎。
+  AEM中的电子商务功能还包括一系列组件，这些组件包含在&#x200B;**Commerce**&#x200B;组中。 实际使用情况取决于所使用的商业引擎。
 
 ## 使用设计模式配置组件 {#using-design-mode-to-configure-components}
 
-除了作者在标准安装中通过Sidekick访问的组件之外，还可以使用其他各种组件。 您可以使用 [设计模式](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) 启用/禁用这些组件并编辑特定组件的参数。
+除了作者在标准安装中通过Sidekick访问的组件之外，还可以使用其他各种组件。 您可以使用[设计模式](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components)来启用/禁用这些组件并编辑特定组件的参数。

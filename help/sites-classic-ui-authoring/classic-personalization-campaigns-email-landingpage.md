@@ -31,11 +31,11 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe不打算进一步增强此功能（管理潜在客户和列表）。
->建议使用 [Adobe Campaign以及与AEM的集成](/help/sites-administering/campaign.md).
+>建议使用[Adobe Campaign以及与AEM](/help/sites-administering/campaign.md)的集成。
 
 ## 创建新闻稿列表 {#creating-a-list-for-the-newsletter}
 
-创建列表，例如， **Geometrixx新闻稿**，用于用户应订阅的新闻稿。 有关创建列表的说明，请参见 [创建列表](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+在MCM中为人们应订阅的新闻稿创建列表，例如&#x200B;**Geometrixx新闻稿**。 [创建列表](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)中介绍了如何创建列表。
 
 下面显示了一个列表示例：
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 
 创建新闻稿注册表单，以允许用户订阅标记。 示例Geometrixx网站在Geometrixx工具栏中提供新闻稿页面，您可以在其中创建表单。
 
-要创建您自己的新闻稿表单，请在 [Forms文档](/help/sites-authoring/default-components.md#form). 新闻稿使用标记库中的标记。 要添加其他标记，请参阅 [标记管理](/help/sites-authoring/tags.md#tagadministration).
+要创建您自己的新闻稿表单，请参阅[Forms文档](/help/sites-authoring/default-components.md#form)中有关创建表单的信息。 新闻稿使用标记库中的标记。 要添加其他标记，请参阅[标记管理](/help/sites-authoring/tags.md#tagadministration)。
 
 以下示例中的隐藏字段提供了最低信息量（电子邮件）；此外，您可以稍后添加更多字段，但这会影响转化率。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    ![mcm_newsletterpage](assets/mcm_newsletterpage.png)
 
-1. 单击 **编辑** 将表单配置为转到感谢页面(请参阅 [创建感谢页面](#creating-a-thank-you-page))。
+1. 单击表单组件中的&#x200B;**编辑**&#x200B;以将表单配置为转到感谢页面（请参阅[创建感谢页面](#creating-a-thank-you-page)）。
 
    ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
 
@@ -65,23 +65,23 @@ ht-degree: 0%
 
 ### 创建感谢页面 {#creating-a-thank-you-page}
 
-当用户单击 **立即订阅**，您希望自动打开“感谢”页面。 在Geometrixx新闻稿页面中创建“感谢”页面。 创建新闻稿表单后，编辑表单组件并添加感谢页面的路径。
+当用户单击“立即订阅”****&#x200B;时，您希望自动打开“感谢”页面。 在Geometrixx新闻稿页面中创建“感谢”页面。 创建新闻稿表单后，编辑表单组件并添加感谢页面的路径。
 
-提交请求会将用户转至 **谢谢** 页面后，他们将收到电子邮件。 此感谢页面创建于/content/geometrixx/en/toolbar/newsletter/thank_you。
+提交请求会将用户转到&#x200B;**感谢**&#x200B;页面，用户将在页面后收到电子邮件。 此感谢页面创建于/content/geometrixx/en/toolbar/newsletter/thank_you。
 
 ![mcm_newsletter_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
 
 ### 添加Teaser {#adding-teasers}
 
-添加 [Teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) 以定位特定受众。 例如，您可以将Teaser添加到感谢页面和新闻稿注册页面。
+将[Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)添加到目标特定受众。 例如，您可以将Teaser添加到感谢页面和新闻稿注册页面。
 
 要添加Teaser以使其成为有效的新闻稿登陆页面，请执行以下操作：
 
-1. 为注册礼品创建Teaser段落。 选择 **第一** 作为策略，并包含通知他们将会收到什么礼物的文本。
+1. 为注册礼品创建Teaser段落。 选择&#x200B;**第一个**&#x200B;作为策略，并包含通知他们将会收到什么礼品的文本。
 
    ![dc_teaser_thankyou](assets/dc_teaser_thankyou.png)
 
-1. 为感谢页面创建Teaser段落。 选择 **第一** 作为策略，并包含表明礼物即将送来的文本。
+1. 为感谢页面创建Teaser段落。 选择&#x200B;**First**&#x200B;作为策略，并包含指示礼品正在送来的文本。
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
@@ -91,4 +91,4 @@ ht-degree: 0%
 
 通过MCM中的新闻稿功能，将任何更改推送到页面。 然后，将更新的内容推送到订阅者。
 
-请参阅 [发送新闻稿](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters).
+请参阅[发送新闻稿](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)。

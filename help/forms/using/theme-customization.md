@@ -28,15 +28,15 @@ ht-degree: 4%
 
 1. 打开您的项目。
 
-   * 对于iOS，打开 `Capture.xcodeproj` 在Xcode中
+   * 对于iOS，在Xcode中打开`Capture.xcodeproj`
    * 对于Android，在Eclipse中打开Android项目。
-   * 对于Windows，打开 `MWSWindows.sln` 在Visual Studio中。
+   * 对于Windows，在Visual Studio中打开`MWSWindows.sln`。
 
 1. 导航到templates文件夹。
 
-   * 在Xcode中，导航到 **捕获> www > wsmobile > js >运行时>模板** 文件夹。
-   * 在Eclipse中，导航到 **资产> www > wsmobile > js >运行时>模板** 文件夹。
-   * 在Visual Studio中，导航到 **MWSWindows > www > wsmobile > js >运行时>模板** 文件夹。
+   * 在Xcode中，导航到&#x200B;**Capture > www > wsmobile > js > runtime > templates**&#x200B;文件夹。
+   * 在Eclipse中，导航到&#x200B;**assets > www > wsmobile > js > runtime > templates**&#x200B;文件夹。
+   * 在Visual Studio中，导航到&#x200B;**MWSWindows > www > wsmobile > js >运行时> templates**&#x200B;文件夹。
 
 1. 打开 `template.html` 文件以供编辑。
 1. 找到以下字符串：
@@ -49,9 +49,9 @@ ht-degree: 4%
                  <%} else
    ```
 
-   替换为 `<%`.
+   将其替换为`<%`。
 
-1. 在中找到以下代码 `template.html` 文件：
+1. 在`template.html`文件中找到以下代码：
 
    ```jsp
    <ul id="task_menu_list">
@@ -73,13 +73,13 @@ ht-degree: 4%
 
 1. 导航到css文件夹。
 
-   * 在Xcode中，导航到 **捕获> www > wsmobile > css**.
-   * 在Eclipse中，导航到 **资产> www > wsmobile > css**.
-   * 在Visual Studio中，导航到 **MWSWindows > www > wsmobile > css**.
+   * 在Xcode中，导航到&#x200B;**捕获> www > wsmobile > css**。
+   * 在Eclipse中，导航到&#x200B;**资产> www > wsmobile > css**。
+   * 在Visual Studio中，导航到&#x200B;**MWSWindows > www > wsmobile > css**。
 
 1. 打开 `_style.css` 文件以供编辑。
-1. 对于背景图像，更改 `#323232` 到 `#fff`.
-1. 保存更改并关闭 `_style.css` 文件。
+1. 对于背景图像，将`#323232`更改为`#fff`。
+1. 保存更改并关闭`_style.css`文件。
 1. 打开AEM Forms应用程序。
 
    AEM Forms应用程序现在显示说明，而不是说明。

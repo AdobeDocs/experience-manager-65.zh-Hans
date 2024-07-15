@@ -20,8 +20,8 @@ AEM 6.5遵循适用于包管理和项目结构的最新最佳实践，这些实�
 >
 >有关更多详细信息，请参阅：
 >
->* 此 [AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) AEMas a Cloud Service文档中的文章，了解如何构建现代AEM项目。
->* 此 [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) 有关如何使用原型启动新的AEM项目的文档。
->* 此 [Adobe内容包Maven插件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools) AEMas a Cloud Service文档中的文章，了解如何部署AEM应用程序。
+>* AEM as a Cloud Service文档中的[AEM项目结构](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html)一文，了解如何构建现代AEM项目。
+>* [AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)文档，介绍如何使用原型启动新的AEM项目。
+>* 有关如何部署AEM应用程序的AEM as a Cloud Service文档中的[Adobe内容包Maven插件](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html#developer-tools)文章。
 >
 >这三篇文档都适用于AEM 6.5。

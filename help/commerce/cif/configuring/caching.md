@@ -24,9 +24,9 @@ AEM CIF核心组件已内置支持缓存各个组件的GraphQL响应。 可以�
 
 为给定组件配置后，缓存将开始存储由每个缓存配置条目定义的GraphQL查询和响应。 高速缓存的大小和每个条目的高速缓存持续时间将根据项目来定义，具体取决于目录数据更改的频率、组件始终显示可能的最新数据的重要程度等等。 请注意，不存在任何缓存失效情况，因此在设置缓存持续时间时请务必谨慎。
 
-配置组件的缓存时，缓存名称必须是组件的名称， **代理** 您在项目中定义的组件。
+配置组件的缓存时，缓存名称必须是您在项目中定义的&#x200B;**代理**&#x200B;组件的名称。
 
-在客户端发送GraphQL请求之前，会检查是否 **精确** 已缓存同一GraphQL请求，并且可能返回缓存的响应。 为了匹配，GraphQL请求必须完全匹配，即查询、操作名称（如果有）、变量（如果有）必须全部等于缓存的请求，并且可能设置的所有自定义HTTP标头也必须相同。 例如，Adobe Commerce `Store` 标头必须匹配。
+在客户端发送GraphQL请求之前，它会检查是否已缓存&#x200B;**完全相同的**&#x200B;个GraphQL请求，并且可能会返回缓存的响应。 为了匹配，GraphQL请求必须完全匹配，即查询、操作名称（如果有）、变量（如果有）必须全部等于缓存的请求，并且可能设置的所有自定义HTTP标头也必须相同。 例如，Adobe Commerce `Store`标头必须匹配。
 
 ### 示例
 
@@ -44,26 +44,26 @@ com.adobe.cq.commerce.core.search.services.SearchFilterService:true:10:3600
 venia/components/structure/navigation:true:10:600
 ```
 
-在考虑 [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia) 已使用。 请注意组件代理名称的使用 `venia/components/structure/navigation`、和 **非** CIF导航组件的名称(`core/cif/components/structure/navigation/v1/navigation`)。
+当考虑使用[Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)时。 请注意，使用了组件代理名称`venia/components/structure/navigation`，而&#x200B;**不是** CIF导航组件的名称(`core/cif/components/structure/navigation/v1/navigation`)。
 
 其他组件的缓存应基于项目定义，通常与在Dispatcher级别配置的缓存协调定义。 请记住，这些缓存没有任何活动失效机制，因此应小心设置缓存持续时间。 没有任何“适合所有”的值能够匹配所有可能的项目和用例。 确保在项目级别定义最符合项目要求的缓存策略。
 
 ## Dispatcher缓存 {#dispatcher}
 
-在中缓存AEM页面或片段 [AEM调度程序](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 是任何AEM项目的最佳实践。 通常，它依赖于失效技术，以确保在AEM中更改的任何内容在Dispatcher中正确更新。 这是AEM Dispatcher缓存策略的核心功能。
+在[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)中缓存AEM页面或片段是任何AEM项目的最佳实践。 通常，它依赖于失效技术，以确保在AEM中更改的任何内容在Dispatcher中正确更新。 这是AEM Dispatcher缓存策略的核心功能。
 
 除了纯AEM托管内容，CIF页面通常可以显示通过GraphQL从Adobe Commerce动态获取的商务数据。 虽然页面结构本身可能永远不会更改，但商业内容可能会发生更改，例如，如果某些产品数据（如名称或价格）在Adobe Commerce中发生更改。
 
-为了确保CIF页面可以在AEM Dispatcher中的有限时间内缓存，我们因此建议使用 [基于时间的缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl) （也称为基于TTL的缓存）来缓存AEM Dispatcher中的CIF页面时。 此功能可在AEM中使用额外的 [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) 包。
+为了确保CIF页面可以在AEM Dispatcher中缓存有限的时间，因此我们建议在AEM Dispatcher中缓存CIF页面时使用[基于时间的缓存无效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-time-based-cache-invalidation-enablettl)（也称为基于TTL的缓存）。 可以使用额外的[ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/)程序包在AEM中配置此功能。
 
 对于基于TTL的缓存，开发人员通常会为选定的AEM页面定义一个或多个缓存持续时间。 这可确保CIF页面仅在AEM Dispatcher中缓存到配置的持续时间并且内容将经常更新。
 
 >[!NOTE]
 >
->虽然AEM Dispatcher可能会缓存服务器端数据，但某些CIF组件(如 `product`， `productlist`、和 `searchresults` 组件通常在加载页面时始终在客户端浏览器请求中重新获取产品价格。 这可确保在页面加载时始终获取重要的动态内容。
+>虽然AEM Dispatcher可能会缓存服务器端数据，但某些CIF组件（如`product`、`productlist`和`searchresults`组件）通常在加载页面时始终在客户端浏览器请求中重新获取产品价格。 这可确保在页面加载时始终获取重要的动态内容。
 
 ## 其他资源
 
 - [Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
 - [GraphQL缓存配置](https://github.com/adobe/commerce-cif-graphql-client#caching)
-- [AEM调度程序](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
+- [AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)

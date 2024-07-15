@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '6470'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->有关性能的一般准则，请阅读 [性能准则](/help/sites-deploying/performance-guidelines.md) 页面。
+>有关性能的一般准则，请阅读[性能准则](/help/sites-deploying/performance-guidelines.md)页。
 >
->有关故障排除和修复性能问题的更多信息，另请参阅 [性能树](/help/sites-deploying/performance-tree.md).
+>有关故障排除和修复性能问题的详细信息，另请参阅[性能树](/help/sites-deploying/performance-tree.md)。
 >
->此外，您还可以查看知识库文章，其主题为 [性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>此外，您还可以查看有关[性能优化提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)的知识库文章。
 
 关键问题是网站响应访客请求所用的时间。 尽管该值因每个请求而异，但可以定义平均目标值。 一旦证实该值既可实现，又可维护，就可使用它来监控网站的性能，并指示潜在问题的发展。
 
@@ -40,8 +40,8 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->* 在配置以进行性能优化后，请按照中的过程操作 [艰难的一天](/help/sites-developing/tough-day.md) 在重负载下测试环境。
->* 另请参阅 [性能调整提示。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+>* 在配置性能优化后，请按照[Touch Day](/help/sites-developing/tough-day.md)中的过程测试重负载下的环境。
+>* 另请参阅[性能优化提示。](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 ## 性能优化方法 {#performance-optimization-methodology}
 
@@ -126,11 +126,11 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 在常规的性能优化练习中，您最好的朋友包括：
 
-* 此 `request.log`
+* `request.log`
 * 基于组件的计时
 * Java™探查器。
 
-### 加载和编辑数字资产时的性能 {#performance-when-loading-and-editing-digital-assets}
+### 加载和编辑Digital Assets时的性能 {#performance-when-loading-and-editing-digital-assets}
 
 由于加载和编辑数字资产时涉及大量数据，因此性能可能会成为一个问题。
 
@@ -157,7 +157,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 性能（或缺缺性能）是用户首先注意到的事项之一，因此对于任何具有用户界面的应用程序而言，性能至关重要。 要优化AEM安装的性能，请监控实例的各种属性及其行为。
 
-有关如何执行性能监视的信息，请参见 [监控性能](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance).
+有关如何执行性能监视的信息，请参阅[监视性能](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)。
 
 导致性能问题的问题通常难以跟踪，即使其影响显而易见。
 
@@ -169,8 +169,8 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 性能也是卷和容量之间的平衡：
 
-* **音量**  — 系统处理和交付的输出量。
-* **容量**  — 系统传送卷的能力。
+* **卷** — 系统处理和传递的输出量。
+* **容量** — 系统传送卷的能力。
 
 可以在整个Web链的不同位置说明性能。
 
@@ -186,12 +186,12 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 在优化性能时，应牢记以下某些规则：
 
-* 性能调整 *必须* 成为每个项目的一部分。
+* 性能优化&#x200B;*必须*&#x200B;是每个项目的一部分。
 * 不要在开发周期的早期进行优化。
 * 性能只取决于最弱的链接。
 * 始终考虑容量与容量。
 * 首先优化重要内容。
-* 从不优化，不要 *现实* 目标。
+* 如果没有&#x200B;*现实的*&#x200B;目标，永远不要进行优化。
 
 >[!NOTE]
 >
@@ -203,7 +203,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 >[!NOTE]
 >
->请参阅 [性能优化](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html).
+>请参阅[性能优化](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)。
 
 ### 搜索索引 {#search-indexing}
 
@@ -223,23 +223,23 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 工作流引擎使用Apache Sling作业队列来处理和计划工作项处理。 默认情况下，已从Apache Sling作业队列配置服务工厂创建以下作业队列服务，用于处理工作流作业：
 
 * Granite工作流队列：大多数工作流步骤使用Granite工作流队列服务，例如处理DAM资产的步骤。
-* Granite工作流外部进程作业队列：此服务用于特殊外部工作流步骤，通常用于联系外部系统和轮询结果。 例如，“InDesign媒体提取流程”步骤作为外部流程实施。 工作流引擎使用外部队列处理轮询。 (请参阅 [com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Granite工作流外部进程作业队列：此服务用于特殊外部工作流步骤，通常用于联系外部系统和轮询结果。 例如，“InDesign媒体提取流程”步骤作为外部流程实施。 工作流引擎使用外部队列处理轮询。 (请参阅[com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)。)
 
 配置这些服务以限制并发运行的工作流进程的最大数量。
 
 >[!NOTE]
 >
->配置这些作业队列会影响所有工作流，除非您为特定工作流模型创建了作业队列(请参阅 [为特定工作流模型配置队列](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) 下)。
+>配置这些作业队列会影响所有工作流，除非您为特定工作流模型创建了作业队列（请参阅下面的[为特定工作流模型配置队列](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow)）。
 
 #### 存储库中的配置 {#configuration-in-the-repo}
 
-如果您正在配置服务 [使用sling：OsgiConfig节点](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)中，您必须找到现有服务的PID，例如：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台发现PID。
+如果您使用sling：OsgiConfig节点](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)配置服务[，则必须找到现有服务的PID，例如：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台发现PID。
 
-配置名为的属性 `queue.maxparallel`.
+配置名为`queue.maxparallel`的属性。
 
 #### Web控制台中的配置 {#configuration-in-the-web-console}
 
-配置这些服务 [使用Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)，在Apache Sling作业队列配置服务工厂下找到现有配置项目。
+要使用Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)配置这些服务[，请在Apache Sling作业队列配置服务工厂下找到现有配置项。
 
 配置名为Maximum Parallel Jobs的属性。
 
@@ -252,15 +252,15 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 * `com/adobe/granite/workflow/job*`
 * `com/adobe/granite/workflow/external/job*`
 
-工作流模型生成的实际作业主题包括特定于模型的后缀。 例如， **DAM更新资产** 工作流模型生成包含以下主题的作业：
+工作流模型生成的实际作业主题包括特定于模型的后缀。 例如，**DAM更新资产**&#x200B;工作流模型会生成具有以下主题的作业：
 
 `com/adobe/granite/workflow/job/etc/workflow/models/dam/update_asset/jcr_content/model`
 
 因此，您可以为与工作流模型的作业主题匹配的主题创建作业队列。 配置队列的性能相关属性只会影响生成与队列主题匹配的作业的工作流模型。
 
-以下过程使用为工作流创建作业队列 **DAM更新资产** 工作流为例。
+以下过程使用&#x200B;**DAM更新资产**&#x200B;工作流为工作流创建作业队列。
 
-1. 执行要为其创建作业队列的工作流模型，以便生成主题统计信息。 例如，将图像添加到资产以执行 **DAM更新资产** 工作流。
+1. 执行要为其创建作业队列的工作流模型，以便生成主题统计信息。 例如，将图像添加到Assets以执行&#x200B;**DAM更新资产**&#x200B;工作流。
 1. 打开Sling作业控制台(`https://<host>:<port>/system/console/slingevent`)。
 1. 在控制台中了解与工作流相关的主题。 对于DAM更新资产，可找到以下主题：
 
@@ -270,13 +270,13 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 1. 为每个主题创建一个作业队列。 要创建作业队列，请为Apache Sling作业队列工厂服务创建工厂配置。
 
-   工厂配置类似于中所述的Granite工作流队列 [并发工作流处理](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)，但主题属性与工作流作业的主题相匹配。
+   工厂配置类似于[并发工作流处理](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing)中描述的Granite工作流队列，但Topics属性与工作流作业的主题匹配。
 
 ### AEM DAM资源同步服务 {#cq-dam-asset-synchronization-service}
 
-此 `AssetSynchronizationService` 用于同步已装载的存储库(包括LiveLink、Documentum®等)中的资产。 默认情况下，此同步每300秒（5分钟）进行一次常规检查，因此，如果您不使用已装载的存储库，则可以禁用此服务。
+`AssetSynchronizationService`用于同步已装入的存储库(包括LiveLink、Documentum®等)中的资产。 默认情况下，此同步每300秒（5分钟）进行一次常规检查，因此，如果您不使用已装载的存储库，则可以禁用此服务。
 
-禁用服务操作由完成 [配置OSGi服务](/help/sites-deploying/configuring-osgi.md) **CQ DAM资产同步服务** 以设置 **同步周期** ( `scheduler.period`)到（最少）一年（以秒为单位定义）。
+禁用服务操作已通过[将OSGi服务](/help/sites-deploying/configuring-osgi.md) **CQ DAM资产同步服务**&#x200B;配置为将&#x200B;**同步周期** (`scheduler.period`)设置为（最少）一年（以秒为单位定义）。
 
 ### 多个DAM实例 {#multiple-dam-instances}
 
@@ -294,9 +294,9 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 性能对于您的发布环境至关重要。 因此，在实施项目时，您必须仔细规划和分析为发布环境进行的性能测试。
 
-本节旨在以标准化方式概述定义测试概念时遇到的一些问题，这些概念专门用于在您的计算机上进行性能测试。 *发布* 环境。 此信息主要与QA工程师、项目经理和系统管理员有关。
+本节旨在对定义测试概念时遇到的一些问题进行标准化概述，这些测试概念专门用于&#x200B;*publish*&#x200B;环境中的性能测试。 此信息主要与QA工程师、项目经理和系统管理员有关。
 
-AEM以下内容介绍在 *Publish* 环境。 该性能测试包括以下五个阶段：
+下面介绍在&#x200B;*Publish*&#x200B;环境中对AEM应用程序进行性能测试的标准化方法。 该性能测试包括以下五个阶段：
 
 * [知识验证](#verification-of-knowledge)
 * [范围的定义](#scope-definition)
@@ -317,7 +317,7 @@ AEM以下内容介绍在 *Publish* 环境。 该性能测试包括以下五个�
 
 记录用于性能测试的测试环境的架构。
 
-您需要复制计划的生产Publish环境，以及Dispatcher和负载平衡器。
+您需要复制已计划的生产Publish环境，以及Dispatcher和负载平衡器。
 
 #### 应用程序映射 {#application-map}
 
@@ -352,7 +352,7 @@ AEM以下内容介绍在 *Publish* 环境。 该性能测试包括以下五个�
 
 * 单组件测试
 * 组合组件测试
-* *上线* 方案
+* *上线*&#x200B;方案
 * 错误方案
 
 基于以下原则
@@ -366,7 +366,7 @@ AEM以下内容介绍在 *Publish* 环境。 该性能测试包括以下五个�
 
 #### 交易 {#transactions}
 
-* 术语事务用于表示完整网页的请求，包括页面本身和所有后续调用。 即页面请求、任何AJAX调用、图像和其他对象 **请求向下展开**.
+* 术语事务用于表示完整网页的请求，包括页面本身和所有后续调用。 即，页面请求、任何AJAX调用、图像和其他对象&#x200B;**请求深入分析**。
 * 要全面分析每个请求，可以表示调用栈栈的每个元素，然后合计每个请求的平均处理时间。
 
 ### 定义绩效目标 {#defining-the-performance-goals}
@@ -430,7 +430,7 @@ AEM以下内容介绍在 *Publish* 环境。 该性能测试包括以下五个�
 
 | 错误方案 | 错误类型 | 不适用。 用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
 |---|---|---|---|---|---|
-| 搜索组件过载 | 搜索全局通配符（星号） | 10 | 1 |  | 只搜索&amp;ast；&amp;ast；&amp;ast；。 |
+| 搜索组件过载 | 搜索全局通配符（星号） | 10 | 1 |  | 只搜索&amp;amp；ast；&amp;amp；ast；&amp;amp；ast；。 |
 |   | 停用词 | 20 | 2 |  | 正在搜索停用词。 |
 |   | 空字符串 | 10 | 1 |  | 正在搜索空字符串。 |
 |   | 特殊字符 | 10 | 1 |  | 正在搜索特殊字符。 |
@@ -458,7 +458,7 @@ AEM以下内容介绍在 *Publish* 环境。 该性能测试包括以下五个�
 
 我们提供了一系列工具，帮助您进行负载生成、性能监控和结果分析。 其中一些工具包括：
 
-* [JMet](https://jmeter.apache.org/)
+* [JMeter](https://jmeter.apache.org/)
 * [加载运行程序](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 * [红外线](https://www.infraredsoftware.com/)
 * [Java™交互式配置文件](https://jiprof.sourceforge.net/)
@@ -478,7 +478,7 @@ AEM以下内容介绍在 *Publish* 环境。 该性能测试包括以下五个�
 
 ## 使用Dispatcher时优化性能 {#optimizing-performance-when-using-the-dispatcher}
 
-此 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 是Adobe的缓存和/或负载平衡工具。 使用Dispatcher时，请考虑优化网站缓存性能。
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)是Adobe的缓存和/或负载平衡工具。 使用Dispatcher时，请考虑优化网站缓存性能。
 
 >[!NOTE]
 >
@@ -494,24 +494,24 @@ Dispatcher提供了多种内置机制，如果您的网站利用这些机制可�
 >
 >通常，许多缓存策略涉及选择完好的URL，并且不依赖此类额外数据。
 >
->使用Dispatcher版本4.1.11，您还可以缓存响应标头，请参阅 [缓存HTTP响应标头](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache).
+>使用Dispatcher版本4.1.11，您还可以缓存响应标头，请参阅[缓存HTTP响应标头](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)。
 >
 
 ### 计算Dispatcher缓存比率 {#calculating-the-dispatcher-cache-ratio}
 
 缓存比率公式估算缓存处理的请求占进入系统的请求总数的百分比。 要计算高速缓存比率，您需要以下各项：
 
-* 请求总数。 此信息在Apache中提供 `access.log`. 欲知更多详情，请参见 [Apache官方文档](https://httpd.apache.org/docs/2.4/logs.html#accesslog).
+* 请求总数。 此信息在Apache `access.log`中可用。 有关更多详细信息，请参阅[Apache官方文档](https://httpd.apache.org/docs/2.4/logs.html#accesslog)。
 
-* 发布实例服务的请求数。 此信息可在 `request.log` 实例的。 有关更多详细信息，请参阅 [解释request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log) 和 [查找日志文件](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files).
+* Publish实例服务的请求数。 此信息在实例的`request.log`中可用。 有关详细信息，请参阅[解释request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log)和[查找日志文件](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files)。
 
 计算缓存比的公式为：
 
-* (请求总数 **减号** 发布请求数) **划分** 按请求总数。
+* (请求总数&#x200B;**减去** Publish上的请求数)**除以**&#x200B;再除以请求总数。
 
-例如，如果请求总数为129491，并且发布实例提供的请求数58959为，则缓存比率为： **(129491 - 58959)/129491= 54.5%**.
+例如，如果请求总数为129491，而Publish实例提供的请求数58959为，则缓存比率为： **(129491 - 58959)/129491= 54.5%**。
 
-如果您没有一对一的发布者/Dispatcher配对，请将所有Dispatcher和发布者的请求一起添加以获取准确的测量。 另请参阅 [建议的部署](/help/sites-deploying/recommended-deploys.md).
+如果您没有一对一的发布者/Dispatcher配对，请将所有Dispatcher和发布者的请求一起添加以获取准确的测量。 另请参阅[建议的部署](/help/sites-deploying/recommended-deploys.md)。
 
 >[!NOTE]
 >
@@ -522,7 +522,7 @@ Dispatcher提供了多种内置机制，如果您的网站利用这些机制可�
 使用Dispatcher版本4.1.11，您可以缓存响应标头。 如果不在Dispatcher上缓存响应标头，则在标头中存储页面编码信息时，可能会出现问题。 在此情况下，当 Dispatcher 从缓存中提供一个页面时，Web 服务器的默认编码将用于该页面。可通过两种方式避免此问题：
 
 * 如果您只使用一种编码，请确保 Web 服务器上使用的编码与 AEM 网站的默认编码相同。
-* 要设置编码，请使用 `<META>` HTML中的标记 `head` 部分，如以下示例所示：
+* 要设置编码，使用 HTML `head` 部分中的 `<META>` 标记，如以下示例所示：
 
 ```xml
         <META http-equiv="Content-Type" content="text/html; charset=EUC-JP">
@@ -544,7 +544,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 >[!NOTE]
 >
->此URL调用与相同的页面和模板 `gallery.html`. 在模板定义中，您可以指定用于渲染页面的脚本，也可以对所有页面使用同一脚本。
+>此URL调用与`gallery.html`相同的页面和模板。 在模板定义中，您可以指定用于渲染页面的脚本，也可以对所有页面使用同一脚本。
 
 #### 按 URL 进行自定义  {#customize-by-url}
 
@@ -560,7 +560,7 @@ www.myCompany.com/news/main.large.html
 
 >[!NOTE]
 >
->对于大多数版面，也可以使用样式表或客户端脚本，或同时使用两者。 这些工具可以很好地与缓存配合使用。
+>对于大多数版面，还可以使用样式表或客户端脚本，或两者同时使用。这些工具可以很好地与缓存配合使用。
 >
 >此策略对于打印版本也很有用，您可以在打印版本中使用如下URL：
 >
@@ -577,7 +577,7 @@ www.myCompany.com/news/main.large.html
 
    `<page file name>.<image file name>`
 
-例如，您可以存储页面的标题 `myPage.html` 在 `file myPage.title.gif`. 由于此文件会在页面更新时自动被删除，因此对页面标题进行的任何更改都会自动反映在缓存中。
+例如，您可以将页面`myPage.html`的标题存储在`file myPage.title.gif`中。 由于此文件会在页面更新时自动被删除，因此对页面标题进行的任何更改都会自动反映在缓存中。
 
 >[!NOTE]
 >
@@ -593,28 +593,28 @@ www.myCompany.com/news/main.large.html
 
 请务必使用与页面相同的命名句柄创建这些图片，以确保内容更新会删除这些图片和页面。
 
-对于未修改的页面，图片将保留在缓存中，尽管页面本身会自动失效。
+对于未修改的页面，图片保留在缓存中，但页面本身会自动失效。
 
 #### 个性化 {#personalization}
 
 建议您将个性化限制在必要的地方。 原因如下：
 
 * 如果您使用可随意自定义的开始页面，则用户每次请求该页面时都必须对它进行编辑。
-* 相反，如果您提供了十个不同的开始页面以供选择，则可以缓存其中的每个页面，从而提高性能。
+* 相反，如果您有十个不同的开始页面可供选择，则可以缓存其中的每个页面，从而提高性能。
 
 >[!TIP]
->有关配置Dispatcher缓存的更多详细信息，请参阅 [AEM Dispatcher缓存教程](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html) 及其部分 [缓存受保护的内容。](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)
+>有关配置Dispatcher缓存的更多详细信息，请参阅[AEM Dispatcher缓存教程](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)及其有关[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)的部分。
 
 例如，如果将用户名放入标题栏中对每个页面进行个性化，则会影响性能。
 
 >[!TIP]
->有关缓存受保护内容的信息，请参阅 [缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans) 在Dispatcher指南中。
+>有关缓存受保护内容的信息，请参阅Dispatcher指南中的[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans)。
 
 关于在单个页面上混合受限内容和公共内容，请考虑以下策略：在Dispatcher中使用服务器端包含，或者在浏览器中通过Ajax使用客户端包含。
 
 >[!TIP]
 >
->有关处理混合的公开内容和受限内容，请参阅 [设置Sling动态包含。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
+>有关处理混合的公开和受限内容，请参阅[设置Sling动态包含。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### 粘性连接 {#sticky-connections}
 
@@ -624,12 +624,12 @@ www.myCompany.com/news/main.large.html
 
 浏览器可通过两种方式确定文件的类型：
 
-1. 通过其扩展(例如， `.html`， `.gif`、和 `.jpg`)。
+1. 按其扩展名（例如，`.html`、`.gif`和`.jpg`）。
 1. 按服务器随文件一起发送的 MIME 类型。
 
 对于大多数文件，MIME 类型隐含在文件扩展名中。那就是，
 
-1. 通过其扩展(例如， `.html`， `.gif`、和 `.jpg`)。
+1. 按其扩展名（例如，`.html`、`.gif`和`.jpg`）。
 1. 按服务器随文件一起发送的 MIME 类型。
 
 如果文件名没有扩展名，则以纯文本形式显示。
@@ -639,7 +639,7 @@ www.myCompany.com/news/main.large.html
 要确保正确缓存文件，请遵循以下准则：
 
 * 确保文件始终具有正确的扩展名。
-* 避免使用通用的文件服务脚本，这些脚本具有URL，例如 `download.jsp?file=2214`. 要使用包含文件规范的URL，请重写脚本。 对于上一个示例，此重写为 `download.2214.pdf`.
+* 避免使用通用文件服务脚本，这些脚本具有`download.jsp?file=2214`等URL。 要使用包含文件规范的URL，请重写脚本。 对于上一个示例，此重写为`download.2214.pdf`。
 
 ## 备份性能 {#backup-performance}
 
@@ -678,8 +678,8 @@ AEM配置将存储库和数据存储放在同一逻辑卷上，以及操作系�
 
 备份基准涵盖两种主要情况：在系统处于重大应用程序负载时进行备份，以及在系统空闲时进行备份。 虽然一般建议在AEM尽可能空闲时执行备份，但在某些情况下，当系统处于加载状态时必须运行备份。
 
-* **空闲状态**  — 在AEM上执行备份时，不执行其他活动。
-* **负载不足**  — 在系统负载低于在线进程的80%时执行备份。 备份延迟各不相同，可查看对负载的影响。
+* **空闲状态** — 在AEM上不使用其他活动执行备份。
+* **负载不足** — 在系统负载低于联机进程的80%时执行备份。 备份延迟各不相同，可查看对负载的影响。
 
 从AEM服务器日志中获取备份时间和结果备份的大小。 通常建议将备份安排在AEM空闲时（如午夜时）的关闭时间。 此方案代表了推荐的方法。
 
@@ -687,8 +687,8 @@ AEM配置将存储库和数据存储放在同一逻辑卷上，以及操作系�
 
 负载对备份性能的影响可通过有无此应用程序负载时的性能差异来估算。 通过比较每小时事务处理量的方案吞吐量，可以发现备份对应用程序吞吐量的影响；比较有无进行中的并发备份，以及备份操作时采用不同的“备份延迟”设置。
 
-* **延迟设置**  — 对于几种情况，备份延迟设置也有所变化，使用10毫秒（默认）、1毫秒和0毫秒的值来探索此设置如何影响备份性能。
-* **备份类型**  — 所有备份都是存储库的外部备份，这些备份在不创建zip文件的情况下发送到备份目录，但有一种情况除外，这种情况下直接使用tar命令进行比较。 由于无法将增量备份创建到zip文件，或者当以前的完全备份是zip文件时，备份目录方法最常用于生产环境。
+* **延迟设置** — 对于几种情况，备份延迟设置也有所变化，使用10毫秒（默认值）、1毫秒和0毫秒的值来探索此设置如何影响备份性能。
+* **备份类型** — 所有备份都是存储库的外部备份，这些备份在不创建zip文件的情况下发送到备份目录，但有一种情况除外，这种情况下直接使用tar命令进行比较。 由于无法将增量备份创建到zip文件，或者当以前的完全备份是zip文件时，备份目录方法最常用于生产环境。
 
 ### 结果摘要 {#summary-of-results}
 

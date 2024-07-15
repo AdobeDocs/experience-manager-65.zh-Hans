@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->[内容片段模型](/help/assets/content-fragments/content-fragments-models.md) 建议创建所有新的内容片段。
+>建议使用[内容片段模型](/help/assets/content-fragments/content-fragments-models.md)来创建所有新的内容片段。
 >
 >内容片段模型用于WKND中的所有示例。
 
@@ -45,19 +45,19 @@ ht-degree: 3%
 * `/conf/global/settings/dam/cfm/templates`
 运行时需要更改的全实例客户特定模板的位置。
 
-优先级顺序为（按降序排列） `/conf`， `/apps`， `/libs`.
+优先顺序为（降序） `/conf`、`/apps`、`/libs`。
 
 >[!CAUTION]
 >
->您 ***必须*** 不会更改中的任何内容 `/libs` 路径。
+>您&#x200B;***必须***&#x200B;不更改`/libs`路径中的任何内容。
 >
->这是因为 `/libs` 下次升级实例时将被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
+>这是因为下次升级实例时`/libs`的内容会被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
 >
 >建议用于配置和其他更改的方法是：
 >
->1. 重新创建所需项目(即，它存在于 `/libs`)，在 `/apps`
+>1. 在`/apps`下重新创建所需项（即`/libs`中存在的项）
 >
->1. 在中进行任何更改 `/apps`
+>1. 在`/apps`中进行任何更改
 >
 
 模板的基本结构保存在下：
@@ -120,13 +120,13 @@ conf
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>必填<br /> </p> </td>
-     <td>模板的标题(显示在 <strong>创建片段</strong> 向导)。</td>
+     <td><p><code>String</code></p> <p>必需<br /> </p> </td>
+     <td>模板的标题（显示在<strong>创建片段</strong>向导中）。</td>
     </tr>
     <tr>
      <td><code>jcr:description</code></td>
      <td><p><code>String</code></p> <p>可选</p> </td>
-     <td>描述模板用途的文本(显示在 <strong>创建片段</strong> 向导)。</td>
+     <td>描述模板用途的文本（显示在<strong>创建片段</strong>向导中）。</td>
     </tr>
     <tr>
      <td><code>initialAssociatedContent</code></td>
@@ -136,12 +136,12 @@ conf
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>必填</p> </td>
-     <td><p><code>true</code>，如果在创建内容片段时应创建表示内容片段的元素（主元素除外）的子资产； <em>false</em> 是否应“动态”创建。</p> <p><strong>注意</strong>：当前必须将此参数设置为 <code>true</code>.</p> </td>
+     <td><p><code>true</code>，如果在创建内容片段时应该创建表示内容片段的元素（主元素除外）的子资产；如果应该“动态”创建子资产，则为<em>false</em>。</p> <p><strong>注意</strong>：当前此参数必须设置为<code>true</code>。</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
      <td><p><code>Long</code></p> <p>必填</p> </td>
-     <td><p>内容结构的版本；当前支持：</p> <p><strong>注意</strong>：当前必须将此参数设置为 <code>2</code>.<br /> </p> </td>
+     <td><p>内容结构的版本；当前支持：</p> <p><strong>注意</strong>：当前此参数必须设置为<code>2</code>。<br /> </p> </td>
     </tr>
    </tbody>
   </table>
@@ -158,7 +158,7 @@ conf
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>必填</p> </td>
-     <td><p>包含内容片段元素定义的节点。 它是强制性的，并且需要为至少包含一个子节点 <strong>主要</strong> 元素，但可以包含[1..n]个子节点。</p> <p>使用模板时，元素子分支复制到片段的模型子分支。</p> <p>第一个元素(在CRXDE Lite中查看)自动视为 <i>主要</i> 元素；节点名称是无关的，并且节点本身除了由主资产表示之外不具有特殊意义；其他元素作为子资产处理。</p> </td>
+     <td><p>包含内容片段元素定义的节点。 它是强制性的，并且需要为<strong>Main</strong>元素至少包含一个子节点，但可以包含[1.n]个子节点。</p> <p>使用模板时，元素子分支复制到片段的模型子分支。</p> <p>第一个元素(在CRXDE Lite中查看)自动视为<i>main</i>元素；节点名称不相关，并且节点本身除了由主资源表示之外，不具有特殊意义；其他元素作为子资源处理。</p> </td>
     </tr>
    </tbody>
   </table>
@@ -185,12 +185,12 @@ conf
     <tr>
      <td><code>defaultContent</code></td>
      <td><p><code>String</code></p> <p>可选</p> <p>默认：“”</p> </td>
-     <td>元素的初始内容；仅在 <code>precreateElements</code><i> = </i><code>true</code></td>
+     <td>元素的初始内容；仅在<code>precreateElements</code><i> = </i><code>true</code>时使用</td>
     </tr>
     <tr>
      <td><code>initialContentType</code></td>
      <td><p><code>String</code></p> <p>可选</p> <p>默认： <code>text/html</code></p> </td>
-     <td><p>元素的初始内容类型；仅在 <code>precreateElements</code><i> = </i><code>true</code>；当前支持：</p>
+     <td><p>元素的初始内容类型；仅在<code>precreateElements</code><i> = </i><code>true</code>时使用；当前支持：</p>
       <ul>
        <li><code>text/html</code></li>
        <li><code>text/plain</code></li>
@@ -234,18 +234,18 @@ conf
     <tr>
      <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>如果存在变体节点，则此为必填字段</p> </td>
-     <td><p>定义初始变量。<br /> 默认情况下，变体会添加到内容片段的所有元素。</p> <p>该变体的初始内容将与相应元素相同(请参阅 <code class="code">defaultContent/
-       initialContentType</code>)</p> </td>
+     <td><p>定义初始变量。<br />默认情况下，该变量会添加到内容片段的所有元素。</p> <p>变体的初始内容将与相应元素相同（请参阅<code class="code">defaultContent/
+       initialContentType</code>）</p> </td>
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
      <td><p><code>String</code></p> <p>必填</p> </td>
-     <td>变体的标题(显示在片段编辑器的 <strong>变量</strong> 选项卡（左边栏）。</td>
+     <td>变量的标题(显示在片段编辑器的<strong>变量</strong>选项卡中（左边栏）)。</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
      <td><p><code>String</code></p> <p>可选</p> <p>默认：“”</p> </td>
-     <td>提供变体说明的文本 <span>(显示在片段编辑器的 <strong>变量</strong> 选项卡（左边栏）。</code></td>
+     <td>提供变量<span>的描述的文本(显示在片段编辑器的<strong>变量</strong>选项卡中（左边栏）)。</code></td>
     </tr>
    </tbody>
   </table>

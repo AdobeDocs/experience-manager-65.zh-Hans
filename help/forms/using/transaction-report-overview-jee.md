@@ -26,15 +26,15 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 默认情况下，事务记录处于禁用状态。 要启用事务报告，请执行以下步骤：
 
-1. 导航至 `/adminui` 例如，在JEE上的AEM Forms上， `http://10.14.18.10:8080/adminui`.
-1. 登录身份 **管理员**.
-1. 转到 **设置** > **核心系统设置** > **配置**.
-1. 单击复选框 **启用交易报告** 和 **保存** 设置。
+1. 导航到JEE上AEM Forms上的`/adminui`，例如`http://10.14.18.10:8080/adminui`。
+1. 以&#x200B;**管理员**&#x200B;登录。
+1. 转到&#x200B;**设置** > **核心系统设置** > **配置**。
+1. 单击此复选框可&#x200B;**启用交易报告**&#x200B;和&#x200B;**保存**&#x200B;设置。
 
    ![sample-transaction-report-jee](assets/enable-transaction-jee.png)
 
 1. 重新启动服务器。
-1. 除了服务器上的更改之外，您必须在客户端更新 `adobe-livecycle-client.jar` 文件（如果您使用相同的文件）。
+1. 除了服务器上的更改之外，如果您使用项目中的`adobe-livecycle-client.jar`文件，则必须在客户端更新该文件。
 
 <!--
 * You can [enable transaction recording](../../forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) from AEM Web Console. view transaction reports on author, processing, or publish instances. View transaction reports on author or processing instances for an aggregated sum of all transactions. View transaction reports on the publish instances for a count of all transactions that take place only on that publish instance from where the report is run.
@@ -44,23 +44,23 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 ## 查看事务报告 {#view-transaction-report}
 
-启用交易报告后，有关交易计数的信息将通过 [通过仪表板的交易报告](#transaction-report-dashboard) 和详细的 [通过日志文件提交事务报告](#transaction-report-logfile). 两者均说明如下：
+启用事务报告后，有关事务计数的信息将可通过仪表板](#transaction-report-dashboard)的[事务报告以及日志文件](#transaction-report-logfile)的详细[事务报告访问。 两者均说明如下：
 
 ### 通过仪表板的交易报告 {#transaction-report-dashboard}
 
 通过控制面板的事务处理报表提供每种事务处理类型的事务处理总数。 例如，您会获得有关渲染、转换和提交的表单总数的信息，如图所示。 要获取事务报告，请执行以下操作：
 
-1. 导航至 `/adminui` 例如，在您的AEM Forms on JEE上： `http://10.13.15.08:8080/adminui`.
-1. 登录身份 **管理员**.
+1. 导航到JEE上AEM Forms的`/adminui`，例如： `http://10.13.15.08:8080/adminui`。
+1. 以&#x200B;**管理员**&#x200B;登录。
 1. 单击“Health Monitor（运行状况监视器）”。
-1. 导航到 **交易报告器** 选项卡，单击 **计算总交易记录**，此时您会看到饼图表示已提交、已渲染或已转换的PDF forms数量。
+1. 导航到&#x200B;**交易报告器**&#x200B;选项卡，单击&#x200B;**计算交易总数**，现在您看到饼图表示提交、渲染或转换的PDF forms数。
 
 ![sample-transaction-report-jee](assets/transaction-piechart.png)
 
 
 ### 通过日志文件提供事务报告 {#transaction-report-logfile}
 
-通过日志文件提交事务报告提供了有关每个事务的详细信息。 要访问事务日志，请遵循相对于服务器启动的上下文路径。 事务被捕获到单独的日志文件中 `transaction_log.log` 默认情况下。 此 **文件路径** 相对于服务器启动上下文。 不同服务器的默认路径如下所示：
+通过日志文件提交事务报告提供了有关每个事务的详细信息。 要访问事务日志，请遵循相对于服务器启动的上下文路径。 默认情况下，事务被捕获到单独的日志文件`transaction_log.log`中。 **文件路径**&#x200B;相对于服务器启动上下文。 不同服务器的默认路径如下所示：
 
 ```
 For Jboss Turnkey:
@@ -100,11 +100,11 @@ TransactionRecord
 * **服务**：服务的名称。
 * **操作**：操作名称。
 * **internalService**：如果存在内部调用，则为被调用方的名称，否则与服务名称相同。
-* **internalOperation**：存在内部调用的被调用方的名称，其他情况与操作名称相同。
-* **transactionOperationType**：交易类型（提交、渲染、转换）。
-* **transactioncount**：交易总数。
-* **经过的时间**：呼叫启动与收到响应之间的时间。
-* **transactiondate**：指示何时调用服务的时间戳。
+* **internalOperation**：存在内部调用的被调用方的名称，否则与操作名称相同。
+* **transactionOperationType**：事务类型（提交、渲染、转换）。
+* **transactionCount**：事务总数。
+* **elapsedTime**：呼叫启动与收到响应之间的时间。
+* **transactionDate**：指示何时调用服务的时间戳。
 
 **示例事务日志**：
 
@@ -128,9 +128,9 @@ TransactionRecord
 
 记录事务的频率由服务器上对成功提交、渲染或转换的每个表单的更新操作确定。
 
-* 在 **仪表板**，则事务计数会定期更新，默认值为1分钟。 可以通过在设置系统属性来更新频率 `"com.adobe.idp.dsc.transaction.recordFrequency"`. 例如，在JBoss®上的AEM Forms for JEE中，添加 `-Dcom.adobe.idp.dsc.transaction.recordFrequency=5` 在 `JAVA_OPTS` 将更新频率设置为5分钟。
+* 在&#x200B;**仪表板**&#x200B;中，交易计数会定期更新，默认设置为1分钟。 您可以通过在`"com.adobe.idp.dsc.transaction.recordFrequency"`处设置系统属性来更新频率。 例如，在JBoss®上的AEM Forms for JEE中，在`JAVA_OPTS`中添加`-Dcom.adobe.idp.dsc.transaction.recordFrequency=5`以将更新频率设置为5分钟。
 
-* 在 **事务日志**，则在成功提交、渲染或转换表单时，会立即更新每个交易。
+* 在&#x200B;**事务日志**&#x200B;中，当表单成功提交、渲染或转换时，每个事务的更新都会立即发生。
 
 <!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 

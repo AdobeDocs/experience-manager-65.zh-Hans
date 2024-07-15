@@ -23,8 +23,8 @@ ht-degree: 0%
 
 ## 如何删除表单 {#how-to-delete-a-form}
 
-1. 登录到AEM Forms用户界面，方法是访问 `https://[hostname]:'port'/aem/forms.html.`
-1. 导航到要删除的表单并选择它。 单击“删除” ![aem6forms_delete2](assets/aem6forms_delete2.png) 确认删除操作。
+1. 通过访问`https://[hostname]:'port'/aem/forms.html.`登录到AEM Forms用户界面
+1. 导航到要删除的表单并选择它。 单击工具栏中的删除![aem6forms_delete2](assets/aem6forms_delete2.png)并确认删除操作。
 
    >[!NOTE]
    >
@@ -44,6 +44,6 @@ ht-degree: 0%
 
 在AEM Forms中，XFA表单模板可由自适应表单或其他XFA表单模板引用。 此外，模板可以引用资源或其他XFA模板。
 
-不建议删除自适应表单引用的XFA表单，因为它可能会损坏自适应表单。 当自适应表单引用XFA表单时，其字段会被绑定。 删除XFA后，自适应表单无法将其字段与XFA字段同步，并显示此类字段的错误消息。 要详细了解引用的XFA删除的影响以及脏的AF，请参阅 [更新引用的XFA表单](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p).
+不建议删除自适应表单引用的XFA表单，因为它可能会损坏自适应表单。 当自适应表单引用XFA表单时，其字段会被绑定。 删除XFA后，自适应表单无法将其字段与XFA字段同步，并显示此类字段的错误消息。 要了解有关引用的XFA删除的影响以及脏的AF的更多信息，请参阅[更新引用的XFA表单](/help/forms/using/get-xdp-pdf-documents-aem.md#p-updating-referenced-xfa-forms-p)。
 
 要删除此类XFA表单，请更新自适应表单并删除与XFA字段的绑定。

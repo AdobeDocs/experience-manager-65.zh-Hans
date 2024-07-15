@@ -38,11 +38,11 @@ ht-degree: 4%
 
 ## 管理标记 {#administering-tags}
 
-请参阅 [管理标记](../../help/sites-administering/tags.md#tagging-console) 用于创建和管理标记命名空间和分类。
+请参阅[管理标记](../../help/sites-administering/tags.md#tagging-console)以创建和管理标记命名空间和分类。
 
-请参阅 [Tag Essentials](tag.md) 以了解开发人员信息。
+有关开发人员信息，请参阅[Tag Essentials](tag.md)。
 
-请参阅 [使用社交标签云](tagcloud.md) 用于将Social标签云组件添加到页面，以便于使用应用的标签搜索已发布的UGC。
+请参阅[使用Social Tag Cloud](tagcloud.md)，将Social Tag Cloud组件添加到页面，以便使用应用的标记搜索已发布的UGC。
 
 ### 标记权限 {#tag-permissions}
 
@@ -50,8 +50,8 @@ ht-degree: 4%
 
 由于标记应用于发布环境中的UGC，因此需要为社区成员启用读取权限，以便他们能够选择要应用的标记。
 
-请参阅 [设置标记权限](../../help/sites-administering/tags.md#setting-tag-permissions).
+请参阅[设置标记权限](../../help/sites-administering/tags.md#setting-tag-permissions)。
 
-下面是管理员将读取权限应用于 `/etc/tag/discussions` 对于组 `Community Engage Members`.
+下面是管理员对组`Community Engage Members`的`/etc/tag/discussions`应用读取权限时，它在CRXDE中的显示方式。
 
-![tag-permissions](assets/tag-permissions.png)
+![标记权限](assets/tag-permissions.png)

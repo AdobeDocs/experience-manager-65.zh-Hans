@@ -24,9 +24,9 @@ ht-degree: 34%
 >
 >在桌面设备上多选：
 >
->* Windows： **Ctrl**+**单击** 在必需组件上。
+>* Windows： **Ctrl**+**单击所需组件上的**。
 >
->* Mac： **Cmd**+**单击** 在必需组件上。
+>* Mac： **Cmd**+**单击所需组件上的**。
 >
 
 ## 键盘快捷键 {#keyboard-shortcuts}
@@ -41,9 +41,9 @@ ht-degree: 34%
   <tr>
    <td>控制台</td>
    <td><strong><code>Shift-Double-Click</code></strong><br /> （在所需页面上）</td>
-   <td>在新窗口中打开页面。<br /> <strong>注意：</strong> 这是可操作的，如果 <a href="/help/sites-classic-ui-authoring/author-env-user-props.md">用户属性</a> 设置为“单个窗口”；如果设置为“多个窗口”，则这是默认行为。</td>
+   <td>在新窗口中打开页面。<br /> <strong>注意：</strong>如果将<a href="/help/sites-classic-ui-authoring/author-env-user-props.md">用户属性</a>设置为单个窗口，则此操作可操作；如果为多个窗口，则这是默认行为。</td>
   </tr>
  </tbody>
 </table>
 
-桌面用户在使用时，还可以使用各种键盘快捷键 [页面编辑器](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) 以创作页面。
+在使用[页面编辑器](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)创作页面时，桌面用户也可以使用各种键盘快捷键。

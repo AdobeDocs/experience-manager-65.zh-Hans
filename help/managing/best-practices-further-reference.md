@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 清单 — 进一步参考{#the-checklist-further-reference}
 
-本页进一步详述和/或充实本文件所涵盖的文件和原则。 [管理项目 — 最佳实践核对清单](/help/managing/best-practices.md).
+本页提供了进一步的详细信息，以详细阐述和/或扩大[管理项目 — 最佳实践核对清单](/help/managing/best-practices.md)所涵盖的文档和原则。
 
 ## AEM — 您将使用什么？ {#aem-what-will-you-be-using}
 
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 ### AEM中的功能 {#features-within-aem}
 
-在实施AEM（尤其是第一次）时，请查阅 [AEM的功能和工作流](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html) 确定您想要或需要哪些区域。
+在实施AEM时（特别是第一次），请查看AEM](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)的[功能和工作流，以确定您需要或需要的区域。
 
 考虑您正在使用的AEM功能及其对设计的影响；例如：
 
@@ -40,13 +40,13 @@ ht-degree: 1%
 * [Forms](/help/forms/using/introduction-aem-forms.md)
 * [社区](/help/communities/deploy-communities.md)
 
-此外，请查看 [发行说明](/help/release-notes/release-notes.md)AEM ，以了解何时添加了任何新功能。
+此外，对于各种AEM版本，请查看[发行说明](/help/release-notes/release-notes.md)以了解何时添加了任何新功能。
 
 ### 集成 {#integrations}
 
 AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作流可以增加您能够使用的功能和能力。
 
-请参阅 [解决方案集成](/help/sites-administering/integration.md) 获取完整信息。
+有关完整信息，请参阅[解决方案集成](/help/sites-administering/integration.md)。
 
 ## 是否迁移或升级？ {#migrate-or-upgrade}
 
@@ -57,8 +57,8 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 从以前的版本移动到当前的版本时，有两个选项：
 
-* 使用 [包管理器](/help/sites-administering/package-manager.md) 将所有内容和应用程序代码从旧系统导出到新系统。
-* [升级](/help/sites-deploying/upgrade.md) 旧系统就位。 此方法通常是推荐的选择。
+* 使用[包管理器](/help/sites-administering/package-manager.md)将所有内容和应用程序代码从旧系统导出到新系统。
+* [就地升级](/help/sites-deploying/upgrade.md)旧系统。 此方法通常是推荐的选择。
 
 ## 基本基本基本规则 {#basic-ground-rules}
 
@@ -66,7 +66,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 >[!NOTE]
 >
->这些点是通用的， [最佳实践核对清单](/help/managing/best-practices.md) 处理与AEM相关的具体信息。
+>这些要点是一般性的，[最佳实践核对清单](/help/managing/best-practices.md)将处理与AEM相关的具体信息。
 
 * **角色**
 
@@ -81,7 +81,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 * **参与**
 
-  通过尽快吸引相关方，您可以鼓励他们成为 *利益相关者* 在项目中。 这样做增加了他们对其成功的承诺。
+  通过尽快吸引相关方参与，您可以鼓励他们成为项目中的&#x200B;*利益相关者*。 这样做增加了他们对其成功的承诺。
 
    * 在客户方面，此角色包括日常使用系统的作者
    * 在您自己的项目团队中，这种参与还包括负责质量保证的人员。 他们越了解客户的需求，就越能更好地规划测试。
@@ -90,7 +90,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
    * 虽然沟通途径不应过度正规化，但具体的定义应确保关键人物始终了解情况，从而了解最新情况。 应特别注意与外部各方的沟通。
 
-* **进程**
+* **个进程**
 
   定义的流程取决于您的单个项目。 同样，请尽量简化这些流程，同时考虑：
 
@@ -99,7 +99,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 * **跟踪工具**
 
-  有许多工具可用于跟踪有关项目的错误、任务和其他方面的信息 — 请参阅 [潜在工具概述](#overview-of-potential-tools) 以了解更多详细信息。
+  有许多工具可用于跟踪有关错误、任务以及项目其他方面的信息 — 有关更多详细信息，请参阅[潜在工具概述](#overview-of-potential-tools)。
 
    * 这里要注意的关键点是，只保留信息的一个副本，并共享信息（因此可以访问正在使用的工具）。 此工作流可简化维护并有助于防止出现差异。
 
@@ -110,7 +110,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
    * 单个版本（如果使用迭代发布流程，且无论它们是交付给客户还是内部测试团队）。
    * AEM项目。
    * 整个项目；包括任何第三方软件、它们对测试的影响、组织问题以及许多其他问题。
-   * 对于某些方面，陈述以下内容也会很有用 *非* 在项目范围内。 这种想法有助于防止混淆和错误假设，尽管应限于基本问题。
+   * 对于某些方面，在项目范围内声明&#x200B;*而非*&#x200B;也很有用。 这种想法有助于防止混淆和错误假设，尽管应限于基本问题。
 
 * **报表**
 
@@ -150,22 +150,22 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 ### 目标量度 {#target-metrics}
 
-量度用于定义网站质量的量化度量。 它们基本上是您要实现的性能目标的定义，可用于定义您的 [KPI（关键绩效指标）](#key-performance-indicators-and-target-metrics).
+量度用于定义网站质量的量化度量。 它们基本上是您要实现的绩效目标的定义，可用于定义您的[KPI（关键绩效指标）](#key-performance-indicators-and-target-metrics)。
 
-可以定义许多量度，但您定义的量度通常涵盖性能和并发性的目标。 特别是难以量化，且往往容易出现以下问题的因素 *情绪化* 评估：
+可以定义许多量度，但您定义的量度通常涵盖性能和并发性的目标。 特别是难以量化，且往往易于&#x200B;*情绪化*&#x200B;评估的因素：
 
-* “网站是 *太慢了* 今天” — 何时发送 *慢* 符合条件？
+* “网站&#x200B;*太慢*&#x200B;今天” — *慢于*&#x200B;何时符合条件？
 
-* “所有内容 *磨得停下来* 当我的同事登录时” — 系统可支持多少位并发用户？
-* “当我搜索时，系统 *磨得停下来* “ — 哪些搜索请求正在影响系统？
-* “它需要 *年龄* 下载文件” — 可接受的下载时间是多少（在正常网络条件下）？
+* “当我的同事登录时，所有&#x200B;*都会暂停*” — 系统可支持多少并发用户？
+* “当我搜索时，系统&#x200B;*陷入停止* ” — 哪些搜索请求正在影响系统？
+* “下载文件需要&#x200B;*时间*” — 可接受的下载时间是多少（在正常网络条件下）？
 
 目标量度是在项目开始时定义的，用于：
 
 * 指示您可以提供的网站的预期维度
 * 指明要达到的最低质量
 * 定义如何衡量这些因素
-* 用作 [关键绩效指标](#key-performance-indicators-and-target-metrics)
+* 用作[关键绩效指标](#key-performance-indicators-and-target-metrics)的基础
 
 与往常一样，在定义目标量度时必须谨慎：
 
@@ -189,7 +189,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 所有测量的量度都受项目设计的影响。 相反，许多问题最好通过设计更改来解决。
 
-因此，请定义您的目标量度 *早于* 决定你的设计。 这样做使您能够根据这些因素优化设计。 在项目开发后，对基本设计原则充满挑战。
+因此，在决定您的设计之前&#x200B;*定义您的目标指标*。 这样做使您能够根据这些因素优化设计。 在项目开发后，对基本设计原则充满挑战。
 
 在为网站创建结构时，请遵循为AEM网站推荐的结构。 确保您了解以下问题和/或原则：
 
@@ -227,7 +227,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 * 搜索请求的响应时间
 
-此部分可通过以下方式阅读： [性能优化](/help/sites-deploying/configuring-performance.md) 这扩展了实际测量性能的技术细节。
+可以通过[性能优化](/help/sites-deploying/configuring-performance.md)读取此部分，该部分扩展了实际测量性能的技术详细信息。
 
 #### 单个页面的响应时间 {#response-times-for-individual-pages}
 
@@ -246,7 +246,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
    * 适合在更新内容页面和这些页面上的单个元素时生成大量请求的少数用户
    * 尽可能快地最大限度地提高将您的内容放到网站上的工作效率
 
-* **发布环境**
+* **Publish环境**
 
   此环境包含可供用户使用的内容：
 
@@ -276,7 +276,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 * 在发布时测量（无创作环境和/或CFC开销）
 * 在服务器上测量（无网络开销）
-* 未缓存(无AEM输出缓存，无Dispatcher缓存)
+* 未缓存(无AEM-output缓存，无Dispatcher缓存)
 * 仅适用于具有许多依赖关系的复杂项目(HTML、JS、PDF...)
 * 系统上没有其他负载
 
@@ -284,9 +284,9 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 * **使用AEM request.log监控响应时间**
 
-  请求日志是性能分析的一个良好起点。 除其他信息外，您还可以查看各个请求的响应时间。 请参阅 [性能优化](/help/sites-deploying/configuring-performance.md) 以了解更多详细信息。
+  请求日志是性能分析的一个良好起点。 除其他信息外，您还可以查看各个请求的响应时间。 有关详细信息，请参阅[性能优化](/help/sites-deploying/configuring-performance.md)。
 
-* **使用HTML注释监控响应时间**
+* **使用HTML注释监视响应时间**
 
   HTML注释可用于在每个页面的源中包含响应时间信息：
 
@@ -316,15 +316,15 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 * **使用AEM request.log监控搜索响应时间**
 
-  request.log同样可用于监视搜索请求的响应时间；请参阅 [性能优化](/help/sites-deploying/configuring-performance.md) 以了解更多详细信息。
+  再次使用request.log监视搜索请求的响应时间；有关详细信息，请参阅[性能优化](/help/sites-deploying/configuring-performance.md)。
 
-* **用于测量搜索响应时间的编程机构**
+* **用于测量搜索响应时间的编程机制**
 
-  要自定义您收集的有关搜索请求的信息及其性能，建议您在项目源代码中包含信息收集；请参阅 [性能优化](/help/sites-deploying/configuring-performance.md) 以了解更多详细信息。
+  要自定义您收集的有关搜索请求及其性能的信息，建议您在项目源代码中包含信息收集；有关更多详细信息，请参阅[性能优化](/help/sites-deploying/configuring-performance.md)。
 
 ### 并发 {#concurrency}
 
-在创作环境和发布环境中使您的网站对某些用户和访客可用。 这些数字通常比您在测试时所使用的要多，但也会出现波动且难以预测。 为平均数量的并发用户和访客设计网站，但不考虑对性能产生负面影响。 同样，使用 `request.log` 进行并发测试。 请参阅 [性能优化](/help/sites-deploying/configuring-performance.md) 以了解更多详细信息。
+在创作环境和发布环境中使您的网站对某些用户和访客可用。 这些数字通常比您在测试时所使用的要多，但也会出现波动且难以预测。 为平均数量的并发用户和访客设计网站，但不考虑对性能产生负面影响。 再次使用`request.log`进行并发测试。 有关详细信息，请参阅[性能优化](/help/sites-deploying/configuring-performance.md)。
 
 并发用户数量的目标取决于环境类型：
 
@@ -332,7 +332,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
    * 通常可以准确估计并发用户的数量。 您可以了解总共有多少位作者，但（可能）并非所有作者同时处于活动状态。
 
-* **发布环境**
+* **Publish环境**
 
    * 预测发布环境更具挑战性，因此您必须选择目标值。 同样，它应该基于您当前网站的经验以及您新网站的现实期望。
    * 特殊活动（例如，当您发布新的热门内容时）可能会超出预期，甚至超出功能（当某些活动的门票可供出售时，媒体有时会报道过这种情况）。
@@ -341,11 +341,11 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 在讨论相关量度之前，请快速定义术语：
 
-* **音量**
+* **卷**
 
    * 系统处理和投放的输出量。
 
-* **容量**
+* **产能**
 
    * 系统传送卷的能力。
    * 每一步骤的容量和体积测量方式均不同，如下表所示。 要获得最佳性能，请确保容量与每一步的卷相匹配，并且容量和卷在所有步骤中共享。 例如，您可以计算客户端计算机上的导航，或将其放入缓存中，而不是在服务器上为每个请求计算导航。
@@ -357,7 +357,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
   | 客户 | 用户计算机的计算能力。 | 页面布局的复杂性。 |
   | 网络 | 网络带宽。 | 页面的大小（代码、图像等）。 |
   | Dispatcher缓存 | Web服务器的服务器内存（主内存和硬盘）。 | Web服务器（主内存和硬盘）。 缓存页面的数量和大小。 |
-  | 输出缓存 | AEM服务器的服务器内存（主内存和硬盘）。 | 输出缓存中的页数和页大小，每页的依赖关系数。 Dispatcher缓存降低了此卷。 |
+  | 输出缓存 | AEM服务器的服务器内存（主内存和硬盘）。 | 输出缓存中的页数和页大小，每页的依赖关系数。 Dispatcher缓存会降低此卷。 |
   | Web 服务器 | Web服务器的计算能力。 | 请求数。 缓存功能会降低此数量。 |
   | 模板 | Web服务器的计算能力。 | 模板的复杂性。 |
   | 存储库 | 存储库的性能。 | 从存储库加载的页数。 |
@@ -372,9 +372,9 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 ## 安全性 {#security}
 
-安全是至关重要的，也是日益严峻的挑战。 It ***必须*** 从项目的最初阶段开始考虑和规划。
+安全是至关重要的，也是日益严峻的挑战。 ***必须***&#x200B;从项目的最初阶段开始考虑和计划。
 
-此 [安全核对清单](/help/sites-administering/security-checklist.md) 详细介绍在部署时应采取的确保安全AEM安装的步骤。 其他安全方面包含在 [安全性（开发时）](/help/sites-developing/security.md) 和 [用户管理和安全性](/help/sites-administering/security.md).
+[安全核对清单](/help/sites-administering/security-checklist.md)详细说明了为确保您的AEM安装在部署时安全而应采取的步骤。 其他安全性方面包含在[安全性（开发时）](/help/sites-developing/security.md)和[用户管理和安全性](/help/sites-administering/security.md)中。
 
 ## 并行和迭代任务 {#parallel-and-iterative-tasks}
 
@@ -382,18 +382,18 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 >
 >以下各项：
 >
->* 提供与 *第一* AEM项目的实施。
->* 旨在作为抽象概述；请参阅 [项目核对清单](/help/managing/best-practices.md) 特定阶段/里程碑/任务。
+>* 提供与AEM项目的&#x200B;*first*&#x200B;实现相关的概述。
+>* 旨在作为抽象概述；有关具体阶段/里程碑/任务，请参阅[项目核对清单](/help/managing/best-practices.md)。
 >* 任何时间尺度都是理论上的。
 >
 
 对于标准AEM项目的新实施，请考虑以下任务：
 
 * 从Sales流程移交。
-* 客户应用程序的实施(**开发**)。
-* 在客户场所安装和配置基础架构（及相关流程） (**基础架构**)。
-* 创建（或迁移）内容(**内容**)。
-* 移交给操作(**维护/支持**)。
+* 客户应用程序的实现（**开发**）。
+* 在客户站点（**基础架构**）上安装和配置基础架构（及相关流程）。
+* 创建（或迁移）内容（**内容**）。
+* 切换到操作（**维护/支持**）。
 * 跟进发行。
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
@@ -404,11 +404,11 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
 
 >[!NOTE]
 >
->要在实际的生产环境中进行调整、优化和用户培训，请将项目启动拆分为 **软启动** （减少了可用性，进行了多次迭代）和 **硬启动** （完全可用 — 正式启用）。
+>要在实际的生产环境中进行调整、优化和用户培训，请将项目启动项拆分为&#x200B;**软启动项**（降低可用性，多次迭代）和&#x200B;**硬启动项**（完全可用性 — 实时）。
 
 >[!NOTE]
 >
->请参阅 [项目核对清单](/help/managing/best-practices.md) 例如在项目的生命周期中您应该执行（或评估）的任务示例。
+>请参阅[项目核对清单](/help/managing/best-practices.md)以了解在项目生命周期中您应该执行（或评估）的任务示例。
 
 每个类别需要注意以下几点：
 
@@ -524,10 +524,10 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
    <td><p>AEM本身提供了一系列机制来帮助您监控、测试、调查和调试应用程序，包括：</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">开发人员模式</a></li>
-     <li>此 <a href="/help/sites-developing/hobbes.md">测试控制台</a></li>
+     <li><a href="/help/sites-developing/hobbes.md">测试控制台</a></li>
      <li><a href="/help/sites-administering/operations-dashboard.md">操作功能板</a></li>
      <li><a href="/help/sites-authoring/content-insights.md">内容分析</a></li>
-     <li>此 <a href="/help/sites-authoring/author-environment-tools.md#content-tree">内容树</a></li>
+     <li><a href="/help/sites-authoring/author-environment-tools.md#content-tree">内容树</a></li>
     </ul> </td>
   </tr>
   <tr>
@@ -536,7 +536,7 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
   </tr>
   <tr>
    <td>硒</td>
-   <td><a href="https://www.selenium.dev/">硒</a> 是一个开源测试工具。 测试直接在浏览器中运行 — 模拟用户的工作方式。</td>
+   <td><a href="https://www.selenium.dev/">Selenium</a>是一种Open Source测试工具。 测试直接在浏览器中运行 — 模拟用户的工作方式。</td>
   </tr>
   <tr>
    <td>Microsoft®项目</td>
@@ -544,23 +544,23 @@ AEM可以与其他Adobe产品、第三方服务或两者集成。 这些工作�
   </tr>
   <tr>
    <td>Jira</td>
-   <td><a href="https://www.atlassian.com/software/jira">Jira</a> 是一个用于跟踪和管理软件错误详细信息的开源工具。 可以根据需要对错误详细信息施加工作流。</td>
+   <td><a href="https://www.atlassian.com/software/jira">Jira</a>是一种用于跟踪和管理软件错误详细信息的Open Source工具。 可以根据需要对错误详细信息施加工作流。</td>
   </tr>
   <tr>
    <td>Git</td>
-   <td><a href="https://git-scm.com/">Git</a> 是一个版本控制软件。</td>
+   <td><a href="https://git-scm.com/">Git</a>是修订控制软件。</td>
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse是一个开源IDE，由各种项目组成。 它侧重于构建一个由可扩展的框架、工具和运行时组成的开放开发平台，以便在整个生命周期中构建、部署和管理软件。</p> <p>请参阅 <a href="/help/sites-developing/howto-projects-eclipse.md">如何使用Eclipse开发AEM项目</a> 以了解更多信息。</p> </td>
+   <td><p>Eclipse是一个开放的Source IDE，由各种项目组成。 它侧重于构建一个由可扩展的框架、工具和运行时组成的开放开发平台，以便在整个生命周期中构建、部署和管理软件。</p> <p>有关详细信息，请参阅<a href="/help/sites-developing/howto-projects-eclipse.md">如何使用Eclipse开发AEM项目</a>。</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>
-   <td><p>专业的（因此需要支付许可成本） IDE可提供全面的功能。 </p> <p>请参阅 <a href="/help/sites-developing/ht-intellij.md">如何使用IntelliJ IDEA开发AEM项目</a> 以了解更多信息。</p> </td>
+   <td><p>专业的（因此需要支付许可成本） IDE可提供全面的功能。 </p> <p>有关详细信息，请参阅<a href="/help/sites-developing/ht-intellij.md">如何使用IntelliJ IDEA开发AEM项目</a>。</p> </td>
   </tr>
   <tr>
    <td>Maven</td>
-   <td><a href="https://maven.apache.org/">Maven</a> 是一个软件项目管理和理解工具，可以管理项目的构建过程（软件和文档）。</td>
+   <td><a href="https://maven.apache.org/">Maven</a>是一种软件项目管理和理解工具，可以管理项目的构建过程（软件和文档）。</td>
   </tr>
  </tbody>
 </table>

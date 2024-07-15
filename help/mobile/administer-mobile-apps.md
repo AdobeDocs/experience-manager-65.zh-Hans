@@ -31,4 +31,4 @@ AEM Mobile提供了多种创建应用程序的方法。 您可以使用以下不
 
 >[!NOTE]
 >
->如果您是Adobe Experience Manager的新用户，则可能需要逐步了解 [AEM快速入门](/help/sites-deploying/deploy.md).
+>如果您是Adobe Experience Manager的新用户，则可能需要逐步了解[AEM快速入门](/help/sites-deploying/deploy.md)。

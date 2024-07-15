@@ -48,7 +48,7 @@ ht-degree: 0%
 |---|---|
 | /filter | 标识要解析的文件。 |
 | /parsers/vaultxml | 配置保险库文件的解析。 标识包含外部化字符串和本地化提示的JCR节点。 还会标识要忽略的JCR节点。 |
-| /parsers/javascript | 标识可将字符串外部化的JavaScript函数。 您无需更改此分区。 |
+| /parsers/javascript | 标识用于将字符串外部化的JavaScript函数。 您无需更改此分区。 |
 | /parsers/regexp | 配置对Java、JSP和ExtJS模板文件的解析。 您无需更改此分区。 |
 | /潜在 | 检测要国际化的字符串的公式。 |
 
@@ -66,10 +66,10 @@ i18n.any文件的/filter部分标识xgettext-maven-plugin工具解析的文件�
 | 前缀 | 效果 |
 |---|---|
 | / | 指示JCR路径。 因此，该前缀与jcr_root目录下的文件匹配。 |
-| &amp;ast； | 指示文件系统中的常规文件。 |
+| &amp;amp；ast； | 指示文件系统中的常规文件。 |
 | 无 | 没有前缀或以文件夹或文件名开头的模式表示文件系统中的常规文件。 |
 
-当在模式中使用时，/字符表示子目录，&amp;ast；字符与全部匹配。 下表列出了几个规则示例。
+当在模式中使用时，/字符表示子目录，而&amp;amp；ast；字符匹配所有。 下表列出了几个规则示例。
 
 <table>
  <tbody>
@@ -135,9 +135,9 @@ mvn xgettext:extract
 ### 输出文件 {#output-files}
 
 * `raw.xliff`：提取的字符串
-* `warn.log`：警告（如果有） `CQ.I18n.getMessage()` API使用不正确。 它们总是需要修复，然后再重新运行。
+* `warn.log`：如果`CQ.I18n.getMessage()` API使用不正确，则出现警告（如果有）。 它们总是需要修复，然后再重新运行。
 
 * `parserwarn.log`：解析器警告（如果有），例如js解析器问题
-* `potentials.xliff`：“潜在”候选者未提取，但可能是人类可读的需要翻译的字符串（可以忽略，仍然会生成大量误报）
-* `strings.xliff`：拼合的xliff文件，将导入ALF
+* `potentials.xliff`：未提取的“潜在”候选项，这些候选项可能是需要翻译的可读字符串（可以忽略，仍会产生大量误报）
+* `strings.xliff`：要导入到ALF中的平面化xliff文件
 * `backrefs.txt`：允许快速查找给定字符串的源代码位置

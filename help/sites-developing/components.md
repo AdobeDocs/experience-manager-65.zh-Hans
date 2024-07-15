@@ -31,7 +31,7 @@ ht-degree: 44%
 * 拥有标准化的用户界面。
 * 具有可配置的编辑行为。
 * 使用使用基于Granite UI组件的子元素构建的对话框
-* 使用进行开发 [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) （推荐）或JSP。
+* 使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)（推荐）或JSP开发。
 * 可以开发以创建扩展默认功能的自定义组件。
 
 由于组件是模块化的，因此您可以：
@@ -45,40 +45,40 @@ ht-degree: 44%
 
 * 是一种资源类型。
 * 是一个完全实施特定功能的脚本的集合。
-* 可以在以下位置运行： *隔离*，即在AEM或门户中。
+* 可在&#x200B;*isolation*&#x200B;中运行，即在AEM或门户中运行。
 
 ## AEM中的现成组件 {#out-of-the-box-components-within-aem}
 
-AEM随附多种 [开箱即用的组件](/help/sites-authoring/default-components.md) 功能全面，包括：
+AEM附带了各种[现成的组件](/help/sites-authoring/default-components.md)，这些组件可提供全面的功能，包括：
 
-* 段落系统( `parsys`)
-* 页面( `responsivegrid`  — 仅限触控式UI)
+* 段落系统(`parsys`)
+* 页面（`responsivegrid` — 仅限触控式UI）
 * 文本
 * 图像，带随附文本
 * 工具栏
 
-提供的组件及其在 [示例We.Retail网站](/help/sites-developing/we-retail.md) 提供了说明如何实施和使用组件的说明。 这些组件随所有源代码一起提供，可以按原样使用或用作已修改或扩展的组件的起点。
+在[示例We.Retail网站](/help/sites-developing/we-retail.md)中提供的组件及其用法说明了如何实施和使用组件。 这些组件随所有源代码一起提供，可以按原样使用或用作已修改或扩展的组件的起点。
 
 ### 核心组件和基础组件 {#core-components-and-foundation-components}
 
 提供了两组Adobe提供的AEM组件：
 
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
-* [基础组件](/help/sites-authoring/default-components-foundation.md)
+* [Foundation 组件 ](/help/sites-authoring/default-components-foundation.md)
 
-**核心组件** 随AEM 6.3引入，提供了灵活且丰富的创作功能。 此 [We.Retail引用站点](/help/sites-developing/we-retail.md) 说明了核心组件的使用方式，并体现了当前组件开发的最佳实践。
+**核心组件**&#x200B;是随AEM 6.3引入的，它提供了灵活且丰富的创作功能。 [We.Retail参考网站](/help/sites-developing/we-retail.md)说明了如何使用核心组件，并代表了组件开发的当前最佳实践。
 
-**基础组件** 已在AEM中提供了多个版本，并且在标准AEM安装中现成可用。 尽管仍受支持，但大多数技术已弃用，不再增强，并且基于旧版技术。
+**Foundation组件**&#x200B;已在AEM中提供了多个版本，并且可在标准AEM安装中现成使用。 尽管仍受支持，但大多数技术已弃用，不再增强，并且基于旧版技术。
 
 >[!NOTE]
 >
->[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 表示组件设计和开发的当前最佳实践，并用作参考实施。
+>[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)表示组件设计和开发的当前最佳实践，并用作参考实施。
 >
->[AEM现代化工具](modernization-tools.md) 可帮助迁移到核心组件。
+>[AEM现代化工具](modernization-tools.md)可以帮助迁移到核心组件。
 
 ### 查看可用组件 {#viewing-available-components}
 
-有关AEM实例中所有可用组件的概述，请使用 [组件控制台](/help/sites-authoring/default-components-console.md).
+有关AEM实例中所有可用组件的概述，请使用[组件控制台](/help/sites-authoring/default-components-console.md)。
 
 或者，您也可以使用 CRXDE Lite 获取存储库中所有可用组件的列表。
 
@@ -105,7 +105,7 @@ AEM随附多种 [开箱即用的组件](/help/sites-authoring/default-components
 * [内容片段的组件](/help/sites-developing/components-content-fragments.md)
 * [获取JSON格式的页面信息](/help/sites-developing/pageinfo.md)
 * [国际化组件](/help/sites-developing/i18n.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [使用隐藏条件](/help/sites-developing/hide-conditions.md)
 * 经典 UI
 

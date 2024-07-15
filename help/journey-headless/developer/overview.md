@@ -36,7 +36,7 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 
 >[!TIP]
 >
->如果您愿意 **通过实践学习** 具有技术倾向的AEM Headless教程，这些教程按API和框架组织，可在 [其他资源部分](#additional-resources) 本文档末尾。
+>如果您更喜欢&#x200B;**通过实践**&#x200B;学习并有技术倾向，请访问AEM Headless教程，这些教程按API和框架组织，并可在本文档末尾的[其他资源部分](#additional-resources)中找到。
 
 ## 受众 {#audience}
 
@@ -70,11 +70,11 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 | 6 | [如何通过 AEM Assets API 更新您的内容](update-your-content.md) | 了解如何使用 REST API 来访问和更新您的内容片段内容。 |
 | 7 | [如何汇总您的应用程序和 AEM Headless 中的内容](put-it-all-together.md) | 了解如何获取您的 AEM Project 并准备好使用 AEM Headless SDK 上线。 |
 | 8 | [如何使用 Headless 应用程序上线](go-live.md) | 了解如何实时部署应用程序，在Git中获取本地代码并将其移动到Cloud Manager Git中以用于CI/CD管道。 |
-| 9 | [可选 – 如何使用 AEM 创建单页应用程序 (SPA)](create-spa.md) | 了解AEM Headless功能后，探索如何将Headless投放与Headless投放结合使用，并了解如何使用AEM SPA Editor框架创建可编辑的SPA。 |
+| 9 | [可选 – 如何使用 AEM 创建单页应用程序 (SPA)](create-spa.md) | 了解AEM的Headless功能后，探索如何将Headless和Headless投放结合使用，并了解如何使用AEM SPA Editor框架创建可编辑的SPA。 |
 
 ## 后续内容 {#what-is-next}
 
-您现在已准备好开始您的 Adobe Headless 历程。我们鼓励您继续此历程的下一部分，并阅读此文章 [了解CMS Headless开发。](learn-about.md)
+您现在已准备好开始您的 Adobe Headless 历程。我们鼓励您继续此历程的下一部分，并阅读文章[了解CMS Headless开发。](learn-about.md)
 
 ### 选择您自己的冒险 {#choose-your-path}
 
@@ -92,9 +92,9 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [Headless 创作历程](/help/journey-headless/author/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
-* [Headless架构师历程](/help/journey-headless/architect/overview.md)  — 从这里开始了解Adobe Experience Manager强大而灵活的Headless功能，以及如何对项目内容进行建模。
-* [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans)  — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
+* [Headless架构师历程](/help/journey-headless/architect/overview.md) — 从这里开始了解Adobe Experience Manager强大而灵活的Headless功能，以及如何对项目内容进行建模。
+* [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans) — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
 
    * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
 
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)

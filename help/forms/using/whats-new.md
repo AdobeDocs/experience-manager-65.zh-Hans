@@ -25,7 +25,7 @@ ht-degree: 39%
 
 ## Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)中包含的内容
 
-Experience Manager6.5.19.0包括自2019年4月首次推出6.5以来发布的新功能、关键客户请求的增强功能、错误修复以及性能、稳定性和安全性改进。 [安装此Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html) 在Experience Manager6.5上。
+Experience Manager6.5.19.0包括自2019年4月首次推出6.5以来发布的新功能、关键客户请求的增强功能、错误修复以及性能、稳定性和安全性改进。 [在Experience Manager6.5上安装此Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
 
 ### 新增功能
 
@@ -43,15 +43,15 @@ Experience Manager6.5.19.0包括自2019年4月首次推出6.5以来发布的新�
 
 #### AEM Forms Designer的64位版本
 
-此 [AEM Forms Designer的64位版本](/help/forms/using/installing-configuring-designer.md) 提供增强的性能、可扩展性和内存管理，以增强您的表单创建体验。 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
+[64位版本的AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)可提供增强的性能、可扩展性和内存管理，以增强您的表单创建体验。 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
 
 #### 将自适应Forms连接到Microsoft® SharePoint列表
 
-AEM Forms提供了与以下对象的现成集成 [将表单数据直接提交到SharePoint列表](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list))，以便您使用SharePoint的列表功能。 您可以将Microsoft® SharePoint列表配置为表单数据模型的数据源，并使用使用表单数据模型提交操作将自适应表单与SharePoint列表连接起来。
+AEM Forms提供开箱即用的集成，允许您将表单数据直接提交到SharePoint列表](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)，从而您可以使用SharePoint的列表功能。 [您可以将Microsoft® SharePoint列表配置为表单数据模型的数据源，并使用使用表单数据模型提交操作将自适应表单与SharePoint列表连接起来。
 
 #### 支持为自适应表单片段配置记录文档属性
 
-您现在可以轻松地 [在自适应表单编辑器中自定义您的自适应表单片段及其字段](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+您现在可以轻松[在自适应表单编辑器中](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)自定义您的自适应表单片段及其字段。
 
 #### 包括64位版本的XMLFM
 
@@ -61,12 +61,12 @@ XMLFM的64位迭代带来了更高的性能、可扩展性和更精细的内存�
 
 ## 错误修复
 
-该版本还包括对20多个客户报告问题的修复。 有关Service Pack中包含的修复的详细列表，请参阅 [发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans#forms-6519)
+该版本还包括对20多个客户报告问题的修复。 有关Service Pack中包含的修复的详细列表，请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans#forms-6519)
 
 
 ## 安装服务包
 
-此Service Pack为JEE上的AEM Forms和OSGi上的AEM Forms带来了新功能和错误修复。 与以前的Service Pack相比，安装说明发生了更改。有关安装说明，请参阅 [AEM Forms service pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en).
+此Service Pack为JEE上的AEM Forms和OSGi上的AEM Forms带来了新功能和错误修复。 与以前的Service Pack相比，安装说明发生了更改。有关安装说明，请参阅[AEM Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)。
 
 
 

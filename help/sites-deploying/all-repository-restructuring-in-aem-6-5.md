@@ -18,9 +18,9 @@ ht-degree: 2%
 
 # AEM 6.5中的常见存储库重组 {#common-repository-restructuring-in-aem}
 
-如父项中所述 [AEM 6.5中的存储库重组](/help/sites-deploying/repository-restructuring.md) 页面，升级到AEM 6.5的客户应使用此页面评估与存储库更改关联的工作量，这些更改可能会影响所有解决方案。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
+如AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与可能影响所有解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
-**6.5版升级**
+升级为6.5的&#x200B;****
 
 * [ContextHub 配置](#contexthub-6.5)
 * [工作流实例](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-instances)
@@ -28,7 +28,7 @@ ht-degree: 2%
 * [工作流启动器](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-launchers)
 * [工作流脚本](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-scripts)
 
-**在将来升级之前**
+**将来升级之前**
 
 * [ContextHub 配置](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#contexthub-configurations)
 * [经典Cloud Service设计](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
@@ -52,20 +52,20 @@ ht-degree: 2%
 
 ## 6.5版升级 {#with-upgrade}
 
-### ContextHub配置 {#contexthub-6.5}
+### ContextHub配置{#contexthub-6.5}
 
-从AEM 6.4开始，没有默认的ContextHub配置。 因此，在站点的根级别a `cq:contextHubPathproperty` 应设置以指示应使用的配置。
+从AEM 6.4开始，没有默认的ContextHub配置。 因此，在站点的根级别上，应设置`cq:contextHubPathproperty`以指示应使用的配置。
 
 1. 导航到站点的根。
-1. 打开根页面的页面属性，然后选择个性化选项卡。
+1. 打开根页面的页面属性，然后选择Personalization选项卡。
 1. 在Contexthub路径字段中，输入您自己的ContextHub配置路径。
 
-此外，在ContextHub配置中， `sling:resourceType` 需要更新为相对位置而非绝对位置。
+此外，在ContextHub配置中，`sling:resourceType`需要更新为相对而非绝对。
 
-1. 在CRX DE Lite中打开ContextHub配置节点的属性，例如， `/apps/settings/cloudsettings/legacy/contexthub`
-1. 更改 `sling:resourceType` 从 `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` 到 `granite/contexthub/cloudsettings/components/baseconfiguration`
+1. 在CRX DE Lite中打开ContextHub配置节点的属性，例如`/apps/settings/cloudsettings/legacy/contexthub`
+1. 将`sling:resourceType`从`/libs/granite/contexthub/cloudsettings/components/baseconfiguration`更改为`granite/contexthub/cloudsettings/components/baseconfiguration`
 
-即 `sling:resourceType` ContextHub配置的组件必须为相对而非绝对。
+即ContextHub配置的`sling:resourceType`必须为相对而非绝对。
 
 ### 工作流模型 {#workflow-models}
 
@@ -84,17 +84,17 @@ ht-degree: 2%
    <td><p>任何新的或修改过的工作流模型必须迁移到/conf/global/workflow/models。</p>
     <ol>
      <li>将修改过的工作流模型部署到本地AEM 6.5开发实例中，以使它们位于前一个位置。</li>
-     <li>在“AEM”&gt;“工具”&gt;“工作流”&gt;“模型”中使用“AEM工作流模型编辑器”编辑工作流模型。</li>
+     <li>在AEM &gt;工具&gt;工作流&gt;模型上，使用AEM的“工作流模型编辑器”编辑工作流模型。</li>
      <li>迁移修改的AEM提供的工作流模型时
       <ol>
        <li>打开工作流模型编辑器后，修改浏览器的地址URL，并将路径段/libs/settings/workflow/models替换为/etc/workflow/models。
         <ul>
-         <li>例如，更改： <em>http://localhost:4502/editor.html<strong>/libs/settings/workflow/model</strong>/dam/update_asset.html</em> 到 <em>http://localhost:4502/editor.html<strong>/etc/workflow/model</strong>/dam/update_asset.html</em></li>
+         <li>例如，将<em>http://localhost:4502/editor.html<strong>/libs/settings/workflow/models</strong>/dam/update_asset.html</em>更改为<em>http://localhost:4502/editor.html<strong>/etc/workflow/models</strong>/dam/update_asset.html</em></li>
         </ul> </li>
       </ol> </li>
      <li>在工作流模型编辑器中启用编辑模式，该模式会将工作流模型定义复制到/conf/global/workflow/models。</li>
      <li>选择“同步”按钮，将更改同步到/var/workflow/models下的“运行时工作流模型”。</li>
-     <li>导出两个工作流模型(/conf/global/workflow/models/&lt;workflow-model&gt;)和运行时工作流模型(/var/workflow/models/&lt;workflow-model&gt;)并集成到AEM项目中。
+     <li>导出工作流模型(/conf/global/workflow/models/&lt;workflow-model&gt;)和运行时工作流模型(/var/workflow/models/&lt;workflow-model&gt;)，并集成到AEM项目。
       <ol>
        <li>例如，导出：
         <ul>
@@ -135,9 +135,9 @@ ht-degree: 2%
   <tr>
    <td><strong>注释</strong></td>
    <td>中的任何显式路径引用
-    <code>
+    上一位置的<code>
      custom
-    </code> “上一位置”的代码还应考虑“新位置”。 建议重构此代码以使用AEM工作流API。</td>
+    </code>代码还应考虑新位置。 建议重构此代码以使用AEM工作流API。</td>
   </tr>
  </tbody>
 </table>
@@ -156,7 +156,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>任何新的或修改过的工作流启动器都必须迁移到 <code>/conf/global/workflow/launcher/config</code>.</p>
+   <td><p>任何新的或修改的工作流启动器必须迁移到<code>/conf/global/workflow/launcher/config</code>。</p>
     <ol>
      <li>将任何新的或修改过的工作流启动器配置从上一个位置复制到新位置(<code>/conf/global</code>)。</li>
     </ol> </td>
@@ -168,7 +168,7 @@ ht-degree: 2%
      <li><code>/conf/global/settings/workflow/launcher</code></li>
      <li><code>/libs/settings/workflow/launcher</code></li>
      <li><code>/etc/workflow/launcher</code></li>
-    </ol> <p>因此，必须将AEM提供的工作流启动器保留在“上一位置”的任何自定义项移至“新位置” (<code>/conf/global/settings/workflow/launcher</code> 如果要保留它们，则它们将被中由AEM提供的工作流启动器定义取代 <code>/libs/settings/workflow/launcher</code>.</p> </td>
+    </ol> <p>因此，AEM提供的工作流启动器保留在“早期”位置的任何自定义项都必须移动到“新”位置(<code>/conf/global/settings/workflow/launcher</code>，如果要保留，则这些自定义项将被<code>/libs/settings/workflow/launcher</code>中AEM提供的工作流启动器定义所取代。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -189,7 +189,7 @@ ht-degree: 2%
    <td><strong>重组指南</strong></td>
    <td><p>任何新的或修改过的工作流脚本必须迁移到新位置，并且引用工作流模型必须更新以反映新位置。</p>
     <ol>
-     <li>将任何新的或修改过的工作流脚本从上一个位置复制到新位置。<br />
+     <li>将任何新的或修改的工作流脚本从上一个位置复制到新位置。<br />
       <ul>
        <li><code>/apps/workflow/scripts</code> 应在SCM中维护。</li>
       </ul> </li>
@@ -201,7 +201,7 @@ ht-degree: 2%
    <td><p>AEM 6.4 SP1在发布后将作出调整，调整可推迟到6.5
      <code>
       upgrade
-     </code>.</p> <p>如果在发布AEM 6.4 SP1之前升级到AEM 6.4，则此重构应作为升级项目的一部分执行。 如果不这样做，则编辑和保存引用前一位置中的脚本的工作流步骤将完全从工作流步骤中删除工作流脚本引用，并且只有新位置中的工作流脚本才在脚本选择下拉菜单中可用。</p> </td>
+     </code>。</p> <p>如果在发布AEM 6.4 SP1之前升级到AEM 6.4，则此重构应作为升级项目的一部分执行。 如果不这样做，则编辑和保存引用前一位置中的脚本的工作流步骤将完全从工作流步骤中删除工作流脚本引用，并且只有新位置中的工作流脚本才在脚本选择下拉菜单中可用。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -227,7 +227,7 @@ ht-degree: 2%
      <li>将任何新配置或修改的ContextHub配置从上一个位置复制到新位置。</li>
      <li>将适用的AEM配置与AEM内容层次结构关联。
       <ol>
-       <li><strong>通过AEM Sites &gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置进行AEM Sites页面层次结构</strong>.</li>
+       <li><strong>AEM Sites页面层次结构，通过AEM Sites &gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置</strong>。</li>
       </ol> </li>
      <li>取消任何已迁移的旧版ContextHub配置与上述的AEM内容层次结构的关联。</li>
     </ol> </td>
@@ -256,19 +256,19 @@ ht-degree: 2%
    <td><p>用于任何在SCM中管理，且未在运行时通过“设计”对话框写入的设计。</p>
     <ol>
      <li>将设计从上一个位置复制到新位置(<code>/apps</code>)。</li>
-     <li>将设计中的所有CSS、JavaScript和静态资源转换为 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a> 替换为 <code>allowProxy = true</code>.</li>
-     <li>更新对中先前位置的引用 <span class="code">
+     <li>将设计中的所有CSS、JavaScript和静态资源转换为具有<code>allowProxy = true</code>的<a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a>。</li>
+     <li>更新对<span class="code">中先前位置的引用
        <code>
         cq
        </code>：
        <code>
         designPath
-       </code></span> 属性。</li>
+       </code></span>属性。</li>
      <li>更新任何引用了先前位置的页面以使用新的客户端库类别（这需要更新页面实施代码）。</li>
-     <li>更新AEM Dispatcher规则以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
+     <li>更新AEM Dispatcher规则，以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
     </ol> <p>用于未在SCM中管理的任何设计，并通过“设计”对话框修改运行时设置。</p>
     <ul>
-     <li>请勿将可创作设计移出 <code>/etc</code>.</li>
+     <li>请勿将可创作设计移出<code>/etc</code>。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -295,19 +295,19 @@ ht-degree: 2%
    <td><p>用于任何在SCM中管理，且未在运行时通过“设计”对话框写入的设计。</p>
     <ol>
      <li>将设计从上一个位置复制到新位置(/apps)。</li>
-     <li>将设计中的所有CSS、JavaScript和静态资源转换为 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a> 替换为 <code>allowProxy = true</code>.</li>
+     <li>将设计中的所有CSS、JavaScript和静态资源转换为具有<code>allowProxy = true</code>的<a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a>。</li>
      <li>更新对中先前位置的引用
       <code>
        cq
       </code>：
       <code>
        designPath
-      </code> 属性。</li>
+      </code>属性。</li>
      <li>更新任何引用了先前位置的页面以使用新的客户端库类别（这需要更新页面实施代码）。</li>
-     <li>更新AEM Dispatcher规则以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
+     <li>更新AEM Dispatcher规则，以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
     </ol> <p>用于未在SCM中管理的任何设计，并通过“设计”对话框修改运行时设置。</p>
     <ul>
-     <li>请勿将可创作设计移出 <code>/etc</code>.</li>
+     <li>请勿将可创作设计移出<code>/etc</code>。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -334,19 +334,19 @@ ht-degree: 2%
    <td><p>用于任何在SCM中管理，且未在运行时通过“设计”对话框写入的设计。</p>
     <ol>
      <li>将设计从上一个位置复制到新位置(/apps)。</li>
-     <li>将设计中的所有CSS、JavaScript和静态资源转换为 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a> 替换为 <code>allowProxy = true</code>.</li>
+     <li>将设计中的所有CSS、JavaScript和静态资源转换为具有<code>allowProxy = true</code>的<a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a>。</li>
      <li>更新对中先前位置的引用
       <code>
        cq
       </code>：
       <code>
        designPath
-      </code> 属性。</li>
+      </code>属性。</li>
      <li>更新任何引用了先前位置的页面以使用新的客户端库类别（这需要更新页面实施代码）。</li>
-     <li>更新AEM Dispatcher规则以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
+     <li>更新AEM Dispatcher规则，以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
     </ol> <p>用于未在SCM中管理的任何设计，并通过“设计”对话框修改运行时设置。</p>
     <ul>
-     <li>请勿将可创作设计移出 <code>/etc</code>.</li>
+     <li>请勿将可创作设计移出<code>/etc</code>。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -373,19 +373,19 @@ ht-degree: 2%
    <td><p>用于任何在SCM中管理，且未在运行时通过“设计”对话框写入的设计。</p>
     <ol>
      <li>将设计从上一个位置复制到新位置(/apps)。</li>
-     <li>将设计中的所有CSS、JavaScript和静态资源转换为 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a> 替换为 <code>allowProxy = true</code>.</li>
+     <li>将设计中的所有CSS、JavaScript和静态资源转换为具有<code>allowProxy = true</code>的<a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a>。</li>
      <li>更新对中先前位置的引用
       <code>
        cq
       </code>：
       <code>
        designPath
-      </code> 属性。</li>
+      </code>属性。</li>
      <li>更新任何引用了先前位置的页面以使用新的客户端库类别（这需要更新页面实施代码）。</li>
-     <li>更新AEM Dispatcher规则以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
+     <li>更新AEM Dispatcher规则，以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
     </ol> <p>用于未在SCM中管理的任何设计，并通过“设计”对话框修改运行时设置。</p>
     <ul>
-     <li>请勿将可创作设计移出 <code>/etc</code>.</li>
+     <li>请勿将可创作设计移出<code>/etc</code>。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -455,7 +455,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td>使用 <strong>收件箱清除维护任务</strong> 以根据需要从上一个位置删除旧任务。</td>
+   <td>使用<strong>收件箱清除维护任务</strong>，根据需要从上一个位置删除旧任务。</td>
   </tr>
   <tr>
    <td><strong>注释</strong></td>
@@ -484,8 +484,8 @@ ht-degree: 2%
    <td><strong>重组指南</strong></td>
    <td>
     <ol>
-     <li>从复制自定义配置 <code>/etc/blueprints</code> 到 <code>/apps/msm</code>.</li>
-     <li>移除 <code>/etc/blueprints</code>.</li>
+     <li>将自定义配置从<code>/etc/blueprints</code>复制到<code>/apps/msm</code>。</li>
+     <li>删除<code>/etc/blueprints</code>。</li>
     </ol> </td>
   </tr>
   <tr>
@@ -511,7 +511,7 @@ ht-degree: 2%
    <td><strong>重组指南</strong></td>
    <td><p>任何新的或修改的AEM项目功能板小工具配置必须迁移到新位置(<code>/apps</code>)。</p>
     <ol>
-     <li>将任何新的或修改的AEM项目功能板小工具配置从上一个位置复制到新位置(<code>/apps</code>)。
+     <li>将任何新的或修改过的AEM项目功能板小工具配置从上一个位置复制到新位置(<code>/apps</code>)。
       <ol>
        <li>请勿复制未修改的AEM项目功能板小工具配置，因为这些配置现在位于新位置(<code>/libs</code>)。</li>
       </ol> </li>
@@ -539,7 +539,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>任何新的或修改的复制通知电子邮件模板都必须迁移到新位置(<code>/apps</code>)</p>
+   <td><p>任何新的或修改的复制通知电子邮件模板必须迁移到新位置(<code>/apps</code>)</p>
     <ol>
      <li>将任何新的或修改过的复制通知电子邮件模板从上一个位置复制到新位置(<code>/apps</code>)。</li>
      <li>从上一个位置删除任何已迁移的复制通知电子邮件模板。</li>
@@ -572,22 +572,22 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>必须将所有标记迁移到 <code>/content/cq:tags</code>.</p>
+   <td><p>必须将所有标记迁移到<code>/content/cq:tags</code>。</p>
     <ol>
      <li>将所有标记从上一个位置复制到新位置。</li>
      <li>从上一个位置删除所有标记。</li>
-     <li>通过AEM Web控制台，重新启动位于以下位置的Day Communique 5标记OSGi包： <em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em> ，以便AEM识别新位置：包含内容且应使用。</li>
+     <li>通过AEM Web控制台，重新启动位于<em>https://serveraddress:serverport/system/console/bundles/com.day.cq.cq-tagging</em>的Day Communique 5标记OSGi包，以便AEM识别包含内容且应使用的“新位置”。</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>注释</strong></td>
-   <td><p>重新启动Day Communique Tagging OSGi包后，只有当“上一个位置”为空时，才会将“新位置”注册为标记根。</p> <p>对于使用AEM TagManager API进行标记解析的所有功能，在迁移到新位置后，对先前位置的引用将继续有效。</p> <p>任何显式引用路径的自定义代码 <code>/etc/tags</code> 必须更新至 <span class="code">/content/
+   <td><p>重新启动Day Communique Tagging OSGi包后，只有当“上一个位置”为空时，才会将“新位置”注册为标记根。</p> <p>对于使用AEM TagManager API进行标记解析的所有功能，在迁移到新位置后，对先前位置的引用将继续有效。</p> <p>任何显式引用路径<code>/etc/tags</code>的自定义代码都必须更新为<span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>，或者最好重写以搭配此迁移使用TagManager Java API。</p> </td>
+      </code></span>，或者最好重写以将TagManager Java API与此迁移结合使用。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -606,20 +606,20 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>任何新翻译Cloud Service都必须迁移到新位置(<code>/apps</code>， <code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)。</p>
+   <td><p>必须将任何新翻译Cloud Service迁移到新位置（<code>/apps</code>、<code>/conf/global</code>或<code>/conf/&lt;tenant&gt;</code>）。</p>
     <ol>
      <li>将之前位置中的现有配置迁移到新位置。
       <ul>
-       <li>通过在上的AEM创作UI手动重新创建新的翻译Cloud Service配置 <strong>“工具”&gt;“Cloud Service”&gt;“翻译Cloud Service”</strong>.<br /> 或者 </li>
-       <li>将任何新的翻译Cloud Service配置从上一个位置复制到新位置(<code>/apps</code>， <code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)。</li>
+       <li>通过AEM创作UI，在<strong>工具&gt;Cloud Service&gt;翻译Cloud Service</strong>处手动重新创建新的翻译Cloud Service配置。<br />或 </li>
+       <li>将任何新的翻译Cloud Service配置从上一个位置复制到新位置（<code>/apps</code>、<code>/conf/global</code>或<code>/conf/&lt;tenant&gt;</code>）。</li>
       </ul> </li>
      <li>将适用的AEM配置与AEM内容层次结构关联。
       <ol>
-       <li>AEM Sites页面层级，通过 <strong>AEM Sites &gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置</strong>.</li>
-       <li>AEM Experience Fragment层次结构，通过 <strong>AEM Experience Fragments &gt;体验片段&gt;属性&gt;Cloud Service选项卡&gt;云配置</strong>.</li>
-       <li>AEM Experience Fragment文件夹层次结构，通过 <strong>AEM Experience Fragments &gt;文件夹&gt;属性&gt;Cloud Service选项卡&gt;云配置</strong>.<br /> </li>
-       <li>AEM Assets文件夹层次结构，通过 <strong>AEM Assets &gt;文件夹&gt;文件夹属性&gt;Cloud Service选项卡&gt;配置</strong>.</li>
-       <li>AEM项目，通过 <strong>AEM项目&gt;项目&gt;项目属性&gt;高级选项卡&gt;云配置</strong>.</li>
+       <li>通过<strong>AEM Sites &gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置</strong>的AEM Sites页面层次结构。</li>
+       <li>通过<strong>AEM Experience Fragments &gt; Experience Fragments &gt;属性&gt;Cloud Service选项卡&gt;云配置</strong>的AEM Experience Fragments层次结构。</li>
+       <li>通过<strong>AEM Experience Fragments &gt;文件夹&gt;属性&gt;Cloud Service选项卡&gt;云配置</strong>的AEM Experience Fragments文件夹层次结构。<br /> </li>
+       <li>通过<strong>AEM Assets &gt;文件夹&gt;文件夹属性&gt;Cloud Service选项卡&gt;配置</strong>的AEM Assets文件夹层次结构。</li>
+       <li>AEM项目通过<strong>AEM项目&gt;项目&gt;项目属性&gt;高级选项卡&gt;云配置</strong>。</li>
       </ol> </li>
      <li>取消任何已迁移旧版翻译Cloud Service与上述AEM内容层次结构的关联。</li>
     </ol> </td>
@@ -682,7 +682,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>必须将修改的翻译规则XML文件迁移到新位置(<code>/apps</code>，或 <code>/conf/global</code>)。</p> <p>1.将修改后的“翻译规则”XML文件从上一位置复制到新位置。</p> </td>
+   <td><p>必须将修改的翻译规则XML文件迁移到新位置（<code>/apps</code>或<code>/conf/global</code>）。</p> <p>1.将修改后的“翻译规则”XML文件从上一位置复制到新位置。</p> </td>
   </tr>
   <tr>
    <td><strong>注释</strong></td>
@@ -716,19 +716,19 @@ ht-degree: 2%
    <td><p>用于任何在SCM中管理，且未在运行时通过“设计”对话框写入的设计。</p>
     <ol>
      <li>将设计从上一个位置复制到新位置(/apps)。</li>
-     <li>将设计中的所有CSS、JavaScript和静态资源转换为 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a> 替换为 <code>allowProxy = true</code>.</li>
+     <li>将设计中的所有CSS、JavaScript和静态资源转换为具有<code>allowProxy = true</code>的<a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a>。</li>
      <li>更新对中先前位置的引用
       <code>
        cq
       </code>：
       <code>
        designPath
-      </code> 属性。</li>
+      </code>属性。</li>
      <li>更新任何引用了先前位置的页面以使用新的客户端库类别（这需要更新页面实施代码）。</li>
-     <li>更新AEM Dispatcher规则以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
+     <li>更新AEM Dispatcher规则，以允许通过/etc.clientlibs/提供客户端库。 代理servlet。</li>
     </ol> <p>用于未在SCM中管理的任何设计，并通过“设计”对话框修改运行时设置。</p>
     <ul>
-     <li>请勿将可创作设计移出 <code>/etc</code>.</li>
+     <li>请勿将可创作设计移出<code>/etc</code>。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -744,7 +744,7 @@ ht-degree: 2%
 |---|---|
 | **新位置** | `/libs/replication/treeactivation` |
 | **重组指南** | 无需执行任何操作。 |
-| **注释** | 树激活Web控制台现在可通过以下方式使用 **“工具” > “部署” > “复制” > “激活树”**. |
+| **注释** | 树激活Web控制台现在可通过&#x200B;**工具>部署>复制>激活树**&#x200B;使用。 |
 
 {style="table-layout:auto"}
 
@@ -764,20 +764,20 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>任何新的供应商翻译连接器Cloud Service必须迁移到新位置(<code>/apps</code>， <code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)。</p>
+   <td><p>必须将任何新的供应商翻译连接器Cloud Service迁移到新位置（<code>/apps</code>、<code>/conf/global</code>或<code>/conf/&lt;tenant&gt;</code>）。</p>
     <ol>
      <li>将先前位置中的现有配置迁移到新位置。
       <ul>
-       <li>通过，手动创建新的供应商翻译连接器Cloud Service配置 <strong>“工具”&gt;“Cloud Service”&gt;“翻译Cloud Service”中的AEM创作UI</strong>.<br /> 或者 </li>
-       <li>将任何新的供应商翻译连接器Cloud Service配置从上一个位置复制到新位置(<code>/apps</code>， <code>/conf/global </code>或 <code>/conf/&lt;tenant&gt;</code>)。</li>
+       <li>通过“工具”&gt;“Cloud Service”&gt;“翻译Cloud Service”</strong>中的<strong>AEM创作UI，手动创建全新的供应商翻译连接器Cloud Service配置。<br />或 </li>
+       <li>将任何新的供应商翻译连接器Cloud Service配置从上一个位置复制到新位置（<code>/apps</code>、<code>/conf/global </code>或<code>/conf/&lt;tenant&gt;</code>）。</li>
       </ul> </li>
      <li>将适用的AEM配置与AEM内容层次结构关联。
       <ol>
-       <li>AEM Sites页面层级，通过 <strong>AEM Sites &gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置</strong>.</li>
-       <li>AEM Experience Fragment层次结构，通过 <strong>AEM Experience Fragments &gt;体验片段&gt;属性&gt;Cloud Service选项卡&gt;云配置</strong>.</li>
-       <li>AEM Experience Fragment文件夹层次结构，通过 <strong>AEM Experience Fragments &gt;文件夹&gt;属性&gt;Cloud Service选项卡&gt;云配置</strong>.</li>
-       <li>AEM Assets文件夹层次结构，通过 <strong>AEM Assets &gt;文件夹&gt;文件夹属性&gt;Cloud Service选项卡&gt;配置</strong>.</li>
-       <li>AEM项目，通过 <strong>AEM项目&gt;项目&gt;项目属性&gt;高级选项卡&gt;云配置</strong>.</li>
+       <li>通过<strong>AEM Sites &gt;页面&gt;页面属性&gt;高级选项卡&gt;云配置</strong>的AEM Sites页面层次结构。</li>
+       <li>通过<strong>AEM Experience Fragments &gt; Experience Fragments &gt;属性&gt;Cloud Service选项卡&gt;云配置</strong>的AEM Experience Fragments层次结构。</li>
+       <li>通过<strong>AEM Experience Fragments &gt;文件夹&gt;属性&gt;Cloud Service选项卡&gt;云配置</strong>的AEM Experience Fragments文件夹层次结构。</li>
+       <li>通过<strong>AEM Assets &gt;文件夹&gt;文件夹属性&gt;Cloud Service选项卡&gt;配置</strong>的AEM Assets文件夹层次结构。</li>
+       <li>AEM项目通过<strong>AEM项目&gt;项目&gt;项目属性&gt;高级选项卡&gt;云配置</strong>。</li>
       </ol> </li>
      <li>取消任何已迁移旧版翻译Cloud Service与上述AEM内容层次结构的关联。</li>
     </ol> </td>
@@ -809,7 +809,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>任何修改过的工作流通知电子邮件模板必须迁移到新位置(<code>/conf/global</code>)。</p>
+   <td><p>必须将任何修改的工作流通知电子邮件模板迁移到新位置(<code>/conf/global</code>)。</p>
     <ol>
      <li>将任何修改过的工作流通知电子邮件模板从上一个位置复制到新位置。</li>
      <li>从上一个位置删除已迁移的工作流通知电子邮件模板。</li>

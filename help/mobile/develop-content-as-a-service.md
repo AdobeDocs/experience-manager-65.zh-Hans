@@ -27,21 +27,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**无线内容** 可以通过ContentSync处理程序从上述任何方法获取。 它可用于通过ZIP对包进行批处理并投放，以及维护这些包的更新。
+>**无线内容**&#x200B;可以通过ContentSync处理程序从以上任何内容获得。 它可用于通过ZIP对包进行批处理并投放，以及维护这些包的更新。
 
 Content Services提供了三种主要类型的资料：
 
-1. **资产**
+1. **Assets**
 1. **打包的HTML内容(HTML/CSS/JS)**
 1. **独立于渠道的内容**
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
-## 资产 {#assets}
+## 资源 {#assets}
 
 资源收藏集是包含对其他收藏集的引用的AEM构造。
 
-资产收藏集可以通过Content Services公开。 在请求中调用资产收藏集，会返回一个对象，该对象是资产的列表 — 包括其URL。 通过URL访问资源。 URL在对象中提供。 例如：
+资产收藏集可以通过Content Services公开。 在请求中调用资产收藏集，会返回一个对象，该对象是资产的列表 — 包括其URL。 可通过URL访问Assets。 URL在对象中提供。 例如：
 
 * 页面实体返回包含图像引用的JSON（页面对象）。 图像引用是用于获取图像的资产二进制文件的URL。
 * 请求文件夹中的资产列表会返回JSON，其中包含有关该文件夹中所有实体的详细信息。 该列表是一个对象。 JSON具有一些URL引用，用于获取该文件夹中每个资产的二进制文件。
@@ -52,7 +52,7 @@ Content Services的一个关键价值是能够返回针对设备优化的资产�
 
 资产优化是一种服务器端函数，它基于API请求中提供的信息。 应尽可能缓存资产演绎版，以便类似的请求不需要重新生成资产演绎版。
 
-### 资产工作流程 {#assets-workflow}
+### Assets工作流程 {#assets-workflow}
 
 资源工作流如下所示：
 
@@ -63,19 +63,19 @@ Content Services的一个关键价值是能够返回针对设备优化的资产�
    1. 选择资源或资源收藏集
    1. 自定义JSON渲染
 
-下图显示了 **资产引用工作流**：
+下图显示了&#x200B;**Assets引用工作流**：
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### 管理资源 {#managing-assets}
+### 管理Assets {#managing-assets}
 
 Content Services提供对AEM管理的资源的访问权限，这些资源可能无法通过其他AEM内容引用。
 
-#### 现有的受管资产 {#existing-managed-assets}
+#### 现有的托管Assets {#existing-managed-assets}
 
 AEM Sites和Assets的用户正在使用AEM Assets管理其所有渠道的所有数字材料。 他们正在开发本机移动设备应用程序，并且必须使用AEM Assets管理的多个资源。 例如，徽标、背景图像和按钮图标。
 
-目前，这些功能分布在Assets存储库中。 应用程序必须引用的文件如下：
+目前，这些资源分布在Assets存储库中。 应用程序必须引用的文件如下：
 
 * /content/dam/geometrixx-outdoors/brand/logo_light.png
 * /content/dam/geometrixx-outdoors/brand/logo_dark.png
@@ -115,8 +115,8 @@ AEM Content Services通过API向移动设备应用程序提供HTML内容。 希�
 
 考虑以下选项：
 
-* **Zip文件：** 为了有最好的机会在设备上正确显示，页面引用的材料 — css、JavaScript、资产等将包含在带有响应的单个压缩文件中。 可以调整“HTML”页面中的引用，以使用这些文件的相对路径。
-* **流：** 从AEM获取所需文件的清单。 然后使用该清单通过后续请求来请求所有文件(HTML、CSS、JS等)。
+* **Zip文件：**&#x200B;为了有最好的机会在设备上正确显示，页面引用的材料 — css、JavaScript、资源等将包含在带有响应的单个压缩文件中。 可以调整“HTML”页面中的引用，以使用这些文件的相对路径。
+* **流：**&#x200B;从AEM获取所需文件的清单。 然后使用该清单通过后续请求来请求所有文件(HTML、CSS、JS等)。
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 

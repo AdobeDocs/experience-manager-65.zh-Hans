@@ -39,7 +39,7 @@ ht-degree: 17%
   </tr>
   <tr>
    <td>PDF表单</td>
-   <td>使用数据预览和预览PDF<br /> </td>
+   <td>包含数据的PDF预览和预览<br /> </td>
   </tr>
   <tr>
    <td>自适应表单</td>
@@ -54,11 +54,11 @@ ht-degree: 17%
 
 ## 预览表单 {#previewing-a-form-1}
 
-1. 选择要预览的资源，然后单击预览 ![aem6forms_preview](assets/aem6forms_preview.png) （在操作工具栏中）。
+1. 选择要预览的资源，然后单击操作工具栏中的预览![aem6forms_preview](assets/aem6forms_preview.png)。
 
    >[!NOTE]
    >
-   >要选择资产，请从默认信息卡视图切换到列表视图。 单击 ![aem6forms_viewlist](assets/aem6forms_viewlist.png) 或 ![aem6forms_viewcard](assets/aem6forms_viewcard.png) 以切换视图。
+   >要选择资产，请从默认信息卡视图切换到列表视图。 单击![aem6forms_viewlist](assets/aem6forms_viewlist.png)或![aem6forms_viewcard](assets/aem6forms_viewcard.png)以切换视图。
 
 1. 单击预览会列出适用于所选资源类型的可能预览选项。 单击所需选项可在新选项卡中呈现所选资源。
 
@@ -70,7 +70,7 @@ ht-degree: 17%
 
 ## 使用数据预览 {#preview-with-data}
 
-当您选择时 **使用数据预览**，您可以查看输入真实数据的表单的外观。 使用数据预览选项允许您上传包含示例用户数据的XML。 示例用户数据用于以您选择的格式填充预览表单。
+当您选择&#x200B;**预览数据**&#x200B;时，您可以看到输入真实数据的表单的外观。 使用数据预览选项允许您上传包含示例用户数据的XML。 示例用户数据用于以您选择的格式填充预览表单。
 
-1. 选择资源，单击预览 ![aem6forms_preview](assets/aem6forms_preview.png)，并选择 **使用数据预览**.
+1. 选择资源，单击预览![aem6forms_preview](assets/aem6forms_preview.png)，然后选择&#x200B;**使用数据预览**。
 1. 在“预览表单”对话框中，将FormData作为XML文件提供。 单击预览以使用XML中的合并数据呈现表单。

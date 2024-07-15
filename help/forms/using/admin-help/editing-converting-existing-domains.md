@@ -25,8 +25,8 @@ ht-degree: 0%
 1. 在管理控制台中，单击设置>用户管理>域管理。
 1. 单击要编辑的域的名称。
 1. 要更改域名，请更改“名称”框中的文本。
-1. 要更改企业域或混合域的验证信息，请单击页面底部相应的验证名称。 在“编辑身份验证”页面上，根据需要更改设置。 (请参阅 [身份验证设置](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings).)
-1. 要更改企业域的目录信息，请单击页面底部的相应目录名称。 在“编辑目录”页上，根据需要更改设置。 (请参阅 [添加目录或自定义SPI](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
+1. 要更改企业域或混合域的验证信息，请单击页面底部相应的验证名称。 在“编辑身份验证”页面上，根据需要更改设置。 （请参阅[身份验证设置](/help/forms/using/admin-help/configuring-authentication-providers.md#authentication-settings)。）
+1. 要更改企业域的目录信息，请单击页面底部的相应目录名称。 在“编辑目录”页上，根据需要更改设置。 （请参阅[添加目录或自定义SPI](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)。）
 1. 完成更改后，单击“确定”。
 
 ## 将企业域转换为混合域 {#convert-an-enterprise-domain-to-a-hybrid-domain}
@@ -47,4 +47,4 @@ ht-degree: 0%
 1. 单击要转换的混合域的名称。
 1. 单击转换为企业域。
 1. 查看显示的有关用户和组数据以及用户验证的信息，然后单击“确定”。
-1. 单击添加目录并配置所需的目录信息。 (请参阅 [添加目录或自定义SPI](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis).)
+1. 单击添加目录并配置所需的目录信息。 （请参阅[添加目录或自定义SPI](/help/forms/using/admin-help/configuring-directories.md#adding-directories-or-custom-spis)。）

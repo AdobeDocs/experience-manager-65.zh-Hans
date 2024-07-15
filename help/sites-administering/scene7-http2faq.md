@@ -26,7 +26,7 @@ HTTP/2改进了浏览器和服务器的通信方式，允许更快地传输信�
 
 以下网站以简明扼要的方式介绍了HTTP/2及其好处：
 
-[您必须了解的HTTP/2相关信息](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html).
+[关于HTTP/2](https://www.engadget.com/2015-02-24-what-you-need-to-know-about-http-2.html)的须知事项。
 
 ## 使用HTTP/2进行内容交付有哪些主要好处？ {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
@@ -47,25 +47,25 @@ Adobe自己的测试产生了以下结果：
 
 * 对富媒体请求使用安全HTTPS。
 * 使用Adobe捆绑的CDN（内容分发网络）作为Dynamic Media许可证的一部分。
-* 使用专用域(即， `images.company.com` 或 `mycompany.scene7.com`)，而不是通用的Dynamic Media域(即， `s7d1.scene7.com`， `s7d2.scene7.com`，或 `s7d13.scene7.com`)。
+* 使用专用域（即`images.company.com`或`mycompany.scene7.com`），而不是通用的Dynamic Media域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
-  要查找您的域，请打开 [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。 然后导航到 **[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**. 查找标记为的字段 **已发布的服务器名称**. 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
+  若要查找你的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到你的公司帐户或帐户。 然后导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**已发布的服务器名称**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
 
 ## 为我的Dynamic Media帐户启用HTTP/2的过程是怎样的？ {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. [使用Admin Console创建支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html) 和请求切换到HTTP/2；它不会自动为您完成。
+1. [使用Admin Console创建支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)并请求切换到HTTP/2；不会自动为您完成此操作。
 1. 在您的支持案例中提供以下信息：
 
    * 主要联系人姓名、电子邮件和电话号码。
-   * 要转换为HTTP2的所有域。 那就是， `images.company.com` 或 `mycompany.scene7.com`.
+   * 要转换为HTTP2的所有域。 即`images.company.com`或`mycompany.scene7.com`。
 
-     要查找您的域，请打开 [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。 然后导航到 **[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**. 查找标记为的字段 **[!UICONTROL 已发布的服务器名称]**.
+     若要查找你的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到你的公司帐户或帐户。 然后导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;的字段。
 
    * 确认您使用安全HTTPS处理富媒体请求。
    * 验证您是否通过Adobe使用CDN，而不是通过直接关系进行管理。
-   * 验证您使用的是专用域。 那就是， `images.company.com` 或 `mycompany.scene7.com`，而不是常规Dynamic Media域，例如 `s7d1.scene7.com`， `s7d2.scene7.com`， `s7d13.scene7.com`.
+   * 验证您使用的是专用域。 即`images.company.com`或`mycompany.scene7.com`，不是通用的Dynamic Media域，如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
 
-     要查找您的域，请打开 [Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的公司帐户或帐户。 然后导航到 **[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**. 查找标记为的字段 **[!UICONTROL 已发布的服务器名称]**. 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
+     若要查找你的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到你的公司帐户或帐户。 然后导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
 
 1. Adobe客户支持根据提交请求的顺序将您添加到HTTP/2客户轮候表中。
 1. 当Adobe准备好处理您的请求时，支持团队会联系您以协调过渡并设置目标日期。
@@ -87,4 +87,4 @@ Adobe自己的测试产生了以下结果：
 
 ## 如何验证是否使用HTTP/2激活了URL或网站？ {#how-can-you-verify-whether-a-url-or-website-is-activated-with-http}
 
-下载可以在Web浏览器中使用的扩展。 对于Firefox和Chrome，扩展名为 **[!UICONTROL HTTP/2和SPDY指示器]**. 浏览器仅安全支持HTTP/2，因此需要使用HTTPS调用URL进行验证。 如果支持HTTP/2，则扩展将以蓝色Flash符号和标头“X-Firefox-Spdy”的形式表示：“h2”。
+下载可以在Web浏览器中使用的扩展。 对于Firefox和Chrome，有一个名为&#x200B;**[!UICONTROL HTTP/2和SPDY Indicator]**&#x200B;的扩展。 浏览器仅安全支持HTTP/2，因此需要使用HTTPS调用URL进行验证。 如果支持HTTP/2，则扩展将以蓝色Flash符号和标头“X-Firefox-Spdy”的形式表示：“h2”。

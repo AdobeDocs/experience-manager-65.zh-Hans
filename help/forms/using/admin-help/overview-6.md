@@ -32,4 +32,4 @@ ht-degree: 0%
 >
 >创建SSL安全证书和凭据时，请使用与运行应用程序服务器相同的用户帐户权限。 如果使用其他用户权限运行应用程序服务器，则当ContentRootURI指向https时，表单可能无法正确呈现为PDForm呈现形式。
 
-如果您具有启用了SSL的LDAP服务器，请配置“用户管理”以与它配合使用。 (请参阅 [为启用了SSL的LDAP服务器配置用户管理](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
+如果您具有启用了SSL的LDAP服务器，请配置“用户管理”以与它配合使用。 （请参阅[为启用SSL的LDAP服务器配置用户管理](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)。）

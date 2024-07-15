@@ -23,11 +23,11 @@ ht-degree: 0%
 <!-- Attached is a simplified template (BollatoRiservatiLandscape_table_simple.xdp) that simulates the problem.
 Using the Designer, if we associate the template "BollatoRiservatiLandscape_table_semplice.xdp" with the XML file "BollatoRiservati.xml" during the generation of the pdf, the process comes to occupy 1.6 Gb of RAM. On the server side, with the complete template, the pdf generation process breaks down, occupying 2 GB of RAM.-->
 
-这是因为在Windows上，打印请求中的最大页数限制为大约1000页。 当生成打印输出时，模板和数据需要加载到内存中，并且生成的布局构建在内存中。 这意味着最终输出的大小存在限制。 生成打印输出的过程是一个32位任务，这意味着在Windows上它最多只能有2 GB的RAM <!--and 4 GB on UNIX-->.
+这是因为在Windows上，打印请求中的最大页数限制为大约1000页。 当生成打印输出时，模板和数据需要加载到内存中，并且生成的布局构建在内存中。 这意味着最终输出的大小存在限制。 生成打印输出的进程是32位任务，这意味着它在Windows <!--and 4 GB on UNIX-->上限制为2 GB的RAM。
 
 ## 应用到 {#applies-to}
 
-该解决方案适用于AEM Forms <!--JEE Server and AEM Forms on OSGi Server--> 用于x86_win32 XMLFM。
+此解决方案适用于x86_win32 XMLFM的AEM Forms <!--JEE Server and AEM Forms on OSGi Server-->。
 
 ## 解决方案 {#solution}
 
@@ -37,11 +37,11 @@ Using the Designer, if we associate the template "BollatoRiservatiLandscape_tabl
 
 **高**
 
-1. **选择子表单**  — 选择子表单集是子表单集对象的变体，允许您使用条件语句从集中自定义特定子表单的显示。
-1. **使用静态文本代替字幕**  — 几乎每个字段内都提供标题，用户应使用它而不是额外的静态文本作为标题。
-1. 使用 **富文本格式(RTF)** 尽可能。
+1. **选择子表单** — 选择子表单集是子表单集对象的变体，它允许您使用条件语句来自定义集合中特定子表单的显示。
+1. **使用静态文本代替字幕** — 几乎每个字段内都提供字幕，用户应使用它，而不是使用额外的静态文本作为字幕。
+1. 尽可能使用&#x200B;**RTF格式**。
 
-**Average**
+**平均**
 
 设计表单模板时，为帮助提高内存使用率，应考虑其他因素：
 
@@ -56,7 +56,7 @@ Using the Designer, if we associate the template "BollatoRiservatiLandscape_tabl
 
 如果表单有许多小节点，但数据很小，则该过程会消耗更多的内存（因此内存耗尽的速度会更快），而不是具有更少节点（即使）且数据较大的表单。
 
-阅读 [以下附录](#appendix) 有关更多信息，测试结果基于打印表单(无标记PDF)。 使用标记的PDF进程内存需求增加。 它还取决于表单中的字段数 — 大约流程内存需求是未标记PDF的1.5倍多。
+阅读以下[附录](#appendix)以了解更多信息，其中测试结果基于打印表单(无标签PDF)。 使用标记的PDF进程内存需求增加。 它还取决于表单中的字段数 — 大约流程内存需求是未标记PDF的1.5倍多。
 
 ### 交互式Forms {#interactive-forms}
 

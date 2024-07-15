@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 为启用了SSL的LDAP服务器配置用户管理 {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
-要使同步通过LDAPS正常工作，应用程序服务器的Java运行时环境(JRE)中必须存在证书颁发机构(CA)颁发的LDAP证书。 将证书导入应用服务器的JRE cacerts文件，该文件通常位于 *[JAVA_HOME]*/jre/lib/security/cacerts目录。
+要使同步通过LDAPS正常工作，应用程序服务器的Java运行时环境(JRE)中必须存在证书颁发机构(CA)颁发的LDAP证书。 将证书导入应用服务器的JRE cacerts文件，该文件通常位于&#x200B;*[JAVA_HOME]*/jre/lib/security/cacerts目录中。
 
 1. 在目录服务器上启用SSL。 有关详细信息，请参阅目录供应商提供的文档。
 1. 从目录服务器导出客户端证书。
@@ -26,8 +26,8 @@ ht-degree: 0%
 
    `keytool -import -alias`*别名* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
-1. 出现提示时，键入密码。 (对于Java，默认密码为 `changeit`.) 将显示一条消息，说明已成功导入证书。
-1. 出现提示时，键入 `Yes` 以信任证书。
+1. 出现提示时，键入密码。 （对于Java，默认密码为`changeit`。） 将显示一条消息，说明已成功导入证书。
+1. 出现提示时，键入`Yes`以信任证书。
 1. 在“用户管理”中启用SSL，并在配置目录设置时，为SSL选项选择“是”，然后相应地更改端口设置。 默认端口号为636。
 
 >[!NOTE]

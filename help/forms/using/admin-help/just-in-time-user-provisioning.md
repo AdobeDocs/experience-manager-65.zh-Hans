@@ -28,11 +28,11 @@ AEM Forms支持对User Management中尚不存在的用户进行实时配置。 �
 1. 身份验证提供程序验证凭据。
 1. 然后，验证提供程序会检查用户是否存在于用户管理数据库中。 可能会产生以下结果：
 
-   **存在：** 如果用户是当前用户且已解锁，则“用户管理”返回身份验证成功。 但是，如果用户不是最新用户或被锁定，则“用户管理”返回验证失败。
+   **存在：**&#x200B;如果用户是最新用户且已解锁，则“用户管理”返回身份验证成功。 但是，如果用户不是最新用户或被锁定，则“用户管理”返回验证失败。
 
-   **不存在：** 用户管理返回身份验证失败。
+   **不存在：**&#x200B;用户管理返回身份验证失败。
 
-   **无效：** 用户管理返回身份验证失败。
+   **无效：**&#x200B;用户管理返回身份验证失败。
 
 1. 将评估身份验证提供程序返回的结果。 如果身份验证提供程序返回身份验证成功，则允许用户登录。 否则，User Management会检查下一个身份验证提供程序（步骤2-3）。
 1. 如果没有可用的身份验证提供程序验证用户凭据，则返回身份验证失败。
@@ -82,8 +82,8 @@ public Boolean assign(User user);
 
 ### 创建启用实时功能的域时的注意事项 {#considerations-while-creating-a-just-in-time-enabled-domain}
 
-* 创建自定义时 `IdentityCreator` 对于混合域，请确保为本地用户指定了虚拟密码。 请勿将此密码字段留空。
-* 建议：使用 `DomainSpecificAuthentication` 验证特定域的用户凭据。
+* 在为混合域创建自定义`IdentityCreator`时，请确保为本地用户指定了虚拟密码。 请勿将此密码字段留空。
+* 建议：使用`DomainSpecificAuthentication`针对特定域验证用户凭据。
 
 ### 创建及时启用的域 {#create-a-just-in-time-enabled-domain}
 
@@ -92,7 +92,7 @@ public Boolean assign(User user);
 1. 创建即时启用的域：
 
    * 在Administration Console中，单击设置>用户管理>域管理>新建企业域。
-   * 配置域，然后选择启用及时预配。 <!--Fix broken link (See Setting up and managing domains).-->
+   * 配置域，然后选择启用及时预配。<!--Fix broken link (See Setting up and managing domains).-->
    * 添加身份验证提供程序。 添加身份验证提供程序时，请在“新建身份验证”屏幕上，选择已注册的身份创建者和分配提供程序。
 
 1. 保存新域。
@@ -101,12 +101,12 @@ public Boolean assign(User user);
 
 假设用户正在尝试登录AEM表单，并且身份验证提供程序接受其用户凭据。 如果用户在User Management数据库中尚不存在，则用户的身份检查将失败。 AEM forms现在执行以下操作：
 
-1. 创建 `UserProvisioningBO` 对象中的身份验证数据，并将其放入凭据映射中。
-1. 基于返回的域信息 `UserProvisioningBO`，获取并调用已注册的 `IdentityCreator` 和 `AssignmentProvider` 对于域。
-1. 调用 `IdentityCreator`. 如果返回成功 `AuthResponse`，提取 `UserInfo` 凭证映射中。 将其传递给 `AssignmentProvider` 用于组/角色分配，以及创建用户之后的任何其他后处理。
+1. 使用身份验证数据创建一个`UserProvisioningBO`对象，并将其放入凭据映射中。
+1. 根据`UserProvisioningBO`返回的域信息，获取并调用该域的已注册`IdentityCreator`和`AssignmentProvider`。
+1. 调用`IdentityCreator`。 如果它返回成功的`AuthResponse`，则从凭据映射中提取`UserInfo`。 创建用户后，将其传递给`AssignmentProvider`进行组/角色分配和任何其他后处理。
 1. 如果已成功创建用户，则将该用户的登录尝试作为成功返回。
 1. 对于混合域，从提供给身份验证提供程序的身份验证数据中提取用户信息。 如果成功获取此信息，请动态创建用户。
 
 >[!NOTE]
 >
->即时配置功能附带默认实施 `IdentityCreator` 可用来动态创建用户的插件。 创建用户时将与域中的目录相关联的信息。
+>即时配置功能附带默认实施`IdentityCreator`，您可以使用它来动态创建用户。 创建用户时将与域中的目录相关联的信息。

@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 创建无障碍的自适应表单{#creating-accessible-adaptive-forms}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。 </span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。</span>
 
 ## 简介 {#introduction}
 
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 ## 先决条件
 
-您需要辅助工具，例如 **可访问的名称和描述检查器(ANDI)** 和 **为修复辅助功能相关问题而开发的自适应表单主题** 创建无障碍的自适应表单。
+您需要辅助功能工具(如&#x200B;**可访问的名称和描述检查器(ANDI)**)和已开发的&#x200B;**自适应表单主题，以修复与辅助功能相关的问题**)来创建可访问的自适应表单。
 
 ### 下载并安装辅助功能测试工具
 
@@ -44,15 +44,15 @@ ht-degree: 2%
 * 检测键盘辅助功能和颜色对比度问题
 * 明确标识符合标准的屏幕阅读器内容
 
-ANDI可与所有主要的Internet浏览器配合使用。 请参阅 [ANDI的文档](https://www.ssa.gov/accessibility/andi/help/install.html) 以获取有关如何配置和使用工具的详细说明。
+ANDI可与所有主要的Internet浏览器配合使用。 有关如何配置和使用工具的详细说明，请参阅[ANDI文档](https://www.ssa.gov/accessibility/andi/help/install.html)。
 
 ### 下载并安装Ultramarine-Access主题
 
 Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适应表单中修复颜色对比度和其他与辅助功能相关的问题。 Adobe建议您根据组织批准的样式为生产环境创建自定义主题。 执行以下步骤以将主题上传到AEM实例：
 
 1. 下载主题包。
-1. 导航到 **[!UICONTROL Experience Manager]** > **[!UICONTROL 导航]** ![导航](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]** 在您的AEM实例上。
-1. 选择 **[!UICONTROL 创建]** > **[!UICONTROL 文件上传]**. 选择并上传x Ultramarine-Accessible-Theme.zip文件。 它会将主题上传到您的AEM实例。
+1. 在您的AEM实例上导航到&#x200B;**[!UICONTROL Experience Manager]** > **[!UICONTROL 导航]** ![导航](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Forms]**。
+1. 选择&#x200B;**[!UICONTROL 创建]** > **[!UICONTROL 文件上传]**。 选择并上传x Ultramarine-Accessible-Theme.zip文件。 它会将主题上传到您的AEM实例。
 
 ## 使自适应表单可访问
 
@@ -63,8 +63,8 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 将Ultraminary-Accessible主题应用于您现有的自适应表单。 要应用主题，请执行以下操作：
 
 1. 打开自适应表单进行编辑。
-1. 选择组件并选择父级图标。 在上下文菜单中，选择 **[!UICONTROL 自适应表单容器]** 然后选择配置图标。
-1. 在属性浏览器中选择Ultramarine-Accessible主题，然后选择 **[!UICONTROL 保存]** 图标。
+1. 选择组件并选择父级图标。 在上下文菜单中，选择&#x200B;**[!UICONTROL 自适应表单容器]**，然后选择配置图标。
+1. 在属性浏览器中选择Ultramarine-Accessible主题，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;图标。
 1. 刷新浏览器窗口。 主题将应用于自适应表单。
 
 应用辅助主题后，请执行以下列出的其他修复。 这些修复是对辅助功能主题中涵盖的辅助功能修复的补充：
@@ -77,7 +77,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
    大多数辅助工具可告知用户内容的层级，以帮助用户了解网页的结构。 为自适应表单上的组织名称和表单名称文本设置不同的标题级别，为这些文本提供层次结构。 此外，使用每个面板和部分前具有相应标题级别的文本组件来创建层级。
 
-   ![如何应用标题样式](assets/apply-style.gif)
+   ![如何应用标头样式](assets/apply-style.gif)
 
 1. 根据辅助功能标准更改页脚背景颜色以使用相应的对比度，以提高文本的可见性和可读性。 您可以使用ANDI查找表单中的颜色对比度问题。 此外，请勿使用非常小的字体。 小字体很难阅读。
 
@@ -105,22 +105,22 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 要使用“辅助功能”选项，请执行以下步骤：
 
-1. 选择组件并选择 ![cmppr](assets/cmppr.png).
-1. 单击 **[!UICONTROL 辅助功能]** 在侧栏中选择所需的辅助功能选项。
+1. 选择一个组件并选择![cmppr](assets/cmppr.png)。
+1. 单击侧边栏中的&#x200B;**[!UICONTROL 辅助功能]**&#x200B;以选择所需的辅助功能选项。
 
 ### 表单组件中的辅助功能选项 {#accessibility-options-in-form-components}
 
 ![表单组件中的辅助功能选项](assets/accessibility-options.png)
 
-**自定文本** 表单作者在辅助功能选项自定义文本字段中提供内容。 辅助技术（如屏幕阅读器）使用此自定义文本。 在大多数情况下，使用“标题”设置是最佳选项。 考虑仅在无法使用标题或简短描述时创建自定义屏幕Reader文本。
+**自定义文本**&#x200B;表单作者在辅助功能选项自定义文本字段中提供内容。 辅助技术（如屏幕阅读器）使用此自定义文本。 在大多数情况下，使用“标题”设置是最佳选项。 考虑仅在无法使用标题或简短描述时创建自定义屏幕Reader文本。
 
-**简短描述** 对于大多数组件，当用户将指针悬停在组件上时，会在运行时显示简短描述。 您可以在帮助内容选项下的简短描述字段中设置此选项。
+**简短描述**&#x200B;对于大多数组件，当用户将指针悬停在组件上时，会在运行时显示简短描述。 您可以在帮助内容选项下的简短描述字段中设置此选项。
 
-**标题** 使用此选项可让AEM Forms使用与表单字段关联的可视标签作为屏幕阅读器文本。
+**标题**&#x200B;使用此选项可让AEM Forms使用与表单字段关联的可视标签作为屏幕阅读器文本。
 
-**名称** 可以在“绑定”选项卡的“名称”字段中指定值。 名称不能包含任何空格。
+**名称**&#x200B;您可以在“绑定”选项卡的“名称”字段中指定一个值。 名称不能包含任何空格。
 
-**无** 选择“无”会导致表单对象在已发布的表单中没有名称。 不建议对表单控件使用“无”设置。
+**无**&#x200B;选择“无”会导致表单对象在已发布的表单中没有名称。 不建议对表单控件使用“无”设置。
 
 >[!NOTE]
 >
@@ -133,7 +133,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 确保文本在表单中描述了对象及其用途。 屏幕阅读器在遇到图像时读取此替换文本。 图像必须始终指定替换文本。
 
-选择图像组件并选择 ![cmppr](assets/cmppr.png). 在侧栏中的属性下方，指定图像的替换文本。
+选择图像组件并选择![cmppr](assets/cmppr.png)。 在侧栏中的属性下方，指定图像的替换文本。
 
 ![图像的替换文本](assets/image-properties.png)
 
@@ -145,7 +145,7 @@ Ultraminary-Accessible主题是参考主题。 它有助于演示如何在自适
 
 建议使用默认字体和背景颜色 — 白色背景上的黑色内容。 如果更改默认颜色，请在浅色背景颜色上选择深色前景色，或反之。
 
-请参阅 [创建自适应表单的自定义主题](/help/forms/using/creating-custom-adaptive-form-themes.md)，以了解有关更改自适应表单的颜色对比度和主题的更多信息。
+请参阅[创建自适应表单的自定义主题](/help/forms/using/creating-custom-adaptive-form-themes.md)，以了解有关更改自适应表单的颜色对比度和主题的更多信息。
 
 ### 5.确保表单控件可使用键盘 {#ensure-that-form-controls-are-keyboard-accessible}
 
@@ -162,7 +162,7 @@ AEM Forms中提供了以下键盘快捷键。
 | 在表单中重置填写的数据 | Alt+R |
 | 提交表单 | Alt+S |
 
-此外，还有各种键盘快捷键可用于 **[!UICONTROL 日期选取器]** 自适应Forms中的组件。 要启用快捷键，请选择 **[!UICONTROL 日期选取器]** 组件和选择 ![配置](assets/configure-icon.svg) 以打开属性。 在 **[!UICONTROL 模式]** 部分，使用选择显示图案 **[!UICONTROL 类型]** 和 **[!UICONTROL 图案]** 下拉列表。 保存属性以启用快捷键 **[!UICONTROL 日期选取器]** 组件。
+此外，自适应Forms中的&#x200B;**[!UICONTROL 日期选取器]**&#x200B;组件有各种可用的键盘快捷键。 要启用快捷键，请选择&#x200B;**[!UICONTROL 日期选取器]**&#x200B;组件，然后选择![配置](assets/configure-icon.svg)以打开属性。 在&#x200B;**[!UICONTROL 模式]**&#x200B;部分中，使用&#x200B;**[!UICONTROL 类型]**&#x200B;和&#x200B;**[!UICONTROL 模式]**&#x200B;下拉列表中选择显示模式。 保存属性以启用对&#x200B;**[!UICONTROL 日期选取器]**&#x200B;组件的快捷键。
 
 以下键盘快捷键可用于自适应Forms中的日期选取器组件：
 
@@ -177,13 +177,13 @@ AEM Forms中提供了以下键盘快捷键。
 | 在日期选取器组件中可用的日历中向后移动光标 | 左箭头 |
 | 在日期选取器组件中可用的日历中向前移动光标 | 向右箭头 |
 | 对日历中右导航箭头和左导航箭头之间的标题执行操作 | Shift +向上键 |
-| 执行向右导航箭头图标的操作 ![右箭头](assets/right-navigation-icon.svg) 在日历中可用 | Shift +向左键 |
-| 执行向左导航箭头图标的操作 ![左箭头](assets/left-navigation-icon.svg) 在日历中可用 | Shift +向右键 |
+| 对日历中可用的右导航箭头图标![右箭头](assets/right-navigation-icon.svg)执行操作 | Shift +向左键 |
+| 对日历中可用的左导航箭头图标![左箭头](assets/left-navigation-icon.svg)执行操作 | Shift +向右键 |
 
 ## 使用辅助功能工具查找剩余的辅助功能问题
 
 辅助功能名称和描述检查器(ANDI)可帮助您在自适应表单中识别和修复与辅助功能符合性相关的问题。 要使用ANDI工具查找自适应表单中的辅助功能问题，请执行以下操作：
 
 1. 在预览模式下打开自适应表单。
-1. 单击已添加书签的ANDI工具图标。 ANDI工具可分析自适应表单并显示辅助功能问题。 有关如何使用该工具的详细信息，请参阅 [ANDI的文档](https://www.ssa.gov/accessibility/andi/help/howtouse.html).
+1. 单击已添加书签的ANDI工具图标。 ANDI工具可分析自适应表单并显示辅助功能问题。 有关如何使用该工具的详细信息，请参阅[ANDI的文档](https://www.ssa.gov/accessibility/andi/help/howtouse.html)。
 1. 审查和修复ANDI报告的问题。

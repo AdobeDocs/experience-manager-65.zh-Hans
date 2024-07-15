@@ -23,11 +23,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->如果您正在排查AEM中的创作问题，请参阅 [作者疑难解答。](/help/sites-authoring/troubleshooting.md)
+>如果您正在排查AEM中的创作问题，请参阅[排查作者问题。](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
->如果遇到问题，也值得检查 [已知问题](/help/release-notes/release-notes.md) 适用于您的实例（发行版和Service Pack）。
+>如果遇到问题，也值得检查实例（发行版和Service Pack）的[已知问题](/help/release-notes/release-notes.md)列表。
 
 ## 管理员疑难解答方案 {#troubleshooting-scenarios-for-administrators}
 
@@ -64,10 +64,10 @@ ht-degree: 2%
 
 ## 安装问题 {#installation-issues}
 
-请参阅 [常见安装问题](/help/sites-deploying/troubleshooting.md#common-installation-issues) 有关以下故障排除方案的信息：
+有关以下故障排除方案的信息，请参阅[常见安装问题](/help/sites-deploying/troubleshooting.md#common-installation-issues)：
 
 * 双击“快速入门”Jar对使用其他程序（如“存档管理器”）的JAR文件无效。
-* 在CRX上运行的应用程序会引发内存不足错误。
+* 在CRX上运行的应用程序引发内存不足错误。
 * 双击AEM快速入门后，浏览器中不显示AEM欢迎屏幕。
 
 ## 疑难解答分析方法 {#methods-for-troubleshooting-analysis}
@@ -78,8 +78,8 @@ ht-degree: 2%
 
 ### 使用Sling线程转储器 {#using-sling-thread-dumper}
 
-1. 打开 **AEM Web控制台**；例如， `https://localhost:4502/system/console/`.
-1. 选择 **Threads**&#x200B;下&#x200B;**状态** 选项卡。
+1. 打开&#x200B;**AEM Web控制台**；例如，在`https://localhost:4502/system/console/`。
+1. 选择&#x200B;**Status**&#x200B;选项卡下的&#x200B;**Threads**。
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -87,7 +87,7 @@ ht-degree: 2%
 
 1. 查找AEM Java™实例的PID（进程ID）。
 
-   例如，您可以使用 `ps -ef` 或 `jps`.
+   例如，您可以使用`ps -ef`或`jps`。
 
 1. 运行：
 
@@ -97,28 +97,28 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->您可以使用将线程转储附加到日志文件 `>>` 输出重定向：
+>您可以使用`>>`输出重定向将线程转储附加到日志文件：
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-请参阅 [如何从JVM进行线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html) 文档以了解更多信息
+有关详细信息，请参阅[如何从JVM进行线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)文档
 
 ### 检查未关闭的JCR会话 {#checking-for-unclosed-jcr-sessions}
 
 在为AEM WCM开发功能时，可能会打开JCR会话（相当于打开数据库连接）。 如果打开的会话从未关闭，则您的系统可能会遇到以下症状：
 
 * 系统变慢了。
-* 您可以看到许多CacheManager： resizeAll条目（在日志文件中）；以下数字(大小=&lt;x>)显示缓存的数量，每个会话会打开多个缓存。
+* 您可以看到许多CacheManager： resizeAll条目（在日志文件中）；以下数字(size=&lt;x>)显示高速缓存数，每个会话打开多个高速缓存。
 * 系统有时内存不足（在数小时、数天或数周后，具体取决于严重程度）。
 
-要分析未关闭的会话并找出哪些代码未关闭会话，请参阅知识库文章 [分析未关闭的会话](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+要分析未关闭的会话并找出哪些代码未关闭会话，请参阅知识库文章[分析未关闭的会话](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)。
 
 ### 使用Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 
 OSGi捆绑包的状态还可以提供可能问题的早期指示。
 
-1. 打开 **AEM Web控制台**；例如， `https://localhost:4502/system/console/`.
-1. 选择 **包** 下 **OSGI** 选项卡。
+1. 打开&#x200B;**AEM Web控制台**；例如，在`https://localhost:4502/system/console/`。
+1. 选择&#x200B;**OSGI**&#x200B;选项卡下的&#x200B;**包**。
 1. 检查：
 
    * 捆绑包的状态。 如果有任何组件处于非活动或未满足状态，请尝试停止并重新启动捆绑包。 如果问题仍然存在，请使用其他方法进行进一步调查。

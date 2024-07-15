@@ -24,7 +24,7 @@ ht-degree: 42%
 >* 本页旨在概述使用Adobe Experience Manager (AEM)创作环境时的基本处理。 它使用&#x200B;**Sites**&#x200B;控制台作为基础。
 >
 >* 某些功能并不是在所有控制台中均可用，而且某些控制台可能会提供额外的功能。有关各个控制台及其相关功能的特定信息，将在其他页面上详细介绍。
->* 在整个AEM环境中都可以使用键盘快捷键。 尤其是当 [使用控制台](/help/sites-authoring/keyboard-shortcuts.md) 和 [编辑页面](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+>* 在整个AEM环境中都可以使用键盘快捷键。 特别是当[使用控制台](/help/sites-authoring/keyboard-shortcuts.md)和[编辑页面](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)时。
 >
 
 ## 快速入门 {#getting-started}
@@ -43,9 +43,9 @@ ht-degree: 42%
 
 >[!NOTE]
 >
->为了使您更好地了解AEM的基本用法，本文档基于 **站点** 控制台。
+>为了更好地了解AEM的基本用法，本文档基于&#x200B;**站点**&#x200B;控制台。
 >
->要开始配置，请单击 **站点**.
+>若要开始，请单击&#x200B;**站点**。
 
 ### 产品导航 {#product-navigation}
 
@@ -53,9 +53,9 @@ ht-degree: 42%
 
 ![产品导航](assets/bh-02.png)
 
-单击 **下一个** 以进入概述的下一页。 单击 **关闭** 或单击概述对话框外部以关闭。
+单击&#x200B;**下一步**&#x200B;进入概述的下一页。 单击&#x200B;**关闭**&#x200B;或单击概述对话框外部关闭。
 
-该概述将在您下次访问控制台时重新启动，除非您查看所有幻灯片或选中选项 **不再显示此信息**.
+该概述将在您下次访问控制台时重新启动，除非您查看所有幻灯片，或选中选项&#x200B;**不再显示此内容**。
 
 ## 全局导航 {#global-navigation}
 
@@ -67,7 +67,7 @@ ht-degree: 42%
 
 >[!NOTE]
 >
->首次登录时，您会看到 **导航** 面板
+>首次登录时显示&#x200B;**导航**&#x200B;面板
 
 全局导航有两个面板，它们由屏幕左侧的图标来表示：
 
@@ -93,47 +93,47 @@ ht-degree: 42%
    <td><strong>用途</strong></td>
   </tr>
   <tr>
-   <td>资产<br /> </td>
-   <td>这些控制台允许您导入和 <a href="/help/assets/assets.md">管理数字资产</a> 如图像、视频、文档和音频文件。 随后，这些资产便可由同一AEM实例上运行的任何网站使用。 </td>
+   <td>Assets<br /> </td>
+   <td>这些控制台允许您导入和<a href="/help/assets/assets.md">管理数字资产</a>，如图像、视频、文档和音频文件。 随后，这些资产便可由同一AEM实例上运行的任何网站使用。 </td>
   </tr>
   <tr>
    <td>社区</td>
-   <td>通过此控制台，您可以创建和管理 <a href="/help/communities/sites-console.md">社区站点</a> 对象 <a href="/help/communities/overview.md#engagement-community">参与</a> 和 <a href="/help/communities/overview.md#enablement-community">启用</a>.</td>
+   <td>此控制台允许您为<a href="/help/communities/overview.md#engagement-community">参与</a>和<a href="/help/communities/overview.md#enablement-community">启用</a>创建和管理<a href="/help/communities/sites-console.md">社区站点</a>。</td>
   </tr>
   <tr>
    <td>商务</td>
-   <td>这使您能够管理与您的产品、产品目录和订单相关的 <a href="/help/commerce/cif-classic/administering/ecommerce.md">商务</a> 站点。</td>
+   <td>这允许您管理与您的<a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a>网站相关的产品、产品目录和订单。</td>
   </tr>
   <tr>
    <td>体验片段</td>
-   <td>An <a href="/help/sites-authoring/experience-fragments.md">体验片段</a> 是一个独立的体验，可以跨渠道重复使用，也可以具有变量，从而避免反复地复制和粘贴体验或体验的部分内容。</td>
+   <td><a href="/help/sites-authoring/experience-fragments.md">体验片段</a>是独立的体验，可以跨渠道重复使用，也可以具有变量，从而避免反复地复制和粘贴体验或体验的部分内容。</td>
   </tr>
   <tr>
    <td>Forms</td>
-   <td>通过此控制台，您可以创建、管理和处理 <a href="/help/forms/using/introduction-aem-forms.md">表单和文档</a>.</td>
+   <td>此控制台允许您创建、管理和处理您的<a href="/help/forms/using/introduction-aem-forms.md">表单和文档</a>。</td>
   </tr>
   <tr>
    <td>个性化</td>
-   <td>此控制台提供 <a href="/help/sites-authoring/personalization.md">用于创作目标内容和呈现个性化体验的工具框架</a>.</td>
+   <td>此控制台为创作目标内容和呈现个性化体验提供了<a href="/help/sites-authoring/personalization.md">工具框架</a>。</td>
   </tr>
   <tr>
    <td>项目</td>
-   <td>此 <a href="/help/sites-authoring/touch-ui-managing-projects.md">通过“项目”控制台，您可以直接访问您的项目</a>. 项目是虚拟功能板。 它们可用于构建团队，然后为该团队提供对资源、工作流和任务的访问权限，从而让人们朝着同一个目标努力。 <br /> </td>
+   <td>通过<a href="/help/sites-authoring/touch-ui-managing-projects.md">项目控制台，您可以直接访问您的项目</a>。 项目是虚拟功能板。 它们可用于构建团队，然后为该团队提供对资源、工作流和任务的访问权限，从而让人们朝着同一个目标努力。<br /> </td>
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a> 让您可以管理任何地点、任何规模的面向客户的所有屏幕。</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a>允许您管理任何地点、任何规模的面向客户的所有屏幕。</td>
   </tr>
   <tr>
    <td>Sites</td>
-   <td>站点控制台允许您 <a href="/help/sites-authoring/page-authoring.md">创建、查看和管理网站</a> 在您的AEM实例上运行。 通过这些控制台，您可以创建、编辑、复制、移动和删除网站页面、启动工作流以及发布页面。<br /> </td>
+   <td>站点控制台允许您<a href="/help/sites-authoring/page-authoring.md">创建、查看和管理在AEM实例上运行的网站</a>。 通过这些控制台，您可以创建、编辑、复制、移动和删除网站页面、启动工作流以及发布页面。<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### “工具”面板 {#tools-panel}
 
-在“工具”面板中，侧面板中的每个选项都包含一系列子菜单。 此 [工具控制台](/help/sites-administering/tools-consoles.md) 通过此处提供的功能，可访问一些专用工具和控制台，帮助您管理网站、数字资产及内容存储库的其他方面。
+在“工具”面板中，侧面板中的每个选项都包含一系列子菜单。 此处提供的[工具控制台](/help/sites-administering/tools-consoles.md)提供了对几个专用工具和控制台的访问权限，这些工具和控制台可帮助您管理网站、数字资产及内容存储库的其他方面。
 
 ![“工具”面板](assets/bh-04.png)
 
@@ -145,7 +145,7 @@ ht-degree: 42%
 
 * [全局导航](#navigatingconsolesandtools)
 
-  选择 **Adobe Experience Manager** 可在各控制台之间导航的链接。
+  选择&#x200B;**Adobe Experience Manager**&#x200B;链接，您可以在其中在控制台之间导航。
 
   ![Adobe Experience Manager链接](assets/screen_shot_2018-03-23at103615.png)
 
@@ -171,7 +171,7 @@ ht-degree: 42%
 
   >[!NOTE]
   >
-  >现成的AEM预先加载了分配给管理员用户组的管理任务。 请参阅 [您的收件箱 — 现成的管理任务](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) 以了解详细信息。
+  >现成的AEM预先加载了分配给管理员用户组的管理任务。 有关详细信息，请参阅[您的收件箱 — 现成的管理任务](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks)。
 
 * [用户属性](/help/sites-authoring/user-properties.md)
 
@@ -199,7 +199,7 @@ ht-degree: 42%
 
   ![Analytics时段](assets/screen_shot_2018-03-23at104126.png)
 
-  这仅在列表视图中可用。 欲了解更多信息，请参见 [列表视图](#list-view).
+  这仅在列表视图中可用。 有关详细信息，请参阅[列表视图](#list-view)。
 
 * **创建**&#x200B;按钮
 
@@ -219,9 +219,9 @@ ht-degree: 42%
 
 * 键盘导航
 
-  您可以只使用键盘导航网站。这会使用的标准浏览器功能 **选项卡** 键(或 **OPT+TAB键**)，以便在页面上 *可聚焦*.
+  您可以只使用键盘导航网站。它使用&#x200B;**TAB**&#x200B;键（或&#x200B;**OPT+TAB**）的标准浏览器功能，在页面上可聚焦&#x200B;*的元素*&#x200B;之间移动您。
 
-  在 **站点** 控制台中，添加了一个选项  **跳至主要内容**. 当您看到时，它就会变得可见 *选项卡* 通过“标题”选项，并允许您跳过（产品）工具栏中的标准元素并直接转到主内容，从而加快导航速度。
+  在&#x200B;**站点**&#x200B;控制台中，添加了&#x200B;**跳至主要内容**&#x200B;的选项。 当您&#x200B;*按Tab*&#x200B;通过标题选项时，该选项将变得可见，并且它可以通过允许您跳过（产品）工具栏中的标准元素并直接转到主内容来加快导航速度。
 
   ![跳至主要内容](assets/bh-30.png)
 
@@ -231,13 +231,13 @@ ht-degree: 42%
 
 * **“控制台”工具栏**
 
-  根据您的位置， **帮助** 图标可打开相应的资源：
+  根据您的位置，**帮助**&#x200B;图标将打开相应的资源：
 
   ![控制台工具栏](assets/bh-10.png)
 
 * **导航**
 
-  第一次浏览系统时， [一系列幻灯片介绍了AEM导航](/help/sites-authoring/basic-handling.md#product-navigation).
+  第一次导航系统时，[一系列幻灯片将介绍AEM导航](/help/sites-authoring/basic-handling.md#product-navigation)。
 
 * **页面编辑器**
 
@@ -247,11 +247,11 @@ ht-degree: 42%
 
   与在首次访问任何控制台时浏览[产品导航概述](/help/sites-authoring/basic-handling.md#product-navigation)一样，浏览此概述。
 
-  从 **页面信息** 菜单，您可以选择 [**帮助**](/help/sites-authoring/author-environment-tools.md#accessing-help) 以随时再次显示此信息。
+  从&#x200B;**页面信息**&#x200B;菜单中，可以随时选择&#x200B;[**帮助**](/help/sites-authoring/author-environment-tools.md#accessing-help)&#x200B;以再次显示此信息。
 
 * **“工具”控制台**
 
-  从 **工具** 控制台中，您还可以访问外部 **资源**：
+  从&#x200B;**工具**&#x200B;控制台，您还可以访问外部&#x200B;**资源**：
 
    * **文档**
 查看Web Experience Management文档
@@ -274,15 +274,15 @@ ht-degree: 42%
 
 * 当前控制台
 * 当前上下文
-* 如果您在 [选择模式](#navigatingandselectionmode) 也可能不会
+* 是否处于[选择模式](#navigatingandselectionmode)
 
 工具栏中可用的操作会发生更改，以反映您可对特定选定项目执行的操作。
 
 [选择资源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)的方式依视图而定。
 
-由于某些窗口存在空间限制，因此工具栏的长度可能很快就会超过可用空间。发生这种情况时，会显示其他选项。 单击或点按省略号(三个点或 **...**)会打开一个下拉选择器，其中包含所有其余的操作。 例如，在 **Sites** 控制台中选择了一个页面之后：
+由于某些窗口存在空间限制，因此工具栏的长度可能很快就会超过可用空间。发生这种情况时，会显示其他选项。 单击或点按省略号（三个点或&#x200B;**...**）会打开一个下拉选择器，其中包含所有其余的操作。 例如，在 **Sites** 控制台中选择了一个页面之后：
 
-![“操作”工具栏](assets/bh-12.png)
+![操作工具栏](assets/bh-12.png)
 
 >[!NOTE]
 >
@@ -290,7 +290,7 @@ ht-degree: 42%
 
 ## 快速操作 {#quick-actions}
 
-在 [卡片视图](#cardviewquickactions)中，某些操作以快速操作图标的形式在工具栏和上提供。 快速操作图标一次只能用于一个项目，因此无需预先选择。
+在[卡片视图](#cardviewquickactions)中，某些操作以快速操作图标的形式在工具栏中提供。 快速操作图标一次只能用于一个项目，因此无需预先选择。
 
 将鼠标悬停在（桌面设备）资源信息卡上时，可以看到快速操作。 可用的快速操作取决于控制台和上下文。例如，下面是适用于 **Sites** 控制台中的页面的快速操作：
 
@@ -326,39 +326,39 @@ ht-degree: 42%
    <td>列视图<br /> </td>
    <td>
     <ul>
-     <li>桌面：<br /> 单击缩略图</li>
-     <li>移动设备：<br /> 选择缩略图</li>
+     <li>桌面：<br />单击缩略图</li>
+     <li>移动设备： <br />选择缩略图</li>
     </ul> </td>
    <td>
     <ul>
-     <li>桌面：<br /> 单击缩略图</li>
-     <li>移动设备：<br /> 选择缩略图</li>
+     <li>桌面：<br />单击缩略图</li>
+     <li>移动设备： <br />选择缩略图</li>
     </ul> </td>
   </tr>
   <tr>
    <td>卡片视图<br /> </td>
    <td>
     <ul>
-     <li>桌面：<br /> 鼠标悬停，然后使用复选标记快速操作</li>
-     <li>移动设备：<br /> 选择并按住卡片</li>
+     <li>桌面：<br />鼠标悬停，然后使用复选标记快速操作</li>
+     <li>移动设备： <br />选择并按住卡片</li>
     </ul> </td>
    <td>
     <ul>
-     <li>桌面：<br /> 单击卡</li>
-     <li>移动设备：<br /> 选择卡</li>
+     <li>桌面：<br />单击卡片</li>
+     <li>移动设备： <br />选择卡</li>
     </ul> </td>
   </tr>
   <tr>
    <td>列表视图</td>
    <td>
     <ul>
-     <li>桌面：<br /> 单击缩略图</li>
-     <li>移动设备：<br /> 选择缩略图</li>
+     <li>桌面：<br />单击缩略图</li>
+     <li>移动设备： <br />选择缩略图</li>
     </ul> </td>
    <td>
     <ul>
-     <li>桌面：<br /> 单击缩略图</li>
-     <li>移动设备：<br /> 选择缩略图</li>
+     <li>桌面：<br />单击缩略图</li>
+     <li>移动设备： <br />选择缩略图</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -368,9 +368,9 @@ ht-degree: 42%
 
 您可以通过单击控制台右上角的&#x200B;**“全选”**&#x200B;选项来选择任何视图中的所有项目。
 
-* 在 **卡片视图**，则会选择所有卡片。
-* 在 **列表视图**，则会选择列表中的所有项目。
-* 在 **列视图**，则会选择最左侧列中的所有项目。
+* 在&#x200B;**卡片视图**&#x200B;中，已选择所有卡片。
+* 在&#x200B;**列表视图**&#x200B;中，已选择列表中的所有项。
+* 在&#x200B;**列视图**&#x200B;中，选择最左侧列中的所有项。
 
 ![全选](assets/screen-shot_2019-03-05at094659.png)
 
@@ -380,9 +380,9 @@ ht-degree: 42%
 
 您可以通过以下任一方式取消选择所有项目并退出选择模式：
 
-* 单击或点按 **X** 在伯爵的旁边，
+* 单击或点按计数旁边的&#x200B;**X**，
 
-* 或使用 **转义**.
+* 或使用&#x200B;**ESC**。
 
 ![取消选择](assets/bh-14.png)
 
@@ -394,9 +394,9 @@ ht-degree: 42%
 
    ![选择 — 卡片视图](assets/bh-15.png)
 
-1. 选择资源后，顶部标题由覆盖 [“操作”工具栏](#actionstoolbar) 用于提供对当前适用于选定资源的操作的访问权限。
+1. 选择某个资源后，顶部标题被[操作工具栏](#actionstoolbar)覆盖，通过该工具栏可访问当前适用于选定资源的操作。
 
-   要退出选择模式，请选择 **X** 右上角，或使用 **转义**.
+   要退出选择模式，请选择右上角的&#x200B;**X**，或者使用&#x200B;**ESC**。
 
 ### 列视图 {#column-view}
 
@@ -457,11 +457,11 @@ ht-degree: 42%
 ![列表视图](assets/bh-19.png)
 
 * 列表视图列出各项资源在当前级别的信息。
-* 您可以通过点按/单击资源名称对树进行向下导航，并使用备份 [标题中的痕迹导航](/help/sites-authoring/basic-handling.md#the-header).
+* 您可以通过点按/单击资源名称来向下导航树，并使用标题](/help/sites-authoring/basic-handling.md#the-header)中的[痕迹导航进行备份。
 
 * 要轻松选择列表中的所有项目，请使用列表左上角的复选框。
 
-  ![列表视图 — 全选](assets/bh-20.png)
+  ![列表视图 — 选择全部](assets/bh-20.png)
 
    * 如果选择了列表中的所有项目，此复选框即会显示为选中状态。
 
@@ -472,7 +472,7 @@ ht-degree: 42%
       * 要选择全部，请单击复选框。
       * 要取消全选，请再次单击复选框。
 
-* 使用选择要显示的列 **查看设置** 选项位于“视图”按钮下。 可以显示以下列：
+* 使用位于“视图”按钮下方的&#x200B;**视图设置**&#x200B;选项选择要显示的列。 可以显示以下列：
 
    * **名称** – 页面名称，在多语言创作环境中非常有用，因为它是页面 URL 的一部分，无论用户使用何种语言，都不会发生更改
    * **修改时间** – 上次修改日期和上次修改用户
@@ -500,7 +500,7 @@ ht-degree: 42%
 
   ![更改顺序 — 拖动](assets/bh-23.png)
 
-* 您可以通过以下方式显示Analytics数据：显示相应的列 **查看设置** 对话框。
+* 可以使用&#x200B;**视图设置**&#x200B;对话框显示相应的列，以显示Analytics数据。
 
   您可以使用标题右侧的筛选选项筛选过去30、90或365天的Analytics数据。
 
@@ -540,7 +540,7 @@ ht-degree: 42%
 
 时间线列可让您：
 
-* [查看各种事件](#timelineviewevents) 与选定项目相关。
+* [查看与选定项目相关的各种事件](#timelineviewevents)。
 
    * 可以从下拉列表中选择事件类型：
 
@@ -551,24 +551,24 @@ ht-degree: 42%
       * [版本](/help/sites-authoring/working-with-page-versions.md)
       * [工作流](/help/sites-authoring/workflows-applying.md)
 
-         * 除了 [瞬态工作流](/help/sites-developing/workflows.md#transient-workflows) 因为没有保存它们的历史记录信息
+         * [临时工作流](/help/sites-developing/workflows.md#transient-workflows)除外，因为没有保存它们的历史记录信息
 
       * 并全部显示
 
-* [添加/查看评论](#timelineaddingandviewingcomments) 关于所选项目。 **评论**&#x200B;框显示在事件列表的底部。键入评论后跟回车可注册该评论。 选择“注释”或“显 **示全部** ” **时，将显示** “注释”。
+* [添加/查看有关所选项目的备注](#timelineaddingandviewingcomments)。 **评论**&#x200B;框显示在事件列表的底部。键入评论后跟回车可注册该评论。 选择“注释”或“显 **示全部** ” **时，将显示** “注释”。
 
 * 特定的控制台还具有其他功能。 例如，在站点控制台中，您可以执行以下操作：
 
-   * [保存版本](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
-   * [启动工作流](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
+   * [保存版本](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui)。
+   * [启动工作流](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail)。
 
-这些选项可通过 **注释** 字段。
+这些选项可通过&#x200B;**评论**&#x200B;字段旁边的V形标记访问。
 
 ![时间线](assets/bh-27.png)
 
 ### 引用 {#references}
 
-**引用** 显示与选定资源的任何连接。 例如，在 **Sites** 控制台中，页面的[引用](/help/sites-authoring/author-environment-tools.md#showingpagereferences)会显示以下项目：
+**引用**&#x200B;显示与选定资源的所有连接。 例如，在 **Sites** 控制台中，页面的[引用](/help/sites-authoring/author-environment-tools.md#showingpagereferences)会显示以下项目：
 
 * [启动项](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copy](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
@@ -582,6 +582,6 @@ ht-degree: 42%
 
 ### 过滤器 {#filter}
 
-这将打开一个面板，类似于 [搜索](/help/sites-authoring/search.md)，并设置了相应的位置过滤器，允许您进一步筛选希望查看的内容。
+这将打开一个与[搜索](/help/sites-authoring/search.md)类似的面板，并设置了相应的位置筛选器，从而允许您进一步筛选希望查看的内容。
 
-![筛选](assets/bh-29.png)
+![筛选器](assets/bh-29.png)

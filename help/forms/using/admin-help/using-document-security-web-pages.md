@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您还可以使用用户登录帐户通过Acrobat和其他客户端应用程序登录到Document Security。 (请参阅 [设置从客户端应用程序访问Document Security](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>您还可以使用用户登录帐户通过Acrobat和其他客户端应用程序登录到Document Security。 （请参阅[设置从客户端应用程序访问Document Security](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications)。）
 
 要打开网页，您需要浏览器以及URL和您的登录信息，以便Document Security。 用户的URL与管理员的URL不同。
 
@@ -34,9 +34,9 @@ ht-degree: 0%
 
 要使用浏览器登录到网页，您需要具有Document Security URL和帐户。 用户的URL与管理员的URL不同。 管理员还可以登录到用户页面以创建策略。
 
-如果您有权访问多个document security安装，则需要要访问的document security实例的URL。 如果您没有此信息，请咨询您的管理员。 用户页面的默认URL为 `https://[host]:[port]/edc`. 在某些情况下，可能不需要端口号。 请咨询您的管理员以了解详细信息。
+如果您有权访问多个document security安装，则需要要访问的document security实例的URL。 如果您没有此信息，请咨询您的管理员。 用户页面的默认URL为`https://[host]:[port]/edc`。 在某些情况下，可能不需要端口号。 请咨询您的管理员以了解详细信息。
 
-管理员的默认URL为 `https://[host]:[port]/adminui`.
+管理员的默认URL为`https://[host]:[port]/adminui`。
 
 对于管理员，会在安装期间创建默认的超级管理员帐户。 首次安装Document Security时，您可以使用此帐户登录。
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 1. 在浏览器中键入URL：
 
-   文档安全URL： `https://[host]:[port]/edc`
+   Document Security URL： `https://[host]:[port]/edc`
 
    或管理控制台URL： `https://[host]:[port]/adminui`
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 ## 设置从客户端应用程序访问Document Security {#setting-up-access-to-document-security-from-client-applications}
 
-客户端应用程序必须设置为连接到Document Security以保护文档，打开受策略保护的文档，并连接到Document Security网页。 请参阅 *Acrobat帮助* 或相应的 *RightsManagementExtension帮助* 有关在客户端应用程序中配置连接的信息。
+客户端应用程序必须设置为连接到Document Security以保护文档，打开受策略保护的文档，并连接到Document Security网页。 有关在客户端应用程序中配置连接的信息，请参阅&#x200B;*Acrobat帮助*&#x200B;或相应的&#x200B;*RightsManagementExtension帮助*。
 
 文档安全通过安全套接字层(SSL)访问。 将网站的证书安装到您的证书存储中，以便您可以通过客户端应用程序访问Document Security。
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 **使用Internet Explorer安装服务器证书**
 
-1. 打开Web浏览器，并在“地址”框中键入文档安全的基本URL。 例如，键入 `https://[host]:[port]`. 出现“Security Alert（安全警报）”对话框。
+1. 打开Web浏览器，并在“地址”框中键入文档安全的基本URL。 例如，类型`https://[host]:[port]`。 出现“Security Alert（安全警报）”对话框。
 1. 单击查看证书，然后单击安装证书并选择默认安装选项。 证书需要安装在受信任的根证书颁发机构中。
 1. 关闭浏览器会话。
 1. 打开另一个浏览器窗口，然后在地址框中键入相同的URL。 不应出现“安全警报”对话框。 此测试用于确认证书是否正确安装。

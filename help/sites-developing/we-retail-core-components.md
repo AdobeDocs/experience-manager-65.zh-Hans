@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 正在尝试 {#trying-it-out}
 
-1. 使用We.Retail示例内容启动Adobe Experience Manager (AEM)，并打开 [组件控制台](/help/sites-authoring/default-components-console.md).
+1. 使用We.Retail示例内容启动Adobe Experience Manager (AEM)，并打开[组件控制台](/help/sites-authoring/default-components-console.md)。
 
    **全局导航>工具>组件**
 
@@ -31,41 +31,41 @@ ht-degree: 0%
    * `.core-wcm`：标准核心组件
    * `.core-wcm-form`：表单提交核心组件
 
-   选择 `.core-wcm`.
+   选择`.core-wcm`。
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. 所有核心组件都已命名 **v1**，表明这是此核心组件的第一个版本。 今后将发布常规版本，这些版本与AEM的版本兼容，并且允许轻松升级，以便您能够利用最新功能。
-1. 单击 **文本(v1)**.
+1. 所有核心组件都名为&#x200B;**v1**，这反映了此核心组件的第一个版本。 今后将发布常规版本，这些版本与AEM的版本兼容，并且允许轻松升级，以便您能够利用最新功能。
+1. 单击&#x200B;**文本(v1)**。
 
-   请参见 **资源类型** 组件的 `/apps/core/wcm/components/text/v1/text`. 核心组件位于 `/apps/core/wcm/components` 和按组件进行版本控制。
+   查看该组件的&#x200B;**资源类型**&#x200B;是`/apps/core/wcm/components/text/v1/text`。 核心组件位于`/apps/core/wcm/components`下，且按组件进行版本控制。
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
-1. 单击 **文档** 选项卡以查看组件的开发人员文档。
+1. 单击&#x200B;**文档**&#x200B;选项卡以查看组件的开发人员文档。
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. 返回到组件控制台。 筛选组 **We.Retail** 并选择 **文本** 组件。
-1. 请参见 **资源类型** 指向下的预期组件 `/apps/weretail` 但是 **资源超级类型** 指向核心组件 `/apps/core/wcm/components/text/v1/text`.
+1. 返回到组件控制台。 筛选组&#x200B;**We.Retail**&#x200B;并选择&#x200B;**Text**&#x200B;组件。
+1. 查看&#x200B;**资源类型**&#x200B;在`/apps/weretail`下按预期指向组件，但&#x200B;**资源超级类型**&#x200B;指向核心组件`/apps/core/wcm/components/text/v1/text`。
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. 单击 **实时使用情况** 选项卡，以查看哪些页面正在使用此组件。 单击第一个 **谢谢** 页面以编辑页面。
+1. 单击&#x200B;**实时使用情况**&#x200B;选项卡以查看将在哪些页面上使用此组件。 单击前&#x200B;**感谢**&#x200B;页以编辑该页。
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
 1. 在感谢页面上，选择文本组件，并在该组件的“编辑”菜单中，单击取消继承图标。
 
-   [We.Retail具有全局化的网站结构](/help/sites-developing/we-retail-globalized-site-structure.md) 将内容从语言母版推送到 [通过称为继承的机制创建活动副本](/help/sites-administering/msm.md). 因此，必须取消继承，用户才能手动编辑文本。
+   [We.Retail具有全局化网站结构](/help/sites-developing/we-retail-globalized-site-structure.md)，内容通过称为继承](/help/sites-administering/msm.md)的机制从语言母版推送到[活动副本。 因此，必须取消继承，用户才能手动编辑文本。
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. 单击以确认取消 **是**.
+1. 单击&#x200B;**是**&#x200B;确认取消。
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. 取消继承并选择文本组件后，即可使用更多选项。 单击 **编辑**.
+1. 取消继承并选择文本组件后，即可使用更多选项。 单击&#x200B;**编辑**。
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -73,8 +73,8 @@ ht-degree: 0%
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. 从 **页面信息** 菜单，选择 **编辑模板**.
-1. 在页面的模板编辑器中，单击 **策略** 中文本组件的图标 **布局容器** 页面的。
+1. 从&#x200B;**页面信息**&#x200B;菜单中，选择&#x200B;**编辑模板**。
+1. 在页面的模板编辑器中，单击页面&#x200B;**布局容器**&#x200B;中文本组件的&#x200B;**策略**&#x200B;图标。
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -86,6 +86,6 @@ ht-degree: 0%
 
 ## 更多信息 {#further-information}
 
-有关核心组件的更多信息，请参阅创作文档 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 有关核心组件和开发人员文档的功能概述 [开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html) 获取技术概述。
+有关核心组件的更多信息，请参阅创作文档[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)以了解核心组件的功能概述，并参阅开发人员文档[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)以了解技术概述。
 
-此外，您可能希望进一步调查 [可编辑的模板](/help/sites-developing/we-retail-editable-templates.md). 请参阅创作文档 [创建页面模板](/help/sites-authoring/templates.md) 或开发人员文档页面 [模板 — 可编辑](/help/sites-developing/page-templates-editable.md) 有关可编辑模板的完整详细信息。
+此外，您可能希望进一步调查[可编辑模板](/help/sites-developing/we-retail-editable-templates.md)。 有关可编辑模板的完整详细信息，请参阅创作文档[创建页面模板](/help/sites-authoring/templates.md)或开发人员文档页面[模板 — 可编辑](/help/sites-developing/page-templates-editable.md)。

@@ -28,7 +28,7 @@ cURL是用于执行URL操作的开源命令行工具。 它支持各种Internet�
 
 cURL是一个成熟且广泛使用的工具，最初于1997年发布，用于使用URL语法获取或发送数据。 名称cURL最初的意思是“查看URL”。
 
-由于构建AEM所基于的Sling框架具有RESTful性质，因此大多数任务可以简化为URL调用，而该URL调用可以使用cURL执行。 [内容操作任务](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) 例如激活页面，以及启动工作流和 [运行任务](/help/sites-administering/curl.md#common-operational-aem-curl-commands) 例如包管理以及使用cURL管理用户等。 此外，您还可以 [创建您自己的cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) 命令用于AEM中的大多数任务。
+由于构建AEM所基于的Sling框架具有RESTful性质，因此大多数任务可以简化为URL调用，而该URL调用可以使用cURL执行。 可以使用cURL自动执行[内容操作任务](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands)，例如激活页面、启动工作流和[操作任务](/help/sites-administering/curl.md#common-operational-aem-curl-commands)，例如包管理和管理用户。 此外，您还可以[为AEM中的大多数任务创建自己的cURL](/help/sites-administering/curl.md#building-a-curl-ready-aem-command)命令。
 
 >[!NOTE]
 >
@@ -36,7 +36,7 @@ cURL是一个成熟且广泛使用的工具，最初于1997年发布，用于使
 
 ## 正在下载cURL {#downloading-curl}
 
-cURL是macOS和一些Linux调试程序的标准部分。 但是，它适用于大多数操作系统。 有关最新下载信息，请访问 [https://curl.haxx.se/download.html](https://curl.haxx.se/download.html).
+cURL是macOS和一些Linux调试程序的标准部分。 但是，它适用于大多数操作系统。 可在[https://curl.haxx.se/download.html](https://curl.haxx.se/download.html)找到最新下载。
 
 cURL的源存储库也可以在GitHub上找到。
 
@@ -46,22 +46,22 @@ cURL命令可以为AEM中的大多数操作构建，例如触发工作流、检�
 
 要找到特定操作所需的确切命令，您需要在执行AEM命令时使用浏览器中的开发人员工具来捕获对服务器的POST调用。
 
-以下步骤描述了如何使用Chrome浏览器中创建新页面作为示例来完成此操作。
+以下步骤描述了如何通过在Chrome浏览器中创建新页面作为示例来完成此操作。
 
-1. 准备要在AEM中调用的操作。 在本例中，我们继续到 **创建页面** 向导，但尚未单击 **创建**.
+1. 准备要在AEM中调用的操作。 在本例中，我们已继续到&#x200B;**创建页面**&#x200B;向导的结尾，但尚未单击&#x200B;**创建**。
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
-1. 启动开发人员工具并选择 **网络** 选项卡。 单击 **保留日志** 选项。
+1. 启动开发人员工具并选择&#x200B;**网络**&#x200B;选项卡。 在清除控制台之前，单击&#x200B;**保留日志**&#x200B;选项。
 
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-1. 单击 **创建** 在 **创建页面** 向导以实际创建工作流。
-1. 右键单击生成的POST操作并选择 **复制** > **复制为cURL**.
+1. 在&#x200B;**创建页面**&#x200B;向导中单击&#x200B;**创建**&#x200B;以实际创建工作流。
+1. 右键单击生成的POST操作并选择&#x200B;**复制** > **复制为cURL**。
 
    ![chlimage_1-68](assets/chlimage_1-68a.png)
 
-1. 将cURL命令复制到文本编辑器并从命令中删除所有标头，这些标头以 `-H` （下图以蓝色突出显示）并添加适当的身份验证参数，例如 `-u <user>:<password>`.
+1. 将cURL命令复制到文本编辑器并从命令中删除所有以`-H`开头的标头（下图中的蓝色突出显示）并添加适当的身份验证参数，如`-u <user>:<password>`。
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -75,7 +75,7 @@ cURL命令可以为AEM中的大多数操作构建，例如触发工作流、检�
 
 >[!NOTE]
 >
->以下示例假定AEM运行于 `localhost` 在端口 `4502` 并使用用户 `admin` 包含密码 `admin`. 其他命令占位符设置在尖括号中。
+>以下示例假定AEM在端口`4502`上的`localhost`上运行，并使用密码为`admin`的用户`admin`。 其他命令占位符设置在尖括号中。
 
 ### 包管理 {#package-management}
 
@@ -221,7 +221,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 ### 备份 {#backup}
 
-请参阅 [备份和恢复](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup) 以了解详细信息。
+有关详细信息，请参阅[备份和还原](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup)。
 
 ### osgi {#osgi}
 
@@ -288,33 +288,33 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### 分配和撤销徽章 {#assign-and-revoke-badges}
 
-请参阅 [社区评分和徽章](/help/communities/implementing-scoring.md#assign-and-revoke-badges) 以了解详细信息。
+有关详细信息，请参阅[社区评分和徽章](/help/communities/implementing-scoring.md#assign-and-revoke-badges)。
 
-请参阅 [评分和徽章要点](/help/communities/configure-scoring.md#example-setup) 以了解详细信息。
+有关详细信息，请参阅[评分和徽章要点](/help/communities/configure-scoring.md#example-setup)。
 
 #### MSRP重新索引 {#msrp-reindexing}
 
-请参阅 [MSRP - MongoDB存储资源提供程序](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command) 以了解详细信息。
+有关详细信息，请参阅[MSRP - MongoDB存储资源提供程序](/help/communities/msrp.md#running-msrp-reindex-tool-using-curl-command)。
 
 ### 安全性 {#security}
 
 #### 启用和禁用CRX DE Lite {#enabling-and-disabling-crx-de-lite}
 
-请参阅 [在AEM中启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md) 以了解详细信息。
+有关详细信息，请参阅[在AEM](/help/sites-administering/enabling-crxde-lite.md)中启用CRXDE Lite。
 
 ### 数据存储垃圾回收 {#data-store-garbage-collection}
 
-请参阅 [数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection) 以了解详细信息。
+有关详细信息，请参阅[数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md#automating-data-store-garbage-collection)。
 
 ### Analytics与Target集成 {#analytics-and-target-integration}
 
-请参阅 [选择使用Adobe Analytics和Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script) 以了解详细信息。
+有关详细信息，请参阅[选择使用Adobe Analytics和Adobe Target](/help/sites-administering/opt-in.md#configuring-the-setup-and-provisioning-via-script)。
 
 ### 单点登录 {#single-sign-on}
 
 #### 发送测试标头 {#send-test-header}
 
-请参阅 [单点登录](/help/sites-deploying/single-sign-on.md) 以了解详细信息。
+有关详细信息，请参阅[单点登录](/help/sites-deploying/single-sign-on.md)。
 
 ## 常见内容操作AEM cURL命令 {#common-content-manipulation-aem-curl-commands}
 
@@ -322,7 +322,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 >[!NOTE]
 >
->以下示例假定AEM运行于 `localhost` 在端口 `4502` 并使用用户 `admin` 包含密码 `admin`. 其他命令占位符设置在尖括号中。
+>以下示例假定AEM在端口`4502`上的`localhost`上运行，并使用密码为`admin`的用户`admin`。 其他命令占位符设置在尖括号中。
 
 ### 页面管理 {#page-management}
 
@@ -364,7 +364,7 @@ curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination
 
 ### 工作流 {#workflows}
 
-请参阅 [以编程方式与工作流交互](/help/sites-developing/workflows-program-interaction.md) 以了解详细信息。
+有关详细信息，请参阅[以编程方式与工作流交互](/help/sites-developing/workflows-program-interaction.md)。
 
 ### Sling内容 {#sling-content}
 
@@ -412,4 +412,4 @@ curl -u <user>:<password> -F "*=@test.properties;type=text/plain" http://localho
 
 ### 资产操作 {#asset-manipulation}
 
-请参阅 [资源HTTP API](/help/assets/mac-api-assets.md) 以了解详细信息。
+有关详细信息，请参阅[Assets HTTP API](/help/assets/mac-api-assets.md)。

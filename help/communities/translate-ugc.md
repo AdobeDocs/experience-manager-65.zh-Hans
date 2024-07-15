@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 翻译用户生成的内容 {#translating-user-generated-content}
 
-Adobe Experience Manager (AEM) Communities的翻译功能扩展了 [翻译页面内容](../../help/sites-administering/translation.md) 发布到社区站点的用户生成内容(UGC)，使用 [社交组件框架(SCF)组件](scf.md).
+Adobe Experience Manager (AEM)社区的翻译功能扩展了[将页面内容](../../help/sites-administering/translation.md)翻译为用户生成的内容(UGC)的概念，该内容发布到使用[社交组件框架(SCF)组件](scf.md)的社区站点。
 
 UGC的翻译使站点访客和成员能够通过消除语言障碍体验全球社区。
 
@@ -32,27 +32,27 @@ UGC的翻译使站点访客和成员能够通过消除语言障碍体验全球�
 
 ## 概述 {#overview}
 
-此部分具体讨论了翻译服务如何与UGC配合使用。 它还假定您了解如何将AEM连接到 [翻译服务提供商](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) 并通过配置 [翻译集成框架](../../help/sites-administering/tc-tic.md).
+此部分具体讨论了翻译服务如何与UGC配合使用。 它还假定您了解如何通过配置[翻译集成框架](../../help/sites-administering/tc-tic.md)将AEM连接到[翻译服务提供商](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider)并将该服务集成到网站。
 
 当翻译服务提供商与站点相关联时，站点的每个语言副本都会维护其自身通过SCF组件（如注释）发布的UGC线程。
 
-除了翻译服务提供商之外，如果配置了翻译集成，则站点的每个语言副本可能会共享单个UGC线程，从而提供跨语言副本的全局通信。 不是按语言分隔的讨论会话，而是配置的 [全局共享存储](#global-translation-of-ugc) 使整个线程可见，而不管查看的是哪种语言副本。 此外，可以配置多个翻译集成配置，为全局参与者的逻辑分组（例如按区域）指定不同的全局共享存储。
+除了翻译服务提供商之外，如果配置了翻译集成，则站点的每个语言副本可能会共享单个UGC线程，从而提供跨语言副本的全局通信。 配置的[全局共享存储](#global-translation-of-ugc)不是按语言分隔的讨论会话，而是使整个会话可见，无论查看的是哪种语言副本。 此外，可以配置多个翻译集成配置，为全局参与者的逻辑分组（例如按区域）指定不同的全局共享存储。
 
 ## 默认翻译服务 {#the-default-translation-service}
 
-AEM Communities包含 [试用许可证](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) 对于 [默认翻译服务](../../help/sites-administering/tc-msconf.md) 已为多种语言启用。
+AEM Communities包含针对为多种语言启用的[默认翻译服务](../../help/sites-administering/tc-msconf.md)的[试用许可证](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license)。
 
-时间 [创建社区站点](sites-console.md)，则在以下情况下会启用默认翻译服务 `Allow Machine Translation` 已勾选 [翻译](sites-console.md#translation) 子面板。
+在[创建社区站点](sites-console.md)时，如果从[TRANSLATION](sites-console.md#translation)子面板中选中`Allow Machine Translation`，则会启用默认翻译服务。
 
 >[!CAUTION]
 >
 >默认翻译服务仅用于演示。
 >
->对于生产系统，需要获得许可的翻译服务。 如果未获得许可，则默认翻译服务应为 [已关闭](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors).
+>对于生产系统，需要获得许可的翻译服务。 如果未获得许可，则默认翻译服务应为[关闭](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license-geometrixx-outdoors)。
 
 ## UGC的全局翻译 {#global-translation-of-ugc}
 
-当网站有多个时 [语言副本](../../help/sites-administering/tc-prep.md)，默认翻译服务无法识别在一个站点上输入的UGC是否可能与在另一个站点上输入的UGC相关。 如果UGC由同一组件（包含该组件的页面的语言副本）生成，则为true。
+当网站具有多个[语言副本](../../help/sites-administering/tc-prep.md)时，默认翻译服务无法识别在一个网站上输入的UGC可能与在另一个网站上输入的UGC相关。 如果UGC由同一组件（包含该组件的页面的语言副本）生成，则为true。
 
 它类似于讨论某个话题的一群人。 与参加同一个对话的大群组中的每个人相比，他们不知道在自己以外的群组中发表的评论。
 
@@ -64,7 +64,7 @@ AEM Communities包含 [试用许可证](../../help/sites-administering/tc-msconf
 >
 >在全局翻译之前存在的任何UGC不再可见。
 >
->当UGC仍然在 [公用存储](working-with-srp.md)，它位于特定语言的UGC位置下，而配置全局翻译后添加的新内容正在从全局共享存储位置检索。
+>当UGC仍位于[公用存储](working-with-srp.md)中时，它位于特定语言的UGC位置下，而正在从全局共享存储位置检索在配置全局翻译后添加的新内容。
 >
 >没有用于将特定语言内容移动或合并到全局共享存储中的迁移工具。
 
@@ -73,28 +73,28 @@ AEM Communities包含 [试用许可证](../../help/sites-administering/tc-msconf
 要创建翻译集成，它将翻译服务连接器与创作实例上的网站集成，请执行以下操作：
 
 * 以管理员身份登录
-* 从 [主菜单](http://localhost:4502/)
-* 选择 **[!UICONTROL 工具]**
-* 选择 **[!UICONTROL 操作]**
-* 选择 **[!UICONTROL 云]**
-* 选择 **[!UICONTROL Cloud Service]**
-* 向下滚动到 **[!UICONTROL 翻译集成]**
+* 从[主菜单](http://localhost:4502/)
+* 选择&#x200B;**[!UICONTROL 工具]**
+* 选择&#x200B;**[!UICONTROL 操作]**
+* 选择&#x200B;**[!UICONTROL 云]**
+* 选择&#x200B;**[!UICONTROL Cloud Service]**
+* 向下滚动到&#x200B;**[!UICONTROL 翻译集成]**
 
-  ![translation-integration](assets/translation-integration.png)
+  ![翻译集成](assets/translation-integration.png)
 
-* 选择 **[!UICONTROL 显示配置]**
+* 选择&#x200B;**[!UICONTROL 显示配置]**
 
   ![显示配置](assets/translation-integration1.png)
 
-* 选择 `[+]` 图标旁边 **[!UICONTROL 可用配置]** 以便创建配置。
+* 选择&#x200B;**[!UICONTROL 可用配置]**&#x200B;旁边的`[+]`图标，以便您可以创建配置。
 
 #### “创建配置”对话框 {#create-configuration-dialog}
 
-![create-configure](assets/translation-integration2.png)
+![create-configuration](assets/translation-integration2.png)
 
 * **[!UICONTROL 父配置]**
 
-  （必需）通常保留为默认值。 默认为 `/etc/cloudservices/translation`.
+  （必需）通常保留为默认值。 默认值为`/etc/cloudservices/translation`。
 
 * **[!UICONTROL 标题]**
 
@@ -104,32 +104,32 @@ AEM Communities包含 [试用许可证](../../help/sites-administering/tc-msconf
 
   （可选）输入配置的名称。 默认值是基于标题的节点名称。
 
-* 选择 **[!UICONTROL 创建]**
+* 选择&#x200B;**[!UICONTROL 创建]**
 
 #### 翻译配置对话框 {#translation-config-dialog}
 
 ![配置对话框](assets/translation-integration3.png)
 
-有关详细说明，请参阅 [创建翻译集成配置](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration).
+有关详细说明，请参阅[创建翻译集成配置](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)。
 
-* **[!UICONTROL 站点]** 选项卡：可保留为默认值。
+* **[!UICONTROL 站点]**&#x200B;选项卡：可保留为默认值。
 
-* **[!UICONTROL Communities]** 选项卡：
+* **[!UICONTROL 社区]**&#x200B;选项卡：
    * **[!UICONTROL 翻译提供商]**
-从下拉列表中选择翻译提供商。 默认为 `microsoft`，即试用服务。
+从下拉列表中选择翻译提供商。 默认值为`microsoft`，试用服务。
 
    * **[!UICONTROL 内容类别]**
-选择描述正在翻译的内容的类别。 默认为 `General.`
+选择描述正在翻译的内容的类别。 默认值为`General.`
 
    * **[!UICONTROL 选择区域设置……]**
-（可选）通过选择存储UGC的区域设置，来自所有语言副本的帖子将显示在一个全局对话中。 按照惯例，选择 [基本语言](sites-console.md#translation) 用于网站。 选择 `No Common Store` 禁用全局翻译。 默认情况下，全局翻译处于禁用状态。
+（可选）通过选择存储UGC的区域设置，来自所有语言副本的帖子将显示在一个全局对话中。 按照惯例，为网站选择[基本语言](sites-console.md#translation)的区域设置。 选择`No Common Store`将禁用全局翻译。 默认情况下，全局翻译处于禁用状态。
 
-* **[!UICONTROL 资产]** 选项卡：可保留为默认值。
-* 选择 **[!UICONTROL 确定]**
+* **[!UICONTROL Assets]**&#x200B;选项卡：可保留为默认值。
+* 选择&#x200B;**[!UICONTROL 确定]**
 
 #### 激活 {#activation}
 
-必须将新的翻译集成云服务激活到发布环境。 与网站关联时，如果尚未激活，激活工作流会在发布与其关联的页面时提示发布此云服务配置。
+必须将新的翻译集成云服务激活到Publish环境。 与网站关联时，如果尚未激活，激活工作流会在发布与其关联的页面时提示发布此云服务配置。
 
 ## 管理翻译设置 {#managing-translation-settings}
 
@@ -153,7 +153,7 @@ AEM Communities包含 [试用许可证](../../help/sites-administering/tc-msconf
 
 当页面自动翻译为用户的首选语言时，仍可以使用用于显示原始文本和改进翻译的UI。
 
-![user-profile](assets/translation-integration4.png)
+![用户配置文件](assets/translation-integration4.png)
 
 ### 社区站点设置 {#community-site-setting}
 

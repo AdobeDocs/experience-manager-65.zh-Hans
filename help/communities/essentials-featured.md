@@ -37,7 +37,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
-   <td> <i>默认</i></td>
+   <td> <i>默认值</i></td>
   </tr>
   <tr>
    <td> <strong>模板</strong></td>
@@ -49,7 +49,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td><strong> 属性</strong></td>
-   <td>请参阅 <a href="featured.md">专题内容</a></td>
+   <td>查看<a href="featured.md">特色内容</a></td>
   </tr>
  </tbody>
 </table>
@@ -58,4 +58,4 @@ ht-degree: 4%
 
 ### 文件库功能 {#file-library-function}
 
-社区站点结构包括 [专题内容功能](functions.md#featured-content-function)，包括已配置的 `featured content` 组件。
+包含[特色内容功能](functions.md#featured-content-function)的社区站点结构包含配置的`featured content`组件。

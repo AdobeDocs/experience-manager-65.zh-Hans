@@ -8,7 +8,7 @@ role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -18,11 +18,11 @@ ht-degree: 0%
 
 ## CIF加载项
 
-AEM 6.5的CIF加载项可通过以下方式使用： [软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html). 它是兼容的，提供了与用于Experience Manageras a Cloud Service的CIF加载项相同的功能。
+CIF加载项可通过[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)用于AEM 6.5。 它是兼容的，提供了与用于Experience Manageras a Cloud Service的CIF加载项相同的功能。
 
-请参阅 [AEM Content and Commerce快速入门](getting-started.md).
+请参阅[AEM Content和Commerce快速入门](getting-started.md)。
 
-为了支持部署CIF的项目，Adobe提供了 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components).
+为支持部署 CIF 的项目，Adobe 提供了 [AEM CIF 核心组件](https://github.com/adobe/aem-core-cif-components)。
 
 ## 产品目录
 
@@ -30,7 +30,7 @@ CIF加载项不支持导入产品目录数据。 使用CIF附加组件主体，�
 
 >[!TIP]
 >
->如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例 [Magento开源](https://business.adobe.com/products/magento/open-source.html).
+>如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Magento开源](https://business.adobe.com/products/magento/open-source.html)。
 
 ## 具有AEM渲染的产品目录体验
 
@@ -38,4 +38,4 @@ CIF加载项不支持导入产品目录数据。 使用CIF附加组件主体，�
 
 ## 不可缓存的数据和购物交互
 
-对不可缓存的数据和交互的客户端请求（例如，添加到购物车、搜索）应通过CDN/Dispatcher直接转到商业端点（商业解决方案或集成层）。 删除AEM只是代理的任何调用。
+对不可缓存的数据和交互的客户端请求（例如，添加到购物车、搜索）应通过CDN/Dispatcher直接转到商务端点（商务解决方案或集成层）。 删除AEM只是代理的任何调用。

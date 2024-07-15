@@ -36,7 +36,7 @@ AEM表单（及更早版本）使用JMS队列异步执行操作。 AEM Forms使�
 1. 工作管理器将工作项存储在数据库表中，并为工作项分配唯一标识符。 数据库记录包含执行工作项所需的所有信息。
 1. 当线程空闲时，工作管理器线程拉入工作项。 在拉入工作项之前，线程可以检查所需的服务是否已启动，是否有足够的栈大小来拉入下一个工作项，以及是否有足够的CPU周期来处理该工作项。 在安排执行时，工作管理器还会评估工作项的属性（如优先级）。
 
-AEM forms管理员可以使用运行状况监视器检查Work Manager统计信息，例如队列中的工作项数及其状态。 您还可以使用运行状况监视器暂停、继续、重试或删除工作项。 (请参阅 [查看与工作管理器相关的统计信息](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
+AEM forms管理员可以使用运行状况监视器检查Work Manager统计信息，例如队列中的工作项数及其状态。 您还可以使用运行状况监视器暂停、继续、重试或删除工作项。 （请参阅[查看与工作管理器相关的统计信息](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)。）
 
 ## 配置工作管理器限制选项 {#configuring-work-manager-throttling-options}
 
@@ -52,23 +52,23 @@ AEM forms管理员可以使用运行状况监视器检查Work Manager统计信�
  <tbody>
   <tr>
    <td><code> adobe.work-manager.queue-refill-interval</code></td>
-   <td><p>指定工作管理器在检查其队列中的新项目时使用的时间间隔（以毫秒为单位）。</p><p>此选项的值是一个整数。 默认值为 <code>1000</code> 毫秒（1秒）。 </p><p>如果异步调用的数量较少，则可以增加此值。 例如，您可以将其增加到2000到5000（2-5秒）之间的某个值。 </p><p>如果异步调用的数量很大，则默认值应就足够了，但如有必要，您可以使用较低的值。 过多地降低此值（例如，低于50，这会导致轮询频率为每秒20次）会导致系统产生大量开销。</p></td>
+   <td><p>指定工作管理器在检查其队列中的新项目时使用的时间间隔（以毫秒为单位）。</p><p>此选项的值是一个整数。 默认值为<code>1000</code>毫秒（1秒）。 </p><p>如果异步调用的数量较少，则可以增加此值。 例如，您可以将其增加到2000到5000（2-5秒）之间的某个值。 </p><p>如果异步调用的数量很大，则默认值应就足够了，但如有必要，您可以使用较低的值。 过多地降低此值（例如，低于50，这会导致轮询频率为每秒20次）会导致系统产生大量开销。</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>
-   <td><p>将此选项设置为 <code>true</code> 启用调试模式，或设置为false禁用调试模式。 </p><p>在调试模式下，将记录有关Work Manager策略违规和Work Manager暂停/恢复操作的消息。 仅在进行故障诊断时将此选项设置为true。</p></td>
+   <td><p>将此选项设置为<code>true</code>以启用调试模式，或设置为false以禁用调试模式。 </p><p>在调试模式下，将记录有关Work Manager策略违规和Work Manager暂停/恢复操作的消息。 仅在进行故障诊断时将此选项设置为true。</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.enabled</code></td>
-   <td><p>将此选项设置为 <code>true</code> 启用基于下述内存控制设置的限制，或者 <code>false</code> 以禁用限制。</p></td>
+   <td><p>将此选项设置为<code>true</code>可根据下述内存控制设置启用节流，或设置为<code>false</code>禁用节流。</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.high-limit</code></td>
-   <td><p>指定工作管理器限制传入作业之前可以使用的最大内存百分比。</p><p>此选项的默认值为 <code>95</code>. 该值对于大多数系统应该都是合适的。 仅当您的系统需要推送到其最大容量时才增加容量。 但请注意，随着此值的增加，内存不足问题的风险也会增加。</p><p>如果在群集环境中运行AEM表单，则可能需要在群集的不同节点上以不同的方式设置内存控制限制设置。 例如，节点A和B的上限可能较低，这两个节点均在负载平衡器中编程以用于交互式工作。 此外，您还可以在节点C和D上设置更高的高限制，负载平衡器不使用这些节点，而是将其保留用于异步工作。</p></td>
+   <td><p>指定工作管理器限制传入作业之前可以使用的最大内存百分比。</p><p>此选项的默认值为<code>95</code>。 该值对于大多数系统应该都是合适的。 仅当您的系统需要推送到其最大容量时才增加容量。 但请注意，随着此值的增加，内存不足问题的风险也会增加。</p><p>如果在群集环境中运行AEM表单，则可能需要在群集的不同节点上以不同的方式设置内存控制限制设置。 例如，节点A和B的上限可能较低，这两个节点均在负载平衡器中编程以用于交互式工作。 此外，您还可以在节点C和D上设置更高的高限制，负载平衡器不使用这些节点，而是将其保留用于异步工作。</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.memory-control.low-limit</code></td>
-   <td><p>指定工作管理器停止限制传入作业之前可以使用的最大内存百分比。</p><p>此选项的默认值为 <code>20</code>. 该值对于大多数系统应该都是合适的。</p></td>
+   <td><p>指定工作管理器停止限制传入作业之前可以使用的最大内存百分比。</p><p>此选项的默认值为<code>20</code>。 该值对于大多数系统应该都是合适的。</p></td>
   </tr>
   <tr>
    <td><code>Dadobe.workmanager.allocate.max-batch-size</code></td>
@@ -80,18 +80,18 @@ AEM forms管理员可以使用运行状况监视器检查Work Manager统计信�
 **将Java选项添加到JBoss**
 
 1. 停止JBoss应用程序服务器。
-1. 打开 *[appserver根]*/bin/run.bat (Windows)或run.sh （Linux或UNIX），并根据需要以格式添加任何Java选项 `-Dproperty=value`.
+1. 在编辑器中打开&#x200B;*[appserver root]*/bin/run.bat (Windows)或run.sh （Linux或UNIX），并根据需要添加任何Java选项，格式为`-Dproperty=value`。
 1. 重新启动服务器。
 
 **将Java选项添加到WebLogic**
 
-1. 通过键入以下内容启动WebLogic管理控制台 `https://[host name]:[port]/console` 在Web浏览器中。
+1. 在Web浏览器中键入`https://[host name]:[port]/console`以启动WebLogic管理控制台。
 1. 键入为WebLogic Server域创建的用户名和密码，然后单击“更改中心”下的“日志”，然后单击“锁定和编辑”。
 1. 在“域结构”下，单击“环境”>“服务器”，然后在右窗格中单击受控服务器名称。
 1. 在下一个屏幕上，单击Configuration选项卡> Server Start选项卡。
 1. 在“参数”框中，将所需的参数附加到当前内容的末尾。 例如，要禁用运行状况监视器，请添加：
 
-   `-Dadobe.healthmonitor.enabled=false` 禁用运行状况监视器。
+   `-Dadobe.healthmonitor.enabled=false`禁用运行状况监视器。
 
 1. 单击保存，然后单击激活更改。
 1. 重新启动WebLogic托管服务器。

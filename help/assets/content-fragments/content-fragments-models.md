@@ -14,26 +14,26 @@ ht-degree: 70%
 
 # 内容片段模型 {#content-fragment-models}
 
-AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/help/assets/content-fragments/content-fragments.md) 作为Headless内容的基础。
+AEM中的内容片段模型定义了[内容片段的内容结构，](/help/assets/content-fragments/content-fragments.md)用作Headless内容的基础。
 
 要使用内容片段模型，您可以：
 
-1. [为您的实例启用内容片段模型功能](/help/assets/content-fragments/content-fragments-configuration-browser.md).
-1. [创建](#creating-a-content-fragment-model)、和 [配置](#defining-your-content-fragment-model)，您的内容片段模型。
-1. [启用您的内容片段模型](#enabling-disabling-a-content-fragment-model) 以便在创建内容片段时使用。
+1. [为您的实例启用内容片段模型功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
+1. [创建](#creating-a-content-fragment-model)和[配置](#defining-your-content-fragment-model)您的内容片段模型。
+1. [启用您的内容片段模型](#enabling-disabling-a-content-fragment-model)，以便在创建内容片段时使用。
 1. 通过配置[策略](#allowing-content-fragment-models-assets-folder)，**允许在所需的 Assets 文件夹上创建内容片段模型**。
 
 ## 创建内容片段模型 {#creating-a-content-fragment-model}
 
-1. 导航到 **工具**， **资产**，然后打开 **内容片段模型**.
-1. 导航到适合您的文件夹 [配置](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. 导航到&#x200B;**工具**、**Assets**，然后打开&#x200B;**内容片段模型**。
+1. 导航到适合您的[配置](/help/assets/content-fragments/content-fragments-configuration-browser.md)的文件夹。
 1. 使用&#x200B;**创建**&#x200B;打开向导。
 
    >[!CAUTION]
    >
-   >如果 [未启用内容片段模型](/help/assets/content-fragments/content-fragments-configuration-browser.md)， **创建** 选项不可用。
+   >如果未启用[使用内容片段模型](/help/assets/content-fragments/content-fragments-configuration-browser.md)，则&#x200B;**创建**&#x200B;选项不可用。
 
-1. 指定&#x200B;**模型标题**。您还可以添加 **标记**， a **描述**，并选择 **启用模型** 到 [启用模型](#enabling-disabling-a-content-fragment-model) 如有必要。
+1. 指定&#x200B;**模型标题**。您还可以添加&#x200B;**标记**、**描述**，然后选择&#x200B;**启用模型**&#x200B;以[启用模型](#enabling-disabling-a-content-fragment-model)（如有必要）。
 
    ![标题和描述](assets/cfm-models-02.png)
 
@@ -47,7 +47,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 >
 >编辑现有内容片段模型可能会影响从属片段。
 
-1. 导航到 **工具**， **资产**，然后打开 **内容片段模型**.
+1. 导航到&#x200B;**工具**、**Assets**，然后打开&#x200B;**内容片段模型**。
 
 1. 导航到包含内容片段模型的文件夹。
 
@@ -77,7 +77,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 
         >[!CAUTION]
         >
-        手动更新属性时 **属性名称** 对于数据类型，名称必须仅包含A - Z、a - z、0 - 9和下划线“_”作为特殊字符。
+        手动更新数据类型的属性&#x200B;**属性名称**&#x200B;时，名称必须仅包含A - Z、a - z、0 - 9和下划线“_”作为特殊字符。
         >
         如果在 AEM 早期版本中创建的模型包含非法字符，请移除或更新这些字符。
 
@@ -144,7 +144,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 
 * **属性名称**
 
-  为数据类型手动更新此属性时，名称 **必须** contain *仅限* A-Z、a-z、0-9和下划线“_”作为特殊字符。
+  手动更新数据类型的此属性时，名称&#x200B;**必须**&#x200B;仅包含&#x200B;*A-Z、a-z、0-9和下划线“_”作为特殊字符。*
 
   >[!CAUTION]
   >
@@ -154,7 +154,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 用于在片段中实现/呈现字段的各种选项。通常，这允许您定义作者是否能看到字段的单个实例，还是允许作者创建多个实例。
 
 * **字段标签**
-输入 **字段标签** 自动生成 **属性名称**，如有必要，可以手动更新。
+输入**字段标签**&#x200B;会自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有额外的验证字段。 请参阅[验证](#validation)，了解更多详细信息。
@@ -167,7 +167,7 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 
   如果未指定，则默认值&#x200B;**富文本**&#x200B;用于此字段。
 
-  更改 **默认类型** 在内容片段模型中，仅当在编辑器中打开并保存现有的相关内容片段后，该片段才会生效。
+  更改内容片段模型中的&#x200B;**默认类型**&#x200B;仅会对在编辑器中打开并保存的现有相关内容片段生效。
 
 * **独特**
 对于从当前模型创建的所有内容片段，内容（适用于特定字段）必须是唯一的。
@@ -225,16 +225,18 @@ AEM中的内容片段模型为您的定义了内容结构 [内容片段，](/hel
 
      >[!NOTE]
      >
-     此方法特别值得关注 [使用带有GraphQL的内容片段的Headless内容投放](/help/assets/content-fragments/content-fragments-graphql.md).
+     此方法对于在GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)中使用内容片段的[Headless内容投放特别感兴趣。
    * 可以为一个引用或多个引用（在生成的片段中）配置它。
 
 >[!NOTE]
 >
 AEM 具有以下重复保护：
 >
-* 内容引用这会阻止用户添加对当前片段的引用。 这可能导致出现空的片段引用选取器对话框。
+* 内容引用
+这会阻止用户添加对当前片段的引用。 这可能导致出现空的片段引用选取器对话框。
 >
-* GraphQL中的片段引用如果您创建的深层查询返回多个相互引用的内容片段，则该查询在第一次出现时返回null。
+* GraphQL中的片段引用
+如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时返回null。
 
 ### 内容引用 {#content-reference}
 
@@ -276,7 +278,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
-以下内容特别令人感兴趣 [使用带有GraphQL的内容片段的Headless内容投放](/help/assets/content-fragments/content-fragments-graphql.md).
+这与[在GraphQL](/help/assets/content-fragments/content-fragments-graphql.md)中使用内容片段的Headless内容投放特别相关。
 
 除了标准属性之外，您还可以定义：
 
@@ -323,7 +325,7 @@ GraphQL 还对片段引用提供了定期保护。如果在两个互相引用的
 * **草稿**：mew（从未启用）。
 * **已禁用** ：已禁用。
 
-您可以使用 **启用** 选项来自：
+您可以从以下任一位置使用&#x200B;**启用**&#x200B;选项：
 
 * 选择所需的“模型”时，顶部工具栏。
 * 相应的快速操作（将鼠标悬停在所需模型上）。
@@ -349,7 +351,7 @@ GraphQL 还对片段引用提供了定期保护。如果在两个互相引用的
 
 ## 允许在 Assets 文件夹中使用内容片段模型 {#allowing-content-fragment-models-assets-folder}
 
-要实施内容管理，您可以配置 **策略** ，以控制允许在该文件夹中创建片段的内容片段模型。
+要实施内容管理，您可以在Assets文件夹中配置&#x200B;**策略**，以控制允许在该文件夹中创建片段的内容片段模型。
 
 >[!NOTE]
 >
@@ -392,7 +394,7 @@ GraphQL 还对片段引用提供了定期保护。如果在两个互相引用的
 
 要删除内容片段模型，请执行以下操作：
 
-1. 导航到 **工具**， **资产**，然后打开 **内容片段模型**.
+1. 导航到&#x200B;**工具**、**Assets**，然后打开&#x200B;**内容片段模型**。
 
 1. 导航到包含内容片段模型的文件夹。
 1. 选择您的模型，然后从工具栏中&#x200B;**删除**。
@@ -407,7 +409,7 @@ GraphQL 还对片段引用提供了定期保护。如果在两个互相引用的
 
 要发布内容片段模型，请执行以下操作：
 
-1. 导航到 **工具**， **资产**，然后打开 **内容片段模型**.
+1. 导航到&#x200B;**工具**、**Assets**，然后打开&#x200B;**内容片段模型**。
 
 1. 导航到包含内容片段模型的文件夹。
 1. 选择您的模型，然后从工具栏中&#x200B;**“发布”**。
@@ -423,7 +425,7 @@ GraphQL 还对片段引用提供了定期保护。如果在两个互相引用的
 
 要取消发布内容片段模型，请执行以下操作：
 
-1. 导航到 **工具**， **资产**，然后打开 **内容片段模型**.
+1. 导航到&#x200B;**工具**、**Assets**，然后打开&#x200B;**内容片段模型**。
 
 1. 导航到包含内容片段模型的文件夹。
 1. 选择您的模型，然后从工具栏中选择&#x200B;**取消发布**。控制台中会指示已发布状态。

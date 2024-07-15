@@ -79,7 +79,7 @@ ht-degree: 83%
 
    ![作者的样式系统](assets/style-system-author.png)
 
-1. 单击 **样式** 工具栏上的按钮 **列表** 组件打开样式菜单并更改组件的外观。
+1. 单击&#x200B;**列表**&#x200B;组件工具栏上的&#x200B;**样式**&#x200B;按钮以打开样式菜单并更改该组件的外观。
 
    ![选择样式](assets/style-system-author2.png)
 
@@ -89,7 +89,7 @@ ht-degree: 83%
 
 ### 作为模板作者 {#as-a-template-author}
 
-1. 编辑WKND的英语母版主页时 `http://<host>:<port>/sites.html/content/wknd/language-masters/en`，通过编辑页面的模板 **“页面信息”>“编辑模板”**.
+1. 编辑WKND位于`http://<host>:<port>/sites.html/content/wknd/language-masters/en`的英语母版主页时，通过&#x200B;**页面信息>编辑模板**&#x200B;编辑该页面的模板。
 
    ![编辑模板](assets/style-system-edit-template.png)
 
@@ -110,7 +110,7 @@ ht-degree: 83%
 
 >[!CAUTION]
 >
->配置为组件策略的样式属性的CSS类（以及任何必需的JavaScript）必须部署为 [客户端库](/help/sites-developing/clientlibs.md) 去工作。
+>配置为组件策略的样式属性的CSS类(以及任何必需的JavaScript)必须部署为[客户端库](/help/sites-developing/clientlibs.md)才能正常工作。
 
 ## 设置 {#setup}
 
@@ -159,4 +159,4 @@ ht-degree: 83%
 
 这种定义样式名称的功能对于极其通用的组件（如布局容器或内容片段组件）非常有用，可为它们提供额外的含义。
 
-例如，它允许为布局容器提供如下语义 `<main>`， `<aside>`， `<nav>`，等等。
+例如，它允许为布局容器提供`<main>`、`<aside>`、`<nav>`等语义。

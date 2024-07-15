@@ -28,7 +28,7 @@ ht-degree: 33%
 
    * [翻译多语言站点的内容](/help/sites-administering/translation.md)
 
-* 可以结合使用这两种功能，以满足同时满足这两个条件的网站的需求 [跨国和多语言](#multinational-and-multilingual-sites).
+* 这两个功能可以结合使用，以满足[跨国和多语言](#multinational-and-multilingual-sites)网站的需求。
 
 ## 跨国和多语言站点 {#multinational-and-multilingual-sites}
 
@@ -44,13 +44,13 @@ ht-degree: 33%
 
 下图说明了主要概念的相交部分（但未显示涉及的所有级别/元素）：
 
-![显示MSM和翻译主要概念的图](assets/chlimage_1-71a.png)
+显示MSM和翻译主要概念的![图表](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
 >在此场景以及类似场景中，MSM 不会管理不同的语言版本。
 >
->* [MSM](/help/sites-administering/msm.md) 在语言边界内管理从Blueprint（例如，全局母版）到活动副本（例如，本地站点）的翻译内容部署。
+>* [MSM](/help/sites-administering/msm.md)在语言范围内管理从Blueprint（例如，全局母版）到活动副本（例如，本地站点）的翻译内容部署。
 >* AEM 的[翻译](/help/sites-administering/translation.md)集成功能与第三方翻译管理服务相结合，可以管理语言并将内容翻译成这些不同的语言。
 >
 >在更高级的用例中，也可以跨语言母版使用 MSM。

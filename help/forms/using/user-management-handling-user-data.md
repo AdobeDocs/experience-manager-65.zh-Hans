@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 用户数据和数据存储 {#user-data-and-data-stores}
 
-用户管理将用户数据存储在数据库中，如My Sql、Oracle、MS® SQL Server和IBM® DB2®。 此外，任何至少在AEM上的Forms应用程序中登录一次的用户都可以在 `https://'[server]:[port]'lc`，则将在AEM存储库中创建用户。 因此，用户管理存储在以下数据存储中：
+用户管理将用户数据存储在数据库中，如My Sql、Oracle、MS® SQL Server和IBM® DB2®。 此外，任何至少在`https://'[server]:[port]'lc`处在AEM作者的Forms应用程序中登录一次的用户，都会在AEM存储库中创建该用户。 因此，用户管理存储在以下数据存储中：
 
 * 数据库
 * AEM存储库
@@ -80,14 +80,14 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle和MS® SQL数据库)</p> </td>
-   <td>存储与主体对应的新旧属性值。<br /> </td>
+   <td>存储与主体对应的旧属性和新属性值。<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### AEM存储库 {#aem-repository}
 
-至少访问过下方Forms应用程序的用户管理数据 `https://'[server]:[port]'lc` 还存储在AEM存储库中。
+至少访问过`https://'[server]:[port]'lc`下的Forms应用程序的用户管理数据也存储在AEM存储库中。
 
 ## 访问和删除用户数据 {#access-and-delete-user-data}
 
@@ -95,9 +95,9 @@ ht-degree: 0%
 
 ### 数据库 {#database-1}
 
-要从用户管理数据库中导出或删除用户数据，必须使用数据库客户端连接到数据库，并根据用户的某些PII查找承担者ID。 例如，要使用登录ID检索用户的主体ID，请运行以下命令 `select` 命令。
+要从用户管理数据库中导出或删除用户数据，必须使用数据库客户端连接到数据库，并根据用户的某些PII查找承担者ID。 例如，要使用登录ID检索用户的主体ID，请在数据库上运行以下`select`命令。
 
-在 `select` 命令，替换 `<user_login_id>` 其主体ID要检索的用户的登录ID。
+在`select`命令中，将`<user_login_id>`替换为要检索其主体ID的用户的登录ID。
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -107,19 +107,19 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 #### 导出用户数据 {#export-user-data}
 
-运行以下数据库命令，以便从数据库表中导出主体ID的用户管理数据。 在 `select` 命令，替换 `<principal_id>` ，其中包含要导出其数据的用户的主体ID。
+运行以下数据库命令，以便从数据库表中导出主体ID的用户管理数据。 在`select`命令中，将`<principal_id>`替换为您要导出其数据的用户的主体ID。
 
 >[!NOTE]
 >
 >以下命令使用My SQL和IBM® DB2®数据库中的数据库表名。 在Oracle和MS® SQL数据库上运行这些命令时，请替换这些命令中的以下表名：
 >
->* 替换 `EdcPrincipalLocalAccountEntity` 替换为 `EdcPrincipalLocalAccount`
+>* 将`EdcPrincipalLocalAccountEntity`替换为`EdcPrincipalLocalAccount`
 >
->* 替换 `EdcPrincipalEmailAliasEntity` 替换为 `EdcPrincipalEmailAliasEn`
+>* 将`EdcPrincipalEmailAliasEntity`替换为`EdcPrincipalEmailAliasEn`
 >
->* 替换 `EdcPrincipalMappingEntity` 替换为 `EdcPrincipalMappingEntit`
+>* 将`EdcPrincipalMappingEntity`替换为`EdcPrincipalMappingEntit`
 >
->* 替换 `EdcPrincipalGrpCtmntEntity` 替换为 `EdcPrincipalGrpCtmntEnti`
+>* 将`EdcPrincipalGrpCtmntEntity`替换为`EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql
@@ -144,9 +144,9 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 执行以下操作以从数据库表中删除主体ID的用户管理数据。
 
-1. 从AEM存储库中删除用户数据（如果适用），如中所述 [删除用户数据](/help/forms/using/user-management-handling-user-data.md#delete-aem).
+1. 从AEM存储库中删除用户数据（如果适用），如[删除用户数据](/help/forms/using/user-management-handling-user-data.md#delete-aem)中所述。
 1. 关闭AEM Forms服务器。
-1. 运行以下数据库命令，以便从数据库表中删除主体ID的用户管理数据。 在 `Delete` 命令，替换 `<principal_id>` 要删除其数据的用户的主体ID。
+1. 运行以下数据库命令，以便从数据库表中删除主体ID的用户管理数据。 在`Delete`命令中，将`<principal_id>`替换为要删除其数据的用户的主体ID。
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
@@ -174,13 +174,13 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 #### 访问用户数据 {#access-user-data}
 
-要查看在AEM资料档案库中创建的用户，请登录 `https://'[server]:[port]'/lc/useradmin` 使用AEM管理员凭据。 请注意 `server` 和 `port` 在URL中是AEM创作实例的URL。 在这里，您可以使用用户的用户名搜索用户。 双击某个用户，以便查看该用户的属性、权限和组等信息。 此 `Path` 用户的属性指定在AEM存储库中创建的用户节点的路径。
+要查看在AEM存储库中创建的用户，请使用AEM管理员凭据登录`https://'[server]:[port]'/lc/useradmin`。 请注意，URL中的`server`和`port`是AEM创作实例的。 在这里，您可以使用用户的用户名搜索用户。 双击某个用户，以便查看该用户的属性、权限和组等信息。 用户的`Path`属性指定到AEM存储库中创建的用户节点的路径。
 
 #### 删除用户数据 {#delete-aem}
 
 要删除用户，请执行以下操作：
 
-1. 转到 `https://'[server]:[port]'/lc/useradmin` 使用AEM管理员凭据。
-1. 搜索用户，并双击用户名以打开用户属性。 复制 `Path` 属性。
-1. 转到AEMCRXDE Lite，网址为 `https://'[server]:[port]'/lc/crx/de/index.jsp` 和导航或搜索用户路径。
-1. 删除路径并单击 **[!UICONTROL 全部保存]** 从AEM存储库中永久删除用户。
+1. 使用AEM管理员凭据转到`https://'[server]:[port]'/lc/useradmin`。
+1. 搜索用户，并双击用户名以打开用户属性。 复制`Path`属性。
+1. 转到`https://'[server]:[port]'/lc/crx/de/index.jsp`上的AEMCRXDE Lite，然后导航或搜索用户路径。
+1. 删除路径，然后单击&#x200B;**[!UICONTROL 全部保存]**&#x200B;以从AEM存储库中永久删除用户。

@@ -18,4 +18,4 @@ ht-degree: 0%
 
 # oracle数据库最大打开游标阈值 {#oracle-database-maximum-open-cursors-threshold}
 
-要为Oracle中的打开游标配置最大值，您可能必须将此值调整为适合您的应用程序的数字。 显然，在中等负载下，平均打开游标为2700。 建议您从3000的上限开始。 有关详细信息，请访问 [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+要为Oracle中的打开游标配置最大值，您可能必须将此值调整为适合您的应用程序的数字。 显然，在中等负载下，平均打开游标为2700。 建议您从3000的上限开始。 有关详细信息，请转到[https://www.orafaq.com/node/758](https://www.orafaq.com/node/758)。

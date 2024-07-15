@@ -25,26 +25,26 @@ AEM Forms工作区支持管理表单和文档的任务分配和完成活动。 �
 
 ## 创建相应的管理资源 {#create-correspondence-management-assets}
 
-首先，创建一个在AEM Forms工作区中呈现的示例通信管理模板。 有关更多详细信息，请参阅 [创建书信模板](../../forms/using/create-letter.md).
+首先，创建一个在AEM Forms工作区中呈现的示例通信管理模板。 有关更多详细信息，请参阅[创建书信模板](../../forms/using/create-letter.md)。
 
-访问其URL处的通信管理模板，以验证是否可以成功呈现通信管理模板。 URL的模式与 `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
+访问其URL处的通信管理模板，以验证是否可以成功呈现通信管理模板。 URL具有类似于`https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`的模式
 
-位置 `encodedLetterId` 是URL编码的字母ID。 在Workbench中为工作区任务定义渲染进程时，请指定相同的书信ID。
+其中`encodedLetterId`是URL编码的书信ID。 在Workbench中为工作区任务定义渲染进程时，请指定相同的书信ID。
 
 ## 创建任务以在AEM Workspace中呈现和提交书信 {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 在执行这些步骤之前，请确保您是以下组的成员：
 
 * cm-agent-users
-* 工作区用户
+* Workspace用户
 
-有关更多信息，请参阅 [添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md).
+有关详细信息，请参阅[添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md)。
 
 使用以下步骤可创建任务以在AEM Workspace中呈现和提交书信：
 
 1. 启动Workbench 以管理员身份登录到localhost。
-1. 单击“文件”>“新建”>“应用程序”。 在应用程序名称字段中，输入 `CMDemoSample` 然后单击“Finish（完成）”。
-1. 选择 `CMDemoSample/1.0` 并右键单击 `NewProcess`. 在名称字段中，输入 `CMRenderer` 然后单击“Finish（完成）”。
+1. 单击“文件”>“新建”>“应用程序”。 在“应用程序名称”字段中，输入`CMDemoSample`，然后单击“完成”。
+1. 选择`CMDemoSample/1.0`并右键单击`NewProcess`。 在名称字段中，输入`CMRenderer`，然后单击“完成”。
 1. 拖动起点活动选取器并对其进行配置：
 
    1. 在演示文稿数据中，选择使用CRX资源。
@@ -55,7 +55,7 @@ AEM Forms工作区支持管理表单和文档的任务分配和完成活动。 �
 
       ![书信选项卡](assets/letter_tab_new.png)
 
-   1. 选择相应的书信并单击 **确定**.
+   1. 选择相应的书信，然后单击&#x200B;**确定**。
 
 1. 单击管理操作配置文件。 此时将显示“管理操作配置文件”对话框。 确保正确选择呈现进程和提交进程。
 1. 要打开带有数据XML文件的信件，请在“准备数据流程”中浏览并选择适当的数据文件。
@@ -101,12 +101,12 @@ AEM Forms工作区支持管理表单和文档的任务分配和完成活动。 �
    ```
 
    [获取文件](assets/dscsample.zip)
-下载DSC：上面附加的DSCSample.zip文件中提供了示例DSC。 下载并解压缩DSCSample.zip文件。 在使用DSC服务之前，必须对其进行配置。 请参阅 [配置DSC服务](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+下载DSC：上面附加的DSCSample.zip文件中提供了示例DSC。 下载并解压缩DSCSample.zip文件。 在使用DSC服务之前，必须对其进行配置。 请参阅[配置DSC服务](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
 
-   在“定义活动”对话框中，选择相应的活动（如getLetterInstanceInfo），然后单击 **确定**.
+   在“定义活动”对话框中，选择相应的活动（如getLetterInstanceInfo），然后单击&#x200B;**确定**。
 
 1. 部署应用程序。 如果出现提示，请签入并保存资产。
-1. 登录AEM表单工作区，网址为https://&#39;[服务器]：[端口]&#39;/lc/content/ws.
+1. 登录到https://&#39;[server]：[port]&#39;/lc/content/ws上的AEM表单工作区。
 1. 打开您已添加的任务CMRenderer。 此时将出现“通信管理”信件。
 
    ![cminworkspace](assets/cminworkspace.png)

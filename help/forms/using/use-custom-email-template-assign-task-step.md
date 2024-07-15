@@ -22,11 +22,11 @@ ht-degree: 1%
 
 您可以自定义外观，并在电子邮件通知中使用自定义元数据。 AEM Forms为电子邮件通知提供了一个现成的模板。 您可以自定义现成模板或从头开始创建模板。
 
-电子邮件通知模板基于 [HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email). 这些电子邮件可适应不同的电子邮件客户端和屏幕大小。 此外，电子邮件的样式在模板中定义。
+电子邮件通知模板基于[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 这些电子邮件可适应不同的电子邮件客户端和屏幕大小。 此外，电子邮件的样式在模板中定义。
 
 下图显示了自定义的电子邮件通知：
 
-![使用自定义模板的电子邮件通知](do-not-localize/customized-email.png)
+![使用自定义模板发送电子邮件通知](do-not-localize/customized-email.png)
 
 ## 自定义现有模板 {#customize-the-existing-template}
 
@@ -40,7 +40,7 @@ AEM Forms开箱即用地提供电子邮件通知模板。 模板提供已分配�
 
 1. 将htmlEmailTemplate.txt文件的内容替换为自定义内容。
 
-   电子邮件通知模板是 [HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email). 您可以使用自定义代码替换现有的html代码以更改模板的外观。
+   电子邮件通知模板是[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 您可以使用自定义代码替换现有的html代码以更改模板的外观。
 
 1. 保存该文件。现在，自定义模板已可供使用。
 
@@ -56,7 +56,7 @@ AEM Forms开箱即用地提供电子邮件通知模板。 模板提供已分配�
 
 1. 向文件中添加自定义HTML代码。
 
-   电子邮件通知模板是 [HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email). 您可以向文件中添加自定义HTML代码以创建模板。
+   电子邮件通知模板是[HTML电子邮件](https://en.wikipedia.org/wiki/HTML_email)。 您可以向文件中添加自定义HTML代码以创建模板。
 
 1. 保存该文件。该模板可以在“分配任务”步骤中使用。
 
@@ -72,4 +72,4 @@ AEM Forms开箱即用地提供电子邮件通知模板。 模板提供已分配�
 
 1. 单击“确定”。 模板已更改。
 
-电子邮件通知还使用 [元数据](../../forms/using/use-metadata-in-email-notifications.md). 例如，到期日期、优先级、工作流名称等。 您还可以配置要使用的模板 [自定义元数据](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).
+电子邮件通知也使用[元数据](../../forms/using/use-metadata-in-email-notifications.md)。 例如，到期日期、优先级、工作流名称等。 您还可以将模板配置为使用[自定义元数据](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification)。

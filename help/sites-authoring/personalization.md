@@ -28,9 +28,9 @@ AEM提供了一个用于创作目标内容和呈现个性化体验的工具框�
 
 例如，We.Retail产品目录包括关注季节性产品的Teaser。 夏季体育活动定义Teaser在夏季月份中定位的营销区段。
 
-活动还可识别 [定位引擎](/help/sites-authoring/personalization.md#targeting-engine) 您的页面使用的区段。
+活动还识别您的页面使用的[定位引擎](/help/sites-authoring/personalization.md#targeting-engine)。
 
-使用 [活动控制台](/help/sites-authoring/activitylib.md) 创建和管理品牌的活动。 您还可以在[创作目标内容](/help/sites-authoring/content-targeting-touch.md)时创建活动。
+使用[活动控制台](/help/sites-authoring/activitylib.md)创建和管理您品牌的活动。 您还可以在[创作目标内容](/help/sites-authoring/content-targeting-touch.md)时创建活动。
 
 ## 体验 {#experiences}
 
@@ -40,7 +40,7 @@ AEM提供了一个用于创作目标内容和呈现个性化体验的工具框�
 
 例如，某项活动定义了针对两类不同受众的体验：30 岁以上的女性和 30 岁以下的女性。We.Retail网站的女性页面针对每种体验显示不同的产品。
 
-您可以为活动定义体验。 您可以使用 [活动控制台](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) 或 [定位模式](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) 以向活动添加体验。
+您可以为活动定义体验。 您可以使用[活动控制台](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console)或[定位模式](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode)向活动添加体验。
 
 ## 优惠 {#offers}
 
@@ -48,7 +48,7 @@ AEM提供了一个用于创作目标内容和呈现个性化体验的工具框�
 
 例如，We.Retail示例网站的女性页面可以使用选件作为在页面顶部显示的Teaser图像。 30岁以上的女性体验和30岁以下女性体验使用了不同的预告。
 
-使用 [优惠控制台](/help/sites-authoring/offerlib.md) 以创建可在多个体验中使用的选件。 在以下情况下创建一次性选件或从选件库添加选件： [创作目标内容](/help/sites-authoring/content-targeting-touch.md).
+使用[优惠控制台](/help/sites-authoring/offerlib.md)创建可在多个体验中使用的优惠。 在[创作目标内容](/help/sites-authoring/content-targeting-touch.md)时，创建一次性选件或从选件库添加选件。
 
 ## 定位引擎 {#targeting-engine}
 

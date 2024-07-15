@@ -1,5 +1,5 @@
 ---
-title: 发布取消发布内容
+title: Publish取消发布内容
 description: 熟悉文章、横幅和收藏集的内容管理操作后，请按照此页面了解如何发布内容。 您还可以取消发布内容。
 contentOwner: User
 content-type: reference
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 ---
 
-# 发布取消发布内容{#publish-unpublish-content}
+# Publish取消发布内容{#publish-unpublish-content}
 
 >[!NOTE]
 >
@@ -26,11 +26,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->要详细了解AEM Mobile应用程序的设计注意事项，请参阅 [AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) 在线帮助中。
+>要详细了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
 
 ## 发布/取消发布内容 {#publishing-unpublishing-the-content}
 
-这与“AEM发布”不同。 您不会将内容推送到AEM发布服务器实例以使内容可公开查看。 在此，您正在通知Mobile On-Demand选定的内容应在实时Mobile On-Demand应用程序中公开。
+这与“AEM Publish”不同。 您未将内容推送到AEM Publish服务器实例以使其可公开查看。 在此，您正在通知Mobile On-Demand选定的内容应在实时Mobile On-Demand应用程序中公开。
 
 >[!NOTE]
 >
@@ -41,7 +41,7 @@ ht-degree: 1%
 1. 在Mobile中，从目录中选择您的Mobile On-Demand应用程序。
 1. 选择文章。
 1. 如果需要，可从列表视图添加其他文章。
-1. 从操作栏中选择发布。 片刻后，您的文章将公开。
+1. 从操作栏中选择Publish 。 片刻后，您的文章将公开。
 1. 使用上述相同步骤取消发布发布文章。
 
 <!-- FAIL >>[!NOTE]
@@ -57,4 +57,4 @@ ht-degree: 1%
 * [为AEM Mobile On-demand Services开发AEM内容](/help/mobile/aem-mobile-on-demand.md)
 * [管理内容以使用AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-或者，如果您仍想了解有关创作主题的更多信息，请参阅 [为AEM Mobile On-demand Services应用程序创作AEM内容](/help/mobile/mobile-apps-ondemand.md).
+或者，如果您仍想了解有关创作主题的更多信息，请参阅[为AEM Mobile On-demand Services应用程序创作AEM内容](/help/mobile/mobile-apps-ondemand.md)。

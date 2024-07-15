@@ -29,7 +29,7 @@ ht-degree: 60%
 
 >[!NOTE]
 >
->升级到6.4后，建议从/etc移动文件。 请参阅 [AEM 6.5中的常见存储库重组](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) 以了解更多详细信息。
+>升级到6.4后，建议从/etc移动文件。 有关更多详细信息，请参阅[AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules)中的常见存储库重新构建。
 
 规则包含以下信息：
 
@@ -72,7 +72,7 @@ ht-degree: 60%
    * `resourceType` 属性包含解析为实施资源类型的组件的路径。
    * 子 `property` 元素标识要翻译的节点属性。按照与节点规则的子 `property` 元素相同的方式使用此节点。
 
-以下示例规则导致为 `/content` 节点下的所有页面翻译所有 `text` 属性的内容。该规则适用于任何将内容存储在中的组件。 `text` 属性，如foundation文本组件和foundation图像组件。
+以下示例规则导致为 `/content` 节点下的所有页面翻译所有 `text` 属性的内容。该规则适用于任何在`text`属性中存储内容的组件，例如foundation文本组件和foundation图像组件。
 
 ```xml
 <node path="/content">
@@ -80,7 +80,7 @@ ht-degree: 60%
 </node>
 ```
 
-以下示例翻译了所有 `text` 属性，并翻译foundation图像组件的其他属性。 如果其他组件具有同名属性，则该规则不适用于它们。
+以下示例翻译了所有`text`属性的内容，并翻译了foundation图像组件的其他属性。 如果其他组件具有同名属性，则该规则不适用于它们。
 
 ```xml
 <node path="/content">
@@ -103,8 +103,8 @@ ht-degree: 60%
 
 每个 `assetNode` 元素均具有以下特性：
 
-* 一 `resourceType` 属性，代表解析为组件的路径。
-* 一 `assetReferenceAttribute` 属性，代表存储资产二进制文件（用于嵌入资产）的属性的名称或引用资产的路径。
+* 一个`resourceType`属性，代表解析为组件的路径。
+* 一个`assetReferenceAttribute`属性，代表存储资产二进制文件（用于嵌入资产）的属性的名称或引用资产的路径。
 
 以下示例从foundation图像组件中提取图像：
 
@@ -114,7 +114,7 @@ ht-degree: 60%
 
 ## 覆盖规则 {#overriding-rules}
 
-translation_rules.xml文件包含 `nodelist` 带多个子项的元素 `node` 元素。 AEM 从上到下读取节点列表。如果有多个规则针对同一节点，则使用文件中较低位置的规则。例如，以下规则导致翻译 `text` 属性中的所有内容，但页面的 `/content/mysite/en` 分支除外：
+translation_rules.xml文件包含一个`nodelist`元素和多个子`node`元素。 AEM 从上到下读取节点列表。如果有多个规则针对同一节点，则使用文件中较低位置的规则。例如，以下规则导致翻译 `text` 属性中的所有内容，但页面的 `/content/mysite/en` 分支除外：
 
 ```xml
 <nodelist>
@@ -158,7 +158,7 @@ translation_rules.xml文件包含 `nodelist` 带多个子项的元素 `node` 元
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-从这里，您可以 **添加上下文**. 这允许您添加路径。
+从此处，您可以&#x200B;**添加上下文**。 这允许您添加路径。
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -166,17 +166,17 @@ translation_rules.xml文件包含 `nodelist` 带多个子项的元素 `node` 元
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
-您可以通过用户界面更改以下4个属性： `isDeep`， `inherit`， `translate` 和 `updateDestinationLanguage`.
+您可以通过UI更改4个属性： `isDeep`、`inherit`、`translate`和`updateDestinationLanguage`。
 
-**isDeep** 此属性适用于节点过滤器，默认情况下为true。 它检查节点（或其祖先）是否在过滤器中包含具有指定属性值的属性。如果为 false，则仅检查当前节点。
+**isDeep**&#x200B;该属性适用于节点筛选器且默认为true。 它检查节点（或其祖先）是否在过滤器中包含具有指定属性值的属性。如果为 false，则仅检查当前节点。
 
-例如，即使父节点具有属性，子节点也会添加到翻译作业中 `draftOnly` 设置为true可标记草稿内容。 此时 `isDeep` 将发挥作用，并检查父节点是否已将属性 `draftOnly` 设置为 true 并排除这些子节点。
+例如，即使父节点将属性`draftOnly`设置为true以标记草稿内容，子节点也会添加到翻译作业中。 此时 `isDeep` 将发挥作用，并检查父节点是否已将属性 `draftOnly` 设置为 true 并排除这些子节点。
 
-在编辑器中，您可以选中/取消选中 **深** 在 **过滤器** 选项卡。
+在编辑器中，您可以在&#x200B;**筛选器**&#x200B;选项卡中选中/取消选中&#x200B;**Is Deep**。
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
-以下是以下情况下生成的xml的示例 **深** 未在UI中选中：
+以下是在UI中取消选中&#x200B;**Is Deep**&#x200B;时生成的xml的示例：
 
 ```xml
  <filter>
@@ -184,7 +184,7 @@ translation_rules.xml文件包含 `nodelist` 带多个子项的元素 `node` 元
 </filter>
 ```
 
-**inherit** 这适用于属性。 默认情况下，每个属性都会被继承，但如果您希望某个属性不在子项上继承，则可以将该属性标记为false，以便仅将该属性应用于该特定节点。
+**inherit**&#x200B;这适用于属性。 默认情况下，每个属性都会被继承，但如果您希望某个属性不在子项上继承，则可以将该属性标记为false，以便仅将该属性应用于该特定节点。
 
 在 UI 中，您可以在&#x200B;**属性**&#x200B;选项卡中选中/取消选中 **Inherit**。
 
@@ -194,9 +194,9 @@ translation_rules.xml文件包含 `nodelist` 带多个子项的元素 `node` 元
 
 在 UI 中，您可以在&#x200B;**属性**&#x200B;选项卡中选中/取消选中 **Translate**。
 
-**updatedestinationlanguage** 此属性用于没有文本但有语言代码的属性，例如jcr：language。 用户不会翻译文本，而是进行从源到目标的语言区域设置。不会发送此类属性进行翻译。
+**updateDestinationLanguage**&#x200B;此属性用于没有文本但有语言代码的属性，例如jcr：language。 用户不会翻译文本，而是进行从源到目标的语言区域设置。不会发送此类属性进行翻译。
 
-在UI中，您可以选中/取消选中 **Translate** 在 **属性** 选项卡，但适用于将语言代码作为值的特定属性。
+在UI中，您可以在&#x200B;**属性**&#x200B;选项卡中选中/取消选中&#x200B;**Translate**，但目标对象是将语言代码作为值的特定属性。
 
 为了帮助阐明 `updateDestinationLanguage` 和 `translate` 之间的区别，以下提供了仅具有两个规则的上下文的简单示例：
 

@@ -22,13 +22,13 @@ ht-degree: 0%
 
 条码Forms服务从条码的电子图像中提取数据。 该服务接受包括一个或多个条形码作为输入的TIFF和PDF文件，并提取条形码数据。 条形码数据可以通过多种方式进行格式化，包括XML、分隔字符串或使用JavaScript创建的任何自定义格式。
 
-条形码Forms服务支持以下内容 **二维(2D)** 作为扫描的TIFF或PDF文档提供的符号：
+条形码Forms服务支持作为扫描的TIFF或PDF文档提供的以下&#x200B;**二维(2D)**&#x200B;符号：
 
 * PDF417
 * 数据矩阵
 * QR代码
 
-该服务还支持以下内容 **一维** 作为扫描的TIFF或PDF文档提供的符号：
+该服务还支持作为扫描的TIFF或PDF文档提供的以下&#x200B;**一维**&#x200B;符号：
 
 * Codabar
 * 代码128
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 ### 使用条形码表单的工作流 {#workflows-that-use-barcoded-forms}
 
-表单作者使用Designer创建交互式条形码表单。 (请参阅 [Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63).) 当用户使用Adobe Reader或Acrobat填写条形码表单时，会自动更新条形码以编码表单数据。
+表单作者使用Designer创建交互式条形码表单。 (请参阅[Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63)。) 当用户使用Adobe Reader或Acrobat填写条形码表单时，会自动更新条形码以编码表单数据。
 
 条形码Forms服务可用于将纸上存在的数据转换为电子格式。 例如，在填写并打印条形码表单时，可以扫描打印的副本并将其用作条形码Forms服务的输入。
 
@@ -102,7 +102,7 @@ ht-degree: 0%
 
 ### 推荐的编码和解码格式 {#recommended-encoding-and-decoding-formats}
 
-鼓励条形码表单作者在条形码中编码数据时使用简单的分隔格式（如制表符分隔）。 此外，请避免使用回车作为字段分隔符。 Designer提供一系列分隔的编码，这些编码可自动生成JavaScript脚本来编码条形码。 解码的数据在第一行上具有字段名称，在第二行上具有它们的值，每个字段之间具有制表符。
+鼓励条形码表单作者在条形码中编码数据时使用简单的分隔格式（如制表符分隔）。 此外，请避免使用回车作为字段分隔符。 Designer提供一系列分隔的编码，这些编码可自动生成JavaScript脚本以编码条形码。 解码的数据在第一行上具有字段名称，在第二行上具有它们的值，每个字段之间具有制表符。
 
 在解码条形码时，请指定用于分隔字段的字符。 为解码指定的字符必须与用于编码条形码的字符相同。 例如，在使用建议的制表符分隔格式时，“提取到XML”操作必须使用字段分隔符的默认值Tab。
 
@@ -127,17 +127,17 @@ ht-degree: 0%
 * 该服务完全支持AcroForms以及包含通过Adobe Reader或Acrobat保存的2D条形码的静态表单。 但是，对于1D条形码，请拼合表单，或提供它作为扫描的PDF或TIFF文档。
 * 不完全支持动态XFA表单。 要正确解码动态表单中的1D和2D条形码，请拼合表单或将其提供为扫描的PDF或TIFF文档。
 
-此外，如果遵循上述限制，该服务可以对使用受支持符号的任何条形码进行解码。 有关如何创建交互式条形码表单的更多信息，请参阅 [Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63).
+此外，如果遵循上述限制，该服务可以对使用受支持符号的任何条形码进行解码。 有关如何创建交互式条形码表单的详细信息，请参阅[Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63)。
 
 ## 配置服务的属性   {#configureproperties}
 
-您可以使用 **AEMFD条形码Forms服务** 在AEM Console中配置此服务的属性。 AEM控制台的默认URL为 `https://[host]:'port'/system/console/configMgr`.
+您可以在AEM控制台中使用&#x200B;**AEMFD条形码Forms服务**&#x200B;配置此服务的属性。 AEM控制台的默认URL为`https://[host]:'port'/system/console/configMgr`。
 
 ## 使用服务 {#using}
 
 条码式Forms服务提供以下两个API：
 
-* **[解码](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：对输入PDF文档或tiff图像中可用的所有条形码进行解码。 它返回另一个XML文档，该文档包含从输入文档或图像中的所有可用条形码检索的数据。
+* **[解码](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：解码输入PDF文档或tiff图像中的所有可用条形码。 它返回另一个XML文档，该文档包含从输入文档或图像中的所有可用条形码检索的数据。
 
 * **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：将使用解码API解码的数据转换为XML数据。 此XML数据可以与XFA表单合并。 它会返回一个XML文档列表，每个文档对应一个条形码。
 

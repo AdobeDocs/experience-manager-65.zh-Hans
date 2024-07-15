@@ -22,7 +22,7 @@ ht-degree: 0%
 
 默认情况下，通过Admin Console切换到经典UI的功能被禁用。 因此，不再显示鼠标悬停在特定控制台图标上时看到的弹出图标，这些图标允许访问经典UI。
 
-每个具有经典UI版本的控制台 `/libs/cq/core/content/nav` 可以单独重新启用，以便 **经典UI** 将选项悬停在控制台图标上时，该选项会再次弹出。
+每个在`/libs/cq/core/content/nav`中具有经典UI版本的控制台都可以单独重新启用，以便在鼠标悬停在控制台图标上时再次弹出&#x200B;**经典UI**&#x200B;选项。
 
 在此示例中，您将为站点控制台重新启用经典UI。
 
@@ -38,17 +38,17 @@ ht-degree: 0%
 
    `/libs/cq/core/content/nav/sites`
 
-1. 使用创建叠加 **覆盖节点** 选项；例如：
+1. 使用&#x200B;**覆盖节点**&#x200B;选项创建覆盖；例如：
 
    * **路径**： `/apps/cq/core/content/nav/sites`
-   * **叠加位置**： `/apps/`
+   * **覆盖位置**： `/apps/`
    * **匹配节点类型**：活动（选中复选框）
 
 1. 将以下布尔属性添加到覆盖的节点：
 
    `enableDesktopOnly = {Boolean}true`
 
-1. 此 **经典UI** 选项再次作为Admin Console中的弹出框选项提供。
+1. **经典UI**&#x200B;选项再次作为Admin Console中的弹出框选项提供。
 
    ![经典UI弹出框选项](assets/syui-01-2019-02-27-15-16-55.png)
 

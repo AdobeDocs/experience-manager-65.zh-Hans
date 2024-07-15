@@ -22,7 +22,7 @@ ht-degree: 66%
 
 >[!NOTE]
 >
->此 [JMX控制台](/help/sites-administering/jmx-console.md#workflow-maintenance) 提供了其他工作流维护操作。
+>[JMX控制台](/help/sites-administering/jmx-console.md#workflow-maintenance)提供额外的工作流维护操作。
 
 提供了一系列控制台来管理您的工作流。使用[全局导航](/help/sites-authoring/basic-handling.md#global-navigation)以打开&#x200B;**工具**&#x200B;窗格，然后选择&#x200B;**工作流**：
 
@@ -36,7 +36,7 @@ ht-degree: 66%
 ## 监控工作流实例状态 {#monitoring-the-status-of-workflow-instances}
 
 1. 使用“导航”，依次选择&#x200B;**工具**&#x200B;和&#x200B;**工作流**。
-1. 选择 **实例** 以便显示当前正在进行的工作流实例的列表。
+1. 选择&#x200B;**实例**，以便显示当前正在进行的工作流实例的列表。
 
    ![wf-96](assets/wf-96.png)
 
@@ -65,7 +65,7 @@ ht-degree: 66%
 ## 暂停、恢复和终止工作流实例 {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. 使用“导航”，依次选择&#x200B;**工具**&#x200B;和&#x200B;**工作流**。
-1. 选择 **实例** 以便显示当前正在进行的工作流实例的列表。
+1. 选择&#x200B;**实例**，以便显示当前正在进行的工作流实例的列表。
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -76,7 +76,7 @@ ht-degree: 66%
 ## 查看存档的工作流 {#viewing-archived-workflows}
 
 1. 使用“导航”，依次选择&#x200B;**工具**&#x200B;和&#x200B;**工作流**。
-1. 选择 **存档** 这样即可显示已成功完成的工作流实例的列表。
+1. 选择&#x200B;**存档**，以便显示已成功完成的工作流实例的列表。
 
    ![wf-98](assets/wf-98.png)
 
@@ -93,22 +93,22 @@ ht-degree: 66%
 
 ## 修复工作流实例故障 {#fixing-workflow-instance-failures}
 
-当工作流失败时，AEM提供 **失败** 控制台让您进行调查，并在找到初始原因后执行适当的操作：
+当工作流失败时，AEM会提供&#x200B;**故障**&#x200B;控制台，以便您进行调查，并在找到初始原因后执行适当的操作：
 
 * **失败详细信息**
-打开一个窗口以显示 **失败消息**， **步骤**、和 **失败栈栈**.
+打开一个窗口以显示**失败消息**、**步骤**&#x200B;和&#x200B;**失败栈栈**。
 
 * **打开历史记录**
 显示工作流历史记录的详细信息。
 
-* **重试步骤**  — 再次运行脚本步骤组件实例。 修复导致原始错误的故障后，使用“重试步骤”命令。例如，在修复流程步骤执行的脚本中的错误后，重试该步骤。
-* **终止**  — 如果错误导致工作流出现不可调和的情况，则终止工作流。 例如，工作流可以依赖于环境条件，例如存储库中对工作流实例不再有效的信息。
-* **终止并重试**  — 类似于 **终止** 只不过使用原始有效负载、标题和描述来启动新的工作流实例。
+* **重试步骤** — 再次运行脚本步骤组件实例。 修复导致原始错误的故障后，使用“重试步骤”命令。例如，在修复流程步骤执行的脚本中的错误后，重试该步骤。
+* **终止** — 如果错误导致工作流出现不可调和的情况，则终止工作流。 例如，工作流可以依赖于环境条件，例如存储库中对工作流实例不再有效的信息。
+* **终止并重试** — 类似于&#x200B;**终止**，只不过使用原始有效负载、标题和描述来启动新的工作流实例。
 
 要调查故障，然后恢复或终止工作流，请执行以下步骤：
 
 1. 使用“导航”，依次选择&#x200B;**工具**&#x200B;和&#x200B;**工作流**。
-1. 选择 **失败** 以便显示未成功完成的工作流实例的列表。
+1. 选择&#x200B;**失败**，以便您可以显示未成功完成的工作流实例的列表。
 1. 选择特定项目，然后选择适当的操作：
 
    ![wf-47](assets/wf-47.png)
@@ -121,7 +121,7 @@ ht-degree: 66%
 
 您还可以创建多个服务配置以清除满足不同条件的工作流实例。例如，创建一个配置，以便在特定工作流模型的实例运行时间超过预期时间时清除这些实例。 创建另一个配置，以便在一定天数后清除所有已完成的工作流，从而最大限度地减小存储库。
 
-要配置服务，您可以使用 [Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 或 [将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). 下表描述了任一方法所需的属性。
+要配置服务，您可以使用[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)。 下表描述了任一方法所需的属性。
 
 >[!NOTE]
 >
@@ -169,7 +169,7 @@ ht-degree: 66%
 
 ## 设置收件箱的最大大小 {#setting-the-maximum-size-of-the-inbox}
 
-您可以通过配置 **AdobeGranite工作流服务**，使用 [Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 或 [将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). 下表描述了为任一方法配置的属性。
+通过配置&#x200B;**AdobeGranite工作流服务**，使用[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)，可以设置收件箱的最大大小。 下表描述了为任一方法配置的属性。
 
 >[!NOTE]
 >

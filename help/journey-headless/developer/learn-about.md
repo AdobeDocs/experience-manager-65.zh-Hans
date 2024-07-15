@@ -123,11 +123,11 @@ Headless 展示了交付数字体验方面的灵活度。但这种灵活度本�
 * 了解为什么需要以及何时需要 Headless。
 * 从较高层面了解如何使用 Headless 概念以及如何将它们相互关联。
 
-在此知识的基础上继续您的AEM Headless历程，接下来查看文档 [AEM Headless快速入门](getting-started.md) 在这里，您将了解如何设置必要的工具，以及如何开始思考AEM如何进行headless内容交付及其先决条件。
+在此知识的基础上继续您的AEM Headless历程，接下来查看文档[AEM Headless快速入门](getting-started.md)，了解如何设置必要的工具，以及如何开始思考AEM如何进行Headless内容交付及其先决条件。
 
 ## 其他资源 {#additional-resources}
 
-我们建议您查看文档来继续无头开发历程的下一部分 [AEM Headless快速入门](getting-started.md)，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续执行Headless历程所必需的。
+我们建议您查看文档[AEM Headless快速入门](getting-started.md)来继续无头开发历程的下一部分，以下是一些其他可选资源，这些资源对本文档中提到的一些概念进行了更深入的探究，但并非继续无头开发历程所必需的。
 
 * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)

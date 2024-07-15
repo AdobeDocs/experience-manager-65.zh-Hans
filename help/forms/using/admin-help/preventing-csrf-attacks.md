@@ -26,19 +26,19 @@ ht-degree: 0%
 
 ## CSRF相关术语 {#csrf-related-terms}
 
-**引用网站：** 发出请求的源页面的地址。 例如，site1.com上的某个网页包含指向site2.com的链接。 单击该链接会将请求发布到site2.com。 此请求的反向链接为site1.com，因为此请求来自源为site1.com的页面。
+**引用者：**&#x200B;发出请求的源页面的地址。 例如，site1.com上的某个网页包含指向site2.com的链接。 单击该链接会将请求发布到site2.com。 此请求的反向链接为site1.com，因为此请求来自源为site1.com的页面。
 
 **列入允许列表的URI：** URI标识Forms服务器上正在请求的资源，例如/adminui或/contentspace。 某些资源可能允许请求从外部站点进入应用程序。 这些资源被视为列入允许列表的URI。 Forms服务器从不从列入允许列表的URI执行反向链接检查。
 
-**Null引用：** 当您打开新的浏览器窗口或Tab，然后键入地址并按Enter键时，反向链接为Null。 该请求是全新请求，并非源自父网页；因此，不存在该请求的反向链接。 Forms服务器可以从以下位置接收Null反向链接：
+**Null反向链接：**&#x200B;当您打开新的浏览器窗口或Tab键，然后键入地址并按Enter键时，反向链接为Null。 该请求是全新请求，并非源自父网页；因此，不存在该请求的反向链接。 Forms服务器可以从以下位置接收Null反向链接：
 
 * 在SOAP或REST端点上发出的来自Acrobat的请求
-* 在AEM Forms SOAP或REST端点上发出HTTP请求的任何桌面客户端
+* 在AEM forms SOAP或REST端点上发出HTTP请求的任何桌面客户端
 * 打开新的浏览器窗口并输入任何AEM forms web应用程序登录页的URL时
 
-在SOAP和REST端点上允许空反向链接。 在所有URI登录页面（如/adminui和/contentspace）及其对应的映射资源上也允许空反向链接。 例如， /contentspace的映射servlet是/contentspace/faces/jsp/login.jsp ，它应该是空引用异常。 只有在为Web应用程序启用GET过滤时才需要此例外。 您的应用程序可以指定是否允许空反向链接。 请参阅中的“防止跨站点请求伪造攻击” [AEM表单的强化和安全性](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
+在SOAP和REST端点上允许空反向链接。 在所有URI登录页面（如/adminui和/contentspace）及其对应的映射资源上也允许空反向链接。 例如， /contentspace的映射servlet是/contentspace/faces/jsp/login.jsp ，它应该是空引用异常。 只有在为Web应用程序启用GET过滤时才需要此例外。 您的应用程序可以指定是否允许空反向链接。 请参阅[强化和AEM表单的安全性](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)中的“防止跨站点请求伪造攻击”。
 
-**允许的反向链接异常：** “允许的反向链接异常”是允许的反向链接列表的子列表，其中阻止请求。 允许的“引用异常”专用于某个Web应用程序。 如果不允许允许的反向链接子集调用特定Web应用程序，您可以通过“允许的反向链接例外”来阻止列表反向链接。 在web.xml文件中为应用程序指定了允许的反向链接例外。 (请参阅“帮助和Tutorials”页面上的“强化和保护AEM表单的安全性”中的“防止跨站点请求伪造攻击”。)
+**允许的反向链接异常：**&#x200B;允许的反向链接异常是允许的反向链接列表的子列表，从中阻止请求。 允许的“引用异常”专用于某个Web应用程序。 如果不允许允许的反向链接子集调用特定Web应用程序，您可以通过“允许的反向链接例外”来阻止列表反向链接。 在web.xml文件中为应用程序指定了允许的反向链接例外。 (请参阅“帮助和Tutorials”页面上的“强化和保护AEM表单的安全性”中的“防止跨站点请求伪造攻击”。)
 
 ## 允许的反向链接的工作方式 {#how-allowed-referers-work}
 
@@ -47,7 +47,7 @@ AEM Forms提供反向链接筛选功能，可帮助阻止CSRF攻击。 反向链
 1. Forms服务器检查用于调用的HTTP方法：
 
    * 如果POST，Forms服务器将执行反向链接标头检查。
-   * 如果是GET，Forms服务器将绕过反向链接检查，除非CSRF_CHECK_GETS设置为true（在这种情况下，它将执行反向链接标头检查）。 在web.xml文件中为应用程序指定CSRF_CHECK_GETS。 （请参阅中的“防止跨站点请求伪造攻击”） [强化和安全指南](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
+   * 如果是GET，Forms服务器将绕过反向链接检查，除非CSRF_CHECK_GETS设置为true（在这种情况下，它将执行反向链接标头检查）。 在web.xml文件中为应用程序指定CSRF_CHECK_GETS。 （请参阅[强化和安全指南](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)中的“防止跨站点请求伪造攻击”。）
 
 1. Forms服务器检查请求的URI是否已列入允许列表：
 
@@ -72,7 +72,7 @@ AEM Forms提供反向链接筛选功能，可帮助阻止CSRF攻击。 反向链
 1. 要添加允许的反向链接，请执行以下操作：
 
    * 在允许的反向链接框中键入主机名或IP地址。 要一次添加多个允许的反向链接，请在新行中输入每个主机名或IP地址。
-   * 在“HTTP端口”和“HTTPS端口”框中，指定允许HTTP和/或HTTPS使用的端口。 如果将这些框留空，则使用默认端口（HTTP的端口80和HTTPS的端口443）。 如果您输入 `0` （零）在框中，该服务器上的所有端口都处于启用状态。 您还可以输入特定的端口号，以仅启用该端口。
+   * 在“HTTP端口”和“HTTPS端口”框中，指定允许HTTP和/或HTTPS使用的端口。 如果将这些框留空，则使用默认端口（HTTP的端口80和HTTPS的端口443）。 如果在这些框中输入`0` （零），则该服务器上的所有端口都会启用。 您还可以输入特定的端口号，以仅启用该端口。
    * 单击“添加”。
 
 1. 要从“允许的反向链接”列表中删除条目，请从列表中选择该项并单击“删除”。

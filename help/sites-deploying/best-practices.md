@@ -37,7 +37,7 @@ ht-degree: 4%
 
 ## Oak {#oak}
 
-[Oak](/help/sites-deploying/platform.md) 是一个可扩展且性能良好的分层内容存储库，它是AEM的基础。
+[Oak](/help/sites-deploying/platform.md)是一个可扩展且性能优异的分层内容存储库，它是AEM的基础。
 
 <table>
  <tbody>
@@ -47,7 +47,7 @@ ht-degree: 4%
    <td>提供一份白皮书，讨论技术灵活性、高性能和良好的灾难恢复功能</td>
   </tr>
   <tr>
-   <td>推荐的Oak部署</td>
+   <td>建议的Oak部署</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">建议的部署</a></td>
    <td>描述部署方案</td>
   </tr>
@@ -63,7 +63,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>在Oak中搜索</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">有关查询和索引的最佳实践</a><br /> </td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">查询和索引的最佳实践</a><br /> </td>
    <td>描述有关如何为内容编制索引的最佳实践。</td>
   </tr>
  </tbody>
@@ -73,9 +73,9 @@ ht-degree: 4%
 
 AEM Communities简化了内部部署社区的创建和管理。 此处介绍了AEM Communities的最佳实践：
 
-[社区内容存储](/help/communities/working-with-srp.md)  — 讨论用户生成内容(UGC)的新共享存储功能以及选择底层内容的注意事项 [拓扑](/help/communities/topologies.md).
+[社区内容存储](/help/communities/working-with-srp.md) — 讨论用户生成内容(UGC)的新共享存储功能以及选择基础[拓扑](/help/communities/topologies.md)的注意事项。
 
-[针对社区的建议部署](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  — 介绍社区推荐的部署。 |
+[社区推荐部署](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) — 介绍社区推荐部署。 |
 
 ## UI {#ui}
 
@@ -94,7 +94,7 @@ AEM当前在同一版本中有两个UI：经典用户界面和触屏优化用户
   <tr>
    <td>质量保证的最佳实践</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">质量保证的最佳实践</a></td>
-   <td>专门为对进行性能测试的测试概念定义涉及的问题标准化概述 <em>发布</em> 环境。 这主要是QA工程师、项目经理和系统管理员的兴趣。</td>
+   <td>对在<em>publish</em>环境中定义测试概念时涉及的问题的标准化概述。 这主要是QA工程师、项目经理和系统管理员的兴趣。</td>
   </tr>
   <tr>
    <td>将 Dispatcher 与 CDN 结合使用</td>

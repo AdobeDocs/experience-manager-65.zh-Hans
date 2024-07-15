@@ -78,7 +78,7 @@ ht-degree: 5%
 
 **描述**
 
-定义节点的类型 `commentattachment` 节点
+定义`commentattachment`节点的节点类型
 
 **定义**
 
@@ -109,8 +109,8 @@ ht-degree: 5%
 
 以小数度(DD)定义地理位置的Mixin
 
-* `@prop latitude`  — 使用小数位数编码为双精度的latitude
-* `@prop longitude`  — 使用小数位数编码为双精度形式的经度
+* `@prop latitude` — 使用小数位数编码为双精度的latitude
+* `@prop longitude` — 使用小数位数编码的经度
 
 **定义**
 
@@ -136,7 +136,7 @@ ht-degree: 5%
 
 定义默认CQ页面。
 
-* `@node jcr:content`  — 页面的主要内容。
+* `@node jcr:content` — 页面的主要内容。
 
 **定义**
 
@@ -160,18 +160,18 @@ ht-degree: 5%
 
 定义页面内容的默认节点，具有WCM使用的最小属性。
 
-* `@prop jcr:title`  — 页面标题。
-* `@prop jcr:description`  — 此页面的描述。
-* `@prop cq:template`  — 用于创建页面的模板的路径。
-* `@prop cq:allowedTemplates`  — 用于确定允许模板的路径的正则表达式列表。
-* `@prop pageTitle`  — 标题显示在 `<title>` 标记之前。
-* `@prop navTitle`  — 导航中使用的标题。
-* `@prop hideInNav`  — 指定是否应在导航中隐藏页面。
-* `@prop onTime`  — 此页面生效的时间。
-* `@prop offTime`  — 此页面失效的时间。
-* `@prop cq:lastModified`  — 上次修改页面（或其段落）的日期。
-* `@prop cq:lastModifiedBy`  — 最后一个更改页面（或其段落）的用户。
-* `@prop jcr:language`  — 页面内容的语言。
+* `@prop jcr:title` — 页面的标题。
+* `@prop jcr:description` — 此页面的描述。
+* `@prop cq:template` — 用于创建页面的模板的路径。
+* `@prop cq:allowedTemplates` — 用于确定允许模板的路径的正则表达式列表。
+* `@prop pageTitle` - `<title>`标记中显示的标题。
+* `@prop navTitle` — 导航中使用的标题。
+* `@prop hideInNav` — 指定是否应在导航中隐藏页面。
+* `@prop onTime` — 此页面生效的时间。
+* `@prop offTime` — 此页面失效的时间。
+* `@prop cq:lastModified` — 上次修改页面（或其段落）的日期。
+* `@prop cq:lastModifiedBy` — 最后一个更改页面（或其段落）的用户。
+* `@prop jcr:language` — 页面内容的语言。
 
 >[!NOTE]
 >
@@ -197,17 +197,17 @@ ht-degree: 5%
 
 定义CQ模板。
 
-* `@node jcr:content`  — 新页面的默认内容。
-* `@node icon.png`  — 包含特征图标的文件。
-* `@node thumbnail.png`  — 保存特征缩略图图像的文件。
-* `@node workflows`  — 自动分配工作流配置。 该配置遵循以下结构：
+* `@node jcr:content` — 新页面的默认内容。
+* `@node icon.png` — 包含特征图标的文件。
+* `@node thumbnail.png` — 包含特征缩略图图像的文件。
+* `@node workflows` — 自动分配工作流配置。 该配置遵循以下结构：
    * `+ workflows`
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents`  — 用于确定允许作为父模板的模板的路径的正则表达式模式。
-* `@prop allowedChildren`  — 用于确定允许作为子模板的模板的路径的正则表达式模式。
-* `@prop ranking`  — 在创建页面对话框的模板列表中的位置。
+* `@prop allowedParents` — 用于确定允许作为父模板的模板的路径的正则表达式模式。
+* `@prop allowedChildren` — 用于确定允许作为子模板的模板的路径的正则表达式模式。
+* `@prop ranking` — 在创建页面对话框的模板列表中的位置。
 
 **定义**
 
@@ -229,24 +229,24 @@ ht-degree: 5%
 
 定义CQ组件。
 
-* `@prop jcr:title`  — 组件的标题。
-* `@prop jcr:description`  — 组件的描述。
-* `@node dialog`  — 主对话框。
-* `@prop dialogPath`  — 主对话框路径（对话框的替代方法）。
-* `@node design_dialog`  — 设计对话框。
-* `@prop cq:cellName`  — 设计单元格的名称。
-* `@prop cq:isContainer`  — 指示它是否为容器组件。 强制使用子组件的单元格名称而不是路径名称。 例如， `parsys` 是容器组件。 如果未定义此值，则会根据是否存在 `cq:childEditConfig`.
-* `@prop cq:noDecoration`  — 如果为true，则无修饰 `div` 标记在包含此组件时绘制。
-* `@node cq:editConfig`  — 定义编辑栏参数的配置。
-* `@node cq:childEditConfig`  — 子组件继承的编辑配置。
-* `@node cq:htmlTag`  — 定义添加到“周围”的其他标记属性 `div` 标记。
+* `@prop jcr:title` — 组件的标题。
+* `@prop jcr:description` — 组件的描述。
+* `@node dialog` — 主对话框。
+* `@prop dialogPath` — 主对话框路径（对话框的替代方法）。
+* `@node design_dialog` — “设计”对话框。
+* `@prop cq:cellName` — 设计单元格的名称。
+* `@prop cq:isContainer` — 指示它是否为容器组件。 强制使用子组件的单元格名称而不是路径名称。 例如，`parsys`是容器组件。 如果未定义此值，则根据`cq:childEditConfig`的存在性进行检查。
+* `@prop cq:noDecoration` — 如果为true，则在包含此组件时不会绘制任何修饰`div`标记。
+* `@node cq:editConfig` — 定义编辑栏参数的配置。
+* `@node cq:childEditConfig` — 子组件继承的编辑配置。
+* `@node cq:htmlTag` — 定义在包含组件时添加到“周围”`div`标记的其他标记属性。
 * `@node icon.png` — 包含特征图标的文件。
-* `@node thumbnail.png`  — 保存特征缩略图图像的文件。
-* `@prop allowedParents`  — 用于确定允许作为父组件的组件的组件路径的正则表达式模式。
-* `@prop allowedChildren`  — 用于确定允许作为子组件的组件的组件的路径的正则表达式模式。
-* `@node virtual`  — 包含反映用于组件拖放的虚拟组件的子节点。
-* `@prop componentGroup`  — 组件组的名称，用于组件拖放。
-* `@node cq:infoProviders`  — 包含子节点，每个子节点都有一个属性 `className` 指的是 `PageInfoProvider`.
+* `@node thumbnail.png` — 包含特征缩略图图像的文件。
+* `@prop allowedParents` — 用于确定允许作为父组件的组件的路径的正则表达式模式。
+* `@prop allowedChildren` — 用于确定允许作为子组件的组件的路径的正则表达式模式。
+* `@node virtual` — 包含反映用于组件拖放的虚拟组件的子节点。
+* `@prop componentGroup` — 组件组的名称，用于组件拖放。
+* `@node cq:infoProviders` — 包含子节点，每个子节点都有一个引用`PageInfoProvider`的属性`className`。
 
 **定义**
 
@@ -287,20 +287,20 @@ ht-degree: 5%
 
 定义“编辑栏”的配置。
 
-* `@prop cq:dialogMode`  — 对话框模式：
-   * `floating`  — 对于普通浮动对话框
-   * `inline`  — 内联编辑
-   * `auto`  — 自动检测（取决于可用空间）
-* `@node cq:inplaceEditing`  — 为此组件替换编辑配置。
+* `@prop cq:dialogMode` — 对话框模式：
+   * `floating` — 对于普通浮动对话框
+   * `inline` — 内联编辑
+   * `auto` — 自动检测（取决于可用空间）
+* `@node cq:inplaceEditing` — 此组件有就地编辑配置。
 * `@prop cq:layout` — 编辑栏布局：
-   * `editbar`  — 编辑栏
-   * `rollover`  — 将鼠标指针置于框架之上
-   * `auto`  — 自动检测
+   * `editbar` — 编辑栏
+   * `rollover` — 将鼠标指针置于框架之上
+   * `auto` — 自动检测
 * `@node cq:formParameters` — 要添加到对话框表单的其他参数。
 * `@prop cq:actions` — 操作列表（编辑栏按钮或菜单项）。
-* `@node cq:actionConfigs`  — 用于编辑栏或菜单项的小组件配置。
-* `@prop cq:emptyText`  — 没有可视内容时显示的文本。
-* `@node cq:dropTargets`  — 收藏集 `{@link cq:DropTargetConfig}` 节点。
+* `@node cq:actionConfigs` — 编辑栏或菜单项的构件配置。
+* `@prop cq:emptyText` — 无可视内容时显示的文本。
+* `@node cq:dropTargets` - `{@link cq:DropTargetConfig}`节点的集合。
 
 **定义**
 
@@ -319,9 +319,9 @@ ht-degree: 5%
 
 配置组件的一个放置目标。 此节点的名称将用作拖放的ID。
 
-* `@prop accept`  — 此放置目标接受的mime类型列表；例如， `["image/*"]`
-* `@prop groups`  — 接受源的拖放组列表。
-* `@prop propertyName`  — 用于存储引用的属性的名称。
+* `@prop accept` — 此放置目标接受的mime类型列表；例如，`["image/*"]`
+* `@prop groups` — 接受源的拖放组列表。
+* `@prop propertyName` — 用于存储引用的属性的名称。
 
 **定义**
 
@@ -337,15 +337,15 @@ ht-degree: 5%
 
 定义虚拟CQ组件。 当前仅用于新组件拖放向导。
 
-* `@prop jcr:title`  — 此组件的标题。
-* `@prop jcr:description`  — 此组件的描述。
-* `@node cq:editConfig`  — 编辑定义编辑栏参数的配置。
-* `@node cq:childEditConfig` — 编辑由子组件继承的配置。
-* `@node icon.png`  — 包含特征图标的文件。
-* `@node thumbnail.png`  — 保存特征缩略图图像的文件。
-* `@prop allowedParents`  — 用于确定允许作为父组件的组件的组件路径的正则表达式模式。
-* `@prop allowedChildren`  — 用于确定允许作为子组件的组件的组件路径的正则表达式模式。
-* `@prop componentGroup`  — 用于组件拖放的组件组的名称。
+* `@prop jcr:title` — 此组件的标题。
+* `@prop jcr:description` — 此组件的描述。
+* `@node cq:editConfig` — 编辑定义编辑栏参数的配置。
+* `@node cq:childEditConfig` — 编辑子组件继承的配置。
+* `@node icon.png` — 包含特征图标的文件。
+* `@node thumbnail.png` — 包含特征缩略图图像的文件。
+* `@prop allowedParents` — 用于确定允许作为父组件的组件的路径的正则表达式模式。
+* `@prop allowedChildren` — 用于确定允许作为子组件的组件的路径的正则表达式模式。
+* `@prop componentGroup` — 组件拖放的组件组的名称。
 
 **定义**
 
@@ -370,12 +370,12 @@ ht-degree: 5%
 * `REFRESH_SELF`
 * `REFRESH_PARENT`
 
-* `@prop aftercreate`  — 在创建组件后触发。
-* `@prop afteredit`  — 在编辑（修改）组件后触发。
-* `@prop afterdelete`  — 删除组件后触发。
-* `@prop afterinsert`  — 将组件添加到此容器后触发。
-* `@prop afterremove`  — 从此容器中删除组件后触发。
-* `@prop aftermove`  — 在此容器中移动组件后触发。
+* `@prop aftercreate` — 在创建组件后触发。
+* `@prop afteredit` — 在编辑（修改）组件后触发。
+* `@prop afterdelete` — 在删除组件后触发。
+* `@prop afterinsert` — 将组件添加到此容器后触发。
+* `@prop afterremove` — 从此容器中删除组件后触发。
+* `@prop aftermove` — 在此容器中移动组件后触发。
 
 **定义**
 
@@ -447,12 +447,12 @@ DAM资产。
 
 **描述**
 
-节点类型 `cq:attributes` 用于ContentBus版本标记。 此节点只有一系列属性；其中三个是预定义的“created”、“csd”和“timestamp”。
+节点类型`cq:attributes`用于ContentBus版本标记。 此节点只有一系列属性；其中三个是预定义的“created”、“csd”和“timestamp”。
 
-* `@prop created (long) mandatory copy`  — 版本信息的创建时间戳，通常是上一版本的签入时间或页面创建时间。
+* `@prop created (long) mandatory copy` — 创建版本信息的时间戳，通常为上一版本的签入时间或页面创建时间。
 * `@prop csd (string) mandatory copy` - csd标准属性，页面节点的cq：csd属性的副本
-* `@prop timestamp (long) mandatory copy`  — 上次版本修改的时间戳，通常为签入时间。
-* `@prop * (string) copy`  — 其他属性，使用父节点进行版本控制。
+* `@prop timestamp (long) mandatory copy` — 上次修改版本的时间戳，通常为签入时间。
+* `@prop * (string) copy` — 其他属性，使用父节点进行版本控制。
 
 **定义**
 
@@ -466,13 +466,13 @@ DAM资产。
 
 **描述**
 
-节点类型 `cq:contentPage` 包含ContentBus内容页的属性和子节点定义。 仅当将此mixin类型添加到类型节点时 `cq:page`，节点会变为ContentBus内容页面。
+节点类型`cq:contentPage`包含ContentBus内容页的属性和子节点定义。 仅当将此mixin类型添加到类型为`cq:page`的节点时，节点才会变为ContentBus内容页。
 
-中的项目 `cq:Cq4ContentPage` 为：
+`cq:Cq4ContentPage`中的项目包括：
 
-* `@prop cq:csd`  — 页面的ContentBusCSD。
-* `@node cq:content`  — 页面的内容。 如果页面节点处于“现有不含内容”或“已删除”状态，则此子节点不存在。
-* `@node cq:attributes`  — 页面属性的列表，以前称为版本标记。 对于cq：contentPage类型，此节点是必需的。 当页面为节点进行版本控制时，将对“属性”节点进行版本控制。
+* `@prop cq:csd` — 页面的ContentBusCSD。
+* `@node cq:content` — 页面的内容。 如果页面节点处于“现有不含内容”或“已删除”状态，则此子节点不存在。
+* `@node cq:attributes` — 页面属性的列表，以前称为版本标记。 对于cq：contentPage类型，此节点是必需的。 当页面为节点进行版本控制时，将对“属性”节点进行版本控制。
 
 **定义**
 
@@ -488,9 +488,9 @@ DAM资产。
 
 轮询配置。
 
-* `@prop source (String) mandatory`  — 数据源URI。 必填，且不能为空。
-* `@prop target (String)`  — 存储从数据源检索的数据的目标位置。 可选，默认为cq：PollConfig节点。
-* `@prop interval (Long)`  — 轮询数据源中新数据或更新数据的时间间隔（以秒为单位）。 可选，默认为30分钟（1800秒）。
+* `@prop source (String) mandatory` — 数据源URI。 必填，且不能为空。
+* `@prop target (String)` — 存储从数据源检索的数据的目标位置。 可选，默认为cq：PollConfig节点。
+* `@prop interval (Long)` — 轮询数据源中新数据或更新数据的时间间隔（以秒为单位）。 可选，默认为30分钟（1800秒）。
 * [为Adobe Experience Manager创建自定义数据导入器服务](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **定义**
@@ -519,8 +519,8 @@ DAM资产。
 
 以小数度(DD)定义地理位置的mixin。
 
-* `@prop latitude`  — 使用小数位数编码为双精度的Latitude。
-* `@prop longitude`  — 使用小数位数编码为双精度值的经度。
+* `@prop latitude` — 使用小数位数将纬度编码为双精度。
+* `@prop longitude` — 使用小数位数编码的经度。
 
 **定义**
 
@@ -567,9 +567,9 @@ MailerService节点类型 邮件程序使用具有此mixin的节点作为消息�
 定义LiveSync Mixin。 如果某个节点与主源（控制）节点和Live Copy（控制）节点有关联，则该节点将标记为LiveSync。
 
 * `@prop cq:master` - LiveRelationship的主源（控制）的路径。
-* `@prop cq:isDeep`  — 定义关系是否可用于子项。
-* `@prop cq:syncTrigger`  — 定义同步何时触发。
-* `@node * LiveSyncAction`  — 要在同步时执行的操作
+* `@prop cq:isDeep` — 定义关系是否可用于子项。
+* `@prop cq:syncTrigger` — 定义同步何时触发。
+* `@node * LiveSyncAction` — 同步时要执行的操作
 
 **定义**
 
@@ -583,7 +583,7 @@ MailerService节点类型 邮件程序使用具有此mixin的节点作为消息�
 
 定义LiveSyncCanceled mixin。 取消LiveCopy（受控）节点的LiveSync行为，该节点可能因其父节点之一而参与LiveRelationship。
 
-* `@prop cq:isCancelledForChildren`  — 定义是否取消了LiveSync；也适用于子项。
+* `@prop cq:isCancelledForChildren` — 定义是否已取消LiveSync；也适用于子项。
 
 **定义**
 
@@ -596,8 +596,8 @@ MailerService节点类型 邮件程序使用具有此mixin的节点作为消息�
 
 定义附加到LiveSync的LiveSyncAction。
 
-* `@prop name`  — 操作名称
-* `@prop value`  — 操作值
+* `@prop name` — 操作名称
+* `@prop value` — 操作值
 
 **定义**
 
@@ -651,12 +651,12 @@ Blueprint操作
 
 定义复制状态信息mixin。
 
-* `@prop cq:lastPublished` — 上次发布页面（不再使用）的日期。
+* `@prop cq:lastPublished` — 上次发布页面的日期（不再使用）。
 * `@prop cq:lastPublishedBy` — 上次发布页面的用户（不再使用）。
-* `@prop cq:lastReplicated`  — 上次复制页面的日期。
-* `@prop cq:lastReplicatedBy`  — 最后复制页面的用户。
-* `@prop cq:lastReplicationAction`  — 复制操作：激活或停用。
-* `@prop cq:lastReplicationStatus`  — 复制状态（不再使用）。
+* `@prop cq:lastReplicated` — 上次复制页面的日期。
+* `@prop cq:lastReplicatedBy` — 上次复制页面的用户。
+* `@prop cq:lastReplicationAction` — 复制操作：激活或停用。
+* `@prop cq:lastReplicationStatus` — 复制状态（不再使用）。
 
 **定义**
 
@@ -817,7 +817,7 @@ Blueprint操作
 
 **描述**
 
-添加 `cq:userContent` 用户可修改的子节点。 每个用户都有自己的 `cq:userContent/<userid>` 子节点，通常具有mixin `cq:UserTaggable`.
+添加可由用户修改的`cq:userContent`子节点。 每个用户都有自己的`cq:userContent/<userid>`子节点，该子节点通常具有mixin `cq:UserTaggable`。
 
 **定义**
 
@@ -825,7 +825,7 @@ Blueprint操作
    * `mixin`
    * `+ cq:userContent (nt:unstructured)`
 
-扩展变体，更明确地定义 `cq:userContent` 树
+扩展变体，更明确地定义`cq:userContent`树
 
 * `[cq:AllowsUserContent]`
    * `mixin`

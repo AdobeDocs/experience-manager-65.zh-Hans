@@ -18,15 +18,15 @@ ht-degree: 0%
 
 # 将Postscript转换为PDF文档 {#converting-postscript-to-pdf-documents}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 ## 关于Distiller服务 {#about-the-distiller-service}
 
-Distiller®服务可将PostScript®、封装的PostScript (EPS)和PRN文件转换为小巧、可靠且更安全的PDF文件。 Distiller服务通常用于将大量打印文档转换为电子文档，如发票和报表。 将文档转换为PDF还允许企业向客户发送文档的纸质版本和电子版本。
+Distiller®服务通过将PostScript®、封装的PostScript (EPS)和PRN文件转换为紧凑、可靠且更安全的PDF文件。 Distiller服务通常用于将大量打印文档转换为电子文档，如发票和报表。 将文档转换为PDF还允许企业向客户发送文档的纸质版本和电子版本。
 
 >[!NOTE]
 >
->有关Distiller服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Distiller服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 将PostScript转换为PDF文档 {#converting-postscript-to-pdf-documents-inner}
 
@@ -34,7 +34,7 @@ Distiller®服务可将PostScript®、封装的PostScript (EPS)和PRN文件转�
 
 >[!NOTE]
 >
->有关Distiller服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Distiller服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Distiller®服务可将PostScript®、封装的PostScript (EPS)和PRN文件转�
 
 **创建Distiller服务客户端**
 
-您必须先创建Distiller服务客户端，然后才能以编程方式执行Distiller服务操作。 如果您使用的是Java API，请创建 `DistillerServiceClient` 对象。 如果您使用的是Web服务API，请创建 `DistillerServiceService` 对象。
+您必须先创建Distiller服务客户端，然后才能以编程方式执行Distiller服务操作。 如果您使用的是Java API，请创建一个`DistillerServiceClient`对象。 如果您使用的是Web服务API，请创建一个`DistillerServiceService`对象。
 
 **检索要转换的文件**
 
@@ -84,7 +84,7 @@ Distiller®服务可将PostScript®、封装的PostScript (EPS)和PRN文件转�
 
 ### 使用Java API将PostScript文件转换为PDF {#convert-a-postscript-file-to-pdf-using-the-java-api}
 
-使用Distiller服务API (Java)将PostScript文件转换为PDF文档：
+使用PostScript服务API (Java)将Distiller文件转换为PDF文档：
 
 1. 包括项目文件。
 
@@ -92,38 +92,38 @@ Distiller®服务可将PostScript®、封装的PostScript (EPS)和PRN文件转�
 
 1. 创建Distiller服务客户端。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `DistillerServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用构造函数创建`DistillerServiceClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索要转换的文件。
 
-   * 创建 `java.io.FileInputStream` 对象，表示要转换的文件，转换方法是使用其构造函数并传递一个指定文件位置的字符串值。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 创建一个`java.io.FileInputStream`对象，该对象表示要使用其构造函数转换的文件，并传递一个指定文件位置的字符串值。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 调用PDF创建操作。
 
-   调用 `DistillerServiceClient` 对象的 `createPDF` 方法并传递以下值：
+   调用`DistillerServiceClient`对象的`createPDF`方法并传递以下值：
 
-   * 此 `com.adobe.idp.Document` 表示要转换的PS、EPS或PRN文件的对象
-   * A `java.lang.String` 包含要转换的文件名的对象
-   * A `java.lang.String` 包含要使用的Adobe PDF设置名称的对象
-   * A `java.lang.String` 包含要使用的安全设置的名称的对象
-   * 可选 `com.adobe.idp.Document` 包含生成PDF文档时要应用的设置的对象
-   * 可选 `com.adobe.idp.Document` 包含要应用于PDF文档的元数据信息的对象
+   * 表示要转换的PS、EPS或PRN文件的`com.adobe.idp.Document`对象
+   * 包含要转换的文件名称的`java.lang.String`对象
+   * 包含要使用的Adobe PDF设置名称的`java.lang.String`对象
+   * 包含要使用的安全设置的名称的`java.lang.String`对象
+   * 包含要在生成PDF文档时应用的设置的可选`com.adobe.idp.Document`对象
+   * 包含要应用于PDF文档的元数据信息的可选`com.adobe.idp.Document`对象
 
-   此 `createPDF` 方法返回 `CreatePDFResult` 包含新PDF文档和可生成的日志文件的对象。 日志文件通常包含转换请求生成的错误或警告消息。
+   `createPDF`方法返回包含新PDF文档的`CreatePDFResult`对象以及可能生成的日志文件。 日志文件通常包含转换请求生成的错误或警告消息。
 
 1. 保存PDF文档。
 
    要获取新创建的PDF文档，请执行下列操作：
 
-   * 调用 `CreatePDFResult` 对象的 `getCreatedDocument` 方法。 这会返回 `com.adobe.idp.Document` 对象。
-   * 调用 `com.adobe.idp.Document` 对象的 `copyToFile` 用于提取PDF文档的方法。
+   * 调用`CreatePDFResult`对象的`getCreatedDocument`方法。 这将返回`com.adobe.idp.Document`对象。
+   * 调用`com.adobe.idp.Document`对象的`copyToFile`方法来提取PDF文档。
 
    同样，要获取日志文档，请执行下列操作。
 
-   * 调用 `CreatePDFResult` 对象的 `getLogDocument` 方法。 这会返回 `com.adobe.idp.Document` 对象。
-   * 调用 `com.adobe.idp.Document` 对象的 `copyToFile` 提取日志文档的方法。
+   * 调用`CreatePDFResult`对象的`getLogDocument`方法。 这将返回`com.adobe.idp.Document`对象。
+   * 调用`com.adobe.idp.Document`对象的`copyToFile`方法来提取日志文档。
 
 **另请参阅**
 
@@ -137,56 +137,56 @@ Distiller®服务可将PostScript®、封装的PostScript (EPS)和PRN文件转�
 
 ### 使用Web服务API将PostScript文件转换为PDF {#converting-a-postscript-file-to-pdf-using-the-web-service-api}
 
-使用Distiller服务API（Web服务）将PostScript文件转换为PDF文档：
+使用PostScript服务API（Web服务）将Distiller文件转换为PDF文档：
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/DistillerService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/DistillerService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Distiller服务客户端。
 
-   * 创建 `DistillerServiceClient` 对象使用默认构造函数。
-   * 创建 `DistillerServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/DistillerService?blob=mtom`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。 但是，请指定 `?blob=mtom` 使用MTOM。
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `DistillerServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`DistillerServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`DistillerServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/DistillerService?blob=mtom`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。 但是，指定`?blob=mtom`以使用MTOM。
+   * 通过获取`DistillerServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `DistillerServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `DistillerServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+      * 将AEM表单用户名分配给字段`DistillerServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`DistillerServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索要转换的文件。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储要转换为PDF文档的文件。
-   * 创建 `System.IO.FileStream` 对象，方法是：调用其构造函数，并传递一个字符串值，该值表示文件位置和打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 属性与字节数组的内容。
+   * 使用构造函数创建`BLOB`对象。 此`BLOB`对象用于存储要转换为PDF文档的文件。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示文件位置以及用于打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容指定其`MTOM`属性以填充`BLOB`对象。
 
 1. 调用PDF创建操作。
 
-   调用 `DistillerServiceService` 对象的 `CreatePDF2` 方法，并传递以下必需值：
+   调用`DistillerServiceService`对象的`CreatePDF2`方法并传递以下必需值：
 
-   * 此 `BLOB` 表示要转换的PS文件的对象
+   * 表示要转换的PS文件的`BLOB`对象
    * 一个字符串，其中包含要转换的文件的路径名称
-   * 包含要使用的Adobe PDF设置的字符串对象(例如， `Standard`)
-   * 包含要使用的安全设置的字符串对象(例如， `No Securit`y)
-   * 可选 `BLOB` 包含生成PDF文档时要应用的设置的对象
-   * 可选 `BLOB` 包含要应用于PDF文档的元数据信息的对象
-   * A `BLOB` 用于存储PDF文档的输出参数
-   * A `BLOB` 用于存储日志的输出参数
+   * 包含要使用的Adobe PDF设置的字符串对象（例如，`Standard`）
+   * 包含要使用的安全设置的字符串对象（例如，`No Securit`y）
+   * 包含要在生成PDF文档时应用的设置的可选`BLOB`对象
+   * 包含要应用于PDF文档的元数据信息的可选`BLOB`对象
+   * 用于存储PDF文档的`BLOB`输出参数
+   * 用于存储日志的`BLOB`输出参数
 
 1. 保存PDF文档。
 
-   * 创建 `System.IO.FileStream` 对象通过调用其构造函数。 传递一个字符串值，该值表示已签名PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `BLOB` 返回的对象 `CreatePDF2` 方法（输出参数）。 通过获取的值，填充字节数组 `BLOB` 对象的 `MTOM` 数据成员。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
-   * PDF通过调用 `System.IO.BinaryWriter` 对象的 `Write` 和传递字节数组。
+   * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，该值表示已签名PDF文档的文件位置以及打开文件的模式。
+   * 创建一个字节数组，用于存储`CreatePDF2`方法（输出参数）返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值填充字节数组。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
+   * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **另请参阅**
 

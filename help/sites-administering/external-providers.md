@@ -27,13 +27,13 @@ Analytics可向您提供有关您网站的使用方式的重要且有趣的信�
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-您也可以配置自己的实例 **通用Analytics片段** 以定义新的服务配置。
+您还可以配置自己的&#x200B;**通用分析代码片段**&#x200B;实例，以定义新的服务配置。
 
 然后，通过添加到网页中的代码小片段来收集信息。 例如：
 
 >[!CAUTION]
 >
->请勿将脚本包含在 `script` 标记之间。
+>请勿将脚本包含在`script`标记中。
 
 ```
 var _gaq = _gaq || [];
@@ -56,9 +56,9 @@ _gaq.push(['_trackPageview']);
 
 >[!CAUTION]
 >
->Geometrixx-Outdoors演示站点已进行配置，因此在“页面属性”中提供的属性已附加到html源代码中(位于 `</html>` 结束标记) `js` 脚本。
+>已配置Geometrixx-Outdoors演示网站，以便将在页面属性中提供的属性附加到相应`js`脚本中的html源代码（位于`</html>`结束标记正上方）。
 >
->如果您自己的 `/apps` 不继承默认页面组件( `/libs/foundation/components/page`)您（或您的开发人员）必须确保 `js` 通过包含脚本来包含脚本，例如 `cq/cloudserviceconfigs/components/servicescomponents`，或使用类似的机制。
+>如果您自己的`/apps`不是继承自默认页面组件(`/libs/foundation/components/page`)，您（或您的开发人员）必须确保包括相应的`js`脚本，例如，通过包括`cq/cloudserviceconfigs/components/servicescomponents`或使用类似的机制。
 >
 >没有这些，任何服务（通用、Analytics、Target等）都将无法正常工作。
 
@@ -66,40 +66,40 @@ _gaq.push(['_trackPageview']);
 
 对于基本配置：
 
-1. 打开 **工具** 控制台。
-1. 从左窗格中，展开 **Cloud Service配置**.
-1. 双击 **Generic Analytics代码片段** 要打开页面，请执行以下操作：
+1. 打开&#x200B;**工具**&#x200B;控制台。
+1. 从左窗格中，展开&#x200B;**Cloud Service配置**。
+1. 双击&#x200B;**Generic Analytics Snippet**&#x200B;以打开页面：
 
-   ![Generic Analytics代码片段](assets/analytics_genericoverview.png)
+   ![通用Analytics代码片段](assets/analytics_genericoverview.png)
 
 1. 单击+以使用该对话框添加新配置。 请至少指定一个名称，例如Google Analytics：
 
    ![创建配置](assets/analytics_addconfig.png)
 
-1. 单击 **创建**，将会立即打开代码片段对话框 — 将相应的JavaScript代码片段粘贴到字段中：
+1. 单击&#x200B;**创建**，此时会立即打开代码片段对话框 — 将相应的JavaScript代码片段粘贴到字段中：
 
-   ![编辑组件](assets/analytics_snippet.png)
+   ![正在编辑组件](assets/analytics_snippet.png)
 
-1. 单击 **确定** 以保存。
+1. 单击&#x200B;**确定**&#x200B;进行保存。
 
 ## 在页面上使用新服务 {#using-your-new-service-on-pages}
 
 创建服务配置后，必须配置所需的页面才能使用它：
 
 1. 导航到页面。
-1. 打开 **页面属性** 从sidekick，然后 **Cloud Service** 选项卡。
-1. 单击 **添加服务**，然后选择所需的服务。 例如， **Generic Analytics代码片段**：
+1. 从sidekick中打开&#x200B;**页面属性**，然后打开&#x200B;**Cloud Service**&#x200B;选项卡。
+1. 单击&#x200B;**添加服务**，然后选择所需的服务。 例如，**通用Analytics代码片段**：
 
    ![添加云服务](assets/analytics_selectservice.png)
 
-1. 单击 **确定** 以保存。
-1. 您将返回 **Cloud Service** 选项卡。 此 **Generic Analytics代码片段** 现已与消息一起列出 `Configuration reference missing`. 使用下拉列表选择特定的服务实例。 例如，google-analytics：
+1. 单击&#x200B;**确定**&#x200B;进行保存。
+1. 您返回到&#x200B;**Cloud Service**&#x200B;选项卡。 **通用Analytics代码片段**&#x200B;现在随消息`Configuration reference missing`一起列出。 使用下拉列表选择特定的服务实例。 例如，google-analytics：
 
-   ![添加云服务配置](assets/analytics_selectspecificservice.png)
+   ![正在添加云服务配置](assets/analytics_selectspecificservice.png)
 
-1. 单击 **确定** 以保存。
+1. 单击&#x200B;**确定**&#x200B;进行保存。
 
-   现在，如果您查看页面的页面源，则可以看到相应代码片段。
+   现在，如果您查看该页面的页面Source，则可以查看相应代码片段。
 
    经过一段时间后，可以查看收集的统计数据。
 

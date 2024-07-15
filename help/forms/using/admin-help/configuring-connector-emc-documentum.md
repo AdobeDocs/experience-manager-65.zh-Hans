@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 为EMC Documentum配置连接器 {#configuring-connector-for-emc-documentum}
 
-Connector for EMC Documentum实现了AEM Forms与EMC Documentum之间的通信。 有关其他背景信息，请参阅中的“Connectors for ECM” [服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+Connector for EMC Documentum实现了AEM Forms与EMC Documentum之间的通信。 有关其他背景信息，请参阅[服务参考](https://www.adobe.com/go/learn_aemforms_services_63)中的“Connectors for ECM”。
 
 为EMC Documentum设置连接器涉及配置服务器连接和存储库凭据。
 
@@ -60,15 +60,15 @@ Connector for EMC Documentum实现了AEM Forms与EMC Documentum之间的通信�
 
 您可以配置要与Documentum一起使用的存储库服务提供商。 存储库服务调用已委派给您配置的提供程序。 以下选项可供选择：
 
-**当前存储库服务提供程序名称：** 当前存储库服务提供程序的名称
+**当前存储库服务提供程序名称：**&#x200B;当前存储库服务提供程序的名称
 
-**ECM Documentum存储库提供程序：** 使Documentum存储库提供程序成为存储库的提供程序。 此选项已弃用
+**ECM Documentum存储库提供程序：**&#x200B;使Documentum存储库提供程序成为存储库的提供程序。 此选项已弃用
 
-**存储库提供程序：** 使本地存储库提供程序成为存储库的提供程序
+**存储库提供程序：**&#x200B;使本地存储库提供程序成为存储库的提供程序
 
 >[!NOTE]
 >
->要选择除列出的系统信息库服务提供程序之外的其他系统信息库服务提供程序，请在“应用程序和服务”>“服务管理”中配置RepositoryService。 <!-- Fix broken link (See Managing Services) -->.
+>要选择除列出的系统信息库服务提供程序之外的其他系统信息库服务提供程序，请在“应用程序和服务”>“服务管理”中配置RepositoryService。<!-- Fix broken link (See Managing Services) -->。
 
 1. 在管理控制台中，单击“服务”>“EMC Documentum连接器”>“配置设置”。
 1. 在“资料库服务提供程序信息”区域中，选择替代资料库服务提供程序。
@@ -102,9 +102,9 @@ Documentum凭据信息在AEM表单系统上下文中使用。 存储库凭据特
 
 如果Content Repository Connector for EMC Documentum服务和/或Repository Service for EMC Documentum正在运行，则在将凭据信息存储在数据库中之前，会针对指定的存储库进行验证。 如果凭据无效或存在，则会显示错误消息。
 
-## 启用共享工作区任务队列的请求 {#enable-the-request-for-sharing-of-workspace-task-queues}
+## 启用共享Workspace任务队列的请求 {#enable-the-request-for-sharing-of-workspace-task-queues}
 
-需要执行一些手动步骤，以确保Workspace中的“请求共享任务队列”功能与Connector for EMC Documentum一起正常工作。
+需要执行一些手动步骤，以确保Workspace中的“请求共享任务队列”功能能够与Connector for EMC Documentum正常配合使用。
 
 1. 在部署AEM Forms并安装Workbench后，登录到Workbench并打开“资源”视图。 您将确定QueueSharing.swf文件在此视图中的位置。
 1. 将QueueSharing.swf文件从“资源视图”拖到Windows桌面或等效位置，具体取决于您的操作系统。

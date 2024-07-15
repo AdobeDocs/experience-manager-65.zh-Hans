@@ -19,7 +19,7 @@ ht-degree: 11%
 # Adobe Experience Manager 6.5 Communities指南 {#communities}
 
 + [Communities 指南](home.md)
-+ AEM Communities简介 {#introduction}
++ AEM Communities简介{#introduction}
    + [社区站点](administer-landing.md)
    + [AEM Communities概述](overview.md)
    + [AEM Communities快速入门](getting-started.md)
@@ -27,7 +27,7 @@ ht-degree: 11%
    + [创作新社区站点](create-site.md)
    + [体验已发布的站点](published-site.md)
    + [创作嵌套组](nested-groups.md)
-+ 部署 {#deploy}
++ 正在部署{#deploy}
    + [部署社区](deploy-communities.md)
    + [升级到AEM 6.5 Communities](upgrade.md)
    + [推荐的社区拓扑](topologies.md)
@@ -35,7 +35,7 @@ ht-degree: 11%
 + 管理 {#administer}
    + [AEM Communities中的用户和UGC管理服务](user-ugc-management-service.md)
    + [社区控制台](consoles.md)
-   + [用于社区功能的Analytics配置](analytics.md)
+   + 针对社区功能的[Analytics配置](analytics.md)
    + [配置消息传送](messaging.md)
    + [审核社区内容](moderate-ugc.md)
    + [配置电子邮件](email.md)
@@ -65,7 +65,7 @@ ht-degree: 11%
    + [DSRP — 关系数据库存储资源提供程序](dsrp.md)
    + [用于DSRP的MySQL配置](dsrp-mysql.md)
    + [JSRP - JCR存储资源提供程序](jsrp.md)
-   + [SRP的Solr配置](solr.md)
+   + SRP的[Solr配置](solr.md)
    + [标记用户生成的内容](tag-ugc.md)
    + [翻译用户生成的内容](translate-ugc.md)
    + [Communities用户同步](sync.md)
@@ -83,7 +83,7 @@ ht-degree: 11%
    + [SCF Handlebars助手](handlebars-helpers.md)
    + [存储资源提供程序概述](srp.md)
    + [社区站点要点](sites-for-developers.md)
-   + [Activity Stream Essentials](essentials-activities.md)
+   + [活动流要点](essentials-activities.md)
    + [博客要点](blog-developer-basics.md)
    + [日历要点](calendar-basics-for-developers.md)
    + [适用于社区组件的Clientlibs](clientlibs.md)

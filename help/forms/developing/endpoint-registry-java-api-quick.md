@@ -1,6 +1,6 @@
 ---
-title: 端点注册表Java&trade； API QuickStart(SOAP)
-description: 了解如何使用Java&trade； API添加EJB、SOAP、Watched Folder、Email端点和远程端点以及编辑、删除和检索端点。
+title: 端点注册表Java&amp；trade；API QuickStart(SOAP)
+description: 了解如何使用Java&amp；trade；API添加EJB、SOAP、Watched Folder、Email端点和远程端点以及编辑、删除和检索端点。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -42,7 +42,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 >[!NOTE]
 >
->如果使用UNIX®等其他操作系统，则将特定于Windows的路径替换为适用操作系统支持的路径，则“使用AEM进行编程”表单中的快速入门将基于Forms。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>如果使用UNIX®等其他操作系统，则将特定于Windows的路径替换为适用操作系统支持的路径，则“使用AEM进行编程”表单中的快速入门将基于Forms。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速启动：使用Java™ API添加EJB端点 {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-以下Java™代码示例将EJB端点添加到名为的服务 *MyApplication/EncryptDocument*. (请参阅 [添加EJB端点](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
+以下Java™代码示例将EJB端点添加到名为&#x200B;*MyApplication/EncryptDocument*&#x200B;的服务。 （请参阅[添加EJB端点](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints)。）
 
 ```java
  /*
@@ -149,7 +149,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门：使用Java™ API添加SOAP端点 {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-以下Java™代码示例将SOAP端点添加到名为的服务 *MyApplication/EncryptDocument*. (请参阅 [添加SOAP端点](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
+以下Java™代码示例将SOAP端点添加到名为&#x200B;*MyApplication/EncryptDocument*&#x200B;的服务。 (请参阅[添加SOAP端点](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints)。)
 
 ```java
  /*
@@ -249,11 +249,11 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速启动：使用Java™ API添加观察文件夹端点 {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-以下Java™代码示例将Watched文件夹端点添加到名为的服务 *MyApplication/EncryptDocument*. (请参阅 [添加观察文件夹端点](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
+以下Java™代码示例将Watched Folder端点添加到名为&#x200B;*MyApplication/EncryptDocument*&#x200B;的服务。 （请参阅[添加观察文件夹端点](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints)。）
 
 >[!NOTE]
 >
->在项目中包括WatchedFolderEndpointConfigConstants.java文件，以便编译和运行以下快速入门。 (请参阅 [观察文件夹配置值常量文件](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>在项目中包括WatchedFolderEndpointConfigConstants.java文件，以便编译和运行以下快速入门。 （请参阅[观察文件夹配置值的常量文件](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file)。）
 
 ```java
  /*
@@ -384,11 +384,11 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门：使用Java™ API添加电子邮件端点 {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-以下Java™代码示例将电子邮件端点添加到名为的服务 *MyApplication/EncryptDocumen* t.(请参阅 [添加电子邮件端点](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
+以下Java™代码示例将电子邮件端点添加到名为&#x200B;*MyApplication/EncryptDocumen* t的服务。（请参阅[添加电子邮件端点](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints)。）
 
 >[!NOTE]
 >
->在项目中包括EmailEndpointConfigConstants.java文件，以便编译和运行以下快速入门。 (请参阅 [电子邮件配置值常量文件](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>在项目中包括EmailEndpointConfigConstants.java文件，以便编译和运行以下快速入门。 （请参阅[电子邮件配置值的常量文件](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file)。）
 
 ```java
  /*
@@ -527,7 +527,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速启动：使用Java™ API添加远程端点 {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-以下Java™代码示例将一个远程端点添加到名为的服务 *MyApplication/EncryptDocument*. (请参阅 [添加远程端点](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
+以下Java™代码示例将远程终结点添加到名为&#x200B;*MyApplication/EncryptDocument*&#x200B;的服务。 （请参阅[添加远程端点](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints)。）
 
 ```java
  /*
@@ -632,7 +632,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速启动：使用Java™ API添加TaskManager端点 {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-以下Java™代码示例将TaskManager端点添加到名为的服务 *MyApplication/EncryptDocument*. 请注意，类别名称为 *EncryptProcess*. (请参阅 [添加TaskManager端点](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
+以下Java™代码示例将TaskManager端点添加到名为&#x200B;*MyApplication/EncryptDocument*&#x200B;的服务。 请注意，类别的名称为&#x200B;*EncryptProcess*。 （请参阅[添加TaskManager端点](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints)。）
 
 ```java
  /*
@@ -741,7 +741,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速启动：使用Java™ API修改端点 {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-以下Java™代码示例修改了Watched文件夹端点。 终结点用于 *MyApplication/EncryptDocument* 进程。 观察文件夹已更改为 `C:\NewWatchedFolder`. (请参阅 [修改端点](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
+以下Java™代码示例修改了Watched文件夹端点。 终结点用于&#x200B;*MyApplication/EncryptDocument*&#x200B;进程。 观察文件夹已更改为`C:\NewWatchedFolder`。 （请参阅[修改端点](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints)。）
 
 ```java
  /*
@@ -891,7 +891,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速启动：使用Java™ API删除端点 {#quickstart-removing-an-endpoint-using-the-java-api}
 
-以下Java™代码从名为的服务中删除EJB端点 *MyApplication/EncryptDocument*. (请参阅 [删除端点](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
+以下Java™代码从名为&#x200B;*MyApplication/EncryptDocument*&#x200B;的服务中删除EJB端点。 （请参阅[删除端点](/help/forms/developing/programmatically-endpoints.md#removing-endpoints)。）
 
 ```java
  /*
@@ -1010,7 +1010,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速启动：使用Java™ API检索端点连接器信息 {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-以下Java™代码可检索有关Watched文件夹端点的信息。 检索并显示有关每个配置值的信息。 此代码列表指定每个配置值是必需值还是可选值。 此外，还会显示每个配置值的名称和值。 (请参阅 [正在检索端点连接器信息](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
+以下Java™代码可检索有关Watched文件夹端点的信息。 检索并显示有关每个配置值的信息。 此代码列表指定每个配置值是必需值还是可选值。 此外，还会显示每个配置值的名称和值。 （请参阅[检索终结点连接器信息](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)。）
 
 ```java
  /*

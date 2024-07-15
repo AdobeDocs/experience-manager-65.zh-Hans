@@ -21,17 +21,17 @@ ht-degree: 32%
 
 Adobe Experience Manager (AEM) 提供了配置帐户和创作环境的某些方面的功能。
 
-使用 [帐户设置](#account-settings) 和 [用户首选项](#user-preferences) 可以定义以下选项和首选项：
+使用[帐户设置](#account-settings)和[用户首选项](#user-preferences)，可以定义以下选项和首选项：
 
-* **编辑工具栏**
-选择是否要具有全局编辑工具栏。 此工具栏显示在浏览器窗口的顶部，可以为您提供 **复制**， **剪切**， **粘贴**， **删除** 用于与该页面上的段落组件一起使用的按钮：
+* **正在编辑工具栏**
+选择是否要具有全局编辑工具栏。 此工具栏显示在浏览器窗口的顶部，为您提供了**复制**、**剪切**、**粘贴**、**删除**&#x200B;按钮，以便与该页面上的段落组件一起使用：
 
    * 需要时显示（默认）
    * 始终显示
    * 保持隐藏
 
 * **模拟为**
-的功能 [模拟为](/help/sites-administering/security.md#impersonating-another-user) 允许用户代表其他用户工作。
+通过[模拟为](/help/sites-administering/security.md#impersonating-another-user)的功能，用户可以代表其他用户工作。
 
 * **语言**
 用于创作环境UI的语言。 从可用列表中选择所需语言。
@@ -39,8 +39,10 @@ Adobe Experience Manager (AEM) 提供了配置帐户和创作环境的某些方�
 * **窗口管理**
 选择：
 
-   * 将在新窗口中打开多个Windows（默认）页面。
-   * 单个窗口页面在当前窗口中打开。
+   * 多窗口（默认）
+页面将在新窗口中打开。
+   * 单一窗口
+页面将在当前窗口中打开。
 
 ## 帐户设置 {#account-settings}
 
@@ -55,7 +57,7 @@ Adobe Experience Manager (AEM) 提供了配置帐户和创作环境的某些方�
 
 ### 用户首选项 {#user-preferences}
 
-每个用户都可以为自己设置某些属性。 该功能可从 **偏好设置** 对话框的图标。
+每个用户都可以为自己设置某些属性。 这可以从控制台右上角的&#x200B;**首选项**&#x200B;对话框中获得。
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 

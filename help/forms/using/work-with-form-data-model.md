@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您必须同时是这两个角色的成员 **fdm-author** 和 **forms-user** 组才能创建和使用表单数据模型。 请联系您的AEM管理员以成为组的成员。
+>您必须是&#x200B;**fdm-author**&#x200B;和&#x200B;**forms-user**&#x200B;组的成员才能创建和使用表单数据模型。 请联系您的AEM管理员以成为组的成员。
 
 ## 添加数据模型对象和服务 {#add-data-model-objects-and-services}
 
@@ -46,9 +46,9 @@ ht-degree: 0%
 
 要添加数据模型对象和服务，请执行以下操作：
 
-1. 登录AEM创作实例，导航至 **[!UICONTROL Forms >数据集成]**，并打开要在其中添加数据模型对象的表单数据模型。
+1. 登录AEM创作实例，导航到&#x200B;**[!UICONTROL Forms >数据集成]**，然后打开要在其中添加数据模型对象的表单数据模型。
 1. 在数据源窗格中，展开数据源以查看可用的数据模型对象和服务。
-1. 选择要添加到表单数据模型的数据模型对象和服务，然后选择 **[!UICONTROL 添加选定项]**.
+1. 选择要添加到表单数据模型的数据模型对象和服务，然后选择&#x200B;**[!UICONTROL 添加选定项]**。
 
    ![选定对象](assets/selected-objects.png)
 
@@ -60,7 +60,7 @@ ht-degree: 0%
 
    “模型”选项卡以图形形式显示添加到表单数据模型的所有数据模型对象及其属性。 每个数据模型对象在表单数据模型中都由一个框表示。
 
-   ![model-tab](assets/model-tab.png)
+   ![模型选项卡](assets/model-tab.png)
 
    模型选项卡显示添加的数据模型对象
 
@@ -70,19 +70,19 @@ ht-degree: 0%
 
    “服务”选项卡列出了已添加的服务。
 
-   ![“服务”选项卡](assets/services-tab.png)
+   ![services-tab](assets/services-tab.png)
 
    “服务”选项卡显示数据模型服务
 
    >[!NOTE]
    >
-   >除了数据模型对象和服务之外，OData服务元数据文档还包括定义两个数据模型对象之间的关联的导航属性。 有关更多信息，请参阅 [使用OData服务的导航属性](#work-with-navigation-properties-of-odata-services).
+   >除了数据模型对象和服务之外，OData服务元数据文档还包括定义两个数据模型对象之间的关联的导航属性。 有关详细信息，请参阅[使用OData服务的导航属性](#work-with-navigation-properties-of-odata-services)。
 
-1. 选择 **[!UICONTROL 保存]** 以保存表单模型对象。
+1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单模型对象。
 
    >[!NOTE]
    >
-   >您可以使用自适应表单规则调用在表单数据模型的服务选项卡中配置的服务。 配置的服务在规则编辑器的“调用服务”操作中可用。有关在自适应表单规则中使用这些服务的更多信息，请参阅调用服务和设置规则值，位置在 [规则编辑器](/help/forms/using/rule-editor.md).
+   >您可以使用自适应表单规则调用在表单数据模型的服务选项卡中配置的服务。 配置的服务在规则编辑器的“调用服务”操作中可用。有关在自适应表单规则中使用这些服务的详细信息，请参阅[规则编辑器](/help/forms/using/rule-editor.md)中的“调用服务和设置规则值”。
 
 ## 创建数据模型对象和子属性 {#create-data-model-objects-and-child-properties}
 
@@ -92,9 +92,9 @@ ht-degree: 0%
 
 要创建没有数据源的数据模型对象，请执行以下操作：
 
-1. 登录AEM创作实例，导航至 **[!UICONTROL Forms >数据集成]**，并打开要在其中创建数据模型对象或实体的表单数据模型。
-1. 选择 **[!UICONTROL 创建实体]**.
-1. 在创建数据模型对话框中，指定数据模型对象的名称，然后选择 **[!UICONTROL 添加]**. 数据模型对象将添加到表单数据模型。 新添加的数据模型对象未绑定到数据源，并且不具有下图中所示的任何属性。
+1. 登录AEM创作实例，导航到&#x200B;**[!UICONTROL Forms >数据集成]**，然后打开要在其中创建数据模型对象或实体的表单数据模型。
+1. 选择&#x200B;**[!UICONTROL 创建实体]**。
+1. 在“创建数据模型”对话框中，指定数据模型对象的名称，然后选择&#x200B;**[!UICONTROL 添加]**。 数据模型对象将添加到表单数据模型。 新添加的数据模型对象未绑定到数据源，并且不具有下图中所示的任何属性。
 
    ![new-entity](assets/new-entity.png)
 
@@ -106,29 +106,29 @@ ht-degree: 0%
 
 要创建子属性，请执行以下操作：
 
-1. 在表单数据模型中，选择一个数据模型对象，然后选择 **[!UICONTROL 创建子属性]**.
-1. 在 **[!UICONTROL 创建子属性]** 对话框，请在 **[!UICONTROL 名称]** 和 **[!UICONTROL 类型]** 字段。 您可以选择为属性指定标题和描述。
-1. 如果属性是计算属性，则启用计算属性。 计算属性的值是根据规则或表达式计算的。 有关更多信息，请参阅 [编辑属性](#edit-properties).
+1. 在表单数据模型中，选择一个数据模型对象，然后选择&#x200B;**[!UICONTROL 创建子属性]**。
+1. 在&#x200B;**[!UICONTROL 创建子属性]**&#x200B;对话框中，在&#x200B;**[!UICONTROL 名称]**&#x200B;和&#x200B;**[!UICONTROL 类型]**&#x200B;字段中分别指定属性的名称和数据类型。 您可以选择为属性指定标题和描述。
+1. 如果属性是计算属性，则启用计算属性。 计算属性的值是根据规则或表达式计算的。 有关详细信息，请参阅[编辑属性](#edit-properties)。
 1. 如果数据模型对象绑定到数据源，则添加的子属性将自动绑定到具有相同名称和数据类型的父数据模型对象的属性。
 
-   要手动将子属性与数据模型对象属性绑定，请选择 **[!UICONTROL 绑定引用]** 字段。 此 **[!UICONTROL 选择对象]** 对话框列出了父数据模型对象的所有属性。 选择要绑定的属性，然后选择勾号图标。 请注意，您只能选择与子资产具有相同数据类型的资产。
+   要手动绑定子属性与数据模型对象属性，请选择&#x200B;**[!UICONTROL 绑定引用]**&#x200B;字段旁边的浏览图标。 **[!UICONTROL 选择对象]**&#x200B;对话框列出了父数据模型对象的所有属性。 选择要绑定的属性，然后选择勾号图标。 请注意，您只能选择与子资产具有相同数据类型的资产。
 
-1. 选择 **[!UICONTROL 完成]** 保存子属性并选择 **[!UICONTROL 保存]** 以保存表单数据模型。 现在，子属性已添加到数据模型对象中。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存子属性，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型。 现在，子属性已添加到数据模型对象中。
 
-创建数据模型对象和属性后，即可继续基于表单数据模型创建自适应表单和交互式通信。 之后，当您具有可用数据源并配置好数据源时，可以将表单数据模型与数据源绑定。 绑定将在关联的自适应表单和交互式通信中自动更新。 有关使用表单数据模型创建自适应表单和交互式通信的更多信息，请参阅 [使用表单数据模型](/help/forms/using/using-form-data-model.md).
+创建数据模型对象和属性后，即可继续基于表单数据模型创建自适应表单和交互式通信。 之后，当您具有可用数据源并配置好数据源时，可以将表单数据模型与数据源绑定。 绑定将在关联的自适应表单和交互式通信中自动更新。 有关使用表单数据模型创建自适应表单和交互式通信的更多信息，请参阅[使用表单数据模型](/help/forms/using/using-form-data-model.md)。
 
 ### 绑定数据模型对象和属性 {#bind-data-model-objects-and-properties}
 
-当要与表单数据模型集成的数据源可用时，可将其添加到表单数据模型，如中所述 [更新数据源](/help/forms/using/create-form-data-models.md#update). 然后，执行以下操作以绑定未绑定的数据模型对象和属性：
+当要与表单数据模型集成的数据源可用时，可将其添加到表单数据模型，如[更新数据源](/help/forms/using/create-form-data-models.md#update)中所述。 然后，执行以下操作以绑定未绑定的数据模型对象和属性：
 
 1. 在表单数据模型中，选择要与数据源绑定的未绑定数据源。
 1. 选择&#x200B;**[!UICONTROL 编辑属性]**。
-1. 在 **[!UICONTROL 编辑属性]** 窗格，选择旁边的浏览图标 **[!UICONTROL 绑定]** 字段。 它会打开 **[!UICONTROL 选择对象]** 对话框，其中列出了在表单数据模型中添加的数据源。
+1. 在&#x200B;**[!UICONTROL 编辑属性]**&#x200B;窗格中，选择&#x200B;**[!UICONTROL 绑定]**&#x200B;字段旁边的浏览图标。 它会打开&#x200B;**[!UICONTROL 选择对象]**&#x200B;对话框，其中列出了表单数据模型中添加的数据源。
 
-   ![选择对象](assets/select-object.png)
+   ![select-object](assets/select-object.png)
 
 1. 展开数据源树并选择要绑定的数据模型对象，然后选择勾号图标。
-1. 选择 **[!UICONTROL 完成]** 以保存属性，然后选择 **[!UICONTROL 保存]** 以保存表单数据模型。 数据模型对象现在与数据源绑定。 请注意，数据模型对象不再标记为“未绑定”。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存属性，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型。 数据模型对象现在与数据源绑定。 请注意，数据模型对象不再标记为“未绑定”。
 
    ![绑定模型对象](assets/bound-model-object.png)
 
@@ -136,9 +136,9 @@ ht-degree: 0%
 
 要读取和写入数据模型对象的数据，请执行以下操作以配置读取和写入服务：
 
-1. 选中数据模型对象顶部的复选框以将其选中并选择 **[!UICONTROL 编辑属性]**.
+1. 选中数据模型对象顶部的复选框以将其选中，然后选择&#x200B;**[!UICONTROL 编辑属性]**。
 
-   ![edit-properties](assets/edit-properties.png)
+   ![编辑 — 属性](assets/edit-properties.png)
 
    编辑属性以配置数据模型对象的读写服务
 
@@ -153,9 +153,9 @@ ht-degree: 0%
    >除了数据模型对象和服务之外，OData服务元数据文档还包括定义两个数据模型对象之间的关联的导航属性。 将OData服务数据源添加到表单数据模型时，表单数据模型中有一个服务可用于数据模型对象中的所有导航属性。 您可以使用此服务读取相应数据模型对象的导航属性。
    >
    >
-   >有关使用该服务的详细信息，请参阅 [使用OData服务的导航属性](#work-with-navigation-properties-of-odata-services).
+   >有关使用该服务的详细信息，请参阅[使用OData服务的导航属性](#work-with-navigation-properties-of-odata-services)。
 
-1. 切换 **[!UICONTROL 顶级对象]** 指定数据模型对象是否为顶层模型对象。
+1. 切换&#x200B;**[!UICONTROL 顶层对象]**&#x200B;以指定数据模型对象是否为顶层模型对象。
 
    在基于表单数据模型的自适应表单的内容浏览器中，可以在数据模型对象选项卡中使用在表单数据模型中配置的数据模型对象。 当在两个数据模型对象之间添加关联时，与关联的数据模型对象嵌套在“数据模型对象”选项卡中从中关联的数据模型对象下。 如果嵌套数据模型是顶级对象，则它还将单独显示在“数据模型对象”选项卡中。 因此，您将看到其中的两个条目，一个在嵌套层次结构内，另一个在嵌套层次结构外，这可能会使表单作者感到困惑。 要使关联的数据模型对象仅显示在嵌套层次结构中，请禁用“顶级对象”属性。
 
@@ -165,8 +165,8 @@ ht-degree: 0%
 
    为员工数据源配置的读写服务
 
-1. 选择 ![aem_6_3_edit](assets/aem_6_3_edit.png) 将读取服务参数设置为 [将参数绑定到用户配置文件属性、请求属性或文本值](#bindargument) 和指定绑定值。
-1. 选择 **[!UICONTROL 完成]** 保存参数， **[!UICONTROL 完成]** 以保存属性，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
+1. 为读取服务参数选择![aem_6_3_edit](assets/aem_6_3_edit.png)以将参数绑定到用户配置文件属性、请求属性或文本值](#bindargument)，并指定绑定值。[
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存参数，选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存属性，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型。
 
 ### 绑定读取服务参数 {#bindargument}
 
@@ -174,35 +174,35 @@ ht-degree: 0%
 
 #### 文本值 {#literal-value}
 
-选择 **[!UICONTROL 文本]** 从 **[!UICONTROL 绑定到]** 下拉菜单，然后在 **[!UICONTROL 捆绑值]** 字段。 从数据源中检索与值关联的详细信息。 使用此选项可检索与静态值关联的详细信息。
+从&#x200B;**[!UICONTROL 绑定到]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 文本]**，然后在&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中输入值。 从数据源中检索与值关联的详细信息。 使用此选项可检索与静态值关联的详细信息。
 
-在此示例中，与 **4367655678**，作为的值 `mobilenum` 参数)进行检索。 如果传递手机号码参数的值，则关联的详细信息可以包括客户名称、客户地址和城市等属性。
+在此示例中，与&#x200B;**4367655678**&#x200B;关联的详细信息作为`mobilenum`参数的值从数据源中检索。 如果传递手机号码参数的值，则关联的详细信息可以包括客户名称、客户地址和城市等属性。
 
 ![文本值](assets/fdm_binding_literal_new.png)
 
 #### 用户配置文件属性 {#user-profile-attribute}
 
-选择 **[!UICONTROL 用户配置文件属性]** 从 **[!UICONTROL 绑定到]** 下拉菜单，然后在 **[!UICONTROL 捆绑值]** 字段。 根据属性名称，从数据源检索已登录AEM实例的用户详细信息。
+从&#x200B;**[!UICONTROL 绑定到]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 用户配置文件属性]**，然后在&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中输入属性名称。 根据属性名称，从数据源检索已登录AEM实例的用户详细信息。
 
-中指定的属性名称 **[!UICONTROL 捆绑值]** 字段必须包括完整的绑定路径，直到用户的属性名称为止。 打开以下URL以访问CRXDE上的用户详细信息：
+在&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中指定的属性名称必须包含完整的绑定路径，直到用户的属性名称为止。 打开以下URL以访问CRXDE上的用户详细信息：
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
 ![用户配置文件](assets/binding_crxde_user_profile_new.png)
 
-在此示例中，指定 `profile.empid` 在 **[!UICONTROL 捆绑值]** 字段 `grios` 用户。
+在此示例中，在`grios`用户的&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中指定`profile.empid`。
 
 ![编辑参数](assets/edit_argument_user_profile_new.png)
 
-此 `id` 参数采用 `empid` 用户配置文件的属性，并将其作为参数传递给读取服务。 它会从员工数据模型对象读取并返回关联属性的值， `empid` 与登录用户相关联。
+`id`参数接受用户配置文件的`empid`属性的值，并将其作为参数传递给读取服务。 它会从与登录用户关联的`empid`的员工数据模型对象中读取并返回关联属性的值。
 
 #### 请求属性 {#request-attribute}
 
 使用请求属性从数据源检索关联的属性。
 
-1. 选择 **[!UICONTROL 请求属性]** 从 **[!UICONTROL 绑定到]** 下拉菜单，然后在 **[!UICONTROL 捆绑值]** 字段。
+1. 从&#x200B;**[!UICONTROL 绑定到]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 请求属性]**，然后在&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中输入属性名称。
 
-1. 创建 [叠加](../../../help/sites-developing/overlays.md) 用于head.jsp。 要创建叠加，请打开CRX DE并复制 `https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp` 文件到 `https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+1. 为head.jsp创建一个[叠加](../../../help/sites-developing/overlays.md)。 要创建叠加，请打开CRX DE并将`https://<server-name>:<port number>/crx/de/index.jsp#/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`文件复制到`https://<server-name>:<port number>/crx/de/index.jsp#/apps/fd/af/components/page2/afStaticTemplatePage/head.jsp`
 
    >[!NOTE]
    >
@@ -211,7 +211,7 @@ ht-degree: 0%
    >* 如果您使用可编辑的模板，请在以下位置叠加aftemplatedpage.jsp：
    >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
-1. 设置 [!DNL paramMap] 请求属性的。 例如，将以下代码加入apps文件夹中的.jsp文件中：
+1. 为请求属性设置[!DNL paramMap]。 例如，将以下代码加入apps文件夹中的.jsp文件中：
 
    ```javascript
    <%Map paraMap = new HashMap();
@@ -230,11 +230,11 @@ ht-degree: 0%
 
 根据请求中指定的属性名称，从数据源检索详细信息。
 
-例如，将属性指定为 `petid=100` 在中，从数据源检索与属性值关联的属性。
+例如，在请求中将attribute指定为`petid=100`将检索与数据源中的属性值关联的属性。
 
 ## 添加关联 {#add-associations}
 
-通常，数据源中的数据模型对象之间会建立关联。 关联可以是一对一或一对多。 例如，可以有多个与员工关联的家属。 它称为一对多关联，由以下内容描述 `1:n` 在连接关联的数据模型对象的行上。 但是，如果关联为给定员工ID返回唯一的员工姓名，则称为一对一关联。
+通常，数据源中的数据模型对象之间会建立关联。 关联可以是一对一或一对多。 例如，可以有多个与员工关联的家属。 它称为一对多关联，由`1:n`在连接关联的数据模型对象的行上描述。 但是，如果关联为给定员工ID返回唯一的员工姓名，则称为一对一关联。
 
 当您将数据源中的关联数据模型对象添加到表单数据模型时，它们的关联将保留并以箭头线连接的方式显示。 您可以在表单数据模型中跨不同数据源的数据模型对象之间添加关联。
 
@@ -244,13 +244,13 @@ ht-degree: 0%
 
 要添加关联，请执行以下操作：
 
-1. 选中数据模型对象顶部的复选框以将其选中并选择 **[!UICONTROL 添加关联]**. 将打开“添加关联”对话框。
+1. 选中数据模型对象顶部的复选框以将其选中，然后选择&#x200B;**[!UICONTROL 添加关联]**。 将打开“添加关联”对话框。
 
    ![添加关联](assets/add-association.png)
 
    >[!NOTE]
    >
-   >除了数据模型对象和服务之外，OData服务元数据文档还包括定义两个数据模型对象之间的关联的导航属性。 在表单数据模型中添加关联时，可以使用这些导航属性。 有关更多信息，请参阅 [使用OData服务的导航属性](#work-with-navigation-properties-of-odata-services).
+   >除了数据模型对象和服务之外，OData服务元数据文档还包括定义两个数据模型对象之间的关联的导航属性。 在表单数据模型中添加关联时，可以使用这些导航属性。 有关详细信息，请参阅[使用OData服务的导航属性](#work-with-navigation-properties-of-odata-services)。
 
    将打开“添加关联”对话框。
 
@@ -265,30 +265,30 @@ ht-degree: 0%
    * 选择要关联的数据模型对象。
    * 选择读取服务以从选定的模型对象中读取数据。 此时将显示读取服务参数。 编辑以更改参数（如有必要），并将其绑定到要关联的数据模型对象的属性。
 
-   在以下示例中， Dependents数据模型对象的读取服务的默认参数为 `dependentid`.
+   在以下示例中， Dependents数据模型对象的读取服务的默认参数是`dependentid`。
 
    ![add-association-example](assets/add-association-example.png)
 
    依赖项读取服务的默认参数是依赖的
 
-   但是，参数必须是关联数据模型对象之间的公共属性，在本例中为 `Employeeid`. 因此， `Employeeid` 参数必须绑定到 `id` Employee数据模型对象的属性，用于从Dependents数据模型对象获取关联的依赖项详细信息。
+   但是，参数必须是关联数据模型对象（在此示例中为`Employeeid`）之间的公共属性。 因此，`Employeeid`参数必须绑定到Employee数据模型对象的`id`属性，才能从Dependents数据模型对象获取关联的依赖项详细信息。
 
    ![add-association-example-2](assets/add-association-example-2.png)
 
    已更新参数和绑定
 
-   选择 **[!UICONTROL 完成]** 以保存参数。
+   选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存参数。
 
-1. 选择 **[!UICONTROL 完成]** 保存关联，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存关联，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型。
 1. 根据需要重复这些步骤以创建更多关联。
 
 >[!NOTE]
 >
 >所添加的关联将显示在数据模型对象框中，其中包含指定的标题和连接关联的数据模型对象的线。
 >
->通过选中关联旁边的复选框并选择 **[!UICONTROL 编辑关联]**.
+>通过选中关联对应的复选框并选择&#x200B;**[!UICONTROL 编辑关联]**，可以编辑关联。
 
-![添加关联](assets/added-association.png)
+![已添加关联](assets/added-association.png)
 
 ## 编辑属性 {#properties}
 
@@ -297,9 +297,9 @@ ht-degree: 0%
 要编辑属性，请执行以下操作：
 
 1. 选中表单数据模型中数据模型对象、属性或服务旁边的复选框。
-1. 选择 **[!UICONTROL 编辑属性]**. 此 **[!UICONTROL 编辑属性]** 此时将打开选定模型对象、属性或服务的窗格。
+1. 选择&#x200B;**[!UICONTROL 编辑属性]**。 将打开选定模型对象、属性或服务的&#x200B;**[!UICONTROL 编辑属性]**&#x200B;窗格。
 
-   * **数据模型对象**：指定读取和写入服务以及编辑参数。
+   * **数据模型对象**：指定读取和写入服务并编辑参数。
    * **属性**：指定属性的类型、子类型和格式。 您还可以指定selected属性是否为数据模型对象的主键。
    * **服务**：指定服务的输入模型对象、输出类型和参数。 对于Get服务，您可以指定它是否应返回数组。
 
@@ -307,16 +307,16 @@ ht-degree: 0%
 
    获取服务的“编辑属性”对话框
 
-1. 选择 **[!UICONTROL 完成]** 以保存属性，然后 **[!UICONTROL 保存]** 以保存表单数据模型。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存属性，然后选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型。
 
 ### 创建计算属性 {#computed}
 
 计算属性是根据规则或表达式计算其值的属性。 使用规则，您可以将计算属性的值设置为文本字符串、数字、数学表达式的结果或表单数据模型中其他属性的值。
 
-例如，您可以创建一个计算属性 **全名** 其值是现有串连的结果 **名字** 和 **姓氏** 属性。 为此，请执行以下操作：
+例如，您可以创建一个计算属性&#x200B;**FullName**，其值是现有&#x200B;**FirstName**&#x200B;和&#x200B;**LastName**&#x200B;属性串联的结果。 为此，请执行以下操作：
 
-1. 创建名为的属性 `FullName` 数据类型为字符串的数据。
-1. 启用 **[!UICONTROL 已计算]** 并选择 **[!UICONTROL 完成]** 以创建资产。
+1. 创建其数据类型为字符串且名为`FullName`的属性。
+1. 启用&#x200B;**[!UICONTROL Computed]**&#x200B;并选择&#x200B;**[!UICONTROL Done]**&#x200B;以创建该属性。
 
    ![已计算](assets/computed.png)
 
@@ -324,24 +324,24 @@ ht-degree: 0%
 
    ![计算属性](assets/computed-prop.png)
 
-1. 选择FullName属性并选择 **[!UICONTROL 编辑规则]**. 此时将打开一个规则编辑器窗口。
-1. 在规则编辑器窗口中，选择 **[!UICONTROL 创建]**. A **[!UICONTROL 设置值]** 规则窗口将打开。
+1. 选择FullName属性并选择&#x200B;**[!UICONTROL 编辑规则]**。 此时将打开一个规则编辑器窗口。
+1. 在规则编辑器窗口中，选择&#x200B;**[!UICONTROL 创建]**。 将打开&#x200B;**[!UICONTROL 设置值]**&#x200B;规则窗口。
 
-   从选择选项下拉列表中，选择 **[!UICONTROL 数学表达式]**. 其他可用选项包括 **[!UICONTROL 表单数据模型对象]** 和 **[!UICONTROL 字符串]**.
+   从选择选项下拉列表中，选择&#x200B;**[!UICONTROL 数学表达式]**。 其他可用选项为&#x200B;**[!UICONTROL 表单数据模型对象]**&#x200B;和&#x200B;**[!UICONTROL 字符串]**。
 
-1. 在数学表达式中，选择 **[!UICONTROL 名字]** 和 **[!UICONTROL 姓氏]** 分别在第一和第二对象中。 选择 **[!UICONTROL 加]** 作为运算符。
+1. 在数学表达式中，在第一个和第二个对象中分别选择&#x200B;**[!UICONTROL FirstName]**&#x200B;和&#x200B;**[!UICONTROL LastName]**。 选择&#x200B;**[!UICONTROL 加]**&#x200B;作为运算符。
 
-   选择 **[!UICONTROL 完成]** 然后选择 **[!UICONTROL 关闭]** 以关闭规则编辑器窗口。 该规则与以下内容类似。
+   选择&#x200B;**[!UICONTROL 完成]**，然后选择&#x200B;**[!UICONTROL 关闭]**&#x200B;以关闭规则编辑器窗口。 该规则与以下内容类似。
 
    ![规则](assets/rule.png)
 
-1. 在表单数据模型上，选择 **[!UICONTROL 保存]**. 已配置计算属性。
+1. 在表单数据模型上，选择&#x200B;**[!UICONTROL 保存]**。 已配置计算属性。
 
 ## 使用OData服务的导航属性 {#work-with-navigation-properties-of-odata-services}
 
-在OData服务中，导航属性用于定义两个数据模型对象之间的关联。 这些属性是在实体类型或复杂类型上定义的。 例如，在以下从示例的元数据文件中提取 [旅行固定](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData示例服务，人员实体包含三个导航属性 — Friends、BestFriend和Trips。
+在OData服务中，导航属性用于定义两个数据模型对象之间的关联。 这些属性是在实体类型或复杂类型上定义的。 例如，在从示例[TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData示例服务的元数据文件中进行的以下提取中，人员实体包含三个导航属性 — Friends、BestFriend和Trips。
 
-有关导航属性的更多信息，请参阅 [OData文档](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536).
+有关导航属性的详细信息，请参阅[OData文档](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536)。
 
 ```xml
 <edmx:Edmx xmlns:edmx="https://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
@@ -369,25 +369,25 @@ ht-degree: 0%
 </EntityType>
 ```
 
-在表单数据模型中配置OData服务时，实体容器中的所有导航属性都可通过表单数据模型中的服务使用。 在此TripPin OData服务示例中， `Person` 可以使用一个实体容器来读取它 `GET LINK` 表单数据模型中的服务。
+在表单数据模型中配置OData服务时，实体容器中的所有导航属性都可通过表单数据模型中的服务使用。 在此TripPin OData服务示例中，`Person`实体容器中的三个导航属性可以使用表单数据模型中的一个`GET LINK`服务进行读取。
 
-下面重点介绍了 `GET LINK of Person /People` 表单数据模型中的服务，它是三个导航属性的组合服务。 `Person` TripPin OData服务的实体。
+下面突出显示表单数据模型中的`GET LINK of Person /People`服务，它是TripPin OData服务的`Person`实体中三个导航属性的组合服务。
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-添加 `GET LINK` 服务表单数据模型中的服务选项卡，您可以编辑属性以选择要在服务中使用的输出模型对象和导航属性。 例如，以下各项 `GET LINK of Person /People` 下例中的服务使用Trip作为输出模型对象，使用Trips作为导航属性。
+将`GET LINK`服务添加到表单数据模型的“服务”选项卡后，可以编辑属性以选择要在服务中使用的输出模型对象和导航属性。 例如，以下示例中的以下`GET LINK of Person /People`服务使用Trip作为输出模型对象，并将导航属性作为Trips。
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
 >[!NOTE]
 >
->中可用的值 **默认值** 字段 **NavigationPropertyName** 参数取决于 **返回数组？** 切换按钮。 启用后，它将显示收藏集类型的导航属性。
+>**NavigationPropertyName**&#x200B;参数的&#x200B;**默认值**&#x200B;字段中可用的值取决于&#x200B;**返回数组的状态？**&#x200B;切换按钮。 启用后，它将显示收藏集类型的导航属性。
 
-在此示例中，您还可以将输出模型对象选择为Person ，将导航属性参数选择为Friends或BestFriend (具体取决于是否 **返回数组？** 启用或禁用)。
+在此示例中，您还可以选择输出模型对象作为Person，选择导航属性参数作为Friends或BestFriend (具体取决于&#x200B;**Return数组是？**&#x200B;已启用或已禁用)。
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-同样，您也可以选择 `GET LINK` 在表单数据模型中添加关联时，服务和配置其导航属性。 但是，要能够选择导航属性，请确保 **[!UICONTROL 绑定到字段]** 设置为 **文本**.
+同样，在表单数据模型中添加关联时，您可以选择一个`GET LINK`服务并配置其导航属性。 但是，若要能够选择导航属性，请确保&#x200B;**[!UICONTROL 绑定到字段]**&#x200B;设置为&#x200B;**文本**。
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
@@ -397,19 +397,19 @@ ht-degree: 0%
 
 执行以下操作可生成和编辑示例数据：
 
-1. 打开表单数据模型并选择 **[!UICONTROL 编辑示例数据]**. 它在“编辑示例数据”窗口中生成并显示示例数据。
+1. 打开表单数据模型并选择&#x200B;**[!UICONTROL 编辑示例数据]**。 它在“编辑示例数据”窗口中生成并显示示例数据。
 
    ![生成示例数据](assets/form_data_model_generate_sample_data_new.png)
 
-1. 在 **[!UICONTROL 编辑示例数据]** 窗口，根据需要编辑数据，然后选择 **[!UICONTROL 保存]**.
+1. 在&#x200B;**[!UICONTROL 编辑示例数据]**&#x200B;窗口中，根据需要编辑数据，然后选择&#x200B;**[!UICONTROL 保存]**。
 
-接下来，您可以使用示例数据预填充和测试基于表单数据模型的交互式通信。 有关更多信息，请参阅 [使用表单数据模型](/help/forms/using/using-form-data-model.md).
+接下来，您可以使用示例数据预填充和测试基于表单数据模型的交互式通信。 有关详细信息，请参阅[使用表单数据模型](/help/forms/using/using-form-data-model.md)。
 
 ## 测试数据模型对象和服务 {#test-data-model-objects-and-services}
 
 您的表单数据模型已配置，但在投入使用之前，您可能需要测试配置的数据模型对象和服务是否按预期工作。 要测试数据模型对象和服务，请执行以下操作：
 
-1. 选择表单数据模型中的数据模型对象或服务，然后选择 **[!UICONTROL 测试模型对象]** 或 **[!UICONTROL 测试服务]**、ID名称和ID名称等。
+1. 选择表单数据模型中的数据模型对象或服务，然后分别选择&#x200B;**[!UICONTROL 测试模型对象]**&#x200B;或&#x200B;**[!UICONTROL 测试服务]**。
 
    将打开“测试表单数据模型”窗口。
 
@@ -417,7 +417,7 @@ ht-degree: 0%
 
 1. 在“测试表单数据模型”窗口中，从输入窗格中选择要测试的数据模型对象或服务。
 
-1. 在测试代码中指定一个参数值，然后选择 **[!UICONTROL 测试]**. 成功的测试会在“输出”窗格中返回输出。
+1. 在测试代码中指定一个参数值，然后选择&#x200B;**[!UICONTROL 测试]**。 成功的测试会在“输出”窗格中返回输出。
 
    ![测试结果](assets/test_results_form_data_model_new.png)
 
@@ -425,17 +425,17 @@ ht-degree: 0%
 
 ## 自动验证输入数据 {#automated-validation-of-input-data}
 
-表单数据模型验证在调用DermisBridge API时作为输入接收的数据（基于表单数据模型中提供的验证条件）。 验证基于 `ValidationOptions` 在用于调用API的查询对象中设置标志。
+表单数据模型验证在调用DermisBridge API时作为输入接收的数据（基于表单数据模型中提供的验证条件）。 验证基于在用于调用API的查询对象中设置的`ValidationOptions`标志。
 
 可以将标志设置为以下任意值：
 
-* **完整**：FDM基于所有约束执行验证
-* **关闭**：无验证
-* **基本**：FDM根据“必需”和“可空”约束执行验证
+* **FULL**： FDM基于所有约束执行验证
+* **关**：无验证
+* **BASIC**： FDM根据“必需”和“可空”约束执行验证
 
-如果没有为 `ValidationOptions`标志， **基本** 对输入数据进行验证。
+如果没有为`ValidationOptions`标志设置值，则对输入数据执行&#x200B;**BASIC**&#x200B;验证。
 
-以下是将验证标志设置为 **完整**：
+以下是将验证标志设置为&#x200B;**FULL**&#x200B;的示例：
 
 ```java
 operationOptions.setValidationOptions(ValidationOptions.FULL);
@@ -444,7 +444,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 >[!NOTE]
 >
 >为输入数据中的属性提供的值必须与为元数据文档中的属性定义的数据类型匹配。\
->如果值与为属性定义的数据类型不匹配，则DermisBridge API将显示异常，而不管的 `ValidationOptions` 标志。 如果日志级别设置为Debug ，则会将错误记录到 **error.log** 文件。
+>如果值与为属性定义的数据类型不匹配，则DermisBridge API显示异常，而不考虑`ValidationOptions`标志的值。 如果将日志级别设置为“调试”，则会将错误记录到&#x200B;**error.log**&#x200B;文件中。
 
 表单数据模型基于数据类型约束列表验证输入数据。 输入数据的约束列表可能会因数据源而异。
 
@@ -547,7 +547,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    ]
 ```
 
-如果输入数据不符合验证标准，则显示例外。 如果日志级别设置为 **调试**，则会将错误记录到 **error.log** 文件。 例如，
+如果输入数据不符合验证标准，则显示例外。 如果日志级别设置为&#x200B;**Debug**，则会在&#x200B;**error.log**&#x200B;文件中记录错误。 例如，
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}
@@ -555,4 +555,4 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
 
 ## 后续步骤 {#next-steps}
 
-您有一个工作表单数据模型，现在可用于自适应表单和交互式通信工作流。 有关更多信息，请参阅 [使用表单数据模型](/help/forms/using/using-form-data-model.md).
+您有一个工作表单数据模型，现在可用于自适应表单和交互式通信工作流。 有关详细信息，请参阅[使用表单数据模型](/help/forms/using/using-form-data-model.md)。

@@ -20,4 +20,4 @@ ht-degree: 0%
 
 提供的对话框转换工具旨在帮助扩展仅具有为经典UI（基于ExtJS）或基于Granite UI和Coral 2的对话框定义的现有组件。 该工具使用原始对话框根据Granite UI和Coral 3创建为标准UI设计的重复对话框。
 
-对话框转换工具是 [Adobe现代化工具套件](modernization-tools.md).
+对话框转换工具是[Adobe现代化工具套件](modernization-tools.md)的一部分。

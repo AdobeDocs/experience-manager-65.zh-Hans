@@ -31,7 +31,7 @@ ht-degree: 2%
 
 ## 适用于客户端的Essentials {#essentials-for-client-side}
 
-博客功能由两个主要组件组成，可以通过添加 [博客功能](/help/communities/functions.md#blog-function) 或者以创作编辑模式将组件添加到页面。
+博客功能由两个主要组件组成，这些组件可通过添加[博客功能](/help/communities/functions.md#blog-function)或将这些组件添加到处于作者编辑模式的页面而使用。
 
 ### 博客 {#blog}
 
@@ -59,7 +59,7 @@ ht-degree: 2%
   </tr>
   <tr>
    <td><strong> 属性</strong></td>
-   <td>请参阅 <a href="/help/communities/blog-feature.md">博客功能</a></td>
+   <td>查看<a href="/help/communities/blog-feature.md">博客功能</a></td>
   </tr>
  </tbody>
 </table>
@@ -72,7 +72,7 @@ ht-degree: 2%
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **模板** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
-| **属性** | 请参阅 [博客功能](/help/communities/blog-feature.md) |
+| **属性** | 查看[博客功能](/help/communities/blog-feature.md) |
 
 * [客户端自定义](/help/communities/client-customize.md)
 
@@ -86,29 +86,29 @@ ht-degree: 2%
 
 ### 博客功能 {#blog-function}
 
-社区站点结构包括 [博客功能](/help/communities/functions.md#blog-function) 具有 `Blog` 和 `Blog Sidebar` 组件已配置。 “博客”功能支持识别 [特权成员用户组](/help/communities/users.md#privileged-members-group).
+包含[博客功能](/help/communities/functions.md#blog-function)的社区站点结构配置了`Blog`和`Blog Sidebar`组件。 博客功能支持识别[特权成员用户组](/help/communities/users.md#privileged-members-group)。
 
 ### 访问博客条目(UGC) {#accessing-blog-entries-ugc}
 
 UGC应使用标准审核方法之一进行审核。
-请参阅 [审核用户生成的内容](/help/communities/moderate-ugc.md).
+请参阅[审核用户生成的内容](/help/communities/moderate-ugc.md)。
 
-自AEM 6.1 Communities起，使用 [公用存储](/help/communities/working-with-srp.md) for UGC包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）是什么。
+截至AEM 6.1 Communities，使用用于UGC的[公用存储](/help/communities/working-with-srp.md)包括对UGC的编程访问，而不管选择的存储选项（如ASRP、MSRP或JSRP）如何。
 
-**UGC在存储库中的位置和格式可能会发生更改，恕不发出警告**.
+**存储库中UGC的位置和格式可能会发生更改，而不会出现警告**。
 
 请参阅：
 
-* [存储资源提供程序概述](/help/communities/srp.md)  — 简介和存储库使用情况概述。
-* [SRP和UGC Essentials](/help/communities/srp-and-ugc.md) - SRP实用程序方法和示例。
-* [使用SRP访问UGC](/help/communities/accessing-ugc-with-srp.md)  — 编码准则。
-* [SocialUtils重构](/help/communities/socialutils.md)  — 将已弃用的实用程序方法映射到当前SRP实用程序方法。
+* [存储资源提供程序概述](/help/communities/srp.md) — 简介和存储库使用情况概述。
+* [SRP和UGC Essentials](/help/communities/srp-and-ugc.md) - SRP实用工具方法和示例。
+* [使用SRP访问UGC](/help/communities/accessing-ugc-with-srp.md) — 编码准则。
+* [SocialUtils重构](/help/communities/socialutils.md) — 将已弃用的实用工具方法映射到当前的SRP实用工具方法。
 
 ## 主要发布者 {#primary-publisher}
 
 如果部署是发布场，则必须确定轮询计划发布的文章的主要发布者。
 
-请参阅 [主要发布者](/help/communities/deploy-communities.md#primary-publisher) 以了解更多详细信息。
+有关更多详细信息，请参阅[主发布者](/help/communities/deploy-communities.md#primary-publisher)。
 
 ## 允许富媒体 {#allowing-rich-media}
 
@@ -118,6 +118,6 @@ AEM平台会阻止其他网站的链接，以防止XSS攻击，如中所述
 
 从AEM 6.2开始，以前需要手动进行的修改包含在默认的AntiSamy配置文件中。
 
-通过选择 `Embed Media from External Sites` 图标：
+通过选择`Embed Media from External Sites`图标，可在博客文章中嵌入富媒体：
 
 ![媒体](assets/media-icon.png)

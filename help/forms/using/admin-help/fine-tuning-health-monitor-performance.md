@@ -65,16 +65,16 @@ ht-degree: 1%
 ## 将Java选项添加到JBoss {#add-java-options-to-jboss}
 
 1. 停止JBoss应用程序服务器。
-1. 打开 *[appserver根]*/bin/run.bat (Windows)或run.sh （Linux或UNIX），并根据需要添加任何Java选项。
+1. 在编辑器中打开&#x200B;*[appserver root]*/bin/run.bat (Windows)或run.sh （Linux或UNIX），并根据需要添加任何Java选项。
 1. 重新启动服务器。
 
 ## 将Java选项添加到WebLogic {#add-java-options-to-weblogic}
 
-1. 键入https://启动WebLogic管理控制台[主机名]： Web浏览器URL行中的“port”/console。
+1. 在Web浏览器的URL行中键入https://[主机名]：&#39;port&#39;/console以启动WebLogic管理控制台。
 1. 键入为WebLogic Server域创建的用户名和密码，然后单击“更改中心”下的“日志”，然后单击“锁定和编辑”。
 1. 在“域结构”下，单击“环境”>“服务器”，然后在右窗格中单击受控服务器名称。
 1. 在下一个屏幕上，单击Configuration选项卡> Server Start选项卡。
-1. 在“参数”框中，将所需的参数附加到当前内容的末尾。 例如，添加 —  `Dadobe.healthmonitor.enabled=false` 禁用运行状况监视器。
+1. 在“参数”框中，将所需的参数附加到当前内容的末尾。 例如，添加 — `Dadobe.healthmonitor.enabled=false`将禁用运行状况监视器。
 1. 单击保存，然后单击激活更改。
 1. 重新启动WebLogic托管服务器。
 

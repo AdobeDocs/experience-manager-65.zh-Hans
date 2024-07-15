@@ -28,7 +28,7 @@ ht-degree: 49%
 
 要运行该过程，请执行以下步骤：
 
-1. [配置OSGi设置](/help/sites-deploying/configuring-osgi.md) 对于 **内容片段迁移作业配置**：
+1. [为&#x200B;**内容片段迁移作业配置**&#x200B;配置OSGi设置](/help/sites-deploying/configuring-osgi.md)：
 
    ![OSGi内容片段迁移作业配置](assets/cfm-graphql-update-01.png "OSGi内容片段迁移作业配置")
 
@@ -37,13 +37,13 @@ ht-degree: 49%
    * **ContentFragmentMigration：已启用** ： `1`
    * **ContentFragmentMigration：强制** ： `1`
 
-1. **保存** 规范 — 更新过程启动。
+1. **保存**&#x200B;规范 — 更新过程开始。
 
-1. 请等待该过程完成。 当属性为 `cfGlobalVersion` 显示于 `/content/dam` 并且设置为 `1`.
+1. 请等待该过程完成。 当属性`cfGlobalVersion`出现在`/content/dam`上并且设置为`1`时，过程已完成。
 
 1. 返回到OSGi配置以取消激活该过程。
 
-   在的对话框中 **内容片段迁移作业配置** 按以下方式设置这两个参数：
+   在&#x200B;**内容片段迁移作业配置**&#x200B;的对话框中，按以下方式设置这两个参数：
 
    * **ContentFragmentMigration：已启用** ： `0`
    * **ContentFragmentMigration：强制** ： `0`

@@ -32,13 +32,13 @@ ht-degree: 6%
 * YouTube — 视频共享
 <!-- * Silverpop Engage - marketing automation, email, mobile, and social NO LONGER EXISTS; ITS REPLACEMENT IS UNKNOWN -->
 
-此外，您还可以将AEM与 [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+此外，您可以将AEM与[Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)集成。
 
 ## 与Salesforce集成 {#integrating-with-salesforce}
 
 Salesforce.com 作为一家企业云计算公司，引领着朝向社交企业转变的潮流。
 
-有关集成AEM站点和Salesforce的信息，请参阅 [与Salesforce集成](/help/sites-administering/salesforce.md).
+有关集成AEM站点和Salesforce的信息，请参阅[与Salesforce集成](/help/sites-administering/salesforce.md)。
 
 <!-- THE INFORMATION BELOW APPEARS OBSOLETE; first URL is a 404. I could not find a suitable replacement for it.
 ## Integrating with Silverpop Engage {#integrating-with-silverpop-engage}
@@ -55,14 +55,14 @@ For information about integrating your AEM site and ExactTarget, see [Integratin
 
 通过使用ExactTarget的电子邮件营销解决方案，各种规模的组织可以设计和提供具有较高针对性、任务关键型且完全集成的电子邮件营销活动。
 
-有关集成AEM站点和ExactTarget的信息，请参阅 [配置ExactTarget](/help/sites-administering/exacttarget.md).
+有关集成AEM站点和ExactTarget的信息，请参阅[配置ExactTarget](/help/sites-administering/exacttarget.md)。
 
 ## 与Facebook和Twitter集成 {#integrating-with-facebook-and-twitter}
 
 facebook和Twitter是流行的社交网络服务。 AEM与Facebook和Twitter的集成使组织能够在所拥有的数字资产上提供Facebook或Twitter登录选项，然后根据用户档案信息个性化用户体验。 营销人员还可以将用户档案信息与其他来源（如客户关系管理系统或网站用户档案）的数据相结合，以创建客户的统一视图。
 
-请参阅 [社交登录](/help/communities/social-login.md) 以了解更多信息。
+有关详细信息，请参阅[社交登录](/help/communities/social-login.md)。
 
 ## 与其他提供商集成 {#integrating-with-other-providers}
 
-AEM允许您使用连接到其他外部提供程序 [Generic Analytics代码片段。](/help/sites-administering/external-providers.md)
+AEM允许您使用[通用Analytics代码片段连接到其他外部提供程序。](/help/sites-administering/external-providers.md)

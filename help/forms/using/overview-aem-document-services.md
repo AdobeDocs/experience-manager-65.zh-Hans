@@ -28,7 +28,7 @@ AEM Document Services是用于创建、汇编和保护PDF文档的一组OSGi服�
 
 ## 输出服务 {#output-service}
 
-“输出”服务允许您创建不同格式的文档，包括PDF、激光打印机格式和标签打印机格式。 激光打印机格式为PostScript和打印机控制语言(PCL)。 以下列表指定了标签打印机格式：
+“输出”服务允许您创建不同格式的文档，包括PDF、激光打印机格式和标签打印机格式。 激光打印机格式包括PostScript和打印机控制语言(PCL)。 以下列表指定了标签打印机格式：
 
 * 斑马(ZPL)
 * Intermec (IPL)
@@ -45,11 +45,11 @@ AEM Document Services是用于创建、汇编和保护PDF文档的一组OSGi服�
 
 可以使用以下四个输出服务操作：
 
-* **generatePDFOuput**：将表单设计和数据合并以生成PDF文档
+* **generatePDFOuput**：将表单设计与数据合并以生成PDF文档
 * **generatePrintedOutput**：将表单设计与表单数据合并，生成要发送到激光打印机或标签网络打印机的文档
 
-* **generatePDFOutputBatch**：在一次调用中合并多个模板和多个数据记录，以生成一批PDF文件。 还有一个选项，即通过合并所有PDF来生成单个PDF
-* **generatePrintedOutputBatch**：在一次调用中合并多个模板和多个数据记录，以生成一批打印文档(PS、PCL、ZPL、DPL、IPL、TPCL)。 还可以选择生成单个打印文档。
+* **generatePDFOutputBatch**：在单个调用中合并包含多个数据记录的多个模板，以生成一批PDF文件。 还有一个选项，即通过合并所有PDF来生成单个PDF
+* **generatePrintedOutputBatch**：在一次调用中合并多个包含多个数据记录的模板，以生成打印文档批次(PS、PCL、ZPL、DPL、IPL、TPCL)。 还可以选择生成单个打印文档。
 
 ## 汇编程序服务 {#assembler-service}
 
@@ -133,7 +133,7 @@ Reader扩展服务通过扩展具有其他使用权限的Adobe Reader的功能�
 
 在Adobe Reader中打开启用了权限的PDF文档时，会自动激活这些特殊用户功能。 当用户使用完启用了权限的文档时，这些功能在Adobe Reader中再次被禁用。 它们保持禁用状态，直到用户收到另一个启用了权限的PDF文档。
 
-开箱即用的DocAssurance服务不可用。 要配置DocAssurance服务，请参阅 [安装和配置配置文档服务](../../forms/using/install-configure-document-services.md).
+开箱即用的DocAssurance服务不可用。 要配置DocAssurance服务，请参阅[安装和配置Document Services](../../forms/using/install-configure-document-services.md)。
 
 ## 发送到打印机服务 {#send-to-printer-service}
 

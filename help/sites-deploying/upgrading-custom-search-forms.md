@@ -30,22 +30,22 @@ ht-degree: 2%
 
 这适用于新的搜索Forms和已自定义的默认Forms。
 
-有关详细信息，请参阅以下文档： [搜索Facet](/help/assets/search-facets.md).
+有关详细信息，请参阅有关[搜索Facet](/help/assets/search-facets.md)的文档。
 
 ## 更改resourceType属性 {#changing-the-resourcetype-property}
 
-除非另有说明，否则在升级后需要执行的大多数调整都需要更改 `sling:resourceType` 属性来查找已配置的自定义搜索Forms。 该操作是必需的，这样属性才能指向渲染脚本的正确位置。
+除非另有说明，否则升级后需要执行的大多数调整都需要更改配置的自定义搜索Forms的`sling:resourceType`属性。 该操作是必需的，这样属性才能指向渲染脚本的正确位置。
 
 您可以通过执行以下操作来更改属性：
 
-1. 打开CRXDE Lite，方法是转到 `https://server:port/crx/de/index.jsp`
-1. 浏览到需要调整的节点的位置，如的列表中所指定 [自定义搜索Forms](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) 下。
-1. 单击节点。 在右侧属性窗格中，单击并修改 **sling：resourceType** 属性。
-1. 最后，通过按 **全部保存** 按钮。
+1. 通过转到`https://server:port/crx/de/index.jsp`打开CRXDE Lite
+1. 按照下面[自定义搜索Forms](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms)列表中的指定，浏览到需要调整的节点位置。
+1. 单击节点。 在右侧属性窗格中，单击并修改&#x200B;**sling：resourceType**&#x200B;属性。
+1. 最后，按&#x200B;**全部保存**&#x200B;按钮保存更改。
 
 ## 自定义搜索Forms列表 {#list-of-custom-search-forms}
 
-在下方，您将找到所有自定义Search Forms的列表以及升级后它们所需的修改。 它们引用了中的名称 `/conf/global/settings/cq/search/facets/sites/items`.
+在下方，您将找到所有自定义Search Forms的列表以及升级后它们所需的修改。 他们引用`/conf/global/settings/cq/search/facets/sites/items`中的名称。
 
 ### 节点名称为“全文”的全文谓词 {#fulltext-predicate-with-node-name-fulltext}
 
@@ -68,7 +68,7 @@ ht-degree: 2%
 
 在AEM 6.1中，标准全文谓词是搜索表单的一部分。 在6.2中，全文字段已由OmniSearch取代。 此谓词以编程方式跳过，可以删除。
 
-**操作：** 完全删除该节点。
+**操作：**&#x200B;完全删除节点。
 
 ### 其他全文谓词 {#other-fulltext-predicates}
 
@@ -89,14 +89,14 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### 路径浏览器谓词 {#path-browser-predicates}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>路径</td>
   </tr>
   <tr>
@@ -110,14 +110,14 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### 标记谓词 {#tags-predicates}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>标记</td>
   </tr>
   <tr>
@@ -131,14 +131,14 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 **resourceType** 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整&#x200B;**resourceType**&#x200B;属性（像上面所示的6.2位置中一样添加“**/coral**”）。
 
 ### 页面状态谓词 {#page-status-predicate}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>pagestatuspredicate</td>
   </tr>
   <tr>
@@ -156,25 +156,25 @@ ht-degree: 2%
 
 **操作：**
 
-* 删除 `pagestatuspredicate` 节点
+* 删除`pagestatuspredicate`节点
 * 复制节点
 
    * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * 到 `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+   * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * 复制节点
 
    * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * 到 `/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+   * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
-* 确保您已设置 `listOrder` 的属性 `analyticspredicate` 节点到&quot;**8**“。 这是避免冲突所必需的。
+* 确保将`analyticspredicate`节点的`listOrder`属性设置为“**8**”。 这是避免冲突所必需的。
 
 ### 日期范围谓词 {#date-range-predicates}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>日期范围谓词</td>
   </tr>
   <tr>
@@ -188,14 +188,14 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### 隐藏的筛选器 {#hidden-filter}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>类型</td>
   </tr>
   <tr>
@@ -209,14 +209,14 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 没有可调整的内容。
+**操作：**&#x200B;没有可调整的内容。
 
 ### 分析谓词 {#analytics-predicate}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>analyticspredicate</td>
   </tr>
   <tr>
@@ -225,19 +225,19 @@ ht-degree: 2%
   </tr>
   <tr>
    <td>6.2中的资源类型</td>
-   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/analyticspredicate</p> </td>
+   <td><p>cq/gui/components<strong>/coral/</strong>siteadmin/admin/searchpanel/searchpredicates/analyticsspredicate</p> </td>
   </tr>
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### 范围谓词 {#range-predicate}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>不适用</td>
   </tr>
   <tr>
@@ -251,7 +251,7 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 >[!NOTE]
 >
@@ -262,7 +262,7 @@ ht-degree: 2%
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>不适用</td>
   </tr>
   <tr>
@@ -276,14 +276,14 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### 滑块范围谓词 {#slider-range-predicate}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>不适用</td>
   </tr>
   <tr>
@@ -297,14 +297,14 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### 组件谓词 {#components-predicate}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>不适用</td>
   </tr>
   <tr>
@@ -318,14 +318,14 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### 作者谓词 {#author-predicate}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>不适用</td>
   </tr>
   <tr>
@@ -339,14 +339,14 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### 模板谓词 {#templates-predicate}
 
 <table>
  <tbody>
   <tr>
-   <td>6.1中默认搜索表单中的节点<br /> <br /> </td>
+   <td>在6.1<br /> <br />中的默认搜索表单中的节点 </td>
    <td>不适用</td>
   </tr>
   <tr>
@@ -360,11 +360,11 @@ ht-degree: 2%
  </tbody>
 </table>
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ## 资产管理员搜索边栏 {#assets-admin-search-rail}
 
-以下节点是指中的名称 `/conf/global/settings/dam/search/facets/assets/items`
+以下节点引用`/conf/global/settings/dam/search/facets/assets/items`中的名称
 
 ### 节点名称为“全文”的全文谓词 {#fulltext-predicate-with-node-name-fulltext-1}
 
@@ -375,7 +375,7 @@ ht-degree: 2%
 
 在6.1中，标准全文谓词是搜索表单的一部分。 在6.2中，全文字段已由OmniSearch取代。 此谓词以编程方式跳过，可以删除。
 
-**操作：** 删除上述节点。
+**操作：**&#x200B;删除上述节点。
 
 ### 路径浏览器谓词 {#path-browser-predicates-1}
 
@@ -384,7 +384,7 @@ ht-degree: 2%
 | 6.1中的资源类型 | dam/gui/components/admin/customsearch/searchpredicates/pathbrowserpredicate |
 | 6.2中的资源类型 | dam/gui/coral/components/admin/customsearch/searchpredicates/pathbrowserpredicate |
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### Mime类型谓词 {#mime-type-predicates}
 
@@ -393,7 +393,7 @@ ht-degree: 2%
 | 6.1中的资源类型 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | 6.2中的资源类型 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置)。
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
 ### 文件大小谓词 {#file-size-predicates}
 
@@ -402,7 +402,7 @@ ht-degree: 2%
 | 6.1中的资源类型 | dam/gui/components/admin/customsearch/searchpredicates/filesizepredicate |
 | 6.2中的资源类型 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicate |
 
-**操作：** Adjust `resourceType` 如上面的6.2位置所示。
+**操作：**&#x200B;调整`resourceType`，如上面的6.2位置所示。
 
 ### 资产上次修改的谓词 {#asset-last-modified-predicates}
 
@@ -413,7 +413,7 @@ ht-degree: 2%
 
 操作：调整resourceType属性（像上面所示的6.2位置中那样添加“/coral”）。
 
-### 发布谓词 {#publish-predicate}
+### Publish谓词 {#publish-predicate}
 
 | 6.1中默认搜索表单中的节点 | 发布 |
 |---|---|
@@ -422,11 +422,11 @@ ht-degree: 2%
 
 **操作：**
 
-* 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置中的)
+* 调整`resourceType`属性（在上面所示的6.2位置中添加“**/coral**”）
 
-* 添加 `optionPaths` （类型为String）属性，其值为： `/libs/dam/options/predicates/publish`
+* 添加值为`/libs/dam/options/predicates/publish`的`optionPaths`（类型为String）属性
 
-* 添加 `singleSelect` 具有布尔值的属性 `true`.
+* 添加布尔值为`true`的`singleSelect`属性。
 
 ### 状态谓词 {#status-predicates}
 
@@ -435,7 +435,7 @@ ht-degree: 2%
 | 6.1中的资源类型 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | 6.2中的资源类型 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置中的)
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）
 
 ### 到期状态谓词 {#expiry-status-predicates}
 
@@ -444,7 +444,7 @@ ht-degree: 2%
 | 6.1中的资源类型 | dam/gui/components/admin/customsearch/searchpredicates/expiredassetpredicate |
 | 6.2中的资源类型 | dam/gui/coral/components/admin/customsearch/searchpredicates/expiredassetpredicate |
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置中的)
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）
 
 ### 元数据有效性谓词 {#metadata-validity-predicates}
 
@@ -453,7 +453,7 @@ ht-degree: 2%
 | 6.1中的资源类型 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | 6.2中的资源类型 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置中的)
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）
 
 ### 评级谓词 {#rating-predicates}
 
@@ -462,7 +462,7 @@ ht-degree: 2%
 | 6.1中的资源类型 | dam/gui/components/admin/customsearch/searchpredicates/ratingpredicate |
 | 6.2中的资源类型 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicate |
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置中的)
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）
 
 ### 方向谓词 {#orientation-predicate}
 
@@ -473,13 +473,13 @@ ht-degree: 2%
 
 **操作：**
 
-* 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置中的)
+* 调整`resourceType`属性（在上面所示的6.2位置中添加“**/coral**”）
 
-* 添加 `fieldLabel` 与的值相同的属性 `text` 属性。
+* 在同一节点上添加与`text`属性具有相同值的`fieldLabel`属性。
 
-* 添加 `emptyText` 属性的值与 `text` 属性。
+* 在同一节点上添加与`text`属性具有相同值的`emptyText`属性。
 
-* 添加 `rootPath` 属性与的值相同 `optionPaths` 属性。
+* 在同一节点上添加与`optionPaths`属性具有相同值的`rootPath`属性。
 
 ### 样式谓词 {#style-predicate}
 
@@ -490,13 +490,13 @@ ht-degree: 2%
 
 **操作：**
 
-* 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置中的)
+* 调整`resourceType`属性（在上面所示的6.2位置中添加“**/coral**”）
 
-* 添加 `fieldLabel` 与的值相同的属性 `text` 属性。
+* 在同一节点上添加与`text`属性具有相同值的`fieldLabel`属性。
 
-* 添加 `emptyText` 属性的值与 `text` 属性。
+* 在同一节点上添加与`text`属性具有相同值的`emptyText`属性。
 
-* 添加 `rootPath` 属性与的值相同 `optionPaths` 属性。
+* 在同一节点上添加与`optionPaths`属性具有相同值的`rootPath`属性。
 
 ### 视频格式谓词 {#video-format-predicates}
 
@@ -505,7 +505,7 @@ ht-degree: 2%
 | 6.1中的资源类型 | dam/gui/components/admin/customsearch/searchpredicates/optionspredicate |
 | 6.2中的资源类型 | dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate |
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置中的)
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）
 
 ### Mainasset谓词 {#mainasset-predicate}
 
@@ -514,4 +514,4 @@ ht-degree: 2%
 | 6.1中的资源类型 | granite/ui/components/foundation/form/hidden |
 | 6.2中的资源类型 | granite/ui/components/coral/foundation/form/hidden |
 
-**操作：** 调整 `resourceType` 属性(添加&quot;**/coral**”如上面所示的6.2位置中的)
+**操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）

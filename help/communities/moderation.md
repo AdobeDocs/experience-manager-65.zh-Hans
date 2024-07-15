@@ -19,15 +19,15 @@ ht-degree: 2%
 
 # 审核控制台 {#moderation-console}
 
-在AEM Communities中，批量 [审核社区内容](/help/communities/moderate-ugc.md) 管理员和社区审查方（指定为审查方的受信任社区成员）可以在创作和发布环境中使用。
+在AEM Communities中，管理员和社区审查方（指定为审查方的受信任社区成员）可以在Author和Publish环境中对社区内容](/help/communities/moderate-ugc.md)进行批量[审查。
 
-管理员和社区审查方也可以执行 [上下文审核](/help/communities/in-context.md) 在“发布”环境中。
+管理员和社区审查方也可以在Publish环境中执行[上下文审核](/help/communities/in-context.md)。
 
-一项全面的功能 [社区站点](/help/communities/sites-console.md) 是 `Administration` 使用管理权限登录的用户可用的菜单项。 此 `Administration` 链接提供对审核控制台的访问。
+所有[社区站点](/help/communities/sites-console.md)的一项功能是可供具有管理权限登录的用户使用的`Administration`菜单项。 `Administration`链接提供对审核控制台的访问权限。
 
 在“审阅”控制台中，管理员和社区审阅人有权访问他们有权审阅的所有用户生成内容(UGC)。 如果允许审核多个网站，则可以查看所有网站的帖子或按选定的社区网站进行过滤。
 
-有关更多详细信息，请访问 [管理用户和用户组](/help/communities/users.md).
+有关详细信息，请访问[管理用户和用户组](/help/communities/users.md)。
 
 “审核”控制台支持：
 
@@ -36,9 +36,9 @@ ht-degree: 2%
 * 查看UGC详细信息。
 * 查看UGC作者详细信息。
 
-仅当以管理员身份登录时，或作为成员登录时 ` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`，可以执行审核任务。
+仅当以管理员或具有` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`的成员身份登录时，才能执行审核任务。
 
-## 发布环境访问权限 {#publish-environment-access}
+## Publish环境访问 {#publish-environment-access}
 
 要从已发布的社区站点访问审核控制台，需要通过管理链接；当社区审核者登录时，将显示该链接。
 
@@ -52,19 +52,19 @@ ht-degree: 2%
 
 在创作环境中，用于访问审核控制台
 
-* 在全局导航中，选择 **[!UICONTROL Communities]** > **[!UICONTROL 审核]**.
+* 从全局导航中，选择&#x200B;**[!UICONTROL 社区]** > **[!UICONTROL 审核]**。
 
-仅在以管理员或会员身份登录时 [审查方权限](/help/communities/in-context.md#identifyingtrustedmembers)，可以执行审核任务。 显示的唯一社区内容是允许登录成员审核的内容。
+仅当以管理员或具有[审查方权限](/help/communities/in-context.md#identifyingtrustedmembers)的成员身份登录时，才能执行审查任务。 显示的唯一社区内容是允许登录成员审核的内容。
 
 >[!NOTE]
 >
->仅当所选的SRP实施公用存储时，发布环境中的UGC才对Author可见。 例如，默认存储为JSRP，它不是Author和Publish的常用存储。 请参阅 [社区内容存储](/help/communities/working-with-srp.md).
+>仅当所选的SRP实施公用存储时，Publish环境中的UGC才对Author可见。 例如，默认情况下，存储为JSRP，这不是Author和Publish的常用存储。 查看[社区内容存储](/help/communities/working-with-srp.md)。
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## 审核控制台UI {#moderation-console-ui}
 
-除了左导航边栏（显示在创作实例上，但不显示在发布实例上）外，审核UI包括以下主要区域：
+除了左导航边栏(显示在创作实例上，但不显示在Publish上)外，审核UI包含以下主要区域：
 
 * **[顶部导航栏](#top-navigation-bar)**
 * **[工具栏](#toolbar)**
@@ -72,7 +72,7 @@ ht-degree: 2%
 
 ### 顶部导航栏 {#top-navigation-bar}
 
-对于所有控制台，顶部导航栏都是固定的。 有关更多信息，请参阅 [基本处理](/help/sites-authoring/basic-handling.md).
+对于所有控制台，顶部导航栏都是固定的。 有关详细信息，请参阅[基本处理](/help/sites-authoring/basic-handling.md)。
 
 ### 工具栏 {#toolbar}
 
@@ -88,7 +88,7 @@ ht-degree: 2%
 [筛选器边栏](/help/communities/moderation.md#filterrail)
 在选择搜索时打开边栏，通过该边栏可选择要筛选内容的属性。
 
-![过滤边栏](assets/filterrail.png)
+![筛选边栏](assets/filterrail.png)
 
 ### 内容区域 {#content-area}
 
@@ -100,25 +100,25 @@ ht-degree: 2%
 * 帖子位置
 * 发布时间
 * 回复帖子的数量
-* [情绪](/help/communities/moderate-ugc.md#sentiment) 与帖子关联
+* 与帖子相关的[情绪](/help/communities/moderate-ugc.md#sentiment)
 * 如果批准，将显示复选标记
 * 如果有附件，则显示回形针
 
 >[!NOTE]
 > 
->内容区域具有 *无限滚动*，这意味着您可以继续滚动直到内容结束。 即使在滚动时，工具栏仍保留在内容区域上方的固定可见位置。
+>内容区域具有&#x200B;*无限滚动*，这意味着您可以继续滚动直到内容结束。 即使在滚动时，工具栏仍保留在内容区域上方的固定可见位置。
 
 ### 筛选器边栏 {#ootbfilters}
 
-![开放式过滤边栏](assets/open-filterrail.png)
+![开放筛选边栏](assets/open-filterrail.png)
 
 侧面板图标可打开过滤器边栏。 显示在内容区域左侧的过滤器边栏提供了不同的过滤器，每个过滤器都会对内容区域中显示的引用UGC立即产生影响。
 
-每个类别中的过滤器包括 **或者**&#39;d在一起，不同类别中的过滤器是 **和**&#x200B;一起去。
+每个类别中的筛选器是&#x200B;**OR**，而不同类别中的筛选器是&#x200B;**AND**。
 
-例如，如果同时选中两者 **问题** 和 **回答**，您会看到以下内容之一 **问题** *或* 一个 **回答**.
+例如，如果同时检查&#x200B;**问题**&#x200B;和&#x200B;**答案**，您会看到内容是&#x200B;**问题** *或* **答案**。
 
-但是，如果选中 **问题** 和 **待处理**，则您只会看到 **问题** 和 **待处理**.
+但是，如果您检查&#x200B;**问题**&#x200B;和&#x200B;**待处理**，则您只能看到内容是&#x200B;**问题**&#x200B;和&#x200B;**待处理**。
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ ht-degree: 2%
 
 内容路径将显示的引用UGC限制为放置在指定内容存储库中的帖子。
 
-![内容路径](assets/content-path.png)
+![content-path](assets/content-path.png)
 
 #### 文本搜索 {#text-search}
 
@@ -144,19 +144,19 @@ ht-degree: 2%
 
 站点限制将引用的UGC显示给选定社区站点的帖子。 如果未选中任何站点，则会显示对UGC的所有引用。
 
-![site-panel](assets/site-panel.png)
+![站点面板](assets/site-panel.png)
 
 >[!NOTE]
 >
->管理员访问批量审核控制台时，将显示对UGC的所有引用，包括未使用创建的站点 [站点创建向导](/help/communities/sites-console.md)，如Geometrixx示例。
+>管理员访问批量审核控制台时，将显示对UGC的所有引用，包括未使用[站点创建向导](/help/communities/sites-console.md)创建的站点，如Geometrixx示例。
 >
->当受信任的社区成员在“发布”上访问批量审核控制台时，将仅显示对该成员有权审核的社区站点所创建的UGC的引用。 此外，还可以使用“站点”过滤器来筛选它。
+>当受信任的社区成员在Publish上访问批量审阅控制台时，将仅显示对该成员有权审阅的社区站点所创建的UGC的引用。 此外，还可以使用“站点”过滤器来筛选它。
 
 #### 内容类型 {#content-type}
 
 内容类型将引用的UGC显示限制为所选资源类型的帖子。 可以选择以下一种或多种类型。 如果未选择任何类型，则会显示所有类型。
 
-* **注释**
+* **评论**
 * **论坛主题**
 * **论坛回复**
 * **问题与解答问题**
@@ -167,7 +167,7 @@ ht-degree: 2%
 * **日历评论**
 * **文件库文件夹**
 * **文件库文档**
-* **构思**
+* **想法**
 * **构思评论**
 
 ![内容类型](assets/content-types.png)
@@ -177,8 +177,8 @@ ht-degree: 2%
 要添加要过滤的其他资源，请执行以下操作：
 
 * 以管理员身份登录到您的创作实例。
-* 打开 [Web控制台](https://localhost:4502/system/console/configMgr).
-* 定位 `AEM Communities Moderation Dashboard Filters`.
+* 打开[Web控制台](https://localhost:4502/system/console/configMgr)。
+* 找到`AEM Communities Moderation Dashboard Filters`。
 * 选择配置以便您可以在编辑模式下打开。
 * 输入要筛选的组件的ResourceType：
 
@@ -191,7 +191,7 @@ ht-degree: 2%
 * 选择“保存”。
 * 刷新社区 — 审核控制台。
 
-结果会为生成一个新的可选过滤器 `Voting` 在 `Content Type` 筛选组。
+结果是`Content Type`筛选器组下的`Voting`的新可选筛选器。
 
 选择该过滤器后，功能板的内容会显示与输入的任何资源类型均匹配的UGC。
 
@@ -209,7 +209,7 @@ ht-degree: 2%
 
 标记会将引用的UGC显示限制为已标记或隐藏的帖子。
 
-标记一段内容后，它将保持标记状态，直到您通过选择取消标记该段内容 **标志** 再次按下按钮。 没有标记级别，例如重要级别或跟进级别。
+标记一段内容后，它将保持标记状态，直到您再次选择&#x200B;**标记**&#x200B;按钮取消标记该段内容。 没有标记级别，例如重要级别或跟进级别。
 
 ![标记](assets/flagging.png)
 
@@ -223,58 +223,58 @@ ht-degree: 2%
 
 发布于最后限制引用的UGC显示于过去小时、天、周、月或年的帖子。
 
-![posted-last](assets/posted-last.png)
+![已发布 — 最后一个](assets/posted-last.png)
 
 #### 情绪 {#sentiment}
 
-[情绪](/help/communities/moderate-ugc.md#sentiment) 将引用的UGC限制为仅显示情绪值为正、负或中性的帖子。
+[情绪](/help/communities/moderate-ugc.md#sentiment)将引用的UGC限制为显示情绪值为正数、负数或中性的帖子。
 
 ![情绪](assets/sentiment.png)
 
 ## 自定义过滤器 {#custom-filters}
 
-除了开箱即用的过滤器 [筛选器边栏](/help/communities/moderation.md#ootbfilters)，可以向审核UI中添加其他关于元数据的自定义过滤器。 开发人员可以在GitHub中使用示例代码来扩展现有的审核UI过滤器。
+除了[筛选器边栏](/help/communities/moderation.md#ootbfilters)中的现成筛选器之外，还可以将有关元数据的其他自定义筛选器添加到审核UI。 开发人员可以在GitHub中使用示例代码来扩展现有的审核UI过滤器。
 
 ![custom-tag-filter](assets/custom-tag-filter.png)
 
-此 [示例项目](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter) 在GitHub上，实施了标记过滤器，以根据特定标记是否应用于用户生成的内容来筛选UGC列表。 您可以遵循示例代码，并为其他类似的UGC元数据字段构建类似过滤器。
+GitHub上的[示例项目](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/tree/main/aem-communities-moderation-filter)实施了标记过滤器，以根据特定标记是否应用于用户生成的内容来筛选UGC列表。 您可以遵循示例代码，并为其他类似的UGC元数据字段构建类似过滤器。
 
 要安装“标记”过滤器的示例：
 
-1. 在AEM Author上打开包管理器(`https://[aem-author]:4502/crx/packmgr/index.jsp`)实例和AEM发布(`https://[aem-publish]:4503/crx/packmgr/index.jsp`)实例。
-1. 构建包 `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` 并安装和启用相同的代码。
-1. 在AEM Author上打开包控制台( `https://[aem-author]:4502/system/console/bundles`)实例和AEM发布( `https://[aem-publish]:4503/system/console/bundles`)实例。
-1. 生成包(`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`)，并安装和启用该软件。
-1. 转到 **/apps/social/moderation/facets** AEM Author上的节点(`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`)和AEM发布(`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`)实例。
-1. 添加技术用户 **communities-utility-reader** 替换为 `jcr:read` 权限。
+1. 在AEM创作(`https://[aem-author]:4502/crx/packmgr/index.jsp`)实例和AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`)实例上打开包管理器。
+1. 从GitHub代码生成包`com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip`，并安装和启用该包。
+1. 在AEM创作(`https://[aem-author]:4502/system/console/bundles`)实例和AEM Publish (`https://[aem-publish]:4503/system/console/bundles`)实例上打开包控制台。
+1. 从GitHub生成包(`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`)，并安装和启用该包。
+1. 转到AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`)和AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`)实例上的&#x200B;**/apps/social/moderation/facets**&#x200B;节点。
+1. 添加具有`jcr:read`权限的技术用户&#x200B;**communities-utility-reader**。
 
 要在现有社区网站上显示自定义过滤器，请执行以下操作：
 
-1. 编辑 `Clientlibs` 现有审核页面的 `/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`
+1. 编辑现有审核页面`/content/we-retail/us/en/community/moderation/shell3/jcr:content/head/clientlibs.`的`Clientlibs`
 
-   * 添加新类别 `cq.social.hbs.moderation.v2.`
+   * 添加新类别`cq.social.hbs.moderation.v2.`
 
-1. 转到 `/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
+1. 转到`/content/we-retail/us/en/community/moderation/shell3/jcr:content/rails/searchWell/items/filters.`
 
-   * 设置为新组件 `sling:resourceType = social/moderation/v2/filters.`
+   * 设置为新组件`sling:resourceType = social/moderation/v2/filters.`
 
 1. 转到 `/content/we-retail/us/en/community/moderation/shell3/jcr:content/views/content/items/modcontainer`.
 
-   * 设置为新组件 `sling:resourceType = social/moderation/v2/modcontainer`.
+   * 设置为新组件`sling:resourceType = social/moderation/v2/modcontainer`。
 
 ## 审核操作 {#moderation-actions}
 
-[审核操作](/help/communities/moderate-ugc.md#moderation-actions) 可以在内容区域或查看内容详细信息时执行一个或多个选择。
+[可对在内容区域或查看内容详细信息时所做的一个或多个选择执行审核操作](/help/communities/moderate-ugc.md#moderation-actions)。
 
-要批量审核帖子，请在内容区域中单击选择(![选择](assets/selecticon.png))图标，当鼠标悬停在帖子（桌面）上或按住帖子（移动设备）上的手指时，将显示该图标。 这样，您就可以进入多选模式，现在只需单击后续帖子即可对它们进行批量审阅。 使用工具栏上显示的按钮，以便您可以对所选帖子执行审核操作。 所有操作都会提示进行确认。
+要批量审核帖子，请在内容区域中，单击帖子上的选择（![选择](assets/selecticon.png)）图标，该图标会出现在使用鼠标（桌面）将鼠标悬停在帖子上或按住手指（移动设备）时。 这样，您就可以进入多选模式，现在只需单击后续帖子即可对它们进行批量审阅。 使用工具栏上显示的按钮，以便您可以对所选帖子执行审核操作。 所有操作都会提示进行确认。
 
 要在内容区域中审核单个帖子，请使用鼠标（桌面）将鼠标悬停在该帖子上，或者按住帖子（移动设备）上的手指，使按钮显示在帖子上。 对单个内容详细信息执行操作时，只有删除操作会提示进行确认。
 
 ### 审核多个帖子 {#moderating-multiple-posts}
 
-通过单击 `Select` 帖子上的图标：
+单击帖子上的`Select`图标进入批量选择模式：
 
-![选择图标](assets/select-icon.png)
+![select-icon](assets/select-icon.png)
 
 要退出批量选择模式，请选择工具栏上的取消(x)图标：
 
@@ -286,7 +286,7 @@ ht-degree: 2%
 
 仅在选择多个帖子时，工具栏上才会显示允许这些操作的图标。
 
-![批量审核](assets/bulkmoderate.png)
+![bulkmoderate](assets/bulkmoderate.png)
 
 ### 审核单个帖子 {#moderating-a-single-post}
 
@@ -299,7 +299,7 @@ ht-degree: 2%
 * [拒绝](#deny)
 * [删除](#delete)
 * [关闭](#close)
-* 视图 [审核历史记录](#moderation-history)
+* 查看[审核历史记录](#moderation-history)
 * [查看详细信息](#viewdetails)
 
 在信息卡视图中，审核操作图标上方显示的是帖子的文本，下方显示的是用于指示以下内容的数据：
@@ -327,7 +327,7 @@ ht-degree: 2%
 
 ![拒绝](assets/deny.png)
 
-此 **拒绝** 审核操作仅适用于已审核的内容，并且除在多选模式之外不会显示在未审核的内容中。
+**拒绝**&#x200B;审核操作仅适用于已审核的内容，并且除了在多选模式下外，该操作不会出现在未审核的内容上。
 
 未经审核的内容始终获得批准。
 
@@ -339,7 +339,7 @@ ht-degree: 2%
 
 ![删除](assets/delete.png)
 
-在单选或批量模式下，可以选择项目并将其删除。 删除操作将生成确认对话框。 删除后，这些项目会立即从内容区域中消失。 **删除UGC后，它将从存储库中永久删除，并且以后无法检索**.
+在单选或批量模式下，可以选择项目并将其删除。 删除操作将生成确认对话框。 删除后，这些项目会立即从内容区域中消失。 **一旦删除UGC，它就会从存储库中永久删除，以后无法检索**。
 
 #### 关闭 {#close}
 
@@ -357,7 +357,7 @@ ht-degree: 2%
 
 例如：
 
-![moderation-history](assets/moderation-history.png)
+![审核历史记录](assets/moderation-history.png)
 
 #### 查看详细信息 {#view-detail}
 
@@ -365,7 +365,7 @@ ht-degree: 2%
 
 处理单个帖子时，可以通过在详细信息模式下打开UGC来查看更多详细信息。
 
-为此，请将鼠标悬停在帖子上以显示 `View Detail` 图标并选择它以显示包含帖子的更多详细信息的面板。
+为此，请将鼠标悬停在帖子上以显示`View Detail`图标，并将其选中以显示包含帖子更多详细信息的面板。
 
 要返回到多个UGC帖子的内容区域显示，请选择视图详细信息窗格右上角的X 。
 

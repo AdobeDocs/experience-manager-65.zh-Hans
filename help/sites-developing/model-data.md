@@ -24,7 +24,7 @@ ht-degree: 0%
 
 David是Day Software AG的联合创始人兼首席技术官，该公司是全球内容管理和内容基础架构软件的领先提供商，于2010年被Adobe收购。 David现在是Adobe企业技术部副总裁，还领导内容管理的技术标准Java™ Content Repository (JCR)应用程序编程接口(API)JSR-170的开发。
 
-您还可以在以下网址查看更多更新： [https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel).
+还可以在[https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel)上查看更多更新。
 
 ## David的简介 {#introduction-from-david}
 
@@ -56,7 +56,7 @@ David是Day Software AG的联合创始人兼首席技术官，该公司是全球
 
 #### 示例 {#example-1}
 
-上述使用 `lastModified` 日期属性，例如“博客帖子”节点，实际上并不表示需要特殊的节点类型。 我一定会用 `nt:unstructured` 对于我的博客帖子节点，至少在一开始是这样。 由于在我的博客应用程序中，我所要做的就是显示上次修改日期（可能为“order by”），因此我根本不在乎它是否为日期。 因为我暗地里相信我的博客写信申请，会在这里放一个“日期”，所以真的不需要宣布一个日期。 `lastModified` 节点类型形式的日期。
+在上面使用`lastModified` Date属性的示例，例如“博客帖子”节点，实际上并不表示需要特殊的节点类型。 我肯定会将`nt:unstructured`用于我的博客帖子节点，至少在一开始是这样。 由于在我的博客应用程序中，我所要做的就是显示上次修改日期（可能为“order by”），因此我根本不在乎它是否为日期。 由于我暗中信任我的博客写信应用程序会将“日期”放在那里，因此确实不需要以节点类型的形式声明`lastModified`日期的存在。
 
 ### 规则#2：推动内容层次结构；不要任其发生。 {#rule-drive-the-content-hierarchy-don-t-let-it-happen}
 
@@ -74,7 +74,7 @@ David是Day Software AG的联合创始人兼首席技术官，该公司是全球
 >
 >内容存储库的结构方式也会影响性能。 为获得最佳性能，附加到内容存储库中单个节点的子节点数不应超过1,000。
 >
->请参阅 [CRX可以处理多少数据？](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
+>请参阅[CRX可以处理多少数据？](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### 示例 {#example-2}
 
@@ -100,7 +100,7 @@ David是Day Software AG的联合创始人兼首席技术官，该公司是全球
 
 #### 解释 {#explanation-3}
 
-如果您不使用 `clone()`， `merge()` 或 `update()` 在您的应用程序中，可能适合使用单个工作区。
+如果您未在应用程序中使用`clone()`、`merge()`或`update()`方法，则可能只能使用单个工作区。
 
 “对应节点”是JCR规范中定义的一个概念。 本质上，它归结为在不同所谓的工作区中表示相同内容的节点。
 
@@ -173,13 +173,13 @@ JCR引入了工作区的抽象概念，使得许多开发人员不知道如何�
 
 #### 解释 {#explanation-6}
 
-如果内容模型泄露的东西甚至远程闻起来像文件或文件夹，我会尝试使用（或从扩展） `nt:file`， `nt:folder`、和 `nt:resource`.
+如果内容模型泄露的内容甚至远程闻起来像文件或文件夹，我尝试使用（或扩展）`nt:file`、`nt:folder`和`nt:resource`。
 
 根据我的经验，许多通用应用程序允许隐式与nt：folder和nt：files进行交互，并且如果它们富含其他元信息，则知道如何处理和显示这些事件。 例如，与JCR之上的文件服务器实现(如CIF或WebDAV)的直接交互变为隐式。
 
-我认为根据经验，可以使用以下内容：如果必须存储文件名和mime类型，则 `nt:file`/ `nt:resource` 很配对。 如果您可以有多个“文件”，则nt：folder是存储这些文件的理想位置。
+我认为根据经验，可以使用以下内容：如果必须存储文件名和mime类型，则`nt:file`/`nt:resource`是很好的匹配。 如果您可以有多个“文件”，则nt：folder是存储这些文件的理想位置。
 
-如果必须为资源添加元信息，例如“author”或“description”属性，请扩展 `nt:resource` 不是 `nt:file`. 我很少扩展nt：file ，而且经常扩展 `nt:resource`.
+如果必须为资源添加元信息，比如“author”或“description”属性，请扩展`nt:resource`，而不是`nt:file`。 我很少扩展nt：file，经常扩展`nt:resource`。
 
 #### 示例 {#example-6}
 
@@ -207,13 +207,13 @@ JCR引入了工作区的抽象概念，使得许多开发人员不知道如何�
 
 如果您的内容模型包含以“Id”结尾的属性，则可能无法正确使用层次结构。
 
-诚然，某些节点在其整个生命周期中都需要稳定的标识；但比您想象的要少。 但是 `mix:referenceable` 在存储库中内置了此类机制，因此无需提出以稳定方式标识节点的额外方法。
+诚然，某些节点在其整个生命周期中都需要稳定的标识；但比您想象的要少。 但是`mix:referenceable`在存储库中内置了此类机制，因此无需提出以稳定方式标识节点的额外方法。
 
 另请注意，项目可以通过路径进行标识。 而且，尽管“符号链接”对于大多数用户来说比对UNIX®文件系统中的硬链接更有意义，但是对于大多数应用程序而言，引用目标节点也是有意义的。
 
-更重要的是 **mix**：referenceable，这意味着它可以在您实际必须引用它的时间点应用于节点。
+更重要的是，它是&#x200B;**mix**：referenceable，这意味着它可以在您实际必须引用它的时间点应用于节点。
 
-因此，仅仅因为您希望能够潜在地引用“文档”类型的节点并不意味着您的“文档”节点类型必须从扩展 `mix:referenceable` 以静态方式。 这是因为可将其动态添加到“文档”的任何实例。
+因此，仅仅因为您希望能够潜在引用“文档”类型的节点并不意味着您的“文档”节点类型必须从`mix:referenceable`以静态方式扩展。 这是因为可将其动态添加到“文档”的任何实例。
 
 #### 示例 {#example-7}
 

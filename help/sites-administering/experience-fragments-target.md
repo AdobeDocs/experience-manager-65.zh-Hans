@@ -19,7 +19,7 @@ ht-degree: 41%
 
 # 将体验片段导出到 Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
-您可以导出 [体验片段](/help/sites-authoring/experience-fragments.md)，在Adobe Experience Manager (AEM)中创建的，指向Adobe Target (Target)。 然后，可以将它们用作Target活动中的选件，以大规模测试和个性化体验。
+您可以将在Adobe Experience Manager (AEM)中创建的[体验片段](/help/sites-authoring/experience-fragments.md)导出到Adobe Target (Target)。 然后，可以将它们用作Target活动中的选件，以大规模测试和个性化体验。
 
 有三个格式选项可用于将体验片段导出到Adobe Target：
 
@@ -27,17 +27,17 @@ ht-degree: 41%
 * JSON：支持 Headless 内容交付
 * HTML 和 JSON
 
-AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也可以导出到Adobe Target的用户定义的工作区。 可使用Adobe Developer控制台完成此操作，对于该控制台，AEM必须 [使用IMS与Adobe Target集成](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也可以导出到Adobe Target的用户定义的工作区。 可使用Adobe Developer Console完成此操作，为此，AEM必须使用IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md)与Adobe Target [集成。
 
 >[!NOTE]
 >
->[IMS集成现在已使用S2S OAuth进行配置](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+>[IMS集成现在配置有S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md)。
 >
->以前的配置使用的是 [现在可在Adobe Developer控制台中弃用的JWT凭据](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+>以前使用[JWT凭据进行配置，这些凭据现在在Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)中被弃用。
 
 >[!NOTE]
 >
->Adobe Target 本身没有 Adobe Target 工作区。可以在Adobe IMS (Identity Management System)中定义和管理这些工作区，然后通过Adobe Developer Console中的集成选择它们以便跨解决方案使用。
+>Adobe Target 本身没有 Adobe Target 工作区。可以在Adobe IMS (Identity Management System)中定义和管理这些工作区，然后使用Adobe Developer Console中的集成选择它们以便跨解决方案使用。
 
 >[!NOTE]
 >
@@ -55,15 +55,15 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 需要执行各种操作：
 
-1. 您必须 [使用IMS将AEM与Adobe Target集成](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+1. 您必须使用IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md)将AEM与Adobe Target集成[。
 
    >[!NOTE]
    >
-   >[IMS集成现在已使用S2S OAut进行配置](/help/sites-administering/setting-up-ims-integrations-for-aem.md).
+   >[IMS集成现在配置有S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md)。
    >
-   >以前的配置使用的是 [现在可在Adobe Developer控制台中弃用的JWT凭据](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md).
+   >以前使用[JWT凭据进行配置，这些凭据现在在Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)中被弃用。
 
-1. 体验片段将从AEM创作实例中导出，因此您必须 [配置AEM链接外部化器](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer) 在创作实例上，确保体验片段中的任何引用都外部化以进行Web交付。
+1. 体验片段将从AEM创作实例中导出，因此您必须在创作实例上[配置AEM链接外部化器](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)，以确保体验片段中的任何引用都外部化以进行Web交付。
 
    >[!NOTE]
    >
@@ -71,7 +71,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 ## 添加云配置 {#add-the-cloud-configuration}
 
-在导出片段之前，必须添加 **云配置** 对象 **Adobe Target** 到片段或文件夹。 这也使您能够：
+在导出片段之前，必须将&#x200B;**Adobe Target**&#x200B;的&#x200B;**云配置**&#x200B;添加到片段或文件夹。 这也使您能够：
 
 * 指定要用于导出的格式选项
 * 选择 Target 工作区作为目标
@@ -113,7 +113,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
    >
    >Externalizer域是可选的。
    >
-   >如果您希望导出的内容指向特定，可配置AEM外部化器 *发布* 域。 有关更多详细信息，请参阅 [配置AEM链接外部化器](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer).
+   >如果您希望导出的内容指向特定的&#x200B;*发布*&#x200B;域，可配置AEM外部化器。 有关详细信息，请参阅[配置AEM链接外部化器](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)。
    >
    >另请注意，外部化器域仅与发送到 Target 的体验片段的内容相关，与查看选件内容等元数据无关。
 
@@ -140,19 +140,19 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
    >
    >它必须是体验片段 Web 变体。
 
-1. 单击 **导出到Adobe Target**.
+1. 单击&#x200B;**导出到Adobe Target**。
 
    >[!NOTE]
    >
    >如果已导出体验片段，请选择&#x200B;**在 Adobe Target 中更新**。
 
-1. 单击 **导出而不发布** 或 **Publish** 根据需要。
+1. 根据需要单击&#x200B;**导出而不发布**&#x200B;或&#x200B;**Publish**。
 
    >[!NOTE]
    >
-   >选择 **Publish** 立即发布体验片段并将其发送到Target。
+   >选择&#x200B;**Publish**&#x200B;将立即发布体验片段并将其发送到Target。
 
-1. 单击 **确定** 在确认对话框中。
+1. 在确认对话框中，单击&#x200B;**确定**。
 
    您的体验片段现在应在Target中。
 
@@ -170,7 +170,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 ## 在 Adobe Target 中使用体验片段 {#using-your-experience-fragments-in-adobe-target}
 
-执行上述任务后，体验片段会显示在Adobe Target的“选件”页面中。 查看 [特定Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html) 了解可以实现的目标。
+执行上述任务后，体验片段会显示在Adobe Target的“选件”页面中。 查看[特定的Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)以了解可以实现的目标。
 
 >[!NOTE]
 >
@@ -199,7 +199,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 体验片段包含完整的html标记和所有必要的客户端库(CSS/JS)，以便按照体验片段内容作者创建的完全相同的方式呈现片段。 这是精心设计的。
 
-在AEM交付的页面上通过Adobe Target使用体验片段选件时，“目标”页面已包含所有必要的客户端库。 此外，也不需要体验片段选件中的无关的html(请参阅 [注意事项](#considerations))。
+在AEM交付的页面上通过Adobe Target使用体验片段选件时，“目标”页面已包含所有必要的客户端库。 此外，也不需要体验片段选件中的无关html（请参阅[注意事项](#considerations)）。
 
 以下是体验片段选件中html的伪示例：
 
@@ -217,27 +217,27 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 </html>
 ```
 
-从较高层面来看，当AEM将体验片段导出到Adobe Target时，它会使用几个额外的Sling选择器来实现这一点。 例如，导出的体验片段的URL可能如下所示(注意 `nocloudconfigs.atoffer`)：
+从较高层面来看，当AEM将体验片段导出到Adobe Target时，它会使用几个额外的Sling选择器来实现这一点。 例如，导出的体验片段的URL可能如下所示（注意`nocloudconfigs.atoffer`）：
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-此 `nocloudconfigs` 选择器通过使用HTL来定义，并且可以通过从以下位置复制它来覆盖它：
+`nocloudconfigs`选择器使用HTL定义，可以通过从以下位置复制它来覆盖它：
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 
-此 `atoffer` 使用以下方式应用选择器的后处理 [Sling重写器](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). 任一选项均可用于删除客户端库。
+使用[Sling重写器](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html)对`atoffer`选择器应用了后处理。 任一选项均可用于删除客户端库。
 
 ### 示例 {#example}
 
-为了这个目的，让我们来说明如何使用 `nocloudconfigs`.
+出于此目的，让我们说明如何使用`nocloudconfigs`执行此操作。
 
 >[!NOTE]
 >
->请参阅 [可编辑的模板](/help/sites-developing/templates.md#editable-templates) 以了解更多详细信息。
+>有关详细信息，请参阅[可编辑模板](/help/sites-developing/templates.md#editable-templates)。
 
 #### 叠加 {#overlays}
 
-在此特定示例中， [叠加](/help/sites-developing/overlays.md) 被包含将删除客户端库 *和* 无关的html。 假定您已创建体验片段模板类型。 需要从中复制的必要文件 `/libs/cq/experience-fragments/components/xfpage/` 包括：
+在此特定示例中，包含的[叠加](/help/sites-developing/overlays.md)将删除客户端库&#x200B;*和*&#x200B;无关的HTML。 假定您已创建体验片段模板类型。 需要从`/libs/cq/experience-fragments/components/xfpage/`中复制的文件包括：
 
 * `nocloudconfigs.html`
 * `head.nocloudconfigs.html`
@@ -265,7 +265,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 >[!NOTE]
 >
->使用 `data-sly-unwrap` 要删除body标记，您需要 `nocloudconfigs.html`.
+>要使用`data-sly-unwrap`删除Body标记，您需要`nocloudconfigs.html`。
 
 ### 注意事项 {#considerations}
 

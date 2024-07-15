@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # 使用PDF光栅器 {#using-pdf-rasterizer}
 
-将大型、内容密集型PDF或AI文件上传到时 [!DNL Adobe Experience Manager Assets]，默认库可能无法生成准确的输出。 与默认库的输出相比，Adobe的PDF光栅器库可以生成更可靠和更准确的输出。 Adobe建议将PDF光栅器库用于以下场景：
+将大型、内容密集型PDF或AI文件上传到[!DNL Adobe Experience Manager Assets]时，默认库可能无法生成准确的输出。 与默认库的输出相比，Adobe的PDF光栅器库可以生成更可靠和更准确的输出。 Adobe建议将PDF光栅器库用于以下场景：
 
 Adobe建议为以下内容使用PDF光栅器库：
 
@@ -25,36 +25,36 @@ Adobe建议为以下内容使用PDF光栅器库：
 
 与开箱即用输出相比，使用PDF光栅器生成的缩略图和预览质量更好，因此可跨设备提供一致的观看体验。 Adobe PDF光栅器库不支持任何色彩空间转换。 它始终输出到RGB，与源文件的色彩空间无关。
 
-1. 将PDF光栅器软件包安装到您的 [!DNL Adobe Experience Manager] 部署自 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
+1. 从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip)在[!DNL Adobe Experience Manager]PDF上安装部署光栅器包。
 
    >[!NOTE]
    >
    >PDF光栅器库仅适用于Windows和Linux®。
 
-1. 访问 [!DNL Assets] 工作流控制台位于 `https://[aem_server]:[port]/workflow`. 打开 [!UICONTROL DAM更新资产] 工作流。
+1. 访问位于`https://[aem_server]:[port]/workflow`的[!DNL Assets]工作流控制台。 打开[!UICONTROL DAM更新资产]工作流。
 
 1. 要防止使用默认方法生成PDF文件和AI文件的缩略图和Web演绎版，请执行以下步骤：
 
-   * 打开 **[!UICONTROL 进程缩略图]** 步骤，然后添加 `application/pdf` 或 `application/postscript` 在 **[!UICONTROL 跳过MIME类型]** 下的字段 **[!UICONTROL 缩略图]** 选项卡。
+   * 打开&#x200B;**[!UICONTROL 处理缩略图]**&#x200B;步骤，并根据需要在&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡下的&#x200B;**[!UICONTROL 跳过MIME类型]**&#x200B;字段中添加`application/pdf`或`application/postscript`。
 
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
-   * 在 **[!UICONTROL 启用Web的图像]** 选项卡，添加 `application/pdf` 或 `application/postscript` 下 **[!UICONTROL 跳过列表]** 具体取决于您的要求。
+   * 在&#x200B;**[!UICONTROL 启用Web的图像]**&#x200B;选项卡中，根据您的要求，在&#x200B;**[!UICONTROL 跳过列表]**&#x200B;下添加`application/pdf`或`application/postscript`。
 
-   ![跳过图像格式的缩略图处理的配置](assets/web_enabled_imageskiplist.png)
+   ![跳过图像格式缩略图处理的配置](assets/web_enabled_imageskiplist.png)
 
-1. 打开 **[!UICONTROL 栅格化PDF/AI图像预览呈现版本]** 步骤，并删除要跳过默认生成的预览图像呈现的MIME类型。 例如，删除MIME类型 `application/pdf`， `application/postscript`，或 `application/illustrator` 从 **[!UICONTROL MIME类型]** 列表。
+1. 打开&#x200B;**[!UICONTROL 栅格化PDF/AI图像预览呈现版本]**&#x200B;步骤，并删除要跳过默认生成的预览图像呈现版本的MIME类型。 例如，从&#x200B;**[!UICONTROL MIME类型]**&#x200B;列表中删除MIME类型`application/pdf`、`application/postscript`或`application/illustrator`。
 
    ![process_arguments](assets/process_arguments.png)
 
-1. 拖动 **[!UICONTROL PDF光栅器处理程序]** 从侧面板到下方的步骤 **[!UICONTROL 进程缩略图]** 步骤。
-1. 为配置以下参数 **[!UICONTROL PDF光栅器处理程序]** 步骤：
+1. 将&#x200B;**[!UICONTROL PDF光栅器处理程序]**&#x200B;步骤从侧面板拖到&#x200B;**[!UICONTROL 进程缩略图]**&#x200B;步骤下方。
+1. 为&#x200B;**[!UICONTROL PDF光栅器处理程序]**&#x200B;步骤配置以下参数：
 
-   * MIME类型： `application/pdf` 或 `application/postscript`
+   * MIME类型： `application/pdf`或`application/postscript`
    * 命令： `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * 添加缩略图大小：319:319、140:100、48:48。 添加自定义缩略图配置（如有必要）。
 
-   的命令行参数 `PDFRasterizer` 命令可以包括以下内容：
+   `PDFRasterizer`命令的命令行参数可以包含以下内容：
 
    * `-d`：用于启用文本、矢量图稿和图像的平滑渲染的标志。 创建质量更好的图像。 但是，包含此参数会导致命令运行速度缓慢并增加图像大小。
 
@@ -66,25 +66,25 @@ Adobe建议为以下内容使用PDF光栅器库：
 
    * `-h`：帮助
 
-1. 要删除中间格式副本，请选择 **[!UICONTROL 删除生成的呈现版本]**.
-1. 要让PDF光栅器生成Web呈现形式，请选择 **[!UICONTROL 生成Web演绎版]**.
+1. 要删除中间格式副本，请选择&#x200B;**[!UICONTROL 删除生成的格式副本]**。
+1. 要让PDF光栅器生成Web呈现形式，请选择&#x200B;**[!UICONTROL 生成Web呈现形式]**。
 
    ![generate_web_renditions1](assets/generate_web_renditions1.png)
 
-1. 在中指定设置 **[!UICONTROL 启用Web的图像]** 选项卡。
+1. 在&#x200B;**[!UICONTROL 启用Web的图像]**&#x200B;选项卡中指定设置。
 
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. 保存工作流。
-1. 要使PDF光栅器能够使用PDF库处理PDF，请打开 **[!UICONTROL DAM流程子资产]** 模型来自 [!UICONTROL 工作流] 控制台。
-1. 从侧面板中，将PDF光栅器处理程序步骤拖动到 **[!UICONTROL 创建支持Web的图像演绎版]** 步骤。
-1. 为配置以下参数 **[!UICONTROL PDF光栅器处理程序]** 步骤：
+1. 要启用PDF光栅器以使用PDF库处理PDF，请从[!UICONTROL 工作流]控制台中打开&#x200B;**[!UICONTROL DAM流程子资产]**&#x200B;模型。
+1. 从侧面板中，将PDF光栅器处理程序步骤拖动到&#x200B;**[!UICONTROL 创建支持Web的图像演绎版]**&#x200B;步骤下。
+1. 为&#x200B;**[!UICONTROL PDF光栅器处理程序]**&#x200B;步骤配置以下参数：
 
-   * MIME类型： `application/pdf` 或 `application/postscript`
+   * MIME类型： `application/pdf`或`application/postscript`
    * 命令： `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
-   * 添加缩略图大小： `319:319`， `140:100`， `48:48`. 根据需要添加自定义缩略图配置。
+   * 添加缩略图大小： `319:319`、`140:100`、`48:48`。 根据需要添加自定义缩略图配置。
 
-   的命令行参数 `PDFRasterizer` 命令可以包括以下内容：
+   `PDFRasterizer`命令的命令行参数可以包含以下内容：
 
    * `-d`：用于启用文本、矢量图稿和图像的平滑渲染的标志。 创建质量更好的图像。 但是，包含此参数会导致命令运行速度缓慢并增加图像大小。
 
@@ -96,14 +96,14 @@ Adobe建议为以下内容使用PDF光栅器库：
 
    * `-h`：帮助
 
-1. 要删除中间格式副本，请选择 **[!UICONTROL 删除生成的呈现版本]**.
-1. 要让PDF光栅器生成Web呈现形式，请选择 **[!UICONTROL 生成Web演绎版]**.
+1. 要删除中间格式副本，请选择&#x200B;**[!UICONTROL 删除生成的格式副本]**。
+1. 要让PDF光栅器生成Web呈现形式，请选择&#x200B;**[!UICONTROL 生成Web呈现形式]**。
 
    ![generate_web_renditions](assets/generate_web_renditions.png)
 
-1. 在中指定设置 **[!UICONTROL 启用Web的图像]** 选项卡。
+1. 在&#x200B;**[!UICONTROL 启用Web的图像]**&#x200B;选项卡中指定设置。
 
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. 保存工作流。
-1. 将PDF文件或AI文件上传到 [!DNL Experience Manager Assets]. PDF光栅器会为文件生成缩略图和Web呈现形式。
+1. 将PDF文件或AI文件上载到[!DNL Experience Manager Assets]。 PDF光栅器会为文件生成缩略图和Web呈现形式。

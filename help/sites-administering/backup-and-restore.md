@@ -32,7 +32,7 @@ ht-degree: 0%
 * 您可以通过包从另一个系统获取数据
 * 或者，在临时系统上恢复备份，创建一个内容包并将其部署到缺少此内容的系统上。
 
-有关详细信息，请参阅 [包备份](/help/sites-administering/backup-and-restore.md#package-backup) 下。
+有关详细信息，请参阅下面的[包备份](/help/sites-administering/backup-and-restore.md#package-backup)。
 
 ## 时间安排 {#timing}
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ## 在线备份 {#online-backup}
 
-此备份方法创建整个存储库的备份，包括部署在其下的任何应用程序，如AEM。 备份包括内容、版本历史记录、配置、软件、修补程序、自定义应用程序、日志文件、搜索索引等。 如果您使用群集，并且共享文件夹是的子目录 `crx-quickstart` （物理目录或使用软链接）也会备份共享目录。
+此备份方法创建整个存储库的备份，包括部署在其下的任何应用程序，如AEM。 备份包括内容、版本历史记录、配置、软件、修补程序、自定义应用程序、日志文件、搜索索引等。 如果您使用群集，并且共享文件夹是`crx-quickstart`的子目录（物理目录或使用软链接），则共享目录也会备份。
 
 您可以稍后恢复整个存储库（以及任何应用程序）。
 
@@ -60,18 +60,18 @@ ht-degree: 0%
 
 创建备份时，您有以下选项：
 
-* 使用AEM集成备份工具备份到目录。
+* 使用AEM的集成备份工具备份到目录。
 * 使用文件系统快照备份到目录
 
 在任何情况下，备份都会创建存储库的映像（或快照）。 然后，系统备份代理应该注意将此映像实际传输到专用备份系统（磁带机）。
 
 >[!NOTE]
 >
->如果在具有自定义Blobstore配置的AEM实例上使用AEM联机备份功能，建议将数据存储的路径配置为在&#39;&#39;之外 `crx-quickstart`”目录并分别备份数据存储。
+>如果在具有自定义Blobstore配置的AEM实例上使用AEM联机备份功能，建议将数据存储的路径配置为在“`crx-quickstart`”目录之外，并单独备份数据存储。
 
 >[!CAUTION]
 >
->联机备份仅备份文件系统。 如果将存储库内容和/或存储库文件存储在数据库中，则需要单独备份该数据库。 如果将AEM与MongoDB一起使用，请参阅有关如何使用 [MongoDB本机备份工具](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/).
+>联机备份仅备份文件系统。 如果将存储库内容和/或存储库文件存储在数据库中，则需要单独备份该数据库。 如果将AEM与MongoDB一起使用，请参阅有关如何使用[MongoDB本机备份工具](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/)的文档。
 
 ### AEM联机备份 {#aem-online-backup}
 
@@ -79,13 +79,13 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->不要同时运行AEM联机备份 [数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md) 或 [修订版清理](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). 这将对系统性能产生负面影响。
+>请勿同时运行AEM Online Backup和[数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md)或[修订清理](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)。 这将对系统性能产生负面影响。
 
-在启动备份时，您可以指定 **目标路径** 和/或 **延迟**.
+开始备份时，您可以指定&#x200B;**目标路径**&#x200B;和/或&#x200B;**延迟**。
 
-**目标路径** 备份文件通常保存在包含快速入门jar文件(.jar)的文件夹的父文件夹中。 例如，如果AEM jar文件位于/InstallationKits/AEM下，则会在/InstallationKits下生成备份。 您还可以为所选位置指定目标。
+**目标路径**&#x200B;备份文件通常保存在保存快速入门jar文件(.jar)的文件夹的父文件夹中。 例如，如果AEM jar文件位于/InstallationKits/AEM下，则会在/InstallationKits下生成备份。 您还可以为所选位置指定目标。
 
-如果 **目标路径** 是一个目录，在此目录中创建存储库的图像。 如果存储备份时多次使用同一个目录（或总是使用同一个目录），
+如果&#x200B;**TargetPath**&#x200B;是一个目录，则在此目录中创建存储库的图像。 如果存储备份时多次使用同一个目录（或总是使用同一个目录），
 
 * 在TargetPath中相应地修改存储库中已修改的文件
 * 存储库中已删除的文件将在TargetPath中删除
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果 **目标路径** 设置为带扩展名的文件名 **.zip**，存储库将备份到临时目录，然后此临时目录的内容将压缩并存储在ZIP文件中。
+>如果将&#x200B;**TargetPath**&#x200B;设置为扩展名为&#x200B;**.zip**&#x200B;的文件名，则存储库将备份到临时目录中，然后压缩此临时目录的内容并将其存储在ZIP文件中。
 >
 >这种做法令人气馁，因为
 >
@@ -104,25 +104,25 @@ ht-degree: 0%
 >
 >如果需要创建ZIP作为备份格式，则应备份到目录，然后使用压缩程序创建zip文件。
 
-**延迟** 指示时间延迟（以毫秒为单位），以使存储库性能不受影响。 默认情况下，存储库备份以全速运行。 您可以减慢创建联机备份的速度，这样就不会减慢其他任务的速度。
+**延迟**&#x200B;表示时间延迟（以毫秒为单位），因此存储库性能不受影响。 默认情况下，存储库备份以全速运行。 您可以减慢创建联机备份的速度，这样就不会减慢其他任务的速度。
 
 如果延迟时间非常长，请确保在线备份不会超过24小时。 如果是，则放弃此备份，因为它可能不包含所有二进制文件。
 1毫秒的延迟通常导致10%的CPU使用率，10毫秒的延迟通常导致3%的CPU使用率。 总延迟时间（以秒为单位）的估计如下：存储库大小（以MB为单位），乘以延迟时间（以毫秒为单位），再除以2（如果使用zip选项），或再除以4（备份到目录时）。 这意味着对具有1毫秒延迟的200 MB存储库的目录的备份将备份时间增加约50秒。
 
 >[!NOTE]
 >
->请参阅 [AEM联机备份的工作原理](#how-aem-online-backup-works) 以了解该过程的内部详细信息。
+>有关该过程的内部详细信息，请参阅[AEM Online Backup的工作方式](#how-aem-online-backup-works)。
 
 要创建备份，请执行以下操作：
 
 1. 以管理员身份登录到AEM。
 
-1. 转到 **工具 — 操作 — 备份。**
+1. 转到&#x200B;**工具 — 操作 — 备份。**
 1. 单击&#x200B;**创建**。此时将打开备份控制台。
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
-1. 在备份控制台上，指定 **[目标路径](#aem-online-backup)** 和 **[延迟](#aem-online-backup)**.
+1. 在备份控制台上，指定&#x200B;**[目标路径](#aem-online-backup)**&#x200B;和&#x200B;**[延迟](#aem-online-backup)**。
 
    ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -133,11 +133,11 @@ ht-degree: 0%
    >
    >` https://<*hostname*>:<*port-number*>/libs/granite/backup/content/admin.html`
 
-1. 单击 **保存**，进度条将指示备份进度。
+1. 单击&#x200B;**保存**，进度条将指示备份进度。
 
    >[!NOTE]
    >
-   >您可以 **取消** 随时运行备份。
+   >您可以随时&#x200B;**取消**&#x200B;正在运行的备份。
 
 1. 备份完成后， zip文件将列在备份窗口中。
 
@@ -145,7 +145,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >不再需要的备份文件可以使用控制台删除。 在左窗格中选择备份文件，然后单击 **删除**.
+   >不再需要的备份文件可以使用控制台删除。 在左窗格中选择备份文件，然后单击&#x200B;**删除**。
 
    >[!NOTE]
    >
@@ -155,19 +155,19 @@ ht-degree: 0%
 
 如果可能，应在系统负荷很小时（例如，早上时）运行联机备份。
 
-可以使用自动执行备份 `wget` 或 `curl` HTTP客户端。 下面显示了如何使用curl自动执行备份的示例。
+可以使用`wget`或`curl` HTTP客户端自动进行备份。 下面显示了如何使用curl自动执行备份的示例。
 
 #### 备份到默认目标目录 {#backing-up-to-the-default-target-directory}
 
 >[!CAUTION]
 >
->在以下示例中， `curl` 可能需要为实例配置命令；例如，主机名( `localhost`)，端口( `4502`)，管理员密码( `xyz`)和文件名( `backup.zip`)。
+>在以下示例中，`curl`命令中的各种参数可能需要为您的实例进行配置；例如，主机名(`localhost`)、端口(`4502`)、管理员密码(`xyz`)和文件名(`backup.zip`)。
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=backup.zip
 ```
 
-备份文件/目录在服务器上创建，位于包含 `crx-quickstart` 文件夹（与使用浏览器创建备份时相同）。 例如，如果您在目录中安装了AEM `/InstallationKits/crx-quickstart/`，则会在中创建备份 `/InstallationKits` 目录。
+备份文件/目录在服务器上创建，位于包含`crx-quickstart`文件夹的父文件夹中（与使用浏览器创建备份时相同）。 例如，如果您在目录`/InstallationKits/crx-quickstart/`中安装了AEM，则备份将在`/InstallationKits`目录中创建。
 
 curl命令会立即返回，因此您必须监视此目录以查看zip文件何时准备就绪。 在创建备份时，可以看到临时目录（其名称基于最终zip文件的名称），最后将压缩此目录。 例如：
 
@@ -176,11 +176,11 @@ curl命令会立即返回，因此您必须监视此目录以查看zip文件何�
 
 #### 备份到非默认目标目录 {#backing-up-to-a-non-default-target-directory}
 
-通常，备份文件/目录是在服务器上在包含 `crx-quickstart` 文件夹。
+通常，备份文件/目录是在服务器上在包含`crx-quickstart`文件夹的文件夹的父文件夹中创建的。
 
-如果要将备份（任何一种类型）保存到其他位置，可以设置“到 `target` 中的参数 `curl` 命令。
+如果要将备份（任何一种）保存到其他位置，可以在`curl`命令中设置到`target`参数的绝对路径。
 
-例如，要生成 `backupJune.zip` 在目录中 `/Backups/2012`：
+例如，要在目录`/Backups/2012`中生成`backupJune.zip`：
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=/Backups/2012/backupJune.zip"
@@ -192,7 +192,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->也可以触发备份 [使用AEM提供的MBean](/help/sites-administering/jmx-console.md).
+>还可以使用AEM](/help/sites-administering/jmx-console.md)提供的MBean [触发备份。
 
 ### 文件系统快照备份 {#filesystem-snapshot-backup}
 
@@ -215,12 +215,12 @@ AEM Online Backup由一系列内部操作组成，以确保正在备份的数据
 
 1. 创建zip文件时，第一步是创建或定位目标目录。
 
-   * 如果备份到zip文件，则会创建临时目录。 目录名称开头为 `backup.` 结束于 `.temp`；例如， `backup.f4d3.temp`.
+   * 如果备份到zip文件，则会创建临时目录。 目录名称以`backup.`开头并以`.temp`结尾；例如，`backup.f4d3.temp`。
    * 如果备份到目录，则使用目标路径中指定的名称。 可以使用现有目录，否则将创建新目录。
 
-     名为的空文件 `backupInProgress.txt` 备份启动时，将在目标目录中创建。 备份完成后，此文件将被删除。
+     备份启动时，在目标目录中创建一个名为`backupInProgress.txt`的空文件。 备份完成后，此文件将被删除。
 
-1. 文件将从源目录复制到目标目录（或在创建zip文件时复制到临时目录）。 区段存储将在数据存储之前复制，以避免存储库损坏。 创建备份时，将忽略索引和缓存数据。 因此，数据来自 `crx-quickstart/repository/cache` 和 `crx-quickstart/repository/index` 不在备份中。 在创建zip文件时，进程的进度条指示符介于0%-70%之间；如果未创建zip文件，则进度条指示符介于0%-100%之间。
+1. 文件将从源目录复制到目标目录（或在创建zip文件时复制到临时目录）。 区段存储将在数据存储之前复制，以避免存储库损坏。 创建备份时，将忽略索引和缓存数据。 因此，备份中不包含来自`crx-quickstart/repository/cache`和`crx-quickstart/repository/index`的数据。 在创建zip文件时，进程的进度条指示符介于0%-70%之间；如果未创建zip文件，则进度条指示符介于0%-100%之间。
 
 1. 如果备份到预先存在的目录，则删除目标目录中的“旧”文件。 旧文件是源目录中不存在的文件。
 
@@ -237,7 +237,7 @@ AEM Online Backup由一系列内部操作组成，以确保正在备份的数据
 1. 具体取决于目标：
 
    * 如果指定了zip文件，则现在将从临时目录创建该文件。 进度指示器70%-100%。 然后删除临时目录。
-   * 如果目标是目录，则空文件名为 `backupInProgress.txt` 将被删除，以指示备份已完成。
+   * 如果目标是一个目录，则将删除名为`backupInProgress.txt`的空文件，以指示备份已完成。
 
 ## 恢复备份 {#restoring-the-backup}
 
@@ -250,11 +250,11 @@ AEM Online Backup由一系列内部操作组成，以确保正在备份的数据
 
 要备份和还原内容，您可以使用包管理器之一，该管理器使用内容包格式来备份和还原内容。 包管理器在定义和管理包方面提供了更大的灵活性。
 
-有关上述每种内容包格式的功能和利弊的详细信息，请参阅 [如何使用包](/help/sites-administering/package-manager.md).
+有关每种内容包格式的功能和权衡的详细信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
 
 ### 备份范围 {#scope-of-backup}
 
-使用包管理器或内容拉链备份节点时，CRX将保存以下信息：
+使用包管理器或内容拉链备份节点时，CRX会保存以下信息：
 
 * 所选树下的存储库内容。
 * 用于备份内容的节点类型定义。

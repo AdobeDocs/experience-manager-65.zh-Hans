@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 使用AEM 6配置LDAP {#configuring-ldap-with-aem}
 
-LDAP (此 **L**&#x200B;高权重 **D**&#x200B;目录 **A**&#x200B;访问 **P** rotocol)用于访问集中式目录服务。 它有助于减少管理用户帐户所需的工作量，因为多个应用程序可以访问用户帐户。 其中一个LDAP服务器是Active Directory。 LDAP通常用于实现单点登录，它允许用户在一次登录后访问多个应用程序。
+LDAP （**L**&#x200B;高&#x200B;**D**&#x200B;目录&#x200B;**A**&#x200B;访问&#x200B;**P**&#x200B;协议）用于访问集中式目录服务。 它有助于减少管理用户帐户所需的工作量，因为多个应用程序可以访问用户帐户。 其中一个LDAP服务器是Active Directory。 LDAP通常用于实现单点登录，它允许用户在一次登录后访问多个应用程序。
 
 用户帐户可以在LDAP服务器和存储库之间同步，LDAP帐户详细信息将保存在存储库中。 此功能允许将帐户分配给存储库组，以便分配所需的权限和特权。
 
@@ -41,15 +41,15 @@ LDAP (此 **L**&#x200B;高权重 **D**&#x200B;目录 **A**&#x200B;访问 **P** r
 
 >[!NOTE]
 >
->观看 [Oak的外部登录模块 — 使用LDAP和其他方式进行身份验证](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html) 以深入了解外部登录模块。
+>观看[Oak的外部登录模块 — 使用LDAP和Beyond](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html)进行身份验证，以深入了解外部登录模块。
 >
->要阅读有关使用Apache DS配置Experience Manager的示例，请参见 [正在配置Adobe Experience Manager 6.5以使用Apache Directory Service。](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
+>要阅读有关使用Apache DS配置Experience Manager的示例，请参阅[配置Adobe Experience Manager 6.5以使用Apache目录服务。](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
 ## 配置LDAP身份提供程序 {#configuring-the-ldap-identity-provider}
 
 LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
-您可以在管理控制台中的 **Apache Jackrabbit Oak LDAP身份提供程序** 名称。
+可在管理控制台中的&#x200B;**Apache Jackrabbit Oak LDAP标识提供程序**&#x200B;名称下找到它。
 
 以下配置选项可用于LDAP身份提供程序：
 
@@ -113,7 +113,7 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
   </tr>
   <tr>
    <td><strong>用户额外筛选器</strong></td>
-   <td>搜索用户时要使用的额外LDAP过滤器。 最终筛选器的格式如下所示：“(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
+   <td>搜索用户时要使用的额外LDAP过滤器。 最终筛选器的格式如下：'(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
    <td><strong>用户DN路径</strong></td>
@@ -133,7 +133,7 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
   </tr>
   <tr>
    <td><strong>分组额外筛选器</strong></td>
-   <td>搜索组时要使用的额外LDAP过滤器。 最终筛选器的格式如下所示：“(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
+   <td>搜索组时要使用的额外LDAP过滤器。 最终筛选器的格式如下所示：'(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
   </tr>
   <tr>
    <td><strong>组DN路径</strong></td>
@@ -150,7 +150,7 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
 同步处理程序定义身份提供程序用户和组如何与存储库同步。
 
-它位于 **Apache Jackrabbit Oak默认同步处理程序** 名称。
+它位于管理控制台中的&#x200B;**Apache Jackrabbit Oak Default Sync Handler**&#x200B;名称下。
 
 以下配置选项可用于同步处理程序：
 
@@ -205,17 +205,17 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
 ## 外部登录模块 {#the-external-login-module}
 
-外部登录模块位于 **Apache Jackrabbit Oak外部登录模块** 在管理控制台下。
+外部登录模块位于管理控制台下的&#x200B;**Apache Jackrabbit Oak外部登录模块**&#x200B;下。
 
 >[!NOTE]
 >
->Apache Jackrabbit Oak外部登录模块实施Java™身份验证和授权服务(JAAS)规范。 请参阅 [官方OracleJava™安全参考指南](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) 以了解更多信息。
+>Apache Jackrabbit Oak外部登录模块实施Java™身份验证和授权服务(JAAS)规范。 有关详细信息，请参阅[官方OracleJava™安全参考指南](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html)。
 
 其工作是定义要使用哪个身份提供程序和同步处理程序，从而有效地绑定两个模块。
 
 可以使用以下配置选项：
 
-| **jaas排名** | 指定此登录模块条目的排名（即排序顺序）。 条目按降序排序（即，值较高的排名配置排在首位）。 |
+| **JAAS排名** | 指定此登录模块条目的排名（即排序顺序）。 条目按降序排序（即，值较高的排名配置排在首位）。 |
 |---|---|
 | **JAAS控制标志** | 指定LoginModule是REQUIRED、REQUISITE、SUFFIENT还是OPTIONAL的属性。 有关这些标记含义的更多详细信息，请参阅JAAS配置文档。 |
 | **JAAS领域** | LoginModule注册的领域名（或应用程序名）。 如果未提供领域名称，则使用Felix JAAS配置中配置的默认领域注册LoginModule。 |
@@ -230,7 +230,7 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
 可以将AEM 6配置为通过SSL使用LDAP进行身份验证，过程如下：
 
-1. 查看 **使用SSL** 或 **使用TLS** 复选框。 [LDAP身份提供程序](#configuring-the-ldap-identity-provider).
+1. 配置[LDAP身份提供程序](#configuring-the-ldap-identity-provider)时，请选中&#x200B;**使用SSL**&#x200B;或&#x200B;**使用TLS**&#x200B;复选框。
 1. 根据您的设置配置同步处理程序和外部登录模块。
 1. 如果需要，请在Java™ VM中安装SSL证书。 可以使用keytool完成此安装：
 
@@ -244,7 +244,7 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
 1. 确保您已安装并运行SSL库。 此过程使用OpenSSL作为示例。
 
-1. 创建自定义的OpenSSL配置(cnf)文件。 可以通过复制默认**openssl.cnf**配置文件并对其进行自定义来完成此配置。 在UNIX®系统上，它位于 `/usr/lib/ssl/openssl.cnf`
+1. 创建自定义的OpenSSL配置(cnf)文件。 可以通过复制默认**openssl.cnf**配置文件并对其进行自定义来完成此配置。 在UNIX®系统上，它位于`/usr/lib/ssl/openssl.cnf`
 
 1. 通过在终端中运行以下命令继续创建CA根密钥：
 
@@ -280,12 +280,12 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
 * 日志级别： Debug
 * 日志文件logs/ldap.log
-* 消息模式： {0，日期，`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast；{4}&amp;ast； {2} {3} {5}
+* 消息模式： {0，date，`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;amp；ast；{4}&amp;amp；ast； {2} {3} {5}
 * 记录器：org.apache.jackrabbit.oak.security.authentication.ldap
 
 * 日志级别： Debug
 * 日志文件：logs/external.log
-* 消息模式： {0，日期，`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;ast；{4}&amp;ast； {2} {3} {5}
+* 消息模式： {0，date，`dd.MM.yyyy` `HH:mm:ss.SSS`} &amp;amp；ast；{4}&amp;amp；ast； {2} {3} {5}
 * 日志记录器：org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## 关于组隶属关系的消息 {#a-word-on-group-affiliation}
@@ -296,9 +296,9 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
 如果从LDAP服务器上的组中删除用户，则同步时更改将反映在AEM端。 但是，用户的所有其他未由LDAP添加的组关联仍保持不变。
 
-AEM使用检测并处理从外部组中清除用户的操作。 `rep:externalId` 属性。 此属性将自动添加到由同步处理程序同步的任何用户或组，并且包含有关原始身份提供者的信息。
+AEM使用`rep:externalId`属性检测并处理从外部组中清除用户的操作。 此属性将自动添加到由同步处理程序同步的任何用户或组，并且包含有关原始身份提供者的信息。
 
-请参阅Apache Oak文档，网址为 [用户和组同步](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html).
+请参阅有关[用户和组同步](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html)的Apache Oak文档。
 
 ## 已知问题 {#known-issues}
 

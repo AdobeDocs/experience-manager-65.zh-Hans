@@ -33,14 +33,14 @@ ht-degree: 65%
 
 1. 可以任选其一：
 
-   1. [选择加入Adobe Target](/help/sites-administering/opt-in.md)：选择加入向导会获取您的Target帐户信息，并创建Adobe Target云配置和Target框架。 该向导还会将您的站点与Target框架相关联。 如果向导无法连接到目标，请参阅 [连接故障排除](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) 部分。 您可以 [修改默认云配置](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations)：如有必要，请修改选择加入向导创建的云配置和框架。 例如，修改框架以将其他上下文数据发送到Target。 如果要使用Adobe Analytics作为Adobe Target的报表源，则需要修改云配置以指向A4T配置。
-   1. [手动与Adobe Target集成](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
+   1. [选择加入Adobe Target](/help/sites-administering/opt-in.md)：选择加入向导会获取您的Target帐户信息，并创建Adobe Target云配置和Target框架。 该向导还会将您的站点与Target框架相关联。 如果向导无法连接到目标，请参阅[连接故障排除](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems)部分。 然后，您可以[修改默认的云配置](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations)：如有必要，请修改选择加入向导创建的云配置和框架。 例如，修改框架以将其他上下文数据发送到Target。 如果要使用Adobe Analytics作为Adobe Target的报表源，则需要修改云配置以指向A4T配置。
+   1. [手动与Adobe Target集成](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target)。
 
 1. [配置活动](/help/sites-authoring/activitylib.md)：将您的活动与 Target 云配置相关联。
 
 >[!NOTE]
 >
->另请参阅 [使用DTM将AEM与Adobe Target和Adobe Analytics集成](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+>另请参阅[使用DTM将AEM与Adobe TargetAdobe Analytics集成](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)。
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ ht-degree: 65%
 >
 >请参阅[与 Adobe Target 集成的先决条件](/help/sites-administering/target-requirements.md#securing-the-activity-settings-node)，以了解详细信息。
 
-在集成完成后，您可以[创作目标内容](/help/sites-authoring/content-targeting-touch.md)来将访客数据发送到 Adobe Target。请注意，页面组件需要特定代码才能启用内容定位。(请参阅 [针对目标内容进行开发](/help/sites-developing/target.md).)
+在集成完成后，您可以[创作目标内容](/help/sites-authoring/content-targeting-touch.md)来将访客数据发送到 Adobe Target。请注意，页面组件需要特定代码才能启用内容定位。（请参阅[针对目标内容进行开发](/help/sites-developing/target.md)。）
 
 >[!NOTE]
 >

@@ -35,13 +35,13 @@ ht-degree: 1%
 
 ## 包管理器 {#package-manager}
 
-包管理器用于管理AEM安装中的包。 在您拥有 [已分配必要的权限](#permissions-needed-for-using-the-package-manager) 您可以将包管理器用于各种操作，包括配置、构建、下载和安装包。
+包管理器用于管理AEM安装中的包。 在您[分配了必要的权限](#permissions-needed-for-using-the-package-manager)之后，您可以使用包管理器执行各种操作，包括配置、生成、下载和安装包。
 
 ### 所需权限 {#required-permissions}
 
 要创建、修改、上载和安装包，用户必须在以下节点上拥有适当的权限：
 
-* 完全权限（不包括删除日期） `/etc/packages`
+* 完全权限（不包括`/etc/packages`上的删除）
 * 包含包内容的节点
 
 >[!CAUTION]
@@ -55,19 +55,19 @@ ht-degree: 1%
 您可以通过三种方式访问包管理器：
 
 1. 从AEM主菜单> **工具** > **部署** > **包**
-1. 从 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) 使用顶部切换器栏
-1. 直接访问 `http://<host>:<port>/crx/packmgr/`
+1. 从[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)（使用顶部切换栏）
+1. 直接访问`http://<host>:<port>/crx/packmgr/`
 
 ### 包管理器UI {#ui}
 
 Package Manager分为四个主要功能区域：
 
-* **左侧导航面板**  — 利用此面板，可筛选包列表并对包列表进行排序。
-* **包列表**  — 这是实例上的包列表，按照左侧导航面板中的选择进行过滤和排序。
-* **活动日志**  — 此面板最初最小化，然后展开以详细描述包管理器的活动，如在生成或安装包时。 在“活动日志”选项卡中，还有其它按钮用于：
+* **左侧导航面板** — 此面板允许您对包列表进行筛选和排序。
+* **包列表** — 这是实例上的包列表，按照左侧导航面板中的选择进行筛选和排序。
+* **活动日志** — 此面板最初最小化，并展开以详细说明包管理器的活动，如生成或安装包时。 在“活动日志”选项卡中，还有其它按钮用于：
    * **清除日志**
    * **显示/隐藏**
-* **工具栏**  — 工具栏包含用于左侧导航面板和包列表的刷新按钮，以及用于搜索、创建和上传包的按钮。
+* **工具栏** — 工具栏包含用于左侧导航面板和包列表的刷新按钮以及用于搜索、创建和上传包的按钮。
 
 ![包管理器UI](assets/package-manager-ui.png)
 
@@ -85,7 +85,7 @@ Package Manager分为四个主要功能区域：
 * [下载](#downloading-packages-to-your-file-system)
 * [共享](#share)
 
-下面提供了进一步的操作 **更多** 按钮。
+**更多**&#x200B;按钮下提供了其他操作。
 
 * [删除](#deleting-packages)
 * [范围](#package-coverage)
@@ -107,7 +107,7 @@ Package Manager分为四个主要功能区域：
 
 ## 包设置 {#package-settings}
 
-资源包本质上是一组过滤器，以及基于这些过滤器的存储库数据。 使用包管理器UI，您可以单击包，然后单击 **编辑** 按钮查看文件包的详细信息，包括以下设置。
+资源包本质上是一组过滤器，以及基于这些过滤器的存储库数据。 使用包管理器UI，您可以单击包，然后单击&#x200B;**编辑**&#x200B;按钮以查看包的详细信息，包括以下设置。
 
 * [常规设置](#general-settings)
 * [包过滤器](#package-filters)
@@ -119,9 +119,9 @@ Package Manager分为四个主要功能区域：
 
 您可以编辑各种包设置以定义包说明、依赖性和提供程序详细信息等信息。
 
-此 **包设置** 对话框可通过 **编辑** 按钮时间 [创建](#creating-a-new-package) 或 [编辑](#viewing-and-editing-package-information) 一个包裹。 进行任何更改后，单击 **保存**.
+在[创建](#creating-a-new-package)或[编辑](#viewing-and-editing-package-information)包时，**包设置**&#x200B;对话框可通过&#x200B;**编辑**&#x200B;按钮使用。 进行任何更改后，单击&#x200B;**保存**。
 
-![“编辑包”对话框，常规设置](assets/general-settings.png)
+![编辑包对话框，常规设置](assets/general-settings.png)
 
 | 字段 | 描述 |
 |---|---|
@@ -143,39 +143,39 @@ Package Manager分为四个主要功能区域：
 
 扩展的官方AEM安装
 
-![官方AEM安装或扩展缩略图](assets/official-installation.png)
+![正式AEM安装或扩展缩略图](assets/official-installation.png)
 
 Official Service Pack
 
-![Official AEM service pack图标](assets/official-service-pack.png)
+![Official AEM Service Pack图标](assets/official-service-pack.png)
 
 为您的包使用唯一图标。 请勿重用Adobe使用的图标。
 
 ### 包过滤器 {#package-filters}
 
-过滤器标识要包含在包中的存储库节点。 A **筛选器定义** 指定以下信息：
+过滤器标识要包含在包中的存储库节点。 **筛选器定义**&#x200B;指定了以下信息：
 
-* 此 **根路径** 要包含的内容的
-* **规则** 在根路径下包含或排除特定节点
+* 要包含的内容的&#x200B;**根路径**
+* 在根路径下包含或排除特定节点的&#x200B;**规则**
 
-使用添加规则 **+** 按钮。 使用删除规则 **-** 按钮。
+使用&#x200B;**+**&#x200B;按钮添加规则。 使用&#x200B;**-**&#x200B;按钮删除规则。
 
-规则会根据其顺序进行应用，以便使用 **向上** 和 **向下** 箭头按钮。
+规则是根据其顺序应用的，因此请使用&#x200B;**向上**&#x200B;和&#x200B;**向下**&#x200B;箭头按钮根据需要进行定位。
 
 过滤器可以包含零个或多个规则。 未定义规则时，包将包含根路径下的所有内容。
 
 您可以为包定义一个或多个筛选器定义。 使用多个筛选器以包含来自多个根路径的内容。
 
-![“筛选器”选项卡](assets/edit-filter.png)
+![筛选器选项卡](assets/edit-filter.png)
 
 创建规则时，您可以定义正则表达式（也称为正则表达式、正则表达式或正则表达式），以指定要包含或排除的所有节点。
 
 | 规则类型 | 描述 |
 |---|---|
-| include | Include将包括指定目录中与正则表达式匹配的所有文件和文件夹。 包括 **不会** 包括指定根路径下的其他文件或文件夹。 |
+| include | Include将包括指定目录中与正则表达式匹配的所有文件和文件夹。 Include **将不会**&#x200B;包含指定根路径下的其他文件或文件夹。 |
 | 排除 | 排除将排除与正则表达式匹配的所有文件和文件夹。 |
 
-通常，当您首次定义包过滤器时 [创建包。](#creating-a-new-package) 但是，它们也可以稍后进行编辑，之后应重建包以根据新的筛选器定义更新其内容。
+最常在首次[创建包时定义包筛选器。](#creating-a-new-package)但是，以后也可以编辑它们，此后应重新构建包以根据新的筛选器定义更新其内容。
 
 >[!TIP]
 >
@@ -183,11 +183,11 @@ Official Service Pack
 
 >[!TIP]
 >
->有关背景信息，请参阅 [Apache Jackrabbit — 工作区过滤器](https://jackrabbit.apache.org/filevault/filter.html) 文档。
+>有关后台信息，请参阅[Apache Jackrabbit - Workspace Filter](https://jackrabbit.apache.org/filevault/filter.html)文档。
 
 ### 依赖项 {#dependencies}
 
-![“依赖项”选项卡](assets/dependencies.png)
+![依赖关系选项卡](assets/dependencies.png)
 
 | 字段 | 描述 | 示例/详细信息 |
 |---|---|---|
@@ -205,8 +205,8 @@ Official Service Pack
 | 名称 | 程序包提供程序的名称 | `WKND Media Group` |
 | URL | 提供商URL | `https://wknd.site` |
 | 链接 | 到提供程序页的特定于包的链接 | `https://wknd.site/package/` |
-| 需要 | 定义安装包时是否存在任何限制 | **管理员**  — 必须仅使用管理员权限安装软件包&#x200B;<br>**重新启动**  — 安装包后必须重新启动AEM |
-| AC 处理 | 指定在导入包时如何处理包中定义的访问控制信息 | **忽略**  — 在存储库中保留ACL <br>**覆盖**  — 覆盖存储库中的ACL <br>**合并**  — 合并两组ACL <br>**MergePreserve**  — 通过添加内容中不存在的承担者的访问控制条目，将内容中的访问控制与包中提供的访问控制合并&#x200B;<br>**清除**  — 清除ACL |
+| 需要 | 定义安装包时是否存在任何限制 | **管理员** — 必须以管理员权限安装包&#x200B;<br>**重新启动** — 安装包后必须重新启动AEM |
+| AC 处理 | 指定在导入包时如何处理包中定义的访问控制信息 | **忽略** — 保留存储库中的ACL <br>**覆盖** — 覆盖存储库中的ACL <br>**合并** — 合并这两组ACL <br>**合并保留** — 将内容中的访问控制项与随包一起提供的访问控制项合并，方法是添加内容中不存在的主体的访问控制项&#x200B;<br>**清除** — 清除ACL |
 
 ### 程序包屏幕截图 {#package-screenshots}
 
@@ -222,45 +222,45 @@ Official Service Pack
 
 1. [访问包管理器。](#accessing)
 
-1. 单击 **创建包**.
+1. 单击&#x200B;**创建包**。
 
    >[!TIP]
    >
    >如果您的实例具有许多包，则可能已有文件夹结构。 在这种情况下，创建新包之前可以更轻松地导航到所需的目标文件夹。
 
-1. 在 **新建包** 对话框，请输入以下字段：
+1. 在&#x200B;**新建包**&#x200B;对话框中，输入以下字段：
 
-   ![“新建包”对话框](assets/new-package-dialog.png)
+   ![新包对话框](assets/new-package-dialog.png)
 
-   * **包名称**  — 选择一个描述性名称，以帮助您（和其他人）轻松识别包的内容。
+   * **包名称** — 选择一个描述性名称，以帮助您（和其他人）轻松识别包的内容。
 
-   * **版本**  — 这是一个文本字段，用于指示版本。 这会附加到包名称以形成zip文件的名称。
+   * **版本** — 这是一个文本字段，用于指示版本。 这会附加到包名称以形成zip文件的名称。
 
-   * **组**  — 这是目标组（或文件夹）的名称。 组可帮助您组织包。 如果该组尚不存在，则会为其创建文件夹。 如果将组名称留空，它将在主包列表中创建包。
+   * **组** — 这是目标组（或文件夹）名称。 组可帮助您组织包。 如果该组尚不存在，则会为其创建文件夹。 如果将组名称留空，它将在主包列表中创建包。
 
-1. 单击 **确定** 以创建包。
+1. 单击&#x200B;**确定**&#x200B;以创建包。
 
 1. AEM在程序包列表的顶部列出新程序包。
 
-   ![新建包](assets/new-package.png)
+   ![新包](assets/new-package.png)
 
-1. 单击 **编辑** 以定义 [包内容。](#package-contents) 单击 **保存** 完成编辑设置后。
+1. 单击&#x200B;**编辑**&#x200B;以定义[包内容。完成编辑设置后，](#package-contents)单击&#x200B;**保存**。
 
-1. 您现在可以 [生成](#building-a-package) 您的包。
+1. 您现在可以[生成](#building-a-package)您的包。
 
 创建包后不必立即构建包。 未构建的包不包含任何内容，并且仅由包的过滤器数据和其他元数据组成。
 
 ### 构建资源包 {#building-a-package}
 
-通常，生成包的同时也会生成一个包 [创建包](#creating-a-new-package)，但您可以稍后返回构建或重新构建包。 如果存储库中的内容已更改或包过滤器已更改，此功能会很有用。
+通常在[创建包](#creating-a-new-package)的同时生成包，但可在以后返回生成或重建包。 如果存储库中的内容已更改或包过滤器已更改，此功能会很有用。
 
 1. [访问包管理器。](#accessing)
 
 1. 单击包名称，从包列表中打开包详细信息。
 
-1. 单击 **生成**. 此时会出现一个对话框，要求您确认是否确实要生成包，因为任何现有的包内容都将被覆盖。
+1. 单击&#x200B;**生成**。 此时会出现一个对话框，要求您确认是否确实要生成包，因为任何现有的包内容都将被覆盖。
 
-1. 单击 **确定**. AEM会生成资源包，并在活动列表中列出添加到资源包的所有内容。 完成AEM后，将显示已生成包的确认信息，并且（关闭对话框时）会更新包列表信息。
+1. 单击&#x200B;**确定**。 AEM会生成资源包，并在活动列表中列出添加到资源包的所有内容。 完成AEM后，将显示已生成包的确认信息，并且（关闭对话框时）会更新包列表信息。
 
 ### 编辑资源包 {#edit-package}
 
@@ -270,11 +270,11 @@ Official Service Pack
 
 1. 单击包名称，从包列表中打开包详细信息。
 
-1. 单击 **编辑** 并更新 **[包设置](#package-settings)** 根据需要。
+1. 单击&#x200B;**编辑**&#x200B;并根据需要更新&#x200B;**[包设置](#package-settings)**。
 
-1. 单击 **保存** 以保存。
+1. 单击&#x200B;**保存**&#x200B;以进行保存。
 
-您可能需要 [重新生成包](#building-a-package) 以根据您所做的更改更新其内容。
+您可能需要[重新生成包](#building-a-package)以根据您所做的更改更新其内容。
 
 ### 重新包装包 {#rewrapping-a-package}
 
@@ -284,11 +284,11 @@ Official Service Pack
 
 1. 单击包名称，从包列表中打开包详细信息。
 
-1. 单击 **编辑** 并更新 **[包设置](#package-settings)** 根据需要。
+1. 单击&#x200B;**编辑**&#x200B;并根据需要更新&#x200B;**[包设置](#package-settings)**。
 
-1. 单击 **保存** 以保存。
+1. 单击&#x200B;**保存**&#x200B;以进行保存。
 
-1. 单击 **更多** > **重新包装** 将出现一个对话框要求进行确认。
+1. 单击&#x200B;**更多** > **重新包装**，此时将出现对话框要求确认。
 
 ### 查看其他包版本 {#other-versions}
 
@@ -298,7 +298,7 @@ Official Service Pack
 
 1. 单击包名称，从包列表中打开包详细信息。
 
-1. 单击 **更多** > **其他版本** 此时将打开一个对话框，其中包含相同资源包的其他版本列表以及状态信息。
+1. 单击&#x200B;**更多** > **其他版本**，将打开一个对话框，其中包含同一包的其他版本的列表以及状态信息。
 
 ### 查看包内容和测试安装 {#viewing-package-contents-and-testing-installation}
 
@@ -308,11 +308,11 @@ Official Service Pack
 
 1. 单击包名称，从包列表中打开包详细信息。
 
-1. 要查看内容，请单击 **更多** > **目录**，包管理器在活动日志中列出包的全部内容。
+1. 要查看内容，请单击&#x200B;**更多** > **内容**，包管理器将在活动日志中列出包的全部内容。
 
    ![包内容](assets/package-contents.png)
 
-1. 要执行安装试运行，请单击 **更多** > **测试安装** 和包管理器会在活动日志中报告结果，就像执行了安装一样。
+1. 要试用安装，请单击&#x200B;**更多** > **测试安装**，包管理器将在活动日志中报告结果，就像已执行安装一样。
 
    ![测试安装](assets/test-install.png)
 
@@ -322,13 +322,13 @@ Official Service Pack
 
 1. 单击包名称，从包列表中打开包详细信息。
 
-1. 单击 **下载** 按钮或包详细信息区域中包的链接文件名。
+1. 单击包详细信息区域中的&#x200B;**下载**&#x200B;按钮或包的链接文件名。
 
 1. AEM会将包下载到您的计算机。
 
 ### 共享包 {#share}
 
-包共享是一种用于分发内容包的集中式公共服务。 包共享已被取代 [Software Distribution](#software-distribution) 这个按钮就没用了。
+包共享是一种用于分发内容包的集中式公共服务。 包共享已被[软件分发](#software-distribution)取代，并且此按钮不再有效。
 
 ### 从您的文件系统上传包 {#uploading-packages-from-your-file-system}
 
@@ -336,18 +336,18 @@ Official Service Pack
 
 1. 选择要将包上载到其中的组文件夹。
 
-1. 单击 **上传包** 按钮。
+1. 单击&#x200B;**上传包**&#x200B;按钮。
 
 1. 提供有关已上传文件包的必需信息。
 
-   ![包上传对话框](assets/package-upload-dialog.png)
+   ![包上载对话框](assets/package-upload-dialog.png)
 
-   * **包**  — 使用 **浏览……** 按钮从本地文件系统选择所需的包。
-   * **强制上传**  — 如果具有此名称的包已存在，则此选项将强制上传并覆盖现有包。
+   * **包** — 使用&#x200B;**浏览……**&#x200B;按钮从本地文件系统中选择所需的包。
+   * **强制上传** — 如果已存在具有此名称的包，则此选项将强制上传并覆盖现有包。
 
-1. 单击 **确定** 并且将上传选定的资源包，并相应地更新资源包列表。
+1. 单击&#x200B;**确定**&#x200B;将上载选定的包并相应地更新包列表。
 
-包内容现在存在于AEM上，但要使内容可供使用，请确保 [安装包](#installing-packages).
+包内容现在存在于AEM上，但若要使该内容可供使用，请确保[安装包](#installing-packages)。
 
 ### 验证包 {#validating-packages}
 
@@ -363,9 +363,9 @@ Official Service Pack
 
 ##### 验证 OSGi 包的导入情况 {#osgi-package-imports}
 
-**勾选内容**
+**检查的内容**
 
-此验证检查所有JAR文件（OSGi包）的包，提取其 `manifest.xml` （包含所述OSGi捆绑所依赖的版本化依赖项），并验证AEM实例以正确的版本导出所述依赖项。
+此验证检查所有JAR文件（OSGi包）的包，提取其`manifest.xml`（包含所述OSGi包所依赖的版本依赖项），并使用正确的版本验证AEM实例导出所述依赖项。
 
 **报告方式**
 
@@ -381,11 +381,11 @@ Official Service Pack
 
 ##### 验证覆盖 {#overlays}
 
-**勾选内容**
+**检查的内容**
 
 此验证可确定正在安装的包是否包含目标AEM实例中已覆盖的文件。
 
-例如，假定在 `/apps/sling/servlet/errorhandler/404.jsp`，一个包，其中包含 `/libs/sling/servlet/errorhandler/404.jsp`，以便更改位于的现有文件 `/libs/sling/servlet/errorhandler/404.jsp`.
+例如，假定在`/apps/sling/servlet/errorhandler/404.jsp`处有一个现有的叠加，包中包含`/libs/sling/servlet/errorhandler/404.jsp`，这样它将更改`/libs/sling/servlet/errorhandler/404.jsp`处的现有文件。
 
 **报告方式**
 
@@ -397,7 +397,7 @@ Official Service Pack
 
 **错误解决**
 
-要解决此问题，请在中维护叠加文件 `/apps` 必须查看对中的覆盖文件所做的更改 `/libs` 并将所需的更改合并到叠加中( `/apps`)，并重新部署覆盖的文件。
+要解决此问题，`/apps`中叠加文件的维护者必须审核对`/libs`中叠加文件的更改，并将所需的更改合并到叠加(`/apps`)中，然后重新部署叠加文件。
 
 >[!NOTE]
 >
@@ -405,7 +405,7 @@ Official Service Pack
 
 ##### 验证 ACL {#acls}
 
-**勾选内容**
+**检查的内容**
 
 此验证会检查正在添加的权限、如何处理这些权限（合并/替换），以及当前权限是否会受到影响。
 
@@ -440,9 +440,9 @@ Official Service Pack
 
 1. 单击包名称，从包列表中打开包详细信息。
 
-1. 要验证包，请单击 **更多** > **验证**，
+1. 要验证包，请单击&#x200B;**更多** > **验证**，
 
-1. 在随后显示的模式对话框中，使用复选框选择验证类型，并通过单击开始验证 **验证**.
+1. 在随后显示的模式对话框中，使用复选框选择验证类型，并通过单击&#x200B;**验证**&#x200B;开始验证。
 
 1. 然后，所选验证将运行，结果将显示在包管理器的活动日志中。
 
@@ -454,13 +454,13 @@ POST请求采用以下形式。
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
 ```
 
-此 `type` 参数可以是任何以逗号分隔的无序列表，包括：
+`type`参数可以是任何逗号分隔的无顺序列表，包括：
 
 * `osgiPackageImports`
 * `overlays`
 * `acls`
 
-的值 `type` 默认为 `osgiPackageImports` 如果未明确传递。
+如果未显式传递，`type`的值默认为`osgiPackageImports`。
 
 使用cURL时，请执行与以下内容类似的语句：
 
@@ -478,7 +478,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 单击包名称，从包列表中打开包详细信息。
 
-1. 单击 **更多** > **覆盖率**.
+1. 单击&#x200B;**更多** > **覆盖范围**。
 
 1. 服务范围详细信息列在活动日志中。
 
@@ -500,45 +500,45 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* 接下来，安装完成后，重新激活WorkflowLauncher。
 >
->停用WorkflowLauncher可确保资产导入程序框架在安装时不会（无意中）处理资产。
+>停用WorkflowLauncher可确保Assets导入程序框架在安装时不会（无意中）处理资源。
 
 1. [访问包管理器。](#accessing)
 
 1. 单击包名称，从包列表中打开要安装的包的包详细信息。
 
-1. 单击 **安装** 按钮或 **安装** 包状态中的链接。
+1. 单击项目详细信息中的&#x200B;**Install**&#x200B;按钮或包状态中的&#x200B;**Install**&#x200B;链接。
 
 1. 对话框将请求确认，并允许指定其他选项。
 
-   * **仅提取**  — 仅提取包，以便不创建快照，因此将无法卸载
-   * **保存阈值**  — 触发自动保存之前的临时节点数（如果遇到并发修改异常，则增加）
-   * **提取子包**  — 启用自动提取子包
-   * **访问控制处理**  — 指定安装软件包时如何处理软件包中定义的访问控制信息(选项与 [高级包设置](#advanced-settings))
-   * **依赖关系处理**  — 指定安装期间依赖关系的处理方式
+   * **仅提取** — 仅提取包以便不创建快照，因此将无法卸载
+   * **保存阈值** — 触发自动保存之前的临时节点数（如果遇到并发修改异常，则增加）
+   * **提取子包** — 启用自动提取子包
+   * **访问控制处理** — 指定安装包时如何处理包中定义的访问控制信息（选项与[高级包设置](#advanced-settings)相同）
+   * **依赖关系处理** — 指定依赖关系在安装期间如何处理
 
-1. 单击 **安装**.
+1. 单击&#x200B;**安装**。
 
 1. 活动日志详细说明了安装进度。
 
-安装完成并成功后，将更新软件包列表，并键入 **已安装** 在包状态中显示。
+安装完成并成功后，将更新包列表，并在包状态中显示&#x200B;**Installed**。
 
 ### 重新安装包 {#reinstalling-packages}
 
-重新安装软件包对已安装的软件包执行与以下情况下处理的软件包相同的步骤： [初始安装包。](#installing-packages)
+重新安装软件包对[初始安装软件包时处理的已安装软件包执行相同的步骤。](#installing-packages)
 
 ### 基于文件系统的上载和安装 {#file-system-based-upload-and-installation}
 
 安装包时，您可以完全放弃包管理器。 AEM可以检测位于主机本地文件系统上特定位置的软件包，并自动上传和安装它们。
 
-1. 在AEM安装文件夹下， `crx-quicksart` 在jar和 `license.properties` 文件。 创建名为的文件夹 `install` 下 `crx-quickstart` 导致路径 `<aem-home>/crx-quickstart/install`.
+1. 在AEM安装文件夹下，jar和`license.properties`文件旁边有一个`crx-quicksart`文件夹。 在`crx-quickstart`下创建名为`install`的文件夹，生成路径`<aem-home>/crx-quickstart/install`。
 
 1. 在此文件夹中，添加您的包。 它们将自动上传并安装到您的实例上。
 
 1. 上载和安装完成后，您可以在包管理器中查看包，就像使用包管理器UI安装包一样。
 
-如果实例正在运行，则将其添加到软件包并添加到时，将立即开始上载和安装 `install` 文件夹
+如果实例正在运行，则在将其添加到包到`install`文件夹中时，将立即开始上载和安装
 
-如果实例未运行，则将包放置在 `install` 文件夹在启动时按字母顺序安装。
+如果实例未运行，则按字母顺序在启动时安装放置在`install`文件夹中的包。
 
 ### 卸载包 {#uninstalling-packages}
 
@@ -548,7 +548,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 单击包名称，从包列表中打开要卸载的包的包详细信息。
 
-1. 单击 **更多** > **卸载**，从存储库中删除此包的内容。
+1. 单击&#x200B;**更多** > **卸载**，从存储库中删除此包的内容。
 
 1. 此时将显示一个对话框，请求确认并列出所做的所有更改。
 
@@ -562,7 +562,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 单击包名称，打开要从包列表中删除的包的包详细信息。
 
-1. 包管理器会要求您确认是否要删除包。 单击 **确定** 以确认删除。
+1. 包管理器会要求您确认是否要删除包。 单击&#x200B;**确定**&#x200B;以确认删除。
 
 1. 资源包信息将被删除，详细信息将会在活动日志中报告。
 
@@ -574,7 +574,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 单击包名称，从包列表中打开要复制的包的包详细信息。
 
-1. 单击 **更多** > **复制**.
+1. 单击&#x200B;**更多** > **复制**。
 
 1. 将复制资源包，并在活动日志中报告详细信息。
 
@@ -582,9 +582,9 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 AEM包可用于在AEM环境中创建和共享内容。
 
-[Software Distribution](https://downloads.experiencecloud.adobe.com) 是一项集中式服务，旨在简化AEM包的搜索和下载。
+[Software Distribution](https://downloads.experiencecloud.adobe.com)是一项集中式服务，旨在简化AEM包的搜索和下载。
 
-欲了解更多信息，请参见 [Software Distribution文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+有关详细信息，请参阅[软件分发文档。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!NOTE]
 >

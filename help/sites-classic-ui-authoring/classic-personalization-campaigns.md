@@ -36,16 +36,16 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 营销活动管理由各种元素组成：
 
 * **品牌**
-在Adobe Experience Manager (AEM)中，品牌是顶级单元，构成了 **营销活动**.
+在Adobe Experience Manager (AEM)中，品牌是顶层单位，构成了**促销活动**&#x200B;的集合。
 
 * **营销活动**
-营销活动是个体集合 **体验**.
+营销活动是单个**体验**&#x200B;的集合。
 
 * **体验**
-重点内容构成了各种体验，在提供给访客的 **接触点**. 有多种类型的体验可用：
+重点内容形成了各种体验，在**接触点**&#x200B;提供给访客。 有多种类型的体验可用：
 
-   * **Teasers**
-     [Teaser页面/段落](#teasers) 用于控制特定访客 **区段** 专注于他们的兴趣的内容。
+   * **预告**
+     [Teaser页面/段落](#teasers)用于引导特定访客&#x200B;**区段**&#x200B;访问关注其兴趣的内容。
 
      Teaser页面可以：
 
@@ -54,9 +54,9 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 
      通常，Teaser页面是一种临时操作，在特定时间段内持续存在，直到它被下一个Teaser页面替换为止。
 
-   * **快讯**
+   * **新闻稿**
 
-     [电子邮件通信](#emailmarketing) 用于吸引用户并鼓励他们访问您的网站。 这些邮件通常采用新闻稿的形式，发送给贵机构的 **潜在客户** (分组为 **列表**)。 **注意：** Adobe不打算进一步增强此功能。 建议为 [使用Adobe Campaign以及与AEM的集成](/help/sites-administering/campaign.md).
+     [电子邮件通信](#emailmarketing)用于吸引用户并鼓励他们访问您的网站。 这些通常采用新闻稿的形式，发送给您的&#x200B;**潜在客户**（这些潜在客户已分组到&#x200B;**列表**）。 **注意：** Adobe不打算进一步增强此功能。 建议您[使用Adobe Campaign以及与AEM](/help/sites-administering/campaign.md)的集成。
 
    * **Adobe Target**
 
@@ -72,13 +72,13 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 
   您收集到的有关访客的信息以及如何联系这些访客的信息构成了潜在客户的基础。 **注意：** Adobe不打算进一步增强此功能。
 
-  建议为 [使用Adobe Campaign以及与AEM的集成](/help/sites-administering/campaign.md).
+  建议您[使用Adobe Campaign以及与AEM](/help/sites-administering/campaign.md)的集成。
 
 * **列表**
 
   潜在客户将分组到列表中，以便您能够对其执行集体操作。 注意： **注意：** Adobe不打算进一步增强此功能。
 
-  建议为 [使用Adobe Campaign以及与AEM的集成。](/help/sites-administering/campaign.md)
+  建议使用[使用Adobe Campaign以及与AEM的集成。](/help/sites-administering/campaign.md)
 
 * **区段**
 
@@ -88,6 +88,6 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 
   营销活动管理器(MCM)是一个控制台，可让您访问创建和控制营销活动、品牌、体验、接触点、潜在客户、列表、区段和报表所需的所有功能。
 
-  可以从各种位置访问(标记为 **营销活动**)，或者使用（例如）URL：
+  可以从各种位置（标记为&#x200B;**促销活动**）访问，例如，使用URL访问：
 
   `http://localhost:4502/libs/mcm/content/admin.html`

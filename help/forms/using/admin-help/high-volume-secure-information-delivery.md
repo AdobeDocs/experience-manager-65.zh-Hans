@@ -28,4 +28,4 @@ Document Security还支持抽象策略。 抽象策略是包含所有策略属�
 
 仅通过Document Security Java SDK支持创建抽象策略。 但是，您可以管理从document security网页的抽象策略创建的策略。 使用此方法创建的策略的行为与从Document Security网页创建的策略相同。
 
-请参阅 [使用AEM表单编程](https://www.adobe.com/go/learn_aemforms_programming_63) 以了解更多信息。
+有关详细信息，请参阅[使用AEM窗体编程](https://www.adobe.com/go/learn_aemforms_programming_63)。

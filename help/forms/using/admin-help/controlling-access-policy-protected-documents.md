@@ -42,21 +42,21 @@ ht-degree: 0%
 >
 >使用“文档详细信息”页面上的“策略名称”链接可访问在Microsoft Outlook中为附加到电子邮件的文档的收件人自动生成的策略。 这些策略不会显示在策略页面上。
 
-**文档名称：** 所选文档的名称。
+**文档名称：**&#x200B;所选文档的名称。
 
 **文档ID：** Document Security在将策略应用于文档时分配的唯一标识符。 document security使用此编号跟踪文档。
 
-**文档状态：** 文档的状态（例如，有效或已撤销。）
+**文档状态：**&#x200B;文档状态（例如，活动或吊销。）
 
-**发布者：** 将策略附加到文档的用户的名称。
+**发布者：**&#x200B;将策略附加到文档的用户的名称。
 
-**策略名称：** 用于保护文档的策略的名称。 您可以单击该名称以打开策略。 使用此链接可访问Acrobat为Outlook中附加到电子邮件的文档收件人生成的策略。 这些策略不会显示在“策略”页面上。
+**策略名称：**&#x200B;用于保护文档的策略的名称。 您可以单击该名称以打开策略。 使用此链接可访问Acrobat为Outlook中附加到电子邮件的文档收件人生成的策略。 这些策略不会显示在“策略”页面上。
 
-**策略类型：** 应用于文档的策略类型。
+**策略类型：**&#x200B;应用于文档的策略类型。
 
-**发布日期：** 将策略应用于文档的日期。
+**发布日期：**&#x200B;将策略应用到文档的日期。
 
-**相关迭代：** 如果文档具有相关小版本，则该项目也会出现在列表中。 单击链接可查看文档的相关小版本列表。
+**相关迭代：**&#x200B;如果文档具有相关迭代，则该项也会出现在列表中。 单击链接可查看文档的相关小版本列表。
 
 用户可以查看有关其受保护文档的信息。 管理员可以查看任何用户受策略保护的文档的相关信息。 策略集协调员可以查看受策略保护且不受策略集保护的文档的相关信息。
 
@@ -71,14 +71,14 @@ ht-degree: 0%
 
 如果启用了此功能，则可以从“文档”页面查看文档的相关小版本。
 
-1. 查看文档的文档详情页面。 (请参阅 [查看有关文档的信息](controlling-access-policy-protected-documents.md#view-information-about-a-document).)
+1. 查看文档的文档详情页面。 （请参阅[查看有关文档的信息](controlling-access-policy-protected-documents.md#view-information-about-a-document)。）
 1. 单击“查看相关小版本”。 仅当启用该功能时，该选项才可用。 此时将显示相关小版本的列表。 对于每个小版本，可以查看以下信息：
 
-   * **迭代：** 文件名。 它可能与原始文件名不同，并且末尾附加了一个版本号。
-   * **发布者：** 原始文档的发布者。
-   * **创建者：** 保存迭代的用户。
-   * **创建日期：** 保存迭代的日期和时间。
-   * **策略：** 保护迭代的策略。 不同的迭代可能受不同的策略保护。
+   * **迭代：**&#x200B;文件名。 它可能与原始文件名不同，并且末尾附加了一个版本号。
+   * **发布者：**&#x200B;原始文档的发布者。
+   * **创建者：**&#x200B;保存迭代的用户。
+   * **创建日期：**&#x200B;保存迭代的日期和时间。
+   * **策略：**&#x200B;保护迭代的策略。 不同的迭代可能受不同的策略保护。
 
 1. 要显示该小版本的“文档详细信息”页面，请单击小版本的文件名。
 
@@ -86,11 +86,11 @@ ht-degree: 0%
 
 您可以撤销和恢复对受策略保护文档的访问权限：
 
-**用户：** 可以撤销或恢复对文档的访问权限，这些文档由用户使用自己的个人策略或共享策略进行保护，对于这些共享策略在应用策略的用户启用了撤销功能。 无法撤销文档访问权限或切换策略的用户需要联系管理员。
+**用户：**&#x200B;可以撤销或恢复对受其保护的文档的访问权限，这些文档通过其个人策略或共享策略进行保护，对于应用该策略的用户，这些共享策略启用了撤销功能。 无法撤销文档访问权限或切换策略的用户需要联系管理员。
 
-**管理员：** 可以撤销或恢复任何受策略保护文档的访问权限，包括受个人或共享策略保护的文档。 如果管理员撤销对受共享策略保护的文档的访问权限，则只有管理员可以恢复该文档的访问权限。
+**管理员：**&#x200B;可以撤销或恢复任何受策略保护文档的访问权限，包括受个人或共享策略保护的文档。 如果管理员撤销对受共享策略保护的文档的访问权限，则只有管理员可以恢复该文档的访问权限。
 
-**策略集协调器：** 可以撤销或恢复策略集中的策略所保护的文档的访问权限。
+**策略集协调器：**&#x200B;可以撤销或恢复其策略集中的策略所保护的文档的访问权限。
 
 当您撤销或恢复文档访问权限时，更改将在以下时间生效：
 
@@ -104,9 +104,9 @@ ht-degree: 0%
 1. 选中相应文档旁边的复选框，然后单击“撤消”。 您可以一次撤消对多个文档的访问权限。
 1. 选择在撤消文档后向尝试打开文档的用户显示的消息：
 
-   * **常规消息：** 指示作者撤消了文档
-   * **文档已终止：** 指示作者已终止文档
-   * **已修订文档**：表示作者修订了文档
+   * **常规消息：**&#x200B;指示作者已撤消文档
+   * **文档已终止：**&#x200B;表示作者已终止文档
+   * **文档已修订**：指示作者已修订文档
 
 1. （可选）如果文档有较新版本可用，请输入URL并单击测试以验证该URL。
 1. 单击“确定”，然后再次单击“确定”以返回“文档”页。
@@ -144,17 +144,17 @@ ht-degree: 0%
 
 一些其他搜索选项仅供管理员使用：
 
-**文档ID：** 应用策略时Document Security分配给文档的唯一ID号。
+**文档ID：**&#x200B;应用策略时Document Security分配给文档的唯一ID号。
 
-**文档名称：** 文档的名称。
+**文档名称：**&#x200B;文档的名称。
 
-**发布者名称：** 将策略附加到文档的用户的名称。 您可以从所有域或指定域中选择用户。
+**发布者姓名：**&#x200B;将策略附加到文档的用户姓名。 您可以从所有域或指定域中选择用户。
 
-**策略ID：** 附加到文档的策略的ID号。
+**策略ID：**&#x200B;附加到文档的策略的ID号。
 
-**策略名称：** 附加到文档的策略的名称。
+**策略名称：**&#x200B;附加到文档的策略的名称。
 
-**所有文档：** 所有受管理员和用户保护的文档。 使用“所有文档”选项进行搜索可能会返回一长串文档。
+**所有文档：**&#x200B;所有受管理员和用户保护的文档。 使用“所有文档”选项进行搜索可能会返回一长串文档。
 
 1. 在Document Security页面上，单击“文档”。
 1. 在“查找”列表中，选择所需的搜索条件。
@@ -190,16 +190,17 @@ ht-degree: 0%
 >
 >在Adobe Reader/Acrobat或MobileReader中查看此类文档（包含页面0）时，默认情况下会打开受保护的文档。
 
-**将封面页添加到受策略保护的文档**
+**向受策略保护的文档添加封面页**
 
 在Workbench中使用以下流程：
 
-**包含封面页的Protect文档：** 使用指定的策略保护PDF文档，并向文档添加封面页
+**Protect
+具有封面页的文档：**&#x200B;使用指定的策略保护PDF文档，并向该文档添加封面页
 
-**提取受保护的文档：** 从带有封面页的PDF文档中提取受策略保护的PDF文档
+**提取受保护的文档：**&#x200B;从包含封面页的PDF文档提取受策略保护的PDF文档
 
 使用以下Document Security API：
 
-**protectDocumentWithCoverPage：** 使用指定的策略保护给定PDF，并返回带有封面页和受保护文档的文档作为附件
-`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument：** 提取受保护的文档，该文档是带有封面的文档中的附件。 可以使用protectDocumentWithCoverPage方法创建具有封面页的文档
+**protectDocumentWithCoverPage：**使用指定的策略保护给定PDF，并返回带有封面页和受保护文档的文档作为附件
+`//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a PDF document to which a policy is applied FileInputStream fileInputStream = new FileInputStream("C:\\testFile.pdf"); Document inPDF = new Document(fileInputStream); //Reference a Cover Page document FileInputStream coverPageInputStream = new FileInputStream("C:\\CoverPage.pdf"); Document inCoverDoc = new Document(coverPageInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document RMSecureDocumentResult rmSecureDocument = documentManager.protectDocumentWithCoverPage( inPDF, "ProtectedPDF.pdf", "PolicySetName", "PolicyName", null, null, inCoverDoc, true); //Retrieve the policy-protected PDF document Document protectPDF = rmSecureDocument.getProtectedDoc(); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); protectPDF.copyToFile(myFile);` **extractProtectedDocument：**提取作为封面页文档附件的受保护文档。 可以使用protectDocumentWithCoverPage方法创建具有封面页的文档
 `//Create a ServiceClientFactory instance ServiceClientFactory factory = ServiceClientFactory.createInstance(connectionProps); //Create a RightsManagementClient object RightsManagementClient rightsClient = new RightsManagementClient(factory); //Reference a protected PDF document with a Cover Page FileInputStream fileInputStream = new FileInputStream("C:\\policyProtectedDocWithCoverPage.pdf"); Document inPDF = new Document(fileInputStream); //Create a Document Manager object DocumentManager documentManager = rightsClient.getDocumentManager(); //Apply a policy to the PDF document Document extractedDoc = documentManager.extractProtectedDocument(inPDF); //Save the policy-protected PDF document File myFile = new File("C:\\PolicyProtectedDoc.pdf"); extractedDoc.copyToFile(myFile);`

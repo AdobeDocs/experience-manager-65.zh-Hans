@@ -26,7 +26,7 @@ ht-degree: 0%
 
 1. 为什么中的条形码和签名字段未显示在我的表单中？
 
-   答案：条形码和签名字段在HTML或移动场景中无关。 这些字段显示为非交互区域。 但是，AEM Forms Designer提供了一个新的签名涂写字段，该字段可用于代替签名字段。 您也可以添加 [自定义构件](../../forms/using/custom-widgets.md) 用于条形码，并将它集成。
+   答案：条形码和签名字段在HTML或移动场景中无关。 这些字段显示为非交互区域。 但是，AEM Forms Designer提供了一个新的签名涂写字段，该字段可用于代替签名字段。 还可以添加用于条形码的[自定义构件](../../forms/using/custom-widgets.md)并将其集成。
 
 1. XFA文本字段是否支持富文本？
 
@@ -90,15 +90,15 @@ ht-degree: 0%
 
 1. 为什么某些文本被截断或在HTML5中显示不正确？
 
-   回答：如果为绘制或题注文本元素提供的空间不足以显示内容，则在移动设备表单呈现版本中，文本会显示为截断。 此截断在AEM Forms Designer的“设计”视图中也可见。 虽然此截断可在PDF中处理，但在HTML5表单中无法处理。 要避免出现此问题，请为Draw或Caption Text提供足够的空间，以便在AEM Forms Designer的设计模式下不会截断文本。
+   答案：如果Draw或题注文本元素没有提供足够的空间来显示内容，则移动设备表单呈现版本中的文本会显示为截断。 此截断在AEM Forms Designer的“设计”视图中也可见。 虽然此截断可在PDF中处理，但在HTML5表单中无法处理。 要避免出现此问题，请为Draw或描述文本提供足够的空间，以便它在AEM Forms Designer的设计模式下不会截断。
 
 1. 我观察到与缺少内容或内容重叠相关的布局问题。 原因是什么？
 
-   回答：如果在同一位置有一个绘制文本或绘制图像元素以及另一个重叠元素（例如矩形），则绘制文本内容在文档顺序的后面显示(在AEM Forms Designer层次结构视图中)时不可见。 PDF支持透明分层，但HTML/浏览器不支持透明分层。
+   回答：如果在同一位置有一个Draw文本或Draw图像元素以及另一个重叠元素（例如矩形），则如果在文档顺序中稍后显示的Draw文本内容(在AEM Forms Designer层次结构视图中)，则这些内容将不可见。 PDF支持透明分层，但HTML/浏览器不支持透明分层。
 
 1. 为什么在HTML表单中显示的某些字体与设计表单时使用的字体不同？
 
-   回答：HTML5 Forms不允许嵌入字体(与字体嵌入到表单中的PDF forms相反)。 要使表单的HTML版本按预期呈现，请确保AEM Forms服务器的CRX存储库(AEM Content Repository)中以及安装了AEM Designer的计算机上的字体可用。 当AEM Forms服务器的CRX存储库中或AEM Designer的安装位置中无法使用这些字体时，表单将渲染为回退字体。
+   回答：HTML5 Forms不允许嵌入字体(与字体嵌入到表单中的PDF forms相反)。 要使表单的HTML版本按预期呈现，请确保这些字体在AEM Forms服务器的CRX存储库(AEM Content Repository)中以及安装了AEM Designer的计算机上可用。 当AEM Forms服务器的CRX存储库中或AEM Designer的安装位置不支持这些字体时，将会使用回退字体呈现表单。
 
 1. HTML表单中是否支持vAlign和hAlign属性？
 
@@ -135,7 +135,7 @@ ht-degree: 0%
 
    * 不支持嵌套表格和表格内的子表单。
    * 仅表的顶行或左列支持标头。 中间表元素不支持标头。 如果所有行与列与表的最顶行或最左侧的列一起使用，则可以将标题应用于多个支持行和列标题。
-   * `Rowspan`和 `colspan`不支持来自表中的随机位置。
+   * 不支持来自表中随机位置的`Rowspan`和`colspan`。
 
    * 无法动态添加或删除包含rowspan值大于1的元素的行的实例。
 
@@ -147,7 +147,7 @@ ht-degree: 0%
 
 1. 将光标悬停在字段上时，将显示工具提示。 如何禁用它？
 
-   回答：要在悬停鼠标时禁用工具提示，请在设计器的辅助功能面板中选择“无”。
+   回答：要在悬停鼠标时禁用工具提示，请在Designer的辅助功能面板中选择“无” 。
 
 1. 在Designer中，用户可以配置单选按钮和复选框的自定义外观属性。 在渲染表单时，HTML5表单是否考虑此类自定义外观属性？
 
@@ -155,7 +155,7 @@ ht-degree: 0%
 
 1. 在支持的浏览器中打开HTML5表单时，相邻放置字段的边框未正确对齐或子表单显示重叠。 在Forms Designer中预览同一HTML5表单时，字段和布局不会出现不对齐，并且子表单会显示在正确的位置。 如何修复此问题？
 
-   答案：当子表单设置为流动内容并且子表单具有隐藏的边框元素时，相邻放置字段的边框未正确对齐或子表单显示重叠。 要解决此问题，您可以移除或注释隐藏的 &lt;border> 元素对应的扩展dp中。 例如，以下各项 &lt;border> 元素被标记为注释：
+   答案：当子表单设置为流动内容并且子表单具有隐藏的边框元素时，相邻放置字段的边框未正确对齐或子表单显示重叠。 要解决此问题，您可以从相应的XDP中删除或注释隐藏的&lt;border>元素。 例如，以下&lt;border>元素被标记为注释：
 
    ```xml
                <!--<border>
@@ -177,23 +177,23 @@ ht-degree: 0%
 
 ### 脚本 {#scripting}
 
-1. 在用于HTMLForms的JavaScript实施中是否有任何限制？
+1. JavaScript实施中针对HTMLForms是否存在任何限制？
 
    回答：
 
-   * xfa.connectionSet脚本的支持有限。 对于connectionSet，仅支持在服务器端调用Web服务。 有关详细信息，请参阅 [脚本支持](/help/forms/using/scripting-support.md).
+   * xfa.connectionSet脚本的支持有限。 对于connectionSet，仅支持在服务器端调用Web服务。 有关详细信息，请参阅[脚本支持](/help/forms/using/scripting-support.md)。
    * 客户端脚本不支持$record和$data。 但是，如果脚本是在formReady、layoutReady块中编写的，则脚本仍然有效，因为这些事件在服务器端运行。
-   * 不支持特定于XFA Draw元素的脚本，例如更改Draw文本（如果存在字段，则更改Caption文本）。
+   * 不支持特定于XFA Draw元素的脚本，例如更改Draw文本（如果存在字段，则为描述文本）。
 
 1. 使用formCalc是否有任何限制？
 
-   回答：当前仅实现了formCalc脚本的子集。 有关详细信息，请参阅 [脚本支持](/help/forms/using/scripting-support.md).
+   回答：当前仅实现了formCalc脚本的子集。 有关详细信息，请参阅[脚本支持](/help/forms/using/scripting-support.md)。
 
 1. 是否有任何推荐的命名惯例以及要避免的保留关键字？
 
    回答：
-   * 在AEM Forms Designer中，建议不要以下划线(_)。 要在名称开头使用下划线，请在下划线后添加前缀，_&lt;prefix>&lt;objectname>.
-   * 所有HTML5 Forms API都是保留关键词。 对于自定义API/函数，请使用与不同的名称 [HTML5 Forms API](/help/forms/using/scripting-support.md).
+   * 在AEM Forms Designer中，建议不要以下划线(_)作为对象名称（如子表单或文本字段）的开头。 要在名称的开头使用下划线，请在下划线后添加前缀，_&lt;前缀>&lt;对象名称>。
+   * 所有HTML5 Forms API都是保留关键词。 对于自定义API/函数，请使用与[HTML5表单API](/help/forms/using/scripting-support.md)不同的名称。
 
 1. HTML5表单是否支持浮动字段？
 
@@ -203,9 +203,9 @@ ht-degree: 0%
    >
    >默认情况下，这些字段不启用浮动显示。 您可以使用Forms Designer设置字段的浮动属性。
 
-   1. 打开CRXde Lite并导航到 `/content/xfaforms/profiles/default` 节点。
-   1. 添加属性 `mfDataDependentFloatingField`类型为字符串并将属性的值设置为 `true`.
-   1. 单击 **全部保存**. 现在，使用更新的渲染配置文件为HTMLForms启用了浮动字段。
+   1. 打开CRXde Lite并导航到`/content/xfaforms/profiles/default`节点。
+   1. 添加字符串类型的属性`mfDataDependentFloatingField`并将属性的值设置为`true`。
+   1. 单击&#x200B;**全部保存**。 现在，使用更新的渲染配置文件为HTMLForms启用了浮动字段。
 
       >[!NOTE]
       >
@@ -219,4 +219,4 @@ ht-degree: 0%
 
 1. HTML5表单中是否有保留关键词？
 
-   答案：所有HTML5 Forms API都是保留关键词。 对于自定义API/函数，请使用与不同的名称 [HTML5 Forms API](/help/forms/using/scripting-support.md). 除了保留的关键字之外，如果您使用以下划线(_)开头的对象名称，建议在下划线后添加唯一的前缀。 添加前缀有助于避免与HTML5表单内部API发生任何可能的冲突。 例如，`_fpField1`
+   答案：所有HTML5 Forms API都是保留关键词。 对于自定义API/函数，请使用与[HTML5表单API](/help/forms/using/scripting-support.md)不同的名称。 除了保留的关键字之外，如果您使用以下划线(_)开头的对象名称，建议在下划线后添加唯一的前缀。 添加前缀有助于避免与HTML5表单内部API发生任何可能的冲突。 例如，`_fpField1`

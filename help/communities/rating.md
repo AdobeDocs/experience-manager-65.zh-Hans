@@ -18,30 +18,30 @@ ht-degree: 1%
 
 # 使用评级 {#using-ratings}
 
-此 `Rating` 组件可单独使用，也可与其他Communities功能一起使用。 此组件允许登录的社区成员通过评级内容来表达他们的意见。
+`Rating`组件是独立使用的或与其他Communities功能一起使用。 此组件允许登录的社区成员通过评级内容来表达他们的意见。
 
 ## 向页面添加评级 {#adding-a-rating-to-a-page}
 
-添加 `Rating` 组件到创作模式下的页面，找到该组件 `Communities / Rating` 并将其拖动到页面上的适当位置，例如相对于该特征的位置以供成员评级。
+要将`Rating`组件添加到创作模式下的页面，请找到组件`Communities / Rating`并将其拖动到页面上的适当位置，例如相对于要评级成员的功能的位置。
 
-有关必要信息，请访问 [社区组件基础知识](basics.md).
+有关必要的信息，请访问[社区组件基础知识](basics.md)。
 
-当 [所需的客户端库](rating-basics.md#essentials-for-client-side) 包括，这就是 `Rating` 组件出现。
+当包含[所需的客户端库](rating-basics.md#essentials-for-client-side)时，`Rating`组件的显示方式如下所示。
 
-![评级](assets/rating.png)
+![评分](assets/rating.png)
 
 ## 配置评级 {#configuring-rating}
 
-选择已放置的 `Rating` 组件，以便您能够访问和选择 `Configure` 图标打开“编辑”对话框。
+选择放置的`Rating`组件，以便您可以访问并选择用于打开“编辑”对话框的`Configure`图标。
 
-![configure-new](assets/configure-new.png)
+![配置 — 新](assets/configure-new.png)
 
-在 **[!UICONTROL 文本和标签]** 选项卡，您可以指定评分的内部标识符。
+在&#x200B;**[!UICONTROL 文本和标签]**&#x200B;选项卡下，指定评级的内部标识符。
 
 ![tallyname](assets/tallyname.png)
 
-**[!UICONTROL 标签名称]**
-(*必填*)的简单名称 `Rating` 唯一地标识此实例。 必须为存储库的有效节点名称。
+**[!UICONTROL 记帐名称]**
+（*必需*）唯一标识此实例的`Rating`的简单名称。 必须为存储库的有效节点名称。
 
 ## 网站访客体验 {#site-visitor-experience}
 
@@ -55,4 +55,4 @@ ht-degree: 1%
 
 ## 附加信息 {#additional-information}
 
-欲知更多信息，请访问 [Rating Essentials](rating-basics.md) 适用于开发人员的页面。
+可在面向开发人员的[Rating Essentials](rating-basics.md)页面上找到更多信息。

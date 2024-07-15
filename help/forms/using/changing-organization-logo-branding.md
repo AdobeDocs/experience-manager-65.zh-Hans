@@ -18,9 +18,9 @@ ht-degree: 0%
 
 # 更改品牌推广的组织徽标 {#changing-the-organization-logo-for-branding}
 
-组织徽标显示在AEM Forms工作区的左上角。 要更新徽标，请按照 [AEM Forms工作区自定义的常规步骤](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) 然后执行以下步骤。
+组织徽标显示在AEM Forms工作区的左上角。 要更新徽标，请按照AEM Forms工作区自定义的[常规步骤](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization)操作，然后执行以下步骤。
 
-1. 创建徽标并将文件命名为 `NewWorkspace.png`. 使用WebDAV客户端将图像文件放置到/apps/ws/images文件夹中。
+1. 创建徽标并将文件命名为`NewWorkspace.png`。 使用WebDAV客户端将图像文件放置到/apps/ws/images文件夹中。
 
    >[!NOTE]
    >
@@ -28,7 +28,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关更多信息，请参阅 [WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >有关详细信息，请参阅[WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)。
 
    [WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)
 

@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->如果您没有使用Adobe Experience Manager (AEM)作为内容管理源，请参阅 [AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>如果您未使用Adobe Experience Manager (AEM)作为内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
 
 AEM提供了多种工具，使您能够将内容集成到移动应用程序中。
 
@@ -34,13 +34,13 @@ AEM提供了多种工具，使您能够将内容集成到移动应用程序中�
 
 >[!NOTE]
 >
->要深入了解预检应用程序，请参阅 [使用AEM预检应用程序](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html) AEM Mobile On-demand Services帮助中的。
+>要深入了解预检应用程序，请参阅AEM Mobile On-demand Services帮助中的[使用AEM预检应用程序](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html)。
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
 >[!NOTE]
 >
->在上图中，对于AEM Mobile On-demand Services的典型部署方案，不需要AEM发布实例。
+>在上图中，对于AEM Mobile On-demand Services的典型部署方案，不需要AEM Publish实例。
 
 ## 启动新的移动设备应用程序 {#starting-a-new-mobile-app}
 
@@ -54,15 +54,15 @@ AEM Mobile只是构成整个AEM平台的支柱之一。
 
 >[!NOTE]
 >
->在使用AEM Mobile并按照本快速入门指南中的步骤操作之前，用户应该熟悉AEM。 了解AEM的基础知识 [此处](/help/sites-deploying/deploy.md).
+>在使用AEM Mobile并按照本快速入门指南中的步骤操作之前，用户应该熟悉AEM。 在[此处](/help/sites-deploying/deploy.md)了解AEM的基础知识。
 
 ### 了解AEM Mobile应用程序功能板 {#understanding-the-aem-mobile-application-dashboard}
 
-在了解角色和责任之前，用户应充分了解 **AEM Mobile控制中心** 或 **应用程序功能板**. 单击 [此处](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 以深入了解。
+在了解角色和职责之前，用户应全面了解&#x200B;**AEM Mobile控制中心**&#x200B;或&#x200B;**应用程序仪表板**。 单击[此处](/help/mobile/mobile-apps-ondemand-application-dashboard.md)以深入了解。
 
 ### AEM 管理员 {#aem-administrator}
 
-An ***AEM管理员*** 负责将应用程序添加到AEM Mobile目录，方法是使用创建向导创建应用程序，或导入现有应用程序。 使用AEM Mobile创建应用程序的AEM管理员 *创建向导* 通常从Adobe的开箱即用参考示例或（通常）由创建的自定义应用程序模板中选择所需的应用程序模板之一 *AEM开发人员。*
+***AEM管理员***&#x200B;负责通过使用创建向导创建应用程序或导入现有应用程序将应用程序添加到AEM Mobile目录。 使用AEM Mobile的&#x200B;*创建向导*&#x200B;创建应用程序的AEM管理员通常会从Adobe的现成引用示例或（通常）由&#x200B;*AEM开发人员创建的自定义应用程序模板中选择所需的应用程序模板之一。*
 
 AEM管理员在使用AEM Mobile On-demand Services创建应用程序时负责以下任务：
 
@@ -71,11 +71,11 @@ AEM管理员在使用AEM Mobile On-demand Services创建应用程序时负责以
 * [使用Preflight预览](/help/mobile/aem-mobile-manage-ondemand-services.md)
 * [管理内容服务](/help/mobile/developing-content-services.md)
 
-要开始使用管理员的角色和责任，请参阅 [管理内容以使用AEM Mobile On-demand Services](/help/mobile/aem-mobile.md).
+要开始使用管理员的角色和职责，请参阅[管理内容以使用AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)。
 
 ## AEM开发人员 {#aem-developer}
 
-An **AEM开发人员** 扩展并创建自定义Web模板和组件，从而使*AEM作者*能够创建精美动人的移动体验。 这些模板和组件不仅针对移动应用程序世界进行了优化，而且还与设备和AEM服务器（任何远程服务器）进行通信以连接全通道服务端点。 AEM内置内容编辑器的使用者 *AEM作者* 在应用程序中创建丰富的相关体验，包括与Adobe Experience Cloud其余部分的集成。
+**AEM开发人员**&#x200B;扩展并创建自定义Web模板和组件，以使*AEM作者*创建美观且引人入胜的移动体验。 这些模板和组件不仅针对移动应用程序世界进行了优化，而且还与设备和AEM服务器（任何远程服务器）进行通信以连接全通道服务端点。 *AEM作者*&#x200B;使用AEM的内置内容编辑器在应用程序中创建丰富的相关体验，包括与Adobe Experience Cloud其余部分的集成。
 
 AEM开发人员在使用AEM Mobile On-demand Services创建应用程序时负责以下任务：
 
@@ -84,15 +84,15 @@ AEM开发人员在使用AEM Mobile On-demand Services创建应用程序时负责
 * [内容属性和导出内容](/help/mobile/on-demand-content-properties-exporting.md)
 * [开发AEM Mobile内容服务](/help/mobile/developing-content-services.md)
 
-要开始使用开发人员的角色和职责，请参阅 [为AEM Mobile On-demand Services开发AEM内容](/help/mobile/aem-mobile-on-demand.md).
+要开始了解开发人员的角色和职责，请参阅[为AEM Mobile On-demand Services开发AEM内容](/help/mobile/aem-mobile-on-demand.md)。
 
 >[!NOTE]
 >
->An *AEM开发人员的* 角色并非以模板和组件的开发开始和结束。 An *AEM开发人员* 可以创建全新的应用程序，而不是简单地扩展现成的引用实施示例。
+>*AEM开发人员的*&#x200B;角色不是以开发模板和组件开始和结束。 *AEM开发人员*&#x200B;可以创建全新的应用程序，而不是简单地扩展现成的引用实现示例。
 
 ## AEM Author {#aem-author}
 
-An ***AEM创作* (或 *营销人员*)**使用自定义开发或现成的模板和组件从DAM添加和编辑页面、拖放组件以及添加所有类型的媒体，包括图像、视频和文本片段（内容片段）。 随后，使用AEM内置内容编辑器的是 *AEM作者* 在应用程序中创建丰富的相关体验，包括与Adobe Experience Cloud其余部分的集成。
+***AEM作者*（或&#x200B;*营销人员*）**使用自定义开发或现成的模板和组件从DAM添加和编辑页面、拖放组件以及添加所有类型的媒体，包括图像、视频和文本片段（内容片段）。 然后&#x200B;*AEM作者*使用AEM的内置内容编辑器在应用程序中创建丰富的相关体验，包括与Adobe Experience Cloud其余部分的集成。
 
 使用AEM Mobile On-demand Services创建应用程序时，AEM作者必须了解以下主题：
 
@@ -102,8 +102,8 @@ An ***AEM创作* (或 *营销人员*)**使用自定义开发或现成的模板�
 * [管理内容](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 * [内容服务概述](/help/mobile/develop-content-as-a-service.md)
 
-要开始使用作者的角色和责任，请参阅 [为AEM Mobile On-demand Services应用程序创作AEM内容](/help/mobile/mobile-apps-ondemand.md).
+要开始使用作者的角色和职责，请参阅[为AEM Mobile On-demand Services应用程序创作AEM内容](/help/mobile/mobile-apps-ondemand.md)。
 
 >[!NOTE]
 >
->AEM作者还负责设置权利、创建卡和布局以及发送推送通知。 此外，有关创作内容的方法；管理文章和收藏集；在AEM Mobile中创建横幅、卡片和布局的更多信息，请参阅 [AEM Mobile On-Demand门户](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
+>AEM作者还负责设置权利、创建卡和布局以及发送推送通知。 此外，有关内容创作方法、管理文章和收藏集、在AEM Mobile中创建横幅、卡片和布局的更多信息，请参阅[AEM Mobile按需门户](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2)。

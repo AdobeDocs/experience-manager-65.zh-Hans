@@ -18,9 +18,9 @@ ht-degree: 2%
 
 # 与AdobeDynamic Tag Management集成 {#integrating-with-adobe-dynamic-tag-management}
 
-集成 [Adobe动态Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) AEM ，以便您可以使用Dynamic Tag Management Web资产跟踪AEM站点。 Dynamic Tag Management允许营销人员管理用于收集数据的标记，并在各种数字营销系统中分发数据。 例如，使用Dynamic Tag Management收集AEM网站的使用情况数据，并分发数据以在Adobe Analytics或Adobe Target中进行分析。
+将[AdobeDynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html)与AEM集成，以便您可以使用Dynamic Tag Management Web属性跟踪AEM站点。 Dynamic Tag Management允许营销人员管理用于收集数据的标记，并在各种数字营销系统中分发数据。 例如，使用Dynamic Tag Management收集AEM网站的使用情况数据，并分发数据以在Adobe Analytics或Adobe Target中进行分析。
 
-在集成之前，请先创建动态Tag Management [Web属性](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties) 跟踪AEM网站的域。 此 [托管选项](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) 的，以便您可以配置AEM来访问Dynamic Tag Management库。
+在集成之前，请创建跟踪AEM站点域的Dynamic Tag Management [Web属性](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties)。 必须配置Web属性的[托管选项](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab)，以便您可以配置AEM以访问Dynamic Tag Management库。
 
 配置集成后，对Dynamic Tag Management部署工具和规则的更改不需要在AEM中更改Dynamic Tag Management配置。 这些更改可自动供AEM使用。
 
@@ -41,9 +41,9 @@ ht-degree: 2%
 AEM支持在云中托管或在AEM上托管的动态Tag Management。
 
 * 云托管： Dynamic Tag Management JavaScript库存储在云中，您的AEM页面直接引用它们。
-* AEM托管：动态Tag Management生成JavaScript库。 AEM使用工作流模型来获取和安装库。
+* AEM托管： Dynamic Tag Management生成JavaScript库。 AEM使用工作流模型来获取和安装库。
 
-您的实施使用的托管类型决定了您执行的某些配置和实施任务。 有关托管选项的信息，请参阅 [“托管 — 嵌入”选项卡](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) 在Dynamic Tag Management帮助中。
+您的实施使用的托管类型决定了您执行的某些配置和实施任务。 有关托管选项的信息，请参阅“动态Tag Management帮助”中的[托管 — 嵌入选项卡](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab)。
 
 ### 暂存和生产库 {#staging-and-production-library}
 
@@ -57,7 +57,7 @@ AEM支持在云中托管或在AEM上托管的动态Tag Management。
 
 当AEM托管Dynamic Tag Management库时，您可以使用Dynamic Tag Management部署挂接服务自动将库更新推送到AEM。 在对库进行更改时(例如，在编辑Dynamic Tag Management Web属性时)，将推送库更新。
 
-要使用部署挂接，Dynamic Tag Management必须能够连接到托管库的AEM实例。 [启用对AEM的访问](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) (对于Dynamic Tag Management服务器)。
+要使用部署挂接，Dynamic Tag Management必须能够连接到托管库的AEM实例。 [启用Dynamic Tag Management服务器对AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service)的访问权限。
 
 在某些情况下，可能无法访问AEM，例如当AEM位于防火墙后面时。 在这些情况下，您可以使用AEM轮询导入程序选项定期检索库。 cron作业表达式规定了库下载计划。
 
@@ -66,12 +66,12 @@ AEM支持在云中托管或在AEM上托管的动态Tag Management。
 启用Dynamic Tag Management部署挂接服务以访问AEM，以便该服务可以更新AEM托管的库。 指定根据需要更新暂存和生产库的Dynamic Tag Management服务器的IP地址：
 
 * 暂存： `107.21.99.31`
-* 生产： `23.23.225.112` 和 `204.236.240.48`
+* 生产： `23.23.225.112`和`204.236.240.48`
 
-使用 [Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) 或 [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) 节点：
+使用[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)节点执行配置：
 
 * 在Web控制台中，使用“配置”页面上的“AdobeDTM部署挂接配置”项。
-* 对于OSGi配置，服务PID为 `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`.
+* 对于OSGi配置，服务PID为`com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`。
 
 下表描述了要配置的属性。
 
@@ -86,7 +86,7 @@ AEM支持在云中托管或在AEM上托管的动态Tag Management。
 
 >[!NOTE]
 >
->如果您的DTM Web资产包含Adobe Analytics工具，并且您还在使用，请避免在页面上包含两个Adobe Analytics跟踪代码 [内容分析](/help/sites-authoring/content-insights.md). 在您的 [Adobe Analytics Cloud配置](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)中，选择不包括跟踪代码选项。
+>当DTM Web资产包含Adobe Analytics工具并且您还在使用[Content Insight](/help/sites-authoring/content-insights.md)时，请避免在页面上包含两个Adobe Analytics跟踪代码。 在您的[Adobe Analytics Cloud配置](/help/sites-administering/adobeanalytics-connect.md#configuring-the-connection-to-adobe-analytics)中，选择不包括跟踪代码选项。
 
 ### 常规设置 {#general-settings}
 
@@ -119,7 +119,7 @@ AEM支持在云中托管或在AEM上托管的动态Tag Management。
 
 通过Dynamic Tag Management配置的以下属性，AEM可以托管Dynamic Tag Management库。 利用这些属性，AEM可以下载并安装库。 或者，您也可以自动更新库，以确保它们反映在Dynamic Tag Management管理应用程序中所做的任何更改。
 
-某些资产会使用从Dynamic Tag Management Web资产的“嵌入”选项卡的“库下载”部分中获取的值。 有关信息，请参阅 [库下载](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download) 在Dynamic Tag Management帮助中。
+某些资产会使用从Dynamic Tag Management Web资产的“嵌入”选项卡的“库下载”部分中获取的值。 有关信息，请参阅Dynamic Tag Management帮助中的[库下载](https://microsite.omniture.com/t2/help/en_US/dtm/#Library_Download)。
 
 >[!NOTE]
 >
@@ -147,15 +147,15 @@ AEM支持在云中托管或在AEM上托管的动态Tag Management。
   </tr>
   <tr>
    <td>域提示</td>
-   <td><p>（可选）托管Dynamic Tag Management库的AEM服务器的域。 指定一个值，以便可以覆盖为配置的默认域。 <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer服务</a>.</p> <p>连接到动态Tag Management时，AEM使用此值为动态Tag Management Web属性配置暂存HTTP路径或库下载属性的生产HTTP路径。</p> </td>
+   <td><p>（可选）托管Dynamic Tag Management库的AEM服务器的域。 指定一个值，以便可以覆盖为<a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer服务</a>配置的默认域。</p> <p>连接到动态Tag Management时，AEM使用此值为动态Tag Management Web属性配置暂存HTTP路径或库下载属性的生产HTTP路径。</p> </td>
   </tr>
   <tr>
    <td>安全域提示</td>
-   <td><p>（可选）通过HTTPS托管Dynamic Tag Management库的AEM服务器的域。 指定一个值，以便可以覆盖为配置的默认域。 <a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer服务</a>.</p> <p>连接到动态Tag Management时，AEM会使用此值为动态Tag Management Web属性配置暂存HTTPS路径或库下载属性的生产HTTPS路径。</p> </td>
+   <td><p>（可选）通过HTTPS托管Dynamic Tag Management库的AEM服务器的域。 指定一个值，以便可以覆盖为<a href="/help/sites-developing/externalizer.md">Day CQ Link Externalizer服务</a>配置的默认域。</p> <p>连接到动态Tag Management时，AEM会使用此值为动态Tag Management Web属性配置暂存HTTPS路径或库下载属性的生产HTTPS路径。</p> </td>
   </tr>
   <tr>
    <td>共享密钥</td>
-   <td><p>（可选）用于解密下载的共享密钥。 从Dynamic Tag Management的“库下载”页面的“共享密钥”字段中获取此值。</p> <p><strong>注意：</strong> 必须在安装了AEM的计算机上安装OpenSSL库，以便AEM可以解密下载的库。</p> </td>
+   <td><p>（可选）用于解密下载的共享密钥。 从Dynamic Tag Management的“库下载”页面的“共享密钥”字段中获取此值。</p> <p><strong>注意：</strong>必须在安装了AEM的计算机上安装OpenSSL库，以便AEM能够解密下载的库。</p> </td>
   </tr>
   <tr>
    <td>启用轮询导入程序</td>
@@ -235,9 +235,9 @@ AEM支持在云中托管或在AEM上托管的动态Tag Management。
 
 >[!NOTE]
 >
->下载的文件存储在 `/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`.
+>下载的文件存储在`/etc/clientlibs/dtm/my config/companyID/propertyID/servertype`下。
 >
->以下内容直接从您的 [DTM配置](#creating-the-dynamic-tag-management-configuration).
+>以下内容直接从您的[DTM配置](#creating-the-dynamic-tag-management-configuration)中获取。
 >
 >* `myconfig`
 >* `companyID`

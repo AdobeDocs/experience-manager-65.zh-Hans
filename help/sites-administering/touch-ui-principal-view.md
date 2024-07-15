@@ -36,9 +36,9 @@ AEM 6.5引入了用户和组的权限管理。 主要功能与经典UI相同，�
 
 CRXDE用于管理高级权限和限制。 该报表已合并到同一视图中。 该视图默认为“everyone”组。
 
-![“每个人”组的视图](assets/unu-1.png)
+![“所有人”组的视图](assets/unu-1.png)
 
-有一个过滤器允许用户选择要查看的承担者类型 **用户**， **组**，或 **全部**&#x200B;并搜索任意主体&#x200B;**.**
+有一个筛选器允许用户选择承担者类型以查看&#x200B;**用户**、**组**&#x200B;或&#x200B;**所有**&#x200B;并搜索任何承担者&#x200B;**。**
 
 ![搜索承担者类型](assets/image2019-3-20_23-52-51.png)
 
@@ -46,7 +46,7 @@ CRXDE用于管理高级权限和限制。 该报表已合并到同一视图中�
 
 左侧的框架允许用户向下滚动以查找任何承担者或根据所选筛选器搜索组或用户，如下所示：
 
-![查看主体的权限](assets/doi-1.png)
+![查看承担者的权限](assets/doi-1.png)
 
 单击名称会在右侧显示分配的权限。 权限窗格显示特定路径上的访问控制条目列表以及配置的限制。
 
@@ -62,19 +62,19 @@ CRXDE用于管理高级权限和限制。 该报表已合并到同一视图中�
 
 ![配置权限路径](assets/cinci-1.png)
 
-此处，选择一个路径，您可以在其中配置权限 **dam-users**：
+此处，选择一个路径，您可以在其中配置&#x200B;**dam-users**&#x200B;的权限：
 
-![dam-users的配置示例](assets/sase-1.png)
+![dam-users配置示例](assets/sase-1.png)
 
-选择路径后，工作流将返回此屏幕，用户随后可以从可用命名空间中选择一个或多个权限(例如 `jcr`， `rep` 或 `crx`)，如下所示。
+选择路径后，工作流将返回此屏幕，用户随后可以从可用命名空间（如`jcr`、`rep`或`crx`）中选择一个或多个权限，如下所示。
 
 可以通过使用文本字段进行搜索，然后从列表中选择来添加权限。
 
 >[!NOTE]
 >
->有关权限和说明的完整列表，请参阅 [此页面](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>有关权限和说明的完整列表，请参阅[此页面](/help/sites-administering/user-group-ac-admin.md#access-right-management)。
 
-![给定路径的搜索权限。](assets/image2019-3-21_0-5-47.png) ![为“dam-users”添加新条目，如在垂直列中选择的路径所示。](assets/image2019-3-21_0-6-53.png)
+给定路径的![搜索权限。](assets/image2019-3-21_0-5-47.png) ![为“dam-users”添加新条目，如在垂直列中选择的路径所示。](assets/image2019-3-21_0-6-53.png)
 
 选择权限列表后，用户可以选择权限类型：拒绝或允许，如下所示。
 
@@ -88,19 +88,19 @@ CRXDE用于管理高级权限和限制。 该报表已合并到同一视图中�
 
 >[!NOTE]
 >
->有关每个限制的含义的更多信息，请参阅 [Jackrabbit Oak文档](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>有关每个限制含义的更多信息，请参阅[Jackrabbit Oak文档](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html)。
 
-通过选择限制类型、输入值并单击 **+** 图标。
+可以通过选择限制类型、输入值并点击&#x200B;**+**&#x200B;图标来添加如下所示的限制。
 
 ![添加限制类型](assets/sapte-1.png) ![添加限制类型](assets/opt-1.png)
 
-新的ACE会反映在“访问控制列表”中，如下所示。 请注意 `jcr:write` 是聚合权限，包括 `jcr:removeNode` ，但下文未显示其在 `jcr:write`.
+新的ACE会反映在“访问控制列表”中，如下所示。 请注意，`jcr:write`是一个聚合特权，它包含上面添加的`jcr:removeNode`，但不显示于下面，因为它包含在`jcr:write`中。
 
 ### 编辑ACE {#editing-aces}
 
 通过选择承担者并选择要编辑的ACE，可以编辑访问控制条目。
 
-例如，您可以在此处编辑以下条目 **dam-users** 单击右侧的铅笔图标：
+例如，您可以在此处通过单击右侧的铅笔图标来编辑&#x200B;**dam-users**&#x200B;的以下条目：
 
 ![添加限制](assets/image2019-3-21_0-35-39.png)
 
@@ -108,11 +108,11 @@ CRXDE用于管理高级权限和限制。 该报表已合并到同一视图中�
 
 ![编辑条目](assets/noua-1.png)
 
-此处 `addChildNodes` 已添加权限 **dam-users** 在给定路径上。
+此处为给定路径上的&#x200B;**dam-users**&#x200B;添加了`addChildNodes`权限。
 
-![添加权限](assets/image2019-3-21_0-45-35.png)
+![添加特权](assets/image2019-3-21_0-45-35.png)
 
-单击 **保存** 按钮，并且更改会反映在的新权限中 **dam-users** 如下所示：
+单击右上方的&#x200B;**保存**&#x200B;按钮可保存更改，更改将反映在&#x200B;**dam-users**&#x200B;的新权限中，如下所示：
 
 ![保存更改](assets/zece-1.png)
 

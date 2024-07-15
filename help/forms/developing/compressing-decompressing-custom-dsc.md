@@ -20,7 +20,7 @@ ht-degree: 0%
 
 **其他必需的其他产品**
 
-Java™编辑器，例如 [Eclipse](https://www.eclipse.org/) 或 [Netbeans IDE](https://netbeans.apache.org/)
+Java™编辑器，如[Eclipse](https://www.eclipse.org/)或[Netbeans IDE](https://netbeans.apache.org/)
 
 ## 用户级别 {#user-level}
 
@@ -206,7 +206,7 @@ component.xml文件如下所示：
 
 同样，自定义组件的ZipDocuments操作可以接受文档列表作为输入，将它们压缩为zip文件并返回压缩的文档。
 
-![Zip文档](assets/zip-doc.jpg)
+![压缩文档](assets/zip-doc.jpg)
 
 以下工作流编排显示了如何解压缩给定的ZIP文件，将其压缩回另一个ZIP文件并返回输出（请参阅下图）。
 

@@ -26,6 +26,6 @@ ht-degree: 1%
 
 如果您不打算使用Application Viewer来查看处于开发和暂存状态的应用程序，则无需更改反向链接筛选器的默认设置。
 
-在正在运行的AEM创作实例中，导航到： [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) 和搜索“Apache Sling引用过滤器”。 单击以编辑反向链接筛选条件，并选中“允许为空”复选框（请参阅下图）。 接下来，点击“保存”按钮并关闭浏览器页面。
+在正在运行的AEM创作实例中，导航到[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)并搜索“Apache Sling引用过滤器”。 单击以编辑反向链接筛选条件，并选中“允许为空”复选框（请参阅下图）。 接下来，点击“保存”按钮并关闭浏览器页面。
 
 ![反向链接筛选设置](assets/chlimage_1-106.png)

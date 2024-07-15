@@ -29,9 +29,9 @@ ht-degree: 0%
 
 ## 修改HBS脚本 {#modify-the-hbs-scripts}
 
-使用 [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)：
+使用[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)：
 
-* 打开 [/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
+* 打开[/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
    * 注释掉标记，其中包含注释帖子的头像（~第21行）：
 
@@ -41,7 +41,7 @@ ht-degree: 0%
         -->
      ```
 
-* 打开 [/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
+* 打开[/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
    * 注释掉标记，该标记包括下一个注释条目（~第44行）的头像：
 
@@ -51,7 +51,7 @@ ht-degree: 0%
         -->
      ```
 
-* 选择 **全部保存**
+* 选择&#x200B;**全部保存**
 
 ### 复制自定义应用程序 {#replicate-custom-app}
 
@@ -61,15 +61,15 @@ ht-degree: 0%
 
 * 从主菜单
 
-   * 选择 **[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 复制]**.
-   * 选择 **[!UICONTROL 激活树]**.
-   * 设置 `Start Path` 到 `/apps/custom`.
-   * 取消选择 **[!UICONTROL 仅已修改]**.
-   * 选择 **[!UICONTROL 激活]** 按钮。
+   * 选择&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 复制]**。
+   * 选择&#x200B;**[!UICONTROL 激活树]**。
+   * 将`Start Path`设置为`/apps/custom`。
+   * 取消选择&#x200B;**[!UICONTROL Only Modified]**。
+   * 选择&#x200B;**[!UICONTROL 激活]**&#x200B;按钮。
 
 ### 查看已发布示例页面上的修改评论 {#view-modified-comment-on-published-sample-page}
 
-[继续体验](/help/communities/extend-sample-page.md#publish-sample-page) 在仍以同一用户身份登录的发布实例上，现在可以在发布环境中刷新页面以查看删除头像的修改：
+[在仍以同一用户身份登录的发布实例上继续体验](/help/communities/extend-sample-page.md#publish-sample-page)，现在可以在发布环境中刷新页面以查看删除头像的修改：
 
 ![view-modified-content](assets/view-modified-content.png)
 

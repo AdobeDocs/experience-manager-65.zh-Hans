@@ -43,7 +43,7 @@ PDF Generator允许您为某些类型的文件启用多线程文件转换。 多
 在Windows操作系统上，用于PDF转换的管理员用户帐户（PDFG用户）必须替换进程级别的令牌权限。 您可以使用组策略编辑器添加此权限：
 
 1. 在Windows“开始”菜单中，单击“运行”，然后输入gpedit.msc。
-1. 单击“本地计算机策略”>“计算机配置”>“Windows设置”>“安全设置”>“本地策略”>“用户权限分配”。 编辑 *替换进程级令牌* 包含Administrators组的策略。
+1. 单击“本地计算机策略”>“计算机配置”>“Windows设置”>“安全设置”>“本地策略”>“用户权限分配”。 编辑&#x200B;*替换进程级令牌*&#x200B;策略以包含管理员组。
 1. 将用户添加到“替换进程级令牌”条目。
 
 ### Windows Server 2008上的OpenOffice、Microsoft®Word和Microsoft®PowerPoint所需的其他配置 {#additional-configuration-required-for-openoffice-microsoft-word-and-microsoft-powerpoint-on-windows-server-2008}
@@ -56,7 +56,7 @@ PDF Generator允许您为某些类型的文件启用多线程文件转换。 多
 
 ### Linux®或Solaris™上的OpenOffice所需的其他配置 {#additional-configuration-required-for-openoffice-on-linux-or-solaris}
 
-1. 添加用户帐户。 (请参阅 [添加用户帐户](enabling-multi-threaded-file-conversions.md#add-a-user-account).)
+1. 添加用户帐户。 （请参阅[添加用户帐户](enabling-multi-threaded-file-conversions.md#add-a-user-account)。）
 1. 接下来，必须更改/etc/sudoers文件。 此文件的默认权限为440。 将此文件的权限更改为可写。
 1. 在/etc/sudoers文件中为其他用户(除运行Forms服务器的管理员之外)添加条目。 例如，如果您以名为lcadm的用户和名为myhost的服务器的身份运行AEM表单，并且要模拟user1和user2，请将以下条目添加到/etc/sudoers中：
 
@@ -69,7 +69,7 @@ PDF Generator允许您为某些类型的文件启用多线程文件转换。 多
 
    >[!NOTE]
    >
-   >确保已将系统用户和PDFG用户角色分配给“user1”和“user2” 。 要将PDFG角色分配给用户，请参阅 [添加用户帐户](enabling-multi-threaded-file-conversions.md#add-a-user-account)
+   >确保已将系统用户和PDFG用户角色分配给“user1”和“user2” 。 要向用户分配PDFG角色，请参阅[添加用户帐户](enabling-multi-threaded-file-conversions.md#add-a-user-account)
 
 1. 此外，在/etc/sudoers文件中，通过在行首添加数字符号(#)来查找并注释掉此行：
 
@@ -80,7 +80,7 @@ PDF Generator允许您为某些类型的文件启用多线程文件转换。 多
    这使您能够添加Linux®用户。
 
 1. 将etc/sudoers文件的权限更改回440。
-1. 允许您通过添加的所有用户 [添加用户帐户](enabling-multi-threaded-file-conversions.md#add-a-user-account) 以连接到Forms服务器。 例如，要授予名为user1的本地用户连接到Forms服务器的权限，请使用以下命令
+1. 允许通过[添加用户帐户](enabling-multi-threaded-file-conversions.md#add-a-user-account)添加的所有用户连接到Forms服务器。 例如，要授予名为user1的本地用户连接到Forms服务器的权限，请使用以下命令
 
    `xhost +local:user1@`
 

@@ -19,16 +19,16 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-转换PDF服务将PDF文档转换为PostScript或图像文件(JPEG、JPEG2000、PNG和TIFF)。 将PDF文档转换为PostScript对于任何PostScript打印机上基于服务器的自动打印很有用。 在不支持PDF文档的内容管理系统中归档文档时，将PDF文档转换为多页TIFF文件是切实可行的。
+转换PDF服务将PDF文档转换为PostScript或图像文件(JPEG、JPEG2000、PNG和TIFF)。 将PDF文档转换为PostScript对于在任何PostScript打印机上进行基于服务器的无人参与打印很有用。 在不支持PDF文档的内容管理系统中归档文档时，将PDF文档转换为多页TIFF文件是切实可行的。
 
 您可以使用ConvertPDF服务完成以下操作：
 
-* 将PDF文档转换为PostScript。 转换为PostScript时，可以使用转换操作指定源文档以及是否转换为PostScript级别2或级别3。 转换为PostScript文件的PDF文档必须是非交互式文档。
+* 将PDF文档转换为PostScript。 转换为PostScript时，您可以使用转换操作指定源文档以及是否转换为PostScript级别2或级别3。 转换为PostScript文件的PDF文档必须是非交互式文档。
 * 将PDF文档转换为JPEG、JPEG2000、PNG和TIFF图像格式。 当转换为任何这些图像格式时，可以使用转换操作来指定源文档和图像选项规范。 该规范包含各种首选项，如图像转换格式、图像分辨率和颜色转换。
 
 ## 配置服务的属性   {#properties}
 
-您可以使用 **AEMFD ConvertPDF服务** 在AEM Console中配置此服务的属性。 AEM控制台的默认URL为 `https://[host]:'port'/system/console/configMgr`.
+您可以使用AEM控制台中的&#x200B;**AEMFD ConvertPDF服务**&#x200B;配置此服务的属性。 AEM控制台的默认URL为`https://[host]:'port'/system/console/configMgr`。
 
 ## 使用服务 {#using-the-service}
 
@@ -133,7 +133,9 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 
 从工作流运行ConvertPDF服务与从JSP/Servlet运行类似。
 
-唯一的区别是在从JSP/Servlet运行服务时，文档对象会自动从ResourceResolverHelper对象中检索ResourceResolver对象的实例。 从工作流调用代码时，此自动机制不起作用。 对于工作流，请将ResourceResolver对象的实例显式传递给Document类构造函数。 然后，Document对象使用提供的ResourceResolver对象从存储库中读取内容。
+唯一的区别是在从JSP/Servlet运行服务时，文档对象会自动从ResourceResolverHelper对象中检索ResourceResolver对象的实例。 这种自动机制
+从工作流调用代码时，不起作用。 对于工作流，请将ResourceResolver对象的实例显式传递给Document类构造函数。 然后，Document对象使用
+提供了用于读取存储库内容的ResourceResolver对象。
 
 以下示例工作流进程将输入文档转换为PostScript文档。 该代码在ECMAScript中编写，文档作为工作流有效负载传递：
 

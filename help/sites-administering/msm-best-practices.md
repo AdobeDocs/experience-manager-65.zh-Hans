@@ -20,36 +20,36 @@ ht-degree: 35%
 MSM 是用于自动化内容部署的可配置框架。实施通常涉及网站的主要部分，并且跨多个组织和地理区域。因此，强烈建议您像规划网站一样仔细规划 MSM 实施：
 
 * 在开始实施之前，仔细&#x200B;**规划结构和内容流**。
-* **尽可能减少活动副本的数量。** 处理活动副本是一项资源密集型任务。 您的系统中存在的Live Copy越多，受影响的性能就越好：从处理内部Live Copy索引，到通过Live Copy操作（如转出），再到用户界面操作（如在站点管理员引用边栏中显示Live Copy关系）。 最佳实践为创建站点或站点分支的Live Copy，其中Live Copy关系继承到站点或分支中的页面。 当整个结构可以制作为Live Copy时，请避免为网站或分支中的页面创建单个Live Copy。
-* **进行所需数量的自定义，越少越好。** 虽然MSM支持高度自定义（例如转出配置），但通常情况下，网站的性能、可靠性和可升级性的最佳实践旨在最大程度地减少自定义。
-* 尽早建立&#x200B;**治理**&#x200B;模型，并相应地培训用户以确保成功。从治理的角度来看，最佳做法是 **最大程度地降低本地内容制作者拥有的权限** 将内容分配/连接到其他本地用户及其各自的活动副本。 这是因为，不受控制的链式继承会大大增加 MSM 结构的复杂性并降低其性能和可靠性。
+* **将活动副本的数量保持在最小值。**&#x200B;处理活动副本是一项资源密集型任务。 您的系统中存在的Live Copy越多，受影响的性能就越好：从处理内部Live Copy索引，到通过Live Copy操作（如转出），再到用户界面操作（如在站点管理员引用边栏中显示Live Copy关系）。 最佳实践为创建站点或站点分支的Live Copy，其中Live Copy关系继承到站点或分支中的页面。 当整个结构可以制作为Live Copy时，请避免为网站或分支中的页面创建单个Live Copy。
+* **进行所需数量的自定义，越少越好。**&#x200B;虽然MSM支持高度自定义（例如转出配置），但通常情况下，网站的性能、可靠性和可升级性的最佳实践旨在最大程度地减少自定义。
+* 尽早建立&#x200B;**治理**&#x200B;模型，并相应地培训用户以确保成功。从治理的角度来看，最佳实践是&#x200B;**最大限度地减少本地内容制作者对**&#x200B;分配/连接内容到其他本地用户及其相应活动副本的权限。 这是因为，不受控制的链式继承会大大增加 MSM 结构的复杂性并降低其性能和可靠性。
 
-* 在针对您的结构、内容流、自动化和治理制定计划后 —  **原型并全面测试您的系统**，然后开始实时实施。
+* 在针对您的结构、内容流、自动化和治理制定计划后 — **原型并彻底测试您的系统**，然后再开始实时实施。
 * 请记住，**Adobe 咨询和领先的系统集成商**&#x200B;在使用 MSM 规划和实施内容自动化方面拥有丰富的经验，他们可以帮助您启动 MSM 项目并完成整个实施。
 
 >[!NOTE]
 >
 >有关使用MSM的更多信息，请参阅知识库文章：
 >
->* [MSM问题疑难解答和常见问题](troubleshoot-msm.md)
+>* [MSM问题疑难解答和常见问题解答](troubleshoot-msm.md)
 >
 
 >[!NOTE]
 >
->您也可以使用 [引用组件](/help/sites-authoring/default-components-foundation.md#reference) 重复使用单个页面或段落。 但请记住：
+>您还可以使用[引用组件](/help/sites-authoring/default-components-foundation.md#reference)重复使用单个页面或段落。 但请记住：
 >
 >* MSM更加灵活，允许对同步的内容以及同步时间进行细粒度控制。
->* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) 现在建议不要使用基础组件。
+>* 现在建议将[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)置于基础组件之上。
 >
 
 ## Live Copy 源和 Blueprint 配置 {#live-copy-sources-and-blueprint-configurations}
 
-请记住，可以使用以下任一方式创建Live Copy [常规页面](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) 或 [Blueprint配置](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). 二者都是有效的用例。
+请记住，可以使用[常规页面](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)或[Blueprint配置](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)创建Live Copy。 二者都是有效的用例。
 
 使用 Blueprint 配置的额外好处是：
 
-* 允许作者使用 **转出** Blueprint上的选项 — 到（显式）将修改推送到从此Blueprint继承的活动副本。
-* 允许作者使用 **创建站点**；这允许用户轻松选择语言并配置Live Copy的结构。
+* 允许作者在Blueprint上使用&#x200B;**转出**&#x200B;选项 — 将（显式）修改推送到从此Blueprint继承的活动副本。
+* 允许作者使用&#x200B;**创建站点**；这允许用户轻松选择语言并配置Live Copy的结构。
 * 为与Blueprint关联的活动副本定义默认转出配置。
 
 如果未引用Blueprint配置，则只能从活动副本本身启动转出，这实际上是从源中提取内容。
@@ -79,19 +79,19 @@ MSM 是用于自动化内容部署的可配置框架。实施通常涉及网站�
 
 请注意，AEM有两种创建活动副本的主要方法：
 
-* 时间 [创建Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
+* 在[创建Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)时
 
   可将其视为更通用的方法，允许您从任何页面创建活动副本。 Live Copy的内容结构与源完全匹配。
 
-* 时间 [创建站点](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
+* 当[创建站点](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)时
 
   这是一种更专业的方法，主要用于创建具有多语言结构的网站。
 
 以下是创建站点时要牢记的几个注意事项：
 
-* 要创建站点，您需要 [Blueprint配置](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* 要创建站点，您需要[Blueprint配置](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations)。
 * 要允许选择在新站点中创建的语言路径，相应的语言根必须存在于 Blueprint（源）中。
-* 一次 [新站点已创建为Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (使用 **创建**，则 **站点**)，此Live Copy的前两个级别为 *简略*. 页面的子级不属于实时关系，但如果找到与触发器匹配的实时关系，则转出仍会下降。
+* 将[新站点创建为Live Copy ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)（依次使用&#x200B;**Create**&#x200B;和&#x200B;**Site**）后，此Live Copy的前两个级别为&#x200B;*浅*。 页面的子级不属于实时关系，但如果找到与触发器匹配的实时关系，则转出仍会下降。
 
   这有助于避免：
 
@@ -124,11 +124,11 @@ MSM 可通过两种方式来帮助创建多语言网站：
 
 对Blueprint/源树中内容结构的修改会以不同的方式在Live Copy中反映出来。 这取决于修改类型：
 
-* **正在创建** Blueprint中的新页面将导致在使用标准转出配置转出后，在Live Copies中创建相应的页面。
+* **在Blueprint中创建**&#x200B;新页面将导致在使用标准转出配置转出后在活动副本中创建相应的页面。
 
-* **正在删除** 使用标准转出配置转出后，Blueprint中的页面将导致相应的页面从活动副本中删除。
+* 在Blueprint中删除&#x200B;**页面将导致相应的页面在使用标准转出配置转出后从活动副本中删除。**
 
-* **正在移动** Blueprint中的页面将 **非** 导致相应的页面在使用标准转出配置转出后在Live Copies中移动：
+* 在Blueprint中移动&#x200B;**页面将**&#x200B;不会&#x200B;**导致相应的页面在使用标准转出配置转出后在活动副本中移动：**
 
    * 此行为的原因是页面移动隐式包含页面删除。这可能会导致发布时出现意外行为，因为删除创作实例上的页面会自动停用发布实例上的相应内容。这也可能对相关项目（如链接、书签等）产生连锁反应。
    * 相应Live Copy页面中的内容继承已更新，以反映其源在Blueprint中的新位置。
@@ -136,7 +136,7 @@ MSM 可通过两种方式来帮助创建多语言网站：
 
 >[!NOTE]
 >
->这仅适用于 [在转出触发时](/help/sites-administering/msm-sync.md#rollout-triggers).
+>这仅适用于[转出触发器](/help/sites-administering/msm-sync.md#rollout-triggers)。
 
 * 创建自定义转出配置：
 
@@ -162,10 +162,10 @@ MSM 可通过两种方式来帮助创建多语言网站：
 
 ## 自定义转出 {#customizing-rollouts}
 
-MSM 转出配置是高度自定义的。自动化转出可能会产生深远的影响。 作为最佳实践，您应当 *非常* 例如，之前请务必谨慎：
+MSM 转出配置是高度自定义的。自动化转出可能会产生深远的影响。 作为最佳实践，您应仔细规划&#x200B;*之前的*，例如：
 
-* 自动化转出；例如，使用 [onModify触发器](#onmodify)，
-* 自定义 [节点类型/属性](#node-types-properties)，
+* 自动转出；例如，使用[onModify触发器](#onmodify)，
+* 自定义[节点类型/属性](#node-types-properties)，
 * 启动后续工作流，
 * 和/或激活内容作为转出的一部分。
 
@@ -173,7 +173,7 @@ MSM 转出配置是高度自定义的。自动化转出可能会产生深远的�
 
 在使用[转出触发器](/help/sites-administering/msm-sync.md#rollout-triggers) `onModify` 时，您应考虑：
 
-* 使用自动化转出 `onModify` 触发器可能会对创作性能产生负面影响，因为它们会在之后触发转出 *每* 页面修改。
+* 使用`onModify`触发器自动化转出可能会对创作性能产生负面影响，因为它们会在每修改&#x200B;*个*&#x200B;页面后触发转出。
 
 * 转出结果可能与预期结果不同：
 
@@ -182,13 +182,13 @@ MSM 转出配置是高度自定义的。自动化转出可能会产生深远的�
 
 * 如果对同一资源进行并发更新，则使用此转出配置可能会导致发生提交冲突。
 
-因此，建议您 *仅限* 使用 `onModify` 如果自动转出启动的好处多于任何潜在的性能问题，则会触发。
+因此，如果自动转出启动的好处多于任何潜在的性能问题，则建议您&#x200B;*仅*&#x200B;使用`onModify`触发器。
 
 ### 节点类型/属性 {#node-types-properties}
 
 请记住：
 
-* 除了自定义转出操作之外，MSM 还让您自定义正在转出的节点属性。此 [MSM OSGi配置允许您排除节点类型](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) 从源复制到Live Copy的过程中。
+* 除了自定义转出操作之外，MSM 还让您自定义正在转出的节点属性。[MSM OSGi配置允许您排除从源复制到Live Copy的节点类型](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization)。
 
 ## 更多信息 {#further-information}
 

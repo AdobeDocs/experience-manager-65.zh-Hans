@@ -23,14 +23,14 @@ ht-degree: 2%
 
 社区内容，也称为用户生成内容(UGC)，是在成员（登录网站访客）通过与以下社区组件之一交互而发布已发布社区网站中的内容时创建的：
 
-* [博客](/help/communities/blog-feature.md)：成员发布博客文章或评论。
+* [博客](/help/communities/blog-feature.md)：成员发表博客文章或评论。
 * [日历](/help/communities/calendar.md)：成员发布日历事件或评论。
 * [评论](/help/communities/comments.md)：成员发布评论或回复评论。
 
 * [论坛](/help/communities/forum.md)：成员发布新主题或回复主题。
-* [构思](/help/communities/ideation-feature.md)：成员发表想法或评论。
-* [问题与解答](/help/communities/working-with-qna.md)：成员创建问题或回答问题。
-* [审核](/help/communities/reviews.md)：成员在对项目进行评级时发表评论。
+* [构思](/help/communities/ideation-feature.md)：成员发布构思或评论。
+* [QnA](/help/communities/working-with-qna.md)：成员创建问题或回答问题。
+* [评论](/help/communities/reviews.md)：成员在对项目进行评级时发布评论。
 
 审核UGC对于识别积极贡献和限制消极贡献（例如垃圾邮件和辱骂语言）很有用。 UGC可以从多个环境中审核：
 
@@ -38,11 +38,11 @@ ht-degree: 2%
 
 * [批量审核控制台](moderation.md)
 
-  管理员可以访问“审核”控制台，并且 [社区审查方](/help/communities/users.md) 在公共环境中由管理员在创作环境中使用。 当社区内容存储在时，这是可能的 [公用存储](/help/communities/working-with-srp.md).
+  公共环境中的管理员和[社区审查方](/help/communities/users.md)以及创作环境中的管理员可以访问审查控制台。 当社区内容存储在[公用存储](/help/communities/working-with-srp.md)中时，这是可能的。
 
 * [上下文审核](in-context.md)
 
-  管理员和社区审查方可以直接在发布内容的页面上执行发布环境中的审查。
+  Publish环境中的审核可由管理员和社区审查方直接在发布内容的页面上执行。
 
 ## 审核操作 {#moderation-actions}
 
@@ -50,11 +50,11 @@ ht-degree: 2%
 
 * `Admin`
 
-  作为会员的用户 [社区管理员](users.md) 组。
+  是[community-administrators](users.md)组成员的用户。
 
 * `Moderator`
 
-  成员之一 [社区审查方](users.md#publishenvironmentusersandgroups) 组(具有 [审查方权限](in-context.md#moderatorpermissions))。
+  [社区审查方](users.md#publishenvironmentusersandgroups)组的成员（具有[审查方权限](in-context.md#moderatorpermissions)）。
 
 * `Creator`
 
@@ -77,11 +77,11 @@ ht-degree: 2%
    <td><strong>创建者</strong></td>
    <td><strong>会员</strong></td>
    <td><strong>访客</strong></td>
-   <td><strong>事件<br /> 已触发</strong></td>
+   <td><strong>事件<br />已触发</strong></td>
    <td><strong>已预审</strong></td>
   </tr>
   <tr>
-   <td><strong>编辑/<br /> 删除</strong></td>
+   <td><strong>编辑/<br />删除</strong></td>
    <td>X</td>
    <td>X</td>
    <td>X</td>
@@ -111,7 +111,7 @@ ht-degree: 2%
    <td> </td>
   </tr>
   <tr>
-   <td><strong>关闭/<br /> 重新打开</strong></td>
+   <td><strong>关闭/<br />重新打开</strong></td>
    <td>X</td>
    <td>X</td>
    <td> </td>
@@ -121,7 +121,7 @@ ht-degree: 2%
    <td>X<br /> </td>
   </tr>
   <tr>
-   <td><strong>标志/<br /> 取消标记</strong></td>
+   <td><strong>标记/<br />取消标记</strong></td>
    <td>X</td>
    <td>X</td>
    <td> </td>
@@ -159,11 +159,11 @@ ht-degree: 2%
 
 ![putbackugc](assets/putbackugc.png)
 
-在其他位置，当内容显示在剪贴板中时，“新建帖子”旁边会显示“粘贴”按钮，其中带有一个数字，用于标识将要粘贴的帖子数量。 “粘贴”按钮包括一个用于清除剪贴板而不是粘贴的选项。
+在其他位置，当内容显示在剪贴板中时，新Post旁边会显示一个“粘贴”按钮，其中包含一个数字，用于标识将要粘贴的帖子数量。 “粘贴”按钮包括一个用于清除剪贴板而不是粘贴的选项。
 
-![帕斯泰乌奇](assets/pasteugc.png)
+![pasteugc](assets/pasteugc.png)
 
-![巴斯德乌格1](assets/pasteugc1.png)
+![pasteugc1](assets/pasteugc1.png)
 
 ### 拒绝 {#deny}
 
@@ -195,13 +195,13 @@ ht-degree: 2%
 
 ### 预审 {#premoderation}
 
-预审UGC时，帖子只有在获得审核操作批准之后才会显示在已发布的网站上。 创建期间 [社区站点](/help/communities/sites-console.md)，勾选方框 [内容已通过预审](sites-console.md#moderation) 将为整个站点启用预审。 将组件放在页面上时，可以使用其“编辑”对话框中的设置将支持审核的组件配置为预审：
+预审UGC时，帖子只有在获得审核操作批准之后才会显示在已发布的网站上。 在创建[社区站点](/help/communities/sites-console.md)期间，选中[内容已预审](sites-console.md#moderation)框将启用整个站点的预审。 将组件放在页面上时，可以使用其“编辑”对话框中的设置将支持审核的组件配置为预审：
 
-* [评论](comments.md) 和 [审核](reviews.md)
-在 **[!UICONTROL 用户审核]** > **[!UICONTROL 预审]**.
+* [评论](comments.md)和[评论](reviews.md)
+在**[!UICONTROL 用户审核]** > **[!UICONTROL 预审核]**&#x200B;中。
 
-* [论坛](/help/communities/forum.md)， [构思](/help/communities/ideation-feature.md)， [问题与解答](/help/communities/working-with-qna.md)、和 [日历](/help/communities/calendar.md)
-在 **[!UICONTROL 设置]** > **[!UICONTROL 已审核]**.
+* [论坛](/help/communities/forum.md)、[构思](/help/communities/ideation-feature.md)、[问题与解答](/help/communities/working-with-qna.md)和[日历](/help/communities/calendar.md)
+在**[!UICONTROL 设置]** > **[!UICONTROL 已审核]**&#x200B;中。
 
 ### 垃圾邮件检测 {#spam-detection}
 
@@ -209,7 +209,7 @@ ht-degree: 2%
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`。
 
-但是，要自定义或扩展默认垃圾邮件单词，请在/apps目录中按照默认垃圾邮件单词的结构创建一组单词，并使用 [叠加](/help/communities/overlay-comments.md).
+但是，若要自定义或扩展默认垃圾邮件，请在/apps目录中创建一组包含[叠加](/help/communities/overlay-comments.md)的默认垃圾邮件的单词。
 
 用户生成的包含垃圾邮件词的帖子（涵盖所有内容类型，例如，博客、论坛和评论）在帖子上方标有“此帖子被分类为垃圾邮件”文本。
 
@@ -219,12 +219,12 @@ ht-degree: 2%
 
 要启用垃圾邮件检测引擎，请执行以下步骤：
 
-1. 打开 [Web控制台](https://localhost:4502/system/console/configMgr)，通过转到 `/system/console/configMgr`.
+1. 转到`/system/console/configMgr`打开[Web控制台](https://localhost:4502/system/console/configMgr)。
 
-1. 定位 **AEM Communities自动审核** 配置，并编辑它。
-1. 添加 **[!UICONTROL 垃圾邮件处理]** 进入。
+1. 找到&#x200B;**AEM Communities自动审核**&#x200B;配置并对其进行编辑。
+1. 添加&#x200B;**[!UICONTROL SpamProcess]**&#x200B;条目。
 
-![垃圾邮件处理](assets/spamprocess.png)
+![spamprocess](assets/spamprocess.png)
 
 >[!NOTE]
 >
@@ -232,9 +232,9 @@ ht-degree: 2%
 
 ### 情绪 {#sentiment}
 
-根据正关键字和负关键字的数量计算情绪([标语](#configuringwatchwords))存在于帖子中(UGC)。
+情绪是根据帖子(UGC)中存在的正关键字和负关键字（[关注词](#configuringwatchwords)）的数量计算的。
 
-情感分析使用一组预先配置的规则并计算UGC的情感。 默认规则位于 `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
+情感分析使用一组预先配置的规则并计算UGC的情感。 默认规则位于`/libs/cq/workflow/components/workflow/social/sentiments/rules`。
 
 规则生成的值介于1（所有负值，无正字）到10（所有正值，无负字）之间。 情绪值为5表示中性情绪，此值是默认值。
 
@@ -249,28 +249,28 @@ ht-degree: 2%
 
 分析完毕后，该情绪将与UGC一起存储。
 
-从 [批量审核控制台](/help/communities/moderation.md)，可以根据情绪是消极、中性还是正面来过滤和查看UGC。
+在[批量审核控制台](/help/communities/moderation.md)中，可以根据情绪是负面、中性还是正面筛选和查看UGC。
 
 #### 标语 {#watchwords}
 
-AEM Communities提供 *关注词分析器* 作为评估过程中的步骤 [情绪](#sentiment). 关注字词对情绪值的贡献是由于对发布内容中使用的负面和正面关注字词与禁止字词的比较。
+AEM Communities提供&#x200B;*关注字分析器*&#x200B;作为评估[情绪](#sentiment)的过程中的步骤。 关注字词对情绪值的贡献是由于对发布内容中使用的负面和正面关注字词与禁止字词的比较。
 
 #### 配置情绪和标语 {#configure-sentiment-and-watchwords}
 
 正面和负面标语列表可以自定义，就像情绪规则一样。
 
-可以将默认标语列表作为存储库中节点的属性输入，这与默认列表类似，也可以通过配置OSGi服务来覆盖默认列表 `sentimentprocess.name` 和单词清单。
+可以将默认标语列表作为存储库中节点的属性输入，这与默认列表类似，也可以通过用标语列表配置OSGi服务`sentimentprocess.name`来覆盖默认列表。
 
-此 **sentimentprocess.name** 也可以修改为引用自定义情绪规则集的位置。
+还可以修改&#x200B;**sentimentprocess.name**&#x200B;以引用自定义情绪规则集的位置。
 
 要配置情绪和标语，请执行以下操作：
 
 * 以管理员身份登录到您的创作实例。
-* 打开 [Web控制台](https://localhost:4502/system/console/configMgr).
-* 定位 `sentimentprocess.name`.
+* 打开[Web控制台](https://localhost:4502/system/console/configMgr)。
+* 找到`sentimentprocess.name`。
 * 选择配置，以便您可以在编辑模式下打开它。
 
-![情绪过程](assets/sentimentprocess.png)
+![sentimentprocess](assets/sentimentprocess.png)
 
 * **正面标语**
 
@@ -282,19 +282,19 @@ AEM Communities提供 *关注词分析器* 作为评估过程中的步骤 [情�
 
 * **Watchwords节点的显式路径**
 
-  包含默认值的节点的存储库位置 `positive` 和 `negative` 属性指定默认标语。 默认为 `/libs/settings/community/watchwords/default`.
+  包含指定默认关注字的默认`positive`和`negative`属性的节点的存储库位置。 默认值为`/libs/settings/community/watchwords/default`。
 
 * **情绪规则**
 
-  用于基于正面和负面关注词计算情绪的规则的存储库位置。 默认为 `/libs/cq/workflow/components/workflow/social/sentiments/rules` （但是，不再涉及任何工作流）。
+  用于基于正面和负面关注词计算情绪的规则的存储库位置。 默认值为`/libs/cq/workflow/components/workflow/social/sentiments/rules`（但是，不再涉及任何工作流）。
 
-以下是默认标语自定义条目的示例，当 `Explicit Path to Watchwords Node` 设置为 `/libs/settings/community/watchwords/default`.
+以下是将`Explicit Path to Watchwords Node`设置为`/libs/settings/community/watchwords/default`时默认标语自定义条目的示例。
 
 ![crxde](assets/crxde.png)
 
 ### 审查方权限 {#moderator-permissions}
 
-将以下权限分配给同一资源时，统称为 `moderator permissions`：
+当为同一资源分配以下权限时，这些权限统称为`moderator permissions`：
 
 * `Read`
 * `Modify`

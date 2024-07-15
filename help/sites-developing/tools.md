@@ -23,22 +23,22 @@ ht-degree: 1%
 
 AEM 提供：
 
-* [用于测试组件UI的框架](/help/sites-developing/hobbes.md).
-* [用于测试和调试组件的机制](/help/sites-developing/developer-mode.md).
+* [用于测试组件UI的框架](/help/sites-developing/hobbes.md)。
+* [用于测试和调试组件的机制](/help/sites-developing/developer-mode.md)。
 
-以下是两个开源测试工具：
+以下是两个Open Source测试工具：
 
 **硒**
 
 Selenium用于在浏览器中测试功能，每个活动有一个用户。 它将测试步骤（单击次数）记录为HTML表或Java™类。
 
-有关更多信息，请参阅 [https://www.selenium.dev/](https://www.selenium.dev/).
+有关详细信息，请参阅[https://www.selenium.dev/](https://www.selenium.dev/)。
 
-**JMet**
+**JMeter**
 
 JMeter用于跟踪请求，可用于功能、性能和压力测试。
 
-有关更多信息，请参阅 [https://jmeter.apache.org/](https://jmeter.apache.org/).
+有关详细信息，请参阅[https://jmeter.apache.org/](https://jmeter.apache.org/)。
 
 还有许多用于自动化测试和管理测试计划的专有工具。
 
@@ -52,7 +52,7 @@ JMeter用于跟踪请求，可用于功能、性能和压力测试。
 
 **电子表格**
 
-虽然不是专门用于跟踪错误的工具，但电子表格通常 *mis*&#x200B;用于此目的，因为它们易于理解，并且大多数用户都对其功能具有体验。
+虽然不是专门用于错误跟踪的工具，但电子表格通常会&#x200B;*mis*&#x200B;用于此目的，因为它们易于理解，并且大多数用户都对其功能具有经验。
 
 如果这些电子表格用于跟踪，则：
 

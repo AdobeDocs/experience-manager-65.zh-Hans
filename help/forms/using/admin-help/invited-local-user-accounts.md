@@ -20,8 +20,8 @@ ht-degree: 0%
 
 使用“受邀用户和本地用户”页可以管理您的受邀用户和本地用户。 仅当满足以下要求时，才会显示此页：
 
-* 您是已分配Document Security管理受邀和本地用户角色以及管理控制台用户角色的管理员。 (请参阅 [创建和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
-* 已启用受邀用户注册。 (请参阅 [配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+* 您是已分配Document Security管理受邀和本地用户角色以及管理控制台用户角色的管理员。 （请参阅[创建和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。）
+* 已启用受邀用户注册。 （请参阅[配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。）
 
 “受邀用户和本地用户”页包含两个选项卡，您可以使用它们搜索、查看、编辑、锁定、解锁和删除受邀用户和本地用户帐户。
 
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. 在管理控制台中，单击“服务”>“Document Security”>“受邀用户和本地用户”，然后单击“邀请新用户”。
 1. 键入要邀请的用户的电子邮件地址。 在一行中输入多个地址，用逗号分隔。
 
-   您在启用受邀用户注册时创建的消息将发送给用户。 (请参阅 [配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+   您在启用受邀用户注册时创建的消息将发送给用户。 （请参阅[配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。）
 
 1. 单击“确定”。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
 
 您可以为已注册Document Security但忘记密码的激活受邀用户重置密码。 重置密码时，会生成一封电子邮件，其中包含用户的新临时密码。
 
-启用受邀用户注册过程后，您创建了一条电子邮件消息，该消息将发送给用户，提示他们重置密码。 (请参阅 [配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
+启用受邀用户注册过程后，您创建了一条电子邮件消息，该消息将发送给用户，提示他们重置密码。 （请参阅[配置受邀用户注册](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration)。）
 
 1. 在管理控制台中，单击“服务”>“Document Security”>“受邀用户和本地用户”，然后单击“本地用户”选项卡。
 1. 在用户列表中，选择适当的用户。

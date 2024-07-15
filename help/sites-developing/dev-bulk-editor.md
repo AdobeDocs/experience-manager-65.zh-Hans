@@ -22,19 +22,19 @@ ht-degree: 1%
 
 ## 批量编辑器查询参数 {#bulk-editor-query-parameters}
 
-使用批量编辑器时，可以将多个查询参数添加到URL中以使用特定配置调用批量编辑器。 如果您希望批量编辑器始终与特定配置一起使用（例如，与产品列表组件中一样），则必须编辑 `bulkeditor.jsp` （位于/libs/wcm/core/components/bulkeditor中）或创建具有特定配置的组件。 使用查询参数所做的更改不是永久性的。
+使用批量编辑器时，可以将多个查询参数添加到URL中以使用特定配置调用批量编辑器。 如果您希望批量编辑器始终与特定配置一起使用，例如在产品列表组件中，则必须编辑`bulkeditor.jsp`（在/libs/wcm/core/components/bulkeditor中）或创建具有特定配置的组件。 使用查询参数所做的更改不是永久性的。
 
 例如，如果在浏览器的URL中键入以下内容：
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-此时将显示批量编辑器，但不包含 **根路径** 字段，因为hrp=true会隐藏该字段。 使用参数hrp=false，将显示字段（默认值）。
+由于hrp=true隐藏了&#x200B;**根路径**&#x200B;字段，因此显示批量编辑器。 使用参数hrp=false，将显示字段（默认值）。
 
 以下是Bulk Editor查询参数的列表：
 
 >[!NOTE]
 >
->每个参数可以有一个长名称和短名称。 例如，搜索根路径的长名称为 `rootPath`，简称为 `rp`. 如果未定义长名称，则从请求中读取短名称。
+>每个参数可以有一个长名称和短名称。 例如，搜索根路径的长名称为`rootPath`，短名称为`rp`。 如果未定义长名称，则从请求中读取短名称。
 
 <table>
  <tbody>
@@ -45,8 +45,8 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><p> 参数</p> <p>（长名称/短名称）<br /> </p> </td>
-   <td> 类型 <br /> </td>
-   <td> 描述 <br /> </td>
+   <td> 类型<br /> </td>
+   <td> 描述<br /> </td>
   </tr>
   <tr>
    <td> rootPath / rp<br /> </td>
@@ -76,7 +76,7 @@ ht-degree: 1%
   <tr>
    <td> initialSearch / is<br /> </td>
    <td> 布尔值</td>
-   <td> 为true时，在页面加载时执行查询<br /> </td>
+   <td> 为true时，在页面加载<br />时执行查询 </td>
   </tr>
   <tr>
    <td> colsSelection / cs<br /> </td>
@@ -86,7 +86,7 @@ ht-degree: 1%
   <tr>
    <td> showGridOnly / sgo<br /> </td>
    <td> 布尔值</td>
-   <td> 为true时，仅显示网格，而不显示搜索面板 <br /> </td>
+   <td> 为true时，仅显示网格，而不显示搜索面板<br /> </td>
   </tr>
   <tr>
    <td> searchPanelCollapsed / spc</td>
@@ -165,14 +165,14 @@ ht-degree: 1%
 
 本节概述了如何使用批量编辑器，并介绍了基于批量编辑器的现有Geometrixx组件：产品列表组件。
 
-利用产品列表组件，用户可显示和编辑数据表。 例如，您可以使用产品列表组件表示目录中的产品。 该信息会显示在标准HTML表格中，并且任何编辑都会在 **编辑** 对话框，其中包含BulkEditor小组件。 (此批量编辑器与在/etc/importers/bulkeditor.html上或通过“工具”菜单访问的编辑器相同)。 产品列表组件已针对特定的有限批量编辑器功能进行了配置。 可以配置批量编辑器的每个部分（或从批量编辑器派生的组件）。
+利用产品列表组件，用户可显示和编辑数据表。 例如，您可以使用产品列表组件表示目录中的产品。 该信息显示在标准HTML表中，并且任何编辑操作都在&#x200B;**编辑**&#x200B;对话框中执行，该对话框包含BulkEditor构件。 (此批量编辑器与在/etc/importers/bulkeditor.html上或通过“工具”菜单访问的编辑器相同)。 产品列表组件已针对特定的有限批量编辑器功能进行了配置。 可以配置批量编辑器的每个部分（或从批量编辑器派生的组件）。
 
 使用批量编辑器，您可以添加、修改、删除、过滤和导出行，保存修改并导入一组行。 每一行都作为节点存储在Product List组件实例本身下。 每个单元格都是每个节点的属性。 这是一种设计选择，可以轻松进行更改，例如，您可以将节点存储在存储库中的其他位置。 查询servlet的角色是返回要显示的节点列表；搜索路径被定义为产品列表实例。
 
 产品列表组件的源代码位于存储库/apps/geometrixx/components/productlist中，它由若干部分组成，如所有Adobe Experience Manager (AEM)组件：
 
 * HTML渲染：渲染在JSP文件(/apps/geometrixx/components/productlist/productlist.jsp)中完成。 JSP读取当前Product List组件的子节点，并将每个子节点显示为HTML表的行。
-* “编辑”对话框，可在其中定义批量编辑器配置。 配置对话框以符合组件的需要：可用列以及对网格或搜索可能执行的操作。 请参阅 [批量编辑器配置属性](#bulk-editor-configuration-properties) 有关所有配置属性的信息。
+* “编辑”对话框，可在其中定义批量编辑器配置。 配置对话框以符合组件的需要：可用列以及对网格或搜索可能执行的操作。 有关所有配置属性的信息，请参阅[批量编辑器配置属性](#bulk-editor-configuration-properties)。
 
 以下是对话框子节点的XML表示形式：
 
@@ -433,7 +433,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>colsMetadata</td>
-   <td>列元数据配置。 可能的属性包括（应用于列的所有单元格）： <br />
+   <td>列元数据配置。 可能的属性（应用于列的所有单元格）： <br />
     <ul>
      <li>cellStyle： html样式 </li>
      <li>cellCls： css类 </li>
@@ -511,19 +511,19 @@ CSS和只读列
 
 **复选框**
 
-如果复选框配置属性设置为true，则该列的所有单元格都会呈现为复选框。 选中框将发送 **true** 到服务器保存servlet， **false** 否则。 在标题菜单中，您还可以 **全选** 或 **全部不选**. 如果所选标题是复选框列的标题，则会启用这些选项。
+如果复选框配置属性设置为true，则该列的所有单元格都会呈现为复选框。 选中框将&#x200B;**true**&#x200B;发送到服务器Save servlet，否则&#x200B;**false**。 在标题菜单中，您也可以&#x200B;**全选**&#x200B;或&#x200B;**不选**。 如果所选标题是复选框列的标题，则会启用这些选项。
 
 在前面的示例中，selection列仅包含复选框，如checkbox=&quot;true&quot;。
 
 **强制位置**
 
-强制位置元数据forcedPosition允许您指定列在网格中的放置位置：0是第一个位置，而 &lt;number of=&quot;&quot; columns=&quot;&quot;>-1是最后一个位置。 任何其他值将被忽略。
+强制位置元数据forcedPosition允许您指定列在网格中的放置位置：0是第一个位置，&lt;列数>-1是最后一个位置。 任何其他值将被忽略。
 
 在前面的示例中，选择列是第一列，即forcedPosition=&quot;0&quot;。
 
 ### 查询Servlet {#query-servlet}
 
-默认情况下，查询Servlet位于 `/libs/wcm/core/components/bulkeditor/json.java`. 您可以配置其他路径以检索数据。
+默认情况下，可在`/libs/wcm/core/components/bulkeditor/json.java`找到查询Servlet。 您可以配置其他路径以检索数据。
 
 查询servlet的工作方式如下：它接收GQL查询并接收要返回的列，计算结果，并将结果作为JSON流发送回批量编辑器。
 
@@ -555,22 +555,22 @@ CSS和只读列
 
 ### 保存Servlet {#save-servlet}
 
-在批量编辑器的默认配置中，每一行都是一个节点，此节点的路径存储在行记录中。 批量编辑器通过jcr路径保持行和节点之间的链接。 当用户编辑网格时，将生成所有修改的列表。 用户单击时 **保存**，则会向每个路径发送一个POST查询，其中包含更新的属性值。 这是Sling概念的基础，如果每个单元格是节点的属性，则它工作正常。 但是，如果实施查询Servlet来执行继承计算，则该模型无法工作，因为查询Servlet返回的属性可以从其他节点继承。
+在批量编辑器的默认配置中，每一行都是一个节点，此节点的路径存储在行记录中。 批量编辑器通过jcr路径保持行和节点之间的链接。 当用户编辑网格时，将生成所有修改的列表。 当用户单击&#x200B;**保存**&#x200B;时，将会向每个路径发送一个POST查询，其中具有更新的属性值。 这是Sling概念的基础，如果每个单元格是节点的属性，则它工作正常。 但是，如果实施查询Servlet来执行继承计算，则该模型无法工作，因为查询Servlet返回的属性可以从其他节点继承。
 
 保存Servlet的概念是，修改不会直接发布到每个节点，而是发布到执行保存作业的一个Servlet。 这使此servlet能够分析修改并将属性保存在正确的节点上。
 
 每个更新的属性都将以下列格式发送到servlet：
 
-* 参数名称： &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>
+* 参数名称： &lt;jcr path>/&lt;property name>
 
   示例： /content/geometrixx/en/products/jcr：content/par/productlist/1258674859000/SellingSku
 
-* 值： &lt;value>
+* 值： &lt;值>
 
   示例： 12123
 
 servlet需要知道catalogCode属性的存储位置。
 
-/libs/wcm/bulkeditor/save/POST.jsp上提供了默认的保存Servlet实施，该实施用在产品列表组件中。 它获取请求中的所有参数(使用 &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> 格式)并在节点上使用JCR API写入属性。 如果节点不存在，它还会创建节点（网格插入行）。
+/libs/wcm/bulkeditor/save/POST.jsp上提供了默认的保存Servlet实施，该实施用在产品列表组件中。 它采用请求中的所有参数（采用&lt;jcr path>/&lt;property name>格式）并使用JCR API在节点上写入属性。 如果节点不存在，它还会创建节点（网格插入行）。
 
-请勿按原样使用默认代码，因为它重新实施服务器本机执行的操作(POST &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>)，因此只是一个很好的起点，用于构建可管理属性继承模型的保存Servlet。
+请勿按原样使用默认代码，因为它重新实现了服务器本地的功能(&lt;jcr path>/&lt;property name>上的POST)，因此只是一个很好的起点，可让您构建可管理属性继承模型的保存servlet。

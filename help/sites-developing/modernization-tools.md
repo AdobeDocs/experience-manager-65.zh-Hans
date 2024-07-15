@@ -16,12 +16,12 @@ ht-degree: 46%
 
 # AEM 现代化工具 {#modernization-tools}
 
-[AEM现代化工具](https://opensource.adobe.com/aem-modernize-tools/) 允许轻松进行以下转换：
+[AEM现代化工具](https://opensource.adobe.com/aem-modernize-tools/)允许轻松进行下列转换：
 
-* [静态模板](page-templates-static.md) 到 [可编辑的模板](page-templates-editable.md)
-* [设计配置](page-templates-static.md) 到 [策略](page-templates-editable.md)
-* [基础组件](/help/sites-authoring/default-components-foundation.md) 到 [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [经典UI](website.md) 到 [触屏优化UI](touch-ui-concepts.md)
+* [静态模板](page-templates-static.md)到[可编辑模板](page-templates-editable.md)
+* [设计配置](page-templates-static.md)到[策略](page-templates-editable.md)
+* [基础组件](/help/sites-authoring/default-components-foundation.md)到[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+* [经典UI](website.md)到[触屏启用UI](touch-ui-concepts.md)
 
 有关这些工具用法的更多信息，[请参阅相应文档](https://opensource.adobe.com/aem-modernize-tools/)。
 

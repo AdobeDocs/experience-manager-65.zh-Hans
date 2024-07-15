@@ -29,7 +29,7 @@ ht-degree: 0%
 
 复制失败的原因有很多。 本文解释了分析这些问题时可能需要采用的方法。
 
-**单击“激活”按钮时是否会触发复制？ 如果NOT，则执行以下操作：**
+**单击“激活”按钮时是否触发复制？ 如果NOT，则执行以下操作：**
 
 1. 前往/crx/explorer并以管理员身份登录。
 1. 打开“内容资源管理器”
@@ -41,21 +41,21 @@ ht-degree: 0%
 
 **如果一个代理队列或几个代理队列卡住：**
 
-1. 队列是否显示 **已阻止** 状态？ 如果是这样，发布实例是否未运行或无响应？ 检查发布实例以查看它哪里有问题。 即，检查日志，并查看是否存在OutOfMemory错误或某些其他问题。 如果只是速度较慢，则进行线程转储并分析它们。
-1. 是否显示队列状态 **队列处于活动状态 — #个待处理**？ 基本上，复制作业可能会卡在等待发布实例或Dispatcher响应的套接字读取中。 这可能意味着发布实例或Dispatcher处于高负载下或卡在锁中。 在本例中，从作者处进行线程转储并发布。
+1. 队列是否显示&#x200B;**已阻止**&#x200B;状态？ 如果是这样，发布实例是否未运行或无响应？ 检查发布实例以查看它哪里有问题。 即，检查日志，并查看是否存在OutOfMemory错误或某些其他问题。 如果只是速度较慢，则进行线程转储并分析它们。
+1. 队列状态是否显示&#x200B;**队列处于活动状态 — # pending**？ 基本上，复制作业可能会卡在等待发布实例或Dispatcher响应的套接字读取中。 这可能意味着发布实例或Dispatcher处于高负载下或卡在锁中。 在本例中，从作者处进行线程转储并发布。
 
    * 在线程转储分析器中打开来自作者的线程转储，检查它是否显示复制代理的sling事件作业卡在socketRead中。
    * 在线程转储分析器中从发布中打开线程转储，分析可能导致发布实例不响应的原因。 您应该会看到其名称中具有/bin/receivePOST的线程，该线程是从创作实例接收复制的线程。
 
-**如果所有代理队列都卡住**
+**如果所有代理队列卡住**
 
 1. 可能由于存储库损坏或某些其他问题，无法在/var/replication/data下序列化特定内容。 查看logs/error.log以了解相关错误。 要清除错误的复制项目，请执行以下操作：
 
-   1. 转到https://&lt;host>：&lt;port>/crx/de并以管理员用户身份登录。
+   1. 前往https://&lt;host>：&lt;port>/crx/de并以管理员用户身份登录。
    1. 单击顶部菜单中的“工具”。
    1. 单击放大镜按钮。
    1. 选择“XPath”作为“类型”。
-   1. 在“查询”框中，输入此查询/jcr：root/var/eventing/jobs//element(&#42;，slingevent：Job)按@slingevent：created排序
+   1. 在“查询”框中，输入此查询/jcr：root/var/eventing/jobs//element(&#42;，slingevent：Job) order by @slingevent：created
    1. 单击“搜索”。
    1. 在结果中，排名最前的项目是最新的Sling事件作业。 单击每个，然后查找与队列顶部显示的内容匹配的停滞复制。
 
@@ -69,12 +69,12 @@ ht-degree: 0%
    * 此时，存储在crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config中的DefaultJobManager配置进入不一致状态。 即使“Apache Sling作业事件处理程序”属性显示“作业处理已启用”处于选中状态，当导航到Sling事件选项卡时，它会显示消息 — JOB PROCESSING IS DISABLED并且复制不起作用。
    * 要解决此问题，请导航到OSGi控制台的配置页面，并删除“Apache Sling作业事件处理程序”配置。 然后，重新启动群集的主节点以使配置返回到一致状态。 这应该可以修复问题，并且复制可以重新开始工作。
 
-**创建replication.log**
+**创建复制.log**
 
 有时，将所有复制日志记录设置为在DEBUG级别添加到单独的日志文件中会很有帮助。 要执行此操作：
 
 1. 前往https://host:port/system/console/configMgr并以管理员身份登录。
-1. 找到Apache Sling日志记录器工厂，并通过单击 **+** 按钮。 这将创建新的日志记录器。
+1. 找到Apache Sling日志记录器工厂，并单击工厂配置右侧的&#x200B;**+**&#x200B;按钮创建一个实例。 这将创建新的日志记录器。
 1. 设置配置，如下所示：
 
    * 日志级别： DEBUG
@@ -96,18 +96,18 @@ ht-degree: 0%
 
 通常，页面权限不应从创作复制到发布，默认情况下也不应复制。 这是因为在这两个环境中，访问权限应该不同。 因此，Adobe建议您在发布时配置ACL，与创作分开。
 
-## 将命名空间信息从创作复制到发布时阻止复制队列 {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
+## 将命名空间信息从创作复制到Publish时阻止复制队列 {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 
-有时，在尝试将命名空间信息从创作实例复制到发布实例时，复制队列会被阻止。 发生这种情况是因为复制用户没有 `jcr:namespaceManagement` 特权。 要避免出现此问题，请确保：
+有时，在尝试将命名空间信息从创作实例复制到发布实例时，复制队列会被阻止。 发生此情况是因为复制用户没有`jcr:namespaceManagement`权限。 要避免出现此问题，请确保：
 
-* 复制用户(在 [传输](/help/sites-deploying/replication.md#replication-agents-configuration-parameters) 选项卡>用户)。
+* Publish实例上也存在复制用户（在[传输](/help/sites-deploying/replication.md#replication-agents-configuration-parameters)选项卡>用户下配置）。
 * 用户在安装内容的路径上拥有读写权限。
-* 用户具有 `jcr:namespaceManagement` 存储库级别的权限。 您可以按如下方式授予权限：
+* 用户在存储库级别具有`jcr:namespaceManagement`权限。 您可以按如下方式授予权限：
 
-1. 登录到CRX/DE ( `https://localhost:4502/crx/de/index.jsp`)作为管理员。
-1. 单击 **访问控制** 选项卡。
-1. 选择 **存储库**.
-1. 单击 **添加条目** （加号图标）。
+1. 以管理员身份登录到CRX/DE ( `https://localhost:4502/crx/de/index.jsp`)。
+1. 单击&#x200B;**访问控制**&#x200B;选项卡。
+1. 选择&#x200B;**存储库**。
+1. 单击&#x200B;**添加条目**（加号图标）。
 1. 输入用户的名称。
-1. 选择 `jcr:namespaceManagement` 从权限列表中。
+1. 从权限列表中选择`jcr:namespaceManagement`。
 1. 单击&#x200B;**确定**。

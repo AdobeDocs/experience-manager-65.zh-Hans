@@ -67,9 +67,9 @@ UI同时适用于移动设备和桌面设备，不过Adobe决定使用一种适�
 
 * **时间线**
 * **引用**
-* **筛选**
+* **筛选器**
 
-默认为 **仅内容** （隐藏边栏）。
+默认值为&#x200B;**仅内容**（隐藏边栏）。
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -89,7 +89,7 @@ UI同时适用于移动设备和桌面设备，不过Adobe决定使用一种适�
 
 编辑器框架实现编辑功能。
 
-编辑器框架是所有 *页面创作元素*. 它位于内容框架顶部，包括：
+编辑器框架是所有&#x200B;*页面创作元素*&#x200B;的容器（抽象）。 它位于内容框架顶部，包括：
 
 * 顶部工具栏
 * 侧面板
@@ -106,9 +106,9 @@ UI同时适用于移动设备和桌面设备，不过Adobe决定使用一种适�
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
-### 侧面板 — 资源 {#side-panel-assets}
+### 侧面板 — Assets {#side-panel-assets}
 
-在“资源”选项卡中，您可以从资源范围中进行选择。 您还可以按特定术语进行筛选，或选择组。
+在Assets选项卡中，您可以从资源范围中进行选择。 您还可以按特定术语进行筛选，或选择组。
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -126,7 +126,7 @@ UI同时适用于移动设备和桌面设备，不过Adobe决定使用一种适�
 
 ### 叠加 {#overlays}
 
-这些组件覆盖内容框架，并由 [图层](#layer) 实现如何（透明）与组件及其内容交互的机制。
+这些组件覆盖内容框架并由[层](#layer)使用，以实现如何与组件及其内容交互（透明）的机制。
 
 叠加在编辑器框架中处于活动状态（包含所有其他页面创作元素），但它们实际上叠加了内容框架中的相应组件。
 
@@ -165,6 +165,6 @@ AEM附带了多个已为页面创作实施的层；例如，包括编辑、预�
 
 ## 更多信息 {#further-information}
 
-有关触屏UI相关概念的更多详细信息，请阅读 [AEM触屏优化UI的概念](/help/sites-developing/touch-ui-concepts.md).
+有关触控式UI相关概念的更多详细信息，请阅读[AEM触控式UI的概念](/help/sites-developing/touch-ui-concepts.md)。
 
-有关详细信息，请参阅 [JS文档集](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) （适用于启用了触屏的页面编辑器）。
+有关更多技术信息，请参阅启用触屏的页面编辑器的[JS文档集](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)。

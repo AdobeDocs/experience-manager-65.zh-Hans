@@ -24,13 +24,13 @@ Adobe Experience Manager应用程序允许您更新应用程序OTA的内容（�
 
 配置反向链接筛选服务：
 
-* 打开Apache Felix控制台(**配置**)位于：
-* https://&lt;server>：&lt;port_number>/system/console/configMgr
+* 在以下位置打开Apache Felix控制台（**配置**）：
+* https://&lt;服务器>：&lt;端口号>/system/console/configMgr
 * 以管理员身份登录。
-* 在 **配置** 菜单，选择： *Apache Sling引用过滤器*
+* 在&#x200B;**配置**&#x200B;菜单中，选择： *Apache Sling引用过滤器*
 * 选中允许空字段，以便您可以允许为空/缺少反向链接标头。
-* 单击 **保存** 以保存更改。
+* 单击&#x200B;**保存**&#x200B;以保存更改。
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 
-请参阅 [OSGI配置设置](/help/sites-deploying/osgi-configuration-settings.md) 和 [安全核对清单 — 跨站点请求伪造问题](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) 以了解更多详细信息。
+有关更多详细信息，请参阅[OSGI配置设置](/help/sites-deploying/osgi-configuration-settings.md)和[安全核对清单 — 跨站点请求伪造问题](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery)。

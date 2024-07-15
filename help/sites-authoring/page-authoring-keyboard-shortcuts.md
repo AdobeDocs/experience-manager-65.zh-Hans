@@ -18,7 +18,7 @@ ht-degree: 52%
 
 # 编辑页面时的键盘快捷键{#keyboard-shortcuts-when-editing-pages}
 
-在整个 AEM 环境中都可以使用各种键盘快捷键。有些可应用于编辑页面，另一些可应用于 [使用控制台](/help/sites-authoring/keyboard-shortcuts.md).
+在整个 AEM 环境中都可以使用各种键盘快捷键。某些可应用于编辑页面，其他可应用于控制台[的使用](/help/sites-authoring/keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
@@ -28,7 +28,7 @@ ht-degree: 52%
 
 | 位置 | 快捷键 | 描述 |
 |---|---|---|
-| 任何编辑窗口模式 | `Ctrl-Shift-m` | 在之间切换 **预览** 和当前选定的 [模式](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (例如， **编辑**， **布局**，等等) |
+| 任何编辑窗口模式 | `Ctrl-Shift-m` | 在&#x200B;**预览**&#x200B;和当前选定的[模式](/help/sites-authoring/author-environment-tools.md#page-modes)</a>之间切换（例如，**编辑**、**布局**&#x200B;等） |
 | **编辑**&#x200B;模式 | `Ctrl-z` | [撤消最后一次更改](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [重做最后一次更改](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | 选择多个段落 |
@@ -42,7 +42,7 @@ ht-degree: 52%
 
 >[!NOTE]
 >
->&amp;ast；用户开始在“预览”模式下与页面交互后， `Ctrl-Shift-m` 快捷方式不再可用。 用户必须单击顶部编辑器栏或返回到“编辑”模式，才能使该快捷键再次变为可用。
+>&amp;amp；ast；用户开始在“预览”模式下与页面交互后，`Ctrl-Shift-m`快捷键便不再可用。 用户必须单击顶部编辑器栏或返回到“编辑”模式，才能使该快捷键再次变为可用。
 
 在使用[控制台](/help/sites-authoring/keyboard-shortcuts.md)时，桌面用户也可以使用各种键盘快捷键。
 

@@ -21,50 +21,50 @@ ht-degree: 0%
 AEM Communities的控制台可在全局导航面板的创作环境中使用，用于访问管理任务，例如：
 
 * [创建社区站点](sites-console.md)
-* 正在添加 [组](groups.md) 嵌套在站点内
-* 管理 [社区站点模板](sites.md)
-* 管理 [社区成员](members.md)
-* [正在审核](moderate-ugc.md) 用户生成内容(UGC)
-* 创建 [自定义徽章](badges.md)
-* 配置 [UGC的默认存储](srp-config.md)
+* 正在添加嵌套在网站中的[组](groups.md)
+* 管理[社区站点模板](sites.md)
+* 管理[社区成员](members.md)
+* [正在审核](moderate-ugc.md)用户生成的内容(UGC)
+* 创建[自定义徽章](badges.md)
+* 正在为UGC](srp-config.md)配置[默认存储
 
-时间 [UGC存储](working-with-srp.md) 配置为由创作环境和发布环境共享的公用存储， [审核控制台](moderation.md)在创作和发布环境中均可用，在UGC的单独实例上运行。
+当[UGC存储](working-with-srp.md)配置为由Author和Publish环境共享的公用存储时，可在Author和Publish环境中使用的[审核控制台](moderation.md)在UGC的单独实例上运行。
 
-在创作环境中，以管理员权限登录后， `Communities` 控制台可从“导航”和“工具”控制台中使用。
+在创作环境中，以管理员权限登录后，`Communities`控制台可以从导航和工具控制台中使用。
 
 >[!NOTE]
 >
->在“发布”环境中， [社区站点](sites-console.md) 显示 `Administration` 登录成员具有相应权限时的菜单项。
+>在Publish环境中，当登录成员具有相应的权限时，[社区站点](sites-console.md)会显示`Administration`菜单项。
 
 ## 全局导航面板 {#global-navigation-panel}
 
-选择 `Adobe Experience Manager` 图标，以便您可以打开全局导航面板并访问两个图标：
+选择左上角的`Adobe Experience Manager`图标，以便您可以打开全局导航面板并访问两个图标：
 
 * [导航控制台](#navigation-console)
 * [工具控制台](tools.md)
 
 ## 导航控制台 {#navigation-console}
 
-要访问各种Communities控制台，请从全局导航中选择 **导航，社区**.
+要访问各个Communities控制台，请从全局导航中选择&#x200B;**导航， Communities**。
 
 ![社区](assets/communities.png)
 
 * [Sites](sites-console.md)
 
-  站点控制台可在创作环境中访问，用于创建和管理社区站点及其 [组](groups.md).
+  可在创作环境中访问站点控制台，用于创建和管理社区站点及其[组](groups.md)。
 
 * [审核](moderation.md)
 
-  “审阅”控制台用于批量审阅UGC和创作环境。 在“发布”环境中，分配给以下角色的社区成员也可以访问类似的批量审核控制台： [社区审查方](users.md#publishenvironmentusersandgroups) 用于一个或多个社区站点。
+  “审阅”控制台用于批量审阅UGC和创作环境。 在Publish环境中，对于一个或多个社区站点，分配了[社区审查方](users.md#publishenvironmentusersandgroups)角色的社区成员可以访问类似的批量审查控制台。
 
 * [成员、组](members.md)
 
-  “成员”和“组”控制台用于从创作环境管理发布环境中存在的社区成员和成员组。
+  “成员”和“组”控制台用于从创作环境管理Publish环境中存在的社区成员和成员组。
 
 * [报告](reports.md)
 
-  在“报表”控制台中，当社区站点满足以下条件时，可能会生成有关工作总揽、页面查看和已发布内容(UGC)的报表 [已启用Adobe Analytics](sites-console.md#analytics). 该控制台仅在创作环境中可用。
+  当社区站点启用了[Adobe Analytics](sites-console.md#analytics)时，“报表”控制台可生成有关工作总揽、页面查看和已发布内容(UGC)的报表。 该控制台仅在创作环境中可用。
 
 ## 工具控制台 {#tools-console}
 
-要访问 [Communities工具](tools.md) （以前称为管理控制台），从全局导航： **[!UICONTROL 工具]** > **[!UICONTROL Communities]**
+若要访问[Communities工具](tools.md)（以前为管理控制台），请从全局导航中访问： **[!UICONTROL 工具]** > **[!UICONTROL Communities]**

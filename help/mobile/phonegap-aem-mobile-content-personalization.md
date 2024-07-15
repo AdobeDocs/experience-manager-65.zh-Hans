@@ -24,31 +24,31 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本文档是 [AEM Mobile快速入门](/help/mobile/getting-started-aem-mobile.md) 指南，AEM Mobile参考的推荐起点。
+>本文档是[AEM Mobile快速入门](/help/mobile/getting-started-aem-mobile.md)指南的一部分，该指南是AEM Mobile参考的推荐起点。
 
-AEM Mobile内容个性化功能允许 [AEM作者](#author) 使用个性化移动应用程序内容 [Adobe Target](https://business.adobe.com/products/target/adobe-target.html). 这允许向移动应用程序用户提供定向的优惠。 Adobe Experience Manager Mobile使您能够创建、定位和交付内容，这些内容将为用户提供特定于用户个人口味的内容。
+AEM Mobile内容个性化功能允许[AEM作者](#author)使用[Adobe Target](https://business.adobe.com/products/target/adobe-target.html)对移动应用程序内容进行个性化设置。 这允许向移动应用程序用户提供定向的优惠。 Adobe Experience Manager Mobile使您能够创建、定位和交付内容，这些内容将为用户提供特定于用户个人口味的内容。
 
 在AEM中，为了使作者开始创建此内容，管理员和开发人员必须首先准备环境。
 
-[AEM管理员](#administrator) 要在AEM Mobile和Adobe TargetCloud Service之间建立连接，需要使用。
+需要[AEM管理员](#administrator)才能在AEM Mobile和Adobe TargetCloud Service之间建立连接。
 
-与此同时，AEM Mobile [开发人员](#developer) 必须编辑其现有脚本以便于进行目标内容创作。
+同时，AEM Mobile [开发人员](#developer)必须编辑其现有脚本以进行目标内容创作。
 
 ## 适用于管理员 {#for-administrators}
 
 在内容作者开始为移动应用程序生成目标内容之前，必须执行多个步骤：为用户和组获取正确的权限集、创建云服务、为活动配置应用程序，以及最终生成内容。
 
-本文将引导您完成用于配置 [AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 进行定位。
+本文将指导您完成用于配置[AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)以进行定位的过程。
 
 我们接下来将假设AEM Mobile混合引用应用程序已成功部署并可通过AEM Mobile功能板访问。
 
-在作者可以在应用程序中生成目标内容之前，您的AEM实例必须 [已使用Adobe TargetCloud Service进行配置。](/help/mobile/aem-mobile-configuring-cloud-service.md)
+在作者生成应用程序中的目标内容之前，您的AEM实例必须[配置了Adobe TargetCloud Service。](/help/mobile/aem-mobile-configuring-cloud-service.md)
 
 ### 权限 {#permissions}
 
-需要访问个性化控制台的用户必须属于 `target-activity-authors` 组。
+需要访问个性化控制台的用户必须属于`target-activity-authors`组。
 
-建议作为用户和组设置的一部分，将target-activity-group添加到apps-admins组中。 通过添加target-activity-authors组，用户能够查看个性化导航菜单条目。
+建议作为用户和组设置的一部分，将target-activity-group添加到apps-admins组中。 通过添加target-activity-authors组，用户可以看到Personalization导航菜单条目。
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ AEM Mobile内容个性化功能允许 [AEM作者](#author) 使用个性化移动
 
 ### 客户代码 {#client-code}
 
-要登录AMS服务，请访问 [https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)，选择移动应用程序并单击设置。 找到SDK Target选项字段，将客户端代码置于该字段中，然后单击保存。
+要登录AMS服务，请访问[https://mobilemarketing.adobe.com](https://mobilemarketing.adobe.com/)，请选择移动应用程序并单击设置。 找到SDK Target选项字段，将客户端代码置于该字段中，然后单击保存。
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -98,7 +98,7 @@ AEM Mobile内容个性化功能允许 [AEM作者](#author) 使用个性化移动
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
-从创建或选择向导步骤中，选择移动服务下拉列表，然后选择创建配置条目。 提供标题、公司、用户名、密码并选择适当的数据中心。 如果您不知道这些值，请与AdobeMobile Service管理员联系以获取它们。 填写完所有字段后，单击 **验证**. 验证过程将转至AMS并验证帐户的凭据，在验证成功后，将填充移动设备应用程序列表，您可以从下拉列表中选择关联的移动设备应用程序。 单击 **提交** 以完成向导。 该过程可能需要一些时间来获取配置数据以及与该应用程序关联的任何分析。 完成该过程后，单击 **完成** 以返回到Adobe移动设备功能板。
+从创建或选择向导步骤中，选择移动服务下拉列表，然后选择创建配置条目。 提供标题、公司、用户名、密码并选择适当的数据中心。 如果您不知道这些值，请与AdobeMobile Service管理员联系以获取它们。 填写完所有字段后，单击&#x200B;**验证**。 验证过程将转至AMS并验证帐户的凭据，在验证成功后，将填充移动设备应用程序列表，您可以从下拉列表中选择关联的移动设备应用程序。 单击&#x200B;**提交**&#x200B;以完成向导。 该过程可能需要一些时间来获取配置数据以及与该应用程序关联的任何分析。 该过程完成后，单击&#x200B;**完成**&#x200B;以返回到Adobe移动设备仪表板。
 
 返回到“移动设备功能板”后，“管理Cloud Service”图块将包含AMS云服务。 此外，分析量度图块中会填充生命周期报表。
 
@@ -106,13 +106,13 @@ AEM Mobile内容个性化功能允许 [AEM作者](#author) 使用个性化移动
 
 ## 对于作者 {#for-authors}
 
-**先决条件：** 如上所述，管理员必须先配置与Adobe Target服务的连接，然后作者才能生成新的目标内容。
+**先决条件：**&#x200B;如上所述，管理员必须先配置与Adobe Target服务的连接，然后作者才能生成新的目标内容。
 
 在管理员配置两个云服务并且开发人员配置了mobileappoffers处理程序后，内容作者现在可以开始生成目标体验。
 
 在AEM Mobile应用程序中创作目标内容时，会遵循与创作AEM Sites类似的过程：
 
-有关更多详细信息，请参阅此处。 [在AEM中创作目标内容](/help/sites-authoring/personalization.md)
+请参阅此处，了解[在AEM中创作目标内容](/help/sites-authoring/personalization.md)的完整概述
 
 ## 面向开发人员 {#for-developers}
 
@@ -120,9 +120,9 @@ AEM Mobile内容个性化功能允许 [AEM作者](#author) 使用个性化移动
 
 ### Adobe Target ContentSync处理程序 {#adobe-target-contentsync-handlers}
 
-为了向用户设备交付内容，通过呈现由AEM内容作者创建的选件来生成内容。 为了处理目标选件的渲染，新增了一个用于处理选件的内容同步处理程序。 使用混合引用应用程序作为示例，en（英语）内容包包含的ContentSyncConfig具有 [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) 处理程序。 下一步是将选件呈现到设备时非常关键。 mobileappoffers处理程序具有路径属性，该属性标识要用于应用程序的个性化活动的路径。
+为了向用户设备交付内容，通过呈现由AEM内容作者创建的选件来生成内容。 为了处理目标选件的渲染，新增了一个用于处理选件的内容同步处理程序。 使用混合引用应用程序作为示例，en （英语）内容包包含具有[mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml)处理程序的ContentSyncConfig。 下一步是将选件呈现到设备时非常关键。 mobileappoffers处理程序具有路径属性，该属性标识要用于应用程序的个性化活动的路径。
 
-例如，如果在以下位置有活动： */content/campaigns/hybridref*，复制此路径并将其作为值粘贴到 *路径* mobileappoffers处理程序的属性。
+例如，如果在&#x200B;*/content/campaigns/hybridref*&#x200B;处有活动，请复制此路径并将其作为值粘贴到mobileappoffers处理程序的&#x200B;*path*&#x200B;属性。
 
 >[!NOTE]
 >
@@ -132,21 +132,21 @@ AEM Mobile内容个性化功能允许 [AEM作者](#author) 使用个性化移动
 
 ### 渲染模式 {#render-mode}
 
-对于发布和开发设置，mobileappoffers处理程序的配置方式不同。 对于发布设置，有一个名为的属性 *渲染模式* 值为 *发布* 在cq：ContentSyncConfig节点上设置。 mobileappoffers处理程序引用renderMode，如果设置为publish，则编辑所创建的mbox id。 默认情况下，由AEM创建的mbox有一个 — author值附加到mbox ID。 这会标识该活动尚未发布，应当使用未发布的促销活动来获取优惠解决方案。
+对于发布和开发设置，mobileappoffers处理程序的配置方式不同。 对于发布设置，在cq：ContentSyncConfig节点上设置了名为&#x200B;*renderMode*&#x200B;且值为&#x200B;*publish*&#x200B;的属性。 mobileappoffers处理程序引用renderMode，如果设置为publish，则编辑所创建的mbox id。 默认情况下，由AEM创建的mbox有一个 — author值附加到mbox ID。 这会标识该活动尚未发布，应当使用未发布的促销活动来获取优惠解决方案。
 
 通过Adobe移动设备仪表板暂存内容时，暂存内容会被视为生产就绪内容，并通过非开发内容同步配置进行渲染。 按此方式呈现将导致从所有mbox id中删除 — author，并预期Target服务器上会提供一个已发布的活动。 在测试暂存内容之前，请确保已发布该活动。
 
-### 个性化应用程序开发 {#personalization-app-development}
+### Personalization应用程序开发 {#personalization-app-development}
 
 #### 组件 {#components}
 
-任何内容的基础通常都是页面组件，该组件可以扩展基本AEM页面组件wcm/foundation/components/page或foundation/components/page之一，具体取决于您使用的是HTL还是JSP。 这些步骤的持续时间侧重于使用wcm/foundation/components/page组件。 页面组件的基本结构被划分为多个脚本，每个脚本提供了特定用途，允许开发人员在需要时组织和覆盖其代码。 对个性化感兴趣的两个脚本是head.html和body.html。 这两个脚本提供了一个区域，可在其中插入代码以支持Context Hub、Cloud Service和移动设备创作。
+任何内容的基础通常都是页面组件，该组件可以扩展基本AEM页面组件wcm/foundation/components/page或foundation/components/page之一，具体取决于您使用的是HTL还是JSP。 这些步骤的持续时间侧重于使用wcm/foundation/components/page组件。 页面组件的基本结构被划分为多个脚本，每个脚本提供了特定用途，允许开发人员在需要时组织和覆盖其代码。 Personalization感兴趣的两个脚本是head.html和body.html。 这两个脚本提供了一个区域，可在其中插入代码以支持Context Hub、Cloud Service和移动设备创作。
 
 以下是两个用于启用内容定位的主要脚本的概述。
 
 #### head.html {#head-html}
 
-要使作者能够定位其内容，必须将目标菜单添加到页面，以便作者可以将上下文从编辑模式更改为定位模式。 要启用此功能，开发人员应修改head.html脚本，使其在head.html顶部附近或在 &lt;title>&lt;/title> 元素。
+要使作者能够定位其内容，必须将目标菜单添加到页面，以便作者可以将上下文从编辑模式更改为定位模式。 要启用此功能，开发人员应修改head.html脚本，在head.html顶部附近或尽可能靠近&lt;title>&lt;/title>元素的位置包含以下代码片段。
 
 ```xml
 <meta data-sly-test="${!wcmmode.disabled}">
@@ -162,9 +162,9 @@ AEM Mobile内容个性化功能允许 [AEM作者](#author) 使用个性化移动
 
 为了让作者能够预览目标内容，编辑器必须能够找到Adobe Target云服务的配置。 下面的代码块添加了两个重要脚本。 首次添加功能，让页面能够找到关联的Target云服务并调用Adobe Target。 其次是添加了cq.apps.targeting类别。
 
-此 **cq.apps.targeting** 类别会覆盖默认的cq/personalization/component/target组件，并使用可呈现专门用于移动应用程序使用的选件的mobileapps/components/target组件。 有关此内容的更多详细信息，请参阅目标组件一节。
+**cq.apps.targeting**&#x200B;类别将覆盖默认的cq/personalization/component/target组件，并使用专门为移动应用程序使用呈现选件的mobileapps/components/target组件。 有关此内容的更多详细信息，请参阅目标组件一节。
 
-此代码应添加到head.html中，并放置在的末尾之前 &lt;/head> 元素。
+该代码应添加到head.html中，并放置在&lt;/head>元素的末尾之前。
 
 ```xml
 <div data-sly-test="${!wcmmode.disabled}">
@@ -197,11 +197,11 @@ AEM Mobile内容个性化功能允许 [AEM作者](#author) 使用个性化移动
 
 ### 引用应用程序 {#reference-application}
 
-head.html和body.html的示例可在 [AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 显示开发人员在两个脚本中放置脚本块的位置。
+在[AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)中可以找到head.html和body.html的示例，它们向开发人员展示了将脚本块放置在两个脚本中的位置。
 
 ### 内容同步处理程序 {#content-sync-handlers}
 
-当内容作者完成为移动应用程序创建内容时，下一步是下载源并构建应用程序，或暂存要发布的内容。 要实现此目的，开发人员需要完成几个步骤。 为帮助呈现内容，AEM Mobile使用内容同步处理程序来呈现和打包内容。 为个性化用例引入了一个新的内容同步处理程序，以呈现目标内容。 “mobileappoffers”处理程序知道如何呈现由内容作者创建的关联目标选件。 mobileappoffers处理程序扩展了抽象页面更新处理程序，因此，许多属性是相似的。 mobileappoffers处理程序的详细信息具有以下属性。
+当内容作者完成为移动应用程序创建内容时，下一步是下载源并构建应用程序，或暂存要发布的内容。 要实现此目的，开发人员需要完成几个步骤。 为帮助呈现内容，AEM Mobile使用内容同步处理程序来呈现和打包内容。 已为Personalization用例引入新的内容同步处理程序来呈现目标内容。 “mobileappoffers”处理程序知道如何呈现由内容作者创建的关联目标选件。 mobileappoffers处理程序扩展了抽象页面更新处理程序，因此，许多属性是相似的。 mobileappoffers处理程序的详细信息具有以下属性。
 
 <table>
  <tbody>
@@ -222,7 +222,7 @@ head.html和body.html的示例可在 [AEM Mobile混合引用应用程序](https:
   </tr>
   <tr>
    <td>locationRoot</td>
-   <td>/content/mobileapps/&lt;app&gt;</td>
+   <td>/content/mobileapps/&lt;应用程序&gt;</td>
    <td>应用程序的位置。</td>
   </tr>
   <tr>
@@ -270,13 +270,13 @@ head.html和body.html的示例可在 [AEM Mobile混合引用应用程序](https:
 
 >[!NOTE]
 >
->此 [AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 具有默认的mobileappoffer处理程序配置。 示例中的path属性为空，因为它取决于促销活动位置。 在Campaign作者创建了Campaign后，应用程序管理员应通过指定指向Campaign的path属性来将Campaign与处理程序关联。
+>[AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)具有默认的mobileappoffer处理程序配置。 示例中的path属性为空，因为它取决于促销活动位置。 在Campaign作者创建了Campaign后，应用程序管理员应通过指定指向Campaign的path属性来将Campaign与处理程序关联。
 
 ### 目标组件 {#target-component}
 
 为了帮助呈现专门用于移动设备应用程序的内容，AEM Mobile使用mobileapps/components/target组件。 移动目标组件扩展cq/personalization/components/target组件并覆盖engine_tnt.jsp脚本。 通过覆盖engine_tnt.jsp，AEM Mobile可以控制为移动设备应用程序用例生成的HTML。 对于内容作者定位的每个组件，都会由engine_tnt.jsp创建一个关联的mbox。
 
-对于每个mbox，属性为 **cq-targeting** 添加了功能，允许应用程序开发人员编写自定义代码以根据需要使用和使用。 此 [AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) 有一个使用cq-targeting属性的Angular指令示例。 内容替换的概念（何时以及如何替换）由移动应用程序开发人员决定。 有一个Mobile SDK，通过AEM /etc/clientlibs/mobileapps/js/mobileapps.js交付，它提供了一个API来调用Adobe定位服务。 取决于应用程序开发人员来指定何时应根据他们的应用程序的设计进行该调用。
+为每个mbox添加&#x200B;**cq-targeting**&#x200B;属性，以允许应用程序开发人员编写自定义代码以根据需要使用和使用。 [AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)具有使用cq-targeting属性的Angular指令示例。 内容替换的概念（何时以及如何替换）由移动应用程序开发人员决定。 有一个Mobile SDK，通过AEM /etc/clientlibs/mobileapps/js/mobileapps.js交付，它提供了一个API来调用Adobe定位服务。 取决于应用程序开发人员来指定何时应根据他们的应用程序的设计进行该调用。
 
 ## 接下来呢？ {#what-s-next}
 

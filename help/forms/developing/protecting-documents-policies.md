@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 使用策略保护文档 {#protecting-documents-with-policies}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 **关于Document Security服务**
 
@@ -39,24 +39,24 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 您可以使用Document Security服务完成以下任务：
 
-* 创建策略。 有关信息，请参阅 [创建策略](protecting-documents-policies.md#creating-policies).
-* 修改策略。 有关信息，请参阅 [修改策略](protecting-documents-policies.md#modifying-policies).
-* 删除策略。 有关信息，请参阅 [删除策略](protecting-documents-policies.md#deleting-policies).
-* 将策略应用于PDF文档。 有关信息，请参阅 [将策略应用于PDF文档](protecting-documents-policies.md#applying-policies-to-pdf-documents).
-* 从PDF文档中删除策略。 有关信息，请参阅 [从PDF文档中删除策略](protecting-documents-policies.md#removing-policies-from-pdf-documents).
-* Inspect受策略保护的文档。 有关信息，请参阅 [检查受策略保护的PDF文档](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).
-* 撤销对PDF文档的访问权限。 有关信息，请参阅 [撤销对文档的访问权限](protecting-documents-policies.md#revoking-access-to-documents).
-* 恢复对已撤消文档的访问。 有关信息，请参阅 [恢复对已撤消文档的访问](protecting-documents-policies.md#reinstating-access-to-revoked-documents).
-* 创建水印。 有关信息，请参阅 [创建水印](protecting-documents-policies.md#creating-watermarks).
-* 搜索事件。 有关信息，请参阅 [搜索事件](protecting-documents-policies.md#searching-for-events).
+* 创建策略。 有关信息，请参阅[创建策略](protecting-documents-policies.md#creating-policies)。
+* 修改策略。 有关信息，请参阅[修改策略](protecting-documents-policies.md#modifying-policies)。
+* 删除策略。 有关信息，请参阅[删除策略](protecting-documents-policies.md#deleting-policies)。
+* 将策略应用于PDF文档。 有关信息，请参阅[将策略应用到PDF文档](protecting-documents-policies.md#applying-policies-to-pdf-documents)。
+* 从PDF文档中删除策略。 有关信息，请参阅[从PDF文档中删除策略](protecting-documents-policies.md#removing-policies-from-pdf-documents)。
+* Inspect受策略保护的文档。 有关信息，请参阅[检查受策略保护的PDF文档](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)。
+* 撤销对PDF文档的访问权限。 有关信息，请参阅[撤销对文档的访问权限](protecting-documents-policies.md#revoking-access-to-documents)。
+* 恢复对已撤消文档的访问。 有关信息，请参阅[恢复对已撤消文档的访问](protecting-documents-policies.md#reinstating-access-to-revoked-documents)。
+* 创建水印。 有关信息，请参阅[创建水印](protecting-documents-policies.md#creating-watermarks)。
+* 搜索事件。 有关信息，请参阅[搜索事件](protecting-documents-policies.md#searching-for-events)。
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 创建策略 {#creating-policies}
 
-您可以使用Document Security Java API或Web服务API以编程方式创建策略。 A *策略* 是包含Document Security设置、授权用户和使用权限的信息集合。 您可以使用适用于不同情况和用户的安全设置创建和保存任意数量的策略。
+您可以使用Document Security Java API或Web服务API以编程方式创建策略。 *策略*&#x200B;是包含文档安全设置、授权用户和使用权限的信息集合。 您可以使用适用于不同情况和用户的安全设置创建和保存任意数量的策略。
 
 通过策略，您可以执行以下任务：
 
@@ -133,7 +133,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -164,7 +164,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 * adobe-utilities.jar
 * jbossall-client.jar(如果未在JBoss上部署AEM Forms，请使用其他JAR文件)
 
-有关这些JAR文件位置的信息，请参见 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+有关这些JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 **创建Document Security客户端API对象**
 
@@ -189,13 +189,13 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 * **AES256**：表示使用256位密钥的AES加密算法。
 * **AES128**：表示使用128位密钥的AES加密算法。
-* **无加密：** 表示不加密。
+* **NoEncryption：**&#x200B;表示不加密。
 
-当指定 `NoEncryption` 选项，则不能设置 `PlaintextMetadata` 选项至 `false`. 如果尝试这样做，则会引发异常。
+指定`NoEncryption`选项时，不能将`PlaintextMetadata`选项设置为`false`。 如果尝试这样做，则会引发异常。
 
 >[!NOTE]
 >
->有关可设置的其他属性的信息，请参见 `Policy` 中的界面描述 [AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>有关您可以设置的其他属性的信息，请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)中的`Policy`接口描述。
 
 **创建策略条目**
 
@@ -221,40 +221,40 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `DocumentSecurityClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`DocumentSecurityClient`对象并传递`ServiceClientFactory`对象。
 
 1. 设置策略的属性。
 
-   * 创建 `Policy` 对象，方法是调用 `InfomodelObjectFactory` 对象的静态 `createPolicy` 方法。 此方法会返回 `Policy` 对象。
-   * 通过调用 `Policy` 对象的 `setName` 方法，并传递指定策略名称的字符串值。
-   * 通过调用 `Policy` 对象的 `setDescription` 方法，并传递指定策略描述的字符串值。
-   * 通过调用 `Policy` 对象的 `setPolicySetName` 方法，并传递一个指定策略集名称的字符串值。 (您可以指定 `null` (对于此参数值，它会导致将策略添加到 *我的策略* 策略集。)
-   * 通过调用 `InfomodelObjectFactory` 对象的静态 `createValidityPeriod` 方法。 此方法会返回 `ValidityPeriod` 对象。
-   * 通过调用 `ValidityPeriod` 对象的 `setRelativeExpirationDays` 方法，并传递一个指定天数的整数值。
-   * 通过调用 `Policy` 对象的 `setValidityPeriod` 方法和传递 `ValidityPeriod` 对象。
+   * 通过调用`InfomodelObjectFactory`对象的静态`createPolicy`方法创建`Policy`对象。 此方法返回`Policy`对象。
+   * 通过调用`Policy`对象的`setName`方法并传递指定策略名称的字符串值来设置策略的name特性。
+   * 通过调用`Policy`对象的`setDescription`方法并传递指定策略说明的字符串值来设置策略的说明。
+   * 通过调用`Policy`对象的`setPolicySetName`方法并传递指定策略集名称的字符串值，指定新策略所属的策略集。 （您可以为此参数值指定`null`，这将导致策略被添加到&#x200B;*我的策略*&#x200B;策略集。）
+   * 通过调用`InfomodelObjectFactory`对象的静态`createValidityPeriod`方法创建策略的有效期。 此方法返回`ValidityPeriod`对象。
+   * 通过调用`ValidityPeriod`对象的`setRelativeExpirationDays`方法并传递指定天数的整数值，设置受策略保护文档可访问的天数。
+   * 通过调用`Policy`对象的`setValidityPeriod`方法并传递`ValidityPeriod`对象来设置策略的有效期。
 
 1. 创建策略条目。
 
-   * 通过调用 `InfomodelObjectFactory` 对象的静态 `createPolicyEntry` 方法。 此方法会返回 `PolicyEntry` 对象。
-   * 通过调用 `InfomodelObjectFactory` 对象的静态 `createPermission` 方法。 传递属于的静态数据成员 `Permission` 表示权限的接口。 此方法会返回 `Permission` 对象。 例如，要添加允许用户从受策略保护的PDF文档复制数据的权限，请传递 `Permission.COPY`. （对要添加的每个权限重复此步骤）。
-   * 通过调用 `PolicyEntry` 对象的 `addPermission` 方法和传递 `Permission` 对象。 (对每一项重复此步骤 `Permission` 您创建的对象)。
-   * 通过调用 `InfomodelObjectFactory` 对象的静态 `createSpecialPrincipal` 方法。 传递属于 `InfomodelObjectFactory` 表示主体的对象。 此方法会返回 `Principal` 对象。 例如，要添加文档的发布者作为主体，请传递 `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-   * 通过调用 `PolicyEntry` 对象的 `setPrincipal`方法和传递 `Principal` 对象。
-   * 通过调用 `Policy` 对象的 `addPolicyEntry` 方法和传递 `PolicyEntry` 对象。
+   * 通过调用`InfomodelObjectFactory`对象的静态`createPolicyEntry`方法创建策略条目。 此方法返回`PolicyEntry`对象。
+   * 通过调用`InfomodelObjectFactory`对象的静态`createPermission`方法指定策略的权限。 传递属于表示权限的`Permission`接口的静态数据成员。 此方法返回`Permission`对象。 例如，要添加允许用户从受策略保护的PDF文档复制数据的权限，请传递`Permission.COPY`。 （对要添加的每个权限重复此步骤）。
+   * 通过调用`PolicyEntry`对象的`addPermission`方法并传递`Permission`对象，向策略条目添加权限。 （对创建的每个`Permission`对象重复此步骤）。
+   * 通过调用`InfomodelObjectFactory`对象的静态`createSpecialPrincipal`方法创建策略主体。 传递属于表示主体的`InfomodelObjectFactory`对象的数据成员。 此方法返回`Principal`对象。 例如，若要将文档的发布者添加为主体，请传递`InfomodelObjectFactory.PUBLISHER_PRINCIPAL`。
+   * 通过调用`PolicyEntry`对象的`setPrincipal`方法并传递`Principal`对象，将主体添加到策略条目。
+   * 通过调用`Policy`对象的`addPolicyEntry`方法并传递`PolicyEntry`对象，将策略条目添加到策略中。
 
 1. 注册策略。
 
-   * 创建 `PolicyManager` 对象，方法是调用 `DocumentSecurityClient` 对象的 `getPolicyManager` 方法。
-   * 通过调用 `PolicyManager` 对象的 `registerPolicy` 方法并传递以下值：
+   * 通过调用`DocumentSecurityClient`对象的`getPolicyManager`方法创建`PolicyManager`对象。
+   * 通过调用`PolicyManager`对象的`registerPolicy`方法并传递以下值来注册策略：
 
-      * 此 `Policy` 表示要注册的策略的对象。
+      * 表示要注册的策略的`Policy`对象。
 
    * 一个字符串值，表示策略所属的策略集。
 
-   如果在连接设置中使用AEM表单管理员帐户创建 `DocumentSecurityClient` 对象，然后在调用 `registerPolicy` 方法。 如果您传递 `null` 策略集的值，将在管理员中创建策略 *我的策略* 策略集。
+   如果在连接设置中使用AEM表单管理员帐户创建`DocumentSecurityClient`对象，则在调用`registerPolicy`方法时指定策略集名称。 如果您为策略集传递了`null`值，则会在管理员&#x200B;*我的策略*&#x200B;策略集中创建该策略。
 
-   如果在连接设置中使用Document Security用户，则可以调用重载 `registerPolicy` 仅接受策略的方法。 也就是说，您无需指定策略集名称。 但是，该策略将添加到指定的策略集 *我的策略*. 如果不想将新策略添加到此策略集，请在调用 `registerPolicy` 方法。
+   如果在连接设置中使用Document Security用户，则可以调用仅接受策略的重载`registerPolicy`方法。 也就是说，您无需指定策略集名称。 但是，该策略已添加到名为&#x200B;*我的策略*&#x200B;的策略集。 如果不想将新策略添加到此策略集，请在调用`registerPolicy`方法时指定策略集名称。
 
    >[!NOTE]
    >
@@ -270,34 +270,34 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `DocumentSecurityServiceClient` 对象使用默认构造函数。
-   * 创建 `DocumentSecurityServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `RightsManagementServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`DocumentSecurityServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`DocumentSecurityServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`RightsManagementServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 设置策略的属性。
 
-   * 创建 `PolicySpec` 对象。
-   * 通过将字符串值分配给 `PolicySpec` 对象的 `name` 数据成员。
-   * 通过将字符串值分配给 `PolicySpec` 对象的 `description` 数据成员。
-   * 通过将字符串值分配给，指定策略所属的策略集 `PolicySpec` 对象的 `policySetName` 数据成员。 指定现有策略集名称。 (您可以指定 `null` （对于导致策略被添加到的此参数值） *我的策略*.)
-   * 通过将整数值分配给，设置策略的脱机租赁期 `PolicySpec` 对象的 `offlineLeasePeriod` 数据成员。
-   * 设置 `PolicySpec` 对象的 `policyXml` 具有表示PDRL XML数据的字符串值的数据成员。 要执行此任务，请创建一个.NET `StreamReader` 对象。 将表示策略的PDRL XML文件的位置传递给 `StreamReader` 构造函数。 接下来，调用 `StreamReader` 对象的 `ReadLine` 方法将返回值分配给字符串变量。 循环访问 `StreamReader` 对象，直到 `ReadLine` 方法返回null。 将字符串变量分配给 `PolicySpec` 对象的 `policyXml` 数据成员。
+   * 使用构造函数创建`PolicySpec`对象。
+   * 通过为`PolicySpec`对象的`name`数据成员分配字符串值来设置策略的名称。
+   * 通过为`PolicySpec`对象的`description`数据成员分配字符串值来设置策略的描述。
+   * 通过为`PolicySpec`对象的`policySetName`数据成员分配字符串值，指定策略所属的策略集。 指定现有策略集名称。 （您可以为此参数值指定`null`，这将导致策略被添加到&#x200B;*我的策略*。）
+   * 通过为`PolicySpec`对象的`offlineLeasePeriod`数据成员分配整数值，设置策略的脱机租赁期。
+   * 使用表示PDRL XML数据的字符串值设置`PolicySpec`对象的`policyXml`数据成员。 要执行此任务，请使用它的构造函数创建一个.NET `StreamReader`对象。 将表示策略的PDRL XML文件的位置传递给`StreamReader`构造函数。 接下来，调用`StreamReader`对象的`ReadLine`方法，并将返回值分配给字符串变量。 循环访问`StreamReader`对象，直到`ReadLine`方法返回null。 将字符串变量分配给`PolicySpec`对象的`policyXml`数据成员。
 
 1. 创建策略条目。
 
@@ -305,14 +305,14 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 注册策略。
 
-   通过调用 `DocumentSecurityServiceClient` 对象的 `registerPolicy` 方法并传递以下值：
+   通过调用`DocumentSecurityServiceClient`对象的`registerPolicy`方法并传递以下值来注册策略：
 
-   * 此 `PolicySpec` 表示要注册的策略的对象。
-   * 一个字符串值，表示策略所属的策略集。 您可以指定 `null` 值将导致策略被添加到 *我的策略* 策略集。
+   * 表示要注册的策略的`PolicySpec`对象。
+   * 一个字符串值，表示策略所属的策略集。 您可以指定一个`null`值，该值会导致将策略添加到&#x200B;*MyPolices*&#x200B;策略集。
 
-   如果在连接设置中使用AEM表单管理员帐户创建 `DocumentSecurityClient` 对象，在调用时指定策略集名称 `registerPolicy` 方法。
+   如果在连接设置中使用AEM表单管理员帐户创建`DocumentSecurityClient`对象，请在调用`registerPolicy`方法时指定策略集名称。
 
-   如果在连接设置中使用Document SecurityDocument Security用户，则可以调用重载 `registerPolicy` 仅接受策略的方法。 也就是说，您无需指定策略集名称。 但是，该策略将添加到指定的策略集 *我的策略*. 如果不想将新策略添加到此策略集，请在调用 `registerPolicy` 方法。
+   如果在连接设置中使用Document SecurityDocument Security用户，则可以调用仅接受策略的重载`registerPolicy`方法。 也就是说，您无需指定策略集名称。 但是，该策略已添加到名为&#x200B;*我的策略*&#x200B;的策略集。 如果不想将新策略添加到此策略集，请在调用`registerPolicy`方法时指定策略集名称。
 
    >[!NOTE]
    >
@@ -329,11 +329,11 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 当业务需求发生变化且策略不再反映这些需求时，您可以修改策略。 您可以简单地更新现有策略，而不是创建策略。
 
-要使用Web服务（例如，使用通过JAX-WS创建的Java代理类）修改策略属性，必须确保在Document Security服务中注册该策略。 然后，您可以使用引用现有策略 `PolicySpec.getPolicyXml` 方法，并使用适用的方法修改策略属性。 例如，您可以通过调用 `PolicySpec.setOfflineLeasePeriod` 方法。
+要使用Web服务（例如，使用通过JAX-WS创建的Java代理类）修改策略属性，必须确保在Document Security服务中注册该策略。 然后，您可以使用`PolicySpec.getPolicyXml`方法引用现有策略，并使用适用的方法修改策略属性。 例如，您可以通过调用`PolicySpec.setOfflineLeasePeriod`方法来修改离线租赁期。
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -351,21 +351,21 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 **创建Document Security客户端API对象**
 
-您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建 `RightsManagementClient` 对象。 如果您使用的是Document Security Web服务API，请创建 `RightsManagementServiceService` 对象。
+您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建一个`RightsManagementClient`对象。 如果您使用的是Document Security Web服务API，请创建`RightsManagementServiceService`对象。
 
 **检索现有策略**
 
-检索现有策略以对其进行修改。 要检索策略，请指定策略名称和策略所属的策略集。 如果您指定 `null` 策略集名称的值，策略将从 *我的策略* 策略集。
+检索现有策略以对其进行修改。 要检索策略，请指定策略名称和策略所属的策略集。 如果为策略集名称指定了`null`值，则从&#x200B;*我的策略*&#x200B;策略集中检索该策略。
 
 **设置策略的属性**
 
 要修改策略，请修改策略属性的值。 唯一不能更改的策略属性是name属性。 例如，要更改策略的脱机租赁期，您可以修改策略的脱机租赁期属性的值。
 
-使用Web服务修改策略的脱机租赁期时， `offlineLeasePeriod` 上的字段 `PolicySpec` 接口被忽略。 要更新离线租赁期，请修改 `OfflineLeasePeriod` 元素。 然后使用引用更新的PDRL XML文档 `PolicySpec` 接口的 `policyXML` 数据成员。
+使用Web服务修改策略的脱机租赁期时，`PolicySpec`界面上的`offlineLeasePeriod`字段被忽略。 要更新脱机租赁期，请修改PDRL XML文档中的`OfflineLeasePeriod`元素。 然后使用`PolicySpec`接口的`policyXML`数据成员引用更新的PDRL XML文档。
 
 >[!NOTE]
 >
->有关可设置的其他属性的信息，请参见 `Policy` 中的界面描述 [AEM Forms API参考](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>有关您可以设置的其他属性的信息，请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)中的`Policy`接口描述。
 
 **更新策略**
 
@@ -381,24 +381,24 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `RightsManagementClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`RightsManagementClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索现有策略。
 
-   * 创建 `PolicyManager` 对象，方法是调用 `RightsManagementClient` 对象的 `getPolicyManager` 方法。
-   * 创建 `Policy` 表示要通过调用 `PolicyManager` 对象的 `getPolicy` 并传递以下值”
+   * 通过调用`RightsManagementClient`对象的`getPolicyManager`方法创建`PolicyManager`对象。
+   * 通过调用`PolicyManager`对象的`getPolicy`方法并传递以下值，创建表示要更新的策略的`Policy`对象
 
-      * 一个字符串值，表示策略所属的策略集名称。 您可以指定 `null` 这导致 `MyPolicies` 正在使用的策略集。
+      * 一个字符串值，表示策略所属的策略集名称。 您可以指定导致使用`MyPolicies`策略集的`null`。
       * 表示策略名称的字符串值。
 
 1. 设置策略的属性。
 
-   更改策略的属性以满足您的业务要求。 例如，要更改策略的离线租赁期，请调用 `Policy` 对象的 `setOfflineLeasePeriod` 方法。
+   更改策略的属性以满足您的业务要求。 例如，要更改策略的脱机租赁期，请调用`Policy`对象的`setOfflineLeasePeriod`方法。
 
 1. 更新策略。
 
-   通过调用更新策略 `PolicyManager` 对象的 `updatePolicy` 方法。 传递 `Policy` 表示要更新的策略的对象。
+   通过调用`PolicyManager`对象的`updatePolicy`方法更新策略。 传递表示要更新的策略的`Policy`对象。
 
 **代码示例**
 
@@ -410,31 +410,31 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `RightsManagementServiceClient` 对象使用默认构造函数。
-   * 创建 `RightsManagementServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `RightsManagementServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`RightsManagementServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`RightsManagementServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`RightsManagementServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索现有策略。
 
-   创建 `PolicySpec` 表示要通过调用 `RightsManagementServiceClient` 对象的 `getPolicy` 方法并传递以下值：
+   通过调用`RightsManagementServiceClient`对象的`getPolicy`方法并传递以下值，创建表示要修改的策略的`PolicySpec`对象：
 
-   * 一个字符串值，它指定策略所属的策略集名称。 您可以指定 `null` 这导致 `MyPolicies` 正在使用的策略集。
+   * 一个字符串值，它指定策略所属的策略集名称。 您可以指定导致使用`MyPolicies`策略集的`null`。
    * 一个字符串值，它指定策略的名称。
 
 1. 设置策略的属性。
@@ -443,7 +443,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 更新策略。
 
-   通过调用 `RightsManagementServiceClient` 对象的 `updatePolicyFromSDK` 方法和传递 `PolicySpec` 表示要更新的策略的对象。
+   通过调用`RightsManagementServiceClient`对象的`updatePolicyFromSDK`方法并传递表示要更新的策略的`PolicySpec`对象来更新策略。
 
 **代码示例**
 
@@ -458,7 +458,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-2}
 
@@ -474,7 +474,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 **创建Document Security客户端API对象**
 
-您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建 `RightsManagementClient` 对象。 如果您使用的是Document Security Web服务API，请创建 `RightsManagementServiceService` 对象。
+您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建一个`RightsManagementClient`对象。 如果您使用的是Document Security Web服务API，请创建`RightsManagementServiceService`对象。
 
 **删除策略**
 
@@ -490,15 +490,15 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `RightsManagementClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`RightsManagementClient`对象并传递`ServiceClientFactory`对象。
 
 1. 删除策略。
 
-   * 创建 `PolicyManager` 对象，方法是调用 `RightsManagementClient` 对象的 `getPolicyManager` 方法。
-   * 通过调用 `PolicyManager` 对象的 `deletePolicy` 方法并传递以下值：
+   * 通过调用`RightsManagementClient`对象的`getPolicyManager`方法创建`PolicyManager`对象。
+   * 通过调用`PolicyManager`对象的`deletePolicy`方法并传递以下值来删除策略：
 
-      * 一个字符串值，它指定策略所属的策略集名称。 您可以指定 `null` 这导致 `MyPolicies` 正在使用的策略集。
+      * 一个字符串值，它指定策略所属的策略集名称。 您可以指定导致使用`MyPolicies`策略集的`null`。
       * 一个字符串值，它指定要删除的策略的名称。
 
 **代码示例**
@@ -513,31 +513,31 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `RightsManagementServiceClient` 对象使用默认构造函数。
-   * 创建 `RightsManagementServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `RightsManagementServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`RightsManagementServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`RightsManagementServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`RightsManagementServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 删除策略。
 
-   通过调用 `RightsManagementServiceClient` 对象的 `deletePolicy` 方法并传递以下值：
+   通过调用`RightsManagementServiceClient`对象的`deletePolicy`方法并传递以下值来删除策略：
 
-   * 一个字符串值，它指定策略所属的策略集名称。 您可以指定 `null` 这导致 `MyPolicies` 正在使用的策略集。
+   * 一个字符串值，它指定策略所属的策略集名称。 您可以指定导致使用`MyPolicies`策略集的`null`。
    * 一个字符串值，它指定要删除的策略的名称。
 
 **代码示例**
@@ -557,7 +557,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-3}
 
@@ -575,13 +575,13 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 **创建Document Security客户端API对象**
 
-在以编程方式执行Document Security服务操作之前，请先创建Document Security服务客户端对象。 如果您使用的是Java API，请创建 `DocumentSecurityClient` 对象。 如果您使用的是Document Security Web服务API，请创建 `DocumentSecurityServiceService` 对象。
+在以编程方式执行Document Security服务操作之前，请先创建Document Security服务客户端对象。 如果您使用的是Java API，请创建一个`DocumentSecurityClient`对象。 如果您使用的是Document Security Web服务API，请创建`DocumentSecurityServiceService`对象。
 
 **检索PDF文档**
 
 您可以检索PDF文档以应用策略。 将策略应用于PDF文档后，用户使用文档时受到限制。 例如，如果策略不允许在脱机时打开文档，则用户必须联机才能打开文档。
 
-**将现有策略应用于PDF文档**
+**将现有策略应用到PDF文档**
 
 要将策略应用于PDF文档，请引用现有策略并指定该策略所属的策略集。 设置连接属性的用户必须具有对指定策略的访问权限。 如果不存在，则会发生异常。
 
@@ -607,34 +607,34 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `RightsManagementClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`RightsManagementClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索PDF文档。
 
-   * 创建 `java.io.FileInputStream` 使用构造函数表示PDF文档的对象。 传递一个指定PDF文档位置的字符串值。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 使用构造函数创建表示PDF文档的`java.io.FileInputStream`对象。 传递一个指定PDF文档位置的字符串值。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 将现有策略应用于PDF文档。
 
-   * 创建 `DocumentManager` 对象，方法是调用 `RightsManagementClient` 对象的 `getDocumentManager` 方法。
-   * PDF通过调用 `DocumentManager` 对象的 `protectDocument` 方法并传递以下值：
+   * 通过调用`RightsManagementClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
+   * 通过调用`DocumentManager`对象的`protectDocument`方法并传递以下值，将策略应用到PDF文档：
 
-      * 此 `com.adobe.idp.Document` 包含应用策略的PDF文档的对象。
+      * 包含应用策略的PDF文档的`com.adobe.idp.Document`对象。
       * 指定文档名称的字符串值。
-      * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定 `null` 导致出现以下问题的值： `MyPolicies` 正在使用的策略集。
+      * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定导致使用`MyPolicies`策略集的`null`值。
       * 指定策略名称的字符串值。
       * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值是可选的，并且可以为null（如果此参数为null，则下一个参数值必须为null）。
-      * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为 `null` (如果此参数为null，则前一个参数值必须为 `null`)。
-      * A `com.adobe.livecycle.rightsmanagement.Locale` 表示用于选择MS Office模板的区域设置。 此参数值是可选的，不用于PDF文档。 要保护PDF文档，请指定 `null`.
+      * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为`null` （如果此参数为null，则以前的参数值必须为`null`）。
+      * 表示用于选择MS Office模板的区域设置的`com.adobe.livecycle.rightsmanagement.Locale`。 此参数值是可选的，不用于PDF文档。 要保护PDF文档的安全，请指定`null`。
 
-     此 `protectDocument` 方法返回 `RMSecureDocumentResult` 包含受策略保护的PDF文档的对象。
+     `protectDocument`方法返回包含受策略保护的PDF文档的`RMSecureDocumentResult`对象。
 
 1. 保存PDF文档。
 
-   * 调用 `RMSecureDocumentResult` 对象的 `getProtectedDoc` 用于获取受策略保护的PDF文档的方法。 此方法会返回 `com.adobe.idp.Document` 对象。
-   * 创建 `java.io.File` 对象并确保文件扩展名PDF。
-   * 调用 `com.adobe.idp.Document` 对象的 `copyToFile` 用于复制 `Document` 对象到文件(确保您使用 `Document` 返回的对象 `getProtectedDoc` 方法)。
+   * 调用`RMSecureDocumentResult`对象的`getProtectedDoc`方法以获取受策略保护的PDF文档。 此方法返回`com.adobe.idp.Document`对象。
+   * 创建`java.io.File`对象并确保文件扩展名PDF。
+   * 调用`com.adobe.idp.Document`对象的`copyToFile`方法以将`Document`对象的内容复制到文件中（确保您使用`getProtectedDoc`方法返回的`Document`对象）。
 
 **代码示例**
 
@@ -655,57 +655,57 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `RightsManagementServiceClient` 对象使用默认构造函数。
-   * 创建 `RightsManagementServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `RightsManagementServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`RightsManagementServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`RightsManagementServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`RightsManagementServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索PDF文档。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储应用了策略的PDF文档。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法。 传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储应用了策略的PDF文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示PDF文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法，使用流数据填充字节数组。 传递字节数组、起始位置和要读取的流长度。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 将现有策略应用于PDF文档。
 
-   PDF通过调用 `RightsManagementServiceClient` 对象的 `protectDocument` 方法并传递以下值：
+   通过调用`RightsManagementServiceClient`对象的`protectDocument`方法并传递以下值，将策略应用到PDF文档：
 
-   * 此 `BLOB` 包含应用策略的PDF文档的对象。
+   * 包含应用策略的PDF文档的`BLOB`对象。
    * 指定文档名称的字符串值。
-   * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定 `null` 导致出现以下问题的值： `MyPolicies` 正在使用的策略集。
+   * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定导致使用`MyPolicies`策略集的`null`值。
    * 指定策略名称的字符串值。
-   * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值为可选值，并且可以为null(如果此参数为null，则下一个参数值必须为 `null`)。
-   * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，并且可以为null(如果此参数为null，则前一个参数值必须为 `null`)。
-   * A `RMLocale` 指定区域设置值的值(例如， `RMLocale.en`)。
+   * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值是可选的，并且可以为null（如果此参数为null，则下一个参数值必须为`null`）。
+   * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为null（如果此参数为null，则上一个参数值必须为`null`）。
+   * 指定区域设置值的`RMLocale`值（例如，`RMLocale.en`）。
    * 用于存储策略标识符值的字符串输出参数。
    * 用于存储受策略保护的标识符值的字符串输出参数。
-   * 用于存储mime类型的字符串输出参数(例如， `application/pdf`)。
+   * 用于存储mime类型的字符串输出参数（例如，`application/pdf`）。
 
-   此 `protectDocument` 方法返回 `BLOB` 包含受策略保护的PDF文档的对象。
+   `protectDocument`方法返回包含受策略保护的PDF文档的`BLOB`对象。
 
 1. 保存PDF文档。
 
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该值表示受策略保护的PDF文档的文件位置。
-   * 创建一个字节数组，用于存储 `BLOB` 返回的对象 `protectDocument` 方法。 通过获取的值，填充字节数组 `BLOB` 对象的 `MTOM` 数据成员。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
-   * PDF通过调用 `System.IO.BinaryWriter` 对象的 `Write` 和传递字节数组。
+   * 通过调用其构造函数并传递表示受策略保护的PDF文档的文件位置的字符串值来创建`System.IO.FileStream`对象。
+   * 创建一个字节数组，用于存储`protectDocument`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值填充字节数组。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
+   * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
 
 **代码示例**
 
@@ -720,7 +720,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-4}
 
@@ -746,7 +746,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
 
 **从PDF文档中删除策略**
 
-如果连接设置中指定了管理员，则可以从受策略保护的PDF文档中删除策略。 如果没有，则用于保护文档的策略必须包含 `SWITCH_POLICY` 从PDF文档中删除策略的权限。 此外，在AEM Forms连接设置中指定的用户还必须具有该权限。 否则，将引发异常。
+如果连接设置中指定了管理员，则可以从受策略保护的PDF文档中删除策略。 如果没有，则用于保护文档的策略必须包含`SWITCH_POLICY`权限，才能从PDF文档中删除策略。 此外，在AEM Forms连接设置中指定的用户还必须具有该权限。 否则，将引发异常。
 
 **保存不安全的PDF文档**
 
@@ -770,23 +770,23 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `DocumentSecurityClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`DocumentSecurityClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索受策略保护的PDF文档。
 
-   * 创建 `java.io.FileInputStream` 对象，通过使用受策略保护的PDF文档的构造函数并传递一个指定PDF文档位置的字符串值，来表示该文档。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 通过使用受策略保护的PDF文档的构造函数并传递指定PDF文档位置的字符串值，创建表示该文档的`java.io.FileInputStream`对象。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 从PDF文档中删除策略。
 
-   * 创建 `DocumentManager` 对象，方法是调用 `DocumentSecurityClient` 对象的 `getDocumentManager` 方法。
-   * PDF通过调用 `DocumentManager` 对象的 `removeSecurity` 方法和传递 `com.adobe.idp.Document` 包含受策略保护的PDF文档的对象。 此方法会返回 `com.adobe.idp.Document` 包含不安全PDF文档的对象。
+   * 通过调用`DocumentSecurityClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
+   * 通过调用`DocumentManager`对象的`removeSecurity`方法并传递包含受策略保护的PDF文档的`com.adobe.idp.Document`对象，从PDF文档中删除策略。 此方法返回包含不安全PDF文档的`com.adobe.idp.Document`对象。
 
 1. 保存不安全的PDF文档。
 
-   * 创建 `java.io.File` 对象并确保文件扩展名PDF。
-   * 调用 `Document` 对象的 `copyToFile` 用于复制 `Document` 对象到文件(确保您使用 `Document` 返回的对象 `removeSecurity` 方法)。
+   * 创建`java.io.File`对象并确保文件扩展名PDF。
+   * 调用`Document`对象的`copyToFile`方法以将`Document`对象的内容复制到文件中（确保您使用`removeSecurity`方法返回的`Document`对象）。
 
 **代码示例**
 
@@ -800,43 +800,43 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `DocumentSecurityServiceClient` 对象使用默认构造函数。
-   * 创建 `DocumentSecurityServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `DocumentSecurityServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`DocumentSecurityServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`DocumentSecurityServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`DocumentSecurityServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索受策略保护的PDF文档。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储从中删除策略的受策略保护的PDF文档。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储从中删除策略的受策略保护的PDF文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示PDF文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 从PDF文档中删除策略。
 
-   PDF通过调用 `DocumentSecurityServiceClient` 对象的 `removePolicySecurity` 方法和传递 `BLOB` 包含受策略保护的PDF文档的对象。 此方法会返回 `BLOB` 包含不安全PDF文档的对象。
+   通过调用`DocumentSecurityServiceClient`对象的`removePolicySecurity`方法并传递包含受策略保护的PDF文档的`BLOB`对象，从PDF文档中删除策略。 此方法返回包含不安全PDF文档的`BLOB`对象。
 
 1. 保存不安全的PDF文档。
 
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该值表示不安全PDF文档的文件位置。
-   * 创建一个字节数组，用于存储 `BLOB` 返回的对象 `removePolicySecurity` 方法。 通过获取的值，填充字节数组 `BLOB` 对象的 `MTOM` 字段。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
+   * 通过调用其构造函数并传递表示无保护PDF文档的文件位置的字符串值来创建`System.IO.FileStream`对象。
+   * 创建一个字节数组，用于存储`removePolicySecurity`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值填充字节数组。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
 
 **代码示例**
 
@@ -859,7 +859,7 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-5}
 
@@ -912,24 +912,24 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 1. 创建Document Security客户端API对象
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `DocumentSecurityClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`DocumentSecurityClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索受策略保护的PDF文档
 
-   * 创建 `java.io.FileInputStream` 对象，使用受策略保护的PDF文档的构造函数并传递指定PDF文档位置的字符串值来表示该文档。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 通过使用受策略保护的PDF文档的构造函数并传递指定PDF文档位置的字符串值，创建表示该文档的`java.io.FileInputStream`对象。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 撤销受策略保护的文档
 
-   * 创建 `DocumentManager` 对象，方法是调用 `DocumentSecurityClient` 对象的 `getDocumentManager` 方法。
-   * 通过调用 `DocumentManager` 对象的 `getLicenseId` 方法。 传递 `com.adobe.idp.Document` 表示受策略保护文档的对象。 此方法返回代表许可证标识符值的字符串值。
-   * 创建 `LicenseManager` 对象，方法是调用 `DocumentSecurityClient` 对象的 `getLicenseManager` 方法。
-   * 通过调用 `LicenseManager` 对象的 `revokeLicense` 方法并传递以下值：
+   * 通过调用`DocumentSecurityClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
+   * 通过调用`DocumentManager`对象的`getLicenseId`方法，检索受策略保护文档的许可证标识符值。 传递表示受策略保护文档的`com.adobe.idp.Document`对象。 此方法返回代表许可证标识符值的字符串值。
+   * 通过调用`DocumentSecurityClient`对象的`getLicenseManager`方法创建`LicenseManager`对象。
+   * 通过调用`LicenseManager`对象的`revokeLicense`方法并传递以下值来撤销受策略保护的文档：
 
-      * 一个字符串值，它指定受策略保护文档的许可证标识符值(指定 `DocumentManager` 对象的 `getLicenseId` 方法)。
-      * 的静态数据成员 `License` 指定撤销文档的原因的接口。 例如，您可以指定 `License.DOCUMENT_REVISED`.
-      * A `java.net.URL` 指定修订文档所在位置的值。 如果您不想将用户重定向到其他URL，则可以传递 `null`.
+      * 指定受策略保护文档的许可证标识符值的字符串值（指定`DocumentManager`对象的`getLicenseId`方法的返回值）。
+      * `License`接口的静态数据成员，它指定撤销文档的原因。 例如，您可以指定`License.DOCUMENT_REVISED`。
+      * 一个`java.net.URL`值，它指定修订文档的位置。 如果您不想将用户重定向到其他URL，则可以传递`null`。
 
 **代码示例**
 
@@ -943,42 +943,42 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 1. 包含项目文件
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象
 
-   * 创建 `DocumentSecurityServiceClient` 对象使用默认构造函数。
-   * 创建 `DocumentSecurityServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `DocumentSecurityServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`DocumentSecurityServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`DocumentSecurityServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`DocumentSecurityServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索受策略保护的PDF文档
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储已撤销的受策略PDF文档。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示要撤销的受策略保护的PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储已撤销的受策略PDF文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示要撤销的受策略保护PDF文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 撤销受策略保护的文档
 
-   * 通过调用 `DocumentSecurityServiceClient` 对象的 `getLicenseID` 方法和传递 `BLOB` 表示受策略保护文档的对象。 此方法返回代表许可证标识符的字符串值。
-   * 通过调用 `DocumentSecurityServiceClient` 对象的 `revokeLicense` 方法并传递以下值：
+   * 通过调用`DocumentSecurityServiceClient`对象的`getLicenseID`方法并传递表示受策略保护文档的`BLOB`对象，检索受策略保护文档的许可证标识符值。 此方法返回代表许可证标识符的字符串值。
+   * 通过调用`DocumentSecurityServiceClient`对象的`revokeLicense`方法并传递以下值来撤销受策略保护的文档：
 
-      * 一个字符串值，它指定受策略保护文档的许可证标识符值(指定 `DocumentSecurityServiceService` 对象的 `getLicenseId` 方法)。
-      * 的静态数据成员 `Reason` 指定撤销文档原因的枚举。 例如，您可以指定 `Reason.DOCUMENT_REVISED`.
-      * A `string` 值，指定修订文档所在的URL位置。 如果您不想将用户重定向到其他URL，则可以传递 `null`.
+      * 指定受策略保护文档的许可证标识符值的字符串值（指定`DocumentSecurityServiceService`对象的`getLicenseId`方法的返回值）。
+      * `Reason`枚举的静态数据成员，它指定撤销文档的原因。 例如，您可以指定`Reason.DOCUMENT_REVISED`。
+      * 一个`string`值，它指定修订文档所在的URL位置。 如果您不想将用户重定向到其他URL，则可以传递`null`。
 
 **代码示例**
 
@@ -1001,7 +1001,7 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-6}
 
@@ -1018,13 +1018,13 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 **创建Document Security客户端API对象**
 
-您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建 `DocumentSecurityClient` 对象。 如果您使用的是Document Security Web服务API，请创建 `DocumentSecurityServiceService` 对象。
+您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建一个`DocumentSecurityClient`对象。 如果您使用的是Document Security Web服务API，请创建`DocumentSecurityServiceService`对象。
 
-**检索吊销PDF文档的许可证标识符**
+**检索已吊销PDF文档的许可证标识符**
 
 检索已撤销PDF文档的许可证标识符以恢复已撤销PDF文档。 获取许可证标识符值后，您可以恢复已撤消的文档。 如果尝试恢复未撤消的文档，则会导致异常。
 
-**恢复对已撤销PDF文档的访问**
+**恢复对已吊销PDF文档的访问**
 
 要恢复对已撤销PDF文档的访问，必须指定已撤销文档的许可证标识符。 如果尝试恢复对未撤消的PDF文档的访问，则会导致出现异常。
 
@@ -1048,20 +1048,20 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `DocumentSecurityClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`DocumentSecurityClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索吊销PDF文档的许可证标识符。
 
-   * 创建 `java.io.FileInputStream` 通过使用其构造函数并传递指定PDF文档位置的字符串值来表示已撤销PDF文档的对象。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
-   * 创建 `DocumentManager` 对象，方法是调用 `DocumentSecurityClient` 对象的 `getDocumentManager` 方法。
-   * 通过调用 `DocumentManager` 对象的 `getLicenseId` 方法和传递 `com.adobe.idp.Document` 表示已撤消文档的对象。 此方法返回代表许可证标识符的字符串值。
+   * 通过使用其构造函数并传递指定PDF文档位置的字符串值，创建表示已吊销PDF文档的`java.io.FileInputStream`对象。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
+   * 通过调用`DocumentSecurityClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
+   * 通过调用`DocumentManager`对象的`getLicenseId`方法并传递表示已撤销文档的`com.adobe.idp.Document`对象，检索已撤销文档的许可证标识符值。 此方法返回代表许可证标识符的字符串值。
 
 1. 恢复对已撤销PDF文档的访问。
 
-   * 创建 `LicenseManager` 对象，方法是调用 `DocumentSecurityClient` 对象的 `getLicenseManager` 方法。
-   * 通过调用，恢复对已撤销PDF文档的访问 `LicenseManager` 对象的 `unrevokeLicense` 方法和传递撤销文档的许可证标识符值。
+   * 通过调用`DocumentSecurityClient`对象的`getLicenseManager`方法创建`LicenseManager`对象。
+   * 通过调用`LicenseManager`对象的`unrevokeLicense`方法并传递已吊销PDF的许可证标识符值，恢复对已吊销文档的访问。
 
 **代码示例**
 
@@ -1075,38 +1075,38 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `DocumentSecurityServiceClient` 对象使用默认构造函数。
-   * 创建 `DocumentSecurityServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `DocumentSecurityServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`DocumentSecurityServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`DocumentSecurityServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`DocumentSecurityServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索吊销PDF文档的许可证标识符。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储恢复访问的已撤销PDF文档。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示已撤销PDF文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储已撤销的PDF文档，恢复了对该文档的访问。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示已吊销PDF文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 恢复对已撤销PDF文档的访问。
 
-   * 通过调用 `DocumentSecurityServiceClient` 对象的 `getLicenseID` 方法和传递 `BLOB` 表示已撤消文档的对象。 此方法返回代表许可证标识符的字符串值。
-   * 通过调用，恢复对已撤销PDF文档的访问 `DocumentSecurityServiceClient` 对象的 `unrevokeLicense` 方法和传递指定已撤销PDF文档的许可证标识符值的字符串值(传递 `DocumentSecurityServiceClient` 对象的 `getLicenseId` 方法)。
+   * 通过调用`DocumentSecurityServiceClient`对象的`getLicenseID`方法并传递表示已撤销文档的`BLOB`对象，检索已撤销文档的许可证标识符值。 此方法返回代表许可证标识符的字符串值。
+   * 通过调用`DocumentSecurityServiceClient`对象的`unrevokeLicense`方法并传递指定已吊销PDF文档的许可证标识符值的字符串值（传递`DocumentSecurityServiceClient`对象的`getLicenseId`方法的返回值），恢复对已吊销PDF文档的访问。
 
 **代码示例**
 
@@ -1129,7 +1129,7 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-7}
 
@@ -1146,9 +1146,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 **创建Document Security客户端API对象**
 
-在以编程方式执行Document Security服务操作之前，请先创建Document Security服务客户端对象。 如果您使用的是Java API，请创建 `RightsManagementClient` 对象。 如果您使用的是Document Security Web服务API，请创建 `RightsManagementServiceService` 对象。
+在以编程方式执行Document Security服务操作之前，请先创建Document Security服务客户端对象。 如果您使用的是Java API，请创建一个`RightsManagementClient`对象。 如果您使用的是Document Security Web服务API，请创建`RightsManagementServiceService`对象。
 
-**检索要检查的受策略保护的文档**
+**检索受策略保护的文档以检查**
 
 要检查受策略保护的文档，请检索它。 如果尝试检查未使用策略保护或撤消的文档，则会引发异常。
 
@@ -1160,9 +1160,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 检查受策略保护的PDF文档后，可以获得有关该文档的信息。 例如，您可以确定用于保护文档的策略。
 
-如果您使用属于我的策略的策略保护文档，然后调用 `RMInspectResult.getPolicysetName` 或 `RMInspectResult.getPolicysetId`，返回null。
+如果您使用属于我的策略的策略保护文档，然后调用`RMInspectResult.getPolicysetName`或`RMInspectResult.getPolicysetId`，则返回null。
 
-如果使用策略集（除“我的策略”以外）中包含的策略保护文档，则 `RMInspectResult.getPolicysetName` 和 `RMInspectResult.getPolicysetId` 返回有效字符串。
+如果使用策略集（我的策略除外）中包含的策略对文档进行保护，则`RMInspectResult.getPolicysetName`和`RMInspectResult.getPolicysetId`将返回有效的字符串。
 
 **另请参阅**
 
@@ -1176,26 +1176,26 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
 
 1. 包括项目文件。
 
-   在您的Java项目的类路径中包含客户端JAR文件，例如adobe-rightsmanagement-client.jar。 有关这些文件的位置的信息，请参见 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   在您的Java项目的类路径中包含客户端JAR文件，例如adobe-rightsmanagement-client.jar。 有关这些文件的位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。 (请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * 创建 `RightsManagementClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。 （请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。）
+   * 使用对象的构造函数创建`RightsManagementClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索要检查的受策略保护的文档。
 
-   * 创建 `java.io.FileInputStream` 使用受策略保护的PDF文档的构造函数来表示该文档的对象。 传递一个指定PDF文档位置的字符串值。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 使用受策略保护的PDF文档的构造函数创建一个`java.io.FileInputStream`对象。 传递一个指定PDF文档位置的字符串值。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. Inspect文档。
 
-   * 创建 `DocumentManager` 对象，方法是调用 `RightsManagementClient` 对象的 `getDocumentManager` 方法。
-   * Inspect通过调用 `LicenseManager` 对象的 `inspectDocument` 方法。 传递 `com.adobe.idp.Document` 包含受策略保护的PDF文档的对象。 此方法会返回 `RMInspectResult` 包含有关受策略保护文档信息的对象。
+   * 通过调用`RightsManagementClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
+   * 通过调用`LicenseManager`对象的`inspectDocument`方法Inspect受策略保护的文档。 传递包含受策略保护的PDF文档的`com.adobe.idp.Document`对象。 此方法返回包含有关受策略保护文档的信息的`RMInspectResult`对象。
 
 1. 获取有关受策略保护文档的信息。
 
-   要获取有关受策略保护文档的信息，请调用属于的相应方法 `RMInspectResult` 对象。 例如，要检索策略名称，请调用 `RMInspectResult` 对象的 `getPolicyName` 方法。
+   要获取有关受策略保护文档的信息，请调用属于`RMInspectResult`对象的相应方法。 例如，要检索策略名称，请调用`RMInspectResult`对象的`getPolicyName`方法。
 
 **代码示例**
 
@@ -1209,41 +1209,41 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `RightsManagementServiceClient` 对象使用默认构造函数。
-   * 创建 `RightsManagementServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `RightsManagementServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`RightsManagementServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`RightsManagementServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`RightsManagementServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索要检查的受策略保护的文档。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储要检查的PDF文档。
-   * 创建 `System.IO.FileStream` 对象通过调用其构造函数。 传递一个字符串值，该值表示PDF文档的文件位置以及用于打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法。 传递字节数组、起始位置和流长度以读取。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储要检查的PDF文档。
+   * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，该值表示PDF文档的文件位置以及用于打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法，使用流数据填充字节数组。 传递字节数组、起始位置和流长度以读取。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. Inspect文档。
 
-   Inspect通过调用 `RightsManagementServiceClient` 对象的 `inspectDocument` 方法。 传递 `BLOB` 包含受策略保护的PDF文档的对象。 此方法会返回 `RMInspectResult` 包含有关受策略保护文档信息的对象。
+   通过调用`RightsManagementServiceClient`对象的`inspectDocument`方法Inspect受策略保护的文档。 传递包含受策略保护的PDF文档的`BLOB`对象。 此方法返回包含有关受策略保护文档的信息的`RMInspectResult`对象。
 
 1. 获取有关受策略保护文档的信息。
 
-   要获取有关受策略保护文档的信息，请获取属于的相应字段的值 `RMInspectResult` 对象。 例如，要检索策略名称，获取 `RMInspectResult` 对象的 `policyName` 字段。
+   要获取有关受策略保护文档的信息，请获取属于`RMInspectResult`对象的相应字段的值。 例如，要检索策略名称，请获取`RMInspectResult`对象的`policyName`字段的值。
 
 **代码示例**
 
@@ -1268,7 +1268,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-8}
 
@@ -1285,7 +1285,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 **创建Document Security客户端API对象**
 
-您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建 `RightsManagementClient` 对象。 如果您使用的是Document Security Web服务API，请创建 `RightsManagementServiceService` 对象。
+您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建一个`RightsManagementClient`对象。 如果您使用的是Document Security Web服务API，请创建`RightsManagementServiceService`对象。
 
 **设置水印属性**
 
@@ -1324,7 +1324,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code></p></td>
-   <td><p>如果此值为true，则必须使用指定自定义文本的值 <code>WaterBackCmd:SRCTEXT</code>.</p></td>
+   <td><p>如果此值为true，则必须使用<code>WaterBackCmd:SRCTEXT</code>指定自定义文本的值。</p></td>
    <td><p>True或False</p></td>
   </tr>
   <tr>
@@ -1339,7 +1339,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
-   <td><p>如果指定此值，则 <code>WaterBackCmd:IS_SIZE_ENABLED</code> 必须存在且值必须为true。 如果未指定此属性，则默认行为适合页面。</p></td>
+   <td><p>如果指定此值，则<code>WaterBackCmd:IS_SIZE_ENABLED</code>必须存在并且值必须为true。 如果未指定此属性，则默认行为适合页面。</p></td>
    <td><p>大于0.0且小于或等于1.0的值。</p></td>
   </tr>
   <tr>
@@ -1364,7 +1364,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:SRCTEXT</code></p></td>
-   <td><p>指定水印的自定义文本。 如果此值存在，则 <code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code> 还必须存在并设置为true。</p></td>
+   <td><p>指定水印的自定义文本。 如果此值存在，则<code>WaterBackCmd:IS_CUSTOMTEXT_ENABLED</code>也必须存在并设置为true。</p></td>
    <td><p>True或False</p></td>
   </tr>
  </tbody>
@@ -1397,25 +1397,25 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 1. 包括项目文件。
 
-   包括客户端JAR文件，例如 `adobe-rightsmanagement-client.jar`，在Java项目的类路径中。
+   在您的Java项目的类路径中包含客户端JAR文件，如`adobe-rightsmanagement-client.jar`。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `RightsManagementClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`RightsManagementClient`对象并传递`ServiceClientFactory`对象。
 
 1. 设置水印属性
 
-   * 创建 `Watermark` 对象，方法是调用 `InfomodelObjectFactory` 对象的静态 `createWatermark` 方法。 此方法会返回 `Watermark` 对象。
-   * 通过调用 `Watermark` 对象的 `setName` 方法，并传递指定策略名称的字符串值。
-   * 通过调用 `Watermark` 对象的 `setBackground` 方法和传递 `true`. 通过设置此属性，水印将显示在文档的背景中。
-   * 通过调用 `Watermark` 对象的 `setCustomText` 方法，并传递表示水印文本的字符串值。
-   * 通过调用 `Watermark` 对象的 `setOpacity` 方法，并传递一个指定不透明度级别的整数值。 值100表示水印完全不透明，值0表示水印完全透明。
+   * 通过调用`InfomodelObjectFactory`对象的静态`createWatermark`方法创建`Watermark`对象。 此方法返回`Watermark`对象。
+   * 通过调用`Watermark`对象的`setName`方法并传递指定策略名称的字符串值来设置水印的名称属性。
+   * 通过调用`Watermark`对象的`setBackground`方法并传递`true`来设置水印的背景属性。 通过设置此属性，水印将显示在文档的背景中。
+   * 通过调用`Watermark`对象的`setCustomText`方法并传递表示水印文本的字符串值来设置水印的自定义文本属性。
+   * 通过调用`Watermark`对象的`setOpacity`方法并传递指定不透明度级别的整数值来设置水印的不透明度属性。 值100表示水印完全不透明，值0表示水印完全透明。
 
 1. 注册水印。
 
-   * 创建 `WatermarkManager` 对象，方法是调用 `RightsManagementClient` 对象的 `getWatermarkManager` 方法。 此方法会返回 `WatermarkManager` 对象。
-   * 通过调用 `WatermarkManager` 对象的 `registerWatermark` 方法和传递 `Watermark` 表示要注册的水印的对象。 此方法返回代表水印标识值的字符串值。
+   * 通过调用`RightsManagementClient`对象的`getWatermarkManager`方法创建`WatermarkManager`对象。 此方法返回`WatermarkManager`对象。
+   * 通过调用`WatermarkManager`对象的`registerWatermark`方法并传递表示水印的`Watermark`对象来注册水印。 此方法返回代表水印标识值的字符串值。
 
 **代码示例**
 
@@ -1429,40 +1429,40 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 1. 创建Document Security客户端API对象。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `RightsManagementServiceClient` 对象使用默认构造函数。
-   * 创建 `RightsManagementServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `RightsManagementServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`RightsManagementServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`RightsManagementServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`RightsManagementServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 设置水印属性。
 
-   * 创建 `WatermarkSpec` 对象，方法是调用 `WatermarkSpec` 构造函数。
-   * 通过为指定字符串值设置水印的名称 `WatermarkSpec` 对象的 `name` 数据成员。
-   * 设置水印的 `id` 属性，方法是将字符串值分配给 `WatermarkSpec` 对象的 `id` 数据成员。
-   * 对于要设置的每个水印属性，创建一个单独的 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象。
-   * 通过将值分配给 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象的 `key` 数据成员(例如， `WaterBackCmd:OPACITY)`.
-   * 通过将值指定给 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象的 `value` 数据成员(例如， `.25`)。
-   * 创建 `MyArrayOf_xsd_anyType` 对象。 对于每个 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象，调用 `MyArrayOf_xsd_anyType` 对象的 `Add` 方法。 传递 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象。
-   * 分配 `MyArrayOf_xsd_anyType` 对象 `WatermarkSpec` 对象的 `values` 数据成员。
+   * 通过调用`WatermarkSpec`构造函数创建`WatermarkSpec`对象。
+   * 通过为`WatermarkSpec`对象的`name`数据成员分配字符串值来设置水印的名称。
+   * 通过为`WatermarkSpec`对象的`id`数据成员分配字符串值来设置水印的`id`属性。
+   * 对于要设置的每个水印属性，请创建一个单独的`MyMapOf_xsd_string_To_xsd_anyType_Item`对象。
+   * 通过为`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`key`数据成员（例如，`WaterBackCmd:OPACITY)`）分配值来设置键值。
+   * 通过为`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`value`数据成员（例如，`.25`）分配值来设置值。
+   * 创建`MyArrayOf_xsd_anyType`对象。 对于每个`MyMapOf_xsd_string_To_xsd_anyType_Item`对象，调用`MyArrayOf_xsd_anyType`对象的`Add`方法。 传递`MyMapOf_xsd_string_To_xsd_anyType_Item`对象。
+   * 将`MyArrayOf_xsd_anyType`对象分配给`WatermarkSpec`对象的`values`数据成员。
 
 1. 注册水印。
 
-   通过调用 `RightsManagementServiceClient` 对象的 `registerWatermark` 方法和传递 `WatermarkSpec` 表示要注册的水印的对象。
+   通过调用`RightsManagementServiceClient`对象的`registerWatermark`方法并传递表示水印的`WatermarkSpec`对象来注册水印。
 
 **代码示例**
 
@@ -1489,7 +1489,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-9}
 
@@ -1507,7 +1507,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 **创建Document Security客户端API对象**
 
-您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建 `DocumentSecurityClient` 对象。 如果您使用的是Document Security Web服务API，请创建 `DocumentSecurityServiceService` 对象。
+您必须先创建Document Security服务客户端对象，然后才能以编程方式执行Document Security服务操作。 如果您使用的是Java API，请创建一个`DocumentSecurityClient`对象。 如果您使用的是Document Security Web服务API，请创建`DocumentSecurityServiceService`对象。
 
 **检索要修改的水印**
 
@@ -1515,7 +1515,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 **设置水印属性**
 
-要修改现有水印，请更改一个或多个水印属性的值。 使用Web服务以编程方式更新水印时，必须设置最初设置的所有属性，即使值未发生更改也是如此。 例如，假定设置了以下水印属性： `WaterBackCmd:IS_USERID_ENABLED`， `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`， `WaterBackCmd:OPACITY`、和 `WaterBackCmd:SRCTEXT`. 尽管您要修改的唯一属性是 `WaterBackCmd:OPACITY`，则必须将其他值设置为well。
+要修改现有水印，请更改一个或多个水印属性的值。 使用Web服务以编程方式更新水印时，必须设置最初设置的所有属性，即使值未发生更改也是如此。 例如，假定设置了以下水印属性： `WaterBackCmd:IS_USERID_ENABLED`、`WaterBackCmd:IS_CUSTOMTEXT_ENABLED`、`WaterBackCmd:OPACITY`和`WaterBackCmd:SRCTEXT`。 尽管您要修改的唯一属性是`WaterBackCmd:OPACITY`，但您必须设置其他值。
 
 >[!NOTE]
 >
@@ -1523,7 +1523,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 >[!NOTE]
 >
->有关水印属性名称的信息，请参见 [创建水印](protecting-documents-policies.md#creating-watermarks).
+>有关水印属性名称的信息，请参阅[创建水印](protecting-documents-policies.md#creating-watermarks)。
 
 **更新水印**
 
@@ -1547,16 +1547,16 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `DocumentSecurityClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`DocumentSecurityClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索要修改的水印。
 
-   创建 `WatermarkManager` 对象，方法是调用 `DocumentSecurityClient` 对象的 `getWatermarkManager` 方法，并传递一个指定水印名称的字符串值。 此方法会返回 `Watermark` 表示要修改的水印的对象。
+   通过调用`DocumentSecurityClient`对象的`getWatermarkManager`方法创建`WatermarkManager`对象，并传递指定水印名称的字符串值。 此方法返回表示要修改的水印的`Watermark`对象。
 
 1. 设置水印属性。
 
-   通过调用 `Watermark` 对象的 `setOpacity` 方法，并传递一个指定不透明度级别的整数值。 值100表示水印完全不透明，值0表示水印完全透明。
+   通过调用`Watermark`对象的`setOpacity`方法并传递指定不透明度级别的整数值来设置水印的不透明度属性。 值100表示水印完全不透明，值0表示水印完全透明。
 
    >[!NOTE]
    >
@@ -1564,7 +1564,7 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 1. 更新水印。
 
-   * 通过调用 `WatermarkManager` 对象的 `updateWatermark` 方法并传递 `Watermark` 修改了属性的对象。
+   * 通过调用`WatermarkManager`对象的`updateWatermark`方法更新水印，并传递其属性被修改的`Watermark`对象。
 
 **代码示例**
 
@@ -1576,41 +1576,41 @@ Inspect使用Document Security服务API（Web服务）创建受策略保护的PD
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `DocumentSecurityServiceClient` 对象使用默认构造函数。
-   * 创建 `RightsManagementServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `DocumentSecurityServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`DocumentSecurityServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`RightsManagementServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/DocumentSecurityService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`DocumentSecurityServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索要修改的水印。
 
-   通过调用，检索要修改的水印 `DocumentSecurityServiceClient` 对象的 `getWatermarkByName` 方法。 传递一个指定水印名称的字符串值。 此方法会返回 `WatermarkSpec` 表示要修改的水印的对象。
+   通过调用`DocumentSecurityServiceClient`对象的`getWatermarkByName`方法检索要修改的水印。 传递一个指定水印名称的字符串值。 此方法返回表示要修改的水印的`WatermarkSpec`对象。
 
 1. 设置水印属性。
 
-   * 对于要更新的每个水印属性，请创建一个单独的 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象。
-   * 通过将值分配给 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象的 `key` 数据成员(例如， `WaterBackCmd:OPACITY)`.
-   * 通过将值指定给 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象的 `value` 数据成员(例如， `.50`)。
-   * 创建 `MyArrayOf_xsd_anyType` 对象。 对于每个 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象，调用 `MyArrayOf_xsd_anyType` 对象的 `Add` 方法。 传递 `MyMapOf_xsd_string_To_xsd_anyType_Item` 对象。
-   * 分配 `MyArrayOf_xsd_anyType` 对象 `WatermarkSpec` 对象的 `values` 数据成员。
+   * 对于要更新的每个水印属性，请创建一个单独的`MyMapOf_xsd_string_To_xsd_anyType_Item`对象。
+   * 通过为`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`key`数据成员（例如，`WaterBackCmd:OPACITY)`）分配值来设置键值。
+   * 通过为`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`value`数据成员（例如，`.50`）分配值来设置值。
+   * 创建`MyArrayOf_xsd_anyType`对象。 对于每个`MyMapOf_xsd_string_To_xsd_anyType_Item`对象，调用`MyArrayOf_xsd_anyType`对象的`Add`方法。 传递`MyMapOf_xsd_string_To_xsd_anyType_Item`对象。
+   * 将`MyArrayOf_xsd_anyType`对象分配给`WatermarkSpec`对象的`values`数据成员。
 
 1. 更新水印。
 
-   通过调用 `DocumentSecurityServiceClient` 对象的 `updateWatermark` 方法和传递 `WatermarkSpec` 表示要修改的水印的对象。
+   通过调用`DocumentSecurityServiceClient`对象的`updateWatermark`方法并传递表示要修改的水印的`WatermarkSpec`对象来更新水印。
 
 **代码示例**
 
@@ -1633,7 +1633,7 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 >[!NOTE]
 >
->有关Rights Management服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Rights Management服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-10}
 
@@ -1650,7 +1650,7 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 **创建Rights Management客户端API对象**
 
-必须先创建Rights Management服务客户端对象，然后才能以编程方式执行Rights Management服务操作。 如果您使用的是Java API，请创建 `DocumentSecurityClient` 对象。 如果您使用Rights ManagementWeb服务API，请创建 `DocumentSecurityServiceService` 对象。
+必须先创建Rights Management服务客户端对象，然后才能以编程方式执行Rights Management服务操作。 如果您使用的是Java API，请创建一个`DocumentSecurityClient`对象。 如果您使用Rights ManagementWeb服务API，请创建一个`DocumentSecurityServiceService`对象。
 
 **指定要搜索的事件**
 
@@ -1676,21 +1676,21 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 1. 创建Rights Management客户端API对象
 
-   创建 `DocumentSecurityClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`DocumentSecurityClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 指定要搜索的事件
 
-   * 创建 `EventManager` 对象，方法是调用 `DocumentSecurityClient` 对象的 `getEventManager` 方法。 此方法会返回 `EventManager` 对象。
-   * 创建 `EventSearchFilter` 对象通过调用其构造函数。
-   * 通过调用 `EventSearchFilter` 对象的 `setEventCode` 方法和传递属于的静态数据成员 `EventManager` 表示要搜索的事件的类。 例如，要搜索策略创建事件，请传递 `EventManager.POLICY_CREATE_EVENT`.
+   * 通过调用`DocumentSecurityClient`对象的`getEventManager`方法创建`EventManager`对象。 此方法返回`EventManager`对象。
+   * 通过调用其构造函数创建`EventSearchFilter`对象。
+   * 通过调用`EventSearchFilter`对象的`setEventCode`方法并传递属于表示要搜索的事件的`EventManager`类的静态数据成员，指定要搜索的事件。 例如，要搜索策略创建事件，请传递`EventManager.POLICY_CREATE_EVENT`。
 
    >[!NOTE]
    >
-   >您可以通过调用来定义其他搜索条件 `EventSearchFilter` 对象方法。 例如，调用 `setUserName` 用于指定与事件关联的用户的方法。
+   >您可以通过调用`EventSearchFilter`对象方法来定义其他搜索条件。 例如，调用`setUserName`方法以指定与事件关联的用户。
 
 1. 搜索事件
 
-   通过调用 `EventManager` 对象的 `searchForEvents` 方法和传递 `EventSearchFilter` 定义事件搜索条件的对象。 此方法返回的数组 `Event` 对象。
+   通过调用`EventManager`对象的`searchForEvents`方法并传递定义事件搜索条件的`EventSearchFilter`对象来搜索事件。 此方法返回`Event`对象的数组。
 
 **代码示例**
 
@@ -1704,34 +1704,34 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 1. 包含项目文件
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Rights Management客户端API对象
 
-   * 创建 `DocumentSecurityServiceClient` 对象使用默认构造函数。
-   * 创建 `DocumentSecurityServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `DocumentSecurityServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`DocumentSecurityServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`DocumentSecurityServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`DocumentSecurityServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 指定要搜索的事件
 
-   * 创建 `EventSpec` 对象。
-   * 通过设置 `EventSpec` 对象的 `firstTime.date` 数据成员具有 `DataTime` 表示事件发生时日期范围开始时间的实例。
-   * 分配值 `true` 到 `EventSpec` 对象的 `firstTime.dateSpecified` 数据成员。
-   * 通过设置 `EventSpec` 对象的 `lastTime.date` 数据成员具有 `DataTime` 表示事件发生时日期范围结束的实例。
-   * 分配值 `true` 到 `EventSpec` 对象的 `lastTime.dateSpecified` 数据成员。
-   * 通过将字符串值分配给，设置要搜索的事件 `EventSpec` 对象的 `eventCode` 数据成员。 下表列出了可以分配给此属性的数值：
+   * 使用构造函数创建`EventSpec`对象。
+   * 通过设置`EventSpec`对象的`firstTime.date`数据成员的`DataTime`实例（表示事件发生时日期范围的开始）来指定事件发生期间的开始。
+   * 将值`true`分配给`EventSpec`对象的`firstTime.dateSpecified`数据成员。
+   * 通过设置`EventSpec`对象的`lastTime.date`数据成员的`DataTime`实例来指定事件发生期间的结束，该实例表示事件发生时日期范围的结束。
+   * 将值`true`分配给`EventSpec`对象的`lastTime.dateSpecified`数据成员。
+   * 通过为`EventSpec`对象的`eventCode`数据成员分配字符串值来设置要搜索的事件。 下表列出了可以分配给此属性的数值：
 
    <table>
     <thead>
@@ -1934,7 +1934,7 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 1. 搜索事件
 
-   通过调用 `DocumentSecurityServiceClient` 对象的 `searchForEvents` 方法和传递 `EventSpec` 表示要搜索的事件和最大结果数的对象。 此方法会返回 `MyArrayOf_xsd_anyType` 集合，其中每个元素为 `AuditSpec` 实例。 使用 `AuditSpec` 例如，您可以获取有关事件的信息，如发生时间。 此 `AuditSpec` 实例包含 `timestamp` 指定此信息的数据成员。
+   通过调用`DocumentSecurityServiceClient`对象的`searchForEvents`方法并传递表示要搜索的事件和最大结果数的`EventSpec`对象来搜索该事件。 此方法返回`MyArrayOf_xsd_anyType`集合，其中每个元素都是`AuditSpec`实例。 使用`AuditSpec`实例，您可以获取有关事件的信息，如发生时间。 `AuditSpec`实例包含指定此信息的`timestamp`数据成员。
 
 **代码示例**
 
@@ -1957,7 +1957,7 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-11}
 
@@ -2007,34 +2007,34 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `DocumentSecurityClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`DocumentSecurityClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索Word文档。
 
-   * 创建 `java.io.FileInputStream` 通过使用其构造函数并传递指定Word文档位置的字符串值来表示Word文档的对象。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 通过使用其构造函数并传递指定Word文档位置的字符串值，创建表示Word文档的`java.io.FileInputStream`对象。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 将现有策略应用到Word文档。
 
-   * 创建 `DocumentManager` 对象，方法是调用 `DocumentSecurityClient` 对象的 `getDocumentManager` 方法。
-   * 通过调用 `DocumentManager` 对象的 `protectDocument` 方法并传递以下值：
+   * 通过调用`DocumentSecurityClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
+   * 通过调用`DocumentManager`对象的`protectDocument`方法并传递以下值，将策略应用到Word文档：
 
-      * 此 `com.adobe.idp.Document` 包含应用策略的Word文档的对象。
+      * 包含应用了策略的Word文档的`com.adobe.idp.Document`对象。
       * 指定文档名称的字符串值。
-      * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定 `null` 导致出现以下问题的值： `MyPolicies` 正在使用的策略集。
+      * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定导致使用`MyPolicies`策略集的`null`值。
       * 指定策略名称的字符串值。
       * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值是可选的，并且可以为null（如果此参数为null，则下一个参数值必须为null）。
-      * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为 `null` (如果此参数为 `null`，则前一个参数值必须为 `null`)。
-      * A `com.adobe.livecycle.rightsmanagement.Locale` 表示用于选择MS Office模板的区域设置。 此参数值是可选的，您可以指定 `null`.
+      * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为`null` （如果此参数为`null`，则以前的参数值必须为`null`）。
+      * 表示用于选择MS Office模板的区域设置的`com.adobe.livecycle.rightsmanagement.Locale`。 此参数值是可选的，您可以指定`null`。
 
-     此 `protectDocument` 方法返回 `RMSecureDocumentResult` 包含受策略保护的Word文档的对象。
+     `protectDocument`方法返回包含受策略保护的Word文档的`RMSecureDocumentResult`对象。
 
 1. 保存Word文档。
 
-   * 调用 `RMSecureDocumentResult` 对象的 `getProtectedDoc` 方法以获取受策略保护的Word文档。 此方法会返回 `com.adobe.idp.Document` 对象。
-   * 创建 `java.io.File` 对象并确保文件扩展名为DOC。
-   * 调用 `com.adobe.idp.Document` 对象的 `copyToFile` 用于复制 `Document` 对象到文件(确保您使用 `Document` 返回的对象 `getProtectedDoc` 方法)。
+   * 调用`RMSecureDocumentResult`对象的`getProtectedDoc`方法以获取受策略保护的Word文档。 此方法返回`com.adobe.idp.Document`对象。
+   * 创建`java.io.File`对象并确保文件扩展名为DOC。
+   * 调用`com.adobe.idp.Document`对象的`copyToFile`方法以将`Document`对象的内容复制到文件中（确保您使用`getProtectedDoc`方法返回的`Document`对象）。
 
 **代码示例**
 
@@ -2048,57 +2048,57 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 1. 包括项目文件。
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/DocumentSecurityService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/DocumentSecurityService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象。
 
-   * 创建 `DocumentSecurityServiceClient` 对象使用默认构造函数。
-   * 创建 `DocumentSecurityServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `DocumentSecurityServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`DocumentSecurityServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`DocumentSecurityServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/DocumentSecurityService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`DocumentSecurityServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索Word文档。
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储应用了策略的Word文档。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示Word文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法。 传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储应用了策略的Word文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示Word文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法，使用流数据填充字节数组。 传递字节数组、起始位置和要读取的流长度。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 将现有策略应用到Word文档。
 
-   通过调用 `DocumentSecurityServiceClient` 对象的 `protectDocument` 方法并传递以下值：
+   通过调用`DocumentSecurityServiceClient`对象的`protectDocument`方法并传递以下值，将策略应用到Word文档：
 
-   * 此 `BLOB` 包含应用策略的Word文档的对象。
+   * 包含应用了策略的Word文档的`BLOB`对象。
    * 指定文档名称的字符串值。
-   * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定 `null` 导致出现以下问题的值： `MyPolicies` 正在使用的策略集。
+   * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定导致使用`MyPolicies`策略集的`null`值。
    * 指定策略名称的字符串值。
-   * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值为可选值，并且可以为null(如果此参数为null，则下一个参数值必须为 `null`)。
-   * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，并且可以为null(如果此参数为null，则前一个参数值必须为 `null`)。
-   * A `RMLocale` 指定区域设置值的值(例如， `RMLocale.en`)。
+   * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值是可选的，并且可以为null（如果此参数为null，则下一个参数值必须为`null`）。
+   * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为null（如果此参数为null，则上一个参数值必须为`null`）。
+   * 指定区域设置值的`RMLocale`值（例如，`RMLocale.en`）。
    * 用于存储策略标识符值的字符串输出参数。
    * 用于存储受策略保护的标识符值的字符串输出参数。
-   * 用于存储mime类型的字符串输出参数(例如， `application/doc`)。
+   * 用于存储mime类型的字符串输出参数（例如，`application/doc`）。
 
-   此 `protectDocument` 方法返回 `BLOB` 包含受策略保护的Word文档的对象。
+   `protectDocument`方法返回包含受策略保护的Word文档的`BLOB`对象。
 
 1. 保存Word文档。
 
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该值表示受策略保护的Word文档的文件位置。
-   * 创建一个字节数组，用于存储 `BLOB` 返回的对象 `protectDocument` 方法。 通过获取的值，填充字节数组 `BLOB` 对象的 `MTOM` 数据成员。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
-   * 通过调用 `System.IO.BinaryWriter` 对象的 `Write` 和传递字节数组。
+   * 通过调用其构造函数并传递代表受策略保护的Word文档的文件位置的字符串值来创建`System.IO.FileStream`对象。
+   * 创建一个字节数组，用于存储`protectDocument`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`数据成员的值填充字节数组。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
+   * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入Word文件。
 
 **代码示例**
 
@@ -2112,7 +2112,7 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 >[!NOTE]
 >
->有关Document Security服务的更多信息，请参阅 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关Document Security服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-12}
 
@@ -2138,7 +2138,7 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
 
 **从Word文档中删除策略**
 
-如果连接设置中指定了管理员，则可以从受策略保护的Word文档中删除策略。 如果没有，则用于保护文档的策略必须包含 `SWITCH_POLICY` 从Word文档中删除策略的权限。 此外，在AEM Forms连接设置中指定的用户还必须具有该权限。 否则，将引发异常。
+如果连接设置中指定了管理员，则可以从受策略保护的Word文档中删除策略。 如果没有，则用于保护文档的策略必须包含`SWITCH_POLICY`权限，才能从Word文档中删除策略。 此外，在AEM Forms连接设置中指定的用户还必须具有该权限。 否则，将引发异常。
 
 **保存不安全的Word文档**
 
@@ -2162,23 +2162,23 @@ Document Security服务从Word文档中删除策略后，您可以将不安全�
 
 1. 创建Document Security客户端API对象
 
-   * 创建 `ServiceClientFactory` 包含连接属性的对象。
-   * 创建 `RightsManagementClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 对象。
+   * 创建包含连接属性的`ServiceClientFactory`对象。
+   * 使用对象的构造函数创建`RightsManagementClient`对象并传递`ServiceClientFactory`对象。
 
 1. 检索受策略保护的Word文档
 
-   * 创建 `java.io.FileInputStream` 通过使用受策略保护的Word文档的构造函数并传递指定Word文档位置的字符串值来表示该文档的对象。
-   * 创建 `com.adobe.idp.Document` 对象，使用它的构造函数传递 `java.io.FileInputStream` 对象。
+   * 使用受策略保护的Word文档的构造函数并传递指定Word文档位置的字符串值，创建一个表示该文档的`java.io.FileInputStream`对象。
+   * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
 1. 从Word文档中删除策略
 
-   * 创建 `DocumentManager` 对象，方法是调用 `RightsManagementClient` 对象的 `getDocumentManager` 方法。
-   * 通过调用 `DocumentManager` 对象的 `removeSecurity` 方法和传递 `com.adobe.idp.Document` 包含受策略保护的Word文档的对象。 此方法会返回 `com.adobe.idp.Document` 包含不安全Word文档的对象。
+   * 通过调用`RightsManagementClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
+   * 通过调用`DocumentManager`对象的`removeSecurity`方法并传递包含受策略保护的Word文档的`com.adobe.idp.Document`对象，从Word文档中删除策略。 此方法返回包含不安全的Word文档的`com.adobe.idp.Document`对象。
 
 1. 保存不安全的Word文档
 
-   * 创建 `java.io.File` 对象并确保文件扩展名为DOC。
-   * 调用 `Document` 对象的 `copyToFile` 用于复制 `Document` 对象到文件(确保您使用 `Document` 返回的对象 `removeSecurity` 方法)。
+   * 创建`java.io.File`对象并确保文件扩展名为DOC。
+   * 调用`Document`对象的`copyToFile`方法以将`Document`对象的内容复制到文件中（确保您使用`removeSecurity`方法返回的`Document`对象）。
 
 **代码示例**
 
@@ -2192,43 +2192,43 @@ Document Security服务从Word文档中删除策略后，您可以将不安全�
 
 1. 包含项目文件
 
-   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`.
+   创建使用MTOM的Microsoft .NET项目。 确保使用以下WSDL定义： `http://localhost:8080/soap/services/RightsManagementService?WSDL&lc_version=9.0.1`。
 
    >[!NOTE]
    >
-   >替换 `localhost` ，其中包含托管AEM Forms的服务器的IP地址。
+   >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
 1. 创建Document Security客户端API对象
 
-   * 创建 `RightsManagementServiceClient` 对象使用默认构造函数。
-   * 创建 `RightsManagementServiceClient.Endpoint.Address` 对象 `System.ServiceModel.EndpointAddress` 构造函数。 将指定WSDL的字符串值传递给AEM Forms服务(例如， `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) 您无需使用 `lc_version` 属性。 此属性在创建服务引用时使用。)
-   * 创建 `System.ServiceModel.BasicHttpBinding` 对象，方法是获取 `RightsManagementServiceClient.Endpoint.Binding` 字段。 将返回值强制转换为 `BasicHttpBinding`.
-   * 设置 `System.ServiceModel.BasicHttpBinding` 对象的 `MessageEncoding` 字段至 `WSMessageEncoding.Mtom`. 此值可确保使用MTOM。
+   * 使用默认构造函数创建`RightsManagementServiceClient`对象。
+   * 使用`System.ServiceModel.EndpointAddress`构造函数创建`RightsManagementServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/RightsManagementService?WSDL`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。)
+   * 通过获取`RightsManagementServiceClient.Endpoint.Binding`字段的值创建一个`System.ServiceModel.BasicHttpBinding`对象。 将返回值强制转换为`BasicHttpBinding`。
+   * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
-      * 将相应的密码值分配给字段 `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
-      * 分配常量值 `HttpClientCredentialType.Basic` 到字段 `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
-   * 分配常量值 `BasicHttpSecurityMode.TransportCredentialOnly` 到字段 `BasicHttpBindingSecurity.Security.Mode`.
+   * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索受策略保护的Word文档
 
-   * 创建 `BLOB` 对象。 此 `BLOB` 对象用于存储受策略保护的Word文档，策略将从该文档中删除。
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该字符串值表示Word文档的文件位置以及打开文件的模式。
-   * 创建一个字节数组，用于存储 `System.IO.FileStream` 对象。 您可以通过获取 `System.IO.FileStream` 对象的 `Length` 属性。
-   * 通过调用 `System.IO.FileStream` 对象的 `Read` 方法，并传递字节数组、起始位置和要读取的流长度。
-   * 填充 `BLOB` 对象，通过指定其 `MTOM` 包含字节数组内容的字段。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储受策略保护的Word文档，策略将从该文档中删除。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示Word文档的文件位置以及打开文件的模式。
+   * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
+   * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
+   * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
 
 1. 从Word文档中删除策略
 
-   通过调用 `RightsManagementServiceClient` 对象的 `removePolicySecurity` 方法和传递 `BLOB` 包含受策略保护的Word文档的对象。 此方法会返回 `BLOB` 包含不安全Word文档的对象。
+   通过调用`RightsManagementServiceClient`对象的`removePolicySecurity`方法并传递包含受策略保护的Word文档的`BLOB`对象，从Word文档中删除策略。 此方法返回包含不安全的Word文档的`BLOB`对象。
 
 1. 保存不安全的Word文档
 
-   * 创建 `System.IO.FileStream` 对象，方法是调用其构造函数并传递一个字符串值，该值表示不安全的Word文档的文件位置。
-   * 创建一个字节数组，用于存储 `BLOB` 返回的对象 `removePolicySecurity` 方法。 通过获取的值，填充字节数组 `BLOB` 对象的 `MTOM` 字段。
-   * 创建 `System.IO.BinaryWriter` 对象通过调用其构造函数并传递 `System.IO.FileStream` 对象。
+   * 通过调用其构造函数并传递表示不安全Word文档的文件位置的字符串值来创建`System.IO.FileStream`对象。
+   * 创建一个字节数组，用于存储`removePolicySecurity`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值填充字节数组。
+   * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
 
 **代码示例**
 

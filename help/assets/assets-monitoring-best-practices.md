@@ -1,6 +1,6 @@
 ---
-title: 要监控的最佳实践 [!DNL Assets] 部署
-description: 监控环境和性能的最佳实践 [!DNL Adobe Experience Manager] 部署后部署。
+title: 监控 [!DNL Assets] 部署的最佳实践
+description: 部署 [!DNL Adobe Experience Manager] 部署后监视其环境和性能的最佳实践。
 contentOwner: AG
 role: Admin, Architect
 feature: Asset Management
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 ---
 
-# 要监控的最佳实践 [!DNL Adobe Experience Manager Assets] 部署 {#assets-monitoring-best-practices}
+# 监控[!DNL Adobe Experience Manager Assets]部署的最佳实践 {#assets-monitoring-best-practices}
 
-从 [!DNL Experience Manager Assets] 从这一点来看，监测应包括观察和报告以下进程和技术：
+从[!DNL Experience Manager Assets]的角度来看，监控应包括观察和报告以下流程和技术：
 
 * 系统CPU
 * 系统内存使用
@@ -24,25 +24,25 @@ ht-degree: 0%
 * 栈利用和异步进程（如工作流）的JMX MBean
 * OSGi控制台运行状况检查
 
-通常， [!DNL Experience Manager Assets] 监测有两种方式：实时监测和长期监测。
+通常，[!DNL Experience Manager Assets]可以通过两种方式进行监控：实时监控和长期监控。
 
 ## 实时监控 {#live-monitoring}
 
 您应在开发的性能测试阶段或高负载情况下执行实时监控，以了解环境的性能特征。 通常，应使用一套工具执行实时监控。 以下是一些建议：
 
 * [可视虚拟机](https://visualvm.github.io/)：可视虚拟机允许您查看详细的Java虚拟机信息，包括CPU使用率、Java内存使用率。 此外，它还允许您取样并评估在部署中运行的代码。
-* [上](https://man7.org/linux/man-pages/man1/top.1.html)：Top是一个Linux命令，可打开一个功能板，其中显示使用情况统计数据，包括CPU、内存和IO使用情况。 它提供了实例上所发生情况的高级概述。
-* [Htop](https://hisham.hm/htop/)：Htop是一种交互式流程查看器。 除了Top可以提供的内容外，它还提供了详细的CPU和内存使用率。 Htop可以使用安装在大多数Linux系统上 `yum install htop` 或 `apt-get install htop`.
+* [Top](https://man7.org/linux/man-pages/man1/top.1.html)： Top是一个Linux命令，它打开了一个仪表板，显示使用情况统计数据，包括CPU、内存和IO使用情况。 它提供了实例上所发生情况的高级概述。
+* [Htop](https://hisham.hm/htop/)： Htop是交互式进程查看器。 除了Top可以提供的内容外，它还提供了详细的CPU和内存使用率。 可以在大多数Linux系统上使用`yum install htop`或`apt-get install htop`安装Htop。
 
-* Iotop： Iotop是磁盘IO使用情况的详细仪表板。 它显示一些条形和仪表，这些条形和仪表描述了使用磁盘IO的进程及其使用的数量。 可以使用在大多数Linux系统上安装Iotop `yum install iotop` 或 `apt-get install iotop`.
+* Iotop： Iotop是磁盘IO使用情况的详细仪表板。 它显示一些条形和仪表，这些条形和仪表描述了使用磁盘IO的进程及其使用的数量。 可以在大多数Linux系统上使用`yum install iotop`或`apt-get install iotop`安装Iotop。
 
-* [Iftop](https://www.ex-parrot.com/pdw/iftop/)： Iftop显示有关以太网/网络使用的详细信息。 Iftop显示使用以太网的实体上每个通信通道的统计信息及其使用的带宽量。 Iftop可以使用安装在大多数Linux系统上 `yum install iftop` 或 `apt-get install iftop`.
+* [Iftop](https://www.ex-parrot.com/pdw/iftop/)： Iftop显示有关以太网/网络使用的详细信息。 Iftop显示使用以太网的实体上每个通信通道的统计信息及其使用的带宽量。 可以在大多数Linux系统上使用`yum install iftop`或`apt-get install iftop`安装Iftop。
 
-* Java Flight Recorder (JFR)：Oracle中的一种商业工具，可在非生产环境中免费使用。 有关更多详细信息，请参阅 [如何使用Java Flight Recorder诊断CQ运行时问题](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq).
-* [!DNL Experience Manager] `error.log` 文件：您可以调查 [!DNL Experience Manager] `error.log` 文件以了解系统中记录的错误的详细信息。 使用命令 `tail -F quickstart/logs/error.log` 以确认错误以进行调查。
-* [工作流控制台](/help/sites-administering/workflows.md)：利用工作流控制台监控滞后或卡住的工作流。
+* Java Flight Recorder (JFR)：Oracle中的一种商业工具，可在非生产环境中免费使用。 有关更多详细信息，请参阅[如何使用Java飞行记录器诊断CQ运行时问题](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)。
+* [!DNL Experience Manager] `error.log`文件：您可以调查[!DNL Experience Manager] `error.log`文件以了解系统中记录的错误的详细信息。 使用命令`tail -F quickstart/logs/error.log`识别要调查的错误。
+* [工作流控制台](/help/sites-administering/workflows.md)：利用工作流控制台监视滞后或卡住的工作流。
 
-通常，您会同时使用这些工具来全面了解您的应用程序的 [!DNL Experience Manager] 部署。
+通常，您会同时使用这些工具来全面了解[!DNL Experience Manager]部署的性能。
 
 >[!NOTE]
 >
@@ -56,11 +56,11 @@ ht-degree: 0%
 
 ## 长期监测 {#long-term-monitoring}
 
-长期监测 [!DNL Experience Manager] 部署涉及对实时监控的相同部分进行更长时间的监控。 它还包括定义特定于您环境的警报。
+对[!DNL Experience Manager]部署的长期监控涉及对实时监控的相同部分进行更长时间的监控。 它还包括定义特定于您环境的警报。
 
 ### 日志聚合和报告 {#log-aggregation-and-reporting}
 
-有多种工具可用于聚合日志，例如Splunk(TM)和Elastic Search、Logstash和Kabana (ELK)。 要评估贵机构的正常运行时间 [!DNL Experience Manager] 部署时，了解特定于系统的日志事件并根据这些事件创建警报非常重要。 了解您的开发和运营实践可以帮助您更好地了解如何调整日志聚合过程以生成严重警报。
+有多种工具可用于聚合日志，例如Splunk(TM)和Elastic Search、Logstash和Kabana (ELK)。 要评估[!DNL Experience Manager]部署的正常运行时间，请务必了解特定于系统的日志事件并根据这些事件创建警报。 了解您的开发和运营实践可以帮助您更好地了解如何调整日志聚合过程以生成严重警报。
 
 ### 环境监测 {#environment-monitoring}
 
@@ -77,15 +77,15 @@ ht-degree: 0%
 
 #### 内部应用程序监控 {#internal-application-monitoring}
 
-内部应用程序监控包括监控组成以下项目的应用程序组件 [!DNL Experience Manager] 栈栈，包括JVM、内容存储库以及通过基于平台构建的自定义应用程序代码进行监控。 通常，它通过JMX Mbeans执行，可由许多流行的监控解决方案直接监控，如SolarWinds (TM)、HP OpenView (TM)、Hyperic (TM)、Zabbix (TM)等。 对于不支持直接连接到JMX的系统，您可以编写Shell脚本来提取JMX数据，并以这些系统本身能够理解的格式将其公开给这些系统。
+内部应用程序监控包括监控构成[!DNL Experience Manager]栈栈的应用程序组件（包括JVM、内容存储库），以及通过基于平台构建的自定义应用程序代码进行监控。 通常，它通过JMX Mbeans执行，可由许多流行的监控解决方案直接监控，如SolarWinds (TM)、HP OpenView (TM)、Hyperic (TM)、Zabbix (TM)等。 对于不支持直接连接到JMX的系统，您可以编写Shell脚本来提取JMX数据，并以这些系统本身能够理解的格式将其公开给这些系统。
 
-默认情况下不启用对JMX Mbean的远程访问。 有关通过JMX进行监控的详细信息，请参见 [使用JMX技术进行监控和管理](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html).
+默认情况下不启用对JMX Mbean的远程访问。 有关通过JMX进行监视的详细信息，请参阅[使用JMX技术进行监视和管理](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html)。
 
 在许多情况下，需要基线来有效地监视统计信息。 要创建基线，请在正常工作条件下观察系统预定时间段，然后识别正常度量。
 
-**JVM监控**
+**JVM监视**
 
-与任何基于Java的应用程序栈栈一样， [!DNL Experience Manager] 取决于通过底层Java虚拟机向其提供的资源。 您可以通过JVM公开的Platform MXBean监控许多这些资源的状态。 有关MXBean的详细信息，请参见 [使用Platform MBean服务器和Platform MXBean](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+与任何基于Java的应用程序栈栈一样，[!DNL Experience Manager]依赖于通过基础Java虚拟机提供给它的资源。 您可以通过JVM公开的Platform MXBean监控许多这些资源的状态。 有关MXBean的详细信息，请参阅[使用Platform MBean服务器和Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html)。
 
 以下是您可以为JVM监视的一些基线参数：
 
@@ -109,24 +109,24 @@ Threads
 * 警报阈值：当线程数大于基线的150%时。
 * 警报定义：要么是一个活动的失控进程，要么是低效的操作占用了大量资源。 分析线程转储以得出定义。
 
-**监测[!DNL Experience Manager]**
+**监视器[!DNL Experience Manager]**
 
-[!DNL Experience Manager] 还会通过JMX公开一组统计信息和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关更多信息，请参阅 [文档](/help/sites-administering/jmx-console.md) 日期 [!DNL Experience Manager] JMX MBean。
+[!DNL Experience Manager]还通过JMX公开一组统计数据和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关详细信息，请参阅[!DNL Experience Manager] JMX MBean上的[文档](/help/sites-administering/jmx-console.md)。
 
-以下是您可以监视的一些基线参数 [!DNL Experience Manager]：
+以下是您可以为[!DNL Experience Manager]监视的一些基线参数：
 
 复制代理
 
 * MBean： `com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * URL： `/system/console/jmx/com.adobe.granite.replication:type=agent,id="<AGENT_NAME>"`
 * 实例：一个创作实例和所有发布实例（用于刷新代理）
-* 警报阈值：当 `QueueBlocked` 是 `true` 或的值 `QueueNumEntries` 大于基线的150%。
+* 警报阈值：当`QueueBlocked`的值为`true`或`QueueNumEntries`的值大于基线的150%时。
 
 * 警报定义：系统中存在阻塞的队列，指示复制目标已关闭或无法访问。 通常，网络或基础架构问题会导致过多条目排入队列，从而对系统性能产生负面影响。
 
 >[!NOTE]
 >
->对于MBean和URL参数，请替换 `<AGENT_NAME>` ，其中包含要监视的复制代理的名称。
+>对于MBean和URL参数，请将`<AGENT_NAME>`替换为您要监视的复制代理的名称。
 
 会话计数器
 
@@ -138,7 +138,7 @@ Threads
 
 运行状况检查
 
-中提供的运行状况检查 [操作仪表板](/help/sites-administering/operations-dashboard.md#health-reports) 具有用于监视的相应JMX MBean。 但是，您可以编写自定义运行状况检查来公开其他系统统计信息。
+[操作仪表板](/help/sites-administering/operations-dashboard.md#health-reports)中可用的运行状况检查具有用于监视的相应JMX MBean。 但是，您可以编写自定义运行状况检查来公开其他系统统计信息。
 
 以下是一些现成的运行状况检查，这些检查对监控很有帮助：
 
@@ -191,14 +191,14 @@ Threads
 
 ## 常见问题和解决方法  {#common-issues-and-resolutions}
 
-在监控过程中，如果您遇到问题，可以执行以下一些故障排除任务来解决的常见问题 [!DNL Experience Manager] 部署：
+在监视过程中，如果您遇到问题，可以执行以下一些故障排除任务，以解决[!DNL Experience Manager]部署的常见问题：
 
-* 如果使用TarMK，请经常运行Tar压缩。 有关更多详细信息，请参阅 [维护存储库](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
-* Check `OutOfMemoryError` 日志。 有关更多信息，请参阅 [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html).
+* 如果使用TarMK，请经常运行Tar压缩。 有关详细信息，请参阅[维护存储库](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)。
+* 检查`OutOfMemoryError`日志。 有关详细信息，请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)。
 
-* 检查日志中是否存在对未索引查询、树遍历或索引遍历的任何引用。 这些指示未索引的查询或索引不足的查询。 有关优化查询和索引性能的最佳实践，请参阅 [有关查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+* 检查日志中是否存在对未索引查询、树遍历或索引遍历的任何引用。 这些指示未索引的查询或索引不足的查询。 有关优化查询和索引性能的最佳实践，请参阅[有关查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 * 使用工作流控制台验证您的工作流是否按预期执行。 如果可能，将多个工作流合并到单个工作流中。
 * 重新访问实时监控，并查找任何特定资源的其他瓶颈或高占用率。
-* 调查客户端网络的入口点以及入口点到 [!DNL Experience Manager] 部署网络，包括Dispatcher。 这些往往是瓶颈领域。 有关更多信息，请参阅 [资产网络注意事项](/help/assets/assets-network-considerations.md).
-* 放大您的 [!DNL Experience Manager] 服务器。 您的尺寸可能不足 [!DNL Experience Manager] 部署。 Adobe客户支持可以帮助您确定您的服务器是否规模过小。
-* 检查 `access.log` 和 `error.log` 出错时输入的文件。 查找可能指示自定义代码异常的模式。 将它们添加到您监视的事件列表中。
+* 调查来自客户端网络的出口点和指向[!DNL Experience Manager]部署网络（包括Dispatcher）的入口点。 这些往往是瓶颈领域。 有关详细信息，请参阅[Assets网络注意事项](/help/assets/assets-network-considerations.md)。
+* 扩大[!DNL Experience Manager]服务器的大小。 您的[!DNL Experience Manager]部署可能大小不足。 Adobe客户支持可以帮助您确定您的服务器是否规模过小。
+* 在出现错误时检查`access.log`和`error.log`文件中的条目。 查找可能指示自定义代码异常的模式。 将它们添加到您监视的事件列表中。

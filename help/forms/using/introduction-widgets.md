@@ -17,7 +17,7 @@ ht-degree: 2%
 
 # 自适应表单和HTML5表单的外观框架 {#appearance-framework-for-adaptive-and-html-forms}
 
-Forms(自适应表单和HTML5表单)使用 [jQuery](https://jquery.com/)， [Backbone.js](https://backbonejs.org/) 和 [下划线.js](https://underscorejs.org/) 用于外观和脚本的库。 这些表单还使用 [jQuery UI](https://jqueryui.com/) **小组件** 表单中所有交互元素（如字段和按钮）的架构。 此架构使Form开发人员能够使用Forms中一组丰富的可用jQuery小部件和插件。 在从leadDigits/trailDigits限制或实施picture子句等用户捕获数据时，您还可以实施特定于表单的逻辑。 表单开发人员可以创建和使用自定义外观，以改进数据捕获体验，并使其更便于用户使用。
+Forms(自适应表单和HTML5表单)使用[jQuery](https://jquery.com/)、[Backbone.js](https://backbonejs.org/)和[Underscore.js](https://underscorejs.org/)库的外观和脚本。 表单中所有的交互元素（如字段和按钮）也使用[jQuery UI](https://jqueryui.com/) **小组件**&#x200B;架构。 此架构使Form开发人员能够使用Forms中一组丰富的可用jQuery小部件和插件。 在从leadDigits/trailDigits限制或实施picture子句等用户捕获数据时，您还可以实施特定于表单的逻辑。 表单开发人员可以创建和使用自定义外观，以改进数据捕获体验，并使其更便于用户使用。
 
 本文面向对jQuery和jQuery构件具有充分了解的开发人员。 它提供了外观框架的洞察信息，并使开发人员能够为表单字段创建替代外观。
 
@@ -51,7 +51,7 @@ Forms(自适应表单和HTML5表单)使用 [jQuery](https://jquery.com/)， [Bac
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>屏幕Reader使用此值来讲述有关字段的信息。 表单会提供值，您可以覆盖该值。<br /> </td>
+   <td>屏幕Reader使用此值来讲述有关字段的信息。 该表单提供了值，您可以覆盖该值。<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -100,19 +100,19 @@ Forms(自适应表单和HTML5表单)使用 [jQuery](https://jquery.com/)， [Bac
   </tr>
   <tr>
    <td>XFA_ENTER_EVENT</td>
-   <td>每当字段成为焦点时，将触发此事件。 它允许“enter”脚本在字段中运行。 触发事件的语法为<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
+   <td>每当字段成为焦点时，将触发此事件。 它允许“enter”脚本在字段中运行。 触发事件的语法为<br /> （小组件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_ENTER_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_EXIT_EVENT</td>
-   <td>此事件在用户离开字段时触发。 它允许引擎设置字段的值并运行其“退出”脚本。 触发事件的语法为<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
+   <td>此事件在用户离开字段时触发。 它允许引擎设置字段的值并运行其“退出”脚本。 触发事件的语法为<br /> （小组件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_EXIT_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CHANGE_EVENT</td>
-   <td>触发此事件是为了允许引擎运行在字段中写入的“更改”脚本。 触发事件的语法为<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
+   <td>触发此事件是为了允许引擎运行在字段中写入的“更改”脚本。 触发事件的语法为<br /> （小组件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CHANGE_EVENT)<br /> </td>
   </tr>
   <tr>
    <td>XFA_CLICK_EVENT</td>
-   <td>只要单击字段，就会触发此事件。 它允许引擎运行在字段上编写的“click”脚本。 触发事件的语法为<br /> （构件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
+   <td>只要单击字段，就会触发此事件。 它允许引擎运行在字段上编写的“click”脚本。 触发事件的语法为<br /> （小组件）。_trigger(xfalib.ut.XfaUtil.prototype.XFA_CLICK_EVENT)<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -136,7 +136,7 @@ Forms(自适应表单和HTML5表单)使用 [jQuery](https://jquery.com/)， [Bac
    <td>将焦点置于字段并调用XFA_CLICK_EVENT。</td>
   </tr>
   <tr>
-   <td><p>markError：function(errorMessage， errorType)<br /> <br /> <em>错误消息：字符串 </em>表示错误<br /> <em>errorType：字符串("warning"/"error")</em></p> <p><strong>注意</strong>：仅适用于HTML5表单。</p> </td>
+   <td><p>markError：function(errorMessage， errorType)<br /> <br /> <em>errorMessage：表示错误的字符串</em> <br /> <em>errorType：字符串（“警告”/“错误”）</em></p> <p><strong>注意</strong>：仅适用于HTML5表单。</p> </td>
    <td>向构件发送错误消息和错误类型。 构件显示错误。</td>
   </tr>
   <tr>
@@ -186,20 +186,20 @@ Forms(自适应表单和HTML5表单)使用 [jQuery](https://jquery.com/)， [Bac
    <td>选定值的数组。<br /> </td>
   </tr>
   <tr>
-   <td>个项目<br /> </td>
-   <td>要显示为选项的对象的数组。 每个对象包含两个属性 — <br /> 保存：要保存的值，显示：要显示的值。<br /> <br /> </td>
+   <td>项目<br /> </td>
+   <td>要显示为选项的对象的数组。 每个对象包含两个属性 — <br />保存：要保存的值，显示：要显示的值。<br /> <br /> </td>
   </tr>
   <tr>
    <td><p>可编辑</p> <p><strong>注意</strong>：仅适用于HTML5表单。<br /> </p> </td>
    <td>如果值为true，则在构件中启用自定义文本输入。<br /> </td>
   </tr>
   <tr>
-   <td>displayvalue<br /> </td>
+   <td>displayValue<br /> </td>
    <td>要显示的值数组。<br /> </td>
   </tr>
   <tr>
    <td>多选<br /> </td>
-   <td>如果允许多项选择，则为true ，否则为false。<br /> </td>
+   <td>如果允许多项选择，则为true，否则为false。<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -213,11 +213,11 @@ Forms(自适应表单和HTML5表单)使用 [jQuery](https://jquery.com/)， [Bac
    <th>描述</th>
   </tr>
   <tr>
-   <td><p>addItem：<em> 函数(itemValues)<br /> itemvalues：包含显示和保存值的对象 <br /> {sDisplayVal： &lt;displayvalue&gt;，sSaveVal： &lt;save value=""&gt;}</em></p> </td>
+   <td><p>addItem：<em>函数(itemValues)<br /> itemValues：包含显示和保存值<br />的对象{sDisplayVal： &lt;displayValue&gt;， sSaveVal： &lt;save Value&gt;}</em></p> </td>
    <td>向列表添加项目。</td>
   </tr>
   <tr>
-   <td>deleteItem<em>：函数(nIndex)<br /> nIndex：要从列表中删除的项的索引<br /> </em><br /> <br /> </td>
+   <td>deleteItem<em>： function(nIndex)<br /> nIndex：要从列表中删除的项的索引<br /> </em><br /> <br /> </td>
    <td>从列表中删除选项。</td>
   </tr>
   <tr>
@@ -247,7 +247,7 @@ Forms(自适应表单和HTML5表单)使用 [jQuery](https://jquery.com/)， [Bac
   </tr>
   <tr>
    <td>值</td>
-   <td><p>值数组（开/关/中性）。</p> <p>它是checkButton的不同状态的值数组。 values[0]是状态为ON时的值，values[1]是状态为OFF时的值，<br /> values[2]是状态为NEUTRAL的值。 值数组的长度等于状态选项的值。<br /> </p> </td>
+   <td><p>值数组（开/关/中性）。</p> <p>它是checkButton的不同状态的值数组。 values[0]是状态为ON的值，值[1]是状态为OFF的值，<br />值[2]是状态为NEUTRAL的值。 值数组的长度等于状态选项的值。<br /> </p> </td>
   </tr>
   <tr>
    <td>状态</td>

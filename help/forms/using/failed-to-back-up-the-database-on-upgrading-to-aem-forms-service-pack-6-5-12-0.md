@@ -25,4 +25,4 @@ ht-degree: 0%
 
 ## 解决方案 {#solution}
 
-要解决此问题，请将数据库的max_packet_size增加到100 M，或者根据位于的my.ini文件中的要求增加 {AEM_HOME}/mysql。
+要解决此问题，请将数据库的max_packet_size增加到100 M，或者根据位于{AEM_HOME}/mysql的my.ini文件中的要求进行增加。

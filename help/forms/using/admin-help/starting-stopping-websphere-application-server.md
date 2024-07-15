@@ -22,24 +22,24 @@ ht-degree: 0%
 
 ## 查看WebSphere应用程序服务器的状态 {#view-the-status-of-websphere-application-server}
 
-1. 在命令提示符下，转到 `[appserver root]/bin` 目录。
-1. 输入以下命令，替换 *server_name* 使用WebSphere应用程序服务器的名称：
+1. 从命令提示符转到`[appserver root]/bin`目录。
+1. 输入以下命令，将&#x200B;*server_name*&#x200B;替换为WebSphere应用程序服务器的名称：
 
-   * (Windows) `serverStatus.bat`*server_name*
-   * (Linux、UNIX) 。/ `serverStatus.sh`*server_name*
+   * (Windows) `serverStatus.bat`*服务器名称*
+   * (Linux、UNIX) 。/ `serverStatus.sh`*服务器名称*
 
 ## 启动WebSphere应用程序服务器 {#start-websphere-application-server}
 
-1. 在命令提示符下，转到 `[appserver root]/bin` 目录。
-1. 输入以下命令，替换 *server_name* 使用WebSphere应用程序服务器的名称：
+1. 从命令提示符转到`[appserver root]/bin`目录。
+1. 输入以下命令，将&#x200B;*server_name*&#x200B;替换为WebSphere应用程序服务器的名称：
 
-   * (Windows) `startServer.bat`*server_name*
-   * (Linux、UNIX) 。/ `startServer.sh`*server_name*
+   * (Windows) `startServer.bat`*服务器名称*
+   * (Linux、UNIX) 。/ `startServer.sh`*服务器名称*
 
 ## 停止WebSphere应用程序服务器 {#stop-websphere-application-server}
 
-1. 在命令提示符下，转到 `[appserver root]/bin` 目录。
-1. 输入以下命令，替换 *server_name* 使用WebSphere应用程序服务器的名称：
+1. 从命令提示符转到`[appserver root]/bin`目录。
+1. 输入以下命令，将&#x200B;*server_name*&#x200B;替换为WebSphere应用程序服务器的名称：
 
-   * (Windows) `stopServer.bat`*server_name*
-   * (Linux、UNIX) 。/ `stopServer.sh`*server_name*
+   * (Windows) `stopServer.bat`*服务器名称*
+   * (Linux、UNIX) 。/ `stopServer.sh`*服务器名称*

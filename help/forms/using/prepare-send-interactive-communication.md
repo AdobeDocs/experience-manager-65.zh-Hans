@@ -24,14 +24,14 @@ ht-degree: 0%
 
 在使用代理UI准备交互式通信时，代理在将Agent UI提交到后处理之前管理Agent UI中的交互式通信的以下方面：
 
-* **数据**：代理UI的数据选项卡在交互式通信中显示任何可代理编辑的变量和未锁定的表单数据模型属性。 这些变量/属性是在编辑或创建交互式通信中包含的文档片段时创建的。 数据选项卡还包括在XDP/打印渠道模板中构建的任何字段。 仅当交互式通信中有代理可编辑的任何变量、表单数据模型属性或字段时，才会显示“数据”选项卡。
-* **内容**：在内容选项卡中，代理管理交互式通信中的内容，例如文档片段和内容变量。 代理可以在文档片段的属性中创建交互式通信时，在这些文档片段中进行允许的更改。 如果允许，代理还可以重新排序、添加/删除文档片段和添加分页符。
+* **数据**：代理UI的“数据”选项卡在交互式通信中显示所有可编辑代理的变量和未锁定的表单数据模型属性。 这些变量/属性是在编辑或创建交互式通信中包含的文档片段时创建的。 数据选项卡还包括在XDP/打印渠道模板中构建的任何字段。 仅当交互式通信中有代理可编辑的任何变量、表单数据模型属性或字段时，才会显示“数据”选项卡。
+* **内容**：在“内容”选项卡中，代理管理交互式通信中的内容，如文档片段和内容变量。 代理可以在文档片段的属性中创建交互式通信时，在这些文档片段中进行允许的更改。 如果允许，代理还可以重新排序、添加/删除文档片段和添加分页符。
 * **附件**：仅当交互式通信具有任何附件或代理具有库访问权限时，“附件”选项卡才会显示在代理UI中。 代理可以或不可以更改或编辑附件。
 
 ## 使用代理UI准备交互式通信 {#prepare-interactive-communication-using-the-agent-ui}
 
-1. 选择 **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**.
-1. 选择相应的交互式通信，然后选择 **[!UICONTROL 打开代理UI]**.
+1. 选择&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
+1. 选择相应的交互式通信，然后选择&#x200B;**[!UICONTROL 打开代理UI]**。
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### 输入数据 {#enter-data}
 
-1. 在数据选项卡中，根据需要输入变量、表单数据模型属性和打印模板(XDP)字段的数据。 填写所有标有星号(&amp;ast；)的必填字段以启用 **提交** 按钮。
+1. 在数据选项卡中，根据需要输入变量、表单数据模型属性和打印模板(XDP)字段的数据。 填写所有标有星号(&amp;amp；ast；)的必填字段以启用&#x200B;**提交**&#x200B;按钮。
 
    在交互式通信预览中选择数据字段值，以高亮显示数据选项卡中的相应数据字段，反之亦然。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 在“内容”选项卡中，管理交互式通信中的内容，如文档片段和内容变量。
 
-1. 选择 **[!UICONTROL 内容]**. 此时将显示交互式通信的内容选项卡。
+1. 选择&#x200B;**[!UICONTROL 内容]**。 此时将显示交互式通信的内容选项卡。
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
@@ -65,9 +65,9 @@ ht-degree: 0%
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   在内容或数据选项卡中，通过点按内容中的突出显示选定的模块( ![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))，您可以禁用或启用在预览中点按/选择相关文本、段落或数据字段时转到文档片段的功能。
+   在“内容”或“数据”选项卡中，通过点按预览左上角的“在内容中突出显示选定的模块” (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))，您可以禁用或启用在预览中点按/选择相关文本、段落或数据字段时转到文档片段的功能。
 
-   在创建交互式通信时可由代理编辑的片段具有编辑选定内容( ![iconeditselectedcontent](assets/iconeditselectedcontent.png))图标。 选择编辑选定内容图标以在编辑模式下启动片段并在其中进行更改。 使用以下选项设置文本格式并管理文本：
+   在创建交互式通信时可由代理编辑的片段具有编辑选定内容(![iconeditselectedcontent](assets/iconeditselectedcontent.png))图标。 选择编辑选定内容图标以在编辑模式下启动片段并在其中进行更改。 使用以下选项设置文本格式并管理文本：
 
    * [格式化选项](#formattingtext)
 
@@ -77,9 +77,9 @@ ht-degree: 0%
    * [特殊字符](#specialcharacters)
    * [键盘快捷键](/help/forms/using/keyboard-shortcuts.md)
 
-   有关代理用户界面中各种文档片段可用的操作的更多信息，请参阅 [代理用户界面中可用的操作和信息](#actionsagentui).
+   有关代理用户界面中各种文档片段可用的操作的详细信息，请参阅[代理用户界面中可用的操作和信息](#actionsagentui)。
 
-1. 要将分页符添加到交互式通信的打印输出中，请将光标置于要插入分页符的位置，并选择在之前分页符或在之后分页符( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png))。
+1. 要将分页符添加到交互式通信的打印输出中，请将光标放在要插入分页符的位置，并选择之前分页符或之后分页符(![pagebreakbeforeafter](assets/pagebreakbeforeafter.png))。
 
    在交互式通信中插入显式分页符占位符。 要查看显式分页符对交互式通信的影响，请参阅打印预览。
 
@@ -89,13 +89,13 @@ ht-degree: 0%
 
 ### 管理附件 {#manage-attachments}
 
-1. 选择 **[!UICONTROL 附件]**. 在创建交互式通信时，代理UI将显示设置的可用附件。
+1. 选择&#x200B;**[!UICONTROL 附件]**。 在创建交互式通信时，代理UI将显示设置的可用附件。
 
    您可以通过点按视图图标来选择不随交互式通信一起提交附件，也可以选择附件中的十字以从交互式通信中删除它（如果允许代理删除或隐藏附件）。 对于创建交互式通信时指定为必填的附件，“查看”和“删除”图标处于禁用状态。
 
-   ![萨根图伊附件](assets/attachmentsagentui.png)
+   ![附件sagentui](assets/attachmentsagentui.png)
 
-1. 选择库访问权限( ![库访问](assets/libraryaccess.png))图标以访问内容库，并将DAM资产作为附件插入。
+1. 选择库访问权限(![libraryaccess](assets/libraryaccess.png))图标可访问内容库，以将DAM资产作为附件插入。
 
    >[!NOTE]
    >
@@ -104,7 +104,7 @@ ht-degree: 0%
 1. 如果在创建交互式通信时未锁定附件的顺序，则可以通过选择附件并点按向下和向上箭头来重新排序附件。
 1. 使用Web预览和打印预览功能，查看这两个输出是否符合您的要求。
 
-   如果您认为预览效果令人满意，请选择 **[!UICONTROL 提交]** 将交互式通信提交/发送到发布流程。 或者，要进行更改，请退出预览以返回到进行更改的页面。
+   如果您认为预览效果令人满意，请选择&#x200B;**[!UICONTROL 提交]**&#x200B;以提交/将交互式通信发送到发布进程。 或者，要进行更改，请退出预览以返回到进行更改的页面。
 
 ## 设置文本格式 {#formattingtext}
 
@@ -134,12 +134,12 @@ ht-degree: 0%
 
 ### 在文本中插入特殊字符 {#specialcharacters}
 
-代理UI已内置对210个特殊字符的支持。 管理员可以 [通过自定义添加对更多/自定义特殊字符的支持](/help/forms/using/custom-special-characters.md).
+代理UI已内置对210个特殊字符的支持。 管理员可以[通过自定义](/help/forms/using/custom-special-characters.md)添加对更多/自定义特殊字符的支持。
 
 #### 附件投放 {#attachmentdelivery}
 
 * 当使用服务器端API作为交互式或非交互式PDF呈现交互式通信时，呈现的PDF包含附件作为PDF附件。
-* 当使用代理UI将与交互式通信关联的后处理作为提交的一部分加载时，附件将作为列表传递&lt;com.adobe.idp.document> inAttachmentDocs参数。
+* 在使用代理UI提交过程中加载与交互式通信关联的后处理时，附件将作为List&lt;com.adobe.idp.Document> inAttachmentDocs参数传递。
 * 投放机制工作流（如电子邮件和打印）也随交互式通信的PDF版本一起投放附件。
 
 ## 代理用户界面中可用的操作和信息 {#actionsagentui}
@@ -148,22 +148,22 @@ ht-degree: 0%
 
 ![ ](do-not-localize/contentoptionsdocfragments.png)
 
-* **上/下箭头**：用于在交互式通信中向上或向下移动文档片段的箭头。
-* **删除**：如果允许，从交互式通信中删除文档片段。
-* **在此之前分页** （适用于目标区域的子片段）：在文档片段之前插入分页符。
+* **向上/向下箭头**：用于在交互式通信中向上或向下移动文档片段的箭头。
+* **删除**：如果允许，请从交互式通信中删除文档片段。
+* **在**&#x200B;前插入分页符（适用于目标区域的子片段）：在文档片段前插入分页符。
 * **缩进**：增加或减少文档片段的缩进。
-* **在此之后分页** （适用于目标区域的子片段）：在文档片段之后插入分页符。
+* **在**&#x200B;后面插入分页符（适用于目标区域的子片段）：在文档片段后面插入分页符。
 
 ![docfragoptions](assets/docfragoptions.png)
 
-* 编辑（仅限文本片段）：打开富文本编辑器以编辑文本文档片段。 有关更多信息，请参阅 [设置文本格式](#formattingtext).
+* 编辑（仅限文本片段）：打开富文本编辑器以编辑文本文档片段。 有关详细信息，请参阅[设置文本格式](#formattingtext)。
 
 * 选择（眼睛图标）：包含\排除交互式通信中的文档片段。
 * 未填写的值（信息）：指示文档片段中未填写的变量的数量。
 
 ### 列出文档片段 {#list-document-fragments}
 
-![listoptions](assets/listoptions.png)
+![列表选项](assets/listoptions.png)
 
 * 插入空白行：插入新的空白行。
 * 选择（眼睛图标）：包含\排除交互式通信中的文档片段。
@@ -180,27 +180,27 @@ Adobe建议按顺序执行这些指令，以成功地将交互式通信另存为
 
 缺省情况下，“另存为草稿”功能未启用。 执行以下步骤以启用该功能：
 
-1. 实施 [ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html) 服务提供者接口(SPI)。
+1. 实施[ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html)服务提供程序接口(SPI)。
 
    SPI允许您使用草稿ID作为唯一标识符将交互式通信的草稿版本保存到数据库中。 这些说明假定您事先知道如何使用Maven项目构建OSGi捆绑包。
 
-   有关示例SPI实施，请参阅 [ccrDocumentInstance SPI实施示例](#sample-ccrDocumentInstance-spi).
-1. 打开 `http://<hostname>:<port>/ system/console/bundles` 并选择 **[!UICONTROL 安装/更新]** 上传OSGi捆绑包。 验证已上传文件包的状态是否显示为 **活动**. 如果软件包的状态未显示为，请重新启动服务器 **活动**.
+   有关示例SPI实现，请参阅[示例ccrDocumentInstance SPI实现](#sample-ccrDocumentInstance-spi)。
+1. 打开`http://<hostname>:<port>/ system/console/bundles`并选择&#x200B;**[!UICONTROL 安装/更新]**&#x200B;以上传OSGi包。 验证上传的包的状态是否显示为&#x200B;**活动**。 如果包的状态未显示为&#x200B;**活动**，请重新启动服务器。
 1. 转到 `https://'[server]:[port]'/system/console/configMgr`.
-1. 选择 **[!UICONTROL 创建通信配置]**.
-1. 选择 **[!UICONTROL 使用CCRDocumentInstanceService启用保存]** 并选择 **[!UICONTROL 保存]**.
+1. 选择&#x200B;**[!UICONTROL 创建通信配置]**。
+1. 选择&#x200B;**[!UICONTROL 使用CCRDocumentInstanceService启用“保存”]**，然后选择&#x200B;**[!UICONTROL 保存]**。
 
 ### 将交互式通信另存为草稿 {#save-as-draft-agent-ui}
 
 执行以下步骤，将交互式通信另存为草稿：
 
-1. 在Forms Manager中选择交互式通信，然后选择 **[!UICONTROL 打开代理UI]**.
+1. 在Forms Manager中选择交互式通信，然后选择&#x200B;**[!UICONTROL 打开代理UI]**。
 
-1. 在Agent UI中进行相应更改，然后选择 **[!UICONTROL 另存为草稿]**.
+1. 在代理UI中进行适当的更改，然后选择&#x200B;**[!UICONTROL 另存为草稿]**。
 
-1. 在中指定拔模的名称 **[!UICONTROL 名称]** 字段并选择 **[!UICONTROL 完成]**.
+1. 在&#x200B;**[!UICONTROL 名称]**&#x200B;字段中指定草稿的名称，然后选择&#x200B;**[!UICONTROL 完成]**。
 
-将交互式通信另存为草稿后，选择 **[!UICONTROL 保存更改]** 以保存对草稿所做的任何进一步更改。
+将交互式通信另存为草稿后，选择&#x200B;**[!UICONTROL 保存更改]**&#x200B;以保存对草稿所做的任何进一步更改。
 
 ### 检索交互式通信的草稿 {#retrieve-draft}
 
@@ -208,11 +208,11 @@ Adobe建议按顺序执行这些指令，以成功地将交互式通信另存为
 
 `https://server:port/aem/forms/createcorrespondence.hmtl?draftid=[draftid]`
 
-[draftid] 是指在将交互式通信另存为草稿后生成的草稿版本的唯一标识符。
+[draftid]引用将交互式通信另存为草稿后生成的草稿版本的唯一标识符。
 
 ### ccrDocumentInstance SPI实施示例 {#sample-ccrDocumentInstance-spi}
 
-实施 `ccrDocumentInstance` SPI将交互式通信另存为草稿。 以下是 `ccrDocumentInstance` SPI。
+实施`ccrDocumentInstance` SPI以将交互式通信另存为草稿。 以下是`ccrDocumentInstance` SPI的实现示例。
 
 ```javascript
 package Implementation;
@@ -312,9 +312,9 @@ public class CCRDraftService implements CCRDocumentInstanceService {
 }
 ```
 
-此 `save`， `update`， `get`、和 `getAll` 操作调用数据库服务将交互式通信另存为草稿、更新交互式通信、从数据库中检索数据，以及检索数据库中所有可用交互式通信的数据。 此示例使用 `mySQLDataBaseServiceCRUD` 作为数据库服务的名称。
+`save`、`update`、`get`和`getAll`操作调用数据库服务以将交互式通信另存为草稿、更新交互式通信、从数据库中检索数据以及检索数据库中可用的所有交互式通信的数据。 此示例使用`mySQLDataBaseServiceCRUD`作为数据库服务的名称。
 
-下表说明了此示例 `ccrDocumentInstance` SPI实施。 它展示了 `save`， `update`， `get`、和 `getAll` 操作在示例实施中调用数据库服务。
+下表说明了`ccrDocumentInstance` SPI实现的示例。 它演示了在示例实现中，`save`、`update`、`get`和`getAll`操作如何调用数据库服务。
 
 <table> 
  <tbody>
@@ -341,7 +341,7 @@ public class CCRDraftService implements CCRDocumentInstanceService {
   </tbody>
 </table>
 
-以下示例为 `pom.xml` 属于实施一部分的文件：
+以下是作为实施一部分的`pom.xml`文件示例：
 
 ```xml
 <?xml version="1.0" encoding="UTF-8"?>
@@ -438,4 +438,4 @@ public class CCRDraftService implements CCRDocumentInstanceService {
 
 >[!NOTE]
 >
->确保更新 `aemfd-client-sdk` 与6.0.160的依赖关系 `pom.xml` 文件。
+>确保在`pom.xml`文件中将`aemfd-client-sdk`依赖项更新为6.0.160。

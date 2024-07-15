@@ -32,13 +32,13 @@ CIF加载项通过特定于commerce的功能扩展了AEM创作。 这允许作�
 
 ![产品选取器](/help/commerce/cif/assets/authoring/product-picker-variation.png)
 
-**示例产品Teaser**
+**产品Teaser示例**
 
-![未选择的Teaser组件](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
+![Teaser组件没有选择](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
 此组件的“配置”对话框需要一个产品。 CIF使用SKU作为产品标识符。 作者可以手动输入sku，也可以单击文件夹图标以打开产品选取器。 选择并关闭选取器后，“组件”对话框会显示所选产品的名称
 
-![带选择的Teaser组件](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
+![包含选定内容的Teaser组件](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 
 ### 类别选取器 {#category-picker}
 
@@ -48,11 +48,11 @@ CIF加载项通过特定于commerce的功能扩展了AEM创作。 这允许作�
 
 **示例类别轮播**
 
-![未选择的轮播组件](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
+![没有选择的轮播组件](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
 此组件的“配置”对话框需要1 ： n类别。 CIF使用UID/ID作为类别标识符。 作者可以手动输入UID，也可以单击文件夹图标以打开类别选取器。 选择并关闭选取器后，“组件”对话框将显示所选类别的名称。
 
-![带选择的轮播组件](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
+![包含选定内容的轮播组件](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
 ## Universal Editor {#universal-editor}
 
@@ -60,7 +60,7 @@ CIF加载项通过特定于commerce的功能扩展了AEM创作。 这允许作�
 
 ### 访问产品数据 {#access-product-data}
 
-编辑器侧面板中的“资产”选项卡通过选择类型“产品”来提供对产品数据的访问权限。 从配置的商务端点实时获取数据。 该过滤器是对商务端点的全文搜索，以查找特定产品。
+通过选择“产品”类型，编辑器侧面板中的“Assets”选项卡可以访问产品数据。 从配置的商务端点实时获取数据。 该过滤器是对商务端点的全文搜索，以查找特定产品。
 
 ![产品数据侧面板](/help/commerce/cif/assets/authoring/products-side-panel.png)
 
@@ -72,15 +72,15 @@ CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌�
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
-    >[！注意]
+    >[！NOTE]
     >
-    >如果同时选择了类别和产品，则将采用产品。
+    >如果同时选择了类别和产品，则将使用该产品。
 
 这会创建一个占位符链接，在页面渲染时，该链接会被替换为真实链接。
 
 ### 访问关联的产品内容 {#associated-content}
 
-如果通用编辑器识别页面上的1：n产品，则侧面板将自动显示“关联的Commerce内容”选项卡。 利用此选项卡，作者可以快速访问使用产品标记的AEM内容(请参阅 [用关联的AEM内容扩充产品数据](./enrich-product-associated-content.md) 了解更多信息)。 此选项卡提供下拉列表，用于在页面上具有多个产品时根据内容类型和特定产品进行过滤。 使用内容的工作方式与使用“资源”选项卡中的内容的工作方式完全相同。
+如果通用编辑器识别页面上的1：n产品，则侧面板将自动显示“关联的Commerce内容”选项卡。 此选项卡允许作者快速访问使用产品标记的AEM内容(有关详细信息，请参阅[扩充具有关联AEM内容的产品数据](./enrich-product-associated-content.md))。 此选项卡提供下拉列表，用于在页面上具有多个产品时根据内容类型和特定产品进行过滤。 使用内容的工作方式与使用“Assets”选项卡中的内容的工作方式完全相同。
 
 ![产品数据侧面板](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 
@@ -102,6 +102,6 @@ CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌�
 
 结果按类型分组。
 
-    >[！注意]
+Omnisearch中的    >[！NOTE]
     >
-    >Omnisearch中的全文搜索不支持关联的内容片段。 使用SKU或UID查找关联的内容片段。
+    >全文搜索不支持关联的内容片段。 使用SKU或UID查找关联的内容片段。

@@ -17,13 +17,13 @@ ht-degree: 1%
 
 # AEM 6.5中的Sites存储库重构 {#sites-repository-restructuring-in-aem}
 
-如父项中所述 [AEM 6.5中的存储库重组](/help/sites-deploying/repository-restructuring.md) 页面，升级到AEM 6.5的客户应使用此页面评估与影响AEM Sites解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
+如AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Sites解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
-**6.5版升级**
+升级为6.5的&#x200B;****
 
 * [ContextHub 区段](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#contexthub-segments)
 
-**在将来升级之前**
+**将来升级之前**
 
 * [Adobe Analytics客户端库](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-analytics-client-libraries)
 * [经典Microsoft Word到网页设计](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#classic-microsoft-word-to-web-page-designs)
@@ -56,16 +56,16 @@ ht-degree: 1%
    <td><strong>重组指南</strong></td>
    <td><p>如果有任何新区段或修改的ContextHub区段是在源代码管理中编辑的，而不是在AEM中编辑的，则必须将它们迁移到新位置：</p>
     <ol>
-     <li>将任何新区段或修改的ContextHub区段从上一个位置复制到适当的新位置(/<code>apps</code>， <code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)</li>
-     <li>将之前位置对ContextHub区段的引用更新为新位置中已迁移的ContextHub区段(<code>/apps</code>， <code>/conf/global</code>， <code>/conf/&lt;tenant&gt;</code>)。</li>
+     <li>将任何新区段或修改的ContextHub区段从上一个位置复制到适当的新位置（/<code>apps</code>、<code>/conf/global</code>或<code>/conf/&lt;tenant&gt;</code>）</li>
+     <li>将先前位置中对ContextHub区段的引用更新为新位置(<code>/apps</code>、<code>/conf/global</code>、<code>/conf/&lt;tenant&gt;</code>)中已迁移的ContextHub区段。</li>
     </ol> <p>以下QueryBuilder查询将查找对ContextHub区段的所有引用，并位于以前的位置。<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> 可以通过以下方式执行： <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM QueryBuilder调试器UI</a>. 请注意，这是一个遍历查询，因此不要对生产运行它，并确保根据需要调整遍历限制。</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br />可以通过<a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM QueryBuilder Debugger UI</a>执行此命令。 请注意，这是一个遍历查询，因此不要对生产运行它，并确保根据需要调整遍历限制。</p> </td>
   </tr>
   <tr>
    <td><strong>注释</strong></td>
-   <td><p>保留到之前位置的ContextHub区段在中显示为只读 <strong>AEM &gt;个性化&gt;受众</strong>.</p> <p>如果要在AEM中编辑ContextHub区段，则必须将其迁移到新位置(<code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)。 在AEM中创建的任何新ContentHub区段都会保留到新位置(<code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)。</p> <p>AEM Sites页面属性仅允许使用上一个位置(<code>/etc</code>)或单个新位置(<code>/apps</code>， <code>/conf/global</code> 或 <code>/conf/&lt;tenant&gt;</code>)，因此必须相应地迁移ContextHub区段。</p> <p>可以从AEM引用站点中删除任何未使用的ContextHub区段，并且不会将其迁移到新位置：</p>
+   <td><p>保留到先前位置的ContextHub区段在<strong>AEM &gt; Personalization &gt; Audiences</strong>中显示为只读。</p> <p>如果要在AEM中编辑ContextHub区段，则必须将其迁移到新位置（<code>/conf/global</code>或<code>/conf/&lt;tenant&gt;</code>）。 在AEM中创建的所有新ContentHub区段都会保留到新位置（<code>/conf/global</code>或<code>/conf/&lt;tenant&gt;</code>）。</p> <p>AEM Sites页面属性只允许选择上一个位置(<code>/etc</code>)或单个新位置（<code>/apps</code>、<code>/conf/global</code>或<code>/conf/&lt;tenant&gt;</code>），因此必须相应地迁移ContextHub区段。</p> <p>可以从AEM引用站点中删除任何未使用的ContextHub区段，并且不会将其迁移到新位置：</p>
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
      <li>/etc/segment/geometrixx-outdoors</li>
@@ -92,7 +92,7 @@ ht-degree: 1%
    <td><strong>重组指南</strong></td>
    <td><p>这些客户端库的任何自定义使用都应按类别而不是路径引用客户端库：</p>
     <ol>
-     <li>应更新以前位置按路径对客户端库的任何引用，以便使用 <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM客户端库引用框架</a>.</li>
+     <li>应更新以前位置按路径对客户端库的任何引用，以使用<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM的客户端库引用框架</a>。</li>
      <li>如果无法使用AEM客户端库引用框架，可以通过AEM客户端库代理servlet引用客户端库的绝对路径。
       <ul>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/appmeasurement.js</code></li>
@@ -105,7 +105,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>注释</strong></td>
-   <td><p>从不支持编辑这些客户端库。</p> <p>要获取客户端库类别，请访问每个类别 <code>cq:ClientLIbraryFolder</code> 节点通过CRXDELite并检查categories属性。</p>
+   <td><p>从不支持编辑这些客户端库。</p> <p>要获取客户端库类别，请通过CRXDELite访问每个<code>cq:ClientLIbraryFolder</code>节点并检查类别属性。</p>
     <ul>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/appmeasurement</code></li>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/plugins</code></li>
@@ -134,13 +134,13 @@ ht-degree: 1%
    <td><p>用于任何在SCM中管理，且未在运行时通过“设计”对话框写入的设计。</p>
     <ol>
      <li>将设计从上一个位置复制到新位置(<code>/apps</code>)。</li>
-     <li>将设计中的所有CSS、JavaScript和静态资源转换为 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a> 替换为 <code>allowProxy = true</code>.</li>
+     <li>将设计中的所有CSS、JavaScript和静态资源转换为具有<code>allowProxy = true</code>的<a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a>。</li>
      <li>更新对cq：designPath属性中“上一位置”的引用。</li>
      <li>更新任何引用了先前位置的页面以使用新的客户端库类别（这需要更新页面实施代码）。</li>
-     <li>更新AEM Dispatcher规则以允许通过提供客户端库 <code>/etc.clientlibs/</code> 代理servlet。</li>
+     <li>更新AEM Dispatcher规则以允许通过<code>/etc.clientlibs/</code>代理servlet提供客户端库。</li>
     </ol> <p>对于未在SCM中管理并通过设计对话框修改运行时的任何设计：</p>
     <ul>
-     <li>请勿将可创作设计移出 <code>/etc</code>.</li>
+     <li>请勿将可创作设计移出<code>/etc</code>。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -166,24 +166,24 @@ ht-degree: 1%
    <td><strong>重组指南</strong></td>
    <td>必须将任何新的移动设备模拟器配置迁移到新位置。
     <ol>
-     <li>将任何新的移动设备模拟器配置从上一个位置复制到新位置(<code>/apps</code>， <code>/conf/global</code>， <code>/conf/&lt;tenant&gt;</code>)。</li>
-     <li>对于依赖于这些Mobile Device Emulator配置的任何AEM Sites页面，请更新页面的 <span class="code">
+     <li>将任何新的移动设备模拟器配置从上一个位置复制到新位置(<code>/apps</code>、<code>/conf/global</code>、<code>/conf/&lt;tenant&gt;</code>)。</li>
+     <li>对于依赖于这些移动设备模拟器配置的任何AEM Sites页面，请更新页面的<span class="code">
        <code>
         jcr
        </code>
        <code>
         :content
-       </code></span> 节点： <br /> <span class="code">[cq：Page]/jcr：content@cq：
+       </code></span>节点： <br /> <span class="code">[cq：Page]/jcr：content@cq：
        <code>
         deviceGroups
        </code> = String[ mobile/groups/responsive ]</span></li>
-     <li>对于依赖这些移动设备模拟器配置的任何可编辑模板，请更新可编辑模板，并指向 <span class="code">
+     <li>对于依赖这些移动设备模拟器配置的任何可编辑模板，请更新可编辑模板，并指向<span class="code">
        <code>
         cq
        </code>：
        <code>
         deviceGroups
-       </code></span> 到新位置。</li>
+       </code></span>到新位置。</li>
     </ol> </td>
   </tr>
   <tr>
@@ -210,11 +210,11 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>新位置</strong></td>
-   <td><p><code>/apps/msm</code> （客户Blueprint配置）</p> <p><code>/libs/msm</code> （用于屏幕、商务的现成Blueprint配置）</p> </td>
+   <td><p><code>/apps/msm</code> （客户Blueprint配置）</p> <p><code>/libs/msm</code> (适用于Screens、Commerce的现成Blueprint配置)</p> </td>
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>任何新的或修改的多站点管理器Blueprint配置必须迁移到新位置(<code>/apps</code>)。</p>
+   <td><p>任何新的或修改过的多站点管理器Blueprint配置必须迁移到新位置(<code>/apps</code>)。</p>
     <ol>
      <li>将任何新的或修改过的多站点管理器Blueprint配置从上一个位置复制到新位置(<code>/apps</code>)。</li>
      <li>从上一个位置删除所有迁移的多站点管理器Blueprint配置。</li>
@@ -222,7 +222,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>注释</strong></td>
-   <td><p>所有AEM提供的多站点管理器Blueprint配置都存在于中的新位置 <code>/libs</code>.</p> <p>内容未引用多站点管理器蓝色配置，因此没有要调整的内容引用。</p> </td>
+   <td><p>所有AEM提供的多站点管理器Blueprint配置都存在于<code>/libs</code>中的新位置。</p> <p>内容未引用多站点管理器蓝色配置，因此没有要调整的内容引用。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -244,7 +244,7 @@ ht-degree: 1%
    <td><p>任何新的或修改的多站点管理器转出配置必须迁移到新位置。</p>
     <ol>
      <li>将任何新的或修改过的多站点管理器转出配置从上一个位置复制到新位置(<code>/apps</code>)。</li>
-     <li>将AEM页面上的任何引用更新到上一位置的多站点管理器转出配置，以指向新位置中的对应项(<code>/libs</code> 或 <code>/apps</code>)。</li>
+     <li>将AEM页面上的任何引用更新到上一位置的多站点管理器转出配置，以指向新位置（<code>/libs</code>或<code>/apps</code>）中的对应项。</li>
     </ol> <p>从上一个位置删除已迁移的多站点管理器转出配置。</p> </td>
   </tr>
   <tr>
@@ -277,7 +277,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>注释</strong></td>
-   <td><p>任何新的或修改过的页面事件通知电子邮件模板必须迁移到下的新位置 <code>/apps</code>：</p>
+   <td><p>任何新的或修改过的页面事件通知电子邮件模板必须迁移到<code>/apps</code>下的新位置：</p>
     <ol>
      <li>将任何新的或修改过的页面事件通知电子邮件模板从上一个位置复制到新位置(<code>/apps</code>)。</li>
      <li>从上一个位置删除任何迁移的页面事件通知电子邮件模板。</li>
@@ -336,7 +336,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>注释</strong></td>
-   <td>引用不存在的项目 <code>grid_base.less</code> 文件导致页面和模板编辑器的布局模式无法正常工作，并中断页面布局。</td>
+   <td>引用不存在的<code>grid_base.less</code>文件会导致页面和模板编辑器的布局模式不起作用，并中断页面布局。</td>
   </tr>
  </tbody>
 </table>
@@ -358,13 +358,13 @@ ht-degree: 1%
    <td><p>用于任何在SCM中管理，且未在运行时通过“设计”对话框写入的设计。</p>
     <ol>
      <li>将设计从上一个位置复制到新位置(<code>/apps</code>)。</li>
-     <li>将设计中的所有CSS、JavaScript和静态资源转换为 <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a> 替换为 <code>allowProxy = true</code>.</li>
-     <li>更新对中先前位置的引用 <code>cq:designPath</code> 属性路径 <strong>AEM &gt;站点&gt;自定义站点页面&gt;页面属性&gt;高级选项卡&gt;设计字段</strong>.</li>
+     <li>将设计中的所有CSS、JavaScript和静态资源转换为具有<code>allowProxy = true</code>的<a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a>。</li>
+     <li>通过<strong>AEM &gt;站点&gt;自定义站点页面&gt;页面属性&gt;高级选项卡&gt;设计字段</strong>，更新对<code>cq:designPath</code>属性中先前位置的引用。</li>
      <li>更新任何引用了先前位置的页面以使用新的客户端库类别（这需要更新页面实施代码）。</li>
-     <li>更新AEM Dispatcher规则以允许通过为客户端库提供服务 <code>/etc.clientlibs/</code> 代理servlet。</li>
+     <li>更新AEM Dispatcher规则以允许通过<code>/etc.clientlibs/</code>代理servlet提供客户端库。</li>
     </ol> <p>对于未在SCM中管理并通过设计对话框修改运行时的任何设计：</p>
     <ul>
-     <li>请勿将可创作设计移出 <code>/etc</code>.</li>
+     <li>请勿将可创作设计移出<code>/etc</code>。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -423,7 +423,7 @@ ht-degree: 1%
    <td><strong>重组指南</strong></td>
    <td><p>这些客户端库的任何自定义使用都应按类别而不是路径引用客户端库。</p>
     <ol>
-     <li>应更新以前位置按路径对客户端库的任何引用，以便使用 <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM客户端库引用框架</a>.</li>
+     <li>应更新以前位置按路径对客户端库的任何引用，以使用<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM的客户端库引用框架</a>。</li>
      <li>如果无法使用AEM客户端库引用框架，可以通过AEM客户端库代理servlet引用客户端库的绝对路径：</li>
     </ol>
     <ul>
@@ -468,7 +468,7 @@ ht-degree: 1%
    <td><strong>重组指南</strong></td>
    <td><p>这些客户端库的任何自定义使用都应按类别而不是路径引用客户端库。</p>
     <ol>
-     <li>应更新以前位置按路径对客户端库的任何引用，以便使用 <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM客户端库引用框架</a>.</li>
+     <li>应更新以前位置按路径对客户端库的任何引用，以使用<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM的客户端库引用框架</a>。</li>
      <li>如果无法使用AEM客户端库引用框架，可以通过AEM客户端库代理servlet引用客户端库的绝对路径。</li>
     </ol>
     <ul>
@@ -479,7 +479,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>注释</strong></td>
-   <td><p>从不支持编辑这些客户端库。</p> <p>要获取客户端库类别，请访问每个类别 <code>cq:ClientLIbraryFolder</code> 节点通过CRXDELite并检查categories属性：</p>
+   <td><p>从不支持编辑这些客户端库。</p> <p>要获取客户端库类别，请通过CRXDELite访问每个<code>cq:ClientLIbraryFolder</code>节点并检查类别属性：</p>
     <ul>
      <li><code>/libs/wcm/foundation/clientlibs/accessibility</code></li>
      <li><code>/libs/wcm/foundation/clientlibs/main</code></li>

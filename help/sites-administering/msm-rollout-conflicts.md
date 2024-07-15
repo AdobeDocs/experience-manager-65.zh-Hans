@@ -38,19 +38,19 @@ ht-degree: 20%
 
 ### 示例场景 {#example-scenario}
 
-在以下部分中，您必须使用新页面的示例 `b`，在Blueprint和Live Copy分支（手动创建）中创建，用于说明解决冲突的各种方法：
+在以下部分中，您必须使用在Blueprint和Live Copy分支（手动创建）中创建的新页面`b`的示例来说明解决冲突的各种方法：
 
 * Blueprint：`/b`
 
   母版页；带有一个子页面bp-level-1。
 
-* live copy： `/b`
+* Live Copy： `/b`
 
-  在Live Copy分支中手动创建的页面；具有一个子页面， `lc-level-1`.
+  在Live Copy分支中手动创建的页面；具有一个子页面`lc-level-1`。
 
-   * 发布时激活为 `/b`，以及子页面。
+   * 在发布时作为`/b`与子页面一起激活。
 
-**转出前**
+转出前&#x200B;****
 
 <table>
  <tbody>
@@ -67,7 +67,7 @@ ht-degree: 20%
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code> /lc-level-1</code><br /> <br /> （在live copy分支中手动创建）<br /> </td>
-   <td><code> /lc-level-1</code><br /> <br /> （包含页面的内容）<br /> 在live copy分支中手动创建的子级1)</td>
+   <td><code> /lc-level-1</code><br /> <br /> （包含在live copy分支中手动创建的页面<br />子级别1的内容）</td>
   </tr>
  </tbody>
 </table>
@@ -76,15 +76,15 @@ ht-degree: 20%
 
 转出管理器让您激活或停用冲突管理。
 
-可使用 [OSGi配置](/help/sites-deploying/configuring-osgi.md) 之 **Day CQ WCM转出管理器**：
+可使用&#x200B;**Day CQ WCM转出管理器**&#x200B;的[OSGi配置](/help/sites-deploying/configuring-osgi.md)完成此操作：
 
-* **处理与手动创建的页面的冲突**：
+* **处理与手动创建的页面冲突**：
 
-  ( `rolloutmgr.conflicthandling.enabled`)
+  (`rolloutmgr.conflicthandling.enabled`)
 
   如果转出管理器应处理Live Copy中创建的页面的名称与Blueprint中已存在的名称发生的冲突，则设置为true。
 
-AEM具有 [已停用冲突管理时的预定义行为](#behavior-when-conflict-handling-deactivated).
+当冲突管理被停用时，AEM具有[预定义的行为](#behavior-when-conflict-handling-deactivated)。
 
 ## 冲突处理程序 {#conflict-handlers}
 
@@ -96,41 +96,41 @@ AEM 提供：
 
    * `ResourceNameRolloutConflictHandler`
 
-* 实施 [自定义处理程序](#customized-handlers).
+* 实施[自定义处理程序](#customized-handlers)的可能性。
 * 服务排名机制，允许您设置每个单独处理程序的优先级。 使用排名最高的服务。
 
 ### 默认冲突处理程序 {#default-conflict-handler}
 
 默认冲突处理程序：
 
-* 称为 `ResourceNameRolloutConflictHandler`
+* 名为`ResourceNameRolloutConflictHandler`
 
 * 对于此处理程序，Blueprint 页面将获得优先权。
-* 此处理程序的服务排名设置得很低(即低于 `service.ranking` 属性)，因为假设自定义处理程序需要更高的排名。 然而，排名并不是在必要时确保灵活性的绝对最低标准。
+* 此处理程序的服务排名设置得很低（即低于`service.ranking`属性的默认值），因为假设自定义处理程序需要更高的排名。 然而，排名并不是在必要时确保灵活性的绝对最低标准。
 
-此处理程序为 Blueprint 页面提供优先权。Live Copy页面 `/b` （在live copy分支中）移至 `/b_msm_moved`.
+此处理程序为 Blueprint 页面提供优先权。Live Copy页面`/b`已移动（在Live Copy分支中）到`/b_msm_moved`。
 
-* live copy： `/b`
+* Live Copy： `/b`
 
-  （在Live Copy中）移至 `/b_msm_moved`. 这将充当备份，并确保不丢失任何内容。
+  已将（在Live Copy中）移动到`/b_msm_moved`。 这将充当备份，并确保不丢失任何内容。
 
    * 不会移动 `lc-level-1`。
 
 * Blueprint：`/b`
 
-  转出到Live Copy页面 `/b`.
+  转出到Live Copy页面`/b`。
 
-   * `bp-level-1` 转出到live copy。
+   * `bp-level-1`转出到Live Copy。
 
-**转出后**
+转出后&#x200B;****
 
 <table>
  <tbody>
   <tr>
    <td><strong>转出后的Blueprint</strong></td>
-   <td><strong>转出后的Live Copy</strong><br /> </td>
+   <td>转出后的<strong>Live Copy</strong><br /> </td>
    <td></td>
-   <td><strong>转出后的Live Copy</strong><br /> <br /> <br /> </td>
+   <td>转出后的<strong>Live Copy</strong><br /> <br /> <br /> </td>
    <td><strong>转出后发布</strong><br /> <br /> </td>
   </tr>
   <tr>
@@ -158,29 +158,29 @@ AEM 提供：
 
 * 根据您的要求命名。
 * 根据您的要求开发/配置；例如，您可以开发一个处理程序，以便为Live Copy页面提供优先权。
-* 设计为使用 [OSGi配置](/help/sites-deploying/configuring-osgi.md)；特别是：
+* 设计为使用[OSGi配置](/help/sites-deploying/configuring-osgi.md)进行配置；特别是：
 
    * **服务排名**：
 
-     定义与其他冲突处理程序相关的顺序( `service.ranking`)。
+     定义与其他冲突处理程序(`service.ranking`)相关的顺序。
 
      默认值为 0。
 
 ### 冲突处理停用时的行为 {#behavior-when-conflict-handling-deactivated}
 
-如果您手动 [取消激活冲突处理](#rollout-manager-and-conflict-handling)，则AEM不会对任何冲突页面执行任何操作（非冲突页面按预期转出）。
+如果您手动[停用冲突处理](#rollout-manager-and-conflict-handling)，则AEM不会对任何冲突页面执行任何操作（非冲突页面按预期转出）。
 
 >[!CAUTION]
 >
 >AEM不会指示将忽略冲突，因为必须显式配置此行为，因此会假定这是必需的行为。
 
-在这种情况下，Live Copy将获得优先权。 Blueprint页面 `/b` 不会复制且live copy页面不会复制 `/b` 保持不变。
+在这种情况下，Live Copy将获得优先权。 不会复制Blueprint页面`/b`，并且Live Copy页面`/b`保持不变。
 
 * Blueprint：`/b`
 
   根本不复制，而是忽略。
 
-* live copy： `/b`
+* Live Copy： `/b`
 
   同样的。
 
@@ -191,7 +191,7 @@ AEM 提供：
  <tbody>
   <tr>
    <td><strong>转出后的Blueprint</strong></td>
-   <td><strong>转出后的Live Copy</strong><br /> <br /> <br /> </td>
+   <td>转出后的<strong>Live Copy</strong><br /> <br /> <br /> </td>
    <td><strong>转出后发布</strong><br /> <br /> </td>
   </tr>
   <tr>

@@ -24,7 +24,7 @@ ht-degree: 3%
 >
 >AEM功能板是按用户创建的，因此用户只能访问自己的功能板。
 >
->但是， [功能板模板](#creating-a-dashboard-template) 可用于共享通用配置和功能板布局。
+>但是，[仪表板模板](#creating-a-dashboard-template)可用于共享通用配置和仪表板布局。
 
 ![chlimage_1-22](assets/chlimage_1-22.jpeg)
 
@@ -32,30 +32,30 @@ ht-degree: 3%
 
 ### 创建功能板 {#creating-a-dashboard}
 
-1. 在 **工具** 部分，单击 **配置控制台**.
-1. 在树中，双击 **仪表板**.
-1. 单击 **新建仪表板**.
-1. 键入 **标题** （例如，“我的仪表板”）和 **名称**.
+1. 在&#x200B;**工具**&#x200B;部分中，单击&#x200B;**配置控制台**。
+1. 在树中，双击&#x200B;**仪表板**。
+1. 单击&#x200B;**新仪表板**。
+1. 键入&#x200B;**Title** （例如，我的仪表板）和&#x200B;**Name**。
 1. 单击&#x200B;**创建**。
 
 ### 克隆功能板 {#cloning-a-dashboard}
 
 您可能希望具有多个功能板，以便从不同视图快速查看有关您的内容的信息。 为了帮助您创建新功能板，AEM提供了一个克隆功能，您可以使用该功能复制现有功能板。 要克隆功能板，请按照以下步骤操作：
 
-1. 在 **工具** 部分，单击 **配置控制台**.
+1. 在&#x200B;**工具**&#x200B;部分中，单击&#x200B;**配置控制台**。
 
-1. 在树中，单击 **仪表板**.
+1. 在树中，单击&#x200B;**仪表板**。
 1. 单击要克隆的功能板。
 
-1. 单击 **克隆**.
+1. 单击&#x200B;**克隆**。
 
-1. 键入 **名称** 的新仪表板的。
+1. 键入新仪表板的&#x200B;**Name**。
 
 ### 删除功能板 {#removing-a-dashboard}
 
-1. 在 **工具** 部分，单击 **配置控制台**.
+1. 在&#x200B;**工具**&#x200B;部分中，单击&#x200B;**配置控制台**。
 
-1. 在树中，单击 **仪表板**.
+1. 在树中，单击&#x200B;**仪表板**。
 1. 单击要删除的仪表板。
 
 1. 单击&#x200B;**删除**。
@@ -66,44 +66,44 @@ ht-degree: 3%
 
 ### 概述 {#overview}
 
-功能板组件只是常规组件 [AEM组件](/help/sites-developing/developing-components-samples.md). 本节介绍AEM附带的报表组件。
+仪表板组件只是常规的[AEM组件](/help/sites-developing/developing-components-samples.md)。 本节介绍AEM附带的报表组件。
 
 ### 网站分析报表组件 {#web-analytics-reporting-components}
 
-AEM附带一组组件，这些组件呈现您的多个指标 [SiteCatalyst](/help/sites-administering/adobeanalytics.md) 数据。 这些组件在Sidekick中列在 **仪表板** 部分。
+AEM附带一组组件，这些组件呈现[SiteCatalyst](/help/sites-administering/adobeanalytics.md)数据的多个指标。 这些组件在Sidekick中的&#x200B;**仪表板**&#x200B;部分下列出。
 
 每个报表组件至少提供三个选项卡：
 
 * **基本**：包含主配置。
 
-* **报告：** 包含每个报表的特定配置。
+* **报告**&#x200B;包含每个报告的特定配置。
 * **样式**：包含样式配置，如图表大小和边距。
 
 报表组件使用默认配置进行初始化，可帮助您快速设置功能板。
 
 #### 基本配置 {#basic-configuration}
 
-此 **基本** 选项卡提供对以下配置项的访问：
+**基本**&#x200B;选项卡提供对以下配置项的访问：
 
-**标题** 仪表板上显示的标题。
+**标题**&#x200B;仪表板上显示的标题。
 
-**请求类型** 请求数据的方式。
+**请求类型**&#x200B;请求数据的方式。
 
-**SiteCatalyst配置（可选）** 要用于连接到SiteCatalyst的配置。 如果未提供，则假定已在功能板页面（通过页面属性）上配置配置。
+**SiteCatalyst配置（可选）**&#x200B;要用于连接到SiteCatalyst的配置。 如果未提供，则假定已在功能板页面（通过页面属性）上配置配置。
 
-**报表包ID（可选）** 要用于生成图形的SiteCatalyst报表包。
+**报表包ID（可选）**&#x200B;要用于生成图形的SiteCatalyst报表包。
 
 #### 报告配置 {#report-configuration}
 
-要显示Web统计信息，您需要定义要收集的数据的日期范围。 此 **报表** 选项卡提供了两个字段来定义该范围。
+要显示Web统计信息，您需要定义要收集的数据的日期范围。 **报表**&#x200B;选项卡提供了两个字段来定义该范围。
 
 >[!NOTE]
 >
 >设置较大的日期范围可能会降低仪表板的响应性。
 
-**起始日期** 从中获取数据的绝对或相对日期。
+**起始日期**&#x200B;从中获取数据的绝对或相对日期。
 
-**结束日期** 获取数据的绝对或相对日期。
+**截止日期**&#x200B;获取数据的绝对或相对日期。
 
 每个组件还会定义特定的设置。
 
@@ -113,27 +113,27 @@ AEM附带一组组件，这些组件呈现您的多个指标 [SiteCatalyst](/hel
 
 **日期粒度** X轴的时间单位（例如，天、小时）。
 
-**量度** 要显示的事件列表。
+**量度**&#x200B;要显示的事件列表。
 
-**元素** 用于划分图形中量度数据的元素列表。
+**元素**&#x200B;划分图形中量度数据的元素列表。
 
 #### 排名列表报表 {#ranked-list-report}
 
 ![chlimage_1-27](assets/chlimage_1-27a.png)
 
-**元素** 在图形中划分量度数据的元素。
+**元素**&#x200B;在图形中划分量度数据的元素。
 
-**量度** 要显示的事件。
+**量度**&#x200B;要显示的事件。
 
-**不适用。 排名最前的项目** 报表显示的项目数。
+**否。 排名最前的项目**&#x200B;报告显示的项目数。
 
 #### 排名报表 {#ranked-report}
 
 ![chlimage_1-28](assets/chlimage_1-28a.png)
 
-**量度** 要显示的事件。
+**量度**&#x200B;要显示的事件。
 
-**元素** 在图形中划分量度数据的元素。
+**元素**&#x200B;在图形中划分量度数据的元素。
 
 #### 顶级网站区域报表 {#top-site-section-report}
 
@@ -141,7 +141,7 @@ AEM附带一组组件，这些组件呈现您的多个指标 [SiteCatalyst](/hel
 
 ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-**不适用。 排名最前的项目** 报告中显示的节数。
+**否。 排名最前的项目**&#x200B;报表中显示的节数。
 
 #### 趋势报表 {#trended-report}
 
@@ -149,23 +149,23 @@ AEM附带一组组件，这些组件呈现您的多个指标 [SiteCatalyst](/hel
 
 **日期粒度** X轴的时间单位（例如，天、小时）。
 
-**量度** 要显示的事件。
+**量度**&#x200B;要显示的事件。
 
-**元素** 在图形中划分量度数据的元素。
+**元素**&#x200B;在图形中划分量度数据的元素。
 
 ## 扩展功能板 {#extending-dashboard}
 
 ### 概述 {#overview-1}
 
-功能板是普通页面( `cq:Page`)，因此可以使用任何组件来组装功能板。
+仪表板是普通页面(`cq:Page`)，因此任何组件都可以用于组装仪表板。
 
-有一个默认的组件组 `Dashboard` 包含默认在模板上启用的analytics报表组件。
+有一个默认组件组`Dashboard`，其中包含模板上默认启用的Analytics报表组件。
 
 ### 创建功能板模板 {#creating-a-dashboard-template}
 
 模板定义新功能板的默认内容。 您可以使用多个模板来创建不同类型的功能板。
 
-功能板模板与其他页面模板一样创建，只是它们存储在下面 `/libs/cq/dashboards/templates/`. 请参阅 [正在创建Contentpage模板](/help/sites-developing/website.md#creating-the-contentpage-template) 部分。
+功能板模板与其他页面模板一样创建，只是它们存储在`/libs/cq/dashboards/templates/`下。 请参阅[创建Contentpage模板](/help/sites-developing/website.md#creating-the-contentpage-template)部分。
 
 >[!NOTE]
 >
@@ -177,17 +177,17 @@ AEM附带一组组件，这些组件呈现您的多个指标 [SiteCatalyst](/hel
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-主要创作组件存储在存储库中的 `/apps/geometrixx-outdoors/components/reporting` 并由：
+顶级创作组件存储在`/apps/geometrixx-outdoors/components/reporting`的存储库中，由：
 
-1. a `jsp` 读取jcr数据并定义 `html` 占位符。
+1. 读取jcr数据并定义`html`占位符的`jsp`文件。
 
-1. 包含客户端库的客户端库 `js` 文件用于获取和排序数据，然后填充 `html` 占位符。
+1. 客户端库，其中包含一个`js`文件，该文件用于提取和排序数据，然后填充`html`占位符。
 
 ![chlimage_1-32](assets/chlimage_1-32a.png)
 
-以下JavaScript文件是在 `geout.reporting.topauthors` [客户端库](/help/sites-developing/clientlibs.md) 作为组件本身的子项。
+以下JavaScript文件在`geout.reporting.topauthors` [客户端库](/help/sites-developing/clientlibs.md)中定义为组件本身的子项。
 
-此 [Querybuilder](/help/sites-developing/querybuilder-api.md) 用于查询要读取的存储库 `cq:AuditEvent` 节点。 查询结果是JSON对象，将从该对象中提取作者贡献。
+[QueryBuilder](/help/sites-developing/querybuilder-api.md)用于查询存储库以读取`cq:AuditEvent`节点。 查询结果是JSON对象，将从该对象中提取作者贡献。
 
 #### top_authors.js {#top-authors-js}
 
@@ -234,7 +234,7 @@ $.ajax({
 });
 ```
 
-此 `JSP` 包括两者 `global.jsp` 和 `clientlib`.
+`JSP`包括`global.jsp`和`clientlib`。
 
 #### top_authors.jsp {#top-authors-jsp}
 

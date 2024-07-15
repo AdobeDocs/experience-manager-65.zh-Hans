@@ -64,7 +64,7 @@ ht-degree: 1%
 
 ## CRX第三方库概述 {#overview-of-crx-rd-party-libraries}
 
-下表列出了CRX中使用的第三方库，以及涵盖这些库的许可证、版权声明或免责声明：
+下表列出了CRX中使用的第三方库，以及涵盖了这些库的许可证、版权声明或免责声明：
 
 <table>
  <colgroup>

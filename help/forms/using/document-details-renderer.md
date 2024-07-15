@@ -30,21 +30,21 @@ ht-degree: 0%
 
 ## PDF forms {#pdf-forms}
 
-PDF forms呈现方式 `PdfTaskForm View`.
+PDF forms由`PdfTaskForm View`呈现。
 
-当XDP表单呈现为PDF时， `FormBridge` JavaScript™由FormsAugmenter服务添加。 此JavaScript™(在PDF表单内)有助于执行表单提交、表单保存或离线表单等操作。
+将XDP表单渲染为PDF时，FormsAugmenter服务会添加`FormBridge`JavaScript™。 此JavaScript™(在PDF表单内)有助于执行表单提交、表单保存或离线表单等操作。
 
-在AEM Forms工作区中，PDFTaskForm视图与 `FormBridge`JavaScript，通过位于以下位置的中间HTML `/lc/libs/ws/libs/ws/pdf.html`. 其流程为：
+在AEM Forms工作区中，PDFTaskForm视图通过位于`/lc/libs/ws/libs/ws/pdf.html`的中间HTML与`FormBridge`JavaScript进行通信。 其流程为：
 
 **PDFTaskForm视图 — pdf.html**
 
-通信使用 `window.postMessage` / `window.attachEvent('message')`
+使用`window.postMessage` / `window.attachEvent('message')`进行通信
 
 此方法是父帧和iframe之间的标准通信方式。 在添加新事件侦听器之前，将删除以前打开的PDF forms中的现有事件侦听器。 此清除还会考虑在任务详细信息视图中的表单选项卡和历史记录选项卡之间进行切换。
 
-**pdf.html - `FormBridge`渲染PDF中的JavaScript**
+在渲染的PDF中&#x200B;**pdf.html - `FormBridge`JavaScript**
 
-通信使用 `pdfObject.postMessage` / `pdfObject.messageHandler`
+使用`pdfObject.postMessage` / `pdfObject.messageHandler`进行通信
 
 此方法是HTML与PDFJavaScript进行通信的标准方式。 PdfTaskForm视图还会处理平面PDF并将其呈现。
 
@@ -56,9 +56,9 @@ PDF forms呈现方式 `PdfTaskForm View`.
 
 新的HTML表单由NewHTMLTaskForm视图渲染。
 
-当使用在CRX上部署的移动表单包将XDP表单呈现为HTML时，它还会添加其他 `FormBridge`表单的JavaScript，这会公开不同的表单数据保存和提交方法。
+当使用部署在CRX上的移动表单包以HTML形式呈现XDP表单时，它还会向表单添加其他`FormBridge`JavaScript，这会公开不同的保存和提交表单数据方法。
 
-此JavaScript与上述PDF forms中引用的不同，但其用途类似。
+此JavaScript与上述PDF forms中提到的版本不同，但其用途相似。
 
 >[!NOTE]
 >
@@ -68,15 +68,15 @@ PDF forms呈现方式 `PdfTaskForm View`.
 
 Flex Forms由SwfTaskForm渲染，参考线由HtmlTaskForm视图渲染。
 
-在AEM Forms Workspace中，这些视图使用位于以下位置的中间SWF与构成Flex®表单/指南的实际SWF进行通信 `/lc/libs/ws/libs/ws/WSNextAdapter.swf`
+在AEM Forms工作区中，这些视图使用位于`/lc/libs/ws/libs/ws/WSNextAdapter.swf`的中间SWF与构成Flex®表单/指南的实际SWF进行通信
 
-通信是通过以下方式进行的 `swfObject.postMessage` / `window.flexMessageHandler`.
+使用`swfObject.postMessage` / `window.flexMessageHandler`进行通信。
 
-此协议由 `WsNextAdapter.swf`. 现有 `flexMessageHandlers`在窗口对象上，会先从以前打开的SWF表单中删除表单，然后再添加新表单。 该逻辑还会考虑在任务详细信息视图中的表单选项卡和历史记录选项卡之间进行切换。 此 `WsNextAdapter.swf` 用于执行各种表单操作，如保存或提交。
+此协议由`WsNextAdapter.swf`定义。 在添加新窗口对象之前，将删除以前打开的SWF表单中的现有`flexMessageHandlers`。 该逻辑还会考虑在任务详细信息视图中的表单选项卡和历史记录选项卡之间进行切换。 `WsNextAdapter.swf`用于执行各种表单操作，如保存或提交。
 
 >[!NOTE]
 >
->建议不要修改 `WSNextAdapter.swf` 或SwfTaskForm / HtmlTaskForm视图的内容。
+>建议不要修改`WSNextAdapter.swf`或SwfTaskForm / HtmlTaskForm视图的内容。
 
 ## 第三方应用程序（例如，通信管理） {#third-party-applications-for-example-correspondence-management}
 
@@ -84,14 +84,14 @@ Flex Forms由SwfTaskForm渲染，参考线由HtmlTaskForm视图渲染。
 
 **第三方应用程序到AEM Forms工作区通信**
 
-AEM Forms工作区侦听 `window.global.postMessage([Message],[Payload])`
+AEM Forms工作区监听`window.global.postMessage([Message],[Payload])`
 
-[消息] 可以是指定为 `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`在 `runtimeMap`. 第三方应用程序必须使用此界面来根据需要通知AEM Forms工作区。 必须使用此界面，因为AEM Forms工作区必须知道在提交任务时，它才能清除任务窗口。
+[消息]可以是指定为`SubmitMessage`的字符串| `CancelMessage`| `ErrorMessage`| `runtimeMap`中的`actionEnabledMessage`。 第三方应用程序必须使用此界面来根据需要通知AEM Forms工作区。 必须使用此界面，因为AEM Forms工作区必须知道在提交任务时，它才能清除任务窗口。
 
 **AEM Forms工作区到第三方应用程序通信**
 
-如果AEM Forms工作区的直接操作按钮可见，则会调用 `window.[External-App-Name].getMessage([Action])`，其中 `[Action]` 是从 `routeActionMap`. 第三方应用程序必须侦听此界面，然后通过通知AEM Forms工作区 `postMessage ()` API。
+如果AEM Forms工作区的直接操作按钮可见，则它会调用`window.[External-App-Name].getMessage([Action])`，其中从`routeActionMap`读取`[Action]`。 第三方应用程序必须侦听此接口，然后通过`postMessage ()` API通知AEM Forms工作区。
 
-例如，Flex应用程序可以定义 `ExternalInterface.addCallback('getMessage', listener)` 以支持此通信。 如果第三方应用程序希望通过自己的按钮处理表单提交，则应指定 `hideDirectActions = true() in the runtimeMap` 您可以跳过此侦听器。 因此，此结构是可选的。
+例如，Flex应用程序可以定义`ExternalInterface.addCallback('getMessage', listener)`来支持此通信。 如果第三方应用程序希望通过自己的按钮处理表单提交，则您应该指定`hideDirectActions = true() in the runtimeMap`，并且可以跳过此侦听器。 因此，此结构是可选的。
 
-有关与通信管理相关的第三方应用程序集成的更多信息，请参阅 [在AEM Forms工作区中集成通信管理](/help/forms/using/integrating-correspondence-management-html-workspace.md).
+您可以在[在AEM Forms工作区中集成通信管理](/help/forms/using/integrating-correspondence-management-html-workspace.md)中阅读有关通信管理的第三方应用程序集成的更多信息。

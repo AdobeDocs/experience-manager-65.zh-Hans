@@ -30,7 +30,7 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
 
 -->
 
-以下是JEE可计费API列表。 查找列表 [在OSGi上为AEM Forms设置可记帐API](/help/forms/using/transaction-reports-billable-apis.md).
+以下是JEE可计费API列表。 在OSGi](/help/forms/using/transaction-reports-billable-apis.md)上查找AEM Forms的[可记帐API列表。
 
 ## 可记帐文档服务API {#billable-document-services-apis}
 
@@ -46,47 +46,47 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
    <tr>
    <td><a>CreatePDF</a></td>
    <td>按照支持的文件类型创建Adobe PDF。</td>
-   <td>转化<br /> </td>
+   <td>转换<br /> </td>
   </tr>
   <tr>
    <td><a>CreatePDF3</a></td>
    <td>按照支持的文件类型创建Adobe PDF。 </td>
-   <td>转化<br /> </td>
+   <td>转换<br /> </td>
   </tr>
   <tr>
    <td><a> HtmlToPDF</a></td>
    <td>将HTML文件转换为Adobe PDF。 </td>
-   <td>转化<br /> </td>
+   <td>转换<br /> </td>
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
    <td>将PDF导出到支持的文件类型。 </td>
-   <td>转化<br /> </td>
+   <td>转换<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportPDF2</a></td>
+   <td><a>EXPORTPDF2</a></td>
    <td><p>将PDF导出到支持的文件类型。</p> </td>
-   <td>转化<br /> </td>
+   <td>转换<br /> </td>
   </tr>
   <tr>
-   <td><a>ExportPDF3</a></td>
+   <td><a>EXPORTPDF3</a></td>
    <td>将PDF导出到支持的文件类型。</td>
-   <td>转化<br /> </td>
+   <td>转换<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlFileToPDF</a></td>
    <td>将HTML文件转换为PDF。</td>
-   <td>转化<br /> </td>
+   <td>转换<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
    <td>将HTML文件转换为PDF。</td>
-   <td>转化<br /> </td>
+   <td>转换<br /> </td>
   </tr>
   <tr>
    <td><a>优化PDF</a></td>
    <td>优化PDF以通过去除不必要的元数据而减小文件大小，同时不影响质量。</td>
-   <td>转化<br /> </td>
+   <td>转换<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -181,12 +181,12 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
   </tr>
   <tr>
    <td><a>generatePrintedOutput</a></td>
-   <td>将XDP和PDF文档转换为PostScript (PS)、Printer Command Language (PCL)和ZPL文件格式。 </td>
+   <td>将XDP和PDF文档转换为PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
    <td>已渲染的文档</td>
   </tr>
   <tr>
    <td><a>generatePrintedOutput2</a></td>
-   <td>将XDP和PDF文档转换为PostScript (PS)、Printer Command Language (PCL)和ZPL文件格式。 </td>
+   <td>将XDP和PDF文档转换为PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
    <td>已渲染的文档</td>
   </tr>
   <tr>
@@ -240,7 +240,7 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
   </tr>
   <tr>
    <td><a>toPS2</a></td>
-   <td>使用选项规范中指定的选项将FlatPDF文件转换为PostScript格式。</td>
+   <td>使用选项规范中指定的选项将平面PDF文件转换为PostScript格式。</td>
    <td>文档转换</td>
   </tr>
   <tr>
@@ -306,14 +306,14 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
 </table>
 
 当您执行以下一个或多个操作时，调用API的使用情况计为事务：
-1. 从非PDF格式转换为PDF格式。 例如，从XDP格式到PDF格式的转换。<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
+1. 从非PDF格式转换为PDF格式。 例如，从XDP格式转换为PDF格式。<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. 从PDF格式转换为PDF/A格式。
 1. 从PDF格式转换为非PDF格式。 示例包括从PDF到图像的转换或从PDF到文本的转换。
 
 >[!NOTE]
 >
->* 汇编器服务的调用API可以在内部调用另一个服务的可计费API，具体取决于输入。 所以， `invoke API` 可计为无、单个或多个交易。 计算的事务数取决于输入和调用的内部API。
->* 使用汇编程序服务生成的单个PDF文档 `invoke` 和 `invokeDDX`，可计为无、单个或多个交易。 计算事务处理的数量取决于提供的 <!--DDX--> 代码。
+>* 汇编器服务的调用API可以在内部调用另一个服务的可计费API，具体取决于输入。 因此，`invoke API`可以计为无、单个或多个事务。 计算的事务数取决于输入和调用的内部API。
+>* 使用汇编程序服务（如`invoke`和`invokeDDX`）生成的单个PDF文档可以计为无、单个或多个事务。 计数事务数取决于提供的<!--DDX-->代码。
 
 <!--
 ### PDF Utility Service  {#pdf-utility-service}

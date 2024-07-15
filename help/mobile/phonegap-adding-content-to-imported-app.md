@@ -25,7 +25,7 @@ ht-degree: 0%
 
 您已将混合PhoneGap或Cordova应用程序导入AEM，现在该怎么办？ 您可能希望向应用程序添加可创作内容。 要完成此任务，您需要大致了解AEM应用程序的结构。 AEM中的应用程序通常分为两个部分。 “shell”和“content”。 “shell”包含应用程序的静态部分；例如PhoneGap配置文件、应用程序框架和导航控件。 导入的归档文件的内容作为Shell的一部分存储。 在本文档的上下文中，shell是由应用程序开发人员构建的混合PhoneGap应用程序的所有非AEM创作内容。
 
-内容是指由AEM开发人员构建的、在AEM中创作的组件、模板和创作页面。 内容可归类为开发人员内容或创作内容。 组件、设计和页面模板被视为开发内容，因为它们由开发人员构建。 创作内容是使用组件和模板构建的页面。 这些页面通常由设计人员或营销人员完成。
+内容是指由AEM开发人员构建的、在AEM中创作的组件、模板和创作页面。 内容可归类为开发人员内容或创作内容。 组件、设计和页面模板被视为开发内容，因为它们由开发人员构建。 创作内容是使用组件和模板构建的页面。 这些页面通常由Designer或营销人员完成。
 
 将创作AEM页面添加到混合应用程序需要应用程序开发人员和AEM开发人员之间的协调。 在要添加创作的内容的应用程序中的任何位置，应用程序开发人员都必须采用Experience Manager可叠加的结构组织这些页面。 应用程序开发人员必须能够向Experience Manager开发人员提供Experience Manager创作内容的添加路径。 然后，在混合应用程序中提供一个占位符页面，该页面将在Experience Manager开发人员创作页面内容后替换。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-在本例中，将创作应用程序的欢迎页面。 查看源 [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). 请注意，应用程序开发人员已经定义了欢迎页面，并为应用程序呈现的页面提供了一个模板。 应用程序开发人员和AEM开发人员必须在此页面上进行协调。 混合引用应用程序中欢迎页面模板的路径被定义为“content/mobileapps/hybrid-reference-app/en/welcome.template.html”。 此路径很重要，因为AEM开发人员将使用相同的路径在AEM存储库中创作其欢迎页面。
+在本例中，将创作应用程序的欢迎页面。 正在查看源[https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75)。 请注意，应用程序开发人员已经定义了欢迎页面，并为应用程序呈现的页面提供了一个模板。 应用程序开发人员和AEM开发人员必须在此页面上进行协调。 混合引用应用程序中欢迎页面模板的路径被定义为“content/mobileapps/hybrid-reference-app/en/welcome.template.html”。 此路径很重要，因为AEM开发人员将使用相同的路径在AEM存储库中创作其欢迎页面。
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -41,7 +41,7 @@ ht-degree: 0%
 
 ![chlimage_1-78](assets/chlimage_1-78.png)
 
-当您从应用程序仪表板“下载源”时，将运行这些ContentSync脚本以汇编混合应用程序的存档。
+当您从应用程序功能板“下载Source”时，将运行这些ContentSync脚本以汇编混合应用程序的存档。
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 

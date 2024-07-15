@@ -25,7 +25,7 @@ ht-degree: 1%
 
 AEM提供了多种工具，使您能够为移动设备开发站点并将您的内容集成到移动设备应用程序中。
 
-本页应与 [面向作者的移动页面](/help/sites-authoring/mobile.md).
+此页面应与作者的[移动设备页面](/help/sites-authoring/mobile.md)一起阅读。
 
 ## 开发移动网站 {#developing-web-sites-for-mobile}
 
@@ -38,4 +38,4 @@ AEM提供了多种工具，使您能够为移动设备开发站点并将您的�
 
 ## 开发移动应用程序 {#developing-mobile-apps}
 
-开发使用AEM页面作为应用程序界面的移动应用程序。 AEM与PhoneGap集成，因此您可以使用AEM页面轻松创建应用程序。 内容同步允许您创建页面的版本化存档，以便与应用程序捆绑在一起。 要了解有关内容同步的详细信息，请单击 [此处](/help/mobile/phonegap-contentsync.md).
+开发使用AEM页面作为应用程序界面的移动应用程序。 AEM与PhoneGap集成，因此您可以使用AEM页面轻松创建应用程序。 内容同步允许您创建页面的版本化存档，以便与应用程序捆绑在一起。 若要了解有关内容同步的详细信息，请单击[此处](/help/mobile/phonegap-contentsync.md)。

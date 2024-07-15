@@ -35,7 +35,7 @@ ht-degree: 81%
 * 为多个根目录分支创建启动项。虽然您可以为整个站点创建启动项（并从中做出更改），但由于需要复制整个站点，因此这可能不切实际。当涉及数百甚至数千个页面时，系统要求和性能会受到复制操作以及后续提升任务所需的比较操作的影响。
 * 嵌套启动项（一个启动项嵌套在另一个启动项中），以便能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
-本节介绍如何创建、编辑和提升(如有必要 [删除](/help/sites-authoring/launches-creating.md#deleting-a-launch))从站点控制台中启动页面，或 [启动项控制台](#the-launches-console)：
+本节介绍如何从站点控制台或[启动项控制台](#the-launches-console)中创建、编辑和提升(如有必要，还介绍删除[1}启动项页面：](/help/sites-authoring/launches-creating.md#deleting-a-launch)
 
 * [创建启动项](/help/sites-authoring/launches-creating.md)
 * [编辑启动项](/help/sites-authoring/launches-editing.md)
@@ -114,15 +114,15 @@ ht-degree: 81%
 
 * **工具**&#x200B;控制台：**工具**、**站点**、**启动项**。
 
-* 或直接使用 [https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
+* 或直接使用[https://localhost:4502/libs/launches/content/launches.html](https://localhost:4502/libs/launches/content/launches.html)
 
 ## “引用”（Sites 控制台）中的启动项 {#launches-in-references-sites-console}
 
 1. 在&#x200B;**Sites**&#x200B;控制台中，导航到启动项的源。
 1. 打开&#x200B;**引用**&#x200B;边栏并选择源页面。
-1. 选择 **启动次数**，则会列出现有的启动项：
+1. 选择&#x200B;**启动项**，将列出现有的启动项：
 
-   ![“引用”选项卡 — 启动项](assets/screen-shot_2019-03-05at121901-1.png)
+   ![引用选项卡 — 启动项](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. 单击相应的启动项，此时将显示可执行的操作列表：
 

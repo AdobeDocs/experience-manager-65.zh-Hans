@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 删除Geometrixx站点{#removing-the-geometrixx-sites}
 
-AEM随附了一组示例Geometrixx网站。 您可以通过以下方式删除此示例内容 **包管理器**.
+AEM随附了一组示例Geometrixx网站。 您可以通过&#x200B;**包管理器**&#x200B;删除此示例内容。
 
 单独的geometrixx相关包包括：
 
@@ -28,13 +28,13 @@ AEM随附了一组示例Geometrixx网站。 您可以通过以下方式删除此
 * `cq-geometrixx-commons-pkg-<version>.zip`
 * `cq-geometrixx-media-pkg-<version>.zip`
 
-要删除单个包，只需单击 **卸载** 在那个包上。
+要删除单个包，只需单击该包上的&#x200B;**卸载**。
 
 还有一个超级包：
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-此包包含上述所有单个包。 要一次删除所有与geometrixx相关的内容，请单击 **卸载** 在此包上。 超级包将进入未安装状态，并且所有单个包都将从“包管理器”视图中消失。
+此包包含上述所有单个包。 若要一次删除所有与geometrixx相关的内容，请单击此包上的&#x200B;**卸载**。 超级包将进入未安装状态，并且所有单个包都将从“包管理器”视图中消失。
 
 您现在拥有一个“空”AEM实例，没有任何演示站点。
 

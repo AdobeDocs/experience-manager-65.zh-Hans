@@ -22,12 +22,12 @@ ht-degree: 0%
 
 ## 添加用户名和密码凭据 {#add-a-user-name-and-password-credential}
 
-1. 在管理控制台中，单击 **[!UICONTROL “设置”>“信任存储区管理”>“用户和密码凭据”]** 然后单击 **[!UICONTROL 添加]**.
-1. 在 **[!UICONTROL 配置文件名称]** 框中，键入凭据的名称。
-1. 在 **[!UICONTROL 用户名]** 框中，键入唯一的用户名。
-1. 在 **[!UICONTROL 密码]** 框中，键入用户的密码，然后单击 **[!UICONTROL 确定]**.
+1. 在管理控制台中，单击&#x200B;**[!UICONTROL 设置>信任存储区管理>用户和密码凭据]**，然后单击&#x200B;**[!UICONTROL 添加]**。
+1. 在&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;框中，键入凭据的名称。
+1. 在&#x200B;**[!UICONTROL 用户名]**&#x200B;框中，键入唯一的用户名。
+1. 在&#x200B;**[!UICONTROL 密码]**&#x200B;框中，键入用户的密码，然后单击&#x200B;**[!UICONTROL 确定]**。
 
 ## 删除用户名和密码凭据 {#delete-a-user-name-and-password-credential}
 
-1. 在管理控制台中，单击 **[!UICONTROL 设置>信任存储区管理>用户和密码凭据]**.
-1. 选中要删除的凭据对应的复选框，然后单击 **[!UICONTROL 删除]**，然后单击 **[!UICONTROL 确定]**.
+1. 在管理控制台中，单击&#x200B;**[!UICONTROL 设置>信任存储区管理>用户和密码凭据]**。
+1. 选中要删除的凭据的复选框，单击&#x200B;**[!UICONTROL 删除]**，然后单击&#x200B;**[!UICONTROL 确定]**。

@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您为Forms指定了自定义XCI文件，则XCI文件中的嵌入字体选项将覆盖这些设置。 (请参阅 [为Forms配置位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).)
+>如果您为Forms指定了自定义XCI文件，则XCI文件中的嵌入字体选项将覆盖这些设置。 (请参阅[为Forms配置位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)。)
 
-1. 在管理控制台中，单击 **[!UICONTROL 服务> Forms]**.
-1. 下 **[!UICONTROL 字体嵌入设置]**，在 **[!UICONTROL 始终嵌入字体]** 框中，键入要嵌入表单的字体的名称，名称之间用逗号分隔。 您指定的字体仅会嵌入到生成的表单中（如果它们在表单中使用）。 如果在传递到服务的XCI文件中启用了嵌入字体选项，则会忽略此设置，因为在这种情况下，PDF中使用的所有字体始终都会嵌入。
-1. 在 **[!UICONTROL 从不嵌入字体]** 框中，键入不嵌入表单的字体的名称，名称之间用逗号分隔。 您指定的字体不会嵌入到PDF中，即使它们用在生成的PDF中也是如此。 如果在传递到服务的XCI文件中关闭了embed font选项，则会忽略此设置，因为在这种情况下，PDF中使用的字体都不会嵌入。
+1. 在管理控制台中，单击&#x200B;**[!UICONTROL 服务> Forms]**。
+1. 在&#x200B;**[!UICONTROL 字体嵌入设置]**&#x200B;下，在&#x200B;**[!UICONTROL 始终嵌入字体]**&#x200B;框中，键入要嵌入表单的字体名称，并用逗号分隔。 您指定的字体仅会嵌入到生成的表单中（如果它们在表单中使用）。 如果在传递到服务的XCI文件中启用了嵌入字体选项，则会忽略此设置，因为在这种情况下，PDF中使用的所有字体始终都会嵌入。
+1. 在&#x200B;**[!UICONTROL 从不嵌入字体]**&#x200B;框中，键入不嵌入表单的字体名称，并用逗号分隔。 您指定的字体不会嵌入到PDF中，即使它们用在生成的PDF中也是如此。 如果在传递到服务的XCI文件中关闭了embed font选项，则会忽略此设置，因为在这种情况下，PDF中使用的字体都不会嵌入。
 1. 单击&#x200B;**[!UICONTROL 保存]**。

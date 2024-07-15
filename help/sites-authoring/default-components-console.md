@@ -16,7 +16,7 @@ ht-degree: 57%
 
 组件控制台允许您浏览针对实例定义的所有组件，并查看每个组件的关键信息。
 
-可从以下位置访问： **工具>** **常规>** **组件**. 在控制台中，卡片视图和列表视图均可用。 由于组件没有树结构，因此列视图不可用。
+它可以从&#x200B;**工具>** **常规>** **组件**&#x200B;访问。 在控制台中，卡片视图和列表视图均可用。 由于组件没有树结构，因此列视图不可用。
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -41,7 +41,7 @@ ht-degree: 57%
   在“属性”选项卡上，您可以：
 
    * 查看组件的常规属性。
-   * 查看 [图标或缩写](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) 用于组件。
+   * 查看如何为组件定义[图标或缩写](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)。
 
       * 单击图标的源将转到该组件。
 
@@ -67,6 +67,6 @@ ht-degree: 57%
 
 * **文档**
 
-  如果开发人员已提供 [组件的文档](/help/sites-developing/developing-components.md#documenting-your-component)，它将显示在 **文档** 选项卡。 如果没有可用文档， **文档** 选项卡将不显示。
+  如果开发人员提供了组件](/help/sites-developing/developing-components.md#documenting-your-component)的[文档，则该文档将显示在&#x200B;**Documentation**&#x200B;选项卡上。 如果没有可用文档，则不会显示&#x200B;**文档**&#x200B;选项卡。
 
   ![文档](assets/chlimage_1-171.png)

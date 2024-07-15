@@ -22,6 +22,6 @@ ht-degree: 0%
 
 **JBoss：** https://www.jboss.com/products/platforms/application
 
-**oracleWebLogic：** www.oracle.com/us/products/middleware/application-server/index.html
+**Oracle的WebLogic：** www.oracle.com/us/products/middleware/application-server/index.html
 
 **IBM WebSphere：** www-01.ibm.com/software/websphere/

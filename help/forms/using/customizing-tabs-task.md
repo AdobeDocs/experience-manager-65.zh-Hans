@@ -17,14 +17,14 @@ ht-degree: 0%
 
 # 自定义任务的选项卡 {#customizing-tabs-for-a-task}
 
-您可以自定义的选项卡名称 `Start Process` 中的组件 `Start Process` Uber视图和 `Task Details` 中的组件 `ToDo` Uber视图。
+您可以在`Start Process` Uber视图中自定义`Start Process`组件的选项卡名称，在`ToDo` Uber视图中自定义`Task Details`组件。
 
-1. 请遵循 [AEM Forms工作区自定义的常规步骤](/help/forms/using/generic-steps-html-workspace-customization.md).
-1. 更改的值 `tabname`在 `translation.json` 文件。
+1. 按照[通用步骤自定义AEM Forms工作区](/help/forms/using/generic-steps-html-workspace-customization.md)。
+1. 在`translation.json`文件中更改`tabname`的值。
 
-   例如，更改 `/apps/ws/locales/en-US/translation.json` 英语的译文。
+   例如，将英语的`/apps/ws/locales/en-US/translation.json`更改为以下内容。
 
-   * 对于在启动过程中启动的任务，请使用以下代码片段： `"startprocess" : {}` 封锁。
+   * 对于在启动进程中启动的任务，请使用`"startprocess" : {}`块中的以下代码片段。
 
    ```json
    "tabname" : {
@@ -35,7 +35,7 @@ ht-degree: 0%
            }
    ```
 
-   * 对于待办事项中的任务，使用以下代码片段： `"todo" : {}` 封锁。
+   * 对于待办事项中的任务，请使用`"todo" : {}`块中的以下代码片段。
 
    ```json
    "tabname" : {

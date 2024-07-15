@@ -145,15 +145,15 @@ ht-degree: 11%
    <td><p>映射到自适应表单中的Title属性。</p> </td>
   </tr>
   <tr>
-   <td><p>显示格式<em> （所有字段类型）</em></p> </td>
+   <td><p>displayFormat<em> （所有字段类型）</em></p> </td>
    <td><p>已映射到自适应表单中的显示模式。</p> </td>
   </tr>
   <tr>
-   <td><p>原始值<em> （所有字段类型）</em></p> </td>
+   <td><p>rawValue<em> （所有字段类型）</em></p> </td>
    <td><p>映射到自适应表单中的值属性。</p> </td>
   </tr>
   <tr>
-   <td><p>个项目<em> （列表框、复选框）</em></p> </td>
+   <td><p>项<em> （列表框，复选框）</em></p> </td>
    <td><p>映射到自适应表单中的options属性。 可以使用“选项”表达式覆盖它。</p> </td>
   </tr>
   <tr>
@@ -165,11 +165,11 @@ ht-degree: 11%
    <td><p>映射到自适应表单中的允许多行属性。</p> </td>
   </tr>
   <tr>
-   <td><p>fracDigital<em> （数值字段，小数字段）</em></p> </td>
+   <td><p>fracDigit<em> （数字字段，小数字段）</em></p> </td>
    <td><p>映射到自适应表单中的Frac数字属性。</p> </td>
   </tr>
   <tr>
-   <td><p>leadDigital<em> （数值字段，小数字段）</em></p> </td>
+   <td><p>leadDigital<em> （数字字段，小数字段）</em></p> </td>
    <td><p>映射到自适应表单中的潜在客户数字属性。</p> </td>
   </tr>
   <tr>

@@ -29,18 +29,18 @@ ht-degree: 0%
 
 * 对于AEM功能，您可以看到从AEM创作界面请求了JSON调用
    * 这些调用不应导致HTTP-500错误。
-   * 如果您看到HTTP-500错误，请检查 `error.log` 以了解更多信息。
+   * 如果您看到HTTP-500错误，请查看`error.log`以了解更多信息。
 * 提高AEM中促销活动类的调试级别也有助于排除问题。
 
 ## 如果连接失败 {#when-the-connection-fails}
 
-检查是否已配置 **`aemserver`** Adobe Campaign Classic运算符。
+检查您是否已在Adobe Campaign Classic中配置&#x200B;**`aemserver`**&#x200B;运算符。
 
 ## 如果图像未显示在Adobe Campaign Classic控制台中 {#if-images-do-not-appear-in-the-adobe-campaign-console}
 
-检查HTML源并验证是否可以从客户端计算机打开该URL。 如果URL具有 `localhost:4503` 在其中，更改AEM创作实例上Day CQ Link Externalizer的配置。 使其指向可从Adobe Campaign Classic控制台计算机访问的发布实例。
+检查HTML源并验证是否可以从客户端计算机打开该URL。 如果URL中包含`localhost:4503`，请在AEM创作实例上更改Day CQ Link Externalizer的配置。 使其指向可从Adobe Campaign Classic控制台计算机访问的发布实例。
 
-请参阅 [配置外部化器。](/help/sites-administering/campaignstandard.md#configuring-the-externalizer)
+请参阅[配置外部化器。](/help/sites-administering/campaignstandard.md#configuring-the-externalizer)
 
 ## 如果无法从AEM连接到Adobe Campaign Classic  {#if-you-cannot-connect-from-aem-to-adobe-campaign}
 
@@ -50,24 +50,24 @@ ht-degree: 0%
 
 * `Make sure the DNS alias used to access the server is correct (for example, avoid hard-coded IP addresses). (iRc=16384)`
 
-要解决此问题，请在以下位置更改以下内容： `$CAMPAIGN_HOME/conf/config-<instance-name>.xml`：
+要解决此问题，请在`$CAMPAIGN_HOME/conf/config-<instance-name>.xml`中更改以下内容：
 
 * `<dataStore hosts="*" lang="en_GB">`
 
 ## 如果Adobe Campaign Classic对话框中未显示任何数据 {#if-no-data-displays-in-the-adobe-campaign-dialog}
 
-在Adobe Campaign Classic中，确保没有结尾斜杠(`/`)。
+在Adobe Campaign Classic中，请确保端口号后面没有尾随斜杠(`/`)。
 
-![Adobe Campaign Classic — 确保端口号后面没有尾随斜杠](assets/chlimage_1-149.png)
+![Adobe Campaign Classic — 确保端口号](assets/chlimage_1-149.png)后面没有尾随斜杠
 
 ## 如果收到有关setlocale的警告 {#if-you-get-a-warning-about-your-setlocale}
 
-启动Adobe Campaign Classic的Apache HTTPD服务时，您可能会看到此错误 `Warning: setlocale: LC_CTYPE cannot change locale`
+启动Adobe Campaign Classic的Apache HTTPD服务时，您可能会看到错误`Warning: setlocale: LC_CTYPE cannot change locale`
 
-确保您拥有 `en_CA.ISO-8859-15 locale` 安装在您的Adobe Campaign Classic服务器上。
+确保您的Adobe Campaign Classic服务器上安装了`en_CA.ISO-8859-15 locale`。
 
-* 您可以使用检查是否已安装它 `local -a`.
-* 如果未安装，您可以修补 `/usr/local/neolane/nl6/env.sh` 脚本并将区域设置更改为已安装的区域设置。
+* 您可以使用`local -a`检查它是否已安装。
+* 如果未安装，您可以修补`/usr/local/neolane/nl6/env.sh`脚本并将区域设置更改为已安装的区域设置。
 
 ## 如果在编译脚本“get_nms_amcGetSeedMetaData_jssp”时出错 {#if-you-get-an-error-while-compiling-script-get-nms-amcgetseedmetadata-jssp}
 
@@ -77,25 +77,25 @@ ht-degree: 0%
 
 在Adobe Campaign Classic服务器上使用以下解决方法。
 
-1. 打开文件 `$CAMPAIGN_HOME/datakit/nms/fra/js/amcIntegration.js`
-1. 方法的修改行467 `amcGetSeedMetaData`
-1. 更改 `label : [inclView.@label](mailto:inclView.@label)` 到 `label : String([inclView.@label](mailto:inclView.@label))`
+1. 打开文件`$CAMPAIGN_HOME/datakit/nms/fra/js/amcIntegration.js`
+1. 修改方法`amcGetSeedMetaData`的第467行
+1. 将`label : [inclView.@label](mailto:inclView.@label)`更改为`label : String([inclView.@label](mailto:inclView.@label))`
 1. 保存。
 1. 重新启动服务器。
 
 ## 如果Adobe Campaign Classic在单击“同步”按钮时显示错误 {#if-adobe-campaign-displays-an-error-when-clicking-the-synchronize-button}
 
-单击 **同步** Adobe Campaign Classic按钮时，您可能会看到以下错误。
+单击Adobe Campaign Classic中的&#x200B;**同步**&#x200B;按钮时，您可能会看到以下错误。
 
 * `Error while executing the method 'aemListContent' of service [nms:delivery](https://nmsdelivery/)`
 
-要解决此问题，请确保在中配置了AEM连接URL **外部帐户** Adobe Campaign Classic中的“禁止页面访问”。
+要解决此问题，请确保可以从计算机访问在Adobe Campaign Classic中的&#x200B;**外部帐户**&#x200B;中配置的AEM连接URL。
 
-交换机来源 `localhost` 将URL更改为IP地址通常可以解决此问题。
+从`localhost`切换到URL的IP地址通常可以解决此问题。
 
 ## 如果您收到“无法解析XTK日期+时间”的“未定义”错误 {#if-you-get-a-cannot-parse-xtk-date-time-undefined-error}
 
-单击后 **同步** 在AEM中，您可能会收到一条错误消息，指出页面上的脚本已发生。
+在AEM中单击&#x200B;**同步**&#x200B;后，您可能会收到页面上的脚本已发生的错误。
 
 * `Cannot parse XTK Date+Time 'undefined': not a valid XTK value.`
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 ## 如果与SSL的连接在设置Cloud Service时显示错误 {#if-a-connection-to-ssl-displays-an-error-when-setting-up-the-cloud-service}
 
-如果您在中看到以下内容，请向Adobe Campaign支持团队提交工单 `error.log` AEM的URL。
+如果您在AEM的`error.log`中看到以下内容，请向Adobe Campaign支持团队提交票证。
 
 ```text
 javax.net.ssl.SSLProtocolException: handshake alert:  unrecognized_name
@@ -130,18 +130,18 @@ at sun.security.ssl.AppOutputStream.write(Unknown Source)
 要解决此问题，请执行以下操作：
 
 * 必须将AEM Dispatcher或反向代理配置为将原始协议作为标头传递。
-* 此 **Apache Felix Http服务SSL过滤器** 在AEM的OSGi配置中，必须使用所需的标头设置进行配置。
+* AEM OSGi配置中的&#x200B;**Apache Felix Http服务SSL过滤器**&#x200B;必须使用所需的标头设置进行配置。
    * `https://<host>:<port>/system/console/configMgr`
-   * 请参阅 [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
+   * 请参阅[https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 
 ## 无法在页面属性中选择自定义模板 {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 
-在AEM for Adobe Campaign Classic中创建邮件模板时，必须包含资产 `acMapping` 值为 `mapRecipient` 在 `jcr:content` 节点的链接。 否则，无法在中选择Adobe Campaign Classic模板 **页面属性** AEM的URL。 该字段显示为禁用。
+在AEM for Adobe Campaign Classic中创建邮件模板时，必须在模板的`jcr:content`节点中包含值为`mapRecipient`的属性`acMapping`。 如果不这样做，则无法在AEM的&#x200B;**页面属性**&#x200B;中选择Adobe Campaign Classic模板。 该字段显示为禁用。
 
 ## 如果您在AEM日志中看到错误“com.day.cq.mcm.campaign.servlets.util.ParameterMapper” {#if-you-get-the-error-com-day-cq-mcm-campaign-servlets-util-parametermapper-in-your-logs}
 
-您可能会看到此错误 `com.day.cq.mcm.campaign.servlets.util.ParameterMapper` AEM （使用自定义模板时）日志。
+使用自定义模板时，您可能会在AEM日志中看到错误`com.day.cq.mcm.campaign.servlets.util.ParameterMapper`。
 
-此错误发生于 `acMapping` 属性被设置为值 `recipient.firstName`，则在Adobe Campaign Manager中创建空白值。
+如果将`acMapping`属性设置为`recipient.firstName`以外的值，则在Adobe Campaign管理器中创建空白值，则会出现此错误。
 
-如果出现此错误，请从安装AEM功能包6576 [包共享](/help/sites-administering/package-manager.md#package-share).
+如果出现此错误，请从[包共享](/help/sites-administering/package-manager.md#package-share)安装AEM功能包6576。

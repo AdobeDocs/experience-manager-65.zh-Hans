@@ -33,7 +33,7 @@ ht-degree: 83%
 
 Headless 内容管理系统 (CMS) 包括：
 
-* &quot;*Headless内容管理系统（或headless CMS）是从头开始构建的仅后端内容管理系统(CMS)，它是一个内容存储库，通过API访问内容以在任何设备上显示。*
+* “*Headless内容管理系统（或headless CMS）是从头开始构建的仅后端内容管理系统(CMS)，它是一个内容存储库，通过API访问内容以在任何设备上显示。*
 
   请参阅[维基百科](https://en.wikipedia.org/wiki/Headless_content_management_system)。
 

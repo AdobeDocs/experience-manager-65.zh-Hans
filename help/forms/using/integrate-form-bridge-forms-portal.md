@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 将Form Bridge与HTML5表单的自定义门户集成{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge是一个HTML5 Forms Bridge API，它允许您与表单交互。 有关FormBridge API的参考，请参阅 [FormBridge API参考](/help/forms/using/form-bridge-apis.md).
+FormBridge是一个HTML5 Forms Bridge API，它允许您与表单交互。 有关FormBridge API引用，请参阅[FormBridge API引用](/help/forms/using/form-bridge-apis.md)。
 
 您可以使用FormBridge API从“HTML”页获取或设置表单字段的值并提交表单。 例如，您可以使用API构建类似于向导的体验。
 
@@ -28,11 +28,11 @@ FormBridge是一个HTML5 Forms Bridge API，它允许您与表单交互。 有�
 
 1. **选择配置文件或创建配置文件**
 
-   1. 在CRX DE界面中，导航到： `https://'[server]:[port]'/crx/de`.
+   1. 在CRX DE界面中，导航到： `https://'[server]:[port]'/crx/de`。
    1. 使用管理员凭据登录。
    1. 创建配置文件或选择现有配置文件。
 
-      有关如何创建配置文件的详细信息，请参阅 [创建用户档案](/help/forms/using/custom-profile.md).
+      有关如何创建配置文件的详细信息，请参阅[创建配置文件](/help/forms/using/custom-profile.md)。
 
 1. **修改HTML配置文件**
 
@@ -74,28 +74,28 @@ FormBridge是一个HTML5 Forms Bridge API，它允许您与表单交互。 有�
 
    >[!NOTE]
    >
-   >此 **9号线**，包含用于设计CSS样式和JavaScript文件的其他JSP引用。
+   >**第9**&#x200B;行，包含用于CSS样式和JavaScript文件的附加JSP引用以设计页面。
    >
    >
-   >此 &lt;div id=&quot;rightdiv&quot;> 标记位于 **第18行** 包含XFA表单的HTML片段。
+   >**第18**&#x200B;行上的&lt;div id=&quot;rightdiv&quot;>标记包含XFA表单的HTML片段。
    >
    >
-   页面将设置为两个容器： **左侧** 和 **右**. 正确的容器具有表单。 左侧容器包含两个输入字段和一个外部HTML页的一部分。
+   页面样式为两个容器：**left**&#x200B;和&#x200B;**right**。 正确的容器具有表单。 左侧容器包含两个输入字段和一个外部HTML页的一部分。
    >
    >
    以下屏幕抓图显示了表单在浏览器中的显示方式。
 
    ![门户](assets/portal.jpg)
 
-   左侧是 **HTML页面**. 包含字段的右侧是 **xfa表单**.
+   左侧是&#x200B;**HTML页**&#x200B;的一部分。 包含字段的右侧是&#x200B;**xfa表单**。
 
 1. **从页面访问表单字段**
 
    以下是示例脚本，您可以添加此脚本来设置表单字段中的值。
 
-   例如，如果要设置 **雇员姓名** 使用字段中的值 **名字** 和 **姓氏**，调用 **window.formBridge.setFieldValue** 函数。
+   例如，如果要使用&#x200B;**名字**&#x200B;和&#x200B;**姓氏**&#x200B;字段中的值设置&#x200B;**雇员姓名**，请调用&#x200B;**window.formBridge.setFieldValue**&#x200B;函数。
 
-   同样，您可以通过调用 **window.formBridge.getFieldValue** API。
+   同样，可以通过调用&#x200B;**window.formBridge.getFieldValue** API读取该值。
 
    ```javascript
    $(function() {

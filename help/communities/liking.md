@@ -18,43 +18,43 @@ ht-degree: 1%
 
 # 使用点赞 {#using-liking}
 
-此 `Liking` 组件是一种非常有用的工具，它允许用户表达对特定内容（如论坛中的评论）的意见。 使用 `Liking` 组件中，成员选择心形图标以指示积极的意见。
+`Liking`组件是一个有用的工具，它允许用户表达对特定内容的意见，如论坛中的评论。 使用`Liking`组件时，成员会选择心形图标来指示积极意见。
 
 ## 向页面添加点赞 {#adding-liking-to-a-page}
 
-添加 `Liking` 组件到创作模式下的页面，请使用组件浏览器查找
+要将`Liking`组件添加到创作模式下的页面，请使用组件浏览器来查找
 
 * `Communities / Liking`
 
 并将其拖动到页面上的适当位置，例如用户喜欢的相对于该功能的位置。
 
-有关必要信息，请访问 [社区组件基础知识](basics.md).
+有关必要的信息，请访问[社区组件基础知识](basics.md)。
 
-当 [所需的客户端库](essentials-liking.md#essentials-for-client-side) 包括，这就是 `Liking` 组件出现。
+当包含[所需的客户端库](essentials-liking.md#essentials-for-client-side)时，`Liking`组件的显示方式如下所示。
 
 ![liking-component](assets/liking-component.png)
 
 ## 配置点赞 {#configuring-liking}
 
-选择已放置的 `Liking` 组件，以便您能够访问和选择 `Configure` 图标打开“编辑”对话框。
+选择放置的`Liking`组件，以便您可以访问并选择用于打开“编辑”对话框的`Configure`图标。
 
-![configure-new](assets/configure-new.png)
+![配置 — 新](assets/configure-new.png)
 
-在 **[!UICONTROL 文本和标签]** 选项卡，指定用于记录“赞”的属性。
+在&#x200B;**[!UICONTROL 文本和标签]**&#x200B;选项卡下，指定用于记录赞的属性。
 
-![configure-liking](assets/configure-liking.png)
+![配置链接](assets/configure-liking.png)
 
 * **[!UICONTROL 正面响应标签]**
 
-  (*必填*)肯定响应的属性名称。
+  （*必需*）正响应的属性名称。
 
-* **[!UICONTROL 负面响应标签]**
+* **[!UICONTROL 负响应标签]**
 
-  (*必填*)负面响应的属性名称。
+  （*必需*）负响应的属性名称。
 
-* **[!UICONTROL 标签名称]**
+* **[!UICONTROL 记帐名称]**
 
-  (*必填*)投票组件的此实例的内部可识别属性名称。
+  （*必需*）投票组件的此实例的内部可识别属性名称。
 
 ## 网站访客体验 {#site-visitor-experience}
 
@@ -68,4 +68,4 @@ ht-degree: 1%
 
 ## 附加信息 {#additional-information}
 
-欲知更多信息，请访问 [点赞Essentials](essentials-liking.md) 适用于开发人员的页面。
+更多信息可在[Liking Essentials](essentials-liking.md)页面上找到开发人员。

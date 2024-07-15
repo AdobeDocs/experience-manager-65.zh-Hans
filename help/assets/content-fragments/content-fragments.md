@@ -14,7 +14,7 @@ ht-degree: 70%
 
 # 使用内容片段 {#working-with-content-fragments}
 
-利用Adobe Experience Manager (AEM)，内容片段允许您设计、创建、策划和 [发布独立于页面的内容](/help/sites-authoring/content-fragments.md). 它们允许您准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。
+使用Adobe Experience Manager (AEM)，内容片段允许您设计、创建、策划和[发布独立于页面的内容](/help/sites-authoring/content-fragments.md)。 它们允许您准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。
 
 内容片段包含结构化内容：
 
@@ -39,12 +39,12 @@ ht-degree: 70%
 
 * [为您的实例启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md) – 启用、创建和定义您的模型
-* [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)  — 创建内容片段；然后编辑、发布和引用
+* [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md) — 创建您的内容片段；然后编辑、发布和引用
 * [变体 – 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md) – 创作片段内容并创建主控
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) – 使用片段的 markdown 语法
 * [使用关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md) – 添加关联内容
 * [元数据 – 片段属性](/help/assets/content-fragments/content-fragments-metadata.md) – 查看和编辑片段属性
-* 使用 [内容片段，与GraphQL一起提供内容](/help/assets/content-fragments/content-fragments-graphql.md) 以便在您的应用程序中使用。 要帮助您完成此操作，您可以预览 [JSON输出](/help/assets/content-fragments/content-fragments-json-preview.md).
+* 使用[Content Fragments与GraphQL一起交付内容](/help/assets/content-fragments/content-fragments-graphql.md)以用于您的应用程序。 要帮助您完成此操作，您可以预览[JSON输出](/help/assets/content-fragments/content-fragments-json-preview.md)。
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ ht-degree: 70%
 >
 >**内容片段**&#x200B;和&#x200B;**[体验片段](/help/sites-authoring/experience-fragments.md)**&#x200B;是 AEM 中的两个不同功能：
 >
->* **内容片段** 是可编辑内容，可用于访问结构化数据，包括文本、数字和日期等。 它们是纯内容，具有定义和结构，但无需额外的可视设计和/或布局。
+>* **内容片段**&#x200B;是可编辑内容，可用于访问结构化数据，包括文本、数字和日期等。 它们是纯内容，具有定义和结构，但无需额外的可视设计和/或布局。
 >
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
@@ -128,10 +128,10 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 * 存储为&#x200B;**资源**：
 
-   * 内容片段（及其变体）可以从以下内容创建和维护： **资产** 控制台。
+   * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
-* 用于 [带有内容片段组件的页面编辑器](/help/sites-authoring/content-fragments.md) （引用组件）：
+* 在包含内容片段组件](/help/sites-authoring/content-fragments.md) （引用组件）的[页面编辑器中使用：
 
    * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
@@ -140,7 +140,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 内容片段是一种内容结构，其中：
 
 * 没有布局或设计（在富文本模式下，可以使用某些文本格式）。
-* 有一个或多个 [组成部分](#constituent-parts-of-a-content-fragment).
+* 具有一个或多个[组成部分](#constituent-parts-of-a-content-fragment)。
 * 可以[包含或连接到图像](#fragments-with-visual-assets)。
 * 在页面上引用时，可以使用[中间内容](#in-between-content-when-page-authoring-with-content-fragments)。
 * 独立于投放机制（即页面、渠道）。
@@ -149,11 +149,11 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 
 为了让作者更好地控制其内容，可以将图像添加到内容片段和/或与其集成。
 
-资产可以通过多种方式与内容片段一起使用；各具优势：
+Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 * **插入资源**&#x200B;到片段（混合媒体片段）
 
-   * 是片段的一部分(请参阅 [内容片段的组成部分](#constituent-parts-of-a-content-fragment))。
+   * 是片段的一部分（请参阅[内容片段的组成部分](#constituent-parts-of-a-content-fragment)）。
    * 定义资源的位置。
    * 请参阅[将资源插入片段](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)（在片段编辑器中）以了解更多信息。
 
@@ -201,7 +201,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 嵌入在片段的段落系统中。
    * 可以[在页面上使用/引用片段时](/help/sites-authoring/content-fragments.md)进行格式化。
    * 只能使用片段编辑器在片段中添加、删除或移动到片段中。 无法在页面编辑器中执行这些操作。
-   * 只能使用在片段中添加、删除或移动片段 [片段编辑器中的富文本格式](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+   * 只能在片段编辑器](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)中使用[富文本格式添加、删除或移动片段。
    * 只能添加到多行文本元素（任何片段类型）。
    * 附于前文（段落）。
 
@@ -251,7 +251,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 * **变体**
 
    * 特定于编辑目的的片段文本的演绎版；可以与渠道相关，但不是强制性的，也可以用于临时本地修改。
-   * 创建为的副本 **母版**，但随后可以根据需要进行编辑；变体本身之间存在内容重叠。
+   * 创建为&#x200B;**母版**&#x200B;的副本，但随后可以根据需要进行编辑；变体本身之间存在内容重叠。
    * 可以在片段创作期间定义。
    * 存储在片段中，以帮助避免内容副本的散布。
    * 如果主控内容已更新，则变体可以与主控[同步](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master)。
@@ -263,7 +263,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
 中间内容：
 
 * 处理内容片段时，可在页面编辑器中使用。
-* 是 [在片段流中添加的其他内容](/help/sites-authoring/content-fragments.md#adding-in-between-content) 在页面上使用或引用之后。
+* 是在页面上使用或引用片段](/help/sites-authoring/content-fragments.md#adding-in-between-content)后，在片段流中添加的[其他内容。
 * 可用于[使用内容片段时的页面编辑器](/help/sites-authoring/content-fragments.md)。
 * 中间内容可以添加到任何片段中，其中只有一个元素可见。
 * 关联内容的使用方式，以及相应浏览器中的资源和/或组件。

@@ -28,7 +28,7 @@ ht-degree: 12%
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
-| CIF加载项 | 2021.11.18.00 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
+| CIF加载项 | 2021.11.18.00 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
 | CIF核心组件 | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
 | CIF Venia引用站点 | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
 
@@ -46,7 +46,7 @@ ht-degree: 12%
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
-| CIF加载项 | 2021.10.20.02 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
+| CIF加载项 | 2021.10.20.02 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
 | CIF核心组件 | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
 | CIF Venia引用站点 | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
 
@@ -66,7 +66,7 @@ ht-degree: 12%
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
-| CIF加载项 | 2021.09.27 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| CIF加载项 | 2021.09.27 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
 | CIF核心组件 | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
 | CIF Venia引用站点 | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
 
@@ -78,7 +78,7 @@ ht-degree: 12%
 
 * 改进了产品选取器UI，以提供更好的用户体验、更高的效率并支持复杂的产品目录
 
-  ![新产品选取器](/help/assets/CIF/product-picker.png)
+  ![新的产品选取器](/help/assets/CIF/product-picker.png)
 
 * 在导航组件中遵循“include_in_menu”属性
 
@@ -94,7 +94,7 @@ ht-degree: 12%
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
-| CIF加载项 | 2021.09.02 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
+| CIF加载项 | 2021.09.02 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
 | CIF核心组件 | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
 | CIF Venia引用站点 | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
@@ -102,7 +102,7 @@ ht-degree: 12%
 
 * 新的类别选取器UI，可改善用户体验、提高效率并更好地支持复杂的产品目录
 
-  ![新建类别选取器](/help/assets/CIF/category-picker.png)
+  ![新类别选取器](/help/assets/CIF/category-picker.png)
 
 * 更好地支持CIF核心组件的A11Y
 
@@ -120,7 +120,7 @@ ht-degree: 12%
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
-| CIF加载项 | 2021.07.21 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| CIF加载项 | 2021.07.21 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
 | CIF核心组件 | 2.0.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
 | CIF Venia引用站点 | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
@@ -131,13 +131,13 @@ ht-degree: 12%
    * 创作模式下暂存的产品数据的视觉指示器，用于更好地显示即将发生的更改
    * 内容和商务页面的新Sitemap组件
 
-* 支持 [Adobe Commerce Sensei产品推荐，由Adobe Sensei提供支持](https://business.adobe.com/products/magento/product-recommendations.html) 在AEM Storefront中使用预定义或动态创建的推荐
+* 支持[Adobe Commerce Sensei产品推荐，由AEM Storefront中的Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html)提供支持，使用预定义或动态创建的推荐
 
 ## 发行日期： 2021年6月
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
-| CIF加载项 | 2021.06.18 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| CIF加载项 | 2021.06.18 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
 | CIF核心组件 | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
 | CIF Venia引用站点 | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
 
@@ -154,7 +154,7 @@ ht-degree: 12%
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
-| CIF加载项 | 2021.05.26 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| CIF加载项 | 2021.05.26 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
 | CIF核心组件 | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
 | CIF Venia引用站点 | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
 
@@ -172,7 +172,7 @@ ht-degree: 12%
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
-| CIF加载项 | 2021.04.22 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| CIF加载项 | 2021.04.22 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | CIF核心组件 | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia引用站点 | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -220,7 +220,7 @@ ht-degree: 12%
 
 * 产品体验管理：使用体验片段单独丰富产品目录页面。
 
-* 扩展了产品控制台属性，可显示链接的资源和体验片段，包括快速导航到关联内容的操作。
+* 扩展了产品控制台属性，可显示链接的Assets和体验片段，包括快速导航到关联内容的操作。
 
 ### 改进内容  {#what-is-improved-february}
 
@@ -238,7 +238,7 @@ ht-degree: 12%
 
 ### 新增功能 {#what-is-new-january}
 
-* 产品体验管理：为资源和体验片段新增了“Commerce”属性选项卡。 利用此选项卡，可将资产和体验片段链接到产品和类别。 该选项卡还显示链接商务对象的实时数据以及一个链接，该链接用于在产品控制台中显示详细信息。
+* 产品体验管理：为Assets和体验片段新增了“Commerce”属性选项卡。 利用此选项卡，可将Assets和体验片段链接到产品和类别。 该选项卡还显示链接商务对象的实时数据以及一个链接，该链接用于在产品控制台中显示详细信息。
 
 ### 改进内容  {#what-is-improved-january}
 

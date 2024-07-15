@@ -32,29 +32,29 @@ ht-degree: 0%
 
 配置为在OSGi上与AEM Forms同步的iOS版AEM Forms应用程序仅支持字段级附件。 所有附件的名称都必须是唯一的。 如果多个附件具有相同的名称，则仅保留一个附件，而具有相同名称的所有其他附件都将丢失。 执行以下步骤，防止iOS设备上的用户丢失数据：
 
-1. 在连接的服务器上，导航至 **Adobe Experience Manager >工具>操作> Web控制台**.
-1. 查找并单击 **[!UICONTROL 自适应表单和交互式通信Web渠道配置]**.
-1. 在 [!UICONTROL 自适应表单和交互式通信Web渠道配置] 对话框，启用 **使文件名唯一**.
+1. 在连接的服务器上，导航到&#x200B;**Adobe Experience Manager >工具>操作> Web控制台**。
+1. 查找并单击&#x200B;**[!UICONTROL 自适应表单和交互式通信Web渠道配置]**。
+1. 在[!UICONTROL 自适应表单和交互式通信Web渠道配置]对话框中，启用&#x200B;**使文件名唯一**。
 
-   如果 **使文件名唯一** 设置已禁用，如果用户尝试提交具有多个附件的自适应表单，则会遇到数据丢失问题。
+   如果&#x200B;**将文件名设为唯一**&#x200B;设置被禁用，则当用户尝试提交具有多个附件的自适应表单时，将会丢失数据。
 
 1. 单击&#x200B;**保存**。
 
 ## Workspace用户提交的HTML5表单草稿在门户上不可见 {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-对于在AEM Forms应用程序中启用的HTML5表单，使用 **另存为草稿** HTML渲染配置文件，工作区用户看不到保存的草稿。 要查看由工作区用户在门户上提交的HTML5表单的已保存草稿，请执行以下步骤：
+对于在AEM Forms应用程序中通过&#x200B;**另存为草稿** HTML渲染配置文件启用的HTML5表单，工作区用户看不到保存的草稿。 要查看由工作区用户在门户上提交的HTML5表单的已保存草稿，请执行以下步骤：
 
 1. 打开CRXDE并使用管理员凭据登录。
 
    URL： `https://<server>:<port>/lc/crx/de/index.jsp`
 
-1. 在CRXDE的根路径中，在访问控制下的访问控制列表中，单击 **+**.
-1. 在 **添加新条目** 对话框中，单击“承担者”字段中的“组搜索”按钮。
-1. 在“选择承担者”对话框的“名称”字段中，键入 `PERM_WORKSPACE_USER` 并单击 **Search**.
-1. 选择 `PERM_WORKSPACE_USER` 组，然后单击 **确定**.
-1. 在“添加新条目”对话框中， `PERM_WORKSPACE_USER` 在“承担者”字段中选择“组”。
+1. 在CRXDE的根路径中，在访问控制下的访问控制列表中，单击&#x200B;**+**。
+1. 在&#x200B;**添加新条目**&#x200B;对话框中，单击“主体”字段中的组搜索按钮。
+1. 在“选择主体”对话框的“名称”字段中，键入`PERM_WORKSPACE_USER`并单击&#x200B;**搜索**。
+1. 在“选择主体”对话框中选择`PERM_WORKSPACE_USER`组，然后单击&#x200B;**确定**。
+1. 在“添加新条目”对话框中，在“主体”字段中选择`PERM_WORKSPACE_USER`组。
 
-   启用 `jcr:read` 用户组的权限。
+   为用户组启用`jcr:read`权限。
 
 1. 单击&#x200B;**确定**。
 
@@ -64,13 +64,13 @@ ht-degree: 0%
 
 执行以下步骤来解决问题：
 
-1. 在创作实例中，导航到 **Adobe Experience Manager >工具>配置Workspace App离线服务>立即配置**.
-1. 在 **Workspace App离线服务** 页面，单击 **手动资源缓存**.
+1. 在创作实例中，导航到&#x200B;**Adobe Experience Manager >工具>配置Workspace App离线服务>立即配置**。
+1. 在&#x200B;**Workspace App离线服务**&#x200B;页面中，单击&#x200B;**手动资源缓存**。
 
-   URL： https://&lt;server>：&lt;port>/libs/fd/workspace-offline/content/config.html
+   URL： https://&lt;服务器>：&lt;端口>/libs/fd/workspace-offline/content/config.html
 
-1. 在 **手动资源缓存** 选项卡，单击 **+** 按钮以添加CRX路径。
-1. 在 **添加新资源** 字段，键入/etc.clientlibs/fd/xfaforms/I18N/en_US.js ，然后单击 **添加**.
+1. 在&#x200B;**手动资源缓存**&#x200B;选项卡中，单击&#x200B;**+**&#x200B;按钮以添加CRX路径。
+1. 在&#x200B;**添加新资源**&#x200B;字段中，键入/etc.clientlibs/fd/xfaforms/I18N/en_US.js并单击&#x200B;**添加**。
 1. 单击&#x200B;**保存**。
 
 ## AEM Forms无法在Windows上同步 {#aem-forms-do-not-sync-on-windows}
@@ -81,11 +81,11 @@ ht-degree: 0%
 
 ## 不支持的Gradle版本 {#unsupported-version-of-gradle}
 
-**错误消息：** 该项目正在使用不受支持的Gradle版本。
+**错误消息：**&#x200B;项目正在使用不受支持的Gradle版本。
 
 在Android Studio中构建AEM Forms应用程序时显示错误消息。 出现此问题的原因是系统支持的Gradle版本不受支持。
 
-**分辨率：** 单击 **修复Gradle包装并重新导入项目** 以解决问题。
+**解决方案：**&#x200B;单击&#x200B;**修复Gradle包装并重新导入项目**&#x200B;以解决此问题。
 
 ![gradle_unsupported_version](assets/gradle_unsupported_version.png)
 
@@ -93,14 +93,14 @@ ht-degree: 0%
 
 **错误消息：** Android Gradle插件和Gradle的版本不兼容。
 
-选择时将显示错误消息 **构建APK** 选项来自 **生成** Android Studio用户界面上的菜单。
+当您从Android Studio用户界面的&#x200B;**生成**&#x200B;菜单中选择&#x200B;**生成APK**&#x200B;选项时，将显示错误消息。
 
 ![gradle_plugin_compatibility](assets/gradle_plugin_compatibility.png)
 
-**分辨率：** 打开 **Gradle脚本** > **gradle-wrapper.properties** 文件并编辑 **distributionUrl** 属性。
+**分辨率：**&#x200B;打开&#x200B;**Gradle脚本** > **gradle-wrapper.properties**&#x200B;文件并编辑&#x200B;**distributionUrl**&#x200B;属性。
 
-例如，Android Studio控制台建议将Gradle版本降级为3.5。在中编辑版本 **distributionUrl**&#x200B;之&#x200B;**gradle-wrapper.properties** 文件。
+例如，Android Studio控制台建议将Gradle版本降级为3.5。编辑&#x200B;**的** distributionUrl **中的版本。gradle-wrapper.properties**&#x200B;文件。
 
-选择 **生成** > **构建APK** 再次尝试解决该错误并生成.apk文件。
+再次选择&#x200B;**生成** > **生成APK**&#x200B;以解决错误并生成.apk文件。
 
 ![gradle_wrapper_properties](assets/gradle_wrapper_properties.png)

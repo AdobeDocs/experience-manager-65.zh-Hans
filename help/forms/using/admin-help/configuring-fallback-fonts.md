@@ -24,12 +24,12 @@ ht-degree: 0%
 >
 >回退字体配置也适用于汇编程序服务。
 
-1. 导航到adobe-livecycle-*`[appserver]`*&#x200B;中的.ear文件 *`[aem-forms root]`*/configurationManager/export目录，创建备份副本，然后取消打包原始文件。
+1. 导航到&#x200B;*`[aem-forms root]`*/configurationManager/export目录中的adobe-livecycle-*`[appserver]`*.ear文件，制作备份副本，然后取消打包原始文件。
 1. 找到adobe-fontmanager.jar文件并将其解包。
 1. 找到FontManagerResources.properties文件并在文本编辑器中将其打开。
 1. 根据需要修改“通用”和“后备”字体位置和名称，并保存文件。
 
-   FontManagerResources.properties文件中的字体条目相对于 *`[aem-forms root]`*/fonts目录。 如果指定的字体不是默认的AEM Forms字体，则必须在此目录结构（在现有目录或新创建的目录中）中安装这些字体。
+   FontManagerResources.properties文件中的字体条目相对于&#x200B;*`[aem-forms root]`*/fonts目录。 如果指定的字体不是默认的AEM Forms字体，则必须在此目录结构（在现有目录或新创建的目录中）中安装这些字体。
 
    >[!NOTE]
    >
@@ -44,4 +44,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->请勿使用Configuration Manager重新打包adobe-livecycle-`[appserver]`.ear文件，因为它将使用AEM forms默认值覆盖您的修改。
+>请勿使用Configuration Manager重新打包adobe-livecycle-`[appserver]`.ear文件，因为这将使用AEM表单默认值覆盖您的修改。

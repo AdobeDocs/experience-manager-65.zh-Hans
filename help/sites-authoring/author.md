@@ -58,15 +58,15 @@ AEM为您提供了两个环境：
 
 >[!NOTE]
 >
->AEM也是 [已管理](/help/sites-administering/home.md) （对于大多数任务）来自创作环境。
+>AEM也是来自创作环境的[受管理](/help/sites-administering/home.md)（对于大多数任务）。
 
 #### 发布环境 {#publish-environment}
 
-准备就绪后，AEM站点的内容将发布到 **发布环境**. 在该环境中，根据设计界面的具体观感，目标受众可以使用网站页面。
+准备就绪后，AEM站点的内容将发布到&#x200B;**发布环境**。 在该环境中，根据设计界面的具体观感，目标受众可以使用网站页面。
 
 通常，发布环境位于非军事区内；换句话说，发布环境可用于Internet，但不再受内部网络的完全保护。
 
-当AEM站点为 [社区站点](/help/communities/overview.md)，或包括 [Communities组件](/help/communities/author-communities.md)，登录的站点访客（成员）可以与社区功能进行交互。 例如，他们可以在论坛中发帖、发表评论或关注其他成员。 可以授予成员执行通常仅限于创作环境的活动的权限，例如创建新页面（社区组）、博客文章和审核其他成员的帖子。
+当AEM站点是[社区站点](/help/communities/overview.md)或包含[社区组件](/help/communities/author-communities.md)时，登录的站点访客（成员）可能会与社区功能进行交互。 例如，他们可以在论坛中发帖、发表评论或关注其他成员。 可以授予成员执行通常仅限于创作环境的活动的权限，例如创建新页面（社区组）、博客文章和审核其他成员的帖子。
 
 >[!NOTE]
 >
@@ -84,4 +84,4 @@ AEM为您提供了两个环境：
 
 #### Dispatcher {#dispatcher}
 
-为了优化网站访客体验， **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)** 实施负载平衡和缓存。
+为了优化网站访问性能，**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)**&#x200B;实施了负载平衡和缓存。

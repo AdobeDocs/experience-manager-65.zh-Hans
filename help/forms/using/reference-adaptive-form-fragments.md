@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # 引用自适应表单片段{#reference-adaptive-form-fragments}
 
-[自适应表单片段](../../forms/using/adaptive-form-fragments.md) 是一组字段，或包含一组可在创建表单时使用的字段的面板。 它可让您轻松快速地创建表单。 您可以使用侧边栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单编辑器中编辑该表单片段。
+[自适应表单片段](../../forms/using/adaptive-form-fragments.md)是一组字段，或包含可在创建表单时使用的一组字段的面板。 它可让您轻松快速地创建表单。 您可以使用侧边栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单编辑器中编辑该表单片段。
 
-对于自适应表单作者，中提供了参考片段 [AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). 它包括以下片段：
+对于自适应表单作者，[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)中提供了参考片段。 它包括以下片段：
 
 * 地址
 * 联系信息
@@ -32,9 +32,9 @@ ht-degree: 1%
 * 条款和条件
 * 带涂鸦的条款和条件
 
-安装包时，将在Forms和文档下创建一个包含引用片段的引用片段文件夹。 有关安装软件包，请参见 [如何使用包](/help/sites-administering/package-manager.md).
+安装包时，将在Forms和文档下创建一个包含引用片段的引用片段文件夹。 若要安装包，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
 
-![列出所有片段](assets/ootb-frags.png)
+![列出了所有片段](assets/ootb-frags.png)
 
 ## 地址 {#address}
 
@@ -50,7 +50,7 @@ ht-degree: 1%
 
 包含用于捕获电话号码和电子邮件地址的字段。
 
-![联系信息片段](assets/contact-info.png)
+![联系人信息片段](assets/contact-info.png)
 
 <!--[Click to enlarge
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 指定用户在提交表单前接受和签名的条款和条件。
 
-![带涂鸦的条款和条件](assets/tnc-scribble.png)
+![涂鸦条款和条件](assets/tnc-scribble.png)
 
 <!--[Click to enlarge
 

@@ -27,7 +27,7 @@ ht-degree: 1%
 * 创建自定义模板。
 * 覆盖默认站点模板路径。
 * 将自定义模板添加到叠加路径。
-* 通过添加 `page-template` 属性到 `configuration` 节点。
+* 通过将`page-template`属性添加到`configuration`节点来指定自定义模板。
 
 **默认模板**：
 
@@ -37,7 +37,7 @@ ht-degree: 1%
 
 `/apps/social/console/components/hbs/sitepage/template-name.hbs`
 
-**属性**：page-template
+**属性**：页面模板
 
 **类型**：字符串
 
@@ -51,44 +51,44 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->覆盖路径中的所有节点只需为类型 `Folder`.
+>覆盖路径中的所有节点只需要是`Folder`类型。
 
 >[!CAUTION]
 >
->如果为自定义模板命名 *sitepage.hbs*，则会自定义所有社区站点。
+>如果自定义模板被指定为&#x200B;*sitepage.hbs*，则所有社区站点都是自定义的。
 
 ### 自定义站点模板示例 {#custom-site-template-example}
 
-例如， `vertical-sitepage.hbs` 是一个网站模板，它会在页面左侧垂直向下放置菜单链接，而不是在横幅下方水平放置。
+例如，`vertical-sitepage.hbs`是一个网站模板，它导致菜单链接在页面左侧垂直向下放置，而不是在横幅下方水平放置。
 
 [获取文件](assets/vertical-sitepage.hbs)
 将自定义站点模板放置在覆盖文件夹中：
 
 `/apps/social/console/components/hbs/sitepage/vertical-sitepage.hbs`
 
-通过添加 `page-template` 属性到配置节点：
+通过向配置节点添加`page-template`属性来标识自定义模板：
 
 `/content/sites/sample/en/configuration`
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-请务必 **全部保存** 并将自定义代码复制到所有Adobe Experience Manager (AEM)实例（从控制台发布社区站点内容时不包括自定义代码）。
+请务必&#x200B;**全部保存**&#x200B;并将自定义代码复制到所有Adobe Experience Manager (AEM)实例（从控制台发布社区站点内容时不包括自定义代码）。
 
-复制自定义代码的推荐做法是 [创建资源包](../../help/sites-administering/package-manager.md#creating-a-new-package) 并在所有实例上部署它。
+复制自定义代码的推荐做法是[创建包](../../help/sites-administering/package-manager.md#creating-a-new-package)并在所有实例上部署它。
 
 ## 导出社区站点 {#exporting-a-community-site}
 
 创建社区站点后，可以将站点导出为存储在包管理器中的AEM包，并可供下载和上传。
 
-该功能可从 [社区站点控制台](sites-console.md#exporting-the-site).
+这可以从[社区站点控制台](sites-console.md#exporting-the-site)中获得。
 
 UGC和自定义代码未包含在社区站点包中。
 
-要导出UGC，请使用 [AEM Communities UGC迁移工具](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration)，它是GitHub上提供的一项开源迁移工具。
+要导出UGC，请使用[AEM Communities UGC迁移工具](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration)，它是GitHub上提供的开源迁移工具。
 
 ## 删除社区站点 {#deleting-a-community-site}
 
-截至AEM Communities 6.3 Service Pack 1，将鼠标悬停在中的社区站点上时，将显示“删除站点”图标 **[!UICONTROL Communities]** > **[!UICONTROL 站点]** 控制台。 在开发过程中，如果想要删除社区站点并重新开始，则可以使用此功能。 删除社区站点时，将删除与该站点关联的以下项目：
+截至AEM Communities 6.3 Service Pack 1，将鼠标悬停在&#x200B;**[!UICONTROL 社区]** > **[!UICONTROL 站点]**&#x200B;控制台中的社区站点上时，将显示“删除站点”图标。 在开发过程中，如果想要删除社区站点并重新开始，则可以使用此功能。 删除社区站点时，将删除与该站点关联的以下项目：
 
 * [UGC](#user-generated-content)
 * [用户组](#community-user-groups)
@@ -98,17 +98,17 @@ UGC和自定义代码未包含在社区站点包中。
 
 要使用CRXDE识别与社区站点关联的唯一站点ID，请执行以下操作：
 
-* 导航到站点的语言根，例如 `/content/sites/*<site name>*/en/rep:policy`.
+* 导航到站点的语言根，如`/content/sites/*<site name>*/en/rep:policy`。
 
-* 查找 `allow<#>` 具有的节点 `rep:principalName` 在此格式中 `rep:principalName = *community-enable-nrh9h-members*`.
+* 找到格式为`rep:principalName = *community-enable-nrh9h-members*`且带有`rep:principalName`的`allow<#>`节点。
 
-* 网站ID是的第三个组件 `rep:principalName`
+* 网站ID是`rep:principalName`的第三个组件
 
-  例如，如果 `rep:principalName = community-enable-nrh9h-members`
+  例如，如果`rep:principalName = community-enable-nrh9h-members`
 
    * **站点名称** = *启用*
    * **站点ID** = *nrh9h*
-   * **独特站点ID** = *enable-nrh9h*
+   * **唯一站点ID** = *enable-nrh9h*
 
 ### 用户生成的内容 {#user-generated-content}
 
@@ -122,13 +122,13 @@ UGC和自定义代码未包含在社区站点包中。
 
 * `path=/content/usergenerated/asi/mongo/content/sites/engage`
 
-这仅会删除用户生成的内容（在发布时输入），而不会删除创作的内容（在创作时输入）。 因此， [影子节点](srp.md#shadownodes) 不会受到影响。
+这仅会删除用户生成的内容（在发布时输入），而不会删除创作的内容（在创作时输入）。 因此，[影子节点](srp.md#shadownodes)不受影响。
 
 ### 社区用户组 {#community-user-groups}
 
-在所有创作和发布实例上，从 [安全控制台](../../help/sites-administering/security.md)，查找并删除 [用户组](users.md) 即：
+在所有作者和发布实例上，从[安全控制台](../../help/sites-administering/security.md)中，查找并删除符合以下条件的[用户组](users.md)：
 
-* 前置词 `community`
-* 后接 [独特站点ID](#community-unique-site-id)
+* 以`community`为前缀
+* 后跟[唯一站点ID](#community-unique-site-id)
 
 例如：`community-engage-x0e11-members`。

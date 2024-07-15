@@ -20,11 +20,11 @@ ht-degree: 0%
 
 下面提供了使用AEM进行创作的概述：
 
-* [作者的首要步骤](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md)  — 新作者的简介
+* [作者的首要步骤](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) — 新作者的简介
 
 >[!NOTE]
 >
->本节介绍创作内容页面时涉及的任务。 <!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
+>本节介绍创作内容页面时涉及的任务。<!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
 
 ## 用于创作页面的功能的快速概述 {#quick-overview-of-features-used-for-authoring-pages}
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 * **拖放**
 只需将组件（如文本、图像）和数字资产（如图像）拖放到所需位置，即可将其放置在页面上。
 
-* **编辑**
+* **正在编辑**
 定位到页面上后，可以打开特定于组件的对话框来输入内容和/或配置该组件的特征（例如，图像大小）。
 
 * **就地编辑**
@@ -48,5 +48,5 @@ ht-degree: 0%
 * **上下文菜单**
 右键单击大多数屏幕元素（例如，页面上的段落）可显示一个上下文菜单，其中包含相应的操作选项。
 
-* **按键入内容搜索**
+* **键入时搜索**
 在某些情况下（例如，编辑对话框中的路径选择），通过AEM界面搜索内容会在您键入查询时显示动态匹配。

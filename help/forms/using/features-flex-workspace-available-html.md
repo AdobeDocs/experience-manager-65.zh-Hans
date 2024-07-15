@@ -1,6 +1,6 @@
 ---
 title: Flex工作区的功能在AEM Forms工作区中不可用
-description: AEM Forms工作区在基于Flex的工作区之外进行创新。 了解特性和功能的差异。
+description: AEM Forms工作区在基于Flex的Workspace之外进行创新。 了解特性和功能的差异。
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

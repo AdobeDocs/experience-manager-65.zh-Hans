@@ -22,7 +22,7 @@ ht-degree: 0%
 
 1. 打开Web浏览器并输入此URL：
 
-   http://localhost:port/ReaderExtensions (其中 *端口* 是应用程序服务器的端口号)
+   http://localhost:port/ReaderExtensions （其中&#x200B;*端口*&#x200B;是应用程序服务器的端口号）
 
 1. 使用默认用户名和密码登录：
 

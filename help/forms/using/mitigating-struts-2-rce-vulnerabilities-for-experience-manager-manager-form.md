@@ -32,17 +32,17 @@ Struts 2是一种用于开发Java EE Web应用程序的流行开放源码Web应�
 
 | 发行版本 | 当前版本 | 用户操作 |
 |---|---|---|
-| 在JEE上Experience Manager6.5 Forms | 6.5.19.0 | [安装最新的服务包](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
-| 在JEE上Experience Manager6.5 Forms | 6.5.13.0 - 6.5.18.0 | 使用以下方法之一： <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en"> 安装最新的服务包 </a> </li> <li> <a href ="#use-manual-mitigation-steps"> 采用手动缓解步骤 </a> |
-| 在JEE上Experience Manager6.5 Forms | 6.5 - 6.5.12.0 | [安装最新的服务包](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)  </br> </br> **注意：** AEM Forms当前支持版本6.5.13.0到6.5.19.0。如果您使用的是旧版本，我们建议升级到6.5.13.0或更高版本。 有关安装AEM 6.5.13.0或更高版本的说明，请参阅发行说明。 |
+| 在JEE上Experience Manager6.5 Forms | 6.5.19.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| 在JEE上Experience Manager6.5 Forms | 6.5.13.0 - 6.5.18.0 | 使用以下方法之一： <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en">安装最新的Service Pack </a> </li> <li> <a href ="#use-manual-mitigation-steps">使用手动缓解步骤</a> |
+| 在JEE上Experience Manager6.5 Forms | 6.5 - 6.5.12.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **注意：** AEM Forms当前支持版本6.5.13.0到6.5.19.0。如果您使用的是旧版本，我们建议升级到6.5.13.0或更高版本。 有关安装AEM 6.5.13.0或更高版本的说明，请参阅发行说明。 |
 
 ### 采用手动缓解步骤 {#use-manual-mitigation-steps}
 
 您可以使用手动缓解步骤来解决运行Service Pack 13的AEM 6.5表单服务器到运行Service Pack 18 (6.5.13.0 - 6.5.18.0)的AEM 6.5表单服务器上的问题：
 
-1. 下载 [struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar) 到本地文件夹。 例如，C:\Users\labuser\Desktop\struts2-core-2.5.33.jar。
-1. 从下载AEM Forms on JEE手动修补工具 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip).
-1. 解压缩手动修补工具存档。 例如，提取到 `/Users/labuser/Desktop/archive-patcher-1.0.0 folder`. 将提取以下文件：
+1. 将[struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar)下载到本地文件夹。 例如，C:\Users\labuser\Desktop\struts2-core-2.5.33.jar。
+1. 从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip)下载AEM Forms on JEE手动修补工具。
+1. 解压缩手动修补工具存档。 例如，提取到`/Users/labuser/Desktop/archive-patcher-1.0.0 folder`。 将提取以下文件：
    * archive-patcher-1.0.0.jar
    * patch-archive.bat
    * patch-archive.sh
@@ -67,7 +67,7 @@ Struts 2是一种用于开发Java EE Web应用程序的流行开放源码Web应�
    >
    >该工具需要互联网连接，因为它在运行时下载依赖项。 因此，在运行该工具之前，请确保已连接到Internet。
 
-1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径，并且 `struts2-core-2.5.33.jar` 文件。
+1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径和`struts2-core-2.5.33.jar`文件。
 
 
 
@@ -99,7 +99,7 @@ Struts 2是一种用于开发Java EE Web应用程序的流行开放源码Web应�
    >
    >该工具需要互联网连接，因为它在运行时下载依赖项。 因此，在运行该工具之前，请确保已连接到Internet。
 
-1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径，并且 `struts2-core-2.5.33.jar` 文件。
+1. 按照列出的顺序运行以下命令，以替换递归原位。 运行命令之前，将命令中的路径替换为AEM Forms服务器的路径和`struts2-core-2.5.33.jar`文件。
 
 
 

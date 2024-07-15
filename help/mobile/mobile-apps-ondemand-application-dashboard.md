@@ -38,7 +38,7 @@ ht-degree: 2%
 
 ## “管理应用程序”拼贴 {#the-manage-app-tile}
 
-此 **管理应用程序** 图块显示可用的应用程序信息：
+**管理应用程序**&#x200B;磁贴显示可用的应用程序信息：
 
 * 标题
 * 描述
@@ -50,7 +50,7 @@ ht-degree: 2%
 
 ## “管理连接”拼贴 {#the-manage-connection-tile}
 
-此 **管理连接** 图块显示AEM Mobile On-demand Services连接信息：
+**管理连接**&#x200B;图块显示AEM Mobile On-demand Services连接信息：
 
 * 云配置名称
 * 项目名称和ID
@@ -60,7 +60,7 @@ ht-degree: 2%
 >
 >单击右上方的齿轮以设置Mobile On-Demand云配置。
 >
->请参阅 [配置Mobile On-Demand服务](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) 以了解详细信息。
+>有关详细信息，请参阅[配置Mobile On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)。
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -69,67 +69,67 @@ ht-degree: 2%
 这3个图块概述了应用程序内容的状态：
 
 * **横幅**
-* **文章**
+* **篇文章**
 * **收藏集**
 
 通过单击右下角的省略号(...)，可以展开每个图块以提供更详细的列表视图。 这些列表视图提供了访问常见的Mobile On Demand操作（如删除、上传和编辑属性）的替代方式。
 
 ### “管理横幅”拼贴 {#the-manage-banners-tile}
 
-此 **管理横幅** 利用图块，可管理横幅的内容。 将显示横幅的以下信息：
+通过&#x200B;**管理横幅**&#x200B;图块，您可以管理横幅的内容。 将显示横幅的以下信息：
 
 * 图像
 * **标题**：横幅的名称
-* **修改时间**：上次在AEM中修改时间
+* **已修改**：上次在AEM中修改
 * **已上传**：上次从AEM上传
-* **已发布**：上次发布的请求表单AEM
-* **来源**：源(AEM本地或来自Mobile On Demand的远程)
+* **已发布**：上次发布的请求来自AEM
+* **SOURCE**：源(AEM本地或来自Mobile On-Demand的远程)
 
-下图显示了 **管理横幅** AEM Mobile Application Dashboard中的拼贴：
+下图显示了AEM Mobile应用程序仪表板中的&#x200B;**管理横幅**&#x200B;拼贴：
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->请参阅 **[管理横幅](/help/mobile/mobile-on-demand-managing-banners.md)** 用于创建、删除或更新横幅。
+>请参阅&#x200B;**[管理横幅](/help/mobile/mobile-on-demand-managing-banners.md)**&#x200B;以创建、删除或更新横幅。
 
 ### “管理文章”图块 {#the-manage-articles-tile}
 
-此 **管理文章** 利用图块，可管理文章的内容。 将显示文章的以下信息：
+通过&#x200B;**管理文章**&#x200B;图块，您可以管理文章的内容。 将显示文章的以下信息：
 
 * 图像
-* **标题**：文章的名称
-* **修改时间**：上次在AEM中修改时间
+* **TITLE**：文章的名称
+* **已修改**：上次在AEM中修改
 * **已上传**：上次从AEM上传
-* **已发布**：上次发布的请求表单AEM
-* **来源**：源(AEM本地或来自Mobile On-Demand的远程)
+* **已发布**：上次发布的请求来自AEM
+* **SOURCE**：源(AEM本地或来自Mobile On-Demand的远程)
 
-下图显示了 **管理文章** AEM Mobile Application Dashboard中的拼贴：
+下图显示了AEM Mobile应用程序仪表板中的&#x200B;**管理文章**&#x200B;拼贴：
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->请参阅 [**管理文章**](/help/mobile/mobile-on-demand-managing-articles.md) 用于创建、删除或更新文章。
+>有关创建、删除或更新文章的信息，请参阅&#x200B;[**管理文章**](/help/mobile/mobile-on-demand-managing-articles.md)。
 
 ### “管理收藏集”拼贴 {#the-manage-collections-tile}
 
-此 **管理收藏集** 通过图块，您可以管理收藏集的内容。 将显示收藏集的以下信息：
+通过&#x200B;**管理收藏集**&#x200B;磁贴，您可以管理收藏集的内容。 将显示收藏集的以下信息：
 
 * 图像
-* **标题**：收藏集的名称
-* **修改时间**：上次在AEM中修改时间
+* **TITLE**：集合的名称
+* **已修改**：上次在AEM中修改
 * **已上传**：上次从AEM上传
-* **已发布**：上次发布的请求表单AEM
-* **来源**：源(AEM本地或来自Mobile On-Demand的远程)
+* **已发布**：上次发布的请求来自AEM
+* **SOURCE**：源(AEM本地或来自Mobile On-Demand的远程)
 
-下图显示了 **管理收藏集** AEM Mobile Application Dashboard中的拼贴：
+下图显示了AEM Mobile应用程序仪表板中的&#x200B;**管理收藏集**&#x200B;拼贴：
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->请参阅 **[管理收藏集](/help/mobile/mobile-on-demand-managing-collections.md)** 用于创建、删除或更新收藏集。
+>请参阅&#x200B;**[管理收藏集](/help/mobile/mobile-on-demand-managing-collections.md)**&#x200B;以创建、删除或更新收藏集。
 
 ### 后续步骤 {#the-next-steps}
 

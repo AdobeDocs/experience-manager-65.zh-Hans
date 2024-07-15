@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 术语表{#glossary}
 
-此术语表按字母顺序列出 [项目核对清单](/help/managing/best-practices-checklist.md).
+此词汇表列出[项目核对清单](/help/managing/best-practices-checklist.md)中所有可交付文档的详细信息（按字母顺序）。
 
 ## 来自业务利益相关方的接受 {#acceptance-from-business-stakeholders}
 
@@ -46,7 +46,7 @@ ht-degree: 0%
 
 ### Adobe安全核对清单 {#adobe-security-checklist}
 
-此 [Adobe安全核对清单](/help/sites-administering/security-checklist.md) 是提供的官方核对清单，用于确保Adobe Experience Manager (AEM)在安装时安全。 它包含为确保实例的完整性而必须执行的安全措施和验证步骤。
+[Adobe安全核对清单](/help/sites-administering/security-checklist.md)是提供的官方核对清单，用于确保Adobe Experience Manager (AEM)在安装时安全。 它包含为确保实例的完整性而必须执行的安全措施和验证步骤。
 
 ### Adobe支持门户项目设置 {#adobe-support-portal-project-set-up}
 
@@ -56,19 +56,19 @@ Adobe支持门户使实施合作伙伴和客户能够在支持门户中将AEM实
 
 ### AEM管理员培训 {#aem-administrator-training}
 
-培训解决方案的行政人员。 请参阅 [Adobe培训服务](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) 以了解更多信息。
+培训解决方案的行政人员。 有关详细信息，请参阅[Adobe培训服务](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)。
 
 ### AEM创作培训 {#aem-author-training}
 
-培训将为解决方案制作（创作）内容的员工。 请参阅 [Adobe培训服务](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) 以了解更多信息。
+培训将为解决方案制作（创作）内容的员工。 有关详细信息，请参阅[Adobe培训服务](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)。
 
 ### AEM认证考试 {#aem-certification-exam}
 
-确保注册适当的角色，以便 [认证考试](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+请确保已注册适当的角色，以参加相关的[认证考试](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)。
 
 ### AEM认证 {#aem-certified}
 
-确保相应角色已传递相关 [认证考试](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+确保相应角色已通过相关的[认证考试](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)。
 
 ### AEM技术培训 {#aem-technical-training}
 
@@ -92,7 +92,7 @@ Adobe支持门户使实施合作伙伴和客户能够在支持门户中将AEM实
 
 ### 应用程序体系结构定义 {#application-architecture-definition}
 
-此 [应用架构](/help/managing/best-practices.md#development-preparation) 应清楚地定义所提议的应用程序的行为。
+[应用程序架构](/help/managing/best-practices.md#development-preparation)应清楚地定义建议应用程序的行为。
 
 其重点是：
 
@@ -109,7 +109,8 @@ Adobe支持门户使实施合作伙伴和客户能够在支持门户中将AEM实
 
 * 至少有一位AEM认证的潜在客户开发人员
 * 至少有一个AEM认证架构师
-* 您的开发人员中至少有75%通过AEM认证；这使经认证的开发人员能够指导初级开发人员，并确保知识共享和透明度
+* 至少75%的开发人员已获得AEM认证；
+这使经认证的开发人员能够指导初级开发人员，并确保知识共享和透明度
 
 ### 架构图 {#architecture-diagram}
 
@@ -206,7 +207,8 @@ Adobe支持门户使实施合作伙伴和客户能够在支持门户中将AEM实
 
 业务需求文档(BRD)详细说明了项目的业务解决方案，提供了客户业务需求和期望的明确说明。 BRD还区分业务解决方案和技术解决方案。
 
-在研究业务解决方案时，BRD应回答以下问题：“业务部门希望做什么？”
+在检查业务解决方案时，BRD应回答以下问题：
+“企业想要做什么？”
 
 ### 根据投资回报率和KPI预期确定并调整的解决方案或体系结构，由业务部门签核所需的任何调整 {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -502,7 +504,7 @@ Adobe支持门户使实施合作伙伴和客户能够在支持门户中将AEM实
 
 ### 最终确定合同 {#finalized-contract}
 
-在继续进行项目之前，需要最后确定并签署合同。 这是基于 [合同草稿](#contract-draft).
+在继续进行项目之前，需要最后确定并签署合同。 这是基于[合同草稿](#contract-draft)。
 
 ### 利益相关者接受的解决方案功能 {#functionality-of-the-solution-accepted-by-stakeholders}
 
@@ -871,7 +873,7 @@ URL处理概念的实施。
 
 概念验证(POC)根据要求进行评测，以确保两者保持一致。
 
-### 部署后核对清单 {#post-deployment-checklist}
+### Post部署核对清单 {#post-deployment-checklist}
 
 一个核对清单，用于定义每次部署后要执行的一系列检查和任务。
 
@@ -901,7 +903,7 @@ URL处理概念的实施。
 
 ### 项目工作 — 最终估计 {#project-efforts-final-estimates}
 
-此 [初步估计](#project-efforts-initial-estimates) 都是高级别的，并根据执行工作的高级别要求制定的。
+[初始估计](#project-efforts-initial-estimates)是高级别的，并根据实施的高级别要求进行。
 
 这些报告现在经过审核、改进和扩充，以提供最终估计。 每个适当的项目负责人都应提供估计值，包括项目管理、咨询、架构、测试和开发。
 
@@ -966,7 +968,7 @@ AEM维护多个版本的资源和内容。 清除规则的设计和配置可定�
 
 >[!NOTE]
 >
->有关示例，请参见 [AEM发行说明](/help/release-notes/release-notes.md).
+>有关示例，请参阅[AEM发行说明](/help/release-notes/release-notes.md)。
 
 ### 在生产环境中运行的版本 {#release-running-on-production-environment}
 
@@ -1285,7 +1287,7 @@ Quality Lead的部分职责是确保在测试时具有支持任何用户的资�
 
 ### 测试计划 {#testing-plans}
 
-这些计划更详细地概述了每个开发阶段的测试执行情况，并且基于 [测试策略](#testing-strategy).
+这些计划更详细地概述了每个开发阶段的测试执行情况，并基于[测试策略](#testing-strategy)。
 
 ### 测试范围 {#testing-scope}
 

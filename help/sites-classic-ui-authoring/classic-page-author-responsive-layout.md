@@ -20,4 +20,4 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->虽然布局容器组件在经典UI中可用，但其完整功能仅在触屏UI中可用并受支持。 请参阅 [响应式布局](/help/sites-authoring/responsive-layout.md) 详细信息，请参阅标准创作文档。
+>虽然布局容器组件在经典UI中可用，但其完整功能仅在触屏UI中可用并受支持。 有关更多详细信息，请参阅标准创作文档中的[响应布局](/help/sites-authoring/responsive-layout.md)。

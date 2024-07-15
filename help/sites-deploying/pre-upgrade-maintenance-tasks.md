@@ -44,21 +44,21 @@ ht-degree: 0%
 
 ## 完全备份AEM {#fully-back-up-aem}
 
-在开始升级之前，应完全备份AEM。 确保备份存储库、应用程序安装、数据存储和Mongo实例（如果适用）。 有关备份和恢复AEM实例的详细信息，请参阅 [备份和恢复](/help/sites-administering/backup-and-restore.md).
+在开始升级之前，应完全备份AEM。 确保备份存储库、应用程序安装、数据存储和Mongo实例（如果适用）。 有关备份和还原AEM实例的详细信息，请参阅[备份和还原](/help/sites-administering/backup-and-restore.md)。
 
 ## 将更改备份到/etc {#backup-changes-etc}
 
-升级过程很好地维护和合并了下的现有内容和配置 `/apps` 和 `/libs` 存储库中的路径。 对于所做的更改 `/etc` 路径（包括Context Hub配置），通常需要在升级后重新应用这些更改。 在升级过程中，会为无法合并的任何更改创建备份副本 `/var`，Adobe建议您在开始升级之前手动备份这些更改。
+升级过程很好地维护和合并了存储库中`/apps`和`/libs`路径下的现有内容和配置。 对于对`/etc`路径所做的更改（包括Context Hub配置），通常需要在升级后重新应用这些更改。 虽然升级会为无法在`/var`下合并的任何更改创建备份副本，但Adobe建议您在开始升级之前手动备份这些更改。
 
 ## 生成快速入门.properties文件 {#generate-quickstart-properties}
 
-从jar文件启动AEM时， `quickstart.properties` 文件生成于 `crx-quickstart/conf`. 如果AEM以前仅使用启动脚本启动，则此文件不存在，升级失败。 确保检查此文件是否存在，如果AEM不存在，请从jar文件重新启动该文件。
+从jar文件启动AEM时，将在`crx-quickstart/conf`下生成`quickstart.properties`文件。 如果AEM以前仅使用启动脚本启动，则此文件不存在，升级失败。 确保检查此文件是否存在，如果AEM不存在，请从jar文件重新启动该文件。
 
 ## 配置工作流和审核日志清除 {#configure-wf-audit-purging}
 
-此 `WorkflowPurgeTask` 和 `com.day.cq.audit.impl.AuditLogMaintenanceTask` 任务需要单独的OSGi配置，没有它们将无法工作。 如果它们在升级前任务执行期间失败，则缺少配置是最可能的原因。 因此，请确保为这些任务添加OSGi配置，或者如果不想运行它们，则从升级前优化任务列表中完全删除它们。 有关配置工作流清除任务的文档，请访问 [管理工作流实例](/help/sites-administering/workflows-administering.md) 和审核日志维护任务配置位于 [AEM 6中的审核日志维护](/help/sites-administering/operations-audit-log.md).
+`WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任务需要单独的OSGi配置，没有它们将无法工作。 如果它们在升级前任务执行期间失败，则缺少配置是最可能的原因。 因此，请确保为这些任务添加OSGi配置，或者如果不想运行它们，则从升级前优化任务列表中完全删除它们。 有关配置工作流清除任务的文档可在[管理工作流实例](/help/sites-administering/workflows-administering.md)中找到，而审核日志维护任务配置可在AEM 6](/help/sites-administering/operations-audit-log.md)中的[审核日志维护中找到。
 
-有关CQ 5.6上的工作流和审核日志清除以及AEM 6.0上的审核日志清除，请参阅 [清除工作流和审核节点](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
+有关CQ 5.6上的工作流和审核日志清除以及AEM 6.0上的审核日志清除，请参阅[清除工作流和审核节点](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)。
 
 ## 安装、配置和运行升级前任务 {#install-configure-run-pre-upgrade-tasks}
 
@@ -90,11 +90,11 @@ You can find the packages at these locations:
 
 ### 使用方法 {#how-to-use-it}
 
-此 `PreUpgradeTasksMBean` OSGI组件预配置了可以一次运行的所有升级前维护任务的列表。 您可以按照以下步骤配置任务：
+`PreUpgradeTasksMBean` OSGI组件预配置了可以一次运行的所有升级前维护任务列表。 您可以按照以下步骤配置任务：
 
-1. 通过浏览至Web控制台 *https://serveraddress:serverport/system/console/configMgr*
+1. 通过浏览到&#x200B;*https://serveraddress:serverport/system/console/configMgr*&#x200B;转到Web控制台
 
-1. 搜索&quot;**预升级任务**“”，然后单击第一个匹配的组件。 组件的全名为 `com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
+1. 搜索“**preupgradetasks**”，然后单击第一个匹配的组件。 组件的全名为`com.adobe.aem.upgrade.prechecks.mbean.impl.PreUpgradeTasksMBeanImpl`
 
 1. 修改必须运行的维护任务列表，如下所示：
 
@@ -117,7 +117,7 @@ You can find the packages at these locations:
   <tr>
    <td><code>DataStoreGarbageCollectionTask</code></td>
    <td>crx2</td>
-   <td>运行标记和整理。 对于共享数据存储，请删除此步骤并运行<br /> 在执行之前手动或正确准备实例。</td>
+   <td>运行标记和整理。 对于共享数据存储，请删除此步骤，然后手动运行<br />，或者在执行之前正确准备实例。</td>
   </tr>
   <tr>
    <td><code>ConsistencyCheckTask</code></td>
@@ -149,30 +149,30 @@ You can find the packages at these locations:
 
 >[!CAUTION]
 >
->此 `DataStoreGarbageCollectionTask` 调用具有标记和扫描阶段（如果已使用）的数据存储垃圾收集操作。 对于使用共享数据存储的部署，请确保正确重新配置它或准备实例以避免删除另一个实例引用的项目。 在触发此升级前任务之前，此过程可能需要在所有实例上手动运行标记阶段。
+>`DataStoreGarbageCollectionTask`调用具有标记和扫描阶段（如果已使用）的数据存储垃圾收集操作。 对于使用共享数据存储的部署，请确保正确重新配置它或准备实例以避免删除另一个实例引用的项目。 在触发此升级前任务之前，此过程可能需要在所有实例上手动运行标记阶段。
 
 ### 升级前运行状况检查的默认配置 {#default-configuration-of-the-pre-upgrade-health-checks}
 
-此 `PreUpgradeTasksMBeanImpl` OSGI组件预配置了一个预升级运行状况检查标记列表，以便 `runAllPreUpgradeHealthChecks` 方法名为：
+`PreUpgradeTasksMBeanImpl` OSGI组件预配置了调用`runAllPreUpgradeHealthChecks`方法时要执行的升级前运行状况检查标记的列表：
 
-* **系统** - granite维护运行状况检查使用的标记
+* **system** - granite维护运行状况检查使用的标记
 
-* **预升级**  — 一个自定义标记，可添加到所有可设置为在升级前运行的运行状况检查中
+* **升级前** — 自定义标记，可添加到所有可设置为在升级前运行的运行状况检查中
 
-该列表可编辑。 您可以使用加号 **(+)** 和减号 **(-)** 按钮以添加更多自定义标记，或删除默认标记。
+该列表可编辑。 除了标记之外，您还可以使用加号&#x200B;**(+)**&#x200B;和减号&#x200B;**(-)**&#x200B;按钮来添加更多自定义标记或删除默认标记。
 
 **MBean方法**
 
-可以使用访问受管Bean功能 [JMX控制台](/help/sites-administering/jmx-console.md).
+可以使用[JMX控制台](/help/sites-administering/jmx-console.md)访问受管Bean功能。
 
 您可以通过以下方式访问MBean：
 
-1. 转到位于的JMX控制台 *https://serveraddress:serverport/system/console/jmx*
-1. 搜索 **PreUpgradeTasks** 并单击结果
+1. 转到&#x200B;*https://serveraddress:serverport/system/console/jmx*&#x200B;处的JMX控制台
+1. 搜索&#x200B;**PreUpgradeTasks**&#x200B;并单击结果
 
-1. 从中选择任意方法 **操作** 部分并选择 **调用** 在下面的窗口中。
+1. 从&#x200B;**操作**&#x200B;部分中选择任意方法，然后在以下窗口中选择&#x200B;**调用**。
 
-以下是 `PreUpgradeTasksMBeanImpl` 公开：
+以下是`PreUpgradeTasksMBeanImpl`公开的所有可用方法的列表：
 
 <table>
  <tbody>
@@ -204,12 +204,12 @@ You can find the packages at these locations:
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>检查 <code>runAllPreUpgradeTasksmaintenance</code> 任务正在运行。</td>
+   <td>检查<code>runAllPreUpgradeTasksmaintenance</code>任务是否正在运行。</td>
   </tr>
   <tr>
    <td><code>getAnyPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>检查是否有任何升级前维护任务正在运行，并且<br /> 返回一个数组，其中包含当前正在运行的任务的名称。</td>
+   <td>检查是否有任何升级前维护任务正在运行，并且<br />返回一个包含当前正在运行的任务名的数组。</td>
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td>
@@ -224,12 +224,12 @@ You can find the packages at these locations:
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
    <td>操作</td>
-   <td><p>运行所有升级前运行状况检查，并将其状态保存在名为的文件中 <code>preUpgradeHCStatus.properties</code> 在sling home的路径上。 如果 <code>shutDownOnSuccess</code> 参数设置为 <code>true</code>，AEM实例将关闭，但前提是所有升级前运行状况检查的状态均为“正常”。</p> <p>属性文件用作任何未来升级的前提条件<br /> 并且如果升级前运行状况检查，升级过程将停止<br /> 执行失败。 如果您要忽略预升级的结果<br /> 运行状况检查并启动升级，但您可以删除文件。</p> </td>
+   <td><p>运行所有升级前运行状况检查，并将其状态保存在sling主路径中名为<code>preUpgradeHCStatus.properties</code>的文件中。 如果<code>shutDownOnSuccess</code>参数设置为<code>true</code>，则AEM实例将关闭，但前提是所有升级前运行状况检查的状态均为“正常”。</p> <p>属性文件用作任何未来升级<br />的前提条件，如果升级前运行状况检查<br />执行失败，升级过程将停止。 如果要忽略升级前<br />运行状况检查的结果并仍启动升级，可以删除该文件。</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
    <td>操作</td>
-   <td>列出所有导入的包，这些包在<br /> 升级到指定的AEM版本。 目标AEM版本必须为<br /> 以参数形式给出。</td>
+   <td>列出<br />升级到指定的AEM版本时不再满足的所有导入包。 目标AEM版本必须是<br />作为参数提供的。</td>
   </tr>
  </tbody>
 </table>
@@ -249,13 +249,13 @@ You can find the packages at these locations:
 >
 >仅当从AEM 5版本升级时，才需要执行此步骤。 从旧版AEM 6升级时，可以完全跳过该步骤。
 
-自定义方式 `LoginModules` 配置为在存储库级别进行身份验证，这在Apache Oak中发生了根本性更改。
+在Apache Oak中，为存储库级别的身份验证配置自定义`LoginModules`的方式发生了根本性变化。
 
-在使用CRX2配置的AEM版本中，将置于 `repository.xml` 文件，而从AEM 6开始，则是通过Web控制台在Apache Felix JAAS Configuration Factory服务中完成。
+在使用CRX2配置的AEM版本中，该文件放在`repository.xml`文件中，而从AEM 6开始，它通过Web控制台在Apache Felix JAAS Configuration Factory服务中完成。
 
 因此，在升级后，必须禁用任何现有配置并重新创建Apache Oak。
 
-禁用的JAAS配置中定义的自定义模块 `repository.xml`，则必须编辑配置以使用默认设置 `LoginModule`，如以下示例所示：
+要禁用`repository.xml`的JAAS配置中定义的自定义模块，必须编辑配置以使用默认`LoginModule`，如以下示例所示：
 
 ```xml
 <Security >
@@ -276,9 +276,9 @@ You can find the packages at these locations:
 
 >[!NOTE]
 >
->有关更多信息，请参阅 [使用外部登录模块进行身份验证](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html).
+>有关详细信息，请参阅[外部登录模块的身份验证](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)。
 >
->例如 `LoginModule` AEM 6中的配置，请参见 [使用AEM 6配置LDAP](/help/sites-administering/ldap-config.md).
+>有关AEM 6中`LoginModule`配置的示例，请参阅[使用AEM 6](/help/sites-administering/ldap-config.md)配置LDAP。
 
 ## 从/install目录中删除更新 {#remove-updates-install-directory}
 
@@ -286,7 +286,7 @@ You can find the packages at these locations:
 >
 >在关闭AEM实例后，仅从crx-quickstart/install目录中删除包。 此步骤是开始就地升级过程之前的最后一个步骤。
 
-删除通过部署的所有Service Pack、功能包或修补程序 `crx-quickstart/install` 目录。 这样做可防止在更新完成后，在新AEM版本之上意外安装旧修补程序和Service Pack。
+删除通过本地文件系统上的`crx-quickstart/install`目录部署的所有Service Pack、功能包或修补程序。 这样做可防止在更新完成后，在新AEM版本之上意外安装旧修补程序和Service Pack。
 
 ## 停止任何冷备用实例 {#stop-tarmk-coldstandby-instance}
 
@@ -302,7 +302,7 @@ You can find the packages at these locations:
 >
 >此步骤仅对于TarMK安装是必需的
 
-如果使用TarMK，则在升级之前应运行脱机修订版清理。 这样做可以使存储库迁移步骤和后续升级任务的执行速度更快，并且有助于确保在升级完成后可以成功执行在线修订版清理。 有关运行脱机修订版清理的信息，请参阅 [正在执行脱机修订清理](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
+如果使用TarMK，则在升级之前应运行脱机修订版清理。 这样做可以使存储库迁移步骤和后续升级任务的执行速度更快，并且有助于确保在升级完成后可以成功执行在线修订版清理。 有关运行脱机修订清理的信息，请参阅[正在执行脱机修订清理](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup)。
 
 ## 执行数据存储垃圾收集 {#execute-datastore-garbage-collection}
 
@@ -310,11 +310,11 @@ You can find the packages at these locations:
 >
 >只有运行crx3的实例才需要此步骤
 
-在CRX3实例上运行修订清理后，您应该运行数据存储垃圾收藏集以删除数据存储中的任何未引用Blob。 有关说明，请参阅以下文档 [数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md).
+对CRX3实例运行修订清理后，您应该运行数据存储垃圾收藏集以删除数据存储中所有未引用的Blob。 有关说明，请参阅有关[数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md)的文档。
 
 ## 根据需要升级数据库模式 {#upgrade-the-database-schema-if-needed}
 
-通常，如果需要，AEM用于持久性的基础Apache Oak栈栈会负责升级数据库架构。
+通常，AEM用于持久性的基础Apache Oak栈栈会根据需要负责升级数据库架构。
 
 但是，在架构无法自动升级时可能会出现这种情况。 此类情况大多是高安全性环境，在这种环境中，数据库以权限有限的用户身份运行。 如果发生这种情况，AEM将继续使用旧架构。
 
@@ -323,7 +323,7 @@ You can find the packages at these locations:
 1. 关闭必须升级的AEM实例。
 1. 升级数据库模式。 请查阅数据库类型的文档，了解需要什么工具才能获得结果。
 
-   有关Oak如何处理模式升级的更多信息，请参阅 [Apache网站上的此页面](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
+   有关Oak如何处理架构升级的详细信息，请参阅Apache网站上的[此页面](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)。
 
 1. 继续升级AEM。
 
@@ -349,7 +349,7 @@ java.lang.RuntimeException: Unable to create service user [communities-utility-r
 要解决此问题，请确保执行以下操作：
 
 1. 将实例与生产流量分离
-1. 创建一个或多个导致问题的用户的备份。 您可以通过包管理器完成此任务。 有关更多信息，请参阅 [如何使用包。](/help/sites-administering/package-manager.md)
+1. 创建一个或多个导致问题的用户的备份。 您可以通过包管理器完成此任务。 有关详细信息，请参阅[如何使用包。](/help/sites-administering/package-manager.md)
 1. 删除一个或多个导致问题的用户。 以下是可能属于此类别的用户列表：
 
    1. `dynamic-media-replication`

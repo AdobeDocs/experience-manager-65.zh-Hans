@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 创建“邀请外部用户”处理程序 {#create-invite-external-users-handler}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 您可以为Rights Management服务创建“邀请外部用户”处理程序。 通过“邀请外部用户”处理程序，Rights Management服务可邀请外部用户成为Rights Management用户。 当用户成为Rights Management用户后，用户能够执行任务，例如打开受策略保护的PDF文档。 将邀请外部用户处理程序部署到AEM Forms后，您可以使用管理控制台与其交互。
 
@@ -34,25 +34,25 @@ ht-degree: 0%
 
 ## 设置开发环境 {#setting-up-development-environment}
 
-要设置开发环境，必须创建一个Java项目，如Eclipse项目。 支持的Eclipse版本是 `3.2.1` 或更高版本。
+要设置开发环境，必须创建一个Java项目，如Eclipse项目。 支持的Eclipse版本是`3.2.1`或更高版本。
 
-Rights ManagementSPI需要 `edc-server-spi.jar` 在项目的类路径中设置的文件。 如果不引用此JAR文件，则无法在Java项目中使用Rights ManagementSPI。 此JAR文件与AEM Forms SDK一起安装在中 `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` 文件夹。
+Rights ManagementSPI要求在项目的类路径中设置`edc-server-spi.jar`文件。 如果不引用此JAR文件，则无法在Java项目中使用Rights ManagementSPI。 此JAR文件与AEM Forms SDK一起安装在`[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`文件夹中。
 
-除了添加 `edc-server-spi.jar` 文件到项目的类路径中，还必须添加使用Rights Management服务API所需的JAR文件。 在“邀请外部Rights Management”处理程序中使用“用户服务API”需要这些文件。
+除了将`edc-server-spi.jar`文件添加到项目的类路径外，还必须添加使用Rights Management服务API所需的JAR文件。 在“邀请外部Rights Management”处理程序中使用“用户服务API”需要这些文件。
 
 ## 定义邀请外部用户处理程序实施 {#define-invite-external-users-handler}
 
-要开发邀请外部用户处理程序，必须创建一个实现 `com.adobe.edc.server.spi.ersp.InvitedUserProvider` 界面。 此类包含一个名为的方法 `invitedUser`，在使用提交电子邮件地址时，Rights Management服务会调用该参数 **添加受邀用户** 通过administration console访问的页面。
+要开发邀请外部用户处理程序，必须创建实现`com.adobe.edc.server.spi.ersp.InvitedUserProvider`接口的Java类。 此类包含一个名为`invitedUser`的方法，当电子邮件地址是使用可通过管理控制台访问的&#x200B;**添加受邀用户**&#x200B;页提交时，Rights Management服务将调用该方法。
 
-此 `invitedUser` 方法接受 `java.util.List` 实例，其中包含从提交的字符串类型电子邮件地址 **添加受邀用户** 页面。 此 `invitedUser` 方法返回的数组 `InvitedUserProviderResult` 对象，通常是电子邮件地址到用户对象的映射（不返回null）。
+`invitedUser`方法接受`java.util.List`实例，该实例包含从&#x200B;**添加受邀用户**&#x200B;页面提交的字符串类型电子邮件地址。 `invitedUser`方法返回`InvitedUserProviderResult`对象的数组，这通常是电子邮件地址到用户对象的映射（不返回null）。
 
 >[!NOTE]
 >
 >除了演示如何创建“邀请外部用户”处理程序之外，本节还使用AEM Forms API。
 
-邀请外部用户处理程序的实现包含一个名为的用户定义方法 `createLocalPrincipalAccount`. 此方法接受将电子邮件地址指定为参数值的字符串值。 此 `createLocalPrincipalAccount` 方法假定预先存在名为 `EDC_EXTERNAL_REGISTERED`. 您可以将此域名配置为所需的任何名称；但是，对于生产应用程序，您可能希望与企业域集成。
+邀请外部用户处理程序的实现包含名为`createLocalPrincipalAccount`的用户定义方法。 此方法接受将电子邮件地址指定为参数值的字符串值。 `createLocalPrincipalAccount`方法假定名为`EDC_EXTERNAL_REGISTERED`的本地域预先存在。 您可以将此域名配置为所需的任何名称；但是，对于生产应用程序，您可能希望与企业域集成。
 
-此 `createUsers` 方法遍历每个电子邮件地址，并创建相应的用户对象（中的本地用户） `EDC_EXTERNAL_REGISTERED` 域)。 最后， `doEmails` 方法被调用。 在示例中，此方法被有意保留为存根。 在生产实施中，它将包含应用程序逻辑，用于向新创建的用户发送邀请电子邮件。 在示例中保留它以演示实际应用程序的应用程序逻辑流程。
+`createUsers`方法遍历每个电子邮件地址并创建相应的用户对象（`EDC_EXTERNAL_REGISTERED`域中的本地用户）。 最后，调用`doEmails`方法。 在示例中，此方法被有意保留为存根。 在生产实施中，它将包含应用程序逻辑，用于向新创建的用户发送邀请电子邮件。 在示例中保留它以演示实际应用程序的应用程序逻辑流程。
 
 ### 定义邀请外部用户处理程序实施 {#user-handler-implementation}
 
@@ -174,7 +174,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 查找组件XML文件以部署Invite外部用户处理程序组件。 每个组件都存在一个组件XML文件，该文件提供了有关该组件的元数据。
 
-以下各项 `component.xml` 文件用于邀请外部用户处理程序。 请注意，服务名称为 `InviteExternalUsersSample` 并且此服务公开的操作名为 `invitedUser`. 输入参数为 `java.util.List` 实例且输出值是 `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` 实例。
+以下`component.xml`文件用于邀请外部用户处理程序。 请注意，服务名称为`InviteExternalUsersSample`，此服务公开的操作名为`invitedUser`。 输入参数是`java.util.List`实例，输出值是`com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`实例的数组。
 
 ### 定义邀请外部用户处理程序的组件XML文件 {#component-xml-invite-external-users-handler}
 
@@ -205,11 +205,11 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## 正在打包邀请外部用户处理程序 {#packaging-invite-external-users-handler}
 
-要将邀请外部用户处理程序部署到AEM Forms，必须将Java项目打包到JAR文件中。 确保邀请外部用户处理程序的业务逻辑所依赖的外部JAR文件，例如 `edc-server-spi.jar` 和 `adobe-rightsmanagement-client.jar` 文件也包含在JAR文件中。 另外，组件XML文件必须存在。 此 `component.xml` 文件和外部JAR文件必须位于JAR文件的根目录下。
+要将邀请外部用户处理程序部署到AEM Forms，必须将Java项目打包到JAR文件中。 确保JAR文件中也包含邀请外部用户处理程序的业务逻辑所依赖的外部JAR文件，例如`edc-server-spi.jar`和`adobe-rightsmanagement-client.jar`文件。 另外，组件XML文件必须存在。 `component.xml`文件和外部JAR文件必须位于JAR文件的根目录下。
 
 >[!NOTE]
 >
->在下图中， `BootstrapImpl` 显示类。 本节不讨论如何创建 `BootstrapImpl` 类。
+>在下图中，显示了`BootstrapImpl`类。 本节不讨论如何创建`BootstrapImpl`类。
 
 下图显示了打包到邀请外部用户处理程序的JAR文件中的Java项目内容。
 
@@ -241,14 +241,14 @@ A.组件所需的外部JAR文件B. JAVA文件
    > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 1. 登录到管理控制台。
-1. 单击 **[!UICONTROL 服务]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 配置]** >已邀请 **[!UICONTROL 用户注册]**.
-1. 通过选中 **[!UICONTROL 启用受邀用户注册]** 盒子。 下 **[!UICONTROL 使用内置注册系统]**，单击 **[!UICONTROL 否]**. 保存您的设置。
-1. 在管理控制台主页中，单击 **[!UICONTROL 设置]** > **[!UICONTROL User Management]** > **[!UICONTROL 域管理]**.
-1. 单击 **[!UICONTROL 新建本地域]**. 在以下页面中，创建一个名称和标识符值为 `EDC_EXTERNAL_REGISTERED`. 保存更改。
-1. 在管理控制台主页中，单击 **[!UICONTROL 服务]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 受邀用户和本地用户]**. 此 **[!UICONTROL 添加受邀用户]** 页面。
-1. 输入电子邮件地址（由于当前的邀请外部用户处理程序实际上并不发送电子邮件，因此电子邮件地址不一定有效）。 单击 **[!UICONTROL 确定]**. 用户受邀加入系统。
-1. 在管理控制台主页中，单击 **[!UICONTROL 设置]** > **[!UICONTROL User Management]** > **[!UICONTROL 用户和组]**.
-1. 在 **[!UICONTROL 查找]** 字段中，输入您指定的电子邮件地址。 单击 **[!UICONTROL 查找]**. 您邀请的用户将作为用户出现在 `EDC_EXTERNAL_REGISTERED` 域。
+1. 单击&#x200B;**[!UICONTROL 服务]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 配置]** >已邀请&#x200B;**[!UICONTROL 用户注册]**。
+1. 通过选中&#x200B;**[!UICONTROL 启用受邀用户注册]**&#x200B;框启用受邀用户注册。 在&#x200B;**[!UICONTROL 使用内置注册系统]**&#x200B;下，单击&#x200B;**[!UICONTROL 否]**。 保存您的设置。
+1. 在管理控制台主页中，单击&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 用户管理]** > **[!UICONTROL 域管理]**。
+1. 单击&#x200B;**[!UICONTROL 新建本地域]**。 在以下页面中，创建一个名称和标识符值为`EDC_EXTERNAL_REGISTERED`的域。 保存更改。
+1. 在管理控制台主页中，单击&#x200B;**[!UICONTROL 服务]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 受邀用户和本地用户]**。 此时会显示&#x200B;**[!UICONTROL 添加受邀用户]**&#x200B;页面。
+1. 输入电子邮件地址（由于当前的邀请外部用户处理程序实际上并不发送电子邮件，因此电子邮件地址不一定有效）。 单击&#x200B;**[!UICONTROL 确定]**。 用户受邀加入系统。
+1. 在管理控制台主页上，单击&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 用户管理]** > **[!UICONTROL 用户和组]**。
+1. 在&#x200B;**[!UICONTROL 查找]**&#x200B;字段中，输入您指定的电子邮件地址。 单击&#x200B;**[!UICONTROL 查找]**。 您邀请的用户显示为本地`EDC_EXTERNAL_REGISTERED`域中的用户。
 
 >[!NOTE]
 >

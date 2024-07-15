@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 在Microsoft Windows 7上的Internet Explorer 9中创建过滤器时遇到的问题 {#issues-faced-in-creating-filters-on-internet-explorer-on-microsoft-windows}
 
-如果您为预定义报表创建过滤器，则以下问题会间歇性地出现在 **Internet Explorer 9** 对象 **Microsoft Windows 7** 环境：
+如果为预定义报表创建筛选器，则在&#x200B;**Microsoft Windows 7**&#x200B;环境的&#x200B;**Internet Explorer 9**&#x200B;上会间歇性地出现以下问题：
 
 * 值字段中的下拉列表显示唯一标识符而不是值。
 * “值”字段中的“日历”控件显示日语字符。

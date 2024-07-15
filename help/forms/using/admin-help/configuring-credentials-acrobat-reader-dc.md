@@ -22,7 +22,7 @@ ht-degree: 0%
 
 如果您使用的是评估凭据，则在移至生产环境时，请将其替换为生产凭据。 要更新已过期或评估凭据，请首先删除旧的Acrobat Reader DC扩展凭据。
 
-有关获取凭据的信息，请参阅 [准备安装AEM表单（单服务器）](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
+有关获取凭据的信息，请参阅[准备安装AEM表单（单服务器）](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf)。
 
 信任存储区可能包含多个Acrobat Reader DC扩展凭据。 指定其中一个凭据作为默认的Reader扩展凭据。 当Workbench用户无法确定在创建进程期间要使用的凭据时，将使用默认凭据。 以下规则适用于默认凭据：
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您还可以以编程方式导入和删除凭据。 (请参阅 [使用AEM表单编程](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).)
+>您还可以以编程方式导入和删除凭据。 (请参阅[使用AEM表单编程](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。)
 
 ## 导入Acrobat Reader DC Extensions凭据 {#import-a-acrobat-reader-dc-extensions-credential}
 

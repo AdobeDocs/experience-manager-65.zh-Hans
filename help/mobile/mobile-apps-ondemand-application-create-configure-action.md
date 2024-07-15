@@ -32,18 +32,18 @@ ht-degree: 0%
 >
 >功能板是一系列有用的拼贴，可概述应用程序的内容、元数据和AEM Mobile On-Demand连接状态。
 >
->请参阅 [AEM Mobile应用程序功能板](/help/mobile/mobile-apps-ondemand-application-dashboard.md) 以了解详细信息。
+>有关详细信息，请参阅[AEM Mobile应用程序仪表板](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
 
-**要创建按需应用程序，请执行以下操作：**
+**创建按需应用：**
 
-1. 选择 **移动设备** 从侧边栏移出。
-1. 选择 **应用程序** 从导航中。
-1. 单击 **创建** 并选择 **应用程序** 从下拉菜单中查找。
-1. 选择移动设备应用程序模板并单击 **下一个**.
-1. 输入应用程序属性，例如 **标题**， **名称**， **描述**.
+1. 从侧边栏中选择&#x200B;**移动设备**。
+1. 从导航中选择&#x200B;**应用程序**。
+1. 单击&#x200B;**创建**&#x200B;并从下拉列表中选择&#x200B;**应用程序**。
+1. 选择移动应用模板，然后单击&#x200B;**下一步**。
+1. 输入应用程序属性，如&#x200B;**Title**、**Name**、**Description**。
 1. 单击&#x200B;**下一步**。
-1. 如果已知，请输入云配置详细信息，否则请单击 **创建**.
-1. 单击 **完成** 以在目录中查看新的AEM Mobile应用程序。
+1. 如果已知，请输入云配置详细信息，否则请单击&#x200B;**创建**。
+1. 单击&#x200B;**完成**&#x200B;以在目录中查看新的AEM Mobile应用。
 
 ![chlimage_1](assets/chlimage_1.gif)
 
@@ -64,19 +64,19 @@ ht-degree: 0%
 
 从应用程序仪表板创建按需应用程序后，下一步是将您的应用程序与云配置相关联。
 
-请参阅 [将您的应用程序关联到云配置](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) 以了解更多详细信息。
+有关更多详细信息，请参阅[将应用程序关联到云配置](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)。
 
 ### 快速入门 {#getting-ahead}
 
-在您熟悉创建按需应用程序并将该应用程序与云配置关联后，请参阅 [内容管理操作](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+在您熟悉创建按需应用程序并将应用程序关联到云配置后，请参阅[内容管理操作](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)。
 
-**内容管理操作** 涉及以下内容的创建和管理：
+**内容管理操作**&#x200B;涉及以下内容的创建和管理：
 
 * [管理文章](/help/mobile/mobile-on-demand-managing-articles.md)
 * [管理横幅](/help/mobile/mobile-on-demand-managing-banners.md)
 * [管理收藏集](/help/mobile/mobile-on-demand-managing-collections.md)
 * [上传共享资源](/help/mobile/mobile-on-demand-shared-resources.md)
-* [发布取消发布内容](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [Publish取消发布内容](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 要了解管理员和开发人员的角色和职责，请参阅以下资源：
 

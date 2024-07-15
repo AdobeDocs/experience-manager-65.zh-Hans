@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 配置商业日历 {#configuring-business-calendars}
 
-*业务日历* 为您的组织定义工作日和非工作日（例如，法定假日、周末和公司关门日）。 使用业务日历时，AEM表单在执行某些日期计算时会跳过非业务日。 在Workbench中，您可以指定是将业务日历用于与用户相关的事件（如任务提醒、截止日期和升级），还是用于与用户无关的操作（如计时器事件和等待服务）。
+*工作日历*&#x200B;为您的组织定义工作日和非工作日（例如，法定假日、周末和公司停业日）。 使用业务日历时，AEM表单在执行某些日期计算时会跳过非业务日。 在Workbench中，您可以指定是将业务日历用于与用户相关的事件（如任务提醒、截止日期和升级），还是用于与用户无关的操作（如计时器事件和等待服务）。
 
 例如，任务提醒配置为在任务分配给用户后的三个工作日发生。 这项任务在星期四分派。 不过，接下来的三天不是工作日，因为星期五是全国性的假日，接下来的两天是周末。 因此，提醒函将于下周的星期三发送。
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 使用默认业务日历 {#using-the-default-business-calendar}
 
-AEM forms提供了一个默认的业务日历(名为 *内置日历*)将星期六和星期日指定为非工作日。 如果组织中的所有用户具有相同的非工作日，则可以更新默认的业务日历以适合您的组织。 仅使用默认业务日历时，您无需在“用户管理”中启用业务日历或提供任何映射。 如果未定义其它业务日历，AEM Forms将使用默认的业务日历。
+AEM Forms提供了一个默认的业务日历（名为&#x200B;*内置日历*），将星期六和星期日指定为非工作日。 如果组织中的所有用户具有相同的非工作日，则可以更新默认的业务日历以适合您的组织。 仅使用默认业务日历时，您无需在“用户管理”中启用业务日历或提供任何映射。 如果未定义其它业务日历，AEM Forms将使用默认的业务日历。
 
 ## 设置多个业务日历 {#setting-up-multiple-business-calendars}
 
@@ -38,21 +38,21 @@ AEM forms提供了一个默认的业务日历(名为 *内置日历*)将星期六
 
 1. 决定如何将相应的业务日历与用户关联。 有两种方法可以将业务日历与用户关联：
 
-   **组成员资格：** 您可以根据用户的组成员资格为用户分配业务日历。 在这种情况下，组中的每个用户将使用相同的业务日历。
+   **组成员资格：**&#x200B;您可以根据用户的组成员资格为用户分配业务日历。 在这种情况下，组中的每个用户将使用相同的业务日历。
 
    如果用户是两个不同组的成员，并且这些组被映射到两个不同的业务日历，AEM Forms将使用它在搜索结果中找到的第一个日历。 在这种情况下，请考虑使用业务日历键将用户与业务日历相关联。
 
-   **业务日历键：** 您可以根据业务日历键（用户管理中指定的设置）将业务日历分配给用户。 然后，将业务日历键映射到表单工作流中的业务日历。
+   **业务日历键：**&#x200B;您可以根据业务日历键为用户分配业务日历，该键是“用户管理”中指定的设置。 然后，将业务日历键映射到表单工作流中的业务日历。
 
-   为用户分配业务日历键的方式取决于您使用的是企业域、本地域还是混合域。 有关设置域的详细信息，请参阅 [添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains).
+   为用户分配业务日历键的方式取决于您使用的是企业域、本地域还是混合域。 有关设置域的详细信息，请参阅[添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。
 
-   如果使用本地域或混合域，则有关用户的信息仅存储在User Management数据库中。 要为这些用户设置业务日历键，请在“用户管理”中添加或编辑用户时，在“业务日历键”字段中输入字符串。 (请参阅 [添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) 然后，将业务日历键（字符串）映射到表单工作流中的业务日历。 (请参阅 [将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   如果使用本地域或混合域，则有关用户的信息仅存储在User Management数据库中。 要为这些用户设置业务日历键，请在“用户管理”中添加或编辑用户时，在“业务日历键”字段中输入字符串。 （请参阅[添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)。） 然后，将业务日历键（字符串）映射到表单工作流中的业务日历。 （请参阅[将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
 
-   如果您使用的是企业域，则有关用户的信息驻留在第三方存储系统中，例如LDAP目录，用户管理将该目录与用户管理数据库同步。 这样，您可以将业务日历键映射到LDAP目录中的字段。 例如，如果目录中的每个用户记录都包含“国家/地区”字段，并且要根据用户所在的国家/地区分配业务日历，请在指定目录的用户设置时，在“业务日历键”字段中指定“国家/地区”字段名称。 (请参阅 [配置目录](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) 然后，您可以将业务日历键（为LDAP目录中的“国家/地区”字段定义的值）映射到表单工作流中的业务日历。 (请参阅 [将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   如果您使用的是企业域，则有关用户的信息驻留在第三方存储系统中，例如LDAP目录，用户管理将该目录与用户管理数据库同步。 这样，您可以将业务日历键映射到LDAP目录中的字段。 例如，如果目录中的每个用户记录都包含“国家/地区”字段，并且要根据用户所在的国家/地区分配业务日历，请在指定目录的用户设置时，在“业务日历键”字段中指定“国家/地区”字段名称。 （请参阅[配置目录](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)。） 然后，您可以将业务日历键（为LDAP目录中的“国家/地区”字段定义的值）映射到表单工作流中的业务日历。 （请参阅[将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
 
-1. 在表单工作流中，为共享相同非工作日的每组用户定义一个日历。 (请参阅 [创建或更新业务日历](configuring-business-calendars.md#create-or-update-a-business-calendar).)
-1. 在表单工作流中，映射每个日历的业务日历键或组成员资格。 (请参阅 [将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
-1. 在Workbench中，流程开发人员选择是否将业务日历用于提醒、截止日期和升级。 (请参阅 [Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+1. 在表单工作流中，为共享相同非工作日的每组用户定义一个日历。 （请参阅[创建或更新业务日历](configuring-business-calendars.md#create-or-update-a-business-calendar)。）
+1. 在表单工作流中，映射每个日历的业务日历键或组成员资格。 （请参阅[将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
+1. 在Workbench中，流程开发人员选择是否将业务日历用于提醒、截止日期和升级。 （请参阅[工作台帮助](https://www.adobe.com/go/learn_aemforms_workbench_63)。）
 
    如果流程开发人员选择使用业务日历，AEM Forms将根据“用户管理”设置和Administration Console中定义的业务日历映射动态选择相应的业务日历；如果不存在映射，则使用默认日历。
 
@@ -67,12 +67,12 @@ AEM forms提供了一个默认的业务日历(名为 *内置日历*)将星期六
 >如果未创建业务日历，则使用默认日历。
 
 1. 在管理控制台中，单击服务> Forms工作流>业务日历。
-1. 要添加新业务日历，请单击 ![bus_cal_plus](assets/bus_cal_plus.png). 文本 *新建日历* 显示在下拉列表中。 选择文本并为日历键入其他名称。
+1. 要添加新业务日历，请单击![bus_cal_plus](assets/bus_cal_plus.png)。 下拉列表中显示文本&#x200B;*新日历*。 选择文本并为日历键入其他名称。
 
    要编辑现有业务日历，请从下拉列表中选择它。
 
 1. 在默认非工作日下，选择任何每周非工作日，如周末。
-1. [可选] 选择使用营业时间，并指定营业日的开始和结束时间。
+1. [可选]选择使用工作时间，并指定工作日的开始和结束时间。
 
    如果选择此选项，则发生在指定时间范围之前的事件将被移动到时间范围的开始，而发生在时间范围之后的事件将被移动到下一个工作日的开始时间。
 
@@ -80,9 +80,9 @@ AEM forms提供了一个默认的业务日历(名为 *内置日历*)将星期六
 
 1. 在左侧的日历中，双击任何其他非工作日，例如假日。 您不能选择过去的天数。 您选择的非工作日会显示在右侧的列表中，其中日期在一行中显示两次。 选择左侧的日期以键入非工作日的名称或描述。
 
-   要从列表中删除非工作日，请单击 ![bus_cal_trash](assets/bus_cal_trash.png) 在白天旁边。
+   要从列表中删除非工作日，请单击该日旁边的![bus_cal_trash](assets/bus_cal_trash.png)。
 
-1. [可选] 如果此日历是默认日历，请选择默认日历。 如果用户相关事件不存在其他日历映射，或者没有为“计时器事件”或“等待服务”指定业务日历，则使用默认日历。 您无法删除默认日历。
+1. [可选]如果此日历是默认日历，请选择“默认日历”。 如果用户相关事件不存在其他日历映射，或者没有为“计时器事件”或“等待服务”指定业务日历，则使用默认日历。 您无法删除默认日历。
 1. 定义完非工作日后，选择“启用日历”以将其激活，然后单击“保存”。
 
    如果您正在更新现有日历，新版本将立即生效，并用于所有业务日历计算，包括已在运行的任务。
@@ -93,7 +93,7 @@ AEM forms提供了一个默认的业务日历(名为 *内置日历*)将星期六
 
 ## 将用户和组映射到业务日历 {#mapping-users-and-groups-to-a-business-calendar}
 
-可以使用两种方法将业务日历与用户关联。 您可以根据业务日历键或用户所属的目录组向用户分配业务日历。 您可以使用“映射”选项卡指定AEM表单将使用的方式，还可以将业务日历键和组映射到业务日历。 有关将业务日历键与用户关联的详细信息，请参阅 [设置多个业务日历](configuring-business-calendars.md#setting-up-multiple-business-calendars).
+可以使用两种方法将业务日历与用户关联。 您可以根据业务日历键或用户所属的目录组向用户分配业务日历。 您可以使用“映射”选项卡指定AEM表单将使用的方式，还可以将业务日历键和组映射到业务日历。 有关将业务日历密钥与用户关联的详细信息，请参阅[设置多个业务日历](configuring-business-calendars.md#setting-up-multiple-business-calendars)。
 
 ### 根据业务日历键将业务日历与用户关联 {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
@@ -112,7 +112,7 @@ AEM forms提供了一个默认的业务日历(名为 *内置日历*)将星期六
 
 1. 在管理控制台中，单击服务>表单工作流>业务日历，然后单击映射选项卡。
 1. 在系统将使用列表中，选择由目录服务器定义的组。
-1. 在“映射”选项卡上，选择“显示目录服务组”。 此时将显示一个列表，其中包含已在“用户管理”中定义的组。 (请参阅 [目录设置](/help/forms/using/admin-help/configuring-directories.md#directory-settings).)
+1. 在“映射”选项卡上，选择“显示目录服务组”。 此时将显示一个列表，其中包含已在“用户管理”中定义的组。 （请参阅[目录设置](/help/forms/using/admin-help/configuring-directories.md#directory-settings)。）
 
    >[!NOTE]
    >

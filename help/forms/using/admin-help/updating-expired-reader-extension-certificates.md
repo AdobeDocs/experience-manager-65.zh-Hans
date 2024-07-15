@@ -17,67 +17,67 @@ ht-degree: 0%
 
 具有Adobe Managed Services或内部部署企业版基本许可证的Adobe Experience Manager Forms (AEM Forms)客户有权使用Acrobat Reader DC扩展服务。 该服务通过扩展具有其他使用权限的Acrobat Reader的功能，使企业能够轻松共享交互式PDF文档。 该服务向PDF文档添加使用权限，并激活在使用Adobe Acrobat Reader打开PDF文档时不可用的功能，例如向文档添加注释、填写表单和保存文档。 第三方用户无需其他软件或插件即可使用启用了权限的文档。 已添加使用权限的PDF文档称为启用权限的文档。 在Acrobat Reader中打开启用了权限的PDF文档的用户可以执行为该文档启用的操作。
 
-Adobe使用公钥基础设施(PKI)颁发数字证书，用于许可和功能启用。 Adobe一直在证书颁发机构下颁发证书 **Adobe根CA**，将于2023年1月7日过期。 证书的过期不会影响使用由颁发的生产证书扩展的PDF文档。 **Adobe根CA** 基于的证书（旧证书）。 所有PDF文档(在2023年1月7日之前使用旧证书扩展的Reader，包括您的客户下载的文档)将继续使用应用于它们的所有使用权限，并且不需要任何更新。
+Adobe使用公钥基础设施(PKI)颁发数字证书，用于许可和功能启用。 Adobe已在证书颁发机构&#x200B;**Adobe根CA**&#x200B;下颁发证书，该证书将于2023年1月7日过期。 证书的过期不会影响使用基于&#x200B;**Adobe根CA**&#x200B;的证书（旧证书）颁发的生产证书扩展的PDF文档。 所有PDF文档(在2023年1月7日之前使用旧证书扩展的Reader，包括您的客户下载的文档)将继续使用应用于它们的所有使用权限，并且不需要任何更新。
 
-新的证书颁发机构， **Adobe根CA G2**、和基于新证书颁发机构的证书现已可用。 在2023年1月7日或之前，开始使用新证书，这些证书基于 **Adobe根CA G2** —Reader扩展新的PDF文档。  您可以 [从Adobe授权网站获取新证书](https://licensing.adobe.com/) 或Adobe支持。
+新证书颁发机构&#x200B;**Adobe根CA G2**&#x200B;和基于新证书颁发机构的证书现在可用。 在2023年1月7日或之前，开始使用新证书(基于&#x200B;**Adobe根CA G2**&#x200B;的证书)Reader扩展新PDF文档。  您可以[从Adobe授权网站](https://licensing.adobe.com/)或Adobe支持部门获取新证书。
 
 ## 常见问题解答
 
-**问：Adobe根证书与Acrobat Reader扩展证书有何区别？ Adobe根证书是否依赖于Acrobat Reader扩展证书？ 这两个证书是否都将于2023年1月到期？**
+**Q.Adobe根证书与Acrobat Reader扩展证书有何区别？ Adobe根证书是否依赖于Acrobat Reader扩展证书？ 这两个证书是否都将在2023年1月过期？**
 
 A.Adobe根CA是从中颁发Acrobat Reader扩展证书的证书颁发机构。 2023年1月7日，“Adobe根CA”及其颁发的所有证书将过期。
 
-**问：Adobe以前曾就证书过期及其对使用/开启PDF文件的影响发出过信函。 应该忽略该通信吗？**
+**Q.Adobe以前曾就证书过期及其对使用/打开PDF文件的影响进行过通信。 应该忽略该通信吗？**
 
 A.根据对情况的重新评估，所有使用旧“PDF根CA”2023年1月7日之前发放的生产证书延长的Adobe文件在2023年1月7日之后继续有效，没有发生任何变化。 如果您已更新PDF文档，则体验不会发生任何更改。
 
-**如果还有其他问题，我应该联系谁？**
+**Q.如果我有其他问题，我应该联系谁？**
 
-A.您可以联系 [Adobe支持](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) 或者提出支持票证。
+A.您可以联系[Adobe支持](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)或提出支持票证。
 
-**问：如果我在2023年1月7日之前不更新证书，会发生什么？**
+**Q.如果在2023年1月7日之前不更新证书，会发生什么情况？**
 
 A. 2023年1月7日之前使用旧“PDF根CA”颁发的生产证书延期的所有内部Adobe文件在2023年1月7日之后继续有效，没有发生任何变化。 使用评估证书扩展的PDF在过期日期后不起作用。
 
-**问：新证书的描述是否与旧证书有所不同？**
+**Q.新证书的描述是否与旧证书不同？**
 
-A.对新的Acrobat Reader扩展证书的说明 **G3-P24** 作为项目名称。 在旧证书(基于“Adobe根CA”的证书)的描述中， **P24** 作为项目名称提及。
+A.新的Acrobat Reader扩展证书说明将&#x200B;**G3-P24**&#x200B;作为程序名。 在旧证书(基于“Adobe根CA”的证书)的描述中，**P24**&#x200B;被作为程序名称提及。
 
-**问：如何获取最新的证书？**
+**Q.如何获取最新的证书？**
 
-A.所有授权的Forms客户（具有有效许可证）都可从以下网站下载新证书(基于“Adobe根CA G2”的证书)： [Adobe授权网站](https://licensing.adobe.com/). 如果您在Adobe授权网站上找不到证书，请联系 [Adobe支持](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) 或者提出支持票证。
+A.所有授权的Forms客户（具有有效许可证）都可以从[Adobe授权网站](https://licensing.adobe.com/)下载新证书(基于“Adobe根CA G2”的证书)。 如果在Adobe授权网站上找不到证书，请联系[Adobe支持](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support)或提出支持票证。
 
-**问：使用由“PDF根CA”（旧证书颁发机构）颁发的证书扩展的Adobe文档在2023年1月7日之后是否仍然有效？**
+**Q.使用从“PDF根CA”（旧证书颁发机构）颁发的证书扩展的Adobe文档在2023年1月7日之后是否继续工作？**
 
 A.是，所有使用在2023年1月7日之前从“PDF根CA”（旧证书颁发机构）颁发的生产证书延期的Adobe文件，在2023年1月7日之后继续有效，无任何变更。 使用评估证书延长的PDF文档在过期日期后不再有效。
 
-**问：要使用由“PDF根CA”（旧证书颁发机构）颁发的证书扩展的Adobe文档，需要哪个Adobe Acrobat Reader版本？**
+**Q.需要使用哪个版本的Adobe Acrobat Reader才能继续使用由“Adobe根CA”（旧证书颁发机构）颁发的证书扩展的PDF文档？**
 
-A. Adobe Acrobat Reader 2020或更高版本需要使用扩展了“Adobe根CA”（旧证书颁发机构）的PDF文档。 它是发布本文档时支持的Acrobat Reader版本。 如果您使用 [不受支持的Adobe Acrobat版本](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)，Adobe建议您 [下载并安装最新版本的Adobe Acrobat Reader](https://get.adobe.com/reader/).
+A. Adobe Acrobat Reader 2020或更高版本需要使用扩展了“Adobe根CA”（旧证书颁发机构）的PDF文档。 它是发布本文档时支持的Acrobat Reader版本。 如果您使用的是[不受支持的Adobe Acrobat版本](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)，Adobe建议您[下载并安装最新版本的Adobe Acrobat Reader](https://get.adobe.com/reader/)。
 
-**问：要使用由“PDF根CA 2”（新的证书颁发机构）颁发的证书扩展的Adobe文档，需要哪个Adobe Acrobat Reader版本？**
+**Q.需要使用哪个版本的Adobe Acrobat Reader才能继续使用由“Adobe根CA 2”（新证书颁发机构）颁发的证书扩展的PDF文档？**
 
-A. Adobe Acrobat Reader 2020或更高版本需要使用扩展了“Adobe根CA 2”（新证书颁发机构）的PDF文档。 如果您使用 [不受支持的Adobe Acrobat Reader版本](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)，Adobe建议您 [下载并安装最新版本的Adobe Acrobat Reader](https://get.adobe.com/reader/).
+A. Adobe Acrobat Reader 2020或更高版本需要使用扩展了“Adobe根CA 2”（新证书颁发机构）的PDF文档。 如果您使用的是[不受支持的Adobe Acrobat Reader版本](https://helpx.adobe.com/cn/support/programs/eol-matrix.html)，Adobe建议您[下载并安装最新版本的Adobe Acrobat Reader](https://get.adobe.com/reader/)。
 
-**问：我能否在继续使用现有别名的同时，删除旧的Acrobat Reader Extensions证书，并在Adobe Experience Manager Forms Server上添加新证书？**
+**Q.我是否可以删除旧的Acrobat Reader扩展证书并在Adobe Experience Manager Forms服务器上添加新证书，同时继续使用现有别名？**
 
 答：是的，您可以删除旧的Acrobat Reader扩展证书，然后使用现有别名向Adobe Experience Manager Forms服务器添加新证书。
 
-**问：能否在Adobe Experience Manager Forms服务器上同时保留新证书和旧Acrobat Reader扩展证书？**
+**Q.我能否在Adobe Experience Manager Forms服务器上同时保留新的和旧的Acrobat Reader扩展证书？**
 
-答：是的，您可以保留两个证书，但可以在Adobe Experience Manager Forms服务器上使用不同的别名。 自2023年1月7日起，您只能使用新证书Reader扩展PDF文档。
+答：是的，您可以保留两个证书，但可以在Adobe Experience Manager Forms服务器上使用不同的别名。 Post 2023年1月7日，您只能使用新证书来Reader扩展PDF文档。
 
-**问：我是否可以将相同的Acrobat Reader扩展证书导入所有Adobe Experience Manager Forms环境？**
+**Q.我是否可以将相同的Acrobat Reader扩展证书导入所有Adobe Experience Manager Forms环境？**
 
 答：是，可以在多个环境中使用相同的Acrobat Reader扩展证书。
 
-**问：如何检查应用于PDF文档的使用权限？**
+**Q.如何检查应用于PDF文档的使用权限？**
 
-A.您可以使用 [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) 用于检索有关应用于PDF文档的使用权限的信息的API。
+A.您可以使用[getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API检索有关应用于PDF文档的使用权限的信息。
 
-**问：如何更改Acrobat Reader扩展证书文件的密码？**
+**Q.如何更改Acrobat Reader扩展证书文件的密码？**
 
-A.在Microsoft Windows上，要更改证书密码，请使用Microsoft管理控制台(MMC)安装证书并选择 **将密钥标记为可导出**. 安装后，使用私钥导出证书，然后为PFX文件使用其他密码。
+A.在Microsoft Windows上，要更改证书密码，请使用Microsoft管理控制台(MMC)安装证书，然后选择&#x200B;**将密钥标记为可导出**。 安装后，使用私钥导出证书，然后为PFX文件使用其他密码。
 
 
 <!-- 

@@ -245,7 +245,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 在开始查询您的内容之前，您需要：
 
 * 启用端点
-   * 使用“工具”>“资源”>“GraphQL”
+   * 使用“工具”>“Assets”>“GraphQL”
    * [启用 GraphQL 端点](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)
 
 * 访问GraphiQL（如有必要）
@@ -272,7 +272,7 @@ It provides features such as syntax-highlighting, auto-complete, auto-suggest, t
 
 ### 用于测试查询的位置 {#where-to-test-your-queries}
 
-查询可在 [GraphiQL接口](/help/sites-developing/headless/graphql-api/graphiql-ide.md)例如，位于：
+可在[GraphiQL接口](/help/sites-developing/headless/graphql-api/graphiql-ide.md)中输入查询，例如：
 
 * `http://localhost:4502/aem/graphiql.html`
 

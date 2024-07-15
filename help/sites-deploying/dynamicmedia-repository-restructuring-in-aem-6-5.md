@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Adobe Experience Manager 6.5中的Dynamic Media存储库重构 {#dynamic-media-repository-restructuring-in-aem}
 
-如父项中所述 [Adobe Experience Manager 6.5中的存储库重组](/help/sites-deploying/repository-restructuring.md) 页面，升级到Experience Manager6.5的客户应使用此页面评估与影响Dynamic Media的存储库更改相关的工作量。 在Experience Manager6.5升级过程中，有些更改需要您尽心尽力，而有些则可能会推迟到将来升级。
+如Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到Experience Manager6.5的客户应使用此页面评估与影响Dynamic Media的存储库更改相关的工作量。 在Experience Manager6.5升级过程中，有些更改需要您尽心尽力，而有些则可能会推迟到将来升级。
 
 **在将来升级之前**
 
@@ -116,7 +116,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>1.从YouTube取消发布所有视频<br /> 2. 使用新的TouchUI创建YouTube配置(从 <code>/conf</code>)，包括从旧位置复制所有渠道<br /> 3. 将所有视频发布回YouTube。</p> <p>此工作流可生成新的YouTube URL。 如果您在创建TouchUI YouTube配置之前没有取消发布，则您将在属性下列出多个YouTube URL，因为如果有机会，重新创建的渠道会再次发布。 此功能意味着您的“属性”下列出了无用的URL。</p> </td>
+   <td><p>1.从YouTube<br />取消发布所有视频2. 使用新的TouchUI（从<code>/conf</code>）创建YouTube配置，包括从旧位置<br /> 3复制所有渠道。 Publish将所有视频返回YouTube。</p> <p>此工作流可生成新的YouTube URL。 如果您在创建TouchUI YouTube配置之前没有取消发布，则您将在属性下列出多个YouTube URL，因为如果有机会，重新创建的渠道会再次发布。 此功能意味着您的“属性”下列出了无用的URL。</p> </td>
   </tr>
   <tr>
    <td><strong>注释</strong></td>

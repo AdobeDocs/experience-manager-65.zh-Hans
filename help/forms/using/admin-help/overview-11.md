@@ -27,11 +27,11 @@ ht-degree: 0%
 
 管理控制台中的“运行状况监视器”页面有三个选项卡：
 
-* “系统”选项卡显示资源监视图表和有关Forms Server（或群集环境中的节点）的信息。 (请参阅 [查看系统信息](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
-* “工作管理器”选项卡显示与“工作管理器”相关的数据，例如“工作管理器”队列中的工作项数。 您可以使用各种标准筛选信息，或使用操作工具管理单个工作项。 (请参阅 [查看与工作管理器相关的统计信息](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
-* 使用“作业清除计划程序”选项卡，您可以从Job Manager数据库中清除过时的记录。 (请参阅 [从作业管理器数据库中清除记录](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
+* “系统”选项卡显示资源监视图表和有关Forms Server（或群集环境中的节点）的信息。 （请参阅[查看系统信息](/help/forms/using/admin-help/view-system-information.md#view-system-information)。）
+* “工作管理器”选项卡显示与“工作管理器”相关的数据，例如“工作管理器”队列中的工作项数。 您可以使用各种标准筛选信息，或使用操作工具管理单个工作项。 （请参阅[查看与工作管理器相关的统计信息](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)。）
+* 使用“作业清除计划程序”选项卡，您可以从Job Manager数据库中清除过时的记录。 （请参阅[清除作业管理器数据库中的记录](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database)。）
 
-“运行状况监视器”网页中填充了通过Gemfire API收集的统计数据。 此API会自动发现群集中的所有节点。 它还解决了从代理服务器或负载平衡器后面收集统计信息时出现的安全问题。 Java选项可用于微调运行状况监视器，从而减少对AEM表单环境性能的影响。 (请参阅 [微调运行状况监视器性能](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance).)
+“运行状况监视器”网页中填充了通过Gemfire API收集的统计数据。 此API会自动发现群集中的所有节点。 它还解决了从代理服务器或负载平衡器后面收集统计信息时出现的安全问题。 Java选项可用于微调运行状况监视器，从而减少对AEM表单环境性能的影响。 （请参阅[运行状况监视器性能微调](/help/forms/using/admin-help/fine-tuning-health-monitor-performance.md#fine-tuning-health-monitor-performance)。）
 
 **访问运行状况监视器**
 

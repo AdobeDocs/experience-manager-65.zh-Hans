@@ -19,12 +19,12 @@ ht-degree: 0%
 
 # 使用PDF Generator的简介 {#introduction-to-working-with-pdf-generator}
 
-PDF Generator将各种文件格式转换为PDF。 它还会将PDF转换为其他文件格式并优化PDF文档的大小。 有关支持的文件格式的列表，请参见 [PDF Generator软件支持](/help/forms/using/aem-forms-jee-supported-platforms.md)
+PDF Generator将各种文件格式转换为PDF。 它还会将PDF转换为其他文件格式并优化PDF文档的大小。 有关支持的文件格式的列表，请参阅[PDF Generator的软件支持](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
-**正在将文件发送到PDF Generator以供处理**
+**正在将文件发送到PDF Generator以进行处理**
 
 有三种方法可以将文件发送到PDF Generator进行处理：
 
-* 管理员可以访问Administration Console中的PDFG页面。 (请参阅 [使用PDF Generator转换文件](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
-* 用户可以通过登录来访问PDFG最终用户页面 `http(s)://'[server]:[port]'/pdfgui.` 从那里，他们可以访问PDFG网络打印机、创建PDF、PDFHTML、Export PDF和Optimize PDF页。
-* 您可以为服务配置端点。 请参阅 <!--Fix broken link to Managing Endpoints --> [生成PDF服务推荐](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations).
+* 管理员可以访问Administration Console中的PDFG页面。 (请参阅[使用PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)转换文件。)
+* 用户可以通过登录到`http(s)://'[server]:[port]'/pdfgui.`来访问PDFG最终用户页面。从那里，用户可以访问PDFG网络打印机、创建PDF、PDFHTML、Export PDF和Optimize PDF页面。
+* 您可以为服务配置端点。 查看<!--Fix broken link to Managing Endpoints --> [生成PDF服务推荐](configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations)。

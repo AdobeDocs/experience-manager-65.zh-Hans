@@ -24,12 +24,12 @@ ht-degree: 45%
 
 >[!NOTE]
 >
->发射背后的理论详见 [启动次数](/help/sites-authoring/launches.md) 在标准创作文档中。
+>在标准创作文档的[启动项](/help/sites-authoring/launches.md)下详细描述了启动项背后的理论。
 >
->在以下文档以及经典用户界面中使用启动项的特定信息中，都可以找到 [创建启动项](/help/sites-classic-ui-authoring/classic-launches-creating.md)， [编辑启动项](/help/sites-classic-ui-authoring/classic-launches-editing.md)、和 [提升启动项](/help/sites-classic-ui-authoring/classic-launches-promoting.md).
+>以下文档提供了在经典UI中使用启动项的特定信息，这些文档包括[创建启动项](/help/sites-classic-ui-authoring/classic-launches-creating.md)、[编辑启动项](/help/sites-classic-ui-authoring/classic-launches-editing.md)和[提升启动项](/help/sites-classic-ui-authoring/classic-launches-promoting.md)。
 
 >[!CAUTION]
 >
 >经典UI中无法为启动项创建多个源分支。
 
-可以通过直接访问启动项控制台 [http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)
+可以使用[http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)直接访问启动项控制台

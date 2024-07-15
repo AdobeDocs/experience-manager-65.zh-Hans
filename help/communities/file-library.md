@@ -26,41 +26,41 @@ ht-degree: 1%
 此文档的此部分描述了：
 
 * 向AEM站点添加文件库功能。
-* 的配置设置 `File Library` 组件。
+* `File Library`组件的配置设置。
 
 ### 将文件库添加到页面 {#adding-a-file-library-to-a-page}
 
-添加 `File Library` 组件到创作模式下的页面，找到该组件：
+要将`File Library`组件添加到创作模式下的页面，请找到该组件：
 
 * `Communities / File Library`
 
 并将其拖动到页面上的适当位置。
 
-有关必要信息，请访问 [社区组件基础知识](/help/communities/basics.md).
+有关必要的信息，请访问[社区组件基础知识](/help/communities/basics.md)。
 
-当 [所需的客户端库](/help/communities/essentials-file-library.md#essentials-for-client-side) 包括，它是如何 `File Library` 组件出现：
+当包含[所需的客户端库](/help/communities/essentials-file-library.md#essentials-for-client-side)时，它就是`File Library`组件的显示方式：
 
 ![file-library1](assets/file-library1.png)
 
 ### 配置文件库 {#configuring-file-library}
 
-选择已放置的 `File Library` 组件，以便您能够访问和选择 `Configure` 图标，打开“编辑”对话框。
+选择放置的`File Library`组件，以便您可以访问并选择用于打开“编辑”对话框的`Configure`图标。
 
-![configure-new](assets/configure-new.png)
+![配置 — 新](assets/configure-new.png)
 
 ![file-library2](assets/file-library2.png)
 
 #### “评论”选项卡 {#comments-tab}
 
-在 **评论** 选项卡，指定是否以及如何显示已上载文件的注释：
+在&#x200B;**备注**&#x200B;选项卡下，指定是否显示已上传文件的备注以及如何显示：
 
-* **允许对文件发表评论**
+* **允许对文件进行评论**
 
   如果选中，则允许对已上传的文件添加注释。 默认值为未选中。
 
-* **每页的评论数**
+* 每页&#x200B;**条评论**
 
-  限制每页显示的评论数和显示的回复数。 默认为 **10**.
+  限制每页显示的评论数和显示的回复数。 默认值为&#x200B;**10**。
 
 * **最大文件大小**
 
@@ -100,7 +100,7 @@ ht-degree: 1%
 
 * **允许关注**
 
-  如果选中，则为博客文章提供以下功能，允许成员成为 [已通知](/help/communities/notifications.md) 新职位。 默认值为未选中。
+  如果选中，请为博客文章加入以下功能，以便成员能够[收到新帖子的通知](/help/communities/notifications.md)。 默认值为未选中。
 
 * **启用提及功能**
 
@@ -114,13 +114,13 @@ ht-degree: 1%
 
   指定允许的模式字符串，以便在帖子中标记(@mention)已注册的用户。 例如：`~{{familyName}}{{givenName}}`。
 
-* **允许主题回复**
+* **允许线程回复**
 
   如果选中，则允许回复已发布的评论。 默认值为未选中。
 
 #### “用户审核”选项卡 {#user-moderation-tab}
 
-在 **用户审核** 选项卡中，如果允许评论，则配置评论的审核：
+在&#x200B;**用户审核**&#x200B;选项卡下，如果允许评论，请配置审核评论：
 
 * **预审**
 
@@ -134,7 +134,7 @@ ht-degree: 1%
 
   如果选中，则允许受信任成员审查方拒绝评论。 默认值为未选中。
 
-* **关闭/重新打开注释**
+* **关闭/重新打开评论**
 
   如果选中，则允许受信任成员审查方关闭和重新打开注释。 默认值为未选中。
 
@@ -146,17 +146,17 @@ ht-degree: 1%
 
   如果选中，则允许访客从下拉列表中选择将评论标记为不适当的原因。 默认值为未选中。
 
-* **自定义标志原因**
+* **自定义标记原因**
 
   如果选中，则允许访客输入将评论标记为不适当的原因。 默认值为未选中。
 
 * **审核阈值**
 
-  输入当访客对评论进行标记的次数达到此值后通知审查方。 默认为一次(**1**)。
+  输入当访客对评论进行标记的次数达到此值后通知审查方。 默认值为一次(**1**)。
 
 * **标记限制**
 
-  输入在将评论从公开视图隐藏之前必须对其标记的次数。 此数字必须大于或等于 **审核阈值**. 默认值为5。
+  输入在将评论从公开视图隐藏之前必须对其标记的次数。 此数字必须大于或等于&#x200B;**审核阈值**。 默认值为5。
 
 ### “排序设置”选项卡 {#sort-settings-tab}
 
@@ -166,8 +166,8 @@ ht-degree: 1%
 
 ### 附加信息 {#additional-information}
 
-欲知更多信息，请访问 [文件库要点](/help/communities/essentials-file-library.md) 适用于开发人员的页面。
+更多信息可在[File Library Essentials](/help/communities/essentials-file-library.md)页面上找到开发人员。
 
-有关审核已发布的主题和评论，请参阅 [审核用户生成的内容](/help/communities/moderate-ugc.md).
+有关审核已发布的主题和评论，请参阅[审核用户生成的内容](/help/communities/moderate-ugc.md)。
 
-有关标记已发布的主题和评论，请参阅 [标记用户生成的内容](/help/communities/tag-ugc.md).
+有关标记已发布的主题和评论，请参阅[标记用户生成的内容](/help/communities/tag-ugc.md)。

@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本页介绍AEM的推荐拓扑。 有关群集功能以及如何配置这些功能的更多信息，请参见 [Apache Sling Discovery API文档](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html).
+>本页介绍AEM的推荐拓扑。 有关群集功能以及如何配置这些功能的更多信息，请参阅[Apache Sling发现API文档](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)。
 
 从AEM 6.2开始，MicroKernels充当持久性管理器。根据您的需要选择一种部署类型，具体取决于实例的用途和您考虑的部署类型。
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 
 在此方案中，单个TarMK实例在单个服务器上运行。
 
-**这是创作实例的默认部署。**
+**这是作者实例的默认部署。**
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
@@ -71,19 +71,19 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关如何使用TarMK冷待机配置AEM的更多信息，请参阅 [此](/help/sites-deploying/tarmk-cold-standby.md) 文章。
+>有关如何使用TarMK冷待机配置AEM的更多信息，请参阅[此](/help/sites-deploying/tarmk-cold-standby.md)文章。
 
 >[!NOTE]
 >
->此TarMK示例中的“冷备用”部署要求主实例和备用实例都单独授予许可，因为对故障转移服务器进行持续复制。 欲知关于许可的更多信息，请参见 [Adobe一般许可条款](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>此TarMK示例中的“冷备用”部署要求主实例和备用实例都单独授予许可，因为对故障转移服务器进行持续复制。 有关许可的详细信息，请参阅[Adobe一般许可条款](https://www.adobe.com/legal/terms/enterprise-licensing.html)。
 
 ### TarMK场 {#tarmk-farm}
 
 多个Oak实例分别运行一个TarMK实例。 TarMK存储库是独立的，需要保持同步。
 
-使存储库保持同步的前提是，创作服务器向每个场成员发布相同的内容。 有关更多信息，请参阅 [复制](/help/sites-deploying/replication.md).
+使存储库保持同步的前提是，创作服务器向每个场成员发布相同的内容。 有关详细信息，请参阅[复制](/help/sites-deploying/replication.md)。
 
-对于AEM Communities，从不复制用户生成的内容(UGC)。 有关在TarMK场上支持UGC的信息，请参阅 [AEM Communities的注意事项](#considerations-for-aem-communities).
+对于AEM Communities，从不复制用户生成的内容(UGC)。 有关在TarMK场上支持UGC的信息，请参阅AEM Communities的[注意事项](#considerations-for-aem-communities)。
 
 **这是发布环境的默认部署。**
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 ### 带有MongoMK故障转移功能的Oak群集，可在单个数据中心实现高可用性 {#oak-cluster-with-mongomk-failover-for-high-availability-in-a-single-datacenter}
 
-此方法意味着多个Oak实例访问单个数据中心中的MongoDB副本集，实际上为AEM创作环境创建了一个主动 — 主动群集。 MongoDB中的副本集用于在硬件或网络出现故障时提供高可用性和冗余。
+此方法意味着多个Oak实例在单个数据中心内访问一个MongoDB副本集，实际上就是为AEM创作环境创建一个主动 — 主动群集。 MongoDB中的副本集用于在硬件或网络出现故障时提供高可用性和冗余。
 
 ![chlimage_1-18](assets/chlimage_1-18.png)
 
@@ -110,9 +110,9 @@ ht-degree: 0%
 
 * 在某些情况下，性能可能会低于TarMK
 
-### 在多个数据中心之间使用MongoMK故障转移功能的Oak群集 {#oak-cluster-with-mongomk-failover-across-multiple-datacenters}
+### 在多个数据中心间具有MongoMK故障转移功能的Oak群集 {#oak-cluster-with-mongomk-failover-across-multiple-datacenters}
 
-此方法意味着多个Oak实例跨多个数据中心访问MongoDB副本集，实际上为AEM创作环境创建了一个主动 — 主动群集。 在多个数据中心中， MongoDB复制提供了相同的高可用性和冗余，但现在包括处理数据中心中断的能力。
+此方法意味着多个Oak实例跨多个数据中心访问一个MongoDB副本集，实际上就是为AEM创作环境创建一个主动 — 主动群集。 在多个数据中心中， MongoDB复制提供了相同的高可用性和冗余，但现在包括处理数据中心中断的能力。
 
 ![oakclustermongofailover2数据中心](assets/oakclustermongofailover2datacenters.png)
 
@@ -123,11 +123,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在上图中，AEM Server 3和AEM Server 4呈现非活动状态，假定数据中心2中的AEM服务器与数据中心1中的MongoDB主节点之间的网络延迟高于记录要求 [此处](/help/sites-deploying/aem-with-mongodb.md#checklists). 如果最大延迟与要求兼容（例如通过使用可用区），则数据中心2中的AEM服务器也可以处于活动状态，从而跨多个数据中心创建主动 — 主动AEM群集。
+>在上图中，AEM Server 3和AEM Server 4呈现非活动状态，假定数据中心2中的AEM服务器与数据中心1中的MongoDB主节点之间的网络延迟高于记录在[此处](/help/sites-deploying/aem-with-mongodb.md#checklists)中的要求。 如果最大延迟与要求兼容（例如通过使用可用区），则数据中心2中的AEM服务器也可以处于活动状态，从而跨多个数据中心创建主动 — 主动AEM群集。
 
 >[!NOTE]
 >
->有关本节所述的MongoDB架构概念的其他信息，请参阅 [MongoDB复制](https://docs.mongodb.org/manual/replication/).
+>有关本节中描述的MongoDB架构概念的其他信息，请参阅[MongoDB复制](https://docs.mongodb.org/manual/replication/)。
 
 ## 微内核：要使用哪一个 {#microkernels-which-one-to-use}
 
@@ -135,7 +135,7 @@ ht-degree: 0%
 
 您可以使用这些决策矩阵来建立适合您需求的最佳部署类型。
 
-Adobe强烈建议将TarMK作为客户在所有部署方案中(对于AEM创作实例和发布实例)使用的默认持久性技术，但以下列出的用例除外。
+Adobe强烈建议将TarMK作为客户在所有部署方案中(对于AEM创作实例和Publish实例)使用的默认持久性技术，但以下列出的用例除外。
 
 ### 在创作实例上选择AEM MongoMK而非TarMK的异常 {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
@@ -151,7 +151,7 @@ Adobe强烈建议将TarMK作为客户在所有部署方案中(对于AEM创作实
 
 >[!NOTE]
 >
->在部署的硬件配置环境中，可以使用“困难日”来评估客户应用程序的性能。 有关此工具的更多信息，请参阅 [此处](/help/sites-developing/tough-day.md).
+>在部署的硬件配置环境中，可以使用“困难日”来评估客户应用程序的性能。 有关此工具的详细信息，可在[此处](/help/sites-developing/tough-day.md)获得。
 
 MongoDB的最低部署通常涉及以下拓扑：
 
@@ -164,11 +164,11 @@ MongoDB的最低部署通常涉及以下拓扑：
 
 如果在部署的前18个月中不符合上述标准，则建议首先使用TarMK部署AEM，然后在符合上述标准时重新评估您的配置，最后确定是保留在TarMK上还是迁移到MongoMK。
 
-### 在发布实例上选择AEM MongoMK而非TarMK的异常 {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
+### 在Publish实例上选择AEM MongoMK而非TarMK的异常 {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-publish-instances}
 
 不建议为发布实例部署MongoMK。 部署的发布层几乎总是作为运行TarMK的完全独立的发布实例的场部署，这些实例通过从创作实例复制内容而保持同步。 这种“无共享内容”体系结构适用于发布实例，允许发布层的部署以线性方式水平扩展。 场拓扑还提供了滚动向发布实例应用任何更新或升级的优势，这样对发布层进行的任何更改都不需要停机时间。
 
-当存在多个发布者时，这不适用于在发布层上使用MongoMK群集的AEM Communities。 如果选择JSRP(请参见 [社区内容存储](/help/communities/working-with-srp.md))，则MongoMK群集将是合适的，任何发布端群集（不论选择哪个MK，如MongoDB或RDB）也是如此。
+当存在多个发布者时，这不适用于在发布层上使用MongoMK群集的AEM Communities。 如果选择JSRP（请参阅[Community Content Storage](/help/communities/working-with-srp.md)），则MongoMK群集将是合适的，任何发布端群集也是如此，无论选择哪个MK（如MongoDB或RDB）。
 
 ### 使用MongoMK部署AEM时的先决条件和Recommendations {#prerequisites-and-recommendations-when-deploying-aem-with-mongomk}
 
@@ -176,27 +176,27 @@ MongoDB的最低部署通常涉及以下拓扑：
 
 **MongoDB部署的必需先决条件：**
 
-1. MongoDB部署架构和大小调整必须包含在项目实施中，并且必须获得熟悉AEM的Adobe咨询或MongoDB架构师的帮助；
+1. MongoDB部署架构和规模调整必须在熟悉AEM的Adobe Consulting或MongoDB架构师的帮助下成为项目实施的一部分；
 1. 合作伙伴或客户团队中必须具备MongoDB专业知识，才能有信心维持和维护现有或新的MongoDB环境；
 1. 您可以选择部署MongoDB的商业版本或开源版本(AEM同时支持两者)，但必须直接从MongoDB Inc购买MongoDB维护和支持合同；
 1. 整体AEM和MongoDB体系结构和基础架构应由AdobeAEM架构师很好地定义和验证；
 1. 查看包含MongoDB的AEM部署的支持模型。
 
-**针对MongoDB部署的强大建议：**
+针对MongoDB部署的&#x200B;**强建议：**
 
-* 请参阅Adobe Experience Manager的MongoDB [文章](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)；
-* 查看MongoDB生产 [清单](https://docs.mongodb.org/manual/administration/production-checklist/)；
-* 参加在线提供的MongoDB认证课程 [此处](https://university.mongodb.com/).
+* 请参阅MongoDB for Adobe Experience Manager [文章](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)；
+* 查看MongoDB生产[清单](https://docs.mongodb.org/manual/administration/production-checklist/)；
+* 参加在线上[此处](https://university.mongodb.com/)提供的MongoDB认证课程。
 
 >[!NOTE]
 >
->有关这些指南、先决条件和建议的所有其他问题，请联系 [Adobe客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html).
+>有关这些指南、先决条件和建议的所有其他问题，请联系[Adobe客户关怀](https://helpx.adobe.com/cn/marketing-cloud/contact-support.html)。
 
 ### AEM Communities的注意事项 {#considerations-for-aem-communities}
 
-对于计划部署的站点 [AEM Communities](/help/communities/overview.md)，建议执行以下操作 [选择部署](/help/communities/working-with-srp.md#characteristicsofstorageoptions) 优化了处理发布环境中的社区成员发布的UGC。
+对于计划部署[AEM Communities](/help/communities/overview.md)的站点，建议[选择一个已针对处理社区成员从发布环境中发布的UGC而优化的部署](/help/communities/working-with-srp.md#characteristicsofstorageoptions)。
 
-通过使用 [公用存储](/help/communities/working-with-srp.md)，UGC无需在创作实例和其他发布实例之间复制即可获得UGC的一致视图。
+通过使用[公用存储](/help/communities/working-with-srp.md)，无需在作者和其他发布实例之间复制UGC即可获得UGC的一致视图。
 
 下面是一组决策矩阵，可帮助您为部署选择最佳类型的持久性：
 
@@ -210,7 +210,7 @@ MongoDB的最低部署通常涉及以下拓扑：
 
 >[!NOTE]
 >
->MongoDB是第三方软件，未包含在AEM许可包中。 欲知更多信息，请参见 [MongoDB许可政策](https://www.mongodb.org/about/licensing/) 页面。
+>MongoDB是第三方软件，未包含在AEM许可包中。 有关详细信息，请参阅[MongoDB许可策略](https://www.mongodb.org/about/licensing/)页面。
 >
 >为了充分利用AEM部署，Adobe建议许可MongoDB Enterprise版本，以获得专业支持。
 >
@@ -218,4 +218,4 @@ MongoDB的最低部署通常涉及以下拓扑：
 >
 >如果您希望在MongoDB上同时运行author和publish，则需要购买两个单独的许可证。
 >
->欲了解更多信息，请参见 [适用于Adobe Experience Manager的MongoDB页面](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+>有关详细信息，请参阅[Adobe Experience Manager的MongoDB页面](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager)。

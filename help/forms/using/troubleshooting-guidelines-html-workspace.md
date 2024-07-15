@@ -22,17 +22,17 @@ ht-degree: 0%
 
 ## 无法安装AEM Forms工作区包 {#unable-to-install-aem-forms-workspace-package}
 
-安装修补程序后，打开AEM Forms工作区。 如果遇到未找到资源错误，请打开CRX包管理器，然后重新安装 `adobe-lc-workspace-pkg-<version>.zip` 包。
+安装修补程序后，打开AEM Forms工作区。 如果您遇到未找到资源错误，请打开CRX包管理器，然后重新安装`adobe-lc-workspace-pkg-<version>.zip`包。
 
-安装包时，如果遇到错误 `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`，请执行以下步骤：
+在安装包时，如果遇到错误`javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`，请执行以下步骤：
 
-1. 登录到CRXDE Lite。 默认URL为 `https://[localhost]:'port'/lc/crx/de/index.jsp`
+1. 登录到CRXDE Lite。 默认url为`https://[localhost]:'port'/lc/crx/de/index.jsp`
 1. 删除以下节点：
 
    `/home/groups/P/PERM_WORKSPACE_USER`
 
-1. 转到包管理器。 默认URL为 `https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
-1. 搜索并安装 `adobe-lc-workspace-pkg-[version].zip` 包。
+1. 转到包管理器。 默认URL为`https://[localhost]:'port'/lc/crx/packmgr/index.jsp.`
+1. 搜索并安装`adobe-lc-workspace-pkg-[version].zip`包。
 1. 重新启动应用程序服务器。
 
 >[!NOTE]
@@ -45,9 +45,9 @@ ht-degree: 0%
 
 在AEM Forms工作区中：
 
-* 要获取有关特定组件文件的日志记录信息，请附加 `/log/<ComponentFile>/<LogLevel>` 在URL中，然后按 `Enter`. 在指定的日志级别上，组件文件的所有日志记录信息都打印在控制台上。
+* 要获取有关特定组件文件的日志记录信息，请在URL中附加`/log/<ComponentFile>/<LogLevel>`，然后按`Enter`。 在指定的日志级别上，组件文件的所有日志记录信息都打印在控制台上。
 
-* 要获取所有组件文件的日志记录信息，请附加 `/log/all/trace` 在URL中，然后按 `Enter`.
+* 若要获取所有组件文件的日志记录信息，请在URL中附加`/log/all/trace`，然后按`Enter`。
 
 * 日志格式： `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -158,21 +158,21 @@ ht-degree: 0%
 
 可以在不同的浏览器中调试脚本和样式。
 
-* **在IE中进行调试**：要在IE中调试AEM Forms工作区，请参阅： [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **在IE中调试**：若要在IE中调试AEM Forms工作区，请参阅：[https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie)。
 
-* **在Chrome中进行调试**：要在Chrome中打开调试器，请使用快捷键：Ctrl+Shift+I。有关更多信息，请参阅： [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **在Chrome中调试**：要在Chrome中打开调试器，请使用快捷键： Ctrl+Shift+I。有关详细信息，请参阅：[https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/)。
 
 * **在Firefox中进行调试**：有多个加载项可用于在Firefox中调试脚本和样式。 例如，Firebug就是这样一个调试实用程序([https://getfirebug.com](https://getfirebug.com))。
 
 ## 常见问题解答 {#faqs}
 
-1. PDF表单未在Google Chrome中渲染或提交。
+1. Google Chrome中未呈现或提交PDF表单。
 
    1. 安装Adobe®Reader®插件。
    1. 在Chrome中，打开chrome://plugins以查看可用的插件。
    1. 禁用ChromePDF查看器插件，并启用Adobe Reader插件。
 
-1. SWF表单或指南未在Google Chrome中呈现。
+1. Google Chrome中未呈现SWF表单或指南。
 
    1. 在Chrome中，打开chrome://plugins以查看可用的插件。
    1. 有关AdobeFlash®播放器插件的详细信息，请参阅。

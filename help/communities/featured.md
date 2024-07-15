@@ -35,41 +35,41 @@ ht-degree: 2%
 此文档的此部分描述了：
 
 * 将精选内容添加到社区站点。
-* 的配置设置 `Featured Content` 组件。
+* `Featured Content`组件的配置设置。
 
 ## 将精选内容添加到页面 {#adding-featured-content-to-a-page}
 
-添加 `Featured Content` 组件到创作模式下的页面，请使用组件浏览器查找
+要将`Featured Content`组件添加到创作模式下的页面，请使用组件浏览器来查找
 
 * `Communities / Featured Content`
 
 并将其拖动到应显示精选内容的页面上的适当位置。
 
-有关必要信息，请访问 [社区组件基础知识](basics.md).
+有关必要的信息，请访问[社区组件基础知识](basics.md)。
 
-当 [所需的客户端库](essentials-featured.md#essentials-for-client-side) 包括，这就是 `Featured Content` 组件出现：
+当包含[所需的客户端库](essentials-featured.md#essentials-for-client-side)时，`Featured Content`组件的显示方式如下：
 
-![功能内容](assets/featuredcontent.png)
+![featuredcontent](assets/featuredcontent.png)
 
 ## 配置精选内容 {#configuring-featured-content}
 
-选择已放置的 `Featured Content` 组件，以便您能够访问和选择 `Configure` 图标打开“编辑”对话框。
+选择放置的`Featured Content`组件，以便您可以访问并选择用于打开“编辑”对话框的`Configure`图标。
 
-![configure-new](assets/configure-new.png)
+![配置 — 新](assets/configure-new.png)
 
-![功能内容1](assets/featuredcontent1.png)
+![featuredcontent1](assets/featuredcontent1.png)
 
 ### “设置”选项卡 {#settings-tab}
 
-在 **[!UICONTROL 设置]** 选项卡，标识要使用的内容：
+在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡下，标识要使用的内容：
 
 * **[!UICONTROL 显示名称]**
 
-  特色内容列表的标题。 例如， `Featured Questions` 或 `Featured Ideas`. 默认为 `Featured Content` 如果留空。
+  特色内容列表的标题。 例如，`Featured Questions`或`Featured Ideas`。 如果留空，默认值为`Featured Content`。
 
-* **[!UICONTROL 专题内容的位置]**
+* **[!UICONTROL 精选内容的位置]**
 
-  *（必需）* 浏览到包含可以精选内容的页面（该页面的组件必须配置为允许精选内容）。 例如：`/content/sites/engage/en/forum`。
+  *（必需）*&#x200B;浏览到包含可精选内容的页面（该页面的组件必须配置为允许精选内容）。 例如：`/content/sites/engage/en/forum`。
 
 * **[!UICONTROL 显示限制]**
 
@@ -79,20 +79,20 @@ ht-degree: 2%
 
 要将内容标记为精选内容，需要拥有审查方权限。
 
-审查方查看已发布的内容时，可以访问上下文审查标志，包括新的 `Feature` 标志。
+当审阅人查看发布的内容时，他们可以访问上下文内审阅标记，其中包括新的`Feature`标记。
 
 ![site-visitor-experience](assets/site-visitor-experience.png)
 
-标记为功能后，审核标记将变为 `Unfeature`.
+在标记为功能后，审核标记将变为`Unfeature`。
 
-包含 `Featured Content` 组件，现包含此帖子。
+包含`Featured Content`组件的页面现在包含此帖子。
 
 ![site-visitor-experience1](assets/site-visitor-experience1.png)
 
-此 `Read More` 实际帖子的链接。
+`Read More`链接到实际帖子。
 
 ## 附加信息 {#additional-information}
 
-欲知更多信息，请访问 [专题内容](essentials-featured.md) 适用于开发人员的页面。
+可在[精选内容](essentials-featured.md)页面上为开发人员找到更多信息。
 
-要将内容标记为专题，请参阅 [审核用户生成的内容](moderate-ugc.md).
+若要将内容标记为精选，请参阅[审核用户生成的内容](moderate-ugc.md)。

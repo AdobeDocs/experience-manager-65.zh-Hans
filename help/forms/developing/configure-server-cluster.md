@@ -38,7 +38,7 @@ JEE群集上的AEM Forms依赖于底层应用程序服务器的群集功能。 �
 
 ### GemFire缓存 {#gemfire-cache}
 
-GemFire缓存是在每个群集节点中实现的分布式缓存机制。 节点之间相互查找并建立单个逻辑缓存，使节点之间保持一致性。 在图1中，发现彼此的节点会连接以维护显示为云的单个概念性缓存。 与GDS和数据库不同，缓存是一个纯概念实体。 实际的缓存内容存储在内存和 `LC_TEMP` 目录。
+GemFire缓存是在每个群集节点中实现的分布式缓存机制。 节点之间相互查找并建立单个逻辑缓存，使节点之间保持一致性。 在图1中，发现彼此的节点会连接以维护显示为云的单个概念性缓存。 与GDS和数据库不同，缓存是一个纯概念实体。 实际的缓存内容存储在内存中以及每个群集节点上的`LC_TEMP`目录中。
 
 ### 数据库 {#database}
 
@@ -80,7 +80,7 @@ Gemfire缓存可能会出现一些问题。 两种典型情况是：
 
 多播设置：
 
-* `adobe.cache.multicast-port`：用于与分布式系统的其他成员通信的多播端口。 如果将此值设置为零，则将对成员发现和分发禁用多播。
+* `adobe.cache.multicast-port`：用于与分布式系统的其他成员进行通信的多播端口。 如果将此值设置为零，则将对成员发现和分发禁用多播。
 
 * `gemfire.mcast-address` （可选）：覆盖Gemfire使用的默认IP地址。
 
@@ -114,13 +114,13 @@ TCP定位器设置：
 
 `livecycl 331984 1 0 10:14:51 pts/0 0:03 java -cp ./gemfire.jar: -Dgemfire.license-type=production -Dlocators=localhost[22345] com.gemstone.gemfire.distributed.Locator 22345`
 
-**如何查看GemFire认为群集中的节点？**
+**如何查看GemFire认为在群集中的节点？**
 
 GemFire会生成日志记录信息，这些信息可用于诊断GemFire缓存已找到并采用的群集成员。 这可用于验证是否找到了所有正确的群集成员，以及是否未发现额外或不正确的群集节点。 GemFire的日志文件位于配置的AEM Forms on JEE临时目录中：
 
 `.../LC_TEMP/adobeZZ__123456/Caching/Gemfire.log`
 
-之后的数字字符串 `adobeZZ_` 对于服务器节点是唯一的，因此您必须搜索临时目录的实际内容。 后面的两个字符 `adobe` 取决于应用程序服务类型： `wl`， `jb`，或 `ws`.
+`adobeZZ_`之后的数字字符串对于服务器节点是唯一的，因此您必须搜索临时目录的实际内容。 `adobe`之后的两个字符取决于应用程序服务类型： `wl`、`jb`或`ws`。
 
 以下示例日志显示了当双节点群集找到自身时所发生的情况。
 
@@ -170,7 +170,7 @@ Caused by: com.ibm.ejs.container.UnknownLocalException: nested exception is: com
 
 虽然在Bootstrap过程中经常会出现重复端口，但这种情况以后可能会出现。 当群集在关闭后重新启动时，如果发生其他群集的Bootstrap，则可能会发生这种情况。 或者，当网络配置更改为使先前为多播目的而隔离的群集彼此可见时。
 
-要诊断这些情况，请查看GemFire日志，并仔细考虑是否仅找到预期的节点。 要更正此问题，必须更改 `adobe.cache.multicast-port` 属性到两个群集中的一个或两个群集上的不同值。
+要诊断这些情况，请查看GemFire日志，并仔细考虑是否仅找到预期的节点。 若要更正此问题，必须将`adobe.cache.multicast-port`属性更改为群集中的一个或两个群集上的不同值。
 
 ### 2) GDS共享 {#gds-sharing}
 
@@ -188,7 +188,7 @@ GDS共享是在JEE本身的AEM Forms之外的O/S级别配置的，在该级别�
 
 * LCES指定GDS的路径： /u01/iapply/livecycle_gds
 
-如果节点1上的装载失败，则目录结构仍包含路径 `/u01/iapply/livecycle_gds` 到空装载点，则该节点似乎可以正确运行。 但是，由于GDS内容实际上并未与其他节点共享，因此群集无法正常运行。 这有可能发生，也确实会发生，结果是群集以神秘的方式失败。
+如果节点1上的装载失败，则目录结构仍包含到空装载点的路径`/u01/iapply/livecycle_gds`，并且该节点似乎可以正确运行。 但是，由于GDS内容实际上并未与其他节点共享，因此群集无法正常运行。 这有可能发生，也确实会发生，结果是群集以神秘的方式失败。
 
 最佳实践是安排一些操作，以便不将Linux®装入点用作GDS的根，而是将其中的某个目录用作GDS根：
 
@@ -224,9 +224,9 @@ GDS访问和共享的验证最好通过以交互用户身份访问每个节点�
 
 引用：
 
-* [通过JBoss®群集提供高可用性企业服务](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
+* 通过JBoss®群集的[高可用性企业服务](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [oracleWebLogic Server-Using群集](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [OracleWebLogic Server-Using群集](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### 如何检查JBoss®是否正确群集？ {#check-jboss-clustering}
 
@@ -263,11 +263,12 @@ and ones like:
 
 要确定Quartz自身的配置方式，您必须查看AEM Forms on JEE计划程序服务在启动期间生成的消息。 这些消息以INFO严重性生成，可能需要调整日志级别并重新启动以获取消息。 在AEM Forms on JEE启动序列中，Quartz初始化从以下行开始：
 
-信息  `[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPSchedulerService onLoad在日志中查找此第一行很重要。 原因是某些应用程序服务器也使用Quartz，并且不应将其Quartz实例与AEM Forms on JEE Scheduler服务所使用的实例混淆。 这表示调度程序服务正在启动，其后面的各行告诉您调度程序服务是否以集群模式正确启动。 此序列中会显示多条消息，这是显示如何配置Quartz的最后一条“已启动”消息：
+信息`[com.adobe.idp.scheduler.SchedulerServiceImpl]` IDPchedulerService onLoad
+在日志中定位此第一行很重要。 原因是某些应用程序服务器也使用Quartz，并且不应将其Quartz实例与AEM Forms on JEE Scheduler服务所使用的实例混淆。 这表示调度程序服务正在启动，其后面的各行告诉您调度程序服务是否以集群模式正确启动。 此序列中会显示多条消息，这是显示如何配置Quartz的最后一条“已启动”消息：
 
-此处给出Quartz实例的名称： `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`. 调度程序的Quartz实例的名称始终以字符串开头 `IDPSchedulerService_$_`. 附加到此末尾的字符串可告诉您是否以集群模式运行Quartz。 从节点的主机名生成的长唯一标识符和长字符串（此处） `ap-hp8.ottperflab.adobe.com1312883903975`，表明它正在群集中运行。 如果它作为单个节点运行，则标识符为两位数“20”：
+此处给出Quartz实例的名称： `IDPSchedulerService_$_ap-hp8.ottperflab.adobe.com1312883903975`。 调度程序的Quartz实例的名称始终以字符串`IDPSchedulerService_$_`开头。 附加到此末尾的字符串可告诉您是否以集群模式运行Quartz。 从节点的主机名生成的长唯一标识符和长数字字符串（此处为`ap-hp8.ottperflab.adobe.com1312883903975`）指示它在群集中运行。 如果它作为单个节点运行，则标识符为两位数“20”：
 
-信息  `[org.quartz.core.QuartzScheduler]` 计划程序 `IDPSchedulerService_$_20` 已启动。
+INFO `[org.quartz.core.QuartzScheduler]`计划程序`IDPSchedulerService_$_20`已启动。
 此检查必须单独在所有群集节点上完成，因为每个节点的调度程序独立决定是否以群集模式运行。
 
 ### 如果Quartz以错误的模式运行，会出现什么样的问题？ {#quartz-running-in-wrong-mode}
@@ -324,7 +325,7 @@ JEE上的AEM Forms中的某些文件路径设置在整个群集内建立，并�
 1. System Fonts目录的位置
 1. 数据服务配置文件的位置
 
-群集对于这些配置设置中的每一个仅有一个路径设置。 例如，您的Temp目录位置可能是 `/home/project/QA2/LC_TEMP`. 在群集中，每个节点都必须能够实际访问此特定路径。 如果一个节点具有预期的临时文件路径，而另一个节点没有，则没有的节点工作不正确。
+群集对于这些配置设置中的每一个仅有一个路径设置。 例如，您的Temp目录位置可能是`/home/project/QA2/LC_TEMP`。 在群集中，每个节点都必须能够实际访问此特定路径。 如果一个节点具有预期的临时文件路径，而另一个节点没有，则没有的节点工作不正确。
 
 虽然这些文件和路径可以在节点之间共享，或者单独放置，或者在远程文件系统上共享，但最佳做法是将这些文件和路径作为本地节点磁盘存储上的本地副本。
 

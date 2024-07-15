@@ -36,7 +36,7 @@ ht-degree: 75%
 
 本文档将介绍&#x200B;**模板作者**&#x200B;如何使用“模板”控制台和模板编辑器来创建和管理可编辑的模板。
 
-有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档 [页面模板 — 可编辑](/help/sites-developing/page-templates-editable.md) 以了解更多信息。
+有关如何在技术层面使用可编辑模板的详细信息，请参阅开发人员文档[页面模板 — 可编辑](/help/sites-developing/page-templates-editable.md)以了解更多信息。
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 75%
 
 >[!CAUTION]
 >
->使用创建的页面和模板 **模板控制台** 不能与经典UI一起使用，并且不支持此类使用。
+>使用&#x200B;**模板控制台**&#x200B;创建的页面和模板不能与经典UI一起使用，并且不支持此类使用。
 
 ## 开始之前 {#before-you-start}
 
@@ -54,13 +54,13 @@ ht-degree: 75%
 
 在开始之前，请务必考虑以下几点：
 
-* 创建模板需要协作。 因此， [角色](#roles) 指示每个任务。
+* 创建模板需要协作。 因此，为每项任务指明了[角色](#roles)。
 
-* 根据实例的配置方式，AEM现在提供 [两种基本类型的模板](/help/sites-authoring/templates.md#editable-and-static-templates). 这不会影响您实际的 [使用模板创建页面](#using-a-template-to-create-a-page)，但它确实会影响您可以创建的模板类型以及页面与其模板的关系。
+* 根据实例的配置方式，AEM现在提供了[两种基本类型的模板](/help/sites-authoring/templates.md#editable-and-static-templates)。 这不会影响您实际[如何使用模板创建页面](#using-a-template-to-create-a-page)，但会影响您可以创建的模板类型以及页面与其模板的关系。
 
 ### 角色 {#roles}
 
-使用创建模板 **模板控制台** 和 **模板编辑器** 需要以下角色之间的协作：
+使用&#x200B;**模板控制台**&#x200B;和&#x200B;**模板编辑器**&#x200B;创建模板需要以下角色之间的协作：
 
 * **管理员**:
 
@@ -98,7 +98,7 @@ AEM现在提供两种基本类型的模板：
 
 * [可编辑模板](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * 可以是 [已创建](#creatinganewtemplate) 和 [已编辑](#editingatemplate) 由模板作者使用 **模板** 控制台和编辑器。 此 **模板** 控制台可在以下位置访问： **常规** 的部分 **工具** 控制台。
+   * 模板作者可以使用&#x200B;**模板**&#x200B;控制台和编辑器[创建](#creatinganewtemplate)和[编辑](#editingatemplate)。 **模板**&#x200B;控制台可在&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分中访问。
 
    * 创建新页面后，页面和模板之间会保持动态连接。 这意味着对模板结构和/或锁定内容的更改将反映在使用该模板创建的任何页面上。 对已解锁（即初始）内容所做的更改将不会反映出来。
    * 使用内容策略（可在模板编辑器中定义这些策略）来保留设计属性。 页面编辑器中的设计模式不再用于可编辑模板。
@@ -106,16 +106,16 @@ AEM现在提供两种基本类型的模板：
 * 静态模板
 
    * 静态模板可用于多个版本的AEM。
-   * 他们是 [由您的开发人员提供](/help/sites-developing/page-templates-static.md)，因此作者无法创建或编辑它们。
+   * 它们由您的开发人员](/help/sites-developing/page-templates-static.md)提供[，因此作者无法创建或编辑它们。
    * 将被复制以创建新页面，但之后不存在动态连接（尽管模板名称已注册以供参考）。
-   * 使用 [设计模式](/help/sites-authoring/default-components-designmode.md) 以保留设计属性。
-   * 由于编辑静态模板是开发人员的专属任务，因此请参阅开发人员文档 [页面模板 — 静态](/help/sites-developing/page-templates-static.md) 以了解更多信息。
+   * 使用[设计模式](/help/sites-authoring/default-components-designmode.md)保留设计属性。
+   * 由于编辑静态模板是开发人员的专属任务，有关详细信息，请参阅开发人员文档[页面模板 — 静态](/help/sites-developing/page-templates-static.md)。
 
 根据定义，模板控制台和模板编辑器仅允许创建和编辑可编辑模板。 因此，本文档仅侧重于可编辑的模板。
 
 ### 使用模板创建页面 {#using-a-template-to-create-a-page}
 
-将模板用于 [创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page) 静态模板与可编辑模板之间没有可见的区别和指示。 对于页面作者，该过程是透明的。
+使用模板[创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)时，静态模板与可编辑模板之间没有可见的区别和指示。 对于页面作者，该过程是透明的。
 
 ## 创建和管理模板 {#creating-and-managing-templates}
 
@@ -123,12 +123,12 @@ AEM现在提供两种基本类型的模板：
 
 * 使用&#x200B;**模板**&#x200B;控制台。此控制台可从&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分访问。
 
-   * 或直接访问： [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+   * 或直接访问：[https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * 如有必要，可以[创建模板文件夹](#creating-a-template-folder-admin)
-* [创建模板](#creatinganewtemplateauthor)，最初为空
+* [创建最初为空的模板](#creatinganewtemplateauthor)
 
-* [定义其他属性](#definingtemplatepropertiesauthor) 模板的（如有必要）
+* 如有必要，[为模板定义其他属性](#definingtemplatepropertiesauthor)
 * [编辑该模板](#editingtemplates)，以定义以下各项：
 
    * [结构](#editingatemplatestructureauthor) - 不能在使用该模板创建的页面上更改的预定义内容。
@@ -146,15 +146,15 @@ AEM现在提供两种基本类型的模板：
 
 >[!CAUTION]
 >
->切勿输入任何需要的信息 [国际化](/help/sites-developing/i18n.md) 转换为模板。 出于内部化的目的， [核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) 建议使用。
+>切勿在模板中输入任何需要[国际化](/help/sites-developing/i18n.md)的信息。 出于内部化的目的，建议使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
 
 ### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
-您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在文档中进行了描述 [页面模板 — 可编辑](/help/sites-developing/page-templates-editable.md#template-folders).
+您应该为项目创建模板文件夹，以保存特定于项目的模板。这是一项管理员任务，在[页面模板 — 可编辑](/help/sites-developing/page-templates-editable.md#template-folders)文档中有相关说明。
 
 ### 创建新模板 – 模板作者 {#creating-a-new-template-template-author}
 
-1. 打开 **模板控制台** (通过 **工具>** **常规**)，然后导航到所需的文件夹。
+1. 打开&#x200B;**模板控制台**（通过&#x200B;**工具>** **常规**），然后导航到所需的文件夹。
 
    >[!NOTE]
    >
@@ -169,14 +169,14 @@ AEM现在提供两种基本类型的模板：
 
    >[!NOTE]
    >
-   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。有关详细信息，请参阅开发人员文档 [页面模板 — 可编辑](/help/sites-developing/page-templates-editable.md#template-type).
+   >模板类型是预定义的模板布局，可将其视为模板的模板。模板类型是由开发人员或系统管理员预定义的。有关详细信息，请参阅开发人员文档[页面模板 — 可编辑](/help/sites-developing/page-templates-editable.md#template-type)。
 
 1. 填写&#x200B;**模板详细信息**：
 
    * **模板名称**
    * **描述**
 
-1. 选择&#x200B;**创建**。随即会显示确认消息，请选择 **打开** 开始 [编辑模板](#editingatemplate) 或 **完成** 以返回到“模板”控制台。
+1. 选择&#x200B;**创建**。显示确认，选择&#x200B;**打开**&#x200B;以开始[编辑模板](#editingatemplate)或&#x200B;**完成**&#x200B;以返回到模板控制台。
 
    >[!NOTE]
    >
@@ -199,7 +199,7 @@ AEM现在提供两种基本类型的模板：
 
 * 描述
 
-   * 可选描述，用于提供更多有关模板及其用法的信息，例如 **创建页面** 向导。
+   * 可选描述，用于提供更多有关模板及其用法的信息，例如&#x200B;**创建页面**&#x200B;向导中显示的描述。
 
 要查看和/或编辑属性，请执行以下操作：
 
@@ -224,14 +224,14 @@ AEM现在提供两种基本类型的模板：
 1. 编辑模板属性。
 1. 选择是要上传缩略图，还是要从模板内容中生成缩略图。
 
-   * 如果要上传缩略图，请单击 **上传图像**
-   * 如果要生成缩略图，请单击 **生成预览**
+   * 如果要上传缩略图，请单击&#x200B;**上传图像**
+   * 如果要生成缩略图，请单击&#x200B;**生成预览**
 
 1. 使用上述两种方法时，系统都会显示缩略图预览。
 
-   如果不满意，请单击 **清除** 上传其他图像或重新生成缩略图。
+   如果不满意，请单击&#x200B;**清除**&#x200B;以上传其他图像或重新生成缩略图。
 
-1. 如果对缩略图满意，请单击 **保存并关闭**.
+1. 如果对缩略图满意，请单击&#x200B;**保存并关闭**。
 
 ### 启用并允许模板 - 模板作者 {#enabling-and-allowing-a-template-template-author}
 
@@ -250,7 +250,7 @@ AEM现在提供两种基本类型的模板：
 
 1. 在&#x200B;**模板控制台**&#x200B;中，选择相应的模板。
 1. 从工具栏中选择&#x200B;**启用**&#x200B;或&#x200B;**禁用**，然后在确认对话框中再次选择“启用”或“禁用”。
-1. 现在，您可以在以下情况下使用模板： [创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)，但您可能希望 [编辑模板](#editingatemplate) 根据您自己的要求。
+1. 现在，在[创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)时，您可以使用模板，不过您可能想根据自己的要求[编辑模板](#editingatemplate)。
 
 >[!NOTE]
 >
@@ -264,7 +264,7 @@ AEM现在提供两种基本类型的模板：
 
 1. 打开&#x200B;**高级**&#x200B;选项卡。
 
-1. 下 **模板设置** 使用 **添加字段** 以指定模板的路径。
+1. 在&#x200B;**模板设置**&#x200B;下，使用&#x200B;**添加字段**&#x200B;指定模板的路径。
 
    路径可以是显式的，也可以使用模式。例如：
 
@@ -305,7 +305,7 @@ AEM现在提供两种基本类型的模板：
 
   页面作者不能从生成页面中移动/删除在此处添加的组件。 如果要使页面作者能够在生成页面中添加和删除组件，则需要在模板中添加段落系统。
 
-  将组件锁定后，您可以添加页面作者无法编辑的内容。您可以解锁组件，以便定义 [初始内容](#editingatemplateinitialcontent).
+  将组件锁定后，您可以添加页面作者无法编辑的内容。您可以解锁组件，以便定义[初始内容](#editingatemplateinitialcontent)。
 
   >[!NOTE]
   >
@@ -355,20 +355,20 @@ AEM现在提供两种基本类型的模板：
 
 * 不能在生成页面上移动在模板结构中定义的组件，也不能从任何生成页面中删除这些组件。
 * 如果要使页面作者能够添加和删除组件，请在模板中添加段落系统。
-* 可以解锁组件，然后再将其锁定，以便定义 [初始内容](#editingatemplateinitialcontent).
+* 可以解锁组件，然后再将其锁定，以便定义[初始内容](#editingatemplateinitialcontent)。
 
 * 可为组件和页面定义设计策略。
 
 ![screen_shot_2018-03-23at120819](assets/screen_shot_2018-03-23at120819.png)
 
-在 **结构** 模板编辑器的模式：
+在模板编辑器的&#x200B;**结构**&#x200B;模式下：
 
 * **添加组件**
 
   可使用以下几种方法将组件添加到模板：
 
    * 从侧面板中的&#x200B;**组件**&#x200B;浏览器添加。
-   * 通过使用 **插入组件** 选项(**+** 图标)，该工具栏中提供了相应的组件或者 **将组件拖动到此处** 盒子。
+   * 通过使用模板中现有组件工具栏上的&#x200B;**插入组件**&#x200B;选项（**+**&#x200B;图标）或&#x200B;**将组件拖动到此处**&#x200B;框。
 
    * 将资源（从侧面板中的&#x200B;**资源**&#x200B;浏览器）直接拖动到模板，以就地生成相应的组件。
 
@@ -404,11 +404,11 @@ AEM现在提供两种基本类型的模板：
 
   通过这两项操作，您可以在组件中添加内容。
 
-* **指示结构的边框**
+* **边框表示结构**
 
   在&#x200B;**结构**&#x200B;模式下工作时，橙色边框指示当前选定的组件。虚线指示父组件。
 
-  例如，在下面的屏幕截图中， **文本** 组件已在一个 **布局容器** （响应网格）。
+  例如，在&#x200B;**Text**&#x200B;组件下面的屏幕快照中，在&#x200B;**布局容器** (responsivegrid)中选择了。
 
   ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -451,7 +451,7 @@ AEM现在提供两种基本类型的模板：
 
   >[!NOTE]
   >
-  >如果将同一类型的多个组件添加为初始内容，则同一策略适用于所有这些组件。 这反映了中的相同限制 [**设计模式** 用于静态模板](/help/sites-authoring/default-components-designmode.md).
+  >如果将同一类型的多个组件添加为初始内容，则同一策略适用于所有这些组件。 这会在&#x200B;[**设计模式**&#x200B;中为静态模板](/help/sites-authoring/default-components-designmode.md)镜像相同的限制。
 
   ***属性***
 
@@ -466,11 +466,11 @@ AEM现在提供两种基本类型的模板：
 
   例如，对于图像组件，可定义允许的宽度，并启用延迟加载。
 
-  如果设置允许多项配置，请单击 **添加** 按钮以添加其他配置。
+  如果某个设置允许多个配置，请单击&#x200B;**添加**&#x200B;按钮以添加其他配置。
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  要删除配置，请单击 **删除** 按钮进行配置。
+  要删除配置，请单击位于配置右侧的&#x200B;**删除**&#x200B;按钮。
 
   要删除配置，请单击**删除**按钮。
 
@@ -490,7 +490,7 @@ AEM现在提供两种基本类型的模板：
 
   >[!NOTE]
   >
-  >[用于实施富文本编辑器的组件的内容策略](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) 只能为RTE通过其UI设置提供的选项定义。 [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[只能为RTE通过其UI设置提供的选项定义用于实施富文本编辑器的组件的内容策略](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)。[](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **策略和属性（布局容器）**
 
@@ -532,9 +532,9 @@ AEM现在提供两种基本类型的模板：
 
   在&#x200B;**默认组件**&#x200B;选项卡上，您可以定义要自动与给定媒体类型关联的组件，以便作者从资源浏览器中拖动资源时，AEM 知道要将其与哪个组件关联。请注意，只有具有拖放区域的组件才可使用此类配置。
 
-  单击 **添加映射** 添加全新的组件和MIME类型映射。
+  单击&#x200B;**添加映射**&#x200B;可添加全新的组件和MIME类型映射。
 
-  在列表中选择一个组件并单击 **添加类型** 向已映射的组件添加额外的MIME类型。 单击&#x200B;**删除**&#x200B;图标可删除 MIME 类型。
+  在列表中选择一个组件并单击&#x200B;**添加类型**&#x200B;以向已映射的组件添加其他MIME类型。 单击&#x200B;**删除**&#x200B;图标可删除 MIME 类型。
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 
@@ -558,7 +558,7 @@ AEM现在提供两种基本类型的模板：
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
-  这包括解锁容器组件，以便在&#x200B;**初始内容**&#x200B;模式或生成的页面中添加其他组件。如果在解锁容器之前已将组件/内容添加到容器，则在中时，这些组件/内容不再显示 **结构** 模式，但它们显示在 **初始内容** 模式。 在&#x200B;**“结构”模式**&#x200B;下，只会显示容器组件本身，及其&#x200B;**允许的组件**&#x200B;列表。
+  这包括解锁容器组件，以便在&#x200B;**初始内容**&#x200B;模式或生成的页面中添加其他组件。如果在解锁容器之前已将组件/内容添加到容器，则这些组件/内容在&#x200B;**结构**&#x200B;模式下不再显示，但以&#x200B;**初始内容**&#x200B;模式显示。 在&#x200B;**“结构”模式**&#x200B;下，只会显示容器组件本身，及其&#x200B;**允许的组件**&#x200B;列表。
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -620,10 +620,10 @@ AEM现在提供两种基本类型的模板：
 
 页面设计（包括所需的客户端库和页面策略）在“页面信息”菜单的“页 **面设计** ”选项下 **进行维护** 。
 
-要访问 **页面设计** 对话框：
+要访问&#x200B;**页面设计**&#x200B;对话框，请执行以下操作：
 
-1. 从 **模板编辑器**，选择 **页面信息** 从工具栏中，然后 **页面设计** 以打开对话框。
-1. 此 **页面设计** 随即会打开对话框，该对话框分为两个部分：
+1. 从&#x200B;**模板编辑器**&#x200B;中，从工具栏中选择&#x200B;**页面信息**，然后选择&#x200B;**页面设计**&#x200B;以打开对话框。
+1. 将打开&#x200B;**页面设计**&#x200B;对话框，该对话框分为两个部分：
 
    * 左半部分定义了[页面策略](/help/sites-authoring/templates.md#page-policies)
    * 右半部分定义了[页面属性](/help/sites-authoring/templates.md#page-properties)

@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[API文档](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) 也可用。
+>[API文档](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation)也可用。
 
 集成框架包括带有API的集成层。 这使您能够为电子商务功能构建AEM组件（独立于您的特定电子商务引擎）。 它还允许您使用内部CRX数据库或插入电子商务系统并将产品数据提取到AEM中。
 
@@ -36,22 +36,22 @@ ht-degree: 0%
 
 电子商务框架可与任何电子商务解决方案一起使用，使用的引擎必须由AEM标识 — 即使使用AEM通用引擎时也是如此：
 
-* 电子商务引擎是支持 `CommerceService` 界面
+* 电子商务引擎是支持`CommerceService`接口的OSGi服务
 
-   * 可以通过以下方式区分引擎 `commerceProvider` 服务属性
+   * 可以使用`commerceProvider`服务属性区分引擎
 
-* AEM支持 `Resource.adaptTo()` 对象 `CommerceService` 和 `Product`
+* AEM支持`CommerceService`和`Product`的`Resource.adaptTo()`
 
-   * 此 `adaptTo` 实施将查找 `cq:commerceProvider` 资源层次结构中的属性：
+   * `adaptTo`实施在资源的层次结构中查找`cq:commerceProvider`属性：
 
       * 如果找到，该值将用于筛选Commerce服务查找。
       * 如果未找到，则使用排名最高的商务服务。
 
-   * A `cq:Commerce` mixin用于 `cq:commerceProvider` 可以添加到强类型资源中。
+   * 已使用`cq:Commerce` mixin，以便将`cq:commerceProvider`添加到强类型资源。
 
-* 此 `cq:commerceProvider` 属性还用于引用相应的商务工厂定义。
+* `cq:commerceProvider`属性还用于引用相应的商务工厂定义。
 
-   * 例如， `cq:commerceProvider` 属性，其值Geometrixx与的OSGi配置关联 **Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) — 其中，参数 `commerceProvider` 还具有值 `geometrixx`.
+   * 例如，值为Geometrixx的`cq:commerceProvider`属性与&#x200B;**Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`)的OSGi配置相关联，其中参数`commerceProvider`也具有值`geometrixx`。
    * 此处可以配置其他属性（在适当且可用时）。
 
 在标准AEM安装中，需要特定实施，例如：
@@ -87,55 +87,55 @@ ht-degree: 0%
 
 用于存储与客户购物车相关的信息的会话。
 
-此 **CommerceSession**：
+**CommerceSession**：
 
-* 拥有 **购物车**
+* 拥有&#x200B;**购物车**
 
    * 执行添加/删除/等
    * 在购物车上执行各种计算；
 
      `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
-* 拥有的持久性 **订购** 数据：
+* 拥有&#x200B;**订单**&#x200B;数据的持久性：
 
   `CommerceSession.getUserContext()`
 
-* 可以使用检索/更新投放详细信息 `updateOrder(Map<String, Object> delta)`
-* 拥有 **付款** 正在处理连接
-* 拥有 **履行** 连接
+* 可使用`updateOrder(Map<String, Object> delta)`检索/更新投放详细信息
+* 拥有&#x200B;**付款**&#x200B;处理连接
+* 拥有&#x200B;**履行**&#x200B;连接
 
 ### 架构 {#architecture}
 
 #### 产品和变体的架构 {#architecture-of-product-and-variants}
 
-单个产品可以有多个变体；例如，它可能因颜色和/或大小而异。 产品必须定义哪些属性会驱动变化；Adobe术语如下 *变量轴*.
+单个产品可以有多个变体；例如，它可能因颜色和/或大小而异。 产品必须定义哪些属性驱动变体；Adobe词这些&#x200B;*变体轴*。
 
 但是，并非所有属性都是变量轴。 变体也可能会影响其他属性；例如，价格可能取决于大小。 购物者无法选择这些属性，因此不被视为变量轴。
 
 每个产品和/或变体由一个资源表示，因此将1:1映射到存储库节点。 由此推断，特定产品和/或变体可通过其路径唯一标识。
 
-任何产品资源都可以用 `Product API`. 产品API中的大多数调用均特定于变体（尽管变体可能继承来自祖先的共享值），但也有列出变体集的调用( `getVariantAxes()`， `getVariants()`，等等)。
+任何产品资源都可以用`Product API`表示。 产品API中的大多数调用都是特定于变体的（尽管变体可能继承来自祖先的共享值），但也有列出变体集（`getVariantAxes()`、`getVariants()`等）的调用。
 
 >[!NOTE]
 >
->实际上，变轴由任何参数决定 `Product.getVariantAxes()` 返回：
+>实际上，变量轴由`Product.getVariantAxes()`返回的任何值确定：
 >
->* 对于通用实施，AEM会从产品数据( `cq:productVariantAxes`)
+>* 对于通用实现，AEM会从产品数据( `cq:productVariantAxes`)中的属性读取它
 >
 >虽然产品（通常）可以具有多个变体轴，但现成的产品组件仅处理两个变体轴：
 >
 >1. `size`
 >1. 再加一个
 >
->   通过以下方式选择此附加变体： `variationAxis` 产品引用的属性(通常 `color` (对于Geometrixx Outdoors)。
+>   通过产品引用的`variationAxis`属性选择此附加变体(通常Geometrixx Outdoors为`color`)。
 
 #### 产品引用和PIM数据 {#product-references-and-pim-data}
 
 一般而言：
 
-* PIM数据位于 `/etc`
+* PIM数据位于`/etc`下
 
-* 下的产品引用 `/content`.
+* `/content`下的产品引用。
 
 产品变体和产品数据节点之间必须是1:1映射。
 
@@ -235,20 +235,20 @@ public class AxisFilter implements VariantFilter {
 }
 ```
 
-* **一般存储机制**
+* **常规存储机制**
 
    * 产品节点nt：unstructured。
    * 产品节点可以是：
 
       * 引用，将产品数据存储在其他位置：
 
-         * 产品引用包含 `productData` 属性，指向产品数据(通常位于 `/etc/commerce/products`)。
+         * 产品引用包含`productData`属性，该属性指向产品数据（通常在`/etc/commerce/products`下）。
          * 产品数据是分层的；产品属性继承自产品数据节点的祖先。
          * 产品引用还可以包含本地属性，这些属性将覆盖产品数据中指定的属性。
 
       * 产品本身：
 
-         * 不带 `productData` 属性。
+         * 没有`productData`属性。
          * 在本地保存所有属性（并且不包含productData属性）的product节点直接从自己的祖先继承product属性。
 
 * **AEM-generic产品结构**
@@ -304,13 +304,13 @@ public class AxisFilter implements VariantFilter {
 
 **组件**
 
-* 该购物车属于 `CommerceSession:`
+* 购物车属于`CommerceSession:`
 
-   * 此 `CommerceSession` 执行添加、删除等操作。
-   * 此 `CommerceSession` 还会在购物车上执行各种计算。
-   * 此 `CommerceSession` 还会将已触发的优惠券和促销活动应用于购物车。
+   * `CommerceSession`执行添加、删除等操作。
+   * `CommerceSession`还在购物车上执行各种计算。
+   * `CommerceSession`还将已触发的优惠券和促销活动应用于购物车。
 
-* 虽然不直接与购物车相关，但是 `CommerceSession` 还必须提供目录定价信息（因为它拥有定价）
+* 虽然不直接与购物车相关，但`CommerceSession`还必须提供目录定价信息（因为它拥有定价）
 
    * 定价可能有几个修饰符：
 
@@ -327,14 +327,14 @@ public class AxisFilter implements VariantFilter {
 
 * 存储
 
-   * 在AEM一般情况下，购物车存储在 [ClientContext](/help/sites-administering/client-context.md)
+   * 在AEM一般情况下，购物车存储在[ClientContext](/help/sites-administering/client-context.md)中
 
 **个性化**
 
-* 始终通过以下方式推动个性化 [ClientContext](/help/sites-administering/client-context.md).
-* ClientContext `/version/` 在所有情况下都会创建Cart的：
+* 始终通过[ClientContext](/help/sites-administering/client-context.md)推动个性化。
+* 在所有情况下都将创建购物车的ClientContext`/version/`：
 
-   * 应使用添加产品 `CommerceSession.addCartEntry()` 方法。
+   * 应使用`CommerceSession.addCartEntry()`方法添加产品。
 
 * 下面说明了ClientContext车中的购物车信息示例：
 
@@ -344,7 +344,7 @@ public class AxisFilter implements VariantFilter {
 
 **购物车和订单数据**
 
-此 `CommerceSession` 拥有三个元素：
+`CommerceSession`拥有三个元素：
 
 1. **购物车内容**
 
@@ -371,7 +371,7 @@ public class AxisFilter implements VariantFilter {
 
 1. **订单详细信息**
 
-   但是，订单详情如下 *非* 由API修复：
+   但是，订单详细信息&#x200B;*不是API修复的*：
 
    ```java
        public void updateOrderDetails(Map<String, String> orderDetails);
@@ -379,14 +379,14 @@ public class AxisFilter implements VariantFilter {
        public void submitOrder();
    ```
 
-**配送费计算**
+**配送计算**
 
 * 订单通常必须提供多种送货选项（和价格）。
 * 价格可能基于物料和订单详细信息，如重量和/或交货地址。
-* 此 `CommerceSession` 有权访问所有依赖项，因此可以采用与产品定价类似的方式对其进行处理：
+* `CommerceSession`有权访问所有依赖项，因此可以采用与产品定价类似的方式处理它：
 
-   * 此 `CommerceSession` 拥有配送定价。
-   * 使用 `updateOrder(Map<String, Object> delta)` 以检索/更新投放详细信息。
+   * `CommerceSession`拥有配送定价。
+   * 使用`updateOrder(Map<String, Object> delta)`检索/更新投放详细信息。
 
 ### 搜索定义 {#search-definition}
 
@@ -406,7 +406,7 @@ public class AxisFilter implements VariantFilter {
 
 ![chlimage_1-34](/help/sites-developing/assets/chlimage_1-34a.png)
 
-这将使用搜索API查询选定的商务引擎(请参阅 [电子商务引擎选择](#ecommerce-engine-selection))：
+这将使用搜索API查询选定的商务引擎（请参阅[电子商务引擎选择](#ecommerce-engine-selection)）：
 
 #### 搜索API {#search-api}
 
@@ -414,13 +414,13 @@ public class AxisFilter implements VariantFilter {
 
 1. `CommerceQuery`
 
-   用于描述搜索查询（包含有关查询文本、当前页面、页面大小、排序和所选彩块化的信息）。 所有实施搜索API的电子商务服务都接收此类的实例以执行其搜索。 A `CommerceQuery` 可以从请求对象实例化( `HttpServletRequest`)。
+   用于描述搜索查询（包含有关查询文本、当前页面、页面大小、排序和所选彩块化的信息）。 所有实施搜索API的电子商务服务都接收此类的实例以执行其搜索。 可以从请求对象(`HttpServletRequest`)实例化`CommerceQuery`。
 
 1. `FacetParamHelper`
 
-   是一个实用程序类，它提供一个静态方法 —  `toParams`  — 用于生成 `GET` 多面和一个切换值列表中的参数字符串。 这在UI端很有用，您需要为每个Facet的每个值显示超链接，这样当用户单击超链接时，将切换相应的值。 也就是说，如果选定了它，则会将其从查询中删除，否则会添加它。 这解决了处理多个/单值Facet、覆盖值等操作的所有逻辑。
+   是一个实用程序类，它提供一个静态方法(`toParams`)，用于从一个Facet列表和一个切换值生成`GET`参数字符串。 这在UI端很有用，您需要为每个Facet的每个值显示超链接，这样当用户单击超链接时，将切换相应的值。 也就是说，如果选定了它，则会将其从查询中删除，否则会添加它。 这解决了处理多个/单值Facet、覆盖值等操作的所有逻辑。
 
-搜索API的入口点为 `CommerceService#search` 返回 `CommerceResult` 对象。 有关此主题的更多信息，请参阅API文档。
+搜索API的入口点是返回`CommerceResult`对象的`CommerceService#search`方法。 有关此主题的更多信息，请参阅API文档。
 
 ### 开发促销和优惠券 {#developing-promotions-and-vouchers}
 
@@ -440,9 +440,9 @@ public class AxisFilter implements VariantFilter {
    * 外部商业引擎也可以提供凭证；这些凭证至少需要：
 
       * 优惠券代码
-      * An `isValid()` 方法
+      * `isValid()`方法
 
-   * 此 **优惠券** 组件( `/libs/commerce/components/voucher`)提供：
+   * **优惠券**&#x200B;组件(`/libs/commerce/components/voucher`)提供：
 
       * 凭证管理的呈现器；这将显示当前购物车中的任何凭证。
       * 用于管理（添加/删除）优惠券的编辑对话框（表单）。
@@ -462,7 +462,7 @@ public class AxisFilter implements VariantFilter {
    * 您可以将促销活动关联到促销活动，以定义其打开/关闭日期/时间。
    * 您可以将促销活动连接到体验以定义其区段。
    * 与体验无关的促销活动不会自行触发，但优惠券仍可以触发。
-   * 提升组件( `/libs/commerce/components/promotion`)包含：
+   * 提升组件(`/libs/commerce/components/promotion`)包含：
 
       * 用于提升管理的渲染器和对话框
       * 用于呈现和编辑特定于提升处理程序的配置参数的子组件
@@ -472,12 +472,12 @@ public class AxisFilter implements VariantFilter {
       * `DiscountPromotionHandler`，应用购物车范围的绝对折扣或百分比折扣
       * `PerfectPartnerPromotionHandler`，如果合作伙伴产品也在购物车中，则应用产品绝对折扣或百分比折扣
 
-   * ClientContext `SegmentMgr` 解析区段和ClientContext `CartMgr` 解析促销活动。 至少具有一个已解析区段的每个促销活动都会触发。
+   * ClientContext`SegmentMgr`解析区段，ClientContext`CartMgr`解析促销活动。 至少具有一个已解析区段的每个促销活动都会触发。
 
       * 已触发的促销活动会通过AJAX调用发送回服务器以重新计算购物车。
       * ClientContext面板中还会显示触发的促销活动（和添加的优惠券）。
 
-在购物车中添加/删除优惠券是通过 `CommerceSession` API：
+通过以下`CommerceSession` API在购物车中添加/删除优惠券：
 
 ```java
 /**
@@ -504,23 +504,23 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-这边， `CommerceSession` 负责检查凭单是否存在以及凭单是否可以应用。 这可能适用于只有在满足特定条件时才能应用的凭单。 例如，当购物车总价格大于$100时。 如果由于任何原因无法应用优惠券，则 `addVoucher` 方法引发异常。 此外， `CommerceSession` 负责在添加/删除优惠券后更新购物车的价格。
+这样，`CommerceSession`将负责检查凭单是否存在以及凭单是否可以应用。 这可能适用于只有在满足特定条件时才能应用的凭单。 例如，当购物车总价格大于$100时。 如果由于任何原因无法应用凭证，`addVoucher`方法会引发异常。 此外，在添加/删除优惠券后，`CommerceSession`负责更新购物车的价格。
 
-此 `Voucher` 是一个类Bean，其中包含下列字段：
+`Voucher`是一个类Bean，其中包含下列字段：
 
 * 优惠券代码
 * 简短描述
 * 引用指示折扣类型和值的相关促销
 
-此 `AbstractJcrCommerceSession` 提供申请优惠券的功能。 类返回的凭证 `getVouchers()` 的实例 `cq:Page` 包含具有以下属性（及其他）的jcr：content节点：
+提供的`AbstractJcrCommerceSession`可以应用优惠券。 类`getVouchers()`返回的凭单是`cq:Page`的实例，该实例包含具有以下属性的jcr：content节点（等等）：
 
-* `sling:resourceType` （字符串） — 这需要 `commerce/components/voucher`
+* `sling:resourceType` （字符串） — 这需要`commerce/components/voucher`
 
 * `jcr:title` （字符串） — 用于优惠券的描述
 * `code` （字符串） — 用户必须输入以应用此优惠券的代码
-* `promotion` （字符串） — 要应用的促销活动；例如， `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` （字符串） — 要应用的促销活动；例如，`/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-促销处理程序是修改购物车的OSGi服务。 购物车支持在中定义的多个挂钩。 `PromotionHandler` 界面。
+促销处理程序是修改购物车的OSGi服务。 购物车支持在`PromotionHandler`界面中定义的多个挂钩。
 
 ```java
 /**
@@ -570,6 +570,6 @@ public void invalidateCaches();
 
 提供了三个现成的提升处理程序：
 
-* `DiscountPromotionHandler` 应用购物车范围的绝对折扣或百分比折扣
-* `PerfectPartnerPromotionHandler` 如果产品合作伙伴也在购物车中，则应用产品绝对折扣或百分比折扣
-* `FreeShippingPromotionHandler` 应用免运费
+* `DiscountPromotionHandler`应用购物车范围的绝对折扣或百分比折扣
+* 如果产品合作伙伴也在购物车中，`PerfectPartnerPromotionHandler`应用产品绝对折扣或百分比折扣
+* `FreeShippingPromotionHandler`应用免费送货

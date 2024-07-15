@@ -19,7 +19,7 @@ ht-degree: 81%
 
 此设置的默认值 (`SameSite=Lax`) 可能会导致 AEM 实例或服务之间的身份验证不起作用。这是因为这些服务的域或 URL 结构可能不受此 Cookie 策略的约束。
 
-要解决此问题，您需要设置 `SameSite` Cookie属性至 `None` 用于登录令牌。
+要解决此问题，您需要将登录令牌的`SameSite` Cookie属性设置为`None`。
 
 >[!CAUTION]
 >

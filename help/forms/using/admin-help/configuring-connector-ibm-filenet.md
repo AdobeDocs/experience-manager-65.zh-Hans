@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # 为IBM FileNet配置连接器 {#configuring-connector-for-ibm-filenet}
 
-IBM FileNet连接器支持AEM Forms与IBM FileNet之间的通信。 有关其他背景信息，请参阅中的“Connectors for ECM” [服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+IBM FileNet连接器支持AEM Forms与IBM FileNet之间的通信。 有关其他背景信息，请参阅[服务参考](https://www.adobe.com/go/learn_aemforms_services_63)中的“Connectors for ECM”。
 
 >[!NOTE]
 >
@@ -41,8 +41,8 @@ IBM FileNet P8 Content Engine提供了软件服务，用于管理FileNet内容�
 
 1. 在“凭据保护方案”列表中，选择以下保护级别之一：
 
-   * **清除：** 以无保护模式通过网络发送凭据
-   * **对称：** 通过网络发送加密的凭据
+   * **清除：**&#x200B;以无保护模式通过网络发送凭据
+   * **对称：**&#x200B;通过网络发送加密的凭据
 
 1. 在“加密文件位置”框中，输入加密文件的路径：
 
@@ -79,15 +79,15 @@ IBM FileNet的连接器包含IBM FileNet服务的Process Engine Connector ，用
 
 以下选项可供选择：
 
-**当前存储库提供程序名称：** 当前存储库服务提供程序的名称
+**当前存储库提供程序名称：**&#x200B;当前存储库服务提供程序的名称
 
-**IBM FileNet存储库提供程序：** 使FileNet资料档案库提供程序成为资料档案库的提供程序。 此选项已弃用。
+**IBM FileNet存储库提供程序：**&#x200B;使FileNet存储库提供程序成为存储库的提供程序。 此选项已弃用。
 
-**存储库提供程序：** 使本地存储库提供程序成为存储库的提供程序
+**存储库提供程序：**&#x200B;使本地存储库提供程序成为存储库的提供程序
 
 >[!NOTE]
 >
->要选择除列出的系统信息库服务提供程序之外的其他系统信息库服务提供程序，请在应用程序和服务中配置RepositoryService。 <!-- Fix broken link(See Managing Services) -->
+>要选择除列出的系统信息库服务提供程序之外的其他系统信息库服务提供程序，请在应用程序和服务中配置RepositoryService。<!-- Fix broken link(See Managing Services) -->
 
 1. 在管理控制台中，单击“服务”>“IBM FileNet连接器”。
 1. 在“存储库服务提供程序信息”区域中，选择替代存储库服务提供程序，然后单击“保存”。

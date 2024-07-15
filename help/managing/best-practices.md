@@ -23,28 +23,28 @@ ht-degree: 0%
 
 为了帮助您获得这些好处，最佳实践包括：
 
-* An [交互式核对清单](/help/managing/best-practices-checklist.md) 可让您跟踪和监控使用这些最佳实践的进度。
+* 一个[交互式核对清单](/help/managing/best-practices-checklist.md)，可让您跟踪和监控自己在这些最佳实践方面的进展。
 
    * 根据阶段、里程碑和角色定义输入和交付项。
    * 提供自动概述（质量、运行状况和完整性）以指示进度和项目运行状况。
 
-* 文档基于 [清单](/help/managing/best-practices-checklist.md) 详细描述了：
+* 基于详细说明以下内容的[清单](/help/managing/best-practices-checklist.md)的文档：
 
-   * [项目心率](#projectheartbeat) 分析。
-   * [按角色显示状态](#status-by-role) 概述。
-   * [阶段和里程碑](#phases-and-milestones).
-   * [关键角色](#persona) 及彼等在每个（相关）阶段之参与。
-   * A [术语表](/help/managing/best-practices-glossary.md) 的 [所需文档和交付项](#required-documents-and-deliverables).
+   * [项目心率](#projectheartbeat)分析。
+   * [按角色显示的状态](#status-by-role)概述。
+   * [阶段和里程碑](#phases-and-milestones)。
+   * [关键角色](#persona)及其在每个（相关）阶段的参与。
+   * [必需的文档和交付项](#required-documents-and-deliverables)的[词汇表](/help/managing/best-practices-glossary.md)。
 
-* [进一步参考](/help/managing/best-practices-further-reference.md) 资料，以提供有关特定区域的更多详细信息。
+* [进一步参考](/help/managing/best-practices-further-reference.md)资料以提供有关特定区域的更多详细信息。
 
 ## 项目心率功能板 {#project-heartbeat-dashboard}
 
-此 **项目心率** 工作表以图形方式概述了项目的关键指标：
+**项目心率**&#x200B;工作表提供了项目关键量度的图形概述：
 
-* **相位质量**
+* **阶段质量**
 
-   * 指示 [所需文档和交付项](#required-documents-and-deliverables) 整个项目。
+   * 指示整个项目中[必需文档和交付项](#required-documents-and-deliverables)的质量。
 
 * **阶段运行状况**
 
@@ -56,13 +56,13 @@ ht-degree: 0%
 
 ## 按角色显示状态 {#status-by-role}
 
-此 **按角色显示状态** 工作表显示以下项的详细细分 [**健康**、 **质量和 **完整性**](#projectheartbeat) 按 **[阶段](#phases-and-milestones)** 和 **[角色](#persona)**.
+按Role **列出的**&#x200B;状态工作表显示按&#x200B;**[阶段](#phases-and-milestones)**&#x200B;和&#x200B;**[角色](#persona)**&#x200B;列出的&#x200B;[**运行状况{3**、{Quality}和**&#x200B;完整性&#x200B;**](#projectheartbeat)的详细细目。**
 
 ## 阶段和里程碑 {#phases-and-milestones}
 
 项目计划分为不同的（高级）阶段。
 
-每个阶段都包含其自身的里程碑。 对于每个 [角色](#persona) （或角色）时，将列出相关里程碑，以及生成定义的交付项所需的文档。
+每个阶段都包含其自身的里程碑。 对于每个[角色](#persona)（或角色），将列出相关的里程碑，以及生成定义的交付项所需的文档。
 
 >[!NOTE]
 >
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 项目的准备构成了整个项目的基础。 确定关键要求以及针对以下各项的明确目标和期望：
 
-* **业务理由**
+* **业务逻辑**
 
    * 开展该项目的根本原因和理由。
 
@@ -162,7 +162,7 @@ ht-degree: 0%
 
 #### 里程碑 {#milestones-2}
 
-* **配备人员和经过培训的开发团队**
+* **开发团队已配备人员和接受培训**
 
   在开始任何项目之前，您应该确保开发团队配备了适当的人员，并且所有团队成员都接受了手头任务的培训。
 
@@ -180,16 +180,16 @@ ht-degree: 0%
 
   系统架构定义了系统的概念视图；包括（以及其他信息）：
 
-   * [系统结构](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 适用于所有必需环境
+   * 所有所需环境的[系统结构](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
    * 子系统
    * 第三方系统
    * 接口；硬件、软件和人工交互
-   * 每个环境的服务器；请参阅 [技术要求](/help/sites-deploying/technical-requirements.md) 和 [硬件大小调整准则](/help/managing/hardware-sizing-guidelines.md)
+   * 每个环境的服务器；请参阅[技术要求](/help/sites-deploying/technical-requirements.md)和[硬件大小调整指南](/help/managing/hardware-sizing-guidelines.md)
 
    * 每个环境的流程；例如，部署和维护要求
    * 维护活动（Datastore GC、TarPM优化等）
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 缓存
-   * [聚类](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) 发布/Authorshare
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)缓存
+   * [群集](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * 客户端的性能（JS缩小、concat、css脚本、http请求总数等）
 
 * **应用程序架构**
@@ -214,12 +214,12 @@ ht-degree: 0%
 
   系统集成要求您规划（然后实施）：
 
-   * 所有子系统和 [解决方案集成](/help/sites-administering/integration.md) 作为一个连贯的系统共同运作
+   * 如何将所有子系统与[解决方案集成](/help/sites-administering/integration.md)结合在一起作为一个相干系统运行
    * 任何第三方系统如何集成；以及任何特殊注意事项，例如离线/在线、客户端/浏览器端，或在第三方系统停机时进行回退处理
 
 * **测试概念**
 
-  在开始开发之前，您应该制定一个深入而全面的“全部”概念 [测试](/help/sites-developing/planning.md) 项目的要求。
+  在开始开发之前，您应该针对项目的所有[测试](/help/sites-developing/planning.md)要求制定一个深入而全面的概念。
 
   这应包括（除其他外）：
 
@@ -235,11 +235,11 @@ ht-degree: 0%
 
   应为您的作者和网站的最终用户分析和开发用户体验。
 
-* **支持设置**
+* **支持安装程序**
 
   在开发之前，应设置部署、发布、测试和报告问题所需的所有支持流程。
 
-  另请参阅 [Adobe支持门户](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support).
+  另请参阅[Adobe支持门户](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)。
 
 ### 运营规划和运营 {#operations-planning-and-operations}
 
@@ -253,22 +253,22 @@ ht-degree: 0%
 
   例如：
 
-   * 具有下列条件的角色（即组）列表 `read`/ `write` 每个的访问权限定义
+   * 每个角色具有`read`/`write`访问定义的角色（即组）列表
 
-   * 影响发布环境的权限使用的定义；例如， `replicate`
+   * 影响发布环境的权限使用的定义；例如，`replicate`
    * 对于具有最低权限的用户，应定义工作流
-   * 中的用户 `editor` 组不应具有 `admin` 权利，也不属于 `administrators` 组
+   * `editor`组中的用户不应具有`admin`权限，也不应成为`administrators`组的一部分
 
-  有关更多信息，请参阅 [用户管理和安全性](/help/sites-administering/security.md).
+  有关详细信息，请参阅[用户管理和安全性](/help/sites-administering/security.md)。
 
-* **监控和维护**
+* **监视和维护**
 
   监测和维护是确保解决方案在投入使用后能够顺利运行的关键方面。 为此，您需要定义：
 
    * 需要监控的内容
    * 维护任务；包括常规任务和特殊任务
 
-  另请参阅 [监控和维护](/help/sites-deploying/monitoring-and-maintaining.md) 以了解更多信息。
+  有关详细信息，另请参阅[监视和维护](/help/sites-deploying/monitoring-and-maintaining.md)。
 
 * **迁移**
 
@@ -322,16 +322,16 @@ ht-degree: 0%
    * 部署节奏
    * 第三方软件集成/依赖项
    * 安全设置
-   * 通过运行 [艰难的一天测试](/help/sites-developing/tough-day.md) 在生产设置中
-   * 性能测试要求；请参阅 [质量保证的最佳实践](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * 通过在生产设置上运行[工作日测试](/help/sites-developing/tough-day.md)来验证基线性能
+   * 性能测试要求；请参阅[质量保证最佳实践](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **集成**
 
-  规划、记录和测试系统的所有方面，以及 [解决方案集成](/help/sites-administering/integration.md)，包括：
+  规划、记录和测试系统和[解决方案集成](/help/sites-administering/integration.md)的各个方面，包括：
 
    * 自动化测试策略
-   * 将流程自动化到 [将应用程序从开发移动到测试，然后再移动到生产](/help/managing/enterprise-devops.md#code-movement)
-   * 将流程自动化到 [将内容从生产环境移动到测试和开发环境](/help/managing/enterprise-devops.md#content-movement)
+   * 自动化进程以[将应用程序从开发移至测试，然后移至生产](/help/managing/enterprise-devops.md#code-movement)
+   * 自动化进程以[将内容从生产环境移动到测试和开发环境](/help/managing/enterprise-devops.md#content-movement)
 
 * **迁移**
 
@@ -354,7 +354,7 @@ ht-degree: 0%
 
 ### 性能和测试 {#performance-and-testing}
 
-新应用程序发布后，必须经过严格的功能测试和测试 [性能](/help/sites-deploying/configuring-performance.md).
+新应用程序可用后，必须对其进行严格的功能和[性能](/help/sites-deploying/configuring-performance.md)测试。
 
 >[!NOTE]
 >
@@ -402,7 +402,7 @@ ht-degree: 0%
 
   确保所有涉及的工作人员都经过培训。
 
-  请参阅 [Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) 在课程目录中。
+  在课程目录中查看[Adobe Experience Manager](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)。
 
 * **经过培训的管理员**
 
@@ -412,7 +412,7 @@ ht-degree: 0%
    * 已收到适当的培训材料
    * 已收到相应的文档
 
-* **经过培训的用户**
+* **用户已接受培训**
 
   确保您的作者具有：
 
@@ -428,7 +428,7 @@ ht-degree: 0%
 
   为确保解决方案的安全性，请执行特定的渗透测试以及范围更广的安全测试。
 
-  请参阅 [安全核对清单](/help/sites-administering/security-checklist.md) 以了解更多详细信息。
+  有关更多详细信息，请参阅[安全核对清单](/help/sites-administering/security-checklist.md)。
 
 ### 上线 {#go-live}
 
@@ -464,7 +464,7 @@ ht-degree: 0%
 
 核对表是按角色设计的。 这些角色在项目生命周期中具有重大意义。
 
-还有一些 [其他角色](#other-persona) 具体任务涉及的用户。
+还有一些[其他角色](#other-persona)参与特定任务。
 
 ### 项目发起人 {#project-sponsor}
 
@@ -577,29 +577,29 @@ ht-degree: 0%
 
 ## 所需文档和交付项 {#required-documents-and-deliverables}
 
-核对表涵盖 **所需文档** 和 **交付成果** 每个里程碑。
+核对清单涵盖了每个里程碑的&#x200B;**必需文档**&#x200B;和&#x200B;**可交付成果**。
 
 * 它们之间没有1:1关系；例如，一组必需文档可以导致单个交付项。
 * 同一里程碑期间，来自一个角色的交付项可以是另一个角色的必需文档。
 
 ### 所需文档 {#required-documents}
 
-此 **所需文档** 适当角色在生成其交付项时需要。
+相应的角色在生成其交付项时需要&#x200B;**必需文档**。
 
-对于每个 **所需文档**，则该角色应指示：
+对于每个&#x200B;**必需文档**，角色应该指示：
 
-* **Y/N**：是否收到。
+* **Y/N**：是否已经收到。
 * **1-3**：所接收文档的质量指示。
 
 ### 交付成果 {#deliverables}
 
 对于每个里程碑，相应的角色负责交付特定文档，从而履行其对特定里程碑的职责。
 
-对于每个 **可交付结果**，角色必须指示：
+对于每个&#x200B;**交付项**，角色必须表示：
 
-* **Y/N**：是否完成。
+* **Y/N**：是否已完成。
 
-交付项通常用作 **所需文档** 对于当前里程碑或后续里程碑。
+交付项通常用作当前里程碑或后续里程碑的&#x200B;**必需文档**。
 
 ## 相关最佳实践 {#related-best-practices}
 
@@ -617,7 +617,8 @@ ht-degree: 0%
 
 ## 关键文档领域 {#key-documentation-areas}
 
-* AEM文档此外，AEM文档的以下部分尤其令人感兴趣（但是，此列表并非详尽无遗）：
+* AEM文档
+此外，AEM文档的以下部分尤其令人感兴趣（但是，此列表并非详尽无遗）：
 
    * [安全性](/help/sites-developing/security.md)
    * [建议的部署](/help/sites-deploying/recommended-deploys.md)
@@ -631,4 +632,4 @@ ht-degree: 0%
 
 * 相关文档
 
-   * ADOBE EXPERIENCE CLOUD - [Adobe Experience Cloud规划](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [规划Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

@@ -19,18 +19,18 @@ ht-degree: 0%
 
 # 分析页面性能{#analyzing-page-performance}
 
-打开 [内容分析](/help/sites-authoring/content-insights.md) 页面，用于分析所创作页面的性能。 配置报告时段以集中进行分析。
+打开[内容分析](/help/sites-authoring/content-insights.md)页面以分析您正在创作的页面的性能。 配置报告时段以集中进行分析。
 
 ## 为页面打开Analytics和Recommendations {#opening-analytics-and-recommendations-for-a-page}
 
 使用以下过程可查看页面的Analytics和Recommendations：
 
 1. 导航到要分析的页面。
-1. 在工具栏中，单击 **Analytics和Recommendations**.
+1. 在工具栏中，单击&#x200B;**Analytics和Recommendations**。
 
    >[!NOTE]
    >
-   >仅当您将AEM配置为时，才会显示页面的Analytics和Recommendations [与Adobe Analytics集成](/help/sites-administering/adobeanalytics-connect.md).
+   >仅当您已将AEM配置为[与Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md)集成时，才会显示页面的Analytics和Recommendations。
 
    ![screen-shot_2019-03-05at115319](assets/screen-shot_2019-03-05at115319.png)
 
@@ -85,13 +85,13 @@ SEO推荐的状态表示任务已创建但尚未完成。
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-创建任务后，该任务将显示在用户的“任务”列表中。 有关任务的信息，请参阅 [使用任务](/help/sites-authoring/task-content.md).
+创建任务后，该任务将显示在用户的“任务”列表中。 有关任务的信息，请参阅[处理任务](/help/sites-authoring/task-content.md)。
 
 使用以下过程可为SEO建议创建任务。
 
 1. 单击SEO推荐的信息图标。
 
-   ![“信息”图标](do-not-localize/chlimage_1-23.png)
+   ![信息图标](do-not-localize/chlimage_1-23.png)
 
 1. 单击信息图标旁边显示的环绕三角形图标。
 
@@ -106,6 +106,6 @@ SEO推荐的状态表示任务已创建但尚未完成。
    * 任务优先级：任务的优先级。
    * 截止日期：任务应完成的截止日期。
 
-   **注意：** 创建的任务还包括应用SEO推荐的页面的路径。
+   **注意：**&#x200B;创建的任务还包括应用SEO推荐的页面的路径。
 
 1. 单击完成以关闭“创建的任务”消息。

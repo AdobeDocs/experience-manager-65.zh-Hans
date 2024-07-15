@@ -18,7 +18,7 @@ ht-degree: 43%
 
 # 自定义页面属性的视图{#customizing-views-of-page-properties}
 
-每个页面都有一组 [属性](/help/sites-authoring/editing-page-properties.md) 用户可查看和编辑的页面；创建页面（创建视图）时需要某些选项，其他选项可在以后查看和编辑（编辑视图）。 这些页面属性通过对话框( `cq:dialog`)。
+每个页面都有一组可供用户查看和编辑的[属性](/help/sites-authoring/editing-page-properties.md)；创建页面（创建视图）时需要某些属性，其他属性可在以后的阶段查看和编辑（编辑视图）。 这些页面属性由相应页面组件的对话框(`cq:dialog`)定义和提供。
 
 >[!CAUTION]
 >
@@ -26,9 +26,9 @@ ht-degree: 43%
 
 每个页面属性的默认状态是：
 
-* 在创建视图中隐藏(例如， **创建页面** 向导)
+* 在创建视图中隐藏（例如，**创建页面**&#x200B;向导）
 
-* 在编辑视图中可用(例如， **查看属性**)
+* 在编辑视图中可用（例如，**查看属性**）
 
 如果需要任何更改，则必须专门配置字段。这是使用相应的节点属性完成的：
 
@@ -37,12 +37,12 @@ ht-degree: 43%
    * 名称：`cq:showOnCreate`
    * 类型：`Boolean`
 
-* 编辑视图中可用的页面属性(例如， **视图**/**编辑**) **属性** 选项)：
+* 编辑视图中可用的页面属性（例如，**视图**/**编辑**）**属性**&#x200B;选项)：
 
    * 名称：`cq:hideOnEdit`
    * 类型：`Boolean`
 
-例如，查看 **更多标题和描述** 在 **基本** 基础页面组件的选项卡。 这些组件在 **创建页面** 向导为 `cq:showOnCreate` 已设置为 `true`：
+例如，查看Foundation Page组件的&#x200B;**Basic**&#x200B;选项卡上&#x200B;**More Titles and Description**&#x200B;下分组的字段的设置。 这些内容在&#x200B;**创建页面**&#x200B;向导中可见，因为`cq:showOnCreate`已设置为`true`：
 
 ```xml
 /libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/moretitles
@@ -71,14 +71,14 @@ ht-degree: 43%
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   >但是，您 ***必须*** 不会更改中的任何内容 `/libs` 路径。
+   >但是，您&#x200B;***必须***&#x200B;不更改`/libs`路径中的任何内容。
    >
-   >这是因为 `/libs` 下次升级实例时将被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
+   >这是因为下次升级实例时`/libs`的内容会被覆盖（在应用修补程序或功能包时很可能会被覆盖）。
    >
    >建议用于配置和其他更改的方法是：
    >
-   >1. 重新创建所需项目(即，它存在于 `/libs`)，在 `/apps`
-   >1. 在中进行任何更改 `/apps`
+   >1. 在`/apps`下重新创建所需项（即`/libs`中存在的项）
+   >1. 在`/apps`中进行任何更改
 
 1. 将 `basic` 上的 `path` 属性设置为指向基本选项卡的覆盖（另请参阅下一步）。例如：
 
@@ -102,14 +102,14 @@ ht-degree: 43%
 
 >[!NOTE]
 >
->配置页面属性以用于Live Copies时，请参阅 [配置页面属性上的MSM锁定](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) 以了解更多详细信息。
+>配置用于活动副本的页面属性时，有关更多详细信息，请参阅[在页面属性上配置MSM锁定](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui)。
 
 ## 页面属性的示例配置 {#sample-configuration-of-page-properties}
 
-此示例演示了 [Sling资源合并器](/help/sites-developing/sling-resource-merger.md)；包括使用 [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). 它还说明了 `cq:showOnCreate` 和 `cq:hideOnEdit` 的用法。
+此示例演示了[Sling资源合并器](/help/sites-developing/sling-resource-merger.md)的对话框比较技术；包括使用[`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties)。 它还说明了 `cq:showOnCreate` 和 `cq:hideOnEdit` 的用法。
 
 GITHUB上的代码
 
 您可以在GitHub上找到此页面的代码
 
-* [在GitHub上打开aem-authoring-extension-page-dialog项目](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* 在GitHub上[打开aem-authoring-extension-page-dialog项目](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

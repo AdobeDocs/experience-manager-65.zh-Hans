@@ -25,6 +25,6 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 >[!CAUTION]
 >
->经典UI中没有提供内容片段管理的完整功能。 请参阅 [使用内容片段进行页面创作](/help/sites-authoring/content-fragments.md) 在标准创作文档中。
+>经典UI中没有提供内容片段管理的完整功能。 请参阅标准创作文档中的[使用内容片段进行页面创作](/help/sites-authoring/content-fragments.md)。
 >
 >可以在经典UI Sidekick中看到内容片段组件，但无法提供其他功能。

@@ -41,7 +41,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 * [**布局容器**](#adding-a-layout-container-and-its-content-edit-mode)&#x200B;组件
 
-  此组件在以下位置提供 [组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser) 并提供了一个网格段落系统，让您能够在响应式网格内添加和放置组件。 您也可以将此组件设置为页面上的默认段落系统。
+  此组件在[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)中可用，并且提供了一个网格段落系统，允许您在响应式网格中添加和放置组件。 您也可以将此组件设置为页面上的默认段落系统。
 
 * [**布局模式**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
@@ -62,11 +62,11 @@ AEM 使用一组机制为页面实现响应式布局：
 
 >[!NOTE]
 >
->Adobe提供 [GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/) 响应布局的基础之上，作为前端开发人员可以使用的参考，例如在为将来的AEM站点创建静态AEM模型时，允许他们在AEM之外使用HTML网格。
+>Adobe提供了响应式布局的[GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)，前端开发人员可以参考该文档，以便在AEM之外使用AEM网格，例如，在为将来的AEM站点创建静态HTML模型时。
 
 >[!NOTE]
 >
->通过对模板进行配置，可以启用上述机制。请参阅 [配置响应式布局](/help/sites-administering/configuring-responsive-layout.md) 以了解详细信息。
+>通过对模板进行配置，可以启用上述机制。有关详细信息，请参阅[配置响应式布局](/help/sites-administering/configuring-responsive-layout.md)。
 
 ## 布局定义、设备模拟和断点 {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -110,7 +110,7 @@ AEM 让您根据设备的宽度定义布局：
 
    模拟器工具栏会显示其他布局选项：
 
-   * **旋转设备**  — 允许您将设备从垂直（纵向）方向旋转到水平（横向）方向，反之亦然。
+   * **旋转设备** — 允许您将设备从垂直（纵向）方向旋转到水平（横向）方向，反之亦然。
 
      ![旋转设备](do-not-localize/screen_shot_2018-03-23at084612.png) ![旋转设备](do-not-localize/screen_shot_2018-03-23at084637.png)
 
@@ -132,7 +132,7 @@ AEM 让您根据设备的宽度定义布局：
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * 蓝色虚线表示 *折叠* 选定设备(此处为 **IPHONE 6**)。
+   * 蓝色虚线表示选定设备(此处为&#x200B;**iPhone 6**)的&#x200B;*折*。
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
@@ -150,7 +150,7 @@ AEM 让您根据设备的宽度定义布局：
 
 >[!NOTE]
 >
->如果尚不可用， **布局容器** 必须明确 [已为段落系统/页面激活](/help/sites-administering/configuring-responsive-layout.md) (例如，通过使用 [**设计** 模式](/help/sites-authoring/default-components-designmode.md))。
+>如果尚未可用，则必须为段落系统/页面](/help/sites-administering/configuring-responsive-layout.md)明确[激活&#x200B;**布局容器**（例如，通过使用&#x200B;[**设计**&#x200B;模式](/help/sites-authoring/default-components-designmode.md)）。
 
 1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-authoring/author-environment-tools.md#components-browser)。从此处，您可以将其拖动到页面上的所需位置，随后您将看到将组件拖动到 **此处占位符** 。
 1. 接下来，您可以向布局容器中添加组件。这些组件将存放实际的内容：
@@ -233,7 +233,7 @@ AEM 让您根据设备的宽度定义布局：
 
   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
-* 在 **布局** 模式，您可以单击 **将组件拖动到此处** 以选择整个组件。 此时将显示此模式的工具栏。
+* 在&#x200B;**布局**&#x200B;模式下，您可以单击&#x200B;**将组件拖动到此处**&#x200B;以选择整个组件。 此时将显示此模式的工具栏。
 
   根据布局组件的状态及属于该布局的组件，工具栏将具有不同的选项。例如：
 
@@ -241,13 +241,13 @@ AEM 让您根据设备的宽度定义布局：
 
      ![父项](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **显示隐藏的组件**  — 显示所有或各个组件。 数字表示当前存在的隐藏组件数量。计数器显示隐藏的组件数量。
+   * **显示隐藏的组件** — 显示所有或各个组件。 数字表示当前存在的隐藏组件数量。计数器显示隐藏的组件数量。
 
      ![显示隐藏的组件](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **恢复断点布局** - 恢复到默认布局。这意味着将不会强制实施自定义布局。
 
-     ![服务器断点布局](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![反向断点布局](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **浮动到新行** - 在间距允许的情况下将组件向上移动一个位置。
 

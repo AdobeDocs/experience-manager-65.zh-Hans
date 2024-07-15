@@ -18,11 +18,11 @@ ht-degree: 17%
 
 # 创建和组织页面{#creating-and-organizing-pages}
 
-本节将介绍如何使用Adobe Experience Manager (AEM)创建和管理页面，以便您随后可以 [创建内容](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) 在这些页面上。
+本节介绍如何使用Adobe Experience Manager (AEM)创建和管理页面，以便您随后能够在这些页面上[创建内容](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)。
 
 >[!NOTE]
 >
->您的帐户需要 [适当的访问权限](/help/sites-administering/security.md) 和 [权限](/help/sites-administering/security.md#permissions) 要对页面执行操作，例如创建、复制、移动、编辑、删除。
+>您的帐户需要[适当的访问权限](/help/sites-administering/security.md)和[权限](/help/sites-administering/security.md#permissions)才能在页面上执行操作，例如创建、复制、移动、编辑、删除。
 >
 >如果您遇到任何问题，我们建议您与系统管理员联系。
 
@@ -35,19 +35,19 @@ ht-degree: 17%
 
 您还可以使用[文件夹](#creating-a-new-folder)来帮助组织内容。
 
-网站的结构可以视为 *树结构* 保存您的内容页面的存储库。 这些内容页面的名称用于组成URL，而标题在查看页面内容时显示。
+网站的结构可视为保存内容页面的&#x200B;*树结构*。 这些内容页面的名称用于组成URL，而标题在查看页面内容时显示。
 
-下面显示了从Geometrixx站点中提取的内容；例如， `Triangle` 页面将被访问：
+下面显示了从Geometrixx站点中提取的内容；例如，将访问`Triangle`页面：
 
 * 创作环境
 
   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-* 发布环境
+* Publish环境
 
   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-  根据实例的配置，使用 `/content` 在发布环境中可能是可选的。
+  根据实例的配置，`/content`在发布环境中可能是可选的。
 
 ```xml
   /content
@@ -69,7 +69,7 @@ ht-degree: 17%
     /...
 ```
 
-此结构可以从网站控制台中查看，您可以将其用于 [在树结构中导航](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+此结构可以从网站控制台中查看，您可以使用它来[浏览树结构](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15)。
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -87,7 +87,7 @@ ht-degree: 17%
    * 用于生成 URI。
    * 此字段的用户输入是可选的。如果未指定，名称会从标题派生。
 
-创建页面时，AEM [按照约定验证页面名称](/help/sites-developing/naming-conventions.md) 由AEM和JCR强制实施。
+创建页面时，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证页面名称。
 
 根据UI，允许的实施和字符列表略有不同（触屏UI允许的实施和字符列表更加广泛），但允许的最低值为：
 
@@ -97,25 +97,25 @@ ht-degree: 17%
 * _ （下划线）
 * `-`（连字符/减号）
 
-如果您希望确保这些字符被接受/使用(如果您需要有关允许的所有字符的完整详细信息，请参阅 [命名约定](/help/sites-developing/naming-conventions.md))。
+如果您希望确保这些字符被接受/使用，请只使用这些字符（如果您需要有关允许的所有字符的完整详细信息，请参阅[命名惯例](/help/sites-developing/naming-conventions.md)）。
 
 #### 标题 {#title}
 
-如果您只提供页面 **标题** 创建页面时，AEM将派生页面 **名称** 来自此字符串和 [根据惯例验证名称](/help/sites-developing/naming-conventions.md) 由AEM和JCR强制实施。 在这两个UI中 **标题** 虽然将接受包含无效字符的字段，但派生的名称将替代无效字符。 例如：
+如果您在创建页面时只提供页面&#x200B;**Title**，则AEM将从此字符串派生页面&#x200B;**Name**，然后[根据AEM和JCR实行的约定](/help/sites-developing/naming-conventions.md)验证该名称。 在这两个UI中，将接受包含无效字符的&#x200B;**标题**&#x200B;字段，但派生的名称将替代无效字符。 例如：
 
 | 标题 | 派生的名称 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast；c+ | sc---c-.html |
+| SC%&amp;&amp;amp；ast；c+ | sc---c-.html |
 
 #### 名称 {#name}
 
-如果您提供页面 **名称** 创建页面时，AEM [按照约定验证名称](/help/sites-developing/naming-conventions.md) 由AEM和JCR强制实施。
+如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的约定](/help/sites-developing/naming-conventions.md)验证此名称。
 
-在经典UI中，您 **无法输入无效字符** 在 **名称** 字段。
+在经典UI中，**无法在**&#x200B;名称&#x200B;**字段中输入无效字符**。
 
 >[!NOTE]
->在触屏UI中，您 **无法提交无效字符** 在 **名称** 字段。 当 AEM 检测到无效字符时，此字段将会突出显示，并出现一条说明性消息以指示需要删除/替换的字符。
+>在触控式UI中，**名称**&#x200B;字段中无法&#x200B;**提交无效字符**。 当 AEM 检测到无效字符时，此字段将会突出显示，并出现一条说明性消息以指示需要删除/替换的字符。
 
 >[!NOTE]
 >
@@ -150,7 +150,7 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
 * 视频
 * 更多内容
 
-创建并打开页面后，您可以 [使用组件添加内容](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)，可从以下位置获取： [sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+创建并打开页面后，您可以[使用组件](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph)添加内容，这些组件可从[sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)获得。
 
 ## 管理页面 {#managing-pages}
 
@@ -158,23 +158,23 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
 
 除非提前为您创建了所有页面，否则在开始创建内容之前，您必须创建一个页面：
 
-1. 从 **网站** 控制台中，选择要创建页面的级别。
+1. 从&#x200B;**网站**&#x200B;控制台中，选择要创建页面的级别。
 
-   在以下示例中，您在级别下创建页面 **产品**  — 显示在左窗格中；右窗格显示已存在于以下级别的页面 **产品**.
+   在以下示例中，您正在级别&#x200B;**产品**&#x200B;下创建页面 — 显示在左窗格中；右窗格显示已存在于&#x200B;**产品**&#x200B;下的级别的页面。
 
    ![screen_shot_2012-02-15at114413am](assets/screen_shot_2012-02-15at114413am.png)
 
-1. 在 **新建……** 菜单（单击旁边的箭头） **新建……**)，选择 **新建页面……**. 此 **创建页面** 窗口打开。
+1. 在&#x200B;**新建……**&#x200B;菜单（单击&#x200B;**新建……**&#x200B;旁边的箭头）中，选择&#x200B;**新建页面……**。 将打开&#x200B;**创建页面**&#x200B;窗口。
 
-   点击 **新建……** 它本身也可作为 **新建页面……** 选项。
+   单击&#x200B;**新建……**&#x200B;本身也可作为&#x200B;**新建页面……**&#x200B;选项的快捷方式。
 
-1. 此 **创建页面** 通过对话框，您可以：
+1. 通过&#x200B;**创建页面**&#x200B;对话框，您可以：
 
-   * 提供 **标题**；向用户显示。
-   * 提供 **名称**；用于生成URI。 如果未指定，则将从标题派生名称。
+   * 提供&#x200B;**标题**；此标题向用户显示。
+   * 提供&#x200B;**名称**；用于生成URI。 如果未指定，则将从标题派生名称。
 
-      * 如果您提供页面 **名称** 创建页面时，AEM [按照约定验证名称](/help/sites-developing/naming-conventions.md) 由AEM和JCR提供。
-      * 在经典UI中，您 **无法输入无效字符** 在 **名称** 字段。
+      * 如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证该名称。
+      * 在经典UI中，**无法在**&#x200B;名称&#x200B;**字段中输入无效字符**。
 
    * 单击要用于创建新页面的模板。
 
@@ -184,29 +184,29 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
    >
    >请参阅[页面命名惯例](#page-naming-conventions)。
 
-   创建页面所需的最少信息是 **标题** 和所需的模板。
+   创建页面所需的最少信息是&#x200B;**标题**&#x200B;和所需的模板。
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
    >[!NOTE]
    >
-   >如果要在URL中使用Unicode字符，请设置别名( `sling:alias`)属性([页面属性](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md))。
+   >如果要在URL中使用Unicode字符，请设置别名(`sling:alias`)属性（[页面属性](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)）。
 
-1. 单击 **创建** 以创建页面。 您会返回 **网站** 控制台，您可以在此处查看新页面的条目。
+1. 单击&#x200B;**创建**&#x200B;以创建页面。 返回到&#x200B;**网站**&#x200B;控制台，您可以在其中看到新页面的条目。
 
    控制台提供了有关页面的信息（例如，上次编辑该页面的时间和作者），这些信息将根据需要进行更新。
 
    >[!NOTE]
    >
-   >您也可以在编辑现有页面时创建页面。 使用 **创建子页面** 从 **页面** sidekick的选项卡会在正在编辑的页面下方直接创建一个页面。
+   >您也可以在编辑现有页面时创建页面。 使用Sidekick的&#x200B;**页面**&#x200B;选项卡中的&#x200B;**创建子页面**&#x200B;将直接在正在编辑的页面下创建一个页面。
 
 ### 打开页面进行编辑 {#opening-a-page-for-editing}
 
-您可以打开要保留的页面 [已编辑](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) 通过以下几种方法之一：
+您可以通过以下几种方法之一打开要[编辑的页面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)：
 
-* 从 **网站** 控制台，您可以 **双击** 用于打开以进行编辑的页面条目。
+* 在&#x200B;**网站**&#x200B;控制台中，您可以&#x200B;**双击**&#x200B;该页面条目以将其打开以进行编辑。
 
-* 从 **网站** 控制台，您可以 **右键单击** （上下文菜单）页面项目，然后选择 **打开** 菜单。
+* 在&#x200B;**网站**&#x200B;控制台中，您可以&#x200B;**右键单击**（上下文菜单）页面项，然后从菜单中选择&#x200B;**打开**。
 
 * 打开页面后，您可以通过单击超链接来导航到网站中的其他页面（以进行编辑）。
 
@@ -217,18 +217,18 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
 * 单个页面
 * 包含所有子页面的页面
 
-1. 从 **网站** 控制台，选择要复制的页面。
+1. 从&#x200B;**网站**&#x200B;控制台中，选择要复制的页面。
 
    >[!NOTE]
    >
    >在此阶段，您要复制单个页面还是底层子页面无关。
 
-1. 单击 **复制**.
+1. 单击&#x200B;**复制**。
 
 1. 导航到新位置，然后单击：
 
-   * **粘贴**  — 粘贴页面以及所有子页面
-   * **Shift +粘贴**  — 仅粘贴选定的页面
+   * **粘贴** — 将页面与所有子页面一起粘贴
+   * **Shift +粘贴** — 仅粘贴所选页面
 
    页面将粘贴到新位置。
 
@@ -238,7 +238,7 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
 
    >[!NOTE]
    >
-   >您还可以使用 **复制页面** 从 **页面** 替他搭便车。 这将打开一个对话框，您可以在其中指定目标等等。
+   >您还可以使用Sidekick的&#x200B;**页面**&#x200B;选项卡中的&#x200B;**复制页面**。 这将打开一个对话框，您可以在其中指定目标等等。
 
 ### 移动或重命名页面 {#moving-or-renaming-page}
 
@@ -258,11 +258,11 @@ AEM提供了将内部链接更新到要重命名或移动的页面的功能。 �
 
 1. 有多种方法可触发移动：
 
-   * 从 **网站** 单击以选择页面，然后选择 **移动……**
-   * 从 **网站** 控制台中，您还可以选择页面项目，然后 **右键单击** 并选择 **移动……**
-   * 编辑页面时，您可以选择 **移动页面** 从 **页面** 替他搭便车。
+   * 从&#x200B;**网站**&#x200B;控制台中，单击以选择页面，然后选择&#x200B;**移动……**
+   * 从&#x200B;**网站**&#x200B;控制台中，您还可以选择页面项目，然后&#x200B;**右键单击**&#x200B;并选择&#x200B;**移动……**
+   * 在编辑页面时，您可以从sidekick的&#x200B;**页面**&#x200B;选项卡中选择&#x200B;**移动页面**。
 
-1. 此 **移动** 窗口打开；您可以在此指定新位置和/或页面的新名称。
+1. 此时将打开&#x200B;**移动**&#x200B;窗口；您可以在此指定新位置、页面的新名称，或同时指定两者。
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
@@ -284,7 +284,7 @@ AEM提供了将内部链接更新到要重命名或移动的页面的功能。 �
 
      默认显示当前页面标签。 指定新页面标签（如有必要）。
 
-   * **Adjust**
+   * **调整**
 
      更新列出的页面上指向已移动页面的链接：例如，如果页面A具有指向页面B的链接，AEM会调整页面A中的链接，以防您移动页面B。
 
@@ -296,9 +296,9 @@ AEM提供了将内部链接更新到要重命名或移动的页面的功能。 �
 
    >[!NOTE]
    >
-   >如果页面已激活，则移动页面会自动取消激活该页面。 默认情况下，移动完成后将重新激活它，但可以通过取消选中 **重新发布** 中页面的字段 **移动** 窗口。
+   >如果页面已激活，则移动页面会自动取消激活该页面。 默认情况下，移动完成后将重新激活它，但可以通过取消选中&#x200B;**移动**&#x200B;窗口中页面的&#x200B;**Republish**&#x200B;字段来更改此设置。
 
-1. 单击 **移动**. 需要确认。 单击 **确定** 以确认。
+1. 单击&#x200B;**移动**。 需要确认。 单击&#x200B;**确定**&#x200B;确认。
 
    >[!NOTE]
    >
@@ -308,15 +308,15 @@ AEM提供了将内部链接更新到要重命名或移动的页面的功能。 �
 
 1. 您可以从各种位置删除页面：
 
-   * 在 **网站** 单击以选择页面，然后右键单击并选择 **删除** 从生成的菜单中。
-   * 在 **网站** 单击以选择页面，然后选择 **删除** 工具栏菜单中的。
-   * 在sidekick中，使用 **页面** 选项卡以选择 **删除页面**  — 这将删除当前打开的页面。
+   * 在&#x200B;**网站**&#x200B;控制台中，单击以选择页面，然后右键单击并从生成的菜单中选择&#x200B;**删除**。
+   * 在&#x200B;**网站**&#x200B;控制台中，单击以选择页面，然后从工具栏菜单中选择&#x200B;**删除**。
+   * 在sidekick中，使用&#x200B;**页面**&#x200B;选项卡选择&#x200B;**删除页面** — 这将删除当前打开的页面。
 
 1. 选择删除页面后，您必须确认请求 — 因为操作无法撤消。
 
    >[!NOTE]
    >
-   >删除后，如果页面已发布，您可以恢复最新的（或特定的）版本，但如果进行了进一步修改，则此版本的内容可能与上一个版本不完全相同。 请参阅 [如何恢复页面](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages) 以了解更多详细信息。
+   >删除后，如果页面已发布，您可以恢复最新的（或特定的）版本，但如果进行了进一步修改，则此版本的内容可能与上一个版本不完全相同。 有关详细信息，请参阅[如何还原页面](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages)。
 
 >[!NOTE]
 >
@@ -332,9 +332,9 @@ AEM提供了将内部链接更新到要重命名或移动的页面的功能。 �
 >
 >文件夹也需遵循在指定新文件夹名称时用到的[页面命名惯例](#page-naming-conventions)。
 
-1. 打开 **网站** 控制台并导航到所需的位置。
-1. 在 **新建……** 菜单（单击旁边的箭头） **新建……**)，选择 **新建文件夹……**.
-1. 此 **创建文件夹** 对话框打开。 您可在此输入&#x200B;**名称**&#x200B;和&#x200B;**标题**：
+1. 打开&#x200B;**网站**&#x200B;控制台并导航到所需的位置。
+1. 在&#x200B;**新建……**&#x200B;菜单（单击&#x200B;**新建……**&#x200B;旁边的箭头）中，选择&#x200B;**新建文件夹……**。
+1. 将打开&#x200B;**创建文件夹**&#x200B;对话框。 您可在此输入&#x200B;**名称**&#x200B;和&#x200B;**标题**：
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 

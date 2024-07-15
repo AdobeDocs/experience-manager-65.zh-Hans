@@ -20,4 +20,4 @@ ht-degree: 0%
 
 **[添加Clientlibs](add-clientlibs.md)**
 
-此时，可以探索沙盒中的社区功能以及使用 [We-Retail社区](../../help/sites-developing/we-retail.md)， [社区组件指南](components-guide.md)、和 [功能要点](essentials.md) 以供参考。
+此时，可以结合使用[We-Retail Community](../../help/sites-developing/we-retail.md)、[Community Components Guide](components-guide.md)和[Feature Essentials](essentials.md)探索沙盒中的社区功能，以供参考。

@@ -25,13 +25,13 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->您的帐户需要 [适当的访问权限](/help/sites-administering/security.md) 和 [权限](/help/sites-administering/security.md#permissions) 以编辑页面。
+>您的帐户需要[适当的访问权限](/help/sites-administering/security.md)和[权限](/help/sites-administering/security.md#permissions)才能编辑页面。
 >
 >如果您遇到任何问题，Adobe建议您与系统管理员联系。
 
 >[!NOTE]
 >
->如果您的页面、模板或两者都进行了适当设置，则可以使用 [响应式布局](/help/sites-authoring/responsive-layout.md) 编辑时。
+>如果您的页面、模板或两者都进行了适当设置，则可以在编辑时使用[响应式布局](/help/sites-authoring/responsive-layout.md)。
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ ht-degree: 47%
 
 * **页面信息**
 
-  它提供对 [页面信息](/help/sites-authoring/author-environment-tools.md#page-information) 菜单，其中包含页面详细信息和可在页面上执行的操作，包括查看和编辑页面信息、查看页面属性以及发布/取消发布页面。
+  通过它可访问[页面信息](/help/sites-authoring/author-environment-tools.md#page-information)菜单，其中包括页面详细信息和可在页面上执行的操作，包括查看和编辑页面信息、查看页面属性以及发布/取消发布页面。
 
   ![页面信息](do-not-localize/screen_shot_2018-03-22at111437.png)
 
@@ -65,7 +65,7 @@ ht-degree: 47%
 
 * **ContextHub**
 
-  打开 [上下文中心](/help/sites-authoring/ch-previewing.md). 仅在预览模式下可用。
+  打开[上下文中心](/help/sites-authoring/ch-previewing.md)。 仅在预览模式下可用。
 
   ![上下文中心](assets/screen_shot_2018-03-22at111543.png)
 
@@ -77,7 +77,7 @@ ht-degree: 47%
 
 * **模式选择器**
 
-  它显示当前 [模式](/help/sites-authoring/author-environment-tools.md#page-modes) 并允许您选择其他模式，如编辑、布局、时间扭曲或定位。
+  它显示当前[模式](/help/sites-authoring/author-environment-tools.md#page-modes)，并允许您选择其他模式，如编辑、布局、时间扭曲或定位。
 
   ![模式选择器](assets/chlimage_1-120.png)
 
@@ -89,7 +89,7 @@ ht-degree: 47%
 
 * **批注**
 
-  它允许您添加 [注释](/help/sites-authoring/annotations.md) 查看页面时跳转到页面。 在第一个批注之后，图标会切换到一个数字，指示页面上的批注数量。
+  它允许您在查看页面时向页面添加[注释](/help/sites-authoring/annotations.md)。 在第一个批注之后，图标会切换到一个数字，指示页面上的批注数量。
 
   ![批注](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -105,17 +105,17 @@ ht-degree: 47%
 
 通知会列出正在针对页面运行的工作流。如果用户参与了当前工作流步骤，还可以使用[影响工作流状态](/help/sites-authoring/workflows-participating.md)和获取更多工作流相关信息的选项，例如：
 
-* **完成**  — 打开 **完成工作项目** 对话框
+* **完成** — 打开&#x200B;**完成工作项**&#x200B;对话框
 
-* **委派**  — 打开 **完成工作项目** 对话框
+* **委派** — 打开&#x200B;**完成工作项**&#x200B;对话框
 
 * **查看详细信息** - 打开工作流的&#x200B;**详细信息**&#x200B;窗口
 
-通过通知栏完成和委派工作流步骤，与以下情况一样 [参与工作流](/help/sites-authoring/workflows-participating.md) 从“通知”收件箱中。
+通过通知栏完成和委派工作流步骤，与从“通知”收件箱中[参与工作流](/help/sites-authoring/workflows-participating.md)的操作方式相同。
 
 如果页面从属于多个工作流，则在通知的右侧端将显示工作流的数量，并且还提供有箭头按钮以允许您滚动浏览工作流。
 
-![工作流数量通知](assets/chlimage_1-122.png)
+![工作流数量的通知](assets/chlimage_1-122.png)
 
 ## 组件占位符 {#component-placeholder}
 
@@ -133,7 +133,7 @@ ht-degree: 47%
 
 ### 使用组件浏览器插入组件 {#inserting-a-component-from-the-components-browser}
 
-您可以使用添加组件 [组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser). [组件占位符](#component-placeholder)显示组件的位置：
+您可以使用[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)添加组件。 [组件占位符](#component-placeholder)显示组件的位置：
 
 1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-authoring/author-environment-tools.md#page-modes)。
 1. 打开[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)。
@@ -147,7 +147,7 @@ ht-degree: 47%
 
 ### 使用段落系统插入组件 {#inserting-a-component-from-the-paragraph-system}
 
-您可以使用添加组件 **将组件拖动到此处** 框的文字输入框：
+您可以使用段落系统的&#x200B;**将组件拖动到此处**&#x200B;框添加组件：
 
 1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-authoring/author-environment-tools.md#page-modes)。
 1. 有两种方法可以从段落系统中选择和添加组件：
@@ -156,9 +156,9 @@ ht-degree: 47%
 
    ![插入组件选择](assets/screen_shot_2018-03-22at112536.png)
 
-   * 如果您使用的是桌面设备，则可以双击 **将组件拖动到此处** 盒子。
+   * 如果您使用的是桌面设备，则可以双击&#x200B;**将组件拖动到此处**&#x200B;框。
 
-   此 **插入新组件** 对话框打开，允许您选择所需的组件：
+   将打开&#x200B;**插入新组件**&#x200B;对话框，允许您选择所需的组件：
 
    ![插入新组件](assets/screen_shot_2018-03-22at112650.png)
 
@@ -166,7 +166,7 @@ ht-degree: 47%
 
 ### 使用资源浏览器插入组件 {#inserting-a-component-using-the-assets-browser}
 
-您还可以通过从以下位置拖动资产，将组件添加到页面： [资产浏览器](/help/sites-authoring/author-environment-tools.md#assets-browser). 这会自动创建相应类型的组件（并包含资产）。
+您还可以通过从[资源浏览器](/help/sites-authoring/author-environment-tools.md#assets-browser)拖动资源来将组件添加到页面中。 这会自动创建相应类型的组件（并包含资产）。
 
 这适用于以下资产类型（某些资产类型取决于页面/段落系统）：
 
@@ -201,23 +201,23 @@ ht-degree: 47%
 
 >[!NOTE]
 >
->可针对您的安装配置此行为。请参阅 [配置段落系统以便拖动资产可创建组件实例](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance) 以了解更多详细信息。
+>可针对您的安装配置此行为。有关更多详细信息，请参阅[配置段落系统以便通过拖动资产创建组件实例](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance)。
 
 要通过拖动以上某一资源类型创建组件，请执行以下操作：
 
 1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-authoring/author-environment-tools.md#page-modes)。
 1. 打开[资源浏览器](/help/sites-authoring/author-environment-tools.md#assets-browser)。
-1. 将所需的资源拖动到所需位置。此 [组件占位符](#component-placeholder) 显示组件的放置位置。
+1. 将所需的资源拖动到所需位置。[组件占位符](#component-placeholder)显示组件的放置位置。
 
    此时会在所需位置创建与该资源类型对应的组件 - 组件包含选定的资源。
 
-1. [编辑](#editmovecopypastedelete) 组件（如有必要）。
+1. 如有必要，请[编辑](#editmovecopypastedelete)该组件。
 
 >[!NOTE]
 >
 >在移动设备上，资产浏览器会填充整个屏幕。 开始拖动资产时，浏览器将关闭以再次显示页面，以便您可以放置资产。
 
-在浏览资产时，如果您发现必须对资产进行快速更改，请单击资产名称旁边的编辑图标以开始 [资产编辑器](/help/assets/manage-assets.md).
+在浏览资产时，如果您发现必须对资产进行快速更改，请单击资产名称旁边的编辑图标以启动[资产编辑器](/help/assets/manage-assets.md)。
 
 ![编辑图标](assets/screen_shot_2018-03-22at112735.png)
 
@@ -237,7 +237,7 @@ ht-degree: 47%
 
 * **配置**
 
-  [取决于组件类型](/help/sites-authoring/default-components.md) 这使您可以编辑和配置组件的属性。 通常会打开一个对话框。
+  [依赖于组件类型](/help/sites-authoring/default-components.md)，这允许您编辑和配置组件的属性。 通常会打开一个对话框。
 
   ![配置](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -261,7 +261,7 @@ ht-degree: 47%
 
 * **插入组件**
 
-  这将打开对话框，您可以 [添加组件](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  这将打开对话框以[添加组件](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system)。
 
   ![插入组件](do-not-localize/screen_shot_2018-03-22at113017.png)
 
@@ -299,7 +299,7 @@ ht-degree: 47%
 
 * **转换为体验片段变量**
 
-  这让您能够创建 [体验片段](/help/sites-authoring/experience-fragments.md) 或将它添加到现有的体验片段中。
+  允许您从选定的组件创建[体验片段](/help/sites-authoring/experience-fragments.md)，或将其添加到现有的体验片段。
 
   ![转换为体验片段变量](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -314,7 +314,7 @@ ht-degree: 47%
 
 您可以打开组件以使用组件工具栏 [的编辑（铅笔）图标编辑内容](#edit-configure-copy-cut-delete-paste)。
 
-确切的编辑选项取决于组件。 对于某些组件， [所有操作仅在全屏模式下可用](#edit-content-full-screen-mode). 例如：
+确切的编辑选项取决于组件。 对于某些组件，[所有操作仅在全屏模式](#edit-content-full-screen-mode)下可用。 例如：
 
 * [文本组件](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
@@ -329,7 +329,7 @@ ht-degree: 47%
   >无法对空的图像组件执行编辑操作。
   >
   >
-  >[拖动或上传图像（使用“配置”）](/help/sites-authoring/default-components-foundation.md#image) 然后才能开始编辑。
+  >[拖动或上传图像（使用“配置”）](/help/sites-authoring/default-components-foundation.md#image)，然后才能开始编辑。
 
 * 图像组件 - 全屏
 
@@ -337,7 +337,7 @@ ht-degree: 47%
 
   ![图像组件全屏](assets/screen_shot_2018-03-22at120529.png)
 
-* 由多个基本组件构建的组件，例如 [文本与图像基础组件](/help/sites-authoring/default-components-foundation.md#text-image)，首先要求您确认所需的编辑选项集：
+* 由多个基本组件（如[Text &amp; Image foundation组件](/help/sites-authoring/default-components-foundation.md#text-image)）构建的组件首先会要求您确认所需的编辑选项集：
 
   ![组件编辑选项](assets/chlimage_1-123.png)
 
@@ -384,13 +384,13 @@ ht-degree: 47%
 
 ## 编辑组件布局 {#edit-component-layout}
 
-无需反复从编辑切换到 [布局模式](/help/sites-authoring/responsive-layout.md) 要调整组件，可以选择 **布局** 用于组件更改该组件布局的操作。 由于不必离开编辑模式，这节省了时间。
+您可以为组件选择&#x200B;**布局**&#x200B;操作以更改该组件的布局，而不是反复地从编辑模式切换到[布局模式](/help/sites-authoring/responsive-layout.md)来调整该组件。 由于不必离开编辑模式，这节省了时间。
 
-1. 当在 **编辑** 在站点控制台的模式下，选择某个组件会显示该组件的工具栏。
+1. 在站点控制台的&#x200B;**编辑**&#x200B;模式下，选择某个组件会显示该组件的工具栏。
 
-   ![表单中的编辑模式](assets/screen_shot_2018-03-22at133756.png)
+   ![在表单中编辑模式](assets/screen_shot_2018-03-22at133756.png)
 
-   单击 **布局** 操作，以便您可以调整组件的布局。
+   单击&#x200B;**布局**&#x200B;操作，以便调整组件的布局。
 
    ![组件工具栏](do-not-localize/chlimage_1-21.png)
 
@@ -404,7 +404,7 @@ ht-degree: 47%
 
    此时，您便可以像在[布局模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)中一样修改组件布局。
 
-1. 进行必要的布局更改后，单击 **关闭** 在组件操作菜单中，停止修改组件的布局。 组件的工具栏会返回到其正常的编辑状态。
+1. 进行必要的布局更改后，在组件操作菜单中单击&#x200B;**关闭**&#x200B;以停止修改组件的布局。 组件的工具栏会返回到其正常的编辑状态。
 
    ![关闭](do-not-localize/screen_shot_2018-03-22at133920.png)
 
@@ -412,7 +412,7 @@ ht-degree: 47%
 >
 >“布局”操作仅限用于选定的组件。例如，如果您正在编辑一个组件的布局，然后选择另一个组件，则将为新选择的组件显示标准编辑工具栏（而非布局工具栏）。 调整大小手柄和模拟器工具栏消失。
 >
->如果必须编辑页面的整体布局，并且会影响多个组件，请切换到 [布局模式](/help/sites-authoring/responsive-layout.md).
+>如果必须编辑页面的整体布局，并影响多个组件，请切换到[布局模式](/help/sites-authoring/responsive-layout.md)。
 
 ## 继承组件 {#inherited-components}
 
@@ -450,9 +450,9 @@ ht-degree: 47%
 
 ## 编辑页面模板 {#editing-the-page-template}
 
-如果页面基于 [可编辑模板](/help/sites-authoring/templates.md#editable-and-static-templates)，您可以轻松切换到 [模板编辑器](/help/sites-authoring/templates.md#editing-templates-template-authors) 通过选择 **编辑模板** 在 [“页面信息”菜单](/help/sites-authoring/author-environment-tools.md#page-information).
+如果页面基于[可编辑的模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以通过在[页面信息菜单](/help/sites-authoring/author-environment-tools.md#page-information)中选择&#x200B;**编辑模板**&#x200B;来轻松切换到[模板编辑器](/help/sites-authoring/templates.md#editing-templates-template-authors)。
 
-如果页面基于 [静态模板](/help/sites-authoring/templates.md#editable-and-static-templates)，您可以切换到 [设计模式](/help/sites-authoring/default-components-designmode.md) 使用 [页面模式选择器](/help/sites-authoring/author-environment-tools.md#page-modes) 工具栏上的来启用/禁用要在页面上使用的组件。
+如果页面基于[静态模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以使用工具栏上的[页面模式选择器](/help/sites-authoring/author-environment-tools.md#page-modes)切换到[设计模式](/help/sites-authoring/default-components-designmode.md)以启用/禁用要在页面上使用的组件。
 
 在[列视图](/help/sites-authoring/basic-handling.md#column-view)或[列表视图](/help/sites-authoring/basic-handling.md#list-view)中选择页面时，您可以轻松查看该页面所基于的模板。
 
@@ -492,11 +492,11 @@ ht-degree: 47%
 
 ### 预览模式 {#preview-mode}
 
-编辑内容时，您可以使用预览来预览页面 [模式](/help/sites-authoring/author-environment-tools.md#page-modes). 利用此模式，可执行以下操作：
+编辑内容时，您可以使用预览[模式](/help/sites-authoring/author-environment-tools.md#page-modes)预览页面。 利用此模式，可执行以下操作：
 
 * 隐藏各种编辑机制，以便您可以快速查看页面在发布时的显示方式。
 * 使用链接进行导航。
-* 确实如此 **非** 刷新页面内容。
+* 它&#x200B;**不**&#x200B;刷新页面内容。
 
 进行创作时，可以使用页面编辑器右上角的图标进入预览模式：
 
@@ -517,11 +517,11 @@ AEM允许您锁定页面，这样其他人就无法修改页面内容。 当您�
    1. 在[选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中选择页面。
    1. 选择锁定图标。
 
-  ![“锁定”图标](assets/screen_shot_2018-03-22at134928.png)
+  ![锁定图标](assets/screen_shot_2018-03-22at134928.png)
 
 * **页面编辑器**
 
-   1. 要打开菜单，请选择 **页面信息** 图标。
+   1. 要打开菜单，请选择&#x200B;**页面信息**&#x200B;图标。
    1. 选择&#x200B;**锁定页面**&#x200B;选项。
 
 锁定后，控制台视图信息便会更新；编辑时，工具栏中会出现锁定符号。
@@ -530,13 +530,13 @@ AEM允许您锁定页面，这样其他人就无法修改页面内容。 当您�
 
 >[!CAUTION]
 >
->在以下情况下可以执行锁定页面 [模拟用户](/help/sites-administering/security.md#impersonating-another-user). 但是，以这种方式锁定的页面只能由被模拟的用户或管理员用户解锁。
+>当[模拟用户](/help/sites-administering/security.md#impersonating-another-user)时，可以锁定页面。 但是，以这种方式锁定的页面只能由被模拟的用户或管理员用户解锁。
 >
 >无法通过模拟锁定页面的用户的身份来解锁页面。
 
 ## 解锁页面 {#unlocking-a-page}
 
-解锁页面的过程类似于 [锁定页面](#locking-a-page). 锁定页面后，锁定选项将被替换为解锁操作。
+解锁页面类似于[锁定页面](#locking-a-page)。 锁定页面后，锁定选项将被替换为解锁操作。
 
 “页面信息”菜单会将&#x200B;**解锁**&#x200B;列为一个选项，并且 Sites 控制台中的“锁定”图标会被替换为&#x200B;**解锁**&#x200B;图标。
 
@@ -544,7 +544,7 @@ AEM允许您锁定页面，这样其他人就无法修改页面内容。 当您�
 
 >[!CAUTION]
 >
->在以下情况下可以执行锁定页面 [模拟用户](/help/sites-administering/security.md#impersonating-another-user). 但是，以这种方式锁定的页面只能由被模拟的用户或管理员用户解锁。
+>当[模拟用户](/help/sites-administering/security.md#impersonating-another-user)时，可以锁定页面。 但是，以这种方式锁定的页面只能由被模拟的用户或管理员用户解锁。
 >
 >无法通过模拟锁定页面的用户的身份来解锁页面。
 
@@ -552,7 +552,7 @@ AEM允许您锁定页面，这样其他人就无法修改页面内容。 当您�
 
 您可以通过以下图标撤消或重做某项操作。 在适当的时候，这些内容会显示在工具栏中：
 
-![“撤消”和“重做”](do-not-localize/screen_shot_2018-03-23at093614.png)
+![撤消和重做](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >
@@ -568,7 +568,7 @@ AEM允许您锁定页面，这样其他人就无法修改页面内容。 当您�
 
 >[!NOTE]
 >
->您的系统管理员可以 [配置撤消/重做功能的各个方面](/help/sites-administering/config-undo.md) 根据您实例的要求。
+>系统管理员可以根据您实例的要求[配置撤消/重做功能的各个方面](/help/sites-administering/config-undo.md)。
 
 AEM会存储您执行的操作的历史记录以及执行操作的顺序。 这项功能意味着您可以按照执行顺序撤消多个操作，并在必要时重做它们，以重新应用一个或多个操作。
 

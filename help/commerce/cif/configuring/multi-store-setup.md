@@ -32,13 +32,13 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 
 ## 配置 {#configuration}
 
-1. 根据中所述的模式配置多个商店和商店视图 [Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+1. 根据[Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)中描述的模式配置多个商店和商店视图
 
 2. 确保AEM与Adobe Commerce之间的连接正常。
 
 3. 按照以下步骤创建CIFCloud Service配置的子配置：
 
-   * 在AEM中，转到“工具”>“常规”> [配置浏览器](/help/sites-administering/configurations.md#using-configuration-browser)
+   * 在AEM中，转到“工具”>“常规”>[配置浏览器](/help/sites-administering/configurations.md#using-configuration-browser)
    * 选择您创建的基本配置
    * 使用上述第2点所述的步骤创建配置
 
@@ -51,10 +51,10 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 4. 将子配置分配给AEM站点
 
    * 转到AEM Sites控制台
-   * 导航到站点结构的区域或语言根，例如/content/venia/us _或_ /content/venia/us/en用于Venia示例页面
+   * 导航到站点结构的区域或语言根，例如，/content/venia/us _或_ /content/venia/us/en代表Venia示例页面
    * 选择页面并打开页面属性
    * 选择高级选项卡
-   * 在 `Configuration` 部分，选择您在步骤中创建的配置
+   * 在`Configuration`部分中，选择您在步骤中创建的配置
 
 ## 其他资源
 

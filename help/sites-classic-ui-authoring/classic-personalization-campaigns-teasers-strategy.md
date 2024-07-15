@@ -23,29 +23,29 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->AEM 6.2现已弃用Teaser组件。请改用 [目标组件](/help/sites-authoring/content-targeting-touch.md).
+>AEM 6.2现已弃用Teaser组件。请改用[Target组件](/help/sites-authoring/content-targeting-touch.md)。
 
-* **品牌页面** 存储在网站的Campaigns部分中。 品牌包含单独的营销活动。
-* **Campaign页面** 存储在网站的Campaigns部分中。 每个营销活动都有一个单独的页面，其中包含了Teaser定义。 容器或概述页面还包含有关各个Teaser页面的某些信息和统计信息。
+* **品牌页面**&#x200B;存储在网站的“促销活动”部分。 品牌包含单独的营销活动。
+* **促销活动页面**&#x200B;存储在网站的“促销活动”部分。 每个营销活动都有一个单独的页面，其中包含了Teaser定义。 容器或概述页面还包含有关各个Teaser页面的某些信息和统计信息。
 
 AEM中的Teaser由以下几个部分组成：
 
-* **Teaser页面** 存储在相应的营销活动页面下，并保存每个特定营销活动可用的Teaser段落的定义。 在显示Teaser段落时，会使用这些定义；包括内容变体，以及用于选择变体和Boost因子的区段。
-* 此 **Teaser组件** 开箱即用，允许您在内容页面中创建特定Teaser段落的实例。 您可以从sidekick中拖动Teaser组件，然后指定您的Teaser定义以创建您自己的Teaser段落。 **注意：** AEM 6.2现已弃用Teaser组件。请改用 [目标组件](/help/sites-authoring/content-targeting-touch.md).
-* **Teaser段落** 是内容页面中Teaser的实际实例。 这些功能可吸引部分访客进入专注于其兴趣的内容。
+* **Teaser页面**&#x200B;存储在相应的营销活动页面下，并保存每个特定营销活动可用的Teaser段落的定义。 在显示Teaser段落时，会使用这些定义；包括内容变体，以及用于选择变体和Boost因子的区段。
+* **Teaser组件**&#x200B;现成可用，允许您在内容页面中创建特定Teaser段落的实例。 您可以从sidekick中拖动Teaser组件，然后指定您的Teaser定义以创建您自己的Teaser段落。 **注意：** AEM 6.2现已弃用Teaser组件。请改用[Target组件](/help/sites-authoring/content-targeting-touch.md)。
+* **Teaser段落**&#x200B;是内容页面中Teaser的实际实例。 这些功能可吸引部分访客进入专注于其兴趣的内容。
 * 包含营销活动内容的页面侧重于特定访客区段。 通常，Teaser段落会将访客引向此类页面。
 
 ## 策略 {#strategies}
 
-将Teaser段落添加到页面时，您必须定义 **策略**.
+将Teaser段落添加到页面时，必须定义&#x200B;**策略**。
 
-这适用于多个Teaser可供选择的情况，因为它们分配的区段都已成功解析。 此 **策略** 然后指定用于选择显示的Teaser的额外条件：
+这适用于多个Teaser可供选择的情况，因为它们分配的区段都已成功解析。 **策略**&#x200B;然后指定用于选择显示的Teaser的额外条件：
 
-* **Clickstream分数**，基于访客的客户端上下文中保存的标记和相关标记点击（显示访客单击包含相应标记的页面的频率）。 比较Teaser页面上定义的标记的点击率。
-* **Random**，用于“随机”选择；使用为页面生成的随机因子，这可以用以下内容查看 [客户端上下文](/help/sites-administering/client-context.md).
-* **第一** 在已解析的区段列表中。 顺序是营销活动容器页面中Teaser的顺序。
+* **点击流得分**&#x200B;基于访客客户端上下文中保留的标记和相关标记点击（显示访客点击包含相应标记的页面的频率）。 比较Teaser页面上定义的标记的点击率。
+* **随机**，用于“随机”选择；使用为页面生成的随机因子，这可以在[客户端上下文](/help/sites-administering/client-context.md)中看到。
+* 已解析区段列表中的&#x200B;**第一个**。 顺序是营销活动容器页面中Teaser的顺序。
 
-此 [提升因子](/help/sites-administering/campaign-segmentation.md#boost-factor) 对区段的选择也有影响。 这是添加到区段定义的加权系数，用于增加/减少选择区段的相对可能性。
+区段的[提升因子](/help/sites-administering/campaign-segmentation.md#boost-factor)也会对选择产生影响。 这是添加到区段定义的加权系数，用于增加/减少选择区段的相对可能性。
 
 各种选择标准的流程和相互关系用一个示例进行了最充分的说明（该方法也可用于确保Teaser将达到所需的受众）。
 
@@ -111,10 +111,10 @@ AEM中的Teaser由以下几个部分组成：
 
 然后，如果将此变量应用于访客，其中：
 
-* **S1**、 **S2和 **S6** 解决成功
+* 已成功解析&#x200B;**S1**、**S2和&#x200B;**S6**
 
-* 标记 **营销** 有三个点击量
-* 标记 **商业** 有六次点击
+* 标记&#x200B;**marketing**&#x200B;具有三次点击
+* 标记&#x200B;**业务**&#x200B;有六个点击
 
 我们可以看到结果：
 
@@ -192,7 +192,7 @@ AEM中的Teaser由以下几个部分组成：
  </tbody>
 </table>
 
-这些值用于确定访客将看到的Teaser，具体取决于 **策略** 应用于Teaser段落：
+根据应用于Teaser段落的&#x200B;**策略**，这些值用于确定访客将看到的Teaser：
 
 <table>
  <tbody>
@@ -204,7 +204,7 @@ AEM中的Teaser由以下几个部分组成：
   <tr>
    <td>第一个</td>
    <td>T5</td>
-   <td>只有T5和T6被视为其段都解析 <i>和</i> 它们具有最高的提升因子。 返回的列表顺序为T5、T6；因此选择并显示T5。</td>
+   <td>只有T5和T6被视为其区段都解析<i>和</i>，它们具有最高的提升因子。 返回的列表顺序为T5、T6；因此选择并显示T5。</td>
   </tr>
   <tr>
    <td>随机</td>
@@ -235,10 +235,10 @@ Teaser页面/段落用于引导特定访客区段访问关注其兴趣的内容�
 
 >[!NOTE]
 >
->AEM 6.2现已弃用Teaser组件。请改用 [目标组件](/help/sites-authoring/content-targeting-touch.md).
+>AEM 6.2现已弃用Teaser组件。请改用[Target组件](/help/sites-authoring/content-targeting-touch.md)。
 
 1. 导航到要放置指向活动页面的Teaser段落的内容页面。
-1. 添加 **Teaser** 组件(可在 **个性化** 部分)。 首次创建时，将显示尚未配置营销活动路径：
+1. 在所需位置添加&#x200B;**Teaser**&#x200B;组件(可在sidekick的&#x200B;**Personalization**&#x200B;部分中找到)。 首次创建时，将显示尚未配置营销活动路径：
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -252,7 +252,7 @@ Teaser页面/段落用于引导特定访客区段访问关注其兴趣的内容�
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. 单击 **确定** 以保存。 根据您在Teaser上设置的区段以及您当前作为登录的用户的用户档案，将显示相应的内容：
+1. 单击&#x200B;**确定**&#x200B;进行保存。 根据您在Teaser上设置的区段以及您当前作为登录的用户的用户档案，将显示相应的内容：
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -264,7 +264,7 @@ Teaser页面/段落用于引导特定访客区段访问关注其兴趣的内容�
 
 除了MCM中的营销活动视图外，营销活动页面还提供有关与其连接的Teaser的信息：
 
-1. 从 **网站** 控制台中，打开促销活动页面；例如：
+1. 从&#x200B;**网站**&#x200B;控制台中，打开促销活动页面；例如：
 
    `https://localhost:4502/content/campaigns/geometrixx-outdoors/storefront/summer.html`
 

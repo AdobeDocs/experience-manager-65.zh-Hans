@@ -23,7 +23,7 @@ ht-degree: 15%
 | AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | 本文 |
 
-有关AEM Forms中最新功能和增强功能的信息，请参阅 [AEM Forms的新增功能](../../forms/using/whats-new.md).
+有关AEM Forms中最新功能和增强功能的信息，请参阅[AEM Forms中的新增功能](../../forms/using/whats-new.md)。
 
 ## 关于AEM Forms {#about-aem-forms}
 
@@ -33,13 +33,13 @@ AEM Forms将表单创作、管理和发布与通信管理功能、文档安全�
 
 在大型企业中，通常只创建表单一次，之后通过将它复制到内容管理系统中来进行重用。保持表单的大型数据库处于最新状态并使它们成为可发现的表单是一项巨大的挑战。 AEM提供了一个可自定义的Forms门户，确保客户能够跨Web和移动渠道查找和访问所需的表单。
 
-AEM Forms提供了表单管理工具，这些工具不仅允许您管理自适应表单，而且还允许您管理XFA表单、PDF forms和相关资源。 有关更多信息，请参阅 [管理表单简介](../../forms/using/introduction-managing-forms.md).
+AEM Forms提供了表单管理工具，这些工具不仅允许您管理自适应表单，而且还允许您管理XFA表单、PDF forms和相关资源。 有关详细信息，请参阅[管理表单简介](../../forms/using/introduction-managing-forms.md)。
 
 >[!NOTE]
 >
 >在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
 
-![AEM forms功能](do-not-localize/4th-draft-updated.gif)
+![AEM表单功能](do-not-localize/4th-draft-updated.gif)
 
 ### 主要功能 {#key-capabilities}
 
@@ -83,13 +83,13 @@ PDF forms可以离线填写、本地保存以及下次在线时发送的表单�
 * 辅助功能设计和检查
 * 能够在服务器端保存表单
 * 支持文件附件
-* 与用于数据捕获的HTML Workspace集成
+* 与用于数据捕获的HTMLWorkspace集成
 
 ## 离线数据收集 {#offline-data-collection}
 
 在提交表单数据后，Adobe Experience Manager会将表单数据与现有系统、业务规则以及所需人员连接起来。
 
-AEM Forms提供了Forms Workspace，这款移动应用程序可将您的数字业务流程扩展到移动设备。 使用Forms Workspace，您可以收集和记录数据，即使离线也是如此。 Forms Workspace使用移动设备的功能，允许您捕获照片、视频并收集数据（如时间戳和其他信息）。 下次连接到网络时，可以同步收集的数据。
+AEM Forms提供了Forms Workspace，它是一种移动应用程序，可将您的数字业务流程扩展到移动设备。 使用Forms Workspace，您可以收集并记录数据，即使离线也是如此。 Forms Workspace使用移动设备的功能，允许您捕获照片、视频并收集数据（如时间戳和其他信息）。 下次连接到网络时，可以同步收集的数据。
 
 离线捕获数据并在下次联机时对其进行同步对现场人员尤其有用。 它提高了生产效率，减少了错误。
 
@@ -103,7 +103,7 @@ AEM Forms提供了Forms Workspace，这款移动应用程序可将您的数字�
 * 可自定义的仪表板，用于实时洞察业务运营
 * 用于连接第三方报告工具的API
 
-![第三稿](do-not-localize/3rd-draft.gif)
+![第三份草稿](do-not-localize/3rd-draft.gif)
 
 ## 个性化通信 {#personalized-communication}
 

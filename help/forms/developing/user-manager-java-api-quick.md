@@ -38,11 +38,11 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 >[!NOTE]
 >
->如果使用Unix等其他操作系统，请将Windows特定的路径替换为适用操作系统支持的路径，则“使用AEM进行编程”表单中的快速入门将基于文档。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>如果使用Unix等其他操作系统，请将Windows特定的路径替换为适用操作系统支持的路径，则“使用AEM进行编程”表单中的快速入门将基于文档。 同样，如果您使用的是其他J2EE应用程序服务器，请确保指定有效的连接属性。 请参阅[设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 ## 快速入门(SOAP模式)：使用Java API添加用户 {#quick-start-soap-mode-adding-users-using-the-java-api}
 
-以下代码示例将一个名为Wendy Blue的用户添加到AEM Forms。 (请参阅 [添加用户](/help/forms/developing/users.md#adding-users).)
+以下代码示例将一个名为Wendy Blue的用户添加到AEM Forms。 （请参阅[添加用户](/help/forms/developing/users.md#adding-users)。）
 
 ```java
  /*
@@ -160,7 +160,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API删除用户 {#quick-start-soap-mode-deleting-users-using-the-java-api}
 
-以下代码示例从AEM Forms中删除名为Wendy Blue的用户。 (请参阅 [删除用户](/help/forms/developing/users.md#deleting-users).)
+以下代码示例从AEM Forms中删除名为Wendy Blue的用户。 （请参阅[删除用户](/help/forms/developing/users.md#deleting-users)。）
 
 ```java
  /*
@@ -256,7 +256,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API管理用户和组 {#quick-start-soap-mode-managing-users-and-groups-using-the-java-api}
 
-以下代码示例查找本地用户以及该用户所属的本地组。 (请参阅 [管理用户和组](/help/forms/developing/users.md#managing-users-and-groups).)
+以下代码示例查找本地用户以及该用户所属的本地组。 （请参阅[管理用户和组](/help/forms/developing/users.md#managing-users-and-groups)。）
 
 ```java
  /*
@@ -380,7 +380,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API管理角色和权限 {#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api}
 
-下面的代码示例将Services用户角色分配给承担者，打印承担者具有的角色，然后将该角色从承担者中删除。 此快速启动调用了两个服务：DirectoryManager服务和AuthorizationManager服务。(请参阅 [管理角色和权限](/help/forms/developing/users.md#managing-roles-and-permissions).)
+下面的代码示例将Services用户角色分配给承担者，打印承担者具有的角色，然后将该角色从承担者中删除。 此快速启动调用了两个服务：DirectoryManager服务和AuthorizationManager服务。（请参阅[管理角色和权限](/help/forms/developing/users.md#managing-roles-and-permissions)。）
 
 ```java
  /*
@@ -523,7 +523,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API以编程方式同步用户 {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
-以下Java代码示例使用用户管理API同步用户。 (请参阅 [以编程方式同步用户](/help/forms/developing/users.md#programmatically-synchronizing-users).)
+以下Java代码示例使用用户管理API同步用户。 （请参阅以编程方式同步用户](/help/forms/developing/users.md#programmatically-synchronizing-users)。）[
 
 ```java
  /*
@@ -632,7 +632,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API添加用户 {#quick_start_soap_mode_adding_users_using_the_java_api-1}
 
-以下代码示例将一个名为Wendy Blue的用户添加到AEM Forms。 (请参阅 [添加用户](/help/forms/developing/users.md#adding-users).)
+以下代码示例将一个名为Wendy Blue的用户添加到AEM Forms。 （请参阅[添加用户](/help/forms/developing/users.md#adding-users)。）
 
 ```java
  /*
@@ -750,7 +750,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API创建组 {#quick-start-soap-mode-creating-groups-using-the-java-api}
 
-以下代码示例在AEM Forms中创建一个名为AdobeGroup的组。 (请参阅 [创建组](/help/forms/developing/users.md#creating-groups).)
+以下代码示例在AEM Forms中创建一个名为AdobeGroup的组。 （请参阅[创建组](/help/forms/developing/users.md#creating-groups)。）
 
 ```java
  /*
@@ -902,7 +902,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)管理首选项节点 {#quick-start-soap-mode-managing-preferences-nodes}
 
-以下Java代码模型使用用户管理API来管理首选项节点。 (请参阅 [以编程方式管理首选项节点](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+以下Java代码模型使用用户管理API来管理首选项节点。 （请参阅[以编程方式管理首选项节点](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)）
 
 ```java
 /*
@@ -1005,7 +1005,7 @@ public class ManagePreferences {
 
 ## 快速入门(SOAP模式)：使用Java API以编程方式管理首选项节点 {#quick-start-soap-mode-programmatically-managing-the-preferences-nodes-using-the-java-api}
 
-以下Java代码模型使用用户管理API管理首选项节点(请参阅 [以编程方式管理首选项节点](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes))
+以下Java代码模型使用用户管理API管理首选项节点（请参阅[以编程方式管理首选项节点](/help/forms/developing/programmatically-preferences-nodes.md#programmatically-managing-the-preferences-nodes)）
 
 ```java
 /*

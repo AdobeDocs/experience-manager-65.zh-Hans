@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 更改接口的颜色方案 {#changing-the-color-scheme-of-the-interface}
 
-您可以修改AEM Forms工作区用户界面部分的配色方案以满足您的要求。 以下是一些具有代表性的颜色方案自定义示例。 除了本文中讨论的步骤之外，请参阅 [AEM Forms工作区自定义的常规步骤](/help/forms/using/generic-steps-html-workspace-customization.md).
+您可以修改AEM Forms工作区用户界面部分的配色方案以满足您的要求。 以下是一些具有代表性的颜色方案自定义示例。 除了本文中讨论的步骤之外，请参阅[AEM Forms工作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)。
 
 ## 顶部导航栏 {#top-navigation-bar}
 
@@ -31,7 +31,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关更多信息，请参阅 [WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   >有关详细信息，请参阅[WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)。
 
 1. 添加以下样式以引用/apps/ws/css/newStyle.css中的新背景图像。
 
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 ## 类别组件 {#category-component}
 
-类别组件在左侧面板中显示任务的各种类别。 若要更改其颜色，请在以下位置定义背景颜色： `.category` CSS文件的元素。
+类别组件在左侧面板中显示任务的各种类别。 要更改其颜色，请在CSS文件的`.category`元素中定义背景颜色。
 
 ## 任务组件 {#task-component}
 

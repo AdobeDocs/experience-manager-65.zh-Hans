@@ -22,54 +22,54 @@ ht-degree: 3%
 
 ## 先决条件 {#prerequisite}
 
-1. 登录于 `/lc/crx/de` 具有管理员权限。
+1. 使用管理员权限在`/lc/crx/de`登录。
 1. 执行以下操作：
 
-   1. 复制分层结构： `/libs/livecycle/core/content` 在 `/apps/livecycle/core/content`.
+   1. 在`/apps/livecycle/core/content`处复制`/libs/livecycle/core/content`的分层结构。
 
       维护相同的（节点/文件夹）属性和访问控制。
 
    1. 复制内容文件夹：
 
-      从： `/libs/livecycle/core`
+      发件人： `/libs/livecycle/core`
 
-      至： `/apps/livecycle/core`.
+      收件人：`/apps/livecycle/core`。
 
-   1. 删除内容 `/apps/livecycle/core` 文件夹。
+   1. 删除`/apps/livecycle/core`文件夹的内容。
 
 1. 执行以下操作：
 
-   1. 复制分层结构： `/libs/livecycle/core/components/login` 在 `/apps/livecycle/core/components/login`. 维护相同的（节点/文件夹）属性和访问控制。
+   1. 在`/apps/livecycle/core/components/login`处复制`/libs/livecycle/core/components/login`的分层结构。 维护相同的（节点/文件夹）属性和访问控制。
 
-   1. 从复制组件文件夹： `/libs/livecycle/core` 到 `/apps/livecycle/core`.
+   1. 将组件文件夹：从`/libs/livecycle/core`复制到`/apps/livecycle/core`。
 
-   1. 删除文件夹的内容： `/apps/livecycle/core/components/login`.
+   1. 删除文件夹的内容： `/apps/livecycle/core/components/login`。
 
 ### 添加新区域设置 {#adding-a-new-locale}
 
-1. 复制 `i18n` 文件夹：
+1. 复制`i18n`文件夹：
 
    * 从 `/libs/livecycle/core/components/login`
-   * 到 `/apps/livecycle/core/components/login`
+   * 至`/apps/livecycle/core/components/login`
 
-1. 删除中的所有文件夹 `i18n` 除了一人，说 `en`.
+1. 删除`i18n`中的所有文件夹（除一个文件夹外），例如`en`。
 
-1. 在文件夹中 `en`，执行以下操作：
+1. 在文件夹`en`上，执行以下操作：
 
    1. 将文件夹重命名为要支持的区域设置名称。 例如：`ar`。
 
-   1. 更改属性 `jcr:language` 值至 `ar`(对于 `ar` 文件夹)。
+   1. 将`ar`文件夹的属性`jcr:language`值更改为`ar`。
 
    >[!NOTE]
    >
-   >如果区域设置是语言 — 国家/地区代码组合，例如， `ar-DZ`，然后将文件夹名称和属性值更改为 `ar-DZ`.
+   >如果区域设置是语言 — 国家/地区代码组合，例如`ar-DZ`，则将文件夹名称和属性值更改为`ar-DZ`。
 
-1. 复制 `login.jsp`：
+1. 复制`login.jsp`：
 
    * 从 `/libs/livecycle/core/components/login`
-   * 到 `/apps/livecycle/core/components/login`
+   * 至`/apps/livecycle/core/components/login`
 
-1. 修改以下代码片段 `/apps/livecycle/core/components/login/login.jsp`：
+1. 修改`/apps/livecycle/core/components/login/login.jsp`的以下代码片段：
 
 ***区域设置是语言代码***
 
@@ -197,23 +197,23 @@ String browserLocale = "en";
 
 ### 添加新文本或修改现有文本 {#adding-new-text-or-modifying-existing-text}
 
-1. 复制 `i18n` 文件夹：
+1. 复制`i18n`文件夹：
 
    * 从 `/libs/livecycle/core/components/login`
-   * 到 `/apps/livecycle/core/components/login`
+   * 至`/apps/livecycle/core/components/login`
 
-1. 现在修改属性的值 `sling:message` 节点（在所需的区域设置代码文件夹下）的路径。 通过值中提到的键完成翻译 `sling:key` 节点的属性。
+1. 现在，修改要更改其文本的节点的属性`sling:message`的值（在所需的区域设置代码文件夹下）。 通过节点的`sling:key`属性值中提到的键完成翻译。
 
 1. 要添加新的键值对，请执行以下步骤。 查看以下屏幕快照中的示例。
 
-   1. 创建节点类型 `sling:MessageEntry`，或复制现有节点并在所有区域设置文件夹下重命名它。
-   1. 复制 `login.jsp` ：
+   1. 在所有区域设置文件夹下创建类型为`sling:MessageEntry`的节点，或复制现有节点并将其重命名。
+   1. 复制`login.jsp` ：
 
       * 从 `/libs/livecycle/core/components/login`
 
-      * 到 `/apps/livecycle/core/components/login`
+      * 至`/apps/livecycle/core/components/login`
 
-   1. 修改 `/apps/livecycle/core/components/login/login.jsp` 以合并新添加的文本。
+   1. 修改`/apps/livecycle/core/components/login/login.jsp`以合并新添加的文本。
 
    ![添加新的键值对](assets/capture_new.png)
 
@@ -240,28 +240,28 @@ String browserLocale = "en";
 
 ### 添加新样式，或修改现有样式 {#adding-new-style-or-modifying-existing-style}
 
-1. 复制 `login` 节点：
+1. 复制`login`节点：
 
    * 从 `/libs/livecycle/core/content`
-   * 到 `/apps/livecycle/core/content`
+   * 至`/apps/livecycle/core/content`
 
-1. 删除文件 `login.js` 和 `jquery-1.8.0.min.js`，从节点 `/apps/livecycle/core/content/login.`
+1. 从节点`/apps/livecycle/core/content/login.`删除文件`login.js`和`jquery-1.8.0.min.js`
 1. 修改CSS文件中的样式。
 1. 要添加新样式，请执行以下操作：
 
-   1. 添加新样式到 `/apps/livecycle/core/content/login/login.css`
-   1. 复制 `login.jsp`
+   1. 向`/apps/livecycle/core/content/login/login.css`添加新样式
+   1. 复制`login.jsp`
 
       * 从 `/libs/livecycle/core/components/login`
 
-      * 到 `/apps/livecycle/core/components/login`
+      * 至`/apps/livecycle/core/components/login`
 
-   1. 修改 `/apps/livecycle/core/components/login/login.jsp` 以合并新添加的样式。
+   1. 修改`/apps/livecycle/core/components/login/login.jsp`以合并新添加的样式。
 
 
 例如：
 
-* 将以下内容添加到 `/apps/livecycle/core/content/login/login.css`.
+* 将以下内容添加到`/apps/livecycle/core/content/login/login.css`。
 
 ```
 css.newLoginContentArea {
@@ -270,7 +270,7 @@ css.newLoginContentArea {
    }
 ```
 
-* 在中修改以下内容 `/apps/livecycle/core/components/login.jsp`.
+* 在`/apps/livecycle/core/components/login.jsp`中修改以下内容。
 
 
   ```jsp
@@ -285,20 +285,20 @@ css.newLoginContentArea {
 
 >[!NOTE]
 >
->如果现有图像位于 `/apps/livecycle/core/content/login` (复制自 `/libs/livecycle/core/content/login`)，然后在CSS中删除相应的引用。
+>如果删除`/apps/livecycle/core/content/login`（从`/libs/livecycle/core/content/login`复制）中的现有图像，则删除CSS中的相应引用。
 
 ### 添加新图像 {#add-new-images}
 
 1. 按照添加新样式或修改现有样式（如上所述）的步骤操作。
-1. 在中添加新图像 `/apps/livecycle/core/content/login`. 要添加图像，请执行以下操作：
+1. 在`/apps/livecycle/core/content/login`中添加新图像。 要添加图像，请执行以下操作：
 
    1. 安装WebDAV客户端。
-   1. 导航到 `/apps/livecycle/core/content/login` 文件夹，使用webDAV客户端。 有关更多信息，请参阅 [WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en).
+   1. 使用webDAV客户端导航到`/apps/livecycle/core/content/login`文件夹。 有关详细信息，请参阅[WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)。
 
    1. 添加新图像。
 
-1. 在中添加新样式 `/apps/livecycle/core/content/login/login.css,` 对应于在中添加的新图像 `/apps/livecycle/core/content/login`.
-1. 在中使用新样式 `login.jsp` 在 `/apps/livecycle/core/components`.
+1. 在`/apps/livecycle/core/content/login/login.css,`中添加与在`/apps/livecycle/core/content/login`中添加的新图像对应的新样式。
+1. 在`login.jsp`的`/apps/livecycle/core/components`处使用新样式。
 
 例如：
 
@@ -314,8 +314,8 @@ css.newLoginContentArea {
 ```
 
 
-    *在/apps/livecycle/core/components/login.jsp中修改以下内容。
-
+在/apps/livecycle/core/components/login.jsp.
+中修改    *以下内容
 ```jsp
 <div class="loginContainerBkg">
 ```

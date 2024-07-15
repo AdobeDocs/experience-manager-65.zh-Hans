@@ -39,7 +39,7 @@ ht-degree: 15%
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-------------:|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
-| CIF加载项 | 2023.11.23.00 | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2023.11.23.00.zip) |
+| CIF加载项 | 2023.11.23.00 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2023.11.23.00.zip) |
 | CIF Venia引用站点 | 2023.11.08 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2023.11.08) |
 
 ### 错误修复 {#bug-fixes-november}
@@ -54,4 +54,4 @@ ht-degree: 15%
 
 ### 新增功能 {#what-is-new-july}
 
-* 中的产品过滤器挂钩 `ProductList` 组件
+* `ProductList`组件中的产品筛选器挂钩

@@ -43,11 +43,11 @@ ht-degree: 0%
 
 `<host>`
 
-这是要连接到的CRX实例的主机地址。 如果实例位于本地计算机上，则这是 `localhost`.
+这是您要连接到的CRX实例的主机地址。 如果实例位于本地计算机上，则这是`localhost`。
 
 `<remoteport>`
 
-这是目标CRX实例的主机端口。 例如，新安装的AEM安装的缺省值为 **`4502`** 并且新安装的AEM创作实例的默认值是 `4502`.
+这是目标CRX实例的主机端口。 例如，新安装的AEM安装的默认值为&#x200B;**`4502`**，新安装的AEM创作实例的默认值为`4502`。
 
 `<localport>`
 
@@ -73,7 +73,7 @@ ht-degree: 0%
 
 **`-i <numIndentions>`**（添加缩进）
 
-每个活动连接都进行缩进，以提高可读性。 默认级别为16。 此功能的引入附带了 `proxy.jar version 1.16`.
+每个活动连接都进行缩进，以提高可读性。 默认级别为16。 此功能已在`proxy.jar version 1.16`中引入。
 
 ### 日志格式 {#log-format}
 
@@ -88,7 +88,7 @@ proxy-2.1.jar生成的日志条目都具有以下格式：
 * C表示此条目来自客户端（这是对网页的请求）
 * 0是连接数（连接计数器从0开始）
 * 选#00000字节流中的偏移量。 这是第一个条目，因此偏移为0。
-* `[GET <?>]` 是请求的内容，示例中为HTTP标头(url)之一。
+* `[GET <?>]`是请求的内容，例如某个HTTP标头(url)。
 
 当连接关闭时，将记录以下信息：
 
@@ -97,7 +97,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-这显示客户端之间传递的字节数( `C`)和服务器( `S`)，并以平均速度运行。
+这显示第六次连接中客户端(`C`)与服务器(`S`)之间以平均速度传递的字节数。
 
 **日志输出示例**
 
@@ -113,7 +113,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 `/content/test.jpg`
 
-的内容 `test.html` 为：
+`test.html`的内容是：
 
 ```xml
 <html>
@@ -127,11 +127,11 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 </html>
 ```
 
-假定AEM实例正在运行 `localhost:4502`，代理的启动方式如下：
+假设AEM实例正在`localhost:4502`上运行，代理的启动方式如下：
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-现在可以通过上的代理访问CQ/CRX实例 `localhost:4444` 通过此端口进行的所有通信都记录到 `test.log`.
+现在可以通过`localhost:4444`上的代理访问CQ/CRX实例，通过此端口的所有通信都记录到`test.log`。
 
 如果您现在查看代理的输出，则会看到浏览器与AEM实例之间的交互。
 
@@ -146,7 +146,7 @@ using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 
 `http://localhost:4444/content/test.html`
 
-你看到浏览器会做出 `GET` 页面的请求：
+您会看到浏览器对该页面发出`GET`请求：
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -163,7 +163,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-AEM实例使用文件的内容进行响应 `test.html`：
+AEM实例使用文件`test.html`的内容进行响应：
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -205,7 +205,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
  S-7-#000107 -> [Content-Length: 124 ]
 ```
 
-**正在检查Keep-Alive是否有效**
+**检查保持活动状态是否有效**
 
 保持活动状态是HTTP的一项功能，它允许客户端重复使用与服务器的TCP连接来发出多个请求（针对页面代码、图片、样式表等）。 如果没有保持活动状态，客户端必须为每个请求建立新的连接。
 

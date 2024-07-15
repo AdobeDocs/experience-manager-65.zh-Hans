@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ## 最低软件要求
 
-[AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 需要7或更高版本。
+需要[AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7或更高版本。
 
 ## 入门培训 {#onboarding}
 
@@ -31,7 +31,7 @@ AEM Content和Commerce的入门培训分为两步：
 
 ### 安装适用于AEM 6.5的AEM Content and Commerce加载项 {#install-add-on}
 
-从下载并安装适用于AEM 6.5的AEM Commerce附加组件 [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 门户。
+从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)门户下载并安装适用于AEM 6.5的AEM Commerce加载项。
 
 启动并安装所需的AEM 6.5 Service Pack。 我们建议安装最后一个可用的Service Pack。
 
@@ -45,17 +45,17 @@ AEM可以连接到任何具有AEM的GraphQL端点可访问的commerce system。 
 
 可选地，可以提供身份验证标头以使用需要身份验证的其他CIF功能。
 
-生成的项目 [AEM项目原型](https://github.com/adobe/aem-project-archetype)，和 [AEM Venia参考存储](https://github.com/adobe/aem-cif-guides-venia) 已包含在 [默认配置](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json) 必须调整。
+必须调整由[AEM项目原型](https://github.com/adobe/aem-project-archetype)和已包含在[默认配置](https://github.com/adobe/aem-cif-guides-venia/blob/main/ui.config/src/main/content/jcr_root/apps/venia/osgiconfig/config/com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json)中的[AEM Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)生成的项目。
 
-替换 `url` 在 `com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json` 与商务系统的GraphQL端点配合使用。 此配置可通过OSGI控制台或通过项目部署OSGI配置来完成。 使用不同的AEM运行模式支持用于暂存和生产系统的不同配置。
+将`com.adobe.cq.commerce.graphql.client.impl.GraphqlClientImpl~default.cfg.json`中`url`的值替换为商务系统的GraphQL端点。 此配置可通过OSGI控制台或通过项目部署OSGI配置来完成。 使用不同的AEM运行模式支持用于暂存和生产系统的不同配置。
 
-AEM Content和Commerce附加组件以及CIF核心组件同时使用AEM服务器端和客户端连接。 默认情况下，客户端CIF核心组件和CIF附加创作工具连接到 `/api/graphql`. 如果需要，可以通过CIFCloud Service配置调整此设置（请参阅下文）。
+AEM Content和Commerce附加组件以及CIF核心组件同时使用AEM服务器端和客户端连接。 客户端CIF核心组件和CIF附加创作工具默认连接到`/api/graphql`。 如果需要，可以通过CIFCloud Service配置调整此设置（请参阅下文）。
 
-CIF加载项在以下位置提供了一个GraphQL代理servlet： `/api/graphql` 可以选择用于 [本地开发](develop.md). 对于生产部署，强烈建议通过AEM Dispatcher或其他网络层（如CDN）设置商务GraphQL端点的反向代理。
+CIF加载项提供了位于`/api/graphql`的GraphQL代理servlet，可以选择将其用于[本地开发](develop.md)。 对于生产部署，强烈建议通过AEM Dispatcher或其他网络层（如CDN）设置商务GraphQL端点的反向代理。
 
 ## 配置存储和目录 {#catalog}
 
-插件和 [CIF核心组件](https://github.com/adobe/aem-core-cif-components) 可用于连接到不同商务商店（或商店视图等）的多个AEM网站结构。 默认情况下，CIF加载项使用默认配置进行部署，该默认配置连接到Adobe Commerce的默认存储和目录。
+加载项和[CIF核心组件](https://github.com/adobe/aem-core-cif-components)可用于连接到不同商务商店（或商店视图等）的多个AEM网站结构。 默认情况下，CIF加载项使用默认配置进行部署，该默认配置连接到Adobe Commerce的默认存储和目录。
 
 可以按照以下步骤通过CIFCloud Service配置为项目调整此配置：
 
@@ -75,7 +75,7 @@ CIF加载项在以下位置提供了一个GraphQL代理servlet： `/api/graphql`
 
   >[!NOTE]
   >
-  >在大多数设置中，默认值 `/api/graphql` 不得更改。 只有未使用所提供的GraphQL代理的高级设置才应更改此设置。
+  >在大多数设置中，不能更改默认值`/api/graphql`。 只有未使用所提供的GraphQL代理的高级设置才应更改此设置。
 
 - 启用目录UID支持 — 在商业后端GraphQL调用中启用对UID而不是ID的支持。
 
@@ -87,14 +87,14 @@ CIF加载项在以下位置提供了一个GraphQL代理servlet： `/api/graphql`
 
   >[!CAUTION]
   >
-  >从CIF核心组件版本2.0.0开始，支持 `id` 已移除并替换为 `uid`. 如果您的项目使用CIF核心组件版本2.0.0，则必须启用目录UID支持，并使用有效的类别UID作为“目录根类别标识符”。
+  >从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 如果您的项目使用CIF核心组件版本2.0.0，则必须启用目录UID支持，并使用有效的类别UID作为“目录根类别标识符”。
 
 以上所示的配置仅供参考。 项目应提供自己的配置。
 
-有关结合使用多个AEM网站结构以及不同商业目录的更复杂设置，请参阅 [Commerce多商店设置](configuring/multi-store-setup.md) 教程。
+有关使用多个AEM网站结构与不同商业目录组合的更复杂的设置，请参阅[Commerce多商店设置](configuring/multi-store-setup.md)教程。
 
 ## 其他资源 {#additional-resources}
 
 - [AEM项目原型](https://github.com/adobe/aem-project-archetype)
-- [AEM Venia参考存储](https://github.com/adobe/aem-cif-guides-venia)
+- [AEM Venia引用存储](https://github.com/adobe/aem-cif-guides-venia)
 - [Commerce多商店设置](configuring/multi-store-setup.md)

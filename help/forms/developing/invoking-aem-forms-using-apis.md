@@ -1,6 +1,6 @@
 ---
 title: 如何使用API调用AEM Forms？
-description: 了解如何使用Java&trade、API、Web服务、远程处理和REST调用AEM Forms服务。
+description: 了解如何使用Java&amp；trade；API、Web服务、远程处理和REST调用AEM Forms服务。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 使用API调用AEM Forms {#invoking-aem-forms-using-apis}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 Adobe Experience Manager Forms是基于J2EE的企业软件，由在共享基础架构中运行的服务组成。 服务操作通常会消耗或生成文档。 通过使用AEM Forms，您可以将Forms Workflow与电子表单、文档安全和文档生成结合到一组集成而具有凝聚力的服务中。 可以从防火墙内部和外部访问这些服务。
 

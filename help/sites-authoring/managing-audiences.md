@@ -24,11 +24,11 @@ ht-degree: 63%
 * 添加受众 - Adobe Target 受众或 ContextHub 区段。
 * 管理受众。
 
-受众，称为 *区段* 在ContextHub和Client Context中，是由特定标准定义的一类访客，可确定哪些人会看到目标活动。 定位活动时，您可以直接在定位流程中选择受众，或在“受众”控制台中创建更多受众。
+ContextHub和Client Context中称为&#x200B;*区段*&#x200B;的受众是由特定标准定义的一类访客，可确定哪些人会看到目标活动。 定位活动时，您可以直接在定位流程中选择受众，或在“受众”控制台中创建更多受众。
 
 在“受众”控制台中，各受众按品牌进行组织。
 
-在“定位”模式下受众可用于 [创作目标内容](/help/sites-authoring/content-targeting-touch.md)，您也可以在该处创建受众(但必须在“受众”控制台中创建Adobe Target受众)。 在“定位”模式下创建的受众会显示在“受众”控制台中。
+在定位模式下，受众可用于[创作目标内容](/help/sites-authoring/content-targeting-touch.md)，您也可以在该模式下创建受众(但必须在“受众”控制台中创建Adobe Target受众)。 在“定位”模式下创建的受众会显示在“受众”控制台中。
 
 受众显示有相应的标签，用于说明定义的受众类型：
 
@@ -42,8 +42,8 @@ ht-degree: 63%
 
 要在“受众”控制台中创建 ContextHub 区段，请执行以下操作：
 
-1. 在导航控制台中，单击 **个性化**. 单击 **受众**.
-1. 单击 **创建ContextHub区段**.
+1. 在导航控制台中，单击&#x200B;**Personalization**。 单击&#x200B;**受众**。
+1. 单击&#x200B;**创建ContextHub区段**。
 
    ![screen-shot_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
 
@@ -53,7 +53,7 @@ ht-degree: 63%
    >
    >您可以通过点按或单击&#x200B;**已修改**&#x200B;来对修改列表进行降序排序，以查看任何新创建的受众。
 
-有关使用ContextHub创建区段的更多详细信息，请参阅 [使用ContextHub配置分段](/help/sites-administering/segmentation.md) 文档。
+有关使用ContextHub创建区段的更多详细信息，请参阅[使用ContextHub配置分段](/help/sites-administering/segmentation.md)文档。
 
 ## 使用“受众”控制台创建 Adobe Target 受众 {#creating-an-adobe-target-audience-using-the-audience-console}
 
@@ -65,23 +65,23 @@ ht-degree: 63%
 
 >[!NOTE]
 >
->如果您在中看不到**创建目标受众** **创建** 菜单上，您没有创建受众的必要权限。 您需要以下项的写入权限 **/etc/segments** 才能创建受众。 默认情况下，组内容作者具有写权限。
+>如果您在**0}创建**1}菜单中看不到{创建目标受众}，则您没有创建受众的必要权限。 ****&#x200B;您需要具有&#x200B;**/etc/segmentation**&#x200B;下的写入权限才能创建受众。 默认情况下，组内容作者具有写权限。
 
 要创建 Adobe Target 受众，请执行以下操作：
 
-1. 在导航控制台中，单击 **个性化**. 单击 **受众**.
+1. 在导航控制台中，单击&#x200B;**Personalization**。 单击&#x200B;**受众**。
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. 在受众控制台中，单击 **创建** 然后**创建目标受众**。
+1. 在“受众”控制台中，单击&#x200B;**创建**，然后单击**创建目标受众**。
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. 在 **Adobe Target配置** 对话框中，选择目标配置并单击 **确定**.
+1. 在&#x200B;**Adobe Target配置**&#x200B;对话框中，选择Target配置，然后单击&#x200B;**确定**。
 1. 在“规则#1”区域中，单击属性类型，然后在可用字段中输入任何属性信息。 完成后，选中该属性右侧的复选标记以保存该属性。有关所有属性的信息，请参阅[属性及其选项](#attributes-and-their-options)。
 1. 单击 **添加规则** ，以添加其他规则。根据需要输入任意数量的规则。规则与布尔运算符AND相结合，这意味着受众必须满足每个规则的所有要求才能符合活动条件。
 1. 单击&#x200B;**下一步**。
-1. 输入受众的名称，然后单击 **保存**.
+1. 输入受众的名称，然后单击&#x200B;**保存**。
 1. 单击&#x200B;**保存**。受众随即会列在“受众”列表中。
 
 ### 属性及其选项 {#attributes-and-their-options}
@@ -106,6 +106,6 @@ ht-degree: 63%
 
 您可以从“受众”控制台中编辑任何ContextHub或Client Context受众。 您还可以编辑Adobe Target受众，但只能编辑在AEM中创建的受众：
 
-1. 在导航控制台中，单击 **个性化**. 单击 **受众**.
-1. 单击要编辑的ContextHub或客户端上下文区段旁边的图标，然后单击 **编辑**.
-1. 在区段编辑器中进行任何编辑。请参阅 [客户端上下文](/help/sites-administering/campaign-segmentation.md) 或 [ContextHub](/help/sites-developing/ch-configuring.md) 文档。
+1. 在导航控制台中，单击&#x200B;**Personalization**。 单击&#x200B;**受众**。
+1. 单击要编辑的ContextHub或客户端上下文区段旁边的图标，然后单击&#x200B;**编辑**。
+1. 在区段编辑器中进行任何编辑。请参阅[客户端上下文](/help/sites-administering/campaign-segmentation.md)或[ContextHub](/help/sites-developing/ch-configuring.md)文档。

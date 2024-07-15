@@ -26,7 +26,7 @@ ht-degree: 4%
 
 ![spad-01](assets/spad-01.png)
 
-页面分析数据显示在 [列表视图](/help/sites-authoring/basic-handling.md#list-view) 站点控制台的。 当页面以列表格式显示时，默认情况下可以使用以下列：
+页面分析数据显示在站点控制台的[列表视图](/help/sites-authoring/basic-handling.md#list-view)中。 当页面以列表格式显示时，默认情况下可以使用以下列：
 
 * 页面视图
 * 独特访客
@@ -36,12 +36,12 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->要更改更新周期， [配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>要更改更新周期，[配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval)。
 
-1. 打开 **站点** 控制台；例如， [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
-1. 在工具栏的最右侧（右上角），单击图标以选择 **列表视图** (显示的图标将取决于 [当前视图](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources))。
+1. 打开&#x200B;**站点**&#x200B;控制台；例如，[https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. 在工具栏的最右侧（右上角），单击图标以选择&#x200B;**列表视图** （显示的图标取决于[当前视图](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)）。
 
-1. 再次单击工具栏最右侧的图标，然后选择 **查看设置**. 此 **配置列** 对话框打开。 进行所需的任何更改并通过进行确认 **更新**.
+1. 再次，在工具栏的最右侧（右上角），单击图标，然后选择&#x200B;**查看设置**。 将打开&#x200B;**配置列**&#x200B;对话框。 进行所需的任何更改并通过&#x200B;**更新**&#x200B;确认。
 
    ![spad-02](assets/spad-02.png)
 
@@ -65,11 +65,11 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 >
 >当页面树包含与不同Adobe Analytics云配置关联的子项时，无法为页面配置可用数据列。
 
-1. 在列表视图中，使用视图选择器（工具栏的右侧），选择 **查看设置** 然后 **添加自定义分析数据**.
+1. 在“列表视图”中，使用视图选择器（工具栏的右侧），选择&#x200B;**视图设置**，然后选择&#x200B;**添加自定义分析数据**。
 
    ![spad-03](assets/spad-03.png)
 
-1. 在站点控制台中选择要向作者显示的量度，然后单击 **添加**.
+1. 在Sites控制台中选择要向作者公开的量度，然后单击&#x200B;**添加**。
 
    显示的列是从Adobe Analytics中检索的。
 
@@ -77,7 +77,7 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 
 ### 从站点打开内容分析 {#opening-content-insights-from-sites}
 
-打开 [内容分析](/help/sites-authoring/content-insights.md) 以进一步调查页面有效性。
+从站点控制台打开[内容分析](/help/sites-authoring/content-insights.md)以进一步调查页面有效性。
 
 1. 在站点控制台中，选择要查看其内容分析的页面。
 1. 在工具栏上，单击Analytics和Recommendations图标。
@@ -90,4 +90,4 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 >
 >由于Adobe Analytics API中的安全性更改，无法再使用AEM中包含的Activity Map版本。
 >
->此 [Adobe Analytics提供的ActivityMap插件](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) 现在应使用。
+>现在应使用Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap插件。

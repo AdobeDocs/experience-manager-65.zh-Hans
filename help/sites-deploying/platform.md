@@ -28,7 +28,7 @@ Apache Jackrabbit Oak致力于实施可扩展且性能优异的分层内容存�
 
 ## 设计原则和目标 {#design-principles-and-goals}
 
-Oak实施 [JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0)规范。 其主要设计目标为：
+Oak实施[JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0)规范。 其主要设计目标为：
 
 * 更好地支持大型存储库
 * 多个分布式群集节点以实现高可用性
@@ -55,7 +55,7 @@ Oak核心在存储层中添加了多个层：
 * 搜索和编制索引
 * 观察
 
-### Oak JCR {#oak-jcr}
+### OAK JCR {#oak-jcr}
 
 Oak JCR的主要目标是将JCR语义转换为树操作。 它还负责：
 
@@ -68,7 +68,7 @@ Oak JCR的主要目标是将JCR语义转换为树操作。 它还负责：
 
 Oak存储层为内容的实际存储提供了一个抽象层。
 
-目前，AEM6中提供了两种存储实施： **Tar存储** 和 **MongoDB存储**.
+目前，AEM6中有两个可用的存储实施：**Tar存储**&#x200B;和&#x200B;**MongoDB存储**。
 
 ### Tar存储 {#tar-storage}
 
@@ -86,7 +86,7 @@ Tar存储使用tar文件。 它将内容存储为较大区段中的各种类型�
 
 节点及其直接子节点等相关记录存储在同一区段中。 这样，对于每个会话访问多个相关节点的典型客户端，可以快速搜索存储库并避免大多数高速缓存未命中。
 
-* **紧凑性**
+* **紧凑**
 
 记录的格式针对大小进行了优化，以降低IO成本并尽可能在缓存中容纳更多内容。
 
@@ -122,10 +122,10 @@ MongoDB存储会在每次修改时将数据添加到文档。 但是，它仅在
 
 ## 与Jackrabbit 2有何不同？ {#what-is-different-from-jackrabbit}
 
-由于Oak向后兼容JCR 1.0标准，因此用户级别几乎没有任何变化。 但是，在设置基于Oak的AEM安装时，必须考虑一些显着差异：
+由于Oak向后兼容JCR 1.0标准，因此用户级别几乎没有任何变化。 但是，在设置基于Oak的AEM安装时，必须注意一些明显差异：
 
 * Oak不会自动创建索引。 因此，必要时必须创建自定义索引。
-* 与Jackrabbit 2不同，Oak会话始终反映存储库的最新状态，而Jackrabbit 2则反映从获得会话时起存储库的稳定视图。 原因是Oak所基于的MVCC模型。
+* 与Jackrabbit 2不同，在Jackrabbit 2中，会话始终反映存储库的最新状态，而在Oak中，会话反映的是从获得会话时起存储库的稳定视图。 原因在于Oak所基于的MVCC模型。
 * Oak不支持同名同级(SNS)。
 
 ## 其他平台相关文档 {#other-platform-related-documentation}

@@ -20,14 +20,14 @@ ht-degree: 0%
 
 安全断言标记语言(SAML)是在配置企业域或混合域的授权时可以选择的一个选项。 SAML主要用于支持跨多个域的SSO。 将SAML配置为身份验证提供程序时，用户通过指定的第三方身份提供程序(IDP)登录并验证AEM Forms。
 
-有关SAML的说明，请参阅 [安全声明标记语言(SAML) V2.0技术概述](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html).
+有关SAML的说明，请参阅[安全断言标记语言(SAML) V2.0技术概述](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)。
 
 1. 在管理控制台中，单击设置>用户管理>配置> SAML服务提供程序设置。
-1. 在“服务提供者实体ID”框中，键入要用作AEM Forms服务提供者实现的标识符的唯一ID。 您还可以在配置IDP时指定此唯一ID(例如， `um.lc.com`.) 您还可以使用用于访问AEM表单的URL(例如， `https://AEMformsserver`)。
-1. 在服务提供商基本URL框中，键入Forms服务器的基本URL(例如， `https://AEMformsserver:8080`)。
+1. 在“服务提供者实体ID”框中，键入要用作AEM Forms服务提供者实现的标识符的唯一ID。 您还可以在配置IDP时指定此唯一ID（例如，`um.lc.com`。） 您还可以使用用于访问AEM表单的URL（例如，`https://AEMformsserver`）。
+1. 在“服务提供商基本URL”框中，键入Forms服务器的基本URL（例如，`https://AEMformsserver:8080`）。
 1. （可选）要使AEM Forms能够向IDP发送已签名的身份验证请求，请执行以下任务：
 
-   * 使用信任管理器导入PKCS #12格式的凭据，并选择文档签名凭据作为信任存储类型。 (请参阅 [管理本地凭据](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
+   * 使用信任管理器导入PKCS #12格式的凭据，并选择文档签名凭据作为信任存储类型。 （请参阅[管理本地凭据](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials)。）
    * 在“服务提供者凭据密钥别名”列表中，选择在信任存储区中为凭据分配的别名。
    * 单击“导出”，以便将URL内容保存到文件中，然后将该文件导入IDP。
 

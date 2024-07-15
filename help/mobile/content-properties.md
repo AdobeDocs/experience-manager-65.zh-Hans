@@ -61,7 +61,7 @@ ht-degree: 20%
 | dps-authorURL | 字符串 |  |
 | dps-hideFromBrowsePage | 布尔值 |  |
 | dps-access | 字符串 | 来自{&quot;protected&quot;、&quot;metered&quot;、&quot;free&quot;}的ProtectedAccess |
-| **Social** |  |  |
+| **社交** |  |  |
 | dps-socialShareURL | 字符串 |  |
 | dps-articleText | 字符串 |  |
 | dps-url | 字符串 |  |
@@ -70,7 +70,7 @@ ht-degree: 20%
 
 | **属性名称** | **类型** | **默认值或预期值** |
 |---|---|---|
-| dps-tapAction |  | 点按操作来源 {webLink} |
+| dps-tapAction |  | 来自{webLink}的TapAction |
 | dps-tapActionUrl |  |  |
 
 ### 收藏集 {#collections}

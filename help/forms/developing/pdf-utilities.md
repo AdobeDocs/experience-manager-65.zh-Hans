@@ -18,22 +18,22 @@ ht-degree: 1%
 
 # 使用PDF实用程序 {#working-with-pdf-utilities}
 
-**本文档中的示例和示例仅适用于JEE环境上的AEM Forms 。**
+**本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
-**关于PDF实用程序服务**
+**关于PDF实用工具服务**
 
 PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置和检索PDF文档属性，以及处理XMP元数据。 例如，在将PDF文档转换为另一种格式之前，检查其属性以确定要为转换调用哪个服务操作很有用。
 
 您可以使用“PDF实用程序”服务完成这些任务：
 
 * 将PDF文档转换为XDP文档。
-* 将XDP文档转换为PDF文档。 (请参阅 [将XDP文档转换为PDF文档](pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
-* 检索PDF文档属性。 (请参阅 [检索PDF文档属性](pdf-utilities.md#retrieving-pdf-document-properties).)
-* 保存PDF文档并优化该文档，以便快速进行Web查看。 (请参阅 [设置PDF文档保存模式](pdf-utilities.md#setting-pdf-document-save-modes).)
+* 将XDP文档转换为PDF文档。 (请参阅[将XDP文档转换为PDF文档](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)。)
+* 检索PDF文档属性。 (请参阅[检索PDF文档属性](pdf-utilities.md#retrieving-pdf-document-properties)。)
+* 保存PDF文档并优化该文档，以便快速进行Web查看。 (请参阅[设置PDF文档保存模式](pdf-utilities.md#setting-pdf-document-save-modes)。)
 
 >[!NOTE]
 >
->有关“PDF实用程序”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关PDF实用工具服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 将PDF文档转换为XDP文档 {#converting-pdf-documents-into-xdp-documents}
 
@@ -41,7 +41,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 >[!NOTE]
 >
->有关“PDF实用程序”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关PDF实用工具服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -57,7 +57,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 **创建PDFUtilityService客户端**
 
-必须先创建PDFUtilityService客户端，然后才能以编程方式执行PDF实用程序操作。 使用Java API，可通过创建 `PDFUtilityServiceClient` 对象。 使用Web服务API时，可使用 `PDFUtilityServiceService` 对象。
+必须先创建PDFUtilityService客户端，然后才能以编程方式执行PDF实用程序操作。 使用Java API，可通过创建`PDFUtilityServiceClient`对象来实现这一点。 使用Web服务API，可使用`PDFUtilityServiceService`对象实现此目的。
 
 **调用PDF到XDP的转换操作**
 
@@ -83,11 +83,11 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   创建 `PDFUtilityServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`PDFUtilityServiceClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 调用PDF到XDP的转换操作
 
-   要执行转换，请调用 `PDFUtilityServiceClient` 对象的 `convertPDFtoXDP` 方法并传入 `com.adobe.idp.Document` 表示PDF文件的对象。 此方法会返回 `com.adobe.idp.Document` 表示新创建的XDP文件的对象。
+   要执行转换，请调用`PDFUtilityServiceClient`对象的`convertPDFtoXDP`方法，并传入表示PDF文件的`com.adobe.idp.Document`对象。 该方法返回表示新创建的XDP文件的`com.adobe.idp.Document`对象。
 
 **另请参阅**
 
@@ -108,11 +108,11 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   创建 `PDFUtilityServiceService` 对象。
+   使用代理类构造函数创建`PDFUtilityServiceService`对象。
 
 1. 调用PDF到XDP的转换操作
 
-   调用 `PDFUtilityServiceService` 对象的 `convertPDFtoXDP` 方法并传入 `BLOB` 表示PDF文件的对象。 此方法会返回 `BLOB` 表示新创建的XDP文件的对象。
+   调用`PDFUtilityServiceService`对象的`convertPDFtoXDP`方法，并传入表示PDF文件的`BLOB`对象。 该方法返回表示新创建的XDP文件的`BLOB`对象。
 
 **另请参阅**
 
@@ -128,7 +128,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 >[!NOTE]
 >
->有关“PDF实用程序”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关PDF实用工具服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -144,7 +144,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 **创建PDFUtilityService客户端**
 
-必须先创建PDFUtilityService客户端，然后才能以编程方式执行PDF实用程序操作。 使用Java API，可通过创建 `PDFUtilityServiceClient` 对象。 使用Web服务API时，可使用 `PDFUtilityServiceService` 对象。
+必须先创建PDFUtilityService客户端，然后才能以编程方式执行PDF实用程序操作。 使用Java API，可通过创建`PDFUtilityServiceClient`对象来实现这一点。 使用Web服务API，可使用`PDFUtilityServiceService`对象实现此目的。
 
 **调用XDP以PDF转换操作**
 
@@ -170,11 +170,11 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   创建 `PDFUtilityServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`PDFUtilityServiceClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 调用XDP以PDF转换操作
 
-   要执行转换，请调用 `PDFUtilityServiceClient` 对象的 `convertXDPtoPDF` 方法并传入 `com.adobe.idp.Document` 表示XDP文件的对象。 此方法会返回 `com.adobe.idp.Document` 表示新创建的PDF文件的对象。
+   要执行转换，请调用`PDFUtilityServiceClient`对象的`convertXDPtoPDF`方法，并传入表示XDP文件的`com.adobe.idp.Document`对象。 该方法返回表示新创建的PDF文件的`com.adobe.idp.Document`对象。
 
 **另请参阅**
 
@@ -195,11 +195,11 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   创建 `PDFUtilityServiceService` 对象。
+   使用代理类构造函数创建`PDFUtilityServiceService`对象。
 
 1. 调用XDP以PDF转换操作
 
-   要执行转换，请调用 `PDFUtilityServiceService` 对象的 `convertXDPtoPDF` 方法并传入 `BLOB` 表示XDP文件的对象。 此方法会返回 `BLOB` 表示新创建的PDF文件的对象。
+   要执行转换，请调用`PDFUtilityServiceService`对象的`convertXDPtoPDF`方法，并传入表示XDP文件的`BLOB`对象。 该方法返回表示新创建的PDF文件的`BLOB`对象。
 
 **另请参阅**
 
@@ -215,7 +215,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 >[!NOTE]
 >
->有关“PDF实用程序”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)
+>有关PDF实用工具服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)
 
 ### 步骤摘要 {#summary_of_steps-2}
 
@@ -231,7 +231,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 **创建PDFUtilityService客户端**
 
-必须先创建PDFUtilityService客户端，然后才能以编程方式执行PDF实用程序操作。 使用Java API，可通过创建 `PDFUtilityServiceClient` 对象。 使用Web服务API，可使用 `PDFUtilityServiceService` 对象。
+必须先创建PDFUtilityService客户端，然后才能以编程方式执行PDF实用程序操作。 使用Java API，可通过创建`PDFUtilityServiceClient`对象来实现这一点。 使用Web服务API，可使用`PDFUtilityServiceService`对象完成此操作。
 
 **调用属性检索操作**
 
@@ -257,16 +257,16 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   创建 `PDFUtilityServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`PDFUtilityServiceClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 调用属性检索操作
 
-   要执行转换，请调用 `PDFUtilityServiceClient` 对象的 `getPDFProperties` 方法并传递以下内容：
+   要执行转换，请调用`PDFUtilityServiceClient`对象的`getPDFProperties`方法，并传入以下内容：
 
-   * A `com.adobe.idp.Document` 表示PDF文档的对象。
-   * A `PDFPropertiesOptionSpec` 包含要计算的属性的对象。
+   * 表示PDF文档的`com.adobe.idp.Document`对象。
+   * 包含要计算的属性的`PDFPropertiesOptionSpec`对象。
 
-   此方法会返回 `PDFPropertiesResult` 包含查询结果的对象。
+   该方法返回包含查询结果的`PDFPropertiesResult`对象。
 
 **另请参阅**
 
@@ -287,16 +287,16 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   创建 `PDFUtilityServiceService` 对象。
+   使用代理类构造函数创建`PDFUtilityServiceService`对象。
 
 1. 调用属性检索操作
 
-   要执行转换，请调用 `PDFUtilityServiceService` 对象的 `getPDFProperties` 方法并传递以下内容：
+   要执行转换，请调用`PDFUtilityServiceService`对象的`getPDFProperties`方法，并传入以下内容：
 
-   * A `BLOB` 表示PDF文档的对象。
-   * A `PDFPropertiesOptionSpec` 包含要计算的属性的对象。
+   * 表示PDF文档的`BLOB`对象。
+   * 包含要计算的属性的`PDFPropertiesOptionSpec`对象。
 
-   此方法会返回 `PDFPropertiesResult` 包含查询结果的对象。
+   该方法返回包含查询结果的`PDFPropertiesResult`对象。
 
 **另请参阅**
 
@@ -312,7 +312,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 >[!NOTE]
 >
->有关“PDF实用程序”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关PDF实用工具服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-3}
 
@@ -330,13 +330,13 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 **创建PDFUtilityService客户端**
 
-必须先创建PDFUtilityService客户端，然后才能以编程方式执行PDF实用程序操作。 使用Java API，可通过创建 `PDFUtilityServiceClient` 对象。 使用Web服务API，可使用 `PDFUtilityServiceService` 对象。
+必须先创建PDFUtilityService客户端，然后才能以编程方式执行PDF实用程序操作。 使用Java API，可通过创建`PDFUtilityServiceClient`对象来实现这一点。 使用Web服务API，可使用`PDFUtilityServiceService`对象完成此操作。
 
 **设置保存模式**
 
 您可以选择以下保存选项之一：
 
-* `INCREMENTAL`：增量保存，减少保存所需的时间
+* `INCREMENTAL`：递增保存以缩短保存所需的时间
 * `FAST_WEB_VIEW`：保存以快速Web查看
 * `FULL`：使用完全保存（无优化）进行保存
 
@@ -346,11 +346,11 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 **将PDF文档传递到另一个AEM Forms操作**
 
-一旦PDF实用程序服务设置了指定的保存模式，请将PDF文档传递给另一个AEM Forms操作。 从操作返回后，PDF文档将以指定模式保存。 例如，如果使用“PDF实用程序”服务设置 `FAST_WEB_VIEW` 模式，然后将PDF文档传递到加密服务的 `encryptUsingPassword` 操作，返回的PDF文档使用密码加密，并保存在 `FAST_WEB_VIEW` 模式。
+一旦PDF实用程序服务设置了指定的保存模式，请将PDF文档传递给另一个AEM Forms操作。 从操作返回后，PDF文档将以指定模式保存。 例如，如果您使用PDF实用程序服务设置`FAST_WEB_VIEW`模式，然后将PDF文档传递到加密服务的`encryptUsingPassword`操作，则返回的PDF文档将用密码加密，并保存为`FAST_WEB_VIEW`模式。
 
 >[!NOTE]
 >
->与此部分关联的快速入门将 `FAST_WEB_VIEW` 模式，然后将PDF文档传递到加密服务的 `encryptUsingPassword` 操作。
+>与此部分关联的快速入门设置了`FAST_WEB_VIEW`模式，然后将PDF文档传递到加密服务的`encryptUsingPassword`操作。
 
 **另请参阅**
 
@@ -374,26 +374,26 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   创建 `PDFUtilityServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`PDFUtilityServiceClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 设置保存模式
 
-   * 创建 `PDFUtilitySaveMode` 对象。
-   * 通过调用 `PDFUtilitySaveMode` 对象的 `setSaveStyle` 方法，并传递一个指定保存模式的字符串值。 例如，要保存以快速Web查看，请传递 `FAST_WEB_VIEW`.
+   * 使用构造函数创建`PDFUtilitySaveMode`对象。
+   * 通过调用`PDFUtilitySaveMode`对象的`setSaveStyle`方法并传递指定保存模式的字符串值来设置保存模式。 例如，若要保存以快速Web查看，请传递`FAST_WEB_VIEW`。
 
 1. 调用保存样式操作
 
-   调用 `PDFUtilityServiceClient` 对象的 `setSaveMode` 方法并传递以下值：
+   调用`PDFUtilityServiceClient`对象的`setSaveMode`方法并传递以下值：
 
-   * A `com.adobe.idp.Document` 表示PDF文档的对象。
-   * A `PDFUtilitySaveMode` 包含要使用的保存样式的对象。
+   * 表示PDF文档的`com.adobe.idp.Document`对象。
+   * 包含要使用的保存样式的`PDFUtilitySaveMode`对象。
    * 一个布尔值，用于确定是否覆盖任何以前的设置。
 
-   此方法会返回 `com.adobe.idp.Document` 使用指定的保存样式设置对象的格式。
+   该方法返回使用指定保存样式格式化的`com.adobe.idp.Document`对象。
 
 1. 将PDF文档传递到另一个AEM Forms操作
 
-   * 传递返回的 `com.adobe.idp.Document` 对象，用于另一个AEM Forms操作。
+   * 将返回的`com.adobe.idp.Document`对象传递到另一个AEM Forms操作。
 
 **另请参阅**
 
@@ -414,26 +414,26 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   创建 `PDFUtilityServiceService` 对象。
+   使用代理类构造函数创建`PDFUtilityServiceService`对象。
 
 1. 设置保存模式
 
-   * 创建 `PDFUtilitySaveMode` 对象。
-   * 通过将字符串值分配给 `PDFUtilitySaveMode` 对象的 `saveStyle` 指定保存模式的方法。 例如，要保存以快速Web查看，请指定 `FAST_WEB_VIEW`.
+   * 使用构造函数创建`PDFUtilitySaveMode`对象。
+   * 通过为`PDFUtilitySaveMode`对象的`saveStyle`方法指定字符串值来设置保存模式，该方法指定保存模式。 例如，要保存以快速Web查看，请指定`FAST_WEB_VIEW`。
 
 1. 调用保存样式操作
 
-   调用 `PDFUtilityServiceService` 对象的 `setSaveMode` 方法并传递以下值：
+   调用`PDFUtilityServiceService`对象的`setSaveMode`方法并传递以下值：
 
-   * A `BLOB` 表示PDF文档的对象。
-   * A `PDFUtilitySaveMode` 包含要使用的保存样式的对象。
+   * 表示PDF文档的`BLOB`对象。
+   * 包含要使用的保存样式的`PDFUtilitySaveMode`对象。
    * 一个布尔值，用于确定是否覆盖任何以前的设置。
 
-   此方法会返回 `BLOB` 使用指定的保存样式设置对象的格式。 然后可将该对象另存为PDF文档。
+   该方法返回使用指定保存样式格式化的`BLOB`对象。 然后可将该对象另存为PDF文档。
 
 1. 将PDF文档传递到另一个Forms操作
 
-   * 传递返回的 `BLOB` 对象，用于另一个AEM Forms操作。
+   * 将返回的`BLOB`对象传递到另一个AEM Forms操作。
 
 **另请参阅**
 
@@ -449,7 +449,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 >[!NOTE]
 >
->有关“PDF实用程序”服务的详细信息，请参见 [AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63).
+>有关PDF实用工具服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-4}
 
@@ -465,7 +465,7 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 **创建PDFUtilityService客户端**
 
-必须先创建PDFUtilityService客户端，然后才能以编程方式执行清理操作。 使用Java API，可通过创建 `PDFUtilityServiceClient` 对象。
+必须先创建PDFUtilityService客户端，然后才能以编程方式执行清理操作。 使用Java API，可通过创建`PDFUtilityServiceClient`对象来实现这一点。
 
 **调用PDF到XDP的转换操作**
 
@@ -491,11 +491,11 @@ PDF实用程序服务可以在PDF和XDP文件格式之间进行转换，设置�
 
 1. 创建PDFUtilityService客户端
 
-   创建 `PDFUtilityServiceClient` 对象，使用它的构造函数传递 `ServiceClientFactory` 包含连接属性的对象。
+   使用对象的构造函数创建`PDFUtilityServiceClient`对象，并传递包含连接属性的`ServiceClientFactory`对象。
 
 1. 调用PDF到XDP的转换操作
 
-   要执行转换，请调用 `PDFUtilityServiceClient` 对象的 `convertPDFtoXDP` 方法并传入 `com.adobe.idp.Document` 表示PDF文件的对象。 此方法会返回 `com.adobe.idp.Document` 表示新创建的XDP文件的对象。
+   要执行转换，请调用`PDFUtilityServiceClient`对象的`convertPDFtoXDP`方法，并传入表示PDF文件的`com.adobe.idp.Document`对象。 该方法返回表示新创建的XDP文件的`com.adobe.idp.Document`对象。
 
 **另请参阅**
 

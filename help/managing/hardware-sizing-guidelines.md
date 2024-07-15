@@ -51,7 +51,7 @@ ht-degree: 0%
 
 ## 架构 {#architecture}
 
-典型的AEM设置包括创作环境和发布环境。 这些环境对底层硬件大小和系统配置有不同的要求。 有关这两种环境的详细注意事项，请参见 [创作环境](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) 和 [发布环境](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) 部分。
+典型的AEM设置包括创作环境和发布环境。 这些环境对底层硬件大小和系统配置有不同的要求。 有关这两个环境的详细注意事项，请参见[创作环境](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations)和[发布环境](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations)部分。
 
 在典型项目设置中，您有多个环境可在其上暂存项目阶段：
 
@@ -61,13 +61,13 @@ ht-degree: 0%
 * **创作测试环境**
 验证更改。 测试环境的数量因项目要求而异（例如，QA、集成测试或用户验收测试不同）。
 
-* **发布测试环境**
+* **Publish测试环境**
 主要用于测试Social Collaboration用例和/或作者与多个发布实例之间的交互。
 
 * **创作生产环境**
 供作者编辑内容。
 
-* **发布生产环境**
+* **Publish生产环境**
 用于提供已发布的内容。
 
 此外，环境可能有所不同，从运行AEM的单服务器系统和应用程序服务器，到高度扩展的多服务器、多CPU群集实例集。 Adobe建议您为每个生产系统使用单独的计算机，并且不要在这些计算机上运行其他应用程序。
@@ -76,7 +76,7 @@ ht-degree: 0%
 
 以下各节提供了有关如何计算硬件需求的指导，其中将考虑各种因素。 对于大型系统，Adobe建议您在参考配置上执行一组简单的内部基准测试。
 
-性能优化是一项基本任务，在完成特定项目的基准测试之前需要执行这项任务。 请务必遵循 [性能优化文档](/help/sites-deploying/configuring-performance.md) 执行任何基准测试并将其结果用于任何硬件大小计算之前。
+性能优化是一项基本任务，在完成特定项目的基准测试之前需要执行这项任务。 在执行任何基准测试并将其结果用于任何硬件大小计算之前，请确保应用[性能优化文档](/help/sites-deploying/configuring-performance.md)中提供的建议。
 
 高级用例的硬件规模要求需要基于对项目的详细性能评估。 需要卓越硬件资源的高级用例的特性包括以下组合：
 
@@ -107,18 +107,18 @@ AEM在虚拟化环境中运行良好，但可能存在CPU或I/O等无法直接�
 
 #### AEM实例的并行化 {#parallelization-of-aem-instances}
 
-**失败安全性**
+**安全失败**
 
 一个防故障的网站至少部署在两个独立的系统上。 如果一个系统发生故障，另一个系统可以接管并补偿系统故障。
 
 **系统资源可扩展性**
 
-当所有系统都在运行时，可以增强计算性能。 这种额外性能不一定与群集节点数量成线性关系，因为这种关系在很大程度上取决于技术环境。 请参阅 [群集文档](/help/sites-deploying/recommended-deploys.md) 以了解更多信息。
+当所有系统都在运行时，可以增强计算性能。 这种额外性能不一定与群集节点数量成线性关系，因为这种关系在很大程度上取决于技术环境。 有关详细信息，请参阅[群集文档](/help/sites-deploying/recommended-deploys.md)。
 
 根据特定Web项目的基本要求和具体用例，估计需要多少簇节点：
 
 * 从故障安全的角度来看，必须根据群集节点恢复所需的时间来确定所有环境的严重故障程度以及故障补偿时间。
-* 在可扩展性方面，写操作的数量基本上是最重要的因素；请参见 [作者并行工作](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) 创作环境和 [Social Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) （发布环境）。 可以为仅访问系统的操作建立负载平衡，以处理读取操作；请参阅 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 以了解详细信息。
+* 在可伸缩性方面，写操作的数量基本上是最重要的因素；请参阅创作环境的[作者并行工作](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel)和发布环境的[社交Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations)。 可以为仅访问系统的操作建立负载平衡，以处理读取操作；有关详细信息，请参阅[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
 
 ## 创作环境特定的计算 {#author-environment-specific-calculations}
 
@@ -176,9 +176,9 @@ AEM在虚拟化环境中运行良好，但可能存在CPU或I/O等无法直接�
 
 `n = numberOfParallelAuthors / 30`
 
-当作者使用AEM执行基本操作时，此公式可用作缩放CPU的常规准则。 它假定系统和应用程序已优化。 但是，公式对于MSM或Assets等高级功能不成立（请参阅以下部分）。
+当作者使用AEM执行基本操作时，此公式可用作缩放CPU的常规准则。 它假定系统和应用程序已优化。 但是，公式对MSM或Assets等高级功能无效（请参阅以下部分）。
 
-另请参阅 [并行化](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) 和 [性能优化](/help/sites-deploying/configuring-performance.md).
+另请参阅[并行化](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances)和[性能优化](/help/sites-deploying/configuring-performance.md)。
 
 ### 硬件Recommendations {#hardware-recommendations}
 
@@ -195,11 +195,11 @@ Adobe时的基准测试是使用Red Hat® 5.5操作系统进行的，该操作�
 
 AEM实例运行时的最小栈大小为256M，最大栈大小为1024M。
 
-## 发布特定于环境的计算 {#publish-environment-specific-calculations}
+## Publish环境特定的计算 {#publish-environment-specific-calculations}
 
 ### 缓存效率和流量 {#caching-efficiency-and-traffic}
 
-缓存效率对于网站运行速度至关重要。 下表显示了优化的AEM系统每秒可以使用反向代理（如Dispatcher）处理的页面数：
+缓存效率对于网站运行速度至关重要。 下表显示了优化的AEM系统每秒可以使用反向代理(例如Dispatcher)处理的页面数：
 
 | 缓存比率 | 页数/秒（峰值） | 百万页/天（平均） |
 |---|---|---|
@@ -214,7 +214,7 @@ AEM实例运行时的最小栈大小为256M，最大栈大小为1024M。
 >
 >免责声明：这些数字基于默认硬件配置，可能会因使用的特定硬件而异。
 
-缓存比率是Dispatcher在无需访问AEM的情况下可以返回的页面百分比。 100%表示Dispatcher应答所有请求，0%表示AEM计算每个页面。
+缓存比率是Dispatcher无需访问AEM即可返回的页面百分比。 100%表示Dispatcher响应所有请求，0%表示AEM计算每个页面。
 
 ### 模板和应用程序的复杂性 {#complexity-of-templates-and-applications}
 
@@ -259,7 +259,7 @@ AEM实例运行时的最小栈大小为256M，最大栈大小为1024M。
   </tr>
   <tr>
    <td>激活次数</td>
-   <td>每小时的平均激活次数（平均大小页面和资产从创作层到发布层的复制）除以x，其中x是在系统上完成的激活次数，对系统处理的其他任务没有性能负面影响。 您还可以预定义悲观的初始值，如x = 100。<br /> </td>
+   <td>每小时的平均激活次数（平均大小页面和资产从创作层到发布层的复制）除以x，其中x是在系统上完成的激活次数，对系统处理的其他任务没有性能负面影响。 您还可以预定义悲观初始值，如x = 100。<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -280,17 +280,17 @@ AEM实例运行时的最小栈大小为256M，最大栈大小为1024M。
 
 >[!NOTE]
 >
->&#42; 除了JVM所需的内存之外，还可为操作系统保留足够的RAM。
+>&#42;为操作系统保留足够的RAM以及JVM所需的内存。
 
 ## 其他特定于用例的计算 {#additional-use-case-specific-calculations}
 
 除了计算默认Web应用程序外，还请考虑以下用例的特定因素。 计算值将添加到默认计算中。
 
-### 特定于资产的注意事项 {#assets-specific-considerations}
+### 特定于Assets的注意事项 {#assets-specific-considerations}
 
 广泛处理数字资产需要优化的硬件资源，最相关的因素是图像大小和已处理图像的峰值吞吐量。
 
-分配至少16GB的栈并配置 [!UICONTROL DAM更新资产] 使用的工作流 [Camera Raw包](/help/assets/camera-raw.md) 用于摄取原始图像。
+分配至少16GB的栈并将[!UICONTROL DAM更新资产]工作流配置为使用[Camera Raw包](/help/assets/camera-raw.md)摄取原始图像。
 
 >[!NOTE]
 >
@@ -300,7 +300,7 @@ AEM实例运行时的最小栈大小为256M，最大栈大小为1024M。
 
 >[!NOTE]
 >
-另请参阅 [Assets性能指南](/help/sites-deploying/assets-performance-sizing.md).
+另请参阅[Assets性能指南](/help/sites-deploying/assets-performance-sizing.md)。
 
 ### 多站点管理器 {#multi-site-manager}
 

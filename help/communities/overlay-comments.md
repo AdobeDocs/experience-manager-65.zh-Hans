@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # 叠加Communities组件 {#overlay-communities-components}
 
-意图 [覆盖](/help/communities/client-customize.md#overlays) 缺省组件是在全局范围内更改组件的外观或行为（对于组件的所有相对引用）。 它依赖于sling的性质，以在在/libs文件夹中进行搜索之前解析到/apps文件夹。 因此，组件的路径与默认组件的路径相同，不同之处在于它位于/apps文件夹中，而不是/libs文件夹中。
+[覆盖](/help/communities/client-customize.md#overlays)默认组件的目的是在全局范围内更改组件的外观或行为（针对对该组件的所有相对引用）。 它依赖于sling的性质，以在在/libs文件夹中进行搜索之前解析到/apps文件夹。 因此，组件的路径与默认组件的路径相同，不同之处在于它位于/apps文件夹中，而不是/libs文件夹中。
 
 ## 示例 {#example}
 
-**叠加评论组件**
+**覆盖评论组件**
 
 假设您想要修改评论功能，使其与您的网站设计相匹配，方法是更改评论标题，使其不再显示任何评论的头像。 用于隐藏头像的解决方案要么使用CSS，要么按照此处所述覆盖apps文件夹中的header.jsp，这样包含头像的HTML永远不会发送到客户端。
 
@@ -35,9 +35,9 @@ ht-degree: 0%
 
 **覆盖通知电子邮件**
 
-假设您要自定义电子邮件通知的消息，可以通过以下方式进行 [覆盖](/help/communities/client-customize.md#overlays) 模板位于 `/libs/settings/community/templates/email/html`.
+假设您要自定义电子邮件通知消息，可以通过[覆盖](/help/communities/client-customize.md#overlays)位于`/libs/settings/community/templates/email/html`的模板来实现此目的。
 
-例如，假设您要编辑提及电子邮件通知（针对创建UGC的特定社区组件）。 在这种情况下，请添加 **如果** 动词的条件 **提及** 在您为其启用的组件的模板中 **@mentions** 支持。
+例如，假设您要编辑提及电子邮件通知（针对创建UGC的特定社区组件）。 在这种情况下，请在启用了&#x200B;**@mentions**&#x200B;支持的组件的模板中为谓词&#x200B;**提及**&#x200B;添加&#x200B;**if**&#x200B;条件。
 
 ```java
 {{#equals this.verb "mention"}}\

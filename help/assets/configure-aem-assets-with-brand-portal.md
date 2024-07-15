@@ -27,11 +27,11 @@ ht-degree: 5%
 
 Adobe Experience Manager Assets Brand Portal允许您将已批准的品牌资产从Adobe Experience Manager Assets发布到Brand Portal，并将其分发给Brand Portal用户。
 
-AEM Assets是通过Brand Portal控制台使用Adobe Developer配置的，该控制台可获取Adobe的Identity Management服务(IMS)帐户令牌以授权Brand Portal租户。
+AEM Assets通过Brand Portal配置Adobe Developer Console，从而可获取Adobe的Identity Management服务(IMS)帐户令牌以授权Brand Portal租户。
 
 >[!NOTE]
 >
->AEM 6.5.4.0及更高版本支持通过Brand Portal控制台使用Adobe Developer配置AEM Assets。
+>AEM 6.5.4.0及更高版本支持通过Adobe Developer Console使用Brand Portal配置AEM Assets。
 >
 <!--
 >Earlier, Brand Portal was configured via legacy OAuth Gateway, which uses the JSON Web Token (JWT) exchange to obtain an IMS Access token for authorization. 
@@ -43,7 +43,7 @@ AEM Assets是通过Brand Portal控制台使用Adobe Developer配置的，该控�
 >
 >***仅针对现有客户***
 >
->Adobe建议您继续使用现有的旧版OAuth网关配置。 如果您遇到旧版OAuth网关配置问题，请删除现有配置，并通过Adobe Developer控制台创建配置。
+>Adobe建议您继续使用现有的旧版OAuth网关配置。 如果您遇到旧版OAuth网关配置问题，请删除现有配置，并通过Adobe Developer Console创建配置。
 
 <!--
 This help describes the following two use-cases:
@@ -73,17 +73,17 @@ This help describes the following two use-cases:
 
 建议使用AEM 6.5来设置AEM创作实例。 如果您没有启动并运行AEM，请从以下位置下载它：
 
-* 如果您是现有AEM客户，请从下载AEM 6.5 [Adobe授权网站](https://licensing.adobe.com).
+* 如果您是现有AEM客户，请从[Adobe授权网站](https://licensing.adobe.com)下载AEM 6.5。
 
-* 如果您是Adobe合作伙伴，请使用 [Adobe合作伙伴培训计划](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) 请求AEM 6.5。
+* 如果您是Adobe合作伙伴，请使用[Adobe合作伙伴培训计划](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q)来申请AEM 6.5。
 
-下载AEM后，有关设置AEM创作实例的说明，请参阅 [部署和维护](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
+下载AEM后，有关设置AEM创作实例的说明，请参阅[部署和维护](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install)。
 
 ### 下载并安装AEM最新服务包 {#servicepack}
 
-有关详细说明，请参阅当前的 [AEM 6.5 Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans).
+有关详细说明，请参阅当前的[AEM 6.5 Service Pack发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans)。
 
-**联系Adobe客户支持** 如果您找不到最新的AEM包或Service Pack。
+如果找不到最新的AEM包或Service Pack，请&#x200B;**联系Adobe客户支持**。
 
 ## 创建配置 {#configure-new-integration-65}
 
@@ -117,17 +117,17 @@ This help describes the following two use-cases:
 
 按照指定的顺序执行以下步骤，使用Brand Portal配置Experience Manager Assets。
 
-1. [在Adobe Developer控制台中配置OAuth凭据](#config-oauth)
+1. [在Adobe Developer Console中配置OAuth凭据](#config-oauth)
 1. [使用OAuth创建新的Adobe IMS集成](#create-ims-account-configuration)
 1. [配置云服务](#configure-cloud-service)
 
-#### 在Adobe Developer控制台中配置OAuth凭据 {#config-oauth}
+#### 在Adobe Developer Console中配置OAuth凭据 {#config-oauth}
 
-[在Adobe Developer控制台中配置OAuth凭据](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console)  并选择Brand Portal API。
+[在Adobe Developer Console中配置OAuth凭据](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#credentials-in-the-developer-console)，然后选择Brand Portal API。
 
 #### 使用OAuth创建新的Adobe IMS集成 {#create-ims-account-configuration}
 
-[使用OAuth创建新的Adobe IMS集成](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration) 并从下拉菜单中选择Brand Portal 。
+[使用OAuth创建新的Adobe IMS集成](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/security/setting-up-ims-integrations-for-aem#creating-oauth-configuration)，然后从下拉列表中选择Brand Portal。
 
 #### 配置云服务 {#configure-cloud-service}
 
@@ -315,19 +315,19 @@ To configure the IMS account:
 
 1. 登录到您的AEM Assets创作实例。
 
-1. 从 **工具** ![工具](assets/do-not-localize/tools.png) 面板，导航到 **[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**.
+1. 从&#x200B;**工具** ![工具](assets/do-not-localize/tools.png)面板，导航到&#x200B;**[!UICONTROL Cloud Service]** > **[!UICONTROL AEM Brand Portal]**。
 
-1. 在Brand Portal配置页面中，单击 **[!UICONTROL 创建]**.
+1. 在“Brand Portal配置”页面中，单击&#x200B;**[!UICONTROL 创建]**。
 
 1. 指定配置的&#x200B;**[!UICONTROL 标题]**。
 
-   选择您已在以下时间创建的IMS配置： [配置IMS帐户](#create-ims-account-configuration).
+   选择您在[配置IMS帐户](#create-ims-account-configuration)时创建的IMS配置。
 
-   在 **[!UICONTROL 服务URL]** 字段中，指定您的Brand Portal租户（组织）URL。
+   在&#x200B;**[!UICONTROL 服务URL]**&#x200B;字段中，指定您的Brand Portal租户（组织）URL。
 
    ![Brand Portal配置窗口](assets/create-cloud-service.png)
 
-1. 单击 **[!UICONTROL 保存并关闭]**. 将创建云配置。
+1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。 将创建云配置。
 
    您的AEM Assets创作实例现在已配置有Brand Portal租户。
 

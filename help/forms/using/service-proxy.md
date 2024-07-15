@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # HTML5 forms服务代理{#html-forms-service-proxy}
 
-HTML5表单服务代理是一种用于注册提交服务的代理的配置。 要配置服务代理，请通过请求参数指定提交服务的URL *submissionServiceProxy*.
+HTML5表单服务代理是一种用于注册提交服务的代理的配置。 要配置服务代理，请通过请求参数&#x200B;*submissionServiceProxy*&#x200B;指定提交服务的URL。
 
 ## Service Proxy的优势 {#benefits-of-service-proxy-br}
 
@@ -36,7 +36,7 @@ HTML5表单可以使用以下拓扑连接到AEM服务器。
 * 一种拓扑，AEM Server或HTML5从中通过POST将数据发送到服务器。
 * 代理服务器将POST数据发送到服务器的拓扑。
 
-![HTML5 forms服务代理拓扑](assets/topology.png)
+![HTML5表单服务代理拓扑](assets/topology.png)
 
 HTML5 forms服务代理拓扑
 
@@ -131,6 +131,6 @@ HTML5表单连接到AEM服务器以运行服务器端脚本、Web服务和提交
 如果submiturl出现在请求参数中，则提交服务代理会选择拓扑。
 
 * 如果AEM服务器发布数据，则代理服务将充当传递服务器。 它将请求发送到/bin/xfaforms/submitaction终结点，并将响应发送到XFA运行时。
-* 如果代理将数据发布，则代理服务会将除submitUrl之外的所有参数传递给 */bin/xfaforms/submitaction* 终结点并接收响应流中的xml字节。 然后，代理服务将数据xml字节发布到submitUrl进行处理。
+* 如果代理发布数据，则代理服务会将submitUrl以外的所有参数传递到&#x200B;*/bin/xfaforms/submitaction*&#x200B;终结点，并在响应流中接收xml字节。 然后，代理服务将数据xml字节发布到submitUrl进行处理。
 
-* 在将数据(POST请求)发送到服务器之前，HTML5表单验证服务器的连接性和可用性。 为了验证连接性和可用性，HTML表单向服务器发送一个空的head请求。 如果服务器可用，HTML5表单向服务器发送数据(POST请求)。 如果服务器不可用，则会显示错误消息， *无法连接到服务器，* 将显示。 该预先检测可以防止用户重新填写表单的麻烦。 代理servlet处理head请求并且不会引发异常。
+* 在将数据(POST请求)发送到服务器之前，HTML5表单验证服务器的连接性和可用性。 为了验证连接性和可用性，HTML表单向服务器发送一个空的head请求。 如果服务器可用，HTML5表单向服务器发送数据(POST请求)。 如果服务器不可用，则显示错误消息&#x200B;*无法连接到服务器*。 该预先检测可以防止用户重新填写表单的麻烦。 代理servlet处理head请求并且不会引发异常。

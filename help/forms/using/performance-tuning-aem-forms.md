@@ -22,32 +22,32 @@ ht-degree: 0%
 
 ## 缓存设置 {#cache-settings}
 
-您可以使用来配置和控制AEM Forms的缓存策略 **移动Forms配置** AEM Web配置控制台中的组件：
+您可以使用AEM Web Configuration Console中的&#x200B;**移动Forms配置**&#x200B;组件来配置并控制AEM Forms的缓存策略，网址为：
 
 * (OSGi上的AEM Forms) `https://'[server]:[port]'/system/console/configMgr`
-* (AEM Forms在吉) `https://'[server]:[port]'/lc/system/console/configMgr`
+* (JEE上的AEM Forms) `https://'[server]:[port]'/lc/system/console/configMgr`
 
 缓存的可用选项如下：
 
-* **无**：强制不缓存任何工件。 实际上，这会降低性能，并且由于缺少缓存而要求较高的内存可用性。
-* **保守**：指示仅缓存在渲染表单之前生成的中间构件，例如包含内联片段和图像的模板。
-* **激进**：强制缓存几乎所有可缓存的内容，包括渲染的HTML内容以及保守缓存级别的所有工件。 它可提供最佳性能，但也会占用更多内存来存储缓存的伪像。 积极主动的缓存策略意味着在缓存渲染的内容时，您可以在渲染表单时获得稳定的时间性能。
+* **无**：强制不缓存任何项目。 实际上，这会降低性能，并且由于缺少缓存而要求较高的内存可用性。
+* **保守的**：指示仅缓存在渲染表单之前生成的中间工件，例如包含内联片段和图像的模板。
+* **Aggressive**：强制缓存几乎所有可缓存的内容，包括渲染的HTML内容，而不包括Conservative缓存级别的所有项目。 它可提供最佳性能，但也会占用更多内存来存储缓存的伪像。 积极主动的缓存策略意味着在缓存渲染的内容时，您可以在渲染表单时获得稳定的时间性能。
 
 AEM Forms的默认缓存设置可能不足以达到最佳性能。 因此，建议使用以下设置：
 
-* **缓存策略**：攻击性
-* **缓存大小** （表格数量）：根据要求
+* **缓存策略**：主动
+* **缓存大小**（表单数）：根据需要
 * **最大对象大小**：根据需要
 
-![移动Forms配置](assets/snap.png)
+![Mobile Forms配置](assets/snap.png)
 
 >[!NOTE]
 >
->如果使用AEM Dispatcher缓存自适应表单，则它还会缓存自适应表单，该表单包含具有预填充数据的表单。 如果从AEM Dispatcher缓存提供此类表单，则可能会导致向用户提供预填或陈旧数据。 因此，请使用AEM Dispatcher缓存不使用预填充数据的自适应表单。 此外，Dispatcher缓存不会自动使缓存的片段失效。 因此，请不要使用此数据来缓存表单片段。 对于此类表单和片段，请使用 [自适应表单缓存](../../forms/using/configure-adaptive-forms-cache.md).
+>如果使用AEM Dispatcher缓存自适应表单，则它还会缓存自适应表单，该表单包含具有预填充数据的表单。 如果从AEM Dispatcher缓存中提供此类表单，则可能会导致向用户提供预填或陈旧的数据。 因此，请使用AEM Dispatcher来缓存不使用预填充数据的自适应表单。 此外，Dispatcher缓存不会自动使缓存的片段失效。 因此，请不要使用此数据来缓存表单片段。 对于此类表单和片段，请使用[自适应表单缓存](../../forms/using/configure-adaptive-forms-cache.md)。
 
 ## JVM参数 {#jvm-parameters}
 
-为获得最佳性能，建议使用以下JVM `init` 用于配置 `Java heap` 和 `PermGen`.
+为获得最佳性能，建议使用以下JVM `init`参数来配置`Java heap`和`PermGen`。
 
 ```shell
 set CQ_JVM_OPTS=%CQ_JVM_OPTS% -Xms8192m
@@ -80,7 +80,7 @@ set CQ_JVM_OPTS=%CQ_JVM_OPTS% -XX:MaxPermSize=1024m
 
 Apache可以使用HTTP协议与CRX通信。 这些配置用于使用HTTP进行优化。
 
-1. 在中取消注释以下模块配置 `APACHE_HOME/conf/httpd.conf` 文件。
+1. 在`APACHE_HOME/conf/httpd.conf`文件中取消注释以下模块配置。
 
    ```shell
    LoadModule proxy_balancer_module modules/mod_proxy.so
@@ -90,19 +90,19 @@ Apache可以使用HTTP协议与CRX通信。 这些配置用于使用HTTP进行�
 
    >[!NOTE]
    >
-   >对于Linux®，默认为 `APACHE_HOME` 是 `/etc/httpd/`.
+   >对于Linux®，默认`APACHE_HOME`为`/etc/httpd/`。
 
 1. 在crx的端口4502上配置代理。
-在中添加以下配置 `APACHE_HOME/conf/httpd.conf` 配置文件。
+在`APACHE_HOME/conf/httpd.conf`配置文件中添加以下配置。
 
    ```shell
    ProxyPass / https://<server>:4502/
    ProxyPassReverse / https://<server>:4502/
    ```
 
-1. 启用压缩。 在中添加以下配置 `APACHE_HOME/conf/httpd.conf` 配置文件。
+1. 启用压缩。 在`APACHE_HOME/conf/httpd.conf`配置文件中添加以下配置。
 
-   **对于HTML5表单**
+   HTML5表单的&#x200B;****
 
    ```xml
    <Location /content/xfaforms>
@@ -136,7 +136,7 @@ Apache可以使用HTTP协议与CRX通信。 这些配置用于使用HTTP进行�
    </Location>
    ```
 
-   要访问crx服务器，请使用 `https://'server':80`，其中 `server` 是运行Apache Server的服务器的名称。
+   要访问crx服务器，请使用`https://'server':80`，其中`server`是运行Apache服务器的服务器的名称。
 
 ## 在运行AEM Forms的服务器上使用防病毒 {#using-an-antivirus-on-server-running-aem-forms}
 
@@ -156,20 +156,20 @@ Apache可以使用HTTP协议与CRX通信。 这些配置用于使用HTTP进行�
    * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
    * (WebSphere®) \项目Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
-* **(仅限JEE上的AEM Forms )** 全局文档存储(GDS)目录。 默认位置为：
+* **(仅限JEE上的AEM Forms)**&#x200B;全局文档存储(GDS)目录。 默认位置为：
 
-   * (JBoss®) [appserver根]/server/&#39;server&#39;/svcnative/DocumentStorage
+   * (JBoss®) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
    * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [appserver根]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+   * (WebSphere®) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
-* **(仅限JEE上的AEM Forms )** AEM Forms Server日志和临时目录。 默认位置为：
+* **(仅限JEE上的AEM Forms)** AEM Forms Server日志和临时目录。 默认位置为：
 
-   * 服务器日志 —  [AEM Forms安装目录]\Adobe\AEM表单\[app-server]\server\all\logs
-   * 临时目录 —  [AEM Forms安装目录]\temp
+   * 服务器日志 — [AEM Forms安装目录]\Adobe\AEM forms\[app-server]\server\all\logs
+   * 临时目录 — [AEM Forms安装目录]\temp
 
 >[!NOTE]
 >
->* 如果为GDS和临时目录使用其他位置，请打开AdminUI，网址为 `https://'[server]:[port]'/adminui`，导航到 **主页>设置>核心系统设置>核心配置** 以确认正在使用的位置。
+>* 如果您使用的是不同的GDS和临时目录位置，请打开`https://'[server]:[port]'/adminui`上的AdminUI，导航到&#x200B;**主页>设置>核心系统设置>核心配置**&#x200B;以确认该位置正在使用中。
 >
 * 如果在排除建议的目录后AEM Forms服务器仍运行缓慢，则同时排除Java™可执行文件(java.exe)。
 >

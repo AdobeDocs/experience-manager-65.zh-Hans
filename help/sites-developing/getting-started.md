@@ -39,11 +39,11 @@ ht-degree: 80%
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)
 * [触屏 UI](/help/sites-developing/touch-ui-concepts.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [可编辑模板](/help/sites-developing/page-templates-editable.md)
 
 在详细介绍上述概念之前，请先完成本教程。
 
 ## 后续步骤 {#next-steps}
 
-完成以下步骤后： [教程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)，考虑查看文档 [AEM核心概念](/help/sites-developing/the-basics.md) 更好地了解AEM的一些底层技术和开发模式。
+完成[教程](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)后，请考虑查看文档[AEM Core Concepts](/help/sites-developing/the-basics.md)，以更好地了解AEM的一些基础技术和开发模式。

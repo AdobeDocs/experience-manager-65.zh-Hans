@@ -44,7 +44,7 @@ AEM模拟器框架：
 * 其外观通过CSS进行调节。
 * 支持插件（例如，移动设备旋转插件）。
 * 仅对作者有效。
-* 其基本组件位于 `/libs/wcm/emulator/components/base`.
+* 其基组件位于`/libs/wcm/emulator/components/base`。
 
 ### 模拟器如何转换内容 {#how-the-emulator-transforms-the-content}
 
@@ -88,9 +88,9 @@ AEM模拟器框架：
 
 添加了两个div标记：
 
-* 具有id的div `cq-emulator` 保持整个模拟器并且
+* id为`cq-emulator`的div将模拟器作为整体保存并
 
-* 具有id的div `cq-emulator-content` 表示页面内容所在的设备视区/屏幕/内容区域。
+* id为`cq-emulator-content`的div，表示页面内容所在的设备的视区/屏幕/内容区域。
 
 新的CSS类也分配给新的模拟器div：它们表示当前模拟器的名称。
 
@@ -111,15 +111,15 @@ AEM模拟器框架：
 
   http://localhost:4502/bin/wcm/mobile/emulators.json
 
-当页面组件依赖于移动页面组件时( `/libs/wcm/mobile/components/page`)，模拟器功能通过以下机制自动集成到页面中：
+当页面组件依赖于移动页面组件(`/libs/wcm/mobile/components/page`)时，模拟器功能通过以下机制自动集成到页面中：
 
-* 移动设备页面组件 `head.jsp` 包括设备组关联的模拟器初始化组件（仅在创作模式下）以及设备组通过进行的渲染CSS：
+* 移动设备页面组件`head.jsp`包括设备组的关联模拟器init组件（仅在创作模式下）以及设备组的渲染CSS，具体方式为：
 
   `deviceGroup.drawHead(pageContext);`
 
-* 方法 `DeviceGroup.drawHead(pageContext)` 包括模拟器的init组件，即，调用 `init.html.jsp` 模拟器组件的。 如果模拟器组件没有自己的 `init.html.jsp` 并依赖移动基础模拟器( `wcm/mobile/components/emulators/base)`，则mobile基础仿真器的init脚本名为( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`)。
+* 方法`DeviceGroup.drawHead(pageContext)`包含仿真器的init组件，即调用仿真器组件的`init.html.jsp`。 如果模拟器组件没有自己的`init.html.jsp`，并且依赖于Mobile基础模拟器(`wcm/mobile/components/emulators/base)`)，则调用Mobile基础模拟器的init脚本(`/libs/wcm/mobile/components/emulators/base/init.html.jsp`)。
 
-* Mobile基础仿真器的init脚本通过JavaScript定义：
+* 移动基础仿真器的init脚本通过JavaScript定义：
 
    * 为页面定义的所有模拟器的配置(emulatorConfigs)
    * 模拟器管理器通过以下方式将模拟器的功能集成到页面中：
@@ -134,22 +134,22 @@ AEM模拟器框架：
 
 要创建自定义移动设备模拟器，请执行以下操作：
 
-1. 以下 `/apps/myapp/components/emulators` 创建组件 `myemulator` (节点类型： `cq:Component`)。
+1. 在`/apps/myapp/components/emulators`下创建组件`myemulator` （节点类型： `cq:Component`）。
 
-1. 设置 `sling:resourceSuperType` 属性至 `/libs/wcm/mobile/components/emulators/base`
+1. 将`sling:resourceSuperType`属性设置为`/libs/wcm/mobile/components/emulators/base`
 
-1. 使用类别定义CSS客户端库 `cq.wcm.mobile.emulator` 对于模拟器外观：名称= `css`，节点类型= `cq:ClientLibrary`
+1. 为模拟器外观定义类别为`cq.wcm.mobile.emulator`的CSS客户端库：名称= `css`，节点类型= `cq:ClientLibrary`
 
-   例如，您可以引用节点 `/libs/wcm/mobile/components/emulators/iPhone/css`
+   例如，您可以引用节点`/libs/wcm/mobile/components/emulators/iPhone/css`
 
 1. 如果需要，可定义JS客户端库，例如，以定义特定插件：名称= js，节点类型= cq：ClientLibrary
 
-   例如，您可以引用节点 `/libs/wcm/mobile/components/emulators/base/js`
+   例如，您可以引用节点`/libs/wcm/mobile/components/emulators/base/js`
 
-1. 如果模拟器支持由插件定义的特定功能（如触控滚动），请在模拟器下创建配置节点：名称= `cq:emulatorConfig`，节点类型= `nt:unstructured` 并添加定义插件的属性：
+1. 如果模拟器支持由插件定义的特定功能（如触控滚动），请在模拟器下创建配置节点：名称= `cq:emulatorConfig`，节点类型= `nt:unstructured`，并添加定义插件的属性：
 
-   * 名称= `canRotate`，类型= `Boolean`，值= `true`：用于包含旋转功能。
+   * 名称= `canRotate`，类型= `Boolean`，值= `true`：包含旋转功能。
 
-   * 名称= `touchScrolling`，类型= `Boolean`，值= `true`：用于包含触摸滚动功能。
+   * 名称= `touchScrolling`，类型= `Boolean`，值= `true`：包含触控滚动功能。
 
    通过定义您自己的插件，可以添加更多功能。

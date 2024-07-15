@@ -28,11 +28,11 @@ ht-degree: 6%
 
 ## 访问布局模式 {#access-layout-mode}
 
-选择 **布局** 从自适应表单创作界面顶部显示的下拉列表中， **预览** 选项。 该表单将以布局模式显示。
+从自适应表单创作界面顶部出现在&#x200B;**预览**&#x200B;选项旁边的下拉列表中选择&#x200B;**布局**。 该表单将以布局模式显示。
 
-1. 登录到AEM创作实例并导航到 **Adobe Experience Manager** > **Forms** > **Forms和文档**.
-1. 创建 [自适应表单](../../forms/using/creating-adaptive-form.md) 或者打开一个现有的存储库。
-1. 选择 **布局** 从顶部显示的下拉列表中，选择 **预览** 选项。 该表单将以布局模式显示。
+1. 登录到AEM创作实例并导航到&#x200B;**Adobe Experience Manager** > **Forms** > **Forms &amp; Documents**。
+1. 创建[自适应表单](../../forms/using/creating-adaptive-form.md)或打开现有表单。
+1. 从&#x200B;**预览**&#x200B;选项旁边顶部显示的下拉列表中选择&#x200B;**布局**。 该表单将以布局模式显示。
 
    ![布局模式](assets/layout_mode_ic_new.png)
 
@@ -45,11 +45,11 @@ ht-degree: 6%
 
    点按组件后显示的工具栏包含以下选项：
 
-   * **[!UICONTROL 父级]**：选择组件的父组件。
-   * **[!UICONTROL 还原断点布局]**：撤消所有调整大小的更改并将默认布局应用于组件。
-   * **[!UICONTROL 浮动到新行]**：如果同一行中有多个组件，请将组件移至下一行。
+   * **[!UICONTROL 父项]**：选择组件的父项。
+   * **[!UICONTROL 还原断点布局]**：撤消所有调整大小的更改，并将默认布局应用于组件。
+   * **[!UICONTROL 浮动到新行]**：如果同一行中有多个组件，则将组件移动到下一行。
 
-   您也可以使用 **[!UICONTROL 还原断点布局]** ( ![还原断点](assets/reverttopreviouslypublishedversion.png))选项，以撤消所有调整大小的更改。
+   您还可以在面板级别使用&#x200B;**[!UICONTROL 还原断点布局]** （![还原断点](assets/reverttopreviouslypublishedversion.png)）选项来撤消所有调整大小的更改。
 
    >[!NOTE]
    >
@@ -57,42 +57,42 @@ ht-degree: 6%
 
 ### 示例 {#example}
 
-**目标：** 要插入表组件和图像组件，并在自适应表单中使它们彼此平行放置。
+**目标：**&#x200B;要插入表组件和图像组件，并在自适应表单中将它们彼此平行放置。
 
 1. 在自适应表单中使用编辑模式插入表和图像组件。 图像组件显示在表组件之后。
 1. 切换到布局模式并选择表组件。 用于调整组件大小的蓝点显示在列1和12。
 1. 将第12列中的蓝色圆点拖放到响应式网格的第6列。
 
-   ![定义表的端点](assets/layout_mode_end_point_table_new.png)
+   ![定义表的终结点](assets/layout_mode_end_point_table_new.png)
 
 1. 同样，选择图像组件并将响应式网格的第1列中的蓝色圆点拖放到第7列。 表格和图像组件彼此平行显示。
 
-   ![在布局模式下并行显示表和图像](assets/table_image_parallel_new.png)
+   在布局模式下并行![表和图像](assets/table_image_parallel_new.png)
 
-   您可以选择图像组件，然后选择 **浮动到新行** 工具栏中可用的选项以将图像组件移动到下一行。
+   您可以选择图像组件，然后选择工具栏中可用的&#x200B;**浮动到新行**&#x200B;选项以将图像组件移动到下一行。
 
 ## 调整面板大小 {#resize-panels-layout-mode}
 
 如果要调整整个面板而非单个组件的大小，请执行以下步骤：
 
-1. 在面板中选择要调整大小的任何组件，然后选择 ![选择父级](assets/select_parent_icon.svg)，并在下拉列表中选择第一个选项（如果面板是组件的直接父面板）。
+1. 选择面板中要调整大小的任何组件，选择![选择父项](assets/select_parent_icon.svg)，然后选择下拉列表中的第一个选项（如果该面板是组件的直接父项）。
 
    蓝点显示在响应式网格的开头和结尾。
 
 1. 拖放蓝点以定义面板在响应式网格中的位置。
-您可以重复步骤1和2，然后选择 ![选择父级](assets/float_to_new_line_icon.svg) 将调整大小的面板移到下一行。
+您可以重复步骤1和2，然后选择![选择父项](assets/float_to_new_line_icon.svg)以将调整大小的面板移至下一行。
 
 ## 定义面板的多列布局
 
 执行以下步骤可定义面板的列数：
 
-1. 在 **[!UICONTROL 编辑]** 模式，选择面板，选择 ![配置](assets/configure_icon.png)，并选择 **[!UICONTROL 响应 — 页面上的所有内容，无需导航]** 选项来自 **[!UICONTROL 面板布局]** 下拉列表。
+1. 在&#x200B;**[!UICONTROL 编辑]**&#x200B;模式下，选择面板，选择![配置](assets/configure_icon.png)，然后从&#x200B;**[!UICONTROL 面板布局]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 响应式 — 页面上的所有内容（不含导航）]**&#x200B;选项。
 
-1. 选择 ![保存](assets/save_icon.svg) 以保存属性。
+1. 选择![保存](assets/save_icon.svg)以保存属性。
 
-1. 在 **[!UICONTROL 布局]** 模式，在面板中选择任意组件，然后选择 ![选择父级](assets/select_parent_icon.svg)，然后选择面板。
+1. 在&#x200B;**[!UICONTROL 布局]**&#x200B;模式下，选择面板中的任何组件，选择![选择父项](assets/select_parent_icon.svg)，然后选择面板。
 
-1. 选择 ![多列](assets/multi-column.svg) 并从下拉列表中选择列数。 列数可在1到12之间。 面板被分为多列布局。
+1. 选择![多列](assets/multi-column.svg)并从下拉列表中选择列数。 列数可在1到12之间。 面板被分为多列布局。
 
 ![布局模式下的多列](assets/multi-column-layout.png)
 
@@ -106,8 +106,8 @@ ht-degree: 6%
 
 执行以下步骤以启用新响应式网格：
 
-1. 选择 **布局** 从顶部显示的下拉列表中，选择 **预览** 选项。 显示启用布局模式的确认。
-1. 选择 **是** 以启用 **布局** 表单模式。
+1. 从&#x200B;**预览**&#x200B;选项旁边顶部显示的下拉列表中选择&#x200B;**布局**。 显示启用布局模式的确认。
+1. 选择&#x200B;**是**&#x200B;为表单启用&#x200B;**布局**&#x200B;模式。
 
 ### 使用新响应布局在自适应表单中嵌入旧片段 {#embed-an-old-fragment-in-an-adaptive-form-with-new-responsive-layout}
 
@@ -117,7 +117,7 @@ ht-degree: 6%
 
 如果在具有旧响应布局的自适应表单中嵌入具有新响应布局的片段，则系统会提示您启用表单的布局模式并重新嵌入片段。
 
-要启用布局模式，请选择 **布局** 从顶部显示的下拉列表中，选择 **预览** 选项并选择 **是** 以确认。 选择 **编辑** 模式以重新嵌入片段。
+要启用“布局”模式，请从&#x200B;**预览**&#x200B;选项顶部出现的下拉列表中选择&#x200B;**布局**，并选择&#x200B;**是**&#x200B;进行确认。 选择&#x200B;**编辑**&#x200B;模式以重新嵌入片段。
 
 ## 对具有旧响应布局的表单禁用布局模式 {#disable-layout-mode-for-forms-with-old-responsive-layout}
 
@@ -125,10 +125,10 @@ ht-degree: 6%
 
 执行以下步骤可禁用布局模式：
 
-1. 选择 **[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 模板]** 然后打开表单中使用的模板，位置如下： **[!UICONTROL 编辑]** 模式。
-1. 在左窗格中选择文档容器，然后选择 **[!UICONTROL 策略。]**
+1. 选择&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL 模板]**，并在&#x200B;**[!UICONTROL 编辑]**&#x200B;模式下打开表单中使用的模板。
+1. 在左窗格中选择文档容器，然后选择&#x200B;**[!UICONTROL 策略。]**
 
    ![禁用布局模式](assets/policy_disable_layout_mode.png)
 
-1. 选择 **[!UICONTROL 布局设置]** 选项卡并选择 **[!UICONTROL 禁用布局模式]**.
-1. 选择 ![保存更改](assets/save_icon.png) 以保存模板属性。
+1. 选择&#x200B;**[!UICONTROL 布局设置]**&#x200B;选项卡，然后选择&#x200B;**[!UICONTROL 禁用布局模式]**。
+1. 选择![保存更改](assets/save_icon.png)以保存模板属性。
