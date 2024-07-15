@@ -10,10 +10,10 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: e4c8901ab9484d91a1f5ced285efe60613984aeb
 workflow-type: tm+mt
-source-wordcount: '5868'
-ht-degree: 1%
+source-wordcount: '5686'
+ht-degree: 2%
 
 ---
 
@@ -331,74 +331,9 @@ AEM 6中有两种类型的运行状况检查：
 
 您可以使用[OSGi配置](/help/sites-deploying/configuring-osgi.md) **查询运行状况检查配置** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics)配置&#x200B;**Period**。
 
-## 使用Nagios进行监控 {#monitoring-with-nagios}
+## 使用外部服务进行监控 {#monitoring-with-external-services}
 
-运行状况检查功能板可以通过Granite JMX Mbeans与Nagios集成。 以下示例说明如何添加一项检查，该检查显示运行AEM的服务器上已使用的内存。
-
-1. 在监控服务器上设置和安装Nagios。
-1. 接下来，安装Nagios远程插件执行器(NRPE)。
-
-   >[!NOTE]
-   >
-   >有关如何在系统上安装Nagios和NRPE的详细信息，请参阅[Nagios文档](https://library.nagios.com/library/products/nagios-core/manuals//)。
-
-1. 添加AEM服务器的主机定义。 您可以使用Configuration Manager通过Nagios XI Web界面完成此任务：
-
-   1. 打开浏览器并指向Nagios服务器。
-   1. 按顶部菜单中的&#x200B;**配置**&#x200B;按钮。
-   1. 在左窗格中，按&#x200B;**高级配置**&#x200B;下的&#x200B;**核心配置管理器**。
-   1. 按&#x200B;**监视**&#x200B;部分下的&#x200B;**主机**&#x200B;链接。
-   1. 添加主机定义：
-
-   ![chlimage_1-118](assets/chlimage_1-118.png)
-
-   以下是使用Nagios Core时主机配置文件的示例：
-
-   ```xml
-   define host {
-      address 192.168.0.5
-      max_check_attempts 3
-      check_period 24x7
-      check-command check-host-alive
-      contacts admin
-      notification_interval 60
-      notification_period 24x7
-   }
-   ```
-
-1. 在AEM服务器上安装Nagios和NRPE。
-1. 在两个服务器上安装[check_http_json](https://github.com/phrawzty/check_http_json)插件。
-1. 在两个服务器上定义通用JSON检查命令：
-
-   ```xml
-   define command{
-   
-       command_name    check_http_json-int
-   
-       command_line    /usr/lib/nagios/plugins/check_http_json --user "$ARG1$" --pass "$ARG2$" -u 'https://$HOSTNAME$:$ARG3$/$ARG4$' -e '$ARG5$' -w '$ARG6$' -c '$ARG7$'
-   
-   }
-   ```
-
-1. 为AEM服务器上的已用内存添加服务：
-
-   ```xml
-   define service {
-   
-       use generic-service
-   
-       host_name my.remote.host
-   
-       service_description AEM Author Used Memory
-   
-       check_command  check_http_json-int!<cq-user>!<cq-password>!<cq-port>!system/sling/monitoring/mbeans/java/lang/Memory.infinity.json!{noname}.mbean:attributes.HeapMemoryUsage.mbean:attributes.used.mbean:value!<warn-threshold-in-bytes>!<critical-threshold-in-bytes>
-   
-       }
-   ```
-
-1. 检查Nagios仪表板中新创建的服务：
-
-   ![chlimage_1-119](assets/chlimage_1-119.png)
+可与外部技术或供应商集成。 有关相关详细信息，请参阅其文档。
 
 ## 诊断工具 {#diagnosis-tools}
 
