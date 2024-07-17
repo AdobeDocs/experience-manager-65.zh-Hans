@@ -5,9 +5,9 @@ exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a02724597338ee2451448c6c4188fc349dd47d01
 workflow-type: tm+mt
-source-wordcount: '713'
+source-wordcount: '711'
 ht-degree: 0%
 
 ---
@@ -72,9 +72,9 @@ CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌�
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
-    >[！NOTE]
-    >
-    >如果同时选择了类别和产品，则将使用该产品。
+>[!NOTE]
+>
+>如果同时选择了类别和产品，则将采用产品。
 
 这会创建一个占位符链接，在页面渲染时，该链接会被替换为真实链接。
 
@@ -102,6 +102,6 @@ CIF产品目录页面是动态渲染的虚拟页面。 因此，不可能像嵌�
 
 结果按类型分组。
 
-Omnisearch中的    >[！NOTE]
-    >
-    >全文搜索不支持关联的内容片段。 使用SKU或UID查找关联的内容片段。
+>[!NOTE]
+>
+>Omnisearch中的全文搜索不支持关联的内容片段。 使用SKU或UID查找关联的内容片段。
