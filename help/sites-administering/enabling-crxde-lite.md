@@ -9,9 +9,9 @@ exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: a3587d248569982a8f9b137602ba95dd40c47012
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -60,11 +60,19 @@ ht-degree: 0%
 
 ## 使用cURL启用CRXDE Lite {#enabling-crxde-lite-curl}
 
-您还可以通过运行此命令来通过cURL启用CRXDE Lite：
+您还可以通过运行以下两个命令（两者）来通过cURL启用CRXDE Lite：
 
-```shell
-curl -u admin:admin -F "jcr:primaryType=sling:OsgiConfig" -F "alias=/crx/server" -F "dav.create-absolute-uri=true" -F "dav.create-absolute-uri@TypeHint=Boolean" http://localhost:4502/apps/system/config/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet
-```
+* 启用`create-absolute-uri` ：
+
+  ```shell
+  curl -u admin:admin 'http://localhost:4502/system/console/configMgr/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet' --data-raw 'apply=true&action=ajaxConfigManager&%24location=&dav.create-absolute-uri=true&propertylist=dav.create-absolute-uri'
+  ```
+
+* 定义`alias`：
+
+  ```shell
+  curl -u admin:admin 'http://localhost:4502/system/console/configMgr/org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet' --data-raw 'apply=true&action=ajaxConfigManager&%24location=&alias=/crx/server&propertylist=alias'
+  ```
 
 ## 其他资源 {#other-resources}
 
