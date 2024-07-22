@@ -9,10 +9,10 @@ exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8d7c5b4962ea0dbd80cf78faa31238b2252f4a5c
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 0%
+source-wordcount: '247'
+ht-degree: 1%
 
 ---
 
@@ -38,7 +38,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->请确保您还进行了必要的[Dispatcher配置更改](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)以使用CSRF Protection Framework。
+>此外，请确保进行了必要的Dispatcher配置更改以使用CSRF保护框架：
+>
+>* [配置Adobe Experience Manager Dispatcher以防御CSRF攻击](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [Dispatcher概述](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
