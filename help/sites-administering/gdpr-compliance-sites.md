@@ -9,7 +9,7 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 5c1eda486e31be01f614a3a7ada71563fd996656
+source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 54%
@@ -66,7 +66,7 @@ AEM提供了一个可选的数据层和[ContextHub](/help/sites-developing/conte
 
 >[!NOTE]
 >
->在AdobeAEM(CQ) 5.6之前，ClientContext（ContextHub的早期版本）确实将数据发送到服务器，但未存储这些数据。
+>在AdobeAEM (CQ) 5.6之前，ClientContext（ContextHub的早期版本）确实将数据发送到服务器，但未存储这些数据。
 >
 >AdobeAEM 6.4及更早版本现已停用，本文档未涵盖这些版本。 请参阅[旧版本的Adobe Experience Manager、CQ和CRX文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions)。
 
