@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 721837590521aeaa82ab8a960098eba87c0ffb43
+source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
 workflow-type: tm+mt
-source-wordcount: '7456'
+source-wordcount: '7445'
 ht-degree: 20%
 
 ---
@@ -50,7 +50,7 @@ ht-degree: 20%
    + [用户管理和安全性](/help/sites-administering/security.md)
    + [用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md)
    + [安全核对清单](/help/sites-administering/security-checklist.md)
-   + [OWASP前10名](/help/sites-administering/owasp-top10.md)
+   + [OWASP十大](/help/sites-administering/owasp-top10.md)
    + [在生产就绪模式下运行AEM](/help/sites-administering/production-ready.md)
    + [Identity Management](/help/sites-administering/identity-management.md)
    + [对AEM Managed Services的Adobe IMS身份验证和Admin Console支持](/help/sites-administering/ims-config-and-admin-console.md)
@@ -809,7 +809,7 @@ ht-degree: 20%
       + [创建通信](/help/forms/using/create-correspondence.md)
       + [表达式生成器中的远程函数](/help/forms/using/expression-builder.md)
       + [管理代理签名图像](/help/forms/using/manage-agent-signature-images.md)
-      + [Post处理信件和交互式通信](/help/forms/using/submit-letter-topostprocess.md)
+      + [信件和互动式通信的后处理](/help/forms/using/submit-letter-topostprocess.md)
       + [向资产列表视图添加自定义操作](/help/forms/using/add-custom-action-asset-listing-view.md)
       + [在创建通信UI中添加自定义操作/按钮](/help/forms/using/add-action-button-in-create-correspondence-ui.md)
       + [将自定义属性添加到通信管理资产](/help/forms/using/add-custom-properties-cm-assets.md)
@@ -1260,9 +1260,6 @@ ht-degree: 20%
          + [电子商务](/help/commerce/cif-classic/developing/ecommerce.md)
          + [开发（通用）](/help/commerce/cif-classic/developing/generic.md)
          + [使用SAPCommerce Cloud进行开发](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
-+ Edge Delivery Services {#edge-delivery-services}
-   + [Edge Delivery 快速入门](/help/edge/overview.md)
-   + [使用 Edge Delivery](/help/edge/using.md)
 + Headless {#headless}
    + [AEM Headless 历程](/help/journey-headless/overview.md)
    + AEM Headless开发人员历程{#developer}
@@ -1603,7 +1600,7 @@ ht-degree: 20%
          + [延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)
          + [使用CRX2Oak迁移工具](/help/sites-deploying/using-crx2oak.md)
          + [升级前维护任务](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
-         + [Post升级检查和故障排除](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
+         + [升级后检查和故障排除](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md)
          + [升级自定义搜索Forms](/help/sites-deploying/upgrading-custom-search-forms.md)
          + [可持续升级](/help/sites-deploying/sustainable-upgrades.md)
          + [升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md)
