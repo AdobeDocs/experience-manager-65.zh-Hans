@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: d5d1c3909a135de61d777c39ba60fbb897722e8e
+source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
 workflow-type: tm+mt
-source-wordcount: '7445'
+source-wordcount: '7443'
 ht-degree: 20%
 
 ---
@@ -230,6 +230,7 @@ ht-degree: 20%
          + [为Adobe Analytics配置视频跟踪](/help/sites-administering/adobeanalytics-video.md)
          + [HTTP2 内容投放常见问题解答](/help/sites-administering/scene7-http2faq.md)
          + [Adobe Campaign集成疑难解答](/help/sites-administering/troubleshooting-campaignintegration.md)
+         + [SharePoint连接器](/help/sites-administering/sharepoint-connector.md)
          + [SharePoint连接器许可证、版权声明和免责声明](/help/sites-administering/sharepoint-connector-licenses.md)
          + [DHTML查看器生命周期结束常见问题解答](/help/sites-administering/dhtml-viewer-endoflifefaqs.md)
          + [与 Adobe Campaign Classic 集成](/help/sites-administering/campaignonpremise.md)
@@ -268,7 +269,6 @@ ht-degree: 20%
          + [管理标记](/help/sites-administering/tags.md)
          + [页面导出程序](/help/sites-administering/page-exporter.md)
          + [经典UI标记控制台](/help/sites-administering/classic-console.md)
-         + [Screens的内容管理](/help/sites-administering/content-management-screens.md)
          + [WebDAV访问](/help/sites-administering/webdav-access.md)
    + 经典UI创作{#classic-ui}
       + 经典UI创作简介{#introduction}
