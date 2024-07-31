@@ -11,7 +11,7 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7e0f1225d5bf4de095c4a8cc042517997898a44c
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11203'
 ht-degree: 2%
@@ -840,6 +840,7 @@ Dynamic Media支持通过URL修饰符添加带有视频的单个字幕。 请参
    | 为每个资源创建单独的文件夹 | 为您选择下载的每个字幕文件或音轨文件创建一个文件夹。 |
    | 电子邮件 | 使用默认电子邮件程序将.zip文件发送到指定的电子邮件地址。 |
    | 资源 | 指定正在下载的文件数以及所有选定文件的组合总大小。 取消选择此选项会使&#x200B;**[!UICONTROL 下载]**&#x200B;按钮变暗（关闭），从而阻止您下载任何文件。 |
+
 1. 选择&#x200B;**[!UICONTROL 下载]**。
 1. Publish视频。 查看[Publish资源](publishing-dynamicmedia-assets.md)。
 
@@ -1265,7 +1266,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->[!TAB servlet的响应类]
+>servlet的[!TAB 响应类]
 
 +++servlet的&#x200B;**响应类**
 
@@ -1295,7 +1296,7 @@ public abstract class VideoResponse {
 
 +++
 
->[!TAB 在servlet中引用的常量文件]
+>在servlet]中引用的[!TAB 常量文件
 
 +++在servlet **中引用的**&#x200B;常量文件
 

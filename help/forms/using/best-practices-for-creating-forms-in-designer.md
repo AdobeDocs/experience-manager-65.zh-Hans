@@ -6,7 +6,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
+source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
 workflow-type: tm+mt
 source-wordcount: '11687'
 ht-degree: 0%
@@ -154,7 +155,9 @@ ht-degree: 0%
 
 屏幕阅读器用户感知的标签不一定与可视字幕相同。 在某些情况下，您可能希望更详细地了解控件的用途。
 对于表单中的每个字段对象，“辅助功能”调色板（见图3）可用于指定屏幕阅读器将朗读的内容以标识特定表单字段。
+
 要使用“辅助功能”调色板，请执行以下步骤：
+
 1. 选择“窗口”>“辅助功能”或按Shift+F6可显示“辅助功能”调色板。
 1. 选择表单中的对象。 面板将显示对象的辅助功能属性。
 
