@@ -312,15 +312,15 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   测试服务后，单击&#x200B;**取消**&#x200B;以确保非自愿更改不会传播到表单数据模型。
+   >测试服务后，单击&#x200B;**取消**&#x200B;以确保非自愿更改不会传播到表单数据模型。
 
    >[!NOTE]
    >
-   据报告，需要重新启动AEM Server才能成功将Data Source绑定到FDM。
+   >据报告，需要重新启动AEM Server才能成功将Data Source绑定到FDM。
 
    >[!NOTE]
    >
-   建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+   >建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 #### 测试Forms数据模型(Derby) {#test-fdm-derby}
 
@@ -425,7 +425,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-如果已安装`we-gov-forms.ui.analytics-<version>.zip`包，则AEM Forms Analytics数据在脱机时或没有Adobe Analytics Cloud配置时可用，但AEM Sites数据需要活动的Cloud配置。
+>如果已安装`we-gov-forms.ui.analytics-<version>.zip`包，则AEM Forms Analytics数据在脱机时或没有Adobe Analytics Cloud配置时可用，但AEM Sites数据需要活动的Cloud配置。
 
 1. 导航到&#x200B;*https://&lt;aemserver>：&lt;port>/sites.html/content*
 1. 选择“AEM Forms We.Gov网站”以查看网站页面。
@@ -454,7 +454,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-如果已安装`we-gov-forms.ui.analytics-<version>.zip`包，则AEM Forms Analytics数据在脱机时或没有Adobe Analytics Cloud配置时可用，但AEM Sites数据需要活动的Cloud配置。
+>如果已安装`we-gov-forms.ui.analytics-<version>.zip`包，则AEM Forms Analytics数据在脱机时或没有Adobe Analytics Cloud配置时可用，但AEM Sites数据需要活动的Cloud配置。
 
 1. 导航至
 
@@ -501,7 +501,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
-在此部分中创建的证书将用于在Adobe I/O中创建集成服务。一旦用户在集成服务中创建了，用户就可以使用Adobe I/O中的该信息完成配置。
+>在此部分中创建的证书将用于在Adobe I/O中创建集成服务。一旦用户在集成服务中创建了，用户就可以使用Adobe I/O中的该信息完成配置。
 
 #### 在Adobe I/O中创建集成 {#create-integration-adobeio}
 
@@ -800,7 +800,7 @@ automated forms conversion服务包括某些[最佳实践、已知复杂模式](
 
    >[!NOTE]
    >
-   仅仅因为用户在Configuration Manager页面中启用了服务，用户仍需要设置服务配置才能与请求的外部服务通信。
+   >仅仅因为用户在Configuration Manager页面中启用了服务，用户仍需要设置服务配置才能与请求的外部服务通信。
 
    ![我们管理表单包](assets/aftia-configuration-options.jpg)
 
