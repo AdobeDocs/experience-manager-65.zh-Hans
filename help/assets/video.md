@@ -1266,7 +1266,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->servlet的[!TAB 响应类]
+>[!TAB servlet的响应类]
 
 +++servlet的&#x200B;**响应类**
 
@@ -1296,7 +1296,7 @@ public abstract class VideoResponse {
 
 +++
 
->在servlet]中引用的[!TAB 常量文件
+>[!TAB 在servlet中引用的常量文件]
 
 +++在servlet **中引用的**&#x200B;常量文件
 
