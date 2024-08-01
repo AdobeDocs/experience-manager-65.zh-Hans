@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: c524e4355794ab598b6b69a8ce96cdba90abaa22
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,7 @@ ht-degree: 0%
      <li>将自适应表单从Adobe Experience Manager Publish实例提交到Adobe Experience Manager Workflow时，工作流无法保存附件。  (FORMS-14209) </li>
      <li> 安装AEM 6.5 Forms Service Pack 20包(适用于SP20的AEM Forms附加组件包)时，AEM Sites用户界面(UI)性能会显着降低。  (FORMS-13791) </li>
      <li>预填充服务失败，交互式通信中出现空指针异常。 (CQDOC-21355)</li>
+     <li>使用具有基于用户凭据的身份验证的Adobe Analytics旧版云服务的配置无法正常运行，导致无法执行Analytics规则。 (FORMS-15428)
     </ul>
     </td>    
   </tr>

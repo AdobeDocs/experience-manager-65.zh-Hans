@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: fb689e86deaabcc4033ed75f615086b630a9a525
+source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
 workflow-type: tm+mt
-source-wordcount: '4332'
+source-wordcount: '4390'
 ht-degree: 2%
 
 ---
@@ -550,6 +550,8 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    1. 导航到CRXDE中的目录`/libs/fd/aemforms/install/`。
    1. 删除名为`com.adobe.granite.ui.commons-5.10.26.jar`的包。
    1. 重新启动AEM服务器。
+
+* 当用户更新到安装有Forms加载项的AEM Forms Service Pack 20 (6.5.20.0)时，使用Adobe Analytics的旧版Cloud Service以及基于用户凭据的身份验证的配置无法正常工作，导致无法执行Analytics规则。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (FORMS-15428)
 
 * 当用户更新到JEE服务器上的AEM Forms Service Pack 20 (6.5.20.0)并使用输出服务生成PDF时，PDF呈现时的辅助功能问题。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (LC-3922112)
 * 当用户在JEE上使用输出服务生成已标记PDF时，会显示“结构不当警告”。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (LC-3922038)
