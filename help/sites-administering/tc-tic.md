@@ -6,9 +6,9 @@ feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: b7082aaee83fba88b47447b8553563264eedb713
+source-git-commit: eb4c6ab188cc79eab66647433e60ba97eba6f257
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1483'
 ht-degree: 40%
 
 ---
@@ -29,25 +29,20 @@ ht-degree: 40%
 以下翻译供应商为翻译项目提供新API的实施。 用于了解有关集成的更多信息的链接：
 
 * [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html)
-* [Clay Tablet Technologies](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
-* [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
-* [Cloudwords](https://exchange.adobe.com/experiencecloud.details.90019.html)
-* [XTM Cloud](https://exchange.adobe.com/experiencecloud.details.105037.xtm-connect-for-adobe-experience-manager.html)
-* [Lingotek](https://exchange.adobe.com/experiencecloud.details.90088.lingotek-collaborative-translation-platform.html)
+* [Memsource](https://exchange.adobe.com/apps/ec/103166/memsource-connector-for-adobe-experience-manager)
+* [XTM Cloud](https://exchange.adobe.com/apps/ec/105037/xtm-connect-for-adobe-experience-manager)
+* [Lingotek](https://exchange.adobe.com/apps/ec/90088/lingotek-collaborative-translation-platform)
 * [RWS](https://exchange.adobe.com/apps/ec/108277/rws-language-cloud)
 * [Smartling](https://www.smartling.com/software/integrations/adobe-experience-manager/)
-* [Systran](https://exchange.adobe.com/experiencecloud.details.90233.systran-for-adobe-experience-manager.html)
-* [Altlang](https://exchange.adobe.com/experiencecloud.details.90222.altlang.html)
 * Microsoft (AEM中预安装了Microsoft Translator)
 
 >[!NOTE]
 >
 >要查找人工翻译提供商和机器翻译提供商的最新列表，请查看以下页面：
 >
->
->* [AEM人工翻译](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM机器翻译](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM人工翻译](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=aem+human+translation&amp;sort=RELEVANCE)
+>* [AEM机器翻译](https://exchange.adobe.com/apps/browse/ec?q=AEM+machine+translation&amp;product=All&amp;partnerLevel=All&amp;sort=RELEVANCE)
 >
 
 安装连接器软件包后，即可为连接器创建云配置。一般需要提供凭据，以便向翻译服务进行身份验证。有关为 Microsoft Translator 连接器添加云配置的信息，请参阅[与 Microsoft Translator 集成](/help/sites-administering/tc-msconf.md)。
