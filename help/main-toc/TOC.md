@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 7dc864a044e73e855fe08bcf8418b0349cd0d3bd
+source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
 workflow-type: tm+mt
-source-wordcount: '7443'
+source-wordcount: '7448'
 ht-degree: 20%
 
 ---
@@ -1231,6 +1231,7 @@ ht-degree: 20%
          + [配置 SEO 的 URL](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [缓存选项](/help/commerce/cif/configuring/caching.md)
          + [自定义 HTTP 标头](/help/commerce/cif/configuring/custom-http-headers.md)
+         + [购物车和Dispatcher设置](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
       + 开发 {#developing}
          + [使用AEM进行开发](/help/commerce/cif/develop.md)
          + [设置 CIF 组件的样式](/help/commerce/cif/customizing/style-cif-component.md)
