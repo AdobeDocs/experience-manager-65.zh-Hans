@@ -10,9 +10,9 @@ exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2114'
 ht-degree: 1%
 
 ---
@@ -219,7 +219,7 @@ CRXDE Lite提供以下功能：
 
 您现在可以通过修改属性或创建节点来调整对话框以满足您的需求。
 
-也可以使用对话框编辑器来编辑对话框。 双击CRXDE Lite中的对话框节点可打开编辑器。 可在[此处](/help/sites-developing/dialog-editor.md)找到有关对话框编辑器的更多信息。
+也可以使用对话框编辑器来编辑对话框。 双击CRXDE Lite中的对话框节点可打开编辑器。 有关详细信息，请参阅[对话框编辑器](/help/sites-developing/dialog-editor.md)。
 
 ## 创建节点 {#creating-a-node}
 

@@ -10,9 +10,9 @@ exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '891'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 2%
 
 本节适用于经典UI标记控制台。
 
-触控优化的UI标记控制台位于[此处](/help/sites-administering/tags.md#tagging-console)。
+>[!NOTE]
+>
+>有关触屏优化UI标记控制台的详细信息，请参阅[管理标记](/help/sites-administering/tags.md#tagging-console)。
 
 要访问经典UI标记控制台，请执行以下操作：
 

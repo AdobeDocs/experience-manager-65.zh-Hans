@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '2939'
+source-wordcount: '2937'
 ht-degree: 4%
 
 ---
@@ -429,7 +429,7 @@ Adobe建议将TarMK作为客户在所有部署场景中使用的默认持久性�
 
 ### TarMK设置指南 {#tarmk-settings-guideline}
 
-要获得良好的性能，您应该遵循下面提供的设置指南。 有关如何更改设置的说明，[请参阅此页面](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)。
+要获得良好的性能，您应该遵循下面提供的设置指南。 有关如何更改设置的说明，请参阅[性能优化](/help/sites-deploying/configuring-performance.md)。
 
 <table>
  <tbody>
@@ -539,7 +539,7 @@ Adobe建议将TarMK作为客户在所有部署场景中使用的默认持久性�
 
 ### MongoMK设置准则 {#mongomk-settings-guidelines}
 
-要获得良好的性能，您应该遵循下面提供的设置指南。 有关如何更改设置的说明，[请参阅此页面](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)。
+要获得良好的性能，您应该遵循下面提供的设置指南。 有关如何更改设置的说明，请参阅[性能优化](/help/sites-deploying/configuring-performance.md)。
 
 <table>
  <tbody>

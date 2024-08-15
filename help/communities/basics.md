@@ -9,7 +9,7 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 1%
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 在创作页面内容时，如果基础模板允许对页面设计进行更改，则可以启用组件浏览器中尚未提供的组件，将其作为网站设计的一部分。
 
-可用的Communities组件在[此处](author-communities.md#available-communities-components)列出。
+查看[可用社区组件](author-communities.md#available-communities-components)下的列表。
 
 >[!NOTE]
 >

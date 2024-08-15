@@ -10,9 +10,9 @@ exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1892'
+source-wordcount: '1897'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ curl命令会立即返回。
 
 数据存储一致性检查将报告任何缺失但仍被引用的数据存储二进制文件。 要开始一致性检查，请执行以下步骤：
 
-1. 转到JMX控制台。 有关如何使用JMX控制台的信息，请参阅[本文](/help/sites-administering/jmx-console.md#using-the-jmx-console)。
+1. 转到JMX控制台。 有关如何使用JMX控制台的信息，请参阅[使用JMX控制台监视服务器资源](/help/sites-administering/jmx-console.md#using-the-jmx-console)。
 1. 搜索&#x200B;**BlobGarbageCollection** Mbean并单击它。
 1. 单击`checkConsistency()`链接。
 

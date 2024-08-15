@@ -10,9 +10,9 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '649'
 ht-degree: 22%
 
 ---
@@ -161,4 +161,4 @@ Clientlibs允许您扩展默认实施以实现新功能，同时重用标准函�
 
 使用控制台时，常见的用例是用户必须从资源（例如，页面、组件、资源等）中进行选择的情况。 这可以采用列表形式，例如，作者必须从中选择一个项目。
 
-为了使列表保持合理的大小并且与用例相关，可以通过自定义谓词的形式实施筛选条件。有关详细信息，请参阅[本文](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources)。
+为了使列表保持合理的大小并且与用例相关，可以通过自定义谓词的形式实施筛选条件。有关详细信息，请参阅[自定义页面创作 — 筛选资源](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources)。

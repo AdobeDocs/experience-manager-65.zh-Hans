@@ -10,9 +10,9 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '759'
+source-wordcount: '763'
 ht-degree: 1%
 
 ---
@@ -72,7 +72,7 @@ CRXDE用于管理高级权限和限制。 该报表已合并到同一视图中�
 
 >[!NOTE]
 >
->有关权限和说明的完整列表，请参阅[此页面](/help/sites-administering/user-group-ac-admin.md#access-right-management)。
+>有关权限和说明的完整列表，请参阅[用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md#access-right-management)。
 
 给定路径的![搜索权限。](assets/image2019-3-21_0-5-47.png) ![为“dam-users”添加新条目，如在垂直列中选择的路径所示。](assets/image2019-3-21_0-6-53.png)
 

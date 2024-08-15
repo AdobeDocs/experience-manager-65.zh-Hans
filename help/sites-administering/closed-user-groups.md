@@ -10,9 +10,9 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '6650'
+source-wordcount: '6662'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ CUG的关键功能是限制内容存储库中给定树上除选定承担者外�
 
 除了为CUG提供专门的访问控制管理外，新的授权模型还允许您有条件地为其策略启用权限评估。 这使您可以在暂存环境中设置CUG策略，并且仅在复制到生产环境后才能评估有效权限。
 
-CUG策略的权限评估以及与默认授权模型或任何其他授权模型的交互遵循为Apache Jackrabbit Oak中的多个授权机制设计的模式。 也就是说，当且仅当所有模型都授予访问权限时，才授予给定权限集。 有关详细信息，请参阅[此页面](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)。
+CUG策略的权限评估以及与默认授权模型或任何其他授权模型的交互遵循为Apache Jackrabbit Oak中的多个授权机制设计的模式。 也就是说，当且仅当所有模型都授予访问权限时，才授予给定权限集。 有关更多详细信息，请参阅[Jackrabbit Oak文档](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)。
 
 以下特征适用于与旨在处理和评估CUG策略的授权模型相关联的权限评估：
 
@@ -129,7 +129,7 @@ CUG功能的与身份验证相关的部分允许您标记需要身份验证的�
 
 由于此类身份验证要求应仅限于某些运行模式以及内容存储库中的一小部分树，因此跟踪要求mixin类型和登录路径属性是有条件的。 此外，它还绑定到定义所支持路径的相应配置（请参阅下面的配置选项）。 因此，仅这些受支持路径范围内的更改才会触发OSGi注册的更新，而其他地方mixin类型和属性都会被忽略。
 
-默认AEM安装程序现在通过允许以创作运行模式设置mixin来使用此配置，但只有在复制到发布实例时才会生效。 有关Sling如何强制实施身份验证要求的详细信息，请参阅[此页面](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html)。
+默认AEM安装程序现在通过允许以创作运行模式设置mixin来使用此配置，但只有在复制到发布实例时才会生效。 有关Sling如何实施身份验证要求的详细信息，请参阅[Sling身份验证 — 框架](https://sling.apache.org/documentation/the-sling-engine/authentication/authentication-framework.html)文档。
 
 在配置的支持路径中添加`granite:AuthenticationRequired` mixin类型会导致更新负责处理程序的OSGi注册，其中包含具有`sling.auth.requirements`属性的附加新条目。 如果给定的身份验证要求指定了可选的`granite:loginPath`属性，则还会向身份验证程序注册该值，并带有“ — ”前缀，以将其排除在身份验证要求之外。
 
@@ -187,7 +187,7 @@ Apache Sling身份验证要求通过页面或节点层次结构继承。 继承�
 
 ### 存储库中的CUG策略表示 {#cug-policy-representation-in-the-repository}
 
-Oak文档介绍了新的CUG策略在存储库内容中的反映方式。 有关详细信息，请参阅[此页面](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository)。
+Oak文档介绍了新的CUG策略在存储库内容中的反映方式。 有关更多信息，请参阅有关使用CUG管理访问权限的[Jackrabbit Oak文档](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#Representation_in_the_Repository)。
 
 ### 存储库中的身份验证要求 {#authentication-requirement-in-the-repository}
 

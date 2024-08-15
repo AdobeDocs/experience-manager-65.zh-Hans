@@ -10,9 +10,9 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -409,7 +409,7 @@ Adobe建议定期运行维护以防止存储库随时间推移过度增长。 �
 1. 按照以上[部分](/help/sites-deploying/tarmk-cold-standby.md#cold-standby-repository-maintenance)中的说明运行冷备用存储库维护。
 1. 完成维护过程并重新启动实例后：
 
-   * 在主计算机上，通过相关JMX Bean运行数据存储垃圾收集，如[本文](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console)中所述。
+   * 在主计算机上，通过相关的JMX Bean运行数据存储垃圾收集，如[通过JMX控制台运行数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md#running-data-store-garbage-collection-via-the-jmx-console)中所述。
    * 在待机状态下，数据存储垃圾回收仅通过&#x200B;**BlobGarbageCollection** MBean - `startBlobGC()`可用。 **RepositoryManagement** MBean在待机状态下不可用。
 
    >[!NOTE]

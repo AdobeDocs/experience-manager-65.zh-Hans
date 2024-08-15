@@ -11,7 +11,7 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 0%
@@ -435,7 +435,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
 
    ![Webpack Dev Server Teaser更改](../assets/style-cif-component/webpack-dev-server-teaser-changes.png)
 
-   但是，这些更改尚未部署到AEM。 您可以在此处下载[解决方案文件](../assets/style-cif-component/_productteaser.scss)。
+   但是，这些更改尚未部署到AEM。 您可以[在此下载解决方案文件](../assets/style-cif-component/_productteaser.scss)。
 
 1. 使用您的Maven技能从命令行终端将更新部署到AEM：
 

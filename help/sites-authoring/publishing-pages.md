@@ -5,10 +5,10 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '1673'
-ht-degree: 66%
+source-wordcount: '1669'
+ht-degree: 65%
 
 ---
 
@@ -32,16 +32,14 @@ ht-degree: 66%
 >
 >* **复制**
 >  这些是技术术语，用于描述数据（例如页面内容、文件、代码、用户注释）从一个环境移动到另一个环境，例如发布或反向复制用户注释时。
->
 
->[!NOTE]
->
->如果您没有必要的权限来发布特定页面：
->
->* 将触发一个工作流，通知请求发布的适当人员。
->* 您的开发团队可能已自定义此[工作流](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6)。
->* 将显示一条简短的消息，通知您工作流已经触发。
->
+## 权限不足 {#insufficient-privileges}
+
+如果您没有必要的权限来发布特定页面：
+
+* 将触发一个工作流，通知请求发布的适当人员。
+* 您的开发团队可能已自定义此[工作流](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6)。
+* 将显示一条简短的消息，通知您工作流已经触发。
 
 ## 发布页面 {#publishing-pages-1}
 
@@ -185,7 +183,9 @@ Sites 控制台中有两个用于发布的选项：
 
    >[!NOTE]
    >
-   >根据用户可能拥有或可能没有的权限显示&#x200B;**工作流程**&#x200B;步骤。有关详细信息，请参阅此页面上的[上一备注](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd)中有关发布权限的内容，以及[管理工作流的访问权限](/help/sites-administering/workflows-managing.md)和[将工作流应用到页面](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)的内容。
+   >根据用户可能拥有也可能没有的权限，显示&#x200B;**工作流**&#x200B;步骤。
+   >
+   >有关详细信息，请参阅[权限不足](/help/sites-authoring/publishing-pages.md#insufficient-privileges)、[管理工作流的访问权限](/help/sites-administering/workflows-managing.md)和[将工作流应用到页面](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)。
 
    资源将按触发的工作流程分组，并且每组都提供了用于执行以下操作的选项：
 

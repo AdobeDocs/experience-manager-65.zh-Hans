@@ -5,10 +5,10 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '761'
-ht-degree: 82%
+source-wordcount: '762'
+ht-degree: 81%
 
 ---
 
@@ -69,9 +69,9 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 可非常灵活地配置 MSM 同步操作。在转出期间修改哪些属性或组件直接取决于这些配置的属性。
 
-有关此主题的更多信息，请参阅[本文。](msm-best-practices.md)
+有关此主题的更多信息，请参阅[MSM最佳实践](msm-best-practices.md)。
 
-### 如何才能删除一组作者的转出权限？ {#remove-rollout-permissions}
+### 如何删除一组作者的转出权限？ {#remove-rollout-permissions}
 
 无法为 AEM 主体（用户或组）设置或删除任何&#x200B;**转出**&#x200B;权限。
 

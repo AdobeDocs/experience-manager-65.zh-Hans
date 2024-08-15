@@ -10,9 +10,9 @@ exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '710'
 ht-degree: 1%
 
 ---
@@ -93,7 +93,7 @@ ht-degree: 1%
    >
    >“权限”选项卡中的 CUG 无法从 Blueprint 转出到 Live Copy。在配置Live Copy时对此进行规划。
    >
-   >有关详细信息，请参阅[此页面](closed-user-groups.md#aem-livecopy)。
+   >有关详细信息，请参阅[AEM中的已关闭的用户组 — Livecopy](closed-user-groups.md#aem-livecopy)。
 
 1. 将打开&#x200B;**编辑已关闭的用户组**&#x200B;对话框。 您可以在此搜索并选择您的CUG，然后通过&#x200B;**保存**&#x200B;确认组选择。
 

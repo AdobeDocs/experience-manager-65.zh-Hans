@@ -5,10 +5,10 @@ exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '4484'
-ht-degree: 2%
+source-wordcount: '4493'
+ht-degree: 3%
 
 ---
 
@@ -255,7 +255,7 @@ AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务�
 
 #### AEM和Commerce {#aem-commerce}
 
-自AEM 6.4以来，Commerce integration framework的改进速度更快。[在此处了解详情](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)。
+自AEM 6.4以来，Commerce integration framework的改进速度更快。使用Commerce integration framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)从[AEM和Adobe Commerce集成了解详情。
 
 #### Communities加载项 {#communities-add-on}
 

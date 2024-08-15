@@ -5,9 +5,9 @@ exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '272'
 ht-degree: 3%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 限制 {#restrictions}
 
-虽然该服务允许定义任何标头名称，包括标准名称，但它们不可配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 [此处](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)可找到受限标头名称列表。 除了这些标头之外，还有两个标头无法使用：
+虽然该服务允许定义任何标头名称，包括标准名称，但它们不可配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 可以在[mdn Web文档 — HTTP标头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)下找到受限标头名称的列表。 除了这些标头之外，还有两个标头无法使用：
 
 * &quot;Store&quot; - CIF用于识别Adobe Commerce商店
 * &quot;Preview-Version&quot; — 由CIF用于检索暂存产品

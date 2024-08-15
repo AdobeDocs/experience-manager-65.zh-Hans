@@ -1,5 +1,5 @@
 ---
-title: Post升级检查和故障排除
+title: 升级后检查和故障排除
 description: 了解如何对升级后可能显示的问题进行故障排除。
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +10,16 @@ feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1798'
 ht-degree: 0%
 
 ---
 
-# Post升级检查和故障排除{#post-upgrade-checks-and-troubleshooting}
+# 升级后检查和故障排除{#post-upgrade-checks-and-troubleshooting}
 
-## Post升级检查 {#post-upgrade-checks}
+## 升级后检查 {#post-upgrade-checks}
 
 在[就地升级](/help/sites-deploying/in-place-upgrade.md)后，应执行以下活动以完成升级。 我们假定AEM已使用6.5 jar启动，并且已部署升级的代码库。
 
@@ -103,7 +103,7 @@ ht-degree: 0%
 
 #### 启用数据存储垃圾收集 {#enable-data-store-garbage-collection}
 
-如果使用文件数据存储，请确保已启用数据存储垃圾收集任务并将其添加到每周维护列表。 说明概述于[此处](/help/sites-administering/data-store-garbage-collection.md)。
+如果使用文件数据存储，请确保已启用数据存储垃圾收集任务并将其添加到每周维护列表。 说明概述在[修订清理](/help/sites-administering/data-store-garbage-collection.md)下。
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 #### 启用联机修订清理 {#enable-online-revision-cleanup}
 
-如果使用MongoMK或新的TarMK区段格式，请确保已启用“修订版清理”任务并将其添加到“每日维护”列表中。 [此处](/help/sites-deploying/revision-cleanup.md)列出的说明。
+如果使用MongoMK或新的TarMK区段格式，请确保已启用“修订版清理”任务并将其添加到“每日维护”列表中。 说明概述在[修订清理](/help/sites-deploying/revision-cleanup.md)下。
 
 ### 执行测试计划 {#execute-test-plan}
 

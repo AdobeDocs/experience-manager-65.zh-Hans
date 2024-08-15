@@ -9,9 +9,9 @@ exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '581'
 ht-degree: 1%
 
 ---
@@ -77,7 +77,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 1. `disableChildren`的值是从设计配置中提取的，表达式`${cqDesign.disableChildren}`的计算结果为`false`，这意味着该选项将不会作为组件的一部分呈现。
 
-   您可以在此处](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40)的GitHub中查看作为`granite:hide`属性[值的隐藏表达式。
+   您可以在GitHub](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40)中查看作为`granite:hide`属性[值的隐藏表达式。
 
 1. 使用列表组件时，选项&#x200B;**子页面**&#x200B;不再为页面作者渲染。
 

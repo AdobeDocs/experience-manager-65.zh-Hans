@@ -9,9 +9,9 @@ exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 55bf7104dbd9b9fadf6cb37efa28084fe43393c3
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1603'
+source-wordcount: '1602'
 ht-degree: 6%
 
 ---
@@ -70,9 +70,9 @@ AEM Managed Services客户应已设置组织，作为IMS设置的一部分，客
 
 >[!NOTE]
 >
->有关AdobeIdentity Management基础知识（包括IDP配置）的更多信息，请参阅文章[此页面。](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)
+>有关AdobeIdentity Management基础知识（包括IDP配置）的更多信息，请参阅关于[设置标识和单点登录](https://helpx.adobe.com/cn/enterprise/using/set-up-identity.html)的文章。
 >
->有关企业管理和[!DNL Admin Console]的详细信息，请参阅文章[此页面](https://helpx.adobe.com/cn/enterprise/managing/user-guide.html)。
+>有关企业管理和[!DNL Admin Console]的详细信息，请参阅[欢迎使用企业和团队管理指南](https://helpx.adobe.com/cn/enterprise/managing/user-guide.html)。
 
 ### 将用户载入[!DNL Admin Console] {#onboarding-users-to-the-admin-console}
 
@@ -122,15 +122,16 @@ User Sync是通过AdobeGithub存储库在以下位置分发的：
 
 >[!NOTE]
 >
->有关用户同步工具的更多信息，请参阅[文档页面](https://adobe-apiplatform.github.io/user-sync.py/en/)。
+>有关更多详细信息，请参阅：
 >
+>* [用户同步工具 — Adobe用户同步](https://adobe-apiplatform.github.io/user-sync.py/en/)
 >
->User Sync Tool需要使用[此处](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)所述的过程注册为Adobe I/O客户端UMAPI。
+>* User Sync Tool需要使用[API访问身份验证](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html)中描述的过程注册为Adobe I/O客户端UMAPI
 >
->可在[此处](https://developer.adobe.com/developer-console/docs/guides/)找到Adobe Developer Console文档。
+>* [Adobe Developer Console文档](https://developer.adobe.com/developer-console/docs/guides/)。
 >
+>* [用户管理API文档](https://adobe-apiplatform.github.io/umapi-documentation/en/)。
 >
->此[位置](https://adobe-apiplatform.github.io/umapi-documentation/en/)包含用户同步工具使用的[!DNL User Management] API。
 
 >[!NOTE]
 >

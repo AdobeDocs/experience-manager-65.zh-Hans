@@ -10,9 +10,9 @@ exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 84979bbb49d47ec47c898a6747f64048b577c365
+source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '5409'
+source-wordcount: '5412'
 ht-degree: 1%
 
 ---
@@ -610,7 +610,7 @@ AEM提供了三种从组中删除用户或组的不同方式：
 
 >[!NOTE]
 >
->Adobe为权限管理引入了一个新的基于触屏UI的主体视图。 有关如何使用它的更多详细信息，请参阅[此页面](/help/sites-administering/touch-ui-principal-view.md)。
+>Adobe为权限管理引入了一个新的基于触屏UI的主体视图。 有关如何使用它的更多详细信息，请参阅[权限管理的主体视图](/help/sites-administering/touch-ui-principal-view.md)。
 
 本节介绍如何设置权限，包括复制权限。
 

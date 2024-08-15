@@ -10,9 +10,9 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3186'
+source-wordcount: '3187'
 ht-degree: 4%
 
 ---
@@ -434,7 +434,7 @@ ht-degree: 4%
 
 如果您已创建可作为其他模板基础的模板，则可以将此模板作为模板类型复制。
 
-1. 创建模板，就像创建此处](/help/sites-authoring/templates.md#creating-a-new-template-template-author)记录的任何可编辑模板[一样，该模板可用作模板类型的基础。
+1. 创建模板，就像创建任何可编辑的模板一样。 请参阅[创建页面模板](/help/sites-authoring/templates.md#creating-a-new-template-template-author)。 这可以作为模板类型的基础。
 1. 使用CRXDE Lite，将新创建的模板从`templates`节点复制到[模板文件夹](/help/sites-developing/page-templates-editable.md#template-folders)下的`template-types`节点。
 1. 从[模板文件夹](/help/sites-developing/page-templates-editable.md#template-folders)下的`templates`节点中删除模板。
 1. 在`template-types`节点下的模板副本中，从所有`jcr:content`节点中删除所有`cq:template`和`cq:templateType`属性。

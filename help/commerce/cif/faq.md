@@ -5,10 +5,10 @@ exl-id: d541607f-c4c9-4dd5-aadf-64d4cb5f9f2a
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 66%
+source-wordcount: '958'
+ht-degree: 65%
 
 ---
 
@@ -78,4 +78,4 @@ Adobe 建议使用抽象的付款方式。这样做可使浏览器客户端与�
 
 ## 16. 如何申请 I/O Runtime 试用许可证？
 
-您可以在[此处](https://adobeio.typeform.com/to/obqgRm)申请使用 I/O Runtime 的试用许可证。
+有关请求试用许可证以使用I/O运行时的详细信息，请参阅[获取访问权限](https://developer.adobe.com/runtime/docs/guides/overview/getting_access/)。

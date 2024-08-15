@@ -9,10 +9,10 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1257'
-ht-degree: 39%
+source-wordcount: '1264'
+ht-degree: 38%
 
 ---
 
@@ -112,7 +112,7 @@ GITHUB上的代码
 * 通过实施 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 界面来实施自定义谓词。
 * 指定谓词的名称，并在使用 `pathbrowser` 时引用该名称。
 
-有关创建自定义谓词的详细信息，请参阅[本文](/help/sites-developing/implementing-custom-predicate-evaluator.md)。
+有关创建自定义谓词的详细信息，请参阅[为查询生成器实施自定义谓词计算器](/help/sites-developing/implementing-custom-predicate-evaluator.md)。
 
 >[!NOTE]
 >

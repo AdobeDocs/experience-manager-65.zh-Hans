@@ -10,9 +10,9 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eef7849464540fa3d7bb705e1be9f6e0cf1c8cff
+source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5744'
+source-wordcount: '5743'
 ht-degree: 2%
 
 ---
@@ -507,7 +507,7 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 
 ### 修订清理 {#revision-clean-up}
 
-有关执行修订清理的详细信息，[请参阅此专用文章](/help/sites-deploying/revision-cleanup.md)。
+有关详细信息，请参阅[修订清理](/help/sites-deploying/revision-cleanup.md)。
 
 ### Lucene 二进制文件清理 {#lucene-binaries-cleanup}
 
@@ -522,7 +522,7 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 
 ### 数据存储垃圾回收 {#data-store-garbage-collection}
 
-有关数据存储垃圾收集的详细信息，请参阅专用的[文档页面](/help/sites-administering/data-store-garbage-collection.md)。
+有关数据存储垃圾收集的详细信息，请参阅专用的[数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md)文档页面。
 
 ### 工作流清除 {#workflow-purge}
 
@@ -533,7 +533,7 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 
 >[!NOTE]
 >
->有关工作流维护的详细信息，请参阅[此页面](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)。
+>有关工作流维护的详细信息，请参阅[管理工作流实例](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances)。
 
 ### 审核日志维护 {#audit-log-maintenance}
 

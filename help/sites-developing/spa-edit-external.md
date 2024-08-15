@@ -5,7 +5,7 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2391'
 ht-degree: 0%
@@ -363,7 +363,7 @@ JCR](assets/container-jcr-structure.png)中的![容器位置
 
 ## 框架限制 {#framework-limitations}
 
-RemotePage组件希望该实施提供类似于此处](https://github.com/shellscape/webpack-manifest-plugin)所提供的[的资源清单。 但是，RemotePage组件仅经过测试可用于React框架（和通过remote-page-next组件的Next.js），因此不支持从其他框架(如Angular)远程加载应用程序。
+RemotePage组件希望该实施提供资产清单，如GitHub](https://github.com/shellscape/webpack-manifest-plugin)上的[webpack-manifest-plugin。 但是，RemotePage组件仅经过测试可用于React框架（和通过remote-page-next组件的Next.js），因此不支持从其他框架(如Angular)远程加载应用程序。
 
 ## 其他资源 {#additional-resources}
 

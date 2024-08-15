@@ -10,9 +10,9 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1754'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -379,7 +379,7 @@ eventdata.events.milestoneXX
 
    ![lseconds](assets/lseconds.png)
 
-   *该调用类似于上面的“旧版里程碑”调用。 查看在该处提供的pev3 **[的信息](/help/sites-administering/adobeanalytics.md)**。*
+   *该调用类似于上面的“旧版里程碑”调用。 查看[与Adobe Analytics集成](/help/sites-administering/adobeanalytics.md)下提供的有关pev3的信息。*
 
 本教程中使用的&#x200B;**引用：**
 

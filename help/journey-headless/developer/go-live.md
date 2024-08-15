@@ -5,7 +5,7 @@ exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '1803'
 ht-degree: 53%
@@ -154,7 +154,7 @@ Node.js是用于处理AEM项目`ui.frontend`子项目的前端资源的JavaScrip
 
 <!-- Cannot find a parallel link -->
 <!--
-You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively [here](/help/implementing/deploying/overview.md).
+You can start deploying your code by using the Cloud Manager CI/CD pipeline, which is covered extensively - see the [Overview](/help/implementing/deploying/overview.md) to start.
 -->
 
 ## 性能监控 {#performance-monitoring}

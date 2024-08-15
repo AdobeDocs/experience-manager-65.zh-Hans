@@ -9,9 +9,9 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2635'
+source-wordcount: '2642'
 ht-degree: 0%
 
 ---
@@ -120,7 +120,7 @@ REST（Representational State Transfer，表示状态转移）是指万维网所
 
 **创作实例** — 通常，出于安全、管理和其他原因，生产站点会将AEM的实例划分为创作实例和Publish实例。 有关部署架构(包括创作/Publish实例)的更多信息，请参阅有关AEM实例的文档。
 
-**缓存、煎炸和烘烤** — 传统上，烘烤和煎炸的概念是不同的Web内容管理系统之间的重要区别。 在CMS行话中，“烘烤”是指在发布时将数据提交到静态文件的概念，而“油炸”是指在请求时处理数据以供最终呈现（即在即时）的概念。
+**缓存、煎炸和烘烤** — 传统上，烘烤和煎炸的概念是不同的Web内容管理系统之间的重要区别。 在CMS行话中，“烘烤”是指在发布时将数据提交到静态文件的概念，而“烘烤”是指在请求时处理数据以最终呈现（即在即及时）的概念。
 
 **群集和负载平衡** — 为了提高可用性并改善生产环境的性能，通常将多个Author和/或Publish实例（合并到群集中）组合在一起，方法是将这些实例提供给不同的用户组使用，或在Dispatcher配置之后对其进行负载平衡。
 
@@ -142,7 +142,7 @@ REST（Representational State Transfer，表示状态转移）是指万维网所
 
 JCR具有多种预定义的节点类型和属性类型，但通常打字系统比较灵活，而且（事实上） JCR的优点之一就是它允许同等轻松地存储/管理结构化和非结构化内容。 也就是说，JCR可以适应高度结构化的数据，但它也可以适应任意的动态数据结构，而无需架构约束。
 
-JCR的Java™ API的JavaDoc位于[此处](https://jackrabbit.apache.org/jcr/jcr-api.html)。
+适用于JCR的Java™ API的JavaDoc可从[Apache Software Foundation - JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html)获得。
 
 在尝试读取JavaDoc或JCR规范本身之前，您可能需要查看由AdobeExperience Services实现的JCR的[高级说明](/help/sites-developing/the-basics.md#java-content-repository)。
 

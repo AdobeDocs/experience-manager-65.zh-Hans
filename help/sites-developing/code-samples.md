@@ -9,10 +9,10 @@ exl-id: d77e9e39-6117-4d09-b34b-a97ab347397e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '140'
-ht-degree: 5%
+source-wordcount: '147'
+ht-degree: 4%
 
 ---
 
@@ -22,9 +22,9 @@ Adobe Consulting服务团队已生成一系列Adobe Experience Manager (AEM)代�
 
 专为不熟悉AEM的开发人员设计的多部分教程，涵盖项目设置、核心组件、可编辑模板、客户端库和组件开发等基本主题：[AEM Sites快速入门 — WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
 
-[此处](https://github.com/adobe/aem-project-archetype)提供了创建AEM项目作为开发您自己的功能起点的Maven模板。
+[在GitHub上提供了一个用于创建AEM项目作为开发您自己的功能起点的Maven模板 — AEM项目原型](https://github.com/adobe/aem-project-archetype)。
 
-[此处](/help/sites-developing/developing-components.md)提供了支持触屏操作的标准UI代码示例。
+[正在开发AEM组件](/help/sites-developing/developing-components.md)中提供了标准的触屏UI代码示例。
 
 >[!NOTE]
 >

@@ -9,9 +9,9 @@ exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '998'
 ht-degree: 5%
 
 ---
@@ -68,7 +68,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 `"aem-clientlib-generator": "^1.4.1",`
 
-有关它的更多详细信息，可在[上的GitHub上找到此处](https://github.com/wcm-io-frontend/aem-clientlib-generator)。
+有关[aem-clientlib-generator的更多详细信息可在GitHub](https://github.com/wcm-io-frontend/aem-clientlib-generator)上找到。
 
 >[!CAUTION]
 >

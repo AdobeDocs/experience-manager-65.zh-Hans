@@ -10,7 +10,7 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
 source-wordcount: '2959'
 ht-degree: 1%
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->还提供了[Open Web Application Security Project (OWASP)](https://owasp.org/www-project-top-ten/)发布的最危险安全威胁的详细信息。
+>此外，还提供了有关[Open Web Application Security Project (OWASP)](https://owasp.org/www-project-top-ten/)发布的最危险安全威胁的更多信息。
 
 >[!NOTE]
 >
@@ -339,7 +339,7 @@ Sling以&#x200B;*内容为中心*。 处理侧重于内容，因为每个(HTTP)�
 
 默认的资源下载servlet允许经过身份验证的用户发出任意大小的并发下载请求，以创建资源的ZIP文件。 创建大型ZIP存档可能会导致服务器和网络过载。 为了降低由此行为导致的潜在拒绝服务(DoS)风险，[!DNL Experience Manager]发布实例上的`AssetDownloadServlet` OSGi组件默认处于禁用状态。 默认情况下在[!DNL Experience Manager]创作实例上启用它。
 
-如果您不需要下载功能，请在创作和发布部署中禁用servlet。 如果您的安装程序要求启用资产下载功能，请参阅[本文](/help/assets/download-assets-from-aem.md)以了解更多信息。 此外，您还可以定义部署可以支持的最大下载限制。
+如果您不需要下载功能，请在创作和发布部署中禁用servlet。 如果您的安装程序要求启用资源下载功能，请参阅[从AdobeExperience Manager下载资源](/help/assets/download-assets-from-aem.md)以了解更多信息。 此外，您还可以定义部署可以支持的最大下载限制。
 
 ### 禁用WebDAV {#disable-webdav}
 
@@ -395,7 +395,7 @@ Sling以&#x200B;*内容为中心*。 处理侧重于内容，因为每个(HTTP)�
 
 与所有存储库数据一样，这些属性也由Oak授权栈栈来调节。 应根据最小特权原则限制对他们的访问。
 
-为了支持这一点，Adobe提供了权限强化包，作为客户可以在此基础上进行构建的基础。 它的工作方式是在存储库根目录下安装“拒绝”访问控制条目，限制对常用系统属性的匿名访问。 包可在[此处](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip)下载，并可安装在所有受支持的AEM版本上。
+为了支持这一点，Adobe提供了权限强化包，作为客户可以在此基础上进行构建的基础。 它的工作方式是在存储库根目录下安装“拒绝”访问控制条目，限制对常用系统属性的匿名访问。 软件包可以[下载](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip)并安装在所有受支持的AEM版本上。
 
 为了说明这些更改，我们可以比较在安装包之前可以匿名查看的节点属性：
 
