@@ -9,20 +9,24 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
 workflow-type: tm+mt
-source-wordcount: '1520'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
 
 # 在AEM表单中启用单点登录{#enabling-single-sign-on-in-aem-forms}
 
-AEM forms提供了两种启用单点登录(SSO)的方法 — HTTP标头和SPNEGO。
+AEM表单提供两种启用单点登录(SSO)的方法 — HTTP标头和SPNEGO。
 
 实施SSO时，AEM Forms用户登录页面不是必需的，并且如果用户已经通过其公司门户进行了身份验证，则不会显示。
 
 如果AEM Forms无法使用其中任一方法验证用户，则会将用户重定向到登录页面。
+
+* [使用HTTP标头启用SSO](#enable-sso-using-http-headers)
+* [使用SPNEGO启用SSO](#enable-sso-using-spnego)
+* [将角色分配给用户和组](#assign-roles-to-users-groups)
 
 ## 使用HTTP标头启用SSO {#enable-sso-using-http-headers}
 
@@ -51,6 +55,10 @@ AEM forms提供了两种启用单点登录(SSO)的方法 — HTTP标头和SPNEGO
 ### 配置允许的引用 {#configure-allowed-referers}
 
 有关配置允许的引用程序的步骤，请参阅[配置允许的引用程序](/help/forms/using/admin-help/preventing-csrf-attacks.md#configure-allowed-referers)。
+
+### 将角色分配给用户和组
+
+单击了解将角色[分配给用户和组](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)的步骤。
 
 ## 使用SPNEGO启用SSO {#enable-sso-using-spnego}
 
@@ -167,3 +175,21 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
    `lcserver.um.lc.com` — 将Firefox配置为仅允许特定服务器的SPNEGO。 此值不能以点(“。”)开头。
 
 1. 通过访问应用程序测试配置。 此时应会显示目标应用程序的欢迎页面。
+
+单击了解将角色[分配给用户和组](/help/forms/using/admin-help/enabling-single-sign-on-aem.md#assign-roles-to-users-and-groups-assign-roles-to-users-groups)的步骤。
+
+## 将角色分配给用户和组 {#assign-roles-to-users-groups}
+
+1. 在JEE环境中登录到您的AEM Forms 。
+1. 在管理控制台中，单击设置>用户管理>域管理。
+1. 选择您的域配置，例如LDAP ，然后单击它。 您可以在“目录”中找到所有已创建的用户和组。 如果需要，您可以创建新用户或组。
+   ![域管理页](/help/forms/using/assets/domain-mgmt-page.png)
+1. 单击验证，在新页上选择一个验证提供程序，如LDAP。
+1. 导航到“域管理”页，选择LDAP，然后单击&#x200B;**立即同步**以将目录与您配置的身份验证方案同步，以便访问AEM。
+   ![同步ldap](/help/forms/using/assets/sync-ldap.png)
+1. 转到“用户管理”，然后单击“用户和组”。
+1. 搜索具有其名称的用户或组，如下图所示。
+   ![搜索用户组](/help/forms/using/assets/search-user-group.png)
+1. 根据需要将角色分配给用户或组。
+   ![用户角色分配](/help/forms/using/assets/user-role-assign.png)
+
