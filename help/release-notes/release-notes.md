@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: a52311b9-ed7a-432e-8f35-d045c0d8ea4c
-source-git-commit: 447ff116c822c7ab0d5826103d6485e7d4ed13ce
+source-git-commit: 1fa3a56d2868cad0e1b54bf3fe1b018061b4b7a8
 workflow-type: tm+mt
-source-wordcount: '4390'
+source-wordcount: '4394'
 ht-degree: 2%
 
 ---
@@ -384,7 +384,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 >[!NOTE]
 >
->在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
+>在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/zh-hans/docs/ experience-manager-65/content/implementing/deploying/deploying/deploy)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
 
 ### 安装用于Experience Manager内容片段的GraphQL索引包{#install-aem-graphql-index-add-on-package}
 
@@ -544,7 +544,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 * 升级到AEM Forms Service Pack 6.5.21.0后，`PaperCapture`服务无法对PDF执行OCR（光学字符识别）操作。 该服务不会以PDF或日志文件的形式生成输出。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (CQDOC-21680)
 
-* 当用户从AEM 6.5 Forms Service Pack 18 (6.5.18.0)或AEM 6.5 Forms Service Pack 19 (6.5.19.0)更新到AEM 6.5 Forms Service Pack 20 (6.5.20.0)或AEM 6.5 Forms Service Pack 21 (6.5.21.0)时，用户会遇到JSP编译错误，这会阻止用户打开或创建自适应表单，还会导致页面编辑器、AEM Forms UI和AEM工作流编辑器等其他AEM界面出错。 (FORMS-15256)
+* 当用户从AEM 6.5 Forms Service Pack 18 (6.5.18.0)或AEM 6.5 Forms Service Pack 19 (6.5.19.0)更新到AEM 6.5 Forms Service Pack 20 (6.5.20.0)或AEM 6.5 Forms Service Pack 21 (6.5.21.0)时，用户会遇到JSP编译错误，这会阻止用户打开或创建自适应表单，并导致其他AEM界面(如页面编辑器、AEM Forms UI、AEM工作流编辑器和AEM系统概述UI)出错。 (FORMS-15256)
 
   如果您遇到此类问题，请执行以下步骤来解决此问题：
    1. 导航到CRXDE中的目录`/libs/fd/aemforms/install/`。
