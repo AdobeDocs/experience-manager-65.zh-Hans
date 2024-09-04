@@ -9,7 +9,7 @@ exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 2%
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Dynamic Media提供交互式查看体验，包括缩放、360度旋转和视频。 Dynamic Media独特地整合了Adobe Experience Manager数字资产管理(Assets)解决方案的工作流，以简化和简化数字营销活动管理流程。
 
-经典UI中不提供使用Dynamic Media的功能。 请参阅[使用Dynamic Media，](/help/assets/dynamic-media.md)，其中涵盖了触控式用户界面。
+经典UI中不提供使用Dynamic Media的功能。 请参阅[使用Dynamic Media](/help/assets/dynamic-media.md)，其中包含支持触屏的用户界面。
 
 >[!NOTE]
 >

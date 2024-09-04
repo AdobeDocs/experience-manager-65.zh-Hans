@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
+source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
 workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 20%
@@ -337,7 +337,7 @@ ht-degree: 20%
          + [将Dynamic Media Assets添加到页面](/help/sites-classic-ui-authoring/dynamic-media-assets-adding-to-page.md)
          + [将Scene7功能添加到您的页面](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
          + [视频](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
-         + [使用Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
+         + [使用 Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [资产测试的命名约定](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 + 资源 {#assets}
    + [关于DAM](/help/assets/assets.md)
