@@ -6,7 +6,7 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: ab8248e9d0df67bed3c2d5ad3fadce08db2e9ba0
+source-git-commit: ca896466072225cc57d7c0c4f008294cc60f7b94
 workflow-type: tm+mt
 source-wordcount: '7448'
 ht-degree: 20%
@@ -512,7 +512,7 @@ ht-degree: 20%
       + [自适应表单创作简介](/help/forms/using/introduction-forms-authoring.md)
       + [交互式通信简介](/help/forms/using/interactive-communications-overview.md)
       + [管理表单简介](/help/forms/using/introduction-managing-forms.md)
-      + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-Hans)
+      + [自动化表单转换服务简介](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/introduction.html?lang=zh-hans)
       + 教程：创建您的第一个自适应表单{#create-first-adaptive-form}
          + [教程：创建您的第一个自适应表单](/help/forms/using/create-your-first-adaptive-form.md)
          + [教程：创建自适应表单](/help/forms/using/create-adaptive-form.md)
@@ -611,7 +611,7 @@ ht-degree: 20%
       + [AEM Forms数据集成简介](/help/forms/using/data-integration.md)
       + [配置数据源](/help/forms/using/configure-data-sources.md)
       + [Microsoft Dynamics Odata配置](/help/forms/using/ms-dynamics-odata-configuration.md)
-      + [使用OAuth 2.0客户端凭据流授权的Salesforce集成](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+      + [Salesforce集成使用OAuth 2.0客户端凭据流授权](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
       + [创建表单数据模型](/help/forms/using/create-form-data-models.md)
       + [使用表单数据模型](/help/forms/using/work-with-form-data-model.md)
       + [使用表单数据模型](/help/forms/using/using-form-data-model.md)
@@ -620,7 +620,6 @@ ht-degree: 20%
       + [创建基于核心组件的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)
       + [在自适应表单中创建和使用自适应Forms片段](/help/forms/using/adaptive-form-fragment-core-components.md)
       + [为基于核心组件的自适应Forms创建主题](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
-      + [在自适应表单中创建和使用自定义函数](/help/forms/using/create-and-use-custom-functions.md)
       + [规则编辑器](/help/forms/using/rule-editor-core-components.md)
       + [在自适应表单核心组件中创建和使用自定义函数](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [为基于核心组件的自适应Forms创建和使用自定义错误处理程序](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
@@ -677,6 +676,7 @@ ht-degree: 20%
       + [将Adobe Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [在表单中创建和管理资产审核](/help/forms/using/create-reviews-forms.md)
       + [在AEM Sites单页应用程序中嵌入自适应表单或交互式通信](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
+      + [在自适应表单中创建和使用自定义函数](/help/forms/using/create-and-use-custom-functions.md)
       + [创建并使用自适应Forms的自定义错误处理程序](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
    + 交互式通信{#interactive-communications}
       + [交互式通信创作UI简介](/help/forms/using/introduction-interactive-communication-authoring.md)
@@ -1019,7 +1019,7 @@ ht-degree: 20%
          + [指定XCI配置选项](/help/forms/using/admin-help/specify-xci-configuration-options.md)
          + [配置输出的缓存](/help/forms/using/admin-help/configuring-caching-output.md)
          + [指定输出的文件位置](/help/forms/using/admin-help/specify-file-locations-output.md)
-         + [使字体可用](/help/forms/using/admin-help/make-fonts-available.md)
+         + [提供字体](/help/forms/using/admin-help/make-fonts-available.md)
          + [指定要嵌入的字体](/help/forms/using/admin-help/specify-fonts-embed.md)
          + [指定安全设置](/help/forms/using/admin-help/specify-security-settings.md)
          + [更改字符集](/help/forms/using/admin-help/change-character-set.md)
@@ -1231,7 +1231,7 @@ ht-degree: 20%
          + [配置 SEO 的 URL](/help/commerce/cif/configuring/advanced-url-configuration.md)
          + [缓存选项](/help/commerce/cif/configuring/caching.md)
          + [自定义 HTTP 标头](/help/commerce/cif/configuring/custom-http-headers.md)
-         + [购物车和Dispatcher设置](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
+         + [购物车和 Dispatcher 设置](/help/commerce/cif/configuring/shopping-cart-dispatcher.md)
       + 开发 {#developing}
          + [使用AEM进行开发](/help/commerce/cif/develop.md)
          + [设置 CIF 组件的样式](/help/commerce/cif/customizing/style-cif-component.md)
@@ -1347,7 +1347,7 @@ ht-degree: 20%
          + [开发批量编辑器](/help/sites-developing/dev-bulk-editor.md)
          + [开发报告](/help/sites-developing/dev-reports.md)
       + 组件{#components}
-         + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+         + [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)
          + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/style-system.html)
          + [组件概述](/help/sites-developing/components.md)
          + [AEM组件 — 基础知识](/help/sites-developing/components-basics.md)
