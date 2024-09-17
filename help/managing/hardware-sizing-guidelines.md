@@ -5,9 +5,9 @@ exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9eeba0532a9eddb668b8488218c0570ca2241439
+source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
 workflow-type: tm+mt
-source-wordcount: '1367'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -89,8 +89,6 @@ ht-degree: 0%
 * 随着时间的推移，内容的总体增长
 
 在“联机”和“脱机”版本清理期间，会持续监视磁盘空间。 如果可用磁盘空间下降到临界值以下，则该过程将取消。 关键值是存储库当前磁盘占用空间的25%，无法对其进行配置。 Adobe建议磁盘大小至少比存储库大小（包括预计增长量）大两到三倍。
-
-考虑设置独立磁盘冗余阵列（例如RAID10）以实现数据冗余。
 
 ### 虚拟化 {#virtualization}
 
