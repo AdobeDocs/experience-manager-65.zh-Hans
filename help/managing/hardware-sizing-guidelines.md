@@ -1,18 +1,13 @@
 ---
 title: 硬件大小调整准则
 description: 这些大小调整指南提供了部署AEM项目所需硬件资源的大致情况。
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/MANAGING
-topic-tags: managing
-content-type: reference
-docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 9eeba0532a9eddb668b8488218c0570ca2241439
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '1367'
 ht-degree: 0%
 
 ---
@@ -84,7 +79,7 @@ ht-degree: 0%
 * 广泛使用自定义代码、自定义工作流或第三方软件库
 * 与不受支持的外部系统集成
 
-### 磁盘空间/硬盘 {#disk-space-hard-drive}
+## 磁盘空间/硬盘 {#disk-space-hard-drive}
 
 所需的磁盘空间在很大程度上取决于Web应用程序的卷和类型。 计算时应考虑以下因素：
 
@@ -97,15 +92,11 @@ ht-degree: 0%
 
 考虑设置独立磁盘冗余阵列（例如RAID10）以实现数据冗余。
 
->[!NOTE]
->
->生产实例的临时目录应至少具有6 GB可用空间。
-
-#### 虚拟化 {#virtualization}
+### 虚拟化 {#virtualization}
 
 AEM在虚拟化环境中运行良好，但可能存在CPU或I/O等无法直接等同于物理硬件的因素。 建议选择更高的I/O速度（通常），因为这是关键因素。 设定环境基准对于准确了解所需资源是必不可少的。
 
-#### AEM实例的并行化 {#parallelization-of-aem-instances}
+### AEM实例的并行化 {#parallelization-of-aem-instances}
 
 **安全失败**
 
@@ -118,175 +109,17 @@ AEM在虚拟化环境中运行良好，但可能存在CPU或I/O等无法直接�
 根据特定Web项目的基本要求和具体用例，估计需要多少簇节点：
 
 * 从故障安全的角度来看，必须根据群集节点恢复所需的时间来确定所有环境的严重故障程度以及故障补偿时间。
-* 在可伸缩性方面，写操作的数量基本上是最重要的因素；请参阅创作环境的[作者并行工作](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel)和发布环境的[社交Collaboration](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations)。 可以为仅访问系统的操作建立负载平衡，以处理读取操作；有关详细信息，请参阅[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
-
-## 创作环境特定的计算 {#author-environment-specific-calculations}
-
-为了进行基准测试，Adobe开发了一些用于独立创作实例的基准测试。
-
-* **基准测试1**
-计算某个加载配置文件的最大吞吐量，在该配置文件中，用户在300个具有类似性质的现有页面的基础负载之上执行简单的创建页面练习。 所涉及的步骤包括：登录网站，创建包含SWF和图像/文本的页面，添加标记云，然后激活页面。
-
-   * **结果**
-如上所述的简单页面创建操作的最大吞吐量（被视为一个事务）为每小时1730个事务。
-
-* **基准测试2**
-当加载配置文件混用创建新页面(10%)、修改现有页面(80%)以及连续创建和修改页面(10%)时，计算最大吞吐量。 页面的复杂性与基准测试1的配置文件中相同。 页面的基本修改是通过添加图像和修改文本内容来完成的。 同样，该练习是在基准测试1中定义的具有相同复杂性的300页基础负载的基础上执行的。
-
-   * **结果**
-发现此类混合操作场景的最大吞吐量为每小时3252个事务。
-
->[!NOTE]
->
->吞吐率不区分负载配置文件中的事务类型。 用于测量吞吐量的方法确保每个事务类型的固定比例包含在工作负载中。
-
-以上两个测试清楚地表明，吞吐率随操作类型而变化。 使用环境上的活动作为调整系统大小的基础。 通过诸如修改之类的不太密集的操作（这也是比较常见的），可以获得更好的吞吐量。
-
-### 缓存 {#caching}
-
-在创作环境中，缓存效率通常要低得多，因为对网站的更改更频繁，并且内容高度交互性和个性化。 使用Dispatcher，您可以缓存AEM库、JavaScript、CSS文件和布局图像。 这样可以加快创作过程的某些方面。 通过配置Web服务器，还可以在这些资源上设置用于浏览器缓存的标头，从而减少HTTP请求的数量，从而提高系统响应速度，就像作者所体验的那样。
-
-### 作者并行工作 {#authors-working-in-parallel}
-
-在作者环境中，并行工作的作者数量和他们交互作用添加到系统的负载是主要限制因素。 因此，Adobe建议您根据共享数据吞吐量来扩展系统。
-
-对于这种情况，Adobe在创作实例的双节点无共享集群上运行基准测试。
-
-* **基准测试1a**
-使用包含2个创作实例的active-active shared-nothing集群，使用负载配置文件计算最大吞吐量，其中用户在300个现有页面（所有页面都具有类似性质）的基本负载的基础上执行简单的创建页面练习。
-
-   * **结果**
-一个简单的页面创建练习（如上面所述，被视为一个事务）的最大吞吐量为每小时2016个事务。 与同一基准测试的独立创作实例相比，大约提高了16%。
-
-* **基准测试2b**
-使用2个创作实例的active-active shared-nothing集群，计算当加载配置文件混合创建新页面创建(10%)、修改现有页面(80%)以及连续创建和修改页面(10%)时的最大吞吐量。 页面的复杂性与基准测试1的配置文件中相同。 页面的基本修改是通过添加图像和修改文本内容来完成的。 同样，该练习是在具有300个复杂度的基本负载之上执行的，这些复杂度的定义与基准测试1中的定义相同。
-
-   * **结果**
-发现这种混合操作方案的最大吞吐量为每小时6288个事务。 与同一基准测试的独立创作实例相比，大约提高了93%。
-
->[!NOTE]
->
->吞吐率不区分负载配置文件中的事务类型。 用于测量吞吐量的方法确保每个事务类型的固定比例包含在工作负载中。
-
-以上两项测试清楚地表明，对于使用AEM执行基本编辑操作的作者，AEM可以很好地扩展。 通常，AEM在缩放读取操作方面最有效。
-
-在典型的网站上，大多数创作都是在项目阶段进行的。 网站上线后，并行工作的作者数量通常降至较低（操作模式）的平均值。
-
-您可以按如下方式计算创作环境所需的计算机（或CPU）数量：
-
-`n = numberOfParallelAuthors / 30`
-
-当作者使用AEM执行基本操作时，此公式可用作缩放CPU的常规准则。 它假定系统和应用程序已优化。 但是，公式对MSM或Assets等高级功能无效（请参阅以下部分）。
-
-另请参阅[并行化](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances)和[性能优化](/help/sites-deploying/configuring-performance.md)。
+* 在可扩展性方面，写操作次数基本上是最重要的因素。 可以为仅访问系统的操作建立负载平衡，以处理读取操作；有关详细信息，请参阅[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)。
 
 ### 硬件Recommendations {#hardware-recommendations}
 
 通常，您可以按照为发布环境推荐的方式，对创作环境使用相同的硬件。 通常，创作系统上的网站流量较低，但缓存效率也较低。 但是，这里的基本因素是并行工作的作者数量以及对系统采取的操作类型。 一般来说，（创作环境的）AEM聚类在缩放读取操作方面最有效；换句话说，AEM聚类与执行基本编辑操作的作者一起缩放效果较好。
 
-Adobe时的基准测试是使用Red Hat® 5.5操作系统进行的，该操作系统运行于Hewlett-Packard ProLiant DL380 G5硬件平台，具有以下配置：
-
-* 两个四核英特尔至强® X5450 CPU，3.00 GHz
-* 8 GB RAM
-* Broadcom NetXtreme II BCM5708千兆以太网
-* HP智能阵列RAID控制器，256 MB高速缓存
-* 两个146 GB 10,000-RPM SAS磁盘配置为RAID0条带集
-* SPEC CINT2006费率基准得分是110
-
-AEM实例运行时的最小栈大小为256M，最大栈大小为1024M。
-
-## Publish环境特定的计算 {#publish-environment-specific-calculations}
-
-### 缓存效率和流量 {#caching-efficiency-and-traffic}
-
-缓存效率对于网站运行速度至关重要。 下表显示了优化的AEM系统每秒可以使用反向代理(例如Dispatcher)处理的页面数：
-
-| 缓存比率 | 页数/秒（峰值） | 百万页/天（平均） |
-|---|---|---|
-| 100% | 1000-2000 | 35-70 |
-| 99% | 910 | 32 |
-| 95% | 690 | 25 |
-| 90% | 520 | 18 |
-| 60% | 220 | 8 |
-| 0% | 100 | 3.5 |
-
->[!CAUTION]
->
->免责声明：这些数字基于默认硬件配置，可能会因使用的特定硬件而异。
-
-缓存比率是Dispatcher无需访问AEM即可返回的页面百分比。 100%表示Dispatcher响应所有请求，0%表示AEM计算每个页面。
-
-### 模板和应用程序的复杂性 {#complexity-of-templates-and-applications}
-
-如果您使用复杂的模板，AEM需要更多时间来渲染页面。 从缓存中获取的页面不受此影响，但在考虑整体响应时间时，页面大小仍然相关。 渲染复杂页面所花费的时间很容易比渲染简单页面多十倍。
-
-### 公式 {#formula}
-
-使用以下公式，您可以计算AEM解决方案总体复杂性的估计值：
-
-`complexity = applicationComplexity + ((1-cacheRatio) * templateComplexity)`
-
-根据复杂性，您可以确定发布环境所需的服务器（或CPU内核）数量，如下所示：
-
-`n = (traffic * complexity / 1000 ) * activations`
-
-此方程式中的变量如下：
-
-<table>
- <tbody>
-  <tr>
-   <td>流量</td>
-   <td>预计的每秒峰值流量。 您可以将其估计为每日页面点击数除以35,000。</td>
-  </tr>
-  <tr>
-   <td>应用程序复杂性</td>
-   <td><p>对于简单应用程序，请使用1；对于复杂应用程序，请使用2；对于中间值，请使用：</p>
-    <ul>
-     <li>1 — 完全匿名、以内容为导向的网站</li>
-     <li>1.1 — 完全匿名、以内容为导向的站点，具有客户端/Target个性化</li>
-     <li>1.5 — 面向内容的网站，具有匿名部分和登录部分，客户端/Target个性化</li>
-     <li>1.7 — 面向内容的网站，具有匿名登录部分、客户端/Target个性化以及一些用户生成的内容</li>
-     <li>2 — 当整个站点需要登录时，广泛使用用户生成的内容和各种个性化技术</li>
-    </ul> </td>
-  </tr>
-  <tr>
-   <td>cacheRatio</td>
-   <td>从Dispatcher缓存中传出的页面的百分比。 如果所有页面都来自缓存，则使用1；如果每个页面都由AEM计算，则使用0。</td>
-  </tr>
-  <tr>
-   <td>templateComplex</td>
-   <td>使用1到10之间的值表示模板的复杂性。 数字越大表示模板越复杂，值1表示每页平均包含10个组件的网站，值5表示平均包含40个组件的页面，值10表示平均包含100多个组件的网站。</td>
-  </tr>
-  <tr>
-   <td>激活次数</td>
-   <td>每小时的平均激活次数（平均大小页面和资产从创作层到发布层的复制）除以x，其中x是在系统上完成的激活次数，对系统处理的其他任务没有性能负面影响。 您还可以预定义悲观初始值，如x = 100。<br /> </td>
-  </tr>
- </tbody>
-</table>
-
-如果您拥有更复杂的网站，那么还需要功能更强大的Web服务器，以便AEM能够在可接受的时间内响应请求。
-
-* 复杂性低于4：
-   * 1024 MB JVM RAM&#42;
-   * 中低性能CPU
-
-* 复杂性从4到8：
-   * 2048 MB JVM RAM&#42;
-   * 中高性能CPU
-
-* 复杂性高于8：
-   * 4096 MB JVM RAM&#42;
-   * 高端到高端性能CPU
-
->[!NOTE]
->
->&#42;为操作系统保留足够的RAM以及JVM所需的内存。
-
 ## 其他特定于用例的计算 {#additional-use-case-specific-calculations}
 
 除了计算默认Web应用程序外，还请考虑以下用例的特定因素。 计算值将添加到默认计算中。
 
-### 特定于Assets的注意事项 {#assets-specific-considerations}
+### Assets特定的注意事项 {#assets-specific-considerations}
 
 广泛处理数字资产需要优化的硬件资源，最相关的因素是图像大小和已处理图像的峰值吞吐量。
 
@@ -294,13 +127,13 @@ AEM实例运行时的最小栈大小为256M，最大栈大小为1024M。
 
 >[!NOTE]
 >
-较高的图像吞吐量意味着计算资源必须能够跟上系统I/O的速度，反之亦然。 例如，如果通过导入图像来启动工作流，则通过WebDAV上传许多图像可能会导致工作流积压。
+>较高的图像吞吐量意味着计算资源必须能够跟上系统I/O的速度，反之亦然。 例如，如果通过导入图像来启动工作流，则通过WebDAV上传许多图像可能会导致工作流积压。
 >
-为TarPM、数据存储和搜索索引使用单独的磁盘有助于优化系统I/O行为（但是，通常将搜索索引保留在本地是有意义的）。
+>为TarPM、数据存储和搜索索引使用单独的磁盘有助于优化系统I/O行为（但是，通常将搜索索引保留在本地是有意义的）。
 
 >[!NOTE]
 >
-另请参阅[Assets性能指南](/help/sites-deploying/assets-performance-sizing.md)。
+>另请参阅[Assets性能指南](/help/sites-deploying/assets-performance-sizing.md)。
 
 ### 多站点管理器 {#multi-site-manager}
 
