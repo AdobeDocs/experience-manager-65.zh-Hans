@@ -8,9 +8,9 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 60414285277281d9b1e0c9d93ddf04bc267fd0fb
 workflow-type: tm+mt
-source-wordcount: '6409'
+source-wordcount: '6388'
 ht-degree: 1%
 
 ---
@@ -5069,24 +5069,26 @@ File createPDF(File inputFile, String inputFilename, String pdfSettings, String 
 
 ![自动标记的PDF文档](assets/auto-tag-api.png)
 
-**语法**： `tag(Document inDoc)`
+<!--
 
-**输入参数**
+**Syntax**: `tag(Document inDoc)`
+
+**Input Parameters**
 
 <table>
  <tbody>
   <tr>
-   <th>参数</th>
-   <th>描述</th>
+   <th>Parameters</th>
+   <th>Description</th>
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>包含PDF的文档对象。<br /> </td>
+   <td>Document object containing PDF.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-以下Java代码使用列表和段落标记PDF文档。
+The following Java code tags the PDF document with lists and paragraphs.
 
 ```java
 /*************************************************************************
@@ -5167,4 +5169,6 @@ StructLib.AutoTagDoc(outDoc);
 }
         return outDoc;
 }
+
 ```
+-->
