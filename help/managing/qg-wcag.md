@@ -5,10 +5,10 @@ exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
 workflow-type: tm+mt
-source-wordcount: '1734'
-ht-degree: 92%
+source-wordcount: '1744'
+ht-degree: 90%
 
 ---
 
@@ -24,7 +24,9 @@ Adobe Experience Manager (AEM)的开发旨在最大限度地符合Web内容无�
 
 >[!NOTE]
 >
->目前正在开发[该指南的更新版本 - WCAG 2.2](https://www.w3.org/TR/WCAG22/)，但此时不予考虑更新事宜。
+>由于这些文档是按照指南的[更新版本编写的，因此WCAG 2.2](https://www.w3.org/TR/)已于2023年10月推出。
+>
+>请参阅[与WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1)的比较，以及[WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2)的新增功能。
 
 WCAG 2.1 包含一系列非技术层面的准则及成功标准，旨在确保残障人士能够访问并使用 Web 内容。这些准则和成功标准向Web内容作者、设计人员和开发人员提供建议，确保他们创作的资源可尽可能多地供更多人访问，而无论他们具有任何缺陷；例如，视觉障碍、听力损失、学习困难、年龄限制等。
 
