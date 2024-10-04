@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6b32cc8be4b1071099b5a31acbfb580b67d50c78
+source-git-commit: 110636c0208a23e0b088e19fe47c38f28adb9bdd
 workflow-type: tm+mt
-source-wordcount: '1977'
+source-wordcount: '1980'
 ht-degree: 18%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 18%
 >* 智能内容服务适用于已启用此功能的现有[!DNL Experience Manager Assets]个Managed Services客户。
 >* 新的Experience Manager Assets Managed Services客户可以按照本文中所述的说明设置智能内容服务。
 >* 对于Service Pack 20及更早版本，您需要为SCS执行解决步骤以支持Oauth集成。 请参阅[OAuth凭据的智能标记疑难解答](#config-smart-tagging.md)。
->* 若要支持Service Pack 21上的Oauth集成，您需要安装[修补程序](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)。
+>* 要支持Service Pack 21上的Oauth集成，您需要安装适用于SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的[修补程序。
 >* 对于现有SCS配置，此过程与设置新的OAuth集成的过程相同。 任何旧版配置都将被自动清除。
 
 在使用智能内容服务之前，请确保：
