@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6729a2dbd8c761eb1bba84d8efba7393ac686190
+source-git-commit: 7cc1722617b463fa5da5b965215cd91cc8ea8fb0
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 18%
+source-wordcount: '2193'
+ht-degree: 16%
 
 ---
 
@@ -31,6 +31,35 @@ ht-degree: 18%
 * [训练智能内容服务](#training-the-smart-content-service)。
 
 * 安装最新的[[!DNL Experience Manager] 服务包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)。
+
+## SCS升级以支持OauthAdobeManaged Services {#scs-upgrade-oauth-managed-services}
+
+**新用户**
+
+安装Service Pack 21。 要支持Service Pack 21上的Oauth集成，您需要安装适用于SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的[修补程序。
+
+按照本文中所述的说明设置智能内容服务。
+
+**现有用户**
+
+如果您已升级到Service Pack 21，请安装适用于SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的[修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。
+
+对于Service Pack 20及更早版本，您需要为SCS执行解决步骤以支持Oauth集成。 请参阅[OAuth凭据的智能标记疑难解答](config-oauth.md)。
+
+## SCS升级以支持内部部署用户的Oauth {#scs-upgrade-oauth-on-premise}
+
+**新用户**
+
+新的[!DNL Experience Manager Assets]内部部署用户无法再使用智能内容服务。
+
+**现有用户**
+
+已启用此功能的现有内部部署用户可以继续使用智能内容服务。
+
+如果您已升级到Service Pack 21，请安装适用于SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的[修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。
+
+对于Service Pack 20及更早版本，您需要为SCS执行解决步骤以支持Oauth集成。 请参阅[OAuth凭据的智能标记疑难解答](config-oauth.md)。
+
 
 ## 与Adobe Developer Console集成 {#integrate-adobe-io}
 
