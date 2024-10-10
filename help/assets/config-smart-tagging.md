@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 09f7cf283c67adcc0a14d6a3a75bfdeafc37d151
+source-git-commit: 5b4153f83d725c307e23ea10c4ea151911d4d390
 workflow-type: tm+mt
-source-wordcount: '2061'
+source-wordcount: '2062'
 ht-degree: 17%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 17%
 
 **新用户**
 
-安装Service Pack 21。 要支持Service Pack 21上的Oauth集成，您需要安装适用于SP 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的[修补程序。
+安装Service Pack 21。 要支持Service Pack 21上的Oauth集成，您需要安装适用于Service Pack 21的[修补程序](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)。
 
 按照本文中所述的说明设置智能内容服务。
 
