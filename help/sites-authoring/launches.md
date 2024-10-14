@@ -10,7 +10,7 @@ exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 81%
@@ -107,8 +107,7 @@ ht-degree: 81%
 >
 >提升页面时，将反映任何内容更改，但组件位置不会发生更改。
 
-
-### “启动项”控制台 {#the-launches-console}
+## “启动项”控制台 {#the-launches-console}
 
 “启动项”控制台提供了启动项的概览，并让您对列出的启动项执行操作。可以通过以下方式访问该控制台：
 

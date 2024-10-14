@@ -10,10 +10,10 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
 workflow-type: tm+mt
-source-wordcount: '1039'
-ht-degree: 81%
+source-wordcount: '1097'
+ht-degree: 77%
 
 ---
 
@@ -158,7 +158,16 @@ ht-degree: 81%
 
    如果选择&#x200B;**“完成”**，您将返回到&#x200B;**Sites**&#x200B;控制台的&#x200B;**引用**&#x200B;边栏，如果您选择了相应的页面，则会显示新的启动项。
 
-### 删除启动项 {#deleting-a-launch}
+### 克隆启动项 {#cloning-a-launch}
+
+您可以从[启动项控制台](/help/sites-authoring/launches.md#the-launches-console)克隆启动项：
+
+* 通过点按/单击缩略图选择相应的启动项。
+* 工具栏即会显示 — 选择“克隆”。
+   * 克隆将创建并显示在控制台中。
+   * **启动项标题**&#x200B;将指示它是克隆。 您可以通过编辑[启动项配置](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) （**属性**）来更新标题。
+
+## 删除启动项 {#deleting-a-launch}
 
 您可以从[“启动项”控制台](/help/sites-authoring/launches.md#the-launches-console)中删除启动项：
 
