@@ -5,7 +5,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 72%
@@ -31,7 +31,7 @@ ht-degree: 72%
 
 您可以使用体验片段：
 
-* 如果作者想要重用页面的各个部分（体验的片段），他们需要复制并粘贴该片段。 创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。体验片段无需复制/粘贴。
+* 如果作者希望重用页面的各个部分（体验的片段），他们需要复制并粘贴该片段。 创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。体验片段无需复制/粘贴。
 * 支持Headless CMS用例。 作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/触点会使用该体验，然后将其提供给最终用户。
 * 具有[多站点管理(MSM)](/help/sites-administering/msm.md)；作为体验片段是页面的一部分。 这同时适用于单个片段及其所在的文件夹。
 
