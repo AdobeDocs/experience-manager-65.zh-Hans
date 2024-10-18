@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2d6b0129d28dba954f9854c641386c4c2ad32765
+source-git-commit: 7fb3ec9654b56605321f0d12a4c1e23d2e18dab9
 workflow-type: tm+mt
-source-wordcount: '3323'
+source-wordcount: '3322'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 智能成像应用每个用户的独特查看特性，自动为用户提供针对其体验而优化的正确图像，从而提高性能和参与度。
 
-## 什么是“智能成像”？ {#what-is-smart-imaging}
+## 关于智能成像 {#what-is-smart-imaging}
 
 智能成像技术可应用Adobe Sensei AI功能，并与现有“图像预设”配合使用。 它致力于通过基于客户端浏览器功能自动优化图像格式、大小和质量来增强图像投放性能。
 
@@ -136,7 +136,7 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 * 以前，原始图像和派生图像都被缓存，缓存失效需要两步过程。 在最新的智能成像中，仅缓存派生项，从而允许执行单步缓存失效过程。
 * 在规则集中使用自定义标头的客户受益于最新的智能成像，因为与以前的智能成像版本不同，这些标头不会受到阻止。 例如，如[向图像响应添加自定义标头值|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建议的“计时允许来源”和“X-Robot”。
 
-## 常见问题解答 {#fag}
+## 常见问题解答
 
 +++智能成像是否有任何许可成本？
 
