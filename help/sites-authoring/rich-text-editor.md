@@ -5,7 +5,7 @@ exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 44903bc3e68f46f9880d31c33b7dc9e7598ddc38
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 32%
@@ -16,9 +16,8 @@ ht-degree: 32%
 
 富文本编辑器 (RTE) 是将文本内容插入到 AEM 中的基本构建块。它构成了各种组件的基础，包括：
 
-* 文本
-* 文本图像
-* 表
+* [文本](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [表格](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## 就地编辑 {#in-place-editing}
 
