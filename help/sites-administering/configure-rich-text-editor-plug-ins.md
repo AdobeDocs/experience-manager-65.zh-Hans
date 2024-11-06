@@ -6,7 +6,7 @@ exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
 workflow-type: tm+mt
 source-wordcount: '4391'
 ht-degree: 2%
@@ -244,7 +244,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 >[!NOTE]
 >
->在对话框（经典UI）中使用RTE时，可能需要指定针对富文本编辑优化的样式表。 由于技术限制，编辑器中的CSS上下文丢失，因此您可能希望模拟此上下文以改进WYSIWYG体验。
+>在对话框（经典UI）中使用RTE时，可能需要指定针对富文本编辑优化的样式表。 由于技术限制，编辑器中的CSS上下文将丢失，因此您可能需要模拟此上下文以改进WYSIWYG体验。
 >
 >富文本编辑器使用ID为`CQrte`的容器DOM元素，该元素可用于提供不同的样式进行查看和编辑：
 >
@@ -721,7 +721,7 @@ RTE允许作者撤消或重做前几次编辑。 默认情况下，历史中存�
       * 指定目标模式：
 
          * **名称** `mode`
-         * **类型** `String`)
+         * **类型** `String`
          * **值**
 
             * `auto`：表示选择了自动目标
