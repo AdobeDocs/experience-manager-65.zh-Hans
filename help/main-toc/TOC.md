@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
+source-git-commit: 717c9ae2d6b0552ca5c6386247ef7504dc9785e9
 workflow-type: tm+mt
-source-wordcount: '7448'
-ht-degree: 20%
+source-wordcount: '7450'
+ht-degree: 21%
 
 ---
 
@@ -19,6 +19,7 @@ ht-degree: 20%
 + 发行说明 {#release-notes}
    + [发行说明](/help/release-notes/release-notes.md)
    + 以前的发行说明{#service-pack}
+      + [6.5.21](/help/release-notes/previous/6-5-21.md)
       + [6.5.20](/help/release-notes/previous/6-5-20.md)
       + [6.5.19](/help/release-notes/previous/6-5-19.md)
       + [6.5.18](/help/release-notes/previous/6-5-18.md)
@@ -598,7 +599,7 @@ ht-degree: 20%
          + [OSGi上以Forms为中心的工作流](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
          + [Forms用户管理](/help/forms/using/user-management-handling-user-data.md)
          + [Forms JEE工作流](/help/forms/using/forms-workflow-jee-handling-user-data.md)
-         + [Forms门户](/help/forms/using/forms-portal-handling-user-data.md)
+         + [Forms Portal](/help/forms/using/forms-portal-handling-user-data.md)
          + [通信管理](/help/forms/using/correspondence-management-handling-user-data.md)
          + [与Adobe Sign集成](/help/forms/using/integration-adobe-sign-handling-user-data.md)
          + [文档安全](/help/forms/using/document-security-handling-user-data.md)
@@ -649,7 +650,7 @@ ht-degree: 20%
       + [使用涂鸦签名将电子签名应用于表单](/help/forms/using/signing-forms-using-scribble.md)
       + [AEM Forms键盘快捷键](/help/forms/using/keyboard-shortcuts.md)
       + [将提交审阅人与表单关联](/help/forms/using/adding-reviewers-form.md)
-      + [为表单字段创作上下文帮助](/help/forms/using/authoring-in-field-help.md)
+      + [为 Form 字段创作上下文帮助](/help/forms/using/authoring-in-field-help.md)
       + [使用版面模式调整组件大小](/help/forms/using/resize-using-layout-mode.md)
       + [连接自适应表单数据并将其提交到Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
    + 自适应Forms — 高级创作{#adaptive-forms-advanced-authoring}
@@ -662,9 +663,9 @@ ht-degree: 20%
       + [异步提交自适应表单](/help/forms/using/asynchronous-submissions-adaptive-forms.md)
       + [使用一组自适应表单创建自适应表单](/help/forms/using/create-adaptive-form-using-adaptive-form-set.md)
       + [自适应表单模板](/help/forms/using/template-editor.md)
-      + [自适应表单表达式](/help/forms/using/adaptive-form-expressions.md)
+      + [Adaptive Form表达式](/help/forms/using/adaptive-form-expressions.md)
       + [为自适应表单生成记录文档](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
-      + [使用延迟加载改进大型表单的性能](/help/forms/using/lazy-loading-adaptive-forms.md)
+      + [使用延迟加载改进大型 Form 的性能](/help/forms/using/lazy-loading-adaptive-forms.md)
       + [预填自适应表单字段](/help/forms/using/prepopulate-adaptive-form-fields.md)
       + [在自适应表单中使用SOM表达式](/help/forms/using/using-som-expressions-adaptive-forms.md)
       + [将用户数据中的信息添加到表单提交元数据](/help/forms/using/form-submission-metadata.md)
@@ -672,7 +673,7 @@ ht-degree: 20%
       + [向选定的用户组授予对规则编辑器的访问权限](/help/forms/using/rule-editor-access-user-groups.md)
       + [使用AEM翻译工作流将自适应表单和记录文档本地化](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
       + [自适应表单的样式结构](/help/forms/using/styling-constructs-adaptive-forms.md)
-      + [将自适应Forms与XFA表单模板同步](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
+      + [将Adaptive Form与 XFA Form 模板同步](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
       + [将Adobe Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [在表单中创建和管理资产审核](/help/forms/using/create-reviews-forms.md)
       + [在AEM Sites单页应用程序中嵌入自适应表单或交互式通信](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
@@ -835,11 +836,11 @@ ht-degree: 20%
       + [在门户上发布表单的简介](/help/forms/using/introduction-publishing-forms.md)
       + [将草稿和提交组件与数据库集成的示例](/help/forms/using/integrate-draft-submission-database.md)
       + [为草稿和提交配置存储服务](/help/forms/using/configuring-draft-submission-storage.md)
-      + [在AEM收件箱中管理Forms应用程序和任务](/help/forms/using/manage-applications-inbox.md)
+      + [在 AEM Inbox 中管理 Forms 应用程序和任务](/help/forms/using/manage-applications-inbox.md)
       + [AEM Forms中的Watched文件夹](/help/forms/using/watched-folder-in-aem-forms.md)
       + [草稿和提交组件](/help/forms/using/draft-submission-component.md)
       + [在页面中嵌入链接组件](/help/forms/using/embedding-link-component-page.md)
-      + [发布和取消发布表单和文档](/help/forms/using/publishing-unpublishing-forms.md)
+      + [发布和取消发布 Form 和文档](/help/forms/using/publishing-unpublishing-forms.md)
       + [在使用API的网页上列出表单](/help/forms/using/listing-forms-webpage-using-apis.md)
       + [访问和填写已发布的表单](/help/forms/using/accessing-filling-published-forms.md)
       + [通过电子邮件发送表单提交确认](/help/forms/using/form-submission-receipt-via-email.md)
@@ -877,7 +878,7 @@ ht-degree: 20%
       + [Designer脚本引用](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
       + [Designer FormCalc引用](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [在HTML5表单中使用涂写签名](/help/forms/using/scribble-signature.md)
-      + [在Designer中更改零页内容](/help/forms/using/changing-page-zero-content-designer.md)
+      + [在 Designer 中更改 Page Zero 内容](/help/forms/using/changing-page-zero-content-designer.md)
       + [辅助功能最佳实践]{#accessibility-best-practices}
          + [简介](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [创建表单的最佳实践](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
@@ -1365,9 +1366,9 @@ ht-degree: 20%
          + [获取JSON格式的页面信息](/help/sites-developing/pageinfo.md)
          + 国际化{#internationalization}
             + [国际化组件](/help/sites-developing/i18n.md)
-            + [国际化UI字符串](/help/sites-developing/i18n-dev.md)
+            + [国际化 UI 字符串](/help/sites-developing/i18n-dev.md)
             + [使用Translator管理词典](/help/sites-developing/i18n-translator.md)
-            + [提取字符串以进行翻译](/help/sites-developing/i18n-extract.md)
+            + [提取用于翻译的字符串](/help/sites-developing/i18n-extract.md)
          + 经典UI组件{#classic-ui-components}
             + [开发AEM组件（经典UI）](/help/sites-developing/developing-components-classic.md)
             + [使用和扩展小组件（经典UI）](/help/sites-developing/widgets.md)
