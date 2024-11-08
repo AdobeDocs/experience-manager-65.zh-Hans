@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 717c9ae2d6b0552ca5c6386247ef7504dc9785e9
+source-git-commit: 472fc1fee44681b77ad0b9e883ca9aaf136e0e85
 workflow-type: tm+mt
-source-wordcount: '7450'
+source-wordcount: '7454'
 ht-degree: 21%
 
 ---
@@ -1424,6 +1424,8 @@ ht-degree: 21%
             + [更新内容片段以进行优化的 GraphQL 筛选](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
             + [对内容片段的远程 AEM GraphQL 查询的身份验证](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/graphql-authentication-content-fragments.html)
             + [带内容片段的 AEM GraphQL API - 示例内容和查询](https://experienceleague.adobe.com/docs/experience-manager-65/content/assets/extending/content-fragments-graphql-samples.html)
+         + 通用编辑器{#universal-editor}
+            + [简介](/help/sites-developing/universal-editor/introduction.md)
       + 混合和SPA AEM开发{#spas}
          + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [SPA 简介和演练](/help/sites-developing/spa-walkthrough.md)
