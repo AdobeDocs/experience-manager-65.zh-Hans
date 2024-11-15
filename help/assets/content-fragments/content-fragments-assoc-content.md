@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 51%
+source-wordcount: '257'
+ht-degree: 49%
 
 ---
 
 # 关联的内容{#associated-content}
 
-AEM关联内容功能提供了连接，以便在将资产添加到内容页面时，可以选择将资产与片段一起使用。 这为Headless内容投放提供了灵活性，方法是[在页面上使用内容片段时提供要访问的一系列资产，](/help/sites-authoring/content-fragments.md#using-associated-content)，同时还有助于减少搜索适当资产所需的时间。
+AEM关联内容功能提供了连接，以便在将资产添加到内容页面时，可以（可选）与片段一起使用资产。 这为Headless内容投放提供了灵活性，方法是[在页面上使用内容片段时提供要访问的一系列资产，](/help/sites-authoring/content-fragments.md#using-associated-content)，同时还有助于减少搜索适当资产所需的时间。 可以使用内容片段编辑器配置任何关联的内容。
 
 ## 添加关联内容 {#adding-associated-content}
 

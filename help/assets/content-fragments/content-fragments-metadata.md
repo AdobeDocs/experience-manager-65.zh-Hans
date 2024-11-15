@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
 workflow-type: tm+mt
-source-wordcount: '222'
-ht-degree: 81%
+source-wordcount: '228'
+ht-degree: 79%
 
 ---
 
 # 元数据 – 片段属性 {#metadata-fragment-properties}
 
-了解如何在AEM中查看和编辑内容片段的元数据属性以调整Headless内容。
+了解如何使用内容片段编辑器在AEM中查看和编辑内容片段的元数据属性以调整您的Headless内容。
 
 ## 编辑属性/元数据 {#editing-properties-meta-data}
 
