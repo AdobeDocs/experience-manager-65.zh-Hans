@@ -9,10 +9,10 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: aa91b0f84929affb527c57cf92d7b4714c98ba74
+source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
 workflow-type: tm+mt
-source-wordcount: '2141'
-ht-degree: 9%
+source-wordcount: '2149'
+ht-degree: 8%
 
 ---
 
@@ -119,9 +119,11 @@ This is an automatically generated message. Please do not reply.
 
 要自定义页面通知的英语电子邮件模板，请执行以下操作：
 
-1. 在CRXDE中，打开文件：
+1. 为[页面通知](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)创建叠加
 
-   `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
+1. 打开文件：
+
+   `en.txt`
 
 1. 根据需要修改文件。
 1. 保存更改。
@@ -181,9 +183,11 @@ This is an automatically generated message. Please do not reply.
 
 要自定义工作流事件通知的英语电子邮件模板，请执行以下操作：
 
-1. 在CRXDE中，打开文件：
+1. 为[工作流通知](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)创建叠加
 
-   `/libs/settings/workflow/notification/email/default/en.txt`
+1. 打开文件：
+
+   `en.txt`
 
 1. 根据需要修改文件。
 1. 保存更改。
@@ -239,11 +243,12 @@ subject=<text_1>
 
 要添加新语言的模板，请执行以下操作：
 
-1. 在CRXDE中，添加以下文件`<language-code>.txt`：
+1. 根据需要创建[叠加](/help/sites-developing/overlays.md)。
 
-   * `/libs/settings/notification-templates/com.day.cq.wcm.core.page` ：用于页面通知
-   * `/libs/settings/workflow/notification/email/default` ：用于工作流通知
+   * [页面通知](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-event-notification-e-mail-template)
+   * [工作流通知](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
+1. 添加文件`<language-code>.txt`。
 1. 使文件适应语言。
 1. 保存更改。
 
