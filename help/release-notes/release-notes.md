@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 38271b27134afa2b350c6595cf0bdc335f110be3
+source-git-commit: e3b96392f656b6dcbd583c18a343b56d4371c4ef
 workflow-type: tm+mt
-source-wordcount: '5027'
+source-wordcount: '4733'
 ht-degree: 1%
 
 ---
@@ -50,21 +50,6 @@ ht-degree: 1%
 ### [!DNL Assets]
 
 IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]文本字段。 (ASSETS-34918)
-
-### [!DNL Forms]
-
-* **对OAuth凭据的支持**：用于服务器到服务器身份验证的更易于使用的新凭据，正在替换现有的服务帐户(JWT)凭据。 (NPR-41994)
-* AEM Forms中的[规则编辑器增强功能](/help/forms/using/rule-editor-core-components.md)：
-   * 支持使用`When-then-else`功能实现嵌套条件。
-   * 验证或重置面板和表单，包括字段。
-   * 支持现代JavaScript功能，如自定义函数中的let和arrow函数（支持ES10）。
-* [用于PDF辅助功能的AutoTag API](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services)： OSGi上的AEM Forms现在支持新的AutoTag API，可通过添加以下标记来提高辅助功能标准的PDF：段落和列表。 它借助辅助技术使PDF更易于访问。
-* **16位PNG支持**：PDF Generator的ImageToPdf服务现在支持16位色深的PNG转换。
-* **将工件应用于XDP中的单个文本块**： Forms Designer现在允许用户在XDP文件中配置单个文本块的设置。 此功能允许您控制在生成的PDF中被视为工件的元素。 辅助技术可访问这些元素，例如页眉和页脚。 主要功能包括将文本块标记为工件，并将这些设置嵌入到XDP元数据中。 Forms Output服务在PDF生成期间应用这些设置，确保正确的PDF/UA标记。
-* **AEM Forms Designer通过`GB18030:2022`标准认证**：通过`GB18030:2022`认证，Forms Designer现在支持中文Unicode字符集，该字符集允许您在所有可编辑的字段和对话框中输入汉字符。
-* JEE服务器上的PDF Generator服务现在[支持将HTML转换为PDF的WebToPDF路由](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings)，以及现有的WebKit和仅限Windows的WebCapture路由。 而WebToPDF路由已在OSGi上可用，并且已扩展到JEE。 现在，在JEE和OSGi平台上，PDF Generator服务都支持跨不同操作系统的以下路由：
-   * **Windows**： WebKit、WebCapture、WebToPDF
-   * **Linux®**： WebKit， WebToPDF
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
