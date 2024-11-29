@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
+source-git-commit: 27283286bd514c6f8902297cd9229b5e92a3c60d
 workflow-type: tm+mt
-source-wordcount: '6070'
+source-wordcount: '6089'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 2%
 
 * [PDF/A合规性增强](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents)：现在，用户可将PDF转换为PDF/A格式(1a、2a、3a)以进行存档，同时确保可访问性并验证是否符合这些标准。
 
-* **支持静态PDF文档的自动调整字体大小**： AEM Forms Designer现在支持.xdp文件中的自动调整字体大小功能。 现在，用户可以为XDP中的文本字段、数字字段、密码字段和日期时间字段指定自动调整大小，以呈现文本字段内容，而无需在静态PDF文档中截断这些字段内容。
+* **支持静态PDF文档自动调整字体大小**： AEM Forms Designer、OutputService和FormsService现在支持静态PDF的自动调整字体大小。如果用户为文本字段、数字字段、密码字段或日期时间字段等字段在模板中提及字体大小0，则字体大小会在这些字段内自动调整，而不会更改字段本身的大小。 要使用该功能，用户在自定义xci中传递一个标记：`<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`。
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -223,7 +223,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 -->
 
-#### Forms {#forms-bug-fixes-sp22}
+### Forms {#forms-bug-fixes-sp22}
 
 * 在AEM Forms中已保存的草稿中，为文件附件生成的URL不反映配置的Apache Sling资源解析器工厂映射。 (FORMS-16949)
 * 当AEM Forms Service Pack 19 (6.5.19.0)用户预览信件时，内容未正确对齐，因为空格显示缺失，并且字符“x”出现在某些位置。 (FORMS-16670)
