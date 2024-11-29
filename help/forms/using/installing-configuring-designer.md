@@ -10,9 +10,9 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 4ce52d90f9d3300e543563ce3dc242f28e00912e
 workflow-type: tm+mt
-source-wordcount: '787'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,7 @@ ht-degree: 0%
 >
 >* AEM 6.5 Forms Service Pack 19 (6.5.19.0)中引入了设计器的64位版本。
 >* 自[AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)发行以来，已弃用32位版本的设计器。
+> * Forms Designer支持的平台与AEM Forms支持的平台一致。 要了解Forms Designer支持的平台，请[单击此处](/help/forms/using/aem-forms-jee-supported-platforms.md)。
 
 有关安装Forms Designer的更多信息，请访问[常见问题解答](#fandq)。
 
