@@ -9,9 +9,9 @@ feature: Document Services
 exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
 workflow-type: tm+mt
-source-wordcount: '2118'
+source-wordcount: '2159'
 ht-degree: 6%
 
 ---
@@ -204,6 +204,22 @@ fragment="myFragment"/>
 </DDX>
 ```
 
+#### 解析CRX存储库中的引用 {#resolve-references-on-crx-repository}
+
+通过提供crx路径的
+XDP源中的片段引用。 在下面给出的示例中，包含的片段还包括
+已解决。
+
+```xml
+<DDX xmlns="http://ns.adobe.com/DDX/1.0/"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://ns.adobe.com/DDX/1.0/ coldfusion_ddx.xsd">
+<XDP result="stitched.xdp">
+<XDP source="crx:///content/dam/formsanddocuments/test-xdp/sample.xdp" />
+</XDP>
+</DDX>
+```
+
 #### 有选择地解析绝对或相对参照 {#selectively-resolve-absolute-or-relative-references}
 
 可以选择性地解析所有或部分源文档中的绝对或相对参照，如下例所示：
@@ -345,4 +361,4 @@ digitalSignatures="true"/>
 </DDX>
 ```
 
-使用DDX和Assembler服务调用其他LiveC循环服务可以简化您的流程图。 它甚至可以减少您自定义工作流所花费的工作量。 (另请参阅
+使用DDX和Assembler服务调用其他LiveC循环服务可以简化您的流程图。 它甚至可以减少您自定义工作流所花费的工作量。 （另请参阅）

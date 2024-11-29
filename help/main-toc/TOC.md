@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: f3dda5271c0d3bdd9d23bc26f3b5abe50fc1b90a
+source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
 workflow-type: tm+mt
-source-wordcount: '7454'
+source-wordcount: '7477'
 ht-degree: 21%
 
 ---
@@ -624,6 +624,8 @@ ht-degree: 21%
       + [规则编辑器](/help/forms/using/rule-editor-core-components.md)
       + [在自适应表单核心组件中创建和使用自定义函数](/help/forms/using/create-and-use-custom-functions-core-components.md)
       + [为基于核心组件的自适应Forms创建和使用自定义错误处理程序](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
+      + [向自适应表单添加版本控制、评论和注释](/help/forms/using/add-versioning-reviews-comments.md)
+      + [比较自适应表单](/help/forms/using/compare-forms-core-components.md)
    + 自适应Forms — 基本创作{#adaptive-forms-basic-authoring}
       + [使用自适应表单的最佳实践](/help/forms/using/adaptive-forms-best-practices.md)
       + [创建自适应表单](/help/forms/using/creating-adaptive-form.md)
@@ -631,6 +633,8 @@ ht-degree: 21%
       + [自适应表单片段](/help/forms/using/adaptive-form-fragments.md)
       + [配置提交操作](/help/forms/using/configuring-submit-actions.md)
       + [在自适应表单中使用CAPTCHA](/help/forms/using/captcha-adaptive-forms.md)
+      + [在自适应表单中使用Captcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)
+      + [在自适应表单中使用Turnstile验证码](/help/forms/using/integrate-adaptive-forms-turnstile.md)
       + [自适应表单关键字](/help/forms/using/adaptive-forms-keywords.md)
       + [自适应表单中的表](/help/forms/using/adaptive-forms-tables.md)
       + [自适应表单中的图表](/help/forms/using/adaptive-form-charts.md)

@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: f2f6f7efe67efdfc88863593844cc172a4815622
+source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
 workflow-type: tm+mt
 source-wordcount: '1697'
 ht-degree: 6%
@@ -18,9 +18,9 @@ ht-degree: 6%
 
 | 产品 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 版本 | 6.5.21.0 |
+| 版本 | 6.5.22.0 |
 | 类型 | Service Pack版本 |
-| 日期 | 2024 年 5 月 29 日 |
+| 日期 | 2024 年 11 月 29 日 |
 | 下载 URL | [最新AEM Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]

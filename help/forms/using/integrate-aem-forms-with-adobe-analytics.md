@@ -6,9 +6,9 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1810'
 ht-degree: 0%
 
 ---
@@ -220,6 +220,11 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
 1. Publish配置。
+
+>[!NOTE]
+>
+> 当您[将AEM Forms嵌入到AEM Sites页面](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites)中时，自适应表单的iFrame中不支持AdobeLaunch配置。 要解决此问题，请直接在站点页面上配置Adobe启动规则，或将现有Adobe启动配置从AEM Forms迁移到站点页面。
+
 
 ### 为自适应表单启用[!DNL Adobe Analytics] {#enable-analytics-adaptive-form}
 
