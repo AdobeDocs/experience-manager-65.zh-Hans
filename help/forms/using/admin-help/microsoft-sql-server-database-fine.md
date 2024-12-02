@@ -1,5 +1,5 @@
 ---
-title: “Microsoft SQL Server数据库：微调配置”
+title: Microsoft SQL Server数据库：微调配置
 description: 了解如何微调Microsoft SQL Server数据库的配置。
 contentOwner: admin
 content-type: reference

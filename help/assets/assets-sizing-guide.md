@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets]大小调整指南"
+title: '[!DNL Assets]大小调整指南'
 description: 确定有效量度以估计部署 [!DNL Adobe Experience Manager Assets]所需的基础结构和资源的最佳实践。
 contentOwner: AG
 role: Architect, Admin

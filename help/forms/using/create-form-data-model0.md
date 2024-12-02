@@ -1,5 +1,5 @@
 ---
-title: “教程：在AEM Forms中创建表单数据模型”
+title: 教程：在AEM Forms中创建表单数据模型
 description: 为交互式通信创建表单数据模型
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

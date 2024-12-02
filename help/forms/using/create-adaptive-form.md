@@ -1,5 +1,5 @@
 ---
-title: '教程：创建自适应表单'
+title: 教程：创建自适应表单
 description: 了解创建、布局和预览自适应表单。 此外，了解如何配置提交操作。
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
@@ -8,7 +8,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '1314'
-ht-degree: 8%
+ht-degree: 9%
 
 ---
 

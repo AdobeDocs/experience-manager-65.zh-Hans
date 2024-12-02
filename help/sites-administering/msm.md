@@ -1,5 +1,5 @@
 ---
-title: “重用内容：多站点管理器和Live Copy”
+title: 重用内容：多站点管理器和 Live Copy
 description: 了解如何将内容与Live Copies和多站点管理器重复使用。
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,7 +12,7 @@ role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
 source-wordcount: '2665'
-ht-degree: 19%
+ht-degree: 20%
 
 ---
 

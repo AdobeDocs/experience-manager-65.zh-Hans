@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Adobe Camera Raw]支持处理数字资产"
+title: 支持[!DNL Adobe Camera Raw]处理数字资产
 description: 了解如何在 [!DNL Adobe Experience Manager Assets]中启用 [!DNL Adobe Camera Raw] 支持
 contentOwner: AG
 role: Admin

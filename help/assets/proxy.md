@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets]代理开发"
+title: '[!DNL Assets]代理开发'
 description: 代理是使用代理工作程序处理作业的 [!DNL Experience Manager] 实例。 了解如何配置 [!DNL Experience Manager] 代理、支持的操作、代理组件以及如何开发自定义代理工作程序。
 contentOwner: AG
 role: Admin, Architect

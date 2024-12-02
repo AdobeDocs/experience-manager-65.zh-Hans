@@ -1,5 +1,5 @@
 ---
-title: “教程：创建交互式通信”
+title: '教程：创建交互式通信 '
 description: 使用所有构建块创建交互式通信
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

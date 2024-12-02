@@ -1,5 +1,5 @@
 ---
-title: “教程：创建文档片段”
+title: 教程：创建文档片段
 description: 为交互式通信创建文档片段
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

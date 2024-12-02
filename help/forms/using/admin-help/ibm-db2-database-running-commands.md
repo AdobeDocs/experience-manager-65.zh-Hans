@@ -1,5 +1,5 @@
 ---
-title: “IBM DB2数据库：运行命令以进行常规维护”
+title: IBM DB2数据库：运行命令以进行常规维护
 description: 本文档列出了为定期维护AEM表单数据库而推荐的IBM DB2命令。
 contentOwner: admin
 content-type: reference

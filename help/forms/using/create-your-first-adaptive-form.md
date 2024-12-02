@@ -1,5 +1,5 @@
 ---
-title: “教程：创建您的第一个自适应表单”
+title: 教程：创建您的第一个自适应表单
 description: 了解如何创建企业级、交互式和响应式表单。
 topic-tags: introduction
 docset: aem65

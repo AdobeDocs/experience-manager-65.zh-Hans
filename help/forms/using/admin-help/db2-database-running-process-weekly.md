@@ -1,5 +1,5 @@
 ---
-title: “DB2&amp；reg； database：每周运行进程”
+title: DB2&amp；reg；数据库：每周运行进程
 description: 了解如何提高AEM Forms DB2&amp；reg；数据库的性能。
 contentOwner: admin
 content-type: reference

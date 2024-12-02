@@ -1,5 +1,5 @@
 ---
-title: “教程：Publish您的自适应表单”
+title: 教程：Publish您的自适应表单
 description: 将自适应表单作为AEM页面Publish，将表单嵌入到AEM Sites页面，或将自适应表单嵌入到外部网页中
 contentOwner: khsingh
 topic-tags: introduction

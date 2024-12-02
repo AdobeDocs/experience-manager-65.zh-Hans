@@ -1,5 +1,5 @@
 ---
-title: “通信管理：故障排除”
+title: 通信管理：疑难解答
 description: 了解如何处理在AEM Forms环境中保存信件过程中出现的错误。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

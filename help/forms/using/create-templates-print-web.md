@@ -1,5 +1,5 @@
 ---
-title: “教程：创建模板”
+title: 教程：创建模板
 description: 为交互式通信创建打印模板和Web模板
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

@@ -1,5 +1,5 @@
 ---
-title: “教程：规划交互式通信”
+title: 教程：规划交互式通信
 description: 规划交互式通信的剖析
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS

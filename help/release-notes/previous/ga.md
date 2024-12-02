@@ -65,7 +65,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Adobe不打算进一步增强经典UI。 AEM 6.5包含经典UI，从早期版本升级的客户可以继续按原样使用它。 经典UI在弃用后仍得到完全支持。 [阅读更多](/help/sites-deploying/ui-recommendations.md)。
+>Adobe不打算进一步增强经典UI。 AEM 6.5包含经典UI，从早期版本升级的客户可以继续按原样使用它。 经典UI在弃用后仍得到完全支持。 [了解详情](/help/sites-deploying/ui-recommendations.md)。
 
 #### 搜索和编制索引 {#indexing-and-search}
 
@@ -118,7 +118,7 @@ ht-degree: 3%
 
 #### Headless内容管理 {#headless-content-management}
 
-AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务自2008年以来一直使用[SlingGET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)和[POSTServlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)。 内容服务（[Sling模型导出器](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-Hans)）是在AEM 6.3中引入的，它是AEM SJ SDK用于水合单页应用程序的方法。 适用于Assets](/help/assets/mac-api-assets.md)的[HTTP API是针对AEM 6.5扩展的CRUD API。
+AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务自2008年以来一直使用[SlingGET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)和[POSTServlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)。 内容服务（[Sling模型导出器](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-hans)）是在AEM 6.3中引入的，它是AEM SJ SDK用于水合单页应用程序的方法。 适用于Assets](/help/assets/mac-api-assets.md)的[HTTP API是针对AEM 6.5扩展的CRUD API。
 
 新的HTTP API功能：
 

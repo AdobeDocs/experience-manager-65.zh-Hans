@@ -1,5 +1,5 @@
 ---
-title: “教程：创建表单数据模型”
+title: '教程：创建表单数据模型 '
 description: 了解如何将MySQL配置为数据源、创建表单数据模型(FDM)、配置它以及测试AEM Forms。
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS

@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Assets]主页体验"
+title: '[!DNL Assets]主页体验'
 description: 个性化 [!DNL Experience Manager Assets] 主页以获得丰富的欢迎屏幕体验，包括有关资产的最近活动的快照。
 contentOwner: AG
 feature: Asset Management
