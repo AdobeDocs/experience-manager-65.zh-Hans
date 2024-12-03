@@ -5,10 +5,11 @@ mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 36238364383c380269812641acc66e452e2362ba
+exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
+source-git-commit: 167d897cc5f44a2302a4ba932e238e6ba973635d
 workflow-type: tm+mt
-source-wordcount: '6089'
-ht-degree: 2%
+source-wordcount: '6030'
+ht-degree: 1%
 
 ---
 
@@ -42,23 +43,23 @@ ht-degree: 2%
 
 此版本中的主要功能和增强功能包括：
 
-* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)和[Cloudfare Turnstile验证码服务](/help/forms/using/integrate-adaptive-forms-turnstile.md)： AEM Forms支持以下Captcha服务：
+* [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md)和[Cloudflare Turnstile验证码服务](/help/forms/using/integrate-adaptive-forms-turnstile.md)： AEM Forms支持以下Captcha服务：
    * 验证码使用复选框小组件向用户发起挑战，保护表单免受机器人、垃圾邮件和自动滥用的侵害。 它确保只有人工用户才能进行，增强了在线交易的安全性。
    * Cloudflare Turnstile提供了一种安全措施，旨在保护表单免受自动机器人、恶意攻击、垃圾邮件和不需要的自动流量的影响。 在允许提交表单之前，它会在表单提交时显示一个复选框，以验证他们是人类。
 
 * 自适应表单版本控制：
-   * [创建自适应表单的多个版本](/help/forms/using/add-versioning-reviews-comments.md)：现在，用户可以轻松管理现有表单的变体。 这简化了版本控制，有助于表单优化比较，所有这些都在一个简化的工作流中进行。
+   * [创建自适应表单的多个版本](/help/forms/using/add-versioning-reviews-comments.md) — 现在，用户可以轻松管理现有表单的变体。 此过程简化了版本控制，并有助于在单个简化的工作流中比较表单优化。
    * [比较自适应Forms](/help/forms/using/compare-forms-core-components.md)：现在，用户可以轻松比较两个表单以找出差异。 它使团队成员能够比较修订内容，并有效地讨论相关变化，从而促进顺利协作。
 
-* 添加了支持以在[Interactive Communications批处理API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)中启用字体嵌入：现在，Interactive Communications支持在通过Batch API生成的PDF中嵌入Adobe Ming和Adobe Myungjo字体。 此增强功能确保生成的文档中的文本呈现准确无误，即使使用字体子集也是如此，从而改进了对PDF输出中的多语言内容的支持。
+* 添加了支持以在[Interactive Communications批处理API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)中启用字体嵌入 — Interactive Communications现在支持在通过批处理API生成的PDF中嵌入Adobe Ming和Adobe Myungjo字体。 此增强功能确保生成的文档中的文本呈现准确无误，即使使用字体子集也是如此，从而改进了对PDF输出中的多语言内容的支持。
 
-* [用于PDF辅助功能的内容表API](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api)： OSGi上的AEM Forms现在支持新的TOC标记API，以增强对辅助功能标准的PDF。 它借助辅助技术使PDF更易于访问。
+* [用于PDF辅助功能的内容表API](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - OSGi上的AEM Forms现在支持新的TOC标记API，以增强PDF辅助功能标准。 它借助辅助技术使PDF更易于访问。
 
-* [片段XDP解析](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository)： OSGi上的AEM Forms现在解析主XDP中引用并存储在AEM CRX存储库中的片段XDP。
+* [片段XDP解析](/help/forms/using/assembler-service.md#resolve-references-on-crx-repository-resolve-references-on-crx-repository) - OSGi上的AEM Forms现在解析主XDP中引用并存储在AEM CRX存储库中的片段XDP。
 
-* [PDF/A合规性增强](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents)：现在，用户可将PDF转换为PDF/A格式(1a、2a、3a)以进行存档，同时确保可访问性并验证是否符合这些标准。
+* [PDF/A合规性增强功能](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents) — 现在，用户可以将PDF转换为PDF/A格式(1a、2a、3a)以进行存档，同时确保可访问性并验证是否符合这些标准。
 
-* **支持静态PDF文档自动调整字体大小**： AEM Forms Designer、OutputService和FormsService现在支持静态PDF的自动调整字体大小。如果用户为文本字段、数字字段、密码字段或日期时间字段等字段在模板中提及字体大小0，则字体大小会在这些字段内自动调整，而不会更改字段本身的大小。 要使用该功能，用户在自定义xci中传递一个标记：`<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`。
+* **支持对静态PDF文档自动调整字体大小** - AEM Forms Designer、OutputService和FormsService现在支持对静态PDF自动调整字体大小。 如果用户将文本、数字、密码或日期时间字段的字体大小设置为0，则字体大小将在这些字段中自动调整，而不会更改字段的整体大小。 要使用该功能，用户在自定义XCI中传递一个标记：`<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`。
 
 <!-- * _6.5.21.0 REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS THAT YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
@@ -102,7 +103,7 @@ IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]�
    * **版本比较问题：**“与当前比较”功能只显示当前版本，不突出显示版本之间的任何差异。 (SITES-23988)
 
 * 在复制粘贴操作期间使用设置为`plaintext`的`defaultPasteMode`时，富文本编辑器(RTE)字段中出现意外的`<br>`标记。 此问题会导致同一内容出现不同的标记，从而导致同一文本内容在客户的翻译记忆库中翻译两次。 (SITES-23606)
-* 在AEM 6.5.20.0中，**管理发布**&#x200B;功能出现功能问题。 当选择某个节点并计划它以供将来发布时，在尝试包含子节点时可能会显示错误消息“无法检索选定项目的子资源”。 此问题阻止使用&#x200B;**包括子项**&#x200B;选项，导致目标内容层次结构无法完全发布。 (SITES-23000)
+* 在AEM 6.5.20.0中，**管理发布**&#x200B;功能出现功能问题。 选择某个节点并计划它以供将来发布时，在尝试包含子节点时可能会显示错误消息“无法检索选定项目的子资源”。 此问题阻止使用&#x200B;**包括子项**&#x200B;选项，导致目标内容层次结构无法完全发布。 (SITES-23000)
 * 在创作环境中，模板的“已发布”时间戳未更新，即使模板已成功复制到发布实例。 预期的行为是创作实例上的时间戳反映最新的发布，但此更新未按预期进行。 (SITES-21585)
 * AEM创作环境中的传入链接计数存在差异。 与经典UI相比，左侧边栏显示的链接较少。 此外，某些合法的传入链接不起作用。 (SITES-24837)
 * 在AEM的“时间线”视图中查看页面版本时，报告的加载时间非常长。 显示版本最多需要19分钟。 从AEM 6.4.8升级到6.5.18后，此问题持续出现，会显着中断工作流的效率。 (SITES-22468和SITES-22467)
@@ -225,7 +226,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 ### Forms {#forms-bug-fixes-sp22}
 
 * 在AEM Forms中已保存的草稿中，为文件附件生成的URL不反映配置的Apache Sling资源解析器工厂映射。 (FORMS-16949)
-* 当AEM Forms Service Pack 19 (6.5.19.0)用户预览信件时，内容未正确对齐，因为空格显示缺失，并且字符“x”出现在某些位置。 (FORMS-16670)
+* 当AEM Forms Service Pack 19 (6.5.19.0)上的用户预览信件时，内容未正确对齐，因为空格显示缺失，字符`x`出现在某些位置。 (FORMS-16670)
 * 当用户在AEM Forms Service Pack 18 (6.5.18.0)上尝试使用CIF协议打印文件时，它会失败并出现以下错误：(FORMS-16629)
   `ALC-OUT-001-401: Unknown error while printing using CIFS on the Printer: \\\\\\\\NSMVPLUETEST01\\\\TH_Test`。
 * 当用户从AEM Forms Service Pack 17 (6.5.17.0)升级到AEM Forms Service Pack 20 (6.5.20.0)时，规则编辑器图标未出现在表单容器级别。 (FORMS-16430)
@@ -233,21 +234,21 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * 在AEM Forms Service Pack 19 (6.5.19.0)上，AEM Forms 6.5PDF/A验证因错误`creation date and modification date mismatch with timezone`而对某些文件失败，而它在Acrobat ProPDF/A验证上顺利运行以进行合规性检查。 (FORMS-15840)
 * 当用户在OSGi上的AEM Forms Service Pack 15 (6.5.15.0)的站点页面上使用“草稿和提交”组件删除表单草稿时，删除失败。 (FORMS-15755)
 * 当用户的SharePoint列表包含超过999个条目并且表单包含附件时，表单提交失败。 (FORMS-15057)
-* 当用户使用两个标记为开始日期和结束日期的日期选择器组件时，在添加验证规则以确保结束日期不早于开始日期并设置自定义脚本验证消息后，如果结束日期早于开始日期，则不会触发验证。 (FORMS-14757)
-* 当用户在自适应表单的表上应用显示和隐藏功能时，字段大小缩小。 添加和删除行时，字段大小会自行更正。 (FORMS-14756)
+* 添加了验证规则以确保结束日期不早于开始日期，同时还添加了验证消息的自定义脚本。 但是，当结束日期早于开始日期时，不会触发验证。 (FORMS-14757)
+* 当用户在自适应表单的表上应用显示/隐藏功能时，字段大小缩小。 添加和删除行时，字段大小会自行更正。 (FORMS-14756)
 * 当用户在AEM Forms Service Pack 19 (6.5.19.0)上打印表单时，某些表单在服务器上无法正确呈现，导致打印过程中出现错误。 (FORMS14734)
-* 当用户从AEM Forms Service Pack 15 (6.5.15.0)更新到AEM Forms Service Pack 19 (6.5.19.0)，并使用将特定变量设置为number并将自定义显示模式设置为num{$zzz，zz9.99}的表单时，该模式无法在预览和代理UI中正确呈现。 (FORMS-14694)
+* 当用户从AEM Forms Service Pack 15 (6.5.15.0)更新到Service Pack 19 (6.5.19.0)时，出现问题。 设置为`num{$zzz,zz9.99}`的自定义显示模式在预览和代理UI中无法正确呈现。 (FORMS-14694)
 * 当用户使用保存的数据xml在交互式通信中预览信件时，信件在AEM UI上卡在“正在加载”状态。 使用同一XML再次预览信件可以正常进行。 (FORMS-14521)
-* 当AEM Forms Service Pack 20 (6.5.20.0)上的用户使用自适应表单中的“发送电子邮件”提交操作按钮发送带有附件的电子邮件时，附件名称显示在下一行而不是内联。 (FORMS-14426)
-* 当用户在AEM Forms中生成项目符号列表设置为默认“磁盘”样式的PDF时，PDF无法通过Adobe Acrobat辅助功能工具中的辅助功能检查。 具有“项目符号”和“正方形”样式的列表通过了辅助功能检查。 (FORMS-13802和LC-3922179)
-* 当用户在Standalone RHEL8 JBoss设置上从AEMForms-6.5.0-0065升级到AEMForms-6.5.0-0087时，无法连接到LiveCycle服务容器。 (FORMS-15907) ·
-* 在JEE上的AEM FormsAEM Workspace中，当用户选择以前提交的表单并开始新表单流程时，具有预填充数据流程的表单会清除所有以前提交的数据并将其替换为预填充的数据，而不会保留任何手动填写在上一个表单中的字段。 (FORMS-15376)
+* 在AEM Forms Service Pack 20 (6.5.20.0)中，使用自适应表单中的“发送电子邮件”按钮发送带有附件的电子邮件时，用户会注意到一个问题。 附件名称显示在下一行而不是内联。 (FORMS-14426)
+* 当用户在AEM Forms中生成项目符号列表设置为默认“磁盘”样式的PDF时，PDF无法通过Adobe Acrobat辅助功能工具中的辅助功能检查。 带有“项目符号”和“正方形”样式的列表通过了辅助功能检查。 (FORMS-13802和LC-3922179)
+* 当用户在独立RHEL8 JBoss®设置上从AEMForms-6.5.0-0065升级到AEMForms-6.5.0-0087时，无法连接到LiveCycle服务容器。 (FORMS-15907) *
+* 在JEE上的AEM Forms上，在AEM Workspace中，选择之前提交的表单来启动新表单流程会导致出现问题。 带有预填充数据的Forms会覆盖所有以前提交的数据，并删除手动填写的字段。 (FORMS-15376)
 * 在AEM Forms Service Pack 20 (6.5.20.0)上，当用户使用PDFG服务将Tiff文件转换为PDF时，它会失败，并出现错误：(FORMS-14879) ALC-PDG-011-028 — 将输入图像文件转换为PDF时出错。 com/sun/image/codec/jpeg/JPEGCodec
 * 在AEM Forms on JEE jar文件中升级：现在包含`commons-collections:commons-collections:jar`库，以改进各种AEM Forms JEE作业中的依赖项解析和功能，例如：
    * 汇编程序作业增强，可改进作业处理和错误处理。
    * PDF Generator(PDFG)作业增强，可确保为文档生成和转换执行更顺畅的操作。
    * LC-Upgrade Job增强功能，可在确保版本之间稳定过渡的同时改进升级过程。
-   * Rights Management作业增强以确保Document Handling的安全，并改进权限管理功能。
+   * Rights Management作业增强以确保Rights Management处理的安全性，并改进文档功能。
    * 流程管理作业增强，可实现更可靠的作业处理和系统管理。
 
 
@@ -613,8 +614,8 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * 在交互式通信代理UI的打印预览中，所有字段值的货币符号（如美元符号$）显示方式不一致。 对于最多999的值，它出现，但对于1000及更高版本的值则缺失。 (FORMS-16557)
 * 交互式通信中对嵌套布局片段XDP所做的任何修改都不会反映在IC编辑器中。 (FORMS-16575)
 * 在交互式通信代理UI的打印预览中，某些计算值无法正确显示。 (FORMS-16603)
-* 在打印预览中查看信件时，内容会更改。 也就是说，某些空格消失，某些字母被替换为“x”。 (FORMS-15681)
-* 当用户配置WebLogic 14c实例时，由于涉及SLF4J库的类加载器冲突，因此AEM Forms Service Pack 21 (6.5.21.0)中的PDFG服务（在JBoss上运行的JEE上）失败。 错误显示如下(CQDOC-22178)：
+* 在打印预览中查看信件时，内容会更改。 即，某些空格消失，某些字母被替换为`x`。 (FORMS-15681)
+* 当用户配置WebLogic 14c实例时，由于涉及SLF4J库的类加载器冲突，AEM Forms Service Pack 21 (6.5.21.0)中的PDFG服务(在JBoss®上运行的JEE上)失败。 错误显示如下(CQDOC-22178)：
 
   ```java
   Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
