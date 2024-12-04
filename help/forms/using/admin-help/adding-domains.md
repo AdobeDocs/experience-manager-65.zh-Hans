@@ -9,21 +9,23 @@ exl-id: c708936d-7aa7-4b92-be2d-d97008f187d2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: eac8a82c78d7f209512d32e7fcd7083bbebf1cb5
 workflow-type: tm+mt
-source-wordcount: '929'
+source-wordcount: '941'
 ht-degree: 0%
 
 ---
 
 # 添加域 {#adding-domains}
 
+确保用户具有访问管理员控制台的管理员权限。
+
 ## 添加企业域 {#add-an-enterprise-domain}
 
 1. 在管理控制台中，单击设置>用户管理>域管理。
 1. 单击新建企业域。
 1. 在ID框中，键入域的唯一标识符，然后在“名称”框中，键入域的描述性名称。 （请参阅[有关域名和ID的重要注意事项](adding-domains.md#important-considerations-for-domain-names-and-ids)。）
-1. 指定是否启用帐户锁定。 （请参阅[配置帐户锁定设置](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)。） 默认情况下，“启用帐户锁定”处于选中状态。
+1. 指定是否启用帐户锁定。 （请参阅[配置帐户锁定设置](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)。）默认情况下，“启用帐户锁定”处于选中状态。
 1. 单击添加验证，然后在“验证提供方”列表中选择提供方，具体取决于您的组织使用的验证机制。 可能的值包括LDAP、Kerberos、SAML或自定义身份验证提供程序。
 
    如果选择LDAP，则可以使用在目录配置中指定的LDAP服务器，也可以选择其他LDAP服务器用于身份验证。 如果选择其他服务器，则您的用户必须存在于两个LDAP服务器上。
@@ -39,7 +41,7 @@ ht-degree: 0%
 1. 在管理控制台中，单击设置>用户管理>域管理。
 1. 单击“新建本地域”。
 1. 在ID框中，键入域的唯一标识符，然后在“名称”框中，键入域的描述性名称。 （请参阅[有关域名和ID的重要注意事项](adding-domains.md#important-considerations-for-domain-names-and-ids)。）
-1. 指定是否启用帐户锁定，然后单击“确定”。 （请参阅[配置帐户锁定设置](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)。） 默认情况下，“启用帐户锁定”处于选中状态。
+1. 指定是否启用帐户锁定，然后单击“确定”。 （请参阅[配置帐户锁定设置](/help/forms/using/admin-help/configure-account-locking-settings.md#configure-account-locking-settings)。）默认情况下，“启用帐户锁定”处于选中状态。
 
 ## 添加混合域 {#add-a-hybrid-domain}
 
