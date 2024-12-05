@@ -9,9 +9,9 @@ exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
 workflow-type: tm+mt
-source-wordcount: '2122'
+source-wordcount: '2125'
 ht-degree: 28%
 
 ---
@@ -140,7 +140,10 @@ AT.js 对 mbox.js 库进行了多项改进：
 
    1. 为配置提供&#x200B;**标题**。
    1. 选择 **Adobe Target 配置**&#x200B;模板。
-   1. 单击&#x200B;**创建**。
+
+      ![Adobe Target配置](assets/adobe-target-create-configuration.png)
+
+1. 单击&#x200B;**创建**。
 
    此时将打开编辑对话框。
 
@@ -243,7 +246,7 @@ AT.js 对 mbox.js 库进行了多项改进：
 1. 在&#x200B;**站点**&#x200B;控制台中，导航到要配置的站点。
 1. 使用[快速操作](/help/sites-authoring/basic-handling.md#quick-actions)或[选择模式](/help/sites-authoring/basic-handling.md)，选择&#x200B;**查看属性。**
 1. 选择&#x200B;**云服务**&#x200B;选项卡。
-1. 单击&#x200B;**编辑**。
+1. 点击&#x200B;**编辑**。
 1. 单击&#x200B;**Cloud Service配置**&#x200B;下的&#x200B;**添加配置**&#x200B;并选择&#x200B;**Adobe Target**。
 
    ![添加配置](assets/chlimage_1-165.png)
