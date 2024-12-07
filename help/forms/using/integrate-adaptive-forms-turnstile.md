@@ -3,9 +3,10 @@ title: 如何在AEM自适应表单6.5中使用Turnstile？
 description: 使用Turnstile服务轻松增强表单安全性。 里面有分步指南！
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+exl-id: bed93ce3-89db-477a-8316-7598275e4bca
+source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '828'
 ht-degree: 11%
 
 ---
@@ -13,12 +14,8 @@ ht-degree: 11%
 # 将AEM Forms环境与Turnstile连接 {#connect-your-forms-environment-with-turnstile-service}
 
 <!--
-
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
-
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
-
-<span class="preview">此功能在早期采用者计划下。 如果您有兴趣加入我们针对此功能的抢先访问计划，请从您的官方地址发送电子邮件至aem-forms-ea@adobe.com以请求访问</span>
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
@@ -34,6 +31,8 @@ AEM Forms 6.5支持以下CAPTCHA解决方案：
 ## 将AEM Forms环境与Turnstile验证码集成
 
 Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站点免受自动机器人、恶意攻击、垃圾邮件和不需要的自动流量的侵害。 在允许提交表单之前，它会在表单提交时显示一个复选框，以验证他们是人类。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3440940/)
 
 ### 将AEM Forms环境与Turnstile验证码集成的先决条件 {#prerequisite}
 
