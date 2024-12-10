@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 26c1fe9d032729dd8d1737c922c4b2fab55f2d48
+source-git-commit: 9c58545406bc539dbd0c224b3c88365d3851deb8
 workflow-type: tm+mt
 source-wordcount: '6085'
 ht-degree: 1%
@@ -250,7 +250,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    * LC-Upgrade Job增强功能，可在确保版本之间稳定过渡的同时改进升级过程。
    * Rights Management作业增强以确保Rights Management处理的安全性，并改进文档功能。
    * 流程管理作业增强，可实现更可靠的作业处理和系统管理。
+* 从AEM Forms OSGi 6.5.22开始，Forms服务的renderPDFForm操作不会在服务器上执行仅客户端(runAt=client)脚本，只有标记为runAt=server或runAt=both的脚本才会执行，如下表所述。 (FORMS-16564)
 
+  | 脚本标记为runAt | 在服务器上执行 |
+  |---------------------|-------------------------|
+  | 服务器 | 是 |
+  | 两者 | 是 |
+  | 客户端 | 否 |
 
 #### XMLFM {#forms-xmlfm-sp22}
 
@@ -615,14 +621,6 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 * 交互式通信中对嵌套布局片段XDP所做的任何修改都不会反映在IC编辑器中。 (FORMS-16575)
 * 在交互式通信代理UI的打印预览中，某些计算值无法正确显示。 (FORMS-16603)
 * 在打印预览中查看信件时，内容会更改。 也就是说，某些空格消失，某些字母被替换为“x”。 (FORMS-15681)
-* 从AEM Forms OSGi 6.5.22开始，Forms服务的renderPDFForm操作不会在服务器上执行仅客户端(runAt=client)脚本，只有标记为runAt=server或runAt=both的脚本才会执行，如下表所述。 (FORMS-16564)
-
-  | 脚本标记为runAt | 在服务器上执行 |
-  |---------------------|-------------------------|
-  | 服务器 | 是 |
-  | 两者 | 是 |
-  | 客户端 | 否 |
-
 * 当用户配置WebLogic 14c实例时，由于涉及SLF4J库的类加载器冲突，因此AEM Forms Service Pack 21 (6.5.21.0)中的PDFG服务（在JBoss上运行的JEE上）失败。 错误显示如下(CQDOC-22178)：
 
   ```java

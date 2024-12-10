@@ -3,9 +3,10 @@ title: 如何在AEM 6.5 Forms中使用hCaptcha&amp；reg；？
 description: 使用 hCaptcha 服务轻松增强表单安全性。里面有分步指南！
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
+source-git-commit: 96e6705349fc6969ab0c40c8c770c9a0d1967619
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '863'
 ht-degree: 19%
 
 ---
@@ -75,13 +76,13 @@ AEM 6.5自适应Forms支持hCaptcha&amp;reg。 您可以用它来在提交表单
 1. 在&#x200B;**[!UICONTROL 配置容器]**&#x200B;中，选择hCaptcha®的云配置。
 1. 单击“**[!UICONTROL 保存并关闭]**”。
 
-   如果您没有此类配置容器，请参阅部分[使用hCaptcha®](#connect-your-forms-environment-with-hcaptcha-service)连接您的AEM Forms环境，以了解如何创建配置容器。
+   如果您没有hCaptcha的配置容器，请参阅[使用hCaptcha连接AEM Forms环境®](#configure-hcaptcha-steps-to-configure-hcaptcha)部分，了解如何创建配置容器。
 
    ![选择配置容器](/help/forms/using/assets/captcha-properties.png)
 
 1. 选择自适应表单并单击&#x200B;**[!UICONTROL 编辑]**&#x200B;以在编辑器中打开该表单。
 1. 从组件浏览器中，将&#x200B;**[!UICONTROL Captcha]**&#x200B;组件拖放到自适应表单上。
-1. 选择&#x200B;**[!UICONTROL 自适应表单hCaptcha®]**&#x200B;组件，然后单击属性![属性图标](assets/configure-icon.svg)以打开属性对话框。 指定以下属性：
+1. 选择&#x200B;**[!UICONTROL Captcha]**&#x200B;组件，然后单击属性![属性图标](assets/configure-icon.svg)以打开属性对话框。 指定以下属性：
 
    ![hCaptcha® v1](assets/config-hcaptcha-v1-img.png)
 
@@ -91,13 +92,14 @@ AEM 6.5自适应Forms支持hCaptcha&amp;reg。 您可以用它来在提交表单
    * **[!UICONTROL 配置设置]：**&#x200B;选择为hCaptcha®配置的云配置。
      >[!NOTE]
      >出于类似目的，您的环境中可以有多个云配置。 所以，请仔细选择服务。 如果未列出任何服务，请参阅[使用hCaptcha®连接您的AEM Forms环境](#connect-your-forms-environment-with-hcaptcha-service)，了解如何创建将AEM Forms环境与hCaptcha®服务连接的Cloud Service。
-   * **错误消息：**&#x200B;提供验证码提交失败时向用户显示的错误消息。
-   * **验证码大小：**&#x200B;您可以选择hCaptcha®质询对话框的显示大小。 使用&#x200B;**[!UICONTROL 紧凑]**&#x200B;选项显示较小的大小，使用&#x200B;**[!UICONTROL 普通]**&#x200B;显示相对较大的hCaptcha®质询对话框，或使用&#x200B;**[!UICONTROL 不可见]**&#x200B;验证hCaptcha®而不在用户界面上显式呈现复选框小组件。
+
+   * **[!UICONTROL 错误消息]：**&#x200B;提供验证码提交失败时向用户显示的错误消息。
+   * **[!UICONTROL 验证码大小]：**&#x200B;您可以选择hCaptcha®质询对话框的显示大小。 使用&#x200B;**[!UICONTROL 紧凑]**&#x200B;选项显示较小的大小，使用&#x200B;**[!UICONTROL 普通]**&#x200B;显示相对较大的hCaptcha®质询对话框，或使用&#x200B;**[!UICONTROL 不可见]**&#x200B;验证hCaptcha®而不在用户界面上显式呈现复选框小组件。
 
 1. 选择&#x200B;**[!UICONTROL 完成]**。
 
 
-现在，只有合法表单(表单填充程序成功清除hCaptcha®服务带来的挑战)才允许表单提交。 hCaptcha®
+现在，只有合法表单(表单填充程序成功清除hCaptcha®服务带来的挑战)才允许表单提交。
 
 **hCaptcha® 是 Intuition Machines, Inc. 的注册商标。**
 

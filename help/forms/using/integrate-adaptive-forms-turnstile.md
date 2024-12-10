@@ -4,9 +4,9 @@ description: 使用Turnstile服务轻松增强表单安全性。 里面有分步
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
+source-git-commit: 4a0e8def5bafd4d90f50bf4b34a537c51e09ce27
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '842'
 ht-degree: 11%
 
 ---
@@ -77,13 +77,13 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
 1. 选择自适应表单，然后单击&#x200B;**[!UICONTROL 属性]**。 在&#x200B;**[!UICONTROL 配置容器]**&#x200B;中，为Turnstile®选择云配置。
 1. 单击“**[!UICONTROL 保存并关闭]**”。
 
-   如果您没有此类配置容器，请参阅[将您的AEM Forms环境与Turnstile连接](#connect-your-forms-environment-with-turnstile-service)部分，以了解如何创建配置容器。
+   如果您没有用于配置Captcha服务的配置容器，请参阅[配置Turnstile](#configure-turnstile-steps-to-configure-hcaptcha)部分以了解如何创建配置容器。
 
    ![选择配置容器](assets/captcha-properties.png)
 
 1. 选择一个自适应表单，然后单击&#x200B;**[!UICONTROL 编辑]**&#x200B;以在编辑器中打开您的自适应表单。
 1. 从组件浏览器中，将&#x200B;**[!UICONTROL Captcha]**&#x200B;组件拖放到自适应表单上。
-1. 选择&#x200B;**[!UICONTROL 自适应表单Turnstile]**&#x200B;组件并单击“属性”![“属性”图标](assets/configure-icon.svg)图标。 此时将打开“属性”对话框。 指定以下属性：
+1. 选择&#x200B;**[!UICONTROL Captcha]**&#x200B;组件并单击“属性”![“属性”图标](assets/configure-icon.svg)图标。 此时将打开“属性”对话框。 指定以下属性：
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
    ![Cloudfare Turnstile v1](assets/turnstile-setting-v1.png)
@@ -95,7 +95,8 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
    * **[!UICONTROL 配置设置]：**&#x200B;选择为Turnstile®配置的云配置。
      >[!NOTE]
      >出于类似目的，您的环境中可以有多个云配置。 所以，请仔细选择服务。 如果未列出任何服务，请参阅[将您的AEM Forms环境与Turnstile连接](#connect-your-forms-environment-with-turnstile-service)，了解如何创建将AEM Forms环境与Turnstile服务连接的Cloud Service。
-   * **错误消息：**&#x200B;提供验证码提交失败时向用户显示的错误消息。
+
+   * **[!UICONTROL 错误消息]：**&#x200B;提供验证码提交失败时向用户显示的错误消息。
    * **验证码大小：**&#x200B;您可以选择hCaptcha®质询对话框的显示大小。 使用&#x200B;**[!UICONTROL Compact]**&#x200B;选项显示小尺寸的，使用&#x200B;**[!UICONTROL Normal]**&#x200B;显示相对大尺寸的hCaptcha®质询对话框。
 
 1. 选择&#x200B;**[!UICONTROL 完成]**。
