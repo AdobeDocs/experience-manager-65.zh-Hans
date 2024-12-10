@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: bf750ddc14ce083a949c57322e0bc45594e66311
+source-git-commit: 5827cf69222962243cfebdc9c41eb73f90ac950a
 workflow-type: tm+mt
-source-wordcount: '7477'
+source-wordcount: '7480'
 ht-degree: 21%
 
 ---
@@ -461,7 +461,7 @@ ht-degree: 21%
       + [为资源添加水印](/help/assets/watermarking.md)
       + [资产模板](/help/assets/asset-templates.md)
    + Brand Portal {#brandportal}
-      + [使用 [!DNL Brand Portal] 配置 [!DNL Assets] ](/help/assets/configure-aem-assets-with-brand-portal.md)
+      + [使用 [!DNL Assets]  配置 [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
       + [将资源发布到 [!DNL Brand Portal]](/help/assets/brand-portal-publish-assets.md)
       + [Publish文件夹到 [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
       + [Publish收藏集至 [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
@@ -626,6 +626,7 @@ ht-degree: 21%
       + [为基于核心组件的自适应Forms创建和使用自定义错误处理程序](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
       + [向自适应表单添加版本控制、评论和注释](/help/forms/using/add-versioning-reviews-comments.md)
       + [比较自适应表单](/help/forms/using/compare-forms-core-components.md)
+      + [启用功能切换](/help/forms/using/enable-feature-toggle.md)
    + 自适应Forms — 基本创作{#adaptive-forms-basic-authoring}
       + [使用自适应表单的最佳实践](/help/forms/using/adaptive-forms-best-practices.md)
       + [创建自适应表单](/help/forms/using/creating-adaptive-form.md)

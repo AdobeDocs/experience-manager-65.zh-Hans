@@ -3,9 +3,9 @@ title: 向AEM 6.5自适应表单添加版本控制、注释和批注。
 description: 使用AEM 6.5自适应表单核心组件向自适应表单添加注释、批注和版本控制。
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '593'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,11 @@ ht-degree: 0%
 # 对自适应表单进行版本控制、审核和注释
 
 <!--
-<span class="preview"> This feature is under the Early Adopter Program. You can write to aem-forms-ea@adobe.com from your official email id to join the early adopter program and request access to the capability. </span>
+
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+
 -->
 
-<span class="preview">此功能在早期采用者计划下。 如果您有兴趣加入我们针对此功能的抢先访问计划，请从您的官方地址发送电子邮件至aem-forms-ea@adobe.com以请求访问</span>
 
 自适应表单核心组件允许表单作者向表单添加版本控制、注释和批注。 这些功能通过允许用户创建和管理多个版本、通过注释进行协作以及向特定表单部分添加注释来简化表单开发，从而增强表单构建体验。
 

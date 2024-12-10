@@ -3,16 +3,18 @@ title: 比较两个不同的自适应表单。
 description: 根据字段、内容和表单组件比较两个不同的表单。
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
-source-git-commit: a4e155de8a4f60d3746cecea110466b1d5d44dbb
+source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
 workflow-type: tm+mt
-source-wordcount: '212'
-ht-degree: 7%
+source-wordcount: '180'
+ht-degree: 8%
 
 ---
 
 # 比较自适应表单 {#compare-two-forms}
 
-<span class="preview">此功能在早期采用者计划下。 如果您有兴趣加入我们针对此功能的抢先访问计划，请从您的官方地址发送电子邮件至aem-forms-ea@adobe.com以请求访问</span>
+<!--
+<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+-->
 
 自适应Forms核心组件中的比较功能有助于表单作者通过分析字段、内容和组件识别两个表单之间的差异。
 

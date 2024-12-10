@@ -4,18 +4,16 @@ description: 使用Turnstile服务轻松增强表单安全性。 里面有分步
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: ab92f0a4c89f6c523539ccc048ea2d88b930936c
+source-git-commit: 65425a4a779c6e7adffb1174c0076e03cbc54ac1
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '846'
 ht-degree: 11%
 
 ---
 
 # 将AEM Forms环境与Turnstile连接 {#connect-your-forms-environment-with-turnstile-service}
 
-<!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
--->
+<span class="preview">此功能基于功能切换ID `FT_FORMS-12407`。 要启用该功能，请按照[启用功能切换](/help/forms/using/enable-feature-toggle.md)文章中给出的步骤操作。</span>
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
@@ -84,7 +82,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
    ![选择配置容器](assets/captcha-properties.png)
 
 1. 选择一个自适应表单，然后单击&#x200B;**[!UICONTROL 编辑]**&#x200B;以在编辑器中打开您的自适应表单。
-1. 从组件浏览器中，拖放&#x200B;**[!UICONTROL 自适应表单Turnstile]**&#x200B;组件或将其添加到自适应表单。
+1. 从组件浏览器中，将&#x200B;**[!UICONTROL Captcha]**&#x200B;组件拖放到自适应表单上。
 1. 选择&#x200B;**[!UICONTROL 自适应表单Turnstile]**&#x200B;组件并单击“属性”![“属性”图标](assets/configure-icon.svg)图标。 此时将打开“属性”对话框。 指定以下属性：
 
    <!--![Turnstile v2](assets/turnstile-settings-v2.png)-->
