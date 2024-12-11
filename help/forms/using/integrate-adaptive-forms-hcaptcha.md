@@ -4,17 +4,20 @@ description: 使用 hCaptcha 服务轻松增强表单安全性。里面有分步
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 6aa7a0a5-bd45-4628-abd0-312a9e6cf6fe
-source-git-commit: 96e6705349fc6969ab0c40c8c770c9a0d1967619
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '872'
 ht-degree: 19%
 
 ---
 
 # 使用hCaptcha连接AEM Forms环境® {#connect-your-forms-environment-with-hcaptcha-service}
 
-<span class="preview">此功能基于功能切换ID `FT_FORMS-12407`。 要启用该功能，请按照[启用功能切换](/help/forms/using/enable-feature-toggle.md)文章中给出的步骤操作。</span>
+<!--
+<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
+-->
 
+<span class="preview">默认情况下不启用此功能。 您可以从官方地址写信到aem-forms-ea@adobe.com请求访问该功能。</span>
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
@@ -68,12 +71,12 @@ AEM 6.5自适应Forms支持hCaptcha&amp;reg。 您可以用它来在提交表单
 
    配置hCAPTCHA服务后，即可在自适应表单中使用。
 
-## 在自适应Forms {#using-hCaptcha-in-aem-6.5}中使用hCaptcha®
+## 在自适应表单{#using-hCaptcha-in-aem-6.5}中使用hCaptcha®
 
 1. 打开您的AEM Forms环境。
 1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
 1. 选择自适应表单并单击&#x200B;**[!UICONTROL 属性]**。
-1. 在&#x200B;**[!UICONTROL 配置容器]**&#x200B;中，选择hCaptcha®的云配置。
+1. 在&#x200B;**[!UICONTROL 配置容器]**&#x200B;中，选择配置容器，该配置容器包含用于将AEM Forms与hCaptcha连接的云配置。
 1. 单击“**[!UICONTROL 保存并关闭]**”。
 
    如果您没有hCaptcha的配置容器，请参阅[使用hCaptcha连接AEM Forms环境®](#configure-hcaptcha-steps-to-configure-hcaptcha)部分，了解如何创建配置容器。

@@ -4,16 +4,20 @@ description: 使用Turnstile服务轻松增强表单安全性。 里面有分步
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 4a0e8def5bafd4d90f50bf4b34a537c51e09ce27
+source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '851'
 ht-degree: 11%
 
 ---
 
 # 将AEM Forms环境与Turnstile连接 {#connect-your-forms-environment-with-turnstile-service}
 
-<span class="preview">此功能基于功能切换ID `FT_FORMS-12407`。 要启用该功能，请按照[启用功能切换](/help/forms/using/enable-feature-toggle.md)文章中给出的步骤操作。</span>
+<!--
+<span class="preview">This feature is based on Feature Toggle id `FT_FORMS-12407`. To enable the feature, follow the steps given in the [Enable Feature Toggle](/help/forms/using/enable-feature-toggle.md) article. </span>
+-->
+
+<span class="preview">默认情况下不启用此功能。 您可以从官方地址写信到aem-forms-ea@adobe.com请求访问该功能。</span>
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
@@ -74,7 +78,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
 
 1. 打开您的AEM Forms环境。
 1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
-1. 选择自适应表单，然后单击&#x200B;**[!UICONTROL 属性]**。 在&#x200B;**[!UICONTROL 配置容器]**&#x200B;中，为Turnstile®选择云配置。
+1. 选择自适应表单，然后单击&#x200B;**[!UICONTROL 属性]**。 在&#x200B;**[!UICONTROL 配置容器]**&#x200B;中，选择包含将AEM Forms与Turnstile连接的云配置的配置容器。
 1. 单击“**[!UICONTROL 保存并关闭]**”。
 
    如果您没有用于配置Captcha服务的配置容器，请参阅[配置Turnstile](#configure-turnstile-steps-to-configure-hcaptcha)部分以了解如何创建配置容器。
