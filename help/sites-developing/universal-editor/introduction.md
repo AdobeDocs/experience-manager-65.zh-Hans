@@ -1,18 +1,18 @@
 ---
-title: 通用编辑器
+title: Universal Editor
 description: 了解通用编辑器的灵活性，以及它如何帮助您使用AEM 6.5增强Headless体验。
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: c3af0befce5534891d45c2507684a2017f9363f8
+source-git-commit: 773e398af5247a0de12143334ecfa44955ebbbcd
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 
-# 通用编辑器 {#universal-editor}
+# Universal Editor {#universal-editor}
 
 了解通用编辑器的灵活性，以及它如何帮助您使用AEM 6.5增强Headless体验。
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 通用编辑器是一个通用的可视化编辑器，它是Adobe Experience Manager Sites的一部分。 它使作者能够对任何Headless体验进行“所见即所得”(WYSIWYG)编辑。
 
 * 由于通用编辑器支持对所有形式的AEM Headless内容进行相同一致的可视化编辑，因此作者将受益于通用编辑器的灵活性。
-* 开发人员受益于通用编辑器的多功能性，因为它也支持实施之间的真正分离。 它允许开发人员利用他们选择的几乎任何框架或架构，而无需施加任何SDK或技术限制。
+* 开发人员受益于通用编辑器的多功能性，因为它也支持实施之间的真正分离。 它允许开发人员利用他们选择的几乎任何框架或体系结构，而不施加任何SDK或技术限制。
 
 有关更多详细信息，请参阅通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)上的[AEM as a Cloud Service文档。
 
@@ -178,3 +178,11 @@ AEM将打开基于此配置的页面通用编辑器。
 >[!TIP]
 >
 >有关开发人员通用编辑器快速入门的综合指南，请参阅AEM as a Cloud Service文档中的[面向AEM开发人员的通用编辑器概述](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/developer-overview)，同时请牢记本节中提到的AEM 6.5支持所需的必要更改。
+
+## AEM 6.5与AEM as a Cloud Service之间的差异 {#differences}
+
+AEM 6.5中的通用编辑器与AEM as a Cloud Service中的通用编辑器工作方式大致相同，包括UI和大部分设置。 然而，应当注意的是存在差异。
+
+* 6.5中的通用编辑器仅支持Headless用例。
+* 通用编辑器的设置对6.5略有不同（[，如当前文档中所述](#setup)）。
+* 6.5中的通用编辑器使用与AEM as a Cloud Service不同的资产选取器和内容片段选取器。
