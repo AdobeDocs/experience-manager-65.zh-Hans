@@ -9,10 +9,10 @@ feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: d5fb67933676c9ea5fdbeafe592960403e78af79
 workflow-type: tm+mt
-source-wordcount: '546'
-ht-degree: 30%
+source-wordcount: '529'
+ht-degree: 31%
 
 ---
 
@@ -61,10 +61,6 @@ ht-degree: 30%
    ![Blueprint选项卡 — Live Copy概述](assets/chlimage_1-360.png)
 
 1. 选择&#x200B;**Live Copy概述**&#x200B;以显示和使用与当前Blueprint相关的所有活动副本的概述。
-
-   >[!NOTE]
-   >
-   >有关详细信息，另请参阅知识库文章[Livecopy状态消息 — 最新/绿色/同步](https://helpx.adobe.com/experience-manager/kb/livecopy-status-message---up-to-date-green-in-sync.html)。
 
 1. 使用&#x200B;**关闭**&#x200B;以退出，并返回到&#x200B;**Sites**&#x200B;控制台。
 
