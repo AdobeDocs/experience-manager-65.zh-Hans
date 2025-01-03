@@ -9,14 +9,18 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
 
 # 配置基于证书的身份验证 {#configuring-certificate-based-authentication}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 User Management通常使用用户名和密码执行身份验证。 用户管理还支持基于证书的身份验证，您可以使用它通过Acrobat对用户进行身份验证或以编程方式对用户进行身份验证。 有关以编程方式对用户进行身份验证的详细信息，请参阅[使用AEM表单编程](https://www.adobe.com/go/learn_aemforms_programming_63)。
 
@@ -47,7 +51,7 @@ User Management通常使用用户名和密码执行身份验证。 用户管理�
 1. 单击“新建证书映射”，在“颁发者”列表中，选择在“信任存储区管理”中配置的证书别名。
 1. 将证书的某个属性映射到用户的属性。 例如，可以将证书的一般名称映射到用户的登录ID。
 
-   如果证书中属性的内容与用户管理数据库中用户属性的内容不同，则可以使用Java正则表达式(regex)来匹配这两个属性。 例如，如果证书的通用名称是&#x200B;*Alex Pink（身份验证）*&#x200B;和&#x200B;*Alex Pink（签名）*&#x200B;之类的名称，并且用户管理数据库中的通用名称是&#x200B;*Alex Pink*，则可以使用正则表达式来提取证书属性的所需部分（在此示例中为&#x200B;*Alex Pink*）。 您指定的正则表达式必须符合Java正则表达式规范。
+   如果证书中属性的内容与用户管理数据库中用户属性的内容不同，则可以使用Java正则表达式(regex)来匹配这两个属性。 例如，如果证书的通用名称是&#x200B;*Alex Pink（身份验证）*&#x200B;和&#x200B;*Alex Pink（签名）*&#x200B;之类的名称，并且用户管理数据库中的通用名称是&#x200B;*Alex Pink*，则使用正则表达式提取证书属性的必需部分（在此示例中为&#x200B;*Alex Pink*）。指定的正则表达式必须符合Java正则表达式规范。
 
    可通过在“自定义顺序”框中指定组的顺序来转换表达式。 自定义顺序与`java.util.regex.Matcher.replaceAll()`方法一起使用。 看到的行为将与该方法的行为相对应，并且必须相应地指定输入字符串（自定义顺序）。
 

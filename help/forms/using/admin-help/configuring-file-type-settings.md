@@ -8,14 +8,18 @@ feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '6188'
+source-wordcount: '6200'
 ht-degree: 0%
 
 ---
 
 # 配置文件类型设置 {#configuring-file-type-settings}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 在PDF Generator中，您可以为支持的文件类型设置应用程序设置。 在Windows上，您可以为每个支持的文件类型设置应用程序设置。 在UNIX和Linux上，您可以为HTML到PDF和OpenOffice设置应用程序设置。
 

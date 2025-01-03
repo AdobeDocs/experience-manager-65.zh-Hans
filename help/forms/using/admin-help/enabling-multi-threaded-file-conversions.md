@@ -9,9 +9,9 @@ feature: PDF Generator
 exl-id: 402c1fd4-c6c8-494e-b452-b56a91c4a397
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '896'
 ht-degree: 0%
 
 ---
@@ -93,6 +93,10 @@ PDF Generator允许您为某些类型的文件启用多线程文件转换。 多
 >OpenOffice必须安装在所有PDFG用户可以访问的目录位置。 您可以通过以PDFG用户身份登录并检查是否可以正常启动OpenOffice来验证这一点。
 
 ### 添加用户帐户 {#add-a-user-account}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 1. 在管理控制台中，单击服务>PDF Generator>用户帐户。
 1. 单击添加，然后输入在Forms服务器上具有管理权限的用户的用户名和密码。 如果要为OpenOffice配置用户，请关闭初始OpenOffice激活对话框。

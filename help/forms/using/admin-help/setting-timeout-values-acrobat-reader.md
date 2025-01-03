@@ -9,14 +9,18 @@ exl-id: 0a55aab3-14a3-41ad-8533-dc2cd116a848
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
 # 设置超时值以用于Acrobat Reader DC扩展  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 在Acrobat Reader DC Extensions中处理许多PDF文件时，请确保正确设置了以下超时值，以防止作业超时和失败：
 

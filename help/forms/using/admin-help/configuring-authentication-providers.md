@@ -9,14 +9,18 @@ exl-id: d72a3977-1423-49e0-899b-234bb76be378
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1592'
 ht-degree: 0%
 
 ---
 
 # 配置身份验证提供程序 {#configuring-authentication-providers}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 混合域至少需要一个身份验证提供程序，企业域至少需要一个身份验证提供程序或目录提供程序。
 

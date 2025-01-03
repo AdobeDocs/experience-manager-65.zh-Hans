@@ -9,14 +9,18 @@ exl-id: 34ac5f8b-f209-4f99-ad71-4df6f2c88c1e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '321'
 ht-degree: 0%
 
 ---
 
 # 编辑和转换现有域{#editing-and-converting-existing-domains}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 您可以从域管理页面更改现有域的设置。 您还可以将现有企业域转换为混合域。
 

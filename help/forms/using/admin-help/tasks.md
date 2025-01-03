@@ -9,14 +9,18 @@ exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '852'
 ht-degree: 0%
 
 ---
 
 # 使用任务 {#working-with-tasks}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 使用“任务搜索”页可以按用户名或任务ID搜索任务。 搜索结果将显示在“任务列表”页上，您可以在该页上访问任务的历史记录。 如果某个用户的任务过多，或者某个用户收到的任务分配有误，您也可以重新分配任务。
 

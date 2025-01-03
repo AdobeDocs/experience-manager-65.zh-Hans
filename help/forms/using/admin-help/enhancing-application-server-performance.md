@@ -9,9 +9,9 @@ exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1870'
+source-wordcount: '1882'
 ht-degree: 0%
 
 ---
@@ -100,6 +100,10 @@ AEM forms使用AEM forms存储库作为其数据源。 AEM表单存储库存储�
 当文档内容内联（即小于最大内联大小）时，内容将作为文档的序列化有效负载的一部分存储在数据库中。 因此，增加最大内联大小可能会影响数据库大小。
 
 **更改最大内联大小**
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 1. 在管理控制台中，单击设置>核心系统设置>配置。
 1. 在“默认文档最大内联大小”框中输入一个值，然后单击“确定”。

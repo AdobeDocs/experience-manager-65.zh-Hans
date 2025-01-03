@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
 
 # 使用Document Security网页 {#using-the-document-security-webpages}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 用户和管理员使用Document Security网页创建和管理策略，管理受策略保护的文档，以及监控与受策略保护文档关联的事件。 管理员还可以使用这些网页创建策略集并指定策略集协调员，配置Document Security默认设置，管理受邀的用户注册和帐户，以及监视和管理服务器、策略、用户和文档相关的事件。
 

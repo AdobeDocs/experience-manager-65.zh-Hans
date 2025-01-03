@@ -9,14 +9,18 @@ exl-id: f0ab712f-ecd9-4be8-a7a5-fd1a7a8c9a0b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '208'
 ht-degree: 0%
 
 ---
 
 # 启用和禁用安全备份模式 {#enabling-and-disabling-safe-backup-mode}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 在“备份设置”页上，您可以在安全备份模式下操作AEM表单，以便可靠地备份数据库和全局文档存储(GDS) (GDS)目录。
 

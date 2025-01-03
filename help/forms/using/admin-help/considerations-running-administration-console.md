@@ -9,14 +9,18 @@ exl-id: e15dae6f-d30d-4770-a5ca-34f522a01d31
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '135'
+source-wordcount: '147'
 ht-degree: 0%
 
 ---
 
 # 运行Administration Console时的注意事项 {#considerations-when-running-administrationconsole}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 运行Administration Console时需要考虑以下几点：
 

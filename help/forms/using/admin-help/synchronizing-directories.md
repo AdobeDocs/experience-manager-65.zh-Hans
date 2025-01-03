@@ -9,12 +9,13 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
+
 
 # 同步目录 {#synchronizing-directories}
 
@@ -50,11 +51,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在执行完整的目录同步之前，不会从用户管理数据库中删除从目录中删除的用户和组。
+> * 在执行完整的目录同步之前，不会从用户管理数据库中删除从目录中删除的用户和组。
+> * 确保用户具有访问管理员控制台的管理员权限。
+
 
 1. 在管理控制台中，单击设置>用户管理>域管理。
-1. 在“增量同步”下，选中该复选框，然后单击“保存”。
-1. 编辑将使用增量目录同步功能的每个企业域的目录设置。 在“用户设置”和“组设置”页面上，找到“修改时间戳”设置并输入`modify TimeStamp`作为值。 有关编辑企业域的详细信息，请参阅[编辑和转换现有域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)。
+2. 在“增量同步”下，选中该复选框，然后单击“保存”。
+3. 编辑将使用增量目录同步功能的每个企业域的目录设置。 在“用户设置”和“组设置”页面上，找到“修改时间戳”设置并输入`modify TimeStamp`作为值。 有关编辑企业域的详细信息，请参阅[编辑和转换现有域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)。
 
 ## 在同步期间启用或禁用详细日志记录 {#enable-or-disable-detailed-logging-during-synchronization}
 

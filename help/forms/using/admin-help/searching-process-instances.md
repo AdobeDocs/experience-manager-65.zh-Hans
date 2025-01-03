@@ -9,14 +9,18 @@ exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
 # 搜索进程实例{#searching-for-process-instances}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 使用“进程搜索”页可以输入用于查找进程实例的搜索标准。 您可以从表单工作流页面访问“流程搜索”页面，也可以通过单击“流程实例”页面上的“搜索”来访问“流程搜索”页面。
 

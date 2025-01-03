@@ -9,9 +9,9 @@ exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 创建进程时，Workbench用户可以指定任务是否可以因“外出”设置而被重定向。
 
 ## 查看用户的外出信息 {#view-a-user-s-out-of-office-information}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 1. 在管理控制台中，单击服务>表单工作流>外出。
 1. 在“外出”页面顶部附近的框中，您可以执行以下操作之一：

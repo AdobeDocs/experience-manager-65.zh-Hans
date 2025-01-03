@@ -1,5 +1,5 @@
 ---
-title: 使字体可用
+title: 提供字体
 description: 确保表单中使用的字体可用于托管AEM表单的J2EE应用程序服务器。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,18 @@ exl-id: e9eae896-b1e4-4caa-b466-ac8c9e7416a4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '216'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 2%
 
 ---
 
-# 使字体可用 {#make-fonts-available}
+# 提供字体 {#make-fonts-available}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 确保表单中使用的字体可用于托管AEM表单的J2EE应用程序服务器。 例如，请考虑以下方案。 表单设计人员将字体添加到Designer使用的字体目录中，并创建在单独的计算机上使用该字体的表单。 要使Output服务使用该字体，请将其放置在Customer fonts目录中。 如果Customer fonts目录不存在，请在托管AEM表单的J2EE应用程序服务器上创建一个目录。
 

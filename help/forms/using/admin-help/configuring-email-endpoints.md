@@ -9,14 +9,18 @@ exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '3796'
+source-wordcount: '3808'
 ht-degree: 0%
 
 ---
 
 # 配置电子邮件端点 {#configuring-email-endpoints}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 电子邮件端点使用户能够通过向指定的电子邮件帐户发送一个或多个文档（作为电子邮件附件）来调用服务。 电子邮件收件箱充当附件的收集点。 该服务将监视收件箱并处理附件。 转换结果将转发到端点中定义的用户。
 
@@ -32,7 +36,7 @@ ht-degree: 0%
 
 如果用户发送的文件和转换路径名称中包含西欧语言字符，则他们必须使用支持所需编码类型（Latin1 [ISO-8859-1]、西欧[Windows]或UTF-8）的电子邮件应用程序。 有关详细信息，请参阅用于应用程序服务器的&#x200B;*安装和部署AEM表单*&#x200B;文档。
 
-在配置电子邮件端点之前，请配置电子邮件服务。 （请参阅[配置默认电子邮件终结点设置](configuring-email-endpoints.md#configure-default-email-endpoint-settings)。） 电子邮件服务的配置参数有两个用途：
+在配置电子邮件端点之前，请配置电子邮件服务。 （请参阅[配置默认电子邮件终结点设置](configuring-email-endpoints.md#configure-default-email-endpoint-settings)。）电子邮件服务的配置参数有两个目的：
 
 * 配置所有电子邮件端点的通用属性
 * 为所有电子邮件端点提供默认值

@@ -9,14 +9,18 @@ exl-id: b2cbf5f3-ee13-47bf-bf7f-f6a1884cee66
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # 指定要嵌入的字体 {#specifying-fonts-to-embed}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 您可以指定哪些字体始终嵌入或从未嵌入到Forms服务生成的表单中。 嵌入字体会增加表单的文件大小。 嵌入用户系统上很少使用的异常字体。 请勿嵌入通常已安装的常用字体。
 

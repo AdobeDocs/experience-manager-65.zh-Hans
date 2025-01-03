@@ -9,9 +9,9 @@ feature: PDF Generator,Document Security
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 在“安全设置”页上，可以执行以下任务：
 
 ## 创建或编辑安全设置 {#create-or-edit-a-security-setting}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 *安全设置*&#x200B;控制使用该安全设置转换的文件的安全性和权限。
 

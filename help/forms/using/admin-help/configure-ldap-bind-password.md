@@ -9,14 +9,18 @@ exl-id: c72794f5-8767-409e-a1df-91a8fdc54d18
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '183'
+source-wordcount: '195'
 ht-degree: 0%
 
 ---
 
 # 配置LDAP绑定口令{#configure-the-ldap-bind-password}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 为避免安全风险，未配置导出配置文件(config.xml)中的绑定密码字段。 在将配置文件导入另一个系统之前，请确保配置此密码。 此密码将覆盖存储在数据库中的现有密码。 Null口令不会覆盖现有的非Null口令值。
 

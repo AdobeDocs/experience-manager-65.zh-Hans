@@ -9,14 +9,18 @@ exl-id: c96faae0-2b0f-4334-b61c-f13b2d1ec179
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '707'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
 
 # 处理停止的操作和分支 {#working-with-stalled-operations-and-branches}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 “停止的操作”页面和“停止的分支”页面显示已停止的进程。 如果在执行操作期间或之后发生错误，或者由于进程中的蓄意停止操作，进程可能会停止：
 

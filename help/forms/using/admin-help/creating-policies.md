@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '4713'
+source-wordcount: '4725'
 ht-degree: 0%
 
 ---
 
 # 创建和管理策略 {#creating-and-managing-policies}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 *策略*&#x200B;定义了一组机密性设置以及可以访问应用了该策略的文档的用户。 *策略集*&#x200B;用于对具有共同业务目的的一组策略进行分组。 然后，这些策略集将提供给系统中的部分用户。 有关策略的详细信息，请参阅[策略和受策略保护的文档](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents)。
 

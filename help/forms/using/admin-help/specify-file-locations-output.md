@@ -9,14 +9,18 @@ exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '327'
+source-wordcount: '339'
 ht-degree: 1%
 
 ---
 
 # 指定输出的文件位置 {#specify-file-locations-for-output}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 您可以指定Output查找所需特定类型文件的位置。
 

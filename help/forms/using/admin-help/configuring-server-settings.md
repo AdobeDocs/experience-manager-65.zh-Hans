@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2631'
+source-wordcount: '2643'
 ht-degree: 0%
 
 ---
@@ -35,6 +35,10 @@ ht-degree: 0%
 如果您的流程是在不需要电子邮件的情况下设计和实施的，则您无需在“电子邮件设置”页面上配置任何选项。
 
 ### 配置传出电子邮件设置 {#configure-outgoing-email-settings}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 1. 在管理控制台中，单击服务>表单工作流>服务器设置>电子邮件设置。
 1. 选择启用传出消息。

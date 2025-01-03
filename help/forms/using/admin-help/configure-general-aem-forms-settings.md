@@ -9,9 +9,9 @@ exl-id: e1519477-b5a8-4947-8597-26b945a3b819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 1b76b30d8db59e6ad98af1d29f17443442d5378e
 workflow-type: tm+mt
-source-wordcount: '1762'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
-> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+> * 确保用户具有访问管理员控制台的管理员权限。
+> * 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 有关启用安全备份模式的信息，请参阅[启用和禁用安全备份模式](/help/forms/using/admin-help/enabling-disabling-safe-backup-mode.md#enabling-and-disabling-safe-backup-mode)。
 

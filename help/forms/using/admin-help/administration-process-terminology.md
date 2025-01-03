@@ -9,14 +9,18 @@ exl-id: 8944cbae-865d-4b1c-b3bf-00c3a247d776
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '175'
+source-wordcount: '187'
 ht-degree: 0%
 
 ---
 
 # 关于管理和过程术语 {#about-administration-and-process-terminology}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 要有效地管理表单工作流，您应该了解以下术语和元素的层次结构：
 

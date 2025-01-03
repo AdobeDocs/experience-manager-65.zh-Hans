@@ -9,14 +9,18 @@ exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: c941de0b069b5bea9edb822eca0ebbb5483ae9ed
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1716'
 ht-degree: 0%
 
 ---
 
 # 在AEM表单中启用单点登录{#enabling-single-sign-on-in-aem-forms}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 AEM表单提供两种启用单点登录(SSO)的方法 — HTTP标头和SPNEGO。
 
@@ -71,7 +75,7 @@ AEM表单提供两种启用单点登录(SSO)的方法 — HTTP标头和SPNEGO。
 >JEE上的AEM Forms不支持在多个子域环境中使用Kerberos/SPNEGO配置SSO。
 
 1. 决定使用哪个域来启用SSO。 AEM Forms Server和用户必须是同一Windows域或受信任域的一部分。
-1. 在Active Directory中，创建一个代表AEM Forms Server的用户。 （请参阅[创建用户帐户](enabling-single-sign-on-aem.md#create-a-user-account)。） 如果要将多个域配置为使用SPNEGO，请确保每个用户的密码不同。 如果密码不同，则SPNEGO SSO不起作用。
+1. 在Active Directory中，创建一个代表AEM Forms Server的用户。 （请参阅[创建用户帐户](enabling-single-sign-on-aem.md#create-a-user-account)。）如果您要将多个域配置为使用SPNEGO，请确保每个用户的密码不同。 如果密码不同，则SPNEGO SSO不起作用。
 1. 映射服务主体名称。 (请参阅[映射服务主体名称(SPN)](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn)。)
 1. 配置域控制器。 （请参阅[防止Kerberos完整性检查失败](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures)。）
 1. 添加或编辑企业域，如[添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains)或[编辑和转换现有域](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains)中所述。 创建或编辑企业域时，请执行以下任务：

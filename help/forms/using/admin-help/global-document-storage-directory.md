@@ -9,9 +9,9 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
@@ -82,13 +82,15 @@ AEM Forms安装完成后，您可以在管理控制台中更改GDS位置。 手�
 
 >[!NOTE]
 >
->请通过以下方式迁移数据，否则将会发生数据丢失。
+> * 请通过以下方式迁移数据，否则将会发生数据丢失。
+> * 确保用户具有访问管理员控制台的管理员权限。
+
 
 1. 登录到管理控制台并单击设置>核心系统设置>配置。
-1. 在“全局文档存储目录”框中，输入新GDS目录的完整路径，然后单击“确定”。
-1. 立即关闭应用程序服务器。
-1. 将所有文件从旧的GDS目录移动到新位置，保留内部目录结构。
-1. 重新启动应用程序服务器。
+2. 在“全局文档存储目录”框中，输入新GDS目录的完整路径，然后单击“确定”。
+3. 立即关闭应用程序服务器。
+4. 将所有文件从旧的GDS目录移动到新位置，保留内部目录结构。
+5. 重新启动应用程序服务器。
 
 ## 关于部署文件 {#about-deployment-files}
 

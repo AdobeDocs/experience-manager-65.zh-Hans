@@ -9,14 +9,18 @@ exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10824'
+source-wordcount: '10836'
 ht-degree: 0%
 
 ---
 
 # 配置服务设置 {#configure-service-settings}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 您可以使用“服务管理”页为AEM表单中的每项服务配置设置。 可用设置因所配置的服务而异。
 
@@ -38,7 +42,7 @@ ht-degree: 0%
 
 ## 审核工作流服务设置 {#audit-workflow-service-settings}
 
-Workbench提供了在运行时记录进程实例并播放它们以观察进程行为的功能。 （请参阅[工作台帮助](https://www.adobe.com/go/learn_aemforms_workbench_63)。） 为了节省Forms Server文件系统的空间，您可以限制存储的进程记录数据量。 您可以配置审计工作流服务( `AuditWorkflowService`)的以下属性：
+Workbench提供了在运行时记录进程实例并播放它们以观察进程行为的功能。 （请参阅[Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_63)。）要节省Forms Server文件系统的空间，您可以限制存储的进程记录数据量。 您可以配置审计工作流服务( `AuditWorkflowService`)的以下属性：
 
 **maxNumberOfRecordingInstances：**&#x200B;存储的最大录制数。 当存储最大记录数时，最旧的记录将在创建新记录时从文件系统中删除。 如果您倾向于创建多个录制，并且希望自动删除旧录制，则此属性非常有用。 默认值为 50。
 
@@ -692,7 +696,7 @@ CRL查找的&#x200B;**本地URI：**&#x200B;本地CRL提供程序的URL。 仅�
 
 ## 观察文件夹服务设置 {#watched-folder-service-settings}
 
-Watched文件夹服务(`WatchedFolder`)配置所有观察文件夹端点通用的属性。 它还提供监视文件夹端点的默认值。 （请参阅[配置观察文件夹端点](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)。） 它不会被外部客户端应用程序调用，也不会在Workbench中创建的进程中使用。
+Watched文件夹服务(`WatchedFolder`)配置所有观察文件夹端点通用的属性。 它还提供监视文件夹端点的默认值。 （请参阅[配置观察文件夹端点](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#configuring-watched-folder-endpoints)。）它不是由外部客户端应用程序调用的，也不是在Workbench中创建的进程中使用的。
 
 以下设置可用于Watched Folder服务。
 

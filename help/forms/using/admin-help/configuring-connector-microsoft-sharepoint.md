@@ -9,19 +9,24 @@ exl-id: a8be58f1-1961-4bf5-aaad-feb4489fb389
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 98cbaaf64c0268be1afe7196a7bbbf5c93f02148
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '214'
 ht-degree: 1%
 
 ---
 
-# 为Microsoft SharePoint配置连接器 {#configuring-connector-for-microsoft-sharepoint}
+
+# 为Microsoft SharePoint配置连接器
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 Microsoft SharePoint的连接器支持在AEM表单与Microsoft SharePoint之间进行通信。 有关其他背景信息，请参阅[服务参考](https://www.adobe.com/go/learn_aemforms_services_63)中的“Connectors for ECM”。
 
 1. 在管理控制台中，单击服务>Microsoft SharePoint的连接器。
-1. 为您的SharePoint服务器指定以下设置：
+2. 为您的SharePoint服务器指定以下设置：
 
    **SharePoint服务器主机名：** SharePoint服务器上Web应用程序的主机名端口号，格式为`[hostname]:'port'`。
 
@@ -31,7 +36,7 @@ Microsoft SharePoint的连接器支持在AEM表单与Microsoft SharePoint之间�
 
    **域名：** SharePoint服务器所在的域。
 
-1. 单击“保存”。
+3. 单击“保存”。
 
 ## Microsoft SharePoint配置服务 {#microsoft-sharepoint-configuration-service}
 

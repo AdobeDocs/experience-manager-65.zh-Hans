@@ -9,21 +9,25 @@ exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
 
 # 配置SAML服务提供程序设置{#configure-saml-service-provider-settings}
 
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
+
 安全断言标记语言(SAML)是在配置企业域或混合域的授权时可以选择的一个选项。 SAML主要用于支持跨多个域的SSO。 将SAML配置为身份验证提供程序时，用户通过指定的第三方身份提供程序(IDP)登录并验证AEM Forms。
 
 有关SAML的说明，请参阅[安全断言标记语言(SAML) V2.0技术概述](https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html)。
 
 1. 在管理控制台中，单击设置>用户管理>配置> SAML服务提供程序设置。
-1. 在“服务提供者实体ID”框中，键入要用作AEM Forms服务提供者实现的标识符的唯一ID。 您还可以在配置IDP时指定此唯一ID（例如，`um.lc.com`。） 您还可以使用用于访问AEM表单的URL（例如，`https://AEMformsserver`）。
+1. 在“服务提供者实体ID”框中，键入要用作AEM Forms服务提供者实现的标识符的唯一ID。 您还可以在配置IDP时指定此唯一ID（例如`um.lc.com`）。您还可以使用用于访问AEM表单的URL（例如`https://AEMformsserver`）。
 1. 在“服务提供商基本URL”框中，键入Forms服务器的基本URL（例如，`https://AEMformsserver:8080`）。
 1. （可选）要使AEM Forms能够向IDP发送已签名的身份验证请求，请执行以下任务：
 

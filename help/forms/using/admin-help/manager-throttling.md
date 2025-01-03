@@ -9,14 +9,18 @@ exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1030'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
 
 # 工作管理器和限制{#work-manager-and-throttling}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 AEM表单（及更早版本）使用JMS队列异步执行操作。 在AEM表单中，JMS队列已由工作管理器取代。 本文档提供了有关工作管理器的背景信息，并提供了有关配置工作管理器限制选项的说明。
 

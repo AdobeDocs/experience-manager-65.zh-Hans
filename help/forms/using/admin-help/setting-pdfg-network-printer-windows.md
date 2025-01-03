@@ -9,14 +9,18 @@ feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '604'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
 # 设置PDFG网络打印机（仅限Windows） {#setting-up-a-pdfg-network-printer-windows-only}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 PDFG网络打印机允许用户从任何支持打印的应用程序生成PDF文档。 用户安装PDFG网络打印机后，Windows控制面板的“打印机”部分将出现名为&#x200B;*PDF生成器*&#x200B;的新打印机。 如果同名打印机已存在，则提示用户提供另一个名称。
 

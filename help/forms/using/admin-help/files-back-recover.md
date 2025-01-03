@@ -9,14 +9,18 @@ exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '2017'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
 
 # 要备份和恢复的文件 {#files-to-back-up-and-recover}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 以下各节将更详细地介绍必须备份的应用程序和数据文件。
 
@@ -108,9 +112,9 @@ IBM提供了一套工具和帮助系统，可帮助数据库管理员管理其�
 
 DB2具有将数据库备份到Tivoli Storage Manager的内置功能。 通过使用Tivoli Storage Manager，DB2备份可以存储在其他介质或本地硬盘上。
 
-### oracle {#oracle}
+### Oracle {#oracle}
 
-使用快照备份或将Oracle数据库配置为在归档日志模式下运行。 (请参阅[Oracle备份：简介](https://www.databasedesign-resource.com/oracle-backup.md)。) 有关备份和恢复Oracle数据库的详细信息，请转到以下站点：
+使用快照备份或将Oracle数据库配置为在归档日志模式下运行。 (请参阅[Oracle备份：简介](https://www.databasedesign-resource.com/oracle-backup.md)。)有关备份和恢复Oracle数据库的详细信息，请转到以下站点：
 
 [Oracle备份和恢复：](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html)更详细地介绍备份和恢复的概念以及使用Recovery Manager (RMAN)进行备份、恢复和报告的最常用技术，并提供有关如何规划备份和恢复策略的更多信息。
 
@@ -131,7 +135,7 @@ SQL Server还提供了两种备份和恢复工具：
 
 ### MySQL {#mysql}
 
-在Windows中使用MySQLAdmin或修改INI文件，将MySQL数据库配置为以二进制日志模式运行。 （请参阅[MySQL二进制日志记录](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)。） InnoBase软件也提供了用于MySQL的热备份工具。 （请参阅[Innobase热备份](https://www.innodb.com/hot-backup/features.md)。）
+在Windows中使用MySQLAdmin或修改INI文件，将MySQL数据库配置为以二进制日志模式运行。 （请参阅[MySQL二进制日志记录](https://dev.mysql.com/doc/refman/5.1/en/binary-log.html)。）InnoBase软件中还提供了MySQL的热备份工具。 （请参阅[Innobase热备份](https://www.innodb.com/hot-backup/features.md)。）
 
 >[!NOTE]
 >

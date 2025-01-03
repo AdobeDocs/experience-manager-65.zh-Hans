@@ -9,12 +9,13 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
 workflow-type: tm+mt
-source-wordcount: '3229'
+source-wordcount: '3241'
 ht-degree: 0%
 
 ---
+
 
 # 配置目录 {#configuring-directories}
 
@@ -25,6 +26,10 @@ ht-degree: 0%
 对于您配置的每个企业域，指定验证提供程序查询用户信息的目录。 可以将目录添加到现有企业域或要添加的新企业域。 您可以为一个域配置多个目录。 您还可以配置域以使用自定义服务提供者接口(SPI)进行同步。
 
 ### 添加目录 {#add-a-directory}
+
+>[!NOTE]
+>
+> 确保用户具有访问管理员控制台的管理员权限。
 
 1. 在管理控制台中，单击设置>用户管理>域管理。
 1. 单击新建企业域或选择现有企业域。

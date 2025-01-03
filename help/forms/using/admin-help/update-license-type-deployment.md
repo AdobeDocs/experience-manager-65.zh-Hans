@@ -9,14 +9,18 @@ exl-id: 6b975aa1-9270-4098-9af5-c5cc67cb7b5d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '282'
 ht-degree: 0%
 
 ---
 
 # 更新部署的许可证类型 {#update-the-license-type-for-the-deployment}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 在AEM表单安装过程中，您使用Configuration Manager配置和部署所需的AEM表单模块。 默认情况下，这些模块配置有60天的评估版许可证。 使用管理控制台中的“更改许可证”页面可更改部署的许可证类型。 当前部署的模块将显示在“更改许可证”页面上。
 

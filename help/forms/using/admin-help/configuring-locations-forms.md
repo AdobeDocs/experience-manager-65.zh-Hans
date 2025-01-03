@@ -9,14 +9,18 @@ exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '834'
 ht-degree: 1%
 
 ---
 
 # 为Forms配置位置 {#configuring-locations-for-forms}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 您可以指定属性的URL、URI和文件位置，例如Web根目录、要检索的表单的位置、PDForm转换中使用的种子PDF文件以及缓存位置。
 
@@ -52,7 +56,7 @@ ht-degree: 1%
 
 默认值为空字符串。
 
-**Web根URI：**&#x200B;应用程序的Web根。 此值会与通过AEM Forms SDK指定的sTargetURL参数（以相对形式提供sTargetURL时）相结合，以构建绝对URL来访问特定于应用程序的Web内容。
+**Web根URI：**&#x200B;应用程序的Web根。 该值会与通过AEM forms SDK指定的sTargetURL参数（以相对形式提供sTargetURL时）相结合，来构造访问特定于应用程序的Web内容的绝对URL。
 
 默认值为空字符串。
 

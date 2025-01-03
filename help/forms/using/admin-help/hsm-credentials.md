@@ -9,9 +9,9 @@ exl-id: facbeab2-de95-4778-894c-faa771d3391e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1322'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ AEM forms Digital Signatures可以使用存储在HSM上的凭据来应用服务�
 >更改HSM配置后，重新启动AEM Forms服务器。
 
 ## 在HSM设备联机时创建HSM凭据的别名 {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 1. 在管理控制台中，单击“设置”>“信任存储区管理”>“HSM凭据”，然后单击“添加”。
 1. 在“配置文件名称”框中，键入用于标识别名的字符串。 此值用作某些数字签名操作（如“签名签名字段”操作）的属性。
@@ -103,4 +107,4 @@ AEM Forms使用基于Web服务的IPC/RPC机制。 此机制使AEM表单能够使
 此机制不支持在线创建HSM配置文件或进行状态检查。 但是，可通过两种方式创建HSM配置文件和执行状态检查：
 
 * 通过传递签名者证书来创建AEM Forms客户端凭据。 按照[在Windows 64位平台上使用Sun JDK配置AEM Forms ES的HSM支持](https://kb2.adobe.com/cps/808/cpsid_80835.html)中的步骤操作。 Web服务位置作为Credential属性传入。 还支持使用证书或证书SHA-1十六进制创建离线HSM配置文件。 但是，如果您已从早期版本的AEM表单升级到AEM表单，则进行客户端更改，因为凭据包含证书和Web服务信息。
-* Web服务位置在Signature服务的管理控制台中指定。 （请参阅[签名服务设置](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)。） 在此，客户端仅携带信任存储区中HSM配置文件的别名。 即使您从早期版本的AEM表单升级到AEM表单，也可以无缝地使用此选项，而无需进行任何客户端更改。 此选项不支持使用证书SHA-1的HSM配置文件。
+* Web服务位置在Signature服务的管理控制台中指定。 （请参阅[签名服务设置](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)。）在此处，客户端仅承载信任存储区中HSM配置文件的别名。 即使您从早期版本的AEM表单升级到AEM表单，也可以无缝地使用此选项，而无需进行任何客户端更改。 此选项不支持使用证书SHA-1的HSM配置文件。

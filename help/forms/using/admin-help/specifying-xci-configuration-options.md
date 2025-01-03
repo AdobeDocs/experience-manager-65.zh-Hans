@@ -9,16 +9,20 @@ exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '161'
 ht-degree: 1%
 
 ---
 
 # 指定XCI配置选项 {#specifying-xci-configuration-options}
 
-Forms允许您指定可用于呈现的自定义XCI文件。 (请参阅[为Forms配置位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)。) 默认情况下，Forms会覆盖XCI文件中指定的某些选项，其中包括以下选项：
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
+
+Forms允许您指定可用于呈现的自定义XCI文件。 (请参阅[为Forms配置位置](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms)。)默认情况下，Forms会覆盖XCI文件中指定的某些选项，包括：
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`

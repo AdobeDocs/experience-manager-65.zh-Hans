@@ -9,14 +9,18 @@ exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # 用户管理 {#user-management}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 用户管理允许您使用安全声明标记语言(SAML)，在AEM表单模块与受SiteMinder保护的联网应用程序之间启用单点登录(SSO)。 实施SSO时，AEM Forms用户登录页面不是必需的，并且如果用户已通过公司门户进行身份验证，则不会显示。
 

@@ -9,14 +9,18 @@ exl-id: e372558d-4c1d-47d9-9989-f697e781cce9
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '81'
+source-wordcount: '93'
 ht-degree: 0%
 
 ---
 
 # 搜索用户或组 {#search-for-a-user-or-group}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 1. 在管理控制台中，单击设置>用户管理>用户和群组。
 1. 指定信息以缩小搜索范围，然后单击“查找”。 搜索结果将列在页面底部。 您可以通过单击任意列标题对列表进行排序。 最多返回1000个结果。

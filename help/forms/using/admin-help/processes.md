@@ -9,9 +9,9 @@ exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1631'
+source-wordcount: '1643'
 ht-degree: 0%
 
 ---
@@ -183,6 +183,10 @@ ht-degree: 0%
 1. 选择操作并单击“重试”。
 
 ## 使用操作 {#working-with-operations}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 “操作详细资料”页显示流程中的一个操作及其当前用户分配的摘要。
 

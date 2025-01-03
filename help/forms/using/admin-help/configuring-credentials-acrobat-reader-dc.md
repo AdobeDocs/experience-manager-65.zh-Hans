@@ -9,9 +9,9 @@ exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '546'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -37,10 +37,14 @@ ht-degree: 0%
 
 ## 导入Acrobat Reader DC Extensions凭据 {#import-a-acrobat-reader-dc-extensions-credential}
 
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
+
 1. 在管理控制台中，单击设置>信任存储区管理>本地凭据。
 1. 单击导入，然后在“信任存储区类型”下选择Acrobat Reader DC Extensions Credential。
 1. （可选）要指示此凭据是用于Acrobat Reader DC扩展的默认凭据，请选择“默认”。
-1. 在“别名”框中，键入凭据的标识符。 此标识符用作Acrobat Reader DC扩展中凭据的显示名称。 此别名还用于使用AEM Forms SDK以编程方式访问凭据。
+1. 在“别名”框中，键入凭据的标识符。 此标识符用作Acrobat Reader DC扩展中凭据的显示名称。 此别名还用于使用AEM forms SDK以编程方式访问凭据。
 
    >[!NOTE]
    >

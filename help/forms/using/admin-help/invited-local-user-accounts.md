@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
 
 # 管理受邀的用户帐户和本地用户帐户 {#managing-invited-and-local-user-accounts}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 使用“受邀用户和本地用户”页可以管理您的受邀用户和本地用户。 仅当满足以下要求时，才会显示此页：
 

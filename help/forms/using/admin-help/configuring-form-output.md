@@ -9,9 +9,9 @@ exl-id: d739806c-ce72-40fd-b304-3262a0988d96
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '256'
 ht-degree: 1%
 
 ---
@@ -42,6 +42,10 @@ ht-degree: 1%
 1. 单击“保存”。
 
 ## 配置表单提交前自定义脚本的调用 {#configuring-invocation-of-custom-scripts-before-form-submit}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 执行以下步骤以启用该功能：
 

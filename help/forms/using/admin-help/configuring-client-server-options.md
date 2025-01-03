@@ -9,14 +9,18 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '10266'
+source-wordcount: '10278'
 ht-degree: 0%
 
 ---
 
 # 配置Document Security服务器 {#configure-the-document-security-server}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 1. 在管理控制台中，单击服务> document security >配置>服务器配置。
 1. 配置设置并单击“确定”。
@@ -308,9 +312,9 @@ Document Security可以审核和记录与与与受策略保护的文档、策略
 
 **切换文档：**&#x200B;用户或管理员切换附加到文档的策略。
 
-**Publish Document As：**&#x200B;在服务器上注册了一个新文档，其documentName和许可证与现有文档相同，并且该文档没有父子关系。 此事件可以使用AEM Forms SDK触发。
+**Publish Document As：**&#x200B;在服务器上注册了一个新文档，其documentName和许可证与现有文档相同，并且该文档没有父子关系。 此事件可以使用AEM表单SDK触发。
 
-**迭代文档：**&#x200B;在服务器上注册了一个新文档，该文档的documentName和许可证与现有文档相同，并且该文档具有父子关系。 此事件可以使用AEM Forms SDK触发。
+**迭代文档：**&#x200B;在服务器上注册了一个新文档，该文档的documentName和许可证与现有文档相同，并且该文档具有父子关系。 此事件可以使用AEM表单SDK触发。
 
 **策略事件**
 
@@ -366,7 +370,7 @@ Document Security可以审核和记录与与与受策略保护的文档、策略
 
 **已同步客户端**&#x200B;客户端应用程序必须与服务器同步信息以允许脱机访问。
 
-**版本不匹配：**&#x200B;尝试连接到服务器的AEM Forms SDK版本与服务器不兼容。
+**版本不匹配：**&#x200B;与服务器不兼容的AEM Forms SDK版本尝试连接到服务器。
 
 **目录同步信息：**&#x200B;此信息在“事件”页面中不可用。 当前目录同步信息（包括当前同步状态和上次同步的时间）将显示在“域管理”页上。 要访问管理控制台中的“域管理”页面，请单击设置>用户管理>域管理。
 
@@ -555,7 +559,7 @@ Document Security可以跟踪可能在受保护文档上执行的各种自定义
 
 注册电子邮件包含指向注册页面的链接以及有关如何注册的信息。 受邀用户注册后，Document Security会发出一封激活电子邮件，其中包含指向激活页面的链接。 激活后，帐户将保持有效，直至您停用或删除它。
 
-如果启用内置注册，则只需指定SMTP服务器、注册电子邮件详细信息、访问功能以及重置密码电子邮件信息一次。 在启用内置注册之前，请确保已在“用户管理”中创建了本地域，并将“Document Security邀请用户”角色分配给组织中的相应用户和组。 （请参阅[添加本地域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)和[创建和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。） 如果您不使用内置注册，则必须使用AEM Forms SDK创建自己的用户注册系统。 请参阅[使用AEM forms编程](/help/forms/developing/introducing-java-api-soap-quick.md)中有关“为AEM表单开发SPI”的帮助。 如果不使用“Built-in Registration（内置注册）”选项，建议在激活电子邮件和客户端登录屏幕上配置消息，以通知用户如何联系管理员以获取新密码或其他信息。
+如果启用内置注册，则只需指定SMTP服务器、注册电子邮件详细信息、访问功能以及重置密码电子邮件信息一次。 在启用内置注册之前，请确保已在“用户管理”中创建了本地域，并将“Document Security邀请用户”角色分配给组织中的相应用户和组。 （请参阅[添加本地域](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain)和[创建和配置角色](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)。）如果不使用内置注册，则必须使用AEM forms SDK创建自己的用户注册系统。 请参阅[使用AEM forms编程](/help/forms/developing/introducing-java-api-soap-quick.md)中有关“为AEM表单开发SPI”的帮助。 如果不使用“Built-in Registration（内置注册）”选项，建议在激活电子邮件和客户端登录屏幕上配置消息，以通知用户如何联系管理员以获取新密码或其他信息。
 
 **启用并配置受邀用户注册**
 
@@ -861,7 +865,7 @@ Microsoft Office的Acrobat Reader DC扩展是一个与Microsoft Office产品Micr
    * Sun Solaris
    * HP-UX
 
-   `SDKVersions`指定客户端应用程序使用的Document Security C++客户端API的版本。 例如：`"8.2"`。
+   `SDKVersions`指定客户端应用程序使用的Document Security C++客户端API的版本。 例如 `"8.2"`。
 
    `APPFamilies`由客户端API定义。
 

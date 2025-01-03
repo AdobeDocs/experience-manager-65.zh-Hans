@@ -9,14 +9,18 @@ exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '855'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
 
 # 自定义搜索模板 {#customizing-search-templates}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 您可以创建要在Workspace中使用的搜索模板，以从“待办事项”和“跟踪”页面搜索流程实例。 您还可以编辑或删除现有搜索模板。
 

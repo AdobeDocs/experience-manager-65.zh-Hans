@@ -9,14 +9,18 @@ exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1442'
+source-wordcount: '1454'
 ht-degree: 0%
 
 ---
 
 # 配置输出的缓存  {#configuring-caching-for-output}
+
+>[!NOTE]
+> 
+> 确保用户具有访问管理员控制台的管理员权限。
 
 输出服务将XML表单数据与Designer中创建的表单设计合并，以创建各种格式的文档输出流。
 
