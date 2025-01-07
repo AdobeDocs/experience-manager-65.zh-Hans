@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 5827cf69222962243cfebdc9c41eb73f90ac950a
+source-git-commit: 2fc6225887436685f598baf4ea2c4a01534d8704
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7475'
 ht-degree: 21%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 21%
    + [AEM Forms Service Pack修补程序](/help/release-notes/aem-forms-hotfix.md)
    + [主要功能和增强功能汇总](/help/release-notes/cumulative-features-enhancements.md)
    + [已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md)
-   + [触屏UI功能状态](/help/release-notes/touch-ui-features-status.md)
+   + [触控UI功能状态](/help/release-notes/touch-ui-features-status.md)
 + 安全性 {#security}
    + [用户管理和安全性](/help/sites-administering/security.md)
    + [用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md)
@@ -55,7 +55,7 @@ ht-degree: 21%
    + [在生产就绪模式下运行AEM](/help/sites-administering/production-ready.md)
    + [Identity Management](/help/sites-administering/identity-management.md)
    + [对AEM Managed Services的Adobe IMS身份验证和Admin Console支持](/help/sites-administering/ims-config-and-admin-console.md)
-   + [创建已关闭的用户组](/help/sites-administering/cug.md)
+   + [创建封闭用户组](/help/sites-administering/cug.md)
    + [缓解AEM中的序列化问题](/help/sites-administering/mitigating-serialization-issues.md)
    + [用户同步](/help/sites-administering/sync.md)
    + [封装令牌支持](/help/sites-administering/encapsulated-token.md)
@@ -229,7 +229,7 @@ ht-degree: 21%
          + [为Adobe Analytics配置链接跟踪](/help/sites-administering/adobeanalytics-link.md)
          + [将组件数据映射到Adobe Analytics属性](/help/sites-administering/adobeanalytics-mapping.md)
          + [为Adobe Analytics配置视频跟踪](/help/sites-administering/adobeanalytics-video.md)
-         + [HTTP2 内容投放常见问题解答](/help/sites-administering/scene7-http2faq.md)
+         + [HTTP2 内容传递常见问题解答](/help/sites-administering/scene7-http2faq.md)
          + [Adobe Campaign集成疑难解答](/help/sites-administering/troubleshooting-campaignintegration.md)
          + [SharePoint连接器](/help/sites-administering/sharepoint-connector.md)
          + [SharePoint连接器许可证、版权声明和免责声明](/help/sites-administering/sharepoint-connector-licenses.md)
@@ -340,7 +340,7 @@ ht-degree: 21%
          + [视频](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md)
          + [使用 Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
          + [资产测试的命名约定](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
-+ 资源 {#assets}
++ 资产 {#assets}
    + [关于DAM](/help/assets/assets.md)
    + [资产最佳实践](/help/assets/best-practices-for-assets.md)
    + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
@@ -350,14 +350,14 @@ ht-degree: 21%
       + [使用资源元数据](/help/assets/metadata.md)
       + [多语言资源](/help/assets/multilingual-assets.md)
       + [在Assets中使用 [!DNL Adobe Stock] 资源](/help/assets/aem-assets-adobe-stock.md)
-      + [预览 3D 资源](/help/assets/previewing-3d-assets.md)
-      + [审核文件夹资源和收藏集](/help/assets/bulk-approval.md)
+      + [预览 3D 资产](/help/assets/previewing-3d-assets.md)
+      + [审核文件夹资产和收藏集](/help/assets/bulk-approval.md)
       + [增强型智能标记](/help/assets/enhanced-smart-tags.md)
       + [OAuth凭据的智能标记疑难解答](/help/assets/config-oauth.md)
       + [时间轴中的活动流](/help/assets/activity-stream.md)
       + [处理资产](/help/assets/assets-workflow.md)
       + [添加图像映射](/help/assets/image-maps.md)
-      + [使用 MSM 重用资源](/help/assets/reuse-assets-using-msm.md)
+      + [使用 MSM 重用资产](/help/assets/reuse-assets-using-msm.md)
       + [已将Assets与 [!DNL Sites]连接](/help/assets/use-assets-across-connected-assets-instances.md)
    + Dynamic Media{#dynamic}
       + [按Experience League存档新闻稿](/help/assets/dynamic-media-newsletter.md)
@@ -371,7 +371,7 @@ ht-degree: 21%
       + [配置Dynamic Media — 混合模式](/help/assets/config-dynamic.md)
       + [从Dynamic Media — 混合模式迁移到Dynamic Media - S7模式](/help/assets/migrate-from-hybrid-to-dms7.md)
       + [Dynamic Media 中的辅助功能](/help/assets/accessibility-dm.md)
-      + [管理 Dynamic Media 资源](/help/assets/managing-assets.md)
+      + [管理 Dynamic Media 资产](/help/assets/managing-assets.md)
       + [优化图像质量的最佳实践](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md)
       + [管理 Dynamic Media 查看器预设](/help/assets/managing-viewer-presets.md)
       + [应用 Dynamic Media 查看器预设](/help/assets/viewer-presets.md)
@@ -383,7 +383,7 @@ ht-degree: 21%
       + [具有客户端设备像素比的智能成像](/help/assets/client-side-dpr.md)
       + [视频](/help/assets/s7-video.md)
       + [HTTP2内容交付](/help/assets/http2.md)
-      + [投放 Dynamic Media 资源](/help/assets/delivering-dynamic-media-assets.md)
+      + [传递 Dynamic Media 资产](/help/assets/delivering-dynamic-media-assets.md)
       + [在 Dynamic Media 中激活热链接保护](/help/assets/hotlink-protection.md)
       + [3D 支持](/help/assets/assets-3d.md)
       + [Dynamic Media 限制](/help/assets/limitations.md)
@@ -399,13 +399,13 @@ ht-degree: 21%
       + [将 Dynamic Media 查看器与 Adobe Analytics 和 Adobe Experience Platform 标记集成](/help/assets/tags.md)
       + [使用 Quickview 创建自定义弹出窗口](/help/assets/custom-pop-ups.md)
       + [为响应式站点传送优化的图像](/help/assets/responsive-site.md)
-      + [预览 Dynamic Media 资源](/help/assets/previewing-assets.md)
-      + [将 Dynamic Media 资源添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md)
+      + [预览 Dynamic Media 资产](/help/assets/previewing-assets.md)
+      + [将 Dynamic Media 资产添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md)
       + [将Dynamic Media Classic功能添加到页面](/help/assets/scene7.md)
       + [在网页上嵌入动态视频或图像查看器](/help/assets/embed-code.md)
       + [将 URL 关联到您的 Web 应用程序](/help/assets/linking-urls-to-yourwebapplication.md)
       + [使用规则集转换URL](/help/assets/using-rulesets-to-transform-urls.md)
-      + [发布 Dynamic Media 资源](/help/assets/publishing-dynamicmedia-assets.md)
+      + [发布 Dynamic Media 资产](/help/assets/publishing-dynamicmedia-assets.md)
       + [使用 Dynamic Media 中的“选择性发布”功能](/help/assets/selective-publishing.md)
       + [通过 Dynamic Media 使 CDN 缓存失效](/help/assets/invalidate-cdn-cache-dynamic-media.md)
       + [通过 Dynamic Media Classic 使 CDN 缓存失效](/help/assets/invalidate-cdn-cache-dm-classic.md)
@@ -434,7 +434,7 @@ ht-degree: 21%
       + [元数据架构](/help/assets/metadata-schemas.md)
       + [XMP写回到演绎版](/help/assets/xmp-writeback.md)
       + [资产链接共享](/help/assets/link-sharing.md)
-      + [资源报告](/help/assets/asset-reports.md)
+      + [资产报告](/help/assets/asset-reports.md)
       + [配置用于标记的智能内容服务](/help/assets/config-smart-tagging.md)
       + [用于处理元数据、图像和视频的配置文件](/help/assets/processing-profiles.md)
       + [创建和配置资产编辑器页面](/help/assets/assets-finder-editor.md)
@@ -462,12 +462,12 @@ ht-degree: 21%
       + [资产模板](/help/assets/asset-templates.md)
    + Brand Portal {#brandportal}
       + [使用 [!DNL Assets]  配置 [!DNL Brand Portal]](/help/assets/configure-aem-assets-with-brand-portal.md)
-      + [将资源发布到 [!DNL Brand Portal]](/help/assets/brand-portal-publish-assets.md)
+      + [将资产发布到 [!DNL Brand Portal]](/help/assets/brand-portal-publish-assets.md)
       + [Publish文件夹到 [!DNL Brand Portal]](/help/assets/brand-portal-publish-folder.md)
       + [Publish收藏集至 [!DNL Brand Portal]](/help/assets/brand-portal-publish-collection.md)
    + 内容片段 {#content-fragments}
       + [使用内容片段](/help/assets/content-fragments/content-fragments.md)
-      + [使用内容片段和 GraphQL 进行 Headless 投放](/help/assets/content-fragments/content-fragments-graphql.md)
+      + [使用内容片段和 GraphQL 进行 Headless 传递](/help/assets/content-fragments/content-fragments-graphql.md)
       + [为您的实例启用内容片段功能](/help/assets/content-fragments/content-fragments-configuration-browser.md)
       + [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
       + [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
@@ -485,7 +485,7 @@ ht-degree: 21%
       + [资源选择器](/help/assets/asset-selector.md)
       + [启用重复检测](/help/assets/duplicate-detection.md)
       + [组织数字资源](/help/assets/organize-assets.md)
-      + [管理视频资源](/help/assets/managing-video-assets.md)
+      + [管理视频资产](/help/assets/managing-video-assets.md)
       + [创建翻译项目](/help/assets/translation-projects.md)
       + [准备要翻译的资产](/help/assets/preparing-assets-for-translation.md)
       + [从Experience Manager下载资源](/help/assets/download-assets-from-aem.md)
@@ -594,7 +594,7 @@ ht-degree: 21%
       + [删除表单和相关资源](/help/forms/using/deleting-forms-related-resources.md)
       + [在AEM Forms中获取XDP和PDF文档](/help/forms/using/get-xdp-pdf-documents-aem.md)
       + [将资源导入和导出到AEM Forms](/help/forms/using/import-export-forms-templates.md)
-      + [支持自适应表单本地化的新区域设置](/help/forms/using/supporting-new-language-localization.md)
+      + [支持新区域设置以实现自适应表单本地化](/help/forms/using/supporting-new-language-localization.md)
       + 正在处理用户数据{#handling-user-data}
          + [OSGi上以Forms为中心的工作流](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
          + [Forms用户管理](/help/forms/using/user-management-handling-user-data.md)
@@ -712,8 +712,8 @@ ht-degree: 21%
       + [AEM Forms工作区的功能在Flex工作区中不可用](/help/forms/using/features-html-workspace-available-flex.md)
       + [Flex工作区的功能在AEM Forms工作区中不可用](/help/forms/using/features-flex-workspace-available-html.md)
       + [骨干交互](/help/forms/using/backbone-interaction.md)
-      + [可重用组件的描述](/help/forms/using/description-reusable-components.md)
-      + [呈现器的文档详细信息](/help/forms/using/document-details-renderer.md)
+      + [可重用组件的说明](/help/forms/using/description-reusable-components.md)
+      + [渲染器的文档详细信息](/help/forms/using/document-details-renderer.md)
       + [在Web应用程序中集成AEM Forms工作区组件](/help/forms/using/integrating-html-ws-components-web.md)
       + [新渲染和提交服务](/help/forms/using/new-render-submit-service.md)
       + [了解文件夹结构](/help/forms/using/folder-structure.md)
@@ -832,9 +832,9 @@ ht-degree: 21%
       + [通信管理配置属性](/help/forms/using/cm-configuration-properties.md)
    + 将AEM Forms与Experience Cloud解决方案{#integrate-aem-forms-with-experience-cloud-solutions}集成
       + [在AEM Forms中创建目标体验](/help/forms/using/experience-targeting-forms.md)
-      + [衡量和提高表单的有效性和转换率](/help/forms/using/measure-improve-performance-forms-documents.md)
+      + [衡量和提高效用及表格转换](/help/forms/using/measure-improve-performance-forms-documents.md)
       + [使用Cloud Service框架进行分析](/help/forms/using/configure-analytics-forms-documents.md)
-      + [使用Adobe启动项的Analytics](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
+      + [使用Adobe启动进行分析](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
       + [查看和了解AEM Forms analytics报表](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
       + [创建和管理自适应表单的A/B测试](/help/forms/using/ab-testing-adaptive-forms.md)
    + Publish并处理AEM Forms {#publish-process-aem-forms}
@@ -1136,8 +1136,8 @@ ht-degree: 21%
             + [存储库服务API快速启动](/help/forms/developing/repository-service-api-quick-starts.md)
             + [签名服务Java API快速启动(SOAP)](/help/forms/developing/signature-service-java-api-quick.md)
             + [任务管理器服务Java API快速启动(SOAP)](/help/forms/developing/task-manager-service-java-api.md)
-            + [用户管理器Java API快速入门(SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
-            + [XMP实用程序服务Java APIQuick Start(SOAP)](/help/forms/developing/xmp-utilities-service-java-api.md)
+            + [User Manager Java API快速入门(SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
+            + [XMP Utilities Service Java APIQuick Start(SOAP)](/help/forms/developing/xmp-utilities-service-java-api.md)
          + 在JEE中使用API {#invoking-aem-forms-jee-apis}调用AEM Forms
             + [使用REST请求调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-rest.md)
             + [使用Web服务调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md)
@@ -1211,7 +1211,6 @@ ht-degree: 21%
       + [PDF生成无法在WorkBench上打印大量PDF](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [如何正确重新启动AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture服务无法在PDF上执行OCR](/help/forms/using/papercapture-service-resolution.md)
-      + [卸载AEM Forms附加组件包](/help/forms/using/uninstall-forms-addon-package.md)
    + 旧文档{#legacy-documentation}
       + [使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据](/help/forms/developing/building-xml.md)
       + [在JEE自定义DSC中使用AEM Forms压缩和解压缩文件](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1275,7 +1274,7 @@ ht-degree: 21%
       + [AEM Headless 快速入门](/help/journey-headless/developer/getting-started.md)
       + [首次 AEM Headless 使用体验的路径](/help/journey-headless/developer/path-to-first-experience.md)
       + [如何将内容建模为 AEM 内容模型](/help/journey-headless/developer/model-your-content.md)
-      + [如何通过 AEM 投放 API 访问您的内容](/help/journey-headless/developer/access-your-content.md)
+      + [如何通过 AEM 传递 API 访问您的内容](/help/journey-headless/developer/access-your-content.md)
       + [如何通过 AEM Assets API 更新您的内容](/help/journey-headless/developer/update-your-content.md)
       + [如何融于一起](/help/journey-headless/developer/put-it-all-together.md)
       + [如何使用 Headless 应用程序上线](/help/journey-headless/developer/go-live.md)
@@ -1377,7 +1376,7 @@ ht-degree: 21%
          + 经典UI组件{#classic-ui-components}
             + [开发AEM组件（经典UI）](/help/sites-developing/developing-components-classic.md)
             + [使用和扩展小组件（经典UI）](/help/sites-developing/widgets.md)
-            + [使用xtype（经典UI）](/help/sites-developing/xtypes.md)
+            + [使用xtypes（经典UI）](/help/sites-developing/xtypes.md)
             + [开发Forms（经典UI）](/help/sites-developing/developing-forms.md)
       + [AEM 中的 Headful 和 Headless](/help/sites-developing/headful-headless.md)
       + Headless 体验管理 {#headless}
@@ -1591,7 +1590,7 @@ ht-degree: 21%
          + [版本清除](/help/sites-deploying/version-purging.md)
          + [监控和维护AEM实例](/help/sites-deploying/monitoring-and-maintaining.md)
          + [卸载作业](/help/sites-deploying/offloading.md)
-         + [资源映射](/help/sites-deploying/resource-mapping.md)
+         + [资产映射](/help/sites-deploying/resource-mapping.md)
          + [一致性和遍历检查](/help/sites-deploying/consistency-check.md)
          + [性能准则](/help/sites-deploying/performance-guidelines.md)
          + [性能优化](/help/sites-deploying/configuring-performance.md)
