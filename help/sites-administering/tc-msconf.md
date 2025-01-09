@@ -5,20 +5,16 @@ feature: Language Copy
 role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 3bb516289dbff4fb3b94685b9e25360e7717776e
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 80%
+source-wordcount: '258'
+ht-degree: 63%
 
 ---
 
 # 连接到 Microsoft Translator {#connecting-to-microsoft-translator}
 
-为 [Microsoft Translator](https://www.microsoft.com/en-us/translator/business/) 云服务创建配置以使用 Microsoft Translation 帐户来翻译 AEM 页面内容或资源。
-
->[!NOTE]
->
->AEM 提供了一个 Microsoft Translation 试用帐户，每月最多允许 200 万个免费翻译的字符。要获得足以用于生产系统的帐户订阅，请参阅[升级 Microsoft Translator 试用许可证配置](#upgrading-the-microsoft-translator-trial-license-configuration)。
+AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/)提供内置连接器以翻译页面内容或资源。 从Microsoft获取使用Microsoft Translator的许可证后，请按照本页上的说明配置连接器。
 
 | 属性 | 描述 |
 |---|---|
@@ -26,8 +22,6 @@ ht-degree: 80%
 | 翻译属性 | （可选）对于用户生成的内容，为已翻译文本旁边显示的属性，例如`Translations by Microsoft` |
 | 工作区 ID | （可选）要使用的自定义 Microsoft Translator 引擎的 ID |
 | 订阅密钥 | 您的 Microsoft Translator 的 Microsoft 订阅密钥 |
-
-在创建配置后，您需要[激活它](#activating-the-translator-service-configurations)。
 
 以下过程将创建 Microsoft Translator 配置。
 
@@ -44,31 +38,11 @@ ht-degree: 80%
 1. 单击&#x200B;**创建**。
 1. 在&#x200B;**编辑配置**&#x200B;窗口中，提供上一个表中描述的翻译服务的值。
 
-   ![编辑翻译配置](assets/edit-translation-config.png)
+   ![编辑翻译配置](assets/msft-config-ui.png)
 
 1. 单击&#x200B;**连接**&#x200B;以验证连接。
-1. 单击“**保存并关闭**”。
+1. 单击&#x200B;**保存并关闭**。
 
-## 升级 Microsoft Translator 试用许可证配置 {#upgrading-the-microsoft-translator-trial-license-configuration}
+## 发布Translator服务配置 {#publishing-the-translator-service-configurations}
 
-Microsoft Translation 配置页面提供了指向 Microsoft 网站的便利链接，可用于获取足够用于生产系统的帐户订阅。
-
-1. 在[导航面板中，](/help/sites-authoring/basic-handling.md#first-steps)单击&#x200B;**工具** > **Cloud Service** > **翻译Cloud Service**。
-1. 单击现有的Microsoft Translator配置。
-1. 单击&#x200B;**编辑**。
-1. 在&#x200B;**编辑配置**&#x200B;窗口中，单击&#x200B;**升级订阅**。 这将打开一个 Microsoft 网页，其中包含有关该服务的更多详细信息。
-
-## 自定义 Microsoft Translator 引擎 {#customizing-your-microsoft-translator-engine}
-
-Microsoft Translation 配置页面提供了指向 Microsoft 网站的便利链接，可用于自定义 Microsoft Translator 引擎。
-
-1. 在[导航面板中，](/help/sites-authoring/basic-handling.md#first-steps)单击&#x200B;**工具** > **Cloud Service** > **翻译Cloud Service**。
-1. 单击现有的Microsoft Translator配置。
-1. 单击&#x200B;**编辑**。
-1. 在&#x200B;**编辑配置**&#x200B;窗口中，单击&#x200B;**自定义Translator**。 使用打开的 Microsoft 网页来自定义您的服务。
-
-## 激活 Translator 服务配置 {#activating-the-translator-service-configurations}
-
-您需要激活云服务配置以支持复制到发布实例的已翻译内容。使用[发布树](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree)的方法激活存储了 Microsoft Translator 配置的存储库节点。这些节点位于以下父节点的下方：
-
-* `/libs/settings/cloudconfigs/translation/msft-translation`
+作为最后一步，请使用[发布树](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree)操作发布Microsoft Translator配置以支持已发布的已翻译内容。
