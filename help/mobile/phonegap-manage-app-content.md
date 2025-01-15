@@ -9,18 +9,16 @@ exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
 
 # 创建和管理应用程序内容{#creating-and-managing-app-content}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 管理应用程序内容需要[开发人员](#developer)、内容[作者](#author)和[管理员](#administrator)的集体努力。 作者处理基于模板和应用程序开发人员生成的组件的页面。
 

@@ -8,18 +8,16 @@ exl-id: 44591900-b01b-4a33-9910-839564477e7d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1206'
-ht-degree: 1%
+source-wordcount: '1185'
+ht-degree: 0%
 
 ---
 
 # 空间和实体{#spaces-and-entities}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 空间是存储通过Content Services REST API公开的实体的方便位置。 此功能特别有用，因为应用程序（或任何渠道）可以与许多实体关联。 强制实体位于空间内会强制采用将应用程序要求分组的最佳实践。 或者，您可以将AEM中的应用程序与少量空间关联。
 

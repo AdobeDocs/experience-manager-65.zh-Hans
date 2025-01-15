@@ -9,18 +9,16 @@ exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '250'
 ht-degree: 1%
 
 ---
 
 # Publish取消发布内容{#publish-unpublish-content}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 熟悉关于文章、横幅和收藏集的内容管理操作后，即可发布您的内容。 您还可以取消发布内容。
 

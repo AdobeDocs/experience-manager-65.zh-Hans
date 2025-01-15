@@ -8,18 +8,16 @@ exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '976'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
 
 # 内容交付{#content-delivery}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 移动设备应用程序应当能够根据需要使用AEM中的所有内容来提供有针对性的应用程序体验。
 

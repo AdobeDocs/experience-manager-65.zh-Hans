@@ -9,18 +9,16 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
 
 # 将Adobe Analytics添加到您的移动应用程序{#add-adobe-analytics-to-your-mobile-application}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 想要为您的移动应用程序用户打造引人入胜的相关体验？ 如果您没有使用AdobeMobile Services SDK来监控和衡量应用程序的生命周期和使用情况，那么您的决策依据是什么？ 您最忠诚的客户在哪里？ 如何保证您保持相关状态并优化转化？
 

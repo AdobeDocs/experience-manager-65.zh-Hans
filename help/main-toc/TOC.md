@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 2fc6225887436685f598baf4ea2c4a01534d8704
+source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
 workflow-type: tm+mt
-source-wordcount: '7475'
+source-wordcount: '7471'
 ht-degree: 21%
 
 ---
@@ -46,7 +46,7 @@ ht-degree: 21%
    + [AEM Forms Service Pack修补程序](/help/release-notes/aem-forms-hotfix.md)
    + [主要功能和增强功能汇总](/help/release-notes/cumulative-features-enhancements.md)
    + [已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md)
-   + [触控UI功能状态](/help/release-notes/touch-ui-features-status.md)
+   + [触屏UI功能状态](/help/release-notes/touch-ui-features-status.md)
 + 安全性 {#security}
    + [用户管理和安全性](/help/sites-administering/security.md)
    + [用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md)
@@ -55,7 +55,7 @@ ht-degree: 21%
    + [在生产就绪模式下运行AEM](/help/sites-administering/production-ready.md)
    + [Identity Management](/help/sites-administering/identity-management.md)
    + [对AEM Managed Services的Adobe IMS身份验证和Admin Console支持](/help/sites-administering/ims-config-and-admin-console.md)
-   + [创建封闭用户组](/help/sites-administering/cug.md)
+   + [创建已关闭的用户组](/help/sites-administering/cug.md)
    + [缓解AEM中的序列化问题](/help/sites-administering/mitigating-serialization-issues.md)
    + [用户同步](/help/sites-administering/sync.md)
    + [封装令牌支持](/help/sites-administering/encapsulated-token.md)
@@ -594,7 +594,7 @@ ht-degree: 21%
       + [删除表单和相关资源](/help/forms/using/deleting-forms-related-resources.md)
       + [在AEM Forms中获取XDP和PDF文档](/help/forms/using/get-xdp-pdf-documents-aem.md)
       + [将资源导入和导出到AEM Forms](/help/forms/using/import-export-forms-templates.md)
-      + [支持新区域设置以实现自适应表单本地化](/help/forms/using/supporting-new-language-localization.md)
+      + [支持自适应表单本地化的新区域设置](/help/forms/using/supporting-new-language-localization.md)
       + 正在处理用户数据{#handling-user-data}
          + [OSGi上以Forms为中心的工作流](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
          + [Forms用户管理](/help/forms/using/user-management-handling-user-data.md)
@@ -712,8 +712,8 @@ ht-degree: 21%
       + [AEM Forms工作区的功能在Flex工作区中不可用](/help/forms/using/features-html-workspace-available-flex.md)
       + [Flex工作区的功能在AEM Forms工作区中不可用](/help/forms/using/features-flex-workspace-available-html.md)
       + [骨干交互](/help/forms/using/backbone-interaction.md)
-      + [可重用组件的说明](/help/forms/using/description-reusable-components.md)
-      + [渲染器的文档详细信息](/help/forms/using/document-details-renderer.md)
+      + [可重用组件的描述](/help/forms/using/description-reusable-components.md)
+      + [呈现器的文档详细信息](/help/forms/using/document-details-renderer.md)
       + [在Web应用程序中集成AEM Forms工作区组件](/help/forms/using/integrating-html-ws-components-web.md)
       + [新渲染和提交服务](/help/forms/using/new-render-submit-service.md)
       + [了解文件夹结构](/help/forms/using/folder-structure.md)
@@ -832,9 +832,9 @@ ht-degree: 21%
       + [通信管理配置属性](/help/forms/using/cm-configuration-properties.md)
    + 将AEM Forms与Experience Cloud解决方案{#integrate-aem-forms-with-experience-cloud-solutions}集成
       + [在AEM Forms中创建目标体验](/help/forms/using/experience-targeting-forms.md)
-      + [衡量和提高效用及表格转换](/help/forms/using/measure-improve-performance-forms-documents.md)
+      + [衡量和提高表单的有效性和转换率](/help/forms/using/measure-improve-performance-forms-documents.md)
       + [使用Cloud Service框架进行分析](/help/forms/using/configure-analytics-forms-documents.md)
-      + [使用Adobe启动进行分析](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
+      + [使用Adobe启动项的Analytics](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)
       + [查看和了解AEM Forms analytics报表](/help/forms/using/view-understand-aem-forms-analytics-reports.md)
       + [创建和管理自适应表单的A/B测试](/help/forms/using/ab-testing-adaptive-forms.md)
    + Publish并处理AEM Forms {#publish-process-aem-forms}
@@ -1136,8 +1136,8 @@ ht-degree: 21%
             + [存储库服务API快速启动](/help/forms/developing/repository-service-api-quick-starts.md)
             + [签名服务Java API快速启动(SOAP)](/help/forms/developing/signature-service-java-api-quick.md)
             + [任务管理器服务Java API快速启动(SOAP)](/help/forms/developing/task-manager-service-java-api.md)
-            + [User Manager Java API快速入门(SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
-            + [XMP Utilities Service Java APIQuick Start(SOAP)](/help/forms/developing/xmp-utilities-service-java-api.md)
+            + [用户管理器Java API快速入门(SOAP)](/help/forms/developing/user-manager-java-api-quick.md)
+            + [XMP实用程序服务Java APIQuick Start(SOAP)](/help/forms/developing/xmp-utilities-service-java-api.md)
          + 在JEE中使用API {#invoking-aem-forms-jee-apis}调用AEM Forms
             + [使用REST请求调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-rest.md)
             + [使用Web服务调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md)
@@ -1376,7 +1376,7 @@ ht-degree: 21%
          + 经典UI组件{#classic-ui-components}
             + [开发AEM组件（经典UI）](/help/sites-developing/developing-components-classic.md)
             + [使用和扩展小组件（经典UI）](/help/sites-developing/widgets.md)
-            + [使用xtypes（经典UI）](/help/sites-developing/xtypes.md)
+            + [使用xtype（经典UI）](/help/sites-developing/xtypes.md)
             + [开发Forms（经典UI）](/help/sites-developing/developing-forms.md)
       + [AEM 中的 Headful 和 Headless](/help/sites-developing/headful-headless.md)
       + Headless 体验管理 {#headless}
@@ -1447,7 +1447,6 @@ ht-degree: 21%
          + [RemotePage 组件](/help/sites-developing/spa-remote-page.md)
          + [在 AEM 中编辑外部 SPA](/help/sites-developing/spa-edit-external.md)
          + [SPA 中的复合组件](/help/sites-developing/spa-composite-component.md)
-         + [SPA和服务器端渲染](/help/sites-developing/spa-ssr.md)
          + [为组件启用 JSON 导出](https://experienceleague.adobe.com/docs/experience-manager-65/content/implementing/developing/components/json-exporter-components.html)
          + [启动集成](/help/sites-developing/spa-launch.md)
          + [SPA参考资料](/help/sites-developing/spa-reference-materials.md)

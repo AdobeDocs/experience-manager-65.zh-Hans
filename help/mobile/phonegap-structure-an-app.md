@@ -9,18 +9,16 @@ exl-id: f37f239f-065b-44f8-acb1-93485b713b49
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '850'
 ht-degree: 0%
 
 ---
 
 # 构建应用程序{#structure-an-app}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 AEM Mobile项目涉及多种内容类型，包括页面、JavaScript和CSS客户端库、可重用的AEM组件、Content Sync配置和PhoneGap应用程序外壳内容。 基于[Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit)构建新的AEM Mobile应用程序是一种好方法，可以将所有不同类型的内容纳入我们推荐的结构，从而长期简化可移植性和可维护性。
 

@@ -9,18 +9,16 @@ exl-id: 5a98eb3c-5c12-4a6c-8d76-eed44c7c3df5
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '367'
-ht-degree: 1%
+source-wordcount: '346'
+ht-degree: 0%
 
 ---
 
 # 使用AEM管理Adobe PhoneGap Enterprise的内容 {#administering-content-for-adobe-phonegap-enterprise-with-aem}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 ***AEM管理员***&#x200B;负责通过使用创建向导创建应用程序或导入现有应用程序向AEM Mobile目录添加新应用程序。 使用AEM Mobile的&#x200B;*创建向导*&#x200B;创建应用程序的AEM管理员，通常会从Adobe的现成引用示例或（通常）由&#x200B;*AEM开发人员创建的自定义应用程序模板中选择所需的应用程序模板之一。*
 

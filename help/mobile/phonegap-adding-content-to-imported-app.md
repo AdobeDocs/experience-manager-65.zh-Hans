@@ -10,18 +10,16 @@ exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
 
 # 您的混合应用程序是否已为Adobe Experience Manager Mobile做好准备？{#is-your-hybrid-app-ready-for-aem-mobile}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 您已将混合PhoneGap或Cordova应用程序导入AEM，现在该怎么办？ 您可能希望向应用程序添加可创作内容。 要完成此任务，您需要大致了解AEM应用程序的结构。 AEM中的应用程序通常分为两个部分。 “shell”和“content”。 “shell”包含应用程序的静态部分；例如PhoneGap配置文件、应用程序框架和导航控件。 导入的归档文件的内容作为Shell的一部分存储。 在本文档的上下文中，shell是由应用程序开发人员构建的混合PhoneGap应用程序的所有非AEM创作内容。
 

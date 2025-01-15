@@ -10,24 +10,22 @@ exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
 
 # 配置AdobeMobile ServicesCloud Service {#configure-your-adobe-mobile-services-cloud-service}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 命令中心上的&#x200B;**移动量度图块**&#x200B;为您的移动应用程序提供实时分析。
 
-[AdobeMobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK可通过PhoneGap插件使用。 收集量度并将其缓存在设备上，直到设备连接为止，届时，会将数据推送到AdobeMobile Services云以供生成报表和分析。
+[Adobe移动分析](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK可通过PhoneGap插件使用。 收集量度并将其缓存在设备上，直到设备连接为止，届时，会将数据推送到AdobeMobile Services云以供生成报表和分析。
 
-AdobeMobile Analytics SDK提供了以下功能：
+AdobeMobile Analytics SDK提供以下功能：
 
 1. **移动渠道的数据收集** — 收集所有主要操作系统上移动网站和应用程序的全面数据。
 1. **移动参与分析** — 了解用户在您的移动应用程序、网站或视频中的参与情况，包括消费者启动渠道的频率、他们是否从中购买等。

@@ -9,18 +9,16 @@ exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3156'
+source-wordcount: '3135'
 ht-degree: 0%
 
 ---
 
 # 推送通知{#push-notifications}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 能够使用重要通知即时提醒Adobe Experience Manager (AEM)移动应用程序用户，这对于移动应用程序的价值及其营销活动至关重要。 此处描述了要让应用程序接收推送通知所必须执行的步骤。 您还将了解如何配置推送，并将其从AEM Mobile发送到手机上安装的应用程序。 此外，本节还介绍如何为推送通知配置[深层链接](#deeplinking)功能。
 

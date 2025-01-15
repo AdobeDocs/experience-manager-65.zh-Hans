@@ -9,18 +9,16 @@ exl-id: 37428543-c310-4712-a4ec-1f482579fb4b
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '391'
 ht-degree: 2%
 
 ---
 
 # 云配置{#cloud-configuration}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 将按需应用程序关联到云配置可允许Adobe Experience Manager (AEM)通过建立双向链接直接与Mobile On-Demand托管项目通信。 通过将您的应用程序关联到Mobile On-Demand项目，您将能够在AEM中执行内容创建（例如文章、横幅和收藏集），还可以将该内容提供给Mobile On-Demand。
 

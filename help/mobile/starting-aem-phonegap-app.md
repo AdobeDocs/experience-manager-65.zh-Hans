@@ -9,18 +9,16 @@ exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '376'
 ht-degree: 1%
 
 ---
 
 # 启动AEM PhoneGap {#starting-aem-phonegap}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 对于开发人员来说，最好的起点是查看github中的Adobe Experience Manager Mobile Starterkit
 

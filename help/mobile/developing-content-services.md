@@ -8,18 +8,16 @@ exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '292'
 ht-degree: 1%
 
 ---
 
 # Content Services{#content-services}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 >[!CAUTION]
 >

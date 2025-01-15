@@ -9,18 +9,16 @@ exl-id: 70d7ee0d-2f6d-4f97-a6e2-b02d84a0ca42
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2571'
+source-wordcount: '2550'
 ht-degree: 0%
 
 ---
 
 # AEM Mobile内容个性化{#aem-mobile-content-personalization}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 >[!NOTE]
 >
@@ -276,7 +274,7 @@ AEM Mobile内容个性化功能允许[AEM作者](#author)使用[Adobe Target](ht
 
 为了帮助呈现专门用于移动设备应用程序的内容，AEM Mobile使用mobileapps/components/target组件。 移动目标组件扩展cq/personalization/components/target组件并覆盖engine_tnt.jsp脚本。 通过覆盖engine_tnt.jsp，AEM Mobile可以控制为移动设备应用程序用例生成的HTML。 对于内容作者定位的每个组件，都会由engine_tnt.jsp创建一个关联的mbox。
 
-为每个mbox添加&#x200B;**cq-targeting**&#x200B;属性，以允许应用程序开发人员编写自定义代码以根据需要使用和使用。 [AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)具有使用cq-targeting属性的Angular指令示例。 内容替换的概念（何时以及如何替换）由移动应用程序开发人员决定。 有一个Mobile SDK，通过AEM /etc/clientlibs/mobileapps/js/mobileapps.js交付，它提供了一个API来调用Adobe定位服务。 取决于应用程序开发人员来指定何时应根据他们的应用程序的设计进行该调用。
+为每个mbox添加&#x200B;**cq-targeting**&#x200B;属性，以允许应用程序开发人员编写自定义代码以根据需要使用和使用。 [AEM Mobile混合引用应用程序](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference)具有使用cq-targeting属性的Angular指令示例。 内容替换的概念（何时以及如何替换）由移动应用程序开发人员决定。 还有一个通过AEM交付的Mobile SDK /etc/clientlibs/mobileapps/js/mobileapps.js ，它提供了一个API来调用Adobe定位服务。 取决于应用程序开发人员来指定何时应根据他们的应用程序的设计进行该调用。
 
 ## 接下来呢？ {#what-s-next}
 

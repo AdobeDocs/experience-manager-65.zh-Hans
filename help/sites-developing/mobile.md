@@ -11,18 +11,16 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3722'
+source-wordcount: '3701'
 ht-degree: 0%
 
 ---
 
 # 为移动设备创建站点{#creating-sites-for-mobile-devices}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 创建移动站点与创建标准站点类似，因为它还包括创建模板和组件。 有关创建模板和组件的更多详细信息，请参阅以下页面：[模板](/help/sites-developing/templates.md)、[组件](/help/sites-developing/components.md)和[AEM Sites开发入门](/help/sites-developing/getting-started.md)。 主要区别在于在站点内启用Adobe Experience Manager (AEM)内置的移动功能。 这是通过创建依赖于移动页面组件的模板来实现的。
 

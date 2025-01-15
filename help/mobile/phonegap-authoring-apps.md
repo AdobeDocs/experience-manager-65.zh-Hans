@@ -9,18 +9,16 @@ exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '982'
 ht-degree: 0%
 
 ---
 
 # 创作移动设备应用程序{#authoring-mobile-applications}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 AEM Mobile功能板允许您创建、构建和部署移动应用程序，以及创建、删除和编辑应用程序元数据。 应用程序上线后，您可以分析应用程序分析（包括生命周期和使用量度），以提高客户转化率和品牌忠诚度。
 

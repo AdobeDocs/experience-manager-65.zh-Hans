@@ -9,18 +9,16 @@ exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
 
 # 构建移动应用程序{#building-mobile-applications}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 构建您的应用程序以安装到设备或模拟器以进行测试或发布到应用商店。 您可以使用PhoneGap命令行界面在本地构建应用程序，也可以使用PhoneGap Build在云中构建应用程序。
 
@@ -84,7 +82,7 @@ AEM提供了两种将批量内容移动到发布实例的方法：
    └── cordova@3.3.0-0.1.1 (...)
    ```
 
-1. （可选）获取要定位的移动平台的SDK：
+1. （可选）获取目标移动平台的SDK：
 
    * 若要为iOS平台构建应用程序，请安装最新版本的[Xcode](https://developer.apple.com/xcode/)。
    * 要构建Android™应用程序，请安装[Android™ SDK](https://developer.android.com/)。

@@ -9,18 +9,16 @@ exl-id: 2f02f541-92db-469b-bf23-ec64d2e282ff
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '170'
-ht-degree: 1%
+source-wordcount: '149'
+ht-degree: 0%
 
 ---
 
 # 将反向链接筛选条件设置为允许为空{#setting-your-referrer-filter-to-allow-empty}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 要允许Adobe Experience Manager (AEM)移动应用程序查看器查看创作实例上的应用程序，您必须将HTML反向链接筛选条件设置为“允许为空”。
 

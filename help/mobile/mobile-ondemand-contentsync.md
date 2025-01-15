@@ -9,18 +9,16 @@ exl-id: a6e59334-09e2-4bb8-b445-1868035da556
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2971'
+source-wordcount: '2950'
 ht-degree: 0%
 
 ---
 
 # 通过内容同步处理移动设备{#mobile-with-content-sync}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 使用Content Sync将内容打包，以便能够在本机移动设备应用程序中使用。 在Adobe Experience Manager (AEM)中创作的页面可用作应用程序内容，即使设备处于离线状态也是如此。 此外，由于AEM页面基于Web标准，因此它们可以跨平台工作，使您能够将其嵌入任何本机包装器中。 此策略可减少开发工作量，并让您轻松更新应用程序内容。
 

@@ -9,18 +9,16 @@ exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '604'
 ht-degree: 1%
 
 ---
 
 # 使用“创建”向导创建AEM Mobile应用程序{#creating-a-new-aem-mobile-app-using-create-wizard}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 AEM Mobile应用程序基于定义页面结构和属性的Blueprint。 您可以配置以下应用程序属性：
 

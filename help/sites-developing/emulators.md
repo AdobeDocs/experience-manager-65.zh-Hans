@@ -10,18 +10,16 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
 # 模拟器{#emulators}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 Adobe Experience Manager (AEM)允许作者在模拟最终用户查看页面的环境的模拟器中查看页面，例如在移动设备上或电子邮件客户端中。
 

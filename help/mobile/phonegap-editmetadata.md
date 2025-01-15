@@ -9,18 +9,16 @@ exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '377'
-ht-degree: 2%
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
 # 编辑应用程序元数据 {#editing-app-metadata}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 “**管理应用程序**”拼贴和“管理应用程序”页面提供了查看和编辑应用程序元数据的方式。 将应用程序发布到供应商的存储时需要应用程序元数据的详细信息。 这可能包括常用元数据、iOS元数据和屏幕截图。 有关常见和iOS元数据的更多详细信息，请参阅[管理应用程序磁贴](/help/mobile/phonegap-app-details-tile.md)。
 

@@ -9,18 +9,16 @@ exl-id: 4c1c44fd-e685-462c-83a0-3cd2f74ab5c7
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '209'
 ht-degree: 3%
 
 ---
 
 # 应用程序定义{#app-definitions}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 通过应用程序定义，可确定哪些空间和其他配置适合应用程序。 应用程序定义允许用户添加空间，而无需重新编译应用程序。 应用程序定义已更新，它将包含任何新空间的信息。
 

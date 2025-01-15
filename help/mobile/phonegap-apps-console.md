@@ -9,18 +9,16 @@ exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2675'
+source-wordcount: '2654'
 ht-degree: 0%
 
 ---
 
 # 使用应用程序控制台创建和编辑应用程序{#creating-and-editing-apps-using-the-apps-console}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 AEM移动应用程序开发过程认识到，拥有不同专业知识的用户对移动应用程序的开发有贡献。 以下流程图说明了内容作者和应用程序开发人员执行任务的一般顺序。
 

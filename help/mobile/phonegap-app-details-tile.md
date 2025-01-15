@@ -9,18 +9,16 @@ exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1218'
+source-wordcount: '1197'
 ht-degree: 1%
 
 ---
 
 # 管理应用程序磁贴{#manage-app-tile}
 
->[!NOTE]
->
->Adobe建议对需要基于单页应用程序框架的客户端渲染（例如React）的项目使用SPA编辑器。 [了解详情](/help/sites-developing/spa-overview.md)。
+{{ue-over-mobile}}
 
 通过应用程序仪表板上的&#x200B;**`Manage App`**&#x200B;磁贴，可编辑有关应用程序的详细信息。 要打开“详细信息”页面，请单击&#x200B;**`Manage App`**&#x200B;图块的详细信息链接。 在&#x200B;**`Manage App`**&#x200B;页面中，您可以编辑PhoneGap应用程序配置(config.xml)设置，并准备应用程序以提交到各种应用程序存储。
 
