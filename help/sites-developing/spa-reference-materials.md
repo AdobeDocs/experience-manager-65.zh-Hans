@@ -9,22 +9,21 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '112'
-ht-degree: 0%
+source-wordcount: '92'
+ht-degree: 1%
 
 ---
 
+
 # SPA参考资料 {#spa-reference-materials}
+
+{{ue-over-spa}}
 
 ## SPA JavaScript API参考{#spa-javascript-api-references}
 
-以下是AEM SPA编辑器SDK框架的NPM模块的可用JavaScript API引用。
-
->[!NOTE]
->
->SPA编辑器是推荐的解决方案，适用于需要基于SPA框架的客户端渲染(例如React或Angular)的项目。
+以下是AEM SPA Editor SDK框架的NPM模块的可用JavaScript API引用。
 
 * [组件映射](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [页面模型管理器](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

@@ -9,20 +9,19 @@ exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '2043'
+source-wordcount: '2023'
 ht-degree: 0%
 
 ---
+
 
 # SPA Blueprint{#spa-blueprint}
 
 要使作者能够使用AEM SPA编辑器编辑SPA的内容，SPA必须满足一些要求，如本文档中所述。
 
->[!NOTE]
->
->SPA编辑器是推荐的解决方案，适用于需要基于SPA框架的客户端渲染(例如React或Angular)的项目。
+{{ue-over-spa}}
 
 ## 简介 {#introduction}
 
@@ -60,7 +59,7 @@ ht-degree: 0%
 
 #### 对组件映射进行动态建模 {#dynamic-model-to-component-mapping}
 
-有关如何在JavaScript SPA SDK for AEM中进行动态模型到组件映射的详细信息，请参阅文章[SPA的动态模型到组件映射](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)。
+有关如何在AEM的JavaScript SPA SDK中发生动态模型到组件映射的详细信息，请参阅文章[SPA的动态模型到组件映射](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)。
 
 ### 特定于框架的层 {#framework-specific-layer}
 

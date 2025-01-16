@@ -5,12 +5,13 @@ exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%
 
 ---
+
 
 # SPA 中的复合组件 {#composite-components-in-spas}
 
@@ -19,6 +20,8 @@ ht-degree: 1%
 在AEM单页应用程序(SPA)编辑器框架中正确实施复合组件后，内容作者可以像拖放任何其他组件一样拖放此类组件，但仍然能够单独编辑构成复合组件的每个组件。
 
 本文演示了如何将复合组件添加到单页应用程序，以便与AEM SPA编辑器无缝地配合使用。
+
+{{ue-over-spa}}
 
 ## 用例 {#use-case}
 

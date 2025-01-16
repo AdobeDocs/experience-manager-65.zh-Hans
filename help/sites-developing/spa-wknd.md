@@ -9,16 +9,19 @@ exl-id: 59ada14e-3cb1-4f2c-b866-a2bb130db3fc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
 source-wordcount: '129'
 ht-degree: 5%
 
 ---
 
+
 # SPA WKND 教程{#spa-wknd-tutorial}
 
 通过这个包含多个部分的教程，您可以沉浸在SPA开发中。 实施您自己的SPA，引导您完成项目设置、组件映射、前端开发工具和应用程序路由。
+
+{{ue-over-spa}}
 
 ## 教程 {#tutorials}
 

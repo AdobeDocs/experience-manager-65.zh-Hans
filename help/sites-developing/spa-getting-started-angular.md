@@ -9,12 +9,13 @@ exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '978'
 ht-degree: 5%
 
 ---
+
 
 # AEM中的SPA快速入门 — Angular{#getting-started-with-spas-in-aem-angular}
 
@@ -26,9 +27,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 >
 >本文基于Angular框架。 有关React框架的相应文档，请参阅[AEM中的SPA快速入门 — React](/help/sites-developing/spa-getting-started-react.md)。
 
->[!NOTE]
->
->SPA编辑器是推荐的解决方案，适用于需要基于SPA框架的客户端渲染(例如React或Angular)的项目。
+{{ue-over-spa}}
 
 ## 简介 {#introduction}
 
@@ -293,4 +292,4 @@ AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在内容被�
 
 有关动态模型到组件映射以及它如何在AEM中的SPA中工作的更多详细信息，请参阅文章[SPA的动态模型到组件映射](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)。
 
-如果您希望在AEM中为React或Angular以外的框架实施SPA，或者只是希望深入了解SPA SDK for AEM的工作原理，请参阅[SPA Blueprint](/help/sites-developing/spa-blueprint.md)文章。
+如果您希望在AEM中为React或Angular以外的框架实施SPA，或者只是希望深入了解SPA SDK for AEM的工作方式，请参阅[SPA Blueprint](/help/sites-developing/spa-blueprint.md)文章。

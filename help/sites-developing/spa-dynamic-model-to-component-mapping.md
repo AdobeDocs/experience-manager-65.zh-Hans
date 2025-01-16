@@ -1,6 +1,6 @@
 ---
 title: SPA的动态模型到组件映射
-description: 了解在适用于Adobe Experience Manager的JavaScript SPA SDK中如何进行动态模型到组件的映射。
+description: 了解在JavaScript SPA SDK for Adobe Experience Manager中如何进行组件映射的动态模型。
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -9,20 +9,19 @@ exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
+
 
 # SPA的动态模型到组件映射{#dynamic-model-to-component-mapping-for-spas}
 
 本文档介绍在JavaScript SPA SDK for Adobe Experience Manager (AEM)中如何进行组件动态映射。
 
->[!NOTE]
->
->SPA编辑器是推荐的解决方案，适用于需要基于SPA框架的客户端渲染(例如React或Angular)的项目。
+{{ue-over-spa}}
 
 ## 组件映射模块 {#componentmapping-module}
 
