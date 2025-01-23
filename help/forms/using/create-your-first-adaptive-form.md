@@ -7,10 +7,10 @@ feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 6%
+source-wordcount: '908'
+ht-degree: 3%
 
 ---
 
@@ -66,7 +66,7 @@ ht-degree: 6%
 * 创建提交操作以发送包含表单内容的电子邮件。
 * 预览并提交自适应表单。
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-adaptive-form.md)
+[![查看指南](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## 步骤2：创建表单数据模型 {#step-create-form-data-model}
 
@@ -82,7 +82,7 @@ ht-degree: 6%
 * 为表单数据模型配置读写服务。
 * 测试表单数据模型，并使用测试数据配置服务。
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](create-form-data-model.md)
+[![查看指南](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## 步骤3：将规则应用于自适应表单字段 {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,7 +95,7 @@ ht-degree: 6%
 * 创建规则并将其应用于自适应表单字段。
 * 使用规则触发表单数据模型服务，将数据更新到数据库。
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![查看指南](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## 第4步：设置自适应表单的样式 {#step-style-your-adaptive-form}
 
@@ -109,7 +109,7 @@ ht-degree: 6%
 * 使用主题编辑器为自适应表单创建主题。
 * 在自定义主题中使用Web Fonts。
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![查看指南](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## 步骤5：Publish您的自适应表单 {#step-publish-your-adaptive-form}
 
@@ -123,4 +123,4 @@ ht-degree: 6%
 * 将自适应表单嵌入到AEM [!DNL Sites]页面中。
 * 将自适应表单嵌入到外部网页(托管在AEM外部的非AEM网页)中。
 
-[![参阅指南](https://helpx.adobe.com/content/dam/help/en/marketing-cloud/how-to/digital-foundation/_jcr_content/main-pars/image_1250343773/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![查看指南](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
