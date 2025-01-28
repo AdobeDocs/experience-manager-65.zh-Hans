@@ -5,9 +5,9 @@ exl-id: ae0823b3-d847-42b6-ba92-e4e949da1799
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 90a8548cdcaadffb9930a5c06a601cb39e835146
 workflow-type: tm+mt
-source-wordcount: '54'
+source-wordcount: '72'
 ht-degree: 5%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->CIF Classic处于维护模式。
+>CIF Classic已弃用，并从AEM 6.5 SP 22中删除。  如果您需要兼容包，请[联系Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。
 >
 >* 新项目应使用[AEM CIF](/help/commerce/cif/introduction.md)。
 >* 现有CIF Classic应[迁移到AEM CIF](/help/commerce/cif/migration.md)。

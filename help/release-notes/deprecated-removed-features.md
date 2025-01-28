@@ -5,9 +5,9 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 191c4b02274ca7e3e9d4622b72cd585870581f47
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1747'
 ht-degree: 10%
 
 ---
@@ -68,10 +68,11 @@ Adobe 不断评估产品功能，以便随着时间的推移，使用更现代�
 
 | 区域 | 专题 | 替换 | 版本(SP) |
 |--- |--- |--- |--- |
+| 商务 | 已删除AEM CIF Classic。 | 您应该迁移到[AEM CIF](/help/commerce/cif/migration.md)。 如果您仍然需要CIF Classic，则已创建兼容包，请[联系Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 | 6.5.22.0 |
 | 与[!DNL Experience Cloud]集成 | 您可以使用通过[!DNL Adobe I/O]进行的配置将您的资源与[!DNL Experience Cloud]同步。 [!DNL Adobe Experience Cloud]以前称为[!DNL Adobe Experience Cloud]。 | 如果您有任何疑问，请[联系Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 |  |
 | AnalyticsActivity Map | AEM中包含的Activity Map的版本。 | 由于 Adobe Analytics API 中的安全性更改，无法再使用 AEM 中包含的 Activity Map 版本。使用Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap插件。 |  |
 | 集成 | ExactTarget集成已从默认分发（快速入门）中删除，并且不再可用。 | 无替代方案。 |  |
-| 集成 | Salesforce Api集成已从默认分发（快速入门）中删除，现在是一个要从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)安装的额外包。 | 该功能仍然可用。 |
+| 集成 | Salesforce Force API集成已从默认分发（快速入门）中删除，现在是一个要从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)安装的额外包。 | 该功能仍然可用。 |
 | Forms | 由于不再支持Adobe Central产品，因此已删除对Adobe Central迁移Bridge服务的支持。 | 无替代方案。 |  |
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 无替代方案。 |  |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | 无替换 |  |
