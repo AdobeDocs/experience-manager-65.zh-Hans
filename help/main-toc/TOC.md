@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+source-git-commit: b5a87404435758d660f136d2e236de699ecad541
 workflow-type: tm+mt
-source-wordcount: '7471'
+source-wordcount: '7475'
 ht-degree: 21%
 
 ---
@@ -147,7 +147,7 @@ ht-degree: 21%
          + [如何构建目标内容的多站点管理](/help/sites-authoring/technical-multisite-targeted.md)
          + [管理活动](/help/sites-authoring/activitylib.md)
          + [管理受众](/help/sites-authoring/managing-audiences.md)
-         + [创建和管理选件](/help/sites-authoring/offerlib.md)
+         + [创建和管理产品建议](/help/sites-authoring/offerlib.md)
          + [了解分段](/help/sites-authoring/segmentation-overview.md)
       + AEM和Adobe Campaign {#aem-adobe-campaign}
          + [使用Adobe Campaign](/help/sites-authoring/adobe-campaign.md)
@@ -668,7 +668,7 @@ ht-degree: 21%
       + [异步提交自适应表单](/help/forms/using/asynchronous-submissions-adaptive-forms.md)
       + [使用一组自适应表单创建自适应表单](/help/forms/using/create-adaptive-form-using-adaptive-form-set.md)
       + [自适应表单模板](/help/forms/using/template-editor.md)
-      + [Adaptive Form表达式](/help/forms/using/adaptive-form-expressions.md)
+      + [自适应表单表达式](/help/forms/using/adaptive-form-expressions.md)
       + [为自适应表单生成记录文档](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)
       + [使用延迟加载改进大型 Form 的性能](/help/forms/using/lazy-loading-adaptive-forms.md)
       + [预填自适应表单字段](/help/forms/using/prepopulate-adaptive-form-fields.md)
@@ -678,7 +678,7 @@ ht-degree: 21%
       + [向选定的用户组授予对规则编辑器的访问权限](/help/forms/using/rule-editor-access-user-groups.md)
       + [使用AEM翻译工作流将自适应表单和记录文档本地化](/help/forms/using/using-aem-translation-workflow-to-localize-adaptive-forms.md)
       + [自适应表单的样式结构](/help/forms/using/styling-constructs-adaptive-forms.md)
-      + [将Adaptive Form与 XFA Form 模板同步](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
+      + [将自适应表单与 XFA Form 模板同步](/help/forms/using/synchronizing-adaptive-forms-xfa.md)
       + [将Adobe Sign与AEM Forms集成](/help/forms/using/adobe-sign-integration-adaptive-forms.md)
       + [在表单中创建和管理资产审核](/help/forms/using/create-reviews-forms.md)
       + [在AEM Sites单页应用程序中嵌入自适应表单或交互式通信](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
@@ -1217,6 +1217,8 @@ ht-degree: 21%
       + [在JEE服务器群集中配置AEM Forms并对其进行故障排除](/help/forms/developing/configure-server-cluster.md)
       + [在动态PDF forms中生成和使用哈希](/help/forms/developing/hashing-forms.md)
       + [使用WS-Security标头传递凭据](/help/forms/developing/passing-credentials.md)
+   + 词汇表{#aem-forms-glossary}
++[AEM Forms术语表](/help/forms/using/aem-forms-glossary.md)
 + Content and Commerce {#commerce}
    + [简介和概述](/help/commerce/cif/introduction.md)
    + [对AEM Content和Commerce的显着更改](/help/commerce/cif/changes.md)
