@@ -7,9 +7,9 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: c55c959123f7feaa6571835974f1ce6fe3ead22b
 workflow-type: tm+mt
-source-wordcount: '5538'
+source-wordcount: '5597'
 ht-degree: 1%
 
 ---
@@ -130,11 +130,11 @@ AEM Forms提供了一个[规则编辑器](/help/forms/using/rule-editor.md)，�
 规则编辑器提供了用于编写规则的可视编辑器和代码编辑器。 使用代码编辑器模式编写规则时，请考虑以下事项：
 
 * 为表单字段和组件使用有意义、唯一的名称，以避免在编写规则时可能产生的任何冲突。
-* 对组件使用`this`运算符以在规则表达式中引用自身。 这可确保即使组件名称发生更改，规则仍保持有效。 例如：`field1.valueCommit script: this.value > 10`。
+* 对组件使用`this`运算符以在规则表达式中引用自身。 这可确保即使组件名称发生更改，规则仍保持有效。 例如 `field1.valueCommit script: this.value > 10`。
 
-* 引用其他表单组件时，请使用组件名称。 使用`value`属性获取字段或组件的值。 例如：`field1.value`。
+* 引用其他表单组件时，请使用组件名称。 使用`value`属性获取字段或组件的值。 例如 `field1.value`。
 
-* 按相对唯一层次结构引用组件以避免任何冲突。 例如：`parentName.fieldName`。
+* 按相对唯一层次结构引用组件以避免任何冲突。 例如 `parentName.fieldName`。
 
 * 处理复杂或常用的规则时，请考虑将业务逻辑作为函数写入单独的客户端库中，以便您可以在自适应表单中指定并重用这些函数。 客户端库应为自包含库，并且不应具有任何外部依赖项，但jQuery和Underscore.js除外。 您还可以使用客户端库强制执行已提交表单数据的[服务器端重新验证](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form)。
 * 自适应表单提供了一组API，您可以使用这些API与自适应表单通信并对自适应表单执行操作。 一些关键API如下所示。 有关详细信息，请参阅自适应JavaScript的[Forms库API参考](https://adobe.com/go/learn_aemforms_documentation_63)。
@@ -210,6 +210,7 @@ AEM Forms提供了一个[规则编辑器](/help/forms/using/rule-editor.md)，�
 * 仅包括自适应表单中从用户捕获信息的那些字段和面板。 请考虑将静态内容保持为最小或使用URL在单独的窗口中打开它们。
 * 虽然每个表单都针对特定目的而设计，但大多数表单中都存在一些通用区段。 例如，个人详细信息、地址、雇用详细信息等。 为通用表单元素和节创建[自适应表单片段](/help/forms/using/adaptive-form-fragments.md)，并在表单间使用它们。 您还可以将现有表单中的面板另存为片段。 片段中的任何更改都会反映在所有关联的自适应表单中。 它促进了协作创作，因为多个作者可以同时处理构成表单的不同片段。
 
+   * 在表单创作过程中，请考虑甚至为不可重用的部分创建表单片段。 随着表单的大小和复杂性的增加，将它们划分为片段可以显着简化创作过程并使表单更易于维护。 此方法允许您专注于更小的、更易于管理的表单部分，而不是一次处理整个表单。
    * 与自适应表单类似，建议使用片段容器对话框在客户端库中定义所有特定于片段的样式和自定义脚本。 此外，尝试创建不依赖于外部对象的自给自足的片段。
    * 避免使用跨片段脚本。 如果片段外有任何您必须引用的对象，请尝试将该对象作为父表单的一部分。 如果对象必须仍然驻留在另一个片段中，请在脚本中按其名称引用它。
 
