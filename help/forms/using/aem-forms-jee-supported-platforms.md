@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
 workflow-type: tm+mt
-source-wordcount: '4010'
-ht-degree: 0%
+source-wordcount: '4098'
+ht-degree: 1%
 
 ---
 
@@ -232,7 +232,7 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
    <td><p>从Microsoft®网站下载。</p> </td>
   </tr>
   <tr>
-   <td>oracle</td>
+   <td>Oracle</td>
    <td><p>oracle数据库19.3.0.0.0 JDBC驱动程序</p> <p>ojdbc8.jar（版本19.3.0.0.0）<br /> </p> </td>
    <td><p>从<a href="https://www.oracle.com/database/technologies/appdev/jdbc-ucp-19c-downloads.html">Oracle网站</a>下载。</p> </td>
   </tr>
@@ -361,7 +361,7 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
 1. CRX-repository支持TarMK、MongoDB和关系数据库(RDBMK)类型的持久性。 应用程序服务器和CRX-repository之间不能有两个不同的数据库系统。 但是，在JEE环境上的AEM Forms上，您可以将MongoMK与CRX-repository结合使用，并将受支持的关系数据库与应用程序服务器结合使用。
 1. JEE上的AEM Forms不支持CentOS上的WebSphere®应用程序服务器。
 1. JEE上的AEM Forms不支持JBoss®基于角色的访问控制(RBAC)。
-1. JEE上的AEM Forms仅支持OracleJava™ SE 11 （64位） SDK (适用于应用程序服务器JBoss® EAP 7.4)。
+1. JEE上的AEM Forms支持OracleJava™ SE 11（64位）SDK(仅适用于应用程序服务器JBoss® EAP 7.4)。
 1. WebLogic服务器不支持高于1.8.0_281的JDK版本。 (FORMS-8498)
 1. JDK 11.0.20不支持在JEE安装程序上安装AEM Forms。 在JEE安装程序上安装AEM Forms仅支持JDK 11.0.19或更早版本。
 
@@ -486,7 +486,9 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
 >
 >此外：
 >
->- PDF Generator仅支持32位零售版Microsoft®Office Professional Plus以及转换所需的其他软件。
+>- PDF Generator仅支持32位版本的Microsoft® Office Professional Plus以及转换所需的其他软件。
+>- Microsoft® Office Professional Plus安装可以使用零售或基于MAK/KMS/AD的批量许可。
+>- 如果Microsoft® Office安装由于任何原因（例如，批量许可安装无法在指定时间段内找到KMS主机）而停用或取消许可，则在重新许可并重新激活安装之前，转换可能会失败。
 >- PDF Generator不支持Microsoft® Office 365。
 >- 仅在Windows和Linux®上支持OpenOffice的PDF Generator转换。
 >- 仅在Windows上支持OCRPDF、Optimize PDF和Export PDF功能。
@@ -494,7 +496,12 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
 >- PDF Generator服务不支持Microsoft® Windows 10。
 >- PDF Generator无法使用Microsoft® Visio 2019转换文件。
 >- PDF Generator无法使用Microsoft® Project 2019转换文件。
->- 如果Microsoft® Office安装由于任何原因（例如，批量许可安装无法在指定时间段内找到KMS主机）而停用或取消许可，则在重新许可并重新激活安装之前，转换可能会失败。
+
+PDF Generator仅支持32位版本的Microsoft® Office Professional Plus以及转换所需的其他软件。
+
+Microsoft® Office Professional Plus安装可以使用零售或基于MAK/KMS/AD的批量许可。
+
+如果Microsoft® Office安装由于任何原因（例如，批量许可安装无法在指定时间段内找到KMS主机）而停用或取消许可，则在重新许可并重新激活安装之前，转换可能会失败。
 
 <!-- Removed lines: >- PDF Generator fails to convert files using Microsoft&reg; Visio 2019. You can continue to use Microsoft&reg; Visio 2016 to convert .VSD and .VSDX files.
 >- PDF Generator fails to convert files using Microsoft&reg; Project 2019. You can continue to use Microsoft&reg; Project 2016 to convert .MPP files.-->
@@ -895,7 +902,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | 添加支持 | 删除了支持 | 已弃用的支持 |
 | -------------- | --------------- | ------------------- |
-| oracle适用于应用程序服务器JBoss™ EAP 7.4的Java® SE 11 （64位）SDK。 | | [Adobe Acrobat 2017 — 对Adobe Acrobat 2017的核心支持将于2022年6月6日终止。](https://helpx.adobe.com/cn/support/programs/eol-matrix.html) |
+| oracle适用于应用程序服务器JBoss™ EAP 7.4的Java® SE 11（64位）SDK。 | | [Adobe Acrobat 2017 — 对Adobe Acrobat 2017的核心支持将于2022年6月6日终止。](https://helpx.adobe.com/cn/support/programs/eol-matrix.html) |
 |  | | Red Hat® Enterprise Linux® 7（内核3.x）（64位） |
 |  | | Microsoft® Windows Server 2016（64位） |
 |  | | Microsoft® Office 2016 |

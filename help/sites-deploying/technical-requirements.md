@@ -6,9 +6,9 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 01fa8cd75c00b04578fe103d07fa52553d2b6b93
+source-git-commit: 7b0f1c79a019e01e5814d00d5a3de0861999b7fd
 workflow-type: tm+mt
-source-wordcount: '3656'
+source-wordcount: '3681'
 ht-degree: 1%
 
 ---
@@ -514,15 +514,16 @@ Adobe Experience Manager(实例、Dispatcher)的所有元素都可以安装在IP
 >
 >* PDF Generator需要32位版本的[Acrobat 2020 classic track版本20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)或Acrobat 2017版本17.011.30078来执行转换。
 >* 仅在Windows和Linux®上支持OpenOffice的PDF Generator转换。
->* PDF Generator仅支持32位零售版Microsoft® Office Professional Plus以及在Windows操作系统中进行转换所需的其他软件。
+>* PDF Generator仅支持32位版本的Microsoft® Office Professional Plus以及转换所需的其他软件。
+>* Microsoft® Office Professional Plus安装可以使用零售或基于MAK/KMS/AD的批量许可。
+>* 如果Microsoft® Office安装由于任何原因（例如，批量许可安装无法在指定时间段内找到KMS主机）而停用或取消许可，则在重新许可并重新激活安装之前，转换可能会失败。
 >* PDF Generator支持Linux®操作系统上的32位和64位版本的OpenOffice。
 >* PDF Generator不支持Microsoft® Office 365。
 >* 仅在Windows上支持OCRPDF、Optimize PDF和Export PDF功能。
 >* Acrobat的一个版本与AEM Forms捆绑在一起，用于启用PDF Generator功能。 在AEM Forms许可证有效期内，只能以编程方式访问AEM Forms捆绑的版本，以便与AEM Forms PDF Generator结合使用。 有关详细信息，请参阅根据您的部署([内部部署](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)或[Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))提供的AEM Forms产品说明
 >* PDF Generator服务不支持Microsoft® Windows 10。
->* PDF Generator无法使用Microsoft® Visio 2019转换文件。 您可以继续使用Microsoft® Visio 2016转换`.VSD`和`.VSDX`文件。
->* PDF Generator无法使用Microsoft® Project 2019转换文件。 您可以继续使用Microsoft® Project 2016转换`.VSD`和`.VSDX`文件。
->
+>* PDF Generator无法使用Microsoft® Visio 2019转换文件。
+>* PDF 生成器无法使用Microsoft®项目 2019 转换文件。
 
 ### AEM 表单设计器的要求 {#requirements-for-aem-forms-designer}
 
@@ -534,7 +535,7 @@ Adobe Experience Manager(实例、Dispatcher)的所有元素都可以安装在IP
 * 2.35 GB 可用硬盘空间
 * 1024 X 768 像素或更高的显示器分辨率
 * 视频硬件加速（可选）
-* Acrobat Pro DC、Acrobat Standard DC 或 Adobe Acrobat Reader DC
+* Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC
 * 安装Designer的管理权限
 * Microsoft Visual C++ 2019（VC 14.28或更高版本）32位运行时，适用于32位AEM Forms Designer
 * Microsoft Visual C++ 2019（VC 14.28或更高版本）适用于64位AEM Forms Designer的64位运行时（适用于OSGI和JEE栈栈）
