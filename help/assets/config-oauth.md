@@ -5,10 +5,10 @@ role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: 3f11bba91cfb699dc216cf312eaf93fd9bbfe121
+source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 7%
+source-wordcount: '1089'
+ht-degree: 6%
 
 ---
 
@@ -39,12 +39,12 @@ OAuth配置需要以下先决条件：
 
 * 在[Developer Console](https://developer.adobe.com/console/user/servicesandapis)中创建新的OAuth集成。 在以下步骤中使用`ClientID`、`ClientSecret`、`OrgID`和其他属性：
 * 在此路径`/apps/system/config in crx/de`上可找到以下文件：
-   * `com.**adobe**.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
    * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### 现有AMS和On Prem用户的OAuth配置 {#steps-config-oauth-onprem}
 
-以下步骤可由系统管理员执行。 在[支持流程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)之后，AMS客户可以联系Adobe代表或提交支持工单。
+以下步骤可由系统管理员在&#x200B;**CRXDE**&#x200B;中执行。 在[支持流程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)之后，AMS客户可以联系Adobe代表或提交支持工单。
 
 1. 在`com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`中添加或更新以下属性：
 
@@ -56,6 +56,11 @@ OAuth配置需要以下先决条件：
    * 使用新OAuth配置的客户端ID更新`auth.token.provider.client.id`。
    * 将`auth.access.token.request`更新至`"https://ims-na1.adobelogin.com/ims/token/v3"`
 1. 将文件重命名为`com.adobe.granite.auth.oauth.accesstoken.provider-<randomnumber>.config`。
+
+   >[!IMPORTANT]
+   >
+   >将点(.)替换为连字符(-)作为`<randomnumber>`的前缀。
+
 1. 在`com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`中执行以下步骤：
    * 通过新的OAuth集成，使用客户端密钥更新属性auth.ims.client.secret。
    * 将文件重命名为`com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl-<randomnumber>.config`
@@ -64,7 +69,7 @@ OAuth配置需要以下先决条件：
 1. Navigate to `/system/console/configMgr` and replace the OSGi configuration from `.<randomnumber>` to `-<randomnumber>`.
 1. Delete the old OSGi configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 -->
-1. 在`System/console/configMgr`中，删除`com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl`和访问令牌提供程序名称`adobe-ims-similaritysearch`的旧配置。
+1. 在`System/console/configMgr`中，您可以查看旧配置文件和新配置文件。 删除`com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl`和访问令牌提供程序名称`adobe-ims-similaritysearch`的旧配置。 确保仅实施已更新的配置，而不实施旧配置。
 1. 重新启动控制台。
 
 ## 验证配置 {#validate-the-configuration}
@@ -81,13 +86,19 @@ OAuth配置需要以下先决条件：
 
 验证结果将显示在同一对话框中。
 
+>[!NOTE]
+>
+>如果发生`unsupported_grant_type`错误，请尝试安装Granite修补程序。 请参阅[从服务帐户(JWT)迁移到OAuth服务器到服务器凭据](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660)。
+
 ## 与Adobe Developer Console集成 {#integrate-adobe-io}
 
 作为新用户，当您与Adobe Developer Console集成时，[!DNL Experience Manager]服务器会先通过Adobe Developer Console网关验证您的服务凭据，然后再将您的请求转发到智能内容服务。 要集成，您需要一个拥有组织管理员权限的Adobe ID帐户，以及一个已购买并为您的组织启用的Smart Content Service许可证。
 
 要配置智能内容服务，请按照以下顶级步骤操作：
 
-1. 若要生成公钥，请在[!DNL Experience Manager]中[创建智能内容服务](#obtain-public-certificate)配置。 [下载用于OAuth集成的公共证书](#obtain-public-certificate)。
+<!--![Experience Manager Smart Content Service dialog to provide content service URL](assets/config-oauth.png)-->
+
+1. 若要生成公钥，请在[!DNL Experience Manager]中[创建智能内容服务](#oauth-config)配置。 [下载用于OAuth集成的公共证书](#oauth-config)。
 
 1. *[如果您是现有用户，则不适用]* [在Adobe Developer Console中创建集成](#create-adobe-i-o-integration)。
 
@@ -128,7 +139,7 @@ OAuth配置需要以下先决条件：
    >
    >提供为[!UICONTROL 服务URL]的URL无法通过浏览器访问，并生成404错误。 使用[!UICONTROL 服务URL]参数的相同值时，配置工作正常。 有关整体服务状态和维护计划，请参阅[https://status.adobe.com](https://status.adobe.com)。
 
-1. 单击&#x200B;**[!UICONTROL 下载OAuth集成的公共证书]**，然后下载公共证书文件`AEM-SmartTags.crt`。 此外，您不再需要在Adobe开发人员控制台中上传此证书。
+1. 单击&#x200B;**[!UICONTROL 下载OAuth集成的公共证书]**，然后下载公共证书文件`AEM-SmartTags.crt`。 此外，您不再需要在Adobe Developer控制台中上传此证书。
 
    ![为智能标记服务创建的设置的表示形式](assets/smart-tags-download-public-cert1.png)
 
@@ -148,7 +159,7 @@ OAuth配置需要以下先决条件：
 
 1. 根据需要添加/修改&#x200B;**[!UICONTROL 凭据名称]**。 单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 选择产品配置文件&#x200B;**[!UICONTROL 智能内容服务]**。 单击&#x200B;**[!UICONTROL 保存配置的API]**。 OAuth API会添加到连接的凭据下，以供进一步使用。 您可以从中复制[!UICONTROL API密钥（客户端ID）]或[!UICONTROL 生成访问令牌]。
+1. 选择产品配置文件&#x200B;**[!UICONTROL 智能内容服务]**。 单击&#x200B;**[!UICONTROL 保存配置的API]**。 OAuth API将添加到连接的凭据以供进一步使用。 您可以从中复制[!UICONTROL API密钥（客户端ID）]或[!UICONTROL 生成访问令牌]。
 <!--
 1. On the **[!UICONTROL Select product profiles]** page, select **[!UICONTROL Smart Content Services]**. Click **[!UICONTROL Save configured API]**.
 
