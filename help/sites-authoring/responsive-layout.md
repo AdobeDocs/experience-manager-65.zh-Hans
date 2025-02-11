@@ -1,6 +1,6 @@
 ---
 title: 内容页面的响应式布局
-description: 通过Adobe Experience Manager，您可以为页面实现响应式布局。
+description: 通过Adobe Experience Manager，您可以使用布局容器组件为页面实现响应式布局。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,18 +9,27 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 73%
+source-wordcount: '1853'
+ht-degree: 69%
 
 ---
 
+
 # 响应式布局{#responsive-layout}
 
-AEM 让您能够使用&#x200B;**布局容器**&#x200B;组件为页面实现响应式布局。
+Adobe Experience Manager允许您使用&#x200B;**布局容器**&#x200B;组件为页面实现响应式布局。
 
-由此提供的段落系统让您能够将组件放置在响应式网格内。此网格可以根据设备/窗口大小和格式重新安排布局。此组件可与&#x200B;[**布局**&#x200B;模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)配合使用，让您能够根据设备创建和编辑响应式布局。
+>[!TIP]
+>
+>本文档概述了内容作者可用的布局容器功能。
+>
+>对于站点管理员和开发人员，有关如何为站点配置布局容器的详细信息，请参阅[配置布局容器和布局模式](/help/sites-authoring/responsive-layout.md)文档。
+
+## 概述 {#overview}
+
+**布局容器**&#x200B;组件提供了一个段落系统，允许您在响应式网格中放置组件。 此网格可以根据设备/窗口大小和格式重新安排布局。此组件可与&#x200B;[**布局**&#x200B;模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)配合使用，让您能够根据设备创建和编辑响应式布局。
 
 布局容器：
 

@@ -10,20 +10,27 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 4%
+source-wordcount: '1479'
+ht-degree: 3%
 
 ---
 
+
 # 配置布局容器和布局模式{#configuring-layout-container-and-layout-mode}
 
-[响应式布局](/help/sites-authoring/responsive-layout.md)是一种用于实现[响应式网页设计](https://en.wikipedia.org/wiki/Responsive_web_design)的机制。 这允许用户创建网页，这些网页的布局和尺寸取决于用户使用的设备。
+了解如何配置布局容器和布局模式。
 
->[!NOTE]
+>[!TIP]
 >
->这可以与[移动Web](/help/sites-developing/mobile-web.md)机制进行比较，后者使用自适应Web设计（主要用于经典UI）。
+>本文档为站点管理员和开发人员提供了响应式设计概述，介绍了如何在AEM中实现功能。
+>
+>对于内容作者，内容页面的响应式布局文档[中提供了如何在内容页面上使用响应式设计功能的详细信息。](/help/sites-authoring/responsive-layout.md)
+
+## 概述 {#overview}
+
+[响应式布局](/help/sites-authoring/responsive-layout.md)是一种用于实现[响应式网页设计](https://en.wikipedia.org/wiki/Responsive_web_design)的机制。 这允许用户创建网页，这些网页的布局和尺寸取决于用户使用的设备。
 
 AEM 使用一组机制为页面实现响应式布局：
 
@@ -33,7 +40,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
    * 默认&#x200B;**布局容器**&#x200B;组件定义于：
 
-     /libs/wcm/foundation/components/responsivegrid
+     `/libs/wcm/foundation/components/responsivegrid`
 
    * 您可以定义布局容器：
 
@@ -49,10 +56,6 @@ AEM 使用一组机制为页面实现响应式布局：
 * [**模拟器**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 这让您创建和编辑响应式网站，通过以交互的方式调整组件大小，根据设备/窗口大小重新排列布局。然后，用户可以使用模拟器查看内容的呈现方式。
 
->[!CAUTION]
->
->尽管&#x200B;**布局容器**&#x200B;组件在经典UI中可用，但其完整功能仅在触屏UI中可用。
-
 通过这些响应式网格机制，您可以：
 
 * 使用断点（指示设备分组）根据设备布局定义不同的内容行为。
@@ -60,9 +63,17 @@ AEM 使用一组机制为页面实现响应式布局：
 * 使用水平对齐网格功能（将组件放入网格中，根据需要调整大小，定义它们何时应该折叠/重排成并排或上下对齐）。
 * 实现列控件。
 
+>[!TIP]
+>
+>Adobe提供了响应式布局的[GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)，前端开发人员可以参考该文档，以便在AEM之外使用AEM网格，例如，在为将来的AEM站点创建静态HTML模型时。
+
 >[!NOTE]
 >
 >在开箱即用的安装中，已为[We.Retail参考网站](/help/sites-developing/we-retail.md)配置了响应式布局。 [为其他页面激活布局容器组件](#enable-the-layout-container-component-for-page)。
+
+>[!CAUTION]
+>
+>尽管&#x200B;**布局容器**&#x200B;组件在经典UI中可用，但其完整功能仅在触屏UI中可用。
 
 ## 配置响应式模拟器 {#configuring-the-responsive-emulator}
 
@@ -148,7 +159,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 示例定义：
 
-```xml
+```html
 <cq:responsive jcr:primaryType="nt:unstructured">
   <breakpoints jcr:primaryType="nt:unstructured">
     <phone jcr:primaryType="nt:unstructured" title="{String}Phone" width="{Decimal}768"/>
@@ -186,13 +197,13 @@ AEM 使用一组机制为页面实现响应式布局：
 
 * **HTL：**
 
-  ```xml
+  ```html
   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
   ```
 
 * **JSP：**
 
-  ```
+  ```html
   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
   ```
 
@@ -204,7 +215,7 @@ AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项�
 
 您还必须创建一个[客户端库](https://experienceleague.adobe.com/docs/)以提供额外的配置和函数调用。 以下LESS提取是您必须添加到项目的最小值示例：
 
-```java
+```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
 
 /* maximum amount of grid cells to be provided */
@@ -311,3 +322,61 @@ AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项�
    * 可添加到当前组件的组件：
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+
+## 嵌套响应式网格 {#nested-responsive-grids}
+
+在某些情况下，您可能会发现有必要嵌套响应式网格来支持项目的需求。 但是，请记住，Adobe推荐的最佳做法是尽可能保持结构平整。
+
+当您无法避免使用嵌套的响应式网格时，请确保：
+
+* 所有容器（容器、选项卡、折叠等）都具有属性`layout = responsiveGrid`。
+* 不要在容器层次结构中混合使用属性`layout = simple`。
+
+这包括页面模板中的所有结构化容器。
+
+内部容器的列号不得大于外部容器的列号。 下面的示例满足此条件。 对于默认（桌面）屏幕，外部容器的列号为8，而内部容器的列号为4。
+
+>[!BEGINTABS]
+
+>[!TAB 示例节点结构]
+
+```text
+container
+  @layout = responsiveGrid
+  cq:responsive
+    default
+      @offset = 0
+      @width = 8
+  container
+  @layout = responsiveGrid
+    cq:responsive
+      default
+        @offset = 0
+        @width = 4
+    text
+      @text =" Text Column 1"
+```
+
+>[!TAB 示例结果HTML]
+
+```html
+<div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--default--8 aem-GridColumn--offset--default--0">
+  <div id="container-c9955c233c" class="cmp-container">
+    <div class="aem-Grid aem-Grid--8 aem-Grid--default--8 ">
+      <div class="container responsivegrid aem-GridColumn--default--none aem-GridColumn aem-GridColumn--offset--default--0 aem-GridColumn--default--4">
+        <div id="container-8414e95866" class="cmp-container">
+          <div class="aem-Grid aem-Grid--4 aem-Grid--default--4 ">
+            <div class="text aem-GridColumn aem-GridColumn--default--4">
+              <div data-cmp-data-layer="..." id="text-1234567890" class="cmp-text">
+                <p>Text Column 1</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+```
+
+>[!ENDTABS]
