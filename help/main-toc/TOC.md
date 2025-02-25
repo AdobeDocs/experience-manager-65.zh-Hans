@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 236dac79430bc974b9cc95299a566283a748476a
+source-git-commit: 0109abf51045224912d130ee29f67d7274cfc4f4
 workflow-type: tm+mt
-source-wordcount: '7474'
+source-wordcount: '7471'
 ht-degree: 21%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 21%
    + [相同网站Cookie支持](/help/sites-administering/same-site-cookie-support.md)
    + [在 Adobe Developer Console 中弃用 JWT 凭据](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)
    + [为AEM设置IMS集成](/help/sites-administering/setting-up-ims-integrations-for-aem.md)
-+ Sites {#sites}
++ Site {#sites}
    + 创作 {#authoring}
       + AEM创作{#essentials}的基本任务、工具和概念
          + [作者的首要步骤](/help/sites-authoring/first-steps.md)
@@ -143,8 +143,8 @@ ht-degree: 21%
          + [个性化](/help/sites-authoring/personalization.md)
          + [使用 ContextHub 数据预览页面](/help/sites-authoring/ch-previewing.md)
          + [使用定位模式创作目标内容](/help/sites-authoring/content-targeting-touch.md)
-         + [在多个站点中使用目标内容](/help/sites-authoring/multisite-support-targeted-content.md)
-         + [如何构建目标内容的多站点管理](/help/sites-authoring/technical-multisite-targeted.md)
+         + [在多个 Site 中使用目标内容](/help/sites-authoring/multisite-support-targeted-content.md)
+         + [如何构建目标内容的多 Site 管理](/help/sites-authoring/technical-multisite-targeted.md)
          + [管理活动](/help/sites-authoring/activitylib.md)
          + [管理受众](/help/sites-authoring/managing-audiences.md)
          + [创建和管理产品建议](/help/sites-authoring/offerlib.md)
@@ -167,7 +167,7 @@ ht-degree: 21%
          + [MSM 转出冲突](/help/sites-administering/msm-rollout-conflicts.md)
          + [解决 MSM 问题和常见问题](/help/sites-administering/troubleshoot-msm.md)
          + [MSM 最佳实践](/help/sites-administering/msm-best-practices.md)
-         + [翻译多语言 Sites 的内容](/help/sites-administering/translation.md)
+         + [翻译多语言 Site 的内容](/help/sites-administering/translation.md)
          + [管理翻译项目](/help/sites-administering/tc-manage.md)
          + [标识要翻译的内容](/help/sites-administering/tc-rules.md)
          + [准备内容以进行翻译](/help/sites-administering/tc-prep.md)
@@ -884,7 +884,7 @@ ht-degree: 21%
       + [Designer FormCalc引用](https://www.adobe.com/go/learn_aemforms_formCalc_65)
       + [在HTML5 Forms中使用涂写签名](/help/forms/using/scribble-signature.md)
       + [在 Designer 中更改 Page Zero 内容](/help/forms/using/changing-page-zero-content-designer.md)
-      + [辅助功能最佳实践]{#accessibility-best-practices}
+      + 辅助功能最佳实践{#accessibility-best-practices}
          + [简介](/help/forms/using/introduction-accessibility-forms-designer.md)
          + [创建表单的最佳实践](/help/forms/using/best-practices-for-creating-forms-in-designer.md)
          + [用于测试表单辅助功能的技术](/help/forms/using/techniques-for-testing-form-accessibility.md)
@@ -1202,12 +1202,12 @@ ht-degree: 21%
       + [无法在Windows Server上将Word或Excel文件转换为PDF](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
       + [无法在Google Chrome、Firefox、Microsoft Edge、Microsoft Internet Explorer或Apple Safari中打开基于XFA的PDF forms](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
       + [无法恢复CRX存储库](/help/forms/using/restore-crx-repository.md)
-      + [安装AEM 6.5.15.0 service pack后，出现“服务不可用”错误](/help/forms/using/aem-service-pack-installation-solution.md)
+      + [安装AEM 6.5.15.0 Service Pack后出现“服务不可用”错误](/help/forms/using/aem-service-pack-installation-solution.md)
       + [JBoss Linux环境中的AEM Forms JEE 6.5.15.0 Service Pack安装问题](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
       + [即使AEM Forms服务器未完全启动并运行，也正在处理文档](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [无法使用输出服务、Forms服务或记录文档(DoR)服务](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [缓解Experience Manager Forms的Struts 2 RCE漏洞](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
-      + [在升级到6.5.12.0 for MySQL时无法备份数据库](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
+      + [升级到MySQL的6.5.12.0期间备份数据库失败](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [PDF生成无法在WorkBench上打印大量PDF](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [如何正确重新启动AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture服务无法对PDF执行OCR](/help/forms/using/papercapture-service-resolution.md)
@@ -1276,7 +1276,7 @@ ht-degree: 21%
       + [AEM Headless 快速入门](/help/journey-headless/developer/getting-started.md)
       + [首次 AEM Headless 使用体验的路径](/help/journey-headless/developer/path-to-first-experience.md)
       + [如何将内容建模为 AEM 内容模型](/help/journey-headless/developer/model-your-content.md)
-      + [如何通过 AEM 传递 API 访问您的内容](/help/journey-headless/developer/access-your-content.md)
+      + [如何通过 AEM 交付 API 访问您的内容](/help/journey-headless/developer/access-your-content.md)
       + [如何通过 AEM Assets API 更新您的内容](/help/journey-headless/developer/update-your-content.md)
       + [如何融于一起](/help/journey-headless/developer/put-it-all-together.md)
       + [如何使用 Headless 应用程序上线](/help/journey-headless/developer/go-live.md)
@@ -1304,7 +1304,7 @@ ht-degree: 21%
 + 实施 {#implementing}
    + 开发 {#developing}
       + 开发人员简介{#introduction}
-         + [AEM Sites 开发入门 – WKND 教程](/help/sites-developing/getting-started.md)
+         + [AEM Site 开发入门 – WKND 教程](/help/sites-developing/getting-started.md)
          + [AEM核心概念](/help/sites-developing/the-basics.md)
          + [AEM触屏优化UI的结构](/help/sites-developing/touch-ui-structure.md)
          + [AEM触屏优化UI的概念](/help/sites-developing/touch-ui-concepts.md)
@@ -1373,7 +1373,7 @@ ht-degree: 21%
          + 国际化{#internationalization}
             + [国际化组件](/help/sites-developing/i18n.md)
             + [国际化 UI 字符串](/help/sites-developing/i18n-dev.md)
-            + [使用Translator管理词典](/help/sites-developing/i18n-translator.md)
+            + [使用 Translator 管理词典](/help/sites-developing/i18n-translator.md)
             + [提取用于翻译的字符串](/help/sites-developing/i18n-extract.md)
          + 经典UI组件{#classic-ui-components}
             + [开发AEM组件（经典UI）](/help/sites-developing/developing-components-classic.md)
@@ -1433,7 +1433,7 @@ ht-degree: 21%
          + 通用编辑器{#universal-editor}
             + [简介](/help/sites-developing/universal-editor/introduction.md)
       + 混合和SPA AEM开发{#spas}
-         + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/Site/Headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [SPA 简介和演练](/help/sites-developing/spa-walkthrough.md)
          + [SPA WKND 教程](/help/sites-developing/spa-wknd.md)
          + [使用 React 快速入门](/help/sites-developing/spa-getting-started-react.md)
