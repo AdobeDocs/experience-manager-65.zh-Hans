@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '3770'
+source-wordcount: '3750'
 ht-degree: 7%
 
 ---
@@ -38,9 +38,9 @@ Dynamic Media已随附预定义的自适应视频编码配置文件。 此现成
 
 >[!NOTE]
 >
->要生成视频的元数据和关联的视频图像缩略图，视频本身必须在Dynamic Media中完成编码过程。 在Adobe Experience Manager中，如果您已启用Dynamic Media并设置了视频云服务，则&#x200B;**[!UICONTROL Dynamic Media编码视频]**&#x200B;工作流会对视频进行编码。 此工作流会捕获工作流进程历史记录和失败信息。请参阅[监控视频编码和YouTube发布进度](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress)。 如果您已启用Dynamic Media并设置了视频云服务，则在您上传视频时，**[!UICONTROL Dynamic Media编码视频]**&#x200B;工作流将自动生效。 (如果您未使用Dynamic Media，则&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流将生效。)
+>要生成视频的元数据和关联的视频图像缩略图，视频本身必须在Dynamic Media中完成编码过程。 在Adobe Experience Manager中，如果您已启用Dynamic Media并设置了视频云服务，则&#x200B;**[!UICONTROL Dynamic Media编码视频]**&#x200B;工作流会对视频进行编码。 此工作流会捕获工作流进程历史记录和失败信息。请参阅[监控视频编码和YouTube发布进度](/help/assets/video.md#monitoring-video-encoding-and-youtube-publishing-progress)。 如果您已启用Dynamic Media并设置了视频云服务，则在您上传视频时，**[!UICONTROL Dynamic Media编码视频]**&#x200B;工作流将自动生效。 （如果您未使用Dynamic Media，则&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流将生效。）
 >
->在搜索资源时，元数据很有用。 缩略图是在编码期间生成的静态视频图像。 Experience Manager系统需要它们并用于用户界面，以帮助您在“卡片”视图、“搜索结果”视图和“资源列表”视图中直观地识别视频。 选择已编码视频的“演绎版”图标（画板面板）时，您可以查看生成的缩略图。
+>在搜索资源时，元数据很有用。 缩略图是在编码期间生成的静态视频图像。 它们是Experience Manager系统所必需的，并用于用户界面中，以帮助您在“卡片”视图、“搜索结果”视图和“资源列表”视图中直观地标识视频。 选择已编码视频的“演绎版”图标（画板面板）时，您可以查看生成的缩略图。
 
 创建完视频配置文件后，可将其应用到一个或多个文件夹。 请参阅[将视频配置文件应用到文件夹](#applying-a-video-profile-to-folders)。
 
@@ -131,7 +131,7 @@ Adobe Sensei限制为9000帧。 即，30 FPS时为5分钟。 如果视频的FPS�
 
 ## 创建用于自适应比特率流的视频配置文件 {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
-Dynamic Media已随附预定义的自适应视频编码配置文件（一组适用于MP4 H.264的视频上传设置），该配置文件已针对最佳观看体验进行了优化。 上传视频时，您可以使用此配置文件。
+Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264的一组视频上传设置），该配置文件已针对最佳观看体验进行了优化。 上传视频时，您可以使用此配置文件。
 
 但是，如果此预定义配置文件不符合您的需求，您可以选择创建自己的自适应视频编码配置文件。 使用自适应流播放的设置&#x200B;**[!UICONTROL 编码]**&#x200B;时（作为最佳实践），将验证您添加到配置文件的所有编码预设，以确保所有视频的长宽比相同。 此外，将编码后的视频视为用于流的多比特率集。
 
@@ -257,7 +257,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（一组适�
 **要使用自定义添加的视频编码参数：**
 
 1. 选择Experience Manager徽标，然后导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 常规]** > **[!UICONTROL CRXDE Lite]**。
-1. 在CRXDE Lite页面的左侧Explorer面板中，导航到以下内容：
+1. 在CRXDE Lite页面的左侧资源管理器面板中，导航到以下内容：
 
    `/conf/global/settings/dam/dm/presets/video/*name_of_video_encoding_profile_to_edit`
 
@@ -283,7 +283,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（一组适�
    <td><code>keyframe</code></td>
    <td>关键帧之间的目标帧数。 计算此值以便每2-10秒生成一次关键帧。 例如，以每秒30帧的速度显示，关键帧间隔应为60-300。<br /> <br />较低的关键帧间隔改善了自适应视频编码的流搜寻和流切换行为，并且可能还改善了具有大量运动的视频的质量。 但是，由于关键帧会增加文件的大小，因此较低的关键帧间隔通常会导致在给定比特率下整体视频质量较低。</td>
    <td><code>String</code></td>
-   <td><p>正数。</p> <p>默认值为300。</p> <p>DASH或HLS的建议值为60-90。 (若要对视频使用DASH，必须先在您的帐户中启用它。 请参阅<a href="/help/assets/video.md#enable-dash">在您的帐户上启用DASH</a>。)</p> </td>
+   <td><p>正数。</p> <p>默认值为300。</p> <p>DASH或HLS的建议值为60-90。</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -346,9 +346,9 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（一组适�
 1. 在“视频配置文件”页面上，检查一个视频配置文件名称。
 1. 在工具栏上，选择&#x200B;**[!UICONTROL 复制]**。
 1. 在视频编码配置文件页面上，输入配置文件的新名称。
-1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。 选择信息图标以获取自适应比特率流的描述。 （如果要复制渐进式视频配置文件，请勿选中此复选框。）
+1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。 选择信息图标以获取自适应比特率流的描述。 （如果要复制渐进式视频轮廓，请勿选中此复选框。）
 
-   在Dynamic Media — 混合模式中，如果WebM视频预设是视频配置文件的一部分，则无法对自适应流进行&#x200B;**[!UICONTROL 编码]**，因为所有预设都必须是MP4。
+   在Dynamic Media — 混合模式下，如果WebM视频预设是视频配置文件的一部分，则无法为自适应流进行&#x200B;**[!UICONTROL 编码]**，因为所有预设都必须是MP4。
 1. 在“视频编码预设”标题下，添加、编辑或删除构成配置文件的视频编码预设。
 
    在“基本”和“高级”选项卡上选择每个选项旁边的信息图标，以查看建议的设置和说明。
@@ -378,9 +378,9 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（一组适�
 
 ### 将视频配置文件应用到特定文件夹 {#applying-video-profiles-to-specific-folders}
 
-您可以从“工具”菜单中将视频配置文件应用到 **[!UICONTROL 文件夹]** ，或者如果您在文件夹中，也可以从“属 **[!UICONTROL 性”]**。 本节将介绍这两种将视频配置文件应用到文件夹的方法。
+您可以从“工具”菜单中将视频轮廓应用到 **[!UICONTROL 文件夹]** ，或者如果您在文件夹中，也可以从“属 **[!UICONTROL 性”]**。 本节将介绍这两种将视频轮廓应用到文件夹的方法。
 
-如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
 另请参阅[编辑文件夹中用于处理资产的配置文件后，重新处理该文件夹中的资产](processing-profiles.md#reprocessing-assets)。
 
@@ -395,7 +395,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（一组适�
 
 1. 选择Experience Manager徽标并导航到&#x200B;**[!UICONTROL Assets]**，然后导航到要将视频配置文件应用到其中的文件夹。
 1. 在文件夹上，选中复选标记以将其选中，然后选择&#x200B;**[!UICONTROL 属性]**。
-1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，然后从下拉菜单中选择配置文件，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，然后从下拉菜单中选择配置文件，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
 您可以[监视视频配置文件处理作业](#monitoring-the-progress-of-an-encoding-job)的进度。
@@ -417,13 +417,13 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（一组适�
 
 将显示处理指示器（或进度条），以便您可以直观地监视视频配置文件处理作业的进度。
 
-您还可以查看`error.log`文件以监视编码作业的进度，查看编码是否已完成，或查看任何作业错误。 在安装您的Experience Manager实例的`logs`文件夹中找到`error.log`。
+您还可以查看`error.log`文件以监视编码作业的进度，查看编码是否已完成，或查看任何作业错误。 在安装Experience Manager实例的`logs`文件夹中找到`error.log`。
 
 ## 从文件夹中删除视频配置文件 {#removing-a-video-profile-from-folders}
 
 从文件夹中删除视频配置文件时，所有子文件夹都会自动从其父文件夹中继承对该配置文件的删除。 但是，在文件夹中进行的任何文件处理操作将保持不变。
 
-您可以从“工具”菜单中将视频配置文件从文件夹删除 **** ，如果您在文件夹中，也可以从“文件夹设 **[!UICONTROL 置”中删除]**。 本节将介绍这两种将视频配置文件从文件夹删除的方法。
+您可以从“工具”菜单中将视频轮廓从文件夹删除 **** ，如果您在文件夹中，也可以从“文件夹设 **[!UICONTROL 置”中删除]**。 本节将介绍这两种将视频轮廓从文件夹删除的方法。
 
 ### 通过“配置文件”用户界面从文件夹中删除视频配置文件 {#removing-video-profiles-from-folders-by-way-of-the-profiles-user-interface}
 
@@ -437,4 +437,4 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（一组适�
 
 1. 选择Experience Manager徽标并导航到&#x200B;**[!UICONTROL Assets]**，然后导航到要将视频配置文件从中删除的文件夹。
 1. 在文件夹中，选择复选标记，然后选择&#x200B;**[!UICONTROL 属性]**。
-1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，然后从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，然后从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
