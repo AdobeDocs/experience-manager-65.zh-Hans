@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: a49af471c5fc2f799687173bff6cdcb21505740a
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '2335'
+source-wordcount: '2308'
 ht-degree: 28%
 
 ---
@@ -22,7 +22,7 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
 ## AEM 6.5，Service Pack 18—2023年12月7日
 
-* 启用了站点页面编辑器/图像组件用户从远程AssetsCloud Service引用资源的功能。 (SITES-13448和SITES-13433)
+* 启用了站点页面编辑器/图像组件用户从远程Assets Cloud Service引用资源的功能。 (SITES-13448和SITES-13433)
 * AEM现在支持服务器端排序，从而加快列表视图中的项目导航速度。 项目节点在显示在界面中之前根据用户选择的列排序。
 
 ### [!DNL Forms]
@@ -46,22 +46,22 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
 ## AEM 6.5，Service Pack 18—2023年8月24日
 
-* Assets、Dynamic Media - [Dynamic Media支持视频的多个字幕和音轨](/help/assets/video.md#about-msma) — 您现在可以轻松地将多个字幕和多个音轨添加到主视频中。 此功能意味着全球观众都能看懂您的视频。只需自定义一个主视频，即可发布到多种语言的全球观众，并遵循不同地区的辅助功能准则。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
+* Assets、Dynamic Media - [Dynamic Media支持视频的多字幕和音轨](/help/assets/video.md#about-msma) — 您现在可以轻松地将多个字幕和多个音轨添加到主视频中。 此功能意味着全球观众都能观看您的视频。您可以用多种语言为全球观众自定单一的、已发布的主视频，并遵守不同地区的可访问性指南。此外，作者从用户界面中的一个选项卡即可管理字幕和音轨。
 * Assets — 现在，您可以在搜索结果中导航到包含资源的文件夹位置，以便执行各种资源管理任务。
 * 内容片段中的Sites Polaris选取器改进了性能。
-* 启用了站点页面编辑器/图像组件用户从远程AssetsCloud Service引用资源的功能。
-* 要在“列表”视图中快速查找项目（系统中可能有许多项目），Adobe现在支持服务器端排序。 项目节点在用户界面中呈现之前，会根据用户选择的列在后端进行排序。
+* 启用了站点页面编辑器/图像组件用户从远程Assets Cloud Service引用资源的功能。
+* 要在列表视图中快速查找您可能拥有多个项目的项目，Adobe现在支持服务器端排序。 项目节点在用户界面中呈现之前，会根据用户选择的列在后端进行排序。
 * AEM 6.5.18.0支持MongoDB 5.0到6.0。
 
 ### [!DNL Forms]
 
 * **[规则编辑器中使用自定义错误处理程序的增强错误处理](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** — 您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误。 而且，您可以为最终用户提供量身定制的响应。 或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端中调用自定义工作流以获取特定错误代码，或通知客户服务已中断
 
-* **[增强的Adobe Sign工作流步骤](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - AEM Workflow中的Adobe Sign工作流步骤包含以下增强功能。
+* **[增强的Adobe Sign工作流步骤](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - AEM工作流中的Adobe Sign工作流步骤包含以下增强功能。
 
    * **通过基于Government ID的身份验证增强Adobe Sign的安全性** - Adobe Acrobat Sign基于Government ID的身份验证提供额外的验证层。 它允许用户使用政府颁发的ID（驾照、身份证、护照）进行身份认证。 通过利用可信身份证明文件，此增强将签名过程的可信度提高一级，使其成为需要更高的安全性、合规性和用户验证的场景的理想之选。
 
-   * **Adobe Sign文档的审计追踪透明度增强** — 使用审计追踪功能可详细了解Adobe Sign文档的生命周期。 利用审核记录功能，您现在可保留与文档相关的所有操作和交互的全面记录。其中包括查看者、编辑者或签署文档者以及每个事件的时间戳等详细信息。此增强对于保持合规性、解决争议和确保数字协议的完整性至关重要。
+   * **Adobe Sign文档的审计追踪的透明度增强** — 使用审计追踪功能可详细了解Adobe Sign文档的生命周期。 利用审核记录功能，您现在可保留与文档相关的所有操作和交互的全面记录。其中包括查看者、编辑者或签署文档者以及每个事件的时间戳等详细信息。此增强对于保持合规性、解决争议和确保数字协议的完整性至关重要。
 
 
    * **扩展了协议收件人的角色，而不只是签名者** — 通过Adobe Acrobat Sign，您可以将协议收件人的角色扩展为仅包括签名者，以便更好地匹配他们的工作流要求。 启用后，协议中的每个收件人可以单独配置其角色，签名者是默认角色。
@@ -70,12 +70,12 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 * **[JEE上的AEM Forms完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** — 此Service Pack为JEE上的AEM Forms提供完整安装程序，该安装程序支持多种新的软件组合，包括：
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
-   * 在Windows Server 2022上OracleWebLogic 14C
+   * Windows Server 2022上的Oracle WebLogic 14C
    * Red Hat® JBoss® 7.4.10
    * MongoDB 6.0 <!-- it was previously MongoDB 4.4 -->
    * MySQL JDBC连接器8
 
-如果您在JEE环境中安装或计划使用适用于AEM 6.5 Forms的最新软件，Adobe建议使用AEM 6.5.18.0 Forms on JEE完整安装程序。 要探索新添加和已弃用的软件的完整列表，请参阅JEE上的AEM Forms或OSGi上的AEM Forms的文档。
+如果您在JEE环境中安装或计划使用适用于AEM 6.5 Forms的最新软件，Adobe建议在JEE上使用AEM 6.5.18.0 Forms完整安装程序。 要探索新添加和已弃用的软件的完整列表，请参阅JEE上的AEM Forms或OSGi上的AEM Forms的文档。
 
 ## AEM 6.5，Service Pack 17—2023年5月25日
 
@@ -86,8 +86,8 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
   您无需导航到资源的位置并查看其属性即可执行这些操作。
 * **Dynamic Media _快照_**— 试验测试图像或Dynamic Media URL，以查看不同图像修饰符的输出，以及针对文件大小（使用WebP和AVIF交付）、网络带宽和设备像素比的智能成像优化。 请参阅 [Dynamic Media 快照。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)
-* 使用Dynamic Media的&#x200B;**DASH流** — 为Dynamic Media视频交付中的自适应流推出了新协议（DASH — 通过HTTP的动态自适应流）支持（启用了CMAF）。 现在所有地区都可使用，[通过支持票证](/help/assets/video.md#enable-dash-on-your-account-enable-dash)启用。
-* **Experience Manager Sites和内容片段与Assets下一代Dynamic Media的集成** - Experience Manager Assetsas a Cloud Service下一代Dynamic Media的用户现在可以使用这些云托管的资产来通过Experience Manager Sites 6.5的内部部署或Managed Services实例进行创作和交付。
+* 使用Dynamic Media的&#x200B;**DASH流** — 为Dynamic Media视频交付中的自适应流启动的新协议(DASH - Dynamic Adaptive Streaming over HTTP)（已启用CMAF）。 现在可供所有地区使用。
+* **Experience Manager Sites和内容片段与Assets新一代Dynamic Media的集成** - Experience Manager Assets as a Cloud Service新一代Dynamic Media的用户现在可以使用这些云托管的资产通过Experience Manager Sites 6.5的内部部署或Managed Services实例进行创作和交付。
 
 ### [!DNL Forms]
 
@@ -97,18 +97,16 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
    * 将多个表单添加到 Sites 页面，简化用户体验并提供更大的灵活性。
 * **[Experience Manager Forms中的reCAPTCHA Enterprise支持](/help/forms/using/captcha-adaptive-forms.md)**：除了现有的Experience Manager Forms reCAPTCHA v2支持之外，还增加了对Google中reCAPTCHA Enterprise的支持，从而增强了对欺诈活动和垃圾邮件的防范。
 * **[支持带有Experience Manager Forms的Adobe Acrobat Sign政府版](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**： AEM Forms现在与面向政府的Adobe Acrobat Sign集成（符合FedRAMP标准）。 此集成通过为政府关联帐户（政府部门和机构）提交自适应表单，为电子签名提供了高级的合规性和安全性。 与 Adobe Acrobat Sign 政府版的集成使 Adobe 的合作伙伴和政府客户能够在一些最关键和敏感的业务领域使用自适应表单中的电子签名功能。这层额外的安全保障机制确保所有电子签名完全符合 FedRAMP Moderate 合规性，使 Adobe 的政府客户能够安心使用。
-* **启用Salesforce与Experience Manager Forms的集成以便进行数据交换**：使用OAuth 2.0客户端凭据流配置Experience Manager Forms与Salesforce应用程序之间的集成。 此功能支持对应用程序进行安全而直接的身份验证和授权，并允许无缝通信，而无需用户参与。
+* **启用Salesforce与Experience Manager Forms的集成，以便进行数据交换**：使用OAuth 2.0客户端凭据流配置Experience Manager Forms与Salesforce应用程序之间的集成。 此功能支持对应用程序进行安全而直接的身份验证和授权，并允许无缝通信，而无需用户参与。
 * **工作流引擎的优化和增强功能**：通过最大限度地减少工作流实例的数量来提高工作流引擎的性能。 除了`COMPLETED`和`RUNNING`状态值之外，工作流还支持三个新状态值： `ABORTED`、`SUSPENDED`和`FAILED`。
 
 ## AEM 6.5，Service Pack 16—2023年2月23日
 
-新协议DASH(Dynamic Adaptive Streaming over HTTP)支持在Dynamic Media视频交付中启动自适应比特率流（已启用CMAF [Common Media Application Format]）。
+为Dynamic Media视频交付中的自适应比特率流启动的新协议DASH(Dynamic Adaptive Streaming over HTTP)（启用了CMAF [通用媒体应用程序格式]）。
 
 * 自适应流(DASH/HLS)确保获得更好的视频最终用户观看体验。
 * DASH是自适应视频流的国际标准协议，在业界得到广泛应用。
-* 现在在亚太和北美提供（通过支持票证启用）；欧洲 — 中东 — 非洲即将推出。
-
-请参阅[在您的帐户上启用DASH](/help/assets/video.md#enable-dash)。
+* 目前已在亚太和北美推出；即将推出欧洲 — 中东 — 非洲版本。
 
 ### [!DNL Forms]
 
@@ -116,7 +114,7 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
 * [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)是基于Adobe Experience Manager WCM核心组件构建的一组24个开源、符合BEM的组件。 这些组件是开源的，使开发人员能够轻松地自定义和扩展这些组件，以满足其组织的特定需求。 具备自定义[WCM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html)的现有技能的任何人都可以轻松自定义这些组件并设置其样式。
 
-* OSGi上的Reader扩展服务现在提供了单独的选项，用于启用PDF的导入和导出使用权限，以便在Adobe Acrobat Reader中导入或导出数据。
+* OSGi上的Reader扩展服务现在提供单独的选项，以启用PDF上的导入和导出使用权限，从而在Adobe Acrobat Reader中导入或导出数据。
 
 ## AEM 6.5，Service Pack 15—2022年11月24日
 
@@ -139,12 +137,12 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
 * 现在，在生成自适应表单翻译文件时，生成的XLIFF文件的文本序列与相应的自适应表单中的组件序列相同。
 
-* 本地化自适应表单并对基础语言的文本进行微小更改时，所有其他语言的完整翻译都将丢失。 已在[!DNL Experience Manager] 6.5.13.0中修复此问题。
+* 本地化自适应表单并对基础语言的文本进行微小更改时，所有其他语言的完整翻译都将丢失。 已在[!DNL Experience Manager] 6.5.13.0中修复该问题。
 
 * Forms的辅助功能改进：
 
    * 添加了对屏幕阅读器的支持，用于将表的标题和正文识别为连续和连接的实体。 它有助于屏幕阅读器正确导航表格。 (NPR-37139)
-   * 添加了对屏幕阅读器的支持，允许在对话框打开之前停止在HTML工作区中导航。
+   * 增加了对屏幕阅读器的支持，以便在对话框打开之前停止在HTML工作区中导航。
 
 ## AEM 6.5，Service Pack 12—2022年2月24日
 

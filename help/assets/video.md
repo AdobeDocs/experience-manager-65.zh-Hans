@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '10517'
+source-wordcount: '10488'
 ht-degree: 2%
 
 ---
@@ -553,8 +553,6 @@ Dynamic Media建议使用MP4 H.264视频编码预设。 由于MP4文件使用H.2
 |  | 描述性音频 |
 
 Dynamic Media ](/help/assets/assets-formats.md)和所有Dynamic Media视频查看器支持的所有[视频格式（Dynamic Media *Video_360*&#x200B;查看器除外）都支持与多个字幕和音轨一起使用。
-
-通过必须由Adobe客户支持启用（打开）的功能切换，您的Dynamic Media帐户可以使用多个字幕和音频跟踪功能。
 
 ### 向视频中添加多个字幕和音频轨道 {#add-msma}
 
@@ -1389,7 +1387,7 @@ public class DMSampleApiHttpContext extends ServletContextHelper {
 | `manifestType` | 可选。参数可以是DASH或HLS。 如果未传递，则默认为DASH。 |
 | `onlyIfPublished` | 可选。如果通过，则仅在发布视频时返回`manifestUrl`。 |
 
-在本例中，我们假定进行以下设置：
+在本例中，假设进行了以下设置：
 
 * 公司是`samplecompany`。
 * 创作实例为`http://sample-aem-author.com`。

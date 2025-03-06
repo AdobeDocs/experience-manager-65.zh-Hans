@@ -11,9 +11,9 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+source-git-commit: 54b508809733ed86798558aee50f8c7b5de00af9
 workflow-type: tm+mt
-source-wordcount: '3750'
+source-wordcount: '3730'
 ht-degree: 7%
 
 ---
@@ -301,7 +301,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
    <td><code>audioBitrateCustom</code></td>
    <td>如果音频编解码器支持，将值设置为<code>true</code>以强制音频流采用常量比特率。</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>默认值为<code>false</code>。</p> <p>DASH或HLS的建议值为<code>false</code>。 (若要对视频使用DASH，必须先在您的帐户中启用它。 请参阅<a href="/help/assets/video.md#enable-dash">在您的帐户上启用DASH</a>。)</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>默认值为<code>false</code>。</p> <p>DASH或HLS的建议值为<code>false</code>。</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
