@@ -3,14 +3,14 @@ title: CIF产品和类别选取器的用法
 description: 了解如何在客户商务组件中使用CIF产品和类别选取器，以支持作者和营销人员高效地使用商务产品和目录数据。
 sub-product: Commerce
 topics: Development
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
 workflow-type: tm+mt
 source-wordcount: '563'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM Content和Commerce创作选取器 {#cif-pickers}
 
-AEM Content &amp; Commerce Authoring提供了一组创作工具，可帮助AEM作者和营销人员高效地使用商业产品数据和目录。 产品选取器和类别选取器是CIF加载项的一部分，由CIF核心组件使用。 项目可以在任何组件对话框中使用这些选取器来选择产品或类别。
+AEM内容和Commerce创作提供了一系列创作工具，可帮助AEM作者和营销人员高效地使用商业产品数据和目录。 产品选取器和类别选取器是CIF加载项的一部分，由CIF核心组件使用。 项目可以在任何组件对话框中使用这些选取器来选择产品或类别。
 
 ## 产品选取器 {#product-picker}
 
@@ -51,7 +51,7 @@ product字段允许导航到用户希望通过不同视图选择的产品。 默
 >`cifproductfield`组件需要`cif.shell.picker`客户端库。 要将clientlib添加到对话框，您可以使用extraClientlibs属性。
 >[!CAUTION]
 >
->从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`sku`或`slug`作为产品标识符。 对于使用CIF核心组件版本1.x的项目，Adobe仍仅支持`id`。
+>从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`sku`或`slug`作为产品标识符。 Adobe仍仅对使用CIF核心组件版本1.x的项目支持`id`。
 
 在[CIF核心组件](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml)项目中可以找到`cifproductfield`的完整工作示例。 另请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs)。
 
@@ -81,6 +81,6 @@ product字段允许导航到用户希望通过不同视图选择的产品。 默
 >与`cifproductfield`组件相同，`cifcategoryfield`组件还需要`cif.shell.picker` clientlib。 要将clientlib添加到对话框，您可以使用`extraClientlibs`属性。 请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs)。
 >[!CAUTION]
 >
->从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`uid`或`urlPath`作为类别标识符。 对于使用CIF核心组件版本1.x的项目，Adobe仍继续支持`id`和`idAndUrlPath`。
+>从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`uid`或`urlPath`作为类别标识符。 Adobe仍仅对使用CIF核心组件版本1.x的项目支持`id`和`idAndUrlPath`。
 
 在[CIF核心组件](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml)项目中可以找到`cifcategoryfield`的完整工作示例。

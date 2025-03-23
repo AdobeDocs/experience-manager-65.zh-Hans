@@ -3,7 +3,7 @@ title: 样式Adobe Experience Manager CIF核心组件
 description: 了解如何为Adobe Experience Manager CIF核心组件设置样式。 本教程介绍了如何使用客户端库或clientlibs为Adobe Experience Manager (AEM) Commerce实施部署和管理CSS和JavaScript。 本教程还将介绍如何将ui.frontend模块和webpack项目集成到端到端构建过程中。
 sub-product: Commerce
 topics: Development
-version: Cloud Service
+version: Experience Manager as a Cloud Service
 doc-type: tutorial
 feature: Commerce Integration Framework
 kt: 3456
@@ -11,7 +11,7 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
 workflow-type: tm+mt
 source-wordcount: '2338'
 ht-degree: 0%
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # 样式AEM CIF核心组件 {#style-aem-cif-core-components}
 
-[CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia)是使用[CIF核心组件](https://github.com/adobe/aem-core-cif-components)的参考代码库。 在本教程中，您将检查Venia参考项目并了解AEM CIF核心组件使用的CSS和JavaScript的组织方式。 您还将使用CSS创建样式以更新&#x200B;**Product Teaser**&#x200B;组件的默认样式。
+[CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia)是使用[CIF核心组件](https://github.com/adobe/aem-core-cif-components)的参考代码库。 在本教程中，您将检查Venia参考项目，并了解AEM CIF核心组件使用的CSS和JavaScript的组织方式。 您还将使用CSS创建样式以更新&#x200B;**Product Teaser**&#x200B;组件的默认样式。
 
 >[!TIP]
 >
->在启动您自己的商务实现时使用[AEM项目原型](https://github.com/adobe/aem-project-archetype)。
+>在启动您自己的Commerce实现时使用[AEM项目原型](https://github.com/adobe/aem-project-archetype)。
 
 ## 您将构建的内容
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## 先决条件 {#prerequisites}
 
-需要本地开发环境才能完成本教程。 这包括正在运行的AEM实例，该实例已配置并连接到Adobe Commerce实例。 查看[使用AEM](../develop.md)设置本地开发的要求和步骤。
+需要本地开发环境才能完成本教程。 这包括一个AEM正在运行的实例，该实例已配置并连接到Adobe Commerce实例。 查看[使用AEM](../develop.md)设置本地开发的要求和步骤。
 
 ## 克隆Venia项目 {#clone-venia-project}
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 负责呈现店面主题/样式的CSS和JavaScript在AEM中由[客户端库](/help/sites-developing/clientlibs.md)或简称为clientlibs管理。 客户端库提供了一种机制，用于在项目代码中整理CSS和JavaScript，然后将其交付到页面上。
 
-通过添加和覆盖这些客户端库管理的CSS，可以将特定于品牌的样式应用于AEM CIF核心组件。 了解如何构建客户端库并将其包含在页面上至关重要。
+通过添加和覆盖这些客户端库管理的CSS，可以将特定于品牌的样式应用到AEM CIF核心组件。 了解如何构建客户端库并将其包含在页面上至关重要。
 
 [ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)是一个专用的[webpack](https://webpack.js.org/)项目，用于管理项目的所有前端资源。 这允许前端开发人员使用任意数量的语言和技术，如[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/)等。
 
@@ -129,9 +129,9 @@ ht-degree: 0%
    [INFO] ------------------------------------------------------------------------
    ```
 
-   Inspect终端输出。 您可以看到Maven命令运行了多个NPM脚本，包括`npm run build`。 `npm run build`命令在`package.json`文件中定义，具有编译webpack项目并触发客户端库生成的效果。
+   检查终端输出。 您可以看到Maven命令运行了多个NPM脚本，包括`npm run build`。 `npm run build`命令在`package.json`文件中定义，具有编译webpack项目并触发客户端库生成的效果。
 
-1. Inspect文件`ui.frontend/dist/clientlib-site/site.css`：
+1. 检查文件`ui.frontend/dist/clientlib-site/site.css`：
 
    ![已编译站点CSS](../assets/style-cif-component/comiled-site-css.png)
 
@@ -141,7 +141,7 @@ ht-degree: 0%
    >
    >此类文件会从源代码管理中忽略，因为它们应在构建期间生成。
 
-1. Inspect文件`ui.frontend/clientlib.config.js`。
+1. 检查文件`ui.frontend/clientlib.config.js`。
 
    ```js
    /* clientlib.config.js*/
@@ -178,13 +178,13 @@ ht-degree: 0%
 
    这些客户端库不由`ui.frontend`模块管理。 这些客户端库包含由Adobe提供的CSS和JavaScript依赖项。 这些客户端库的定义在每个文件夹下的`.content.xml`文件中。
 
-   **clientlib-base** — 这是一个空的客户端库，它只是从[AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中嵌入必要的依赖项。 类别为`venia.base`。
+   **clientlib-base** — 这是一个空的客户端库，它只是从[AEM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)中嵌入必要的依赖项。 类别为`venia.base`。
 
-   **clientlib-cif** — 这也是一个空的客户端库，它只是从[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)中嵌入必要的依赖项。 类别为`venia.cif`。
+   **clientlib-cif** — 这也是一个空客户端库，它仅嵌入来自[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)的必要依赖项。 类别为`venia.cif`。
 
-   **clientlib-grid** — 这包括启用AEM响应式网格功能所需的CSS。 使用AEM网格可在AEM编辑器中启用[布局模式](/help/sites-authoring/responsive-layout.md)，并使内容作者能够调整组件大小。 类别为`venia.grid`且已嵌入到`venia.base`库中。
+   **clientlib-grid** — 这包括启用AEM的响应式网格功能所需的CSS。 使用AEM网格会在AEM编辑器中启用[布局模式](/help/sites-authoring/responsive-layout.md)，并使内容作者能够调整组件大小。 类别为`venia.grid`且已嵌入到`venia.base`库中。
 
-1. Inspect`ui.apps/src/main/content/jcr_root/apps/venia/components/page`下的文件`customheaderlibs.html`和`customfooterlibs.html`：
+1. 检查`ui.apps/src/main/content/jcr_root/apps/venia/components/page`下的文件`customheaderlibs.html`和`customfooterlibs.html`：
 
    ![自定义页眉和页脚脚本](../assets/style-cif-component/custom-header-footer-script.png)
 
@@ -227,7 +227,7 @@ ht-degree: 0%
 
    ![查看已发布的项目](../assets/style-cif-component/view-as-published.png)
 
-   此操作将打开页面，而不加载任何AEM创作JavaScript，就像在发布的站点中一样。 请注意，已附加URL的查询参数`?wcmmode=disabled`。 在开发CSS和JavaScript时，最好使用此参数来简化页面，而无需使用AEM创作中的任何内容。
+   此操作将打开页面，而不加载任何AEM创作JavaScript，因为它将显示在已发布的网站上。 请注意，已附加URL的查询参数`?wcmmode=disabled`。 在开发CSS和JavaScript时，最好使用此参数来简化页面，而无需AEM创作中的任何内容。
 
 1. 查看页面源，您应该能够识别包含了多个客户端库：
 
@@ -288,7 +288,7 @@ ht-degree: 0%
 
 ## 本地Webpack开发 {#local-webpack-development}
 
-在上一个练习中，对`ui.frontend`模块中的Sass文件进行了更新，然后在执行Maven构建后，将更改部署到AEM。 接下来，我们将考虑使用webpack-dev-server来快速开发前端样式。
+在上一个练习中，对`ui.frontend`模块中的Sass文件进行了更新，然后在执行Maven构建后，这些更改将部署到AEM。 接下来，我们将考虑使用webpack-dev-server来快速开发前端样式。
 
 webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript，但允许开发人员修改`ui.frontend`模块中的样式和JavaScript。
 
@@ -300,7 +300,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
 
    ![静态HTML文件](../assets/style-cif-component/static-index-html.png)
 
-1. 覆盖`index.html`和&#x200B;**粘贴**&#x200B;上一步中复制的HTML的内容。
+1. 覆盖上一步中复制的`index.html`和&#x200B;**粘贴** HTML的内容。
 
 1. 查找`clientlib-site.min.css`、`clientlib-site.min.js`和&#x200B;**删除的包含**。
 
@@ -465,7 +465,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
 
 在部署新的CSS和/或JavaScript文件时，确保浏览器不提供过时文件也很重要。 您可以通过清除浏览器缓存或启动新的浏览器会话来消除这种情况。
 
-AEM还会尝试缓存客户端库以提高性能。 有时，在代码部署后，会提供旧文件。 您可以使用[Rebuild Client Libraries工具](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)手动使AEM客户端库缓存失效。 如果您怀疑AEM缓存了旧版本的客户端库，则&#x200B;*使缓存失效是首选方法。 重建库效率低下且耗时。*
+AEM还会尝试缓存客户端库以提高性能。 有时，在代码部署后，会提供旧文件。 您可以使用[重新生成客户端库工具](http://localhost:4502/libs/granite/ui/content/dumplibs.rebuild.html)手动使AEM的客户端库缓存失效。 如果您怀疑AEM缓存了旧版本的客户端库，则&#x200B;*使缓存失效是首选方法。 重建库效率低下且耗时。*
 
 ## 恭喜 {#congratulations}
 
