@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 3fa791c50b79a5d8f68dcc8414e14b59ca831d61
+source-git-commit: 652878504d2225e50ea14885ec96bdd408f77ed0
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1722'
 ht-degree: 6%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | 产品 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 版本 | 6.5.22.0 |
+| 版本号 | 6.5.22.0 |
 | 类型 | Service Pack版本 |
 | 日期 | 2024 年 11 月 29 日 |
 | 下载 URL | [最新AEM Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
@@ -36,7 +36,7 @@ Adobe Experience Manager (AEM) Forms service pack包含新增和升级的功能�
 
 >[!NOTE]
 >
-> * Adobe每六个Service Pack发布一个完整安装程序。 AEM 6.5 Forms Service Pack 18 (6.5.18.0)是最新的JEE完整安装程序。 完整安装程序支持新平台，而常规Service Pack安装程序包括新增功能、错误修复和常规改进。 如果您要在JEE环境中执行全新安装或计划使用最新软件来安装AEM 6.5 Forms on JEE，Adobe建议使用于2023年8月31日发布的AEM 6.5.18.0 Forms on JEE完整安装程序，而不是于2019年4月8日发布的AEM 6.5 Forms安装程序或于2022年3月3日发布的AEM 6.5.12.0 Forms安装程序。 使用完整安装程序后，安装最新的Service Pack。
+> * Adobe每六个Service Pack发布一个完整安装程序。 AEM 6.5 Forms Service Pack 18 (6.5.18.0)是最新的JEE完整安装程序。 完整安装程序支持新平台，而常规Service Pack安装程序包括新增功能、错误修复和常规改进。 如果您要在JEE环境中执行全新安装或计划使用最新软件来安装AEM 6.5 Forms，Adobe建议使用于2023年8月31日发布的AEM 6.5.18.0 Forms on JEE完整安装程序，而不是于2019年4月8日发布的AEM 6.5 Forms安装程序或2022年3月3日发布的AEM 6.5.12.0 Forms安装程序。 使用完整安装程序后，安装最新的Service Pack。
 > * [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)中提供的AEM Forms功能(如自适应Forms)仅供探索和评估之用。 必须获得 AEM Forms 的有效许可证才能用于生产。
 
 <!--
@@ -58,11 +58,11 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 +++1. 备份现有环境
 
 1. 备份[CRX存储库、数据库架构和GDS（全局文档存储）](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html)。
-1. 备份&lt;*AEM_forms_root*>/部署文件夹。
+1. 备份&lt;*AEM_forms_root*>/deploy文件夹。
 
 >[!NOTE]
 >
-> 在运行AEM Service Pack安装程序之前，请确保您对AEM安装目录具有写访问权限。
+> 在运行AEM Service Pack安装程序之前，请确保您对AEM安装目录具有写入访问权限。
 
 +++
 
@@ -80,7 +80,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++3. 安装Microsoft Visual C++可再发行软件包
 
-* 在安装了AEM 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的[64位版本的Microsoft Visual C++可再发行包。
+* 在安装了Microsoft 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的[64位版本的AEM Visual C++可再发行包。
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
    这会启动安装向导，引导您完成安装。
 
 1. 在“Introduction”面板上，单击 **[!UICONTROL Next]**。
-1. 在&#x200B;**选择安装文件夹**&#x200B;屏幕上，验证显示的默认位置对于您的现有安装是否正确，或者单击&#x200B;**[!UICONTROL 浏览]**&#x200B;以选择安装AEM表单的备用文件夹，然后单击&#x200B;**[!UICONTROL 下一步]**。
+1. 在&#x200B;**选择安装文件夹**&#x200B;屏幕上，验证显示的默认位置对于您的现有安装是否正确，或者单击&#x200B;**[!UICONTROL 浏览]**&#x200B;以选择安装AEM表单的替代文件夹，然后单击&#x200B;**[!UICONTROL 下一步]**。
 1. 阅读Service Pack摘要信息，然后单击&#x200B;**[!UICONTROL 下一步]**。
 1. 阅读“Pre-Installation Summary”信息，然后单击 **[!UICONTROL Install]**。
 1. 安装完成后，单击 **[!UICONTROL Next]** 以将快速修补程序更新应用到已安装的文件。
@@ -115,7 +115,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
    * 在单击&#x200B;**[!UICONTROL 完成]**&#x200B;之前，请取消选择&#x200B;**Start Configuration Manager**&#x200B;选项。 在`[aem-forms root]\configurationManager\bin`中使用&#x200B;**ConfigurationManager.bat**&#x200B;文件运行&#x200B;**Configuration Manager**。
 
-   * 或者取消选择&#x200B;**Start Configuration Manager**&#x200B;选项，然后再单击&#x200B;**[!UICONTROL 完成]**。 在使用&#x200B;**ConfigurationManager.exe**&#x200B;或&#x200B;**ConfigurationManager_IPv6.exe**&#x200B;运行&#x200B;**Configuration Manager**&#x200B;之前，导航到&#x200B;*`<AEMForms_Install_Dir>\configurationManager\bin`*&#x200B;目录，并用最新的[ConfigurationManager.lax](/help/assets/ConfigurationManager.lax)和[ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax)文件替换&#x200B;**ConfigurationManager.lax**&#x200B;和&#x200B;**ConfigurationManager_IPV6.LAX**。这两个文件中包含&#x200B;**AXIS-1.4.1.2.JAR**&#x200B;的1.1.JAR **。**
+   * 或者取消选择&#x200B;**Start Configuration Manager**&#x200B;选项，然后再单击&#x200B;**[!UICONTROL 完成]**。 在使用&#x200B;**ConfigurationManager.exe**&#x200B;或&#x200B;**ConfigurationManager_IPv6.exe**&#x200B;运行&#x200B;**Configuration Manager**&#x200B;之前，导航到&#x200B;*`<AEMForms_Install_Dir>\configurationManager\bin`*&#x200B;目录，并用最新的[ConfigurationManager.lax](/help/assets/ConfigurationManager.lax)和[ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax)文件替换&#x200B;**ConfigurationManager.lax**&#x200B;和&#x200B;**ConfigurationManager_IPV6.lax**&#x200B;在这两个文件中具有&#x200B;**轴 — 1.4.1.2.jar**&#x200B;的&#x200B;**轴 — 1.4.1.1.jar**。
 
      >[!NOTE]
      >
@@ -128,7 +128,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
    * [安装和部署AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
    * [安装和部署AEM Forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
    * [安装和部署AEM Forms for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65)
-   * [安装和部署AEM forms for JBoss®群集](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
+   * [安装和部署AEM Forms for JBoss®群集](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
    * [安装和部署AEM Forms for WebSphere®群集](https://helpx.adobe.com/cn/content/dam/help/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [安装和部署AEM Forms for WebLogic群集](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
@@ -136,7 +136,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 >[!NOTE]
 >
 >* 在JEE Service Pack上安装AEM Forms后，需要先从`crx-repository\install`文件夹中删除Forms附加组件包，然后再重新启动appserver。 从[软件分发门户](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)下载最新的Forms附加组件包。
->* 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+>* 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java流程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+>* 对于缓解JEE上AEM Forms的Spring Framework漏洞的[修补程序](/help/release-notes/aem-forms-hotfix.md)，在群集环境中部署时，确保使用JDK 17启动定位器至关重要。
 
 +++
 
@@ -160,7 +161,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++6. 安装AEM Service Pack
 
-1. 如果实例处于更新模式（从早期版本更新实例时），请在安装之前重新启动该实例。 如果实例的当前正常运行时间较长，则Adobe建议重新启动。
+1. 如果实例处于更新模式（从早期版本更新实例时），请在安装之前重新启动该实例。 如果实例的当前正常运行时间较长，Adobe建议重新启动。
 1. 安装之前，请为[!DNL Experience Manager]实例拍摄快照或进行全新备份。
 1. 从[Software Distribution](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)下载Service Pack。<!-- UPDATE FOR EACH NEW RELEASE -->
 1. 打开包管理器，然后选择&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。 若要了解更多信息，请参阅[包管理器](/help/sites-administering/package-manager.md)。
@@ -177,7 +178,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   >[!NOTE]
   >
-  >Experience ManagerService Pack不支持Bootstrap安装。<!-- UPDATE FOR EACH NEW RELEASE -->
+  >Experience Manager service pack不支持Bootstrap安装。<!-- UPDATE FOR EACH NEW RELEASE -->
 
   **验证安装**
 
@@ -194,7 +195,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. 确保您已安装[!DNL Experience Manager]服务包。
 1. 下载适用于您的操作系统的 [AEM Forms 发行版](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)中列出的相应 Forms 附加组件包。
 1. 安装Forms附加组件包，如[安装AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)中所述。
-1. 如果在Experience Manager6.5 Forms中使用字母，请安装[最新的AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
+1. 如果您在Experience Manager 6.5 Forms中使用字母，请安装[最新的AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
 
 +++
 
@@ -223,7 +224,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++ 3.安装Microsoft Visual C++可再发行软件包
 
-* 在安装了AEM 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的[64位版本的Microsoft Visual C++可再发行包。
+* 在安装了Microsoft 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的[64位版本的AEM Visual C++可再发行包。
 
 >[!NOTE]
 >
@@ -234,7 +235,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++4. 安装AEM Service Pack
 
-1. 如果实例处于更新模式（从早期版本更新实例时），请在安装之前重新启动该实例。 如果实例的当前正常运行时间较长，则Adobe建议重新启动。
+1. 如果实例处于更新模式（从早期版本更新实例时），请在安装之前重新启动该实例。 如果实例的当前正常运行时间较长，Adobe建议重新启动。
 1. 安装之前，请为[!DNL Experience Manager]实例拍摄快照或进行全新备份。
 1. 从[Software Distribution](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)下载Service Pack。<!-- UPDATE FOR EACH NEW RELEASE -->
 1. 打开包管理器，然后选择&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。 若要了解更多信息，请参阅[包管理器](/help/sites-administering/package-manager.md)。
@@ -249,7 +250,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   >[!NOTE]
   >
-  >Experience ManagerService Pack不支持Bootstrap安装。<!-- UPDATE FOR EACH NEW RELEASE -->
+  >Experience Manager service pack不支持Bootstrap安装。<!-- UPDATE FOR EACH NEW RELEASE -->
 
   **验证安装**
 
@@ -268,7 +269,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. 确保您已安装[!DNL Experience Manager]服务包。
 1. 下载适用于您的操作系统的 [AEM Forms 发行版](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)中列出的相应 Forms 附加组件包。
 1. 安装Forms附加组件包，如[安装AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)中所述。
-1. 如果在Experience Manager6.5 Forms中使用字母，请安装[最新的AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
+1. 如果您在Experience Manager 6.5 Forms中使用字母，请安装[最新的AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
 
 +++
 

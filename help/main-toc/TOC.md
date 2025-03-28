@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: c878a4d21a7f6197261ac86b27fbdc76eefa589f
+source-git-commit: c0756980d0dc8ada7f6c352f68c4f41ecf15caa4
 workflow-type: tm+mt
-source-wordcount: '7471'
+source-wordcount: '7480'
 ht-degree: 21%
 
 ---
@@ -130,11 +130,11 @@ ht-degree: 21%
          + [创建启动项](/help/sites-authoring/launches-creating.md)
          + [编辑启动项](/help/sites-authoring/launches-editing.md)
          + [提升启动项](/help/sites-authoring/launches-promoting.md)
-      + 工作流程 {#workflows}
-         + [使用工作流程](/help/sites-authoring/workflows.md)
-         + [将工作流程应用于页面](/help/sites-authoring/workflows-applying.md)
-         + [参与工作流程](/help/sites-authoring/workflows-participating.md)
-         + [使用项目工作流程](/help/sites-authoring/projects-with-workflows.md)
+      + 工作流 {#workflows}
+         + [使用工作流](/help/sites-authoring/workflows.md)
+         + [将工作流应用于页面](/help/sites-authoring/workflows-applying.md)
+         + [参与工作流](/help/sites-authoring/workflows-participating.md)
+         + [使用项目工作流](/help/sites-authoring/projects-with-workflows.md)
       + 页面性能{#page-performance}
          + [内容分析](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
          + [分析页面性能](/help/sites-authoring/ci-analyze.md)
@@ -198,7 +198,7 @@ ht-degree: 21%
          + [AEM 故障排除](/help/sites-administering/troubleshoot.md)
          + [管理对工作流的访问权限](/help/sites-administering/workflows-managing.md)
          + [启动工作流](/help/sites-administering/workflows-starting.md)
-         + [管理工作流程](/help/sites-administering/workflows.md)
+         + [管理工作流](/help/sites-administering/workflows.md)
          + [管理工作流实例](/help/sites-administering/workflows-administering.md)
          + [在AEM中使用cURL](/help/sites-administering/curl.md)
          + [代理服务器工具(proxy.jar)](/help/sites-administering/proxy-jar.md)
@@ -304,10 +304,10 @@ ht-degree: 21%
          + [基架](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
          + [在设计模式下配置组件](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md)
          + [组件](/help/sites-classic-ui-authoring/classic-page-author-default-components.md)
-      + 工作流程 {#workflows}
-         + [参与工作流程](/help/sites-classic-ui-authoring/classic-workflows-participating.md)
-         + [使用工作流程](/help/sites-classic-ui-authoring/classic-workflows.md)
-         + [将工作流程应用于页面](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
+      + 工作流 {#workflows}
+         + [参与工作流](/help/sites-classic-ui-authoring/classic-workflows-participating.md)
+         + [使用工作流](/help/sites-classic-ui-authoring/classic-workflows.md)
+         + [将工作流应用于页面](/help/sites-classic-ui-authoring/classic-workflows-applying.md)
       + 启动项 {#launches}
          + [启动项](/help/sites-classic-ui-authoring/classic-launches.md)
          + [创建启动项](/help/sites-classic-ui-authoring/classic-launches-creating.md)
@@ -695,7 +695,7 @@ ht-degree: 21%
       + [交互式通信配置属性](/help/forms/using/interactive-communication-configuration-properties.md)
       + [生成多个交互式通信](/help/forms/using/generate-multiple-interactive-communication-using-batch-api.md)
       + [使用版面模式调整组件大小](/help/forms/using/resize-using-layout-mode-interactive-communication.md)
-   + 工作流程 {#workflows}
+   + 工作流 {#workflows}
       + [OSGi上以Forms为中心的工作流](/help/forms/using/aem-forms-workflow.md)
       + [OSGi上以Forms为中心的工作流 — 步骤参考](/help/forms/using/aem-forms-workflow-step-reference.md)
       + [动态选择用户或组以执行以AEM Forms为中心的工作流步骤](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md)
@@ -1211,6 +1211,7 @@ ht-degree: 21%
       + [PDF生成无法在WorkBench上打印大量PDF](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [如何正确重新启动AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture服务无法对PDF执行OCR](/help/forms/using/papercapture-service-resolution.md)
+      + [缓解JEE上AEM Forms的Spring Framework漏洞](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
    + 旧文档{#legacy-documentation}
       + [使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据](/help/forms/developing/building-xml.md)
       + [在JEE自定义DSC中使用AEM Forms压缩和解压缩文件](/help/forms/developing/compressing-decompressing-custom-dsc.md)
@@ -1648,4 +1649,4 @@ ht-degree: 21%
       + [AEM和Web无障碍准则](/help/managing/web-accessibility.md)
       + [WCAG 2.1快速指南](/help/managing/qg-wcag.md)
    + 数据保护{#data-protection}
-      + [用于数据保护和数据隐私法规的 AEM 就绪性](/help/managing/data-protection-and-privacy.md)
+      + [用于数据保护和数据隐私法规的 AEM 准备工作](/help/managing/data-protection-and-privacy.md)
