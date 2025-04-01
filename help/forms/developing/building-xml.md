@@ -5,9 +5,9 @@ exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: ee990092f3174a8c29443eb451d7188c1e27fa7d
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1043'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,10 @@ JEE流程管理工作流中的AEM Forms涉及许多XML，例如：XML信息可�
 ## 使用Execute Script服务创建XML {#create-xml-execute-script-service}
 
 一旦创建了包含了Execute Script服务的进程，就可以使用此脚本创建XML。 用户可以在上面的“使用`Execute Script`服务向进程添加脚本”部分中描述的文本框中编写下面描述的脚本。
+
+>[!NOTE]
+>
+> 如果JAVA脚本代码超过10行，建议将代码添加到自定义DSC（文档服务组件），而不是直接在进程中写入代码。 自定义DSC通过使工作流保持轻量级以提高可维护性、可重用性和性能。 在工作流中引用这些组件可确保提高执行效率，并防止因在工作流中处理大型代码块而导致的潜在速度减慢。
 
 **关于执行脚本服务的技术**
 
