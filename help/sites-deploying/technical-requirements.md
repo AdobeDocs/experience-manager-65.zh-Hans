@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 61f658fc4390610686a308d02a8d74505252434a
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3632'
 ht-degree: 1%
 
 ---
@@ -452,9 +452,9 @@ Adobe Experience Manager(实例、Dispatcher)的所有元素都可以安装在IP
 
 ### AEM Forms PDF Generator的要求 {#requirements-for-aem-forms-pdf-generator}
 
-* 要在SUSE® Linux®服务器上测试PDF转换，请确保具有以下配置：
+* 要在SUSE® Linux®（SLES 15 SP6或更高版本）服务器上测试PDF转换，请确保具有以下配置：
    * 导航到`/etc/profile`文件并将`OpenOffice_PATH`环境变量设置为`/opt/openoffice4`以全局对其进行配置。
-   * 在Linux®操作系统上安装32位版本的OpenOffice
+   * 安装32位版本的OpenOffice。
 
 ### PDF Generator的软件支持 {#software-support-for-pdf-generator}
 
@@ -517,7 +517,7 @@ Adobe Experience Manager(实例、Dispatcher)的所有元素都可以安装在IP
 >
 >另外，
 >
->* PDF Generator需要32位版本的[Acrobat 2020 classic track版本20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)或Acrobat 2017版本17.011.30078来执行转换。
+>* PDF Generator需要32位版本的[Acrobat 2020 classic track版本20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)来执行转换。
 >* PDF Generator仅支持32位版本的Microsoft® Office Professional Plus以及转换所需的其他软件。
 >* Microsoft® Office Professional Plus安装可以使用零售或基于MAK/KMS/AD的批量许可。
 >* 如果Microsoft® Office安装由于任何原因（例如，批量许可安装无法在指定时间段内找到KMS主机）而停用或取消许可，则在重新许可并重新激活安装之前，转换可能会失败。

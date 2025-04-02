@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 39ad2f3eedb35e98dc2239c0b81b3792a0ddc73f
+source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
 workflow-type: tm+mt
-source-wordcount: '6158'
+source-wordcount: '6161'
 ht-degree: 1%
 
 ---
@@ -92,7 +92,7 @@ IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]�
 
    * 站点
    * Live Copy
-   * 启动
+   * 发布
    * 语言复制
    * 文件夹
    * CSV报表(SITES-2874)
@@ -595,20 +595,21 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 
 ### AEM Forms的已知问题 {#known-issues-aem-forms-6522}
 
-* 如果HTML到PDF的转换在SLES 15 SP6 Linux®服务器上失败，并出现错误： `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`。 执行以下步骤来解决问题：
-   1. 启动容器并使用以下命令设置`OPENSSL_CONF`环境变量：
+* 如果HTML到PDF的转换在SUSE® Linux® （SLES 15 SP6或更高版本）服务器上失败，并出现错误： `Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57`。
+执行以下步骤来解决问题：
+   1. 启动服务器并使用以下命令设置`OPENSSL_CONF`环境变量：
       `export OPENSSL_CONF=/etc/ssl`
-或者，您可以在启动容器时设置环境变量：
+或者，您可以在启动服务器时设置环境变量：
       `-e OPENSSL_CONF=/etc/ssl`
    1. 重新启动服务器。
 * 安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`<AEM_Forms_Installation>/lib/caching/lib`文件夹下找到Geode Jar `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`的重复条目(FORMS-14926)，请执行以下步骤，以解决该问题：
 
    1. 如果定位器正在运行，请停止它们。
-   2. 停止AEM服务器。
-   3. 转到`<AEM_Forms_Installation>/lib/caching/lib`。
-   4. 删除除`geode-*-1.15.1.2.jar`之外的所有Geode修补程序文件。 确认仅存在具有`version 1.15.1.2`的Geode jar。
-   5. 在管理员模式下打开命令提示符。
-   6. 使用`geode-*-1.15.1.2.jar`文件安装Geode修补程序。
+   1. 停止AEM服务器。
+   1. 转到`<AEM_Forms_Installation>/lib/caching/lib`。
+   1. 删除除`geode-*-1.15.1.2.jar`之外的所有Geode修补程序文件。 确认仅存在具有`version 1.15.1.2`的Geode jar。
+   1. 在管理员模式下打开命令提示符。
+   1. 使用`geode-*-1.15.1.2.jar`文件安装Geode修补程序。
 
 * 如果用户尝试预览包含保存的XML数据的草稿信件，则对于某些特定信件，它会陷入`Loading`状态。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (FORMS-14521)
 
