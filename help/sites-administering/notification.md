@@ -9,9 +9,9 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: bbd2bc3fa2ebdca111084450941439a37f79cd73
+source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2154'
 ht-degree: 8%
 
 ---
@@ -46,7 +46,7 @@ AEM会向符合以下条件的用户发送电子邮件通知：
 * **SMTP服务器端口**&#x200B;必须为25或更高。
 
 * **SMTP服务器主机名**&#x200B;不能为空。
-* **“发件人”地址**&#x200B;不能为空。
+* **“发件人”地址**&#x200B;不能为空，并且您必须更改默认值“<noreply@day.com>”。
 
 为了帮助您调试&#x200B;**Day CQ邮件服务**&#x200B;的问题，您可以查看该服务的日志：
 
@@ -60,7 +60,7 @@ AEM会向符合以下条件的用户发送电子邮件通知：
 
 当您订阅页面或论坛事件通知时，发件人电子邮件地址默认设置为`no-reply@acme.com`。 您可以通过在Web控制台中配置&#x200B;**通知电子邮件渠道**&#x200B;服务来更改此值。
 
-要配置发件人电子邮件地址，请向存储库添加一个`sling:OsgiConfig`节点。 使用以下过程使用CRXDE Lite直接添加节点：
+要配置发件人电子邮件地址，请向存储库添加一个`sling:OsgiConfig`节点。 使用以下过程可使用CRXDE Lite直接添加节点：
 
 1. 在CRXDE Lite中，在应用程序文件夹下添加名为`config`的文件夹。
 1. 在配置文件夹中，添加一个名为的节点：
@@ -84,7 +84,7 @@ AEM会向符合以下条件的用户发送电子邮件通知：
 
 ## 配置工作流电子邮件通知服务 {#configuring-the-workflow-email-notification-service}
 
-当您收到工作流电子邮件通知时，发件人电子邮件地址和主机URL前缀都会设置为默认值。 您可以通过在Web控制台中配置&#x200B;**Day CQ工作流电子邮件通知服务**&#x200B;来更改这些值。 如果这样做，建议将更改保留在存储库中。
+当您收到工作流电子邮件通知时，发件人电子邮件地址和主机URL前缀都会设置为默认值。 您可以通过在Web控制台中配置&#x200B;**Day CQ工作流电子邮件通知服务**&#x200B;来更改这些值。 如果这样做，您必须在存储库中保留更改。
 
 在Web控制台中，默认配置如下所示：
 
@@ -254,7 +254,7 @@ subject=<text_1>
 
 >[!NOTE]
 >
->用作电子邮件模板文件名的`<language-code>`需要是AEM可识别的双字母小写语言代码。 对于语言代码，AEM依赖于ISO-639-1。
+>用作电子邮件模板文件名的`<language-code>`必须是AEM可识别的双字母小写语言代码。 对于语言代码，AEM依赖于ISO-639-1。
 
 ## 配置AEM Assets电子邮件通知 {#assetsconfig}
 
@@ -340,7 +340,7 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
 
 最后，通过以下方式确认配置：
 
-1. 转到Publish实例的地址，并以管理员身份登录。
+1. 转到发布实例的地址，并以管理员身份登录。
 1. 在浏览器中打开新选项卡，然后转到`http://serveraddress:serverport/services/mailer/oauth2/authorize`。 这会将您重定向到SMTP提供商的页面，在本例中为Gmail。
 1. 登录并同意授予所需权限
 1. 同意后，令牌将存储在存储库中。 您可以通过直接访问发布实例上的此URL在`accessToken`下访问它： `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
@@ -429,7 +429,7 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
 
 最后，通过以下方式确认配置：
 
-1. 转到Publish实例的地址，并以管理员身份登录。
+1. 转到发布实例的地址，并以管理员身份登录。
 1. 在浏览器中打开新选项卡，然后转到`http://serveraddress:serverport/services/mailer/oauth2/authorize`。 这会将您重定向到SMTP提供商的页面，在本例中为Outlook。
 1. 登录并同意授予所需权限
 1. 同意后，令牌将存储在存储库中。 您可以通过直接访问发布实例上的此URL在`accessToken`下访问它： `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
