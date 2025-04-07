@@ -7,10 +7,10 @@ role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 18dd655887293188224f51fa713d0345991d20d7
 workflow-type: tm+mt
-source-wordcount: '2446'
-ht-degree: 3%
+source-wordcount: '2191'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 3%
 
 <!-- old content
 
-[!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager]. 
+[!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].. 
 
 Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL Experience Manager Assets] to ensure that licensed assets are broadly available for their creative and marketing projects, with the powerful asset management capabilities of [!DNL Experience Manager].
 
@@ -45,32 +45,51 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 The integration requires an [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/).
 -->
 
-## 集成[!DNL Experience Manager]和[!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
+## 集成[!DNL Experience Manager]和[!DNL Adobe Stock]的先决条件 {#integrate-aem-and-adobe-stock}
 
 [!DNL Experience Manager Assets]允许用户直接从[!DNL Experience Manager]搜索、预览、保存和许可[!DNL Adobe Stock]资源。
 
-**前提条件**
+满足以下要求以启用此集成：
 
-集成需要：
-
-* [企业 [!DNL Adobe Stock] 计划](https://stockenterprise.adobe.com/)
-* 具有默认Stock产品配置文件Admin Console权限的用户
-* 具有在Adobe Developer Console中创建集成的开发人员访问配置文件权限的用户
+* 企业[!DNL Adobe Stock]计划。
+* 在[!DNL Admin Console]中具有默认Stock产品配置文件权限的用户。
+* 具有在[!DNL Adobe Developer Console]中创建集成的[!DNL Developer Access profile]权限的用户。
 
 企业[!DNL Adobe Stock]计划，
 
-* 提供[!DNL Adobe Stock]的产品权利(与Experience Manager相关的库存)
-* 为[!DNL Adobe Admin Console]购买的股票权利积分
-* 在[!DNL Adobe Developer Console]内为您的股票权利启用服务帐户(JWT)身份验证
-* 允许在[!DNL Adobe Admin Console]内全局管理信用和许可
+* 提供[!DNL Adobe Stock]的产品权利(与Experience Manager连接的库存)。
+* 为[!DNL Adobe Admin Console]购买的股票权利积分。
+* 允许在[!DNL Adobe Admin Console]内全局管理信用和许可。
 
-在权利中，[!DNL Admin Console]中存在[!DNL Adobe Stock]的默认产品配置文件。 可以创建多个配置文件，这些配置文件确定谁可以许可Stock资产。 直接访问产品配置文件的用户可以访问[https://stock.adobe.com/](https://stock.adobe.com/)并许可Stock资产。 而另一种方法是使用开发人员访问创建集成(API)来验证[!DNL Experience Manager]和[!DNL Adobe Stock]之间的通信。
+在权利中，[!DNL Admin Console]中存在[!DNL Adobe Stock]的默认产品配置文件。 可以创建多个配置文件，这些配置文件确定谁可以许可Stock资产。 直接访问产品配置文件的用户可以访问[https://stock.adobe.com/](https://stock.adobe.com/)并许可Stock资产。 而则可以使用开发人员访问权限创建集成(API)的其他方法。 此集成验证[!DNL Experience Manager Assets]与[!DNL Adobe Stock]之间的通信。
+
+<!-- old content
+## Integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integrate-aem-and-adobe-stock}
+
+[!DNL Experience Manager Assets] provides users the ability to search, preview, save, and license [!DNL Adobe Stock] assets directly from [!DNL Experience Manager].
+
+**Prerequisites**
+
+The integration requires: 
+
+* An [enterprise [!DNL Adobe Stock] plan](https://stockenterprise.adobe.com/)
+* A user with permissions in Admin Console to the default Stock product profile
+* A user with permissions to the Developer Access profile for creating integration in Adobe Developer Console
+
+An enterprise [!DNL Adobe Stock] plan,
+
+* Provides product entitlement for [!DNL Adobe Stock] (Stocks connected to Experience Manager)
+* Credits purchased into the [!DNL Adobe Admin Console] for your stock entitlement
+* Enables Service Account (JWT) authentication within [!DNL Adobe Developer Console] for your stock entitlement
+* Enables managing the credits and licensing globally from within [!DNL Adobe Admin Console]
+
+Within the entitlement, a default product profile for [!DNL Adobe Stock] exists in [!DNL Admin Console]. Multiple profiles can be created, and these profiles determines who can license Stock assets. A user having access directly to the product profile can access [https://stock.adobe.com/](https://stock.adobe.com/) and license Stock assets. Whereas there is another method of using the Developer Access to create integration (API) to authenticate communication between [!DNL Experience Manager] and [!DNL Adobe Stock].
 
 >[!NOTE]
 >
->Stock服务帐户(JWT)身份验证随企业Stock权利提供。
+>The Stock service account (JWT) authentication comes with the enterprise Stock entitlement.
 >
->该集成不支持企业股票权利的Oauth身份验证。
+>The integration does not support Oauth authentication for enterprise Stock entitlement.
 
 <!-- old content
 To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock], create an IMS configuration and an [!DNL Adobe Stock] configuration in [!DNL Experience Manager].
@@ -80,157 +99,218 @@ To allow communication between [!DNL Experience Manager] and [!DNL Adobe Stock],
 >Only [!DNL Experience Manager] administrators and [!DNL Admin Console] administrators for an organization can perform the integration as it requires administrator privileges.
 -->
 
-## 集成[!DNL Experience Manager]和[!DNL Adobe Stock]的步骤 {#integration-steps}
+## 集成[!DNL Experience Manager]和[!DNL Adobe Stock] {#integrate-adobe-stock-with-aem-assets}
 
-要集成[!DNL Experience Manager]和[!DNL Adobe Stock]，请按列出的顺序执行以下步骤：
+作为开发人员，执行以下步骤以集成[!DNL Adobe Experience Manager]和[!DNL Adobe Stock]。
 
-1. [获取公共证书](#public-certificate)
+1. [在 [!DNL Developer Console]中设置程序](#set-up-a-program-in-developer-console)
+1. [在 [!DNL AEM] 创作实例中添加配置](#add-configuration-in-the-aem-author-instance)
 
-   在[!DNL Experience Manager]中，创建IMS帐户并生成公共证书（公共密钥）。
+### 在[!DNL Developer Console]中设置程序 {#set-up-a-program-in-developer-console}
 
-1. [创建服务帐户(JWT)连接](#createnewintegration)
+执行以下步骤以在[!DNL Developer Console]中设置程序：
+1. 导航到[[!DNL Adobe Developer Console]](https://developer.adobe.com/console/14431/user/servicesandapis)并登录您的组织。
+1. 选择&#x200B;**[!UICONTROL 新建项目]**（可在&#x200B;**[!UICONTROL 项目]**仪表板上找到）。
+   ![将aem资产与adobe stock集成](/help/assets/assets/create-new-project-in-adobe-dev-console.png)
+1. 单击&#x200B;**[!UICONTROL 添加到项目]**&#x200B;并选择&#x200B;**[!UICONTROL API]**。
+1. 选择&#x200B;**[!UICONTROL Adobe Stock]**&#x200B;并单击&#x200B;**[!UICONTROL 下一步]**。
+1. 指定&#x200B;**[!UICONTROL 凭据名称]**&#x200B;并验证是否已选择&#x200B;**[!UICONTROL OAuth服务器到服务器]**，然后单击&#x200B;**[!UICONTROL 下一步]**。
+1. 选择&#x200B;**[!UICONTROL AEM Assets]** **[!UICONTROL 产品配置文件]**，然后单击&#x200B;**[!UICONTROL 保存配置的API]**。 将显示一条成功消息，确认您在[!DNL Developer Console]中创建了项目。 您的项目仪表板打开，在顶部显示项目名称，**[!UICONTROL API]**&#x200B;下的&#x200B;**[!UICONTROL Adobe Stock]**&#x200B;和&#x200B;**[!UICONTROL 产品配置文件]**&#x200B;下的&#x200B;**[!UICONTROL AEM Assets]**&#x200B;以及&#x200B;**[!UICONTROL 连接的凭据]**&#x200B;下的&#x200B;**[!UICONTROL OAuth服务器到服务器]**凭据卡。
+   ![集成aem assets和adobe stock](/help/assets/assets/adc-project-name.png)
+1. 选择&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;凭据卡片，此时将显示&#x200B;**[!UICONTROL 凭据详细信息]**。 使用项目的这些[!DNL OAuth Server-to-Server]凭据详细信息（如&#x200B;**[!UICONTROL 客户端ID]**、**[!UICONTROL 客户端密钥]**、**[!UICONTROL 作用域]**、**[!UICONTROL 凭据名称]**、**[!UICONTROL 技术帐户ID]**、**[!UICONTROL 组织ID]**）在AEM创作实例](#add-configuration-in-the-aem-author-instance)中向[添加配置。
+   ![aem assets和adobe stock](/help/assets/assets/oauth-server-server-credentials-details-page.png)
 
-   在[!DNL Adobe Developer Console]中，为您的[!DNL Adobe Stock]组织创建一个项目。 在项目下，使用公钥配置API以创建服务帐户(JWT)连接。 获取服务帐户凭据和JWT有效负载信息。
+### 在[!DNL AEM]创作实例中添加配置 {#add-configuration-in-the-aem-author-instance}
 
-1. [配置IMS帐户](#create-ims-account-configuration)
+执行以下步骤以在[!DNL AEM]创作实例中添加配置：
 
-   在[!DNL Experience Manager]中，使用服务帐户凭据和JWT有效负载配置IMS帐户。
+1. [在您的 [!DNL AEM] 创作实例中设置新的 [!DNL Adobe Stock IMS configuration] ](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)
+1. [添加云配置以连接到 [!DNL Adobe Stock]](#add-cloud-configuration-to-connect-adobe-stock)
 
-1. [配置云服务](#configure-the-cloud-service)
+#### 在您的[!DNL AEM author]实例中设置新的[!DNL Adobe Stock IMS configuration] {#set-up-adobe-stock-ims-configuration-in-aem-author-instance}
 
-   在[!DNL Experience Manager]中，使用IMS帐户配置[!DNL Adobe Stock]云服务。
+执行以下步骤，在您的[!DNL AEM]创作实例中设置新的[!DNL Adobe Stock IMS configuration]：
+1. 导航到您的[!DNL AEM]创作实例。
+1. 单击![aem assets和adobe stock](/help/assets/assets/Hammer.svg)，选择&#x200B;**[!UICONTROL 安全性]**，然后选择&#x200B;**[!UICONTROL Adobe IMS配置]**。
+1. 单击&#x200B;**[!UICONTROL 创建]**&#x200B;以创建新的IMS配置。 **[!UICONTROL Adobe IMS技术帐户配置]**&#x200B;页面显示多个字段，如&#x200B;**[!UICONTROL 云解决方案]**、**[!UICONTROL 标题]**、**[!UICONTROL 授权服务器]**、**[!UICONTROL 客户端ID]**、**[!UICONTROL 客户端密钥]**、**[!UICONTROL 作用域]**&#x200B;和&#x200B;**[!UICONTROL 组织ID]**。 按照以下说明在这些字段中指定详细信息：
+   * **[!UICONTROL 云解决方案]**：选择&#x200B;**[!UICONTROL Adobe Stock]**。
+   * **[!UICONTROL 标题]**：指定此集成的名称。
+   * **[!UICONTROL 授权服务器]**：添加[https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)作为授权服务器。
+   * **[!UICONTROL 客户端ID]**：导航到您的项目仪表板，单击左窗格中可用的&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;选项，选择&#x200B;**[!UICONTROL 凭据详细信息]**，复制&#x200B;**[!UICONTROL 客户端ID]**&#x200B;并将其粘贴到此处（请参阅[步骤7](#set-up-a-program-in-developer-console)）。
+
+   * **[!UICONTROL 客户端密钥]**：导航到您的项目仪表板，单击左窗格中可用的&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;选项，选择&#x200B;**[!UICONTROL 凭据详细信息]**，单击&#x200B;**[!UICONTROL 检索客户端密钥]**，复制&#x200B;**[!UICONTROL 客户端密钥]**&#x200B;并将其粘贴到此处（请参阅[步骤7](#set-up-a-program-in-developer-console)）。
+
+   * **[!UICONTROL 作用域]**：导航到您的项目仪表板，单击左窗格中可用的&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;选项，选择&#x200B;**[!UICONTROL 凭据详细信息]**，复制&#x200B;**[!UICONTROL 作用域]**&#x200B;并将其粘贴到此处（请参阅[步骤7](#set-up-a-program-in-developer-console)）。
+
+   * **[!UICONTROL 组织ID]**：导航到您的项目仪表板，单击左窗格中可用的&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;选项，选择&#x200B;**[!UICONTROL 凭据详细信息]**，复制&#x200B;**[!UICONTROL 组织ID]**&#x200B;并将其粘贴到此处（请参阅[步骤7](#set-up-a-program-in-developer-console)）。
+     ![aem assets和adobe stock](/help/assets/assets/adobe-ims-technical-account-configuration.png)
+1. 单击&#x200B;**[!UICONTROL 创建]**，将打开&#x200B;**[!UICONTROL Adobe IMS配置]**&#x200B;页面并显示您创建的[!DNL Adobe Stock]集成。
+
+#### 添加云配置以连接到[!DNL Adobe Stock] {#add-cloud-configuration-to-connect-adobe-stock}
+
+执行以下步骤以添加要连接到[!DNL Adobe Stock]的云配置：
+
+1. 导航到您的[!DNL AEM author]实例。
+1. 单击![aem assets和adobe stock](/help/assets/assets/Hammer.svg)，选择&#x200B;**[!UICONTROL 云服务]**，浏览并选择&#x200B;**[!UICONTROL Adobe Stock]**。
+   ![将adobe stock与aem](/help/assets/assets/adding-cloud-config-to-adobe-stock.png)一起使用
+1. 单击“**[!UICONTROL 创建]**”，“**[!UICONTROL Adobe Stock配置]**”页将显示多个字段。 按照以下说明在这些字段中指定详细信息：
+   * **[!UICONTROL 标题]**：导航到&#x200B;**[!UICONTROL Adobe IMS技术帐户配置]**&#x200B;页面（请参阅[步骤3](#set-up-adobe-stock-ims-configuration-in-aem-author-instance)），复制标题并将其粘贴到此处。
+   * **[!UICONTROL 关联的Adobe IMS配置]**：选择您创建的[!DNL Adobe Stock]集成。
+   * **[!UICONTROL 区域设置]**：选择&#x200B;**[!UICONTROL 英语（美国）]**。
+1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
+   ![将adobe stock与aem](/help/assets/assets/adobe-stock-config-page.png)一起使用
+<!-- old content
+## Steps to integrate [!DNL Experience Manager] and [!DNL Adobe Stock] {#integration-steps}
+
+To integrate [!DNL Experience Manager] and [!DNL Adobe Stock], perform the following steps in the listed sequence: 
+
+1. [Obtain public certificate](#public-certificate)
+   
+   In [!DNL Experience Manager], create an IMS account and generate a public certificate (public key).
+
+1. [Create service account (JWT) connection](#createnewintegration) 
+   
+   In [!DNL Adobe Developer Console], create a project for your [!DNL Adobe Stock] organization. Under the project, configure an API using the public key to create a service account (JWT) connection. Get the service account credentials and JWT payload information.
+
+1. [Configure IMS account](#create-ims-account-configuration)
+
+   In [!DNL Experience Manager], configure the IMS account using the service account credentials and JWT payload.
+
+1. [Configure cloud service](#configure-the-cloud-service)
+
+   In [!DNL Experience Manager], configure an [!DNL Adobe Stock] cloud service using the IMS account.
 
 
-### 创建IMS配置 {#create-an-ims-configuration}
+### Create an IMS configuration {#create-an-ims-configuration}
 
-IMS配置使用[!DNL Adobe Stock]权利对您的[!DNL Experience Manager Assets]创作实例进行身份验证。
+The IMS configuration authenticates your [!DNL Experience Manager Assets] author instance with the [!DNL Adobe Stock] entitlement. 
 
-IMS 配置包括两个步骤：
+IMS configuration includes two steps:
 
-* [获取公共证书](#public-certificate)
-* [配置IMS帐户](#create-ims-account-configuration)
+* [Obtain public certificate](#public-certificate) 
+* [Configure IMS account](#create-ims-account-configuration)
 
-### 获取公共证书 {#public-certificate}
+### Obtain public certificate {#public-certificate}
 
-公钥（证书）用于在Adobe Developer Console中验证您的产品配置文件。
+The public key (certificate) authenticates your product profile in Adobe Developer Console.
 
-1. 登录到您的[!DNL Experience Manager Assets]创作实例。 默认URL为`http://localhost:4502/aem/start.html`。
+1. Log in to your [!DNL Experience Manager Assets] author instance. The default URL is `http://localhost:4502/aem/start.html`.
 
-1. 从&#x200B;**[!UICONTROL 工具]**&#x200B;面板，导航到&#x200B;**[!UICONTROL 安全]** > **[!UICONTROL Adobe IMS配置]**。
+1. From the **[!UICONTROL Tools]** panel, navigate to **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
-1. 在“Adobe IMS配置”页面中，单击&#x200B;**[!UICONTROL 创建]**。 将打开&#x200B;**[!UICONTROL Adobe IMS技术帐户配置]**&#x200B;页面。
+1. In Adobe IMS Configurations page, click **[!UICONTROL Create]**. The **[!UICONTROL Adobe IMS Technical Account Configuration]** page opens. 
 
-1. 在&#x200B;**[!UICONTROL 证书]**&#x200B;选项卡中，从&#x200B;**[!UICONTROL Adobe Stock解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 云解决方案]**。
+1. In the **[!UICONTROL Certificate]** tab, select **[!UICONTROL Adobe Stock]** from the **[!UICONTROL Cloud Solution]** dropdown list.  
 
-1. 您可以创建证书或为配置重用现有证书。
+1. You can create a certificate or reuse an existing certificate for the configuration. 
 
-   要创建证书，请选中&#x200B;**[!UICONTROL 新建证书]**&#x200B;复选框，并为公钥指定&#x200B;**别名**。 别名将用作公钥的名称。
+   To create a certificate, select the **[!UICONTROL Create new certificate]** check box and specify an **alias** for the public key. The alias serves as name of the public key. 
 
-1. 单击&#x200B;**[!UICONTROL 创建证书]**。然后，单击&#x200B;**[!UICONTROL 确定]**&#x200B;以生成公钥。
+1. Click **[!UICONTROL Create certificate]**. Then, click **[!UICONTROL OK]** to generate the public key.
 
-1. 单击&#x200B;**[!UICONTROL 下载公钥]**&#x200B;图标，然后将公钥(.crt)文件保存到您的计算机上。 公钥稍后用于为Brand Portal租户配置API并在Adobe Developer Console中生成服务帐户凭据。
+1. Click the **[!UICONTROL Download Public Key]** icon and save the public key (.crt) file on your machine. The public key is used later to configure API for your Brand Portal tenant and generate service account credentials in Adobe Developer Console.
 
-   单击&#x200B;**[!UICONTROL 下一步]**。
+   Click **[!UICONTROL Next]**.
 
-   ![生成证书](assets/stock-integration-ims-account.png)
+   ![generate-certificate](assets/stock-integration-ims-account.png)
 
-1. 在&#x200B;**帐户**&#x200B;选项卡中，创建了需要服务帐户凭据的Adobe IMS帐户。
+1. In the **Account** tab, Adobe IMS account is created which requires the service account credentials.
 
-   打开新选项卡并[在Adobe Developer Console](#createnewintegration)中创建服务帐户(JWT)连接。
+   Open a new tab and [create a service account (JWT) connection in Adobe Developer Console](#createnewintegration). 
 
-### 创建服务帐户(JWT)连接 {#createnewintegration}
+### Create service account (JWT) connection {#createnewintegration}
 
-在Adobe Developer Console中，项目和API在组织级别配置。 配置API将创建服务帐户(JWT)连接。 配置API的方法有两种：生成密钥对（私钥和公钥）或上传公钥。 在此示例中，服务帐户凭据是通过上传公钥生成的。
+In Adobe Developer Console, projects and APIs are configured at organization level. Configuring an API creates a service account (JWT) connection. There are two methods to configure API, by generating a key pair (private and public keys) or by uploading a public key. In this example, the service account credentials are generated by uploading the public key.
 
-要生成服务帐户凭据和JWT有效负载，请执行以下操作：
+To generate the service account credentials and JWT payload:
 
-1. 使用系统管理员权限登录Adobe Developer Console。 默认URL为[https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui)。
+1. Log in to Adobe Developer Console with system administrator privileges. The default URL is [https://www.adobe.com/go/devs_console_ui](https://www.adobe.com/go/devs_console_ui).
 
 
-   确保您从下拉列表（组织）中选择了正确的IMS组织（库存权利）。
+   Ensure that you have selected the correct IMS organization (Stock entitlement) from the dropdown (organization) list.
 
-1. 单击&#x200B;**[!UICONTROL 新建项目]**。 系统会为您的组织创建一个名称由系统生成的空白项目。
+1. Click **[!UICONTROL Create new project]**. A blank project with a system-generated name is created for your organization. 
 
-   单击&#x200B;**[!UICONTROL 编辑项目]**。 更新&#x200B;**[!UICONTROL 项目标题]**&#x200B;和&#x200B;**[!UICONTROL 描述]**，然后单击&#x200B;**[!UICONTROL 保存]**。
+   Click **[!UICONTROL Edit project]**. Update the **[!UICONTROL Project Title]** and **[!UICONTROL Description]**, and then click **[!UICONTROL Save]**.
+   
+1. In the **[!UICONTROL Project overview]** tab, click **[!UICONTROL Add API]**.
 
-1. 在&#x200B;**[!UICONTROL 项目概述]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL 添加API]**。
+1. In the **[!UICONTROL Add an API window]**, select **[!UICONTROL Adobe Stock]**. Click **[!UICONTROL Next]**. 
 
-1. 在&#x200B;**[!UICONTROL 添加API窗口]**&#x200B;中，选择&#x200B;**[!UICONTROL Adobe Stock]**。 单击&#x200B;**[!UICONTROL 下一步]**。
-
-1. 在&#x200B;**[!UICONTROL 配置API]**&#x200B;窗口中，选择&#x200B;**[!UICONTROL 服务帐户(JWT)]**&#x200B;身份验证。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. In the **[!UICONTROL Configure API]** window, select **[!UICONTROL Service Account (JWT)]** authentication. Click **[!UICONTROL Next]**.
 
    ![create-jwt-credentials](assets/aem-stock-jwt.png)
 
-1. 单击&#x200B;**[!UICONTROL 上传公钥]**。 单击&#x200B;**[!UICONTROL 选择文件]**&#x200B;并上传您在[获取公共证书](#public-certificate)部分中下载的公共密钥（.crt文件）。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. Click **[!UICONTROL Upload your public key]**. Click **[!UICONTROL Select a File]** and upload the public key (.crt file) that you have downloaded in the [obtain public certificate](#public-certificate) section. Click **[!UICONTROL Next]**.
 
-1. 验证公钥并单击&#x200B;**[!UICONTROL 下一步]**。
+1. Verify the public key and click **[!UICONTROL Next]**.
 
-1. 选择默认的&#x200B;**[!UICONTROL Adobe Stock]**&#x200B;产品配置文件，然后单击&#x200B;**[!UICONTROL 保存配置的API]**。
+1. Select the default **[!UICONTROL Adobe Stock]** product profile and click **[!UICONTROL Save configured API]**. 
 
-1. 配置API后，您将被重定向到API概述页面。 从&#x200B;**[!UICONTROL 凭据]**&#x200B;下的左侧导航中，单击&#x200B;**[!UICONTROL 服务帐户(JWT)]**&#x200B;选项。 在这里，您可以查看凭据并执行操作，如生成JWT令牌、复制凭据详细信息和检索客户端密码。
+1. Once the API is configured, you are redirected to the API overview page. From the left navigation under **[!UICONTROL Credentials]**, click the **[!UICONTROL Service Account (JWT)]** option. Here, you can view the credentials and perform actions such as generate JWT tokens, copy credential details, and retrieve client secret.
 
-1. 从&#x200B;**[!UICONTROL 客户端凭据]**&#x200B;选项卡，复制&#x200B;**[!UICONTROL 客户端ID]**。
+1. From the **[!UICONTROL Client Credentials]** tab, copy the **[!UICONTROL client ID]**. 
 
-   单击&#x200B;**[!UICONTROL 检索客户端密钥]**&#x200B;并复制&#x200B;**[!UICONTROL 客户端密钥]**。
+   Click **[!UICONTROL Retrieve Client Secret]** and copy the **[!UICONTROL client secret]**.
 
    ![generate-jwt-credentials](assets/aem-stock-jwt-credential.png)
 
-1. 导航到&#x200B;**[!UICONTROL 生成JWT]**&#x200B;选项卡并复制&#x200B;**[!UICONTROL JWT有效负荷]**&#x200B;信息。
+1. Navigate to the **[!UICONTROL Generate JWT]** tab and copy the **[!UICONTROL JWT Payload]** information. 
 
-您现在可以使用客户端ID（API密钥）、客户端密钥和JWT有效负载在[!DNL Experience Manager Assets]中[配置IMS帐户](#create-ims-account-configuration)。
+You can now use the client ID (API key), client secret, and JWT payload to [configure the IMS account](#create-ims-account-configuration) in [!DNL Experience Manager Assets].
 
-### 配置IMS帐户 {#create-ims-account-configuration}
+### Configure IMS account {#create-ims-account-configuration}
 
-您必须具有[证书](#public-certificate)和[服务帐户(JWT)凭据](#createnewintegration)才能配置IMS帐户。
+You must have the [certificate](#public-certificate) and [service account (JWT) credentials](#createnewintegration) to configure the IMS account.
 
-配置IMS帐户：
+To configure the IMS account: 
 
-1. 打开IMS配置并导航到&#x200B;**[!UICONTROL 帐户]**&#x200B;选项卡。 在[获取公共证书](#public-certificate)时，你保持页面打开。
+1. Open the IMS Configuration and navigate to the **[!UICONTROL Account]** tab. You kept the page open while [obtaining the public certificate](#public-certificate).
 
-1. 为 IMS 帐户指定&#x200B;**[!UICONTROL 标题]**。
+1. Specify a **[!UICONTROL Title]** for the IMS account.
 
-   在&#x200B;**[!UICONTROL 授权服务器]**&#x200B;字段中，输入URL： [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)。
+   In the **[!UICONTROL Authorization Server]** field, enter the URL: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/).  
 
-   在[创建服务帐户(JWT)连接](#createnewintegration)时复制的&#x200B;**[!UICONTROL API密钥]**&#x200B;字段、**[!UICONTROL 客户端密钥]**&#x200B;和&#x200B;**[!UICONTROL 有效负荷]** （JWT有效负荷）中输入客户端ID。
+   Enter the client ID in the **[!UICONTROL API key]** field, **[!UICONTROL Client Secret]**, and **[!UICONTROL Payload]** (JWT payload) that you have copied while [creating the service account (JWT) connection](#createnewintegration).
 
-1. 单击&#x200B;**[!UICONTROL 创建]**。将创建IMS帐户配置。
+1. Click **[!UICONTROL Create]**. An IMS account configuration is created. 
 
-   ![configure-ims-account](assets/aem-stock-ims-config.png)
+   ![configure-ims-acount](assets/aem-stock-ims-config.png)
+   
+1. Select the IMS account configuration and click **[!UICONTROL Check Health]**.
 
-1. 选择IMS帐户配置并单击&#x200B;**[!UICONTROL 检查运行状况]**。
+   Click **[!UICONTROL Check]** in the dialog box. On successful configuration, a message appears that the *Token is retrieved successfully*.
 
-   在对话框中单击&#x200B;**[!UICONTROL 选中]**。 成功配置时，将显示一条消息，显示&#x200B;*令牌已成功检索*。
-
-   ![运行状况检查](assets/aem-stock-healthcheck.png)
+   ![health-check](assets/aem-stock-healthcheck.png)
 
 
-### 配置云服务 {#configure-the-cloud-service}
+### Configure cloud service {#configure-the-cloud-service}
 
-要配置[!DNL Adobe Stock]云服务：
+To configure the [!DNL Adobe Stock] cloud service:
 
-1. 在[!DNL Experience Manager]用户界面中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**。
+1. In the [!DNL Experience Manager] user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 
-1. 在[!DNL Adobe Stock Configurations]页面中，单击&#x200B;**[!UICONTROL 创建]**。
+1. In the [!DNL Adobe Stock Configurations] page, click **[!UICONTROL Create]**.
 
-1. 为云配置指定&#x200B;**[!UICONTROL 标题]**。
+1. Specify a **[!UICONTROL Title]** for the cloud configuration. 
 
-   选择您在[配置IMS帐户](#create-ims-account-configuration)时创建的IMS配置。
+   Select the IMS configuration that you have created while [configuring the IMS account](#create-ims-account-configuration).
 
-   从下拉列表中选择您的区域设置。
+   Select your locale from the dropdown list.
 
    ![aem-stock-cloud-config](assets/aem-stock-cloud-config.png)
 
-1. 单击“**[!UICONTROL 保存并关闭]**”。
+1. Click **[!UICONTROL Save & Close]**. 
+ -->
+您的[!DNL Experience Manager Assets]创作实例现已与[!DNL Adobe Stock]集成。 您可以创建多个[!DNL Adobe Stock]配置（例如，基于区域设置的配置）。 您现在可以从[!DNL Experience Manager]用户界面中访问、搜索和许可[!DNL Adobe Stock]资源。
 
-   您的[!DNL Experience Manager Assets]创作实例现已与[!DNL Adobe Stock]集成。 您可以创建多个[!DNL Adobe Stock]配置（例如，基于区域设置的配置）。 您现在可以从[!DNL Experience Manager]用户界面中访问、搜索和许可[!DNL Adobe Stock]资源。
+![search-stock-assets](assets/aem-stock-searchstocks.png)
 
-   ![search-stock-assets](assets/aem-stock-searchstocks.png)
-
-   >[!NOTE]
-   >
-   >在此集成阶段，只有管理员才能访问[!DNL Adobe Stock]资产、搜索Stock资产（使用Omnisearch）并许可[!DNL Adobe Stock]资产。
-   >
-   >管理员可以将用户或组进一步添加到[!DNL Adobe Stock]云服务，并在[!DNL Experience Manager]中授予这些非管理员用户访问Stock配置的权限。
+>[!NOTE]
+>
+>在此集成阶段，只有管理员才能访问[!DNL Adobe Stock]资产、搜索Stock资产（使用Omnisearch）并许可[!DNL Adobe Stock]资产。
+>
+>管理员可以将用户或组进一步添加到[!DNL Adobe Stock]云服务，并在[!DNL Experience Manager]中授予这些非管理员用户访问Stock配置的权限。
 
 1. 要添加用户或组，请选择[!DNL Adobe Stock]云配置并单击&#x200B;**[!UICONTROL 属性]**。
 
@@ -265,9 +345,9 @@ IMS 配置包括两个步骤：
 
    ![用户权限](assets/aem-stock-user-permissions.png)
 
-1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe Stock]**。 选择[!DNL Adobe Stock]云配置并单击&#x200B;**[!UICONTROL 属性]**。
+1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 云服务]** > **[!UICONTROL Adobe Stock]**。 选择[!DNL Adobe Stock]云配置并单击&#x200B;**[!UICONTROL 属性]**。
 
-1. 将新创建的用户组添加到[!DNL Adobe Stock]配置。 单击“**[!UICONTROL 保存并关闭]**”。
+1. 将新创建的用户组添加到[!DNL Adobe Stock]配置。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
    ![assign-user](assets/aem-stock-adduser.png)
 
@@ -290,7 +370,6 @@ IMS 配置包括两个步骤：
    ![assign-user-in-user-admin](assets/aem-stock-user-admin-console.png)
 
 1. 将用户或组添加到[!DNL Adobe Stock]云配置。
-
 
 ## 访问Adobe Stock资源 {#access-stock-assets}
 
@@ -328,7 +407,7 @@ IMS 配置包括两个步骤：
 
 ![从您的[!DNL Adobe Experience Manager]工作区中搜索[!DNL Adobe Stock]资源并筛选结果](assets/adobe-stock-search-results-workspace.png)
 
-**A.**&#x200B;搜索与提供[!DNL Adobe Stock] ID的资产类似的资产。 **B.** 搜索与您选择的形状或方向匹配的资产。**C.**&#x200B;搜索一种或多种受支持的资产类型&#x200B;**D.**&#x200B;打开或折叠筛选器窗格&#x200B;**E.**&#x200B;许可并将所选资产保存在[!DNL Experience Manager] **F.**&#x200B;使用水印&#x200B;**G.**&#x200B;在[!DNL Adobe Stock]网站上浏览与所选资产类似的资产&#x200B;**H.**&#x200B;在[!DNL Adobe Stock]网站&#x200B;**I.**&#x200B;上查看所选资产从搜索结果&#x200B;**J中选定的资产数。 19}在卡片视图和列表视图之间切换[!DNL Experience Manager]**
+**A.**&#x200B;搜索与提供[!DNL Adobe Stock] ID的资产类似的资产。 **B.** 搜索与您选择的形状或方向匹配的资产。**C.**&#x200B;搜索一种或多种受支持的资产类型&#x200B;**D.**&#x200B;打开或折叠筛选器窗格&#x200B;**E.**&#x200B;许可并将所选资产保存在[!DNL Experience Manager] **F.**&#x200B;使用水印&#x200B;**G.**&#x200B;在[!DNL Adobe Stock]网站上浏览与所选资产&#x200B;**H.**&#x200B;在[!DNL Adobe Stock]网站&#x200B;**I.**&#x200B;上查看所选资产搜索结果中的所选资产数&#x200B;**I.[!DNL Experience Manager] j.**&#x200B;在卡片视图和列表视图之间切换
 
 ### 查找资源 {#find-assets}
 
@@ -374,13 +453,13 @@ IMS 配置包括两个步骤：
 
 ## 已知限制 {#known-limitations}
 
-* **与[!DNL Experience Manager] Service Pack 6.5.7.0及更高版本集成时出现问题**：在与[!DNL Experience Manager] 6.5.7.0及更高版本集成期间发现了一个意外问题。 该问题正在测试中，预计将在[!DNL Experience Manager] 6.5.11.0中可用。联系[!DNL Customer Support]以获取即时修补程序。
+* **与[!DNL Experience Manager] Service Pack 6.5.7.0及更高版本集成时出现问题**：在与[!DNL Experience Manager] 6.5.7.0及更高版本集成期间发现了一个意外问题。 该问题正在测试中，预计将在[!DNL Experience Manager] 6.5.11.0中可用。 联系[!DNL Customer Support]以获取即时修补程序。
 
 * **限制用户进行许可的功能无法正常工作**：允许所有对Stock配置具有`read`权限的用户搜索和许可[!DNL Adobe Stock]资产。
 
 * **非管理员用户必须手动激活[!DNL Adobe Stock]云配置**：在&#x200B;**[!UICONTROL 用户首选项]**&#x200B;窗口中，**[!UICONTROL Stock配置]**&#x200B;将[!DNL Adobe Stock]云配置显示为已启用，但该配置不适用于非管理员用户。 用户必须单击&#x200B;**[!UICONTROL 接受]**&#x200B;按钮才能激活Stock配置。 如果没有此步骤，则系统在访问&#x200B;**[!UICONTROL Assets]**&#x200B;时反映错误消息。
 
-* **不显示编辑图像警告**：在许可图像时，用户无法检查图像是否仅用于编辑。 为防止可能的滥用，管理员可以从Admin Console中关闭对编辑资源的访问权限。
+* **不显示编辑图像警告**：在许可图像时，用户无法检查图像是否仅用于编辑。 为防止可能的滥用，管理员可以从Admin Console关闭对编辑资源的访问权限。
 
 * **显示的许可证类型错误**：资产的[!DNL Experience Manager]中可能显示不正确的许可证类型。 用户可以登录[!DNL Adobe Stock]网站以查看许可证类型。
 
