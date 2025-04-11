@@ -1,6 +1,6 @@
 ---
 title: 使用客户端库
-description: AEM提供了客户端库文件夹，通过该文件夹，您可以在存储库中存储客户端代码，将其组织为不同类别，并定义何时以及如何向客户端提供每种类别的代码
+description: AEM提供了客户端库文件夹，通过该文件夹，您可以在存储库中存储客户端代码，将其划分为不同类别，并定义何时以及如何向客户端提供每种类别的代码
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,7 +10,7 @@ exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
 workflow-type: tm+mt
 source-wordcount: '2791'
 ht-degree: 1%
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 现代网站在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 组织和优化此代码的服务可能是一个复杂的问题。
 
-为帮助解决此问题，AEM提供了&#x200B;**客户端库文件夹**，可让您将客户端代码存储在存储库中，将其组织为不同类别，并定义何时以及如何向客户端提供每种类别的代码。 然后，客户端库系统负责在最终网页中产生正确的链接，以加载正确的代码。
+为了帮助解决此问题，AEM提供了&#x200B;**客户端库文件夹**，可让您将客户端代码存储在存储库中，将其按类别整理，并定义何时以及如何向客户端提供每种类别的代码。 然后，客户端库系统负责在最终网页中产生正确的链接，以加载正确的代码。
 
-## 客户端库在AEM中的工作原理 {#how-client-side-libraries-work-in-aem}
+## AEM中客户端库的工作原理 {#how-client-side-libraries-work-in-aem}
 
-在页面HTML中包含客户端库（即JS或CSS文件）的标准方法是，在该页面的JSP中包含`<script>`或`<link>`标记，并包含相关文件的路径。 例如，
+在页面的HTML中包含客户端库（即，JS或CSS文件）的标准方法是，在该页面的JSP中包含`<script>`或`<link>`标记，并包含相关文件的路径。 例如，
 
 ```xml
 ...
@@ -37,7 +37,7 @@ ht-degree: 1%
 ...
 ```
 
-虽然这种方法在AEM中起作用，但当页面及其组成组件变得复杂时，它可能会导致问题。 在这种情况下，最终HTML输出中可能会包含同一JS库的多个副本。 为避免这种情况并允许对客户端库进行逻辑组织，AEM使用&#x200B;**客户端库文件夹**。
+虽然此方法在AEM中有效，但当页面及其组成组件变得复杂时，它可能会导致问题。 在这种情况下，最终HTML输出中可能会包含同一JS库的多个副本。 为避免这种情况并允许对客户端库进行逻辑组织，AEM使用&#x200B;**客户端库文件夹**。
 
 客户端库文件夹是`cq:ClientLibraryFolder`类型的存储库节点。 [CND表示法](https://jackrabbit.apache.org/node-type-notation.html)中的定义为
 
@@ -49,7 +49,7 @@ ht-degree: 1%
   - channels (string) multiple
 ```
 
-默认情况下，`cq:ClientLibraryFolder`节点可以放置在存储库的`/apps`、`/libs`和`/etc`子树中的任意位置(这些默认值和其他设置可通过[Adobe控制台](https://localhost:4502/system/console/configMgr)的&#x200B;**GraniteHTML库管理器**&#x200B;面板进行控制)。
+默认情况下，`cq:ClientLibraryFolder`节点可以放置在存储库的`/apps`、`/libs`和`/etc`子树中的任意位置(这些默认值和其他设置可通过[系统控制台](https://localhost:4502/system/console/configMgr)的&#x200B;**Adobe Granite HTML库管理器**&#x200B;面板进行控制)。
 
 每个`cq:ClientLibraryFolder`都填充了一组JS和/或CSS文件以及几个支持文件（见下文）。 `cq:ClientLibraryFolder`的属性配置如下：
 
@@ -57,7 +57,7 @@ ht-degree: 1%
 
 * `dependencies`：这是此库文件夹所依赖的其他客户端库类别的列表。 例如，在给定两个`cq:ClientLibraryFolder`节点`F`和`G`的情况下，如果`F`中的某个文件需要`G`中的另一个文件才能正常工作，则`G`的`categories`中至少有一个应属于`F`的`dependencies`中。
 
-* `embed`：用于嵌入来自其他库的代码。 如果节点F嵌入了节点G和H，则得到的HTML将是来自节点G和H的内容集。
+* `embed`：用于嵌入来自其他库的代码。 如果节点F嵌入节点G和H，则生成的HTML将是来自节点G和H的内容集。
 * `allowProxy`：如果客户端库位于`/apps`下，则此属性允许通过代理servlet访问它。 请参阅下面的[查找客户端库文件夹并使用代理客户端库Servlet](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)。
 
 ## 引用客户端库 {#referencing-client-side-libraries}
@@ -66,7 +66,7 @@ ht-degree: 1%
 
 ### 使用HTL {#using-htl}
 
-在HTL中，通过AEM提供的帮助程序模板来加载客户端库，可通过[`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use)访问该模板。 此文件中有三个可用的模板，可以通过[`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)来调用它们：
+在HTL中，通过AEM提供的帮助程序模板来加载客户端库，该模板可通过[`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use)访问。 此文件中有三个可用的模板，可以通过[`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)来调用它们：
 
 * **css** — 仅加载引用的客户端库的CSS文件。
 * **js** — 仅加载引用的客户端库的JavaScript文件。
@@ -78,7 +78,7 @@ ht-degree: 1%
 
 ### 使用JSP {#using-jsp}
 
-将`ui:includeClientLib`标记添加到您的JSP代码中，以在生成的HTML页面中添加指向客户端库的链接。 要引用库，请使用`ui:includeClientLib`节点的`categories`属性的值。
+将`ui:includeClientLib`标记添加到您的JSP代码中，以便在生成的HTML页面中添加指向客户端库的链接。 要引用库，请使用`ui:includeClientLib`节点的`categories`属性的值。
 
 ```
 <%@taglib prefix="ui" uri="https://www.adobe.com/taglibs/granite/ui/1.0" %>
@@ -91,7 +91,7 @@ ht-degree: 1%
 <ui:includeClientLib categories="cq.jquery"/>
 ```
 
-生成的HTML页包含以下代码：
+生成的HTML页面包含以下代码：
 
 ```xml
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
@@ -105,7 +105,7 @@ ht-degree: 1%
 
 ## 创建客户端库文件夹 {#creating-client-library-folders}
 
-创建一个`cq:ClientLibraryFolder`节点以定义JavaScript和层叠样式表库并将它们用于HTML页。 使用节点的`categories`属性标识它所属的库类别。
+创建一个`cq:ClientLibraryFolder`节点以定义JavaScript和层叠样式表库并将它们提供给HTML页面。 使用节点的`categories`属性标识它所属的库类别。
 
 该节点包含一个或多个在运行时合并到单个JS和/或CSS文件中的源文件。 生成的文件的名称是具有`.js`或`.css`文件扩展名的节点名称。 例如，名为`cq.jquery`的库节点会生成名为`cq.jquery.js`或`cq.jquery.css`的文件。
 
@@ -139,13 +139,13 @@ Web客户端必须具有访问`cq:ClientLibraryFolder`节点的权限。 您还�
 >
 >为了更好地将代码与内容和配置隔离，建议在`/apps`下找到客户端库，并使用`allowProxy`属性通过`/etc.clientlibs`公开它们。
 
-为了能够访问`/apps`下的客户端库，使用了代理servelt。 仍在客户端库文件夹上强制执行ACL，但如果`allowProxy`属性设置为`true`，则servlet允许通过`/etc.clientlibs/`读取内容。
+为了能够访问`/apps`下的客户端库，使用了代理servlet。 仍在客户端库文件夹上强制执行ACL，但如果`allowProxy`属性设置为`true`，则servlet允许通过`/etc.clientlibs/`读取内容。
 
 如果静态资源位于客户端库文件夹下的资源下，则只能通过代理访问。
 
 例如：
 
-* 您在`/apps/myproject/clientlibs/foo`中有一个clientlib
+* 您在`/apps/myprojects/clientlibs/foo`中有一个clientlib
 * 您在`/apps/myprojects/clientlibs/foo/resources/icon.png`中有一个静态图像
 
 然后，将`foo`上的`allowProxy`属性设置为true。
@@ -155,7 +155,7 @@ Web客户端必须具有访问`cq:ClientLibraryFolder`节点的权限。 您还�
 
 >[!CAUTION]
 >
->使用代理的客户端库时，AEM Dispatcher配置可能需要更新，以确保允许使用扩展客户端库的URI。
+>在使用代理的客户端库时，AEM Dispatcher配置可能需要更新，以确保允许使用扩展客户端库的URI。
 
 >[!CAUTION]
 >
@@ -208,7 +208,7 @@ Web客户端必须具有访问`cq:ClientLibraryFolder`节点的权限。 您还�
 * **类型：**&#x200B;字符串[]
 * **值：**&#x200B;当前库文件夹所依赖的cq：ClientLibraryFolder节点的categories属性值。
 
-例如，/ `etc/clientlibs/myclientlibs/publicmain`依赖于`cq.jquery`库。 引用主客户端库的JSP会生成包含以下代码的HTML：
+例如，/ `etc/clientlibs/myclientlibs/publicmain`依赖于`cq.jquery`库。 引用主客户端库的JSP将生成包含以下代码的HTML：
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
@@ -233,7 +233,7 @@ Web客户端必须具有访问`cq:ClientLibraryFolder`节点的权限。 您还�
 
 #### 使用嵌入以最大限度地减少请求 {#using-embedding-to-minimize-requests}
 
-在某些情况下，您可能会发现发布实例为典型页面生成的最终HTML包含相对大量的`<script>`元素，特别是当您的网站正在使用客户端上下文信息进行分析或定位时。 例如，在非优化项目中，您可能会在页面的HTML中找到以下一系列`<script>`元素：
+在某些情况下，您可能会发现发布实例为典型页面生成的最终HTML包含相对大量的`<script>`元素，特别是当您的网站正在使用客户端上下文信息进行分析或定位时。 例如，在非优化项目中，您可能会在HTML中找到以下页面的`<script>`元素系列：
 
 ```xml
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery.js"></script>
@@ -322,7 +322,7 @@ body {
 
 ## 使用预处理器 {#using-preprocessors}
 
-AEM允许可插拔预处理器，并且为CSS和JavaScript提供了[YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor)支持，为JavaScript提供了[Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/)支持，并将YUI设置为AEM的默认预处理器。
+AEM允许可插拔的预处理器，并随附对CSS和JavaScript的[YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor)和JavaScript的[Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/)的支持，并将YUI设置为AEM的默认预处理器。
 
 可插拔预处理器允许灵活使用，包括：
 
@@ -345,13 +345,13 @@ AEM允许可插拔预处理器，并且为CSS和JavaScript提供了[YUI Compress
 
 * 在clientlibrary节点上添加多值属性`cssProcessor`和`jsProcessor`
 
-* 或通过&#x200B;**HTML库管理器** OSGi配置定义系统默认配置
+* 或通过&#x200B;**HTML Library Manager** OSGi配置定义系统默认配置
 
 clientlib节点上的预处理器配置优先于OSGI配置。
 
 ### 格式和示例 {#format-and-examples}
 
-#### 格式 {#format}
+#### 格式化 {#format}
 
 ```xml
 config:= mode ":" processorName options*;
@@ -391,16 +391,16 @@ compilationLevel (defaults to "simple") (can be "whitespace", "simple", "advance
 
 ### 设置系统默认缩小器 {#set-system-default-minifier}
 
-在AEM中，YUI被设置为默认小型化器。 要将其更改为GCC，请执行以下步骤。
+在AEM中，YUI被设置为默认缩小器。 要将其更改为GCC，请执行以下步骤。
 
 1. 转到[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)上的Apache Felix配置管理器
-1. 查找并编辑&#x200B;**AdobeGraniteHTML库管理器**。
+1. 查找并编辑&#x200B;**Adobe Granite HTML库管理器**。
 1. 启用&#x200B;**最小化**&#x200B;选项（如果尚未启用）。
 1. 将&#x200B;**JS处理器默认配置**&#x200B;的值设置为`min:gcc`。
 
    如果用分号分隔，例如`min:gcc;obfuscate=true`，则可以传递选项。
 
-1. 单击&#x200B;**保存**&#x200B;以保存更改。
+1. 单击&#x200B;**保存**&#x200B;即可保存更改。
 
 ## 调试工具 {#debugging-tools}
 
@@ -454,10 +454,10 @@ AEM提供了几种用于调试和测试客户端库文件夹的工具。
 
 ## 配置用于开发和生产的库处理 {#configuring-library-handling-for-development-and-production}
 
-HTML库管理器服务在运行时处理`cq:ClientLibraryFolder`标记并生成库。 环境、开发或生产的类型决定了应如何配置服务：
+HTML Library Manager服务在运行时处理`cq:ClientLibraryFolder`标记并生成库。 环境、开发或生产的类型决定了应如何配置服务：
 
 * 提高安全性：禁用调试
 * 提高性能：删除空白并压缩库。
 * 提高可读性：包含空格而不压缩。
 
-有关配置服务的信息，请参阅[AEMHTML库管理器](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager)。
+有关配置服务的信息，请参阅[AEM HTML库管理器](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager)。
