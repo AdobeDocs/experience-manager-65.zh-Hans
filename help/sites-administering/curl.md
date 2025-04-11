@@ -9,10 +9,10 @@ exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
 workflow-type: tm+mt
-source-wordcount: '884'
-ht-degree: 2%
+source-wordcount: '1061'
+ht-degree: 1%
 
 ---
 
@@ -48,7 +48,7 @@ cURL命令可以为AEM中的大多数操作构建，例如触发工作流、检�
 
 以下步骤描述了如何通过在Chrome浏览器中创建新页面作为示例来完成此操作。
 
-1. 准备要在AEM中调用的操作。 在本例中，我们已继续到&#x200B;**创建页面**&#x200B;向导的结尾，但尚未单击&#x200B;**创建**。
+1. 准备您希望在AEM中调用的操作。 在本例中，我们已继续到&#x200B;**创建页面**&#x200B;向导的结尾，但尚未单击&#x200B;**创建**。
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
@@ -69,7 +69,7 @@ cURL命令可以为AEM中的大多数操作构建，例如触发工作流、检�
 
    ![chlimage_1-70](assets/chlimage_1-70a.png)
 
-## 常见操作AEM cURL命令 {#common-operational-aem-curl-commands}
+## AEM cURL常用操作命令 {#common-operational-aem-curl-commands}
 
 以下是常见管理和操作任务的AEM cURL命令列表。
 
@@ -300,7 +300,7 @@ curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:450
 
 #### 启用和禁用CRX DE Lite {#enabling-and-disabling-crx-de-lite}
 
-有关详细信息，请参阅[在AEM](/help/sites-administering/enabling-crxde-lite.md)中启用CRXDE Lite。
+有关详细信息，请参阅[在AEM中启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md)。
 
 ### 数据存储垃圾回收 {#data-store-garbage-collection}
 
@@ -361,6 +361,30 @@ curl -u <user>:<password> -X POST -F cmd="unlockPage" -F path="/content/path/to/
 ```shell
 curl -u <user>:<password> -F cmd=copyPage -F destParentPath=/path/to/destination/parent -F srcPath=/path/to/source/location http://localhost:4502/bin/wcmcommand
 ```
+
+### 如何执行浅层转出 {#shallow-rollout}
+
+在使用AEM as a Cloud Service时，在某些情况下，您可能需要转出单个特定页面而不传播其子页面。 如果未正确配置，则用于转出页面的典型curl命令可能会无意中包含子页面。 本节介绍如何调整curl命令以实现指定页面的浅层转出并排除任何其他子页面。
+
+要执行浅层转出，请执行以下步骤：
+
+1. 通过将参数从`type=deep`更改为`type=page`来修改现有curl命令。
+1. 对curl命令使用以下语法：
+
+```shell
+curl -H "Authorization: Bearer <token>" "https://<instance-url>/bin/asynccommand" \
+   -d type=page \
+   -d operation=asyncRollout \
+   -d cmd=rollout \
+   -d path="/content/<your-path>"
+```
+
+此外，检查以下各项：
+
+1. 请确保将`<token>`替换为实际的授权令牌，将`<instance-url>`替换为特定的实例URL。
+1. 将`/content/<your-path>`替换为您要转出的特定页面的路径。
+
+通过设置`type=page`，该命令仅定向指定的页面，不包括任何子页面。 因此，此配置允许对内容部署进行精确控制，从而确保只有预期的更改才会跨环境传播。 此外，此调整还与选择单个页面时通过AEM GUI管理转出的方式保持一致。
 
 ### 工作流 {#workflows}
 
