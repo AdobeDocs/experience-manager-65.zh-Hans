@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: c0756980d0dc8ada7f6c352f68c4f41ecf15caa4
+source-git-commit: 47dc4ffa98d680970b72d488067c834123ea722b
 workflow-type: tm+mt
-source-wordcount: '7480'
+source-wordcount: '7487'
 ht-degree: 21%
 
 ---
@@ -1212,6 +1212,7 @@ ht-degree: 21%
       + [如何正确重新启动AEM SDK](/help/forms/using/restart-aem-sdk.md)
       + [PaperCapture服务无法对PDF执行OCR](/help/forms/using/papercapture-service-resolution.md)
       + [缓解JEE上AEM Forms的Spring Framework漏洞](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
+      + [缓解Experience Manager Forms的Log4j2漏洞](/help/forms/using/aem-forms-vulnerability-cve.md)
    + 旧文档{#legacy-documentation}
       + [使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据](/help/forms/developing/building-xml.md)
       + [在JEE自定义DSC中使用AEM Forms压缩和解压缩文件](/help/forms/developing/compressing-decompressing-custom-dsc.md)
