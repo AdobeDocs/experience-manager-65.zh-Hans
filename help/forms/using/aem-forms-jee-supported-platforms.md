@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 07f45107bceee9e793a39f4167985da91fb51e4a
+source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
 workflow-type: tm+mt
-source-wordcount: '4216'
+source-wordcount: '4177'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 <div class="preview">
 
-Adobe已在JEE上发布了带有AEM 6.5 Forms Service Pack 18 (6.5.18.0)的[完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)以及修补程序安装程序。 完整安装程序支持新平台，而修补程序安装程序仅包含错误修复。
+Adobe已在JEE上发布带有AEM 6.5 Forms Service Pack 18 (6.5.18.0)的[完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)以及修补程序安装程序。 完整安装程序支持新平台，而修补程序安装程序仅包含错误修复。
 如果您要在JEE环境中执行全新安装或计划使用适用于您的AEM 6.5 Forms的最新软件，Adobe建议使用于2023年8月31日发布的AEM JEE上的[Forms 6.5.18.0完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)，而不是于2019年4月8日发布的AEM 6.5 Forms安装程序或2022年3月3日发布的AEM 6.5.12 Forms安装程序。
 
 </div>
@@ -112,8 +112,8 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
    <th><p><strong>支持的修补程序定义</strong></p> </th>
   </tr>
   <tr> 
-   <td><p>Oracle Java™ SE 11（64位） <sup> [8] </sup> </p>  </td>
-   <td><p>答：支持</p> </td>
+   <td><p>oracleJava™ SE 11（64位）<sup> [8] </sup> </p>  </td>
+   <td><p>A：支持</p> </td>
    <td><p>次要版本和更新 </p> </td>
   </tr>
   <tr>
@@ -127,8 +127,8 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td>Oracle Java™ SE 8（64位）</td>
-   <td>答：支持</td>
+   <td>oracleJava™ SE 8（64位）</td>
+   <td>A：支持</td>
    <td>次要版本和更新</td>
   </tr>
   <tr>
@@ -223,7 +223,7 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
   </tr>
   <tr>
    <td>MySQL</td>
-   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar（版本5.1.44）</p> </td>
+   <td><p>MySQL连接器/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar（版本5.1.44）</p> </td>
    <td><p>在JEE安装时随AEM Forms提供</p> </td>
   </tr>
   <tr>
@@ -323,13 +323,13 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3（64位）</td>
-   <td>答：支持</td>
-   <td>服务包、累积修补程序和关键安全更新</td>
+   <td>A：支持</td>
+   <td>服务包、累积补丁和关键安全更新</td>
   </tr>
   <tr>
    <td>CentOS 7（64位）<sup> [6]</sup></td>
-   <td>答：支持</td>
-   <td>服务包、累积修补程序和关键安全更新</td>
+   <td>A：支持</td>
+   <td>服务包、累积补丁和关键安全更新</td>
   </tr>
  </tbody>
 </table>
@@ -466,10 +466,6 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
 
 
 ### PDF Generator的要求
-
-- 要在SUSE® Linux®（SLES 15 SP6或更高版本）服务器上测试PDF转换，请确保具有以下配置：
-   - 导航到`/etc/profile`文件并将`OpenOffice_PATH`环境变量设置为`/opt/openoffice4`以全局对其进行配置。
-   - 安装32位版本的OpenOffice。
 
 ### PDF Generator的软件支持 {#software-support-for-pdf-generator}
 
@@ -888,7 +884,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 4.4 | Windows Server 2016（64位） | Microsoft® Windows Server 2019（64位） |
 | Oracle WebLogic Server 14c | MongoDB Enterprise 4.0 | Microsoft® Active Directory 2016 |
-| My SQL JDBC连接器8 | Oracle Database 12c发行版2 (12.2.0.1.0) |  |
+| My SQL JDBC连接器8 | oracle数据库12c发行版2 (12.2.0.1.0) |  |
 | Active Directory 2022 | MySQL 5.7.35 |  |
 | Microsoft® Windows Server 2022（64位） | Microsoft® SQL Server 2016 |  |
 |  | JBoss® EAP 7.1.4 |  |
@@ -934,7 +930,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | 添加支持 | 删除了支持 | 已弃用的支持 |
 | -------------- | --------------- | ------------------- |
-| Oracle Java™ SE 11（64位）适用于应用程序服务器JBoss® EAP 7.4的SDK。 | | [Adobe Acrobat 2017 — 对Adobe Acrobat 2017的核心支持将于2022年6月6日终止。](https://helpx.adobe.com/cn/support/programs/eol-matrix.html) |
+| oracleJava™ SE 11（64位）SDK，用于应用程序服务器JBoss® EAP 7.4。 | | [Adobe Acrobat 2017 — 对Adobe Acrobat 2017的核心支持将于2022年6月6日终止。](https://helpx.adobe.com/cn/support/programs/eol-matrix.html) |
 |  | | Red Hat® Enterprise Linux® 7（内核3.x）（64位） |
 |  | | Microsoft® Windows Server 2016（64位） |
 |  | | Microsoft® Office 2016 |
