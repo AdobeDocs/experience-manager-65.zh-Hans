@@ -5,10 +5,10 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
 workflow-type: tm+mt
-source-wordcount: '1510'
-ht-degree: 65%
+source-wordcount: '1567'
+ht-degree: 63%
 
 ---
 
@@ -21,6 +21,13 @@ ht-degree: 65%
    * 撤消对页面所做的更改。
 * 将页面的当前版本与先前版本进行比较：
    * 突出显示文本和图像中的差异。
+
+>[!NOTE]
+>
+>AEM存储库中只对内容进行版本控制。 代码、CSS和JavaScript等动态资源不会进行版本控制。
+>
+>* 查看版本时，内容会使用存储库的当前代码、CSS和JavaScript进行查看。
+>* 恢复版本时，将仅恢复内容，并对其应用存储库的当前代码、CSS和JavaScript。
 
 ## 创建新版本 {#creating-a-new-version}
 
@@ -196,7 +203,7 @@ ht-degree: 65%
 
 >[!TIP]
 >
->运行AEM 6.5.10.0或更高版本时，[时间扭曲也可以与启动项一起使用来预览未来](/help/sites-authoring/launches.md)。
+>运行AEM 6.5.10.0或更高版本时，[时间扭曲也可以与启动项一起使用来预览将来的](/help/sites-authoring/launches.md)。
 
 内容创建是一个持续的协作过程。 时间扭曲旨在允许作者跟踪已发布的网站随时间的变化，以帮助他们了解内容发生了什么变化。 此功能使用页面版本确定发布环境的状态：
 
