@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用Adobe Experience Manager 6.5文档了解它的工作方式以及软件可以对您的作用。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 8009e4cf7da17afbcfae7f90009157d32ee261fa
+source-git-commit: 1b551a4f8c05c14e40db1e70147542326cb82b80
 workflow-type: tm+mt
-source-wordcount: '7494'
+source-wordcount: '7520'
 ht-degree: 22%
 
 ---
@@ -1213,6 +1213,9 @@ ht-degree: 22%
       + [PaperCapture服务无法对PDF执行OCR](/help/forms/using/papercapture-service-resolution.md)
       + [缓解JEE上AEM Forms的Spring Framework漏洞](/help/forms/using/mitigating-spring-framework-vulnerabilities-for-aem-forms-on-jee.md)
       + [缓解Experience Manager Forms的Log4j2漏洞](/help/forms/using/aem-forms-vulnerability-cve.md)
+      + [显示基于XFA的PDF forms和受策略保护文档的问题](/help/forms/using/xfa-pdf-forms-policy-protected-documents-not-displayed.md)
+      + [如何在Firefox和Chrome上打开基于XFA的PDF forms](/help/forms/using/xfa-forms-firefox-chrome.md)
+      + [BlazeDS中的XML外部实体(XXE)漏洞](/help/forms/using/xxe-vulnerability-blazeDS.md)
       + [JEE WebLogic服务器上的EAR部署失败](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
    + 旧版文档 {#legacy-documentation}
       + [使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据](/help/forms/developing/building-xml.md)
