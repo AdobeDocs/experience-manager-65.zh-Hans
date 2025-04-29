@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: c361d62beb93fc546f3ef2e53f52ff50bdcdc530
 workflow-type: tm+mt
-source-wordcount: '2310'
-ht-degree: 70%
+source-wordcount: '2343'
+ht-degree: 69%
 
 ---
 
@@ -105,6 +105,13 @@ AEM中的内容片段模型定义了[内容片段的内容结构，](/help/asset
    * 添加单行文本的一个或多个字段；可以定义最大长度
 * **多行文本**
    * 一个文本区域，它可为富文本、纯文本或 Markdown
+
+     >[!NOTE]
+     >
+     出于性能原因，建议不要在一个模型中使用十个以上的富文本字段。
+     >
+     如果需要，建议您使用[嵌套内容片段](#fragment-reference-nested-fragments)来分散负载。
+
 * **数字**
    * 添加一个或多个数字字段
 * **布尔型**
