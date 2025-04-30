@@ -7,16 +7,16 @@ feature: Adaptive Forms,Foundation Components,Core Components
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 80c2ff4dcb826af99ecba5ccf7c303bd36abe745
+source-git-commit: 6ec4eca0c0ad5ecfe18ffc766e6415a0f48506a9
 workflow-type: tm+mt
 source-wordcount: '5963'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
 # 使用自适应表单的最佳实践 {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview"> Adobe建议使用现代的、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)  用于[创建新的自适应Forms](/help/forms/using/create-an-adaptive-form-core-components.md)  或[将自适应Forms添加到AEM Sites页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 ## 概述 {#overview}
 
