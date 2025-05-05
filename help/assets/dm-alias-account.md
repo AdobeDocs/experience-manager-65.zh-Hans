@@ -31,7 +31,7 @@ Dynamic Media公司别名帐户可确保用户界面中所有开箱即用的Dyna
 * Dynamic Media公司别名帐户功能仅限于Experience Manager Assets创作模式和交付。 公司别名不适用于Experience Manager Sites。 没有为此更改更新WCM （Web内容管理）组件。 这些组件将继续与获取Dynamic Media资源的原始Dynamic Media公司名称一起使用。
 * 您只能在&#x200B;**[!UICONTROL 编辑Dynamic Media配置]**&#x200B;页面上设置一个公司别名帐户。 但是，您可以通过支持案例创建尽可能多的公司别名帐户，并在Dynamic Media URL或查看器嵌入代码中手动反映必要的别名。
 * Dynamic Media的现成[缓存无效](/help/assets/invalidate-cdn-cache-dynamic-media.md)功能可以使在Cloud Service的Dynamic Media配置页面中配置的公司和公司别名帐户的URL失效。
-* 当您在&#x200B;**[!UICONTROL 编辑Dynamic Media配置]**&#x200B;页面上配置公司别名帐户时，为了成功使缓存失效，您必须同时使&#x200B;**&#x200B; **&#x200B;[!UICONTROL 公司]&#x200B;**&#x200B;帐户和&#x200B;**&#x200B;[!UICONTROL 公司别名]**&#x200B;帐户的URL失效。
+* 当您在&#x200B;**[!UICONTROL 编辑Dynamic Media配置]**&#x200B;页面上配置公司别名帐户时，为了成功使缓存失效，您必须同时使&#x200B;**&#x200B; &#x200B;**&#x200B;[!UICONTROL 公司]&#x200B;**&#x200B;帐户和&#x200B;**&#x200B;[!UICONTROL 公司别名]**&#x200B;帐户的URL失效。
 
 另请参阅[在Cloud Service中创建Dynamic Media配置](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)
 
