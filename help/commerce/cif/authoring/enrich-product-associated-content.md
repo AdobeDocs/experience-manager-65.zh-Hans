@@ -19,19 +19,19 @@ ht-degree: 1%
 
 ## 数字资产
 
->[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3447319/?quality=12&learn=on&captions=chi_hans)
 
 数字资产可以与一个或多个产品SKU相关联。 一旦关联，就可以通过基于SKU的关键字搜索来发现数字资产。 在编辑包含相关产品的页面时，资产还会自动显示为关联内容，使您能够更轻松地创建下一个数字体验
 
 ## 体验片段
 
->[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/343336/?quality=12&learn=on&captions=chi_hans)
 
 体验片段是Adobe Experience Manager的一项功能，它允许营销人员创建&#x200B;**非结构化**&#x200B;可重复使用的内容。 体验片段可以与产品SKU或目录ID关联。 关联后，营销人员即可根据页面上显示的产品轻松发现相关片段。 体验片段还可以通过使用占位符和关联动态包含在产品目录页面上。
 
 ## 内容片段
 
->[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3452167/?quality=12&learn=on&captions=chi_hans)
 
 内容片段是Adobe Experience Manager的一项功能，它允许营销人员创建&#x200B;**结构化**&#x200B;可重复使用的内容。 内容片段可以与产品SKU或目录ID关联。 关联后，营销人员即可根据页面上显示的产品轻松发现相关片段。 还可以通过使用占位符和关联将内容片段动态包含在产品目录页面上。
 

@@ -660,7 +660,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 >[!NOTE]
 >
->您也可以[观看此视频](https://video.tv.adobe.com/v/21340)，了解系统概述仪表板的简介。
+>您也可以[观看此视频](https://video.tv.adobe.com/v/40160?captions=chi_hans)，了解系统概述仪表板的简介。
 
 ### 如何访问 {#how-to-access}
 

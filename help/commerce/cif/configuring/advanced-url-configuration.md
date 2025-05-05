@@ -26,7 +26,7 @@ ht-degree: 3%
 
 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)提供了高级配置以自定义产品和类别页面的URL。 许多实施都会自定义这些URL，以实现搜索引擎优化(SEO)。 以下视频详细介绍如何配置[Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)的`UrlProvider`服务和功能以自定义产品和类别页面的URL。
 
->[!VIDEO](https://video.tv.adobe.com/v/34350/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/38584/?quality=12&captions=chi_hans)
 
 ## 配置 {#configuration}
 

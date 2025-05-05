@@ -22,4 +22,4 @@ ht-degree: 7%
 
 Adobe Commerce具有由Adobe Sensei提供支持的推荐引擎。 了解如何在Adobe Experience Manager (AEM)店面中动态插入这些产品推荐。
 
->[!VIDEO](https://video.tv.adobe.com/v/340130/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342985/?learn=on&captions=chi_hans)
