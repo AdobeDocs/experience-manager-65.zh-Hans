@@ -159,7 +159,7 @@ AEM 让您根据设备的宽度定义布局：
 
 >[!NOTE]
 >
->如果尚未可用，则必须为段落系统/页面](/help/sites-administering/configuring-responsive-layout.md)明确[激活&#x200B;**布局容器**（例如，通过使用&#x200B;[**设计**&#x200B;模式](/help/sites-authoring/default-components-designmode.md)）。
+>如果尚未可用，则必须为段落系统/页面[&#128279;](/help/sites-administering/configuring-responsive-layout.md)明确激活&#x200B;**布局容器**（例如，通过使用&#x200B;[**设计**&#x200B;模式](/help/sites-authoring/default-components-designmode.md)）。
 
 1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-authoring/author-environment-tools.md#components-browser)。从此处，您可以将其拖动到页面上的所需位置，随后您将看到将组件拖动到 **此处占位符** 。
 1. 接下来，您可以向布局容器中添加组件。这些组件将存放实际的内容：
@@ -271,7 +271,7 @@ AEM 让您根据设备的宽度定义布局：
      >在以上示例中，浮动和隐藏操作之所以可用，是因为此布局容器嵌套在一个父布局容器内。
 
    * **取消隐藏组件**
-选择父组件会显示包含**显示隐藏的组件**&#x200B;选项的操作工具栏。在此示例中，隐藏了两个组件。
+选择父组件会显示包含&#x200B;**显示隐藏的组件**&#x200B;选项的操作工具栏。在此示例中，隐藏了两个组件。
 
      ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 

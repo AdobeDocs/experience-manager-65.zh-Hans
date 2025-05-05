@@ -75,6 +75,7 @@ ht-degree: 2%
    * 预览和发布视频资产
 
       * 查看源视频、视频的编码呈现版本及其关联的缩略图：
+
         [预览视频](managing-video-assets.md#upload-and-preview-video-assets)或[预览资源](previewing-assets.md)
         [查看视频演绎版](video-renditions.md)
         [管理视频演绎版](manage-assets.md#managing-renditions)
@@ -85,9 +86,11 @@ ht-degree: 2%
    * 使用视频元数据
 
       * 查看已编码视频演绎版的属性，如帧速率、音频和视频比特率以及编解码器：
+
         [查看视频演绎版属性](video-renditions.md)
 
       * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
+
         [编辑视频属性](manage-assets.md#editing-properties)
 
       * [管理数字资源的元数据](metadata.md)
@@ -112,9 +115,11 @@ ht-degree: 2%
    * 如果您使用的是第三方Web内容管理系统，则可以将视频链接或嵌入到网页。
 
       * 使用URL集成视频：
+
         [将URL链接到您的Web应用程序](linking-urls-to-yourwebapplication.md)。
 
       * 在网页上使用嵌入代码集成视频：
+
         [在网页上嵌入视频查看器](embed-code.md)。
 
    * [生成视频报告](#viewing-video-reports)。
@@ -460,11 +465,11 @@ Dynamic Media建议使用MP4 H.264视频编码预设。 由于MP4文件使用H.2
 1. 选择Experience Manager左上角的Experience Manager徽标，然后在左边栏中，单击&#x200B;**[!UICONTROL 工具]** （锤子图标）> **[!UICONTROL Assets]** > **[!UICONTROL 视频报表]**。
 1. 在“视频报表”页面上，执行以下操作之一：
 
-   * 在右上角附近，选择&#x200B;**刷新视频报告**图标。
+   * 在右上角附近，选择&#x200B;**刷新视频报告**&#x200B;图标。
 仅当报表的结束日期为当天时，才使用刷新。 这样做可确保您看到自上次运行报表以来发生的视频跟踪。
 
-   * 在右上角附近，选择&#x200B;**日期选取器**图标。
-指定要获取其视频数据的开始和结束日期范围，然后选择**[!UICONTROL 运行报表]**。
+   * 在右上角附近，选择&#x200B;**日期选取器**&#x200B;图标。
+指定要获取其视频数据的开始和结束日期范围，然后选择&#x200B;**[!UICONTROL 运行报表]**。
 
    “排名最前的量度”组框标识了您网站上所有&#x200B;*已发布*&#x200B;视频的各种聚合量度。
 
@@ -552,7 +557,7 @@ Dynamic Media建议使用MP4 H.264视频编码预设。 由于MP4文件使用H.2
 |  | 评论轨道 |
 |  | 描述性音频 |
 
-Dynamic Media ](/help/assets/assets-formats.md)和所有Dynamic Media视频查看器支持的所有[视频格式（Dynamic Media *Video_360*&#x200B;查看器除外）都支持与多个字幕和音轨一起使用。
+Dynamic Media [&#128279;](/help/assets/assets-formats.md)和所有Dynamic Media视频查看器支持的所有视频格式（Dynamic Media *Video_360*&#x200B;查看器除外）都支持与多个字幕和音轨一起使用。
 
 ### 向视频中添加多个字幕和音频轨道 {#add-msma}
 
@@ -695,7 +700,7 @@ Dynamic Media支持通过URL修饰符将单个字幕与视频相加。 请参阅
 1. 在“属性”页面上，选择&#x200B;**[!UICONTROL 字幕和音轨]**&#x200B;选项卡。
 1. 在&#x200B;**音轨**&#x200B;标题下，选择要设置为视频的默认音轨文件。
 1. 选择&#x200B;**[!UICONTROL 设置为默认值]**。
-在**设置为默认值**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 替换]**。
+在&#x200B;**设置为默认值**&#x200B;对话框中，选择&#x200B;**[!UICONTROL 替换]**。
 
    ![声道标题具有选定的声道文件名并突出显示“设置为默认值”按钮。](assets-dm/msma-defaultaudiotrack2.png)*正在设置视频的默认音轨。*
 
@@ -732,8 +737,8 @@ Dynamic Media支持通过URL修饰符将单个字幕与视频相加。 请参阅
 
    ![视频查看器中的“音频和字幕”弹出列表。](assets-dm/msma-selectaudiosubtitle.png)*模拟用户选择音频和字幕进行视频播放。*
 
-1. 要开始播放，请选择视频的&#x200B;**[!UICONTROL 播放]**按钮。
-请注意左下角的**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL 嵌入]**&#x200B;按钮。 使用这些按钮分别[将视频的URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)或[将视频嵌入网页](/help/assets/embed-code.md)。
+1. 要开始播放，请选择视频的&#x200B;**[!UICONTROL 播放]**&#x200B;按钮。
+请注意左下角的&#x200B;**[!UICONTROL URL]**&#x200B;和&#x200B;**[!UICONTROL 嵌入]**&#x200B;按钮。 使用这些按钮分别[将视频的URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)或[将视频嵌入网页](/help/assets/embed-code.md)。
 1. 在预览页面的右上角附近，选择&#x200B;**[!UICONTROL 关闭]**。
 
 ### 从视频中删除字幕或音频跟踪文件
@@ -1216,7 +1221,7 @@ public class ManifestServlet extends HttpServlet {
 
 +++
 
->servlet的[!TAB 响应类]
+>[!TAB servlet的 响应类]
 
 +++servlet的&#x200B;**响应类**
 
@@ -1246,7 +1251,7 @@ public abstract class VideoResponse {
 
 +++
 
->在servlet]中引用的[!TAB 常量文件
+>[!TAB 在servlet中引用的 常量文件]
 
 +++在servlet **中引用的**&#x200B;常量文件
 

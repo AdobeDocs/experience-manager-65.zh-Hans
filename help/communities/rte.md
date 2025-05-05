@@ -22,7 +22,7 @@ ht-degree: 3%
 
 富文本编辑器(RTE)允许您输入带标记的文本。
 
-对于Communities组件，尽管与创作环境](../../help/sites-authoring/rich-text-editor.md)中的[富文本编辑器类似，但它会影响在发布环境中输入的文本。
+对于Communities组件，尽管与创作环境[&#128279;](../../help/sites-authoring/rich-text-editor.md)中的富文本编辑器类似，但它会影响在发布环境中输入的文本。
 
 ![富文本编辑器](assets/rich-text-editor.png)
 

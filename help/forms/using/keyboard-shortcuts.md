@@ -48,10 +48,10 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-在桌面设备上多选：
+>在桌面设备上多选：
 >
-* Windows：按住Ctrl并单击所需的组件。
-* macOS：按住Command并单击所需的组件。
+>* Windows：按住Ctrl并单击所需的组件。
+>* macOS：按住Command并单击所需的组件。
 >
 
 ## 主题编辑器  {#themeeditor}
@@ -66,7 +66,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-标有“&amp;amp；ast；”的快捷方式可同时使用macOS上的Ctrl和Command键。
+>标有“&amp;amp；ast；”的快捷方式可同时使用macOS上的Ctrl和Command键。
 
 ## 内容浏览器  {#contentbrowser}
 

@@ -67,6 +67,6 @@ ht-degree: 57%
 
 * **文档**
 
-  如果开发人员提供了组件](/help/sites-developing/developing-components.md#documenting-your-component)的[文档，则该文档将显示在&#x200B;**Documentation**&#x200B;选项卡上。 如果没有可用文档，则不会显示&#x200B;**文档**&#x200B;选项卡。
+  如果开发人员提供了组件[&#128279;](/help/sites-developing/developing-components.md#documenting-your-component)的文档，则该文档将显示在&#x200B;**Documentation**&#x200B;选项卡上。 如果没有可用文档，则不会显示&#x200B;**文档**&#x200B;选项卡。
 
   ![文档](assets/chlimage_1-171.png)

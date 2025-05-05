@@ -130,9 +130,9 @@ maven原型是创建自定义外观的起点。 要使用的原型的详细信�
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>返回将HTML事件转换为XFA事件的映射。 <br /> <code class="code">{
+   <td>返回将HTML事件转换为XFA事件的映射。 <br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      }</code><br />此示例显示<code>blur</code>是一个HTML事件，<code>XFA_EXIT_EVENT</code>是相应的XFA事件。 </td>
+      &rbrace;</code><br />此示例显示<code>blur</code>是一个HTML事件，<code>XFA_EXIT_EVENT</code>是相应的XFA事件。 </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

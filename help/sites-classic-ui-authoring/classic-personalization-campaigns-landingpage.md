@@ -32,7 +32,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features)已弃用用于导入登陆页面的设计导入程序[。
+>AEM 6.5[&#128279;](/help/release-notes/deprecated-removed-features.md#deprecated-features)已弃用用于导入登陆页面的设计导入程序。
 
 >[!CAUTION]
 >

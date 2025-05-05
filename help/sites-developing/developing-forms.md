@@ -72,7 +72,7 @@ ht-degree: 0%
 
 1. 添加多值字符串(`String[]`)类型的新属性（例如`myList`）以包含下拉项列表。 内容也可以使用脚本导入，例如通过JSP脚本或shell脚本中的cURL导入。
 
-1. 在&#x200B;**项加载路径**字段中使用完整路径：
+1. 在&#x200B;**项加载路径**&#x200B;字段中使用完整路径：
 例如，`/etc/designs/geometrixx/formlistvalues/myList`
 
 请注意，如果`String[]`中的值采用如下格式：

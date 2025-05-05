@@ -103,6 +103,7 @@ Microsoft Dynamics使用基于声明的身份验证向外部用户提供对Micro
 
    * `Client-ID`是使用任何GUID生成器生成的客户端ID。
    * `redirect-uri`是AEM Forms上Microsoft Dynamics OData云服务的URL。 与AEM Forms包一起安装的默认Cloud Service部署在以下URL中：
+
      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. 运行以下命令以授予AD FS计算机上的访问权限：

@@ -158,7 +158,7 @@ ht-degree: 33%
 
 ### 使用表单数据模型预填充服务预填充自适应表单的字段 {#fdm-prefill-service}
 
-您可以使用表单数据模型预填充服务通过表单数据模型或自定义预填充服务预填充自适应表单的字段。 表单数据模型预填充服务使用配置的表单数据模型](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)的[Get服务检索数据。 要对自适应表单使用表单数据模型预填充服务，请执行以下操作：
+您可以使用表单数据模型预填充服务通过表单数据模型或自定义预填充服务预填充自适应表单的字段。 表单数据模型预填充服务使用配置的表单数据模型[&#128279;](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)的Get服务检索数据。 要对自适应表单使用表单数据模型预填充服务，请执行以下操作：
 
 1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
 1. 单击指南容器属性![指南属性](/help/forms/using/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。

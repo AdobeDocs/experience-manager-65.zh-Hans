@@ -231,7 +231,7 @@ AEM Forms 会提供自适应表单容器和自适应表单嵌入组件。您可�
 
 ### 使用表单数据模型预填充服务 {#fdm-prefill-service}
 
-您可以使用表单数据模型预填充服务使用配置的表单数据模型预填充表单的字段。 表单数据模型预填充服务使用配置的表单数据模型](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)的[Get服务检索数据。 要对自适应表单使用表单数据模型预填充服务，请执行以下操作：
+您可以使用表单数据模型预填充服务使用配置的表单数据模型预填充表单的字段。 表单数据模型预填充服务使用配置的表单数据模型[&#128279;](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)的Get服务检索数据。 要对自适应表单使用表单数据模型预填充服务，请执行以下操作：
 
 1. 打开包含自适应表单的AEM页面编辑器或体验片段。
 1. 打开内容树，然后选择承载您的自适应表单的&#x200B;**[!UICONTROL 自适应Forms容器]**。 一个AEM Sites页面可以托管多个自适应Forms。 因此，请仔细选择正确的自适应Forms容器。

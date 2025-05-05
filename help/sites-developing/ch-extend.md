@@ -69,7 +69,7 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
 
 ## 创建ContextHub UI模块类型 {#creating-contexthub-ui-module-types}
 
-当随ContextHub](/help/sites-developing/ch-samplemodules.md)安装的[模块类型不符合您的要求时，创建自定义UI模块类型。 要创建UI模块类型，请通过扩展`ContextHub.UI.BaseModuleRenderer`类并在`ContextHub.UI`中注册来创建UI模块渲染器。
+当随ContextHub[&#128279;](/help/sites-developing/ch-samplemodules.md)安装的模块类型不符合您的要求时，创建自定义UI模块类型。 要创建UI模块类型，请通过扩展`ContextHub.UI.BaseModuleRenderer`类并在`ContextHub.UI`中注册来创建UI模块渲染器。
 
 要创建UI模块渲染器，请创建包含用于渲染UI模块的逻辑的`Class`对象。 类至少必须执行以下操作：
 

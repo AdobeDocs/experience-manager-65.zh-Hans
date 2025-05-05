@@ -112,7 +112,7 @@ Adobe Experience Manager (AEM) 6.4及更高版本[已弃用经典UI](../release-
 | 审核日志 | 已删除 | 使用站点管理员并[打开活动边栏](/help/sites-authoring/author-environment-tools.md#events-timeline)。 |
 | 创建版本 | 已删除 | 使用站点管理员[创建新版本](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version)。 |
 | 恢复版本 | 已删除 | 使用站点管理员[还原版本](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version)。 |
-| 切换启动项 | 已删除 | 使用“站点管理员”可在启动项](/help/sites-authoring/launches-promoting.md)之间[切换。 |
+| 切换启动项 | 已删除 | 使用“站点管理员”可在启动项[&#128279;](/help/sites-authoring/launches-promoting.md)之间切换。 |
 | 翻译页面 | 已删除 | 使用站点管理员[将页面添加到翻译项目](/help/sites-administering/tc-manage.md)。 |
 | 时间扭曲（选择日期/时间并浏览当时的网站） | 完成 |  |
 | 设置权限 | 完成 |  |

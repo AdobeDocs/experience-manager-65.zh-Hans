@@ -52,6 +52,7 @@ OAuth配置需要以下先决条件：
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
+
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * 使用新OAuth配置的客户端ID更新`auth.token.provider.client.id`。
    * 将`auth.access.token.request`更新至`"https://ims-na1.adobelogin.com/ims/token/v3"`
@@ -147,7 +148,7 @@ OAuth配置需要以下先决条件：
 
 ## 创建Adobe Developer Console集成 {#create-adobe-i-o-integration}
 
-要使用Smart Content Service API，请在Adobe Developer Console中创建集成，以获取[!DNL Experience Manager]中云配置的[!UICONTROL Assets智能标记服务设置]的[!UICONTROL API密钥](在Adobe Developer Console集成的[!UICONTROL 客户端ID]字段中生成)、[!UICONTROL 技术帐户ID]、[!UICONTROL 组织ID]和[!UICONTROL 客户端密钥]。
+要使用Smart Content Service API，请在Adobe Developer Console中创建集成，以获取[!DNL Experience Manager]中云配置的[!UICONTROL Assets智能标记服务设置]的[!UICONTROL API密钥] (在Adobe Developer Console集成的[!UICONTROL 客户端ID]字段中生成)、[!UICONTROL 技术帐户ID]、[!UICONTROL 组织ID]和[!UICONTROL 客户端密钥]。
 
 1. 在浏览器中访问[https://developer.adobe.com/console/](https://developer.adobe.com/console/)。 选择相应的帐户并验证关联的组织角色是否为系统管理员。
 

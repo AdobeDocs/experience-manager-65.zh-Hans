@@ -100,7 +100,7 @@ Adobe Experience Manager 可与以下版本的 Java™ 虚拟机配合使用：
 | Azul Zulu OpenJDK 11 - 64位 | A：支持的`[3]` | |
 | Azul Zulu OpenJDK 8 - 64位 | A：支持的`[3]` | |
 
-1. oracle已针对OracleJava™ SE产品转向“长期支持”(LTS)模式。 Java™ 9、Java™ 10和Java™ 12是按Oracle列出的非LTS版本(请参阅[OracleJava™ SE支持路线图](https://www.oracle.com/technetwork/java/eol-135779.html))。 要在生产环境中部署AEM，Adobe仅支持Java™的LTS版本。 所有使用OracleJava™ SE技术的AEM客户均可直接Adobe，从而支持和分发OracleJava™ SE JDK（包括公共更新结束后对LTS版本的所有维护更新）。 请参阅Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)的[Java™支持政策。
+1. oracle已针对OracleJava™ SE产品转向“长期支持”(LTS)模式。 Java™ 9、Java™ 10和Java™ 12是按Oracle列出的非LTS版本(请参阅[OracleJava™ SE支持路线图](https://www.oracle.com/technetwork/java/eol-135779.html))。 要在生产环境中部署AEM，Adobe仅支持Java™的LTS版本。 所有使用OracleJava™ SE技术的AEM客户均可直接Adobe，从而支持和分发OracleJava™ SE JDK（包括公共更新结束后对LTS版本的所有维护更新）。 请参阅Adobe Experience Manager[&#128279;](assets/Java_Policy_for_Adobe_Experience_Manager.pdf)的Java™支持政策。
    **重要说明：至少在2026年9月之前支持OracleJava™ 11。 正在准备对OracleJava™ 17的支持。**
 
 1. IBM® JRE仅与WebSphere®应用程序服务器一起受支持。

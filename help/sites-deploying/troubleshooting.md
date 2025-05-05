@@ -157,4 +157,4 @@ java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;amp；ast；.jar
 ### JSP文件未在JBoss上编译® {#jsp-files-are-not-compiled-on-jboss}
 
 如果安装或更新要在JBoss®上Experience Manager的JSP文件，但未编译相应的servlet，请确保正确配置了JBoss® JSP编译器。 有关信息，请参见
-JBoss®](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html)文章中的[JSP编译问题。
+JBoss®[&#128279;](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html)文章中的JSP编译问题。

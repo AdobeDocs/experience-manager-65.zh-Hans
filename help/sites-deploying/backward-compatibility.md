@@ -61,7 +61,7 @@ ht-degree: 1%
 
 ## 如何设置 {#how-to-set-up}
 
-可以使用包管理器将6.5 **的** AEM 6.4兼容包作为包进行安装。 您可以从Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64)站点下载[AEM 6.4 Compatibility Pack for 6.5。
+可以使用包管理器将6.5 **的** AEM 6.4兼容包作为包进行安装。 您可以从Software Distribution[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=compat*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=20&amp;package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fcompatpack%2Faem-compat-cq65-to-cq64)站点下载AEM 6.4 Compatibility Pack for 6.5。
 
 安装兼容包后，可以使用OSGI配置中的交换机启用或禁用路由，如下所示：
 

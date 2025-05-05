@@ -195,7 +195,7 @@ Creative Project提供各种项目模板以满足各种项目要求。 **产品�
 
    ![查看拍摄列表](assets/chlimage_1-148a.png)
 
-   要编辑现有数据或添加新数据，请单击工具栏中的&#x200B;**编辑**。 只能编辑**Product**和&#x200B;**Description**&#x200B;字段。
+   要编辑现有数据或添加新数据，请单击工具栏中的&#x200B;**编辑**。 只能编辑&#x200B;**Product**&#x200B;和&#x200B;**Description**&#x200B;字段。
 
    ![编辑拍摄列表](assets/chlimage_1-149a.png)
 

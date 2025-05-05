@@ -192,7 +192,7 @@ PhoneGap应用程序中任何给定资产的URI不仅会因平台而异，而且
 
 作为PhoneGap开发人员，您关注的内容位于www目录下方。 要访问应用程序资产，请使用相对路径。
 
-为了解决此问题，PhoneGap应用程序使用单页应用程序(SPA)模式，以便基本URI（不包括哈希）永不更改。 因此，您引用的每个资源、模板或脚本**都必须相对于您的顶级页面。 **顶级页面通过`<name>.angular-app-module.js`和`<name>.angular-app-controllers.js`初始化Angular路由和控制器。 此页面应该是距离存储库根目录*不*扩展sling：redirect的最近页面。
+为了解决此问题，PhoneGap应用程序使用单页应用程序(SPA)模式，以便基本URI（不包括哈希）永不更改。 因此，您引用的每个资源、模板或脚本&#x200B;**都必须相对于您的顶级页面。 &#x200B;** 顶级页面通过`<name>.angular-app-module.js`和`<name>.angular-app-controllers.js`初始化Angular路由和控制器。 此页面应该是距离存储库根目录*不*扩展sling：redirect的最近页面。
 
 有几种辅助方法可用于处理相对路径：
 

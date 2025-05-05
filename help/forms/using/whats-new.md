@@ -47,7 +47,7 @@ Experience Manager6.5.19.0包括自2019年4月首次推出6.5以来发布的新�
 
 #### 将自适应Forms连接到Microsoft® SharePoint列表
 
-AEM Forms提供开箱即用的集成，允许您将表单数据直接提交到SharePoint列表](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)，从而您可以使用SharePoint的列表功能。 [您可以将Microsoft® SharePoint列表配置为表单数据模型的数据源，并使用使用表单数据模型提交操作将自适应表单与SharePoint列表连接起来。
+AEM Forms提供开箱即用的集成，允许您将表单数据直接提交到SharePoint列表[&#128279;](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)，从而您可以使用SharePoint的列表功能。 您可以将Microsoft® SharePoint列表配置为表单数据模型的数据源，并使用使用表单数据模型提交操作将自适应表单与SharePoint列表连接起来。
 
 #### 支持为自适应表单片段配置记录文档属性
 

@@ -29,7 +29,7 @@ ht-degree: 65%
 
 要与 Target 集成，请执行以下任务：
 
-1. [执行必备任务](/help/sites-administering/target-requirements.md)：向 Adobe Target 注册并配置 AEM 创作实例的某些方面。您的Adobe Target帐户必须至少具有**审批者**级别的权限。 此外，您必须保护发布节点上的活动设置，以便用户无法访问。
+1. [执行必备任务](/help/sites-administering/target-requirements.md)：向 Adobe Target 注册并配置 AEM 创作实例的某些方面。您的Adobe Target帐户必须至少具有&#x200B;**审批者**&#x200B;级别的权限。 此外，您必须保护发布节点上的活动设置，以便用户无法访问。
 
 1. 可以任选其一：
 

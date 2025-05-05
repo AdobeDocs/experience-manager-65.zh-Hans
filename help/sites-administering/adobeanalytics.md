@@ -59,6 +59,6 @@ ht-degree: 56%
 >* **Day Commons HTTP 客户端 3.1** 以配置 3.x API；
 >  例如，[https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
->* **Apache HTTP 组件代理配置**以配置 4.x API；
+>* **Apache HTTP 组件代理配置**&#x200B;以配置 4.x API；
 >  例如，[https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >

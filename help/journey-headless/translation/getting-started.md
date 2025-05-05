@@ -88,6 +88,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 1. **内容片段模型编辑器**&#x200B;将打开。
    1. 左列包含模型的字段。我们对此列感兴趣。
    1. 右列包含可添加到模型中的字段。我们可以忽略此列。
+
       ![内容片段模型编辑器](assets/content-fragment-model-editor.png)
 1. 单击模型的其中一个字段。 AEM 会标记该字段，其详细信息会显示在右列中。
    ![内容片段模型编辑器详细信息](assets/content-fragment-model-editor-detail.png)

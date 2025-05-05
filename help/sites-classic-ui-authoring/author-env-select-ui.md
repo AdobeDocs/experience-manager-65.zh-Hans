@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >从以前的版本升级的实例将保留用于页面创作的经典UI。
 >
->升级后，页面创作将不会自动切换到触控式UI，但您可以使用&#x200B;**WCM创作UI模式服务** （`AuthoringUIMode`服务）的[OSGi配置](/help/sites-deploying/configuring-osgi.md)配置此设置。 查看编辑器](#uioverridesfortheeditor)的[UI覆盖。
+>升级后，页面创作将不会自动切换到触控式UI，但您可以使用&#x200B;**WCM创作UI模式服务** （`AuthoringUIMode`服务）的[OSGi配置](/help/sites-deploying/configuring-osgi.md)配置此设置。 查看编辑器[&#128279;](#uioverridesfortheeditor)的UI覆盖。
 
 ## 为实例配置默认UI {#configuring-the-default-ui-for-your-instance}
 

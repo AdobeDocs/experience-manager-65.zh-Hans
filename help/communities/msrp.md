@@ -100,7 +100,7 @@ Solr收藏集名称。
 
 >[!NOTE]
 >
->不应将默认为名称`communities`的mongoDB数据库设置为用于[节点存储或数据（二进制）存储](../../help/sites-deploying/data-store-config.md)的数据库的名称。 另请参阅AEM 6.5](../../help/sites-deploying/storage-elements-in-aem-6.md)中的[存储元素。
+>不应将默认为名称`communities`的mongoDB数据库设置为用于[节点存储或数据（二进制）存储](../../help/sites-deploying/data-store-config.md)的数据库的名称。 另请参阅AEM 6.5[&#128279;](../../help/sites-deploying/storage-elements-in-aem-6.md)中的存储元素。
 
 ### MongoDB副本集 {#mongodb-replica-set}
 
@@ -128,7 +128,7 @@ mongodb://mongoserver1:<mongoport1>,mongoserver2:<mongoport2>,mongoserver3:<mong
 
 对于生产环境，[SolrCloud模式](solr.md#solrcloud-mode)比独立模式（单个本地Solr设置）提供了更好的性能。
 
-有关配置详细信息，请参阅SRP](solr.md)的[Solr配置。
+有关配置详细信息，请参阅SRP[&#128279;](solr.md)的Solr配置。
 
 ### 升级 {#upgrading}
 

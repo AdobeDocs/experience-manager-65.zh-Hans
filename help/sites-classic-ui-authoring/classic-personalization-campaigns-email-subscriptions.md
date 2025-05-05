@@ -64,7 +64,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >要使表单订阅正常工作，需要在发布实例](#exporting-keys-from-author-and-importing-on-publish)上导出和导入来自作者的[加密密钥。
+   >要使表单订阅正常工作，需要在发布实例[&#128279;](#exporting-keys-from-author-and-importing-on-publish)上导出和导入来自作者的加密密钥。
 
 ## 从作者导出键并在发布时导入 {#exporting-keys-from-author-and-importing-on-publish}
 
@@ -114,6 +114,6 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >要使注册表单订阅正常运行，需要在发布实例](#exporting-keys-from-author-and-importing-on-publish)上导出和导入来自作者的[加密密钥。
+   >要使注册表单订阅正常运行，需要在发布实例[&#128279;](#exporting-keys-from-author-and-importing-on-publish)上导出和导入来自作者的加密密钥。
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)

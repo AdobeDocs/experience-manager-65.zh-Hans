@@ -26,7 +26,7 @@ ht-degree: 0%
 * 在所有发布实例上启用反向复制
 * 启用交易报表
 * 提供查看交易报告的权限
-* （可选）配置事务刷新周期和发件箱[](/help/forms/using/installing-configuring-aem-forms-osgi.md)
+* （可选）配置事务刷新周期和发件箱[&#128279;](/help/forms/using/installing-configuring-aem-forms-osgi.md)
 
 >[!NOTE]
 >

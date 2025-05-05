@@ -48,7 +48,7 @@ ht-degree: 52%
 
 >[!NOTE]
 >
-无论是否[已取消激活控制台快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)，编辑器键盘快捷键始终处于活动状态。
+>无论是否[已取消激活控制台快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)，编辑器键盘快捷键始终处于活动状态。
 
 ## 特定于操作系统的修饰符键 {#os-specific-modifier-keys}
 

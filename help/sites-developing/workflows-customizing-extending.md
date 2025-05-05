@@ -96,7 +96,7 @@ ht-degree: 2%
 
 ## 创建自定义工作流步骤组件 {#creating-custom-workflow-step-components}
 
-可以使用与任何其他组件](/help/sites-developing/components.md)相同的方式创建工作流步骤组件[。
+可以使用与任何其他组件[&#128279;](/help/sites-developing/components.md)相同的方式创建工作流步骤组件。
 
 要从（现有）基本步骤组件之一继承，请将以下属性添加到`cq:Component`节点：
 

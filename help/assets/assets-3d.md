@@ -152,7 +152,7 @@ Dynamic Media支持以下3D格式。
    * 从浏览器中的页面URL中删除`/editor.html`。
 
    ![3D资产显示在3D媒体组件内](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-以**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
+以&#x200B;**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
 
 1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，执行以下任一操作：
 
@@ -232,7 +232,7 @@ Dynamic Media包含一个Dynamic Media 3D媒体组件，您可以在Adobe Experi
 
 将3D媒体组件添加到网页后，即可为其分配3D资产。
 
-请参阅将3D媒体组件添加到网页](#adding-the-three-d-media-component-to-a-web-page)。[
+请参阅将3D媒体组件添加到网页[&#128279;](#adding-the-three-d-media-component-to-a-web-page)。
 
 **要将3D资产分配给3D媒体组件：**
 

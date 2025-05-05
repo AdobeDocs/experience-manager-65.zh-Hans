@@ -233,13 +233,13 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 #### 存储库中的配置 {#configuration-in-the-repo}
 
-如果您使用sling：OsgiConfig节点](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)配置服务[，则必须找到现有服务的PID，例如：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台发现PID。
+如果您使用sling：OsgiConfig节点[&#128279;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)配置服务，则必须找到现有服务的PID，例如：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台发现PID。
 
 配置名为`queue.maxparallel`的属性。
 
 #### Web控制台中的配置 {#configuration-in-the-web-console}
 
-要使用Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)配置这些服务[，请在Apache Sling作业队列配置服务工厂下找到现有配置项。
+要使用Web控制台[&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)配置这些服务，请在Apache Sling作业队列配置服务工厂下找到现有配置项。
 
 配置名为Maximum Parallel Jobs的属性。
 

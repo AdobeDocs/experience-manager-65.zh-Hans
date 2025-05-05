@@ -211,7 +211,7 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 ### 探究单页应用程序 {#explore-spa}
 
-不过，没有必要停止AEM中的Headless商店。 在历程](getting-started.md#integration-levels)的[快速入门部分中，讨论了AEM如何支持Headless投放和传统的全栈模型，以及如何支持将两者的优势结合起来的混合模型。
+不过，没有必要停止AEM中的Headless商店。 在历程[&#128279;](getting-started.md#integration-levels)的快速入门部分中，讨论了AEM如何支持Headless投放和传统的全栈模型，以及如何支持将两者的优势结合起来的混合模型。
 
 如果项目需要这种灵活性，请继续此历程的其他可选部分，[如何使用AEM创建单页应用程序(SPA)。](create-spa.md)
 

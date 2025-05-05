@@ -197,15 +197,15 @@ ht-degree: 0%
 
    * 完全数据库备份(nsrnmddbf.bat)：
 
-     `NetWorker_database_module_root` `-s`*&lt;NetWorker服务器名称>* `-U``[username]` `-P`*[密码&#x200B;]*`-l full`*&lt;数据库名称>*
+     `NetWorker_database_module_root` `-s`*&lt;NetWorker服务器名称>* `-U` `[username]` `-P`*[密码&#x200B;]*`-l full`*&lt;数据库名称>*
 
    * 增量数据库备份(nsrnmddbi.bat)：
 
-     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker服务器名称>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;数据库名称>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker服务器名称>* `-U` `[username]` `-P` `[password]` `-l 1 -R`*&lt;数据库名称>*
 
    * 数据库日志备份(nsrnmddbl.bat)：
 
-     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;数据库名称>*
+     `[NetWorker_database_module_root]` `-s` `<NetWorker_Server_Name>` `-U` `[username]` `-P` `[password]` `-l incr -R`*&lt;数据库名称>*
 
      其中：
 

@@ -55,7 +55,7 @@ ht-degree: 0%
    * [色彩管理属性](#color-management-attributes-tab)选项卡
 
    ![Dynamic Media Publish设置页面](/help/assets/assets-dm/dm-publish-setup.png)
-   *Dynamic Media Publish设置页面，已选择&#x200B;**[!UICONTROL 请求属性]**选项卡。*<br><br>
+   *Dynamic Media Publish设置页面，已选择&#x200B;**[!UICONTROL 请求属性]**&#x200B;选项卡。*<br><br>
 
 1. 完成后，在页面的右上角附近，单击&#x200B;**[!UICONTROL 保存]**。
 

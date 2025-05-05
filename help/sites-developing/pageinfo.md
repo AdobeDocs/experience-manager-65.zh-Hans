@@ -34,7 +34,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >* 本机移动设备应用程序
 >* AEM外部的其他渠道和接触点
 >
->请参阅Content Services](/help/sites-developing/json-exporter.md)的文档[JSON导出程序。
+>请参阅Content Services[&#128279;](/help/sites-developing/json-exporter.md)的文档JSON导出程序。
 
 ## 页面信息提供程序 {#page-information-providers}
 

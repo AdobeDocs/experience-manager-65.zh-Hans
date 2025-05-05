@@ -77,7 +77,7 @@ https://<server>:<port>/content/page.model.selector1.selector2.json
 
 ## 示例 {#example}
 
-自核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)的[1.1.0版本以来，核心组件一直支持JSON导出，可以将其用作参考。
+自核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)的1.1.0版本以来，核心组件一直支持JSON导出，可以将其用作参考。
 
 有关示例，请参阅图像核心组件的Sling模型实施及其注释的界面。
 
@@ -92,7 +92,7 @@ GITHUB上的代码
 
 有关更多详细信息，请参阅以下内容：
 
-* Assets用户指南](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)中的[内容片段主题
+* Assets用户指南[&#128279;](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)中的内容片段主题
 
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [使用内容片段创作](/help/sites-authoring/content-fragments.md)

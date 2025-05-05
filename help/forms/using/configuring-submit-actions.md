@@ -77,7 +77,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
-要将字段作为 REST URL 中的参数传递，所有字段都必须具有不同的元素名称，即使这些字段位于不同的面板上也是如此。
+>要将字段作为 REST URL 中的参数传递，所有字段都必须具有不同的元素名称，即使这些字段位于不同的面板上也是如此。
 
 ### Post将数据提交到资源或外部rest端点  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
@@ -108,7 +108,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
-所有表单字段必须具有不同的元素名称（即使它们位于不同的面板上），才能在电子邮件中包含表单数据。
+>所有表单字段必须具有不同的元素名称（即使它们位于不同的面板上），才能在电子邮件中包含表单数据。
 
 ## 通过电子邮件发送PDF {#send-pdf-via-email}
 
@@ -116,7 +116,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
-此提交操作适用于具有记录文档模板的基于XFA的自适应表单和基于XSD的自适应表单。
+>此提交操作适用于具有记录文档模板的基于XFA的自适应表单和基于XSD的自适应表单。
 
 ## 调用Forms Workflow {#invoke-a-forms-workflow}
 
@@ -150,7 +150,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
-无论是否将工作流模型标记为外部数据存储，都可以使用变量。
+>无论是否将工作流模型标记为外部数据存储，都可以使用变量。
 
 * **附件**：您可以使用&#x200B;**[!UICONTROL 附件路径]**&#x200B;选项指定用于存储已上传到自适应表单的附件的文件夹名称。该文件夹是相对于负载创建的。如果为外部数据存储标记了工作流，请使用变量选项，并从对工作流模型可用的变量列表中选择变量。
 
@@ -173,7 +173,7 @@ ht-degree: 48%
 
 >[!NOTE]
 >
-AEM 6.5 Forms Service Pack 19 (6.5.19.0)引入了提交到Microsoft®SharePoint列表功能。
+>AEM 6.5 Forms Service Pack 19 (6.5.19.0)引入了提交到Microsoft®SharePoint列表功能。
 
 **[!UICONTROL 提交到SharePoint]**&#x200B;提交操作将自适应表单与Microsoft® SharePoint存储相关联。 您可以将表单数据文件、附件或记录文档提交到连接的Microsoft® Sharepoint存储。
 
@@ -199,7 +199,7 @@ AEM 6.5 Forms Service Pack 19 (6.5.19.0)引入了提交到Microsoft®SharePoint�
 
      >[!NOTE]
      >
-     **客户端密码**&#x200B;字段是必填还是可选字段取决于 Azure Active Directory 应用程序配置。如果应用程序配置为使用客户端密码，则必须提供客户端密码。
+     >**客户端密码**&#x200B;字段是必填还是可选字段取决于 Azure Active Directory 应用程序配置。如果应用程序配置为使用客户端密码，则必须提供客户端密码。
 
 1. 单击&#x200B;**[!UICONTROL 连接]**。连接成功后，将显示`Connection Successful`消息。
 1. 从下拉列表中选择&#x200B;**[!UICONTROL SharePoint站点]**&#x200B;和&#x200B;**[!UICONTROL SharePoint列表]**。
@@ -218,16 +218,16 @@ AEM 6.5 Forms Service Pack 19 (6.5.19.0)引入了提交到Microsoft®SharePoint�
 
 >[!NOTE]
 >
-在Microsoft® SharePoint List中，不支持以下列类型：
-* 图像列
-* 元数据列
-* 人员列
-* 外部数据列
+>在Microsoft® SharePoint List中，不支持以下列类型：
+>* 图像列
+>* 元数据列
+>* 人员列
+>* 外部数据列
 
 
 >[!NOTE]
 >
-要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process)。
+>要设置配置的值，请[使用 AEM SDK 生成 OSGi 配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/deploying/configuring-osgi.html?lang=zh-Hans#generating-osgi-configurations-using-the-aem-sdk-quickstart)，并向 Cloud Service 实例[部署配置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/using-cloud-manager/deploy-code.html?lang=zh-Hans#deployment-process)。
 
 ## 自适应表单中的服务器端重新验证 {#server-side-revalidation-in-adaptive-form}
 
@@ -255,7 +255,7 @@ AEM 6.5 Forms Service Pack 19 (6.5.19.0)引入了提交到Microsoft®SharePoint�
 
 >[!NOTE]
 >
-服务器端验证将验证表单模型。建议为验证创建单独的客户端库，不要将其与同一客户端库中的HTML样式和DOM操作等其他内容混合。
+>服务器端验证将验证表单模型。建议为验证创建单独的客户端库，不要将其与同一客户端库中的HTML样式和DOM操作等其他内容混合。
 
 ### 支持验证表达式中的自定义函数 {#supporting-custom-functions-in-validation-expressions-br}
 

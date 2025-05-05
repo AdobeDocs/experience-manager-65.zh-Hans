@@ -19,7 +19,7 @@ ht-degree: 2%
 
 # 审核控制台 {#moderation-console}
 
-在AEM Communities中，管理员和社区审查方（指定为审查方的受信任社区成员）可以在Author和Publish环境中对社区内容](/help/communities/moderate-ugc.md)进行批量[审查。
+在AEM Communities中，管理员和社区审查方（指定为审查方的受信任社区成员）可以在Author和Publish环境中对社区内容[&#128279;](/help/communities/moderate-ugc.md)进行批量审查。
 
 管理员和社区审查方也可以在Publish环境中执行[上下文审核](/help/communities/in-context.md)。
 

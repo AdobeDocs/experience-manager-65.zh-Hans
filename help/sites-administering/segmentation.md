@@ -51,7 +51,7 @@ AEM可让您轻松个性化用户体验。 它还让您验证区段定义的结�
 
 利用组件浏览器，您可以添加 **AND** 和 **OR** 容器来定义区段逻辑，然后添加其他组件以比较属性和值，或参考脚本和其他区段以定义选择标准（请参阅[创建新区段](#creating-a-new-segment)），从而定义选择区段的确切场景。
 
-当整个语句的计算结果为 true 时，表示该区段已解析。如果有多个适用的区段，则还会使用&#x200B;**Boost**&#x200B;因子。 有关[提升因子的详细信息，请参阅[创建新区段](#creating-a-new-segment)。](/help/sites-administering/campaign-segmentation.md#boost-factor)
+当整个语句的计算结果为 true 时，表示该区段已解析。如果有多个适用的区段，则还会使用&#x200B;**Boost**&#x200B;因子。 有关[&#128279;](/help/sites-administering/campaign-segmentation.md#boost-factor)提升因子的详细信息，请参阅[创建新区段](#creating-a-new-segment)。
 
 >[!CAUTION]
 >
@@ -255,6 +255,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 此文件夹将显示在区段列表中。
    * 您的列排序方式将影响新文件夹在列表中的显示位置。
    * 您可以单击列标题来调整您的排序。
+
      ![新文件夹](assets/contexthub-folder.png)
 
 ### 修改现有文件夹 {#modify-folders}
@@ -322,7 +323,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 此类测试也可在内容页面上执行，并与目标内容以及相关的&#x200B;**活动**&#x200B;和&#x200B;**体验**&#x200B;相结合。
 
-如果您使用上面的主要年龄组区段示例设置了活动和体验，则可以轻松地使用活动测试区段。 有关设置活动的详细信息，请参阅有关创作目标内容](/help/sites-authoring/content-targeting-touch.md)的[文档。
+如果您使用上面的主要年龄组区段示例设置了活动和体验，则可以轻松地使用活动测试区段。 有关设置活动的详细信息，请参阅有关创作目标内容[&#128279;](/help/sites-authoring/content-targeting-touch.md)的文档。
 
 1. 在已设置目标内容的页面的编辑模式下，您可以看到已通过内容上的箭头图标来目标内容。
 

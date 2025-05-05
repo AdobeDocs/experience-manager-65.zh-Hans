@@ -173,7 +173,7 @@ AEM中标记的部分功能包括：
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-选择命名空间或其他标记后，可以通过选择**`Edit`**图标来更改标题、描述并提供标题的本地化设置。
+选择命名空间或其他标记后，可以通过选择&#x200B;**`Edit`**&#x200B;图标来更改标题、描述并提供标题的本地化设置。
 
 进行编辑后，选择&#x200B;**保存**。
 
@@ -258,7 +258,7 @@ AEM中标记的部分功能包括：
       * 例如，浏览到http://localhost:4502/useradmin
 
    * 在左窗格中，选择要为其授予[读取权限](/help/sites-administering/security.md#permissions)的组（或用户）
-   * 在右侧窗格中，找到标记命名空间的**Path**
+   * 在右侧窗格中，找到标记命名空间的&#x200B;**Path**
 
       * 例如，`/content/cq:tags/mycommunity`
 
@@ -285,7 +285,7 @@ AEM中标记的部分功能包括：
 
 以下介绍如何将&#x200B;**Animals**&#x200B;标记的`title`从英语翻译为德语和法语。
 
-首先，选择&#x200B;**Stock Photography**&#x200B;命名空间下的标记，然后选择**`Edit`**图标（请参阅[编辑标记](#editing-tags)部分）。
+首先，选择&#x200B;**Stock Photography**&#x200B;命名空间下的标记，然后选择&#x200B;**`Edit`**&#x200B;图标（请参阅[编辑标记](#editing-tags)部分）。
 
 通过“编辑标记”面板，可以选择标记标题将本地化的语言。
 

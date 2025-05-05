@@ -22,7 +22,7 @@ Lightbox是一种特殊的收藏集，可让您轻松访问资产。 您可以�
 ## 将资源添加到Lightbox {#adding-assets-to-lightbox}
 
 1. 从[!DNL Assets]用户界面中，选择要添加到Lightbox的资源。
-1. 将资源拖到Lightbox ]**区域中的**[!UICONTROL &#x200B;拖放位置。 当拖放区域变为活动状态并且其标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时释放。
+1. 将资源拖到Lightbox **区域中的**&#x200B;拖放位置。 当拖放区域变为活动状态并且其标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时释放。
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 

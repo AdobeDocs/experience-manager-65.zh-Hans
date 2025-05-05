@@ -141,7 +141,7 @@ Experience Manager中提供了以下Dynamic Media Classic组件：
 
 按&#x200B;**[!UICONTROL +]**&#x200B;按钮时，HTML5缩放组件显示较大的图像。
 
-资产底部有缩放工具。 如果要放大，请选择&#x200B;**[!UICONTROL +]**；如果要缩小，请选择&#x200B;**[!UICONTROL -]**。 点按&#x200B;**[!UICONTROL x]**&#x200B;或重置缩放箭头可将图像恢复到导入图像的原始大小。 选择对角线箭头，以便全屏显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 使用此组件，您可以配置所有[!UICONTROL Dynamic Media Classic]组件](#settings-common-to-all-scene-components)共有的[设置。
+资产底部有缩放工具。 如果要放大，请选择&#x200B;**[!UICONTROL +]**；如果要缩小，请选择&#x200B;**[!UICONTROL -]**。 点按&#x200B;**[!UICONTROL x]**&#x200B;或重置缩放箭头可将图像恢复到导入图像的原始大小。 选择对角线箭头，以便全屏显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 使用此组件，您可以配置所有[!UICONTROL Dynamic Media Classic]组件[&#128279;](#settings-common-to-all-scene-components)共有的设置。
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 
@@ -332,7 +332,7 @@ Dynamic Media Classic内容浏览器允许您直接在Experience Manager中查�
 >* 在经典UI中，您还可以搜索&#x200B;**Flash**&#x200B;和&#x200B;**FXG**。 不支持在触屏优化UI中筛选这些类型。
 >
 >* 搜索视频时，您将搜索单个演绎版。 结果会返回原始演绎版（仅&amp;amp；ast；.mp4）和编码的演绎版。
-* 搜索自适应视频集时，您将搜索文件夹和所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，则Experience Manager不会搜索子文件夹。
+>* 搜索自适应视频集时，您将搜索文件夹和所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，则Experience Manager不会搜索子文件夹。
 >
 
 **[!UICONTROL Publish状态]** — 您可以根据发布状态筛选资源： **[!UICONTROL 已取消发布]**&#x200B;或&#x200B;**[!UICONTROL 已发布]**。 如果您未选择任何&#x200B;**[!UICONTROL Publish状态]**，则默认情况下Experience Manager将搜索所有发布状态。

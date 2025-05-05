@@ -215,7 +215,7 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
 根据用例，使用以下数学表达式在&#x200B;**bills**&#x200B;数据模型对象中创建&#x200B;**usagecharges**&#x200B;子计算属性：
 
 * 使用费=呼叫费用+会议呼叫费用+短信费用+移动互联网费用+漫游国家+漫游国际+ VAS（所有这些属性都存在于帐单数据模型对象中）
-有关**usagecharges**&#x200B;子计算属性的详细信息，请参阅[规划交互式通信](/help/forms/using/planning-interactive-communications.md)。
+有关&#x200B;**usagecharges**&#x200B;子计算属性的详细信息，请参阅[规划交互式通信](/help/forms/using/planning-interactive-communications.md)。
 
 执行以下步骤，为清单数据模型对象创建计算子属性：
 
@@ -302,7 +302,7 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
 
    * 从&#x200B;**模型对象**&#x200B;下拉列表中选择&#x200B;**清单**。
 
-   * 从&#x200B;**服务**&#x200B;下拉列表中选择&#x200B;**get**。 **billplan**&#x200B;属性（即bills表的主键）已在&#x200B;**参数**节中可用。
+   * 从&#x200B;**服务**&#x200B;下拉列表中选择&#x200B;**get**。 **billplan**&#x200B;属性（即bills表的主键）已在&#x200B;**参数**&#x200B;节中可用。
 清单和客户数据模型对象分别使用billplan (bills)和customerplan (customer)属性链接。 创建这些属性之间的绑定以检索MySQL数据库中任何可用客户的计划详细信息。
 
    * 从&#x200B;**绑定到**&#x200B;下拉列表中选择&#x200B;**客户**。

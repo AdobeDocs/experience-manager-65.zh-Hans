@@ -226,7 +226,7 @@ ht-degree: 0%
 
 ![社区角色](assets/site-admin-2.png)
 
-社区成员](/help/communities/users.md)的[角色已分配了这些设置。
+社区成员[&#128279;](/help/communities/users.md)的角色已分配了这些设置。
 
 使用提前输入搜索可以轻松查找社区成员。
 

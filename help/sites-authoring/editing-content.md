@@ -333,7 +333,7 @@ ht-degree: 47%
 
 * 图像组件 - 全屏
 
-  [进入图像组件的全屏模式](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) ，可以留出更多空间来编辑图像，并显示额外的编辑选项，如“启动映射”和“重 **置缩放”******。此外，全屏模式还允许选择裁剪预设。
+  [进入图像组件的全屏模式](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) ，可以留出更多空间来编辑图像，并显示额外的编辑选项，如“启动映射”和“重 **置缩放”**&#x200B;**&#x200B;**。此外，全屏模式还允许选择裁剪预设。
 
   ![图像组件全屏](assets/screen_shot_2018-03-22at120529.png)
 

@@ -338,7 +338,7 @@ Node node = resource.adaptTo(Node.class);
 
 #### 安全性 {#security}
 
-**可授权**、{User**和&#x200B;**组**&#x200B;适应：
+**可授权**、&lbrace;User&#x200B;**和&#x200B;**&#x200B;组**&#x200B;适应：
 
 | [节点](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | 返回用户/组主节点。 |
 |---|---|

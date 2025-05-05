@@ -50,7 +50,7 @@ ht-degree: 4%
          * 若要创建添加面板按钮，请选择&#x200B;**添加实例**，然后使用![切换侧面板](assets/toggle-side-panel.png)拖放面板，或者使用&#x200B;**拖放对象或在此处选择。**
          * 若要创建删除面板按钮，请选择&#x200B;**删除实例**，然后使用![切换侧面板](assets/toggle-side-panel.png)拖放该面板，或者使用&#x200B;**拖放对象或在此处选择。**
 
-      在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”****，在代码区中：
+      在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”**&#x200B;**，在代码区中：
 
       * 若要创建添加面板按钮，请指定`this.panel.instanceManager.addInstance()`
       * 要创建删除面板按钮，请指定`this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`

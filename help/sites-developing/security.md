@@ -34,7 +34,7 @@ AEM提供的XSS保护机制基于[OWASP (Open Web Application Security Project)]
 
 >[!NOTE]
 >
->Adobe建议您始终使用AEM](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html)提供的[XSSAPI访问XSS保护API。
+>Adobe建议您始终使用AEM[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html)提供的XSSAPI访问XSS保护API。
 
 此外，Web应用程序防火墙（如Apache的[mod_security](https://www.modsecurity.org)）可以对部署环境的安全提供可靠的集中控制，并保护用户免受以前未检测到的跨站点脚本攻击。
 

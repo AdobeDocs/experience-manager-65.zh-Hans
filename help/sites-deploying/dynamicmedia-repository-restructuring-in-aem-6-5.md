@@ -17,7 +17,7 @@ ht-degree: 3%
 
 # Adobe Experience Manager 6.5中的Dynamic Media存储库重构 {#dynamic-media-repository-restructuring-in-aem}
 
-如Adobe Experience Manager 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到Experience Manager6.5的客户应使用此页面评估与影响Dynamic Media的存储库更改相关的工作量。 在Experience Manager6.5升级过程中，有些更改需要您尽心尽力，而有些则可能会推迟到将来升级。
+如Adobe Experience Manager 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到Experience Manager6.5的客户应使用此页面评估与影响Dynamic Media的存储库更改相关的工作量。 在Experience Manager6.5升级过程中，有些更改需要您尽心尽力，而有些则可能会推迟到将来升级。
 
 **在将来升级之前**
 

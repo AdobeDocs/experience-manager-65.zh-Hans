@@ -201,7 +201,7 @@ XML和JSON架构表示组织中的后端系统生成或使用数据的结构。 
 
 1. （仅限基于事件的自动保存）执行以下步骤来配置用于基于事件的自动保存的选项。
 
-   1. 在此事件&#x200B;]**之后的**[!UICONTROL &#x200B;自动保存框中，指定一个[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)事件。 每当表达式的计算结果为TRUE时，将保存表单。
+   1. 在此事件&#x200B;**之后的**&#x200B;自动保存框中，指定一个[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)事件。 每当表达式的计算结果为TRUE时，将保存表单。
 
 1. （可选）要自动保存匿名用户的内容，请选择&#x200B;**[!UICONTROL 为匿名用户启用自动保存]**&#x200B;选项，然后单击&#x200B;**[!UICONTROL 确定]**。
 

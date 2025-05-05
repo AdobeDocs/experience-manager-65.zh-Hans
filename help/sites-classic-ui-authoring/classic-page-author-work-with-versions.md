@@ -161,7 +161,7 @@ ht-degree: 19%
 
    1. 打开&#x200B;**版本控制**&#x200B;选项卡，然后单击&#x200B;**时间扭曲**（靠近sidekick底部）。
 
-   1. 使用使用时间扭曲日历](#using-the-timewarp-calendar)在[之后显示的sidekick对话框。
+   1. 使用使用时间扭曲日历[&#128279;](#using-the-timewarp-calendar)在之后显示的sidekick对话框。
 
 1. 单击&#x200B;**显示时间线** — 文档的时间线会显示；例如：
 

@@ -31,7 +31,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
-> 您可以使用表单片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html)的[配置对话框和设计对话框轻松自定义用户的片段体验。
+> 您可以使用表单片段组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/form-fragment.html)的配置对话框和设计对话框轻松自定义用户的片段体验。
 
 
 ## 创建表单片段 {#create-a-fragment}
@@ -64,7 +64,7 @@ ht-degree: 5%
 
 
 
-1. 单击“创建&#x200B;**”，然后单击“打开**”****，以在编辑模式下使用默认模板打开片段。在编辑模式下，您可以将任何自适应表单组件添加到片段。
+1. 单击“创建&#x200B;**”，然后单击“打开**”**&#x200B;**，以在编辑模式下使用默认模板打开片段。在编辑模式下，您可以将任何自适应表单组件添加到片段。
 
 <!-- For information about Adaptive Form components, see [Introduction to authoring Adaptive Forms](../../forms/using/introduction-forms-authoring.md). --> 此外，如果您选择了 XML 架构或 XDP 表单模板作为片段的表单模型，则内容查找器中将显示一个显示表单模型层次结构的新选项卡。 它可让您将表单模型元素拖放到片段上。 添加的表单模型元素被转换为表单组件，同时保留关联XDP或XSD的原始属性。
 

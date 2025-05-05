@@ -50,7 +50,7 @@ ht-degree: 79%
 
 >[!NOTE]
 >
->编辑/更新内容片段所需的删除权限包含在通过用户和/或群组管理](/help/sites-administering/security.md#managing-permissions)分配的删除权限[中。
+>编辑/更新内容片段所需的删除权限包含在通过用户和/或群组管理[&#128279;](/help/sites-administering/security.md#managing-permissions)分配的删除权限中。
 
 编辑/更新片段所需的权限需要应用于包含内容片段的节点或适当的父节点（在 `/content/dam` 下的任何级别）。当分配给此类父节点时，权限将应用于该分支中的所有节点。
 
@@ -82,7 +82,7 @@ ht-degree: 79%
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` 和 `jcr:removeChildNodes`, `jcr:removeNode`
 
-这些`remove`权限必须在CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management)内通过访问控制列表进行[管理。
+这些`remove`权限必须在CRXDE Lite[&#128279;](/help/sites-administering/user-group-ac-admin.md#access-right-management)内通过访问控制列表进行管理。
 
 `add`和`modify`权限也可以在CRXDE Lite中或使用“用户管理”控制台进行管理。
 

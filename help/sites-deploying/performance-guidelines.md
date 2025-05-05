@@ -316,11 +316,11 @@ AEM部署有三个重要的构建块。 内容作者、编辑者和批准者用�
 
 >[!NOTE]
 >
->Adobe建议您选择使用AdobeManaged Services在Azure或Amazon Web Services (AWS)上部署AEM的选项。 客户将受益于具有在这些云计算环境中部署和操作AEM的经验和技能的团队。 请参阅有关AdobeManaged Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t)的[其他文档。
+>Adobe建议您选择使用AdobeManaged Services在Azure或Amazon Web Services (AWS)上部署AEM的选项。 客户将受益于具有在这些云计算环境中部署和操作AEM的经验和技能的团队。 请参阅有关AdobeManaged Services[&#128279;](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t)的其他文档。
 >
 >有关如何在AdobeManaged Services之外的Azure或AWS上部署AEM的建议，Adobe建议直接与云提供商合作。 或者，与在您选择的云环境中支持AEM部署的Adobe合作伙伴之一合作。 选定的云提供商或合作伙伴负责其支持的架构的规模规格、设计和实施，以满足您的特定性能、负载、可扩展性和安全要求。
 >
->>另请参阅[技术要求](/help/sites-deploying/technical-requirements.md#supported-platforms)页面。
+>&#x200B;>另请参阅[技术要求](/help/sites-deploying/technical-requirements.md#supported-platforms)页面。
 
 ### 搜索 {#search-features}
 

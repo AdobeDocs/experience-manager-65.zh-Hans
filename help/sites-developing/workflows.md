@@ -53,7 +53,7 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
 
 工作流模型的版本已更新。 运行工作流实例时，它会使用和保留工作流的运行时模型（在工作流启动时可用）。
 
-在工作流模型编辑器](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)中触发&#x200B;**同步**&#x200B;时，将生成[运行时模型。
+在工作流模型编辑器[&#128279;](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)中触发&#x200B;**同步**&#x200B;时，将生成运行时模型。
 
 对发生的工作流模型或生成的运行时模型（或两者）*之后*&#x200B;启动特定实例进行的编辑不应用于该实例。
 
@@ -202,7 +202,7 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
    | 步骤 5 | 完成 |
    | 步骤 6 | 完成 |
 
-1. 运行工作流时，用户可以根据舞台名称（而不是步骤名称）查看进度。 工作流进度显示在[收件箱](/help/sites-authoring/inbox.md)中列出的工作流项目](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)的任务详细信息窗口的[工作流信息”选项卡中。
+1. 运行工作流时，用户可以根据舞台名称（而不是步骤名称）查看进度。 工作流进度显示在[收件箱](/help/sites-authoring/inbox.md)中列出的工作流项目[&#128279;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)的任务详细信息窗口的工作流信息”选项卡中。
 
 ### 工作流和Forms {#workflows-and-forms}
 

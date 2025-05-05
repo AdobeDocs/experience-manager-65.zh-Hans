@@ -275,7 +275,7 @@ function check(){
 
 要创建对话框，必须创建对话框：
 
-* 确定所得数据在有效负载](#dialog-participant-step-storing-data-in-the-payload)中的[存储位置。
+* 确定所得数据在有效负载[&#128279;](#dialog-participant-step-storing-data-in-the-payload)中的存储位置。
 * [定义对话框；包括定义用于收集和保存数据的字段](#dialog-participant-step-dialog-definition)。
 
 #### 对话框参与者步骤 — 在有效负荷中存储数据 {#dialog-participant-step-storing-data-in-the-payload}
@@ -285,6 +285,7 @@ function check(){
 * **使用有效负载**&#x200B;存储数据
 
    * 要将构件数据存储为工作流有效负荷的属性，请为构件节点的name属性的值使用以下格式：
+
      `./jcr:content/nodename`
 
    * 该数据存储在有效负荷节点的`nodename`属性中。 如果节点不包含该属性，则会创建属性。
@@ -293,6 +294,7 @@ function check(){
 * **与工作项一起存储数据**
 
    * 要将小部件数据存储为工作项元数据的属性，请为name属性的值使用以下格式：
+
      `nodename`
 
    * 该数据存储在工作项`metadata`的`nodename`属性中。 如果之后对同一有效负载使用该对话框，则数据将保留。
@@ -504,7 +506,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 >[!CAUTION]
 >
->本节介绍用于页面创作](/help/sites-authoring/default-components-foundation.md#form)的基础组件的[Forms部分。
+>本节介绍用于页面创作[&#128279;](/help/sites-authoring/default-components-foundation.md#form)的基础组件的Forms部分。
 
 #### 表单参与者步骤 — 配置 {#form-participant-step-configuration}
 

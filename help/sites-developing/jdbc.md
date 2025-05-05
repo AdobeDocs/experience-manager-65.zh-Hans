@@ -28,7 +28,7 @@ ht-degree: 0%
 
 某些数据库供应商在OSGi捆绑包中提供JDBC驱动程序，例如[MySQL](https://dev.mysql.com/downloads/connector/j/)。 如果数据库的JDBC驱动程序不能作为OSGi捆绑包使用，请获取驱动程序JAR并将其包装在OSGi捆绑包中。 捆绑包必须导出与数据库服务器交互所需的包。 捆绑包还必须导入其引用的包。
 
-以下示例使用Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)的[Bundle插件将HSQLDB驱动程序封装在OSGi捆绑包中。 POM指示插件嵌入标识为依赖项的hsqldb.jar文件。 将导出所有org.hsqldb软件包。
+以下示例使用Maven[&#128279;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)的Bundle插件将HSQLDB驱动程序封装在OSGi捆绑包中。 POM指示插件嵌入标识为依赖项的hsqldb.jar文件。 将导出所有org.hsqldb软件包。
 
 插件会自动确定要导入的包，并在包的MANIFEST.MF文件中列出这些包。 如果CQ服务器上没有任何软件包，则安装时不会启动捆绑包。 两种可能的解决方案如下：
 

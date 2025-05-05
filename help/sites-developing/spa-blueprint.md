@@ -249,7 +249,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 * 响应式网格元素带有以`aem-Grid--`为前缀的类名称
 * 响应列元素具有以`aem-GridColumn--`为前缀的类名
 * 响应式网格（也是父网格的列）被包住，例如前两个前缀未出现在同一元素上
-* 与可编辑资源对应的元素带有`data-cq-data-path`属性。 请参阅本文档中与页面编辑器](#contract-wtih-the-page-editor)的[Contract部分。
+* 与可编辑资源对应的元素带有`data-cq-data-path`属性。 请参阅本文档中与页面编辑器[&#128279;](#contract-wtih-the-page-editor)的Contract部分。
 
 ```
 <div data-cq-data-path="/content/page">

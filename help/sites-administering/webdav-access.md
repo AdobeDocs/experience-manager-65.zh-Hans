@@ -133,7 +133,7 @@ http://localhost:4502/crx/repository/staging
 
 #### Windows 8配置 {#windows-configuration}
 
-对于Windows 8，请按照Windows 7和更高版本](/help/sites-administering/webdav-access.md#windows-and-greater-configuration)的说明更改注册表项[。 但是，在执行此任务之前，必须启用Desktop Experience才能看到注册表项。
+对于Windows 8，请按照Windows 7和更高版本[&#128279;](/help/sites-administering/webdav-access.md#windows-and-greater-configuration)的说明更改注册表项。 但是，在执行此任务之前，必须启用Desktop Experience才能看到注册表项。
 
 若要启用桌面体验，请打开&#x200B;**服务器管理器**，然后打开&#x200B;**功能**，再打开&#x200B;**添加功能**，然后打开&#x200B;**桌面体验**。
 

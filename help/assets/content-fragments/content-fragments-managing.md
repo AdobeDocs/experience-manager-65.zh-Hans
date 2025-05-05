@@ -123,7 +123,7 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->其中许多是Assets](/help/assets/manage-assets.md)和/或[AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)的[标准操作。
+>其中许多是Assets[&#128279;](/help/assets/manage-assets.md)和/或[AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)的标准操作。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
@@ -364,7 +364,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 必须发布内容片段才能在发布环境中使用。 它们可以发布：
 
-* 创建后；使用Assets控制台](#actions-for-a-content-fragment-assets-console)中可用的[操作。
+* 创建后；使用Assets控制台[&#128279;](#actions-for-a-content-fragment-assets-console)中可用的操作。
 * 从[内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor)。
 * 当您[发布使用片段](/help/sites-authoring/content-fragments.md#publishing)的页面时；该片段将列在页面引用中。
 

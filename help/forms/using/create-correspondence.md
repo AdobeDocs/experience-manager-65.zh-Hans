@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 在“创建通信”用户界面中创建通信 {#create-correspondence-in-the-create-correspondence-user-interface}
 
-在Correspondence Management](../../forms/using/create-letter.md)中创建[信件模板后，最终用户/代理/索赔理算员可以在“创建信件”用户界面中打开信件，并通过输入数据、设置内容和管理附件来创建信件。 最后，理赔人或代理可以在预览模式下管理内容并提交信件。
+在Correspondence Management[&#128279;](../../forms/using/create-letter.md)中创建信件模板后，最终用户/代理/索赔理算员可以在“创建信件”用户界面中打开信件，并通过输入数据、设置内容和管理附件来创建信件。 最后，理赔人或代理可以在预览模式下管理内容并提交信件。
 
 ### 预览通信 {#preview-a-correspondence}
 

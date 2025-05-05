@@ -176,7 +176,7 @@ ht-degree: 1%
 
    Cloud Service该下拉列表列出了“工具”>“**[!UICONTROL ”>“]**”>“**[!UICONTROL ”Adobe Sign]**”中`global`文件夹中存在的云服务。 此外，该下拉列表还列出了在创建自适应表单时，在&#x200B;**[!UICONTROL 配置容器]**&#x200B;字段中选择的文件夹中存在的云服务。
 
-1. 从&#x200B;**[!UICONTROL 签名者可以签名]**&#x200B;对话框中选择签名顺序。 [!DNL Adobe Sign]个歌手可以按任意顺序依次签署自适应表单&#x200B;**** — 一个接着另一个签名者，或&#x200B;**[!UICONTROL 同时]**。
+1. 从&#x200B;**[!UICONTROL 签名者可以签名]**&#x200B;对话框中选择签名顺序。 [!DNL Adobe Sign]个歌手可以按任意顺序依次签署自适应表单&#x200B;**&#x200B;** — 一个接着另一个签名者，或&#x200B;**[!UICONTROL 同时]**。
 
    一个签名者按顺序一次收到要签名的表单。 签名者完成文档签名后，表单将发送给下一个签名者，依此类推。
 
@@ -328,8 +328,8 @@ ht-degree: 1%
 **问：**&#x200B;您可以将自适应表单嵌入到其他自适应表单中。 是否可以为嵌入式自适应表单启用[!DNL Adobe Sign]？
 **Ans：**&#x200B;否，AEM [!DNL Forms]不支持使用嵌入启用了[!DNL Adobe Sign]的自适应表单以供签名的自适应表单
 
-**问：**当我使用高级模板创建自适应表单并打开它进行编辑时，出现错误消息“电子签名或签名者配置不正确”。 显示。 如何解决错误消息？
-使用高级模板创建的**Ans：**&#x200B;自适应表单配置为使用[!DNL Adobe Sign]。 要解决此错误，请创建并选择[!DNL Adobe Sign]云配置并为自适应表单配置[!DNL Adobe Sign]签名者。
+**问：**&#x200B;当我使用高级模板创建自适应表单并打开它进行编辑时，出现错误消息“电子签名或签名者配置不正确”。 显示。 如何解决错误消息？
+使用高级模板创建的&#x200B;**Ans：**&#x200B;自适应表单配置为使用[!DNL Adobe Sign]。 要解决此错误，请创建并选择[!DNL Adobe Sign]云配置并为自适应表单配置[!DNL Adobe Sign]签名者。
 
 **问：**&#x200B;我能否在自适应表单的静态文本组件中使用[!DNL Adobe Sign]文本标记？
 **Ans：**&#x200B;是，您可以在文本组件中使用文本标记将[!DNL Adobe Sign]字段添加到启用了[记录文档](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)（仅自动生成的记录文档选项）的自适应表单。 要了解创建文本标记的过程和规则，请参阅[Adobe Sign文档](https://helpx.adobe.com/sign/using/text-tag.html)。 另请注意，自适应表单对文本标记的支持有限。 您可以使用文本标记仅创建[Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支持的字段。
@@ -350,7 +350,7 @@ ht-degree: 1%
 
 **解决方法**
 
-* 检查自适应表单中使用的Adobe Sign云服务](../../forms/using/adobe-sign-integration-adaptive-forms.md)的[配置。
+* 检查自适应表单中使用的Adobe Sign云服务[&#128279;](../../forms/using/adobe-sign-integration-adaptive-forms.md)的配置。
 * 确保[!DNL Adobe Sign]服务器上用于配置[!DNL Adobe Sign]云服务的API应用程序具有所需权限。
 * 如果您使用多个[!DNL Adobe Sign]云服务，请将所有服务的&#x200B;**[!UICONTROL oAuth URL]**&#x200B;指向相同的&#x200B;**[!UICONTROL Adobe Sign Shard]**。
 

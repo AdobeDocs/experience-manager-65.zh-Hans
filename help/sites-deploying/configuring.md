@@ -22,7 +22,7 @@ Adobe Experience Manager (AEM)安装时使用了所有参数的默认设置，�
 
 AEM有许多方面可以配置：
 
-* 某些组件通常针对每个项目安装](#primary-configuration-considerations)进行[配置，必须对其进行查看以确认它们是否适用于您的项目。
+* 某些组件通常针对每个项目安装[&#128279;](#primary-configuration-considerations)进行配置，必须对其进行查看以确认它们是否适用于您的项目。
 * [其他配置](#further-configuration-considerations)可能是通用的，但不是必需的；与功能或系统性能和稳定性相关。
 * 而其他则仅对于AEM的某些可选功能是必需的（这些功能与相应的功能一起进行记录）。
 

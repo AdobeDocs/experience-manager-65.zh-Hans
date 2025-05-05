@@ -62,7 +62,7 @@ ht-degree: 11%
 | 发现 — 浏览DAM文件夹 | 是 | [!DNL Experience Manager] Web界面和桌面操作 | |
 | 发现 — 访问DAM收藏集 | 是 | [!DNL Experience Manager] Web界面和桌面操作 | |
 | 发现 — 从DAM搜索资源 | 是 | [!DNL Experience Manager] Web界面和桌面操作 | |
-| 使用 — 打开资源 | 是 | 是 | 从Web界面](manage-assets.md#previewing-assets)或从Finder打开[ |
+| 使用 — 打开资源 | 是 | 是 | 从Web界面[&#128279;](manage-assets.md#previewing-assets)或从Finder打开 |
 | 使用 — 将来自DAM的资源放入文档中 | 是 — 嵌入 | 是 — 链接或嵌入 | [!DNL Experience Manager]桌面应用程序允许将资源作为本地文件系统中的文件访问。 本机应用程序中的这些链接由本地路径表示。 |
 | 编辑 — 打开以进行编辑 | 是 — 签出操作 | 是 — 打开操作（在网络共享中） | 默认情况下，[在AAL中签出](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)会将资源保存到用户的Creative Cloud Storage帐户(由Creative Cloud应用程序同步)。 |
 | 编辑 — DAM外部正在进行工作 | 是 — 在同步到桌面的Creative Cloud存储帐户中可用的资源。 | 是 | |

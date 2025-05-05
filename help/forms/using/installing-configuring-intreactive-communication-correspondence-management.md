@@ -91,11 +91,11 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该软件包包含A
 1. 打开 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登录 Software Distribution。
 1. 选择 **[!UICONTROL 标题菜单中的 Adobe Experience Manager]** 。
 1. **[!UICONTROL 在“筛选器]**”部分中：
-   1. 从“解决方案&#x200B;]**”下拉列表中选择**[!UICONTROL “表单&#x200B;]**”。**[!UICONTROL 
+   1. 从“解决方案&#x200B;**”下拉列表中选择**&#x200B;[!UICONTROL “表单&#x200B;]&#x200B;**”。**
    2. 选择包的版本和类型。 您还可以使用“ **[!UICONTROL 搜索下载]** ”选项来筛选结果。
 1. 选择适用于您的操作系统的包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
-1. 打开[程序包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)并单击“上传程序包&#x200B;]**”**[!UICONTROL &#x200B;以上传程序包。
-1. 选择程序包，然后单击“安装&#x200B;]**”。**[!UICONTROL 
+1. 打开[程序包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)并单击“上传程序包&#x200B;**”**&#x200B;以上传程序包。
+1. 选择程序包，然后单击“安装&#x200B;**”。**
 
    您还可以通过AEM [Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 文章中列出的直接链接下载包。
 

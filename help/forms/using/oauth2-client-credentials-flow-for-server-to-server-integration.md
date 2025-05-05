@@ -12,7 +12,7 @@ ht-degree: 68%
 
 ---
 
-# 使用OAuth 2.0客户端凭据流{#configure-salesforce-with-ouath-2.0-client-credential}集成Salesforce
+# 使用OAuth 2.0客户端凭据流集成Salesforce{#configure-salesforce-with-ouath-2.0-client-credential}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |

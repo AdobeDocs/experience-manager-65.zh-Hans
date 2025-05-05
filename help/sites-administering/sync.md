@@ -106,7 +106,7 @@ ht-degree: 1%
 
 在步骤3中使用授权用户在Author上配置Sling分发。
 
-* 每个Publish实例上的&#x200B;****
+* 每个Publish实例上的&#x200B;**&#x200B;**
 
    * 使用管理员权限登录
    * 访问[安全控制台](/help/sites-administering/security.md)
@@ -182,7 +182,7 @@ ht-degree: 1%
 
 **启用用户同步**
 
-* 每个Publish实例上的&#x200B;****：
+* 每个Publish实例上的&#x200B;**&#x200B;**：
 
    * 使用管理员权限登录
    * 访问[Web控制台](/help/sites-deploying/configuring-osgi.md)
@@ -205,7 +205,7 @@ ht-degree: 1%
 
 **启用组同步**
 
-* 每个Publish实例上的&#x200B;****：
+* 每个Publish实例上的&#x200B;**&#x200B;**：
 
    * 使用管理员权限登录
    * 访问[Web控制台](/help/sites-deploying/configuring-osgi.md)
@@ -289,7 +289,7 @@ ht-degree: 1%
 
 如果存在要在多个Publish实例之间同步的自定义数据，则：
 
-* 每个Publish实例上的&#x200B;****：
+* 每个Publish实例上的&#x200B;**&#x200B;**：
 
    * 使用管理员权限登录
    * 访问[Web控制台](/help/sites-deploying/configuring-osgi.md)
@@ -354,9 +354,11 @@ ht-degree: 1%
    * 搜索并删除名为&#x200B;*sling.id.file*&#x200B;的文件
 
       * 例如，在Linux®系统上：
+
         `rm -i $(find . -type f -name sling.id.file)`
 
       * 例如，在Windows系统上：
+
         `use windows explorer and search for *sling.id.file*`
 
 1. 启动Publish实例

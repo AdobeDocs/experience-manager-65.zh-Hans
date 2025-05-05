@@ -121,8 +121,8 @@ nosamplecontent运行模式专为生产安装而设计。
 如果您为多种运行模式定义了配置，则需要定义要在启动时使用的配置。 有多种方法可指定要使用的运行模式；分辨率的顺序为：
 
 1. [系统属性(](#using-a-system-property-in-the-start-script)
-1. [](#using-the-sling-properties-file)
-1. [](#using-the-r-option)
+1. [&#128279;](#using-the-sling-properties-file)
+1. [&#128279;](#using-the-r-option)
 1. [文件名检测](#filename-detection-renaming-the-jar-file)
 
 当您使用应用程序服务器时，还可以[在web.xml](#defining-the-run-mode-in-web-xml-with-application-server)中定义运行模式。

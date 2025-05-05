@@ -88,11 +88,11 @@ Forms Portal为占位符提供了一个语法，用于显示自定义/现成元�
 
 要包含可重复条目，请将属性&#x200B;**data-repeatable**&#x200B;的值配置为&#x200B;**true**。
 
-*在所讨论的示例中，自定义模板的顶部存在两个Div元素。 第一个带有“__FP_boxes-container”CSS类，可用作所列出表单的容器元素。 第二个具有“__FP_boxes”CSS类的模板用于基本实体，在本例中为“表单”。 Div元素中存在的&#x200B;**data-repeatable**属性的值为&#x200B;**true**.*
+*在所讨论的示例中，自定义模板的顶部存在两个Div元素。 第一个带有“__FP_boxes-container”CSS类，可用作所列出表单的容器元素。 第二个具有“__FP_boxes”CSS类的模板用于基本实体，在本例中为“表单”。 Div元素中存在的&#x200B;**data-repeatable**&#x200B;属性的值为&#x200B;**true**.*
 
 每个占位符都有一个专用的现成元数据集。 要在表单上的特定位置显示自定义元数据，请在该位置添加&#x200B;**${metadata_prop}属性**。
 
-*在本例中，元数据属性在多个实例中使用。 例如，它按规定的方式用于&#x200B;**description**、**name**、**formUrl**、**htmlStyle**、**pdfUrl**、**pdfStyle**和&#x200B;**path**。*
+*在本例中，元数据属性在多个实例中使用。 例如，它按规定的方式用于&#x200B;**description**、**name**、**formUrl**、**htmlStyle**、**pdfUrl**、**pdfStyle**&#x200B;和&#x200B;**path**。*
 
 ## 开箱即用的元数据 {#out-of-the-box-metadata}
 

@@ -38,13 +38,13 @@ ht-degree: 0%
 
 **新用户**
 
-安装Service Pack 22。 要支持Service Pack 22上的Oauth集成，您需要安装适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的[修补程序。
+安装Service Pack 22。 要支持Service Pack 22上的Oauth集成，您需要安装适用于Service Pack 22[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的修补程序。
 
 按照本文中所述的说明设置智能内容服务。
 
 **现有用户**
 
-如果您已升级到Service Pack 21，请安装适用于Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的[修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。 如果您升级到Service Pack 22，则必须安装此[适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的修补程序。
+如果您已升级到Service Pack 21，请安装适用于Service Pack 21[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。 如果您升级到Service Pack 22，则必须安装此[适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的修补程序。
 
 对于Service Pack 20及更早版本，您需要为SCS执行解决步骤以支持Oauth集成。 请参阅[OAuth凭据的智能标记疑难解答](config-oauth.md)。
 
@@ -58,7 +58,7 @@ ht-degree: 0%
 
 已启用此功能的现有内部部署用户可以继续使用智能内容服务。
 
-如果您已升级到Service Pack 21，请安装适用于Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的[修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。 如果您升级到Service Pack 22，则必须安装此[适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的修补程序。
+如果您已升级到Service Pack 21，请安装适用于Service Pack 21[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。 如果您升级到Service Pack 22，则必须安装此[适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的修补程序。
 
 对于Service Pack 20及更早版本，您需要为SCS执行解决步骤以支持Oauth集成。 请参阅[OAuth凭据的智能标记疑难解答](config-oauth.md)。
 
@@ -93,7 +93,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 ### 创建Adobe Developer Console集成 {#create-adobe-io-integration}
 
-要使用Smart Content Service API，请在Adobe Developer Console中创建集成，以获取[!DNL Experience Manager]中云配置的[!UICONTROL Assets智能标记服务设置]的[!UICONTROL API密钥](在Adobe Developer Console集成的[!UICONTROL 客户端ID]字段中生成)、[!UICONTROL 组织ID]和[!UICONTROL 客户端密钥]。
+要使用Smart Content Service API，请在Adobe Developer Console中创建集成，以获取[!DNL Experience Manager]中云配置的[!UICONTROL Assets智能标记服务设置]的[!UICONTROL API密钥] (在Adobe Developer Console集成的[!UICONTROL 客户端ID]字段中生成)、[!UICONTROL 组织ID]和[!UICONTROL 客户端密钥]。
 
 1. 在浏览器中访问[https://developer.adobe.com](https://developer.adobe.com/)。 选择适当的帐户，并确认关联的组织角色是系统&#x200B;**管理员**。
 

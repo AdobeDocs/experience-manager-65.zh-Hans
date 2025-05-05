@@ -86,7 +86,7 @@ ht-degree: 0%
 
 1. 完成所有部分后，单击&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 另存为]**，并提供设置的名称。
 
-可以自定义对各种文件类型的支持。 (请参阅[使用AEM表单编程](https://www.adobe.com/go/learn_lc_programming_11)中的“添加对其他本机文件格式的支持[](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)”。)
+可以自定义对各种文件类型的支持。 (请参阅[使用AEM表单编程](https://www.adobe.com/go/learn_lc_programming_11)中的“添加对其他本机文件格式的支持[&#128279;](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)”。)
 
 ## 更改默认设置 {#change-the-default-settings}
 
@@ -265,7 +265,7 @@ PDF Generator支持减小PDF文件大小的功能。 是否使用所有这些设
 
    >[!NOTE]
    >
-   >*如果将此选项与&#x200B;**取消嵌入某些字体**一起使用，则&#x200B;**将字体添加到取消嵌入**列表中的字体仍将被完全取消嵌入。*
+   >*如果将此选项与&#x200B;**取消嵌入某些字体**&#x200B;一起使用，则&#x200B;**将字体添加到取消嵌入**&#x200B;列表中的字体仍将被完全取消嵌入。*
 
    >[!NOTE]
    >
@@ -382,7 +382,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 ### 清理 {#clean-up}
 
-选择&#x200B;**清理**以从文档中删除不必要的项。
+选择&#x200B;**清理**&#x200B;以从文档中删除不必要的项。
 这些项目包括已过时或不需要用于文档预期用途的元素。 删除某些元素可能会严重影响PDF的功能。 默认情况下，只会选择不影响功能的元素。 如果不确定删除其他选项的影响，请使用默认选项。
 
 **压缩**

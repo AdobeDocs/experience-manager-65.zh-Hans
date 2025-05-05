@@ -68,7 +68,7 @@ ht-degree: 0%
 * 条件数据
 * 图像
 
-[](/help/forms/using/planning-interactive-communications.md)
+[&#128279;](/help/forms/using/planning-interactive-communications.md)
 
 ## 步骤2：创建表单数据模型 {#step-create-form-data-model}
 
@@ -87,7 +87,7 @@ ht-degree: 0%
 * 编辑示例数据
 * 测试表单数据模型和已配置的服务（包含测试数据）
 
-[](/help/forms/using/create-form-data-model0.md)
+[&#128279;](/help/forms/using/create-form-data-model0.md)
 
 ## 步骤3：创建文档片段 {#step-create-document-fragments}
 
@@ -101,7 +101,7 @@ ht-degree: 0%
 * 创建变量
 * 创建和应用规则
 
-[](/help/forms/using/create-document-fragments.md)
+[&#128279;](/help/forms/using/create-document-fragments.md)
 
 ## 步骤4：创建模板 {#step-create-templates}
 
@@ -119,7 +119,7 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 * 将XDP模板上传到AEM Forms服务器
 * 为Web渠道创建和启用模板
 
-[](/help/forms/using/create-templates-print-web.md)
+[&#128279;](/help/forms/using/create-templates-print-web.md)
 
 ## 步骤5：创建交互式通信 {#step-create-an-interactive-communication}
 
@@ -138,7 +138,7 @@ Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建�
 * 在Web版本的交互式通信中创建图表
 * 在Web版本的交互式通信中创建超链接
 
-[](/help/forms/using/create-interactive-communication0.md)
+[&#128279;](/help/forms/using/create-interactive-communication0.md)
 
 ## 步骤6：Publish交互式通信 {#step-publish-your-interactive-communication}
 

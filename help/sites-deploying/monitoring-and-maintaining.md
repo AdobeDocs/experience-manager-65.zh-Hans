@@ -253,7 +253,7 @@ AEM WCM会记录详细的日志。 打开包装并启动“快速入门”后，
 
 >[!NOTE]
 >
->从**system/console/status-Bundlelist**页面生成的**Download Full**包中不包含图像服务器和s7访问日志。 出于支持目的，如果您有[!DNL Dynamic Media]个问题，请在联系客户支持时附加ImageServer和s7access日志。
+>从&#x200B;**system/console/status-Bundlelist**&#x200B;页面生成的&#x200B;**Download Full**&#x200B;包中不包含图像服务器和s7访问日志。 出于支持目的，如果您有[!DNL Dynamic Media]个问题，请在联系客户支持时附加ImageServer和s7access日志。
 
 ### 激活DEBUG日志级别 {#activating-the-debug-log-level}
 

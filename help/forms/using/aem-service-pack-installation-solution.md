@@ -47,7 +47,7 @@ ht-degree: 2%
 1. 搜索`bundle.jar`并将`bundle.jar`重命名为`bundle.jar.bak`。
 1. 从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar)复制此位置的`Bundle for AEM 6.5 Forms on JEE Service Pack 15`。
 1. 启动应用程序服务器，等待日志稳定并检查捆绑包状态。
-1. 所有包都处于活动状态后，请从`system/console/bundles`在JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)上安装AEM 6.5 Forms的[片段，并等待应用程序服务器稳定下来。
+1. 所有包都处于活动状态后，请从`system/console/bundles`在JEE Service Pack 15[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)上安装AEM 6.5 Forms的片段，并等待应用程序服务器稳定下来。
 1. 停止应用程序服务器。
 1. 导航到`[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1`并删除`bundle.jar`。
 1. 将`bundle.jar.bak`重命名为`bundle.jar`。

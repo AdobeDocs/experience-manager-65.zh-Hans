@@ -263,7 +263,7 @@ Blueprint页面（在Blueprint配置中引用）为您提供使用当前(Bluepri
 
 #### 从 Live Copy 概述转出 Blueprint {#roll-out-a-blueprint-from-the-live-copy-overview}
 
-在选择Blueprint页面时，也可以从Live Copy概述](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)执行[转出操作。
+在选择Blueprint页面时，也可以从Live Copy概述[&#128279;](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)执行转出操作。
 
 1. 打开 [Live Copy 概述](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)并选择 Blueprint 页面。
 1. 从工具栏中选择&#x200B;**转出**。
@@ -560,7 +560,7 @@ Blueprint页面（在Blueprint配置中引用）为您提供使用当前(Bluepri
 
 #### 从 Live Copy 概述重置 Live Copy 页面 {#reset-a-live-copy-page-from-the-live-copy-overview}
 
-在选择Live Copy页面时，也可以从Live Copy概述](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)执行[重置操作。
+在选择Live Copy页面时，也可以从Live Copy概述[&#128279;](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)执行重置操作。
 
 1. 打开 [Live Copy 概述](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview)并选择 Live Copy 页面。
 1. 从工具栏中选择&#x200B;**重置**。

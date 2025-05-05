@@ -134,7 +134,7 @@ AEM作为单个war文件来部署。
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-如果您使用部署扫描程序安装AEM Web应用程序，则在实例的xml文件(例如，`configuration/standalone.xml)`：`deployment-timeout,``deployment-timeout`
+如果您使用部署扫描程序安装AEM Web应用程序，则在实例的xml文件(例如，`configuration/standalone.xml)`：`deployment-timeout,` `deployment-timeout`
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">

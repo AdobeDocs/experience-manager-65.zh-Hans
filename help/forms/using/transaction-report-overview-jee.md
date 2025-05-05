@@ -44,7 +44,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 ## 查看事务报告 {#view-transaction-report}
 
-启用事务报告后，有关事务计数的信息将可通过仪表板](#transaction-report-dashboard)的[事务报告以及日志文件](#transaction-report-logfile)的详细[事务报告访问。 两者均说明如下：
+启用事务报告后，有关事务计数的信息将可通过仪表板[&#128279;](#transaction-report-dashboard)的[事务报告以及日志文件](#transaction-report-logfile)的详细事务报告访问。 两者均说明如下：
 
 ### 通过仪表板的交易报告 {#transaction-report-dashboard}
 

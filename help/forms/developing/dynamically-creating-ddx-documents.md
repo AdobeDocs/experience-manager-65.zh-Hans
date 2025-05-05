@@ -129,6 +129,7 @@ ht-degree: 0%
    * 通过调用`DocumentBuilderFactory`对象的`newDocumentBuilder`方法创建Java `DocumentBuilder`对象。
    * 调用`DocumentBuilder`对象的`newDocument`方法以实例化`org.w3c.dom.Document`对象。
    * 通过调用`org.w3c.dom.Document`对象的`createElement`方法创建DDX文档的根元素。 此方法创建表示根元素的`Element`对象。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 接下来，通过调用子元素的`setAttribute`方法来为其设置值。 最后，通过调用标头元素的`appendChild`方法将元素附加到标头元素，并将子元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
+
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * 通过调用`Document`对象的`createElement`方法创建`PDFsFromBookmarks`元素。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 通过调用`PDFsFromBookmarks`元素的`setAttribute`方法为其设置值。 通过调用DDX元素的`appendChild`方法，将`PDFsFromBookmarks`元素附加到`DDX`元素。 将`PDFsFromBookmarks`元素对象作为参数传递。 以下代码行显示此应用程序逻辑：

@@ -316,6 +316,7 @@ css.newLoginContentArea {
 
 在/apps/livecycle/core/components/login.jsp.
 中修改    *以下内容
+
 ```jsp
 <div class="loginContainerBkg">
 ```

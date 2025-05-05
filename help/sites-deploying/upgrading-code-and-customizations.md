@@ -42,12 +42,12 @@ ht-degree: 0%
 
 除了可以选择升级代码库和自定义以与新的AEM版本配合使用外，6.5还可以通过[AEM 6.5](/help/sites-deploying/backward-compatibility.md)中的向后兼容性中所述的“向后兼容性”功能帮助更有效地管理您的自定义项。
 
-如上所述和下图所示，在第一步运行[模式检测器](/help/sites-deploying/pattern-detector.md)可以帮助您评估升级的整体复杂性。 它还可以帮助您决定是要以兼容模式运行，还是更新自定义项以使用所有新的AEM 6.5功能。 有关详细信息，请参阅AEM 6.5](/help/sites-deploying/backward-compatibility.md)中的[向后兼容性。
+如上所述和下图所示，在第一步运行[模式检测器](/help/sites-deploying/pattern-detector.md)可以帮助您评估升级的整体复杂性。 它还可以帮助您决定是要以兼容模式运行，还是更新自定义项以使用所有新的AEM 6.5功能。 有关详细信息，请参阅AEM 6.5[&#128279;](/help/sites-deploying/backward-compatibility.md)中的向后兼容性。
 [![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## 升级代码库 {#upgrade-code-base}
 
-### 在版本控制{#create-a-dedicated-branch-for-6.5-code-in-version-control}中为6.5代码创建专用分支
+### 在版本控制中为6.5代码创建专用分支{#create-a-dedicated-branch-for-6.5-code-in-version-control}
 
 应使用某种形式的版本控制来管理实施AEM所需的所有代码和配置。 应创建版本控制中的专用分支，以管理目标版本AEM中的代码库所需的任何更改。 此分支管理针对AEM的目标版本迭代测试代码库以及后续错误修复。
 

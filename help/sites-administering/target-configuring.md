@@ -27,7 +27,7 @@ ht-degree: 28%
 您还可以通过配置A4T Analytics Cloud配置，将Adobe Target配置为在定位内容时使用Adobe Target作为报表源。
 
 要找到云配置和框架，请通过&#x200B;**Cloud Service** > **部署** > **云**&#x200B;导航到&#x200B;**工具**。 ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-在Adobe Target下，单击**显示配置**。
+在Adobe Target下，单击&#x200B;**显示配置**。
 
 ### 已设置的目标配置属性 {#provisioned-target-configuration-properties}
 
@@ -88,9 +88,9 @@ ht-degree: 28%
    >使用AEM配置A4T时，您可能会看到缺少条目的配置引用。 要能够选择分析框架，请执行以下操作：
    >
    >1. 导航到&#x200B;**工具** > **常规** > **CRXDE Lite**。
-   1. 导航到[A4T Analytics配置对话框](#a4t-analytics-config-dialog)（见下文）
-   1. 将属性&#x200B;**disable**&#x200B;设置为&#x200B;**false**。
-   1. 单击&#x200B;**全部保存**。
+   >1. 导航到[A4T Analytics配置对话框](#a4t-analytics-config-dialog)（见下文）
+   >1. 将属性&#x200B;**disable**&#x200B;设置为&#x200B;**false**。
+   >1. 单击&#x200B;**全部保存**。
 
 #### A4T分析配置对话框 {#a4t-analytics-config-dialog}
 
@@ -108,16 +108,16 @@ ht-degree: 28%
 
 >[!NOTE]
 >
-Target库文件[AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/)是Adobe Target的新实施库，专为典型的Web实施和单页应用程序而设计。 Adobe 建议您使用 AT.js 而不是 mbox.js 作为客户端库。
+>Target库文件[AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/)是Adobe Target的新实施库，专为典型的Web实施和单页应用程序而设计。 Adobe 建议您使用 AT.js 而不是 mbox.js 作为客户端库。
 >
-AT.js 对 mbox.js 库进行了多项改进：
+>AT.js 对 mbox.js 库进行了多项改进：
 >
-* 缩短了 Web 实现的页面加载时间
-* 提高了安全性
-* 改善了针对单页应用程序的实施选项
-* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
+>* 缩短了 Web 实现的页面加载时间
+>* 提高了安全性
+>* 改善了针对单页应用程序的实施选项
+>* AT.js 包含 target.js 具有的组件，因此不再调用 target.js
 >
-您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
+>您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
 
 <!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
@@ -151,12 +151,12 @@ AT.js 对 mbox.js 库进行了多项改进：
 
    >[!NOTE]
    >
-   使用AEM配置A4T时，您可能会看到缺少条目的配置引用。 要能够选择分析框架，请执行以下操作：
+   >使用AEM配置A4T时，您可能会看到缺少条目的配置引用。 要能够选择分析框架，请执行以下操作：
    >
-   1. 导航到&#x200B;**工具** > **常规** > **CRXDE Lite**。
-   1. 导航到&#x200B;**/libs/cq/analytics/components/testandtargetpage/dialog/items/tables/items/tab1_general/items/a4tAnalyticsConfig**
-   1. 将属性&#x200B;**disable**&#x200B;设置为&#x200B;**false**。
-   1. 单击&#x200B;**全部保存**。
+   >1. 导航到&#x200B;**工具** > **常规** > **CRXDE Lite**。
+   >1. 导航到&#x200B;**/libs/cq/analytics/components/testandtargetpage/dialog/items/tables/items/tab1_general/items/a4tAnalyticsConfig**
+   >1. 将属性&#x200B;**disable**&#x200B;设置为&#x200B;**false**。
+   >1. 单击&#x200B;**全部保存**。
 
 1. 在对话框中，提供这些属性的值。
 
@@ -175,13 +175,13 @@ AT.js 对 mbox.js 库进行了多项改进：
 
    >[!NOTE]
    >
-   默认情况下，当您选择加入 Adobe Target 配置向导时，将启用“准确定位”。
+   >默认情况下，当您选择加入 Adobe Target 配置向导时，将启用“准确定位”。
    >
-   准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
+   >准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
    >
-   对于创作实例，“准确定位”始终处于启用状态。但在发布实例上，您可以通过清除云服务配置中“准确定位”旁边的复选标记来选择全局关闭准确定位 (**http://localhost:4502/etc/cloudservices.html**)。无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
+   >对于创作实例，“准确定位”始终处于启用状态。但在发布实例上，您可以通过清除云服务配置中“准确定位”旁边的复选标记来选择全局关闭准确定位 (**http://localhost:4502/etc/cloudservices.html**)。无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
    >
-   如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。直接更改这些组件。
+   >如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。直接更改这些组件。
 
 1. 单击&#x200B;**连接到Target**&#x200B;以初始化与Target的连接。 如果连接成功，则将显示消息&#x200B;**连接成功**。单击消息上的&#x200B;**确定**，然后单击对话框上的&#x200B;**确定**。
 
@@ -200,13 +200,13 @@ AT.js 对 mbox.js 库进行了多项改进：
 
    这将打开框架页面。Sidekick提供的组件表示来自可以映射的[Client Context](/help/sites-administering/client-context.md)或[ContextHub](/help/sites-developing/ch-configuring.md)的信息。
 
-   框架](assets/chlimage_1-162.png)的![组件
+   框架![&#128279;](assets/chlimage_1-162.png)的组件
 
 1. 将表示要用于映射的数据的客户端上下文组件拖动到放置目标。或者，将&#x200B;**ContextHub存储**&#x200B;组件拖动到框架。
 
    >[!NOTE]
    >
-   映射时，参数通过简单字符串传递给 mbox。无法从 ContextHub 映射数组。
+   >映射时，参数通过简单字符串传递给 mbox。无法从 ContextHub 映射数组。
 
    例如，若要使用有关网站访客的&#x200B;**配置文件数据**&#x200B;来控制Target促销活动，请将&#x200B;**配置文件数据**&#x200B;组件拖动到页面。 可用于映射到 Target 参数的配置文件数据变量随即显示。
 
@@ -218,7 +218,7 @@ AT.js 对 mbox.js 库进行了多项改进：
 
    >[!NOTE]
    >
-   同步参数是唯一方式 – 从 AEM 到 Adobe Target。
+   >同步参数是唯一方式 – 从 AEM 到 Adobe Target。
 
 此时将创建您的框架。要将框架复制到发布实例，请使用 sidekick 中的&#x200B;**激活框架**&#x200B;选项。
 
@@ -228,14 +228,14 @@ AT.js 对 mbox.js 库进行了多项改进：
 
 >[!NOTE]
 >
-可用的活动类型由以下因素决定：
+>可用的活动类型由以下因素决定：
 >
 >
-* 如果在AEM端用于连接到Adobe Target的Adobe Target租户(clientcode)上启用了&#x200B;**xt_only**&#x200B;选项，则您可以在AEM中创建&#x200B;**only** XT活动。
+>* 如果在AEM端用于连接到Adobe Target的Adobe Target租户(clientcode)上启用了&#x200B;**xt_only**&#x200B;选项，则您可以在AEM中创建&#x200B;**only** XT活动。
 >
-* 如果&#x200B;**xt_only**&#x200B;选项在Adobe Target租户(clientcode)上为&#x200B;**not**&#x200B;启用，则您可以在AEM中创建&#x200B;**XT和A/B活动**。
+>* 如果&#x200B;**xt_only**&#x200B;选项在Adobe Target租户(clientcode)上为&#x200B;**not**&#x200B;启用，则您可以在AEM中创建&#x200B;**XT和A/B活动**。
 >
-**其他说明：** **xt_only**&#x200B;选项是应用于特定Target租户(clientcode)的设置，只能在Adobe Target中直接修改。 您无法在 AEM 中启用或禁用此选项。
+>**其他说明：** **xt_only**&#x200B;选项是应用于特定Target租户(clientcode)的设置，只能在Adobe Target中直接修改。 您无法在 AEM 中启用或禁用此选项。
 
 ### 将Target框架与您的站点关联 {#associating-the-target-framework-with-your-site}
 
@@ -255,14 +255,14 @@ AT.js 对 mbox.js 库进行了多项改进：
 
    >[!NOTE]
    >
-   请确保您选择了所创建的特定&#x200B;**框架**，而不是创建该框架时所用的Target云配置。
+   >请确保您选择了所创建的特定&#x200B;**框架**，而不是创建该框架时所用的Target云配置。
 
 1. 单击&#x200B;**完成**。
 1. 激活网站的根页面，以便将其复制到发布服务器。 (请参阅[如何Publish页面](/help/sites-authoring/publishing-pages.md)。)
 
    >[!NOTE]
    >
-   如果尚未激活您附加到页面的框架，则会打开一个向导，通过该向导也可以发布该框架。
+   >如果尚未激活您附加到页面的框架，则会打开一个向导，通过该向导也可以发布该框架。
 
 ## Target连接问题疑难解答 {#troubleshooting-target-connection-problems}
 

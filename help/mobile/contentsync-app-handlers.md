@@ -63,8 +63,8 @@ ht-degree: 0%
 
 * ***类型 — 字符串 — mobilecontentlisting***
 * ***path*** — 字符串 — 保留为空，必须存在才能被视为有效的处理程序，但路径被推断为当前的ContentSync缓存。 此值将被忽略。
-* ***targetRootDirectory* -**字符串 — 要作为此处理程序的内容更新的目标根添加到路径的前缀。
-* ContentSync要执行此处理程序的&#x200B;***订单 — 长* -**订单。 此数字应设置为高于所有其他处理程序，如100。 它应在传统内容处理程序之后运行。
+* ***targetRootDirectory* -**&#x200B;字符串 — 要作为此处理程序的内容更新的目标根添加到路径的前缀。
+* ContentSync要执行此处理程序的&#x200B;***订单 — 长* -**&#x200B;订单。 此数字应设置为高于所有其他处理程序，如100。 它应在传统内容处理程序之后运行。
 
 ```xml
 {
@@ -89,7 +89,7 @@ ht-degree: 0%
 该处理程序应在AEM App Shell ContentSync配置（具有page-type=app-instance的节点）上使用
 
 * ***类型 — 字符串 — mobilecontentpackageslisting***
-* ***path **-**String*** — 应用程序Shell的路径（节点的pge-type=app-instance）。
+* ***path &#x200B;**-**String*** — 应用程序Shell的路径（节点的pge-type=app-instance）。
 * ***targetRootDirectory — 字符串*** — 要作为此处理程序的内容更新的目标根添加到路径的前缀。
 * ***顺序 — ContentSync执行此处理程序的顺序为* -**。 此数字应设置为高于所有其他处理程序，如100。 它应在传统内容处理程序之后运行。
 
@@ -123,8 +123,8 @@ ht-degree: 0%
 
 此处理程序应在AEM App Shell ContentSync配置（pge-type=[app-instance]的节点）上使用。
 
-* ***类型 — 字符串* - **widgetconfig
-* ***path **-**String*** — 任何应用程序Shell子节点（pge-type=[app-instance]的节点）的路径。
+* ***类型 — 字符串* - &#x200B;** widgetconfig
+* ***path &#x200B;**-**String*** — 任何应用程序Shell子节点（pge-type=[app-instance]的节点）的路径。
 * ***targetRootDirectory — 字符串*** — 要作为此处理程序的内容更新的目标根添加到路径的前缀。
 * ***targetIconDirectory — 字符串*** — 用于放置应用程序图标的目录
 
@@ -165,7 +165,7 @@ AEM属性是使用“cq”、“sling”或“jcr”进行命名空间的属性�
 
 * ***类型 — 字符串*** — 应用程序资产
 
-* ***path **-**String*** — 应用程序实例下存储应用程序资产的位置的路径
+* ***path &#x200B;**-**String*** — 应用程序实例下存储应用程序资产的位置的路径
 
 **mobileappoffers**&#x200B;已为Personalization用例引入新的内容同步处理程序以呈现目标内容。 “mobileappoffers”处理程序知道如何呈现由内容作者创建的关联目标选件。 mobileappoffers处理程序扩展了抽象页面更新处理程序，因此许多属性是相似的。 mobileappoffers处理程序的详细信息具有以下属性。
 
@@ -178,7 +178,7 @@ mobileappsoffers处理程序扩展mobileappspages处理程序并添加以下属�
 
 **mobileappconfig** mobileappconfig内容同步处理程序提供了一种将JSON数据插入MobileAppsConfig.json的方法。 要注册提供程序类，开发人员将在提供程序列表中添加其MobileAppsInfoProvider类。 该处理程序将对MobileAppsInfoProviders列表进行迭代，并允许提供程序将数据插入生成的json文件中。 此处理程序支持的属性列表包括：
 
-* ***path **-**String*** — 包含pge-type=app-instance的应用程序实例节点或扩展/libs/mobileapps/core/components/instance的RT的路径
+* ***path &#x200B;**-**String*** — 包含pge-type=app-instance的应用程序实例节点或扩展/libs/mobileapps/core/components/instance的RT的路径
 * ***提供程序 — 字符串*** `[]` — 完全限定的MobileAppsInfoProviders列表
 * ***targetRootDirectory — 字符串*** — 要将MobileAppsConfig.json文件写入到的目录。
 * **fileName - String** — 要将JSON写入到的文件的可选名称，默认为MobileAppsConfig.json

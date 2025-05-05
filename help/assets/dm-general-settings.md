@@ -52,7 +52,7 @@ Dynamic Media常规设置供有经验的网站开发人员和程序员使用。 
    * [Illustrator](#illustrator-tab)选项卡
 
    ![Dynamic Media常规设置页面](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media的“常规设置”页面，其中选择了&#x200B;**[!UICONTROL 图像编辑]**选项卡。*<br><br>
+   *Dynamic Media的“常规设置”页面，其中选择了&#x200B;**[!UICONTROL 图像编辑]**&#x200B;选项卡。*<br><br>
 
 1. 完成后，在页面的右上角附近，选择&#x200B;**[!UICONTROL 保存]**。
 

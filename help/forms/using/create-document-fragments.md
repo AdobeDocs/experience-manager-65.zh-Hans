@@ -164,7 +164,7 @@ ht-degree: 3%
    ![客户详细信息静态文本](assets/customer_details_static_text_new.png)
 
 1. 将光标置于&#x200B;**Mobile Number**&#x200B;字段旁边，并双击&#x200B;**customer** > **mobilenum**&#x200B;属性。
-1. 将光标置于&#x200B;**备用联系电话**&#x200B;字段旁边，并双击** customer** > **alternatemobilenumber**&#x200B;属性。
+1. 将光标置于&#x200B;**备用联系电话**&#x200B;字段旁边，并双击 **&#x200B; customer** > **alternatemobilenumber**&#x200B;属性。
 1. 将光标置于&#x200B;**Relationship Number**&#x200B;字段旁边，并双击&#x200B;**customer** > **relationshipnumber**&#x200B;属性。
 1. 选择&#x200B;**变量**&#x200B;选项卡，将光标放置在&#x200B;**Place of Supply**&#x200B;字段旁边，并双击&#x200B;**Placessupply**&#x200B;变量。
 1. 将光标置于&#x200B;**状态代码**&#x200B;字段旁边，并双击&#x200B;**状态代码**&#x200B;变量。

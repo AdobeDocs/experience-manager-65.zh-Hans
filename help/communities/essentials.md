@@ -18,7 +18,7 @@ ht-degree: 15%
 
 # 组件、功能和功能要点  {#component-function-and-feature-essentials}
 
-Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员并登录[社区站点](overview.md#communitiessites)，然后才能发布内容。 因此，[社区站点模板](sites.md)（从中创建社区站点[](sites-console.md)）设计为包括登录功能和用户配置文件、消息传送、搜索、审核和翻译。
+Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员并登录[社区站点](overview.md#communitiessites)，然后才能发布内容。 因此，[社区站点模板](sites.md)（从中创建社区站点[&#128279;](sites-console.md)）设计为包括登录功能和用户配置文件、消息传送、搜索、审核和翻译。
 
 当[社区组功能](functions.md#groups-function)包含在选定的社区站点模板中时，社区站点支持成员创建社区组。
 

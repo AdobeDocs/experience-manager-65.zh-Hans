@@ -138,4 +138,4 @@ Experience Manager允许使用多种方法来处理可用于生成FPO呈现形�
 * 要使用基于ImageMagick的配置，请将ImageMagick安装在Experience Manager所在的计算机上。
 * 要生成许多资产或整个存储库的FPO演绎版，请在低流量持续期间规划和执行工作流。 为大量资源生成FPO演绎版是一项资源密集型工作，Experience Manager服务器必须具有足够的处理能力和可用内存。
 * 有关性能和可扩展性，请参阅[微调ImageMagick](performance-tuning-guidelines.md)。
-* 有关资产的通用命令行处理，请参阅用于处理资产的命令行处理程序[](media-handlers.md)。
+* 有关资产的通用命令行处理，请参阅用于处理资产的命令行处理程序[&#128279;](media-handlers.md)。

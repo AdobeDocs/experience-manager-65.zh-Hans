@@ -457,7 +457,7 @@ FileVault为JCR存储库提供文件系统映射和版本控制。 它可用于�
 
 ## 工作流 {#workflows}
 
-您的内容通常受组织流程约束，包括各个参与者的批准和签署等步骤。 这些进程可以表示为在AEM](/help/sites-developing/workflows-models.md)中定义和开发的[工作流，然后根据需要应用于[适当的内容页面](/help/sites-administering/workflows.md)或[数字资产](/help/assets/assets-workflow.md)。
+您的内容通常受组织流程约束，包括各个参与者的批准和签署等步骤。 这些进程可以表示为在AEM[&#128279;](/help/sites-developing/workflows-models.md)中定义和开发的工作流，然后根据需要应用于[适当的内容页面](/help/sites-administering/workflows.md)或[数字资产](/help/assets/assets-workflow.md)。
 
 工作流引擎用于管理工作流的实施，以及工作流对内容的后续应用程序。
 

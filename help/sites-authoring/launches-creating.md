@@ -25,7 +25,7 @@ ht-degree: 77%
 * 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
 * 默认情况下，[Live Copy](/help/sites-administering/msm.md) 会在源页面发生更改时自动更新启动页面。您可以指定创建一个静态副本，以防止自动更改。
 
-（可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**[](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
+（可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**&#x200B;[&#128279;](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
 
 ## 创建启动项 {#creating-a-launch}
 
@@ -99,7 +99,7 @@ ht-degree: 77%
    如果您返回控制台（单击&#x200B;**完成**），则可以从以下任一位置查看（并访问）您的启动项：
 
    * [**启动项**&#x200B;控制台](/help/sites-authoring/launches.md#the-launches-console)
-   * **站点**&#x200B;控制台](/help/sites-authoring/launches.md#launches-in-references-sites-console)中的&#x200B;[**引用**
+   * **站点**&#x200B;控制台[&#128279;](/help/sites-authoring/launches.md#launches-in-references-sites-console)中的&#x200B;**引用**
 
 ### 使用新模板创建启动项 {#create-launch-with-new-template}
 

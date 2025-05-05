@@ -69,7 +69,7 @@ ht-degree: 2%
 1. [安装InDesign Server](#installing-the-indesign-server)。
 1. 如有必要，[配置Experience Manager Assets工作流](#configuring-the-aem-assets-workflow)。
 仅当默认值不适用于您的实例时，才需要执行此操作。
-1. 为InDesign Server](#configuring-the-proxy-worker-for-indesign-server)配置[Proxy Worker。
+1. 为InDesign Server[&#128279;](#configuring-the-proxy-worker-for-indesign-server)配置Proxy Worker。
 
 ### 安装[!DNL InDesign Server] {#installing-the-indesign-server}
 
@@ -199,7 +199,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 1. 保存这些更改。
 1. 要为AdobeCS6及更高版本启用多会话支持，请在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`配置下选中`enable.multisession.name`复选框。
-1. 通过将SOAP端点添加到IDS Worker配置](#configuring-the-proxy-worker-for-indesign-server)中，创建`x` IDS Worker的[池。
+1. 通过将SOAP端点添加到IDS Worker配置[&#128279;](#configuring-the-proxy-worker-for-indesign-server)中，创建`x` IDS Worker的池。
 
    如果有多台计算机运行[!DNL InDesign Server]，请为每台计算机添加SOAP端点（每台计算机的处理器数–1）。
 

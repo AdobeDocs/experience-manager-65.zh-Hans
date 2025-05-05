@@ -479,7 +479,7 @@ ht-degree: 8%
 9. 转到新创建的`clientlibs`文件夹并添加`allowProxy`和`categories`属性。
 10. 导航到`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`并创建css文件夹。
 11. 转到创建的CSS文件夹并创建一个文件。 例如，创建一个文件作为`fonts.css`，并粘贴嵌入代码以及URL。
-   ![文件夹结构](/help/forms/using/assets/fonts-add-in-crxde.png)
+    ![文件夹结构](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. 保存更改。
 
 >[!NOTE]

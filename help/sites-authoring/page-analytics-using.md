@@ -90,4 +90,4 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 >
 >由于Adobe Analytics API中的安全性更改，无法再使用AEM中包含的Activity Map版本。
 >
->现在应使用Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap插件。
+>现在应使用Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的ActivityMap插件。

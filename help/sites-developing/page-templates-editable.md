@@ -59,7 +59,7 @@ ht-degree: 4%
 
 创建可编辑模板时，您可以：
 
-1. 为模板](#template-folders)创建一个[文件夹。 此文件夹不是强制性的，但建议使用最佳实践。
+1. 为模板[&#128279;](#template-folders)创建一个文件夹。 此文件夹不是强制性的，但建议使用最佳实践。
 1. 选择[模板类型](#template-type)。 复制此类型以创建[模板定义](#template-definitions)。
 
    >[!NOTE]
@@ -132,7 +132,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->切勿在模板中输入任何必须国际化的信息。 出于内部化的目的，建议使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
+>切勿在模板中输入任何必须国际化的信息。 出于内部化的目的，建议使用核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的本地化功能。
 
 >[!NOTE]
 >
@@ -581,6 +581,7 @@ GITHUB上的代码
    * 正在设置`jcr:content`节点上的状态属性。
 
       * 例如，在：
+
         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * 定义属性：
@@ -593,6 +594,7 @@ GITHUB上的代码
 
    * [在子分支的相应页面或根页面的&#x200B;**页面属性**](/help/sites-authoring/templates.md#allowing-a-template-author)&#x200B;上定义允许的模板路径。
    * 设置属性：
+
      `cq:allowedTemplates`
 在所需分支的`jcr:content`节点上。
 

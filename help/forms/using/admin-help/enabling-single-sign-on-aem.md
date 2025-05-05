@@ -189,7 +189,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 1. 选择您的域配置，例如LDAP ，然后单击它。 您可以在“目录”中找到所有已创建的用户和组。 如果需要，您可以创建新用户或组。
    ![域管理页](/help/forms/using/assets/domain-mgmt-page.png)
 1. 单击验证，在新页上选择一个验证提供程序，如LDAP。
-1. 导航到“域管理”页，选择LDAP，然后单击&#x200B;**立即同步**以将目录与您配置的身份验证方案同步，以便访问AEM。
+1. 导航到“域管理”页，选择LDAP，然后单击&#x200B;**立即同步**&#x200B;以将目录与您配置的身份验证方案同步，以便访问AEM。
    ![同步ldap](/help/forms/using/assets/sync-ldap.png)
 1. 转到“用户管理”，然后单击“用户和组”。
 1. 搜索具有其名称的用户或组，如下图所示。

@@ -221,7 +221,7 @@ ht-degree: 5%
 
 ### 搜索[!DNL Adobe Stock]图像 {#adobe-stock1}
 
-在[!DNL Experience Manager]用户界面中，用户可以搜索Adobe Stock资源并许可所需的资源。 在Omnisearch字段中添加`Location: Adobe Stock`。 您还可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板查找所有许可或未许可的资源，或使用Adobe Stock文件号搜索特定资源。 查看 [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage)中的[管理 [!DNL Adobe Stock] 图像。
+在[!DNL Experience Manager]用户界面中，用户可以搜索Adobe Stock资源并许可所需的资源。 在Omnisearch字段中添加`Location: Adobe Stock`。 您还可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板查找所有许可或未许可的资源，或使用Adobe Stock文件号搜索特定资源。 查看 [!DNL Experience Manager][&#128279;](/help/assets/aem-assets-adobe-stock.md#usemanage)中的管理 [!DNL Adobe Stock] 图像。
 
 ### 搜索[!DNL Dynamic Media]资源 {#dynamic-media}
 
@@ -481,7 +481,7 @@ ht-degree: 5%
 | 错误、问题、症状 | 可能的原因 | 对问题的可能修复或了解 |
 |---|---|---|
 | 搜索缺少元数据的资源时，结果不正确。 | 在搜索缺少必需元数据的资源时，[!DNL Experience Manager]可能会显示一些具有有效元数据的资源。 结果基于索引的元数据属性。 | 元数据更新后，需要重新索引以反映资源元数据的正确状态。 请参阅[必需的元数据](metadata-schemas.md#define-mandatory-metadata)。 |
-| 搜索结果过多。 | 广泛搜索参数。 | 考虑限制搜索](#scope)的[范围。 使用智能标记可能会为您提供比预期更多的搜索结果。 查看带有智能标记的[搜索行为](#withsmarttags)。 |
+| 搜索结果过多。 | 广泛搜索参数。 | 考虑限制搜索[&#128279;](#scope)的范围。 使用智能标记可能会为您提供比预期更多的搜索结果。 查看带有智能标记的[搜索行为](#withsmarttags)。 |
 | 不相关或部分相关的搜索结果。 | 使用智能标记可更改搜索行为。 | 了解[智能标记后搜索如何更改](#withsmarttags)。 |
 | 没有针对资产的自动完成建议。 | 新上传的资产尚未编制索引。 当您开始在Omnisearch栏中输入搜索关键字时，元数据无法立即作为建议使用。 | [!DNL Experience Manager]将等待超时时间（默认为一小时）到期，然后再运行后台作业，为所有新上传或更新后的资源索引元数据，然后将元数据添加到建议列表中。 |
 | 无搜索结果。 | <ul><li>匹配您的查询的Assets不存在。 </li><li> 在搜索查询之前添加了空格。 </li><li> 不支持的元数据字段包含您搜索的关键字。</li><li> 在资产空闲时间进行的搜索。 </li></ul> | <ul><li>使用其他关键词进行搜索。 或者，使用智能标记或相似性搜索来改进搜索结果。 </li><li>[已知限制](#limitations)。</li><li>搜索不考虑所有元数据字段。 查看[作用域](#scope)。</li><li>稍后搜索或修改所需资源的开始时间和结束时间。</li></ul> |

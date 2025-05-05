@@ -52,11 +52,11 @@ AEM提供了各种报告来帮助您分析和监控实例的状态。 此MCM窗�
 此窗格列出了您的营销活动体验，如[新闻稿](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)和[Teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)。
 
 * **[潜在客户](#leads)**
-在这里，您可以管理您的潜在客户。 您可以创建或导入潜在客户，编辑各个潜在客户的特定详细信息，或在不再需要时删除。 您还可以将潜在客户放入不同的组（称为“列表”）。 **注意：**Adobe不打算进一步增强此功能。
+在这里，您可以管理您的潜在客户。 您可以创建或导入潜在客户，编辑各个潜在客户的特定详细信息，或在不再需要时删除。 您还可以将潜在客户放入不同的组（称为“列表”）。 **注意：**&#x200B;Adobe不打算进一步增强此功能。
 建议使用[Adobe Campaign以及与AEM](/help/sites-administering/campaign.md)的集成。
 
 * **[列表](#lists)**
-您可以在此处管理（潜在客户）列表。**注意：**Adobe不打算进一步增强此功能。
+您可以在此处管理（潜在客户）列表。**注意：**&#x200B;Adobe不打算进一步增强此功能。
 建议使用[Adobe Campaign以及与AEM](/help/sites-administering/campaign.md)的集成。
 
 * **[营销活动](#campaigns)**
@@ -175,7 +175,7 @@ AEM提供了各种报告来帮助您分析和监控实例的状态。 此MCM窗�
    * 创建&#x200B;**新……**&#x200B;体验；例如，Adobe Target优惠、Teaser和新闻稿。
    * **编辑**&#x200B;特定Teaser页面或新闻稿的详细信息（也可以使用双击）。
    * 为特定的Teaser页面或新闻稿定义&#x200B;**属性……**。
-   * **模拟**体验（Teaser页面或新闻稿）的外观。
+   * **模拟**&#x200B;体验（Teaser页面或新闻稿）的外观。
 当模拟页面打开时，您可以打开Sidekick以切换到该页面的编辑模式。
 
    * **分析……**&#x200B;为页面生成的展示次数。

@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ### 安装安全修补程序 {#install-security-hotfixes}
 
-确保您已安装Adobe](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)提供的最新[安全修补程序。
+确保您已安装Adobe[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)提供的最新安全修补程序。
 
 ### 更改AEM和OSGi Console管理帐户的默认密码 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -95,7 +95,7 @@ AEM管理帐户的密码可通过[Granite操作 — 用户](/help/sites-administ
 
 **要更改OSGi Web控制台管理员密码**：
 
-1. 使用&#x200B;**工具**、**操作**&#x200B;菜单，打开&#x200B;**Web控制台**&#x200B;并导航到&#x200B;**配置**部分。
+1. 使用&#x200B;**工具**、**操作**&#x200B;菜单，打开&#x200B;**Web控制台**&#x200B;并导航到&#x200B;**配置**&#x200B;部分。
 例如，在`<server>:<port>/system/console/configMgr`。
 1. 导航到&#x200B;**Apache Felix OSGi Management Console**&#x200B;并打开该条目。
 1. 更改&#x200B;**用户名**&#x200B;和&#x200B;**密码**。
@@ -377,7 +377,7 @@ Sling以&#x200B;*内容为中心*。 处理侧重于内容，因为每个(HTTP)�
 
 虽然不建议使用，但您可以禁用它，以防您需要旧实施以便与现有应用程序向后兼容。 为此，您必须执行以下操作：
 
-1. 转到Web控制台，并从{2**Apache Jackrabbit Oak SecurityProvider **中的属性** requiredServicePids **中删除org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName**条目。**
+1. 转到Web控制台，并从&lbrace;2&#x200B;**Apache Jackrabbit Oak SecurityProvider &#x200B;** 中的属性 **&#x200B; requiredServicePids &#x200B;** 中删除org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName&#x200B;**条目。**
 
    您还可以通过在OSGi配置中查找&#x200B;**org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** PID来找到Oak安全提供程序。
 

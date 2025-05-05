@@ -114,7 +114,7 @@ AEM Forms工作区中的“跟踪”选项卡用于显示与登录用户有关�
  </tbody>
 </table>
 
-对于任务表中的以下自定义，您需要在源代码中进行语义更改。 请参阅自定义AEM Forms工作区简介[](/help/forms/using/introduction-customizing-html-workspace.md)，了解如何使用Workspace SDK进行语义更改并从更改的来源构建缩小的包。
+对于任务表中的以下自定义，您需要在源代码中进行语义更改。 请参阅自定义AEM Forms工作区简介[&#128279;](/help/forms/using/introduction-customizing-html-workspace.md)，了解如何使用Workspace SDK进行语义更改并从更改的来源构建缩小的包。
 
 ## 更改表列及其顺序 {#changing-table-columns-and-their-order}
 

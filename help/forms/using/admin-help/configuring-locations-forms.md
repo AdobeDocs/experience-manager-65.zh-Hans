@@ -86,7 +86,7 @@ font-mapping文件用于为表单中的HTML转换创建自定义字体映射，�
 
 **默认位置：**&#x200B;这是默认选项。 如果选择该选项，则会在依赖于您正在使用的应用程序服务器的位置创建缓存：
 
-* **JBoss：**[JBoss主页]\server\[安装类型]\svcdata\FormServer\Cache
+* **JBoss：**&#x200B;[JBoss主页]\server\[安装类型]\svcdata\FormServer\Cache
 * **WebLogic：** [WebLogic主页]\user_projects\domains\[aem-forms域名]\adobe\[Forms服务器名称]\FormServer\Cache
 * **WebSphere：** [IBM主页]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 

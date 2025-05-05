@@ -99,7 +99,7 @@ AEM升级过程需要仔细处理规划、分析和执行阶段，并为每个�
 
 ![unu_cropped](assets/unu_cropped.png)
 
-可以在adobe.com](/help/release-notes/release-notes.md)的[AEM部分找到AEM 6.5中的新增功能。 请务必注意对组织中常用的UI或产品功能所做的任何更改。 浏览新功能时，请注意对您的组织有价值的任何功能。 查看AEM 6.5中的更改后，为作者制定培训计划。 这可能涉及使用免费提供的资源，如通过[Adobe数字学习服务](https://learning.adobe.com/)提供的帮助功能视频或正式培训。
+可以在adobe.com[&#128279;](/help/release-notes/release-notes.md)的AEM部分找到AEM 6.5中的新增功能。 请务必注意对组织中常用的UI或产品功能所做的任何更改。 浏览新功能时，请注意对您的组织有价值的任何功能。 查看AEM 6.5中的更改后，为作者制定培训计划。 这可能涉及使用免费提供的资源，如通过[Adobe数字学习服务](https://learning.adobe.com/)提供的帮助功能视频或正式培训。
 
 ### 创建测试计划 {#creating-a-test-plan}
 

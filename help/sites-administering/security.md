@@ -351,7 +351,7 @@ AEM WCM使用访问控制列表(ACL)来组织应用于各种页面的权限。
 >
 >为了模拟非管理员用户的工作方式，模拟者（在上述示例中为user-B）需要在`/home/users`路径中具有“读取”权限。
 >
->查看AEM](/help/sites-administering/security.md#permissions-in-aem)中的[权限。
+>查看AEM[&#128279;](/help/sites-administering/security.md#permissions-in-aem)中的权限。
 
 >[!CAUTION]
 >
@@ -418,7 +418,7 @@ AEM WCM使用访问控制列表(ACL)来组织应用于各种页面的权限。
 | 成员 | 仅适用于组。 列出特定组的成员。 查看[成员](#members-adding-users-or-groups-to-a-group)。 |
 | 权限 | 您可以将权限分配给用户或组。 允许您控制以下内容：<ul><li>与特定页面/节点相关的权限。 请参阅[设置权限](#setting-permissions)。 </li><li>与创建和删除页面以及层次结构修改相关的权限。???允许您[分配权限](#settingprivileges)，例如层次结构修改，从而允许您创建和删除页面。</li><li>根据路径与[复制权限](#setting-replication-privileges)相关的权限（通常从作者到发布）。</li></ul> |
 | 模拟者 | 允许其他用户模拟帐户。 当您需要用户代表其他用户进行操作时非常有用。 请参阅[模拟用户](#impersonating-another-user)。 |
-| 首选项 | 设置组或用户](#setting-user-and-group-preferences)的[首选项。 例如，语言首选项。 |
+| 首选项 | 设置组或用户[&#128279;](#setting-user-and-group-preferences)的首选项。 例如，语言首选项。 |
 
 ### 筛选用户和组 {#filtering-users-and-groups}
 
@@ -638,7 +638,7 @@ AEM提供了三种从组中删除用户或组的不同方式：
 >
 >* 应用到组的任何复制权限都适用于该组中的所有用户。
 >* 用户的复制权限将取代组的复制权限。
->* 允许复制权限的优先级高于拒绝复制权限。 有关详细信息，请参阅AEM](#permissions-in-aem)中的[权限。
+>* 允许复制权限的优先级高于拒绝复制权限。 有关详细信息，请参阅AEM[&#128279;](#permissions-in-aem)中的权限。
 >
 
 要设置复制权限，请执行以下操作：

@@ -32,7 +32,7 @@ ht-degree: 1%
 
 要设置您选择的徽标图像，请执行以下操作：
 
-1. 在CRX](#creatingfolderstructure)中创建相应的[文件夹结构。
+1. 在CRX[&#128279;](#creatingfolderstructure)中创建相应的文件夹结构。
 1. [将新的徽标文件](#uploadlogo)上传到您在CRX中创建的文件夹中。
 
 1. [在CRX上设置CSS](#createcss)以引用新徽标。
@@ -165,7 +165,7 @@ ht-degree: 1%
    创建customcss.css文件的步骤：
 
    1. 右键单击&#x200B;**css**&#x200B;文件夹并选择&#x200B;**创建>创建文件**。
-   1. 在“新建文件”对话框中，将CSS的名称指定为`customcss.css`（不能使用其他文件名），然后单击“确定”****。
+   1. 在“新建文件”对话框中，将CSS的名称指定为`customcss.css`（不能使用其他文件名），然后单击“确定”**&#x200B;**。
    1. 将以下代码添加到新创建的css文件中。 在代码的content：url中，指定您上传到CRXDE中的imgs文件夹的图像名称。
 
       ```css

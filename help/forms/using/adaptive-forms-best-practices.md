@@ -360,7 +360,7 @@ AEM提供可用于本地化自适应表单的翻译工作流。 有关信息，�
 
 * 通过Web服务器压缩模块启用HTML。 有关详细信息，请参阅[AEM Forms服务器的性能优化](/help/forms/using/performance-tuning-aem-forms.md)。
 * 增加大型表单的每个请求配置的调用。 请参阅[优化大型复杂表单的性能](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms)。
-* 创建由错误处理程序](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html)显示的[自定义错误页面。
+* 创建由错误处理程序[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html)显示的自定义错误页面。
 * 安全的AEM Forms服务器。
 
    * 使用`nosamplecontent`运行模式以确保在生产服务器上没有部署示例内容和示例用户。 请参阅[在生产就绪模式下运行AEM](/help/sites-administering/production-ready.md)。
@@ -376,7 +376,7 @@ AEM提供可用于本地化自适应表单的翻译工作流。 有关信息，�
 
 * **存储草稿数据**：如果使用自适应表单的草稿功能，则应实施自定义服务提供接口(SPI)，以将草稿数据存储到更安全的存储（如数据库）。 有关详细信息，请参阅将草稿和提交组件与数据库集成的[示例](/help/forms/using/integrate-draft-submission-database.md)。
 
-* **存储提交数据**：如果您使用表单门户提交存储，则应该实施自定义SPI以将提交数据存储在数据库中。 有关示例集成，请参阅将草稿和提交组件与数据库](/help/forms/using/integrate-draft-submission-database.md)集成的[示例。
+* **存储提交数据**：如果您使用表单门户提交存储，则应该实施自定义SPI以将提交数据存储在数据库中。 有关示例集成，请参阅将草稿和提交组件与数据库[&#128279;](/help/forms/using/integrate-draft-submission-database.md)集成的示例。
 
   您还可以编写自定义提交操作，将表单数据和附件存储在安全存储中。 有关详细信息，请参阅[为自适应表单编写自定义提交操作](/help/forms/using/custom-submit-action-form.md)。
 
@@ -397,11 +397,11 @@ AEM提供可用于本地化自适应表单的翻译工作流。 有关信息，�
 
 AEM Forms规则编辑器提供了一个用于创建和管理规则的可视化界面，无需进行大量编码。 这对于不具备高级编程技能但需要在表单中定义和维护业务规则的业务用户或表单设计人员特别有用，这里我们将讨论一些使用案例，其中规则编辑器允许您：
 
-* <!-- Allows you --> 为表单定义业务规则，而无需大量的编程。
-* <!-- Use the Rule Editor when you need --> 在表单中实施条件逻辑。 这包括显示或隐藏表单元素、根据特定条件更改字段值或动态更改表单的行为。
-* <!--When you want --> 要对表单提交强制实施数据验证规则，可以使用规则编辑器来定义验证条件。
-* <!-- When you need --> 要将表单与外部数据源(FDM)或服务集成，规则编辑器可帮助定义用于在表单交互期间获取、显示或处理数据的规则。
-* <!-- If you want -->要创建响应用户操作的动态和交互式表单，您可以使用规则编辑器定义实时控制表单元素行为的规则。
+* &#x200B;<!-- Allows you --> 为表单定义业务规则，而无需大量的编程。
+* &#x200B;<!-- Use the Rule Editor when you need --> 在表单中实施条件逻辑。 这包括显示或隐藏表单元素、根据特定条件更改字段值或动态更改表单的行为。
+* &#x200B;<!--When you want --> 要对表单提交强制实施数据验证规则，可以使用规则编辑器来定义验证条件。
+* &#x200B;<!-- When you need --> 要将表单与外部数据源(FDM)或服务集成，规则编辑器可帮助定义用于在表单交互期间获取、显示或处理数据的规则。
+* &#x200B;<!-- If you want -->要创建响应用户操作的动态和交互式表单，您可以使用规则编辑器定义实时控制表单元素行为的规则。
 
 规则编辑器适用于AEM Forms Foundation组件和核心组件。
 

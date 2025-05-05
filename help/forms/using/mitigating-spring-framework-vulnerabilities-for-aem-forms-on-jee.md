@@ -71,7 +71,7 @@ ht-degree: 1%
 - `spring-core-<version>.jar`
 - `spring-web-<version>.jar`
 
-   - **对于WebLogic或WebSphere：**从EAR的根目录中删除以下JAR文件：
+   - **对于WebLogic或WebSphere：**&#x200B;从EAR的根目录中删除以下JAR文件：
 - `spring-core-<version>.jar`
 - `spring-web-<version>.jar`
 

@@ -120,6 +120,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 1. 连接成功后，设置以下内容。 带有星号(*)的标题是必需的：
 
    * **[!UICONTROL 公司]** - Dynamic Media帐户的名称。
+
      >[!IMPORTANT]
      >
      >一个Experience Manager实例仅支持Cloud Service中的一个Dynamic Media配置；请勿添加多个配置。 一个Experience Manager实例上的多个Dynamic Media配置是&#x200B;_不支持_&#x200B;或Adobe建议不支持。
@@ -146,7 +147,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * **[!UICONTROL Dynamic Media同步模式]**
       * **[!UICONTROL 默认启用]** — 除非您特别将文件夹标记为排除，否则默认情况下该配置将应用于所有文件夹。<!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 默认情况下已禁用]** — 在您明确将选定文件夹标记为同步到Dynamic Media之前，该配置不会应用于任何文件夹。
-要将选定的文件夹标记为同步到Dynamic Media，请选择一个资源文件夹，然后在工具栏上选择**[!UICONTROL 属性]**。 在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉列表中选择以下三个选项。 完成后，选择&#x200B;**[!UICONTROL 保存]**。 *请记住：如果您选择了更早的&#x200B;**[!UICONTROL 同步所有内容]**，则这三个选项将不可用。*&#x200B;另请参阅[在Dynamic Media的文件夹级别使用选择性Publish](/help/assets/selective-publishing.md)。
+要将选定的文件夹标记为同步到Dynamic Media，请选择一个资源文件夹，然后在工具栏上选择&#x200B;**[!UICONTROL 属性]**。 在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉列表中选择以下三个选项。 完成后，选择&#x200B;**[!UICONTROL 保存]**。 *请记住：如果您选择了更早的&#x200B;**[!UICONTROL 同步所有内容]**，则这三个选项将不可用。*&#x200B;另请参阅[在Dynamic Media的文件夹级别使用选择性Publish](/help/assets/selective-publishing.md)。
          * **[!UICONTROL 已继承]** — 文件夹中没有显式同步值；相反，该文件夹会从其上级文件夹之一或云配置中的默认模式继承同步值。 继承的详细状态通过工具提示显示。
          * **[!UICONTROL 为子文件夹启用]** — 包含此子树中的所有内容，以便同步到Dynamic Media。 文件夹特定的设置会覆盖云配置中的默认模式。
          * **[!UICONTROL 已对子文件夹禁用]** — 排除此子树中的所有内容，禁止同步到Dynamic Media。
@@ -160,7 +161,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 1. 为了在发布Dynamic Media内容之前安全地预览该内容，Experience Manager作者使用基于令牌的验证，因此默认情况下，Experience Manager作者会预览Dynamic Media内容。 但是，您可以“允许列表”更多IP，以便让用户可以安全地预览内容。 要在Experience Manager中设置此操作，请参阅[为图像服务器配置Dynamic Media Publish设置 — 安全选项卡](/help/assets/dm-publish-settings.md#security-tab)。
 
-如果要进一步自定义配置，如启用ACL（访问控制列表）权限，您可以选择在Dynamic Media - Scene7模式](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)的[（可选）配置高级设置下完成任何任务。
+如果要进一步自定义配置，如启用ACL（访问控制列表）权限，您可以选择在Dynamic Media - Scene7模式[&#128279;](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)的（可选）配置高级设置下完成任何任务。
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.

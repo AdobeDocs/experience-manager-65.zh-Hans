@@ -289,7 +289,7 @@ Apache Sling作业使用者管理器服务提供主题允许列表和阻止列�
 
 ### 创建反向代理 {#creating-the-reverse-agent}
 
-1. 在作者上创建&#x200B;**反向复制代理**。 （请参阅有关复制代理](/help/sites-deploying/replication.md)的[文档。） 指定任何&#x200B;**标题**。 **名称**&#x200B;必须遵循命名约定。
+1. 在作者上创建&#x200B;**反向复制代理**。 （请参阅有关复制代理[&#128279;](/help/sites-deploying/replication.md)的文档。） 指定任何&#x200B;**标题**。 **名称**&#x200B;必须遵循命名约定。
 1. 使用以下属性创建代理：
 
    | 属性 | 价值 |
@@ -302,7 +302,7 @@ Apache Sling作业使用者管理器服务提供主题允许列表和阻止列�
 
 ### 创建发件箱代理 {#creating-the-outbox-agent}
 
-1. 在辅助进程实例上创建&#x200B;**复制代理**。 （请参阅有关复制代理](/help/sites-deploying/replication.md)的[文档。） 指定任何&#x200B;**标题**。 **名称**&#x200B;必须为`offloading_outbox`。
+1. 在辅助进程实例上创建&#x200B;**复制代理**。 （请参阅有关复制代理[&#128279;](/help/sites-deploying/replication.md)的文档。） 指定任何&#x200B;**标题**。 **名称**&#x200B;必须为`offloading_outbox`。
 1. 使用以下属性创建代理。
 
    | 属性 | 价值 |

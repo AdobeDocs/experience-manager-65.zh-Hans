@@ -89,7 +89,7 @@ ht-degree: 0%
 
    * 服务器群集 — `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. 
+1. &#x200B;
    * **对于lc_&lt;dbaname/tunkey>.xml文件中的单个服务器**，在&lt;security-realms>部分后添加以下内容：
 
    ```xml

@@ -210,8 +210,8 @@ ht-degree: 3%
    ![搜索结果中的列表视图和筛选器](/help/assets/assets-dm/select-publish-search-result.png)
 
 1. 在左侧面板中，展开&#x200B;**[!UICONTROL 状态]**，然后展开&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;搜索谓词。
-1. 使用&#x200B;**[!UICONTROL 已发布]**&#x200B;和&#x200B;**[!UICONTROL 未发布]**复选框可根据Dynamic Media资源的已发布状态进一步优化搜索结果。
-或者，您可以将这些复选框与**[!UICONTROL Publish]**&#x200B;搜索谓词一起使用，以优化&#x200B;**[!UICONTROL 已发布]**&#x200B;和&#x200B;**[!UICONTROL 未发布]** Experience Manager资源的搜索结果。
+1. 使用&#x200B;**[!UICONTROL 已发布]**&#x200B;和&#x200B;**[!UICONTROL 未发布]**&#x200B;复选框可根据Dynamic Media资源的已发布状态进一步优化搜索结果。
+或者，您可以将这些复选框与&#x200B;**[!UICONTROL Publish]**&#x200B;搜索谓词一起使用，以优化&#x200B;**[!UICONTROL 已发布]**&#x200B;和&#x200B;**[!UICONTROL 未发布]** Experience Manager资源的搜索结果。
 1. 执行下列操作之一：
    * 选择要发布或取消发布的一个或多个资源。
    * 在&#x200B;**[!UICONTROL 搜索结果]**&#x200B;页面的右上角附近，选择&#x200B;**[!UICONTROL 全选]**。
@@ -264,10 +264,11 @@ ht-degree: 3%
 1. 在Experience Manager中，在页面的左上角，选择Experience Manager徽标以访问全局导航控制台。 在页面的左侧，选择“导航”图标（位于“工具”图标的正上方），然后选择&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**。
 1. 在&#x200B;**[!UICONTROL 卡片视图]**、**[!UICONTROL 列视图]**&#x200B;或&#x200B;**[!UICONTROL 列表视图]**（下面的屏幕快照显示&#x200B;**[!UICONTROL 列表视图]**）中，打开包含您已发布或取消发布的资产的文件夹。
 1. 选择一个资产，使其带有复选标记显示。 例如，请参阅下面的屏幕截图。
-1. 在页面的左上角附近，从下拉菜单中选择&#x200B;**[!UICONTROL 时间轴]**。 左侧面板中的&#x200B;**[!UICONTROL 状态]**区域显示所选资源的发布状态。
-当您使用**[!UICONTROL 列表视图]**&#x200B;时，会出现一列&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;的额外发布状态。
+1. 在页面的左上角附近，从下拉菜单中选择&#x200B;**[!UICONTROL 时间轴]**。 左侧面板中的&#x200B;**[!UICONTROL 状态]**&#x200B;区域显示所选资源的发布状态。
+当您使用&#x200B;**[!UICONTROL 列表视图]**&#x200B;时，会出现一列&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;的额外发布状态。
    * 默认情况下，配置为同步到Dynamic Media的文件夹显示&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;列。
    * 配置为同步到Dynamic Media的&#x200B;*非*文件夹不显示Dynamic Media列。
+
      ![列表视图和时间线](/help/assets/assets-dm/selective-publish-status-timeline.png)
 
 ## 选择性Publish故障诊断 {#selective-publish-troubleshoot}

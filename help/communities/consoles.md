@@ -26,7 +26,7 @@ AEM Communities的控制台可在全局导航面板的创作环境中使用，�
 * 管理[社区成员](members.md)
 * [正在审核](moderate-ugc.md)用户生成的内容(UGC)
 * 创建[自定义徽章](badges.md)
-* 正在为UGC](srp-config.md)配置[默认存储
+* 正在为UGC[&#128279;](srp-config.md)配置默认存储
 
 当[UGC存储](working-with-srp.md)配置为由Author和Publish环境共享的公用存储时，可在Author和Publish环境中使用的[审核控制台](moderation.md)在UGC的单独实例上运行。
 

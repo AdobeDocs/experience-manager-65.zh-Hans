@@ -41,7 +41,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features)已弃用用于导入登陆页面的设计导入程序[。
+>AEM 6.5[&#128279;](/help/release-notes/deprecated-removed-features.md#deprecated-features)已弃用用于导入登陆页面的设计导入程序。
 
 ## 准备HTML以进行导入 {#preparing-the-html-for-import}
 
@@ -531,7 +531,7 @@ data-cq-component中的路径应为组件的resourceType。
 >
 >例如，如果默认配置为
 >
->>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >您需要将`CQ_DESIGN_PATH`替换为搜索模式中的`VIPURL`，则您的搜索模式应如下所示：
 >

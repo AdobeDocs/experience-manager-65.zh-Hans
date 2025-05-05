@@ -165,7 +165,7 @@ ht-degree: 0%
 
    为员工数据源配置的读写服务
 
-1. 为读取服务参数选择![aem_6_3_edit](assets/aem_6_3_edit.png)以将参数绑定到用户配置文件属性、请求属性或文本值](#bindargument)，并指定绑定值。[
+1. 为读取服务参数选择![aem_6_3_edit](assets/aem_6_3_edit.png)以将参数绑定到用户配置文件属性、请求属性或文本值[&#128279;](#bindargument)，并指定绑定值。
 1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存参数，选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存属性，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型。
 
 ### 绑定读取服务参数 {#bindargument}

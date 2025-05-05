@@ -51,7 +51,7 @@ ht-degree: 3%
 
 #### Java™开发 {#java-development}
 
-* Uberjar](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)现在有[两个版本，一个是带有未标记为弃用的公共接口的推荐版本，另一个是包含标记为弃用的接口的版本。
+* Uberjar[&#128279;](/help/sites-developing/ht-projects-maven.md#experience-manager-api-dependencies)现在有两个版本，一个是带有未标记为弃用的公共接口的推荐版本，另一个是包含标记为弃用的接口的版本。
 
 #### 用户界面 {#user-interface}
 
@@ -118,11 +118,11 @@ ht-degree: 3%
 
 #### Headless内容管理 {#headless-content-management}
 
-AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务自2008年以来一直使用[SlingGET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)和[POSTServlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)。 内容服务（[Sling模型导出器](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-hans)）是在AEM 6.3中引入的，它是AEM SJ SDK用于水合单页应用程序的方法。 适用于Assets](/help/assets/mac-api-assets.md)的[HTTP API是针对AEM 6.5扩展的CRUD API。
+AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务自2008年以来一直使用[SlingGET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)和[POSTServlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)。 内容服务（[Sling模型导出器](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-hans)）是在AEM 6.3中引入的，它是AEM SJ SDK用于水合单页应用程序的方法。 适用于Assets[&#128279;](/help/assets/mac-api-assets.md)的HTTP API是针对AEM 6.5扩展的CRUD API。
 
 新的HTTP API功能：
 
-* 向Assets](/help/assets/assets-api-content-fragments.md)的HTTP API添加了[内容片段支持，用于创建、更新、读取和删除片段。
+* 向Assets[&#128279;](/help/assets/assets-api-content-fragments.md)的HTTP API添加了内容片段支持，用于创建、更新、读取和删除片段。
 * 通过[内容片段列表核心组件](https://www.aemcomponents.dev)的内容服务公开内容片段的列表。
 * [核心组件库](https://www.aemcomponents.dev)，显示每个组件的默认Content Services JSON输出
 
@@ -157,9 +157,11 @@ AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务�
      ```
 
    * 具有data-sly-set的变量声明：
+
      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
    * 列出并重复控制参数：开始、步骤、结束：
+
      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * data-sly-unwrap的标识符：
@@ -204,7 +206,7 @@ AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务�
 * 通过在RTE（全屏视图）中选择文本来添加[注释/批注](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [通过参考边栏并排比较内容片段的版本](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions)
 * 资产下载报表现在会显示相应的内容片段
-* 通过/api.json向Assets HTTP API](/help/assets/assets-api-content-fragments.md)添加[内容片段支持。 有用于创建、更新、读取和删除内容片段的API。
+* 通过/api.json向Assets HTTP API[&#128279;](/help/assets/assets-api-content-fragments.md)添加内容片段支持。 有用于创建、更新、读取和删除内容片段的API。
 
 #### 体验片段 {#experience-fragments}
 
@@ -255,7 +257,7 @@ AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务�
 
 #### AEM和Commerce {#aem-commerce}
 
-自AEM 6.4以来，Commerce integration framework的改进速度更快。使用Commerce integration framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)从[AEM和Adobe Commerce集成了解详情。
+自AEM 6.4以来，Commerce integration framework的改进速度更快。使用Commerce integration framework[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)从AEM和Adobe Commerce集成了解详情。
 
 #### Communities加载项 {#communities-add-on}
 
@@ -332,7 +334,7 @@ AEM 6.5引入了以下功能和增强功能，以提高AEM用户、DAM角色以�
 
 [!DNL Adobe Asset Link]在内容创建过程中加强了创意专业人士与营销人员之间的协作。 创意人员无需离开他们最熟悉的应用，即可访问[!DNL Experience Manager Assets]中存储的内容。 创意人员可以使用[!DNL Adobe Photoshop]、[!DNL Adobe Illustrator]和[!DNL Adobe InDesign]应用中的应用内面板无缝浏览、搜索、签出和签入资源。
 
-[!DNL Adobe Asset Link]是企业](https://www.adobe.com/cn/creativecloud/business/enterprise.html)产品[Creative Cloud的一部分。 有关它的详细信息，包括[!DNL Experience Manager]部署的必要配置，请参阅[AdobeAsset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
+[!DNL Adobe Asset Link]是企业[&#128279;](https://www.adobe.com/cn/creativecloud/business/enterprise.html)产品Creative Cloud的一部分。 有关它的详细信息，包括[!DNL Experience Manager]部署的必要配置，请参阅[AdobeAsset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
 
 ![在Adobe Photoshop中搜索资源](/help/release-notes/assets/asset_search_photoshop.png)
 

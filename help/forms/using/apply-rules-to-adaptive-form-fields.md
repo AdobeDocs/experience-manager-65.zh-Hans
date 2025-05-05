@@ -55,11 +55,11 @@ ht-degree: 0%
 
 1. 在&#x200B;**[!UICONTROL THEN]**&#x200B;语句中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 调用服务]**。
 1. 从&#x200B;**[!UICONTROL 选择]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 检索送货地址]**&#x200B;服务。
-1. 将&#x200B;**[!UICONTROL 客户ID]**&#x200B;字段从“表单对象”选项卡拖放到&#x200B;**[!UICONTROL 放置对象，或在**[!UICONTROL &#x200B;输入&#x200B;]**框中选择此处]**&#x200B;字段。
+1. 将&#x200B;**[!UICONTROL 客户ID]**&#x200B;字段从“表单对象”选项卡拖放到&#x200B;**[!UICONTROL 放置对象，或在**&#x200B;[!UICONTROL &#x200B;输入&#x200B;]&#x200B;**框中选择此处]**&#x200B;字段。
 
    ![dropobjectstoinputfield-retrievedata](assets/dropobjectstoinputfield-retrievedata.png)
 
-1. 从“表单对象”选项卡中将&#x200B;**[!UICONTROL 客户ID、名称、送货地址、状态和邮政编码]**&#x200B;字段拖放到&#x200B;**[!UICONTROL 放置对象或在**[!UICONTROL &#x200B;输出&#x200B;]**框中选择]**&#x200B;字段。
+1. 从“表单对象”选项卡中将&#x200B;**[!UICONTROL 客户ID、名称、送货地址、状态和邮政编码]**&#x200B;字段拖放到&#x200B;**[!UICONTROL 放置对象或在**&#x200B;[!UICONTROL &#x200B;输出&#x200B;]&#x200B;**框中选择]**&#x200B;字段。
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
@@ -89,7 +89,7 @@ ht-degree: 0%
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. 从[!UICONTROL 表单对象]选项卡中将&#x200B;**[!UICONTROL 送货地址、状态和邮政编码]**&#x200B;字段拖放到&#x200B;**[!UICONTROL 放置对象的相应tablename .property（例如，customerdetails .shippingAddress）或在**[!UICONTROL  INPUT ]**框中选择此处]**&#x200B;字段。 以tablename为前缀的所有字段（例如，此用例中的customerdetails）用作更新服务的输入数据。 这些字段中提供的所有内容都会在数据源中进行更新。
+1. 从[!UICONTROL 表单对象]选项卡中将&#x200B;**[!UICONTROL 送货地址、状态和邮政编码]**&#x200B;字段拖放到&#x200B;**[!UICONTROL 放置对象的相应tablename .property（例如，customerdetails .shippingAddress）或在**&#x200B;[!UICONTROL &#x200B; INPUT &#x200B;]&#x200B;**框中选择此处]**&#x200B;字段。 以tablename为前缀的所有字段（例如，此用例中的customerdetails）用作更新服务的输入数据。 这些字段中提供的所有内容都会在数据源中进行更新。
 
    >[!NOTE]
    >

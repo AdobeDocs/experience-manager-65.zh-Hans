@@ -84,6 +84,7 @@ ht-degree: 1%
 * 所有内容都存储在资源的`jcr:content/data`节点下：
 
    * 元素数据存储在主子节点下：
+
      `jcr:content/data/master`
 
    * 变体存储在子节点下，该子节点带有变体的名称：

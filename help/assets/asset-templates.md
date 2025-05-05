@@ -127,7 +127,7 @@ ht-degree: 0%
    >* 创建[!DNL InDesign]模板时嵌入图像（请参阅[关于链接和嵌入的图形](https://helpx.adobe.com/indesign/using/graphics-links.html)）。
    >* 将[!DNL Experience Manager]装载到本地文件系统，然后将缺少的图标与[!DNL Experience Manager]中的现有资源进行映射。
    >
-   >有关使用[!DNL InDesign]文档的更多信息，请参阅使用Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)中的InDesign文档的[最佳实践。
+   >有关使用[!DNL InDesign]文档的更多信息，请参阅使用Experience Manager[&#128279;](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)中的InDesign文档的最佳实践。
 
 1. 要为宣传册生成PDF演绎版，请选择对话框中的Acrobat选项，然后单击&#x200B;**[!UICONTROL 继续]**。
 1. 宣传品部分是在您开始使用的文件夹中创建的。 要查看格式副本，请打开宣传品，然后从GlobalNav列表中选择&#x200B;**[!UICONTROL 格式副本]**。

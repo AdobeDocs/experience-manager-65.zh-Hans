@@ -221,7 +221,7 @@ MSM在源资产及其活动副本之间维护实时关系，以便：
 
 | 在[!DNL Experience Manager]界面中的位置 | 何时及为何使用 | 使用方法 |
 |---|---|---|
-| [!UICONTROL 个引用]边栏 | 选择源后快速同步。 | 查看源](#refrailsource)的“引用”边栏中的[快速操作 |
+| [!UICONTROL 个引用]边栏 | 选择源后快速同步。 | 查看源[&#128279;](#refrailsource)的“引用”边栏中的快速操作 |
 | [!UICONTROL 属性]页面中的工具栏 | 在已打开Live Copy属性时启动同步。 | 请参阅[同步Live Copy](#sync-lc) |
 | [!UICONTROL Live Copy概述]控制台 | 在选择源文件夹或[!UICONTROL Live Copy概述]控制台已打开时，快速同步多个资产（不一定是全部）。 一次启动一个资产的同步操作，但可以更快速地一次性同步多个资产。 | 查看Live Copy文件夹中多个资产的[操作](#bulk-actions) |
 

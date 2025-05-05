@@ -150,4 +150,4 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 ### 使用IntelliJ IDEA调试包 {#debugging-bundles-with-intellij-idea}
 
-可以使用标准通用远程调试连接调试捆绑包中的代码。 您可以按照远程调试](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter)上的[Jetbrain文档进行操作。
+可以使用标准通用远程调试连接调试捆绑包中的代码。 您可以按照远程调试[&#128279;](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter)上的Jetbrain文档进行操作。

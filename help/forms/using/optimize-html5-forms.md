@@ -60,8 +60,8 @@ Apache可以使用HTTP或AJP协议与JBoss通信。
    >使用代理时，需要进行以下配置更改：
    >
    >* 访问： *https://&lt;服务器>：&lt;端口>/system/console/configMgr*
-   * 编辑Apache Sling引用过滤器配置
-   * 在允许主机中，添加代理服务器的条目
+   >* 编辑Apache Sling引用过滤器配置
+   >* 在允许主机中，添加代理服务器的条目
 
 1. 启用压缩。
 

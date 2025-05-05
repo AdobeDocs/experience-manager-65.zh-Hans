@@ -599,7 +599,7 @@ AEM中的组件遵循三个不同的层次结构：
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 例如，要查找`cq:editConfig`的子节点，可以搜索类型为`cq:DropTargetConfig`的`cq:dropTargets`；可以在中使用查询工具**CRXDE Lite**并使用以下XPath查询字符串进行搜索：
+* 例如，要查找`cq:editConfig`的子节点，可以搜索类型为`cq:DropTargetConfig`的`cq:dropTargets`；可以在中使用查询工具&#x200B;**CRXDE Lite**&#x200B;并使用以下XPath查询字符串进行搜索：
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 

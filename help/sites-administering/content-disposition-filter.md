@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 配置内容处置过滤器 {#configure-content-disposition-filter}
 
-您可以在GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java)中查看[Apache Sling内容处置过滤器。
+您可以在GitHub[&#128279;](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java)中查看Apache Sling内容处置过滤器。
 
 “内容处置过滤器”选项提供了以下功能：
 

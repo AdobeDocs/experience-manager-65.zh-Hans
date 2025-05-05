@@ -164,7 +164,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 如果存在MongoMK，则如果在更靠近MongoDB实例的实例中执行此步骤，则可以加快此进程。 如果在同一台计算机上运行，则可以避免网络开销。
 
-有关索引](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)的[Oak-run文档中可找到其他技术详细信息。
+有关索引[&#128279;](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)的Oak-run文档中可找到其他技术详细信息。
 
 ### 导入索引 {#importing-indexes}
 

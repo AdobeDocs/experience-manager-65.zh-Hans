@@ -153,7 +153,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->这与编辑页面内容](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui)时[继承的组件类似。
+>这与编辑页面内容[&#128279;](/help/sites-authoring/editing-content.md#inheritedcomponentsclassicui)时继承的组件类似。
 
 单击锁定符号或图像图标可中断继承：
 

@@ -93,7 +93,7 @@ form：ready事件形式的表单脚本在表单的初始渲染期间只执行�
 
 >[!NOTE]
 >
-在多页面表单中，如果您移至其他页面，JavaScript对页面所做的更改将不会保留。
+>在多页面表单中，如果您移至其他页面，JavaScript对页面所做的更改将不会保留。
 
 您可以在提交表单之前调用自定义脚本。 此功能在所有可用的浏览器上运行。 但是，它只能在用户渲染其`Output Type`属性设置为`Form Body`的HTML表单时使用。 当`Output Type`为`Full HTML`时，它将不起作用。 有关配置此功能的步骤，请参阅管理帮助中的配置表单。
 
@@ -167,7 +167,7 @@ XFA子集定义映射到HTML事件的XFA事件。 计算事件和验证事件的
 
 >[!NOTE]
 >
-嵌套在表单元格内时，静态对象不会显示在呈现的HTML表单中。 例如，嵌套在表格单元格中的圆形和矩形不会显示在渲染HTML表单中。 但是，当这些相同的静态对象位于表外部时，它们会正确显示。
+>嵌套在表单元格内时，静态对象不会显示在呈现的HTML表单中。 例如，嵌套在表格单元格中的圆形和矩形不会显示在渲染HTML表单中。 但是，当这些相同的静态对象位于表外部时，它们会正确显示。
 
 ## 对HTML表单进行数字签名 {#digitally-signing-html-forms}
 
@@ -190,7 +190,7 @@ XFA子集定义映射到HTML事件的XFA事件。 计算事件和验证事件的
 
 >[!NOTE]
 >
-有关Forms服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关Forms服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 步骤摘要 {#summary-of-steps}
 
@@ -226,11 +226,11 @@ XFA子集定义映射到HTML事件的XFA事件。 计算事件和验证事件的
 
 >[!NOTE]
 >
-使用工具栏呈现HTML表单是可选的。
+>使用工具栏呈现HTML表单是可选的。
 
 >[!NOTE]
 >
-如果渲染AHTML表单，建议不要在该表单中添加工具栏。
+>如果渲染AHTML表单，建议不要在该表单中添加工具栏。
 
 **呈现HTML表单**
 
@@ -282,7 +282,7 @@ XFA子集定义映射到HTML事件的XFA事件。 计算事件和验证事件的
 
    >[!NOTE]
    >
-   当`StandAlone`选项为`true`且`ApplicationWebRoot`引用的Forms服务器不是承载AEM Forms的J2EE应用程序服务器时，在HTML中无法成功呈现（`ApplicationWebRoot`值是使用传递给`FormsServiceClient`对象的`(Deprecated) renderHTMLForm`方法的`URLSpec`对象指定的）。 如果`ApplicationWebRoot`是来自托管AEM Forms的服务器，则管理控制台中的Web根URI值需要设置为表单的Web应用程序URI值。 可以通过登录到管理控制台，单击服务> Forms，并将Web根URI设置为https://server-name:port/FormServer来完成此操作。 然后，保存您的设置。
+   >当`StandAlone`选项为`true`且`ApplicationWebRoot`引用的Forms服务器不是承载AEM Forms的J2EE应用程序服务器时，在HTML中无法成功呈现（`ApplicationWebRoot`值是使用传递给`FormsServiceClient`对象的`(Deprecated) renderHTMLForm`方法的`URLSpec`对象指定的）。 如果`ApplicationWebRoot`是来自托管AEM Forms的服务器，则管理控制台中的Web根URI值需要设置为表单的Web应用程序URI值。 可以通过登录到管理控制台，单击服务> Forms，并将Web根URI设置为https://server-name:port/FormServer来完成此操作。 然后，保存您的设置。
 
 1. 呈现HTML表单
 
@@ -340,7 +340,7 @@ XFA子集定义映射到HTML事件的XFA事件。 计算事件和验证事件的
 
    >[!NOTE]
    >
-   当`StandAlone`选项为`true`且`ApplicationWebRoot`引用的Forms服务器不是承载AEM Forms的J2EE应用程序服务器时，在HTML中无法成功呈现（`ApplicationWebRoot`值是使用传递给`FormsServiceClient`对象的`(Deprecated) renderHTMLForm`方法的`URLSpec`对象指定的）。 如果`ApplicationWebRoot`是来自托管AEM Forms的服务器，则管理控制台中的Web根URI值需要设置为表单的Web应用程序URI值。 可以通过登录到管理控制台，单击服务> Forms，并将Web根URI设置为https://server-name:port/FormServer来完成此操作。 然后，保存您的设置。
+   >当`StandAlone`选项为`true`且`ApplicationWebRoot`引用的Forms服务器不是承载AEM Forms的J2EE应用程序服务器时，在HTML中无法成功呈现（`ApplicationWebRoot`值是使用传递给`FormsServiceClient`对象的`(Deprecated) renderHTMLForm`方法的`URLSpec`对象指定的）。 如果`ApplicationWebRoot`是来自托管AEM Forms的服务器，则管理控制台中的Web根URI值需要设置为表单的Web应用程序URI值。 可以通过登录到管理控制台，单击服务> Forms，并将Web根URI设置为https://server-name:port/FormServer来完成此操作。 然后，保存您的设置。
 
 1. 呈现HTML表单
 

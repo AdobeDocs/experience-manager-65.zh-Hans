@@ -57,7 +57,7 @@ ht-degree: 0%
 
 1. 在感谢页面上，选择文本组件，并在该组件的“编辑”菜单中，单击取消继承图标。
 
-   [We.Retail具有全局化网站结构](/help/sites-developing/we-retail-globalized-site-structure.md)，内容通过称为继承](/help/sites-administering/msm.md)的机制从语言母版推送到[活动副本。 因此，必须取消继承，用户才能手动编辑文本。
+   [We.Retail具有全局化网站结构](/help/sites-developing/we-retail-globalized-site-structure.md)，内容通过称为继承[&#128279;](/help/sites-administering/msm.md)的机制从语言母版推送到活动副本。 因此，必须取消继承，用户才能手动编辑文本。
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 

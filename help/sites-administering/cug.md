@@ -80,7 +80,7 @@ ht-degree: 1%
 
    1. 激活&#x200B;**启用**&#x200B;复选框。
 
-   1. 添加您的&#x200B;**登录页面**的路径。
+   1. 添加您的&#x200B;**登录页面**&#x200B;的路径。
 这是可选操作，如果留空，则使用标准登录页面。
 
    已添加![CUG](assets/cug-authentication-requirement.png)
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 ### 为CUG配置Dispatcher会话管理 {#configuring-dispatcher-session-management-for-cugs}
 
-在dispatcher.any文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)中为CUG配置[会话管理。 在请求访问CUG页面时使用的身份验证处理程序决定了如何配置会话管理。
+在dispatcher.any文件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement)中为CUG配置会话管理。 在请求访问CUG页面时使用的身份验证处理程序决定了如何配置会话管理。
 
 ```xml
 /sessionmanagement

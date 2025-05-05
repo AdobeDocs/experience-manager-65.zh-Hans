@@ -36,9 +36,9 @@ ht-degree: 10%
 
 以下方法可用于向数字资源添加元数据：
 
-* 首先，创建资产的本机应用程序向其添加一些元数据。 例如，[Acrobat将一些元数据](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html)添加到PDF文件，或者相机将一些基本元数据添加到照片。 在生成资源时，可以将元数据添加到本机应用程序本身。 例如，您可以在Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)中[添加IPTC元数据。
+* 首先，创建资产的本机应用程序向其添加一些元数据。 例如，[Acrobat将一些元数据](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html)添加到PDF文件，或者相机将一些基本元数据添加到照片。 在生成资源时，可以将元数据添加到本机应用程序本身。 例如，您可以在Adobe Lightroom[&#128279;](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)中添加IPTC元数据。
 
-* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[!DNL Adobe Exchange]中查看如何[在 [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)中使用元数据并查看 [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的[标记面板。
+* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[!DNL Adobe Exchange]中查看如何[在 [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)中使用元数据并查看 [!DNL Adobe Bridge][&#128279;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的标记面板。
 
 * 在[!DNL Experience Manager Assets]中，您可以在[!UICONTROL 属性]页面中手动添加或编辑资源的元数据。
 
@@ -81,7 +81,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->批量编辑方法适用于文件夹或收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索](search-assets.md#metadataupdates)后[批量更新元数据。
+>批量编辑方法适用于文件夹或收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索[&#128279;](search-assets.md#metadataupdates)后批量更新元数据。
 
 1. 在[!DNL Assets]用户界面中，导航到要编辑的资源的位置。
 1. 选择要编辑其公共属性的资源。

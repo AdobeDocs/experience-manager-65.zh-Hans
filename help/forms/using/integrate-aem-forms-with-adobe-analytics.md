@@ -165,7 +165,7 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择+并指定&#x200B;**[!UICONTROL Adobe Analytics]**&#x200B;作为扩展名称。
 
-1. 选择&#x200B;**[!UICONTROL 清除变量]**&#x200B;作为操作类型。 选择&#x200B;**[!UICONTROL 保留更改]**。 执行这些步骤后，**[!UICONTROL 操作]**部分显示为：
+1. 选择&#x200B;**[!UICONTROL 清除变量]**&#x200B;作为操作类型。 选择&#x200B;**[!UICONTROL 保留更改]**。 执行这些步骤后，**[!UICONTROL 操作]**&#x200B;部分显示为：
    ![操作配置](/help/forms/using/assets/actions-config.png)
 
    根据您的要求自定义&#x200B;**[!UICONTROL 操作]**&#x200B;部分。 例如，您可以在Actions流程中定义两个&#x200B;**发送信标**&#x200B;步骤，以便将数据发送到[!DNL Adobe Analytics]，并在一个步骤中将其视为页面查看，将数据发送到[!DNL Adobe Analytics]，而在第二个步骤中不要将其视为页面查看。
@@ -199,7 +199,7 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 ## 2.配置AEM Forms {#configure-aem-forms}
 
-在创建AdobeLaunch配置之前，请使用AdobeLaunch作为云解决方案](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html)创建[Adobe IMS配置。
+在创建AdobeLaunch配置之前，请使用AdobeLaunch作为云解决方案[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html)创建Adobe IMS配置。
 
 ### 创建 Adobe Launch 配置 {#create-adobe-launch-configuration}
 

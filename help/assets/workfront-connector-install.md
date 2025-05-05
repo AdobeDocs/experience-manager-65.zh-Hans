@@ -20,7 +20,7 @@ ht-degree: 3%
 | AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6.5 | 本文 |
 
-在[!DNL Adobe Experience Manager]中具有管理员访问权限的用户安装增强型连接器。 安装之前，请查看平台支持以及连接器](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)的其他[先决条件。
+在[!DNL Adobe Experience Manager]中具有管理员访问权限的用户安装增强型连接器。 安装之前，请查看平台支持以及连接器[&#128279;](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience)的其他先决条件。
 
 >[!IMPORTANT]
 >
@@ -48,7 +48,8 @@ ht-degree: 3%
 1. 使用[!UICONTROL 包管理器]安装包。 要了解如何安装包，请参阅[包管理器文档](/help/sites-administering/package-manager.md)。
 1. 在[!DNL Experience Manager]用户组中创建`wf-workfront-users`并将权限`jcr:all`分配给`/content/dam`。
 1. 向&#x200B;**`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**&#x200B;的开箱即用索引定义添加自定义属性。 执行以下步骤：
-   * 将名为&#x200B;**`wfReferenceNumber`**&#x200B;的&#x200B;**`nt:unstructured`**属性添加到：
+   * 将名为&#x200B;**`wfReferenceNumber`**&#x200B;的&#x200B;**`nt:unstructured`**&#x200B;属性添加到：
+
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`。
    * 通过将重新索引标志翻转到`true`来重新索引`index /oak:index/ntFolderDamLucene`。
 

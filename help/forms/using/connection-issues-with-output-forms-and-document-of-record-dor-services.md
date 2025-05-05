@@ -26,7 +26,7 @@ ht-degree: 1%
 要解决此问题：
 
 1. 停止AEM 6.5 Forms实例。
-1. 在安装了AEM 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的[64位版本的Microsoft Visual C++可再发行包。
+1. 在安装了AEM 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022[&#128279;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的64位版本的Microsoft Visual C++可再发行包。
 1. 重新启动AEM Forms服务器。
 
    >[!NOTE]

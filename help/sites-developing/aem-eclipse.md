@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-“AEM Developer Tools”是一个基于Apache许可证2下发布的适用于Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html)的[Eclipse插件的Eclipse插件。
+“AEM Developer Tools”是一个基于Apache许可证2下发布的适用于Apache Sling[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html)的Eclipse插件的Eclipse插件。
 
 它提供了几项使AEM开发更轻松的功能：
 
@@ -71,7 +71,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->查看从AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)下载包时如何在Eclipse中使用包[。
+>查看从AEM[&#128279;](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)下载包时如何在Eclipse中使用包。
 
 ## AEM视角 {#the-aem-perspective}
 

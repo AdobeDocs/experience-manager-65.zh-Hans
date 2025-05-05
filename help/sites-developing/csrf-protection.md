@@ -47,4 +47,4 @@ ht-degree: 1%
 >
 >如果您在Web应用程序中使用清单缓存，请确保将“**&amp;amp；ast；**”添加到清单中，以确保令牌不会使CSRF令牌生成调用脱机。 有关详细信息，请参阅此[链接](https://www.w3.org/TR/offline-webapps/)。
 >
-有关CSRF攻击以及缓解这些攻击方法的详细信息，请参阅[跨站点请求伪造OWASP页面](https://owasp.org/www-community/attacks/csrf)。
+>有关CSRF攻击以及缓解这些攻击方法的详细信息，请参阅[跨站点请求伪造OWASP页面](https://owasp.org/www-community/attacks/csrf)。

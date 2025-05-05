@@ -225,4 +225,4 @@ AEM中包含的节点类型的基本定义如下：
 
 自Adobe Experience Manager 6.4起，标记存储在`/content/cq:tags`下，而以前的版本将标记存储在`/etc/tags`下。
 
-从6.4之前的版本升级AEM系统时，必须将标记迁移到`/content/cq:tags`。 有关详细信息，请参阅AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)中的[常见存储库重构。
+从6.4之前的版本升级AEM系统时，必须将标记迁移到`/content/cq:tags`。 有关详细信息，请参阅AEM 6.5[&#128279;](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)中的常见存储库重构。

@@ -93,7 +93,7 @@ ht-degree: 8%
 
 对于一维旋转集，至少需要8-12次拍摄项目；对于二维旋转集，至少需要16-24次拍摄项目。 拍摄必须定期进行，以便给人一种旋转和翻转项目的印象。 例如，如果一维旋转集包含12个镜头，则为每个镜头旋转项目30° (360/12)。
 
-您可以像在Experience Manager Assets](/help/assets/manage-assets.md)中[上传任何其他资源一样上传旋转集的图像。
+您可以像在Experience Manager Assets[&#128279;](/help/assets/manage-assets.md)中上传任何其他资源一样上传旋转集的图像。
 
 有关旋转集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media)。
 
@@ -226,6 +226,7 @@ ht-degree: 8%
    * 要删除资源，请选择该资源并选择&#x200B;**[!UICONTROL 删除资源]**。
    * 要应用预设，请选择“预设”图标并选择预设。
    * 要删除整个旋转集，请导航到该旋转集，选择它，然后选择&#x200B;**[!UICONTROL 删除]**
+
    >[!NOTE]
    >
    >您可以导航到旋转集，选择左边栏中的&#x200B;**[!UICONTROL 设置成员]**，然后选择单个资产上的“铅笔”图标以打开编辑窗口，来编辑图像。

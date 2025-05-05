@@ -30,4 +30,4 @@ ht-degree: 0%
 
 ## 创作（和发布）概念 {#concept-of-authoring-and-publishing}
 
-无论UI如何选择，创作都有一些共同的概念和想法，标准创作文档](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)中的[对此进行了详尽描述。
+无论UI如何选择，创作都有一些共同的概念和想法，标准创作文档[&#128279;](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)中的对此进行了详尽描述。

@@ -139,7 +139,7 @@ AEM Communities提供程序扩展[AdobeGranite OAuth应用程序和提供程序]
 此提供程序需要编辑以：
 
 * 允许用户更新
-* 在范围](#adobe-granite-oauth-application-and-provider)中添加其他字段[
+* 在范围[&#128279;](#adobe-granite-oauth-application-and-provider)中添加其他字段
 
    * 默认情况下，并不包括默认情况下允许的所有字段。
 
@@ -474,17 +474,17 @@ facebook和Twitter的后续步骤相同：
 1. 修改node ntBaseLucene-oauth的属性：
 
    * **[!UICONTROL indexPath]**： `/oak:index/ntBaseLucene-oauth`
-   * **[!UICONTROL 名称]**： `oauthid-123****`
+   * **[!UICONTROL 名称]**： `oauthid-123&#x200B;**&#x200B;**`
    * **[!UICONTROL 重新索引]**： `true`
    * **[!UICONTROL reindexCount]**： `1`
 
 1. 在节点/oak：index/ntBaseLucene-oauth/indexRules/nt：base/properties下：
 
    * 删除除cqTags之外的所有子节点。
-   * 将cqTags重命名为`oauthid-123****`
-   * 修改节点`oauthid-123****`的属性
+   * 将cqTags重命名为`oauthid-123**&#x200B;**`
+   * 修改节点`oauthid-123**&#x200B;**`的属性
 
-      * **[!UICONTROL 名称]**： `oauthid-123****`
+      * **[!UICONTROL 名称]**： `oauthid-123&#x200B;**&#x200B;**`
 
    * 选择&#x200B;**[!UICONTROL 全部保存]**。
 

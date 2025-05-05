@@ -44,7 +44,7 @@ Possible topics to cover in this article are below.
 
 要读取包含合规性级别详细信息的报告，请参阅[无障碍合规性报告](https://www.adobe.com/cn/accessibility/compliance.html) (ACR)页面。
 
-要了解[!DNL Dynamic Media]如何访问，请参阅 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的[辅助功能。
+要了解[!DNL Dynamic Media]如何访问，请参阅 [!DNL Dynamic Media][&#128279;](/help/assets/accessibility-dm.md)中的辅助功能。
 
 ## 辅助技术 {#at-support}
 
@@ -79,7 +79,7 @@ Possible topics to cover in this article are below.
 
 ### [!DNL Assets]中的键盘快捷键 {#keyboard-shortcuts}
 
-[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)的[键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
+[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台[&#128279;](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)的键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
 
 | 用户界面或方案 | 键盘快捷键 | 操作 |
 |---|---|---|

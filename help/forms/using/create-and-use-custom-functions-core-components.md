@@ -355,7 +355,7 @@ var c = {
 
 ### 使用AEM项目原型创建客户端库{#create-client-library-archetype}
 
-您可以向使用AEM项目原型](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)创建的项目[中添加客户端库，从而添加自定义函数。
+您可以向使用AEM项目原型[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)创建的项目中添加客户端库，从而添加自定义函数。
 如果您现有项目<!--and have already the project structure as shown in the image below,-->，则可以直接将[自定义函数](#create-add-custom-function)添加到本地项目。
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -532,11 +532,11 @@ var c = {
 
 ![正在添加自定义函数客户端库](/help/forms/using//assets/calculateage-customfunction.png)
 
-现在，让我们了解如何在AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)中使用[规则编辑器的调用服务来配置和使用自定义函数
+现在，让我们了解如何在AEM Forms 6.5[&#128279;](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)中使用规则编辑器的调用服务来配置和使用自定义函数
 
 ## 在自适应表单中使用自定义函数 {#use-custom-functions}
 
-在自适应表单中，您可以在规则编辑器](/help/forms/using/rule-editor-core-components.md)中使用[自定义函数。
+在自适应表单中，您可以在规则编辑器[&#128279;](/help/forms/using/rule-editor-core-components.md)中使用自定义函数。
 让我们将以下代码添加到JavaScript文件（`Function.js`文件）中，以根据出生日期(YYYY-MM-DD)计算年龄。 创建自定义函数作为`calculateAge()`，它将出生日期作为输入并返回年龄：
 
 ```javascript

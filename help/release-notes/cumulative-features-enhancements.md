@@ -122,7 +122,7 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
 * AEM Forms Designer现在提供[西班牙区域设置](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)版本。
 * 您现在可以使用[OAuth2通过Microsoft® Office 365邮件服务器协议（SMTP和IMAP）](/help/forms/using/oauth2-support-for-mail-service.md)进行身份验证。
-* 您可以将服务器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br)属性上的[Revalidate设置为true以标识要从服务器端记录文档中排除的隐藏字段。
+* 您可以将服务器[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br)属性上的Revalidate设置为true以标识要从服务器端记录文档中排除的隐藏字段。
 * AEM Forms Designer需要32位版本的Visual C++ 2019可再分发(x86)。
 
 ## AEM 6.5，Service Pack 14—2022年8月25日

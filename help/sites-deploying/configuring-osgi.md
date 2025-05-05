@@ -28,7 +28,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 * 使用[Adobe CQ Web控制台](#osgi-configuration-with-the-web-console)
 * 使用[配置文件](#osgi-configuration-with-configuration-files)
-* 在存储库](#osgi-configuration-in-the-repository)中配置[内容节点(`sling:OsgiConfig`)
+* 在存储库[&#128279;](#osgi-configuration-in-the-repository)中配置内容节点(`sling:OsgiConfig`)
 
 虽然存在细微差异（主要与[运行模式](/help/sites-deploying/configure-runmodes.md)有关），但可以使用任一方法：
 

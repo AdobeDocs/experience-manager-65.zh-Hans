@@ -83,7 +83,7 @@ Adobe Experience Manager (AEM)提供了一组[标准报表](/help/sites-administ
 报告页面为：
 
 * 标准CQ5页面。
-* 基于为报告](#report-template)配置的[标准CQ5模板。
+* 基于为报告[&#128279;](#report-template)配置的标准CQ5模板。
 
 ### 报表库 {#report-base}
 
@@ -362,7 +362,7 @@ N:charting
 
          * `totals` ( `Boolean`)
 
-           如果应显示其他显示&#x200B;**总计**的行，则为True。
+           如果应显示其他显示&#x200B;**总计**&#x200B;的行，则为True。
 默认： `false`
 
          * `series` ( `Long`)
@@ -669,11 +669,11 @@ N:definitions
 
    * `apply`
 
-     初始预处理阶段（处理队列](#processing-queue)的表示形式中的[步骤3）。
+     初始预处理阶段（处理队列[&#128279;](#processing-queue)的表示形式中的步骤3）。
 
    * `applyAfter`
 
-     预处理后应用（在处理队列](#processing-queue)的表示形式中步骤9[）。
+     预处理后应用（在处理队列[&#128279;](#processing-queue)的表示形式中步骤9）。
 
 #### 解析程序 {#resolvers}
 

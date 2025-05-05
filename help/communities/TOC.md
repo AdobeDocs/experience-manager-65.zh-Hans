@@ -35,7 +35,7 @@ ht-degree: 11%
 + 管理 {#administer}
    + [AEM Communities中的用户和UGC管理服务](user-ugc-management-service.md)
    + [社区控制台](consoles.md)
-   + 针对社区功能的[Analytics配置](analytics.md)
+   + [针对社区功能的Analytics配置](analytics.md)
    + [配置消息传送](messaging.md)
    + [审核社区内容](moderate-ugc.md)
    + [配置电子邮件](email.md)
@@ -65,7 +65,7 @@ ht-degree: 11%
    + [DSRP — 关系数据库存储资源提供程序](dsrp.md)
    + [用于DSRP的MySQL配置](dsrp-mysql.md)
    + [JSRP - JCR存储资源提供程序](jsrp.md)
-   + SRP的[Solr配置](solr.md)
+   + [SRP的Solr配置](solr.md)
    + [标记用户生成的内容](tag-ugc.md)
    + [翻译用户生成的内容](translate-ugc.md)
    + [Communities用户同步](sync.md)

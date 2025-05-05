@@ -65,7 +65,7 @@ AEM [!DNL Forms]数据集成模块允许您从不同的后端数据源(如AEM用
 
 1. 将数据库配置为 [!DNL MySQL] 数据源：
 
-   1. 转到位于 https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 的 [AEM Web 控制台。
+   1. 转到位于 https://localhost:4502/system/console/configMgr[&#128279;](https://localhost:4502/system/console/configMgr) 的 AEM Web 控制台。
    1. 找到 **Apache Sling 连接池数据源** 配置。 选择此项可在编辑模式下打开配置。
    1. 在配置对话框中，指定以下详细信息：
 
@@ -83,10 +83,10 @@ AEM [!DNL Forms]数据集成模块允许您从不同的后端数据源(如AEM用
 
       >[!NOTE]
       >
-      >AEM Forms不支持[!DNL MySQL]的NT身份验证。 转到 https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) 的[AEM Web控制台，然后搜索“Apache Sling连接池数据源”。对于“JDBC 连接 URI”属性，请将“integratedSecurity”的值设置为 False，并使用创建的用户名和密码与数据库连接 [!DNL MySQL] 。
+      >AEM Forms不支持[!DNL MySQL]的NT身份验证。 转到 https://localhost:4502/system/console/configMgr[&#128279;](https://localhost:4502/system/console/configMgr) 的AEM Web控制台，然后搜索“Apache Sling连接池数据源”。对于“JDBC 连接 URI”属性，请将“integratedSecurity”的值设置为 False，并使用创建的用户名和密码与数据库连接 [!DNL MySQL] 。
 
       * **借用时测试：** 启用 **[!UICONTROL 借用]** 时测试选项。
-      * **退货时测试：**&#x200B;启用退货&#x200B;****&#x200B;时测试选项。
+      * **退货时测试：**&#x200B;启用退货&#x200B;**&#x200B;**&#x200B;时测试选项。
       * **验证查询：**&#x200B;指定SQL SELECT查询以验证池中的连接。 查询必须至少返回一行。 例如，**从customerdetails**&#x200B;中选择&#42;。
       * **事务隔离**：将该值设置为&#x200B;**READ_COMMITTED**。
 
@@ -166,7 +166,7 @@ AEM [!DNL Forms]提供了一个直观的用户界面，用于[从配置的数据
 
       ![id-arg](assets/id-arg.png)
 
-   1. 选择“完成&#x200B;]**”**[!UICONTROL &#x200B;以保存数据模型对象属性。然后，选择 **[!UICONTROL 保存]** 以保存表单数据模型。
+   1. 选择“完成&#x200B;**”**&#x200B;以保存数据模型对象属性。然后，选择 **[!UICONTROL 保存]** 以保存表单数据模型。
 
       **[!UICONTROL get]**&#x200B;和&#x200B;**[!UICONTROL update]**&#x200B;服务已添加为数据模型对象的默认服务。
 

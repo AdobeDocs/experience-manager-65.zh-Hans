@@ -298,6 +298,7 @@ ht-degree: 2%
    * 选择&#x200B;**[!UICONTROL 超链接]**。
 
       * 如果您是Experience Manager Sites客户，请选择站点选择器图标（文件夹）以导航到URL。
+
         >[!NOTE]
         >
         >如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。

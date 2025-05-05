@@ -322,7 +322,7 @@ eventdata.events.milestoneXX
 
    ![里程碑1](assets/lmilestones1.png)
 
-   *调用中发送的&#x200B;**pev3**变量包含以下信息：*
+   *调用中发送的&#x200B;**pev3**&#x200B;变量包含以下信息：*
 
    * *名称* — 视频文件的名称(*film.avi*)
 
@@ -338,7 +338,7 @@ eventdata.events.milestoneXX
 
 ## 旧版秒数 {#legacy-seconds}
 
-使用**旧版秒**方法时，每隔N秒触发一次Adobe Analytics调用，其中N在“跟踪偏移”字段中指定。
+使用&#x200B;**旧版秒**&#x200B;方法时，每隔N秒触发一次Adobe Analytics调用，其中N在“跟踪偏移”字段中指定。
 
 1. 将跟踪偏移设置为任意秒数，
 

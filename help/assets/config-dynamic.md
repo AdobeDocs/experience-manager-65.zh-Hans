@@ -210,11 +210,11 @@ and CQDOC-19792 (removed as per this ticket December 5, 2022) -->
    >
    >* ImageServer-&lt;PortId>-&lt;yyyy>&lt;mm>&lt;dd>.log - ImageServer日志提供用于分析内部ImageServer进程行为的统计和分析信息。
    >
-   映像服务器日志文件名的示例： `ImageServer-57346-2020-07-25.log`
+   >映像服务器日志文件名的示例： `ImageServer-57346-2020-07-25.log`
    >
-   * s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access日志记录通过`/is/image`和`/is/content`向Dynamic Media发出的每个请求。
+   >* s7access-&lt;yyyy>&lt;mm>&lt;dd>.log - s7access日志记录通过`/is/image`和`/is/content`向Dynamic Media发出的每个请求。
    >
-   这些日志仅在启用Dynamic Media时使用。 它们未包含在从`system/console/status-Bundlelist`页面生成的&#x200B;**下载完整**&#x200B;包中；如果您遇到Dynamic Media问题，在调用客户支持时，将这两个日志附加到问题中。
+   >这些日志仅在启用Dynamic Media时使用。 它们未包含在从`system/console/status-Bundlelist`页面生成的&#x200B;**下载完整**&#x200B;包中；如果您遇到Dynamic Media问题，在调用客户支持时，将这两个日志附加到问题中。
 
 ### 如果您将Experience Manager安装到其他端口或上下文路径…… {#if-you-installed-aem-to-a-different-port-or-context-path}
 
@@ -233,7 +233,7 @@ Experience Manager：
 
 >[!NOTE]
 >
-在[Experience Manager快速入门独立部署](/help/sites-deploying/deploy.md)中，通常不需要配置&#x200B;**自域**，因为可以自动配置端口号和上下文路径。 但是，如果所有网络接口都已关闭，则必须配置&#x200B;**自域**。
+>在[Experience Manager快速入门独立部署](/help/sites-deploying/deploy.md)中，通常不需要配置&#x200B;**自域**，因为可以自动配置端口号和上下文路径。 但是，如果所有网络接口都已关闭，则必须配置&#x200B;**自域**。
 
 ## 禁用Dynamic Media  {#disabling-dynamic-media}
 
@@ -255,9 +255,9 @@ Experience Manager：
 
    >[!NOTE]
    >
-   禁用Dynamic Media运行模式后，将自动跳过生成`cqdam.pyramid.tiff`演绎版的工作流步骤。 它还禁用动态演绎版支持和其他Dynamic Media功能。
+   >禁用Dynamic Media运行模式后，将自动跳过生成`cqdam.pyramid.tiff`演绎版的工作流步骤。 它还禁用动态演绎版支持和其他Dynamic Media功能。
    >
-   另请注意，配置Experience Manager服务器后禁用Dynamic Media运行模式时，在该运行模式下上传的所有资源现在都将无效。
+   >另请注意，配置Experience Manager服务器后禁用Dynamic Media运行模式时，在该运行模式下上传的所有资源现在都将无效。
 
 ## （可选）将Dynamic Media预设和配置从6.3迁移到6.5，零停机时间 {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
@@ -265,7 +265,7 @@ Experience Manager：
 
 >[!NOTE]
 >
-如果在兼容模式下运行Experience Manager实例 — 即已安装兼容包 — 则无需运行这些命令。
+>如果在兼容模式下运行Experience Manager实例 — 即已安装兼容包 — 则无需运行这些命令。
 
 对于所有升级（无论是否带有兼容包），您可以通过运行以下Linux® curl命令来复制最初随Dynamic Media一起提供的默认现成查看器预设：
 
@@ -290,13 +290,13 @@ Dynamic Media图像投放的工作方式为：从Experience Manager创作中发�
 
 >[!NOTE]
 >
-在所有工作流中，创建PTIFF的默认内存限制为3 GB。 例如，您可以处理一个需要3 GB内存的映像，同时暂停其他工作流，或者您可以并行处理10个映像，每个映像需要300 MB内存。
+>在所有工作流中，创建PTIFF的默认内存限制为3 GB。 例如，您可以处理一个需要3 GB内存的映像，同时暂停其他工作流，或者您可以并行处理10个映像，每个映像需要300 MB内存。
 >
-内存限制是可配置的，并且适合系统资源可用性和正在处理的图像内容的类型。 如果您有许多大型资产，并且系统上具有足够的内存，则可以增加此限制以确保并行处理图像。
+>内存限制是可配置的，并且适合系统资源可用性和正在处理的图像内容的类型。 如果您有许多大型资产，并且系统上具有足够的内存，则可以增加此限制以确保并行处理图像。
 >
-需要超过最大内存限制的映像将被拒绝。
+>需要超过最大内存限制的映像将被拒绝。
 >
-要更改PTIFF创建的内存限制，请导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]**，并更改&#x200B;**[!UICONTROL maxMemory]**&#x200B;值。
+>要更改PTIFF创建的内存限制，请导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]** > **[!UICONTROL Adobe CQ Scene7 PTiffManager]**，并更改&#x200B;**[!UICONTROL maxMemory]**&#x200B;值。
 
 ### 设置身份验证 {#setting-up-authentication}
 
@@ -320,7 +320,7 @@ Dynamic Media图像投放的工作方式为：从Experience Manager创作中发�
 
    >[!NOTE]
    >
-   请记住该密码，因为以后配置复制代理时必须再次输入该密码。
+   >请记住该密码，因为以后配置复制代理时必须再次输入该密码。
 
    ![chlimage_1-508](assets/chlimage_1-508.png)
 
@@ -379,10 +379,10 @@ Replication test succeeded
 
 >[!NOTE]
 >
-您还可以通过执行以下操作之一来检查：
+>您还可以通过执行以下操作之一来检查：
 >
-* 检查复制日志，确保已复制资产。
-* Publish图像。 选择图像并在下拉菜单中选择&#x200B;**[!UICONTROL 查看器]**，然后选择查看器预设。 选择&#x200B;**[!UICONTROL URL]**。 要验证您是否可以看到图像，请在浏览器中复制并粘贴URL路径。
+>* 检查复制日志，确保已复制资产。
+>* Publish图像。 选择图像并在下拉菜单中选择&#x200B;**[!UICONTROL 查看器]**，然后选择查看器预设。 选择&#x200B;**[!UICONTROL URL]**。 要验证您是否可以看到图像，请在浏览器中复制并粘贴URL路径。
 >
 
 ### 身份验证疑难解答 {#troubleshooting-authentication}
@@ -545,7 +545,7 @@ Dynamic MediaCloud Service支持图像和视频、视频分析和视频编码的
 
 >[!NOTE]
 >
-在设置Dynamic Media Cloud Service之前，请确保已设置发布实例。 在配置Dynamic MediaCloud Service之前，还必须设置复制。
+>在设置Dynamic Media Cloud Service之前，请确保已设置发布实例。 在配置Dynamic MediaCloud Service之前，还必须设置复制。
 
 **配置Dynamic MediaCloud Service：**
 
@@ -627,7 +627,7 @@ Dynamic MediaCloud Service支持图像和视频、视频分析和视频编码的
      ```
 
    * **通过Experience Manager中的视频报表工具检查视频分析预设**
-导航到**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频报告]**
+导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频报告]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -686,7 +686,7 @@ Experience Manager6.4及更高版本将此预设保存在`/conf/global/settings/
 
 >[!NOTE]
 >
-默认情况下，当您选择&#x200B;**[!UICONTROL 呈现版本]**&#x200B;时，系统会显示各种呈现版本，当您在资产的详细信息视图中选择&#x200B;**[!UICONTROL 查看器]**&#x200B;时，系统会显示各种查看器预设。 您可以增加或减少看到的数量。 请参阅[增加显示的图像预设数](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)或[增加显示的查看器预设数](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)。
+>默认情况下，当您选择&#x200B;**[!UICONTROL 呈现版本]**&#x200B;时，系统会显示各种呈现版本，当您在资产的详细信息视图中选择&#x200B;**[!UICONTROL 查看器]**&#x200B;时，系统会显示各种查看器预设。 您可以增加或减少看到的数量。 请参阅[增加显示的图像预设数](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display)或[增加显示的查看器预设数](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display)。
 
 ## 筛选要复制的资产 {#filtering-assets-for-replication}
 
@@ -749,7 +749,7 @@ Experience Manager6.4及更高版本将此预设保存在`/conf/global/settings/
 
 >[!NOTE]
 >
-过滤器适用于MIME类型，且不能特定于路径。
+>过滤器适用于MIME类型，且不能特定于路径。
 
 ### 为纯视频部署设置资产过滤器 {#setting-up-asset-filters-for-video-only-deployments}
 
@@ -791,9 +791,9 @@ Experience Manager6.4及更高版本将此预设保存在`/conf/global/settings/
 
 >[!NOTE]
 >
-如果创作实例中有许多不同的过滤器，则每个代理都需要为其分配不同的用户。 granite代码强制每个用户一个过滤器的模型。 每个过滤器设置始终使用不同的用户。
+>如果创作实例中有许多不同的过滤器，则每个代理都需要为其分配不同的用户。 granite代码强制每个用户一个过滤器的模型。 每个过滤器设置始终使用不同的用户。
 >
-您是否在一个服务器上使用多个过滤器？ 例如，一个筛选器用于复制到发布，另一个筛选器用于s7delivery。 如果是，则必须确保这两个筛选器在`jcr:content`节点中分配了不同的&#x200B;**userId**。 请参阅下面的图像：
+>您是否在一个服务器上使用多个过滤器？ 例如，一个筛选器用于复制到发布，另一个筛选器用于s7delivery。 如果是，则必须确保这两个筛选器在`jcr:content`节点中分配了不同的&#x200B;**userId**。 请参阅下面的图像：
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -844,7 +844,7 @@ Experience Manager6.4及更高版本将此预设保存在`/conf/global/settings/
 
 >[!NOTE]
 >
-Dynamic Media在启用](#enabling-dynamic-media)后可开箱即用[。 但是，您可以选择通过配置Dynamic Media Image Server来满足某些规范或要求来微调安装。
+>Dynamic Media在启用[&#128279;](#enabling-dynamic-media)后可开箱即用。 但是，您可以选择通过配置Dynamic Media Image Server来满足某些规范或要求来微调安装。
 
 **先决条件** - *在*&#x200B;之前，配置Dynamic Media映像服务器，请确保您的Windows®虚拟机包括Microsoft® Visual C++库的安装。 运行Dynamic Media Image Server时需要这些库。 您可以[在此处](https://www.microsoft.com/en-us/download/details.aspx?id=26999)下载Microsoft® Visual C++ 2010可再发行软件包(x64)。
 
@@ -863,7 +863,7 @@ Dynamic Media在启用](#enabling-dynamic-media)后可开箱即用[。 但是，
 
    >[!NOTE]
    >
-   通常，无需更改默认值。 但是，如果确实更改了缺省值，则必须重新启动包以使更改生效。
+   >通常，无需更改默认值。 但是，如果确实更改了缺省值，则必须重新启动包以使更改生效。
 
    | 属性 | 默认值 | 描述 |
    | --- | --- | --- |
@@ -880,7 +880,7 @@ Dynamic Media在启用](#enabling-dynamic-media)后可开箱即用[。 但是，
 
    >[!NOTE]
    >
-   Dynamic Media Image Server使用自己的磁盘缓存来缓存响应。 Experience ManagerHTTP缓存和Dispatcher无法用于缓存来自Dynamic Media Image Server的响应。
+   >Dynamic Media Image Server使用自己的磁盘缓存来缓存响应。 Experience ManagerHTTP缓存和Dispatcher无法用于缓存来自Dynamic Media Image Server的响应。
 
    | 属性 | 默认值 | 描述 |
    |---|---|---|
@@ -939,7 +939,7 @@ Adobe的颜色管理使用ICC（国际颜色联盟）配置文件，该格式由
 
 >[!NOTE]
 >
-仅当安装了Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)中的[Feature Pack 12445时，才可使用标准Adobe颜色配置文件集。 所有功能包和Service Pack均可在[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)中获取。 功能包12445提供Adobe的颜色配置文件。
+>仅当安装了Software Distribution[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)中的Feature Pack 12445时，才可使用标准Adobe颜色配置文件集。 所有功能包和Service Pack均可在[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)中获取。 功能包12445提供Adobe的颜色配置文件。
 
 
 ### 安装功能包12445 {#installing-feature-pack}
@@ -1041,7 +1041,7 @@ Adobe的颜色管理使用ICC（国际颜色联盟）配置文件，该格式由
 
 >[!NOTE]
 >
-属性名称区分大小写，且必须全部小写。
+>属性名称区分大小写，且必须全部小写。
 
 **颜色配置文件表**
 
@@ -1252,23 +1252,23 @@ Adobe的颜色管理使用ICC（国际颜色联盟）配置文件，该格式由
   <tr>
    <td>复制查看器的嵌入代码</td>
    <td><p>复制嵌入代码对话框会显示类似于以下内容的代码片段（代码示例仅用于演示目的）：</p> <p><code class="code">&lt;style type="text/css"&gt;
-       #s7basiczoom_div.s7basiczoomviewer{
+       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
        width:100%;
        height:auto;
-       }
+       &rbrace;
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
        "containerId" : "s7basiczoom_div",
-       "params" : {
+       "params" : &lbrace;
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" }
-       }).init();
+       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
+       &rbrace;).init();
        &lt;/script&gt;</code></p> <p>其中<code>PUBLISHNODE</code>引用常规Experience Manager发布节点，<code>IMAGESERVICEPUBLISHNODE</code>引用图像服务URL。</p> <p>另请参阅<a href="/help/assets/delivering-dynamic-media-assets.md">交付Dynamic Media Assets</a>。</p> </td>
   </tr>
  </tbody>

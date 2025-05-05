@@ -258,7 +258,7 @@ newComponent (cq:Component)
 
 ### 处理字段事件 {#handling-field-events}
 
-在自定义客户端库](#listeners-in-a-custom-client-library)中通过[侦听器完成处理对话框字段上的事件的方法。 这是在内容结构](#listenersinthecontentstructureclassicui)中具有[侦听器的旧方法的更改。
+在自定义客户端库[&#128279;](#listeners-in-a-custom-client-library)中通过[侦听器完成处理对话框字段上的事件的方法。 这是在内容结构](#listenersinthecontentstructureclassicui)中具有侦听器的旧方法的更改。
 
 #### 自定义客户端库中的监听器 {#listeners-in-a-custom-client-library}
 
@@ -320,7 +320,7 @@ Granite UI和Granite UI组件（等效于小组件）中的字段验证通过使
 
 当组件具有可在[设计模式](/help/sites-authoring/default-components-designmode.md)中编辑的设计详细信息时，会提供“设计”对话框。
 
-该定义与用于编辑内容](#creating-a-new-dialog)的[对话框的定义非常相似，不同之处在于它被定义为节点：
+该定义与用于编辑内容[&#128279;](#creating-a-new-dialog)的对话框的定义非常相似，不同之处在于它被定义为节点：
 
 * 节点名称： `cq:design_dialog`
 * 类型：`nt:unstructured`
@@ -364,7 +364,7 @@ Granite UI和Granite UI组件（等效于小组件）中的字段验证通过使
 
 ## 配置段落系统以便拖动资产可创建组件实例 {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM提供了在页面上配置段落系统的功能，以便当用户将某个（合适的）资源拖到页面](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui)的实例上时，可以自动创建新组件的[实例（而不必始终将空组件拖到页面上）。
+AEM提供了在页面上配置段落系统的功能，以便当用户将某个（合适的）资源拖到页面[&#128279;](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui)的实例上时，可以自动创建新组件的实例（而不必始终将空组件拖到页面上）。
 
 此行为以及所需的资产到组件关系可以配置：
 

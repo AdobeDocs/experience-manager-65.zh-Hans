@@ -236,7 +236,7 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-执行命令后，验证所有证书是否都进入密钥库。 从以下位置检查&#x200B;**密钥库**条目：
+执行命令后，验证所有证书是否都进入密钥库。 从以下位置检查&#x200B;**密钥库**&#x200B;条目：
 [http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### 启用TLS 1.3连接 {#enabling-tls-connection}

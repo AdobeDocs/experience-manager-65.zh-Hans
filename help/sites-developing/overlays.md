@@ -63,7 +63,7 @@ Adobe Experience Manager (AEM)（以及之前的CQ）长期以来使用叠加原
 
 叠加是进行许多更改的推荐方法，例如[配置控制台](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)或[向侧面板中的资产浏览器创建选择类别](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser)（在创作页面时使用）。 它们必须是：
 
-* ***不要*&#x200B;在`/libs`分支&#x200B;**中进行更改
+* ***不要*&#x200B;在`/libs`分支&#x200B;**&#x200B;中进行更改
 您所做的任何更改都可能会丢失，因为每当您：
 
    * 在实例上升级

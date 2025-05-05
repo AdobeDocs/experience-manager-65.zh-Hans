@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 按角色显示状态 {#status-by-role}
 
-按Role **列出的**&#x200B;状态工作表显示按&#x200B;**[阶段](#phases-and-milestones)**&#x200B;和&#x200B;**[角色](#persona)**&#x200B;列出的&#x200B;[**运行状况{3**、{Quality}和**&#x200B;完整性&#x200B;**](#projectheartbeat)的详细细目。**
+按Role **列出的**&#x200B;状态工作表显示按&#x200B;**[阶段](#phases-and-milestones)**&#x200B;和&#x200B;**[角色](#persona)**&#x200B;列出的&#x200B;[**运行状况&lbrace;3**、{Quality}和&#x200B;**&#x200B;完整性&#x200B;**](#projectheartbeat)的详细细目。**
 
 ## 阶段和里程碑 {#phases-and-milestones}
 

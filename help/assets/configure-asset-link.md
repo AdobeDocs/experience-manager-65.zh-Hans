@@ -21,7 +21,7 @@ ht-degree: 0%
 
 1. 根据需要安装包。 详细信息位于[先决条件](#prerequisites)中。
 
-1. 手动配置Experience Manager [1}或使用[包](#configure-using-package)。](#manual-configuration)
+1. 手动配置Experience Manager [&#128279;](#manual-configuration)1&rbrace;或使用[包](#configure-using-package)。
 
 1. 要将Creative Cloud许可的用户映射到Experience Manager用户，请管理[用户访问控制](#user-access)。
 

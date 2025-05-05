@@ -447,7 +447,7 @@ Sidekick的&#x200B;**组件**&#x200B;选项卡（可在报告页面上找到）�
 
 #### 通用列 {#generic-column}
 
-**通用**&#x200B;列在用户报表中可用，以便您可以访问自定义信息，通常从[用户配置文件](/help/sites-administering/identity-management.md#profiles-and-user-accounts)访问；例如，如“将字段添加到配置文件定义”](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition)下详细介绍的[收藏颜色。
+**通用**&#x200B;列在用户报表中可用，以便您可以访问自定义信息，通常从[用户配置文件](/help/sites-administering/identity-management.md#profiles-and-user-accounts)访问；例如，如“将字段添加到配置文件定义”[&#128279;](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition)下详细介绍的收藏颜色。
 
 执行以下任一操作时，将打开“类属”列对话框：
 

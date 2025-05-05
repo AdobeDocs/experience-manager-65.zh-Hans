@@ -233,7 +233,7 @@ ht-degree: 8%
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在&#x200B;**[!UICONTROL 要求]**&#x200B;下，根据新规则&#x200B;]**选项选择**[!UICONTROL &#x200B;必需。
+1. 在&#x200B;**[!UICONTROL 要求]**&#x200B;下，根据新规则&#x200B;**选项选择**&#x200B;必需。
 1. 单击&#x200B;**[!UICONTROL 添加规则]**&#x200B;并选择&#x200B;**[!UICONTROL 资产类型]**&#x200B;字段以创建依赖关系。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 单击&#x200B;**[!UICONTROL 完成]**&#x200B;以保存更改。
 
    ![define_rule](assets/define_rule.png)

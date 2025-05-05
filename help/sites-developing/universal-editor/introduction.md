@@ -23,7 +23,7 @@ ht-degree: 1%
 * 由于通用编辑器对所有形式的AEM Headless内容支持相同的一致可视化编辑，因此作者可从通用编辑器的灵活性中获益。
 * 开发人员受益于通用编辑器的多功能性，因为它也支持实施之间的真正分离。 它允许开发人员利用他们选择的几乎任何框架或体系结构，而不施加任何SDK或技术限制。
 
-有关更多详细信息，请参阅通用编辑器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)上的[AEM as a Cloud Service文档。
+有关更多详细信息，请参阅通用编辑器[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)上的AEM as a Cloud Service文档。
 
 ## 架构 {#architecture}
 

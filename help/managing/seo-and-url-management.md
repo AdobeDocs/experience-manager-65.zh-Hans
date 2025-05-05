@@ -52,6 +52,7 @@ SEO（搜索引擎优化）已成为许多营销人员关注的重点。 因此�
    * 在页面上使用选择器时，首选提供语义值的选择器。
    * 如果人们无法读取您的 URL，则搜索引擎也无法读取。
    * 例如：
+
      `mybrand.com/products/product-detail.product-category.product-name.html` 比 `mybrand.com/products/product-detail.1234.html` 更可取
 
 * 尽可能避免使用子域，因为搜索引擎将它们视为不同的实体，从而降低网站的SEO价值。
@@ -254,6 +255,7 @@ Resource myPage = req.getResource();
    使用 Web 控制台（例如，localhost:4502/system/console/configMgr），您可以配置 Sling 资源解析程序：
 
    * **Apache Sling Resource Resolver Factory**
+
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
 
    Adobe建议您将缩短URL所需的映射构建为正则表达式，然后在包含在生成中的OsgiConfignode `config.publish`下定义这些配置。

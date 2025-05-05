@@ -59,7 +59,7 @@ ht-degree: 2%
 
 ## 安装Adobe Experience Manager {#installing-adobe-experience-manager}
 
-要安装用于开发网站的AEM实例，请按照使用创作和发布实例](/help/sites-deploying/deploy.md#author-and-publish-installs)设置[部署环境的说明进行操作，或执行[通用安装](/help/sites-deploying/deploy.md#default-local-install)。 一般安装包括下载AEM快速入门JAR文件，将license.properties文件放在与JAR文件相同的目录中，并双击JAR文件。
+要安装用于开发网站的AEM实例，请按照使用创作和发布实例[&#128279;](/help/sites-deploying/deploy.md#author-and-publish-installs)设置部署环境的说明进行操作，或执行[通用安装](/help/sites-deploying/deploy.md#default-local-install)。 一般安装包括下载AEM快速入门JAR文件，将license.properties文件放在与JAR文件相同的目录中，并双击JAR文件。
 
 安装AEM后，单击欢迎页面上的CRXDE Lite链接以访问CRXDE Lite开发环境：
 
@@ -329,7 +329,7 @@ static.css文件和图像的示例
 
 1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下创建文件`left.jsp`：
 
-   1. 右键单击节点`/apps/mywebsite/components/contentpage`，然后选择**创建**然后选择&#x200B;**创建文件**。
+   1. 右键单击节点`/apps/mywebsite/components/contentpage`，然后选择&#x200B;**创建**&#x200B;然后选择&#x200B;**创建文件**。
 
    1. 在窗口中，键入`left.jsp`作为&#x200B;**名称**，然后单击&#x200B;**确定**。
 
@@ -1530,6 +1530,6 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 保存更改。
-1. 在浏览器中，重新加载** Products**页面。 整个页面如下所示：
+1. 在浏览器中，重新加载 **&#x200B; Products**&#x200B;页面。 整个页面如下所示：
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

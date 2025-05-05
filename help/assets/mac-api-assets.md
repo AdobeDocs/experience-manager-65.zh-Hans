@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-[!DNL Assets] HTTP API允许对数字资源执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括对元数据、演绎版和评论的操作，以及使用[!DNL Experience Manager]内容片段的结构化内容。 它在`/api/assets`中公开，并作为REST API实现。 它包括对内容片段](/help/assets/assets-api-content-fragments.md)的[支持。
+[!DNL Assets] HTTP API允许对数字资源执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括对元数据、演绎版和评论的操作，以及使用[!DNL Experience Manager]内容片段的结构化内容。 它在`/api/assets`中公开，并作为REST API实现。 它包括对内容片段[&#128279;](/help/assets/assets-api-content-fragments.md)的支持。
 
 要访问API，请执行以下操作：
 

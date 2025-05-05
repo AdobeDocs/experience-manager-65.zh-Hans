@@ -32,8 +32,10 @@ ht-degree: 2%
 1. 提取并复制下载文件夹的内容。
 1. 导航到以下相应应用程序服务器的路径：
    * **jboss**：
+
      `..\Adobe\Adobe_Experience_Manager_Forms\jboss\standalone\svcnative\PaperCaptureSvc`
    * **weblogic**：
+
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`
    * **websphere**：\
      `..\Adobe\Adobe_Experience_Manager_Forms\crx-repository\bedrock\svcnative\PaperCaptureSvc`

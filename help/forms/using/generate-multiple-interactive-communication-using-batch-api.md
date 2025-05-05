@@ -85,7 +85,7 @@ ht-degree: 1%
    1. 登录到AEM Forms创作实例。
    1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 配置Watched文件夹]**。 选择&#x200B;**[!UICONTROL 新建]**。
    1. 指定文件夹的&#x200B;**[!UICONTROL 名称]**&#x200B;和物理&#x200B;**[!UICONTROL 路径]**。 例如：`c:\batchprocessing`。
-   1. 使用&#x200B;]**字段在**[!UICONTROL &#x200B;处理文件中选择&#x200B;**[!UICONTROL 服务]**&#x200B;选项。
+   1. 使用&#x200B;**字段在**&#x200B;处理文件中选择&#x200B;**[!UICONTROL 服务]**&#x200B;选项。
    1. 在&#x200B;**[!UICONTROL 服务名称]**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]**&#x200B;服务。
    1. 指定&#x200B;**[!UICONTROL 输出文件模式]**。 例如，%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)指定Watched文件夹可以在Watched文件夹\input文件夹的子文件夹中找到输入文件。
 1. 配置高级参数：
@@ -145,7 +145,7 @@ ht-degree: 1%
    1. 登录到AEM Forms创作实例。
    1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 配置Watched文件夹]**。 选择&#x200B;**[!UICONTROL 新建]**。
    1. 指定文件夹的&#x200B;**[!UICONTROL 名称]**&#x200B;和物理&#x200B;**[!UICONTROL 路径]**。 例如：`c:\batchprocessing`。
-   1. 使用&#x200B;]**字段在**[!UICONTROL &#x200B;处理文件中选择&#x200B;**[!UICONTROL 服务]**&#x200B;选项。
+   1. 使用&#x200B;**字段在**&#x200B;处理文件中选择&#x200B;**[!UICONTROL 服务]**&#x200B;选项。
    1. 在&#x200B;**[!UICONTROL 服务名称]**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]**&#x200B;服务。
    1. 指定&#x200B;**[!UICONTROL 输出文件模式]**。 例如，%F/ [pattern](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-watched-folder-endpoints.html?lang=en#about-file-patterns)指定Watched文件夹可以在Watched文件夹\input文件夹的子文件夹中找到输入文件。
 1. 配置高级参数：

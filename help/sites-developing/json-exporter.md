@@ -96,7 +96,7 @@ AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，�
 
 有关更多详细信息，请参阅：
 
-* Assets用户指南](/help/assets/content-fragments/content-fragments.md)中的[内容片段主题
+* Assets用户指南[&#128279;](/help/assets/content-fragments/content-fragments.md)中的内容片段主题
 
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [使用内容片段创作](/help/sites-authoring/content-fragments.md)

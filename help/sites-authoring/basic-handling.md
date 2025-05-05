@@ -457,7 +457,7 @@ ht-degree: 42%
 ![列表视图](assets/bh-19.png)
 
 * 列表视图列出各项资源在当前级别的信息。
-* 您可以通过点按/单击资源名称来向下导航树，并使用标题](/help/sites-authoring/basic-handling.md#the-header)中的[痕迹导航进行备份。
+* 您可以通过点按/单击资源名称来向下导航树，并使用标题[&#128279;](/help/sites-authoring/basic-handling.md#the-header)中的痕迹导航进行备份。
 
 * 要轻松选择列表中的所有项目，请使用列表左上角的复选框。
 

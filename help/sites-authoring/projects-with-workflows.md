@@ -39,12 +39,12 @@ ht-degree: 41%
 | 请求启动项 | x |  |  |  |
 | 请求登陆页面 | x |  |  |  |
 | 请求电子邮件 | x |  |  |  |
-| DAM 创建语言副本&amp;ast; |  |  |  | x |
-| DAM 创建和翻译语言副本&amp;ast; |  |  |  | x |
+| DAM 创建语言副本&ast; |  |  |  | x |
+| DAM 创建和翻译语言副本&ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&amp;ast;这些工作流不会从项目中的&#x200B;**工作流**&#x200B;拼贴启动。请参阅[创建Assets的语言副本。](/help/sites-administering/tc-manage.md)
+>&ast;这些工作流不会从项目中的&#x200B;**工作流**&#x200B;拼贴启动。请参阅[创建Assets的语言副本。](/help/sites-administering/tc-manage.md)
 
 无论您选择哪个工作流，启动和完成工作流的步骤都是相同的。只是具体的实施步骤有所不同。
 

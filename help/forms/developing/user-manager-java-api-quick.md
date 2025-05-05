@@ -523,7 +523,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
 
 ## 快速入门(SOAP模式)：使用Java API以编程方式同步用户 {#quick-start-soap-mode-programmatically-synchronizing-users-using-the-java-api}
 
-以下Java代码示例使用用户管理API同步用户。 （请参阅以编程方式同步用户](/help/forms/developing/users.md#programmatically-synchronizing-users)。）[
+以下Java代码示例使用用户管理API同步用户。 （请参阅以编程方式同步用户[&#128279;](/help/forms/developing/users.md#programmatically-synchronizing-users)。）
 
 ```java
  /*

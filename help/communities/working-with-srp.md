@@ -25,7 +25,7 @@ ht-degree: 0%
 
 与以前的版本不同，UGC不会跨AEM实例进行反向/正向复制。 相反，SRP允许直接从所有创作和发布实例中访问UGC以进行创建、读取、更新和删除(CRUD)操作，但JSRP除外。
 
-以下是每个SRP选项](#characteristics-of-srp-options)的[特性，在选择适当的SRP和[基础部署](/help/communities/topologies.md)时，这些特性对于决策过程至关重要。
+以下是每个SRP选项[&#128279;](#characteristics-of-srp-options)的特性，在选择适当的SRP和[基础部署](/help/communities/topologies.md)时，这些特性对于决策过程至关重要。
 
 有关使用SRP for UGC的详细信息，请参阅[存储资源提供程序概述](/help/communities/srp.md)。
 

@@ -123,7 +123,7 @@ HTTP APIPOST端点是通过实现`SlingPostOperation`接口（包`org.apache.sli
 
 查看[编码准则](code-guide.md)部分，了解面向AEM Communities开发人员的各种编码准则和最佳实践。
 
-另请参阅UGC](srp.md)的[存储资源提供程序(SRP)，了解如何访问用户生成的内容。
+另请参阅UGC[&#128279;](srp.md)的存储资源提供程序(SRP)，了解如何访问用户生成的内容。
 
 | **[⇐功能要点](essentials.md)** | **[客户端自定义⇒](client-customize.md)** |
 |---|---|

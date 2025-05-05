@@ -59,12 +59,14 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
 
 1. 配置Cloud Service：
    1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Service]**，然后单击&#x200B;**[!UICONTROL Turnstile]**。
+
       ![Cloud Service中的旋转门](assets/turnstile-in-ui.png)
    1. 选择已创建或已更新的配置容器，如上一节所述。 单击&#x200B;**[!UICONTROL 创建]**。
+
       ![配置旋转门](assets/config-hcaptcha.png)
    1. 将&#x200B;**[!UICONTROL 小组件类型]**&#x200B;指定为托管、非交互或不可见。
    1. 提供其他详细信息，如&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Name]**。
-   1. 为必备项](#prerequisite)中获取的Turnstile服务[指定&#x200B;**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**。
+   1. 为必备项[&#128279;](#prerequisite)中获取的Turnstile服务指定&#x200B;**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**。
    1. 单击&#x200B;**[!UICONTROL 创建]**。
 
       ![配置Cloud Service以将AEM Forms环境与Turnstile连接](assets/config-turntstile.png)
@@ -74,7 +76,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
 
    配置Turnstile Captcha服务后，即可在自适应表单中使用。
 
-## 在自适应表单{#using-turnstile-aem-6.5}中使用Turnstile
+## 在自适应表单中使用Turnstile{#using-turnstile-aem-6.5}
 
 1. 打开您的AEM Forms环境。
 1. 转到&#x200B;**[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
@@ -97,6 +99,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
    * **[!UICONTROL 验证消息]：**&#x200B;提供验证消息，以便在表单提交或用户操作时验证验证码。
    * **[!UICONTROL Captcha服务]：**&#x200B;为您的表单提交选择CAPTCHA服务，此处选择Turnstile®。
    * **[!UICONTROL 配置设置]：**&#x200B;选择为Turnstile®配置的云配置。
+
      >[!NOTE]
      >出于类似目的，您的环境中可以有多个云配置。 所以，请仔细选择服务。 如果未列出任何服务，请参阅[将您的AEM Forms环境与Turnstile连接](#connect-your-forms-environment-with-turnstile-service)，了解如何创建将AEM Forms环境与Turnstile服务连接的Cloud Service。
 

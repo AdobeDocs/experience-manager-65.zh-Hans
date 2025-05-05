@@ -180,7 +180,7 @@ ht-degree: 0%
 ### AdobeGranite分发 — 观察者工厂差异 {#adobe-granite-distribution-diff-observer-factory}
 
 此配置跨发布者同步组成员资格。
-如果更改一个发布者中组的成员资格时没有更新其他发布者的成员资格，请确保将**ref ：members**&#x200B;添加到&#x200B;**locks属性名称**。
+如果更改一个发布者中组的成员资格时没有更新其他发布者的成员资格，请确保将&#x200B;**ref ：members**&#x200B;添加到&#x200B;**locks属性名称**。
 
 要确保成员同步，请执行以下操作：
 
@@ -389,8 +389,8 @@ AEM创作实例使用Sling ID来识别数据的来源以及它需要（或不需
       现在，如果在发布实例上创建用户，将在&#x200B;*/var/sling/distribution/packages/ socialpubsync - vlt /data*&#x200B;节点中创建&#x200B;**vlt**&#x200B;包。 并且作者是否将这些包推送到其他服务。 您可以下载并提取此数据，以检查将所有属性推送到其他服务的情况。
 
 1. 转到发布者，并在发布者上创建用户。 因此，会创建事件。
-1. 检查创建用户时创建的日志](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities)的[顺序。
+1. 检查创建用户时创建的日志[&#128279;](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities)的顺序。
 1. 检查是否在&#x200B;**/var/sling/distribution/packages/socialpubsync-vlt/data**&#x200B;上创建了&#x200B;**vlt**&#x200B;包。
 1. 现在，在AEM Author实例上启用用户同步。
-1. 在发布服务器上，更改&#x200B;**Apache Sling分发代理 — 同步代理工厂**中的导出程序或导入程序终结点。
+1. 在发布服务器上，更改&#x200B;**Apache Sling分发代理 — 同步代理工厂**&#x200B;中的导出程序或导入程序终结点。
 我们可以下载并提取包数据，以检查哪些属性已推送到其他发布者，以及哪些数据丢失。

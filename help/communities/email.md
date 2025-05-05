@@ -182,7 +182,7 @@ AEM Communities使用电子邮件执行以下操作：
 
 * **[!UICONTROL URL]**
 
-  *（必需）*&#x200B;出站邮件服务器。 例如：`pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`。
+  *（必需）*&#x200B;出站邮件服务器。 例如：`pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`。
 
 * **[!UICONTROL 导入到路径]**&amp;amp；ast；
 

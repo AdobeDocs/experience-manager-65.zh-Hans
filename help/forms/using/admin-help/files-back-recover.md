@@ -36,7 +36,7 @@ GDS是用于存储进程中使用的长期文件的目录。 长生命周期文�
 
 异步作业调用的输入文档也存储在GDS中，并且必须可用于处理请求。 因此，一定要考虑承载GDS的文件系统的可靠性，并采用独立磁盘冗余阵列(RAID)或其他适合您的质量和服务级别要求的技术。
 
-GDS的位置是在AEM Forms安装过程中或以后使用管理控制台确定的。 除了为GDS保留一个高可用性位置之外，您还可以为文档启用数据库存储。 查看数据库用于文档存储](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)时的[备份选项。
+GDS的位置是在AEM Forms安装过程中或以后使用管理控制台确定的。 除了为GDS保留一个高可用性位置之外，您还可以为文档启用数据库存储。 查看数据库用于文档存储[&#128279;](files-back-recover.md#backup-options-when-database-is-used-for-document-storage)时的备份选项。
 
 ### GDS位置 {#gds-location}
 

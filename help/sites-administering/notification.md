@@ -205,7 +205,7 @@ subject=<text_1>
 >
 >其中`<text_x>`可以是静态文本和动态字符串变量的组合。 `<text_x>`项的每一行都需要以反斜杠(`\`)结尾，但最后一个实例除外，因为缺少反斜杠表示`<text_x>`字符串变量的结尾。
 >
->有关模板格式的详细信息，可在Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)方法的[javadocs中找到。
+>有关模板格式的详细信息，可在Properties.load() [&#128279;](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)方法的javadocs中找到。
 
 方法`${payload.path.open}`显示工作项的有效负荷的路径。 例如，对于网站中的页面，则`payload.path.open`将类似于`/bin/wcmcommand?cmd=open&path=…`。；这没有服务器名称，因此模板会将此前面加上`${host.prefix}`。
 

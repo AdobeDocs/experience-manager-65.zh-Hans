@@ -69,7 +69,7 @@ ht-degree: 14%
 您可以将资产从[!DNL Assets]用户界面拖至收藏集。 您还可以创建收藏集的副本，并将资产拖到该处。
 
 1. 从[!DNL Assets]用户界面中，选择要添加到收藏集的资产。
-1. 将资源拖到收藏集&#x200B;]**区域中的**[!UICONTROL &#x200B;拖放位置。 或者，单击工具栏中的&#x200B;**[!UICONTROL 到收藏集]**。
+1. 将资源拖到收藏集&#x200B;**区域中的**&#x200B;拖放位置。 或者，单击工具栏中的&#x200B;**[!UICONTROL 到收藏集]**。
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
@@ -117,7 +117,7 @@ ht-degree: 14%
 您可以将资源添加到包含引用的资源或文件夹列表的收藏集。 智能收藏集使用搜索查询来填充资源。 因此，对资源和文件夹的静态引用不适用于它们。
 
 1. 在[!DNL A]资产用户界面中，选择资产并单击工具栏中的&#x200B;**[!UICONTROL 到收藏集]** ![添加到收藏集](assets/do-not-localize/add-to-collection.png)。
-或者，您可以将资产拖到界面上的**[!UICONTROL 拖放到收藏集]**&#x200B;区域。 当区域的标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时添加资源。
+或者，您可以将资产拖到界面上的&#x200B;**[!UICONTROL 拖放到收藏集]**&#x200B;区域。 当区域的标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时添加资源。
 
 1. 在&#x200B;**[!UICONTROL 添加到收藏集]**&#x200B;页面中，选择要将资产添加到的收藏集。
 
@@ -178,7 +178,7 @@ ht-degree: 14%
 
 >[!TIP]
 >
->批量编辑方法适用于收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索](/help/assets/search-assets.md#metadataupdates)后[批量更新元数据。
+>批量编辑方法适用于收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索[&#128279;](/help/assets/search-assets.md#metadataupdates)后批量更新元数据。
 
 ## 搜索收藏集 {#searching-collections}
 

@@ -22,7 +22,7 @@ JEE上的AEM 6.5.18.0 Forms提供两种类型的安装程序：完整安装程�
 
 **完整安装程序**：您可以使用[AEM 6.5.18.0 on JEE完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)来设置新的AEM Forms实例，或从JEE上的AEM 6.5.x.x Forms升级到JEE上的AEM 6.5.18.0 Forms。
 
-**修补程序安装程序**： JEE修补程序安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)上的[AEM 6.5.18.0适用于已使用AEM 6.5.x.x版本的客户。 您可以使用修补程序安装程序升级到AEM Forms的最新版本。
+**修补程序安装程序**： JEE修补程序安装程序[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)上的AEM 6.5.18.0适用于已使用AEM 6.5.x.x版本的客户。 您可以使用修补程序安装程序升级到AEM Forms的最新版本。
 
 下表描述了使用完整安装程序和修补程序安装程序的场景。
 

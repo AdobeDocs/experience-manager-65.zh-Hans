@@ -24,7 +24,7 @@ HTML5表单使用标准HTML结构，允许将用于HTML的常规无障碍工具�
 
 ## 辅助功能标准 {#accessibility-standards}
 
-HTML5表单符合关于可访问性的Section 508，但存在已知例外。 有关详细信息，请参阅HTML5表单](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf)的[VPAT。
+HTML5表单符合关于可访问性的Section 508，但存在已知例外。 有关详细信息，请参阅HTML5表单[&#128279;](https://www.adobe.com/content/dam/cc1/en/accessibility/compliance/pdfs/adobe-livecycle-es4-section-508-vpat-portfolio.pdf)的VPAT。
 
 ## 经认证的HTML5表单屏幕阅读器 {#certified-screen-readers-for-html-forms}
 

@@ -53,7 +53,7 @@ ht-degree: 1%
    ![屏幕快照–2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **通过基于反应文本或常规JSON接口**
-* **通过反应式JSON行接口，**可在每行中生成单独的JSON文档。
+* **通过反应式JSON行接口，**&#x200B;可在每行中生成单独的JSON文档。
 
 这两种方法详述如下：
 

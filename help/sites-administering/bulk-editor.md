@@ -35,7 +35,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->随着AEM 6.4中经典UI](/help/release-notes/deprecated-removed-features.md)的[弃用，批量编辑器也已被弃用，因此Adobe不打算进一步增强批量编辑器。
+>随着AEM 6.4中经典UI[&#128279;](/help/release-notes/deprecated-removed-features.md)的弃用，批量编辑器也已被弃用，因此Adobe不打算进一步增强批量编辑器。
 
 ## 批量编辑器的示例用例 {#example-use-case-for-the-bulk-editor}
 

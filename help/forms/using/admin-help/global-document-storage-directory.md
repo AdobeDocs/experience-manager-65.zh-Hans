@@ -22,7 +22,7 @@ ht-degree: 1%
 
 长期文件可能包含敏感的用户信息。 使用AEM Forms API或用户界面访问这些信息时，可能需要特殊凭据。 通过操作系统对GDS目录进行适当的保护非常重要。 只有用于运行应用程序服务器的管理员帐户才应具有对GDS目录的读/写访问权限。
 
-除了为GDS选择安全、高可用性的目录外，您还可以选择在数据库中启用文档存储。 请注意，即使使用AEM Forms数据库进行文档存储，AEM Forms仍需要GDS目录。 （当数据库用于文档存储](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)时，请参阅[备份选项。）
+除了为GDS选择安全、高可用性的目录外，您还可以选择在数据库中启用文档存储。 请注意，即使使用AEM Forms数据库进行文档存储，AEM Forms仍需要GDS目录。 （当数据库用于文档存储[&#128279;](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)时，请参阅备份选项。）
 
 AEM forms应用程序数据驻留在GDS目录和AEM forms数据库中。 下表描述了数据及其位置。
 

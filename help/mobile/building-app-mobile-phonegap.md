@@ -169,4 +169,4 @@ AEM提供了两种将批量内容移动到发布实例的方法：
 
 ### 后续步骤 {#the-next-steps}
 
-构建过程后的下一步是了解应用程序](/help/mobile/phonegap-structure-an-app.md)的[结构。
+构建过程后的下一步是了解应用程序[&#128279;](/help/mobile/phonegap-structure-an-app.md)的结构。

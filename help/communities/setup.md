@@ -53,7 +53,7 @@ ht-degree: 1%
 
 ## 配置 Analytics {#configure-analytics}
 
-当为社区站点](analytics.md)配置了[Adobe Analytics时，社区活动信息可用，可以增强社区成员的体验并向站点管理员提供反馈。
+当为社区站点[&#128279;](analytics.md)配置了Adobe Analytics时，社区活动信息可用，可以增强社区成员的体验并向站点管理员提供反馈。
 
 与Adobe Analytics集成是可选的。
 

@@ -132,7 +132,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 
 >[!NOTE]
 >
-如果将AEM Forms配置为允许上传不安全的文档，则您可以使用没有文档上传应用程序用户角色的用户来上传文档。 用户还可以具有文档上传权限。 但是，如果将AEM Forms配置为仅允许安全文档，请确保用户具有“文档上传应用程序用户”角色或“文档上传”权限。 (请参阅[将AEM Forms配置为接受安全且不安全的文档](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)。
+>如果将AEM Forms配置为允许上传不安全的文档，则您可以使用没有文档上传应用程序用户角色的用户来上传文档。 用户还可以具有文档上传权限。 但是，如果将AEM Forms配置为仅允许安全文档，请确保用户具有“文档上传应用程序用户”角色或“文档上传”权限。 (请参阅[将AEM Forms配置为接受安全且不安全的文档](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents)。
 
 您对指定的上载URL使用标准Flash上载功能： `https://SERVER:PORT/remoting/lcfileupload`。 然后，只要需要`Document`类型的输入参数，您就可以使用`DocumentReference`对象
 ` private function startUpload():void  {  fileRef.addEventListener(Event.SELECT, selectHandler);  fileRef.addEventListener("uploadCompleteData", completeHandler);  try  {   var success:Boolean = fileRef.browse();  }    catch (error:Error)  {   trace("Unable to browse for files.");  }  }      private function selectHandler(event:Event):void {  var request:URLRequest = new  URLRequest("https://SERVER:PORT/remoting/lcfileupload")  try   {   fileRef.upload(request);   }    catch (error:Error)   {   trace("Unable to upload file.");   }  }    private function completeHandler(event:DataEvent):void  {   var params:Object = new Object();   var docRef:DocumentReference = new DocumentReference();   docRef.url = event.data as String;   docRef.referenceType = DocumentReference.REF_TYPE_URL;  }`远程快速入门使用远程上传Servlet将PDF文件传递到`MyApplication/EncryptDocument`进程。 (请参阅[使用(不适用于AEM表单)AEM Forms Remoting](invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)传递不安全的文档以调用短暂的进程。)
@@ -197,7 +197,7 @@ function completeHandler(event: DataEvent): void  { 
 
 >[!NOTE]
 >
-本节讨论如何调用AEM Forms进程，以及当AEM Forms配置为上传不安全的文档时如何上传文档。 有关如何调用AEM Forms进程和上载安全文档以及如何配置AEM Forms以接受安全和不安全文档的信息，请参阅[传递安全文档以使用远程处理调用进程](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)。
+>本节讨论如何调用AEM Forms进程，以及当AEM Forms配置为上传不安全的文档时如何上传文档。 有关如何调用AEM Forms进程和上载安全文档以及如何配置AEM Forms以接受安全和不安全文档的信息，请参阅[传递安全文档以使用远程处理调用进程](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting)。
 
 **正在创建mx：RemoteObject实例**
 
@@ -303,7 +303,7 @@ AEM forms user Manager可以通过多种方式对来自Flex应用程序的远程
 
 >[!NOTE]
 >
-有关使用HTTP令牌执行身份验证的信息，请参阅[创建使用HTTP令牌执行SSO身份验证的Flash Builder应用程序](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)。
+>有关使用HTTP令牌执行身份验证的信息，请参阅[创建使用HTTP令牌执行SSO身份验证的Flash Builder应用程序](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens)。
 
 ### 使用自定义身份验证 {#using-custom-authentication}
 
@@ -311,7 +311,7 @@ AEM forms user Manager可以通过多种方式对来自Flex应用程序的远程
 
 >[!NOTE]
 >
-在上一版AEM Forms中，您通过调用`RemoteObject.setCredentials`方法向目标发送了凭据。 在组件第一次尝试连接到服务器之前，`setCredentials`方法实际上并未将凭据传递到服务器。 因此，如果组件发出错误事件，则您无法确定该错误是由于身份验证错误还是其他原因造成的。 `ChannelSet.login`方法在调用服务器时连接到该服务器，以便您可以立即处理身份验证问题。 尽管您可以继续使用`setCredentials`方法，但建议您使用`ChannelSet.login`方法。
+>在上一版AEM Forms中，您通过调用`RemoteObject.setCredentials`方法向目标发送了凭据。 在组件第一次尝试连接到服务器之前，`setCredentials`方法实际上并未将凭据传递到服务器。 因此，如果组件发出错误事件，则您无法确定该错误是由于身份验证错误还是其他原因造成的。 `ChannelSet.login`方法在调用服务器时连接到该服务器，以便您可以立即处理身份验证问题。 尽管您可以继续使用`setCredentials`方法，但建议您使用`ChannelSet.login`方法。
 
 由于多个目标可以使用相同的渠道和相应的ChannelSet对象，因此登录到某个目标会将用户登录到使用相同渠道或渠道的任何其他目标。 如果两个组件对同一ChannelSet对象应用不同的凭据，则使用应用的最后一个凭据。 如果多个组件使用相同的已验证ChannelSet对象，则调用`logout`方法会将所有组件从目标中注销。
 
@@ -457,7 +457,7 @@ AEM Forms开发人员编写客户端应用程序以扩展表单指南（已弃�
 
 >[!NOTE]
 >
-如果Cookie无效或缺失，则不会隐式重定向到登录页面。 因此，您仍然可以调用匿名服务。
+>如果Cookie无效或缺失，则不会隐式重定向到登录页面。 因此，您仍然可以调用匿名服务。
 
 您可以通过编写自行登录和注销的客户端应用程序来绕过AEM Forms单点登录机制。 如果绕过单点登录机制，则可以对应用程序使用基本身份验证或自定义身份验证。
 
@@ -552,7 +552,7 @@ AEM Forms开发人员编写客户端应用程序以扩展表单指南（已弃�
 
 >[!NOTE]
 >
-在创建角色并希望该角色的成员上载安全文档时，请确保指定“文档上载”权限。
+>在创建角色并希望该角色的成员上载安全文档时，请确保指定“文档上载”权限。
 
 AEM Forms支持名为`getFileUploadToken`的操作，该操作返回传递给上传servlet的令牌。 `DocumentReference.constructRequestForUpload`方法需要指向AEM Forms的URL以及`LC.FileUploadAuthenticator.getFileUploadToken`方法返回的令牌。 此方法返回在上载servlet调用中使用的`URLRequest`对象。 以下代码演示了此应用程序逻辑。
 
@@ -621,8 +621,8 @@ AEM Forms支持名为`getFileUploadToken`的操作，该操作返回传递给上
 
 >[!NOTE]
 >
-* 要将AEM Forms配置为接受不安全的文档，请选择允许从Flex应用程序上传不安全的文档选项。 然后，重新启动应用程序或服务以确保设置生效。
-* 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+>* 要将AEM Forms配置为接受不安全的文档，请选择允许从Flex应用程序上传不安全的文档选项。 然后，重新启动应用程序或服务以确保设置生效。
+>* 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 
 ### 快速入门：通过使用Remoting传递安全文档来调用短期进程 {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
@@ -977,7 +977,7 @@ ActionScript类的字段与属于AEM Forms复杂类型的字段匹配。 Custome
 
 >[!NOTE]
 >
-确定属于Forms复杂类型的字段名称的一个好方法是在Web浏览器中查看服务的WSDL。 WSDL指定服务的复杂类型和相应的数据成员。 客户服务使用以下WSDL： `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
+>确定属于Forms复杂类型的字段名称的一个好方法是在Web浏览器中查看服务的WSDL。 WSDL指定服务的复杂类型和相应的数据成员。 客户服务使用以下WSDL： `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 CustomerActionScript类属于名为customer的包。 建议您将映射到复杂AEM Forms数据类型的所有ActionScript类放置在其自己的包中。 在Flex项目的src文件夹中创建一个文件夹，然后将ActionScript文件置于该文件夹中，如下图所示。
 
@@ -989,7 +989,7 @@ CustomerActionScript类属于名为customer的包。 建议您将映射到复杂
 
 >[!NOTE]
 >
-在执行此快速入门之前，您必须创建和部署Bank自定义组件。
+>在执行此快速入门之前，您必须创建和部署Bank自定义组件。
 
 ```java
  <?xml version="1.0" encoding="utf-8"?>

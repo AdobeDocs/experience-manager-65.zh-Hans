@@ -120,7 +120,7 @@ I. **父项**：允许您选择组件的父项。
 
 J. **查看SOM表达式：**&#x200B;用于查看组件的[SOM表达式](../../forms/using/using-som-expressions-adaptive-forms.md)。
 
-K： **将面板中的对象分组：**&#x200B;允许您将这些组件分组到一个面板中，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板](create-interactive-communication.md#groupobjectspanel)中的[组对象。
+K： **将面板中的对象分组：**&#x200B;允许您将这些组件分组到一个面板中，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板[&#128279;](create-interactive-communication.md#groupobjectspanel)中的组对象。
 
 L. **添加子面板**（仅适用于面板）：允许您向面板添加子面板。
 

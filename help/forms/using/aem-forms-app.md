@@ -20,17 +20,17 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-AEM Forms应用程序支持根据您的服务器，在移动设备上同步自适应表单、移动表单和表单集。 您可以在OSGi](/help/forms/using/aem-forms-workflow.md)上定义以[Forms为中心的工作流，或在JEE上定义Forms工作流。 例如，您经营一家银行公司，并使用AEM Forms管理客户应用程序和通信。 您的客户填写并提交表单以进行验证。 如果您在移动设备上启用表单，则客户可以在AEM Forms应用程序中填写表单。 您还可以通过在移动设备上启用验证表单来管理验证工作流。 您的现场工作人员可以向客户携带移动设备、验证详细信息并提交表单。 AEM Forms应用程序与AEM Forms服务器同步，并获取为移动设备启用的表单。 如果应用程序处于离线状态，则会将数据存储在本地。
+AEM Forms应用程序支持根据您的服务器，在移动设备上同步自适应表单、移动表单和表单集。 您可以在OSGi[&#128279;](/help/forms/using/aem-forms-workflow.md)上定义以Forms为中心的工作流，或在JEE上定义Forms工作流。 例如，您经营一家银行公司，并使用AEM Forms管理客户应用程序和通信。 您的客户填写并提交表单以进行验证。 如果您在移动设备上启用表单，则客户可以在AEM Forms应用程序中填写表单。 您还可以通过在移动设备上启用验证表单来管理验证工作流。 您的现场工作人员可以向客户携带移动设备、验证详细信息并提交表单。 AEM Forms应用程序与AEM Forms服务器同步，并获取为移动设备启用的表单。 如果应用程序处于离线状态，则会将数据存储在本地。
 
 客户可以通过Software Distribution获取AEM Forms应用程序的源代码。 Software Distribution中的源代码包可用为： `adobe-aemfd-forms-app-src-pkg-<version>.zip`。
 
 iOS、Android和Windows设备支持AEM Forms应用程序。 您可以从Google Play安装适用于Android的AEM Forms应用程序，从App Store安装iOS，并从Windows应用商店安装Windows。
 
-    [ ！[google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+    [ ![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
     
-    [ ！[app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+    [ ![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
     
-    [ ！[microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+    [ ![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 要在iOS、Android或Windows设备上安装、自定义和分发应用程序，请参阅[自定义、生成和分发AEM Forms应用程序](#customize-build-distribute)。
 

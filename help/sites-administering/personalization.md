@@ -172,7 +172,7 @@ AEM提供了各种组件以进行个性化。 有些功能允许用户登录并�
 
 博客、论坛和日历等社区功能会创建社区内容，通常称为用户生成内容(UGC)。 在包含多个AEM实例（[发布场](/help/communities/topologies.md)）的发布环境中输入UGC时，一个主要问题是如何在所有实例中同步UGC。
 
-使用[AEM Communities 6.1](/help/communities/overview.md)扩展，可通过使用UGC](/help/communities/working-with-srp.md)的[公用存储来解决此问题。 关于个性化，Communities包括[社交登录](/help/communities/social-login.md) — 为网站访客提供使用Facebook和Twitter登录选项的功能。
+使用[AEM Communities 6.1](/help/communities/overview.md)扩展，可通过使用UGC[&#128279;](/help/communities/working-with-srp.md)的公用存储来解决此问题。 关于个性化，Communities包括[社交登录](/help/communities/social-login.md) — 为网站访客提供使用Facebook和Twitter登录选项的功能。
 
 如果不进行社区扩展，则探索各种方法来解决UGC一致性问题，包括：
 

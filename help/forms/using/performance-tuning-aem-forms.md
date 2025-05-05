@@ -102,7 +102,7 @@ Apache可以使用HTTP协议与CRX通信。 这些配置用于使用HTTP进行�
 
 1. 启用压缩。 在`APACHE_HOME/conf/httpd.conf`配置文件中添加以下配置。
 
-   HTML5表单的&#x200B;****
+   HTML5表单的&#x200B;**&#x200B;**
 
    ```xml
    <Location /content/xfaforms>
@@ -171,5 +171,5 @@ Apache可以使用HTTP协议与CRX通信。 这些配置用于使用HTTP进行�
 >
 >* 如果您使用的是不同的GDS和临时目录位置，请打开`https://'[server]:[port]'/adminui`上的AdminUI，导航到&#x200B;**主页>设置>核心系统设置>核心配置**&#x200B;以确认该位置正在使用中。
 >
-* 如果在排除建议的目录后AEM Forms服务器仍运行缓慢，则同时排除Java™可执行文件(java.exe)。
+>* 如果在排除建议的目录后AEM Forms服务器仍运行缓慢，则同时排除Java™可执行文件(java.exe)。
 >

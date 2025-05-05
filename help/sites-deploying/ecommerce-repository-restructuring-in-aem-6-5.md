@@ -17,7 +17,7 @@ ht-degree: 1%
 
 # AEM 6.5中的E-Commerce存储库重组{#e-commerce-repository-restructuring-in-aem}
 
-如AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM E-Commerce解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
+如AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM E-Commerce解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
 ## 6.5版升级 {#with-upgrade}
 

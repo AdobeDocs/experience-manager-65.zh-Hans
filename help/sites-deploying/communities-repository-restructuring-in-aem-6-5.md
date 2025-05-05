@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # AEM Communities 6.5中的存储库重构 {#repository-restructuring-for-aem-communities-in}
 
-如AEM 6.4](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Communities解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
+如AEM 6.4[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Communities解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
-升级为6.5的&#x200B;****
+升级为6.5的&#x200B;**&#x200B;**
 
 * [电子邮件通知模板](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#e-mail-notification-templates)
 * [订阅配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#subscription-configurations)

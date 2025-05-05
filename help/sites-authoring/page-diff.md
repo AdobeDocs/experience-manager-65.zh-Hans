@@ -51,7 +51,7 @@ ht-degree: 81%
 
 两个页面的源会清楚地显示在浏览器窗口顶部的标题栏中。
 
-标头](assets/chlimage_1-109.png)中显示![Source
+标头![&#128279;](assets/chlimage_1-109.png)中显示Source
 
 差异比较会检测在组件和 HTML 级别发生的更改。发生更改的项目会以不同的颜色突出显示。
 

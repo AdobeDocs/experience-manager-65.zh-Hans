@@ -165,7 +165,7 @@ UI字符串通常基于JCR节点属性。 例如，页面的`jcr:title`属性通
 
 #### 指定JCR节点的翻译提示 {#specifying-translation-hints-for-jcr-nodes}
 
-与Java™ API](#using-translation-hints)中的[翻译提示类似，您可以提供翻译提示以区分词典中的重复字符串。 提供翻译提示作为包含国际化属性的节点的属性。 hint属性的名称由带`_commentI18n`后缀的国际化属性名称组成：
+与Java™ API[&#128279;](#using-translation-hints)中的翻译提示类似，您可以提供翻译提示以区分词典中的重复字符串。 提供翻译提示作为包含国际化属性的节点的属性。 hint属性的名称由带`_commentI18n`后缀的国际化属性名称组成：
 
 `${prop}_commentI18n`
 

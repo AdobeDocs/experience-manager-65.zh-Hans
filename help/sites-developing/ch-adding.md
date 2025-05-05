@@ -112,7 +112,7 @@ ContextHub提供了用于处理JavaScript对象的[`ContextHub.Utils.JSON.tree`]
 >
 >默认情况下，ContextHub不知道发布服务器上当前使用的已登录，并且ContextHub将此类用户视为“匿名”。
 >
->您可以通过加载配置文件存储区，使ContextHub感知已登录的用户。 请参阅GitHub ](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上的[示例代码。
+>您可以通过加载配置文件存储区，使ContextHub感知已登录的用户。 请参阅GitHub [&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上的示例代码。
 
 ### ContextHub事件 {#contexthub-eventing}
 

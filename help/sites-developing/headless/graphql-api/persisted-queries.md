@@ -353,7 +353,7 @@ curl -u admin:admin -X POST \
 
 ### 使用 OSGi 配置管理缓存 {#cache-osgi-configration}
 
-要全局管理缓存，您可以[为&#x200B;**持久查询服务配置**&#x200B;配置OSGi设置](/help/sites-deploying/configuring-osgi.md)。 否则，此OSGi配置对发布实例](#publish-instances)使用[默认值。
+要全局管理缓存，您可以[为&#x200B;**持久查询服务配置**&#x200B;配置OSGi设置](/help/sites-deploying/configuring-osgi.md)。 否则，此OSGi配置对发布实例[&#128279;](#publish-instances)使用默认值。
 
 >[!NOTE]
 >

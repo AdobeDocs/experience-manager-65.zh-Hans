@@ -63,7 +63,7 @@ ht-degree: 1%
    * **[!UICONTROL 主题]**&#x200B;和&#x200B;**[!UICONTROL 选择主题]**：浏览并选择主题以设置交互式通信的Web渠道的样式。 有关详细信息，请参阅AEM Forms中的[主题](/help/forms/using/themes.md)。
 
    * **[!UICONTROL 为Web渠道使用“打印为母版”]**：选择此选项以创建与打印渠道同步的Web渠道。 将打印渠道用作Web渠道的主渠道可以确保Web渠道的内容和数据绑定从打印渠道派生，并且当您选择“同步”时，在打印渠道中所做的更改将反映在Web渠道中。 但是，根据需要，作者可以中断Web渠道中特定组件的继承。 有关详细信息，请参阅[将Web渠道与打印渠道同步](../../forms/using/create-interactive-communication.md#synchronize)。
-如果选择**[!UICONTROL 为Web渠道使用“打印为母版”]**&#x200B;选项，则可以选择以下任意模式来生成Web渠道：
+如果选择&#x200B;**[!UICONTROL 为Web渠道使用“打印为母版”]**&#x200B;选项，则可以选择以下任意模式来生成Web渠道：
 
       * **[!UICONTROL 自动布局]**：选择此模式可从Print channel自动生成Web渠道的占位符、内容和数据绑定。
       * **[!UICONTROL 手动组织]**：选择此模式以使用&#x200B;**[!UICONTROL 数据源]**&#x200B;选项卡中可用的主内容手动选择打印渠道元素并将其添加到Web渠道。 有关详细信息，请参阅[选择“打印渠道元素”以创建Web渠道内容](#selectprintchannelelements)。
@@ -587,7 +587,7 @@ ht-degree: 1%
 * **父项：**&#x200B;选择组件的父项。
 * **查看SOM表达式：**&#x200B;查看组件的[SOM表达式](../../forms/using/using-som-expressions-adaptive-forms.md)。
 
-* **面板中的组对象：**&#x200B;将面板中的组件分组，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板](#groupobjectspanel)中的[组对象。
+* **面板中的组对象：**&#x200B;将面板中的组件分组，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板[&#128279;](#groupobjectspanel)中的组对象。
 
 * **取消继承：** [取消目标区域中的组件继承](#cancelinheritance)以编辑它们。
 

@@ -24,7 +24,7 @@ ht-degree: 5%
 
 1. 根据您的要求填写信息，然后单击&#x200B;**注册。**
    ![支持的帐户](/help/forms/using/assets/azure_suuportedaccountype.png)
-在上例中，已选择任何组织目录（任何Azure AD目录 — 多租户）中的**帐户和个人Microsoft®帐户（例如，Skype、Xbox）**&#x200B;选项。
+在上例中，已选择任何组织目录（任何Azure AD目录 — 多租户）中的&#x200B;**帐户和个人Microsoft®帐户（例如，Skype、Xbox）**&#x200B;选项。
 
    >[!NOTE]
    >

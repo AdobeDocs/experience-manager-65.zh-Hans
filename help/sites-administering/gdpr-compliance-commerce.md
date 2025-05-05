@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >以下部分使用GDPR作为示例，但包含的详细信息适用于所有数据保护和隐私法规；例如GDPR和CCPA。
 
-欧盟有关数据隐私权的《通用数据保护条例》自2018年5月起生效。 请参阅Adobe隐私中心](https://business.adobe.com/privacy/general-data-protection-regulation.html)的[GDPR页面。
+欧盟有关数据隐私权的《通用数据保护条例》自2018年5月起生效。 请参阅Adobe隐私中心[&#128279;](https://business.adobe.com/privacy/general-data-protection-regulation.html)的GDPR页面。
 
 >[!NOTE]
 >

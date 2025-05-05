@@ -319,7 +319,7 @@ Live Copy的基本形式具有：
 
 #### 嵌套式 Live Copy {#nested-live-copies}
 
-当您（或流程）在现有Live Copy ](#live-copy-with-non-live-copy-pages)中创建[页面时，此新页面也可以设置为其他Blueprint的Live Copy。 这称为嵌套式Live Copy，其中第二个（内部）Live Copy的行为受第一个（外部）Live Copy的影响，如下所示：
+当您（或流程）在现有Live Copy [&#128279;](#live-copy-with-non-live-copy-pages)中创建页面时，此新页面也可以设置为其他Blueprint的Live Copy。 这称为嵌套式Live Copy，其中第二个（内部）Live Copy的行为受第一个（外部）Live Copy的影响，如下所示：
 
 * 为顶级Live Copy触发的深层转出可以继续在嵌套式Live Copy中进行（例如，如果触发器匹配）。
 * 源之间的任何链接都会在活动副本中重写。
@@ -397,7 +397,7 @@ Live Copy的源可以是常规页面，也可以是Blueprint配置包含的页�
 
 ### 转出冲突 {#rollout-conflicts}
 
-转出可能会变得复杂，尤其是当作者同时在源和Live Copy中编辑内容时，因此了解AEM如何处理转出](/help/sites-administering/msm-rollout-conflicts.md)期间可能发生的任何[冲突会很有用。
+转出可能会变得复杂，尤其是当作者同时在源和Live Copy中编辑内容时，因此了解AEM如何处理转出[&#128279;](/help/sites-administering/msm-rollout-conflicts.md)期间可能发生的任何冲突会很有用。
 
 ### 暂停和取消继承与同步 {#suspending-and-cancelling-inheritance-and-synchronization}
 

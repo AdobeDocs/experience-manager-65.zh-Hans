@@ -166,7 +166,7 @@ Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资
 
 1. 将sidekick中&#x200B;**[!UICONTROL Dynamic Media Classic (Scene7)]**&#x200B;组中的组件拖动到所需位置的页面上。
 
-1. 选择***[!UICONTROL 编辑]**，以便打开该组件。
+1. 选择&#x200B;***[!UICONTROL 编辑]**，以便打开该组件。
 
 1. 根据需要编辑该组件并选择&#x200B;**[!UICONTROL 确定]**&#x200B;以保存更改。
 
@@ -225,7 +225,7 @@ Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资
 
 Dynamic Media Classic (Scene7)图像组件允许您将Dynamic Media Classic (Scene7)功能添加到图像，例如Dynamic Media Classic (Scene7)修饰符、图像或查看器预设以及锐化。 Dynamic Media Classic (Scene7)图像组件与Experience Manager中的其他图像组件类似，具有特殊的Dynamic Media Classic (Scene7)功能。 在此示例中，图像应用了Dynamic Media Classic (Scene7) URL修饰符`&op_invert=1`。
 
-Dynamic Media Classic (Scene 7)图像组件](do-not-localize/chlimage_1-4.png)中的球体图像![
+Dynamic Media Classic (Scene 7)图像组件![&#128279;](do-not-localize/chlimage_1-4.png)中的球体图像
 
 **标题，替换文本** — 在“高级”选项卡中，为已关闭图形的用户添加标题和替换文本。
 
@@ -395,7 +395,7 @@ Dynamic Media Classic (Scene7)内容浏览器允许您直接在Experience Manage
 >* 在经典UI中，您还可以搜索&#x200B;**Flash**&#x200B;和&#x200B;**FXG**。 不支持在触屏优化UI中过滤这两个术语。
 >
 >* 搜索视频时，您将搜索单个演绎版。 结果返回原始演绎版（仅&#42;.mp4）和编码的演绎版。
-* 搜索自适应视频集时，您将搜索文件夹及其所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，则Experience Manager不会搜索子文件夹。
+>* 搜索自适应视频集时，您将搜索文件夹及其所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，则Experience Manager不会搜索子文件夹。
 >
 
 **Publish状态** — 您可以根据发布状态筛选资源：已取消发布或已发布。 如果您未选择任何Publish状态，默认情况下，Experience Manager将搜索所有发布状态。

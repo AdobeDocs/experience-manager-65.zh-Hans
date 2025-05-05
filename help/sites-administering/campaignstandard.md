@@ -202,7 +202,7 @@ Campaign内容由内容作者在AEM创作实例上创建。 此实例通常仅�
 
 >[!NOTE]
 >
-发布实例必须可以从Adobe Campaign服务器访问。 如果它指向`localhost:4503`或Adobe Campaign无法访问的其他服务器，则来自AEM的图像将不会显示在Adobe Campaign控制台中。
+>发布实例必须可以从Adobe Campaign服务器访问。 如果它指向`localhost:4503`或Adobe Campaign无法访问的其他服务器，则来自AEM的图像将不会显示在Adobe Campaign控制台中。
 
 ## 在AEM中配置活动远程用户 {#campaign-remote-user}
 

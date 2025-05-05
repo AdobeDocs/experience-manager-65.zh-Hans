@@ -91,7 +91,7 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
 
 >[!NOTE]
 >
->另请参阅AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的[存储库重新构建。
+>另请参阅AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的存储库重新构建。
 
 #### 位置 — 工作流模型 {#locations-workflow-models}
 
@@ -296,7 +296,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 您可以定义[工作流阶段](/help/sites-developing/workflows.md#workflow-stages)，然后将任务/步骤分配给特定的工作流阶段。
 
-当您从&#x200B;**收件箱**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;单击工作项的&#x200B;[**工作流信息**&#x200B;选项卡时，此信息用于显示工作流的进度。 可以编辑现有工作流模型以添加暂存。
+当您从&#x200B;**收件箱**&#x200B;[&#128279;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;单击工作项的&#x200B;**工作流信息**&#x200B;选项卡时，此信息用于显示工作流的进度。 可以编辑现有工作流模型以添加暂存。
 
 ### 激活页面流程步骤 {#activate-page-process-step}
 
@@ -315,7 +315,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 >[!NOTE]
 >
->另请参阅AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的[存储库重新构建。
+>另请参阅AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的存储库重新构建。
 
 ## 系统工具 {#system-tools}
 

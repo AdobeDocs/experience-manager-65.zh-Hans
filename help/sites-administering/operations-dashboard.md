@@ -452,7 +452,7 @@ Explain查询是一种用于说明Oak如何执行查询的工具。 通过从AEM
 
 索引管理器的目的是促进索引管理，如维护索引或查看索引的状态。
 
-通过从“欢迎屏幕”转到**工具 — 操作 — 诊断**，然后单击&#x200B;**索引管理器**&#x200B;按钮可访问该区域。
+通过从“欢迎屏幕”转到&#x200B;**工具 — 操作 — 诊断**，然后单击&#x200B;**索引管理器**&#x200B;按钮可访问该区域。
 
 也可以通过以下URL直接访问它： `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 

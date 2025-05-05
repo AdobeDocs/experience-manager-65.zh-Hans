@@ -130,7 +130,7 @@ ht-degree: 0%
 >
 >如果Solr Console不可用，请查看&lt;solrinstall>/example/logs下的日志。 查看SOLR是否尝试绑定到无法解析的特定主机名（例如“user-macbook-pro”）。
 >
-如果是，请使用此主机名的新条目（例如127.0.0.1 user-macbook-pro）更新`etc/hosts`文件以正确启动Solr。
+>如果是，请使用此主机名的新条目（例如127.0.0.1 user-macbook-pro）更新`etc/hosts`文件以正确启动Solr。
 
 ### SolrCloud {#solrcloud}
 

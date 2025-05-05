@@ -244,7 +244,7 @@ LDAP标识提供程序用于定义如何从LDAP服务器中检索用户。
 
 1. 确保您已安装并运行SSL库。 此过程使用OpenSSL作为示例。
 
-1. 创建自定义的OpenSSL配置(cnf)文件。 可以通过复制默认**openssl.cnf**配置文件并对其进行自定义来完成此配置。 在UNIX®系统上，它位于`/usr/lib/ssl/openssl.cnf`
+1. 创建自定义的OpenSSL配置(cnf)文件。 可以通过复制默认&#x200B;**openssl.cnf**&#x200B;配置文件并对其进行自定义来完成此配置。 在UNIX®系统上，它位于`/usr/lib/ssl/openssl.cnf`
 
 1. 通过在终端中运行以下命令继续创建CA根密钥：
 

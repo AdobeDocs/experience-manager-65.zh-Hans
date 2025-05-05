@@ -62,7 +62,7 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+   >建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
 
 1. 执行安装后活动。
 
@@ -111,4 +111,4 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   在AEM 6.4 Forms中，crx-repository的结构发生了变化。 如果从6.3 Forms升级到AEM 6.5 Forms，请使用更改后的路径来重新创建自定义。 有关已更改路径的完整列表，请参阅[AEM中的Forms存储库重新构建](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)。
+   >在AEM 6.4 Forms中，crx-repository的结构发生了变化。 如果从6.3 Forms升级到AEM 6.5 Forms，请使用更改后的路径来重新创建自定义。 有关已更改路径的完整列表，请参阅[AEM中的Forms存储库重新构建](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md)。

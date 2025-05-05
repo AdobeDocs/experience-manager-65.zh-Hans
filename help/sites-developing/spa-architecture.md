@@ -69,7 +69,7 @@ SPA应仅依赖于内容的动态渲染。 这是AEM获取并呈现内容结构�
 
 ## SPA设计模型 {#spa-design-models}
 
-如果遵循在AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)中开发SPA的[原则，则您的SPA将可以使用所有受支持的AEM内容创作功能。
+如果遵循在AEM[&#128279;](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)中开发SPA的原则，则您的SPA将可以使用所有受支持的AEM内容创作功能。
 
 但是，在某些情况下，这并非完全必要。 下表概述了各种设计模型及其优点和缺点。
 
@@ -100,7 +100,7 @@ SPA应仅依赖于内容的动态渲染。 这是AEM获取并呈现内容结构�
 
 >[!NOTE]
 >
->虽然AEM支持所有模型，但只有实现第三个模型(因此遵循AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)中推荐的[SPA开发原则)，内容作者才能在AEM中与已习惯的SPA内容进行交互和编辑。
+>虽然AEM支持所有模型，但只有实现第三个模型(因此遵循AEM[&#128279;](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)中推荐的SPA开发原则)，内容作者才能在AEM中与已习惯的SPA内容进行交互和编辑。
 
 ## 将现有SPA迁移到AEM {#migrating-existing-spas-to-aem}
 

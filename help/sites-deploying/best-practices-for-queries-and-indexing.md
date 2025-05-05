@@ -118,7 +118,7 @@ Lucene注册一个JMX Bean，它将提供有关索引内容的详细信息，包
 
 ### 查询限制 {#query-limits}
 
-开发期间&#x200B;****
+开发期间&#x200B;**&#x200B;**
 
 为`oak.queryLimitInMemory`(例如，10000)和Oak设置低阈值。 `queryLimitReads`（例如，5000），并在点击UnsupportedOperationException时优化开销巨大的查询，该异常显示“查询读取了超过x个节点……”
 

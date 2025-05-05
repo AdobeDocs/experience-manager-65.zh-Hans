@@ -42,11 +42,11 @@ AEM交付和内容管理API：
 
    * [JSON导出程序](/help/sites-developing/json-exporter.md)
    * [为组件启用 JSON 导出](/help/sites-developing/json-exporter-components.md)
-   * 有关详细信息，请参阅《开发用户指南》](/help/sites-developing/getting-started.md)中的[组件部分
+   * 有关详细信息，请参阅《开发用户指南》[&#128279;](/help/sites-developing/getting-started.md)中的组件部分
 
 * **Assets**： Assets HTTP API允许对Assets执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括二进制文件、元数据、呈现版本和注释。 查看[AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **内容片段** (CF)：在Assets HTTP API](/help/assets/assets-api-content-fragments.md)和[AEM Assets API中支持[CF — 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **内容片段** (CF)：在Assets HTTP API[&#128279;](/help/assets/assets-api-content-fragments.md)和AEM Assets API中支持[CF — 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
 以下外部资源仅供参考：
 

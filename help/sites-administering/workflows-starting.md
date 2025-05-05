@@ -41,7 +41,7 @@ ht-degree: 2%
 
 ## 工作流模型 {#workflow-models}
 
-您可以基于“工作流模型”控制台上列出的模型](/help/sites-administering/workflows.md#workflow-models-and-instances)启动工作流[。 唯一强制提供的信息是有效负载，不过也可以添加标题和/或评论。
+您可以基于“工作流模型”控制台上列出的模型[&#128279;](/help/sites-administering/workflows.md#workflow-models-and-instances)启动工作流。 唯一强制提供的信息是有效负载，不过也可以添加标题和/或评论。
 
 ## 工作流启动器 {#workflows-launchers}
 

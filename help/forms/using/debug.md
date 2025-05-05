@@ -118,7 +118,7 @@ ht-degree: 0%
 
 1. 确保您有权访问AEM服务器，并且已连接到该服务器。
 1. 检查参数submitUrl是否正确。
-1. 使用调试选项作为&#x200B;**1-a5-b5-c5**&#x200B;启用HTML5表单](/help/forms/using/enable-logs.md)的[日志中提到的客户端日志。 然后渲染表单并单击提交。 打开浏览器调试控制台并检查是否存在错误。
+1. 使用调试选项作为&#x200B;**1-a5-b5-c5**&#x200B;启用HTML5表单[&#128279;](/help/forms/using/enable-logs.md)的日志中提到的客户端日志。 然后渲染表单并单击提交。 打开浏览器调试控制台并检查是否存在错误。
 1. 在[日志中找到HTML5表单](/help/forms/using/enable-logs.md)的服务器日志。 检查在提交期间服务器日志中是否有任何错误。
 
 ## 问题：本地化的错误消息不显示 {#problem-localized-error-messages-do-not-display}

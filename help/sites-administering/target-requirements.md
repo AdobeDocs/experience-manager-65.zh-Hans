@@ -19,7 +19,7 @@ ht-degree: 7%
 
 # 与Adobe Target集成的先决条件{#prerequisites-for-integrating-with-adobe-target}
 
-作为AEM与Adobe Target](/help/sites-administering/target.md)的[集成的一部分，您需要向Adobe Target注册、配置复制代理以及发布节点上的安全活动设置。
+作为AEM与Adobe Target[&#128279;](/help/sites-administering/target.md)的集成的一部分，您需要向Adobe Target注册、配置复制代理以及发布节点上的安全活动设置。
 
 ## 在Adobe Target中注册 {#registering-with-adobe-target}
 

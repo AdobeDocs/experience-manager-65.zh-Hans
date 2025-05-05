@@ -32,7 +32,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 
 * [高级奖励徽章](/help/communities/advanced.md)以将成员识别为专家（创建的内容质量）。
 
-**请注意**，默认情况下未启用徽章授予[](/help/communities/implementing-scoring.md#main-pars-text-237875536)。
+**请注意**，默认情况下未启用徽章授予[&#128279;](/help/communities/implementing-scoring.md#main-pars-text-237875536)。
 
 >[!CAUTION]
 >
