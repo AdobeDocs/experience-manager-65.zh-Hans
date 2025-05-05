@@ -180,7 +180,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 ### 准备Runbook并试运行 {#prepare-a-runbook-and-trial-run}
 
-建议先准备[runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook)并执行一些试验，然后再在生产环境中运行升级。
+建议先准备[runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=zh-Hans#building-the-upgrade-and-rollback-runbook)并执行一些试验，然后再在生产环境中运行升级。
 
 ### 带脱机索引的文档遍历模式 {#doc-traversal-mode-with-offline-indexing}
 

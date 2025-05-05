@@ -35,7 +35,7 @@ We.Retail使用最新的Adobe Experience Manager (AEM)技术，例如HTL、响�
 | [全局化网站结构](/help/sites-administering/tc-bp.md) | We.Retail包括语言母版，这些母版将实时复制到国家/地区特定的站点中。 | [试用！](/help/sites-developing/we-retail-globalized-site-structure.md) |
 | [响应布局](/help/sites-authoring/responsive-layout.md) | 所有页面都具有响应式布局，可动态调整以适应屏幕和设备大小。 | [试用！](/help/sites-developing/we-retail-responsive-layout.md) |
 | [可编辑的模板](/help/sites-developing/page-templates-editable.md) | 所有页面都基于可编辑的模板，允许非开发人员调整和自定义模板。 | [试用！](/help/sites-developing/we-retail-editable-templates.md) |
-| [HTML模板语言](https://experienceleague.adobe.com/en/docs/experience-manager-htl/content/overview) | 所有组件都基于HTL |  |
+| [HTML模板语言](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-htl/content/overview) | 所有组件都基于HTL |  |
 | [电子商务功能](/help/commerce/cif-classic/developing/ecommerce.md) | 功能产品目录 |  |
 | [社区站点](/help/communities/overview.md) | 允许访客加入社区讨论、阅读博客等 |  |
 | [核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/introduction) | 所有组件都基于新的核心组件，并且更加可用，可开箱即用且可由用户配置 | [试用！](/help/sites-developing/we-retail-core-components.md) |

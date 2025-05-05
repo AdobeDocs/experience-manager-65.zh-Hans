@@ -40,7 +40,7 @@ Dynamic Media - Scene7模式包括对360个视频资源交付的本机支持。 
 
 您可以使用AdobePremier Pro查看和编辑360/VR素材。 例如，您可以在场景中正确放置徽标和文本，并应用专门为等矩形介质设计的效果和过渡。
 
-查看[编辑360/VR视频](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)。
+查看[编辑360/VR视频](https://helpx.adobe.com/cn/premiere-pro/how-to/edit-360-vr-video.html)。
 
 ## 上传资产以用于360视频查看器 {#uploading-assets-for-use-with-the-video-viewer}
 

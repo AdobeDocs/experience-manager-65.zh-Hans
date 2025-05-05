@@ -19,7 +19,7 @@ ht-degree: 0%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 您可以使用工作流模型将业务逻辑转换为自动重复流程。 模型可帮助您定义和执行一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。 您可以[在模型中包括各种AEM Workflow步骤以实现业务逻辑](/help/sites-developing/workflows-models.md#extending-aem)。
@@ -89,7 +89,7 @@ Forms Workflow步骤在AEM工作流中执行特定于AEM Forms的操作。 这�
    * **使用以下方式保存布局模板：**&#x200B;使用相对于有效负荷的路径保存布局模板，或将其存储在Document数据类型的变量中。 [布局模板](../../forms/using/layout-design-details.md)引用您使用Forms Designer创建的XDP文件。 仅当从“类型”下拉列表中选择交互式通信代理UI时，此选项才可用。
 
 * **代理人>分配选项：**&#x200B;指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或者将任务分配给特定的AEM用户或组。
-* **参与者选择器：**&#x200B;在“分配选项”字段中选择了&#x200B;**动态到用户或组**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[将工作流动态分配给用户](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[创建自定义Adobe Experience Manager动态参与者步骤。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&amp;CID=RedirectAEMCommunityKautuk)
+* **参与者选择器：**&#x200B;在“分配选项”字段中选择了&#x200B;**动态到用户或组**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[将工作流动态分配给用户](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[创建自定义Adobe Experience Manager动态参与者步骤。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans&amp;CID=RedirectAEMCommunityKautuk)
 
 * **参与者：**&#x200B;在&#x200B;**参与者选择器**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;选项时，该字段可用。 利用字段，可为RandomParticipantChooser选项选择用户或组。
 

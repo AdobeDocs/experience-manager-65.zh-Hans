@@ -35,7 +35,7 @@ ht-degree: 2%
 >
 >* [将工作流应用到页面](/help/sites-authoring/workflows-applying.md)
 >* [如何将工作流应用于DAM资源](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/cn/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [翻译项目](/help/sites-administering/tc-manage.md)
 >
 

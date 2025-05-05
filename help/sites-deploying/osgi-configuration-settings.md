@@ -37,7 +37,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 >[!NOTE]
 >
->可以使用[AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html)中的OSGi配置差异工具列出默认OSGi配置。
+>可以使用[AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=zh-Hans)中的OSGi配置差异工具列出默认OSGi配置。
 
 >[!NOTE]
 >
@@ -273,7 +273,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 >[!CAUTION]
 >
->更改&#x200B;**Minify**&#x200B;或&#x200B;**Gzip**&#x200B;的设置时，删除clientlibs缓存的内容。 有关详细信息，请参阅[知识库文章](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html)。
+>更改&#x200B;**Minify**&#x200B;或&#x200B;**Gzip**&#x200B;的设置时，删除clientlibs缓存的内容。 有关详细信息，请参阅[知识库文章](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=zh-Hans)。
 
 >[!NOTE]
 >

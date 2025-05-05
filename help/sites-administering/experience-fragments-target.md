@@ -48,7 +48,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 >有关更多信息，另请参阅：
 >
 >* [Adobe Target 开发](https://developers.adobetarget.com/)
->* [核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+>* [核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=zh-Hans)
 >
 
 ## 前提条件 {#prerequisites}
@@ -100,7 +100,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
    >
    >请参阅核心组件：
    >
-   >[核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html)
+   >[核心组件 – 体验片段](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/experience-fragment.html?lang=zh-Hans)
 
    在 **Adobe Target** 下，选择：
 
@@ -170,7 +170,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 ## 在 Adobe Target 中使用体验片段 {#using-your-experience-fragments-in-adobe-target}
 
-执行上述任务后，体验片段会显示在Adobe Target的“选件”页面中。 查看[特定的Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html)以了解可以实现的目标。
+执行上述任务后，体验片段会显示在Adobe Target的“选件”页面中。 查看[特定的Target文档](https://experienceleague.adobe.com/docs/target/using/experiences/offers/aem-experience-fragments.html?lang=zh-Hans)以了解可以实现的目标。
 
 >[!NOTE]
 >

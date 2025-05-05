@@ -102,7 +102,7 @@ ht-degree: 0%
 
 ### 窗体设计注意事项 {#form-design-considerations}
 
-带可流动布局的Forms基于在Designer中创建的表单设计。 表单设计指定一组布局、呈现和数据捕获规则，包括基于用户输入计算值。 数据输入到表单中时将应用规则。 添加到表单的字段是表单设计内的子表单。 例如，在上图所示的采购订单表单中，每行都是一个子表单。 有关创建包含子表单的表单设计的信息，请参阅[创建具有可流动布局的采购订单表单](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)。
+带可流动布局的Forms基于在Designer中创建的表单设计。 表单设计指定一组布局、呈现和数据捕获规则，包括基于用户输入计算值。 数据输入到表单中时将应用规则。 添加到表单的字段是表单设计内的子表单。 例如，在上图所示的采购订单表单中，每行都是一个子表单。 有关创建包含子表单的表单设计的信息，请参阅[创建具有可流动布局的采购订单表单](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9_cn)。
 
 ### 了解数据子组 {#understanding-data-subgroups}
 

@@ -91,7 +91,7 @@ SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HT
 >
 >本文档仅将We.Retail日志应用程序用于演示目的。 请勿用于任何项目工作。
 >
->任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用React或Angular的SPA项目，并使用SPA SDK。AEM上的所有SPA项目都应基于SPA Starter Kit的Maven Archetype。
+>任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用React或Angular的SPA项目，并使用SPA SDK。AEM上的所有SPA项目都应基于SPA Starter Kit的Maven Archetype。
 
 ## 页面编辑器叠加同步 {#page-editor-overlay-synchronization}
 

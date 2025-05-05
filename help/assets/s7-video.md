@@ -66,7 +66,7 @@ Scene7视频组件支持以下格式：
 
 如果您不需要资源的工作流或版本控制，请将资源上传到Scene7。 以下是推荐的工作流：
 
-1. 在Dynamic Media Classic中，[设置计划的FTP上传和编码到Scene7（系统自动）](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp)。
+1. 在Dynamic Media Classic中，[设置计划的FTP上传和编码到Scene7（系统自动）](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=zh-Hans#upload-files-using-via-ftp)。
 1. 在Experience Manager中，在Content Finder的&#x200B;**[!UICONTROL Scene7]**&#x200B;选项卡中访问WCM中的视频资源。
 1. 具有&#x200B;**[!UICONTROL Scene7视频]**&#x200B;组件的作者。
 
@@ -85,7 +85,7 @@ Scene7视频组件支持以下格式：
 
    >[!NOTE]
    >
-   >有关视频预设含义的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)。
+   >有关视频预设含义的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=zh-Hans#video-presets-for-encoding-video-files)。
    >
    >Adobe建议您在配置通用预设时同时选择两个自适应视频集或选择&#x200B;**[!UICONTROL 自适应视频编码]**&#x200B;选项。
 

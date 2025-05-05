@@ -87,7 +87,7 @@ SharePoint连接器可从[软件分发](https://experience.adobe.com/#/downloads
 
 ### 标准安装 {#standard-installation}
 
-Software Distribution用于分发产品功能、示例和修补程序。 有关详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution)。
+Software Distribution用于分发产品功能、示例和修补程序。 有关详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans#software-distribution)。
 
 
 #### 与AEM集成 {#integrating-with-aem}

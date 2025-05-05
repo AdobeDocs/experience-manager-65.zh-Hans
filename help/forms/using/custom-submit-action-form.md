@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 自适应表单需要提交操作来处理用户指定的数据。 提交操作确定使用自适应表单提交的数据上执行的任务。 Adobe Experience Manager (AEM)包括[现成的提交操作](../../forms/using/configuring-submit-actions.md)，用于演示您可以使用用户提交的数据执行的自定义任务。 例如，您可以执行各种任务，如发送电子邮件或存储数据。
@@ -106,7 +106,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 ## 创建自定义提交操作 {#creating-a-custom-submit-action}
 
-执行以下步骤可创建自定义提交操作，将数据保存在CRX存储库中，并向您发送电子邮件。 自适应表单包含现成的提交操作存储内容（已弃用），可将数据保存在CRX存储库中。 此外，CQ还提供可用于发送电子邮件的[Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans) API。 在使用邮件API之前，请通过系统控制台[配置](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en&amp;wcmmode=disabled)天CQ邮件服务。 您可以重用“存储内容（已弃用）”操作将数据存储在存储库中。 在CRX存储库中的/libs/fd/af/components/guidesubmittype/store位置提供了“存储内容（已弃用）”操作。
+执行以下步骤可创建自定义提交操作，将数据保存在CRX存储库中，并向您发送电子邮件。 自适应表单包含现成的提交操作存储内容（已弃用），可将数据保存在CRX存储库中。 此外，CQ还提供可用于发送电子邮件的[Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans) API。 在使用邮件API之前，请通过系统控制台[配置](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans&amp;wcmmode=disabled)天CQ邮件服务。 您可以重用“存储内容（已弃用）”操作将数据存储在存储库中。 在CRX存储库中的/libs/fd/af/components/guidesubmittype/store位置提供了“存储内容（已弃用）”操作。
 
 1. 登录到URL https://&lt;server>：&lt;port>/crx/de/index.jsp上的CRXDE Lite。 在/apps/custom_submit_action文件夹中创建具有属性sling：Folder并命名为store_and_mail的节点。 创建custom_submit_action文件夹（如果尚不存在）。
 

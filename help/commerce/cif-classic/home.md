@@ -19,7 +19,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->CIF Classic已弃用，并从AEM 6.5 SP 22中删除。  如果您需要兼容包，请[联系Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。
+>CIF Classic已弃用，并从AEM 6.5 SP 22中删除。  如果您需要兼容包，请[联系Adobe客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)。
 >
 >* 新项目应使用[AEM CIF](/help/commerce/cif/introduction.md)。
 >* 现有CIF Classic应[迁移到AEM CIF](/help/commerce/cif/migration.md)。

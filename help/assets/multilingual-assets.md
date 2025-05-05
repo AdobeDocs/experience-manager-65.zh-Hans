@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 通过[!DNL Adobe Experience Manager Assets]可自动执行资产（包括二进制文件、元数据和标记）的翻译工作流，以生成其他语言的资产以用于多语言项目。

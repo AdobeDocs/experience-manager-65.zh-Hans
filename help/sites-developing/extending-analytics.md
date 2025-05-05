@@ -105,7 +105,7 @@ ContextHub的&#x200B;**其他事件：**
 
 >[!NOTE]
 >
->另请参阅完整的[ContextHub API引用](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>另请参阅完整的[ContextHub API引用](https://helpx.adobe.com/cn/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
 
 ## 添加记录回调 {#adding-record-callbacks}
 

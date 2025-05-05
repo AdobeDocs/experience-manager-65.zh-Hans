@@ -24,9 +24,9 @@ ht-degree: 7%
 
 了解您的特定部署和站点设计所需的内容
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)
 
-另请参阅主[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
+另请参阅主[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)。
 
 ## Dispatcher缓存 {#dispatcher-caching}
 
@@ -42,7 +42,7 @@ AEM Communities的Dispatcher缓存让Dispatcher能够为社区站点的页面提
 
 ### 要求 {#requirements}
 
-* Dispatcher版本4.1.2或更高版本(有关最新版本，请参阅[安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html))
+* Dispatcher版本4.1.2或更高版本(有关最新版本，请参阅[安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=zh-Hans))
 * [ACS AEM Commons包](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 版本3.3.2或更高版本
@@ -69,7 +69,7 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 ## Dispatcher筛选器 {#dispatcher-filters}
 
-`dispatcher.any`文件的/filter部分记录在[配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)中。
+`dispatcher.any`文件的/filter部分记录在[配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)中。
 
 本节介绍社区功能正常运行可能需要的条目。
 
@@ -79,7 +79,7 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 另请参阅：
 
-* [Dispatcher安全核对清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
+* [Dispatcher安全核对清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=zh-Hans)
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 >[!CAUTION]
 >
->请参阅 [Dispatcher 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)以了解使用 Dispatcher 限制访问时的更多注意事项。有关 AEM 安装的其他安全详细信息，另请阅读 [AEM 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
+>请参阅 [Dispatcher 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=zh-Hans)以了解使用 Dispatcher 限制访问时的更多注意事项。有关 AEM 安装的其他安全详细信息，另请阅读 [AEM 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)。
 >
 
 应将以下条目添加到/filter部分的末尾，尤其是在所有被拒绝的条目之后。

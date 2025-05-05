@@ -37,13 +37,13 @@ ht-degree: 1%
 
 **如果有就地升级**
 
-如果您执行就地升级，则升级的实例已经具有资源和文档。 但是，必须先安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)（包括通信管理兼容包），然后才能使用资源和文档
+如果您执行就地升级，则升级的实例已经具有资源和文档。 但是，必须先安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)（包括通信管理兼容包），然后才能使用资源和文档
 
 然后，您必须通过[运行迁移实用程序](#runningmigrationutility)来更新资源和文档。
 
 **如果存在非就地安装**
 
-如果安装不恰当（全新），则必须先安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)（包括通信管理兼容包），然后才能使用资产和文档。
+如果安装不恰当（全新），则必须先安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)（包括通信管理兼容包），然后才能使用资产和文档。
 
 然后，您必须在新设置中导入资产包（zip或cmp），然后通过运行[迁移实用程序](#runningmigrationutility)来更新资产和文档。 Adobe建议仅在运行迁移实用程序后，才在新设置上创建资源。
 

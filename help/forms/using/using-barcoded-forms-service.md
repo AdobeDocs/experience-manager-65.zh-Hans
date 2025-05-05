@@ -137,9 +137,9 @@ ht-degree: 0%
 
 条码式Forms服务提供以下两个API：
 
-* **[解码](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：解码输入PDF文档或tiff图像中的所有可用条形码。 它返回另一个XML文档，该文档包含从输入文档或图像中的所有可用条形码检索的数据。
+* **[解码](https://helpx.adobe.com/cn/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：解码输入PDF文档或tiff图像中的所有可用条形码。 它返回另一个XML文档，该文档包含从输入文档或图像中的所有可用条形码检索的数据。
 
-* **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：将使用解码API解码的数据转换为XML数据。 此XML数据可以与XFA表单合并。 它会返回一个XML文档列表，每个文档对应一个条形码。
+* **[extractToXML](https://helpx.adobe.com/cn/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：将使用解码API解码的数据转换为XML数据。 此XML数据可以与XFA表单合并。 它会返回一个XML文档列表，每个文档对应一个条形码。
 
 ### 将BCF服务用于JSP或Servlet {#using-bcf-service-with-a-jsp-or-servlets}
 

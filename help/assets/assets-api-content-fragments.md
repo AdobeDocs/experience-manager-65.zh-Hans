@@ -153,8 +153,8 @@ HTTP 方法决定了要执行的操作：
 >
 >有关更多信息，请参阅：
 >
->* [已说明 CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)
->* [视频 – 使用 AEM 针对 CORS 进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
+>* [已说明 CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hans)
+>* [视频 – 使用 AEM 针对 CORS 进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=zh-Hans)
 >
 
 在具有特定身份验证要求的环境中，建议使用OAuth。
@@ -395,4 +395,4 @@ Assets可以具有多个演绎版。 这些通常作为子实体显示，一个�
 有关更多信息，请参阅：
 
 * [Assets HTTP API文档](/help/assets/mac-api-assets.md)
-* [AEM Gem会话： OAuth](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)
+* [AEM Gem会话： OAuth](https://helpx.adobe.com/cn/experience-manager/kt/eseminars/gems/aem-oauth-server-functionality-in-aem.html)

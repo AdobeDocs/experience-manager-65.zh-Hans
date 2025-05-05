@@ -184,7 +184,7 @@ AEM中显示的产品和产品数据存储在Adobe Commerce中。 接下来，�
 
 Sling模型是作为Java™实现的，并且可在所生成项目的&#x200B;**core**&#x200B;模块中找到。
 
-使用[您选择的IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)导入Venia项目。 使用的屏幕截图来自[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?#microsoft-visual-studio-code)。
+使用[您选择的IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hans#set-up-the-development-ide)导入Venia项目。 使用的屏幕截图来自[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hans&#microsoft-visual-studio-code)。
 
 1. 在IDE中的&#x200B;**core**&#x200B;模块下导航到： `core/src/main/java/com/venia/core/models/commerce/MyProductTeaser.java`。
 
@@ -324,9 +324,9 @@ Sling模型是作为Java™实现的，并且可在所生成项目的&#x200B;**c
 
 ## 自定义产品Teaser的标记 {#customize-markup-product-teaser}
 
-AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖组件用于呈现其标记的[HTL脚本](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)来实现的。 HTML模板语言(HTL)是一种轻量级模板语言，AEM组件使用它根据创作的内容动态呈现标记，从而允许组件重用。 例如，产品Teaser可以重复使用以显示不同的产品。
+AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖组件用于呈现其标记的[HTL脚本](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)来实现的。 HTML模板语言(HTL)是一种轻量级模板语言，AEM组件使用它根据创作的内容动态呈现标记，从而允许组件重用。 例如，产品Teaser可以重复使用以显示不同的产品。
 
-在本例中，您希望在Teaser顶部呈现横幅，以表明产品基于自定义属性是“环保的”。 自定义组件的标记[的设计模式是所有AEM组件的标准模式，而不仅仅是AEM CIF核心组件的标准模式。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-the-markup)
+在本例中，您希望在Teaser顶部呈现横幅，以表明产品基于自定义属性是“环保的”。 自定义组件的标记[的设计模式是所有AEM组件的标准模式，而不仅仅是AEM CIF核心组件的标准模式。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hans#customizing-the-markup)
 
 >[!NOTE]
 >
@@ -346,7 +346,7 @@ AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖组�
        componentGroup="Venia - Commerce"/>
    ```
 
-   该项目中的产品Teaser组件的组件定义如上所示。 注意属性`sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`。 这是创建[代理组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html#create-proxy-components)的示例。 您可以使用`sling:resourceSuperType`继承所有功能，而不是从AEM CIF核心组件复制和粘贴所有产品Teaser HTL脚本。
+   该项目中的产品Teaser组件的组件定义如上所示。 注意属性`sling:resourceSuperType="core/cif/components/commerce/productteaser/v1/productteaser"`。 这是创建[代理组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html?lang=zh-Hans#create-proxy-components)的示例。 您可以使用`sling:resourceSuperType`继承所有功能，而不是从AEM CIF核心组件复制和粘贴所有产品Teaser HTL脚本。
 
 1. 打开文件`productteaser.html`。 这是[CIF Product Teaser](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/productteaser.html)中`productteaser.html`文件的副本
 
@@ -386,7 +386,7 @@ AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖组�
 
    在HTL中调用Sling模型方法时，该方法的`get`和`is`部分将被丢弃，且第一个字母变为小写。 因此，`isShowBadge()`变为`.showBadge`，`isEcoFriendly`变为`.ecoFriendly`。 基于`.isEcoFriendly()`返回的布尔值，确定是否显示`<span>Eco Friendly</span>`。
 
-   有关`data-sly-test`和其他HTL块语句的详细信息，请参阅[HTL规范](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html)。
+   有关`data-sly-test`和其他HTL块语句的详细信息，请参阅[HTL规范](https://experienceleague.adobe.com/docs/experience-manager-htl/content/specification.html?lang=zh-Hans)。
 
 1. 使用您的Maven技能从命令行终端保存更改并将更新部署到AEM：
 
@@ -490,9 +490,9 @@ AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖组�
 
 ## 其他资源 {#additional-resources}
 
-- [AEM原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)
+- [AEM原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)
 - [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)
 - [自定义AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)
-- [自定义核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html)
+- [自定义核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hans)
 - [AEM Sites快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
 - [CIF产品和类别选取器的用法](use-cif-pickers.md)

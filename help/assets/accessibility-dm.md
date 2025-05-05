@@ -54,12 +54,12 @@ ht-degree: 0%
 
 所有开箱即用的[!DNL Dynamic Media]查看器组件都支持客户的键盘辅助功能。
 
-请参阅《Dynamic Media查看器参考指南》中的[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
+请参阅《Dynamic Media查看器参考指南》中的[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=zh-Hans)。
 
 ## [!DNL Dynamic Media]个查看者中的辅助技术支持 {#assistive-technology-support-for-dm-viewers}
 
 所有[!DNL Dynamic Media]查看器组件都支持ARIA（可访问的富互联网应用程序）角色和属性，以改进与屏幕阅读器等辅助技术的集成。
-请参阅Dynamic Media查看器参考指南中的任何自定义查看器主题中的&#x200B;**辅助技术支持**&#x200B;帮助主题。 例如，对于视频查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)；对于交互式图像查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)。
+请参阅Dynamic Media查看器参考指南中的任何自定义查看器主题中的&#x200B;**辅助技术支持**&#x200B;帮助主题。 例如，对于视频查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=zh-Hans)；对于交互式图像查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=zh-Hans#viewers-for-aem-assets-only)。
 
 ## Dynamic Media中的隐藏式字幕支持 {#closed-caption-support}
 

@@ -94,10 +94,10 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该软件包包含A
    1. 从“解决方案&#x200B;**”下拉列表中选择**&#x200B;[!UICONTROL “表单&#x200B;]&#x200B;**”。**
    2. 选择包的版本和类型。 您还可以使用“ **[!UICONTROL 搜索下载]** ”选项来筛选结果。
 1. 选择适用于您的操作系统的包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
-1. 打开[程序包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)并单击“上传程序包&#x200B;**”**&#x200B;以上传程序包。
+1. 打开[程序包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)并单击“上传程序包&#x200B;**”**&#x200B;以上传程序包。
 1. 选择程序包，然后单击“安装&#x200B;**”。**
 
-   您还可以通过AEM [Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) 文章中列出的直接链接下载包。
+   您还可以通过AEM [Forms版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans) 文章中列出的直接链接下载包。
 
 1. 安装包后，系统会提示您重新启动 AEM 实例。 **不要立即重新启动服务器。** 在停止 AEM Forms Server 之前，请等待 ServiceEvent REGISTERED 和 ServiceEvent UNREGISTERED 消息停止显示在 [AEM-Installation-Directory]/crx-quickstart/logs/error.log 文件中，并且日志稳定。
 
@@ -144,7 +144,7 @@ AEM Forms具有一些强制和可选配置。 强制配置包括配置BouncyCast
 
 #### 安装兼容包 {#install-compatibility-package}
 
-在AEM 6.5 Forms中创建客户通信的默认和推荐方法是交互式通信。 如果您已从以前的版本升级或迁移，并计划继续使用字母（通信管理），请安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=en)。
+在AEM 6.5 Forms中创建客户通信的默认和推荐方法是交互式通信。 如果您已从以前的版本升级或迁移，并计划继续使用字母（通信管理），请安装[AEMFD兼容包](https://experienceleague.adobe.com/docs/experience-manager-65/forms/upgrade-aem-forms/aem-forms-osgi-upgrade/compatibility-package.html?lang=zh-Hans)。
 
 通过AEMFD兼容包，您可以使用AEM 6.5 Forms上AEM 6.4 Forms、AEM 6.3 Forms和AEM 6.2 Forms中的以下资源：
 

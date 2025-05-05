@@ -119,7 +119,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[通道服务](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author)允许选择仅存在于发布环境中的成员和组。
+>[通道服务](https://helpx.adobe.com/cn/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author)允许选择仅存在于发布环境中的成员和组。
 
 新站点中的![用户角色](assets/site-admin-1.png)
 

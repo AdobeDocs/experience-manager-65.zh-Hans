@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Preflight应用程序用于预览内容和浏览页面。 若要深入了解预检应用程序，请单击[此处](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
+>AEM Preflight应用程序用于预览内容和浏览页面。 若要深入了解预检应用程序，请单击[此处](https://helpx.adobe.com/cn/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
 >
 
 ### 快速入门 {#getting-ahead}

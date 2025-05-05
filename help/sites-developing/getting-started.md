@@ -36,7 +36,7 @@ ht-degree: 80%
 
 教程实施利用了 AEM 的许多强大的功能。将使用以下项目实施站点：
 
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)
 * [触屏 UI](/help/sites-developing/touch-ui-concepts.md)
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)

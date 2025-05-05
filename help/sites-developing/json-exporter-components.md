@@ -92,9 +92,9 @@ GITHUB上的代码
 
 有关更多详细信息，请参阅以下内容：
 
-* Assets用户指南[&#128279;](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)中的内容片段主题
+* Assets用户指南[&#128279;](https://helpx.adobe.com/cn/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)中的内容片段主题
 
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 * [使用内容片段创作](/help/sites-authoring/content-fragments.md)
 * [内容服务的 JSON 导出器](/help/sites-developing/json-exporter.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[内容片段组件](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[内容片段组件](https://helpx.adobe.com/cn/experience-manager/core-components/using/content-fragment-component.html)

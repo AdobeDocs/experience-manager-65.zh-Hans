@@ -47,7 +47,7 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本�
 >
 >本文档仅将[WKND Spa项目应用程序](https://github.com/adobe/aem-guides-wknd-spa)用于演示目的。 请勿用于任何项目工作。
 >
->任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，该原型支持使用React或Angular的SPA项目并使用SPA SDK。
+>任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，该原型支持使用React或Angular的SPA项目并使用SPA SDK。
 
 ### 什么是 SPA？ {#what-is-a-spa}
 

@@ -24,7 +24,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->要详细了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
+>要详细了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/cn/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
 
 ## 发布/取消发布内容 {#publishing-unpublishing-the-content}
 

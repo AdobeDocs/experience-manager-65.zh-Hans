@@ -101,7 +101,7 @@ ht-degree: 2%
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-有关详细信息，请参阅[如何从JVM进行线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)文档
+有关详细信息，请参阅[如何从JVM进行线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=zh-Hans)文档
 
 ### 检查未关闭的JCR会话 {#checking-for-unclosed-jcr-sessions}
 

@@ -66,7 +66,7 @@ ht-degree: 58%
 
 **推荐**
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)是AEM服务中的第一级缓存，在CDN缓存之前。
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)是AEM服务中的第一级缓存，在CDN缓存之前。
 
 **进一步引用**
 
@@ -84,7 +84,7 @@ ht-degree: 58%
 
 请参阅：
 
-* [在AEM中使用CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
+* [在AEM中使用CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans#using-dispatcher-with-a-cdn)
 
 #### 设置HTTP缓存控制标头 {#set-http-cache-control-headers}
 

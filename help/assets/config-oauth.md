@@ -27,7 +27,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->如果需要，您可以按照[支持流程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)提交支持票证。
+>如果需要，您可以按照[支持流程](https://experienceleague.adobe.com/zh-hans?lang=en&amp;support-tab=home#support)提交支持票证。
 
 ## 现有AMS用户的OAuth配置 {#oauth-config-new-ams-users}
 
@@ -44,7 +44,7 @@ OAuth配置需要以下先决条件：
 
 ### 现有AMS和On Prem用户的OAuth配置 {#steps-config-oauth-onprem}
 
-以下步骤可由系统管理员在&#x200B;**CRXDE**&#x200B;中执行。 在[支持流程](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support)之后，AMS客户可以联系Adobe代表或提交支持工单。
+以下步骤可由系统管理员在&#x200B;**CRXDE**&#x200B;中执行。 在[支持流程](https://experienceleague.adobe.com/zh-hans?lang=en&amp;support-tab=home#support)之后，AMS客户可以联系Adobe代表或提交支持工单。
 
 1. 在`com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`中添加或更新以下属性：
 
@@ -89,7 +89,7 @@ OAuth配置需要以下先决条件：
 
 >[!NOTE]
 >
->如果发生`unsupported_grant_type`错误，请尝试安装Granite修补程序。 请参阅[从服务帐户(JWT)迁移到OAuth服务器到服务器凭据](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660)。
+>如果发生`unsupported_grant_type`错误，请尝试安装Granite修补程序。 请参阅[从服务帐户(JWT)迁移到OAuth服务器到服务器凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-24660)。
 
 ## 与Adobe Developer Console集成 {#integrate-adobe-io}
 
@@ -198,4 +198,4 @@ OAuth配置需要以下先决条件：
 >
 >* [概述以及如何培训智能标记](enhanced-smart-tags.md)
 >* [配置智能标记](config-smart-tagging.md)
->* [有关智能标记的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)
+>* [有关智能标记的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hans)

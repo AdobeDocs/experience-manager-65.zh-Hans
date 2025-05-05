@@ -116,7 +116,7 @@ Adobe可扩展元数据平台(XMP)为Adobe应用程序提供了一个通用的XM
 
    转换文件时显示的转换时间可能大于您在此处指定的值。 “转换时间”包括等待线程或进程所花费的时间、转换文件所花费的时间，以及回退转换器所花费的时间（如果适用）。 时间。 Specify a Timeout值只是转换文件所用的时间。
 
-1. （可选）在&#x200B;**指定自定义预检配置文件**&#x200B;选项中，单击“浏览”，然后选择[自定义预检配置文件](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)。 印前检查配置文件仅在将文档转换为PDF存档(PDF/A)格式时使用。
+1. （可选）在&#x200B;**指定自定义预检配置文件**&#x200B;选项中，单击“浏览”，然后选择[自定义预检配置文件](https://helpx.adobe.com/cn/acrobat/using/preflight-profiles-acrobat-pro.html)。 印前检查配置文件仅在将文档转换为PDF存档(PDF/A)格式时使用。
 1. 单击“导出”。 转换完成后，将显示指向导出文件的链接。
 1. 单击链接可查看转换后的文件。
 

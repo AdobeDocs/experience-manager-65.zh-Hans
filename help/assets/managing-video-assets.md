@@ -18,7 +18,7 @@ ht-degree: 7%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 视频格式是组织数字资产的重要组成部分。 [!DNL Adobe Experience Manager]提供了成熟的产品和功能，可在创建视频资产后管理其整个生命周期。
@@ -44,7 +44,7 @@ ht-degree: 7%
 除了[!DNL Assets]配置外，请更改以下配置以上传大型资产：
 
 * 增加令牌过期时间。 在`https://[aem_server]:[port]/system/console/configMgr`处的Web控制台中查看[!UICONTROL AdobeGranite CSRF Servlet]。 有关详细信息，请参阅[CSRF保护](/help/sites-developing/csrf-protection.md)。
-* 增加Dispatcher配置中的`receiveTimeout`。 有关详细信息，请参阅[Experience ManagerDispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)。
+* 增加Dispatcher配置中的`receiveTimeout`。 有关详细信息，请参阅[Experience ManagerDispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#renders-options)。
 
 >[!NOTE]
 >
@@ -439,7 +439,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 1. 在视频属性页面的右上角，单击&#x200B;**[!UICONTROL 保存并关闭]**。
 1. 在工具栏上，单击&#x200B;**[!UICONTROL 快速Publish]**。
 
-   另请参阅[在Experience Manager Sites中使用发布管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html)。
+   另请参阅[在Experience Manager Sites中使用发布管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=zh-Hans)。
 
    您可以选择在YouTube渠道中验证已发布的视频。
 

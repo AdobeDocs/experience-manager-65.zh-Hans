@@ -19,17 +19,17 @@ ht-degree: 1%
 
 本文档中的示例和示例可帮助您了解在OSGi环境上的AEM Forms上使用AEM Document Services 。 有关JEE环境上的AEM Forms的示例和示例，请参阅
 
-* [签名服务Java API快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?#programming-aem-forms-jee)
+* [签名服务Java API快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/signature-service-java-api-quick.html?lang=zh-Hans&#programming-aem-forms-jee)
 
-* [加密服务Java API快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?#developer-reference)
+* [加密服务Java API快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/encryption-service-java-api-quick.html?lang=zh-Hans&#developer-reference)
 
-* [Acrobat Reader扩展服务Java API快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?#developer-reference)
+* [Acrobat Reader扩展服务Java API快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=zh-Hans&#developer-reference)
 
 ## 先决条件 {#prerequisite}
 
 * 在使用DocAssurance服务API之前，[配置DocAssurance服务](/help/forms/using/install-configure-document-services.md)。
 
-* 使用您的AEM maven项目下载并配置[AEM Forms客户端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。 使用AEM Document Services构建Maven项目所需的客户端类在[AEM Forms客户端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)中可用
+* 使用您的AEM maven项目下载并配置[AEM Forms客户端SDK](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)。 使用AEM Document Services构建Maven项目所需的客户端类在[AEM Forms客户端SDK](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)中可用
 
 * 了解[如何使用Maven](/help/sites-developing/ht-projects-maven.md)构建您的AEM项目
 
@@ -71,7 +71,7 @@ DocAssurance服务包括以下服务：
 
 >[!NOTE]
 >
->所有这些服务都使用Document对象作为输入参数，可在URL [https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/index.html)上找到该输入参数的Javadoc
+>所有这些服务都使用Document对象作为输入参数，可在URL [https://helpx.adobe.com/cn/experience-manager/6-3/forms/javadocs/index.html](https://helpx.adobe.com/cn/experience-manager/6-3/forms/javadocs/index.html)上找到该输入参数的Javadoc
 
 ### 添加不可见的签名字段 {#adding-an-invisible-signature-field}
 
@@ -4466,7 +4466,7 @@ PDF Generator服务提供用于将本机文件格式转换为PDF的API。 它还
 GeneratePDFService提供API来转换各种文件格式，如.doc、.docx、.ppt、.pptx、.xls、.xlsx、.odp、.odt、.ods、.swf（已弃用）、.jpg、.bmp、.tif、.png、.html和许多其他要PDF的文件格式。 它还提供API以将PDF导出为各种文件格式并优化PDF。 该服务支持以下API：
 
 * **createPDF**：将支持的文件类型转换为PDF文档。 它支持文件格式，如Microsoft Word、Microsoft PowerPoint、Microsoft Excel和Microsoft Project。 除了这些应用程序之外，任何第三方通用PDF生成应用程序类型也可以插入到API中。
-* **exportPDF**：将PDF文档转换为支持的文件类型。 该方法接受PDF作为输入，并以指定的文件类型格式导出PDF的内容。 您可以导出封装的PostScript( eps)、HTML3.2( htm， html)、带有CSS 1.0( htm， html)、HTML4.01(jpg， jpeg， jpe)、JPEG2000( jpf， jpx， jp2， j2k， j2c， jpc)、Microsoft Word Document( doc， docx)、Microsoft Excel工作簿( xlsx)、Microsoft PowerPoint演示文稿( pptx)、PNG( png)、PDF( ps)、富文本( rtf)、文本（可访问）( txt)、文本（纯）( txt)JPEG( tif， tiff)、XML 1.0( xml)、PostScript/A-1a(sRGB)、TIFF/A-1b、PDF/A-2a(sRGB)、PDF/A-2b(sRGB)、PDF/A-3a(sRGB)、PDF PDF PDF/A-3b(sRGB)格式。 您还可以为PDF输出指定[自定义印前检查配置文件](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html)。
+* **exportPDF**：将PDF文档转换为支持的文件类型。 该方法接受PDF作为输入，并以指定的文件类型格式导出PDF的内容。 您可以导出封装的PostScript( eps)、HTML3.2( htm， html)、带有CSS 1.0( htm， html)、HTML4.01(jpg， jpeg， jpe)、JPEG2000( jpf， jpx， jp2， j2k， j2c， jpc)、Microsoft Word Document( doc， docx)、Microsoft Excel工作簿( xlsx)、Microsoft PowerPoint演示文稿( pptx)、PNG( png)、PDF( ps)、富文本( rtf)、文本（可访问）( txt)、文本（纯）( txt)JPEG( tif， tiff)、XML 1.0( xml)、PostScript/A-1a(sRGB)、TIFF/A-1b、PDF/A-2a(sRGB)、PDF/A-2b(sRGB)、PDF/A-3a(sRGB)、PDF PDF PDF/A-3b(sRGB)格式。 您还可以为PDF输出指定[自定义印前检查配置文件](https://helpx.adobe.com/cn/acrobat/using/preflight-profiles-acrobat-pro.html)。
 
 * **optimizePDF**：优化PDF文档，并将PDF文档从一种类型转换为另一种类型。 该方法接受PDF文档作为输入。
 * **htmlToPdf2**：将HTML页转换为PDF文档。 它接受HTML页面的URL作为输入。

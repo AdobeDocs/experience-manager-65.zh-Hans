@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 将Dynamic Media Classic (Scene7)功能添加到您的页面{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)是一个托管解决方案，用于管理、增强、发布富媒体资源并将其交付给Web、移动设备、电子邮件和连接到Internet的显示和打印。
+[Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=zh-Hans)是一个托管解决方案，用于管理、增强、发布富媒体资源并将其交付给Web、移动设备、电子邮件和连接到Internet的显示和打印。
 
 您可以在多种查看器中查看在Dynamic Media Classic (Scene7)中发布的Experience Manager资源：
 

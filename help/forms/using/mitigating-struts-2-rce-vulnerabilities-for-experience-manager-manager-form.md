@@ -32,9 +32,9 @@ Struts 2是一种用于开发Java EE Web应用程序的流行开放源码Web应�
 
 | 发行版本 | 当前版本 | 用户操作 |
 |---|---|---|
-| 在JEE上Experience Manager6.5 Forms | 6.5.19.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
-| 在JEE上Experience Manager6.5 Forms | 6.5.13.0 - 6.5.18.0 | 使用以下方法之一： <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en">安装最新的Service Pack </a> </li> <li> <a href ="#use-manual-mitigation-steps">使用手动缓解步骤</a> |
-| 在JEE上Experience Manager6.5 Forms | 6.5 - 6.5.12.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **注意：** AEM Forms当前支持版本6.5.13.0到6.5.19.0。如果您使用的是旧版本，我们建议升级到6.5.13.0或更高版本。 有关安装AEM 6.5.13.0或更高版本的说明，请参阅发行说明。 |
+| 在JEE上Experience Manager6.5 Forms | 6.5.19.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans) |
+| 在JEE上Experience Manager6.5 Forms | 6.5.13.0 - 6.5.18.0 | 使用以下方法之一： <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans">安装最新的Service Pack </a> </li> <li> <a href ="#use-manual-mitigation-steps">使用手动缓解步骤</a> |
+| 在JEE上Experience Manager6.5 Forms | 6.5 - 6.5.12.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans) </br> </br> **注意：** AEM Forms当前支持版本6.5.13.0到6.5.19.0。如果您使用的是旧版本，我们建议升级到6.5.13.0或更高版本。 有关安装AEM 6.5.13.0或更高版本的说明，请参阅发行说明。 |
 
 ### 采用手动缓解步骤 {#use-manual-mitigation-steps}
 

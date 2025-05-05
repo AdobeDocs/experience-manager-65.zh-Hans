@@ -180,7 +180,7 @@ LDAP身份验证在存储库级别进行，因此它直接由存储库处理。 
 
 Dispatcher是Adobe Experience Manager用于缓存和/或负载平衡的工具。 它可以与企业级Web服务器一起使用。
 
-有关完整的详细信息，请参阅[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)，特别是[配置Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)以了解更多配置详细信息。
+有关完整的详细信息，请参阅[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)，特别是[配置Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)以了解更多配置详细信息。
 
 ### 配置AEMLiveCycle连接器 {#configuring-aem-livecycle-connector}
 

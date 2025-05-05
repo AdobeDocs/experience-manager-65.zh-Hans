@@ -77,7 +77,7 @@ AEM Mobile提供了用于创建移动应用程序的Phonegap应用程序Blueprin
 存在用于构建Cloud Service以及将AdobeMobile Services SDK插件集成到应用程序中的其他（和可选）选项卡。
 
 * 构建：单击管理配置并在此处设置您的build.phonegap.com构建服务。 然后，您可以从下拉菜单中选择新创建的PhoneGap Build云服务。
-* Analytics：单击管理配置并设置您的[AdobeMobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html)云服务。 然后，您可以从下拉菜单中选择新创建的移动服务，以将其集成到移动应用程序中。
+* Analytics：单击管理配置并设置您的[AdobeMobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=zh-Hans)云服务。 然后，您可以从下拉菜单中选择新创建的移动服务，以将其集成到移动应用程序中。
 
 >[!NOTE]
 >

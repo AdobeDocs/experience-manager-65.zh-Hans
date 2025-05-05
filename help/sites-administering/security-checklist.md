@@ -45,7 +45,7 @@ ht-degree: 1%
 
 ### 安装安全修补程序 {#install-security-hotfixes}
 
-确保您已安装Adobe[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)提供的最新安全修补程序。
+确保您已安装Adobe[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans)提供的最新安全修补程序。
 
 ### 更改AEM和OSGi Console管理帐户的默认密码 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -110,11 +110,11 @@ Adobe建议定义自定义错误处理程序页面，特别是对于404和500 HT
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅[如何创建自定义脚本或错误处理程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html)。
+>有关更多详细信息，请参阅[如何创建自定义脚本或错误处理程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=zh-Hans)。
 
 ### 完成Dispatcher安全核对清单 {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher是您的基础架构中的一个关键部分。 Adobe建议您完成[Dispatcher安全核对清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)。
+AEM Dispatcher是您的基础架构中的一个关键部分。 Adobe建议您完成[Dispatcher安全核对清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=zh-Hans)。
 
 >[!CAUTION]
 >

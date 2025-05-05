@@ -71,7 +71,7 @@ ht-degree: 0%
 
 通过添加和覆盖这些客户端库管理的CSS，可以将特定于品牌的样式应用到AEM CIF核心组件。 了解如何构建客户端库并将其包含在页面上至关重要。
 
-[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html)是一个专用的[webpack](https://webpack.js.org/)项目，用于管理项目的所有前端资源。 这允许前端开发人员使用任意数量的语言和技术，如[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/)等。
+[ui.frontend](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/uifrontend.html?lang=zh-Hans)是一个专用的[webpack](https://webpack.js.org/)项目，用于管理项目的所有前端资源。 这允许前端开发人员使用任意数量的语言和技术，如[TypeScript](https://www.typescriptlang.org/)、[Sass](https://sass-lang.com/)等。
 
 `ui.frontend`模块也是Maven模块，通过使用NPM模块[aem-clientlib-generator](https://github.com/wcm-io-frontend/aem-clientlib-generator)与更大的项目集成。 在生成期间，`aem-clientlib-generator`将编译后的CSS和JavaScript文件复制到`ui.apps`模块中的客户端库中。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
 
 ## 更新Teaser样式 {#ui-frontend-module}
 
-接下来，对Teaser样式进行小幅更改，以了解`ui.frontend`模块和客户端库的工作方式。 使用[您选择的IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#set-up-the-development-ide)导入Venia项目。 使用的屏幕截图来自[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html#microsoft-visual-studio-code)。
+接下来，对Teaser样式进行小幅更改，以了解`ui.frontend`模块和客户端库的工作方式。 使用[您选择的IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hans#set-up-the-development-ide)导入Venia项目。 使用的屏幕截图来自[Visual Studio Code IDE](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/development-tools.html?lang=zh-Hans#microsoft-visual-studio-code)。
 
 1. 导航并展开&#x200B;**ui.frontend**&#x200B;模块并将文件夹层次结构展开到： `ui.frontend/src/main/styles/commerce`：
 
@@ -445,7 +445,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
    ```
 
    >[!NOTE]
-   >还有其他[IDE设置和工具](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html#set-up-an-integrated-development-environment)可以直接将项目文件同步到本地AEM实例，而无需执行完整的Maven构建。
+   >还有其他[IDE设置和工具](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-a-local-aem-development-environment.html?lang=zh-Hans#set-up-an-integrated-development-environment)可以直接将项目文件同步到本地AEM实例，而无需执行完整的Maven构建。
 
 ## 查看更新的产品Teaser {#view-updated-product-teaser}
 
@@ -473,7 +473,7 @@ AEM还会尝试缓存客户端库以提高性能。 有时，在代码部署后�
 
 ## 奖励质询 {#bonus-challenge}
 
-使用[AEM样式系统](/help/sites-authoring/style-system.md)创建两个可由内容作者打开/关闭的样式。 [使用样式系统开发](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html)包括有关如何完成此操作的详细步骤和信息。
+使用[AEM样式系统](/help/sites-authoring/style-system.md)创建两个可由内容作者打开/关闭的样式。 [使用样式系统开发](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=zh-Hans)包括有关如何完成此操作的详细步骤和信息。
 
 ![附加质询 — 样式系统](../assets/style-cif-component/bonus-challenge.png)
 
@@ -481,7 +481,7 @@ AEM还会尝试缓存客户端库以提高性能。 有时，在代码部署后�
 
 * [AEM项目原型](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)
-* [设置本地AEM开发环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html)
+* [设置本地AEM开发环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-Hans)
 * [客户端库](/help/sites-developing/clientlibs.md)
 * [AEM Sites快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
-* [使用样式系统进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html)
+* [使用样式系统进行开发](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=zh-Hans)

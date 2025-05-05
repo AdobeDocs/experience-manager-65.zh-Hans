@@ -19,7 +19,7 @@ ht-degree: 11%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Experience Manager Assets]是一种数字资产管理(DAM)解决方案，可以与[!DNL Adobe Creative Cloud]集成以帮助DAM用户与创意团队合作，从而简化内容创建过程中的协作。
@@ -30,7 +30,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->[!DNL Experience Manager]到[!DNL Creative Cloud]的文件夹共享已弃用，不再包含在本指南中。 Adobe建议使用较新的功能，如[AdobeAsset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)或[Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html)，以便创意用户能够访问[!DNL Experience Manager]中管理的资源。
+>[!DNL Experience Manager]到[!DNL Creative Cloud]的文件夹共享已弃用，不再包含在本指南中。 Adobe建议使用较新的功能，如[AdobeAsset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)或[Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=zh-Hans)，以便创意用户能够访问[!DNL Experience Manager]中管理的资源。
 
 ## 创意人员、营销人员和DAM用户的Collaboration需求 {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
@@ -45,10 +45,10 @@ ht-degree: 11%
 | 针对所涉角色的价值主张 | Adobe产品 | 涉及的曲面 |
 |---|---|---|
 | 创意用户从[!DNL Experience Manager]中发现资源，打开并使用这些资源，编辑对[!DNL Experience Manager]的更改并将其上传到[!DNL Experience Manager]中，无需离开[!DNL Creative Cloud]应用。 | [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], 和 [!DNL Adobe InDesign]. |
-| 业务用户可简化打开和使用资产、编辑和上传对[!DNL Experience Manager]的更改，以及从桌面环境将新文件上传到[!DNL Experience Manager]的过程。 他们使用通用集成在本机桌面应用程序中打开任何资源类型，包括非Adobe资源类型。 | [Experience Manager的桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Win和Mac桌面上的[!DNL Experience Manager]桌面应用程序 |
+| 业务用户可简化打开和使用资产、编辑和上传对[!DNL Experience Manager]的更改，以及从桌面环境将新文件上传到[!DNL Experience Manager]的过程。 他们使用通用集成在本机桌面应用程序中打开任何资源类型，包括非Adobe资源类型。 | [Experience Manager的桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans) | Win和Mac桌面上的[!DNL Experience Manager]桌面应用程序 |
 | 营销人员和商业用户从[!DNL Experience Manager]中发现、预览、许可并保存和管理[!DNL Adobe Stock]资源。 已许可和保存的资产提供选择[!DNL Adobe Stock]元数据以实现更好的管理。 | [Experience Manager与Adobe Stock集成](aem-assets-adobe-stock.md) | [!DNL Experience Manager] Web界面 |
 
-本文主要介绍协作需求的前两个方面。作为一个用例，简要提及了资产的大规模分发和采购。对于此类需求解决方案，请考虑 Adobe Brand Portal 或 Asset Share Commons。备用解决方案(如[Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html))可基于[Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)组件[Link Share](/help/assets/link-sharing.md)使用[Experience Manager Assets](/help/assets/manage-assets.md)构建的解决方案，应根据特定要求审查这些解决方案。
+本文主要介绍协作需求的前两个方面。作为一个用例，简要提及了资产的大规模分发和采购。对于此类需求解决方案，请考虑 Adobe Brand Portal 或 Asset Share Commons。备用解决方案(如[Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=zh-Hans))可基于[Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/)组件[Link Share](/help/assets/link-sharing.md)使用[Experience Manager Assets](/help/assets/manage-assets.md)构建的解决方案，应根据特定要求审查这些解决方案。
 
 ![Creative CloudExperience Manager连接，请确定要使用的功能](assets/creative-connections-aem.png)
 
@@ -64,9 +64,9 @@ ht-degree: 11%
 | 发现 — 从DAM搜索资源 | 是 | [!DNL Experience Manager] Web界面和桌面操作 | |
 | 使用 — 打开资源 | 是 | 是 | 从Web界面[&#128279;](manage-assets.md#previewing-assets)或从Finder打开 |
 | 使用 — 将来自DAM的资源放入文档中 | 是 — 嵌入 | 是 — 链接或嵌入 | [!DNL Experience Manager]桌面应用程序允许将资源作为本地文件系统中的文件访问。 本机应用程序中的这些链接由本地路径表示。 |
-| 编辑 — 打开以进行编辑 | 是 — 签出操作 | 是 — 打开操作（在网络共享中） | 默认情况下，[在AAL中签出](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)会将资源保存到用户的Creative Cloud Storage帐户(由Creative Cloud应用程序同步)。 |
+| 编辑 — 打开以进行编辑 | 是 — 签出操作 | 是 — 打开操作（在网络共享中） | 默认情况下，[在AAL中签出](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)会将资源保存到用户的Creative Cloud Storage帐户(由Creative Cloud应用程序同步)。 |
 | 编辑 — DAM外部正在进行工作 | 是 — 在同步到桌面的Creative Cloud存储帐户中可用的资源。 | 是 | |
-| 编辑 — 上传更改 | 是 — [签入操作](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)带有可选注释 | 是 | |
+| 编辑 — 上传更改 | 是 — [签入操作](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)带有可选注释 | 是 | |
 | 上传 — 单个文件 | 是 — 上传当前活动文档 | 是 | [通过Web界面上传](manage-assets.md#uploading-assets) |
 | 上传 — 多个文件/分层文件夹结构 | 否 | 是 | [通过Web界面](manage-assets.md#uploading-assets)或通过自定义脚本或工具上传。 |
 | 其他 — 用户和登录 | 可识别登录到Creative Cloud桌面应用程序的Creative Cloud用户(SSO) | [!DNL Experience Manager]个用户和凭据 | 这两个解决方案的用户都计入了[!DNL Experience Manager]用户配额。 |
@@ -75,7 +75,7 @@ ht-degree: 11%
 
 要支持资产分发用例，应考虑其他解决方案：
 
-* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)，用于可配置的SaaS加载项到[!DNL Experience Manager Assets]以发布资源。
+* [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=zh-Hans)，用于可配置的SaaS加载项到[!DNL Experience Manager Assets]以发布资源。
 * 自定义解决方案是基于[资产共享公用](https://adobe-marketing-cloud.github.io/asset-share-commons/)代码库创建的。
 * [!DNL Experience Manager] [链接共享](/help/assets/link-sharing.md)以使用链接按需共享资产。
 * [Experience Manager Assets Web界面](/help/assets/manage-assets.md)，其中包含外部参与方的区域，这些区域由[!DNL Experience Manager]访问控制设置进行保护，并包含必要的IT/网络配置调整，从而为这些外部用户授予访问[!DNL Experience Manager]的权限。
@@ -96,7 +96,7 @@ ht-degree: 11%
 
 ### 使用[!DNL Experience Manager]和[!DNL Creative Cloud]集成时的注意事项 {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* 查看[桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
+* 查看[桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=zh-Hans#best-practices-to-prevent-troubles)
 * 查看[Adobe Stock集成](aem-assets-adobe-stock.md)
 * 查看[AdobeAsset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
 
@@ -184,7 +184,7 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 使用以下策略提供对最终/已批准资产的访问：
 
 * 如果Asset Link不起作用，请使用桌面应用程序。
-* 使用[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html)将资源安全地分发给外部合作伙伴
+* 使用[Experience Manager Assets Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html?lang=zh-Hans)将资源安全地分发给外部合作伙伴
 * 使用基于[资产共享公域](https://adobe-marketing-cloud.github.io/asset-share-commons/)的分发和来源门户的自定义实施
 * 使用在[!DNL Experience Manager]中设置的访问控制和必要的网络基础架构(例如，VPN和IP允许列表)为外部各方授予访问DAM中专用内容区域的权限。 他们可以使用[!DNL Experience Manager] Web UI获取资产并将新内容上传到您的DAM。
 
@@ -216,7 +216,7 @@ Adobe Asset Link为以下用例提供了良好的支持：
 
 您可以使用以下上载功能：
 
-* 要批量上传大型/分层文件夹，请使用提供[文件夹上传](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#upload-and-add-new-assets-to-aem)功能的[!DNL Experience Manager]桌面应用程序。 您还可以上载分层文件夹结构。 [!DNL Assets]在后台上传，因此它不与Web浏览器会话绑定
+* 要批量上传大型/分层文件夹，请使用提供[文件夹上传](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#upload-and-add-new-assets-to-aem)功能的[!DNL Experience Manager]桌面应用程序。 您还可以上载分层文件夹结构。 [!DNL Assets]在后台上传，因此它不与Web浏览器会话绑定
 * 若要从单个文件夹上传几个文件，请将这些文件直接拖到Web界面或使用[!DNL Assets] Web界面中的“创建”选项。
 * 根据您的业务要求，您还可以使用自定义上传程序。
 
@@ -233,6 +233,6 @@ Adobe Asset Link为以下用例提供了良好的支持：
 >[!MORELIKETHIS]
 >
 >* [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)
->* [Experience Manager桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
->* [Experience ManagerBrand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
+>* [Experience Manager桌面应用程序最佳实践](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html?lang=zh-Hans)
+>* [Experience ManagerBrand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html?lang=zh-Hans)
 >* [Experience Manager与Adobe Stock集成](aem-assets-adobe-stock.md)

@@ -51,4 +51,4 @@ ht-degree: 1%
 
 1. 单击&#x200B;**[!UICONTROL 保存]**。
 
-有关配置通信管理的详细信息，请参阅[通信管理配置属性](https://helpx.adobe.com/aem-forms/6-2/cm-configuration-properties.html)。
+有关配置通信管理的详细信息，请参阅[通信管理配置属性](https://helpx.adobe.com/cn/aem-forms/6-2/cm-configuration-properties.html)。

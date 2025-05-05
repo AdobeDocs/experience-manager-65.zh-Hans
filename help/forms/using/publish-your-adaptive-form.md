@@ -32,7 +32,7 @@ ht-degree: 2%
 ## 开始之前 {#before-you-start}
 
 * **[设置AEM Forms发布实例](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/installing-configuring-aem-forms-osgi.html)**：发布实例是在发布模式下运行的AEM [!DNL Forms]的面向公众的实例。 在生产环境中，发布实例位于组织的防火墙之外。
-* **[设置复制和反向复制](https://helpx.adobe.com/experience-manager/6-3/help/sites-deploying/replication.html)**：复制操作将内容从创作实例复制到发布实例，并将用户输入（例如，表单输入）从发布实例返回到创作实例。
+* **[设置复制和反向复制](https://helpx.adobe.com/cn/experience-manager/6-3/help/sites-deploying/replication.html)**：复制操作将内容从创作实例复制到发布实例，并将用户输入（例如，表单输入）从发布实例返回到创作实例。
 
 ## 将自适应表单作为AEM页面Publish {#publish-the-adaptive-form-as-an-aem-page}
 
@@ -54,7 +54,7 @@ AEM [!DNL Forms]提供了一个组件AEM [!DNL Forms]容器，用于将自适应
 
    您还可以在现有We.Retail [!DNL Site's]页面中嵌入自适应表单。 例如，“关于我们”页面[https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html](https://localhost:4502/editor.html/content/we-retail/us/en/about-us.html)。 这样可节省创建页面的时间。 以下步骤使用新创建的页面。
 
-   We.Retail网站随AEM一起提供。 如果未安装We.Retail网站，请参阅[We.Retail参考实施](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/we-retail.html)安装网站。
+   We.Retail网站随AEM一起提供。 如果未安装We.Retail网站，请参阅[We.Retail参考实施](https://helpx.adobe.com/cn/experience-manager/6-3/help/sites-developing/we-retail.html)安装网站。
 
 1. 选择![属性](assets/properties.png)页面信息并在新创建的We.Retail网站页面中选择&#x200B;**[!UICONTROL 编辑模板]**&#x200B;选项。 将在浏览器的新选项卡中打开页面模板。
 1. 在&#x200B;**[!UICONTROL 布局容器]**&#x200B;框中选择，然后选择![馈送管理](assets/feedmanagement.png)。 在&#x200B;**[!UICONTROL 允许的组件]**&#x200B;选项卡中，展开&#x200B;**[!UICONTROL 常规]**&#x200B;折叠面板，选择&#x200B;**[!UICONTROL AEM表单]**&#x200B;选项，然后选择![保存图标](assets/save_icon.svg)。 已为页面启用AEM [!DNL Forms]容器组件。

@@ -60,7 +60,7 @@ AEM Forms存储库中资源的路径为：
 
 >[!NOTE]
 >
->默认情况下，Applications/FormsApplication不存在。 要遵循快速启动操作，请使用Workbench创建此应用程序。 有关使用Workbench创建应用程序的信息，请参阅[流程设计入门](https://www.adobe.com/go/learn_aemforms_workbench_65)。
+>默认情况下，Applications/FormsApplication不存在。 要遵循快速启动操作，请使用Workbench创建此应用程序。 有关使用Workbench创建应用程序的信息，请参阅[流程设计入门](https://www.adobe.com/go/learn_aemforms_workbench_65_cn)。
 
 ## 快速入门(SOAP模式)：使用Java API创建文件夹 {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 

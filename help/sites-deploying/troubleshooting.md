@@ -67,7 +67,7 @@ AEM会记录您可能想要配置的详细日志，以解决安装问题。 有�
 
 >[!NOTE]
 >
->另请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)。
+>另请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hans)。
 
 
 CRX本身内存占用较少。 如果在CRX中运行的应用程序有更大的内存需求或请求内存密集型操作（例如，大型事务），则运行CRX的JVM实例必须使用适当的内存设置启动。

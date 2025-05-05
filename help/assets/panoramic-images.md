@@ -43,7 +43,7 @@ ht-degree: 0%
 
 要使全景图像查看器在Adobe Experience Manager中正常工作，请将全景图像查看器预设与Dynamic Media Classic和特定于Dynamic Media Classic的元数据同步，以便在JCR中更新查看器预设。 要完成此同步，请按照以下方式配置Dynamic Media Classic：
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started)，然后登录到您的帐户。
 
 1. 在页面的右上角附近，选择&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL Publish设置]** > **[!UICONTROL 图像服务器]**。
 1. 在“图像服务器Publish”页面上，从顶部附近的&#x200B;**[!UICONTROL Publish上下文]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 图像提供]**。

@@ -33,7 +33,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您还可以以编程方式导入和删除凭据。 (请参阅[使用AEM表单编程](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。)
+>您还可以以编程方式导入和删除凭据。 (请参阅[使用AEM表单编程](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)。)
 
 ## 导入Acrobat Reader DC Extensions凭据 {#import-a-acrobat-reader-dc-extensions-credential}
 

@@ -304,7 +304,7 @@ AEM部署有三个重要的构建块。 内容作者、编辑者和批准者用�
 
 >[!CAUTION]
 >
->关系数据库微内核的支持受限。 使用此类型的微内核之前，请与[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)联系。
+>关系数据库微内核的支持受限。 使用此类型的微内核之前，请与[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)联系。
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

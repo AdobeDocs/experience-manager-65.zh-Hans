@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要详细了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)。
+>要详细了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/cn/digital-publishing-solution/help/design-app.html)。
 
 ## 创建和管理内容 {#creating-and-managing-content}
 

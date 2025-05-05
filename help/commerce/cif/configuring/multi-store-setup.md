@@ -32,7 +32,7 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 
 ## 配置 {#configuration}
 
-1. 根据[Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)中描述的模式配置多个商店和商店视图
+1. 根据[Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)中描述的模式配置多个商店和商店视图
 
 2. 确保AEM与Adobe Commerce之间的连接正常。
 
@@ -58,7 +58,7 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 
 ## 其他资源
 
-* [Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html)
+* [Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)
 * [AEM CIF核心组件 — 多存储/站点配置](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
-* [使用多站点管理器](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html)
+* [使用多站点管理器](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=zh-Hans)
 * [重用内容：多站点管理器和 Live Copy](/help/sites-administering/msm.md)

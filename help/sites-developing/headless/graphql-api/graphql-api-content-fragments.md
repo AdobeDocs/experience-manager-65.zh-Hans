@@ -768,7 +768,7 @@ query {
   >
   >Dispatcher将后缀`.json`添加到所有保留的查询URL，以便可以缓存结果。
   >
-  >这是为了确保查询符合Dispatcher对可缓存文档的要求。 有关详细信息，请参阅[Dispatcher如何返回文档？](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F)
+  >这是为了确保查询符合Dispatcher对可缓存文档的要求。 有关详细信息，请参阅[Dispatcher如何返回文档？](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html?lang=zh-Hans#how-does-the-dispatcher-return-documents%3F)
 
 * `<conf.dispatcher.d/filters/ams_publish_filters.any>`
 

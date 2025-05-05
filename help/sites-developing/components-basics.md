@@ -66,13 +66,13 @@ ht-degree: 0%
 
 Adobe建议将负责标记和呈现的代码与控制用于选择组件内容的逻辑的代码分开。
 
-[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)支持此理念，这是一种模板化语言，旨在确保使用真正的编程语言来定义基础业务逻辑。 此（可选）逻辑可通过特定命令从HTL调用。 此机制会突出显示为给定视图调用的代码，如有必要，还允许为同一组件的不同视图使用特定逻辑。
+[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)支持此理念，这是一种模板化语言，旨在确保使用真正的编程语言来定义基础业务逻辑。 此（可选）逻辑可通过特定命令从HTL调用。 此机制会突出显示为给定视图调用的代码，如有必要，还允许为同一组件的不同视图使用特定逻辑。
 
 ### HTL与JSP {#htl-vs-jsp}
 
 HTL是AEM 6.0中引入的一种HTML模板语言。
 
-关于在开发您自己的组件时是使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)还是JSP (Java™ Server Pages)的讨论应该简单明了，因为HTL现在是推荐的AEM脚本语言。
+关于在开发您自己的组件时是使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)还是JSP (Java™ Server Pages)的讨论应该简单明了，因为HTL现在是推荐的AEM脚本语言。
 
 HTL和JSP都可用于为经典用户界面和触屏优化UI开发组件。 尽管可能会倾向于认为HTL仅适用于经典UI的触屏UI和JSP，但这是一个误解，并且更多是由于时间的原因。 触屏优化UI和HTL大约在同一时期内合并到了AEM中。 由于HTL现在是推荐语言，因此它被用于新组件，这些组件倾向于用于触屏优化UI。
 

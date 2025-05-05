@@ -192,7 +192,7 @@ ht-degree: 8%
 
 ### 新增功能 {#what-is-new-april}
 
-* 统一并简化了CIF Connector的配置设置。 有关详细信息，请查看[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)或[新的AEM CIF项目设置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
+* 统一并简化了CIF Connector的配置设置。 有关详细信息，请查看[快速入门](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=zh-Hans)或[新的AEM CIF项目设置](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=zh-Hans)
 
 ### 改进内容 {#what-is-improved-april}
 

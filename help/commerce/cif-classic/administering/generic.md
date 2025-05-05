@@ -168,7 +168,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 >
 >`/etc/commerce/products/...`
 >
->这意味着，默认情况下，[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)会阻止这些服务器，因此请根据需要进行配置。
+>这意味着，默认情况下，[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)会阻止这些服务器，因此请根据需要进行配置。
 
 #### 编辑产品信息 — 触屏优化UI {#editing-product-information-touch-optimized-ui}
 

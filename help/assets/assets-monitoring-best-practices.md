@@ -194,7 +194,7 @@ Threads
 在监视过程中，如果您遇到问题，可以执行以下一些故障排除任务，以解决[!DNL Experience Manager]部署的常见问题：
 
 * 如果使用TarMK，请经常运行Tar压缩。 有关详细信息，请参阅[维护存储库](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)。
-* 检查`OutOfMemoryError`日志。 有关详细信息，请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)。
+* 检查`OutOfMemoryError`日志。 有关详细信息，请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hans)。
 
 * 检查日志中是否存在对未索引查询、树遍历或索引遍历的任何引用。 这些指示未索引的查询或索引不足的查询。 有关优化查询和索引性能的最佳实践，请参阅[有关查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 * 使用工作流控制台验证您的工作流是否按预期执行。 如果可能，将多个工作流合并到单个工作流中。

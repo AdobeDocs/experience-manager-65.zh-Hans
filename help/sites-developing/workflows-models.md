@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->有关经典UI的使用，请参阅[AEM 6.3文档](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html)以供参考。
+>有关经典UI的使用，请参阅[AEM 6.3文档](https://helpx.adobe.com/cn/experience-manager/6-3/help/sites-developing/workflows-models.html)以供参考。
 
 您可以创建[工作流模型](/help/sites-developing/workflows.md#model)，以定义用户启动工作流时执行的一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。
 

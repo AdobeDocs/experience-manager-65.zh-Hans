@@ -19,7 +19,7 @@ ht-degree: 3%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 在[!DNL Adobe Experience Manager Assets]中，您可以执行除存储和管理资源之外的其他操作。 [!DNL Experience Manager]提供企业级资产管理功能。 您可以编辑和共享资源、运行高级搜索以及创建数十种受支持的文件格式的多个演绎版。 您还可以管理版本和数字权限、自动处理资源、管理和控制元数据、使用注释进行协作等等。
@@ -103,7 +103,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 >[!CAUTION]
 >
->当默认值为500 MB且区块大小为50 MB时，将触发区块上载。 如果您编辑[Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html)并将`timeout configuration`设置为小于资源上传所花费的时间，则在资源上传过程中会遇到会话超时情况。 因此，请更改`chunkUploadMinFileSize`和`chunksize`，以便每个区块请求都刷新会话。
+>当默认值为500 MB且区块大小为50 MB时，将触发区块上载。 如果您编辑[Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=zh-Hans)并将`timeout configuration`设置为小于资源上传所花费的时间，则在资源上传过程中会遇到会话超时情况。 因此，请更改`chunkUploadMinFileSize`和`chunksize`，以便每个区块请求都刷新会话。
 >
 >给定凭据过期超时、延迟、带宽和预期并发上传数，可让您确保选择以下内容的最大值：
 >
@@ -170,7 +170,7 @@ Dynamic Media支持通过FTP服务器批量上传资源。 如果您打算上载
 
 >[!NOTE]
 >
->要在Dynamic Media - Scene7模式下通过FTP上传资源，请在[!DNL Experience Manager]创作实例上安装功能包18912。 联系[Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support)以访问FP-18912并完成FTP帐户的设置。 有关详细信息，请参阅[安装功能包18912以进行批量资源迁移](/help/assets/bulk-ingest-migrate.md)。
+>要在Dynamic Media - Scene7模式下通过FTP上传资源，请在[!DNL Experience Manager]创作实例上安装功能包18912。 联系[Adobe客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)以访问FP-18912并完成FTP帐户的设置。 有关详细信息，请参阅[安装功能包18912以进行批量资源迁移](/help/assets/bulk-ingest-migrate.md)。
 >
 >如果您使用FTP上传资产，则会忽略[!DNL Experience Manager]中指定的上传设置。 而是使用Dynamic Media Classic中定义的文件处理规则。
 
@@ -178,7 +178,7 @@ Dynamic Media支持通过FTP服务器批量上传资源。 如果您打算上载
 
 1. 使用您选择的FTP客户端，使用从预配电子邮件收到的FTP用户名和密码登录到FTP服务器。 在FTP客户端中，将文件或文件夹上传到FTP服务器。
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)，然后登录到您的帐户。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=zh-Hans#system-requirements-dmc-app)，然后登录到您的帐户。
 
    在配置时，Adobe已提供您的凭据和登录。 如果您没有此信息，请联系Adobe客户支持。
 
@@ -883,7 +883,7 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
 * 使用同一位置中存在的相同文件名上传资源。 它可以是新资产，也可以是同一资产的修改版本。
 * 编辑[!DNL Experience Manager]中的图像并保存更改。
 * 编辑资源的元数据。
-* 使用[!DNL Experience Manager]桌面应用签出现有资产，编辑它，然后[上载更改](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets)。
+* 使用[!DNL Experience Manager]桌面应用签出现有资产，编辑它，然后[上载更改](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#edit-assets-upload-updated-assets)。
 
 您还可以通过工作流启用自动版本控制。 在为资源创建版本时，元数据和演绎版与版本一起保存。 呈现版本是相同图像的替代版本，例如上传JPEG文件的PNG呈现版本。
 
@@ -958,4 +958,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-要了解更多信息，请参阅如何使用桌面应用程序[浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)和[如何使用AdobeAsset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)。
+要了解更多信息，请参阅如何使用桌面应用程序[浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#browse-search-preview-assets)和[如何使用AdobeAsset Link](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)。

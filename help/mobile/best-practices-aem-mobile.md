@@ -28,8 +28,8 @@ ht-degree: 0%
 >
 >要深入了解插件，请参阅以下资源：
 >
->* [在AEM Mobile中使用Cordova插件](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
->* [使用特定于AEM Mobile且启用了Cordova的插件](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
+>* [在AEM Mobile中使用Cordova插件](https://helpx.adobe.com/cn/digital-publishing-solution/help/cordova-api.html)
+>* [使用特定于AEM Mobile且启用了Cordova的插件](https://helpx.adobe.com/cn/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * 使用插件功能的模板应以这样的方式编写，即仍然可以在浏览器中创作这些模板，而无需使用插件桥。

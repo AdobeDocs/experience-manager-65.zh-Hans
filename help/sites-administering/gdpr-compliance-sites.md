@@ -50,7 +50,7 @@ AEM具有[Cookie选择退出服务](/help/sites-developing/cookie-optout.md)，�
 
 AEM Sites包括与Analytics的增强型分析的可选集成，该集成使用Adobe Analytics按需服务中的功能。
 
-有关管理与Adobe Analytics相关的GDPR数据主体请求的更多信息，请参阅[Adobe Analytics和GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)。
+有关管理与Adobe Analytics相关的GDPR数据主体请求的更多信息，请参阅[Adobe Analytics和GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=zh-Hans)。
 
 ## 增强的Personalization by Target {#enhanced-personalization-by-target}
 

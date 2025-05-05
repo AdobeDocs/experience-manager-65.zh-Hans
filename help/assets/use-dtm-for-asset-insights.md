@@ -19,7 +19,7 @@ AdobeDynamic Tag Management是一款可激活您的数字营销工具的工具�
 
 >[!CAUTION]
 >
->已弃用AdobeDTM以支持[!DNL Adobe Experience Platform]，其生命周期即将结束[&#128279;](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建议您[使用 [!DNL Adobe Experience Platform] 进行资产分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)。
+>已弃用AdobeDTM以支持[!DNL Adobe Experience Platform]，其生命周期即将结束[&#128279;](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建议您[使用 [!DNL Adobe Experience Platform] 进行资产分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=zh-Hans)。
 
 执行这些步骤可通过DTM启用Assets Insights。
 

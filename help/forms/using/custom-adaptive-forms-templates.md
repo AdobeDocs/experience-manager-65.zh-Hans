@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 先决条件 {#prerequisites}
 
-* 了解AEM [页面模板](/help/sites-authoring/templates.md)和[自适应表单创作](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* 了解AEM [页面模板](/help/sites-authoring/templates.md)和[自适应表单创作](https://helpx.adobe.com/cn/aem-forms/6-1/introduction-forms-authoring.html)
 
 * 了解AEM [客户端库](/help/sites-developing/clientlibs.md)
 

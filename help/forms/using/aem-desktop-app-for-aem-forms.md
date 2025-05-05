@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM桌面应用程序允许您将Adobe Experience Manager (AEM) Assets存储库和AEM Forms二进制文件映射到您系统中的网络目录。 您可以在文件资源管理器中查看同步的资源和二进制文件，并根据需要使用各种应用程序编辑文件。 除了查看文件之外，您还可以创建、上载和删除二进制文件。 您还可以直接从软件打开、编辑和保存文件。 例如，您可以直接从Designer打开和编辑XDP文件。 在本地对资源所做的更改将反映在AEM Assets存储库和AEM Forms用户界面中。
 
-您可以从AEM实例下载应用程序。 有关下载应用的详细信息，请参阅[AEM桌面应用发行说明](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en)。
+您可以从AEM实例下载应用程序。 有关下载应用的详细信息，请参阅[AEM桌面应用发行说明](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=zh-Hans)。
 
 ## AEM桌面应用程序支持的AEM Forms资源 {#aem-forms-assets-supported-in-aem-desktop-app}
 

@@ -279,5 +279,5 @@ tbc...
    * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md) — 创建和创作内容片段；此页将引导您进入其他详细部分。
 * [AEM GraphQL架构](access-your-content.md) - GraphQL如何实现模型。
 * [示例内容片段结构](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [AEM Headless 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - 一个简短的视频教程系列，概述了如何使用 AEM 的 Headless 功能，包括内容建模和 GraphQL。
+* [AEM Headless 快速入门](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=zh-Hans) - 一个简短的视频教程系列，概述了如何使用 AEM 的 Headless 功能，包括内容建模和 GraphQL。
    * [GraphQL 建模基础知识](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=zh-Hans) – 了解如何在 Adobe Experience Manager (AEM) 中定义和使用内容片段，以便与 GraphQL 一起使用。

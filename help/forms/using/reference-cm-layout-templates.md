@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在通信管理中，信件模板包含典型的表单字段、布局功能（如页眉和页脚）以及用于内容投放的空“目标区域”。
 
-通信管理在[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)中提供书信模板。 您可以根据品牌和业务需求在Designer中自定义模板。 该资源包包含以下模板：
+通信管理在[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)中提供书信模板。 您可以根据品牌和业务需求在Designer中自定义模板。 该资源包包含以下模板：
 
 * Classic
 * Classic简单用法

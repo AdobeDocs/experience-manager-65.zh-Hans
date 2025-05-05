@@ -32,7 +32,7 @@ ht-degree: 1%
 
 要开始设置AEM Mobile，您必须：
 
-* **请求API密钥**：要访问On-Demand Services API，必须请求API密钥。 要请求API密钥，请完成[PDF表单](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。 将填写好的表单发送至Adobe Developer支持：[wwds@adobe.com](mailto:wwds@adobe.com)
+* **请求API密钥**：要访问On-Demand Services API，必须请求API密钥。 要请求API密钥，请完成[PDF表单](https://helpx.adobe.com/cn/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。 将填写好的表单发送至Adobe Developer支持：[wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **生成设备ID和设备令牌**：收到API密钥后，即可生成设备ID和设备令牌。 转到`https://aex.aemmobile.adobe.com`并执行以下操作：
 
@@ -46,7 +46,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->应向所需的Adobe ID授予对AEM Mobile项目的访问权限。 请参阅联机帮助中的[AEM Mobile帐户管理](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
+>应向所需的Adobe ID授予对AEM Mobile项目的访问权限。 请参阅联机帮助中的[AEM Mobile帐户管理](https://helpx.adobe.com/cn/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
 
 ## 为AEM Mobile创建项目 {#creating-projects-for-aem-mobile}
 
@@ -56,7 +56,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->要了解有关在AEM Mobile中创建项目的更多信息，请单击[此处](https://helpx.adobe.com/digital-publishing-solution/help/creating-projects.html)。
+>要了解有关在AEM Mobile中创建项目的更多信息，请单击[此处](https://helpx.adobe.com/cn/digital-publishing-solution/help/creating-projects.html)。
 
 ## 配置AEM Mobile连接器 {#configuring-an-aem-mobile-connector}
 
@@ -117,7 +117,7 @@ AEM Mobile On-Demand连接器用于将AEM Mobile管理的内容与Adobe Experien
 * 开发人员
 * 创作
 
-有关创建具有不同权限的角色（例如用于构建应用程序或创建和发布内容的角色）的详细信息，请在AEM Mobile帮助中单击[创建用户角色并授予访问权限](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)。
+有关创建具有不同权限的角色（例如用于构建应用程序或创建和发布内容的角色）的详细信息，请在AEM Mobile帮助中单击[创建用户角色并授予访问权限](https://helpx.adobe.com/cn/digital-publishing-solution/help/account-admin-dps.html)。
 
 >[!NOTE]
 >

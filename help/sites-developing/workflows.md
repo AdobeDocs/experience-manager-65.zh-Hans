@@ -40,7 +40,7 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
 >
 >* 参与工作流，请参阅[使用工作流](/help/sites-authoring/workflows.md)。
 >* 管理工作流和工作流实例，请参阅[管理工作流](/help/sites-administering/workflows.md)。
->* 有关端到端社区文章，请参阅[使用Adobe Experience Manager工作流修改数字Assets。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html)
+>* 有关端到端社区文章，请参阅[使用Adobe Experience Manager工作流修改数字Assets。](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/assets-workflow.html?lang=zh-Hans)
 >* 查看[关于工作流的“向AEM专家提问”网络研讨会](https://communities.adobeconnect.com/p5s33iburd54/)。
 >* 对信息位置的更改请参阅[AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的存储库重组[工作流最佳实践 — 位置](/help/sites-developing/workflows-best-practices.md#locations)。
 >
@@ -206,7 +206,7 @@ AEM提供了多种工具和资源，用于创建工作流模型、开发工作�
 
 ### 工作流和Forms {#workflows-and-forms}
 
-通常，工作流用于处理AEM中的表单提交。 它可以是标准AEM实例中提供的[核心组件表单组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html)，也可以是[AEM Forms解决方案](/help/forms/using/aem-forms-workflow.md)。
+通常，工作流用于处理AEM中的表单提交。 它可以是标准AEM实例中提供的[核心组件表单组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html?lang=zh-Hans)，也可以是[AEM Forms解决方案](/help/forms/using/aem-forms-workflow.md)。
 
 创建表单时，可以轻松将表单提交与工作流模型相关联。 例如，将内容存储在存储库的特定位置，或者通知用户表单提交及其内容。
 

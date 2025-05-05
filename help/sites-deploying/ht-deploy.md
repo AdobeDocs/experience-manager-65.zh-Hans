@@ -24,9 +24,9 @@ ht-degree: 1%
 * [How to Use the Log Viewer](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 -->
 
-* [如何清除工作流和审核日志](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24590)
+* [如何清除工作流和审核日志](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-24590)
 
-* [性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
+* [性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=zh-Hans)
 
 * [如何从欢迎屏幕中删除功能](/help/sites-developing/customizing-the-welcome-console.md)
 

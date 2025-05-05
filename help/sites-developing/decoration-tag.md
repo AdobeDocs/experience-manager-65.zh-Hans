@@ -65,7 +65,7 @@ ht-degree: 7%
 
 可以从HTL脚本及其相关逻辑完全控制包装器标记的行为。
 
-有关在HTL中进行开发的更多信息，请参阅[HTL文档](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)。
+有关在HTL中进行开发的更多信息，请参阅[HTL文档](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)。
 
 #### 决策树 {#decision-tree}
 

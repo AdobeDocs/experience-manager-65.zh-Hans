@@ -57,7 +57,7 @@ ht-degree: 3%
 * [AEM平台简介](/help/sites-deploying/platform.md)
 * [性能准则](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile快速入门](/help/mobile/getting-started-aem-mobile.md)
-* [什么是AEM Screens？](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [什么是AEM Screens？](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)
 
 ## 基本概念 {#basic-concepts}
 
@@ -130,7 +130,7 @@ AEM Managed Services是数字体验管理的完整解决方案。 它提供了�
 
 **Cloud Manager**： Cloud Manager是Adobe Experience Manager Managed Services产品的一部分，它是一个自助服务门户，进一步使组织能够在云中自行管理Adobe Experience Manager。 它包含一流的持续集成和持续交付(CI/CD)管道，使IT团队和实施合作伙伴能够在不影响性能或安全性的情况下加速自定义项或更新的交付。 Cloud Manager仅适用于Adobe托管服务客户。
 
-要了解有关Cloud Manger及其资源的更多信息，请参阅&#x200B;[**Cloud Manager用户指南**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)。
+要了解有关Cloud Manger及其资源的更多信息，请参阅&#x200B;[**Cloud Manager用户指南**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hans)。
 
 ## 快速入门 {#getting-started}
 
@@ -316,4 +316,4 @@ AEM启动并自动将Web浏览器重定向到相应的页面（通常是登录�
 * [AEM平台简介](/help/sites-deploying/platform.md)
 * [性能准则](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile快速入门](/help/mobile/getting-started-aem-mobile.md)
-* [什么是AEM Screens？](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [什么是AEM Screens？](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)

@@ -37,7 +37,7 @@ ht-degree: 0%
 
 1. 在您的Experience Manager实例中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL 用户]**，然后选择&#x200B;**[!UICONTROL 创建用户]**。 此服务用户必须具有对`/content/dam.`的&#x200B;*读/写*&#x200B;权限
 1. 在&#x200B;**[!UICONTROL ID]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;字段中，输入用户名和密码；例如，**FTP用户**。 此名称将以创建资产的用户的身份显示在时间轴中。 从FTP上传资源时，如果资源上传到FTP服务器并推送到Experience Manager，则会认为该资源已创建。
-1. 联系[Adobe客户支持以获取Experience Manager](https://experienceleague.adobe.com/?support-solution=General#support)，请求访问功能包18912以进行下载。 当您联系支持人员时，可能需要以下信息：
+1. 联系[Adobe客户支持以获取Experience Manager](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)，请求访问功能包18912以进行下载。 当您联系支持人员时，可能需要以下信息：
 
    * 创作实例的服务器IP地址，包括端口号（默认情况下，端口号为4502）。
    * Experience Manager上一步骤中的服务用户用户名和密码。

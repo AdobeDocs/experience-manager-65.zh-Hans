@@ -47,7 +47,7 @@ GITHUB上的代码
 
 >[!NOTE]
 >
->此代码示例与[自定义对话框字段](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html)上的AEM Gems会话相关。
+>此代码示例与[自定义对话框字段](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=zh-Hans)上的AEM Gems会话相关。
 
 ## 相关资源 {#related-resources}
 

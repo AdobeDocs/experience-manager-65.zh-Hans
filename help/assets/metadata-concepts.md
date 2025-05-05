@@ -123,7 +123,7 @@ Exif的一个主要限制是一些流行的图像文件格式(如BMP、GIF或PNG
 * CQ — 由[!DNL Experience Manager Assets]使用。
 * DAM - [!DNL Experience Manager Assets]使用。
 * DEX - [!DNL Optima SC Description explorer]是用于Windows操作系统的元数据和文件管理的工具集合。
-* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/camera-raw/using/introduction-camera-raw.html)。
+* CRS - [Adobe Photoshop Camera Raw](https://helpx.adobe.com/cn/camera-raw/using/introduction-camera-raw.html)。
 * LR - [!DNL Adobe Lightroom]。
 * MediaPro - [iView媒体专业](https://en.wikipedia.org/wiki/Phase_One_Media_Pro)。
 * MicrosoftPhoto和MP - Microsoft Photo。

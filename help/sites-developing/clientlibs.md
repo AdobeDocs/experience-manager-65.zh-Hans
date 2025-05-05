@@ -66,7 +66,7 @@ ht-degree: 1%
 
 ### 使用HTL {#using-htl}
 
-在HTL中，通过AEM提供的帮助程序模板来加载客户端库，该模板可通过[`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use)访问。 此文件中有三个可用的模板，可以通过[`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)来调用它们：
+在HTL中，通过AEM提供的帮助程序模板来加载客户端库，该模板可通过[`data-sly-use`](https://helpx.adobe.com/cn/experience-manager/htl/using/block-statements.html#use)访问。 此文件中有三个可用的模板，可以通过[`data-sly-call`](https://helpx.adobe.com/cn/experience-manager/htl/using/block-statements.html#template-call)来调用它们：
 
 * **css** — 仅加载引用的客户端库的CSS文件。
 * **js** — 仅加载引用的客户端库的JavaScript文件。
@@ -74,7 +74,7 @@ ht-degree: 1%
 
 每个帮助程序模板都需要一个 `categories` 选项来引用所需的客户端库。该选项可以是字符串值的数组，也可以是包含逗号分隔值列表的字符串。
 
-有关详细信息和使用示例，请参阅文档[HTML模板语言快速入门](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries)。
+有关详细信息和使用示例，请参阅文档[HTML模板语言快速入门](https://helpx.adobe.com/cn/experience-manager/htl/using/getting-started.html#loading-client-libraries)。
 
 ### 使用JSP {#using-jsp}
 

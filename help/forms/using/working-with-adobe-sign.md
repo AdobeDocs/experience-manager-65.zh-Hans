@@ -19,11 +19,11 @@ ht-degree: 1%
 
 # 在自适应表单中使用[!DNL Adobe Sign]{#using-adobe-sign-in-an-adaptive-form}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/use-adobe-sign/working-with-adobe-sign.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 
@@ -140,7 +140,7 @@ ht-degree: 1%
 
 1. 选择&#x200B;**[!UICONTROL Adobe Sign]字段** ![aem_6_3_adobesign](assets/aem_6_3_adobesign.png)图标。 它显示用于选择和添加[!DNL Adobe Sign]字段的选项。
 
-   展开&#x200B;**[!UICONTROL 类型]**&#x200B;下拉字段以选择[!DNL Adobe Sign]字段，然后选择完成![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)图标以将所选字段添加到[!DNL Adobe Sign]块。 **[!UICONTROL 类型]**&#x200B;下拉字段包括签名、签名者信息和数据字段类型。 与AEM [!DNL Forms]的[!DNL Adobe Sign]集成仅支持[!UICONTROL 类型]下拉框中列出的字段。 有关[!DNL Adobe Sign]字段的详细信息，请参阅[Adobe Sign文档](https://helpx.adobe.com/sign/help/field-types.html)。
+   展开&#x200B;**[!UICONTROL 类型]**&#x200B;下拉字段以选择[!DNL Adobe Sign]字段，然后选择完成![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)图标以将所选字段添加到[!DNL Adobe Sign]块。 **[!UICONTROL 类型]**&#x200B;下拉字段包括签名、签名者信息和数据字段类型。 与AEM [!DNL Forms]的[!DNL Adobe Sign]集成仅支持[!UICONTROL 类型]下拉框中列出的字段。 有关[!DNL Adobe Sign]字段的详细信息，请参阅[Adobe Sign文档](https://helpx.adobe.com/cn/sign/help/field-types.html)。
 
    ![adobe-sign-block-fields-options](assets/adobe-sign-block-fields-options.png)
 
@@ -148,7 +148,7 @@ ht-degree: 1%
 
    如果从下拉列表中选择&#x200B;**[!UICONTROL 数字签名]**，则可以将数字签名应用于自适应表单：
 
-   * 使用云签名在线使用由信任服务提供商托管的[数字ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)签名。
+   * 使用云签名在线使用由信任服务提供商托管的[数字ID](https://helpx.adobe.com/cn/sign/kb/digital-certificate-providers.html)签名。
    * 使用Adobe Acrobat下载文档或使用智能卡、USB令牌或基于文件的数字IDReader，即可从本地下载文档。
 
 ### 为自适应表单启用[!DNL Adobe Sign] {#enableadobsignforanadaptiveform}
@@ -258,7 +258,7 @@ ht-degree: 1%
 
    使用以下方式将数字签名应用于自适应表单：
 
-   * 云签名：使用由信任服务提供商托管的[数字ID](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html)签名。 云签名选项不适用于Adobe Acrobat Sign Solutions政府版。
+   * 云签名：使用由信任服务提供商托管的[数字ID](https://helpx.adobe.com/cn/sign/kb/digital-certificate-providers.html)签名。 云签名选项不适用于Adobe Acrobat Sign Solutions政府版。
 
    * Adobe Acrobat或Reader：使用Adobe Acrobat或Reader下载并打开文档，以使用智能卡、USB令牌或基于文件的数字ID进行签名。
 
@@ -332,7 +332,7 @@ ht-degree: 1%
 使用高级模板创建的&#x200B;**Ans：**&#x200B;自适应表单配置为使用[!DNL Adobe Sign]。 要解决此错误，请创建并选择[!DNL Adobe Sign]云配置并为自适应表单配置[!DNL Adobe Sign]签名者。
 
 **问：**&#x200B;我能否在自适应表单的静态文本组件中使用[!DNL Adobe Sign]文本标记？
-**Ans：**&#x200B;是，您可以在文本组件中使用文本标记将[!DNL Adobe Sign]字段添加到启用了[记录文档](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)（仅自动生成的记录文档选项）的自适应表单。 要了解创建文本标记的过程和规则，请参阅[Adobe Sign文档](https://helpx.adobe.com/sign/using/text-tag.html)。 另请注意，自适应表单对文本标记的支持有限。 您可以使用文本标记仅创建[Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支持的字段。
+**Ans：**&#x200B;是，您可以在文本组件中使用文本标记将[!DNL Adobe Sign]字段添加到启用了[记录文档](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)（仅自动生成的记录文档选项）的自适应表单。 要了解创建文本标记的过程和规则，请参阅[Adobe Sign文档](https://helpx.adobe.com/cn/sign/using/text-tag.html)。 另请注意，自适应表单对文本标记的支持有限。 您可以使用文本标记仅创建[Adobe Sign Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form)支持的字段。
 
 **Q：** AEM [!DNL Forms]提供[!UICONTROL Adobe Sign块]和签名步骤组件。 能否在自适应表单中同时使用这些参数？
 **Ans：**&#x200B;您可以在表单中同时使用这两个组件。 以下是有关使用这些组件的几个建议：

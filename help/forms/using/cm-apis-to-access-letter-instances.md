@@ -40,7 +40,7 @@ ht-degree: 1%
 
 ### 使用getAllLetterInstances {#using-nbsp-getallletterinstances}
 
-以下API根据查询对象（已提交和草稿）查找书信实例。 如果查询对象为null，则返回所有信件实例。 此API返回[LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html)对象的列表，该列表可用于提取信件实例的附加信息。
+以下API根据查询对象（已提交和草稿）查找书信实例。 如果查询对象为null，则返回所有信件实例。 此API返回[LetterInstanceVO](https://helpx.adobe.com/cn/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html)对象的列表，该列表可用于提取信件实例的附加信息。
 
 **语法**： `List getAllLetterInstances(Query query) throws ICCException;`
 

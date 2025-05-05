@@ -88,7 +88,7 @@ ht-degree: 1%
    1. 从&#x200B;**[!UICONTROL 解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Forms]**。
    2. 选择包的版本和类型。 您还可以使用&#x200B;**[!UICONTROL 搜索下载]**&#x200B;选项来筛选结果。
 1. 选择&#x200B;**we-gov-forms.pkg.all-&lt;version>.zip**&#x200B;包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
-1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
+1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
 1. 选择包并单击&#x200B;**[!UICONTROL 安装]**。
 
    ![我们管理表单包](assets/wegov_forms_package.jpg)
@@ -226,7 +226,7 @@ ht-degree: 1%
 **引用：**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [配置Microsoft® Dynamics for AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
+1. [配置Microsoft® Dynamics for AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=zh-Hans)
 
 #### MS® Dynamics OData云服务 {#ms-dynamics-odata-cloud-service}
 
@@ -480,7 +480,7 @@ ht-degree: 1%
 
 阅读更多说明前，请查看以下内容：
 
-* [配置自动化表单转换服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
+* [配置自动化表单转换服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hans)
 
 #### 创建IMS配置第1部分 {#creating-ims-config}
 
@@ -579,7 +579,7 @@ IMS配置完成后，您可以继续查看AEM中的云配置。 如果配置不�
 
 1. 对于此配置，我们将两个复选框值留空。
 
-   * 要了解有关这些选项的更多信息，请参阅[配置云服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)。
+   * 要了解有关这些选项的更多信息，请参阅[配置云服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hans#configure-the-cloud-service)。
 
 #### 配置云配置(We.Finance AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -609,7 +609,7 @@ IMS配置完成后，我们可以继续在AEM中创建云配置。
 
 1. 对于此配置，我们将两个复选框值留空。
 
-   * 要了解有关这些选项的更多信息，请参阅[配置云服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)。
+   * 要了解有关这些选项的更多信息，请参阅[配置云服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hans#configure-the-cloud-service)。
 
 #### 测试表单转换（We.Gov注册应用程序） {#test-forms-conversion}
 
@@ -649,7 +649,7 @@ IMS配置完成后，我们可以继续在AEM中创建云配置。
 
 #### 已知问题和说明 {#known-issues-notes}
 
-automated forms conversion服务包括某些[最佳实践、已知复杂模式](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)和[已知问题](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html)。 在开始使用AEM FormsAutomated forms conversion服务之前，请查看这些内容。
+automated forms conversion服务包括某些[最佳实践、已知复杂模式](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=zh-Hans)和[已知问题](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=zh-Hans)。 在开始使用AEM FormsAutomated forms conversion服务之前，请查看这些内容。
 
 1. 如果要在转换后将表单绑定到FDM，请在生成自适应表单时启用数据绑定来生成表单。
 

@@ -45,7 +45,7 @@ ht-degree: 12%
 ## 先决条件 {#prerequisites}
 
 * Adobe Campaign Standard的管理员访问权限
-   * 如果您需要有关如何设置和配置Adobe Campaign Standard的其他详细信息，请参阅[Adobe Campaign Standard文档。](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
+   * 如果您需要有关如何设置和配置Adobe Campaign Standard的其他详细信息，请参阅[Adobe Campaign Standard文档。](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html?lang=zh-Hans)
 * 管理员访问AEM
 
 ## 在Campaign中配置aemserver用户 {#aemserver-user}
@@ -66,7 +66,7 @@ ht-degree: 12%
 
 您的`aemserver`用户现在拥有必要的权限，以便AEM可以使用该用户与Adobe Campaign通信。
 
-但是，在AEM可以使用`aemserver`用户之前，必须设置其密码。 这不能通过Adobe Campaign完成。 必须由Adobe支持工程师执行。 [通过Adobe客户关怀](https://experienceleague.adobe.com/?support-tab=home#support)提交票证，以请求重置`aemserver`密码。 获得Adobe客户关怀团队提供的密码后，请将其保存在安全位置。
+但是，在AEM可以使用`aemserver`用户之前，必须设置其密码。 这不能通过Adobe Campaign完成。 必须由Adobe支持工程师执行。 [通过Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-tab=home#support)提交票证，以请求重置`aemserver`密码。 获得Adobe客户关怀团队提供的密码后，请将其保存在安全位置。
 
 ## 验证Campaign中的AEMResourceTypeFilter {#resource-type-filter}
 

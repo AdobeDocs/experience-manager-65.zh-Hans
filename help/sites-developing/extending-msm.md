@@ -32,8 +32,8 @@ ht-degree: 53%
 >此页面应与[重用内容：多站点管理器](/help/sites-administering/msm.md)一起阅读。
 >
 >以下网站存储库重组部分也可能对您有帮助：
->* [多站点管理器Blueprint配置](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
->* [多站点管理器转出配置](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
+>* [多站点管理器Blueprint配置](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=zh-Hans#multi-site-manager-blueprint-configurations)
+>* [多站点管理器转出配置](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=zh-Hans#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >

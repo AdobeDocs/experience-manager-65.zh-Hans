@@ -31,7 +31,7 @@ ht-degree: 7%
 >
 >您的帐户还必须由Target团队启用才能使用该集成。
 >
->如果不是这种情况，请联系[Adobe客户关怀](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html)。
+>如果不是这种情况，请联系[Adobe客户关怀](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=zh-Hans)。
 
 ## 启用目标复制代理 {#enabling-the-target-replication-agent}
 

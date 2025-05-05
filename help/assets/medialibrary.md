@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Experience Manager]平台提供了不同的功能来管理资源。 Media Library允许用户将少量资源上传到存储库，搜索并使用网页中的资源，以及完成关于资源的简单资源管理任务。
@@ -94,6 +94,6 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Experience Manager Assets][&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html)中的DAM功能
->* [[!DNL Experience Manager] 6.5 Managed Services产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5内部部署产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>*  [!DNL Experience Manager Assets][&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=zh-Hans)中的DAM功能
+>* [[!DNL Experience Manager] 6.5 Managed Services产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5内部部署产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-on-premise.html)

@@ -139,7 +139,7 @@ XX后缀是定义里程碑的跟踪偏移。 例如，指定4、8、16、20和28
 
 1. 要将CQ变量映射到Adobe Analytics资产，请将Adobe Analytics资产从ContentFinder拖动到组件上的CQ变量旁边。
 
-   有关优化映射的信息，请参阅[在Adobe Analytics中测量视频](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)指南。
+   有关优化映射的信息，请参阅[在Adobe Analytics中测量视频](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)指南。
 
 1. [将框架](/help/sites-administering/adobeanalytics.md)添加到页面。
 1. 要在&#x200B;**预览模式**&#x200B;中测试设置，请播放视频以触发要触发的Adobe Analytics调用。
@@ -274,7 +274,7 @@ eventdata.events.milestoneXX
 
 1. 要将CQ变量映射到Adobe Analytics资产，请将Adobe Analytics资产从ContentFinder拖动到组件上的CQ变量旁边。
 
-   有关优化映射的信息，请参阅[在Adobe Analytics中测量视频](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)指南。
+   有关优化映射的信息，请参阅[在Adobe Analytics中测量视频](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)指南。
 
 1. [将框架](/help/sites-administering/adobeanalytics.md)添加到页面。
 1. 要在&#x200B;**预览模式**&#x200B;中测试设置，请播放视频以触发要触发的Adobe Analytics调用。
@@ -383,4 +383,4 @@ eventdata.events.milestoneXX
 
 本教程中使用的&#x200B;**引用：**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)

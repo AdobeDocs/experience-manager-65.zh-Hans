@@ -37,11 +37,11 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p>有关AEM Forms以及它如何与其他Adobe产品集成的一般信息</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms概述</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=zh-Hans">AEM Forms概述</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>AEM Forms的所有可用文档</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms文档</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=zh-Hans">AEM Forms文档</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>有关此产品版本的修补程序更新、技术说明和其他信息</p> </td>
@@ -100,7 +100,7 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
 
 ### 支持的平台 {#supported-platforms}
 
-在[AEM Forms支持的平台](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65)上，查看Workbench支持的平台的完整列表。
+在[AEM Forms支持的平台](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_cn)上，查看Workbench支持的平台的完整列表。
 
 ## Designer安装注意事项 {#designer-installation-considerations}
 
@@ -191,7 +191,7 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 
 ### 配置超时设置 {#configuring-timeout-settings}
 
-默认情况下，Workbench会在两小时后超时，无论是否处于活动状态或非活动状态。 要编辑超时设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">管理控制台帮助</a>中的“配置用户管理>配置高级系统属性”。
+默认情况下，Workbench会在两小时后超时，无论是否处于活动状态或非活动状态。 要编辑超时设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=zh-Hans">管理控制台帮助</a>中的“配置用户管理>配置高级系统属性”。
 
 ### 配置Workbench以通过HTTPS进行连接 {#configuring-workbench-to-connect-over-HTTPS}
 

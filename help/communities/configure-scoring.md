@@ -134,8 +134,8 @@ JSRP上UGC的基本位置为`/content/usergenerated/asi/jcr/`。
 
 以下API可供使用：
 
-* [com.adobe.cq.social.scoring.api在6.3中](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
-* [com.adobe.cq.social.badging.api（在6.3中）](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
+* [com.adobe.cq.social.scoring.api在6.3中](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)
+* [com.adobe.cq.social.badging.api（在6.3中）](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)
 
 开发人员可以从Adobe存储库中找到已安装功能包的最新Javadoc。 请参阅[使用Maven for Communities ： Javadocs](/help/communities/maven.md#javadocs)。
 

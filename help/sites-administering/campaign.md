@@ -27,7 +27,7 @@ Adobe Campaign是一套解决方案，可让您在所有线上和线下渠道之
 >
 >本文档介绍如何将Adobe Campaign与AEM 6.5、内部部署或AMS托管的AEM解决方案集成。
 >
->有关将Adobe Campaign与AEM as a Cloud Service(云原生AEM解决方案)集成的详细信息，[请参阅此文档。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
+>有关将Adobe Campaign与AEM as a Cloud Service(云原生AEM解决方案)集成的详细信息，[请参阅此文档。](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html?lang=zh-Hans)
 
 ## 与 Adobe Campaign Classic 集成 {#acc}
 
@@ -35,8 +35,8 @@ Adobe Campaign是一套解决方案，可让您在所有线上和线下渠道之
 
 | ACC 版本 | 与AEM 6.5 <br>内部部署集成 | 与AEM 6.5<br>AMS集成 |
 |---|---|---|
-| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html) | 支持 | 支持 |
-| [v8客户端控制台](https://experienceleague.adobe.com/docs/campaign-v8.html) | 支持 | 支持 |
+| [v7](https://experienceleague.adobe.com/docs/campaign-classic.html?lang=zh-Hans) | 支持 | 支持 |
+| [v8客户端控制台](https://experienceleague.adobe.com/docs/campaign-v8.html?lang=zh-Hans) | 支持 | 支持 |
 
 以下文档介绍了如何将AEM与Adobe Campaign Classic集成。
 
@@ -44,12 +44,12 @@ Adobe Campaign是一套解决方案，可让您在所有线上和线下渠道之
 
 以下附加文档介绍了如何使用集成。
 
-* [电子邮件核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html) — 了解可用于在AEM中创作Campaign内容的标准电子邮件组件。
+* [电子邮件核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=zh-Hans) — 了解可用于在AEM中创作Campaign内容的标准电子邮件组件。
 * [Adobe Campaign Classic集成疑难解答](/help/sites-administering/troubleshooting-campaignintegration.md) — 了解如何修复AEM-ACC集成最常见的问题。
 
 ## 与 Adob&#x200B;e Campaign Standard 集成 {#acs}
 
-[Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS)与AEM的集成取决于AEM是否安装在Adobe管理服务(AMS)的内部部署中。
+[Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html?lang=zh-Hans) (ACS)与AEM的集成取决于AEM是否安装在Adobe管理服务(AMS)的内部部署中。
 
 | 与AEM 6.5 <br>内部部署集成 | 与AEM 6.5<br>AMS集成 |
 |---|---|
@@ -62,4 +62,4 @@ Adobe Campaign是一套解决方案，可让您在所有线上和线下渠道之
 
 以下附加文档介绍了如何使用集成。
 
-* [电子邮件核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
+* [电子邮件核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=zh-Hans)

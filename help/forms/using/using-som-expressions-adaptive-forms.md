@@ -46,4 +46,4 @@ DOM树
 
 使用面板工具栏提取SOM表达式
 
-[GuideBridge](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html)中列出的某些API使用元素的SOM表达式。 例如，要将焦点置于自适应表单中的特定字段，请将相应的SOM表达式传递给`guideBridge`中的`getFocus`API。
+[GuideBridge](https://helpx.adobe.com/cn/aem-forms/6/javascript-api/GuideBridge.html)中列出的某些API使用元素的SOM表达式。 例如，要将焦点置于自适应表单中的特定字段，请将相应的SOM表达式传递给`guideBridge`中的`getFocus`API。

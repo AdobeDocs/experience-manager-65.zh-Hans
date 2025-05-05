@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 概述 {#overview}
 
-在AEM Forms 6.5中创建客户通信的默认和推荐方法是交互式通信。若要继续使用AEM Forms 6.5中的字母，您需要安装最新的[AEMFD兼容包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。
+在AEM Forms 6.5中创建客户通信的默认和推荐方法是交互式通信。若要继续使用AEM Forms 6.5中的字母，您需要安装最新的[AEMFD兼容包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)。
 
 AEMFD兼容包还允许您[在AEM Forms 6.5上使用AEM Forms 6.4、6.3和6.2中的以下资源：](../../forms/using/compatibility-package.md#add-support-for-aem-forms-and-assets-in-aem-forms)
 
@@ -36,9 +36,9 @@ AEMFD兼容包还允许您[在AEM Forms 6.5上使用AEM Forms 6.4、6.3和6.2中
 
 执行升级后，请执行以下操作以安装AEMFD兼容包，并使您的资产与6.5兼容：
 
-确保您已预安装[AEM兼容包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。
+确保您已预安装[AEM兼容包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)。
 
-1. 安装最新的6.5 [兼容包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。
+1. 安装最新的6.5 [兼容包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)。
 
    有关上载和安装包的详细信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
 

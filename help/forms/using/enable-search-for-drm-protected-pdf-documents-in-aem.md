@@ -28,7 +28,7 @@ AEM search能够搜索和定位AEM资源，并对各种常用的文档格式(如
 
 * 如果您在OSGi上使用AEM Forms：
 
-   * 在AEM Forms服务器上安装[AEM Forms Document Security Indexer包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。
+   * 在AEM Forms服务器上安装[AEM Forms Document Security Indexer包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)。
 
    * 确保JEE服务器上的AEM Forms已启动并正在运行，并且JEE服务器上的相应AEM Forms上安装了Document Security。 需要JEE服务器上的AEM表单才能对受保护文档编制索引。
 

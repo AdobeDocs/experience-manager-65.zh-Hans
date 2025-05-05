@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您未使用AEM作为内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
+>如果您未使用AEM作为内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/cn/digital-publishing-solution/topics.html)。
 
 >[!NOTE]
 >

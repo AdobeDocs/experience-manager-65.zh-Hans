@@ -17,7 +17,7 @@ ht-degree: 0%
 
 # 参考主题{#reference-themes}
 
-[主题](../../forms/using/themes.md)允许您在不了解CSS的情况下设置表单样式。 除了默认主题之外，您还可以通过安装[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)获取以下主题：
+[主题](../../forms/using/themes.md)允许您在不了解CSS的情况下设置表单样式。 除了默认主题之外，您还可以通过安装[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)获取以下主题：
 
 * 贝里尔
 * 执行

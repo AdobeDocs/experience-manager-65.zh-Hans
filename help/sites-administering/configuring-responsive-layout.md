@@ -213,7 +213,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 AEM使用LESS来生成必要的CSS部分，这些项目需要包含在您的项目中。
 
-您还必须创建一个[客户端库](https://experienceleague.adobe.com/docs/)以提供额外的配置和函数调用。 以下LESS提取是您必须添加到项目的最小值示例：
+您还必须创建一个[客户端库](https://experienceleague.adobe.com/docs/?lang=zh-Hans)以提供额外的配置和函数调用。 以下LESS提取是您必须添加到项目的最小值示例：
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";

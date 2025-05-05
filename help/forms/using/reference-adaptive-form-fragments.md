@@ -19,7 +19,7 @@ ht-degree: 1%
 
 [自适应表单片段](../../forms/using/adaptive-form-fragments.md)是一组字段，或包含可在创建表单时使用的一组字段的面板。 它可让您轻松快速地创建表单。 您可以使用侧边栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单编辑器中编辑该表单片段。
 
-对于自适应表单作者，[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)中提供了参考片段。 它包括以下片段：
+对于自适应表单作者，[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)中提供了参考片段。 它包括以下片段：
 
 * 地址
 * 联系信息

@@ -57,7 +57,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关在信件预览的HTML或PDF呈现模式之间切换的更多信息，请参阅[更改信件的呈现模式](#changerenditionmode)。 有关Correspondence Management和AEM中对PDF支持的详细信息，请参阅[NPAPI浏览器插件停止使用及其影响](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)。<!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >有关在信件预览的HTML或PDF呈现模式之间切换的更多信息，请参阅[更改信件的呈现模式](#changerenditionmode)。 有关Correspondence Management和AEM中对PDF支持的详细信息，请参阅[NPAPI浏览器插件停止使用及其影响](https://helpx.adobe.com/cn/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)。<!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### 输入数据 {#enterdata}
 
@@ -375,7 +375,7 @@ AEM Forms Correspondence Management在创建信件UI中将信件显示为HTML。
 
 默认情况下，创建通信UI使用HTML或移动表单呈现信件预览。 移动设备表单预览在任何浏览器中呈现时不会出现任何问题，因为它使用浏览器的本机插件，并且无需其他插件。 您可以将信件预览模式更改为PDF。 但是，浏览器限制可能会为信件的交互式PDF预览的不同功能带来问题。
 
-有关浏览器与信件预览兼容性的详细信息，请参阅[NPAPI浏览器插件停止使用及其影响](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)。
+有关浏览器与信件预览兼容性的详细信息，请参阅[NPAPI浏览器插件停止使用及其影响](https://helpx.adobe.com/cn/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)。
 
 要更改信件的预览模式，请完成以下步骤：
 

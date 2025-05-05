@@ -19,7 +19,7 @@ ht-degree: 14%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 收藏集是[!DNL Adobe Experience Manager Assets]中的一组资源。 使用收藏集可在用户之间共享资源。集合可以是静态集合或基于搜索结果的动态集合。

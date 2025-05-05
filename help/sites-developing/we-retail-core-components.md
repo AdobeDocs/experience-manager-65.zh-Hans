@@ -86,6 +86,6 @@ ht-degree: 0%
 
 ## 更多信息 {#further-information}
 
-有关核心组件的更多信息，请参阅创作文档[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)以了解核心组件的功能概述，并参阅开发人员文档[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)以了解技术概述。
+有关核心组件的更多信息，请参阅创作文档[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)以了解核心组件的功能概述，并参阅开发人员文档[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)以了解技术概述。
 
 此外，您可能希望进一步调查[可编辑模板](/help/sites-developing/we-retail-editable-templates.md)。 有关可编辑模板的完整详细信息，请参阅创作文档[创建页面模板](/help/sites-authoring/templates.md)或开发人员文档页面[模板 — 可编辑](/help/sites-developing/page-templates-editable.md)。

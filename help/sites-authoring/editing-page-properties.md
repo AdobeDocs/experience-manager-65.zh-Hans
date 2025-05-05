@@ -98,7 +98,7 @@ ht-degree: 42%
   >* 不应设置为现有页面。
   >
 
-  配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)。
+  配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#enabling-access-to-vanity-urls-vanity-urls)。
 
 * **重定向虚URL**
 
@@ -190,7 +190,7 @@ ht-degree: 42%
 
 * **社交媒体共享**
 
-  定义页面上可用的共享选项。 公开[共享核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html)可用的选项。
+  定义页面上可用的共享选项。 公开[共享核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=zh-Hans)可用的选项。
 
    * **启用Facebook的用户共享**
    * **启用Pinterest的用户共享**

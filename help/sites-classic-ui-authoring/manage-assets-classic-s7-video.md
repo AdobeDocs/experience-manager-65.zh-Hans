@@ -23,7 +23,7 @@ Assets提供了集中式视频资源管理，您可以在其中直接将视频�
 Dynamic Media Classic视频集成将优化视频的覆盖范围扩展到所有屏幕（自动设备和带宽检测）。
 
 * Dynamic Media Classic视频组件自动执行设备和带宽检测，以在台式机、平板电脑和移动设备之间播放正确格式和正确质量的视频。
-* Assets — 您可以包含自适应视频集，而不是只包含单个视频资源。 自适应视频集是用于在多个屏幕上无缝播放视频所需的所有视频演绎版的容器。 自适应视频集对使用不同比特率和格式（例如400 kbps、800 kbps和1000 kbps）编码的相同视频的版本进行分组。 您可以使用自适应视频集以及S7视频组件在多个屏幕(包括台式机、iOS、Android™、BlackBerry®和Windows移动设备)上实现自适应视频流传输。 有关更多信息，请参阅有关自适应视频集的[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video)。
+* Assets — 您可以包含自适应视频集，而不是只包含单个视频资源。 自适应视频集是用于在多个屏幕上无缝播放视频所需的所有视频演绎版的容器。 自适应视频集对使用不同比特率和格式（例如400 kbps、800 kbps和1000 kbps）编码的相同视频的版本进行分组。 您可以使用自适应视频集以及S7视频组件在多个屏幕(包括台式机、iOS、Android™、BlackBerry®和Windows移动设备)上实现自适应视频流传输。 有关更多信息，请参阅有关自适应视频集的[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html?lang=zh-Hans#video)。
 
 ## 关于FFMPEG和Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -64,7 +64,7 @@ Dynamic Media Classic视频组件支持以下格式：
 
 如果您不需要为资源创建工作流或版本控制，则应将资源上传到Dynamic Media Classic。 以下是推荐的工作流：
 
-1. 在Dynamic Media Classic桌面应用程序中，[设置计划的FTP上传和编码到Dynamic Media Classic（系统自动进行）](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options)。
+1. 在Dynamic Media Classic桌面应用程序中，[设置计划的FTP上传和编码到Dynamic Media Classic（系统自动进行）](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=zh-Hans#upload-options)。
 1. 在Experience Manager中，在Content Finder的&#x200B;**[!UICONTROL Dynamic Media Classic]**&#x200B;选项卡中访问WCM中的视频资源。
 1. 使用Dynamic Media Classic视频组件创作。
 
@@ -81,7 +81,7 @@ Dynamic Media Classic视频组件支持以下格式：
 
    >[!NOTE]
    >
-   >有关视频预设的含义的详细信息，请参阅[用于编码视频文件的视频预设](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)。
+   >有关视频预设的含义的详细信息，请参阅[用于编码视频文件的视频预设](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=zh-Hans#video-presets-for-encoding-video-files)。
    >
    >Adobe建议您在配置通用预设时同时选择两个自适应视频集或选择&#x200B;**[!UICONTROL 自适应视频编码]**&#x200B;选项。
 

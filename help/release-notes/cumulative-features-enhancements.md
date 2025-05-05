@@ -28,13 +28,13 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 ### [!DNL Forms]
 
 * **新的自适应表单核心组件**：添加了垂直选项卡、条款和条件以及复选框以增强表单的可扩展性。
-   * **[复选框组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**：基于核心组件的自适应表单现在包含复选框组件。通过它，用户可二选一，即选择或取消选择特定选项。它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。复选框是一个常见的表单元素，用于提供是/否或 true/false 选择。
+   * **[复选框组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=zh-Hans)**：基于核心组件的自适应表单现在包含复选框组件。通过它，用户可二选一，即选择或取消选择特定选项。它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。复选框是一个常见的表单元素，用于提供是/否或 true/false 选择。
 
-   * **[条款和条件组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**：基于核心组件的自适应表单现在包含条款和条件组件。它允许Forms作者在表单中引入特定部分，向用户显示与服务、产品或平台的使用相关的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
+   * **[条款和条件组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=zh-Hans)**：基于核心组件的自适应表单现在包含条款和条件组件。它允许Forms作者在表单中引入特定部分，向用户显示与服务、产品或平台的使用相关的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
 
      ![垂直选项卡、条款和条件以及复选框组件](/help/forms/using/assets/forms-components.png)
 
-   * **[垂直选项卡组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**：基于核心组件的自适应表单现在可将表单内容整理到选项卡垂直列表中，从而提供结构化的、可导航的布局。在表单中使用垂直选项卡可通过简化导航并改进表单内容的组织而增强整体用户体验，特别是在表单包含多个部分或复杂信息的情况下。
+   * **[垂直选项卡组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=zh-Hans)**：基于核心组件的自适应表单现在可将表单内容整理到选项卡垂直列表中，从而提供结构化的、可导航的布局。在表单中使用垂直选项卡可通过简化导航并改进表单内容的组织而增强整体用户体验，特别是在表单包含多个部分或复杂信息的情况下。
 
 * **[64位版本的AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**： 64位版本的AEM Forms Designer提供增强的性能、可扩展性和内存管理，以增强您的表单创建体验。 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
 
@@ -55,9 +55,9 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
 ### [!DNL Forms]
 
-* **[规则编辑器中使用自定义错误处理程序的增强错误处理](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** — 您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误。 而且，您可以为最终用户提供量身定制的响应。 或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端中调用自定义工作流以获取特定错误代码，或通知客户服务已中断
+* **[规则编辑器中使用自定义错误处理程序的增强错误处理](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html?lang=zh-Hans)** — 您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误。 而且，您可以为最终用户提供量身定制的响应。 或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端中调用自定义工作流以获取特定错误代码，或通知客户服务已中断
 
-* **[增强的Adobe Sign工作流步骤](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - AEM工作流中的Adobe Sign工作流步骤包含以下增强功能。
+* **[增强的Adobe Sign工作流步骤](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html?lang=zh-Hans#sign-document-step)** - AEM工作流中的Adobe Sign工作流步骤包含以下增强功能。
 
    * **通过基于Government ID的身份验证增强Adobe Sign的安全性** - Adobe Acrobat Sign基于Government ID的身份验证提供额外的验证层。 它允许用户使用政府颁发的ID（驾照、身份证、护照）进行身份认证。 通过利用可信身份证明文件，此增强将签名过程的可信度提高一级，使其成为需要更高的安全性、合规性和用户验证的场景的理想之选。
 
@@ -67,7 +67,7 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
    * **扩展了协议收件人的角色，而不只是签名者** — 通过Adobe Acrobat Sign，您可以将协议收件人的角色扩展为仅包括签名者，以便更好地匹配他们的工作流要求。 启用后，协议中的每个收件人可以单独配置其角色，签名者是默认角色。
 
 
-* **[JEE上的AEM Forms完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** — 此Service Pack为JEE上的AEM Forms提供完整安装程序，该安装程序支持多种新的软件组合，包括：
+* **[JEE上的AEM Forms完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html?lang=zh-Hans)** — 此Service Pack为JEE上的AEM Forms提供完整安装程序，该安装程序支持多种新的软件组合，包括：
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
    * Windows Server 2022上的Oracle WebLogic 14C
@@ -85,7 +85,7 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
    * 关联或取消关联资源
 
   您无需导航到资源的位置并查看其属性即可执行这些操作。
-* **Dynamic Media _快照_**— 试验测试图像或Dynamic Media URL，以查看不同图像修饰符的输出，以及针对文件大小（使用WebP和AVIF交付）、网络带宽和设备像素比的智能成像优化。 请参阅 [Dynamic Media 快照。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html)
+* **Dynamic Media _快照_**— 试验测试图像或Dynamic Media URL，以查看不同图像修饰符的输出，以及针对文件大小（使用WebP和AVIF交付）、网络带宽和设备像素比的智能成像优化。 请参阅 [Dynamic Media 快照。](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=zh-Hans)
 * 使用Dynamic Media的&#x200B;**DASH流** — 为Dynamic Media视频交付中的自适应流启动的新协议(DASH - Dynamic Adaptive Streaming over HTTP)（已启用CMAF）。 现在可供所有地区使用。
 * **Experience Manager Sites和内容片段与Assets新一代Dynamic Media的集成** - Experience Manager Assets as a Cloud Service新一代Dynamic Media的用户现在可以使用这些云托管的资产通过Experience Manager Sites 6.5的内部部署或Managed Services实例进行创作和交付。
 
@@ -110,9 +110,9 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
 ### [!DNL Forms]
 
-* [Headless自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html)使您的开发人员能够创建、发布和管理可通过API（而不是通过传统的图形用户界面）访问和交互的交互式表单。
+* [Headless自适应Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=zh-Hans)使您的开发人员能够创建、发布和管理可通过API（而不是通过传统的图形用户界面）访问和交互的交互式表单。
 
-* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features)是基于Adobe Experience Manager WCM核心组件构建的一组24个开源、符合BEM的组件。 这些组件是开源的，使开发人员能够轻松地自定义和扩展这些组件，以满足其组织的特定需求。 具备自定义[WCM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html)的现有技能的任何人都可以轻松自定义这些组件并设置其样式。
+* [自适应Forms核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans#features)是基于Adobe Experience Manager WCM核心组件构建的一组24个开源、符合BEM的组件。 这些组件是开源的，使开发人员能够轻松地自定义和扩展这些组件，以满足其组织的特定需求。 具备自定义[WCM核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=zh-Hans)的现有技能的任何人都可以轻松自定义这些组件并设置其样式。
 
 * OSGi上的Reader扩展服务现在提供单独的选项，以启用PDF上的导入和导出使用权限，从而在Adobe Acrobat Reader中导入或导出数据。
 
@@ -120,9 +120,9 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
 ### [!DNL Forms]
 
-* AEM Forms Designer现在提供[西班牙区域设置](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)版本。
+* AEM Forms Designer现在提供[西班牙区域设置](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)版本。
 * 您现在可以使用[OAuth2通过Microsoft® Office 365邮件服务器协议（SMTP和IMAP）](/help/forms/using/oauth2-support-for-mail-service.md)进行身份验证。
-* 您可以将服务器[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br)属性上的Revalidate设置为true以标识要从服务器端记录文档中排除的隐藏字段。
+* 您可以将服务器[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=zh-Hans#enabling-server-side-validation-br)属性上的Revalidate设置为true以标识要从服务器端记录文档中排除的隐藏字段。
 * AEM Forms Designer需要32位版本的Visual C++ 2019可再分发(x86)。
 
 ## AEM 6.5，Service Pack 14—2022年8月25日

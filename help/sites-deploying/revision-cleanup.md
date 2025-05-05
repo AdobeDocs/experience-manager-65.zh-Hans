@@ -24,7 +24,7 @@ ht-degree: 0%
 
 在AEM 6.3及更高版本中，引入了此功能的在线版本，称为“在线修订清理”。 与必须关闭AEM实例的“脱机修订版清理”相比，在AEM实例处于联机状态时，可以运行“联机修订版清理”。 默认情况下，“联机修订清理”处于打开状态，建议使用此方式执行修订清理。
 
-**注意**： [观看视频](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html)，了解如何使用联机修订清理。
+**注意**： [观看视频](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=zh-Hans)，了解如何使用联机修订清理。
 
 修订清理过程包括三个阶段：**估计**、**压缩**&#x200B;和&#x200B;**清理**。 估算根据可能收集到的垃圾量来确定是否运行下一阶段（压缩）。 在压缩阶段，区段和tar文件被重写，而没有任何未使用的内容。 然后，清理阶段将删除旧区段，包括这些区段可能包含的任何垃圾。 脱机模式通常可以回收更多空间，因为联机模式必须考虑AEM的工作集，该工作集会保留不收集的其他区段。
 
@@ -494,7 +494,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>一种应用程序，可绕过建议的访问机制（如Sling和JCR API），使用较低级别的API/SPI访问存储库，然后超过区段的保留时间。 也就是说，它保留对实体的引用，保留时间超过在线修订版清理所允许的保留时间（默认为24小时）。 此案例是暂时性的，不会导致数据损坏。 要恢复，应使用oak-run工具确认异常的瞬态性质（oak-run检查不应报告任何错误）。 为此，实例必须离线并在之后重新启动。</li>
      <li>外部事件导致磁盘上的数据损坏。 这可以是磁盘故障、磁盘空间不足或意外修改所需的数据文件。 在这种情况下，实例必须离线并使用oak-run检查进行修复。 有关如何执行Oak-run检查的更多详细信息，请阅读以下<a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache文档</a>。</li>
-     <li>通过<a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Adobe客户关怀</a>解决所有其他问题。</li>
+     <li>通过<a href="https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support" target="_blank">Adobe客户关怀</a>解决所有其他问题。</li>
     </ol> </td>
    <td> </td>
   </tr>

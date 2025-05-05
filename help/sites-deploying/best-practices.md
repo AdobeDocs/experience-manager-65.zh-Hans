@@ -98,7 +98,7 @@ AEM当前在同一版本中有两个UI：经典用户界面和触屏优化用户
   </tr>
   <tr>
    <td>将 Dispatcher 与 CDN 结合使用</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">将 Dispatcher 与 CDN 结合使用</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans#using-dispatcher-with-a-cdn">将 Dispatcher 与 CDN 结合使用</a></td>
    <td>内容交付网络(CDN)(如Akamai Edge Delivery或Amazon Cloud Front)从距离最终用户较近的位置交付内容。</td>
   </tr>
   <tr>

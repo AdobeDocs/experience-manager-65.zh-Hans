@@ -106,7 +106,7 @@ JEE上的AEM Forms具有高度可自定义性，可以在许多不同的环境�
  </tbody> 
 </table>
 
-有关操作系统的其他安全信息，请参阅[“操作系统安全信息”](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information)。
+有关操作系统的其他安全信息，请参阅[“操作系统安全信息”](https://helpx.adobe.com/cn/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information)。
 
 ## 安装 {#installation}
 
@@ -268,11 +268,11 @@ Configuration Manager使用部署在您的应用程序服务器上的servlet对J
 
 通过Configuration Manager，您可以将Acrobat Reader DC扩展凭据上传到JEE信任存储区上的AEM Forms 。 这意味着默认情况下已启用通过远程协议(SOAP和EJB)访问Trust Store Credential Service。 在使用Configuration Manager上载权限凭据或决定稍后使用管理控制台管理凭据后，不再需要此访问。
 
-您可以按照[禁用对服务的非必要远程访问](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services)一节中的步骤来禁用对所有信任存储区服务的远程访问。
+您可以按照[禁用对服务的非必要远程访问](https://helpx.adobe.com/cn/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services)一节中的步骤来禁用对所有信任存储区服务的远程访问。
 
 **禁用所有非必要的匿名访问**
 
-某些Forms Server服务具有可能被匿名调用者调用的操作。 如果不需要匿名访问这些服务，请按照[禁用对服务的非必要匿名访问](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services)中的步骤禁用它。
+某些Forms Server服务具有可能被匿名调用者调用的操作。 如果不需要匿名访问这些服务，请按照[禁用对服务的非必要匿名访问](https://helpx.adobe.com/cn/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services)中的步骤禁用它。
 
 #### 更改默认管理员密码 {#change-the-default-administrator-password}
 
@@ -351,7 +351,7 @@ Web服务定义语言(WSDL)生成应该仅对开发环境启用，在这些环�
 
 保护数据库时，您应该实施数据库供应商所述的措施。 您应该分配一个数据库用户，该用户具有最低所需的数据库权限，可供AEM Forms on JEE使用。 例如，不要使用具有数据库管理员权限的帐户。
 
-oracle时，您使用的数据库帐户只需要CONNECT、RESOURCE和CREATE VIEW权限。 有关其他数据库上的类似要求，请参阅[准备在JEE （单服务器）上安装AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)。
+oracle时，您使用的数据库帐户只需要CONNECT、RESOURCE和CREATE VIEW权限。 有关其他数据库上的类似要求，请参阅[准备在JEE （单服务器）上安装AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_cn)。
 
 #### 为Windows上的SQL Server for JBoss配置集成安全性 {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -408,7 +408,7 @@ AEM Forms数据库架构包含有关系统配置和业务流程的敏感信息�
 * 信任存储区HSM PIN加密密钥
 * 本地用户密码散列
 
-有关特定于供应商的工具的信息，请参阅[“数据库安全信息”](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information)。
+有关特定于供应商的工具的信息，请参阅[“数据库安全信息”](https://helpx.adobe.com/cn/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information)。
 
 ### LDAP安全 {#ldap-security}
 
@@ -958,9 +958,9 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 
 参考[AEM Forms on JEE物理架构](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)部分中描述的物理架构，您应该为计划使用的所有连接配置SSL。 具体而言，所有SOAP连接都必须通过SSL执行，以防止网络上用户凭据泄露。
 
-有关如何在JBoss、WebLogic和WebSphere上配置SSL的说明，请参阅[管理帮助](https://www.adobe.com/go/learn_aemforms_admin_64)中的“配置SSL”。
+有关如何在JBoss、WebLogic和WebSphere上配置SSL的说明，请参阅[管理帮助](https://www.adobe.com/go/learn_aemforms_admin_64_cn)中的“配置SSL”。
 
-有关如何将证书导入为AEM Forms服务器配置的JVM （Java虚拟机）的说明，请参阅[AEM Forms Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_65)中的相互身份验证部分。
+有关如何将证书导入为AEM Forms服务器配置的JVM （Java虚拟机）的说明，请参阅[AEM Forms Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_65_cn)中的相互身份验证部分。
 
 ### 配置SSL重定向 {#configuring-ssl-redirect}
 

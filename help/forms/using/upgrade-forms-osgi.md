@@ -20,7 +20,7 @@ ht-degree: 1%
 
 您可以从AEM 6.3 Forms或AEM 6.4 Forms直接升级到AEM 6.5 Forms。
 
-从&#x200B;**AEM 6.0 Forms、AEM 6.1 Forms**&#x200B;和&#x200B;**AEM 6.2 Forms**&#x200B;到AEM 6.5 Forms的直接升级路径不可用。 执行中间[升级到AEM 6.2 Forms](https://helpx.adobe.com/experience-manager/6-2/forms/using/upgrade.html)、[升级到AEM 6.3 Forms](https://helpx.adobe.com/experience-manager/6-3/forms/using/upgrade.html)，或[升级到AEM 6.4 Forms](/help/forms/using/upgrade.md)，然后从AEM 6.3 Forms或AEM 6.4 Forms升级到AEM 6.5 Forms。
+从&#x200B;**AEM 6.0 Forms、AEM 6.1 Forms**&#x200B;和&#x200B;**AEM 6.2 Forms**&#x200B;到AEM 6.5 Forms的直接升级路径不可用。 执行中间[升级到AEM 6.2 Forms](https://helpx.adobe.com/cn/experience-manager/6-2/forms/using/upgrade.html)、[升级到AEM 6.3 Forms](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/upgrade.html)，或[升级到AEM 6.4 Forms](/help/forms/using/upgrade.md)，然后从AEM 6.3 Forms或AEM 6.4 Forms升级到AEM 6.5 Forms。
 
 要从AEM 6.3 Forms或AEM 6.4 Forms升级到AEM 6.5 Forms，请执行以下操作：
 
@@ -49,10 +49,10 @@ ht-degree: 1%
       1. 从&#x200B;**[!UICONTROL 解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Forms]**。
       1. 选择包的版本和类型。 您还可以使用&#x200B;**[!UICONTROL 搜索下载]**&#x200B;选项来筛选结果。
    1. 选择适用于您的操作系统的包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
-   1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
+   1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
    1. 选择包并单击&#x200B;**[!UICONTROL 安装]**。
 
-      您还可以使用[AEM Forms发行版](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中列出的直接链接下载包。
+      您还可以使用[AEM Forms发行版](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)文章中列出的直接链接下载包。
 
       >[!NOTE]
       >
@@ -70,7 +70,7 @@ ht-degree: 1%
 
      迁移实用程序使自适应表单及以前版本的通信管理资产与AEM 6.5表单兼容。 您可以从AEM Software Distribution下载该实用程序。 有关配置和使用迁移实用程序的逐步信息，请参阅[迁移实用程序](../../forms/using/migration-utility.md)。
 
-     如果您使用[示例将草稿和提交组件](https://helpx.adobe.com/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)与数据库集成并从以前的版本升级，请在执行升级后运行以下SQL查询：
+     如果您使用[示例将草稿和提交组件](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/integrate-draft-submission-database.html)与数据库集成并从以前的版本升级，请在执行升级后运行以下SQL查询：
 
      ```sql
      UPDATE metadata m, additionalmetadatatable am

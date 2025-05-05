@@ -300,7 +300,7 @@ ht-degree: 1%
 | 社会安全号码 | 1234567 | 文本{999-99-9999} | 1-23-4567 | 默认值字段中的位数小于模式字段中的位数。 该模式适用于7个可用数字。 |
 | 社会安全号码 | 1234567890 | 文本{999-99-9999} | 1234567890 | 默认值字段中的位数大于模式字段中的位数。 因此，显示值没有变化。 |
 
-如果没有为变量或表单数据模型元素指定显示模式，则默认使用[全局文档片段配置](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html)。
+如果没有为变量或表单数据模型元素指定显示模式，则默认使用[全局文档片段配置](https://helpx.adobe.com/cn//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html)。
 
 如果不将显示模式应用于number数据类型的变量，打印预览将根据全局文档片段配置显示模式。 如果将更改应用于默认全局文档片段配置，则代理UI仍会根据为区域设置定义的默认分隔符显示模式。
 
@@ -618,7 +618,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-要以任何其他格式生成输出，请指定输出格式类型。 有关支持的输出格式类型的列表，请参阅[PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html)。
+要以任何其他格式生成输出，请指定输出格式类型。 有关支持的输出格式类型的列表，请参阅[PrintChannel API](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html)。
 
 例如，可以使用以下示例将PCL定义为交互式通信的输出格式：
 

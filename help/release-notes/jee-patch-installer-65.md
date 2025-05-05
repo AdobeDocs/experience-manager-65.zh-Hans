@@ -19,7 +19,7 @@ ht-degree: 17%
 
 >[!NOTE]
 >
->[联系支持人员](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)以获取详细信息或获取修补程序。
+>[联系支持人员](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)以获取详细信息或获取修补程序。
 
 ## 关于修补程序安装程序 {#about-the-patch-installer}
 
@@ -71,8 +71,8 @@ AEM 6.5 Forms JEE修补程序安装程序包含在此修补程序发布之前可
 
 1. 根据您的应用程序服务器，选择以下文档之一，然后按照&#x200B;*配置和部署AEM表单*&#x200B;部分中的说明操作。
 
-   * [安装和部署AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [安装和部署AEM Forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [安装和部署AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_cn)
+   * [安装和部署AEM Forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_cn)
 
 1. (仅限JBoss®)安装修补程序并配置服务器后，删除JBoss®应用程序服务器的tmp和工作目录。
 
@@ -97,4 +97,4 @@ AEM 6.5 Forms JEE修补程序安装程序包含在此修补程序发布之前可
 * 文档安全
 * Foundation JEE
 
-[联系支持人员](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)
+[联系支持人员](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)

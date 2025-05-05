@@ -35,4 +35,4 @@ AEM Forms JEE 6.5.15.0 service pack未在JBoss® Linux®环境中正确安装。
 1. 将`Resource1.zip`文件复制到解压缩文件夹之外的其他位置，然后解压缩`Resource1.zip`文件。
 1. 导航到`/C_/builds/dev_releng/branches/rrt/aem6.5.0_rollup/tier1/install/patch/fileset_dir/xml`并复制`RUP_BOM.xml`文件。
 1. 将RUP_BOM.xml文件粘贴到`[aem_forms_jee_installation_dir]/patch/AEMForms-6.5.0-0057/xml`。
-1. 重新安装[AEM Forms JEE 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
+1. 重新安装[AEM Forms JEE 6.5.15.0 Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)。

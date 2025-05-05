@@ -29,7 +29,7 @@ ht-degree: 0%
 >
 >虽然HTML模板语言(HTL)和JSP都可以用于开发经典UI的组件，但此页说明了使用JSP进行开发。 这完全是因为在经典UI中使用JSP的历史记录。
 >
->HTL现在是适用于AEM的推荐脚本语言。 请参阅[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)和[开发AEM组件](/help/sites-developing/developing-components.md)以比较方法。
+>HTL现在是适用于AEM的推荐脚本语言。 请参阅[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)和[开发AEM组件](/help/sites-developing/developing-components.md)以比较方法。
 
 ## 结构 {#structure}
 

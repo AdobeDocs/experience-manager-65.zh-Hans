@@ -116,12 +116,12 @@ ht-degree: 0%
    ![fbsocialloginconfigpng](assets/fbsocialloginconfigpng.png)
 
    * **[!UICONTROL 标题]** （*必需*）输入标识Facebook应用程序的显示标题。 使用与Facebook应用程序的&#x200B;*显示名称*&#x200B;输入的相同名称。
-   * **[!UICONTROL 应用程序ID/API密钥]** （*必需*）输入Facebook应用程序的&#x200B;***应用程序ID***。 这标识了通过对话框创建的[AdobeGranite OAuth应用程序和提供程序](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)实例。
+   * **[!UICONTROL 应用程序ID/API密钥]** （*必需*）输入Facebook应用程序的&#x200B;***应用程序ID***。 这标识了通过对话框创建的[AdobeGranite OAuth应用程序和提供程序](https://helpx.adobe.com/cn/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)实例。
    * **[!UICONTROL 应用程序密钥]** （*必需*）输入Facebook应用程序的&#x200B;***应用程序密钥***。
    * **[!UICONTROL 创建用户]**&#x200B;如果选中，使用Facebook帐户登录将创建AEM用户条目，并将它们作为成员添加到选定的用户组。  默认处于选中状态（强烈推荐）。
    * **[!UICONTROL 隐藏用户ID]**：保留为取消选择。
    * **[!UICONTROL 范围电子邮件]**：应从Facebook中获取用户的电子邮件ID。
-   * **[!UICONTROL 添加到用户组]**&#x200B;选择“添加用户组”为要向其添加用户的社区站点选择一个或多个[成员组](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html)。
+   * **[!UICONTROL 添加到用户组]**&#x200B;选择“添加用户组”为要向其添加用户的社区站点选择一个或多个[成员组](https://helpx.adobe.com/cn/experience-manager/6-3/communities/using/users.html)。
 
    >[!NOTE]
    >
@@ -130,7 +130,7 @@ ht-degree: 0%
    * 选择&#x200B;**[!UICONTROL 保存]**。
    * **[!UICONTROL Publish]**。
 
-结果是[Adobe的Granite OAuth应用程序和提供程序](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider)实例，除非添加其他作用域（权限），否则不需要进一步修改。 默认范围是Facebook登录的标准权限。 如果需要额外的范围，则需要直接编辑OSGI配置。 如果直接通过系统/控制台进行了修改，请避免从触屏UI编辑云服务配置以避免覆盖。
+结果是[Adobe的Granite OAuth应用程序和提供程序](https://helpx.adobe.com/cn/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider)实例，除非添加其他作用域（权限），否则不需要进一步修改。 默认范围是Facebook登录的标准权限。 如果需要额外的范围，则需要直接编辑OSGI配置。 如果直接通过系统/控制台进行了修改，请避免从触屏UI编辑云服务配置以避免覆盖。
 
 ### AEM Communities Facebook OAuth提供程序 {#aem-communities-facebook-oauth-provider}
 
@@ -270,7 +270,7 @@ facebook和Twitter的后续步骤相同：
 
    * **[!UICONTROL 使用者密钥]**
 
-     （*必需*）输入Twitter应用程序的&#x200B;**消费者(API)密钥**。 这标识了通过对话框创建的[AdobeGranite OAuth应用程序和提供程序](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)实例。
+     （*必需*）输入Twitter应用程序的&#x200B;**消费者(API)密钥**。 这标识了通过对话框创建的[AdobeGranite OAuth应用程序和提供程序](https://helpx.adobe.com/cn/experience-manager/6-3/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider)实例。
 
    * **[!UICONTROL 使用者密码]**
 
@@ -286,7 +286,7 @@ facebook和Twitter的后续步骤相同：
 
    * **[!UICONTROL 添加到用户组]**
 
-     选择“添加用户组”为要向其添加用户的社区站点选择一个或多个[成员组](https://helpx.adobe.com/experience-manager/6-3/communities/using/users.html)。
+     选择“添加用户组”为要向其添加用户的社区站点选择一个或多个[成员组](https://helpx.adobe.com/cn/experience-manager/6-3/communities/using/users.html)。
 
    >[!NOTE]
    >
@@ -295,7 +295,7 @@ facebook和Twitter的后续步骤相同：
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;和&#x200B;**[!UICONTROL Publish]**。
 
-结果是一个[Adobe的Granite OAuth应用程序和提供程序](https://helpx.adobe.com/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider)实例，不需要进一步修改。 默认范围是Twitter登录的标准权限。
+结果是一个[Adobe的Granite OAuth应用程序和提供程序](https://helpx.adobe.com/cn/experience-manager/6-3/communities/using/social-login.html#adobe-granite-oauth-application-and-provider)实例，不需要进一步修改。 默认范围是Twitter登录的标准权限。
 
 ### AEM CommunitiesTwitterOAuth提供程序 {#aem-communities-twitter-oauth-provider}
 
@@ -346,7 +346,7 @@ facebook和Twitter的后续步骤相同：
 
 ### AEM Communities Sites控制台 {#aem-communities-sites-console}
 
-配置云服务后，可以在社区站点[创建](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#SiteCreation)或[管理](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties)期间使用[用户管理](https://helpx.adobe.com/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT)设置子面板为社区站点的相关社交登录设置启用该服务。
+配置云服务后，可以在社区站点[创建](https://helpx.adobe.com/cn/experience-manager/6-3/communities/using/sites-console.html#SiteCreation)或[管理](https://helpx.adobe.com/cn/experience-manager/6-3/communities/using/sites-console.html#ModifyingSiteProperties)期间使用[用户管理](https://helpx.adobe.com/cn/experience-manager/6-3/communities/using/sites-console.html#USERMANAGEMENT)设置子面板为社区站点的相关社交登录设置启用该服务。
 
 1. 选择保存社交登录配置的站点配置上下文。
 

@@ -584,7 +584,7 @@ AEM包可用于在AEM环境中创建和共享内容。
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com)是一项集中式服务，旨在简化AEM包的搜索和下载。
 
-有关详细信息，请参阅[软件分发文档。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+有关详细信息，请参阅[软件分发文档。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)
 
 >[!NOTE]
 >

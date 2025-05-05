@@ -18,7 +18,7 @@ ht-degree: 2%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/download-assets-from-aem.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 您可以下载资源，包括静态和动态演绎版。 或者，您可以直接从[!DNL Adobe Experience Manager Assets]发送带有资产链接的电子邮件。 下载的资源捆绑在一个ZIP文件中。 对于导出作业，压缩的ZIP文件的最大文件大小为1 GB。 每个导出作业最多允许500个总资产。
@@ -80,13 +80,13 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
 
 通过更新Dispatcher配置以阻止任何资源下载请求，可以在[!DNL Experience Manager]个Publish实例上禁用`Asset Download Servlet`。 也可以直接通过OSGi控制台手动禁用servlet。
 
-1. 要通过Dispatcher配置阻止资源下载请求，请编辑`dispatcher.any`配置并将规则添加到[筛选条件部分](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#defining-a-filter)。`/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
+1. 要通过Dispatcher配置阻止资源下载请求，请编辑`dispatcher.any`配置并将规则添加到[筛选条件部分](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#defining-a-filter)。`/0100 { /type "deny" /url "*.assetdownload.zip/assets.zip*" }`
 
 1. 要在Publish实例上禁用OSGi组件，请访问位于`http://[aem_server]:[port]/system/console/components`的OSGi控制台。 找到`com.day.cq.dam.core.impl.servlet.AssetDownloadServlet`并单击&#x200B;**[!UICONTROL 禁用]**。
 
 >[!MORELIKETHIS]
 >
->* [使用Brand Portal下载资源](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html)
+>* [使用Brand Portal下载资源](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/download/brand-portal-download-assets.html?lang=zh-Hans)
 >* [下载受DRM保护的资产](drm.md)。
->* [在Win或Mac桌面上使用Experience Manager桌面应用程序下载资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#download-assets)。
->* [使用支持的Assets应用程序中的AdobeAdobe Creative Cloud链接下载资源](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)。
+>* [在Win或Mac桌面上使用Experience Manager桌面应用程序下载资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#download-assets)。
+>* [使用支持的Assets应用程序中的AdobeAdobe Creative Cloud链接下载资源](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)。

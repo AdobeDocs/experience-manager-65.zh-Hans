@@ -27,7 +27,7 @@ ht-degree: 7%
 路径： `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`。\
 例如，3.10 SDK： [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
 
-另请参阅[Adobe Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)。
+另请参阅[Adobe Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)。
 
 本节介绍如何创建、编辑和管理查看器预设。 您可以随时将查看器预设应用于资产，以进行预览。 请参阅[应用查看器预设](#applying-a-viewer-preset-to-an-asset)。
 
@@ -39,7 +39,7 @@ ht-degree: 7%
 
 所有开箱即用的查看器都支持键盘辅助功能。
 
-另请参阅[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
+另请参阅[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=zh-Hans)。
 
 ## 管理查看器预设 {#managing-viewer-presets-1}
 
@@ -55,7 +55,7 @@ ht-degree: 7%
 
 不同的网页具有不同的需求。 例如，有时您会希望某个网页提供的链接能够在单独的浏览器窗口中打开HTML5查看器。 在其他情况下，可能有必要直接将HTML5 Viewer嵌入到托管页面上。 在后一种情况下，网页可能具有静态布局。 或者，它可能会是“响应式”的，并且在不同设备或不同浏览器窗口大小上显示的内容会有所不同。 为了满足这些需求，Dynamic Media附带的所有预定义、开箱即用的HTML5查看器都支持静态网页和响应式设计网页。
 
-有关如何将响应式查看器嵌入网页的更多信息，请参阅[响应式图像库](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html)。
+有关如何将响应式查看器嵌入网页的更多信息，请参阅[响应式图像库](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html?lang=zh-Hans)。
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
 有关查看器支持的Web浏览器和操作系统版本的信息，您可以查看查看器发行说明。
 
-请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)目录中的“查看器发行说明”。
+请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)目录中的“查看器发行说明”。
 
 >[!NOTE]
 >
@@ -440,13 +440,13 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
      通过可视编辑器，可查看特定属性对样式有何影响。 设置或调整任何属性，使用编辑器左侧的示例即时查看它对查看器有何影响。
 
-     [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)的“自定义&#x200B;*`<viewer name>`*&#x200B;查看器”帮助主题中介绍了每种类型的查看器预设的CSS样式属性。 例如，如果要创建`Mixed_Media`类型的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html)，以了解每个属性的列表和说明。
+     [查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)的“自定义&#x200B;*`<viewer name>`*&#x200B;查看器”帮助主题中介绍了每种类型的查看器预设的CSS样式属性。 例如，如果要创建`Mixed_Media`类型的查看器预设，请参阅[自定义混合媒体查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html?lang=zh-Hans)，以了解每个属性的列表和说明。
 
    * 如果您在单独的CSS文件中定义了样式设置，则可以将CSS文件上传到AEM Assets。 在&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单下选择&#x200B;**[!UICONTROL 导入CSS]**（如有必要，向上滚动可视编辑器以查看它），以便您可以查找上传的CSS文件并将其与查看器预设关联。
 
      导入CSS文件时，可视编辑器将检查CSS是否使用正确的查看器标记。 例如，如果要创建缩放查看器，则导入的所有CSS规则必须使用其在父查看器元素上定义的查看器类名称`.s7mixedmediaviewer`来定义。
 
-     您可以导入任意的手工制作CSS，只要它正确定义给定查看器的CSS标记即可。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html)的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中都有说明。 例如，如果您想阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html)。)但是，可视编辑器可能不了解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可用。
+     您可以导入任意的手工制作CSS，只要它正确定义给定查看器的CSS标记即可。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中都有说明。 例如，如果您想阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=zh-Hans)。)但是，可视编辑器可能不了解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可用。
 
    >[!NOTE]
    >
@@ -472,7 +472,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
    可视编辑器中的许多组件都有一个与之关联的详细说明。 展开组件以显示其关联参数时，这些描述会显示在蓝色框中。
 
-   有些“查看器类型”具有的组件允许您在 **[!UICONTROL IS 命令]**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html)。
+   有些“查看器类型”具有的组件允许您在 **[!UICONTROL IS 命令]**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html?lang=zh-Hans)。
 
    >[!NOTE]
    >

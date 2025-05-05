@@ -68,7 +68,7 @@ AEM Fluid Experiences与经典AEM的不同之处在于，它仅涉及Headless投
 | [内容翻译](/help/sites-administering/translation.md) |
 | [正在监视](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [备份](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
+| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hans) |
 | [PIM集成](/help/sites-authoring/managing-product-information.md) |
 | [项目和任务](/help/sites-authoring/projects.md) |
 | [工作流程](/help/sites-administering/workflows-starting.md) |
@@ -84,7 +84,7 @@ AEM Fluid Experiences与经典AEM的不同之处在于，它仅涉及Headless投
 
 ## 了解详细信息 {#learn-more}
 
-* 无头用例的[流体验](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html)
-* [AEM Content Service：内容、原因和方式？](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html)
-* 第三方访问的[常见问题解答](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html)
-* [使用Sling API](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html#sling-models)
+* 无头用例的[流体验](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-headless-usecases.html?lang=zh-Hans)
+* [AEM Content Service：内容、原因和方式？](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/overview.html?lang=zh-Hans)
+* 第三方访问的[常见问题解答](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/content-services/chapter-7.html?lang=zh-Hans)
+* [使用Sling API](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/component-basics.html?lang=zh-Hans#sling-models)

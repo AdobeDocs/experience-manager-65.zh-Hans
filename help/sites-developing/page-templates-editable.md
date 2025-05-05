@@ -49,7 +49,7 @@ ht-degree: 4%
 >[!NOTE]
 >
 >以下教程可能也适合在新项目中设置可编辑页面模板：
->[AEM Sites快速入门第2部分 — 创建基础页和模板](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html)
+>[AEM Sites快速入门第2部分 — 创建基础页和模板](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=zh-Hans)
 
 ## 创建新模板 {#creating-a-new-template}
 
@@ -73,7 +73,7 @@ ht-degree: 4%
    * 利用结构，可为模板定义组件和内容。
    * 不能在生成页面上移动在模板结构中定义的组件，也不能从任何生成页面中删除这些组件。
 
-      * 如果您在`We.Retail`示例内容之外的自定义文件夹中创建模板，则可以选择“基础组件”或使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)。
+      * 如果您在`We.Retail`示例内容之外的自定义文件夹中创建模板，则可以选择“基础组件”或使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)。
 
    * 如果要使页面作者能够添加和删除组件，请在模板中添加段落系统。
    * 可以解锁组件，然后再将其锁定，以便定义初始内容。
@@ -132,7 +132,7 @@ ht-degree: 4%
 
 >[!TIP]
 >
->切勿在模板中输入任何必须国际化的信息。 出于内部化的目的，建议使用核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的本地化功能。
+>切勿在模板中输入任何必须国际化的信息。 出于内部化的目的，建议使用核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)的本地化功能。
 
 >[!NOTE]
 >

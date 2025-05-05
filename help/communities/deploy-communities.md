@@ -301,7 +301,7 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 
 >[!CAUTION]
 >
->如果已配置基于加密密钥的其他安全功能，则复制加密密钥可能会损坏配置。 如需帮助，[请联系客户关怀](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)。
+>如果已配置基于加密密钥的其他安全功能，则复制加密密钥可能会损坏配置。 如需帮助，[请联系客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)。
 
 #### 存储库复制 {#repository-replication}
 
@@ -366,7 +366,7 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 如果使用Dispatcher，请参阅：
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)文档
-* [安装 Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* [安装 Dispatcher](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [为社区配置Dispatcher](/help/communities/dispatcher.md)
 * [已知问题](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

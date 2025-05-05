@@ -121,7 +121,7 @@ ht-degree: 3%
 
    * 在触屏UI中提供了一个兼容层，用于在“触屏UI包装器”中打开经典UI对话框，但此功能有限，不建议长期使用。
 
-* [在触屏UI中自定义对话框字段](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
+* [在触屏UI中自定义对话框字段](https://helpx.adobe.com/cn/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
 * [创建新的Granite UI字段组件](/help/sites-developing/granite-ui-component.md)
 * [自定义页面创作](/help/sites-developing/customizing-page-authoring-touch.md)（使用支持触屏的UI）
 
@@ -137,7 +137,7 @@ ht-degree: 3%
 
 * [模板](/help/sites-developing/templates.md) - [可编辑的模板](/help/sites-developing/page-templates-editable.md)
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)
 
 >[!NOTE]
 >
@@ -149,9 +149,9 @@ ht-degree: 3%
 
 * [Developing用户指南](/help/sites-developing/getting-started.md)
 * [Granite UI文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 SitesTutorials和视频](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
+* [AEM 6.5 SitesTutorials和视频](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=zh-Hans)
 * [AEM Sites 开发快速入门 – WKND 教程](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=zh-Hans)
 * [AEM 现代化工具](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]

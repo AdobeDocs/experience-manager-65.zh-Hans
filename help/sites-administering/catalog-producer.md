@@ -28,9 +28,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可以先从InDesign文件生成InDesign模板，然后再将其导入AEM Assets。 有关详细信息，请参阅[使用文件和模板](https://helpx.adobe.com/indesign/using/files-templates.html)。
+>您可以先从InDesign文件生成InDesign模板，然后再将其导入AEM Assets。 有关详细信息，请参阅[使用文件和模板](https://helpx.adobe.com/cn/indesign/using/files-templates.html)。
 >
->您可以将InDesign模板中的元素映射到XML标签。 在Catalog Producer中将产品属性与模板属性映射时，映射的标记会显示为属性。 若要了解InDesign文件中的XML标记，请参阅[为XML添加标记](https://helpx.adobe.com/indesign/using/tagging-content-xml.html)。
+>您可以将InDesign模板中的元素映射到XML标签。 在Catalog Producer中将产品属性与模板属性映射时，映射的标记会显示为属性。 若要了解InDesign文件中的XML标记，请参阅[为XML添加标记](https://helpx.adobe.com/cn/indesign/using/tagging-content-xml.html)。
 
 >[!NOTE]
 >

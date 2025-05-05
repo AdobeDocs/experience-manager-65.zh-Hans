@@ -56,7 +56,7 @@ ht-degree: 28%
 >* 改善了针对单页应用程序的实施选项
 >* AT.js包含target.js中包含的组件，因此不再需要调用target。
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=zh-Hans -->
 
 ### 已设置的目标框架属性 {#provisioned-target-framework-properties}
 
@@ -119,7 +119,7 @@ ht-degree: 28%
 >
 >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=zh-Hans -->
 
 ### 创建 Target 云配置 {#creating-a-target-cloud-configuration}
 
@@ -224,7 +224,7 @@ ht-degree: 28%
 
 ### 将活动与Target云配置关联  {#associating-activities-with-the-target-cloud-configuration}
 
-将您的[AEM活动](/help/sites-authoring/activitylib.md)与Target云配置相关联，以便您可以镜像[Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html)中的活动。
+将您的[AEM活动](/help/sites-authoring/activitylib.md)与Target云配置相关联，以便您可以镜像[Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hans)中的活动。
 
 >[!NOTE]
 >

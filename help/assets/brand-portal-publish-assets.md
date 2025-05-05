@@ -87,6 +87,6 @@ ht-degree: 40%
 
 1. 切换到列表视图![列表视图](assets/list-view.svg)以查看资源的当前发布状态。
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![已生成报告状态](assets/report-status.JPG)

@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[资产选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)在早期版本的[!DNL Experience Manager]中被称为[资产选取器](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)。
+>[资产选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=zh-Hans)在早期版本的[!DNL Experience Manager]中被称为[资产选取器](https://helpx.adobe.com/cn/experience-manager/6-2/assets/using/asset-picker.html)。
 
 通过资源选择器，您可以在[!DNL Adobe Experience Manager] Assets中浏览、搜索和筛选资源。 您还可以获取使用资源选择器选择的资源的元数据。 要自定义资产选择器界面，您可以使用支持的请求参数启动该界面。 这些参数为特定方案设置资源选择器的上下文。
 
@@ -63,4 +63,4 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* AEM as a Cloud Service中的[微前端资源选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)
+>* AEM as a Cloud Service中的[微前端资源选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=zh-Hans)

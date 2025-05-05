@@ -53,7 +53,7 @@ AEM的内部重新索引过程收集存储库数据并将其存储在Oak索引�
 
 >[!NOTE]
 >
->对于AEM 6.1，请确保已安装[AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
+>对于AEM 6.1，请确保已安装[AEM 6.1 CFP 11](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)。
 
 在特殊情况下，用于管理异步索引的线程池可能会变得过载。 为了隔离索引过程，可以配置线程池以防止其他AEM工作干扰Oak及时索引内容的能力。 在这种情况下，请执行以下操作：
 
@@ -128,7 +128,7 @@ AEM的内部重新索引过程收集存储库数据并将其存储在Oak索引�
 1. 收集了步骤1中概述的所有信息后，重新启动AEM。
 
    * 如果存在高并发负载（观察队列溢出或类似情况），重新启动AEM可能会解决问题。
-   * 如果重启不能解决问题，请打开[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)的问题，并提供在步骤1中收集的所有信息。
+   * 如果重启不能解决问题，请打开[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)的问题，并提供在步骤1中收集的所有信息。
 
 ## 安全中止异步重新索引 {#safely-aborting-asynchronous-re-indexing}
 

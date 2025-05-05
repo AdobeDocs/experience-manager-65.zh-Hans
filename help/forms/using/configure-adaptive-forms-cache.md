@@ -60,10 +60,10 @@ ht-degree: 1%
 
 要在Dispatcher上启用和配置缓存自适应表单，请执行以下步骤：
 
-1. 为环境的每个发布实例打开以下URL，并[为环境的发布实例启用刷新代理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)：
+1. 为环境的每个发布实例打开以下URL，并[为环境的发布实例启用刷新代理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-a-publishing-instance)：
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [将以下内容添加到您的dispatcher.any文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files)：
+1. [将以下内容添加到您的dispatcher.any文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#automatically-invalidating-cached-files)：
 
    ```JSON
       /invalidate
@@ -92,7 +92,7 @@ ht-degree: 1%
    * 自适应表单会保留在缓存中，直到未发布表单的更新版本为止。
 
    * 发布自适应表单中引用的资源的较新版本时，受影响的自适应表单会自动失效。 引用的资源自动失效有一些例外。 有关异常的解决方法，请参阅[疑难解答](#troubleshooting)部分。
-1. [添加以下规则dispatcher.any或自定义规则文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache)。 它不包括不支持缓存的URL。 例如，交互式通信。
+1. [添加以下规则dispatcher.any或自定义规则文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#specifying-the-documents-to-cache)。 它不包括不支持缓存的URL。 例如，交互式通信。
 
    ```JSON
       /0000 {
@@ -116,7 +116,7 @@ ht-degree: 1%
       }
    ```
 
-1. [将以下参数添加到忽略URL参数列表](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)：
+1. [将以下参数添加到忽略URL参数列表](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#ignoring-url-parameters)：
 
    ```JSON
       /ignoreUrlParams {

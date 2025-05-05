@@ -188,7 +188,7 @@ ht-degree: 0%
 
    * 每个环境的流程；例如，部署和维护要求
    * 维护活动（Datastore GC、TarPM优化等）
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)缓存
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)缓存
    * [群集](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publish/Authorshare
    * 客户端的性能（JS缩小、concat、css脚本、http请求总数等）
 
@@ -239,7 +239,7 @@ ht-degree: 0%
 
   在开发之前，应设置部署、发布、测试和报告问题所需的所有支持流程。
 
-  另请参阅[Adobe支持门户](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)。
+  另请参阅[Adobe支持门户](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)。
 
 ### 运营规划和运营 {#operations-planning-and-operations}
 
@@ -628,8 +628,8 @@ ht-degree: 0%
 
       * [开发 — 基础知识](/help/sites-developing/the-basics.md)
       * [MSM概念](/help/sites-administering/msm.md)
-      * [HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)
 
 * 相关文档
 
-   * Adobe Experience Cloud - [规划Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [规划Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=zh-Hans)

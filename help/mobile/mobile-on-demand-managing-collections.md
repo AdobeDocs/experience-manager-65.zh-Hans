@@ -30,9 +30,9 @@ ht-degree: 0%
 >
 >请参阅联机帮助中的以下资源，以了解AEM Mobile应用程序中的以下主题：
 >
->* [设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [设计注意事项](https://helpx.adobe.com/cn/digital-publishing-solution/help/design-app.html)
 >
->* [管理收藏集](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+>* [管理收藏集](https://helpx.adobe.com/cn/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## 创建收藏集 {#creating-a-collection}

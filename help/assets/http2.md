@@ -61,7 +61,7 @@ Adobe自己的测试产生了以下结果：
 
 您启动切换到HTTP/2的请求；不会自动为您完成此操作。
 
-1. 要切换到HTTP/2，请启动Adobe客户支持请求。 请参阅[打开支持票证](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support)。
+1. 要切换到HTTP/2，请启动Adobe客户支持请求。 请参阅[打开支持票证](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;lang=en&amp;support-tab=home#support)。
 
    1. 在您的支持请求中提供以下信息：
 

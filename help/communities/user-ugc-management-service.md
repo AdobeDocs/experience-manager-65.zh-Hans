@@ -29,7 +29,7 @@ AEM Communities提供现成的API来管理用户配置文件和批量管理用�
 
 >[!NOTE]
 >
->如果您在AEM Communities[&#128279;](/help/communities/analytics.md)站点中配置了Adobe Analytics，则捕获的用户数据将发送到Adobe Analytics服务器。 Adobe Analytics提供的API允许您访问、导出和删除用户数据，并符合GDPR。 有关详细信息，请参阅[提交访问和删除请求](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html)。
+>如果您在AEM Communities[&#128279;](/help/communities/analytics.md)站点中配置了Adobe Analytics，则捕获的用户数据将发送到Adobe Analytics服务器。 Adobe Analytics提供的API允许您访问、导出和删除用户数据，并符合GDPR。 有关详细信息，请参阅[提交访问和删除请求](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-submit-access-delete.html?lang=zh-Hans)。
 
 若要使用这些API，您需要通过激活UserUgcManagement服务来启用`/services/social/ugcmanagement`端点。 要激活此服务，请安装[GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)上提供的[示例servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)。 然后，使用http请求通过相应的参数点击社区站点发布实例上的端点，如下所示：
 
@@ -61,7 +61,7 @@ AEM Communities提供现成的API来管理用户配置文件和批量管理用�
 
 ### 从Adobe Analytics中删除UGC {#delete-ugc-from-adobe-analytics}
 
-要从Adobe Analytics中删除用户数据，请遵循[GDPR Analytics工作流](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html)；因为该API不会从Adobe Analytics中删除用户数据。
+要从Adobe Analytics中删除用户数据，请遵循[GDPR Analytics工作流](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-workflow.html?lang=zh-Hans)；因为该API不会从Adobe Analytics中删除用户数据。
 
 有关AEM Communities使用的Adobe Analytics变量映射，请参阅以下图像：
 

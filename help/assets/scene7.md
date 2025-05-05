@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # 将Dynamic Media Classic功能添加到页面 {#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html)是一个托管解决方案，用于管理、增强、发布富媒体资产，并将其交付给Web、移动设备、电子邮件和连接到Internet的显示和打印。
+[Adobe Dynamic Media Classic](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=zh-Hans)是一个托管解决方案，用于管理、增强、发布富媒体资产，并将其交付给Web、移动设备、电子邮件和连接到Internet的显示和打印。
 
 您可以在各种查看器中查看在Dynamic Media Classic中发布的Experience Manager资源：
 
@@ -179,13 +179,13 @@ Dynamic Media Classic **[!UICONTROL 图像]**&#x200B;组件允许您向图像添
 
 **[!UICONTROL 锐化]** — 选择要如何锐化图像。 在[图像预设最佳实践](/help/assets/managing-image-presets.md#image-preset-options)和[锐化最佳实践](/help/assets/assets/sharpening_images.pdf)中对锐化进行了详细解释。
 
-**[!UICONTROL URL修饰符]** — 您可以通过提供其他Dynamic Media Classic图像命令来更改图像效果。 [图像预设](/help/assets/managing-image-presets.md)和[命令引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中介绍了这些命令。
+**[!UICONTROL URL修饰符]** — 您可以通过提供其他Dynamic Media Classic图像命令来更改图像效果。 [图像预设](/help/assets/managing-image-presets.md)和[命令引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans)中介绍了这些命令。
 
 **[!UICONTROL 断点]** — 如果您的网站有响应，则要调整断点。 断点必须以逗号( 、 )分隔。
 
 ### 图像模板 {#image-template}
 
-[Dynamic Media Classic图像模板](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html)是导入到Dynamic Media Classic的分层Photoshop内容，其中内容和属性已参数化为可变性。 通过&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，您可以导入图像并在Experience Manager中动态更改文本。 此外，您可以将&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件配置为使用来自客户端上下文的值，以便每个用户以个性化的方式体验图像。
+[Dynamic Media Classic图像模板](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html?lang=zh-Hans)是导入到Dynamic Media Classic的分层Photoshop内容，其中内容和属性已参数化为可变性。 通过&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，您可以导入图像并在Experience Manager中动态更改文本。 此外，您可以将&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件配置为使用来自客户端上下文的值，以便每个用户以个性化的方式体验图像。
 
 如果要配置该组件，请选择&#x200B;**[!UICONTROL 编辑]**。 您可以配置所有Dynamic Media Classic组件通用的[设置](#settings-common-to-all-scene-components)以及本节中描述的其他设置。
 

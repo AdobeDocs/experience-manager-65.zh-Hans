@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 概述 {#overview}
 
-AEM Brackets扩展提供了用于编辑AEM组件和客户端库的流畅工作流程，并且使用了[Brackets](https://brackets.io/)代码编辑器的强大功能，该编辑器提供了从代码编辑器访问Photoshop文件和图层的权限。 扩展提供的轻松同步（不需要Maven或File Vault）提高了开发人员效率，并且还有助于掌握有限AEM知识的前端开发人员参与项目。 此扩展还为[HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)提供了一些支持，这消除了JSP的复杂性，使组件开发更容易、更安全。
+AEM Brackets扩展提供了用于编辑AEM组件和客户端库的流畅工作流程，并且使用了[Brackets](https://brackets.io/)代码编辑器的强大功能，该编辑器提供了从代码编辑器访问Photoshop文件和图层的权限。 扩展提供的轻松同步（不需要Maven或File Vault）提高了开发人员效率，并且还有助于掌握有限AEM知识的前端开发人员参与项目。 此扩展还为[HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)提供了一些支持，这消除了JSP的复杂性，使组件开发更容易、更安全。
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 

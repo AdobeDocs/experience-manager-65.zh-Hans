@@ -25,7 +25,7 @@ ht-degree: 0%
 
 AEM Forms数据集成模块允许您从不同的后端数据源(如AEM用户配置文件、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库)创建表单数据模型。 您可以在表单数据模型中配置数据模型对象和服务，并将其与自适应表单关联。 自适应表单字段绑定到数据模型对象属性。 这些服务使您能够预填充自适应表单并将提交的表单数据写回数据模型对象。
 
-有关表单数据集成和表单数据模型的详细信息，请参阅[AEM Forms数据集成](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)。
+有关表单数据集成和表单数据模型的详细信息，请参阅[AEM Forms数据集成](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/data-integration.html)。
 
 本教程将指导您完成准备、创建、配置表单数据模型并将其与交互式通信关联的步骤。 在本教程结束时，您将能够：
 
@@ -46,7 +46,7 @@ AEM Forms数据集成模块允许您从不同的后端数据源(如AEM用户配�
 在开始之前，请确保您具备以下条件：
 
 * 包含示例数据的MySQL数据库，如[设置数据库](../../forms/using/create-form-data-model0.md#step-set-up-the-database)部分中所述。
-* MySQL JDBC驱动程序的OSGi捆绑包，如[捆绑JDBC数据库驱动程序](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)中所述
+* MySQL JDBC驱动程序的OSGi捆绑包，如[捆绑JDBC数据库驱动程序](https://helpx.adobe.com/cn/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)中所述
 
 ## 步骤1：设置数据库 {#step-set-up-the-database}
 
@@ -113,7 +113,7 @@ CREATE TABLE `calls` (
 
 ## 步骤2：将MySQL数据库配置为数据源 {#step-configure-mysql-database-as-data-source}
 
-您可以配置不同类型的数据源来创建表单数据模型。 在本教程中，您将配置已配置并填充了示例数据的MySQL数据库。 有关其他受支持数据源以及如何配置它们的信息，请参阅[AEM Forms数据集成](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)。
+您可以配置不同类型的数据源来创建表单数据模型。 在本教程中，您将配置已配置并填充了示例数据的MySQL数据库。 有关其他受支持数据源以及如何配置它们的信息，请参阅[AEM Forms数据集成](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/data-integration.html)。
 
 执行以下操作以配置MySQL数据库：
 
@@ -155,7 +155,7 @@ CREATE TABLE `calls` (
 
 ## 步骤3：创建表单数据模型 {#step-create-form-data-model}
 
-AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[创建表单数据模式](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l。 您可以在表单数据模型中使用多个数据源。 对于本教程中的用例，您将使用MySQL作为数据源。
+AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[创建表单数据模式](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l。 您可以在表单数据模型中使用多个数据源。 对于本教程中的用例，您将使用MySQL作为数据源。
 
 执行以下操作以创建表单数据模型：
 

@@ -174,7 +174,7 @@ Web控制台不显示存储库中已保存更改的位置，但可以轻松地�
 
 >[!NOTE]
 >
->另请参阅[如何为特定实例定义基于存储库的配置](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html)。
+>另请参阅[如何为特定实例定义基于存储库的配置](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17500.html?lang=zh-Hans)。
 
 ### 向存储库添加新配置 {#adding-a-new-configuration-to-the-repository}
 

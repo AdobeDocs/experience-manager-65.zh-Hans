@@ -129,4 +129,4 @@ RemotePage 组件允许在 AEM 中呈现外部 SPA。
 * [SPA 编辑器概述](/help/sites-developing/spa-overview.md) – SPA 编辑器的工作原理的详细信息
 * [SPA 引用文档](/help/sites-developing/spa-reference-materials.md) – JavaScript API 引用以及指向开源 AEM SPA GitHub 项目的链接
 * [内容片段](/help/assets/content-fragments/content-fragments.md) – 如何创建内容片段
-* [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) – Maven 模板，它创建最小的基于最佳实践的 Adobe Experience Manager (AEM) 项目作为您网站的起点
+* [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) – Maven 模板，它创建最小的基于最佳实践的 Adobe Experience Manager (AEM) 项目作为您网站的起点

@@ -50,8 +50,8 @@ AEM中标记的部分功能包括：
    * 不是容器标记的标记称为叶标记
    * 标记命名空间是叶标记或容器标记
 
-* 标记由[搜索组件](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html)使用，以便于查找内容。
-* 标记由[Teaser组件](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html)使用，该组件监视用户的标记云以提供目标内容。
+* 标记由[搜索组件](https://helpx.adobe.com/cn/experience-manager/core-components/using/quick-search.html)使用，以便于查找内容。
+* 标记由[Teaser组件](https://helpx.adobe.com/cn/experience-manager/core-components/using/teaser.html)使用，该组件监视用户的标记云以提供目标内容。
 * 如果标记是内容的一个重要方面
 
    * 确保将标记与使用它们的页面一起打包

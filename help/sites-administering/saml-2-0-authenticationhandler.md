@@ -31,7 +31,7 @@ AEM附带[SAML](https://saml.xml.org/saml-specifications)身份验证处理程�
 
 >[!NOTE]
 >
->请参阅[AEM与SAML集成的演示](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html)。
+>请参阅[AEM与SAML集成的演示](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=zh-Hans)。
 
 ## 配置SAML 2.0身份验证处理程序 {#configuring-the-saml-authentication-handler}
 

@@ -176,4 +176,4 @@ AEM forms无法区分用户ID和密码相同但属于不同域的用户帐户。
 
 CQ提供了一种机制来覆盖默认的404处理程序jsp。
 
-有关如何自定义错误处理页面的详细信息，请参阅Adobe Experience Manager文档中的[自定义错误处理程序显示的页面](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en)。
+有关如何自定义错误处理页面的详细信息，请参阅Adobe Experience Manager文档中的[自定义错误处理程序显示的页面](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=zh-Hans)。

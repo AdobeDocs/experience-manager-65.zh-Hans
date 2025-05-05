@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您未使用Adobe Experience Manager (AEM)作为内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
+>如果您未使用Adobe Experience Manager (AEM)作为内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/cn/digital-publishing-solution/topics.html)。
 
 AEM提供了多种工具，使您能够将内容集成到移动应用程序中。
 
@@ -32,7 +32,7 @@ AEM提供了多种工具，使您能够将内容集成到移动应用程序中�
 
 >[!NOTE]
 >
->要深入了解预检应用程序，请参阅AEM Mobile On-demand Services帮助中的[使用AEM预检应用程序](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html)。
+>要深入了解预检应用程序，请参阅AEM Mobile On-demand Services帮助中的[使用AEM预检应用程序](https://helpx.adobe.com/cn/digital-publishing-solution/help/preflight-app.html)。
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
@@ -104,4 +104,4 @@ AEM开发人员在使用AEM Mobile On-demand Services创建应用程序时负责
 
 >[!NOTE]
 >
->AEM作者还负责设置权利、创建卡和布局以及发送推送通知。 此外，有关内容创作方法、管理文章和收藏集、在AEM Mobile中创建横幅、卡片和布局的更多信息，请参阅[AEM Mobile按需门户](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2)。
+>AEM作者还负责设置权利、创建卡和布局以及发送推送通知。 此外，有关内容创作方法、管理文章和收藏集、在AEM Mobile中创建横幅、卡片和布局的更多信息，请参阅[AEM Mobile按需门户](https://helpx.adobe.com/cn/digital-publishing-solution/topics.html#dynamicpod_reference_2)。

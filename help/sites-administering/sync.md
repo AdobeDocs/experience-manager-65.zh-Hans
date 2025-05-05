@@ -76,7 +76,7 @@ ht-degree: 1%
 
 1. 确保安装了最新的代码：
 
-* [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)
+* [AEM平台更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans)
 * [AEM Communities更新](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling分发代理 — 同步代理工厂 {#apache-sling-distribution-agent-sync-agents-factory}

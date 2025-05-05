@@ -66,7 +66,7 @@ ht-degree: 65%
 
 将AEM与Adobe Target集成需要Adobe Target、AEM Activities管理和AEM Audiences管理的知识。 您应熟悉以下信息：
 
-* Adobe Target（请参阅 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/target-home.html)）。
+* Adobe Target（请参阅 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/target-home.html?lang=zh-Hans)）。
 * AEM 活动控制台（请参阅[管理活动](/help/sites-authoring/activitylib.md)）。
 * AEM 受众（请参阅[管理受众](/help/sites-authoring/managing-audiences.md)）。
 

@@ -23,7 +23,7 @@ ht-degree: 8%
 
 ## 关于教程  {#about-the-tutorial}
 
-您可以使用主题为自适应表单提供独特的外观和样式。 您可以应用自适应表单编辑器提供的现成主题，或创建自己的自定义主题。 AEM [!DNL Forms]提供[主题编辑器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)以创建自定义主题。 单个主题可以为在移动设备、平板电脑或桌面上打开的相同自适应表单提供不同的外观。 使用主题编辑器不需要预先了解CSS或LESS，但需要使用。
+您可以使用主题为自适应表单提供独特的外观和样式。 您可以应用自适应表单编辑器提供的现成主题，或创建自己的自定义主题。 AEM [!DNL Forms]提供[主题编辑器](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/themes.html)以创建自定义主题。 单个主题可以为在移动设备、平板电脑或桌面上打开的相同自适应表单提供不同的外观。 使用主题编辑器不需要预先了解CSS或LESS，但需要使用。
 
 在本教程结束时，您应该能够执行以下操作：
 

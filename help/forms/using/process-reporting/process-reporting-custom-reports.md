@@ -25,13 +25,13 @@ ht-degree: 1%
 在添加任何自定义报表之前，请执行以下模板过程：
 
 1. 自定义报表中使用的数据必须在流程报表中可用。 为确保数据的可用性，请计划cron作业或使用“进程报表”UI上的&#x200B;**[同步](https://helpx.adobe.com/livecycle/help/process-reporting/install-start-process-reporting.html#Process%20Reporting%20Home%20screen)**&#x200B;选项。
-1. URL请求（封装所需的查询）必须返回相应的查询结果对象。 若要创建查询，可以使用[QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)的REST接口使用QueryBuilder API创建OSGi服务。 您可以创建动态或静态查询。
+1. URL请求（封装所需的查询）必须返回相应的查询结果对象。 若要创建查询，可以使用[QueryBuilder](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=zh-Hans)的REST接口使用QueryBuilder API创建OSGi服务。 您可以创建动态或静态查询。
 
 1. 创建自定义用户界面以显示结果。 您可以创建一个独立的用户界面，或将结果与现有的Process Reporting UI集成。
 
 ## 使用QueryBuilder的REST接口 {#using-the-rest-interface-of-the-querybuilder}
 
-CRX QueryBuilder REST接口通过Java API和REST API公开资产共享查询生成器的功能。 了解如何在执行以下步骤之前使用[CRX QueryBuilder REST接口](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)：
+CRX QueryBuilder REST接口通过Java API和REST API公开资产共享查询生成器的功能。 了解如何在执行以下步骤之前使用[CRX QueryBuilder REST接口](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=zh-Hans)：
 
 1. 浏览到URL `https://'[server]:[port]'/lc/bin/querybuilder.json`
 1. 根据Process Reporting存储节点结构和节点属性创建查询。
@@ -48,7 +48,7 @@ CRX QueryBuilder REST接口通过Java API和REST API公开资产共享查询生�
 
 ## 使用查询生成器API创建服务  {#creating-a-service-using-query-builder-api-nbsp}
 
-使用查询生成器API创建服务的先决条件是[使用查询生成器API创建和部署CQ OSGI捆绑包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)和[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=en)。
+使用查询生成器API创建服务的先决条件是[使用查询生成器API创建和部署CQ OSGI捆绑包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)和[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/search/query-builder-api.html?lang=zh-Hans)。
 
 1. 创建包含相应注释的OSGi服务。 要访问QueryBuilder，请使用：
 

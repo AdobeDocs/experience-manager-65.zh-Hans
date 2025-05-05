@@ -49,7 +49,7 @@ Adobe自己的测试产生了以下结果：
 * 使用Adobe捆绑的CDN（内容分发网络）作为Dynamic Media许可证的一部分。
 * 使用专用域（即`images.company.com`或`mycompany.scene7.com`），而不是通用的Dynamic Media域（即`s7d1.scene7.com`、`s7d2.scene7.com`或`s7d13.scene7.com`）。
 
-  若要查找你的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到你的公司帐户或帐户。 然后导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**已发布的服务器名称**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
+  若要查找你的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started)，然后登录到你的公司帐户或帐户。 然后导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**已发布的服务器名称**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
 
 ## 为我的Dynamic Media帐户启用HTTP/2的过程是怎样的？ {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
@@ -59,13 +59,13 @@ Adobe自己的测试产生了以下结果：
    * 主要联系人姓名、电子邮件和电话号码。
    * 要转换为HTTP2的所有域。 即`images.company.com`或`mycompany.scene7.com`。
 
-     若要查找你的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到你的公司帐户或帐户。 然后导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;的字段。
+     若要查找你的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started)，然后登录到你的公司帐户或帐户。 然后导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;的字段。
 
    * 确认您使用安全HTTPS处理富媒体请求。
    * 验证您是否通过Adobe使用CDN，而不是通过直接关系进行管理。
    * 验证您使用的是专用域。 即`images.company.com`或`mycompany.scene7.com`，不是通用的Dynamic Media域，如`s7d1.scene7.com`、`s7d2.scene7.com`、`s7d13.scene7.com`。
 
-     若要查找你的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到你的公司帐户或帐户。 然后导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
+     若要查找你的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started)，然后登录到你的公司帐户或帐户。 然后导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。 查找标记为&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;的字段。 如果您当前使用的是通用Dynamic Media域，则可以请求在此过渡中迁移到您自己的自定义域。
 
 1. Adobe客户支持根据提交请求的顺序将您添加到HTTP/2客户轮候表中。
 1. 当Adobe准备好处理您的请求时，支持团队会联系您以协调过渡并设置目标日期。

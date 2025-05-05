@@ -50,7 +50,7 @@ PIM数据通过GraphQL请求向AEM和客户端公开。 Adobe建议将PIM与商�
 
 ## 9. AEM Dispatcher 的缓存失效如何与 AEM 和 Commerce 配合使用？
 
-Adobe 建议为 Dispatcher 上缓存的页面设置基于 TTL 的缓存失效。对于价格或库存等动态信息，Adobe建议在客户端渲染日期。 有关基于TTL的缓存失效的详细信息，请参阅[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
+Adobe 建议为 Dispatcher 上缓存的页面设置基于 TTL 的缓存失效。对于价格或库存等动态信息，Adobe建议在客户端渲染日期。 有关基于TTL的缓存失效的详细信息，请参阅[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=zh-Hans)
 
 ## 10. 对于使用 Commerce 跨 AEM 内容进行统一搜索有什么建议吗？
 

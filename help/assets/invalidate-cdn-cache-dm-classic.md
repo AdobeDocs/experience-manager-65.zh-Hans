@@ -32,7 +32,7 @@ Dynamic Media资源由CDN（内容分发网络）缓存，以便快速交付。 
 
 **通过Dynamic Media Classic使CDN缓存失效：**
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)，然后登录到您的帐户。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=zh-Hans#system-requirements-dmc-app)，然后登录到您的帐户。
 
    在设置时，Adobe提供了您的凭据和登录。 如果您没有此信息，请联系Adobe客户支持。
 

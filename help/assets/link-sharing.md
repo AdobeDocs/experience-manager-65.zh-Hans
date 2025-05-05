@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Experience Manager Assets]允许您将资产、文件夹和收藏集作为URL与您的组织成员和外部实体（包括合作伙伴和供应商）共享。 通过链接共享资产是一种便利的方法，使外部参与方无需先登录[!DNL Assets]即可使用资源。

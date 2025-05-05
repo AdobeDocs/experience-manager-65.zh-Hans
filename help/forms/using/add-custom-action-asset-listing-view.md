@@ -108,7 +108,7 @@ ht-degree: 3%
         <tr>
         <td>图标</td>
         <td>字符串</td>
-        <td>icon-download<br /> <br />通信管理显示在命令/菜单左侧的图标。 有关可用的不同图标和设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">CoralUI图标文档</a>。<br /> </td>
+        <td>icon-download<br /> <br />通信管理显示在命令/菜单左侧的图标。 有关可用的不同图标和设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans" target="_blank">CoralUI图标文档</a>。<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -277,7 +277,7 @@ ht-degree: 3%
    1. 双击&#x200B;**POST.jsp**&#x200B;文件以在CRX中将其打开。
    1. 将以下代码添加到POST.jsp文件，然后单击&#x200B;**全部保存**：
 
-      此代码特定于书信渲染服务。 对于任何其他资产，请将该资产的Java™库添加到此代码中。 有关AEM Forms API的更多信息，请参阅[AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
+      此代码特定于书信渲染服务。 对于任何其他资产，请将该资产的Java™库添加到此代码中。 有关AEM Forms API的更多信息，请参阅[AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)。
 
       有关AEM库的详细信息，请参阅AEM [组件](/help/sites-developing/components.md)。
 

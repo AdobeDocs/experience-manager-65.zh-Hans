@@ -28,7 +28,7 @@ ht-degree: 5%
 
 此集成意味着您可以使用Adobe Analytics跟踪网站上Dynamic Media查看器的使用情况。 同时，您可以将查看器显示的事件和数据与来自Adobe或第三方的任何其他Experience Platform标签扩展结合使用。
 
-要了解有关Adobe扩展或第三方扩展的详细信息，请参阅Experience PlatformAdobe用户指南中的[用户扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html)。
+要了解有关Adobe扩展或第三方扩展的详细信息，请参阅Experience PlatformAdobe用户指南中的[用户扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/overview.html?lang=zh-Hans)。
 
 **本主题面向以下人员：** Experience Platform上的站点管理员、开发人员和操作人员。
 
@@ -37,7 +37,7 @@ ht-degree: 5%
 * Dynamic Media查看器的Experience Platform标记集成在Experience Manager创作节点中不起作用。 在发布WCM页面之前，您不会看到该页面中的任何跟踪。
 * Dynamic Media查看器的Experience Platform标记集成不支持“弹出式”操作模式，在该模式下，使用“资源详细信息”页面上的“URL”按钮可获取查看器URL。
 * Experience Platform标记集成不能与旧版查看器Analytics集成同时使用（通过`config2=`参数）。
-* 视频跟踪支持仅限于“核心播放”跟踪，如[跟踪概述](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en)中所述。 特别是，不支持QoS、广告、章节/区段或错误跟踪。
+* 视频跟踪支持仅限于“核心播放”跟踪，如[跟踪概述](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=zh-Hans)中所述。 特别是，不支持QoS、广告、章节/区段或错误跟踪。
 * 使用&#x200B;*Dynamic Media Viewers*&#x200B;扩展的数据元素不支持数据元素的存储持续时间配置。 存储持续时间必须设置为&#x200B;**[!UICONTROL 无]**。
 
 ### 集成的用例 {#use-cases-for-the-integration}
@@ -74,7 +74,7 @@ Dynamic Media Viewer扩展会自动使其数据元素的值保持最新。
 
 定义数据元素后，可以使用数据元素选取器小组件，将数据元素用于Experience Platform标记UI的其他位置。 特别是，为Dynamic Media查看器跟踪而定义的数据元素由规则中Adobe Analytics扩展的“设置变量”操作引用（请参阅下文）。
 
-请参阅[数据元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html)。
+请参阅[数据元素](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=zh-Hans)。
 
 #### 关于Experience Platform标签中的规则 {#about-rules-in-adobe-launch}
 
@@ -100,7 +100,7 @@ Experience Platform标记中的规则是一种不可知配置，它定义了构�
 
 *Set Variables*&#x200B;操作必须后跟&#x200B;*发送信标*&#x200B;操作。 *发送信标*&#x200B;操作实际上会将数据发送到Analytics跟踪服务器。 这两个操作&#x200B;*Set Variables*&#x200B;和&#x200B;*Send Beacon*&#x200B;都来自Adobe Analytics扩展。
 
-请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html)。
+请参阅[规则](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html?lang=zh-Hans)。
 
 #### 示例配置 {#sample-configuration}
 
@@ -134,7 +134,7 @@ Experience Platform标记中的以下示例配置演示了如何在加载查看�
 
 请参阅[扩展的安装和设置](#installing-and-setup-of-extensions)。
 
-目前，对视频跟踪的支持仅限于“核心播放”跟踪，如[跟踪概述](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=en)中所述。 特别是，不支持QoS、广告、章节/区段或错误跟踪。
+目前，对视频跟踪的支持仅限于“核心播放”跟踪，如[跟踪概述](https://experienceleague.adobe.com/docs/media-analytics/using/tracking/track-core-overview.html?lang=zh-Hans)中所述。 特别是，不支持QoS、广告、章节/区段或错误跟踪。
 
 ## 使用Dynamic Media查看器扩展 {#using-the-dynamic-media-viewers-extension}
 
@@ -158,7 +158,7 @@ See [Adding Dynamic Media Assets to Pages using Adobe Sites](https://helpx.adobe
 
 在正确配置后，您可以使用Dynamic Media查看器将支持Experience Platform标签添加到网页。
 
-请参阅[添加Experience Platform标签嵌入代码](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html)，了解有关如何使用Experience Platform标签库嵌入代码的更多信息。
+请参阅[添加Experience Platform标签嵌入代码](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/add-embed-code.html?lang=zh-Hans)，了解有关如何使用Experience Platform标签库嵌入代码的更多信息。
 
 <!-- To be reviewed and updated although this is found live in the Experience ManageraaCS version:
 See [Embedding the Video or Image Viewer on a Web Page](https://helpx.adobe.com/experience-manager/6-5/help/assets/embed-code.html) to learn more about how to use the embed code feature of Experience Manager Dynamic Media.
@@ -206,7 +206,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 ![image2019-7-22_12-5-46](assets/image2019-7-22_12-5-46.png)
 
-有关每种查看器类型支持的事件列表，请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html#viewers-aem-assets-dmc)；转到特定的查看器部分，然后选择“支持Adobe Analytics跟踪”子部分。 目前，《Dynamic Media查看器参考指南》未记录事件参数。
+有关每种查看器类型支持的事件列表，请参阅[Dynamic Media查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/c-html5-s7-aem-asset-viewers.html?lang=zh-Hans#viewers-aem-assets-dmc)；转到特定的查看器部分，然后选择“支持Adobe Analytics跟踪”子部分。 目前，《Dynamic Media查看器参考指南》未记录事件参数。
 
 现在考虑Dynamic Media查看器&#x200B;*数据元素*&#x200B;的生命周期。 当页面上发生相应的Dynamic Media查看器事件后，将填充此类数据元素的值。 例如，假设数据元素指向&#x200B;**[!UICONTROL LOAD]**&#x200B;事件及其“asset”参数。 在这种情况下，在查看器首次运行&#x200B;**[!UICONTROL LOAD]**&#x200B;事件后，此类数据元素的值会收到有效数据。 如果数据元素指向&#x200B;**[!UICONTROL ZOOM]**&#x200B;事件及其“scale”参数，则在查看器首次发送&#x200B;**[!UICONTROL ZOOM]**&#x200B;事件之前，此类数据元素的值将保持为空。
 
@@ -242,7 +242,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 无论如何，Dynamic Media Viewers驱动的数据元素值不会存储在本地存储或服务器上；而是仅存储在客户端Experience Platform标签库中。 在网页重新加载时，此类数据元素的值消失。
 
-通常，数据元素编辑器支持[存储持续时间选择](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html#create-a-data-element)。 但是，使用Dynamic Media Viewers扩展的数据元素仅支持&#x200B;**[!UICONTROL 无]**&#x200B;存储持续时间选项。 可以在用户界面中设置任何其他值，但在此情况下未定义数据元素行为。 扩展可自行管理数据元素的值：在整个查看器生命周期中维护查看器事件参数值的数据元素。
+通常，数据元素编辑器支持[存储持续时间选择](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html?lang=zh-Hans#create-a-data-element)。 但是，使用Dynamic Media Viewers扩展的数据元素仅支持&#x200B;**[!UICONTROL 无]**&#x200B;存储持续时间选项。 可以在用户界面中设置任何其他值，但在此情况下未定义数据元素行为。 扩展可自行管理数据元素的值：在整个查看器生命周期中维护查看器事件参数值的数据元素。
 
 ### 关于Dynamic Media查看器扩展中的规则 {#about-rules-in-the-dynamic-media-viewers-extension}
 
@@ -436,7 +436,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 * Analytics变量可用于接收跟踪数据。
 * 报表可用于查看Adobe Analytics中收集的数据。
 
-另请参阅[Analytics实施指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html)。
+另请参阅[Analytics实施指南](https://experienceleague.adobe.com/docs/analytics/implementation/home.html?lang=zh-Hans)。
 
 **要为集成配置Adobe Analytics：**
 
@@ -454,7 +454,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 
    如果没有可用的报表包，您必须或您的Adobe Analytics管理员创建一个报表包，然后才能继续配置。
 
-   请参阅[报表和报表包](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html)和[创建报表包](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html)。
+   请参阅[报表和报表包](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/report-suites-admin.html?lang=zh-Hans)和[创建报表包](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite.html?lang=zh-Hans)。
 
    在Adobe Analytics中，报表包在&#x200B;**[!UICONTROL 管理员]** > **[!UICONTROL 报表包]**&#x200B;下管理。
 
@@ -468,7 +468,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 
    可以使用Adobe Analytics支持的任何类型的变量。 关于变量类型(如自定义流量[prop]，转化[eVar])的决定由Analytics实施的特定需求驱动。
 
-   请参阅[prop和eVar概述](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html#vars)。
+   请参阅[prop和eVar概述](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/evar.html?lang=zh-Hans#vars)。
 
    在本文档中，仅使用自定义流量(props)变量，因为它们会在网页上发生操作后的几分钟内在Analytics报表中变得可用。
 
@@ -516,7 +516,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 
 Experience Platform标记中的资产是一个命名配置，可将所有设置保留在一起。 将生成配置设置库并发布到不同的环境级别（开发、暂存和生产）。
 
-另请参阅[创建标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html)。
+另请参阅[创建标记属性](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/initial-configuration/configure-tags.html?lang=zh-Hans)。
 
 1. 在Experience Platform标签中，选择&#x200B;**[!UICONTROL 新建属性]**。
 1. 在&#x200B;**[!UICONTROL 创建属性]**&#x200B;对话框的&#x200B;**[!UICONTROL 名称]**&#x200B;字段中，键入描述性名称，如网站的标题。例如，`DynamicMediaViewersProp.`
@@ -541,7 +541,7 @@ Experience Platform标记中所有可用的扩展都列在&#x200B;**[!UICONTROL 
 
 无需其他配置，接受任何建议值。 完成后，请确保选择&#x200B;**[!UICONTROL 保存]**。
 
-请参阅[Adobe Experience Cloud Identity Service扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html)。
+请参阅[Adobe Experience Cloud Identity Service扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/id-service/overview.html?lang=zh-Hans)。
 
 * （必需） *Adobe Analytics*&#x200B;扩展
 
@@ -561,7 +561,7 @@ Experience Platform标记中所有可用的扩展都列在&#x200B;**[!UICONTROL 
 
 选择&#x200B;**[!UICONTROL 保存]**。
 
-请参阅[Adobe Analytics扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html)。
+请参阅[Adobe Analytics扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/analytics/overview.html?lang=zh-Hans)。
 
 * （可选；仅当需要视频跟踪时才需要）*Adobe MediumAnalytics for Audio and Video*&#x200B;扩展
 
@@ -569,7 +569,7 @@ Experience Platform标记中所有可用的扩展都列在&#x200B;**[!UICONTROL 
 
 所有其他字段都是可选的。
 
-请参阅[Adobe Medium Analytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html)。
+请参阅[Adobe Medium Analytics for Audio and Video扩展](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/media-analytics/overview.html?lang=zh-Hans)。
 
 * （必需） *Dynamic Media Viewers*&#x200B;扩展
 
@@ -657,7 +657,7 @@ Experience Platform标记可能具有多个开发环境、一个暂存环境和�
 
    ![image2019-7-15_16-8-9](assets/image2019-7-15_16-8-9.png)
 
-   有关Experience Platform标记中发布过程的详细信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)。
+   有关Experience Platform标记中发布过程的详细信息，请参阅[发布](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html?lang=zh-Hans)。
 
 ## 配置Adobe Experience Manager以进行集成 {#configuring-adobe-experience-manager-for-the-integration}
 
@@ -856,4 +856,4 @@ Experience Manager配置包含以下两个主要步骤：
 
 可以解决此限制。 在上面的Experience Manager发布节点的Experience Platform标记云配置中，指定Platform标记库的开发或暂存URL。 这样做会使Experience Manager发布节点使用Experience Platform标记库的开发版本或暂存版本。
 
-有关设置Experience Manager标签云配置的更多信息，请参阅[通过 [!DNL Adobe Developer Console]将Experience Platform与Experience Platform标签集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html)。
+有关设置Experience Manager标签云配置的更多信息，请参阅[通过 [!DNL Adobe Developer Console]将Experience Platform与Experience Platform标签集成](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=zh-Hans)。

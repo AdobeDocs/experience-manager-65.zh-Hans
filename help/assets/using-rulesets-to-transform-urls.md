@@ -43,7 +43,7 @@ ht-degree: 0%
 >使用规则集时请务必谨慎；规则集可能会阻止在您的网站上显示Dynamic Media内容。
 
 提供了一些示例规则集，可帮助您创建自己的规则集。
-请参阅[规则集引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html)。
+请参阅[规则集引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/rule-set-reference/c-rule-set-reference.html?lang=zh-Hans)。
 
 与创建所有规则集时一样，在使用XML验证器程序（如xmlvalid）上传XML文件之前，请确保该文件有效。
 另请参阅[规则集疑难解答](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/scene7-ruleset-troubleshooting.html)。
@@ -51,7 +51,7 @@ ht-degree: 0%
 此外，请确保首先在不影响实时生产环境的暂存环境中测试规则集。
 生产环境和暂存环境通常需要不同的登录。
 
-有关登录信息，请参阅[Adobe Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)。
+有关登录信息，请参阅[Adobe Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#sign-in-dmc-app)。
 
 <!-- OBSOLETE INFORMATION * **NA staging environment** login page: [https://s7sps1-staging.scene7.com/IpsWeb/](https://s7sps1-staging.scene7.com/IpsWeb/)
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 **要部署XML规则集：**
 
-1. 登录到您的[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app)。
+1. 登录到您的[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#sign-in-dmc-app)。
 
    Adobe在配置时提供了您的凭据和登录详细信息。 如果您没有此信息，请联系Adobe客户支持。
 
