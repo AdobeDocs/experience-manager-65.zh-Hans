@@ -1,6 +1,6 @@
 ---
-title: AEM Site 开发入门 – WKND 教程
-description: 了解如何生成您的 AEM 实例。详细了解平台和组件并找到有关开发工具和个性化的信息。
+title: AEM Sites 开发入门——WKND 教程
+description: 了解如何生成您的 AEM 实例。详细了解 Platform 和组件并找到有关开发工具和个性化的信息。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -36,7 +36,7 @@ ht-degree: 80%
 
 教程实施利用了 AEM 的许多强大的功能。将使用以下项目实施站点：
 
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)
 * [触屏 UI](/help/sites-developing/touch-ui-concepts.md)
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-hans)
