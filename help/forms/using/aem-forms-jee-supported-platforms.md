@@ -9,10 +9,10 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 5dbdce2d8e558e6bf26c6713fd44d58038d38152
+source-git-commit: cdd0e52c4f64080a76d67baf678a97e91ca7c711
 workflow-type: tm+mt
-source-wordcount: '4177'
-ht-degree: 0%
+source-wordcount: '4370'
+ht-degree: 2%
 
 ---
 
@@ -23,8 +23,8 @@ ht-degree: 0%
 
 <div class="preview">
 
-Adobe已在JEE上发布带有AEM 6.5 Forms Service Pack 18 (6.5.18.0)的[完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)以及修补程序安装程序。 完整安装程序支持新平台，而修补程序安装程序仅包含错误修复。
-如果您要在JEE环境中执行全新安装或计划使用适用于您的AEM 6.5 Forms的最新软件，Adobe建议使用于2023年8月31日发布的AEM JEE上的[Forms 6.5.18.0完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)，而不是于2019年4月8日发布的AEM 6.5 Forms安装程序或2022年3月3日发布的AEM 6.5.12 Forms安装程序。
+Adobe已在JEE上发布了带有AEM 6.5 Forms Service Pack 18 (6.5.18.0)的[完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)以及修补程序安装程序。 完整安装程序支持新平台，而修补程序安装程序仅包含错误修复。
+如果您要在JEE环境中执行全新安装或计划使用适用于您的AEM 6.5 Forms的最新软件，Adobe建议使用于2023年8月31日发布的AEM JEE上的[Forms 6.5.18.0完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)，而不是于2019年4月8日发布的AEM 6.5 Forms安装程序或2022年3月3日发布的AEM 6.5.12 Forms安装程序。
 
 </div>
 
@@ -67,7 +67,7 @@ Adobe建议使用这些配置，并在标准软件维护协议中提供完全支
   </tr>
   <tr>
    <td>A：支持<br /> </td>
-   <td>Adobe为此配置提供全面支持和维护。 Adobe的质量保证流程涵盖此配置。</td>
+   <td>Adobe 为此配置提供全面的支持和维护。此配置包含在 Adobe 质量保证流程中。</td>
   </tr>
   <tr>
    <td>R：有限的支持</td>
@@ -85,7 +85,7 @@ Adobe建议使用这些配置，并在标准软件维护协议中提供完全支
 | 支持级别 | 描述 |
 | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
 | E：预期有效 | 该配置应可正常工作，并且没有相反的报告。 |
-| Z：不支持 | 不支持该配置。 Adobe不就配置是否有效发表任何声明，也不支持配置。 |
+| Z：不支持 | 此配置不受支持。Adobe不就配置是否有效发表任何声明，也不支持配置。 |
 
 >[!NOTE]
 >
@@ -112,8 +112,8 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
    <th><p><strong>支持的修补程序定义</strong></p> </th>
   </tr>
   <tr> 
-   <td><p>oracleJava™ SE 11（64位）<sup> [8] </sup> </p>  </td>
-   <td><p>A：支持</p> </td>
+   <td><p>Oracle Java™ SE 11（64位） <sup> [8] </sup> </p>  </td>
+   <td><p>A：受到支持</p> </td>
    <td><p>次要版本和更新 </p> </td>
   </tr>
   <tr>
@@ -127,18 +127,18 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
    <td><p> </p> </td>
   </tr>
   <tr>
-   <td>oracleJava™ SE 8（64位）</td>
-   <td>A：支持</td>
+   <td>Oracle Java™ SE 8（64位）</td>
+   <td>A：受到支持</td>
    <td>次要版本和更新</td>
   </tr>
   <tr>
    <td>IBM® J9虚拟机（内部版本2.9、JRE 1.8.0）IBM® JDK SR6-FP26<br /> </td>
-   <td>答：支持</td>
+   <td>A：受到支持</td>
    <td>次要版本和更新</td>
   </tr>
   <tr>
    <td>IBM® JAVA1.8.0_291（内部版本8.0.6.30）<br /> </td>
-   <td>答：支持</td>
+   <td>A：受到支持</td>
    <td>次要版本和更新</td>
   </tr>
  </tbody>
@@ -169,9 +169,19 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
    <td><p>支持</p> </td>
   </tr>
     <tr>
-   <td><p> MongoDB Enterprise 6.0 </p> </td>
+   <td><p> MongoDB Enterprise 6.0（已弃用） </p> </td>
    <td><p>存储库微内核</p> </td>
    <td><p>支持</p> </td>
+  </tr>
+  <tr>
+   <td><p> MongoDB Enterprise 7.0 </p> </td>
+   <td><p>存储库微内核</p> </td>
+   <td><p>支持</p> </td>
+  </tr>
+   <tr>
+   <td>Oracle Database 19c(Standard、Real Application Clusters (RAC)和Enterprise版) </td>
+   <td>存储库微内核 </td>
+   <td>支持</td>
   </tr>
    <tr>
    <td>Oracle Database 19c(Standard、Real Application Clusters (RAC)和Enterprise版) </td>
@@ -181,9 +191,15 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
   <tr>
    <td><p>存储库微内核</p> </td>
    <td><p>支持</p> </td>
+   <td></td>
   </tr>
   <tr>
-   <td><p>Microsoft® SQL Server 2019 </p> </td>
+   <td><p>Microsoft® SQL Server 2019（已弃用） </p> </td>
+   <td><p>存储库微内核</p> </td>
+   <td><p>支持</p> </td>
+  </tr>
+  <tr>
+   <td><p>Microsoft® SQL Server 2022 </p> </td>
    <td><p>存储库微内核</p> </td>
    <td><p>支持</p> </td>
   </tr>
@@ -194,7 +210,13 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
   </tr>
   <tr>
   <tr>
-   <td>MySQL 8.0.27</td>
+   <td>MySQL 8.0.27（已弃用） </td>
+   <td>-</td>
+   <td>R：有限的支持</td>
+  </tr>
+  <tr>
+  <tr>
+   <td>MySQL 8.4</td>
    <td>-</td>
    <td>R：有限的支持</td>
   </tr>
@@ -223,12 +245,17 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
   </tr>
   <tr>
    <td>MySQL</td>
-   <td><p>MySQL连接器/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar（版本5.1.44）</p> </td>
+   <td><p>MySQL Connector/J 5.7</p> <p>mysql-connector-java-5.1.44-bin.jar（版本5.1.44）</p> </td>
    <td><p>在JEE安装时随AEM Forms提供</p> </td>
   </tr>
   <tr>
    <td>Microsoft® SQL Server<br /> </td>
-   <td><p>Microsoft® SQL Server JDBC驱动程序8.2.2<br /> </p> <p>sqljdbc8.jar</p> </td>
+   <td><p>Microsoft® SQL Server JDBC驱动程序8.2.2 <br /> </p> <p>sqljdbc8.jar（已弃用） </p> </td>
+   <td><p>从Microsoft®网站下载。</p> </td>
+  </tr>
+  <tr>
+   <td>Microsoft® SQL Server<br /> </td>
+   <td><p>Microsoft® SQL Server JDBC驱动程序12.8 <br /> </p> <p>sqljdbc8.jar</p> </td>
    <td><p>从Microsoft®网站下载。</p> </td>
   </tr>
   <tr>
@@ -250,22 +277,22 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
   </tr>
   <tr>
    <td>Oracle WebLogic Server 12.2.1 (12c R2) （已弃用） <sup>[9]</sup></td>
-   <td>答：支持</td>
+   <td>A：受到支持</td>
    <td>Service Pack和关键更新</td>
   </tr>
   <tr>
    <td>Oracle WebLogic Server 14c <sup>[9]</sup></td>
-   <td>答：支持</td>
+   <td>A：受到支持</td>
    <td>Service Pack和关键更新</td>
   </tr>
   <tr>
    <td>IBM® WebSphere® Application Server 9.0.0.10 <sup>[1] [4]</sup><br /> </td>
-   <td>答：支持</td>
+   <td>A：受到支持</td>
    <td>Service Pack和关键更新</td>
   </tr>
   <tr>
    <td><p>JBoss® Enterprise Application Platform (EAP) 7.4 <sup>[2] [3] [7]</sup> </p> </td>
-   <td><p>答：支持</p> </td>
+   <td><p>A：受到支持</p> </td>
    <td><p>受支持的EAP版本的补丁程序和累积补丁程序</p> </td>
   </tr>
  </tbody>
@@ -288,48 +315,53 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
   </tr>
    <tr>
    <td>Microsoft® Windows Server 2019（64位）（已弃用）</td>
-   <td>答：支持</td>
+   <td>A：受到支持</td>
    <td>Service Pack和关键更新</td>
   </tr>
      <tr>
    <td>Microsoft® Windows Server 2022（64位）</td>
-   <td>答：支持</td>
+   <td>A：受到支持</td>
    <td>Service Pack和关键更新</td>
   </tr>
   <tr>
    <td>Ubuntu 20.04</td>
-   <td>答：支持</td>
+   <td>A：受到支持</td>
    <td>Service Pack和关键更新</td>
   </tr>
   <tr>
-   <td><p>Red Hat® Enterprise Linux® 8（内核4.x）（64位）</p> </td>
-   <td><p>答：支持</p> </td>
+   <td><p>Red Hat® Enterprise Linux® 8（内核4.x）（64位）（已弃用）</p> </td>
+   <td><p>A：受到支持</p> </td>
    <td><p>次要版本、累积更新和关键更新</p> </td>
   </tr>
   <tr>
    <td><p>Red Hat® Enterprise Linux® 7（内核3.x）（64位）（已弃用）</td>
-   <td><p>答：支持</p> </td>
+   <td><p>A：受到支持</p> </td>
+   <td><p>次要版本、累积更新和关键更新</p> </td>
+  </tr>
+  <tr>
+   <td><p>Red Hat® Enterprise Linux® 9（内核4.x）（64位）</p> </td>
+   <td><p>A：受到支持</p> </td>
    <td><p>次要版本、累积更新和关键更新</p> </td>
   </tr>
   <tr>
    <td><p>SUSE® Linux® Enterprise Server 12（64位）</p> </td>
-   <td><p>答：支持</p> </td>
+   <td><p>A：受到支持</p> </td>
    <td><p>服务包、累积修补程序和关键安全更新</p> </td>
   </tr>
   <tr>
    <td><p>SUSE® Linux® Enterprise Server 15 SP6（64位） </p> </td>
-   <td><p>答：支持</p> </td>
+   <td><p>A：受到支持</p> </td>
    <td><p>服务包、累积修补程序和关键安全更新</p> </td>
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3（64位）</td>
-   <td>A：支持</td>
-   <td>服务包、累积补丁和关键安全更新</td>
+   <td>A：受到支持</td>
+   <td>服务包、累积修补程序和关键安全更新</td>
   </tr>
   <tr>
    <td>CentOS 7（64位）<sup> [6]</sup></td>
-   <td>A：支持</td>
-   <td>服务包、累积补丁和关键安全更新</td>
+   <td>A：受到支持</td>
+   <td>服务包、累积修补程序和关键安全更新</td>
   </tr>
  </tbody>
 </table>
@@ -445,7 +477,7 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
    <td>IBM® Content Manager服务器（已弃用） </td>
    <td>8.5修复包2</td>
   </tr>
-  <tr>
+   <tr>
    <td> IBM®内容管理器客户端（已弃用）</td>
    <td>8.5 </td>
   </tr>
@@ -476,11 +508,15 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
    <th><p><strong>转换到PDF时支持的格式</strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/cn/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic轨道</a>最新版本</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2020 classic轨道</a>最新版本</td>
    <td>XPS、图像格式(BMP、GIF、JPEG、JPG、TIF、TIFF、PNG、JPF、JPX、JP2、J2K、J2C、JPC)、HTML、HTM、DWG、DXF和DWF</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2019</td>
+   <td>Microsoft® Office 2019（已弃用） </td>
+   <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF和TXT</td>
+  </tr>
+  <tr>
+   <td>Microsoft® Office 2021</td>
    <td>DOC、DOCX、XLS、XLSX、PPT、PPTX、RTF和TXT</td>
   </tr>
   <tr>
@@ -489,6 +525,10 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
   </tr>
   <tr>
    <td>Microsoft® Publisher 2019<br /> </td>
+   <td>公共</td>
+  </tr>
+  <tr>
+   <td>Microsoft®发布者2021<br /> </td>
    <td>公共</td>
   </tr>
   <tr>
@@ -504,7 +544,7 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
 >
 >此外：
 >
->- PDF Generator需要32位版本的[Acrobat 2020 classic track版本20.004.30006](https://helpx.adobe.com/cn/acrobat/release-note/release-notes-acrobat-reader.html)来执行转换。
+>- PDF Generator需要32位版本的[Acrobat 2020 classic track版本20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html)来执行转换。
 >- PDF Generator仅支持32位版本的Microsoft® Office Professional Plus以及转换所需的其他软件。
 >- Microsoft® Office Professional Plus安装可以使用零售或基于MAK/KMS/AD的批量许可。
 >- 如果Microsoft® Office安装由于任何原因（例如，批量许可安装无法在指定时间段内找到KMS主机）而停用或取消许可，则在重新许可并重新激活安装之前，转换可能会失败。
@@ -512,7 +552,7 @@ AEM Forms应用程序现在支持Apache Cordova。 以下是受支持的特定�
 >- PDF Generator支持Linux®操作系统上的32位版本的OpenOffice。
 >- 仅在Windows和Linux®上支持OpenOffice的PDF Generator转换。
 >- 仅在Windows上支持OCR PDF、优化PDF和Export PDF功能。
->- Acrobat的一个版本与AEM Forms捆绑在一起，用于启用PDF Generator功能。 在AEM Forms许可证有效期内，捆绑版本只能通过AEM Forms以编程方式访问，以与AEM Forms PDF Generator结合使用。 有关详细信息，请参阅根据您的部署([内部部署](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-on-premise.html)或[Managed Services](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-managed-services.html))提供的AEM Forms产品说明”
+>- Acrobat的一个版本与AEM Forms捆绑在一起，用于启用PDF Generator功能。 在AEM Forms许可证有效期内，捆绑版本只能通过AEM Forms以编程方式访问，以与AEM Forms PDF Generator结合使用。 有关详细信息，请参阅根据您的部署([内部部署](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)或[Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))提供的AEM Forms产品说明”
 >- PDF Generator服务不支持Microsoft® Windows 10。
 >- PDF Generator无法使用Microsoft® Visio 2019转换文件。
 >- PDF Generator无法使用Microsoft® Project 2019转换文件。
@@ -570,8 +610,8 @@ AEM Forms的以下子系统与[508](https://www.section508.gov/)不兼容：
 
 有关其他要求，请参阅：
 
-- [JEE部署中单服务器AEM Forms的系统要求](https://www.adobe.com/go/learn_aemforms_sysreq_single_65_cn)
-- JEE部署上群集AEM Forms的[系统要求](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65_cn)
+- [JEE部署中单服务器AEM Forms的系统要求](https://www.adobe.com/go/learn_aemforms_sysreq_single_65)
+- JEE部署上群集AEM Forms的[系统要求](https://www.adobe.com/go/learn_aemforms_sysreq_cluster_65)
 
 ### Adobe Acrobat和Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
@@ -639,6 +679,11 @@ AEM Forms的以下子系统与[508](https://www.section508.gov/)不兼容：
 - Acrobat Pro DC、Acrobat Standard DC或Adobe Acrobat Reader DC
 - 安装Designer的管理权限
 - Microsoft® Visual C++ 2019（VC 14.28或更高版本）32位运行时
+- OpenSSL 3（操作系统上的默认位置需要）。
+
+>[!NOTE]
+>
+> 库libcrypto.so.3和libssl.so.3必须在LD_LIBRARY_PATH环境变量表示的默认库路径中可用。 如果它们安装在非标准位置，请确保在启动服务器之前将此路径添加到LD_LIBRARY_PATH。
 
 ### 浏览器 {#browsers}
 
@@ -653,12 +698,12 @@ AEM Forms的以下子系统与[508](https://www.section508.gov/)不兼容：
   </tr>
   <tr>
    <td><p>Microsoft®Edge（常青网）</p> </td>
-   <td><p>答：支持</p> </td>
+   <td><p>A：受到支持</p> </td>
    <td><p>Service Pack和更新</p> </td>
   </tr>
   <tr>
    <td><p>Mozilla Firefox (Evergreen)</p> </td>
-   <td><p>答：支持</p> </td>
+   <td><p>A：受到支持</p> </td>
    <td>所有更新</td>
   </tr>
   <tr>
@@ -668,12 +713,12 @@ AEM Forms的以下子系统与[508](https://www.section508.gov/)不兼容：
   </tr>
   <tr>
    <td><p>Google Chrome（常绿市）</p> </td>
-   <td><p>答：支持</p> </td>
+   <td><p>A：受到支持</p> </td>
    <td>所有更新</td>
   </tr>
   <tr>
    <td>macOS上的Apple Safari</td>
-   <td>答：支持</td>
+   <td>A：受到支持</td>
    <td>所有更新</td>
   </tr>
  </tbody>
@@ -742,7 +787,7 @@ JEE上的AEM Forms在指定的受支持软件的主版本和次版本之上支�
 
 ## 第三方修补程序支持政策 {#third-party-patch-support-policy}
 
-JEE上AEM Forms的第三方软件要求记录在其各自产品文档的“系统要求”部分。 从[https://adobe.com/go/learn_aemforms_documentation_65_cn](https://adobe.com/go/learn_aemforms_documentation_65_cn)访问所有文档。
+JEE上AEM Forms的第三方软件要求记录在其各自产品文档的“系统要求”部分。 从[https://adobe.com/go/learn_aemforms_documentation_65](https://adobe.com/go/learn_aemforms_documentation_65)访问所有文档。
 
 AEM Forms on JEE的第三方参考平台说明了开发和发布AEM Forms on JEE期间第三方基础架构的特定修补程序级别，以及该AEM Forms on JEE版本支持的基础架构的最低修补程序/Service Pack级别。
 
@@ -770,7 +815,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.13.0 release
 
 The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release on September 7, 2021:
 
-- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/cn/support/programs/eol-matrix.html).
+- Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
 - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
 - Microsoft&reg; Windows Server 2016 (64-bit) 
 - Microsoft&reg; Office 2016
@@ -853,7 +898,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
     - Oracle Java&trade; SE 11 (64 bit) SDK for application server JBoss&reg; EAP 7.4.
   - **Deprecated support**: [!DNL Adobe Experience Manager Forms] on JEE has deprecated the following platforms:
 
-    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/cn/support/programs/eol-matrix.html).
+    - Adobe Acrobat 2017 - [Core support for Adobe Acrobat 2017 ends on June 6, 2022](https://helpx.adobe.com/support/programs/eol-matrix.html).
     - Red Hat&reg; Enterprise Linux&reg; 7 (Kernel 3.x) (64-bit)
     - Microsoft&reg; Windows Server 2016 (64-bit) 
     - Microsoft&reg; Office 2016
@@ -862,6 +907,16 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 -->
 
+### 版本6.5.23.0（2025年5月29日）
+
+| 添加支持 | 删除了支持 | 已弃用的支持 |
+| -------------- | --------------- | ------------------- |
+| MongoDB Enterprise 7.0 | | MongoDB Enterprise 6.0 |
+| MYSQL 8.4 | | MYSQL 8.0.27 |
+| Microsoft® SQL Server 2022 | | Microsoft® SQL Server 2019 |
+| Microsoft® SQL Server JDBC驱动程序12.8 | | Microsoft® SQL Server JDBC驱动程序8.2 |
+| Microsoft® Office 2021 | | Microsoft® Office 2019 |
+| Red Hat® Enterprise Linux® 9（内核4.x）（64位） | | Red Hat® Enterprise Linux® 8（内核4.x）（64位） |
 
 ### 版本6.5.22.0（2024年11月29日）
 
@@ -884,7 +939,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | -------------- | --------------- | ------------------- |
 | MongoDB Enterprise 4.4 | Windows Server 2016（64位） | Microsoft® Windows Server 2019（64位） |
 | Oracle WebLogic Server 14c | MongoDB Enterprise 4.0 | Microsoft® Active Directory 2016 |
-| My SQL JDBC连接器8 | oracle数据库12c发行版2 (12.2.0.1.0) |  |
+| My SQL JDBC连接器8 | Oracle Database 12c发行版2 (12.2.0.1.0) |  |
 | Active Directory 2022 | MySQL 5.7.35 |  |
 | Microsoft® Windows Server 2022（64位） | Microsoft® SQL Server 2016 |  |
 |  | JBoss® EAP 7.1.4 |  |
@@ -930,7 +985,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | 添加支持 | 删除了支持 | 已弃用的支持 |
 | -------------- | --------------- | ------------------- |
-| oracleJava™ SE 11（64位）SDK，用于应用程序服务器JBoss® EAP 7.4。 | | [Adobe Acrobat 2017 — 对Adobe Acrobat 2017的核心支持将于2022年6月6日终止。](https://helpx.adobe.com/cn/support/programs/eol-matrix.html) |
+| Oracle Java™ SE 11（64位）适用于应用程序服务器JBoss® EAP 7.4的SDK。 | | [Adobe Acrobat 2017 — 对Adobe Acrobat 2017的核心支持将于2022年6月6日终止。](https://helpx.adobe.com/cn/support/programs/eol-matrix.html) |
 |  | | Red Hat® Enterprise Linux® 7（内核3.x）（64位） |
 |  | | Microsoft® Windows Server 2016（64位） |
 |  | | Microsoft® Office 2016 |
