@@ -10,9 +10,9 @@ feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3051'
 ht-degree: 0%
 
 ---
@@ -136,7 +136,7 @@ Lucene索引具有以下配置选项：
 
 ### 了解全文搜索 {#understanding-fulltext-search}
 
-例如，本节中的文档适用于Apache Lucene、Elasticsearch以及PostgreSQL、SQLite和MySQL的全文索引。 以下示例适用于AEM/Oak/Lucene。
+例如，本节中的文档适用于Apache Lucene、Elasticsearch，以及PostgreSQL、SQLite和MySQL的全文索引。 以下示例适用于AEM/Oak/Lucene。
 
 <b>要编制索引的数据</b>
 
@@ -211,6 +211,10 @@ Lucene在两个列表（或循环`n`列表，在搜索`n`个单词时）之间�
 | --- | --- | --- |
 
 找到多个条目后，将按分数排序。
+
+>[!NOTE]
+>
+>本节中介绍的搜索机制使用Lucene索引，而不是像Linux `grep`命令那样的部分匹配。
 
 ### Lucene属性索引 {#the-lucene-property-index}
 
@@ -362,7 +366,7 @@ select * from [nt:base] where [alias] = '/admin'
 
 Solr索引的用途是全文搜索，但也可按路径、属性限制和主类型限制来索引搜索。 这意味着Oak中的Solr索引可用于任何类型的JCR查询。
 
-AEM中的集成发生在存储库级别，因此Solr是AEM附带的新存储库实施Oak中可能使用的索引之一。
+AEM中的集成在存储库级别进行，因此Solr是可以在AEM随附的新存储库实施Oak中使用的可能索引之一。
 
 它可以配置为作为远程服务器与AEM实例一起使用。
 
