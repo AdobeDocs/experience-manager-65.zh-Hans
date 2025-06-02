@@ -27,7 +27,7 @@ ht-degree: 0%
 
 ## 先决条件 {#prerequisite-versioning}
 
-要在自适应表单中使用版本控制、注释和批注功能，请确保在AEM 6.5 Forms环境中启用了[自适应表单核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
+要在自适应表单中使用版本控制、注释和批注功能，请确保在AEM 6.5 Forms环境中启用了[自适应表单核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
 
 ## 自适应表单版本控制 {#adaptive-form-versioning}
 
