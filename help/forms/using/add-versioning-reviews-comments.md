@@ -4,9 +4,9 @@ description: 使用AEM 6.5自适应表单核心组件向自适应表单添加注
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
+source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
 workflow-type: tm+mt
-source-wordcount: '615'
+source-wordcount: '631'
 ht-degree: 0%
 
 ---
@@ -14,16 +14,20 @@ ht-degree: 0%
 # 对自适应表单进行版本控制、审核和注释
 
 <!--
-<span class="preview"> This feature is under the early adopter program. If you’re interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
+<span class="preview"> This feature is under the early adopter program. If you're interested in joining our early access program for this feature, send an email from your official address to aem-forms-ea@adobe.com to request access </span>
 -->
 
 <span class="preview">默认情况下不启用此功能。 您可以从官方地址写信到aem-forms-ea@adobe.com请求访问该功能。</span>
 
 自适应表单核心组件允许表单作者向表单添加版本控制、注释和批注。 这些功能通过允许用户创建和管理多个版本、通过注释进行协作以及向特定表单部分添加注释来简化表单开发，从而增强表单构建体验。
 
+有关自适应表单中的版本控制、注释和批注功能，请参阅此分步视频。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3463265)
+
 ## 先决条件 {#prerequisite-versioning}
 
-要在自适应表单中使用版本控制、注释和批注功能，请确保在AEM 6.5 Forms环境中启用了[自适应表单核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
+要在自适应表单中使用版本控制、注释和批注功能，请确保在AEM 6.5 Forms环境中启用了[自适应表单核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
 
 ## 自适应表单版本控制 {#adaptive-form-versioning}
 
@@ -78,7 +82,7 @@ ht-degree: 0%
 1. 单击位于右上边栏的&#x200B;**添加图标**（如图像中所示）。
    ![批注](assets/annotation.png)
 
-1. 现在，单击位于左上边栏的&#x200B;**添加图标**&#x200B;以添加批注。
+1. 现在，单击位于左上边栏的&#x200B;**添加图标**以添加批注。
    ![添加批注](assets/add-annotation.png)
 
 1. 现在，您可以添加注释，用多种颜色绘制草图以形成组件。
