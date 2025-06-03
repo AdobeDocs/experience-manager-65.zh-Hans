@@ -7,16 +7,16 @@ exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 3effd4fa686ac89421ffe74e52bf34830ddd776c
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
 
 # 自定义独立安装{#custom-standalone-install}
 
-本节介绍安装独立AEM实例时可用的选项。 您还可以阅读[存储元素](/help/sites-deploying/storage-elements-in-aem-6.md)以了解有关全新安装AEM 6后选择后端存储类型的详细信息。
+本节介绍安装独立AEM实例时可用的选项。 有关全新安装AEM 6后选择后端存储类型的详细信息，您还可以阅读[存储元素](/help/sites-deploying/storage-elements-in-aem-6.md)。
 
 ## 通过重命名文件更改端口号 {#changing-the-port-number-by-renaming-the-file}
 
@@ -46,7 +46,7 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，Quicks
 
 ### Java 11注意事项 {#java-considerations}
 
-如果您运行OracleJava 11（或者Java的通常版本高于8），则在启动AEM时，必须在命令行中添加其他开关。
+如果您正在运行Oracle Java 11（或者Java的常规版本高于8），则在启动AEM时，必须在命令行中添加其他开关。
 
 * 需要添加以下 — `-add-opens`开关以防止在`stdout.log`中出现相关的反射访问警告消息
 
@@ -56,7 +56,7 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，Quicks
 
 * 此外，您需要使用`-XX:+UseParallelGC`开关来缓解任何潜在的性能问题。
 
-以下是在Java 11上启动AEM时其他JVM参数的外观示例：
+下面是在Java 11上启动AEM时其他JVM参数的外观示例：
 
 ```shell
 -XX:+UseParallelGC --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
@@ -86,10 +86,6 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，Quicks
 * 如果出现问题，将无法访问Web控制台和存储库。 这样，您可以将其他捆绑包放入此目录中，并且应该安装这些捆绑包。
 * 可以在快速入门开始之前创建`crx-quickstart/install`文件夹，还可以将其他包放在该文件夹中。
 
->[!NOTE]
->
->有关示例，另请参阅[如何在服务器启动时自动安装CRX包](https://helpx.adobe.com/experience-manager/kb/HowToInstallPackagesUsingRepositoryInstall.html)。
-
 ## 安装和启动Adobe Experience Manager as a Windows Service {#installing-and-starting-adobe-experience-manager-as-a-windows-service}
 
 >[!NOTE]
@@ -98,7 +94,7 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，Quicks
 >
 >以具有管理员权限的用户登录&#x200B;**不足**。 如果您在完成这些步骤时未以管理员身份登录，则会收到&#x200B;**访问被拒绝**&#x200B;错误。
 
-要安装和启动AEM as a Windows服务，请执行以下操作：
+要安装和启动AEM即Windows服务，请执行以下操作：
 
 1. 在文本编辑器中打开crx-quickstart\opt\helpers\instsrv.bat文件。
 1. 如果要配置64位Windows服务器，请根据您的操作系统，使用以下命令之一替换prunsrv的所有实例：
@@ -128,7 +124,7 @@ AEM的默认端口为4502。 如果该端口不可用或已在使用中，Quicks
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-1. Windows指示服务正在运行。 AEM将启动，并且prunsrv可执行文件会显示在任务管理器中。 在Web浏览器中，导航到AEM，例如`https://localhost:4502`以开始使用AEM。
+1. Windows指示服务正在运行。 AEM将启动，并且prunsrv可执行文件会显示在任务管理器中。 在Web浏览器中，导航到AEM，例如`https://localhost:4502`，以开始使用AEM。
 
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
@@ -163,7 +159,7 @@ Java计算机的临时文件夹的默认位置为`/tmp`。 例如，在构建包
 
 >[!CAUTION]
 >
->这些选项自AEM 6.5原始版本(6.5.0.0)起有效。 在以后的SP版本中可能会进行更改。
+>这些选项自AEM 6.5 (6.5.0.0)的原始版本起有效。 在以后的SP版本中可能会进行更改。
 
 ```shell
 Loading quickstart properties: default
@@ -276,9 +272,9 @@ Log files
 
 在Amazon Elastic Compute Cloud (EC2)实例上安装AEM时，如果同时在EC2实例上安装author和publish，则会按照[安装AEM Manager实例](#installinginstancesofaemmanager)中的过程正确安装Author实例；但是，Publish实例会变为Author。
 
-在EC2环境中安装Publish实例之前，请执行以下操作：
+在EC2环境中安装发布实例之前，请执行以下操作：
 
-1. 在首次启动实例之前，解压缩Publish实例的jar文件。 要解压缩文件，请使用以下命令：
+1. 在首次启动实例之前，解压缩发布实例的jar文件。 要解压缩文件，请使用以下命令：
 
    ```xml
    java -jar quickstart.jar -unpack
@@ -330,7 +326,7 @@ Web控制台。
 
 ## 安装后的操作 {#actions-after-installation}
 
-尽管配置AEM WCM有许多可能性，但应该执行某些操作，或至少在安装后立即检查：
+尽管配置AEM WCM有很多可能性，但应该执行某些操作，或至少在安装后立即检查：
 
 * 有关确保系统安全所需的任务，请参阅[安全核对清单](/help/sites-administering/security-checklist.md)。
 * 查看随AEM WCM一起安装的默认用户和组的列表。 检查您是否想对任何其他帐户执行操作 — 有关更多详细信息，请参阅[安全和用户管理](/help/sites-administering/security.md)。
@@ -344,7 +340,7 @@ AEM WCM启动后，您还可以访问：
 
 ### 访问CRXDE Lite {#accessing-crxde-lite}
 
-要打开CRXDE Lite，您可以从欢迎屏幕中选择&#x200B;**CRXDE Lite**，或者使用浏览器导航到
+要打开CRXDE Lite，您可以从欢迎屏幕中选择&#x200B;**CRXDE Lite**&#x200B;或使用浏览器导航到
 
 ```
  https://<<i>host</i>>:<<i>port</i>>/crx/de/index.jsp
@@ -357,7 +353,7 @@ AEM WCM启动后，您还可以访问：
 
 #### 访问Web控制台 {#accessing-the-web-console}
 
-要访问Adobe CQ Web控制台，您可以从欢迎屏幕中选择&#x200B;**OSGi控制台**，或者使用浏览器导航至
+要访问Adobe CQ Web控制台，您可以从欢迎屏幕中选择&#x200B;**OSGi控制台**，或者使用浏览器导航到
 
 ```
  https://<host>:<port>/system/console
@@ -380,7 +376,7 @@ AEM WCM启动后，您还可以访问：
 
 ## 卸载Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
-由于AEM安装在单个目录中，因此不需要卸载实用程序。 虽然卸载AEM的方法取决于要实现的目标以及使用的永久存储，但卸载过程可能非常简单，如删除整个安装目录。
+由于AEM安装在单个目录中，因此无需卸载实用程序。 虽然卸载AEM的方法取决于要实现的目标以及使用何种永久存储，但卸载过程可能只包括删除整个安装目录。
 
 如果永久存储嵌入在安装目录中（例如，在默认的TarPM安装中），则删除文件夹也会删除数据。
 
