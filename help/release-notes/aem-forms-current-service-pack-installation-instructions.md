@@ -80,7 +80,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++3. 安装Microsoft Visual C++可再发行软件包
 
-* 在安装了Microsoft 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的[64位版本的AEM Visual C++可再发行包。
+* 在安装了Microsoft 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022[&#128279;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的64位版本的AEM Visual C++可再发行包。
 
 >[!NOTE]
 >
@@ -174,7 +174,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 * 当服务器联机时，将包放入`../crx-quickstart/install`文件夹中。
 程序包为      自动安装。
 
-* 使用包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)中的[HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
+* 使用包管理器[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)中的HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
 
   >[!NOTE]
   >
@@ -224,7 +224,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++ 3.安装Microsoft Visual C++可再发行软件包
 
-* 在安装了Microsoft 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的[64位版本的AEM Visual C++可再发行包。
+* 在安装了Microsoft 6.5 Forms的计算机上下载并安装适用于Visual Studio 2015、2017、2019和2022[&#128279;](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)的64位版本的AEM Visual C++可再发行包。
 
 >[!NOTE]
 >
@@ -246,7 +246,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 可以使用两种不同的方法来自动安装[!DNL Experience Manager] Service Pack。<!--  UPDATE FOR EACH NEW RELEASE -->
 
 * 当服务器联机时，将包放入`../crx-quickstart/install`文件夹中。 程序包为      自动安装。
-* 使用包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)中的[HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
+* 使用包管理器[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)中的HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
 
   >[!NOTE]
   >
