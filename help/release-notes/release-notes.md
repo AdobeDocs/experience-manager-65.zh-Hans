@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6aacd4454bc8b4b86e07acf7ec22f42ef761c3ae
+source-git-commit: dbee0e382bad460746416dac5206843ed67bdf04
 workflow-type: tm+mt
-source-wordcount: '6752'
+source-wordcount: '6515'
 ht-degree: 1%
 
 ---
@@ -71,7 +71,7 @@ ht-degree: 1%
 
    * Red Hat® Enterprise Linux® 9（内核4.x，64位） 
 
-* [强化的文件附件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
+* [强化的文件附件组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -215,11 +215,11 @@ ht-degree: 1%
 
 ### [!DNL Assets]{#assets-6523}
 
-* 选择![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**、导航到&#x200B;**[!UICONTROL &#x200B;搜索Adobe Stock &#x200B;]**&#x200B;文件夹并选择库存图像后，[!DNL AEM]内部部署(6.5.22.0)导航页面上出现以下问题：
+* 选择![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**、导航到**[!UICONTROL &#x200B;搜索Adobe Stock ]**文件夹并选择库存图像后，[!DNL AEM]内部部署(6.5.22.0)导航页面上出现以下问题：
    * 无法许可所选库存图像并将其保存为单击&#x200B;**[!UICONTROL 许可并保存]**&#x200B;将显示一个空下拉列表。
    * 选择Stock图像或重新输入库存页面URL将重定向到[!DNL AEM]主页，阻止访问Adobe Stock图像。 (ASSETS-48687)
 * 如果在[!DNL AEM]内部部署(6.5.22.0)导航页面上的文件夹名称包含`/`，则管理文件夹时出现问题。 (ASSETS-46740)
-* 在[!DNL AEM] 6.5上，由于内存使用率较高，资产详细信息页面无法从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**&#x200B;视图加载。 (ASSETS-46738)
+* 在[!DNL AEM] 6.5上，由于内存使用率较高，资产详细信息页面无法从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**视图加载。 (ASSETS-46738)
 * 将[!DNL InDesign]作为`Day CQ DAM Mime Type OSGI`服务的集成问题错误地将[!DNL InDesign]文件识别为`x-adobe-indesign`而不是`x-indesign`。 (ASSETS-45953)
 * [!DNL AEM 6.5.21]会话泄露跟踪到现成的&#x200B;**[!UICONTROL 计划发布到Brand Portal]**&#x200B;工作流步骤。 (ASSETS-44104)
 * 处理和发布图像时，[!DNL AEM]中显示&#x200B;**[!UICONTROL 内存不足(OOM)]**&#x200B;错误。 此问题是由工作流中已弃用的方法造成的，例如&#x200B;**[!DNL Dam Asset update]**&#x200B;和&#x200B;**[!DNL Dynamic Media: Reprocess assets]**。 (ASSETS-43343)
@@ -505,7 +505,7 @@ ht-degree: 1%
 可以使用两种不同的方法来安装[!DNL Experience Manager] 6.5.23.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * 当服务器联机时，将包放入`../crx-quickstart/install`文件夹中。 软件包会自动安装。
-* 使用包管理器[&#128279;](/help/sites-administering/package-manager.md#package-share)中的HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
+* 使用包管理器](/help/sites-administering/package-manager.md#package-share)中的[HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
 
 >[!NOTE]
 >
@@ -672,7 +672,7 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
 
 ### AEM Sites的已知问题 {#known-issues-aem-sites-6523}
 
-内容片段 — 预览由于大型片段树的DoS保护而失败。 请参阅关于默认GraphQL查询执行器配置选项[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)的KB文章(SITES-17934)
+内容片段 — 预览由于大型片段树的DoS保护而失败。 请参阅关于默认GraphQL查询执行器配置选项](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)的[KB文章(SITES-17934)
 
 ### AEM Forms的已知问题 {#known-issues-aem-forms-6523}
 
@@ -705,13 +705,6 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
    1. 重新启动AEM服务器。
 
 * 使用Forms加载项更新到AEM Forms Service Pack 20 (6.5.20.0)后，依赖使用基于凭据的身份验证的旧版Adobe Analytics Cloud Service的配置停止工作。 此问题会导致Analytics规则无法正确执行。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (FORMS-15428)
-
-* 当用户更新到JEE服务器上的AEM Forms Service Pack 20 (6.5.20.0)并使用输出服务生成PDF时，PDF呈现时出现可访问性问题。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (LC-3922112)
-* 当用户使用JEE上的输出服务生成已标记PDF时，会显示“结构不当警告”。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (LC-3922038)
-* 在AEM Forms JEE上提交表单时，将从数据中删除重复XML元素的实例。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (LC-3922017)
-* 当Linux®环境中的用户在HTML中渲染自适应表单（在JEE上）时，它无法正确渲染。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (LC-3921957)
-* 当用户使用AEM Forms JEE上的输出服务将XTG文件转换为PostScript格式时，它会失败，并出现错误： `AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE`。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (LC-3921720)
-* 在JEE服务器上升级到AEM Forms Service Pack 18 (6.5.18.0)后，当用户提交表单时，无法呈现HTML5或PDF forms，并且XMLFM崩溃。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (LC-3921718)
 * 在交互式通信代理UI的打印预览中，所有字段值的货币符号（如美元符号$）显示方式不一致。 对于最多999的值，它出现，但对于1000及更高版本的值则缺失。 (FORMS-16557)
 * 交互式通信中对嵌套布局片段XDP所做的任何修改都不会反映在IC编辑器中。 (FORMS-16575)
 * 在交互式通信代理UI的打印预览中，某些计算值无法正确显示。 (FORMS-16603)
@@ -739,10 +732,10 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
 这些网站仅供客户使用。 如果您是客户并且需要访问权限，请联系您的Adobe客户经理。
 
 * [产品下载位于licensing.adobe.com](https://licensing.adobe.com/)
-* [联系Adobe客户支持](https://experienceleague.adobe.com/zh-hans/docs/customer-one/using/home)。
+* [联系Adobe客户支持](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 产品页](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [订阅Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)
