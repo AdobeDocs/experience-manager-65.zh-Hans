@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: dbee0e382bad460746416dac5206843ed67bdf04
+source-git-commit: 21d0ba51297b4e90645a9ab64d98016598c0a2be
 workflow-type: tm+mt
-source-wordcount: '6515'
+source-wordcount: '6485'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 1%
 
   最新版本引入了受支持平台矩阵的更新，确保与新技术兼容。
 
-   * IBM Content Manager客户端8.7
+   * IBM® Content Manager客户端8.7
 
    * MongoDB Enterprise 7.0
 
@@ -71,7 +71,7 @@ ht-degree: 1%
 
    * Red Hat® Enterprise Linux® 9（内核4.x，64位） 
 
-* [强化的文件附件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
+* [强化的文件附件组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -94,7 +94,7 @@ ht-degree: 1%
 
 #### 辅助功能 {#sites-accessibility-6523}
 
-* AEM编辑器页面中的画布部分现在支持完全的键盘辅助功能。 用户只需使用键盘即可激活节标题和编辑按钮，而无需依赖鼠标悬停。 此更新确保符合WCAG 2.1.1，并提高了组件（如Teaser、图像、轮播、布局、时间扭曲和批注模型）的可用性。 (SITES-25256) <!-- 6.5 LTS SP1 -->
+* AEM编辑器页面中的画布部分现在支持完全的键盘辅助功能。 用户只需使用键盘即可激活节标题和编辑按钮，而无需依赖鼠标悬停。 此更新确保符合WCAG 2.1.1并提高跨组件（例如Teaser、图像、轮播、布局、时间扭曲和注释模式）的可用性。 (SITES-25256) <!-- 6.5 LTS SP1 -->
 * 修复了AEM页面编辑器中的辅助功能问题：在激活“角色”、“购物车”或“已放弃”等按钮后，键盘焦点意外地重置为人口统计工具栏的起始位置。 现在，焦点仍然在激活的按钮上，以支持一致的键盘导航和屏幕阅读器工作流。 (SITES-25306)
 * 修复了AEM页面编辑器中的关键辅助功能问题，该问题导致无法仅使用键盘操作多个对话框和模式（例如，资产边栏或布局预览）中的画布元素。 现在，所有交互式画布元素都支持仅键盘导航，确保符合WCAG 2.1成功标准2.1.1 (SITE-25256)
 * 修复了站点管理员UI中的辅助功能问题，该问题导致创建弹出窗口中的交互式列表项使用不正确的ARIA角色。 行为类似于链接的元素被分配了`role="listitem"`而不是`role="menuitem"`，这违反了ARIA设计模式并混淆了屏幕阅读器。 更新确保所有列表组件遵循正确的语义角色，以改进键盘和辅助技术支持。 (SITES-24493)
@@ -119,7 +119,7 @@ ht-degree: 1%
 #### [!DNL Content Fragments]{#sites-contentfragments-6523}
 
 * 修复了`DeleteVariationIT.testUpdateBasic`的验证测试失败。 `DeleteVariationIT.testUpdateBasic`测试在Service Pack验证运行时不再失败。 该修复更正了JSON处理逻辑中缺少文本映射的问题，从而确保测试稳定性并避免不必要的测试中断。 (SITES-28022)
-* AEM现在可以防止图像资源中XMP元数据的格式错误导致性能下降。 包含无效或不合规的Assets XMP属性名称（例如具有数值区段或不合格结构的属性名称）在处理期间不再触发重复的警告日志。 系统会过滤掉有问题的元数据，以确保资产摄取和验证完成，并且没有错误。 (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
+* AEM现在可以防止图像资源中XMP元数据的格式错误导致性能下降。 包含无效或不合规的Assets XMP属性名称（例如具有数值区段或不合格结构的属性名称）在处理期间不再触发重复的警告日志。 系统会过滤掉有问题的元数据，以确保资产摄取和验证已完成，并且没有错误。 (SITES-30683) <!-- AEM 6.5 LTS SP1 -->
 
 
 <!-- #### [!DNL Content Fragments] - Admin{#sites-admin-6523}
@@ -215,11 +215,11 @@ ht-degree: 1%
 
 ### [!DNL Assets]{#assets-6523}
 
-* 选择![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**、导航到&#x200B;**[!UICONTROL &#x200B;搜索Adobe Stock &#x200B;]**&#x200B;文件夹并选择库存图像后，[!DNL AEM]内部部署(6.5.22.0)导航页面上出现以下问题：
+* 选择![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**、导航到**[!UICONTROL &#x200B;搜索Adobe Stock ]**文件夹并选择库存图像后，[!DNL AEM]内部部署(6.5.22.0)导航页面上出现以下问题：
    * 无法许可所选库存图像并将其保存为单击&#x200B;**[!UICONTROL 许可并保存]**&#x200B;将显示一个空下拉列表。
    * 选择Stock图像或重新输入库存页面URL将重定向到[!DNL AEM]主页，阻止访问Adobe Stock图像。 (ASSETS-48687)
 * 如果在[!DNL AEM]内部部署(6.5.22.0)导航页面上的文件夹名称包含`/`，则管理文件夹时出现问题。 (ASSETS-46740)
-* 在[!DNL AEM] 6.5上，由于内存使用率较高，资产详细信息页面无法从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**&#x200B;视图加载。 (ASSETS-46738)
+* 在[!DNL AEM] 6.5上，由于内存使用率较高，资产详细信息页面无法从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**视图加载。 (ASSETS-46738)
 * 将[!DNL InDesign]作为`Day CQ DAM Mime Type OSGI`服务的集成问题错误地将[!DNL InDesign]文件识别为`x-adobe-indesign`而不是`x-indesign`。 (ASSETS-45953)
 * [!DNL AEM 6.5.21]会话泄露跟踪到现成的&#x200B;**[!UICONTROL 计划发布到Brand Portal]**&#x200B;工作流步骤。 (ASSETS-44104)
 * 处理和发布图像时，[!DNL AEM]中显示&#x200B;**[!UICONTROL 内存不足(OOM)]**&#x200B;错误。 此问题是由工作流中已弃用的方法造成的，例如&#x200B;**[!DNL Dam Asset update]**&#x200B;和&#x200B;**[!DNL Dynamic Media: Reprocess assets]**。 (ASSETS-43343)
@@ -260,89 +260,89 @@ ht-degree: 1%
 
 #### 表单设计器
 
-* 当用户使用exportDataAPI导出基于XFA的PDF的数据时，生成的XML与使用Acrobat Reader手动导出的XML数据相比，显示差异。 与Acrobat Reader生成的输出相比，输出中缺少某些字段的值。 (LC-3922791)。
+* 当用户使用exportDataAPI导出基于XFA的PDF的数据时，生成的XML与使用Acrobat Reader手动导出的XML数据相比，显示差异。 与Acrobat Reader生成的输出相比，输出中缺少某些字段的值。 (LC-3922791)
 
-* 在AEM Forms 6.5.22.0上，当用户尝试使用Workbench中的输出服务生成带有标记的PDF时，生成的PDF在内容项的表中的引用标记下包含一个额外的标签标记。 (LC-3922756)
+* 在AEM Forms 6.5.22.0中，在Workbench中使用“输出服务”生成带标记的PDF时，会在目录项的引用标记下添加一个意外的标签标记。 (LC-3922756)
 
-* 当用户在AEM Forms Designer中对齐字段字幕且对其底部或右侧对齐时，标记树仅包含字幕而不包含相应的值，从而导致辅助功能标记不完整。 (LC-3922619)。
+* 当用户在AEM Forms Designer中对齐字段字幕且对其底部或右侧对齐时，标记树仅包含字幕而不包含相应的值，从而导致辅助功能标记不完整。 (LC-3922619)
 
-* 从AEM Forms 6.5 Service Pack 6升级到AEM Forms Service Pack 20时，生成的PDF中的二维码变得不可读。 二维码的替换文本也无法通过辅助功能测试，从而影响屏幕阅读器兼容性。 (LC-3922551)。
+* 从AEM Forms 6.5 Service Pack 6升级到AEM Forms Service Pack 20时，生成的PDF中的二维码变得不可读。 二维码的替换文本也无法通过辅助功能测试，从而影响屏幕阅读器兼容性。 (LC-3922551)
 
-* 当用户在AEM Forms Service Pack 18上的代理UI中渲染信件时，由于FormService.render() API，内容无法正确显示。 (LC-3922461)。
+* 当用户在AEM Forms Service Pack 18上的代理UI中渲染信件时，由于FormService.render() API，内容无法正确显示。 (LC-3922461)
 
 #### Forms
 
-* 当用户在AEM Forms自适应表单的根面板上启用“允许标题使用富文本”时，嵌套面板上的“从记录文档排除标题”设置错误地隐藏了自动生成记录文档中的根面板标题。 (FORMS-19696)。
+* 在AEM Forms中，在根面板上启用“允许标题使用富文本”会导致嵌套面板上的“从记录文档排除标题”错误地隐藏根面板的标题。 它会在生成的记录文档中进行此操作。 (FORMS-19696)
 
-* 当用户尝试在内部部署AEM 6.5实例的JSON架构中使用aem：afProperties将自定义sling：resourceType分配给核心组件时，未应用自定义资源类型。 (FORMS-19691)。
+* 在AEM 6.5上的JSON架构中，系统忽略通过`aem:afProperties`分配的自定义`sling:resourceType`。在渲染期间忽略自定义资源类型。 (FORMS-19691)
 
-* 当用户使用URI提交带有预填充附件的自适应表单时，由于缺少二进制数据，表单提交失败并出现NullPointerException。 (FORMS-19371) (FORMS-19486)。
+* 当用户使用URI提交带有预填充附件的自适应表单时，由于缺少二进制数据，表单提交失败并出现NullPointerException。 (FORMS-19371) (FORMS-19486)
 
-* 当用户在PDF 6.5 Forms的“Forms和文档”部分下上传AEM时，时间轴功能停止运行。 (FORMS-19407)(FORMS-19234)。
+* 当用户在PDF 6.5 Forms的“Forms和文档”部分下上传AEM时，时间轴功能停止运行。 (FORMS-19407)(FORMS-19234)
 
-* 当用户使用AEM Forms中的现成(OOTB)文件附件组件上传文件时，会识别安全漏洞。 这可能会导致未经授权的实体拦截提交流程。 (FORMS-19271)。
+* 当用户使用AEM Forms中的现成(OOTB)文件附件组件上传文件时，会识别安全漏洞。 这个问题可能导致未经授权的实体拦截提交流程。 (FORMS-19271)
 
-* 当用户在AEM Forms中配置现成的自适应表单以自动生成记录文档(DoR)时，Acrobat Reader文档属性中的“标题”字段不显示捕获的DoR标题，并且默认情况下不会出现表单标题来代替文件名。 (FORMS-19263)。
+* 当用户在AEM Forms中配置现成的自适应表单以自动生成记录文档(DoR)时，Acrobat Reader文档属性中的“标题”字段不显示捕获的DoR标题。 默认情况下，表单标题不会代替文件名出现。 (FORMS-19263)
 
-* 当用户在Agent UI中打开交互式通信时，无法完全擦除预填充的数据；移除后，它将自动使用相同的数据重新填充。 (FORMS-19151)。
+* 当用户在Agent UI中打开交互式通信时，无法完全擦除预填充的数据；移除后，它将自动使用相同的数据重新填充。 (FORMS-19151)
 
-* 当用户预览代理UI中的日期字段时，由于VM的UTC设置与系统对日期的解释之间存在时区差异，日期会意外更改。 (FORMS-19115)。
+* 当用户在Agent UI中预览日期字段时，日期意外变化。 出现此问题的原因是VM的UTC设置与系统对日期的解释之间存在时区差异。 (FORMS-19115)
 
-* 当用户提交表单时，文件附件可能会重复，从而导致同一文件被多次上传。 (FORMS-19045)(FORMS-19051)。
+* 当用户提交表单时，文件附件可能会重复，从而导致同一文件被多次上传。 (FORMS-19045)(FORMS-19051)
 
-* 在AEM 6.5 Document Security中将协调员添加到策略集在生产环境和较低环境中均失败。 (FORMS-18603、FORMS-18212、FORMS-19697)。
+* 在AEM 6.5 Document Security中将协调员添加到策略集在生产环境和较低环境中均失败。 (FORMS-18603、FORMS-18212、FORMS-19697)
 
-* 当用户在AEM Forms Service Pack 22中单击桌面模式下字段为空的“datepicker-calendar-icon”时，由于未定义的_$focusedDate变量将发生错误，并中断关联的自定义脚本。 (FORMS-18483)(FORMS-18268)。
+* 当用户在AEM Forms Service Pack 22中单击桌面模式下字段为空的“datepicker-calendar-icon”时，由于未定义的_$focusedDate变量将发生错误，并中断关联的自定义脚本。 (FORMS-18483)(FORMS-18268)
 
 * 在AEM Forms Service Pack 19 (6.5.19.0)上，当客户预览信件时，“字内金额”字段无法正确显示或更新数字值，导致对齐错误和内容中缺少空格。 (FORMS-18437、FORMS-17330、FORMS-18209、FORMS-18557、CTG-4150848、FORMS-19614、LC-3922004)
 
-* 当客户在RHEL上预览在AEM Forms 6.5 SP19中保存的书信时，内容无法对齐，缺少空格，并出现意外字符，如“x”。 (FORMS-18422)(FORMS-17641)。
+* 当客户在RHEL上预览在AEM Forms 6.5 SP19中保存的书信时，内容无法对齐，缺少空格，并出现意外字符，如“x”。 (FORMS-18422)(FORMS-17641)
 
-* 当用户在AEM Forms中的选项卡之间导航时，在第一个选项卡上选择组件会变得无响应。 (FORMS-18345)。
+* 当用户在AEM Forms中的选项卡之间导航时，在第一个选项卡上选择组件会变得无响应。 (FORMS-18345)
 
-* 在AEM Forms 6.5.21.0中，当用户使用WebToPDF选项将HTML文件转换为PDF时，输出PDF缺少标题部分，包括元数据和标题标记。 (FORMS-18223、FORMS-17835、FORMS-19642、FORMS-18224)。
+* 在AEM Forms 6.5.21.0中，当用户使用WebToPDF选项将HTML文件转换为PDF时，输出PDF缺少标题部分，包括元数据和标题标记。 (FORMS-18223、FORMS-17835、FORMS-19642、FORMS-18224)
 
-* 在AEM JEE Process Manager SDK中，当用户调用retryAction(long actionOid)方法时，系统会错误地重试tb_action_instance表中找到的第一个操作。 即使提供了特定的操作ID或ID为空，也会发生这种情况，从而导致意外行为。 (FORMS-18187)。
+* 在AEM JEE Process Manager SDK中，当用户调用retryAction(long actionOid)方法时，系统会错误地重试tb_action_instance表中找到的第一个操作。 即使提供了特定的操作ID或ID为空，也会发生此工作流，从而导致意外行为。 (FORMS-18187)
 
-* 在更新到SP22后，用户遇到保存草稿和提交功能失败，且未显示任何错误消息的问题。 (FORMS-18069)。
+* 更新到SP22后，用户遇到问题，即保存的草稿和提交功能失败，但未显示任何错误消息。 (FORMS-18069)
 
-* 在AEM 6.5.21.0中，从基于XSD的基础组件转换为核心组件会阻止在JSON架构中实施跨文件引用，从而影响自适应Forms迁移。 (FORMS-18065)。
+* 在AEM 6.5.21.0中，从基于XSD的基础组件转换为核心组件会阻止在JSON架构中实施跨文件引用，从而影响自适应Forms迁移。 (FORMS-18065)
 
-* 当用户在代理UI中预览信件时，由于IC时间转换问题，日期字段显示不正确的值。 这些差异源于VM环境与系统对时间（UTC与本地时间）的解释之间的时区差异。 (FORMS-17988) (FORMS-17248)。
+* 当用户在代理UI中预览信件时，由于IC时间转换问题，日期字段显示不正确的值。 这些差异源于VM环境与系统对时间的解释（UTC与本地时间）之间的时区差异。 (FORMS-17988) (FORMS-17248)
 
-* 当用户在AEM Forms中使用通知IC模板预览信件时，PDF的生成时间存在显着差异，从1.5秒到超过10秒不等，即使是在同一服务器上。 这种不一致性会影响业务关键型工作流。 (FORMS-17951)。
+* 当用户在AEM Forms中使用通知IC模板预览信件时，PDF的生成时间存在显着差异，从1.5秒到超过10秒不等，即使是在同一服务器上。 这种不一致性会影响业务关键型工作流。 (FORMS-17951)
 
-* 当用户使用“数据源”选项将自适应表单中的涂写签名对象绑定到XDP时，由于持续的长宽比验证错误，即使使用有效值也无法保存更改。 (FORMS-17587)。
+* 当用户使用“数据源”选项将自适应表单中的涂写签名对象绑定到XDP时，无法保存更改。 原因在于，即使使用有效值，仍存在长宽比验证错误。 (FORMS-17587)
 
-* 当用户使用具有用于文档片段的许多隐藏字段的特定XDP时，AEM会在cm：optional属性设置为false的情况下创建CRX节点，这会导致交互式通信(IC)提交失败。 (FORMS-17538)。
+* 当用户使用具有用于文档片段的许多隐藏字段的特定XDP时，AEM会在`cm:optional`属性设置为false的情况下创建CRX节点，这会导致交互式通信(IC)提交失败。 (FORMS-17538)
 
-* 在AEM Forms 6.5.19.0上，当客户预览信件时，如果定义了商机和帧的数字限制，则数字框字段无法正确处理负值。 此问题因使用parseFloat而发生，它将减号视为数字的一部分。 (FORMS-17451)。
+* 在AEM Forms 6.5.19.0上，当客户预览信件时，如果定义了商机和帧的数字限制，则数字框字段无法正确处理负值。 此问题因使用parseFloat而发生，它将减号视为数字的一部分。 (FORMS-17451)
 
-* 在AEM Forms 6.5上，当预览信件时，注意到Adobe.json文件中使用了“*”通配符，令人担心其用途和潜在的修改(FORMS-17317)。
+* 在AEM Forms 6.5上，当预览信件时，注意到Adobe.json文件中使用了“*”通配符，令人担心其用途和潜在的修改。 (FORMS-17317)
 
-* 当用户在“申请固定费率储蓄者联合帐户”上使用屏幕阅读器时，标题被错误地宣布为“可点击”，导致辅助功能问题。 (FORMS-17038)。
+* 当用户在`Apply for a Fixed Rate Saver joint account`上使用屏幕阅读器时，标题被错误地宣布为`clickable`，导致可访问性问题。 (FORMS-17038)
 
-* 嵌入表单时，生成的iframe缺少title属性，从而导致出现辅助功能合规性问题。 (FORMS-17010)。
+* 嵌入表单时，生成的iframe缺少title属性，从而导致出现辅助功能合规性问题。 (FORMS-17010)
 
-* 无法使用Forms Manager UI下载表单，除非包含关联的依赖项，如主题和片段。 (FORMS-15811)。
+* 使用Forms Manager UI下载表单时，始终包含关联的依赖项，例如主题和片段。 (FORMS-15811)
 
-* 当用户访问移动设备(iOS和Android)上的表单时，第一页上的“下一个”和“上一个”按钮被禁用，但屏幕阅读器不会将其识别为已禁用。 (FORMS-15773)。
+* 当用户访问移动设备上的表单(iOS和Android™)时，第一页上的“下一个”和“上一个”按钮被禁用。 但是，屏幕阅读器不会将其标识为已禁用。 (FORMS-15773)
 
-* 当用户保存启用了片段和延迟加载的大型表单时，无法检索草稿，并中断工作流。 (FORMS-19890和FORMS-19808)。
+* 当用户保存启用了片段和延迟加载的大型表单时，无法检索草稿，并中断工作流。 (FORMS-19890和FORMS-19808)
 
 #### FORMS JEE
 
 * 当用户在AEM Forms中重新配置数据库时，由于硬编码的参数，连接失败。 (FORMS-19568和FORMS-17621)
 
-* 当用户使用partial turnkey方法使用MySQL 8.4设置AEM 6.5时，LiveCycle Configuration Manager (LCM)在数据库连接测试期间无法识别所需的MySQL连接器驱动程序，从而导致设置失败。 (FORMS-19442)。
+* 当用户使用partial turnkey方法使用MySQL 8.4设置AEM 6.5时，LiveCycle Configuration Manager (LCM)无法识别所需的MySQL连接器驱动程序。 这会导致数据库连接测试和设置失败。 (FORMS-19442)
 
-* 当用户在JEE环境中的JRE 11上运行带有JDBC 12.8.1的LCM时，由于不兼容问题，设置失败。(FORMS-19276)。
+* 当用户在JEE环境中的JRE 11上运行带有JDBC 12.8.1的LCM时，由于不兼容问题，设置失败。 (FORMS-19276)
 
-* 当用户在AEM内部部署中打开任务时，系统会执行Workspace启动操作配置文件，而不是AssignedUserProfile。 (FORMS-19065)。
+* 当用户在AEM内部部署中打开任务时，系统会执行Workspace启动操作配置文件，而不是AssignedUserProfile。 (FORMS-19065)
 
-* 当用户在AEM JEE进程管理器中使用retryAction(long actionOid)方法时，会发生意外行为。 (FORMS-18357)(FORMS-18187)。
+* 当用户在AEM JEE进程管理器中使用retryAction(long actionOid)方法时，会发生意外行为。 (FORMS-18357)(FORMS-18187)
 
-* 在AEM Forms 6.5.21.0上，PDFG转换失败，并出现以下错误： (FORMS-16851)(FORMS-14613)。
+* 在AEM Forms 6.5.21.0上，PDFG转换失败并出现以下错误：(FORMS-16851)(FORMS-14613)
 
 #### Forms验证码 {#forms-captcha-6523}
 
@@ -405,7 +405,7 @@ ht-degree: 1%
 #### Granite{#foundation-granite-6523}
 
 * 解决了在升级到Service Pack 21后加载HTML页面时，Apache Sling脚本服务之间导致延迟或失败的OSGi依赖项循环。 更新了内部服务引用，以消除涉及`SightlyScriptingEngineFactory`和相关组件的循环依赖关系，从而提高脚本引擎的可靠性和启动行为。 (GRANITE-56808)
-* 更新了JS 。使用Apache Sling中的脚本可按需加载，而不是在启动时急切加载，从而消除线程争用，并降低发布服务器在加载下无响应的风险。 此更改通过防止早期脚本解析导致的资源锁定，提高了高流量情况下的服务器稳定性和响应时间。 (GRANITE-56611)
+* 更新了JS Use Scripts in Apache Sling to only-demand而不是在启动时急切地加载，从而消除了线程争用并降低发布服务器在加载下无响应的风险。 此更改通过防止早期脚本解析导致的资源锁定，提高了高流量情况下的服务器稳定性和响应时间。 (GRANITE-56611)
 * 更正了AEM Omnisearch中的一个问题：输入字段的占位符错误地显示为标签，从而导致视觉混乱。 确保跨过滤器字段正确呈现占位符，保持一致和可访问的表单行为。 (GRANITE-51791)
 * 解决了在内容片段模型编辑器中选择超过30个具有多字段引用的CFM（内容片段模型）时触发的服务器错误。 增强了过滤器建议组件以支持POST操作。 此功能允许在内容片段创建期间正确处理大型引用集，并改善高容量模型配置的稳定性。 (GRANITE-57164)
 * 解决了CFM中单击靠近复选框无意间切换其状态的问题。 更新了样式，以严格限制对复选框元素的点击激活，防止意外用户交互，并提高表单可用性和可访问性。 (GRANITE-52384)
@@ -505,7 +505,7 @@ ht-degree: 1%
 可以使用两种不同的方法来安装[!DNL Experience Manager] 6.5.23.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * 当服务器联机时，将包放入`../crx-quickstart/install`文件夹中。 软件包会自动安装。
-* 使用包管理器[&#128279;](/help/sites-administering/package-manager.md#package-share)中的HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
+* 使用包管理器](/help/sites-administering/package-manager.md#package-share)中的[HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
 
 >[!NOTE]
 >
@@ -672,7 +672,7 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
 
 ### AEM Sites的已知问题 {#known-issues-aem-sites-6523}
 
-内容片段 — 预览由于大型片段树的DoS保护而失败。 请参阅关于默认GraphQL查询执行器配置选项[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)的KB文章(SITES-17934)
+内容片段 — 预览由于大型片段树的DoS保护而失败。 请参阅关于默认GraphQL查询执行器配置选项](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)的[KB文章(SITES-17934)
 
 ### AEM Forms的已知问题 {#known-issues-aem-forms-6523}
 
@@ -732,10 +732,10 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
 这些网站仅供客户使用。 如果您是客户并且需要访问权限，请联系您的Adobe客户经理。
 
 * [产品下载位于licensing.adobe.com](https://licensing.adobe.com/)
-* [联系Adobe客户支持](https://experienceleague.adobe.com/zh-hans/docs/customer-one/using/home)。
+* [联系Adobe客户支持](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 产品页](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [订阅Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)
