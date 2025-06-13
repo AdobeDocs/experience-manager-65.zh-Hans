@@ -8,7 +8,7 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
 source-wordcount: '3461'
 ht-degree: 1%
@@ -31,7 +31,7 @@ ht-degree: 1%
 1. 在安装目录中创建文件夹`crx-quickstart/install`。
 1. 首先，通过创建一个配置文件来配置节点存储，该配置文件具有您要在`crx-quickstart/install`目录中使用的节点存储选项的名称。
 
-   例如，Document节点存储(AEM MongoMK实现的基础)使用文件`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`。
+   例如，Document节点存储(AEM的MongoMK实现的基础)使用文件`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`。
 
 1. 编辑文件，并设置配置选项。
 1. 创建配置文件，该文件应具有您要使用的数据存储的PID。 编辑文件以设置配置选项。
@@ -56,14 +56,14 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->在AEM 6.3中，区段节点存储的PID已从AEM 6的`org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions`更改为`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService`。确保进行必要的配置调整以反映此更改。
+>区段节点存储的PID已从AEM 6的`org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions`更改为AEM 6.3中的`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService`。确保进行必要的配置调整以反映此更改。
 
 您可以配置以下选项：
 
 * `repository.home`：存储存储库相关数据的存储库主目录的路径。 默认情况下，区段文件存储在`crx-quickstart/segmentstore`目录下。
 
 * `tarmk.size`：区段的最大大小（以MB为单位）。 默认最大为256MB。
-* `customBlobStore`：布尔值，指示使用了自定义数据存储。 AEM 6.3及更高版本的默认值为true。 在AEM 6.3之前，默认值为false。
+* `customBlobStore`：布尔值，指示使用了自定义数据存储。 AEM 6.3及更高版本的默认值为true。 在AEM 6.3之前，默认为false。
 
 以下是示例`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`文件：
 
@@ -80,7 +80,7 @@ customBlobStore=B"true"
 
 #### 文档节点存储 {#document-node-store}
 
-文档节点存储是AEM MongoMK实现的基础。 它使用`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID。 可以使用以下配置选项：
+文档节点存储是AEM实施MongoMK的基础。 它使用`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID。 可以使用以下配置选项：
 
 * `mongouri`：连接到Mongo数据库所需的[MongoURI](https://docs.mongodb.org/manual/reference/connection-string/)。 默认值为`mongodb://localhost:27017`
 
@@ -137,13 +137,13 @@ customBlobStore=B"false"
 
 ## Amazon S3数据存储 {#amazon-s-data-store}
 
-可以将AEM配置为将数据存储在Amazon的简单存储服务(S3)中。 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID进行配置。
+可以将AEM配置为将数据存储在Amazon的Simple Storage Service (S3)中。 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID进行配置。
 
 >[!NOTE]
 >
->AEM 6.5支持在Amazon的S3中存储数据，但是不支持在其他平台中存储数据，其他平台的供应商可能拥有自己的Amazon S3 API实现。
+>AEM 6.5支持在Amazon的S3中存储数据，但是不支持在其他平台中存储数据，因为这些平台的供应商可能拥有自己实施的Amazon S3 API。
 
-要启用S3数据存储功能，必须下载并安装包含S3数据存储连接器的功能包。 转到[Adobe存储库](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)并从功能包的1.10.x版本（例如，com.adobe.granite.oak.s3connector-1.10.0.zip）下载最新版本。 此外，还必须下载并安装[AEM 6.5发行说明](/help/release-notes/release-notes.md)页面上列出的最新AEM Service Pack。
+要启用S3数据存储功能，必须下载并安装包含S3数据存储连接器的功能包。 转到[Adobe存储库](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)，并从功能包的1.10.x版本（例如，com.adobe.granite.oak.s3connector-1.10.0.zip）下载最新版本。 此外，还必须下载并安装[AEM 6.5发行说明](/help/release-notes/release-notes.md)页面上列出的最新AEM Service Pack。
 
 >[!NOTE]
 >
@@ -165,7 +165,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
    将以上位置的所有内容复制到`<aem-install>/crx-quickstart/install.`
 
-1. 如果已将AEM配置为使用Tar或MongoDB存储，请先从&#x200B;***&lt;aem-install>***/*crx-quickstart*/*install*&#x200B;文件夹中删除所有现有的配置文件，然后再继续。 必须删除的文件包括：
+1. 如果已将AEM配置为使用Tar或MongoDB存储，请先从***&lt;aem-install>***/*crx-quickstart*/*install*&#x200B;文件夹中删除所有现有的配置文件，然后再继续。 必须删除的文件包括：
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -445,7 +445,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 * azureSas=”：在连接器的1.6.3版本中，添加了Azure共享访问签名(SAS)支持。 **如果配置文件中同时存在SAS和存储凭据，则SAS具有优先级。**&#x200B;有关SAS的详细信息，请参阅[官方文档](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview)。 确保“=”字符像“\=”一样转义。
 
 * azureBlobEndpoint=&quot;&quot;： Azure Blob端点。 例如，https://&lt;storage-account>.blob.core.windows.net。
-* accessKey=&quot;&quot;：存储帐户名称。 有关Microsoft® Azure身份验证凭据的更多详细信息，请参阅[官方文档](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account)。
+* accessKey=&quot;&quot;：存储帐户名称。 有关Microsoft® Azure身份验证凭据的更多详细信息，请参阅[官方文档](https://learn.microsoft.com/en-us/azure/storage/common/storage-account-create)。
 
 * secretKey=&quot;&quot;：存储访问密钥。 确保“=”字符像“\=”一样转义。
 * container=&quot;&quot;： Microsoft® Azure Blob存储容器名称。 容器是一组Blob。 有关其他详细信息，请阅读[官方文档](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN)。

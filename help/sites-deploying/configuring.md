@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '2093'
+source-wordcount: '2085'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 Adobe Experience Manager (AEM)安装时使用了所有参数的默认设置，这些设置允许它“开箱即用”。 但是，您可以根据自己的特定要求配置AEM。
 
-AEM有许多方面可以配置：
+AEM有许多方面可以进行配置：
 
-* 某些组件通常针对每个项目安装[&#128279;](#primary-configuration-considerations)进行配置，必须对其进行查看以确认它们是否适用于您的项目。
+* 某些组件通常针对每个项目安装](#primary-configuration-considerations)进行[配置，必须对其进行查看以确认它们是否适用于您的项目。
 * [其他配置](#further-configuration-considerations)可能是通用的，但不是必需的；与功能或系统性能和稳定性相关。
-* 而其他则仅对于AEM的某些可选功能是必需的（这些功能与相应的功能一起进行记录）。
+* 只有AEM的某些可选功能才需要其他功能（这些功能与相应的功能一起进行记录）。
 
 根据特定配置，可以使用以下任一方式作出这些更改：
 
@@ -46,7 +46,7 @@ AEM有许多方面可以配置：
 
 * **AEM WCM**
 
-  可以在AEM WCM本身中配置各种方面，其中许多方面是使用[工具](/help/sites-administering/tools-consoles.md)控制台配置的；例如，复制代理。
+  可在AEM WCM本身中配置各个方面，其中许多方面是使用[工具](/help/sites-administering/tools-consoles.md)控制台配置的；例如，复制代理。
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ AEM有许多方面可以配置：
 
 >[!NOTE]
 >
->配置AEM非常简单。 但是，某些更改可能会对应用程序产生重大影响。 因此，在开始配置AEM之前，请确保您拥有必要的经验和知识，并仅做出您知道是必要的更改。 通过OSGi控制台所做的任何更改将&#x200B;**立即**&#x200B;应用于正在运行的系统（无需重新启动）。
+>AEM的配置非常简单。 但是，某些更改可能会对应用程序产生重大影响。 因此，在开始配置AEM之前，请确保您拥有必要的经验和知识，并仅做出您知道是必需的更改。 通过OSGi控制台所做的任何更改将&#x200B;**立即**&#x200B;应用于正在运行的系统（无需重新启动）。
 
 ## 主要配置注意事项 {#primary-configuration-considerations}
 
@@ -83,7 +83,7 @@ AEM有许多方面可以配置：
 
 ### IPv4和IPv6 {#ipv-and-ipv}
 
-AEM的所有元素(例如，存储库和Dispatcher)都可以安装在IPv4和IPv6网络中。
+AEM的所有元素(例如存储库和Dispatcher)都可以安装在IPv4和IPv6网络中。
 
 操作是无缝的，无需特殊配置，需要时您只需使用适合您网络类型的格式指定IP地址即可。
 
@@ -135,11 +135,11 @@ AEM的所有元素(例如，存储库和Dispatcher)都可以安装在IPv4和IPv6
 
 ### 单点登录 {#single-sign-on}
 
-单点登录(SSO)允许用户在提供一次身份验证凭据（如用户名和密码）后访问多个系统。 独立的系统（称为可信验证器）执行验证并向Experience Manager提供用户凭据。 Experience Manager会检查并强制实施用户的访问权限（即确定允许用户访问的资源）。
+单点登录(SSO)允许用户在提供一次身份验证凭据（如用户名和密码）后访问多个系统。 另一个系统（称为可信身份验证程序）执行身份验证并向Experience Manager提供用户凭据。 Experience Manager会检查并强制用户的访问权限（即确定允许用户访问的资源）。
 
 有关更多详细信息，请参阅[单点登录](/help/sites-deploying/single-sign-on.md)。
 
-### 资源映射 {#resource-mapping}
+### 资产映射 {#resource-mapping}
 
 资源映射用于为AEM定义重定向、虚URL和虚拟主机。
 
@@ -154,7 +154,7 @@ AEM的所有元素(例如，存储库和Dispatcher)都可以安装在IPv4和IPv6
 
 复制代理在AEM中占有重要地位，因为其机制可用于：
 
-* [Publish（激活）](/help/sites-authoring/publishing-pages.md)内容从创作环境到发布环境。
+* [将内容从作者发布（激活）](/help/sites-authoring/publishing-pages.md)到发布环境。
 * 明确刷新Dispatcher缓存中的内容。
 * 从发布环境将用户输入（例如，表单输入）返回到创作环境（在创作环境的控制下）。
 
@@ -180,11 +180,11 @@ LDAP身份验证在存储库级别进行，因此它直接由存储库处理。 
 
 Dispatcher是Adobe Experience Manager用于缓存和/或负载平衡的工具。 它可以与企业级Web服务器一起使用。
 
-有关完整的详细信息，请参阅[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)，特别是[配置Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)以了解更多配置详细信息。
+有关完整的详细信息，请参阅[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)，特别是[配置Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)以了解更多配置详细信息。
 
-### 配置AEMLiveCycle连接器 {#configuring-aem-livecycle-connector}
+### 配置AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-随着AEM Doc Services和AEM Doc Security的发布，AEM现在能够调用LiveCycle文档服务来呈现XFA表单、将文档转换为PDF以及策略保护文档。 有关详细信息，请参阅[AEMLiveCycle连接器](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html)。
+随着AEM Doc Services和AEM Doc Security的发布，AEM现在能够调用LiveCycle文档服务来渲染XFA表单、将文档转换为PDF以及策略保护文档。
 
 ### 作业卸载和拓扑管理 {#job-offloading-and-topology-administration}
 
@@ -202,7 +202,7 @@ Dispatcher是Adobe Experience Manager用于缓存和/或负载平衡的工具。
 
 ### 配置性能 {#configuring-for-performance}
 
-[性能](/help/sites-deploying/configuring-performance.md)是您项目的关键。 可以配置AEM的某些方面（和/或底层存储库）以优化性能。
+[性能](/help/sites-deploying/configuring-performance.md)是您项目的关键。 可以配置AEM的某些方面（和/或底层存储库）来优化性能。
 
 有关详细信息，请参阅[配置性能](/help/sites-deploying/configuring-performance.md#configuring-for-performance)。
 
@@ -230,7 +230,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 ### AEM Portals和Portlet {#aem-portals-and-portlets}
 
-门户是一种Web应用程序，它提供个性化、单点登录、来自不同来源的内容集成，并承载信息系统的表示层。 利用portlet组件，还可以在页面上嵌入portlet。 要访问CQ5 WCM提供的内容，可以为门户服务器安装CQ5 Portal Director Portlet。 为此，您可以安装、配置Portlet并将其添加到门户页面。
+门户是一种Web应用程序，它提供个性化、单点登录、来自不同来源的内容集成，并承载信息系统的表示层。 利用portlet组件，还可以在页面上嵌入portlet。 要访问CQ5 WCM提供的内容，可以为Portal Server安装CQ5 Portal Director Portlet。 为此，您可以安装、配置Portlet并将其添加到门户页面。
 
 有关详细信息，请参阅[门户和Portlet](/help/sites-administering/aem-as-portal.md)。
 
@@ -248,7 +248,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 要避免此类例外，请执行以下操作：
 
-1. 检查AEM进程正在使用多少个打开的文件。
+1. 检查您的AEM流程正在使用多少个打开的文件。
 
    此检查取决于实例运行的平台。 可以使用诸如lsof (UNIX®)或Process Explorer (Windows)之类的实用程序。
 
@@ -265,7 +265,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 ### 配置富文本编辑器 {#configuring-the-rich-text-editor}
 
-**富文本编辑器** (**RTE**)为作者提供了范围广泛的[功能](/help/sites-authoring/rich-text-editor.md)，用于编辑其文本内容；为作者提供了图标、选择框和菜单，用于获取WYSIWYG体验。
+**富文本编辑器** (**RTE**)为作者提供了范围广泛的[功能](/help/sites-authoring/rich-text-editor.md)，用于编辑其文本内容；为作者提供了图标、选择框和菜单，以获取WYSIWYG体验。
 
 有关详细信息，请参阅[配置富文本编辑器](/help/sites-administering/rich-text-editor.md)。
 

@@ -9,9 +9,9 @@ exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 以下是David Nuescheler发表的意见和评论。
 
-David是Day Software AG的联合创始人兼首席技术官，该公司是全球内容管理和内容基础架构软件的领先提供商，于2010年被Adobe收购。 David现在是Adobe企业技术部副总裁，还领导内容管理的技术标准Java™ Content Repository (JCR)应用程序编程接口(API)JSR-170的开发。
+David是Day Software AG的联合创始人兼首席技术官，后者是全球内容管理和内容基础架构软件的领先提供商，于2010年被Adobe收购。 David现在是Adobe的企业技术副总裁，还领导着内容管理的技术标准JSR-170(Java™内容存储库(JCR)应用程序编程接口(API))的开发。
 
 还可以在[https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel](https://cwiki.apache.org/confluence/display/jackrabbit/DavidsModel)上查看更多更新。
 
@@ -73,8 +73,6 @@ David是Day Software AG的联合创始人兼首席技术官，该公司是全球
 >[!CAUTION]
 >
 >内容存储库的结构方式也会影响性能。 为获得最佳性能，附加到内容存储库中单个节点的子节点数不应超过1,000。
->
->请参阅[CRX可以处理多少数据？](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html)
 
 #### 示例 {#example-2}
 
@@ -175,7 +173,7 @@ JCR引入了工作区的抽象概念，使得许多开发人员不知道如何�
 
 如果内容模型泄露的内容甚至远程闻起来像文件或文件夹，我尝试使用（或扩展）`nt:file`、`nt:folder`和`nt:resource`。
 
-根据我的经验，许多通用应用程序允许隐式与nt：folder和nt：files进行交互，并且如果它们富含其他元信息，则知道如何处理和显示这些事件。 例如，与JCR之上的文件服务器实现(如CIF或WebDAV)的直接交互变为隐式。
+根据我的经验，许多通用应用程序允许隐式与nt：folder和nt：files进行交互，并且如果它们富含其他元信息，则知道如何处理和显示这些事件。 例如，与位于JCR之上的文件服务器实施（如CIFS或WebDAV）的直接交互变为隐式交互。
 
 我认为根据经验，可以使用以下内容：如果必须存储文件名和mime类型，则`nt:file`/`nt:resource`是很好的匹配。 如果您可以有多个“文件”，则nt：folder是存储这些文件的理想位置。
 

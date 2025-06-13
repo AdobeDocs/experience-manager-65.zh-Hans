@@ -10,9 +10,9 @@ exl-id: 7ff92872-697c-4e66-b654-15314a8cb429
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '4843'
+source-wordcount: '4828'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 开始开发新组件时，您需要了解其结构和配置的基础知识。
 
-此过程包括阅读相关理论并查看标准AEM实例中的各种组件实现。 尽管AEM已转移到新的标准、现代、触屏优化UI，但它继续支持经典UI，这个事实使得后一种方法略微复杂化。
+此过程包括阅读相关理论，并查看标准AEM实例中的各种组件实现。 尽管AEM已转移到新的标准、现代、触屏优化UI，但它继续支持经典UI，这个事实使得后一种方法略微复杂化。
 
 ## 概述 {#overview}
 
@@ -35,7 +35,7 @@ ht-degree: 0%
    * 明确的规范有助于开发、测试和移交的所有阶段。 详细信息可能会随着时间的推移而更改，但规范可以更新（尽管更改也应记录在案）。
 * 您是需要从头开始创建组件，还是可以从现有组件继承基础知识？
    * 不需要重新发明轮子。
-   * AEM提供了几种机制，可让您从其他组件定义继承和扩展详细信息，包括覆盖、叠加和[Sling资源合并器](/help/sites-developing/sling-resource-merger.md)。
+   * AEM提供了多种机制，可让您从其他组件定义继承和扩展详细信息，包括覆盖、叠加和[Sling资源合并器](/help/sites-developing/sling-resource-merger.md)。
 * 您的组件是否需要逻辑才能选择或处理内容？
    * 逻辑应该与用户界面层分开。 HTL旨在帮助确保做到这一点。
 * 您的组件是否需要CSS格式？
@@ -52,7 +52,7 @@ ht-degree: 0%
 * **经典UI**
 基于ExtJS技术的用户界面，AEM 6.4已弃用该技术。
 
-有关更多详细信息，请参阅[面向客户的UI界面Recommendations](/help/sites-deploying/ui-recommendations.md)。
+有关更多详细信息，请参阅[客户的UI界面建议](/help/sites-deploying/ui-recommendations.md)。
 
 可以实施组件来支持触屏UI和/或经典UI。 在查看标准实例时，您还会看到最初为经典UI或触屏UI或两者设计的现成组件。
 
@@ -66,15 +66,15 @@ ht-degree: 0%
 
 Adobe建议将负责标记和呈现的代码与控制用于选择组件内容的逻辑的代码分开。
 
-[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)支持此理念，这是一种模板化语言，旨在确保使用真正的编程语言来定义基础业务逻辑。 此（可选）逻辑可通过特定命令从HTL调用。 此机制会突出显示为给定视图调用的代码，如有必要，还允许为同一组件的不同视图使用特定逻辑。
+[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)支持此理念，这是一种模板化语言，旨在确保使用真正的编程语言来定义基础业务逻辑。 此（可选）逻辑可通过特定命令从HTL调用。 此机制会突出显示为给定视图调用的代码，如有必要，还允许为同一组件的不同视图使用特定逻辑。
 
 ### HTL与JSP {#htl-vs-jsp}
 
-HTL是AEM 6.0中引入的一种HTML模板语言。
+HTL是随AEM 6.0引入的HTML模板语言。
 
-关于在开发您自己的组件时是使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)还是JSP (Java™ Server Pages)的讨论应该简单明了，因为HTL现在是推荐的AEM脚本语言。
+由于在开发您自己的组件时应该使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)还是JSP (Java™ Server Pages)，因此对于HTL的讨论应该非常直接，因为HTL现在是AEM推荐的脚本语言。
 
-HTL和JSP都可用于为经典用户界面和触屏优化UI开发组件。 尽管可能会倾向于认为HTL仅适用于经典UI的触屏UI和JSP，但这是一个误解，并且更多是由于时间的原因。 触屏优化UI和HTL大约在同一时期内合并到了AEM中。 由于HTL现在是推荐语言，因此它被用于新组件，这些组件倾向于用于触屏优化UI。
+HTL和JSP都可用于为经典用户界面和触屏优化UI开发组件。 尽管可能会倾向于认为HTL仅适用于经典UI的触屏UI和JSP，但这是一个误解，并且更多是由于时间的原因。 大约在同一时期，触屏优化UI和HTL合并到了AEM中。 由于HTL现在是推荐语言，因此它被用于新组件，这些组件倾向于用于触屏优化UI。
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ HTL和JSP都可用于为经典用户界面和触屏优化UI开发组件。 尽�
 
 * [正在开发组件](/help/sites-developing/developing-components-samples.md)（侧重于支持触摸的UI）
 
-### 将组件移动到Publish实例 {#moving-components-to-the-publish-instance}
+### 将组件移动到发布实例 {#moving-components-to-the-publish-instance}
 
 呈现内容的组件必须部署在与内容相同的AEM实例上。 因此，必须在发布实例上部署所有用于在创作实例上创作和渲染页面的组件。 部署后，组件可用于呈现激活的页面。
 
@@ -191,7 +191,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
 
    * `cq:editConfig (cq:EditConfig)` — 定义组件的编辑属性，并使组件显示在组件浏览器或Sidekick中。
 
-     注意：如果组件有对话框，它将自动显示在组件浏览器或Sidekick中，即使cq：editConfig不存在也是如此。
+     注意：如果组件有对话框，它会自动显示在组件浏览器或Sidekick中，即使cq：editConfig不存在也是如此。
 
    * `cq:childEditConfig (cq:EditConfig)` — 控制未定义自身`cq:editConfig`的子组件的作者UI方面。
    * 触屏优化UI：
@@ -314,7 +314,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
   <tr>
    <td><code>cq:cellName</code></td>
    <td><code>String</code></td>
-   <td>如果设置，此属性将被视为单元格ID。 有关详细信息，请参阅知识库文章<a href="https://helpx.adobe.com/experience-manager/kb/DesigneCellId.html">如何生成设计单元ID</a>。<br /> </td>
+   <td>如果设置，此属性将被视为单元格ID。<br /> </td>
   </tr>
   <tr>
    <td><code>cq:childEditConfig</code></td>
@@ -344,7 +344,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>从组件浏览器或Sidekick添加组件时要用作内容模板的节点的路径。 这必须是绝对路径，而不是相对于组件节点的路径。<br />除非您希望重复使用在其他位置已提供的内容，否则不是必需的，<code>cq:template</code>就足够了（请参阅下文）。</td>
+   <td>从组件浏览器或Sidekick添加组件时用作内容模板的节点的路径。 这必须是绝对路径，而不是相对于组件节点的路径。<br />除非您希望重复使用在其他位置已提供的内容，否则不是必需的，<code>cq:template</code>就足够了（请参阅下文）。</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -384,7 +384,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
   <tr>
    <td><code>thumbnail.png</code></td>
    <td><code>nt:file</code></td>
-   <td>将组件从Sidekick拖动到适当位置时显示的可选缩略图。<br /> </td>
+   <td>将组件从Sidekick拖放到适当位置时显示的可选缩略图。<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -415,7 +415,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
 * 经典UI：
    * `dialog` (`cq:Dialog`) — 定义用于编辑此组件内容的对话框（特定于经典UI）
    * `design_dialog` (`cq:Dialog`) — 指定此组件的设计编辑选项
-   * `icon.png` — 要用作Sidekick中组件的图标的图形文件
+   * `icon.png` — 在Sidekick中用作组件图标的图形文件
    * `thumbnail.png` — 从Sidekick拖动组件时用作组件缩略图的图形文件
 
 ### 对话框 {#dialogs}
@@ -599,13 +599,13 @@ AEM中的组件遵循三个不同的层次结构：
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 例如，要查找`cq:editConfig`的子节点，可以搜索类型为`cq:DropTargetConfig`的`cq:dropTargets`；可以在中使用查询工具&#x200B;**CRXDE Lite**&#x200B;并使用以下XPath查询字符串进行搜索：
+* 例如，要查找`cq:editConfig`的子节点，可以搜索`cq:DropTargetConfig`类型的`cq:dropTargets`；可以在CRXDE Lite**中使用查询工具**并使用以下XPath查询字符串进行搜索：
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
 ### 组件占位符 {#component-placeholders}
 
-组件必须始终呈现对作者可见的一些HTML，即使组件没有内容也是如此。 否则，它可能会从编辑器的界面中消失，从技术上讲，它会在页面上和编辑器中呈现但不可见。 在这种情况下，作者无法选择空组件并与之交互。
+组件必须始终渲染某些对作者可见的HTML，即使组件没有内容也是如此。 否则，它可能会从编辑器的界面中消失，从技术上讲，它会在页面上和编辑器中呈现但不可见。 在这种情况下，作者无法选择空组件并与之交互。
 
 因此，组件应呈现占位符，只要它们在页面编辑器中呈现页面时（当WCM模式为`edit`或`preview`时）不呈现任何可见输出。
 占位符的典型HTML标记如下：
@@ -623,7 +623,7 @@ AEM中的组件遵循三个不同的层次结构：
 
 在上一个示例中，`isEmpty`是一个变量，仅当组件没有内容并且作者不可见时才会为真。
 
-为避免重复，Adobe建议组件的实施者对这些占位符使用HTL模板，[类似于核心组件提供的占位符。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+为避免重复，Adobe建议组件的实施者为这些占位符使用HTL模板，[类似于核心组件提供的占位符。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
 
 然后，通过下面的HTL行完成上一个链接中的模板使用：
 

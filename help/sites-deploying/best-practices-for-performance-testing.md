@@ -9,9 +9,9 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1767'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 性能测试是任何AEM部署的重要组成部分。 根据客户要求，可以对发布实例、创作实例或两者执行性能测试。
 
-本文档概述了执行性能测试的总体策略和方法，以及Adobe为帮助该过程而提供的一些工具。 最后，从代码分析和系统配置的角度阅读AEM 6中可用于帮助进行性能调整的工具分析。
+本文档概述了执行性能测试的总体策略和方法，以及Adobe为帮助完成该过程而提供的一些工具。 最后，阅读对AEM 6中可用工具的分析，这些工具从代码分析和系统配置的角度帮助进行性能调整。
 
 ### 模拟现实 {#simulating-reality}
 
@@ -59,8 +59,6 @@ AEM中的许多性能度量（如查询响应时间）都可能会受系统上�
 * AEM提供了开箱即用的工具，用于快速查看有问题的查询、请求和错误消息。 有关详细信息，请参阅操作仪表板文档的[诊断工具](/help/sites-administering/operations-dashboard.md#diagnosis-tools)部分。
 * Apache提供了一个名为&#x200B;**JMeter**&#x200B;的产品，该产品可用于性能和负载测试以及功能行为。 它是一款开源软件，可以免费使用，但功能集比企业产品更小，学习曲线也更陡峭。 可在Apache网站上找到JMeter，网址为[https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner**&#x200B;是企业级负载测试产品。 提供了免费的评估版。 有关详细信息，请访问[https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-
 * 也可以使用[Vercara](https://vercara.com/website-performance-management)等网站负载测试工具。
 * 测试移动或响应式网站时，必须使用一组单独的工具。 它们通过调节网络带宽来工作，模拟速度较慢的移动连接，如3G或EDGE。 使用范围更广的工具包括：
 
@@ -75,7 +73,7 @@ AEM中的许多性能度量（如查询响应时间）都可能会受系统上�
 
 触屏UI中的&#x200B;**开发人员模式**
 
-AEM 6触控UI中的一项新增功能是开发人员模式。 就像作者可以在编辑和预览模式之间切换一样，开发人员也可以在作者UI中切换到开发人员模式。 这样，您就可以查看页面上每个组件的渲染时间，并查看任何错误的栈栈跟踪。 有关开发人员模式的详细信息，请参阅此[CQ Gems演示](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=zh-Hans)。
+AEM 6触控UI中的一项新增功能是开发人员模式。 就像作者可以在编辑和预览模式之间切换一样，开发人员也可以在作者UI中切换到开发人员模式。 这样，您就可以查看页面上每个组件的渲染时间，并查看任何错误的栈栈跟踪。 有关开发人员模式的详细信息，请参阅此[CQ Gems演示](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)。
 
 **使用rlog.jar读取请求日志**
 
@@ -120,7 +118,7 @@ Google的PageSpeed工具提供了网站分析功能，用于确保对页面性�
 1. 将其放在/crx-quickstart/install文件夹下。
 
 >[!NOTE]
->请参阅[AEM 6.x | 性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=zh-Hans)
+>请参阅[AEM 6.x | 性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 默认设置为10,000，但大多数部署都必须将其增加到20,000或50,000。
 
@@ -148,11 +146,11 @@ Google的PageSpeed工具提供了网站分析功能，用于确保对页面性�
 * 观察错误日志中是否有错误或警告。 有关详细信息，请参阅[日志记录](/help/sites-deploying/configure-logging.md)。
 * 监视系统硬件资源，如内存和CPU利用率、磁盘I/O或网络I/O。这些资源通常是造成性能瓶颈的原因。
 * 优化页面的架构以及如何寻址页面，以最大限度地减少URL参数的使用，从而尽可能多地允许缓存。
-* 遵循[性能优化](/help/sites-deploying/configuring-performance.md)和[性能优化提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=zh-Hans)文档。
+* 遵循[性能优化](/help/sites-deploying/configuring-performance.md)和[性能优化提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)文档。
 
 * 如果在创作实例上编辑某些页面或组件时出现问题，请使用TouchUI开发人员模式检查有问题的页面。 这样做可划分页面上的每个内容区域及其加载时间。
 * 缩小网站上的所有JS和CSS。 查看此[博客帖子](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)。
 * 从组件中消除嵌入的CSS和JS。 它们应当包含在客户端库中并对其进行缩小，以最大限度地减少呈现页面所需的请求数。
 * 要检查服务器请求并查看哪些请求花费的时间最长，请使用Chrome的“网络”选项卡等浏览器工具。
 
-一旦识别出问题区域，就可以检查应用程序代码以优化性能。 任何无法正常执行的现成AEM功能都可以通过Adobe支持来解决。
+一旦识别出问题区域，就可以检查应用程序代码以优化性能。 任何开箱即用的AEM功能无法正确执行，都可以通过Adobe支持得到解决。

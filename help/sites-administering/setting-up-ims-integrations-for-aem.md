@@ -4,10 +4,10 @@ description: 了解如何为AEM设置IMS集成
 feature: Security
 role: Admin
 exl-id: 3c6dbb7e-847f-407b-ac9c-4676dba671a5
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 63%
+ht-degree: 62%
 
 ---
 
@@ -50,11 +50,11 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
 * 创建新的 OAuth 凭据：
 
-   * [OAuth 服务器到服务器凭据实施指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/)
+   * [OAuth 服务器到服务器凭据实施指南](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation)
 
 * 将现有的 JWT 凭据迁移到 OAuth 凭据：
 
-   * [从服务帐户 (JWT) 凭据迁移到 OAuth 服务器到服务器凭据](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/)
+   * [从服务帐户 (JWT) 凭据迁移到 OAuth 服务器到服务器凭据](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration)
 
 例如：
 
@@ -68,7 +68,7 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
 1. 选择&#x200B;**创建**。
 
-1. 根据 [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation/) 中的详细信息完成配置。例如：
+1. 根据 [Developer Console](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/implementation) 中的详细信息完成配置。例如：
 
    ![创建 OAuth 配置](assets/ims-create-oauth-configuration.png)
 
@@ -102,5 +102,5 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
    ![填写 OAuth 详细信息](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. 使用&#x200B;**保存并关闭**&#x200B;来保存您的更新。
+1. 使用&#x200B;**保存并关闭**来保存您的更新。
 返回控制台时，**JWT凭据（已弃用）**&#x200B;警告消失。

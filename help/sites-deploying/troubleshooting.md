@@ -1,6 +1,6 @@
 ---
 title: AEM安装问题疑难解答
-description: 本文介绍了在使用AEM时可能会遇到的一些安装问题。
+description: 本文介绍了在AEM中可能会遇到的一些安装问题。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,16 +9,16 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
 
 # AEM安装问题疑难解答{#troubleshooting}
 
-此部分包含有关有助于进行故障排除的日志的详细信息，还包含有关您在AEM中可能遇到的某些问题的信息。
+此部分包含有关可帮助您进行故障排除的日志的详细信息，还包含有关您在AEM中可能遇到的某些问题的信息。
 
 ## 作者性能疑难解答 {#troubleshoot-author-performance}
 
@@ -34,11 +34,11 @@ ht-degree: 0%
 
 ## 配置日志文件和审核日志 {#configuring-log-files-and-audit-logs}
 
-AEM会记录您可能想要配置的详细日志，以解决安装问题。 有关信息，请参阅[使用审核记录和日志文件](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)部分。
+AEM会记录您可能需要配置的详细日志，以解决安装问题。 有关信息，请参阅[使用审核记录和日志文件](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)部分。
 
 ## 使用Verbose选项 {#using-the-verbose-option}
 
-启动AEM WCM时，可以将 — v (verbose)选项添加到命令行中，如java -jar cq-wcm-quickstart-&lt;version>.jar -v中所示。
+启动AEM WCM时，您可以将 — v (verbose)选项添加到命令行中，如java -jar cq-wcm-quickstart-&lt;version>.jar -v中所示。
 
 详细选项在控制台上显示一些快速入门日志输出，因此可用于进行故障排除。
 
@@ -67,14 +67,14 @@ AEM会记录您可能想要配置的详细日志，以解决安装问题。 有�
 
 >[!NOTE]
 >
->另请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hans)。
+>另请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)。
 
 
 CRX本身内存占用较少。 如果在CRX中运行的应用程序有更大的内存需求或请求内存密集型操作（例如，大型事务），则运行CRX的JVM实例必须使用适当的内存设置启动。
 
 使用Java™命令选项定义JVM的内存设置（例如，java -Xmx512m -jar crx&amp;amp；ast；.jar将heapsize设置为512 MB）。
 
-从命令行启动AEM WCM时指定内存设置选项。 还可以修改用于管理AEM WCM启动的AEM WCM启动/停止脚本或自定义脚本，以定义所需的内存设置。
+从命令行启动AEM WCM时，请指定内存设置选项。 用于管理AEM WCM启动的AEM WCM启动/停止脚本或自定义脚本也可以修改，以定义所需的内存设置。
 
 如果您已将栈大小定义为512 MB，则可能需要通过创建栈转储来进一步分析内存问题。
 
@@ -101,11 +101,11 @@ java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;amp；ast；.jar
 
 在某些情况下，即使存储库本身成功运行，AEM WCM欢迎屏幕也不会自动显示。 此问题可能取决于操作系统设置、浏览器配置或类似因素。
 
-常见症状是AEM WCM快速启动窗口显示“AEM WCM正在启动，正在等待服务器启动”.... 如果该消息显示的时间相对较长，请使用默认4502端口或实例正在运行的端口http://localhost:4502/手动将AEM WCM URL输入浏览器窗口。
+常见症状是AEM WCM快速启动窗口显示“AEM WCM正在启动，等待服务器启动”.... 如果该消息显示的时间相对较长，请使用默认的4502端口或实例正在运行的端口http://localhost:4502/ ，手动将AEM WCM URL输入浏览器窗口。
 
 此外，日志可能会揭示浏览器未启动的原因。
 
-有时， AEM WCM快速入门窗口会显示消息“AEM WCM在http://localhost:port/上运行”，并且浏览器不会自动启动。 在这种情况下，请单击AEM WCM快速入门窗口中的URL（它是一个超链接），或在浏览器中手动输入该URL。
+有时，AEM WCM快速入门窗口会显示消息“在http://localhost:port/上运行的AEM WCM”，并且浏览器不会自动启动。 在这种情况下，请单击AEM WCM快速入门窗口中的URL（它是一个超链接），或在浏览器中手动输入该URL。
 
 如果其他所有操作失败，请检查日志以了解发生了什么情况。
 
@@ -144,7 +144,7 @@ java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;amp；ast；.jar
 
 ## 卸载Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
-由于AEM安装在单个目录中，因此不需要卸载实用程序。 虽然卸载AEM的方法取决于要实现的目标以及使用的永久存储，但卸载过程可能非常简单，如删除整个安装目录。
+由于AEM安装在单个目录中，因此无需卸载实用程序。 虽然卸载AEM的方法取决于要实现的目标以及使用何种永久存储，但卸载过程可能只包括删除整个安装目录。
 
 如果永久存储嵌入在安装目录中（例如，在默认的TarPM安装中），则删除文件夹也会删除数据。
 
@@ -153,8 +153,3 @@ java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;amp；ast；.jar
 >Adobe建议您在删除AEM之前备份存储库。 如果删除整个&lt;cq-installation-directory>，则也会删除存储库。 要在删除之前保留存储库数据，请在删除其他文件夹之前将&lt;cq-installation-directory>/crx-quickstart/repository文件夹移动或复制到其他位置。
 
 如果您安装的AEM使用外部存储（例如，数据库服务器），则删除文件夹不会自动删除数据，但会删除存储配置，这会使恢复JCR内容变得困难。
-
-### JSP文件未在JBoss上编译® {#jsp-files-are-not-compiled-on-jboss}
-
-如果安装或更新要在JBoss®上Experience Manager的JSP文件，但未编译相应的servlet，请确保正确配置了JBoss® JSP编译器。 有关信息，请参见
-JBoss®[&#128279;](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html)文章中的JSP编译问题。

@@ -1,6 +1,6 @@
 ---
 title: 自定义控制台
-description: AEM提供了多种机制，使您能够自定义创作实例的控制台
+description: AEM提供了多种机制，让您能够自定义创作实例的控制台
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -10,7 +10,7 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 22%
@@ -64,7 +64,7 @@ Clientlibs允许您扩展默认实施以实现新功能，同时重用标准函�
 
 >[!NOTE]
 >
->有关更多提示和工具，请参阅知识库文章[AEM TouchUI问题疑难解答](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)。
+>有关更多提示和工具，请参阅知识库文章[AEM TouchUI问题疑难解答](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)。
 
 ## 自定义控制台的默认视图 {#customizing-the-default-view-for-a-console}
 
@@ -94,7 +94,7 @@ Clientlibs允许您扩展默认实施以实现新功能，同时重用标准函�
 
 ### 将新操作添加到工具栏 {#add-new-action-to-the-toolbar}
 
-1. 您可以构建自己的组件，并为自定义操作包含相应的客户端库。 例如，在以下位置执行&#x200B;**提升为Twitter**&#x200B;操作：
+1. 您可以构建自己的组件，并为自定义操作包含相应的客户端库。 例如，在以下位置执行&#x200B;**提升至Twitter**&#x200B;操作：
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -151,7 +151,6 @@ Clientlibs允许您扩展默认实施以实现新功能，同时重用标准函�
 1. 可选：
 
    * 如果要插入其他数据，您需要使用编写[PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)
-
      `pageInfoProviderType`属性。
 
    例如，请参阅下面的附加类/捆绑包（来自GitHub）。

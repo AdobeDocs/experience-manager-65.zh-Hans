@@ -9,10 +9,10 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 2d6caa10e8f1cf3d0811280e31c2f40bceac20ee
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '6470'
-ht-degree: 12%
+source-wordcount: '6467'
+ht-degree: 13%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 12%
 >
 >有关故障排除和修复性能问题的详细信息，另请参阅[性能树](/help/sites-deploying/performance-tree.md)。
 >
->此外，您还可以查看有关[性能优化提示](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-17466)的知识库文章。
+>此外，您还可以查看有关[性能优化提示](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)的知识库文章。
 
 关键问题是网站响应访客请求所用的时间。 尽管该值因每个请求而异，但可以定义平均目标值。 一旦证实该值既可实现，又可维护，就可使用它来监控网站的性能，并指示潜在问题的发展。
 
@@ -41,7 +41,7 @@ ht-degree: 12%
 >[!NOTE]
 >
 >* 在配置性能优化后，请按照[Touch Day](/help/sites-developing/tough-day.md)中的过程测试重负载下的环境。
->* 另请参阅[性能优化提示。](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-17466)
+>* 另请参阅[性能优化提示。](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## 性能优化方法 {#performance-optimization-methodology}
 
@@ -136,7 +136,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 这里有两个因素会影响性能：
 
-* CPU — 多内核支持在转码时更流畅地工作
+* CPU — 多核可在转码时提供更流畅的工作
 * 硬盘 — 并行RAID磁盘可实现相同功能
 
 要提高性能，请考虑以下事项：
@@ -163,7 +163,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 一个基本出发点是对系统正常工作的情况有良好的了解。 除非您知道您的环境在正确执行时“外观”和“行为”如何，否则在性能下降时很难找到问题。 花时间调查您的系统是否运行顺畅，并确保收集性能信息是一项持续的工作。 这样做可以为您提供在性能下降时进行比较的基础。
 
-下图说明了AEM内容请求可以采用的路径，以及可能影响性能的不同元素数量。
+下图说明了请求AEM内容可以采用的路径，以及可能影响性能的不同元素数量。
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -199,11 +199,11 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 ## 配置性能 {#configuring-for-performance}
 
-可以配置AEM的某些方面（和/或底层存储库）以优化性能。 以下是一些可能性和建议，在进行更改之前，您必须确定是否（或如何）使用所讨论的功能。
+可以配置AEM的某些方面（和/或底层存储库）来优化性能。 以下是一些可能性和建议，在进行更改之前，您必须确定是否（或如何）使用所讨论的功能。
 
 >[!NOTE]
 >
->请参阅[性能优化](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=zh-Hans)。
+>请参阅[性能优化](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)。
 
 ### 搜索索引 {#search-indexing}
 
@@ -216,14 +216,14 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 ### 并发工作流处理 {#concurrent-workflow-processing}
 
-要提高性能，请限制同时运行的工作流进程的数量。 默认情况下，工作流引擎并行处理的工作流数量与Java™ VM可用的处理器数量相同。 当工作流步骤需要大量处理资源（RAM或CPU）时，并行运行多个这些工作流可能会对可用的服务器资源提出很高的要求。
+要提高性能，请限制同时运行的工作流进程的数量。 默认情况下，工作流引擎并行处理的工作流数量与Java™ VM可用的处理器数量相同。 当工作流步骤需要大量处理资源(RAM或CPU)时，并行运行多个这些工作流可能会对可用的服务器资源提出很高的要求。
 
 例如，在上传图像（或一般的DAM资产）时，工作流会自动将图像导入DAM。 图像通常具有高分辨率，可以轻松占用数百MB的栈进行处理。 并行处理这些图像会给内存子系统和垃圾收集器带来高负载。
 
 工作流引擎使用Apache Sling作业队列来处理和计划工作项处理。 默认情况下，已从Apache Sling作业队列配置服务工厂创建以下作业队列服务，用于处理工作流作业：
 
 * Granite工作流队列：大多数工作流步骤使用Granite工作流队列服务，例如处理DAM资产的步骤。
-* Granite工作流外部进程作业队列：此服务用于特殊外部工作流步骤，通常用于联系外部系统和轮询结果。 例如，“InDesign媒体提取流程”步骤作为外部流程实施。 工作流引擎使用外部队列处理轮询。 (请参阅[com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)。)
+* Granite工作流外部进程作业队列：此服务用于特殊外部工作流步骤，通常用于联系外部系统和轮询结果。 例如， InDesign媒体提取流程步骤作为外部流程实施。 工作流引擎使用外部队列处理轮询。 (请参阅[com.day.cq.workflow.exec.WorkflowExternalProcess](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html)。)
 
 配置这些服务以限制并发运行的工作流进程的最大数量。
 
@@ -233,13 +233,13 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 #### 存储库中的配置 {#configuration-in-the-repo}
 
-如果您使用sling：OsgiConfig节点[&#128279;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)配置服务，则必须找到现有服务的PID，例如：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台发现PID。
+如果您使用sling：OsgiConfig节点](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)配置服务[，则必须找到现有服务的PID，例如：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台发现PID。
 
 配置名为`queue.maxparallel`的属性。
 
 #### Web控制台中的配置 {#configuration-in-the-web-console}
 
-要使用Web控制台[&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)配置这些服务，请在Apache Sling作业队列配置服务工厂下找到现有配置项。
+要使用Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)配置这些服务[，请在Apache Sling作业队列配置服务工厂下找到现有配置项。
 
 配置名为Maximum Parallel Jobs的属性。
 
@@ -290,13 +290,13 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 * 将作者的“进行中的工作”与发布上的“最终工作”分隔开
 * 将内部作者用户与外部访客/发布用户分隔开（例如，代理、新闻代表、客户和学生）。
 
-## 质量保证的最佳实践 {#best-practices-for-quality-assurance}
+## Assurance质量最佳实践 {#best-practices-for-quality-assurance}
 
 性能对于您的发布环境至关重要。 因此，在实施项目时，您必须仔细规划和分析为发布环境进行的性能测试。
 
 本节旨在对定义测试概念时遇到的一些问题进行标准化概述，这些测试概念专门用于&#x200B;*publish*&#x200B;环境中的性能测试。 此信息主要与QA工程师、项目经理和系统管理员有关。
 
-下面介绍在&#x200B;*Publish*&#x200B;环境中对AEM应用程序进行性能测试的标准化方法。 该性能测试包括以下五个阶段：
+下面介绍在&#x200B;*Publish*&#x200B;环境中对AEM应用程序进行性能测试的一种标准化方法。 该性能测试包括以下五个阶段：
 
 * [知识验证](#verification-of-knowledge)
 * [范围的定义](#scope-definition)
@@ -383,7 +383,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 在这两种情况下，当预定义数量的用户使用系统时，您都可以定义每秒的预期事务处理数。
 
-| 组件 | 测试类型 | 不适用。 用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
+| 组件 | 测试类型 | 不行。用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
 |---|---|---|---|---|---|
 | 主页单个用户 | 平均 | 1 | 1 |  |  |
 |   | 峰值 | 1 | 3 |  |  |
@@ -394,7 +394,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 组合测试组件可以更密切地反映应用程序行为。 必须再次测试平均值和峰值条件。
 
-| 场景 | 组件 | 不适用。 用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
+| 场景 | 组件 | 不行。用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
 |---|---|---|---|---|---|
 | 混合平均值 | 主页 | 10 | 1 |  |  |
 |   | 搜索 | 10 | 1 |  |  |
@@ -411,7 +411,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 在您网站推出后的前几天，您可能会更加感兴趣。 此方案甚至大于您正在测试的峰值。 Adobe建议您测试上线场景，确保系统能够适应这种情况。
 
-| 场景 | 测试类型 | 不适用。 用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
+| 场景 | 测试类型 | 不行。用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
 |---|---|---|---|---|---|
 | 启用峰值 | 主页 | 200 | 20 |  |  |
 |   | 搜索 | 100 | 10 |  |  |
@@ -428,7 +428,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 在设计这些测试时，应该记住，并非所有情景都会定期发生。 但是，它们对整个系统的影响很重要。
 
-| 错误方案 | 错误类型 | 不适用。 用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
+| 错误方案 | 错误类型 | 不行。用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
 |---|---|---|---|---|---|
 | 搜索组件过载 | 搜索全局通配符（星号） | 10 | 1 |  | 只搜索&amp;amp；ast；&amp;amp；ast；&amp;amp；ast；。 |
 |   | 停用词 | 20 | 2 |  | 正在搜索停用词。 |
@@ -439,7 +439,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 只有在系统连续运行（小时或天）后，才会遇到某些问题。 持久性测试用于测试所需时间段内的恒定平均负载。 然后可以分析任何性能降级。
 
-| 场景 | 测试类型 | 不适用。 用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
+| 场景 | 测试类型 | 不行。用户 | Tx/秒（预期） | Tx/秒（已测试） | 描述 |
 |---|---|---|---|---|---|
 | 耐力测试（72小时） | 主页 | 10 | 1 |  |  |
 |   | 搜索 | 10 | 1 |  |  |
@@ -459,7 +459,6 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 我们提供了一系列工具，帮助您进行负载生成、性能监控和结果分析。 其中一些工具包括：
 
 * [JMeter](https://jmeter.apache.org/)
-* [加载运行程序](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 * [红外线](https://www.infraredsoftware.com/)
 * [Java™交互式配置文件](https://jiprof.sourceforge.net/)
 
@@ -478,7 +477,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 ## 使用Dispatcher时优化性能 {#optimizing-performance-when-using-the-dispatcher}
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)是Adobe的缓存和/或负载平衡工具。 使用Dispatcher时，请考虑优化网站缓存性能。
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)是Adobe的缓存和/或负载平衡工具。 使用Dispatcher时，请考虑优化网站缓存性能。
 
 >[!NOTE]
 >
@@ -494,7 +493,7 @@ Dispatcher提供了多种内置机制，如果您的网站利用这些机制可�
 >
 >通常，许多缓存策略涉及选择完好的URL，并且不依赖此类额外数据。
 >
->使用Dispatcher版本4.1.11，您还可以缓存响应标头，请参阅[缓存HTTP响应标头](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#configuring-the-dispatcher-cache-cache)。
+>使用Dispatcher版本4.1.11，您还可以缓存响应标头，请参阅[缓存HTTP响应标头](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)。
 >
 
 ### 计算Dispatcher缓存比率 {#calculating-the-dispatcher-cache-ratio}
@@ -503,19 +502,19 @@ Dispatcher提供了多种内置机制，如果您的网站利用这些机制可�
 
 * 请求总数。 此信息在Apache `access.log`中可用。 有关更多详细信息，请参阅[Apache官方文档](https://httpd.apache.org/docs/2.4/logs.html#accesslog)。
 
-* Publish实例服务的请求数。 此信息在实例的`request.log`中可用。 有关详细信息，请参阅[解释request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log)和[查找日志文件](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files)。
+* 发布实例服务的请求数。 此信息在实例的`request.log`中可用。 有关详细信息，请参阅[解释request.log](/help/sites-deploying/monitoring-and-maintaining.md#interpreting-the-request-log)和[查找日志文件](/help/sites-deploying/monitoring-and-maintaining.md#finding-the-log-files)。
 
 计算缓存比的公式为：
 
-* (请求总数&#x200B;**减去** Publish上的请求数)**除以**&#x200B;再除以请求总数。
+* （请求总数&#x200B;**减去**&#x200B;发布上的请求数）**除以**&#x200B;再除以请求总数。
 
-例如，如果请求总数为129491，而Publish实例提供的请求数58959为，则缓存比率为： **(129491 - 58959)/129491= 54.5%**。
+例如，如果请求总数为129491，而发布实例提供的请求数58959为，则缓存比率为： **(129491 - 58959)/129491= 54.5%**。
 
 如果您没有一对一的发布者/Dispatcher配对，请将所有Dispatcher和发布者的请求一起添加以获取准确的测量。 另请参阅[建议的部署](/help/sites-deploying/recommended-deploys.md)。
 
 >[!NOTE]
 >
->为获得最佳性能，Adobe建议使用90%到95%的缓存率。
+>为获得最佳性能，Adobe建议将缓存比率为90%到95%。
 
 #### 使用一致的页面编码 {#using-consistent-page-encoding}
 
@@ -530,7 +529,7 @@ Dispatcher提供了多种内置机制，如果您的网站利用这些机制可�
 
 #### 消除 URL 参数 {#avoid-url-parameters}
 
-如果可能，请消除要缓存的页面的 URL 参数。例如，如果您有一个图片库，则绝不会缓存以下 URL（除非对 Dispatcher 进行[相应配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#configuring-the-dispatcher-cache-cache)）：
+如果可能，请消除要缓存的页面的 URL 参数。例如，如果您有一个图片库，则绝不会缓存以下 URL（除非对 Dispatcher 进行[相应配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)）：
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -603,22 +602,22 @@ www.myCompany.com/news/main.large.html
 * 相反，如果您有十个不同的开始页面可供选择，则可以缓存其中的每个页面，从而提高性能。
 
 >[!TIP]
->有关配置Dispatcher缓存的更多详细信息，请参阅[AEM Dispatcher缓存教程](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=zh-Hans)及其有关[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=zh-Hans#dispatcher-tips-and-tricks)的部分。
+>有关配置Dispatcher缓存的更多详细信息，请参阅[AEM Dispatcher缓存教程](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)及其有关[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)的部分。
 
 例如，如果将用户名放入标题栏中对每个页面进行个性化，则会影响性能。
 
 >[!TIP]
->有关缓存受保护内容的信息，请参阅Dispatcher指南中的[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans)。
+>有关缓存受保护内容的信息，请参阅Dispatcher指南中的[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-hans)。
 
 关于在单个页面上混合受限内容和公共内容，请考虑以下策略：在Dispatcher中使用服务器端包含，或者在浏览器中通过Ajax使用客户端包含。
 
 >[!TIP]
 >
->有关处理混合的公开和受限内容，请参阅[设置Sling动态包含。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html?lang=zh-Hans)
+>有关处理混合的公开和受限内容，请参阅[设置Sling动态包含。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### 粘性连接 {#sticky-connections}
 
-[粘性连接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans#the-benefits-of-load-balancing)可确保同一个用户的文档全部在同一服务器上撰写。如果用户在退出此文件夹不久后返回，则此连接仍保持粘性。要保存所有需要网站的粘性连接的文档，请定义一个文件夹。 尽量不要在该文件夹中放入其他文件。如果您使用个性化的页面和会话数据，此方案将影响负载平衡。
+[粘性连接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing)可确保同一个用户的文档全部在同一服务器上撰写。如果用户在退出此文件夹不久后返回，则此连接仍保持粘性。要保存所有需要网站的粘性连接的文档，请定义一个文件夹。 尽量不要在该文件夹中放入其他文件。如果您使用个性化的页面和会话数据，此方案将影响负载平衡。
 
 #### MIME 类型 {#mime-types}
 
@@ -643,7 +642,7 @@ www.myCompany.com/news/main.large.html
 
 ## 备份性能 {#backup-performance}
 
-本节介绍一系列用于评估AEM备份性能和备份活动对应用程序性能影响的基准。 AEM备份在系统运行时给系统带来很大的负载，Adobe会测量这种影响，以及尝试调节这些影响的备份延迟设置的影响。 目的是提供一些参考数据，说明备份在实际配置中的预期性能和生产数据量，并指导如何估计计划系统的备份时间。
+本节介绍一系列用于评估AEM备份性能和备份活动对应用程序性能影响的基准。 AEM备份在系统运行时给系统带来大量负载，Adobe会测量这种影响，以及尝试调节这些影响的备份延迟设置的影响。 目的是提供一些参考数据，说明备份在实际配置中的预期性能和生产数据量，并指导如何估计计划系统的备份时间。
 
 ### 参考环境 {#reference-environment}
 
@@ -681,7 +680,7 @@ AEM配置将存储库和数据存储放在同一逻辑卷上，以及操作系�
 * **空闲状态** — 在AEM上不使用其他活动执行备份。
 * **负载不足** — 在系统负载低于联机进程的80%时执行备份。 备份延迟各不相同，可查看对负载的影响。
 
-从AEM服务器日志中获取备份时间和结果备份的大小。 通常建议将备份安排在AEM空闲时（如午夜时）的关闭时间。 此方案代表了推荐的方法。
+备份时间和结果备份的大小可从AEM服务器日志中获取。 通常建议将备份安排在AEM空闲时（如午夜）的关闭时间。 此方案代表了推荐的方法。
 
 加载包括创建的页面、删除的页面、遍历和查询，其中大多数加载来自页面遍历和查询。 添加和删除太多页面会不断增加工作区的大小并阻止备份完成。 脚本使用的负载分布是75%的页面遍历、24%的查询和1%的页面创建（单级别不含嵌套子页面）。 空闲系统上的每秒平均事务峰值通过四个并发线程实现，该线程用于在负载下测试备份。
 
@@ -704,7 +703,7 @@ AEM配置将存储库和数据存储放在同一逻辑卷上，以及操作系�
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-此图说明了增量备份和完全备份都遵循简单的大小与时间模式，Adobe可以将其测量为吞吐量。 空闲实例上的备份时间相当一致，平均每秒0.61 MB，无论基准环境上的完整或增量备份如何。
+此图表说明了增量备份和完全备份都遵循简单的大小与时间模式，Adobe可以将其测量为吞吐量。 空闲实例上的备份时间相当一致，平均每秒0.61 MB，无论基准环境上的完整或增量备份如何。
 
 #### 备份延迟 {#backup-delay}
 
@@ -712,7 +711,7 @@ AEM配置将存储库和数据存储放在同一逻辑卷上，以及操作系�
 
 * 在常规应用程序负载的同时运行备份，会对常规负载的吞吐量产生负面影响。
 * 影响可能很小（仅为5%）或显着，导致吞吐量下降多达75%。 这很可能主要取决于应用程序。
-* 备份不会给CPU带来沉重的负载，因此，与I/O密集型工作负载相比，备份对CPU密集型生产工作负载的影响较小。
+* 备份在CPU上不是一项繁重的负载，因此，与I/O密集型工作负载相比，CPU密集型生产工作负载受备份影响较小。
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 

@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -32,17 +32,13 @@ ht-degree: 0%
 
 ## 全局日志记录 {#global-logging}
 
-[Apache Sling日志记录配置](/help/sites-deploying/osgi-configuration-settings.md)用于配置根日志程序。 这将定义用于登录AEM的全局设置：
+[Apache Sling日志记录配置](/help/sites-deploying/osgi-configuration-settings.md)用于配置根日志程序。 这会定义用于登录AEM的全局设置：
 
 * 日志记录级别
 * 中央日志文件的位置
 * 要保留的版本数
 * 版本轮换；最大大小或时间间隔
 * 写入日志消息时要使用的格式
-
->[!NOTE]
->
->此[知识库文章](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html)介绍如何轮换request.log和access.log文件。
 
 ## 适用于单个服务的记录器和写入程序 {#loggers-and-writers-for-individual-services}
 

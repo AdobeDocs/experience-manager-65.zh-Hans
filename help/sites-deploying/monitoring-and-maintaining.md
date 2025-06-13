@@ -1,6 +1,6 @@
 ---
-title: 监控和维护 Adobe Experience Manager 实例
-description: 了解如何监控和维护您的 Adobe Experience Manager 实例。
+title: 监控和维护Adobe Experience Manager实例
+description: 了解如何监控和维护Adobe Experience Manager实例。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -10,16 +10,16 @@ feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5792'
+source-wordcount: '5755'
 ht-degree: 0%
 
 ---
 
-# 监控和维护 Adobe Experience Manager 实例{#monitoring-and-maintaining-your-aem-instance}
+# 监控和维护Adobe Experience Manager实例{#monitoring-and-maintaining-your-aem-instance}
 
-部署AEM实例后，必须监视和维护其操作、性能和完整性。
+部署AEM实例后，必须监控和维护其操作、性能和完整性。
 
 这里的一个关键因素是，要识别潜在问题，您必须了解系统在正常条件下的外观和行为。 最好通过监视系统和收集随时间变化的信息来实现此功能。
 
@@ -69,12 +69,12 @@ ht-degree: 0%
 
 要完成此任务，请[备份整个存储库](#backing-up-your-repository)，然后：
 
-1. 停止 AEM。
+1. 停止AEM。
 1. 从您的文件系统备份整个`<cq-installation-dir>`。
 
 >[!CAUTION]
 >
->如果您运行的是第三方应用程序服务器，则其他文件夹可能位于不同的位置，并且也必须进行备份。 有关安装应用程序服务器的详细信息，请参阅[如何将AEM与应用程序服务器一起安装](/help/sites-deploying/application-server-install.md)。
+>如果您运行的是第三方应用程序服务器，则其他文件夹可能位于不同的位置，并且也必须进行备份。 有关安装应用服务器的信息，请参阅[如何将AEM与应用程序服务器一起安装](/help/sites-deploying/application-server-install.md)。
 
 >[!CAUTION]
 >
@@ -94,7 +94,7 @@ CRX文档的[备份和还原](/help/sites-administering/backup-and-restore.md)�
 
 **清除版本**&#x200B;工具用于清除存储库中节点或节点层次结构的版本。 其主要用途是通过删除节点的旧版本来帮助您减小存储库的大小。
 
-本节介绍与AEM版本控制功能相关的维护操作。 **清除版本**&#x200B;工具用于清除存储库中节点或节点层次结构的版本。 其主要目的是通过删除旧版本的节点来帮助您减小存储库的大小。
+本节介绍与AEM的版本控制功能相关的维护操作。 **清除版本**&#x200B;工具用于清除存储库中节点或节点层次结构的版本。 其主要用途是通过删除节点的旧版本来帮助您减小存储库的大小。
 
 ### 概述 {#overview}
 
@@ -184,7 +184,7 @@ CRX文档的[备份和还原](/help/sites-administering/backup-and-restore.md)�
 
 在下一个示例中：
 
-* **[!DNL Shirts]**&#x200B;版本被清除，因为其版本期限超过两天。
+* **[!DNL Shirts]**&#x200B;版本已清除，因为其版本期限大于两天。
 * 已清除&#x200B;**[!DNL Tonga Fashions!]**&#x200B;版本，因为其版本数大于5。
 
 ![global_version_screenshot](assets/global_version_screenshot.png)
@@ -207,11 +207,11 @@ AEM WCM会记录详细的日志。 打开包装并启动“快速入门”后，
 
 * `error.log`文件已根据模式`{original_filename}.yyyy-MM-dd`重命名。 例如，在2010年7月11日，当前日志文件被重命名为`error.log-2010-07-10`，然后创建新的`error.log`。
 
-* 以前的日志文件不会被删除，因此您有责任定期清理旧的日志文件以限制磁盘使用量。
+* 以前的日志文件不会被删除，因此您有责任定期清理旧日志文件，以限制磁盘的使用量。
 
 >[!NOTE]
 >
->如果升级 AEM 安装，AEM 不再使用的任何现有日志文件将保留在磁盘上。 您可以毫无风险地删除它们。 所有新的日志条目都写入新的日志文件中。
+>如果您升级AEM安装，则AEM不再使用的任何现有日志文件将保留在磁盘上。 您可以毫无风险地删除它们。 所有新的日志条目都写入新的日志文件中。
 
 ### 查找日志文件 {#finding-the-log-files}
 
@@ -228,13 +228,13 @@ AEM WCM会记录详细的日志。 打开包装并启动“快速入门”后，
    * `error.log`
 错误消息（严重程度不同）在此处注册。
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=zh-Hans)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 此日志仅在启用[!DNL Dynamic Media]时使用。 它提供用于分析ImageServer内部进程行为的统计和分析信息。
 
    * `request.log`
 每个访问请求都与响应一起注册。
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=zh-Hans)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 此日志仅在启用[!DNL Dynamic Media]时使用。 s7access日志记录通过`/is/image`和`/is/content`向[!DNL Dynamic Media]发出的每个请求。
 
    * `stderr.log`
@@ -253,7 +253,7 @@ AEM WCM会记录详细的日志。 打开包装并启动“快速入门”后，
 
 >[!NOTE]
 >
->从&#x200B;**system/console/status-Bundlelist**&#x200B;页面生成的&#x200B;**Download Full**&#x200B;包中不包含图像服务器和s7访问日志。 出于支持目的，如果您有[!DNL Dynamic Media]个问题，请在联系客户支持时附加ImageServer和s7access日志。
+>从**system/console/status-Bundlelist**页面生成的**Download Full**包中不包含图像服务器和s7访问日志。 出于支持目的，如果您有[!DNL Dynamic Media]个问题，请在联系客户支持时附加ImageServer和s7access日志。
 
 ### 激活DEBUG日志级别 {#activating-the-debug-log-level}
 
@@ -275,7 +275,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
 | 0 | 致命错误 | 操作失败，安装程序无法继续。 |
 |---|---|---|
-| 1 | 错误 | 操作失败。 安装将继续，但部分AEM WCM安装不正确，无法正常工作。 |
+| 1 | 错误 | 操作失败。 安装会继续，但部分AEM WCM安装不正确，无法正常工作。 |
 | 2 | 警告 | 操作已成功，但遇到了问题。 AEM WCM可能会正常工作，也可能无法正常工作。 |
 | 3 | 信息 | 操作已成功。 |
 
@@ -300,7 +300,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    >[!NOTE]
    >
-   >虽然不是技术要求，但建议独 `<identifier>` 一无二。
+   >虽然不是技术要求，但建议使`<identifier>`具有唯一性。
 
 1. 在此节点上设置以下属性：
 
@@ -332,7 +332,7 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
         类型：`String`
 
-        值：根据需要指定日志消息的模式;例如
+        值：根据需要指定日志消息的模式；例如，
 
         `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
@@ -437,9 +437,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
    >
    >默认值为“。”yyyy-MM-dd（用于每日日志轮换）。
    >
-   >例如，在 2010 年 1 月 20 日午夜（或在此日期之后的第一条日志消息恰好出现时），../logs/error.log 重命名为 ../日志/error.log.2010-01-20. 1 月 21 日的日志记录输出到（一个新的和空的）../logs/error.log，直到它在下一次更改日期时滚动。
+   >例如，在2010年1月20日午夜（或者确切地说，当此日期之后出现第一条日志消息时），../logs/error.log将重命名为../logs/error.log.2010-01-20。 1月21日的日志记录将输出到（一个新的、空的） ../logs/error.log ，直到该日志在下一天更改时滚动。
    >
-   >| `'.'yyyy-MM` | 每月月初轮换 |
+   >| `'.'yyyy-MM` | 每月初的轮换 |
    >|---|---|
    >| `'.'yyyy-ww` | 每周第一天的轮换（取决于区域设置）。 |
    >| `'.'yyyy-MM-dd` | 每天午夜轮换。 |
@@ -483,7 +483,7 @@ Felix控制台还提供有关`../system/console/slinglog`上的Sling日志支持
 
 #### Web控制台中的OSGi审核记录 {#osgi-audit-records-from-the-web-console}
 
-OSGi事件还会生成审核记录，可在AEM Web控制台的&#x200B;**配置状态**&#x200B;选项卡> **日志文件**&#x200B;选项卡中看到这些记录：
+OSGi事件还会生成审核记录，可在AEM Web Console的&#x200B;**配置状态**&#x200B;选项卡> **日志文件**&#x200B;选项卡中看到这些记录：
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -550,8 +550,8 @@ OSGi事件还会生成审核记录，可在AEM Web控制台的&#x200B;**配置�
 |   | 服务器CPU使用率低。 | 升级到更快的浏览器。 | 改进客户端缓存。 |
 |   | 有些客户速度很快，有些速度很慢。 |  |  |
 | 服务器 |  |  |  |
-| 网络 | 服务器和客户端的CPU使用率都较低。 | 消除任何网络瓶颈。 | 改进/优化客户端缓存的配置。 |
-|   | 在服务器上本地浏览的速度（相对而言）比较快。 | 增加网络带宽。 | 减少网页的“重量”(例如，减少图像，优化HTML)。 |
+| 网络 | 服务器和客户端上的CPU使用率都较低。 | 消除任何网络瓶颈。 | 改进/优化客户端缓存的配置。 |
+|   | 在服务器上本地浏览的速度（相对而言）比较快。 | 增加网络带宽。 | 减少网页的“重量”(例如，减少图像数量，优化了HTML)。 |
 | Web服务器 | Web服务器上的CPU使用率很高。 | 将Web服务器群集起来。 | 减少每页的点击量（访问）。 |
 |   |  | 使用硬件负载平衡器。 |  |
 | 应用程序 | 服务器CPU使用率很高。 | 集群AEM实例。 | 搜索并消除CPU和内存瓶颈（使用代码查看和计时输出）。 |
@@ -560,7 +560,7 @@ OSGi事件还会生成审核记录，可在AEM Web控制台的&#x200B;**配置�
 | 存储库 |  |  |  |
 | 缓存 |  |  |  |
 
-性能问题可能源于与您的网站无关的各种原因，包括连接速度暂时减慢、CPU负载等等。
+性能问题可能源于与您的网站无关的各种原因，包括连接速度暂时减慢、CPU加载等等。
 
 它还可能影响您的所有访客或仅影响其中一部分访客。
 
@@ -613,12 +613,12 @@ OSGi事件还会生成审核记录，可在AEM Web控制台的&#x200B;**配置�
   <tr>
    <td>栈转储</td>
    <td>内存不足问题导致性能降低。</td>
-   <td><p>将：<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br />选项添加到将转到AEM的Java™调用。</p> <p>请参阅<a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">JVM疑难解答页面</a>。</p> </td>
+   <td><p>将：<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br />选项添加到转到AEM的Java™调用。</p> <p>请参阅<a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">JVM疑难解答页面</a>。</p> </td>
   </tr>
   <tr>
    <td>系统调用</td>
    <td>确定时间问题。</td>
-   <td><p>调用<code>System.currentTimeMillis()</code>或<code>com.day.util</code>。 计时用于从您的代码或通过<a href="#html-comments">HTML注释</a>生成时间戳。</p> <p><strong>注意：</strong>实施这些操作，以便根据需要激活/停用它们；当系统顺利运行时，不需要收集统计信息的开销。</p> </td>
+   <td><p>调用<code>System.currentTimeMillis()</code>或<code>com.day.util</code>。 计时用于从您的代码或通过<a href="#html-comments">HTML-comments</a>生成时间戳。</p> <p><strong>注意：</strong>实施这些操作，以便根据需要激活/停用它们；当系统顺利运行时，不需要收集统计信息的开销。</p> </td>
   </tr>
   <tr>
    <td>Apache Bench</td>
@@ -680,9 +680,9 @@ OSGi事件还会生成审核记录，可在AEM Web控制台的&#x200B;**配置�
 
 ### 解释request.log {#interpreting-the-request-log}
 
-此文件注册有关向AEM发出的每个请求的基本信息。 由此可以得出有价值的结论。
+此文件可注册有关向AEM发出的每个请求的基本信息。 由此可以得出有价值的结论。
 
-`request.log`提供了一种内置方法，用于查看请求需要多长时间。 对于开发目的，它对`tail -f` `request.log`很有用，并会留意较慢的响应时间。 若要分析更大的`request.log`，Adobe建议使用[的`rlog.jar`，以便您对响应时间](#using-rlog-jar-to-find-requests-with-long-duration-times)进行排序和筛选。
+`request.log`提供了一种内置方法，用于查看请求需要多长时间。 对于开发目的，它对`tail -f` `request.log`很有用，并会留意较慢的响应时间。 为了分析更大的`request.log`，Adobe建议使用[的`rlog.jar`，这允许您排序和筛选响应时间](#using-rlog-jar-to-find-requests-with-long-duration-times)。
 
 Adobe建议将“慢”页面与`request.log`隔离，然后单独对其进行优化以获得更好的性能。 包括每个组件的性能度量，或者使用性能分析工具（如` [yourkit](https://www.yourkit.com/)`）。
 
@@ -768,7 +768,7 @@ Adobe建议将“慢”页面与`request.log`隔离，然后单独对其进行�
 
 ### 使用rlog.jar查找持续时间较长的请求 {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM包括以下内容中的各种辅助工具：
+AEM包括以下中的各种辅助工具：
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 这些工具之一`rlog.jar`可用于快速对`request.log`进行排序，以便按持续时间显示请求，从最长到最短。
@@ -877,7 +877,7 @@ Percentage of the requests served within a certain time (ms)
 100% 8106 (longest request)
 ```
 
-上述数字取自访问Geometrixx公司页面的标准MAcBook Pro笔记本电脑（2010年年中），如默认AEM安装中所示。 页面很简单，但并未针对性能进行优化。
+上述数字取自访问Geometrixx公司页面的标准MAcBook Pro笔记本电脑（2010年年中），如默认AEM安装中所包含。 页面很简单，但并未针对性能进行优化。
 
 `apachebench`还会将每个请求的时间显示为所有并发请求的平均值；请参阅`Time per request: 54.595 [ms]`（所有并发请求的平均值）。 您可以更改并发参数`-c`的值（一次要执行的多个请求数）以查看任何效果。
 
@@ -897,7 +897,7 @@ Percentage of the requests served within a certain time (ms)
 * 冗余实例
 * 任何重新启动（计数器重置为0）
 
-### HTML注释 {#html-comments}
+### HTML备注 {#html-comments}
 
 建议每个项目都包含`html comments`以提高服务器性能。 可以找到许多很好的公共示例。 选择一个页面，打开要查看的页面源，然后滚动到页面底部。 可以查看以下代码：
 
@@ -923,9 +923,9 @@ Percentage of the requests served within a certain time (ms)
 
    现在，您可以选择其他选项。
 
-### 使用 （J）VisualVM 监控性能 {#monitoring-performance-using-j-visualvm}
+### 使用(J)VisualVM监控性能 {#monitoring-performance-using-j-visualvm}
 
-对于 JDK 6-8，可以使用该工具命令 `visualvm` 。 安装JDK后，可以执行以下操作：
+对于JDK 6-8，工具命令`visualvm`可用。 安装JDK后，可以执行以下操作：
 
 1. 启动AEM实例。
 
@@ -1037,9 +1037,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 #### 资源的平均大小是多少？ {#what-is-the-average-size-of-the-assets}
 
-要确定文件夹的总 `/var/dam` 大小，请执行以下操作：
+要确定`/var/dam`文件夹的总大小：
 
-1. 使用 WebDAV 将存储库映射到本地文件系统。
+1. 使用WebDAV将存储库映射到本地文件系统。
 
 1. 使用命令行：
 
@@ -1098,19 +1098,10 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 >有关更多信息，另请参阅以下文章：
 >
->* [线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=zh-Hans)
->* [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hans)
->* [使用内置探查器进行分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=zh-Hans)
->* [分析慢速和受阻的进程](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+>* [线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
+>* [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+>* [使用内置探查器进行分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
 >
-
-### 100%的CPU {#cpu-at}
-
-如果系统的CPU始终以100%的速度运行，请参阅以下内容：
-
-* 知识库：
-
-   * [分析缓慢进程和受阻进程](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 ### 内存不足 {#out-of-memory}
 
@@ -1125,7 +1116,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 用于[启动AEM](/help/sites-deploying/deploy.md#getting-started)的JVM设置
 * 知识库：
 
-   * [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hans)
+* [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
 
 ### 磁盘I/O {#disk-i-o}
 
@@ -1136,15 +1127,14 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
    * [Apache Sling JSP脚本处理程序](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
    * [Apache Sling JavaScript处理程序](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
    * [Apache Sling日志记录配置](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [CQHTML库管理器](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM 调试过滤器](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [伐木](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+   * [CQ HTML库管理器](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+   * [CQ WCM调试过滤器](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
-* 是否以及如何配置 [版本清除](/help/sites-deploying/version-purging.md)
+* 是否以及如何配置[版本清除](/help/sites-deploying/version-purging.md)
 * 知识库：
 
-   * [打开的文件太多](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=zh-Hans)
-   * [日志占用太多磁盘空间](https://helpx.adobe.com/experience-manager/kb/JournalTooMuchDiskSpace.html)
+   * [打开的文件太多]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
 
 ### 性能定期下降 {#regular-performance-degradation}
 
@@ -1153,13 +1143,13 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [内存不足](#outofmemory)
 * 知识库：
 
-   * [未关闭的会话](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html)
+   * [未关闭的资源解析程序](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM调整 {#jvm-tuning}
 
 Java™虚拟机(JVM)在调试方面已得到改进(特别是自Java™ 7以来)。 因此，指定合理的固定JVM大小并使用默认值通常是合适的。
 
-如果默认设置不合适，那么建立一种监测和评估气相色谱性能的方法非常重要。 请在尝试调整 JVM 之前执行此操作。 此过程可能涉及监视因素，包括堆大小、算法和其他方面。
+如果缺省设置不合适，那么建立一种监测和评估GC性能的方法就十分重要。 请在尝试调整JVM之前执行此操作。 此过程可能涉及监测因素，包括栈大小、算法等。
 
 一些常见选项包括：
 

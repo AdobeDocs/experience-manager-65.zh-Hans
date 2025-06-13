@@ -10,9 +10,9 @@ feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '2014'
+source-wordcount: '1991'
 ht-degree: 0%
 
 ---
@@ -52,17 +52,15 @@ ht-degree: 0%
 
 ## 生成快速入门.properties文件 {#generate-quickstart-properties}
 
-从jar文件启动AEM时，将在`crx-quickstart/conf`下生成`quickstart.properties`文件。 如果AEM以前仅使用启动脚本启动，则此文件不存在，升级失败。 确保检查此文件是否存在，如果AEM不存在，请从jar文件重新启动该文件。
+从jar文件启动AEM时，将在`crx-quickstart/conf`下生成`quickstart.properties`文件。 如果AEM以前仅使用启动脚本启动，则此文件不存在，且升级失败。 确保检查此文件是否存在，如果AEM不存在，请从jar文件重新启动它。
 
 ## 配置工作流和审核日志清除 {#configure-wf-audit-purging}
 
-`WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任务需要单独的OSGi配置，没有它们将无法工作。 如果它们在升级前任务执行期间失败，则缺少配置是最可能的原因。 因此，请确保为这些任务添加OSGi配置，或者如果不想运行它们，则从升级前优化任务列表中完全删除它们。 有关配置工作流清除任务的文档可在[管理工作流实例](/help/sites-administering/workflows-administering.md)中找到，而审核日志维护任务配置可在AEM 6[&#128279;](/help/sites-administering/operations-audit-log.md)中的审核日志维护中找到。
-
-有关CQ 5.6上的工作流和审核日志清除以及AEM 6.0上的审核日志清除，请参阅[清除工作流和审核节点](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)。
+`WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任务需要单独的OSGi配置，没有它们将无法工作。 如果它们在升级前任务执行期间失败，则缺少配置是最可能的原因。 因此，请确保为这些任务添加OSGi配置，或者如果不想运行它们，则从升级前优化任务列表中完全删除它们。 有关配置工作流清除任务的文档可在[管理工作流实例](/help/sites-administering/workflows-administering.md)中找到，有关审核日志维护任务配置的文档可在AEM 6](/help/sites-administering/operations-audit-log.md)中的[审核日志维护中找到。
 
 ## 安装、配置和运行升级前任务 {#install-configure-run-pre-upgrade-tasks}
 
-由于AEM所允许的自定义级别，环境通常不遵循统一的升级执行方式。 因此，创建标准化的升级程序是一个困难的过程。
+由于AEM所允许的自定义级别，环境通常不遵循统一的执行升级方式。 因此，创建标准化的升级程序是一个困难的过程。
 
 在以前的版本中，对于已停止或无法安全恢复的AEM升级，也会遇到困难。 此问题导致出现以下情况：需要重新启动完整升级过程，或者执行了有缺陷的升级而未触发任何警告。
 
@@ -127,7 +125,7 @@ You can find the packages at these locations:
   <tr>
    <td><code>WorkflowPurgeTask</code></td>
    <td>crx2/crx3</td>
-   <td>必须在运行之前配置AdobeGranite工作流清除配置OSGi。</td>
+   <td>必须在运行之前配置Adobe Granite工作流清除配置OSGi。</td>
   </tr>
   <tr>
    <td><code>GenerateBundlesListFileTask</code></td>
@@ -247,7 +245,7 @@ You can find the packages at these locations:
 
 >[!NOTE]
 >
->仅当从AEM 5版本升级时，才需要执行此步骤。 从旧版AEM 6升级时，可以完全跳过该步骤。
+>仅当您从AEM 5版本升级时，才需要执行此步骤。 从旧版AEM 6升级时，可以完全跳过该步骤。
 
 在Apache Oak中，为存储库级别的身份验证配置自定义`LoginModules`的方式发生了根本性变化。
 
@@ -284,7 +282,7 @@ You can find the packages at these locations:
 
 >[!NOTE]
 >
->在关闭AEM实例后，仅从crx-quickstart/install目录中删除包。 此步骤是开始就地升级过程之前的最后一个步骤。
+>仅在关闭AEM实例后，从crx-quickstart/install目录中删除包。 此步骤是开始就地升级过程之前的最后一个步骤。
 
 删除通过本地文件系统上的`crx-quickstart/install`目录部署的所有Service Pack、功能包或修补程序。 这样做可防止在更新完成后，在新AEM版本之上意外安装旧修补程序和Service Pack。
 
@@ -337,7 +335,7 @@ You can find the packages at these locations:
 >* 在升级过程中，您会遇到以下提到的任何错误。
 >
 
-在极少数情况下，服务用户的最终版本可能会是较早的AEM版本，无法正确标记为常规用户。
+在极少数情况下，服务用户最终可能会在旧版AEM中被错误地标记为常规用户。
 
 如果发生这种情况，升级将失败，并出现如下消息：
 

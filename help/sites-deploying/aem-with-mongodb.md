@@ -10,7 +10,7 @@ exl-id: 70a39462-8584-4c76-a097-05ee436247b7
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '6216'
 ht-degree: 0%
@@ -40,7 +40,7 @@ MongoDB通常用于支持符合以下条件之一的AEM创作部署：
 >
 >有关创作实例的大小和并发用户定义的更多信息，请参阅[硬件大小调整指南](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel)。
 
-### 针对AEM的最小MongoDB部署 {#minimal-mongodb-deployment-for-aem}
+### 适用于AEM的最小MongoDB部署 {#minimal-mongodb-deployment-for-aem}
 
 以下是MongoDB上AEM的最低部署。 为简单起见，已推广SSL终止和HTTP代理组件。 它包含一个MongoDB副本集，包括一个主副本集和两个辅助副本集。
 
@@ -48,7 +48,7 @@ MongoDB通常用于支持符合以下条件之一的AEM创作部署：
 
 最小部署需要三个`mongod`实例配置为副本集。 一个实例被选为主要实例，而其他实例被选为次要实例，选举由`mongod`管理。 连接到每个实例的是本地磁盘。 因此，群集可以支持负载，建议最小吞吐量为每秒12 MB，并且每秒的I/O操作(IOPS)超过3000个。
 
-AEM作者已连接到`mongod`实例，每个AEM作者均连接到所有三个`mongod`实例。 写操作被发送到主数据库，并且可以从任何实例读取数据。 流量会根据Dispatcher的负载分发到任何活动AEM创作实例。 Oak数据存储是`FileDataStore`，MongoDB监控由MMS或MongoDB Ops Manager提供，具体取决于部署的位置。 操作系统级别和日志监控由第三方解决方案（如Splunk或Ganglia）提供。
+AEM作者已连接到`mongod`实例，每个AEM作者均连接到所有三个`mongod`实例。 写操作被发送到主数据库，并且可以从任何实例读取数据。 流量会根据Dispatcher的负载分发到任何一个活动的AEM创作实例。 Oak数据存储是`FileDataStore`，MongoDB监控由MMS或MongoDB Ops Manager提供，具体取决于部署的位置。 操作系统级别和日志监控由第三方解决方案（如Splunk或Ganglia）提供。
 
 在此部署中，需要所有组件才能成功实施。 任何缺少的组件都会使实施无法正常运行。
 
@@ -74,7 +74,7 @@ AEM作者已连接到`mongod`实例，每个AEM作者均连接到所有三个`mo
 
 使用MMAP存储引擎的MongoDB版本2.6和3.0要求数据库的工作集及其索引适应RAM。
 
-RAM不足会导致性能显着降低。 工作集和数据库的大小与应用程序高度相关。 虽然可以做出一些估计，但确定所需RAM数量的最可靠方法是构建AEM应用程序并对其进行负载测试。
+RAM不足会导致性能显着降低。 工作集和数据库的大小与应用程序高度相关。 虽然可以做出一些估计，但确定所需RAM量的最可靠方法是构建AEM应用程序并对其进行负载测试。
 
 为了帮助执行负载测试过程，可以假定工作集与数据库总大小的比率如下：
 
@@ -87,7 +87,7 @@ MongoDB 3.0中的WiredTiger存储引擎也存在同样的限制，但工作集�
 
 >[!NOTE]
 >
->Adobe建议对使用MongoDB 3.0的AEM 6.1部署使用WiredTiger存储引擎。
+>对于使用MongoDB 3.0的AEM 6.1部署，Adobe建议使用WiredTiger存储引擎。
 
 ### 数据存储 {#data-store}
 
@@ -95,7 +95,7 @@ MongoDB 3.0中的WiredTiger存储引擎也存在同样的限制，但工作集�
 
 ## 监测 {#monitoring}
 
-监测对于项目的成功实施至关重要。 在充分了解的情况下，可以在MongoDB上运行AEM而不进行监视。 但是，这些知识通常由专门处理部署每个部分的工程师掌握。
+监测对于项目的成功实施至关重要。 在充分了解的情况下，可以在MongoDB上运行AEM而不进行监控。 但是，这些知识通常由专门处理部署每个部分的工程师掌握。
 
 这些专门知识通常涉及使用Apache Oak Core的研发工程师和MongoDB专家。
 
@@ -125,7 +125,7 @@ MongoDB Ops Manager与MongoDB Cloud Manager是相同的软件。 注册后，可
 
 运行AEM MongoDB群集需要操作系统级别的监控。
 
-Ganglia是此类系统的一个良好示例，它提供了所需信息的范围和详细信息，这些信息超出基本健康指标，如CPU、负载平均和可用磁盘空间。 要诊断问题，需要较低级别的信息，例如熵池级别、CPU I/O等待、处于FIN_WAIT2状态的套接字。
+Ganglia是此类系统的一个良好示例，它提供了所需信息的范围和详细信息，这些信息超出了CPU、负载平均和可用磁盘空间等基本运行状况指标。 要诊断问题，需要较低级别的信息，例如熵池级别、CPU I/O等待、处于FIN_WAIT2状态的套接字。
 
 ### 日志聚合 {#log-aggregation}
 
@@ -133,7 +133,7 @@ Ganglia是此类系统的一个良好示例，它提供了所需信息的范围�
 
 ## 核对清单 {#checklists}
 
-本部分介绍在实施项目之前，为确保正确设置AEM和MongoDB部署而应执行的各个步骤。
+本节介绍在实施项目之前，应执行的各个步骤，以确保正确设置AEM和MongoDB部署。
 
 ### 网络 {#network}
 
@@ -141,7 +141,7 @@ Ganglia是此类系统的一个良好示例，它提供了所需信息的范围�
 1. 所有主机应该可以通过其DNS条目从所有其他可路由主机中解析
 1. 所有MongoDB主机均可从同一群集中的所有其他MongoDB主机路由
 1. MongoDB主机可以将数据包路由到MongoDB Cloud Manager和其他监控服务器
-1. AEM Server可以将数据包路由到所有MongoDB服务器
+1. AEM服务器可以将数据包路由到所有MongoDB服务器
 1. 任何AEM服务器与任何MongoDB服务器之间的数据包延迟都小于2毫秒，没有数据包丢失，标准分布为1毫秒或更少。
 1. 确保AEM与MongoDB服务器之间的跃点数不超过两个
 1. 两个MongoDB服务器之间的跳数不能超过两个
@@ -152,7 +152,7 @@ Ganglia是此类系统的一个良好示例，它提供了所需信息的范围�
 
 #### 节点存储配置 {#node-store-configuration}
 
-必须将AEM实例配置为将AEM与MongoMK一起使用。 AEM中MongoMK实现的基础是文档节点存储。
+必须将AEM实例配置为将AEM与MongoMK结合使用。 AEM中MongoMK实施的基础是文档节点存储。
 
 有关如何配置节点存储区的详细信息，请参阅[在AEM中配置节点存储区和数据存储区](/help/sites-deploying/data-store-config.md)。
 
@@ -221,7 +221,7 @@ cacheSizeInMB=128
 
 #### 禁用查询提示 {#disabling-the-query-hint}
 
-建议您在启动AEM时添加属性`-Doak.mongo.disableIndexHint=true`，以禁用随所有查询一起发送的查询提示。 这样做可确保MongoDB根据内部统计数据计算使用的最合适的索引。
+建议您通过在启动AEM时添加属性`-Doak.mongo.disableIndexHint=true`来禁用随所有查询一起发送的查询提示。 这样做可确保MongoDB根据内部统计数据计算使用的最合适的索引。
 
 如果未禁用查询提示，则索引的任何性能调整都不会影响AEM的性能。
 
@@ -315,7 +315,7 @@ WiredTiger日志会在检查点之间保留所有数据修改。 如果MongoDB�
 
 #### 压缩 {#compression}
 
-使用WiredTiger时，MongoDB支持对所有集合和索引进行压缩。 压缩以牺牲额外的CPU为代价，将存储使用降至最低。
+使用WiredTiger时，MongoDB支持对所有集合和索引进行压缩。 压缩可最大限度地减少存储使用量，但需要额外的CPU。
 
 默认情况下，WiredTiger使用块压缩，所有集合都使用[snappy](https://docs.mongodb.com/manual/reference/glossary/#term-snappy)压缩库，所有索引都使用[前缀压缩](https://docs.mongodb.com/manual/reference/glossary/#term-prefix-compression)。
 
@@ -358,15 +358,15 @@ WiredTiger内部缓存中的数据与磁盘格式的数据使用不同的表示�
 
 NUMA（非统一内存访问）允许内核管理如何将内存映射到处理器内核。 尽管此过程尝试使核心的内存访问速度更快，以确保它们能够访问所需数据，但NUMA会干扰MMAP，引入额外的延迟，因为无法预测读取次数。 因此，必须在所有支持的操作系统上为`mongod`进程禁用NUMA。
 
-实质上，在NUMA体系结构中，存储器连接到CPU，CPU连接到总线。 在SMP或UMA体系结构中，内存连接到总线并由CPU共享。 当线程在NUMA CPU上分配内存时，它会根据策略进行分配。 缺省值是分配连接到线程的本地CPU的内存，除非没有可用内存，否则此时它会以较高的成本使用可用CPU的内存。 分配后，内存不会在CPU之间移动。 分配由从父线程（最终是启动进程的线程）继承的策略执行。
+实质上，在NUMA体系结构中，存储器连接到CPU，CPU连接到总线。 在SMP或UMA体系结构中，内存连接到总线并由CPU共享。 当线程在NUMA CPU上分配内存时，它会根据策略进行分配。 默认分配附加到线程的本地CPU的内存，除非没有空闲内存，否则此时它会以更高的成本使用来自可用CPU的内存。 分配后，内存不会在CPU之间移动。 分配由从父线程（最终是启动进程的线程）继承的策略执行。
 
-在许多将计算机视为多核统一内存体系结构的数据库中，这种情形会导致初始CPU先被占满，然后次要CPU被占满。 如果中心线程负责分配内存缓冲区，则尤其如此。 解决方法是通过运行以下命令来更改用于启动`mongod`进程的主线程的NUMA策略：
+在许多将计算机视为多核统一内存体系结构的数据库中，这种情况导致初始CPU先被填充，而次要CPU稍后被填充。 如果中心线程负责分配内存缓冲区，则尤其如此。 解决方法是通过运行以下命令来更改用于启动`mongod`进程的主线程的NUMA策略：
 
 ```shell
 numactl --interleaved=all <mongod> -f config
 ```
 
-此策略以循环方式为所有CPU节点分配内存，确保所有节点上的内存分布均匀。 与具有多个CPU硬件的系统不同，它不会产生对内存的最高性能访问。 大约一半的内存操作速度较慢，且位于总线上，但`mongod`未以最佳方式写入目标NUMA，因此这是一个合理的折衷方案。
+此策略以循环方式为所有CPU节点分配内存，确保所有节点上的内存分布均匀。 与使用多个CPU硬件的系统不同，它不会产生对内存的最高性能访问。 大约一半的内存操作速度较慢，且位于总线上，但`mongod`未以最佳方式写入目标NUMA，因此这是一个合理的折衷方案。
 
 ### NUMA问题 {#numa-issues}
 
@@ -392,7 +392,7 @@ MongoDB进程在不同的分配策略下的行为有所不同：
 仅在列出的CPU（内核）上运行。 Mongod只在列出的CPU上运行，并且只使用这些CPU上可用的内存。
 
 * `--localalloc`
-始终在当前节点上分配内存，但使用线程运行的所有节点。 如果一个线程执行分配，则仅使用该CPU可用的内存。
+始终在当前节点上分配内存，但使用线程运行的所有节点。 如果一个线程执行分配，则仅使用对该CPU可用的内存。
 
 * `--preferred=<node>`
 优先分配至某个节点，但如果首选节点已满，则回退至其他节点。 可以使用用于定义节点的相对表示法。 此外，线程在所有节点上运行。
@@ -567,7 +567,7 @@ echo "{nThreads:32,fileSizeMB:1000,w:true}" | mongoperf
 1. 关闭内存膨胀
 1. 为托管MongoDB数据库的虚拟机预分配和保留内存
 1. 使用存储I/O控制为`mongod`进程分配足够的I/O。
-1. 通过设置[CPU保留](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)来保证承载MongoDB的计算机的CPU资源
+1. 通过设置[CPU保留](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.hostclient.doc/GUID-6C9023B2-3A8F-48EB-8A36-44E3D14958F6.html?hWord=N4IghgNiBc4RB7AxmALgUwAQGEAKBVTAJ3QGcEBXIpMkAXyA)，为托管MongoDB的计算机保证CPU资源
 
 1. 考虑使用ParaVirtual I/O驱动程序。<!-- URL is a 404 See [knowledgebase article](https://kb.vmware.com/selfservice/microsites/search.do?language=en_US&cmd=displayKC&externalId=1010398).-->
 
@@ -601,13 +601,13 @@ echo "{nThreads:32,fileSizeMB:1000,w:true}" | mongoperf
 
 #### 粘性连接 {#sticky-connections}
 
-粘性连接可确保同一个用户的个性化页面和会话数据全部在AEM的同一实例上撰写。 此数据存储在实例上，因此来自同一用户的后续请求将返回到同一实例。
+粘性连接可确保同一个用户的个性化页面和会话数据全部在AEM的同一个实例上撰写。 此数据存储在实例上，因此来自同一用户的后续请求将返回到同一实例。
 
-建议为将请求路由到AEM实例的所有内部层启用粘性连接，鼓励后续请求访问同一个AEM实例。 这样做有助于最大限度地减少延迟，否则，当内容在实例之间更新时，延迟会非常明显。
+建议为将请求路由到AEM实例的所有内部层启用粘性连接，鼓励后续请求访问同一AEM实例。 这样做有助于最大限度地减少延迟，否则，当内容在实例之间更新时，延迟会非常明显。
 
 #### 长过期 {#long-expires}
 
-默认情况下，从AEM Dispatcher发送的内容具有Last-Modified和Etag标头，并且不指示内容过期。 此流程可确保用户界面始终获得最新版本的资源。 它还意味着浏览器执行GET操作以查看资源是否已更改。 因此，它可能会导致HTTP响应为304（未修改）的多个请求，具体取决于页面加载。 对于未过期的资源，设置Expires标头并删除Last-Modified和ETag标头会导致缓存内容。 并且，在满足Expires标头中的日期之前，不会提出进一步的更新请求。
+默认情况下，从AEM Dispatcher发送的内容具有Last-Modified和Etag标头，不指示内容过期。 此流程可确保用户界面始终获得最新版本的资源。 它还意味着浏览器执行GET操作以查看资源是否已更改。 因此，它可能会导致HTTP响应为304（未修改）的多个请求，具体取决于页面加载。 对于未过期的资源，设置Expires标头并删除Last-Modified和ETag标头会导致缓存内容。 并且，在满足Expires标头中的日期之前，不会提出进一步的更新请求。
 
 但是，使用此方法意味着在Expires标头过期之前，没有合理的方法导致资源在浏览器中过期。 要缓解此工作流，可以将HtmlClientLibraryManager配置为对客户端库使用不可变URL。
 
@@ -627,7 +627,7 @@ Header unset Pragma "expr=(%{REQUEST_STATUS} -eq 200) && (%{REQUEST_URI} =~ /.*l
 
 在没有内容类型的情况下发送内容时，许多浏览器尝试通过读取内容的前几个字节来猜测内容的类型。 此方法称为“探查”。 探查会打开一个安全漏洞，因为可以写入存储库的用户可能会上传没有内容类型的恶意内容。
 
-因此，建议向Dispatcher提供的资源添加`no-sniff`标头。 但是，Dispatcher不缓存标头。 因此，它意味着从本地文件系统提供的任何内容的内容类型由其扩展决定，而不是使用来自其原始AEM服务器的原始内容类型标头。
+因此，建议向Dispatcher提供的资源添加`no-sniff`标头。 但是，Dispatcher不缓存标头。 因此，它意味着从本地文件系统提供的任何内容的内容类型都由其扩展决定，而不是使用来自其原始AEM服务器的原始内容类型标头。
 
 如果已知的Web应用程序从不提供没有文件类型的缓存资源，则无法安全地启用嗅探。
 
@@ -647,7 +647,7 @@ Header set X-Content-Type-Options "nosniff"  env=jsonp_request
 Header setifempty Content-Type application/javascript env=jsonp_request
 ```
 
-#### 内容安全策略 {#content-security-policy}
+#### 内容安全性策略 {#content-security-policy}
 
 默认的Dispatcher设置允许打开内容安全策略（也称为CSP）。 这些设置允许页面根据浏览器沙盒的默认策略从所有域加载资源。
 
@@ -657,7 +657,7 @@ CSP允许微调策略。 但是，在复杂的应用程序中，开发CSP标头�
 
 >[!NOTE]
 >
->有关此工作方式的更多信息，请参阅内容安全策略上的[OWASP页面](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)。
+>有关此工作方式的更多信息，请参阅内容安全策略上的[OWASP页面](https://cheatsheetseries.owasp.org/cheatsheets/Content_Security_Policy_Cheat_Sheet.html)。
 
 ### 大小调整 {#sizing}
 
@@ -671,7 +671,7 @@ CSP允许微调策略。 但是，在复杂的应用程序中，开发CSP标头�
 
 ### 并发安装 {#concurrent-installations}
 
-虽然MongoMK支持在单个数据库中并发使用多个AEM实例，但不支持并发安装。
+虽然MongoMK支持在单个数据库上并发使用多个AEM实例，但不支持并发安装。
 
 要解决此问题，请确保先使用单个成员运行安装，然后在第一个成员完成安装后添加其他成员。
 

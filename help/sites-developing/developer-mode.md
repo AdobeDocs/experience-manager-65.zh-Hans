@@ -10,7 +10,7 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
 source-wordcount: '683'
 ht-degree: 1%
@@ -56,8 +56,8 @@ ht-degree: 1%
 >
 >请参阅：
 >
->* 知识库文章[AEM TouchUI问题疑难解答](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)，提供了更多提示和工具。
->* 有关[AEM 6.0开发人员模式](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=zh-Hans)的AEM Gems会话。
+>* 知识库文章[AEM TouchUI问题疑难解答](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)，提供了更多提示和工具。
+>* 关于[AEM 6.0开发人员模式](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html)的AEM Gems会话。
 >
 
 ## 打开开发人员模式 {#opening-developer-mode}
@@ -106,7 +106,7 @@ ht-degree: 1%
 
 * **编辑脚本**：链接：
 
-   * 以CRXDE Lite打开组件脚本。
+   * 在CRXDE Lite中打开组件脚本。
 
 * 展开组件条目（箭头头）也可显示：
 
@@ -125,7 +125,7 @@ ht-degree: 1%
 
 希望&#x200B;**错误**&#x200B;选项卡始终为空（如上所述），但在出现问题时，将显示每个组件的以下详细信息：
 
-* 如果组件将条目写入错误日志，同时记录错误详细信息并指向CRXDE Lite中相应代码的链接，则会发出警告。
+* 如果组件将条目写入错误日志，同时记录错误详细信息并直接链接到CRXDE Lite中的相应代码，则会发出警告。
 * 如果组件打开管理会话，会出现警告。
 
 例如，在调用未定义的方法的情况下，产生的错误显示在&#x200B;**错误**&#x200B;选项卡中：
@@ -138,6 +138,6 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->在AEM 6.2中，开发人员模式的测试功能被重新实现为一个独立的工具应用程序。
+>在AEM 6.2中，开发人员模式的测试功能已重新实现为独立的工具应用程序。
 >
 >有关完整的详细信息，请参阅[测试您的用户界面](/help/sites-developing/hobbes.md)。
