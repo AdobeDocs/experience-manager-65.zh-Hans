@@ -151,6 +151,7 @@ Clientlibs允许您扩展默认实施以实现新功能，同时重用标准函�
 1. 可选：
 
    * 如果要插入其他数据，您需要使用编写[PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)
+
      `pageInfoProviderType`属性。
 
    例如，请参阅下面的附加类/捆绑包（来自GitHub）。

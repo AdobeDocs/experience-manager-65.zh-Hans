@@ -162,7 +162,7 @@ Experience Manager Dynamic Media是直接在Experience Manager平台中统一的
 1. （可选；请参阅用例表） — 如果选择启用从Assets到Dynamic Media Classic的自动上传，则必须添加以下内容：
 
    1. 设置自动上传至Dynamic Media Classic。
-   1. 在&#x200B;***Dam更新资产**工作流(`https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)末尾的所有Dynamic Media工作流步骤*&#x200B;之后添加&#x200B;**Dynamic Media Classic上传**&#x200B;步骤
+   1. 在&#x200B;***Dam更新资产**&#x200B;工作流(`https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)末尾的所有Dynamic Media工作流步骤*&#x200B;之后添加&#x200B;**Dynamic Media Classic上传**&#x200B;步骤
    1. （可选）在[https://&lt;服务器>：&lt;端口>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl)中按MIME类型限制Dynamic Media Classic资源上传。 此列表中未包含的资源MIME类型不会上传到Dynamic Media Classic服务器。
    1. （可选）在Dynamic Media Classic配置中设置视频。 您可以同时为Dynamic Media和/或Dynamic Media Classic启用视频编码。 在Experience Manager实例中，动态演绎版用于本地预览和播放，而Dynamic Media Classic视频演绎版则生成并存储在Dynamic Media Classic服务器上。 为Dynamic Media和Dynamic Media Classic设置视频编码服务时，请将[视频处理配置文件](/help/assets/video-profiles.md)应用于Dynamic Media Classic资源文件夹。
    1. （可选） [在Dynamic Media Classic中配置安全预览](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)。

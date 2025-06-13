@@ -454,7 +454,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建网页。在RTE（文本组�
   添加&#x200B;**表**&#x200B;时，可以使用对话框配置&#x200B;**表属性**。
 
    * 适当的&#x200B;**标题**。
-   * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、****** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
+   * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、**&#x200B;**&#x200B;** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
 
   ![表属性对话框。](assets/chlimage_1-20a.png)
 
