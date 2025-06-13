@@ -243,7 +243,7 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 ## 搜索索引 {#search-indexes}
 
-安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)。
+安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)。
 
 为经常运行的查询创建自定义索引。 有关详细信息，请参阅用于分析慢查询[&#128279;](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)的方法和[自定义索引](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的其他见解，请参阅[查询和索引最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 

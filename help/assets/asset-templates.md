@@ -124,7 +124,7 @@ ht-degree: 0%
    >
    >要使[!DNL Experience Manager]能够解析图像，请执行以下操作：
    >
-   >* 创建[!DNL InDesign]模板时嵌入图像（请参阅[关于链接和嵌入的图形](https://helpx.adobe.com/indesign/using/graphics-links.html)）。
+   >* 创建[!DNL InDesign]模板时嵌入图像（请参阅[关于链接和嵌入的图形](https://helpx.adobe.com/cn/indesign/using/graphics-links.html)）。
    >* 将[!DNL Experience Manager]装载到本地文件系统，然后将缺少的图标映射到[!DNL Experience Manager]中的现有资源。
    >
 
