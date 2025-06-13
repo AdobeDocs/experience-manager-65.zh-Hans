@@ -6,9 +6,9 @@ role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1558'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 资产模板是一类特殊的资产，有助于快速调整视觉内容用途，以便用于数字和印刷媒体。 资产模板包括固定消息传递部分和可编辑部分两部分。 固定消息部分可以包含专有内容，例如禁用编辑的品牌徽标和版权信息。 可编辑部分可在可编辑以自定义消息传递的字段中包含可视和文本内容。
 
-在保护全局标牌的同时进行有限编辑的灵活性使资产模板成为快速内容调整和分发的理想构建块，可作为各种功能的内容构件。 重新调整内容用途有助于降低管理打印和数字渠道的成本，并在这些渠道中提供全面、一致的体验。
+资产模板提供了灵活性，可以进行有限的编辑，同时保证全局标牌的安全。 这种能力使他们成为在各种功能中快速调整和分发内容的理想构建基块。 重新调整内容用途有助于降低管理打印和数字渠道的成本，并在这些渠道中提供全面、一致的体验。
 
-作为营销人员，您可以在[!DNL Experience Manager Assets]中存储和管理模板，并使用单个基本模板轻松创建多个个性化打印体验。 您可以创建各种类型的营销宣传资料，包括小册子、传单、明信片、名片等，以便向客户清楚地传达您的营销信息。 您还可以从现有或新的打印输出组合多页打印输出。 最重要的是，您可以轻松地同时提供数字和打印体验，从而为用户提供一致的集成体验。
+作为营销人员，您可以在[!DNL Experience Manager Assets]中存储和管理模板，并使用单个基本模板轻松创建多个个性化打印体验。 您可以创建各种类型的营销宣传资料，包括小册子、传单、明信片、名片等，以便向客户清楚传达您的营销信息。 您还可以从现有或新的打印输出组合多页打印输出。 最重要的是，您可以轻松地同时提供数字和打印体验，从而为用户提供一致的集成体验。
 
-虽然资产模板大多是[!DNL Adobe InDesign]文件，但熟练掌握[!DNL Adobe InDesign]并不妨碍创建出色的工件。 您不需要将[!DNL Adobe InDesign]模板的字段映射到在创建目录时所需的产品字段。 可直接在Web界面上以WYSIWYG模式编辑模板。 但是，要使[!DNL Adobe InDesign]处理您的编辑更改，您必须首先将[!DNL Experience Manager Assets]配置为与[!DNL Adobe InDesign Server]集成。
+虽然资产模板大多是[!DNL Adobe InDesign]文件，但熟练掌握[!DNL Adobe InDesign]并不妨碍创建出色的工件。 您不需要将[!DNL Adobe InDesign]模板的字段映射到在创建目录时所需的产品字段。 您可以在WYSIWYG模式下直接在Web界面上编辑模板。 但是，要使[!DNL Adobe InDesign]处理您的编辑更改，您必须首先将[!DNL Experience Manager Assets]配置为与[!DNL Adobe InDesign Server]集成。
 
 能够从Web界面编辑[!DNL Adobe InDesign]模板有助于促进创意人员和营销人员之间的更大协作。 提高的内容速度缩短了营销抵押品的上市时间。
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >确保您的[!DNL Experience Manager]部署与[!DNL InDesign Server]集成，以使[!DNL Experience Manager Assets]能够从[!DNL InDesign]模板中提取数据并使其可用于编辑。 有关详细信息，请参阅[将Experience Manager Assets与InDesign Server集成](/help/assets/indesign.md)。
+   >将[!DNL Experience Manager]部署与[!DNL InDesign Server]集成，以便[!DNL Experience Manager Assets]可以从[!DNL InDesign]模板中提取数据并使其可用于编辑。 有关详细信息，请参阅[将Experience Manager Assets与InDesign Server集成](/help/assets/indesign.md)。
 
 1. 要修改可编辑字段中的文本，请单击可编辑字段列表中的文本字段，然后编辑该字段中的文本。
 
@@ -124,17 +124,16 @@ ht-degree: 0%
    >
    >要使[!DNL Experience Manager]能够解析图像，请执行以下操作：
    >
-   >* 创建[!DNL InDesign]模板时嵌入图像（请参阅[关于链接和嵌入的图形](https://helpx.adobe.com/cn/indesign/using/graphics-links.html)）。
-   >* 将[!DNL Experience Manager]装载到本地文件系统，然后将缺少的图标与[!DNL Experience Manager]中的现有资源进行映射。
+   >* 创建[!DNL InDesign]模板时嵌入图像（请参阅[关于链接和嵌入的图形](https://helpx.adobe.com/indesign/using/graphics-links.html)）。
+   >* 将[!DNL Experience Manager]装载到本地文件系统，然后将缺少的图标映射到[!DNL Experience Manager]中的现有资源。
    >
-   >有关使用[!DNL InDesign]文档的更多信息，请参阅使用Experience Manager[&#128279;](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html)中的InDesign文档的最佳实践。
 
 1. 要为宣传册生成PDF演绎版，请选择对话框中的Acrobat选项，然后单击&#x200B;**[!UICONTROL 继续]**。
 1. 宣传品部分是在您开始使用的文件夹中创建的。 要查看格式副本，请打开宣传品，然后从GlobalNav列表中选择&#x200B;**[!UICONTROL 格式副本]**。
 
    ![chlimage_1-118](assets/chlimage_1-323.png)
 
-1. 从格式副本列表中选择PDF格式副本，以便下载PDF文件。 打开PDF文件以查看宣传品。
+1. 从演绎版列表中选择PDF演绎版，以便下载PDF文件。 打开PDF文件以查看宣传资料。
 
    ![chlimage_1-119](assets/chlimage_1-324.png)
 

@@ -8,10 +8,10 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1872'
-ht-degree: 25%
+source-wordcount: '1556'
+ht-degree: 12%
 
 ---
 
@@ -31,7 +31,7 @@ ht-degree: 25%
 
 [!DNL Assets]中支持的光栅图像格式为：
 
-| 格式 | 存储 | 元数据管理 | 元数据提取 | 缩略图生成 | 编辑 | 元数据写回 | 见解 |
+| 格式化 | 存储 | 元数据管理 | 元数据提取 | 缩略图生成 | 编辑 | 元数据写回 | 见解 |
 | ------------ | :------: | :-----------------: | :-----------------: | :------------------: | :------: | :----------------: | :------: |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ |
@@ -42,12 +42,12 @@ ht-degree: 25%
 | PGM | ✓ | ✓ | − | − | − | − | ✓ |
 | PBM | ✓ | ✓ | − | − | − | − | ✓ |
 | PPM | ✓ | ✓ | − | − | − | − | ✓ |
-| PSD‡ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
+| PSD ‡ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | − | ✓ | − |
 | PICT | − | − | − | − | − | − | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
 
-‡将从PSD文件中提取合并的图像。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像不一定是实际图像。
+‡将从PSD文件中提取合并的图像。 它是由Adobe Photoshop生成的图像，包含在PSD文件中。 根据设置，合并的图像不一定是实际图像。
 
 除上述信息外，请考虑以下事项：
 
@@ -61,9 +61,9 @@ ht-degree: 25%
 
 支持以下3D格式列表。
 
-另请参阅[在Dynamic Media中使用3D资源。](/help/assets/assets-3d.md)
+另请参阅[在Dynamic Media中使用3D资产。](/help/assets/assets-3d.md)
 
-| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media投放 |
+| 格式化 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | 缩略图预览 | 3D预览 | Dynamic Media投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | DN | ✓ | ✓ | ✓ | | ✓ | ✓ | − | − |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
@@ -74,9 +74,9 @@ ht-degree: 25%
 
 ## 支持的PDF光栅器库 {#supported-pdf-rasterizer-library}
 
-Adobe PDF光栅器库为大型且内容密集的[!DNL Adobe Illustrator]和PDF文件生成高质量的缩略图和预览。 Adobe建议为以下内容使用PDF光栅器库：
+Adobe PDF光栅器库为大型且内容密集的[!DNL Adobe Illustrator]和PDF文件生成高质量的缩略图和预览。 Adobe建议将PDF光栅器库用于：
 
-* 要处理的资源密集型AI/PDF文件。
+* 要处理的资源密集型内容密集型AI/PDF文件。
 * AI/PDF文件，默认情况下不为其生成缩略图。
 * 具有Pantone匹配系统(PMS)颜色的AI文件。
 
@@ -84,9 +84,9 @@ Adobe PDF光栅器库为大型且内容密集的[!DNL Adobe Illustrator]和PDF�
 
 ## 支持的图像转码库 {#supported-image-transcoding-library}
 
-Adobe成像转码库是一种图像处理解决方案，它执行核心图像处理功能，如编码、转码、重新取样和调整大小。
+Adobe图像转码库是一种图像处理解决方案，它执行核心图像处理功能，如编码、转码、重新取样和调整大小。
 
-图像转码库支持JPG/JPEG、PNG（8位和16位）、GIF、BMP、TIFF/压缩TIFF(32位TIFF文件和PTIFF文件除外)、ICO和ICN MIME类型。
+图像转码库支持JPG/JPEG、PNG（8位和16位）、GIF、BMP、TIFF/压缩的TIFF(32位TIFF文件和PTIFF文件除外)、ICO和ICN MIME类型。
 
 请参阅[图像转码库](imaging-transcoding-library.md)。
 
@@ -98,7 +98,7 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 
 资产管理功能支持的文档格式如下：
 
-| 格式 | 存储 | [元数据管理](metadata.md) | 全文<br>提取 | [元数据提取](metadata.md) | 缩略图<br>生成 | [子资产提取](managing-linked-subassets.md) | [元数据写回](xmp-writeback.md) | [连接的资产](use-assets-across-connected-assets-instances.md) |
+| 格式化 | 存储 | [元数据管理](metadata.md) | 全文<br>提取 | [元数据提取](metadata.md) | 缩略图<br>生成 | [子资产提取](managing-linked-subassets.md) | [元数据写回](xmp-writeback.md) | [连接的资产](use-assets-across-connected-assets-instances.md) |
 |---|---|---|---|---|---|---|---|---|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | − | ✓ | ✓ | ✓ | ✓ | − |
 | DOC | ✓ | ✓ | ✓ | ✓ | − | − | − | ✓ |
@@ -146,7 +146,7 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 
 下表介绍了支持的存档格式以及常用DAM工作流的适用性。
 
-| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | Dynamic Media交付 |
+| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | Dynamic Media 投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ | − |
@@ -158,7 +158,7 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 
 下面介绍了几种特定文件格式下常用DAM功能的适用性。
 
-| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | Dynamic Media交付 |
+| 格式 | 存储 | 版本控制 | 工作流 | 发布 | 访问控制 | Dynamic Media 投放 |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | CSS | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -174,25 +174,25 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 
 默认情况下，[!DNL Experience Manager]使用文件扩展名检测文件类型。 [!DNL Experience Manager]可以从文件的内容中检测它。 对于后者，在[!DNL Experience Manager] Web控制台的[!UICONTROL Day CQ DAM Mime类型服务]中选择[!UICONTROL 从内容中检测MIME]选项。
 
-在`/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`处的CRXDE Lite中提供了支持的MIME类型列表。
+在CRXDE Lite中`/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`处提供了支持的MIME类型列表。
 
 | 文件扩展名 | MIME类型/ Internet媒体类型 | 默认jobParam值 | 允许的jobParam值 |
 |---|---|---|---|
-| 图像 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 默认jobParam适用于所有图像MIME类型资源。<ul><li>[挖空背景选项](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options.html?lang=zh-Hans)</li><li>[manualCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options.html?lang=zh-Hans)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options.html?lang=zh-Hans)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html?lang=zh-Hans)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options.html?lang=zh-Hans)</li><li>[autoSetCreationOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options.html?lang=zh-Hans)</li><li>[电子邮件设置](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings.html?lang=zh-Hans)</li><li>[xmpKeywords](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords.html?lang=zh-Hans)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options.html?lang=zh-Hans)</li></ul> |
-| 3G2 | video/3gpp2 | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
-| 3GP | video/3gpp | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
+| 图像 | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | 默认jobParam适用于所有图像MIME类型资源。<ul><li>[挖空背景选项](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-knockout-background-options)</li><li>[manualCropOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-manual-crop-options)</li><li>[autoColorCropOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-color-crop-options)</li><li>[autoTransparentCropOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-transparent-crop-options.html)</li><li>[colorManagementOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-color-management-options)</li><li>[autoSetCreationOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-auto-set-creation-options)</li><li>[电子邮件设置](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/sting-constants/r-email-settings)</li><li>[xmpKeywords](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-xmp-keywords)</li><li>[unsharpMaskOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-unsharp-mask-options)</li></ul> |
+| 3G2 | video/3gpp2 | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| 3GP | video/3gpp | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | AAC | audio/x-aac | | |
 | AFM | application/x-font-type1 | | |
-| 人工智能 | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=zh-Hans)</li><li> [illustratorOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=zh-Hans)</li></ul> |
+| 人工智能 | application/postscript | `aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li> [illustratorOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options)</li></ul> |
 | AIFF | audio/x-aiff | | |
-| AVI | video/x-msvideo | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
+| AVI | video/x-msvideo | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | BMP | image/bmp | | |
 | CSS | 文本/CSS | | |
 | DOC | application/msword | | |
 | EPS | <ul><li>application/postscript</li><li>application/eps</li><li>application/x-eps</li><li>image/eps</li><li>image/x-eps</li></ul> | | |
 | F4V | video/x-f4v | | ExcludeMasterVideoFromAVS |
 | FLA | application/x-shockwave-flash | | |
-| FLV | video/x-flv | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
+| FLV | video/x-flv | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | FPX | image/vnd.fpx | | |
 | GIF | image/gif | | |
 | ICC | application/vnd.iccprofile | | |
@@ -200,37 +200,37 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 | INDD | application/x-indesign | | |
 | JPEG | image/jpeg | | |
 | JPG | image/jpeg | | |
-| M2V | video/mpeg | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
-| M4V | video/x-m4v | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
-| MOV | video/quicktime | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
+| M2V | video/mpeg | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| M4V | video/x-m4v | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| MOV | video/quicktime | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | MP3 | audio/mpeg | | |
-| MP4 | video/mp4 | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
-| MPEG | video/mpeg | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
-| MPG | video/mpeg | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
+| MP4 | video/mp4 | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| MPEG | video/mpeg | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
+| MPG | video/mpeg | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | MTS | model/vnd.mts | | |
-| OGV | video/ogg | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
+| OGV | video/ogg | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | OTF | application/x-font-otf | | |
-| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options.html?lang=zh-Hans) |
+| PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-pdf-options) |
 | PFB | application/x-font-type1 | | |
 | PFM | application/x-font-type1 | | |
 | PICT | image/x-pict | | |
 | PNG | image/png | | |
 | PPT | application/vnd.ms-powerpoint | | |
-| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html?lang=zh-Hans)</li><li>[illustratorOptions] (https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html?lang=zh-Hans</li></ul> |
-| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html?lang=zh-Hans)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html?lang=zh-Hans)</li></ul> |
+| PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options)</li><li>[illustratorOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options</li></ul> |
+| PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[photoshopOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options)</li><li>[photoshopLayerOptions](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options)</li></ul> |
 | RTF | application/rtf | | |
 | SVG | image/svg+xml | | |
 | SWF | application/x-shockwave-flash | | |
 | TAR | application/x-tar | | |
-| TIF/TIFF | image/tiff | | |
+| TIF / TIFF | image/tiff | | |
 | 测控 | application/x-font-ttf | | |
 | TTF | application/x-font-ttf | | |
-| VOB | video/dvd | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
+| VOB | video/dvd | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | VTT | text/vtt | | |
 | WAV | audio/x-wav | | |
-| WEBM | video/webm | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
+| WEBM | video/webm | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | WMA | audio/x-ms-wma | | |
-| WMV | video/x-ms-wmv | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls.html?lang=zh-Hans) |
+| WMV | video/x-ms-wmv | | [ExcludeMasterVideoFromAVS](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-production-api/c-deprecated-calls) |
 | XLS | application/vnd.ms-excel | | |
 | ZIP | application/zip | | |
 
@@ -239,7 +239,7 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 | 视频文件扩展名 | 容器 | 推荐的视频编解码器 | 不支持的视频编解码器 |
 |---|---|---|---|
 | AVI | A/V交错 | XVID、DIVX、HDV、MiniDV (DV25)、Techsmith Camtasia、Huffyuv、Fraps、Panasonic DVCPro | Indeo3 (IV30)、MJPEG、Microsoft®视频1(MS-CRAM) |
-| FLV， F4V | AdobeFlash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
+| FLV， F4V | Adobe Flash | H264/AVC、Flix VP6、H263、Sorenson | SWF（矢量动画文件） |
 | M4V | Apple iTunes | H264/AVC | − |
 | MKV | Matroska | H264/AVC | − |
 | MOV， QT | Apple QuickTime | H264/AVC、Apple ProRes422和HQ、Sony XDCAM、Sony DVCAM、HDV、Panasonic DVCPro、Apple DV (DV25)、Apple PhotoJPEG、Sorenson、Avid DNxHD、Avid AVR | Apple中级，Apple动画 |
@@ -254,7 +254,7 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 
 ## Dynamic Media — 支持的文档格式 {#supported-document-formats-dynamic-media}
 
-| 格式 | 上传<br> （输入格式） | 创建<br>图像<br>预设<br>（输出格式） | 预览<br>动态<br>呈现版本 | 投放<br>动态<br>演绎版 | 下载<br>动态<br>呈现版本 |
+| 格式化 | 上传<br> （输入格式） | 创建<br>图像<br>预设<br>（输出格式） | 预览<br>动态<br>呈现版本 | 投放<br>动态<br>演绎版 | 下载<br>动态<br>呈现版本 |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | − | − | − | − |
 | [INDD](managing-image-presets.md#indesign-indd-file-format) | ✓ | − | − | − | − |
@@ -270,11 +270,11 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 
 * 要使用Dynamic Media预览和生成AI文件的动态演绎版，请参阅[Adobe Illustrator (AI)、Postscript (EPS)和PDF文件格式。](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* 要使用Dynamic Media生成INDD文件的动态格式副本，请参阅[InDesign(INDD)文件格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
+* 要使用Dynamic Media为INDD文件生成动态演绎版，请参阅[InDesign (INDD)文件格式](../assets/managing-image-presets.md#indesign-indd-file-format)。
 
 ## Dynamic Media — 支持的栅格图像格式 {#supported-raster-image-formats-dynamic-media}
 
-| 格式 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 投放动态演绎版 | 下载动态演绎版 | 设置支持此格式的类型 |
+| 格式化 | 上传（输入格式） | 创建图像预设（输出格式） | 预览动态演绎版 | 投放动态演绎版 | 下载动态演绎版 | 设置支持此格式的类型 |
 |---|:---:|:---:|:---:|:---:|:---:| --- |
 | AVIF | − | − | − | ✓ | − | − |
 | BMP | ✓ | − | − | − | − | [图像](/help/assets/image-sets.md)、[混合媒体](/help/assets/mixed-media-sets.md)和[旋转](/help/assets/spin-sets.md) |
@@ -284,13 +284,13 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 | JPEG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/image-sets.md)、[混合媒体](/help/assets/mixed-media-sets.md)和[旋转](/help/assets/spin-sets.md) |
 | PICT | ✓ | − | − | − | − | − |
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/image-sets.md)、[混合媒体](/help/assets/mixed-media-sets.md)和[旋转](/help/assets/spin-sets.md) |
-| PSD‡ | ✓ | − | − | − | − | − |
+| PSD ‡ | ✓ | − | − | − | − | − |
 | TIFF | ✓ | ✓ | ✓ | ✓ | ✓ | [图像](/help/assets/image-sets.md)、[混合媒体](/help/assets/mixed-media-sets.md)和[旋转](/help/assets/spin-sets.md) |
 | WEBP | − | − | − | ✓ | − | − |
 
 <!-- AVIF, HEIC, and WebP added to table above on March 4, 2024 based on CQDOC-21294 -->
 
-‡将从PSD文件中提取合并的图像。 它是由Adobe Photoshop生成并包含在PSD文件中的图像。 根据设置，合并的图像不一定是实际图像。
+‡将从PSD文件中提取合并的图像。 它是由Adobe Photoshop生成的图像，包含在PSD文件中。 根据设置，合并的图像不一定是实际图像。
 
 * 对EPS文件的支持仅适用于光栅图像。 例如，默认情况下不支持生成EPS矢量图像的缩略图。 要添加支持，请[配置ImageMagick](best-practices-for-imagemagick.md)。 要集成第三方工具以启用其他功能，请参阅[基于命令行的媒体处理程序](media-handlers.md#command-line-based-media-handler)。
 
@@ -300,16 +300,14 @@ Adobe成像转码库是一种图像处理解决方案，它执行核心图像处
 
 ## Dynamic Media — 不支持的栅格图像格式 {#unsupported-image-formats-dynamic-media}
 
-下表介绍了Dynamic Media中不支持&#x200B;*的*&#x200B;光栅图像文件格式的子类型。
-
-另请参阅[检测Dynamic Media不支持的文件格式](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html)知识库文章。
+以下列表介绍了Dynamic Media中不支持&#x200B;*的*&#x200B;光栅图像文件格式的子类型。
 
 * IDAT区块大小大于100 MB的PNG文件。
 * psb文件。
-* 不支持使用CMYK、RGB、灰度或位图以外的PSD空间颜色文件。 不支持DuoTone、Lab和Indexed色彩空间。
-* PSD位深度大于16的文件。
-* TIFF具有浮点数据的文件。
-* TIFF具有Lab色彩空间的文件。
+* 不支持色彩空间不是CMYK、RGB、灰度或位图的PSD文件。 不支持DuoTone、Lab和Indexed色彩空间。
+* 位深度大于16的PSD文件。
+* 包含浮点数据的TIFF文件。
+* 具有Lab色彩空间的TIFF文件。
 
 <!-- Topic commented out for now as of March 31, 2020. The topic may still need adjustment so it can be published live, or it may be moved into a KB article instead. Just waiting on feedback in CQDOC-15657. - Rick
 ## Unsupported raster image formats in Dynamic Media (#unsupported-image-formats-dynamic-media)
@@ -333,7 +331,7 @@ The following table describes the sub-types of raster image formats that are *no
 
 Dynamic Media支持以下3D格式。
 
-另请参阅[在Dynamic Media中使用3D资源](/help/assets/assets-3d.md)。
+另请参阅[在Dynamic Media中使用3D资产](/help/assets/assets-3d.md)。
 
 | 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
 |---|---|---|---|

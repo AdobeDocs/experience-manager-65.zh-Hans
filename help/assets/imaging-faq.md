@@ -9,9 +9,9 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7fb3ec9654b56605321f0d12a4c1e23d2e18dab9
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '3322'
+source-wordcount: '3300'
 ht-degree: 0%
 
 ---
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->智能成像要求您使用随Adobe Experience Manager - Dynamic Media捆绑的现成CDN（内容分发网络）。 此功能不支持任何其他自定义CDN。
+>智能成像要求您使用与Adobe Experience Manager - Dynamic Media捆绑在一起的现成CDN（内容分发网络）。 此功能不支持任何其他自定义CDN。
 
 >[!TIP]
 >
 >尝试使用Dynamic Media [_快照_](https://snapshot.scene7.com/)来发现Dynamic Media图像修饰符和智能成像的好处。
 >
->Snapshot是一种可视化演示工具，旨在说明Dynamic Media在优化和动态图像投放方面的强大功能。 试验测试图像或Dynamic Media URL，以可视化方式观察各种Dynamic Media图像修饰符的输出，并优化以下各项的智能成像：
+>Snapshot是一种可视化演示工具，旨在说明Dynamic Media在优化和动态图像投放方面的强大功能。 试验测试图像或Dynamic Media URL，以可视化方式观察各种Dynamic Media图像修饰符的输出，并优化以下内容的智能成像：
 >
 >* 文件大小（使用WebP和AVIF交付）
 >* 网络带宽
@@ -42,22 +42,22 @@ ht-degree: 0%
 >
 >要了解使用快照的容易程度，请播放[快照培训视频](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)（3分17秒）。
 
-智能成像与Adobe一流的高级CDN（内容分发网络）服务完全集成，从而进一步提高了性能。 此服务可找到服务器、网络和对等点之间的最佳Internet路由。 它可以找到具有最低延迟和最低数据包丢失率的路由，而不使用Internet上的默认路由。
+智能成像技术与Adobe一流的高级CDN（内容分发网络）服务完全集成，可进一步提升性能。 此服务可找到服务器、网络和对等点之间的最佳Internet路由。 它可以找到具有最低延迟和最低数据包丢失率的路由，而不使用Internet上的默认路由。
 
 以下图像资产示例描述了新增的智能成像优化：
 
 | 图像(URL) | 缩略图 | 大小(JPEG) | 使用智能成像调整大小(WebP) | 使用智能成像调整大小(AVIF) | 使用WebP减少% | AVIF降低% |
 |---|---|---|---|---|---|---|
-| [图像1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![图片1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89% | 37.79% |
-| [图像2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![图片2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
-| [图像3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&amp;fmt=jpg&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![图片3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47% | 60.58% |
-| [图像4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&amp;qlt=85&amp;resmode=bisharp&amp;op_usm=5,0.125,5,0) | ![图片4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25% | 51.85% |
+| [图像1](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_6?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![图片1](/help/assets/assets-dm/picture1.png) | 145 KB | 106 KB | 90.2 KB | 26.89% | 37.79% |
+| [图像2](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_3?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![图片2](/help/assets/assets-dm/picture2.png) | 412 KB | 346 KB | 113 KB | 16.01% | 72.57% |
+| [图像3](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_2?hei=500&fmt=jpg&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![图片3](/help/assets/assets-dm/picture3.png) | 221 KB | 189 KB | 87.1 KB | 14.47% | 60.58% |
+| [图像4](https://techsupport.scene7.com/is/image/TechSupport/SmartImaging_1?hei=500&qlt=85&resmode=bisharp&op_usm=5,0.125,5,0) | ![图片4](/help/assets/assets-dm/picture4.png) | 594 KB | 545 KB | 286 KB | 8.25% | 51.85% |
 
-与上述内容类似，Adobe还使用较大的样本集运行了一项测试。 与WebP相比，AVIF格式提供了20%的额外尺寸缩减，比JPEG提供了27%的缩减。 视觉质量都一样。 与JPEG相比，AVIF的平均尺寸减少了高达41%。
+与上述内容类似，Adobe还使用较大的样本集运行了测试。 与WebP相比，AVIF格式提供了20%的额外尺寸缩减，比JPEG提供了27%的缩减。 视觉质量都一样。 与JPEG相比，AVIF的平均大小缩减率高达41%。
 
-将WebP和AVIF与PNG进行比较，可以看到WebP的大小减少了84%，AVIF的大小减少了87%。 而且，由于WebP和AVIF格式都支持透明度和多种图像动画，因此它非常适合替代透明的PNG和GIF文件。
+将WebP和AVIF与PNG进行比较，可以看到WebP的大小减少了84%，AVIF的大小减少了87%。 此外，由于WebP和AVIF格式都支持透明度和多种图像动画，因此非常适合替代透明的PNG和GIF文件。
 
-另请参阅[使用新一代图像格式（WebP和AVIF）的图像优化](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+另请参阅[使用新一代图像格式（WebP和AVIF）的图像优化](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
 <!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
@@ -84,11 +84,11 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 ### 关于浏览器格式转换(bfc) {#bfc}
 
-通过将`bfc=on`附加到图像URL来启用浏览器格式转换，对于不同的浏览器，可自动将JPEG和PNG转换为有损AVIF、有损WebP、有损JPEGXR、有损JPEG2000。 对于不支持这些格式的浏览器，智能成像将继续提供JPEG或PNG。 智能成像会随着格式更改重新计算新格式的质量。
+通过将`bfc=on`附加到图像URL来启用浏览器格式转换，对于不同的浏览器，自动将JPEG和PNG转换为有损AVIF、有损WebP、有损JPEGXR、有损JPEG2000。 对于不支持这些格式的浏览器，智能成像将继续提供JPEG或PNG。 智能成像会随着格式更改重新计算新格式的质量。
 
 您可以通过将`bfc=off`附加到图像的URL来关闭智能成像。
 
-另请参阅Dynamic Media图像服务和渲染API中的[bfc](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
+另请参阅Dynamic Media图像服务和渲染API中的[bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
 
 ### 关于设备像素比(dpr)优化 {#dpr}
 
@@ -134,13 +134,13 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 * 使用Adobe Sensei技术根据图像请求中指定的质量(`qlt`)进行转换。
 * TTL（生存时间）独立。 以前，智能成像工作必须至少12小时的TTL。
 * 以前，原始图像和派生图像都被缓存，缓存失效需要两步过程。 在最新的智能成像中，仅缓存派生项，从而允许执行单步缓存失效过程。
-* 在规则集中使用自定义标头的客户受益于最新的智能成像，因为与以前的智能成像版本不同，这些标头不会受到阻止。 例如，如[向图像响应添加自定义标头值|Dynamic Media Classic](https://helpx.adobe.com/experience-manager/scene7/kb/base/scene7-rulesets/add-custom-header-val-image.html)中建议的“计时允许来源”和“X-Robot”。
+* 在规则集中使用自定义标头的客户受益于最新的智能成像，因为与以前的智能成像版本不同，这些标头不会受到阻止。
 
 ## 常见问题解答
 
 +++智能成像是否有任何许可成本？
 
-不会。智能成像随现有许可证一起提供。 这条规则适用于Dynamic Media Classic或Experience Manager - Dynamic Media(内部部署、AMS和Experience Manageras a Cloud Service)。
+不行。智能成像随现有许可证一起提供。 这条规则适用于Dynamic Media Classic或Experience Manager - Dynamic Media(内部部署、AMS和Experience Manager as a Cloud Service)。
 
 >[!NOTE]
 >
@@ -161,7 +161,7 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
   |---|---|
   | AVIF | [https://caniuse.com/avif](https://caniuse.com/avif) |
   | WebP | [https://caniuse.com/webp](https://caniuse.com/webp) |
-  | JPEG2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
+  | JPEG 2000 | [https://caniuse.com/jpeg2000](https://caniuse.com/jpeg2000) |
   | JPEGXR | [https://caniuse.com/jpegxr](https://caniuse.com/jpegxr) |
 
 * 对于不支持这些格式的浏览器，将提供最初请求的图像格式。
@@ -189,7 +189,7 @@ DPR和网络带宽值基于捆绑的CDN所检测到的客户端值。 这些值�
 
 唯一的调整涉及图像格式、质量或两者。 在格式转换过程中，智能成像会根据预设设置保留完整的视觉保真度，但会提供较小的文件大小。 只需通过将`bfc=on`、`dpr=on,dprValue`、`network=on`或全部三个参数设置添加到现有URL或预设中即可启用它。
 
-例如，假设图像预设指定了500 × 500像素的JPEG格式，即`quality=85`和`unsharp mask=0.1,1,5`。 智能成像可检测用户是否使用Chrome浏览器。 然后，它将图像转换为具有相同尺寸(500 × 500)的WebP以及与JPEG设置相匹配的钝化蒙版。 然后，系统将WebP和JPEG版本的文件大小进行比较，并将较小的文件大小提供给用户。
+例如，假设图像预设指定了500 × 500像素的JPEG格式，即`quality=85`和`unsharp mask=0.1,1,5`。 智能成像可检测用户是否使用Chrome浏览器。 然后，它会将图像转换为具有相同尺寸(500 × 500)的WebP以及与JPEG设置相匹配的钝化蒙版。 然后，系统会比较WebP版本和JPEG版本的文件大小，并将较小版本提供给用户。
 
 +++
 
@@ -217,7 +217,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 智能成像功能可立即供所有客户使用。 若要开始享受它的好处，只需将`bfc=on`、`dpr=on,dprValue`、`network=on`或全部三个参数设置添加到您现有的URL或预设中。
 
-要使用智能成像，贵公司的Dynamic Media Classic或Dynamic MediaExperience Manager账户必须将Adobe捆绑的CDN（内容分发网络）作为许可证的一部分提供。
+要使用智能成像，贵公司的Dynamic Media Classic或Experience Manager上的Dynamic Media帐户必须将Adobe捆绑的CDN（内容分发网络）作为许可证的一部分提供。
 
 +++
 
@@ -236,7 +236,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 **要创建支持案例以在您的帐户上启用智能成像：**
 
-1. [使用该Admin Console开始创建新的支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
+1. [使用Admin Console开始创建新的支持案例](https://helpx.adobe.com/cn/enterprise/using/support-for-experience-cloud.html)。
 1. 在您的支持案例中提供以下信息：
 
    * **主要联系人详细信息：**
@@ -255,7 +255,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * 列出所有相关域，如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
       * 智能成像支持通用域和自定义域。
-      * 要识别您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后登录到您的公司帐户。
+      * 要识别您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后登录到您的公司帐户。
 
          1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
          1. 查找&#x200B;**[!UICONTROL 发布的服务器名称]**&#x200B;字段以确认您的域。
@@ -266,13 +266,13 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
       * 指定是否需要智能成像来处理HTTP/2。
 
 1. 默认情况下，Adobe客户支持会启用所请求的智能成像功能，而无需手动将参数附加到URL。
-1. Adobe建议将生存时间(TTL)设置为至少24小时，以通过缓存来最大化性能。
+1. Adobe建议将生存时间(TTL)设置为至少24小时，以通过缓存最大限度地提高性能。
 要调整TTL，请执行以下操作：
 
    1. Dynamic Media Classic的&#x200B;**：**
-      1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL Publish设置]** > **[!UICONTROL 图像服务器]**。
+      1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 发布设置]** > **[!UICONTROL 图像服务器]**。
       1. 将&#x200B;**[!UICONTROL 默认客户端缓存生存时间]**&#x200B;值设置为24小时或更长。
-   1. Adobe Experience Manager上的Dynamic Media的&#x200B;**：**
+   1. 适用于Adobe Experience Manager上的Dynamic Media的&#x200B;**：**
       1. 按照[这些说明](/help/assets/dm-publish-settings.md#common-thumbnail-attributes-tab)操作。
       1. 将&#x200B;**[!UICONTROL Expiration]**&#x200B;值设置为24小时或更长时间。
 
@@ -284,13 +284,13 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 >[!NOTE]
 >
->由于启用智能成像需要Adobe清除缓存，因此可能会存在较长的准备时间。 因此，在任何给定时间只能处理少数客户过渡。
+>由于启用智能成像涉及Adobe清除缓存，因此可能会存在较长的准备时间。 因此，在任何给定时间只能处理少数客户过渡。
 
 +++
 
 +++切换到“智能成像”有何风险？
 
-客户网页没有风险。 但是，过渡到智能成像确实会清除CDN缓存。 该操作涉及在Experience Manager时移动到Dynamic Media Classic或Dynamic Media的新配置。
+客户网页没有风险。 但是，过渡到智能成像确实会清除CDN缓存。 此操作涉及在Experience Manager上迁移到Dynamic Media Classic或Dynamic Media的新配置。
 
 在初始过渡期间，未缓存的图像直接点击Adobe的原始服务器，直到再次重建缓存为止。 因此，Adobe计划一次处理几个客户过渡，以便在从源拉取请求时保持可接受的性能。 对于大多数客户，会在1 - 2天内在CDN上再次完全构建缓存。
 
@@ -311,7 +311,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 >[!NOTE]
 >
->并非所有图像都会被转换。 智能成像可决定转换是否可以改善性能。 有时，当没有预期的性能增益或格式不是JPEG或PNG时，图像不会转换。
+>并非所有图像都会被转换。 智能成像可决定转换是否可以改善性能。 有时，当没有预期的性能提升或格式不是JPEG或PNG时，不会转换图像。
 
 ![image2017-11-14_15398](/help/assets/assets/image2017-11-14_15398.png)
 
@@ -327,18 +327,18 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 * 智能成像为公司服务。
 * 正值表示转换成功。 在这种情况下，将返回新的WebP图像。
-* 负值表示转换不成功。 在这种情况下，将返回原始请求的图像(如果未指定，则默认为JPEG)。
+* 负值表示转换不成功。 在这种情况下，将返回请求的原始图像(如果未指定，则默认为JPEG)。
 * 正值显示请求的图像和新图像之间的字节数差异。 在上面的示例中，保存的字节数为`75048`，即一个图像的大约75 KB。
 * 负值表示所请求的图像小于新图像。 虽然显示的是负大小差异，但提供的图像只是请求的原始图像。
 
 >[!NOTE]
 >
->**XAdobe智能成像= -1，正在传递WebP**
+>**X-Adobe-Smart-Imaging = -1，正在传递WebP**
 >
 >如果`X-Adobe-Smart-Imaging`的值为–1且仍在传递WebP，则智能成像处于活动状态。 但是，由于缓存已过时，未计算大小优势。 您可以在图像的URL中使用`cache=update`（仅限一次）来解决此问题。
->使用修饰符的示例：
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->要使整个缓存失效，必须创建支持案例。
+>>使用修饰符的示例：
+>>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>>要使整个缓存失效，必须创建支持案例。
 
 +++
 
@@ -400,7 +400,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++智能成像是自动调整百分比质量输出设置，还是手动调整且适用于所有图像的设置？ 在什么范围内？
 
-智能成像可自动调整质量百分比。 该质量使用Adobe开发的机器学习算法来确定。 此百分比不特定于范围。
+智能成像可自动调整质量百分比。 此质量使用Adobe开发的机器学习算法来确定。 此百分比不特定于范围。
 
 +++
 
@@ -416,7 +416,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++为什么JPEG图像有时会返回到Chrome而不是WebP？
++++为何JPEG图像有时会返回到Chrome而不是WebP？
 
 智能成像可确定转换是否有效。 它只返回转换有利的新图像。
 

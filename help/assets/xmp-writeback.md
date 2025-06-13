@@ -7,9 +7,9 @@ feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '780'
 ht-degree: 6%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 6%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/xmp-metadata) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Experience Manager Assets]中的此XMP写回功能将元数据更改复制到原始资源的演绎版。 当您从Assets中更改资源的元数据或上传资源时，所做的更改最初存储在资源层次结构的元数据节点中。
@@ -37,7 +37,7 @@ ht-degree: 6%
 
 ## 启用XMP写回 {#enable-xmp-writeback}
 
-若要在上传资源时允许将元数据更改传播到资源的演绎版，请在Configuration Manager中修改&#x200B;**[!UICONTROL Adobe CQ DAM Rendition Maker]**&#x200B;配置。
+若要在上传资产时允许将元数据更改传播到资产的演绎版，请在Configuration Manager中修改&#x200B;**[!UICONTROL Adobe CQ DAM Rendition Maker]**&#x200B;配置。
 
 1. 要打开配置管理器，请访问`https://[aem_server]:[port]/system/console/configMgr`。
 1. 打开&#x200B;**[!UICONTROL Adobe CQ DAM Rendition Maker]**&#x200B;配置。
@@ -70,8 +70,6 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->有关64位Linux中的XMP回写问题，请参见[如何在64位RedHat Linux上启用XMP回写](https://helpx.adobe.com/experience-manager/kb/enable-xmp-write-back-64-bit-redhat.html)。
->
 >有关支持的平台，请参阅[XMP元数据回写先决条件](/help/sites-deploying/technical-requirements.md#requirements-for-aem-assets-xmp-metadata-write-back)。
 
 ## 筛选XMP元数据 {#filtering-xmp-metadata}
@@ -80,19 +78,19 @@ ht-degree: 6%
 
 使用阻止列表进行筛选时，您可以导入所有XMP元数据属性，但为排除项指定的属性除外。 但是，对于具有大量XMP元数据的资源类型（例如，具有10,000个属性的1000个节点），并不总是预先知道要过滤的节点的名称。 如果使用阻止列表进行筛选，则允许导入大量包含许多XMP元数据的资源，则[!DNL Experience Manager]部署可能会遇到稳定性问题，例如，观察队列拥塞。
 
-通过允许列表过滤XMP元数据通过允许您定义要导入的XMP属性来解决此问题。 这样，任何其他或未知的XMP属性都将被忽略。 为了向后兼容，您可以将其中某些属性添加到使用阻止列表的过滤器中。
+通过允许列表过滤XMP元数据通过允许您定义要导入的XMP属性来解决此问题。 这样，任何其他或未知的XMP资产都将被忽略。 为了向后兼容，您可以将其中某些属性添加到使用阻止列表的过滤器中。
 
 >[!NOTE]
 >
->过滤仅适用于从资产二进制文件中的XMP源派生的属性。 对于从非XMP源（如EXIF和IPTC格式）派生的属性，无法进行筛选。 例如，资源创建日期以EXIFTIFF存储在名为`CreateDate`的属性中。 Experience Manager将此值存储在名为`exif:DateTimeOriginal`的元数据字段中。 由于源是非XMP源，因此无法对此属性进行筛选。
+>过滤仅适用于从资产二进制文件中的XMP源派生的属性。 对于从非XMP源(如EXIF和IPTC格式)派生的属性，筛选不起作用。 例如，资源创建日期存储在EXIF TIFF中名为`CreateDate`的属性中。 Experience Manager将此值存储在名为`exif:DateTimeOriginal`的元数据字段中。 由于源是非XMP源，因此对此资产无法进行筛选。
 
 1. 要打开配置管理器，请访问`https://[aem_server]:[port]/system/console/configMgr`。
 1. 打开&#x200B;**[!UICONTROL Adobe CQ DAM XmpFilter]**&#x200B;配置。
-1. 要通过允许列表列入允许列表应用筛选，请选择&#x200B;**[!UICONTROL 将应用于XMP属性]**，然后在&#x200B;**[!UICONTROL 允许的XML名称用于XMP筛选]**&#x200B;框中指定要导入的属性。
+1. 要通过允许列表列入允许列表应用筛选，请选择&#x200B;**[!UICONTROL 将应用于XMP属性]**，然后在&#x200B;**[!UICONTROL XMP筛选的XML名称允许]**&#x200B;框中指定要导入的属性。
 
    ![chlimage_1-136](assets/chlimage_1-347.png)
 
-1. 要在通过允许列表应用过滤后过滤掉阻止的XMP属性，请在&#x200B;**[!UICONTROL 用于XMP过滤的阻止的XML名称]**&#x200B;框中指定这些属性。
+1. 要在通过允许列表应用过滤后过滤掉阻止的XMP属性，请在&#x200B;**[!UICONTROL 用于XMP过滤的阻止XML名称]**&#x200B;框中指定这些属性。
 
    >[!NOTE]
    >

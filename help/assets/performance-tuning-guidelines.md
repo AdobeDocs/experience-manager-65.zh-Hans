@@ -1,5 +1,5 @@
 ---
-title: 性能调整 [!DNL Assets]。
+title: 性能调整 [!DNL Assets]
 description: 有关 [!DNL Experience Manager] 配置、更改硬件、软件和网络组件的建议和指导，以消除瓶颈并优化 [!DNL Experience Manager Assets]的性能。
 contentOwner: AG
 mini-toc-levels: 1
@@ -7,9 +7,9 @@ role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '2728'
+source-wordcount: '2729'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 此外，确定并遵守某些硬件和软件优化准则有助于奠定坚实的基础，使您的[!DNL Experience Manager Assets]部署能够满足有关性能、可扩展性和可靠性的期望。
 
-[!DNL Experience Manager Assets]中的性能不佳可能会影响用户关于交互性能、资产处理、下载速度和其他方面的体验。
+[!DNL Experience Manager Assets]中的性能不佳可能会影响用户在交互性能、资产处理、下载速度和其他方面的体验。
 
 事实上，在为任何项目建立目标指标之前，您必须先执行性能优化这项基本任务。
 
@@ -30,13 +30,13 @@ ht-degree: 0%
 
 ## Platform {#platform}
 
-虽然Experience Manager在多个平台上都有支持，但Adobe发现对Linux和Windows上的本机工具支持度最高，这有助于实现最佳性能和易用性。 理想情况下，您应该部署64位操作系统以满足[!DNL Experience Manager Assets]部署的高内存要求。 与任何Experience Manager部署一样，您应尽可能实施TarMK。 虽然TarMK不能扩展至超过单个创作实例，但发现其性能优于MongoMK。 您可以添加TarMK卸载实例以提高[!DNL Experience Manager Assets]部署的工作流处理能力。
+虽然Experience Manager在多种平台上均受支持，但Adobe发现它最大程度地支持了Linux®和Windows上的本机工具，这有助于优化性能和简化实施。 理想情况下，您应该部署64位操作系统以满足[!DNL Experience Manager Assets]部署的高内存要求。 与任何Experience Manager部署一样，您应尽可能实施TarMK。 虽然TarMK不能扩展至超过单个创作实例，但发现其性能优于MongoMK。 您可以添加TarMK卸载实例以提高[!DNL Experience Manager Assets]部署的工作流处理能力。
 
 ### 临时文件夹 {#temp-folder}
 
-要缩短资产上传时间，请为Java临时目录使用高性能存储。 在Linux和Windows上，可以使用RAM驱动器或固态硬盘。 在基于云的环境中，可以使用等效的高速存储类型。 例如，在Amazon EC2中，[临时驱动器](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)可用于临时文件夹。
+要缩短资产上传时间，请为Java临时目录使用高性能存储。 在Linux®和Windows上，可以使用RAM驱动器或固态硬盘。 在基于云的环境中，可以使用等效的高速存储类型。 例如，在Amazon EC2中，[临时驱动器](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html)可用于临时文件夹。
 
-假定服务器具有足够的内存，请配置RAM驱动器。 在Linux上，运行以下命令以创建8 GB RAM驱动器：
+假定服务器具有足够的内存，请配置RAM驱动器。 在Linux®上，运行以下命令创建8 GB RAM驱动器：
 
 ```shell
 mkfs -q /dev/ram1 800000
@@ -82,7 +82,7 @@ Adobe建议在Java 8上部署[!DNL Experience Manager Assets]以获得最佳性�
 
 在OSGi Web控制台中配置缓冲缓存大小。 在`https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache`，以字节为单位设置属性`cq.dam.image.cache.max.memory`。 例如，1073741824为1 GB(1024 x 1024 x 1024 = 1 GB)。
 
-从Experience Manager6.1 SP1开始，如果您使用`sling:osgiConfig`节点配置此属性，请确保将数据类型设置为“长”。 有关更多详细信息，请参阅[CQBufferedImageCache在资源上传期间使用栈](https://helpx.adobe.com/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html)。
+从Experience Manager 6.1 SP1开始，如果您使用`sling:osgiConfig`节点配置此属性，请确保将数据类型设置为“长”。
 
 ### 共享的数据存储 {#shared-data-stores}
 
@@ -119,8 +119,8 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 您的网络优化策略主要取决于[!DNL Experience Manager]实例的可用带宽量和负载。 常用配置选项（包括防火墙或代理）有助于提高网络性能。 请牢记以下要点：
 
-* 根据您的实例类型（小、中、大），请确保您有足够的网络带宽来支持Experience Manager实例。 如果[!DNL Experience Manager]托管在AWS上，则充足的带宽分配尤其重要。
-* 如果您的[!DNL Experience Manager]实例托管在AWS上，则可以通过使用通用缩放策略受益。 如果用户期望高负载，请放大实例。 在中/低负载时将其缩小。
+* 根据实例类型（小、中、大），请确保您有足够的网络带宽来实施Experience Manager实例。 如果[!DNL Experience Manager]托管在AWS上，则充足的带宽分配尤其重要。
+* 如果您的[!DNL Experience Manager]实例托管在AWS上，则可以通过使用通用缩放策略受益。 如果用户需要高负载，请放大实例。 在中/低负载时将其缩小。
 * HTTPS：大多数用户都设有拦截HTTP流量的防火墙，这可能会在上传操作期间对文件上传产生不利影响，甚至导致文件损坏。
 * 大文件上传：确保用户有有线网络连接（WiFi连接快速饱和）。
 
@@ -146,11 +146,11 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 通常，每周执行清除工作流。 但是，在资源密集型场景中（如在大规模资产摄取期间），您可以更频繁地执行该操作。
 
-要配置工作流清除，请通过OSGi控制台添加新的AdobeGranite工作流清除配置。 接下来，在每周维护时段中配置和计划工作流。
+要配置工作流清除，请通过OSGi控制台添加新的Adobe Granite工作流清除配置。 接下来，在每周维护时段中配置和计划工作流。
 
 如果清除时间过长，则会超时。 因此，您应确保清除作业完成，以避免由于工作流数量过多而导致清除工作流无法完成的情况。
 
-例如，在执行大量非临时工作流（创建工作流实例节点）之后，您可以临时执行[ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html)。 它立即删除多余的已完成的工作流实例，而不是等待AdobeGranite工作流清除计划程序运行。
+例如，在执行大量非临时工作流（创建工作流实例节点）后，您可以临时执行[ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html)。 它立即删除多余的已完成工作流实例，而不是等待Adobe Granite工作流清除计划程序运行。
 
 ### 最大并行作业数 {#maximum-parallel-jobs}
 
@@ -166,7 +166,7 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 ### DAM更新资产配置 {#dam-update-asset-configuration}
 
-[!UICONTROL DAM更新资产]工作流包含为任务配置的整套步骤，例如Dynamic Media PTIFF生成和[!DNL Adobe InDesign Server]集成。 但是，大多数用户可能不需要执行其中的多个步骤。 Adobe建议您创建[!UICONTROL DAM更新资产]工作流模型的自定义副本，并删除任何不必要的步骤。 在这种情况下，请更新[!UICONTROL DAM更新资产]的启动器，以指向新模型。
+[!UICONTROL DAM更新资产]工作流包含为任务配置的整套步骤，例如生成Dynamic Media PTIFF和[!DNL Adobe InDesign Server]集成。 但是，大多数用户可能不需要执行其中的多个步骤。 Adobe建议您创建[!UICONTROL DAM更新资产]工作流模型的自定义副本，并删除任何不必要的步骤。 在这种情况下，请更新[!UICONTROL DAM更新资产]的启动器，以指向新模型。
 
 集中运行[!UICONTROL DAM更新资产]工作流可能会急剧增加文件数据存储的大小。 Adobe的实验结果表明，如果在8小时内执行约5500个工作流，则数据存储大小可以增加约400 GB。
 
@@ -182,7 +182,7 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 许多Sites客户都实施一个图像servlet，该图像服务可在请求图像时调整其大小和裁剪图像，这会对发布实例施加额外的负载。 但是，只要可以缓存这些图像，就可以缓解挑战。
 
-另一种方法是使用Dynamic Media技术完全放弃图像操作。 此外，您可以部署的Brand Portal不仅承担来自[!DNL Experience Manager]基础结构的演绎版生成责任，而且承担整个发布层的责任。
+另一种方法是使用Dynamic Media技术完全放弃图像操作。 此外，您可以部署一个不仅从[!DNL Experience Manager]基础结构接管节目生成职责的Brand Portal，还可以接管整个发布层。
 
 #### ImageMagick {#imagemagick}
 
@@ -211,9 +211,9 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 >[!NOTE]
 >
->ImageMagick `policy.xml`和`configure.xml`文件在`/usr/lib64/ImageMagick-&#42;/config/`而不是`/etc/ImageMagick/`上可用。有关配置文件的位置，请参阅[ImageMagick文档](https://www.imagemagick.org/script/resources.php)。
+>ImageMagick `policy.xml`和`configure.xml`文件在`/usr/lib64/ImageMagick-&#42;/config/`中可用，而不是`/etc/ImageMagick/`。 有关配置文件的位置，请参阅[ImageMagick文档](https://www.imagemagick.org/script/resources.php)。
 
-如果您在AdobeManaged Services (AMS)上使用[!DNL Experience Manager]，如果您计划处理大量大型PSD或PSB文件，请联系Adobe客户支持。 与Adobe客户支持代表合作，为您的AMS部署实施这些最佳实践，并为Adobe的专有格式选择最佳工具和模型。 [!DNL Experience Manager]不能处理超过30000 x 23000像素的超高分辨率PSB文件。
+如果您在Adobe Managed Services (AMS)上使用[!DNL Experience Manager]，如果您计划处理大量大型PSD或PSB文件，请联系Adobe客户支持。 与Adobe客户支持代表合作，为您的AMS部署实施这些最佳实践，并为Adobe的专有格式选择最佳工具和模型。 [!DNL Experience Manager]不能处理超过30000 x 23000像素的超高分辨率PSB文件。
 
 ### XMP写回 {#xmp-writeback}
 
@@ -223,13 +223,13 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 * 将创建资源的版本
 * [!UICONTROL DAM更新资产]已针对该资产运行
 
-列出的结果消耗了相当多的资源。 因此，如果不需要回写，Adobe建议禁用XMP。 有关详细信息，请参阅[XMP写回](/help/assets/xmp-writeback.md)。
+列出的结果消耗了相当多的资源。 因此，Adobe建议在不需要时禁用XMP写回。 有关详细信息，请参阅[XMP写回](/help/assets/xmp-writeback.md)。
 
-如果选中运行工作流标志，则导入大量元数据可能会导致资源密集型XMP写回活动。 在使用精益服务器期间规划此类导入，以便不影响其他用户的性能。
+如果选中运行工作流标志，则导入大量元数据可能会导致资源密集的XMP写回活动。 在使用精益服务器期间规划此类导入，以便不影响其他用户的性能。
 
 ## 复制 {#replication}
 
-将资源复制到大量发布实例（例如，在Sites实施中）时，Adobe建议您使用链复制。 在这种情况下，创作实例将复制到单个发布实例，然后复制到其他发布实例，从而释放创作实例。
+将资产复制到大量发布实例时（例如，在Sites实施中），Adobe建议您使用链复制。 在这种情况下，创作实例将复制到单个发布实例，然后复制到其他发布实例，从而释放创作实例。
 
 ### 配置链复制 {#configure-chain-replication}
 
@@ -239,13 +239,13 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 >[!NOTE]
 >
->Adobe不建议自动激活资源。 但是，如有必要，Adobe建议将此作为工作流中的最后一个步骤，通常是DAM更新资产。
+>Adobe不建议自动激活资源。 但是，如有必要，Adobe建议将此作为工作流的最后步骤，通常是DAM更新资产。
 
 ## 搜索索引 {#search-indexes}
 
-安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/docs/experience-manager-65/assets/administer/performance-tuning-guidelines.html?lang=zh-Hans)。
+安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)。
 
-为经常运行的查询创建自定义索引。 有关详细信息，请参阅用于分析慢查询的[方法](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)和[自定义索引](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的其他见解，请参阅[查询和索引最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
+为经常运行的查询创建自定义索引。 有关详细信息，请参阅用于分析慢查询](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)的[方法和[自定义索引](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的其他见解，请参阅[查询和索引最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 
 ### Lucene索引配置 {#lucene-index-configurations}
 
@@ -256,7 +256,7 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 1. 添加值为`/var`、`/etc/workflow/instances`和`/etc/replication`的`String[]`属性`excludedPaths`。
 1. 浏览到`/oak:index/damAssetLucene`。 添加值为`/content/dam`的`String[]`属性`includedPaths`。 保存更改。
 
-如果您的用户不需要对资源进行全文搜索，例如搜索PDF文档中的文本，然后禁用它。 您可以通过禁用全文索引来提高索引性能。 要禁用[!DNL Apache Lucene]文本提取，请执行以下步骤：
+如果您的用户不需要对资源执行全文搜索，例如在PDF文档中搜索文本，则禁用它。 您可以通过禁用全文索引来提高索引性能。 要禁用[!DNL Apache Lucene]文本提取，请执行以下步骤：
 
 1. 在[!DNL Experience Manager]界面中，访问[!UICONTROL 包管理器]。
 1. 上载并安装位于[disable_indexingbinarytextextraction-10.zip](assets/disable_indexingbinarytextextraction-10.zip)的包。
@@ -282,7 +282,7 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 对于客户的所有网络性能问题，请执行以下任务：
 
 * 测试客户网络中的网络性能
-* 在Adobe网络中测试网络性能。 对于AMS客户，请与您的CSE合作，从Adobe网络中进行测试。
+* 在Adobe网络内测试网络性能。 对于AMS客户，请与您的CSE合作，从Adobe网络中进行测试。
 * 从另一个接入点测试网络性能
 * 使用网络基准测试工具
 * 针对Dispatcher进行测试
@@ -301,12 +301,12 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 * 在Java 8上部署。
 * 设置最佳JVM参数。
 * 配置文件系统数据存储或S3数据存储。
-* 禁用子资源生成。 如果启用，AEM工作流将为多页面资源中的每个页面创建单独的资源。 其中每个页面都是单独的资产，会占用额外的磁盘空间，需要进行版本控制和额外的工作流处理。 如果您不需要单独的页面，请禁用子资产生成和页面提取活动。
+* 禁用子资源生成。 如果启用，AEM的工作流会为多页面资源中的每个页面创建一个单独的资源。 其中每个页面都是单独的资产，会占用额外的磁盘空间，需要进行版本控制和额外的工作流处理。 如果您不需要单独的页面，请禁用子资产生成和页面提取活动。
 * 启用临时工作流。
 * 调整Granite工作流队列以限制并发作业。
 * 配置[!DNL ImageMagick]以限制资源消耗。
 * 从[!UICONTROL DAM更新资产]工作流中删除不必要的步骤。
 * 配置工作流和版本清除。
-* 使用最新的Service Pack和修补程序优化索引。 请联系Adobe客户支持，了解可能提供的任何其他索引优化。
+* 使用最新的Service Pack和修补程序优化索引。 请联系Adobe客户支持，获取任何可能提供的其他索引优化。
 * 使用guessTotal优化查询性能。
 * 如果将[!DNL Experience Manager]配置为从文件内容中检测文件类型(通过在&#x200B;**[!UICONTROL AEM Web Console]**&#x200B;中启用&#x200B;**[!UICONTROL Day CQ DAM Mime Type Service]**)，请在非高峰时间批量上传许多文件，因为它占用大量资源。

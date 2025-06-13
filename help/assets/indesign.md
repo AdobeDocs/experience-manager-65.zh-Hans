@@ -6,10 +6,10 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 75c15b0f0e4de2ea7fff339ae46b88ce8f6af83f
 workflow-type: tm+mt
-source-wordcount: '1555'
-ht-degree: 2%
+source-wordcount: '1550'
+ht-degree: 1%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 2%
 * 用于定义和管理特定任务的代理工作程序。
 这些任务可以涵盖多种任务；例如，使用[!DNL InDesign Server]处理文件。
 
-要将文件完全上载到您使用[!DNL Adobe InDesign]创建的[!DNL Experience Manager Assets]，将使用代理。 这使用代理工作进程与[!DNL Adobe InDesign Server]进行通信，其中运行[脚本](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)以提取元数据并为[!DNL Experience Manager Assets]生成各种演绎版。 代理工作进程在云配置中启用[!DNL InDesign Server]和[!DNL Experience Manager]实例之间的双向通信。
+要将文件完全上载到您使用[!DNL Adobe InDesign]创建的[!DNL Experience Manager Assets]，将使用代理。 这使用代理工作进程与[!DNL Adobe InDesign Server]通信，其中运行脚本以提取元数据并为[!DNL Experience Manager Assets]生成各种演绎版。 代理工作进程在云配置中启用[!DNL InDesign Server]和[!DNL Experience Manager]实例之间的双向通信。
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]作为两个单独的产品提供。 [Adobe InDesign](https://www.adobe.com/products/indesign.html)桌面应用程序，用于为打印和数字分发设计页面布局。 [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)使您能够根据使用[!DNL InDesign]创建的内容，以编程方式创建自动文档。 它作为服务运行，为其[ExtendScript](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)引擎提供接口。脚本使用[!DNL ExtendScript]编写，它类似于[!DNL JavaScript]。 有关[!DNL InDesign]脚本的信息，请参阅[https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)。
+>[!DNL Adobe InDesign]作为两个单独的产品提供。 [Adobe InDesign](https://www.adobe.com/products/indesign.html)桌面应用程序，用于为打印和数字分发设计页面布局。 [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)使您能够根据使用[!DNL InDesign]创建的内容，以编程方式创建自动文档。 它作为一项服务运行，为其ExtendScript引擎提供一个接口。 脚本以[!DNL ExtendScript]编写，它类似于[!DNL JavaScript]。
 
 ## 提取的工作原理 {#how-the-extraction-works}
 
@@ -43,18 +43,18 @@ ht-degree: 2%
    * 执行[!DNL InDesign Server]命令：
 
       * 将提取结构、文本和任何媒体文件。
-      * 将生成PDF和JPG演绎版。
+      * PDF和JPG呈现版本会生成。
       * 将生成HTML和IDML演绎版。
 
-   * 将生成的文件Post回[!DNL Experience Manager Assets]。
+   * 将结果文件发布回[!DNL Experience Manager Assets]。
 
    >[!NOTE]
    >
-   >IDML是一种基于XML的格式，它呈现[!DNL InDesign]文件的所有内容。 它使用[ZIP](https://www.techterms.com/definition/zip)压缩存储为压缩包。 有关详细信息，请参阅[InDesign交换格式INX和IDML](https://www.peachpit.com/articles/article.aspx?p=1381880&amp;seqNum=8)。
+   >IDML是一种基于XML的格式，它呈现[!DNL InDesign]文件的所有内容。 它作为压缩包使用[ZIP](https://techterms.com/definition/zip)压缩存储。 有关详细信息，请参阅[InDesign交换格式INX和IDML](https://www.peachpit.com/promotions/adobe-creative-cloud-2024-release-books-ebooks-and-142536)。
 
    >[!CAUTION]
    >
-   >如果未安装或未配置[!DNL InDesign Server]，则仍可将INDD文件上载到[!DNL Experience Manager]。 但是，生成的演绎版仅限于PNG和JPEG。 您将无法生成HTML、.idml或页面呈现版本。
+   >如果未安装或未配置[!DNL InDesign Server]，则仍可将INDD文件上载到[!DNL Experience Manager]。 但是，生成的演绎版仅限于PNG和JPEG。 您将无法生成HTML、`.idml`或页面呈现版本。
 
 1. 提取和演绎版生成后：
 
@@ -69,7 +69,7 @@ ht-degree: 2%
 1. [安装InDesign Server](#installing-the-indesign-server)。
 1. 如有必要，[配置Experience Manager Assets工作流](#configuring-the-aem-assets-workflow)。
 仅当默认值不适用于您的实例时，才需要执行此操作。
-1. 为InDesign Server[&#128279;](#configuring-the-proxy-worker-for-indesign-server)配置Proxy Worker。
+1. 为InDesign Server](#configuring-the-proxy-worker-for-indesign-server)配置[代理工作程序。
 
 ### 安装[!DNL InDesign Server] {#installing-the-indesign-server}
 
@@ -83,7 +83,7 @@ ht-degree: 2%
 
    `<*ids-installation-dir*>/InDesignServer.com -port 8080`
 
-   这将启动服务器，并在端口8080上侦听SOAP插件。 所有日志消息和输出都直接写入命令窗口。
+   这将启动服务器，其中的SOAP插件侦听端口8080。 所有日志消息和输出都直接写入命令窗口。
 
    >[!NOTE]
    >
@@ -97,7 +97,7 @@ ht-degree: 2%
 * [媒体提取](#media-extraction)
 * [页面提取](#page-extraction)
 
-此工作流设置了默认值，这些默认值可适用于您在各种创作实例上的设置（这是一个标准工作流，因此可在[编辑工作流](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)下获得更多信息）。 如果使用默认值(包括SOAP端口)，则无需配置。
+此工作流设置了默认值，这些默认值可适用于您在各种创作实例上的设置（这是标准工作流，因此可在[编辑工作流](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)下获得更多信息）。 如果您使用的是默认值(包括SOAP端口)，则无需配置。
 
 设置后，将[!DNL InDesign]文件上传到[!DNL Experience Manager Assets]（通过任何常用方法）会触发工作流处理资源并准备各种演绎版。 通过将INDD文件上传到[!DNL Experience Manager Assets]测试您的配置，以确认您看到由`<*your_asset*>.indd/Renditions`下的ID创建的不同演绎版
 
@@ -111,7 +111,7 @@ ht-degree: 2%
 
 媒体提取参数和脚本路径
 
-* **ExtendScript库**：这是其他脚本所需的简单http get/post方法库。
+* **ExtendScript库**：这是一个简单的http get/post方法库，是其他脚本所必需的。
 
 * **扩展脚本**：您可以在此处指定不同的脚本组合。 如果您希望在[!DNL InDesign Server]上执行自己的脚本，请将脚本保存在`/apps/settings/dam/indesign/scripts`。
 
@@ -123,13 +123,13 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 >
 >请勿更改ExtendScript库。 此库提供与Sling通信所需的HTTP功能。 此设置指定要发送到[!DNL InDesign Server]以供在那里使用的库。
 
-媒体提取工作流步骤运行的`ThumbnailExport.jsx`脚本会生成JPG格式的缩略图演绎版。 进程缩略图工作流步骤使用此格式副本来生成[!DNL Experience Manager]所需的静态格式副本。
+通过媒体提取工作流步骤运行的`ThumbnailExport.jsx`脚本会生成JPG格式的缩略图演绎版。 进程缩略图工作流步骤使用此格式副本来生成[!DNL Experience Manager]所需的静态格式副本。
 
 您可以配置流程缩略图工作流步骤以生成不同大小的静态呈现版本。 请确保不删除默认值，因为[!DNL Experience Manager Assets]接口需要这些默认值。 最后，“删除图像预览演绎版”工作流步骤会删除JPG缩略图演绎版，因为不再需要它。
 
 #### 页面提取 {#page-extraction}
 
-这会从提取的元素创建一个[!DNL Experience Manager]页面。 提取处理程序用于从演绎版(当前为HTML或IDML)中提取数据。 然后，使用此数据通过PageBuilder创建页面。
+这会从提取的元素创建一个[!DNL Experience Manager]页面。 提取处理程序用于从演绎版(当前为HTML或IDML)中提取数据。 然后，使用此数据通过页面生成器创建页面。
 
 要进行自定义，可以编辑&#x200B;**[!UICONTROL 页面提取]**&#x200B;步骤的&#x200B;**[!UICONTROL 参数]**&#x200B;选项卡。
 
@@ -154,7 +154,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 >
 >Worker驻留在代理实例上。
 
-1. 在“工具”控制台中，展开左窗格中的&#x200B;**[!UICONTROL Cloud Service配置]**。 然后展开&#x200B;**[!UICONTROL 云代理配置]**。
+1. 在“工具”控制台中，展开左窗格中的&#x200B;**[!UICONTROL 云服务配置]**。 然后展开&#x200B;**[!UICONTROL 云代理配置]**。
 
 1. 双击 **[!UICONTROL IDS worker]** 以打开进行配置。
 
@@ -184,7 +184,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 您现在可以为IDS启用并行作业处理。 确定[!DNL InDesign Server]可以处理的并行作业的最大数目(`x`)：
 
 * 在单个多处理器计算机上，[!DNL InDesign Server]可以处理的并行作业的最大数量(`x`)比运行ID的处理器数量少一个。
-* 在多台计算机上运行ID时，您需要计算可用处理器的总数（即所有计算机上的处理器总数），然后减去计算机总数。
+* 当在多台计算机上运行ID时，需要计算可用处理器的总数（即在所有计算机上），然后减去计算机总数。
 
 要配置并行IDS作业的数量，请执行以下操作：
 
@@ -198,8 +198,8 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
    * **最大并行作业数** - `<*x*>`（如上计算）
 
 1. 保存这些更改。
-1. 要为AdobeCS6及更高版本启用多会话支持，请在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`配置下选中`enable.multisession.name`复选框。
-1. 通过将SOAP端点添加到IDS Worker配置[&#128279;](#configuring-the-proxy-worker-for-indesign-server)中，创建`x` IDS Worker的池。
+1. 要为Adobe CS6及更高版本启用多会话支持，请在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`配置下选中`enable.multisession.name`复选框。
+1. 通过将SOAP端点添加到IDS Worker配置](#configuring-the-proxy-worker-for-indesign-server)中，创建`x` IDS Worker的[池。
 
    如果有多台计算机运行[!DNL InDesign Server]，请为每台计算机添加SOAP端点（每台计算机的处理器数–1）。
 
@@ -209,7 +209,7 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!NOTE]
 >
->在使用工作进程池时，您可以启用IDS工作进程的阻止列表。
+>在使用工作线程池时，您可以启用IDS工作线程的阻止列表。
 >
 >为此，请在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`配置下启用&#x200B;**[!UICONTROL enable.retry.name]**&#x200B;复选框，该复选框启用IDS作业重试。
 >
