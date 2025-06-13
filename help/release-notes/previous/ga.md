@@ -21,7 +21,7 @@ ht-degree: 3%
 | 版本 | 6.5 |
 | 类型 | 主要版本 |
 | 正式发布日期 | 2019 年 4 月 8 日 |
-| 建议的更新 | 查看[AEM最近更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)。 |
+| 建议的更新 | 查看[AEM最近更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans)。 |
 
 ### Trivia {#trivia}
 
@@ -140,7 +140,7 @@ AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务�
 * 使用动态占位符，按位置或配置数据触发的内容进行个性化。
 * 由Adobe Analytics集成到AEM Screens Player驱动的统一见解
 
-有关AEM Screens更改的更多详细信息 — 请参阅[AEM Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)中的发行说明。
+有关AEM Screens更改的更多详细信息 — 请参阅[AEM Screens用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)中的发行说明。
 
 #### 组件和模板开发 {#component-amp-template-development}
 
@@ -257,7 +257,7 @@ AEM可以以各种格式和从栈栈的各个级别提供内容。 一些服务�
 
 #### AEM和Commerce {#aem-commerce}
 
-Commerce integration framework的改进自AEM 6.4之后加快了发布周期。使用Commerce integration framework[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)从AEM和Adobe Commerce集成中了解更多信息。
+Commerce integration framework的改进自AEM 6.4之后加快了发布周期。使用Commerce integration framework[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=zh-Hans)从AEM和Adobe Commerce集成中了解更多信息。
 
 #### Communities加载项 {#communities-add-on}
 
@@ -362,7 +362,7 @@ AEM 6.5引入了以下功能和增强功能，以提高AEM用户、DAM角色以�
 
 [!DNL Experience Manager Assets Brand Portal]帮助您轻松获取、有效控制并安全地跨设备将批准的资产分发给外部供应商/代理和内部业务用户。 它有助于提高资产共享效率，加快资产上市速度，并消除不合规使用和未经授权访问的风险。
 
-有关详细信息，请参阅[Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
+有关详细信息，请参阅[Brand Portal的新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hans)。
 
 #### 连接的资产 {#connectedassets}
 
@@ -378,7 +378,7 @@ AEM 6.5引入了以下功能和增强功能，以提高AEM用户、DAM角色以�
 
 [!DNL Dynamic Media]在[!DNL Experience Manager Assets]中提供增强的富媒体创作和交付，以推动沉浸式个性化前沿体验。 通过上传单个高质量主资源并使用Adobe的高级云渲染和查看器，您可以动态提供演绎版的任意组合以支持贵组织的媒体策略。
 
-有关新[!DNL Dynamic Media]功能的更多详细信息，请参阅[Dynamic Media发行说明](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html)。
+有关新[!DNL Dynamic Media]功能的更多详细信息，请参阅[Dynamic Media发行说明](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=zh-Hans)。
 
 ##### 360视频支持 {#video-support}
 
@@ -390,7 +390,7 @@ AEM 6.5引入了以下功能和增强功能，以提高AEM用户、DAM角色以�
 
 ##### 辅助功能增强功能 {#accessibility-enhancements}
 
-[!DNL Dynamic Media]查看器现在支持Aria支持、屏幕阅读器和Alt-text等增强的辅助功能。 有关其他详细信息，请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)。
+[!DNL Dynamic Media]查看器现在支持Aria支持、屏幕阅读器和Alt-text等增强的辅助功能。 有关其他详细信息，请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=zh-Hans)。
 
 #### 搜索体验增强功能 {#experience-enhancement-for-searching}
 
@@ -437,7 +437,7 @@ AEM 6.5 Forms引入了几项新增功能和增强功能。 这些亮点包括：
 
 Adobe使用以客户为中心的开发模型，允许客户在规范、开发和测试过程中参与开发流程的所有阶段。 在此过程中，我们感谢所有参与的客户和合作伙伴。
 
-Adobe已制定程序和流程，以便能够收集、优先处理和跟踪以客户为中心的错误解决和增强请求开发。 [Experience Manager支持门户](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)已与Adobe增强和缺陷跟踪系统集成。 客户支持团队会尽可能识别和解决客户问题。 在升级至R&amp;D时，将捕获所有客户信息，并用于优先级和报告目的。 在开发中优先考虑付费支持、被保证人问题和客户付费的增强功能。
+Adobe已制定程序和流程，以便能够收集、优先处理和跟踪以客户为中心的错误解决和增强请求开发。 [Experience Manager支持门户](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager#support)已与Adobe增强和缺陷跟踪系统集成。 客户支持团队会尽可能识别和解决客户问题。 在升级至R&amp;D时，将捕获所有客户信息，并用于优先级和报告目的。 在开发中优先考虑付费支持、被保证人问题和客户付费的增强功能。
 
 此优先级划分流程已在AEM 6.5中修复了750多项以客户为中心的更改。
 
@@ -447,7 +447,7 @@ Adobe已制定程序和流程，以便能够收集、优先处理和跟踪以客
 
 * 独立快速入门： `cq-quickstart-6.5.0.jar`。
 * 应用程序服务器快速启动： `cq-quickstart-6.5.0.war`。
-* 适用于各种Web服务器和平台的Dispatcher 4.3.2或更高版本。 查看[下载链接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)
+* 适用于各种Web服务器和平台的Dispatcher 4.3.2或更高版本。 查看[下载链接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=zh-Hans)
 * 适用于Eclipse IDE的插件（[阅读更多内容并下载](/help/sites-developing/aem-eclipse.md)）
 
 * Brackets代码编辑器的扩展（[阅读更多内容并下载](/help/sites-developing/aem-brackets.md)）
@@ -480,7 +480,7 @@ Adobe已制定程序和流程，以便能够收集、优先处理和跟踪以客
 
 **Forms**
 
-* 用于AEM Forms功能的[包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
+* 用于AEM Forms功能的[包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)
 * [AEM Forms OSGi客户端SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## 语言 {#languages}
@@ -599,4 +599,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)上其他功能的产品更新、修补程序和软件包。
 
-* 通过Admin Console[客户支持](https://adminconsole.adobe.com/)。 有关详细信息，请参阅[新的Adobe客户支持体验](https://experienceleague.adobe.com/docs/customer-one/using/home.html)。
+* 通过Admin Console[客户支持](https://adminconsole.adobe.com/)。 有关详细信息，请参阅[新的Adobe客户支持体验](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hans)。

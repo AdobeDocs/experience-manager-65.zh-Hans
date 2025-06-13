@@ -421,7 +421,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 在将资源推送到Dynamic Media Classic而不发布它们之前，您必须设置以下设置：
 
 1. [使用Admin Console创建支持案例](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 在您的支持案例中，请求为您的Dynamic Media Classic帐户启用安全预览。
-1. [为您的Dynamic Media Classic帐户设置安全预览](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html)。
+1. [为您的Dynamic Media Classic帐户设置安全预览](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=zh-Hans)。
 
 这些步骤与在Dynamic Media Classic中创建任何安全测试设置时所遵循的步骤相同。
 
@@ -450,7 +450,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 1. 选择&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。
 1. 在&#x200B;**[!UICONTROL 启用安全视图]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 在AEM发布激活时]**&#x200B;以将资产推送到Dynamic Media Classic而不发布。 (默认情况下，此值设置为&#x200B;**[!UICONTROL 立即]**，其中立即发布Dynamic Media Classic资源。)
 
-   有关在公开资源之前测试资源的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html)。
+   有关在公开资源之前测试资源的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=zh-Hans)。
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -565,7 +565,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 
    例如，`psprocess="rasterize"&psresolution=120` 。
 
-   有关您可以使用的更多上载作业参数，请参阅[Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html)。
+   有关您可以使用的更多上载作业参数，请参阅[Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=zh-Hans)。
 
    >[!NOTE]
    >

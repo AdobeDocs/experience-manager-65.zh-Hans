@@ -312,7 +312,7 @@ WCAG 2.0包含一系列独立于技术的准则和成功标准，旨在确保残
 
 * [了解成功标准 1.2.3](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html)：
 * [如何达到成功标准 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://helpx.adobe.com/premiere-pro/using/whats-new.html)
+* [Adobe Encore CS5](https://helpx.adobe.com/cn/premiere-pro/using/whats-new.html)
 
 ### 字幕（实时）(1.2.4)  {#captions-live}
 
