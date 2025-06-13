@@ -126,7 +126,7 @@ ht-degree: 4%
 
 利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅[搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/search-and-discovery/search-boost)。
 
->[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
+>[!VIDEO](https://video.tv.adobe.com/v/3410334/?quality=6&captions=chi_hans)
 
 *视频：了解搜索结果的排名方式以及排名会受到何种影响。*
 
