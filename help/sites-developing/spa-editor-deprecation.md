@@ -4,13 +4,13 @@ description: 尽管SPA编辑器仍受Adobe支持，但请了解它弃用对您�
 feature: Developing
 role: Admin, Architect, Developer
 exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
-index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: d619c969604119a8686050fdc34d77c0ffee33cf
 workflow-type: tm+mt
 source-wordcount: '910'
 ht-degree: 1%
 
 ---
+
 
 # SPA 编辑器弃用 {#spa-editor-deprecation}
 
@@ -51,7 +51,7 @@ Adobe已在AEM 6.5的[版本6.5.23，](/help/release-notes/release-notes.md#spa-
 
 * **[通用编辑器](/help/sites-developing/universal-editor/introduction.md)**&#x200B;是直接替换SPA编辑器的最佳工具。
    * 通用编辑器也是一个可视编辑器，专门为分离实施而设计，融入Adobe从SPA编辑器获得的全部体验。
-   * 此外，还为AEM as a Cloud Service[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)发布了Universal Editor，因此除了Cloud Services之外，还支持AMS和内部部署用例。
+   * 此外，还为AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)发布了Universal Editor，因此除了Cloud Services之外，还支持AMS和内部部署用例。[
 * **[内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)**&#x200B;是首选基于表单的编辑器的替代方法。
    * 将内容结构化为内容片段而非页面时，内容片段编辑器最合适。
 
@@ -65,7 +65,7 @@ Adobe已在AEM 6.5的[版本6.5.23，](/help/release-notes/release-notes.md#spa-
 * **面向未来：** AEM的路线图将通用编辑器优先设置为可视编辑器。 采用它可确保访问最新的创新和增强功能。
 * **更简单的集成：**&#x200B;无需特定于AEM的SDK即可使用通用编辑器，从而减少技术栈栈锁定。
 * **自带应用程序：**&#x200B;通用编辑器支持任何Web框架或架构，允许采用而不需要复杂的重构。
-* **可扩展性：**&#x200B;通用编辑器受益于强大的[扩展框架，](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)，包括与GenAI、Workfront等的集成。
+* **可扩展性：**&#x200B;通用编辑器受益于强大的[扩展框架，](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)，包括与GenAI、Workfront等的集成。
 
 没有从SPA编辑器直接迁移到通用编辑器的路径。 这是由于这两种技术存在根本性差异。
 
