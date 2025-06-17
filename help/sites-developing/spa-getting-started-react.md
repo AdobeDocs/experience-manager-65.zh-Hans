@@ -1,6 +1,6 @@
 ---
 title: AEM中的SPA快速入门 — React
-description: 本文介绍了一个SPA应用程序示例，说明它是如何组合在一起的，并使您能够使用React框架快速启动和运行自己的SPA。
+description: 本文介绍了一个SPA应用程序示例，解释SPA是如何进行组合，允许您通过React框架快速启动和运行自己的SPA。
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,7 +10,8 @@ exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '1127'
 ht-degree: 4%
@@ -20,9 +21,9 @@ ht-degree: 4%
 
 # AEM中的SPA快速入门 — React{#getting-started-with-spas-in-aem-react}
 
-单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。开发人员希望能够使用SPA框架构建站点，而创作者希望能够在AEM中顺畅地为使用SPA框架构建的站点编辑内容。
+单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。为此，开发人员希望能够使用SPA框架构建站点，而创作者则希望能够在AEM中顺畅地为使用SPA框架构建的站点编辑内容。
 
-SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA。 本文在React框架上提供了一个简化的SPA应用程序，说明了其组合方式，允许您快速启动并运行自己的SPA。
+SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA。 本文介绍了在React框架上开发的简化SPA应用程序，并说明它是如何进行组合，允许您快速启动并运行自己的SPA。
 
 >[!NOTE]
 >
@@ -32,7 +33,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 ## 简介 {#introduction}
 
-本文总结了简单的SPA的基本功能以及运行它所需了解的最少信息。
+本文总结了简单SPA的基本功能以及运行它所需了解的最少信息。
 
 有关SPA如何在AEM中工作的更多详细信息，请参阅以下文档：
 
@@ -46,7 +47,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 >
 >如果不遵守内容模型合同，则在AEM之外开发的SPA将无法创作。
 
-本文档将介绍使用React框架创建的简化SPA的结构，并说明其工作方式，以使您可将此理解应用于您自己的SPA。
+本文档将介绍使用React框架创建的简化SPA的结构，并说明其工作方式，以便您能够将这种理解应用于自己的SPA。
 
 ## 依赖项、配置和构建 {#dependencies-configuration-and-building}
 
@@ -54,7 +55,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 ### 依赖项 {#dependencies}
 
-`package.json`文件定义了整个SPA包的要求。 此处列出了正在工作的AEM的最小SPA依赖项。
+`package.json`文件定义了整个SPA包的要求。 此处列出了正在运行的SPA的最小AEM依赖项。
 
 ```
   "dependencies": {
@@ -120,19 +121,19 @@ module.exports = {
 
 ### AEM 项目原型 {#aem-project-archetype}
 
-任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ## 应用程序结构 {#application-structure}
 
 如前所述，包括依赖项和构建应用程序将为您提供一个有效的SPA包，您可以将该包上传到您的AEM实例。
 
-本文档的下一部分将介绍AEM中SPA的结构方式、驱动应用程序的重要文件以及它们如何协同工作。
+本文档的下一部分将介绍AEM中SPA的结构、驱动应用程序的重要文件以及它们如何协同工作。
 
 以简化的图像组件为例，但应用程序的所有组件都基于相同的概念。
 
 ### index.js {#index-js}
 
-此处显示的`index.js`文件是SPA的入口点，该文件经过简化，以重点关注重要内容。
+此处显示的`index.js`文件是SPA的入口点，该文件经过了简化，以重点关注重要内容。
 
 ```
 import ReactDOM from 'react-dom';
@@ -224,7 +225,7 @@ class Image extends Component {
 MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);
 ```
 
-AEM中SPA的核心思想是：将SPA组件映射到AEM组件，并在内容被修改时更新组件（反之亦然）。 有关此通信模型的摘要，请参阅文档[SPA编辑器概述](/help/sites-developing/spa-overview.md)。
+AEM中SPA的核心想法是，将SPA组件映射到AEM组件，并在修改内容时更新组件（反之亦然）。 有关此通信模型的摘要，请参阅文档[SPA编辑器概述](/help/sites-developing/spa-overview.md)。
 
 `MapTo('my-react-app/components/content/image')(Image, ImageEditConfig);`
 
@@ -281,6 +282,6 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 有关如何组织自己为AEM开发SPA的更多信息，请参阅文章[为AEM开发SPA](/help/sites-developing/spa-architecture.md)。
 
-有关动态模型到组件映射以及它如何在AEM中的SPA中工作的更多详细信息，请参阅文章[SPA的动态模型到组件映射](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)。
+有关动态模型到组件映射及其在AEM中的SPA中的工作方式的更多详细信息，请参阅文章[SPA的动态模型到组件映射](/help/sites-developing/spa-dynamic-model-to-component-mapping.md)。
 
 如果您希望在AEM中为React或Angular以外的框架实施SPA，或者只是希望深入了解SPA SDK for AEM的工作方式，请参阅[SPA Blueprint](/help/sites-developing/spa-blueprint.md)文章。

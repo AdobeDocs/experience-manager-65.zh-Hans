@@ -5,7 +5,8 @@ exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '783'
 ht-degree: 1%
@@ -19,7 +20,7 @@ ht-degree: 1%
 
 在AEM单页应用程序(SPA)编辑器框架中正确实施复合组件后，内容作者可以像拖放任何其他组件一样拖放此类组件，但仍然能够单独编辑构成复合组件的每个组件。
 
-本文演示了如何将复合组件添加到单页应用程序，以便与AEM SPA编辑器无缝地配合使用。
+本文演示了如何将复合组件添加到单页应用程序，以便与AEM SPA Editor无缝配合使用。
 
 {{ue-over-spa}}
 
@@ -32,16 +33,16 @@ ht-degree: 1%
 以下支持复合组件用例的模型需要以下先决条件。
 
 * 您的AEM开发实例正在带有示例项目的端口4502上本地运行。
-* 您已启用工作正常的外部React应用程序[以便在AEM中编辑。](spa-edit-external.md)
+* 您已启用工作正常的外部React应用程序[以便在AEM中进行编辑。](spa-edit-external.md)
 * 使用RemotePage组件在AEM编辑器[中加载React应用程序。](spa-remote-page.md)
 
 ## 将复合组件添加到SPA {#adding-composite-components}
 
-实施复合组件有三种不同的模型，具体取决于AEM中的SPA实施。
+根据AEM中的SPA实施，有三种不同的模型可用于实施复合组件。
 
 * [您的AEM项目中不存在该组件。](#component-does-not-exist)
 * [您的AEM项目中存在该组件，但其必需的内容不存在。](#content-does-not-exist)
-* [AEM项目中同时存在该组件及其必需内容。](#both-exist)
+* [您的AEM项目中同时存在该组件及其必需内容。](#both-exist)
 
 以下部分提供了使用卡组件作为示例来实施每个用例的示例。
 
@@ -132,11 +133,11 @@ function Home() {
 
 在这种情况下，卡组件已在包含标题和图像节点的AEM项目中创建了。 子节点（文本和图像）具有相应的资源类型。
 
-卡组件![&#128279;](assets/composite-node-structure.png)的节点结构
+卡组件](assets/composite-node-structure.png)的![节点结构
 
 然后，您可以将其添加到SPA并检索其内容。
 
-1. 在SPA中为此创建对应的组件。 确保子组件映射到SPA项目中的相应AEM资源类型。 在此示例中，我们使用与上一个示例中详细的[相同的`AEMText`和`AEMImage`组件。](#component-does-not-exist)
+1. 在SPA中为此创建相应的组件。 确保子组件映射到SPA项目中的相应AEM资源类型。 在此示例中，我们使用与上一个示例中详细的[相同的`AEMText`和`AEMImage`组件。](#component-does-not-exist)
 
    ```javascript
    import React from 'react';
@@ -152,9 +153,9 @@ function Home() {
    MapTo('wknd-spa/components/image')(Image, ImageEditConfig);
    ```
 
-1. 由于`imagecard`组件没有内容，请将该卡添加到页面。 在SPA中包含来自AEM的现有容器。
-   * 如果AEM项目中已有容器，我们可以改为将此容器包含在SPA中，并改为从AEM将组件添加到容器中。
-   * 确保卡组件映射到SPA中相应的资源类型。
+1. 由于`imagecard`组件没有内容，请将该卡添加到页面。 在SPA中包含AEM中的现有容器。
+   * 如果AEM项目中已存在容器，我们可以改为将此容器包含在SPA中，并改为从AEM将组件添加到容器中。
+   * 确保卡组件映射到SPA中的相应资源类型。
 
    ```javascript
    <ResponsiveGrid
@@ -164,13 +165,13 @@ function Home() {
 
 1. 将创建的`wknd-spa/components/imagecard`组件添加到页面模板中容器组件[允许的组件中。](/help/sites-authoring/templates.md)
 
-现在，可以在AEM编辑器中将`imagecard`组件直接添加到容器中。
+现在，可以在AEM编辑器中直接将`imagecard`组件添加到容器中。
 
 编辑器中的![复合卡](assets/composite-card.gif)
 
-### AEM项目中同时存在该组件及其必需内容。 {#both-exist}
+### 您的AEM项目中同时存在该组件及其必需内容。 {#both-exist}
 
-如果内容存在于AEM中，则通过提供内容的路径可以直接将其包含在SPA中。
+如果内容存在于AEM中，则可以通过提供指向内容的路径直接将其包含在SPA中。
 
 ```javascript
 <AEMCard

@@ -7,7 +7,8 @@ exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 65%
@@ -47,7 +48,7 @@ SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。本�
 >
 >本文档仅将[WKND Spa项目应用程序](https://github.com/adobe/aem-guides-wknd-spa)用于演示目的。 请勿用于任何项目工作。
 >
->任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，该原型支持使用React或Angular的SPA项目并使用SPA SDK。
+>任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，该原型支持使用React或Angular的SPA项目并使用SPA SDK。
 
 ### 什么是 SPA？ {#what-is-a-spa}
 
@@ -80,13 +81,13 @@ SPA 的工作方式的特性使其更快、更流畅且更类似于本机应用�
 
 ### SPA 的工作原理是什么？ {#how-does-a-spa-work}
 
-SPA的主要思想是减少对服务器的调用和依赖以最大限度地减少服务器调用造成的延迟，使SPA接近本机应用程序的响应速度。
+SPA的主要思想是减少对服务器的调用和依赖以将服务器调用引起的延迟最小化，以便SPA接近本机应用程序的响应性。
 
 在传统的连续网页中，仅加载即时页面所需的数据。这意味着，当访客移至另一个页面时，将调用服务器以获取其他资源。当访客与页面上的元素进行交互时，可能需要额外的调用。 由于页面必须与访客的请求同步，因此多次调用可能会给人一种滞后或延迟的感觉。
 
 ![screen_shot_2018-08-20at140449](assets/screen_shot_2018-08-20at140449.png)
 
-为了获得更流畅的体验（接近访客从本机移动设备应用程序中期望的体验），SPA会在首次加载时加载访客的所有必要数据。 虽然最初可能需要花费更长的时间，但随后便不再需要额外的服务器调用。
+为了获得更流畅的体验（接近访客从移动设备本机应用程序中期望的体验），SPA会在首次加载时加载访客的所有必要数据。 虽然最初可能需要花费更长的时间，但随后便不再需要额外的服务器调用。
 
 通过在客户端进行渲染，页面元素可以更快地做出反应，并且访客与页面的交互可以立即进行。 为了最大化页面速度，可能需要的任何其他数据都会异步调用。
 
@@ -94,11 +95,11 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 >
 >有关SPA如何在AEM中工作的技术详细信息，请参阅文章[AEM中的SPA快速入门](/help/sites-developing/spa-getting-started-react.md)。
 >
->有关SPA编辑器的设计、架构和技术工作流的详细信息，请参阅文章[SPA编辑器概述](/help/sites-developing/spa-overview.md)。
+>要更详细地了解SPA编辑器的设计、架构和技术工作流，请参阅文章[SPA编辑器概述](/help/sites-developing/spa-overview.md)。
 
 ## SPA 的内容编辑体验 {#content-editing-experience-with-spa}
 
-如果构建的SPA使用AEM SPA编辑器，内容作者在编辑和创建内容时不会注意到任何差异。 提供了常用 AEM 功能，而无需更改作者的工作流。
+当构建SPA以使用AEM SPA编辑器时，内容作者在编辑和创建内容时不会注意到任何差异。 提供了常用 AEM 功能，而无需更改作者的工作流。
 
 1. 在 AEM 中编辑 WKND SPA Project 应用程序。
 
@@ -126,7 +127,7 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
    ![步骤5](assets/spa-walkthrough-step-5.png)
 
-与任何非SPA应用程序一样，支持其他创作工具，例如在页面上拖放其他组件、重新排列组件和修改布局。
+与任何非SPA应用程序一样，支持其他创作工具，如在页面上拖放其他组件、重新排列组件和修改布局。
 
 >[!NOTE]
 >
@@ -136,7 +137,7 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
 ## SPA 应用程序和 AEM SPA Editor {#spa-apps-and-the-aem-spa-editor}
 
-体验SPA对最终用户的行为方式，然后检查SPA页面，有助于更好地了解SAP应用程序如何与AEM中的SPA编辑器配合工作。
+体验SPA对最终用户的行为方式，然后检查SPA页面，有助于更好地了解SAP应用程序如何与AEM中的SPA Editor配合使用。
 
 ### 使用 SPA 应用程序 {#using-an-spa-application}
 
@@ -162,7 +163,7 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
 那么，如果在子页面中导航时没有重新加载页面，如何加载页面呢？
 
-下一部分[加载SPA应用程序](#loading-an-spa-application)深入探究了加载SPA的机制，以及如何同步和异步加载内容。
+下一部分[加载SPA应用程序](#loading-an-spa-application)深入了解加载SPA的机制，以及如何同步和异步加载内容。
 
 ### 加载 SPA 应用程序 {#loading-an-spa-application}
 
@@ -214,7 +215,7 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
 
 ### 与 SPA 编辑器进行交互 {#interaction-with-the-spa-editor}
 
-使用示例WKND SPA Project应用程序，可清楚地了解该应用程序在发布时的行为和加载方式，使用内容服务进行JSON内容交付和异步加载资源。
+使用示例WKND SPA项目应用程序，可清楚地了解该应用程序在发布时的行为和加载方式，使用内容服务进行JSON内容交付和异步加载资源。
 
 此外，对于内容作者而言，在 AEM 中使用 SPA 编辑器创建内容是无缝操作。
 
@@ -245,13 +246,13 @@ SPA的主要思想是减少对服务器的调用和依赖以最大限度地减�
    >这是AEM中服务器端渲染页面的行为更改，其中为每个可编辑组件插入`cq`元素。
    >
    >
-   >SPA中的此方法无需注入自定义元素，只需依赖其他数据属性，使得前端开发人员更容易标记这些元素。
+   >SPA中的此方法无需注入自定义元素，而只需依赖其他数据属性，这使得前端开发人员可以更轻松地进行标记。
 
 ## 后续步骤 {#next-steps}
 
 现在，您已了解 AEM 中的 SPA 编辑体验以及 SPA 与 SPA 编辑器的关系，请更深入地了解 SPA 的构建方式。
 
-* [AEM中的SPA快速入门](/help/sites-developing/spa-getting-started-react.md)显示了如何在AEM中构建基本SPA以使用SPA编辑器
+* [AEM中的SPA快速入门](/help/sites-developing/spa-getting-started-react.md)显示了如何在AEM中构建用于使用SPA编辑器的基本SPA
 * [SPA 编辑器概述](/help/sites-developing/spa-overview.md)更深入地介绍了 AEM 和 SPA 之间的通信模型。
 * [为 AEM 开发 SPA](/help/sites-developing/spa-architecture.md) 介绍了如何让前端开发人员为 AEM 开发 SPA，以及 SPA 如何与 AEM 的架构进行交互。
 

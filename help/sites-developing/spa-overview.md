@@ -10,7 +10,8 @@ exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '1626'
 ht-degree: 85%
@@ -37,7 +38,7 @@ AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中�
 有关 AEM 中的 SPA 的更多详细信息，请参阅以下文档：
 
 * [SPA Blueprint](/help/sites-developing/spa-blueprint.md)，了解 SPA 的技术要求
-* [AEM中的SPA快速入门](/help/sites-developing/spa-getting-started-react.md)，快速浏览简单的SPA
+* [在AEM中开始使用SPA](/help/sites-developing/spa-getting-started-react.md)，快速了解简单的SPA
 
 ## 设计 {#design}
 
@@ -170,7 +171,7 @@ SPA 编辑器 SDK 支持以下最低版本：
 
 ### 其他框架 {#additional-frameworks}
 
-可以实施其他 SPA 框架以与 AEM SPA Editor SDK 结合使用。请参阅[SPA Blueprint](/help/sites-developing/spa-blueprint.md)，了解框架必须满足哪些要求才能创建由模块、组件和服务组成的特定于AEM SPA Editor的层。
+可以实施其他 SPA 框架以与 AEM SPA Editor SDK 结合使用。请参阅[SPA Blueprint](/help/sites-developing/spa-blueprint.md)，了解框架必须满足哪些要求才能创建由模块、组件和服务组成的框架特定层以使用AEM SPA Editor。
 
 ### 使用多个选择器 {#multiple-selectors}
 
@@ -189,7 +190,7 @@ SPA 编辑器 SDK 支持以下最低版本：
 
 ### 限制 {#limitations}
 
-AEM SPA编辑器SDK随AEM 6.4 Service Pack 2引入。 Adobe完全支持该框架，并且将继续对其进行增强和扩展。 SPA Editor 尚不支持以下 AEM 功能：
+AEM SPA Editor SDK随AEM 6.4 Service Pack 2引入。 它由Adobe提供全面支持，并将继续得到增强和扩展。 SPA Editor 尚不支持以下 AEM 功能：
 
 * 目标架构
 * ContextHub
@@ -197,6 +198,6 @@ AEM SPA编辑器SDK随AEM 6.4 Service Pack 2引入。 Adobe完全支持该框架
 * 编辑配置（例如侦听器）
 * 还原/重做
 * 页面差异和时间扭曲
-* 用于执行HTML重写服务器端的功能，如链接检查器、CDN重写器服务、URL缩短等。
+* 执行HTML重写服务器端的功能，如链接检查器、CDN重写器服务、URL缩短等。
 * 开发人员架构
 * AEM 启动项

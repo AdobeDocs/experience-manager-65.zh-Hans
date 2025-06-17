@@ -5,7 +5,8 @@ exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 3%
@@ -21,13 +22,13 @@ ht-degree: 3%
 
 ## 概述 {#overview}
 
-RemotePage组件从应用程序生成的`asset-manifest.json`中获取所有必需的资源，并使用此资源在AEM中呈现SPA。
+RemotePage组件从应用程序生成的`asset-manifest.json`中获取所有必需的资源，并使用此资源在AEM中渲染SPA。
 
 * RemotePage允许您将SPA的脚本和样式表插入AEM Page组件的正文中。
-* 利用虚拟前端组件，您可以在AEM SPA编辑器中将部分标记为可编辑。
-* 托管在不同域上的SPA可以一起在AEM中编辑。
+* 通过虚拟前端组件，您可以在AEM SPA Editor中将部分标记为可编辑。
+* 可以将托管在其他域上的SPA一起设置为在AEM中可编辑。
 
-有关AEM中可编辑的外部SPA的更多详细信息，请参阅文章[在AEM](spa-edit-external.md)中编辑外部SPA。
+有关AEM中可编辑的外部SPA的更多详细信息，请参阅文章[在AEM中编辑外部SPA](spa-edit-external.md)。
 
 ## 要求 {#requirements}
 
@@ -45,8 +46,8 @@ RemotePage组件从应用程序生成的`asset-manifest.json`中获取所有必�
 
 ## 限制 {#limitations}
 
-* RemotePage组件希望该实施提供与此处所找到的[类似的资产清单。](https://github.com/shellscape/webpack-manifest-plugin)但是，RemotePage组件仅经测试可用于React框架（和通过remote-page-next组件的Next.js），因此不支持从其他框架(如Angular)远程加载应用程序。
-* 在AEM中执行远程渲染时，在应用程序的根HTML文件中定义的内部CSS和根DOM节点上的内联CSS将不可用。
+* RemotePage组件希望该实施提供与此处所找到的[类似的资产清单。](https://github.com/shellscape/webpack-manifest-plugin)但是，RemotePage组件仅经过测试可用于React框架（和通过remote-page-next组件的Next.js），因此不支持从其他框架(如Angular)远程加载应用程序。
+* 在AEM中进行远程呈现时，在应用程序的根HTML文件中定义的内部CSS和根DOM节点上的内联CSS将不可用。
 
 ## 技术详细信息 {#technical-details}
 

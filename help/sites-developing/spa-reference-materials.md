@@ -9,7 +9,8 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
-source-git-commit: 6d961456e0e1f7a26121da9be493308a62c53e04
+index: false
+source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
 workflow-type: tm+mt
 source-wordcount: '92'
 ht-degree: 1%
@@ -28,14 +29,14 @@ ht-degree: 1%
 * [组件映射](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [页面模型管理器](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 * [React可编辑组件](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
-* [Angular的可编辑组件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
+* [Angular可编辑组件](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
 ## 打开Source GitHub存储库 {#github-repositories}
 
-以下是GitHub上为SPA库提供的开源存储库。
+以下是GitHub上用于SPA库的开源存储库。
 
 * [组件映射](https://github.com/adobe/aem-spa-component-mapping)
 * [页面模型管理器](https://github.com/adobe/aem-spa-page-model-manager)
 * [React可编辑组件](https://github.com/adobe/aem-react-editable-components)
-* [Angular的可编辑组件](https://github.com/adobe/aem-angular-editable-components)
+* [Angular可编辑组件](https://github.com/adobe/aem-angular-editable-components)
 * [SPA项目核心](https://github.com/adobe/aem-spa-project-core)
