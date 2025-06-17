@@ -51,7 +51,7 @@ Adobe已在AEM 6.5的[版本6.5.23，](/help/release-notes/release-notes.md#spa-
 
 * **[通用编辑器](/help/sites-developing/universal-editor/introduction.md)**&#x200B;是直接替换SPA编辑器的最佳工具。
    * 通用编辑器也是一个可视编辑器，专门为分离实施而设计，融入Adobe从SPA编辑器获得的全部体验。
-   * 此外，还为AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)发布了Universal Editor，因此除了Cloud Services之外，还支持AMS和内部部署用例。[
+   * 此外，还为AEM as a Cloud Service[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)发布了Universal Editor，因此除了Cloud Services之外，还支持AMS和内部部署用例。
 * **[内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)**&#x200B;是首选基于表单的编辑器的替代方法。
    * 将内容结构化为内容片段而非页面时，内容片段编辑器最合适。
 

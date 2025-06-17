@@ -133,7 +133,7 @@ function Home() {
 
 在这种情况下，卡组件已在包含标题和图像节点的AEM项目中创建了。 子节点（文本和图像）具有相应的资源类型。
 
-卡组件](assets/composite-node-structure.png)的![节点结构
+卡组件![&#128279;](assets/composite-node-structure.png)的节点结构
 
 然后，您可以将其添加到SPA并检索其内容。
 
