@@ -41,7 +41,7 @@ ht-degree: 38%
 
 #### 品牌化 {#branding}
 
-通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)中的页面组件。
+通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
 
 * **覆盖** – 选中可在此页面上定义品牌概要。
    * 该值会由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
@@ -95,7 +95,7 @@ ht-degree: 38%
 >* 不支持正则表达式模式。
 >* 不应设置为现有页面。
 
-配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)。
+配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#enabling-access-to-vanity-urls-vanity-urls)。
 
 * **添加** — 点击或单击可添加虚URL。
 * **删除** — 点击或单击可删除虚URL。
