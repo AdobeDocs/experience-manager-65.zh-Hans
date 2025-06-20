@@ -1,16 +1,18 @@
 ---
-title: 编辑内容页面属性
+title: 编辑页面属性
 description: 在Adobe Experience Manager中为页面定义所需的属性。
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+mini-toc-levels: 2
+source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
 workflow-type: tm+mt
-source-wordcount: '1855'
-ht-degree: 42%
+source-wordcount: '2477'
+ht-degree: 38%
 
 ---
+
 
 # 编辑页面属性{#editing-page-properties}
 
@@ -22,237 +24,226 @@ ht-degree: 42%
 
 ### 基本 {#basic}
 
-* **标题**
+#### 标题和标记 {#tile}
 
-  页面的标题会显示在各种不同的位置。 例如，**网站**&#x200B;选项卡列表和&#x200B;**站点**&#x200B;卡片/列表视图。
-
-  这是必填字段。
-
-* **标记**
-
-  在此，可以通过更新选择框中的列表在页面中添加或删除标记：
-
+* **标题** — 页面的标题显示在各种位置
+   * 例如，**网站**&#x200B;选项卡列表和&#x200B;**站点**&#x200B;卡片/列表视图。
+   * 这是必填字段。
+* **标记** — 在此，可以通过更新选择框中的列表在页面中添加或删除标记。
    * 选择某个标记后，该标记会列在选择框的下方。 您可以使用“x”从此列表中移除标记。
    * 通过在空的选择框中键入名称可输入新标记。
-
       * 当您按Enter键时，将创建新标记。
       * 新标记将在右侧显示一个小星号，指示它是新标记。
-
-   * 利用下拉功能，您可以从现有标记中进行选择。
+   * 通过下拉列表，您可以从现有标记中进行选择。
    * 当您将鼠标悬停在选择框中的标记条目上时，会显示 x，用于为此页面删除该标记。
+   * 有关标记的详细信息，请参阅[使用标记。](/help/sites-authoring/tags.md)
+* **在导航中隐藏** — 指示在生成的站点的页面导航中是显示还是隐藏页面
 
-  有关标记的更多信息，请访问[使用标记](/help/sites-authoring/tags.md)。
+#### 品牌化 {#branding}
 
-* **隐藏导航**
+通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)中的页面组件。
 
-  指示在生成的站点的页面导航中是显示还是隐藏页面。
+* **覆盖** – 选中可在此页面上定义品牌概要。
+   * 该值会由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
+* **覆盖值** — 要附加到页面标题的品牌概要的文本
+   * 该值附加到页面标题后的竖线字符（如`Cycling Tuscany | Always ready for the WKND`）
 
-* **品牌化**
+#### 更多标题和描述 {#more}
 
-  通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+* **页面标题** — 要在页面上使用的标题
+   * 通常由标题组件使用
+   * 如果留空，则会使用&#x200B;**标题**。
+* **导航标题** — 您可以指定单独的标题以在导航中使用（例如，如果您希望某些内容能更加简洁）。
+   * 如果留空，则会使用&#x200B;**标题**。
+* **子标题** — 要在页面上使用的子标题
+* **描述** — 页面的描述、用途或要添加的任何其他详细信息
 
-   * **覆盖** – 选中可在此页面上定义品牌概要。
-      * 该值会由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
-   * **覆盖值** – 要附加到页面标题的品牌概要的文本。
-      * 该值附加到页面标题后的竖线字符后，例如“骑行 Tuscany | 始终准备好使用 WKND”
-* **页面标题**
+#### 开启/结束时间 {#on-time}
 
-  要在页面上使用的标题。 通常由标题组件使用。如果留空，则会使用&#x200B;**标题**。
+页面的打开/关闭时间是一种临时隐藏已发布内容的便捷方法。 关闭发布实例后，内容仍会保留在该实例上。 关闭页面不会取消发布内容。
 
-* **导航标题**
+* **开启时间** – 使已发布页面在发布环境中可见（呈现）的日期和时间。该页面必须手动发布或通过预配置的自动复制进行发布。
 
-  您可以指定单独的标题以便在导航中使用（例如，当您希望某些内容能更加简洁时）。 如果留空，则会使用&#x200B;**标题**。
+   * 如果已经[发布，](/help/sites-authoring/publishing-pages.md)此页面在发布实例上可用，但在指定时间呈现之前保持隐匿（隐藏）状态。
+   * 如果未发布并[配置为自动复制，](/help/sites-deploying/replication.md)则页面将在指定的时间自动发布，然后呈现。
+   * 如果未发布且未配置为自动复制，则该页面不会自动发布，因此在尝试访问该页面时将会显示404。
 
-* **子标题**
+* **结束时间** – 与&#x200B;**开启时间**&#x200B;类似并且经常与其结合使用，可定义已发布页面在发布环境中隐藏的时间。
 
-  要在页面上使用的子标题。
+对于要发布的页面，请将这些字段（**开启时间**&#x200B;和&#x200B;**关闭时间**）留空，这些字段可立即在发布环境中使用并可用，直到它们被停用（一般场景）。
 
-* **描述**
+>[!NOTE]
+>如果&#x200B;**开启时间**&#x200B;或&#x200B;**结束时间**&#x200B;是过去的时间，并且已配置自动复制，则会立即触发相关操作。
 
-  页面的描述、用途或要添加的任何其他详细信息。
+>[!TIP]
+>
+>开启/关闭时间严格处理已发布的内容（手动或通过自动复制）。 因此，发布工作流（例如批准内容的工作流）不会由触发为开启/关闭时间，并且开启/关闭时间不会影响页面的发布状态。 因此，打开/关闭时间最适合临时显示/隐藏已批准和发布的内容。
+>
+>如果要发布包含所有关联工作流的新内容，或从站点中完全删除（取消发布内容），请考虑[管理您的发布。](/help/sites-authoring/publishing-pages.md#manage-publication)
 
-* **开启时间**
+#### 虚 URL {#vanity-url}
 
-  激活已发布页面的日期和时间。 发布后，此页面在指定时间之前一直处于休眠状态。
+输入此页面的虚URL，这样可让您的URL长度更短和/或更具有表现性。
 
-  对于要立即发布的页面（正常场景），请将这些字段留空。
+例如，如果将网站`http://example.com,`的虚URL设置为由路径`/v1.0/startpage`标识的页面`welcome`，则`http://example.com/welcome`将是`http://example.com/content/v1.0/startpage`的虚URL
 
-* **关闭时间**
+>[!CAUTION]
+>
+>虚 URL：
+>
+>* 必须是唯一的。
+>* 不支持正则表达式模式。
+>* 不应设置为现有页面。
 
-  已发布页面被停用时的时间。
+配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)。
 
-  再次将这些字段留空以便立即执行操作。
-
-* **虚 URL**
-
-  输入此页面的虚URL，这样可让您的URL长度更短和/或更具有表现性。
-
-  例如，如果将网站`http://example.com,`的虚URL设置为由路径`/v1.0/startpage`标识的页面`welcome`，则`http://example.com/welcome`将是`http://example.com/content/v1.0/startpage`的虚URL
-
-  >[!CAUTION]
-  >
-  >虚 URL：
-  >
-  >* 必须是唯一的。 确保其他页面尚未使用该值。
-  >* 不支持正则表达式模式。
-  >* 不应设置为现有页面。
-  >
-
-  配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#enabling-access-to-vanity-urls-vanity-urls)。
-
-* **重定向虚URL**
-
-  指示您是否希望页面使用虚 URL。
+* **添加** — 点击或单击可添加虚URL。
+* **删除** — 点击或单击可删除虚URL。
+  **重定向虚URL** — 指示您希望页面使用虚URL还是重定向到页面的实际URL
 
 ### 高级 {#advanced}
 
-* **语言**
+#### 设置 {#settings}
 
-  页面语言。
-
-* **语言根**
-
-  如果页面是语言副本的根，则必须选中。
-
-* **重定向**
-
-  指示此页面应自动重定向到的页面。
-
-* **Design**
-
-  指示要用于此页面的[设计](/help/sites-developing/designer.md)。
-
-* **别名**
-
-  指定要用于此页面的别名。
-
+* **语言** – 页面语言
+* **语言根** – 如果页面是语言副本的根，则必须选中
+* **重定向** – 指示此页面应自动重定向到的页面
+* **设计** — 指示用于此页面的[设计](/help/sites-developing/designer.md)。
+* **别名** – 指定要用于此页面的别名
    * 例如，如果您为页面 `/content/wknd/us/en/magazine/members-only` 定义别名 `private`，则也可以通过 `/content/wknd/us/en/magazine/private` 访问此页面
    * 创建别名将设置页面节点上的 `sling:alias` 属性，这只会影响资源，而不会影响存储库路径。
    * 无法发布编辑器中按别名处理的页面。编辑器中的[发布选项](/help/sites-authoring/publishing-pages.md)仅适用于通过其实际路径访问的页面。
    * 有关详细信息，请参阅SEO和URL管理最佳实践下的[本地化的页面名称](/help/managing/seo-and-url-management.md#localized-page-names)。
 
-* **继承自&lt;*路径*>**
+#### 配置 {#configuration}
 
-  指示是否继承页面。 以及来自何处。
+* **继承自&lt;*路径*>** — 启用/禁用页面&#x200B;**云配置**&#x200B;的继承
+* **云配置** – 配置的路径
 
-* **云配置**
+#### 模板设置 {#templates}
 
-  配置的路径。
+* **允许的模板** – [定义在此子分支内可用的模板的列表](/help/sites-authoring/templates.md#allowingatemplate)
 
-* **允许的模板**
+#### 身份验证要求 {#authentication}
 
-  [定义此子分支中可用的模板列表](/help/sites-authoring/templates.md#allowingatemplate)。
+* **启用** — 启用（或禁用）身份验证的使用，以便您可以访问该页面
+* **登录页面** – 要用于登录的页面
 
-* **启用**（身份验证要求）
+>[!NOTE]
+>
+>页面的已关闭的用户组在&#x200B;**[权限](/help/sites-authoring/editing-page-properties.md#permissions)**&#x200B;选项卡上定义。
 
-  启用（或禁用）身份验证，以便您可以访问该页面。
+>[!CAUTION]
+>
+>**[权限](#permissions)**&#x200B;选项卡允许根据`granite:AuthenticationRequired` mixin的存在来编辑CUG配置。 如果使用已弃用的CUG配置配置配置页面权限，则根据是否存在`cq:cugEnabled`属性，将在&#x200B;**身份验证要求**&#x200B;下显示一条警告消息，并且该选项不可编辑，[权限](/help/sites-authoring/editing-page-properties.md#permissions)也不可编辑。
+>
+>
+>在这种情况下，必须在[经典UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)中编辑CUG权限。
 
-  >[!NOTE]
-  >
-  >页面的已关闭的用户组在&#x200B;**[权限](/help/sites-authoring/editing-page-properties.md#permissions)**&#x200B;选项卡上定义。
+#### 导出 {#export}
 
-  >[!CAUTION]
-  >
-  >**[权限](/help/sites-authoring/editing-page-properties.md#main-pars-procedure-949394300)**&#x200B;选项卡允许根据`granite:AuthenticationRequired` mixin的存在来编辑CUG配置。 如果使用已弃用的CUG配置配置配置页面权限，则根据是否存在`cq:cugEnabled`属性，将在&#x200B;**身份验证要求**&#x200B;下显示一条警告消息，并且该选项不可编辑，[权限](/help/sites-authoring/editing-page-properties.md#permissions)也不可编辑。
-  >
-  >
-  >在这种情况下，必须在[经典UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)中编辑CUG权限。
+* **配置** — 指定导出配置
 
-* **登录页面**
+#### SEO {#seo}
 
-  用于登录的页面。
+* **规范URL** — 用于覆盖页面的规范URL
+   * 如果留空，则页面的URL是它的规范URL。
+* **Robots标记** — 使用下拉菜单选择Robots标记以控制搜索引擎爬网程序的行为
+   * 有些选项会相互冲突，在这种情况下，以更宽松的选项为准。
+* **生成站点地图** — 在选中时，将为此页面及其后代生成`sitemap.xml`。
 
-* **导出配置**
+### 图像 {#images}
 
-  指定导出配置。
+#### 特色图像 {#featured-image}
 
-### 缩略图 {#thumbnail}
+此部分用于选择和配置要显示的图像。 这用于引用页面的组件；例如，Teaser、页面列表等。
 
-显示页面缩略图图像。 您可以：
+* **图像** — 您可以&#x200B;**挑选**&#x200B;资源，或浏览要上传的文件，然后&#x200B;**编辑**&#x200B;或&#x200B;**清除**&#x200B;选定的图像。
+* **替换文本** — 用于表示图像的含义和/或功能的文本，通常由屏幕阅读器使用
+* **继承 — 取自DAM资源的值** — 选中后，将使用DAM中`dc:description`元数据的值填充替换文本。
 
-* **生成预览**
+#### 缩略图 {#thumbnail}
 
-  生成要用作缩略图的页面预览。
+此部分用于选择和配置页面的图像缩略图。 这用于引用页面的组件；例如，Teaser、页面列表等。
 
-* **上传图像**
-
-  上传要用作缩略图的图像。
-
-* **选择图像**
-
-  选择要用作缩略图的现有资源。
-
-* **还原**
-
-  在更改缩略图后，此选项将变得可用。 如果不想保留您的更改，可以在保存前还原更改。
-
-### 社交媒体 {#social-media}
-
-* **社交媒体共享**
-
-  定义页面上可用的共享选项。 公开[共享核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/sharing.html?lang=zh-Hans)可用的选项。
-
-   * **启用Facebook的用户共享**
-   * **启用Pinterest的用户共享**
-   * **首选XF变量**
-定义用于为页面生成元数据的体验片段变量
+* **生成预览** — 生成要用作缩略图的页面预览
+* **上传图像** — 上传要用作缩略图的图像
+* **选择图像** — 选择要用作缩略图的现有资源
+* **还原** — 在您更改缩略图后，此选项将变得可用。 如果不想保留您的更改，可以在保存前还原更改。
 
 ### Cloud Service {#cloud-services}
 
-* **Cloud Service**
-
-  定义[云服务](/help/sites-developing/extending-cloud-config.md)的属性。
+* **Cloud Service配置** — 定义用于页面的云服务的配置
+* **继承自** — 对于活动副本和语言副本，默认从Blueprint继承云配置。
+   * 取消选中以覆盖继承
 
 ### 个性化 {#personalization}
 
-* **ContextHub 配置**
+#### ContextHub 配置 {#contexthub}
 
-  选择[ContextHub配置](/help/sites-developing/ch-configuring.md)和[区段路径](/help/sites-administering/segmentation.md)。
+* **继承自** — 默认情况下，ContextHub配置继承自父页面。
+   * 取消选中以覆盖继承。
+* **ContextHub路径** — 选择[ContextHub配置](/help/sites-developing/ch-configuring.md)
+* **段路径** — 选择[段路径](/help/sites-administering/segmentation.md)。
 
-* **定位配置**
+#### 定位配置 {#targeting}
 
-  选择一个[品牌以指定定位的范围](/help/sites-authoring/target-adobe-campaign.md)。
+选择一个[品牌以指定定位范围。](/help/sites-authoring/target-adobe-campaign.md)
 
-  >[!NOTE]
-  >此选项要求用户帐户属于 `Target Adminstrators` 组。
+>[!NOTE]
+>此选项要求用户帐户属于 `Target Adminstrators` 组。
 
 ### 权限 {#permissions}
 
-* **权限**
+使用&#x200B;**权限**&#x200B;选项卡定义哪些用户、组或[封闭用户组(CUG)](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/closed-user-groups.html?lang=zh-Hans)可以访问和/或修改页面。
 
-  在此选项卡中，您可以：
+* [添加权限](/help/sites-administering/user-group-ac-admin.md)
+* [编辑已关闭的用户组](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+* 查看[有效权限](/help/sites-administering/user-group-ac-admin.md)
 
-   * [添加权限](/help/sites-administering/user-group-ac-admin.md)
-   * [编辑已关闭的用户组](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
+>[!CAUTION]
+>
+>**权限**&#x200B;选项卡允许根据`granite:AuthenticationRequired` mixin的存在来编辑CUG配置。 如果使用已弃用的CUG配置配置配置页面权限，则根据是否存在`cq:cugEnabled`属性，将显示一条警告消息，并且CUG权限不可编辑，[高级](/help/sites-authoring/editing-page-properties.md#advanced)选项卡上的身份验证要求也不可编辑。
+>
+>
+>在这种情况下，必须在[经典UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)中编辑CUG权限。
 
-   * 查看[有效权限](/help/sites-administering/user-group-ac-admin.md)
-
-  >[!CAUTION]
-  >
-  >**权限**&#x200B;选项卡允许根据`granite:AuthenticationRequired` mixin的存在来编辑CUG配置。 如果使用已弃用的CUG配置配置配置页面权限，则根据是否存在`cq:cugEnabled`属性，将显示一条警告消息，并且CUG权限不可编辑，[高级](/help/sites-authoring/editing-page-properties.md#advanced)选项卡上的身份验证要求也不可编辑。
-  >
-  >
-  >在这种情况下，必须在[经典UI](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)中编辑CUG权限。
-
-  >[!NOTE]
-  >
-  >“权限”选项卡不允许创建空的CUG组，通过这种简单的方式可以拒绝每个用户访问。 为此，必须使用CRX Explorer。 有关详细信息，请参阅文档[用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md)。
+>[!NOTE]
+>
+>“权限”选项卡不允许创建空的CUG组，通过这种简单的方式可以拒绝每个用户访问。 为此，必须使用CRX Explorer。 有关详细信息，请参阅文档[用户、组和访问权限管理](/help/sites-administering/user-group-ac-admin.md)。
 
 ### Blueprint {#blueprint}
 
-* **Blueprint**
+此选项卡仅对用作 Blueprint 的页面可见。Blueprint 用作 Live Copy 的基础，并且是[多站点管理](/help/sites-administering/msm.md)的一部分。
 
-  在[多站点管理](/help/sites-administering/msm.md)中为Blueprint页面定义属性。 控制将修改传播到Live Copy的情况。
+* **转出** — 启动Blueprint内容到活动副本的转出
+* **Live Copy概述** — 打开一个窗口以浏览Live Copy页面结构
+* **当前活动副本** — 基于所选Blueprint页面的页面列表（即活动副本）
+* **转出配置** — 定义页面的转出配置
 
 ### Live Copy {#live-copy}
 
-* **Live Copy**
+此选项卡仅对配置为 Live Copy 的页面可见。与[Blueprint一样，](#blueprint)活动副本是[多站点管理的一部分。](/help/sites-administering/msm.md)
 
-  在[多站点管理](/help/sites-administering/msm.md)中为Live Copy页面定义属性。 控制从Blueprint传播修改的情况。
+* **同步** — 将Live Copy与Blueprint同步，并保留本地修改
+* **重置** — 将Live Copy重置为Blueprint的状态，并删除本地修改
+* **暂停** — 暂停Live Copy以防止进一步的转出修改
+* **分离** — 从Blueprint分离Live Copy
 
-### 站点结构 {#site-structure}
+#### 源 {#source}
 
-* 提供具有全网站功能的页面的链接，如&#x200B;**注册页面**、**脱机页面**&#x200B;等。
+* 显示此 Live Copy 的 Blueprint 的路径
+
+#### 状态 {#status}
+
+* 列出页面的当前 Live Copy 状态
+
+#### 配置 {#live-copy-config}
+
+* **Live Copy继承** — 如果选中，Live Copy配置将在所有子项上都有效。
+* **从父项继承转出配置** — 如果选中，则从页面的父项继承转出配置。
+* **选择转出配置** – 定义从 Blueprint 传播修改的情况，并且仅在未选择&#x200B;**从父项继承转出配置**&#x200B;时可用
+* **排除的路径列表**
 
 ## 编辑页面属性 {#editing-page-properties-1}
 
