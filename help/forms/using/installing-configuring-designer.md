@@ -10,9 +10,9 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 89f807e1d31c5588d86e50160b0149e00422b78c
+source-git-commit: 8f14518117b3aff1cdb2e033fbfe40d0a903d53f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '826'
 ht-degree: 0%
 
 ---
@@ -25,6 +25,8 @@ ht-degree: 0%
 
 * 安装64位版本的[Visual C++ 2019可再发行组件(x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)。 在开始安装之前，请确保已安装前面提到的可再分发运行时包。
 * 具有管理员权限的用户可以安装或卸载AEM Forms Designer。
+* 运行64位AEM Forms Designer的系统必须安装OpenSSL3，特别是共享库`libcrypto-3-x64.dll`。\
+  AEM Designer需要此库才能正常运行并计算&#x200B;**SHAHash**。
 
 +++
 
@@ -38,7 +40,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >* AEM 6.5 Forms Service Pack 19 (6.5.19.0)中引入了设计器的64位版本。
->* 自[AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)发行以来，已弃用32位版本的设计器。
+>* 自发布[AEM Forms Service Pack 21 (6.5.21.0)](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases)以来，已弃用设计器的32位版本。
 > * Forms Designer支持的平台与AEM Forms支持的平台一致。 要了解Forms Designer支持的平台，请[单击此处](/help/forms/using/aem-forms-jee-supported-platforms.md)。
 
 有关安装Forms Designer的更多信息，请访问[常见问题解答](#fandq)。
@@ -61,7 +63,7 @@ Designer作为独立安装程序提供，并且与WorkBench捆绑在一起。 �
 
    >[!NOTE]
    >
-   >* 从[Adobe授权网站](https://licensing.adobe.com/)获取您的Forms Designer许可证密钥。
+   >* 从[Forms授权网站](https://licensing.adobe.com/)获取Adobe Designer授权密钥。
 
 1. 如果您接受许可协议，请单击“下一步”继续。
 1. （可选）如果您要在所选位置安装Designer，请更改默认安装路径。 单击“下一步”。
@@ -86,23 +88,23 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
 
 在更新AEM Forms Designer 6.5.16.0的最新版本时，有两种情况：
 
-* **用例1**：当用户的AEM Forms Designer版本低于6.5.15.0时。
-* **用例2**：用户具有6.5.15.0 AEM Forms Designer版本时。
+* **用例1**：当用户的AEM Forms Designer版本早于6.5.15.0时。
+* **用例2**：用户具有6.5.15.0AEM Forms Designer版本时。
 
-+++**当用户的AEM Forms Designer版本低于6.5.15.0时。**
++++**当用户的AEM Forms Designer版本早于6.5.15.0时。**
 
 如果您使用的是独立的AEM Forms Designer安装程序，请执行以下步骤：
 
-1. 在安装&#x200B;**AEM Forms Designer 6.5.16.0**&#x200B;之前，用户必须卸载任何以前的版本。
-1. 从AEM表单发布页面下载并安装[AEM Forms Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)。
-1. 成功安装&#x200B;**AEM Forms Designer 6.5.15.0**&#x200B;后，通过双击下载的安装程序文件下载并安装[AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)。
+1. 在安装&#x200B;**AEM Forms Designer6.5.16.0**&#x200B;之前，用户必须卸载任何以前的版本。
+1. 从AEM Forms表单发行页面下载并安装[AEM Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
+1. 成功安装&#x200B;**AEM Forms Designer6.5.15.0**&#x200B;后，通过双击下载的安装程序文件下载并安装[AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
 
 +++
 
-+++**当用户使用6.5.15.0 AEM Forms Designer版本时**
++++**用户具有6.5.15.0AEM Forms Designer版本**&#x200B;时
 
 如果您使用的是独立的AEM Forms Designer安装程序，请执行以下步骤：
-1. 从[软件分发门户](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)下载最新版本的AEM Forms Designer。
+1. 从[软件分发门户](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)下载最新版本的AEM Forms Designer。
 1. 通过双击下载的安装程序文件来安装最新版本的AEM Forms Designer。
 
 +++
@@ -122,7 +124,6 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
    * 可通过两种方式检查Forms Designer版本：
 
       1. 打开Designer，转到“帮助”，单击“关于设计器”，您会看到设计器版本信息以及bits信息，例如，您会看到64位写入版本末尾，如下所示：
-
          `6.5.21.20240522.1.161 | 64 bit`
       1. 打开Designer，左上角显示一个品牌图标，其中包含带有产品名称的64位信息。
 

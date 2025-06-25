@@ -4,16 +4,39 @@ description: 功能切换是AEM中的一项功能，它允许管理员在运行�
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
-source-git-commit: 794d93d890ba752f9036a85831f7cbc8391fb545
+exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
+source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '381'
 ht-degree: 2%
 
 ---
 
 # Adobe Experience Manager (AEM) 6.5中的功能切换{#enable-feature-toggle-aem-forms-65}
 
-功能切换是AEM中的一项功能，它允许管理员动态启用或禁用特定功能。 此功能在管理&#x200B;**早期采用者功能**&#x200B;和&#x200B;**预发行功能**&#x200B;时特别有用，无需对代码库进行主要部署或更改。 它可确保灵活性和控制AEM环境中可访问的功能。
+功能切换是AEM中的一项功能，它允许管理员动态启用或禁用特定功能。 此功能在管理&#x200B;**早期采用者功能**&#x200B;和&#x200B;**预发行功能**&#x200B;时特别有用，无需对代码库进行主要部署或更改。 它可确保灵活并控制可在AEM环境中访问哪些功能。
+
+## 为何在AEM 6.5设置中使用功能切换？
+
+在AEM 6.5设置中工作时，功能可切换以下帮助：
+
+* 安全地测试实验功能。
+
+* 分阶段推出新组件。
+
+* 跨多个环境维护单个代码库。
+
+* 减少部署和升级期间的风险。
+
+## 先决条件
+
+在AEM 6.5设置中启用功能切换之前，请确保以下各项：
+
+* 用户是`forms-users`组的成员。
+
+* 导航到`http://<author-instance-url>:portnumber/system/console/bundles`并检查&#x200B;**(com.adobe.granite.toggle.impl.dev-1.1.2.jar)**&#x200B;包是否存在。 如果不存在，请[从链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar)下载包。
+
+  ![功能切换](/help/forms/using/assets/feature-toggle-6.5.png)
 
 ## 启用功能切换 {#enable-feature-toggle-65}
 
@@ -21,7 +44,7 @@ ht-degree: 2%
 
 1. 登录到您的AEM Forms实例。
 2. 导航到 `http://<author-instance-url>:portnumber/system/console/configMgr`。
-3. 在配置管理器中搜索&#x200B;**AdobeGranite动态切换提供程序**。
+3. 在配置管理器中搜索&#x200B;**Adobe Granite动态切换提供程序**。
 4. 单击图标![铅笔图标](assets/illustratorcc_penciltool_cur_edit_2_17.png)。
 5. 在[!UICONTROL 已启用切换]部分中，单击![铅笔图标](assets/aem6forms_add.png)。
 6. 为功能添加功能切换ID，如下图所示。
@@ -39,7 +62,7 @@ ht-degree: 2%
 
 1. 登录到您的AEM Forms实例。
 2. 导航到 `http://<author-instance-url>:portnumber/system/console/configMgr`。
-3. 在配置管理器中搜索&#x200B;**AdobeGranite动态切换提供程序**。
+3. 在配置管理器中搜索&#x200B;**Adobe Granite动态切换提供程序**。
 4. 单击图标![铅笔图标](assets/illustratorcc_penciltool_cur_edit_2_17.png)。
 5. 在[!UICONTROL 已禁用的切换]部分中，单击![铅笔图标](assets/aem6forms_add.png)。
 6. 为要禁用的功能添加切换号码。
