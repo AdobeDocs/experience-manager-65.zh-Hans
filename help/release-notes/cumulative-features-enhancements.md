@@ -195,7 +195,7 @@ IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]�
 
   您无需导航到资源的位置并查看其属性即可执行这些操作。
 
-* **Dynamic Media _快照_**允许您使用测试图像或Dynamic Media URL预览图像修饰符和智能成像优化，例如WebP或AVIF输出、带宽感知压缩和设备像素比缩放。 然后，您可以立即比较每个设置对质量和文件大小的影响。
+* **Dynamic Media _快照_**&#x200B;允许您使用测试图像或Dynamic Media URL预览图像修饰符和智能成像优化，例如WebP或AVIF输出、带宽感知压缩和设备像素比缩放。 然后，您可以立即比较每个设置对质量和文件大小的影响。
 请参阅 [Dynamic Media 快照。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)
 * 使用Dynamic Media的&#x200B;**DASH流** — 为Dynamic Media视频交付中的自适应流启动新协议（DASH — 通过HTTP的动态自适应流）（启用了CMAF）。 现在可供所有地区使用。
 * **Experience Manager Sites和内容片段与Assets新一代Dynamic Media的集成** — 用户现在可以在Experience Manager Sites 6.5中使用其云托管的资源。他们可以在内部部署或Managed Services实例上创作和交付这些资源。
