@@ -43,7 +43,7 @@ Adobe Experience Manager 6.5中针对前八个Service Pack版本的主要功能�
 
    * Red Hat® Enterprise Linux® 9（内核4.x，64位）
 
-* [强化的文件附件组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
+* [强化的文件附件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
 
 ## AEM 6.5，Service Pack 22—2024年11月21日
 
@@ -59,7 +59,7 @@ IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]�
 
 #### AEM Forms中的新GA功能 {#ga-aem-forms-sp22}
 
-* 添加了支持以在[Interactive Communications批处理API](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)中启用字体嵌入 — Interactive Communications现在支持在通过批处理API生成的PDF中嵌入Adobe Ming和Adobe Myungjo字体。 此增强功能可确保生成的文档中的准确文本渲染，即使使用字体子集也是如此，从而改进了对PDF输出中的多语言内容的支持。
+* 添加了支持以在[Interactive Communications批处理API](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/interactive-communications/create-interactive-communication#output-format-print-channel)中启用字体嵌入 — Interactive Communications现在支持在通过批处理API生成的PDF中嵌入Adobe Ming和Adobe Myungjo字体。 此增强功能可确保生成的文档中的准确文本渲染，即使使用字体子集也是如此，从而改进了对PDF输出中的多语言内容的支持。
 
 * [用于PDF辅助功能的内容表API](/help/forms/using/aem-document-services-programmatically.md#auto-tag-pdf-documents-auto-tag-api) - OSGi上的AEM Forms现在支持新的目录标记API，以增强PDF的辅助功能标准。 它借助辅助技术使用户更容易访问PDF。
 
@@ -116,7 +116,7 @@ IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]�
 
 ### [!DNL Assets]
 
-* Dynamic Media现在支持Apple iOS/iPadOS的无损HEIC图像格式。 请参阅Dynamic Media图像服务和渲染API中的[fmt](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt)。
+* Dynamic Media现在支持Apple iOS/iPadOS的无损HEIC图像格式。 请参阅Dynamic Media图像服务和渲染API中的[fmt](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-is-http-fmt)。
 * 多站点管理器(MSM)现在支持体验片段结构（包括文件夹和子文件夹），以便有效地将体验片段批量转出到活动副本。
 
 ### [!DNL Forms]
@@ -137,13 +137,13 @@ IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]�
 ### [!DNL Forms]
 
 * **新的自适应表单核心组件**：添加了垂直选项卡、条款和条件以及复选框以增强表单的可扩展性。
-   * **[复选框组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**：基于核心组件的自适应表单现在包含复选框组件。通过它，用户可二选一，即选择或取消选择特定选项。它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。复选框是一个常见的表单元素，用于提供是/否或 true/false 选择。
+   * **[复选框组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**：基于核心组件的自适应表单现在包含复选框组件。通过它，用户可二选一，即选择或取消选择特定选项。它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。复选框是一个常见的表单元素，用于提供是/否或 true/false 选择。
 
-   * **[条款和条件组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**：基于核心组件的自适应Forms现在包含条款和条件组件。 表单作者添加此部分以向用户显示服务、产品或平台的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
+   * **[条款和条件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**：基于核心组件的自适应Forms现在包含条款和条件组件。 表单作者添加此部分以向用户显示服务、产品或平台的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
 
      ![垂直选项卡、条款和条件以及复选框组件](/help/forms/using/assets/forms-components.png)
 
-   * **[垂直选项卡组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**：基于核心组件的自适应表单现在可将表单内容整理到选项卡垂直列表中，从而提供结构化的、可导航的布局。表单中的垂直选项卡通过简化导航和组织内容来增强用户体验。 当表单包含多个部分或复杂信息时，这些功能特别有用。
+   * **[垂直选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**：基于核心组件的自适应表单现在可将表单内容整理到选项卡垂直列表中，从而提供结构化的、可导航的布局。表单中的垂直选项卡通过简化导航和组织内容来增强用户体验。 当表单包含多个部分或复杂信息时，这些功能特别有用。
 
 * **[64位版本的AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)**： 64位版本的AEM Forms Designer提供增强的性能、可扩展性和内存管理，以增强您的表单创建体验。 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
 
@@ -164,9 +164,9 @@ IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]�
 
 ### [!DNL Forms]
 
-* **[规则编辑器中使用自定义错误处理程序的增强错误处理](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** — 您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误。 而且，您可以为最终用户提供量身定制的响应。 或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端中调用自定义工作流以获取特定错误代码，或通知客户服务已中断
+* **[规则编辑器中使用自定义错误处理程序的增强错误处理](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)** — 您现在可以调用自定义函数（使用客户端库）来响应外部服务返回的错误。 而且，您可以为最终用户提供量身定制的响应。 或者，您可以针对服务返回的错误采取特定操作。例如，您可以在后端中调用自定义工作流以获取特定错误代码，或通知客户服务已中断
 
-* **[增强的Adobe Sign工作流步骤](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - AEM工作流中的Adobe Sign工作流步骤包含以下增强功能。
+* **[增强的Adobe Sign工作流步骤](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)** - AEM工作流中的Adobe Sign工作流步骤包含以下增强功能。
 
    * **通过基于Government ID的身份验证增强Adobe Sign的安全性** - Adobe Acrobat Sign基于Government ID的身份验证提供额外的验证层。 它允许用户使用政府颁发的ID（驾照、身份证、护照）进行身份认证。 通过利用可信身份证明文件，此增强将签名过程的可信度提高一级，使其成为需要更高的安全性、合规性和用户验证的场景的理想之选。
 
@@ -176,7 +176,7 @@ IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]�
    * **扩展了协议收件人的角色，而不只是签名者** — 通过Adobe Acrobat Sign，您可以将协议收件人的角色扩展到仅包括签名者，以更好地匹配他们的工作流要求。 启用后，协议中的每个收件人可以单独配置其角色，签名者是默认角色。
 
 
-* **[JEE上的AEM Forms完整安装程序](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** — 此Service Pack为JEE上的AEM Forms提供完整安装程序，该安装程序支持多种新的软件组合，包括：
+* **[JEE上的AEM Forms完整安装程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)** — 此Service Pack为JEE上的AEM Forms提供完整安装程序，该安装程序支持多种新的软件组合，包括：
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
    * Windows Server 2022上的Oracle WebLogic 14C
@@ -221,8 +221,8 @@ IPTC选项卡现在支持[!UICONTROL 替换文本]和[!UICONTROL 扩展描述]�
 
 ### [!DNL Forms]
 
-* [Headless自适应Forms](https://experienceleague.adobe.com/en/docs/experience-manager-headless-adaptive-forms/using/overview)使您的开发人员能够创建、发布和管理可通过API（而不是通过传统的图形用户界面）访问和交互的交互式表单。
+* [Headless自适应Forms](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-headless-adaptive-forms/using/overview)使您的开发人员能够创建、发布和管理可通过API（而不是通过传统的图形用户界面）访问和交互的交互式表单。
 
-* [自适应Forms核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/introduction#features)是基于Adobe Experience Manager WCM核心组件构建的一组24个开源、符合BEM的组件。 这些组件是开源的，使开发人员能够轻松地自定义和扩展这些组件，以满足其组织的特定需求。 具备自定义[WCM核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/get-started/authoring)的现有技能的任何人都可以轻松自定义这些组件并设置其样式。
+* [自适应Forms核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/introduction#features)是基于Adobe Experience Manager WCM核心组件构建的一组24个开源、符合BEM的组件。 这些组件是开源的，使开发人员能够轻松地自定义和扩展这些组件，以满足其组织的特定需求。 具备自定义[WCM核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/get-started/authoring)的现有技能的任何人都可以轻松自定义这些组件并设置其样式。
 
 * OSGi上的Reader扩展服务现在提供单独的选项，以启用PDF上的导入和导出使用权限，从而在Adobe Acrobat Reader中导入或导出数据。
