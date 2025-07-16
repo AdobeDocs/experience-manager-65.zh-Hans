@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 16a75f6308319e07bed68b668fc9c20e0ef5f5c9
+source-git-commit: 80482da847b86c91963dbb0d37375e370a503588
 workflow-type: tm+mt
-source-wordcount: '6444'
+source-wordcount: '6643'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 ## [!DNL Experience Manager] 6.5.23.0中包括的内容 {#what-is-included-in-aem-6523}
 
-[!DNL Experience Manager] 6.5.23.0包括新增功能、客户请求的关键增强功能和错误修复。 其中还包括自2019年4月6.5首次发布以来在性能、稳定性和安全性方面做出的改进。 在[!DNL Experience Manager] 6.5上[安装此Service Pack](#install)。
+[!DNL Experience Manager] 6.5.23.0包括新增功能、客户请求的关键增强功能和错误修复。 其中还包括自2019年4月6.5首次发布以来在性能、稳定性和安全性方面做出的改进。 在[ 6.5上](#install)安装此Service Pack[!DNL Experience Manager]。
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -71,7 +71,11 @@ ht-degree: 1%
 
    * Red Hat® Enterprise Linux® 9（内核4.x，64位） 
 
-* [强化的文件附件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
+* [强化的文件附件组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
+
+* Forms-20533：AEM Forms现在包含用于forms组件的Struts版本从2.5.33升级到6.x。 这提供了以前未包含在SP23中的Struts更改。 通过[修补程序](/help/release-notes/aem-forms-hotfix.md)添加支持，您可以[下载并安装](/help/release-notes/aem-forms-hotfix.md)以添加对最新版本Struts的支持。
+
+* Forms-20532：AEM Forms现在包含用于输出组件的Struts版本从2.5.33升级到6.x。 这提供了以前未包含在SP23中的Struts更改。 通过[修补程序](/help/release-notes/aem-forms-hotfix.md)添加支持，您可以[下载并安装](/help/release-notes/aem-forms-hotfix.md)以添加对最新版本Struts的支持。
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -211,18 +215,18 @@ ht-degree: 1%
 #### Universal Editor {#sites-universal-editor-6523}
 
 * 在将包含查询参数的多个请求发送到AEM时，可能无法及时返回登录令牌Cookie，这可能会导致登录失败。 (SITES-30659) <!-- LTS -->
-* 要确保与SAML处理程序兼容和支持，您必须配置`service.ranking`属性，以便`Query Token Auth`处理程序在&#x200B;*`SAML Auth`处理程序之前*&#x200B;运行。 (SITES-29684)
+* 要确保与SAML处理程序兼容和支持，您必须配置`service.ranking`属性，以便`Query Token Auth`处理程序在&#x200B;**&#x200B;处理程序之前`SAML Auth`运行。 (SITES-29684)
 
 ### [!DNL Assets]{#assets-6523}
 
-* 选择![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**、导航到&#x200B;**[!UICONTROL &#x200B;搜索Adobe Stock &#x200B;]**&#x200B;文件夹并选择库存图像后，[!DNL AEM]内部部署(6.5.22.0)导航页面上出现以下问题：
+* 选择[!DNL AEM]Assets6.5.22.0Assets![、导航到](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL 搜索Adobe Stock ]**文件夹并选择库存图像后，**[!UICONTROL &#x200B;内部部署(]**)导航页面上出现以下问题：
    * 无法许可所选库存图像并将其保存为单击&#x200B;**[!UICONTROL 许可并保存]**&#x200B;将显示一个空下拉列表。
    * 选择Stock图像或重新输入库存页面URL将重定向到[!DNL AEM]主页，阻止访问Adobe Stock图像。 (ASSETS-48687)
-* 如果在[!DNL AEM]内部部署(6.5.22.0)导航页面上的文件夹名称包含`/`，则管理文件夹时出现问题。 (ASSETS-46740)
-* 在[!DNL AEM] 6.5上，由于内存使用率较高，资产详细信息页面无法从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**&#x200B;视图加载。 (ASSETS-46738)
+* 如果在`/`内部部署([!DNL AEM])导航页面上的文件夹名称包含6.5.22.0，则管理文件夹时出现问题。 (ASSETS-46740)
+* 在[!DNL AEM] 6.5上，由于内存使用率较高，资产详细信息页面无法从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**视图加载。 (ASSETS-46738)
 * 将[!DNL InDesign]作为`Day CQ DAM Mime Type OSGI`服务的集成问题错误地将[!DNL InDesign]文件识别为`x-adobe-indesign`而不是`x-indesign`。 (ASSETS-45953)
 * [!DNL AEM 6.5.21]会话泄露跟踪到现成的&#x200B;**[!UICONTROL 计划发布到Brand Portal]**&#x200B;工作流步骤。 (ASSETS-44104)
-* 处理和发布图像时，[!DNL AEM]中显示&#x200B;**[!UICONTROL 内存不足(OOM)]**&#x200B;错误。 此问题是由工作流中已弃用的方法造成的，例如&#x200B;**[!DNL Dam Asset update]**&#x200B;和&#x200B;**[!DNL Dynamic Media: Reprocess assets]**。 (ASSETS-43343)
+* 处理和发布图像时，**[!UICONTROL 中显示]**&#x200B;内存不足(OOM)[!DNL AEM]错误。 此问题是由工作流中已弃用的方法造成的，例如&#x200B;**[!DNL Dam Asset update]**&#x200B;和&#x200B;**[!DNL Dynamic Media: Reprocess assets]**。 (ASSETS-43343)
 * 进行细微更改后（例如更新标题），您将在本地Sites实例上重新打开并重新保存&#x200B;**[!DNL Connected Assets configuration]**。 然后，远程实例会断开与本地实例的连接。 因此，它无法与本地Sites实例建立通信。 (ASSETS-44484)
 * 在[!DNL AEM 6.5.21]中，取消列表视图中的资产上传并执行第二次上传时，[!DNL AEM]显示已上传&#x200B;**[!UICONTROL 0个NaN资产]**&#x200B;错误。 (ASSETS-44124)
 
@@ -238,12 +242,12 @@ ht-degree: 1%
 
 **包含密钥修复**
 
-修复了Dynamic Media — 混合部署中的一个问题：尽管复制成功且没有错误，但`/conf/global/settings/dam/dm/imageserver`下对`catalog.expiration`参数的更新未反映在服务器或创作URL上。 此更新可确保CRX/DE、服务器响应和公共交付URL之间的过期值保持一致。 反过来，它改进了缓存行为以及映像转换的可靠性。 (ASSETS-44837)
+修复了Dynamic Media — 混合部署中的一个问题：尽管复制成功且没有错误，但`catalog.expiration`下对`/conf/global/settings/dam/dm/imageserver`参数的更新未反映在服务器或创作URL上。 此更新可确保CRX/DE、服务器响应和公共交付URL之间的过期值保持一致。 反过来，它改进了缓存行为以及映像转换的可靠性。 (ASSETS-44837)
 
 **重要注意事项**
 
 * 基本AEM 6.5.23（及更高版本）安装中的`cq-scene7-imaging`捆绑包&#x200B;*与Dynamic Media — 混合运行模式不兼容*。
-* 仅安装Service Pack 23（及更高版本）不会&#x200B;*自动更新为Dynamic Media — 混合（`-r dynamicmedia`运行模式）配置的AEM实例上的*&#x200B;现有`cq-scene7-imaging`捆绑包。
+* 仅安装Service Pack 23（及更高版本）不会&#x200B;*自动更新为Dynamic Media — 混合（*&#x200B;运行模式）配置的AEM实例上的`cq-scene7-imaging`现有`-r dynamicmedia`捆绑包。
 
 **何时安装混合附加组件包**
 
@@ -274,7 +278,7 @@ ht-degree: 1%
 
 * 在AEM Forms中，在根面板上启用“允许标题使用富文本”会导致嵌套面板上的“从记录文档排除标题”错误地隐藏根面板的标题。 它会在生成的记录文档中进行此操作。 (FORMS-19696)
 
-* 在AEM 6.5上的JSON架构中，系统忽略通过`aem:afProperties`分配的自定义`sling:resourceType`。在渲染期间忽略自定义资源类型。 (FORMS-19691)
+* 在AEM 6.5上的JSON架构中，系统忽略通过`sling:resourceType`分配的自定义`aem:afProperties`。在渲染期间忽略自定义资源类型。 (FORMS-19691)
 
 * 当用户使用URI提交带有预填充附件的自适应表单时，由于缺少二进制数据，表单提交失败并出现NullPointerException。 (FORMS-19371) (FORMS-19486)
 
@@ -347,7 +351,7 @@ ht-degree: 1%
 #### Forms验证码 {#forms-captcha-6523}
 
 * 通过将提交错误代码更新为400，改进了自适应Forms中的reCAPTCHA警报。 此外，改进了日志警报以区分超时、过期和机器人检测故障，从而提高故障排除的准确性和系统可观察性。 (FORMS-19240)
-* 在AEM Forms中使用reCAPTCHA集成时，在`ReCaptchaConfigurationServiceImpl`中关闭了一个未关闭的`ResourceResolver`实例，以防止潜在的资源泄漏并提高系统稳定性。 (FORMS-19242)
+* 在AEM Forms中使用reCAPTCHA集成时，在`ResourceResolver`中关闭了一个未关闭的`ReCaptchaConfigurationServiceImpl`实例，以防止潜在的资源泄漏并提高系统稳定性。 (FORMS-19242)
 * 通过确保`/conf/global`文件夹中存在多个条目时每个表单绑定正确的配置，改进了AEM Forms的验证码配置处理。 如果未明确选择配置容器，则防止意外使用错误的验证码设置。 (FORMS-19239)
 
 <!--
@@ -505,7 +509,7 @@ ht-degree: 1%
 可以使用两种不同的方法来安装[!DNL Experience Manager] 6.5.23.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * 当服务器联机时，将包放入`../crx-quickstart/install`文件夹中。 软件包会自动安装。
-* 使用包管理器[&#128279;](/help/sites-administering/package-manager.md#package-share)中的HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
+* 使用包管理器[中的](/help/sites-administering/package-manager.md#package-share)HTTP API。 使用`cmd=install&recursive=true`安装嵌套包。
 
 >[!NOTE]
 >
@@ -515,7 +519,7 @@ ht-degree: 1%
 
 要了解经认证可与此版本配合使用的平台，请参阅[技术要求](/help/sites-deploying/technical-requirements.md)。
 
-1. 产品信息页面(`/system/console/productinfo`)在[!UICONTROL 已安装的产品]下显示更新的版本字符串`Adobe Experience Manager (6.5.23.0)`。<!-- UPDATE FOR EACH NEW RELEASE -->
+1. 产品信息页面(`/system/console/productinfo`)在`Adobe Experience Manager (6.5.23.0)`已安装的产品[!UICONTROL 下显示更新的版本字符串]。<!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. 在OSGi控制台中，所有OSGi包均为&#x200B;**[!UICONTROL 活动]**&#x200B;或&#x200B;**[!UICONTROL 片段]**（使用Web控制台： `/system/console/bundles`）。
 
@@ -558,7 +562,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->UberJar和其他相关工件可在Maven中央存储库上使用，而不是Adobe公共Maven存储库(`repo.adobe.com`)。 主UberJar文件已重命名为`uber-jar-<version>.jar`。 因此，`dependency`标记中没有`classifier`，值为`apis`。
+>UberJar和其他相关工件可在Maven中央存储库上使用，而不是Adobe公共Maven存储库(`repo.adobe.com`)。 主UberJar文件已重命名为`uber-jar-<version>.jar`。 因此，`classifier`标记中没有`apis`，值为`dependency`。
 
 
 
@@ -620,7 +624,7 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
       * `diff-cache`
 
    1. 安装Service Pack，或重新启动Experience Manager as a Cloud Service。
-`cache`和`diff-cache`的新文件夹是自动创建的，您在`error.log`中不再遇到与`mvstore`相关的异常。
+`cache`和`diff-cache`的新文件夹是自动创建的，您在`mvstore`中不再遇到与`error.log`相关的异常。
 
 * 更新可能已为内容模型使用自定义API名称的GraphQL查询，以改用内容模型的默认名称。
 
@@ -654,7 +658,7 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
   "refresh": true
   ```
 
-* 如果您将[!DNL Experience Manager]实例从6.5.0 - 6.5.4升级到Java™ 11上的最新Service Pack，则会在`error.log`文件中看到`RRD4JReporter`异常。 若要停止异常，请重新启动[!DNL Experience Manager]的实例。<!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* 如果您将[!DNL Experience Manager]实例从6.5.0 - 6.5.4升级到Java™ 11上的最新Service Pack，则会在`RRD4JReporter`文件中看到`error.log`异常。 若要停止异常，请重新启动[!DNL Experience Manager]的实例。<!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * 用户可以在[!DNL Assets]中重命名层次结构中的文件夹，并将嵌套文件夹发布到[!DNL Brand Portal]。 但是，在重新发布根文件夹之前，[!DNL Brand Portal]中的文件夹标题不会更新。
 
@@ -672,7 +676,7 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
 
 ### AEM Sites的已知问题 {#known-issues-aem-sites-6523}
 
-内容片段 — 预览由于大型片段树的DoS保护而失败。 请参阅关于默认GraphQL查询执行器配置选项[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)的KB文章(SITES-17934)
+内容片段 — 预览由于大型片段树的DoS保护而失败。 请参阅关于默认GraphQL查询执行器配置选项[的](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)KB文章(SITES-17934)
 
 ### AEM Forms的已知问题 {#known-issues-aem-forms-6523}
 
@@ -680,11 +684,11 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
 >
 > 对于没有可用修补程序的问题，请勿升级到Service Pack 6.5.23.0，因为这可能会导致意外错误。 只有在发布了所需的修补程序之后，才能升级到Service Pack 6.5.23.0。
 
-* 当用户将Struts从AEM Service Pack 2.5.x升级到AEM Forms Service Pack 6.x时，策略UI无法显示所有配置，例如添加水印的选项。 (FORMS-20203)
+* 当用户将Struts从AEM Service Pack 2.5.x升级到AEM Forms Service Pack 6.x时，策略UI无法显示所有配置，例如添加水印的选项。 您可以[下载并安装修补程序](/help/release-notes/aem-forms-hotfix.md)以解决问题。  (FORMS-20203)
 * 升级到AEM Forms Service Pack 6.5.23.0后，ImageToPDF转换服务失败，并出现错误(FORMS-20360)：
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```您可以[下载并安装修补程序](/help/release-notes/aem-forms-hotfix.md)以解决问题。
 
-* 安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`<AEM_Forms_Installation>/lib/caching/lib`文件夹下找到Geode Jar `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`的重复条目(FORMS-14926)，请执行以下步骤，以解决该问题：
+* 安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`文件夹下找到Geode Jar `<AEM_Forms_Installation>/lib/caching/lib`的重复条目(FORMS-14926)，请执行以下步骤，以解决该问题：
 
    1. 如果定位器正在运行，请停止它们。
    2. 停止AEM服务器。
@@ -716,6 +720,8 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
 
+* Forms-20478：尝试将类型7/8 TIFF文件转换为PDF时，转换过程失败，并出现以下错误：“ALC-PDG-001-000-Image2Pdf转换失败，原因是：com/sun/image/codec/jpeg/JPEGCodec”和“ALC-PDG-016-003-PDF后处理期间发生未知/意外错误。” 系统尝试使用TM ImageIO TIFF解码器重试，但最终无法完成作业。 您可以[下载并安装修补程序](/help/release-notes/aem-forms-hotfix.md)以修复此问题。
+
 
 ## 包含的OSGi包和内容包{#osgi-bundles-and-content-packages-included}
 
@@ -729,10 +735,10 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
 这些网站仅供客户使用。 如果您是客户并且需要访问权限，请联系您的Adobe客户经理。
 
 * [产品下载位于licensing.adobe.com](https://licensing.adobe.com/)
-* [联系Adobe客户支持](https://experienceleague.adobe.com/zh-hans/docs/customer-one/using/home)。
+* [联系Adobe客户支持](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 产品页](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [订阅Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)
