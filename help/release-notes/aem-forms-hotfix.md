@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 80482da847b86c91963dbb0d37375e370a503588
+source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
     <td><strong>修复的问题</strong></td>
   </tr>
   <tr>
-    <td>SP23修补程序已上传到SD-</td>
+    <td>SP23修补程序</td>
     <td>
     <ul>
     <li><strong>Jboss：</strong></li>
