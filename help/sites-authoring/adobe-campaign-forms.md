@@ -9,16 +9,16 @@ exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1281'
+source-wordcount: '1280'
 ht-degree: 0%
 
 ---
 
 # 在AEM中创建Adobe Campaign Forms {#creating-adobe-campaign-forms-in-aem}
 
-AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可以将特定字段插入表单并映射到Adobe Campaign数据库。
+通过AEM，您可以创建并使用与网站上的Adobe Campaign交互的表单。 可以将特定字段插入表单并映射到Adobe Campaign数据库。
 
 您可以管理新的联系人订阅、退订和用户配置文件数据，同时将其数据集成到您的Adobe Campaign数据库中。
 
@@ -52,10 +52,10 @@ AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可�
 
 >[!NOTE]
 >
->当使用Adobe Campaign Classic或Adobe Campaign Standard时，请确保将页面&#x200B;**jcr：content**&#x200B;节点上的&#x200B;**acMapping**&#x200B;属性分别设置为&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
+>当使用Adobe Campaign Classic或Adobe Campaign Standard时，请确保将页面&#x200B;**jcr**&#x200B;节点上的&#x200B;**acMapping:content**&#x200B;属性分别设置为&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
 >
 
-1. 在AEM的Sites中，导航到要创建页面的位置。
+1. 在AEM的站点中，导航到要创建页面的位置。
 1. 创建页面并选择&#x200B;**Adobe Campaign Classic配置文件**&#x200B;或&#x200B;**Adobe Campaign Standard配置文件**，然后单击&#x200B;**下一步**。
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
@@ -66,7 +66,7 @@ AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可�
 
 1. 在&#x200B;**Name**&#x200B;字段中，添加页面的名称。 它必须是有效的JCR名称。
 1. 在&#x200B;**标题**&#x200B;字段中输入标题，然后单击&#x200B;**创建**。
-1. 打开页面，然后选择&#x200B;**打开属性**，在Cloud Service中添加Adobe Campaign配置并选择复选标记以保存更改。
+1. 打开页面，然后选择&#x200B;**打开属性**，然后在Cloud Services中添加Adobe Campaign配置并选择复选标记以保存更改。
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
@@ -78,11 +78,11 @@ AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可�
 
 >[!NOTE]
 >
->如果所需的模板不可用，请参阅[使模板可用](/help/sites-authoring/adobe-campaign.md)。
+>如果所需的模板不可用，请参阅[使模板可用。](/help/sites-authoring/campaign.md)
 
 此部分仅详细介绍指向Adobe Campaign的特定链接。 有关如何在Adobe Experience Manager中使用表单的更多常规概述的信息，请参阅[编辑模式组件](/help/sites-authoring/default-components-foundation.md)。
 
-1. 选择&#x200B;**打开属性**，然后在Cloud Service中添加Adobe Campaign配置并选择复选标记以保存更改。
+1. 选择&#x200B;**打开属性**，然后在Cloud Services中添加Adobe Campaign配置并选择复选标记以保存更改。
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 
@@ -114,7 +114,7 @@ AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可�
    >
    >您可以按照以下说明添加/删除收件人表中显示的字段：[https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
 
-1. 单击&#x200B;**Publish页面**。 您的网站上已激活该页面。 您可以通过转到AEM发布实例来查看它。 您也可以[测试表单](#testing-a-form)。
+1. 单击&#x200B;**发布页面**。 您的网站上已激活该页面。 您可以通过转到AEM发布实例来查看它。 您也可以[测试表单](#testing-a-form)。
 
    >[!CAUTION]
    >

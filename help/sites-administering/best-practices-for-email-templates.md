@@ -10,9 +10,10 @@ exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1072'
 ht-degree: 1%
 
 ---
@@ -22,9 +23,9 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->本文适用于已弃用的基于Foundation组件的AEM电子邮件组件。
+>本文适用于已弃用的基于Foundation Components的AEM电子邮件组件。
 >
->建议用户使用新版[核心组件电子邮件组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html?lang=zh-Hans)
+>建议用户使用新版[核心组件电子邮件组件。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 本文档介绍了一些有关电子邮件设计的最佳实践，这些实践最终形成了开发良好的电子邮件营销活动模板。
 
@@ -34,7 +35,7 @@ AEM中提供的演示活动遵循所有这些最佳实践。 对于每种最佳�
 
 >[!NOTE]
 >
->应在类型为`cq/personalization/components/ambitpage`的`master`页面下创建所有营销活动内容。
+>应在类型为`master`的`cq/personalization/components/ambitpage`页面下创建所有营销活动内容。
 >
 >例如，如果您的计划促销活动结构类似于
 >
@@ -46,7 +47,7 @@ AEM中提供的演示活动遵循所有这些最佳实践。 对于每种最佳�
 
 >[!NOTE]
 >
->为Adobe Campaign创建邮件模板时，必须在模板的&#x200B;**jcr：content**&#x200B;节点中包含值为&#x200B;**mapRecipient**&#x200B;的属性&#x200B;**acMapping**。 如果不这样做，则无法在Experience Manager的&#x200B;**页面属性**&#x200B;中选择Adobe Campaign模板（字段已禁用）。
+>为Adobe Campaign创建邮件模板时，必须在模板的&#x200B;**jcr**&#x200B;节点中包含值为&#x200B;**mapRecipient**&#x200B;的属性&#x200B;**acMapping:content**。 如果不这样做，则无法在Experience Manager的&#x200B;**页面属性**&#x200B;中选择Adobe Campaign模板（字段已禁用）。
 
 ## 模板/页面组件 {#template-page-component}
 
@@ -60,7 +61,7 @@ AEM中提供的演示活动遵循所有这些最佳实践。 对于每种最佳�
   </tr>
   <tr>
    <td><p>指定文档类型，以确保一致的呈现。</p> <p>在开头添加DOCTYPE(HTML或XHTML)</p> </td>
-   <td><p>可通过设计更改<i>"/etc/designs/default/jcr：content/campaign_newsletterpage"</i>中的<i>cq：doctype</i>属性进行配置</p> <p>默认值为“XHTML”：</p> <p>&lt;！DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>可更改为“HTML_5”：</p> <p>&lt;！DOCTYPEHTML&gt;</p> </td>
+   <td><p>可通过设计更改<i>"/etc/designs/default/jcr：content/campaign_newsletterpage"</i>中的<i>cq：doctype</i>属性进行配置</p> <p>默认值为“XHTML”：</p> <p>&lt;！DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional/EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;</p> <p>可更改为“HTML_5”：</p> <p>&lt;！DOCTYPE HTML&gt;</p> </td>
   </tr>
   <tr>
    <td><p>指定字符定义，以确保正确呈现特殊字符。</p> <p>将CHARSET声明（例如，iso-8859-15、UTF-8）添加到&lt;head&gt;</p> </td>
@@ -156,7 +157,7 @@ AEM提供了多个现成的模板和组件供您创建Campaign新闻稿。 您�
 | 文本&amp;Personalization | /libs/mcm/campaign/components/personalization |
 | Textimage | /libs/mcm/campaign/components/textimage |
 | 链接 | /libs/mcm/campaign/components/reference |
-| Dynamic Media Classic(以前称为Scene7)图像模板 | /libs/mcm/campaign/s7image |
+| Dynamic Media Classic（以前为Scene7）图像模板 | /libs/mcm/campaign/s7image |
 | 目标引用 | /libs/mcm/campaign/components/reference |
 
 >[!NOTE]

@@ -10,12 +10,14 @@ exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+index: false
+source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
 workflow-type: tm+mt
-source-wordcount: '2859'
+source-wordcount: '2857'
 ht-degree: 4%
 
 ---
+
 
 # Adobe Campaign组件{#adobe-campaign-components}
 
@@ -25,11 +27,11 @@ ht-degree: 4%
 >
 >已弃用AEM电子邮件组件。 由于电子邮件将内容和样式融合在一起，因此由AEM提供的现成可用电子邮件组件对于客户的重用受到限制，因为需要将自定义样式实施到项目所需的任何组件中。
 >
->电子邮件组件可以在项目级别实施，已弃用的AEM电子邮件组件说明了如何实现这一点。 但是，请勿在项目中使用这些已弃用的组件。
+>可以在项目级别实施电子邮件组件，已弃用的AEM电子邮件组件说明了如何实现这一点。 但是，请勿在项目中使用这些已弃用的组件。
 
 ## Adobe Campaign新闻稿组件 {#adobe-campaign-newsletter-components}
 
-所有Campaign组件都遵循[电子邮件模板最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳实践，并且基于Adobe标记语言[HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html)。
+所有Campaign组件都遵循[电子邮件模板最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳实践，并基于Adobe标记语言[HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html)。
 
 当您打开配置为与Adobe Campaign集成的新闻稿/电子邮件时，您应会在&#x200B;**Adobe Campaign新闻稿**&#x200B;部分中看到以下组件：
 
@@ -92,7 +94,7 @@ ht-degree: 4%
 >
 >就地编辑器在编辑时使用图像的原始大小和纵横比。 您还可以指定高度和宽度属性。 在保存编辑更改时，将应用属性中定义的任何大小和纵横比限制。
 >
->根据您的实例，页面[&#128279;](/help/sites-developing/designer.md)的设计也可能施加最小和最大限制；这些限制是在项目实施期间制定的。
+>根据您的实例，页面[的](/help/sites-developing/designer.md)设计也可能施加最小和最大限制；这些限制是在项目实施期间制定的。
 
 全屏编辑模式中提供了多个其他选项；例如，映射和缩放：
 
@@ -153,7 +155,7 @@ ht-degree: 4%
 添加了关于如何使用链接的其他信息。
 
 * **LinkType**
-在下拉列表中，选择&#x200B;**自定义URL**&#x200B;和&#x200B;**自适应文档**。 此字段为必填字段。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
+在下拉列表中，选择**自定义URL**&#x200B;和&#x200B;**自适应文档**。 此字段为必填字段。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
 
 * **其他URL参数**
 添加任何其他URL参数。 单击“添加项目”可添加多个项目。
@@ -246,7 +248,7 @@ Dynamic Media Classic (Scene7)图像模板是分层的图像文件，其中的�
 
 ### 文本与个性化（营销活动） {#text-personalization-campaign}
 
-文本与Personalization（营销活动）组件允许您使用WYSIWYG编辑器和[富文本编辑器](/help/sites-authoring/rich-text-editor.md)提供的功能输入文本块。 此外，此组件允许您使用Adobe Campaign中可用的上下文字段和个性化块；另请参阅[插入Personalization](/help/sites-authoring/campaign.md#inserting-personalization)。
+文本与Personalization （营销活动）组件允许您使用WYSIWYG编辑器输入文本块，该编辑器具有[富文本编辑器](/help/sites-authoring/rich-text-editor.md)提供的功能。 此外，此组件允许您使用Adobe Campaign中可用的上下文字段和个性化块；另请参阅[插入Personalization](/help/sites-authoring/campaign.md#inserting-personalization)。
 
 图标的选择允许您设置文本格式，包括字体特征、对齐方式、链接、列表和缩进。 在[两个UI](/help/sites-authoring/editing-content.md)中，功能基本相同，但外观和感觉不同：
 
@@ -265,7 +267,7 @@ Dynamic Media Classic (Scene7)图像模板是分层的图像文件，其中的�
 
 >[!NOTE]
 >
->只考虑在&#x200B;**nms：seedMember**&#x200B;架构或其扩展中定义的字段。 链接到&#x200B;**nms：seedMember**&#x200B;的表的属性不可用。
+>只考虑在&#x200B;**nms:seedMember**&#x200B;架构或其扩展中定义的字段。 链接到&#x200B;**nms:seedMember**&#x200B;的表的属性不可用。
 
 ## Adobe Campaign表单组件 {#adobe-campaign-form-components}
 
@@ -276,7 +278,7 @@ Dynamic Media Classic (Scene7)图像模板是分层的图像文件，其中的�
 当您打开配置为与Adobe Campaign集成的表单时，您会在&#x200B;**Adobe Campaign**&#x200B;部分中看到以下组件：
 
 * 复选框（营销活动）
-* 日期字段（营销活动）和日期字段/HTML5（营销活动）
+* 日期字段（营销活动）和日期字段/HTML5 （营销活动）
 * 已加密的主要密钥（营销活动）
 * 错误显示（营销活动）
 * 隐藏的协调键（营销活动）
@@ -388,13 +390,13 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-### 日期字段（营销活动）和日期字段/HTML5（营销活动） {#date-field-campaign-and-date-field-html-campaign}
+### 日期字段（营销活动）和日期字段/HTML 5 （营销活动） {#date-field-campaign-and-date-field-html-campaign}
 
 使用日期字段可允许收件人输入日期；例如，您可能希望收件人指定其出生日期。 日期格式与Adobe Campaign实例中使用的格式匹配。
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无**&#x200B;或&#x200B;**日期 —**&#x200B;以添加日期限制或无限制。 如果选择日期，则用户在字段中输入的答案必须采用日期格式。
 
 * **约束消息**&#x200B;此外，您可以添加约束消息，以便用户了解如何正确设置其答案的格式。
@@ -446,7 +448,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无**&#x200B;或&#x200B;**数值 —**&#x200B;来添加数值或无约束的约束。 如果选择数字，则用户在字段中输入的答案必须是数字。
 
 * **约束消息**&#x200B;此外，您可以添加约束消息，以便用户了解如何正确设置其答案的格式。
@@ -490,7 +492,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无、** **电子邮件**&#x200B;或&#x200B;**名称** （无变音） — 添加电子邮件地址、名称或无限制的约束。 如果选择电子邮件，则用户在字段中输入的答案必须是电子邮件地址。 如果选择名称，则必须为名称（不允许使用变音）。
 
 * **约束消息**&#x200B;此外，您可以添加约束消息，以便用户了解如何正确设置其答案的格式。
