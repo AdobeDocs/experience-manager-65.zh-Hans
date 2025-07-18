@@ -10,9 +10,9 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '2964'
+source-wordcount: '2965'
 ht-degree: 42%
 
 ---
@@ -21,17 +21,17 @@ ht-degree: 42%
 
 >[!NOTE]
 >
->* 本页旨在概述使用Adobe Experience Manager (AEM)创作环境时的基本处理。 它使用&#x200B;**Sites**&#x200B;控制台作为基础。
+>* 本页旨在概述使用Adobe Experience Manager (AEM)创作环境时的基本操作。 它使用&#x200B;**Sites**&#x200B;控制台作为基础。
 >
 >* 某些功能并不是在所有控制台中均可用，而且某些控制台可能会提供额外的功能。有关各个控制台及其相关功能的特定信息，将在其他页面上详细介绍。
->* 在整个AEM环境中都可以使用键盘快捷键。 特别是当[使用控制台](/help/sites-authoring/keyboard-shortcuts.md)和[编辑页面](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)时。
+>* 用户在整个AEM环境中都可以使用键盘快捷键。 特别是当[使用控制台](/help/sites-authoring/keyboard-shortcuts.md)和[编辑页面](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)时。
 >
 
 ## 快速入门 {#getting-started}
 
 ### 触屏优化 UI {#a-touch-enabled-ui}
 
-已为触控启用AEM用户界面。 触屏界面允许您使用触屏，通过选择、触摸并按住及轻扫之类的手势与软件进行交互。 这与传统的桌面界面使用鼠标操作（如单击、双击、右键单击和鼠标悬停）的方式形成对比。
+为触控启用了AEM的用户界面。 触屏界面允许您使用触屏，通过选择、触摸并按住及轻扫之类的手势与软件进行交互。 这与传统的桌面界面使用鼠标操作（如单击、双击、右键单击和鼠标悬停）的方式形成对比。
 
 由于AEM UI支持触控，因此您可以在触控设备（例如，移动设备或平板电脑）上使用触控手势，并在传统桌面设备上使用鼠标操作。
 
@@ -78,7 +78,7 @@ ht-degree: 42%
 
 ### “导航”面板 {#navigation-panel}
 
-“导航”面板提供对AEM控制台的访问：
+通过“导航”面板可访问AEM控制台：
 
 ![导航](assets/bh-01.png)
 
@@ -94,11 +94,11 @@ ht-degree: 42%
   </tr>
   <tr>
    <td>Assets<br /> </td>
-   <td>这些控制台允许您导入和<a href="/help/assets/assets.md">管理数字资产</a>，如图像、视频、文档和音频文件。 随后，这些资产便可由同一AEM实例上运行的任何网站使用。 </td>
+   <td>这些控制台允许您导入和<a href="/help/assets/assets.md">管理数字资产</a>，如图像、视频、文档和音频文件。 随后，这些资源便可由同一AEM实例上运行的任何网站使用。 </td>
   </tr>
   <tr>
    <td>社区</td>
-   <td>此控制台允许您为<a href="/help/communities/overview.md#engagement-community">参与</a>和<a href="/help/communities/overview.md#enablement-community">启用</a>创建和管理<a href="/help/communities/sites-console.md">社区站点</a>。</td>
+   <td>此控制台允许您为<a href="/help/communities/sites-console.md">参与</a>和<a href="/help/communities/overview.md#engagement-community">启用</a>创建和管理<a href="/help/communities/overview.md#enablement-community">社区站点</a>。</td>
   </tr>
   <tr>
    <td>商务</td>
@@ -122,7 +122,7 @@ ht-degree: 42%
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=zh-Hans">Screens</a>允许您管理任何地点、任何规模的面向客户的所有屏幕。</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a>允许您管理任何地点、任何规模的面向客户的所有屏幕。</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -237,7 +237,7 @@ ht-degree: 42%
 
 * **导航**
 
-  第一次导航系统时，[一系列幻灯片将介绍AEM导航](/help/sites-authoring/basic-handling.md#product-navigation)。
+  第一次导航系统时，[系列幻灯片将介绍AEM导航](/help/sites-authoring/basic-handling.md#product-navigation)。
 
 * **页面编辑器**
 
@@ -457,7 +457,7 @@ ht-degree: 42%
 ![列表视图](assets/bh-19.png)
 
 * 列表视图列出各项资源在当前级别的信息。
-* 您可以通过点按/单击资源名称来向下导航树，并使用标题[&#128279;](/help/sites-authoring/basic-handling.md#the-header)中的痕迹导航进行备份。
+* 您可以通过点按/单击资源名称来向下导航树，并使用标题[中的](/help/sites-authoring/basic-handling.md#the-header)痕迹导航进行备份。
 
 * 要轻松选择列表中的所有项目，请使用列表左上角的复选框。
 
@@ -568,15 +568,16 @@ ht-degree: 42%
 
 ### 引用 {#references}
 
-**引用**&#x200B;显示与选定资源的所有连接。 例如，在 **Sites** 控制台中，页面的[引用](/help/sites-authoring/author-environment-tools.md#showingpagereferences)会显示以下项目：
+**引用**&#x200B;显示与选定资源的连接。 例如，在 **Sites** 控制台中，页面的[引用](/help/sites-authoring/author-environment-tools.md#showingpagereferences)会显示以下项目：
 
+* [Blueprint](/help/sites-administering/msm.md)
 * [启动项](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copy](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)
 * [语言副本](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * 内容引用：
 
-   * 从其他页面链接到选定页面
-   * 引用组件在选定页面中借用的内容、借出的内容或同时借出的内容
+   * 从其他页面到所选页面的直接链接
+   * 引用组件在选定页面中借用的内容、借出的内容或两者同时借用的内容
 
 ![bh-28](assets/bh-28.png)
 

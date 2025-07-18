@@ -10,9 +10,9 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '931'
 ht-degree: 5%
 
 ---
@@ -39,7 +39,7 @@ AEM 的创作环境提供了各种可用于组织和编辑内容的机制。可�
 
 可从AEM中直接访问各种&#x200B;**帮助**&#x200B;资源：
 
-除了从控制台工具栏[&#128279;](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)访问帮助外，您还可以从sidekick访问帮助(使用？ 图标)在编辑页面时：
+除了从控制台工具栏[访问](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)帮助外，您还可以从sidekick访问帮助(使用？ 图标)在编辑页面时：
 
 ![Sidekick已折叠](do-not-localize/sidekick-collapsed-2.png)
 
@@ -87,9 +87,9 @@ Sidekick的&#x200B;**组件**&#x200B;选项卡允许您浏览可添加到当前�
 
 ### 查找电影 {#finding-movies}
 
-此选项卡列出了存储库中的所有影片(例如，Flash项目)。
+此选项卡列出了存储库中的所有电影（例如，Flash项目）。
 
-在页面上创建相应的段落(例如Flash)后，您可以将某个项目拖放到段落中。
+在页面上创建了相应的段落（例如Flash）后，可以将某个项目拖放到段落中。
 
 ![chlimage_1-113](assets/chlimage_1-113.png)
 
@@ -154,26 +154,30 @@ Sidekick的&#x200B;**组件**&#x200B;选项卡允许您浏览可添加到当前�
 
 ## 显示引用 {#showing-references}
 
-AEM允许您查看哪些页面已链接到您当前处理的页面。
+通过AEM，您可以查看哪些页面已链接到您当前处理的页面。
 
-要显示直接页面引用，请执行以下操作：
+要显示页面引用，请执行以下操作：
 
 1. 在sidekick中，选择&#x200B;**Page**&#x200B;选项卡图标。
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. 选择&#x200B;**显示引用……** AEM打开“引用”窗口并显示引用所选页面的页面，包括其路径。
+1. 选择&#x200B;**显示引用……** AEM会打开“引用”窗口，并显示引用所选页面的页面，包括其路径。
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-在某些情况下，可以从Sidekick中执行其他操作，包括：
+AEM会显示直接引用所选页面以及任何间接引用的所有页面。 这有助于了解需要移动或删除页面时将更新的所有链接。
+
+## 其他Sidekick操作 {#additional-actions}
+
+在某些情况下，可以从Sidekick执行进一步操作，包括：
 
 * [启动项](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Live Copy](/help/sites-administering/msm.md)
 
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 
-在网站控制台[&#128279;](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)中可以看到其他页面间关系。
+在网站控制台[中可以看到其他](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)页面间关系。
 
 ## 审核日志 {#audit-log}
 
@@ -191,7 +195,7 @@ AEM允许您查看哪些页面已链接到您当前处理的页面。
 
 ![页面模式](do-not-localize/chlimage_1-12.png)
 
-Sidekick底部的一行图标用于切换处理页面的模式：
+Sidekick底部的一行图标用于切换使用页面的模式：
 
 * [编辑](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 这是默认模式，允许您编辑页面，添加或删除组件并进行其他更改。

@@ -9,9 +9,9 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1895'
+source-wordcount: '1898'
 ht-degree: 17%
 
 ---
@@ -43,7 +43,7 @@ ht-degree: 17%
 
   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-* Publish环境
+* 发布环境
 
   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
@@ -101,7 +101,7 @@ ht-degree: 17%
 
 #### 标题 {#title}
 
-如果您在创建页面时只提供页面&#x200B;**Title**，则AEM将从此字符串派生页面&#x200B;**Name**，然后[根据AEM和JCR实行的约定](/help/sites-developing/naming-conventions.md)验证该名称。 在这两个UI中，将接受包含无效字符的&#x200B;**标题**&#x200B;字段，但派生的名称将替代无效字符。 例如：
+如果您在创建页面时只提供页面&#x200B;**Title**，AEM将从此字符串派生页面&#x200B;**Name**，然后[根据AEM和JCR实行的约定](/help/sites-developing/naming-conventions.md)验证该名称。 在这两个UI中，将接受包含无效字符的&#x200B;**标题**&#x200B;字段，但派生的名称将替代无效字符。 例如：
 
 | 标题 | 派生的名称 |
 |---|---|
@@ -110,7 +110,7 @@ ht-degree: 17%
 
 #### 名称 {#name}
 
-如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的约定](/help/sites-developing/naming-conventions.md)验证此名称。
+如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证此名称。
 
 在经典UI中，**无法在**&#x200B;名称&#x200B;**字段中输入无效字符**。
 
@@ -173,7 +173,7 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
    * 提供&#x200B;**标题**；此标题向用户显示。
    * 提供&#x200B;**名称**；用于生成URI。 如果未指定，则将从标题派生名称。
 
-      * 如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证该名称。
+      * 如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证此名称。
       * 在经典UI中，**无法在**&#x200B;名称&#x200B;**字段中输入无效字符**。
 
    * 单击要用于创建新页面的模板。
@@ -223,7 +223,7 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
    >
    >在此阶段，您要复制单个页面还是底层子页面无关。
 
-1. 单击&#x200B;**复制**。
+1. 点击 **复制**。
 
 1. 导航到新位置，然后单击：
 
@@ -252,7 +252,7 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
 * 在同一位置重命名页面
 * 将页面移动到新位置并同时重命名页面
 
-AEM提供了将内部链接更新到要重命名或移动的页面的功能。 此操作非常灵活，可以一个页面一个页面地执行。
+AEM提供将内部链接更新到要重命名或移动的页面的功能。 此操作非常灵活，可以一个页面一个页面地执行。
 
 要移动或重命名页面，请执行以下操作：
 
@@ -266,7 +266,7 @@ AEM提供了将内部链接更新到要重命名或移动的页面的功能。 �
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   该页面还列出了引用正在移动的页面的任何页面。 根据引用页面的状态，您或许可以调整这些链接和/或重新发布页面。
+   页面还会列出直接或间接引用所移动页面的任何页面。 根据引用页面的状态，您或许可以调整这些链接和/或重新发布页面。
 
 1. 根据需要填写以下字段：
 
@@ -286,7 +286,7 @@ AEM提供了将内部链接更新到要重命名或移动的页面的功能。 �
 
    * **调整**
 
-     更新列出的页面上指向已移动页面的链接：例如，如果页面A具有指向页面B的链接，AEM会调整页面A中的链接，以防您移动页面B。
+     更新页面上列出的指向已移动页面的链接：例如，如果页面A具有指向页面B的链接，AEM会调整页面A中的链接，以防您移动页面B。
 
      可以为每个单独引用页面选择/取消选择此选项。
 
