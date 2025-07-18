@@ -122,7 +122,7 @@ ht-degree: 42%
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a>允许您管理任何地点、任何规模的面向客户的所有屏幕。</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=zh-Hans">Screens</a>允许您管理任何地点、任何规模的面向客户的所有屏幕。</td>
   </tr>
   <tr>
    <td>Sites</td>
