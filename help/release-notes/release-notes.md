@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
+source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
 workflow-type: tm+mt
-source-wordcount: '6643'
+source-wordcount: '6684'
 ht-degree: 1%
 
 ---
@@ -71,11 +71,21 @@ ht-degree: 1%
 
    * Red Hat® Enterprise Linux® 9（内核4.x，64位） 
 
-* [强化的文件附件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
+* [强化的文件附件组件](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为安全措施，该组件现在阻止提交具有修改扩展名的文件，这些文件尝试绕过允许的文件类型检查。 在提交期间将阻止此类文件，以确保仅接受有效的文件类型。
 
-* Forms-20533：AEM Forms现在包含用于forms组件的Struts版本从2.5.33升级到6.x。 这提供了以前未包含在SP23中的Struts更改。 通过[修补程序](/help/release-notes/aem-forms-hotfix.md)添加支持，您可以[下载并安装](/help/release-notes/aem-forms-hotfix.md)以添加对最新版本Struts的支持。
+* Forms-20533、FORMS-20532：AEM Forms现在包括从2.5.33到6.x的Struts版本升级。通过[修补程序](/help/release-notes/aem-forms-hotfix.md)添加支持，您可以[下载并安装](/help/release-notes/aem-forms-hotfix.md)以添加对最新版本Struts的支持。
 
-* Forms-20532：AEM Forms现在包含用于输出组件的Struts版本从2.5.33升级到6.x。 这提供了以前未包含在SP23中的Struts更改。 通过[修补程序](/help/release-notes/aem-forms-hotfix.md)添加支持，您可以[下载并安装](/help/release-notes/aem-forms-hotfix.md)以添加对最新版本Struts的支持。
+* **LC-3922769**：某些AEM Forms功能现在需要OpenSSL 3才能正常工作。 系统必须安装了OpenSSL 3以及库`libcrypto.so.3`和`libssl.so.3`。 由于安全更新仅在具有OpenSSL 3.0.14的版本中可用，并且SafeLogic支持将于2025年2月结束，因此我们删除了bsafe，现在使用OpenSSL 3实现安全合规性。 有关平台兼容性和详细要求，请参阅[AEM Forms on JEE的支持平台](/help/forms/using/aem-forms-jee-supported-platforms.md)和[技术要求](/help/sites-deploying/technical-requirements.md)。
+
+  **验证OpenSSL 3安装：**
+
+   * **基于RHEL/CentOS/Fedora的系统**： `rpm -qa | grep   openssl3`
+   * 基于&#x200B;**Ubuntu/Debian的系统**： `dpkg -l | grep openssl3`
+   * **替代验证**： `ldd /path/to/XMLForm |   grep -E 'libcrypto.so.3|libssl.so.3'` （如果库位于LD_LIBRARY_PATH）
+
+
+
+
 
 <!--* **Two-Factor authentication with SAML for AdminUI** 
 
@@ -219,14 +229,14 @@ ht-degree: 1%
 
 ### [!DNL Assets]{#assets-6523}
 
-* 选择[!DNL AEM]Assets6.5.22.0Assets![、导航到](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL 搜索Adobe Stock &#x200B;]**&#x200B;文件夹并选择库存图像后，**[!UICONTROL &#x200B;内部部署(]**)导航页面上出现以下问题：
+* 选择[!DNL AEM]Assets6.5.22.0Assets![、导航到](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL 搜索Adobe Stock ]**文件夹并选择库存图像后，**[!UICONTROL &#x200B;内部部署(]**)导航页面上出现以下问题：
    * 无法许可所选库存图像并将其保存为单击&#x200B;**[!UICONTROL 许可并保存]**&#x200B;将显示一个空下拉列表。
    * 选择Stock图像或重新输入库存页面URL将重定向到[!DNL AEM]主页，阻止访问Adobe Stock图像。 (ASSETS-48687)
 * 如果在`/`内部部署([!DNL AEM])导航页面上的文件夹名称包含6.5.22.0，则管理文件夹时出现问题。 (ASSETS-46740)
-* 在[!DNL AEM] 6.5上，由于内存使用率较高，资产详细信息页面无法从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**&#x200B;视图加载。 (ASSETS-46738)
+* 在[!DNL AEM] 6.5上，由于内存使用率较高，资产详细信息页面无法从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**视图加载。 (ASSETS-46738)
 * 将[!DNL InDesign]作为`Day CQ DAM Mime Type OSGI`服务的集成问题错误地将[!DNL InDesign]文件识别为`x-adobe-indesign`而不是`x-indesign`。 (ASSETS-45953)
 * [!DNL AEM 6.5.21]会话泄露跟踪到现成的&#x200B;**[!UICONTROL 计划发布到Brand Portal]**&#x200B;工作流步骤。 (ASSETS-44104)
-* 处理和发布图像时，**[!UICONTROL 中显示]**&#x200B;内存不足(OOM) [!DNL AEM]错误。 此问题是由工作流中已弃用的方法造成的，例如&#x200B;**[!DNL Dam Asset update]**&#x200B;和&#x200B;**[!DNL Dynamic Media: Reprocess assets]**。 (ASSETS-43343)
+* 处理和发布图像时，**[!UICONTROL 中显示]**&#x200B;内存不足(OOM)[!DNL AEM]错误。 此问题是由工作流中已弃用的方法造成的，例如&#x200B;**[!DNL Dam Asset update]**&#x200B;和&#x200B;**[!DNL Dynamic Media: Reprocess assets]**。 (ASSETS-43343)
 * 进行细微更改后（例如更新标题），您将在本地Sites实例上重新打开并重新保存&#x200B;**[!DNL Connected Assets configuration]**。 然后，远程实例会断开与本地实例的连接。 因此，它无法与本地Sites实例建立通信。 (ASSETS-44484)
 * 在[!DNL AEM 6.5.21]中，取消列表视图中的资产上传并执行第二次上传时，[!DNL AEM]显示已上传&#x200B;**[!UICONTROL 0个NaN资产]**&#x200B;错误。 (ASSETS-44124)
 
@@ -684,9 +694,22 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
 >
 > 对于没有可用修补程序的问题，请勿升级到Service Pack 6.5.23.0，因为这可能会导致意外错误。 只有在发布了所需的修补程序之后，才能升级到Service Pack 6.5.23.0。
 
-* 当用户将Struts框架从2.5.x版本升级到6.x版本时，AEM Forms中的策略UI无法显示所有配置，例如添加水印的选项。 您可以[下载并安装修补程序](/help/release-notes/aem-forms-hotfix.md)以解决此问题。 (FORMS-20203)
-* 升级到AEM Forms Service Pack 6.5.23.0后，ImageToPDF转换服务失败，并出现错误(FORMS-20360)：
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```您可以[下载并安装修补程序](/help/release-notes/aem-forms-hotfix.md)以解决问题。
+#### 可用修补程序的问题 {#aem-forms-issues-with-hotfixes}
+
+以下问题具有可供下载和安装的修补程序。 您可以[下载并安装修补程序](/help/release-notes/aem-forms-hotfix.md)以解决这些问题：
+
+* **FORMS-20203**：当用户将Struts框架从版本2.5.x升级到6.x时，AEM Forms中的策略UI无法显示所有配置，例如添加水印的选项。
+
+* **FORMS-20360**：升级到AEM Forms Service Pack 6.5.23.0后，ImageToPDF转换服务失败，并出现错误：
+  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
+
+* **FORMS-20478**：尝试将类型7/8 TIFF文件转换为PDF时，转换过程失败，并出现以下错误：“ALC-PDG-001-000-Image2Pdf转换失败，原因是：com/sun/image/codec/jpeg/JPEGCodec”和“ALC-PDG-016-003-PDF后处理期间发生了未知/意外错误。” 系统尝试使用TM ImageIO TIFF解码器重试，但最终无法完成作业。
+
+* **FORMS-14521**：如果用户尝试预览包含已保存XML数据的草稿书信，则对于某些特定书信，它会陷入`Loading`状态。
+
+* AEM Forms现在包括将Forms组件的Struts版本从2.5.33升级到6.x。 这提供了以前未包含在SP23中的Struts更改。 通过[修补程序](/help/release-notes/aem-forms-hotfix.md)添加了该支持，您可以下载并安装该修补程序，以添加对最新版本Struts的支持。
+
+#### 其他已知问题 {#aem-forms-other-known-issues}
 
 * 安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`文件夹下找到Geode Jar `<AEM_Forms_Installation>/lib/caching/lib`的重复条目(FORMS-14926)，请执行以下步骤，以解决该问题：
 
@@ -697,7 +720,6 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
    5. 在管理员模式下打开命令提示符。
    6. 使用`geode-*-1.15.1.2.jar`文件安装Geode修补程序。
 
-* 如果用户尝试预览包含保存的XML数据的草稿信件，则对于某些特定信件，它会陷入`Loading`状态。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (FORMS-14521)
 * 用户从AEM 6.5 Forms Service Pack 18或19升级到Service Pack 20或21时，遇到JSP编译错误。 此错误会阻止他们打开或创建自适应表单。 它还导致其他AEM界面出现问题。 这些界面包括页面编辑器、AEM Forms UI、工作流编辑器和系统概述UI。 (FORMS-15256)
 
   如果您遇到此类问题，请执行以下步骤来解决此问题：
@@ -705,11 +727,12 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
    2. 删除名为`com.adobe.granite.ui.commons-5.10.26.jar`的包。
    3. 重新启动AEM服务器。
 
-* 使用Forms加载项更新到AEM Forms Service Pack 20 (6.5.20.0)后，依赖使用基于凭据的身份验证的旧版Adobe Analytics Cloud Service的配置停止工作。 此问题会导致Analytics规则无法正确执行。 要下载并安装修补程序，请参阅[Adobe Experience Manager Forms修补程序](/help/release-notes/aem-forms-hotfix.md#hotfix-for-adaptive-forms)文章。 (FORMS-15428)
 * 在交互式通信代理UI的打印预览中，所有字段值的货币符号（如美元符号$）显示方式不一致。 对于最多999的值，它出现，但对于1000及更高版本的值则缺失。 (FORMS-16557)
 * 交互式通信中对嵌套布局片段XDP所做的任何修改都不会反映在IC编辑器中。 (FORMS-16575)
 * 在交互式通信代理UI的打印预览中，某些计算值无法正确显示。 (FORMS-16603)
 * 在打印预览中查看信件时，内容会更改。 即，某些空格消失，某些字母被替换为`x`。 (FORMS-15681)
+* **FORMS-15428**：使用Forms加载项更新到AEM Forms Service Pack 20 (6.5.20.0)后，依赖使用基于凭据的身份验证的旧版Adobe Analytics Cloud Service的配置停止工作。 此问题会导致Analytics规则无法正确执行。
+
 * 当用户配置WebLogic 14c实例时，由于涉及SLF4J库的类加载程序冲突，因此AEM Forms Service Pack 21 (6.5.21.0)中JEE上在JBoss®上运行的PDFG服务失败。 错误显示如下(CQDOC-22178)：
 
   ```java
@@ -720,7 +743,6 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
 
-* Forms-20478：尝试将类型7/8 TIFF文件转换为PDF时，转换过程失败，并出现以下错误：“ALC-PDG-001-000-Image2Pdf转换失败，原因是：com/sun/image/codec/jpeg/JPEGCodec”和“ALC-PDG-016-003-PDF后处理期间发生未知/意外错误。” 系统尝试使用TM ImageIO TIFF解码器重试，但最终无法完成作业。 您可以[下载并安装修补程序](/help/release-notes/aem-forms-hotfix.md)以修复此问题。
 
 
 ## 包含的OSGi包和内容包{#osgi-bundles-and-content-packages-included}
@@ -735,10 +757,10 @@ AEM 6.5.21、6.5.22、6.5.23和AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:
 这些网站仅供客户使用。 如果您是客户并且需要访问权限，请联系您的Adobe客户经理。
 
 * [产品下载位于licensing.adobe.com](https://licensing.adobe.com/)
-* [联系Adobe客户支持](https://experienceleague.adobe.com/zh-hans/docs/customer-one/using/home)。
+* [联系Adobe客户支持](https://experienceleague.adobe.com/en/docs/customer-one/using/home)。
 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] 产品页](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
->* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
+>* [[!DNL Experience Manager] 6.5文档](https://experienceleague.adobe.com/en/docs/experience-manager-65)
 >* [订阅Adobe优先产品更新](https://www.adobe.com/cn/subscription/priority-product-update.html)

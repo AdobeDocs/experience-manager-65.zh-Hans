@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: 59d667004bb41a973847e9c53333afaa188ccac1
+source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 >
 > 这些修补程序设计为累积式，包含所有之前的修补程序。 将最新的修补程序应用于某个版本时，该版本不仅解决了最新问题，而且还合并了之前的所有错误修复和增强功能。
 
-## 自适应Forms的修补程序 {#hotfix-for-adaptive-forms}
+## AEM Forms的修补程序 {#hotfix-for-aem-forms}
 
 <table>
   <tbody>
@@ -46,7 +46,16 @@ ht-degree: 0%
     </td>
     <td>
     <ul>
-    <li>适用于JEE上AEM Forms的SP23修补程序</li>
+    <li><strong>此修补程序修复了以下问题：</strong>
+      <ul>
+        <li><strong>FORMS-20533：</strong> AEM Forms现在包含表单组件的Struts版本从2.5.33升级到6.x。 这提供了以前未包含在SP23中的Struts更改。 通过修补程序添加支持，您可以下载并安装该修补程序以添加对最新版本Struts的支持。</li>
+        <li><strong>FORMS-20532：</strong> AEM Forms现在包含输出组件的Struts版本从2.5.33升级到6.x。 这提供了以前未包含在SP23中的Struts更改。 通过修补程序添加支持，您可以下载并安装该修补程序以添加对最新版本Struts的支持。</li>
+        <li><strong>FORMS-20203：</strong>当用户将Struts从AEM Service Pack 2.5.x升级到AEM Forms Service Pack 6.x时，策略UI无法显示所有配置，例如添加水印的选项。 您可以下载并安装修补程序以解决此问题。</li>
+        <li><strong>FORMS-20360：</strong>升级到AEM Forms Service Pack 6.5.23.0后，ImageToPDF转换服务失败，出现错误：<br>
+        <code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
+        您可以下载并安装修补程序以解决此问题。</li>
+      </ul>
+    </li>
     </ul>
     </td>    
   </tr>
