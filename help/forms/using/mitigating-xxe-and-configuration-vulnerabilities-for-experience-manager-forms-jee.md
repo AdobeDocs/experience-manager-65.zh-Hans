@@ -265,4 +265,4 @@ adobe-xxe-configuration-hotfix/SP[version]/<appserver>/adobe-rightsmanagement-<a
 - [CWE-611： XML外部实体引用](https://cwe.mitre.org/data/definitions/611.html)的限制不正确
 - [CWE-16：配置](https://cwe.mitre.org/data/definitions/16.html)
 - [OWASP XXE防范备忘单](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Adobe Experience Manager Forms安全最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)
+- [Adobe Experience Manager Forms安全最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans)
