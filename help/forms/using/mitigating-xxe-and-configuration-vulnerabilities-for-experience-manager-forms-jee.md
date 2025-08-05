@@ -6,16 +6,15 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
 geptopics: SG_AEMFORMS/categories/jee
 role: Admin
-exl-id: c8f3e7c1-d5a2-4e2f-8b9c-1a8d7f8e2a9b
+exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
 release-date: 2025-08-05T00:00:00Z
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
+source-git-commit: 8420597b7ee09b15a7f0004acc64e3625771a4d8
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '674'
 ht-degree: 5%
 
 ---
-
 
 # 缓解JEE上AEM Forms的RCE (CVE-2025-49533)、Struts开发模式配置(CVE-2025-54253)、XXE (CVE-2025-54254)和漏洞 {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
@@ -67,22 +66,18 @@ ht-degree: 5%
 ### 选项1： （对于版本6.5.23.0的用户）安装最新的修补程序
 
 1. [下载6.5.23.0](/help/release-notes/aem-forms-hotfix.md)的修补程序。
-2. 按照标准的[修补程序/修补程序安装说明](/help/release-notes/jee-patch-installer-65.md)操作
-3. 如果您在IBM WebSphere或Oracle WebLogic上使用Document Security(以前称为Rights Management)，请在启动AEM Forms服务器之前设置以下Java系统属性（JVM参数）：
+1. 按照标准的[修补程序/修补程序安装说明](/help/release-notes/jee-patch-installer-65.md)操作
+1. 如果您在IBM WebSphere或Oracle WebLogic上使用Document Security(以前称为Rights Management)，请在启动AEM Forms服务器之前设置以下Java系统属性（JVM参数）：
 
    ```
    -Dcom.adobe.forms.jee.services.allowDoctypeDeclaration=true
    ```
 
-4. 重新启动应用程序服务器
-
-</details>
+1. 重新启动应用程序服务器
 
 ### 选项2： （对于6.5.18.0 - 6.5.22.0上的用户）手动安装修补程序
 
-
-<details>
-<summary><b>适用于6.5.18.0 - 6.5.22.0</b>的手动修补程序安装</summary>
++++<b>手动安装6.5.18.0的修补程序 — 6.5.22.0</b>
 
 **步骤1：下载并解压缩修补程序包**
 
@@ -125,7 +120,7 @@ ht-degree: 5%
 
    例如，`adobe-xxe-configuration-hotfix/SP20/jboss/adminui.war`
 
-2. 在`adobe-core-jboss.ear`内，转到`lib/`文件夹并将`adobe-uisupport.jar`替换为：
+1. 在`adobe-core-jboss.ear`内，转到`lib/`文件夹并将`adobe-uisupport.jar`替换为：
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -133,10 +128,10 @@ ht-degree: 5%
 
    例如，`adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. 保存耳朵。 确保正确保存了更改。
+1. 保存耳朵。 确保正确保存了更改。
 
 
-4. 将`adobe-edcserver-jboss.ear`替换为
+1. 将`adobe-edcserver-jboss.ear`替换为
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-edcserver-jboss.ear
@@ -144,7 +139,7 @@ ht-degree: 5%
 
    例如，`adobe-xxe-configuration-hotfix/SP20/jboss/adobe-edcserver-jboss.ear`
 
-5. 将`adobe-forms-jboss.ear`替换为
+1. 将`adobe-forms-jboss.ear`替换为
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/jboss/adobe-forms-jboss.ear
@@ -164,7 +159,7 @@ ht-degree: 5%
 
    例如，`adobe-xxe-configuration-hotfix/SP20/weblogic/adminui.war`
 
-2. 在`adobe-core-weblogic.ear`内，将`adobe-uisupport.jar`替换为：
+1. 在`adobe-core-weblogic.ear`内，将`adobe-uisupport.jar`替换为：
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -172,10 +167,10 @@ ht-degree: 5%
 
    例如，`adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. 保存耳朵。 确保正确保存了更改。
+1. 保存耳朵。 确保正确保存了更改。
 
 
-4. 将`adobe-edcserver-weblogic.ear`替换为
+1. 将`adobe-edcserver-weblogic.ear`替换为
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-edcserver-weblogic.ear
@@ -183,7 +178,7 @@ ht-degree: 5%
 
    例如，`adobe-xxe-configuration-hotfix/SP20/weblogic/adobe-edcserver-weblogic.ear`
 
-5. 将`adobe-forms-weblogic.ear`替换为
+1. 将`adobe-forms-weblogic.ear`替换为
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/weblogic/adobe-forms-weblogic.ear
@@ -201,7 +196,7 @@ ht-degree: 5%
 
    例如，`adobe-xxe-configuration-hotfix/SP20/websphere/adminui.war`
 
-2. 在`adobe-core-websphere.ear`内，将`adobe-uisupport.jar`替换为：
+1. 在`adobe-core-websphere.ear`内，将`adobe-uisupport.jar`替换为：
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/adobe-uisupport.jar
@@ -209,10 +204,10 @@ ht-degree: 5%
 
    例如，`adobe-xxe-configuration-hotfix/SP20/adobe-uisupport.jar`
 
-3. 保存耳朵。 确保正确保存了更改。
+1. 保存耳朵。 确保正确保存了更改。
 
 
-4. 将`adobe-edcserver-websphere.ear`替换为
+1. 将`adobe-edcserver-websphere.ear`替换为
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-edcserver-websphere.ear
@@ -220,7 +215,7 @@ ht-degree: 5%
 
    例如，`adobe-xxe-configuration-hotfix/SP20/websphere/adobe-edcserver-websphere.ear`
 
-5. 将`adobe-forms-websphere.ear`替换为
+1. 将`adobe-forms-websphere.ear`替换为
 
    ```
    adobe-xxe-configuration-hotfix/SP[version]/websphere/adobe-forms-websphere.ear
@@ -253,16 +248,16 @@ adobe-xxe-configuration-hotfix/SP[version]/<appserver>/adobe-rightsmanagement-<a
 
 - 启动配置管理器以重新部署更新的EAR并应用修补程序
 
-</details>
++++
 
 ### 选项3：（对于6.5.17.0和更早版本上的用户）升级路径
 
 1. [升级到支持的服务包版本](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md)
-2. 根据您的新版本，按照上面的选项1或选项2操作
+1. 根据您的新版本，按照上面的选项1或选项2操作
 
 ## 引用
 
 - [CWE-611： XML外部实体引用](https://cwe.mitre.org/data/definitions/611.html)的限制不正确
 - [CWE-16：配置](https://cwe.mitre.org/data/definitions/16.html)
 - [OWASP XXE防范备忘单](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Adobe Experience Manager Forms安全最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans)
+- [Adobe Experience Manager Forms安全最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)
