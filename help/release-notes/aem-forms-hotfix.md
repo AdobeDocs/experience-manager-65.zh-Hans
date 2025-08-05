@@ -5,9 +5,9 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: f472766dbfeb8d84b0b97f621828b1c0491529c4
+source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1789'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,67 @@ ht-degree: 0%
     <td><strong>修复的问题</strong></td>
   </tr>
   <tr>
-    <td>SP23修补程序</td>
+    <td>
+      <strong>2025年8月05日</strong><br>
+      <em>适用于：</em> AEM 6.5 Forms Service Pack 23<br>
+      <em>安装说明：</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-1-for-users-on-version-65230-install-latest-hotfix">
+        缓解JEE上AEM Forms的XXE、配置和远程代码执行(CVE-2025-49533)漏洞
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><strong>Jboss：</strong></li>
+    <li>Windows — 适用于JBoss JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-jboss.zip">适用于AEM Service Pack 6.5.23.0的修补程序2</a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序2，适用于JBoss JEE服务器<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/jboss/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-jboss.tar.gz"></a></li>
+    <li><strong>Weblogic：</strong></li>
+    <li>Windows — 适用于Weblogic JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-weblogic.zip">适用于AEM Service Pack 6.5.23.0的修补程序2</a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序2，适用于Weblogic JEE服务器<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz"></a></li>
+    <li><strong>Websphere：</strong></li>
+    <li>Windows — 适用于Websphere JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip">适用于AEM Service Pack 6.5.23.0的修补程序2</a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序2，适用于Websphere JEE服务器<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip"></a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>通过解决Adobe Experience Manager (AEM) Forms中的远程代码执行(RCE)漏洞来增强安全性。 该问题与管理员用户界面(UI)中的Struts开发模式有关，该模式允许通过调试功能对任意对象图形导航语言(OGNL)进行评估。 此修复确保禁用Struts开发模式，并应用适当的安全过滤器来防止未经授权的访问。</li>
+    <li>改进了针对Adobe Experience Manager (AEM) Forms的电子文档组件(EDC)模块中的可扩展标记语言(XML)外部实体(XXE)漏洞的保护。 这些漏洞是由于不正确处理没有XXE保护的XML文档而造成的，这可能导致本地文件读取。 此修复包括：
+      <ul>
+        <li>确保将SecurityCheckHandler类中使用的DocumentBuilderFactory配置为防止XXE攻击。</li>
+        <li>更新EDC Web服务以安全地处理XML文档，防止对本地文件的未经授权的访问。</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>
+      <strong>2025年8月05日</strong><br>
+      <em>适用于：</em> AEM 6.5 Forms Service Pack 18 - 22<br>
+      <em>安装说明：</em>
+      <a href="/help/forms/using/mitigating-xxe-and-configuration-vulnerabilities-for-experience-manager-forms-jee.md#option-2-for-users-on-65180---65220-manual-hotfix-installation">
+        适用于Service Pack 18-22的手动修补程序安装
+      </a>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/adobe-xxe-configuration-hotfix.zip">AEM 6.5 Forms Service Pack 18的修补程序 — AEM 6.5 Forms Service Pack 22 </a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li>通过解决Adobe Experience Manager (AEM) Forms中的远程代码执行(RCE)漏洞来增强安全性。 该问题与管理员用户界面(UI)中的Struts开发模式有关，该模式允许通过调试功能对任意对象图形导航语言(OGNL)进行评估。 此修复确保禁用Struts开发模式，并应用适当的安全过滤器来防止未经授权的访问。</li>
+    <li>改进了针对Adobe Experience Manager (AEM) Forms的Document Security模块中的可扩展标记语言(XML)外部实体(XXE)漏洞的保护。 这些漏洞是由于不正确处理没有XXE保护的XML文档而造成的，这可能导致本地文件读取。 此修复包括：
+      <ul>
+        <li>确保将SecurityCheckHandler类中使用的DocumentBuilderFactory配置为防止XXE攻击。</li>
+        <li>更新Document Security Web服务以安全地处理XML文档，防止对本地文件的未经授权的访问。</li>
+      </ul>
+    </li>
+    </ul>
+    </td>    
+  </tr>
+  <tr>
+    <td>2025年7月10日 — </td>
     <td>
     <ul>
     <li><strong>Jboss：</strong></li>
@@ -192,7 +252,7 @@ ht-degree: 0%
   <tbody>
 </table>
 
-## 下载并安装修补程序 {#download-install-hotfix}
+## 下载并安装OSGi修补程序 {#download-install-hotfix}
 
 执行以下步骤以下载并安装修补程序：
 
@@ -200,6 +260,10 @@ ht-degree: 0%
 1. 解压缩修补程序存档文件，以便获取Experience Manager包(.zip)和捆绑包(.jar)文件。
 1. 通过[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing)上载并安装包(.zip)。
 1. 打开配置管理器包`https://server:host/system/console/bundles`，上载并安装该包(.jar)。 已安装修补程序。
+
+## 安装JEE修补程序 {#download-install-jee-patch}
+
+有关安装JEE修补程序的说明，请参阅[AEM Forms JEE修补程序安装程序文档](/help/release-notes/jee-patch-installer-65.md)。
 
 
 ## 下载并安装草稿书信问题的修补程序 {#install-hotfix}
