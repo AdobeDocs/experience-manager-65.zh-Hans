@@ -9,9 +9,9 @@ role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
 release-date: 2025-08-05T00:00:00Z
-source-git-commit: cacad43c2c32a1a14de0ea5f845818018ba8b2ec
+source-git-commit: 9be9bfc9e20a151afdb9ae2cddcc39b4d2701c1b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '675'
 ht-degree: 5%
 
 ---
@@ -77,7 +77,7 @@ ht-degree: 5%
 
 ### 选项2： （对于6.5.18.0 - 6.5.22.0上的用户）手动安装修补程序
 
-+++手动安装6.5.18.0的修补程序 — 6.5.22.0
++++通过6.5.18.0为6.5.22.0手动安装修补程序
 
 **步骤1：下载并解压缩修补程序包**
 
@@ -260,4 +260,4 @@ adobe-xxe-configuration-hotfix/SP[version]/<appserver>/adobe-rightsmanagement-<a
 - [CWE-611： XML外部实体引用](https://cwe.mitre.org/data/definitions/611.html)的限制不正确
 - [CWE-16：配置](https://cwe.mitre.org/data/definitions/16.html)
 - [OWASP XXE防范备忘单](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Adobe Experience Manager Forms安全最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans)
+- [Adobe Experience Manager Forms安全最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)
