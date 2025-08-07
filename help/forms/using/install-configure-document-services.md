@@ -6,9 +6,9 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
 workflow-type: tm+mt
-source-wordcount: '10051'
+source-wordcount: '10085'
 ht-degree: 1%
 
 ---
@@ -253,6 +253,12 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 * **部署类型**：单个用户或多个用户
 
 每个选项卡都包含针对特定设置而优化的定制说明，帮助您避免配置问题并确保适当的许可合规性。
+
+>[!VIDEO](https://video.tv.adobe.com/v/3469669)
+
+>[!NOTE]
+>
+>此视频演示了“零售许可证 — 单用户”配置的安装过程。 对于其他部署方案（零售 — 多个用户、批量许可 — 单个用户或批量许可 — 多个用户），请参阅以下相应选项卡中的具体步骤9说明，以确保针对您的部署类型正确启动服务器和激活许可证。
 
 >[!BEGINTABS]
 
@@ -701,7 +707,7 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 完成所有流程后，请执行快速操作测试以确认安装有效：
 
 1. 使用远程桌面(RDP)登录到服务器并使用服务启动AEM Forms服务器。
-2. 使用远程桌面(RDP)登录到服务器，并使用Windows服务启动AEM Forms服务器。 服务器运行后，不要简单地关闭RDP窗口。 相反，通过注销用户来正常注销 — 这可以确保会话完全结束，同时服务继续在后台运行。
+2. 服务器运行后，不要简单地关闭RDP窗口。 相反，通过注销用户来正常注销 — 这可以确保会话完全结束，同时服务继续在后台运行。
 
 ###### 步骤10：测试PDF Generator服务
 
