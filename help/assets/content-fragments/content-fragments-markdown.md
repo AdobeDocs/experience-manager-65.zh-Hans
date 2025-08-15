@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 2809ae0f2c712ce8e6d94e18211649f2fa6ab8b4
 workflow-type: tm+mt
-source-wordcount: '524'
-ht-degree: 88%
+source-wordcount: '522'
+ht-degree: 86%
 
 ---
 
@@ -130,7 +130,7 @@ ht-degree: 88%
 
 您可以创建已排序和未排序的列表。
 
-要创建未排序的列表，请使用 &ast; 符号。例如：
+要创建未排序的列表，请使用 &amp;ast; 符号。例如：
 
     `* item in list`
 
@@ -166,7 +166,7 @@ ht-degree: 88%
 
     `Keyboard shortcut: Ctrl-B (Cmd-B)`
 
-要指示代码跨度，请用反勾号 (&grave;) 将代码换行。与预格式化的代码块不同，代码范围表示普通段落中的代码。
+要指示代码跨度，请用反勾号(`` ` ``)将其换行。 与预格式化的代码块不同，代码范围表示普通段落中的代码。
 
 例如：
 
