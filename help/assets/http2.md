@@ -62,7 +62,7 @@ The following demonstration illustrates the difference between HTTP/1 versus HTT
 
 您启动切换到HTTP/2的请求；不会自动为您完成此操作。
 
-1. 要切换到HTTP/2，请启动Adobe客户支持请求。 请参阅[打开支持票证](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support)。
+1. 要切换到HTTP/2，请启动Adobe客户支持请求。 请参阅[打开支持票证](https://experienceleague.adobe.com/zh-hans?support-solution=General&lang=en&support-tab=home#support)。
 
    1. 在您的支持请求中提供以下信息：
 
