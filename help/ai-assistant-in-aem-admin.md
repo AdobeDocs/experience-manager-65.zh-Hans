@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 06824b3d-f912-4922-8fb6-ee2ca04c6326
-source-git-commit: c89b0dc7c544e3b81ea05bf078f33e9ab7f40880
+source-git-commit: 11be37d5a96dd7236f2011b6df3e39bf0b1904b7
 workflow-type: tm+mt
-source-wordcount: '1092'
+source-wordcount: '1076'
 ht-degree: 3%
 
 ---
@@ -18,13 +18,13 @@ ht-degree: 3%
 
 <!-- badge: label="Beta" type="Positive" -->
 
-要在AEM (Adobe Experience Manager)中使用AI助手，您的组织必须选择Admin Console级别的加入。 产品管理员创建（或选择）用户组并授予其新的“AI助手”权限。 任何添加到该组的人都会立即获得整个AEM的AI助手访问权限。 如果目标是实现公司范围的可用性，管理员只需将所有用户分配给该组即可。
+要在AEM (Adobe Experience Manager)中使用AI助手，您的组织必须选择Admin Console级别的加入。 产品管理员创建（或选择）用户组并授予其新的“AI助手”权限。 任何添加到该组的人都会立即获得AEM人工智能助理的访问权限。 如果目标是实现公司范围的可用性，管理员只需将所有用户分配给该组即可。
 
 从员工的角度来看，此过程非常简单：确定贵组织中Adobe Experience Manager的产品管理员，并请求将其添加到支持AI的用户组。 一旦您出现在该组中，“助理”图标将在您下次登录时自动显示。
 
 管理员应牢记常规的Cloud Manager管理。 在Admin Console中保留产品管理员权限以创建配置文件、管理用户组或编辑权限。 如果用户还需要该助理的内置&#x200B;**创建支持票证**&#x200B;功能，请将标准&#x200B;**支持管理员**&#x200B;角色(标准Admin Console角色)添加到相同的个人或组。
 
-AEM中AI助手的配置过程包含以下步骤：
+AEM中的AI助手配置过程包含以下步骤：
 
 1. [在Adobe Admin Console中创建新产品配置文件](#create-profile)。
 1. [启用AI助理产品知识权限](#enable-permission)。
@@ -49,7 +49,7 @@ AEM中AI助手的配置过程包含以下步骤：
 
 ## 1 — 在Adobe Admin Console中创建新产品配置文件{#create-profile}
 
-1. 按照Experience Platform文档中的[在Adobe Admin Console中创建新产品配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/create-profile)中的详细说明操作。
+1. 按照Experience Platform文档中的[在Adobe Admin Console中创建新产品配置文件](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/create-profile)中的详细说明操作。
 
 1. 创建新的产品配置文件时，您可以为AI助手使用以下建议值。
 
@@ -65,7 +65,7 @@ AEM中AI助手的配置过程包含以下步骤：
 
 将自定义权限分配给产品配置文件的过程遵循标准Adobe Cloud Manager自定义权限工作流程。
 
-参考文章： [将自定义权限分配给新产品配置文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
+参考文章： [将自定义权限分配给新产品配置文件](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-manager/content/requirements/custom-permissions#assign-permissions)
 
 1. 在Admin Console中，单击新创建的产品配置文件的名称(`AI Assistant in AEM`)
 
@@ -85,7 +85,7 @@ AEM中AI助手的配置过程包含以下步骤：
 
 1. 在页面的右下角，单击&#x200B;**保存**。
 
-   您的产品配置文件现在已启用“AI助手产品知识”权限。
+   您的产品配置文件现在已启用AI助理产品知识权限。
 
 
 ## 3 — 创建新用户组（或使用现有用户组）{#create-user-group}
@@ -173,7 +173,7 @@ AEM中AI助手的配置过程包含以下步骤：
 1. 在对话框的右下角附近，单击&#x200B;**应用**。
 1. 在&#x200B;**分配产品和配置文件**&#x200B;页面的右下角附近，单击&#x200B;**保存**。
 
-   ![显示的AI助手产品配置文件已分配给AEM用户组中的AI助手](/help/assets/assets-ai/ai-assistant-profile-assigned-to-user-group.png)
+   显示的![AI助手产品配置文件已分配给AEM用户组中的AI助手](/help/assets/assets-ai/ai-assistant-profile-assigned-to-user-group.png)
 
 
 ## 验证配置
@@ -193,6 +193,6 @@ AEM中AI助手的配置过程包含以下步骤：
 
 ## 另请参阅
 
-* [AEM的人工智能助手](/help/ai-assistant-in-aem.md)
-* [Adobe Experience Platform访问控制](https://experienceleague.adobe.com/zh-hans/docs/experience-platform/access-control/ui/overview)
+* [AEM 中的 AI 助手](/help/ai-assistant-in-aem.md)
+* [Adobe Experience Platform访问控制](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/ui/overview)
 <!-- * [Cloud Manager Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md) -->

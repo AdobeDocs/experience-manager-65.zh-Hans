@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Cloud Manager, Developing
 role: Admin, Architect, Developer
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: 276b7bb5462e4dd0dfbb27c94f759a89afb815cf
+source-git-commit: 25c154fb310902079e6cd116e29a8e7f9a88e157
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 9%
 
 ---
@@ -19,7 +19,7 @@ Experience Hub引入了一个集中化的起点，以便在Adobe Experience Mana
 
 观看重新构建的AEM Experience Hub工作区的快速导览（4分钟、9秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3471451?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
