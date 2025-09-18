@@ -1095,11 +1095,11 @@ ht-degree: 24%
       + [流程报告疑难解答](/help/forms/using/process-reporting/troubleshooting-process-management.md)
    + 开发人员参考 {#developer-reference}
       + [HTML模板语言](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
-      + 用于调试自适应表单的[AEM插件](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
+      + [用于调试自适应表单的AEM插件](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
       + [AEM Forms Java API参考](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html)
       + [AEM Forms on JEE Java API参考](https://helpx.adobe.com/experience-manager/6-5/forms/programlc/javadoc/index.html)
       + [适用于HTML5表单的Form Bridge API](/help/forms/using/form-bridge-apis.md)
-      + 自适应Forms的[JavaScript库API参考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
+      + [自适应Forms的JavaScript库API参考](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html)
       + [汇编程序服务和DDX引用](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
       + [Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_65)
       + 在JEE中使用AEM Forms编程 {#programming-aem-forms-jee}
@@ -1410,7 +1410,7 @@ ht-degree: 24%
                + [可选 — 如何使用AEM创建单页应用程序](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/create-spa.html)
             + Headless 内容架构师历程  {#architect}
                + [AEM Headless内容架构师历程概述](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/overview.html)
-               + 使用AEM对Headless进行[内容建模 — 简介](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html)
+               + [使用AEM对Headless进行内容建模 — 简介](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/introduction.html)
                + [了解使用AEM对Headless进行内容建模的基础知识](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/basics.html)
                + [了解如何在AEM中创建内容片段模型](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/architect/model-structure.html)
          + 快速入门指南 {#getting-started}
