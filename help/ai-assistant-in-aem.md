@@ -5,9 +5,9 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 646816ab50c432c86772c228878f8114854c320f
+source-git-commit: 4ec42cee96cbedfc70db8a5272ceff64658a22a3
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1311'
 ht-degree: 4%
 
 ---
@@ -35,32 +35,27 @@ AI Assistant支持AEM as a Cloud Service，包括以下解决方案：
 
 以下时长3分钟、时长39秒的视频分步介绍了AEM中的AI助手。
 
->[!VIDEO](https://video.tv.adobe.com/v/3470365?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3470354?learn=on)
 
 ## 访问AEM中的AI助手{#get-access}
 
-要授予用户访问AEM中的AI助理的权限，您的Adobe管理员必须为需要在&#x200B;**Adobe Admin Console**&#x200B;中访问的用户档案配置以下自定义权限：
+要访问AEM中的AI助手，客户必须拥有以下权限：
 
-* **AI助手访问** — 在AEM中使用AI助手获取产品知识的权限，允许用户在AI助手聊天中询问产品相关问题。 必须启用此权限。
-* **支持访问** — 用户还必须具有打开支持票证的权限，这需要&#x200B;**支持管理员**&#x200B;角色。
+* 在AEM中使用AI助手获取产品知识的权限。 此权限允许您在AI Assistant聊天中询问产品相关问题。 必须启用此权限。
+* 打开支持票证的权限，该权限需要&#x200B;**支持管理员**&#x200B;角色。
 
-AEM中的AI助手请求通过Adobe Identity Management服务(IMS)进行身份验证。 有关详细信息，请参阅[Adobe Identity Management服务概述](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)。
+>[!NOTE]
+>
+>AEM中的AI助手请求通过Adobe Identity Management服务(IMS)进行身份验证。 有关详细信息，请参阅[Adobe Identity Management服务概述](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)。
 
 **要访问AEM中的AI助手：**
 
 1. 客户必须签订附加协议才能访问Adobe Experience Manager中的大多数AI支持的和代理功能。 有关详细信息，请与Adobe代表联系。
 
-<!-- OLD STEP 1 [Customers must sign the Gen AI rider with Adobe](https://fieldreadiness-adobe.highspot.com/items/665f831c9f831b011aeda057#1). 
+1. 要在AEM中使用AI助手，必须获得通过AI助手访问产品知识的权限。 默认情况下，此权限处于打开状态。
 
-    The GenAI Rider is a legal agreement between a customer and Adobe, required to use most AI and agentic capabilities. Contact Adobe Customer Care to learn more. -->
+   如果您希望控制谁可以访问产品知识，请从与Adobe ID关联的电子邮件地址向[aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com)发送电子邮件。 Adobe可以启用用户级别的访问控制。 启用后，您的管理员可以按照[在AEM中配置AI助手](/help/ai-assistant-in-aem-admin.md)中的步骤授予用户级访问权限。
 
-1. AEM管理员可配置AI Assistant以供在其组织中使用。 请参阅[在AEM中配置AI助手](/help/ai-assistant-in-aem-admin.md)。
-
-<!--
->[!IMPORTANT]
->Be sure you have reviewed and submitted the user agreement so Adobe can enable AI Assistant feature for you to test out and participate in the private beta program.
->
->For any questions, send an email to [Grp-AEMAIASSISTANT@adobe.com](mailto:Grp-AEMAIASSISTANT@adobe.com) from your email address associated with your Adobe ID. -->
 
 ## 范围 {#scope}
 
@@ -133,7 +128,7 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md). -->
 
