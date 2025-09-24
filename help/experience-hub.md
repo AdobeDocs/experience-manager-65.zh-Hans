@@ -7,9 +7,9 @@ feature: Authoring, AI Assistant, Central Interface Components, Getting Started,
 feature-set: Experience Cloud,Experience Manager Sites,Experience Cloud Services
 role: Admin, Architect, Developer, User
 exl-id: 8193e420-2e37-45a6-a1fc-01873fed539b
-source-git-commit: fa84767b13e3b13ee5115b7dc7d2032092a9063b
+source-git-commit: eb0deb1cb401964c86f38cc42961d2c428d9311c
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '593'
 ht-degree: 11%
 
 ---
@@ -20,7 +20,7 @@ Experience Hub引入了一个集中化的起点，以便在Adobe Experience Mana
 
 观看重新构建的AEM Experience Hub工作区的快速导览（4分钟、9秒）。
 
->[!VIDEO](https://video.tv.adobe.com/v/3471451?learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/3471396?learn=on)
 
 <!--
 Available as a private beta, Experience Hub offers an optimized experience focused on improving workflows, prioritizing goals, and delivering results. Opting in lets you influence Experience Hub's development by providing feedback that helps shape its future and enhances its value for the entire AEM community. -->
@@ -32,11 +32,11 @@ Available as a private beta, Experience Hub offers an optimized experience focus
    ![Adobe Experience Cloud主页](/help/assets/assets-experience-hub/experience-cloud-experiencemanager-ams.png)
 
 1. 在&#x200B;**快速访问**&#x200B;分组中，单击&#x200B;[**Experience Manager**](https://experience.adobe.com)。
-1. 首次访问时，请在&#x200B;**告诉我们您要执行的操作**&#x200B;页面上单击所需的选项，以便Adobe可以定制您的体验。
+1. 首次访问时，系统会为您分配&#x200B;**内容作者**&#x200B;预设（显示在页面的右上角附近）。 它控制您看到的构件、导航项和内容。
 
-   您可以随时更改此首选项。
+   您可以随时更改此预设。
 
-   ![告诉我们您要执行的操作页面](/help/assets/assets-experience-hub/experience-cloud-tellus-ams.png)
+   ![已选定显示内容作者预设的下拉列表](/help/assets/assets-experience-hub/experience-hub-role-selection.png)
 
 Adobe Experience Manager页面已更新，导航和交互式构件已得到增强。 上一组解决方案信息卡提供了对以下工具的访问：
 
@@ -59,7 +59,7 @@ Adobe Experience Manager页面已更新，导航和交互式构件已得到增�
 
 ![生产和暂存环境](/help/assets/assets-experience-hub/experience-hub-prod-stage-ams.png)
 
-作为Adobe Experience Manager的中心枢纽，Experience Hub页面可扩展，提供针对每个用户角色定制的其他小部件和操作。 可完全自定义的页面，允许您为屏幕选择最佳布局。 可以过滤构件，以便只有选定的构件会显示在主页上，从而确保提供个性化体验。
+作为Adobe Experience Manager的中心枢纽，Experience Hub页面会进行扩展，以提供针对每个用户角色（预设）定制的其他小部件和操作。 可完全自定义的页面，允许您为屏幕选择最佳布局。 可以过滤构件，以便只有选定的构件会显示在主页上，从而确保提供个性化体验。
 
 ![已自定义Experience Hub](/help/assets/assets-experience-hub/experience-hub-custom-ams.png)
 
