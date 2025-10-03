@@ -1,6 +1,6 @@
 ---
-title: AEM Sites - GDPR就绪
-description: 了解在AEM Sites中处理GDPR请求的过程以及如何使用它们。
+title: AEM Sites - GDPR 就绪
+description: 了解在 AEM Sites 中处理 GDPR 请求的操作流程，以及如何使用这些流程。
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,74 +10,74 @@ solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
 source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
-# AEM Sites - GDPR就绪{#aem-sites-gdpr-readiness}
+# AEM Sites - GDPR 就绪{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
->以下部分使用GDPR作为示例，但包含的详细信息适用于所有数据保护和隐私法规；例如GDPR、CCPA等。
+>以下章节以 GDPR 为示例进行说明，但其中涵盖的细节同样适用于所有数据保护和隐私法规，例如 GDPR 和 CCPA 等。
 
-欧盟有关数据隐私权的《通用数据保护条例》自2018年5月起生效。
+欧盟《通用数据保护条例》关于数据隐私权的规定自 2018 年 5 月起正式生效。
 
-AEM Sites随时准备帮助客户履行其GDPR合规义务。 本页将指导客户完成在AEM Sites中处理GDPR请求的过程。 它描述了私有数据的存储位置，以及如何手动或使用代码删除私有数据。
+AEM Sites 已经准备好帮助客户履行 GDPR 合规义务。此页面将指导客户完成在 AEM Sites 中处理 GDPR 请求的过程。它描述了私有数据的存储位置，以及如何手动或使用代码移除私有数据。
 
-有关详细信息，请参阅Adobe隐私中心[&#128279;](https://www.adobe.com/privacy/general-data-protection-regulation.html)的GDPR页面。
+有关更多信息，请参阅 [Adobe 隐私中心的 GDPR 页面](https://www.adobe.com/privacy/general-data-protection-regulation.html)。
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅[AEM GDPR准备工作](/help/managing/data-protection-and-privacy.md)。
+>有关更多详细信息，请参阅 [AEM GDPR 就绪](/help/managing/data-protection-and-privacy.md)。
 
 ## 作者服务器 {#author-server}
 
-作者服务器上的用户帐户和UGC内容包含在[Platform GDPR文档](/help/managing/data-protection-and-privacy.md)中。
+[平台 GDPR 文档](/help/managing/data-protection-and-privacy.md)涵盖了创作服务器上的用户帐户和 UGC 内容。
 
-## Publish Server {#publish-server}
+## 发布服务器 {#publish-server}
 
-[平台GDPR文档](/help/managing/data-protection-and-privacy.md)涵盖了用于验证网站访客的用户帐户以及发布服务器上的UGC内容。
+[平台 GDPR 文档](/help/managing/data-protection-and-privacy.md)涵盖了发布服务器上用于验证网站访客的用户帐户和 UGC 内容。
 
 默认情况下，AEM Sites 组件不会存储访客在发布服务器上输入的表单数据。建议将数据转发到第三方系统或 Adobe Campaign 以供进一步处理。
 
 ## 选择加入/选择退出 {#opt-in-opt-out}
 
-AEM具有[Cookie选择退出服务](/help/sites-developing/cookie-optout.md)，可用于管理用户的选择加入/选择退出。
+AEM 提供了一个 [Cookie 退出服务](/help/sites-developing/cookie-optout.md)，可用于管理用户的选择加入或选择退出。
 
-## Analytics的增强见解 {#enhanced-insights-by-analytics}
+## 通过 Analytics 提供的增强型洞察 {#enhanced-insights-by-analytics}
 
-AEM Sites包括与Analytics的增强型分析的可选集成，该集成使用Adobe Analytics按需服务中的功能。
+AEM Sites 包括与通过 Analytics 提供的增强型洞察的可选集成，该集成使用 Adobe Analytics 按需服务中的功能。
 
-有关管理与Adobe Analytics相关的GDPR数据主体请求的更多信息，请参阅[Adobe Analytics和GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=zh-Hans)。
+有关管理与 Adobe Analytics 相关的 GDPR 数据主体请求的更多信息，请参见 [Adobe Analytics 与 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)。
 
-## 增强的Personalization by Target {#enhanced-personalization-by-target}
+## 通过 Target 提供的增强型个性化 {#enhanced-personalization-by-target}
 
-AEM Sites包括与Enhanced Personalization by Target的可选集成，该集成使用Adobe Target按需服务中的功能。
+AEM Sites 包括与通过 Target 提供的增强型个性化的可选集成，该集成使用 Adobe Target 按需服务中的功能。
 
-有关管理与Adobe Target相关的GDPR数据主体请求的更多信息，请参阅[Adobe Target — 隐私和一般数据保护条例](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)。
+有关管理与 Adobe Target 相关的 GDPR 数据主体请求的更多信息，请参见 [Adobe Target - 隐私与通用数据保护条例](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)。
 
 ## ContextHub {#contexthub}
 
-AEM提供了一个可选的数据层和[ContextHub](/help/sites-developing/contexthub.md)。 这会将特定于访客的数据保留在浏览器中，以用于基于规则的个性化。
+AEM 提供了一个可选的数据层 [ContextHub](/help/sites-developing/contexthub.md)。这会将特定于访客的数据保留在浏览器中，以用于基于规则的个性化。
 
 默认情况下，此访客数据不会存储在 AEM 中；AEM 将规则发送到数据层，以在浏览器中做出个性化决策。
 
 >[!NOTE]
 >
->在AdobeAEM (CQ) 5.6之前，ClientContext（ContextHub的早期版本）确实将数据发送到服务器，但未存储这些数据。
+>在 Adobe AEM（CQ）5.6 之前，ClientContext（ContextHub 的早期版本）会将数据发送至服务器，但不会存储这些数据。
 >
->AdobeAEM 6.4及更早版本现已停用，本文档未涵盖这些版本。 请参阅[旧版本的Adobe Experience Manager、CQ和CRX文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions)。
+>Adobe AEM 6.4 及更早版本现已停止提供支持（EOL），不在本文档涵盖范围内。请参见[旧版本的 Adobe Experience Manager、CQ 和 CRX 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions)。
 
 ### 实施选择加入/选择退出 {#implementing-opt-in-opt-out}
 
 网站所有者需要根据以下指南实施选择退出组件。
 
-这些指南将选择加入作为默认设置加以实施。因此，必须先获得网站访客的明确同意，然后才能将任何个人数据存储在浏览器（客户端）的持久存储中。
+这些指南将选择加入作为默认设置加以实施。因此，在任何个人数据存储到浏览器（客户端）持久层之前，网站访问者必须明确同意。
 
 * 每次包含 ContextHub 组件时都应包含选择退出组件。
-* 必须向网站访客显示与网站GDPR相关的条款和条件，以便访客：
+* 网站需向访问者展示与 GDPR 相关的条款和条件，并允许他们：
 
    * 接受
    * 拒绝
@@ -137,15 +137,15 @@ AEM提供了一个可选的数据层和[ContextHub](/help/sites-developing/conte
 
       * 打开“开发人员工具”>“控制台”
 
-         * localStorage.getItem(&#39;ContextHubPersistence&#39;)
-         * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
+         * localStorage.getItem（&#39;ContextHubPersistence&#39;）
+         * sessionStorage.getItem（&#39;ContextHubPersistence&#39;）
          * document.cookie
 
 * 在浏览器的控制台中使用 ContextHub API：
 
    * ContextHub 提供以下数据持久层：
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL（默认）
+      * ContextHub.Utils.Persistence.Modes.LOCAL（default）
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
@@ -174,7 +174,7 @@ AEM提供了一个可选的数据层和[ContextHub](/help/sites-developing/conte
 
    * ContextHub 提供以下数据持久层：
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL（默认）
+      * ContextHub.Utils.Persistence.Modes.LOCAL（default）
       * ContextHub.Utils.Persistence.Modes.SESSION
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
@@ -218,7 +218,7 @@ console.log(storage.getTree());
 
 * 要清除所有 ContextHub 持久层，必须为所有层调用适当的代码：
 
-   * ContextHub.Utils.Persistence.Modes.LOCAL（默认）
+   * ContextHub.Utils.Persistence.Modes.LOCAL（default）
    * ContextHub.Utils.Persistence.Modes.SESSION
    * ContextHub.Utils.Persistence.Modes.COOKIE
    * ContextHub.Utils.Persistence.Modes.WINDOW

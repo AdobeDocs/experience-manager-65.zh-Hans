@@ -1,6 +1,6 @@
 ---
-title: 数据保护和数据隐私条例 — Adobe Experience Manager准备工作
-description: 了解Adobe Experience Manager对各种数据保护和数据隐私条例的支持。 其中包括欧盟《通用数据保护条例》(GDPR)、《加州消费者隐私法案》以及在实施新的AEM项目时如何实现合规性。
+title: 数据保护和数据隐私法规——Adobe Experience Manager 准备工作
+description: 了解 Adobe Experience Manager 如何支持各类数据保护和隐私法规。其中包括欧盟《通用数据保护条例》（GDPR）、加州消费者隐私法，以及在实施新 AEM 项目时的合规方法。
 contentOwner: AEM Docs
 topic-tags: introduction, grdp
 content-type: reference
@@ -11,13 +11,13 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '890'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
-# 用于数据保护和数据隐私法规的Adobe Experience Manager已准备就绪 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
+# Adobe Experience Manager 对数据保护与数据隐私法规的合规性准备 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
 >
@@ -29,11 +29,11 @@ ht-degree: 37%
 >
 >要详细了解 Adobe 对隐私问题的响应以及这对于您这样的 Adobe 客户的意义，请参阅 [Adobe 隐私中心。](https://www.adobe.com/cn/privacy.html)
 
-Adobe为客户隐私管理员或AEM管理员提供文档和过程（在可用时通过API）以处理数据保护和数据隐私请求。 它可以帮助您遵守这些法规。 记录的过程允许客户从外部门户或服务手动运行监管请求，或者通过调用API（在可用时）来运行监管请求。
+Adobe 提供了相关文档和操作流程（在可用时还包括 API），供客户的隐私管理员或 AEM 管理员处理数据保护和隐私请求。这些内容可帮助您符合相关法规。文档中记录的流程允许客户手动执行合规请求，或在可用时通过外部门户或服务调用 API 来完成。
 
 >[!CAUTION]
 >
->此处记录的详细信息仅限于Adobe Experience Manager。
+>此处记录的细节仅适用于 Adobe Experience Manager。
 >
 >其他 Adobe 按需插件的服务以及任何相关隐私请求需要在该服务上采取操作。
 >
@@ -41,15 +41,15 @@ Adobe为客户隐私管理员或AEM管理员提供文档和过程（在可用时
 
 ## 简介 {#introduction}
 
-Adobe Experience Manager的实例以及其上运行的应用程序由Adobe客户负责和运营。
+Adobe Experience Manager 的实例以及其上运行的应用程序由 Adobe 客户拥有并运营。
 
 因此，GDPR、CCPA 及其他数据保护条例在很大程度上由客户负责。
 
 作为一个简单的介绍，数据隐私和保护条例包括下列各方需要遵守的新规则：
 
-* 业务实体 (CCPA) 和/或数据控制方 (GDPR)
+* 业务实体（CCPA）和/或数据控制方（GDPR）
 
-* 服务提供商 (CCPA) 和/或数据处理商 (GDPR)
+* 服务提供商（CCPA）和/或数据处理商（GDPR）
 
 此类条例中的主要条款：
 
@@ -61,11 +61,11 @@ Adobe Experience Manager的实例以及其上运行的应用程序由Adobe客户
 
 4. 数据销售的选择退出。
 
-对于Adobe Experience Manager：
+对于 Adobe Experience Manager：
 
-* 实例以及其上运行的应用程序由客户负责和运营。
+* 实例以及其上运行的应用程序由客户拥有并运营。
 
-   * 客户管理监管角色，包括业务实体和服务提供商、数据控制方和数据处理商等。
+   * 客户负责管理合规相关角色，包括企业实体与服务提供商、数据控制者和数据处理者等。
 
    * Adobe Experience Platform Privacy Service 不在 AEM 的工作流中，如下图所述。
 
@@ -77,62 +77,63 @@ Adobe Experience Manager的实例以及其上运行的应用程序由Adobe客户
 
 * AEM 不包括任何现成的工具来支持隐私请求工作流。
 
-   * Adobe为客户隐私管理员和AEM管理员提供文档和过程，让他们手动运行与隐私法规相关的请求。
+   * Adobe 为客户的隐私管理员和 AEM 管理员提供文档和操作程序，使其能够手动执行与隐私法规相关的请求。
 
-Adobe提供了用于处理与访问、删除和选择退出Adobe Experience Manager相关的隐私请求的过程。 有时，可以从客户开发的门户或脚本中调用可用的API来帮助实现自动化。
+Adobe 提供了在 Adobe Experience Manager 中处理与访问、删除和退出相关的隐私请求的操作程序。在某些情况下，可以使用客户自建的门户或脚本调用 API，以协助实现自动化。
 
 下图说明了隐私请求工作流可能的样子（使用 Adobe Experience Manager 6.5 说明）：
 
 ![数据保护和隐私](assets/data-protection-and-privacy-01.png)
 
-## Adobe Experience Manager和监管准备工作 {#aem-and-regulatory-readiness}
+## Adobe Experience Manager 与监管准备工作 {#aem-and-regulatory-readiness}
 
-有关AEM产品领域的监管文档，请参阅以下部分。
+请参阅以下各部分，了解 AEM 产品领域的合规文档。
 
-## AEM Foundation {#aem-foundation}
+## AEM 基础 {#aem-foundation}
 
-请参阅[处理AEM Foundation的数据保护和隐私请求](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)。
+参见[处理 AEM 基础的数据保护和隐私请求](/help/sites-administering/handling-gdpr-requests-for-aem-platform.md)。
 
-## AEM选择收集汇总使用情况统计数据 {#aem-opting-into-aggregate-usage-statistics-collection}
+## AEM 加入汇总使用统计数据收集 {#aem-opting-into-aggregate-usage-statistics-collection}
 
-请参阅[汇总的使用情况统计信息收集](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)。
+请参阅[汇总使用统计数据收集](/help/sites-deploying/opt-in-aggregated-usage-statistics.md)。
 
 ## AEM Sites {#aem-sites}
 
-请参阅[AEM Sites — 数据保护和隐私就绪。](/help/sites-administering/gdpr-compliance-sites.md)
+请参阅 [AEM Sites - 数据保护和隐私准备工作](/help/sites-administering/gdpr-compliance-sites.md)。
 
 ## AEM Commerce {#aem-commerce}
 
-请参阅[AEM Commerce — 数据保护和隐私就绪](/help/sites-administering/gdpr-compliance-commerce.md)。
+请参阅 [AEM Commerce - 数据保护和隐私准备工作](/help/sites-administering/gdpr-compliance-commerce.md)。
 
 ## AEM Mobile {#aem-mobile}
 
-请参阅[AEM Mobile — 数据保护和隐私就绪](/help/mobile/aem-mobile-gdpr-compliance.md)。
+请参阅 [AEM Mobile - 数据保护和隐私准备工作](/help/mobile/aem-mobile-gdpr-compliance.md)。
 
-## AEM与Adobe Target和Adobe Analytics的集成 {#aem-integration-with-adobe-target-adobe-analytics}
+## AEM 与 Adobe Target 和 Adobe Analytics 的集成 {#aem-integration-with-adobe-target-adobe-analytics}
 
-这些Adobe Experience Manager集成与支持数据保护和隐私（例如，GDPR或CCPA）的服务相集成。 Adobe Target或Adobe Analytics中的任何个人数据都不会存储在与集成相关的AEM中。
+这些 Adobe Experience Manager 集成都依托已符合数据保护和隐私（如 GDPR 或 CCPA）的服务。在这些集成过程中，Adobe Target 或 Adobe Analytics 的个人数据不会存储在 AEM 中。
+
 
 有关更多信息，请参阅以下内容：
 
 * [Adobe Target - 隐私概述](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics 数据隐私工作流](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hans)
+* [Adobe Analytics 数据隐私工作流](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities赋予数据主体数据可移植性、访问权以及被[现成API](/help/communities/user-ugc-management-service.md)遗忘的权利。 这些API支持批量删除和批量导出用户生成的内容，并禁用通过其可授权ID标识的用户帐户。 但是，通过删除CRXDE Lite中的用户节点，可以永久删除用户帐户，从而解决了轻松选择退出系统的需求。
+AEM Communities 通过[开箱即用的 API](/help/communities/user-ugc-management-service.md)，赋予数据主体数据可携带权、访问权和被遗忘权。这些 API 支持批量删除与批量导出用户生成的内容，并可禁用通过授权 ID 识别的用户帐户。但是，要永久删除用户帐户，则需要在 CRXDE Lite 中删除用户节点，以满足从系统中便捷退出的需求。
 
-此外，AEM Communities还通过其“批量审核”控制台的设计提供了隐私权，该控制台允许拥有权限的成员查找和删除用户的参与和详细信息。 成员管理控制台允许将限制到禁止投稿人的程度。 此外，它还授权数据主体删除他们创作的投稿。
+此外，AEM Communities 通过其批量审核控制台实现了“隐私保护即设计”的理念，该控制台允许具备权限的成员查找并删除用户的贡献和详细信息。成员管理控制台可对用户进行限制，直至禁止其继续贡献。同时，它还赋予数据主体删除自己所贡献的内容的权限。
 
 ## AEM Forms {#aem-forms}
 
-AEM Forms包括捕获、处理和存储数据以编排业务流程和完成数字交易的组件和工作流。 不同的组件使用不同的数据存储，并允许与自定义数据存储集成。 以下文档介绍了访问和处理用户数据的过程和准则，以支持组件的数据保护和隐私（例如，GDPR或CCPA）工作流。
+AEM Forms 包含可捕获、处理和存储数据的组件与工作流，以用于编排业务流程并完成数字化交易。不同的组件会使用不同的数据存储，同时也支持与自定义数据存储集成。以下文档说明了访问和处理用户数据的程序与指南，以支持组件级的数据保护与隐私（例如 GDPR 或 CCPA）工作流。
 
-* [Forms门户](/help/forms/using/forms-portal-handling-user-data.md)
+* [表单门户](/help/forms/using/forms-portal-handling-user-data.md)
 * [通信管理](/help/forms/using/correspondence-management-handling-user-data.md)
-* [与Adobe Sign集成](/help/forms/using/integration-adobe-sign-handling-user-data.md)
-* [OSGi上以Forms为中心的工作流](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
-* [Forms JEE工作流](/help/forms/using/forms-workflow-jee-handling-user-data.md)(仅限AEM Forms JEE)
-* [Document Security](/help/forms/using/document-security-handling-user-data.md)(仅限AEM Forms JEE)
-* [用户管理](/help/forms/using/user-management-handling-user-data.md)(仅限AEM Forms JEE)
+* [与 Adobe Sign 集成](/help/forms/using/integration-adobe-sign-handling-user-data.md)
+* [OSGi 上以表单为中心的工作流](/help/forms/using/forms-workflow-osgi-handling-user-data.md)
+* [Forms JEE 工作流](/help/forms/using/forms-workflow-jee-handling-user-data.md)（仅限 AEM Forms JEE）
+* [文档安全](/help/forms/using/document-security-handling-user-data.md)（仅限 AEM Forms JEE）
+* [用户管理](/help/forms/using/user-management-handling-user-data.md)（仅限 AEM Forms JEE）

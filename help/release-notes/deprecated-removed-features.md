@@ -1,88 +1,88 @@
 ---
-title: Adobe Experience Manager 6.5版本中已弃用和已删除的功能。
-description: 特定于Adobe Experience Manager 6.5中已弃用和已删除的功能的发行说明。
+title: Adobe Experience Manager 6.5 版本中已弃用和已移除的功能。
+description: Adobe Experience Manager 6.5 中已弃用和已移除功能的发行说明。
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 source-git-commit: bd29ae46ead836e16362ad3a9a63bb31548415ff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1765'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
-# 已弃用和已删除的功能 {#deprecated-and-removed-features}
+# 已弃用和已移除的功能 {#deprecated-and-removed-features}
 
 <!-- Search&Promote is end-of-life September 1, 2022 | Assets | If a user does not have sufficient (read and write) permissions on `/content/dam/collections`, the user cannot create a Collection. | Honor the access control setup of user and ensure appropriate permissions. ||
 |Adobe Search & Promote|The integration with Adobe Search & Promote is deprecated. Adobe does not plan to make further enhancements to the Search & Promote integration. Adobe Search & Promote integration remains fully supported while being deprecated.||| -->
 
-Adobe 不断评估产品功能，以便随着时间的推移，使用更现代的替代方案重塑或替换旧功能，从而提高整体客户价值，此过程中将始终谨慎考虑功能的向后兼容性。
+Adobe 持续评估产品功能，并在长期演进中不断重塑或替换旧功能，以更现代的替代方案提升整体客户价值，同时始终谨慎考量向后兼容性。
 
-为了传达即将移除或替换的Adobe Experience Manager (AEM)功能，以下规则适用：
+为传达即将移除或替换的 Adobe Experience Manager（AEM）功能，适用以下规则：
 
-1. 首先宣布弃用。虽然已弃用，但功能仍然可用，但不会进一步增强。
-1. 至少会在以下主要版本中移除已弃用的功能。 实际的目标删除日期将在稍后宣布。
+1. 首先发布弃用公告。功能在弃用阶段仍可使用，但不会再进行改进。
+1. 弃用功能最早会在下一个主要版本中移除。实际移除目标日期将在稍后公布。
 
-在实际删除之前，此过程将为客户提供至少一个发行周期时间，使其实施适应已弃用功能的新版本或后续版本。
+在实际移除之前，此流程会为客户提供至少一个发布周期，以便他们有时间将其实施调整到新版本或已弃用功能的后继版本。
 
-## 已弃用的功能 {#deprecated-features}
+## 已弃用的功能  {#deprecated-features}
 
-本部分列出了AEM 6.5中标记为已弃用的特性和功能。通常，首先将计划在未来版本中删除的功能设置为已弃用，并提供替代功能。
+本节列出了在 AEM 6.5 中已标记为弃用的功能和特性。通常，计划在未来版本中移除的功能会先标记为弃用，并同时提供替代方案。
 
-建议客户检查其当前部署中是否使用了此类特性/功能，然后制定相应的计划，将其实施更改为使用提供的备选方案。
+建议客户检查其当前部署中是否正在使用该特性/功能，并计划将实施方式调整为使用所提供的替代方案。
 
-| 区域 | 专题 | 替换 | 版本(SP) |
+| 区域 | 专题 | 替换 | 版本（SP） |
 |---|---|---|---|
-| Sites | [SPA 编辑器](/help/sites-developing/spa-editor-deprecation.md) | 对于Headless用例，请使用[通用编辑器](/help/sites-developing/universal-editor/introduction.md)进行可视化编辑，或使用[内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)进行基于表单的编辑。 | 6.5.23 |
-| Sites | **Adobe AEM托管轮询配置**&#x200B;服务： `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | **Adobe AEM Analytics报表Sling导入程序**&#x200B;服务。 请参阅连接到Adobe Analytics和创建框架 — [配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
-| Screens | Adobe Experience Manager (AEM)中的ActiveMQ。 ActiveMQ用于两个AEM Publish实例之间的通信。 | Adobe建议客户现在使用负载平衡器。 | 6.5.18.0 |
+| Sites | [SPA 编辑器](/help/sites-developing/spa-editor-deprecation.md) | 针对 Headless 用例，请使用[通用编辑器](/help/sites-developing/universal-editor/introduction.md)进行可视化编辑，或使用[内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)进行基于表单的编辑。 | 6.5.23 |
+| Sites | **Adobe AEM 托管的轮询配置**&#x200B;服务：`com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | **Adobe AEM Analytics 报告 Sling 导入器**&#x200B;服务。参见《连接到 Adobe Analytics 并创建框架》——[配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
+| Screens | Adobe Experience Manager（AEM）中的 ActiveMQ。ActiveMQ 曾用于两个 AEM 发布实例之间的通信。 | Adobe 建议客户现在改为使用负载均衡器。 | 6.5.18.0 |
 | **社交媒体状态**&#x200B;的体验片段属性。 |   | 6.5.11.0 |
 | [!DNL Sites] | 内容片段模板，用于创建简单的内容片段。 | 现已提供[基于模型的结构化内容片段](/help/assets/content-fragments/content-fragments-models.md)。 | 6.5.11.0 |
-| Creative Cloud集成 | AEM 6.2中引入了AEM到Creative Cloud的文件夹共享功能。它提供了一种为创意用户提供访问AEM中的资源的方法，以便他们可以在[!DNL Creative Cloud]应用程序中打开这些资源并上传新文件或将更改保存到AEM。 Creative Cloud应用程序中发布的一项新功能Adobe Asset Link提供了更好的用户体验，以及更强大的直接从Photoshop、InDesign和Illustrator访问AEM资源的功能。 Adobe不打算进一步增强AEM与Creative Cloud文件夹共享集成。 虽然此功能包含在AEM中，但建议使用替代解决方案。 | 建议客户切换到新的Creative Cloud集成功能，包括Adobe Asset Link或AEM桌面应用程序。 |  |
-| 资产 | 发布实例默认禁用`AssetDownloadServlet`。 有关更多详细信息，请参阅[AEM安全核对清单](/help/sites-administering/security-checklist.md)。 | 在[AEM安全核对清单](/help/sites-administering/security-checklist.md)中描述的配置。 |  |
-| 集成 | 屏幕&#x200B;**[!UICONTROL Experience Manager Cloud Services选择加入]**&#x200B;已被弃用，因为[!DNL Experience Manager]和[!DNL Adobe Target]集成已在[!DNL Experience Manager] 6.5中更新。该集成支持Adobe Target Standard API。 API通过Adobe IMS和[!DNL Adobe I/O Runtime]使用身份验证。 它支持让Adobe Launch发挥越来越大的作用，为分析和个性化设置[!DNL Experience Manager]页面，而选择加入向导在功能上是无关的。 | 通过相应的[!DNL Experience Manager]云服务配置系统连接、Adobe IMS身份验证和[!DNL Adobe I/O Runtime]集成。 | 6.5.7.0 |
-| 连接器 | 适用于Microsoft®SharePoint 2010和Microsoft® SharePoint 2013的Adobe JCR连接器已被[!DNL Experience Manager] 6.5弃用。 | 不适用 |  |
-| 动态标签管理器(DTM) | 已弃用与DTM的集成。 | 切换到使用Adobe Experience Platform Launch作为标签管理器。 |   |
-| Adobe Target | 由于添加了功能，AEM可在AEM 6.5中使用基于[!DNL Adobe I/O]的Adobe Target Standard API (Rest API)连接到Adobe Target服务，因此Target Classic API (XML)方式已被弃用。 | 重新配置集成以[使用新API](/help/sites-administering/target.md)。 |  |
-| Adobe Target | 不建议在AEM中使用基于`mbox.js`的Adobe Target集成。 | 切换到使用`at.js` 1.x。 |  |
-| 商务 | [CIF REST](https://github.com/adobe/commerce-cif-api)在2018年作为一组微服务提供，用于启用AEM与商务引擎之间的集成。 在Adobe于2018年年中收购Adobe Commerce(前身为Magento)后，Adobe决定改变做法，原因有二。 Commerce拥有自己的一组Commerce API(REST和GraphQL)，维护两组API不是最佳做法。 市场趋势表明，客户正在转向GraphQL，因为这是一种更高效的数据查询方式。 2019年，Adobe使用Commerce的GraphQL API作为事实来源发布了新的Commerce integration framework。 Adobe不打算进一步投资CIF REST。 建议客户使用替代解决方案。 | 对于AEM-Commerce集成，请切换到[AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype)和[AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)。 请参阅AEM与Adobe Commerce集成[使用Commerce integration framework](/help/commerce/cif/integrating/magento.md)。 Adobe的路线图中列出了支持新方法与Commerce之外的第三方（第三方集成）的流程。 |  |
-| 组件(AEM Sites) | Adobe不打算对存储在`/libs/foundation/components`中的大多数Foundation组件进行进一步的增强。 在组件文件夹中查找`cq:deprecated`和`cq:deprecatedReason`属性。 AEM 6.5包含基础组件，从早期版本升级的客户可以继续按原样使用它们。 此外，即使已弃用，也支持基础组件。 | Adobe建议在将来的项目中使用核心组件。 现有站点可以保持不变，也可以使用[AEM现代化工具套件](https://github.com/adobe/aem-modernize-tools)来重构站点以使用核心组件。 |  |
-| 组件(AEM Sites) | 从6.5开始，设计导入程序组件`/libs/wcm/designimporter/components`已被标记为已弃用。Adobe不打算进一步增强设计导入程序实施。 | Adobe计划在未来版本中提供该用例的替代实施。 |  |
-| Foundation | Granite卸载框架。 Adobe不打算进一步增强CQ 5.6.1中引入的卸载框架，以将资源处理外部化。 | Adobe正在开发新一代云原生卸载框架。 |  |
-| 开发人员 | `Hobbes.js`。Adobe不打算进一步增强`hobbes.js`用户界面测试框架。 | Adobe建议客户使用Selenium自动化。 |  |
-| 开发人员 | jQuery用户界面客户端库。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的jQuery UI客户端库。 | Adobe建议仍需要jQuery UI才能将其代码添加到项目代码库的客户。 |  |
-| 开发人员 | jQuery动画客户端库(`granite.jquery.animation`)。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的jQuery动画客户端库。 | Adobe建议仍需要jQuery动画才能将其代码添加到项目代码库的客户。 |  |
-| 开发人员 | Handlebars客户端库。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的Handlebar客户端库。 | Adobe建议仍需要`Handlebars`才能将其代码添加到其项目代码库中的客户。 |  |
-| 开发人员 | 草坪椅客户库。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的Lawnchair客户端库。 | Adobe建议仍需要Lawnchair为其代码将其添加到其项目代码库的客户。 |  |
-| 开发人员 | `Granite.Sling.js`客户端库。 Adobe不打算进一步增强作为分发（快速入门）的一部分提供的Granite.Sling.js客户端库。 | Adobe建议依赖库功能的客户重构其代码以不再使用它。 |  |
-| 开发人员 | 使用YUI压缩/缩小JavaScript客户端库。 Adobe不打算进一步更新YUI库。 在AEM 6.4之前，YUI默认使用切换到JavaScript Closure Compiler (GCC)的选项来缩减Google。 从AEM 6.5开始，默认为GCC。 | Adobe建议客户升级到AEM 6.5以切换到GCC进行实施 |  |
-| 开发人员 | CRXDE Lite中的经典UI对话框编辑器。 Adobe不打算进一步增强作为分发（快速入门）的一部分提供的经典UI对话框编辑器 | 没有可用的替换。 |  |
-| Forms | AEM Forms与AEM Mobile的集成已弃用。 | 没有可用的替代项。 |
-| 开发人员 | CRXDE Lite中的经典UI对话框编辑器。 Adobe不打算进一步增强作为分发（快速入门）的一部分提供的经典UI对话框编辑器 | 没有可用的替换。 |  |
-| 开发人员 | Lodash/underscore客户端库。 Adobe不打算进一步维护和更新作为分发（快速入门）的一部分提供的Lodash/Underscore客户端库。 | Adobe建议仍需要对其代码使用Lodash/下划线的客户将其添加到其项目代码库中。 |  |
+| Creative Cloud 集成 | AEM 至 Creative Cloud 文件夹共享功能是在 AEM 6.2 中引入的。它为创意用户提供了一种从 AEM 访问资产的方式，以便在 [!DNL Creative Cloud] 应用程序中打开，并将新文件上传或将更改保存到 AEM。Creative Cloud 应用程序中推出的新功能 Adobe Asset Link，能够在 Photoshop、InDesign 和 Illustrator 中直接访问 AEM 资产，从而带来更佳的用户体验和更强大的功能。Adobe 不再计划增强 AEM 与 Creative Cloud 文件夹共享的集成功能。尽管该功能仍包含在 AEM 中，但建议客户使用替代方案。 | 建议客户改用新的 Creative Cloud 集成功能，包括 Adobe Asset Link 或 AEM 桌面应用程序。 |  |
+| Assets | 在发布实例中，`AssetDownloadServlet` 默认被禁用。详情请参阅 [AEM 安全清单](/help/sites-administering/security-checklist.md)。 | 配置说明见 [AEM 安全清单](/help/sites-administering/security-checklist.md)。 |  |
+| 集成 | 界面 **[!UICONTROL Experience Manager 云服务选择加入]**&#x200B;功能已弃用，因为 [!DNL Experience Manager] 与 [!DNL Adobe Target] 的集成已在 [!DNL Experience Manager] 6.5 中更新。该集成支持 Adobe Target Standard API。该 API 使用 Adobe IMS 和 [!DNL Adobe I/O Runtime] 进行身份验证。它支持利用 Adobe Launch 对 [!DNL Experience Manager] 页面进行分析与个性化的增强功能，因此原有的选择加入向导已不再具有实际意义。 | 请通过相应的 [!DNL Experience Manager] 云服务配置系统连接、Adobe IMS 身份验证及 [!DNL Adobe I/O Runtime] 集成。 | 6.5.7.0 |
+| 连接器 | 适用于 [!DNL Experience Manager] 6.5 的 Adobe JCR 连接器（用于 Microsoft® SharePoint 2010 和 Microsoft® SharePoint 2013）已弃用。 | 不适用 |  |
+| 动态标记管理器（DTM） | 与 DTM 的集成已弃用。 | 请改用 Adobe Experience Platform Launch 作为标记管理器。 |   |
+| Adobe Target | 在 AEM 6.5 中，新增了使用基于 [!DNL Adobe I/O] 的 Adobe Target Standard API（REST API）连接 Adobe Target 服务的功能，因此 Target Classic API（XML）方式已弃用。 | 请重新配置集成以[使用新的 API](/help/sites-administering/target.md)。 |  |
+| Adobe Target | 在 AEM 中使用基于 `mbox.js` 的 Adobe Target 集成已弃用。 | 请改用 `at.js` 1.x。 |  |
+| Commerce | 2018 年，[CIF REST](https://github.com/adobe/commerce-cif-api) 作为一组微服务提供，用于支持 AEM 与电商引擎的集成。Adobe 在于 2018 年中期收购 Adobe Commerce（原 Magento）后，基于以下两点原因决定调整策略。Commerce 已有自己的一套 Commerce API（REST 和 GraphQL），维持两套 API 并不是好的做法。市场趋势表明，客户正逐步转向 GraphQL，因为这是一种更高效的数据查询方式。2019 年，Adobe 发布了新的 Commerce 集成框架，其中使用 Commerce 的 GraphQL API 作为可信的数据源。Adobe 不再计划对 CIF REST 进行进一步投入。建议客户使用替代方案。 | 对于 AEM-Commerce 集成，请切换至 [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) 和 [AEM CIF 核心组件](https://github.com/adobe/aem-core-cif-components)。请参阅[使用 Commerce 集成框架](/help/commerce/cif/integrating/magento.md)实现 AEM 与 Adobe Commerce 的集成。支持采用该新方法的第三方（非 Commerce）集成已纳入 Adobe 的产品路线图。 |  |
+| 组件（AEM Sites） | Adobe 不再计划对存储在 `/libs/foundation/components` 下的大多数基础组件进行进一步增强。可在组件文件夹中查找 `cq:deprecated` 和 `cq:deprecatedReason` 属性。AEM 6.5 仍包含基础组件，客户从早期版本升级后可继续按原方式使用。此外，尽管这些基础组件已弃用，但仍为其提供支持。 | Adobe 建议在未来的项目中使用核心组件。现有站点可保持不变，或使用 [AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools) 将站点重构为使用核心组件。 |  |
+| 组件（AEM Sites） | 自 6.5 起，Design Importer 组件 `/libs/wcm/designimporter/components` 已标记为弃用。Adobe 不再计划增强该设计导入器的实施。 | Adobe 计划在未来版本中为该用例提供替代实施。 |  |
+| 基础 | Granite 卸载框架。Adobe 不再计划增强在 CQ 5.6.1 中引入的用于实现资产处理外部化的卸载框架。 | Adobe 正在开发下一代云原生卸载框架。 |  |
+| 开发人员 | `Hobbes.js`。Adobe 不再计划增强 `hobbes.js` 用户界面测试框架。 | Adobe 建议客户改用 Selenium 自动化工具。 |  |
+| 开发人员 | jQuery UI 客户端库。Adobe 不再计划维护和更新随发行版（快速入门）提供的 jQuery UI 客户端库。 | Adobe 建议仍需要 jQuery UI 的客户将其直接添加到项目代码库中。 |  |
+| 开发人员 | jQuery 动画客户端库（`granite.jquery.animation`）。Adobe 不再计划维护和更新随发行版（快速入门）提供的 jQuery 动画客户端库。 | Adobe 建议仍需要 jQuery 动画的客户将其直接添加到项目代码库中。 |  |
+| 开发人员 | Handlebars 客户端库。Adobe 不再计划维护和更新随发行版（快速入门）提供的 Handlebars 客户端库。 | Adobe 建议仍需要 `Handlebars` 的客户将其直接添加到项目代码库中。 |  |
+| 开发人员 | Lawnchair 客户端库。Adobe 不再计划维护和更新随发行版（快速入门）提供的 Lawnchair 客户端库。 | Adobe 建议仍需要 Lawnchair 的客户将其直接添加到项目代码库中。 |  |
+| 开发人员 | `Granite.Sling.js` 客户端库。Adobe 不再计划增强随发行版（快速入门）提供的 Granite.Sling.js 客户端库。 | Adobe 建议依赖此库功能的客户重构代码，以停止使用该库。 |  |
+| 开发人员 | 使用 YUI 对 JavaScript 客户端库进行压缩/缩小。Adobe 不再计划更新 YUI 库。在 AEM 6.4 之前，YUI 默认用于压缩 JavaScript，并提供切换至 Google Closure Compiler（GCC）的选项。从 AEM 6.5 开始，GCC 成为默认选项。 | Adobe 建议升级至 AEM 6.5 的客户在实施中改用 GCC。 |  |
+| 开发人员 | CRXDE Lite 中的经典 UI 对话框编辑器。Adobe 不再计划增强随发行版（快速入门）提供的经典 UI 对话框编辑器。 | 暂无替代方案。 |  |
+| Forms | AEM Forms 与 AEM Mobile 的集成已弃用。 | 暂无替代方案。 |
+| 开发人员 | CRXDE Lite 中的经典 UI 对话框编辑器。Adobe 不再计划增强随发行版（快速入门）提供的经典 UI 对话框编辑器。 | 暂无替代方案。 |  |
+| 开发人员 | Lodash/underscore 客户端库。Adobe 不再计划维护和更新随发行版（快速入门）提供的 Lodash/underscore 客户端库。 | Adobe 建议仍需要 Lodash/underscore 的客户将其直接添加到项目代码库中。 |  |
 
-## 已移除的功能 {#removed-features}
+## 已移除的功能  {#removed-features}
 
-本部分列出从AEM 6.5中删除的特性和功能。以前的版本中这些功能标记为已弃用。
+本节列出了已从 AEM 6.5 中移除的功能和特性。在之前的版本中，这些功能已被标记为弃用。
 
-| 区域 | 专题 | 替换 | 版本(SP) |
+| 区域 | 专题 | 替换 | 版本（SP） |
 |--- |--- |--- |--- |
-| 商务 | AEM CIF Classic已被删除。 | 您应该迁移到[AEM CIF](/help/commerce/cif/migration.md)。 如果您仍然需要CIF Classic，则已创建兼容包，请[联系Adobe客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)。 | 6.5.22.0 |
-| 与[!DNL Experience Cloud]集成 | 您可以使用通过[!DNL Adobe I/O]进行的配置将您的资源与[!DNL Experience Cloud]同步。 [!DNL Adobe Experience Cloud]以前称为[!DNL Adobe Experience Cloud]。 | 如果您有任何疑问，请[联系Adobe客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)。 |  |
-| Analytics Activity Map | AEM中包含的Activity Map版本。 | 由于 Adobe Analytics API 中的安全性更改，无法再使用 AEM 中包含的 Activity Map 版本。使用Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hans)提供的ActivityMap插件。 |  |
-| 集成 | ExactTarget集成已从默认分发（快速入门）中删除，并且不再可用。 | 无替代方案。 |  |
-| 集成 | Salesforce Force API集成已从默认分发（快速入门）中删除，现在是一个要从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)安装的额外包。 | 该功能仍然可用。 |
-| Forms | 由于不再支持Adobe中央产品，因此已删除对Adobe中央迁移Bridge服务的支持。 | 无替代方案。 |  |
-| Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 无替代方案。 |  |
-| Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | 无替换 |  |
-| Forms | 从LiveCycle ES4 SP1到AEM 6.5 Forms on JEE的单跳升级不可用 | 请参阅AEM Forms升级文档中的[可用升级路径](../forms/using/upgrade.md)。 |  |
-| Forms | 从AEM Forms on JEE中删除了基于UPD的群集支持 | 在JEE上的AEM Forms中，您只能使用基于TCP的群集。 如果您将UDP多播服务器从以前的版本升级到JEE上的AEM 5.5 Forms ，请执行手动配置以切换到基于TCP的gemfire群集。 有关详细说明，请参阅[在JEE上升级到AEM 6.5表单](../forms/using/upgrade-forms-jee.md) |  |
-| 开发人员 | Firebug Lite已从默认分发（快速入门）中删除 | 使用浏览器内置的开发人员控制台 |
-| 开发人员 | 删除HTML Client Library Manager中的`customJavaScriptPath`支持。 | 无替换 |  |
-| [!DNL Assets] | 已在[!DNL Adobe Experience Manager] 6.5中删除资源卸载功能。 | 没有可用的替换。 |  |
-| 缓存 | `system/console/slingjsp`已删除，在AEM 6.5中不再可用。 | 类和Slightly缓存存储在Apache Sling Commons FileSystem ClassLoader捆绑包下。 您可以在AEM Web控制台中检查捆绑包编号，并直接从文件系统(`crx-quickstart/launchpad/felix/bundle<ID>`)中删除缓存文件夹。 |  |
-| Screens | 删除了activemq捆绑包支持及其相关配置。 |  |  |
+| Commerce | AEM CIF Classic 已移除。 | 您应迁移至 [AEM CIF](/help/commerce/cif/migration.md)。如仍需使用 CIF Classic，Adobe 创建了一份兼容包，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 | 6.5.22.0 |
+| 与 [!DNL Experience Cloud] 集成 | 您可以通过 [!DNL Adobe I/O] 进行配置，将资产与 [!DNL Experience Cloud] 同步。[!DNL Adobe Experience Cloud] 之前称为 [!DNL Adobe Experience Cloud]。 | 如有任何问题，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 |  |
+| Analytics Activity Map | AEM 中包含的 Activity Map 版本。 | 由于 Adobe Analytics API 的安全性更改，AEM 内置的 Activity Map 版本已无法继续使用。请使用 [Adobe Analytics 提供的 ActivityMap 插件](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)。 |  |
+| 集成 | ExactTarget 集成已从默认发行版（快速入门）中移除，且不再提供。 | 暂无替代方案。 |  |
+| 集成 | Salesforce Force API 集成已从默认发行版（快速入门）中移除，现在作为额外安装包提供，可从[软件分发平台](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)获取。 | 该功能仍然可用。 |
+| Forms | 对 Adobe Central Migration Bridge 服务的支持已移除，因为 Adobe Central 产品已不再受到支持。 | 暂无替代方案。 |  |
+| Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 暂无替代方案。 |  |
+| Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | 暂无替代方案 |  |
+| Forms | 从 LiveCycle ES4 SP1 直接升级到 JEE 上的 AEM 6.5 Forms 的单步升级不可用 | 请参阅 AEM Forms 升级文档中的[可用升级路径](../forms/using/upgrade.md)。 |  |
+| Forms | 已移除 JEE 上的 AEM Forms 中基于 UDP 的集群支持 | JEE 上的 AEM Forms 仅支持基于 TCP 的集群。如果您将早期版本中的 UDP 多播服务器升级至 JEE 上的 AEM 5.5 Forms，请执行手动配置，以切换至基于 TCP 的 gemfire 集群。详细说明请参阅[升级至 JEE 上的 AEM 6.5 Forms](../forms/using/upgrade-forms-jee.md)。 |  |
+| 开发人员 | Firebug Lite 已从默认发行版（快速入门）中移除。 | 请使用浏览器内置开发者控制台。 |
+| 开发人员 | HTML 客户端库管理器中对 `customJavaScriptPath` 的支持已移除。 | 暂无替代方案 |  |
+| [!DNL Assets] | 在 [!DNL Adobe Experience Manager] 6.5 中已移除资产卸载功能。 | 暂无替代方案。 |  |
+| 缓存 | `system/console/slingjsp` 已移除，并且在 AEM 6.5 中不再可用。 | 类和 Slightly 缓存存储在 Apache Sling Commons FileSystem ClassLoader 捆绑包下。您可以在 AEM网页控制台中查看捆绑包编号，并直接从文件系统（`crx-quickstart/launchpad/felix/bundle<ID>`）中移除缓存文件夹。 |  |
+| Screens | 已移除 activemq 捆绑包支持及相关配置。 |  |  |
 
 <!-- ## Pre-announcement for next release {#pre-announcement-for-next-release}
 

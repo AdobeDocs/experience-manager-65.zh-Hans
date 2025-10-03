@@ -1,36 +1,36 @@
 ---
 title: WCAG 2.1 快速指南
-description: Web内容无障碍准则(WCAG) 2.1版快速指南。
+description: Web 内容无障碍指南（WCAG）2.1 快速指南
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader,Architect,Data Architect,User
 source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1744'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # WCAG 2.1 快速指南{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM)的开发旨在最大限度地符合Web内容无障碍准则。
+Adobe Experience Manager（AEM）的开发目标是最大程度地符合《Web 内容无障碍指南》。
 
-[Web 无障碍准则 (WCAG) 版本 2.1](https://www.w3.org/TR/WCAG/) 是由[万维网联盟 (W3C)](https://www.w3.org/) 根据其 [Web 无障碍倡议 (WAI)](https://www.w3.org/WAI/) 制定的国际公认准则。
-
->[!NOTE]
->
->WCAG 2.1 对 2008 年发布的先前版本 WCAG 2.0 进行了更新。请参阅 [WCAG 2.1 - 与 WCAG 2.0 的比较](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
+[Web 内容无障碍指南（WCAG）第 2.1 版](https://www.w3.org/TR/WCAG/) 是由[万维网联盟（W3C）](https://www.w3.org/)根据其 [Web 无障碍计划（WAI）](https://www.w3.org/WAI/)制定的国际公认准则。
 
 >[!NOTE]
 >
->由于这些文档是按照指南的[更新版本编写的，因此WCAG 2.2](https://www.w3.org/TR/)已于2023年10月推出。
+>WCAG 2.1 对 2008 年发布的先前版本 WCAG 2.0 进行了更新。请参阅 [WCAG 2.1 与 WCAG 2.0 的比较](https://www.w3.org/TR/WCAG21/#comparison-with-wcag-2-0)。
+
+>[!NOTE]
 >
->请参阅[与WCAG 2.1](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1)的比较，以及[WCAG 2.2](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2)的新增功能。
+>自这些文档撰写以来，[更新版本 WCAG 2.2](https://www.w3.org/TR/) 已于 2023 年 10 月发布。
+>
+>参见[与 WCAG 2.1 的比较](https://www.w3.org/TR/WCAG/#comparison-with-wcag-2-1)和 [WCAG 2.2 的新特性](https://www.w3.org/TR/WCAG/#new-features-in-wcag-2-2)。
 
-WCAG 2.1 包含一系列非技术层面的准则及成功标准，旨在确保残障人士能够访问并使用 Web 内容。这些准则和成功标准向Web内容作者、设计人员和开发人员提供建议，确保他们创作的资源可尽可能多地供更多人访问，而无论他们具有任何缺陷；例如，视觉障碍、听力损失、学习困难、年龄限制等。
+WCAG 2.1 包含一系列非技术层面的指南及成功标准，旨在确保残障人士能够访问并使用 Web 内容。这些指南为网站内容作者、设计师和开发人员提供建议，帮助他们确保所制作的资源尽可能对更多人无障碍使用，无论用户是否存在某种残障，例如视力障碍、听力障碍、学习障碍、与年龄相关的功能限制等。
 
-例如，使用 HTML 中的 `alt` 属性描述图像（或任何其他非文本内容）会使失明或部分视力受损的人受益匪浅。`alt` 属性中的文本描述内容可以转换为语音输出或传输为可刷新的电子盲文显示屏。
+例如，使用 HTML 中的 `alt` 属性描述图像（或任何其他非文本内容）会使失明或部分视力受损的人受益匪浅。`alt` 属性中的文本描述内容可以转化为语音输出或传输为可刷新的电子盲文显示屏。
 
 此外，WCAG 2.1 还可为其他受益人带来好处，包括那些可能被认为存在“环境障碍”**&#x200B;的人员。由于浏览技术、网络连接速度或浏览环境等情况，他们可能会遇到与残障人士类似的障碍。
 
@@ -47,7 +47,7 @@ WCAG 2.1 的目的是提供以下准则：
 每个准则均以一种可进行客观测试的方式编写，以确保一组无障碍专家都同意同容符合该准则要求。无障碍准则的一个挑战是，虽然一些准则在技术上可以测试，但另一些准则需要人为判断来确定是否成功达到了准则要求。
 
 * 支持&#x200B;**优先实施和上下文实施：**
-WCAG 2.1 准则被赋予优先权，其中涉及不遵循准则对特定残障用户群体可能产生的影响。这使得作者能够针对特定情况根据最重要的准则做出明智的决策。此外，还引入了“支持无障碍”**&#x200B;的概念。这允许作者决定如何更好地使用可能没有全面的无障碍支持，或可能要求用户具有特定的辅助型技术和/或浏览器才能从无障碍功能中获益的Web技术。
+WCAG 2.1 准则被赋予优先权，其中涉及不遵循准则对特定残障用户群体可能产生的影响。这使得作者能够针对特定情况根据最重要的准则做出明智的决策。此外，还引入了“支持无障碍”**&#x200B;的概念。这使创作者能够自行决定如何最佳地使用某些网页技术，即使这些技术可能尚未完全支持辅助功能，或需要用户借助特定的辅助技术和/或浏览器才能充分利用其无障碍特性。
 
 这些目标对 WCAG 2.1 的结构有显著的影响。
 
@@ -73,7 +73,7 @@ WCAG 2.1 包含有四个用于无障碍设计的关键原则，有时由首字�
 * 准则编号为 1.1 - 4.1，其中第一个编号与父准则相对应。
 * 每个准则都包含一个或多个&#x200B;**成功标准**。
 * 成功标准将编写为语句，任何给定网页的结果都为 `True` 或 `False`。
-* 成功标准可能包括其中一项/或多种选择，也可能包括例外，即不符合成功标准的情况。
+* 成功准则可能包含“二选一”的选择项，或包含例外情况；在这些情况下，无需满足相应的成功准则。
 * 成功标准按照父准则和原则编号，从 1.1.1 - 4.1.1。它们还有一个简短的名称，用于总结标准的目的，以便于参考。例如，成功标准 [1.1.1 是非文本内容](https://www.w3.org/TR/WCAG/#non-text-content)。
 * 成功标准包括一系列相关的&#x200B;**技术**（详见下文）。
 
@@ -88,7 +88,7 @@ WCAG 2.1 包含有四个用于无障碍设计的关键原则，有时由首字�
 本列表并非详尽内容，它介绍了一些可用资源：
 * [所有 WCAG 相关文档的概要](https://www.w3.org/WAI/standards-guidelines/wcag/)
 * [不同文档的概要](https://www.w3.org/WAI/standards-guidelines/wcag/docs/)
-* [Web 内容无障碍准则 (WCAG) 2.1](https://www.w3.org/TR/WCAG21/)
+* [Web 内容无障碍准则（WCAG）2.1](https://www.w3.org/TR/WCAG21/)
 * [WCAG 2.1 的新增内容](https://www.w3.org/WAI/standards-guidelines/wcag/new-in-21/)
 * [如何满足 WCAG 2.1 的快速参考指南](https://www.w3.org/WAI/WCAG21/quickref/)
 * [WCAG 2 常见问题解答](https://www.w3.org/WAI/standards-guidelines/wcag/faq/)

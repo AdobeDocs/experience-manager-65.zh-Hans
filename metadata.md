@@ -9,9 +9,9 @@ version: Experience Manager 6.5
 index: y
 recommendations: noDisplay
 source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '131'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ metadata.md 文件中包含存储库级别的元数据，这些元数据会传�
 | solution-title | 在文章标题中用作链接。 |
 | solution-hub-url | 打开学习和支持中心页面。 |
 | solution-icon | 在解决方案标题旁边显示解决方案图标。尚未实施。 |
-| getting-started-url | 指向入门页面的链接。 |
-| tutorials-url | 链接到视频教程。 |
+| getting-started-url | 链接至开始使用页面。 |
+| tutorials-url | 链接至视频教程。 |
 | mini-toc-levels | 确定显示在右边栏中的标题级别数量。默认值为 2。 |
 | git-repo | 指定主要存储库的位置以供内部使用。 |
 

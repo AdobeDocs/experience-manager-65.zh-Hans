@@ -1,6 +1,6 @@
 ---
 title: 术语表
-description: 此术语表按字母顺序列出项目核对清单中所有可交付结果文档的详细信息。
+description: 本术语表按字母顺序列出了所有来自项目检查表的可交付文档的详细信息。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
@@ -11,1398 +11,1398 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Architect,Data Architect,Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6926'
-ht-degree: 0%
+ht-degree: 100%
 
 ---
 
 # 术语表{#glossary}
 
-此词汇表列出[项目核对清单](/help/managing/best-practices-checklist.md)中所有可交付文档的详细信息（按字母顺序）。
+本术语表按字母顺序列出了所有来自[项目检查表](/help/managing/best-practices-checklist.md)的可交付文档的详细信息。
 
-## 来自业务利益相关方的接受 {#acceptance-from-business-stakeholders}
+## 业务利益相关者验收 {#acceptance-from-business-stakeholders}
 
-业务利益相关者对此的接受证实，他们作为关键利益相关者，与解决方案保持一致，并且已批准他们如何满足业务案例。
+业务利益相关者的验收确认了他们作为关键利益相关者已认同该解决方案，并已批准业务需求如何满足业务案例。
 
 ### 验收测试 {#acceptance-tests}
 
-验收测试在应用程序准备好投入生产时执行。 测试由代表各种类型最终用户的组使用现实场景执行。
+当应用程序准备进入生产环境时，会执行验收测试。这些测试由代表不同类型终端用户的群体在真实场景下进行。
 
 验收测试用于确认：
 
-* 项目满足客户的要求。
-* 解决方案适合多种用途。
-* 用户接受解决方案并设想使用它。
-* 客户接受项目。
+* 项目满足客户需求。
+* 解决方案适用且符合预期用途。
+* 用户接受该解决方案，并能够设想如何在实际工作中使用。
+* 客户认可并接受该项目。
 
-您计划和设计验收测试的时间越早，最终部署就越轻松。 它们应与客户和您的质量保证团队一起定义。
+越早规划和设计验收测试，最终部署就越容易。验收测试应与客户及质量保证团队共同定义。
 
-虽然您也许无法在项目的一开始就定义所有详细信息，但应该讨论并商定初始定义。 验收测试可能基于基本要求（功能和性能）。
+虽然在项目初期可能无法确定所有细节，但应就初步定义进行讨论并达成一致。验收测试通常会基于基本需求来进行（功能和性能）。
 
-### 协调对测试系统的访问 {#access-to-test-system-coordinated}
+### 测试系统访问权限协调 {#access-to-test-system-coordinated}
 
 确保已为所有角色授予所需级别的系统访问权限。
 
-### Adobe安全核对清单 {#adobe-security-checklist}
+### Adobe 安全检查清单 {#adobe-security-checklist}
 
-[Adobe安全核对清单](/help/sites-administering/security-checklist.md)是提供的官方核对清单，用于确保Adobe Experience Manager (AEM)在安装时安全。 它包含为确保实例的完整性而必须执行的安全措施和验证步骤。
+[Adobe 安全检查清单](/help/sites-administering/security-checklist.md)是官方提供的检查清单，用于确保 Adobe Experience Manager（AEM）在安装时的安全性。其中包含必须执行的安全措施和验证步骤，以确保实例的完整性。
 
-### Adobe支持门户项目设置 {#adobe-support-portal-project-set-up}
+### Adobe 支持门户项目设置 {#adobe-support-portal-project-set-up}
 
-Adobe支持门户使实施合作伙伴和客户能够在支持门户中将AEM实施设置为项目。
+Adobe 支持门户允许实施合作伙伴和客户将 AEM 实施作为项目在支持门户中进行设置。
 
-可以注册详细信息；例如，关于实施的技术和版本的详细信息。 这些选项为客户和Adobe提供了透明度。
+可登记相关详细信息，例如所实施的技术和版本。这些信息可为客户与 Adobe 之间提供透明度。
 
-### AEM管理员培训 {#aem-administrator-training}
+### AEM 管理员培训 {#aem-administrator-training}
 
-培训解决方案的行政人员。 有关详细信息，请参阅[Adobe培训服务](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)。
+面向解决方案的管理人员的培训。更多信息请参阅 [Adobe 培训服务](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)。
 
-### AEM创作培训 {#aem-author-training}
+### AEM 作者培训 {#aem-author-training}
 
-培训将为解决方案制作（创作）内容的员工。 有关详细信息，请参阅[Adobe培训服务](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)。
+面向负责为解决方案创建（创作）内容的员工的培训。更多信息请参阅 [Adobe 培训服务](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager)。
 
-### AEM认证考试 {#aem-certification-exam}
+### AEM 认证考试 {#aem-certification-exam}
 
-请确保已注册适当的角色，以参加相关的[认证考试](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)。
+确保相关角色已注册参加相应的[认证考试](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
 
-### AEM认证 {#aem-certified}
+### AEM 认证 {#aem-certified}
 
-确保相应角色已通过相关的[认证考试](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)。
+确保相关角色已通过相应的[认证考试](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
 
-### AEM技术培训 {#aem-technical-training}
+### AEM 技术培训 {#aem-technical-training}
 
-为适当的角色（例如，开发人员、架构师、工程师和业务从业人员）提供技术培训。
+为相关角色提供技术培训，例如开发人员、架构师、工程师和业务从业人员。
 
-### 就定义为项目目标的KPI达成一致 {#agreement-on-kpis-defined-as-goals-for-the-project}
+### 就 KPI 作为项目目标达成一致 {#agreement-on-kpis-defined-as-goals-for-the-project}
 
-关键绩效指标(KPI)可帮助组织定义和衡量实现组织目标的进度。 一旦一个组织分析了它的使命并确定了它的目标，它就必须衡量实现这些目标的进展。 KPI提供了一种测量机制。
+关键绩效指标（KPI）有助于组织定义并衡量实现组织目标的进度。一旦组织分析了其使命并明确了目标，就必须衡量实现这些目标的进度。KPI 为衡量进度提供了一种机制。
 
-### 协调业务和性能KPI {#align-business-and-performance-kpis}
+### 使业务和绩效 KPI 保持一致 {#align-business-and-performance-kpis}
 
-让您的业务和绩效关键绩效指标(KPI)保持一致，有助于将组织内所有相关人员和流程整合在一起。 这进而有助于减少实现业务目标和实现建议目的所需的时间和精力。
+将业务与关键绩效指标（KPI）保持一致，有助于整合组织内所有相关人员和流程。这反过来可以减少实现业务目标和完成既定目的所需的时间和精力。
 
-### 使内容体系结构与KPI保持一致 {#alignment-of-content-architecture-with-kpis}
+### 使内容架构与 KPI 保持一致 {#alignment-of-content-architecture-with-kpis}
 
-确保建议的内容架构与相关关键绩效指标(KPI)保持一致。
+确保拟定的内容架构与相关关键绩效指标（KPI）保持一致。
 
-### 使客户路线图与项目时间表保持一致 {#alignment-of-the-customer-roadmap-with-project-timeline}
+### 使客户路线图与项目时间线保持一致 {#alignment-of-the-customer-roadmap-with-project-timeline}
 
-客户路线图由高级里程碑和业务目标组成。 项目时间表必须遵循并与此策略保持一致，因此必须突出显示并跟踪任何潜在风险和/或可能偏差。
+客户路线图由高层级的里程碑和业务目标组成。项目时间线必须遵循并与该策略保持一致，因此必须突出并跟踪任何潜在风险和/或可能的偏差。
 
-### 应用程序体系结构定义 {#application-architecture-definition}
+### 应用程序架构定义 {#application-architecture-definition}
 
-[应用程序架构](/help/managing/best-practices.md#development-preparation)应清楚地定义建议应用程序的行为。
+[应用程序架构](/help/managing/best-practices.md#development-preparation)应清晰定义建议的应用程序的行为。
 
-其重点是：
+重点包括：
 
-* 他们如何彼此互动以及如何与用户互动。
-* 由应用程序（而非其内部结构）使用和生成的数据。
+* 应用程序之间以及与用户之间的交互方式。
+* 应用程序需消耗和生成的数据，而非其内部结构。
 
-### 已定义的特定于应用程序的维护任务 {#application-specific-maintenance-tasks-defined}
+### 定义特定于应用程序的维护任务 {#application-specific-maintenance-tasks-defined}
 
-除了标准Adobe Experience Manager (AEM)维护任务外，您必须定义为持续维护解决方案而必须运行的任何其他操作任务。
+除标准 Adobe Experience Manager（AEM）维护任务外，还必须定义为确保持续维护解决方案而需要执行的其他运行任务。
 
-### 经过适当培训的工作人员 {#appropriately-trained-staff}
+### 获得适当培训的员工 {#appropriately-trained-staff}
 
-确保您的团队由经过适当培训的员工组成。 对于项目团队，建议具备以下所有条件：
+确保团队成员均接受了相应培训。对于项目团队，建议具备以下人员：
 
-* 至少有一位AEM认证的潜在客户开发人员
-* 至少有一个AEM认证架构师
-* 至少75%的开发人员已获得AEM认证；
-这使经认证的开发人员能够指导初级开发人员，并确保知识共享和透明度
+* 至少一名通过 AEM 认证的首席开发人员
+* 至少一名通过 AEM 认证的架构师
+* 至少 75% 的开发人员通过 AEM 认证；
+这样既能让已认证的开发人员指导初级开发人员，又能确保知识共享和透明度
 
 ### 架构图 {#architecture-diagram}
 
-架构图是架构的图形表示。 它包括表示以下内容：
+架构图是架构的图形化表示。它包括以下内容：
 
 * 概念
-* 他们的原则
-* 属于架构一部分的元素和组件
+* 其原则
+* 架构中的元素和组件
 
-### 架构草稿 {#architecture-draft}
+### 架构草案 {#architecture-draft}
 
-这提供了系统和解决方案体系结构的高级视图。 在现阶段，草案将在以后阶段加以审查和完善。
+提供系统和解决方案架构的高层视图。在此阶段，它仅为草案，并会在后续阶段进行评审和完善。
 
-### 架构审查委员会签署 {#architecture-review-board-sign-off}
+### 架构评审委员会签核 {#architecture-review-board-sign-off}
 
-架构审查委员会是一个跨组织的机构，它可以：
+架构评审委员会是一个跨组织机构，该机构负责：
 
-* 监督连贯战略的实施
-* 确保系统中的法规遵从性
+* 监督统一战略的实施
+* 确保系统合规性
 
-审查委员会应代表参与该架构的所有关键利益攸关方。 通常，他们由一组负责审核和维护整体架构的执行人员组成。
+评审委员会应能够代表所有与架构相关的关键利益相关者。通常这是由一组负责评审与维护整体架构的高管组成的。
 
-### 与KPI相比，适应实际内容和结果的自动化测试套件 {#automated-test-suite-adapted-for-real-content-and-results-compared-to-kpis}
+### 针对真实内容调整的自动化测试套件，并将结果与关键绩效指标（KPI）进行对比 {#automated-test-suite-adapted-for-real-content-and-results-compared-to-kpis}
 
-自动化脚本和基本自动化用例：
+自动化脚本和基础自动化用例：
 
-* 适用于生产内容
-* 已根据KPI检查
+* 针对生产内容进行调整
+* 与 KPI 进行核对
 
 ### 自动化测试策略 {#automated-testing-strategy}
 
-此策略为可重用的自动化脚本定义了一个框架，以及质量保证(QA)团队计划的方法。 它概述了自动化测试的总体计划，以帮助确保：
+该策略定义了可复用自动化脚本的框架，以及质量保证（QA）团队规划的实施方法。它概述了自动化测试的整体计划，以确保：
 
-* 更高的投资回报(ROI)
-* 更多测试覆盖
-* 通过质量重复提高测试可靠性
+* 更高的投资回报率（ROI）
+* 更广的测试覆盖率
+* 通过高质量的重复执行提升测试可靠性
 
-### 根据现实和预期负载验证的自动测试策略 {#automated-testing-strategy-validated-against-realistic-and-expected-load}
+### 针对实际和预期负载验证的自动化测试策略 {#automated-testing-strategy-validated-against-realistic-and-expected-load}
 
-必须根据解决方案上将包含的内容和预期负载来验证和调整自动测试策略。
+必须根据解决方案的内容和预期负载，对自动化测试策略进行验证和调整。
 
 ### 自动化策略 {#automation-strategy}
 
-部署的自动化可确保更快、更一致的部署。 自动化战略概述了任何此类自动化机制的配置，包括：
+部署的自动化确保了部署的快速性和一致性。自动化策略概述了相关自动化机制的配置，包括：
 
 * 频率
-* 要使用的工具
-* 要部署到的环境
+* 使用的工具
+* 部署的环境
 
-### 了解通信计划 {#aware-of-communication-plan}
+### 了解沟通计划 {#aware-of-communication-plan}
 
-整个项目团队和所有利益相关者必须确认他们了解：
+整个项目团队及所有利益相关者必须确认他们了解：
 
 * 报告结构
-* 报告的节奏
-* 通信渠道
+* 报告节奏
+* 沟通渠道
 
-### 了解成功定义和标准 {#aware-of-success-definitions-and-criteria}
+### 了解成功的定义和标准 {#aware-of-success-definitions-and-criteria}
 
-整个项目团队和所有利益相关者必须确认他们了解：
+整个项目团队及所有利益相关者必须确认他们了解：
 
 * 成功的定义
-* 成功标准
+* 成功的评判标准
 
-### 备份和还原概念 {#backup-and-restore-concept}
+### 备份与恢复概念 {#backup-and-restore-concept}
 
-备份和还原概念概述了将在解决方案中实施的技术功能。 这是公司备份和恢复策略所必需的。
+备份与恢复概念说明了解决方案中将实施的技术功能。这是公司备份与恢复策略的要求。
 
-### 已测试备份和恢复 {#backup-and-restore-tested}
+### 备份与恢复测试 {#backup-and-restore-tested}
 
-基于备份和恢复概念的完整端到端测试。
+基于备份与恢复概念进行的端到端完整测试。
 
 ### 商业案例 {#business-case-s}
 
-业务案例文档提供了与采取操作、采取替代操作（如果可用）或不采取任何操作相关的论点。 应当平衡各种论点，以具体事实为基础（只要可能/相关），并突出所有案件的好处和风险。
+商业案例文档会呈现与采取行动、替代行动（若有）、或不采取行动相关的论点。这些论点应当平衡、基于具体事实（尽可能/相关时），并突出各选项的优势与风险。
 
-商业案例文件应是对所有选项的明确定义，最后应提出执行拟议解决方案的令人信服的论点。
+商业案例文档应清晰定义所有可选方案，最后以有说服力的论证支持所提议解决方案的实施。
 
-### 业务分析师了解项目范围和期望 {#business-analyst-understands-scope-of-project-and-expectations}
+### 业务分析师理解项目范围与期望 {#business-analyst-understands-scope-of-project-and-expectations}
 
-业务分析师应确认他们完全了解：
+业务分析师应确认其完全理解：
 
 * 项目的范围
 * 所有客户期望
-* 这是项目中每个角色每个阶段所做所有决策的基础
+* 这是在项目各角色、各阶段做出决策的依据
 
-### 业务KPI {#business-kpis}
+### 业务关键绩效指标 {#business-kpis}
 
-组织使用关键绩效指标(KPI)来评估他们在实现目标方面的成功情况。
+组织使用关键绩效指标（KPI）来评估其达成目标的成功程度。
 
-业务KPI定义了可衡量的价值，用于展示公司实现关键业务目标的效率。 选择适合您的业务/方案的KPI，并清楚地定义它们是什么、如何衡量、如何使用以及由谁使用它们，这一点很重要。
+业务 KPI 定义了可衡量的数值，用于展示企业实现核心业务目标的有效性。为您的业务/场景选择合适的 KPI 至关重要，并且需要对以下内容作出清晰定义：指标是什么、如何衡量、如何使用以及由谁使用。
 
-### 业务要求文档 {#business-requirements-documentation}
+### 商业需求文档 {#business-requirements-documentation}
 
-业务需求文档(BRD)详细说明了项目的业务解决方案，提供了客户业务需求和期望的明确说明。 BRD还区分业务解决方案和技术解决方案。
+商业需求文档（BRD）详细描述了项目的商业解决方案，明确了客户的商业需求与期望。BRD 还区分了商业解决方案与技术解决方案。
 
-在检查业务解决方案时，BRD应回答以下问题：
-“企业想要做什么？”
+当审查商业解决方案时，BRD 应回答的问题是：
+“业务希望实现什么？”
 
-### 根据投资回报率和KPI预期确定并调整的解决方案或体系结构，由业务部门签核所需的任何调整 {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
+### 根据 ROI 和 KPI 预期，对已确定并符合要求的解决方案或架构进行任何必要调整，并获得业务部门签字确认 {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
-风险评估和渗透测试过程可能会产生在解决方案体系结构或开发过程中必须解决的问题和结果。
+风险评估与渗透测试可能会产生必须在解决方案架构或开发中处理的问题与结果。
 
-任何因该等流程而引致之调整必须由业务部门审阅及批准，并按整体目标衡量。
+因这些流程引发的任何调整均必须由业务部门审查与批准，并以整体目标为准进行评估。
 
 ### 缓存策略 {#caching-strategy}
 
-缓存策略概述了将为最终用户缓存的内容。 它必须符合性能KPI。
+缓存策略概述了为终端用户缓存的内容。它必须符合性能 KPI 的要求。
 
-例如，可以缓存图像、JavaScript和其他服务器文件等元素以提高解决方案的性能。
+例如，可缓存图像、JavaScript 和其他服务器文件等元素，以提升解决方案的性能。
 
-### 编码准则 {#coding-guidelines}
+### 编码指南 {#coding-guidelines}
 
-编码指南定义了开发人员在开发解决方案时应遵循的基本原则。 除其他外，这些可能包括：
+编码指南定义了开发人员在开发解决方案时应遵循的基本原则。这些原则包括但不限于：
 
-* 命名约定
+* 命名惯例
 * 服务使用情况
-* 库使用情况
+* 库的使用情况
 
 ### 传达操作手册 {#communicate-operations-manual}
 
-确保所有适当的角色/角色都已收到《操作手册》。
+确保所有相关角色/人员已收到操作手册。
 
 ### 传达性能测试报告 {#communicate-performance-test-report}
 
-确保所有适当的角色/角色都已收到性能测试报告。
+确保所有相关角色/人员已收到性能测试报告。
 
 ### 传达发行说明 {#communicate-release-notes}
 
-确保所有适当的角色/角色都已收到发行说明。
+确保所有相关角色/人员已收到发行说明。
 
-### 向团队传达范围和期望 {#communicate-scope-and-expectations-to-team}
+### 向团队传达范围与期望 {#communicate-scope-and-expectations-to-team}
 
-确保项目团队完全了解并符合项目范围和交付期望。
+确保项目团队完全了解并与项目范围及投放期望保持一致。
 
-### 传达培训材料和用户指南 {#communicate-training-materials-and-user-guides}
+### 传达培训材料与用户指南 {#communicate-training-materials-and-user-guides}
 
-确保所有适当的角色/角色都能收到培训材料和用户指南。
+确保所有相关角色/人员已收到培训材料和用户指南。
 
 ### 符合客户安全要求 {#compliance-with-customer-security-requirements}
 
-确保客户的所有安全要求都已就位。
+确保所有客户的安全要求均已落实。
 
 ### 符合安全概念 {#compliance-with-security-concept}
 
-确保安全概念到位。
+确保安全概念已落实。
 
-### 组件和模板关系概念 {#components-and-templates-relationship-concept}
+### 组件与模板关系概念 {#components-and-templates-relationship-concept}
 
-新应用程序中使用的模板和组件的大纲。 包括继承规则、权限和关系等详细信息。
+新应用程序中使用的模板与组件的概述。包括继承规则、权限、关系等细节。
 
-### 组件和模板关系规范 {#components-and-templates-relationship-specification}
+### 组件与模板关系规范 {#components-and-templates-relationship-specification}
 
-组件和模板关系概念的详细信息。
+关于组件与模板关系概念的详细规范。
 
 ### 组件规范 {#components-specification}
 
-要实施的每个组件的规范详细信息。
+各个组件的实施规范详细信息。
 
-### 外部接口模型的概念 {#concept-for-mock-ups-of-external-interfaces}
+### 外部接口模型概念 {#concept-for-mock-ups-of-external-interfaces}
 
-此概念介绍如何针对任何可能对开发或测试环境不可打开/可用的外部接口进行开发和测试。
+关于如何开发与测试可能无法在开发或测试环境中开放/可用的外部接口的概念。
 
-规划/实现这些接口的模型，以确保测试尽可能接近生产行为。
+需规划/实施这些接口的模型，以确保测试尽可能贴近生产环境的行为。
 
 ### 内容架构文档 {#content-architecture-document}
 
-建议的内容架构的文档。 具体细节应包括：
+所提议内容架构的文档。详细信息包括但不限于：
 
 * 内容树
 * 标记概念
-* 内容重用策略
+* 内容复用策略
 
-### 为迁移验证的内容 {#content-validated-for-migration}
+### 内容迁移验证 {#content-validated-for-migration}
 
-审核旧版系统内容，验证所选内容以迁移到新解决方案。
+对旧版系统内容进行审查，并验证所选内容是否适合迁移至新解决方案。
 
-### 合同草稿 {#contract-draft}
+### 合同草案 {#contract-draft}
 
 法律合同的初稿。
 
 ### 当前内容结构和格式 {#current-content-structure-and-format}
 
-当前内容架构和格式的文档。 这将用于生成未来的内容架构。 它也将被用于迁移概念。
+现有内容架构与格式的文档。用于生成未来内容架构。同时也作为迁移概念的依据。
 
-### 客户备份和恢复策略 {#customer-backup-and-restore-policy}
+### 客户备份与恢复策略 {#customer-backup-and-restore-policy}
 
-客户提供的以下政策：
+客户关于以下内容的策略：
 
-* 针对数据和解决方案的备份过程
-* 备份存储
-* 确认备份是否按预期运行
-* 恢复（如果失败）
+* 数据和解决方案的备份流程
+* 备份的存储方式
+* 确认备份按预期运行
+* 发生故障时的恢复措施
 
-### 客户编码准则 {#customer-coding-guidelines}
+### 客户编码指南 {#customer-coding-guidelines}
 
-客户关于应如何进行开发的任何准则/要求。
+客户关于开发方式的任何指南/要求。
 
 ### 客户部署/发布策略 {#customer-deployment-release-policies}
 
-客户提供的策略，用于定义如何以及何时进行部署/发布。
+客户关于如何及何时执行部署/发布的策略。
 
-这些通常包括时间线、时间安排和签核要求。
+通常包括时间表、计划安排及签核要求。
 
 ### 客户监控策略或要求 {#customer-monitoring-policies-or-requirements}
 
-关于应监控内容的客户策略和要求。 这些内容是对监控概念中指定的任何建议的补充。
+客户关于应监控的内容的策略和要求。这些要求是对监控概念中推荐内容的补充。
 
 ### 客户生产发布计划 {#customer-production-release-schedule}
 
-客户为发布到生产环境而定义的计划。
+由客户定义的、用于生产环境发布的计划。
 
 ### 客户报告策略和要求 {#customer-reporting-policies-and-requirements}
 
-客户有关报告的任何政策或要求，或两者兼有。 这些可能包括：
+客户在报告方面的任何策略或要求，或两者兼而有之。这些可以包括：
 
-* 提交特定报告的频率
+* 特定报告的交付频率
 * 特定报告的格式
 * 特殊要求
 
 ### 客户路线图 {#customer-roadmap}
 
-制定要实施的主要里程碑（技术和业务）的路线图。 然后向客户传达此路线图。
+制定一份包含技术和业务方面主要里程碑的实施路线图。然后，将此路线图传达给客户。
 
 ### 客户安全策略 {#customer-security-policies}
 
-客户（业务和IT）将制定策略来定义解决方案所需的安全级别。 这些可能包括：
+客户（业务和 IT 部门）将会制定定义解决方案所需安全级别的策略。这些可以包括：
 
 * 通过风险评估的要求。
 * 通过渗透测试的要求。
-* 任何特定的安全要求；例如所有输入字段的转义、加密使用(SSL)、证书以及身份验证和会话。
+* 任何特定的安全要求，例如输入字段转义、加密使用（SSL）、证书、身份验证和会话管理等。
 
-### 客户规格指南 {#customer-specification-guidelines}
+### 客户规范指南 {#customer-specification-guidelines}
 
-客户制定的任何与规格格式、交付和签核有关的准则。
+客户针对规范的格式、投放方式和签核的相关指南。
 
 ### 客户测试报告 {#customer-test-reports}
 
-在用户验收测试(UAT)期间客户向质量主管报告。
+在用户验收测试（UAT）阶段，客户提交给质量负责人的测试报告。
 
-### 已记录影响升级的自定义项和修补程序 {#customizations-and-hotfixes-that-affect-upgrades-documented}
+### 影响升级的自定义和热修复补丁记录 {#customizations-and-hotfixes-that-affect-upgrades-documented}
 
-必须记录应用的任何自定义和/或应用的修补程序，因为它们可能会影响未来的升级：
+所有自定义和/或已应用的热修复补丁都必须记录在案，因为它们可能影响未来的升级：
 
-* AEM可进行大量自定义以满足业务需求。 必须完整记录任何可能影响升级的自定义设置。 例如，对AEM的用户界面(UI)所做的任何重大更改。
-* 必须完整记录当前解决方案所需的任何更新；这些更新包括：
+* AEM 可根据业务需求进行高度定制。任何可能影响升级的自定义均必须完整记录。例如，对 AEM 用户界面（UI）的重大修改。
+* 当前解决方案所需的更新必须完整记录，这些更新可包括：
 
-   * 累积修订包(CFP)
-   * 服务包(SP)
-   * 修补程序
+   * 累积修订包（CFP）
+   * 服务包（SP）
+   * 热修复补丁
    * 升级
 
 ### 每日用户验收测试报告 {#daily-user-acceptance-test-report}
 
-用户验收测试(UAT)产生的报告或会议。 他们应该详细说明：
+用户验收测试（UAT）过程中形成的报告或会议纪要。其内容应包括：
 
-* 报告的问题
-* 这些问题的优先次序
+* 已报告的问题
+* 问题的优先级划分
 
-### 默认安全性已启用 {#default-security-enabled}
+### 默认安全功能已启用 {#default-security-enabled}
 
-确保已启用/实施AEM的默认安全设置。
+确保已启用/实施 AEM 的默认安全设置。
 
 ### 部署/发布策略和流程 {#deployment-release-policies-and-processes}
 
-正式的策略，涵盖项目的部署和发布。 这些可能包括：
+涵盖项目部署和发布的正式策略。这些策略可包括：
 
-* 发布时间
-* 假日规划
+* 发布时间安排
+* 假期规划
 * 频率
-* 而且可以依赖相关环境
+* 并且可能取决于所讨论的环境
 
-### 已建立部署节奏 {#deployment-cadence-established}
+### 部署节奏已确定 {#deployment-cadence-established}
 
-定义跨环境所需的部署频率。
+定义在各个环境中所需的部署频率。
 
-### 开发方法 {#development-methodology}
+### 开发方法论 {#development-methodology}
 
-软件开发方法包括将软件开发工作的整个过程分成不同的阶段（或阶段），每个阶段都有不同的活动。 目标是改善规划和管理。
+软件开发方法论是将整个软件开发过程拆分为不同阶段（或步骤），每个阶段都有特定活动。其目标是改进规划和管理。
 
-在定义方法时，您应该预先定义项目团队为开发或维护应用程序而创建和完成的特定交付项和工件。
+在定义方法论时，应预先确定由项目团队创建并完成的特定可交付结果和工件，以用于开发或维护应用程序。
 
 ### 开发角色定义 {#development-role-definition}
 
-定义哪个开发人员和/或角色在解决方案中执行IT（性能或其他）和/或单元测试。
+定义在解决方案中执行 IT（性能或其他）测试和/或单元测试的开发人员和/或角色。
 
 ### 开发环境就绪 {#development-environment-ready}
 
-确保使用自动部署所需的集成工具配置开发环境。
+确保开发环境已配置完成，并具备用于实现部署自动化的集成工具。
 
-### 开发团队了解项目范围和期望 {#development-team-understands-scope-of-project-and-expectations}
+### 开发团队理解项目范围和期望 {#development-team-understands-scope-of-project-and-expectations}
 
-开发团队应确认他们完全了解：
+开发团队应确认他们完全理解：
 
 * 项目的范围
 * 所有客户期望
-* 每个角色在项目中每个阶段所做的所有决策的依据
+* 在项目各角色、各阶段下作出所有决策的依据
 
 ### 对话框规范 {#dialogs-specification}
 
-有关解决方案所需的对话框的详细信息。
+解决方案所需对话框的详细信息。
 
-### 文档开发环境设置 {#document-development-environment-setup}
+### 开发环境设置文档 {#document-development-environment-setup}
 
 开发环境的文档。
 
-### 文档生产环境设置 {#document-production-environment-setup}
+### 生产环境设置文档 {#document-production-environment-setup}
 
 生产环境的文档。
 
-### 文档测试环境设置 {#document-test-environment-setup}
+### 测试环境设置文档 {#document-test-environment-setup}
 
 测试环境的文档。
 
-### 耐久性试验 {#durability-test}
+### 耐久性测试 {#durability-test}
 
-耐久性试验显示了该方案在特定载荷下的性能。 这些测试用于衡量解决方案在提交到阈值负载时存活的时间以及处于什么性能级别。
+耐久性测试展示了解决方案在特定负载下的性能。该测试衡量的是解决方案在达到阈值负载时可持续运行的时长，以及所能维持的性能水平。
 
-### 已执行耐久性测试 {#durability-test-executed}
+### 耐久性测试已执行 {#durability-test-executed}
 
-耐久性测试的执行。
+执行耐久性测试。
 
 ### 错误处理概念 {#error-handling-concept}
 
-错误处理是指对编程、应用和通信错误的预测、检测和解决。
+错误处理指的是对程序、应用和通信错误的预判、检测与解决。
 
 ### 错误处理文档 {#error-handling-documentation}
 
-基于错误处理概念的建议错误处理的详细文档。
+基于错误处理概念，对所提议的错误处理进行详细记录文档。
 
-### 上报流程 {#escalation-processes}
+### 提升流程 {#escalation-processes}
 
-所有升级流程的定义。 每个项目级别都有单独的流程：
+所有提升流程的定义。每个项目层级都会有单独的流程：
 
 * 项目团队
 * 客户
 * Adobe
 
-### 建立定期质量审查会议 {#establish-regular-quality-review-sessions}
+### 建立定期质量评审会议 {#establish-regular-quality-review-sessions}
 
-与适当的团队成员定期举行质量审查会议。
+与相关团队成员建立定期的质量评审会议。
 
 ### 现有权限结构 {#existing-permissions-structure}
 
-为旧版解决方案或组织内定义的现有权限和组集的文档。
+对现有权限集和组的记录文档，这些权限和组可能定义于旧版解决方案或组织内部。
 
-### 现有系统图 {#existing-systems-map}
+### 现有系统映射 {#existing-systems-map}
 
-现有系统和依赖项的图表（或图表集）。
+现有系统及其依赖关系的图表（或一组图表）。
 
-### 预期成功定义和标准 {#expected-success-definitions-and-criteria}
+### 预期成功定义与标准 {#expected-success-definitions-and-criteria}
 
-项目发起人收集与项目成功相关的业务期望。 在项目开始时提出一整套期望很重要，因为这些期望应影响在整个执行过程中作出的所有决定。
+项目赞助者会收集与项目成功相关的业务期望。在项目开始阶段就明确并掌握完整的期望集非常重要，因为这些期望应当对整个实施过程中的所有决策产生影响。
 
-预期可能包括：
+期望内容可包括：
 
-* 特定KPI，例如提供的页面增长百分比
-* 缩短发布内容的时间
-* 更高级别的目标，例如易于使用的界面
+* 具体的 KPI，例如页面投放量的百分比提升
+* 内容发布所需时间的缩短
+* 更高层级的目标，例如提供易于使用的界面
 
-### 体验设计要求 {#experience-designs-requirements}
+### 体验设计需求 {#experience-designs-requirements}
 
-解决方案整个体验的要求。 这包括个性化、跨设备持久性和用户体验等因素。
+对解决方案整体体验的需求。涵盖的因素包括个性化、跨设备持久性以及用户体验等。
 
 ### 体验规范 {#experience-specifications}
 
-体验设计要求的详细信息。
+对体验设计需求的详细说明。
 
-### 外部系统和用户依赖项/系统上下文 {#external-system-and-user-dependencies-system-context}
+### 外部系统与用户依赖关系/系统上下文 {#external-system-and-user-dependencies-system-context}
 
-一个图表（或一组图表），概述了解决方案的完整生态系统。 这应该包括外部集成、接口、依赖项和网络等元素。
+展示解决方案完整生态系统的图表（或一组图表）。这应该包括外部集成、接口、依赖关系及网络等要素。
 
-### 回退系统和程序 {#fallback-system-and-procedure}
+### 回退系统与流程 {#fallback-system-and-procedure}
 
-后备系统的定义：
+对回退系统的定义：
 
-* 发生严重故障时必须保持运行的关键业务功能
-* 存在回退时所需的流程
+* 在发生严重故障时必须保持运行的关键业务功能
+* 启用回退时所需的流程
 
-### 已测试后备系统和过程 {#fallback-system-and-procedure-tested}
+### 回退系统与流程测试 {#fallback-system-and-procedure-tested}
 
-回退系统的端到端测试。
+对回退系统进行端到端测试。
 
-### 备用系统从业务利益相关者处注销 {#fallback-system-sign-off-from-business-stakeholders}
+### 业务利益相关者对回退系统的签核 {#fallback-system-sign-off-from-business-stakeholders}
 
-从业务利益相关者处签发，备用系统和相关程序可确保关键业务功能。
+由业务利益相关者确认并签核，确保回退系统及相关流程能够保障关键业务功能。
 
-### KPI可行性确认 {#feasibility-confirmation-on-kpis}
+### KPI 可行性确认 {#feasibility-confirmation-on-kpis}
 
-针对AEM和高级解决方案设计的可行性研究结果。 应根据KPI对这些指标进行衡量，以确保实现这些指标。
+针对 AEM 和高层级解决方案设计所进行的可行性研究的结果。这些应该依据 KPI 进行评估，以确保能够达成相关指标。
 
-### 最终确定合同 {#finalized-contract}
+### 最终合同 {#finalized-contract}
 
-在继续进行项目之前，需要最后确定并签署合同。 这是基于[合同草稿](#contract-draft)。
+在推进项目前，需要一份已定稿并签署的合同。该合同基于[合同草案](#contract-draft)。
 
-### 利益相关者接受的解决方案功能 {#functionality-of-the-solution-accepted-by-stakeholders}
+### 利益相关者对解决方案功能的确认 {#functionality-of-the-solution-accepted-by-stakeholders}
 
-确认利益相关者完全接受：
+确认利益相关者已完全接受以下内容：
 
-* 解决方案功能
-* 解决方案中的任何已知问题
+* 解决方案的功能
+* 解决方案中已知的问题
 
 ### 上线计划 {#go-live-schedule}
 
-完成以下任务所需活动的时间表和计划：
+为以下活动制定的时间线和计划：
 
-* 准备上线
-* 实际上线
+* 上线前的准备工作
+* 实际上线过程
 
-### 定义的快乐路径 {#happy-paths-defined}
+### 理想路径定义 {#happy-paths-defined}
 
-快乐路径是没有例外或错误条件的默认方案。 它由一系列活动组成，当一切按预期进行时，将执行这些活动。
+理想路径是指在没有异常或错误的条件下的默认场景。它由一系列在一切按预期进行时所执行的活动顺序组成。
 
-### 硬件评估 {#hardware-estimates}
+### 硬件预估 {#hardware-estimates}
 
-初步估计：
+初步预估内容包括：
 
-* 基本AEM安装所需的硬件
-* 任何附加需求，基于高级解决方案设计
+* 基础 AEM 安装所需的硬件
+* 基于高层级解决方案设计的任何额外需求
 
-### 硬件将满足要求 {#hardware-will-be-available-to-fulfill-requirements}
+### 硬件可满足需求 {#hardware-will-be-available-to-fulfill-requirements}
 
-确认所有环境都具备最低要求的硬件。
+确认所有环境均已具备满足最低要求的硬件配置。
 
-### 高层次要求 {#high-level-requirements}
+### 高层级需求 {#high-level-requirements}
 
-高层要求的定义提供了对系统的总体需求细分，包括以下方面：
+高层级需求的定义提供了对系统需求的总体分解，涵盖的方面包括：
 
 * 业务流程
 * 主要系统功能
 
-有关这些功能的基本详细信息通常是已知的，因此本文档不应是估计值。
+这些功能的基本细节通常是已知的，因此本文档不应作为估算使用。
 
-### 高级解决方案设计 {#high-level-solution-design}
+### 高层级解决方案设计 {#high-level-solution-design}
 
-高级解决方案设计说明了用于开发解决方案的体系结构。 架构图提供了整个系统的概览，并确定了为产品开发的主要组件及其界面。
+高层级解决方案设计用于说明开发该解决方案所采用的架构。架构图提供了整个系统的概览，并会标识出为产品开发的主要组件及其接口。
 
-### 高级系统图 {#high-level-system-map}
+### 高层级系统映射 {#high-level-system-map}
 
-此系统图应提供系统的高级图表。 它与解决方案上下文的不同之处在于，它是所有涉及系统的广义映射，此图上没有接口。
+此系统映射应提供系统的高层级图示。它与解决方案上下文的区别在于，该图是对所有相关系统的总体映射，并且其中不包含接口信息。
 
 ### 历史内容结构 {#historical-content-structure}
 
-旧版系统的内容结构的定义。 这在准备迁移策略时可作参考和使用。
+对旧版系统内容结构的定义。该结构既可作为参考，也可用于制定迁移策略时的准备工作。
 
-### 历史绩效和历史绩效KPI {#historical-performance-and-historical-performance-kpis}
+### 历史性能与历史性能 KPI {#historical-performance-and-historical-performance-kpis}
 
-从旧系统收集并记录性能统计信息和性能KPI。 然后，可将这些指标用作参考点并用于基准测试新解决方案。
+收集并记录旧版系统的性能统计数据和性能 KPI。之后，这些数据将会用作参考点，并用于对新解决方案进行基准对照。
 
-### 确定关键解决方案/功能 {#identify-critical-key-solutions-functionalities}
+### 识别关键核心解决方案/功能 {#identify-critical-key-solutions-functionalities}
 
-业务关键功能列表。
+对业务至关重要的功能的列表。
 
-### 实施 — 基于渗透测试结果的更改 {#implementation-changes-based-on-penetration-test-results}
+### 实施——基于渗透测试结果的变更 {#implementation-changes-based-on-penetration-test-results}
 
-根据渗透测试的结果，实施解决方案的所有必要更改（已签署）。
+根据渗透测试结果，对解决方案实施所有已签核的必要更改。
 
-### 实施 — 自动化测试策略 {#implementation-automated-testing-strategy}
+### 实施——自动化测试策略 {#implementation-automated-testing-strategy}
 
-设置支持自动化测试所需的工具和流程。
+建立支持自动化测试所需的工具与流程。
 
-### 实施 — 自动化策略 {#implementation-automation-strategy}
+### 实施——自动化策略 {#implementation-automation-strategy}
 
-为支持自动化所需的工具集和流程的设置。
+建立支持自动化所需的工具集与流程。
 
-### 实施 — 内容架构 {#implementation-content-architecture}
+### 实施——内容架构 {#implementation-content-architecture}
 
-实施内容体系结构、标记概念和内容重用。
+实施内容架构、标记概念及内容复用。
 
-### 实施 — 体验设计 {#implementation-experience-design}
+### 实施——体验设计 {#implementation-experience-design}
 
-实施支持体验设计的要求。
+实施支持体验设计所需的各项需求。
 
-### 实施 — 后备系统和过程 {#implementation-fallback-system-and-procedures}
+### 实施——回退系统与流程 {#implementation-fallback-system-and-procedures}
 
-实施后备系统和相关程序。
+实施回退系统及相关流程。
 
-### 实施 — 集成 {#implementation-integration}
+### 实施——集成 {#implementation-integration}
 
-实施与所有必需外部系统的集成。
+实施与所有所需外部系统的集成。
 
-### 实施 — 迁移策略 {#implementation-migration-strategy}
+### 实施——迁移策略 {#implementation-migration-strategy}
 
-迁移以及验证新解决方案的内容和其他工件。
+执行迁移，并对新解决方案中的内容及其他工件进行验证。
 
-### 实施 — 角色和权限 {#implementation-roles-and-rights}
+### 实施——角色和权限 {#implementation-roles-and-rights}
 
-角色和权限、用户和组的实施。
+实施角色与权限、用户及组。
 
-### 实施 — 安全概念 {#implementation-security-concept}
+### 实施——安全概念 {#implementation-security-concept}
 
-实施所有安全措施，包括AEM默认值。
+实施所有安全措施，包括 AEM 默认配置。
 
-### 实施 — 安全软件 {#implementation-security-software}
+### 实施——安全软件 {#implementation-security-software}
 
-实现软件应用安全。
+实施与应用程序安全相关的软件。
 
-### 实施 — 系统架构安全概念 {#implementation-system-architecture-security-concept}
+### 实施——系统架构安全概念 {#implementation-system-architecture-security-concept}
 
-实现系统安全。
+实施系统安全措施。
 
-### 实施 — URL处理 {#implementation-url-handling}
+### 实施——URL 处理 {#implementation-url-handling}
 
-URL处理概念的实施。
+实施 URL 处理概念。
 
-### 实施 — 工作流 {#implementation-workflows}
+### 实施——工作流 {#implementation-workflows}
 
-实施设计的工作流。
+实施已设计的工作流。
 
 ### 实施概念 {#implementation-concept}
 
-实施概念为整个实施提供了指导原则。 它应考虑：
+实施概念为整个实施过程提供指导原则。应重点考虑：
 
 * 运营
 * 维护
 * 兼容性
-* 可重用性
+* 可复用性
 * 安全性
 * 可扩展性
 
-此概念还概述了解决方案中使用的框架、库和其他工件。
+该概念还应说明解决方案中所使用的框架、库及其他工件。
 
-### 通知Adobe支持人员上线计划 {#inform-adobe-support-about-the-go-live-schedule}
+### 通知 Adobe Support 上线计划 {#inform-adobe-support-about-the-go-live-schedule}
 
-联系Adobe支持以确保在上线期间可以启用任何所需的支持。
+联系 Adobe 支持，确保在上线过程中能够启用所需的支持。
 
 ### 初始体验设计 {#initial-experience-designs}
 
-体验设计的初步概念。
+体验设计的初步概念方案。
 
 ### 集成测试 {#integration-testing}
 
-对所有集成（包括内部集成和外部集成）进行测试并随后进行确认。
+对所有内部和外部集成进行测试并确认结果。
 
-此操作应自动执行并经常运行，以确保系统稳定性。
+测试应实现自动化并高频运行，以确保系统稳定性。
 
 ### 问题跟踪流程 {#issue-tracking-process}
 
-明确的流程记录所有遇到的问题，并跟踪正在进行的活动，以确保所有问题都得到处理。
+通过明确的流程记录所有遇到的问题，并跟踪正在进行的处理活动，以确保所有问题都得到解决。
 
-### 问题跟踪系统和流程 {#issue-tracking-system-and-processes}
+### 问题跟踪系统与流程 {#issue-tracking-system-and-processes}
 
-一个跟踪系统，连同所需的程序，记录遇到的所有问题，并跟踪正在进行的活动，以确保所有问题都得到处理。
+使用跟踪系统及相关流程来记录所有遇到的问题，并跟踪正在进行的活动，以确保所有问题都得到解决。
 
-所有项目利益攸关方都应有机会促进项目状况的透明度。
+所有项目利益相关者均应具备访问权限，以促进项目状态的透明化。
 
-示例包括Atlassian JIRA和HP Quality Center。
+示例包括 Atlassian JIRA 和 HP Quality Center。
 
-### 问题跟踪系统流程已设置和集成 {#issue-tracking-system-process-is-set-up-and-integrated}
+### 问题跟踪系统流程已建立并集成 {#issue-tracking-system-process-is-set-up-and-integrated}
 
-所选工具已完全集成并授予所有所需角色的访问权限。
+所选工具已完全集成，并向所有需要的角色授予了访问权限。
 
-### 传统系统 {#legacy-system}
+### 旧版系统 {#legacy-system}
 
-对于您的项目，旧系统是指将由新解决方案替换的现有技术、计算机系统或应用程序。
+在您的项目中，旧版系统指现有的技术、计算机系统或应用程序，这些将由新解决方案进行替换。
 
-应收集旧版系统的详细信息，以便您了解哪些组件可以停用、何时停用，以及对任何其他系统的影响。
+需要收集旧版系统的相关详细信息，以便明确哪些部分可以停用、何时停用，以及停用对其他系统可能产生的影响。
 
-### 要使用的开发工具列表 {#list-of-development-tools-to-be-used}
+### 拟使用的开发工具列表 {#list-of-development-tools-to-be-used}
 
-实施中使用的工具概述；这些工具应包括：
+列出在实施过程中将使用的工具；这些工具应包括：
 
-* 文档工具
+* 文档编制工具
 * 问题跟踪工具
 * 部署工具
-* 生成工具
+* 构建工具
 
-### 需要访问Adobe支持门户的用户列表 {#list-of-users-that-require-access-to-adobe-support-portal}
+### 需要访问 Adobe 支持门户的用户清单 {#list-of-users-that-require-access-to-adobe-support-portal}
 
-需要访问Adobe支持门户的所有用户和角色的列表。
+列出所有需要访问 Adobe 支持门户的用户及角色。
 
-该列表通常由解决方案设计师和/或客户IT人员组成。
+该列表通常包括解决方案架构师和/或客户的 IT 人员。
 
 ### 日志文件分析 {#log-file-analysis}
 
-分析以及由此产生的建议，定义必须记录哪些内容才能监控解决方案：
+通过分析并给出相应的建议，明确为了监控解决方案而需要记录的内容：
 
-* 要记录的活动
+* 需要记录的活动
 * 粒度级别
-* 为每个活动记录的信息
+* 每项活动需记录的信息
 
-### 测试并启用的维护任务(AEM特定) {#maintenance-tasks-aem-specific-tested-and-enabled}
+### 维护任务（AEM 专用）已测试并启用 {#maintenance-tasks-aem-specific-tested-and-enabled}
 
-测试并启用AEM维护任务，例如：
+测试并启用 AEM 维护任务，例如：
 
 * 压缩
 * 系统清理
-* 工作流清除
+* 工作流清理
 
 ### 迁移计划 {#migration-plan}
 
-记录迁移；包括
+记录与迁移相关的内容，其中包括：
 
 * 迁移时间线
-* 内容维护计划，根据迁移策略
+* 根据迁移策略制定的内容维护计划
 
 ### 迁移策略 {#migration-strategy}
 
-全面介绍映射到新解决方案的现有内容、内容架构和格式。 报告应涵盖：
+对现有内容、内容架构及格式进行完整描述，并映射到新解决方案中。它应包括：
 
-* 自动化迁移的技术详细信息（如果可能）
-* 在迁移后执行烟雾测试，以验证迁移的内容
+* 如可行，自动化迁移的技术细节
+* 迁移后需执行的冒烟测试，以验证迁移的内容
 
-它还应建议在迁移至新系统实际启用期间使内容保持最新（或尽可能保持最新）。 这可能意味着内容冻结、双重发布或维护Alpha系统。
+同时应提供建议，说明在迁移完成到新系统正式上线期间，如何保持内容最新（或尽可能保持最新）。这可能包括内容冻结、双重发布或维护一个 Alpha 系统。
 
-### 监控 — CPU {#monitoring-cpu}
+### 监控 - CPU {#monitoring-cpu}
 
-监视解决方案对系统CPU的使用：
+监控解决方案对系统 CPU 的使用情况：
 
 * 平均
 * 峰值
 
-### 监控 — 磁盘I/O {#monitoring-disk-i-o}
+### 监控 - 磁盘 I/O {#monitoring-disk-i-o}
 
 监控解决方案的磁盘输入和输出速率：
 
 * 平均
 * 峰值
 
-### 监控 — 磁盘空间 {#monitoring-disk-space}
+### 监控 - 磁盘空间 {#monitoring-disk-space}
 
-监控解决方案的磁盘空间使用情况：
+监控解决方案对磁盘空间的使用情况：
 
 * 平均
-* 随时间增长
+* 随时间的增长情况
 
-您应该通过以下方式监控使用：
+您应监控以下使用情况：
 
 * 存储库
 * 日志文件
 
-### 监控 — 外部系统 {#monitoring-external-system-s}
+### 监控 - 外部系统 {#monitoring-external-system-s}
 
 监控解决方案与外部系统之间的任何连接：
 
-* 流量率
+* 流量速率
 * 峰值
 * 稳定性
 
-### 监控 — 网络带宽 {#monitoring-network-bandwidth}
+### 监控 - 网络带宽 {#monitoring-network-bandwidth}
 
-监控解决方案的网络带宽使用情况：
+监控解决方案对网络带宽的使用情况：
 
-* 平均流量率
+* 平均流量速率
 * 峰值
 * 稳定性
 
-### 监控 — 请求 {#monitoring-requests}
+### 监控 - 请求 {#monitoring-requests}
 
-监控对解决方案发出的请求。
+监控对解决方案发起的请求。
 
-### 监控 — 安全点 {#monitoring-security-points}
+### 监控 - 安全点 {#monitoring-security-points}
 
-在定义的安全点进行监控。
+在已定义的安全点进行监控。
 
-### 监控 — 系统 {#monitoring-system}
+### 监控 - 系统 {#monitoring-system}
 
-监控整个系统；例如：
+监控整个系统，例如：
 
 * 可用性
 * 平均性能
 * 性能峰值
 * 警报
 
-### 监控 — 阈值和干预 {#monitoring-threshold-and-intervention}
+### 监控 - 阈值与干预 {#monitoring-threshold-and-intervention}
 
-监控解决方案的已定义阈值，并执行干预步骤以减轻负载。
+监控解决方案中定义的阈值，并在超出阈值时实施相应的干预措施以降低负载。
 
 ### 监控概念 {#monitoring-concept}
 
-要应用于解决方案的监控概念；包括：
+将以下监控概念应用于您的解决方案，其中包括：
 
-* AEM标准监控
-* 系统监测
-* 特定于客户的监控要求
+* AEM 标准监控
+* 系统监控
+* 客户特定的监控要求
 
-### 监控潜在弱点 {#monitoring-potential-weak-points}
+### 监控潜在的薄弱点 {#monitoring-potential-weak-points}
 
-应确定和定义可能会出现故障的特定点。 与这些任务相关的任何监控任务也应进行定义。
+需要识别并定义可能容易出现故障的特定环节。同时应定义与这些环节相关的监控任务。
 
-示例包括（其中包括）：
+示例包括（但不限于）：
 
 * 关键工作流
 * 事务处理
 * 集成点
 
-### 监控策略已通知系统工程师 {#monitoring-policy-communicated-to-system-engineer}
+### 监控策略已传达至系统工程师 {#monitoring-policy-communicated-to-system-engineer}
 
-确保系统工程师和操作人员知道并了解任何监控政策。
+确保系统工程师和运维人员知晓并理解所有监控策略。
 
-### 监控报告 — 结构已到位 {#monitoring-reports-structure-in-place}
+### 监控报告 - 建立结构 {#monitoring-reports-structure-in-place}
 
 定义：
 
-* 何时应生成监控报告
-* 他们应该被送到
+* 监控报告应在何时生成
+* 应递交给哪些人员
 
 ### 运行任务文档 {#operational-tasks-documentation}
 
-记录所有操作任务，并定义其频率。
+记录所有运行任务，并明确其执行频率。
 
-### 操作手册 {#operations-manual}
+### 运行手册 {#operations-manual}
 
-手动提供成功运行和维护解决方案所需的所有信息：
+该手册提供确保成功运行与维护解决方案所需的全部信息，包括：
 
-* 所有操作任务
+* 所有运行任务
 * 关键联系人
 * 部署计划
-* 部署前/部署后核对清单
-* 任何其他关键任务
+* 部署前/后检查清单
+* 其他任何关键任务
 
-还应该详细说明以下项目的实施概念：
+还应详细说明以下实施概念：
 
-* 满足性能KPI
-* 扩展解决方案以继续满足这些KPI
+* 满足性能 KPI
+* 扩展解决方案，以持续满足这些 KPI
 
 ### 已准备包 {#package-prepared}
 
-构建并交付的软件包可随时部署。
+构建并交付的软件包，可直接用于部署。
 
 ### 渗透测试 {#penetration-tests}
 
-渗透测试（非正式地称为笔测试）是对计算机系统的攻击，会寻找安全弱点，并可能获得访问计算机功能和数据的权限。
+渗透测试（通常称为 Pen Test）是一种针对计算机系统的攻击模拟，用于查找安全漏洞，并可能获取对计算机功能和数据的访问权限。
 
-### 渗透测试 — 通过 {#penetration-tests-passed}
+### 渗透测试 - 通过 {#penetration-tests-passed}
 
-所有必需的条件均已通过。
+满足所有必要的评估标准。
 
-### 渗透测试 — 结果 {#penetration-tests-results}
+### 渗透测试 - 结果 {#penetration-tests-results}
 
-为企业创建的报告，说明渗透测试结果。
+生成报告，为业务方说明渗透测试的结果。
 
-### 性能和可扩展性概念 {#performance-and-scalability-concept}
+### 性能与可扩展性概念 {#performance-and-scalability-concept}
 
-有关如何确保您的实施满足性能KPI以及如何扩展解决方案以使其继续满足这些KPI的概念性文档。
+概念性文档，其中阐述如何确保您的实施满足性能 KPI，以及如何扩展解决方案以持续满足这些 KPI。
 
-### 绩效基准 {#performance-benchmark}
+### 性能基准 {#performance-benchmark}
 
-性能基准用于定义性能测试、耐久性测试和监控。 它通过评估解决方案和系统硬件的性能特征来实现这一点。
+性能基准用于定义性能测试、耐久性测试和监控。其实现方式是评估解决方案与系统硬件的性能特性。
 
-### 性能KPI {#performance-kpis}
+### 性能 KPI {#performance-kpis}
 
-这些指标定义了衡量系统绩效所需的关键绩效指标(KPI)。 一些示例包括页面加载时间、服务器响应时间和数据库查询性能。
+用于定义衡量系统性能所需的关键绩效指标（KPI）。一些示例包括页面加载时间、服务器响应时间以及数据库查询性能。
 
-### 性能测试 — 报表 {#performance-tests-report}
+### 性能测试 - 报告 {#performance-tests-report}
 
-为业务创建的报告，详细说明性能测试的结果。
+为业务方生成的报告，其中详细说明性能测试结果。
 
-### 性能测试 — 结果匹配性能KPI {#performance-tests-results-match-performance-kpis}
+### 性能测试 - 结果符合性能 KPI {#performance-tests-results-match-performance-kpis}
 
-结果必须符合定义的KPI和性能期望。
+测试结果必须符合已定义的 KPI 和性能预期。
 
-### 基于角色的测试概念 {#persona-based-testing-concept}
+### 基于用户角色的测试概念 {#persona-based-testing-concept}
 
-基于角色的测试是基于体验设计中概述的不同角色的方法。 它还会测试帐户及其相关权限级别。
+基于用户角色的测试是基于体验设计中定义的不同用户角色开展测试的方法。同时它还会验证帐户及其对应的权限级别。
 
-这通常用于用户验收测试(UAT)。
+此方法常用于用户验收测试（UAT）。
 
-### POC已根据要求文档进行测试和验证 {#poc-tested-and-verified-against-requirement-documentation}
+### 按照需求文档对 POC 进行测试与验证 {#poc-tested-and-verified-against-requirement-documentation}
 
-概念验证(POC)根据要求进行评测，以确保两者保持一致。
+将概念验证（POC）与需求文档进行对照评估，以确保二者保持一致。
 
-### Post部署核对清单 {#post-deployment-checklist}
+### 部署后检查清单 {#post-deployment-checklist}
 
-一个核对清单，用于定义每次部署后要执行的一系列检查和任务。
+定义每次部署完成后需要执行的一系列检查与任务的清单。
 
-### 部署前核对清单 {#pre-deployment-checklist}
+### 部署前检查清单 {#pre-deployment-checklist}
 
-一个清单，用于定义在每次部署之前要执行的一系列检查和任务。
+定义每次部署完成前需要执行的一系列检查与任务的清单。
 
 ### 生产环境基线性能测试 {#production-environment-baseline-performance-tests}
 
-通常对AEM的标准安装运行基准测试。 然后，将此基准用作测试实施和硬件的基准。
+通常会在标准 AEM 安装上运行一次基线测试。然后，会将其用作基准，以对比实施方案与硬件的表现。
 
-### 生产环境就绪 {#production-environment-ready}
+### 生产环境已就绪 {#production-environment-ready}
 
-确认生产环境已准备就绪，并且已实现自动部署。
+确认生产环境可用，且已配置自动化部署流程。
 
-### 由业务利益相关者进行生产签名 {#production-sign-off-from-business-stakeholders}
+### 业务利益相关者签核生产环境 {#production-sign-off-from-business-stakeholders}
 
-在投入生产环境之前，必须授予生产注销(PSO)权限。 这是对将投入生产的版本以及任何已知问题进行审查的结果。 签核作为上线计划的一部分提供。
+在生产环境正式上线前，必须完成生产环境签核（PSO）。这是基于对即将进入生产的版本及其已知问题的审查结果。签核是上线计划的一部分。
 
-### 生产签发流程和策略 {#production-sign-off-process-and-policy}
+### 生产环境签核流程与策略 {#production-sign-off-process-and-policy}
 
-在将包移至生产环境之前获得生产签名所需的策略和流程。
+在将软件包迁入生产环境前，为获取生产环境签核所需遵循的策略与流程。
 
 ### 项目沟通计划 {#project-communication-plan}
 
-为业务利益相关者和项目团队定义沟通计划。
+为业务利益相关者与项目团队分别定义沟通计划。
 
-### 项目工作 — 最终估计 {#project-efforts-final-estimates}
+### 项目工作量 - 最终估算 {#project-efforts-final-estimates}
 
-[初始估计](#project-efforts-initial-estimates)是高级别的，并根据实施的高级别要求进行。
+[初始估算](#project-efforts-initial-estimates)基于实施阶段的高层需求，提供了整体性的参考。
 
-这些报告现在经过审核、改进和扩充，以提供最终估计。 每个适当的项目负责人都应提供估计值，包括项目管理、咨询、架构、测试和开发。
+目前，这些估算已进行审查、细化和扩展，以形成最终的估算结果。各相关项目负责人（包括项目管理、咨询、架构、测试和开发）需分别提交估算。
 
-这些估计用于资源和预算编制。
+这些估算将作为资源配置和预算编制的依据。
 
-### 项目工作 — 初步估计 {#project-efforts-initial-estimates}
+### 项目工作量 - 初始估算 {#project-efforts-initial-estimates}
 
-初步估计数数额较大，是按照执行工作所需的高额资源作出的。 这将在以后阶段进行审查和完善。
+初始估算基于实施阶段的高层需求，提供了整体性的参考。这些估算将在后续阶段进行审查和细化。
 
 ### 项目组织 {#project-organization}
 
-概述项目和团队的组织和报告结构的所需文档。
+所需文档用于说明项目及团队的组织和汇报结构。
 
-通常采用表格形式或包含图表，以直观地概述时间表和职责。 有许多工具可以帮助解决此问题。
+通常以图表形式呈现，或包含图表，以直观展示时间线和职责分工。有多种可用工具可协助完成此类工作。
 
 ### 项目范围文档 {#project-scope-document}
 
-项目范围文档要求您确定并记录以下列表：
+项目范围文档需明确并记录以下内容：
 
-* 特定项目目标
-* 交付成果
+* 具体的项目目标
+* 可交付结果
+* 特性
 * 功能
-* 函数
 * 任务
 * 截止日期
-* 计划工作
+* 计划工作量
 
-它涵盖了交付项目必须实现的目标以及必须完成的工作
+该文档定义了项目必须实现的目标，以及为交付项目所需完成的工作。
 
-### 定义的节奏内的项目状态报表 {#project-status-reports-within-a-defined-cadence}
+### 在既定节奏内提交的项目状态报告 {#project-status-reports-within-a-defined-cadence}
 
-按照商定的时间表和要求的格式交付项目状态报告。
+项目状态报告需按照商定的计划和要求的格式定期提交。
 
-### 概念验证(POC) {#proof-of-concept-poc}
+### 概念验证（POC） {#proof-of-concept-poc}
 
-概念验证(POC)为解决方案实施了有限范围的功能。
+概念验证（POC）会在解决方案中实施范围有限的功能。
 
-首先要论证方案的可行性，证明方案能够达到预定目的，同时要证明该方案具有继续使用的潜力。
+其目的在于展示解决方案的可行性，验证其是否能满足所需目标，并证明其具备投入使用的潜力。
 
-### 清除规则 {#purge-rules}
+### 清理规则 {#purge-rules}
 
-AEM维护多个版本的资源和内容。 清除规则的设计和配置可定期删除旧版本，以维护存储库的运行状况和大小。
+AEM 会保留资产和内容的多个版本。清理规则的设计和配置是为了定期移除较早的版本，以确保存储库的健康和规模可控。
 
-### 质量报表格式和节奏 {#quality-report-format-and-cadence}
+### 质量报告格式与提交节奏 {#quality-report-format-and-cadence}
 
-定义质量报告的所需内容和格式，以及必须提交的频率。
+定义质量报告所需的内容与格式，以及交付的频率。
 
-### 协调的发布 {#release-coordinated}
+### 版本发布协调 {#release-coordinated}
 
-项目经理负责协调将版本发布到生产环境所需的所有角色。
+项目经理需协调所有与发布生产环境相关的角色。
 
 ### 发行说明 {#release-notes}
 
-发行说明是此版本文档的一部分。 发行说明应涵盖：
+发行说明是版本发行文档的一部分。发行说明应涵盖以下内容：
 
 * 先决条件
 * 包含的要求
 * 已解决的问题
 * 版本中的已知问题
 
-它可与Runbook配合使用，以执行安装前和安装后步骤及检查。
+发行说明需与 Runbook 搭配使用，以执行安装前和安装后的步骤及检查。
 
 >[!NOTE]
 >
->有关示例，请参阅[AEM发行说明](/help/release-notes/release-notes.md)。
+>有关示例，请参阅 [AEM 发行说明](/help/release-notes/release-notes.md)。
 
 ### 在生产环境中运行的版本 {#release-running-on-production-environment}
 
-最终版本正在运行并在生产中处于活动状态。
+最终版本已在生产环境中运行并生效。
 
 ### 相关合同条款 {#relevant-contract-terms}
 
-突出显示与项目实施相关的具体合同条款；例如合同里程碑、发票期或工作人员要求。
+重点说明与项目实施相关的具体合同条款，例如合同里程碑、开票周期或人员要求。
 
-### 报告节奏 {#reporting-cadence}
+### 报告提交节奏 {#reporting-cadence}
 
-与客户一起，定义向其提交报表的频率。
+需与客户共同确定报告的交付频率。
 
 ### 存储库优化 {#repository-optimization}
 
-tar文件中的数据永远不会被覆盖，即使只更新现有数据，磁盘使用量也会增加。
+在 tar 文件中，数据从来不会被覆盖，因此即使只是更新现有数据，磁盘使用量也会不断增加。
 
-为了应对存储库不断增加的大小，已实施优化策略以删除过时数据。
+为应对存储库体积的持续膨胀，需要制定优化策略以移除过时数据。
 
-### 请求在Adobe支持门户中设置项目部分 {#request-for-setting-up-project-section-in-adobe-support-portal}
+### 在 Adobe 支持门户中设置项目部分的请求 {#request-for-setting-up-project-section-in-adobe-support-portal}
 
-在Adobe支持门户中设置项目的正式请求。
+提交正式请求，以在 Adobe 支持门户中设置您的项目。
 
-### 要求文档 {#requirements-documentation}
+### 需求文档 {#requirements-documentation}
 
-这一组文档涵盖了功能性要求和非功能性要求，以及估计的工作量。
+该文档集涵盖功能性和非功能性需求，以及相应的工作量估算。
 
-### 可用支持资源上线 {#resources-available-to-support-go-live}
+### 支持上线的可用资源 {#resources-available-to-support-go-live}
 
-确保上线所需的所有角色配备齐全且可用。
+需确保所有与上线相关的角色均已到位并可用。
 
 ### 风险评估 {#risk-assessment}
 
-风险评估由客户的IT部门或安全部门（或两者）运行。
+风险评估由客户的 IT 部门、安全部门，或两者共同执行。
 
-它评估项目的技术和业务风险。 该解决方案需要进行评估以确保符合安全策略。
+其目的是评估项目的技术和业务风险。该评估是解决方案必须执行的环节，以确保符合安全策略要求。
 
 ### 风险缓解计划 {#risk-mitigation-plan}
 
-风险缓解计划包括风险评估。 它们共同涵盖：
+风险缓解计划包含风险评估内容。二者共同涵盖：
 
 * 已识别的风险
-* 如果在实施中出现这些风险，可采用哪些可能的解决方案
+* 在实施过程中如发生风险时可行的应对方案
 
-### ROI期望 {#roi-expectations}
+### ROI 预期 {#roi-expectations}
 
-定义与解决方案相关的投资回报率(ROI)预期。
+定义与该解决方案相关的投资回报率（ROI）预期。
 
-该等准则旨在透过界定与估计投资有关之预期利益/溢利以经济方式反映解决方案之效率。
+其目的是通过界定相对于预计投入所期望的效益或收益，从经济角度衡量解决方案的效率。
 
-### 角色和权限概念 {#roles-and-rights-concept}
+### 角色和权利概念 {#roles-and-rights-concept}
 
-新应用程序所需的角色和访问权限相关概念的详细说明，包括高级概述：
+详细说明新应用程序所需的角色以及与访问权限相关的概念，并提供高层级概述，其中包括：
 
 * 角色
 * 组
 * 用户
 * 权限
-* 以及用户管理和资源调配
+* 以及用户管理与设置
 
-### 角色和权限概念符合安全准则 {#roles-and-rights-concept-meets-security-guidelines}
+### 角色与权限概念符合安全指南 {#roles-and-rights-concept-meets-security-guidelines}
 
-审查“角色”和“权限”概念，确保其符合安全策略。
+对角色与权限概念进行审查，以确保其符合安全策略要求。
 
 ### 角色和权限规范 {#roles-and-rights-specification}
 
-基于角色和权限概念的详细规范。
+基于角色与权限概念所制定的详细规范。
 
-### 安全架构Recommendations {#security-architecture-recommendations}
+### 安全架构建议 {#security-architecture-recommendations}
 
-Recommendations与软件和硬件架构的安全性相关。
+针对软件和硬件架构的安全性提出的相关建议。
 
-### 基于安全的编码准则 {#security-based-coding-guidelines}
+### 基于安全的编码指南 {#security-based-coding-guidelines}
 
-这些准则根据以下安全要求定义了应如何进行开发编码，例如：
+该规范根据安全要求，定义开发过程中应遵循的编码方式，其中包括：
 
-* 命名约定
+* 命名惯例
 * 库
-* 框架准则
-* API使用情况
+* 框架使用指南
+* API 使用情况
 
-### 安全核对清单 {#security-checklist}
+### 安全检查清单 {#security-checklist}
 
-项目特定的项目核对清单，基于安全概念以及确保解决方案合规性所需的任何其他策略。
+基于安全概念及其他附加策略制定的项目专属检查清单，用于确保解决方案的合规性。
 
-通常，这也包含在Runbook中的部署后步骤中。
+该清单通常也会作为 Runbook 中部署后的步骤之一。
 
 ### 安全概念 {#security-concept}
 
-定义并记录应用程序、架构和基础架构所需安全配置的详细信息。
+定义并记录应用程序、架构和基础架构所需的安全配置详细信息。
 
-### 安全概念草稿 {#security-concept-draft}
+### 安全概念草案 {#security-concept-draft}
 
-概要介绍以下项目的安全设置：
+涵盖以下安全设置的高级概述：
 
 * 应用程序
-* 体系结构
-* 基础结构
+* 架构
+* 基础架构
 
-### 列出和评估的安全问题 {#security-issues-listed-and-assessed}
+### 安全问题列举与评估 {#security-issues-listed-and-assessed}
 
-列出并评估解决方案的所有安全问题；包括工作量估计。
+对解决方案中的所有安全问题进行列举和评估，并包含相应的工作量估算。
 
-### 从业务利益相关者处签发安全性签名 {#security-sign-off-from-business-stakeholders}
+### 业务利益相关者安全签核 {#security-sign-off-from-business-stakeholders}
 
-从利益相关者处签署，以确保安全实施符合政策和期望。
+由利益相关者进行签核，以确保安全实施符合相关策略和预期。
 
 ### 设置支持流程 {#set-up-support-processes}
 
-设置所需的支持流程。
+设置并落实所需的支持流程。
 
-### 第三方系统的SLA {#slas-for-third-party-systems}
+### 第三方系统的 SLA {#slas-for-third-party-systems}
 
-确保服务级别协议(SLA)可用，并传达给开发和运营团队以在实施和支持期间使用。
+确保服务级别协议（SLA）可用，并已传达给开发和运维团队，以便在实施和支持过程中使用。
 
-### 烟雾测试概念 {#smoke-test-concept}
+### 冒烟测试概念 {#smoke-test-concept}
 
-烟雾测试包括一组已定义的步骤，这些步骤测试解决方案的关键功能，以确保解决方案的基本操作和功能。
+冒烟测试由一系列预定义步骤组成，用于验证解决方案的主要功能，以确保其基本运行和功能正常。
 
-安装或部署后，可在任何环境中执行它们。
+在任意环境中完成安装或部署后，均需执行冒烟测试。
 
-### 为验证系统而执行的冒烟测试 {#smoke-tests-executed-for-system-validation}
+### 为系统验证执行冒烟测试 {#smoke-tests-executed-for-system-validation}
 
-应在所有系统上运行烟雾测试，以确保解决方案的基本功能在安装到任何环境中或部署到任何环境中时都能够正确运行。
+在所有系统上均应运行冒烟测试，以确保解决方案在安装或部署到任何环境时，其基本功能能够正常运行。
 
-### 软件体系结构策略 {#software-architecture-strategy}
+### 软件架构策略 {#software-architecture-strategy}
 
-软件体系结构的高级战略；包括服务、servlet、框架和其他实施决策。
+软件架构的高层策略，包括服务、Servlet、框架及其他实施决策。
 
-### 解决方案审查委员会已成立，会议节奏已设定 {#solution-review-board-established-and-meeting-cadence-set}
+### 解决方案评审委员会的建立与会议节奏设定 {#solution-review-board-established-and-meeting-cadence-set}
 
-解决方案审查委员会由客户利益相关者组成。
+解决方案评审委员会由客户利益相关者组成。
 
-董事会定期举行会议，以持续检讨现行规定范围之要求及相关规格。 目的是确保与成功定义和标准保持一致，并为制定要求提供投入。
+委员会定期召开会议，以持续审查当前范围内的需求及相关规范。其目的是确保与成功的定义和标准保持一致，并为需求的制定提供反馈。
 
-### 解决方案Runbook {#solution-runbook}
+### 解决方案 Runbook {#solution-runbook}
 
-解决方案的安装说明，以及安装时要执行的基本操作任务。
+解决方案的安装说明，以及安装后需执行的基本操作任务。
 
-### 解决方案签核和接受流程 {#solution-sign-off-and-acceptance-process}
+### 解决方案签核与验收流程 {#solution-sign-off-and-acceptance-process}
 
-签核和接受流程概述了在解决方案发布到生产环境中之前必须满足的标准。
+签核与验收流程明确了在将解决方案发布至生产环境前必须满足的标准。
 
-它还可以用作合同里程碑。
+该流程也可作为合同中的一个里程碑。
 
 ### 特殊功能概念 {#special-functionality-concept}
 
-任何在AEM平台上被视为超出正常开发范围的特殊功能的初始概念。
+针对任何超出 AEM 平台常规开发范围的特殊功能所提出的初步概念。
 
 ### 特殊功能规范 {#special-functionality-specification}
 
-任何被认为不属于AEM平台正常开发范围的特殊功能的详细信息。
+详细说明任何超出 AEM 平台常规开发范围的特殊功能。
 
-### 规范准则 {#specification-guidelines}
+### 规范的编写指南 {#specification-guidelines}
 
-客户提供的关于应如何进行规范的任何准则。
+客户就规范编写方式提出的任何指导原则。
 
-### 已定义和传达规格审查和批准流程 {#specification-review-and-approval-process-defined-and-communicated}
+### 规范审查与审批流程的制定与传达 {#specification-review-and-approval-process-defined-and-communicated}
 
-应制定明确的流程，让客户签核规格。 此过程确保要求范围的明确性和稳定性。
+需建立清晰的流程，供客户对规范进行签核。该流程可确保需求范围的明确性与确定性。
 
-### 为AEM管理员培训选定的员工 {#staff-selected-for-aem-administrator-training}
+### 选派参加 AEM 管理员培训的人员 {#staff-selected-for-aem-administrator-training}
 
-需要培训以便管理解决方案的内部员工。
+需接受培训以便能够管理该解决方案的内部人员。
 
-### 为作者和最终用户培训选定的员工 {#staff-selected-for-author-and-end-user-training}
+### 选派参加作者与终端用户培训的人员 {#staff-selected-for-author-and-end-user-training}
 
-需要培训以便编写解决方案的内部员工。
+需接受培训以便能够在该解决方案上进行创作的内部人员。
 
 ### 利益相关者 {#stakeholders}
 
-利益相关者是对该项目有重大兴趣的关键人员和/或角色。 有些国家将为项目预算捐款。
+利益相关者是对项目具有重大利益的关键人物和/或角色。其中一部分可能会为项目预算做出贡献。
 
-利益相关者可以是内部和/或外部的。
+利益相关者可以是内部人员和/或外部人员。
 
-### 利益相关者了解成功定义和标准 {#stakeholders-are-aware-of-success-definitions-and-criteria}
+### 利益相关者知晓成功的定义与标准 {#stakeholders-are-aware-of-success-definitions-and-criteria}
 
-确认实际实施团队之外的所有利益相关者都知道：
+确认所有实际实施团队之外的利益相关者均已了解：
 
 * 成功的定义
-* 成功标准
+* 成功的评判标准
 
-### 利益相关者了解项目和期望 {#stakeholders-understand-project-and-expectations}
+### 利益相关者理解项目与期望 {#stakeholders-understand-project-and-expectations}
 
-确认实际实施团队之外的所有利益相关者与项目团队内部和客户内部的整体项目和期望是一致的。
+需确认所有实际实施团队之外的利益相关者与整体项目及相关期望保持一致，包括项目团队内部及客户层面的期望。
 
-### 状态报表格式定义 {#status-report-format-definition}
+### 状态报告格式定义 {#status-report-format-definition}
 
-状态报告是沟通的重要工具。 格式应与客户的任何报告要求保持一致。
+状态报告是沟通的关键工具。其格式应与客户的报告要求保持一致。
 
 ### 成功标准和定义 {#success-criteria-and-definition}
 
-客户、项目发起人和项目经理或顾问应指定：
+客户、项目赞助者以及项目经理或顾问应明确：
 
-* 什么决定了项目的成功结果？
-* 达到成功定义所需的特定标准。
+* 什么定义了项目成功的结果？
+* 满足该成功定义所需的具体标准
 
-它们用于确保满足成功标准：
+这些标准用于确保成功条件得到满足，主要体现在：
 
-* 作为KPI的基础。
-* 在整个实施过程中做出决策时。
+* 作为 KPI 的依据。
+* 在整个实施过程中作为决策参考。
 
-### 支持验证报告的问题 {#support-in-validation-of-reported-issues}
+### 对所报告的问题进行验证时提供支持 {#support-in-validation-of-reported-issues}
 
-Quality Lead的部分职责是确保在测试时具有支持任何用户的资源。 例如，在测试时帮助用户、在报告问题时帮助用户，以及帮助针对测试环境验证问题。
+质量负责人的一项职责是确保在测试过程中有资源可为任何用户提供支持。例如，在用户进行测试、报告问题时给予协助，并在测试环境中帮助验证相关问题。
 
-### 支持流程和访问Adobe支持门户 {#support-processes-and-access-to-adobe-support-portal}
+### 支持流程以及对 Adobe 支持门户的访问 {#support-processes-and-access-to-adobe-support-portal}
 
-访问Adobe支持门户对于提交有关实施期间可能出现的任何基于产品的问题的票证至关重要。
+访问 Adobe 支持门户对于提交实施过程中可能出现的产品相关问题的工单至关重要。
 
-应将访问权限分配给团队的关键成员。
+应为团队的关键成员分配访问权限。
 
 ### 系统架构定义 {#system-architecture-definition}
 
-针对解决方案的所有环境的初始架构建议和定义。
+对解决方案各个环境的架构进行初步方案拟定与定义。
 
 ### 系统架构文档 {#system-architecture-documentation}
 
-详细说明系统架构的文档；包括接口、网络位置和所有环境的集成以及其他信息。
+详细记录系统架构的文档，其中包括接口、网络位置、各环境的集成方式等信息。
 
 ### 系统架构安全概念 {#system-architecture-security-concept}
 
-有关如何使系统体系结构符合任何安全策略的概要性说明。 这可能包括：
+对如何使系统架构符合相关安全策略进行的高层概述。其内容可包括：
 
 * 防火墙和防火墙规则
 * 安全区域
-* 本地和常规流量管理器
-* Web服务器
+* 本地与全局流量管理器
+* Web 服务器
 * 代理和反向代理
 
-### 已识别和验证的系统风险因素 {#system-risk-factors-identified-and-verified}
+### 系统风险因素识别与验证 {#system-risk-factors-identified-and-verified}
 
-在风险评估（或其他审查）中发现的任何风险因素被确定和评估：
+对在风险评估（或其他审查）中发现的任何风险因素进行识别和评估：
 
-* 每一种风险所隐含的风险水平
-* 以及对实施进行必要更改所需的估计工作量。
+* 每项风险所涉及的风险等级
+* 以及为应对风险而需对实施进行的修改及其预估工作量。
 
-### 团队了解成功定义和标准 {#team-is-aware-of-success-definitions-and-criteria}
+### 团队知晓成功的定义与标准 {#team-is-aware-of-success-definitions-and-criteria}
 
-确认整个团队都了解成功定义和标准。
+需确认整个团队已了解成功的定义与标准。
 
-### 团队了解通信计划 {#team-is-aware-of-the-communication-plan}
+### 团队知晓沟通计划 {#team-is-aware-of-the-communication-plan}
 
-确认团队的所有成员都知道应该与客户沟通的人员，以及沟通方式和时间的详细信息。
+需确认所有团队成员已知晓由谁与客户进行沟通，以及沟通的方式和时间安排。
 
-### 团队了解项目和期望 {#team-understands-project-and-expectations}
+### 团队理解项目及期望 {#team-understands-project-and-expectations}
 
-与项目团队和客户内部的整体项目和期望保持一致。
+确保团队对整体项目及相关期望达成一致，包括项目团队内部及客户层面。
 
 ### 技术要求 {#technical-requirements}
 
-这些要求特定于支持该解决方案的服务的技术实施。
+这些需求专门针对支持该解决方案的服务在技术实施层面的要求。
 
 ### 技术风险因素已验证 {#technical-risk-factors-verified}
 
-识别并验证潜在的技术风险。 技术风险可能包括：
+识别并验证潜在的技术风险。技术风险可能包括：
 
-* 跨站点脚本
-* 面向最终用户的输入字段
-* 基础结构
-* 技术时代
+* 跨网站脚本
+* 面向终端用户的输入字段
+* 基础架构
+* 技术老化
 * 集成数量
-* 和依赖关系
+* 以及依赖关系
 
 ### 技术规范 {#technical-specification}
 
-技术规范包括（除其他信息外）：
+技术规范涵盖（除其他信息外）：
 
-* 界面
+* 接口
 * 配置
-* API
-* 支持解决方案要求的服务
+* API 
+* 支持解决方案需求的服务
 
 ### 模板规范 {#template-specification}
 
-所需模板的规范。 这些资源应涵盖详细信息，包括parsys、Blueprint和继承映射等。
+所需模板的规范说明。内容应涵盖包括 parsys、Blueprint 和继承映射等在内的详细信息。
 
-这些规范基于业务要求和体验要求。
+这些规范基于商业需求和体验需求制定。
 
-### 测试用例 {#test-cases}
+### 测试案例 {#test-cases}
 
-测试案例具体说明了执行解决方案功能测试所需的详细步骤。
+测试案例详细说明了执行解决方案功能测试所需的具体步骤。
 
 ### 测试内容 {#test-content}
 
-测试内容应尽可能接近生产内容。 它的选择范围必须足够广，以允许测试所有场景。
+测试内容应尽可能接近生产环境中的实际内容。其范围必须足够广泛，以覆盖所有测试场景。
 
 ### 测试环境就绪 {#test-environment-ready}
 
-确保测试环境已准备就绪，并且已实施自动部署，以确保所有发行候选代码都是最新的以供测试。
+确保测试环境已准备完毕，并配置了自动化部署机制，以保证所有候选发布代码均为最新版本，以便于测试。
 
 ### 测试报告 {#test-reports}
 
-详细说明测试结果的报告；包括：
+报告应详细说明测试结果，包括：
 
-* 产生的缺陷
-* 执行的测试用例的状态
+* 提出的缺陷
+* 已执行测试用例的状态
 * 其他与质量相关的主题
 
-应当指出：
+需要注意的是：
 
-* 任何测试团队都应被允许保持中立并交付测试结果。
-* 项目经理有责任评估结果的任何影响并决定适当的行动。
+* 任何测试团队应保持中立，客观提交测试结果。
+* 项目经理有责任评估这些结果的影响，并决定相应的后续措施。
 
 ### 测试套件 {#test-suite}
 
-选择自动化套件和工具。 这些组件用于自动化测试，包括用例的测试。
+选择自动化测试套件和相关工具。这些工具用于实现测试自动化，包括用例测试。
 
-### 已选择测试工具套件 {#test-tooling-suite-selected}
+### 测试工具套件已选定 {#test-tooling-suite-selected}
 
-为用例自动化和其他测试执行任务选择的自动化套件和工具。
+已选定的自动化测试套件和工具将用于用例自动化及其他测试执行任务。
 
 ### 测试概念 {#testing-concept}
 
-测试概念是项目测试的高级概述；包括QA、UAT、性能、安全性和集成测试。
+测试概念是针对项目的高层次测试概要，其中涵盖质量保证（QA）、用户验收测试（UAT）、性能测试、安全测试和集成测试。
 
 ### 测试计划 {#testing-plans}
 
-这些计划更详细地概述了每个开发阶段的测试执行情况，并基于[测试策略](#testing-strategy)。
+测试计划更详细地说明了各开发阶段的测试执行方式，并基于[测试策略](#testing-strategy)制定。
 
 ### 测试范围 {#testing-scope}
 
-这些要求特定于支持该解决方案的服务的技术实施。
+这些需求专门针对支持该解决方案的服务在技术实施层面的要求。
 
 ### 测试策略 {#testing-strategy}
 
-测试策略概述了质量保证和用户验收测试的高级策略。 这包括时间线、报告节奏和执行情况。
+测试策略概述了质量保证和用户验收测试的总体策略。这包括时间安排、报告节奏以及执行方式。
 
 ### 第三方集成概念 {#third-party-integration-concept}
 
-与第三方系统集成的架构和系统级概念。
+用于与第三方系统集成的架构和系统层级概念。
 
 ### 第三方集成规范 {#third-party-integration-specification}
 
-对第三方系统的受支持功能和集成的需求（包括功能性和非功能性）的详细信息。
+详细说明有关支持的功能以及第三方系统集成的需求，其中包括功能性需求和非功能性需求。
 
 ### 第三方安全概念 {#third-party-security-concept}
 
-用于确保任何第三方集成安全的概念。 必须符合适当的安全策略。
+确保任何第三方集成安全性的整体方案。必须符合相关安全策略的要求。
 
 ### 用于集成的第三方系统 {#third-party-system-for-integration}
 
-确保所有第三方系统都可提供，并附带相应的文档用于集成实施。
+确保所有第三方系统均可用，并具备相应的文档，以支持集成实施。
 
-### 已启用第三方系统访问 {#third-party-systems-access-enabled}
+### 第三方系统访问已启用 {#third-party-systems-access-enabled}
 
-向第三方系统使用的各个角色授予所需的访问权限。
+为使用第三方系统的相关角色授予所需的访问权限。
 
 ### 第三方测试概念 {#third-party-testing-concept}
 
-定义：
+定义以下内容：
 
-* 测试集成的用例
+* 集成测试的用例
 * 与任何第三方应用程序相关的功能
 
 ### 阈值定义 {#threshold-definition}
 
-定义系统中监视点的关键值。
+定义系统监控点的关键数值，例如：
 
 例如：
 
-* 未发送日志的千字节数(KB)会在主体服务器实例上生成警告
-* 在主服务器上生成警告之前允许的每个事务的平均延迟的毫秒数
+* 主服务器实例上未发送日志达到多少千字节（KB）时触发警告
+* 每笔事务的平均延迟达到多少毫秒时，主服务器会触发警告
 
-### 时间轴和里程碑 {#timeline-and-milestones}
+### 时间线和里程碑 {#timeline-and-milestones}
 
-这应定义用于以下目的的项目时间表和合同里程碑：
+应定义项目的时间线和合同约定的里程碑，以用于：
 
-* 开票。
-* 与成功定义、成功标准和KPI保持一致。
+* 开具发票。
+* 与成功定义、成功标准和关键绩效指标（KPI）保持一致。
 
-### 项目工作总量 {#total-project-efforts}
+### 项目总工作量 {#total-project-efforts}
 
-应合并项目每个潜在客户的所有工作估计；包括开销、开发、系统工程、建筑和测试工作。
+应汇总项目中各负责人提供的所有工作量预估，包括管理开销、开发、系统工程、架构以及测试工作量。
 
-如果协议中列入了支助级别，则还应包括支助和行动工作。
+如果协议中包含支持级别，还应将支持和运维工作量计入其中。
 
 ### 培训材料 {#training-materials}
 
-培训课程中使用的材料。 这些资料应专门针对解决方案创建，并设计用于用户指南。
+用于培训课程的材料。这些材料应针对该解决方案专门编写，并与用户指南配合使用。
 
-### 了解项目范围和期望 {#understands-scope-of-project-and-expectations}
+### 理解项目范围与期望 {#understands-scope-of-project-and-expectations}
 
-相应的角色应确认他们完全理解：
+相关角色应确认其充分理解：
 
 * 项目的范围
 * 所有客户期望
-* 这是项目中每个角色每个阶段所做所有决策的基础
+* 这是项目中每个角色在各个阶段做出所有决策的依据
 
-### URL处理概念 {#url-handling-concept}
+### URL 处理概念 {#url-handling-concept}
 
-您的URL处理概念应涵盖特定于AEM的URL功能，包括：
+URL 处理概念应涵盖 AEM 特定的 URL 功能，包括：
 
-* 虚URL
+* 虚名 URL
 * 链接外部化
 * 错误页面
 * 映射
 
-这一概念还应包括：
+该概念还应涵盖：
 
 * 任何重写规则
-* Web服务器上的虚拟主机
-* SEO注意事项，如robots.txt
+* Web 服务器上的虚拟主机
+* SEO 考虑因素，例如 robots.txt
 * 网站地图
 
 ### 用例 {#use-cases}
 
-用例是实现目标所需的操作或事件步骤列表。 通常，它们定义角色和解决方案之间的交互。 角色可以是用户或外部系统。
+用例是实现目标所需的一系列操作或事件步骤。通常用于定义某个角色与解决方案之间的交互。该角色可以是用户，也可以是外部系统。
 
-### 用例转换为测试场景 {#use-cases-converted-into-test-scenarios}
+### 用例转化为测试场景 {#use-cases-converted-into-test-scenarios}
 
-测试方案基于技术和业务用例。 它们用于测试解决方案行为是否按预期运行。
+测试场景基于技术和业务用例。它们用于验证解决方案的行为是否符合预期。
 
 ### 用户指南 {#user-guides}
 
-《用户指南》为解决方案的用户提供信息和帮助：
+用户指南为解决方案的用户提供信息和帮助，其中包括：
 
 * 作者
 * 高级用户
 * 管理员
 
-### 已验证的预算计划 {#validated-budget-plan}
+### 经验证的预算计划 {#validated-budget-plan}
 
-预算计划必须得到所有利益攸关方的审查和验证。 他们必须检查发票开具、金额以及预算报告的方法/时间等详细信息。
+预算计划必须经过所有利益相关者的审查和确认。他们需核查的细节包括开票、金额，以及预算报告的方法和时间安排。
 
 ### 白盒测试结果 {#white-box-test-results}
 
-白盒测试是一种对应用程序的内部结构或工作状态进行测试的方法，而不是对其功能进行测试的方法。 白盒测试可以应用在单元、集成、系统等层级的软件测试过程。
+白盒测试是一种测试应用程序内部结构或运行机制的方法，而不是其功能。白盒测试可应用于软件测试过程中的单元、集成和系统级别。
 
 ### 工作流规范 {#workflow-specifications}
 
-基于工作流概念，这些规范应详细定义创建完整工作流的步骤。
+基于工作流概念，这些规范应详细定义构建完整工作流的步骤。
 
-每个工作流的规范应包括（至少）：
+每个工作流的规范至少应包括：
 
 * 用例
 * 角色
@@ -1412,7 +1412,7 @@ Quality Lead的部分职责是确保在测试时具有支持任何用户的资�
 
 ### 工作流概念 {#workflows-concept}
 
-工作流可让您自动执行AEM活动。 工作流概念概述了：
+工作流可帮助实现 AEM 活动的自动化。工作流概念应概述：
 
 * 需要自动化的流程
-* AEM中将受影响的服务和角色
+* 受影响的 AEM 服务和角色
