@@ -107,7 +107,7 @@ AEM 在虚拟化环境中运行良好，但其中某些因素（如 CPU 或 I/O�
 估算所需集群节点数量需基于具体 Web 项目的基本需求和特定用例：
 
 * 从故障安全性的角度，需要针对所有环境评估系统故障的关键程度，以及根据集群节点恢复所需时间来确定故障补偿时间。
-* 从可扩展性的角度，写入操作的数量基本上是最重要的考量因素。对于仅涉及读取操作的请求，可以通过负载均衡来分担系统访问压力；详情请参阅 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
+* 从可扩展性的角度，写入操作的数量基本上是最重要的考量因素。对于仅涉及读取操作的请求，可以通过负载均衡来分担系统访问压力；详情请参阅 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)。
 
 ### 硬件建议 {#hardware-recommendations}
 

@@ -33,7 +33,7 @@ ht-degree: 100%
 请考虑您正在使用的 AEM 功能，以及它们对设计的影响。例如：
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)
 * [Assets](/help/assets/assets.md)
 * [标记](/help/sites-administering/tags.md)
 * [多站点管理和翻译](/help/sites-administering/msm-and-translation.md)
