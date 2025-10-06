@@ -48,7 +48,7 @@ ht-degree: 3%
 1. 使用[!UICONTROL 包管理器]安装包。 要了解如何安装包，请参阅[包管理器文档](/help/sites-administering/package-manager.md)。
 1. 在`wf-workfront-users`用户组中创建[!DNL Experience Manager]并将权限`jcr:all`分配给`/content/dam`。
 1. 向&#x200B;**`ntFolderDamLucene(/oak:index/ntFolderDamLucene)`**&#x200B;的开箱即用索引定义添加自定义属性。 执行以下步骤：
-   * 将名为&#x200B;**`nt:unstructured`**&#x200B;的&#x200B;**`wfReferenceNumber`**属性添加到：
+   * 将名为&#x200B;**`nt:unstructured`**&#x200B;的&#x200B;**`wfReferenceNumber`**&#x200B;属性添加到：
      `/oak:index/ntFolderDamLucene/indexRules/nt:folder/properties/wfReferenceNumber`。
    * 通过将重新索引标志翻转到`index /oak:index/ntFolderDamLucene`来重新索引`true`。
 
