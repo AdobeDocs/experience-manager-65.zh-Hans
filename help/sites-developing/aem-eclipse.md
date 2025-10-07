@@ -9,22 +9,22 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 172b8667b1ff0bd533a035b21c316e2e66721bf8
 workflow-type: tm+mt
-source-wordcount: '746'
-ht-degree: 2%
+source-wordcount: '747'
+ht-degree: 4%
 
 ---
 
 # 适用于 Eclipse 的 AEM 开发人员工具{#aem-developer-tools-for-eclipse}
 
-![适用于Eclipse的AEM Developer Tools的圆形图像基元。](do-not-localize/chlimage_1-9.png)
+适用于Eclipse的AEM Developer Tools的![圆形图像基元。](do-not-localize/chlimage_1-9.png)
 
 ## 概述 {#overview}
 
-“AEM Developer Tools”是一个基于Apache许可证2下发布的适用于Apache Sling[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html)的Eclipse插件的Eclipse插件。
+“AEM Developer Tools”是一个基于Apache许可证2下发布的适用于Apache Sling[的](https://sling.apache.org/documentation/development/ide-tooling.html)Eclipse插件的Eclipse插件。
 
-它提供了几项使AEM开发更轻松的功能：
+它提供了多项功能，可简化AEM的开发：
 
 * 通过Eclipse Server Connector与AEM实例无缝集成。
 * 内容和OSGI捆绑包的同步。
@@ -36,10 +36,10 @@ ht-degree: 2%
 
 在使用AEM Developer Tools之前，请执行以下操作：
 
-* 下载并安装适用于Java™ EE开发人员的[Eclipse IDE](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers)。 AEM Developer Tools当前支持Eclipse Kepler或更高版本
+* 下载并安装适用于Java™ EE开发人员的[Eclipse IDE](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers)。 AEM开发人员工具当前支持Eclipse Kepler或更高版本
 
 * 可与AEM版本5.6.1或更高版本一起使用
-* 按照[Eclipse常见问题解答](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)中的说明，通过编辑`eclipse.ini`配置文件来配置Eclipse安装，确保您至少有1 GB的栈内存。
+* 按照`eclipse.ini`Eclipse常见问题解答[中的说明，通过编辑](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)配置文件来配置Eclipse安装，确保您至少有1 GB的栈内存。
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ ht-degree: 2%
 
 在满足上述[要求](#requirements)后，您可以按如下方式安装插件：
 
-1. 浏览&#x200B;**AEM Developer Tools**&#x200B;网站： `https://eclipse.adobe.com/aem/dev-tools/`。
+1. 打开[AEM开发人员工具网站](https://eclipse.adobe.com/)。
 
 1. 复制&#x200B;**安装链接**。
 
@@ -71,11 +71,11 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->查看从AEM[&#128279;](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)下载包时如何在Eclipse中使用包。
+>查看从AEM[下载包时如何在Eclipse中使用包](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)。
 
 ## AEM视角 {#the-aem-perspective}
 
-AEM Development Tools for Eclipse附带了一个透视，您可以通过该透视图完全控制AEM项目和实例。
+适用于Eclipse的AEM开发工具附带了一个透视，您可以通过该透视图完全控制AEM项目和实例。
 
 ![chlimage_1-2](assets/chlimage_1-2a.jpeg)
 
@@ -107,7 +107,7 @@ AEM Development Tools for Eclipse附带了一个透视，您可以通过该透�
 
 1. 现在，配置Eclipse可以连接的AEM服务器。
 
-   要使用Debugger功能，请确保在调试模式下启动AEM，这可以通过在命令行中添加以下内容来实现：
+   要使用Debugger功能，请确保在调试模式下启动AEM，可以通过向命令行添加以下内容来实现该模式：
 
    ```
        -nofork -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=10123
@@ -134,7 +134,7 @@ AEM Development Tools for Eclipse附带了一个透视，您可以通过该透�
 
 ### 在JSP文件中启用标记库自动完成 {#enabling-tag-library-autocompletion-in-jsp-files}
 
-标记库自动完成可开箱即用，前提是将适当的依赖关系添加到项目中。 使用AEM Uber Jar时，存在一个已知问题，该问题不包括所需的tld和TagExtraInfo文件。
+标记库自动完成可开箱即用，前提是将适当的依赖关系添加到项目中。 使用AEM Uber Jar时存在一个已知问题，该问题不包括所需的tld和TagExtraInfo文件。
 
 要解决此问题，请确保org.apache.sling.scripting.jsp.taglib工件位于AEM Uber Jar之前的类路径中。 对于Maven项目，请将以下依赖项放在pom.xml中的Uber Jar之前。
 
@@ -146,7 +146,7 @@ AEM Development Tools for Eclipse附带了一个透视，您可以通过该透�
 </dependency>
 ```
 
-请确保为您的部署AEM添加正确的版本。
+确保为AEM的部署添加正确的版本。
 
 ## 更多信息 {#more-information}
 
