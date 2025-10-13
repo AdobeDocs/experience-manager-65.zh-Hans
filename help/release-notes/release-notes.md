@@ -7,9 +7,9 @@ feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
 source-git-commit: f018681e9202a934be2cfa8d426a32014c5ff66f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6713'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 98%
 
 | 产品 | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| 版本 | 6.5.23.0，适用于GRANITE-61551 <!-- UPDATE FOR EACH NEW RELEASE -->的修补程序 |
+| 版本 | 6.5.23.0，适用于 GRANITE-61551 的热修复补丁<!-- UPDATE FOR EACH NEW RELEASE --> |
 | 类型 | 服务包发行 |
 | 日期 | 2025 年 9 月 9 日 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | 下载 URL | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcq-6.5.0-hotfix-GRANITE-61551-SP23-1.2.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
@@ -78,7 +78,7 @@ ht-degree: 98%
 
 * FORMS-20533、FORMS-20532：AEM Forms 现已将 Struts 版本从 2.5.33 升级至 6.x。此项支持是通过[热修复](/help/release-notes/aem-forms-hotfix.md)添加的，您可以[下载并安装](/help/release-notes/aem-forms-hotfix.md)该修补程序，以获得对最新 Struts 版本的支持。
 
-* **LC-3922769**：部分 AEM Forms 功能现在需要 OpenSSL 3 才能正常运行。系统必须已安装OpenSSL 3以及库`libcrypto.so.3`和`libssl.so.3`。 由于安全更新仅在版本3.0.14及更高版本中可用，并且SafeLogic支持将于2025年2月结束，因此BSAFE已被删除，并且现在使用OpenSSL 3实现安全合规性。  有关平台兼容性和详细要求方面的信息，请参阅 [AEM Forms on JEE 支持的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)和[技术要求](/help/sites-deploying/technical-requirements.md)。
+* **LC-3922769**：部分 AEM Forms 功能现在需要 OpenSSL 3 才能正常运行。系统必须安装 OpenSSL 3，以及 `libcrypto.so.3` 和 `libssl.so.3` 库。由于安全更新仅适用于 3.0.14 及以上版本，且 SafeLogic 支持已于 2025 年 2 月终止，现已移除 BSAFE，转而采用 OpenSSL 3 满足安全合规要求。有关平台兼容性和详细要求方面的信息，请参阅 [AEM Forms on JEE 支持的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)和[技术要求](/help/sites-deploying/technical-requirements.md)。
 
 
   **验证 OpenSSL 3 的安装：**
@@ -233,11 +233,11 @@ ht-degree: 98%
 
 ### [!DNL Assets]{#assets-6523}
 
-* 在 [!DNL AEM] 本地部署版（6.5.22.0）导航页面中，选择![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;后，进入&#x200B;**[!UICONTROL &#x200B;搜索 Adobe Stock &#x200B;]**&#x200B;文件夹并选择一张 Stock 图片后，会出现以下问题：
+* 在 [!DNL AEM] 本地部署版（6.5.22.0）导航页面中，选择![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**后，进入**[!UICONTROL &#x200B;搜索 Adobe Stock ]**文件夹并选择一张 Stock 图片后，会出现以下问题：
    * 点击&#x200B;**[!UICONTROL 许可并保存]**&#x200B;时下拉菜单为空，所选 Stock 图像无法获得许可和保存。
    * 选择 Stock 图像或重新输入 Stock 页面 URL 时，会被重定向到 [!DNL AEM] 主页，导致无法访问 Adobe Stock 图像。（ASSETS-48687）
 * 在 [!DNL AEM] 本地部署版（6.5.22.0）导航页面中，如果文件夹名称中包含 `/`，则在管理文件夹时会出现问题。（ASSETS-46740）
-* 在 [!DNL AEM] 6.5 中，从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**&#x200B;视图进入资产详情页时，由于内存占用过高，页面无法加载。（ASSETS-46738）
+* 在 [!DNL AEM] 6.5 中，从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**视图进入资产详情页时，由于内存占用过高，页面无法加载。（ASSETS-46738）
 * 修复了与 [!DNL InDesign] 的集成问题，因为 `Day CQ DAM Mime Type OSGI` 服务此前错误地将 [!DNL InDesign] 文件识别为 `x-adobe-indesign`，而非 `x-indesign`。（ASSETS-45953）
 * [!DNL AEM 6.5.21] 中的会话泄漏问题追溯到开箱即用的&#x200B;**[!UICONTROL 定期发布到 Brand Portal]**&#x200B;工作流步骤。（ASSETS-44104）
 * 在处理和发布图像时 [!DNL AEM] 中出现&#x200B;**[!UICONTROL 内存不足（OOM）]** 错误的问题。该问题是由在工作流中使用已弃用的方法引起的，例如 **[!DNL Dam Asset update]** 和 **[!DNL Dynamic Media: Reprocess assets]**。（ASSETS-43343）
@@ -590,7 +590,7 @@ ht-degree: 98%
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -747,7 +747,7 @@ AEM 6.5.21、6.5.22、6.5.23 和 AEM 6.5 LTS GA 随附的 `org.apache.sling.scri
   have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
   ```
 
-* Forms-21378：启用服务器端验证(SSV)时，表单提交可能会失败。 如果您遇到此问题，请联系Adobe支持部门寻求帮助。
+* Forms-21378：启用服务器端验证（SSV）时，表单提交可能失败。如果遇到此问题，请联系 Adobe 支持部门寻求帮助。
 
 
 
@@ -769,4 +769,4 @@ AEM 6.5.21、6.5.22、6.5.23 和 AEM 6.5 LTS GA 随附的 `org.apache.sling.scri
 >
 >* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
->* [订阅 Adobe 产品更新早知道](https://www.adobe.com/subscription/priority-product-update.html)
+>* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
