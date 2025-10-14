@@ -266,7 +266,7 @@ Sites 控制台中有两个用于发布的选项：
 
 您可以确定页面的发布状态：
 
-* 在[ Sites 控制台上的资源概述信息](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中
+* 在[&#x200B; Sites 控制台上的资源概述信息](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中
 
   ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 

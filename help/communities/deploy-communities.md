@@ -301,7 +301,7 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 
 >[!CAUTION]
 >
->如果已配置基于加密密钥的其他安全功能，则复制加密密钥可能会损坏配置。 如需帮助，[请联系客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)。
+>如果已配置基于加密密钥的其他安全功能，则复制加密密钥可能会损坏配置。 如需帮助，[请联系客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)。
 
 #### 存储库复制 {#repository-replication}
 

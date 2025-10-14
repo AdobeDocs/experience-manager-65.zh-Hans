@@ -27,7 +27,7 @@ ht-degree: 4%
 
 1. 转到`https://'[server]:[port]'/system/console/configMgr`。 找到并打开&#x200B;*Apace Sling日志记录器配置*&#x200B;选项。 此时将显示一个对话框：
 
-   ![ Apace Sling日志记录器配置选项对话框](assets/logconfig.png)
+   ![&#x200B; Apace Sling日志记录器配置选项对话框](assets/logconfig.png)
 
    Apace Sling日志记录器配置选项
 

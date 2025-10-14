@@ -118,7 +118,7 @@ DB2具有将数据库备份到Tivoli Storage Manager的内置功能。 通过使
 
 [Oracle备份和恢复：](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html)更详细地介绍备份和恢复的概念以及使用Recovery Manager (RMAN)进行备份、恢复和报告的最常用技术，并提供有关如何规划备份和恢复策略的更多信息。
 
-[Oracle数据库备份和恢复用户指南： ](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf)提供了有关RMAN体系结构、备份和恢复概念和机制、高级恢复技术（如时间点恢复和数据库闪回功能）以及备份和恢复性能调整的深入信息。 它还涵盖了用户管理的备份和恢复，使用主机操作系统功能而不是RMAN。 此卷对于备份和恢复更复杂的数据库部署以及高级恢复方案至关重要。
+[Oracle数据库备份和恢复用户指南： &#x200B;](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf)提供了有关RMAN体系结构、备份和恢复概念和机制、高级恢复技术（如时间点恢复和数据库闪回功能）以及备份和恢复性能调整的深入信息。 它还涵盖了用户管理的备份和恢复，使用主机操作系统功能而不是RMAN。 此卷对于备份和恢复更复杂的数据库部署以及高级恢复方案至关重要。
 
 [Oracle数据库备份和恢复引用：](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10643.pdf)提供了有关所有RMAN命令的语法和语义的完整信息，并描述了可用于报告备份和恢复活动的数据库视图。
 

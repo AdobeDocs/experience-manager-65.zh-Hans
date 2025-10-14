@@ -50,7 +50,7 @@ ht-degree: 82%
 您可以从以下任一项中启动工作流：
 
 * [“站点”工具栏的“创建”选项](#starting-a-workflow-from-the-sites-toolbar)。
-* [ Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
+* [&#x200B; Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
 
 在这两种情况下，您都必须：
 

@@ -71,7 +71,7 @@ ht-degree: 1%
 | [5.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-structure) | 对于具有两个或多个行或列标题逻辑级别的数据表，请使用标记将数据单元格与标题单元格相关联。 | 2.9提供表格的标题单元格 | |
 | [6.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-order-style-sheets) | 组织文档，以便不使用样式表读取文档。 例如，在呈现不带关联样式表的HTML文档时，仍必须能够读取该文档。 | 不适用 | |
 | [6.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-dynamic-source) | 确保在动态内容发生更改时更新动态内容的等效内容。 | 2.11避免中断脚本编写 | |
-| [ 6.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts) | 在关闭或不支持脚本、小程序或其他编程对象时，确保页面可用。 如果无法执行此操作，请在可访问的替代页面上提供等效信息。 | 2.11避免中断脚本编写 | |
+| [&#x200B; 6.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts) | 在关闭或不支持脚本、小程序或其他编程对象时，确保页面可用。 如果无法执行此操作，请在可访问的替代页面上提供等效信息。 | 2.11避免中断脚本编写 | |
 | [7.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-flicker) | 在用户代理允许用户控制闪烁之前，请避免导致屏幕闪烁。 | 2.1保持表单简单易用 | |
 | [9.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps) | 提供客户端图像映射，而不是服务器端图像映射，除非区域不能使用可用的几何形状进行定义。 | 不适用 | |
 | [11.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-alt-pages) | 如果经过最大努力，您无法创建可访问的页面，并提供指向使用W3C技术的替代页面的链接，该页面可供访问，具有等效的信息（或功能），并且与不可访问（原始）页面的更新频率相同。 | 不适用 | |
@@ -92,8 +92,8 @@ ht-degree: 1%
 | [3.7](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-quotes) | 标明报价单。 请勿将引号用于格式效果，如缩进。 | 不适用 | |
 | [5.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-table-for-layout) | 请勿将表用于布局，除非将表线性化后有意义。 否则，如果表没有意义，请提供替代等效项（可以是线性化版本）。 | 无特定的LiveCycle技术 | 没有理由在LiveCycle表单中使用表格进行布局。 相反，请使用布局面板来定位网格模式中的表单字段。 仅在利用表特定功能（如表标题）时使用表。 |
 | [5.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-layout) | 如果表格用于布局，请勿将任何结构标记用于视觉格式设置。 | 无特定的LiveCycle技术 | |
-| [ 6.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts) | 对于脚本和小程序，请确保事件处理程序独立于输入设备。 | 2.7确保可使用键盘访问表单控件 | |
-| [ 6.5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page) | 确保动态内容可访问，或者提供替代演示文稿或页面。 | 2.11避免中断脚本编写 | |
+| [&#x200B; 6.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts) | 对于脚本和小程序，请确保事件处理程序独立于输入设备。 | 2.7确保可使用键盘访问表单控件 | |
+| [&#x200B; 6.5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page) | 确保动态内容可访问，或者提供替代演示文稿或页面。 | 2.11避免中断脚本编写 | |
 | [7.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-blinking) | 在用户代理允许用户控制闪烁之前，请避免导致内容闪烁（即，定期更改演示文稿，例如打开和关闭）。 | 2.1保持表单简单易用 | |
 | [7.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement) | 在用户代理允许用户冻结移动内容之前，请避免在页面中移动。 | 2.1保持表单简单易用 | |
 | [7.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh) | 在用户代理提供停止刷新的功能之前，请勿定期创建自动刷新页面。 | 不适用 | |

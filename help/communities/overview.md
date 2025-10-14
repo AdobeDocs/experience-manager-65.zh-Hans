@@ -93,7 +93,7 @@ AEM Communities支持与网站访客建立关系，这些网站访客：
 
 在创作环境中，全局导航控制台提供对[社区控制台](/help/communities/consoles.md)的访问权限，该控制台包含：
 
-* [Sites ](/help/communities/sites-console.md)控制台
+* [Sites &#x200B;](/help/communities/sites-console.md)控制台
 
    * 站点创建
    * 站点编辑
@@ -214,7 +214,7 @@ AEM演示计算机需要有效的AEM许可证。
 
 >[!NOTE]
 >
->查看AEM演示计算机的[视频简介](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) (13:26)。
+>查看AEM演示计算机的[视频简介](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) (13:26)。
 
 ## AEM Communities文档 {#aem-communities-documentation}
 

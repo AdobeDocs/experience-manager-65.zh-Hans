@@ -24,7 +24,7 @@ ht-degree: 7%
 
 了解您的特定部署和站点设计所需的内容
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)
 
 另请参阅主[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)。
 

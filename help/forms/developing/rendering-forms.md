@@ -49,7 +49,7 @@ Forms服务允许您创建交互式数据捕获客户端应用程序，这些应
 * 根据片段渲染表单。 (请参阅[根据片段渲染Forms](/help/forms/developing/rendering-forms-based-fragments.md)。)
 * 渲染启用权限的表单。 (请参阅[渲染启用权限的Forms](/help/forms/developing/rendering-rights-enabled-forms.md)。)
 * 将表单渲染为HTML。 (请参阅[将Forms渲染为HTML](/help/forms/developing/rendering-forms-html.md)。)
-* 使用自定义CSS文件渲染HTMLForms ([使用自定义CSS文件渲染HTMLForms ](/help/forms/developing/rendering-html-forms-using-custom.md)。)
+* 使用自定义CSS文件渲染HTMLForms ([使用自定义CSS文件渲染HTMLForms &#x200B;](/help/forms/developing/rendering-html-forms-using-custom.md)。)
 * 处理提交的表单。 (请参阅[处理提交的Forms](/help/forms/developing/handling-submitted-forms.md)。)
 * 使用提交的XML数据创建PDF文档。 (请参阅[使用提交的XML数据创建PDF文档](/help/forms/developing/creating-pdf-documents-submitted-xml.md)。)
 * 预填充表单。 (请参阅[使用可流动布局预填充Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)

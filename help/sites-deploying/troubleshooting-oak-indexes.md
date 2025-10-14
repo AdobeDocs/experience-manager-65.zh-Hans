@@ -128,7 +128,7 @@ AEM的内部重新索引过程收集存储库数据并将其存储在Oak索引�
 1. 收集了步骤1中概述的所有信息后，重新启动AEM。
 
    * 如果存在高并发负载（观察队列溢出或类似情况），重新启动AEM可能会解决问题。
-   * 如果重启不能解决问题，请打开[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)的问题，并提供在步骤1中收集的所有信息。
+   * 如果重启不能解决问题，请打开[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)的问题，并提供在步骤1中收集的所有信息。
 
 ## 安全中止异步重新索引 {#safely-aborting-asynchronous-re-indexing}
 

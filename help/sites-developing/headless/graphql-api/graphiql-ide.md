@@ -159,11 +159,11 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
 通过在浏览器中使用此 URL，可以确认结果：
 
-![GraphiQL – 复制 URL ](assets/cfm-graphiql-copy-url.png "GraphiQL – 复制 URL")
+![GraphiQL – 复制 URL &#x200B;](assets/cfm-graphiql-copy-url.png "GraphiQL – 复制 URL")
 
 **“复制 URL”**&#x200B;选项可通过持久查询名称右侧的三个垂直点访问（最左侧面板）：
 
-![GraphiQL – 复制 URL ](assets/cfm-graphiql-persisted-query-options.png "GraphiQL – 复制 URL")
+![GraphiQL – 复制 URL &#x200B;](assets/cfm-graphiql-persisted-query-options.png "GraphiQL – 复制 URL")
 
 ## 正在删除持久查询 {#deleting-persisted-queries}
 

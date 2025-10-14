@@ -146,7 +146,7 @@ ht-degree: 0%
 
 ### 文档片段 {#document-fragments}
 
-![ ](do-not-localize/contentoptionsdocfragments.png)
+![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
 
 * **向上/向下箭头**：用于在交互式通信中向上或向下移动文档片段的箭头。
 * **删除**：如果允许，请从交互式通信中删除文档片段。

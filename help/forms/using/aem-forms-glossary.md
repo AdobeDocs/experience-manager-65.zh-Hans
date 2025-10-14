@@ -181,7 +181,7 @@ AEM Forms中管理业务流程（如文档审批、内容发布或用户通知�
 
 元数据支持高效的资源分类和检索。 AEM Forms包含每种资源类型的预定义元数据，并允许您进行自定义。 它还提供了用于无缝创建、管理和交换元数据的工具。
 
-## [PDF Generator ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/forms/document-services/using-pdfg-in-aem-forms)
+## [PDF Generator &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/forms/document-services/using-pdfg-in-aem-forms)
 
 AEM Forms中的一种工具，可将各种文件格式（例如：Word、Excel、PowerPoint）转换为PDF文档，并提供加密、水印和合并等功能。
 

@@ -31,13 +31,13 @@ ht-degree: 12%
 
 配置AEM与Adobe Campaign Standard之间的集成需要在这两个解决方案中执行多个步骤。
 
-1. [配置 ](#aemserver-user)
-1. [验证 ](#resource-type-filter)
+1. [配置 &#x200B;](#aemserver-user)
+1. [验证 &#x200B;](#resource-type-filter)
 1. [在Campaign中创建特定于AEM的电子邮件投放模板](#aem-email-delivery-template)
 1. [在AEM中配置Campaign集成](#campaign-integration)
 1. [配置到AEM Publish实例的复制](#replication)
 1. [配置 AEM 外部化器](#externalizer)
-1. [配置 ](#campaign-remote-user)
+1. [配置 &#x200B;](#campaign-remote-user)
 1. [在Campaign中配置AEM外部帐户](#acc-external-user)
 
 本文档将详细介绍其中的每个步骤。

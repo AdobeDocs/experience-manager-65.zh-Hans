@@ -94,7 +94,7 @@ GITHUB上的代码
 
 ### 代码示例 {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` 是一个示例包，其中显示了如何将群组添加到资源查找器。此示例会连接到 [Flickr ](https://www.flickr.com)的公共流，并在侧面板中显示它们。
+`aem-authoring-extension-assetfinder-flickr` 是一个示例包，其中显示了如何将群组添加到资源查找器。此示例会连接到 [Flickr &#x200B;](https://www.flickr.com)的公共流，并在侧面板中显示它们。
 
 GITHUB上的代码
 

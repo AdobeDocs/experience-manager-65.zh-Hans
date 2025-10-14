@@ -75,7 +75,7 @@ ht-degree: 0%
 
 以下步骤显示了创建GCM API密钥的不同方法：
 
-1. 登录google并转到[Google的开发者页面](https://developers.google.com/mobile/add?platform=android&amp;cntapi=gcm)。
+1. 登录google并转到[Google的开发者页面](https://developers.google.com/mobile/add?platform=android&cntapi=gcm)。
 1. 从列表中选择您的应用程序（或创建一个）。
 1. 在Android™包名称下，输入您的应用程序ID，即`com.adobe.cq.mobile.weretail.outdoorsapp`。 （如果上述方法不起作用，请使用“test.test”重试。）
 1. 单击&#x200B;**继续选择并配置服务**

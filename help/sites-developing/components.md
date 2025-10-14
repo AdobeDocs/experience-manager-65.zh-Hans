@@ -64,7 +64,7 @@ AEM附带了各种[现成的组件](/help/sites-authoring/default-components.md)
 提供了两组Adobe提供的AEM组件：
 
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [Foundation 组件 ](/help/sites-authoring/default-components-foundation.md)
+* [Foundation 组件 &#x200B;](/help/sites-authoring/default-components-foundation.md)
 
 **核心组件**&#x200B;是随AEM 6.3引入的，它提供了灵活且丰富的创作功能。 [We.Retail参考网站](/help/sites-developing/we-retail.md)说明了如何使用核心组件，并代表了组件开发的当前最佳实践。
 

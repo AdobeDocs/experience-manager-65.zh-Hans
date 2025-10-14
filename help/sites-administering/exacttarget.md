@@ -54,7 +54,7 @@ ht-degree: 0%
 
    已配置ExactTarget。 您可以通过单击&#x200B;**编辑**&#x200B;来编辑配置。 您可以通过单击&#x200B;**转到ExactTarget**&#x200B;来转到ExactTarget。
 
-1. AEM现在提供数据扩展功能。 您可以导入ExactTarget数据扩展列。 除了成功创建的ExactTarget配置以外，通过单击旁边显示的“+”号，可以对其进行配置。 可以从下拉列表中选择任何现有数据扩展。 有关如何配置数据扩展的详细信息，请参阅[ExactTarget文档](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&amp;type=5)。
+1. AEM现在提供数据扩展功能。 您可以导入ExactTarget数据扩展列。 除了成功创建的ExactTarget配置以外，通过单击旁边显示的“+”号，可以对其进行配置。 可以从下拉列表中选择任何现有数据扩展。 有关如何配置数据扩展的详细信息，请参阅[ExactTarget文档](https://help.salesforce.com/s/articleView?id=sf.mc_es_data_extension_data_relationships_classic.htm&type=5)。
 
    导入的数据扩展列以后可以通过&#x200B;**Text和Personalization**&#x200B;组件使用。
 

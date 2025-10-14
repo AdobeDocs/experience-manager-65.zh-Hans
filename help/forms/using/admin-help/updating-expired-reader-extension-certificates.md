@@ -45,7 +45,7 @@ A.新的Acrobat Reader扩展证书说明将&#x200B;**G3-P24**&#x200B;作为程�
 
 **Q.如何获取最新的证书？**
 
-A.所有授权的Forms客户（具有有效许可证）都可以从[Adobe授权网站](https://licensing.adobe.com/)下载新证书(基于“Adobe根CA G2”的证书)。 如果在Adobe授权网站上找不到证书，请联系[Adobe支持](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&amp;lang=en#support)或提出支持票证。
+A.所有授权的Forms客户（具有有效许可证）都可以从[Adobe授权网站](https://licensing.adobe.com/)下载新证书(基于“Adobe根CA G2”的证书)。 如果在Adobe授权网站上找不到证书，请联系[Adobe支持](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&lang=en#support)或提出支持票证。
 
 **Q.使用从“PDF根CA”（旧证书颁发机构）颁发的证书扩展的Adobe文档在2023年1月7日之后是否继续工作？**
 

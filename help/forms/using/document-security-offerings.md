@@ -37,7 +37,7 @@ Document Security Server是Document Security执行事务（如用户身份验证
 
 Document Security服务器提供了一个基于Web的界面（网页），用于创建策略、管理受策略保护的文档以及监控与受策略保护文档关联的事件。 管理员还可以为受邀用户配置全局选项，如用户身份验证、审核和消息传送，以及管理受邀用户帐户。
 
-该服务器包含在AEM Forms Document Security附加产品中。 您可以联系AEM Forms [销售团队](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&amp;s_iid=70114000002JHs3AAG)以购买Document Security加载项。
+该服务器包含在AEM Forms Document Security附加产品中。 您可以联系AEM Forms [销售团队](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG)以购买Document Security加载项。
 
 ### Protect文档 {#protect-documents}
 
@@ -49,7 +49,7 @@ AEM Forms Document Security提供了多种应用安全策略的工具。 您可�
 
 * **Document Security SDK：**&#x200B;该SDK是功能丰富的客户端。 您可以使用Document Security SDK访问文档服务器功能，打开受策略保护的文档，以及开发自定义扩展、插件或应用程序。 例如，您可以开发扩展以保护自定义文件格式，或将SDK与数据丢失防护(DLP)解决方案集成。 使用Document Security SDK开发的扩展、应用程序和插件可将文档发送到指定的AEM Forms服务器，并且策略会应用于该服务器。 AEM Forms Document Security客户端SDK (CSDK)无法取消保护使用可移植保护库(PPL)保护的文档，反之亦然。
 
-  Document Security SDK适用于Java™和C++。 Java™ SDK包含在AEM Forms Document Security产品中，并安装在在JEE上部署AEM Forms时。 联系[AEM客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)以获取C++ SDK。 C++ SDK可以使用Microsoft® Visual Studio 2013进行编译。 访问[Document Security API文档](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html)网站，您可以在其中学习和使用SDK的功能。
+  Document Security SDK适用于Java™和C++。 Java™ SDK包含在AEM Forms Document Security产品中，并安装在在JEE上部署AEM Forms时。 联系[AEM客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)以获取C++ SDK。 C++ SDK可以使用Microsoft® Visual Studio 2013进行编译。 访问[Document Security API文档](https://help.adobe.com/en_US/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html)网站，您可以在其中学习和使用SDK的功能。
 
 * **Adobe Acrobat：**&#x200B;您可以使用Adobe Acrobat将安全策略应用于PDF使用常用桌面应用程序(如Microsoft®Office、Web浏览器或任何支持PDF打印的应用程序)创建的文档。
 
@@ -63,7 +63,7 @@ AEM Forms Document Security提供了多种应用安全策略的工具。 您可�
 
   除上述功能外，PPL还具有Document Security SDK的所有功能。 您可以使用Document Security SDK访问文档服务器功能，打开受策略保护的文档，以及开发自定义扩展、插件或应用程序。 PPL无法取消保护使用AEM Forms Document Security客户端SDK (CSDK)或相反方式保护的文档。
 
-  PPL可用于32位和64位版本的Java™和C++语言。 它还作为OSGi上AEM Forms的OSGi包提供。 C++ PPL可以使用Microsoft® Visual Studio 2013进行编译。 如果您已许可AEM Forms Document Security加载项，则可以联系[AEM Forms Document Security](https://experienceleague.adobe.com/zh-hans?support-solution=General&amp;support-tab=home#support)支持团队以获取PPL。 之后，您可以使用PPL帮助（与库捆绑在一起）来设置和使用PPL。
+  PPL可用于32位和64位版本的Java™和C++语言。 它还作为OSGi上AEM Forms的OSGi包提供。 C++ PPL可以使用Microsoft® Visual Studio 2013进行编译。 如果您已许可AEM Forms Document Security加载项，则可以联系[AEM Forms Document Security](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)支持团队以获取PPL。 之后，您可以使用PPL帮助（与库捆绑在一起）来设置和使用PPL。
 
 ### 查看或编辑受保护的文档 {#view-or-edit-protected-documents}
 

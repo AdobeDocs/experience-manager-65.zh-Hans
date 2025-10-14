@@ -27,7 +27,7 @@ ht-degree: 40%
 
 创建用于将AEM连接到您的翻译服务提供商的云配置。
 
-默认情况下，AEM包括[连接到Microsoft® Translator](/help/sites-administering/tc-msconf.md)的功能。 在[此处](https://exchange.adobe.com/apps/browse/ec?page=1&amp;partnerLevel=All&amp;product=AEM&amp;q=experience+manager+translation&amp;sort=RELEVANCE)可以找到具有AEM连接器且是Adobe Exchange合作伙伴计划成员的其他翻译技术供应商。
+默认情况下，AEM包括[连接到Microsoft® Translator](/help/sites-administering/tc-msconf.md)的功能。 在[此处](https://exchange.adobe.com/apps/browse/ec?page=1&partnerLevel=All&product=AEM&q=experience+manager+translation&sort=RELEVANCE)可以找到具有AEM连接器且是Adobe Exchange合作伙伴计划成员的其他翻译技术供应商。
 
 安装连接器软件包后，即可为连接器创建云配置。一般需要提供凭据，以便向翻译服务进行身份验证。有关为 Microsoft Translator 连接器添加云配置的信息，请参阅[与 Microsoft Translator 集成](/help/sites-administering/tc-msconf.md)。
 
