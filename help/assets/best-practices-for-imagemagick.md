@@ -6,9 +6,9 @@ role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '680'
+source-wordcount: '679'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ ImageMagick是一个用于创建、编辑、合成或转换位图图像的软件
 
 >[!NOTE]
 >
->如果您在[!DNL Adobe Managed Services] (AMS)上使用[!DNL Experience Manager]，如果您计划处理许多高分辨率PSD或PSB文件，请联系Adobe客户支持。 [!DNL Experience Manager]不能处理超过30000 x 23000像素的超高分辨率PSB文件。
+>如果您在[!DNL Experience Manager] (AMS)上使用[!DNL Adobe Managed Services]，如果您计划处理许多高分辨率PSD或PSB文件，请联系Adobe客户支持。 [!DNL Experience Manager]不能处理超过30000 x 23000像素的超高分辨率PSB文件。
 
 ## 安装ImageMagick {#installing-imagemagick}
 
 ImageMagic安装文件的多个版本可用于各种操作系统。 使用适用于您的操作系统的相应版本。
 
-1. 下载适用于您的操作系统的[ImageMagick安装文件](https://www.imagemagick.org/script/download.php)。
+1. 下载适用于您的操作系统的ImageMagick安装文件(`https://www.imagemagick.org/script/download.php website`)。
 1. 要在托管[!DNL Experience Manager]服务器的磁盘上安装ImageMagick，请启动安装文件。
 
 1. 将路径Environment变量设置为ImageMagic安装目录。
@@ -37,7 +37,7 @@ ImageMagic安装文件的多个版本可用于各种操作系统。 使用适用
 
 ## 设置命令行流程步骤 {#set-up-the-command-line-process-step}
 
-您可以为特定用例设置命令行流程步骤。 每次将JPEG图像文件添加到[!DNL Experience Manager]服务器上的`/content/dam`时，执行以下步骤可生成翻转的图像和缩略图（140x100、48x48、319x319和1280x1280）：
+您可以为特定用例设置命令行流程步骤。 每次将JPEG图像文件添加到`/content/dam`服务器上的[!DNL Experience Manager]时，执行以下步骤可生成翻转的图像和缩略图（140x100、48x48、319x319和1280x1280）：
 
 1. 在[!DNL Experience Manager]服务器上，转到“工作流”控制台(`https://[aem_server]:[port]/workflow`)并打开&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型。
 1. 从&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型中，打开&#x200B;**[!UICONTROL EPS缩略图（由ImageMagick提供支持）]**&#x200B;步骤。
@@ -53,7 +53,7 @@ ImageMagic安装文件的多个版本可用于各种操作系统。 使用适用
 
    ![select_flags](assets/select_flags.png)
 
-1. 在&#x200B;**[!UICONTROL 启用Web的图像]**&#x200B;选项卡中，指定尺寸为1280x1280像素的演绎版的详细信息。 此外，请在&#x200B;**[!UICONTROL Mimetype]**&#x200B;框中指定`image/jpeg`。
+1. 在&#x200B;**[!UICONTROL 启用Web的图像]**&#x200B;选项卡中，指定尺寸为1280x1280像素的演绎版的详细信息。 此外，请在`image/jpeg`Mimetype **[!UICONTROL 框中指定]**。
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
@@ -66,11 +66,11 @@ ImageMagic安装文件的多个版本可用于各种操作系统。 使用适用
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
 
-1. 打开&#x200B;**[!UICONTROL 进程缩略图]**&#x200B;步骤，并在&#x200B;**[!UICONTROL 跳过MIME类型]**&#x200B;下添加MIME类型`image/jpeg`。
+1. 打开&#x200B;**[!UICONTROL 进程缩略图]**&#x200B;步骤，并在`image/jpeg`跳过MIME类型&#x200B;**[!UICONTROL 下添加MIME类型]**。
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. 在&#x200B;**[!UICONTROL 启用Web的图像]**&#x200B;选项卡中，在&#x200B;**[!UICONTROL 跳过列表]**&#x200B;下添加MIME类型`image/jpeg`。 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以保存更改。
+1. 在&#x200B;**[!UICONTROL 启用Web的图像]**&#x200B;选项卡中，在`image/jpeg`跳过列表&#x200B;**[!UICONTROL 下添加MIME类型]**。 单击&#x200B;**[!UICONTROL 确定]**&#x200B;以保存更改。
 
    ![web_enabled](assets/web_enabled.png)
 

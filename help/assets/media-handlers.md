@@ -1,5 +1,5 @@
 ---
-title: 使用媒体处理程序和工作流处理资源
+title: 使用媒体处理程序和工作流处理资产
 description: 了解媒体处理程序以及如何使用工作流对您的数字资产执行任务。
 mini-toc-levels: 1
 contentOwner: AG
@@ -7,14 +7,14 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
 workflow-type: tm+mt
-source-wordcount: '2113'
-ht-degree: 3%
+source-wordcount: '2109'
+ht-degree: 4%
 
 ---
 
-# 使用媒体处理程序和工作流处理资源 {#processing-assets-using-media-handlers-and-workflows}
+# 使用媒体处理程序和工作流处理资产 {#processing-assets-using-media-handlers-and-workflows}
 
 [!DNL Adobe Experience Manager Assets]附带一组默认的工作流和媒体处理程序以处理资产。 工作流定义要在资产上执行的任务，然后将特定任务委派给媒体处理程序，例如缩略图生成或元数据提取。
 
@@ -24,7 +24,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->有关[!DNL Assets]支持的所有格式以及每种格式支持的功能的说明，请参阅[支持的资产格式](assets-formats.md)页面。
+>有关[支持的所有格式以及每种格式支持的功能的说明，请参阅](assets-formats.md)支持的资产格式[!DNL Assets]页面。
 
 ## 默认媒体处理程序 {#default-media-handlers}
 
@@ -283,7 +283,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
     </dependencies>
    ```
 
-1. 创建包`com.day.cq5.myhandler`，其中包含`myBundle/src/main/java`下的[!DNL Java™]类：
+1. 创建包`com.day.cq5.myhandler`，其中包含[!DNL Java™]下的`myBundle/src/main/java`类：
 
    1. 在myBundle下，右键单击`src/main/java`，选择新建，然后选择包。
    1. 将其命名为`com.day.cq5.myhandler`，然后单击“完成”。
@@ -437,7 +437,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 1. 编译[!DNL Java™]类并创建捆绑包：
 
    1. 右键单击`myBundle`项目，选择&#x200B;**[!UICONTROL 运行方式]**，然后选择&#x200B;**[!UICONTROL Maven安装]**。
-   1. 在`myBundle/target`下创建了包`myBundle-0.0.1-SNAPSHOT.jar`（包含已编译的类）。
+   1. 在`myBundle-0.0.1-SNAPSHOT.jar`下创建了包`myBundle/target`（包含已编译的类）。
 
 1. 在CRX资源管理器中，在`/apps/myApp`下创建一个节点。 名称= `install`，类型= `nt:folder`。
 1. 复制包`myBundle-0.0.1-SNAPSHOT.jar`并将其存储在`/apps/myApp/install`下（例如，使用WebDAV）。 新文本处理程序现在在[!DNL Experience Manager]中处于活动状态。
@@ -449,7 +449,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 以下转换可以自动运行并存储在[!DNL Assets]中：
 
-* 使用[ImageMagick](https://www.imagemagick.org/script/index.php)和[Ghostscript](https://www.ghostscript.com/)的EPS和AI转换。
+* 使用`https://www.imagemagick.org/script/index.php`和[Ghostscript](https://www.ghostscript.com/)的EPS和AI转换。
 * 使用[FFmpeg](https://ffmpeg.org/)的FLV视频转码。
 * 使用[LAME](https://lame.sourceforge.io/)的MP3编码。
 * 使用[SOX](https://sourceforge.net/projects/sox/)进行音频处理。
@@ -470,13 +470,13 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 ### 使用[!DNL ImageMagick]的示例 {#an-example-using-imagemagick}
 
-以下示例说明如何设置命令行流程步骤，以便每次将具有miMIME e类型GIF或TIFF的资源添加到[!DNL Experience Manager]服务器上的`/content/dam`时，都会创建原始资源的翻转图像。 还创建了另外三个缩略图140x100、48x48和10x250。
+以下示例显示了如何设置命令行流程步骤，以便每次将具有miMIME e-type GIF或TIFF的资源添加到`/content/dam`服务器上的[!DNL Experience Manager]时，都会创建原始资源的翻转图像。 还创建了另外三个缩略图140x100、48x48和10x250。
 
 为此，请使用[!DNL ImageMagick]。 [!DNL ImageMagick]是一个免费的命令行软件，用于创建、编辑和合成位图图像。
 
-在托管[!DNL Experience Manager]服务器的磁盘上安装[!DNL ImageMagick]：
+在托管[!DNL ImageMagick]服务器的磁盘上安装[!DNL Experience Manager]：
 
-1. 安装[!DNL ImageMagick]：请参阅[ImageMagick文档](https://www.imagemagick.org/script/download.php)。
+1. 安装[!DNL ImageMagick]：查看`https://www.imagemagick.org/script/download.php`网站。
 1. 设置该工具，以便在命令行中运行`convert`。
 1. 要查看工具是否正确安装，请在命令行上运行以下命令`convert -h`。
 
@@ -484,17 +484,17 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
    >[!NOTE]
    >
-   >在某些Windows版本中，转换命令可能无法运行，因为它与[!DNL Windows]安装中的本机转换实用程序冲突。 在这种情况下，请提及用于将图像文件转换为缩略图的[!DNL ImageMagick]软件的完整路径。 例如：`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`。
+   >在某些Windows版本中，转换命令可能无法运行，因为它与[!DNL Windows]安装中的本机转换实用程序冲突。 在这种情况下，请提及用于将图像文件转换为缩略图的[!DNL ImageMagick]软件的完整路径。 例如 `"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`。
 
 1. 要查看该工具是否正常运行，请将JPG映像添加到工作目录中，并在命令行上运行命令convert `<image-name>.jpg -flip <image-name>-flipped.jpg`。 翻转的图像将添加到目录中。 然后，将命令行流程步骤添加到&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流。
 1. 转到&#x200B;**[!UICONTROL 工作流]**&#x200B;控制台。
 1. 在&#x200B;**[!UICONTROL 模型]**&#x200B;选项卡中，编辑&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;模型。
-1. 将&#x200B;**[!UICONTROL 启用Web的演绎版]**&#x200B;步骤的[!UICONTROL 参数]更改为： `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`。
+1. 将[!UICONTROL 启用Web的演绎版]步骤的&#x200B;**[!UICONTROL 参数]**&#x200B;更改为： `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`。
 1. 保存工作流。
 
 要测试修改后的工作流，请将资产添加到`/content/dam`。
 
-1. 在文件系统中，获取您选择的TIFF映像。 将其重命名为`myImage.tiff`并将其复制到`/content/dam`，例如，通过使用WebDAV。
+1. 在文件系统中，获取您选择的TIFF图像。 将其重命名为`myImage.tiff`并将其复制到`/content/dam`，例如，通过使用WebDAV。
 1. 转到&#x200B;**[!UICONTROL CQ5 DAM]**&#x200B;控制台，例如`https://localhost:4502/libs/wcm/core/content/damadmin.html`。
 1. 打开资产&#x200B;**[!UICONTROL myImage.tiff]**，并验证是否已创建翻转的图像和三个缩略图。
 
@@ -510,7 +510,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 | tn：&lt;宽度>：&lt;高度> | 可选参数。 该过程会使用参数中定义的维度创建一个缩略图。 <br>可以定义多个缩略图。 |
 | cmd： &lt;命令> | 定义执行的命令。 语法取决于命令行工具。 只能定义一个命令。 <br>以下变量可用于创建命令：<br>`${filename}`：输入文件的名称，例如original.jpg <br> `${file}`：输入文件的完整路径名，例如，`/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`：输入文件的目录，例如`/tmp/cqdam0816.tmp` <br>`${basename}`：不带扩展名的输入文件的名称，例如，原始<br>`${extension}`：输入文件的扩展名，例如JPG。 |
 
-例如，如果在托管[!DNL Experience Manager]服务器的磁盘上安装了[!DNL ImageMagick]，并且您使用[!UICONTROL CommandLineProcess]作为实现和以下值作为[!UICONTROL 进程参数]创建进程步骤：
+例如，如果在托管[!DNL ImageMagick]服务器的磁盘上安装了[!DNL Experience Manager]，并且您使用[!UICONTROL CommandLineProcess]作为实现和以下值作为[!UICONTROL 进程参数]创建进程步骤：
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
