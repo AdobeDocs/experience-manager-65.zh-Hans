@@ -126,4 +126,4 @@ See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photosh
 
 * 尝试直接在URL上实时测试不同的参数。
 * 作为最佳实践，请记住，您可以将Dynamic Media图像服务命令分组到图像预设中。 图像预设基本上是带有自定义预设名称（如`$thumb_low$`和`&product_high$`）的URL命令宏。 URL路径中的自定义预设名称将调用这些预设。 此功能可帮助您管理网站上图像不同使用模式的命令和质量设置，并缩短URL的总长度。
-* Experience Manager还提供了更高级的方法来调整图像质量，例如在摄取时应用锐化图像。 对于有选项可调整和优化渲染结果的高级用例，[Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)可以帮助您提供自定义的洞察信息和最佳实践。
+* Experience Manager还提供了更高级的方法来调整图像质量，例如在摄取时应用锐化图像。 对于有选项可调整和优化渲染结果的高级用例，[Adobe Professional Services](https://business.adobe.com/cn/customers/consulting-services/main.html)可以帮助您提供自定义的洞察信息和最佳实践。

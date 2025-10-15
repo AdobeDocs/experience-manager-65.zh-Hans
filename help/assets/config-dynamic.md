@@ -194,7 +194,7 @@ Experience Manager发布节点将继续提供其他内容，例如Dynamic Media�
 
 ## 启用Dynamic Media {#enabling-dynamic-media}
 
-默认情况下已禁用[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)。 要利用Dynamic Media功能，您必须使用`dynamicmedia`运行模式启用Dynamic Media，就像使用`publish`运行模式一样。 在启用之前，请确保查看[技术要求](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)。
+默认情况下已禁用[Dynamic Media](https://business.adobe.com/cn/products/experience-manager/assets/dynamic-media.html)。 要利用Dynamic Media功能，您必须使用`dynamicmedia`运行模式启用Dynamic Media，就像使用`publish`运行模式一样。 在启用之前，请确保查看[技术要求](/help/sites-deploying/technical-requirements.md#requirements-for-aem-dynamic-media-add-on)。
 
 >[!NOTE]
 >

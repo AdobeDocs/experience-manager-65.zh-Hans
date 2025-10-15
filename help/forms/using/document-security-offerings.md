@@ -37,7 +37,7 @@ Document Security Server是Document Security执行事务（如用户身份验证
 
 Document Security服务器提供了一个基于Web的界面（网页），用于创建策略、管理受策略保护的文档以及监控与受策略保护文档关联的事件。 管理员还可以为受邀用户配置全局选项，如用户身份验证、审核和消息传送，以及管理受邀用户帐户。
 
-该服务器包含在AEM Forms Document Security附加产品中。 您可以联系AEM Forms [销售团队](https://business.adobe.com/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG)以购买Document Security加载项。
+该服务器包含在AEM Forms Document Security附加产品中。 您可以联系AEM Forms [销售团队](https://business.adobe.com/cn/request-consultation/experience-cloud.html?s_osc=70114000002JNwKAAW&s_iid=70114000002JHs3AAG)以购买Document Security加载项。
 
 ### Protect文档 {#protect-documents}
 

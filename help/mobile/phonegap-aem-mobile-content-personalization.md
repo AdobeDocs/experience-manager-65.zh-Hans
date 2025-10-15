@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >本文档是[AEM Mobile快速入门](/help/mobile/getting-started-aem-mobile.md)指南的一部分，该指南是AEM Mobile参考的推荐起点。
 
-AEM Mobile内容个性化功能允许[AEM作者](#author)使用[Adobe Target](https://business.adobe.com/products/target/adobe-target.html)对移动应用程序内容进行个性化设置。 这允许向移动应用程序用户提供定向的优惠。 Adobe Experience Manager Mobile使您能够创建、定位和交付内容，这些内容将为用户提供特定于用户个人口味的内容。
+AEM Mobile内容个性化功能允许[AEM作者](#author)使用[Adobe Target](https://business.adobe.com/cn/products/target/adobe-target.html)对移动应用程序内容进行个性化设置。 这允许向移动应用程序用户提供定向的优惠。 Adobe Experience Manager Mobile使您能够创建、定位和交付内容，这些内容将为用户提供特定于用户个人口味的内容。
 
 在AEM中，为了使作者开始创建此内容，管理员和开发人员必须首先准备环境。
 

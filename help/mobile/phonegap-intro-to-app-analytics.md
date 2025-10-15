@@ -30,7 +30,7 @@ ht-degree: 0%
 
 借助AdobeMobile Services，您可以通过跟踪使用量、应用程序崩溃情况、设备详细信息以及移动设备应用程序的其他许多关键量度，深入了解用户如何使用移动设备应用程序。
 
-Adobe Experience Manager Mobile可直接从AEM Mobile应用程序仪表板中一窥您的移动分析详细信息。 仪表板中的&#x200B;**移动量度图块**&#x200B;为您的移动应用程序提供了Real-Time Analytics，允许开发人员、作者和管理员快速了解您的移动应用程序的运行状况。 在封面下，为[Adobe移动分析](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK提供支持。 可将AdobeMobile Analytics SDK以本机方式或通过PhoneGap Bridge插件插入您的应用程序，以便进行Web查看。 收集量度并将其缓存在设备上，直到设备连接为止，届时，会将数据推送到AdobeMobile Services云以供生成报表和分析。
+Adobe Experience Manager Mobile可直接从AEM Mobile应用程序仪表板中一窥您的移动分析详细信息。 仪表板中的&#x200B;**移动量度图块**&#x200B;为您的移动应用程序提供了Real-Time Analytics，允许开发人员、作者和管理员快速了解您的移动应用程序的运行状况。 在封面下，为[Adobe移动分析](https://business.adobe.com/cn/products/analytics/mobile-marketing.html) SDK提供支持。 可将AdobeMobile Analytics SDK以本机方式或通过PhoneGap Bridge插件插入您的应用程序，以便进行Web查看。 收集量度并将其缓存在设备上，直到设备连接为止，届时，会将数据推送到AdobeMobile Services云以供生成报表和分析。
 
 AdobeMobile Analytics SDK提供以下功能：
 

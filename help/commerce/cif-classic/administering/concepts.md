@@ -40,7 +40,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->[电子商务集成框架](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html)是一个AEM加载项。
+>[电子商务集成框架](https://business.adobe.com/cn/products/experience-manager/sites/ecommerce-integrations.html)是一个AEM加载项。
 >
 >您的销售代表可以根据相应的引擎提供完整的详细信息。
 

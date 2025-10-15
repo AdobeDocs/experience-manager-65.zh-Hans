@@ -246,12 +246,12 @@ AEM 可通过多种格式和不同层级的技术栈提供内容。其中部分�
 
 * Adobe Target 集成现已使用 Target Standard API。AEM 的早期版本使用的 Target Classic HTTP API 现已弃用。
 * 包含 Adobe Target `mbox.js` 版本 63。Adobe 强烈建议将实施切换至 `at.js` v1.x。
-* 包含 `at.js` 版本 1.5.0。Adobe 建议使用 [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) 来配置 `at.js` v1.x，并将其部署到网站。
+* 包含 `at.js` 版本 1.5.0。Adobe 建议使用 [Adobe Experience Platform Launch](https://business.adobe.com/cn/products/experience-platform/launch.html) 来配置 `at.js` v1.x，并将其部署到网站。
 
 #### AEM 与 Adobe Analytics {#aem-amp-adobe-analytics}
 
 * 包含 `s_code.js` H.27.5。Adobe 建议将实施切换至 `AppMeasurement.js`。
-* 包含 `AppMeasurement.js` v1.8.0。Adobe 建议使用 [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) 将 AppMeasurement.js 部署到网站。
+* 包含 `AppMeasurement.js` v1.8.0。Adobe 建议使用 [Adobe Experience Platform Launch](https://business.adobe.com/cn/products/experience-platform/launch.html) 将 AppMeasurement.js 部署到网站。
 
 #### AEM 和 Commerce {#aem-commerce}
 

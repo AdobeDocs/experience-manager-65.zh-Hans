@@ -24,7 +24,7 @@ ht-degree: 0%
 
 您的用户是否正在访问所有内容？ 他们是否在放弃该应用程序，如果是，在哪里放弃？ 他们多久留在应用程序中，多久回访一次以使用应用程序？ 您可以引入哪些更改，然后衡量这些更改是否提高了客户保留率？ 崩溃率如何？您的应用程序是否为用户而崩溃？
 
-通过与[AdobeMobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html)集成，在您的Adobe Experience Manager (AEM)应用程序中利用[移动应用程序Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html)。
+通过与[AdobeMobile Services](https://business.adobe.com/cn/products/campaign/mobile-marketing.html)集成，在您的Adobe Experience Manager (AEM)应用程序中利用[移动应用程序Analytics](https://business.adobe.com/cn/products/analytics/mobile-marketing.html)。
 
 检测您的AEM应用程序，以跟踪、报告和了解用户如何参与您的移动设备应用程序和内容，并测量关键生命周期量度，例如启动次数、应用程序逗留时间和崩溃率。
 

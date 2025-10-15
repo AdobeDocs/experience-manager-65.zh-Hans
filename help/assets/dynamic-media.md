@@ -18,7 +18,7 @@ ht-degree: 8%
 
 # 使用 Dynamic Media {#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)可帮助按需提供丰富的视觉营销和营销资源，可自动扩展以用于Web、移动和社交网站上的使用。 使用一组主要源资产，该软件通过其全局、可扩展且性能优化的网络实时生成和交付多种丰富内容变体。
+[Dynamic Media](https://business.adobe.com/cn/products/experience-manager/assets/dynamic-media.html)可帮助按需提供丰富的视觉营销和营销资源，可自动扩展以用于Web、移动和社交网站上的使用。 使用一组主要源资产，该软件通过其全局、可扩展且性能优化的网络实时生成和交付多种丰富内容变体。
 
 该软件提供交互式观看体验，包括缩放、360度旋转和视频。 它独特地整合了Adobe Experience Manager数字资产管理(Assets)解决方案的工作流，以简化和简化数字营销活动管理流程。
 

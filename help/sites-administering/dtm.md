@@ -18,7 +18,7 @@ ht-degree: 2%
 
 # 与AdobeDynamic Tag Management集成 {#integrating-with-adobe-dynamic-tag-management}
 
-将[AdobeDynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html)与AEM集成，以便您可以使用Dynamic Tag Management Web属性跟踪AEM站点。 Dynamic Tag Management允许营销人员管理用于收集数据的标记，并在各种数字营销系统中分发数据。 例如，使用Dynamic Tag Management收集AEM网站的使用情况数据，并分发数据以在Adobe Analytics或Adobe Target中进行分析。
+将[AdobeDynamic Tag Management](https://business.adobe.com/cn/products/experience-platform/adobe-experience-platform.html)与AEM集成，以便您可以使用Dynamic Tag Management Web属性跟踪AEM站点。 Dynamic Tag Management允许营销人员管理用于收集数据的标记，并在各种数字营销系统中分发数据。 例如，使用Dynamic Tag Management收集AEM网站的使用情况数据，并分发数据以在Adobe Analytics或Adobe Target中进行分析。
 
 在集成之前，请创建跟踪AEM站点域的Dynamic Tag Management [Web属性](https://microsite.omniture.com/t2/help/en_US/dtm/#Web_Properties)。 必须配置Web属性的[托管选项](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab)，以便您可以配置AEM以访问Dynamic Tag Management库。
 

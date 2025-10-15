@@ -155,7 +155,7 @@ ht-degree: 42%
 
   您还可以使用[快捷键](/help/sites-authoring/keyboard-shortcuts.md) `/`（正斜杠）从任何控制台中调用搜索。
 
-* [解决方案](https://business.adobe.com/)
+* [解决方案](https://business.adobe.com/cn/)
 
   ![解决方案](do-not-localize/screen_shot_2018-03-23at103552.png)
 

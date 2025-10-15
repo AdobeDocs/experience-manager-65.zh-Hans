@@ -31,7 +31,7 @@ ht-degree: 0%
 
 >[!TIP]
 >
->如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Magento开源](https://business.adobe.com/products/magento/open-source.html)。
+>如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Magento开源](https://business.adobe.com/cn/products/magento/open-source.html)。
 
 无需实施完整的GraphQL架构，只需实施架构的对象即可启用所需的用例。
 

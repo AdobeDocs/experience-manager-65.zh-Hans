@@ -31,6 +31,6 @@ ht-degree: 0%
 >[!NOTE]
 >
 >LiveCycle ES4支持将基于XFA的表单渲染到HTML5，以便这些表单可以在支持HTML5的浏览器中打开，包括那些在iPad等移动设备上运行的表单。 表单的HTML5演绎版维护表单设计的布局，并支持嵌入到XFA表单模板中的大多数表单逻辑(如JavaScript、表单计算和表单验证)。 这样，您对XFA表单的技术投资就可以轻松转移到无法运行Adobe Reader插件的设备上。
->有关详细信息，请参阅升级到[LiveCycle产品文档](https://business.adobe.com/products/experience-manager/forms/aem-forms.html)。
+>有关详细信息，请参阅升级到[LiveCycle产品文档](https://business.adobe.com/cn/products/experience-manager/forms/aem-forms.html)。
 
 [法律声明](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    |    [联机隐私策略](https://www.adobe.com/cn/privacy.html)
