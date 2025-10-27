@@ -5,10 +5,10 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 9b28ab12422743cd7849d2761aef9916ec6710f5
+source-git-commit: 0e80096b6b49372765b04a3bc1438b93d9cccf6e
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 2%
+source-wordcount: '396'
+ht-degree: 3%
 
 ---
 
@@ -34,9 +34,13 @@ ht-degree: 2%
 
 * 用户是`forms-users`组的成员。
 
-* 导航到`http://<author-instance-url>:portnumber/system/console/bundles`并检查&#x200B;**(com.adobe.granite.toggle.impl.dev-1.1.2.jar)**&#x200B;包是否存在。 如果不存在，请[从链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/com.adobe.granite.toggle.impl.dev-1.1.2%20.jar)下载包。
+* 导航到`http://<author-instance-url>:portnumber/system/console/bundles`并检查&#x200B;**(com.adobe.granite.toggle.impl.dev-1.1.8.jar)**&#x200B;包是否存在。 如果不存在，请[从链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2Fcom.adobe.granite.toggle.impl.dev-1.1.8.jar)下载包。
 
-  ![功能切换](/help/forms/using/assets/feature-toggle-6.5.png)
+![功能切换](/help/forms/using/assets/feature-toggle-1.1.8.png)
+
+>[!NOTE]
+>
+>您可以根据需要在AEM 6.5环境或更早版本中启用功能切换。
 
 ## 启用功能切换 {#enable-feature-toggle-65}
 
