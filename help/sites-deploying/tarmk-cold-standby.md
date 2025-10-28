@@ -1,5 +1,5 @@
 ---
-title: 如何在TarMK冷待机状态下运行AEM
+title: 如何以 TarMK 冷备用方式运行 AEM
 description: 了解如何创建、配置和维护TarMK冷备用设置。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,26 +10,26 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
 workflow-type: tm+mt
-source-wordcount: '2673'
-ht-degree: 0%
+source-wordcount: '2680'
+ht-degree: 1%
 
 ---
 
-# 如何在TarMK冷待机状态下运行AEM{#how-to-run-aem-with-tarmk-cold-standby}
+# 如何以 TarMK 冷备用方式运行 AEM{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## 简介 {#introduction}
 
 Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manager (AEM)实例连接到主实例。 同步过程只是单向的，这意味着它只能从主实例到备用实例完成。
 
-备用实例的目的是保证主存储库的实时数据副本，并在主存储库因任何原因不可用时确保快速切换而不会丢失数据。
+备用实例的目的是保证主存储库的实时数据副本，并在主实例因任何原因不可用时确保快速切换而不会丢失数据。
 
 内容在主实例和备用实例之间线性同步，无需对文件或存储库损坏进行任何完整性检查。 由于此设计，备用实例是主实例的精确副本，并且无法帮助缓解主实例上的不一致。
 
 >[!NOTE]
 >
->冷备用功能旨在保护&#x200B;**作者**&#x200B;实例上需要高可用性的方案。 对于在使用Tar微内核的&#x200B;**Publish**&#x200B;实例上需要高可用性的情况，Adobe建议使用发布场。
+>冷备用功能旨在保护&#x200B;**作者**&#x200B;实例上需要高可用性的方案。 对于在使用Tar微内核的&#x200B;**发布**&#x200B;实例上需要高可用性的情况，Adobe建议使用发布场。
 >
 >有关更多可用部署的信息，请参阅[建议的部署](/help/sites-deploying/recommended-deploys.md)页面。
 
@@ -43,7 +43,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
 ## 工作原理 {#how-it-works}
 
-在主AEM实例上， TCP端口已打开并正在侦听传入消息。 目前，奴隶向主用户发送两种类型的消息：
+在主AEM实例上，TCP端口已打开并正在侦听传入消息。 目前，备用设备向主设备发送两种类型的消息：
 
 * 请求当前标头的区段ID的消息
 * 请求具有指定ID的区段数据的消息
@@ -66,13 +66,13 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
 #### 性能 {#performance}
 
-在主实例上启用TarMK冷备用对性能几乎没有可衡量的影响。 额外的CPU占用率很低，额外的硬盘和网络IO应该不会产生性能问题。
+在主实例上启用TarMK冷备用对性能几乎没有可衡量的影响。 额外的CPU使用量很低，额外的硬盘和网络IO应该不会产生和性能问题。
 
-在待机状态下，在同步过程中可能会出现高CPU消耗。 由于该过程不是多线程的，因此不能通过使用多个内核来加速该过程。 如果未更改或传输任何数据，则不存在可衡量的活动。 连接速度因硬件和网络环境而异，但并不取决于存储库的大小或SSL的使用。 在估计初始同步所需的时间或在主节点上同时更改许多数据时，请记住这一点。
+在待机状态下，您可能会在同步过程中消耗大量的CPU。 由于该过程不是多线程的，因此不能通过使用多个内核来加速该过程。 如果未更改或传输任何数据，则不存在可衡量的活动。 连接速度因硬件和网络环境而异，但并不取决于存储库的大小或SSL的使用。 在估计初始同步所需的时间或在主节点上同时更改许多数据时，请记住这一点。
 
 #### 安全性 {#security}
 
-假定所有实例都运行在同一个内联网安全区域中，安全漏洞的风险就会大大降低。 但是，可以通过启用从进程和主进程之间的SSL连接来添加额外的安全层。 这样做可以降低数据被中间人破坏的可能性。
+假定所有实例都运行在同一个内联网安全区域中，安全漏洞的风险就会大大降低。 不过，您可以通过启用备用实例和主实例之间的SSL连接来添加额外的安全层。 这样做可以降低数据被中间人破坏的可能性。
 
 此外，您还可以通过限制传入请求的IP地址来指定允许连接的备用实例。 这应该有助于保证内部网中的任何人都无法复制存储库。
 
@@ -102,16 +102,16 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
    1. 检查并删除您在`aem-primary/crx-quickstart/install`下可能具有的任何以前的OSGi配置
 
-   1. 在`aem-primary/crx-quickstart/install`下创建名为`install.primary`的文件夹
+   1. 在`install.primary`下创建名为`aem-primary/crx-quickstart/install`的文件夹
 
    1. 为`aem-primary/crx-quickstart/install/install.primary`下的首选节点存储和数据存储创建所需的配置
    1. 在同一位置创建名为`org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`的文件并相应地对其进行配置。 有关配置选项的详细信息，请参阅[配置](/help/sites-deploying/tarmk-cold-standby.md#configuration)。
 
-   1. 如果您正在将AEM TarMK实例与外部数据存储一起使用，请在`aem-primary/crx-quickstart/install`下创建名为`crx3`的文件夹，名为`crx3`
+   1. 如果您正在将AEM TarMK实例与外部数据存储一起使用，请在`crx3`下创建名为`aem-primary/crx-quickstart/install`的文件夹，该文件夹名为`crx3`
 
    1. 将数据存储配置文件放置到`crx3`文件夹中。
 
-   例如，如果您运行的是具有外部文件数据存储的AEM TarMK实例，则需要以下配置文件：
+   例如，如果您使用外部文件数据存储来运行AEM TarMK实例，则需要以下配置文件：
 
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
    * `aem-primary/crx-quickstart/install/install.primary/org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
@@ -119,7 +119,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
    在下面查找主实例的示例配置：
 
-   **&#x200B;**&#x200B;的示例&#x200B;**org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
+   ****&#x200B;的示例&#x200B;**org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
 
    ```xml
    org.apache.sling.installer.configuration.persist=B"false"
@@ -155,14 +155,14 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 1. 接下来，准备备用实例。 为此，您可以执行与主实例相同的步骤：
 
    1. 删除`aem-standby/crx-quickstart/install`下可能包含的任何文件。
-   1. 在`aem-standby/crx-quickstart/install`下创建名为`install.standby`的文件夹
+   1. 在`install.standby`下创建名为`aem-standby/crx-quickstart/install`的文件夹
 
    1. 创建两个名为的配置文件：
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
 
-   1. 在`aem-standby/crx-quickstart/install`下创建名为`crx3`的文件夹
+   1. 在`crx3`下创建名为`aem-standby/crx-quickstart/install`的文件夹
 
    1. 创建数据存储配置并将其放在`aem-standby/crx-quickstart/install/crx3`下。 在本例中，必须创建的文件是：
 
@@ -293,7 +293,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
 >[!NOTE]
 >
->Adobe建议主资料库和备用资料库具有不同的资料库ID，以便它们可分别用于卸载等服务。
+>Adobe建议主存储库和备用存储库使用不同的存储库ID，以便它们对于卸载等服务可单独识别。
 >
 >确保覆盖范围的最佳方法是删除备用实例上的&#x200B;*sling.id*，然后重新启动实例。
 
@@ -317,7 +317,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
    ```
 
 1. 将新主节点添加到负载平衡器。
-1. 创建并启动新的备用实例。 有关详细信息，请参阅上面有关[创建AEM TarMK冷备用设置](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)的过程。
+1. 创建并启动新的备用实例。 有关详细信息，请参阅上文[创建AEM TarMK冷备用设置](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)中的过程。
 
 ## 将修补程序应用于冷备用设置 {#applying-hotfixes-to-a-cold-standby-setup}
 
@@ -325,7 +325,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
 您可以按照以下列出的步骤执行此操作：
 
-1. 转到JMX控制台并使用&#x200B;**org.apache.jackrabbit.oak： Status (&quot;Standby&quot;)**&#x200B;bean停止冷备用实例上的同步过程。 有关如何执行此操作的更多信息，请参阅[监控](#monitoring)部分。
+1. 转到JMX控制台并使用**org.apache.jackrabbit.oak： Status (&quot;Standby&quot;)**bean停止冷备用实例上的同步过程。 有关如何执行此操作的更多信息，请参阅[监控](#monitoring)部分。
 1. 停止冷备用实例。
 1. 在主实例上安装修补程序。 有关如何安装修补程序的更多详细信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
 1. 安装后，测试实例是否存在问题。
@@ -336,7 +336,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
 ## 监测 {#monitoring}
 
-该功能使用JMX或MBean公开信息。 这样，您可以使用[JMX控制台](/help/sites-administering/jmx-console.md)来检查备用和主设备的当前状态。 可在名为`Status`的`type org.apache.jackrabbit.oak:type="Standby"`的MBean中找到该信息。
+该功能使用JMX或MBean公开信息。 这样，您可以使用[JMX控制台](/help/sites-administering/jmx-console.md)来检查备用和主设备的当前状态。 可在名为`type org.apache.jackrabbit.oak:type="Standby"`的`Status`的MBean中找到该信息。
 
 **待机**
 
@@ -365,7 +365,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
 * `Mode:`始终显示值`primary`。
 
-此外，可以检索与主设备连接的多达10个客户端（备用实例）的信息。 MBean ID是实例的UUID。 这些MBean没有可调用方法，但有一些有用的只读属性：
+此外，可以检索多达10个连接到主服务器的客户机（备用实例）的信息。 MBean ID是实例的UUID。 这些MBean没有可调用方法，但有一些有用的只读属性：
 
 * `Name:`客户端的ID。
 * `LastSeenTimestamp:`文本表示中最后一个请求的时间戳。
@@ -387,7 +387,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 >
 >请勿在待机时运行脱机修订版清理。 它不是必需的，并且不会减小区段存储大小。
 
-Adobe建议定期运行维护以防止存储库随时间推移过度增长。 要手动执行冷备用存储库维护，请执行以下步骤：
+Adobe建议定期运行维护，以防止存储库随着时间的推移而过度增长。 要手动执行冷备用存储库维护，请执行以下步骤：
 
 1. 通过转到JMX控制台并使用&#x200B;**org.apache.jackrabbit.oak：状态（“待机”）** bean停止备用实例上的备用进程。 有关如何执行此操作的更多信息，请参阅上面关于[监控](/help/sites-deploying/tarmk-cold-standby.md#monitoring)的部分。
 
