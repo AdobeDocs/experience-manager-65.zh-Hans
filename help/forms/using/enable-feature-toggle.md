@@ -5,9 +5,9 @@ feature: Adaptive Forms, Foundation Components
 role: User, Developer
 hidefromtoc: true
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 730f8cabd6825ed289238f9000037644a8139301
+source-git-commit: e3901bbcb82b3c05d95b0d2bb8addab049dc3a4e
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '409'
 ht-degree: 3%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 3%
 
 ## 注意事项
 
-从AEM 6.5 SP23开始，您无需安装包[com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/)，因为该包已与Forms加载项一起安装。
+从AEM 6.5 SP23开始，您无需安装包[com.adobe.granite.toggle.impl.dev](http://com.adobe.granite.toggle.impl.dev/)，因为该包已与Forms附加组件AEM Service Pack一起安装。
 
 ## 先决条件
 
