@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f018681e9202a934be2cfa8d426a32014c5ff66f
-workflow-type: ht
-source-wordcount: '6713'
-ht-degree: 100%
+source-git-commit: 9d5ad43703d2fb3c1d40e10578f5289510a18230
+workflow-type: tm+mt
+source-wordcount: '6746'
+ht-degree: 99%
 
 ---
 
@@ -361,6 +361,10 @@ ht-degree: 100%
 * 当用户在 AEM JEE 流程管理器中使用 retryAction（long actionOid）方法时，会出现非预期行为。（FORMS-18357）（FORMS-18187）
 
 * 在 AEM Forms 6.5.21.0 中，PDFG 转化失败，并出现以下错误：（FORMS-16851）（FORMS-14613）
+
+* 在带有修补程序2， (PDFG) PS到PDF和HTML到PDF (WebKit)的AEM Forms 6.5.23.0上转换失败。 （FORMS-21721）
+
+* 在使用修补程序3的AEM Forms 6.5.23.0上， (PDFG)图像到PDF的转换失败。 （FORMS-22029）
 
 #### 表单验证码 {#forms-captcha-6523}
 
@@ -767,6 +771,6 @@ AEM 6.5.21、6.5.22、6.5.23 和 AEM 6.5 LTS GA 随附的 `org.apache.sling.scri
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)

@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
-source-git-commit: b810aadeb2741ff2fba28f81b508637f21feb8f9
-workflow-type: ht
-source-wordcount: '1789'
-ht-degree: 100%
+source-git-commit: 9d5ad43703d2fb3c1d40e10578f5289510a18230
+workflow-type: tm+mt
+source-wordcount: '1989'
+ht-degree: 90%
 
 ---
 
@@ -29,6 +29,48 @@ ht-degree: 100%
     <td><strong>热修复补丁下载链接（AEM 软件分发链接）</strong></td>
     <td><strong>修复的问题</strong></td>
   </tr>
+  <tr>
+    <td>
+      <strong>2025年10月14日</strong><br>
+      <em>应用于：</em> ImgToPdf失败，AEM Forms SP23 Jboss修补程序3(109)<br>
+    </td>
+    <td>
+    <ul> 要解决此问题，请联系[Adobe Experience Manager Forms支持](https://business.adobe.com/in/support/main.html)
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li> <b>(FORMS-22029)：</b>通过解决PDF Generator (PDFG)在升级到带有修补程序3的SP23后无法将图像文件转换为PDF，进而导致意外的后处理错误的问题，提高了PDF转换的可靠性。
+      <ul>
+  <tr>
+    <td>
+      <strong>2025年9月23日</strong><br>
+    </td>
+    <td>
+    <ul>
+    <li><strong>Jboss：</strong></li>
+    <li>Windows — 适用于JBoss JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-jboss.zip">适用于AEM Service Pack 6.5.23.0的修补程序3</a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序3，适用于JBoss JEE服务器<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/jboss/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-jboss.tar.gz"></a></li>
+    <li><strong>Weblogic:</strong></li>
+    <li>Windows — 适用于Weblogic JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-weblogic.zip">适用于AEM Service Pack 6.5.23.0的修补程序3</a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序3，适用于Weblogic JEE服务器<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-weblogic.tar.gz"></a></li>
+    <li><strong>Websphere：</strong></li>
+    <li>Windows — 适用于Websphere JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-websphere.zip">适用于AEM Service Pack 6.5.23.0的修补程序3</a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序3，适用于Websphere JEE服务器<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-websphere.tar.gz"></a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <strong>此热修复补丁解决了以下问题：</strong> 
+    <li> <b>(FORMS-21378)：</b>通过解决在启用服务器端验证(SSV)且计算的Meta信息为空时提交失败的问题，提高了表单提交的可靠性。
+
+<li> <b>(FORMS-21721)：</b>改进了在6.5.23.0之上部署修补程序2后，PS到PDF和HTML到PDF (WebKit)转换失败的问题。 
+    </li>
+    </ul>
+    </td>    
+  </tr>
+    </ul>
+    </td>
   <tr>
     <td>
       <strong>2025 年 8 月 5 日</strong><br>

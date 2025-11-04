@@ -6,10 +6,10 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 62baf682b75823f52f968a70960aff2388d49cad
+source-git-commit: c6d38c682dc45e3dcebef194b3b80510ab10f9e2
 workflow-type: tm+mt
-source-wordcount: '10085'
-ht-degree: 1%
+source-wordcount: '10086'
+ht-degree: 2%
 
 ---
 
@@ -184,12 +184,12 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
    * libc.so.6
    * ld-linux.so.2
    * libexpat.so.1
-* (仅限PDF Generator)要在RHEL 8或RHEL 9设置中启用WebKit路由，32位`nspr`库可能默认不可用；如果不存在，请安装它。
+* (仅限PDF Generator)要在RHEL 8或RHEL 9、SLES15安装程序中启用WebKit路由，默认情况下32位`nspr`库可能不可用；如果不存在，请安装该库。
 
 * (仅限PDF Generator)如果WebToPDF转换在Unix®服务器上失败，并出现以下错误：
 
   ```Auto configuration failed 4143511872:error:0E079065:configuration file routines:DEF_LOAD_BIO:missing equal sign:conf_def.c:362:line 57```
-然后设置以下环境变量并重新启动服务器：
+请设置以下环境变量并重新启动服务器：
   `OPENSSL_CONF=/etc/ssl`
 
 >[!NOTE]
@@ -210,7 +210,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
 >* Adobe Acrobat、Microsoft®Word、Excel和Powerpoint仅适用于Microsoft®Windows。 如果您使用的是基于UNIX的操作系统，请安装OpenOffice以将RTF文件和支持的Microsoft® Office文件转换为PDF文档。
 >* 关闭在安装Adobe Acrobat和第三方软件后显示的所有对话框，这些对话框适用于配置为使用PDF Generator服务的所有用户。
 >* 至少启动一次所有已安装的软件。 关闭配置为使用PDF Generator服务的所有用户的所有对话框。
->* [检查Adobe Acrobat序列号到期日期](https://helpx.adobe.com/cn/enterprise/kb/volume-license-expiration-check.html)并设置更新许可证的日期，或[根据到期日期迁移序列号](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)。
+>* [检查Adobe Acrobat序列号到期日期](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html)并设置更新许可证的日期，或[根据到期日期迁移序列号](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)。
 
 ### 安装Adobe Acrobat Pro DC
 
@@ -891,7 +891,7 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 
 在启用功能限制许可(FRL)并验证Acrobat激活后，建议在Adobe Acrobat中禁用“启动时保护模式”，以确保与AEM Forms PDF Generator兼容。
 
-请按照以下步骤操作：
+执行以下步骤：
 
 1. 在服务器上打开&#x200B;**Adobe Acrobat Pro DC**。
 2. 转到&#x200B;**菜单** > **首选项**。
@@ -905,7 +905,7 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 >
 >服务器端自动化方案(如AEM Forms PDF Generator)需要禁用保护模式。 此设置只能在专用服务器环境中更改，不能在最终用户桌面上更改。
 
-有关详细信息，请参阅[有关保护模式的Adobe文档](https://helpx.adobe.com/cn/acrobat/kb/protected-mode-troubleshooting-reader.html)。
+有关详细信息，请参阅[有关保护模式的Adobe文档](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html)。
 
 
 
@@ -1022,7 +1022,7 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 
 >[!NOTE]
 >
-> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java流程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+> 建议使用 “Ctrl + C” 命令重新启动 SDK。如果使用其他方式（例如停止 Java 进程）重新启动 AEM SDK，则可能会导致 AEM 开发环境出现不一致情况。
 
 ### （仅限Windows）禁用用户帐户控制(UAC) {#disable-user-account-control-uac}
 
@@ -1088,10 +1088,10 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该资源包中包�
    1. 从&#x200B;**[!UICONTROL 解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Forms]**。
    2. 选择包的版本和类型。 您还可以使用&#x200B;**[!UICONTROL 搜索下载]**&#x200B;选项来筛选结果。
 1. 选择适用于您的操作系统的包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
-1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
-1. 选择包并单击&#x200B;**[!UICONTROL 安装]**。
+1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
+1. 选择该包并点击&#x200B;**[!UICONTROL 安装]**。
 
-   您还可以通过[AEM Forms发行版](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)文章中列出的直接链接下载包。
+   您还可以通过[AEM Forms发行版](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)文章中列出的直接链接下载包。
 
 1. 安装包后，系统会提示您重新启动AEM实例。 **不立即停止服务器。**&#x200B;在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止出现在`[AEM-Installation-Directory]/crx-quickstart/logs/error`.log文件中并且日志稳定。
 
@@ -1099,7 +1099,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该资源包中包�
 
 ### 为RSA/BouncyCastle库配置引导委派  {#configure-boot-delegation-for-rsa-bouncycastle-libraries}
 
-1. 停止AEM实例。 导航到[AEM安装目录]\crx-quickstart\conf\文件夹。 打开sling.properties文件进行编辑。
+1. 停止 AEM 实例。导航到[AEM安装目录]\crx-quickstart\conf\文件夹。 打开sling.properties文件进行编辑。
 
    如果您使用`[AEM installation directory]\crx-quickstart\bin\start.bat`启动AEM实例，请编辑位于`[AEM_root]\crx-quickstart\`的sling.properties。
 
@@ -1144,7 +1144,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该资源包中包�
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
-1. 登录到AEM创作实例并导航到&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 配置PDF Generator]**。 默认URL为<http://localhost:4502/libs/fd/pdfg/config/ui.html>。
+1. 登录到AEM创作实例并导航到&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 工具]** > **[!UICONTROL Forms]** > **[!UICONTROL 配置PDF Generator]**。 默认 URL 为 <http://localhost:4502/libs/fd/pdfg/config/ui.html>。
 
    打开&#x200B;**[!UICONTROL 常规配置]**&#x200B;选项卡，并修改以下字段的值以用于环境：
 
@@ -1508,7 +1508,7 @@ Assembler服务依赖于Reader扩展服务、签名服务、Forms服务和输出
 
 +++ -->
 
-+++ 无法在Windows Server上将Word或Excel文件转换为PDF
++++ 在 Windows 服务器上无法将 Word 或 Excel 文件转化为 PDF
 
 当用户尝试在Microsoft Windows Server上将Word或Excel文件转换为PDF时，遇到以下错误：
 
