@@ -39,7 +39,7 @@ ht-degree: 80%
 * [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)
 * [触屏 UI](/help/sites-developing/touch-ui-concepts.md)
-* [ Universal Editor ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [&#x200B; Universal Editor &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [可编辑模板](/help/sites-developing/page-templates-editable.md)
 
 在详细介绍上述概念之前，请先完成本教程。
