@@ -1,5 +1,5 @@
 ---
-title: AEM Forms简介
+title: AEM Forms 简介
 description: 使用此 AEM 6.5 指南创建、管理、发布和更新数字表单。查找有关安装、升级和配置数字表单的帮助，并了解如何创作自适应表单。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,15 +12,15 @@ role: Admin, User, Developer
 source-git-commit: 24523ac85b1ac455f4bdf32a0a725cb99e0de497
 workflow-type: tm+mt
 source-wordcount: '950'
-ht-degree: 15%
+ht-degree: 16%
 
 ---
 
-# AEM Forms简介{#introduction-to-aem-forms}
+# AEM Forms 简介{#introduction-to-aem-forms}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/home.html) |
 | AEM 6.5 | 本文 |
 
 有关AEM Forms中最新功能和增强功能的信息，请参阅[AEM Forms中的新增功能](../../forms/using/whats-new.md)。
@@ -33,11 +33,11 @@ AEM Forms将表单创作、管理和发布与通信管理功能、文档安全�
 
 在大型企业中，通常只创建表单一次，之后通过将它复制到内容管理系统中来进行重用。保持表单的大型数据库处于最新状态并使它们成为可发现的表单是一项巨大的挑战。 AEM提供了一个可自定义的Forms门户，确保客户能够跨Web和移动渠道查找和访问所需的表单。
 
-AEM Forms提供了表单管理工具，这些工具不仅允许您管理自适应表单，而且还允许您管理XFA表单、PDF forms和相关资源。 有关详细信息，请参阅[管理表单简介](../../forms/using/introduction-managing-forms.md)。
+AEM Forms提供了表单管理工具，不仅允许您管理自适应表单，还可管理XFA表单、PDF forms和相关资源。 有关详细信息，请参阅[管理表单简介](../../forms/using/introduction-managing-forms.md)。
 
 >[!NOTE]
 >
->在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=zh-Hans)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
+>在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
 
 ![AEM表单功能](do-not-localize/4th-draft-updated.gif)
 
@@ -57,20 +57,20 @@ AEM Forms提供了表单管理工具，这些工具不仅允许您管理自适�
 
 AEM Forms允许您扩展新表单和现有表单，以创建：
 
-* 像素完美、分页的HTML和看起来几乎像纸张的PDF forms，或者
+* 像素完美、分页的HTML和PDF forms，外观几乎类似于纸张，或者
 * 自动呈现用户设备和浏览器的自适应表单。
 
 **PDF forms**
 
-PDF forms可以离线填写、本地保存以及下次在线时发送的表单数据。 您可以使用2D条形码来捕获表单数据，并使用数字签名来验证用户的真实性。
+PDF forms可以离线填写、本地保存以及在下次在线时发送表单数据。 您可以使用2D条形码来捕获表单数据，并使用数字签名来验证用户的真实性。
 
 **HTML表单**
 
-可以在移动设备和桌面浏览器上查看基于HTML5浏览器的表单。 您可以使用Scribble或eSign服务以电子方式对HTML表单进行签名。
+可以在移动设备和桌面浏览器中查看基于HTML5浏览器的表单。 您可以使用Scribble或eSign服务以电子方式对HTML表单进行签名。
 
 **自适应表单**
 
-自适应表单可以根据需要添加或删除字段或部分，动态地适应用户响应。 AEM允许您重用AdobeXML表单模板来创建自适应表单。
+自适应表单可以根据需要添加或删除字段或部分，动态地适应用户响应。 通过AEM，可重用Adobe XML表单模板创建自适应表单。
 
 ### 支持的功能 {#supported-features}
 
@@ -83,7 +83,7 @@ PDF forms可以离线填写、本地保存以及下次在线时发送的表单�
 * 辅助功能设计和检查
 * 能够在服务器端保存表单
 * 支持文件附件
-* 与用于数据捕获的HTMLWorkspace集成
+* 与用于数据捕获的HTML Workspace集成
 
 ## 离线数据收集 {#offline-data-collection}
 
@@ -95,12 +95,12 @@ AEM Forms提供了Forms Workspace，它是一种移动应用程序，可将您�
 
 **使用Forms Workspace进行离线数据收集的优势**
 
-* 易于使用的HTML工作区应用程序用于任务分配和跟踪
+* 易于使用的HTML Workspace应用程序用于任务分配和跟踪
 * 拖放工作流设计环境
 * 企业内容管理连接器(ECM)
-* 开放标准支持，包括用于将表单数据与企业系统连接起来的XML和SOAP
+* 开放式标准支持，包括用于连接表单数据与企业系统的XML和SOAP
 * 现成的HTML报告可监控积压、工作队列和关键绩效指标(KPI)
-* 可自定义的仪表板，用于实时洞察业务运营
+* 可自定义的仪表板，用于实时insight进入业务运营
 * 用于连接第三方报告工具的API
 
 ![第三份草稿](do-not-localize/3rd-draft.gif)

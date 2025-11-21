@@ -1,5 +1,5 @@
 ---
-title: AEM平台简介
+title: AEM 平台简介
 description: 了解 AEM Platform 及其最重要的组件，包括安装和部署 Adobe Experience Manager 6.5 及其架构，其中包括 Adobe Managed Services 云部署。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,12 +13,12 @@ role: Architect
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '776'
-ht-degree: 4%
+ht-degree: 8%
 
 ---
 
 
-# AEM平台简介{#introduction-to-the-aem-platform}
+# AEM 平台简介{#introduction-to-the-aem-platform}
 
 AEM 6中的AEM平台基于Apache Jackrabbit Oak。
 
@@ -52,7 +52,7 @@ Oak实施[JSR-283](https://jcp.org/en/jsr/detail?id=283) (JCR 2.0)规范。 其�
 Oak核心在存储层中添加了多个层：
 
 * 访问级别控制
-* 搜索和编制索引
+* 搜索和索引
 * 观察
 
 ### OAK JCR {#oak-jcr}
@@ -133,6 +133,6 @@ MongoDB存储会在每次修改时将数据添加到文档。 但是，它仅在
 有关AEM平台的更多信息，另请查看以下文章：
 
 * [在AEM 6中配置节点存储和数据存储](/help/sites-deploying/data-store-config.md)
-* [Oak查询和索引](/help/sites-deploying/queries-and-indexing.md)
-* [AEM 6中的存储元素](/help/sites-deploying/storage-elements-in-aem-6.md)
-* [带有MongoDB的AEM](/help/sites-deploying/aem-with-mongodb.md)
+* [Oak 查询与索引](/help/sites-deploying/queries-and-indexing.md)
+* [AEM 6 中的存储元素](/help/sites-deploying/storage-elements-in-aem-6.md)
+* [AEM 与 MongoDB](/help/sites-deploying/aem-with-mongodb.md)

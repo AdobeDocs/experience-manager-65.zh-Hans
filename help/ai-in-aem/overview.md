@@ -3,15 +3,15 @@ title: AEM 6.5中的人工智能
 description: 了解Adobe Experience Manager 6.5中的AI
 feature: Generative AI, AI Assistant, AI Tools
 role: Admin, Architect, Developer, User
-source-git-commit: ab25ac9701bd138ceb11bb9b11539e950dde02d9
+exl-id: fe05a5f7-8d25-4e1a-b340-9fae3a2ee48a
+source-git-commit: b8ff432e88ffce5246071353961f87c10e8cdb27
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 31%
+ht-degree: 35%
 
 ---
 
-
-# AEM的人工智能 {#ai-in-aem}
+# AEM 中的 AI {#ai-in-aem}
 
 人工智能是Adobe Experience Manager的一个组成部分，用于支持用户查找信息或生成体验。
 

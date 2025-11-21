@@ -13,12 +13,12 @@ role: User,Admin,Architect,Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 11%
+ht-degree: 12%
 
 ---
 
 
-# 作者的首要步骤{#first-steps-for-authors}
+# 作者入门指南{#first-steps-for-authors}
 
 本节概述了在[开始使用Adobe Experience Manager (AEM)创作内容](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)时将使用的主要任务。
 
