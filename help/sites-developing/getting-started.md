@@ -30,16 +30,16 @@ ht-degree: 80%
 
 ![WKND](assets/screen_shot_2018-11-23at152453.png)
 
-[此处提供了 WKND 开发人员教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)，该教程会指导您使用最新技术和最佳实践创建 AEM 项目。
+[此处提供了 WKND 开发人员教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)，该教程会指导您使用最新技术和最佳实践创建 AEM 项目。
 
 ## 核心概念 {#core-concepts}
 
 教程实施利用了 AEM 的许多强大的功能。将使用以下项目实施站点：
 
-* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)
 * [Sling 模型](https://sling.apache.org/documentation/bundles/models.html)
 * [触屏 UI](/help/sites-developing/touch-ui-concepts.md)
-* [&#x200B; Universal Editor &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [&#x200B; Universal Editor &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [可编辑模板](/help/sites-developing/page-templates-editable.md)
 
 在详细介绍上述概念之前，请先完成本教程。
