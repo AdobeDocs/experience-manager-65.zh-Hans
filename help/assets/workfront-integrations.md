@@ -22,7 +22,7 @@ ht-degree: 7%
 
 [!DNL Adobe Workfront]是一个工作管理应用程序，它帮助您在一个地方管理整个工作生命周期。 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 的集成，通过将工作管理与数字资产管理深度融合，帮助组织提升内容产出效率并加快产品上市速度。在 Workfront 的工作管理环境中，用户可以访问所需的文档和图像。
 
-[!DNL Workfront for Experience Manager enhanced connector]支持具有端到端工作流的增强业务流程，并提供个性化的端到端客户端体验和中央存储。 Adobe提供了一个标准连接器和一个增强型连接器，用于集成这两个解决方案。 查看以下支持的功能以进行比较，并查看[ [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)中的新增功能。
+[!DNL Workfront for Experience Manager enhanced connector]支持具有端到端工作流的增强业务流程，并提供个性化的端到端客户端体验和中央存储。 Adobe提供了一个标准连接器和一个增强型连接器，用于集成这两个解决方案。 查看以下支持的功能以进行比较，并查看[&#x200B; [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)中的新增功能。
 
 [!DNL Workfront for Experience Manage enhanced connector]使您的组织能够：
 

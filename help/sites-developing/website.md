@@ -329,7 +329,7 @@ static.css文件和图像的示例
 
 1. 在CRXDE Lite中，在`left.jsp`下创建文件`/apps/mywebsite/components/contentpage`：
 
-   1. 右键单击节点`/apps/mywebsite/components/contentpage`，然后选择**创建**然后选择&#x200B;**创建文件**。
+   1. 右键单击节点`/apps/mywebsite/components/contentpage`，然后选择&#x200B;**创建**&#x200B;然后选择&#x200B;**创建文件**。
 
    1. 在窗口中，键入`left.jsp`作为&#x200B;**名称**，然后单击&#x200B;**确定**。
 
@@ -1530,6 +1530,6 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 保存更改。
-1. 在浏览器中，重新加载** Products**页面。 整个页面如下所示：
+1. 在浏览器中，重新加载 **&#x200B; Products**&#x200B;页面。 整个页面如下所示：
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

@@ -111,7 +111,7 @@ Threads
 
 **监视器[!DNL Experience Manager]**
 
-[!DNL Experience Manager]还通过JMX公开一组统计数据和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关详细信息，请参阅[ JMX MBean上的](/help/sites-administering/jmx-console.md)文档[!DNL Experience Manager]。
+[!DNL Experience Manager]还通过JMX公开一组统计数据和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关详细信息，请参阅[&#x200B; JMX MBean上的](/help/sites-administering/jmx-console.md)文档[!DNL Experience Manager]。
 
 以下是您可以为[!DNL Experience Manager]监视的一些基线参数：
 
