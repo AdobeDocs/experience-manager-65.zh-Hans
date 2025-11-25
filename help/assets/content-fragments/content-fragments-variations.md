@@ -1,18 +1,18 @@
 ---
 title: 变体 – 创作片段内容
-description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容更加灵活。
+description: 了解变体如何允许您为片段创作内容，然后根据用途创建该内容的变体，从而使AEM中的Headless内容变得更加灵活。
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: b611d044c9dab5aa25a3e58cf2447faa42b4b7b6
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 60%
+source-wordcount: '2350'
+ht-degree: 59%
 
 ---
 
-# 变体 – 创作片段内容{#variations-authoring-fragment-content}
+# 变体——创作片段内容{#variations-authoring-fragment-content}
 
 [变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)是AEM内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本，用于特定渠道和/或场景，从而使Headless内容投放更加灵活。
 
@@ -407,8 +407,14 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 要创建变体，请执行以下操作：
 
+>[!NOTE]
+>
+>变体在创作环境中和投放时都会向内容片段添加处理时间。 建议将变体的数量保持在可管理的最小值。
+>
+>最佳实践为每个内容片段不超过10个变量。
+
 1. 打开片段并确保侧面板可见。
-1. 选择&#x200B;**“变体”**&#x200B;图标栏。
+1. 从侧边面板的图标栏中选择&#x200B;**“变体”**。
 1. 选择&#x200B;**“创建变体”**。
 1. 将打开一个对话框，为新变体指定&#x200B;**标题**&#x200B;和&#x200B;**描述**。
 1. 选择 **添加**，片段&#x200B;**主要内容**&#x200B;会被复制到新变体中，该变体现在打开进行[编辑](#editing-a-variation)。
@@ -468,7 +474,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
->同步仅可将更改&#x200B;*从&#x200B;**母版**&#x200B;复制到变体*。
+>同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
 >
 >仅会同步变体的当前元素。
 >
