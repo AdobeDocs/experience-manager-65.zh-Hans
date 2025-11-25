@@ -37,7 +37,7 @@ ht-degree: 73%
 * 为多个根目录分支创建启动项。虽然您可以为整个站点创建启动项（并从中做出更改），但由于需要复制整个站点，因此这可能不切实际。当涉及数百甚至数千个页面时，系统要求和性能会受到复制操作以及后续提升任务所需的比较操作的影响。
 * 嵌套启动项（一个启动项嵌套在另一个启动项中），以便能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
-本节介绍如何从站点控制台或[启动项控制台](/help/sites-authoring/launches-creating.md#deleting-a-launch)中创建、编辑和提升(如有必要，还介绍删除[1}启动项页面：](#the-launches-console)
+本节介绍如何从站点控制台或[启动项控制台](/help/sites-authoring/launches-creating.md#deleting-a-launch)中创建、编辑和提升(如有必要，还介绍删除[1&rbrace;启动项页面：](#the-launches-console)
 
 * [创建启动项](/help/sites-authoring/launches-creating.md)
 * [编辑启动项](/help/sites-authoring/launches-editing.md)

@@ -149,7 +149,7 @@ ht-degree: 73%
 >
 >产品建议是目标组件的内容。
 
-体验显示在“受众”窗格中。在以下示例中，体验包 **括Default**、 **Female**、Female 30 **岁以上的体验和****** Female 30以下的体验。此示例显示了目标图像组件的默认 **产品建议** 。
+体验显示在“受众”窗格中。在以下示例中，体验包 **括Default**、 **Female**、Female 30 **岁以上的体验和**&#x200B;**&#x200B;** Female 30以下的体验。此示例显示了目标图像组件的默认 **产品建议** 。
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -297,7 +297,7 @@ ht-degree: 73%
    >管理员可以决定是否需要在&#x200B;**https://&lt;主机>：&lt;端口>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**&#x200B;处设置此配置
    >
    >
-   >要要求用户输入位置，请选中**强制位置**复选框。
+   >要要求用户输入位置，请选中&#x200B;**强制位置**&#x200B;复选框。
 
 1. 选择要为其创建产品建议的体验。
 1. 创建产品建议：
@@ -563,13 +563,13 @@ ht-degree: 73%
    * **指定的日期和时间**：特定的时间。选择此选项时，单击日历图标，选择日期，然后指定活动结束时间。
 
 1. 要指定活动的优先级，请使用滑块选择&#x200B;**低**、**标准**&#x200B;或&#x200B;**高。**
-1. 如果您已使用Adobe帐户配置Adobe Target Anaytics，则会显示&#x200B;**报告Source**&#x200B;下拉菜单。 选 **择Adobe Target****或Adobe Analytics** 作为源。
+1. 如果您已使用Adobe帐户配置Adobe Target Anaytics，则会显示&#x200B;**报告Source**&#x200B;下拉菜单。 选 **择Adobe Target**&#x200B;**或Adobe Analytics** 作为源。
 
    如果选择 **Adobe Analytics**，请选择公司和报表包。如果选择 **Adobe Target**，则不需要执行任何操作。
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. 在“目 **标量度** ”区域的“我的主要目标 **** ”下，选择要跟踪的成功量度——转化率、收入、参与度——并输入度量的度量方式（或受众采取什么操作指示已达到目标）。请参阅上表中目标量度的定义，并参阅 [Adobe Target成功量度相关文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 。
+1. 在“目 **标量度** ”区域的“我的主要目标 **&#x200B;**&#x200B;”下，选择要跟踪的成功量度——转化率、收入、参与度——并输入度量的度量方式（或受众采取什么操作指示已达到目标）。请参阅上表中目标量度的定义，并参阅 [Adobe Target成功量度相关文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 。
 
    您可以通过单击右上角的三个圆点，然后选择&#x200B;**重命名**&#x200B;来重命名目标。
 

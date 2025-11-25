@@ -389,7 +389,7 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
   ![异步页面移动](assets/asynchronous-page-move.png)
 
-可在&#x200B;[**全局导航** > ](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)工具&#x200B;**>**&#x200B;操作&#x200B;**>**&#x200B;作业&#x200B;**的**&#x200B;异步作业状态&#x200B;**仪表板**&#x200B;中检查异步作业的状态
+可在&#x200B;[**全局导航** > &#x200B;](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations)工具&#x200B;**>**&#x200B;操作&#x200B;**>**&#x200B;作业&#x200B;**的**&#x200B;异步作业状态&#x200B;**仪表板**&#x200B;中检查异步作业的状态
 
 >[!NOTE]
 >
