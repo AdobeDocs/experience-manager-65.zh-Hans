@@ -293,7 +293,7 @@ ht-degree: 5%
 1. 在`/apps/livecycle/core/content/login`中添加新图像。 要添加图像，请执行以下操作：
 
    1. 安装WebDAV客户端。
-   1. 使用webDAV客户端导航到`/apps/livecycle/core/content/login`文件夹。 有关详细信息，请参阅[WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)。
+   1. 使用webDAV客户端导航到`/apps/livecycle/core/content/login`文件夹。 有关详细信息，请参阅[WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=zh-Hans)。
 
    1. 添加新图像。
 

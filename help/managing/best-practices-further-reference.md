@@ -28,12 +28,12 @@ ht-degree: 100%
 
 ### AEM 内的功能 {#features-within-aem}
 
-在实施 AEM（尤其是首次实施）时，请查看 [AEM 的功能和工作流](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)，以确保明确您所需要或希望使用的功能领域。
+在实施 AEM（尤其是首次实施）时，请查看 [AEM 的功能和工作流](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)，以确保明确您所需要或希望使用的功能领域。
 
 请考虑您正在使用的 AEM 功能，以及它们对设计的影响。例如：
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)
 * [Assets](/help/assets/assets.md)
 * [标记](/help/sites-administering/tags.md)
 * [多站点管理和翻译](/help/sites-administering/msm-and-translation.md)

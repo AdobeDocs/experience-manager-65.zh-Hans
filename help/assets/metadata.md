@@ -19,7 +19,7 @@ ht-degree: 10%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 <!-- Scope of metadata articles:
@@ -36,9 +36,9 @@ ht-degree: 10%
 
 以下方法可用于向数字资源添加元数据：
 
-* 首先，创建资产的本机应用程序向其添加一些元数据。 例如，[Acrobat将一些元数据](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html)添加到PDF文件，或者相机将一些基本元数据添加到照片。 在生成资源时，可以将元数据添加到本机应用程序本身。 例如，您可以在Adobe Lightroom[中](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)添加IPTC元数据。
+* 首先，创建资产的本机应用程序向其添加一些元数据。 例如，[Acrobat将一些元数据](https://helpx.adobe.com/cn/acrobat/using/pdf-properties-metadata.html)添加到PDF文件，或者相机将一些基本元数据添加到照片。 在生成资源时，可以将元数据添加到本机应用程序本身。 例如，您可以在Adobe Lightroom[中](https://helpx.adobe.com/cn/lightroom-classic/help/metadata-basics-actions.html)添加IPTC元数据。
 
-* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[中查看如何 [!DNL Adobe Bridge]在](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) [中使用元数据并查看 [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的[!DNL Adobe Exchange]标记面板。
+* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[中查看如何 [!DNL Adobe Bridge]在](https://helpx.adobe.com/cn/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) [中使用元数据并查看 [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的[!DNL Adobe Exchange]标记面板。
 
 * 在[!DNL Experience Manager Assets]中，您可以在[!UICONTROL 属性]页面中手动添加或编辑资源的元数据。
 
@@ -241,7 +241,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >
 >* [元数据概念和了解](metadata-concepts.md)。
 >* [编辑多个收藏集的元数据属性](manage-collections.md#editing-collection-metadata-in-bulk)
->* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
+>* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=zh-Hans)
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 

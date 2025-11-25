@@ -17,7 +17,7 @@ ht-degree: 7%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Workfront]是一个工作管理应用程序，它帮助您在一个地方管理整个工作生命周期。 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 的集成，通过将工作管理与数字资产管理深度融合，帮助组织提升内容产出效率并加快产品上市速度。在 Workfront 的工作管理环境中，用户可以访问所需的文档和图像。
@@ -40,7 +40,7 @@ ht-degree: 7%
 >
 >* Adobe可能会发布对[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此连接器冗余；如果发生这种情况，客户可能需要从使用此连接器过渡。
 >
->* Adobe支持增强型连接器版本1.7.4及更高版本。 不支持以前的预发行版和自定义版本。 要检查增强型连接器版本，请导航到`digital.hoodoo`包管理器[的左窗格中可用的](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en)组。
+>* Adobe支持增强型连接器版本1.7.4及更高版本。 不支持以前的预发行版和自定义版本。 要检查增强型连接器版本，请导航到`digital.hoodoo`包管理器[的左窗格中可用的](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)组。
 >
 >* 查看Experience Manager Assets增强型连接器的[Workfront合作伙伴认证考试](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)。 有关考试的信息，请参阅[考试指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)。
 

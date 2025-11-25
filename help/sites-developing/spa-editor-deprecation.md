@@ -65,7 +65,7 @@ Adobe已在AEM 6.5的[版本6.5.23，](/help/release-notes/release-notes.md#spa-
 * **面向未来：** AEM 的路线图优先将通用编辑器作为可视化编辑器。采用这个编辑器可以确保获得最新的创新和增强功能。
 * **更简单的集成：**&#x200B;使用通用编辑器不需要 AEM 专用的 SDK，从而减少了技术栈锁定。
 * **自带应用程序：**&#x200B;通用编辑器支持任何 Web 框架或架构，无需复杂的重构即可采用。
-* **可扩展性：**&#x200B;通用编辑器获益于一个强大的[扩展框架，](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)包括与生成式 AI、Workfront 等的集成。
+* **可扩展性：**&#x200B;通用编辑器获益于一个强大的[扩展框架，](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)包括与生成式 AI、Workfront 等的集成。
 
 没有从SPA编辑器直接迁移到通用编辑器的路径。 这是由于两种技术之间存在根本差异。
 
