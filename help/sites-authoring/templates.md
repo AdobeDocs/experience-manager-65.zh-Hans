@@ -146,7 +146,7 @@ AEM现在提供两种基本类型的模板：
 
 >[!CAUTION]
 >
->切勿在模板中输入任何需要[国际化](/help/sites-developing/i18n.md)的信息。 出于内部化的目的，建议使用核心组件[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)本地化功能。
+>切勿在模板中输入任何需要[国际化](/help/sites-developing/i18n.md)的信息。 出于内部化的目的，建议使用核心组件[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)本地化功能。
 
 ### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
@@ -604,7 +604,7 @@ AEM现在提供两种基本类型的模板：
 >
 >初始内容用于准备组件和页面布局，这将作为创建内容的起点。初始内容不能作为保持原样的实际内容。因此，无法翻译初始内容。
 >
->如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
+>如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)。
 
 ### 编辑模板 – 布局 – 模板作者 {#editing-a-template-layout-template-author}
 

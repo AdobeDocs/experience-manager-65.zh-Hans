@@ -16,8 +16,8 @@ ht-degree: 35%
 
 富文本编辑器 (RTE) 是将文本内容插入到 AEM 中的基本构建块。它是多个组件的基础，包括：
 
-* [文本](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
-* [表格](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [文本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/wcm-components/text)
+* [表格](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/wcm-components/text#table)
 
 ## 就地编辑  {#in-place-editing}
 

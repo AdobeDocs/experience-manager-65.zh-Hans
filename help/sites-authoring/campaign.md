@@ -260,7 +260,7 @@ ht-degree: 2%
 
 要将在AEM中创建的页面链接到来自Adobe Campaign的电子邮件，请执行以下操作：
 
-1. 根据特定于AEM的电子邮件模板创建电子邮件。 有关详细信息，请参阅[在Adobe Campaign Standard中创建电子邮件](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html)。
+1. 根据特定于AEM的电子邮件模板创建电子邮件。 有关详细信息，请参阅[在Adobe Campaign Standard中创建电子邮件](https://helpx.adobe.com/cn/campaign/standard/channels/using/creating-an-email.html)。
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 

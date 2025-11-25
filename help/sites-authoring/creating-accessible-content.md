@@ -68,11 +68,11 @@ ht-degree: 81%
 
 #### 如何达到标准 – 非文本内容 (1.1.1) {#how-to-meet-non-text-content}
 
-对于静态图形，基本的要求是为图形提供对等的替换文本。可以在&#x200B;**替换文本**&#x200B;字段中完成此操作。 例如，查看核心组件&#x200B;**[图像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**。
+对于静态图形，基本的要求是为图形提供对等的替换文本。可以在&#x200B;**替换文本**&#x200B;字段中完成此操作。 例如，查看核心组件&#x200B;**[图像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hans)**。
 
 >[!NOTE]
 >
->某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
+>某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hans)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hans#accessibility-tab)**&#x200B;选项卡）。
 >
 >因此，在为 AEM 实例实施这些版本时，开发团队必须将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅[添加对其他 HTML 元素和属性的支持](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)）。
 
