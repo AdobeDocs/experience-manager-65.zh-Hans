@@ -9,9 +9,9 @@ docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: ht
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '6926'
 ht-degree: 100%
 
@@ -64,15 +64,15 @@ Adobe 支持门户允许实施合作伙伴和客户将 AEM 实施作为项目在
 
 ### AEM 认证考试 {#aem-certification-exam}
 
-确保相关角色已注册参加相应的[认证考试](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
+确保相关用户画像已注册参加相应的[认证考试](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
 
 ### AEM 认证 {#aem-certified}
 
-确保相关角色已通过相应的[认证考试](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
+确保相关用户画像已通过相应的[认证考试](https://training.adobe.com/certification/exams.html#p=1&solution=adobeExperienceManager)。
 
 ### AEM 技术培训 {#aem-technical-training}
 
-为相关角色提供技术培训，例如开发人员、架构师、工程师和业务从业人员。
+为相关用户画像提供技术培训，例如开发人员、架构师、工程师和业务从业人员。
 
 ### 就 KPI 作为项目目标达成一致 {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -195,7 +195,7 @@ Adobe 支持门户允许实施合作伙伴和客户将 AEM 实施作为项目在
 
 * 项目的范围
 * 所有客户期望
-* 这是在项目各角色、各阶段做出决策的依据
+* 这是在项目各用户画像、各阶段做出决策的依据
 
 ### 业务关键绩效指标 {#business-kpis}
 
@@ -232,15 +232,15 @@ Adobe 支持门户允许实施合作伙伴和客户将 AEM 实施作为项目在
 
 ### 传达操作手册 {#communicate-operations-manual}
 
-确保所有相关角色/人员已收到操作手册。
+确保所有相关用户画像/角色已收到操作手册。
 
 ### 传达性能测试报告 {#communicate-performance-test-report}
 
-确保所有相关角色/人员已收到性能测试报告。
+确保所有相关用户画像/角色已收到性能测试报告。
 
 ### 传达发行说明 {#communicate-release-notes}
 
-确保所有相关角色/人员已收到发行说明。
+确保所有相关用户画像/角色已收到发行说明。
 
 ### 向团队传达范围与期望 {#communicate-scope-and-expectations-to-team}
 
@@ -248,7 +248,7 @@ Adobe 支持门户允许实施合作伙伴和客户将 AEM 实施作为项目在
 
 ### 传达培训材料与用户指南 {#communicate-training-materials-and-user-guides}
 
-确保所有相关角色/人员已收到培训材料和用户指南。
+确保所有相关用户画像/角色已收到培训材料和用户指南。
 
 ### 符合客户安全要求 {#compliance-with-customer-security-requirements}
 
@@ -407,7 +407,7 @@ Adobe 支持门户允许实施合作伙伴和客户将 AEM 实施作为项目在
 
 * 项目的范围
 * 所有客户期望
-* 在项目各角色、各阶段下作出所有决策的依据
+* 在项目各用户画像、各阶段下作出所有决策的依据
 
 ### 对话框规范 {#dialogs-specification}
 
@@ -863,9 +863,9 @@ Adobe 支持门户允许实施合作伙伴和客户将 AEM 实施作为项目在
 
 测试结果必须符合已定义的 KPI 和性能预期。
 
-### 基于用户角色的测试概念 {#persona-based-testing-concept}
+### 基于用户画像的测试概念 {#persona-based-testing-concept}
 
-基于用户角色的测试是基于体验设计中定义的不同用户角色开展测试的方法。同时它还会验证帐户及其对应的权限级别。
+基于用户画像的测试是基于体验设计中概述的不同用户画像开展测试的方法。同时它还会验证帐户及其对应的权限级别。
 
 此方法常用于用户验收测试（UAT）。
 
@@ -1352,11 +1352,11 @@ AEM 会保留资产和内容的多个版本。清理规则的设计和配置是�
 
 ### 理解项目范围与期望 {#understands-scope-of-project-and-expectations}
 
-相关角色应确认其充分理解：
+相关用户画像应确认其充分理解：
 
 * 项目的范围
 * 所有客户期望
-* 这是项目中每个角色在各个阶段做出所有决策的依据
+* 这是项目中每个用户画像在各个阶段做出所有决策的依据
 
 ### URL 处理概念 {#url-handling-concept}
 

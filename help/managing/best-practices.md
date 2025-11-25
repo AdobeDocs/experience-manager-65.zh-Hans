@@ -9,9 +9,9 @@ docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: ht
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '3212'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 * 一份[交互式清单](/help/managing/best-practices-checklist.md)，用于跟踪并监控您在这些最佳做法上的推进进度。
 
-   * 按项目阶段、里程碑与角色定义输入与可交付结果。
+   * 按项目阶段、里程碑与用户画像定义输入与可交付结果。
    * 提供自动化概述（质量、健康度与完整度），以指示进度与项目健康状况。
 
 * 基于该[清单](/help/managing/best-practices-checklist.md)的文档会详细说明以下内容：
@@ -33,7 +33,7 @@ ht-degree: 100%
    * [项目节奏](#projectheartbeat)分析。
    * [按角色划分的状态](#status-by-role)概述。
    * [阶段和里程碑](#phases-and-milestones)。
-   * [关键角色](#persona)及其在各（相关）阶段的参与情况。
+   * [关键用户画像](#persona)及其在各（相关）阶段的参与情况。
    * [所需文档与可交付结果](#required-documents-and-deliverables)的[术语表](/help/managing/best-practices-glossary.md)。
 
 * 可供[进一步参考](/help/managing/best-practices-further-reference.md)的资料，提供特定领域的详细信息。
@@ -56,13 +56,13 @@ ht-degree: 100%
 
 ## 按角色划分的状态 {#status-by-role}
 
-**按角色划分的状态**&#x200B;工作表按&#x200B;**[阶段](#phases-and-milestones)**&#x200B;与&#x200B;**[角色](#persona)**&#x200B;维度，细分展示&#x200B;[**健康度**、**质量与&#x200B;**完整度**](#projectheartbeat)。
+**按角色划分的状态**&#x200B;工作表按&#x200B;**[阶段](#phases-and-milestones)**&#x200B;与&#x200B;**[用户画像](#persona)**&#x200B;维度，细分展示&#x200B;[**健康度**、**质量与&#x200B;**完整度**](#projectheartbeat)。
 
 ## 阶段和里程碑 {#phases-and-milestones}
 
 项目计划会被划分为清晰的（高层级）阶段。
 
-每个阶段都包含相应的里程碑。针对每个[角色](#persona)，列出了相关的里程碑，以及为产出既定可交付结果所需的文档。
+每个阶段都包含相应的里程碑。针对每个[用户画像](#persona)（或角色），列出了相关的里程碑，以及为产出既定可交付结果所需的文档。
 
 >[!NOTE]
 >
@@ -126,7 +126,7 @@ ht-degree: 100%
 
 * **交接**
 
-  顺畅的交接可确保相关角色/团队清楚自身在项目中的职责。
+  顺畅的交接可确保相关用户画像/团队清楚自身在项目中的职责。
 
   应提供或生成完整的细节，使其充分了解包括路线图、范围、目标、需求及关键绩效指标（KPI）在内的所有相关内容。
 
@@ -188,7 +188,7 @@ ht-degree: 100%
 
    * 各环境的流程；例如部署与维护要求
    * 维护活动（数据存储垃圾回收、TarPM 优化等）
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 缓存
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 缓存
    * [集群](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)发布/作者共享
    * 客户端性能优化（JS 压缩、合并、CSS Sprite、HTTP 请求总数等）
 
@@ -239,7 +239,7 @@ ht-degree: 100%
 
   在开发开始之前，应建立所有与部署、发布、测试和问题报告相关的支持流程。
 
-  另请参阅 [Adobe 支持门户](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)。
+  另请参阅 [Adobe 支持门户](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)。
 
 ### 运营规划与运营 {#operations-planning-and-operations}
 
@@ -342,7 +342,7 @@ ht-degree: 100%
 
 * **沟通**
 
-  确保所有团队成员和项目角色在必要时都能及时获得最新信息。
+  确保所有团队成员和项目用户画像在必要时都能及时获得最新信息。
 
 * **文档**
 
@@ -460,11 +460,11 @@ ht-degree: 100%
 
   准备并执行冒烟测试。
 
-## 角色 {#persona}
+## 用户画像 {#persona}
 
-这些清单是按照角色设计的。这些角色在项目生命周期中扮演着重要作用。
+这些清单是按照用户画像设计的。这些角色在项目生命周期中扮演着重要作用。
 
-另外还有一些[其他角色](#other-persona)，他们会参与特定任务。
+另外还有一些[其他用户画像](#other-persona)，他们会参与特定任务。
 
 ### 项目赞助者 {#project-sponsor}
 
@@ -484,7 +484,7 @@ ht-degree: 100%
 
 * 根据项目赞助者提供的需求（如范围、KPI、成功标准与定义），全面负责项目投放。
 * 负责制定预算并基于预算分配资源。
-* 作为项目中所有角色的主要沟通接口。
+* 项目中所有用户画像的主要沟通接口。
 
 ### 架构师 {#architect}
 
@@ -549,7 +549,7 @@ ht-degree: 100%
 * 负责解决方案的整体安全概念，确保其符合客户的各项需求与策略。
 * 提供安全概念与安全运营方案，并就基于硬件的安全措施（如分区与防火墙）提供建议。
 
-### 其他角色 {#other-persona}
+### 其他用户画像 {#other-persona}
 
 * 利益相关者
 
@@ -580,22 +580,22 @@ ht-degree: 100%
 该清单涵盖了每个里程碑所需的&#x200B;**必需文档**&#x200B;与&#x200B;**可交付结果**。
 
 * 两者之间并非 1:1 对应关系；例如，一组必需文档可能对应一个可交付结果。
-* 某个角色的可交付结果在同一里程碑中可能成为另一个角色的必需文档。
+* 某个用户画像的可交付结果在同一里程碑中可能成为另一个用户画像的必需文档。
 
 ### 必需文件 {#required-documents}
 
-**必需文档**&#x200B;是在相应角色产出可交付结果时所需的资料。
+**必需文档**&#x200B;是在相应用户画像产出可交付结果时所需的资料。
 
-对于每份&#x200B;**必需文档**，相关角色应标明：
+对于每份&#x200B;**必需文档**，相关用户画像应标明：
 
 * **Y/N**：是否已接收。
 * **1-3**：对所接收文档质量的评价。
 
 ### 可交付结果 {#deliverables}
 
-在每个里程碑中，相应角色需交付特定文档，从而履行该具体里程碑的职责。
+在每个里程碑中，相应用户画像需交付特定文档，从而履行该具体里程碑的职责。
 
-对于每个&#x200B;**可交付结果**，相关角色必须标明：
+对于每个&#x200B;**可交付结果**，相关用户画像必须标明：
 
 * **Y/N**：是否已完成。
 
@@ -628,8 +628,8 @@ ht-degree: 100%
 
       * [开发——基础知识](/help/sites-developing/the-basics.md)
       * [MSM 概念](/help/sites-administering/msm.md)
-      * [HTML 模板语言（HTL）](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)
+      * [HTML 模板语言（HTL）](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * 相关文档
 
-   * Adobe Experience Cloud - [Adobe Experience Cloud 规划](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=zh-Hans)
+   * Adobe Experience Cloud - [Adobe Experience Cloud 规划](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

@@ -4,11 +4,11 @@ description: 使用 AEM 内容片段模型定义内容片段的结构，也就�
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 78%
+ht-degree: 81%
 
 ---
 
@@ -41,12 +41,12 @@ Assets文件夹用于[组织传统内容资源](/help/assets/manage-assets.md)�
 1. 在&#x200B;**属性**&#x200B;窗口中，选择 **Cloud Services** 选项卡。
 1. 对于&#x200B;**云配置**，选择[您之前创建的配置。](create-configuration.md)
    ![配置资源文件夹](assets/assets-folder-configure.png)
-1. 单击“**保存并关闭**”。
+1. 单击&#x200B;**保存并关闭**。
 1. 在确认窗口中单击&#x200B;**确定**。
 
    ![确认窗口](assets/assets-folder-confirmation.png)
 
-您可以在创建的文件夹中创建其他子文件夹。 子文件夹将继承父文件夹的&#x200B;**云配置**。但是，如果您希望使用来自其他配置的模型，则可以覆盖此项。
+您可以在创建的文件夹中创建其他子文件夹。子文件夹将继承父文件夹的&#x200B;**云配置**。但是，如果您希望使用来自其他配置的模型，则可以覆盖此项。
 
 如果您使用本地化的站点结构，则可以在新文件夹下[创建语言根](/help/assets/multilingual-assets.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: Dynamic Media图像配置文件
+title: Dynamic Media 图像轮廓
 description: 创建包含钝化蒙版和/或智能裁切或智能色板设置的图像配置文件，然后将配置文件应用到图像资源的文件夹。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -9,14 +9,14 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a4c95d604e63c4fd00f17d2fb99a9e46f823ca10
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3063'
 ht-degree: 4%
 
 ---
 
-# Dynamic Media图像配置文件 {#image-profiles}
+# Dynamic Media 图像轮廓 {#image-profiles}
 
 上传图像时，您可以通过将图像配置文件应用到文件夹来在上传时自动裁切图像。
 
@@ -27,7 +27,7 @@ ht-degree: 4%
 
 ## 裁切选项 {#crop-options}
 
-对图像实施智能裁剪时，Adobe建议采用以下最佳实践并强制实施以下限制：
+当您对图像实施智能裁剪时，Adobe建议采用以下最佳实践并强制实施以下限制：
 
 | 限制类型 | 最佳实践 | 施加的限制 |
 | --- | --- | --- |
@@ -39,10 +39,10 @@ ht-degree: 4%
 
 智能裁剪坐标与纵横比相关。 对于图像配置文件中的各种智能裁剪设置，如果图像配置文件中添加的维度的纵横比相同，则会将相同的纵横比发送到Dynamic Media。 Adobe建议您使用相同的裁切区域。 这样做可以确保对图像配置文件中使用的不同尺寸没有影响。
 
-您创建的每个智能裁剪生成都需要额外的处理。 例如，添加五个以上的智能裁切长宽比可能会导致资源摄取速度缓慢。 它还会导致系统负载增加。 由于您可以在文件夹级别应用智能裁切，因此Adobe建议您仅在需要它的文件夹&#x200B;*上*&#x200B;使用它。
+您创建的每个智能裁剪生成都需要额外的处理。 例如，添加五个以上的智能裁切长宽比可能会导致资源摄取速度缓慢。 它还会导致系统负载增加。 由于您可以在文件夹级别应用智能裁切，因此Adobe建议您仅在所需的文件夹&#x200B;*上*&#x200B;使用智能裁切。
 
 **在图像配置文件中定义智能裁剪的准则**
-为了控制智能裁切的使用情况，并优化裁切的处理时间和存储，Adobe建议遵循以下准则和提示：
+为了控制智能裁切使用情况，并优化裁切的处理时间和存储，Adobe建议执行以下准则和提示：
 
 * 要应用智能裁剪的图像资源必须至少为50 x 50像素或更大。
 * 理想情况下，每个图像可以有10-15种智能裁剪，以优化屏幕比例和处理时间。
@@ -56,16 +56,16 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->* Adobe建议您查看任何生成的裁切和色板，以确保它们合适且与您的品牌和价值观相关。
+>* Adobe建议您查看任何生成的裁切和色板，以确保它们合适并与您的品牌和价值观相关。
 >* 智能裁剪不支持CMYK图像格式。
 
 | 选项 | 何时使用 | 描述 |
 | --- | --- | --- |
 | 像素裁剪 | 仅根据尺寸批量裁切图像。 | 要使用此选项，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 像素裁切]**。<br><br>若要从图像侧面裁切，请输入要从图像任何侧面或每侧面裁切的像素数。 裁切图像的数量取决于图像文件中的ppi（每英寸像素数）设置。<br><br>图像配置文件像素裁切按以下方式呈现：<br>·值为“顶部”、“底部”、“左侧”和“右侧”。<br>·左上角被视为`0,0`，像素裁切将从此处计算。<br>·裁切起点：左为X，上为Y<br>·水平计算：原始图像的水平像素维度减去Left，再减去Right。<br>·垂直计算：垂直像素高度减去“顶部”，然后减去“底部”。<br><br>例如，假设您有4000 x 3000像素的图像。 您可以使用以下值：Top=250、Bottom=500、Left=300、Right=700。<br><br>从左上(300,250)裁切，使用填充空间（4000-300-700、3000-250-500或3000,2250）。 |
-| 智能裁切 | 根据视觉焦点批量裁切图像。 | 智能裁剪利用Adobe Sensei中的人工智能的强大功能快速批量自动裁剪图像。 智能裁切会自动检测并裁切到任何图像中的焦点，以捕获预期的目标点，而不管屏幕大小如何。</p> <p>要使用智能裁切，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 智能裁切]**，然后启用（打开）响应式图像裁切的右侧。</p> <p>大型、Medium和小型的默认断点大小通常涵盖大部分图像在移动设备和平板电脑设备、桌面和横幅上使用的完整大小。 如果需要，可以编辑“大”、“Medium”和“小”的默认名称。</p> <p>要添加更多断点，请选择&#x200B;**[!UICONTROL 添加裁切]**&#x200B;以删除裁切，选择“垃圾桶”图标。 |
-| 颜色和图像样本 | 批量为每个图像生成图像样本。 | **注意**： Dynamic Media Classic不支持智能色板。<br><br>从显示颜色或纹理的产品图像自动定位并生成高质量色板。<br><br>要使用颜色和图像样本，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 智能裁切]**，然后在颜色和图像样本的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入一个像素值。<br><br>虽然所有图像裁剪都可以从“呈现版本”边栏中使用，但样本只能通过“复制URL”功能使用。 使用您自己的查看组件渲染网站上的色板。 (此规则的例外是轮播横幅。 Dynamic Media为轮播横幅中使用的样本提供查看组件。)<br><br>**使用图像样本**<br>&#x200B;图像样本的URL简单明了。 它是：<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>，其中`:Swatch`已附加到资产请求。<br><br>**使用色板**<br>&#x200B;要使用色板，您发出了包含以下内容的`req=userdata`请求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色板资源：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>，以下是色板资源对应的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>`req=userdata`响应如下：<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>您还可以请求采用XML或JSON格式的`req=userdata`响应，如以下相应的URL示例所示：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意：**&#x200B;创建您自己的WCM组件以请求所表示的色板并解析`SmartSwatchColor`属性，以24位RGB的十六进制值表示。<br><br>另请参阅查看器参考指南[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)中的`userdata`。 |
+| 智能裁剪 | 根据视觉焦点批量裁切图像。 | 智能裁剪利用Adobe Sensei中的人工智能的强大功能快速批量自动裁剪图像。 智能裁切会自动检测并裁切到任何图像中的焦点，以捕获预期的目标点，而不管屏幕大小如何。</p> <p>要使用智能裁切，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 智能裁切]**，然后启用（打开）响应式图像裁切的右侧。</p> <p>大型、Medium和小型的默认断点大小通常涵盖大部分图像在移动设备和平板电脑设备、桌面和横幅上使用的完整大小。 如果需要，可以编辑“大”、“Medium”和“小”的默认名称。</p> <p>要添加更多断点，请选择&#x200B;**[!UICONTROL 添加裁切]**&#x200B;以删除裁切，选择“垃圾桶”图标。 |
+| 颜色和图像样本 | 批量为每个图像生成图像样本。 | **注意**： Dynamic Media Classic不支持智能色板。<br><br>从显示颜色或纹理的产品图像自动定位并生成高质量色板。<br><br>要使用颜色和图像样本，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 智能裁切]**，然后在颜色和图像样本的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入一个像素值。<br><br>虽然所有图像裁剪都可以从“呈现版本”边栏中使用，但样本只能通过“复制URL”功能使用。 使用您自己的查看组件渲染网站上的色板。 (此规则的例外是轮播横幅。 Dynamic Media为轮播横幅中使用的样本提供查看组件。)<br><br>**使用图像样本**<br>&#x200B;图像样本的URL简单明了。 它是：<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>，其中`:Swatch`已附加到资产请求。<br><br>**使用色板**<br>&#x200B;要使用色板，您发出了包含以下内容的`req=userdata`请求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色板资源：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>，以下是色板资源对应的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>`req=userdata`响应如下：<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>您还可以请求采用XML或JSON格式的`req=userdata`响应，如以下相应的URL示例所示：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意：**&#x200B;创建您自己的WCM组件以请求所表示的色板并解析`SmartSwatchColor`属性，以24位RGB十六进制值表示。<br><br>另请参阅查看器参考指南[`userdata`中的](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)。 |
 
-## USM 锐化 {#unsharp-mask}
+## 钝化蒙版 {#unsharp-mask}
 
 使用&#x200B;**[!UICONTROL 钝化蒙版]**&#x200B;对最终取样缩小的图像微调锐化滤镜效果。 您可以控制效果的强度、效果的半径（以像素为单位）以及被忽略的对比度阈值。 此效果使用与Adobe Photoshop的&#x200B;*钝化蒙版*&#x200B;滤镜相同的选项。
 
@@ -99,7 +99,7 @@ ht-degree: 4%
 
    使用专用于其目标用途的配置文件名称。 例如，如果要创建仅生成样本的配置文件，即禁用（关闭）智能裁切并启用（打开）颜色和图像样本，请使用配置文件名称“智能样本”。
 
-   另请参阅[智能裁切和智能色板选项](#crop-options)和[钝化蒙版](#unsharp-mask)。
+   另请参阅[智能裁剪和智能色板选项](#crop-options)和[钝化蒙版](#unsharp-mask)。
 
    ![裁切](assets/crop.png)
 
@@ -132,7 +132,7 @@ ht-degree: 4%
 
 您可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中将图像配置文件应用到文件夹，或者如果您在文件夹中，也可以从&#x200B;**[!UICONTROL 属性]**。 本节将介绍这两种将图像配置文件应用到文件夹的方法。
 
-如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
 如果文件夹已具有您后来更改的现有视频配置文件，您可以重新处理该文件夹中的资产。 查看编辑文件夹中用于处理资产的配置文件后[重新处理该文件夹中的资产](processing-profiles.md#reprocessing-assets)。
 
@@ -143,13 +143,13 @@ ht-degree: 4%
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. 选择&#x200B;**[!UICONTROL 将处理配置文件应用到文件夹]**，然后选择一个或多个要用来接收新上传资源的文件夹，然后选择&#x200B;**[!UICONTROL 应用]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 选择&#x200B;**[!UICONTROL 将处理配置文件应用到文件夹]**，然后选择一个或多个要用来接收新上传资源的文件夹，然后选择&#x200B;**[!UICONTROL 应用]**。 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
 #### 从“属性”将Dynamic Media图像配置文件应用到文件夹 {#applying-image-profiles-to-folders-from-properties}
 
 1. 选择Experience League徽标并导航到&#x200B;**[!UICONTROL Assets]**。 然后导航到要应用图像配置文件的文件夹的父文件夹。
 1. 在文件夹上，选中复选标记以将其选中，然后选择&#x200B;**[!UICONTROL 属性]**。
-1. 选择&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中选择配置文件，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+1. 选择&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中选择配置文件，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -276,9 +276,9 @@ ht-degree: 4%
 
 ### 通过属性从文件夹中删除Dynamic Media图像配置文件 {#removing-image-profiles-from-folders-via-properties}
 
-1. 选择Experience Manager徽标并导航&#x200B;**[!UICONTROL Assets]**，然后转到要删除图像配置文件的文件夹。
+1. 选择Experience Manager徽标并导航&#x200B;**[!UICONTROL Assets]**，然后转到要将图像配置文件从中删除的文件夹。
 1. 在文件夹上，选中复选标记以将其选中，然后选择&#x200B;**[!UICONTROL 属性]**。
 1. 选择&#x200B;**[!UICONTROL 图像配置文件]**&#x200B;选项卡。
 1. 从&#x200B;**[!UICONTROL 配置文件名称]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 无]**，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
-   如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。
+   如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。

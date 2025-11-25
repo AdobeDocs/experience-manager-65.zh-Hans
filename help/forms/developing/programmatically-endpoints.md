@@ -1,6 +1,6 @@
 ---
 title: 以编程方式管理端点
-description: 使用“端点注册”服务可以添加EJB端点、添加SOAP端点、添加“观察文件夹”端点、添加“电子邮件”端点、添加“远程处理”端点、添加“任务管理器”端点、修改端点、删除端点以及检索端点连接器信息。
+description: 使用“端点注册”服务可以添加EJB端点、添加SOAP端点、添加Watched Folder端点、添加电子邮件端点、添加远程端点、添加Task Manager端点、修改端点、删除端点以及检索端点连接器信息。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,9 +9,9 @@ role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '10800'
+source-wordcount: '10799'
 ht-degree: 1%
 
 ---
@@ -28,12 +28,12 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 * SOAP
 * 观察文件夹
 * 电子邮件
-* (在AEM表单中已弃用)远程处理
+* (已在AEM表单中弃用)远程处理
 * 任务管理器
 
 >[!NOTE]
 >
->SOAP、EJB和(已为JEE上的AEM Forms弃用)远程端点会自动为每个激活的服务创建。 SOAP和EJB端点为所有服务操作启用SOAP和EJB。
+>SOAP、EJB和(不用于JEE上的AEM Forms)远程端点会自动为每个激活的服务创建。 SOAP和EJB端点为所有服务操作启用SOAP和EJB。
 
 远程端点使Flex客户端能够调用对该端点所添加到的AEM Forms服务的操作。 将创建与端点同名的Flex目标，并且Flex客户端可以创建指向此目标的RemoteObjects以调用对相关服务的操作。
 
@@ -144,7 +144,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 1. 启用端点。
 
-   通过调用`EndpointRegistryClient`对象的enable方法并传递`createEndpoint`方法返回的`Endpoint`对象来启用终结点。
+   通过调用`EndpointRegistryClient`对象的enable方法并传递`Endpoint`方法返回的`createEndpoint`对象来启用终结点。
 
 **另请参阅**
 
@@ -158,7 +158,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 ## 添加SOAP端点 {#adding-soap-endpoints}
 
-您可以使用AEM Forms Java API以编程方式将SOAP端点添加到服务。 通过添加SOAP端点，可以使客户端应用程序使用SOAP模式调用该服务。 即，在设置调用AEM Forms所需的连接属性时，可以选择SOAP模式。
+您可以使用AEM Forms Java API以编程方式将SOAP端点添加到服务。 通过添加SOAP端点，您可以使客户端应用程序能够使用SOAP模式调用服务。 也就是说，在设置调用AEM Forms所需的连接属性时，您可以选择SOAP模式。
 
 >[!NOTE]
 >
@@ -166,11 +166,11 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 >[!NOTE]
 >
->通常，SOAP端点会默认添加到服务。但是，SOAP端点可以添加到以编程方式部署的进程中，或者在删除SOAP端点且必须再次添加时。
+>通常，SOAP端点会默认添加到服务，但是SOAP端点可以添加到以编程方式部署的进程中，或者在删除了SOAP端点且必须再次添加时。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
-要向服务添加SOAP端点，请执行以下任务：
+要将SOAP端点添加到服务，请执行以下任务：
 
 1. 包括项目文件。
 1. 创建`EndpointRegistryClient`对象。
@@ -197,7 +197,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 **设置SOAP终结点属性**
 
-要向服务添加SOAP端点，请指定以下值：
+要将SOAP端点添加到服务，请指定以下值：
 
 * **连接器标识符值**：指定要创建的终结点的类型。 要创建SOAP端点，请指定`SOAP`。
 * **描述**：指定终结点描述。
@@ -245,11 +245,11 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 1. 创建SOAP端点。
 
-   通过调用`EndpointRegistryClient`对象的`createEndpoint`方法并传递`CreateEndpointInfo`对象来创建终结点。 此方法返回表示新SOAP终结点的`Endpoint`对象。
+   通过调用`EndpointRegistryClient`对象的`createEndpoint`方法并传递`CreateEndpointInfo`对象来创建终结点。 此方法返回表示新SOAP端点的`Endpoint`对象。
 
 1. 启用端点。
 
-   通过调用`EndpointRegistryClient`对象的enable方法启用终结点，并传递`createEndpoint`方法返回的`Endpoint`对象。
+   通过调用`EndpointRegistryClient`对象的enable方法启用终结点，并传递`Endpoint`方法返回的`createEndpoint`对象。
 
 **另请参阅**
 
@@ -263,13 +263,13 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 ## 添加观察文件夹端点 {#adding-watched-folder-endpoints}
 
-您可以使用AEM Forms Java API以编程方式将观察文件夹端点添加到服务。 通过添加“观察文件夹”端点，用户可以将文件(如PDF文件)放置在文件夹中。 将文件放在文件夹中后，将调用配置的服务并操作文件。 服务执行指定的操作后，将修改的文件保存在指定的输出文件夹中。 观察文件夹配置为按固定速率间隔或按cron时间表进行扫描，例如每周一、周三和周五中午。
+您可以使用AEM Forms Java API以编程方式将观察文件夹端点添加到服务。 通过添加Watched Folder端点，用户可以将文件(如PDF文件)放置在文件夹中。 将文件放在文件夹中后，将调用配置的服务并操作文件。 服务执行指定的操作后，将修改的文件保存在指定的输出文件夹中。 观察文件夹配置为按固定速率间隔或按cron时间表进行扫描，例如每周一、周三和周五中午。
 
 为了以编程方式将Watched Folder端点添加到服务，请考虑以下名为&#x200B;*EncryptDocument*&#x200B;的短暂进程。 (请参阅[了解AEM Forms流程](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)。)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-此进程接受不安全的PDF文档作为输入值，然后将不安全的PDF文档传递到加密服务的`EncryptPDFUsingPassword`操作。 PDF文档使用密码进行加密，而密码加密的PDF文档是此过程的输出值。 输入值(不安全的PDF文档)的名称为`InDoc`，数据类型为`com.adobe.idp.Document`。 输出值(密码加密的PDF文档)的名称为`SecuredDoc`，数据类型为`com.adobe.idp.Document`。
+此进程接受不安全的PDF文档作为输入值，然后将不安全的PDF文档传递到加密服务的`EncryptPDFUsingPassword`操作。 PDF文档使用密码进行加密，并且经过密码加密的PDF文档是此过程的输出值。 输入值(不安全的PDF文档)的名称为`InDoc`，数据类型为`com.adobe.idp.Document`。 输出值(密码加密的PDF文档)的名称为`SecuredDoc`，数据类型为`com.adobe.idp.Document`。
 
 >[!NOTE]
 >
@@ -449,7 +449,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 1. 启用端点。
 
-   通过调用`EndpointRegistryClient`对象的`enable`方法并传递`createEndpoint`方法返回的`Endpoint`对象来启用终结点。
+   通过调用`EndpointRegistryClient`对象的`enable`方法并传递`Endpoint`方法返回的`createEndpoint`对象来启用终结点。
 
 **另请参阅**
 
@@ -566,7 +566,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 * **userName**：从电子邮件调用目标服务时使用的用户名。 默认值为 `SuperAdmin`。
 * **domainName**：必需的配置值。 默认值为 `DefaultDom`。
 * **domainPattern**：指定提供程序接受的传入电子邮件的域模式。 例如，如果使用`adobe.com`，则仅处理来自adobe.com的电子邮件，而忽略来自其他域的电子邮件。
-* **filePattern**：指定提供程序接受的传入文件附件模式。 这包括具有特定文件扩展名(&amp;amp；ast；.dat、&amp;amp；ast；.xml)的文件、具有特定名称（数据）的文件以及名称和扩展名中包含复合表达式的文件(&amp;amp；ast；)。[d][aA]&#39;端口&#39;)。 默认值为 `*`。
+* **filePattern**：指定提供程序接受的传入文件附件模式。 这包括具有特定文件扩展名(&amp;amp；ast；.dat、&amp;amp；ast；.xml)的文件、具有特定名称（数据）的文件以及名称和扩展名中包含复合表达式的文件(&amp;amp；ast；)。``[dD][aA]``&#39;端口&#39;)。 默认值为 `*`。
 * **recipientSuccessfulJob**：发送消息以指示作业成功的电子邮件地址。 默认情况下，成功的工作消息将始终发送给发件人。 如果键入`sender`，则将电子邮件结果发送给发件人。 最多支持100个收件人。 指定具有电子邮件地址的其他收件人，每个收件人之间用逗号分隔。 要关闭此选项，请将此值留空。 在某些情况下，您可能希望触发一个进程，而不希望收到关于结果的电子邮件通知。 默认值为 `sender`。
 * **recipientFailedJob**：发送消息以指示失败的作业的电子邮件地址。 默认情况下，始终将失败的作业消息发送给发件人。 如果键入`sender`，则将电子邮件结果发送给发件人。 最多支持100个收件人。 指定具有电子邮件地址的其他收件人，每个收件人之间用逗号分隔。 要关闭此选项，请将此值留空。 默认值为 `sender`。
 * **inboxHost**：要扫描的电子邮件提供程序的收件箱主机名或IP地址。
@@ -583,7 +583,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 * **charSet**：电子邮件提供商使用的字符集。 默认值为 `UTF-8`。
 * **smtpSSLEnabled**：设置此值以强制电子邮件提供商在发送结果或错误的通知邮件时使用SSL。 确保SMTP主机支持SSL。
 * **failedJobFolder**：指定当SMTP邮件服务器不工作时，用于存储结果的目录。
-* **asynchronous**：当设置为synchronous时，将处理所有输入文档并返回单个响应。 当设置为异步时，将为处理的每个输入文档发送响应。 例如，为本主题中介绍的流程创建了一个电子邮件端点，并会向端点的收件箱发送一封电子邮件，其中包含了多个不安全的PDF文档。 当所有PDF文档都使用密码加密时，如果端点配置为同步，则会发送一条响应电子邮件消息，其中附加所有安全的PDF文档。 如果端点配置为异步，则会为每个受保护PDF文档发送单独的响应电子邮件消息。 每封电子邮件都包含一个PDF文档作为附件。 默认值为asynchronous。
+* **asynchronous**：当设置为synchronous时，将处理所有输入文档并返回单个响应。 当设置为异步时，将为处理的每个输入文档发送响应。 例如，会为本主题中引入的流程创建一个电子邮件端点，并会向端点的收件箱发送一封电子邮件，其中包含了多个不安全的PDF文档。 使用密码对所有PDF文档进行加密后，如果端点配置为同步，则会发送一封响应电子邮件，其中附加所有安全的PDF文档。 如果端点配置为异步，则会为每个受保护的PDF文档发送单独的响应电子邮件消息。 每封电子邮件都包含一个PDF文档作为附件。 默认值为asynchronous。
 
 **定义输入参数值**
 
@@ -694,7 +694,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 1. 启用端点。
 
-   通过调用`EndpointRegistryClient`对象的`enable`方法并传递`createEndpoint`方法返回的`Endpoint`对象来启用终结点。
+   通过调用`EndpointRegistryClient`对象的`enable`方法并传递`Endpoint`方法返回的`createEndpoint`对象来启用终结点。
 
 **另请参阅**
 
@@ -750,15 +750,15 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 >[!NOTE]
 >
->JEE上的AEM表单已弃用LiveCycle RemotingAPI。
+>JEE上的AEM表单弃用LiveCycle Remoting API。
 
-您可以使用AEM Forms Java API以编程方式将远程端点添加到服务。 通过添加远程端点，您可以使Flex应用程序通过使用远程来调用服务。 (请参阅[使用调用AEM Forms(不推荐用于AEM表单)AEM Forms远程处理](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
+您可以使用AEM Forms Java API以编程方式将远程端点添加到服务。 通过添加远程端点，您可以使Flex应用程序通过使用远程来调用服务。 (请参阅[使用AEM Forms调用(AEM Forms已弃用) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
 
 为了以编程方式将远程端点添加到服务，请考虑以下名为&#x200B;*EncryptDocument*&#x200B;的短暂进程。
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-此进程接受不安全的PDF文档作为输入值，然后将不安全的PDF文档传递到加密服务的`EncryptPDFUsingPassword`操作。 PDF文档使用密码进行加密，而密码加密的PDF文档是此过程的输出值。 输入值(不安全的PDF文档)的名称为`InDoc`，数据类型为`com.adobe.idp.Document`。 输出值(密码加密的PDF文档)的名称为`SecuredDoc`，数据类型为`com.adobe.idp.Document`。
+此进程接受不安全的PDF文档作为输入值，然后将不安全的PDF文档传递到加密服务的`EncryptPDFUsingPassword`操作。 PDF文档使用密码进行加密，并且经过密码加密的PDF文档是此过程的输出值。 输入值(不安全的PDF文档)的名称为`InDoc`，数据类型为`com.adobe.idp.Document`。 输出值(密码加密的PDF文档)的名称为`SecuredDoc`，数据类型为`com.adobe.idp.Document`。
 
 为了演示如何向服务添加远程端点，本节将远程端点添加到名为EncryptDocument的服务。
 
@@ -847,7 +847,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 1. 启用端点。
 
-   通过调用`EndpointRegistryClient`对象的`enable`方法并传递`createEndpoint`方法返回的`Endpoint`对象来启用终结点。
+   通过调用`EndpointRegistryClient`对象的`enable`方法并传递`Endpoint`方法返回的`createEndpoint`对象来启用终结点。
 
 **另请参阅**
 
@@ -968,7 +968,7 @@ Endpoint Registry服务提供了以编程方式管理端点的功能。 例如�
 
 1. 启用端点。
 
-   通过调用`EndpointRegistryClient`对象的`enable`方法并传递`createEndpoint`方法返回的`Endpoint`对象来启用终结点。
+   通过调用`EndpointRegistryClient`对象的`enable`方法并传递`Endpoint`方法返回的`createEndpoint`对象来启用终结点。
 
 **另请参阅**
 

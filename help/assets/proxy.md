@@ -1,19 +1,19 @@
 ---
-title: '[!DNL Assets]代理开发'
+title: '[!DNL Assets] 代理开发'
 description: 代理是使用代理工作程序处理作业的 [!DNL Experience Manager] 实例。 了解如何配置 [!DNL Experience Manager] 代理、支持的操作、代理组件以及如何开发自定义代理工作程序。
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
 solution: Experience Manager, Experience Manager Assets
 feature: Proxy Workers
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
 
 ---
 
-# [!DNL Assets]代理开发 {#assets-proxy-development}
+# [!DNL Assets] 代理开发 {#assets-proxy-development}
 
 [!DNL Adobe Experience Manager Assets]使用代理为特定任务分配处理。
 
@@ -117,7 +117,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 >[!NOTE]
 >
->有关详细信息，请参阅[InDesign Server代理工作程序配置](indesign.md#configuring-the-proxy-worker-for-indesign-server)和[Cloud Service配置](../sites-developing/extending-cloud-config.md)。
+>有关详细信息，请参阅[InDesign Server Proxy Worker配置](indesign.md#configuring-the-proxy-worker-for-indesign-server)和[Cloud Services配置](../sites-developing/extending-cloud-config.md)。
 
 以下是API用法的示例：
 
@@ -136,7 +136,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 ### 开发自定义的代理工作程序 {#developing-a-customized-proxy-worker}
 
-[IDS代理worker](indesign.md)是现成提供的[!DNL Assets]代理worker的示例，用于外包InDesign资源的处理。
+[IDS代理工作程序](indesign.md)是现成提供的[!DNL Assets]代理工作程序的示例，用于外包InDesign资产的处理。
 
 您还可以开发和配置自己的[!DNL Assets]代理工作程序，以创建一个专门的工作程序来分派和外包您的[!DNL Assets]处理任务。
 
@@ -160,7 +160,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 
 >[!NOTE]
 >
->在以下步骤中，InDesign等效项作为参考示例表示。
+>在以下步骤中，将InDesign的对等项表示为参考示例。
 
 1. 已使用[Sling作业](https://sling.apache.org/site/eventing-and-jobs.html)，因此您需要为用例定义作业主题。
 
@@ -188,4 +188,4 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
 >
 >结果同步：
 >
->如果n个实例使用相同的代理，则处理结果将保留在代理中。 客户端(Experience Manager作者)的作业将使用在创建作业时提供给客户端的相同唯一作业ID来请求结果。 代理只需完成作业并将结果保留为可请求的结果即可。
+>如果n个实例使用相同的代理，则处理结果将保留在代理中。 客户端(Experience Manager Author)的作业是使用在创建作业时提供给客户端的相同唯一作业ID来请求结果。 代理只需完成作业并将结果保留为可请求的结果即可。

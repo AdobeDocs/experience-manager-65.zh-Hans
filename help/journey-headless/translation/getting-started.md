@@ -4,8 +4,8 @@ description: 了解如何组织您的 Headless 内容以及 AEM 的翻译工具�
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1472'
 ht-degree: 89%
@@ -63,7 +63,7 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 >
 >在 Headless 项目的一开始就规划翻译。尽早与项目经理和内容架构师密切合作。
 >
->国际化项目经理可能需为一个单独的角色，其职责是定义应翻译的内容、不应翻译的内容以及哪些已翻译内容可由区域或本地内容制作者修改。
+>国际化项目经理可能需为一个单独的用户画像，其职责是定义应翻译的内容、不应翻译的内容以及哪些已翻译内容可由区域或本地内容制作者修改。
 
 ## AEM 存储 Headless 内容的方式 {#headless-content-in-aem}
 
@@ -88,7 +88,6 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 1. **内容片段模型编辑器**&#x200B;将打开。
    1. 左列包含模型的字段。我们对此列感兴趣。
    1. 右列包含可添加到模型中的字段。我们可以忽略此列。
-
       ![内容片段模型编辑器](assets/content-fragment-model-editor.png)
 1. 单击模型的其中一个字段。 AEM 会标记该字段，其详细信息会显示在右列中。
    ![内容片段模型编辑器详细信息](assets/content-fragment-model-editor-detail.png)
@@ -196,4 +195,4 @@ AEM 的内容（无论是 Headless 还是传统网页）都由其结构推动。
 * [管理翻译项目](/help/sites-administering/tc-manage.md) – 了解如何在 AEM 中创建和管理机器翻译项目和人工翻译项目。
 * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-hans)

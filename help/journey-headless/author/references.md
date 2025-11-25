@@ -1,11 +1,11 @@
 ---
 title: 了解如何在内容片段中使用引用
-description: 了解如何在内容片段中对内容、其他片段和其他资源（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
+description: 了解如何在内容片段中对内容、其他片段和其他资产（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '722'
 ht-degree: 95%
@@ -16,7 +16,7 @@ ht-degree: 95%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 [AEM Headless 内容作者历程](overview.md)的开头，[简介](introduction.md)涵盖了与针对 Headless 进行创作相关的基本概念和术语。
+在 [AEM Headless 内容创作历程](overview.md)的开头，[简介](introduction.md)涵盖了与针对 Headless 进行创作相关的基本概念和术语。
 
 您已学习 Headless CMS 创作的基础知识，并大致了解如何使用 AEMaaCS 进行创作，尤其是创作内容片段。
 
@@ -28,13 +28,13 @@ ht-degree: 95%
 * **目标**：介绍如何在 Headless CMS 创作中使用引用。提供了哪些类型的引用，它们的作用是什么：
 
    * 内容引用
-   * 资源/媒体引用
+   * 资产/媒体引用
    * 片段引用
    * 文本块中的临时引用
 
 ## 什么是引用？ {#what-are-references}
 
-引用只是一种用于连接资源的机制，无论它是其他内容、资源（如图像）还是其他片段。虽然非常相似，但仍有些许不同。
+引用只是一种用于连接资源的机制，无论它是其他内容、资产（如图像）还是其他片段。虽然非常相似，但仍有些许不同。
 
 一些引用具有专用数据类型（例如，内容引用和片段引用），而其他引用只是作为引用内容添加到文本块中（资源引用和临时引用）。
 
@@ -44,11 +44,11 @@ ht-degree: 95%
 
 内容引用仅用于此目的，可让您引用任何其他内容。 这将打开一个浏览器，其中您可选择内容项。
 
-## 资源/媒体引用 {#assets-media-references}
+## 资产/媒体引用 {#assets-media-references}
 
-可以使用&#x200B;**插入资源**&#x200B;选项在文本块中引用资源（例如，图像或媒体）。这将打开一个浏览器，其中您可选择资源。
+可以使用&#x200B;**插入资产**&#x200B;选项在文本块中引用资产（例如，图像或媒体）。这将打开一个浏览器，其中您可选择资产。
 
-![内容片段 – 插入资源](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
+![内容片段 – 插入资产](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## 片段引用 {#fragment-references}
 
@@ -78,7 +78,7 @@ ht-degree: 95%
 
 ### 如何创作嵌套片段 {#author-nested-fragment}
 
-创作片段引用非常简单（尽管该字段通常将不被标记为&#x200B;**片段引用**）。您可以直接键入引用，或者（更有可能）选择文件夹图标以打开浏览器，以便导航并选择所需的片段。
+创作片段引用非常简单（尽管该字段通常将不赋予&#x200B;**片段引用**&#x200B;标签）。您可以直接键入引用，或者（更有可能）选择文件夹图标以打开浏览器，以便导航并选择所需的片段。
 
 ![内容片段 – 引用](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 

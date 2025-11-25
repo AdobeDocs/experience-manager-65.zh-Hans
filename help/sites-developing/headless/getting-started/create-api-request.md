@@ -4,8 +4,8 @@ description: 了解如何使用AEM的Assets REST API管理内容片段，以及�
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '548'
 ht-degree: 43%
@@ -21,7 +21,7 @@ ht-degree: 43%
 [现在您已经创建了一些内容片段，](create-content-fragment.md)您可以使用 AEM 的 API 以 Headless 的方式投放它们。
 
 * [GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)允许您创建请求来访问和交付内容片段。
-   * 若要使用此项，必须在AEM[&#128279;](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)中定义和启用端点，如有必要，还必须安装[GraphiQL接口](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)。
+   * 若要使用此项，必须在AEM[中定义和启用](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)端点，如有必要，还必须安装[GraphiQL接口](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface)。
 * [Assets REST API](/help/assets/assets-api-content-fragments.md) 让您创建和修改内容片段（及其他资源）。
 
 本指南的剩余部分侧重于 GraphQL 访问和内容片段投放。
@@ -35,9 +35,8 @@ ht-degree: 43%
 
 1. GraphiQL是GraphQL的浏览器中查询编辑器。 您可以使用它来构建查询，以检索内容片段，并将它们作为JSON无意识地交付。
    * 左侧面板允许您构建查询。
-   * 右侧窗格显示结果。
+   * 右侧面板显示结果。
    * 查询编辑器具备代码完成和热键功能，可以轻松地执行查询。
-
      ![GraphiQL 编辑器](assets/graphiql.png)
 
 1. 假定您创建的模型名为 `person`，带有字段 `firstName`、`lastName` 和 `position`，您可以构建简单的查询来检索内容片段的内容。
@@ -67,8 +66,7 @@ ht-degree: 43%
 1. 单击：
    * 页面右上方的&#x200B;**文档**&#x200B;显示上下文中的文档，帮助您构建适应您自己的模型的查询。
    * 顶部工具栏中的&#x200B;**History**&#x200B;显示以前的查询。
-   * **另存为**&#x200B;和&#x200B;**保存**&#x200B;以保存您的查询，之后您可以从&#x200B;**持久查询**&#x200B;面板和&#x200B;**Publish**&#x200B;中列出和检索它们。
-
+   * **另存为**&#x200B;和&#x200B;**保存**&#x200B;以保存您的查询，之后您可以从&#x200B;**持久查询**&#x200B;面板和&#x200B;**发布**中列出和检索它们。
      ![GraphiQL 文档](assets/graphiql-documentation.png)
 
 GraphQL 启用结构化查询，不仅针对特定数据集或者单独的数据对象，而且还可以提供对象的特定元素，嵌套结果，提供查询变量支持，以及诸多功能。

@@ -2,18 +2,18 @@
 title: 网络注意事项和要求
 description: 讨论设计 [!DNL Adobe Experience Manager Assets] 部署时的网络注意事项。
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1010'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# [!DNL Assets]网络注意事项 {#assets-network-considerations}
+# [!DNL Assets] 网络注意事项 {#assets-network-considerations}
 
 了解您的网络与了解[!DNL Adobe Experience Manager Assets]一样重要。 网络可能会影响上传、下载和用户体验。 绘制网络拓扑图有助于识别网络中的瓶颈点和次优化区域，您必须修复这些区域才能提高网络性能和改善用户体验。
 
@@ -52,7 +52,7 @@ ht-degree: 0%
 
 ![chlimage_1-355](assets/chlimage_1-355.png)
 
-请务必考虑Internet和VPC连接上的未知因素，因为由于高峰负载或大规模提供商的中断，Internet上的带宽可能会受损。 一般来说，Internet连接是可靠的。 但是，它有时可能会引入瓶颈。
+请务必考虑Internet和VPC连接上的未知因素，因为通过Internet的带宽可能会因峰值负载或大规模提供商中断而受损。 一般来说，Internet连接是可靠的。 但是，它有时可能会引入瓶颈。
 
 在从企业网络到互联网的上行链路上，可以使用带宽进行其他服务。 了解可为Assets专用或优先使用的带宽量非常重要。 例如，如果1 Gbps链路的利用率已经达到80%，则您最多只能为[!DNL Experience Manager Assets]分配20%的带宽。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 设计[!DNL Experience Manager]环境的拓扑需要详细了解系统配置以及用户环境中网络的连接方式。
 
-此示例场景包括一个具有五台服务器的发布场、一个配置了S3二进制存储区和Dynamic Media。
+此示例场景包括一个发布场，其中配置了五台服务器、一个S3二进制存储区和一个Dynamic Media。
 
 Dispatcher与两个实体（外部世界和[!DNL Experience Manager]部署）共享其100Mbps连接。 对于同时上载和下载操作，应将此数字除以2。 连接的外部存储使用单独的连接。
 

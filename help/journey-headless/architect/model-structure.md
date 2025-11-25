@@ -4,8 +4,8 @@ description: 了解使用内容片段模型对 Headless CMS 进行内容建模�
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 92%
@@ -80,7 +80,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 >[!NOTE]
 >
->请参阅“其他资源 – 内容片段模型”。
+>请参阅“其他资源——内容片段模型”。
 
 ## 管理内容片段模型 {#managing-content-fragment-models}
 
@@ -88,8 +88,8 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 管理内容片段模型涉及：
 
-* 启用（或禁用）内容片段模型 – 这使作者在创建内容片段时能够使用它们。
-* 删除 - 始终需要执行删除操作，但您需要注意删除已用于内容片段的模型，特别是已发布的片段。
+* 启用（或禁用）内容片段模型——这使作者在创建内容片段时能够使用它们。
+* 删除——始终需要执行删除操作，但您需要注意删除已用于内容片段的模型，特别是已发布的片段。
 
 ## 发布 {#publishing}
 

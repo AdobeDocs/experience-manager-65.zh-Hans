@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Architect,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 650131b88e06d59e6c206e07b8512149cd360b08
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '6772'
 ht-degree: 99%
@@ -233,11 +233,11 @@ ht-degree: 99%
 
 ### [!DNL Assets]{#assets-6523}
 
-* 在 [!DNL AEM] 内部部署版（6.5.22.0）导航页面中，选择![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets &#x200B;]**&#x200B;后，进入&#x200B;**[!UICONTROL &#x200B;搜索 Adobe Stock &#x200B;]**&#x200B;文件夹并选择一张 Stock 图像后，会出现以下问题：
+* 在 [!DNL AEM] 内部部署版（6.5.22.0）导航页面中，选择![Assets](/help/assets/assets/Smock_Asset_18_N.svg)**[!UICONTROL Assets ]**后，进入**[!UICONTROL &#x200B;搜索 Adobe Stock ]**文件夹并选择一张 Stock 图像后，会出现以下问题：
    * 点击&#x200B;**[!UICONTROL 许可并保存]**&#x200B;时下拉菜单为空，所选 Stock 图像无法获得许可和保存。
    * 选择 Stock 图像或重新输入 Stock 页面 URL 时，会被重定向到 [!DNL AEM] 主页，导致无法访问 Adobe Stock 图像。（ASSETS-48687）
 * 在 [!DNL AEM] 本地部署版（6.5.22.0）导航页面中，如果文件夹名称中包含 `/`，则在管理文件夹时会出现问题。（ASSETS-46740）
-* 在 [!DNL AEM] 6.5 中，从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**&#x200B;视图进入资产详情页时，由于内存占用过高，页面无法加载。（ASSETS-46738）
+* 在 [!DNL AEM] 6.5 中，从![收藏集](/help/assets/assets/Smock_Collection_18_N.svg)**[!UICONTROL 收藏集&#x200B;]**视图进入资产详情页时，由于内存占用过高，页面无法加载。（ASSETS-46738）
 * 修复了与 [!DNL InDesign] 的集成问题，因为 `Day CQ DAM Mime Type OSGI` 服务此前错误地将 [!DNL InDesign] 文件识别为 `x-adobe-indesign`，而非 `x-indesign`。（ASSETS-45953）
 * [!DNL AEM 6.5.21] 中的会话泄漏问题追溯到开箱即用的&#x200B;**[!UICONTROL 定期发布到 Brand Portal]**&#x200B;工作流步骤。（ASSETS-44104）
 * 在处理和发布图像时 [!DNL AEM] 中出现&#x200B;**[!UICONTROL 内存不足（OOM）]** 错误的问题。该问题是由在工作流中使用已弃用的方法引起的，例如 **[!DNL Dam Asset update]** 和 **[!DNL Dynamic Media: Reprocess assets]**。（ASSETS-43343）
@@ -362,9 +362,9 @@ ht-degree: 99%
 
 * 在 AEM Forms 6.5.21.0 中，PDFG 转化失败，并出现以下错误：（FORMS-16851）（FORMS-14613）
 
-* 在AEM Forms 6.5.23.0上，(PDFG) PS到PDF和HTML到PDF (WebKit)转换失败。 要解决此问题，请从[Adobe Experience Manager Forms修补程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)下载并安装修补程序(FORMS-21721)
+* 在AEM Forms 6.5.23.0上，(PDFG) PS到PDF和HTML到PDF (WebKit)转换失败。 要解决此问题，请从[Adobe Experience Manager Forms修补程序](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)下载并安装修补程序(FORMS-21721)
 
-* 在AEM Forms 6.5.23.0上，(PDFG)图像到PDF的转换失败。 要解决此问题，请从[Adobe Experience Manager Forms修补程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)下载并安装修补程序(FORMS-22029)
+* 在AEM Forms 6.5.23.0上，(PDFG)图像到PDF的转换失败。 要解决此问题，请从[Adobe Experience Manager Forms修补程序](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/release-notes/aem-forms-hotfix)下载并安装修补程序(FORMS-22029)
 
 #### 表单验证码 {#forms-captcha-6523}
 
@@ -586,7 +586,7 @@ ht-degree: 99%
 
 ## 已弃用和已移除的功能{#removed-deprecated-features}
 
-请参阅[已弃用和已移除的功能](/help/release-notes/deprecated-removed-features.md/)，以获取 AEM 6.5 中所有已弃用或已移除功能的详细列表。
+请参阅[已弃用和已移除的功能](/help/release-notes/deprecated-removed-features.md)，以获取 AEM 6.5 中所有已弃用或已移除功能的详细列表。
 
 ### SPA 编辑器 {#spa-editor}
 
@@ -594,7 +594,7 @@ ht-degree: 99%
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -771,6 +771,6 @@ AEM 6.5.21、6.5.22、6.5.23 和 AEM 6.5 LTS GA 随附的 `org.apache.sling.scri
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)

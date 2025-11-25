@@ -1,5 +1,5 @@
 ---
-title: AEM Forms中的Watched文件夹
+title: AEM Forms 中的观察文件夹
 description: 管理员可以将文件夹置于监视状态，并在文件置于监视的文件夹中时启动工作流、服务或脚本操作。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,14 @@ exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '7164'
+source-wordcount: '7136'
 ht-degree: 0%
 
 ---
 
-# AEM Forms中的Watched文件夹{#watched-folder-in-aem-forms}
+# AEM Forms 中的观察文件夹{#watched-folder-in-aem-forms}
 
 管理员可以配置网络文件夹（称为Watched文件夹），以便当用户将文件(如PDF文件)放入Watched文件夹时，可以启动预先配置的工作流、服务或脚本操作来处理添加的文件。 服务执行指定的操作后，将结果文件保存在指定的输出文件夹中。 有关工作流、服务和脚本的详细信息，请参阅[处理文件的各种方法](#variousmethodsforprocessingfiles)。
 
@@ -66,13 +66,13 @@ ht-degree: 0%
 * **inputProcessorType （字符串）**：要启动的进程类型。 您可以指定工作流、脚本或服务。 它是必需属性。
 * **inputProcessorId （字符串）**： inputProcessorId属性的行为基于为inputProcessorType属性指定的值。 它是必需属性。 以下列表详细列出了inputProcessorType属性的所有可能值以及inputProcessorType属性的相应先决条件：
 
-   * 对于工作流，请指定要执行的工作流模型。 例如，/etc/workflow/models/&lt;工作流名称>/jcr：content/model
+   * 对于工作流，请指定要执行的工作流模型。 例如，/etc/workflow/models/&lt;工作流程名称>/jcr:content/model
    * 对于脚本，请指定要执行的脚本的JCR路径。 例如， /etc/fd/watchfolder/test/testScript.ecma
    * 对于服务，指定用于查找OSGi服务的过滤器。 该服务已注册为com.adobe.aemfd.watchfolder.service.api.ContentProcessor Interface的实现。
 
 * **runModes （字符串）**：允许用于工作流执行的运行模式的逗号分隔列表。 一些示例包括：
 
-   * 作者
+   * author
 
    * 发布
 
@@ -102,9 +102,9 @@ ht-degree: 0%
    * 具有特定名称的文件；例如，data&#42;将排除名为data1、data2等的文件和文件夹。
    * 名称和扩展名中包含复合表达式的文件，如以下示例所示：
 
-      * 数据[0-9][0-9][0-9]。[d][aA]&#39;端口&#39;
-      * &#42;。[d][Aa]&#39;端口&#39;
-      * &#42;。[Xx][毫米][Ll]
+      * 数据`[0-9][0-9][0-9]`。`[dD][aA]`&#39;端口&#39;
+      * &#42;。`[dD][aA]`&#39;端口&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 有关文件模式的详细信息，请参阅[关于文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)。
 
@@ -115,10 +115,10 @@ ht-degree: 0%
 
 * 名称和扩展名中包含复合表达式的文件，如以下示例所示：
 
-   * 数据[0-9][0-9][0-9]。[d][aA]&#39;端口&#39;
+   * 数据`[0-9][0-9][0-9]`。`[dD][aA]`&#39;端口&#39;
 
-      * &#42;。[d][Aa]&#39;端口&#39;
-      * &#42;。[Xx][毫米][Ll]
+      * &#42;。`[dD][aA]`&#39;端口&#39;
+      * &#42;.`[Xx][Mm][Ll]`
 
 有关文件模式的详细信息，请参阅[关于文件模式](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
@@ -297,13 +297,13 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
 1. 以编程方式或通过控制台https://&#39;[server]：[port]&#39;/crx/explorer创建系统用户。 您也可以使用现有系统用户。 请务必在此处与系统用户而非正常用户合作。
 1. 在存储脚本的自定义位置向新创建的或现有的系统用户提供读取权限。 您可以有多个自定义位置。 至少向所有自定义位置提供读取权限。
 1. 在Felix配置控制台(/system/console/configMgr)中，找到监视文件夹的服务用户映射。 此映射类似于“映射： adobe-aemds-core-watch-folder=...”。
-1. 单击映射。 对于“adobe-aemds-core-watch-folder：scripts=fd-service”条目，请将fd-service更改为自定义系统用户的ID。 单击“保存”。
+1. 单击映射。 对于“adobe-aemds-core-watch-folder:scripts=fd-service”条目，请将fd-service更改为自定义系统用户的ID。 单击“保存”。
 
 现在，您可以使用配置的自定义位置来保存脚本。
 
 ### 使用工作流处理观察文件夹的文件 {#using-a-workflow-to-process-files-of-a-watched-folder}
 
-通过工作流，您可以自动执行Experience Manager活动。 工作流包含一系列按特定顺序执行的步骤。 每个步骤都会执行不同的活动，例如激活页面或发送电子邮件。 工作流可与存储库中的资源、用户帐户和Experience Manager服务进行交互。 因此，工作流可以协调复杂。
+通过工作流，您可以自动化Experience Manager活动。 工作流包含一系列按特定顺序执行的步骤。 每个步骤都会执行不同的活动，例如激活页面或发送电子邮件。 工作流可与存储库中的资源、用户帐户和Experience Manager服务进行交互。 因此，工作流可以协调复杂。
 
 * 在创建工作流之前，请考虑以下几点：
 * 步骤的输出必须可用于所有后续步骤。
@@ -325,7 +325,7 @@ processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docm
    * workflowSession
    * 元数据
 
-如果使用Java编程语言实施工作流，则AEM工作流引擎会为workItem、workflowSession和元数据变量提供值。 这些变量将作为参数传递给自定义WorkflowProcess实施的execute()方法。
+如果使用Java编程语言实施工作流，则AEM工作流引擎会为工作项目、workflowSession和元数据变量提供值。 这些变量将作为参数传递给自定义WorkflowProcess实施的execute()方法。
 
 如果使用ECMAScript实施工作流，则AEM工作流引擎会为graniteWorkItem、graniteWorkflowSession和元数据变量提供值。 这些变量作为参数传递到WorkflowContextService.execute()方法。
 
@@ -402,13 +402,13 @@ log.info("Exiting workflow script!")
 
 #### 创建自定义有效负载映射器过滤器 {#creating-a-custom-payload-mapper-filter}
 
-1. 下载[Adobe的客户端SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)。
+1. 下载[Adobe客户端SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)。
 1. 在基于maven的项目的构建路径中设置客户端SDK。 要开始配置，您可以在所选的IDE中下载并打开以下基于maven的项目。
 1. 编辑示例包中可用的有效负载映射器过滤器代码以满足您的要求。
 1. 使用maven创建自定义有效负载映射器过滤器的捆绑包。
 1. 使用[AEM包控制台](https://localhost:4502/system/console/bundles)安装该包。
 
-   现在，AEM Watched文件夹UI中列出了自定义有效负载映射器筛选器。 您可以将其用于工作流。
+   现在，AEM Watched文件夹UI中列出了自定义有效负载映射器过滤器。 您可以将其用于工作流。
 
    以下示例代码为相对于有效负荷保存的文件实施一个简单的基于文件的映射器。 你可以用它开始。
 
@@ -568,9 +568,9 @@ log.info("Exiting workflow script!")
 * 具有特定名称的文件；例如，数据。&#42;
 * 名称和扩展名中包含复合表达式的文件，如以下示例所示：
 
-   * 数据[0-9][0-9][0-9]。[d][aA]&#39;端口&#39;
-   * &#42;。[d][Aa]&#39;端口&#39;
-   * &#42;。[Xx][毫米][Ll]
+   * 数据`[0-9][0-9][0-9]`。`[dD][aA]`&#39;端口&#39;
+   * &#42;。`[dD][aA]`&#39;端口&#39;
+   * &#42;.`[Xx][Mm][Ll]`
 
 * 管理员可以定义用于存储结果的输出文件夹的文件模式。 对于输出文件夹（“结果”、“保留”和“失败”），管理员可以指定以下任何文件模式：
 * %Y =年（完整）
@@ -584,7 +584,7 @@ log.info("Exiting workflow script!")
 * %R =介于0-9之间的随机数
 * %J =作业名称
 
-例如，结果文件夹的路径可能是C:\Adobe\AdobeLiveCycleES4\BarcodedForms\%y\%m\%d。
+例如，结果文件夹的路径可以是C:\Adobe\Adobe LiveCycle ES4\BarcodedForms\%y\%m\%d。
 
 输出参数映射还可以指定其他模式，例如：
 
@@ -597,7 +597,7 @@ log.info("Exiting workflow script!")
 
 您可以配置Watched文件夹以启动工作流、服务或脚本来处理输入文件。 在以下部分中，我们将配置Watched文件夹以启动ECMAScript。 ECMAScript将使用PDF Generator将Microsoft Word (.docx)文档转换为PDF文档。
 
-执行以下步骤来使用PDF Generator配置Watched文件夹：
+执行以下步骤以使用PDF Generator配置Watched文件夹：
 
 1. [创建ECMAScript](../../forms/using/watched-folder-in-aem-forms.md#p-create-an-ecmascript-p)
 1. [创建工作流](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
@@ -640,7 +640,7 @@ ECMAScript将使用PDF Generator的createPDF API将Microsoft Word (.docx)文档�
 
 ### 创建工作流 {#create-a-workflow}
 
-1. 在浏览器窗口中打开AEM Workflow UI。
+1. 在浏览器窗口中打开AEM工作流UI。
    <https://[servername>]：&#39;端口&#39;/工作流
 
 1. 在“模型”视图中，单击&#x200B;**新建**。 在新工作流对话框中，指定&#x200B;**标题**，然后单击&#x200B;**确定**。
@@ -649,7 +649,7 @@ ECMAScript将使用PDF Generator的createPDF API将Microsoft Word (.docx)文档�
 
 1. 选择新创建的工作流，然后单击&#x200B;**编辑**。 工作流将在新窗口中打开。
 
-1. 删除默认工作流步骤。 将流程步骤从Sidekick拖放到工作流。
+1. 删除默认工作流步骤。 将流程步骤从Sidekick拖放到工作流中。
 
    ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
@@ -663,7 +663,7 @@ ECMAScript将使用PDF Generator的createPDF API将Microsoft Word (.docx)文档�
 
 1. 在浏览器窗口中打开CRXDE Lite。 https://&#39;[服务器]：[端口]&#39;/crx/de/
 
-1. 导航到/etc/fd/watchfolder/config/文件夹，并创建类型为nt：unstructured的节点。
+1. 导航到/etc/fd/watchfolder/config/文件夹，并创建nt:unstructured类型的节点。
 
    ![configure-the-watched-folder-pdf](assets/configure-the-watched-folder-pdf.png)
 
@@ -672,7 +672,7 @@ ECMAScript将使用PDF Generator的createPDF API将Microsoft Word (.docx)文档�
    * folderPath （字符串）：在定义的时间间隔内扫描的文件夹的路径。 文件夹必须位于共享位置，且所有服务器均具有服务器的完全访问权限。
 inputProcessorType （字符串）：要启动的进程的类型。 在本教程中，指定工作流。
 
-   * inputProcessorId （字符串）： inputProcessorId属性的行为基于为inputProcessorType属性指定的值。 在此示例中，inputProcessorType属性的值为workflow。 因此，对于inputProcessorId属性，请指定PDFG工作流的以下路径：/etc/workflow/models/pdfg/jcr：content/model
+   * inputProcessorId （字符串）： inputProcessorId属性的行为基于为inputProcessorType属性指定的值。 在此示例中，inputProcessorType属性的值为workflow。 因此，对于inputProcessorId属性，请指定PDFG工作流的以下路径： /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern （字符串）：输出文件的模式。 您可以指定文件夹或文件模式。 如果指定了文件夹模式，则输出文件的名称将如工作流中所述。 如果指定了文件模式，则输出文件的名称如文件模式中所述。
 

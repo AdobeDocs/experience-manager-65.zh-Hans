@@ -8,9 +8,9 @@ content-type: reference
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: ht
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '3699'
 ht-degree: 100%
 
@@ -28,12 +28,12 @@ ht-degree: 100%
 
 ### AEM 内的功能 {#features-within-aem}
 
-在实施 AEM（尤其是首次实施）时，请查看 [AEM 的功能和工作流](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)，以确保明确您所需要或希望使用的功能领域。
+在实施 AEM（尤其是首次实施）时，请查看 [AEM 的功能和工作流](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)，以确保明确您所需要或希望使用的功能领域。
 
 请考虑您正在使用的 AEM 功能，以及它们对设计的影响。例如：
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [标记](/help/sites-administering/tags.md)
 * [多站点管理和翻译](/help/sites-administering/msm-and-translation.md)

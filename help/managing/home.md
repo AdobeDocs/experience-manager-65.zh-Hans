@@ -4,11 +4,11 @@ description: 了解如何在关键资源和全面的 AEM 6.5 用户指南的支�
 exl-id: 40597a93-b307-47ce-9a9a-c2e12b7dd0e2
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Admin,Architect,Data Architect,Developer,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer,Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '90'
+ht-degree: 100%
 
 ---
 

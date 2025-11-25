@@ -8,9 +8,9 @@ topic-tags: best-practices
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 207c6bcc25eca05d128115f7235e83a6965009c5
-workflow-type: ht
+role: Admin, Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 100%
 
@@ -50,7 +50,7 @@ AEM 提供了一个 [Cookie 退出服务](/help/sites-developing/cookie-optout.m
 
 AEM Sites 包括与通过 Analytics 提供的增强型洞察的可选集成，该集成使用 Adobe Analytics 按需服务中的功能。
 
-有关管理与 Adobe Analytics 相关的 GDPR 数据主体请求的更多信息，请参见 [Adobe Analytics 与 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=zh-Hans)。
+有关管理与 Adobe Analytics 相关的 GDPR 数据主体请求的更多信息，请参见 [Adobe Analytics 与 GDPR](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html)。
 
 ## 通过 Target 提供的增强型个性化 {#enhanced-personalization-by-target}
 

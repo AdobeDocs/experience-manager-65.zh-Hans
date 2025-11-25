@@ -2,11 +2,11 @@
 title: '[!DNL Assets]大小调整指南'
 description: 确定有效量度以估计部署 [!DNL Adobe Experience Manager Assets]所需的基础结构和资源的最佳实践。
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1619'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # [!DNL Assets]大小调整指南 {#assets-sizing-guide}
 
-在调整[!DNL Adobe Experience Manager Assets]实施的环境大小时，必须确保有足够的可用资源，如磁盘、CPU、内存、IO和网络吞吐量。 调整其中许多资源的大小需要了解有多少资源正在加载到系统中。 如果没有更好的量度，您可以将现有库的大小除以库的存留期，以找出创建资产的速率。
+在调整[!DNL Adobe Experience Manager Assets]实施的环境大小时，确保有足够的可用资源(磁盘、CPU、内存、IO和网络吞吐量)非常重要。 调整其中许多资源的大小需要了解有多少资源正在加载到系统中。 如果没有更好的量度，您可以将现有库的大小除以库的存留期，以找出创建资产的速率。
 
 ## 磁盘 {#disk}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 1. 确定加载到系统中的资源的大小和数量。
 1. 获取要上传到[!DNL Experience Manager]中的具有代表性的资源示例。 例如，如果您计划将PSD、JPG、AI和PDF文件加载到系统中，则需要每种文件格式的多个示例图像。 此外，这些示例应该能够代表不同的文件大小和图像的复杂性。
 1. 定义要使用的演绎版。
-1. 使用[!DNL ImageMagick]或[!DNL Adobe Creative Cloud]应用程序在[!DNL Experience Manager]中创建演绎版。 除了用户指定的呈现版本之外，还应创建现成的呈现版本。 对于实施Dynamic Media的用户，可以使用IC二进制文件生成要存储在Experience Manager中的PTIFF演绎版。
+1. 使用[!DNL Experience Manager]或[!DNL ImageMagick]应用程序在[!DNL Adobe Creative Cloud]中创建演绎版。 除了用户指定的呈现版本之外，还应创建现成的呈现版本。 对于实施Dynamic Media的用户，可以使用IC二进制文件生成要存储在Experience Manager中的PTIFF演绎版。
 1. 如果您计划使用子资产，请为相应的文件类型生成它们。
 1. 比较输出图像、演绎版和子资源与原始图像的大小。 它允许您在系统加载时生成预期的增长因子。 例如，如果在处理1 GB的资源后生成大小合计为3 GB的演绎版和子资源，则演绎版增长因子为3。
 1. 确定在系统中维护资源版本的最长时间。
@@ -120,7 +120,7 @@ S3实施中的延迟由后台写入线程引入。 备份过程必须考虑这�
 
 如果格式副本的生成不正确，请使用Camera Raw库。 但是，在这种情况下，图像的最长边不应大于65000像素。 此外，图像不应包含超过512 MP （512 x 1024 x 1024像素）。 资产规模并不重要。
 
-由于其他因素（如像素大小）会影响处理，因此很难准确地估计使用特定栈为[!DNL Experience Manager]现成支持的TIFF文件的大小。 [!DNL Experience Manager]可以处理现成255 MB的文件，但无法处理18 MB的文件，因为后者包含的像素数异常高于前者。
+由于其他因素（如像素大小）会影响处理，因此很难准确估计针对[!DNL Experience Manager]的特定栈支持的现成TIFF文件的大小。 [!DNL Experience Manager]可以处理现成255 MB的文件，但无法处理18 MB的文件，因为后者包含的像素数异常高于前者。
 
 ## 资源大小 {#size-of-assets}
 

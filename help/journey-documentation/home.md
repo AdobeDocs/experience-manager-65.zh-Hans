@@ -3,10 +3,10 @@ title: AEM 文档历程
 description: 文档历程在 AEM 文档中提供了一种叙事结构，通过将复杂且分散的功能联系在一起，以最佳做法的方式解决业务目标。在设计时考虑了 AEM 初学者，历程将介绍概念和功能，以实现从 A 到 Z 的目标。
 exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
 solution: Experience Manager, Experience Manager Sites
-role: Admin, Architect,Data Architect,Developer,User,Leader
+role: Admin, Developer, User, Leader
 feature: Administering
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
-workflow-type: ht
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 100%
 
@@ -20,7 +20,7 @@ ht-degree: 100%
 
 文档历程通过提供叙述来帮助可能是 AEM 新手的读者彻底理解和解决业务问题，同时假定读者拥有最少的主题或 AEM 知识，从而将许多不同且复杂的主题和功能联系起来。
 
-文档历程与 AEM 现有的技术文档形成对比，这些文档主要侧重于单项功能和任务文档（假设您熟悉 AEM）。 文档历程将重点放在概念上，并将详细信息推迟到现有技术文档中，从而为刚接触 AEM 的读者提供一个新的平台，让他们能够开始了解如何通过使用最佳做法来满足常见的业务需求和工作流来利用该平台。 因此，文档历程是对的补充，而不是 [AEM 现有技术文档。](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans)
+文档历程与 AEM 现有的技术文档形成对比，这些文档主要侧重于单项功能和任务文档（假设您熟悉 AEM）。 文档历程将重点放在概念上，并将详细信息推迟到现有技术文档中，从而为刚接触 AEM 的读者提供一个新的平台，让他们能够开始了解如何通过使用最佳做法来满足常见的业务需求和工作流来利用该平台。 因此，文档历程是对的补充，而不是 [AEM 现有技术文档。](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 
 ### 按叙事学习 {#narrative}
 
@@ -69,7 +69,7 @@ AEM 文档历程的主要目标是帮助初次接触 AEM 的读者了解系统�
 * 翻译专家
 * 内容架构师
 
-每个历程都以历程的目标受众的明确说明开始。 因为没有人在真空中工作，当读者需要系统用户或角色的输入帮助时，历程中就清楚地解释了这一点。
+每个历程都以历程的目标受众的明确说明开始。 因为没有人在真空中工作，当读者需要系统用户或用户画像的输入帮助时，历程中会得到清晰说明。
 
 ## 文档历程如何适合 AEM 文档？ {#compare}
 

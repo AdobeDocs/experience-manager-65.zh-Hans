@@ -1,14 +1,14 @@
 ---
-title: 使用 MSM 重用资源
+title: 使用 MSM 重用资产
 description: 跨多个页面/文件夹使用从父资产派生并链接到父资产的资产。 资产与主副本保持同步，只需单击几下，即可从父资产接收更新。
 contentOwner: AG
 mini-toc-levels: 1
-role: User, Admin, Architect
+role: User, Admin, Developer
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3284'
 ht-degree: 9%
@@ -19,7 +19,7 @@ ht-degree: 9%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 通过[!DNL Adobe Experience Manager]中的多站点管理器(MSM)功能，用户可以重复使用一次创作并在多个Web位置重复使用的内容。 此功能同样适用于MSM的数字资产。 [!DNL Assets]使用针对[!DNL Assets]的MSM，您可以：
@@ -221,7 +221,7 @@ MSM在源资产及其活动副本之间维护实时关系，以便：
 
 | 在[!DNL Experience Manager]界面中的位置 | 何时及为何使用 | 使用方法 |
 |---|---|---|
-| [!UICONTROL 个引用]边栏 | 选择源后快速同步。 | 查看源[&#128279;](#refrailsource)的“引用”边栏中的快速操作 |
+| [!UICONTROL 个引用]边栏 | 选择源后快速同步。 | 查看源[的“引用”边栏中的](#refrailsource)快速操作 |
 | [!UICONTROL 属性]页面中的工具栏 | 在已打开Live Copy属性时启动同步。 | 请参阅[同步Live Copy](#sync-lc) |
 | [!UICONTROL Live Copy概述]控制台 | 在选择源文件夹或[!UICONTROL Live Copy概述]控制台已打开时，快速同步多个资产（不一定是全部）。 一次启动一个资产的同步操作，但可以更快速地一次性同步多个资产。 | 查看Live Copy文件夹中多个资产的[操作](#bulk-actions) |
 
@@ -312,7 +312,7 @@ Live Copy是创建时原始源的复制副本。 Live Copy的元数据值继承�
 * [!DNL Assets]的MSM不支持在页面属性（触屏UI）上配置MSM锁定。
 * 对于[!DNL Assets]的MSM，仅使用&#x200B;**[!UICONTROL 标准转出配置]**。 其他转出配置不适用于[!DNL Assets]的MSM。
 
-## 最佳实践 {#best-practices}
+## 最佳做法 {#best-practices}
 
 MSM的一些最佳实践包括：
 

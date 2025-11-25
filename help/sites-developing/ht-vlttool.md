@@ -1,5 +1,5 @@
 ---
-title: 如何使用VLT工具
+title: 如何使用 VLT 工具
 description: Jackrabbit FileVault工具(VLT)由Apache Foundation开发，用于将Jackrabbit/AEM实例的内容映射到您的文件系统
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,10 +9,10 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2687'
-ht-degree: 1%
+ht-degree: 2%
 
 ---
 
@@ -24,14 +24,14 @@ Jackrabbit FileVault工具(VLT)是由[Apache Foundation](https://www.apache.org/
 
 ## 概念和架构 {#concepts-and-architecture}
 
-有关Filevault工具的概念和结构的全面概述，请参阅官方[Apache Jackrabbit Filevault文档](https://jackrabbit.apache.org/filevault/index.html)中的[Filevault概述](https://jackrabbit.apache.org/filevault/overview.html)和[Vault FS](https://jackrabbit.apache.org/filevault/vaultfs.html)页面。
+有关Filevault工具的概念和结构的全面概述，请参阅官方[Apache Jackrabbit Filevault文档](https://jackrabbit.apache.org/filevault/overview.html)中的[Filevault概述](https://jackrabbit.apache.org/filevault/vaultfs.html)和[Vault FS](https://jackrabbit.apache.org/filevault/index.html)页面。
 
 ## VLT快速入门 {#getting-started-with-vlt}
 
 要开始使用VLT，您需要执行以下操作：
 
 1. 安装VLT、更新环境变量和更新全局忽略的subversion文件。
-1. 设置AEM存储库（如果尚未设置）。
+1. 设置AEM存储库（如果尚未这样做）。
 1. 查看AEM存储库。
 1. 与存储库同步。
 1. 测试同步是否有效。
@@ -224,7 +224,7 @@ Options:
 vlt co http://localhost:4502/crx/-/jcr:root/apps/geometrixx geo
 ```
 
-执行此操作将创建具有`META-INF`和`jcr_root`目录的新导出根`geo`，并将所有低于`/apps/geometrixx`的文件放入`geo/jcr_root`。
+执行此操作将创建具有`geo`和`META-INF`目录的新导出根`jcr_root`，并将所有低于`/apps/geometrixx`的文件放入`geo/jcr_root`。
 
 ### 执行过滤的签出 {#performing-a-filtered-checkout}
 
@@ -443,7 +443,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 |  |  |
 |--- |--- |
-| `-l (--linkFormat) <format>` | 修补程序链接的printf格式（名称、ID），例如`[CQ520_HF_%s|%s]` |
+| `-l (--linkFormat) <format>` | 修补程序链接的printf格式（名称、ID），例如`[CQ520_HF_%s\|%s]` |
 | `-v (--verbose)` | 详细输出 |
 | `-q (--quiet)` | 尽量少打印 |
 | `<localPaths> [<localPaths> ...]` | 本地路径 |
@@ -826,7 +826,7 @@ Added new sync directory: /tmp/workspace/vltsync/jcr_root
 
 >[!NOTE]
 >
->在配置`sync-once`配置之前，`register`命令不会触发同步。
+>在配置`register`配置之前，`sync-once`命令不会触发同步。
 
 ### 删除同步文件夹 {#removing-a-sync-folder}
 

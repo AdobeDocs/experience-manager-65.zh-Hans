@@ -4,8 +4,8 @@ description: AEM 项目可以在 Headful 和 Headless 模型中实施，但这�
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1023'
 ht-degree: 92%
@@ -14,7 +14,7 @@ ht-degree: 92%
 
 # AEM 中的 Headful 和 Headless {#headful-headless}
 
-Adobe Experience Manager 项目可以在 Headful 和 Headless 模型中实施，但这不是一个二选一的选择。利用 AEM，可以在一个项目中灵活地运用这两种模型的优势。本文档概述了各种模型，并描述了SPA集成的级别。
+Adobe Experience Manager 项目可以在 Headful 和 Headless 模型中实施，但这不是一个二选一的选择。利用 AEM，可以在一个项目中灵活地运用这两种模型的优势。本文档概述了不同的模型，并描述了SPA集成的级别。
 
 ## 概述 {#overview}
 
@@ -46,7 +46,7 @@ AEM 还可用于简单地管理内容，并允许呈现和交付要由另一个�
 
 >[!NOTE]
 >
->当然，您也可以将网上商店 SPA 作为功能齐全的 AEM SPA 重新实施，方式是[使用 AEM SPA Editor 框架。](/help/sites-developing/spa-walkthrough.md)如果您已经拥有AEM并且要创建Web商店或其他SPA，则建议使用此方法，但它超出了此文档的范围。
+>当然，您也可以将网上商店 SPA 作为功能齐全的 AEM SPA 重新实施，方式是[使用 AEM SPA Editor 框架。](/help/sites-developing/spa-walkthrough.md)如果您已经拥有AEM并且想要创建Web商店或其他SPA，则推荐使用此方法，但它超出了此文档的范围。
 
 ## SPA 集成级别 {#integration-levels}
 

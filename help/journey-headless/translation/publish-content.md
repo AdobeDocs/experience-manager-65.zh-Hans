@@ -4,8 +4,8 @@ description: 了解如何发布翻译的内容并在该内容更新时更新翻�
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1336'
 ht-degree: 80%
@@ -18,7 +18,7 @@ ht-degree: 80%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM Headless 翻译历程的上一个文档[翻译内容](configure-connector.md)中，您已了解如何使用 AEM 翻译项目来翻译 Headless 内容。您现在应：
+在 AEM Headless 翻译历程的上一个文档[翻译内容](configure-connector.md)中，您已了解如何使用 AEM 翻译项目来翻译 Headless 内容。现在应：
 
 * 了解什么是翻译项目。
 * 能够创建翻译项目。
@@ -89,7 +89,7 @@ ht-degree: 80%
 
 翻译很少是一次性活动。通常，您的内容作者会在初始翻译完成后继续在语言根中添加和修改您的内容。这意味着您还必须更新翻译的内容。
 
-具体的项目要求定义了翻译的更新频率，以及在执行更新之前需遵循的决策流程。 在您决定更新翻译后，AEM中的流程就会变得非常简单。 由于初始翻译是基于翻译项目的，因此任何更新也是如此。
+具体的项目要求定义了翻译的更新频率，以及在执行更新之前需遵循的决策流程。 在您决定更新翻译后，AEM中的流程会变得非常简单。 由于初始翻译是基于翻译项目的，因此任何更新也是如此。
 
 但是和以前一样，如果您选择自动创建翻译项目或手动创建翻译项目，则流程会略有不同。
 
@@ -157,7 +157,7 @@ You see that a new job card was added to the project. In this example, another S
 
 ## 历程结束？ {#end-of-journey}
 
-恭喜！您已完成 Headless 翻译历程！您现在应：
+恭喜！您已完成 Headless 翻译历程！现在应：
 
 * 大致了解 Headless 内容交付的含义。
 * 基本了解 AEM 的 Headless 功能。

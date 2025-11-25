@@ -2,13 +2,13 @@
 title: 监控 [!DNL Assets] 部署的最佳实践
 description: 部署 [!DNL Adobe Experience Manager] 部署后监视其环境和性能的最佳实践。
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
@@ -30,15 +30,15 @@ ht-degree: 0%
 
 您应在开发的性能测试阶段或高负载情况下执行实时监控，以了解环境的性能特征。 通常，应使用一套工具执行实时监控。 以下是一些建议：
 
-* [可视虚拟机](https://visualvm.github.io/)：可视虚拟机允许您查看详细的Java虚拟机信息，包括CPU使用率、Java内存使用率。 此外，它还允许您取样并评估在部署中运行的代码。
+* [Visual VM](https://visualvm.github.io/)： Visual VM允许您查看详细的Java VM信息，包括CPU使用情况、Java内存使用情况。 此外，它还允许您取样并评估在部署中运行的代码。
 * [Top](https://man7.org/linux/man-pages/man1/top.1.html)： Top是一个Linux命令，它打开了一个仪表板，显示使用情况统计数据，包括CPU、内存和IO使用情况。 它提供了实例上所发生情况的高级概述。
-* [Htop](https://hisham.hm/htop/)： Htop是交互式进程查看器。 除了Top可以提供的内容外，它还提供了详细的CPU和内存使用率。 可以在大多数Linux系统上使用`yum install htop`或`apt-get install htop`安装Htop。
+* [Htop](https://hisham.hm/htop/)： Htop是交互式进程查看器。 除了Top可以提供的内容之外，它还提供了详细的CPU和内存使用率。 可以在大多数Linux系统上使用`yum install htop`或`apt-get install htop`安装Htop。
 
 * Iotop： Iotop是磁盘IO使用情况的详细仪表板。 它显示一些条形和仪表，这些条形和仪表描述了使用磁盘IO的进程及其使用的数量。 可以在大多数Linux系统上使用`yum install iotop`或`apt-get install iotop`安装Iotop。
 
 * [Iftop](https://www.ex-parrot.com/pdw/iftop/)： Iftop显示有关以太网/网络使用的详细信息。 Iftop显示使用以太网的实体上每个通信通道的统计信息及其使用的带宽量。 可以在大多数Linux系统上使用`yum install iftop`或`apt-get install iftop`安装Iftop。
 
-* Java Flight Recorder (JFR)：Oracle中的一种商业工具，可在非生产环境中免费使用。 有关更多详细信息，请参阅[如何使用Java飞行记录器诊断CQ运行时问题](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)。
+* Java Flight Recorder (JFR)：Oracle中的一种商业工具，您可以在非生产环境中自由使用。 有关更多详细信息，请参阅[如何使用Java飞行记录器诊断CQ运行时问题](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)。
 * [!DNL Experience Manager] `error.log`文件：您可以调查[!DNL Experience Manager] `error.log`文件以了解系统中记录的错误的详细信息。 使用命令`tail -F quickstart/logs/error.log`识别要调查的错误。
 * [工作流控制台](/help/sites-administering/workflows.md)：利用工作流控制台监视滞后或卡住的工作流。
 
@@ -69,11 +69,11 @@ ht-degree: 0%
 * 网络吞吐量
 * 磁盘IO
 * 内存
-* CPU利用率
+* CPU利用
 * JMX MBean
 * 外部网站
 
-您需要外部工具(如NewRelic(TM)和AppDynamics(TM))来监视每个项目。 使用这些工具，您可以定义特定于您的系统的警报，例如，高系统利用率、工作流备份、运行状况检查失败或对您网站的未经身份验证的访问。 Adobe并不推荐使用任何优于其他工具的工具。 找到适合您的工具，并使用该工具监控讨论的项目。
+您需要外部工具(如NewRelic(TM)和AppDynamics(TM))来监视每个项目。 使用这些工具，您可以定义特定于您的系统的警报，例如，高系统利用率、工作流备份、运行状况检查失败或对您网站的未经身份验证的访问。 Adobe不推荐使用任何优于其他工具的工具。 找到适合您的工具，并使用该工具监控讨论的项目。
 
 #### 内部应用程序监控 {#internal-application-monitoring}
 
@@ -111,7 +111,7 @@ Threads
 
 **监视器[!DNL Experience Manager]**
 
-[!DNL Experience Manager]还通过JMX公开一组统计数据和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关详细信息，请参阅[!DNL Experience Manager] JMX MBean上的[文档](/help/sites-administering/jmx-console.md)。
+[!DNL Experience Manager]还通过JMX公开一组统计数据和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关详细信息，请参阅[ JMX MBean上的](/help/sites-administering/jmx-console.md)文档[!DNL Experience Manager]。
 
 以下是您可以为[!DNL Experience Manager]监视的一些基线参数：
 
@@ -131,7 +131,7 @@ Threads
 会话计数器
 
 * MBean： `org.apache.jackrabbit.oak:id=7,name="OakRepository Statistics",type="RepositoryStats"`
-* URL： */system/console/jmx/org.apache.jackrabbit.oak：id=7，name=&quot;OakRepository Statistics&quot;，type*=&quot;RepositoryStats&quot;
+* URL： */system/console/jmx/org.apache.jackrabbit.oak:id=7，name=&quot;OakRepository Statistics&quot;，type*=&quot;RepositoryStats&quot;
 * 实例：所有服务器
 * 警报阈值：当打开的会话超过基线50%以上时。
 * 警报定义：会话可以通过一段代码打开，但永远不会关闭。 随着时间的推移，这种情况可能会慢慢出现，并最终导致系统中内存泄漏。 虽然会话的数量应在系统中波动，但不应持续增加。
@@ -194,7 +194,7 @@ Threads
 在监视过程中，如果您遇到问题，可以执行以下一些故障排除任务，以解决[!DNL Experience Manager]部署的常见问题：
 
 * 如果使用TarMK，请经常运行Tar压缩。 有关详细信息，请参阅[维护存储库](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)。
-* 检查`OutOfMemoryError`日志。 有关详细信息，请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hans)。
+* 检查`OutOfMemoryError`日志。 有关详细信息，请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)。
 
 * 检查日志中是否存在对未索引查询、树遍历或索引遍历的任何引用。 这些指示未索引的查询或索引不足的查询。 有关优化查询和索引性能的最佳实践，请参阅[有关查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 * 使用工作流控制台验证您的工作流是否按预期执行。 如果可能，将多个工作流合并到单个工作流中。

@@ -1,6 +1,6 @@
 ---
 title: SocialUtils重构
-description: AEM 6.1中弃用了包com.adobe.cq.social.ugcbase.SocialUtils
+description: AEM 6.1已弃用包com.adobe.cq.social.ugcbase.SocialUtils
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,9 +9,9 @@ exl-id: 0f731ec6-a12e-4098-a1ec-ee4cd4dc1432
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '297'
 ht-degree: 1%
 
 ---
@@ -26,8 +26,8 @@ AEM 6.1已弃用包`com.adobe.cq.social.ugcbase.SocialUtils`。
 
 ## SocialResourceUtilities包  {#socialresourceutilities-package}
 
-| com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities中的方法 |
-|---|
+| com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities中的方法 | 注释 |
+|---|---|
 | 布尔型checkPermission(ResourceResolver resolver， String path， String action) |  |
 | SocialResourceProvider getSocialResourceProvider(Resource) |  |
 | SocialResourceConfiguration getStorageConfig(Resource) |  |
@@ -42,8 +42,8 @@ AEM 6.1已弃用包`com.adobe.cq.social.ugcbase.SocialUtils`。
 | 字符串UGCToResourcePath（字符串ugcPath） | 方法签名已更改 |
 | 字符串UGCToResourcePath（字符串ugcPath， ResourceResolver resolver） | 新建 |
 
-| `com.adobe.cq.social.`实用工具.resource.api.SocialResourceUtilities中的方法 |
-|---|
+| `com.adobe.cq.social.`实用工具.resource.api.SocialResourceUtilities中的方法 | 注释 |
+|---|---|
 | SocialResourceProvider getSocialResourceProvider(Resource) | 替换SocialResourceProvider getConfiguredProvider(Resource) |
 
 ## SCFUtilities包 {#scfutilities-package}

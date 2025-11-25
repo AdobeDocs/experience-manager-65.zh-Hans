@@ -9,10 +9,10 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 21%
+source-wordcount: '312'
+ht-degree: 20%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 21%
 
 {{ue-over-mobile}}
 
-在AEM中，文章、横幅和收藏集表示为cq：Pages。
+在AEM中，文章、横幅和收藏集表示为cq:Pages。
 
-除了下面显示的几个其他属性之外，它们共享在任何cq：Page中找到的相同常用属性，这些其他属性表示Adobe Experience Manager (AEM) Mobile On-Demand Services元数据和支持属性的集成。
+除了下面显示的几个其他属性之外，它们还共享在任何cq:Page中找到的相同常用属性，这些属性表示Adobe Experience Manager (AEM) Mobile On-Demand Services元数据和支持属性的集成。
 
 下表描述了内容属性和节点。
 
@@ -31,11 +31,11 @@ ht-degree: 21%
 | **属性名称** | **类型** | **默认值或预期值** | **描述** |
 |---|---|---|---|
 | dps-id | 字符串 |  | 上传至AEM Mobile或从AEM Mobile导入后，由AEM Mobile分配并由AEM存储 |
-| dps-resourceType | 字符串 | dps:Article | dps:Banner | dps:Collection | 实体类型属性 |
+| dps-resourceType | 字符串 | dps:Article | `dps:Banner` \| `dps:Collection` \| `entity type property` |
 | dps-version | 字符串 |  | AEM Mobile实体的版本（也包含在完整aemm-id中） |
-| dps-lastSynced | 日期 |  | 上次从AEM Mobile同步/导入AEM的日期 |
+| dps-lastSynced | 日期 |  | 从AEM Mobile上次同步/导入AEM的日期 |
 | dps-lastUploaded | 日期 |  | 上次从AEM上传到AEM Mobile的日期 |
-| dps-lastUploadedBy | String：userid |  | 执行了从AEM到AEM Mobile的上次上传请求的id用户 |
+| dps-lastUploadedBy | 字符串:userid |  | 执行了从AEM到AEM Mobile的上次上传请求的id用户 |
 
 ## 核心元数据属性 {#core-metadata-properties}
 
@@ -88,7 +88,7 @@ ht-degree: 21%
 
 | 节点名称 | 类型 | 默认值或预期值 | 描述 |
 |--- |--- |--- |--- |
-| 图像 | jcr：primaryType=nt：unstructured <br> sling：resourceType=foundation/components/image |  |  |
+| 图像 | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |
 
 ### 实体 {#entities}
 
@@ -96,7 +96,7 @@ ht-degree: 21%
 
 | 节点名称 | 类型 | 预期值的默认值 | 描述 |
 |--- |--- |--- |--- |
-| social-share-image |  | jcr：primaryType=nt：unstructured <br> sling：resourceType=foundation/components/image |  |
+| social-share-image |  | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |
 
 #### 横幅 {#banners-1}
 
@@ -108,4 +108,4 @@ ht-degree: 21%
 
 | 节点名称 | 类型 | 预期值的默认值 | 描述 |
 |--- |--- |--- |--- |
-| background-image | jcr：primaryType=nt：unstructured <br> sling：resourceType=foundation/components/image |  |  |
+| background-image | jcr:primaryType=nt:unstructured <br> sling:resourceType=foundation/components/image |  |  |

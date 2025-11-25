@@ -1,5 +1,5 @@
 ---
-title: 智能成像
+title: 智能图像处理
 description: 智能成像应用每个用户的独特查看特性，自动为用户提供针对其体验而优化的正确图像，从而提高性能和参与度。
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -9,14 +9,14 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '3300'
 ht-degree: 0%
 
 ---
 
-# 智能成像 {#smart-imaging}
+# 智能图像处理 {#smart-imaging}
 
 智能成像应用每个用户的独特查看特性，自动为用户提供针对其体验而优化的正确图像，从而提高性能和参与度。
 
@@ -88,7 +88,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 您可以通过将`bfc=off`附加到图像的URL来关闭智能成像。
 
-另请参阅Dynamic Media图像服务和渲染API中的[bfc](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
+另请参阅Dynamic Media图像服务和渲染API中的[bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
 
 ### 关于设备像素比(dpr)优化 {#dpr}
 
@@ -221,7 +221,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++为帐户启用智能成像的流程是什么？
++++为帐户启用智能成像的流程是什么？ 
 
 要开始使用智能成像，请将`bfc=on`、`dpr=on,dprValue`、`network=on`或全部三个参数设置附加到现有URL或预设。 如果您不想手动进行这些更改，则可以通过创建支持案例来默认启用“智能成像”。
 
@@ -255,7 +255,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
       * 列出所有相关域，如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
       * 智能成像支持通用域和自定义域。
-      * 要识别您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后登录到您的公司帐户。
+      * 要识别您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后登录到您的公司帐户。
 
          1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
          1. 查找&#x200B;**[!UICONTROL 发布的服务器名称]**&#x200B;字段以确认您的域。
@@ -278,7 +278,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++我何时可以预期帐户启用智能成像？
++++我何时可以允许帐户启用智能成像？
 
 客户支持按照请求接收顺序处理请求，并遵循等待列表。
 
@@ -288,7 +288,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++切换到“智能成像”有何风险？
++++切换使用智能成像会有什么风险？
 
 客户网页没有风险。 但是，过渡到智能成像确实会清除CDN缓存。 此操作涉及在Experience Manager上迁移到Dynamic Media Classic或Dynamic Media的新配置。
 
@@ -317,7 +317,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++如何知道性能提升？ 是否有办法了解智能成像的好处？
++++我如何知道性能提升？ 是否有办法了解智能成像的好处？
 
 智能成像页眉决定了智能成像的优势。 启用智能成像后，在&#x200B;**[!UICONTROL 响应标头]**&#x200B;标题下请求图像后，您可以看到`-X-Adobe-Smart-Imaging`，如以下高亮显示的示例中所示：
 
@@ -336,9 +336,9 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 >**X-Adobe-Smart-Imaging = -1，正在传递WebP**
 >
 >如果`X-Adobe-Smart-Imaging`的值为–1且仍在传递WebP，则智能成像处于活动状态。 但是，由于缓存已过时，未计算大小优势。 您可以在图像的URL中使用`cache=update`（仅限一次）来解决此问题。
->&#x200B;>使用修饰符的示例：
->&#x200B;>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
->&#x200B;>要使整个缓存失效，必须创建支持案例。
+>使用修饰符的示例：
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>要使整个缓存失效，必须创建支持案例。
 
 +++
 
@@ -348,7 +348,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++智能成像是否可以因任何请求而关闭？
++++是否可以为任何请求关闭智能成像？
 
 是。您可以通过添加以下任何修饰符来关闭智能成像：
 
@@ -358,7 +358,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++有哪些“调整”可用？ 是否可以定义任何设置或行为？
++++提供了哪些“调整”功能？ 是否可以定义任何设置或行为？
 
 “智能成像”有三个选项，您可以启用或禁用。
 
@@ -398,7 +398,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++智能成像是自动调整百分比质量输出设置，还是手动调整且适用于所有图像的设置？ 在什么范围内？
++++智能成像是自动调整百分比质量输出设置，还是手动调整并应用于所有图像的设置？ 在什么范围内？
 
 智能成像可自动调整质量百分比。 此质量使用Adobe开发的机器学习算法来确定。 此百分比不特定于范围。
 
@@ -438,7 +438,7 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
 +++
 
-+++如何在智能成像中继续使用PNG无损转换？
++++如何继续使用PNG在智能成像中进行无损转换？
 
 智能成像现在支持基于质量级别的有损转换。 您可以通过公司的设置将质量设置为100，或者通过将`qlt=100`添加到图像的URL路径来继续使用无损转换。
 

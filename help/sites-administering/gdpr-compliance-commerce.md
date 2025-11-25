@@ -5,9 +5,9 @@ contentOwner: carlino
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
-role: Admin, Architect, Developer, Leader, User, Data Architect, Data Engineer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: ht
+role: Admin, Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 >
 >以下章节以 GDPR 为示例进行说明，但其中涵盖的细节同样适用于所有数据保护和隐私法规，例如 GDPR 和 CCPA。
 
-欧盟《通用数据保护条例》关于数据隐私权的规定自 2018 年 5 月起正式生效。请参阅 [Adobe 隐私中心的 GDPR 页面](https://business.adobe.com/cn/privacy/general-data-protection-regulation.html)。
+欧盟《通用数据保护条例》关于数据隐私权的规定自 2018 年 5 月起正式生效。请参阅 [Adobe 隐私中心的 GDPR 页面](https://business.adobe.com/privacy/general-data-protection-regulation.html)。
 
 >[!NOTE]
 >

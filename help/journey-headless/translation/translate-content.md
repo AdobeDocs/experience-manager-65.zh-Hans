@@ -4,8 +4,8 @@ description: 使用翻译连接器和规则来翻译 Headless 内容。
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
-role: Admin, Architect,Data Architect,Developer,User,Leader
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer, User, Leader
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '2115'
 ht-degree: 71%
@@ -18,7 +18,7 @@ ht-degree: 71%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在AEM Headless翻译历程的上一个文档[配置翻译规则](translation-rules.md)中，您已了解如何使用AEM的翻译规则来标识翻译内容。 您现在应：
+在AEM Headless翻译历程的上一个文档[配置翻译规则](translation-rules.md)中，您已了解如何使用AEM的翻译规则来标识翻译内容。 现在应：
 
 * 了解翻译规则的用途。
 * 能够定义您自己的翻译规则。
@@ -133,7 +133,7 @@ ht-degree: 71%
 要查看此项目中包含的 Headless 内容的详细信息，请执行以下操作：
 
 1. 单击&#x200B;**翻译作业**&#x200B;信息卡底部的省略号按钮。
-1. **翻译作业**&#x200B;窗口将列出作业中的所有项目。
+1. **翻译作业**窗口将列出作业中的所有项目。
    ![翻译作业详细信息](assets/translation-job-detail.png)
 1. 单击一行可查看该行的详细信息，请记住，一行可能表示要翻译的多个内容项目。
 1. 单击行项目的选择复选框可查看更多选项，例如，从作业中删除行项目或在内容片段或Assets控制台中查看行项目的选项。
@@ -204,7 +204,7 @@ AEM 现在与您的翻译配置和连接器进行通信，将内容发送到翻�
 
 [如前所述，](#using-translation-project)机器翻译的内容以&#x200B;**已批准**&#x200B;的状态流回AEM，因为假定使用的是机器翻译，无需人工干预。 但仍可审查已翻译的内容。
 
-只需转到已完成的翻译作业，并通过点按或单击复选框而选择行项。工具栏中将显示&#x200B;**在内容片段中展现**&#x200B;图标。
+只需转到已完成的翻译作业，并通过点击或单击复选框而选择行项。工具栏中将显示&#x200B;**在内容片段中展现**&#x200B;图标。
 
 ![在内容片段中展现](assets/reveal-in-content-fragment.png)
 

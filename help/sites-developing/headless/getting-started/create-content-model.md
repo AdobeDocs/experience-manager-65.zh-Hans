@@ -1,11 +1,11 @@
 ---
 title: 创建内容片段模型Headless快速入门指南
-description: 定义您创建的内容的结构，并使用内容片段模型通过Adobe Experience Manager (AEM) Headless功能提供内容。
+description: 定义您创建的内容的结构，并使用内容片段模型通过Adobe Experience Manager (AEM)的Headless功能提供内容。
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%
@@ -14,7 +14,7 @@ ht-degree: 51%
 
 # 创建内容片段模型Headless快速入门指南 {#creating-content-fragment-models}
 
-定义您创建的内容的结构，并使用内容片段模型通过Adobe Experience Manager (AEM) Headless功能提供内容。
+定义您创建的内容的结构，并使用内容片段模型通过Adobe Experience Manager (AEM)的Headless功能提供内容。
 
 ## 什么是内容片段模型？ {#what-are-content-fragment-models}
 
@@ -29,7 +29,7 @@ ht-degree: 51%
 1. 登录AEM，从主菜单选择&#x200B;**工具> Assets >内容片段模型**。
 1. 单击通过创建配置生成的文件夹。
 
-   ![模型文件夹 &#x200B;](assets/models-folder.png)
+   ![模型文件夹 ](assets/models-folder.png)
 1. 单击&#x200B;**创建**。
 1. 提供&#x200B;**模型标题**、**标记**&#x200B;和&#x200B;**描述**。 您还可以选择/取消选择&#x200B;**启用模型**&#x200B;以控制模型是否在创建后立即启用。
 

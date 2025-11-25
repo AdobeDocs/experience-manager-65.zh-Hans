@@ -4,9 +4,9 @@ description: Web 内容无障碍指南（WCAG）2.1 快速指南
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: a4ccee3e8256c098339fb5308b1b4214e67b8b74
-workflow-type: ht
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '1744'
 ht-degree: 100%
 

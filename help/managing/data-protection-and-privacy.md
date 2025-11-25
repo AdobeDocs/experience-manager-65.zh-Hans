@@ -9,9 +9,9 @@ docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
-role: Developer,Leader,Architect,Data Architect,User
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
-workflow-type: ht
+role: Developer, Leader, User
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 100%
 
@@ -118,7 +118,7 @@ Adobe 提供了在 Adobe Experience Manager 中处理与访问、删除和退出
 
 * [Adobe Target - 隐私概述](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics 数据隐私工作流](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hans)
+* [Adobe Analytics 数据隐私工作流](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Communities {#aem-communities}
 

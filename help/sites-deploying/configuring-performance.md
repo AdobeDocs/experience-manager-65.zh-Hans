@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '6467'
+source-wordcount: '6466'
 ht-degree: 13%
 
 ---
@@ -24,9 +24,9 @@ ht-degree: 13%
 >
 >有关故障排除和修复性能问题的详细信息，另请参阅[性能树](/help/sites-deploying/performance-tree.md)。
 >
->此外，您还可以查看有关[性能优化提示](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-17466)的知识库文章。
+>此外，您还可以查看有关[性能优化提示](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)的知识库文章。
 
-关键问题是网站响应访客请求所用的时间。 尽管该值因每个请求而异，但可以定义平均目标值。 一旦证实该值既可实现，又可维护，就可使用它来监控网站的性能，并指示潜在问题的发展。
+关键问题是网站响应访客请求所用的时间。 虽然该数值会因请求而异，但可以定义一个平均目标值。一旦证实该值既可实现，又可维护，就可使用它来监控网站的性能，并指示潜在问题的发展。
 
 您针对的响应时间在创作环境和发布环境中不同，反映了目标受众的不同特征：
 
@@ -41,7 +41,7 @@ ht-degree: 13%
 >[!NOTE]
 >
 >* 在配置性能优化后，请按照[Touch Day](/help/sites-developing/tough-day.md)中的过程测试重负载下的环境。
->* 另请参阅[性能优化提示。](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-17466)
+>* 另请参阅[性能优化提示。](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-17466)
 
 ## 性能优化方法 {#performance-optimization-methodology}
 
@@ -97,7 +97,7 @@ AEM项目的性能优化方法可归纳为五个简单的规则，您可以遵�
 
 此焦点意味着实施优化的开发人员应该能够快速判断优化是否已实现目标。 此信息很有价值，因为当达到目标时，优化即告结束。
 
-## 基本性能准则 {#basic-performance-guidelines}
+## 基本性能指南 {#basic-performance-guidelines}
 
 一般而言，将未缓存的html请求保留在100毫秒内。 更具体地说，以下内容可作为指南：
 
@@ -105,9 +105,9 @@ AEM项目的性能优化方法可归纳为五个简单的规则，您可以遵�
 * 25%的页面请求应在100毫秒 — 300毫秒内获得响应。
 * 4%的页面请求应在300毫秒 — 500毫秒内获得响应。
 * 1%的页面请求应在500毫秒 — 1000毫秒内获得响应。
-* 任何页面的响应速度都不应小于1秒。
+* 不应有任何页面响应时间超过 1 秒。
 
-上述数字假定满足以下条件：
+以上数据假设满足以下条件：
 
 * 在发布时测量（无与创作环境相关的开销）
 * 在服务器上测量（无网络开销）
@@ -203,7 +203,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 >[!NOTE]
 >
->请参阅[性能优化](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=zh-Hans)。
+>请参阅[性能优化](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)。
 
 ### 搜索索引 {#search-indexing}
 
@@ -211,7 +211,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 您可以在此处找到更新的索引信息：
 
-* [有关查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
+* [查询与索引的最佳做法](/help/sites-deploying/best-practices-for-queries-and-indexing.md)
 * [查询和索引](/help/sites-deploying/queries-and-indexing.md)
 
 ### 并发工作流处理 {#concurrent-workflow-processing}
@@ -233,13 +233,13 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 #### 存储库中的配置 {#configuration-in-the-repo}
 
-如果您使用sling：OsgiConfig节点[&#128279;](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)配置服务，则必须找到现有服务的PID，例如：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台发现PID。
+如果您使用sling[节点:OsgiConfig配置服务](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)，则必须找到现有服务的PID，例如：org.apache.sling.event.jobs.QueueConfiguration.370aad73-d01b-4a0b-abe4-20198d85f705。 您可以使用Web控制台发现PID。
 
 配置名为`queue.maxparallel`的属性。
 
 #### Web控制台中的配置 {#configuration-in-the-web-console}
 
-要使用Web控制台[&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)配置这些服务，请在Apache Sling作业队列配置服务工厂下找到现有配置项。
+要使用Web控制台[配置这些服务](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)，请在Apache Sling作业队列配置服务工厂下找到现有配置项。
 
 配置名为Maximum Parallel Jobs的属性。
 
@@ -388,7 +388,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 | 主页单个用户 | 平均 | 1 | 1 |  |  |
 |   | 峰值 | 1 | 3 |  |  |
 | 主页100个用户 | 平均 | 100 | 3 |  |  |
-|   | 峰值 | 100 | 3 |  |
+|   | 峰值 | 100 | 3 |  |  |
 
 #### 组合组件测试 {#combined-component-tests}
 
@@ -477,7 +477,7 @@ JVM和OS级别的调整通常不会导致性能的大幅提升，因此应在优
 
 ## 使用Dispatcher时优化性能 {#optimizing-performance-when-using-the-dispatcher}
 
-[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)是Adobe的缓存和/或负载平衡工具。 使用Dispatcher时，请考虑优化网站缓存性能。
+[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)是Adobe的缓存和/或负载平衡工具。 使用Dispatcher时，请考虑优化网站缓存性能。
 
 >[!NOTE]
 >
@@ -493,7 +493,7 @@ Dispatcher提供了多种内置机制，如果您的网站利用这些机制可�
 >
 >通常，许多缓存策略涉及选择完好的URL，并且不依赖此类额外数据。
 >
->使用Dispatcher版本4.1.11，您还可以缓存响应标头，请参阅[缓存HTTP响应标头](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#configuring-the-dispatcher-cache-cache)。
+>使用Dispatcher版本4.1.11，您还可以缓存响应标头，请参阅[缓存HTTP响应标头](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)。
 >
 
 ### 计算Dispatcher缓存比率 {#calculating-the-dispatcher-cache-ratio}
@@ -529,7 +529,7 @@ Dispatcher提供了多种内置机制，如果您的网站利用这些机制可�
 
 #### 消除 URL 参数 {#avoid-url-parameters}
 
-如果可能，请消除要缓存的页面的 URL 参数。例如，如果您有一个图片库，则绝不会缓存以下 URL（除非对 Dispatcher 进行[相应配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#configuring-the-dispatcher-cache-cache)）：
+如果可能，请消除要缓存的页面的 URL 参数。例如，如果您有一个图片库，则绝不会缓存以下 URL（除非对 Dispatcher 进行[相应配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache)）：
 
 ```xml
 www.myCompany.com/pictures/gallery.html?event=christmas&amp;page=1
@@ -602,7 +602,7 @@ www.myCompany.com/news/main.large.html
 * 相反，如果您有十个不同的开始页面可供选择，则可以缓存其中的每个页面，从而提高性能。
 
 >[!TIP]
->有关配置Dispatcher缓存的更多详细信息，请参阅[AEM Dispatcher缓存教程](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html?lang=zh-Hans)及其有关[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html?lang=zh-Hans#dispatcher-tips-and-tricks)的部分。
+>有关配置Dispatcher缓存的更多详细信息，请参阅[AEM Dispatcher缓存教程](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/overview.html)及其有关[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-learn/dispatcher-tutorial/chapter-1.html#dispatcher-tips-and-tricks)的部分。
 
 例如，如果将用户名放入标题栏中对每个页面进行个性化，则会影响性能。
 
@@ -613,11 +613,11 @@ www.myCompany.com/news/main.large.html
 
 >[!TIP]
 >
->有关处理混合的公开和受限内容，请参阅[设置Sling动态包含。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html?lang=zh-Hans)
+>有关处理混合的公开和受限内容，请参阅[设置Sling动态包含。](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/set-up-sling-dynamic-include.html)
 
 #### 粘性连接 {#sticky-connections}
 
-[粘性连接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans#the-benefits-of-load-balancing)可确保同一个用户的文档全部在同一服务器上撰写。如果用户在退出此文件夹不久后返回，则此连接仍保持粘性。要保存所有需要网站的粘性连接的文档，请定义一个文件夹。 尽量不要在该文件夹中放入其他文件。如果您使用个性化的页面和会话数据，此方案将影响负载平衡。
+[粘性连接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#the-benefits-of-load-balancing)可确保同一个用户的文档全部在同一服务器上撰写。如果用户在退出此文件夹不久后返回，则此连接仍保持粘性。要保存所有需要网站的粘性连接的文档，请定义一个文件夹。 尽量不要在该文件夹中放入其他文件。如果您使用个性化的页面和会话数据，此方案将影响负载平衡。
 
 #### MIME 类型 {#mime-types}
 

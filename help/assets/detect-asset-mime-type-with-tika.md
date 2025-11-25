@@ -1,15 +1,15 @@
 ---
-title: 使用Apache Tika检测MIME类型的资源
+title: 使用 Apache Tika 检测资产的 MIME 类型
 description: 启用Apache Tika以帮助 [!DNL Experience Manager Assets] 在上传操作期间从内容流中检测MIME类型的资产，而不是文件扩展名。
 contentOwner: AG
-role: Admin, Architect
+role: Admin, Developer
 feature: Metadata,Developer Tools,Asset Management
 exl-id: a312466d-8d84-4c94-af85-1549afc61aed
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '166'
-ht-degree: 0%
+ht-degree: 9%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 如果您使用[!DNL Apache Tika]上传资产，在上传操作期间，[!DNL Assets]会从内容流中检测其MIME类型，而不是文件扩展名。
 
-默认情况下，此功能处于禁用状态。 要启用该功能，请从[!UICONTROL 配置管理器]配置&#x200B;**[!UICONTROL Day CQ DAM Mime Type]**&#x200B;服务。
+默认情况下，此功能处于禁用状态。 要启用该功能，请从&#x200B;**[!UICONTROL 配置管理器]**&#x200B;配置[!UICONTROL Day CQ DAM Mime Type]服务。
 
 >[!NOTE]
 >
@@ -33,4 +33,4 @@ ht-degree: 0%
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;以保存更改。
+1. 单击&#x200B;**[!UICONTROL 保存]**&#x200B;即可保存更改。

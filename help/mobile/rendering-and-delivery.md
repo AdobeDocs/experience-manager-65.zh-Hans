@@ -8,10 +8,10 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 6%
+source-wordcount: '547'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 6%
 
 {{ue-over-mobile}}
 
-通过[Sling默认Servlet](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)可轻松呈现Adobe Experience Manager (AEM)内容，以呈现[JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering)和其他格式。
+Adobe Experience Manager (AEM)内容可以通过[Sling默认Servlet](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html)轻松呈现，以呈现[JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering)和其他格式。
 
 这些开箱即用的渲染通常在存储库中导航，并按原样返回内容。
 
@@ -33,7 +33,7 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
 
 ## 请求JSON {#requesting-json}
 
-使用&#x200B;**&lt;资源.caas[。&lt;EXPORT-CONFIG][。&lt;EXPORT-CONFIG].json**&#x200B;以请求JSON。
+使用&#x200B;**&lt;RESOURCE.caas`[.<EXPORT-CONFIG][.&lt;DEPTH-INT&gt;]`.json**&#x200B;请求JSON。
 
 <table>
  <tbody>

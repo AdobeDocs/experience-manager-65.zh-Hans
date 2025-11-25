@@ -3,13 +3,13 @@ title: ' [!DNL Experience Manager Assets]的可访问功能和接口'
 description: 了解 [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] 中的辅助功能如何帮助残障用户。
 contentOwner: AG
 feature: Asset Management
-role: User, Architect, Leader
+role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1898'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -31,7 +31,7 @@ Possible topics to cover in this article are below.
 
 # [!DNL Adobe Experience Manager Assets]中的辅助功能 {#accessibility-in-aem-assets}
 
-[!DNL Adobe Experience Manager]允许内容创建者和发布者在Web上提供出色的体验。 Adobe通过改进[!DNL Experience Manager]的可访问性，努力将残疾创建者包括进来。 该软件不断得到增强，以满足所有类型的用户的需求，并遵守包括视觉、听觉、移动或其他残疾人士在内的全球标准。
+[!DNL Adobe Experience Manager]允许内容创建者和发布者在Web上提供出色的体验。 Adobe通过改进[!DNL Experience Manager]的可访问性，努力将残障人士包括进来。 该软件不断得到增强，以满足所有类型的用户的需求，并遵守包括视觉、听觉、移动或其他残疾人士在内的全球标准。
 
 [!DNL Experience Manager]发布合规性信息，其中描述了遵守的标准，概述了产品中的辅助功能，并描述了合规性级别。 无障碍合规性报告可帮助[!DNL Experience Manager]用户了解各种标准的合规程度。 在[!DNL Assets]中完成的增强功能允许所有用户通过键盘、屏幕阅读器、放大镜和其他辅助技术轻松使用这些界面。
 
@@ -42,9 +42,9 @@ Possible topics to cover in this article are below.
 * [无障碍倡议 — 由W3C](https://www.w3.org/WAI/standards-guidelines/aria/)提供的无障碍富互联网应用程序(WAI-ARIA)。
 * [EN 301 549](https://en.wikipedia.org/wiki/EN_301_549)。
 
-要读取包含合规性级别详细信息的报告，请参阅[无障碍合规性报告](https://www.adobe.com/cn/accessibility/compliance.html) (ACR)页面。
+要读取包含合规性级别详细信息的报表，请参阅[无障碍合规性报表](https://www.adobe.com/cn/accessibility/compliance.html) (ACR)页面。
 
-要了解[!DNL Dynamic Media]如何访问，请参阅 [!DNL Dynamic Media][&#128279;](/help/assets/accessibility-dm.md)中的辅助功能。
+要了解[!DNL Dynamic Media]如何访问，请参阅[中的 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)辅助功能。
 
 ## 辅助技术 {#at-support}
 
@@ -79,7 +79,7 @@ Possible topics to cover in this article are below.
 
 ### [!DNL Assets]中的键盘快捷键 {#keyboard-shortcuts}
 
-[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台[&#128279;](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)的键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
+[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台[的](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
 
 | 用户界面或方案 | 键盘快捷键 | 操作 |
 |---|---|---|
@@ -147,7 +147,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 * 使用`Esc`键从缩略图视图中删除快速操作图标不会从最后一个聚焦项中删除键盘焦点。
 * 选择资产后，选择`Alt + 4`键盘快捷键将在左边栏中打开[!UICONTROL 引用]列表。 使用`Tab`键，用户可以浏览非零引用条目。 仅浏览非零参照条目也可以节省工作量和按键操作。
 * 资产时间轴中提供了有关资产的注释。 如果使用键盘或键盘快捷键访问左边栏，则可以访问该设置。
-* [!DNL Experience Manager]中的[!UICONTROL 视图设置]可使用键盘访问。 用户可以使用箭头键浏览可用的信息卡大小，选择并Tab键浏览现有视图设置视图中的浏览和设置其他元素。
+* [!UICONTROL 中的]视图设置[!DNL Experience Manager]可使用键盘访问。 用户可以使用箭头键浏览可用的信息卡大小，选择并Tab键浏览现有视图设置视图中的浏览和设置其他元素。
 
 <!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
 
@@ -192,7 +192,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 * 屏幕阅读器将搜索筛选器中的选项作为可扩展折叠项播发。
 * 包含混合状态选项的谓词由屏幕阅读器公告。
 
-## 共享资源 {#share-assets}
+## 共享资产 {#share-assets}
 
 <!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
@@ -209,7 +209,7 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 
 ## 无障碍文档 {#accessible-docs}
 
-[!DNL Experience Manager]提供无障碍文档供残障人士使用。 在Adobe不断改进模板和内容的同时，以下内容有助于暂时访问所提供的内容：
+[!DNL Experience Manager]提供无障碍文档供残障人士使用。 以下内容有助于暂时访问提供的内容，而Adobe将继续改进模板和内容：
 
 * 屏幕阅读器可以阅读文本。
 * 图像和插图具有可用的替代文本。

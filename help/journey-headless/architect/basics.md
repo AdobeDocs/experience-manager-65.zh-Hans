@@ -4,8 +4,8 @@ description: 学习使用内容片段为 Headless CMS 的内容建模的基础�
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
-role: Admin, Architect,Data Architect
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin, Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 94%
@@ -37,7 +37,7 @@ ht-degree: 94%
 
 ### 方法简介 {#how}
 
-AEM 使用内容片段提供以 Headless 方式将内容交付到应用程序所需的结构。
+AEM 使用内容片段提供以 Headless 方式将内容传递到应用程序所需的结构。
 
 内容模型的结构将：
 
@@ -67,8 +67,8 @@ AEM 使用内容片段提供以 Headless 方式将内容交付到应用程序所
 
 在模型中：
 
-1. **数据类型**&#x200B;允许您定义各个属性。
-例如，以&#x200B;**文本**&#x200B;形式定义包含教师姓名的字段，并以&#x200B;**数字**&#x200B;形式定义其服务年数。
+1. **数据类型**允许您定义各个属性。
+例如，以**文本**&#x200B;形式定义包含教师姓名的字段，并以&#x200B;**数字**&#x200B;形式定义其服务年数。
 1. 数据类型&#x200B;**内容引用**&#x200B;和&#x200B;**片段引用**&#x200B;允许您创建与AEM中其他内容的关系。
 1. **片段引用**&#x200B;数据类型可让您通过嵌套内容片段（根据模型类型）来实施结构的多个层次。这对于您的内容建模是至关重要的。
 

@@ -5,9 +5,9 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1588'
+source-wordcount: '1577'
 ht-degree: 83%
 
 ---
@@ -225,7 +225,7 @@ ht-degree: 83%
 
 ### 示例查询 – 所有城市的名称 {#sample-names-all-cities}
 
-此示例查询是一个直接的查询，返回`city`架构中所有条目的`name`。
+此示例查询是一个直接的查询，返回`name`架构中所有条目的`city`。
 
 **示例查询**
 
@@ -357,14 +357,14 @@ query {
 }
 ```
 
-### 示例查询 — 标记为城市分隔符的所有城市的名称 {#sample-names-all-cities-tagged-city-breaks}
+### 示例查询 - 标记为“城市度假”的所有城市的名称 {#sample-names-all-cities-tagged-city-breaks}
 
 如果您：
 
 * 创建各种标签，并命名为 `Tourism` : `Business`, `City Break`, `Holiday`
 * 并将这些标记分配给各种`City`实例的主变量
 
-然后，您可以使用查询返回`city`模式中标记为 City Breaks 的所有条目的 `name` 和 `tags` 的详细信息。
+然后，您可以使用查询返回`city`架构中标记为 City Breaks 的所有条目的 `name` 和 `tags` 的详细信息。
 
 **示例查询**
 
@@ -539,7 +539,7 @@ query {
 
 ### 示例查询 – 所有名为“Jobs”或“Smith”的人 {#sample-all-persons-jobs-smith}
 
-此示例查询筛选名为`Jobs`或`Smith`的任何的所有`persons`。
+此示例查询筛选名为`persons`或`Jobs`的任何的所有`Smith`。
 
 **示例查询**
 
@@ -593,7 +593,7 @@ query {
 
 ### 示例查询 – 所有名字不是“Jobs”的人 {#sample-all-persons-not-jobs}
 
-此示例查询筛选名为`Jobs`或`Smith`的任何的所有`persons`。
+此示例查询筛选名为`persons`或`Jobs`的任何的所有`Smith`。
 
 **示例查询**
 
@@ -1333,7 +1333,7 @@ query {
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询将`fragments`作为`[Article]`的数组提供。
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询将`fragments`作为`[Article]`的数组传递
 
 ```graphql
 {
@@ -1720,7 +1720,7 @@ query {
 | Lincoln | Abe | |
 | Smith | Adam |   |
 | Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke |   |   |
+| Marsh | Duke |   |
 | Smith | Joe |   |
 | Croft | Lara | Gamestar |
 | Caulfield | Max | Gameblitz |
@@ -1738,10 +1738,10 @@ query {
 
 | 名称 | 国家/地区 | 人口 | 类别 |
 |--- |--- |--- |--- |
-| 巴塞尔 | 瑞士 | 172258 | city:emea |
-| 柏林 | 德国 | 3669491 | city:capital<br>city:emea |
-| 布加勒斯特 | 罗马尼亚 | 1821000 |  city:capital<br>city:emea |
-| 圣弗朗西斯科 | 美国 |  883306 |  city:beach<br>city:na |
-| 圣何塞 | 美国 |  102635 | city:na |
-| 斯图加特 | 德国 | 634830 | city:emea |
-| 苏黎世 | 瑞士 | 415367 |  city:capital<br>city:emea |
+| 巴塞尔 | 瑞士 | 172258 | 城市:emea |
+| 柏林 | 德国 | 3669491 | 城市:capital<br>城市:emea |
+| 布加勒斯特 | 罗马尼亚 | 1821000 |  城市:capital<br>城市:emea |
+| 圣弗朗西斯科 | 美国 |  883306 |  城市:beach<br>城市:na |
+| 圣何塞 | 美国 |  102635 |  城市:na |
+| 斯图加特 | 德国 | 634830 |  城市:emea |
+| 苏黎世 | 瑞士 | 415367 |  城市:capital<br>城市:emea |

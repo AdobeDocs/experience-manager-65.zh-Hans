@@ -4,8 +4,8 @@ description: 通过本快速入门指南，了解Adobe Experience Manager (AEM) 
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '298'
 ht-degree: 39%
@@ -14,11 +14,11 @@ ht-degree: 39%
 
 # Headless快速入门指南 {#introduction}
 
-Headless快速入门指南为已熟悉AEM和Headless技术的用户通过五个步骤使用Adobe Experience Manager (AEM) 6.5创建、管理和交付体验提供了一种简单途径。 每份指南都建立在上一份指南的基础之上，因此建议按顺序仔细地研究这些内容。
+Headless快速入门指南为已熟悉AEM和Headless技术的用户制定了五个步骤来创建、管理和交付使用Adobe Experience Manager (AEM) 6.5的体验的简单途径。 每份指南都建立在上一份指南的基础之上，因此建议按顺序仔细地研究这些内容。
 
 1. [创建配置](create-configuration.md)
 1. [创建内容片段模型](create-content-model.md)
-1. [创建资源文件夹](create-assets-folder.md)
+1. [创建资产文件夹](create-assets-folder.md)
 1. [创建内容片段](create-content-fragment.md)
 1. [访问和交付内容片段](create-api-request.md)
 
@@ -26,7 +26,7 @@ Headless快速入门指南为已熟悉AEM和Headless技术的用户通过五个�
 >
 >本快速入门指南假定您已了解 AEM 和 Headless 技术。
 >
->如果您不熟悉AEM或Headless，请参阅[Headless文档历程](/help/journey-headless/overview.md)，了解Headless的端到端介绍以及AEM如何支持它。
+>如果您不熟悉AEM或Headless，请参阅[Headless文档历程](/help/journey-headless/overview.md)，获取Headless的端到端介绍以及AEM如何支持它。
 
 ## 受众 {#audience}
 

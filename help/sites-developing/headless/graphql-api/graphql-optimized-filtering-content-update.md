@@ -4,11 +4,11 @@ description: 了解如何在Adobe Experience Manager中为优化的GraphQL筛选
 exl-id: d78ec052-c091-49ca-9f36-a3d24eb9edd5
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
-role: Admin,Architect,Data Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: Admin,Developer
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '255'
-ht-degree: 49%
+source-wordcount: '250'
+ht-degree: 50%
 
 ---
 
@@ -28,14 +28,14 @@ ht-degree: 49%
 
 要运行该过程，请执行以下步骤：
 
-1. [为&#x200B;**内容片段迁移作业配置**&#x200B;配置OSGi设置](/help/sites-deploying/configuring-osgi.md)：
+1. [为](/help/sites-deploying/configuring-osgi.md)内容片段迁移作业配置&#x200B;**配置OSGi设置**：
 
    ![OSGi内容片段迁移作业配置](assets/cfm-graphql-update-01.png "OSGi内容片段迁移作业配置")
 
 1. 在对话框中，按以下方式设置这两个参数：
 
-   * **ContentFragmentMigration：已启用** ： `1`
-   * **ContentFragmentMigration：强制** ： `1`
+   * **ContentFragmentMigration:Enabled** ： `1`
+   * **ContentFragmentMigration:Enforce** ： `1`
 
 1. **保存**&#x200B;规范 — 更新过程开始。
 
@@ -45,8 +45,8 @@ ht-degree: 49%
 
    在&#x200B;**内容片段迁移作业配置**&#x200B;的对话框中，按以下方式设置这两个参数：
 
-   * **ContentFragmentMigration：已启用** ： `0`
-   * **ContentFragmentMigration：强制** ： `0`
+   * **ContentFragmentMigration:Enabled** ： `0`
+   * **ContentFragmentMigration:Enforce** ： `0`
 
 ## 限制 {#limitations}
 

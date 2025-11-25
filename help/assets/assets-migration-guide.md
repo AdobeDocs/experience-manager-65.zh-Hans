@@ -2,11 +2,11 @@
 title: 批量迁移资产
 description: 介绍如何将资源引入 [!DNL Adobe Experience Manager]、应用元数据、生成演绎版并将其激活到发布实例。
 contentOwner: AG
-role: Architect, Admin
+role: Developer, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
 source-wordcount: '1739'
 ht-degree: 6%
@@ -23,9 +23,9 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->以下资源迁移工具不是[!DNL Experience Manager]的一部分，且Adobe不支持这些工具：
+>以下资源迁移工具不是[!DNL Experience Manager]的一部分，并且不受Adobe支持：
 >
->* ACS AEM工具标记生成器
+>* ACS AEM Tools Tag Maker
 >* ACS AEM工具CSV资产导入程序
 >* ACS Commons批量工作流管理器
 >* ACS Commons快速操作管理器
@@ -73,7 +73,7 @@ Adobe的Managed Services团队使用名为Glutton的工具将数据加载到客�
 
 #### 从本地文件系统获取 {#pulling-from-the-local-filesystem}
 
-[ACS AEM工具CSV资产导入器](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)从文件系统中提取资产，并从CSV文件提取资产元数据用于资产导入。 Experience Manager资源管理器API用于将资源导入系统，并应用配置的元数据属性。 理想情况下，资产可通过网络文件装载或外部驱动器装载到服务器上。
+[ACS AEM工具CSV资产导入器](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html)从文件系统中提取资产，并从CSV文件提取资产元数据用于资产导入。 Experience Manager Asset Manager API用于将资源导入系统并应用配置的元数据属性。 理想情况下，资产可通过网络文件装载或外部驱动器装载到服务器上。
 
 由于资产不需要通过网络传输，因此整体性能会显着提升，通常认为此方法是将资产加载到存储库的最有效方法。 此外，由于该工具支持元数据摄取，因此您可以在单个步骤中导入所有资源和元数据，而不是同时创建第二个步骤来通过单独的工具应用元数据。
 
@@ -84,7 +84,7 @@ Adobe的Managed Services团队使用名为Glutton的工具将数据加载到客�
 根据需要配置工作流后，有两个选项可用于执行工作流：
 
 1. 最简单的方法是[ACS Commons的批量工作流管理器](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html)。 使用此工具，您可以执行查询，并通过工作流处理查询的结果。 也可以选择设置批次大小。
-1. 您可以将 [ACS Commons Fast Action Manager与Synthetic Workflows一起使](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) 用 [&#128279;](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html)。 虽然此方法涉及的范围更广，但它允许您在优化服务器资源的使用时删除[!DNL Experience Manager]工作流引擎的开销。 此外，Fast Action manager还通过动态监视服务器资源和限制系统上的负载来进一步提升性能。 ACS Commons功能页上提供了示例脚本。
+1. 您可以将 [ACS Commons Fast Action Manager与Synthetic Workflows一起使](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) 用 [](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html)。 虽然此方法涉及的范围更广，但它允许您在优化服务器资源的使用时删除[!DNL Experience Manager]工作流引擎的开销。 此外，Fast Action manager还通过动态监视服务器资源和限制系统上的负载来进一步提升性能。 ACS Commons功能页上提供了示例脚本。
 
 ### 激活资产 {#activating-assets}
 
@@ -92,7 +92,7 @@ Adobe的Managed Services团队使用名为Glutton的工具将数据加载到客�
 
 要解决此问题，您可以使用[快速操作管理器](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html)管理资源复制。 此操作无需使用Sling队列，从而降低了开销，同时抑制了工作负载以防止服务器过载。 该功能的文档页面上显示了使用FAM管理复制的示例。
 
-将资产转至发布场的其他选项包括使用 [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) 或 [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)，这些选项作为 Jackrabbit 中的工具提供。另一个选项是为名为[Grabbit](https://github.com/TWCable/grabbit)的[!DNL Experience Manager]基础结构使用开源工具，该工具声称比vlt的性能更快。
+将资产转至发布场的其他选项包括使用 [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) 或 [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run)，这些选项作为 Jackrabbit 中的工具提供。另一个选项是为名为[!DNL Experience Manager]Grabbit[的](https://github.com/TWCable/grabbit)基础结构使用开源工具，该工具声称比vlt的性能更快。
 
 对于这些方法中的任一方法，需要注意的是，创作实例上的资产不会显示为已激活。 若要以正确的激活状态处理标记这些资产的问题，您还需要运行脚本以将资产标记为已激活。
 
@@ -100,7 +100,7 @@ Adobe的Managed Services团队使用名为Glutton的工具将数据加载到客�
 >
 >Adobe不维护或支持Grabbit。
 
-### 克隆Publish {#cloning-publish}
+### 克隆发布 {#cloning-publish}
 
 激活资产后，您可以克隆发布实例以创建部署所需的任意数量的副本。 克隆服务器相当简单，但需要记住一些重要步骤。 要克隆发布，请执行以下操作：
 
@@ -131,8 +131,8 @@ Adobe的Managed Services团队使用名为Glutton的工具将数据加载到客�
    * **Vault远程副本**&#x200B;或vlt rcp允许您通过网络使用vlt。 您可以指定源目录和目标目录，vlt将从一个实例下载所有资料档案库数据，然后将其加载到另一个实例中。 Vlt rcp记录在[https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
    * **Grabbit**&#x200B;是由Time Warner Cable为其[!DNL Experience Manager]实现开发的开源内容同步工具。 由于它使用连续的数据流，与vlt rcp相比，它的延迟更小，速度比vlt rcp快2到10倍。 Grabbit还仅支持增量内容的同步，这允许它在完成初始迁移阶段后同步更改。
 
-1. 激活资产：按照为初始迁移到[!DNL Experience Manager]而记录的[激活资产](#activating-assets)的说明进行操作。
+1. 激活资产：按照为初始迁移到[而记录的](#activating-assets)激活资产[!DNL Experience Manager]的说明进行操作。
 
-1. 克隆发布：与新迁移一样，加载单个发布实例并进行克隆比在两个节点上激活内容更有效。 请参阅[克隆Publish。](#cloning-publish)
+1. 克隆发布：与新迁移一样，加载单个发布实例并进行克隆比在两个节点上激活内容更有效。 请参阅[正在克隆发布。](#cloning-publish)
 
 1. 启用工作流：完成迁移后，为[!UICONTROL DAM更新资产]工作流重新启用启动器，以支持生成演绎版和提取元数据以供日常系统使用。
