@@ -1,5 +1,5 @@
 ---
-title: AEM工作流中的变量
+title: AEM 工作流中的变量
 description: 创建一个变量，为该变量设置值，然后在OR拆分和转到AEM工作流步骤中使用它。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
@@ -9,14 +9,14 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: bdbf9b73553c42865560c76eebab76e2fc397fdf
+source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1942'
 ht-degree: 0%
 
 ---
 
-# AEM工作流中的变量{#variables-in-aem-workflows}
+# AEM 工作流中的变量{#variables-in-aem-workflows}
 
 工作流模型中的变量是一种根据其数据类型存储值的方法。 然后，可以在任何工作流步骤中使用变量的名称来检索存储在变量中的值。 您还可以使用变量名称来定义用于制定路由决策的表达式。
 
@@ -26,11 +26,11 @@ ht-degree: 0%
 * [使用“设置变量”工作流步骤设置变量](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable)的值。
 * [在OR Split和Goto AEM工作流步骤中使用变量](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable)，以便定义用于做出路由决策的表达式。 您还可以在所有AEM Forms工作流步骤中使用变量。
 
-以下视频演示了如何在AEM工作流模型中创建、设置和使用变量：
+以下视频演示如何在AEM工作流模型中创建、设置和使用变量：
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[使用变量视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
 变量是[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)接口的扩展。 您可以在ECMAScript中使用[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)访问使用变量保存的元数据。
 
@@ -104,7 +104,7 @@ ht-degree: 0%
 
 在此示例中，选择一个&#x200B;**formdata** XML变量来存储&#x200B;**cc-app.xml**&#x200B;文件。 查询&#x200B;**formdata**&#x200B;变量，以便您可以设置&#x200B;**emailaddress**&#x200B;字符串变量的值，以存储&#x200B;**cc-app.xml**&#x200B;文件中可用的&#x200B;**emailAddress**&#x200B;属性的值。
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "设置变量的值")
+[设置变量视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### 示例2：使用表达式存储基于其他变量的值 {#example2}
 
@@ -114,7 +114,7 @@ ht-degree: 0%
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[变量表达式视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## 使用表达式编辑器 {#use-expression-editor}
 
@@ -163,7 +163,7 @@ OR拆分在工作流中创建拆分，之后只有一个分支处于活动状态
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[OR拆分视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 同样，选择外部脚本路径或指定路由表达式的ECMA脚本以计算活动分支。 选择&#x200B;**[!UICONTROL 重命名分支]**&#x200B;以指定分支的替代名称。
 

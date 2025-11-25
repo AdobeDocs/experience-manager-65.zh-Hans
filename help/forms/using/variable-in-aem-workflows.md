@@ -9,9 +9,9 @@ exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2087'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html) |
 | AEM 6.5 | 本文 |
 
 工作流模型中的变量是一种根据其数据类型存储值的方法。 然后，可以在任何工作流步骤中使用变量的名称来检索存储在变量中的值。 您还可以使用变量名称来定义用于制定路由决策的表达式。
@@ -31,11 +31,11 @@ ht-degree: 1%
 * [使用“设置变量”工作流步骤设置变量](../../forms/using/variable-in-aem-workflows.md#set-a-variable)的值。
 * [在所有AEM Forms工作流步骤中使用变量](../../forms/using/variable-in-aem-workflows.md#use-a-variable)来检索存储的值，并在OR拆分和转到步骤中定义路由表达式。
 
-以下视频演示了如何在AEM工作流模型中创建、设置和使用变量：
+以下视频演示如何在AEM工作流模型中创建、设置和使用变量：
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
+[变量介绍视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
 变量是现有[MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)接口的扩展。 您可以在ECMAScript中使用[MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)访问使用变量保存的元数据。
 
@@ -44,17 +44,17 @@ ht-degree: 1%
 您可以使用工作流模型Sidekick中提供的“变量”部分创建变量。 AEM工作流变量支持以下数据类型：
 
 * **原始数据类型**： Long、Double、Boolean、Date和String
-* **复杂数据类型**：[文档](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表单数据模型实例。
+* **复杂数据类型**：[文档](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemfd/docmanager/Document.html)、[XML](https://docs.oracle.com/javase/8/docs/api/org/w3c/dom/Document.html)、[JSON](https://static.javadoc.io/com.google.code.gson/gson/2.3/com/google/gson/JsonObject.html)和表单数据模型实例。
 
 >[!NOTE]
 >
 >工作流仅支持日期类型变量使用ISO8601格式。
 
-文档和表单数据模型数据类型需要[AEM Forms附加组件包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)。  使用ArrayList数据类型创建变量集合。 您可以为所有原始和复杂数据类型创建ArrayList变量。 例如，创建一个ArrayList变量并选择String作为子类型以使用该变量存储多个字符串值。
+文档和表单数据模型数据类型需要[AEM Forms附加组件包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。  使用ArrayList数据类型创建变量集合。 您可以为所有原始和复杂数据类型创建ArrayList变量。 例如，创建一个ArrayList变量并选择String作为子类型以使用该变量存储多个字符串值。
 
 执行以下步骤可创建变量：
 
-1. 在AEM实例上，导航到“工具”![“工具”](/help/forms/using/assets/hammer.png)>“工作流”>“模型”。
+1. 在AEM实例上，导航到工具![工具](/help/forms/using/assets/hammer.png) >工作流>模型。
 1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;并指定工作流模型的标题和可选名称。 选择模型并选择&#x200B;**[!UICONTROL 编辑]**。
 1. 选择工作流模型Sidekick中可用的变量图标，然后选择&#x200B;**[!UICONTROL 添加变量]**。
 
@@ -113,7 +113,7 @@ ht-degree: 1%
 
 在此示例中，选择一个&#x200B;**formdata** XML变量来存储&#x200B;**cc-app.xml**&#x200B;文件。 查询&#x200B;**formdata**&#x200B;变量以设置&#x200B;**emailaddress**&#x200B;字符串变量的值，以存储&#x200B;**cc-app.xml**&#x200B;文件中可用的&#x200B;**emailAddress**&#x200B;属性的值。
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "设置变量的值")
+[设置变量视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4)
 
 ### 示例2：使用表达式存储基于其他变量的值 {#example2}
 
@@ -123,7 +123,7 @@ ht-degree: 1%
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
+[变量表达式视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## 使用表达式编辑器 {#use-expression-editor}
 
@@ -170,9 +170,7 @@ OR拆分在工作流中创建拆分，之后只有一个分支处于活动状态
 
 在此示例中，在定义路由表达式之前，请使用[example 2](../../forms/using/variable-in-aem-workflows.md#example2)设置&#x200B;**totalvalue**&#x200B;变量的值。 如果&#x200B;**totalvalue**&#x200B;变量的值大于50000，则分支1处于活动状态。 同样，您可以定义一个规则，以使Branch 2在&#x200B;**totalvalue**&#x200B;变量的值小于50000时有效。
 
-<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
-
->[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
+[OR拆分视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
 同样，选择外部脚本路径或指定路由表达式的ECMA脚本以计算活动分支。 选择&#x200B;**[!UICONTROL 重命名分支]**&#x200B;以指定分支的替代名称。
 
@@ -212,7 +210,7 @@ OR拆分在工作流中创建拆分，之后只有一个分支处于活动状态
 | 表单数据模型 | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData()。getMetaDataMap()。get(variableName， Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class)； |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData()。getMetaDataMap()。get(variableName， Packages.com.google.gson.JsonObject.class)； |
 
-文档和表单数据模型变量数据类型需要[AEM Forms附加组件包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)。
+文档和表单数据模型变量数据类型需要[AEM Forms附加组件包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)。
 
 **示例**
 
