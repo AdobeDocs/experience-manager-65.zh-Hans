@@ -474,7 +474,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
->同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
+>同步仅可将更改&#x200B;*从&#x200B;**母版**&#x200B;复制到变体*。
 >
 >仅会同步变体的当前元素。
 >
