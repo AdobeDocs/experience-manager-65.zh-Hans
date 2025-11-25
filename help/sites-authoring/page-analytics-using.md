@@ -10,15 +10,15 @@ legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-usin
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 4%
+source-wordcount: '437'
+ht-degree: 5%
 
 ---
 
-# 查看页面分析数据{#seeing-page-analytics-data}
+# 请参阅页面分析数据{#seeing-page-analytics-data}
 
 使用页面分析数据来衡量页面内容的有效性。
 
@@ -77,17 +77,17 @@ analytics-administrators用户组的成员可以配置Sites控制台，以便作
 
 ### 从站点打开内容分析 {#opening-content-insights-from-sites}
 
-从站点控制台打开[内容分析](/help/sites-authoring/content-insights.md)以进一步调查页面有效性。
+从站点控制台打开[内容Insight](/help/sites-authoring/content-insights.md)以进一步调查页面有效性。
 
 1. 在站点控制台中，选择要查看其内容分析的页面。
-1. 在工具栏上，单击Analytics和Recommendations图标。
+1. 在工具栏上，单击Analytics和“推荐”图标。
 
-   ![Analytics和Recommendations图标](do-not-localize/chlimage_1-14.png)
+   ![Analytics和“推荐”图标](do-not-localize/chlimage_1-14.png)
 
-## 在页面编辑器中可见的Analytics(Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## 在页面编辑器(Activity Map)中可见Analytics {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
 >由于Adobe Analytics API中的安全性更改，无法再使用AEM中包含的Activity Map版本。
 >
->现在应使用Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hans)提供的ActivityMap插件。
+>现在应使用Adobe Analytics[提供的](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)ActivityMap插件。

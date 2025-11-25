@@ -8,8 +8,8 @@ topic-tags: site-features
 exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 74%
@@ -33,5 +33,5 @@ ht-degree: 74%
 
 以下页面包含相关内容：
 
-* [将工作流程应用于页面](/help/sites-authoring/workflows-applying.md)
-* [参与工作流程](/help/sites-authoring/workflows-participating.md)
+* [将工作流应用于页面](/help/sites-authoring/workflows-applying.md)
+* [参与工作流](/help/sites-authoring/workflows-participating.md)

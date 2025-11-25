@@ -4,11 +4,11 @@ description: 该汇总内容列出了 Adobe Experience Manager 6.5 在前八个�
 content-type: reference
 docset: aem65
 feature: Release Information
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: eef3ad559612c338de0c4232aadc4133c910aaf8
-workflow-type: ht
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '3109'
 ht-degree: 100%
 
@@ -168,13 +168,13 @@ IPTC 选项卡现已支持[!UICONTROL 替代文本]和[!UICONTROL 扩展描述]�
 
    * **基于政府身份证件的 Adobe Sign 身份验证增强安全性**——Adobe Acrobat Sign 的基于政府身份证件验证功能提供了额外的安全保障。用户可通过政府签发的身份证件（如驾驶证、国家身份证、护照）来验证其身份。通过利用可信身份证明文件，此增强功能将签名过程的可信度提高一级，使其成为需要更高的安全性、合规性和用户验证的场景的理想之选。
 
-   * **通过审核记录提升 Adobe Sign 文档透明度**——借助审核记录功能，您可以深入了解 Adobe Sign 文档的完整生命周期。通过审核记录，您可以保留与文档相关的所有操作与交互的完整记录。这些操作和交互包括谁查看、编辑或签署了文档，以及每个事件的时间戳。此增强功能对于保持合规性、解决争议和确保数字协议的完整性至关重要。
+   * **通过审核记录提升 Adobe Sign 文档透明度**——借助审核记录功能，您可以深入洞察 Adobe Sign 文档的完整生命周期。通过审核记录，您可以保留与文档相关的所有操作与交互的完整记录。这些操作和交互包括谁查看、编辑或签署了文档，以及每个事件的时间戳。此增强功能对于保持合规性、解决争议和确保数字协议的完整性至关重要。
 
 
    * **扩展协议接收人的角色设置，不再局限于签署人**——Adobe Acrobat Sign 现已支持将协议接收人的角色扩展到签署人之外，以更好地满足不同的工作流需求。启用此选项后，协议中的每个接收者均可单独配置其角色，其中签名者为默认角色。
 
 
-* **[JEE 上的 AEM Forms 完整安装程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)**——此服务包提供 JEE 上的 AEM Forms 的完整安装程序，并支持多种全新的软件组合，其中包括：
+* **[EE 上的 AEM Forms 完整安装程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)**——此服务包提供 EE 上的 AEM Forms 的完整安装程序，并支持多种全新的软件组合，其中包括：
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
    * Oracle WebLogic 14C（适用于 Windows Server 2022）
@@ -182,7 +182,7 @@ IPTC 选项卡现已支持[!UICONTROL 替代文本]和[!UICONTROL 扩展描述]�
    * MongoDB 6.0 <!-- it was previously MongoDB 4.4 -->
    * MySQL JDBC Connector 8
 
-如果您正在安装或计划在 JEE 环境中使用 AEM 6.5 Forms 的最新软件，Adobe 建议使用 AEM 6.5.18.0 Forms on JEE 完整安装程序。有关已新增和已弃用软件的完整列表，请参阅 JEE 上的 AEM Forms 或 OSGi 上的 AEM Forms 的相关文档。
+如果您正在安装或计划在 JEE 环境中使用 AEM 6.5 Forms 的最新软件，Adobe 建议使用 JEE 上的 AEM 6.5.18.0 Forms 完整安装程序。有关已新增和已弃用软件的完整列表，请参阅 JEE 上的 AEM Forms 或 OSGi 上的 AEM Forms 的相关文档。
 
 ## AEM 6.5 服务包 17 – 2025 年 5 月 22 日
 
@@ -191,7 +191,7 @@ IPTC 选项卡现已支持[!UICONTROL 替代文本]和[!UICONTROL 扩展描述]�
    * 创建一个版本
    * 关联或取消关联资产
 
-  您无需导航到资源的位置并查看其属性即可执行这些操作。
+  您无需导航到资产的位置并查看其属性即可执行这些操作。
 
 * **Dynamic Media _快照_**功能可让您通过测试图像或 Dynamic Media URL 预览图像修饰符和智能成像优化效果——例如 WebP 或 AVIF 输出、带宽感知压缩以及设备像素比缩放。您可以立即比较每个设置对图像质量和文件大小的影响。
 请参阅 [Dynamic Media 快照](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)。

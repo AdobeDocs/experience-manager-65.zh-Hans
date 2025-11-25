@@ -1,6 +1,6 @@
 ---
 title: 分析页面性能
-description: 使用“内容分析”页可以分析所创作页面的性能
+description: 使用“内容Insight”页可以分析所创作页面的性能
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,24 +9,24 @@ docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '661'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
 # 分析页面性能{#analyzing-page-performance}
 
-打开[内容分析](/help/sites-authoring/content-insights.md)页面以分析您正在创作的页面的性能。 配置报告时段以集中进行分析。
+打开[内容Insight](/help/sites-authoring/content-insights.md)页面以分析您正在创作的页面的性能。 配置报告时段以集中进行分析。
 
-## 为页面打开Analytics和Recommendations {#opening-analytics-and-recommendations-for-a-page}
+## 打开页面的Analytics和Recommendations {#opening-analytics-and-recommendations-for-a-page}
 
-使用以下过程可查看页面的Analytics和Recommendations：
+请按下列步骤查看页面的Analytics和建议：
 
 1. 导航到要分析的页面。
-1. 在工具栏中，单击&#x200B;**Analytics和Recommendations**。
+1. 在工具栏中，单击&#x200B;**分析和推荐**。
 
    >[!NOTE]
    >
@@ -41,15 +41,15 @@ ht-degree: 0%
 * 要报告的时段。
 * 数据的粒度。
 
-用于更改报表中与时间相关的方面的工具显示在内容分析页面的顶部。 ![chlimage_1-126](assets/chlimage_1-126.png)
+用于更改报表中与时间相关的方面的工具显示在内容Insight页面的顶部。 ![chlimage_1-126](assets/chlimage_1-126.png)
 
 #### 更改报告周期 {#changing-the-reporting-period-1}
 
-更改内容分析页面的报告时段，将您对页面活动的分析集中到特定时段。 在更改报告时段时，报表会自动刷新。 时间框架上的阴影区域表示报告时段。 时间框架上的日期从左到右增加。
+更改“内容Insight”页面的报表期，以便将您对页面活动的分析集中到特定时段。 在更改报告时段时，报表会自动刷新。 时间框架上的阴影区域表示报告时段。 时间框架上的日期从左到右增加。
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
-要更改内容分析页面的报告时段，请执行以下操作：
+要更改内容Insight页面的报告时段，请执行以下操作：
 
 1. 如果时间范围未出现在页面顶部，请单击切换时间范围图标。
 
@@ -75,9 +75,9 @@ ht-degree: 0%
 
 1. 单击所需的粒度。 选择后，报表将自动更新以反映粒度。
 
-### 为SEO Recommendations分配任务 {#assigning-tasks-for-seo-recommendations}
+### 为SEO推荐分配任务 {#assigning-tasks-for-seo-recommendations}
 
-使用SEO Recommendations报表可创建用于提高搜索引擎页面可见性的任务。 对于报表中没有复选标记的每个推荐，您可以创建分配给用户的任务以执行所需工作。
+使用SEO推荐报表可创建用于提高搜索引擎页面可见性的任务。 对于报表中没有复选标记的每个推荐，您可以创建分配给用户的任务以执行所需工作。
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 

@@ -4,11 +4,11 @@ description: 使用AEM帮助残障人士访问并使用Web内容
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '13636'
-ht-degree: 82%
+source-wordcount: '13630'
+ht-degree: 81%
 
 ---
 
@@ -68,11 +68,11 @@ ht-degree: 82%
 
 #### 如何达到标准 – 非文本内容 (1.1.1) {#how-to-meet-non-text-content}
 
-对于静态图形，基本的要求是为图形提供对等的替换文本。可以在&#x200B;**替换文本**&#x200B;字段中完成此操作。 例如，查看核心组件&#x200B;**[图像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hans)**。
+对于静态图形，基本的要求是为图形提供对等的替换文本。可以在&#x200B;**替换文本**&#x200B;字段中完成此操作。 例如，查看核心组件&#x200B;**[图像](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html)**。
 
 >[!NOTE]
 >
->某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hans)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=zh-Hans#accessibility-tab)**&#x200B;选项卡）。
+>某些开箱即用的核心组件（例如&#x200B;**[轮播](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html)**）没有提供用于向单个图像添加替换文本描述的&#x200B;**替换文本**&#x200B;字段，尽管存在适用于整个组件的&#x200B;**标签**&#x200B;字段（**[辅助功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html#accessibility-tab)**&#x200B;选项卡）。
 >
 >因此，在为 AEM 实例实施这些版本时，开发团队必须将此类组件配置为支持 `alt` 属性，以便作者可以将其添加到内容中（请参阅[添加对其他 HTML 元素和属性的支持](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)）。
 
@@ -314,9 +314,9 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 
 * **列表**：可以使用 HTML 指定三种不同类型的列表：
    * `<ul>` 元素用于表示&#x200B;*无序*（项目符号）列表。单个列表项使用 `<li>` 元素进行标识。
-在 RTE 中，使用&#x200B;**项目符号列表**&#x200B;图标。
+在 RTE 中，使用**项目符号列表**&#x200B;图标。
    * `<ol>` 元素用于表示&#x200B;*编号*&#x200B;列表。单个列表项使用 `<li>` 元素进行标识。
-在 RTE 中，使用&#x200B;**编号列表**&#x200B;图标。
+在 RTE 中，使用**编号列表**&#x200B;图标。
 
   如果要将现有内容更改为特定列表类型，请突出显示相应的文本并选择相应的列表类型。正如前面显示如何输入段落文本的示例一样，相应的列表元素会自动添加到您的 HTML 中。
 
@@ -341,13 +341,13 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
   要打开您可以在其中选择&#x200B;**表属性**&#x200B;选项卡的&#x200B;**表**&#x200B;对话框，请执行以下操作：
 
    * 定义相应的&#x200B;**题注**。
-   * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、**&#x200B;**&#x200B;** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
+   * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、****** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
 
   然后，您可以使用&#x200B;**单元格属性**&#x200B;来选择单元格是数据单元格还是标题单元格：
 
 * **强调**：使用 `<strong>` 或 `<em>` 元素指示要强调的内容。切勿在段落中使用标题突出显示文本。
    * 突出显示要强调的文本；
-   * 单击&#x200B;**属性**&#x200B;面板中显示的&#x200B;**B**&#x200B;图标(`<strong>`)或&#x200B;**I**&#x200B;图标(`<em>`)(确保已选择HTML)。
+   * 单击&#x200B;**属性**&#x200B;面板中显示的`<strong>`B **图标(**)或`<em>`I **图标(**)(确保已选择HTML)。
 
      >[!NOTE]
      >
@@ -521,8 +521,8 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 
 * 成功标准 1.4.3
 * AA 级
-* 对比度（最小）：文本的可视呈现以及文本的图像至少要有 4.5:1 的对比度，以下内容除外：
-   * 大文本：大号文本及其图像至少要有 3:1 的对比度。
+* 对比度（最小）：文本的可视呈现和文本的图像的对比度至少为4.5:1，以下除外：
+   * 大文本：大规模文本和大规模文本图像的对比度至少为3:1。
    * 附属内容：文本或文本的图像是未激活的用户界面组件[纯装饰](https://www.w3.org/TR/WCAG/#dfn-pure-decoration)的一部分，对任何人都不可见，或者属于包含其他重要可视内容的图片的一部分，对于此类文本或文本的图像，没有对比度要求。
    * 商标标志：文本是徽标或品牌名称的一部分，对于此类文本，没有最低对比度要求。
 
@@ -545,9 +545,9 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
 
 确保文本与其背景之间有明显的对比度。对比度取决于相关文本的大小和样式：
 
-* 对于大小小于 18 点（或粗体为小于 14 点）的文本，文本中的文字/图像与背景之间的对比度至少应为 4.5:1。
-* 对于大小至少为 18 点（或粗体至少为 14 点）的文本，对比度至少应为 3:1。
-* 如果背景带有图案，则应将任何文本周围的背景变浅，以便将对比度维持在 4.5:1 或 3:1。
+* 对于大小小于18点（或粗体为小于14点）的文本，文本的文本/图像与背景之间的对比度应至少为4.5:1。
+* 对于大小至少为18点（或粗体为14点）的文本，对比度应至少为3:1。
+* 如果背景是阵列化的，则任何文本周围的背景都应着色，以保持4.5:1或3:1的比率。
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: 在AEM中创作时疑难解答
+title: 在AEM中进行创作时疑难解答
 description: 您在使用AEM时可能会遇到的一些问题。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 41%
@@ -26,7 +26,7 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->具有管理员权限的用户以及希望对AEM问题进行故障排除的用户，可以使用[AEM故障诊断（适用于管理员）](/help/sites-administering/troubleshoot.md)中所述的故障排除方法。 如果您没有足够的权限，请与系统管理员联系，了解有关AEM疑难解答的信息。
+>具有管理员权限的用户以及希望对AEM问题进行故障排除的用户，可以使用[AEM故障排除（适用于管理员）](/help/sites-administering/troubleshoot.md)中所述的故障排除方法。 如果您没有足够的权限，请联系系统管理员来解决AEM问题。
 
 ## 发布站点上仍显示旧的页面版本 {#old-page-version-still-on-published-site}
 

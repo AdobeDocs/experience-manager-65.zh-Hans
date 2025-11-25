@@ -4,8 +4,8 @@ description: 了解Adobe Experience Manager 6.5如何创建个性化内容。
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 36%
@@ -42,7 +42,7 @@ AEM提供了一个用于创作目标内容和呈现个性化体验的工具框�
 
 您可以为活动定义体验。 您可以使用[活动控制台](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console)或[定位模式](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode)向活动添加体验。
 
-## 优惠 {#offers}
+## 产品建议 {#offers}
 
 选件是指在体验页面上的某个位置显示的内容。 针对不同的体验使用不同的选件，以最大限度地提高内容对受众的有效性。
 

@@ -7,9 +7,9 @@ hide: true
 hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
-role: User,Admin,Architect,Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
-workflow-type: ht
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->如需了解更多信息或获取补丁，请[联系支持人员](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)。
+>如需了解更多信息或获取补丁，请[联系支持人员](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)。
 
 ## 关于补丁安装程序 {#about-the-patch-installer}
 
@@ -71,8 +71,8 @@ AEM 6.5 Forms JEE 补丁安装程序包含此补丁发布之前 AEM 6.5 Forms JE
 
 1. 根据您所使用的应用程序服务器，选择以下文档之一，并按&#x200B;*配置和部署 AEM Forms* 部分的说明进行操作。
 
-   * [安装和部署 AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_cn)
-   * [安装和部署 AEM forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_cn)
+   * [安装和部署 AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [安装和部署 AEM forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. （仅适用于 JBoss®）在安装补丁并配置服务器后，请删除 JBoss® 应用程序服务器下的 tmp 和 work 目录。
 
@@ -97,4 +97,4 @@ AEM 6.5 Forms JEE 补丁安装程序包含此补丁发布之前 AEM 6.5 Forms JE
 * 文档安全
 * 基础 JEE
 
-[联系支持人员](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)
+[联系支持人员](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)

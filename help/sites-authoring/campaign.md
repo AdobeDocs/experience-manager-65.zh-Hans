@@ -1,5 +1,5 @@
 ---
-title: 使用Adobe Campaign Classic和Adobe Campaign Standard
+title: 使用 Adobe Campaign Classic 和 Adobe Campaign Standard
 description: 您可以在AEM中创建电子邮件内容，并在Adobe Campaign电子邮件中处理这些内容
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,15 +8,15 @@ topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '2770'
-ht-degree: 0%
+source-wordcount: '2769'
+ht-degree: 2%
 
 ---
 
-# 使用Adobe Campaign Classic和Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
+# 使用 Adobe Campaign Classic 和 Adobe Campaign Standard{#working-with-adobe-campaign-classic-and-adobe-campaign-standard}
 
 您可以在AEM中创建电子邮件内容，并在Adobe Campaign电子邮件中处理这些内容。 为此，您必须：
 
@@ -31,17 +31,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在使用此功能之前，必须配置AEM以与[Adobe Campaign](/help/sites-administering/campaignonpremise.md)或[Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)集成。
+>在使用此功能之前，必须将AEM配置为与[Adobe Campaign](/help/sites-administering/campaignonpremise.md)或[Adobe Campaign Standard](/help/sites-administering/campaignstandard.md)集成。
 
 ## 通过Adobe Campaign发送电子邮件内容 {#sending-email-content-via-adobe-campaign}
 
-配置AEM和Adobe Campaign后，您可以直接在AEM中创建电子邮件投放内容，然后在Adobe Campaign中处理这些内容。
+配置AEM和Adobe Campaign后，您可以直接在AEM中创建电子邮件投放内容，然后在Adobe Campaign中处理该内容。
 
 在AEM中创建Adobe Campaign内容时，必须先链接到Adobe Campaign服务，然后才能编辑内容以访问所有功能。
 
 可能存在两种情况：
 
-* 内容可以与Adobe Campaign中的投放同步。 这样，您即可在投放中使用AEM内容。
+* 内容可以与Adobe Campaign中的投放同步。 这样，您就可以在投放中使用AEM内容。
 * (仅限Adobe Campaign Classic)可以将内容直接发送到Adobe Campaign，后者自动生成新的电子邮件投放。 此模式具有限制。
 
 本文档中详述了相关说明。
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 #### 创建新电子邮件内容 {#creating-new-email-content-1}
 
-1. 在AEM中，依次选择&#x200B;**站点**&#x200B;和&#x200B;**促销活动**，然后浏览到管理电子邮件促销活动的位置。 在以下示例中，路径是&#x200B;**站点** > **促销活动** > **Geometrixx Outdoors** > **电子邮件促销活动**。
+1. 在AEM中，依次选择&#x200B;**站点**&#x200B;和&#x200B;**促销活动**，然后浏览到管理电子邮件促销活动的位置。 在以下示例中，路径是&#x200B;**站点** > **营销活动** > **Geometrixx Outdoors** > **电子邮件营销活动**。
 
    >[!NOTE]
    >
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 要与Adobe Campaign集成，您需要将Adobe Campaign云服务添加到页面。 这样，您就可以访问个性化和其他Adobe Campaign信息。
 
-此外，您可能还需要选择Adobe Campaign模板并更改主题，为那些不会在HTML中查看电子邮件的用户添加纯文本内容。
+此外，您可能还需要选择Adobe Campaign模板，并更改主题并为那些不会在HTML中查看电子邮件的用户添加纯文本内容。
 
 您可以在创建云服务后，从&#x200B;**站点**&#x200B;选项卡或电子邮件/新闻稿中选择该服务。
 
@@ -173,11 +173,11 @@ ht-degree: 0%
    >Adobe Campaign Standard的&#x200B;**：**
    >
    >* 可用的上下文字段对应于Adobe Campaign中的&#x200B;**用户档案**&#x200B;定向维度。
-   >* 请参阅[将AEM页面链接到Adobe Campaign电子邮件](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard)。
+   >* 请参阅[将AEM页面关联到Adobe Campaign电子邮件](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard)。
    >
    >Adobe Campaign Classic的&#x200B;**：**
    >
-   >* 可用的上下文字段是从Adobe Campaign **nms：seedMember**&#x200B;架构中动态恢复的。 目标扩展数据可从包含与内容同步的投放的工作流中动态恢复。 (请参阅[将AEM中创建的内容与Adobe Campaign中的投放同步](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)部分)。
+   >* 可用的上下文字段是从Adobe Campaign **nms:seedMember**&#x200B;架构中动态恢复的。 目标扩展数据可从包含与内容同步的投放的工作流中动态恢复。 (请参阅[将AEM中创建的内容与Adobe Campaign中的投放同步](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic)部分)。
    >
    >* 要添加或隐藏个性化元素，请参阅[管理个性化字段和块](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks)。
    >* **重要信息**：所有种子表字段也必须位于收件人表（或相应的联系人表）中。
@@ -260,7 +260,7 @@ ht-degree: 0%
 
 要将在AEM中创建的页面链接到来自Adobe Campaign的电子邮件，请执行以下操作：
 
-1. 根据特定于AEM的电子邮件模板创建电子邮件。 有关详细信息，请参阅[在Adobe Campaign Standard中创建电子邮件](https://helpx.adobe.com/cn/campaign/standard/channels/using/creating-an-email.html)。
+1. 根据特定于AEM的电子邮件模板创建电子邮件。 有关详细信息，请参阅[在Adobe Campaign Standard中创建电子邮件](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html)。
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -298,13 +298,13 @@ ht-degree: 0%
    >
    >如果内容在链接到电子邮件时在AEM中更新，则它会在分析期间在Adobe Campaign中自动更新。 也可以使用内容操作栏中的&#x200B;**刷新Adobe Experience Manager内容**&#x200B;手动执行同步。
    >
-   >您可以使用&#x200B;**从内容操作栏中删除带有AEM内容的链接**&#x200B;来取消电子邮件与Adobe Experience Manager内容之间的链接。 仅当内容已链接到投放时，此按钮才可用。 要将其他内容与投放链接，必须先删除当前内容链接，然后才能建立新链接。
+   >您可以使用&#x200B;**从内容操作栏中删除带有AEM内容的链接**，来取消电子邮件与Adobe Experience Manager内容之间的链接。 仅当内容已链接到投放时，此按钮才可用。 要将其他内容与投放链接，必须先删除当前内容链接，然后才能建立新链接。
    >
    >删除链接后，本地内容会保留并在Adobe Campaign中变为可编辑。 如果在修改内容后再次链接该内容，则将丢失所有更改。
 
 ### 将AEM中创建的内容与Adobe Campaign Classic中的投放同步 {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
-通过Adobe Campaign，您可以恢复在AEM中创建的内容并与以下内容同步：
+通过Adobe Campaign，您可以恢复在AEM中创建的内容，并将其与以下内容同步：
 
 * 活动投放
 * 活动工作流中的投放活动
@@ -323,11 +323,11 @@ ht-degree: 0%
 >
 >[!NOTE]
 >
->AEM 6.1已弃用工作流步骤&#x200B;**Publish到Adobe Campaign**。此步骤是AEM 6.0与Adobe Campaign集成的一部分，不再需要。
+>AEM 6.1已弃用工作流步骤&#x200B;**发布到Adobe Campaign**。此步骤是AEM 6.0与Adobe Campaign集成的一部分，不再需要。
 
 要将AEM中创建的内容与Adobe Campaign中的投放同步，请执行以下操作：
 
-1. 通过选择带有AEM内容(mailAEMContent)的&#x200B;**电子邮件投放**&#x200B;投放模板，创建投放或向营销活动工作流添加投放活动。
+1. 通过选择&#x200B;**包含AEM内容的电子邮件投放(mailAEMContent)**&#x200B;投放模板，创建投放或向营销活动工作流添加投放活动。
 
    ![chlimage_1-40](assets/chlimage_1-40a.png)
 
@@ -355,7 +355,7 @@ ht-degree: 0%
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
 1. 指定投放的其他参数（目标等）
-1. 如有必要，请在Adobe Campaign中启动投放批准流程。 除了在Adobe Campaign中配置的审批（预算、目标等）之外，还需要AEM中的内容审批。 仅当Adobe Campaign中的内容已在AEM中获得批准时，该内容才可能获得批准。
+1. 如有必要，请在Adobe Campaign中启动投放批准流程。 除了在AEM中配置的审批（预算、目标等）之外，还需要在Adobe Campaign中审批内容。 仅当Adobe Campaign中的内容已获批准时，该内容才能在AEM中批准。
 1. 执行投放。 在投放分析期间，将恢复AEM内容的最新版本。
 
    >[!NOTE]
@@ -364,4 +364,4 @@ ht-degree: 0%
    >* 如果内容在链接到Adobe Campaign中的某个投放时在AEM中更新，则在投放分析期间会在投放中自动更新。 也可以使用&#x200B;**立即刷新内容**&#x200B;按钮手动执行同步。
    >* 您可以使用&#x200B;**取消同步**&#x200B;按钮取消投放与AEM内容之间的同步。 仅当内容已与投放同步时，此项才可用。 要将其他内容与投放同步，必须先取消当前内容同步，然后才能建立新链接。
    >* 如果取消同步，本地内容将保留并在Adobe Campaign中变为可编辑。 如果在修改内容后重新同步该内容，则将丢失所有更改。
-   >* 对于循环投放和连续投放，每次执行投放时都会停止与AEM内容的同步。
+   >* 对于循环和连续投放，每次执行投放时都会停止与AEM内容的同步。

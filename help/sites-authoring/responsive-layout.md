@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 41da3aef16e650d8dc33e96991d0a997564c9224
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1853'
 ht-degree: 69%
@@ -71,7 +71,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 >[!NOTE]
 >
->Adobe提供了响应式布局的[GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)，前端开发人员可以参考该文档，以便在AEM之外使用AEM网格，例如，在为将来的AEM站点创建静态HTML模型时。
+>Adobe提供了[GitHub文档](https://adobe-marketing-cloud.github.io/aem-responsivegrid/)的响应式布局，前端开发人员可以参考该文档，以便在AEM之外使用AEM网格，例如，在为将来的AEM站点创建静态HTML模型时。
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ AEM 让您根据设备的宽度定义布局：
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * 蓝色虚线表示选定设备(此处为&#x200B;**iPhone 6**)的&#x200B;*折*。
+   * 蓝色虚线表示选定设备(此处为&#x200B;*iPhone 6*)的&#x200B;**折**。
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
@@ -159,7 +159,7 @@ AEM 让您根据设备的宽度定义布局：
 
 >[!NOTE]
 >
->如果尚未可用，则必须为段落系统/页面[&#128279;](/help/sites-administering/configuring-responsive-layout.md)明确激活&#x200B;**布局容器**（例如，通过使用&#x200B;[**设计**&#x200B;模式](/help/sites-authoring/default-components-designmode.md)）。
+>如果尚未可用，则必须为段落系统/页面&#x200B;**明确**&#x200B;激活[布局容器](/help/sites-administering/configuring-responsive-layout.md)（例如，通过使用&#x200B;[**设计**&#x200B;模式](/help/sites-authoring/default-components-designmode.md)）。
 
 1. 布局 **容器在组件浏览器中** ，可作为标准 [组件使用](/help/sites-authoring/author-environment-tools.md#components-browser)。从此处，您可以将其拖动到页面上的所需位置，随后您将看到将组件拖动到 **此处占位符** 。
 1. 接下来，您可以向布局容器中添加组件。这些组件将存放实际的内容：
@@ -271,7 +271,7 @@ AEM 让您根据设备的宽度定义布局：
      >在以上示例中，浮动和隐藏操作之所以可用，是因为此布局容器嵌套在一个父布局容器内。
 
    * **取消隐藏组件**
-选择父组件会显示包含&#x200B;**显示隐藏的组件**&#x200B;选项的操作工具栏。在此示例中，隐藏了两个组件。
+选择父组件会显示包含**显示隐藏的组件**&#x200B;选项的操作工具栏。在此示例中，隐藏了两个组件。
 
      ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 

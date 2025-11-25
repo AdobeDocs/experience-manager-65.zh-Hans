@@ -9,11 +9,11 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 82597d52ed774f08ce7136d271148e720b56fcf1
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1097'
-ht-degree: 77%
+source-wordcount: '1096'
+ht-degree: 78%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 77%
 * 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
 * 默认情况下，[Live Copy](/help/sites-administering/msm.md) 会在源页面发生更改时自动更新启动页面。您可以指定创建一个静态副本，以防止自动更改。
 
-（可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**&#x200B;[&#128279;](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
+（可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**[](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
 
 ## 创建启动项 {#creating-a-launch}
 
@@ -69,7 +69,7 @@ ht-degree: 77%
    >
    >如果站点在顶级下包含语言根，则启动项的页面和分支必须位于公共语言根下。
    >
-   >如果尝试在源路径中创建具有父页面或子页面的启动项，它将失败，并返回错误“目标已存在于：path中的页面。”
+   >如果尝试在源路径中创建具有父页面或子页面的启动项，它将失败，并返回错误“目标已存在于:path，已存在于页面。”
 
 1. 对于每个条目，您可以指定是否：
 
@@ -99,7 +99,7 @@ ht-degree: 77%
    如果您返回控制台（单击&#x200B;**完成**），则可以从以下任一位置查看（并访问）您的启动项：
 
    * [**启动项**&#x200B;控制台](/help/sites-authoring/launches.md#the-launches-console)
-   * **站点**&#x200B;控制台[&#128279;](/help/sites-authoring/launches.md#launches-in-references-sites-console)中的&#x200B;**引用**
+   * [**站点**&#x200B;控制台&#x200B;**中的**&#x200B;引用](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 
 ### 使用新模板创建启动项 {#create-launch-with-new-template}
 

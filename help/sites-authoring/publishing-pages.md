@@ -4,11 +4,11 @@ description: 了解如何在Adobe Experience Manager 6.5中发布内容页面。
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 2a843cefdd881e3cab60b2ddba12a26d0a498d13
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1701'
-ht-degree: 64%
+ht-degree: 65%
 
 ---
 
@@ -25,13 +25,13 @@ ht-degree: 64%
 >与发布相关的某些术语可能会混淆：
 >
 >* **发布/取消发布**
->  &#x200B;>  这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
+>  这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
 >
 >* **激活／取消激活**
->  &#x200B;>  这两个术语与发布/取消发布同义。
+>  这两个术语与发布/取消发布同义。
 >
 >* **复制**
->  &#x200B;>  这些是技术术语，用于描述数据（例如页面内容、文件、代码、用户注释）从一个环境移动到另一个环境，例如发布或反向复制用户注释时。
+>  这些是技术术语，用于描述数据（例如页面内容、文件、代码、用户注释）从一个环境移动到另一个环境，例如发布或反向复制用户注释时。
 
 ## 权限不足 {#insufficient-privileges}
 
@@ -266,7 +266,7 @@ Sites 控制台中有两个用于发布的选项：
 
 您可以确定页面的发布状态：
 
-* 在[&#x200B; Sites 控制台上的资源概述信息](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中
+* 在[ Sites 控制台上的资源概述信息](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中
 
   ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 

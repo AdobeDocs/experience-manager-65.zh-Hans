@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '903'
 ht-degree: 63%
@@ -65,7 +65,7 @@ ContextHub和Client Context中称为&#x200B;*区段*&#x200B;的受众是由特�
 
 >[!NOTE]
 >
->如果您在&#x200B;**0&rbrace;创建**&#x200B;1&rbrace;菜单中看不到{创建目标受众}，则您没有创建受众的必要权限。 **&#x200B;**&#x200B;您需要具有&#x200B;**/etc/segmentation**&#x200B;下的写入权限才能创建受众。 默认情况下，组内容作者具有写权限。
+>如果您在**0}创建**1}菜单中看不到{创建目标受众}，则您没有创建受众的必要权限。 ****&#x200B;您需要具有&#x200B;**/etc/segmentation**&#x200B;下的写入权限才能创建受众。 默认情况下，组内容作者具有写权限。
 
 要创建 Adobe Target 受众，请执行以下操作：
 
@@ -73,7 +73,7 @@ ContextHub和Client Context中称为&#x200B;*区段*&#x200B;的受众是由特�
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. 在“受众”控制台中，单击&#x200B;**创建**，然后单击&#x200B;**创建目标受众**。
+1. 在“受众”控制台中，单击&#x200B;**创建**，然后单击**创建目标受众**。
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -90,13 +90,13 @@ ContextHub和Client Context中称为&#x200B;*区段*&#x200B;的受众是由特�
 
 | **属性** | **描述** | **有关更多信息** |
 |---|---|---|
-| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕尺寸（按像素）等参数定位移动设备。 | 请参阅 Adobe Target 上的[移动设备文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=zh-Hans)。 |
-| **自定义** | 自定义参数都是 mbox 参数。如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参阅 Adobe Target 上的[自定义参数文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=zh-Hans)。 |
-| **操作系统** | 您可以定位使用特定操作系统的访客。 | 定位使用Linux®、Macintosh或Windows的用户。 |
-| **站点页面** | 定位特定页面的访客或具有特定 mbox 参数的访客。 | 请参阅 Adobe Target 上的[站点页面文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=zh-Hans)。 |
-| **浏览器** | 您可以定位在访问您的页面时使用特定浏览器或特定浏览器选项的用户。 | 请参阅 Adobe Target 上的[浏览器选项文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=zh-Hans)。 |
-| **访客配置文件** | 定位满足特定配置文件参数的访客。 | 请参阅 Adobe Target 上的[访客配置文件文档](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html?lang=zh-Hans)。 |
-| **流量源** | 根据将访客转至您的站点的搜索引擎或登陆页来定位访客。 | 请参阅 Adobe Target 上的[流量源文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=zh-Hans)。 |
+| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕尺寸（按像素）等参数锁定移动设备。 | 请参阅 Adobe Target 上的[移动设备文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html)。 |
+| **自定义** | 自定义参数都是 mbox 参数。如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参阅 Adobe Target 上的[自定义参数文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)。 |
+| **操作系统** | 您可以锁定使用特定操作系统的访客。 | 定位使用Linux®、Macintosh或Windows的用户。 |
+| **站点页面** | 锁定特定页面的访客或具有特定 mbox 参数的访客。 | 请参阅 Adobe Target 上的[站点页面文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html)。 |
+| **浏览器** | 您可以锁定在访问您的页面时使用特定浏览器或特定浏览器选项的用户。 | 请参阅 Adobe Target 上的[浏览器选项文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html)。 |
+| **访客配置文件** | 锁定满足特定配置文件参数的访客。 | 请参阅 Adobe Target 上的[访客配置文件文档](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html)。 |
+| **流量源** | 根据将访客转至您的站点的搜索引擎或登陆页来锁定访客。 | 请参阅 Adobe Target 上的[流量源文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)。 |
 
 ## 在“受众”控制台中修改受众 {#modifying-an-audience-in-the-audiences-console}
 

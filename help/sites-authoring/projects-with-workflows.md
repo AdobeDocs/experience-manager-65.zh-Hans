@@ -8,11 +8,11 @@ content-type: reference
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '783'
-ht-degree: 41%
+ht-degree: 42%
 
 ---
 
@@ -39,12 +39,12 @@ ht-degree: 41%
 | 请求启动项 | x |  |  |  |
 | 请求登陆页面 | x |  |  |  |
 | 请求电子邮件 | x |  |  |  |
-| DAM 创建语言副本&ast; |  |  |  | x |
-| DAM 创建和翻译语言副本&ast; |  |  |  | x |
+| DAM 创建语言副本&amp;ast; |  |  |  | x |
+| DAM 创建和翻译语言副本&amp;ast; |  |  |  | x |
 
 >[!NOTE]
 >
->&ast;这些工作流不会从项目中的&#x200B;**工作流**&#x200B;拼贴启动。请参阅[创建Assets的语言副本。](/help/sites-administering/tc-manage.md)
+>&amp;ast;这些工作流不会从项目中的&#x200B;**工作流**&#x200B;拼贴启动。请参阅[创建Assets的语言副本。](/help/sites-administering/tc-manage.md)
 
 无论您选择哪个工作流，启动和完成工作流的步骤都是相同的。只是具体的实施步骤有所不同。
 
@@ -74,7 +74,7 @@ ht-degree: 41%
 
 ## 产品照片拍摄工作流 {#product-photo-shoot-workflow}
 
-**产品照片拍摄**&#x200B;工作流（商务和非商务）在文档[创意项目](/help/sites-authoring/managing-product-information.md)中有详细介绍
+**产品照片拍摄**&#x200B;工作流（商业工作流和不商业工作流）在文档[Creative项目](/help/sites-authoring/managing-product-information.md)中有详细介绍
 
 ## 项目审批工作流 {#project-approval-workflow}
 

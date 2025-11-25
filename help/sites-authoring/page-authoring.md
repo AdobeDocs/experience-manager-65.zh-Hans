@@ -4,8 +4,8 @@ description: 在Adobe Experience Manager 6.5中创作内容页面时涉及的任
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # 创作页面{#authoring-pages}
 
-下面提供了两种使用AEM进行创作的概述：
+下面提供了两种类型的AEM创作概述：
 
 * [作者的首要步骤](/help/sites-authoring/first-steps.md) — 新作者的简介
 

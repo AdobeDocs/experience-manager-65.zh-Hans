@@ -4,9 +4,9 @@ description: 在Adobe Experience Manager中为页面定义所需的属性。
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: d0515a6a3d08e181eada4a22e0d128305148e6ea
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2477'
 ht-degree: 38%
@@ -41,7 +41,7 @@ ht-degree: 38%
 
 #### 品牌化 {#branding}
 
-通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)中的页面组件。
 
 * **覆盖** – 选中可在此页面上定义品牌概要。
    * 该值会由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
@@ -85,7 +85,7 @@ ht-degree: 38%
 
 输入此页面的虚URL，这样可让您的URL长度更短和/或更具有表现性。
 
-例如，如果将网站`http://example.com,`的虚URL设置为由路径`/v1.0/startpage`标识的页面`welcome`，则`http://example.com/welcome`将是`http://example.com/content/v1.0/startpage`的虚URL
+例如，如果将网站`welcome`的虚URL设置为由路径`/v1.0/startpage`标识的页面`http://example.com,`，则`http://example.com/welcome`将是`http://example.com/content/v1.0/startpage`的虚URL
 
 >[!CAUTION]
 >
@@ -95,7 +95,7 @@ ht-degree: 38%
 >* 不支持正则表达式模式。
 >* 不应设置为现有页面。
 
-配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#enabling-access-to-vanity-urls-vanity-urls)。
+配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)。
 
 * **添加** — 点击或单击可添加虚URL。
 * **删除** — 点击或单击可删除虚URL。
@@ -171,7 +171,7 @@ ht-degree: 38%
 * **选择图像** — 选择要用作缩略图的现有资源
 * **还原** — 在您更改缩略图后，此选项将变得可用。 如果不想保留您的更改，可以在保存前还原更改。
 
-### Cloud Service {#cloud-services}
+### 云服务 {#cloud-services}
 
 * **Cloud Service配置** — 定义用于页面的云服务的配置
 * **继承自** — 对于活动副本和语言副本，默认从Blueprint继承云配置。

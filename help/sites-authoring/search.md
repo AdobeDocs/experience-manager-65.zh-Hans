@@ -9,8 +9,8 @@ docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 58%
@@ -23,7 +23,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
 >[!NOTE]
 >
->在创作环境之外，还可以搜索其他机制，如[查询生成器](/help/sites-developing/querybuilder-api.md)和[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。
+>在创作环境之外，还可以使用其他机制进行搜索，如[查询生成器](/help/sites-developing/querybuilder-api.md)和[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。
 
 ## 搜索基础知识 {#search-basics}
 
@@ -71,7 +71,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
    * 保存的搜索
    * 搜索目录
    * 标记
-   * 搜索条件；例如，修改日期、Publish状态、LiveCopy状态。
+   * 搜索条件；例如，修改日期、发布状态、LiveCopy状态。
 
    >[!NOTE]
    >
@@ -80,7 +80,7 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
    >
    >
    >    * 具体视您选择的资源类型而定；例如，资源和社区条件理所当然是专用的；
-   >    * 您可以自定义作为[搜索Forms](/help/sites-administering/search-forms.md)的实例(对应于在AEM中的位置)。
+   >    * 您可以自定义作为[搜索Forms](/help/sites-administering/search-forms.md)的实例(适用于AEM中的位置)。
    >
    >
 

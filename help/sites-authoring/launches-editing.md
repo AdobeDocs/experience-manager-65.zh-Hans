@@ -10,8 +10,8 @@ legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 75%
@@ -103,7 +103,7 @@ Live Copy 用于将&#x200B;**&#x200B;源分支&#x200B;**&#x200B;中的内容同�
 
 1. 进行所需的更改，然后使用&#x200B;**保存**&#x200B;进行确认。
 
-   有关启 [动日期和生产就绪字段的用途和交互的信息](/help/sites-authoring/launches.md#launches-the-order-of-events)**&#x200B;**&#x200B;**&#x200B;** ，请参阅启动项——事件的顺序。
+   有关启 [动日期和生产就绪字段的用途和交互的信息](/help/sites-authoring/launches.md#launches-the-order-of-events)******** ，请参阅启动项——事件的顺序。
 
 ## 发现页面的启动状态 {#discovering-the-launch-status-of-a-page}
 

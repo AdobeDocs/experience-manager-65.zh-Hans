@@ -9,8 +9,8 @@ docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '3015'
 ht-degree: 47%
@@ -333,7 +333,7 @@ ht-degree: 47%
 
 * 图像组件 - 全屏
 
-  [进入图像组件的全屏模式](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) ，可以留出更多空间来编辑图像，并显示额外的编辑选项，如“启动映射”和“重 **置缩放”**&#x200B;**&#x200B;**。此外，全屏模式还允许选择裁剪预设。
+  [进入图像组件的全屏模式](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) ，可以留出更多空间来编辑图像，并显示额外的编辑选项，如“启动映射”和“重 **置缩放”******。此外，全屏模式还允许选择裁剪预设。
 
   ![图像组件全屏](assets/screen_shot_2018-03-22at120529.png)
 
@@ -384,7 +384,7 @@ ht-degree: 47%
 
 ## 编辑组件布局 {#edit-component-layout}
 
-您可以为组件选择&#x200B;**布局**&#x200B;操作以更改该组件的布局，而不是反复地从编辑模式切换到[布局模式](/help/sites-authoring/responsive-layout.md)来调整该组件。 由于不必离开编辑模式，这节省了时间。
+您可以为组件选择[布局](/help/sites-authoring/responsive-layout.md)操作以更改该组件的布局，而不是反复地从编辑模式切换到&#x200B;**布局模式**&#x200B;来调整该组件。 由于不必离开编辑模式，这节省了时间。
 
 1. 在站点控制台的&#x200B;**编辑**&#x200B;模式下，选择某个组件会显示该组件的工具栏。
 
@@ -450,9 +450,9 @@ ht-degree: 47%
 
 ## 编辑页面模板 {#editing-the-page-template}
 
-如果页面基于[可编辑的模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以通过在[页面信息菜单](/help/sites-authoring/author-environment-tools.md#page-information)中选择&#x200B;**编辑模板**&#x200B;来轻松切换到[模板编辑器](/help/sites-authoring/templates.md#editing-templates-template-authors)。
+如果页面基于[可编辑的模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以通过在[页面信息菜单](/help/sites-authoring/templates.md#editing-templates-template-authors)中选择&#x200B;**编辑模板**&#x200B;来轻松切换到[模板编辑器](/help/sites-authoring/author-environment-tools.md#page-information)。
 
-如果页面基于[静态模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以使用工具栏上的[页面模式选择器](/help/sites-authoring/author-environment-tools.md#page-modes)切换到[设计模式](/help/sites-authoring/default-components-designmode.md)以启用/禁用要在页面上使用的组件。
+如果页面基于[静态模板](/help/sites-authoring/templates.md#editable-and-static-templates)，则可以使用工具栏上的[页面模式选择器](/help/sites-authoring/default-components-designmode.md)切换到[设计模式](/help/sites-authoring/author-environment-tools.md#page-modes)以启用/禁用要在页面上使用的组件。
 
 在[列视图](/help/sites-authoring/basic-handling.md#column-view)或[列表视图](/help/sites-authoring/basic-handling.md#list-view)中选择页面时，您可以轻松查看该页面所基于的模板。
 

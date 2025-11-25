@@ -7,10 +7,10 @@ topic-tags: site-features
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1297'
+source-wordcount: '1296'
 ht-degree: 83%
 
 ---
@@ -129,7 +129,7 @@ ht-degree: 83%
 
 ### 在“编辑”对话框中启用“样式”选项卡 {#enable-styles-tab-edit}
 
-自AEM版本6.5.3.0起，“编辑”对话框中的可选“样式”选项卡现在可用。 与“设计”对话框选项卡不同，“编辑”对话框中的选项卡对于样式系统的正常运行来说并不是必需的，但它是内容作者设置样式的可选替代界面。
+自AEM版本6.5.3.0起，“编辑”对话框中的可选“样式”选项卡现已可用。 与“设计”对话框选项卡不同，“编辑”对话框中的选项卡对于样式系统的正常运行来说并不是必需的，但它是内容作者设置样式的可选替代界面。
 
 可以采用与“设计”对话框选项卡类似的方式包括“编辑”对话框选项卡：
 

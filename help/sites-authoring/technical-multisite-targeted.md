@@ -8,11 +8,11 @@ topic-tags: personalization
 exl-id: d8ba91ff-ad6e-4540-baff-a2c0c764a299
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '179'
-ht-degree: 36%
+ht-degree: 38%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 36%
 
 下图显示了如何构建目标内容的多站点支持。
 
-**/content/campaigns/&lt;brand>** 下方显示了区域，默认情况下，每个品牌都有一个自动创建的主区域。每个区域都包含自身的一组活动、体验和选件。
+**/content/campaigns/&lt;brand>** 下方显示了区域，默认情况下，每个品牌都有一个自动创建的主区域。每个区域都包含自身的一组活动、体验和产品建议。
 
 ![chlimage_1-268](assets/chlimage_1-268.png)
 
-要查找目标内容，可将页面或站点映射到某个区域。 如果未配置区域，则AEM将回退到此特定品牌的主区域。
+要查找目标内容，可将页面或站点映射到某个区域。 如果没有配置区域，AEM将回退到此特定品牌的主区域。
 
 下图是该逻辑如何为三个站点（名为 site1、site2 和 site3）工作的示例。
 

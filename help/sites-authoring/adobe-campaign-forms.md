@@ -8,15 +8,15 @@ topic-tags: personalization
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1280'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 在AEM中创建Adobe Campaign Forms {#creating-adobe-campaign-forms-in-aem}
+# 在 AEM 中创建 Adobe Campaign 表单 {#creating-adobe-campaign-forms-in-aem}
 
 通过AEM，您可以创建并使用与网站上的Adobe Campaign交互的表单。 可以将特定字段插入表单并映射到Adobe Campaign数据库。
 

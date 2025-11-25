@@ -9,8 +9,8 @@ docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '569'
 ht-degree: 81%
@@ -51,7 +51,7 @@ ht-degree: 81%
 
 两个页面的源会清楚地显示在浏览器窗口顶部的标题栏中。
 
-标头![&#128279;](assets/chlimage_1-109.png)中显示Source
+标头![中显示](assets/chlimage_1-109.png)Source
 
 差异比较会检测在组件和 HTML 级别发生的更改。发生更改的项目会以不同的颜色突出显示。
 

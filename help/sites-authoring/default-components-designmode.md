@@ -4,8 +4,8 @@ description: 在设计模式下配置Adobe Experience Manager组件。
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 10%
@@ -43,7 +43,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->有关`parsys`的详细信息，请参阅[开发组件](/help/sites-developing/components.md)和[使用模板和组件的准则](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)。
+>有关[的详细信息，请参阅](/help/sites-developing/components.md)开发组件[和](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)使用模板和组件的准则`parsys`。
 
 >[!CAUTION]
 >

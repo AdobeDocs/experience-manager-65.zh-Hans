@@ -4,8 +4,8 @@ description: Adobe Experience Manager 6.5中的创作和发布概念。
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 28%
@@ -16,7 +16,7 @@ ht-degree: 28%
 
 ## 创作（和发布）概念 {#concept-of-authoring-and-publishing}
 
-AEM为您提供了两个环境：
+AEM为您提供两种环境：
 
 * 创作
 * 发布
@@ -84,4 +84,4 @@ AEM为您提供了两个环境：
 
 #### Dispatcher {#dispatcher}
 
-为了优化网站访问性能，**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)**&#x200B;实施了负载平衡和缓存。
+为了优化网站访问性能，**[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)**&#x200B;实施了负载平衡和缓存。

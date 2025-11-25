@@ -9,19 +9,19 @@ docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '4825'
-ht-degree: 75%
+source-wordcount: '4832'
+ht-degree: 77%
 
 ---
 
 # 创建页面模板{#creating-page-templates}
 
-创建页面时，必须选择一个模板，该模板用作创建新页面的基础。 模板可定义生成页面的结构、任何初始内容以及可使用的组件。
+创建页面时，您必须选择一个模板，以用作创建新页面的基础。模板可定义生成页面的结构、任何初始内容以及可使用的组件。
 
-使用模 **板编辑器**，创建和维护模板不再只是开发人员的任务。高级用户(称为模板作者 **)也可能**。开发人员仍需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，模板作者就可以灵活地创建和配置模板，而无需开发项目。**&#x200B;**
+使用模 **板编辑器**，创建和维护模板不再只是开发人员的任务。高级用户(称为模板作者 **)也可能**。开发人员仍需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，模板作者就可以灵活地创建和配置模板，而无需开发项目。****
 
 在&#x200B;**“模板”控制台**&#x200B;中，模板作者可以执行以下操作：
 
@@ -40,7 +40,7 @@ ht-degree: 75%
 
 >[!NOTE]
 >
->模板 **&#x200B;**&#x200B;编辑器不支持直接在模板级别进行定位。可以定位基于可编辑模板创建的页面，但不能定位模板本身。
+>模板 **** 编辑器不支持直接在模板级别进行定位。可以定位基于可编辑模板创建的页面，但不能定位模板本身。
 
 >[!CAUTION]
 >
@@ -98,15 +98,15 @@ AEM现在提供两种基本类型的模板：
 
 * [可编辑模板](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * 模板作者可以使用&#x200B;**模板**&#x200B;控制台和编辑器[创建](#creatinganewtemplate)和[编辑](#editingatemplate)。 **模板**&#x200B;控制台可在&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分中访问。
+   * 模板作者可以使用[模板](#creatinganewtemplate)控制台和编辑器[创建](#editingatemplate)和&#x200B;**编辑**。 **模板**&#x200B;控制台可在&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分中访问。
 
    * 创建新页面后，页面和模板之间会保持动态连接。 这意味着对模板结构和/或锁定内容的更改将反映在使用该模板创建的任何页面上。 对已解锁（即初始）内容所做的更改将不会反映出来。
    * 使用内容策略（可在模板编辑器中定义这些策略）来保留设计属性。 页面编辑器中的设计模式不再用于可编辑模板。
 
 * 静态模板
 
-   * 静态模板可用于多个版本的AEM。
-   * 它们由您的开发人员[&#128279;](/help/sites-developing/page-templates-static.md)提供，因此作者无法创建或编辑它们。
+   * 静态模板已适用于AEM的多个版本。
+   * 它们由您的开发人员[提供](/help/sites-developing/page-templates-static.md)，因此作者无法创建或编辑它们。
    * 将被复制以创建新页面，但之后不存在动态连接（尽管模板名称已注册以供参考）。
    * 使用[设计模式](/help/sites-authoring/default-components-designmode.md)保留设计属性。
    * 由于编辑静态模板是开发人员的专属任务，有关详细信息，请参阅开发人员文档[页面模板 — 静态](/help/sites-developing/page-templates-static.md)。
@@ -146,7 +146,7 @@ AEM现在提供两种基本类型的模板：
 
 >[!CAUTION]
 >
->切勿在模板中输入任何需要[国际化](/help/sites-developing/i18n.md)的信息。 出于内部化的目的，建议使用核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)的本地化功能。
+>切勿在模板中输入任何需要[国际化](/help/sites-developing/i18n.md)的信息。 出于内部化的目的，建议使用核心组件[的](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)本地化功能。
 
 ### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
@@ -472,7 +472,7 @@ AEM现在提供两种基本类型的模板：
 
   要删除配置，请单击位于配置右侧的&#x200B;**删除**&#x200B;按钮。
 
-  要删除配置，请单击&#x200B;**删除**&#x200B;按钮。
+  要删除配置，请单击**删除**按钮。
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -490,7 +490,7 @@ AEM现在提供两种基本类型的模板：
 
   >[!NOTE]
   >
-  >[只能为RTE通过其UI设置提供的选项定义用于实施富文本编辑器的组件的内容策略](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)。[&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[只能为RTE通过其UI设置提供的选项定义用于实施富文本编辑器的组件的内容策略](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)。[](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **策略和属性（布局容器）**
 
@@ -604,7 +604,7 @@ AEM现在提供两种基本类型的模板：
 >
 >初始内容用于准备组件和页面布局，这将作为创建内容的起点。初始内容不能作为保持原样的实际内容。因此，无法翻译初始内容。
 >
->如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)。
+>如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
 
 ### 编辑模板 – 布局 – 模板作者 {#editing-a-template-layout-template-author}
 

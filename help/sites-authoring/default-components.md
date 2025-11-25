@@ -4,8 +4,8 @@ description: Adobe Experience Manager附带多种现成的组件，这些组件�
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 34%
@@ -46,13 +46,13 @@ Adobe Experience Manager (AEM)附带多种现成的组件，这些组件为网�
 
 ## 全部组件概述 {#overview-of-all-components}
 
-[组件控制台](/help/sites-authoring/default-components-console.md)概述了组件组以及AEM安装提供的组件。 您可以查看有关单个组件及其用途的关键信息。
+[组件控制台](/help/sites-authoring/default-components-console.md)概述了AEM安装提供的组件组和组件。 您可以查看有关单个组件及其用途的关键信息。
 
 ## 组件 — 主要领域 {#components-major-areas}
 
 以下页面提供了指向一些关于组件的其他重要信息的链接：
 
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) — 核心组件提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) — 核心组件提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
 
 * [社区](/help/communities/author-communities.md) — 组件为网站提供交互功能，如论坛和评论。 在创建[社区站点](/help/communities/overview.md)时，其中许多组件都包括在内。
 

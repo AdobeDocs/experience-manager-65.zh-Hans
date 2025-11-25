@@ -9,17 +9,17 @@ docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
-role: User,Admin,Architect,Developer
+role: User,Admin,Developer
 index: false
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2857'
-ht-degree: 4%
+ht-degree: 6%
 
 ---
 
 
-# Adobe Campaign组件{#adobe-campaign-components}
+# Adobe Campaign 组件{#adobe-campaign-components}
 
 与Adobe Campaign集成时，您拥有的组件可用于处理新闻稿和表单。 本文档中对此进行了说明。
 
@@ -155,7 +155,7 @@ ht-degree: 4%
 添加了关于如何使用链接的其他信息。
 
 * **LinkType**
-在下拉列表中，选择&#x200B;**自定义URL**&#x200B;和&#x200B;**自适应文档**。 此字段为必填字段。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
+在下拉列表中，选择**自定义URL**&#x200B;和&#x200B;**自适应文档**。 此字段为必填字段。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
 
 * **其他URL参数**
 添加任何其他URL参数。 单击“添加项目”可添加多个项目。
@@ -396,7 +396,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无**&#x200B;或&#x200B;**日期 —**&#x200B;以添加日期限制或无限制。 如果选择日期，则用户在字段中输入的答案必须采用日期格式。
 
 * **约束消息**&#x200B;此外，您可以添加约束消息，以便用户了解如何正确设置其答案的格式。
@@ -448,7 +448,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无**&#x200B;或&#x200B;**数值 —**&#x200B;来添加数值或无约束的约束。 如果选择数字，则用户在字段中输入的答案必须是数字。
 
 * **约束消息**&#x200B;此外，您可以添加约束消息，以便用户了解如何正确设置其答案的格式。
@@ -492,7 +492,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无、** **电子邮件**&#x200B;或&#x200B;**名称** （无变音） — 添加电子邮件地址、名称或无限制的约束。 如果选择电子邮件，则用户在字段中输入的答案必须是电子邮件地址。 如果选择名称，则必须为名称（不允许使用变音）。
 
 * **约束消息**&#x200B;此外，您可以添加约束消息，以便用户了解如何正确设置其答案的格式。

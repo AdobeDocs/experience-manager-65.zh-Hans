@@ -9,8 +9,8 @@ docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '2965'
 ht-degree: 42%
@@ -97,11 +97,11 @@ ht-degree: 42%
    <td>这些控制台允许您导入和<a href="/help/assets/assets.md">管理数字资产</a>，如图像、视频、文档和音频文件。 随后，这些资源便可由同一AEM实例上运行的任何网站使用。 </td>
   </tr>
   <tr>
-   <td>社区</td>
+   <td>Communities</td>
    <td>此控制台允许您为<a href="/help/communities/sites-console.md">参与</a>和<a href="/help/communities/overview.md#engagement-community">启用</a>创建和管理<a href="/help/communities/overview.md#enablement-community">社区站点</a>。</td>
   </tr>
   <tr>
-   <td>商务</td>
+   <td>Commerce</td>
    <td>这允许您管理与您的<a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a>网站相关的产品、产品目录和订单。</td>
   </tr>
   <tr>
@@ -122,7 +122,7 @@ ht-degree: 42%
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=zh-Hans">Screens</a>允许您管理任何地点、任何规模的面向客户的所有屏幕。</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a>允许您管理任何地点、任何规模的面向客户的所有屏幕。</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,9 +155,9 @@ ht-degree: 42%
 
   您还可以使用[快捷键](/help/sites-authoring/keyboard-shortcuts.md) `/`（正斜杠）从任何控制台中调用搜索。
 
-* [解决方案](https://business.adobe.com/cn/)
+* [解决方案](https://business.adobe.com/)
 
-  ![解决方案](do-not-localize/screen_shot_2018-03-23at103552.png)
+  ![解决方法](do-not-localize/screen_shot_2018-03-23at103552.png)
 
 * [帮助](#accessinghelptouchoptimizedui)
 

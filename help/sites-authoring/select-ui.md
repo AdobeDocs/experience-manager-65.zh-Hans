@@ -4,17 +4,17 @@ description: 配置在Adobe Experience Manager 6.5中使用的界面。
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 1%
 
 ---
 
-# 选择您的UI{#selecting-your-ui}
+# 选择您的 UI{#selecting-your-ui}
 
-Adobe Experience Manager (AEM)触屏优化UI现在是标准的UI，通过管理和编辑站点，几乎达到了功能对等性。 但是，有时用户可能会想要切换到[经典UI](/help/sites-classic-ui-authoring/classicui.md)。 执行此操作有多种选项。
+Adobe Experience Manager (AEM)触屏优化UI现在是标准的UI，通过对站点的管理和编辑，几乎达到了功能对等性。 但是，有时用户可能会想要切换到[经典UI](/help/sites-classic-ui-authoring/classicui.md)。 执行此操作有多种选项。
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Adobe Experience Manager (AEM)触屏优化UI现在是标准的UI，通过管理�
 >
 >从以前的版本升级的实例会保留用于页面创作的经典UI。
 >
->升级后，页面创作不会自动切换到触控式UI，但您可以使用&#x200B;**WCM创作UI模式服务** （`AuthoringUIMode`服务）的[OSGi配置](/help/sites-deploying/configuring-osgi.md)配置此设置。 查看编辑器[&#128279;](#ui-overrides-for-the-editor)的UI覆盖。
+>升级后，页面创作不会自动切换到触控式UI，但您可以使用[WCM创作UI模式服务](/help/sites-deploying/configuring-osgi.md) （**服务）的** OSGi配置`AuthoringUIMode`配置此设置。 查看编辑器[的](#ui-overrides-for-the-editor)UI覆盖。
 
 ## 为实例配置默认UI {#configuring-the-default-ui-for-your-instance}
 
@@ -108,11 +108,9 @@ Adobe Experience Manager (AEM)触屏优化UI现在是标准的UI，通过管理�
 * 创作页面时：
 
    * 在URL中使用`cf#`访问页面时，强制使用经典编辑器。 例如：
-
      `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
    * 在URL中使用`/editor.html`或使用触控设备时，会强制使用已启用触控功能的编辑器。 例如：
-
      `https://localhost:4502/editor.html/content/geometrixx/en/products/triangle.html`
 
 * 任何强制都是临时的，并且仅对浏览器会话有效
@@ -123,7 +121,7 @@ Adobe Experience Manager (AEM)触屏优化UI现在是标准的UI，通过管理�
 
    * Cookie
    * 用户首选项
-   * 如果两者都不存在，则默认为&#x200B;**WCM创作UI模式服务** （`AuthoringUIMode`服务）的[OSGi配置](/help/sites-deploying/configuring-osgi.md)中设置的定义。
+   * 如果两者都不存在，则默认为[WCM创作UI模式服务](/help/sites-deploying/configuring-osgi.md) （**服务）的** OSGi配置`AuthoringUIMode`中设置的定义。
 
 >[!NOTE]
 >

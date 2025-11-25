@@ -4,8 +4,8 @@ description: 使用Adobe Experience Manager 6.5中的收件箱管理您的任务
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1155'
 ht-degree: 39%
@@ -57,7 +57,7 @@ ht-degree: 39%
 
 ## 开箱即用的管理任务  {#out-of-the-box-administrative-tasks}
 
-现成的AEM预加载了分配给管理员用户组的四个任务。
+现成的AEM预先加载了分配给管理员用户组的四个任务。
 
 * [配置分析和定位](/help/sites-administering/opt-in.md)
 * [应用 AEM 安全核对清单](/help/sites-administering/security-checklist.md)
@@ -143,7 +143,7 @@ Admin Control选项允许管理员：
    * **添加列**：选择要在AEM收件箱中添加的列。
    * **编辑列**：将鼠标悬停在列标题上，并选择![编辑](assets/edit.svg)图标以输入列显示名称。
    * **删除列**：选择![删除](assets/delete_updated.svg)图标以从AEM收件箱中删除该列。
-   * **移动列**：拖动![移动](assets/move_updated.svg)图标以将列移动到AEM收件箱中的新位置。
+   * **移动列**：拖动![移动](assets/move_updated.svg)图标可将列移动到AEM收件箱中的新位置。
 
   ![admin-control](assets/admin-control-column-customize.png)
 

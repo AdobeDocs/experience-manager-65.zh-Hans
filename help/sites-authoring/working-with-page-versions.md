@@ -4,8 +4,8 @@ description: 在Adobe Experience Manager中创建、比较和恢复页面版本�
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: d2e2f330dadb7c327324e53a17e8398ef3a473a9
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '1567'
 ht-degree: 63%
@@ -203,7 +203,7 @@ ht-degree: 63%
 
 >[!TIP]
 >
->运行AEM 6.5.10.0或更高版本时，[时间扭曲也可以与启动项一起使用来预览将来的](/help/sites-authoring/launches.md)。
+>运行AEM [或更高版本时，](/help/sites-authoring/launches.md)时间扭曲也可以与启动项一起使用来预览将来的6.5.10.0。
 
 内容创建是一个持续的协作过程。 时间扭曲旨在允许作者跟踪已发布的网站随时间的变化，以帮助他们了解内容发生了什么变化。 此功能使用页面版本确定发布环境的状态：
 

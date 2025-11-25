@@ -9,8 +9,8 @@ docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 82%
@@ -50,7 +50,7 @@ ht-degree: 82%
 您可以从以下任一项中启动工作流：
 
 * [“站点”工具栏的“创建”选项](#starting-a-workflow-from-the-sites-toolbar)。
-* [&#x200B; Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
+* [ Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
 
 在这两种情况下，您都必须：
 
@@ -106,7 +106,7 @@ ht-degree: 82%
 
    >[!NOTE]
    >
-   >为[多资源支持](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)配置了工作流并选择了多个资源时，**保留工作流包**&#x200B;选项可用。
+   >为&#x200B;**多资源支持**&#x200B;配置了工作流并选择了多个资源时，[保留工作流包](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)选项可用。
 
    完成后，单击&#x200B;**下一步**&#x200B;继续。
 

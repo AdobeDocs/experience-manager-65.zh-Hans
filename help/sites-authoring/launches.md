@@ -9,10 +9,10 @@ docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
-role: User,Admin,Architect,Developer
-source-git-commit: 7c4be888c392520c82ef7b2172d0eee61fc3ee44
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '896'
 ht-degree: 73%
 
 ---
@@ -37,11 +37,11 @@ ht-degree: 73%
 * 为多个根目录分支创建启动项。虽然您可以为整个站点创建启动项（并从中做出更改），但由于需要复制整个站点，因此这可能不切实际。当涉及数百甚至数千个页面时，系统要求和性能会受到复制操作以及后续提升任务所需的比较操作的影响。
 * 嵌套启动项（一个启动项嵌套在另一个启动项中），以便能够从现有启动项中创建启动项，这样作者便可以利用已经做出的更改，而不必反复地为每个启动项执行相同的更改。
 
-本节介绍如何从站点控制台或[启动项控制台](#the-launches-console)中创建、编辑和提升(如有必要，还介绍删除[1&rbrace;启动项页面：](/help/sites-authoring/launches-creating.md#deleting-a-launch)
+本节介绍如何从站点控制台或[启动项控制台](/help/sites-authoring/launches-creating.md#deleting-a-launch)中创建、编辑和提升(如有必要，还介绍删除[1}启动项页面：](#the-launches-console)
 
 * [创建启动项](/help/sites-authoring/launches-creating.md)
 * [编辑启动项](/help/sites-authoring/launches-editing.md)
-* [提升启动项](/help/sites-authoring/launches-promoting.md)
+* [推广发布项](/help/sites-authoring/launches-promoting.md)
 
 ## 启动项 - 事件的顺序 {#launches-the-order-of-events}
 
@@ -111,7 +111,7 @@ ht-degree: 73%
 
 ## “启动项”控制台 {#the-launches-console}
 
-“启动项”控制台提供了启动项的概览，并让您对列出的启动项执行操作。可以通过以下方式访问该控制台：
+“启动项”控制台提供了启动项的概述，并让您对列出的启动项执行操作。可以通过以下方式访问该控制台：
 
 * **工具**&#x200B;控制台：**工具**、**站点**、**启动项**。
 

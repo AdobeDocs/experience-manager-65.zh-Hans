@@ -9,10 +9,10 @@ docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1936'
 ht-degree: 75%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 75%
 
 >[!CAUTION]
 >
->确保发布实例中的活动设置节点 **cq:ActivitySettings** 安全，以使其不可由普通用户访问。该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
+>保护发布实例上的活动设置节点&#x200B;**cq:ActivitySettings**，使其不可由普通用户访问。 该活动设置节点应当只能由负责将活动同步到 Adobe Target 的服务访问。
 >
 >请参阅[与 Adobe Target 集成的先决条件](/help/sites-administering/target-requirements.md#securingtheactivitysettings)，以了解详细信息。
 
@@ -61,7 +61,7 @@ ht-degree: 75%
 
 创建要管理其营销活动的品牌。
 
-使用“活动”控制台创建品牌后，[“选件”控制台](/help/sites-authoring/offerlib.md)（可在此处创建活动体验的选件）中也会出现该品牌。
+使用“活动”控制台创建品牌后，[“产品建议”控制台](/help/sites-authoring/offerlib.md)（可在此处创建活动体验的产品建议）中也会出现该品牌。
 
 1. 在导航控制台中，单击&#x200B;**Personalization**。 单击&#x200B;**活动**。
 
@@ -69,7 +69,7 @@ ht-degree: 75%
 
 1. 在“活动”控制台中，单击&#x200B;**创建**，然后单击&#x200B;**创建品牌**。
 1. 选择品牌模板并单击&#x200B;**下一步**。
-1. 键入您希望品牌在“活动”控制台和“选件”控制台中显示的标题。（可选）键入或选择要与该品牌关联的一个或多个标记。
+1. 键入您希望品牌在“活动”控制台和“产品建议”控制台中显示的标题。（可选）键入或选择要与该品牌关联的一个或多个标记。
 1. 单击&#x200B;**创建**。品牌随即会显示在“活动”控制台中。
 
 ## 使用“活动”控制台添加/编辑活动 {#adding-editing-an-activity-using-the-activities-console}
@@ -80,7 +80,7 @@ ht-degree: 75%
 * **定位引擎：**&#x200B;将 [AEM](/help/sites-authoring/personalization.md#aem) 或 [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) 作为目标内容的引擎。
 
 * **选择 Target 配置：**（仅限 Adobe Target）此活动连接到 Adobe Target 的云配置。只有为定位引擎选择了 Adobe Target 时，才会显示此选项。
-* **活动类型：**&#x200B;活动类型 — A/B测试或体验定位
+* **活动类型：**活动类型 — A/B测试或体验定位
 * **目标：**（可选）活动描述。
 * **体验：**&#x200B;受众名称和您定位的营销区段之间的映射。
 * **流量百分比：**&#x200B;如果选择 A/B 测试，则可以更改每个体验的流量（百分比）。
@@ -108,7 +108,7 @@ ht-degree: 75%
 1. 向活动添加一个或多个体验。 单击&#x200B;**添加体验**。
 1. 如果您使用的是 AEM 定位或 Adobe Target 体验定位：
 
-   1. 单击&#x200B;**选择受众**&#x200B;并选择您的体验定位的区段。
+   1. 单击**选择受众**并选择您的体验定位的区段。
    1. 单击&#x200B;**添加体验**，键入名称，然后单击&#x200B;**确定**。
 
    1. 单击&#x200B;**下一步**。
@@ -154,7 +154,7 @@ ht-degree: 75%
 
    ![screen-shot_2019-03-05at123846](assets/screen-shot_2019-03-05at123846.png)
 
-1. 若要发布，请单击&#x200B;**Publish**。 要取消发布，请单击&#x200B;**取消发布**。 您的活动（一个或多个）随即会被发布或取消发布，并且活动的状态会在“活动”控制台中发生更改（可能需要刷新）。
+1. 要发布，请单击&#x200B;**发布**。 要取消发布，请单击&#x200B;**取消发布**。 您的活动（一个或多个）随即会被发布或取消发布，并且活动的状态会在“活动”控制台中发生更改（可能需要刷新）。
 
 ## 创作和发布实例中的活动 {#activities-on-author-and-publish-instances}
 
@@ -193,8 +193,8 @@ ht-degree: 75%
 使用 Adobe Target 定位引擎的活动会与 Adobe Target 营销活动进行同步。当满足以下条件时，活动会自动同步到 Adobe Target：
 
 * 活动至少包含一个体验。
-* 至少有一个体验包含映射的区段和一个选件。
-* 活动中的每个体验必须具有相同数量的选件。
+* 至少有一个体验包含映射的区段和一个产品建议。
+* 活动中的每个体验必须具有相同数量的产品建议。
 
 上述条件适用于创作和发布实例中的活动。
 

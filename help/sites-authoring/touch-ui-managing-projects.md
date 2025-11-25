@@ -8,8 +8,8 @@ content-type: reference
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
-role: User,Admin,Architect,Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+role: User,Admin,Developer
+source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
 source-wordcount: '965'
 ht-degree: 18%
@@ -25,9 +25,9 @@ ht-degree: 18%
 
 使用该控制台，您可以创建项目、将资源与项目关联，还可以删除项目或资源链接。
 
-## 访问要求 {#access-requirements}
+## 满足访问权限要求 {#access-requirements}
 
-项目实施标准的AEM功能，无需任何其他设置。
+项目使用标准的AEM功能，无需任何其他设置。
 
 但是，对于项目中的用户，如果要在使用项目（如在创建项目、创建任务/工作流或查看和管理团队时）时查看其他用户/组，这些用户需要拥有`/home/users`和`/home/groups`的读取权限。
 
@@ -108,7 +108,7 @@ Assets会显示在边栏中。 完成后，使用边栏选择器返回到普通�
 
 ### 查看不活动的项目 {#viewing-active-inactive-projects}
 
-要在&#x200B;**项目**&#x200B;控制台中的活动项目和[非活动项目](#making-projects-inactive-or-active)之间切换，请单击工具栏中的&#x200B;**切换活动项目**&#x200B;图标。
+要在[项目](#making-projects-inactive-or-active)控制台中的活动项目和&#x200B;**非活动项目**&#x200B;之间切换，请单击工具栏中的&#x200B;**切换活动项目**&#x200B;图标。
 
 ![切换活动项目图标](assets/projects-toggle-active.png)
 
@@ -134,7 +134,7 @@ Assets会显示在边栏中。 完成后，使用边栏选择器返回到普通�
 
 ### 正在停用项目 {#making-projects-inactive-or-active}
 
-如果项目已完成，但您仍要保留有关该项目的信息，则可能需要将其标记为非活动状态。 默认情况下，[非活动项目现在会在&#x200B;**项目**&#x200B;控制台中显示](#viewing-active-inactive-projects)。
+如果项目已完成，但您仍要保留有关该项目的信息，则可能需要将其标记为非活动状态。 默认情况下，[非活动项目现在会在](#viewing-active-inactive-projects)项目&#x200B;**控制台中显示**。
 
 要使项目处于非活动状态，请执行以下步骤。
 
@@ -153,7 +153,7 @@ Assets会显示在边栏中。 完成后，使用边栏选择器返回到普通�
 1. 导航到&#x200B;**项目**&#x200B;控制台的顶级。
 1. 在控制台中选择您的项目。
 1. 单击工具栏中的&#x200B;**删除**。
-1. 删除项目时，AEM可以删除/修改关联的项目数据。 在&#x200B;**删除项目**&#x200B;对话框中选择所需的选项。
+1. 删除项目后，AEM可以删除/修改关联的项目数据。 在&#x200B;**删除项目**&#x200B;对话框中选择所需的选项。
    * 删除项目组和角色
    * 删除项目Assets文件夹
    * 终止项目工作流
