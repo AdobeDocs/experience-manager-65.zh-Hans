@@ -163,7 +163,7 @@ ht-degree: 99%
       + Sites 功能 {#introduction}
          + [MSM 和翻译](/help/sites-administering/msm-and-translation.md)
          + [异步作业](/help/sites-administering/asynchronous-jobs.md)
-         + [重用内容：多网站管理器和 Live Copy ](/help/sites-administering/msm.md)
+         + [重用内容：多网站管理器和 Live Copy &#x200B;](/help/sites-administering/msm.md)
          + [Live Copy 概述控制台](/help/sites-administering/msm-livecopy-overview.md)
          + [配置 Live Copy 同步](/help/sites-administering/msm-sync.md)
          + [创建并同步 Live Copy](/help/sites-administering/msm-livecopy.md)
@@ -255,7 +255,7 @@ ht-degree: 99%
          + [手动配置与 Adobe Target 的集成](/help/sites-administering/target-configuring.md)
          + [与 Adobe Target 集成的先决条件](/help/sites-administering/target-requirements.md)
          + [Adobe 分类](/help/sites-administering/adobeanalytics-classifications.md)
-         + [解决方案集成 ](/help/sites-administering/integration.md)
+         + [解决方案集成 &#x200B;](/help/sites-administering/integration.md)
          + [将体验片段导出到 Adobe Target](/help/sites-administering/experience-fragments-target.md)
          + [电子邮件模板最佳做法](/help/sites-administering/best-practices-for-email-templates.md)
          + [与 Livefyre 集成](/help/sites-administering/livefyre.md)
@@ -344,7 +344,7 @@ ht-degree: 99%
 + Assets {#assets}
    + [关于 DAM](/help/assets/assets.md)
    + [资产最佳做法](/help/assets/best-practices-for-assets.md)
-   + [ [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
+   + [&#x200B; [!DNL Assets] 中的辅助功能](/help/assets/accessibility.md)
    + 使用 Experience Manager Assets {#using}
       + [[!DNL Assets] 主页体验](/help/assets/assets-home-page.md)
       + [搜索数字资产](/help/assets/search-assets.md)
@@ -420,7 +420,7 @@ ht-degree: 99%
       + [将资产与活动流集成](/help/assets/extending-activity-stream.md)
       + [扩展资产编辑器](/help/assets/asseteditorx.md)
       + [[!DNL Assets] HTTP API](/help/assets/mac-api-assets.md)
-      + [ [!DNL Assets] HTTP API 中的内容片段支持](/help/assets/assets-api-content-fragments.md)
+      + [&#x200B; [!DNL Assets] HTTP API 中的内容片段支持](/help/assets/assets-api-content-fragments.md)
       + [内容片段的 GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [使用 GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [持久化查询](/help/sites-developing/headless/graphql-api/persisted-queries.md)
@@ -503,8 +503,8 @@ ht-degree: 99%
       + [视频演绎版](/help/assets/video-renditions.md)
    + 与其他解决方案集成 {#integrations}
       + [与 [!DNL Adobe Workfront] 集成](/help/assets/workfront-integrations.md)
-      + [为 [!DNL Workfront] 安装 [!DNL enhanced connector] ](/help/assets/workfront-connector-install.md)
-      + [为 [!DNL Workfront] 配置 [!DNL enhanced connector] ](/help/assets/workfront-connector-configure.md)
+      + [为 [!DNL Workfront] 安装 [!DNL enhanced connector] &#x200B;](/help/assets/workfront-connector-install.md)
+      + [为 [!DNL Workfront] 配置 [!DNL enhanced connector] &#x200B;](/help/assets/workfront-connector-configure.md)
 + Forms {#forms}
    + 发行说明 {#release-notes-new-features}
       + [新增功能](/help/forms/using/whats-new.md)
@@ -630,7 +630,7 @@ ht-degree: 99%
       + [启用功能切换](/help/forms/using/enable-feature-toggle.md)
    + 自适应表单——基础创作 {#adaptive-forms-basic-authoring}
       + [使用自适应表单的最佳做法](/help/forms/using/adaptive-forms-best-practices.md)
-      + [创建自适应表单 ](/help/forms/using/creating-adaptive-form.md)
+      + [创建自适应表单 &#x200B;](/help/forms/using/creating-adaptive-form.md)
       + [创建自适应表单或将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
       + [自适应表单片段](/help/forms/using/adaptive-form-fragments.md)
       + [配置提交操作](/help/forms/using/configuring-submit-actions.md)
@@ -640,7 +640,7 @@ ht-degree: 99%
       + [自适应表单关键词](/help/forms/using/adaptive-forms-keywords.md)
       + [自适应表单中的表格](/help/forms/using/adaptive-forms-tables.md)
       + [自适应表单中的图表](/help/forms/using/adaptive-form-charts.md)
-      + [自动保存自适应表单 ](/help/forms/using/auto-save-an-adaptive-form.md)
+      + [自动保存自适应表单 &#x200B;](/help/forms/using/auto-save-an-adaptive-form.md)
       + [配置重定向页面](/help/forms/using/configuring-redirect-page.md)
       + [创建可访问的自适应表单](/help/forms/using/creating-accessible-adaptive-forms.md)
       + [创建具有可重复部分的表单](/help/forms/using/creating-forms-repeatable-sections.md)
@@ -804,7 +804,7 @@ ht-degree: 99%
       + [自定义 HTML5 Forms 的错误消息](/help/forms/using/customzing-errors-html5-forms.md)
       + [将 HTML5 Forms 保存为草稿](/help/forms/using/saving-html5-form-draft.md)
       + [为 HTML5 Forms 启用日志记录功能](/help/forms/using/enable-logs.md)
-      + [调试 HTML5 Forms ](/help/forms/using/debug.md)
+      + [调试 HTML5 Forms &#x200B;](/help/forms/using/debug.md)
       + [HTML5 Forms 的脚本支持](/help/forms/using/scripting-support.md)
       + [AEM Forms 中的表单集](/help/forms/using/formset-in-aem-forms.md)
    + 书信与通信 {#letters-correspondences}
@@ -909,7 +909,7 @@ ht-degree: 99%
    + 事务报告  {#transaction-reports}
       + [事务报告概览](/help/forms/using/transaction-reports-overview-jee-osgi.md)
       + OSGi 上的 AEM Forms 的事务报告 {#transaction-reports-osgi}
-         + [事务报告 ](/help/forms/using/transaction-reports-overview.md)
+         + [事务报告 &#x200B;](/help/forms/using/transaction-reports-overview.md)
          + [查看和理解事务报告](/help/forms/using/viewing-and-understanding-transaction-reports.md)
          + [OSGi  上的 AEM Forms 的可计费 API 列表](/help/forms/using/transaction-reports-billable-apis.md)
          + [记录自定义实施的事务](/help/forms/using/record-transaction-custom-implementation.md)
@@ -1368,7 +1368,7 @@ ht-degree: 99%
          + [开发批量编辑器](/help/sites-developing/dev-bulk-editor.md)
          + [开发报告](/help/sites-developing/dev-reports.md)
       + 组件{#components}
-         + [ Universal Editor ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+         + [&#x200B; Universal Editor &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
          + [样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/style-system.html)
          + [组件概述](/help/sites-developing/components.md)
          + [AEM 组件——基础知识](/help/sites-developing/components-basics.md)
@@ -1561,7 +1561,7 @@ ht-degree: 99%
          + [编码技巧](/help/sites-developing/coding-tips.md)
          + [编码误区](/help/sites-developing/code-pitfalls.md)
          + [OSGI 捆绑包](/help/sites-developing/osgi-bundles.md)
-         + [JCR 集成 ](/help/sites-developing/jcr-integration.md)
+         + [JCR 集成 &#x200B;](/help/sites-developing/jcr-integration.md)
          + [代码示例](/help/sites-developing/code-samples.md)
          + [查询速度慢问题诊断](/help/sites-developing/troubleshooting-slow-queries.md)
       + Mobile Web {#mobileweb}
@@ -1596,7 +1596,7 @@ ht-degree: 99%
          + [基本配置概念](/help/sites-deploying/configuring.md)
          + [记录](/help/sites-deploying/configure-logging.md)
          + [配置 OSGi](/help/sites-deploying/configuring-osgi.md)
-         + [OSGi 配置设置 ](/help/sites-deploying/osgi-configuration-settings.md)
+         + [OSGi 配置设置 &#x200B;](/help/sites-deploying/osgi-configuration-settings.md)
          + [运行模式](/help/sites-deploying/configure-runmodes.md)
          + [网页控制台](/help/sites-deploying/web-console.md)
          + [复制](/help/sites-deploying/replication.md)
