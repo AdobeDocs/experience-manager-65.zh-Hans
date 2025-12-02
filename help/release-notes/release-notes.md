@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 1fb7c9b718896b18471b2bd86fab3c351d50312e
+source-git-commit: 6eccdab5cd492686dda2aca3fee4df171a2d9011
 workflow-type: tm+mt
 source-wordcount: '8932'
 ht-degree: 26%
@@ -508,7 +508,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 ### UberJar{#uber-jar}
 
-适用于 [!DNL Experience Manager] 6.5.24.0 的 UberJar 可在 [Maven Central 存储库](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.22/)获取。<!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+适用于 [!DNL Experience Manager] 6.5.24.0 的 UberJar 可在 [Maven Central 存储库](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.24/)获取。<!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 要在 Maven 项目中使用 UberJar，请参阅[如何使用 UberJar](/help/sites-developing/ht-projects-maven.md)，并在项目 POM 中包含以下依赖项：<!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -537,7 +537,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -714,6 +714,6 @@ AEM 6.5.21到6.5.24，以及AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:2.6
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
