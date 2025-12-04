@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 6eccdab5cd492686dda2aca3fee4df171a2d9011
+source-git-commit: 2580bb494bb81da0a923a34c88d37933d7575bec
 workflow-type: tm+mt
-source-wordcount: '8932'
+source-wordcount: '8905'
 ht-degree: 26%
 
 ---
@@ -393,11 +393,9 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 #### Security{#foundation-security-6524}
 -->
 
-
 #### Sling{#foundation-sling-6524}
 
-* 更正了受SAML保护的页面上的缓存行为。 AEM添加了正确的缓存控制，并会为经过身份验证的会话更改元数据，因此代理和Dispatcher会跳过缓存个性化响应。 匿名内容仍会正常缓存，而登录视图仍特定于用户。 （NPR-42640）
-
+* 修复了`org.apache.sling.scripting.jsp:2.6.0`包中出现的意外JSP编译错误。 （SLING-12442）
 * 该平台将核心Sling引擎从2.16.2升级到2.16.6。较新的引擎加强了输入验证，并在负载下稳定了请求处理。 （NPR-43105）
 
 #### SPA编辑器 {#foundation-spa-editor-6524}
@@ -537,7 +535,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -714,6 +712,6 @@ AEM 6.5.21到6.5.24，以及AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:2.6
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
