@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
+source-git-commit: ae66b28497bfb12686152b324e1758ad2d8592ee
 workflow-type: tm+mt
-source-wordcount: '8809'
-ht-degree: 26%
+source-wordcount: '9451'
+ht-degree: 24%
 
 ---
 
@@ -40,11 +40,12 @@ ht-degree: 26%
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
-<!--
-## Key features and enhancements
--->
 
+## 主要功能和增强功能
 
+### Forms
+
+* **支持传递自定义XCI：**&#x200B;添加了对在命令行应用程序xmlformcmd的参数中传递自定义XCI的支持。 这使用户能够指定用于测试的自定义XCI文件，增强测试过程的灵活性和控制。 （LC-3923248）
 
 
 ## 服务包 24 中已修复的问题 {#fixed-issues}
@@ -302,25 +303,40 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 ### [!DNL Forms]{#forms-6524}
 
+<!--
 >[!NOTE]
 >
->[!DNL Experience Manager] Forms中的修补程序在计划的[!DNL Experience Manager] Service Pack发行日期后一周通过单独的附加组件包交付。 在本例中，附加组件包于2025年12月4日星期四发布。 此外，此部分还添加了Forms修复和增强功能的列表。
-
-<!--
-#### Forms Designer 
-
-#### Forms
-
-#### Forms JEE 
-
-#### Forms Captcha {#forms-captcha-6524} 
-
-#### XMLFM {#forms-xmlfm-6524}
-
-#### [!DNL Forms Designer] {#forms-designer-6524}
-
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, December 4, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
 -->
 
+#### Forms Designer
+
+* 用户在特定测试用例中遇到无法单击超链接的问题，这会影响他们在应用程序中导航和验证链接的能力。 （LC-3923505）
+* 用户在使用非拉丁语言的AEM Forms Designer 6.5.23生成的PDF中遇到可访问性问题。 路径标记未放置在工件容器中，导致PAC和屏幕阅读器检查失败。 （LC-3923295）
+* 在使用输出服务从6.5.21版修补到6.5.23版后，用户在“可移植文档格式”(PDF)文本框中遇到断开的超链接问题。 （LC-3923290）
+* 用户遇到记录文档(DoR)表单的辅助功能问题。 当输入字段为空时，屏幕阅读器仅读取字段标题，而不读取值，这使得残障用户难以有效地浏览表单。 （LC-3923234）
+* 用户在DoR PDF forms中遇到辅助功能问题，其中NVDA错误地读取复选框、单选按钮和文本字段的“不可用”，这通常会重复消息并为屏幕阅读器用户造成混淆。 （LC-3923201）
+* 用户在添加新字段时遇到XDP中的制表符订单差异。 现有选项卡顺序意外更改，影响表单导航。 (LC-3923183和LC-3922630)
+* 用户遇到了HTML渲染问题。 使用`docReady`事件时，它未在HTML中正确触发，从而导致脚本无法按预期执行。 （LC-3923118）
+* 用户遇到了PDF渲染脚本在AEM Forms Cloud生产环境中不起作用的问题。 (LC-3923082 )
+* 用户遇到表单中浮动字段的问题。 使用不同的数据文件时，浮动字段在一个文件中正确呈现，但在另一个文件中无法正确呈现，尽管与字段无关的细微差别。 （LC-3923056）
+* 在具有多个母版页的XDP（XML数据包）中，仅选择英语内容时，用户遇到空白西班牙母版页。 （LC-3923009）
+* 用户在AEM Designer中发现了过时的版权年份信息。 这种情况出现在启动时的弹出框、“关于”部分和“法律声明”部分中，显示“2003-2024”而不是“2003-2025”。 （LC-3923005）
+* 用户在AEM Forms Designer中使用分页时遇到空白的PDF页面。 为WireAdviceHeader选择“下一页顶部/页面顶部”时出现问题，这会中断数据迭代的布局。 (LC-3922997和LC-3922830)
+* 用户遇到了一个问题：可扩展标记语言(XML)架构定义(XSD)的文件摘要值未保留在AEM Forms Designer的64位版本中。 （LC-3922924）
+* 用户在AEM Designer 6.5.19中遇到不稳定的超链接格式，其中文本框内的超链接错误地采用了周围文本的样式，例如第一个字符的格式。 （LC-3922376）
+* 用户在使用HTML OSGI v6.5.22在MAC上通过移动渲染来渲染AEM Forms表单时遇到问题。 （LC-3923058）
+* 用户在使用Designer 6.5.23创建并与PAC 2024分析的XDP模板中使用边界或后台字段时，遇到了“可移植文档格式(PDF)文件中的路径对象未标记”错误。 （LC-3923013）
+* 用户在接收消息“路径对象未标记”时，遇到可移植应用程序组件(PAC)中标题“Data Richiedente”的背景颜色错误。 （LC-3922912）
+* 用户遇到了一个问题，特定模板将目标字体替换为精简字体。 （LC-3922330）
+
+#### 自适应表单
+
+* 用户遇到规则编辑器中缺少选项的问题。 当作者编写有关数字输入的规则时，查询、UTM和浏览器详细信息选项不可用。 （FORMS-21660）
+* 用户在与OdataResponse交互时由于空指针异常而遇到应用程序崩溃的情况。 （FORMS-20344）
+* 用户在创建规则以显示面板并将焦点置于面板内部的元素时遇到问题。 在可见性更新之前执行的setFocus规则，导致焦点操作失败。 （FORMS-19563）
+* 用户在AEM Forms Author中遇到组件选择问题。 在编辑模式下在选项卡之间导航时，某些容器变为不可选，从而妨碍轻松识别和交互。 （FORMS-18525）
+* 用户尝试在AEM 6.5.22中为资源添加注释时遇到“无效URL”错误。 （NPR-42684）
 
 ### 基础 {#foundation-6524}
 
@@ -535,7 +551,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -698,6 +714,6 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
