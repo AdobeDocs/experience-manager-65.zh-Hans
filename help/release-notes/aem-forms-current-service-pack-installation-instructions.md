@@ -121,7 +121,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
      >
      >* 更新或替换 **ConfigurationManager.bat** 文件可以避免手动更新 .lax 文件。
 
-1. **[仅适用于基于 Unix 的系统]：****启动配置管理器**&#x200B;复选框默认已选中。单击&#x200B;**[!UICONTROL 完成]**&#x200B;可立即运行配置管理器，或者如果希望稍后再运行&#x200B;**配置管理器**，请在单击&#x200B;**[!UICONTROL 完成]**&#x200B;之前取消选中&#x200B;**启动配置管理器**&#x200B;选项。您也可以稍后通过运行 `[AEM_forms_root]/configurationManager/bin` 目录下的相应脚本来启动&#x200B;**配置管理器**。
+1. **[仅适用于基于 Unix 的系统]：**&#x200B;**启动配置管理器**&#x200B;复选框默认已选中。单击&#x200B;**[!UICONTROL 完成]**&#x200B;可立即运行配置管理器，或者如果希望稍后再运行&#x200B;**配置管理器**，请在单击&#x200B;**[!UICONTROL 完成]**&#x200B;之前取消选中&#x200B;**启动配置管理器**&#x200B;选项。您也可以稍后通过运行 `[AEM_forms_root]/configurationManager/bin` 目录下的相应脚本来启动&#x200B;**配置管理器**。
 
 1. 根据您所使用的应用程序服务器，选择以下文档之一，并按&#x200B;*配置和部署 AEM Forms* 部分的说明进行操作。
 
