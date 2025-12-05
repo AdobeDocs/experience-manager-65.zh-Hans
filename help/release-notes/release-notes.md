@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 2580bb494bb81da0a923a34c88d37933d7575bec
+source-git-commit: f852fa8d682241ffdddc60148fcd9dce7b89fed4
 workflow-type: tm+mt
-source-wordcount: '8905'
+source-wordcount: '8809'
 ht-degree: 26%
 
 ---
@@ -535,26 +535,12 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
-
-* **AEM 6.5.21-6.5.24和AEM 6.5 LTS GA中的JSP脚本包问题**
-AEM 6.5.21到6.5.24，以及AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:2.6.0`捆绑包一起提供，其中包含已知问题。 此问题经常在 AEM 实例处理许多并发请求而导致高负载的情况下发生。
-
-  当出现此问题时，错误日志中可能会出现以下异常之一，并会引用 `org.apache.sling.scripting.jsp:2.6.0`：
-
-   * `java.io.IOException: classFile.delete() failed`
-   * `java.io.IOException: tmpFile.renameTo(classFile) failed`
-   * `java.lang.ArrayIndexOutOfBoundsException: Index 0 out of bounds for length 0`
-   * `java.io.FileNotFoundException`
-
-  出现该错误后，唯一的恢复方法是重启 AEM 实例。
-
-  请联系Adobe的客户支持，并参考此发行说明以获得解决方案。
 
 * **与 Oak 相关**
 自服务包 13 起及更高版本中，开始出现以下错误日志，从而影响持久化缓存：
@@ -712,6 +698,6 @@ AEM 6.5.21到6.5.24，以及AEM 6.5 LTS GA随`org.apache.sling.scripting.jsp:2.6
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
