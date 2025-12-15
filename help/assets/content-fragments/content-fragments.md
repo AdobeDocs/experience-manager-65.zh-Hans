@@ -131,7 +131,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
-* 在包含内容片段组件[ （引用组件）的](/help/sites-authoring/content-fragments.md)页面编辑器中使用：
+* 在包含内容片段组件[&#x200B; （引用组件）的](/help/sites-authoring/content-fragments.md)页面编辑器中使用：
 
    * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
@@ -321,7 +321,7 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 大量使用内容片段引用可能会显着影响系统性能、UI响应性和GraphQL查询执行。 力求嵌套不超过10级。
 
-###每个模型的数据字段数和类型数 {#number-of-data-fields-and-types-per-model}
+### 每个模型的数据字段数和类型数 {#number-of-data-fields-and-types-per-model}
 
 仅包括模型真正需要的数据字段和类型。
 
