@@ -5,16 +5,16 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1966'
-ht-degree: 70%
+source-wordcount: '2295'
+ht-degree: 60%
 
 ---
 
 # 使用内容片段 {#working-with-content-fragments}
 
-使用Adobe Experience Manager (AEM)，内容片段允许您设计、创建、策划和[发布独立于页面的内容](/help/sites-authoring/content-fragments.md)。 它们允许您准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。
+通过Adobe Experience Manager (AEM)，内容片段允许您设计、创建、策划和[发布独立于页面的内容](/help/sites-authoring/content-fragments.md)。 它们允许您准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。
 
 内容片段包含结构化内容：
 
@@ -84,7 +84,7 @@ ht-degree: 70%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
-* 在包含内容片段组件[&#128279;](/help/sites-authoring/content-fragments.md) （引用组件）的页面编辑器中使用：
+* 在包含内容片段组件[ （引用组件）的](/help/sites-authoring/content-fragments.md)页面编辑器中使用：
 
    * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
@@ -201,7 +201,7 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
    * 嵌入在片段的段落系统中。
    * 可以[在页面上使用/引用片段时](/help/sites-authoring/content-fragments.md)进行格式化。
    * 只能使用片段编辑器在片段中添加、删除或移动到片段中。 无法在页面编辑器中执行这些操作。
-   * 只能在片段编辑器[&#128279;](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)中使用富文本格式添加、删除或移动片段。
+   * 只能在片段编辑器[中使用](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)富文本格式添加、删除或移动片段。
    * 只能添加到多行文本元素（任何片段类型）。
    * 附于前文（段落）。
 
@@ -263,7 +263,7 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 中间内容：
 
 * 处理内容片段时，可在页面编辑器中使用。
-* 是在页面上使用或引用片段[&#128279;](/help/sites-authoring/content-fragments.md#adding-in-between-content)后，在片段流中添加的其他内容。
+* 是在页面上使用或引用片段[后，在片段流中添加的](/help/sites-authoring/content-fragments.md#adding-in-between-content)其他内容。
 * 可用于[使用内容片段时的页面编辑器](/help/sites-authoring/content-fragments.md)。
 * 中间内容可以添加到任何片段中，其中只有一个元素可见。
 * 关联内容的使用方式，以及相应浏览器中的资源和/或组件。
@@ -300,3 +300,47 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 ## 使用示例 {#example-usage}
 
 片段及其元素和变体可用于为多个渠道创建一致的内容。在设计片段时，必须考虑使用的内容以及使用的位置。
+
+## 最佳做法 {#best-practices}
+
+内容片段可用于形成复杂的结构。 Adobe提供了在定义和使用模型和片段时的最佳实践建议。
+
+### 保持简单 {#keep-it-simple}
+
+在AEM中为结构化内容建模时，应尽可能简化内容结构，以确保强大的系统性能和简化的管理。
+
+### 模型数量 {#number-of-models}
+
+根据需要创建尽可能多的内容模型，但不再创建。
+
+模型过多，使治理复杂化，并且可能会减慢GraphQL查询速度。 一小部分模型（最多几十个）通常就足够了。 如果您接近数十或更高，请重新考虑建模策略。
+
+### 嵌套模型和片段（非常重要） {#nesting-models-and-fragments}
+
+使用内容片段引用避免对内容片段进行深嵌套或过度嵌套，这类引用允许片段引用其他片段，有时会跨多个级别。
+
+大量使用内容片段引用可能会显着影响系统性能、UI响应性和GraphQL查询执行。 力求嵌套不超过10级。
+
+###每个模型的数据字段数和类型数 {#number-of-data-fields-and-types-per-model}
+
+仅包括模型真正需要的数据字段和类型。
+
+过于复杂的模型会导致片段过于复杂，这会增加创作难度并降低编辑器性能。
+
+### 富文本字段 {#rich-text-fields}
+
+请考虑使用富文本字段（**多行文本**&#x200B;数据类型）。
+
+限制每个模型的富文本字段数。 每个片段中存储的文本量以及HTML格式化的量。 非常大的富文本内容可能会对系统性能产生负面影响。
+
+### 变体数量 {#number-of-variations}
+
+创建所需数量的片段变体，但不再创建。
+
+变体在创作环境中和投放时都会向内容片段添加处理时间。 建议将变体的数量保持在可管理的最小值。
+
+最佳实践为每个内容片段不超过10个变量。
+
+### 生产前测试 {#test-before-production}
+
+如有疑问，请在将预期内容结构推出到生产环境之前为其创建原型。 早期的概念验证以及充分的技术和用户验收测试，有助于避免以后在生产中遇到截止日期时发生问题。

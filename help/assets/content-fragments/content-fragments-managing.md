@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1712'
+source-wordcount: '1728'
 ht-degree: 76%
 
 ---
@@ -34,6 +34,10 @@ ht-degree: 76%
 >
 >* 创作页面时；请参阅[使用内容片段进行页面创作](/help/sites-authoring/content-fragments.md)。
 >* 用于[使用带有 GraphQL 的内容片段](/help/assets/content-fragments/content-fragments-graphql.md)的 Headless 内容投放。
+
+>[!NOTE]
+>
+>使用内容片段模型和内容片段时，请了解[最佳实践](/help/assets/content-fragments/content-fragments.md#best-practices)。
 
 >[!NOTE]
 >
@@ -123,7 +127,7 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->其中许多是Assets[&#128279;](/help/assets/manage-assets.md)和/或[AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)的标准操作。
+>其中许多是Assets[和/或](/help/assets/manage-assets.md)AEM桌面应用程序[的](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)标准操作。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
@@ -364,7 +368,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 必须发布内容片段才能在发布环境中使用。 它们可以发布：
 
-* 创建后；使用Assets控制台[&#128279;](#actions-for-a-content-fragment-assets-console)中可用的操作。
+* 创建后；使用Assets控制台[中可用的](#actions-for-a-content-fragment-assets-console)操作。
 * 从[内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor)。
 * 当您[发布使用片段](/help/sites-authoring/content-fragments.md#publishing)的页面时；该片段将列在页面引用中。
 

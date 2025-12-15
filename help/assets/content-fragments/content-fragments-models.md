@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: e3a35099a48088d5746aa23be45c3e81a1a8b02e
+source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '2339'
-ht-degree: 69%
+source-wordcount: '2355'
+ht-degree: 70%
 
 ---
 
@@ -22,6 +22,10 @@ AEM中的内容片段模型定义了[内容片段的内容结构，](/help/asset
 1. [创建](#creating-a-content-fragment-model)和[配置](#defining-your-content-fragment-model)您的内容片段模型。
 1. [启用您的内容片段模型](#enabling-disabling-a-content-fragment-model)，以便在创建内容片段时使用。
 1. 通过配置[策略](#allowing-content-fragment-models-assets-folder)，**允许在所需的 Assets 文件夹上创建内容片段模型**。
+
+>[!NOTE]
+>
+>使用内容片段模型和内容片段时，请了解[最佳实践](/help/assets/content-fragments/content-fragments.md#best-practices)。
 
 ## 创建内容片段模型 {#creating-a-content-fragment-model}
 
@@ -60,7 +64,7 @@ AEM中的内容片段模型定义了[内容片段的内容结构，](/help/asset
 
    >[!NOTE]
    >
-   >当字段为&#x200B;**必填**&#x200B;时，左侧窗格中指示的&#x200B;**标记**&#x200B;会标有星号 (**&#42;**)。
+   >当字段为&#x200B;**必填**&#x200B;时，左侧窗格中指示的&#x200B;**标签**&#x200B;会标有星号 (**&#42;**)。
 
    ![属性](assets/cfm-models-03.png)
 
@@ -161,7 +165,7 @@ AEM中的内容片段模型定义了[内容片段的内容结构，](/help/asset
 用于在片段中实现/呈现字段的各种选项。通常，这允许您定义作者是否能看到字段的单个实例，还是允许作者创建多个实例。
 
 * **字段标签**
-输入&#x200B;**字段标签**&#x200B;会自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
+输入**字段标签**&#x200B;会自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有额外的验证字段。 请参阅[验证](#validation)，了解更多详细信息。
@@ -232,7 +236,7 @@ AEM中的内容片段模型定义了[内容片段的内容结构，](/help/asset
 
      >[!NOTE]
      >
-     >此方法对于在GraphQL[&#128279;](/help/assets/content-fragments/content-fragments-graphql.md)中使用内容片段的Headless内容投放特别感兴趣。
+     >此方法对于在GraphQL[中使用内容片段的](/help/assets/content-fragments/content-fragments-graphql.md)Headless内容投放特别感兴趣。
    * 可以为一个引用或多个引用（在生成的片段中）配置它。
 
 >[!NOTE]
@@ -240,10 +244,10 @@ AEM中的内容片段模型定义了[内容片段的内容结构，](/help/asset
 >AEM 具有以下重复保护：
 >
 >* 内容引用
->这会阻止用户添加对当前片段的引用。 这可能导致出现空的片段引用选取器对话框。
+>  这会阻止用户添加对当前片段的引用。这可能导致出现空的片段引用选取器对话框。
 >
->* GraphQL中的片段引用
->如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时返回null。
+>* GraphQL 中的片段引用
+>  如果创建一个深层查询，且该查询返回多个相互引用的内容片段，则该查询在第一次出现时返回null。
 
 ### 内容引用 {#content-reference}
 
