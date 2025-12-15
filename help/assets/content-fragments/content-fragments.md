@@ -84,7 +84,7 @@ ht-degree: 60%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)
 
 >[!NOTE]
 >
