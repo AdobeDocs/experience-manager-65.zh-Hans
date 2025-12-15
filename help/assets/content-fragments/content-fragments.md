@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
+source-git-commit: e71050fe23cc4c436859776918637158098864ef
 workflow-type: tm+mt
-source-wordcount: '2329'
+source-wordcount: '2331'
 ht-degree: 60%
 
 ---
@@ -19,7 +19,9 @@ ht-degree: 60%
 内容片段包含结构化内容：
 
 * 它们基于[内容片段模型](/help/assets/content-fragments/content-fragments-models.md)，用于为生成片段预定义结构。
+
 * 此结构可以介于以下两种之间：
+
    * 基本
       * 例如，单个多行文本字段。
       * 用于准备直接内容以用于页面创作。
@@ -84,7 +86,7 @@ ht-degree: 60%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)
 
 >[!NOTE]
 >
@@ -131,7 +133,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
-* 在包含内容片段组件[&#x200B; （引用组件）的](/help/sites-authoring/content-fragments.md)页面编辑器中使用：
+* 在包含内容片段组件[ （引用组件）的](/help/sites-authoring/content-fragments.md)页面编辑器中使用：
 
    * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
