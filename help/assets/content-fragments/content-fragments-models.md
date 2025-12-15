@@ -5,10 +5,10 @@ feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
 workflow-type: tm+mt
-source-wordcount: '2355'
-ht-degree: 70%
+source-wordcount: '2326'
+ht-degree: 71%
 
 ---
 
@@ -109,13 +109,6 @@ AEM中的内容片段模型定义了[内容片段的内容结构，](/help/asset
    * 添加单行文本的一个或多个字段；可以定义最大长度
 * **多行文本**
    * 一个文本区域，它可为富文本、纯文本或 Markdown
-
-     >[!NOTE]
-     >
-     >出于性能原因，建议不要在一个模型中使用十个以上的富文本字段。
-     >
-     >如果需要，建议您使用[嵌套内容片段](#fragment-reference-nested-fragments)。
-
 * **数字**
    * 添加一个或多个数字字段
 * **布尔型**
@@ -165,7 +158,7 @@ AEM中的内容片段模型定义了[内容片段的内容结构，](/help/asset
 用于在片段中实现/呈现字段的各种选项。通常，这允许您定义作者是否能看到字段的单个实例，还是允许作者创建多个实例。
 
 * **字段标签**
-输入&#x200B;**字段标签**&#x200B;会自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
+输入**字段标签**&#x200B;会自动生成&#x200B;**属性名称**，如有必要，可以手动更新该名称。
 
 * **验证**
 基本验证可由以下机制提供： **必需** 属性。某些数据类型具有额外的验证字段。 请参阅[验证](#validation)，了解更多详细信息。

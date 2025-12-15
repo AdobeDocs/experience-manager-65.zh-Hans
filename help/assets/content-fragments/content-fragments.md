@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+source-git-commit: 73ec9a0420206ef2cc60a12d316073a443c1d20d
 workflow-type: tm+mt
-source-wordcount: '2295'
+source-wordcount: '2329'
 ht-degree: 60%
 
 ---
@@ -84,7 +84,7 @@ ht-degree: 60%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ AEM 内容片段可用于描述和管理结构化内容。结构化内容在可�
    * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
    * 在内容片段编辑器中创作和编辑。
 
-* 在包含内容片段组件[&#x200B; （引用组件）的](/help/sites-authoring/content-fragments.md)页面编辑器中使用：
+* 在包含内容片段组件[ （引用组件）的](/help/sites-authoring/content-fragments.md)页面编辑器中使用：
 
    * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
@@ -329,9 +329,15 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 ### 富文本字段 {#rich-text-fields}
 
-请考虑使用富文本字段（**多行文本**&#x200B;数据类型）。
+请考虑使用富文本字段（**多行文本**&#x200B;数据类型）：
 
-限制每个模型的富文本字段数。 每个片段中存储的文本量以及HTML格式化的量。 非常大的富文本内容可能会对系统性能产生负面影响。
+* 字段
+
+  限制每个模型的富文本字段数。 出于性能原因，建议不要在一个模型中使用十个以上的富文本字段。 如果需要，建议您使用[嵌套内容片段](/help/assets/content-fragments/content-fragments-models.md#using-references-to-form-nested-content)。
+
+* 内容
+
+  您还应限制每个片段中存储的文本数量，以及HTML格式化的数量。 非常大的富文本内容可能会对系统性能产生负面影响。
 
 ### 变体数量 {#number-of-variations}
 
