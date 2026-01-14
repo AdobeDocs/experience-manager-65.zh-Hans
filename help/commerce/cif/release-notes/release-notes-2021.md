@@ -5,18 +5,18 @@ exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 12%
+source-wordcount: '1087'
+ht-degree: 14%
 
 ---
 
-# Commerce integration frameworkGitHub版本概述
+# Commerce integration framework GitHub版本概述
 
 ## 系统要求概述
 
-查看下表中，您当前使用或计划将来使用的CIF版本的最低系统要求。
+请查看下表中当前使用或计划将来使用的CIF版本的最低系统要求。
 
 | 组件 | 系统要求 |
 |:-------|:-----:|
@@ -30,7 +30,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2021.11.18.00 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
 | CIF核心组件 | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
-| CIF Venia引用站点 | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
+| CIF Venia参考站点 | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
 
 ### 新增功能 {#what-is-new-november}
 
@@ -48,15 +48,15 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2021.10.20.02 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
 | CIF核心组件 | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
-| CIF Venia引用站点 | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
+| CIF Venia参考站点 | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
 
 ### 新增功能 {#what-is-new-october}
 
-* CIF加载项支持带有新Commerce API和架构的最新GraphQL v2.4.3
+* CIF加载项支持具有新Commerce API和架构的最新GraphQL v2.4.3
 
 * 作者可以使用富文本编辑器(RTE)在文本字段中添加指向产品和目录页面的链接。 RTE工具栏中添加了CIF图标，该图标可打开选取器，以便在不离开上下文的情况下快速搜索和选择产品或类别。
 
-* 现有的弹出购物车和结帐已替换为专用的AEM购物车和结帐页面。 这些页面上的组件是使用Adobe Commerce的可扩展Peregrine组件构建的
+* 现有的弹出购物车和结账页面已替换为专用的AEM购物车和结账页面。 这些页面上的组件是使用Adobe Commerce的可扩展Peregrine组件构建的
 
 * 商家可以使用Commerce后端隐藏导航中的某些产品目录类别。 CIF导航核心组件遵循Commerce后端配置“包含在菜单中”以在导航中显示/隐藏类别
 
@@ -68,7 +68,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2021.09.27 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
 | CIF核心组件 | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
-| CIF Venia引用站点 | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
+| CIF Venia参考站点 | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
 
 ### 新增功能 {#what-is-new-september}
 
@@ -88,7 +88,7 @@ ht-degree: 12%
 
 * AEM CS部署步骤期间以及不使用客户端组件时出现JS错误
 
-* 无法在具有sling：configs节点的文件夹中创建CIF云配置
+* 无法在具有sling:configs节点的文件夹中创建CIF云配置
 
 ## 发行日期： 2021年8月
 
@@ -96,7 +96,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2021.09.02 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
 | CIF核心组件 | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
-| CIF Venia引用站点 | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
+| CIF Venia参考站点 | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
 ### 新增功能 {#what-is-new-august}
 
@@ -110,7 +110,7 @@ ht-degree: 12%
 
 * 打开类别过滤器折叠面板后即无法将其关闭
 
-* 产品Teaser中的“行动号召文本”属性损坏
+* 产品Teaser中的“Call to action text”属性损坏
 
 * AEM CS部署步骤期间出现CIF JS错误
 
@@ -122,7 +122,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2021.07.21 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
 | CIF核心组件 | 2.0.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
-| CIF Venia引用站点 | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
+| CIF Venia参考站点 | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
 ### 新增功能 {#what-is-new-july}
 
@@ -131,7 +131,7 @@ ht-degree: 12%
    * 创作模式下暂存的产品数据的视觉指示器，用于更好地显示即将发生的更改
    * 内容和商务页面的新Sitemap组件
 
-* 支持[Adobe Commerce Sensei产品推荐，由AEM Storefront中的Adobe Sensei](https://business.adobe.com/cn/products/magento/product-recommendations.html)提供支持，使用预定义或动态创建的推荐
+* 支持[Adobe Commerce AI产品推荐，由AEM Storefront中的Adobe AI](https://business.adobe.com/ai/adobe-genai.html)提供支持，使用预定义或动态创建的推荐
 
 ## 发行日期： 2021年6月
 
@@ -139,14 +139,14 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2021.06.18 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
 | CIF核心组件 | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
-| CIF Venia引用站点 | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
+| CIF Venia参考站点 | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
 
 ### 新增功能 {#what-is-new-june}
 
-* 内容片段的新CIF产品和类别引用数据类型(包括 产品/类别选取器UI支持)
+* 新的CIF产品和内容片段的类别引用数据类型(包括 产品/类别选取器UI支持)
 * 新的Commerce内容片段核心组件
 * AEM后端支持全文商务搜索
-* Commerce核心组件支持Adobe Commerce Sensei Recs数据收集
+* Commerce核心组件支持Adobe Commerce AI推荐数据收集
 * 改进了类别页面的SEO友好URL
 * 支持每个站点/配置的自定义HTTP标头
 
@@ -156,7 +156,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2021.05.26 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
 | CIF核心组件 | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
-| CIF Venia引用站点 | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
+| CIF Venia参考站点 | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
 
 ### 新增功能 {#what-is-new-may}
 
@@ -174,7 +174,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2021.04.22 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | CIF核心组件 | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Venia引用站点 | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF Venia参考站点 | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 新增功能 {#what-is-new-april}
 
@@ -194,7 +194,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF连接器 | 1.9.0 | [发行说明](https://github.com/adobe/commerce-cif-connector/releases) |
 | CIF核心组件 | 1.9.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Venia引用站点 | 2021.03.25 | [发行说明](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF Venia参考站点 | 2021.03.25 | [发行说明](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 新增功能
 
@@ -214,7 +214,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF连接器 | 1.8.0 | [发行说明](https://github.com/adobe/commerce-cif-connector/releases) |
 | CIF核心组件 | 1.8.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Venia引用站点 | 2021.02.24 | [发行说明](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF Venia参考站点 | 2021.02.24 | [发行说明](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 新增功能 {#what-is-new-february}
 
@@ -234,7 +234,7 @@ ht-degree: 12%
 |:-------|:-----:|---------------------:|
 | CIF连接器 | 1.7.0 | [发行说明](https://github.com/adobe/commerce-cif-connector/releases) |
 | CIF核心组件 | 1.7.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
-| CIF Venia引用站点 | 2021.02.02 | [发行说明](https://github.com/adobe/aem-cif-guides-venia/releases) |
+| CIF Venia参考站点 | 2021.02.02 | [发行说明](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
 ### 新增功能 {#what-is-new-january}
 
@@ -242,6 +242,6 @@ ht-degree: 12%
 
 ### 改进内容  {#what-is-improved-january}
 
-* 验证后，将用户数据发送到Adobe客户端数据层。
+* 在验证后，将用户数据发送到Adobe客户端数据层。
 
 * 多个错误修复。
