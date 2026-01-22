@@ -46,7 +46,7 @@ ht-degree: 7%
 * [应用程序服务器安装](/help/sites-deploying/application-server-install.md)
 * [疑难解答](/help/sites-deploying/troubleshooting.md)
 * [命令行启动与停止](/help/sites-deploying/command-line-start-and-stop.md)
-* [配置 ](/help/sites-deploying/configuring.md)
+* [配置 &#x200B;](/help/sites-deploying/configuring.md)
 * [升级至 AEM 6.5](/help/sites-deploying/upgrade.md)
 * [电子商务](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [配置操作指南文章](/help/sites-deploying/ht-deploy.md)
@@ -140,7 +140,7 @@ AEM Managed Services是数字体验管理的完整解决方案。 它提供了�
 
 为了熟悉和开发AEM，通常使用安装在运行Apple OS X或Microsoft®Windows或Linux®桌面版本的本地计算机上的实例。
 
-在客户端，AEM可与桌面和平板电脑操作系统上的所有现代浏览器(**Microsoft® Edge**、**Internet Explorer** 11、**Chrome **51+** **、**Firefox **47+、**Safari** 8+)配合使用。 有关详细信息，请参阅[支持的客户端平台](/help/sites-deploying/technical-requirements.md#supported-client-platforms)。
+在客户端，AEM可与桌面和平板电脑操作系统上的所有现代浏览器(**Microsoft® Edge**、**Internet Explorer** 11、**Chrome &#x200B;** 51+**&#x200B; **、**Firefox &#x200B;** 47+、**Safari** 8+)配合使用。 有关详细信息，请参阅[支持的客户端平台](/help/sites-deploying/technical-requirements.md#supported-client-platforms)。
 
 ### 获取软件 {#getting-the-software}
 
@@ -287,7 +287,7 @@ AEM启动，并自动将Web浏览器重定向到相应的页面（通常是登�
 登录后，您可以访问AEM。 有关详细信息，请参阅以下内容，具体取决于您的角色：
 
 * [创作](/help/sites-authoring/first-steps.md)
-* [管理 ](/help/sites-administering/home.md)
+* [管理 &#x200B;](/help/sites-administering/home.md)
 * [开发](/help/sites-developing/getting-started.md)
 * [管理](/help/managing/best-practices.md)
 
@@ -301,7 +301,7 @@ AEM启动，并自动将Web浏览器重定向到相应的页面（通常是登�
 * [应用程序服务器安装](/help/sites-deploying/application-server-install.md)
 * [疑难解答](/help/sites-deploying/troubleshooting.md)
 * [命令行启动与停止](/help/sites-deploying/command-line-start-and-stop.md)
-* [配置 ](/help/sites-deploying/configuring.md)
+* [配置 &#x200B;](/help/sites-deploying/configuring.md)
 * [升级至 AEM 6.5](/help/sites-deploying/upgrade.md)
 * [电子商务](/help/commerce/cif-classic/deploying/ecommerce.md)
 * [配置操作指南文章](/help/sites-deploying/ht-deploy.md)
