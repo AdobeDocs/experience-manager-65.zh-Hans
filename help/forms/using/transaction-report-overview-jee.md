@@ -5,22 +5,25 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: eb059bc4c9f4b5064b8038a2b037670086a9139b
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 0%
+source-wordcount: '632'
+ht-degree: 2%
 
 ---
 
+
 # 在JEE上启用和查看AEM Forms的交易报表 {#transaction-reports-overview}
 
-<!--Transaction reports in AEM Forms on JEE let you keep a count of all transactions taken place on your AEM Forms deployment. The objective is to provide information about product usage and helps business stakeholders understand their digital processing volumes. Examples of a transaction include:
+<span>从AEM Forms 6.5.20.0为JEE上的AEM Forms引入了交易报告功能。 此功能默认处于禁用状态，可以从管理员UI启用。</span>
 
-* Submission of a document
-* Rendition of a document
-* Conversion of a document from one file format to another 
+通过JEE上的AEM Forms中的交易报表，您可以对AEM Forms部署中发生的所有交易进行计数。 目标是提供有关产品使用情况的信息，并帮助业务利益相关者了解他们的数字处理量。 事务示例包括：
 
-For more information on what is considered a transaction, see [Billable APIs](../../forms/using/transaction-reports-billable-apis-jee.md). Transaction log helps you to gain information about the number of documents submitted, rendered, and converted.-->
+* 提交文件
+* 文档的演绎版
+* 文档从一种文件格式转换为另一种文件格式
+
+有关什么是事务的详细信息，请参阅[可记帐API](../../forms/using/transaction-reports-billable-apis-jee.md)。
 
 ## 启用交易报告 {#enable-transaction-reporting}
 
@@ -44,7 +47,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
 
 ## 查看事务报告 {#view-transaction-report}
 
-启用事务报告后，有关事务计数的信息将可通过仪表板[&#128279;](#transaction-report-dashboard)的[事务报告以及日志文件](#transaction-report-logfile)的详细事务报告访问。 两者均说明如下：
+启用事务报告后，有关事务计数的信息将可通过仪表板[的](#transaction-report-dashboard)事务报告以及日志文件[的详细](#transaction-report-logfile)事务报告访问。 两者均说明如下：
 
 ### 通过仪表板的交易报告 {#transaction-report-dashboard}
 
@@ -53,7 +56,7 @@ For more information on what is considered a transaction, see [Billable APIs](..
 1. 导航到JEE上AEM Forms的`/adminui`，例如： `http://10.13.15.08:8080/adminui`。
 1. 以&#x200B;**管理员**&#x200B;登录。
 1. 单击“Health Monitor（运行状况监视器）”。
-1. 导航到&#x200B;**交易报告器**&#x200B;选项卡，单击&#x200B;**计算交易总数**，现在您看到饼图表示提交、渲染或转换的PDF forms数。
+1. 导航到&#x200B;**交易报告器**&#x200B;选项卡，单击&#x200B;**计算交易总数**，现在您看到饼图表示已提交、已渲染或已转换的PDF forms的数量。
 
 ![sample-transaction-report-jee](assets/transaction-piechart.png)
 
@@ -128,7 +131,7 @@ TransactionRecord
 
 记录事务的频率由服务器上对成功提交、渲染或转换的每个表单的更新操作确定。
 
-* 在&#x200B;**仪表板**&#x200B;中，交易计数会定期更新，默认设置为1分钟。 您可以通过在`"com.adobe.idp.dsc.transaction.recordFrequency"`处设置系统属性来更新频率。 例如，在JBoss®上的AEM Forms for JEE中，在`JAVA_OPTS`中添加`-Dcom.adobe.idp.dsc.transaction.recordFrequency=5`以将更新频率设置为5分钟。
+* 在&#x200B;**仪表板**&#x200B;中，交易计数会定期更新，默认设置为1分钟。 您可以通过在`"com.adobe.idp.dsc.transaction.recordFrequency"`处设置系统属性来更新频率。 例如，在JBoss®上的AEM Forms for JEE中，在`-Dcom.adobe.idp.dsc.transaction.recordFrequency=5`中添加`JAVA_OPTS`以将更新频率设置为5分钟。
 
 * 在&#x200B;**事务日志**&#x200B;中，当表单成功提交、渲染或转换时，每个事务的更新都会立即发生。
 
@@ -158,5 +161,5 @@ The transaction count is reverse replicated from publish instances to author or 
 
 ## 相关文章 {#related-articles}
 
-* [适用于AEM Forms on JEE的可计费API列表](../../forms/using/transaction-reports-billable-apis-jee.md)
+* [JEE 上的 AEM Forms 的可计费 API 列表](../../forms/using/transaction-reports-billable-apis-jee.md)
 * [为JEE上的AEM Forms的自定义组件API记录事务](/help/forms/using/record-transaction-custom-component-jee.md)
