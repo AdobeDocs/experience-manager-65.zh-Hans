@@ -1,5 +1,5 @@
 ---
-title: 部署和维护
+title: 部署与维护
 description: 了解如何开始安装AEM。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+source-git-commit: 36cb540cda7faeca5949028c9c14ab2ecf860402
 workflow-type: tm+mt
 source-wordcount: '1779'
-ht-degree: 3%
+ht-degree: 7%
 
 ---
 
-# 部署和维护{#deploying-and-maintaining}
+# 部署与维护{#deploying-and-maintaining}
 
 在此页中，您可以找到：
 
@@ -41,23 +41,23 @@ ht-degree: 3%
 熟悉这些基础知识后，您便可以在以下子页面中找到更高级和详细的信息：
 
 * [技术要求](/help/sites-deploying/technical-requirements.md)
-* [建议的部署](/help/sites-deploying/recommended-deploys.md)
+* [推荐的部署](/help/sites-deploying/recommended-deploys.md)
 * [自定义独立安装](/help/sites-deploying/custom-standalone-install.md)
 * [应用程序服务器安装](/help/sites-deploying/application-server-install.md)
 * [疑难解答](/help/sites-deploying/troubleshooting.md)
-* [命令行启动和停止](/help/sites-deploying/command-line-start-and-stop.md)
-* [配置 &#x200B;](/help/sites-deploying/configuring.md)
-* [升级到AEM 6.5](/help/sites-deploying/upgrade.md)
+* [命令行启动与停止](/help/sites-deploying/command-line-start-and-stop.md)
+* [配置 ](/help/sites-deploying/configuring.md)
+* [升级至 AEM 6.5](/help/sites-deploying/upgrade.md)
 * [电子商务](/help/commerce/cif-classic/deploying/ecommerce.md)
-* [配置操作方法文章](/help/sites-deploying/ht-deploy.md)
-* [Web 控制台](/help/sites-deploying/web-console.md)
-* [排查复制问题](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳实践](/help/sites-deploying/best-practices.md)
+* [配置操作指南文章](/help/sites-deploying/ht-deploy.md)
+* [网页控制台](/help/sites-deploying/web-console.md)
+* [复制疑难解答](/help/sites-deploying/troubleshoot-rep.md)
+* [最佳做法](/help/sites-deploying/best-practices.md)
 * [部署社区](/help/communities/deploy-communities.md)
-* [AEM平台简介](/help/sites-deploying/platform.md)
-* [性能准则](/help/sites-deploying/performance-guidelines.md)
+* [AEM 平台简介](/help/sites-deploying/platform.md)
+* [性能指南](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile快速入门](/help/mobile/getting-started-aem-mobile.md)
-* [什么是AEM Screens？](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)
+* [什么是AEM Screens？](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## 基本概念 {#basic-concepts}
 
@@ -130,7 +130,7 @@ AEM Managed Services是数字体验管理的完整解决方案。 它提供了�
 
 **Cloud Manager**： Cloud Manager是Adobe Experience Manager Managed Services产品的一部分，它是一个自助服务门户，进一步使组织能够在云中自行管理Adobe Experience Manager。 它包含一流的持续集成和持续交付(CI/CD)管道，使IT团队和实施合作伙伴能够在不影响性能或安全性的情况下加速自定义项或更新的交付。 Cloud Manager仅适用于Adobe Managed Service客户。
 
-要了解有关Cloud Manger及其资源的更多信息，请参阅&#x200B;[**Cloud Manager用户指南**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=zh-Hans)。
+要了解有关Cloud Manger及其资源的更多信息，请参阅&#x200B;[**Cloud Manager用户指南**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)。
 
 ## 快速入门 {#getting-started}
 
@@ -140,7 +140,7 @@ AEM Managed Services是数字体验管理的完整解决方案。 它提供了�
 
 为了熟悉和开发AEM，通常使用安装在运行Apple OS X或Microsoft®Windows或Linux®桌面版本的本地计算机上的实例。
 
-在客户端，AEM可与桌面和平板电脑操作系统上的所有现代浏览器(**Microsoft® Edge**、**Internet Explorer** 11、**Chrome &#x200B;** 51+**&#x200B; &#x200B;**、**Firefox &#x200B;** 47+、**Safari** 8+)配合使用。 有关详细信息，请参阅[支持的客户端平台](/help/sites-deploying/technical-requirements.md#supported-client-platforms)。
+在客户端，AEM可与桌面和平板电脑操作系统上的所有现代浏览器(**Microsoft® Edge**、**Internet Explorer** 11、**Chrome **51+** **、**Firefox **47+、**Safari** 8+)配合使用。 有关详细信息，请参阅[支持的客户端平台](/help/sites-deploying/technical-requirements.md#supported-client-platforms)。
 
 ### 获取软件 {#getting-the-software}
 
@@ -160,7 +160,7 @@ AEM软件包有两种形式：
 
    UNIX®安装位置： **/opt/aem**
 
-   Windows安装位置： **`C:\Program Files\aem`**
+   Windows安装位置： **`C:\aem`**
 
    同样，将示例实例直接安装在桌面上的文件夹中也很常见。 无论如何，Adobe通常将此位置称为：
 
@@ -196,11 +196,11 @@ AEM需要几分钟时间来解压缩jar文件、安装自身并启动。 上述�
 
 **`https://localhost:4502`**
 
-创作实例中的结果将自动配置为连接到&#x200B;**`localhost:4503`**&#x200B;上的&#x200B;**发布实例**。
+创作实例中的结果将自动配置为连接到&#x200B;**上的**&#x200B;发布实例&#x200B;**`localhost:4503`**。
 
 ### 创作和发布安装 {#author-and-publish-installs}
 
-只需在首次启动`jar`文件之前重命名该文件，即可更改默认安装（**`localhost:4502`**&#x200B;上的&#x200B;**作者**&#x200B;实例）。 命名模式为：
+只需在首次启动&#x200B;**文件之前重命名该文件，即可更改默认安装（**&#x200B;上的&#x200B;**`localhost:4502`**&#x200B;作者`jar`实例）。 命名模式为：
 
 **`cq-<instance-type>-p<port-number>.jar`**
 
@@ -276,7 +276,7 @@ AEM需要几分钟时间来解压缩jar文件、安装自身并启动。 上述�
 
 还有等效的&#x200B;**`bat`**&#x200B;个用于Windows的文件。 有关更多详细信息，请参阅：
 
-* [命令行启动和停止](/help/sites-deploying/command-line-start-and-stop.md)
+* [命令行启动与停止](/help/sites-deploying/command-line-start-and-stop.md)
 
 AEM启动，并自动将Web浏览器重定向到相应的页面（通常是登录页面）；例如：
 
@@ -287,7 +287,7 @@ AEM启动，并自动将Web浏览器重定向到相应的页面（通常是登�
 登录后，您可以访问AEM。 有关详细信息，请参阅以下内容，具体取决于您的角色：
 
 * [创作](/help/sites-authoring/first-steps.md)
-* [管理 &#x200B;](/help/sites-administering/home.md)
+* [管理 ](/help/sites-administering/home.md)
 * [开发](/help/sites-developing/getting-started.md)
 * [管理](/help/managing/best-practices.md)
 
@@ -296,20 +296,20 @@ AEM启动，并自动将Web浏览器重定向到相应的页面（通常是登�
 通过上部分，您应该能够很好地了解AEM安装的基础知识。 但是，安装AEM的完整生产系统可能会涉及更大的复杂性。 有关高级安装的完整介绍，请参阅以下子页面：
 
 * [技术要求](/help/sites-deploying/technical-requirements.md)
-* [建议的部署](/help/sites-deploying/recommended-deploys.md)
+* [推荐的部署](/help/sites-deploying/recommended-deploys.md)
 * [自定义独立安装](/help/sites-deploying/custom-standalone-install.md)
 * [应用程序服务器安装](/help/sites-deploying/application-server-install.md)
 * [疑难解答](/help/sites-deploying/troubleshooting.md)
-* [命令行启动和停止](/help/sites-deploying/command-line-start-and-stop.md)
-* [配置 &#x200B;](/help/sites-deploying/configuring.md)
-* [升级到AEM 6.5](/help/sites-deploying/upgrade.md)
+* [命令行启动与停止](/help/sites-deploying/command-line-start-and-stop.md)
+* [配置 ](/help/sites-deploying/configuring.md)
+* [升级至 AEM 6.5](/help/sites-deploying/upgrade.md)
 * [电子商务](/help/commerce/cif-classic/deploying/ecommerce.md)
-* [配置操作方法文章](/help/sites-deploying/ht-deploy.md)
-* [Web 控制台](/help/sites-deploying/web-console.md)
-* [排查复制问题](/help/sites-deploying/troubleshoot-rep.md)
-* [最佳实践](/help/sites-deploying/best-practices.md)
+* [配置操作指南文章](/help/sites-deploying/ht-deploy.md)
+* [网页控制台](/help/sites-deploying/web-console.md)
+* [复制疑难解答](/help/sites-deploying/troubleshoot-rep.md)
+* [最佳做法](/help/sites-deploying/best-practices.md)
 * [部署社区](/help/communities/deploy-communities.md)
-* [AEM平台简介](/help/sites-deploying/platform.md)
-* [性能准则](/help/sites-deploying/performance-guidelines.md)
+* [AEM 平台简介](/help/sites-deploying/platform.md)
+* [性能指南](/help/sites-deploying/performance-guidelines.md)
 * [AEM Mobile快速入门](/help/mobile/getting-started-aem-mobile.md)
-* [什么是AEM Screens？](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)
+* [什么是AEM Screens？](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
