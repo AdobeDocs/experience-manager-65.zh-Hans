@@ -55,7 +55,7 @@ ht-degree: 4%
 
 创建可编辑模板主要由模板作者使用[模板控制台和模板编辑器](/help/sites-authoring/templates.md)完成。 本节概述了此过程，并在后面描述了技术级别所发生的情况。
 
-有关如何在AEM项目中使用可编辑模板的信息，请参阅[使用Lazybones创建AEM项目](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478)。
+有关如何在AEM项目中使用可编辑模板的信息，请参阅[使用Lazybones创建AEM项目](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=zh-Hans)。
 
 创建可编辑模板时，您可以：
 

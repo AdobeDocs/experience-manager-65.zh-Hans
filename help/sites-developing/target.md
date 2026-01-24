@@ -234,7 +234,7 @@ JSP将添加所需的Analytics JavaScript对象和对客户端JavaScript库的�
 >
 >如果您未使用DTM，则需要将订单确认发送到Adobe Target。
 
-为了跟踪网站的性能，请将订单确认页面中的购买信息发送到Adobe Target。 (请参阅[创建orderConfirmPage Mbox](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en)和[订单确认Mbox — 添加自定义参数。](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779))当您的MBox名称为`orderConfirmPage`时，Adobe Target会将mbox数据识别为订单确认数据，并使用以下特定参数名称：
+为了跟踪网站的性能，请将订单确认页面中的购买信息发送到Adobe Target。 (请参阅[创建orderConfirmPage Mbox](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en)和[订单确认Mbox — 添加自定义参数。](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=zh-Hans))当您的MBox名称为`orderConfirmPage`时，Adobe Target会将mbox数据识别为订单确认数据，并使用以下特定参数名称：
 
 * productPurchasedId：用于标识所购买产品的ID列表。
 * orderId：订单的ID。

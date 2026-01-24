@@ -1414,7 +1414,7 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 
 >[!NOTE]
 >
->您可以创建自定义上传组件以将文件上传到Sling Servlet。 有关信息，请参阅[将文件上传到Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276)。
+>您可以创建自定义上传组件以将文件上传到Sling Servlet。 有关信息，请参阅[将文件上传到Adobe Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/aem-cloud-service-create-asset-servlet-for-uploading-small-files/td-p/404276?profile.language=zh-Hans)。
 
 ### 隐藏字段 {#hidden-field}
 

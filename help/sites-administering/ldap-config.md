@@ -43,7 +43,7 @@ LDAP （**L**&#x200B;高&#x200B;**D**&#x200B;目录&#x200B;**A**&#x200B;访问&#
 >
 >观看[Oak的外部登录模块 — 使用LDAP和Beyond](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=zh-Hans)进行身份验证，以深入了解外部登录模块。
 >
->要阅读有关使用Apache DS配置Experience Manager的示例，请参阅[配置Adobe Experience Manager 6.5以使用Apache目录服务。](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
+>要阅读有关使用Apache DS配置Experience Manager的示例，请参阅[配置Adobe Experience Manager 6.5以使用Apache目录服务。](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805?profile.language=zh-Hans)
 
 ## 配置LDAP身份提供程序 {#configuring-the-ldap-identity-provider}
 
