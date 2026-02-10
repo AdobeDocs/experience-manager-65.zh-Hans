@@ -27,7 +27,7 @@ ht-degree: 15%
 * 对捕获的数据执行复杂计算
 * 按预定义的计划将自适应表单数据保存到存储系统
 
-自适应表单编辑器提供&#x200B;**调用 Microsoft® Power Automate 流程**&#x200B;提交操作，以将自适应表单数据、附件和记录文档发送到 Power Automate Cloud Flow。要使用提交操作将捕获的数据发送到Microsoft® Power Automate，[将您的AEM Forms创作实例连接到Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+自适应表单编辑器提供&#x200B;**调用 Microsoft® Power Automate 流程**&#x200B;提交操作，以将自适应表单数据、附件和记录文档发送到 Power Automate Cloud Flow。要使用提交操作将捕获的数据发送到Microsoft® Power Automate，[将您的AEM Forms创作实例连接到Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
 ## 先决条件
 
