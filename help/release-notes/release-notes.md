@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 4305b4c7089fe4ac2b1bfe2dc6e4919181b3d892
+source-git-commit: 24e09fd7dd1801dc1511ed91a0b7c550d50eb484
 workflow-type: tm+mt
-source-wordcount: '9486'
+source-wordcount: '9709'
 ht-degree: 24%
 
 ---
@@ -551,7 +551,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -660,8 +660,6 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 * AEM Forms 现已将表单组件中的 Struts 版本从 2.5.33 升级至 6.x。此升级提供了以前未包含在SP24中的Struts更改。 相关支持已通过[热修复补丁](/help/release-notes/aem-forms-hotfix.md)提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。
 
-#### 其他已知问题 {#aem-forms-other-known-issues}
-
 * 在安装 AEM Forms JEE 服务包 21（6.5.21.0）后，如果您在 `<AEM_Forms_Installation>/lib/caching/lib` 文件夹下发现 Geode jar 的重复条目 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`（FORMS-14926），请执行以下步骤以解决该问题：
 
    1. 如果定位器正在运行，请先停止定位器。
@@ -696,7 +694,22 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 * **FORMS-21378**：启用服务器端验证(SSV)时，表单提交可能会失败。 如果遇到此问题，请联系 Adobe 支持部门寻求帮助。
 
-* **FORMS-23703**：如果未使用默认值配置`contains`规则，则自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
+* **FORMS-23703**：如果未使用默认值配置`contains`规则，则自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
+
+* 表单数据模型连接器可能无法通过身份验证，因为默认情况下不允许所需的关键词和正则表达式模式。 要解决此问题，请通过Configuration Manager (`/system/console/configmgr`)添加以下内容：
+
+   * **关键字：** `fdm-client-secret`，`oauth-client-secret`
+   * **正则表达式：** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
+
+     >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+
+* **FORMS-23979。**： HTML到PDF的转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到[6.5.24.0的](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)最新发布的Forms加载项。
+
+* **FORMS-23722**（分配任务中缺少文件附件）：将具有&#x200B;**文件附件**&#x200B;字段的表单提交到使用&#x200B;**分配任务**&#x200B;步骤的AEM工作流时，从收件箱打开任务时不会显示附件。 文件将正确地保存到存储库，并在CRX中可见；只有“分配任务”步骤UI不显示文件。
+
+* **FORMS-23717**&#x200B;升级到&#x200B;**AEM Forms6.5.24.0**&#x200B;后，`server.log`和`error.log`可能会泛洪为重复的警告消息，例如&#x200B;*安全解析器工厂创建失败*&#x200B;或&#x200B;*不支持安全属性……*。 日志可能会以每秒&#x200B;**5到10行**（每小时数百兆字节）的速度增长，这会填充磁盘并阻止生产转出。 **修复：**&#x200B;包含在AEM Forms **6.5.25.0**&#x200B;中。 **在此之前：**
+
+  要减少日志卷，请在应用程序服务器配置中或通过JVM参数`com.adobe.util.XMLSecurityUtil`将`ERROR`的日志记录级别设置为`-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`。 这仅会隐藏消息，而不会修复根本原因。
 
 ## 已包含的 OSGi 捆绑包和内容包{#osgi-bundles-and-content-packages-included}
 
@@ -714,6 +727,6 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)

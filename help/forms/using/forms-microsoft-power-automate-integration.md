@@ -6,10 +6,10 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
+source-git-commit: 385803015a09a11bcc97fed979d529d85f7facb8
 workflow-type: tm+mt
-source-wordcount: '1194'
-ht-degree: 16%
+source-wordcount: '1283'
+ht-degree: 15%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 16%
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | 本文 |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
 
 您可以配置自适应表单以在提交时运行 Microsoft® Power Automate Cloud Flow。配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automate Cloud Flow 进行处理。它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。以下几个示例说明了在将自适应表单与 Microsoft® Power Automate 集成后可执行的操作：
 
@@ -27,7 +27,7 @@ ht-degree: 16%
 * 对捕获的数据执行复杂计算
 * 按预定义的计划将自适应表单数据保存到存储系统
 
-自适应表单编辑器提供&#x200B;**调用 Microsoft® Power Automate 流程**&#x200B;提交操作，以将自适应表单数据、附件和记录文档发送到 Power Automate Cloud Flow。要使用提交操作将捕获的数据发送到Microsoft® Power Automate，[将您的AEM Forms创作实例连接到Microsoft® Power Automate] (#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
+自适应表单编辑器提供&#x200B;**调用 Microsoft® Power Automate 流程**&#x200B;提交操作，以将自适应表单数据、附件和记录文档发送到 Power Automate Cloud Flow。要使用提交操作将捕获的数据发送到Microsoft® Power Automate，[将您的AEM Forms创作实例连接到Microsoft® Power Automate](#connect-your-aem-forms-instance-with-microsoft&reg;-power-automate)
 
 ## 先决条件
 
@@ -118,6 +118,14 @@ ht-degree: 16%
 1. 在“发布”页面上，选择&#x200B;**[!UICONTROL 所有配置]**&#x200B;并选择&#x200B;**[!UICONTROL 发布]**。 发布Power Automate Dataverse和Power Automate流服务云配置。
 
 您的AEM Forms创作实例现在已与Microsoft® Power Automate连接。 您现在可以将自适应Forms数据发送到Power Automate流。
+
+>[!IMPORTANT]
+>
+>用于Microsoft® Power Automate连接的令牌将在90天后过期。
+>
+> 要使集成正常工作，请在令牌过期之前或过期时重新验证Microsoft® Power Automate Dataverse和Microsoft® Power Automate Flow Service云配置并重新发布它们，请使用[发布Microsoft® Power Automate Dataverse和Microsoft® Power Automate Flow Service云配置](#publish-microsoft-power-automate-dataverse-cloud-configuration)中记录的步骤。
+>
+> 有关令牌生命周期策略的详细信息，请参阅[Microsoft Entra有关可配置令牌生命周期的文档](https://learn.microsoft.com/en-us/entra/identity-platform/configurable-token-lifetimes#token-lifetime-policies-for-refresh-tokens-and-session-tokens)。 如果未续订令牌，则提交到Power Automate的表单可能会失败。
 
 ## 使用调用Microsoft® Power Automate流提交操作将数据发送到Power Automate流 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
