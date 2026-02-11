@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+source-git-commit: a750a6093ae8ba6b43c46af52077ed3773d59a20
 workflow-type: tm+mt
-source-wordcount: '9732'
-ht-degree: 24%
+source-wordcount: '9595'
+ht-degree: 20%
 
 ---
 
@@ -551,7 +551,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -641,26 +641,26 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 ### AEM Forms 已知问题 {#known-issues-aem-forms-6524}
 
+* **FORMS-14521**&#x200B;如果用户尝试预览包含保存的XML数据的草稿书信，则会陷入某些特定书信的`Loading`状态。
+* **FORMS-16603**&#x200B;在交互式通信代理UI的打印预览中，某些计算值未正确显示。
+* **FORMS-15681**&#x200B;在打印预览中查看信件时，内容已更改。 即，某些空格消失，某些字母被替换为`x`。
+* **FORMS-15428**：更新至带有 Forms 附加组件的 AEM Forms 服务包 20（6.5.20.0）后，依赖基于凭据的身份验证的旧版 Adobe Analytics Cloud 服务的配置将停止工作。此问题会导致分析规则无法正确执行。
+* **FORMS-16557**&#x200B;在交互式通信代理UI的打印预览中，所有字段值的货币符号（如美元符号$）显示不一致。 对于最多999的值，它出现，但对于1000及更高版本的值则缺失。
+* **FORMS-16575**&#x200B;交互式通信中对嵌套布局片段XDP所做的任何修改都不会反映在IC编辑器中。
+* **FORMS-21378**&#x200B;启用服务器端验证(SSV)时，表单提交可能会失败。 如果遇到此问题，请联系 Adobe 支持部门寻求帮助。
+* **FORMS-23722**（分配任务中缺少文件附件）：如果将具有&#x200B;**文件附件**&#x200B;字段的使用bindref的表单提交到使用&#x200B;**分配任务**&#x200B;步骤的AEM工作流，则从收件箱打开任务时不会显示附件。 文件将正确地保存到存储库，但分配任务步骤UI无法显示附件。
+
+#### 可通过热修复补丁解决的问题 {#aem-forms-issues-with-hotfixes}
+
 >[!NOTE]
 >
 >在没有可用修补程序的情况下，避免因问题升级到Service Pack 6.5.24.0。 这可能会导致意外错误。 仅在所需的热修复补丁发布后再升级至服务包 6.5.24.0。
 
-#### 可通过热修复补丁解决的问题 {#aem-forms-issues-with-hotfixes}
-
 以下问题已提供可下载并安装的热修复补丁：您可以通过[下载并安装热修复补丁](/help/release-notes/aem-forms-hotfix.md)来解决这些问题：
-
-* **FORMS-20203**：当用户将 Struts 框架从 2.5.x 版本升级到 6.x 版本时，AEM Forms 中的策略 UI 无法显示所有配置，例如添加水印的选项。
-
-* **FORMS-20360**：升级到 AEM Forms 服务包 6.5.24.0 后，ImageToPDF 转化服务失败并报错。
-  ```17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp```
-
-* **FORMS-20478**：尝试将 7/8 类型的 TIFF 文件转化为 PDF 时，转化流程失败并出现以下错误：“ALC-PDG-001-000-Image2Pdf 转化失败，原因：com/sun/image/codec/jpeg/JPEGCodec” 以及 “ALC-PDG-016-003-在 PDF 后处理过程中发生了未知/意外错误”。系统会尝试使用 TM ImageIO TIFF 解码器重试，但最终仍无法完成任务。
-
-* **FORMS-14521**：如果用户尝试使用已保存的 XML 数据预览草稿信件，某些特定信件会卡在 `Loading` 状态。
 
 * AEM Forms 现已将表单组件中的 Struts 版本从 2.5.33 升级至 6.x。此升级提供了以前未包含在SP24中的Struts更改。 相关支持已通过[热修复补丁](/help/release-notes/aem-forms-hotfix.md)提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。
 
-* 在安装 AEM Forms JEE 服务包 21（6.5.21.0）后，如果您在 `<AEM_Forms_Installation>/lib/caching/lib` 文件夹下发现 Geode jar 的重复条目 `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`（FORMS-14926），请执行以下步骤以解决该问题：
+* **FORMS-14926**&#x200B;安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`文件夹下找到Geode jars `<AEM_Forms_Installation>/lib/caching/lib`的重复条目，请执行以下步骤，以解决该问题：
 
    1. 如果定位器正在运行，请先停止定位器。
    2. 停止 AEM 服务器。
@@ -669,32 +669,14 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
    5. 以管理员模式打开命令提示符。
    6. 使用 `geode-*-1.15.1.2.jar` 文件安装 Geode 补丁。
 
-* 当用户从 AEM 6.5 Forms 服务包 18 或 19 升级到服务包 20 或 21 时，会遇到 JSP 编译错误。该错误会导致无法打开或创建自适应表单。它也会影响其他 AEM 界面。这些界面包括页面编辑器、AEM Forms UI、工作流编辑器和系统概览 UI。（FORMS-15256）
+* **FORMS-15256**&#x200B;用户从AEM 6.5 Forms Service Pack 18或19升级到Service Pack 20或21时，遇到JSP编译错误。 该错误会导致无法打开或创建自适应表单。它也会影响其他 AEM 界面。这些界面包括页面编辑器、AEM Forms UI、工作流编辑器和系统概述UI。
 
   如果遇到此类问题，请执行以下步骤进行解决：
    1. 进入 CRXDE 中的目录 `/libs/fd/aemforms/install/`。
    2. 删除名为 `com.adobe.granite.ui.commons-5.10.26.jar` 的捆绑包。
    3. 重新启动 AEM 服务器。
 
-* 在交互式通信代理 UI 的打印预览中，货币符号（如美元符号 $）在各字段值中的显示不一致。对于不超过 999 的数值会显示符号，但对于 1000 及以上的数值则缺少符号。（FORMS-16557）
-* 在交互式通信中，对嵌套布局片段的 XDP 所做的任何修改都不会反映在 IC 编辑器中。（FORMS-16575）
-* 在交互式通信代理 UI 的打印预览中，部分计算值未正确显示。（FORMS-16603）
-* 在“打印预览”中查看信件时，内容发生变化。具体表现为：部分空格消失，某些字母被替换为 `x`。（FORMS-15681）
-* **FORMS-15428**：更新至带有 Forms 附加组件的 AEM Forms 服务包 20（6.5.20.0）后，依赖基于凭据的身份验证的旧版 Adobe Analytics Cloud 服务的配置将停止工作。此问题会导致分析规则无法正确执行。
-
-* 当用户配置 WebLogic 14c 实例时，在 JBoss® 上运行的 JEE 环境中的 AEM Forms 服务包 21（6.5.21.0）内，PDFG 服务因涉及 SLF4J 库的类加载器出现冲突而失败。错误显示如下（CQDOC-22178）：
-
-  ```java
-  Caused by: java.lang.LinkageError: loader constraint violation: when resolving method "org.slf4j.impl.StaticLoggerBinder.getLoggerFactory()Lorg/slf4j/ILoggerFactory;"
-  the class loader org.ungoverned.moduleloader.ModuleClassLoader @404a2f79 (instance of org.ungoverned.moduleloader.ModuleClassLoader, child of 'deployment.adobe-livecycle-jboss.ear'
-  @7e313f80 org.jboss.modules.ModuleClassLoader) of the current class, org/slf4j/LoggerFactory, and the class loader 'org.slf4j.impl@1.1.0.Final-redhat-00001' @506ab52
-  (instance of org.jboss.modules.ModuleClassLoader, child of 'app' jdk.internal.loader.ClassLoaders$AppClassLoader) for the method's defining class, org/slf4j/impl/StaticLoggerBinder,
-  have different Class objects for the type org/slf4j/ILoggerFactory used in the signature.
-  ```
-
-* **FORMS-21378**：启用服务器端验证(SSV)时，表单提交可能会失败。 如果遇到此问题，请联系 Adobe 支持部门寻求帮助。
-
-* **FORMS-23703**：如果未使用默认值配置`contains`规则，则自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
+* **FORMS-23703**&#x200B;如果未使用默认值配置`contains`规则时，自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
 
 * 表单数据模型连接器可能无法通过身份验证，因为默认情况下不允许所需的关键词和正则表达式模式。 要解决此问题，请通过Configuration Manager (`/system/console/configmgr`)添加以下内容：
 
@@ -703,15 +685,13 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
      >[!VIDEO](https://video.tv.adobe.com/v/3479697)
 
-* **FORMS-23979。**： HTML到PDF的转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到[6.5.24.0的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)最新发布的Forms加载项。
-
-* **FORMS-23722**（分配任务中缺少文件附件）：将具有&#x200B;**文件附件**&#x200B;字段的表单提交到使用&#x200B;**分配任务**&#x200B;步骤的AEM工作流时，从收件箱打开任务时不会显示附件。 文件将正确地保存到存储库，并在CRX中可见；只有“分配任务”步骤UI不显示文件。
-
-* **FORMS-23717**&#x200B;在表单数据模型搜索中，即使不存在相关实体，也会在UI中显示HTML标记。
+* **FORMS-23979** HTML-PDF转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到[6.5.24.0的](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)最新发布的Forms加载项。
 
 * **FORMS-23717**&#x200B;升级到&#x200B;**AEM Forms6.5.24.0**&#x200B;后，`server.log`和`error.log`可能会泛洪为重复的警告消息，例如&#x200B;*安全解析器工厂创建失败*&#x200B;或&#x200B;*不支持安全属性……*。 日志可能会以每秒&#x200B;**5到10行**（每小时数百兆字节）的速度增长，这会填充磁盘并阻止生产转出。 **修复：**&#x200B;包含在AEM Forms **6.5.25.0**&#x200B;中。 **在此之前：**
 
   要减少日志卷，请在应用程序服务器配置中或通过JVM参数`com.adobe.util.XMLSecurityUtil`将`ERROR`的日志记录级别设置为`-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`。 这仅会隐藏消息，而不会修复根本原因。
+
+* **FORMS-23875**&#x200B;在表单数据模型搜索中，即使不存在相关实体，也会在UI中显示HTML标记。 要解决此问题，请从[链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip)下载并安装修补程序。
 
 ## 已包含的 OSGi 捆绑包和内容包{#osgi-bundles-and-content-packages-included}
 
@@ -729,6 +709,6 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
