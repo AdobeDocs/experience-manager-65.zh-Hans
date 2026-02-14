@@ -5,10 +5,10 @@ exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 30137e36b60c3ada70240e1442390f9fdd26f3b9
+source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
 workflow-type: tm+mt
-source-wordcount: '1771'
-ht-degree: 100%
+source-wordcount: '1834'
+ht-degree: 96%
 
 ---
 
@@ -34,6 +34,7 @@ Adobe 持续评估产品功能，并在长期演进中不断重塑或替换旧�
 
 | 区域 | 专题 | 替换 | 版本（SP） |
 |---|---|---|---|
+| Sites | AEM Assets REST API中的内容片段支持 | AEM 6.5 LTS SP2为内容片段和模型管理提供了现代化的OpenAPI，因此现已弃用AEM Assets REST API中的旧版内容片段支持端点。<br>Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe不计划为已弃用的端点提供进一步的增强功能。 | 6.5.24 |
 | Sites | [SPA 编辑器](/help/sites-developing/spa-editor-deprecation.md) | 针对 Headless 用例，请使用[通用编辑器](/help/sites-developing/universal-editor/introduction.md)进行可视化编辑，或使用[内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)进行基于表单的编辑。 | 6.5.23 |
 | Sites | **Adobe AEM 托管的轮询配置**&#x200B;服务：`com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | **Adobe AEM Analytics 报告 Sling 导入器**&#x200B;服务。参见《连接到 Adobe Analytics 并创建框架》——[配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | Adobe Experience Manager（AEM）中的 ActiveMQ。ActiveMQ 曾用于两个 AEM 发布实例之间的通信。 | Adobe 建议客户现在改为使用负载均衡器。 | 6.5.18.0 |
@@ -69,9 +70,9 @@ Adobe 持续评估产品功能，并在长期演进中不断重塑或替换旧�
 
 | 区域 | 专题 | 替换 | 版本（SP） |
 |--- |--- |--- |--- |
-| Commerce | AEM CIF Classic 已移除。 | 您应迁移至 [AEM CIF](/help/commerce/cif/migration.md)。如仍需使用 CIF Classic，Adobe 创建了一份兼容包，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)。 | 6.5.22.0 |
-| 与 [!DNL Experience Cloud] 集成 | 您可以通过 [!DNL Adobe I/O] 进行配置，将资产与 [!DNL Experience Cloud] 同步。[!DNL Adobe Experience Cloud] 之前称为 [!DNL Adobe Experience Cloud]。 | 如有任何问题，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)。 |  |
-| Analytics Activity Map | AEM 中包含的 Activity Map 版本。 | 由于 Adobe Analytics API 的安全性更改，AEM 内置的 Activity Map 版本已无法继续使用。请使用 [Adobe Analytics 提供的 ActivityMap 插件](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hans)。 |  |
+| Commerce | AEM CIF Classic 已移除。 | 您应迁移至 [AEM CIF](/help/commerce/cif/migration.md)。如仍需使用 CIF Classic，Adobe 创建了一份兼容包，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 | 6.5.22.0 |
+| 与 [!DNL Experience Cloud] 集成 | 您可以通过 [!DNL Adobe I/O] 进行配置，将资产与 [!DNL Experience Cloud] 同步。[!DNL Adobe Experience Cloud] 之前称为 [!DNL Adobe Experience Cloud]。 | 如有任何问题，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 |  |
+| Analytics Activity Map | AEM 中包含的 Activity Map 版本。 | 由于 Adobe Analytics API 的安全性更改，AEM 内置的 Activity Map 版本已无法继续使用。请使用 [Adobe Analytics 提供的 ActivityMap 插件](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)。 |  |
 | 集成 | ExactTarget 集成已从默认发行版（快速入门）中移除，且不再提供。 | 暂无替代方案。 |  |
 | 集成 | Salesforce Force API 集成已从默认发行版（快速入门）中移除，现在作为额外安装包提供，可从[软件分发平台](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)获取。 | 该功能仍然可用。 |  |
 | Forms | 对 Adobe Central Migration Bridge 服务的支持已移除，因为 Adobe Central 产品已不再受到支持。 | 暂无替代方案。 |  |
