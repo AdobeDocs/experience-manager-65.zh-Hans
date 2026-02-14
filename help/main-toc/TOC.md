@@ -1448,7 +1448,7 @@ ht-degree: 99%
          + 通用编辑器 {#universal-editor}
             + [简介](/help/sites-developing/universal-editor/introduction.md)
       + 混合和 SPA AEM 开发 {#spas}
-         + [使用 AEM 的混合和 SPA](https://business.adobe.com/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
+         + [使用 AEM 的混合和 SPA](https://business.adobe.com/cn/content/dam/dx/us/en/products/experience-manager/sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
          + [SPA 编辑器弃用](/help/sites-developing/spa-editor-deprecation.md)
          + [SPA 简介和演练](/help/sites-developing/spa-walkthrough.md)
          + [SPA WKND 教程](/help/sites-developing/spa-wknd.md)
