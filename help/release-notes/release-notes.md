@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 5a851bf013a4ef7e6097bf32bd3fa8fe4d635f28
+source-git-commit: 7fdfcc9964bccfea03304e6cae3b5569421720ed
 workflow-type: tm+mt
-source-wordcount: '9627'
+source-wordcount: '9628'
 ht-degree: 20%
 
 ---
@@ -557,7 +557,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -665,6 +665,8 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 以下问题已提供可下载并安装的热修复补丁：您可以通过[下载并安装热修复补丁](/help/release-notes/aem-forms-hotfix.md)来解决这些问题：
 
+<!--* **FORMS-23881** On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+
 * AEM Forms 现已将表单组件中的 Struts 版本从 2.5.33 升级至 6.x。此升级提供了以前未包含在SP24中的Struts更改。 相关支持已通过[热修复补丁](/help/release-notes/aem-forms-hotfix.md)提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。
 
 * **FORMS-14926**&#x200B;安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`文件夹下找到Geode jars `<AEM_Forms_Installation>/lib/caching/lib`的重复条目，请执行以下步骤，以解决该问题：
@@ -683,16 +685,18 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
    2. 删除名为 `com.adobe.granite.ui.commons-5.10.26.jar` 的捆绑包。
    3. 重新启动 AEM 服务器。
 
-* **FORMS-23703**&#x200B;如果未使用默认值配置`contains`规则时，自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
+* **FORMS-23703**&#x200B;如果未使用默认值配置`contains`规则时，自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
 
-* 表单数据模型连接器可能无法通过身份验证，因为默认情况下不允许所需的关键词和正则表达式模式。 要解决此问题，请通过Configuration Manager (`/system/console/configmgr`)添加以下内容：
+* **GRANITE-63681**&#x200B;表单数据模型连接器可能无法通过身份验证，因为默认情况下不允许使用所需的关键字和正则表达式模式。 要解决此问题，请从[链接](/help/release-notes/aem-forms-hotfix.md)下载并安装修补程序。
 
-   * **关键字：** `fdm-client-secret`，`oauth-client-secret`
-   * **正则表达式：** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
+  <!--To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
 
-     >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+  * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
+  * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
 
-* **FORMS-23979** HTML-PDF转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到[6.5.24.0的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)最新发布的Forms加载项。
+    >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
+
+* **FORMS-23979** HTML-PDF转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到[6.5.24.0的](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)最新发布的Forms加载项。
 
 * **FORMS-23717**&#x200B;升级到&#x200B;**AEM Forms6.5.24.0**&#x200B;后，`server.log`和`error.log`可能会泛洪为重复的警告消息，例如&#x200B;*安全解析器工厂创建失败*&#x200B;或&#x200B;*不支持安全属性……*。 日志可能会以每秒&#x200B;**5到10行**（每小时数百兆字节）的速度增长，这会填充磁盘并阻止生产转出。 **修复：**&#x200B;包含在AEM Forms **6.5.25.0**&#x200B;中。 **在此之前：**
 
@@ -716,6 +720,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
+
