@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 7fdfcc9964bccfea03304e6cae3b5569421720ed
+source-git-commit: 3e1f704d1d0e64deefe157338ab5081521a45c3c
 workflow-type: tm+mt
-source-wordcount: '9628'
+source-wordcount: '9855'
 ht-degree: 20%
 
 ---
@@ -557,7 +557,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -654,9 +654,12 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 * **FORMS-16557**&#x200B;在交互式通信代理UI的打印预览中，所有字段值的货币符号（如美元符号$）显示不一致。 对于最多999的值，它出现，但对于1000及更高版本的值则缺失。
 * **FORMS-16575**&#x200B;交互式通信中对嵌套布局片段XDP所做的任何修改都不会反映在IC编辑器中。
 * **FORMS-21378**&#x200B;启用服务器端验证(SSV)时，表单提交可能会失败。 如果遇到此问题，请联系 Adobe 支持部门寻求帮助。
+
 * **FORMS-23722**（分配任务中缺少文件附件）：如果将具有&#x200B;**文件附件**&#x200B;字段的使用bindref的表单提交到使用&#x200B;**分配任务**&#x200B;步骤的AEM工作流，则从收件箱打开任务时不会显示附件。 文件将正确地保存到存储库，但分配任务步骤UI无法显示附件。
 
-#### 可通过热修复补丁解决的问题 {#aem-forms-issues-with-hotfixes}
+* **FORMS-23802**（当表单位于站点页面中时不加载自定义函数）：当自适应表单嵌入到站点页面中，并且aem-forms-core-component库的版本低于1.1.76时，自定义函数在预览或发布中不起作用。您可能会在日志中看到错误，例如`InvalidFormContainerException: No form container found`。 要解决此问题，请[下载并安装适用于AEM Forms SP24 (AddOn 6.0.1454)的修补程序](/help/release-notes/aem-forms-hotfix.md)。
+
+#### 可用修补程序的已知问题 {#aem-forms-issues-with-hotfixes}
 
 <!-- 
 >[!NOTE]
@@ -665,7 +668,15 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 以下问题已提供可下载并安装的热修复补丁：您可以通过[下载并安装热修复补丁](/help/release-notes/aem-forms-hotfix.md)来解决这些问题：
 
-<!--* **FORMS-23881** On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+<!--* FORMS-23881 On AEM Forms JEE deployments set up using the 6.5.23.0 full installer, Output Service fails to process requests when a custom XCI file is supplied in the invocation. To resolve this issue, install the latest AEM 6.5.24.0 Forms Service Pack from the [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) portal.-->
+
+* **FORMS-23789**(仅限JEE上的AEM Forms)：用户在JEE SP24上的AEM Forms中遇到Log4j问题，导致企业客户的日志记录和监视出现中断。 要解决此问题，请在JEE Service Pack [上](/help/release-notes/aem-forms-hotfix.md)下载并安装适用于AEM Forms的修补程序6.5.24.0。
+
+* **FORMS-23802**&#x200B;当表单位于具有旧版aem-forms-core-component (&lt;1.1.76)的站点页面中时，在预览或发布中无法加载自定义函数。 要解决此问题，请安装适用于SP24的[AEM Forms附加组件修补程序6.0.1454](/help/release-notes/aem-forms-hotfix.md)。
+
+* **FORMS-23789**(仅限JEE上的AEM Forms)：用户在JEE SP24上的AEM Forms中遇到Log4j问题，导致企业客户的日志记录和监视出现中断。 要解决此问题，请在JEE Service Pack [上](/help/release-notes/aem-forms-hotfix.md)下载并安装适用于AEM Forms的修补程序6.5.24.0。
+
+* **FORMS-23802**&#x200B;当表单位于具有旧版aem-forms-core-component (&lt;1.1.76)的站点页面中时，在预览或发布中无法加载自定义函数。 要解决此问题，请安装适用于SP24的[AEM Forms附加组件修补程序6.0.1454](/help/release-notes/aem-forms-hotfix.md)。
 
 * AEM Forms 现已将表单组件中的 Struts 版本从 2.5.33 升级至 6.x。此升级提供了以前未包含在SP24中的Struts更改。 相关支持已通过[热修复补丁](/help/release-notes/aem-forms-hotfix.md)提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。
 
@@ -685,7 +696,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
    2. 删除名为 `com.adobe.granite.ui.commons-5.10.26.jar` 的捆绑包。
    3. 重新启动 AEM 服务器。
 
-* **FORMS-23703**&#x200B;如果未使用默认值配置`contains`规则时，自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
+* **FORMS-23703**&#x200B;如果未使用默认值配置`contains`规则时，自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
 
 * **GRANITE-63681**&#x200B;表单数据模型连接器可能无法通过身份验证，因为默认情况下不允许使用所需的关键字和正则表达式模式。 要解决此问题，请从[链接](/help/release-notes/aem-forms-hotfix.md)下载并安装修补程序。
 
@@ -696,11 +707,11 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
 
-* **FORMS-23979** HTML-PDF转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到[6.5.24.0的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)最新发布的Forms加载项。
+* **FORMS-23979** HTML-PDF转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到[6.5.24.0的](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)最新发布的Forms加载项。
 
-* **FORMS-23717**&#x200B;升级到&#x200B;**AEM Forms6.5.24.0**&#x200B;后，`server.log`和`error.log`可能会泛洪为重复的警告消息，例如&#x200B;*安全解析器工厂创建失败*&#x200B;或&#x200B;*不支持安全属性……*。 日志可能会以每秒&#x200B;**5到10行**（每小时数百兆字节）的速度增长，这会填充磁盘并阻止生产转出。 **修复：**&#x200B;包含在AEM Forms **6.5.25.0**&#x200B;中。 **在此之前：**
+* **FORMS-23717**&#x200B;升级到&#x200B;**AEM Forms6.5.24.0**&#x200B;后，`server.log`和`error.log`可能会泛洪为重复的警告消息，例如&#x200B;*安全解析器工厂创建失败*&#x200B;或&#x200B;*不支持安全属性……*。 日志可能会以每秒&#x200B;**5到10行**（每小时数百兆字节）的速度增长，这会填充磁盘并阻止生产转出。
 
-  要减少日志卷，请在应用程序服务器配置中或通过JVM参数`com.adobe.util.XMLSecurityUtil`将`ERROR`的日志记录级别设置为`-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`。 这仅会隐藏消息，而不会修复根本原因。
+要减少日志卷，请在应用程序服务器配置中或通过JVM参数`com.adobe.util.XMLSecurityUtil`将`ERROR`的日志记录级别设置为`-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`。 这仅会隐藏消息，而不会修复根本原因。
 
 * **FORMS-23875**&#x200B;在表单数据模型搜索中，即使不存在相关实体，也会在UI中显示HTML标记。 要解决此问题，请从[链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip)下载并安装修补程序。
 
@@ -720,7 +731,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
 
