@@ -4,10 +4,10 @@ description: 了解通用编辑器的灵活性，以及它如何帮助您在 AEM
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 9f91063e51aa599ef48967f832aa359ecf100fc2
-workflow-type: ht
-source-wordcount: '1183'
-ht-degree: 100%
+source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
+workflow-type: tm+mt
+source-wordcount: '1208'
+ht-degree: 96%
 
 ---
 
@@ -40,9 +40,9 @@ ht-degree: 100%
 通用编辑器受到以下环境支持：
 
 * AEM 6.5
-   * 支持本地部署和 AMS 托管。
+   * 支持内部部署和AMS*托管。
 * [AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
-   * 支持本地部署和 AMS 托管。
+   * 支持内部部署和AMS*托管。
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 本文档重点介绍 AEM 6.5 对通用编辑器的支持。要在 AEM 6.5 中使用通用编辑器，您需要：
@@ -50,6 +50,10 @@ ht-degree: 100%
 * 安装了服务包 23 或更高版本的 AEM 6.5
    * 服务包 21 和 22 也受支持，但需搭配[功能包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)使用。
 * 正确配置 Dispatcher
+
+>[!NOTE]
+>
+>*如果您使用Adobe Managed Services(AMS)，请联系CSE您的客户成功工程师(CSE)，以便使用通用编辑器。
 
 ## 设置 {#setup}
 
