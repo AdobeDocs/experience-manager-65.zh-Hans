@@ -557,7 +557,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -666,7 +666,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 以下问题已提供可下载并安装的热修复补丁：您可以通过[下载并安装热修复补丁](/help/release-notes/aem-forms-hotfix.md)来解决这些问题：
 
-* **FORMS-23881**&#x200B;在使用6.5.23.0完整安装程序设置的AEM Forms JEE部署上，在调用中提供自定义XCI文件时，输出服务无法处理请求。 若要解决此问题，请从6.5.24.0软件分发[门户安装最新的AEM ](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) Forms Service Pack。
+* **FORMS-23881**&#x200B;在使用6.5.23.0完整安装程序设置的AEM Forms JEE部署上，在调用中提供自定义XCI文件时，输出服务无法处理请求。 若要解决此问题，请从6.5.24.0软件分发[门户安装最新的AEM &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) Forms Service Pack。
 
 * **FORMS-23789**（仅限JEE上的AEM Forms）：用户在JEE SP24上的AEM Forms中遇到Log4j问题，导致企业客户的日志记录和监视出现中断。 要解决此问题，请在JEE Service Pack [上](/help/release-notes/aem-forms-hotfix.md)下载并安装适用于AEM Forms的修补程序6.5.24.0。
 
