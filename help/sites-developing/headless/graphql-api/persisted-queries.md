@@ -395,7 +395,7 @@ URL 可以划分为以下部分：
 
 ### 持久查询包
 
-可以将持久查询构建在[ AEM 程序包](/help/sites-administering/package-manager.md)中。然后，可以在不同的环境中下载和安装 AEM 包。AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
+可以将持久查询构建在[&#x200B; AEM 程序包](/help/sites-administering/package-manager.md)中。然后，可以在不同的环境中下载和安装 AEM 包。AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
 
 要创建包：
 
