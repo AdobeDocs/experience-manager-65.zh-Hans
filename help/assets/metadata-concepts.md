@@ -71,7 +71,7 @@ ht-degree: 7%
 
 ### XMP {#xmp}
 
-[!DNL Extensible Metadata Platform] (XMP)是[!DNL Experience Manager Assets]用于所有元数据管理的开放标准。 标准提供了可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司都支持XMP标准，因为它提供了丰富的内容模型。 XMP Standard和[!DNL Experience Manager Assets]的用户有一个强大的平台可以构建。 有关详细信息，请参阅[XMP](https://www.adobe.com/products/xmp.html)。
+[!DNL Extensible Metadata Platform] (XMP)是[!DNL Experience Manager Assets]用于所有元数据管理的开放标准。 标准提供了可嵌入到所有文件格式的通用元数据编码。 Adobe和其他公司都支持XMP标准，因为它提供了丰富的内容模型。 XMP Standard和[!DNL Experience Manager Assets]的用户有一个强大的平台可以构建。 有关详细信息，请参阅[XMP](https://www.adobe.com/cn/products/xmp.html)。
 
 ### ID3 {#id}
 

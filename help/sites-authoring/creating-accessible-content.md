@@ -235,7 +235,7 @@ The [W3C draft: HTML5 Techniques for providing useful text alternatives](https:/
 * [如何达到成功标准 1.2.3](https://www.w3.org/WAI/WCAG21/quickref/#audio-description-or-media-alternative-prerecorded)
 
 <!--
-* [Adobe Encore](https://www.adobe.com/products/encore.html) - a DVD authoring software tool
+* [Adobe Encore](https://www.adobe.com/cn/products/encore.html) - a DVD authoring software tool
 -->
 
 ### 字幕（实时）(1.2.4)  {#captions-live}

@@ -790,7 +790,7 @@ AEM Forms应用程序在以下平台上可用：
 ### Adobe Document Security Extension for Microsoft® Office {#adobe-rights-management-extension-for-microsoft-office}
 
 
-单击[此处](https://www.adobe.com/products/livecycle/rightsmanagement/extension/downloads.html)查看Adobe Document Security Extension for Microsoft® Office的系统要求。
+单击[此处](https://www.adobe.com/cn/products/livecycle/rightsmanagement/extension/downloads.html)查看Adobe Document Security Extension for Microsoft® Office的系统要求。
 
 
 ### 客户端支持的例外 {#exceptions-to-client-support}

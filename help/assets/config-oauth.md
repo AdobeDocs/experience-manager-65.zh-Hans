@@ -138,7 +138,7 @@ OAuth配置需要以下先决条件：
 
    >[!NOTE]
    >
-   >提供为[!UICONTROL 服务URL]的URL无法通过浏览器访问，并生成404错误。 使用[!UICONTROL 服务URL]参数的相同值时，配置工作正常。 有关整体服务状态和维护计划，请参阅[https://status.adobe.com](https://status.adobe.com)。
+   >提供为[!UICONTROL 服务URL]的URL无法通过浏览器访问，并生成404错误。 使用[!UICONTROL 服务URL]参数的相同值时，配置工作正常。 有关整体服务状态和维护计划，请参阅[https://status.adobe.com/zh-cn](https://status.adobe.com/zh-cn)。
 
 1. 单击&#x200B;**[!UICONTROL 下载OAuth集成的公共证书]**，然后下载公共证书文件`AEM-SmartTags.crt`。 此外，您不再需要在Adobe Developer控制台中上传此证书。
 
