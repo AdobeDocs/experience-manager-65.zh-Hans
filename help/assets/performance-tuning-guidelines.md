@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2721'
 ht-degree: 0%
 
 ---
@@ -221,7 +221,6 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 * 资源本身已修改
 * 将创建资源的版本
-* [!UICONTROL DAM更新资产]已针对该资产运行
 
 列出的结果消耗了相当多的资源。 因此，Adobe建议在不需要时禁用XMP写回。 有关详细信息，请参阅[XMP写回](/help/assets/xmp-writeback.md)。
 
@@ -243,7 +242,7 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 ## 搜索索引 {#search-indexes}
 
-安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)。
+安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)。
 
 为经常运行的查询创建自定义索引。 有关详细信息，请参阅用于分析慢查询[的](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)方法和[自定义索引](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的其他见解，请参阅[查询和索引最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 
@@ -309,4 +308,4 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 * 配置工作流和版本清除。
 * 使用最新的Service Pack和修补程序优化索引。 请联系Adobe客户支持，获取任何可能提供的其他索引优化。
 * 使用guessTotal优化查询性能。
-* 如果将[!DNL Experience Manager]配置为从文件内容中检测文件类型(通过在&#x200B;**[!UICONTROL AEM Web Console]**&#x200B;中启用&#x200B;**[!UICONTROL Day CQ DAM Mime Type Service]**)，请在非高峰时间批量上传许多文件，因为它占用大量资源。
+* 如果将[!DNL Experience Manager]配置为从文件内容中检测文件类型（通过在&#x200B;**[!UICONTROL AEM Web Console]**&#x200B;中启用&#x200B;**[!UICONTROL Day CQ DAM Mime Type Service]**），请在非高峰时间批量上传许多文件，因为它占用大量资源。
