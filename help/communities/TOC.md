@@ -65,7 +65,7 @@ ht-degree: 12%
    + [DSRP — 关系数据库存储资源提供程序](dsrp.md)
    + [用于DSRP的MySQL配置](dsrp-mysql.md)
    + [JSRP - JCR存储资源提供程序](jsrp.md)
-   + SRP的[Solr配置](solr.md)
+   + [SRP的Solr配置](solr.md)
    + [标记用户生成的内容](tag-ugc.md)
    + [翻译用户生成的内容](translate-ugc.md)
    + [Communities用户同步](sync.md)

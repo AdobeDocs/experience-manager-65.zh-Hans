@@ -494,7 +494,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>An application that circumvents the recommended access mechanisms (like Sling and the JCR API) and uses a lower-level API/SPI to access the repository and then exceeds the retention time of a segment. That is, it keeps a reference to an entity longer than the retention time allowed by the Online Revision Cleanup (24 hours by default). This case is transient and does not lead to data corruption. To recover, the oak-run tool should be used to confirm the transient nature of the exception (the oak-run check should not report any errors). To do this, the instance must be taken offline and restarted afterwards.</li>
      <li>An external event caused the corruption of the data on the disk. This can be a disk failure, out of disk space or an accidental modification of the required data files. In this case, the instance must be taken offline and repaired using the oak-run check. For more details on how to perform the oak-run check, read the following <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache documentation</a>.</li>
-     <li>Address all other occurrences through the <a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Adobe Customer Care</a>.</li>
+     <li>Address all other occurrences through the <a href="https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support" target="_blank">Adobe Customer Care</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>

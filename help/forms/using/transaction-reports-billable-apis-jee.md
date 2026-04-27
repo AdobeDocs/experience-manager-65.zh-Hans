@@ -30,7 +30,7 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
 
 -->
 
-以下是JEE可计费API列表。 在OSGi](/help/forms/using/transaction-reports-billable-apis.md)上查找AEM Forms的[可记帐API列表。
+以下是JEE可计费API列表。 在OSGi[&#128279;](/help/forms/using/transaction-reports-billable-apis.md)上查找AEM Forms的可记帐API列表。
 
 ## 可记帐文档服务API {#billable-document-services-apis}
 
