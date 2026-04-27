@@ -23,7 +23,7 @@ This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.a
 
 ## 关于本教程  {#about-the-tutorial}
 
-You can use themes to provide a unique appearance and style to an adaptive form. You can apply out-of-the-box themes provided with the adaptive forms editor or create custom themes of your own. AEM [!DNL Forms] provide a [theme editor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html) to create custom themes. A single theme can provide the different appearance to the same adaptive form opened on mobile, tablet, or desktop. Any prior knowledge of CSS or LESS is not required to use the theme editor, but it is desired.
+You can use themes to provide a unique appearance and style to an adaptive form. You can apply out-of-the-box themes provided with the adaptive forms editor or create custom themes of your own. AEM [!DNL Forms] provide a [theme editor](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/themes.html) to create custom themes. A single theme can provide the different appearance to the same adaptive form opened on mobile, tablet, or desktop. Any prior knowledge of CSS or LESS is not required to use the theme editor, but it is desired.
 
 By the end of the tutorial, you should be able to do the following:
 

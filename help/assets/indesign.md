@@ -25,7 +25,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]作为两个单独的产品提供。 [Adobe InDesign](https://www.adobe.com/products/indesign.html)桌面应用程序，用于为打印和数字分发设计页面布局。 [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)使您能够根据使用[!DNL InDesign]创建的内容，以编程方式创建自动文档。 它作为一项服务运行，为其ExtendScript引擎提供一个接口。 脚本以[!DNL ExtendScript]编写，它类似于[!DNL JavaScript]。
+>[!DNL Adobe InDesign]作为两个单独的产品提供。 [Adobe InDesign](https://www.adobe.com/cn/products/indesign.html)桌面应用程序，用于为打印和数字分发设计页面布局。 [Adobe InDesign Server](https://www.adobe.com/cn/products/indesignserver.html)使您能够根据使用[!DNL InDesign]创建的内容，以编程方式创建自动文档。 它作为一项服务运行，为其ExtendScript引擎提供一个接口。 脚本以[!DNL ExtendScript]编写，它类似于[!DNL JavaScript]。
 
 ## 提取的工作原理 {#how-the-extraction-works}
 
@@ -240,4 +240,4 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!MORELIKETHIS]
 >
->* [关于Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)
+>* [关于Adobe InDesign Server](https://www.adobe.com/cn/products/indesignserver/faq.html)

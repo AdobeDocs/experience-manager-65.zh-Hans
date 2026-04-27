@@ -24,7 +24,7 @@ ht-degree: 1%
 
 在AEM 6.3及更高版本中，引入了此功能的在线版本，称为“在线修订清理”。 与必须关闭AEM实例的脱机修订清理相比，在AEM实例处于联机状态时，可以运行联机修订清理。 默认情况下，“联机修订清理”处于打开状态，建议使用此方式执行修订清理。
 
-**注意**： [观看视频](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html)，了解如何使用联机修订清理。
+**注意**： [观看视频](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=zh-Hans)，了解如何使用联机修订清理。
 
 修订清理过程包括三个阶段：**估计**、**压缩**&#x200B;和&#x200B;**清理**。 估算根据可能收集到的垃圾量来确定是否运行下一阶段（压缩）。 在压缩阶段，区段和tar文件被重写，而没有任何未使用的内容。 然后，清理阶段将删除旧区段，包括这些区段可能包含的任何垃圾。 离线模式通常可以回收更多空间，因为在线模式必须考虑AEM的工作集，该工作集保留着不可收集的额外区段。
 
@@ -494,7 +494,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>An application that circumvents the recommended access mechanisms (like Sling and the JCR API) and uses a lower-level API/SPI to access the repository and then exceeds the retention time of a segment. That is, it keeps a reference to an entity longer than the retention time allowed by the Online Revision Cleanup (24 hours by default). This case is transient and does not lead to data corruption. To recover, the oak-run tool should be used to confirm the transient nature of the exception (the oak-run check should not report any errors). To do this, the instance must be taken offline and restarted afterwards.</li>
      <li>An external event caused the corruption of the data on the disk. This can be a disk failure, out of disk space or an accidental modification of the required data files. In this case, the instance must be taken offline and repaired using the oak-run check. For more details on how to perform the oak-run check, read the following <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache documentation</a>.</li>
-     <li>Address all other occurrences through the <a href="https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support" target="_blank">Adobe Customer Care</a>.</li>
+     <li>Address all other occurrences through the <a href="https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support" target="_blank">Adobe Customer Care</a>.</li>
     </ol> </td>
    <td> </td>
   </tr>
