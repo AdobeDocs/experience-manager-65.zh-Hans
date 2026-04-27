@@ -10,9 +10,9 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1398'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 这些规则可以包括添加元数据、智能裁剪图像或建立视频编码配置文件。 在Adobe Experience Manager中，您可以创建三种类型的用户档案，以下链接将详细介绍这些用户档案：
 
-* [元数据配置文件](/help/assets/metadata-config.md#metadata-profiles)
+* [元数据轮廓](/help/assets/metadata-config.md#metadata-profiles)
 * [图像配置文件](/help/assets/image-profiles.md)
 * [视频配置文件](/help/assets/video-profiles.md)
 
@@ -44,21 +44,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->仅在Experience Manager6.4.6.0或更高版本中适用于&#x200B;*Dynamic Media - Scene7模式*。
+>仅在Experience Manager 6.4.6.0或更高版本中适用于&#x200B;*Dynamic Media - Scene7模式*。
 
 如果文件夹已具有您后来更改的现有处理配置文件，您可以重新处理该文件夹中的资产。
 
-例如，假设您创建了一个图像配置文件并将其分配给一个文件夹。 您上传到文件夹的任何图像资产都会自动将图像配置文件应用于资产。 但是，稍后您决定为配置文件添加一个新的智能裁切比率。 现在，您只需运行&#x200B;*Dynamic Media重新处理* <!-- *Scene7: Reprocess Assets* -->工作流，而无需再次选择并重新将资源上传到文件夹。
+例如，假设您创建了一个图像配置文件并将其分配给一个文件夹。 您上传到文件夹的任何图像资产都会自动将图像配置文件应用于资产。 但是，稍后您决定为配置文件添加一个新的智能裁切比率。 现在，您只需运行&#x200B;*Dynamic Media重新处理* <!-- *Scene7: Reprocess Assets* -->工作流，而无需再次选择并将资产重新上传到文件夹。
 
 您可以对首次处理失败的资产运行重新处理工作流。 因此，即使您尚未编辑处理配置文件或未应用处理配置文件，您仍可以随时对资产的文件夹运行重新处理工作流。
 
-您可以选择将重新处理工作流的批大小从默认的50个资产调整到1000个资产。 在文件夹上运行&#x200B;_Scene7：重新处理Assets_&#x200B;工作流时，资产会分批分组，然后发送到Dynamic Media服务器进行处理。 处理之后，会在Experience Manager时更新整个批次集中每个资源的元数据。 如果批次大小很大，您可能会遇到处理延迟。 或者，如果批次大小太小，可能会导致到Dynamic Media服务器的往返次数过多。
+您可以选择将重新处理工作流的批大小从默认的50个资产调整到1000个资产。 在文件夹上运行&#x200B;_Scene7：重新处理Assets_&#x200B;工作流时，资产会分批分组，然后发送到Dynamic Media服务器进行处理。 处理之后，将在Experience Manager上更新整个批次集中每个资源的元数据。 如果批次大小很大，您可能会遇到处理延迟。 或者，如果批次大小太小，则可能会导致到Dynamic Media服务器的往返次数过多。
 
 请参阅[调整重新处理工作流的批次大小](#adjusting-load)。
 
 >[!NOTE]
 >
->如果您要将资源从Dynamic Media Classic批量迁移到Experience Manager，则必须在Dynamic Media服务器上启用迁移复制代理。 迁移完成后，请确保禁用代理。
+>如果执行从Dynamic Media Classic到Experience Manager的资源批量迁移，则必须在Dynamic Media服务器上启用迁移复制代理。 迁移完成后，请确保禁用代理。
 >
 >必须在Dynamic Media服务器上禁用迁移发布代理，以便重新处理工作流可按预期运行。
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 **要重新处理文件夹中的资源：**
 
-1. 在Assets页面的Experience Manager中，导航到已分配处理配置文件且要为其应用&#x200B;**[!UICONTROL Dynamic Media重新处理]**&#x200B;工作流的资产的文件夹，
+1. 在Experience Manager中，从Assets页面导航到已分配处理配置文件且要为其应用&#x200B;**[!UICONTROL Dynamic Media重新处理]**&#x200B;工作流的资源文件夹，
 
    在卡片视图中，如果文件夹已经分配了处理配置文件，则文件夹名称的正下方会显示配置文件的名称。
 
@@ -93,7 +93,7 @@ ht-degree: 0%
 
 ### 调整重新处理工作流的批次大小 {#adjusting-load}
 
-（可选）重新处理工作流中的默认批次大小是每个作业50个资产。 此最佳批次大小由平均资源大小以及运行重新处理的资源的MIME类型控制。 值越高，表示在单个重新处理作业中有多个文件。 因此，处理横幅会在Experience Manager资源上停留较长时间。 但是，如果平均文件大小较小（1 MB或更小），则Adobe建议将该值增加到几个100，但不能超过1000。 如果平均文件大小较大（如数百兆字节），Adobe建议您将批次大小降低到10。
+（可选）重新处理工作流中的默认批次大小是每个作业50个资产。 此最佳批次大小由平均资源大小以及运行重新处理的资源的MIME类型控制。 值越高，表示在单个重新处理作业中有多个文件。 因此，处理横幅会在Experience Manager资源上停留较长时间。 但是，如果平均文件大小较小（1 MB或更小），Adobe建议将该值增加到几个100，但不能超过1000。 如果平均文件大小较大（如数百MB），Adobe建议您将批次大小降低到10。
 
 **要选择性地调整重新处理工作流的批次大小：**
 
@@ -103,8 +103,8 @@ ht-degree: 0%
    在卡片视图中选择了Dynamic Media重新处理工作流的![工作流模型页面](/help/assets/assets-dm/reprocess-assets7.png)
 
 1. 在工具栏上，选择&#x200B;**[!UICONTROL 编辑]**。 新的浏览器选项卡将打开Dynamic Media重新处理工作流模型页面。
-1. 在“Dynamic Media重新处理工作流”页面的右上角附近，选择&#x200B;**[!UICONTROL 编辑]**&#x200B;以“解锁”该工作流。
-1. 在工作流中，选择Scene7批量上传组件以打开工具栏，然后在工具栏上选择&#x200B;**[!UICONTROL 配置]**。
+1. 在“Dynamic Media重新处理”工作流页面的右上角附近，选择&#x200B;**[!UICONTROL 编辑]**&#x200B;以“解锁”该工作流。
+1. 在工作流中，选择Scene7批量上传组件以打开工具栏，然后选择工具栏上的&#x200B;**[!UICONTROL 配置]**。
 
    ![Scene7批量上传组件](/help/assets/assets-dm/reprocess-assets8.png)
 
@@ -113,20 +113,21 @@ ht-degree: 0%
    * 如果您的处理程序将前进到下一步，请选择&#x200B;**[!UICONTROL 处理程序前进]**。
    * 在&#x200B;**[!UICONTROL 超时]**&#x200B;字段中，输入外部进程超时（秒）。
    * 在&#x200B;**[!UICONTROL 周期]**&#x200B;字段中，输入轮询间隔（秒），以测试外部进程的完成情况。
-   * 在&#x200B;**[!UICONTROL 批处理字段]**&#x200B;中，输入Dynamic Media服务器批处理上传作业中要处理的资源的最大数量(50-1000)。
+   * 在&#x200B;**[!UICONTROL 批处理字段]**&#x200B;中，输入Dynamic Media服务器批处理上传作业中要处理的资产最大数量(50-1000)。
    * 如果要在达到超时时前进，请选择&#x200B;**[!UICONTROL 在超时时前进]**。 如果要在达到超时时间时转至收件箱，请取消选择。
 
    ![属性对话框](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. 在&#x200B;**[!UICONTROL 批量上传至Scene7 — 步骤属性]**&#x200B;对话框的右上角，选择&#x200B;**[!UICONTROL 完成]**。
+1. 在&#x200B;**[!UICONTROL 批量上载到Scene7 — 步骤属性]**&#x200B;对话框的右上角，选择&#x200B;**[!UICONTROL 完成]**。
 
-1. 在“Dynamic Media重新处理工作流模型”页面的右上角，选择&#x200B;**[!UICONTROL 同步]**。 当您看到&#x200B;**[!UICONTROL 已同步]**&#x200B;时，工作流运行时模型已成功同步并准备好重新处理文件夹中的资产。
+1. 在Dynamic Media重新处理工作流模型页面的右上角，选择&#x200B;**[!UICONTROL 同步]**。 当您看到&#x200B;**[!UICONTROL 已同步]**&#x200B;时，工作流运行时模型已成功同步并准备好重新处理文件夹中的资产。
 
    ![同步工作流模型](/help/assets/assets-dm/reprocess-assets1.png)
 
 1. 关闭显示Dynamic Media重新处理工作流模型的浏览器选项卡。
 
-<!--1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
+<!--
+1. Return to the browser tab that has the open Workflow Models page, then press **Esc** to exit the selection.
 1. In the upper-left corner of the page, select **[!UICONTROL Adobe Experience Manager]** to access the global navigation console, then select the **[!UICONTROL Tools]** (hammer) icon > **[!UICONTROL General > CRXDE Lite]**.
 1. In the folder tree on the left side of the CRXDE Lite page, navigate to the following location:
 
@@ -144,4 +145,5 @@ ht-degree: 0%
 
 1. On the menu bar of the CRXDE Lite page, select **[!UICONTROL Save All]**.
 1. In the upper-left corner of the page, select **[!UICONTROL CRXDE Lite]** to return to the main Experience Manager console
-1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.-->
+1. Repeat steps 1-7 to re-synchronize the new batch size to the Dynamic Media Reprocess workflow model.
+-->

@@ -1,5 +1,5 @@
 ---
-title: 审核文件夹资源和收藏集
+title: 审核文件夹资产和收藏集
 description: 为文件夹或收藏集中的资产设置审阅工作流，并与审阅人或创意合作伙伴共享该工作流以征求反馈。
 contentOwner: AG
 feature: Collaboration, Collections
@@ -7,18 +7,18 @@ role: User
 exl-id: 23c90e10-aa03-450e-9fb0-2f5be0c5066b
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '808'
 ht-degree: 6%
 
 ---
 
-# 审核文件夹资源和收藏集 {#review-folder-assets-and-collections}
+# 审核文件夹资产和收藏集 {#review-folder-assets-and-collections}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/bulk-approval.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 为文件夹或收藏集中的资产设置审阅工作流，并与审阅人或创意合作伙伴共享该工作流以征求反馈。

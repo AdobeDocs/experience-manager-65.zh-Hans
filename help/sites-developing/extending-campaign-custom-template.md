@@ -1,5 +1,5 @@
 ---
-title: 使用Adobe Campaign表单组件创建自定义AEM页面模板
+title: 使用 Adobe Campaign 表单组件创建自定义 AEM 页面模板
 description: 构建使用Adobe Campaign表单组件的自定义页面模板
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,17 +10,17 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 index: false
-source-git-commit: 389d5fa8de320a7237fc8290992a33743b15db99
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 0%
+source-wordcount: '307'
+ht-degree: 9%
 
 ---
 
 
-# 使用Adobe Campaign表单组件创建自定义AEM页面模板{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
+# 使用 Adobe Campaign 表单组件创建自定义 AEM 页面模板{#creating-custom-aem-page-template-with-adobe-campaign-form-components}
 
-本页说明如何通过检查Geometrixx-outdoors模板([)的实施方式，生成使用](/help/sites-authoring/adobe-campaign-components.md)Adobe Campaign Form`/apps/geometrixx-outdoors/components/page_campaign_profile`组件的自定义页面模板，并指出创建自己的自定义模板时可能需要的重要信息。
+本页说明如何通过检查Geometrixx-outdoors模板(`/apps/geometrixx-outdoors/components/page_campaign_profile`)的实施方式，生成使用[Adobe Campaign Form](/help/sites-authoring/adobe-campaign-components.md)组件的自定义页面模板，并指出创建自己的自定义模板时可能需要的重要信息。
 
 >[!CAUTION]
 >
@@ -81,7 +81,7 @@ ht-degree: 0%
 
    在模板(`/apps/geometrixx-outdoors/templates/campaign_profile/jcr:content`)中，您会看到以下默认值：
 
-   | **acMapping** | mapRecipient(适用于Adobe Campaign 6.1)，profile(适用于Adobe Campaign Standard) |
+   | **acMapping** | mapRecipient（适用于Adobe Campaign 6.1），profile（适用于Adobe Campaign Standard） |
    |---|---|
    | **acTemplateId** | 邮件 |
 

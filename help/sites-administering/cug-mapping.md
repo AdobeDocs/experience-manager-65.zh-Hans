@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5中的自定义用户组映射
+title: AEM 6.5 中的自定义用户组映射
 description: 了解自定义用户组映射在Adobe Experience Manager中的工作方式。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '469'
-ht-degree: 0%
+source-wordcount: '468'
+ht-degree: 4%
 
 ---
 
-# AEM 6.5中的自定义用户组映射 {#custom-user-group-mapping-in-aem}
+# AEM 6.5 中的自定义用户组映射 {#custom-user-group-mapping-in-aem}
 
 ## 与CUG（自定义用户组）相关的JCR内容比较 {#comparison-of-jcr-content-related-to-cug}
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 **较旧的AEM版本**
 
-标签：AdobeGranite封闭用户组(CUG)支持
+标签：Adobe Granite封闭用户组(CUG)支持
 
 名称：com.day.cq.auth.impl.CugSupportImpl
 
@@ -74,7 +74,7 @@ ht-degree: 0%
   ConfigurationPolicy =必需
 
 * 名称：com.adobe.granite.auth.requirement.impl.RequirementService
-* 标签：AdobeGranite身份验证要求和登录路径处理程序
+* 标签：Adobe Granite身份验证要求和登录路径处理程序
 
   名称：com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler
 
@@ -91,14 +91,15 @@ ht-degree: 0%
 
   如果有特殊需求，可以插入自定义CugExclude实施。
 
-* 实施LoginPathProvider的OSGi组件公开与LoginSelectorHandler匹配的登录路径。 它具有对RequirementHandler的强制引用，用于注册观察者，该观察者通过granite：AuthenticationRequired mixin类型侦听内容中存储的已更改身份验证要求。
+* 实施LoginPathProvider的OSGi组件公开与LoginSelectorHandler匹配的登录路径。 它具有对一个RequirementHandler的强制引用，用于注册观察器，该观察器侦听通过granite:AuthenticationRequired mixin类型存储在内容中的已更改身份验证要求。
 * 实施RequirementHandler的OSGi组件将authenticator更改通知给SlingAuthenticator。
 
   由于此组件的配置策略是REQUIRE，因此只有在指定了一组受支持的路径时才激活它。
 
   启用服务将启动RequirementService。
 
-<!-- nested tables not supported - text above is the table>
+<!--
+nested tables not supported - text above is the table>
 <table>
  <tbody>
   <tr>

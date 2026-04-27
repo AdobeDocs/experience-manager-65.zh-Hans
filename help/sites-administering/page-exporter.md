@@ -1,18 +1,18 @@
 ---
-title: 页面导出程序
+title: 页面导出器
 description: 了解如何使用Adobe Experience Manager (AEM)页面导出程序。
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '997'
-ht-degree: 0%
+source-wordcount: '1060'
+ht-degree: 1%
 
 ---
 
-# 页面导出程序{#the-page-exporter}
+# 页面导出器{#the-page-exporter}
 
 Adobe Experience Manager (AEM)允许您将页面导出为包括图像、`.js`和`.css`文件的完整网页。
 
@@ -37,18 +37,18 @@ Adobe Experience Manager (AEM)允许您将页面导出为包括图像、`.js`和
 
 1. 选择&#x200B;**高级**&#x200B;选项卡。
 
-1. 展开&#x200B;**导出**&#x200B;字段以选择导出模板。
-为您的站点选择所需的模板，然后使用&#x200B;**确定**&#x200B;进行确认。
+1. 展开&#x200B;**导出**字段以选择导出模板。
+为您的站点选择所需的模板，然后使用**确定**&#x200B;进行确认。
 
 1. 选择&#x200B;**保存并关闭**&#x200B;以关闭页面属性对话框。
 
 1. 请求导出页面，在URL中将后缀`html`替换为`export.zip`。
 
    例如：
-   * localhost：4502/content/we-retail/language-masters/en.html
+   * localhost:4502/content/we-retail/language-masters/en.html
 
    访问方式：
-   * localhost：4502/content/we-retail/language-masters/en.export.zip
+   * localhost:4502/content/we-retail/language-masters/en.export.zip
 
 1. 将存档文件下载到您的文件系统。
 
@@ -87,7 +87,7 @@ Adobe Experience Manager (AEM)允许您将页面导出为包括图像、`.js`和
 
 要创建全新的模板，请执行以下操作：
 
-1. 在&#x200B;**CRXDE Lite**&#x200B;中，在`/etc/contentsync/templates`下创建节点：
+1. 在&#x200B;**CRXDE Lite**&#x200B;中，在`/etc/contentsync/templates`下创建一个节点：
 
    * `Name`：适用于您的网站的名称；例如，`<mysite>`。 选择页面导出程序模板时，该名称将显示在页面属性对话框中。
 
@@ -110,7 +110,8 @@ Adobe Experience Manager (AEM)允许您将页面导出为包括图像、`.js`和
 
 模板由节点结构组成，因为它使用[Content Sync框架](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html)。 每个节点都有一个`type`属性，该属性定义了zip文件创建过程中的特定操作。
 
-<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
+<!--
+For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 以下节点可用于构建导出模板：
@@ -180,7 +181,8 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 为了满足某些特定要求，请实施[自定义更新处理程序](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html)。
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
+<!--
+To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## 以编程方式导出页面 {#programmatically-exporting-a-page}

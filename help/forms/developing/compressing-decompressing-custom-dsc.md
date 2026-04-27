@@ -5,14 +5,14 @@ exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '482'
-ht-degree: 0%
+source-wordcount: '486'
+ht-degree: 2%
 
 ---
 
-# 在JEE自定义DSC中使用AEM Forms压缩和解压缩文件 {#compressing-decompressing-files}
+# 使用 JEE 上的 AEM Forms 自定义 DSC 压缩和解压文件 {#compressing-decompressing-files}
 
 ## 必备知识 {#prerequisites}
 
@@ -26,7 +26,7 @@ Java™编辑器，如[Eclipse](https://www.eclipse.org/)或[Netbeans IDE](https
 
 中间
 
-通过JEE上的AEM Forms，开发人员可以创建自定义ASC(Acrobat服务容器)，以创建扩充的开箱即用功能。 创建此类组件可插入JEE运行时环境的AEM Forms，并且符合预期目的。 本文介绍如何创建自定义ZIP服务，该服务可用于将文件列表压缩为.zip文件，并将.zip解压缩为文档列表。
+通过JEE上的AEM Forms，开发人员可以创建自定义ASC（Acrobat服务容器），以创建扩充的开箱即用功能。 创建此类组件可插入JEE运行时环境的AEM Forms，并且符合预期目的。 本文介绍如何创建自定义ZIP服务，该服务可用于将文件列表压缩为.zip文件，并将.zip解压缩为文档列表。
 
 ## 创建自定义ASC组件 {#create-custom-dsc-component}
 
@@ -142,9 +142,11 @@ component.xml文件如下所示：
 
 <!-- Start of the Service definition -->
    <services>
-<!-- Unique name for service descriptor.
+<!--
+Unique name for service descriptor.
            The value is used as the default name for
-           deployed services -->
+           deployed services
+           -->
       <service name="ZipService">
 <!-- service implementation class definition -->
         <implementation-class>nith.lces2.dsc.ZIPService</implementation-class>
@@ -218,7 +220,7 @@ component.xml文件如下所示：
 
 * 查找给定文件夹中的所有文件，并将文件作为压缩文档返回。
 
-* 提供包含多个PDF文档的ZIP文件，在解压缩文档后可以扩展这些文档。 这需要AEM Forms on JEEReader扩展模块。
+* 提供包含多个PDF文档的ZIP文件，在解压缩这些文档后，可对其进行读取扩展。 这需要AEM Forms on JEE Reader扩展模块。
 
 * 提供包含异类文档的ZIP文件，可使用生成PDF服务将此类文档解压缩并转换为PDF文档。
 

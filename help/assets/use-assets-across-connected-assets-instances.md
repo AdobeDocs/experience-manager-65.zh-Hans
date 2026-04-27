@@ -8,9 +8,9 @@ feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '3909'
+source-wordcount: '4019'
 ht-degree: 15%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 15%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 
-在大型企业中，可以分发创建网站所需的基础环境。有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。一个原因可能是地理上分散但需要协同工作的现有部署。 另一个原因可能是并购导致基础架构存在差异，包括母公司希望一起使用的不同[!DNL Experience Manager]版本。
+在大型企业中，可以分发创建网站所需的基础环境。 有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。 一个原因可能是地理上分散但需要协同工作的现有部署。 另一个原因可能是并购导致基础架构存在差异，包括母公司希望一起使用的不同[!DNL Experience Manager]版本。
 
 通过集成[!DNL Experience Manager Sites]和[!DNL Experience Manager Assets]，“连接的Assets”功能支持上述用例。 用户可以在[!DNL Sites]中创建使用来自单独[!DNL Assets]部署的数字资产的网页。
 
@@ -33,7 +33,7 @@ ht-degree: 15%
 
 ## 连接的Assets概述 {#overview-of-connected-assets}
 
-在[!UICONTROL 页面编辑器]中作为目标目标目标位置编辑页面时，作者可以从作为资产源的其他[!DNL Assets]部署中无缝搜索、浏览和嵌入资产。 管理员创建具有[!DNL Sites]功能的[!DNL Experience Manager]的部署与具有[!DNL Assets]功能的[!DNL Experience Manager]的另一个部署的一次性集成。 站点作者还可以通过Connected Assets在其站点的网页中使用Dynamic Media图像，并使用Dynamic Media功能，如智能裁切和图像预设。
+在[!UICONTROL 页面编辑器]中作为目标目标目标位置编辑页面时，作者可以从作为资产源的其他[!DNL Assets]部署中无缝搜索、浏览和嵌入资产。 管理员创建具有[!DNL Sites]功能的[!DNL Experience Manager]的部署与具有[!DNL Assets]功能的[!DNL Experience Manager]的另一个部署的一次性集成。 站点作者还可以通过Connected Assets在其网站的网页中使用Dynamic Media图像，并使用Dynamic Media功能，如智能裁切和图像预设。
 
 对于[!DNL Sites]作者，远程资产可用作只读本地资产。 该功能支持在站点编辑器中无缝搜索和访问远程资产。 对于可能要求在站点上提供完整资产语料的任何其他用例，请考虑批量迁移资产，而不是使用“连接的Assets”。 请参阅[Experience Manager Assets迁移指南](/help/assets/assets-migration-guide.md)。
 
@@ -42,12 +42,12 @@ ht-degree: 15%
 在使用或配置此功能之前，请确保：
 
 * 用户是每个部署中相应用户组的一部分。
-* 对于[!DNL Adobe Experience Manager]部署类型，满足一个支持的条件。 [!DNL Experience Manager] 6.5 [!DNL Assets]与[!DNL Experience Manager]as a Cloud Service配合使用。 有关此功能如何在[!DNL Experience Manager]中作为[!DNL Cloud Service]使用的更多信息，请参阅Experience Manageras a Cloud Service[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=zh-Hans)中的连接的Assets。
+* 对于[!DNL Adobe Experience Manager]部署类型，满足一个支持的条件。[!DNL Experience Manager] 6.5 [!DNL Assets]与[!DNL Experience Manager] as a Cloud Service一起使用。 有关此功能如何在[!DNL Experience Manager]中作为[!DNL Cloud Service]使用的更多信息，请参阅[Experience Manager as a Cloud Service中的Assets连接](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html)。
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS上的[!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites]内部部署 |
   |---|---|---|---|
   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 支持 | 支持 | 支持 |
-  | AMS **上的**&#x200B;[!DNL Experience Manager] 6.5 [!DNL Assets] | 支持 | 支持 | 支持 |
+  | AMS **上的**[!DNL Experience Manager] 6.5 [!DNL Assets] | 支持 | 支持 | 支持 |
   | **[!DNL Experience Manager]6.5 [!DNL Assets]内部部署** | 不支持 | 不支持 | 不支持 |
 
 ### 支持的文件格式 {#mimetypes}
@@ -59,7 +59,7 @@ ht-degree: 15%
 
 ### 涉及的用户和组 {#users-and-groups-involved}
 
-下面介绍了配置和使用该功能所涉及的各种角色，及其相应的用户组。对于作者创建网页的用例，使用本地范围。 对于托管所需资产的 DAM 部署，使用远程范围。[!DNL Sites]作者获取这些远程资产。
+下面介绍了配置和使用该功能所涉及的各种角色，及其相应的用户组。 对于作者创建网页的用例，使用本地范围。 对于托管所需资产的 DAM 部署，使用远程范围。 [!DNL Sites]作者获取这些远程资产。
 
 | 角色 | 范围 | 用户组 | 演示中的用户名 | 描述 |
 |---|---|---|---|---|
@@ -72,7 +72,7 @@ ht-degree: 15%
 
 ### 连接的Assets架构 {#connected-assets-architecture}
 
-Experience Manager允许您将远程DAM部署作为源连接到多个Experience Manager[!DNL Sites]部署。 但是，您只能将[!DNL Sites]部署与一个远程DAM部署连接。
+通过Experience Manager，您可以将远程DAM部署作为源连接到多个Experience Manager [!DNL Sites]部署。 但是，您只能将[!DNL Sites]部署与一个远程DAM部署连接。
 
 评估连接到远程DAM部署的最佳站点实例数量。 Adobe建议将Sites实例增量连接到部署，并测试远程DAM上的性能不会受到影响，因为每个连接的Sites实例都会贡献远程DAM上的数据流量。
 
@@ -93,7 +93,6 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 1. 访问现有[!DNL Sites]部署或使用以下命令创建部署：
 
    1. 在JAR文件的文件夹中，在终端上执行以下命令以创建每个[!DNL Experience Manager]服务器。
-
       `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. 几分钟后，[!DNL Experience Manager]服务器成功启动。 将此[!DNL Sites]部署视为用于网页创作的本地计算机，例如`https://[local_sites]:4502`。
@@ -105,7 +104,7 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
    1. 配置的&#x200B;**[!UICONTROL 标题]**。
    1. **[!UICONTROL 远程DAM URL]**&#x200B;是[!DNL Assets]位置的URL，格式为`https://[assets_servername]:[port]`。
    1. DAM 分发人员（技术用户）的凭据。
-   1. 在&#x200B;**[!UICONTROL 装入点]**&#x200B;字段中，输入[!DNL Experience Manager]获取资产的本地[!DNL Experience Manager]路径。 例如，`remoteassets`文件夹。 从DAM获取的资产存储在[!DNL Sites]部署的此文件夹中。
+   1. 在&#x200B;**[!UICONTROL 装入点]**&#x200B;字段中，输入[!DNL Experience Manager]获取资产的本地[!DNL Experience Manager]路径。 例如，`remoteassets` 文件夹。 从DAM获取的资产存储在[!DNL Sites]部署的此文件夹中。
    1. **[!UICONTROL 本地站点URL]**&#x200B;是[!DNL Sites]部署的位置。 [!DNL Assets]部署使用此值维护对此[!DNL Sites]部署获取的数字资产的引用。
    1. [!DNL Sites]技术用户的凭据。
    1. **[!UICONTROL 原始二进制传输优化阈值]**&#x200B;字段的值指定是否同步传输原始资产（包括演绎版）。 具有较小文件大小的Assets可以轻松获取，而文件大小相对较大的资源最好进行异步同步。 该值取决于您的网络功能。
@@ -133,27 +132,27 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
    >[!NOTE]
    >
-   >在作者获取资产时，将会获取远程部署中可用的所有演绎版。 如果要为获取的资产创建更多演绎版，请跳过此配置步骤。触发[!UICONTROL DAM更新资产]工作流并创建更多演绎版。 这些演绎版仅在本地[!DNL Sites]部署中可用，在远程DAM部署中不可用。
+   >在作者获取资产时，将会获取远程部署中可用的所有演绎版。 如果要为获取的资产创建更多演绎版，请跳过此配置步骤。 触发[!UICONTROL DAM更新资产]工作流并创建更多演绎版。 这些演绎版仅在本地[!DNL Sites]部署中可用，在远程DAM部署中不可用。
 
-1. 在[!DNL Assets]部署的CORS配置中将[!DNL Sites]部署添加为允许的源。 有关详细信息，请参阅[了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hans)。
+1. 在[!DNL Assets]部署的CORS配置中将[!DNL Sites]部署添加为允许的源。 有关详细信息，请参阅[了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)。
 
 1. 配置[相同站点Cookie支持](/help/sites-administering/same-site-cookie-support.md)。
 
 您可以检查配置的[!DNL Sites]部署和[!DNL Assets]部署之间的连接。
 
-已配置![连接的Assets的连接测试[!DNL Sites]](assets/connected-assets-multiple-config.png)
+已配置![连接的Assets的连接测试 [!DNL Sites]](assets/connected-assets-multiple-config.png)
 *图：连接的Assets的连接测试配置了[!DNL Sites]。*
 
 ## 使用Dynamic Media资源 {#dynamic-media-assets}
 
 
-通过连接的Assets，您可以使用[!DNL Dynamic Media]从站点页面上的远程DAM部署处理的图像资源，并使用Dynamic Media功能，如智能裁切和图像预设。
+通过连接的Assets，您可以使用由站点页面上远程DAM部署的[!DNL Dynamic Media]处理的图像资源，并使用Dynamic Media功能，如智能裁切和图像预设。
 
 要将[!DNL Dynamic Media]与连接的Assets一起使用：
 
 1. 在启用了同步模式的远程DAM部署上配置[!DNL Dynamic Media]。
 1. 配置[连接的Assets](#configure-a-connection-between-sites-and-assets-deployments)。
-1. 使用在远程DAM上配置的相同公司名称在站点实例上配置[!DNL Dynamic Media]。 Sites部署必须对Dynamic Media帐户具有只读访问权限，才能使用连接的资源。 因此，请确保在站点实例的Dynamic Media配置中禁用同步模式。
+1. 使用在远程DAM上配置的相同公司名称在站点实例上配置[!DNL Dynamic Media]。 Sites部署必须对Dynamic Media帐户具有只读访问权限，才能使用连接的资产。 因此，请确保在Sites实例上的Dynamic Media配置中禁用同步模式。
 
 >[!CAUTION]
 >
@@ -164,7 +163,7 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 要在[!DNL Assets]和[!DNL Sites]部署中配置[!DNL Dynamic Media]，请执行以下操作：
 
 1. 在远程[!DNL Assets]作者部署上启用[!DNL Dynamic Media]并将其配置为全局配置。 要配置Dynamic Media，请参阅[配置Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)。
-在远程[!DNL Assets]部署中，在[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认启用]**。
+在远程[!DNL Assets]部署的[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认启用]**。
 
 1. 创建连接的Assets配置，如[配置站点与资源部署之间的连接](#configure-a-connection-between-sites-and-assets-deployments)中所述。 此外，选择&#x200B;**[!UICONTROL 为Dynamic Media连接的Assets获取原始演绎版]**&#x200B;选项。
 
@@ -172,31 +171,31 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
    * 在所有配置中使用相同的公司名称。
    * 在本地[!DNL Sites]上，在[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认情况下已禁用]**。 [!DNL Sites]部署必须对[!DNL Dynamic Media]帐户具有只读访问权限。
-   * 在本地[!DNL Sites]上的&#x200B;**[!UICONTROL Publish Assets]**&#x200B;选项中，选择&#x200B;**[!UICONTROL 选择性Publish]**。 不要选择&#x200B;**[!UICONTROL 同步所有内容]**。
+   * 在本地[!DNL Sites]上的&#x200B;**[!UICONTROL 发布Assets]**&#x200B;选项中，选择&#x200B;**[!UICONTROL 选择性发布]**。 不要选择&#x200B;**[!UICONTROL 同步所有内容]**。
 
-1. 在图像核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=zh-Hans#dynamic-media)中启用[!DNL Dynamic Media] 支持。 此功能允许当作者在本地[!DNL Sites]部署的网页中使用[!DNL Dynamic Media]个图像时，默认的[图像组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)显示[!DNL Dynamic Media]个图像。
+1. 在图像核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)中启用[[!DNL Dynamic Media] 支持。 此功能允许当作者在本地[!DNL Sites]部署的网页中使用[!DNL Dynamic Media]个图像时，默认的[图像组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)显示[!DNL Dynamic Media]个图像。
 
 ## 使用远程资产 {#use-remote-assets}
 
-网站作者使用内容查找器连接到DAM部署。 作者可以浏览、搜索以及拖动组件中的远程资产。要验证远程DAM，请准备好管理员提供的凭据（如果有）。
+网站作者使用内容查找器连接到DAM部署。 作者可以浏览、搜索以及拖动组件中的远程资产。 要验证远程DAM，请准备好管理员提供的凭据（如果有）。
 
 作者可以在单个网页中使用本地DAM和远程DAM部署上可用的资产。 使用内容查找器，可在搜索本地 DAM 与搜索远程 DAM 之间切换。
 
-仅获取那些具有完全对应的标记以及相同分类层次结构（在本地[!DNL Sites]部署中可用）的远程资产标记。 任何其他标记都将被丢弃。作者可以使用远程[!DNL Experience Manager]部署中存在的所有标记搜索远程资产，因为它提供全文搜索。
+仅获取那些具有完全对应的标记以及相同分类层次结构（在本地[!DNL Sites]部署中可用）的远程资产标记。 任何其他标记都将被丢弃。 作者可以使用远程[!DNL Experience Manager]部署中存在的所有标记搜索远程资产，因为它提供全文搜索。
 
 ### 使用说明演示 {#walk-through-of-usage}
 
-使用上述设置尝试创作体验，以了解该功能是如何运作的。使用您在远程 DAM 部署中选择的文档或图像。
+使用上述设置尝试创作体验，以了解该功能是如何运作的。 使用您在远程 DAM 部署中选择的文档或图像。
 
-1. 通过从[!DNL Experience Manager]工作区访问&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**，导航到远程部署上的[!DNL Assets]界面。 或者，也可以在浏览器中访问 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。上传您选择的资产。
+1. 通过从[!DNL Experience Manager]工作区访问&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**，导航到远程部署上的[!DNL Assets]界面。 或者，也可以在浏览器中访问 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。 上传您选择的资产。
 1. 在[!DNL Sites]部署上，在右上角的配置文件激活器中单击&#x200B;**[!UICONTROL 模拟为]**。 提供 `ksaner` 作为用户名，选择提供的选项，然后单击&#x200B;**[!UICONTROL 确定]**。
-1. 打开 We.Retail 网页：**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**。编辑页面。或者，也可以在浏览器中访问 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` 以编辑页面。
+1. 打开 We.Retail 网页：**[!UICONTROL Sites]** > **[!UICONTROL We.Retail]** > **[!UICONTROL us]** > **[!UICONTROL en]**。 编辑页面。 或者，也可以在浏览器中访问 `https://[aem_server]:[port]/editor.html/content/we-retail/us/en/men.html` 以编辑页面。
 
    单击页面左上角的&#x200B;**[!UICONTROL 切换侧面板]**。
 
 1. 打开[!UICONTROL Assets]选项卡（远程内容查找器），然后单击&#x200B;**[!UICONTROL 登录到连接的Assets]**。
-1. 提供凭据 -- `ksaner` 作为用户名，`password` 作为密码。此用户对[!DNL Experience Manager]部署都具有创作权限。
-1. 搜索您添加到 DAM 的资产。远程资产会显示在左侧面板中。筛选图像或文档，并进一步筛选支持的文档类型。拖动 `Image` 组件上的图像和 `Download` 组件上的文档。
+1. 提供凭据 -- `ksaner` 作为用户名，`password` 作为密码。 此用户对[!DNL Experience Manager]部署都具有创作权限。
+1. 搜索您添加到 DAM 的资产。 远程资产会显示在左侧面板中。 筛选图像或文档，并进一步筛选支持的文档类型。 拖动 `Image` 组件上的图像和 `Download` 组件上的文档。
 
    获取的资产在本地[!DNL Sites]部署上是只读的。 您仍然可以使用[!DNL Sites]组件提供的选项来编辑获取的资产。 通过组件进行的编辑是无损的。
 
@@ -210,7 +209,7 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
    *图：关于在后台进行的异步获取资产的通知。*
 
-1. 发布页面时，[!DNL Experience Manager]显示页面上使用的资产的完整列表。 请确保在发布时成功获取了远程资产。要检查每个获取的资产的状态，请参阅[异步作业](/help/sites-administering/asynchronous-jobs.md)用户界面。
+1. 发布页面时，[!DNL Experience Manager]显示页面上使用的资产的完整列表。 请确保在发布时成功获取了远程资产。 要检查每个获取的资产的状态，请参阅[异步作业](/help/sites-administering/asynchronous-jobs.md)用户界面。
 
    >[!NOTE]
    >
@@ -277,7 +276,7 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
 +++
 
-+++**配置“连接的Dynamic Media”后，能否使用[!DNL Sites]部署中的Assets资源？**
++++**配置“连接的Assets”后，能否使用[!DNL Sites]部署中的Dynamic Media资源？**
 
 配置“连接的Assets”后，[!DNL Dynamic Media]资源在只读模式下可在[!DNL Sites]部署中使用。 因此，无法使用[!DNL Dynamic Media]处理[!DNL Sites]部署中的资产。 有关详细信息，请参阅[在Sites和Dynamic Media部署之间配置连接](#dynamic-media-assets)。
 
@@ -295,15 +294,15 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
 +++
 
-+++**配置“连接的Dynamic Media”后，能否在[!DNL Sites]部署上使用来自远程DAM部署的Assets资源？**
++++**配置“连接的Assets”后，能否在[!DNL Sites]部署上使用远程DAM部署中的Dynamic Media资源？**
 
-是，您可以在配置“连接的Dynamic Media”后，在[!DNL Sites]部署上从远程DAM部署配置并使用Assets图像资产。 有关详细信息，请参阅[在Sites和Dynamic Media部署之间配置连接](#dynamic-media-assets)。
+是，您可以在配置“连接的Assets”后，在[!DNL Sites]部署上从远程DAM部署配置并使用Dynamic Media图像资产。 有关详细信息，请参阅[在Sites和Dynamic Media部署之间配置连接](#dynamic-media-assets)。
 
 +++
 
 +++**配置“连接的Assets”后，能否对远程DAM资源或文件夹执行更新、删除、重命名和移动操作？**
 
-是，在配置“连接的Assets”后，您可以对远程DAM资源或文件夹执行更新、删除、重命名和移动操作。 更新会在Sites部署中自动提供，但会有一些延迟。 有关详细信息，请参阅[管理远程DAM中资产的更新](#handling-updates-to-remote-assets)。
+是，在配置“连接的Assets”后，您可以对远程DAM资源或文件夹执行更新、删除、重命名和移动操作。 相关更新会在 Sites 部署中自动提供，但会有一些延迟。 有关详细信息，请参阅[管理远程DAM中资产的更新](#handling-updates-to-remote-assets)。
 
 +++
 
@@ -317,17 +316,17 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
 * 要获取有关资源使用情况的见解，请在[!DNL Sites]实例上配置[Assets Insight](/help/assets/asset-insights.md)功能。
 
-* 无法将远程资产拖到[图像组件“配置”对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hans#configure-dialog)上。 但是，您无需单击&#x200B;**[!UICONTROL 配置]**，即可将远程资产直接拖到“站点”页面上的图像组件中。
+* 无法将远程资产拖到[图像组件“配置”对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog)上。 但是，您无需单击&#x200B;**[!UICONTROL 配置]**，即可将远程资产直接拖到“站点”页面上的图像组件中。
 
 ### 权限和资产管理 {#permissions-and-managing-assets}
 
-* 本地资产是只读副本。[!DNL Experience Manager]个组件对资源进行无损编辑。 不允许进行其他编辑。
-* 本地获取的资产只能用于创作。不能应用资产更新工作流，也不能编辑元数据。
-* 仅支持图像和列出的文档格式。不支持[!DNL Content Fragments]和[!DNL Experience Fragments]。
+* 本地资产是只读副本。 [!DNL Experience Manager]个组件对资源进行无损编辑。 不允许进行其他编辑。
+* 本地获取的资产只能用于创作。 不能应用资产更新工作流，也不能编辑元数据。
+* 仅支持图像和列出的文档格式。 不支持[!DNL Content Fragments]和[!DNL Experience Fragments]。
 * [!DNL Experience Manager]未获取元数据架构。 这意味着可能无法显示所有获取的元数据。 如果在[!DNL Sites]部署中单独更新架构，则会显示所有元数据属性。
 * 所有[!DNL Sites]作者都拥有对获取的副本的读取权限，即使作者无法访问远程DAM部署。
 * 没有支持自定义集成的 API。
-* 该功能支持无缝搜索和使用远程资产。为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。请参阅 [Assets 迁移指南](assets-migration-guide.md)。
+* 该功能支持无缝搜索和使用远程资产。 为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。 请参阅 [Assets 迁移指南](assets-migration-guide.md)。
 * 无法在[!UICONTROL 页面属性]用户界面上将远程资产用作页面缩略图。 您可以从[!UICONTROL 缩略图]的[!UICONTROL 页面属性]用户界面中设置网页的缩略图，方法是单击[!UICONTROL 选择图像]。
 
 ### 设置和许可 {#setup-licensing}
@@ -340,7 +339,7 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 ### 用途 {#usage}
 
 * 用户可以在创作时搜索远程资产并将这些资产拖动到本地页面上。 不支持其他功能。
-* 获取操作会在 5 秒后超时。作者在获取资产时可能会遇到问题，比如，网络问题。作者可以通过将远程资产从[!UICONTROL 内容查找器]拖到[!UICONTROL 页面编辑器]来重新尝试。
+* 获取操作会在 5 秒后超时。 作者在获取资产时可能会遇到问题，比如，网络问题。 作者可以通过将远程资产从[!UICONTROL 内容查找器]拖到[!UICONTROL 页面编辑器]来重新尝试。
 * 可以对获取的资产执行无损的简单编辑以及通过`Image`组件支持的编辑。 资产是只读的。
 * 重新获取资产的唯一方法是将其拖动到页面上。 没有API支持或其他方法可重新获取资产以对其进行更新。
 * 如果从DAM中停用资产，则这些资产将继续在[!DNL Sites]页面上使用。
@@ -358,7 +357,7 @@ Experience Manager允许您将远程DAM部署作为源连接到多个Experience 
 
   在无痕模式下Chrome浏览器中出现![Cookie错误](assets/chrome-cookies-incognito-dialog.png)
 
-* 如果您无法从Managed Servicesas a Cloud Service站点Adobe访问Experience Manager Sites远程DAM部署，请更新位于`"/etc/httpd/conf.d/available_vhosts`的`aem_author.vhost`文件，以便远程DAM在Dispatcher配置中包含以下标头：
+* 如果您无法从Adobe Managed Services Sites部署访问Experience Manager Sites as a Cloud Service远程DAM部署，请更新位于`"/etc/httpd/conf.d/available_vhosts`的`aem_author.vhost`文件，以便远程DAM在Dispatcher配置中包含以下标头：
 
   ```xml
   Header Set Access-Control-Allow-Origin <Local Sites instance host>

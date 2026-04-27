@@ -11,17 +11,17 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '1127'
-ht-degree: 4%
+source-wordcount: '1169'
+ht-degree: 6%
 
 ---
 
 
 # AEM中的SPA快速入门 — React{#getting-started-with-spas-in-aem-react}
 
-单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。为此，开发人员希望能够使用SPA框架构建站点，而创作者则希望能够在AEM中顺畅地为使用SPA框架构建的站点编辑内容。
+单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。 为此，开发人员希望能够使用SPA框架构建站点，而创作者则希望能够在AEM中顺畅地为使用SPA框架构建的站点编辑内容。
 
 SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA。 本文介绍了在React框架上开发的简化SPA应用程序，并说明它是如何进行组合，允许您快速启动并运行自己的SPA。
 
@@ -121,7 +121,7 @@ module.exports = {
 
 ### AEM 项目原型 {#aem-project-archetype}
 
-任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ## 应用程序结构 {#application-structure}
 

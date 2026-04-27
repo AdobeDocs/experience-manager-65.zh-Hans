@@ -1,15 +1,15 @@
 ---
 title: 简介 [!DNL Adobe Experience Manager Assets]
-description: 在 Experience Manager 中创建、管理、处理和分发数字资产。这些指南介绍了最佳实践、辅助功能以及如何使用 AEM 6.5 资源。
+description: 在 Experience Manager 中创建、管理、处理和分发数字资产。 这些指南介绍了最佳实践、辅助功能以及如何使用 AEM 6.5 资源。
 hide: true
 feature: Asset Management
 role: Leader, Developer, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 4%
+source-wordcount: '924'
+ht-degree: 5%
 
 ---
 
@@ -27,7 +27,7 @@ AEM [!DNL Assets]是一种数字资源管理(DAM)工具，它是[!DNL Experience
 
 [!DNL Assets]提供组织关键数字资产的企业范围共享和分发。 组织内的用户可以通过Web界面（或CIFS或WebDAV文件夹）存储、管理和访问数字资产，如图像、图形、音频、视频和文档。
 
-[!DNL Assets]的[!DNL Experience Manager]功能允许您执行以下操作：
+[!DNL Experience Manager]的[!DNL Assets]功能允许您执行以下操作：
 
 * 添加和共享各种文件格式的图像、文档、音频文件和视频文件。
 * 通过按标记、灯箱或星星（您的收藏夹）对资源进行分组来管理资源。 向资产添加注释。
@@ -75,7 +75,7 @@ AEM [!DNL Assets]是一种数字资源管理(DAM)工具，它是[!DNL Experience
 
 * **演绎版**：演绎版是资产的二进制表示形式。 [!DNL Assets]始终具有主要表示形式 — 已上传文件的表示形式。 它们可以具有任意数量的其他表示法，这些表示法是例如通过自定义工作流步骤在上传资产时创建的。 演绎版可以具有不同的尺寸、不同的分辨率、添加的水印或某些其他变化的特征。
 
-* **版本**：版本控制功能在特定时间点创建数字资源的快照。 您可以将资源还原到以前的版本。 查看[中的 [!DNL Assets]](manage-assets.md#asset-versioning)版本控制。
+* **版本**：版本控制功能在特定时间点创建数字资源的快照。 您可以将资源还原到以前的版本。 查看 [!DNL Assets]](manage-assets.md#asset-versioning)中的[版本控制。
 
 * **子资产**：子资产是构成资产的资产，例如[!DNL Adobe Photoshop]文件中的图层或PDF文件中的页面。 在[!DNL Assets]中，您可以像管理资产一样管理子资产。
 

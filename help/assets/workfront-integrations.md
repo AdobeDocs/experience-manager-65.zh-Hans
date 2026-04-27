@@ -6,10 +6,10 @@ feature: Workfront Integrations and Apps
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1113'
-ht-degree: 7%
+source-wordcount: '1190'
+ht-degree: 8%
 
 ---
 
@@ -17,12 +17,12 @@ ht-degree: 7%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | 本文 |
 
-[!DNL Adobe Workfront]是一个工作管理应用程序，它帮助您在一个地方管理整个工作生命周期。 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 的集成，通过将工作管理与数字资产管理深度融合，帮助组织提升内容产出效率并加快产品上市速度。在 Workfront 的工作管理环境中，用户可以访问所需的文档和图像。
+[!DNL Adobe Workfront]是一个工作管理应用程序，它帮助您在一个地方管理整个工作生命周期。 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 的集成，通过将工作管理与数字资产管理深度融合，帮助组织提升内容产出效率并加快产品上市速度。 在 Workfront 的工作管理环境中，用户可以访问所需的文档和图像。
 
-[!DNL Workfront for Experience Manager enhanced connector]支持具有端到端工作流的增强业务流程，并提供个性化的端到端客户端体验和中央存储。 Adobe提供了一个标准连接器和一个增强型连接器，用于集成这两个解决方案。 查看以下支持的功能以进行比较，并查看[&#x200B; [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)中的新增功能。
+[!DNL Workfront for Experience Manager enhanced connector]支持具有端到端工作流的增强业务流程，并提供个性化的端到端客户端体验和中央存储。 Adobe提供了一个标准连接器和一个增强型连接器，用于集成这两个解决方案。 查看以下支持的功能以进行比较，并查看[ [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)中的新增功能。
 
 [!DNL Workfront for Experience Manage enhanced connector]使您的组织能够：
 
@@ -36,11 +36,11 @@ ht-degree: 7%
 
 >[!IMPORTANT]
 >
->* Adobe仅需要通过认证合作伙伴或[!DNL Adobe Workfront for Experience Manager enhanced connector]来部署和配置[!DNL Adobe Professional Services]。 如果未使用认证合作伙伴或[!DNL Adobe Professional Services]进行部署和配置，则Adobe不支持该功能。
+>* Adobe仅需要通过认证合作伙伴或[!DNL Adobe Professional Services]来部署和配置[!DNL Adobe Workfront for Experience Manager enhanced connector]。 如果未使用认证合作伙伴或[!DNL Adobe Professional Services]进行部署和配置，则Adobe不支持该功能。
 >
 >* Adobe可能会发布对[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此连接器冗余；如果发生这种情况，客户可能需要从使用此连接器过渡。
 >
->* Adobe支持增强型连接器版本1.7.4及更高版本。 不支持以前的预发行版和自定义版本。 要检查增强型连接器版本，请导航到`digital.hoodoo`包管理器[的左窗格中可用的](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)组。
+>* Adobe支持增强型连接器版本1.7.4及更高版本。 不支持以前的预发行版和自定义版本。 要检查增强型连接器版本，请导航到[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en)的左窗格中可用的`digital.hoodoo`组。
 >
 >* 查看Experience Manager Assets增强型连接器的[Workfront合作伙伴认证考试](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)。 有关考试的信息，请参阅[考试指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)。
 
@@ -61,7 +61,7 @@ ht-degree: 7%
 | 在Workfront中搜索AEM文件夹 | Workfront中的AEM Assets选择器允许全文搜索文件夹。 | ✓ | ✓ | ✓ |
 | 在Workfront中查看和导航AEM文件夹层次结构 | Workfront中的AEM Assets选择器允许浏览受限制的AEM Assets层级。   用户在AEM中设置的关联访问控制和权限。 | ✓ | ✓ | ✓ |
 | 在AEM时间线中跟踪资源版本 | 维护Workfront和AEM之间的文档版本历史记录。 | ✓ | ✓ | ✓ |
-| 在Workfront中从AEM Assets取消Assets的链接 | 可以取消关联AEMWorkfront文档中的现有链接资源的链接。 这不会删除AEM中的原始资源。 | ✓ | ✓ | ✓ |
+| 在Workfront中从AEM Assets取消Assets的链接 | 可以取消关联AEM文档中的现有链接资源的链接。 这不会删除AEM中的原始资源。 | ✓ | ✓ | ✓ |
 | 将新版本化的资源从Workfront添加到AEM Assets | 在Workfront的文档中添加新添加的版本时，用户可以向AEM发送新版本以替换现有版本。 | ✓ | ✓ | ✓ |
 | 单击直接用户访问AEM时Workfront中链接的Assets | 用户将被定向到AEM，以便在Workfront中预览链接的资源。 | ✓ | ✓ | 近期 |
 | 在Workfront中自动创建链接的AEM文件夹 | 使用项目状态在Workfront中自动创建链接的AEM文件夹。 可根据AEM项目组合、程序和项目自动配置Workfront文件夹。 | 否 | ✓ | 否 |

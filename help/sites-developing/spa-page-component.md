@@ -11,10 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '707'
-ht-degree: 6%
+source-wordcount: '718'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 6%
 
 ## 简介 {#introduction}
 
-SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HTML元素。 此操作将委派给 SPA 框架。子组件的表示形式作为JSON数据结构（即模型）获取。 然后，根据提供的JSON模型将SPA组件添加到页面。 因此，页面组件初始正文构成不同于其预渲染的HTML对应正文。
+SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HTML元素。 此操作将委派给 SPA 框架。 子组件的表示形式作为JSON数据结构（即模型）获取。 然后，根据提供的JSON模型将SPA组件添加到页面。 因此，页面组件初始正文构成不同于其预渲染的HTML对应正文。
 
 ## 页面模型管理 {#page-model-management}
 
@@ -42,7 +42,7 @@ SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HT
 
 ## 通信数据类型 {#communication-data-type}
 
-通信数据类型是使用`data-cq-datatype`属性在AEM Page组件中设置的HTML元素。 当通信数据类型设置为JSON时，GET请求会命中组件的Sling模型端点。 在页面编辑器中执行更新后，已更新组件的 JSON 表示形式将发送到页面模型库。然后，页面模型库会向SPA发出更新警告。
+通信数据类型是使用`data-cq-datatype`属性在AEM Page组件中设置的HTML元素。 当通信数据类型设置为JSON时，GET请求会命中组件的Sling模型端点。 在页面编辑器中执行更新后，已更新组件的 JSON 表示形式将发送到页面模型库。 然后，页面模型库会向SPA发出更新警告。
 
 **SPA页面组件 —`body.html`**
 
@@ -92,7 +92,7 @@ SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HT
 >
 >本文档仅将We.Retail日志应用程序用于演示目的。 请勿用于任何项目工作。
 >
->任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用React或Angular的SPA项目，并使用SPA SDK。AEM上的所有SPA项目都应基于Maven Archetype for SPA Starter Kit。
+>任何AEM项目都应使用[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用React或Angular的SPA项目，并使用SPA SDK。AEM上的所有SPA项目都应基于Maven Archetype for SPA Starter Kit。
 
 ## 页面编辑器叠加同步 {#page-editor-overlay-synchronization}
 
@@ -100,7 +100,7 @@ SPA的页面组件不通过JSP或HTL文件和资源对象提供其子组件的HT
 
 ## Sling模型JSON导出结构配置 {#sling-model-json-exported-structure-configuration}
 
-启用路由功能后，会假设在SPA的JSON导出中包含应用程序的不同路由(这归功于AEM导航组件的JSON导出)。 AEM导航组件的JSON输出可通过以下两个属性在SPA的根页面内容策略中进行配置：
+启用路由功能后，会假设在SPA的JSON导出中包含应用程序的不同路由（这归功于AEM导航组件的JSON导出）。 AEM导航组件的JSON输出可通过以下两个属性在SPA的根页面内容策略中进行配置：
 
 * `structureDepth`：与导出的树深度对应的数字
 * `structurePatterns`：与要导出的页面对应的正则表达式数组的正则表达式

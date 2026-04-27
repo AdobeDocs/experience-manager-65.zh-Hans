@@ -7,9 +7,9 @@ feature: Asset Management,Asset Reports
 exl-id: a403d60e-2193-4835-8f37-4a40f2d01819
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '190'
 ht-degree: 0%
 
 ---
@@ -31,4 +31,4 @@ ht-degree: 0%
 >[!MORELIKETHIS]
 >
 >* [复制现有存储库中的资产（社区成员的教程）](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
->* [在AEM as a Cloud Service中检测重复资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html?lang=zh-Hans)
+>* [在AEM as a Cloud Service中检测重复资源](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/detect-duplicate-assets.html)

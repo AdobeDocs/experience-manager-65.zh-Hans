@@ -1,5 +1,5 @@
 ---
-title: 引用自适应表单片段
+title: 参考自适应表单片段
 description: AEM Forms提供了自适应表单片段，您可以将其用作资源来快速创建表单。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,18 +8,18 @@ exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 1%
+source-wordcount: '399'
+ht-degree: 3%
 
 ---
 
-# 引用自适应表单片段{#reference-adaptive-form-fragments}
+# 参考自适应表单片段{#reference-adaptive-form-fragments}
 
 [自适应表单片段](../../forms/using/adaptive-form-fragments.md)是一组字段，或包含可在创建表单时使用的一组字段的面板。 它可让您轻松快速地创建表单。 您可以使用侧边栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单编辑器中编辑该表单片段。
 
-对于自适应表单作者，[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)中提供了参考片段。 它包括以下片段：
+对于自适应表单作者，[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)中提供了参考片段。 它包括以下片段：
 
 * 地址
 * 联系信息
@@ -42,9 +42,11 @@ ht-degree: 1%
 
 ![地址片段](assets/address.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/address-1.png)-->
+](assets/address-1.png)
+-->
 
 ## 联系信息 {#contact-information}
 
@@ -52,9 +54,11 @@ ht-degree: 1%
 
 ![联系人信息片段](assets/contact-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/contact-info-1.png)-->
+](assets/contact-info-1.png)
+-->
 
 ## 信用卡信息 {#credit-card-information}
 
@@ -67,9 +71,11 @@ ht-degree: 1%
 
 ![当前雇用片段](assets/current-emp.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/current-emp-1.png)-->
+](assets/current-emp-1.png)
+-->
 
 ## 依赖项信息 {#dependents-information}
 
@@ -77,9 +83,11 @@ ht-degree: 1%
 
 ![依赖项信息片段](assets/dependents-info.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/dependents-info-1.png)-->
+](assets/dependents-info-1.png)
+-->
 
 ## 雇用历史记录 {#employment-history}
 
@@ -87,9 +95,11 @@ ht-degree: 1%
 
 ![雇用历史记录片段](assets/emp-history.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/emp-history-1.png)-->
+](assets/emp-history-1.png)
+-->
 
 ## 收入和支出 {#income-expenditure}
 
@@ -97,9 +107,11 @@ ht-degree: 1%
 
 ![收入和支出片段](assets/income.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/income-1.png)-->
+](assets/income-1.png)
+-->
 
 ## 名称 {#name}
 
@@ -107,9 +119,11 @@ ht-degree: 1%
 
 ![名称片段](assets/name.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/name-1.png)-->
+](assets/name-1.png)
+-->
 
 ## 条款和条件 {#terms-conditions}
 
@@ -117,9 +131,11 @@ ht-degree: 1%
 
 ![条款和条件片段](assets/tnc.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-1.png)-->
+](assets/tnc-1.png)
+-->
 
 ## 带涂鸦的条款和条件 {#terms-conditions-with-scribble}
 
@@ -127,6 +143,8 @@ ht-degree: 1%
 
 ![涂鸦条款和条件](assets/tnc-scribble.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tnc-scribble-1.png)-->
+](assets/tnc-scribble-1.png)
+-->

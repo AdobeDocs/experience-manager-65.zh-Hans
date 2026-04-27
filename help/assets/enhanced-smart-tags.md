@@ -7,10 +7,10 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1581'
-ht-degree: 1%
+source-wordcount: '1611'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 处理数字资产的组织越来越多地在资产元数据中使用分类控制的词汇。 本质上，它包括员工、合作伙伴和客户通常用于引用和搜索特定类的数字资产的关键字列表。 使用分类控制的词汇标记资产可确保轻松识别和检索资产。
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 培训标记并准备就绪后，该服务现在可以通过标记工作流将这些标记应用于资产。
 
-在后台，智能内容服务使用Adobe AI框架根据您的标记结构和业务分类培训其图像识别算法。 然后，此内容智能可用于将相关标记应用到其他资产集。
+在后台，智能内容服务使用Adobe AI框架根据您的标记结构和业务分类培训其图像识别算法。 随后，该内容智能可用于为另一组资产自动应用相关标记。
 
 智能内容服务是托管在[!DNL Adobe Developer Console]上的云服务。 若要在[!DNL Adobe Experience Manager]中使用它，系统管理员必须将您的[!DNL Experience Manager]部署与[!DNL Adobe Developer Console]集成。
 
@@ -200,4 +200,4 @@ ht-degree: 1%
 >* [概述以及如何培训智能标记](enhanced-smart-tags.md)
 >* [配置智能标记](config-smart-tagging.md)
 >* [OAuth凭据的智能标记疑难解答](config-oauth.md)
->* [有关智能标记的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hans)
+>* [有关智能标记的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

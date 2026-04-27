@@ -8,10 +8,10 @@ feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '2183'
-ht-degree: 14%
+source-wordcount: '2199'
+ht-degree: 15%
 
 ---
 
@@ -19,14 +19,14 @@ ht-degree: 14%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=en) |
 | AEM 6.5 | 本文 |
 
-收藏集是[!DNL Adobe Experience Manager Assets]中的一组资源。 使用收藏集可在用户之间共享资源。集合可以是静态集合或基于搜索结果的动态集合。
+收藏集是[!DNL Adobe Experience Manager Assets]中的一组资源。 使用收藏集可在用户之间共享资产。 集合可以是静态集合或基于搜索结果的动态集合。
 
-收藏集与文件夹的不同之处是可包含来自不同位置的资源。您可以与分配了不同级别权限（包括查看、编辑等）的各种用户共享收藏集。
+收藏集与文件夹的不同之处是可包含来自不同位置的资产。 您可以与分配了不同级别权限（包括查看、编辑等）的各种用户共享收藏集。
 
-您可以与一个用户共享多个收藏集。每个收藏集都包含对资源的引用。收藏集中会保持资源的引用完整性。
+您可以与一个用户共享多个收藏集。 每个收藏集都包含对资产的引用。 收藏集中会保持资产的引用完整性。
 
 根据收藏集整理资产的方式，这些收藏集属于以下类型：
 
@@ -47,9 +47,9 @@ ht-degree: 14%
 您可以创建具有静态引用的集合，例如，具有对资产、文件夹、集合、旋转集和图像集的引用的集合。
 
 1. 导航到&#x200B;**[!UICONTROL 收藏集]**&#x200B;控制台。
-1. 在工具栏中，单击&#x200B;**[!UICONTROL 创建]**。
+1. 在工具栏点击&#x200B;**[!UICONTROL 创建]**。
 1. 在&#x200B;**[!UICONTROL 创建收藏集]**&#x200B;页面中，输入收藏集的标题和可选描述。
-1. 向收藏集添加成员并分配相应的权限。或者，选择&#x200B;**[!UICONTROL 公共收藏集]**，以允许所有用户访问该收藏集。
+1. 向收藏集添加成员并分配相应的权限。 或者，选择&#x200B;**[!UICONTROL 公共收藏集]**，以允许所有用户访问该收藏集。
 
    >[!NOTE]
    >
@@ -69,7 +69,7 @@ ht-degree: 14%
 您可以将资产从[!DNL Assets]用户界面拖至收藏集。 您还可以创建收藏集的副本，并将资产拖到该处。
 
 1. 从[!DNL Assets]用户界面中，选择要添加到收藏集的资产。
-1. 将资源拖到收藏集&#x200B;**区域中的**&#x200B;拖放位置。 或者，单击工具栏中的&#x200B;**[!UICONTROL 到收藏集]**。
+1. 将资源拖到收藏集&#x200B;]**区域中的**[!UICONTROL &#x200B;拖放位置。 或者，单击工具栏中的&#x200B;**[!UICONTROL 到收藏集]**。
 
    ![drop_in_collection](assets/drop_in_collection.png)
 
@@ -77,7 +77,7 @@ ht-degree: 14%
 
    如果要将资源添加到现有收藏集，请从页面中选择它，然后单击&#x200B;**[!UICONTROL 添加]**。 默认情况下，将选择最近更新的集合。
 
-1. 在&#x200B;**[!UICONTROL 创建新收藏集]**&#x200B;对话框中，指定收藏集的名称。如果希望所有用户都可以访问该收藏集，请选择&#x200B;**[!UICONTROL 公共收藏集]**。
+1. 在&#x200B;**[!UICONTROL 创建新收藏集]**&#x200B;对话框中，指定收藏集的名称。 如果希望所有用户都可以访问该收藏集，请选择&#x200B;**[!UICONTROL 公共收藏集]**。
 1. 单击&#x200B;**[!UICONTROL 继续]**&#x200B;以创建集合。
 
 ### 创建智能收藏集 {#creating-a-smart-collection}
@@ -117,7 +117,7 @@ ht-degree: 14%
 您可以将资源添加到包含引用的资源或文件夹列表的收藏集。 智能收藏集使用搜索查询来填充资源。 因此，对资源和文件夹的静态引用不适用于它们。
 
 1. 在[!DNL A]资产用户界面中，选择资产并单击工具栏中的&#x200B;**[!UICONTROL 到收藏集]** ![添加到收藏集](assets/do-not-localize/add-to-collection.png)。
-或者，您可以将资产拖到界面上的&#x200B;**[!UICONTROL 拖放到收藏集]**&#x200B;区域。 当区域的标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时添加资源。
+或者，您可以将资产拖到界面上的**[!UICONTROL 拖放到收藏集]**&#x200B;区域。 当区域的标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时添加资源。
 
 1. 在&#x200B;**[!UICONTROL 添加到收藏集]**&#x200B;页面中，选择要将资产添加到的收藏集。
 
@@ -130,7 +130,7 @@ ht-degree: 14%
 1. 在[!DNL Assets]用户界面中，单击工具栏中的搜索选项![搜索选项](assets/do-not-localize/search_icon.png)。
 1. 将光标置于Omnisearch框中，选择`Return`键。
 1. 在[!DNL Experience Manager]界面中，打开“筛选器”面板。
-1. 从&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表中，选择要修改的智能收藏集。“搜索”面板显示为保存的搜索配置的过滤器。
+1. 从&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表中，选择要修改的智能收藏集。 “搜索”面板显示为保存的搜索配置的过滤器。
 
    ![select_smart_collection](assets/select_smart_collection.png)
 
@@ -141,7 +141,7 @@ ht-degree: 14%
 
    ![edit_smart_collectiondialog](assets/edit_smart_collectiondialog.png)
 
-1. 单击&#x200B;**[!UICONTROL 保存]**。出现&#x200B;**[!UICONTROL 编辑智能收藏集]**&#x200B;对话框。
+1. 单击&#x200B;**[!UICONTROL 保存]**。 出现&#x200B;**[!UICONTROL 编辑智能收藏集]**&#x200B;对话框。
 1. 单击&#x200B;**[!UICONTROL 覆盖]**&#x200B;将原始智能收藏集替换为已编辑的收藏集。 或者，选择&#x200B;**[!UICONTROL 另存为]**&#x200B;以单独保存编辑后的收藏集。
 1. 在确认对话框中，单击&#x200B;**[!UICONTROL 保存]**&#x200B;以完成该过程。
 
@@ -168,7 +168,7 @@ ht-degree: 14%
    >* 在列表顶部，选中&#x200B;**[!UICONTROL 标题]**&#x200B;附近的复选框，以在选择收藏集和清除列表之间切换。
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 保存并关闭]**，然后关闭确认对话框。
-1. 要将新元数据附加到现有元数据，请选择&#x200B;**[!UICONTROL 附加模式]**。 如果不选中此选项，则新元数据将替换字段中的现有元数据。单击&#x200B;**[!UICONTROL “提交”。]**
+1. 要将新元数据附加到现有元数据，请选择&#x200B;**[!UICONTROL 附加模式]**。 如果不选中此选项，则新元数据将替换字段中的现有元数据。 单击&#x200B;**[!UICONTROL “提交”。]**
 
    >[!NOTE]
    >
@@ -178,7 +178,7 @@ ht-degree: 14%
 
 >[!TIP]
 >
->批量编辑方法适用于收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索[&#128279;](/help/assets/search-assets.md#metadataupdates)后批量更新元数据。
+>批量编辑方法适用于收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索](/help/assets/search-assets.md#metadataupdates)后[批量更新元数据。
 
 ## 搜索收藏集 {#searching-collections}
 
@@ -186,7 +186,7 @@ ht-degree: 14%
 
 如果从顶级搜索收藏集，则搜索结果中只返回单个收藏集。 排除收藏集中的[!DNL Assets]个或文件夹。 在所有其他情况下（例如，在单个收藏集内或文件夹层次结构中），将返回所有相关资产、文件夹和收藏集。
 
-## 在收藏集中搜索 {#searching-within-collections}
+## 在收藏集内搜索 {#searching-within-collections}
 
 在“收藏集”控制台中，单击某个收藏集以将其打开。
 
@@ -197,7 +197,7 @@ ht-degree: 14%
 您可以编辑收藏集设置（如标题和描述），也可以将成员添加到收藏集。
 
 1. 选择一个收藏集，然后单击工具栏中的&#x200B;**[!UICONTROL 设置]**。 或者，使用收藏集缩略图中的&#x200B;**[!UICONTROL 设置]**&#x200B;快速操作。
-1. 在&#x200B;**[!UICONTROL 收藏集设置]**&#x200B;页面中修改收藏集设置。例如，按照[添加收藏集](#creating-a-collection)中所述修改收藏集标题、描述、成员和权限。
+1. 在&#x200B;**[!UICONTROL 收藏集设置]**&#x200B;页面中修改收藏集设置。 例如，按照[添加收藏集](#creating-a-collection)中所述修改收藏集标题、描述、成员和权限。
 
 1. 要保存更改，请单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -233,7 +233,7 @@ ht-degree: 14%
    >
    >默认情况下，**[!UICONTROL 添加到收藏集]**&#x200B;页面中会选择最近更新的收藏集。
 
-1. 单击&#x200B;**[!UICONTROL 添加]**。有一条消息确认该集合已添加到&#x200B;**[!UICONTROL 选择目标]**&#x200B;页的目标集合中。 关闭消息以完成该过程。
+1. 单击&#x200B;**[!UICONTROL 添加]**。 有一条消息确认该集合已添加到&#x200B;**[!UICONTROL 选择目标]**&#x200B;页的目标集合中。 关闭消息以完成该过程。
 
 >[!NOTE]
 >
@@ -245,7 +245,7 @@ ht-degree: 14%
 
 ![saved_searches_list](assets/saved_searches_list.png)
 
-创建智能收藏集时将创建保存的搜索。智能收藏集会自动添加到&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表。收藏集的[!UICONTROL 保存的搜索]查询保存在CRXDE中相对位置`/content/dam/collections/`的`dam:query`属性中。 您可以保存的搜索以及列表中显示的已保存搜索没有限制。
+创建智能收藏集时将创建保存的搜索。 智能收藏集会自动添加到&#x200B;**[!UICONTROL 保存的搜索]**&#x200B;列表。 收藏集的[!UICONTROL 保存的搜索]查询保存在CRXDE中相对位置`/content/dam/collections/`的`dam:query`属性中。 您可以保存的搜索以及列表中显示的已保存搜索没有限制。
 
 >[!NOTE]
 >
@@ -270,7 +270,7 @@ ht-degree: 14%
 
 1. 打开&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 收藏集]**。 要在特定收藏集上执行工作流，请选择该收藏集。
 1. 打开&#x200B;**[!UICONTROL 时间轴]**&#x200B;边栏。 单击![向上V形](assets/do-not-localize/chevron-up-icon.png)，然后单击&#x200B;**[!UICONTROL 启动工作流]**。
-1. 在&#x200B;**[!UICONTROL 启动工作流]**&#x200B;部分，从列表中选择工作流模型。例如，选择 **[!UICONTROL DAM 更新资产]**&#x200B;模型。
+1. 在&#x200B;**[!UICONTROL 启动工作流]**&#x200B;部分，从列表中选择工作流模型。 例如，选择 **[!UICONTROL DAM 更新资产]**&#x200B;模型。
 1. 输入工作流的标题，然后单击&#x200B;**[!UICONTROL 开始]**。
 1. 在对话框中，单击&#x200B;**[!UICONTROL 继续]**。 该工作流会处理选定收藏集中的所有资产。
 

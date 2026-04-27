@@ -1,5 +1,5 @@
 ---
-title: 连接到SQL数据库
+title: 连接到 SQL 数据库
 description: 访问外部SQL数据库，以便AEM应用程序可以与数据交互
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 0%
+source-wordcount: '939'
+ht-degree: 1%
 
 ---
 
-# 连接到SQL数据库{#connecting-to-sql-databases}
+# 连接到 SQL 数据库{#connecting-to-sql-databases}
 
 访问外部SQL数据库，以便CQ应用程序可以与数据交互：
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 某些数据库供应商在OSGi捆绑包中提供JDBC驱动程序，例如[MySQL](https://dev.mysql.com/downloads/connector/j/)。 如果数据库的JDBC驱动程序不能作为OSGi捆绑包使用，请获取驱动程序JAR并将其包装在OSGi捆绑包中。 捆绑包必须导出与数据库服务器交互所需的包。 捆绑包还必须导入其引用的包。
 
-以下示例使用Maven[&#128279;](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)的Bundle插件将HSQLDB驱动程序封装在OSGi捆绑包中。 POM指示插件嵌入标识为依赖项的hsqldb.jar文件。 将导出所有org.hsqldb软件包。
+以下示例使用Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html)的[Bundle插件将HSQLDB驱动程序封装在OSGi捆绑包中。 POM指示插件嵌入标识为依赖项的hsqldb.jar文件。 将导出所有org.hsqldb软件包。
 
 插件会自动确定要导入的包，并在包的MANIFEST.MF文件中列出这些包。 如果CQ服务器上没有任何软件包，则安装时不会启动捆绑包。 两种可能的解决方案如下：
 
@@ -85,9 +85,9 @@ ht-degree: 0%
 
 以下链接可打开某些常用数据库产品的下载页面：
 
-* [Microsoft® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
+* [® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
-* [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
+* [® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
 ### 配置JDBC连接池服务 {#configuring-the-jdbc-connection-pool-service}
 
@@ -171,7 +171,9 @@ JDBC连接池服务是一个工厂。 因此，如果您使用`sling:OsgiConfig`
 >如果getDataSource方法由于未找到数据源而引发异常，请确保连接池服务配置正确。 验证属性名称、值和数据类型。
 >
 
-<!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
+<!--
+Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]
 >
->To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html). -->
+>To learn how to inject a DataSourcePool into an OSGi bundle, see [Injecting a DataSourcePool Service into an Adobe Experience Manager OSGi bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
+-->

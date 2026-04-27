@@ -11,9 +11,9 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1727'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 当社区站点的[模板结构](/help/communities/sites-console.md#step1)包含[组功能](/help/communities/functions.md#groups-function)时，“组”控制台提供创建社区组的权限。
 
-* AEM Communities支持在其他组内嵌套组。 如果新组[&#128279;](/help/communities/tools-groups.md)的结构包含组函数，则可能进行组嵌套。
+* AEM Communities支持在其他组内嵌套组。 如果新组](/help/communities/tools-groups.md)的[结构包含组函数，则可能进行组嵌套。
 * 仅对于创作环境，有一个与站点创建向导类似的组创建向导。
 * 成员是否可以在发布环境中创建组，可以在将组功能添加到社区站点结构或社区组结构时对其进行配置。
 
@@ -34,7 +34,8 @@ ht-degree: 1%
 * **控件**：组可以是打开或加密的。
 * **嵌套**：组可以包含零个或多个组。
 
-<!-- This is a 404 on helpx. Update or remove.
+<!--
+This is a 404 on helpx. Update or remove.
 >[!NOTE]
 >
 >Community groups, created in the publish environment before the [existence of the Community Groups console](/help/communities/version-history.md#featurepack1fp1), is not listed in the Community Groups console, and thus, are not modifiable using the console.
@@ -62,7 +63,7 @@ ht-degree: 1%
 
 * 选择&#x200B;**组文件夹**&#x200B;以将其打开。
 
-  打开时，将显示所有现有组(无论是在Author还是Publish中创建)。
+  打开时，将显示所有现有组（无论是在创作中还是发布中创建）。
 
   在此“组”控制台中，可以创作新组。
 
@@ -99,7 +100,6 @@ ht-degree: 1%
    * 请仔细检查名称，因为创建组后更改名称并不容易。
    * 基础URL显示在`Community Group Name`的下方。
    * 对于有效的URL，请附加“.html”
-
      *例如*，`https://localhost:4502/content/sites/mysight/en/mygroup.html`。
 
 * **社区组模板**&#x200B;菜单
@@ -181,7 +181,7 @@ ht-degree: 1%
 
 缩略图是要在创作和发布时为组显示的图像。
 
-对于受支持的图像格式(如JPG或PNG)，组图像的最佳大小为170 x 90像素。
+对于受支持的图像格式（如JPG或PNG），组图像的最佳大小为170 x 90像素。
 
 如果未添加图像，则显示默认图像。
 
@@ -283,9 +283,9 @@ BASIC面板允许修改
 
 ### 修改缩略图 {#modify-thumbnail}
 
-通过[THUMBNAIL](#thumbnail)面板，可以上传图像以在Publish环境中和创作环境中的社区站点的组控制台中向站点访客表示社区组。
+通过[THUMBNAIL](#thumbnail)面板，可以上传图像以向发布环境中的站点访客以及创作环境中的社区站点的组控制台表示社区组。
 
-## Publish集团 {#publish-the-group}
+## 发布组 {#publish-the-group}
 
 ![发布站点](assets/publish-site.png)
 

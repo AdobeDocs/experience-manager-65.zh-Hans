@@ -9,9 +9,9 @@ exl-id: e10e1904-7016-4eb0-9408-36297285f378
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '954'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ## 自动化测试 {#automated-testing}
 
-应执行一定程度的自动化测试，以涵盖各种屏幕大小、内存限制、输入方法和操作系统。 它不但覆盖了多种测试用例，而且当引入新的功能或设备时，它可以加快回归测试的速度。 理想情况下，您的自动化工具应该减少或限制重复工作。 请使用工具或框架，以便您的测试工作适用于所有平台。 下图显示了用于基于Web的UI测试和移动应用程序测试的测试环境的简化结构。 图表的左侧显示了一系列使用浏览器的Selenium节点。 SeleniumGrid可以将常见的基于Web的UI测试群发到其中的任何节点。 Selenium中心还可以连接到Appium以进行跨平台应用程序测试。 仅显示模拟器，但您可以包括adb (适用于Android™)和Xcode实用程序(适用于iOS设备)。 本文档稍后提供了一些链接，您可以在其中找到提及工具的特定详细信息。
+应执行一定程度的自动化测试，以涵盖各种屏幕大小、内存限制、输入方法和操作系统。 它不但覆盖了多种测试用例，而且当引入新的功能或设备时，它可以加快回归测试的速度。 理想情况下，您的自动化工具应该减少或限制重复工作。 请使用工具或框架，以便您的测试工作适用于所有平台。 下图显示了用于基于Web的UI测试和移动应用程序测试的测试环境的简化结构。 图表的左侧显示了一系列使用浏览器的Selenium节点。 SeleniumGrid可以将常见的基于Web的UI测试群发到其中的任何节点。 Selenium中心还可以连接到Appium以进行跨平台应用程序测试。 仅显示模拟器，但您可以包括adb （适用于™）和Xcode实用程序（适用于iOS设备）。 本文档稍后提供了一些链接，您可以在其中找到提及工具的特定详细信息。
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 **Testdroid**
 
 * 基于云的测试服务，具有持续的集成挂接和实际的设备测试。
-* 其中包括一个应用程序Crawler ，用于检查设备兼容性、分析日志、遍历视图、拍摄屏幕快照和监控性能。
+* 包括一个应用程序爬虫，用于检查设备兼容性、分析日志、遍历视图、拍摄屏幕快照和监控性能。
 
 有关详细信息，请参阅[https://testdroid.com/](https://testdroid.com/)。
 
@@ -90,12 +90,14 @@ ht-degree: 0%
 
 有关详细信息，请参阅[https://saucelabs.com/](https://saucelabs.com/)。
 
-<!-- **AppTestNow**
+<!--
+**AppTestNow**
 
 * An outsourcing service that tests your mobile apps.
 * Included is a large pool of devices and offers a wide range of types of testing: performance, quality, functional, certification, localization, data consumption, and so on.
 
-For more information, see [https://apptestnow.com/](https://apptestnow.com/). -->
+For more information, see [https://apptestnow.com/](https://apptestnow.com/).
+-->
 
 **曲棍球应用**
 

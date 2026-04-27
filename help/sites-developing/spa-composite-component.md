@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,7 @@ function Home() {
 
 在这种情况下，卡组件已在包含标题和图像节点的AEM项目中创建了。 子节点（文本和图像）具有相应的资源类型。
 
-卡组件![&#128279;](assets/composite-node-structure.png)的节点结构
+卡组件](assets/composite-node-structure.png)的![节点结构
 
 然后，您可以将其添加到SPA并检索其内容。
 
@@ -181,4 +181,4 @@ function Home() {
 
 ![节点结构中的复合路径](assets/composite-path.png)
 
-`AEMCard`组件与上一个使用案例中定义的[相同。](#content-does-not-exist)此处，在AEM项目的上述位置中定义的内容包含在SPA中。
+`AEMCard`组件与上一个使用案例中定义的[相同。](#content-does-not-exist) 此处，在AEM项目的上述位置定义的内容包含在SPA中。

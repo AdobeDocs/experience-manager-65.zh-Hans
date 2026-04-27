@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '333'
 ht-degree: 4%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Experience Manager Assets]允许您向资产添加数字水印，以帮助用户验证资产的真实性和版权所有权。 [!DNL Experience Manager Assets]支持在PNG和JPEG文件上用作水印的文本。
@@ -48,9 +48,9 @@ ht-degree: 4%
 1. 使用水印步骤保存&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流。
 1. 从[!DNL Assets]用户界面上传示例资源。 水印以字体大小、颜色等显示在您在上述步骤中配置的位置。
 
-若要以编程方式或使用动态信息对PDF文档添加水印，请考虑使用[Experience Manager文档服务](/help/forms/using/overview-aem-document-services.md)产品。
+若要以编程方式或使用动态信息对PDF文档添加水印，请考虑使用[Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md)产品。
 
 ## 提示和限制 {#tips-limitations}
 
 * 仅支持基于文本的水印。 图像不用作水印，即使您在创建[!UICONTROL 添加水印进程]时可以上载图像。
-* 仅支持PNG和JPEG文件添加水印。 其他资产格式没有添加水印。
+* 仅支持PNG和JPEG文件使用水印。 其他资产格式没有添加水印。

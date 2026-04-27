@@ -6,10 +6,10 @@ feature: Transaction Reports
 exl-id: dbb22369-c0a2-4cf6-b01b-096b4de13a14
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 3%
+source-wordcount: '805'
+ht-degree: 4%
 
 ---
 
@@ -30,7 +30,7 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
 
 -->
 
-以下是JEE可计费API列表。 在OSGi[&#128279;](/help/forms/using/transaction-reports-billable-apis.md)上查找AEM Forms的可记帐API列表。
+以下是JEE可计费API列表。 在OSGi](/help/forms/using/transaction-reports-billable-apis.md)上查找AEM Forms的[可记帐API列表。
 
 ## 可记帐文档服务API {#billable-document-services-apis}
 
@@ -60,38 +60,38 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
   </tr>
   <tr>
    <td><a>ExportPDF</a></td>
-   <td>将PDF导出到支持的文件类型。 </td>
+   <td>Exports PDF to supported file types. </td>
    <td>转换<br /> </td>
   </tr>
   <tr>
-   <td><a>EXPORTPDF2</a></td>
-   <td><p>将PDF导出到支持的文件类型。</p> </td>
+   <td><a>ExportPDF2</a></td>
+   <td><p>Exports PDF to supported file types.</p> </td>
    <td>转换<br /> </td>
   </tr>
   <tr>
-   <td><a>EXPORTPDF3</a></td>
-   <td>将PDF导出到支持的文件类型。</td>
+   <td><a>ExportPDF3</a></td>
+   <td>Exports PDF to supported file types.</td>
    <td>转换<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlFileToPDF</a></td>
-   <td>将HTML文件转换为PDF。</td>
+   <td>Converts HTML file to PDF.</td>
    <td>转换<br /> </td>
   </tr>
   <tr>
    <td><a>HtmlToPDF2</a></td>
-   <td>将HTML文件转换为PDF。</td>
+   <td>Converts HTML file to PDF.</td>
    <td>转换<br /> </td>
   </tr>
   <tr>
-   <td><a>优化PDF</a></td>
-   <td>优化PDF以通过去除不必要的元数据而减小文件大小，同时不影响质量。</td>
+   <td><a>OptimizePDF</a></td>
+   <td>Optimizes PDF to reduce file size by stripping unnecessary metadata without affecting the quality.</td>
    <td>转换<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### DocAssurance服务 {#DocAssurance-Service}
+### DocAssurance Service {#DocAssurance-Service}
 
 <table>
  <tbody>
@@ -101,15 +101,15 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
    <td>交易报告类别</td>
   </tr>
   <tr>
-   <td><a>签名/认证</a><br /> </td>
-   <td>此API使您能够保护文档。 您可以使用该API来签名和认证PDF文档。</td>
+   <td><a>Sign/Certify</a><br /> </td>
+   <td>This API enables you to secure your document. You can use the API to sign and certify a PDF document.</td>
    <td>转化</td>
   </tr>
  </tbody>
 </table>
 
 
-### Distiller服务 {#distiller-service}
+### Distiller Service {#distiller-service}
 
 <table>
  <tbody>
@@ -121,12 +121,12 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
   <tr>
   <tr>
    <td><a>CreatePDF</a></td>
-   <td>从支持的文件类型创建Adobe PDF。</td>
+   <td>Creates Adobe PDF from supported file types.</td>
    <td>转化</td>
   </tr>
   <tr>
    <td><a>CreatePDF2</a></td>
-   <td>从支持的文件类型创建Adobe PDF。</td>
+   <td>Creates Adobe PDF from supported file types.</td>
    <td>转化</td>
   </tr>
  </tbody>
@@ -145,7 +145,7 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/aemds/guide/addon/dor/DoRService.html#render-com.adobe.aemds.guide.addon.dor.DoROptions-" target="_blank">render</a></td>
    <td>Invokes the specified render method to generate a document of record using provided parameters.</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -165,39 +165,40 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
    <td>交易报告类别</td>
   </tr>
   <tr>
-   <td><a>generateoutput</a></td>
-   <td>合并数据和模板以创建PDF文档。</td>
+   <td><a>generateOutput</a></td>
+   <td>Merges data and templates to create a PDF document.</td>
    <td>已渲染的文档</td>
   </tr>
   <tr>
    <td><a>generatePDFOutput</a></td>
-   <td>合并数据和模板以创建PDF文档。</td>
+   <td>Merges data and templates to create a PDF document.</td>
    <td>已渲染的文档</td>
   </tr>
   <tr>
    <td><a>generatePDFOutput2</a></td>
-   <td>合并数据和模板以创建PDF文档。</td>
+   <td>Merges data and templates to create a PDF document.</td>
    <td>已渲染的文档</td>
   </tr>
   <tr>
    <td><a>generatePrintedOutput</a></td>
-   <td>将XDP和PDF文档转换为PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
+   <td>Converts XDP and PDF documents to PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td>
    <td>已渲染的文档</td>
   </tr>
   <tr>
    <td><a>generatePrintedOutput2</a></td>
-   <td>将XDP和PDF文档转换为PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
+   <td>Converts XDP and PDF documents to PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td>
    <td>已渲染的文档</td>
   </tr>
   <tr>
    <td><a>transformPDF</a></td>
-   <td>将一组XDP和PDF文档转换为一组PostScript (PS)、打印机命令语言(PCL)和ZPL文件格式。 </td>
-   <td>文档转换</td>
+   <td>Converts a set of XDP and PDF documents to a set of PostScript (PS), Printer Command Language (PCL), and ZPL file formats. </td>
+   <td>Documents Conversion</td>
   </tr>
  </tbody>
 </table>
 
-<!-- ### Forms Service {#forms-service}
+<!--
+### Forms Service {#forms-service}
 
 <table>
  <tbody>
@@ -208,13 +209,13 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#renderPDFForm-java.lang.String-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.PDFFormRenderOptions-" target="_blank">renderPDFForm</a></td>
    <td>Renders PDF Form from XDP templates. The XDP templates are created in Forms Designer.</td>
    <td>Documents Processed</td>
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/forms/api/FormsService.html#exportData-com.adobe.aemfd.docmanager.Document-com.adobe.fd.forms.api.DataFormat-" target="_blank">exportData</a></td>
    <td>Extracts data from a PDF Form or XDP templates</td>
    <td>Documents Processed</td>
    <td> </td>
@@ -224,7 +225,7 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
 
 -->
 
-### 转换PDF服务 {#convert-pdf-service}
+### Convert PDF Service {#convert-pdf-service}
 
 <table>
  <tbody>
@@ -240,18 +241,18 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
   </tr>
   <tr>
    <td><a>toPS2</a></td>
-   <td>使用选项规范中指定的选项将平面PDF文件转换为PostScript格式。</td>
+   <td>使用选项规范中指定的选项将Flat PDF文件转换为PostScript格式。</td>
    <td>文档转换</td>
   </tr>
   <tr>
    <td><a>toSWF</a></td>
-   <td>使用选项规范中指定的选项将平面PDF文件转换为SWF格式。</td>
+   <td>使用选项规范中指定的选项将Flat PDF文件转换为SWF格式。</td>
    <td>文档转换</td>
   </tr>
  </tbody>
 </table>
 
-### 条形码Forms服务 {#barcoded-forms-service}
+### 条形码表单服务 {#barcoded-forms-service}
 
 <table>
  <tbody>
@@ -289,17 +290,17 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
   </tr>
   <tr>
    <td><a>invokeOneDocument</a></td>
-   <td>使用指定的选项将指定的文档转换为PDF/A。</td>
+   <td>使用指定的选项将指定文档转换为PDF/A。</td>
    <td>文档转换</td>
   </tr>
   <tr>
    <td><a>invokeDDXOneDocument</a></td>
-   <td>使用指定的选项将指定的文档转换为PDF/A。</td>
+   <td>使用指定的选项将指定文档转换为PDF/A。</td>
    <td>文档转换</td>
   </tr>
   <tr>
    <td><a>toPDFA</a></td>
-   <td>使用指定的选项将指定的文档转换为PDF/A。</td>
+   <td>使用指定的选项将指定文档转换为PDF/A。</td>
    <td>文档转换</td>
   </tr>
  </tbody>
@@ -308,7 +309,7 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
 当您执行以下一个或多个操作时，调用API的使用情况计为事务：
 1. 从非PDF格式转换为PDF格式。 例如，从XDP格式转换为PDF格式。<!-- catering to both interactive and non-interactive forms of communication, and the conversion from Word to PDF.-->
 1. 从PDF格式转换为PDF/A格式。
-1. 从PDF格式转换为非PDF格式。 示例包括从PDF到图像的转换或从PDF到文本的转换。
+1. 从PDF格式转换为非PDF格式。 示例包括从PDF到图像格式的转换或从PDF到文本格式的转换。
 
 >[!NOTE]
 >
@@ -367,7 +368,8 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
 
 -->
 
-<!--### HTML5 Forms {#html-forms}
+<!--
+### HTML5 Forms {#html-forms}
 
 <table>
  <tbody>
@@ -440,7 +442,8 @@ JEE上的AEM Forms提供了多个API来提交、处理和渲染文档。 某些A
  </tbody>
 </table>
 
-<!-- ## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
+<!--
+## Billable Interactive Communication and Form-centric AEM Workflows on OSGi APIs {#billable-interactive-communication-and-form-centric-aem-workflows-on-osgi-apis}
 
 Assign task and document services steps of Form-centric AEM Workflows on OSGi and all the renditions of interactive communication and are accounted as transactions. Previewing an interactive communication on the author instance and previewing on the publish instance using Agent UI are not accounted as transactions. If a workflow step accounts a transaction and the workflow fails to complete, the transaction count is not reversed.
 
@@ -478,7 +481,7 @@ Assign task and document services steps of Form-centric AEM Workflows on OSGi an
    <td>Additional Information</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/channels/print/api/model/PrintChannel.html" target="_blank">render</a> (convert to PDF)</td>
    <td>Generates the PDF version of an interactive communication.</td>
    <td>Documents Rendered</td>
    <td>

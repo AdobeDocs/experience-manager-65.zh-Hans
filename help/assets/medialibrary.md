@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '595'
 ht-degree: 2%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 2%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Experience Manager]平台提供了不同的功能来管理资源。 媒体库允许用户将少量资产上传到存储库、搜索并使用网页中的资产，以及完成资产上的简单资产管理任务。
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 Experience Manager Assets提供企业级DAM功能。 Assets功能通过[!DNL Experience Manager]在一个包中提供。 但是，未购买Assets许可证的用户无权使用高级DAM功能。 如果没有Assets许可证，则只有[媒体库功能](#use-media-library)可用。
 
-如果要防止未经许可的[!DNL Assets]功能被意外使用，请从[!DNL Assets]中删除所有特定于[!DNL Assets]的工作流、组件、分类、选项和[!DNL Experience Manager]管理员。 这样做可防止您的用户意外使用您未授权的[!DNL Assets]功能。
+如果要防止未经许可的[!DNL Assets]功能被意外使用，请从[!DNL Experience Manager]中删除所有特定于[!DNL Assets]的工作流、组件、分类、选项和[!DNL Assets]管理员。 这样做可防止您的用户意外使用您未授权的[!DNL Assets]功能。
 
 ## 使用媒体库 {#use-media-library}
 
@@ -79,7 +79,8 @@ Experience Manager Assets提供企业级DAM功能。 Assets功能通过[!DNL Exp
 * 活动流（时间线）。
 * 注释和批注。
 
-<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+<!--
+TBD: Define exactly which basic Assets workflow are available for use with Media Library?
 
 As per PM, we must avoid stating such a list, as we do not have a list that makes sense in Cloud Service.
 -->
@@ -88,12 +89,12 @@ As per PM, we must avoid stating such a list, as we do not have a list that make
 >
 >许多高级DAM用例已由[!DNL Experience Manager Assets]完成。 使用媒体库许可证，您只需完成列出的使用案例。 如果未列出使用案例，请勿将其与媒体库许可证一起使用。 如有任何疑问，请联系Adobe客户支持。
 
-请注意，在没有[!DNL Asset]许可证的情况下，您无法使用智能标记、[!DNL Asset]链接、[!DNL Adobe Experience Manager]选择器、批量标记、修改资产工作流或标准[!DNL Assets]用户界面来访问媒体库。
+请注意，在没有[!DNL Assets]许可证的情况下，您无法使用智能标记、[!DNL Asset]链接、[!DNL Asset]选择器、批量标记、修改资产工作流或标准[!DNL Adobe Experience Manager]用户界面来访问媒体库。
 
 <!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
 >[!MORELIKETHIS]
 >
->* [&#x200B; [!DNL Experience Manager Assets]中的](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=zh-Hans)DAM功能
->* [[!DNL Experience Manager] 6.5 Managed Services产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5内部部署产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>*  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html)中的[DAM功能
+>* [[!DNL Experience Manager] 6.5 Managed Services产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5内部部署产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html)

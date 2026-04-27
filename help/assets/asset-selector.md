@@ -1,5 +1,5 @@
 ---
-title: 资源选择器
+title: 资产选择器
 description: 了解如何使用资源选择器在Adobe Experience Manager Assets中搜索、筛选、浏览和获取资源的元数据。 还可了解如何自定义资产选择器界面。
 contentOwner: Adobe
 feature: Asset Management,Metadata,Search
@@ -7,10 +7,10 @@ role: User
 hide: true
 exl-id: c84ce84a-1e52-48fd-a16c-38c7769df9af
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 1%
+source-wordcount: '534'
+ht-degree: 2%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->[资产选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=zh-Hans)在早期版本的[!DNL Experience Manager]中被称为[资产选取器](https://helpx.adobe.com/cn/experience-manager/6-2/assets/using/asset-picker.html)。
+>[资产选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)在早期版本的[!DNL Experience Manager]中被称为[资产选取器](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html)。
 
 通过资源选择器，您可以在[!DNL Adobe Experience Manager] Assets中浏览、搜索和筛选资源。 您还可以获取使用资源选择器选择的资源的元数据。 要自定义资产选择器界面，您可以使用支持的请求参数启动该界面。 这些参数为特定方案设置资源选择器的上下文。
 
@@ -63,4 +63,4 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* AEM as a Cloud Service中的[微前端资源选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=zh-Hans)
+>* AEM as a Cloud Service中的[微前端资源选择器](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/asset-selector.html?lang=en)

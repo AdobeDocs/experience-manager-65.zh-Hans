@@ -10,9 +10,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 1509ca884e2f9eb931fc7cd416801957459cc4a0
+source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
 workflow-type: tm+mt
-source-wordcount: '2023'
+source-wordcount: '2114'
 ht-degree: 1%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-本文档介绍了任何SPA框架都应该履行的一般合同(即AEM支持层的类型)，以便在AEM中实施可编辑的SPA组件。
+本文档介绍了任何SPA框架都应该履行的一般合同（即AEM支持层的类型），以便在AEM中实施可编辑的SPA组件。
 
 >[!NOTE]
 >
 >以下要求与框架无关。 如果满足这些要求，则可以提供由模块、组件和服务组成的框架特定层。
 >
->**AEM中的React和Angular框架已满足这些要求。**&#x200B;此Blueprint中的要求仅与您希望实施其他框架以与AEM一起使用时相关。
+>**AEM中的React和Angular框架已满足这些要求。** 仅当要实施其他框架以与AEM一起使用时，此Blueprint中的要求才相关。
 
 >[!CAUTION]
 >
@@ -72,11 +72,11 @@ ht-degree: 1%
 
 ### 页面模型 {#page-model}
 
-页面的内容结构存储在AEM中。 页面模型用于映射和实例化SPA组件。 SPA开发人员创建映射到AEM组件的SPA组件。 为此，他们使用资源类型(或AEM组件的路径)作为唯一键值。
+页面的内容结构存储在AEM中。 页面模型用于映射和实例化SPA组件。 SPA开发人员创建映射到AEM组件的SPA组件。 为此，他们使用资源类型（或AEM组件的路径）作为唯一键值。
 
 SPA组件必须与页面模型同步，并根据对内容所做的任何更改进行更新。 必须使用使用动态元件的阵列来按照提供的页面模型结构即时实例化元件。
 
-### 元字段 {#meta-fields}
+### Meta字段 {#meta-fields}
 
 页面模型使用JSON模型导出器，它本身基于[Sling模型](https://sling.apache.org/documentation/bundles/models.html) API。 可导出的sling模型显示以下字段列表，以启用基础库解释数据模型：
 
@@ -250,7 +250,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 * 响应式网格元素带有以`aem-Grid--`为前缀的类名称
 * 响应列元素具有以`aem-GridColumn--`为前缀的类名
 * 响应式网格（也是父网格的列）被包住，例如前两个前缀未出现在同一元素上
-* 与可编辑资源对应的元素带有`data-cq-data-path`属性。 请参阅本文档中与页面编辑器[&#128279;](#contract-wtih-the-page-editor)的Contract部分。
+* 与可编辑资源对应的元素带有`data-cq-data-path`属性。 请参阅本文档中与页面编辑器](#contract-wtih-the-page-editor)的[Contract部分。
 
 ```
 <div data-cq-data-path="/content/page">
@@ -268,7 +268,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 ## 导航和路由 {#navigation-and-routing}
 
-应用程序拥有路由。 前端开发人员首先需要实施导航组件(映射到AEM导航组件)。 此组件将渲染要与一系列显示或隐藏内容片段的路由一起使用的URL链接。
+应用程序拥有路由。 前端开发人员首先需要实施导航组件（映射到AEM导航组件）。 此组件将渲染要与一系列显示或隐藏内容片段的路由一起使用的URL链接。
 
 基础[`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)库及其` [ModelRouter](/help/sites-developing/spa-routing.md)`模块（默认启用）负责预获取并提供对与给定资源路径关联的模型的访问权限。
 

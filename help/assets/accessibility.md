@@ -6,10 +6,10 @@ feature: Asset Management
 role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 3524c1e6d299576ac9691292fb29eb0cf8a48bc2
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1881'
-ht-degree: 0%
+source-wordcount: '1932'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ Possible topics to cover in this article are below.
 
 要读取包含合规性级别详细信息的报表，请参阅[无障碍合规性报表](https://www.adobe.com/cn/accessibility/compliance.html) (ACR)页面。
 
-要了解[!DNL Dynamic Media]如何访问，请参阅[中的 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)辅助功能。
+要了解[!DNL Dynamic Media]如何访问，请参阅 [!DNL Dynamic Media]](/help/assets/accessibility-dm.md)中的[辅助功能。
 
 ## 辅助技术 {#at-support}
 
@@ -69,7 +69,8 @@ Possible topics to cover in this article are below.
 
 可以使用键盘与许多可使用指针点击或操作的用户界面元素接合。 使用键盘，用户可以专注于UI元素并采取适当的操作。 用户可直接使用键盘快捷键来触发命令或操作，而无需专注于UI元素并使用键盘来触发它。 例如，用户可以在用户界面的左侧打开资产的时间轴。 使用键盘浏览到用户界面控件，选择`Return`，然后选择`Alt + 2`键盘快捷键。
 
-<!-- TBD items:
+<!--
+TBD items:
 
 * The option to toggle between list view and card view exposes relevant info to the screen readers. What about column view option? This info can go into 'basic handling' info aka article to 'understand and use the workspace'.
 * How to open and browse through the profile popup dialog in [!DNL Experience Manager] UI using a keyboard? The navigation does not match the order of visual display of options on the UI. This info can go into 'basic handling' info aka article to 'understand and use the workspace'. What about setting preferences and impersonating a user?
@@ -79,14 +80,14 @@ Possible topics to cover in this article are below.
 
 ### [!DNL Assets]中的键盘快捷键 {#keyboard-shortcuts}
 
-[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台[的](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
+[!DNL Assets]中的以下操作可使用列出的键盘快捷键。 大多数应用于[!DNL Experience Manager]控制台的键盘快捷键也适用于[!DNL Assets]。 请参阅控制台](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts)的[键盘快捷键。 了解如何[启用或禁用键盘快捷键](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)。
 
 | 用户界面或方案 | 键盘快捷键 | 操作 |
 |---|---|---|
 | [!DNL Assets]用户界面中的列视图 | 上下方向键 | 导航到同一层次结构中的文件和文件夹。 |
 | [!DNL Assets]用户界面中的列视图 | 左右方向键 | 导航到当前文件夹上方或下方的文件和文件夹。 |
 | 浏览[!DNL Assets]中的文件夹 | `/` | 通过打开Omnisearch框调用搜索。 |
-| [!DNL Assets]控制台 | &amp;amp；抑音符； | 切换侧边栏 |
+| [!DNL Assets]控制台 | 抑音符(&amp;G)； | 切换侧边栏 |
 | [!DNL Assets]控制台 | `Alt + 1` | 打开内容树。 |
 | [!DNL Assets]控制台 | `Alt + 2` | 打开[!UICONTROL 导航]左边栏。 |
 | [!DNL Assets]控制台 | `Alt + 3` | 显示选定资产的[!UICONTROL 时间轴]。 |
@@ -112,7 +113,8 @@ Possible topics to cover in this article are below.
 
 如果用户从菜单中展开帮助或用户配置文件选项，屏幕阅读器将朗读相应的选项或状态。 如果用户展开用户配置文件选项，则可以使用键盘选择可用选项。 例如，管理员可以模拟其他用户。 如果用户从[!UICONTROL 帮助]选项中搜索字符串，叙述者将宣布“正在搜索帮助”以指示正在进行搜索。
 
-<!-- TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
+<!--
+TBD: Removing for now. Add a more informative video later. Host it on tv.adobe
 
 ![Keyboard navigation of top options in [!DNL Experience Manager] user interface](assets/keyboard-navigation-in-aem.gif)
 
@@ -123,7 +125,8 @@ Possible topics to cover in this article are below.
 
 在[!DNL Assets]用户界面中，用户可以使用键盘浏览DAM存储库中的数字资源以及预览或下载资源。 用户还可以查看生成的呈现版本、切换视图，以及查看时间线、版本历史记录、注释和引用。 此外，用户可以查看和管理元数据。
 
-<!-- TBD: Not sure about the following list items mean:
+<!--
+TBD: Not sure about the following list items mean:
 
 In [!DNL Experience Manager] header section, when navigating in browse mode, screen reader now announces,
   
@@ -147,9 +150,10 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 * 使用`Esc`键从缩略图视图中删除快速操作图标不会从最后一个聚焦项中删除键盘焦点。
 * 选择资产后，选择`Alt + 4`键盘快捷键将在左边栏中打开[!UICONTROL 引用]列表。 使用`Tab`键，用户可以浏览非零引用条目。 仅浏览非零参照条目也可以节省工作量和按键操作。
 * 资产时间轴中提供了有关资产的注释。 如果使用键盘或键盘快捷键访问左边栏，则可以访问它。
-* [!UICONTROL 中的]视图设置[!DNL Experience Manager]可使用键盘访问。 用户可以使用箭头键浏览可用的信息卡大小，选择并Tab键浏览现有视图设置视图中的浏览和设置其他元素。
+* [!DNL Experience Manager]中的[!UICONTROL 视图设置]可使用键盘访问。 用户可以使用箭头键浏览可用的信息卡大小，选择并Tab键浏览现有视图设置视图中的浏览和设置其他元素。
 
-<!-- TBD: Gradually, as more enhancements are done in these categories, add more content.
+<!--
+TBD: Gradually, as more enhancements are done in these categories, add more content.
 
 ## Add and upload digital assets {#upload}
 
@@ -192,7 +196,8 @@ Review CQ-4282133 before adding - Close option in a coral-dialog was not accessi
 
 ## 共享资产 {#share-assets}
 
-<!-- TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
+<!--
+TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no content for AAL a11y on helpx.
 -->
 
 在共享资产时，以下功能可提高可访问性：

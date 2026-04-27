@@ -7,10 +7,10 @@ feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1978'
-ht-degree: 3%
+source-wordcount: '2005'
+ht-degree: 4%
 
 ---
 
@@ -18,10 +18,11 @@ ht-degree: 3%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=en) |
 | AEM 6.5 | 本文 |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -48,9 +49,9 @@ ht-degree: 3%
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-要更改限制，请访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**，更改&#x200B;**[!UICONTROL Apache SlingPOST参数处理]** OSGi配置中的&#x200B;**[!UICONTROL 最大请求参数]**&#x200B;的值。
+要更改限制，请访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**，更改&#x200B;**[!UICONTROL Apache Sling请求参数处理]** OSGi配置中的&#x200B;**[!UICONTROL 最大POST参数]**&#x200B;的值。
 
-## 元数据配置文件 {#metadata-profiles}
+## 元数据轮廓 {#metadata-profiles}
 
 元数据配置文件允许您将默认元数据应用到文件夹中的资源。 创建元数据配置文件并将其应用到文件夹。 您以后上传到文件夹的任何资源都会继承您在元数据配置文件中配置的默认元数据。
 
@@ -73,7 +74,7 @@ ht-degree: 3%
 
    ![映射到元数据配置文件中的属性设置](assets/metadata-profile-setting-map-property.png)
 
-   您为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;指定的值作为属性存储在资产的元数据节点下。 例如，如果您指定`./jcr:content/metadata/dc:desc`作为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的名称，[!DNL Assets]会在资产的元数据节点存储值`dc:desc`。 Adobe建议您将一个字段仅映射到元数据架构中的给定属性。 否则，系统会选取映射到属性的最新添加字段。
+   您为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;指定的值作为属性存储在资产的元数据节点下。 例如，如果您指定`./jcr:content/metadata/dc:desc`作为&#x200B;**[!UICONTROL 映射到属性]**&#x200B;的名称，[!DNL Assets]会在资产的元数据节点存储值`dc:desc`。 Adobe建议您在元数据架构中仅将一个字段映射到给定属性。 否则，系统会选取映射到属性的最新添加字段。
 
    * **[!UICONTROL 默认值]**：使用此属性为元数据组件添加默认值。 例如，如果您指定“我的描述”，则此值将分配给资产元数据节点上的属性`dc:desc`。
 
@@ -106,7 +107,7 @@ ht-degree: 3%
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 复制]**。
 1. 在&#x200B;**[!UICONTROL 复制元数据配置文件]**&#x200B;对话框中，输入元数据配置文件新副本的标题。
-1. 单击&#x200B;**[!UICONTROL 复制]**。 元数据配置文件的副本将显示在&#x200B;**[!UICONTROL 元数据配置文件]**&#x200B;页面的配置文件列表中。
+1. 单击&#x200B;**[!UICONTROL 复制]**。 元数据轮廓的副本将显示在&#x200B;**[!UICONTROL 元数据轮廓]**&#x200B;页面的轮廓列表中。
 
    ![元数据配置文件页面中添加了元数据配置文件副本](assets/copy-metadata-profile.png)
 
@@ -117,8 +118,9 @@ ht-degree: 3%
 1. 单击工具栏中的&#x200B;**[!UICONTROL 删除元数据配置文件]**。
 1. 在对话框中，单击&#x200B;**[!UICONTROL 删除]**&#x200B;以确认删除操作。 元数据配置文件将从列表中删除。
 
-<!-- TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/cn/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+<!--
+TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -192,7 +194,7 @@ To apply a metadata profile globally, follow these steps:
 | [!UICONTROL 日期] | 添加一个日期组件。 |
 | [!UICONTROL 下拉列表] | 添加一个下拉列表。 |
 | [!UICONTROL 标准标记] | 添加标记。 |
-| [!UICONTROL 隐藏字段] | 添加隐藏字段。 在保存资源时，它将作为POST参数发送。 |
+| [!UICONTROL 隐藏字段] | 添加隐藏字段。 保存资产时，此参数将作为POST参数发送。 |
 
 #### 编辑表单项目 {#editing-form-items}
 
@@ -200,13 +202,13 @@ To apply a metadata profile globally, follow these steps:
 
 **[!UICONTROL 字段标签]**：在文件夹的属性页面上显示的元数据属性的名称。
 
-**[!UICONTROL 映射到属性]**：此属性指定保存它的CRX存储库中文件夹节点的相对路径。 它以“**”开头。/**”，这表示路径在文件夹的节点下。
+**[!UICONTROL 映射到属性]**：此属性指定保存它的CRX存储库中文件夹节点的相对路径。 它以“**./**”开头，这表示路径在文件夹的节点下。
 
 以下是此属性的有效值：
 
 * `./jcr:content/metadata/dc:title`：将该值作为属性`dc:title`存储在文件夹的元数据节点中。
 
-* `./jcr:created`：在文件夹的节点上显示JCR属性。 如果您在CRXDE中配置这些属性，Adobe建议您将它们标记为“禁用编辑”，因为它们是受保护属性。 否则，在保存资产的属性时出现错误“`Asset(s) failed to modify`”。
+* `./jcr:created`：在文件夹的节点上显示JCR属性。 如果您在CRXDE中配置这些资产，Adobe建议您将它们标记为“禁用编辑”，因为它们是受保护资产。 否则，在保存资产的属性时出现错误“`Asset(s) failed to modify`”。
 
 要确保组件在元数据架构表单中正确显示，请不要在属性路径中包含空格。
 
@@ -262,7 +264,7 @@ To apply a metadata profile globally, follow these steps:
 
 ### 使用文件夹元数据架构 {#use-the-folder-metadata-schema}
 
-打开使用文件夹元数据架构配置的文件夹属性。**[!UICONTROL 文件夹元数据]**&#x200B;选项卡显示在文件夹[!UICONTROL 属性]页面中。 要查看文件夹元数据架构表单，请选择此选项卡。
+打开使用文件夹元数据架构配置的文件夹属性。 **[!UICONTROL 文件夹元数据]**&#x200B;选项卡显示在文件夹[!UICONTROL 属性]页面中。 要查看文件夹元数据架构表单，请选择此选项卡。
 
 在各个字段中输入元数据值，然后单击&#x200B;**[!UICONTROL 保存]**&#x200B;以存储这些值。 您指定的值存储在CRX存储库的文件夹节点中。
 
@@ -272,13 +274,13 @@ To apply a metadata profile globally, follow these steps:
 
 * 要在自定义命名空间上导入元数据，请先注册命名空间。
 * 属性选取器显示架构编辑器和搜索表单中使用的属性。 属性选取器不从资产中选取元数据属性。
-* 在升级到[!DNL Experience Manager] 6.5之前，您可能已经存在元数据配置文件。升级后，如果在[!UICONTROL 元数据配置文件]选项卡的文件夹[!UICONTROL 属性]中应用此类配置文件，则不会显示元数据表单字段。 但是，如果应用新创建的元数据配置文件，则表单字段会显示，但会按预期不可用。 不会丢失任何功能，但如果您希望查看（不可用）表单字段，请编辑并保存现有的元数据配置文件。
+* 在升级到[!DNL Experience Manager] 6.5之前，您可能已经存在元数据配置文件。 升级后，如果在[!UICONTROL 元数据配置文件]选项卡的文件夹[!UICONTROL 属性]中应用此类配置文件，则不会显示元数据表单字段。 但是，如果应用新创建的元数据配置文件，则表单字段会显示，但会按预期不可用。 不会丢失任何功能，但如果您希望查看（不可用）表单字段，请编辑并保存现有的元数据配置文件。
 
 >[!MORELIKETHIS]
 >
 >* [元数据概念和了解](metadata-concepts.md)。
 >* [编辑多个收藏集的元数据属性](manage-collections.md#editing-collection-metadata-in-bulk)。
->* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=zh-Hans)。
+>* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html)。
 >* [用于处理元数据、图像和视频的配置文件](processing-profiles.md)。
 >* [组织数字资产以使用处理配置文件的最佳实践](/help/assets/organize-assets.md)。
 >* [XMP写回](/help/assets/xmp-writeback.md)。

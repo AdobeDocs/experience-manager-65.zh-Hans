@@ -1,6 +1,6 @@
 ---
 title: 主屏幕
-description: AEM Forms应用程序主屏幕的组件描述
+description: Description of the components of the AEM Forms app Home screen
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
@@ -9,40 +9,42 @@ exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '339'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 1%
 
 ---
 
 # 主屏幕{#home-screen}
 
-登录AEM Forms应用程序时，您将被重定向到主屏幕。
+When you log in to the AEM Forms app, you are redirected to the Home screen.
 
-## 默认主屏幕 {#default-home-screen}
+## Default Home screen {#default-home-screen}
 
-默认情况下，主屏幕会显示所有表单，包括起点和任务(如果连接的服务器启用了AEM Forms Workflow)，以及关联的缩略图。 您可以在AEM Forms服务器中指定缩略图。
+By default, the Home screen displays all forms including startpoints and tasks (if the connected server is AEM Forms Workflow enabled), along with the associated thumbnails. You can specify the thumbnails in the AEM Forms Server.
 
-下图在默认的“主页”屏幕上用重要组件的标注进行注释。
+The following figure is annotated with call-outs to the essential components on the default Home screen.
 
-![Forms应用程序主屏幕](assets/home-screen-1.png)
+![Forms app home screen](assets/home-screen-1.png)
 
-<!--Click to enlarge
+<!--
+Click to enlarge
 
-![home-screen-1-1](assets/home-screen-1-1.png)-->
+![home-screen-1-1](assets/home-screen-1-1.png)
+-->
 
-1. **菜单按钮**：选择&#x200B;**菜单**&#x200B;按钮以导航到“任务”、“Forms”、“发件箱”和“设置”。 如果您的AEM Forms应用程序已连接到AEM Forms JEE服务器，则可以看到任务选项。 “任务”选项还存储从进程中的任务创建的草稿。 对于AEM Forms OSGi服务器，任务选项是隐藏的。 Outbox在与服务器同步之前存储已保存的表单和草稿。 当应用程序与服务器[&#128279;](../../forms/using/sync-app.md)进行同步时，发件箱中所有保存的表单和草稿都将上载到AEM Forms服务器。 有关设置的信息，请参阅[更新常规设置](../../forms/using/update-general-settings.md)。
-1. **任务或表单**：选择列出的要处理的任务或表单。
-1. **水平省略号**：表示操作对表单可用。 点按省略号会显示作者提供的操作和描述。 选择省略号时，**删除草稿**&#x200B;和&#x200B;**完成**&#x200B;选项可见。
-1. **刷新图标**：选择刷新图标，以便您可以将应用程序与AEM Forms服务器同步。
+1. **Menu button**: Select the **Menu** button to navigate to Tasks, Forms, Outbox, and Settings. If your AEM Forms app is connected to an AEM Forms JEE server, you can see the Tasks option. The Tasks option also stores the drafts created from tasks in a process. For AEM Forms OSGi servers, the Tasks option is hidden. Outbox stores the saved forms and drafts before it syncs with the server. All saved forms and drafts in the Outbox are uploaded to the AEM Forms Server when the app is [synchronized with the server](../../forms/using/sync-app.md). For information on Settings, see [Update General Settings](../../forms/using/update-general-settings.md).
+1. **Task or Form**: Select the listed task or form that you want to work with.
+1. **Horizontal Ellipsis**: Denotes that actions are available for the form. Tapping the ellipsis displays the actions and description that the author has provided. The **Delete Draft** and **Complete** option is visible when you select the ellipsis.
+1. **Refresh icon**: Select the refresh icon so you can synchronize your app with the AEM Forms Server.
 
-### 自定义主屏幕 {#customizing-the-home-screen}
+### Customizing the Home screen {#customizing-the-home-screen}
 
-![常规设置](assets/gen-settings.png)
+![General Settings](assets/gen-settings.png)
 
-您可以从应用程序的&#x200B;**[常规设置](../../forms/using/update-general-settings.md)**&#x200B;或HTMLWorkspace上的&#x200B;**首选项**&#x200B;选项卡更改应用程序的默认主屏幕。
+You can change the default Home screen of the app either from the **[General Settings](../../forms/using/update-general-settings.md)** of the app, or from the **Preference** tab on HTML Workspace.
 
-对应用程序上的主屏幕设置所做的更改会影响当前登录用户或当前移动设备上的用户的主屏幕。
+The change made to the Home screen setting on the app affects the Home screen for the currently logged in user or the user on the current mobile device.
 
-但是，在HTMLWorkspace中所做的更改将会影响登录到AEM Forms服务器的所有AEM Forms应用程序用户。
+However, the change made in HTML Workspace effects all AEM Forms app users logged in to the AEM Forms Server.

@@ -7,9 +7,9 @@ role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 02649ffea62200b472b4f3c446489a9dd974d21c
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '2721'
+source-wordcount: '2794'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ mkfs -q /dev/ram1 800000
 
 在Windows操作系统上，使用第三方驱动程序创建RAM驱动器，或者只使用高性能存储（如SSD）。
 
-高性能临时卷就绪后，设置JVM参数`-Djava.io.tmpdir`。 例如，可以将下面的JVM参数添加到`CQ_JVM_OPTS`的`bin/start`脚本中的[!DNL Experience Manager]变量：
+高性能临时卷就绪后，设置JVM参数`-Djava.io.tmpdir`。 例如，可以将下面的JVM参数添加到[!DNL Experience Manager]的`bin/start`脚本中的`CQ_JVM_OPTS`变量：
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -57,7 +57,8 @@ mkfs -q /dev/ram1 800000
 
 Adobe建议在Java 8上部署[!DNL Experience Manager Assets]以获得最佳性能。
 
-<!-- TBD: Link to the latest official word around Java.
+<!--
+TBD: Link to the latest official word around Java.
 -->
 
 ### JVM参数 {#jvm-parameters}
@@ -130,7 +131,7 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 请尽可能将[!UICONTROL DAM更新资产]工作流设置为“临时”。 该设置显着减少了处理工作流所需的开销，因为在这种情况下，工作流不需要经过正常的跟踪和存档过程。
 
-1. 在`/miscadmin`处的[!DNL Experience Manager]部署中导航到`https://[aem_server]:[port]/miscadmin`。
+1. 在`https://[aem_server]:[port]/miscadmin`处的[!DNL Experience Manager]部署中导航到`/miscadmin`。
 
 1. 展开&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 工作流]** > **[!UICONTROL 模型]** > **[!UICONTROL dam]**。
 
@@ -186,7 +187,7 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 #### ImageMagick {#imagemagick}
 
-如果您自定义[!UICONTROL DAM更新资产]工作流以使用ImageMagick生成演绎版，Adobe建议您修改位于`policy.xml`的`/etc/ImageMagick/`文件。 默认情况下，ImageMagick使用OS卷上的全部可用磁盘空间和可用内存。 在`policymap`的`policy.xml`部分中进行以下配置更改以限制这些资源。
+如果您自定义[!UICONTROL DAM更新资产]工作流以使用ImageMagick生成演绎版，Adobe建议您修改位于`/etc/ImageMagick/`的`policy.xml`文件。 默认情况下，ImageMagick使用OS卷上的全部可用磁盘空间和可用内存。 在`policy.xml`的`policymap`部分中进行以下配置更改以限制这些资源。
 
 ```xml
 <policymap>
@@ -242,9 +243,9 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 ## 搜索索引 {#search-indexes}
 
-安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)。
+安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)。
 
-为经常运行的查询创建自定义索引。 有关详细信息，请参阅用于分析慢查询[的](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)方法和[自定义索引](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的其他见解，请参阅[查询和索引最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
+为经常运行的查询创建自定义索引。 有关详细信息，请参阅用于分析慢查询](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)的[方法和[自定义索引](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的其他见解，请参阅[查询和索引最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 
 ### Lucene索引配置 {#lucene-index-configurations}
 
@@ -252,8 +253,8 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 1. 打开CRXDe `/crx/de/index.jsp`并以管理用户身份登录。
 1. 浏览到`/oak:index/lucene`。
-1. 添加值为`String[]`、`excludedPaths`和`/var`的`/etc/workflow/instances`属性`/etc/replication`。
-1. 浏览到`/oak:index/damAssetLucene`。 添加值为`String[]`的`includedPaths`属性`/content/dam`。 保存更改。
+1. 添加值为`/var`、`/etc/workflow/instances`和`/etc/replication`的`String[]`属性`excludedPaths`。
+1. 浏览到`/oak:index/damAssetLucene`。 添加值为`/content/dam`的`String[]`属性`includedPaths`。 保存更改。
 
 如果您的用户不需要对资源执行全文搜索，例如在PDF文档中搜索文本，则禁用它。 您可以通过禁用全文索引来提高索引性能。 要禁用[!DNL Apache Lucene]文本提取，请执行以下步骤：
 

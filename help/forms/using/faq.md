@@ -1,6 +1,6 @@
 ---
-title: HTML5表单常见问题解答(FAQ)
-description: 有关HTML5表单布局、脚本支持和范围的常见问题解答(FAQ)。
+title: HTML5 Forms 常见问题解答（FAQ）
+description: 有关HTML5表单的布局、脚本支持和范围的常见问题解答(FAQ)。
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,23 +10,23 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: aee0e36fe488af764459494c1bc802fb519b1a54
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '2018'
 ht-degree: 0%
 
 ---
 
 
-# HTML5表单常见问题解答(FAQ){#frequently-asked-questions-faq-for-html-forms}
+# HTML5 Forms 常见问题解答（FAQ）{#frequently-asked-questions-faq-for-html-forms}
 
-存在关于HTML5表单布局、脚本支持和范围的常见问题解答(FAQ)。
+关于HTML5表单的布局、脚本支持和范围有一些常见问题解答(FAQ)。
 
 ## 布局 {#layout}
 
 1. 为什么中的条形码和签名字段未显示在我的表单中？
 
-   答案：条形码和签名字段在HTML或移动场景中无关。 这些字段显示为非交互区域。 但是，AEM Forms Designer提供了一个新的签名涂写字段，该字段可用于代替签名字段。 还可以添加用于条形码的[自定义构件](../../forms/using/custom-widgets.md)并将其集成。
+   回答：条形码和签名字段在HTML或移动设备场景中无关。 这些字段显示为非交互区域。 但是，AEM Forms Designer提供了一个新的签名涂写字段，该字段可用于代替签名字段。 还可以添加用于条形码的[自定义构件](../../forms/using/custom-widgets.md)并将其集成。
 
 1. XFA文本字段是否支持富文本？
 
@@ -90,15 +90,15 @@ ht-degree: 0%
 
 1. 为什么某些文本被截断或在HTML5中显示不正确？
 
-   答案：如果Draw或题注文本元素没有提供足够的空间来显示内容，则移动设备表单呈现版本中的文本会显示为截断。 此截断在AEM Forms Designer的“设计”视图中也可见。 虽然此截断可在PDF中处理，但在HTML5表单中无法处理。 要避免出现此问题，请为Draw或描述文本提供足够的空间，以便它在AEM Forms Designer的设计模式下不会截断。
+   回答：如果为绘制或题注文本元素提供的空间不足以显示内容，则在移动设备表单呈现版本中，文本会显示为截断。 此截断在AEM Forms Designer的“设计”视图中也可见。 尽管此截断可在PDF中处理，但在HTML5表单中无法处理。 要避免出现此问题，请为绘制或描述文本提供足够的空间，以便在AEM Forms Designer的设计模式下不会截断文本。
 
 1. 我观察到与缺少内容或内容重叠相关的布局问题。 原因是什么？
 
-   回答：如果在同一位置有一个Draw文本或Draw图像元素以及另一个重叠元素（例如矩形），则如果在文档顺序中稍后显示的Draw文本内容(在AEM Forms Designer层次结构视图中)，则这些内容将不可见。 PDF支持透明分层，但HTML/浏览器不支持透明分层。
+   回答：如果在同一位置有一个绘制文本或绘制图像元素以及另一个重叠元素（例如矩形），则绘制文本内容在文档顺序中位于后面时（在AEM Forms Designer层次结构视图中）不可见。 PDF支持透明分层，但HTML/浏览器不支持透明分层。
 
-1. 为什么在HTML表单中显示的某些字体与设计表单时使用的字体不同？
+1. 为什么HTML表单中显示的某些字体与设计表单时使用的字体不同？
 
-   回答：HTML5 Forms不允许嵌入字体(与字体嵌入到表单中的PDF forms相反)。 要使表单的HTML版本按预期呈现，请确保这些字体在AEM Forms服务器的CRX存储库(AEM Content Repository)中以及安装了AEM Designer的计算机上可用。 当AEM Forms服务器的CRX存储库中或AEM Designer的安装位置不支持这些字体时，将会使用回退字体呈现表单。
+   回答： HTML5 Forms不允许嵌入字体（与字体嵌入表单中的PDF forms相反）。 要使表单的HTML版本按预期呈现，请确保这些字体在AEM Forms服务器的CRX存储库(AEM Content Repository)中以及安装了AEM Designer的计算机上可用。 当AEM Forms服务器的CRX存储库中或AEM Designer的安装位置不支持这些字体时，将会使用回退字体呈现表单。
 
 1. HTML表单中是否支持vAlign和hAlign属性？
 
@@ -106,19 +106,19 @@ ht-degree: 0%
 
 1. HTML5表单是否支持希伯来字符？
 
-   答案：除Microsoft Internet Explorer之外，HTML5表单在所有浏览器中均支持希伯来字符。
+   答案： HTML5表单支持除Microsoft Internet Explorer之外的所有浏览器中的希伯来字符。
 
 1. HTML5表单对数值字段是否有任何限制？
 
-   回答：是，HTML5表单存在一些限制。 如果位数大于picture子句中指定的计数，则这些数字不会本地化，而是以英语区域设置显示。
+   回答：是，HTML5 forms有一些限制。 如果位数大于picture子句中指定的计数，则这些数字不会本地化，而是以英语区域设置显示。
 
 1. 为什么HTML表单的大小大于PDF forms？
 
-   答案：要将XDP呈现为HTML表单，需要大量中间数据结构和对象，例如表单dom、数据dom和布局dom。
+   答案：要将XDP渲染到HTML表单，需要大量中间数据结构和对象，例如表单dom、数据dom和布局dom。
 
    对于PDF forms，Adobe Acrobat具有内置的XTG引擎，可用于创建中间数据结构和对象。 Acrobat还负责布局和脚本。
 
-   对于HTML5表单，浏览器没有内置的XTG引擎来创建中间数据结构，以及从原始XDP字节创建对象。 因此，对于HTML5表单，中间结构在服务器上生成并发送到客户端。 在客户端，基于JavaScript的脚本和布局引擎使用这些中间结构。
+   对于HTML5表单，浏览器没有内置的XTG引擎来创建中间数据结构和原始XDP字节的对象。 因此，对于HTML5表单，中间结构在服务器上生成并发送到客户端。 在客户端，基于JavaScript的脚本和布局引擎使用这些中间结构。
 
    中间结构的大小取决于原始XDP和与XDP合并的数据的大小。
 
@@ -158,42 +158,44 @@ ht-degree: 0%
    答案：当子表单设置为流动内容并且子表单具有隐藏的边框元素时，相邻放置字段的边框未正确对齐或子表单显示重叠。 要解决此问题，您可以从相应的XDP中删除或注释隐藏的&lt;border>元素。 例如，以下&lt;border>元素被标记为注释：
 
    ```xml
-               <!--<border>
+               <!--
+               <border>
                   <edge presence="hidden"/>
                   <corner thickness="0.175mm" presence="hidden"/>
-               </border> -->
+               </border>
+               -->
    ```
 
 1. 为什么屏幕阅读器无法正确处理日期/时间字段对象？
 
-   答案：屏幕阅读器不支持日期/时间字段。 但是，您可以在字段中手动输入日期/时间，以使屏幕阅读器能够阅读该字段。 使用工具提示或屏幕阅读器文本指示用户手动选择字段的日期/时间。
+   答案：屏幕阅读器不支持日期/时间字段。 However, you can manually enter date/time to the field to make the screen reader read it. Use tool-tip or screen-reader text to instruct the user to manually select date/time for the field.
 
-1. HTML5表单是否支持浮动字段的显示模式？
+1. Do HTML5 forms support display patterns for floating fields?
 
-   答案：HTML5表单不支持浮动字段的显示模式。
+   Answer: HTML5 forms do not support display patterns for floating fields.
 
-1. HTML5 Forms中日期字段的格式是什么？
-答案：日期字段接受ISO格式，YYYY-MM-DD。 如果以某种其他格式指定日期，则在用户退出该字段之前，日期字段不接受格式。
+1. What is the format of the Date field in HTML5 Forms?
+Answer: The Date field accepts the ISO format, YYYY-MM-DD. If you specify a date in some other format, the Date Field does not accept the formatting until the user tabs out of the field.
 
-### 脚本 {#scripting}
+### Scripting {#scripting}
 
-1. JavaScript实施中针对HTMLForms是否存在任何限制？
-
-   回答：
-
-   * xfa.connectionSet脚本的支持有限。 对于connectionSet，仅支持在服务器端调用Web服务。 有关详细信息，请参阅[脚本支持](/help/forms/using/scripting-support.md)。
-   * 客户端脚本不支持$record和$data。 但是，如果脚本是在formReady、layoutReady块中编写的，则脚本仍然有效，因为这些事件在服务器端运行。
-   * 不支持特定于XFA Draw元素的脚本，例如更改Draw文本（如果存在字段，则为描述文本）。
-
-1. 使用formCalc是否有任何限制？
-
-   回答：当前仅实现了formCalc脚本的子集。 有关详细信息，请参阅[脚本支持](/help/forms/using/scripting-support.md)。
-
-1. 是否有任何推荐的命名惯例以及要避免的保留关键字？
+1. Are there any limitations in JavaScript implementation for HTML Forms?
 
    回答：
-   * 在AEM Forms Designer中，建议不要以下划线(_)作为对象名称（如子表单或文本字段）的开头。 要在名称的开头使用下划线，请在下划线后添加前缀，_&lt;前缀>&lt;对象名称>。
-   * 所有HTML5 Forms API都是保留关键词。 对于自定义API/函数，请使用与[HTML5表单API](/help/forms/using/scripting-support.md)不同的名称。
+
+   * There is limited support for xfa.connectionSet script. For connectionSet, only server-side invocation of web service is supported. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
+   * There is no support for $record and $data in client side scripts. However, if the scripts are written in a formReady, layoutReady block, the scripts still work because these events run on the server side.
+   * XFA Draw element-specific scripts such as changing the Draw text (or Caption text if there are fields) are not supported.
+
+1. Are there any limitations in using formCalc?
+
+   Answer: Only a subset of the formCalc scripts is currently implemented. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
+
+1. Is there any recommended naming convention and are there any reserved keywords to avoid?
+
+   回答：
+   * In AEM Forms Designer, it is recommended not to begin the name of an object (such as a subform or a text field) with an underscore (_). To use underscore at the beginning of the name, add a prefix after the underscore,_&lt;prefix>&lt;objectname>.
+   * All HTML5 forms APIs are reserved keywords. For custom APIs/functions, use a name that is not identical to [HTML5 forms APIs](/help/forms/using/scripting-support.md).
 
 1. HTML5表单是否支持浮动字段？
 
@@ -205,18 +207,18 @@ ht-degree: 0%
 
    1. 打开CRXde Lite并导航到`/content/xfaforms/profiles/default`节点。
    1. 添加字符串类型的属性`mfDataDependentFloatingField`并将属性的值设置为`true`。
-   1. 单击&#x200B;**全部保存**。 现在，使用更新的渲染配置文件为HTMLForms启用了浮动字段。
+   1. 单击&#x200B;**全部保存**。 现在，使用更新的渲染配置文件为HTML Forms启用了浮动字段。
 
       >[!NOTE]
       >
       >要在不更新渲染配置文件的情况下为特定表单启用浮动字段，请将mfDataDependentFloatingField=true属性作为URL参数传递。
 
-1. HTML5表单是否多次执行初始化脚本和表单就绪事件？
+1. HTML5 Forms是否多次执行初始化脚本和表单就绪事件？
 
-   回答：是，初始化脚本和表单就绪事件会执行多次，在服务器上至少执行一次，在客户端执行一次。 建议基于某些业务逻辑（表单或字段数据）编写初始化或表单：ready事件等脚本，以便基于数据和幂等状态（如果数据相同）执行操作。
+   回答：是，初始化脚本和表单就绪事件会执行多次，在服务器上至少执行一次，在客户端执行一次。 建议根据某些业务逻辑（表单或字段数据）编写初始化或表单:ready事件等脚本，以便根据数据和幂等状态（如果数据相同）执行操作。
 
 ### 设计XDP {#designing-xdp}
 
-1. HTML5表单中是否有保留关键词？
+1. HTML5表单中是否有任何保留关键词？
 
-   答案：所有HTML5 Forms API都是保留关键词。 对于自定义API/函数，请使用与[HTML5表单API](/help/forms/using/scripting-support.md)不同的名称。 除了保留的关键字之外，如果您使用以下划线(_)开头的对象名称，建议在下划线后添加唯一的前缀。 添加前缀有助于避免与HTML5表单内部API发生任何可能的冲突。 例如，`_fpField1`
+   回答：所有HTML5 Forms API都是保留关键词。 对于自定义API/函数，请使用与[HTML5 Forms API](/help/forms/using/scripting-support.md)不同的名称。 除了保留的关键字之外，如果您使用以下划线(_)开头的对象名称，建议在下划线后添加唯一的前缀。 添加前缀有助于避免与HTML5 Forms内部API发生任何可能的冲突。 例如，`_fpField1`

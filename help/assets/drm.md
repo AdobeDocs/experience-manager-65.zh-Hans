@@ -1,5 +1,5 @@
 ---
-title: 资源Digital Rights Management
+title: Digital Rights Management资源
 description: 了解如何在 [!DNL Experience Manager]中管理已许可资源的资源到期状态和信息。
 contentOwner: AG
 role: User, Admin
@@ -7,18 +7,18 @@ feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '1425'
-ht-degree: 6%
+source-wordcount: '1440'
+ht-degree: 8%
 
 ---
 
-# 资源的 Digital Rights Management {#digital-rights-management-in-assets}
+# 资产的 Digital Rights Management {#digital-rights-management-in-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/drm.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 数字资产通常与指定使用条款和持续时间的许可证相关联。 由于[!DNL Adobe Experience Manager Assets]已与[!DNL Experience Manager]平台完全集成，因此您可以有效地管理资产到期信息和资产状态。 您还可以将许可信息与资产相关联。
@@ -71,12 +71,12 @@ ht-degree: 6%
 
 此外，如果故障或错误阻止调度程序在当前周期中检测过期资产，则调度程序在下个周期中重新检查这些资产并检测其过期状态。
 
-要启用[!DNL Assets]控制台以显示引用的复合资源以及过期的子资源，请在[!DNL Experience Manager]配置管理器中配置&#x200B;**[!UICONTROL Adobe CQ DAM到期通知]**&#x200B;工作流。
+要启用[!DNL Assets]控制台以显示引用的复合资产以及过期的子资产，请在[!DNL Experience Manager]配置管理器中配置&#x200B;**[!UICONTROL Adobe CQ DAM到期通知]**&#x200B;工作流。
 
 1. 打开[!DNL Experience Manager]配置管理器。
 1. 选择&#x200B;**[!UICONTROL Adobe CQ DAM到期通知]**。 默认情况下，已选择&#x200B;**[!UICONTROL 基于时间的计划程序]**，该计划程序将安排在特定时间检查某个资源是否具有过期的子资源。 作业完成后，具有过期子资产和引用资产的资产会在搜索结果中显示为已过期。
 
-1. 要定期运行该作业，请清除&#x200B;**[!UICONTROL 基于时间的计划程序规则]**&#x200B;字段，并在&#x200B;**[!UICONTROL 周期性计划程序]**&#x200B;字段中修改时间（以秒为单位）。例如，示例表达式`0 0 0 * * ?`在00小时触发作业。
+1. 要定期运行该作业，请清除&#x200B;**[!UICONTROL 基于时间的计划程序规则]**&#x200B;字段，并在&#x200B;**[!UICONTROL 周期性计划程序]**&#x200B;字段中修改时间（以秒为单位）。 例如，示例表达式`0 0 0 * * ?`在00小时触发作业。
 1. 选择&#x200B;**[!UICONTROL 发送电子邮件]**&#x200B;以在资产过期时接收电子邮件。
 
    >[!NOTE]
@@ -92,8 +92,8 @@ ht-degree: 6%
 [!DNL Assets]控制台可以显示资源的各种状态。 根据特定资产的当前状态，其卡片视图会显示一个描述其状态的标签，例如，已过期、已发布、已批准、已拒绝等。
 
 1. 在[!DNL Assets]用户界面中，选择一个资产。
-1. 单击工具栏中的&#x200B;**[!UICONTROL Publish]**。 如果在工具栏上看不到&#x200B;**Publish**，请单击工具栏上的&#x200B;**[!UICONTROL 更多]**，然后找到&#x200B;**[!UICONTROL Publish]** ![发布选项](assets/do-not-localize/publish-globe.png)选项。
-1. 从菜单中选择&#x200B;**[!UICONTROL Publish]**，然后关闭确认对话框。
+1. 单击工具栏中的&#x200B;**[!UICONTROL 发布]**。 如果在工具栏上看不到&#x200B;**发布**，请单击工具栏上的&#x200B;**[!UICONTROL 更多]**，然后找到&#x200B;**[!UICONTROL 发布]** ![发布选项](assets/do-not-localize/publish-globe.png)选项。
+1. 从菜单中选择&#x200B;**[!UICONTROL 发布]**，然后关闭确认对话框。
 1. 退出选择模式。 资源的发布状态显示在卡片视图的资源缩略图底部。 在列表视图中，已发布列显示资产的发布时间。
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
@@ -119,7 +119,7 @@ ht-degree: 6%
 
 1. 要根据资产的状态搜索资产，请单击&#x200B;**[!UICONTROL 搜索]** ![搜索选项](assets/do-not-localize/search_icon.png)以显示Omnisearch栏。
 1. 选择`Return`并单击[!DNL Experience Manager]以显示搜索面板。
-1. 在搜索面板中，单击&#x200B;**[!UICONTROL Publish状态]**，然后选择&#x200B;**[!UICONTROL 已发布]**&#x200B;以在[!DNL Assets]中搜索已发布的资源。
+1. 在搜索面板中，单击&#x200B;**[!UICONTROL 发布状态]**&#x200B;并选择&#x200B;**[!UICONTROL 已发布]**&#x200B;以在[!DNL Assets]中搜索已发布的资源。
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -127,7 +127,7 @@ ht-degree: 6%
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
-1. 要根据资产的到期状态搜索资产，请在“搜索”面板中选择&#x200B;**[!UICONTROL 到期状态]**，然后选择相应的选项。
+1. 要根据资产的过期状态搜索资产，请在“搜索”面板中选择&#x200B;**[!UICONTROL 过期状态]**，然后选择相应的选项。
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -135,7 +135,7 @@ ht-degree: 6%
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
-## 在[!DNL Assets]中Digital Rights Management {#digital-rights-management-in-assets-1}
+## [!DNL Assets]中的Digital Rights Management {#digital-rights-management-in-assets-1}
 
 此功能强制接受许可协议，然后才能从[!DNL Adobe Experience Manager Assets]下载许可资产。
 
@@ -152,7 +152,7 @@ ht-degree: 6%
 >
 >已弃用用于存储[!DNL Experience Manager]早期版本中的许可证的位置`/etc/dam/drm/licenses`。
 >
->如果您创建或修改许可证页，或者从以前的[!DNL Experience Manager]版本移植它们，Adobe建议您将它们存储在`/apps/settings/dam/drm/licenses`或`/conf/&ast;/settings/dam/drm/licenses`下。
+>如果您创建或修改许可证页，或者从以前的[!DNL Experience Manager]版本移植这些许可证页，Adobe建议您将它们存储在`/apps/settings/dam/drm/licenses`或`/conf/&ast;/settings/dam/drm/licenses`下。
 
 ### 下载受DRM保护的资产 {#downloading-drm-assets}
 

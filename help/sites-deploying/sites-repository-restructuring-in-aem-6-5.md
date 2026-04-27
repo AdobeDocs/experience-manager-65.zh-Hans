@@ -1,6 +1,6 @@
 ---
-title: AEM 6.5中的Sites存储库重构
-description: 了解如何进行必要的更改，以迁移到AEM 6.5 for Sites中的新存储库结构。
+title: AEM 6.5 中的 Sites 存储库重构
+description: 了解如何进行必要的更改，以迁移到AEM 6.5中的新存储库结构以供站点使用。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
@@ -8,18 +8,18 @@ feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1494'
 ht-degree: 1%
 
 ---
 
-# AEM 6.5中的Sites存储库重构 {#sites-repository-restructuring-in-aem}
+# AEM 6.5 中的 Sites 存储库重构 {#sites-repository-restructuring-in-aem}
 
-如AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Sites解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
+如AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Sites解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
-升级为6.5的&#x200B;**&#x200B;**
+升级为6.5的&#x200B;****
 
 * [ContextHub 区段](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#contexthub-segments)
 
@@ -54,14 +54,14 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>如果有任何新区段或修改的ContextHub区段是在源代码管理中编辑的，而不是在AEM中编辑的，则必须将它们迁移到新位置：</p>
+   <td><p>如果有任何新区段或修改的ContextHub区段在源代码管理中编辑，而不是在AEM中编辑，则必须将它们迁移到新位置：</p>
     <ol>
      <li>将任何新区段或修改的ContextHub区段从上一个位置复制到适当的新位置（/<code>apps</code>、<code>/conf/global</code>或<code>/conf/&lt;tenant&gt;</code>）</li>
      <li>将先前位置中对ContextHub区段的引用更新为新位置(<code>/apps</code>、<code>/conf/global</code>、<code>/conf/&lt;tenant&gt;</code>)中已迁移的ContextHub区段。</li>
-    </ol> <p>以下QueryBuilder查询将查找对ContextHub区段的所有引用，并位于以前的位置。<br /> <br /> <code class="code">path=/content
+    </ol> <p>以下QueryBuilder查询找到以前位置对ContextHub区段的所有引用。<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br />可以通过<a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM QueryBuilder Debugger UI</a>执行此命令。 请注意，这是一个遍历查询，因此不要对生产运行它，并确保根据需要调整遍历限制。</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> 可以通过<a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM QueryBuilder Debugger UI</a>执行这项操作。 请注意，这是一个遍历查询，因此不要对生产运行它，并确保根据需要调整遍历限制。</p> </td>
   </tr>
   <tr>
    <td><strong>注释</strong></td>
@@ -69,7 +69,7 @@ ht-degree: 1%
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
      <li>/etc/segment/geometrixx-outdoors</li>
-    </ul> <p>注意：如果ClientContext正在使用，建议转换为ContextHub。</p> </td>
+    </ul> <p>注意：如果正在使用ClientContext，建议转换为ContextHub。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -93,7 +93,7 @@ ht-degree: 1%
    <td><p>这些客户端库的任何自定义使用都应按类别而不是路径引用客户端库：</p>
     <ol>
      <li>应更新以前位置按路径对客户端库的任何引用，以使用<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM的客户端库引用框架</a>。</li>
-     <li>如果无法使用AEM客户端库引用框架，可以通过AEM客户端库代理servlet引用客户端库的绝对路径。
+     <li>如果无法使用AEM的客户端库引用框架，则可以通过AEM的客户端库代理servlet引用客户端库的绝对路径。
       <ul>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/appmeasurement.js</code></li>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/plugins.js</code></li>
@@ -167,7 +167,7 @@ ht-degree: 1%
    <td>必须将任何新的移动设备模拟器配置迁移到新位置。
     <ol>
      <li>将任何新的移动设备模拟器配置从上一个位置复制到新位置(<code>/apps</code>、<code>/conf/global</code>、<code>/conf/&lt;tenant&gt;</code>)。</li>
-     <li>对于依赖于这些移动设备模拟器配置的任何AEM Sites页面，请更新页面的<span class="code">
+     <li>对于依赖于这些Mobile Device Emulator配置的任何AEM Sites页面，请更新页面的 <span class="code">
        <code>
         jcr
        </code>
@@ -177,10 +177,10 @@ ht-degree: 1%
        <code>
         deviceGroups
        </code> = String[ mobile/groups/responsive ]</span></li>
-     <li>对于依赖这些移动设备模拟器配置的任何可编辑模板，请更新可编辑模板，并指向<span class="code">
+     <li>对于依赖这些移动设备模拟器配置的任何可编辑模板，请更新可编辑模板，并指向 <span class="code">
        <code>
         cq
-       </code>：
+       </code>:
        <code>
         deviceGroups
        </code></span>到新位置。</li>
@@ -210,7 +210,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>新位置</strong></td>
-   <td><p><code>/apps/msm</code> （客户Blueprint配置）</p> <p><code>/libs/msm</code> (适用于Screens、Commerce的现成Blueprint配置)</p> </td>
+   <td><p><code>/apps/msm</code> （客户Blueprint配置）</p> <p><code>/libs/msm</code> （适用于Screens、Commerce的现成Blueprint配置）</p> </td>
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
@@ -244,7 +244,7 @@ ht-degree: 1%
    <td><p>任何新的或修改的多站点管理器转出配置必须迁移到新位置。</p>
     <ol>
      <li>将任何新的或修改过的多站点管理器转出配置从上一个位置复制到新位置(<code>/apps</code>)。</li>
-     <li>将AEM页面上的任何引用更新到上一位置的多站点管理器转出配置，以指向新位置（<code>/libs</code>或<code>/apps</code>）中的对应项。</li>
+     <li>将AEM页面上的任何引用更新为上一个位置的多站点管理器转出配置，以指向新位置（<code>/libs</code>或<code>/apps</code>）中的对应项。</li>
     </ol> <p>从上一个位置删除已迁移的多站点管理器转出配置。</p> </td>
   </tr>
   <tr>
@@ -361,7 +361,7 @@ ht-degree: 1%
      <li>将设计中的所有CSS、JavaScript和静态资源转换为具有<code>allowProxy = true</code>的<a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">客户端库</a>。</li>
      <li>通过<strong>AEM &gt;站点&gt;自定义站点页面&gt;页面属性&gt;高级选项卡&gt;设计字段</strong>，更新对<code>cq:designPath</code>属性中先前位置的引用。</li>
      <li>更新任何引用了先前位置的页面以使用新的客户端库类别（这需要更新页面实施代码）。</li>
-     <li>更新AEM Dispatcher规则以允许通过<code>/etc.clientlibs/</code>代理servlet提供客户端库。</li>
+     <li>更新AEM Dispatcher规则，以允许通过<code>/etc.clientlibs/</code>代理servlet提供客户端库。</li>
     </ol> <p>对于未在SCM中管理并通过设计对话框修改运行时的任何设计：</p>
     <ul>
      <li>请勿将可创作设计移出<code>/etc</code>。</li>
@@ -374,7 +374,8 @@ ht-degree: 1%
  </tbody>
 </table>
 
-<!-- Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
+<!--
+Search&Promote is end of life as of September 1, 2022 ### Adobe Search and Promote Integration Client Libraries {#adobe-search-and-promote-integration-client-libraries}
 
 <table>
  <tbody>
@@ -405,7 +406,8 @@ ht-degree: 1%
     </ul> </td>
   </tr>
  </tbody>
-</table> -->
+</table>
+-->
 
 ### Adobe Target集成客户端库 {#adobe-target-integration-client-libraries}
 
@@ -424,7 +426,7 @@ ht-degree: 1%
    <td><p>这些客户端库的任何自定义使用都应按类别而不是路径引用客户端库。</p>
     <ol>
      <li>应更新以前位置按路径对客户端库的任何引用，以使用<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM的客户端库引用框架</a>。</li>
-     <li>如果无法使用AEM客户端库引用框架，可以通过AEM客户端库代理servlet引用客户端库的绝对路径：</li>
+     <li>如果无法使用AEM的客户端库引用框架，则可以通过AEM的客户端库代理servlet引用客户端库的绝对路径：</li>
     </ol>
     <ul>
      <li><code>/etc.clientlibs/cq/testandtarget/clientlibs/testandtarget/testandtarget.js</code></li>
@@ -469,7 +471,7 @@ ht-degree: 1%
    <td><p>这些客户端库的任何自定义使用都应按类别而不是路径引用客户端库。</p>
     <ol>
      <li>应更新以前位置按路径对客户端库的任何引用，以使用<a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">AEM的客户端库引用框架</a>。</li>
-     <li>如果无法使用AEM客户端库引用框架，可以通过AEM客户端库代理servlet引用客户端库的绝对路径。</li>
+     <li>如果无法使用AEM的客户端库引用框架，则可以通过AEM的客户端库代理servlet引用客户端库的绝对路径。</li>
     </ol>
     <ul>
      <li><code>/etc.clientlibs/wcm/foundation/clientlibs/accessibility.css</code></li>

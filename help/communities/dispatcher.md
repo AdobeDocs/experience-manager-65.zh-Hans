@@ -9,10 +9,10 @@ exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 7%
+source-wordcount: '685'
+ht-degree: 15%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 7%
 
 了解您的特定部署和站点设计所需的内容
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
 
-另请参阅主[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)。
+另请参阅主[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
 
 ## Dispatcher缓存 {#dispatcher-caching}
 
@@ -42,7 +42,7 @@ AEM Communities的Dispatcher缓存让Dispatcher能够为社区站点的页面提
 
 ### 要求 {#requirements}
 
-* Dispatcher版本4.1.2或更高版本(有关最新版本，请参阅[安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=zh-Hans))
+* Dispatcher版本4.1.2或更高版本（有关最新版本，请参阅[安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)）
 * [ACS AEM Commons包](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * 版本3.3.2或更高版本
@@ -62,14 +62,14 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
   ![调度程序](assets/dispatcher.png)
 
 * **筛选模式**
-  *（必需）*&#x200B;一条或多条指向社区页面的路径。 例如：`/content/sites/engage/(.*)`。
+  *（必需）*&#x200B;一条或多条指向社区页面的路径。 例如 `/content/sites/engage/(.*)`。
 
 * **Cache-Control最大保留时间**
   *（必需）*&#x200B;要添加到Cache Control标头的最长时间（以秒为单位）。 该值必须大于零(0)。
 
 ## Dispatcher筛选器 {#dispatcher-filters}
 
-`dispatcher.any`文件的/filter部分记录在[配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)中。
+`dispatcher.any`文件的/filter部分记录在[配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)中。
 
 本节介绍社区功能正常运行可能需要的条目。
 
@@ -79,7 +79,7 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 另请参阅：
 
-* [Dispatcher安全核对清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=zh-Hans)
+* [Dispatcher 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >
@@ -89,12 +89,13 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 >[!CAUTION]
 >
->请参阅 [Dispatcher 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=zh-Hans)以了解使用 Dispatcher 限制访问时的更多注意事项。有关 AEM 安装的其他安全详细信息，另请阅读 [AEM 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)。
+>请参阅 [Dispatcher 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)以了解使用 Dispatcher 限制访问时的更多注意事项。 有关 AEM 安装的其他安全详细信息，另请阅读 [AEM 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
 >
 
 应将以下条目添加到/filter部分的末尾，尤其是在所有被拒绝的条目之后。
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -158,7 +159,8 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 ```
 
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # design and template assets
@@ -226,7 +228,8 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 `dispatcher.any`的规则部分定义根据所请求的URL应缓存哪些响应。 对于社区，规则部分用于定义绝不应缓存的内容。
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -248,7 +251,8 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 /0208 { /type "deny" /url "/content/usergenerated/*" }
 ```
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # Never cache the client-side .social.json calls
@@ -280,7 +284,8 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 以下是包含Communities /filters和/rules的示例`dispatcher.any`文件。
 
-<!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
+<!--
+New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
 
 ```shell
@@ -594,7 +599,8 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
   }
 ```
 
-<!-- existing content as of Dec 10, wrt CQDOC-16081
+<!--
+existing content as of Dec 10, wrt CQDOC-16081
 
 ```shell
 # Each farm configures a set of load balanced renders (that is, remote servers)

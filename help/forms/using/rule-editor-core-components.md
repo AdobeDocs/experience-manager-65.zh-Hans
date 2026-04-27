@@ -5,10 +5,10 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 7b6b2adaf4dfc843aeb054c7db834cebd211f2ed
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5588'
-ht-degree: 1%
+source-wordcount: '5734'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 规则编辑器功能有助于表单业务用户和开发人员编写关于自适应表单对象的规则。 这些规则根据预设条件、用户输入和用户对表单的操作，定义要在表单对象上触发的操作。 它有助于进一步简化表单填写体验，确保准确性和速度。
 
-规则编辑器提供了用于编写规则的直观且简化的用户界面。 规则编辑器为所有用户提供可视编辑器。<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. -->使用规则对自适应表单对象执行的一些关键操作包括：
+规则编辑器提供了用于编写规则的直观且简化的用户界面。 规则编辑器为所有用户提供可视编辑器。<!-- In addition, only for forms power users, rule editor provides a code editor to write rules and scripts. --> 使用规则对自适应表单对象执行的一些关键操作包括：
 
 * 显示或隐藏对象
 * 启用或禁用对象
@@ -41,7 +41,7 @@ ht-degree: 1%
 
 规则编辑器提供了一组预定义的规则类型（如When、Show、Hide、Enable、Disable、Set Value Of和Validate）以帮助您编写规则。 每种规则类型均允许您定义规则中的条件和操作。 本文档进一步详细说明了每种规则类型。
 
-规则通常遵循以下结构之一：
+规则通常遵循下面的其中一个结构：
 
 **Condition-Action**&#x200B;在此构造中，规则首先定义条件，然后定义要触发的操作。 该构造在编程语言中与`if-then statement`相当。
 
@@ -71,8 +71,8 @@ ht-degree: 1%
 
 * 要根据多个条件触发操作，建议使用action-condition构造。 例如，要通过评估字段B、C和D的条件来显示和隐藏字段A，请在字段A上使用显示或隐藏规则类型。
 * 如果规则包含一个条件的一个操作，则使用condition-action或action condition结构。
-* 如果规则检查条件，并在字段中提供值或退出字段时立即执行操作，则建议在评估条件的字段中编写具有condition-action结构或When规则类型的规则。
-* 当用户更改应用When规则的对象的值时，将评估When规则中的条件。 但是，如果您希望操作在服务器端更改时触发（如预填充值），则建议编写一个When规则以在字段初始化时触发操作。
+* If a rule checks for a condition and performs an action immediately on providing a value in a field or exiting a field, it is recommended to write a rule with condition-action construct or the When rule type on the field on which the condition is evaluated.
+* The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. However, if you want the action to trigger when the value changes on the server side, like for prepopulating the value, it is recommended to write a When rule that triggers the action when the field is initialized.
 * 在编写下拉列表、单选按钮或复选框对象的规则时，表单中这些表单对象的选项或值会在规则编辑器中预填充。
 
 ## 规则编辑器中的可用运算符类型和事件 {#available-operator-types-and-events-in-rule-editor}
@@ -84,10 +84,10 @@ ht-degree: 1%
 * **开头为**
 * **结尾为**
 * **包含**
-* **不包含**
+* **Does not contain**
 * **为空**
 * **不为空**
-* **已选择：**&#x200B;当用户为复选框、下拉列表或单选按钮选择特定选项时，返回true。
+* **Has Selected:** Returns true when the user selects a particular option for a checkbox, drop-down, or a radio button.
 * **已初始化（事件）：**&#x200B;当表单对象在浏览器中呈现时返回true。
 * **Is Changed (event)：**&#x200B;当用户更改表单对象的输入值或选定选项时，返回true。
 
@@ -95,13 +95,14 @@ ht-degree: 1%
 * **Navigation(event):** Returns true when the user clicks a navigation object. Navigation objects are used to move between panels. 
 * **Step Completion(event):** Returns true when a step of a rule completes.
 * **Successful Submission(event):** Returns true on successful submission of data to a form data model.
-* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model. -->
+* **Error in Submission(event):**  Returns true on unsuccessful submission of data to a form data model.
+-->
 
 ## 规则编辑器中的可用规则类型 {#available-rule-types-in-rule-editor}
 
 规则编辑器提供了一组可用于编写规则的预定义规则类型。 让我们详细了解一下每种规则类型。 有关在规则编辑器中编写规则的更多信息，请参阅[编写规则](rule-editor.md#p-write-rules-p)。
 
-### [!UICONTROL 时间] {#whenruletype}
+### [!UICONTROL 如果] {#whenruletype}
 
 **[!UICONTROL When]**&#x200B;规则类型遵循&#x200B;**condition-action-alternate action**&#x200B;规则结构，有时只遵循&#x200B;**condition-action**&#x200B;结构。 在此规则类型中，首先指定评估条件，然后指定满足该条件时要触发的操作(`True`)。 在使用When规则类型时，您可以使用多个AND和OR运算符来创建[嵌套表达式](#nestedexpressions)。
 
@@ -117,7 +118,7 @@ ht-degree: 1%
 
 `Action 2 on Object B;`
 `AND`
-`Action 3 on Object C`；
+`Action 3 on Object C`;
 
 `Else, do the following:`
 
@@ -184,13 +185,14 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 1. Add the **key** and **value** pair as follows:
    * key: fd:changeEventBehaviour
    * value: deps
-1. Click **[!UICONTROL Done]**. -->
+1. Click **[!UICONTROL Done]**.
+-->
 
 如果When条件功能中允许的多个字段遇到任何问题，请按照以下疑难解答步骤操作：
 
-1. 在编辑模式下打开表单。
+1. 在编辑模式下打开该表单。
 1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
-1. 单击指南容器属性![指南属性](/help/forms/using/assets/configure-icon.svg)图标。这将打开“自适应表单容器”对话框。
+1. 单击指南容器属性![指南属性](/help/forms/using/assets/configure-icon.svg)图标。 这将打开“自适应表单容器”对话框。
 1. 单击完成，然后再次保存对话框。
 
 **[!UICONTROL 隐藏]**&#x200B;隐藏指定的对象。
@@ -256,14 +258,16 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 函数输出]**&#x200B;根据预定义的函数或自定义函数定义规则。
 
-**[!UICONTROL 导航到]**&#x200B;导航到其他<!--Interactive Communications,-->自适应Forms、其他资源（如图像或文档片段）或外部URL。<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
+**[!UICONTROL 导航到]**导航到其他自适应Forms、其他资源（如图像或文档片段）或外部URL。
+<!--Interactive Communications,-->
+<!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
 **[!UICONTROL 调度事件]**&#x200B;根据预定义的条件或事件触发特定操作或行为。
 
 
 ### [!UICONTROL 设置值] {#set-value-of}
 
-**规则类型的**&#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
+]**规则类型的**[!UICONTROL &#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
 
 **Set Value Of**&#x200B;规则类型不适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
 
@@ -277,15 +281,15 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 时间（可选）：
 
-（条件 1 和条件 2 和条件 3）为 TRUE;
+（条件1和条件2和条件3）为TRUE；
 
-下面的示例选择 as `True` 的值`Question2`并设置 as `correct`的值`Result`。
+以下示例选择`Question2`的值作为`True`，并将`Result`的值设置为`correct`。
 
 ![Set-value-web-service](assets/set-value-web-service.png)
 
-使用表单数据模型服务的设置值规则示例。
+使用表单数据模型服务的设置值规则的示例。
 
-### [!UICONTROL 显示] {#show}
+### [!UICONTROL 节目] {#show}
 
 使用&#x200B;**[!UICONTROL Show]**&#x200B;规则类型，您可以编写规则以根据条件是否满足来显示或隐藏表单对象。 Show规则类型还会触发Hide操作，以防条件不满足或返回`False`。
 
@@ -385,7 +389,8 @@ To define a rule based on a form data model:
 1. Select a data model object property from the **[!UICONTROL Display Value]** drop-down list. The number of checkboxes in the Adaptive Form is derived from the number of instances defined for that property in the database.
 1. Select a data model object property from the **[!UICONTROL Save Value]** drop-down list.
 
-![FDM set options](assets/fdm_set_options_new.png) -->
+![FDM set options](assets/fdm_set_options_new.png)
+-->
 
 ## 了解规则编辑器用户界面 {#understanding-the-rule-editor-user-interface}
 
@@ -432,7 +437,7 @@ To define a rule based on a form data model:
 
 ### C.表单对象和功能切换 {#c-form-objects-and-functions-toggle-br}
 
-点按切换按钮可切换表单对象和函数窗格。
+点击切换按钮，可切换表单对象和功能窗格。
 
 ### D.可视规则编辑器 {#visual-rule-editor}
 
@@ -455,13 +460,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ### E.完成和取消按钮 {#done-and-cancel-buttons}
 
-**[!UICONTROL Done]**&#x200B;按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整是无效的，不会运行。 下次从同一表单对象启动规则编辑器时，将列出表单对象上保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅 [管理规则](rule-editor.md#p-manage-rules-p)。
+**[!UICONTROL 完成]**&#x200B;按钮用于保存规则。 您可以保存不完整的规则。 但是，不完整部分无效，因此不会运行。 当您下次从同一表单对象启动规则编辑器时，会列出表单对象中已保存的规则。 您可以在该视图中管理现有规则。 有关详细信息，请参阅[管理规则](rule-editor.md#p-manage-rules-p)。
 
-“ **[!UICONTROL 取消]** ”按钮将放弃对规则所做的任何更改并关闭规则编辑器。
+使用&#x200B;**[!UICONTROL 取消]**&#x200B;按钮可放弃对规则所做的任何更改并关闭规则编辑器。
 
-## 编写规则 {#write-rules}
+## 写入规则 {#write-rules}
 
-您可以使用可视化规则编辑器编写规则 <!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->
+您可以使用可视规则编辑器<!-- or the code editor. When you launch the rule editor the first time, it opens in the visual editor mode. You can switch to the code editor mode and write rules. However, if you write or modify a rule in code editor, you cannot switch to the visual editor for that rule unless you clear the code editor. When you launch the rule editor next time, it opens in the mode that you used last to create rule. -->编写规则
 
 我们首先看一下如何使用可视编辑器编写规则。
 
@@ -471,7 +476,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ![Create-rule-example](assets/create-rule-example.png)
 
-示例贷款申请表中的“贷款要求”部分要求申请人指定其婚姻状况、工资，如果已婚，则说明其配偶的工资。 根据用户输入，规则将计算贷款资格金额，并显示在贷款资格字段中。 应用以下规则来实施方案：
+示例贷款申请表中的“贷款要求”部分要求申请人指定其婚姻状况、工资，如果已婚，还须指定其配偶的工资。 根据用户输入，规则将计算贷款资格金额，并显示在贷款资格字段中。 应用以下规则来实施方案：
 
 * 配偶的“薪金”字段仅在婚姻状况为已婚时显示。
 * 贷款资格金额为工资总额的50%。
@@ -492,11 +497,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-<!--  In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+<!--
+In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
-   ![Radio button values from rule editor](assets/radio-button-values.png)-->
+   ![Radio button values from rule editor](assets/radio-button-values.png)
+   -->
 
-1. 在规则的&#x200B;**[!UICONTROL 输入字符串]**&#x200B;字段中，从下拉菜单中选择&#x200B;**已婚**。
+1. In the **[!UICONTROL Enter a String]** field in the rule, select **Married** from drop-down menu.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -506,19 +513,19 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**[!UICONTROL  Warbant Salary ]**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
-   接下来，定义此条件为False时要执行的操作。
-1. 单击&#x200B;**[!UICONTROL 添加其他部分]**&#x200B;为&#x200B;**[!UICONTROL 配偶薪金]**&#x200B;字段添加其他条件，以防您选择婚姻状况作为单身。
+   Next, define the action to perform if this condition is False.
+1. Click **[!UICONTROL Add Else Section]** to add another condition for the **[!UICONTROL Spouse Salary]** field, in case you select Marital Status as single.
 
    ![when-else](assets/when-else.png)
 
-1. 在Else语句中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]**。
+1. In the Else statement, select **[!UICONTROL Hide]** from the **[!UICONTROL Select Action]** drop-down.
    ![when-else](assets/when-else-1.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**[!UICONTROL  Warbant Salary ]**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**字段，该字段列出了表单中的所有表单对象。
    ![when-else](assets/when-else-2.png)
 
    规则在规则编辑器中如下所示。
@@ -527,12 +534,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 
 
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存规则。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存规则。
 
 <!--
 1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png) -->
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+   -->
 
 >[!NOTE]
 >
@@ -548,41 +556,41 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-10](assets/write-rules-visual-editor-10-cc.png)
 
-1. 选择&#x200B;**[!UICONTROL 选择选项]**&#x200B;并选择&#x200B;**[!UICONTROL 数学表达式]**。 用于编写数学表达式的字段打开。
+1. 选择&#x200B;**[!UICONTROL 选择选项]**，并选择&#x200B;**[!UICONTROL 数学表达式]**。 打开用于编写数学表达式的字段。
 
    ![write-rules-visual-editor-11](assets/write-rules-visual-editor-11-cc.png)
 
 1. 在表达式字段中：
 
-   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B; Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**[!UICONTROL  Salary ]**字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 加号]**。
 
-   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的**&#x200B;[!UICONTROL &#x200B; Berphor Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的**[!UICONTROL  Berphor Salary ]**字段，或选择此处]**&#x200B;字段。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
-1. 接下来，在表达式字段周围高亮显示的区域中选择，然后选择&#x200B;**[!UICONTROL 扩展表达式]**。
+1. 接下来，选择表达式字段周围的突出显示区域，并选择&#x200B;**[!UICONTROL 扩展表达式]**。
 
    ![write-rules-visual-editor-13](assets/write-rules-visual-editor-13-cc.png)
 
-   在扩展表达式字段中，从&#x200B;**[!UICONTROL Select Operator]**&#x200B;字段中选择&#x200B;**[!UICONTROL 除以]**&#x200B;并从&#x200B;**[!UICONTROL Select Option]**&#x200B;字段中选择&#x200B;**[!UICONTROL Number]**。 然后在数字字段中指定&#x200B;**[!UICONTROL 2]**。
+   在扩展表达式字段中，从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 除以]**，并从&#x200B;**[!UICONTROL 选择选项]**&#x200B;字段中选择&#x200B;**[!UICONTROL 数字]**。 然后在数字字段中指定&#x200B;**[!UICONTROL 2]**。
 
    ![write-rules-visual-editor-14](assets/write-rules-visual-editor-14-cc.png)
 
    >[!NOTE]
    >
-   >您可以使用“选择选项”字段中的组件、函数、数学表达式和属性值来创建复杂的表达式。
+   >您可以从“选择选项”字段中使用组件、函数、数学表达式和属性值来创建复杂表达式。
 
-   接下来，创建一个条件，当返回 True 时，表达式将执行。
+   接下来，创建一个条件，当该条件返回True时，表达式将执行。
 
-1. 选择“添加条件&#x200B;**”**&#x200B;以添加 When 语句。
+1. 选择&#x200B;**[!UICONTROL 添加条件]**&#x200B;以添加When语句。
 
    ![write-rules-visual-editor-15](assets/write-rules-visual-editor-15-cc.png)
 
    在When语句中：
 
-   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B;婚姻状况&#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
+   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**[!UICONTROL &#x200B;婚姻状况&#x200B;]**字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL Select Operator]**&#x200B;字段中选择&#x200B;**[!UICONTROL 等于]**。
 
@@ -590,9 +598,9 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    规则编辑器中的结果如下所示。  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
-1. 选择&#x200B;**[!UICONTROL 完成]**。 保存规则。
+1. 选择&#x200B;**[!UICONTROL 完成]**。 It saves the rule.
 
-1. 重复步骤7至14，定义另一条规则，以计算婚姻状况为“单身”的贷款资格。 规则在规则编辑器中如下所示。
+1. Repeat steps 7 through 14 to define another rule to compute the loan eligibility if the marital Status is Single. 规则在规则编辑器中如下所示。
 
    ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17-cc.png)
 
@@ -600,16 +608,17 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
 
-您可以使用Else条件编写组合规则，以控制“配偶薪金”字段的可见性，并在婚姻状况为“已婚”时计算贷款资格。
+You can write a combined rule to control visibility of the Spouse Salary field and compute loan eligibility when the Marital Status is Married using the Else condition.
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
 
 
-<!-- ### Using code editor {#using-code-editor}
+<!--
+### Using code editor {#using-code-editor}
 
 Users added to the forms-power-users group can use code editor. The rule editor auto generates the JavaScript code for any rule you create using visual editor. You can switch from visual editor to the code editor to view the generated code. However, if you modify the rule code in the code editor, you cannot switch back to the visual editor. If you prefer writing rules in code editor rather than visual editor, you can write rules afresh in the code editor. The visual-code editors switcher helps you switch between the two modes.
 
-The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javascript-api/index.html).
+The code editor JavaScript is the expression language of Adaptive Forms. All the expressions are valid JavaScript expressions and use Adaptive Forms scripting model APIs. These expressions return values of certain types. For the complete list of Adaptive Forms classes, events, objects, and public APIs, see [JavaScript Library API reference for Adaptive Forms](https://helpx.adobe.com/experience-manager/6-5/forms/javascript-api/index.html).
 
 For more information about guidelines to write rules in the code editor, see [Adaptive Form Expressions](adaptive-form-expressions.md).
 
@@ -628,7 +637,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### 规则编辑器中的自定义函数 {#custom-functions}
 
-除了在&#x200B;**函数输出**&#x200B;下列出的现成函数（如&#x200B;*总和*）之外，您还可以在规则编辑器中使用自定义函数。 规则编辑器支持脚本和自定义函数的JavaScript ECMAScript 2019语法。 有关创建自定义函数的说明，请参阅文章[自适应Forms中的自定义函数](/help/forms/using/create-and-use-custom-functions-core-components.md)
+Apart from the out-of-the-box functions like *Sum of* that are listed under **Functions Output**, you can also use custom functions in your rule editor. Rule editor supports JavaScript ECMAScript 2019 syntax for scripts and custom functions. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/using/create-and-use-custom-functions-core-components.md)
 
 <!--
 
@@ -711,7 +720,7 @@ For example, you want to add a custom function which calculates area of a square
 
 To create a client library and add it in the CRX repository, perform the following steps:
 
-1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html?lang=zh-Hans#developing).
+1. Create a client library. For more information, see [Using Client-Side Libraries](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/full-stack/clientlibs.html#developing).
 2. In CRXDE, add a property `categories`with string type value as `customfunction` to the `clientlib` folder.
 
    >[!NOTE]
@@ -807,7 +816,7 @@ var c = {
 
 选择表单对象并选择![edit-rules1](assets/edit-rules-icon.svg)时，会列出该对象上的任何现有规则。 您可以查看标题并预览规则摘要。 此外，您还可以通过UI展开和查看完整的规则摘要、更改规则的顺序、编辑规则以及删除规则。
 
-![列表规则](assets/list-rules-cc.png)
+![List-rules](assets/list-rules-cc.png)
 
 您可以对规则执行以下操作：
 
@@ -846,7 +855,7 @@ var c = {
    >
    >仅当表单对象支持复制的规则事件时，才能将规则粘贴到另一个表单对象。 例如，按钮支持click事件。 您可以将包含点击事件的规则粘贴到按钮，但不能粘贴到复选框。
 
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存规则。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存规则。
 
 ## 嵌套表达式 {#nestedexpressions}
 
@@ -864,9 +873,9 @@ var c = {
 
 规则编辑器允许您使用日期比较来创建条件。
 
-下面是一个示例条件，如果房屋的抵押已经获得，则显示静态文本对象，用户通过填写日期字段来表示。
+以下是一个示例条件，当房屋抵押贷款已被抵押时，该条件会显示一个静态文本对象，用户通过填写日期字段来表示该条件。
 
-当用户填写的财产抵押日期是过去时，自适应表单将显示有关收入计算的注释。 以下规则将用户填写的日期与当前日期进行比较，如果用户填写的日期早于当前日期，则表单将显示文本消息（名为“收入”）。
+当用户填写的财产抵押日期为过去时，自适应表单会显示有关收入计算的说明。 以下规则将用户填写的日期与当前日期进行比较，如果用户填写的日期早于当前日期，则表单将显示文本消息（名为Income）。
 
 ![日期表达式条件](assets/dateexpressioncondition.png)
 
@@ -878,7 +887,7 @@ var c = {
 
 规则编辑器可让您创建比较两个数字的条件。
 
-下面是一个示例条件，如果申请人在当前地址停留的月数少于 36 个月，则显示静态文本对象。
+下面是一个示例条件，它显示申请人在当前地址停留的月数小于36时的静态文本对象。
 
 ![数字比较条件](assets/numbercomparisoncondition.png)
 
@@ -886,11 +895,13 @@ var c = {
 
 ![已请求更多校对](assets/additionalproofrequested.png)
 
-<!-- ## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
+<!--
+## Impact of rule editor on existing scripts {#impact-of-rule-editor-on-existing-scripts}
 
 In [!DNL Experience Manager Forms] versions prior to [!DNL Experience Manager 6.1 Forms] feature pack 1, form authors and developers used to write expressions in the Scripts tab of the Edit component dialog to add dynamic behavior to Adaptive Forms. The Scripts tab is now replaced by the rule editor.
 
-Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor. -->
+Any scripts or expressions that you must have written in the Scripts tab are available in the rule editor. While you cannot view or edit them in visual editor, if you are a part of the forms-power-users group you can edit scripts in code editor.
+-->
 
 ## 示例规则 {#example}
 
@@ -910,9 +921,9 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 在贷款申请表中，您要获取贷款申请人是否为现有客户。 根据用户提供的信息，客户ID字段应显示或隐藏。 此外，如果用户是现有客户，则还需要将焦点设置为“客户ID”字段。 贷款申请表包括以下组成部分：
 
-* 单选按钮&#x200B;**[!UICONTROL 您是现有Geometrixx客户吗？]**，提供[!UICONTROL 是]和[!UICONTROL 否]选项。 “是”的值为&#x200B;**0**，“否”的值为&#x200B;**1**。
+* 单选按钮&#x200B;**[!UICONTROL 您是现有Geometrixx客户吗？]**，它提供了[!UICONTROL 是]和[!UICONTROL 否]选项。 “是”的值为&#x200B;**0**，“否”的值为&#x200B;**1**。
 
-* 用于指定客户ID的文本字段&#x200B;**[!UICONTROL 客户ID]** Geometrixx。
+* 用于指定客户ID的文本字段&#x200B;**[!UICONTROL Geometrixx客户ID]**。
 
 在用于实施此行为的单选按钮上编写When规则时，该规则在可视规则编辑器中如下所示。
 
@@ -922,11 +933,13 @@ Any scripts or expressions that you must have written in the Scripts tab are ava
 
 在示例规则中，When部分中的语句是条件，当返回True时，该条件将执行Then部分中指定的操作。
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![when-rule-example-code](assets/when-rule-example-code.png) 
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### 在规则中使用函数输出 {#using-a-function-output-in-a-rule}
 
@@ -946,21 +959,25 @@ Rule in the code editor -->
 
 可视编辑器中的规则
 
-<!-- he rule appears as follows in the code editor.
+<!--
+he rule appears as follows in the code editor.
 
 ![example-function-output-code](assets/example-function-output-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->
 
 ### 使用表达式验证字段值 {#validating-a-field-value-using-expression}
 
 在上一个示例中说明的采购订单表单中，您需要限制用户订购任何数量超过此10000价的产品。 要执行此验证，您可以编写验证规则，如下所示。
 
-![Example-validate](assets/example-validate.png)
+![示例 — 验证](assets/example-validate.png)
 可视编辑器中的规则
 
-<!-- The rule appears as follows in the code editor.
+<!--
+The rule appears as follows in the code editor.
 
 ![example-validate-code](assets/example-validate-code.png)
 
-Rule in the code editor -->
+Rule in the code editor
+-->

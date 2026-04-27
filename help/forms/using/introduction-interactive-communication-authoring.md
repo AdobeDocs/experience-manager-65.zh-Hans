@@ -1,5 +1,5 @@
 ---
-title: 交互式通信创作UI简介
+title: 交互式通信创作 UI 简介
 description: 介绍可用于创作交互式通信的各种用户界面元素
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,18 +9,18 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1318'
-ht-degree: 10%
+source-wordcount: '1316'
+ht-degree: 11%
 
 ---
 
-# 交互式通信创作UI简介{#introduction-to-interactive-communication-authoring-ui}
+# 交互式通信创作 UI 简介{#introduction-to-interactive-communication-authoring-ui}
 
 用于创作[交互式通信](/help/forms/using/interactive-communications-overview.md)的用户界面是直观的，为创作交互式通信的打印和Web渠道提供了以下功能：
 
-* 所见即所得拖放文档编辑器
+* WYSIWYG拖放文档编辑器
 * 集成的资产存储库 — 可在交互式通信创作界面的资产浏览器中找到上传到服务器上并在其上创建的资产
 
 当您[创建或编辑现有的交互式通信](../../forms/using/create-interactive-communication.md)时，使用以下用户界面元素：
@@ -40,9 +40,11 @@ ht-degree: 10%
 
 **A.**&#x200B;渠道浏览器&#x200B;**B.**&#x200B;内容浏览器&#x200B;**C.**&#x200B;属性浏览器&#x200B;**D.**&#x200B;资产浏览器&#x200B;**E.**&#x200B;组件浏览器&#x200B;**F.**&#x200B;数据源浏览器 — 数据模型&#x200B;**G.**&#x200B;数据源浏览器 — 主内容
 
-<!-- Click to enlarge
+<!--
+Click to enlarge
 
-![sidebar-comps-3](assets/sidebar-comps-3.png)-->
+![sidebar-comps-3](assets/sidebar-comps-3.png)
+-->
 
 侧栏包括以下内容：
 
@@ -55,7 +57,7 @@ ht-degree: 10%
 
 * **属性浏览器**
 
-  可让您编辑组件的属性。属性会根据组件而发生更改。 例如，要查看文档容器的属性：
+  可让您编辑组件的属性。 属性会根据组件而发生更改。 例如，要查看文档容器的属性：
 选择一个组件，然后选择![字段级](assets/field-level.png) > **文档容器**，然后选择![cmppr](assets/cmppr.png)。
 
 * **Assets浏览器**
@@ -98,7 +100,7 @@ ht-degree: 10%
 
 ![组件工具栏标签](do-not-localize/component_toolbar_labels_new.png)
 
-选择某个组件后，您会看到一个允许您处理该组件的工具栏。 您可以获得用于剪切、粘贴、移动和指定组件属性的选项。您的选项包括：
+选择某个组件后，您会看到一个允许您处理该组件的工具栏。 您可以获得用于剪切、粘贴、移动和指定组件属性的选项。 您的选项包括：
 
 A.**配置**：选择&#x200B;**配置**&#x200B;时，组件属性在侧栏中可见。
 
@@ -116,15 +118,15 @@ G. **粘贴**：允许您粘贴使用上述选项剪切或复制的组件。
 
 H. **分组**：可让您选择多个组件（如果要剪切、复制或粘贴多个组件）。
 
-I. **父项**：允许您选择组件的父项。
+I **父项**：可让您选择组件的父项。
 
 J. **查看SOM表达式：**&#x200B;用于查看组件的[SOM表达式](../../forms/using/using-som-expressions-adaptive-forms.md)。
 
-K： **将面板中的对象分组：**&#x200B;允许您将这些组件分组到一个面板中，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板[&#128279;](create-interactive-communication.md#groupobjectspanel)中的组对象。
+K： **将面板中的对象分组：**&#x200B;允许您将这些组件分组到一个面板中，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板](create-interactive-communication.md#groupobjectspanel)中的[组对象。
 
 L. **添加子面板**（仅适用于面板）：允许您向面板添加子面板。
 
-M： **添加面板工具栏**（仅适用于面板）：允许您添加面板组件的工具栏。 然后，您可以在工具栏上执行进一步的操作。
+M： **添加面板工具栏**（仅适用于面板）:Lets您添加了面板组件的工具栏。 然后，您可以在工具栏上执行进一步的操作。
 
 此外，通过工具栏上的&#x200B;**替换**&#x200B;选项，您可以使用替代组件替换现有组件。 选项不适用于面板组件。
 

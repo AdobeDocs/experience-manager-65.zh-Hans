@@ -8,9 +8,9 @@ role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2332'
+source-wordcount: '2400'
 ht-degree: 10%
 
 ---
@@ -19,10 +19,11 @@ ht-degree: 10%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | 本文 |
 
-<!-- Scope of metadata articles:
+<!--
+Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, and so on, operations that end-users can do.
 * metadata-concepts.md: All conceptual information. Minor instructions are OK but it is an FYI article about support and standards.
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
@@ -36,13 +37,13 @@ ht-degree: 10%
 
 以下方法可用于向数字资源添加元数据：
 
-* 首先，创建资产的本机应用程序向其添加一些元数据。 例如，[Acrobat将一些元数据](https://helpx.adobe.com/cn/acrobat/using/pdf-properties-metadata.html)添加到PDF文件，或者相机将一些基本元数据添加到照片。 在生成资源时，可以将元数据添加到本机应用程序本身。 例如，您可以在Adobe Lightroom[中](https://helpx.adobe.com/cn/lightroom-classic/help/metadata-basics-actions.html)添加IPTC元数据。
+* 首先，创建资产的本机应用程序向其添加一些元数据。 例如，[Acrobat将一些元数据](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html)添加到PDF文件，或者相机将一些基本元数据添加到照片。 在生成资源时，可以将元数据添加到本机应用程序本身。 例如，您可以在Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)中[添加IPTC元数据。
 
-* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[中查看如何 [!DNL Adobe Bridge]在](https://helpx.adobe.com/cn/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html) [中使用元数据并查看 [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的[!DNL Adobe Exchange]标记面板。
+* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[!DNL Adobe Exchange]中查看如何[在 [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)中使用元数据并查看 [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的[标记面板。
 
 * 在[!DNL Experience Manager Assets]中，您可以在[!UICONTROL 属性]页面中手动添加或编辑资源的元数据。
 
-* 在将资源上传到DAM时，您可以使用[的](/help/assets/metadata-config.md#metadata-profiles)元数据配置文件[!DNL Experience Manager Assets]功能自动添加元数据。
+* 在将资源上传到DAM时，您可以使用[!DNL Experience Manager Assets]的[元数据配置文件](/help/assets/metadata-config.md#metadata-profiles)功能自动添加元数据。
 
 ## 在[!DNL Experience Manager Assets]中添加或编辑元数据 {#add-edit-metadata}
 
@@ -81,7 +82,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->批量编辑方法适用于文件夹或收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索[后](search-assets.md#metadataupdates)批量更新元数据。
+>批量编辑方法适用于文件夹或收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索](search-assets.md#metadataupdates)后[批量更新元数据。
 
 1. 在[!DNL Assets]用户界面中，导航到要编辑的资源的位置。
 1. 选择要编辑其公共属性的资源。
@@ -89,7 +90,7 @@ ht-degree: 10%
 1. 在各种选项卡下修改所选资源的元数据属性。
 1. 要查看特定资源的元数据，请取消选择列表中剩余的资源。 如果在[!UICONTROL 属性]页面上取消选择一些资源，则这些资源的元数据不会更新。
 1. 要为资源选择其他元数据架构，请在工具栏中单击&#x200B;**[!UICONTROL 设置]**，然后选择架构。 单击&#x200B;**[!UICONTROL 保存并关闭]**。
-1. 要将新元数据与现有元数据追加到包含多个值的字段中，请选择&#x200B;**[!UICONTROL 追加模式]**。如果不选中此选项，则新元数据将替换字段中的现有元数据。单击&#x200B;**[!UICONTROL “提交”。]**
+1. 要将新元数据与现有元数据追加到包含多个值的字段中，请选择&#x200B;**[!UICONTROL 追加模式]**。 如果不选中此选项，则新元数据将替换字段中的现有元数据。 单击&#x200B;**[!UICONTROL “提交”。]**
 
 ![元数据架构批量应用于多个资源](assets/metadata-schema-bulk-edit.gif)
 
@@ -114,10 +115,10 @@ ht-degree: 10%
 
    | 元数据导入参数 | 描述 |
    |:---|:---|
-   | [!UICONTROL 批次大小] | 要为其导入元数据的批次中的资源数。 默认值为50。 最大值为100。 |
+   | [!UICONTROL 批次大小] | 要为其导入元数据的批次中的资源数。 默认值为 50。 最大值为100。 |
    | [!UICONTROL 字段分隔符] | 默认值为`,` （逗号）。 您可以指定任何其他字符。 |
    | [!UICONTROL 多值分隔符] | 元数据值的分隔符。 默认值为`\|`。 |
-   | [!UICONTROL 启动工作流] | 默认为False。 当设置为`true`时，默认设置对[!UICONTROL DAM元数据写回]工作流(将元数据写入二进制XMP数据)有效。 启用工作流会减慢系统速度。 |
+   | [!UICONTROL 启动工作流] | 默认为False。 当设置为`true`时，默认设置对[!UICONTROL DAM元数据写回]工作流（将元数据写入二进制XMP数据）有效。 启用工作流会减慢系统速度。 |
    | [!UICONTROL 资源路径列名称] | 定义包含资产的CSV文件的列名称。 |
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 导入]**。 导入元数据后，[!UICONTROL 通知]收件箱中将显示通知。
@@ -153,7 +154,7 @@ ht-degree: 10%
 
 1. 在工具栏中，单击&#x200B;**[!UICONTROL 导出]**。 将显示一条消息，确认元数据已导出。 关闭消息。
 
-1. 打开导出作业的收件箱通知。选择作业，然后单击工具栏中的&#x200B;**[!UICONTROL 打开]**。要下载包含元数据的CSV文件，请单击工具栏中的&#x200B;**[!UICONTROL CSV下载]**。 单击&#x200B;**[!UICONTROL 关闭]**。
+1. 打开导出作业的收件箱通知。 选择作业，然后单击工具栏中的&#x200B;**[!UICONTROL 打开]**。 要下载包含元数据的CSV文件，请单击工具栏中的&#x200B;**[!UICONTROL CSV下载]**。 单击&#x200B;**[!UICONTROL 关闭]**。
 
    ![用于下载包含批量导出的元数据的CSV文件的对话框](assets/csv_download.png)
 
@@ -165,7 +166,8 @@ ht-degree: 10%
 
 ## 将元数据配置文件应用到文件夹 {#applying-a-metadata-profile-to-folders}
 
-<!-- TBD: Review this overview.
+<!--
+TBD: Review this overview.
 -->
 
 将元数据配置文件分配给文件夹时，任何子文件夹都会自动从其父文件夹继承配置文件。 这意味着您只能将一个元数据配置文件分配给文件夹。 因此，请仔细考虑上传、存储、使用和存档资产的文件夹的结构。
@@ -180,7 +182,7 @@ ht-degree: 10%
 
 如果文件夹已具有您后来更改的现有元数据配置文件，您可以重新处理该文件夹中的资产。 查看编辑文件夹中用于处理资产的配置文件后[重新处理该文件夹中的资产](processing-profiles.md#reprocessing-assets)。
 
-您可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中将元数据轮廓应用到文件夹，或者如果您在文件夹中，也可以直接从&#x200B;**[!UICONTROL 属性]**&#x200B;中应用。本节将介绍如何通过这两种方式将元数据轮廓应用到文件夹。
+您可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中将元数据轮廓应用到文件夹，或者如果您在文件夹中，也可以直接从&#x200B;**[!UICONTROL 属性]**&#x200B;中应用。 本节将介绍如何通过这两种方式将元数据轮廓应用到文件夹。
 
 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
@@ -203,11 +205,13 @@ ht-degree: 10%
 
 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
-<!-- TBD: Commenting as the topic in metadata-config.md is incomplete.
+<!--
+TBD: Commenting as the topic in metadata-config.md is incomplete.
 
 ### Apply metadata profile globally {#metadata-profile-global}
 
-For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally). -->
+For details, see [configuration to apply metadata profile globally](/help/assets/metadata-config.md#apply-a-metadata-profile-globally).
+-->
 
 ### 从文件夹中删除元数据配置文件 {#removing-a-metadata-profile-from-folders}
 
@@ -227,7 +231,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
 1. 单击[!DNL Experience Manager]徽标并导航&#x200B;**[!UICONTROL Assets]**，然后找到要删除元数据配置文件的文件夹。
 1. 在文件夹上，单击复选标记将其选中，然后单击&#x200B;**[!UICONTROL 属性]**。
-1. 选择&#x200B;**[!UICONTROL 元数据轮廓]**&#x200B;选项卡，并从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存]**。如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
+1. 选择&#x200B;**[!UICONTROL 元数据轮廓]**&#x200B;选项卡，并从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后单击&#x200B;**[!UICONTROL 保存]**。 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
 ## 提示和限制 {#best-practices-limitations}
 
@@ -241,9 +245,10 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >
 >* [元数据概念和了解](metadata-concepts.md)。
 >* [编辑多个收藏集的元数据属性](manage-collections.md#editing-collection-metadata-in-bulk)
->* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=zh-Hans)
+>* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
-<!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
+<!--
+TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
 ## Where to find metadata of an asset or folder {#find-metadata}
 

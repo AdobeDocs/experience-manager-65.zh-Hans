@@ -7,9 +7,9 @@ role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f8588ef353bd08b41202350072728d80ee51f565
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2152'
 ht-degree: 4%
 
 ---
@@ -24,13 +24,14 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->有关[支持的所有格式以及每种格式支持的功能的说明，请参阅](assets-formats.md)支持的资产格式[!DNL Assets]页面。
+>有关[!DNL Assets]支持的所有格式以及每种格式支持的功能的说明，请参阅[支持的资产格式](assets-formats.md)页面。
 
 ## 默认媒体处理程序 {#default-media-handlers}
 
 以下媒体处理程序在[!DNL Assets]中可用，可处理最常见的MIME类型：
 
-<!-- TBD: Java versions should not be set to 1.5. Must be updated.
+<!--
+TBD: Java versions should not be set to 1.5. Must be updated.
 -->
 
 | 处理程序名称 | 服务名称（在系统控制台中） | 支持的MIME类型 |
@@ -123,7 +124,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 以下是示例模板：
 
-包my.own.stuff； /&amp;amp；ast；&amp;amp；ast； &amp;amp；@scr.component inherit=&quot;true&quot; &amp;amp；ast； @scr.service &amp;amp；ast；/ public类MyMediaHandler扩展com.day.cq.dam.core.AbstractAssetHandler { //实现相关部分}
+包my.own.stuff； /&amp;ast；&amp;ast； &amp;ast； @scr.component inherit=&quot;true&quot; &amp;ast； @scr.service &amp;ast；/ public类MyMediaHandler扩展com.day.cq.dam.core.AbstractAssetHandler { //实现相关部分}
 
 接口和类包括：
 
@@ -283,7 +284,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
     </dependencies>
    ```
 
-1. 创建包`com.day.cq5.myhandler`，其中包含[!DNL Java™]下的`myBundle/src/main/java`类：
+1. 创建包`com.day.cq5.myhandler`，其中包含`myBundle/src/main/java`下的[!DNL Java™]类：
 
    1. 在myBundle下，右键单击`src/main/java`，选择新建，然后选择包。
    1. 将其命名为`com.day.cq5.myhandler`，然后单击“完成”。
@@ -437,7 +438,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 1. 编译[!DNL Java™]类并创建捆绑包：
 
    1. 右键单击`myBundle`项目，选择&#x200B;**[!UICONTROL 运行方式]**，然后选择&#x200B;**[!UICONTROL Maven安装]**。
-   1. 在`myBundle-0.0.1-SNAPSHOT.jar`下创建了包`myBundle/target`（包含已编译的类）。
+   1. 在`myBundle/target`下创建了包`myBundle-0.0.1-SNAPSHOT.jar`（包含已编译的类）。
 
 1. 在CRX资源管理器中，在`/apps/myApp`下创建一个节点。 名称= `install`，类型= `nt:folder`。
 1. 复制包`myBundle-0.0.1-SNAPSHOT.jar`并将其存储在`/apps/myApp/install`下（例如，使用WebDAV）。 新文本处理程序现在在[!DNL Experience Manager]中处于活动状态。
@@ -470,11 +471,11 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 
 ### 使用[!DNL ImageMagick]的示例 {#an-example-using-imagemagick}
 
-以下示例显示了如何设置命令行流程步骤，以便每次将具有miMIME e-type GIF或TIFF的资源添加到`/content/dam`服务器上的[!DNL Experience Manager]时，都会创建原始资源的翻转图像。 还创建了另外三个缩略图140x100、48x48和10x250。
+以下示例显示了如何设置命令行流程步骤，以便每次将具有miMIME e-type GIF或TIFF的资源添加到[!DNL Experience Manager]服务器上的`/content/dam`时，都会创建原始资源的翻转图像。 还创建了另外三个缩略图140x100、48x48和10x250。
 
 为此，请使用[!DNL ImageMagick]。 [!DNL ImageMagick]是一个免费的命令行软件，用于创建、编辑和合成位图图像。
 
-在托管[!DNL ImageMagick]服务器的磁盘上安装[!DNL Experience Manager]：
+在托管[!DNL Experience Manager]服务器的磁盘上安装[!DNL ImageMagick]：
 
 1. 安装[!DNL ImageMagick]：查看`https://www.imagemagick.org/script/download.php`网站。
 1. 设置该工具，以便在命令行中运行`convert`。
@@ -489,7 +490,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 1. 要查看该工具是否正常运行，请将JPG映像添加到工作目录中，并在命令行上运行命令convert `<image-name>.jpg -flip <image-name>-flipped.jpg`。 翻转的图像将添加到目录中。 然后，将命令行流程步骤添加到&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流。
 1. 转到&#x200B;**[!UICONTROL 工作流]**&#x200B;控制台。
 1. 在&#x200B;**[!UICONTROL 模型]**&#x200B;选项卡中，编辑&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;模型。
-1. 将[!UICONTROL 启用Web的演绎版]步骤的&#x200B;**[!UICONTROL 参数]**&#x200B;更改为： `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`。
+1. 将&#x200B;**[!UICONTROL 启用Web的演绎版]**&#x200B;步骤的[!UICONTROL 参数]更改为： `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`。
 1. 保存工作流。
 
 要测试修改后的工作流，请将资产添加到`/content/dam`。
@@ -510,7 +511,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 | tn：&lt;宽度>：&lt;高度> | 可选参数。 该过程会使用参数中定义的维度创建一个缩略图。 <br>可以定义多个缩略图。 |
 | cmd： &lt;命令> | 定义执行的命令。 语法取决于命令行工具。 只能定义一个命令。 <br>以下变量可用于创建命令：<br>`${filename}`：输入文件的名称，例如original.jpg <br> `${file}`：输入文件的完整路径名，例如，`/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`：输入文件的目录，例如`/tmp/cqdam0816.tmp` <br>`${basename}`：不带扩展名的输入文件的名称，例如，原始<br>`${extension}`：输入文件的扩展名，例如JPG。 |
 
-例如，如果在托管[!DNL ImageMagick]服务器的磁盘上安装了[!DNL Experience Manager]，并且您使用[!UICONTROL CommandLineProcess]作为实现和以下值作为[!UICONTROL 进程参数]创建进程步骤：
+例如，如果在托管[!DNL Experience Manager]服务器的磁盘上安装了[!DNL ImageMagick]，并且您使用[!UICONTROL CommandLineProcess]作为实现和以下值作为[!UICONTROL 进程参数]创建进程步骤：
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 

@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a3c0010e5eaef7fc516d49e410bba1c3b3f9e4b9
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2121'
+source-wordcount: '2313'
 ht-degree: 13%
 
 ---
@@ -38,13 +38,13 @@ ht-degree: 13%
 
 **新用户**
 
-安装Service Pack 22。 要支持Service Pack 22上的Oauth集成，您需要安装适用于Service Pack 22[的](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)修补程序。
+安装Service Pack 22。 要支持Service Pack 22上的Oauth集成，您需要安装适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的[修补程序。
 
 按照本文中所述的说明设置智能内容服务。
 
 **现有用户**
 
-如果您已升级到Service Pack 21，请安装适用于Service Pack 21[的](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。 如果您升级到Service Pack 22，则必须安装此[适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的修补程序。
+如果您已升级到Service Pack 21，请安装适用于Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的[修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。 如果您升级到Service Pack 22，则必须安装此[适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的修补程序。
 
 对于Service Pack 20及更早版本，您需要为SCS执行解决步骤以支持Oauth集成。 请参阅[OAuth凭据的智能标记疑难解答](config-oauth.md)。
 
@@ -58,7 +58,7 @@ ht-degree: 13%
 
 已启用此功能的现有内部部署用户可以继续使用智能内容服务。
 
-如果您已升级到Service Pack 21，请安装适用于Service Pack 21[的](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。 如果您升级到Service Pack 22，则必须安装此[适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的修补程序。
+如果您已升级到Service Pack 21，请安装适用于Service Pack 21](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-40772-1.2.zip)的[修补程序以支持Oauth集成。 任何现有配置都会自动删除。 按照本文中所述的说明设置智能内容服务。 如果您升级到Service Pack 22，则必须安装此[适用于Service Pack 22](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fproduct%2Fassets%2Fcq-6.5.0-hotfix-42384-1.2.zip)的修补程序。
 
 对于Service Pack 20及更早版本，您需要为SCS执行解决步骤以支持Oauth集成。 请参阅[OAuth凭据的智能标记疑难解答](config-oauth.md)。
 
@@ -89,7 +89,8 @@ To configure the Smart Content Service, follow these top-level steps:
 
    1. [Configure your deployment](#configure-smart-content-service) using the API key and other credentials from Adobe Developer Console.
 
-   1. [Test the configuration](#validate-the-configuration).-->
+   1. [Test the configuration](#validate-the-configuration).
+   -->
 
 ### 创建Adobe Developer Console集成 {#create-adobe-io-integration}
 
@@ -97,13 +98,13 @@ To configure the Smart Content Service, follow these top-level steps:
 
 * [!UICONTROL API密钥]（在Adobe Developer Console集成的[!UICONTROL 客户端ID]字段中生成），
 * [!UICONTROL 组织ID]，
-* 和[!UICONTROL 客户端密钥]，用于[!UICONTROL 中云配置的]Assets智能标记服务设置[!DNL Experience Manager]。
+* 和[!UICONTROL 客户端密钥]，用于[!DNL Experience Manager]中云配置的[!UICONTROL Assets智能标记服务设置]。
 
 1. 在浏览器中访问[https://developer.adobe.com](https://developer.adobe.com/)。 选择适当的帐户，并确认关联的组织角色是系统&#x200B;**管理员**。
 
-1. 创建具有任何所需名称的项目。单击&#x200B;**[!UICONTROL 添加 API]**。
+1. 创建具有任何所需名称的项目。 单击&#x200B;**[!UICONTROL 添加 API]**。
 
-1. 在&#x200B;**[!UICONTROL 添加 API]** 页面中，依次选择 **[!UICONTROL Experience Cloud]** 和&#x200B;**[!UICONTROL 智能内容]**。单击&#x200B;**[!UICONTROL 下一步]**。
+1. 在&#x200B;**[!UICONTROL 添加 API]** 页面中，依次选择 **[!UICONTROL Experience Cloud]** 和&#x200B;**[!UICONTROL 智能内容]**。 单击&#x200B;**[!UICONTROL 下一步]**。
 
 1. 选择&#x200B;**[!UICONTROL OAuth服务器到服务器]**。 单击&#x200B;**[!UICONTROL 下一步]**。
 有关如何执行此配置的详细信息，请参阅Developer Console文档，具体取决于您的要求：
@@ -115,7 +116,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. 在&#x200B;**[!UICONTROL 选择产品配置文件]**&#x200B;页面中，选择&#x200B;**[!UICONTROL 智能内容服务]**，然后单击选项&#x200B;**[!UICONTROL 保存配置的API]**。
 
-   页面会显示有关配置的更多信息。保持此页面处于打开状态，以复制这些值，并将其添加到[!UICONTROL 中云配置的]Assets智能标记服务设置[!DNL Experience Manager]中，从而配置智能标记。
+   页面会显示有关配置的更多信息。 保持此页面处于打开状态，以复制这些值，并将其添加到[!DNL Experience Manager]中云配置的[!UICONTROL Assets智能标记服务设置]中，从而配置智能标记。
 
    ![Developer Console 中的 OAuth 凭据](assets/ims-configuration-developer-console.png)
 
@@ -151,7 +152,7 @@ To configure the Smart Content Service, follow these top-level steps:
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 -->
@@ -170,7 +171,7 @@ To configure the Smart Content Service, follow these top-level steps:
    | -------- | ---------------------------- |
    | 标题 | 添加配置IMS帐户的标题。 |
    | 关联的 Adobe IMS 配置 | 从下拉列表中选择配置。 |
-   | 服务 URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`。例如，`https://smartcontent.adobe.io/apac`。您可以将`na`、`emea`或`apac`指定为承载Experience Manager创作实例的区域。 |
+   | 服务 URL | `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`. 例如，`https://smartcontent.adobe.io/apac`。 您可以将`na`、`emea`或`apac`指定为承载Experience Manager创作实例的区域。 |
 
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
@@ -178,11 +179,11 @@ To configure the Smart Content Service, follow these top-level steps:
 
 完成配置后，可以使用JMX MBean来验证配置。 要进行验证，请执行以下步骤。
 
-1. 访问位于[!DNL Experience Manager]的`https://[aem_server]:[port]`服务器。
+1. 访问位于`https://[aem_server]:[port]`的[!DNL Experience Manager]服务器。
 
 1. 转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**&#x200B;以打开OSGi控制台。 单击&#x200B;**[!UICONTROL 主] > [!UICONTROL JMX]**。
 
-1. 单击 `com.day.cq.dam.similaritysearch.internal.impl`. 它会打开&#x200B;**[!UICONTROL SimilaritySearch其他任务]**。—>
+1. 单击 `com.day.cq.dam.similaritysearch.internal.impl`。 它会打开&#x200B;**[!UICONTROL SimilaritySearch其他任务]**。—>
 
 1. 单击 `com.day.cq.dam.similaritysearch.internal.impl (SCS)`。
 
@@ -225,7 +226,7 @@ A public certificate lets you authenticate your profile on Adobe Developer Conso
 
    >[!NOTE]
    >
-   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com/zh-cn](https://status.adobe.com/zh-cn).
+   >The URL provided as [!UICONTROL Service URL] is not accessible via browser and generates a 404 error. The configuration works OK with the same value of the [!UICONTROL Service URL] parameter. For the overall service status and maintenance schedule, see [https://status.adobe.com](https://status.adobe.com).
 
 1. Click **[!UICONTROL Download Public Certificate for OAuth Integration]**, and download the public certificate file `AEM-SmartTags.crt`.
 
@@ -285,7 +286,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 >[!CAUTION]
 >
 >Previously, configurations that were made with JWT Credentials are now subject to deprecation in the Adobe Developer Console. You cannot create new JWT credentials after June 3, 2024. Such configurations can no longer be created or updated, but can be migrated to OAuth configurations.
-> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
+> See [Setting up IMS integrations for AEM](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/security/setting-up-ims-integrations-for-aem-as-a-cloud-service)
 >See [Steps to configure OAuth for on-premise users](#config-oauth-onprem)
 > See [Troubleshooting smart tags for OAuth credentials](#config-smart-tagging.md)
 
@@ -360,7 +361,7 @@ The validation results are displayed in the same dialog.
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 编辑]**。
 
-1. 展开侧面板以显示步骤。拖动DAM工作流部分中可用的&#x200B;**[!UICONTROL 智能标记资产]**&#x200B;步骤，并将其放在&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤之后。
+1. 展开侧面板以显示步骤。 拖动DAM工作流部分中可用的&#x200B;**[!UICONTROL 智能标记资产]**&#x200B;步骤，并将其放在&#x200B;**[!UICONTROL 流程缩略图]**&#x200B;步骤之后。
 
    ![在 DAM 更新资产工作流中的流程缩略图步骤之后添加智能标记资产步骤](assets/smart-tag-in-dam-update-asset-workflow.png)
 
@@ -394,7 +395,7 @@ The validation results are displayed in the same dialog.
 
 为获得最佳效果，培训集中的图像应符合以下准则：
 
-**数量和大小：**&#x200B;每个标记至少 30 张图像。长边至少 500 像素。
+**数量和大小：**&#x200B;每个标记至少 30 张图像。 长边至少 500 像素。
 
 **Coherence**：用于特定标记的图像在视觉上相似。
 
@@ -414,7 +415,7 @@ The validation results are displayed in the same dialog.
 
 ![用于说明培训指导原则的插图图像](/help/assets/assets/do-not-localize/distraction.png)
 
-**完整性：**&#x200B;如果图像符合多个标记的条件，请在包含培训图像之前添加所有适用的标记。例如，对于标记（如`raincoat`和`model-side-view`），请先在符合条件的资产上添加这两个标记，然后再将其加入培训。
+**完整性：**&#x200B;如果图像符合多个标记的条件，请在包含培训图像之前添加所有适用的标记。 例如，对于标记（如`raincoat`和`model-side-view`），请先在符合条件的资产上添加这两个标记，然后再将其加入培训。
 
 ![用于说明培训指导原则的插图图像](/help/assets/assets/do-not-localize/completeness.png)
 
@@ -452,11 +453,11 @@ The validation results are displayed in the same dialog.
 1. 在[!DNL Experience Manager]界面中，转到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 报表]**。
 1. 在&#x200B;**[!UICONTROL 资产报表]**&#x200B;页面中，单击&#x200B;**[!UICONTROL 创建]**。
 1. 选择&#x200B;**[!UICONTROL 智能标记培训]**&#x200B;报表，然后单击工具栏中的&#x200B;**[!UICONTROL 下一步]**。
-1. 指定报表的标题和描述。在&#x200B;**[!UICONTROL 计划报告]**&#x200B;下，保持选中&#x200B;**[!UICONTROL 立即]**&#x200B;选项。如果要安排以后的计划报告，请选择&#x200B;**[!UICONTROL 稍后]**，然后指定日期和时间。然后，单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
-1. 在&#x200B;**[!UICONTROL 资产报表]**&#x200B;页面中，选择生成的报表。要查看报告，请单击工具栏中的&#x200B;**[!UICONTROL 查看]**。
+1. 指定报表的标题和描述。 在&#x200B;**[!UICONTROL 计划报告]**&#x200B;下，保持选中&#x200B;**[!UICONTROL 立即]**&#x200B;选项。 如果要安排以后的计划报告，请选择&#x200B;**[!UICONTROL 稍后]**，然后指定日期和时间。 然后，单击工具栏中的&#x200B;**[!UICONTROL 创建]**。
+1. 在&#x200B;**[!UICONTROL 资产报表]**&#x200B;页面中，选择生成的报表。 要查看报告，请单击工具栏中的&#x200B;**[!UICONTROL 查看]**。
 1. 查看报告的详细信息。
 
-   报表显示您培训的标记的培训状态。**[!UICONTROL 培训状态]**&#x200B;列中的绿色表示已为标记培训“智能内容服务”。黄色表示服务未针对特定标记进行完整培训。在这种情况下，使用特定标记添加更多图像并运行培训工作流以在标签上完整地培训服务。
+   报表显示您培训的标记的培训状态。 **[!UICONTROL 培训状态]**&#x200B;列中的绿色表示已为标记培训“智能内容服务”。 黄色表示服务未针对特定标记进行完整培训。 在这种情况下，使用特定标记添加更多图像并运行培训工作流以在标签上完整地培训服务。
 
    如果您未在此报表中看到您的标记，请再次运行这些标记的培训工作流。
 
@@ -476,4 +477,4 @@ The validation results are displayed in the same dialog.
 >
 >* [概述以及如何培训智能标记](enhanced-smart-tags.md)
 >* [OAuth凭据的智能标记疑难解答](config-oauth.md)
->* [有关智能标记的视频教程](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/metadata/image-smart-tags)
+>* [有关智能标记的视频教程](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)

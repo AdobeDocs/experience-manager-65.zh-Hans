@@ -5,9 +5,9 @@ feature: Transaction Reports
 exl-id: 77e95631-6b0d-406e-a1b8-78f8d9cceb63
 role: Admin, User, Developer
 solution: "Experience Manager, Experience Manager Forms"
-source-git-commit: 5699f5814daf16a397eb6129b881ac2035456e39
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '638'
 ht-degree: 2%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 # 在JEE上启用和查看AEM Forms的交易报表 {#transaction-reports-overview}
 
-<span>为来自AEM Forms [的JEE上的6.5.20.0](/help/release-notes/previous/6-5-20.md#forms)AEM Forms引入了交易报告功能。 此功能默认处于禁用状态，可以从管理员UI启用。</span>
+<span>为来自AEM Forms 6.5.20.0](/help/release-notes/previous/6-5-20.md#forms)的JEE上的[AEM Forms引入了交易报告功能。 此功能默认处于禁用状态，可以从管理员UI启用。</span>
 
 通过JEE上的AEM Forms中的交易报表，您可以对AEM Forms部署中发生的所有交易进行计数。 目标是提供有关产品使用情况的信息，并帮助业务利益相关者了解他们的数字处理量。 事务示例包括：
 
@@ -47,7 +47,7 @@ ht-degree: 2%
 
 ## 查看事务报告 {#view-transaction-report}
 
-启用事务报告后，有关事务计数的信息将可通过仪表板[的](#transaction-report-dashboard)事务报告以及日志文件[的详细](#transaction-report-logfile)事务报告访问。 两者均说明如下：
+启用事务报告后，有关事务计数的信息将可通过仪表板](#transaction-report-dashboard)的[事务报告以及日志文件](#transaction-report-logfile)的详细[事务报告访问。 两者均说明如下：
 
 ### 通过仪表板的交易报告 {#transaction-report-dashboard}
 
@@ -131,11 +131,12 @@ TransactionRecord
 
 记录事务的频率由服务器上对成功提交、渲染或转换的每个表单的更新操作确定。
 
-* 在&#x200B;**仪表板**&#x200B;中，交易计数会定期更新，默认设置为1分钟。 您可以通过在`"com.adobe.idp.dsc.transaction.recordFrequency"`处设置系统属性来更新频率。 例如，在JBoss®上的AEM Forms for JEE中，在`-Dcom.adobe.idp.dsc.transaction.recordFrequency=5`中添加`JAVA_OPTS`以将更新频率设置为5分钟。
+* 在&#x200B;**仪表板**&#x200B;中，交易计数会定期更新，默认设置为1分钟。 您可以通过在`"com.adobe.idp.dsc.transaction.recordFrequency"`处设置系统属性来更新频率。 例如，在JBoss®上的AEM Forms for JEE中，在`JAVA_OPTS`中添加`-Dcom.adobe.idp.dsc.transaction.recordFrequency=5`以将更新频率设置为5分钟。
 
 * 在&#x200B;**事务日志**&#x200B;中，当表单成功提交、渲染或转换时，每个事务的更新都会立即发生。
 
-<!-- A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
+<!--
+A transaction remains in the buffer for a specified period (Flush Buffer time + Reverse replication time). By default, it takes approximately 90 seconds for the transaction count to reflect in the transaction report.
 
 Actions like submitting a PDF Form, using Agent UI to preview an interactive communication, or using non-standard form submission methods are not accounted as transactions. AEM Forms provides an API to record such transactions. Call the API from your custom implementations to record a transaction.
 
@@ -157,7 +158,8 @@ The transaction count is reverse replicated from publish instances to author or 
 * Enable the **Show transactions from publish only** option on the author instance to view cumulative transactions from all publish instances. You can also view transaction reports on each publish instance for actual transactions on that particular publish instance only.
 * Do not use author instances to run workflows and process documents.
 * Before using transaction reporting, if you are have a toplogy with publish servers, ensure that the reverse replication is enabled for all the publish instances.
-* Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.-->
+* Transaction data is reverse-replicated from a publish instance to only corresponding author or processing instance. The author or processing instance cannot further replicate data to another instance. For example, if you have author-processing-publish topology, aggregated transaction data is replicated only to the processing instance.
+-->
 
 ## 相关文章 {#related-articles}
 

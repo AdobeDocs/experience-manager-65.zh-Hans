@@ -8,16 +8,16 @@ exl-id: f6c24894-c322-4c44-b001-8978954d6e53
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
 
 # 参考主题{#reference-themes}
 
-[主题](../../forms/using/themes.md)允许您在不了解CSS的情况下设置表单样式。 除了默认主题之外，您还可以通过安装[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)获取以下主题：
+[主题](../../forms/using/themes.md)允许您在不了解CSS的情况下设置表单样式。 除了默认主题之外，您还可以通过安装[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)获取以下主题：
 
 * 贝里尔
 * 执行
@@ -42,55 +42,65 @@ We.Gov自适应表单使用Beryl主题，并强调使用背景图像、透明度
 
 ![贝里尔主题](assets/beryl.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/beryl-1.png)-->
+](assets/beryl-1.png)
+-->
 
 ## 执行 {#exec}
 
-执行主题可避免使用纯背景填充来强调表单组件。 选择并单击组件会更改字体颜色。 与默认画布主题相比，选定选项卡中文本的字体颜色将更改为深蓝色。 请注意导航和提交按钮与Beryl主题有何不同。
+Exec theme avoids solid background fills to emphasize form components. Selecting and clicking components changes font colors. In comparison to the default Canvas theme, font color of the text in the selected tab changes to dark blue. Notice how the navigation and submit buttons are different from the Beryl theme.
 
-![执行主题](assets/exec.png)
+![Exec theme](assets/exec.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-1.png)-->
+](assets/exec-1.png)
+-->
 
-## Exec指示灯 {#exec-light}
+## Exec Light {#exec-light}
 
-Exec Light主题使用空格创建无缝体验。 “下一个”和“提交”按钮获得实心填充和3D阴影。 左侧的选定选项卡显示一个箭头，而不是双复选标记。
+Exec Light theme uses white space to create a seamless experience. The Next and Submit buttons get a solid fill and 3D shadow. Selected tabs on the left get an arrow instead of double-check marks.
 
-![执行浅色主题](assets/exec-light.png)
+![Exec light theme](assets/exec-light.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/exec-light-1.png)-->
+](assets/exec-light-1.png)
+-->
 
 ## 自由 {#liberty}
 
-自由主义主题使用极简主义的方法突出其重要性。 例如，已访问选项卡的字体颜色将变为绿色。 您只能看到文本框的底部轮廓，该文本框模拟带有线条的纸制表单的外观。 活动文本框具有黑底轮廓，而其他文本框则具有浅灰底轮廓。
+Liberty theme uses a minimalist approach to highlight the important. For example, the font color of the visited tab changes to green. You can only see the bottom-outline of the text box which emulates the look of a paper-based form with lines. The active text box has a black bottom-outline while others get light gray bottom-outline.
 
-![自由主题](assets/liberty.png)
+![Liberty theme](assets/liberty.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/liberty-1.png)-->
+](assets/liberty-1.png)
+-->
 
 ## 宁静 {#tranquil}
 
-宁静主题提供宁静颜色方案的浅色和深色，以突出显示表单的不同组件。 例如，单选按钮、面板和选项卡具有不同的绿色阴影。
+Tranquil theme provides light and dark shades of the Tranquil color scheme to highlight different components of a form. For example, radio buttons, panels, and tabs get a different shade of green.
 
-![宁静的主题](assets/tranquil.png)
+![Tranquil theme](assets/tranquil.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/tranquil-1.png)-->
+](assets/tranquil-1.png)
+-->
 
 ## 超海洋 {#ultramarine}
 
-Ultraminary主题使用深蓝色阴影突出显示选项卡、面板、文本框和按钮等组件。
+Ultramarine theme uses deep blue shades to highlight components such as tabs, panels, text boxes, and buttons.
 
-![超海洋主题](assets/ultramarine.png)
+![Ultramarine theme](assets/ultramarine.png)
 
 <!--[Click to enlarge](assets/ultramarine-1.png)-->
 
@@ -100,9 +110,11 @@ Ultraminary主题使用深蓝色阴影突出显示选项卡、面板、文本框
 
 ![城市主题](assets/urbane.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/urbane-1.png)-->
+](assets/urbane-1.png)
+-->
 
 ## 美国Web设计标准 {#u-s-web-design-standards}
 
@@ -110,6 +122,8 @@ Ultraminary主题使用深蓝色阴影突出显示选项卡、面板、文本框
 
 ![美国Web设计标准主题](assets/us-web-standards.png)
 
-<!--[Click to enlarge
+<!--
+[Click to enlarge
 
-](assets/usgov.png)-->
+](assets/usgov.png)
+-->

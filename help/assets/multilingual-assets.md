@@ -7,18 +7,18 @@ role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '179'
-ht-degree: 7%
+source-wordcount: '192'
+ht-degree: 15%
 
 ---
 
-# 多语言资源 {#multilingual-assets}
+# 多语言资产 {#multilingual-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/translate-assets.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 通过[!DNL Adobe Experience Manager Assets]可自动执行资产（包括二进制文件、元数据和标记）的翻译工作流，以生成其他语言的资产以用于多语言项目。
@@ -34,7 +34,7 @@ ht-degree: 7%
 1. [将Experience Manager连接到翻译服务提供商](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [创建翻译集成框架配置](/help/sites-administering/tc-tic.md)
 1. [准备要翻译的资产](preparing-assets-for-translation.md)
-1. [将翻译云服务应用到文件夹](transition-cloud-services.md)
+1. [在文件夹中应用翻译云服务](transition-cloud-services.md)
 1. [创建翻译项目](translation-projects.md)
 
 如果您的翻译服务提供商不提供连接器来与[!DNL Experience Manager]集成，请使用[替代流程](/help/sites-administering/tc-manage.md#exporting-a-translation-job)。

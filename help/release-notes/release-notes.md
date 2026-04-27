@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: cd71ed5d9516d330685afee29a86d530a10303aa
+source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '9811'
-ht-degree: 19%
+source-wordcount: '10136'
+ht-degree: 20%
 
 ---
 
@@ -17,12 +17,14 @@ ht-degree: 19%
 
 <!-- For an itemized list of all issues found in this release information, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
 
-<!-- DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
+<!--
+DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
 >[!NOTE]
 >
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section. -->
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, May 29, 2025. In addition, a list of Forms fixes and enhancements is added to this section.
+-->
 
-## 发行版本信息 {#release-information}
+## 发行版信息 {#release-information}
 
 | 产品 | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
@@ -31,12 +33,14 @@ ht-degree: 19%
 | 日期 | 2025年11月26日<!-- UPDATE FOR EACH NEW RELEASE --> |
 | 下载 URL | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-<!-- OLD DOWNLOAD URL
-(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip) -->
+<!--
+OLD DOWNLOAD URL
+(https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.23.0.zip)
+-->
 
 ## [!DNL Experience Manager] 6.5.24.0 的内容 {#what-is-included-in-aem-6524}
 
-[!DNL Experience Manager] 6.5.24.0 包含新功能、客户重点要求的增强功能以及错误修复。还包括自 2019 年 4 月 6.5 首次发布以来推出的在性能、稳定性和安全性方面的改进。[在 [!DNL Experience Manager] 6.5 上安装此服务包](#install)。
+[!DNL Experience Manager] 6.5.24.0 包含新功能、客户重点要求的增强功能以及错误修复。 还包括自 2019 年 4 月 6.5 首次发布以来推出的在性能、稳定性和安全性方面的改进。 [在 [!DNL Experience Manager] 6.5 上安装此服务包](#install)。
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -62,24 +66,24 @@ ht-degree: 19%
 * 即使单击取消按钮，“收藏集属性”窗口也不会关闭。 (Assets-48504)
 
 * 尝试在AEM 6.5.22中为资源添加注释时出现&#x200B;*无效URL*&#x200B;错误。 （NPR-42684）
-* 在执行关联或取消关联操作后，Assets元数据编辑器表单不会重新初始化。 (Assets-52207)
-* 当资产从远程DAM重新同步到Sites本地时，资产的发布状态错误地更新到`Not published`。 （Assets-48958）
+* 执行相关或取消相关操作后，Assets元数据编辑器表单不会重新初始化。 (Assets-52207)
+* 当资产从远程DAM重新同步到本地站点时，资产的发布状态错误地更新为`Not published`。 （Assets-48958）
 * 从SP23升级到6.5 LTS版本时遇到问题。 (Assets-50541)
 
 ### [!DNL Sites]{#sites-6524}
 
 #### 辅助功能 {#sites-accessibility-6524}
 
-* **切换显示格式**&#x200B;对话框现在支持全键盘操作。 焦点不再跳过&#x200B;**查看设置**&#x200B;按钮，并且标准键(`Tab`、`Enter`、`Space`)的工作一致。 （SITES-24306）
-* 键盘用户无需鼠标即可删除已发布的状态标签。 焦点位于每个标记上，激活可与`Enter`/`Space`和Backspace/Delete配合使用。 标签控件现在的行为类似于按钮，改进了屏幕阅读器的反馈并符合WCAG 2.1.1键盘。 （SITES-24491）
+* **切换显示格式**&#x200B;对话框现在支持全键盘操作。 焦点不再跳过&#x200B;**查看设置**&#x200B;按钮，标准键(`Tab`、`Enter`、`Space`)始终工作。 （SITES-24306）
+* 键盘用户无需鼠标即可删除已发布的状态标记。 焦点位于每个标记上，激活可与`Enter`/`Space`和Backspace/Delete配合使用。 标记控件的行为现在类似于按钮，可改善屏幕阅读器的反馈并符合WCAG 2.1.1键盘要求。 （SITES-24491）
 * 筛选器边栏在狭窄视区响应式重排。 选择控件和结果以400%缩放保留在视区中，从而消除水平滚动和内容截断。 （SITES-24708）
-* AEM恢复对ContextHub Reset 、 Persona和Device按钮的完全键盘访问权限。 Tab键和箭头键可到达每个控件，显示可见的焦点指示器，并使用`Enter`或`Space`激活操作。 屏幕阅读器会显示清晰的标签。 （SITES-24939）
-* 日期输入和选取器在320 px时仍然完全可见。 时间扭曲模式使用响应式大小调整，因此控件不再在最小视区上剪切或消失。 （SITES-24962）
+* AEM恢复对ContextHub“重置”、“角色”和“设备”按钮的完全键盘访问权限。 Tab键和箭头键可访问每个控件，显示可见的焦点指示器，并使用`Enter`或`Space`激活操作。 屏幕阅读器会朗读清晰的标签。 （SITES-24939）
+* 日期输入和选取器在320像素处保持完全可见。 时间扭曲模式使用响应式大小调整，因此控件不再在最小视区上剪切或消失。 （SITES-24962）
 * 引用边栏现在支持400%浏览器缩放，且不会失去对其内容的访问权限。 边栏使用响应式大小调整而不是固定的宽度，因此在1280×1024时，项目保持可见和可选择。 （SITES-24972）
 * 筛选器边栏现在以400%缩放工作。 边栏会使用相对单位调整大小，并且不再阻止或隐藏过滤器控件。 用户可以查看和选择每个过滤器选项，而无需水平滚动或剪切点击目标。 （SITES-24981）
-* 键盘用户可以在Teaser模式中操作格式菜单。 按`Enter`列表`Space`或&#x200B;**段落格式**&#x200B;上的&#x200B;**或**&#x200B;可打开弹出窗口，按“箭头”键可导航选项，`Enter`将应用所做的选择。 `Escape`关闭菜单并将焦点恢复到触发控件，从而生成一致的工具栏工作流。 （SITES-25235）
-* 色板拾色器弹出窗口现在位于视区内320像素。 弹出框显示所有颜色行并支持滚动，因此作者可以在小屏幕上选择任何色板。 （SITES-25274）
-* 现在，人口统计工具栏下拉菜单与键盘完全配合使用。 打开菜单会将焦点移动到第一个选项，使用箭头键导航列表，然后关闭Esc/Tab或前进而不将焦点转储到工具栏。 交互项使用正确的语义，以便NVDA和其他阅读器正确声明选项。 （SITES-25310）
+* 键盘用户可以在Teaser模式中操作格式菜单。 按&#x200B;**列表**&#x200B;或&#x200B;**段落格式**&#x200B;上的`Enter`或`Space`可打开弹出窗口、箭头键导航选项，而`Enter`可应用选择。 `Escape`关闭菜单并将焦点恢复到触发控件，生成一致的工具栏工作流。 （SITES-25235）
+* 现在，“色板”拾色器弹出窗口位于视区内，即320像素。 弹出框显示所有颜色行并支持滚动，因此作者可以在小屏幕上选择任何色板。 （SITES-25274）
+* 人口统计工具栏下拉菜单现在完全可以使用键盘。 打开菜单会将焦点移动到第一个选项，使用箭头键导航列表，然后关闭Esc/Tab或前进而不将焦点转储到工具栏。 交互项使用正确的语义，以便NVDA和其他阅读器正确声明选项。 （SITES-25310）
 * 在“内容”树中添加组件的方式与在AEM 6.5 SP24上设计的一样。 错误初始错误来自本地设置中缺少作者权限，而不是AEM。 具有编辑权限的作者可以通过键盘或鼠标激活按钮并添加组件。 （SITES-25312）
 * “人口统计”工具栏中的键盘和屏幕阅读器访问现在可以可靠地工作。 使用NVDA的作者可以使用箭头遍历&#x200B;**Commerce**、**角色**&#x200B;和88，观察清晰的焦点反馈，并了解哪个选项卡处于活动状态。 （SITES-25326）
 
@@ -93,21 +97,21 @@ ht-degree: 19%
 * 编辑器侧边栏中的搜索现在会向屏幕阅读器公告结果。 当用户键入时，实时状态消息会报告匹配和更新的数量，而不会移动焦点。 键盘用户会立即发现结果。 （SITES-24506）
 * 列表视图中的行选择可改进辅助技术用户。 复选框会显示从行Title派生的有意义的名称，因此公告会保持简短并正确描述操作。 （SITES-24514）
 * 更正了列表视图辅助功能名称。 该表从非交互元素中删除`aria-label`，并将标签分配给可操作链接或按钮。 屏幕阅读器用户现在可以在整个列中听到准确、不重复的标签。 （SITES-24515）
-* 在高缩放使用期间，粘滞标头停止遮盖预告模式对话框。 以200%和400%缩放比例保持内容的可读性和可用性，具有垂直流动且没有剪切部分。 （SITES-24523）
+* 使用高缩放期间，粘性标头停止遮蔽Teaser模式对话框。 在200%和400%缩放的情况下，内容保持可读性和可用性，具有垂直流量且没有剪切部分。 （SITES-24523）
 * 在搜索字段中键入不再触发第一次结果的提前公告或意外激活。 体验现在会用结果计数公告简明的状态消息，而焦点仍保留在字段中，直到用户导航到列表。 （SITES-24658）
 * 文本编辑器的超链接对话框中的替换文本字段现在会显示一个程序化标签。 屏幕阅读器将朗读该字段的`Alternative text`，并专注于正确命名的控件。 此修复改进了键盘和语音用户的导航。 （SITES-24675）
 * 在引用边栏中添加了实时状态消息，以便辅助型技术立即宣布更改。 选择多个项目会触发有关引用可用性的明确消息，以防止静默状态更改并减少重复操作。 （SITES-24678）
-* 现在，“图像”对话框会通过ARIA实时区域宣布其加载状态。 屏幕阅读器在旋转器出现时收听`Loading, please wait`消息。 内容完成时提供就绪更新，以便用户知道何时可以交互。 （SITES-24697）
-* 链接选择对话框现在会显示一个用于发布搜索结果的实时区域。 屏幕阅读器在每次搜索后都能听到`results updated`状态，而无需移动焦点，因此用户可获得清晰的确认信息，确认搜索已完成。 （SITES-24700）
-* 现在，“链接选择”对话框重排为320 px。 所有字段和操作都保持可见且可用，并且不再显示水平滚动条。 （SITES-24709）
+* “图像”对话框现在通过ARIA实时区域宣布其加载状态。 屏幕阅读器在旋转图标出现时收听`Loading, please wait`消息。 此外，内容完成时可进行更新，以便用户了解他们何时可以交互。 （SITES-24697）
+* 链接选择对话框现在会显示一个可公告搜索结果的实时区域。 屏幕阅读器在每次搜索后都能听到`results updated`状态，而无需移动焦点，因此用户可获得清晰的确认信息，确认搜索已完成。 （SITES-24700）
+* 现在，“链接选择”对话框会以320像素重排。 所有字段和操作都保持可见且可用，并且不再显示水平滚动条。 （SITES-24709）
 * 现在，“链接选择”对话框对屏幕上的文本和每个树项目上的辅助功能名称使用相同的标签。 屏幕阅读器在使用箭头键移动时朗读每个项目，包括最后一个级别，从而消除静默节点和错误名称。 （SITES-24710）
-* 更改筛选器现在将其状态报告为展开或折叠。 该按钮将`aria-expanded`与筛选器面板同步切换，并公开单个清除的名称(`Change filters`)，从而删除混乱的`filter?`公告。 屏幕阅读器用户可以预测激活控件的结果。 （SITES-24713）
-* 模态标题不再涵盖宽度为320 px的内容。 标题会从粘性状态中释放出来，而且对话框正文会滚动，因此所有字段和动作按钮都保持可见且可用。 键盘用户能够在不失去焦点的情况下访问每个控件。 （SITES-24718）
+* 更改筛选器现在将其状态报告为展开或折叠。 该按钮与筛选器面板同步切换`aria-expanded`，并公开一个清除的名称(`Change filters`)，从而删除令人困惑的`filter?`公告。 屏幕阅读器用户可以预测激活控制的结果。 （SITES-24713）
+* 模态标头不再包含宽度为320像素的内容。 标题会从其粘性状态中释放，并且对话框正文会滚动，因此所有字段和操作按钮都保持可见和可用。 键盘用户可以访问每个控件而不会失去焦点。 （SITES-24718）
 * 应用程序导航链接现在会公开正确的链接语义。 屏幕阅读器将每个项目作为链接而不是列表项目进行通知，这改进了键盘导航和语音控制。 列表容器保留列表语义，而链接保留可聚焦的目标。 （SITES-24719）
 * 筛选器更改时，结果状态现在会向屏幕阅读器公告。 NVDA同时读取`X of Y results`计数和`no results`消息。 分页状态使用就地更新的实时区域，因此用户无需移动焦点即可听到确认。 （SITES-24720）
-* 现在，“轮播”对话框中的旋转按钮会向屏幕阅读器显示一个简洁的名称。 该控件不再重复组标签和输入标签，这将减少NVDA用户的繁琐程度和混淆。 （SITES-24725）
-* “帮助”菜单搜索列表显示了正确的语义。 容器会显示一个列表，每个结果都是一个没有冲突角色的链接。 NVDA和JAWS可以准确通知链接，并且导航始终保持一致。 （SITES-24729）
-* Adobe修复了“用户首选项”中的颜色样本弹出窗口，以便NVDA以焦点播放色板，而不是先前选择的色板。 键盘用户在浏览列表时听到准确的颜色名称，并且可以确认正确的选择。 （SITES-24739）
+* “轮播”对话框中的旋转按钮现在向屏幕阅读器宣布一个简洁的名称。 控件不再重复组标签和输入标签，这减少了NVDA用户的详细程度和混淆。 （SITES-24725）
+* 帮助菜单搜索列表显示正确的语义。 容器会显示一个列表，每个结果都保留一个没有冲突角色的链接。 NVDA和JAWS可准确宣布链接，并且导航保持一致。 （SITES-24729）
+* Adobe修复了“用户首选项”中的颜色样本弹出窗口，因此NVDA会公告焦点中的样本，而不是之前选择的样本。 键盘用户在浏览列表时听到准确的颜色名称，并且可以确认正确的选择。 （SITES-24739）
 * NVDA现在会读取Tree目录中的完整说明。 详细信息面板会将多行文本公开为一个值，并将其链接到字段标签。 键盘用户在通过只读字段按Tab键时听到完整的文本。 （SITES-24780）
 * 树目录现在会宣布“修改日期”。 NVDA读取焦点移至“已修改”列中的日期。 网格将每个日期与项目名称绑定，以便用户能够听到文件及其上次更新。 （SITES-24782）
 * 预览模式现在遵循用户文本间距首选项。 画布反映所有预览内容中的字母、单词和行高变化。 当间距增大时，文本不再保持固定或剪辑。 键盘和视力缺佳的用户读取内容时不会出现布局中断。 （SITES-24936）
@@ -115,69 +119,69 @@ ht-degree: 19%
 * AEM会在“卡片操作”菜单栏中添加一个程序化名称。 屏幕阅读器可正确朗读控件，语音用户可按名称定向控件。 键盘导航和焦点保持不变。 （SITES-24938）
 * 卡片视图菜单采用增加的文本间距。 “更多操作”项目会增大，且不再截断标签，包括“快速发布”。 提高字母、单词或行距的用户保留完整的标签和键盘访问权限。 （SITES-24941）
 * 已从辅助功能树中删除隐藏站点主页表的`presentation`角色。 该表再次正确读取。 NVDA和JAWS在行和列导航期间检测表、识别标题并声明标题关系。 （SITES-24942）
-* 在“列表视图”中对反馈进行排序时是显式且一致的。 排序后，标头通过`aria-sort`公开顺序。 它会宣布更改，而未排序的标题将不再声明状态，从而帮助屏幕阅读器用户跟踪哪个列控制排序。 （SITES-24943）
-* 编辑布局标题不再显示不工作的&#x200B;**编辑**&#x200B;按钮。 该控件现在充当静态状态标签并退出Tab键顺序，因此键盘用户不会浪费击键。 使用&#x200B;**选择其他模式**&#x200B;更改模式，并提供清晰的屏幕阅读器反馈。 （SITES-24950）
-* 默认情况下，仿真器工具栏显示完整的设备名称。 标签在加载时不再截断，因此用户无需猜测即可读取和选择设备。 文本在缩放级别和较窄的宽度之间缩放得非常干净。 （SITES-24952）
-* 模拟器工具栏适合小型视区。 设备为320像素，无需剪辑即可列出并控制显示，因此用户可以选择Galaxy S7和更新的型号。 即使在400%缩放时，版面也会缩放和换行，以避免水平滚动。 （SITES-24953）
-* 屏幕阅读器将朗读所选设备及其在“模拟器”中的测量值。 NVDA停止读取标尺流；设备按钮使用工具提示文本的附加说明，这减少了噪点和参考线导航。 （SITES-24955）
-* 过滤器栏现在将每个选定的标记视为操作按钮。 清晰易用的名称和焦点处理可改进公告和键盘控制。 （SITES-24980）
-* 站点管理员筛选器视图中的状态更新会向屏幕阅读器公告。 当用户在加载项目时切换卡片/列表时，NVDA现在通过实时区域朗读`Please wait`消息。 本指南可防止额外的点击和混淆。 （SITES-24992）
-* 现在，当用户展开左边栏时，键盘焦点会按逻辑顺序移动。 焦点直接从左边栏按钮移动到扩展的内容，无需回溯或跳过元素。 此更改改进了屏幕阅读器和键盘用户的辅助功能。 （SITES-24998）
-* **编辑**&#x200B;按钮的屏幕阅读器反馈现在与控件匹配。 激活按钮可朗读“编辑”操作而不是预览消息，从而提高清晰度并减少非鼠标用户的输入错误。 （SITES-25208）
-* “预告符”对话框中的确认操作可正确通知屏幕阅读器。 控件报告`Confirm`不是图标说明，为键盘和屏幕阅读器用户提供明确的指导。 （SITES-25223）
-* 帮助按钮现在会显示一个清晰的可访问名称。 屏幕阅读器朗读`Help`而不是详细图标说明。 用户可了解操作并更快地找到帮助。 （SITES-25224）
-* 时间扭曲模态在&#x200B;**`Set Date`**&#x200B;和&#x200B;**退出时间扭曲**&#x200B;链接上显示清晰的焦点环。 进行选项卡的用户可准确地查看焦点所在的位置，并避免意外操作。 戒指与背景保持至少3:1的对比度。 （SITES-25232）
-* 屏幕阅读器现在可以在“批注”工具栏中准确地宣布“批注”和“关闭批注”控件。 NVDA不再显示`Preview button pressed,`误导了作者并建议了错误的操作。 公告内容与按下的按钮相匹配，使工作流程保持清晰。 （SITES-25234）
-* 注释工具栏中的键盘导航行为一致。 打开模式时，焦点不再跳转到“退出”，而是移动到开始控件以添加注释。 用户无需反向制表符即可按顺序导航控件。 （SITES-25241）
-* 在Teaser模式中，小屏幕查看可按预期工作。 该对话框不再创建320像素的水平滚动条，并且工具栏保持可访问状态而不会侧移。 此更新可帮助缩放页面的弱视用户。 （SITES-25242）
-* 在“图像”模式中，小屏幕查看可按预期工作。 该对话框不再创建320像素的水平滚动条，并且图像工具仍然可以访问，而无需侧移。 此更新改进了缩放页面的低视力用户的导航。 （SITES-25244）
-* “搜索”模式遵循用户文本间距设置。 升高行高、段落间距、字母间距或单词间距不会再切断文本或与树重叠。 内容以WCAG 1.4.12值重排并保持完全可读。 （SITES-25245）
-* 现在，“搜索”模式可容纳小屏幕，并且不会与树目录重叠（320像素）。 内容在对话框中重排，仅保持垂直滚动，并保持控件可见。 此修复提高了可读性和键盘导航能力，并与WCAG Reflow保持一致。 （SITES-25246）
+* 在列表视图中排序反馈是明确且一致的。 排序后，标头通过`aria-sort`公开顺序。 它会宣布更改，而未排序的标题将不再声明状态，从而帮助屏幕阅读器用户跟踪哪个列控制排序。 （SITES-24943）
+* 编辑布局标题不再显示不工作的&#x200B;**编辑**&#x200B;按钮。 该控件现在充当静态状态标签并退出Tab键顺序，因此键盘用户不会浪费击键。 使用&#x200B;**选择其他模式**&#x200B;以更改模式，并清除屏幕阅读器反馈。 （SITES-24950）
+* 默认情况下，模拟器工具栏会显示完整的设备名称。 标签在加载时不再截断，因此用户无需猜测即可读取和选择设备。 文本在缩放级别和窄宽度之间均匀缩放。 （SITES-24952）
+* 模拟器工具栏适合小型视区。 设备为320像素，无需剪辑即可列出并控制显示，因此用户可以选择Galaxy S7和更新的型号。 布局可缩放和换行，以避免即使在400%缩放时水平滚动。 （SITES-24953）
+* 屏幕阅读器在模拟器中朗读选定的设备及其测量。 NVDA停止读取标尺流；设备按钮使用附加的工具提示文本描述，从而减少噪音并引导导航。 （SITES-24955）
+* 过滤器栏现在将每个选定的标记视为操作按钮。 Clear accessible names and focus handling improve announcements and keyboard control. （SITES-24980）
+* Status updates in the Sites Admin filter view announce to screen readers. When users switch Card/List while items load, NVDA now speaks the `Please wait` message through a live region. This guidance prevents extra clicks and confusion. （SITES-24992）
+* Keyboard focus now moves in a logical order when users expand the left rail. Focus shifts directly from the left rail button to the expanded content, eliminating the need to backtrack or skip elements. This change improves accessibility for screen reader and keyboard users. （SITES-24998）
+* Screen reader feedback for the **Edit** button now matches the control. Activating the button announces the Edit action rather than a preview message, which improves clarity and reduces input errors for non-mouse users. （SITES-25208）
+* The confirm action in the Teaser dialog box announces correctly to screen readers. The control reports `Confirm` not the icon description, giving keyboard and screen-reader users clear guidance. （SITES-25223）
+* The Help button now exposes a clear accessible name. Screen readers announce `Help` instead of a verbose icon description. Users understand the action and can find assistance faster. （SITES-25224）
+* The Timewarp modal displays a clear focus ring on the **`Set Date`** and **Exit Timewarp** links. Users who tab see exactly where the focus lands and avoid unintended actions. The ring maintains at least 3:1 contrast against the background. （SITES-25232）
+* Screen readers now announce the Annotate and Close Annotate controls accurately in the Annotation toolbar. NVDA no longer says `Preview button pressed,` which misled authors and suggested the wrong action. The announcement matches the button pressed and keeps the workflow clear. （SITES-25234）
+* Keyboard navigation in the annotation toolbar behaves consistently. Focus no longer jumps to Exit when opening the mode and instead moves to the starting control for adding annotations. Users navigate the controls in sequence without reverse tabbing. （SITES-25241）
+* Small-screen viewing works as expected in the Teaser modal. The dialog box no longer creates a horizontal scroll bar at 320 px, and the toolbar stays accessible without panning sideways. 此更新可帮助缩放页面的弱视用户。 （SITES-25242）
+* 小屏幕查看功能在图像模式中按预期工作。 该对话框不再创建320像素的水平滚动条，并且图像工具保持可访问状态而不会侧移。 此更新改进了缩放页面的弱视用户的导航。 （SITES-25244）
+* 搜索模式采用用户文本间距设置。 提高行高、段落间距、字母间距或字间距不再截断文本或与树重叠。 内容在WCAG 1.4.12值处重新流动并保持完全可读。 （SITES-25245）
+* 现在，搜索模式可适应小屏幕，而不会与树目录（320像素）重叠。 内容在对话框中重排，仅保持垂直滚动，并保持控件可见。 此修复提高了可读性和键盘导航能力，并与WCAG Reflow保持一致。 （SITES-25246）
 * 轮播模式溢出不再强制以手机大小的宽度进行水平滚动。 该组件可适应320像素，保持垂直流量，并保持控件处于可见状态。 这项更改改进了创作过程中的可读性和键盘访问权限。 （SITES-25254）
 * 注释工作流不再失去焦点。 模式将初始焦点置于有意义的标题上，防止焦点跳出对话框，并在关闭对话框后将焦点恢复到触发条件。 屏幕阅读器输出保持简洁和相关。 （SITES-25257）
 * **删除注释**&#x200B;对话框现在可以正确处理键盘焦点。 打开该对话框会将焦点移动到屏幕阅读器上下文的标题，关闭该对话框会将焦点发送回启动该对话框的&#x200B;**删除注释**&#x200B;按钮。 用户不再登陆不相关的控件或模式窗口。 （SITES-25258）
-* 时间扭曲日期选取器现在可以正确管理焦点。 按`Esc`将焦点返回到&#x200B;**日期选取器**&#x200B;按钮，选择日期会将焦点移动到链接的输入字段。 键盘和屏幕阅读器用户可保留上下文，而不会停留在模式之后。 （SITES-25264）
-* 屏幕阅读器将宣布&#x200B;**批注**&#x200B;和&#x200B;**关闭批注**&#x200B;按钮的正确操作。 NVDA不再显示`Preview button pressed`；它会朗读按钮名称，以便用户了解注释模式何时开始或结束。 （SITES-25268）
+* 时间扭曲日期选取器现在可正确管理焦点。 按`Esc`将焦点返回到&#x200B;**日期选取器**&#x200B;按钮，选择日期会将焦点移动到链接的输入字段。 键盘和屏幕阅读器用户可保留上下文，并且不会落在模式窗口中。 （SITES-25264）
+* 屏幕阅读器会朗读&#x200B;**注释**&#x200B;和&#x200B;**关闭注释**&#x200B;按钮的正确操作。 NVDA不再显示`Preview button pressed`；它会朗读按钮名称，以便用户了解注释模式何时开始或结束。 （SITES-25268）
 * 注释模式现在显示清除&#x200B;**提交**&#x200B;操作。 作者可以添加注释并使用钢笔图标按钮提交它，也可以使用`Esc`关闭模式窗口，而无需猜测流量。 （SITES-25269）
 * 注释条目包括显式操作按钮。 该对话框显示&#x200B;**提交**&#x200B;以保存注释，显示&#x200B;**取消**&#x200B;以关闭注释，键盘可通过辅助技术访问和通知。 作者无需再依赖单击对话框外部或仅按`Esc`即可完成。 （SITES-25281）
 * 注释模式现在使键盘焦点位于叠加图及其工具栏上。 当作者按Tab键时，叠加后面的页面不再受到关注，因此用户保持定向并且无需跳转到底层内容即可导航注释。 （SITES-25282）
 * 编辑布局中的设备选择器可按预期工作。 如果两个设备选项的宽度相似（例如，Galaxy 7旁边的iPhone 8 Plus），则选定按钮会显示工具提示以显示完整标签，而两个按钮均保持可见和可访问。 （SITES-25285）
-* 缩放为200%时，“编辑版面”不会再超出页面。 工具栏完全渲染，并在需要时显示水平滚动，恢复对弱视用户之前隐藏的控件的访问。 （SITES-25288）
-* 现在，布局预览中的Tab键顺序会从主工具栏直接移至“统计”工具栏。 键盘和屏幕阅读器用户可以按可预测的顺序遍历控件，而不是跳转到辅助工具栏。 此更改与WCAG 2.4.3的焦点顺序一致。 （SITES-25305）
-* 将页面缩放为200%不再隐藏“人口统计”工具栏的一部分。 工具栏部分管理溢出并在其自己的区域中提供滚动，使每个控件可见并以高放大率操作。 （SITES-25309）
-* “人口统计”工具栏中的文本输入现在显示可访问的正确名称。 每个字段都包含一个带有程序化标签的唯一ID，因此屏幕阅读器会朗读字段的用途，用户可以按标签导航。 可见标签位于控件附近，以提高低视觉可读性。 （SITES-25316）
+* 在200%缩放时，编辑布局不再超出页面。 工具栏会完全呈现并在需要时显示水平滚动，从而恢复对弱视用户以前隐藏的控件的访问。 （SITES-25288）
+* 布局预览中的选项卡顺序现在从主工具栏直接移动到人口统计工具栏。 键盘和屏幕阅读器用户可以按可预测的顺序遍历控件，而不是跳转到辅助工具栏。 此更改与WCAG 2.4.3的焦点顺序一致。 （SITES-25305）
+* 将页面缩放为200%不再隐藏“人口统计”工具栏的一部分。 工具栏部分管理溢出，并在其自己的区域提供滚动，使每个控件在高放大率下可见且可操作。 （SITES-25309）
+* “人口统计”工具栏中的文本输入现在会公开适当的可访问名称。 每个字段都包含一个带有程序化标签的唯一ID，因此屏幕阅读器会朗读字段的用途，用户可以按标签导航。 可见标签位于控件附近，以改善弱视可读性。 （SITES-25316）
 * 现在，编辑按钮在辅助工具栏中向屏幕阅读器宣布正确的操作。 激活它可读取`Edit`而不是不相关的`Preview button pressed,`，这样可在键盘导航期间消除混淆。 （SITES-25320）
 * 人口统计工具栏购物车滑块现在会显示一个适当的可访问名称。 屏幕阅读器将朗读`Cart total`，语音输入工具可以按名称定位控件，从而改善对WCAG 4.1.2（名称、角色、值）的合规性。 （SITES-25322）
-* 现在，当作者使用箭头键更改值时，人口统计工具栏滑块会保持焦点。 焦点不再跳转到“购物车”按钮，因此键盘用户不断调整值，屏幕阅读器将宣布每次更改。 （SITES-25324）
-* 现在，在Reflow中搜索资源时可清晰地达到320像素（大约缩放400%）。 此模式可保持标题、字段和动作的可读性和非重叠性，因此作者无需水平滚动即可进行搜索。 （SITES-25330）
-* 编辑器中的资源面板遵循逻辑焦点序列。 键盘用户选项卡可跨每个缩略图访问面板退出控件。 此更改删除了跳过，并提高了对WCAG 2.4.3的兼容性。 （SITES-25360）
-* AEM会更新Teaser模态富文本编辑器中的&#x200B;**列表**&#x200B;和&#x200B;**段落**&#x200B;按钮，以显示其展开和折叠状态。 这些按钮现在切换`aria-expanded`并向屏幕阅读器宣告状态更改。 在打开或关闭格式菜单之前，作者可获得清晰的反馈，并避免猜测。 （SITES-25365）
-* AEM在Teaser模式中宣布加载状态。 现在，该模式会在内容加载时显示实时状态消息，因此NVDA和JAWS会说`Loading, please wait.`。作者应该会收到清晰的反馈，在对话框准备就绪之前应避免与之交互。 （SITES-25366）
-* 改进了“链接选择”对话框的“资源”选项卡中的状态消息。 当发生错误时，组件将注入可读状态更新并保持键盘焦点稳定，让NVDA/JAWS立即通知用户。 （SITES-25368）
-* 更正了“注释”面板中非常窄视区的UI行为。 320 px时，字幕和“添加”控件以前发生冲突；工具栏现在会重排，并保持元素之间的明显分离。 作者可以在不损失信息或功能的情况下操作控件。 （SITES-25376）
-* 修复了&#x200B;**Teaser**&#x200B;对话框的&#x200B;**链接和操作**&#x200B;选项卡中的延迟错误状态。 在作者启用&#x200B;**Call to action**&#x200B;并更正空白或无效字段后，选项卡会清除其错误样式和图标并删除`aria-invalid`。 字段验证后，屏幕阅读器不再公告错误。 （SITES-25527）
-* 现在，站点管理员表单中的错误处理符合辅助功能预期。 验证失败时，页面会立即显示错误，将焦点转移到可用的消息目标，并向屏幕阅读器（如JAWS）公开文本。 （SITES-27138）
-* 现在，在站点中创建文件夹时会显示明确的确认toast。 JAWS会通过实时区域发布消息，因此作者会在操作后立即收到可访问的反馈。 （SITES-27141）
-* 修复了创作对话框中的图像在无替换文本的情况下呈现时的辅助功能间隙。 该对话框现在为纯视觉元素提供了需要的描述性替换文字和空替换文字，从而恢复了JAWS和其他屏幕阅读器的合规行为。 （SITES-27153）
-* 改进了创作对话框中的错误处理。 当发生配置错误时，UI显示显式文本并通过警报区域触发屏幕阅读器公告。 作者会立即收到反馈，并且可以在不丢失上下文的情况下更正问题。 （SITES-27155）
-* 修复了站点管理员中的重排辅助功能缺陷。 在400%的浏览器缩放比例下，工具栏和网格控件重叠在一起，并将按键操作推到屏幕外，这阻止了键盘导航和屏幕阅读器的使用。 布局现在可正确重排，以便搜索、筛选器和操作按钮在400%缩放下保持可见和可操作。 （SITES-27238）
-* 更正了页面锁定/解锁工作流中显示的锁定状态消息中的低对比度。 该消息现在满足4.5:1的比率，从而提高作者的可读性和ADA合规性。 （SITES-27270）
-* 在&#x200B;**有效权限**&#x200B;对话框的复选标记图标中添加了可访问的名称。 现在，JAWS会宣布这些图标及其含义，从而改善键盘导航和ADA合规性。 （SITES-27272）
-* 隐藏的标题导航接受焦点，并使视力正常的用户和屏幕阅读器用户感到困惑。 更新将禁用对折叠控件的关注，并仅公开可见项目。 导航保持可预测性并符合WCAG 2.4.3。 （SITES-35224）
+* 现在，当作者使用箭头键更改值时，人口统计工具栏滑块会保持焦点。 焦点不再跳转到“购物车”按钮，因此键盘用户不断调整值，屏幕阅读器会朗读每次更改。 （SITES-25324）
+* 搜索Assets时现在可干净地重排320像素（缩放约400%）。 The modal keeps headings, fields, and actions readable and non-overlapping, so authors can search without horizontal scrolling. （SITES-25330）
+* The Assets panel in the editor follows a logical focus sequence. Keyboard users tab across each thumbnail and can access the panel exit controls. The change removes skips and improves compliance with WCAG 2.4.3. （SITES-25360）
+* AEM updates the **Lists** and **Paragraphs** buttons in the Teaser modal&#39;s rich text editor to expose their expanded and collapsed state. The buttons now toggle `aria-expanded` and announce the state change to screen readers. Authors get clear feedback and avoid guessing before opening or closing the format menus. （SITES-25365）
+* AEM announces the loading state in the Teaser modal. The modal now exposes a live status message while content loads, so NVDA and JAWS speak `Loading, please wait.` Authors should receive clear feedback and avoid interacting with the dialog box before it is ready. （SITES-25366）
+* Improves status messaging in the Asset tab of the Link selection dialog box. When an error occurs, the component injects a readable status update and keeps keyboard focus stable, letting NVDA/JAWS inform users right away. （SITES-25368）
+* Corrected UI behavior in the Note panel for very narrow viewports. At 320 px, the title and Add control previously collided; the toolbar now reflows and preserves clear separation between elements. Authors can operate the controls without loss of information or function. （SITES-25376）
+* Fixed a lingering error state in the **Teaser** dialog box&#39;s **Links &amp; Actions** tab. After authors enable **Call to Action** and correct blank or invalid fields, the tab clears its error styling and icon and removes `aria-invalid`. Screen readers no longer announce an error once the fields validate. （SITES-25527）
+* Error handling in Sites Admin forms now meets accessibility expectations. When validation fails, the page shows the error immediately, shifts focus to a usable message target, and exposes the text to screen readers such as JAWS. （SITES-27138）
+* Creating a folder in Sites now shows a clear confirmation toast. JAWS announces the message through the live region, so authors receive immediate, accessible feedback after the action. （SITES-27141）
+* Fixed an accessibility gap where images in authoring dialog boxes rendered without alt text. The dialog box now provides descriptive alt text where needed and empty alt for purely visual elements, restoring compliant behavior for JAWS and other screen readers. （SITES-27153）
+* Improved error handling in authoring dialog boxes. When a configuration error occurs, the UI shows explicit text and triggers a screen-reader announcement by way of an alert region. Authors receive immediate feedback and can correct the problem without losing context. （SITES-27155）
+* Fixed a Reflow accessibility defect in Sites Admin. At 400% browser zoom, the toolbar and grid controls overlapped and pushed key actions off-screen, which blocked keyboard navigation and screen-reader use. The layout now reflows correctly so the search, filter, and action buttons remain visible and operable at 400% zoom. （SITES-27238）
+* Corrected low contrast in the lock status message shown in the page Lock/Unlock workflow. The message now meets a 4.5:1 ratio, improving readability and ADA compliance for authors. （SITES-27270）
+* Added accessible names to the checkmark icons in the **Effective Permissions** dialog box. JAWS now announces the icons and their meaning, improving keyboard navigation and ADA compliance. （SITES-27272）
+* Hidden header navigation accepted focus and confused both sighted and screen-reader users. The update disables focus on collapsed controls and exposes only visible items. Navigation stays predictable and meets WCAG 2.4.3. （SITES-35224）
 
-* 修正了站点管理员中的文件夹缩略图图标以装饰性图像的形式显示的问题。 更新删除了图像角色并应用了空替换文本，因此辅助技术忽略了图标而只读取有意义的标签。 （SITES-2852）
-* Adobe提高了站点主页中引用文本的颜色对比度。 该文本现在符合WCAG 2.1 AA，比例至少为4.5:1，并且在浅色主题和明亮屏幕上可清晰阅读。 （SITES-24755）
-* 引用边栏里程碑现在向屏幕阅读器宣布其名称。 区域显示唯一的`aria-label` (`References rail`)，这改进了地标导航并将其与其他区域区分开。 （SITES-24973）
-* 描述RTE阻止了正向选项卡导航并中断了对话框流。 此修复可恢复标准的键盘移动。 作者使用单个选项卡继续浏览该字段，并保持选择顺序可预测。 （SITES-35228）
-* 创作控件缺少可访问名称和公开的原始图标文本，这会使JAWS感到困惑。 此修复添加了明确的ARIA标签和标准角色。 公告听起来正确且符合辅助功能预期。 （SITES-35227）
-* “类别”下拉列表缺少特定标签，因此JAWS表示通用`images button menu.`。更新将命名控件`Categories`并定义其角色。 屏幕阅读器用户会听到准确的标签并了解可用的选项。 （SITES-35226）
-* “属性”对话框显示了一个数据网格，屏幕阅读器将其视为纯文本。 JAWS和NVDA错过了焦点，无法宣告行和列。 此修复程序添加了真正的表语义和ARIA角色。 屏幕阅读器现在可以识别表格并正确跟踪焦点。 （SITES-35225）
-* 内容片段文本编辑器加载了截断的操作栏。 图标被剪切，溢出菜单变得不可访问。 更新修复了布局，因此完整工具栏仍可见并可访问。 （SITES-33005）
-* “基本”选项卡表单字段无法显示有用的错误文本。 该表单现在显示清楚的内联消息，并将它们链接到屏幕阅读器字段。 键盘和辅助技术用户可立即获得有关修复输入的指导。 （SITES-32480）
+* Fixed the folder thumbnail icons in Sites Admin to behave as decorative images. The update removes the image role and applies empty alt text, so assistive technology ignores the icons and reads only meaningful labels. （SITES-2852）
+* Adobe increased the color contrast for the References text in the Sites home page. The text now meets WCAG 2.1 AA with a ratio of at least 4.5:1 and reads clearly on light themes and bright screens. （SITES-24755）
+* The References rail landmark now announces its name to screen readers. The region exposes a unique `aria-label` (`References rail`), which improves landmark navigation and distinguishes it from other regions. （SITES-24973）
+* The Description RTE blocked forward Tab navigation and broke dialog flow. The fix restores standard keyboard movement. Authors continue past the field with a single Tab and keep the selection order predictable. （SITES-35228）
+* Authoring controls lacked accessible names and exposed raw icon text, which confused JAWS. The fix adds explicit ARIA labels and standard roles. Announcements sound correct and align with accessibility expectations. （SITES-35227）
+* The Categories drop-down list lacked a specific label, so JAWS spoke a generic `images button menu.` The update names the control `Categories` and defines its role. Screen-reader users hear an accurate label and understand the available choices. （SITES-35226）
+* “属性”对话框显示一个数据网格，屏幕阅读器被视为纯文本。 JAWS和NVDA错过了焦点，并且无法宣告行和列。 此修复添加真正的表语义和ARIA角色。 屏幕阅读器现在可以识别表格并正确跟踪焦点。 （SITES-35225）
+* 内容片段文本编辑器加载了截断的操作栏。 图标被剪切，溢出菜单变得不可访问。 更新修复了布局，以便完整工具栏保持可见和可访问。 （SITES-33005）
+* 基本选项卡表单字段无法显示有用的错误文本。 该表单现在显示清楚的内联消息，并将它们链接到屏幕阅读器字段。 键盘和辅助技术用户将立即获得有关固定输入的指导。 （SITES-32480）
 * 自定义组件中使用的多字段显示了未标记的图标按钮和一致的选项卡顺序。 JAWS/NVDA仅宣布`button`或跳过阻止键盘操作的控件。 该更新提供了添加、删除和移动的描述性名称，规范了制表位，并宣布了列表更新以满足ADA的期望。 （SITES-30660）
 * “快速发布”现在会返回一个明确的成功通知。 对话框关闭，随后将显示一个祝酒词确认操作，屏幕阅读器将朗读该消息，这样作者就不会错过结果。 （SITES-26912）
-* 无需更改。 Adobe审核了搜索图标与附近文本重叠的说法。 标题包括一个客户添加的标签；vanilla AEM仅呈现图标。 清理实例以100%缩放显示正确的布局，因此错误已关闭为超出范围。 （SITES-26910）
-* 创建页面主题不再隐藏焦点状态。 在键盘导航期间，水生和沙漠风格在&#x200B;**基本**&#x200B;选项卡和邻近的选项卡上呈现一致的高光。 此更改为视力不佳的用户恢复可预测、可察觉的焦点反馈。 （SITES-26907）
+* 无需更改。 Adobe审核了搜索图标与附近文本重叠的说法。 标头包含客户添加的标签；vanilla AEM仅呈现图标。 干净的实例以100%缩放显示正确的布局，因此错误已关闭为超出范围。 （SITES-26910）
+* 创建页面主题不再隐藏焦点状态。 在键盘导航期间，水生样式和沙漠样式在&#x200B;**基本**&#x200B;选项卡和相邻选项卡上呈现一致的高亮。 此更改恢复了视力缺佳的用户的可预测、可感知的焦点反馈。 （SITES-26907）
 
 
 
@@ -187,7 +191,7 @@ ht-degree: 19%
 
 #### 经典 UI{#sites-classicui-6524}
 
-经典UI复选框会丢失其标签并显示空白选项。 对话框还显示编码HTML，如`<br>`。 更新将还原复选框标签并解码标记，这样对话框才能正确读取。 （SITES-31822）
+经典UI复选框丢失了标签并显示空白选项。 Dialog boxes also displayed encoded HTML such as `<br>`. The update restores checkbox labels and decodes markup, so dialog boxes read correctly. （SITES-31822）
 
 <!--
 #### [!DNL Content Fragments]{#sites-contentfragments-6524}
@@ -195,19 +199,19 @@ ht-degree: 19%
 
 #### [!DNL Content Fragments] - 管理{#sites-admin-6524}
 
-内容片段名称中的括号导致“引用”面板误报使用情况。 即使其他片段引用了0，作者也看到它。 该修复更正了`(`和`)`的路径分析，并显示了正确的非零计数和条目。 （SITES-35078）
+Parentheses in a Content Fragment name caused the References panel to misreport usage. Authors saw 0 even when other fragments referenced it. The fix corrects the path parsing for `(` and `)` and surfaces the proper non-zero count and entries. （SITES-35078）
 
 
 #### [!DNL Content Fragments] - 片段编辑器{#sites-fragments-editor-6524}
 
-* DAM路径包含括号的内容片段取消发布失败。 管理发布向导重写了`(`和`)`，并破坏了资产路径。 此修复程序会保留字符并解析正确的项目，以便完成取消发布操作。 （SITES-35077）
-* 编辑内容片段并返回到Assets列表会隐藏片段或整个文件夹。 关闭编辑器后，无法刷新列表。 修复程序现在可以可靠地刷新列表，并保持编辑的片段可见，而无需硬重新加载。 （SITES-35374）
+* Unpublish failed for Content Fragments whose DAM path contained parentheses. The Manage Publication wizard rewrote `(` and `)`, and broke the asset path. The fix preserves the characters and resolves the correct item, so the unpublish action completes. （SITES-35077）
+* Editing a Content Fragment and going back to the Assets list hid the fragment or the whole folder. The list failed to refresh after closing the editor. The fix now refreshes the list reliably and keeps the edited fragment visible without a hard reload. （SITES-35374）
 
-* 内容片段编辑器无法打开极化资产选择器，因为已删除所需的IMS范围。 此修复程序将恢复最小作用域并重新建立投放连接。 资产浏览和选择可再次正常工作，且没有HTTP 500错误。 （SITES-35837）
+* Content Fragment Editor failed to open the Polaris Asset Selector because required IMS scopes were removed. The fix restores the minimal scopes and re-establishes the Delivery connection. Asset browsing and selection work again, without HTTP 500 errors. （SITES-35837）
 
 #### [!DNL Content Fragments] - GraphQL API {#sites-graphql-api-6524}
 
-每次部署后，有效的GraphQL查询开始返回`GraphQL_QueryValidationError`。 端点保留了一个过时的架构，直到团队刷新缓存或重新启动。 该修复程序会在部署期间刷新GraphQL架构和持久查询注册表，并立即恢复正常响应。 （SITES-34301）
+After each deployment, valid GraphQL queries started returning `GraphQL_QueryValidationError`. The endpoint kept a stale schema until teams flushed caches or restarted. The fix refreshes the GraphQL schema and persisted-query registry during deployment, restoring normal responses immediately. （SITES-34301）
 
 <!--
 #### [!DNL Content Fragments] - GraphQL Query Editor{#sites-graphql-query-editor-6524}
@@ -231,17 +235,17 @@ ht-degree: 19%
 
 #### ContentHub {#sites-contenthub-6524}
 
-ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客户端库删除了提取jQuery 1.12.4的cq.shared依赖项，因此站点加载一个一致的jQuery并可靠地运行前端代码。 （SITES-30404）
+ContextHub no longer injects a second jQuery copy on publish pages. The segment-engine client library drops the cq.shared dependency that pulled jQuery 1.12.4, so sites load one consistent jQuery and front-end code works reliably. （SITES-30404）
 
 #### 体验片段{#sites-experiencefragments-6524}
 
-* 现在，体验片段会对不存在Adobe Target配置时显示的警告进行本地化。 消息以作者的区域设置显示，而不是以英语显示，因此导出和激活步骤对于全局团队可正确读取。 （SITES-11868）
-* 发布体验片段变体现在会在云服务未附加到变体时显示本地化的错误消息。 该消息将以用户的语言显示在UI中，而不是仅英文字符串。 （SITES-20293）
-* 将体验片段导出到Target时因`Attempt to modify attribute at illegal index: -1`而崩溃。 Web虚拟设备检测与导出程序和损坏的属性处理冲突。 修复加强了属性处理并删除了该冲突。 导出成功，片段在Target中呈现。 （SITES-31891）
+* Experience Fragments now localize the warning shown when no Adobe Target configuration exists. The message displays in the author&#39;s locale instead of English, so export and activation steps read correctly for global teams. （SITES-11868）
+* Publishing an Experience Fragment variation now shows a localized error message when no cloud service attaches to the variation. The message appears in the UI in the user&#39;s language instead of an English-only string. （SITES-20293）
+* Exporting an Experience Fragment to Target crashed with `Attempt to modify attribute at illegal index: -1`. Web vitals instrumentation conflicted with the exporter and corrupted attribute handling. The fix hardens attribute processing and removes that conflict. Exports succeed and the fragment renders in Target. （SITES-31891）
 
-* 体验片段属性现在本地化&#x200B;**引用**&#x200B;选项卡。 标签和列标题（如`Page,` `Page path,`和`Variation title`）以作者的语言显示。 此更改将删除仅英文字符串，并使全局团队的属性视图保持一致。 （SITES-11203）
-* **变体** > **创建工作流**&#x200B;现在显示完整的翻译文本。 该对话框通过正确包装内容并调整内容大小来处理较长的区域设置字符串，从而消除剪切或剪切标签。 （SITES-19304）
-* 体验片段属性现在将社交媒体状态标签本地化。 作者可在所有区域设置中按其选定语言查看状态值，如“已发布”和“未发布”。 此更改将删除在审阅过程中导致混淆的仅英文字符串。 （SITES-20014）
+* Experience Fragment properties now localize the **References** tab. Labels and column headings such as `Page,` `Page path,` and `Variation title` show in the author&#39;s language. This change removes English-only strings and keeps the properties view consistent for global teams. （SITES-11203）
+* The **Variations** > **Create workflow** now shows complete translation text. The dialog box handles long locale strings by wrapping and sizing content correctly, eliminating clipped or cut-off labels. （SITES-19304）
+* Experience Fragment properties now localize the Social Media status labels. Authors see status values such as Posted and Not Posted in their selected language across all locales. This change removes English-only strings that caused confusion during review. （SITES-20014）
 
 <!--
 #### Foundation Components (Legacy){#sites-foundation-components-legacy-6524}
@@ -249,20 +253,20 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 #### 发布项{#sites-launches-6524}
 
-* 删除非常大的Launch会冻结存储库。 该作业排队的移除次数过多，导致其他请求不足。 此修复程序现在会批量删除文档块，并在文档块之间生成内容，因此清理过程会在系统保持响应状态时完成。 （SITES-32004）
+* Deleting a very large Launch froze the repository. The job queued too many removals and starved other requests. The fix now batches delete and yields between chunks, so cleanup completes while the system stays responsive. （SITES-32004）
 
-* 启动项配置>属性显示正在工作的公司和属性下拉列表。 **保存**&#x200B;和&#x200B;**关闭**&#x200B;将遵循已完成的字段，并且标题验证不再触发公司或属性错误。 （CQ-4359853）
-* IMS配置中的所需检查在更新时运行，而不只是在创建时运行。 “客户端ID”或“客户端密钥”等字段中的空值会显示错误并暂停保存，直到输入有效值为止，从而防止重复使用先前的值。 （CQ-4359938）
-* 启动创建显示已转换的验证和错误字符串。 用于创建失败和缺少源页面的仅英文消息不再显示。 作者会在“启动”设置期间看到清晰、正确区域设置的反馈。 （SITES-13085）
-* 启动项提升更新源页面上的页面属性`jcr:title`、`jcr:description`和`cq:redirectTarget`。 此更改会删除MSM转出配置和工作流逻辑中的属性排除。 营销活动、翻译和SEO会保持标题、描述和重定向的一致性。 （SITES-34509）
-* Launch操作忽略范围并包含与目标部分共享相同父项的页面。 更新强制子树边界并只升级所选页面及其子项。 不相关的页面会保留其现有内容。 （SITES-34344）
+* Launch Configuration > Properties shows working Company and Property drop-downs. **Save** and **Close** honors completed fields, and the Title validation no longer triggers errors on Company or Property. （CQ-4359853）
+* Required checks in IMS Configuration run on update, not only on creation. Empty values in fields like Client ID or Client Secret display an error and halt the save until a valid value is entered, preventing reuse of the prior value. （CQ-4359938）
+* Launch creation shows translated validation and error strings. English-only messages for creation failures and missing source pages no longer appear. Authors see clear, locale-correct feedback during Launch setup. （SITES-13085）
+* Launch promotion updates page properties `jcr:title`, `jcr:description`, and `cq:redirectTarget` on the source page. The change removes property exclusions in MSM rollout config and workflow logic. Campaigns, translations, and SEO keep consistent titles, descriptions, and redirects. （SITES-34509）
+* The Launch action ignored scope and included pages that shared the same parent as the target section. The update enforces subtree boundaries and promotes only the chosen page and its descendants. 不相关的页面会保留其现有内容。 （SITES-34344）
 * 修复了在创作处停止并跳过发布层的嵌套启动项自动提升。 子启动项的自动促销会将更新页面发布到配置的发布者，并按照计划完成完整启动。 （SITES-30420）
 
 <!--
 #### Link Checker{#sites-link-checker-6524}
 -->
 
-#### MSM - Live Copy {#sites-msm-live-copies-6524}
+#### MSM - Live Copy{#sites-msm-live-copies-6524}
 
 * 文件夹级别的转出无法在该文件夹下创建体验片段的活动副本。 单个转出有效，从而中断了批量工作流。 此更改使文件夹转出与页面行为保持一致，并在子树中传播关系和引用。 （SITES-35161）
 * 删除Live Copy中的组件后，**启用继承**&#x200B;因JavaScript错误而中断，组件在第二次尝试之前一直丢失。 该更新修复了已删除后重新加载以携带正确的参数，并替换了过时的警报调用。 对话框会干净地打开，并且继承会在第一次尝试时恢复。 （SITES-31387）
@@ -286,7 +290,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 #### 富文本编辑器{#sites-rte-6524}
 
 * 在全屏模式下，当不存在错误时，富文本编辑器会将拼写检查结果隐藏在对话框后面。 更新将结果面板放在前面，并保持消息和建议可见。 作者无需离开全屏即可查看和接受更正。 （SITES-32366）
-* 富文本编辑器图像现在遵循所选对齐方式。 作者在“图像”对话框中设置“左”、“中”或“右”，编辑器在输出中始终应用该选择。 此更改还会稳定“替换文本”对话框，因此替换文本和对齐方式会进行保存并在重新编辑时保留。 （SITES-30634）
+* 富文本编辑器图像现在遵循所选对齐方式。 作者在“图像”对话框中设置“左”、“中”或“右”，编辑器在输出中始终应用该选择。 此更改还会稳定“替换文本”对话框，因此替换文本和对齐将保存并在重新编辑时保留。 （SITES-30634）
 
 #### 通用编辑器 {#sites-universal-editor-6524}
 
@@ -312,10 +316,10 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 #### Forms Designer
 
 * 用户在特定测试用例中遇到无法单击超链接的问题，这会影响他们在应用程序中导航和验证链接的能力。 （LC-3923505）
-* 用户在使用非拉丁语言的AEM Forms Designer 6.5.23生成的PDF中遇到可访问性问题。 路径标记未置于Artifact容器中，导致PAC和屏幕阅读器检查失败。 （LC-3923295）
+* 用户在使用非拉丁语言的AEM Forms Designer 6.5.23生成的PDF中遇到可访问性问题。 路径标记未放置在工件容器中，导致PAC和屏幕阅读器检查失败。 （LC-3923295）
 * 在使用输出服务从6.5.21版修补到6.5.23版后，用户在“可移植文档格式”(PDF)文本框中遇到断开的超链接问题。 （LC-3923290）
-* 用户遇到记录文档(DoR)表单的辅助功能问题。 当输入字段为空时，屏幕阅读器仅读取字段题注而非值，因此残障用户难以有效地浏览表单。 （LC-3923234）
-* 用户在DoRPDF forms中遇到辅助功能问题，其中NVDA错误地宣布了复选框、单选按钮和文本字段的`unavailable`。 该消息经常被重复，给屏幕阅读器用户造成混淆。 （LC-3923201）
+* 用户遇到记录文档(DoR)表单的辅助功能问题。 当输入字段为空时，屏幕阅读器仅读取字段标题，而不读取值，这使得残障用户难以有效地浏览表单。 （LC-3923234）
+* 用户在DoR PDF forms中遇到辅助功能问题，其中NVDA错误地宣布了复选框、单选按钮和文本字段的`unavailable`。 该消息经常被重复，给屏幕阅读器用户造成混淆。 （LC-3923201）
 * 用户在添加新字段时遇到XDP中的制表符订单差异。 现有选项卡顺序意外更改，影响表单导航。 （LC-3923183和LC-3922630）
 * 用户遇到了HTML渲染问题。 使用`docReady`事件时，它未在HTML中正确触发，从而导致脚本无法按预期执行。 （LC-3923118）
 * 用户遇到了PDF渲染脚本在AEM Forms Cloud生产环境中不起作用的问题。 (LC-3923082 )
@@ -327,7 +331,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 * 用户在AEM Designer 6.5.19中遇到不稳定的超链接格式，其中文本框内的超链接错误地采用了周围文本的样式，例如第一个字符的格式。 （LC-3922376）
 * 用户在使用HTML OSGI v6.5.22在Mac上通过移动渲染来渲染AEM Forms表单时遇到问题。 （LC-3923058）
 * 用户在使用Designer 6.5.23创建并与PAC 2024分析的XDP模板中使用边界或后台字段时，遇到了“可移植文档格式(PDF)文件中的路径对象未标记”错误。 （LC-3923013）
-* 用户在接收消息`Dati Richiedente`时，遇到可移植应用程序组件(PAC)中标题`path object not tagged.`的背景颜色错误(LC-3922912)
+* 用户在接收消息`path object not tagged.`时，遇到可移植应用程序组件(PAC)中标题`Dati Richiedente`的背景颜色错误(LC-3922912)
 * 用户遇到了一个问题，特定模板将目标字体替换为精简字体。 （LC-3922330）
 
 #### 自适应表单
@@ -363,18 +367,18 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 * “帮助”图标现在会显示辅助型技术的简要标签。 JAWS读取`Help button`并且不再添加多余的`menu`措辞。 此更新使控件符合WCAG 4.1.2，并简化了键盘和屏幕阅读器的使用。 （GRANITE-55360）
 * 消除OSGi服务中的依赖性循环后，恢复HTL脚本引擎工厂。 环境启动干净，HTL渲染可在创作pod之间工作，管理员不再遇到启动失败或缺少脚本服务。 （GRANITE-58276）
 
-* 标头搜索框不再叠加占位符文本上的放大镜图标。 占位符以适当的填充显示，并在浏览器中保持完全可读性。 （GRANITE-54391）
+* 标题搜索框不再叠加占位符文本上的放大镜图标。 占位符以适当的填充显示，并且在所有浏览器中保持完全可读。 （GRANITE-54391）
 * 作者在自动完成字段中看到可读标签，而在对话框中看到原始值。 该实施使值保存在JCR中，并提高了动态提供选项的单选和多选配置的清晰度。 （GRANITE-57615）
 * 当htmlLibraryManager.debug设置为true时，编辑模式将保持运行状态。 此更改将恢复正确的clientlib解析和加载，从而使开发人员能够在创作期间使用HTML Library Manager的调试工具。 （GRANITE-58002）
 * 复制代理编辑页面在经典UI中不再引发JavaScript错误。 此时将打开页面，显示所有选项卡，并在没有控制台错误的情况下保存代理设置。 （GRANITE-58302）
-* 已更正系统概述中的运行状况聚合。 现在，运行单个检查后视图会更新，并显示正确的计数。 当安全和维护检查通过时，操作员会看到`OK`，而不是不正确的`2 errors`横幅。 （GRANITE-61482）
-* 在AEM 6.5 LTS（长期支持）升级期间停止`CodeUpgradeTasks`运行。 现在，升级无需更改或重新配置任务触发的存储库。 此修复降低了升级风险，并防止了可避免的停机。 （GRANITE-61486）
-* 在创作对话框中，必填字段现在显示单个准确的验证错误。 消息使用字段自己的标签（如果存在），并在没有标签时回退到通用提示。 跨字段的重复和不匹配消息不再显示。 （GRANITE-59531）
-* 现在，页面创建向导对话框会在每次交互时重新验证必填字段，包括选项卡更改和多字段编辑。 **创建**&#x200B;按钮将保持禁用状态，直到作者完成所有必需的输入，并且向导将显示缺少值的内联错误。 （GRANITE-58826）
+* Corrected the health-status aggregation in System Overview. The view now updates after individual checks run and displays the right counts. Operators see `OK` when Security and Maintenance checks pass, instead of an incorrect `2 errors` banner. （GRANITE-61482）
+* Stopped `CodeUpgradeTasks` from running during AEM 6.5 LTS (Long Term Support) upgrades. The upgrade now proceeds without task-triggered repository changes or reconfigurations. This fix reduces upgrade risk and prevents avoidable downtime. （GRANITE-61486）
+* In authoring dialog boxes, required fields now show a single, accurate validation error. The message uses the field&#39;s own label when present, and falls back to a generic prompt when no label exists. Duplicate and mismatched messages across fields no longer appear. （GRANITE-59531）
+* The page creation wizard dialog box now re-validates required fields on every interaction, including tab changes and multifield edits. The **Create** button stays disabled until authors complete all required inputs, and the wizard shows inline errors for missing values. （GRANITE-58826）
 
 #### 集成{#foundation-integrations-6524}
 
-当作者设置开始日期和结束日期时，发布AEM Target活动不再失败。 该集成发送包括时区在内的符合标准的时间戳，因此Target会处理活动有效负载并按预期完成同步。 （CQ-4360733）
+Publishing AEM Target activities no longer fails when authors set start and end dates. The integration sends standards-compliant timestamps that include the time zone, so Target processes the activity payload and completes the sync as expected. （CQ-4360733）
 
 <!--
 #### Jetty{#foundation-jetty-6524}
@@ -382,11 +386,11 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 #### 本地化{#foundation-localization-6524}
 
-* zh-CN中的本地化可删除在资源操作（如移动）期间显示的引用收集状态中模糊的短语。 UI现在显示`正在获取对 [[0]] 项的引用`，提供了准确的含义和一致的术语。 （CQ-4354648）
-* 创建智能收藏集后，刷新时不再翻译保存的搜索关键词。 输入英文术语的作者会看到这些相同的术语将被保留，并且集合会继续返回一致的结果。 （NPR-43158）
-* 修复了“图像”面板中截断的工具提示文本。 `Display caption as pop-up`描述在所有支持的区域设置中完全呈现，改进了针对非英语作者的指导。 （SITES-10490）
-* 站点管理列视图法语和西班牙语本地化标签被截断。 `End Time`和`Off Time`似乎被截断，没有显示工具提示。 Adobe更正了翻译并在鼠标悬停时恢复工具提示，因此标签会完整阅读。 （SITES-31318）
-* 站点中的&#x200B;**移动**&#x200B;对话框显示原始i18n密钥而不是可读标签。 `Referencing pages,` `Created on,` `Created by,`和`Path`等项看起来乱码。 修复程序将对话框挂接到正确的词典并提供翻译，同时提供英语回退。 （SITES-30881）
+* Localization in zh-CN removes an ambiguous phrase in the reference-gathering status shown during asset operations such as Move. The UI now displays `正在获取对 [[0]] 项的引用`, providing accurate meaning and consistent terminology. （CQ-4354648）
+* Creating a smart collection no longer translates saved-search keywords on refresh. Authors who enter English terms see that those same terms are retained and the collection continues to return consistent results. （NPR-43158）
+* Fixed truncated tooltip text in the Image panel. The `Display caption as pop-up` description renders completely in all supported locales, improving guidance for non-English authors. （SITES-10490）
+* Sites Admin Column view truncated localized labels in French and Spanish. `End Time` and `Off Time` appeared truncated and showed no tooltip. Adobe corrected the translations and restored the tooltip on hover, so labels read in full. （SITES-31318）
+* The **Move** dialog box in Sites showed raw i18n keys instead of readable labels. Items such as `Referencing pages,` `Created on,` `Created by,` and `Path` looked garbled. The fix hooks the dialog box to the correct dictionaries and supplies translations, with an English fallback. （SITES-30881）
 
 <!--
 #### Oak {#foundation-oak-6524}
@@ -412,7 +416,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 #### Sling{#foundation-sling-6524}
 
 * 修复了`org.apache.sling.scripting.jsp:2.6.0`包中出现的意外JSP编译错误。 （SLING-12442）
-* 该平台将核心Sling引擎从2.16.2升级到2.16.6。较新的引擎加强了输入验证，并在负载下稳定了请求处理。 （NPR-43105）
+* 该平台将核心Sling引擎从2.16.2升级到2.16.6。 较新的引擎加强了输入验证，并在负载下稳定了请求处理。 （NPR-43105）
 
 #### SPA编辑器 {#foundation-spa-editor-6524}
 
@@ -451,40 +455,40 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.24.0 需要依赖 [!DNL Experience Manager] 6.5。详细说明请参阅[升级文档](/help/sites-deploying/upgrade.md)。<!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.24.0需要[!DNL Experience Manager] 6.5。 有关详细说明，请参阅[升级文档](/help/sites-deploying/upgrade.md)。<!-- UPDATE FOR EACH NEW RELEASE -->
 * 服务包可通过 Adobe [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip)下载。
 * 在使用 MongoDB 且包含多个实例的部署中，请在其中一个作者实例上使用包管理器安装 [!DNL Experience Manager] 6.5.24.0。<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe 不建议移除或卸载 [!DNL Experience Manager] 6.5.24.0 包。因此，在安装该包之前，您应创建 `crx-repository` 的备份，以便在需要时进行回滚。<!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe 不建议移除或卸载 [!DNL Experience Manager] 6.5.24.0 包。 因此，在安装该包之前，您应创建 `crx-repository` 的备份，以便在需要时进行回滚。<!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- FORMS For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 ### 在 [!DNL Experience Manager] 6.5 上安装服务包{#install-service-pack}
 
-1. 如果实例处于更新模式（即由早期版本升级而来），请在安装前先重启该实例。如果实例已长时间运行，Adobe 建议先重启。
+1. 如果实例处于更新模式（即由早期版本升级而来），请在安装前先重启该实例。 如果实例已长时间运行，Adobe 建议先重启。
 
 1. 在安装之前，请为您的 [!DNL Experience Manager] 实例创建快照或执行一次全新的备份。
 
 1. 从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.24.0.zip)下载服务包。<!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. 打开包管理器，然后选择&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传该包。如需了解更多信息，请参阅[包管理器](/help/sites-administering/package-manager.md)。
+1. 打开包管理器，然后选择&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传该包。 如需了解更多信息，请参阅[包管理器](/help/sites-administering/package-manager.md)。
 
 1. 选择该包，然后选择&#x200B;**[!UICONTROL 安装]**。
 
-1. 要更新 S3 连接器，请在安装服务包后停止实例，用安装文件夹中提供的新二进制文件替换现有连接器，然后重新启动实例。请参阅 [Amazon S3 数据存储](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector)。
+1. 要更新 S3 连接器，请在安装服务包后停止实例，用安装文件夹中提供的新二进制文件替换现有连接器，然后重新启动实例。 请参阅 [Amazon S3 数据存储](/help/sites-deploying/data-store-config.md#upgrading-to-a-new-version-of-the-s-connector)。
 
 >[!NOTE]
 >
->在安装服务包过程中，包管理器 UI 中的对话框有时会意外退出。Adobe 建议您在访问部署之前，先等待错误日志趋于稳定。在确认安装成功之前，请先等待与卸载更新捆绑包相关的特定日志出现。通常，该问题会在 [!DNL Safari] 浏览器中出现，但也可能会在其他浏览器中间歇出现。
+>在安装服务包过程中，包管理器 UI 中的对话框有时会意外退出。 Adobe 建议您在访问部署之前，先等待错误日志趋于稳定。 在确认安装成功之前，请先等待与卸载更新捆绑包相关的特定日志出现。 通常，该问题会在 [!DNL Safari] 浏览器中出现，但也可能会在其他浏览器中间歇出现。
 
 **自动安装**
 
 您可以使用以下两种方法来安装 [!DNL Experience Manager] 6.5.24.0。<!-- UPDATE FOR EACH NEW RELEASE -->
 
-* 当服务器在线时，将包放入 `../crx-quickstart/install` 文件夹中。该包会自动安装。
-* 使用[包管理器的 HTTP API](/help/sites-administering/package-manager.md#package-share)。请使用 `cmd=install&recursive=true` 以便安装嵌套的包。
+* 当服务器在线时，将包放入 `../crx-quickstart/install` 文件夹中。 该包会自动安装。
+* 使用[包管理器的 HTTP API](/help/sites-administering/package-manager.md#package-share)。 请使用 `cmd=install&recursive=true` 以便安装嵌套的包。
 
 >[!NOTE]
 >
@@ -506,7 +510,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 >[!NOTE]
 >
->在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)中谈及的自适应表单功能旨在仅作探索和评估用途。由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
+>在 [AEM 6.5 快速入门](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/implementing/deploying/deploying/deploy)中谈及的自适应表单功能旨在仅作探索和评估用途。 由于自适应表单功能需要适当的许可，因此必须获得 AEM Forms 的有效许可证才能作生产用途。
 
 ### 为 Experience Manager 内容片段安装 GraphQL 索引包{#install-aem-graphql-index-add-on-package}
 
@@ -537,7 +541,7 @@ ContextHub不再在发布页面上注入第二个jQuery副本。 区段引擎客
 
 >[!NOTE]
 >
->UberJar 和其他相关工件现已发布在 Maven Central 存储库，而非 Adobe 公共 Maven 存储库（`repo.adobe.com`）。主 UberJar 文件已重命名为 `uber-jar-<version>.jar`。因此，在 `dependency` 标记中不再包含以 `apis` 为值的 `classifier`。
+>UberJar 和其他相关工件现已发布在 Maven Central 存储库，而非 Adobe 公共 Maven 存储库（`repo.adobe.com`）。 主 UberJar 文件已重命名为 `uber-jar-<version>.jar`。 因此，在 `dependency` 标记中不再包含以 `apis` 为值的 `classifier`。
 
 
 
@@ -553,19 +557,19 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 ### SPA 编辑器 {#spa-editor}
 
-从 AEM 6.5.24 版本开始，[SPA 编辑器](/help/sites-developing/spa-overview.md)已在新项目中弃用。对于现有项目，SPA 编辑器仍受支持，但不建议在新项目中使用。
+[从AEM 6.5版本6.5.24开始的新项目已弃用SPA编辑器](/help/sites-developing/spa-overview.md)。 SPA编辑器仍受现有项目的支持，但不应用于新项目。
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
 
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST. -->
 
-* **与 Oak 相关**
-自服务包 13 起及更高版本中，开始出现以下错误日志，从而影响持久化缓存：
+* **与Oak相关**
+在Service Pack 13及更高版本中，已开始出现以下错误日志，这会影响持久性缓存：
 
   ```shell
   org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
@@ -595,7 +599,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 * 请将可能使用了自定义 API 名称的 GraphQL 查询更新为使用内容模型的默认名称。
 
-* GraphQL 查询可能会使用 `damAssetLucene` 索引，而不是 `fragments` 索引。此操作可能导致 GraphQL 查询失败或运行时间过长。
+* GraphQL 查询可能会使用 `damAssetLucene` 索引，而不是 `fragments` 索引。 此操作可能导致 GraphQL 查询失败或运行时间过长。
 
   要解决该问题，必须在 `/indexRules/dam:Asset/properties` 下配置 `damAssetLucene`，以添加以下两个属性：
 
@@ -615,7 +619,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
   完成以上步骤后，GraphQL 查询的性能应会提升。
 
-* 在尝试移动、删除或发布内容片段、网站或页面时，获取内容片段引用时会出现问题。后台查询失败。也就是说，该功能无法正常工作。
+* 在尝试移动、删除或发布内容片段、网站或页面时，获取内容片段引用时会出现问题。 后台查询失败。 也就是说，该功能无法正常工作。
 为确保该功能正常运行，必须将以下属性添加到索引定义节点 `/oak:index/damAssetLucene`（无需重新索引）：
 
   ```xml
@@ -625,91 +629,94 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
   "refresh": true
   ```
 
-* 如果您在 Java™ 11 上将 [!DNL Experience Manager] 实例从 6.5.0 – 6.5.4 升级到最新的服务包，可能会在 `error.log` 文件中看到 `RRD4JReporter` 异常。要停止这些异常，请重新启动 [!DNL Experience Manager] 实例。<!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* 如果您在 Java™ 11 上将 [!DNL Experience Manager] 实例从 6.5.0 – 6.5.4 升级到最新的服务包，可能会在 `error.log` 文件中看到 `RRD4JReporter` 异常。 要停止这些异常，请重新启动 [!DNL Experience Manager] 实例。<!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
-* 用户可以在 [!DNL Assets] 的层级中重命名文件夹，并将嵌套文件夹发布到 [!DNL Brand Portal]。但是，在 [!DNL Brand Portal] 中，文件夹标题不会更新，直到重新发布根文件夹。
+* 用户可以在 [!DNL Assets] 的层级中重命名文件夹，并将嵌套文件夹发布到 [!DNL Brand Portal]。 但是，在 [!DNL Brand Portal] 中，文件夹标题不会更新，直到重新发布根文件夹。
 
 * 在安装 [!DNL Experience Manager] 6.5.x.x 期间，可能会显示以下错误和警告消息：
-   * 当在 [!DNL Experience Manager] 中使用 Target Standard API（IMS 身份验证）配置 Adobe Target 集成时，将体验片段导出到 Target 会导致创建错误的产品建议类型。在 Target 中，系统不会创建类型为“Experience Fragment”/来源为“Adobe Experience Manager”的产品建议，而是会创建多个类型为“HTML”/来源为“Adobe Target Classic”的产品建议。
+   * 当在 [!DNL Experience Manager] 中使用 Target Standard API（IMS 身份验证）配置 Adobe Target 集成时，将体验片段导出到 Target 会导致创建错误的产品建议类型。 在 Target 中，系统不会创建类型为“Experience Fragment”/来源为“Adobe Experience Manager”的产品建议，而是会创建多个类型为“HTML”/来源为“Adobe Target Classic”的产品建议。
    * `com.adobe.granite.maintenance.impl.TaskScheduler`：未在 `granite/operations/maintenance` 找到维护窗口。
    * 当在自适应表单中使用 SUM、MAX 和 MIN 等聚合函数时，服务器端验证失败（CQ-4274424）。
    * `com.adobe.granite.maintenance.impl.TaskScheduler`：未在 `granite/operations/maintenance` 找到维护窗口。
    * 通过 Shoppable Banner 查看器预览资产时，Dynamic Media 交互式图像中的热点不可见。
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`：等待完成取消注册的注册变更时超时。
 
-* 从 AEM 6.5.15 开始，由 ```org.apache.servicemix.bundles.rhino``` 捆绑包提供的 Rhino JavaScript 引擎引入了新的提升行为。使用严格模式（```use strict;```）的脚本必须声明正确的变量。否则脚本将无法运行，并会抛出运行时错误。
+* 从 AEM 6.5.15 开始，由 ```org.apache.servicemix.bundles.rhino``` 捆绑包提供的 Rhino JavaScript 引擎引入了新的提升行为。 使用严格模式（```use strict;```）的脚本必须声明正确的变量。 否则脚本将无法运行，并会抛出运行时错误。
 
-* 通过官方更新包安装与标记相关的开箱即用内容时，`/content/cq:tags` 节点的语言属性会被重置为默认值。此操作适用于服务包、安全服务包、扩展功能包、累积功能包、补丁等。因此，在安装之前必须从属性中手动添加该项。
+* 通过官方更新包安装与标记相关的开箱即用内容时，`/content/cq:tags` 节点的语言属性会被重置为默认值。 此操作适用于服务包、安全服务包、扩展功能包、累积功能包、补丁等。 因此，在安装之前必须从属性中手动添加该项。
 
 ### AEM Sites 已知问题 {#known-issues-aem-sites-6524}
 
-内容片段预览在处理大型片段树时因 DoS 防护而失败。请参阅[关于默认 GraphQL 查询执行器配置选项的知识库文章](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)（SITES-17934）
+内容片段预览在处理大型片段树时因 DoS 防护而失败。 请参阅[关于默认 GraphQL 查询执行器配置选项的知识库文章](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)（SITES-17934）
 
 ### AEM Forms 已知问题 {#known-issues-aem-forms-6524}
 
 * **FORMS-14521**&#x200B;如果用户尝试预览包含保存的XML数据的草稿书信，则会陷入某些特定书信的`Loading`状态。
 * **FORMS-16603**&#x200B;在交互式通信代理UI的打印预览中，某些计算值未正确显示。
-* **FORMS-15681**&#x200B;在打印预览中查看信件时，内容已更改。 即，某些空格消失，某些字母被替换为`x`。
-* **FORMS-15428**&#x200B;使用Forms插件更新到AEM Forms Service Pack 20 (6.5.20.0)后，依赖于使用基于凭据的身份验证的旧版Adobe Analytics Cloud Service的配置停止工作。 此问题会导致分析规则无法正确执行。
-* **FORMS-16557**&#x200B;在Interactive Communications Agent UI的打印预览中，所有字段值的货币符号（如美元符号$）显示不一致。 对于最大值为999的值，此选项显示；对于大于或等于1000的值，此选项不存在。
+* **FORMS-15681**&#x200B;在打印预览中查看信件时，内容已更改。 具体表现为：部分空格消失，某些字母被替换为 `x`。
+* **FORMS-15428**&#x200B;使用Forms加载项更新到AEM Forms Service Pack 20 (6.5.20.0)后，依赖使用基于凭据的身份验证的旧版Adobe Analytics Cloud Service的配置停止工作。 此问题会导致分析规则无法正确执行。
+* **FORMS-16557**&#x200B;在交互式通信代理UI的打印预览中，所有字段值的货币符号（如美元符号$）显示不一致。 对于不超过 999 的数值会显示符号，但对于 1000 及以上的数值则缺少符号。
 * **FORMS-16575**&#x200B;交互式通信中对嵌套布局片段XDP所做的任何修改都不会反映在IC编辑器中。
 * **FORMS-21378**&#x200B;启用服务器端验证(SSV)时，表单提交可能会失败。 如果遇到此问题，请联系 Adobe 支持部门寻求帮助。
-* **FORMS-23722**&#x200B;如果将包含使用&#x200B;**的**&#x200B;文件附件`bindref`字段的表单提交到AEM工作流，且步骤为&#x200B;**分配任务**，则不会显示附件。 因此，当任务从“收件箱”中打开时，它们不会显示。 文件将正确地保存到存储库，但分配任务步骤UI无法显示附件。
-* 当自适应表单嵌入到站点页面中时，**FORMS-23802**&#x200B;自定义函数无法在预览或发布中加载。 当&#x200B;**aem-forms-core-component**&#x200B;库版本低于1.1.76时，会发生此问题。您可能会在日志中看到错误，如`InvalidFormContainerException: No form container found`。 若要解决此问题，请[下载并安装适用于AEM Forms SP24(AddOn 6.0.1454)的修补程序](/help/release-notes/aem-forms-hotfix.md)。
+* **FORMS-23722**&#x200B;如果将包含使用`bindref`的&#x200B;**文件附件**&#x200B;字段的表单提交到AEM工作流，且步骤为&#x200B;**分配任务**，则不会显示附件。 因此，当任务从“收件箱”中打开时，它们不会显示。 文件将正确地保存到存储库，但分配任务步骤UI无法显示附件。
+* 当自适应表单嵌入到站点页面中时，**FORMS-23802**&#x200B;自定义函数无法在预览或发布中加载。 当&#x200B;**aem-forms-core-component**&#x200B;库版本低于1.1.76时，会发生此问题。 您可能会在日志中看到错误，例如`InvalidFormContainerException: No form container found`。 要解决此问题，请[下载并安装适用于AEM Forms SP24 (AddOn 6.0.1454)的修补程序](/help/release-notes/aem-forms-hotfix.md)。
 
 #### 可用修补程序的已知问题 {#aem-forms-issues-with-hotfixes}
 
-<!-- 
+<!--
 >[!NOTE]
 >
->Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released. -->
+>Avoid upgrading to Service Pack 6.5.24.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.24.0 only after the required hotfixes are released.
+-->
 
-以下问题已提供可下载并安装的热修复补丁：您可以通过[下载并安装热修复补丁](/help/release-notes/aem-forms-hotfix.md)来解决这些问题：
+以下问题已提供可下载并安装的热修复补丁： 您可以通过[下载并安装热修复补丁](/help/release-notes/aem-forms-hotfix.md)来解决这些问题：
 
-* **FORMS-23881**&#x200B;在使用6.5.23.0完整安装程序设置的AEM Forms JEE部署上，在调用中提供自定义XCI文件时，输出服务无法处理请求。 若要解决此问题，请从6.5.24.0软件分发[门户安装最新的AEM &#x200B;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) Forms Service Pack。
+* **FORMS-23881**&#x200B;在使用6.5.23.0完整安装程序设置的AEM Forms JEE部署中，当调用中提供了自定义XCI文件时，输出服务无法处理请求。 要解决此问题，请从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)门户安装最新的AEM 6.5.24.0 Forms Service Pack。
 
-* **FORMS-23789**（仅限JEE上的AEM Forms）：用户在JEE SP24上的AEM Forms中遇到Log4j问题，导致企业客户的日志记录和监视出现中断。 要解决此问题，请在JEE Service Pack [上](/help/release-notes/aem-forms-hotfix.md)下载并安装适用于AEM Forms的修补程序6.5.24.0。
-
-* **FORMS-23802**&#x200B;当表单位于具有旧版aem-forms-core-component (&lt;1.1.76)的站点页面中时，在预览或发布中无法加载自定义函数。 要解决此问题，请安装适用于SP24的[AEM Forms附加组件修补程序6.0.1454](/help/release-notes/aem-forms-hotfix.md)。
-
-* **FORMS-23789**（仅限JEE上的AEM Forms）：用户在JEE SP24上的AEM Forms中遇到Log4j问题，导致企业客户的日志记录和监视出现中断。 要解决此问题，请在JEE Service Pack [上](/help/release-notes/aem-forms-hotfix.md)下载并安装适用于AEM Forms的修补程序6.5.24.0。
+* **FORMS-23789**（仅限JEE上的AEM Forms）：用户在JEE SP24上的AEM Forms中遇到Log4j问题，导致企业客户的日志记录和监视出现中断。 要解决此问题，请在JEE Service Pack 6.5.24.0上[下载并安装适用于AEM Forms的修补程序](/help/release-notes/aem-forms-hotfix.md)。
 
 * **FORMS-23802**&#x200B;当表单位于具有旧版aem-forms-core-component (&lt;1.1.76)的站点页面中时，在预览或发布中无法加载自定义函数。 要解决此问题，请安装适用于SP24的[AEM Forms附加组件修补程序6.0.1454](/help/release-notes/aem-forms-hotfix.md)。
 
-* AEM Forms 现已将表单组件中的 Struts 版本从 2.5.33 升级至 6.x。此升级提供了以前未包含在SP24中的Struts更改。 相关支持已通过[热修复补丁](/help/release-notes/aem-forms-hotfix.md)提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。
+* **FORMS-23789**（仅限JEE上的AEM Forms）：用户在JEE SP24上的AEM Forms中遇到Log4j问题，导致企业客户的日志记录和监视出现中断。 要解决此问题，请在JEE Service Pack 6.5.24.0上[下载并安装适用于AEM Forms的修补程序](/help/release-notes/aem-forms-hotfix.md)。
 
-* **FORMS-14926**&#x200B;安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`文件夹下找到Geode jars `<AEM_Forms_Installation>/lib/caching/lib`的重复条目，请执行以下步骤，以解决该问题：
+* **FORMS-23802**&#x200B;当表单位于具有旧版aem-forms-core-component (&lt;1.1.76)的站点页面中时，在预览或发布中无法加载自定义函数。 要解决此问题，请安装适用于SP24的[AEM Forms附加组件修补程序6.0.1454](/help/release-notes/aem-forms-hotfix.md)。
+
+* AEM Forms 现已将表单组件中的 Struts 版本从 2.5.33 升级至 6.x。 此升级提供了以前未包含在SP24中的Struts更改。 相关支持已通过[热修复补丁](/help/release-notes/aem-forms-hotfix.md)提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。
+
+* **FORMS-14926**&#x200B;安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`<AEM_Forms_Installation>/lib/caching/lib`文件夹下找到Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`的重复条目，请执行以下步骤，以解决该问题：
 
    1. 如果定位器正在运行，请先停止定位器。
    2. 停止 AEM 服务器。
    3. 进入 `<AEM_Forms_Installation>/lib/caching/lib`。
-   4. 移除所有 Geode 补丁文件，仅保留 `geode-*-1.15.1.2.jar`。确认仅存在 `version 1.15.1.2` 的 Geode jar。
+   4. 移除所有 Geode 补丁文件，仅保留 `geode-*-1.15.1.2.jar`。 确认仅存在 `version 1.15.1.2` 的 Geode jar。
    5. 以管理员模式打开命令提示符。
    6. 使用 `geode-*-1.15.1.2.jar` 文件安装 Geode 补丁。
 
-* **FORMS-15256**&#x200B;用户从AEM 6.5 Forms Service Pack 18或19升级到Service Pack 20或21时，遇到JSP编译错误。 该错误会导致无法打开或创建自适应表单。它也会影响其他 AEM 界面。这些界面包括页面编辑器、AEM Forms UI、工作流编辑器和系统概述UI。
+* **FORMS-15256**&#x200B;用户从AEM 6.5 Forms Service Pack 18或19升级到Service Pack 20或21时，遇到JSP编译错误。 该错误会导致无法打开或创建自适应表单。 它也会影响其他 AEM 界面。 这些界面包括页面编辑器、AEM Forms UI、工作流编辑器和系统概览 UI。
 
   如果遇到此类问题，请执行以下步骤进行解决：
    1. 进入 CRXDE 中的目录 `/libs/fd/aemforms/install/`。
    2. 删除名为 `com.adobe.granite.ui.commons-5.10.26.jar` 的捆绑包。
    3. 重新启动 AEM 服务器。
 
-* **FORMS-23703**&#x200B;如果未使用默认值配置`contains`规则时，自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
+* **FORMS-23703**&#x200B;如果未使用默认值配置`contains`规则时，自适应表单的服务器端验证失败。 您可以安装最新版本的[AEM Forms 6.5.24.0 Service Pack](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)以修复此问题。
 
 * **GRANITE-63681**&#x200B;表单数据模型连接器可能无法通过身份验证，因为默认情况下不允许使用所需的关键字和正则表达式模式。 要解决此问题，请从[链接](/help/release-notes/aem-forms-hotfix.md)下载并安装修补程序。
 
-  <!--To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
+  <!--
+  To resolve the issue, add the following via the Configuration Manager (`/system/console/configmgr`):
 
   * **Keywords:** `fdm-client-secret`, `oauth-client-secret`
   * **Regex:** `^\[/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+(?:,/conf/[^/]+(/[^/]+)?/settings/dam/cfm/models/[^,\]]+)*\]$`
 
-    >[!VIDEO](https://video.tv.adobe.com/v/3479697)-->
+    >[!VIDEO](https://video.tv.adobe.com/v/3479697)
+  -->
 
-* **FORMS-23979** HTML-PDF转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到[6.5.24.0的](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)最新发布的Forms加载项。
+* **FORMS-23979** HTML-PDF转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到6.5.24.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)的[最新发布的Forms加载项。
 
 * **FORMS-23717**&#x200B;升级到&#x200B;**AEM Forms6.5.24.0**&#x200B;后，`server.log`和`error.log`可能会泛洪为重复的警告消息，例如&#x200B;*安全解析器工厂创建失败*&#x200B;或&#x200B;*不支持安全属性……*。 日志可能会以每秒&#x200B;**5到10行**（每小时数百兆字节）的速度增长，这会填充磁盘并阻止生产转出。
 
-要减少日志卷，请在应用程序服务器配置中或通过JVM参数`com.adobe.util.XMLSecurityUtil`将`ERROR`的日志记录级别设置为`-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`。 此功能仅隐藏消息，不会修复根本原因。
+要减少日志卷，请在应用程序服务器配置中或通过JVM参数`-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`将`com.adobe.util.XMLSecurityUtil`的日志记录级别设置为`ERROR`。 此功能仅隐藏消息，不会修复根本原因。
 
 * **FORMS-23875**&#x200B;在表单数据模型搜索中，即使不存在相关实体，也会在UI中显示HTML标记。 要解决此问题，请从[链接](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bb-expressionmanager-pkg-10.0.48.zip)下载并安装修补程序。
 
@@ -717,19 +724,21 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 以下文本文档列出了此 [!DNL Experience Manager] 6.5 服务包版本中包含的 OSGi 捆绑包和内容包：
 
-* [Experience Manager 6.5.24.0](/help/release-notes/assets/65240-bundles.txt) 中包含的 OSGi 捆绑包列表 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager 6.5.24.0](/help/release-notes/assets/65240-packages.txt) 中包含的内容包列表 <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager 6.5.24.0 中包含的 OSGi 捆绑包列表](/help/release-notes/assets/65240-bundles.txt)
+<!-- UPDATE FOR EACH NEW RELEASE -->
+* [Experience Manager 6.5.24.0 中包含的内容包列表](/help/release-notes/assets/65240-packages.txt)
+<!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限网站{#restricted-sites}
 
-这些网站仅对客户开放。如果您已是客户并需要访问权限，请联系您的 Adobe 客户经理。
+这些网站仅对客户开放。 如果您已是客户并需要访问权限，请联系您的 Adobe 客户经理。
 
-* [在 licensing.adobe.com 下载产品](https://licensing.adobe.com/)
-* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
+* [产品下载地址：licensing.adobe.com](https://licensing.adobe.com/)
+* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
 

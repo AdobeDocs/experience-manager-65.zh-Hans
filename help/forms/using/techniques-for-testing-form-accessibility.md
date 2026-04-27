@@ -1,19 +1,20 @@
 ---
-title: 用于测试表单辅助功能的技术
+title: 测试表单无障碍性的技术
 description: 了解在Forms Designer中测试表单辅助功能的技术
 feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
 hidefromtoc: true
-source-git-commit: 6b86212a2b3a86b2205714c802dc1581d30e7441
+exl-id: 77fd3bc5-9a05-4442-af2b-238169d8061a
+source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '356'
-ht-degree: 0%
+source-wordcount: '359'
+ht-degree: 2%
 
 ---
 
-# 用于测试表单辅助功能的技术
+# 测试表单无障碍性的技术
 
 要确保您的表单可供各种类型的用户访问，您应该使用各种辅助型技术进行测试。 使用本节中介绍的技术，您能够以简单且经济的方式测试表单。
 确保只能使用键盘填写表单。 请确保填写整个表单并测试所有字段和按钮。 完成表单后，请根据您对以下问题的回答确定是否需要进行改进：
@@ -33,6 +34,3 @@ ht-degree: 0%
 * 表单的某些部分会变得不可见、无法识别或难以使用吗？
 * 是否有任何区域在白色背景中继续显示为黑色？
 * 是否有任何元素大小不正确或已被截断？
-
-
-

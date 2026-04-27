@@ -1,5 +1,5 @@
 ---
-title: 升级前维护任务
+title: 升级前的维护任务
 description: 了解为AEM推荐的升级前任务。
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 0%
+source-wordcount: '2049'
+ht-degree: 1%
 
 ---
 
-# 升级前维护任务{#pre-upgrade-maintenance-tasks}
+# 升级前的维护任务{#pre-upgrade-maintenance-tasks}
 
 在开始升级之前，请务必遵循这些维护任务，以确保系统已准备就绪，并且可以在出现问题时回滚：
 
@@ -56,7 +56,7 @@ ht-degree: 0%
 
 ## 配置工作流和审核日志清除 {#configure-wf-audit-purging}
 
-`WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任务需要单独的OSGi配置，没有它们将无法工作。 如果它们在升级前任务执行期间失败，则缺少配置是最可能的原因。 因此，请确保为这些任务添加OSGi配置，或者如果不想运行它们，则从升级前优化任务列表中完全删除它们。 有关配置工作流清除任务的文档可在[管理工作流实例](/help/sites-administering/workflows-administering.md)中找到，有关审核日志维护任务配置的文档可在AEM 6[&#128279;](/help/sites-administering/operations-audit-log.md)中的审核日志维护中找到。
+`WorkflowPurgeTask`和`com.day.cq.audit.impl.AuditLogMaintenanceTask`任务需要单独的OSGi配置，没有它们将无法工作。 如果它们在升级前任务执行期间失败，则缺少配置是最可能的原因。 因此，请确保为这些任务添加OSGi配置，或者如果不想运行它们，则从升级前优化任务列表中完全删除它们。 有关配置工作流清除任务的文档可在[管理工作流实例](/help/sites-administering/workflows-administering.md)中找到，有关审核日志维护任务配置的文档可在AEM 6](/help/sites-administering/operations-audit-log.md)中的[审核日志维护中找到。
 
 ## 安装、配置和运行升级前任务 {#install-configure-run-pre-upgrade-tasks}
 
@@ -74,7 +74,8 @@ ht-degree: 0%
 
 在AEM 6.3及更高版本中，快速入门jar中包含升级前维护优化任务。
 
-<!-- URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
+<!--
+URLs below are all 404s. This content should probably be removed because it is entirely obsolete.
 
 If you are upgrading from an older version of AEM 6, they are made available through separate packages that you can download from the Package Manager.
 
@@ -84,7 +85,8 @@ You can find the packages at these locations:
 
 * [For upgrading from AEM 6.1](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq610/product/pre-upgrade-tasks-content-cq61)
 
-* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62) -->
+* [For upgrading from AEM 6.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq620/product/pre-upgrade-tasks-content-cq62)
+-->
 
 ### 使用方法 {#how-to-use-it}
 
@@ -147,77 +149,77 @@ You can find the packages at these locations:
 
 >[!CAUTION]
 >
->`DataStoreGarbageCollectionTask`调用具有标记和扫描阶段（如果已使用）的数据存储垃圾收集操作。 对于使用共享数据存储的部署，请确保正确重新配置它或准备实例以避免删除另一个实例引用的项目。 在触发此升级前任务之前，此过程可能需要在所有实例上手动运行标记阶段。
+>`DataStoreGarbageCollectionTask`调用具有标记和扫描阶段（如果已使用）的数据存储垃圾收集操作。 对于使用共享数据存储的部署，请确保正确重新配置它或准备实例以避免删除另一个实例引用的项目。 This process might require running the mark phase manually on all instances before triggering this pre-upgrade task.
 
-### 升级前运行状况检查的默认配置 {#default-configuration-of-the-pre-upgrade-health-checks}
+### Default Configuration of the Pre-Upgrade Health Checks {#default-configuration-of-the-pre-upgrade-health-checks}
 
-`PreUpgradeTasksMBeanImpl` OSGI组件预配置了调用`runAllPreUpgradeHealthChecks`方法时要执行的升级前运行状况检查标记的列表：
+The `PreUpgradeTasksMBeanImpl` OSGI component comes pre-configured with a list of pre-upgrade health check tags to execute when the `runAllPreUpgradeHealthChecks` method is called:
 
-* **system** - granite维护运行状况检查使用的标记
+* **system** - the tag used by the granite maintenance health checks
 
-* **升级前** — 自定义标记，可添加到所有可设置为在升级前运行的运行状况检查中
+* **pre-upgrade** - a custom tag that could be added to all the health checks that you can set to run before an upgrade
 
-该列表可编辑。 除了标记之外，您还可以使用加号&#x200B;**(+)**&#x200B;和减号&#x200B;**(-)**&#x200B;按钮来添加更多自定义标记或删除默认标记。
+The list is editable. You can use the plus **(+)** and minus **(-)** buttons besides the tags to add more custom tags, or remove the default ones.
 
-**MBean方法**
+**MBean Methods**
 
-可以使用[JMX控制台](/help/sites-administering/jmx-console.md)访问受管Bean功能。
+The managed bean functionality can be accessed using the [JMX Console](/help/sites-administering/jmx-console.md).
 
-您可以通过以下方式访问MBean：
+You can access the MBeans by:
 
-1. 转到&#x200B;*https://serveraddress:serverport/system/console/jmx*&#x200B;处的JMX控制台
-1. 搜索&#x200B;**PreUpgradeTasks**&#x200B;并单击结果
+1. Going to the JMX Console at *https://serveraddress:serverport/system/console/jmx*
+1. Search for **PreUpgradeTasks** and click the result
 
-1. 从&#x200B;**操作**&#x200B;部分中选择任意方法，然后在以下窗口中选择&#x200B;**调用**。
+1. Select any method from the **Operations** section and select **Invoke** in the following window.
 
-以下是`PreUpgradeTasksMBeanImpl`公开的所有可用方法的列表：
+Below is a list of all the available methods that the `PreUpgradeTasksMBeanImpl` exposes:
 
 <table>
  <tbody>
   <tr>
-   <td><strong>方法名称</strong></td>
+   <td><strong>Method Name</strong></td>
    <td><strong>类型</strong></td>
    <td><strong>描述</strong></td>
   </tr>
   <tr>
    <td><code>getAvailablePreUpgradeTasksNames()</code></td>
    <td>信息</td>
-   <td>显示可用升级前维护任务名称的列表。</td>
+   <td>Displays the list of available pre-upgrade maintenance tasks names.</td>
   </tr>
   <tr>
    <td><code>getAvailablePreUpgradeHealthChecksTagNames()</code></td>
    <td>信息</td>
-   <td>显示升级前运行状况检查标记名称的列表。</td>
+   <td>Displays the list of pre-upgrade health checks tag names.</td>
   </tr>
   <tr>
    <td><code>runAllPreUpgradeTasks()</code></td>
    <td>操作</td>
-   <td>运行列表中的所有升级前维护任务。</td>
+   <td>Runs all the pre-upgrade maintenance tasks in the list.</td>
   </tr>
   <tr>
    <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td>
    <td>操作</td>
-   <td>运行升级前维护任务，其名称作为参数给定。</td>
+   <td>Runs the pre-upgrade maintenance task with the name given as the parameter.</td>
   </tr>
   <tr>
    <td><code>isRunAllPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>检查<code>runAllPreUpgradeTasksmaintenance</code>任务是否正在运行。</td>
+   <td>Checks if the <code>runAllPreUpgradeTasksmaintenance</code> task is running.</td>
   </tr>
   <tr>
    <td><code>getAnyPreUpgradeTaskRunning()</code></td>
    <td>ACTION_INFO</td>
-   <td>检查是否有任何升级前维护任务正在运行，并且<br />返回一个包含当前正在运行的任务名的数组。</td>
+   <td>Checks if any pre-upgrade maintenance task is running and<br /> returns an array containing the names of currently running tasks.</td>
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td>
    <td>操作</td>
-   <td>显示升级前维护任务的确切运行时间，其名称作为参数提供。</td>
+   <td>Displays the exact running time of the pre-upgrade maintenance task with the name given as the parameter.</td>
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunState(preUpgradeTaskName)</code></td>
    <td>操作</td>
-   <td>显示升级前维护任务的上次运行状态，其名称作为参数提供。</td>
+   <td>Displays the last running state of the pre-upgrade maintenance task with the name given as the parameter.</td>
   </tr>
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
@@ -266,7 +268,8 @@ You can find the packages at these locations:
                      <param name = "adminId" value ="admin" />
                      <param name = "disableNTLMAuth" value = "true" />
                      <param name = "tokenExpiration" value = "43200000" />
-                     <!-- param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/
+                     <!--
+param name="trust_credentials_attribute" value="d5b9167e95dad6e7d3b5d6fa8df48af8"/
                 -->
                  </LoginModule >
          </ Security>
@@ -288,42 +291,42 @@ You can find the packages at these locations:
 
 ## 停止任何冷备用实例 {#stop-tarmk-coldstandby-instance}
 
-如果使用TarMK冷备用，请停止任何冷备用实例。 这样做可以确保在升级过程中出现问题，高效地重新上线。 成功完成升级后，必须从升级的主实例重建冷备用实例。
+如果使用TarMK冷备用，请停止任何冷备用实例。 Doing so guarantees an efficient way to come back online if there are issues in the upgrade. After the upgrade has completed successfully, the cold standby instances must be rebuilt from the upgraded primary instances.
 
 ## 禁用自定义计划作业 {#disable-custom-scheduled-jobs}
 
-禁用应用程序代码中包含的任何OSGi计划作业。
+Disable any OSGi scheduled jobs that are included in your application code.
 
 ## 执行脱机修订版清理 {#execute-offline-revision-cleanup}
 
 >[!NOTE]
 >
->此步骤仅对于TarMK安装是必需的
+>This step is only necessary for TarMK installations
 
-如果使用TarMK，则在升级之前应运行脱机修订版清理。 这样做可以使存储库迁移步骤和后续升级任务的执行速度更快，并且有助于确保在升级完成后可以成功执行在线修订版清理。 有关运行脱机修订清理的信息，请参阅[正在执行脱机修订清理](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup)。
+If using TarMK, you should run Offline Revision Cleanup before upgrading. Doing so makes the repository migration step and subsequent upgrade tasks execute much faster and helps to ensure that Online Revision Cleanup can execute successfully after the upgrade has completed. For information on running Offline Revision Cleanup, see [Performing Offline Revision Cleanup](/help/sites-deploying/storage-elements-in-aem-6.md#performing-offline-revision-cleanup).
 
 ## 执行数据存储垃圾收集 {#execute-datastore-garbage-collection}
 
 >[!NOTE]
 >
->只有运行crx3的实例才需要此步骤
+>This step is only necessary for instances running crx3
 
-对CRX3实例运行修订清理后，您应该运行数据存储垃圾收藏集以删除数据存储中所有未引用的Blob。 有关说明，请参阅有关[数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md)的文档。
+After running revision cleanup on CRX3 instances, you should run Datastore Garbage Collection to remove any unreferenced blobs in the data store. For instructions, see the documentation on [Data Store Garbage Collection](/help/sites-administering/data-store-garbage-collection.md).
 
 ## 根据需要升级数据库模式 {#upgrade-the-database-schema-if-needed}
 
-通常，AEM用于持久性的基础Apache Oak栈栈会根据需要负责升级数据库架构。
+Usually, the underlying Apache Oak stack that AEM uses for persistence takes care of upgrading the database schema, if needed.
 
-但是，在架构无法自动升级时可能会出现这种情况。 此类情况大多是高安全性环境，在这种环境中，数据库以权限有限的用户身份运行。 如果发生这种情况，AEM将继续使用旧架构。
+However, cases might arise when the schema cannot be upgraded automatically. Such cases are mostly high security environments where the database is running under a user with limited privileges. If such a situation occurs, AEM continues to use the old schema.
 
-要防止发生这种情况，请执行以下操作升级架构：
+To prevent such a scenario from happening, upgrade the schema by doing the following:
 
-1. 关闭必须升级的AEM实例。
-1. 升级数据库模式。 请查阅数据库类型的文档，了解需要什么工具才能获得结果。
+1. Shut down the AEM instance that must be upgraded.
+1. Upgrade the database schema. Consult the documentation for your database type to see what tooling is necessary to achieve the result.
 
-   有关Oak如何处理架构升级的详细信息，请参阅Apache网站上的[此页面](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)。
+   For more information on how Oak handles schema upgrades, see [this page on the Apache website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade).
 
-1. 继续升级AEM。
+1. Proceed with upgrading AEM.
 
 ## 删除可能妨碍升级的用户 {#delete-users-that-might-hinder-the-upgrade}
 
