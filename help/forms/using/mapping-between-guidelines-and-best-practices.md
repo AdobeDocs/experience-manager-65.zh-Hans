@@ -5,9 +5,8 @@ feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0948231a-bd9e-4d29-946d-2d8c17e27c28
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '4362'
 ht-degree: 5%
@@ -156,18 +155,18 @@ ht-degree: 5%
 | 2.2.2 [暂停，停止，隐藏](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1保持表单简单易用 | |
 | 2.2.3 [无计时](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | 没有特定的LiveCycle技术 | |
 | 2.2.4 [中断](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html) | 没有特定的LiveCycle技术 | |
-| 2.2.5 [Re-authenticating](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | 没有特定的LiveCycle技术 | |
-| 2.3 [Seizures] | | |
-| 2.3.1 [Three Flashes or Below Threshold](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1保持表单简单易用 | |
-| 2.3.2 [Three Flashes](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1保持表单简单易用 | |
-| 2.4 [Navigable](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
-| 2.4.1 [Bypass Blocks](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10提供可导航表单结构 | |
-| 2.4.2 [Page Titled](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | 没有特定的LiveCycle技术 | |
-| 2.4.3 [Focus Order](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6确保读取和制表符顺序正确 | |
-| 2.4.4 [Link Purpose (In Context)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | 没有特定的LiveCycle技术 | Link purpose is dependent on authors choosing meaningful text for linked elements. |
-| 2.4.5 [Multiple Ways](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10提供可导航表单结构 | |
-| 2.4.6 [Headings and Labels](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5为表单控件提供适当的标签</li><li>2.10提供可导航表单结构</li> | |
-| 2.4.7 [Focus Visible](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | 没有特定的LiveCycle技术 | LiveCycle Forms中的默认焦点可见。 |
+| 2.2.5 [正在重新进行身份验证](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | 没有特定的LiveCycle技术 | |
+| 2.3 [癫痫发作] | | |
+| 2.3.1 [闪光三次或低于阈值](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1保持表单简单易用 | |
+| 2.3.2 [三次闪烁](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1保持表单简单易用 | |
+| 2.4 [可导航](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
+| 2.4.1 [绕过块](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10提供可导航表单结构 | |
+| 2.4.2 [页面标题为](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | 没有特定的LiveCycle技术 | |
+| 2.4.3 [焦点顺序](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6确保读取和制表符顺序正确 | |
+| 2.4.4 [链接目的（在上下文中）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | 没有特定的LiveCycle技术 | 链接目的取决于作者是否为链接的元素选择有意义的文本。 |
+| 2.4.5 [多种方式](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10提供可导航表单结构 | |
+| 2.4.6 [标题和标签](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5为表单控件提供适当的标签</li><li>2.10提供可导航表单结构</li> | |
+| 2.4.7 [焦点可见](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | 没有特定的LiveCycle技术 | LiveCycle Forms中的默认焦点可见。 |
 | 2.4.8 [位置](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html) | 没有特定的LiveCycle技术 | 不适用： LiveCycle表单不需要导航系统。 |
 | 2.4.9 [链接目的（仅限链接）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | 没有特定的LiveCycle技术 | 链接目的取决于作者是否为链接的元素选择有意义的文本。 |
 | 2.4.10 [节标题](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10提供可导航表单结构 | |
@@ -193,4 +192,4 @@ ht-degree: 5%
 | 3.3.6 [错误预防（全部）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | 没有特定的LiveCycle技术 | |
 | 4.1 [兼容](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
 | 4.1.1 [解析](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | 没有特定的LiveCycle技术 | |
-| 4.1.2 [Name, Role, Value](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3选择正确的控件</li> <li>2.5为表单控件提供适当的标签</li> | |
+| 4.1.2 [名称，角色，值](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3选择正确的控件</li> <li>2.5为表单控件提供适当的标签</li> | |

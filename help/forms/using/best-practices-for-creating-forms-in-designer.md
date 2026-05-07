@@ -5,9 +5,8 @@ feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 3a9d7943-2c34-4e0a-9803-7ce1ef40f676
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '11719'
 ht-degree: 0%
@@ -404,25 +403,25 @@ Tab键顺序调色板（见图12）允许您检查和修改表单中的对象通
 
 
 “Tab键顺序”调色板提供了以下可视标记：
-* 灰色条标记表单的每个页面。 The tab order on each page starts with the number 1.
-* The letter M inside a green circle indicates master page objects (visible only when viewing the form on the Design View tab).
-* A range of numbers indicates objects within a fragment.
-* A yellow background indicates the currently selected item.
-* A lock icon beside the first object on the page indicates that the object cannot be moved within the tab order (visible only when viewing the form on the Master Pages tab).
+* 灰色条标记表单的每个页面。 每个页面上的Tab键顺序均以数字1开头。
+* 绿色圆圈内的字母M表示母版页对象(仅在查看“设计视图”(Design View)选项卡上的表单时可见)。
+* 数字范围表示片段中的对象。
+* 黄色背景表示当前选定的项目。
+* 页面上第一个对象旁边的锁定图标表示无法在选项卡顺序中移动该对象（仅当在“母版页”选项卡上查看表单时才可见）。
 
-The list shows the same tab order numbers as the numbers displayed on the form itself when you choose View > Show Tab Order. You change the position of an object in the tab order by moving the object up or down in the Tab Order palette list. You can move a single object or a group of objects. This can be achieved through one of the following methods:
+当您选择“视图”>“显示标签顺序”时，列表会显示与表单本身显示的标签顺序编号相同的标签顺序编号。 通过在“选项卡顺序”调色板列表中上下移动对象，可以更改对象在选项卡顺序中的位置。 您可以移动单个对象或一组对象。 这可以通过以下方法之一实现：
 
-* Drag the selected object up or down the list and place it at the desired location. A black handle marks your current position within the list before you place the object.
-* In the Tab Order palette, click the up or down arrow buttons until the selected object is placed in the correct position. Alternatively, press Ctrl+Up Arrow or Ctrl+Down Arrow.
-* In the Tab Order palette menu, select Move Up or Move Down.
-* In the Tab Order palette list, click the selected object (or select it and press F2) to make the number listed beside the object name editable. Then, type the number indicating the new position of the object in the tab order and press Enter.
-* Select Copy from the Tab Order palette menu and, in the list, select the object above which to place the object you are moving, and then select Paste from the menu.
+* 将所选对象在列表中上下拖动，并将其放置在所需位置。 在放置对象之前，黑色控制滑块会标记您在列表中的当前位置。
+* 在“Tab键顺序”调色板中，单击向上或向下箭头按钮，直到所选对象置于正确位置为止。 或者，按Ctrl +向上箭头键或Ctrl +向下箭头键。
+* 在Tab Order调色板菜单中，选择“上移”或“下移”。
+* 在“Tab键顺序调色板”列表中，单击所选对象（或将其选中并按F2）以使对象名称旁边列出的编号可编辑。 然后，键入数字以指示对象在Tab键顺序中的新位置，然后按Enter。
+* 从“Tab键顺序”调色板菜单中选择“复制”，然后在列表中选择要在其上放置移动对象的对象，然后从菜单中选择“粘贴”。
 
-When you move the object to a new place in the order, LiveCycle Designer reassigns the tab order numbers. Although the tab order for the objects that are located on a master page is displayed on the Design View tab, you can change the order for these objects only on the Master Pages tab. If you use fragment references in your form, the tab order inside a fragment is visible when viewing the order for the form. To change the tab order inside a fragment, you must open the fragment source file for editing, make the change, and save the file. Any forms that use this fragment are affected by this change.
+当您将对象按顺序移动到新位置时，LiveCycle Designer会重新分配制表符顺序编号。 尽管位于主页上的对象的选项卡顺序显示在“设计视图”选项卡上，但您只能在“主页”选项卡上更改这些对象的顺序。 如果在表单中使用片段引用，则在查看表单的顺序时，将显示片段中的Tab顺序。 要更改片段内的选项卡顺序，必须打开片段源文件以进行编辑，进行更改并保存文件。 使用此片段的任何表单都受此更改的影响。
 
-If you decide that you do not want the customized tab order on your form, you can quickly return to the automatic (default) tab order using the following steps (you will lose any changes made to the tab order):
-1. On the Tab Order palette, select Automatic.
-1. In the message box that appears, click Yes to confirm the removal of the custom tab order.
+如果您决定不希望在表单上自定义标签顺序，则可以使用以下步骤快速返回到自动（默认）标签顺序（您将丢失对标签顺序所做的任何更改）：
+1. 在Tab Order调色板上，选择Automatic。
+1. 在出现的消息框中，单击“是”以确认删除自定义选项卡顺序。
 
 **相关检查点**
 * 第508款§1194.21
