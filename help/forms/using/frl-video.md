@@ -1,10 +1,13 @@
 ---
-source-git-commit: b5e44b78659f0cb1b8b0025be30143b98c0bf8df
+title: 视频脚本：为AEM Forms上的Adobe Acrobat设置功能限制许可(FRL)
+description: 为AEM Forms上的Adobe Acrobat设置功能限制许可(FRL)
+source-git-commit: 5477c768542b65750945dc9789224c0eb223f3c4
 workflow-type: tm+mt
-source-wordcount: '1065'
+source-wordcount: '1095'
 ht-degree: 0%
 
 ---
+
 # 视频脚本：为AEM Forms上的Adobe Acrobat设置功能限制许可(FRL)
 
 | 可视化 | 标题 | 扬声器脚本 |
@@ -15,9 +18,9 @@ ht-degree: 0%
 | 带有备份图形的警告图标 | 重要说明 | 切记在启动之前备份任何自定义Acrobat设置，因为在此过程中您将需要卸载现有Acrobat安装。 |
 | 显示1-7中编号步骤的流程图 | 流程概述 | 此过程涉及几个关键步骤：在Admin Console中准备FRL包、授予下载权限、卸载以前的Acrobat版本、安装新的Acrobat Pro、部署FRL包以及验证安装。 让我们逐步了解一下每个步骤。 |
 | 突出显示了“包”选项卡的Adobe Admin Console界面屏幕截图 | 步骤1：Admin Console准备 | 首先，使用系统管理员权限登录到Adobe Admin Console。 导航到“包”选项卡，然后选择“功能受限许可证”。 单击“开始”按钮开始创建包。 |
-| 创建包配置屏幕，突出显示设置 | 包配置 | 使用以下建议的设置配置您的包：为激活方法选择“脱机”，为授权选择“PDF生成”，为平台选择“Windows 64位”。 对于应用程序选择，仅在选定的应用程序中保留许可证文件。 为包提供一个描述性名称(如“Acrobat FRL AEM Forms”)，然后创建包。 |
+| 创建包配置屏幕，突出显示设置 | 包配置 | 使用以下建议的设置配置您的包：为激活方法选择“脱机”，为授权选择“PDF生成”，为平台选择“Windows 64位”。 对于应用程序选择，仅在选定的应用程序中保留许可证文件。 为包提供一个描述性名称（如“Acrobat FRL AEM Forms”），然后创建包。 |
 | 包含“权限”对话框的“Admin Console用户”选项卡 | 步骤2：授予下载权限 | 接下来，您需要创建或识别将下载包的用户。 在Admin Console中，导航到用户选项卡，选择您的用户，并为其分配“部署管理员”角色。 这允许他们下载您创建的FRL包。 |
-| Windows控制面板(应用与功能显示Acrobat) | 步骤3：卸载以前的Acrobat | 在安装新版本之前，必须完全删除所有现有的Acrobat安装。 打开Windows控制面板，导航到“应用”，找到Adobe Acrobat，然后选择“卸载”。 要彻底删除，请考虑使用Adobe Acrobat清洁器工具，尤其是当您在过程的后期遇到问题时。 |
+| Windows控制面板（应用与功能显示Acrobat） | 步骤3：卸载以前的Acrobat | 在安装新版本之前，必须完全删除所有现有的Acrobat安装。 打开Windows控制面板，导航到“应用”，找到Adobe Acrobat，然后选择“卸载”。 要彻底删除，请考虑使用Adobe Acrobat清洁器工具，尤其是当您在过程的后期遇到问题时。 |
 | Adobe Acrobat DC下载页面中安装程序部分突出显示 | 步骤4：下载并安装Adobe Acrobat Pro | 卸载后，从Acrobat Pro DC下载页面下载相应的Adobe Acrobat安装程序。 为兼容PDF Generator，建议使用Windows 32位安装程序。 |
 | 显示提取和设置步骤的安装过程 | 安装过程 | 将下载的zip文件解压到文件夹，找到Setup.exe，然后以管理员身份运行它。 按照屏幕上的说明完成安装。 安装后，打开一次Acrobat Pro以关闭任何欢迎对话框，并完成初始设置。 |
 | Admin Console的“包”选项卡，其中突出显示了下载按钮 | 步骤5：下载FRL包 | 现在，使用您之前授予的下载权限帐户登录Adobe Admin Console。 导航到包选项卡，找到您的FRL包，然后将其下载到您的AEM Forms服务器。 |

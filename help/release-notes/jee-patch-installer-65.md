@@ -4,11 +4,10 @@ description: 了解如何使用 AEM Forms JEE 补丁安装程序修复 AEM 6.5 F
 content-type: reference
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 hide: true
-hidefromtoc: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 90%
@@ -19,7 +18,7 @@ ht-degree: 90%
 
 >[!NOTE]
 >
->如需了解更多信息或获取补丁，请[联系支持人员](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)。
+>如需了解更多信息或获取补丁，请[联系支持人员](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)。
 
 ## 关于补丁安装程序 {#about-the-patch-installer}
 
@@ -36,14 +35,14 @@ AEM 6.5 Forms JEE 补丁安装程序包含此补丁发布之前 AEM 6.5 Forms JE
 1. 将补丁安装程序存档文件提取到硬盘驱动器。
 1. 在根据您所使用的操作系统命名的目录中：
 
-   * **Windows**
-Navigate to the appropriate directory on the installation media or folder on your hard disk where you copied the installer, and double-click the aemforms65_cfp_install.exe file.
+   * **窗口**
+导航到安装介质上的相应目录或硬盘上复制安装程序的文件夹，然后双击aemforms65_cfp_install.exe文件。
 
       * （Windows 32 位）`Windows\Disk1\InstData\VM`
       * （Windows 64 位）`Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Navigate to the appropriate directory, and from a command prompt, type `./aem65_cfp_install.bin`.
+导航到相应的目录，然后在命令提示符下键入`./aem65_cfp_install.bin`。
 
       * （Linux®）`Linux/Disk1/InstData/NoVM`
 
@@ -71,8 +70,8 @@ Navigate to the appropriate directory, and from a command prompt, type `./aem65_
 
 1. 根据您所使用的应用程序服务器，选择以下文档之一，并按&#x200B;*配置和部署 AEM Forms* 部分的说明进行操作。
 
-   * [Installing and Deploying AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_cn)
-   * [Installing and Deploying AEM forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_cn)
+   * [安装和部署AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [安装和部署AEM forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
 1. （仅适用于 JBoss®）在安装补丁并配置服务器后，请删除 JBoss® 应用程序服务器下的 tmp 和 work 目录。
 
@@ -97,4 +96,4 @@ Navigate to the appropriate directory, and from a command prompt, type `./aem65_
 * 文档安全
 * 基础 JEE
 
-[Contact Support](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)
+[联系支持人员](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)

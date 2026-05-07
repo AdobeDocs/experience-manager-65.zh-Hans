@@ -5,9 +5,8 @@ feature: Adaptive Forms, Forms Designer
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 hide: true
-hidefromtoc: true
 exl-id: 0948231a-bd9e-4d29-946d-2d8c17e27c28
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
 workflow-type: tm+mt
 source-wordcount: '4362'
 ht-degree: 5%
@@ -72,7 +71,7 @@ ht-degree: 5%
 | [5.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-structure) | 对于具有两个或多个行或列标题逻辑级别的数据表，请使用标记将数据单元格与标题单元格相关联。 | 2.9提供表格的标题单元格 | |
 | [6.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-order-style-sheets) | 组织文档，以便不使用样式表读取文档。 例如，在呈现不带关联样式表的HTML文档时，仍必须能够读取该文档。 | 不适用 | |
 | [6.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-dynamic-source) | 确保在动态内容发生更改时更新动态内容的等效内容。 | 2.11避免中断脚本编写 | |
-| [&#x200B; 6.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts) | 在关闭或不支持脚本、小程序或其他编程对象时，确保页面可用。 如果无法执行此操作，请在可访问的替代页面上提供等效信息。 | 2.11避免中断脚本编写 | |
+| [ 6.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-scripts) | 在关闭或不支持脚本、小程序或其他编程对象时，确保页面可用。 如果无法执行此操作，请在可访问的替代页面上提供等效信息。 | 2.11避免中断脚本编写 | |
 | [7.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-flicker) | 在用户代理允许用户控制闪烁之前，请避免导致屏幕闪烁。 | 2.1保持表单简单易用 | |
 | [9.1](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-client-side-maps) | 提供客户端图像映射，而不是服务器端图像映射，除非区域不能使用可用的几何形状进行定义。 | 不适用 | |
 | [11.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-alt-pages) | 如果经过最大努力，您无法创建可访问的页面，并提供指向使用W3C技术的替代页面的链接，该页面可供访问，具有等效的信息（或功能），并且与不可访问（原始）页面的更新频率相同。 | 不适用 | |
@@ -93,8 +92,8 @@ ht-degree: 5%
 | [3.7](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-quotes) | 标明报价单。 请勿将引号用于格式效果，如缩进。 | 不适用 | |
 | [5.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-table-for-layout) | 请勿将表用于布局，除非将表线性化后有意义。 否则，如果表没有意义，请提供替代等效项（可以是线性化版本）。 | 没有特定的LiveCycle技术 | 没有理由在LiveCycle Forms中使用表格进行布局。 相反，请使用布局面板来定位网格模式中的表单字段。 仅在利用表特定功能（如表标题）时使用表。 |
 | [5.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-table-layout) | 如果表格用于布局，请勿将任何结构标记用于视觉格式设置。 | 没有特定的LiveCycle技术 | |
-| [&#x200B; 6.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts) | 对于脚本和小程序，请确保事件处理程序独立于输入设备。 | 2.7确保可使用键盘访问表单控件 | |
-| [&#x200B; 6.5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page) | 确保动态内容可访问，或者提供替代演示文稿或页面。 | 2.11避免中断脚本编写 | |
+| [ 6.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-keyboard-operable-scripts) | 对于脚本和小程序，请确保事件处理程序独立于输入设备。 | 2.7确保可使用键盘访问表单控件 | |
+| [ 6.5](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-fallback-page) | 确保动态内容可访问，或者提供替代演示文稿或页面。 | 2.11避免中断脚本编写 | |
 | [7.2](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-blinking) | 在用户代理允许用户控制闪烁之前，请避免导致内容闪烁（即，定期更改演示文稿，例如打开和关闭）。 | 2.1保持表单简单易用 | |
 | [7.3](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-avoid-movement) | 在用户代理允许用户冻结移动内容之前，请避免在页面中移动。 | 2.1保持表单简单易用 | |
 | [7.4](https://www.w3.org/TR/WCAG10/wai-pageauth.html#tech-no-periodic-refresh) | 在用户代理提供停止刷新的功能之前，请勿定期创建自动刷新页面。 | 不适用 | |
@@ -156,18 +155,18 @@ ht-degree: 5%
 | 2.2.2 [暂停，停止，隐藏](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-pause.html) | 2.1保持表单简单易用 | |
 | 2.2.3 [无计时](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-no-exceptions.html) | 没有特定的LiveCycle技术 | |
 | 2.2.4 [中断](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-postponed.html) | 没有特定的LiveCycle技术 | |
-| 2.2.5 [Re-authenticating](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | 没有特定的LiveCycle技术 | |
-| 2.3 [Seizures] | | |
-| 2.3.1 [Three Flashes or Below Threshold](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1保持表单简单易用 | |
-| 2.3.2 [Three Flashes](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1保持表单简单易用 | |
-| 2.4 [Navigable](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
-| 2.4.1 [Bypass Blocks](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10提供可导航表单结构 | |
-| 2.4.2 [Page Titled](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | 没有特定的LiveCycle技术 | |
-| 2.4.3 [Focus Order](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6确保读取和制表符顺序正确 | |
-| 2.4.4 [Link Purpose (In Context)](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | 没有特定的LiveCycle技术 | Link purpose is dependent on authors choosing meaningful text for linked elements. |
-| 2.4.5 [Multiple Ways](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10提供可导航表单结构 | |
-| 2.4.6 [Headings and Labels](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5为表单控件提供适当的标签</li><li>2.10提供可导航表单结构</li> | |
-| 2.4.7 [Focus Visible](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | 没有特定的LiveCycle技术 | LiveCycle Forms中的默认焦点可见。 |
+| 2.2.5 [正在重新进行身份验证](https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-server-timeout.html) | 没有特定的LiveCycle技术 | |
+| 2.3 [癫痫发作] | | |
+| 2.3.1 [闪光三次或低于阈值](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-does-not-violate.html) | 2.1保持表单简单易用 | |
+| 2.3.2 [三次闪烁](https://www.w3.org/TR/UNDERSTANDING-WCAG20/seizure-three-times.html) | 2.1保持表单简单易用 | |
+| 2.4 [可导航](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms.html) | | |
+| 2.4.1 [绕过块](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-skip.html) | 2.10提供可导航表单结构 | |
+| 2.4.2 [页面标题为](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html) | 没有特定的LiveCycle技术 | |
+| 2.4.3 [焦点顺序](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-order.html) | 2.6确保读取和制表符顺序正确 | |
+| 2.4.4 [链接目的（在上下文中）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html) | 没有特定的LiveCycle技术 | 链接目的取决于作者是否为链接的元素选择有意义的文本。 |
+| 2.4.5 [多种方式](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-mult-loc.html) | 2.10提供可导航表单结构 | |
+| 2.4.6 [标题和标签](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-descriptive.html) | <ul><li>2.5为表单控件提供适当的标签</li><li>2.10提供可导航表单结构</li> | |
+| 2.4.7 [焦点可见](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-focus-visible.html) | 没有特定的LiveCycle技术 | LiveCycle Forms中的默认焦点可见。 |
 | 2.4.8 [位置](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-location.html) | 没有特定的LiveCycle技术 | 不适用： LiveCycle表单不需要导航系统。 |
 | 2.4.9 [链接目的（仅限链接）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html) | 没有特定的LiveCycle技术 | 链接目的取决于作者是否为链接的元素选择有意义的文本。 |
 | 2.4.10 [节标题](https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-headings.html) | 2.10提供可导航表单结构 | |
@@ -193,4 +192,4 @@ ht-degree: 5%
 | 3.3.6 [错误预防（全部）](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible-all.html) | 没有特定的LiveCycle技术 | |
 | 4.1 [兼容](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat.html) | | |
 | 4.1.1 [解析](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-parses.html) | 没有特定的LiveCycle技术 | |
-| 4.1.2 [Name, Role, Value](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3选择正确的控件</li> <li>2.5为表单控件提供适当的标签</li> | |
+| 4.1.2 [名称，角色，值](https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html) | <ul><li>2.3选择正确的控件</li> <li>2.5为表单控件提供适当的标签</li> | |
