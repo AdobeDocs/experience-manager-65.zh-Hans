@@ -5,7 +5,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
 source-wordcount: '2149'
 ht-degree: 91%
@@ -20,7 +20,7 @@ ht-degree: 91%
 |---|---|
 | 版本 | 6.5.24.0 |
 | 类型 | 服务包发行 |
-| 日期 | 04 December 2025 |
+| 日期 | 2025年12月4日 |
 | 下载 URL | [最新 AEM Forms 版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans) |
 
 >[!NOTE]
@@ -56,7 +56,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 ![JEE Installation](/help/forms/using/assets/jeeinstallation.png)
 -->
 
-+++1. Take backup of your existing environment
++++&#x200B;1. 备份现有环境
 
 1. 备份您的 [CRX 存储库、数据库架构和 GDS（全局文档存储）](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=zh-Hans)。
 1. 备份 *AEM_forms_root*>/deploy 文件夹。
@@ -67,11 +67,11 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++2. Download the required software
++++&#x200B;2. 下载所需的软件
 
 * [AEM Forms on JEE Service Pack](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)
 
-* [Fragment Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
+* [片段Servlet](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Forg.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)
 
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans)
 * [Forms 附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)
@@ -79,7 +79,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++3. Install Microsoft Visual C++ Redistributable packages
++++&#x200B;3. 安装Microsoft Visual C++可再发行软件包
 
 * 在安装了 AEM 6.5 Forms 的计算机上，下载并安装[适用于 Visual Studio 2015、2017、2019 和 2022 的 64 位 Microsoft Visual C++ 可再发行组件包](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)。
 
@@ -89,19 +89,19 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 +++
 
-+++4. Install AEM Forms on JEE service pack:
++++&#x200B;4. 在JEE Service Pack上安装AEM Forms：
 
 1. 停止应用程序服务器。
 1. 将 **JEE 上的 AEM Forms 服务包安装程序存档**&#x200B;提取到您的硬盘驱动器：
 
-   * **Windows**
-Navigate to the appropriate directory on the installation media or folder on your hard disk where you copied     the installer, and double-click the `aemforms65_cfp_install.exe` file.
+   * **窗口**
+导航到安装介质上的相应目录或硬盘上复制安装程序的文件夹，然后双击`aemforms65_cfp_install.exe`文件。
 
       * （Windows 32 位）`Windows\Disk1\InstData\VM`
       * （Windows 64 位）`Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_install.bin`.
+导航到相应的目录，然后从Shell中键入`./aem65_cfp_install.bin`。
 
       * （Linux®）`Linux/Disk1/InstData/NoVM`
 
@@ -126,12 +126,12 @@ Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_in
 
 1. 根据您所使用的应用程序服务器，选择以下文档之一，并按&#x200B;*配置和部署 AEM Forms* 部分的说明进行操作。
 
-   * [Installing and Deploying AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_cn)
-   * [Installing and Deploying AEM forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_cn)
-   * [Installing and Deploying AEM Forms for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65_cn)
-   * [Installing and Deploying AEM forms for JBoss® Cluster](https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
-   * [Installing and Deploying AEM forms for WebSphere® Cluster](https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
-   * [Installing and Deploying AEM Forms for WebLogic Cluster](https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
+   * [安装和部署AEM forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_cn)
+   * [安装和部署AEM forms for WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_cn)
+   * [安装和部署AEM Forms for WebLogic](https://www.adobe.com/go/learn_aemforms_installWebLogic_65_cn)
+   * [安装和部署AEM forms for JBoss®聚类](https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-jboss.pdf)
+   * [安装和部署AEM forms for WebSphere®群集](https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
+   * [安装和部署AEM Forms for WebLogic群集](https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
 
 >[!NOTE]
@@ -142,7 +142,7 @@ Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_in
 
 +++
 
-+++5. Install the servlet fragment if not installed (**Mandatory step**)
++++&#x200B;5. 如果未安装，请安装servlet片段（**强制步骤**）
 
 <!--
    >[!NOTE]
@@ -164,7 +164,7 @@ Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_in
 
 +++
 
-+++6. Install AEM Service Pack
++++&#x200B;6. 安装AEM Service Pack
 
 1. 如果实例处于更新模式（即由早期版本升级而来），请在安装前先重启该实例。 如果实例已长时间运行，Adobe 建议先重启。
 1. 在安装之前，请为您的 [!DNL Experience Manager] 实例创建快照或执行一次全新的备份。
@@ -195,7 +195,7 @@ Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_in
 
 +++
 
-+++7. Install AEM Experience Manager Forms add-on package
++++&#x200B;7. 安装AEM Experience Manager Forms附加组件包
 
 1. 请确保已安装相应的 [!DNL Experience Manager] 服务包。
 1. 下载适用于您的操作系统的 [AEM Forms 版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)中列出的相应 Forms 附加组件包。
@@ -211,7 +211,7 @@ Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_in
 ![OSGi Installation Steps](/help/forms/using/assets/osgiinstallation.png)
 -->
 
-+++1. Take backup of your existing environment
++++&#x200B;1. 备份现有环境
 
 1. 备份您的 [CRX 存储库和数据库架构](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=zh-Hans)。
 
@@ -221,14 +221,14 @@ Navigate to the appropriate directory, and from a shell and type `./aem65_cfp_in
 
 +++
 
-+++2. Download the required software
++++&#x200B;2. 下载所需的软件
 
 * [AEM Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans)
 * [Forms 附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)
 
 +++
 
-+++ 3. Install Microsoft Visual C++ Redistributable packages
++++ &#x200B;3. 安装Microsoft Visual C++可再发行软件包
 
 * 在安装了 AEM 6.5 Forms 的计算机上，下载并安装[适用于 Visual Studio 2015、2017、2019 和 2022 的 64 位 Microsoft Visual C++ 可再发行组件包](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170#visual-studio-2015-2017-2019-and-2022)。
 

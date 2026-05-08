@@ -5,7 +5,7 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
 workflow-type: tm+mt
 source-wordcount: '5734'
 ht-degree: 3%
@@ -71,8 +71,8 @@ ht-degree: 3%
 
 * 要根据多个条件触发操作，建议使用action-condition构造。 例如，要通过评估字段B、C和D的条件来显示和隐藏字段A，请在字段A上使用显示或隐藏规则类型。
 * 如果规则包含一个条件的一个操作，则使用condition-action或action condition结构。
-* If a rule checks for a condition and performs an action immediately on providing a value in a field or exiting a field, it is recommended to write a rule with condition-action construct or the When rule type on the field on which the condition is evaluated.
-* The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. However, if you want the action to trigger when the value changes on the server side, like for prepopulating the value, it is recommended to write a When rule that triggers the action when the field is initialized.
+* 如果规则检查条件，并在字段中提供值或退出字段时立即执行操作，则建议在评估条件的字段中编写具有condition-action结构或When规则类型的规则。
+* 当用户更改应用When规则的对象的值时，将评估When规则中的条件。 但是，如果您希望操作在服务器端更改时触发（如预填充值），则建议编写一个When规则以在字段初始化时触发操作。
 * 在编写下拉列表、单选按钮或复选框对象的规则时，表单中这些表单对象的选项或值会在规则编辑器中预填充。
 
 ## 规则编辑器中的可用运算符类型和事件 {#available-operator-types-and-events-in-rule-editor}
@@ -84,10 +84,10 @@ ht-degree: 3%
 * **开头为**
 * **结尾为**
 * **包含**
-* **Does not contain**
+* **不包含**
 * **为空**
 * **不为空**
-* **Has Selected:** Returns true when the user selects a particular option for a checkbox, drop-down, or a radio button.
+* **已选择：**&#x200B;当用户为复选框、下拉列表或单选按钮选择特定选项时，返回true。
 * **已初始化（事件）：**&#x200B;当表单对象在浏览器中呈现时返回true。
 * **Is Changed (event)：**&#x200B;当用户更改表单对象的输入值或选定选项时，返回true。
 
@@ -497,13 +497,13 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-2](assets/write-rules-visual-editor-2-cc.png)
 
-<!--
-In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
+   <!--
+   In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL Single]** options are assigned **0** and **1** values, respectively. You can verify assigned values in the Title tab of the Edit radio button dialog as shown below.
 
    ![Radio button values from rule editor](assets/radio-button-values.png)
    -->
 
-1. In the **[!UICONTROL Enter a String]** field in the rule, select **Married** from drop-down menu.
+1. 在规则的&#x200B;**[!UICONTROL 输入字符串]**&#x200B;字段中，从下拉菜单中选择&#x200B;**已婚**。
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4-cc.png)
 
@@ -517,12 +517,12 @@ In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL S
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
-   Next, define the action to perform if this condition is False.
-1. Click **[!UICONTROL Add Else Section]** to add another condition for the **[!UICONTROL Spouse Salary]** field, in case you select Marital Status as single.
+   接下来，定义此条件为False时要执行的操作。
+1. 单击&#x200B;**[!UICONTROL 添加其他部分]**&#x200B;为&#x200B;**[!UICONTROL 配偶薪金]**&#x200B;字段添加其他条件，以防您选择婚姻状况作为单身。
 
    ![when-else](assets/when-else.png)
 
-1. In the Else statement, select **[!UICONTROL Hide]** from the **[!UICONTROL Select Action]** drop-down.
+1. 在Else语句中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]**。
    ![when-else](assets/when-else-1.png)
 
 1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
@@ -598,9 +598,9 @@ In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL S
 
    规则编辑器中的结果如下所示。  ![write-rules-visual-editor-16](assets/write-rules-visual-editor-16-cc.png)
 
-1. 选择&#x200B;**[!UICONTROL 完成]**。 It saves the rule.
+1. 选择&#x200B;**[!UICONTROL 完成]**。 保存规则。
 
-1. Repeat steps 7 through 14 to define another rule to compute the loan eligibility if the marital Status is Single. 规则在规则编辑器中如下所示。
+1. 重复步骤7至14，定义另一条规则，以计算婚姻状况为“单身”的贷款资格。 规则在规则编辑器中如下所示。
 
    ![write-rules-visual-editor-17](assets/write-rules-visual-editor-17-cc.png)
 
@@ -608,7 +608,7 @@ In the Marital Status radio button, **[!UICONTROL Married]** and **[!UICONTROL S
 
 ![write-rules-visual-editor-18](assets/write-rules-visual-editor-18-cc.png)
 
-You can write a combined rule to control visibility of the Spouse Salary field and compute loan eligibility when the Marital Status is Married using the Else condition.
+您可以使用Else条件编写组合规则，以控制“配偶薪金”字段的可见性，并在婚姻状况为“已婚”时计算贷款资格。
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
 
@@ -637,7 +637,7 @@ While writing JavaScript code in the rule editor, the following visual cues help
 
 #### 规则编辑器中的自定义函数 {#custom-functions}
 
-Apart from the out-of-the-box functions like *Sum of* that are listed under **Functions Output**, you can also use custom functions in your rule editor. Rule editor supports JavaScript ECMAScript 2019 syntax for scripts and custom functions. For instructions on creating custom functions, refer to the article [Custom Functions in Adaptive Forms](/help/forms/using/create-and-use-custom-functions-core-components.md)
+除了在&#x200B;**函数输出**&#x200B;下列出的现成函数（如&#x200B;*总和*）之外，您还可以在规则编辑器中使用自定义函数。 规则编辑器支持脚本和自定义函数的JavaScript ECMAScript 2019语法。 有关创建自定义函数的说明，请参阅文章[自适应Forms中的自定义函数](/help/forms/using/create-and-use-custom-functions-core-components.md)
 
 <!--
 
@@ -816,7 +816,7 @@ var c = {
 
 选择表单对象并选择![edit-rules1](assets/edit-rules-icon.svg)时，会列出该对象上的任何现有规则。 您可以查看标题并预览规则摘要。 此外，您还可以通过UI展开和查看完整的规则摘要、更改规则的顺序、编辑规则以及删除规则。
 
-![List-rules](assets/list-rules-cc.png)
+![列表规则](assets/list-rules-cc.png)
 
 您可以对规则执行以下操作：
 
