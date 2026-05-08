@@ -258,7 +258,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 **[!UICONTROL 函数输出]**&#x200B;根据预定义的函数或自定义函数定义规则。
 
-**[!UICONTROL 导航到]**导航到其他自适应Forms、其他资源（如图像或文档片段）或外部URL。
+**[!UICONTROL 导航到]**&#x200B;导航到其他自适应Forms、其他资源（如图像或文档片段）或外部URL。
 <!--Interactive Communications,-->
 <!-- For more information, see [Add button to the Interactive Communication](create-interactive-communication.md#addbuttontothewebchannel). -->
 
@@ -267,7 +267,7 @@ Allowed Multiple fields in When condition feature is disabled by default. To ena
 
 ### [!UICONTROL 设置值] {#set-value-of}
 
-]**规则类型的**[!UICONTROL &#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
+**规则类型的**&#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
 
 **Set Value Of**&#x200B;规则类型不适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
 
@@ -513,7 +513,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5-cc.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**[!UICONTROL  Warbant Salary ]**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6-cc.png)
 
@@ -525,7 +525,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 1. 在Else语句中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 隐藏]**。
    ![when-else](assets/when-else-1.png)
 
-1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**[!UICONTROL  Warbant Salary ]**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**字段，该字段列出了表单中的所有表单对象。
+1. 从“表单对象”选项卡中拖放&#x200B;**[!UICONTROL 放置对象上的**&#x200B;[!UICONTROL &#x200B; Warbant Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。 或者，选择&#x200B;**[!UICONTROL Drop对象或选择此处]**&#x200B;字段，然后从弹出菜单中选择&#x200B;**[!UICONTROL Berpha Salary]**&#x200B;字段，该字段列出了表单中的所有表单对象。
    ![when-else](assets/when-else-2.png)
 
    规则在规则编辑器中如下所示。
@@ -562,11 +562,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 在表达式字段中：
 
-   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**[!UICONTROL  Salary ]**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中，选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B; Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL 选择运算符]**&#x200B;字段中选择&#x200B;**[!UICONTROL 加号]**。
 
-   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的**[!UICONTROL  Berphor Salary ]**字段，或选择此处]**&#x200B;字段。
+   * 从Forms的“对象”选项卡中选择或拖放另一个&#x200B;**[!UICONTROL 拖放对象中的**&#x200B;[!UICONTROL &#x200B; Berphor Salary &#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
 
    ![write-rules-visual-editor-12](assets/write-rules-visual-editor-12.png)
 
@@ -590,7 +590,7 @@ Users in the forms-power-users group can access code editor. For other users, co
 
    在When语句中：
 
-   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**[!UICONTROL &#x200B;婚姻状况&#x200B;]**字段，或选择此处]**&#x200B;字段。
+   * 从Forms对象选项卡中选择或拖放第一个&#x200B;**[!UICONTROL 放置对象中的**&#x200B;[!UICONTROL &#x200B;婚姻状况&#x200B;]&#x200B;**字段，或选择此处]**&#x200B;字段。
 
    * 从&#x200B;**[!UICONTROL Select Operator]**&#x200B;字段中选择&#x200B;**[!UICONTROL 等于]**。
 
