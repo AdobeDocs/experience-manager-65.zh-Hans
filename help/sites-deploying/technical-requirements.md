@@ -6,9 +6,9 @@ solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+source-git-commit: bbbbf1549f1a44f4613f6c02c33bada5a0980179
 workflow-type: tm+mt
-source-wordcount: '3736'
+source-wordcount: '3755'
 ht-degree: 6%
 
 ---
@@ -129,23 +129,23 @@ Adobe Experience Manager与以下版本的Java™虚拟机一起运行：
 | MongoDB 企业版 4.0 | 存储库 | Z：不支持 |
 | MongoDB 企业版 3.6 | 存储库 | Z：不支持 |
 | MongoDB 企业版 3.4 | 存储库 | Z：不支持 |
-| ® DB2® 10.5 | 存储库和Forms数据库 | R: Restricted Support `[5]` |
-| Oracle Database 12c (12.1.x) | 存储库和Forms数据库 | R：有限的支持 |
-| Oracle Database 19c | 存储库和Forms数据库 | R：有限的支持 |
-| Microsoft® SQL 服务器 2016 | Forms Database | A：受到支持 |
-| Microsoft® SQL Server 2019 (Deprecated) | Forms Database | A：受到支持 |
-| Microsoft® SQL 服务器 2022 | Forms Database | A：受到支持 |
-| **Apache Lucene (Quickstart built-in)** | Search Service | A：受到支持 |
-| Apache Solr | Search Service | A：受到支持 |
+| ® DB2® 10.5 | 存储库和Forms数据库 | R：限制的支持`[5]` |
+| Oracle数据库12c (12.1.x) | 存储库和Forms数据库 | R：有限的支持 |
+| Oracle数据库19c | 存储库和Forms数据库 | R：有限的支持 |
+| Microsoft® SQL 服务器 2016 | Forms数据库 | A：受到支持 |
+| ® SQL Server 2019（已弃用） | Forms数据库 | A：受到支持 |
+| Microsoft® SQL 服务器 2022 | Forms数据库 | A：受到支持 |
+| **Apache Lucene（快速入门内置）** | 搜索服务 | A：受到支持 |
+| Apache Solr | 搜索服务 | A：受到支持 |
 
-1. &#39;File System&#39; includes block storage that is POSIX-compliant. Includes network storage technology. Mind that file system performance might vary and influences the overall performance. Load test AEM with the network/remote file system.
-2. MongoDB Enterprise versions 4.2 and 4.4 require AEM 6.5 SP9 as a minimum.
-3. MongoDB Sharding is not supported in AEM.
-4. MongoDB Storage Engine WiredTiger is supported only.
-5. Supported for AEM Forms upgrade customers. Not supported for new installations.
-6. Applicable to AEM Forms only:
-   * Removed support for Oracle Database 12c and added support for Oracle Database 19c.
-   * Removed support for Microsoft® SQL Server 2016 and added support for Microsoft® SQL Server 2019 and Microsoft® SQL Server 2022.
+1. “文件系统”包括符合POSIX的块存储。 包括网络存储技术。 请注意，文件系统性能可能会有所不同，并影响整体性能。 使用网络/远程文件系统对AEM进行负载测试。
+2. MongoDB Enterprise版本4.2和4.4至少需要AEM 6.5 SP9。
+3. AEM中不支持MongoDB分片。
+4. 仅支持MongoDB存储引擎WiredTiger。
+5. 支持AEM Forms升级客户。 新安装不支持。
+6. 仅适用于AEM Forms：
+   * 移除了对Oracle Database 12c的支持，并增加了对Oracle Database 19c的支持。
+   * 删除了对® SQL Server 2016的支持，并添加了对Microsoft® SQL Server 2019和Microsoft® SQL Server 2022的支持。
 
 >[!NOTE]
 >
@@ -256,60 +256,60 @@ Adobe还提供Adobe Managed Services功能，以便在Azure或AWS上部署AEM。
 
 在Azure、AWS或任何其他云计算环境中部署AEM的所有其他情况下，虚拟计算环境会包含来自Adobe的支持。 该虚拟环境必须按照本页中列出的技术规范运行。 任何与在任何这些云环境中运行的AEM相关的已报告问题，都必须可独立于任何特定于云计算环境的云服务进行重现。 也就是说，除非本页面上列出的技术要求（例如Azure Blob Storage或AWS S3）支持Cloud Service。
 
-有关如何在Adobe Managed Services之外的Azure或AWS上部署AEM的建议，Adobe建议直接与云提供商合作。 或者，与Adobe合作伙伴合作，为您选择的云环境中部署AEM提供支持。 The selected cloud provider or partner is responsible for the sizing specifications, design, and implementation of the architecture, to meet your specific performance, load, scalability, and security requirements.
+有关如何在Adobe Managed Services之外的Azure或AWS上部署AEM的建议，Adobe建议直接与云提供商合作。 或者，与Adobe合作伙伴合作，为您选择的云环境中部署AEM提供支持。 选定的云提供商或合作伙伴负责体系结构的规模调整、设计和实施，以满足您的特定性能、负载、可扩展性和安全要求。
 
-### Dispatcher Platforms (Web Servers) {#dispatcher-platforms-web-servers}
+### Dispatcher平台（Web服务器） {#dispatcher-platforms-web-servers}
 
-The Dispatcher is the caching and load-balancing component. [Download the latest Dispatcher version](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=zh-Hans). Experience Manager 6.5 requires Dispatcher version 4.3.2 or higher.
+Dispatcher是缓存和负载平衡组件。 [下载最新的Dispatcher版本](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=zh-Hans)。 Experience Manager 6.5需要Dispatcher版本4.3.2或更高版本。
 
-The following web servers are supported for use with Dispatcher version 4.3.2:
+以下Web服务器支持与Dispatcher版本4.3.2一起使用：
 
 | 平台 | 支持级别 |
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A：受到支持 |
-| Microsoft® IIS 10 (Internet Information Server) | A：受到支持 |
-| Microsoft® IIS 8.5 (Internet Information Server) | Z：不支持 |
+| ® IIS 10 (Internet Information Server) | A：受到支持 |
+| ® IIS 8.5 (Internet Information Server) | Z：不支持 |
 
-1. Web servers built based on the Apache httpd source code have as much support as the version of httpd on which it is based. If in doubt, ask Adobe for confirmation of the support level related to the respective server product. The following cases:
+1. 基于Apache httpd源代码构建的Web服务器与其所基于的httpd版本具有同样多的支持。 如有疑问，请要求Adobe确认与相应服务器产品相关的支持级别。 以下情况：
 
-   1. The HTTP server was built using only official Apache source distributions, or
-   1. The HTTP server was delivered as part of the operating system on which it is running. Examples: IBM® HTTP Server, Oracle HTTP Server
+   1. HTTP服务器仅使用官方的Apache源分发生成，或者
+   1. HTTP服务器是作为运行它的操作系统的一部分提供的。 示例： ® HTTP Server、Oracle HTTP Server
 
-1. Dispatcher is not available for Apache 2.4.x for Windows operating systems.
+1. Dispatcher不适用于适用于Windows操作系统的Apache 2.4.x。
 
 ## 支持的客户端平台 {#supported-client-platforms}
 
-### Supported Browsers for Authoring User Interface {#supported-browsers-for-authoring-user-interface}
+### 支持创作用户界面的浏览器 {#supported-browsers-for-authoring-user-interface}
 
-The Adobe Experience Manager user interface works with the following client platforms. 所有浏览器都用默认的插件和附加功能进行了测试。
+Adobe Experience Manager用户界面可与以下客户端平台配合使用。 所有浏览器都用默认的插件和附加功能进行了测试。
 
-The AEM user interface is optimized for larger screens (typically notebooks and desktop computers) and tablet form factor (such as Apple iPad or Microsoft® Surface). The phone form factor is not supported.
+AEM用户界面已针对大屏幕（通常是笔记本电脑和台式计算机）和平板电脑外形规格（如Apple iPad或Microsoft® Surface）进行了优化。 不支持电话的外形规格。
 
 >[!NOTE]
 >
 >**支持发布周期较快的浏览器：**
 >
->Mozilla Firefox, Google Chrome, and Microsoft® Edge release updates every few months. Adobe is committed to provide updates for Adobe Experience Manager to maintain the support level as stated below with upcoming versions of these browsers.
+>Mozilla Firefox、Google Chrome和Microsoft® Edge每隔几个月发布一次更新。 Adobe承诺为Adobe Experience Manager提供更新，以在这些浏览器的即将发行版本中保持下述支持级别。
 
 <table>
  <tbody>
   <tr>
    <td><strong>浏览器</strong></td>
-   <td><strong>Support for UI<br /> </strong></td>
-   <td><strong>Support for Classic UI</strong></td>
+   <td><strong>支持UI<br /> </strong></td>
+   <td><strong>支持经典UI</strong></td>
   </tr>
   <tr>
-   <td><strong>Google Chrome (Evergreen)</strong></td>
-   <td>A：受到支持</td>
-   <td>A：受到支持</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Edge (Evergreen)</td>
+   <td><strong>Google Chrome（常绿市）</strong></td>
    <td>A：受到支持</td>
    <td>A：受到支持</td>
   </tr>
   <tr>
-   <td>Microsoft® Internet Explorer 11</td>
+   <td>®Edge（常青网）</td>
+   <td>A：受到支持</td>
+   <td>A：受到支持</td>
+  </tr>
+  <tr>
+   <td>® Internet Explorer 11</td>
    <td>Z：不支持</td>
    <td>Z：不支持</td>
   </tr>
@@ -319,94 +319,94 @@ The AEM user interface is optimized for larger screens (typically notebooks and 
    <td>A：受到支持</td>
   </tr>
   <tr>
-   <td>Mozilla Firefox last ESR [1]</td>
+   <td>Mozilla Firefox上一个ESR [1]</td>
    <td>A：受到支持</td>
    <td>A：受到支持</td>
   </tr>
   <tr>
-   <td>Apple Safari on macOS (Evergreen)</td>
+   <td>macOS上的Apple Safari (Evergreen)</td>
    <td>A：受到支持</td>
    <td>A：受到支持</td>
   </tr>
   <tr>
-   <td>Apple Safari 11.x on macOS</td>
+   <td>macOS上的Apple Safari 11.x</td>
    <td>Z：不支持</td>
    <td>Z：不支持</td>
   </tr>
   <tr>
-   <td>Apple Safari on iOS 12.x</td>
-   <td>A: Supported [2]</td>
+   <td>iOS 12.x上的Apple Safari</td>
+   <td>答：支持的[2]</td>
    <td>Z：不支持</td>
   </tr>
   <tr>
-   <td>Apple Safari on iOS 11.x</td>
+   <td>iOS 11.x上的Apple Safari</td>
    <td>Z：不支持</td>
    <td>Z：不支持</td>
   </tr>
  </tbody>
 </table>
 
-1. Extended Support Release of Firefox [Learn more on mozilla.org](https://www.mozilla.org/en-US/firefox/enterprise/)
-1. support for Apple iPad
+1. Firefox [的扩展支持版本了解有关mozilla.org的更多信息](https://www.mozilla.org/en-US/firefox/enterprise/)
+1. 支持Apple iPad
 
 ### 可用于网站的受支持的浏览器 {#supported-browsers-for-websites}
 
-Generally, browser support for websites rendered by AEM Sites depends on the implementation of AEM page templates, design and component output, and is therefore in the control of the party implementing these parts.
+通常，AEM Sites渲染的网站的浏览器支持取决于AEM页面模板的实施、设计和组件输出，因此受实施这些部分的方的控制。
 
-### WebDAV Clients {#webdav-clients}
+### WebDAV客户端 {#webdav-clients}
 
-**Microsoft® Windows 7+**
+**® Windows 7+**
 
-When connecting with Microsoft® Windows 7+ to an AEM instance that is not secured with SSL, basic authentication over an unsecured network must be enabled in Windows. It requires a change in the Windows Registry of the WebClient:
+在与® Windows 7+连接到一个不使用SSL保护的AEM实例时，必须在Windows中启用通过不安全网络进行的基础身份验证。 它需要在WebClient的Windows注册表中进行更改：
 
-1. Locate the registry subkey:
+1. 找到注册表子项：
 
    * HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
 
-1. Add the BasicAuthLevel registry entry to this subkey using a value of 2 or more.
+1. 使用值2或更多将BasicAuthLevel注册表项添加到此子项。
 
-## Additional Platform Notes {#additional-platform-notes}
+## 其他平台说明 {#additional-platform-notes}
 
-This section provides special notes and more detailed information about running Adobe Experience Manager and its add-ons.
+本节提供了有关运行Adobe Experience Manager及其加载项的特殊说明和更多详细信息。
 
 ### IPv4和IPv6 {#ipv-and-ipv}
 
-All elements of Adobe Experience Manager (Instance, Dispatcher) can be installed in both IPv4 and IPv6 networks.
+Adobe Experience Manager（实例、Dispatcher）的所有元素都可以安装在IPv4和IPv6网络中。
 
-Operation is seamless as no special configuration is required. You specify an IP address using the format that is appropriate to your network type, if necessary.
+操作是无缝的，因为不需要特殊配置。 如果需要，可以使用适合您的网络类型的格式指定IP地址。
 
-When an IP address must be specified, you can select (as required) from the following:
+当必须指定IP地址时，您可以根据需要从以下选项中选择：
 
-* An IPv6 address. 例如，`https://[ab12::34c5:6d7:8e90:1234]:4502`
+* IPv6地址。 例如，`https://[ab12::34c5:6d7:8e90:1234]:4502`
 
-* An IPv4 address. 例如，`https://123.1.1.4:4502`
+* IPv4地址。 例如，`https://123.1.1.4:4502`
 
-* A server name. 例如，`https://www.yourserver.com:4502`
+* 服务器名称。 例如，`https://www.yourserver.com:4502`
 
-* The default case of `localhost` is interpreted for both IPv4 and IPv6 network installations. 例如，`https://localhost:4502`
+* 对于IPv4和IPv6网络安装，都会解释`localhost`的默认情况。 例如，`https://localhost:4502`
 
-### Requirements for AEM Dynamic Media Add-on {#requirements-for-aem-dynamic-media-add-on}
+### AEM Dynamic Media加载项的要求 {#requirements-for-aem-dynamic-media-add-on}
 
-AEM Dynamic Media is disabled by default. See here to [enable Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media).
+默认情况下，AEM Dynamic Media处于禁用状态。 请参阅此处[启用Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media)。
 
-With Dynamic Media enabled, the following additional technical requirements apply.
+启用Dynamic Media后，需要满足以下附加技术要求。
 
 >[!NOTE]
 >
->These system requirements **only** apply if you use Dynamic Media - Hybrid mode; Dynamic Media - Hybrid mode has an embedded image server, which is only certified on certain operating systems.
+>如果您使用Dynamic Media — 混合模式，则这些系统要求&#x200B;**仅**&#x200B;适用；Dynamic Media — 混合模式具有嵌入式图像服务器，该服务器仅在某些操作系统上经过验证。
 >
->For Dynamic Media customers who run Dynamic Media - Scene7 mode (that is, **dynamicmedia_scene7** run mode), there are no additional system requirements; only the same system requirements as AEM. Dynamic Media - Scene7 mode architecture uses the cloud-based image service and not the service embedded in AEM.
+>对于运行Dynamic Media - Scene7模式（即&#x200B;**dynamicmedia_scene7**&#x200B;运行模式）的Dynamic Media客户，没有其他系统要求；只有与AEM相同的系统要求。 Dynamic Media - Scene7模式架构使用基于云的图像服务，而不是嵌入到AEM中的服务。
 
-#### Hardware {#hardware}
+#### 硬件 {#hardware}
 
-The following hardware requirements are applicable for both Linux® and Windows:
+以下硬件要求适用于Linux®和Windows：
 
-* Intel Xeon® or AMD® Opteron CPU with at least four cores
-* At least 16 GB of RAM
+* 英特尔至强®或AMD®皓龙CPU，至少具有四个内核
+* 至少16 GB RAM
 
 #### Linux® {#linux}
 
-If you are using Dynamic Media on Linux®, the following prerequisites must be met:
+如果您在Linux®上使用Dynamic Media，则必须满足以下先决条件：
 
 * Red Hat® Enterprise 8及更高版本，带有最新的修复修补程序
 * 64位操作系统
@@ -491,6 +491,8 @@ If you are using Dynamic Media on Linux®, the following prerequisites must be m
 
 >[!NOTE]
 >
+>* PDF Generator支持Microsoft® Office 2024。
+>* PDF Generator需要Adobe Acrobat Pro DC（32位）来执行转换。
 >* PDF Generator仅支持所支持的操作系统和应用程序的英语、法语、德语和日语版本。
 >* PDF Generator需要Adobe Acrobat Pro DC（32位）来执行转换。
 >* PDF Generator仅支持32位版本的Microsoft® Office Professional Plus以及转换所需的其他软件。
