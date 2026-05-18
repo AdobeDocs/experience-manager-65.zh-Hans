@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1290'
+source-wordcount: '1306'
 ht-degree: 0%
 
 ---
@@ -178,7 +178,7 @@ ht-degree: 0%
 
 * `Review Path`
 
-  输入或浏览到`reviews`组件所放置的实例，这样您便可以总结出，例如，如果添加到[Geometrixx参与网站](getting-started.md)的网页，路径将为：
+  输入或浏览到`reviews`组件所放置的实例，以便进行总结，例如，如果添加到[Geometrixx Engage网站](getting-started.md)的网页，路径将为：
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
@@ -200,13 +200,13 @@ ht-degree: 0%
 
 * **[!UICONTROL 评论资源类型]**
 
-  导航到/apps中扩展`comment`组件的resourceType（单个注释）。 例如：`/apps/social/commons/components/hbs/comments/comment`。
+  导航到/apps中扩展`comment`组件的resourceType（单个注释）。 例如 `/apps/social/commons/components/hbs/comments/comment`。
 
   此资源标识访客发表评论时创建的UGC的resourceType。
 
 * **[!UICONTROL 投票资源类型]**
 
-  导航到/apps中扩展`voting`组件的resourceType。 例如：`/apps/social/components/hbs/voting`。
+  导航到/apps中扩展`voting`组件的resourceType。 例如 `/apps/social/components/hbs/voting`。
 
   此资源标识访客发表投票时创建的UGC的资源类型。
 
@@ -224,7 +224,7 @@ ht-degree: 0%
 
 当网站访客登录时，根据配置，他们可能：
 
-* Post新审核
+* 发布新审核
 * 编辑他们自己的审核
 * 删除他们自己的审核
 * 标记其他人的审核评论
