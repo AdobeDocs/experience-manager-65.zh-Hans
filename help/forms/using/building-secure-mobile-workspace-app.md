@@ -1,5 +1,5 @@
 ---
-title: 为iOS构建安全的AEM Forms应用程序
+title: 构建适用于 iOS 的安全 AEM Forms 应用程序
 description: 了解如何通过存档Xcode项目为iOS构建安全的AEM Forms应用程序。 这将创建安装程序（.ipa文件）和属性列表（.plist文件）文件。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,18 @@ exl-id: 12cc2027-ae94-40c3-a7d1-553469426114
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '360'
-ht-degree: 0%
+source-wordcount: '404'
+ht-degree: 4%
 
 ---
 
-# 为iOS构建安全的AEM Forms应用程序 {#building-a-secure-aem-forms-app-for-ios}
+# 构建适用于 iOS 的安全 AEM Forms 应用程序 {#building-a-secure-aem-forms-app-for-ios}
+
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 您需要将AEM Forms应用程序的Xcode项目存档，以生成安装程序（.ipa文件）和属性列表（.plist文件）文件。 属性列表文件包含内部托管应用程序的配置信息，例如应用程序的名称和托管位置。 有关属性列表文件的详细信息，请参阅[关于信息属性列表文件](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)。
 
@@ -38,5 +42,5 @@ ht-degree: 0%
 1. 在&#x200B;**[!UICONTROL 生成设置]**&#x200B;选项卡中，单击&#x200B;**[!UICONTROL 全部]**，然后单击&#x200B;**[!UICONTROL 组合]**。
 1. 从&#x200B;**[!UICONTROL 设置]**&#x200B;列表中，展开&#x200B;**[!UICONTROL 代码签名]**。
 1. 对于&#x200B;**[!UICONTROL 代码签名标识]**，请选择适当的签名。 确保为&#x200B;**[!UICONTROL Debug]**、**[!UICONTROL Release]**&#x200B;和&#x200B;**[!UICONTROL 任何iOS SDK]**&#x200B;选择相同的签名。
-1. 在&#x200B;**[!UICONTROL PROJECT]**&#x200B;下，选择&#x200B;**[!UICONTROL AEM Forms]**，并确保为&#x200B;**[!UICONTROL 代码签名标识]**、**[!UICONTROL Debug]**、**[!UICONTROL 发行版]**&#x200B;和&#x200B;**[!UICONTROL 任何iOS SDK]**&#x200B;选择适当的签名。
+1. 在&#x200B;**[!UICONTROL PROJECT]**&#x200B;下，选择&#x200B;**[!UICONTROL AEM Forms]**，并确保为&#x200B;**[!UICONTROL 代码签名标识]**、**[!UICONTROL Debug]**、**[!UICONTROL Release]**&#x200B;和&#x200B;**[!UICONTROL 任何iOS SDK]**&#x200B;选择适当的签名。
 1. 构建和分发AEM Forms应用程序。 有关构建和分发AEM Forms应用程序的详细说明，请参阅[构建AEM Forms应用程序的安装程序](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)。

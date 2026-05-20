@@ -9,14 +9,18 @@ exl-id: d19cba33-0646-40d4-b4a3-b28d6db4a1f3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '157'
+source-wordcount: '171'
 ht-degree: 0%
 
 ---
 
 # 登录到Adobe Experience Manager Forms应用程序{#logging-in-to-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 启动Adobe Experience Manager (AEM) Forms应用程序时，必须首先提供登录凭据和AEM Forms服务器URL。
 

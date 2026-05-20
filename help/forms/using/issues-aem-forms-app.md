@@ -1,5 +1,5 @@
 ---
-title: AEM Forms应用程序疑难解答
+title: AEM Forms 应用程序故障排查
 description: 了解AEM Forms应用程序的常见问题以及如何对其进行故障诊断。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,21 +8,25 @@ exl-id: caec5fc3-db52-4bf5-8eb2-17e5189ab819
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 0%
+source-wordcount: '697'
+ht-degree: 2%
 
 ---
 
-# AEM Forms应用程序疑难解答 {#troubleshoot-aem-forms-app}
+# AEM Forms 应用程序故障排查 {#troubleshoot-aem-forms-app}
+
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 本文介绍了构建AEM Forms应用程序时可能显示的错误消息以及解决这些消息的步骤。
 
 本文中的部分包括：
 
 * [iOS用户的附件丢失](/help/forms/using/issues-aem-forms-app.md#attachment-loss-for-ios-users)
-* [Workspace用户提交的HTML5表单草稿在门户上不可见](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
+* [工作区用户提交的HTML5表单草稿在门户上不可见](/help/forms/using/issues-aem-forms-app.md#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal)
 * [无法在AEM Forms应用程序中加载HTML5表单（未缓存）](/help/forms/using/issues-aem-forms-app.md#html-forms-not-cached-fail-to-load-in-aem-forms-app)
 * [AEM Forms无法在Windows上同步](/help/forms/using/issues-aem-forms-app.md#aem-forms-do-not-sync-on-windows)
 * [不支持的Gradle版本](/help/forms/using/issues-aem-forms-app.md#unsupported-version-of-gradle)
@@ -40,9 +44,9 @@ ht-degree: 0%
 
 1. 单击&#x200B;**保存**。
 
-## Workspace用户提交的HTML5表单草稿在门户上不可见 {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
+## 工作区用户提交的HTML5表单草稿在门户上不可见 {#html-form-drafts-submitted-by-workspace-users-are-not-visible-on-the-portal}
 
-对于在AEM Forms应用程序中通过&#x200B;**另存为草稿** HTML渲染配置文件启用的HTML5表单，工作区用户看不到保存的草稿。 要查看由工作区用户在门户上提交的HTML5表单的已保存草稿，请执行以下步骤：
+对于在AEM Forms应用程序中通过&#x200B;**另存为草稿** HTML渲染配置文件启用的HTML5表单，工作区用户看不到保存的草稿。 要查看工作区用户在门户上提交的HTML5表单的已保存草稿，请执行以下步骤：
 
 1. 打开CRXDE并使用管理员凭据登录。
 
@@ -60,7 +64,7 @@ ht-degree: 0%
 
 ## 无法在AEM Forms应用程序中加载HTML5表单（未缓存） {#html-forms-not-cached-fail-to-load-in-aem-forms-app}
 
-当AEM Forms应用程序连接到较低版本的AEM Forms服务器时，无法在AEM Forms应用程序中加载非缓存的HTML5表单。
+当AEM Forms应用程序连接到旧版AEM Forms服务器时，未缓存的HTML5表单无法在AEM Forms应用程序中加载。
 
 执行以下步骤来解决问题：
 
@@ -99,7 +103,7 @@ ht-degree: 0%
 
 **分辨率：**&#x200B;打开&#x200B;**Gradle脚本** > **gradle-wrapper.properties**&#x200B;文件并编辑&#x200B;**distributionUrl**&#x200B;属性。
 
-例如，Android Studio控制台建议将Gradle版本降级为3.5。编辑&#x200B;**的** distributionUrl **中的版本。gradle-wrapper.properties**&#x200B;文件。
+例如，Android Studio控制台建议将Gradle版本降级为3.5。 编辑&#x200B;**的** distributionUrl **中的版本。gradle-wrapper.properties**&#x200B;文件。
 
 再次选择&#x200B;**生成** > **生成APK**&#x200B;以解决错误并生成.apk文件。
 

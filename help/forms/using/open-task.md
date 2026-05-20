@@ -8,16 +8,20 @@ exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 0%
+source-wordcount: '296'
+ht-degree: 2%
 
 ---
 
 # 打开任务 {#opening-a-task}
 
-如果Adobe Experience Manager (AEM) Forms应用程序与AEM Forms服务器同步，则您可以处理分配给您的任务。 任务是在Workbench或AEM工作流编辑器中定义的工作流步骤。
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
+
+如果Adobe Experience Manager (AEM) Forms应用程序与AEM Forms服务器同步，则您可以处理分配给您的任务。 任务是Workbench或AEM工作流编辑器中定义的工作流步骤。
 
 其他表单在“草稿”选项卡中另存为草稿。 请参阅[保存草稿](/help/forms/using/save-as-draft.md)。
 

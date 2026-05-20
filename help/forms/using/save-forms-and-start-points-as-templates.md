@@ -1,5 +1,5 @@
 ---
-title: 将表单另存为模板
+title: 将表单保存为模板
 description: 了解如何从包含重复所需数据的表单创建模板。
 contentOwner: khsingh
 content-type: reference
@@ -9,14 +9,18 @@ exl-id: b97175fd-cc3d-457a-af11-1f8c83192eb7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '326'
-ht-degree: 0%
+source-wordcount: '340'
+ht-degree: 2%
 
 ---
 
-# 将表单另存为模板 {#save-forms-as-templates}
+# 将表单保存为模板 {#save-forms-as-templates}
+
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 有时，当用户填写表单时，对几个字段的输入将保持不变。 对于这种情况，您可以填写每个实例中需要相同值的字段，并将表单或草稿另存为模板。 现在，每次创建模板的实例时，指定的字段都已填充了模板中指定的值。 这有助于节省填写表单所需的时间和精力。
 

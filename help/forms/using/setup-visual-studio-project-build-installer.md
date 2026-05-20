@@ -1,5 +1,5 @@
 ---
-title: 设置Visual Studio项目并构建Windows应用程序
+title: 设置 Visual Studio 项目并构建 Windows 应用程序
 description: 了解如何设置Visual Studio项目以构建AEM Forms Windows移动设备应用程序。
 topic-tags: forms-app
 docset: aem65
@@ -7,27 +7,31 @@ exl-id: ae7340c8-38cc-4b2b-ba17-22011471fd7d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 2%
+source-wordcount: '977'
+ht-degree: 5%
 
 ---
 
-# 设置Visual Studio项目并构建Windows应用程序{#set-up-the-visual-studio-project-and-build-the-windows-app}
+# 设置 Visual Studio 项目并构建 Windows 应用程序{#set-up-the-visual-studio-project-and-build-the-windows-app}
+
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 AEM Forms提供了AEM Forms应用程序的完整源代码。 源包含用于构建自定义工作区应用程序的所有组件。 源代码存档`adobe-lc-mobileworkspace-src-<version>.zip`是Software Distribution上`adobe-aemfd-forms-app-src-pkg-<version>.zip`包的一部分。
 
 要获取AEM Forms应用程序源，请执行以下步骤：
 
-1. 打开 [Software Distribution](https://experience.adobe.com/downloads)。您需要 Adobe ID 才能登录 Software Distribution。
+1. 打开 [Software Distribution](https://experience.adobe.com/downloads)。 您需要 Adobe ID 才能登录 Software Distribution。
 1. 选择标题菜单中的&#x200B;**[!UICONTROL Adobe Experience Manager]**。
 1. 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;部分中：
    1. 从&#x200B;**[!UICONTROL 解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Forms]**。
    2. 选择包的版本和类型。 您还可以使用&#x200B;**[!UICONTROL 搜索下载]**&#x200B;选项来筛选结果。
 1. 选择适用于您的操作系统的包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
 1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
-1. 选择包并单击&#x200B;**[!UICONTROL 安装]**。
+1. 选择该包并点击&#x200B;**[!UICONTROL 安装]**。
 
 1. 要下载源代码存档，请在浏览器中打开`https://<server>:<port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-<version>.zip`。\
    源包将在您的设备上下载。

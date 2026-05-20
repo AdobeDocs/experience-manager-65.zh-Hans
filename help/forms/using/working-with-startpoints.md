@@ -9,15 +9,19 @@ exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: dd8748cee7a4b3ba91795a51928bd8590c47ef27
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 0%
+source-wordcount: '249'
+ht-degree: 2%
 
 ---
 
 
 # 使用起点{#working-with-startpoints}
+
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 起点调用在Workbench中创建的进程。 它与表单相关联，该表单在提交表单时调用该流程。
 
@@ -25,7 +29,7 @@ ht-degree: 0%
 >
 >在引用此概念时，术语起点、开始过程和形式可互换使用。
 
-要从Adobe Experience Manager (AEM) Forms应用程序启动进程，您的进程必须具有类型为&#x200B;**Workspace**&#x200B;的起点。 此外，必须为起点选择&#x200B;**[!UICONTROL 在移动设备Workspace中可见]**&#x200B;选项。
+要从Adobe Experience Manager (AEM) Forms应用程序启动流程，您的流程中必须具有&#x200B;**Workspace**&#x200B;类型的起点。 此外，必须为起点选择&#x200B;**[!UICONTROL 在移动设备Workspace中可见]**&#x200B;选项。
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
