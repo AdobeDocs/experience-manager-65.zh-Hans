@@ -1,5 +1,5 @@
 ---
-title: 手势自定义
+title: 自定义手势
 description: 了解如何在AEM Forms应用程序上自定义手势。 您可以自定义手势，以提供与应用程序交互的不同方法。
 contentOwner: robhagat
 content-type: reference
@@ -9,14 +9,18 @@ exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '309'
-ht-degree: 0%
+source-wordcount: '328'
+ht-degree: 1%
 
 ---
 
-# 手势自定义 {#gesture-customization}
+# 自定义手势 {#gesture-customization}
+
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 您可以自定义AEM Forms应用程序的手势，以便提供与该应用程序交互的不同方法。 例如，您可以添加新的手势以打开或关闭任务或起点。
 
@@ -46,7 +50,7 @@ ht-degree: 0%
 
    `"EventName Selector": "Function"`
 
-   当您在`Selector`指定的HTML元素上触发名为`EventName`的JavaScript事件时，将调用`Function`。
+   当您在`Selector`指定的JavaScript元素上触发名为`EventName`的HTML事件时，将调用`Function`。
 
 1. 查找
 
@@ -71,4 +75,4 @@ ht-degree: 0%
 1. 保存并关闭`task.js`文件。
 1. 构建并运行AEM Forms应用程序。 现在，您可以使用左滑动和右滑动来打开。
 
-同样，您可以更改其他视图中的手势、HTML元素和函数的各种组合。
+同样，您可以对其他视图中的各种手势、HTML元素和函数组合进行更改。

@@ -1,5 +1,5 @@
 ---
-title: 品牌化自定义
+title: 自定义品牌
 description: 自定义应用程序图标、应用程序名称、启动图像和登录页面，为AEM Forms应用程序提供独特的组织特定外观。
 contentOwner: robhagat
 content-type: reference
@@ -9,14 +9,18 @@ exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '910'
 ht-degree: 1%
 
 ---
 
-# 品牌化自定义 {#branding-customization}
+# 自定义品牌 {#branding-customization}
+
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 您可以自定义应用程序图标、应用程序名称、启动图像和登录页面，以便为AEM Forms应用程序提供独特的组织特定外观。 例如，您可以更改图像以使用您组织的徽标。 AEM Forms应用程序支持以下自定义设置：
 

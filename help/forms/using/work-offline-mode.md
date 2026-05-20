@@ -1,5 +1,5 @@
 ---
-title: 在脱机模式下工作
+title: 在离线模式下工作
 description: 在AEM Forms网络范围之外或以完全脱机模式使移动设备脱机，然后使用AEM Forms应用程序
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,18 @@ exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '532'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
-# 在脱机模式下工作 {#working-in-the-offline-mode}
+# 在离线模式下工作 {#working-in-the-offline-mode}
+
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
 
 利用AEM Forms应用程序的离线模式，您可以无缝地工作，即使应用程序离线也是如此。 您可以打开、更新和提交表单，而无需任何网络连接。
 
@@ -46,6 +50,6 @@ AEM Forms app离线服务标识表单中使用的资源。 AEM Forms应用程序
    * **清除缓存**：清除表单依赖项的服务器端缓存。
    * **重置配置**：重置AEM Forms app脱机配置。
    * **缓存有效期**：指定服务器端脱机缓存的有效期。
-   * **资源观察路径**：指定脱机服务监视资源更改的路径。 如果在指定的路径中发生任何更改，则会更新所有依赖表单的离线缓存。 例如：`/etc/clientlibs/fd,/content/dam/images`。
+   * **资源观察路径**：指定脱机服务监视资源更改的路径。 如果在指定的路径中发生任何更改，则会更新所有依赖表单的离线缓存。 例如 `/etc/clientlibs/fd,/content/dam/images`。
 
 1. 在&#x200B;**手动资源缓存**&#x200B;选项卡中，指定表单依赖项脱机服务无法识别。 您可以指定资源，例如从JavaScript中加载的图像。 AEM Forms应用程序也将以离线模式下载这些资源。

@@ -9,16 +9,20 @@ exl-id: 82282e2d-63a1-47e9-b2ec-f50a4bd32bd3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
 workflow-type: tm+mt
-source-wordcount: '562'
-ht-degree: 0%
+source-wordcount: '583'
+ht-degree: 1%
 
 ---
 
 # 添加附件{#adding-attachments}
 
-## 在与AEM Forms Workflow Server (JEE上的AEM Forms)同步的表单中添加附件 {#adding-annotations}
+>[!NOTE]
+>
+>AEM Forms应用程序当前已被弃用。 如有疑问或需要帮助，请联系[aemformsapp-android@adobe.com](mailto:aemformsapp-android@adobe.com)。
+
+## 在与AEM Forms Workflow Server （JEE上的AEM Forms）同步的表单中添加附件 {#adding-annotations}
 
 通过AEM Forms应用程序，您可以将图像、手写笔记和文本注释附加到与AEM Forms JEE服务器同步的表单中。 如果表单是从AEM Forms Workflow服务器加载的，则附件会添加到表单中。 您可以选择附件按钮![attachments-app](assets/attachments-app.png)以一起查看表单中的所有附件。 红色通知指定表单中的附件数量。 如果表单中没有附件，您将看不到红色通知按钮。 如果表单中没有附件，则当您选择附件按钮![attch](assets/attch.png)时，您将获得附加照片或涂鸦的选项。
 
@@ -71,7 +75,7 @@ ht-degree: 0%
 
    ![涂鸦界面](assets/scribble-ui.png)
 
-   涂鸦
+   涂写
 
    您可以在Scribble界面中使用以下选项：
 
@@ -82,7 +86,7 @@ ht-degree: 0%
 
    ![AEM Forms应用程序中的键盘涂鸦](assets/keyboard-inapp.png)
 
-## 表单中的附件与不具有AEM Forms Workflow (OSGi上的AEM Forms)的AEM Forms服务器同步 {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
+## 表单中的附件与不具有AEM Forms Workflow （OSGi上的AEM Forms）的AEM Forms服务器同步 {#attachments-in-forms-synced-with-the-aem-forms-servers-without-aem-forms-workflow-aem-forms-on-osgi}
 
 与AEM Forms OSGi服务器同步的移动表单附件与AEM Forms JEE服务器的工作方式类似。
 
