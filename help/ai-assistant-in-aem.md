@@ -5,10 +5,17 @@ solution: Experience Manager, Experience Manager 6.5
 feature: Authoring, AI Assistant, AI Tools
 role: Admin, Developer, User
 exl-id: 3b4a484e-55b5-4924-82dd-56735f6ed46d
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+autotag-review: '2026-05-18T18:36:07.915Z'
+TQID: 'https://experienceleague.adobe.com/dlFmrtn05S20z96wtAfkpGliITeVJhVkofqPix6QMxk'
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2: id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: bce87dde-a4ab-44c9-8a18-ad66e4ddb377id: c1579802-ddd4-4214-8a91-97b2066abe11id: c7d04a2c-412a-4c9d-9d7a-4456eaa5adebid: d095671a-1355-40aa-8b5f-06c33c68080bid: e1e0219c-f879-479f-8427-888ed2a6e9c2id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '1379'
-ht-degree: 4%
+source-wordcount: 1379
+ht-degree: 93%
 
 ---
 
@@ -16,13 +23,13 @@ ht-degree: 4%
 
 >[!IMPORTANT]
 >
->未使用AEM/Experience Hub的AEM 6.5和Cloud Manager 6.5 LTS客户必须联系其Adobe客户成功工程师以请求访问AI助手。
+>不使用 Cloud Manager/Experience Hub 的 AEM 6.5 和 AEM 6.5 LTS 客户必须联系其 Adobe 客户成功工程师，获取 AI 助手访问权限。
 
-AEM 6.5/AEM 6.5 LTS中的AI Assistant提供了一个对话界面，旨在简化为Adobe Experience Manager相关查询查找答案的过程。 它可以帮助您即时获得AEM产品相关问题的答案（*可供所有用户使用*），并自动创建支持工单（*可供支持管理员使用*）。
+AEM 6.5/AEM 6.5 LTS中的AI Assistant提供了一个对话界面，旨在简化为Adobe Experience Manager相关查询查找答案的过程。 它可以帮助您立即获得与 AEM 产品相关的问题的回答（*提供给所有用户使用*），可自动创建支持工单（*提供给支持管理员使用*）。
 
-AI Assistant支持AEM as a Cloud Service，包括以下解决方案：
+AI 助手支持 AEM as a Cloud Service，包括以下解决方案：
 
-* Experience Hub概述页面
+* Experience Hub 概述页面
 * Edge Delivery Services
 * Sites
 * Assets
@@ -33,87 +40,87 @@ AI Assistant支持AEM as a Cloud Service，包括以下解决方案：
 
 它直接嵌入在 AEM 中，可从 AEM Experience Hub、Cloud Manager 和 Author UI 访问。
 
-以下时长3分钟、时长25秒的视频分步介绍了AEM中的AI助手。
+以下这段时长 3 分 25 秒的视频分步介绍了 AEM 中的 AI 助手。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475368/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
-## 访问AEM中的AI助手{#get-access}
+## 访问 AEM 中的 AI 助手{#get-access}
 
-要访问AEM中的AI助手，客户必须具备以下功能：
+要获得 AEM 中 AI 助手的访问权限，客户必须：
 
-* 在AEM中使用AI助手获取产品知识的权限。 此权限允许您在AI Assistant聊天中询问产品相关问题。 必须启用此权限。
-* 打开支持票证的权限，该权限需要&#x200B;**支持管理员**&#x200B;角色。
+* 有权使用 AEM 中的 AI 助手获取产品知识。 此权限允许您在 AI 助手聊天中询问产品相关的问题。 此权限必须启用。
+* 有权打开支持工单，这需要&#x200B;**支持管理员**&#x200B;的角色。
 
 >[!NOTE]
 >
->AEM中的AI助手请求通过Adobe Identity Management服务(IMS)进行身份验证。 有关详细信息，请参阅[Adobe Identity Management服务概述](https://www.adobe.com/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)。
+>AEM 中的 AI 助手请求通过 Adobe Identity Management Services (IMS) 进行身份验证。 有关详细信息，请参阅 [Adobe Identity Management Services 概述](https://www.adobe.com/cn/content/dam/cc/en/trust-center/ungated/whitepapers/corporate/adobe-identity-management-services-security-overview.pdf)。
 
-**要访问AEM中的AI助手：**
+**要访问 AEM 中的 AI 助手：**
 
-1. 客户必须签订附加协议才能访问Adobe Experience Manager中的大多数AI支持的和代理功能。 有关详细信息，请与Adobe代表联系。
+1. 客户必须另外签订协议才能访问 Adobe Experience Manager 中的大多数 AI 驱动的代理式功能。 请联系您的 Adobe 代表，获取更多详情。
 
-1. 要在AEM中使用AI助手，必须获得通过AI助手访问产品知识的权限。 默认情况下，此权限处于打开状态。
+1. 要使用 AEM 中的 AI 助手，必须具有通过 AI 助手访问产品知识的权限。 此权限在默认情况下已开启。
 
-   如果您希望控制谁可以访问产品知识，请从与Adobe ID关联的电子邮件地址向[aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com)发送电子邮件。 Adobe可以启用用户级别的访问控制。 启用后，您的管理员可以按照[在AEM中配置AI助手](/help/ai-assistant-in-aem-admin.md)中的步骤授予用户级访问权限。
+   如果您希望控制谁可以访问产品知识，请使用与您的 Adobe ID 相关联的电子邮件地址给 [aemaiassistant@adobe.com](mailto:aemaiassistant@adobe.com) 发送电子邮件。 Adobe 可以启用用户级访问控制。 启用后，您的管理员可以按照[配置 AEM 中的 AI 助手](/help/ai-assistant-in-aem-admin.md)中说明的步骤授予用户级访问权限。
 
 
 ## 范围 {#scope}
 
-AEM中AI助理的当前范围侧重于解决AEMr as a Cloud Service的产品知识问题。 该范围包括对关键领域的全面支持。<!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
+AEM中AI助理的当前范围侧重于解决AEMr as a Cloud Service的产品知识问题。 此范围包括了对关键领域的全面支持。<!--, such as Sites, Assets, Forms, Edge Delivery Services, Dynamic Media, and Cloud Manager. -->
 
-* **表面**：在AEM Experience Hub、创作UI、Cloud Manager中可用。
-* **功能**：产品知识以及故障排除和指导的第一站，支持票证的自动创建和查找。
-* **值**：节省时间，加快学习并加快价值实现，减少手动创建支持票证的需求，并提高创建支持票证的效率。
+* **表面**：在 AEM Experience Hub、作者 UI、Cloud Manager 中可用。
+* **功能**：提供产品知识，是疑难解答和指导的第一站，自动创建支持工单和查找。
+* **价值**：节省时间，加快学习，缩短价值实现时间，减少手动创建支持工单的需求，提高创建支持工单的效率。
 
 ## 隐私、安全和治理{#privacy-security-governance}
 
-AEM中的AI助手在设计中特别强调隐私、安全和治理。
+AEM 中的 AI 助手的设计特别强调隐私、安全和治理。
 
-本文概述了AEM中的AI助手可期待的以信任为中心的功能：
+本文概述了您可以从 AEM 中的 AI 助手获得的特别重视可信度的各种功能：
 
-* AEM中的AI助手不使用任何个人数据，包括培训目的。
-* AEM中的AI助手无法访问消费者数据。
-* 需要明确权限才能与AEM中的AI助手交互。
-* 不与其他客户共享用户提供的提示（问题、查询等）。
+* AEM 中的 AI 助手不使用，也不会以训练为目的使用任何个人数据。
+* AEM 中的 AI 助手不会访问消费者数据。
+* 需要明确的权限才能与 AEM 中的 AI 助手交互。
+* 用户提供的提示词（问题、查询等）不会与其他客户共享。
 
 <!-- See also [Security at Adobe whitepaper](). NEED ACTIVE LINK FROM ADRIAN NICOLAE TANASE. CURRENTLY 404. -->
 
-## 了解AEM中的AI助手，了解产品知识和自动创建支持工单 {#ai-prod-insights}
+## 了解 AEM 中的 AI 助手提供的产品知识和自动创建支持工单的功能 {#ai-prod-insights}
 
-产品知识包含从Adobe Experience League文档衍生的概念和主题。 这些问题可划分为以下子组：
+产品知识包含从 Adobe Experience League 文档派生的各种概念和主题。 这些问题可分类为以下几个子组：
 
 
-| 产品知识 | 可供所有用户使用<br>示例 |
+| 产品知识 | 提供给所有用户使用<br>示例 |
 | :--- | :--- |
-| 点式学习 | <ul><li>什么是通用编辑器？</li><li>如何在Cloud Manager中创建程序？</li></ul> |
-| 打开发现 | <ul><li>如何使用通用编辑器？</li><li>是否有办法将内容从一个环境复制到另一个环境？</li></ul> |
-| 疑难解答 | <ul><li>为何无法访问通用编辑器？</li><li>我的管道为什么会失败？</li></ul> |
-| **支持票证创建** | **仅支持管理员&#x200B;**<br>**示例** |
-| 自动创建支持工单，以捕获AI Assistant聊天历史记录和上下文 | <ul><li>为我创建支持工单。</li></ul> |
-| 检索支持票证的状态 | <ul><li>显示我已打开的所有支持票证。</li><li>显示票证“E-----------”的状态</li></ul> |
+| 有针对性的学习 | <ul><li>什么是通用编辑器？</li><li>如何在 Cloud Manager 中创建程序？</li></ul> |
+| 打开发现 | <ul><li>如何使用通用编辑器？</li><li>是否可以将内容从一个环境复制到另一个环境？</li></ul> |
+| 疑难解答 | <ul><li>为什么无法访问通用编辑器？</li><li>我的管道为什么会失败？</li></ul> |
+| **创建支持工单** | **仅提供给支持管理员使用&#x200B;**<br>**示例** |
+| 自动创建支持工单，捕获 AI 助手聊天记录和上下文 | <ul><li>为我创建一个支持工单。</li></ul> |
+| 检索支持工单的状态 | <ul><li>显示我已打开的所有支持工单。</li><li>显示工单“E-----------”的状态</li></ul> |
 
 {style="table-layout:auto"}
 
 
-## 如何提出有效的问题 {#ai-craft-questions}
+## 如何表述有效的问题 {#ai-craft-questions}
 
-要从AEM中的AI助手获得最准确的响应，请务必用清楚明了的上下文表述您的问题。 使用以下提示来确保您的查询清晰且结构合理：
+要通过 AEM 中的 AI 助手获得最准确的回答，清晰地表述您的问题并提供上下文，这一点十分重要。 采用以下建议可确保您的查询语句清晰、有条有理：
 
-* 以简洁明了的方式清楚地陈述您的任务或问题。
-* 避免使用含糊不清的措辞或过于复杂的语法，以增进理解。
-* 包含有关您的任务或问题的相关上下文，因为此方法有助于AEM中的AI助手提供更精确且相关的答案。
-例如，在提示符下，为您正在使用的AEM解决方案命名（Sites、Assets、Dynamic Media、Edge Delivery Services、Cloud Manager或Forms）会很有帮助。
+* 以简洁明了的方式清晰地表述您的任务或问题。
+* 避免使用含糊不清的词语或过于复杂的语法，使表述更加易于理解。
+* 提供有关您的任务或问题的相关上下文，因为这可以帮助 AEM 中的 AI 助手提供更准确、更相关的回答。
+例如，在提示词中说明您正在使用哪种 AEM 解决方案（Sites、Assets、Dynamic Media、Edge Delivery Services、Cloud Manager 或 Forms）会很有帮助。
 
-### 不支持的问题的示例 {#ai-unsupported-questions}
+### 不受支持的问题示例 {#ai-unsupported-questions}
 
 | 区域 | 示例 |
 | --- | --- |
-| 运营见解 | <ul><li>我的租户中有多少个开发环境？</li><li>谁启动了最后一个生产管道？</li></ul> |
-| 疑难解答 | <ul><li>为什么我的生产管道失败？</li></ul> |
-| 任务和自动化 | <ul><li>从开发分支为我配置代码质量管道。</li></ul> |
+| 运营洞察 | <ul><li>我的租户中有多少个开发环境？</li><li>谁启动了最后一个生产管道？</li></ul> |
+| 疑难解答 | <ul><li>为什么我的生产管道失败了？</li></ul> |
+| 任务和自动化 | <ul><li>为我从开发分支开始配置一个代码质量管道。</li></ul> |
 
 
-## 在AEM中使用AI助手 {#ai-use}
+## 使用 AEM 中的 AI 助手 {#ai-use}
 
 <!--
 UNHIDE AFTER BETA or at GA
@@ -129,76 +136,76 @@ Administrators should keep normal Cloud Manager governance in mind. Hold product
 
 ![Technical support ticket creation in AI Assistant in AEM of the Admin Console](/help/implementing/cloud-manager/assets/ai-assistant-admin-console-support-ticket.png)
 
-For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/accessing/overview). 
+For a guided walkthrough of setting up users and groups in AEM as a Cloud Service, see [Configuring access to AEM as a Cloud Service ](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/accessing/overview). 
 
 See also [Custom Permissions](/help/implementing/cloud-manager/custom-permissions.md).
 -->
 
 
-### 在AEM对话中启动AI助手
+### 开始一个 AEM 中的 AI 助手对话
 
-您可以在AEM中重置AI助手，并在要更改主题时开始新对话。 在排除查询失败或提供错误信息时，此功能特别有用。
+如果您想更改主题，可以重置 AEM 中的 AI 助手，开始一个新的对话。 如果您在查询失败或提供错误信息的情况下想修正错误，这个功能就特别有用。
 
-**在AEM对话中启动AI助手：**
+**要开始一个 AEM 中的 AI 助手对话：**
 
-1. 在AEM用户界面的右上角（从Cloud Manager页面或AEM环境的创作实例）附近，单击&#x200B;**AI助手**&#x200B;图标。
+1. 在 AEM 用户界面（从 Cloud Manager 页面或者 AEM 环境的作者实例中）的右上角附近，点击 **AI 助手**&#x200B;图标。
 
-   工具栏上的![AI助手图标](/help/assets/assets-ai/ai-assistant-icon.png)
+   ![工具栏中的 AI 助手图标](/help/assets/assets-ai/ai-assistant-icon.png)
 
-1. 在底部附近的&#x200B;**AI助手**&#x200B;面板文本框中，键入您的问题或提示，然后按`Enter`或单击![发送图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg)。
+1. 在底部的 **AI 助手**&#x200B;面板文本框中，输入您的问题或提示词，然后按下 `Enter` 或点击![发送图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Send_18_N.svg)。
 
    >[!NOTE]
    >
-   >个人数据不应包含在您的输入中，因为使用此工具没有必要。
+   >不要在您的输入中提供个人数据，因为使用这个工具不需要个人数据。
 
-   ![AI助手面板底部的文本框](/help/assets/assets-ai/ai-assistant-prompt-text-box.png)
+   ![AI 助手面板底部的文本框](/help/assets/assets-ai/ai-assistant-prompt-text-box.png)
 
-1. 要开始新对话（新主题或主题中的更改），请单击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **开始新对话**。
+1. 要开始一个新的对话（新主题或更改主题），请点击![更多图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) > **开始新对话**。
 
-   ![从省略号图标在AI助手中开始新对话](/help/assets/assets-ai/ai-assistant-start-new-conversation.png)
+   ![通过省略号图标开始 AI 助手中的新对话](/help/assets/assets-ai/ai-assistant-start-new-conversation.png)
 
-### 按类别发现提示
+### 按类别发现提示词
 
-AEM中的AI助手包括可发现功能，可帮助您探索支持的主题和类别。
+AEM 中的 AI 助手包括一个可发现性功能，帮助您探索受支持的主题和类别。
 
-**要按类别发现提示：**
+**要按类别发现提示词：**
 
-1. 在AI助手面板中，单击![学习图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)以打开提示发现面板。
+1. 在 AI 助手面板中，点击![学习图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)，打开提示词发现面板。
 
-   ![允许您在AI助手中按类别浏览提示的面板](/help/assets/assets-ai/ai-assistant-discover-prompts.png)
-   显示AI助手中的提示类别的&#x200B;*面板。*
+   ![面板允许您在 AI 助手中按类别浏览提示词](/help/assets/assets-ai/ai-assistant-discover-prompts.png)
+   *面板中显示 AI 助手中的提示词类别。*
 
-1. 选择一个类别以查看相关提示的列表。
-1. 选择提示以查看AI助手可以回答的问题类型的示例。
+1. 选择一个类别，查看相关提示词的列表。
+1. 选择一个提示词，查看 AI 助手可以回答的各类问题的示例。
 
-1. 若要隐藏提示发现面板，请再次单击![学习图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)。
+1. 如要隐藏提示词发现面板，再次点击![学习图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Learn_18_N.svg)。
 
-### 在AEM中分享您对AI助手的反馈
+### 分享您关于 AEM 中的 AI 助手的反馈
 
-您的输入可帮助Adobe改进AI Assistant以提高性能和准确性。
+您的输入可帮助 Adobe 改进 AI 助手，提高其性能和准确性。
 
-通过以下选项，分享您对AEM中AI助手体验的反馈：
+通过以下选项分享您关于 AEM 中 AI 助手体验的反馈：
 
-![竖起拇指、竖下拇指和标记图标](/help/assets/assets-ai/ai-assistant-feedback-icons.png)
+![点赞、点踩和旗帜图标](/help/assets/assets-ai/ai-assistant-feedback-icons.png)
 
 | 单击 | 描述 |
 | --- | --- |
-| ![竖起大拇指图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | 指出哪些方面进展顺利，并分享积极反馈。 |
-| ![拇指朝下缩进图示](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | 提供改进建议。 添加有关您的体验的特定评论，这些评论每天都会审核。 |
-| ![标记图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | 报告有关您在AEM中与AI助理交互的问题或提供详细反馈。 |
+| ![点赞图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbUpOutline_18_N.svg) | 表示哪些方面做得很好，并分享正面反馈。 |
+| ![点踩图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ThumbDownOutline_18_N.svg) | 提出改进建议。 添加关于您的体验的具体评论，这些评论每天都会审阅。 |
+| ![旗帜图标](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Flag_18_N.svg) | 报告有关您与 AEM 中的 AI 助手交互的问题或提供相关详细反馈。 |
 
-## 关于AEM中AI助理的常见问题解答 {#ai-faq}
+## 关于 AEM 中 AI 助手的常见问题解答 {#ai-faq}
 
-以下是有关AI Assistant的一些常见问题的答案：
+以下是关于 AI 助手的一些常见问题的解答：
 
-* **AEM中的AI助手实时提供信息吗？**\
-  不行。 AI Assistant从Adobe Experience League文档获取其内容。 对内容的更新可能需要一些时间才能反映在其响应中。
-* **AEM中的AI助手支持哪些Adobe应用程序？**\
+* **AEM 中的 AI 助手提供的是实时信息吗？**\
+  不行。 AI 助手从 Adobe Experience League 文档获取内容。 这个内容更新以后，可能需要一段时间才能在回答中反映出来。
+* **AEM 中的 AI 助手支持哪些 Adobe 应用程序？**\
   目前，AI Assistant支持AEM as a Cloud Service中的产品知识查询，包括Sites、Assets、Dynamic Media、Cloud Manager和Forms。
-* **AEM中的AI助手有哪些功能？**\
+* **AEM 中的 AI 助手有哪些功能？**\
   AEM中的AI助手可回答与Adobe产品知识相关的查询。
-* **AEM中的AI助手是否将个人信息用于训练数据？**\
-  不行。 AEM中的AI助手不使用个人信息进行培训。 避免与AEM中的AI助手共享您或其他人的个人信息，包括姓名或联系详情。
+* **AEM 中的 AI 助手是否会将个人信息用于训练数据？**\
+  不行。 AEM 中的 AI 助手不会将个人信息用于训练目的。 不用为 AEM 中的 AI 助手提供您或其他人的个人信息，包括姓名或联系方式。
 
 <!--
 IS THE DOCUMENTATION BELOW STILL NEEDED? IF SO, GO AHEAD AND DELETE THE COMMENT TAGS!!
