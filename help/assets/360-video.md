@@ -10,9 +10,18 @@ feature: 360 VR Video
 role: User, Admin
 exl-id: 0c2077a7-bd16-484b-980f-4d4a1a681491
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: beef1f49b7563d824357043f4ed78fdaf70015cd
+autotag-review: '2026-05-18T18:33:16.243Z'
+TQID: 'https://experienceleague.adobe.com/t3-PFZjnQPbbgNMFEjG7SDwG1Pt1TkvD9wNNYYgaEyE'
+product_v2:
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2:
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '1145'
+source-wordcount: 1191
 ht-degree: 0%
 
 ---
@@ -21,7 +30,7 @@ ht-degree: 0%
 
 360度视频同时记录每个方向的视图。 它们使用全方位相机或一系列相机来拍摄。 在平面显示器上播放期间，用户可控制视角；移动设备上的播放通常使用内置的陀螺仪控制。
 
-Dynamic Media - Scene7模式包括对360个视频资源交付的本机支持。 默认情况下，查看或播放无需其他配置。 您可以使用标准视频扩展名(如.mp4、.mkv和.mov)来交付360视频。 最常见的编解码器是H.264。
+Dynamic Media - Scene7模式包括对交付360个视频资产的本机支持。 默认情况下，查看或播放无需其他配置。 您可以使用标准视频扩展名(如.mp4、.mkv和.mov)来交付360视频。 最常见的编解码器是H.264。
 
 本节介绍如何使用360/VR视频查看器渲染等矩形视频，以获得房间、属性、位置、景观、医疗程序等的沉浸式观看体验。
 
@@ -38,7 +47,7 @@ Dynamic Media - Scene7模式包括对360个视频资源交付的本机支持。 
 
 ## 360/VR视频和Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
-您可以使用AdobePremier Pro查看和编辑360/VR素材。 例如，您可以在场景中正确放置徽标和文本，并应用专门为等矩形介质设计的效果和过渡。
+您可以使用Adobe Premier Pro查看和编辑360/VR素材。 例如，您可以在场景中正确放置徽标和文本，并应用专门为等矩形介质设计的效果和过渡。
 
 查看[编辑360/VR视频](https://helpx.adobe.com/cn/premiere-pro/how-to/edit-360-vr-video.html)。
 
@@ -61,7 +70,7 @@ Dynamic Media - Scene7模式包括对360个视频资源交付的本机支持。 
    * 理想情况下，原始的360视频内容最好具有以下分辨率之一：
 
       * 1080p - 1920 x 1080，称为全高清或全高清分辨率，或
-      * 2160p - 3840 x 2160，称为4k、UHD或Ultra高清分辨率。 这种大屏幕分辨率通常出现在高端电视机和计算机显示器上。 2160p分辨率通常称为“4k”，因为宽度接近4000像素。 换句话说，它提供的像素是1080p的四倍。
+      * 2160p - 3840 x 2160，称为4k、UHD或超高清分辨率。 这种大屏幕分辨率通常出现在高端电视机和计算机显示器上。 2160p分辨率通常称为“4k”，因为宽度接近4000像素。 换句话说，它提供的像素是1080p的四倍。
 
    * [创建具有更高演绎版的自定义自适应视频配置文件](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。 例如，创建包含以下三个设置的自适应视频配置文件：
 
@@ -71,7 +80,7 @@ Dynamic Media - Scene7模式包括对360个视频资源交付的本机支持。 
 
    * 在专门用于360个视频资产的文件夹中处理360个视频内容。
 
-   这种方法给最终用户的网络和CPU提出了更高的要求。
+   这种方法对网络和CPU的最终用户提出了更高的要求。
 
 1. [将视频上传到文件夹](/help/assets/managing-video-assets.md#upload-and-preview-video-assets)。
 
@@ -79,7 +88,7 @@ Dynamic Media - Scene7模式包括对360个视频资源交付的本机支持。 
 
 对于已上传的资产，要使其符合与360视频查看器一起使用的360视频资格，该资产的长宽比必须为2。
 
-默认情况下，如果视频的长宽比（宽度/高度）为2.0，则Experience Manager会将视频检测为“360”。如果您是管理员，可以通过在下面的CRXDE Lite中设置可选的`s7video360AR`属性来覆盖默认纵横比设置2：
+默认情况下，如果视频的长宽比（宽度/高度）为2.0，则Experience Manager会将视频检测为“360”。 如果您是管理员，可以通过在CRXDE Lite中设置可选的`s7video360AR`属性来覆盖默认纵横比设置2，具体方法如下：
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
@@ -134,9 +143,9 @@ Dynamic Media - Scene7模式包括对360个视频资源交付的本机支持。 
 
 ## 发布360视频 {#publishing-video}
 
-Publish 360视频，以便您使用。 发布360视频将激活URL和嵌入代码。 它还将360视频发布到Dynamic Media云，该云与CDN集成以实现可扩展的高性能交付。
+发布360视频以便使用。 发布360视频将激活URL和嵌入代码。 它还将360视频发布到Dynamic Media云，该云与CDN集成以实现可扩展的高性能交付。
 
-有关如何发布360视频的详细信息，请参阅[Publish Dynamic Media资源](/help/assets/publishing-dynamicmedia-assets.md)。
+有关如何发布360视频的详细信息，请参阅[发布Dynamic Media资源](/help/assets/publishing-dynamicmedia-assets.md)。
 另请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/embed-code.md)。
 另请参阅[将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
 另请参阅[将Dynamic Media资源添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md)。

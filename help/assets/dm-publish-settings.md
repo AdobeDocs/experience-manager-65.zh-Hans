@@ -1,6 +1,6 @@
 ---
-title: 为图像服务器配置Dynamic Media Publish设置
-description: 了解如何为图像服务器配置Dynamic Media Publish设置，以便发布资源。 您还可以在公开资产之前对其进行测试。
+title: 为图像服务器配置Dynamic Media发布设置
+description: 了解如何为图像服务器配置Dynamic Media发布设置，以便发布资产。 您还可以在公开资产之前对其进行测试。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -10,38 +10,53 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 2b7c8765d4fa6af1d729875a9ec234287ffb088f
+autotag-review: '2026-05-18T18:46:26.981Z'
+TQID: 'https://experienceleague.adobe.com/DfSAGGSoBR-9TOXKA89X3U4VReVbP-Ej70vUK1Zfczk'
+product_v2:
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+feature_v2:
+  - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+level_v2:
+  - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2:
+  - id: d095671a-1355-40aa-8b5f-06c33c68080b
+source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
-source-wordcount: '3368'
+source-wordcount: 3751
 ht-degree: 0%
 
 ---
 
-# 为图像服务器配置Dynamic Media Publish设置
+# 为图像服务器配置Dynamic Media发布设置
 
-只有在满足以下条件时，才能配置Dynamic Media Publish设置选项：
+只有在满足以下条件时，才能配置Dynamic Media发布设置选项：
 
 * 您正在以Scene7模式运行Dynamic Media。 请参阅[在Scene7模式下启用Dynamic Media](/help/assets/config-dms7.md#enabling-dynamic-media-in-scene-mode)。
-* 您在Adobe Experience Manager 6.5.11或更高版本中具有&#x200B;*现有* **[!UICONTROL Dynamic Media配置]** (在&#x200B;**[!UICONTROL Cloud Service]**&#x200B;中)。 请参阅[在Cloud Service中创建Dynamic Media配置](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)。
+* 您在Adobe Experience Manager 6.5.11或更高版本中具有&#x200B;*现有* **[!UICONTROL Dynamic Media配置]** （位于&#x200B;**[!UICONTROL Cloud Services]**）。 请参阅[在云服务中创建Dynamic Media配置](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)。
 * 您是具有管理员权限的Experience Manager系统管理员。
 
-经验丰富的网站开发人员和程序员可使用Dynamic Media Publish设置。 AdobeDynamic Media建议更改发布设置的用户熟悉AdobeDynamic Media、HTTP协议标准和惯例以及基本成像技术。
+经验丰富的网站开发人员和程序员可使用Dynamic Media发布设置。 Adobe Dynamic Media建议更改发布设置的用户熟悉Adobe Dynamic Media、HTTP协议标准和约定以及基本成像技术。
 
-“Dynamic Media Publish设置”页面建立了默认设置，用于确定如何将资源从AdobeDynamic Media服务器传递到网站或应用程序。 如果未指定设置，则AdobeDynamic Media服务器将根据“Dynamic Media Publish设置”页面上配置的默认设置交付资源。
+“Dynamic Media发布设置”页面建立了默认设置，用于确定如何将资源从Adobe Dynamic Media服务器传递到网站或应用程序。 如果未指定设置，则Adobe Dynamic Media服务器将根据“Dynamic Media发布设置”页面上配置的默认设置交付资源。
 
-另请参阅[可选 — Dynamic Media的设置和配置 — Scene7模式设置](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)，了解更多可选配置任务。
+另请参阅[可选 — Dynamic Media - Scene7模式设置的设置和配置](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings)，了解更多可选配置任务。
 
 >[!NOTE]
 >
->在Adobe Experience Manager上从Dynamic Media Classic升级到Dynamic Media？ Dynamic Media中的[常规设置](/help/assets/dm-general-settings.md)页面和Publish设置页面已预填充从您的Dynamic Media Classic帐户中获取的值。 例外情况是“常规设置”页面的&#x200B;**[!UICONTROL 默认上载选项]**&#x200B;区域下列出的所有值。 这些值已在Experience Manager中。 因此，您通过Experience Manager用户界面在&#x200B;**[!UICONTROL 默认上传选项]**&#x200B;下对五个选项卡中的任何选项卡所做的任何更改都会反映在Dynamic Media中，而不是Dynamic Media Classic中。 Experience Manager时，[常规设置](/help/assets/dm-general-settings.md)页面和Publish设置页面中的所有其他设置和值会在Dynamic Media Classic和Dynamic Media之间维护。
+>在Adobe Experience Manager上从Dynamic Media Classic升级到Dynamic Media？ Dynamic Media中的[常规设置](/help/assets/dm-general-settings.md)页面和发布设置页面已预填充从您的Dynamic Media Classic帐户中获取的值。 例外情况是“常规设置”页面的&#x200B;**[!UICONTROL 默认上载选项]**&#x200B;区域下列出的所有值。 这些值已在Experience Manager中。 因此，您通过Experience Manager用户界面在&#x200B;**[!UICONTROL 默认上传选项]**&#x200B;下对五个选项卡中的任何选项卡所做的任何更改都会反映在Dynamic Media中，而不是Dynamic Media Classic中。 在Experience Manager上的Dynamic Media Classic和Dynamic Media之间会维护[常规设置](/help/assets/dm-general-settings.md)页面和发布设置页面中的所有其他设置和值。
 
-**要配置Dynamic Media Publish安装程序图像服务器：**
+**要配置Dynamic Media发布设置图像服务器：**
 
 1. 在Experience Manager创作模式下，选择Experience Manager徽标以访问全局导航控制台。
-1. 在左边栏中，单击“工具”图标，然后转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish设置]**。
+1. 在左边栏中，单击工具图标，然后转到&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media发布设置]**。
 1. 在“图像服务器”页面的下拉列表中，选择发布上下文以建立从图像服务器传送图像的默认设置。
 
-| Publish上下文 | 描述 |
+| 发布上下文 | 描述 |
 | --- | --- |
 | 图像服务 | 指定发布设置的上下文。 |
 | 提供测试图像 | 指定用于测试发布设置的上下文。<br>仅对于新的Dynamic Media帐户，默认&#x200B;**[!UICONTROL 客户端地址]**&#x200B;字段自动设置为`127.0.0.1`。<br>在公开资产之前查看[测试资产](#test-assets-before-making-public)。 |
@@ -54,8 +69,8 @@ ht-degree: 0%
    * [常用缩略图属性](#common-thumbnail-attributes-tab)选项卡
    * [色彩管理属性](#color-management-attributes-tab)选项卡
 
-   ![Dynamic Media Publish设置页面](/help/assets/assets-dm/dm-publish-setup.png)
-   *Dynamic Media Publish设置页面，已选择&#x200B;**[!UICONTROL 请求属性]**&#x200B;选项卡。*<br><br>
+   ![Dynamic Media发布设置页面](/help/assets/assets-dm/dm-publish-setup.png)
+   *Dynamic Media发布设置页面，选择了&#x200B;**[!UICONTROL 请求属性]**&#x200B;选项卡。*<br><br>
 
 1. 完成后，在页面的右上角附近，单击&#x200B;**[!UICONTROL 保存]**。
 
@@ -75,11 +90,11 @@ ht-degree: 0%
 
 **[!UICONTROL 规则集定义文件路径]** — 指定包含图像目录的规则集定义的文件。
 
-另请参阅《Dynamic Media查看器参考指南》中的[RuleSetFile](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-rulesetfile)参数。
+另请参阅Dynamic Media查看器参考指南中的[RuleSetFile](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-rulesetfile)参数。
 
 >[!NOTE]
 >
->如果您的Dynamic Media Classic帐户在&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序]** > **[!UICONTROL Publish设置]**&#x200B;下选择了&#x200B;**[!UICONTROL 规则集定义文件路径]**，则Experience Manager将获取该文件。 您的Dynamic Media帐户将从Dynamic Media Classic检索文件。 当您首次打开&#x200B;**[!UICONTROL Dynamic Media Publish设置]**&#x200B;页面时，该文件将存储并在此字段中可用。
+>如果您的Dynamic Media Classic帐户在&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序]** > **[!UICONTROL 发布设置]**&#x200B;下选择了&#x200B;**[!UICONTROL 规则集定义文件路径]**，则Experience Manager将获取该文件。 您的Dynamic Media帐户将从Dynamic Media Classic检索文件。 当您首次打开&#x200B;**[!UICONTROL Dynamic Media发布设置]**&#x200B;页面时，该文件将存储在此字段中并使其可用。
 
 ## “请求属性”选项卡 {#request-attributes-tab}
 
@@ -87,21 +102,21 @@ ht-degree: 0%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 回复图像大小限制]** | 必需。<br>仅对于新的Dynamic Media帐户，**[!UICONTROL 图像服务]**&#x200B;和&#x200B;**[!UICONTROL 测试图像服务]**&#x200B;的默认大小限制自动设置为宽度： `3000`和高度： `3000`。<br>指定返回给客户端的最大回复图像宽度和高度。 如果请求导致回复图像的宽度或/或高度大于此设置，则服务器会返回错误。<br>另请参阅《Dynamic Media查看器参考指南》中的[MaxPix](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix)参数。 |
+| **[!UICONTROL 回复图像大小限制]** | 必需。<br>仅对于新的Dynamic Media帐户，**[!UICONTROL 图像服务]**&#x200B;和&#x200B;**[!UICONTROL 测试图像服务]**&#x200B;的默认大小限制自动设置为“宽度： `3000`”和“高度： `3000`”。<br>指定返回到客户端的最大回复图像宽度和高度。 如果请求导致回复图像的宽度或/或高度大于此设置，则服务器会返回错误。<br>另请参阅Dynamic Media查看器参考指南中的[MaxPix](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix)参数。 |
 | **[!UICONTROL 请求混淆模式]** | 如果希望将base64编码应用于有效请求，则启用。<br>另请参阅Dynamic Media查看器参考指南中的[RequestObfuscation](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation)参数。 |
-| **[!UICONTROL 请求锁定模式]** | 如果希望在请求中包含简单的散列锁，则启用。<br>另请参阅《Dynamic Media查看器参考指南》中的[RequestLock](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock)参数。 |
+| **[!UICONTROL 请求锁定模式]** | 如果希望在请求中包含简单的散列锁，则启用。<br>另请参阅Dynamic Media查看器参考指南中的[RequestLock](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock)参数。 |
 | **[!UICONTROL 默认请求属性]** | |
-| **[!UICONTROL 默认图像文件后缀]** | 必需。<br>附加到目录Path和MaskPath字段值的默认数据文件扩展名（如果路径不包含文件后缀）。<br>另请参阅Dynamic Media查看器参考指南中的[DefaultExt](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext)参数。 |
-| **[!UICONTROL 默认字体名称]** | 指定在文本图层请求未提供字体时使用哪种字体。 如果指定，则必须为此图像目录的字体映射或默认目录的字体映射中的有效字体名称值。<br>另请参阅《Dynamic Media查看器参考指南》中的[DefaultFont](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont)参数。 |
-| **[!UICONTROL 默认图像]** | 在未找到所请求的图像时，响应请求返回默认图像。<br>另请参阅《Dynamic Media查看器参考指南》中的[DefaultImage](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage)参数。<br>**注意**：如果您的Dynamic Media Classic帐户在&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序]** > **[!UICONTROL Publish设置]**&#x200B;下选择了&#x200B;**[!UICONTROL 默认图像]**，则在&#x200B;**[!UICONTROL 默认请求属性]**&#x200B;组中，Experience Manager将获取该文件。 然后，当您首次打开&#x200B;**[!UICONTROL Dynamic Media Publish设置]**&#x200B;页面时，该文件会被存储并在此字段中可用。 |
-| **[!UICONTROL 默认图像模式]** | 启用滑块框（右侧的滑块）后，**[!UICONTROL 默认图像]**&#x200B;会使用默认图像替换源图像中的每个缺失图层，并照常返回复合图像。 禁用滑块框（左侧的滑块）后，默认图像将替换整个复合图像，即使缺少的图像只是多个图层中的一个图层也是如此。<br>另请参阅《Dynamic Media查看器参考指南》中的[DefaultImageMode](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode)参数。 |
-| **[!UICONTROL 默认视图大小]** | 必需。<br>仅对于新的Dynamic Media帐户，**[!UICONTROL 图像服务]**&#x200B;和&#x200B;**[!UICONTROL 测试图像服务]**&#x200B;的默认视图大小自动设置为宽度： `1280`和高度： `1280`。<br>如果请求未使用`wid=`、`hei=`或`scl=`明确指定视图大小，服务器将限制回复图像不超过此宽度和高度。<br>另请参阅《Dynamic Media查看器参考指南》中的[DefaultPix](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix)参数。 |
-| **[!UICONTROL 默认缩略图大小]** | 必需。<br>用于缩略图请求(`req=tmb`)，而不是属性&#x200B;**[!UICONTROL 默认视图大小]**。 如果缩略图请求(`req=tmb`)未使用`wid=`、`hei=`或`scl=`明确指定大小，服务器将限制回复图像不超过此宽度和高度。<br>另请参阅Dynamic Media查看器参考指南中的[DefaultThumbPix](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix)参数。 |
-| **[!UICONTROL 默认背景颜色]** | 指定用于填充不包含实际图像数据的回复图像的任意区域的RGB值。<br>另请参阅《Dynamic Media查看器参考指南》中的[BkgColor](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor)参数。 |
-| **[!UICONTROL 编码属性JPEG]** |  |
-| **[!UICONTROL 品质]** | <br>指定JPEG回复图像的默认属性。<br>仅对于新的Dynamic Media帐户，**[!UICONTROL 图像服务]**&#x200B;和&#x200B;**[!UICONTROL 测试图像服务]**&#x200B;的&#x200B;**[!UICONTROL 质量]**&#x200B;默认值自动设置为`80`。<br>此字段定义在1到100的范围内。<br>另请参阅《Dynamic Media查看器参考指南》中的[JpegQuality](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality)参数。 |
+| **[!UICONTROL 默认图像文件后缀]** | 必需。<br>如果路径不包含文件后缀，则附加到目录Path和MaskPath字段值的默认数据文件扩展名。<br>另请参阅Dynamic Media查看器参考指南中的[DefaultExt](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext)参数。 |
+| **[!UICONTROL 默认字体名称]** | 指定在文本图层请求未提供字体时使用哪种字体。 如果指定，则必须为此图像目录的字体映射或默认目录的字体映射中的有效字体名称值。<br>另请参阅Dynamic Media查看器参考指南中的[DefaultFont](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont)参数。 |
+| **[!UICONTROL 默认图像]** | 在未找到所请求的图像时，响应请求返回默认图像。<br>另请参阅Dynamic Media查看器参考指南中的[DefaultImage](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage)参数。<br>**注意**：如果您的Dynamic Media Classic帐户在&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序]** > **[!UICONTROL 发布设置]**&#x200B;下选择了&#x200B;**[!UICONTROL 默认图像]**，则Experience Manager将在&#x200B;**[!UICONTROL 默认请求属性]**&#x200B;组中获取该文件。 首次打开&#x200B;**[!UICONTROL Dynamic Media发布设置]**&#x200B;页面时，该文件将存储在此字段中并使其可用。 |
+| **[!UICONTROL 默认图像模式]** | 启用滑块框（右侧的滑块）后，**[!UICONTROL 默认图像]**&#x200B;会使用默认图像替换源图像中的每个缺失图层，并照常返回复合图像。 禁用滑块框（左侧的滑块）后，默认图像将替换整个复合图像，即使缺少的图像只是多个图层中的一个图层也是如此。<br>另请参阅Dynamic Media查看器参考指南中的[DefaultImageMode](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode)参数。 |
+| **[!UICONTROL 默认视图大小]** | 必需。<br>仅对于新的Dynamic Media帐户，默认视图大小自动设置为&#x200B;**[!UICONTROL 图像服务]**&#x200B;和&#x200B;**[!UICONTROL 测试图像服务]**&#x200B;的宽度： `1280`和高度： `1280`。<br>如果请求未使用`wid=`、`hei=`或`scl=`显式指定视图大小，服务器将限制回复图像不超过此宽度和高度。<br>另请参阅Dynamic Media查看器参考指南中的[DefaultPix](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix)参数。 |
+| **[!UICONTROL 默认缩略图大小]** | 必需。<br>用于缩略图请求(`req=tmb`)，而不是属性&#x200B;**[!UICONTROL 默认视图大小]**。 如果缩略图请求(`req=tmb`)未使用`wid=`、`hei=`或`scl=`显式指定大小，服务器将限制回复图像不超过此宽度和高度。<br>另请参阅Dynamic Media查看器参考指南中的[DefaultThumbPix](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix)参数。 |
+| **[!UICONTROL 默认背景颜色]** | 指定用于填充不包含实际图像数据的回复图像的任意区域的RGB值。<br>另请参阅Dynamic Media查看器参考指南中的[BkgColor](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor)参数。 |
+| **[!UICONTROL JPEG编码属性]** |  |
+| **[!UICONTROL 品质]** | <br>指定JPEG回复图像的默认属性。<br>仅对于新的Dynamic Media帐户，**[!UICONTROL 图像服务]**&#x200B;和&#x200B;**[!UICONTROL 测试图像服务]**&#x200B;的&#x200B;**[!UICONTROL 质量]**&#x200B;默认值自动设置为`80`。<br>此字段定义的范围介于1到100之间。<br>另请参阅Dynamic Media查看器参考指南中的[JpegQuality](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-jpegquality)参数。 |
 | **[!UICONTROL 色度缩减像素采样]** | 启用或禁用JPEG编码器采用的色度缩减像素采样。 |
-| **[!UICONTROL 默认重新取样模式]** | 指定用于缩放图像数据的默认重新取样和插值属性。 在请求中未指定`resMode`时使用。<br>仅对于新的Dynamic Media帐户，**[!UICONTROL 图像服务]**&#x200B;和&#x200B;**[!UICONTROL 测试图像服务]**&#x200B;的默认重新取样模式都会自动设置为`Sharp2`。<br>另请参阅《Dynamic Media查看器参考指南》中的[ResMode](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode)参数。 |
+| **[!UICONTROL 默认重新取样模式]** | 指定用于缩放图像数据的默认重新取样和插值属性。 在请求中未指定`resMode`时使用。<br>仅对于新的Dynamic Media帐户，**[!UICONTROL 图像服务]**&#x200B;和&#x200B;**[!UICONTROL 测试图像服务]**&#x200B;的默认重新取样模式都会自动设置为`Sharp2`。<br>另请参阅Dynamic Media查看器参考指南中的[ResMode](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-resmode)参数。 |
 
 ## “常用缩略图属性”选项卡 {#common-thumbnail-attributes-tab}
 
@@ -109,18 +124,18 @@ ht-degree: 0%
 
 | 设置 | 描述 |
 | --- | --- |
-| **[!UICONTROL 缩略图的默认背景颜色]** | 指定用于填充不包含实际图像数据的输出缩略图图像的区域的RGB值。 仅用于缩略图请求(`req=tmb`)，并且当&#x200B;**[!UICONTROL 默认缩略图类型]**&#x200B;设置设置为&#x200B;**[!UICONTROL 适合]**&#x200B;或&#x200B;**[!UICONTROL 纹理]**&#x200B;时。<br>另请参阅《Dynamic Media查看器参考指南》中的[ThumbBkgColor](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor)参数。 |
-| **[!UICONTROL 水平对齐]** | 指定由`wid=`和`hei=`值指定的回复图像矩形中缩略图图像的水平对齐方式。<br>仅用于缩略图请求(`req=tmb`)，并且当&#x200B;**[!UICONTROL 默认缩略图类型]**&#x200B;设置设置为&#x200B;**[!UICONTROL 适合]**&#x200B;时。<br>有三个水平对齐方式可供选择：**[!UICONTROL 居中对齐]**、**[!UICONTROL 左对齐]**&#x200B;和&#x200B;**[!UICONTROL 右对齐]**。<br>另请参阅《Dynamic Media查看器参考指南》中的[ThumbHorizAlign](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign)参数。 |
-| **[!UICONTROL 垂直对齐]** | 指定由`wid=`和`hei=`值指定的回复图像矩形中缩略图图像的垂直对齐方式。 仅用于缩略图请求(`req=tmb`)以及将&#x200B;**[!UICONTROL 默认缩略图类型]**&#x200B;设置设置为&#x200B;**[!UICONTROL 适合]**&#x200B;的情况。<br>有三个垂直对齐方式可供选择：**[!UICONTROL 顶部对齐]**、**[!UICONTROL 居中对齐]**&#x200B;和&#x200B;**[!UICONTROL 底部对齐]**。<br>另请参阅《Dynamic Media查看器参考指南》中的[ThumbVertAlign](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign)参数。 |
-| **[!UICONTROL 默认缓存生存时间]** | 如果特定目录记录不包含有效的目录Expiration值，则给定默认过期时间间隔（小时）。 设置为`-1`以标记为永不过期。 <br>另请参阅《Dynamic Media查看器参考指南》中的[Expiration](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration)参数。 |
-| **[!UICONTROL 默认缩略图类型]** | 如果特定目录记录不包含有效的目录ThumbType值，则给定缩略图类型的默认值。 仅用于缩略图请求(`req=tmb`)。<br>有三种缩略图类型可供选择： **[!UICONTROL 裁切]**、**[!UICONTROL 适合]**&#x200B;和&#x200B;**[!UICONTROL 纹理]**。<br>另请参阅《Dynamic Media查看器参考指南》中的[ThumbType](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype)参数。 |
-| **[!UICONTROL 默认缩略图分辨率]** | 如果特定目录记录不包含有效的目录ThumbRes值，则给定缩略图对象分辨率的默认值。 仅用于缩略图请求(`req=tmb`)以及将&#x200B;**[!UICONTROL 默认缩略图类型]**&#x200B;设置设置为&#x200B;**[!UICONTROL 纹理]**&#x200B;的情况。<br>另请参阅《Dynamic Media查看器参考指南》中的[ThumbRes](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres)参数。 |
+| **[!UICONTROL 缩略图的默认背景颜色]** | 指定用于填充不包含实际图像数据的输出缩略图图像的区域的RGB值。 仅用于缩略图请求(`req=tmb`)以及当&#x200B;**[!UICONTROL 默认缩略图类型]**&#x200B;设置设置为&#x200B;**[!UICONTROL 适合]**&#x200B;或&#x200B;**[!UICONTROL 纹理]**&#x200B;时。<br>另请参阅Dynamic Media查看器参考指南中的[ThumbBkgColor](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor)参数。 |
+| **[!UICONTROL 水平对齐]** | 指定由`wid=`和`hei=`值指定的回复图像矩形中缩略图图像的水平对齐方式。<br>仅用于缩略图请求(`req=tmb`)并且当&#x200B;**[!UICONTROL 默认缩略图类型]**&#x200B;设置设置为&#x200B;**[!UICONTROL 适合]**&#x200B;时使用。<br>有三个水平对齐可供选择： **[!UICONTROL 居中对齐]**、**[!UICONTROL 左对齐]**&#x200B;和&#x200B;**[!UICONTROL 右对齐]**。<br>另请参阅Dynamic Media查看器参考指南中的[ThumbHorizAlign](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign)参数。 |
+| **[!UICONTROL 垂直对齐]** | 指定由`wid=`和`hei=`值指定的回复图像矩形中缩略图图像的垂直对齐方式。 仅用于缩略图请求(`req=tmb`)，并且当&#x200B;**[!UICONTROL 默认缩略图类型]**&#x200B;设置设置为&#x200B;**[!UICONTROL 适合]**&#x200B;时。<br>有三个垂直对齐可供选择： **[!UICONTROL 顶部对齐]**、**[!UICONTROL 居中对齐]**&#x200B;和&#x200B;**[!UICONTROL 底部对齐]**。<br>另请参阅Dynamic Media查看器参考指南中的[ThumbVertAlign](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign)参数。 |
+| **[!UICONTROL 默认缓存生存时间]** | 如果特定目录记录不包含有效的目录Expiration值，则给定默认过期时间间隔（小时）。 设置为`-1`以标记为永不过期。 <br>另请参阅Dynamic Media查看器参考指南中的[Expiration](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration)参数。 |
+| **[!UICONTROL 默认缩略图类型]** | 如果特定目录记录不包含有效的目录ThumbType值，则给定缩略图类型的默认值。 仅用于缩略图请求(`req=tmb`)。<br>有三种缩略图类型可供选择： **[!UICONTROL 裁切]**、**[!UICONTROL 适合]**&#x200B;和&#x200B;**[!UICONTROL 纹理]**。<br>另请参阅Dynamic Media查看器参考指南中的[ThumbType](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbtype)参数。 |
+| **[!UICONTROL 默认缩略图分辨率]** | 如果特定目录记录不包含有效的目录ThumbRes值，则给定缩略图对象分辨率的默认值。 仅用于缩略图请求(`req=tmb`)以及将&#x200B;**[!UICONTROL 默认缩略图类型]**&#x200B;设置设置为&#x200B;**[!UICONTROL 纹理]**&#x200B;的情况。<br>另请参阅Dynamic Media查看器参考指南中的[ThumbRes](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbres)参数。 |
 
 ## 颜色管理属性选项卡 {#color-management-attributes-tab}
 
 这些设置确定用于图像的ICC颜色配置文件。
 
-**颜色转换渲染方法**
+**颜色转换调色**
 颜色转换调色(Color Conversion Rendering Intent)允许覆盖工作配置文件的默认调色，以确定如何调整源颜色。 用于以下情况：
 
 1. 默认的ICC配置文件之一是颜色转换的目标颜色空间。
@@ -129,17 +144,17 @@ ht-degree: 0%
 
 不同的渲染意图使用不同的规则来确定如何调整源颜色。
 
-另请参阅《Dynamic Media查看器参考指南》中的[IccRenderIntent](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent)参数。
+另请参阅Dynamic Media查看器参考指南中的[IccRenderIntent](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent)参数。
 
 >[!NOTE]
 >
->通常，使用所选Adobe设置的默认调色，该颜色已测试为符合行业标准。 例如，如果您为北美或欧洲选择颜色设置，则默认的颜色转换渲染方法为&#x200B;**[!UICONTROL 相对比色]**。 如果您为日本选择了颜色设置，则默认的颜色转换渲染方法为&#x200B;**[!UICONTROL 可感知]**。
+>通常，使用所选颜色设置的默认调色，Adobe已测试该设置是否符合行业标准。 例如，如果您为北美或欧洲选择颜色设置，则默认的颜色转换渲染方法为&#x200B;**[!UICONTROL 相对比色]**。 如果您为日本选择了颜色设置，则默认的颜色转换渲染方法为&#x200B;**[!UICONTROL 可感知]**。
 
 | 设置 | 特征 |
 | --- | --- |
-| **[!UICONTROL CMYK默认颜色空间]** | 指定要用作CMYK数据的工作配置文件的ICC颜色配置文件的名称。 如果选择&#x200B;**[!UICONTROL 无指定]**，则在涉及CMYK源图像时对此图像目录禁用颜色管理。 所有CMYK工作空间都取决于设备，这意味着它们基于实际的油墨和纸张组合。 CMYK工作区Adobe供应基于标准商业打印条件。<br>另请参阅Dynamic Media查看器参考指南中的[IccProfileCMYK](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk)参数。 |
+| **[!UICONTROL CMYK默认颜色空间]** | 指定要用作CMYK数据的工作配置文件的ICC颜色配置文件的名称。 如果选择&#x200B;**[!UICONTROL 无指定]**，则在涉及CMYK源图像时对此图像目录禁用颜色管理。 所有CMYK工作空间都取决于设备，这意味着它们基于实际的油墨和纸张组合。 Adobe提供的CMYK工作区基于标准商业打印条件。<br> 另请参阅Dynamic Media查看器参考指南中的[IccProfileCMYK](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk)参数。 |
 | **[!UICONTROL 默认灰度颜色空间]** | 指定要用作灰度数据的工作配置文件的ICC颜色配置文件的名称。 如果选择&#x200B;**[!UICONTROL 无指定]**，则在涉及灰度源图像时对此图像目录禁用颜色管理。<br>另请参阅Dynamic Media查看器参考指南中的[IccProfileGray](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray)参数。 |
-| **[!UICONTROL 默认色彩空间]** RGB | 指定要用作RGB数据的工作配置文件的ICC颜色配置文件的名称。 如果选择&#x200B;**[!UICONTROL 无指定]**，则在涉及RGB源图像时对此图像目录禁用颜色管理。 通常，最好选择&#x200B;**[!UICONTROL Adobe RGB]**&#x200B;或&#x200B;**[!UICONTROL sRGB]**，而不是特定设备的配置文件（如监视器配置文件）。 当您为Web或移动设备准备图像时，建议使用&#x200B;**[!UICONTROL sRGB]**，因为它定义了用于在Web上查看图像的标准监视器的颜色空间。 在处理消费者级数码相机的图像时，**[!UICONTROL sRGB]**&#x200B;也是很好的选择，因为大多数此类相机使用sRGB作为默认颜色空间。<br>另请参阅Dynamic Media查看器参考指南中的[IccProfileRBG](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb)参数。 |
+| **[!UICONTROL RGB默认色彩空间]** | 指定要用作RGB数据的工作配置文件的ICC颜色配置文件的名称。 如果选择&#x200B;**[!UICONTROL 无指定]**，则在涉及RGB源图像时对此图像目录禁用颜色管理。 通常，最好选择&#x200B;**[!UICONTROL Adobe RGB]**&#x200B;或&#x200B;**[!UICONTROL sRGB]**，而不是特定设备的配置文件（如监视器配置文件）。 当您为Web或移动设备准备图像时，建议使用&#x200B;**[!UICONTROL sRGB]**，因为它定义了用于在Web上查看图像的标准监视器的颜色空间。 在处理消费者级数码相机的图像时，**[!UICONTROL sRGB]**&#x200B;也是很好的选择，因为大多数此类相机使用sRGB作为默认颜色空间。<br>另请参阅Dynamic Media查看器参考指南中的[IccProfileRBG](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb)参数。 |
 | **[!UICONTROL 颜色转换调色]** | **[!UICONTROL 可感知]** — 旨在保持颜色之间的视觉关系，以便人眼感觉它是自然的，即使颜色值本身可能会发生更改。 此意图适用于具有大量超出色域颜色的照片图像。 该设置是日本印刷业的标准着色。 |
 |  | **[!UICONTROL 相对比色]** — 将源颜色空间的极高亮度和目标颜色空间的极高亮度进行比较，并相应地移动所有颜色。 超出色域的颜色将移动到目标色彩空间中最接近的可再现颜色。 相对比色在图像中保留的原始颜色比感知颜色多。 此设置是北美和欧洲打印的标准渲染方法。 |
 |  | **[!UICONTROL 饱和度]** — 尝试在图像中生成鲜艳的颜色，而牺牲颜色准确性。 此渲染方法适用于图形或图表等商业图形，在这些图形中，明亮饱和颜色比颜色之间的确切关系更重要。 |
@@ -147,7 +162,7 @@ ht-degree: 0%
 
 ## 在公开资产之前测试资产 {#test-assets-before-making-public}
 
-Secure Testing可帮助您定义安全的测试环境，并根据一组可配置的IP地址和范围构建强大的企业对企业解决方案。 此功能可让您将AdobeDynamic Media部署与内容管理和业务系统的架构相匹配。
+Secure Testing可帮助您定义安全的测试环境，并根据一组可配置的IP地址和范围构建强大的企业对企业解决方案。 此功能可让您将Adobe Dynamic Media部署与内容管理和业务系统的架构相匹配。
 
 通过Secure Testing，您可以预览包含未发布内容的网站暂存版本。
 
@@ -167,15 +182,15 @@ Secure Testing可帮助您定义安全的测试环境，并根据一组可配置
 
 通过公司网络，您可以使用[https://www.whatismyip.com](https://www.whatismyip.com/)之类的网站确定公共IP地址，或者向公司IT组织请求此信息。
 
-通过Secure Testing，AdobeDynamic Media可为暂存环境或内部应用程序建立专用映像服务器。 对此服务器的任何请求都会检查原始IP地址。 如果传入请求不在批准的IP地址列表中，则会返回失败响应。 AdobeDynamic Media公司管理员为公司的Secure Testing环境配置已批准的IP地址列表。
+通过安全测试，Adobe Dynamic Media为暂存环境或内部应用程序建立了专用的图像服务器。 对此服务器的任何请求都会检查原始IP地址。 如果传入请求不在批准的IP地址列表中，则会返回失败响应。 Adobe Dynamic Media公司管理员为公司的Secure Testing环境配置已批准的IP地址列表。
 
-由于必须确认原始请求的位置，因此Secure Testing服务的流量不会像公共Dynamic Media Image Server流量那样通过内容分发网络进行路由。 向Secure Testing服务发出的请求与向公共Dynamic Media图像服务器发出的请求相比，滞后时间稍长一些。
+由于必须确认原始请求的位置，因此Secure Testing服务的流量不会通过内容分发网络（如公共Dynamic Media图像服务器流量）进行路由。 与Dynamic Media公共图像服务器相比，请求Secure Testing Service的延迟稍高一些。
 
 未发布的资产可立即从Secure Testing服务中使用，而无需发布。 通过这种方式，您可以在将资产发布到面向公众的图像服务器之前运行预览。
 
 >[!NOTE]
 >
->Secure Testing Services使用配置了内部发布上下文的目录服务器。 因此，如果贵公司配置为发布到Secure Testing，则在AdobeDynamic Media中上传的所有资源都会立即在Secure Testing服务上可用。 不论资源是否标记为在上传时发布，此功能均为true。
+>Secure Testing Services使用配置了内部发布上下文的目录服务器。 因此，如果贵公司配置为发布到Secure Testing，则在Adobe Dynamic Media中上传的所有资源都会立即在Secure Testing服务上可用。 不论资源是否标记为在上传时发布，此功能均为true。
 
 安全测试服务当前支持以下资产类型和功能：
 
@@ -183,8 +198,8 @@ Secure Testing可帮助您定义安全的测试环境，并根据一组可配置
 * 晕影（渲染服务器请求）。
 * 客户必须明确请求渲染服务器支持（可用）。
 * 集，包括图像集、eCatalog、渲染集和媒体集。
-* 标准AdobeDynamic Media富媒体查看器。
-* AdobeDynamic Media OnDemand JSP页。
+* 标准Adobe Dynamic Media富媒体查看器。
+* Adobe Dynamic Media OnDemand JSP页。
 * 静态内容，如PDF文件和逐步提供的视频。
 * HTTP视频流。
 * 渐进式视频流。
@@ -198,11 +213,11 @@ Secure Testing可帮助您定义安全的测试环境，并根据一组可配置
 
   >[!IMPORTANT]
   >
-  >从2023年5月1日开始，Dynamic Media中的UGC资源最多可在上传日期起60天内使用。 60天后，将删除资源。
+  >从2023年5月1日开始，Dynamic Media中的UGC资产最多可在上传日期起60天内使用。 60天后，将删除资源。
 
   >[!NOTE]
   >
-  >对AdobeDynamic Media中新增或现有UGC矢量图像资源的支持已于2021年9月30日终止。
+  >对Adobe Dynamic Media中新增或现有UGC矢量图像资源的支持已于2021年9月30日终止。
 
 ### 测试Secure Testing服务 {#test-secure-testing-service}
 
@@ -211,8 +226,8 @@ Secure Testing可帮助您定义安全的测试环境，并根据一组可配置
 #### 准备帐户
 
 1. 请联系Adobe客户关怀部门，要求他们在您的帐户上启用安全测试。
-1. 在Adobe Experience Manager中，选择&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish设置]**。
-1. 在“图像服务器”页面的&#x200B;**[!UICONTROL Publish上下文]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 测试图像服务]**。
+1. 在Adobe Experience Manager中，选择&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media发布设置]**。
+1. 在“图像服务器”页面的&#x200B;**[!UICONTROL 发布上下文]**&#x200B;下拉列表中，选择&#x200B;**[!UICONTROL 测试图像服务]**。
 1. 选择&#x200B;**[!UICONTROL 安全性]**&#x200B;选项卡。
 1. 对于&#x200B;**[!UICONTROL 客户端地址]**&#x200B;筛选器，请选择&#x200B;**[!UICONTROL 添加]**。
 1. 在&#x200B;**[!UICONTROL IP地址]**&#x200B;字段中，键入IP地址。
@@ -228,7 +243,7 @@ Secure Testing可帮助您定义安全的测试环境，并根据一组可配置
    * 继续下一步骤。
 
 1. 在“图像服务器”页面的右上角，选择&#x200B;**[!UICONTROL 保存]**。
-1. 将所需的图像上传到您的AdobeDynamic Media帐户。
+1. 将所需的图像上传到您的Adobe Dynamic Media帐户。
 
 <!--    See [Upload files](uploading-files.md#uploading_files). -->
 
@@ -239,13 +254,13 @@ Secure Testing可帮助您定义安全的测试环境，并根据一组可配置
 1. 通过转至&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media常规设置]**&#x200B;确定Secure Testing服务的名称。
 1. 在&#x200B;**[!UICONTROL 服务器]**&#x200B;页面上，找到&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;右侧的服务器名称。
 
-如果Adobe名称缺失或指向服务器的URL不起作用，请联系服务器关怀团队。
+如果服务器名称缺失或服务器的URL不起作用，请联系Adobe客户关怀团队。
 
 #### 准备网站变体
 
 您需要一个网站的两个变体，这两个变体可链接已发布和未发布的资产：
 
-* 公共版本 — 使用传统的AdobeDynamic Media URL语法链接资源。
+* 公共版本 — 使用传统的Adobe Dynamic Media URL语法链接资源。
 * 暂存版本 — 使用相同的语法但使用安全测试站点名称链接资产。
 
 #### 运行测试
@@ -256,7 +271,7 @@ Secure Testing可帮助您定义安全的测试环境，并根据一组可配置
 
    在从先前定义的IP地址范围标识的公司网络中，网站的暂存版本会显示所有图像，无论是否标记为发布。 因此，您可以在测试时避免在预览批准或产品发布之前意外使图像可用。
 
-   确认您的网站的公共版本显示已发布的资源，就像之前在AdobeDynamic Media时所做的那样。
+   确认您网站的公共版本显示了与Adobe Dynamic Media之前相同的已发布资源。
 
 1. 在公司网络外部，验证未发布的资产（即未标记为发布的资产）是否受第三方访问的保护。
 
