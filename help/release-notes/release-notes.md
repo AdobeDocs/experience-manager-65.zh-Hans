@@ -489,7 +489,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -633,7 +633,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
     >[!VIDEO](https://video.tv.adobe.com/v/3479697)
   -->
 
-* **FORMS-23979** HTML-PDF转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到6.5.25.0](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)的[最新发布的Forms加载项。
+* **FORMS-23979** HTML-PDF转换(PDFG)可能会遇到间歇性超时。 随后发布了适用于SP24的较新版本的Forms加载项，其中包括此修补程序。 如果您遇到此问题，请将您的环境更新到6.5.25.0[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases#aem-65-forms-releases)的最新发布的Forms加载项。
 * **FORMS-23717**&#x200B;升级到&#x200B;**AEM Forms6.5.25.0**&#x200B;后，`server.log`和`error.log`可能会泛洪为重复的警告消息，例如&#x200B;*安全解析器工厂创建失败*&#x200B;或&#x200B;*不支持安全属性……*。 日志可能会以每秒&#x200B;**5到10行**（每小时数百兆字节）的速度增长，这会填充磁盘并阻止生产转出。
 
 要减少日志卷，请在应用程序服务器配置中或通过JVM参数`-Dlogging.level.com.adobe.util.XMLSecurityUtil=ERROR`将`com.adobe.util.XMLSecurityUtil`的日志记录级别设置为`ERROR`。 此功能仅隐藏消息，不会修复根本原因。
