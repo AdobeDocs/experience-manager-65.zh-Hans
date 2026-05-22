@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: cc10229ca767a803fe0b24b1b4b47111e6c88cdd
+source-git-commit: 2a9799e386889d240d15f7e2621814bfd41bda3a
 workflow-type: tm+mt
 source-wordcount: '7111'
 ht-degree: 24%
@@ -651,4 +651,6 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 >* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
+
+
 
