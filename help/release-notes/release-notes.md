@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 2a9799e386889d240d15f7e2621814bfd41bda3a
+source-git-commit: 15bdc427d138101a429aeb0c46059ad0492d7739
 workflow-type: tm+mt
 source-wordcount: '7111'
 ht-degree: 24%
@@ -634,9 +634,9 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 以下文本文档列出了此 [!DNL Experience Manager] 6.5 服务包版本中包含的 OSGi 捆绑包和内容包：
 
-* [Experience Manager 6.5.25.0 中包含的 OSGi 捆绑包列表](/help/release-notes/assets/65250-bundles.txt)
+* [Experience Manager 6.5.25.0 中包含的 OSGi 捆绑包列表](/help/release-notes/assets/65250-bundles.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Experience Manager 6.5.25.0 中包含的内容包列表](/help/release-notes/assets/65250-packages.txt)
+* [Experience Manager 6.5.25.0 中包含的内容包列表](/help/release-notes/assets/65250-packages.zip)
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## 受限网站{#restricted-sites}
