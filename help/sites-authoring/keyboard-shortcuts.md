@@ -9,16 +9,16 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 1785216a13a809117cf178bd2dabf921e36dd9af
 workflow-type: tm+mt
-source-wordcount: '383'
-ht-degree: 75%
+source-wordcount: '386'
+ht-degree: 72%
 
 ---
 
 # 控制台的键盘快捷键{#keyboard-shortcuts-for-consoles}
 
-用户在整个 AEM 环境中都可以使用各种键盘快捷键。其中一些快捷键适用于控制台，还有一些则适用于[页面编辑](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)。
+在整个 AEM 环境中都可以使用各种键盘快捷键。 有些可应用于控制台的使用，其他应用于[页面编辑](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ ht-degree: 75%
 | 控制台 | `?` | 键盘快捷键帮助 |
 |  | `/` | 调用[搜索](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | 切换要查看的[边栏选择器](/help/sites-authoring/basic-handling.md#rail-selector)选项 |
-|  | ``` ` ``` | 隐藏边栏 |
+|  | `Backtick` | 隐藏边栏 |
 |  | `e` | 编辑 |
 |  | `p` | 属性 |
 |  | `m` | 移动 |
