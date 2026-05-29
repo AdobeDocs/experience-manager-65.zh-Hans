@@ -5,38 +5,38 @@ exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 9b4dd5a4a137e529be8142fff1ddbfca889e64ae
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1032'
 ht-degree: 5%
 
 ---
 
 # 将AEM Forms与Microsoft® Office 365邮件服务器协议集成 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
-为了让组织遵守安全电子邮件要求，AEM Forms提供了OAuth 2.0支持与Microsoft® Office 365邮件服务器协议集成。 您可以使用Azure Active Directory (Azure AD) OAuth 2.0身份验证服务连接各种协议（如IMAP、POP或SMTP），并访问Office 365用户的电子邮件数据。 以下是配置Microsoft® Office 365邮件服务器协议以通过OAuth 2.0服务进行身份验证的分步说明：
+为了让组织遵守安全电子邮件要求，AEM Forms提供了OAuth 2.0支持与Microsoft® Office 365邮件服务器协议集成。 您可以使用Azure Active Directory (Azure AD) OAuth 2.0身份验证服务连接各种协议（如IMAP、POP或SMTP），并访问Office 365用户的电子邮件数据。 以下是配置® Office 365邮件服务器协议以通过OAuth 2.0服务进行身份验证的分步说明：
 
 1. 登录到[https://portal.azure.com/](https://portal.azure.com/)并在搜索栏中搜索&#x200B;**Azure Active Directory**，然后单击结果。
-或者，您可以直接浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+或者，您可以直接浏览到[https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. 单击&#x200B;**添加** > **应用程序注册** > **新注册**。
 
    ![应用程序注册](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. 根据您的要求填写信息，然后单击&#x200B;**注册。**
    ![支持的帐户](/help/forms/using/assets/azure_suuportedaccountype.png)
-在上例中，已选择任何组织目录（任何Azure AD目录 — 多租户）中的&#x200B;**帐户和个人Microsoft®帐户（例如，Skype、Xbox）**&#x200B;选项。
+在上例中，已选择任何组织目录（任何Azure AD目录 — 多租户）和个人Microsoft®帐户（例如，Skype、Xbox）中的**帐户**&#x200B;选项。
 
    >[!NOTE]
    >
    > * 对于任何组织目录（任何Azure AD目录 — 多租户）**应用程序中的**&#x200B;帐户，Adobe建议您使用工作帐户，而不是个人电子邮件帐户。
-   > * **仅个人Microsoft®帐户**&#x200B;应用程序不受支持。
+   > * **仅个人®帐户**&#x200B;应用程序不受支持。
    > * Adobe建议您使用&#x200B;**多租户和个人Microsoft®帐户**&#x200B;应用程序。
 
-1. 接下来，转至&#x200B;**证书和密码**，单击&#x200B;**新建客户端密码**，然后执行屏幕上显示的步骤来创建密码。请务必记下此secret值供以后使用。
+1. 接下来，转至&#x200B;**证书和密码**，单击&#x200B;**新建客户端密码**，然后执行屏幕上显示的步骤来创建密码。 请务必记下此secret值供以后使用。
 
    ![密钥](/help/forms/using/assets/azure_secretkey.png)
 
-1. 若要添加权限，请转到新创建的应用程序，然后选择&#x200B;**API权限** > **添加权限** > **Microsoft® Graph** > **委派权限**。
+1. 若要添加权限，请转到新创建的应用程序，然后选择&#x200B;**API权限** > **添加权限** > **® Graph** > **委派权限**。
 1. 选中应用程序的以下权限对应的复选框，然后单击&#x200B;**添加权限**：
 
    * `IMAP.AccessUser.All`
@@ -71,7 +71,7 @@ ht-degree: 5%
 
 1. 将`clientID`替换为`<client_id>`并在浏览器中打开以下URL，将`redirect_uri`替换为您的应用程序的重定向URI：
 
-   ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
+   `https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
    >[!NOTE]
    >
@@ -151,7 +151,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 若要了解有关任务通知的更多信息，[单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=zh-Hans#create-an-email-endpoint-for-the-complete-task-service)。
+   > 若要了解有关任务通知的更多信息，[单击此处](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html#create-an-email-endpoint-for-the-complete-task-service)。
 
 ## 配置电子邮件端点 {#configure_email_endpoint}
 
@@ -165,7 +165,7 @@ ht-degree: 5%
 
    >[!NOTE]
    >
-   > 若要了解有关配置电子邮件端点的详细信息，请单击[配置电子邮件端点](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html?lang=zh-Hans)。
+   > 若要了解有关配置电子邮件端点的详细信息，请单击[配置电子邮件端点](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/administrator-help/configuring-email-endpoints.html)。
 
 ## 疑难解答 {#troubleshooting}
 
