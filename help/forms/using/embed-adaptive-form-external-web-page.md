@@ -8,7 +8,7 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20ee89572d58ade43d899b9292497717cb82c8b2
+source-git-commit: fb26d0c08644f8b84e406adeb7fb14496e8e9fd0
 workflow-type: tm+mt
 source-wordcount: '1388'
 ht-degree: 74%
@@ -39,7 +39,7 @@ ht-degree: 74%
 
 通过在网页中插入几行 JavaScript 即可嵌入自适应表单。 这段代码中的 API 将一个 HTTP 请求发送到自适应表单资源的 AEM 服务器，然后将该自适应表单注入到指定的表单容器中。
 
-要嵌入自适应表单，请执行以下操作：
+嵌入自适应表单：
 
 1. 用以下代码在您的网站上创建一个网页：
 
@@ -144,7 +144,7 @@ window.guideBridge.connect(function () {
 https://publish.example.com/content/forms/af/my-form/jcr:content/guideContainer.af.submit.jsp
 ```
 
-当AEM服务器和网页位于不同的域时，您还必须在AEM发布实例上配置CORS。 执行[启用AEM Forms以向跨域站点](#cross-site)提供自适应表单部分中列出的步骤。
+当AEM服务器和网页位于不同的域时，您还必须在AEM发布实例上配置CORS。 执行[启用AEM Forms以向跨域站点](#enable-aem-forms-to-serve-adaptive-forms-to-a-cross-domain-site-cross-site)提供自适应表单部分中列出的步骤。
 
 ## 示例拓扑 {#sample-topology}
 
@@ -221,3 +221,4 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 1. 在“允许的主机”字段中，指定该网页所在的域。 这样使主机可向 AEM 服务器发出 POST 请求。 还可使用正则表达式指定一系列外部应用程序域。
 
 >[!ENDTABS]
+
