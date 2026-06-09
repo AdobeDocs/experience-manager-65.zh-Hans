@@ -9,17 +9,17 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 6%
+source-wordcount: '2079'
+ht-degree: 7%
 
 ---
 
 
 # 配置搜索表单{#configuring-search-forms}
 
-使用&#x200B;**搜索Forms**&#x200B;可以自定义搜索面板中使用的搜索谓词选择，这些面板可在各种AEM控制台和/或创作环境的面板中使用。 自定义这些面板可根据您的特定需求使搜索功能通用。
+使用&#x200B;**搜索Forms**&#x200B;可自定义搜索面板中使用的搜索谓词选择，这些面板可在各种AEM控制台和/或创作环境的面板中使用。 自定义这些面板可根据您的特定需求使搜索功能通用。
 
 [范围的谓词](#predicates-and-their-settings)现成可用。 您可以添加多个谓词，其中包括“属性”谓词，以搜索与您指定的单个属性匹配的资产。 或者，使用“选项”谓词来搜索与您为特定属性指定的一个或多个值匹配的资产。
 
@@ -63,9 +63,9 @@ ht-degree: 6%
 
   此配置定义在资产浏览器中搜索产品时（编辑页面时）可用的选项。
 
-* **页面编辑器(Dynamic Media Classic [以前为Scene7]搜索)**：
+* **页面编辑器（Dynamic Media Classic [以前为Scene7]搜索）**：
 
-  此配置定义在资源浏览器中搜索Scene7资源（编辑页面时）时可用的选项。
+  此配置定义在资产浏览器中搜索Scene7资源（编辑页面时）时可用的选项。
 
 * **站点管理员搜索边栏**：
 
@@ -244,7 +244,7 @@ ht-degree: 6%
    <td>无</td>
   </tr>
   <tr>
-   <td>Publish状态 </td>
+   <td>发布状态 </td>
    <td>根据资产的发布状态搜索资产</td>
    <td>
     <ul>
@@ -343,7 +343,7 @@ ht-degree: 6%
 
 ### 谓词设置 {#predicate-settings}
 
-根据谓词，可以选择用于配置的设置：
+根据谓词，可以配置一系列设置：
 
 * **字段标签**
 
@@ -386,15 +386,15 @@ ht-degree: 6%
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **选项节点路径**
-与&#x200B;**选项路径**&#x200B;几乎相同，只是该路径位于公共谓词字段中，其他路径专用于资产。
+与&#x200B;**选项路径**&#x200B;几乎相同，只是该路径位于公共谓词字段中，其他路径专用于资源。
 
 * **单选**
 如果选中，这些选项将呈现为仅允许单个选择的复选框。 如果错误地选中此复选框，则可取消选中此复选框。
 
-* **Publish和Live Copy属性名称**
+* **发布和Live Copy属性名称**
 站点特定谓词的发布和Live Copy复选框的标签。
 
-* **设置**&#x200B;选项卡中的字段标签上的&amp;amp；ast；表示这些字段是必填字段，如果保留为空，则会显示错误消息。
+* **设置**&#x200B;选项卡中的字段标签上的&amp;ast；表示这些字段是必填字段，如果留空，则会显示错误消息。
 
 ## 配置搜索Forms {#configuring-your-search-forms}
 
@@ -468,7 +468,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->不能删除任一默认配置。
+>您无法删除任何默认配置。
 
 从控制台中删除自定义配置已完成：
 
@@ -553,7 +553,7 @@ ht-degree: 6%
   </tr>
   <tr>
    <td>预览</td>
-   <td><code>/var/dam/content</code>节点的读取、写入和删除权限。<code>/apps</code>节点上的<br />读、写权限。</td>
+   <td><code>/var/dam/content</code>节点的读取、写入和删除权限。<br /> <code>/apps</code>节点的读、写权限。</td>
   </tr>
  </tbody>
 </table>

@@ -1,18 +1,18 @@
 ---
-title: 将ContextHub添加到页面并访问存储
+title: 将 ContextHub 添加到页面并访问存储
 description: 将ContextHub添加到您的页面以启用ContextHub功能并链接到ContextHub JavaScript库
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 2b39796a6ede351258adaa28e6a3f1f54f83ec92
 workflow-type: tm+mt
-source-wordcount: '901'
-ht-degree: 0%
+source-wordcount: '924'
+ht-degree: 1%
 
 ---
 
-# 将ContextHub添加到页面并访问存储 {#adding-contexthub-to-pages-and-accessing-stores}
+# 将 ContextHub 添加到页面并访问存储 {#adding-contexthub-to-pages-and-accessing-stores}
 
 将ContextHub添加到您的页面以启用ContextHub功能并链接到ContextHub JavaScript库。
 
@@ -49,7 +49,7 @@ Context Hub存储使用以下持久性模式之一：
 * **Window.name：**&#x200B;使用window.name属性保留数据。
 * **内存：**&#x200B;使用JavaScript对象保留数据。
 
-默认情况下，Context Hub使用本地持久性模式。 如果浏览器不支持或不允许使用HTML5 localStorage，则使用会话持久性。 如果浏览器不支持或不允许使用HTML5 sessionStorage，则使用Window.name持久性。
+默认情况下，Context Hub使用本地持久性模式。 如果浏览器不支持或不允许HTML5 localStorage，则使用会话持久性。 如果浏览器不支持或不允许HTML5 sessionStorage，则使用Window.name持久性。
 
 ### 存储数据 {#store-data}
 
@@ -92,7 +92,7 @@ ContextHub提供了用于处理JavaScript对象的[`ContextHub.Utils.JSON.tree`]
 
 ## 与ContextHub存储区交互 {#interacting-with-contexthub-stores}
 
-使用[`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript对象获取存储作为JavaScript对象。 获取存储对象后，您可以处理它包含的数据。 使用[`getAllStores`](contexthub-api.md#getallstores)或[`getStore`](contexthub-api.md#getstore-name)函数获取存储。
+使用[`ContextHub`](contexthub-api.md#ui-event-constants) JavaScript对象获取存储作为JavaScript对象。 获取存储对象后，即可处理它包含的数据。 使用[`getAllStores`](contexthub-api.md#getallstores)或[`getStore`](contexthub-api.md#getstore-name)函数获取存储。
 
 ### 访问存储数据 {#accessing-store-data}
 
@@ -110,7 +110,7 @@ ContextHub提供了用于处理JavaScript对象的[`ContextHub.Utils.JSON.tree`]
 
 >[!NOTE]
 >
->默认情况下，ContextHub不知道发布服务器上当前使用的已登录，并且ContextHub将此类用户视为“匿名”。
+>默认情况下，ContextHub不知道发布服务器上当前登录的用户，并且此类用户被视为“匿名”。
 >
 >您可以通过加载配置文件存储区，使ContextHub感知已登录的用户。 请参阅GitHub [&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js)上的示例代码。
 

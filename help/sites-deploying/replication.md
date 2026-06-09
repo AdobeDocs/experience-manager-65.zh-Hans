@@ -10,53 +10,53 @@ feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: e4c42f989baf1a91e94944c612ee6b8de1dc331a
 workflow-type: tm+mt
-source-wordcount: '3363'
-ht-degree: 1%
+source-wordcount: '3334'
+ht-degree: 3%
 
 ---
 
 # 复制{#replication}
 
-复制代理在Adobe Experience Manager (AEM)中占有重要地位，作为一种机制，用于：
+复制代理在Adobe Experience Manager (AEM)中发挥着重要作用，作为一种机制，用于：
 
-* [Publish（激活）](/help/sites-authoring/publishing-pages.md#activatingcontent)内容从创作环境到Publish环境。
+* 将[发布（激活）](/help/sites-authoring/publishing-pages.md#activatingcontent)内容从作者发布到发布环境。
 * 明确刷新Dispatcher缓存中的内容。
-* 将用户输入（例如表单输入）从Publish环境返回到创作环境（在创作环境的控制下）。
+* 将用户输入（例如，表单输入）从“发布”环境返回到创作环境（在创作环境的控制下）。
 
 请求[已排队](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjobeventhandler)到相应的代理以进行处理。
 
 >[!NOTE]
 >
->不会在Author实例和Publish实例之间复制用户数据（用户、用户组和用户配置文件）。
+>用户数据（用户、用户组和用户配置文件）不会在创作实例和发布实例之间复制。
 >
->对于多个Publish实例，启用[用户同步](/help/sites-administering/sync.md)后，用户数据将通过Sling分发。
+>对于多个Publish实例，启用[用户同步](/help/sites-administering/sync.md)时，用户数据是Sling分发的。
 
-## 从“创作”复制到Publish {#replicating-from-author-to-publish}
+## 从创作复制到发布 {#replicating-from-author-to-publish}
 
-复制到Publish实例或Dispatcher需要执行几个步骤：
+向发布实例或Dispatcher的复制需要执行几个步骤：
 
 * 作者请求发布（激活）某些内容；这可以由手动请求或预配置的自动触发器启动。
 * 请求将传递到相应的默认复制代理；一个环境可以有多个默认代理，这些代理始终为此类操作选择。
 * 复制代理将内容“打包”并放置在复制队列中。
 * 在“网站”选项卡中，为各个页面设置了[彩色状态指示器](/help/sites-authoring/publishing-pages.md#determiningpagepublicationstatus)。
-* 内容将从队列中提升，并使用配置的协议传输到Publish环境；通常为HTTP。
-* Publish环境中的servlet接收请求并发布接收的内容；默认servlet为`https://localhost:4503/bin/receive`。
+* 内容会从队列中提取，并使用配置的协议传输到发布环境；通常为HTTP。
+* 发布环境中的servlet接收请求并发布接收的内容；默认servlet为`https://localhost:4503/bin/receive`。
 
-* 可以配置多个创作和Publish环境。
+* 可以配置多个创作和发布环境。
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-### 从Publish复制到创作 {#replicating-from-publish-to-author}
+### 从发布复制到作者 {#replicating-from-publish-to-author}
 
-某些功能允许用户在Publish实例上输入数据。
+某些功能允许用户在发布实例上输入数据。
 
-有时候，需要执行一种称为反向复制的复制，将此数据返回到创作环境，然后再将该数据重新分发到其他Publish环境。 出于安全考虑，必须严格控制从Publish到创作环境的任何流量。
+有时候，需要有一种称为反向复制的复制类型，将此数据返回到创作环境，之后再从创作环境分发到其他发布环境。 出于安全考虑，必须严格控制从发布到创作环境的任何流量。
 
-反向复制使用Publish环境中引用“创作”环境的代理。 此代理将数据放入发件箱。 此发件箱与创作环境中的复制侦听器匹配。 监听器轮询发件箱以收集输入的任何数据，然后根据需要进行分发。 这可确保创作环境控制所有流量。
+反向复制使用引用创作环境的发布环境中的代理。 此代理将数据放入发件箱。 此发件箱与创作环境中的复制侦听器匹配。 监听器轮询发件箱以收集输入的任何数据，然后根据需要进行分发。 这可确保创作环境控制所有流量。
 
-在其他情况下，例如对于Communities功能（例如，论坛、博客、评论和评论），在Publish环境中输入的用户生成内容(UGC)数量很难使用复制在AEM实例之间有效同步。
+在其他情况下，例如对于Communities功能（例如论坛、博客、评论和评论），在发布环境中输入的用户生成内容(UGC)数量很难使用复制功能在AEM实例之间有效同步。
 
 AEM [Communities](/help/communities/overview.md)从未对UGC使用复制。 社区部署需要用于UGC的公用存储（请参阅[社区内容存储](/help/communities/working-with-srp.md)）。
 
@@ -67,7 +67,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 要遵循此示例并使用默认复制代理，请[安装AEM](/help/sites-deploying/deploy.md)：
 
 * 端口`4502`上的创作环境
-* 端口`4503`上的Publish环境
+* 端口`4503`上的发布环境
 
 >[!NOTE]
 >
@@ -75,28 +75,28 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 >
 >* 创作代理：默认代理（发布）
 >
->默认情况下有效禁用(自AEM 6.1起)：
+>默认情况下有效禁用（自AEM 6.1起）：
 >
 >* 创作代理：反向复制代理(publish_reverse)
->* Publish上的代理：反向复制（发件箱）
+>* 发布代理：反向复制（发件箱）
 >
 >要检查代理或队列的状态，请使用&#x200B;**工具**&#x200B;控制台。
->请参阅[监视复制代理](#monitoring-your-replication-agents)。
+>请参阅[监视您的复制代理](#monitoring-your-replication-agents)。
 
-#### 复制(创作到Publish) {#replication-author-to-publish}
+#### 复制（创作到发布） {#replication-author-to-publish}
 
 1. 导航到创作环境上的支持页面。
    **https://localhost:4502/content/we-retail/us/en/experience.html** `<pi>`
 1. 编辑页面，以便添加新文本。
 1. **激活页面**，以便发布更改。
-1. 在Publish环境中打开支持页面：
+1. 在发布环境中打开支持页面：
    **https://localhost:4503/content/we-retail/us/en/experience.html**
 1. 您现在可以看到您在“创作”中输入的更改。
 
 此操作将从创作环境中进行，方法是：
 
 * **默认代理（发布）**
-此代理会将内容复制到默认的Publish实例。
+此代理会将内容复制到默认发布实例。
 可从创作环境的“工具”控制台访问此的详细信息（配置和日志）；或：
   `https://localhost:4502/etc/replication/agents.author/publish.html`。
 
@@ -105,18 +105,18 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 标准AEM安装中提供了以下代理：
 
 * [默认代理](#replication-author-to-publish)
-用于从Author复制到Publish。
+用于从“创作”复制到“发布”。
 
-* Dispatcher Flush
+* Dispatcher 刷新
 用于管理Dispatcher缓存。 有关详细信息，请参阅[使创作环境中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-the-authoring-environment)和[使发布实例中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-a-publishing-instance)。
 
 * [反向复制](#reverse-replication-publish-to-author)
-用于从Publish复制到创作。 反向复制不用于Communities功能，例如论坛、博客和评论。 由于未启用发件箱，因此该功能实际上已被禁用。 使用反向复制需要自定义配置。
+用于从Publish复制到Author。 反向复制不用于Communities功能，例如论坛、博客和评论。 由于未启用发件箱，因此该功能实际上已被禁用。 使用反向复制需要自定义配置。
 
 * 静态代理
 这是一个“将节点的静态表示存储在文件系统中的代理”。
-例如，在默认设置下，内容页面和DAM资源作为HTML或相应的资源格式存储在`/tmp`下。 查看配置的`Settings`和`Rules`选项卡。
-这是请求的，以便当直接从应用程序服务器请求页面时，可以看到内容。 这是一个专用代理，（可能）在大多数情况下不需要它。
+例如，在默认设置下，内容页面和DAM资源将作为HTML或相应的资源格式存储在`/tmp`下。查看配置的`Settings`和`Rules`选项卡。
+这是请求的，以便当直接从应用程序服务器请求页面时，可以看到内容。这是一个专用代理，（可能）在大多数情况下不需要它。
 
 ## 复制代理 — 配置参数 {#replication-agents-configuration-parameters}
 
@@ -160,7 +160,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
   根据环境，代理会使用此用户帐户来：
 
    * 从创作环境收集内容并对其进行打包
-   * 在Publish环境中创建和编写内容
+   * 在发布环境中创建和编写内容
 
   将此字段留空以使用系统用户帐户（在sling中定义为管理员用户的帐户；默认情况下为`admin`）。
 
@@ -170,7 +170,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   >[!CAUTION]
   >
-  >对于Publish环境中的代理，此帐户&#x200B;*必须*&#x200B;具有复制内容所需的创建/写入权限。
+  >对于发布环境中的代理，此帐户&#x200B;*必须*&#x200B;具有复制内容所需的创建/写入权限。
 
   >[!NOTE]
   >
@@ -188,7 +188,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 * **用于反向复制**
 
-  指示此代理是否用于反向复制；将用户输入从Publish返回到创作环境。
+  指示此代理是否用于反向复制；返回用户从“发布”到“创作”环境的输入。
 
 * **别名更新**
 
@@ -207,7 +207,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   此处指定的协议（HTTP或HTTPS）确定传输方法。
 
-  对于Dispatcher Flush代理，仅在您使用基于路径的虚拟主机条目来区分场时使用URI属性，并使用此字段来定位要失效的场。 例如，场 #1 的虚拟主机为 `www.mysite.com/path1/*`，场 #2 的虚拟主机为 `www.mysite.com/path2/*`。您可以使用URL `/path1/invalidate.cache`定位第一个场，使用`/path2/invalidate.cache`定位第二个场。
+  对于Dispatcher Flush代理，仅在您使用基于路径的虚拟主机条目来区分场时使用URI属性，并使用此字段来定位要失效的场。 例如，场 #1 的虚拟主机为 `www.mysite.com/path1/*`，场 #2 的虚拟主机为 `www.mysite.com/path2/*`。 您可以使用 URL `/path1/invalidate.cache` 锁定第一个场，使用 `/path2/invalidate.cache` 锁定第二个场。
 
 * **用户**
 
@@ -219,11 +219,11 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 * **NTLM域**
 
-  NTML身份验证的域。
+  NTLM验证的域。
 
 * **NTLM主机**
 
-  用于NTML身份验证的主机。
+  用于NTLM身份验证的主机。
 
 * **启用宽松SSL**
 
@@ -273,7 +273,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   要使用的HTTP方法。
 
-  对于Dispatcher Flush代理，这几乎总是GET，不应更改(POST是另一个可能的值)。
+  对于Dispatcher Flush代理，这几乎总是GET，不应更改（POST是另一个可能的值）。
 
 * **HTTP标头**
 
@@ -295,7 +295,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   >[!NOTE]
   >
-  >如果您在推荐的默认上下文以外的其他上下文中安装了AEM，则必须在HTTP标头中注册该上下文。 例如：
+  >如果您在建议的默认上下文以外的其他上下文中安装了AEM，则必须在HTTP标头中注册该上下文。例如：
   >`CQ-Handle:/<*yourContext*>{path}`
 
 * **关闭连接**
@@ -348,15 +348,15 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 ## 配置复制代理 {#configuring-your-replication-agents}
 
-有关使用MSSL将复制代理连接到Publish实例的信息，请参阅[使用双向SSL复制](/help/sites-deploying/mssl-replication.md)。
+有关使用MSSL将复制代理连接到发布实例的信息，请参阅[使用双向SSL复制](/help/sites-deploying/mssl-replication.md)。
 
 ### 从创作环境配置复制代理 {#configuring-your-replication-agents-from-the-author-environment}
 
-在创作环境的“工具”选项卡中，您可以配置驻留在创作环境（**个创作代理**）或PublishPublish环境（**个创作代理**）中的复制代理。 以下过程说明了为“创作”环境配置代理，但可用于两者。
+在创作环境的“工具”选项卡中，您可以配置驻留在创作环境（**创作代理**）或发布环境（**发布代理**）中的复制代理。 以下过程说明了为“创作”环境配置代理，但可用于两者。
 
 >[!NOTE]
 >
->当Dispatcher处理创作或Publish实例的HTTP请求时，复制代理发出的HTTP请求必须包含PATH标头。 除了以下过程之外，还必须将PATH标头添加到Dispatcher的客户端标头列表中。 请参阅[/clientheaders （客户端标头）](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#specifying-the-http-headers-to-pass-through-clientheaders)。
+>当Dispatcher处理创作或发布实例的HTTP请求时，复制代理发出的HTTP请求必须包含PATH标头。 除了以下过程之外，还必须将PATH标头添加到Dispatcher的客户端标头列表中。 请参阅[/clientheaders （客户端标头）](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#specifying-the-http-headers-to-pass-through-clientheaders)。
 >
 
 1. 访问AEM中的&#x200B;**工具**&#x200B;选项卡。
@@ -377,42 +377,42 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 ### 配置反向复制 {#configuring-reverse-replication}
 
-反向复制用于将在Publish实例上生成的用户内容取回创作实例。 这通常用于调查表和登记表等功能。
+反向复制用于将发布实例上生成的用户内容取回创作实例。 这通常用于调查表和登记表等功能。
 
 出于安全原因，大多数网络拓扑不允许&#x200B;*来自*&#x200B;的“非军事区域”(将外部服务公开给不受信任网络（如Internet）的子网络)的连接。
 
-由于Publish环境通常位于DMZ中，因此要将内容返回到“创作”环境，必须从“创作”实例启动连接。 此操作可通过以下方式完成：
+由于发布环境通常位于DMZ中，因此要将内容恢复到“创作”环境，必须从“创作”实例启动连接。 此操作可通过以下方式完成：
 
-* 内容所在的Publish环境中的&#x200B;*发件箱*。
+* 内容所在的发布环境中的&#x200B;*发件箱*。
 * 创作环境中的代理（发布），定期轮询发件箱以获取新内容。
 
 >[!NOTE]
 >
->对于AEM [Communities](/help/communities/overview.md)，复制不用于Publish实例上用户生成的内容。 查看[社区内容存储](/help/communities/working-with-srp.md)。
+>对于AEM [Communities](/help/communities/overview.md)，复制不用于发布实例上的用户生成内容。 查看[社区内容存储](/help/communities/working-with-srp.md)。
 
 为此，您需要：
 
-**创作环境中的反向复制代理** — 充当活动组件，从Publish环境中的发件箱中收集信息：
+**创作环境中的反向复制代理** — 充当活动组件以从发布环境中的发件箱中收集信息：
 
 如果要使用反向复制，请确保已激活此代理。
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
-**Publish环境中的反向复制代理（发件箱）** — 被动元素充当“发件箱”。 用户输入放置在此处，代理从此处在创作环境中收集用户输入。
+**发布环境（发件箱）中的反向复制代理** — 被动元素充当“发件箱”。 用户输入放置在此处，代理从此处在创作环境中收集用户输入。
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-### 为多个Publish实例配置复制 {#configuring-replication-for-multiple-publish-instances}
+### 为多个发布实例配置复制 {#configuring-replication-for-multiple-publish-instances}
 
 >[!NOTE]
 >
 >仅复制内容 — 不复制用户数据（用户、用户组和用户配置文件）。
 >
->若要在多个Publish实例间同步用户数据，请启用[用户同步](/help/sites-administering/sync.md)。
+>若要跨多个发布实例同步用户数据，请启用[用户同步](/help/sites-administering/sync.md)。
 
-安装后，已配置默认代理以将内容复制到本地主机的端口4503上运行的Publish实例。
+安装后，已配置默认代理以将内容复制到本地主机的端口4503上运行的发布实例。
 
-要为其他Publish实例配置内容复制，请创建和配置新的复制代理：
+要为其他发布实例配置内容复制，请创建和配置新的复制代理：
 
 1. 在AEM中打开&#x200B;**工具**&#x200B;选项卡。
 1. 在左侧面板中选择&#x200B;**复制**，然后选择作者上的&#x200B;**代理**。
@@ -432,8 +432,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
    * 在&#x200B;**传输**&#x200B;选项卡中：
 
-      * 输入新Publish实例所需的URI；例如，
-
+      * 输入新发布实例所需的URI；例如，
         `https://localhost:4504/bin/receive`。
 
       * 输入用于复制的站点特定用户帐户。
@@ -443,16 +442,16 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 然后，您可以通过更新创作环境中的页面，然后发布页面来测试该操作。
 
-更新将显示在已如上配置的所有Publish实例上。
+更新将显示在已如上配置的所有发布实例上。
 
 如果您遇到任何问题，可以检查创作实例上的日志。 根据所需的详细级别，您还可以使用如上所述的&#x200B;**代理设置**&#x200B;对话框将&#x200B;**日志级别**&#x200B;设置为`Debug`。
 
 >[!NOTE]
 >
->这可以结合使用[代理用户ID](#agentuserid)选择其他内容以复制到各个Publish环境。 对于每个Publish环境：
+>这可以结合使用[代理用户ID](#agentuserid)来选择不同的内容以复制到各个发布环境。 对于每个发布环境：
 >
->1. 配置复制代理以复制到该Publish环境。
->1. 配置用户帐户；具有读取复制到该特定Publish环境的内容所需的访问权限。
+>1. 配置复制代理以复制到该发布环境。
+>1. 配置具有读取复制到该特定发布环境的内容所需的访问权限的用户帐户。
 >1. 将用户帐户指定为复制代理的&#x200B;**代理用户ID**。
 >
 
@@ -462,7 +461,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 1. 在AEM中打开&#x200B;**工具**&#x200B;选项卡。
 1. 单击&#x200B;**部署**。
-1. 选择&#x200B;**复制**，然后选择Publish **上的**&#x200B;代理。
+1. 选择&#x200B;**复制**，然后选择&#x200B;**发布代理**。
 1. 双击&#x200B;**Dispatcher Flush**&#x200B;项以打开概述。
 1. 单击&#x200B;**编辑** - **代理设置**&#x200B;对话框打开：
 
@@ -476,23 +475,22 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
    * 在&#x200B;**传输**&#x200B;选项卡中：
 
-      * 输入新Publish实例所需的URI；例如，
-
+      * 输入新发布实例所需的URI；例如，
         `https://localhost:80/dispatcher/invalidate.cache`。
 
       * 输入用于复制的站点特定用户帐户。
       * 您可以根据需要配置其他参数。
 
-   对于Dispatcher Flush代理，仅在您使用基于路径的虚拟主机条目来区分场时使用URI属性，并使用此字段来定位要失效的场。 例如，场 #1 的虚拟主机为 `www.mysite.com/path1/*`，场 #2 的虚拟主机为 `www.mysite.com/path2/*`。您可以使用URL `/path1/invalidate.cache`定位第一个场，使用`/path2/invalidate.cache`定位第二个场。
+   对于Dispatcher Flush代理，仅在您使用基于路径的虚拟主机条目来区分场时使用URI属性，并使用此字段来定位要失效的场。 例如，场 #1 的虚拟主机为 `www.mysite.com/path1/*`，场 #2 的虚拟主机为 `www.mysite.com/path2/*`。 您可以使用 URL `/path1/invalidate.cache` 锁定第一个场，使用 `/path2/invalidate.cache` 锁定第二个场。
 
    >[!NOTE]
    >
    >如果您在非推荐的默认上下文中安装了AEM，请在&#x200B;**扩展**&#x200B;选项卡中配置[HTTP标头](#extended)。
 
 1. 单击&#x200B;**确定**。
-1. 返回&#x200B;**工具**&#x200B;选项卡，从此处，您可以&#x200B;**激活** **Dispatcher Flush**&#x200B;代理(&lbrace;Publish上的&#x200B;**个代理**)。
+1. 返回&#x200B;**工具**&#x200B;选项卡，从此处，您可以&#x200B;**激活** **Dispatcher Flush**&#x200B;代理（**发布代理**）。
 
-**Dispatcher Flush**&#x200B;复制代理在创作实例上不是活动的。 您可以使用等效的URI在Publish环境中访问同一页面；例如，`https://localhost:4503/etc/replication/agents.publish/flush.html`。
+**Dispatcher Flush**&#x200B;复制代理在创作实例上不是活动的。 您可以使用等效的URI在发布环境中访问同一页面；例如，`https://localhost:4503/etc/replication/agents.publish/flush.html`。
 
 ### 控制对复制代理的访问 {#controlling-access-to-replication-agents}
 
@@ -516,7 +514,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 * `agents.publish`
 * `treeactivation`
 
-两个`agents`保存有关相应环境的配置信息，并且仅在环境运行时处于活动状态。 例如，`agents.publish`仅在Publish环境中使用。 以下屏幕截图显示了创作环境中的Publish代理(随AEM WCM提供)：
+两个`agents`保存有关相应环境的配置信息，并且仅在环境运行时处于活动状态。 例如，`agents.publish`仅用于Publish环境。 以下屏幕截图显示了创作环境中的发布代理（随AEM WCM提供）：
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -548,7 +546,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
    >[!CAUTION]
    >
-   >请勿对Publish实例上的反向复制发件箱使用“测试连接”链接。
+   >请勿对发布实例上的反向复制发件箱使用“测试连接”链接。
    >
    >
    >如果为Outbox队列执行复制测试，则使用每次反向复制重新处理早于测试复制的任何项目。
@@ -561,18 +559,18 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 ## 批量复制 {#batch-replication}
 
-批量复制不会复制单个页面或资产，而是等待触发两者的第一个阈值（基于时间或大小）。
+批量复制不会复制单个页面或资产。 相反，它会等待触发两个阈值中的第一个阈值（基于时间或大小）。
 
 然后，它将所有复制项目打包到一个包中，然后作为一个文件复制到发布服务器。
 
-Publisher将解压缩所有项目，保存它们并向作者报告。
+Publisher将解压缩所有项目，保存这些项目，并向作者报告。
 
 ### 配置批量复制 {#configuring-batch-replication}
 
 1. 转到`http://serveraddress:serverport/siteadmin`
 1. 按屏幕上方的&#x200B;**[!UICONTROL 工具]**&#x200B;图标
 1. 从左侧导航栏中，转到&#x200B;**[!UICONTROL 复制 — 作者上的代理]**，然后双击&#x200B;**[!UICONTROL 默认代理]**。
-   * 您还可以通过直接转到`http://serveraddress:serverport/etc/replication/agents.author/publish.html`访问默认的Publish复制代理
+   * 您还可以通过直接转到`http://serveraddress:serverport/etc/replication/agents.author/publish.html`访问默认的发布复制代理
 1. 按复制队列上方的&#x200B;**[!UICONTROL 编辑]**&#x200B;按钮。
 1. 在以下窗口中，转到&#x200B;**[!UICONTROL 批处理]**&#x200B;选项卡：
    ![批次复制](assets/batchreplication.png)
