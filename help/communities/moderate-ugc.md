@@ -198,10 +198,10 @@ ht-degree: 2%
 预审UGC时，帖子只有在获得审核操作批准之后才会显示在已发布的网站上。 在创建[社区站点](/help/communities/sites-console.md)期间，选中[内容已预审](sites-console.md#moderation)框将启用整个站点的预审。 将组件放在页面上时，可以使用其“编辑”对话框中的设置将支持审核的组件配置为预审：
 
 * [评论](comments.md)和[评论](reviews.md)
-在**[!UICONTROL 用户审核]** > **[!UICONTROL 预审核]**&#x200B;中。
+在&#x200B;**[!UICONTROL 用户审核]** > **[!UICONTROL 预审核]**&#x200B;中。
 
 * [论坛](/help/communities/forum.md)、[构思](/help/communities/ideation-feature.md)、[问题与解答](/help/communities/working-with-qna.md)和[日历](/help/communities/calendar.md)
-在**[!UICONTROL 设置]** > **[!UICONTROL 已审核]**&#x200B;中。
+在&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 已审核]**&#x200B;中。
 
 ### 垃圾邮件检测 {#spam-detection}
 

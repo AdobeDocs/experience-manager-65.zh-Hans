@@ -80,7 +80,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 >* 创作代理：反向复制代理(publish_reverse)
 >* 发布代理：反向复制（发件箱）
 >
->要检查代理或队列的状态，请使用&#x200B;**工具**控制台。
+>要检查代理或队列的状态，请使用&#x200B;**工具**&#x200B;控制台。
 >请参阅[监视您的复制代理](#monitoring-your-replication-agents)。
 
 #### 复制（创作到发布） {#replication-author-to-publish}
@@ -334,7 +334,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   当为页面定义的时间或超时发生时，将触发自动复制（根据需要激活或停用页面）。 这主要用于Dispatcher Flush代理。
 
-* 接收时&#x200B;****
+* 接收时&#x200B;**&#x200B;**
 
   如果选中，代理将在收到复制事件时进行链式复制。
 
@@ -572,7 +572,7 @@ Publisher将解压缩所有项目，保存这些项目，并向作者报告。
 1. 从左侧导航栏中，转到&#x200B;**[!UICONTROL 复制 — 作者上的代理]**，然后双击&#x200B;**[!UICONTROL 默认代理]**。
    * 您还可以通过直接转到`http://serveraddress:serverport/etc/replication/agents.author/publish.html`访问默认的发布复制代理
 1. 按复制队列上方的&#x200B;**[!UICONTROL 编辑]**&#x200B;按钮。
-1. 在以下窗口中，转到&#x200B;**[!UICONTROL 批处理]**选项卡：
+1. 在以下窗口中，转到&#x200B;**[!UICONTROL 批处理]**&#x200B;选项卡：
    ![批次复制](assets/batchreplication.png)
 1. 配置代理。
 
