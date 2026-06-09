@@ -1,5 +1,5 @@
 ---
-title: 示例ContextHub存储候选项
+title: ContextHub 存储候选示例
 description: ContextHub提供了几个可在解决方案中使用的示例商店候选项
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: ab939c3928068a0836674db6207d9774d6033e79
 workflow-type: tm+mt
-source-wordcount: '464'
-ht-degree: 1%
+source-wordcount: '475'
+ht-degree: 2%
 
 ---
 
-# 示例ContextHub存储候选项{#sample-contexthub-store-candidates}
+# ContextHub 存储候选示例{#sample-contexthub-store-candidates}
 
 ContextHub提供了几个可在解决方案中使用的示例商店候选项。 为每个示例提供了以下信息：
 
@@ -110,7 +110,7 @@ contexthub.geolocation存储候选扩展了[`ContextHub.Store.PersistedJSONPStor
 
 >[!NOTE]
 >
->Chrome 50.x中引入的安全策略要求所有与地理位置相关的调用都通过安全连接进行。 因此，如果AEM也通过https运行，则AEM强制对地理位置API调用使用https。 否则，将使用http来遵守相同来源的策略。 有关Chrome中更改的更多详细信息，请参阅[此Google博客文章](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)。
+>Chrome 50.x中引入的安全策略要求所有与地理位置相关的调用都通过安全连接进行。 因此，如果AEM也通过https运行，则AEM强制使用https进行地理位置API调用。 否则，将使用http来遵守相同来源的策略。 有关Chrome中更改的更多详细信息，请参阅[此Google博客文章](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only)。
 
 ## contexthub.surferinfo示例存储候选项 {#contexthub-surferinfo-sample-store-candidate}
 
@@ -351,3 +351,4 @@ contexthub.datetime存储候选扩展了[`ContextHub.Store.PersistedJSONPStore`]
    "authorizableId":"anonymous"
 }
 ```
+

@@ -5,17 +5,17 @@ exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Projects
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 35042bcda42d01a9f21afc2230556475cb2983d8
 workflow-type: tm+mt
-source-wordcount: '1360'
-ht-degree: 27%
+source-wordcount: '1373'
+ht-degree: 30%
 
 ---
 
 
 # 项目 {#projects}
 
-通过“项目”，您可以将资源分组到一个实体中。通用共享环境使您能够轻松管理项目。可以与项目关联的资源类型在 AEM 中称为“拼贴”。拼贴可以包含项目和团队信息、资源、工作流及其他类型的信息，如[项目拼贴](#project-tiles)中详述。
+通过“项目”，您可以将资源分组到一个实体中。 通用共享环境使您能够轻松管理项目。 可以与项目关联的资源类型在 AEM 中称为“拼贴”。 拼贴可以包含项目和团队信息、资源、工作流及其他类型的信息，如[项目拼贴](#project-tiles)中详述。
 
 作为用户，您可以：
 
@@ -25,9 +25,9 @@ ht-degree: 27%
 
 ## 满足访问权限要求 {#access-requirements}
 
-项目使用标准的AEM功能，无需任何其他设置。
+项目是标准的AEM功能，无需任何其他设置。
 
-但是，对于项目中的用户，如果要在使用项目（如在创建项目、创建任务/工作流或查看和管理团队时）时查看其他用户/组，这些用户需要拥有`/home/users`和`/home/groups`的读取权限。
+但是，对于项目中的用户，如果要在使用项目（如在创建项目、创建任务/工作流或查看和管理团队时）时查看其他用户/组，这些用户需要对`/home/users`和`/home/groups`具有读取权限。
 
 最简单的方法是授予&#x200B;**projects-users**&#x200B;组对`/home/users`和`/home/groups`的读取权限。
 
@@ -37,7 +37,7 @@ ht-degree: 27%
 
 ![项目控制台](assets/screen-shot_2019-03-05at125110.png)
 
-项目控制台与AEM中的其他控制台类似，允许对单个项目执行多个操作，并调整您的项目视图。
+项目控制台与AEM中的其他控制台类似。 它允许对单个项目执行多个操作，并调整您的项目视图。
 
 ### 切换模式 {#modes}
 
@@ -81,7 +81,7 @@ ht-degree: 27%
 
 项目由您希望一起管理的不同类型的信息组成。 此信息由不同的&#x200B;**磁贴**&#x200B;表示。
 
-您可以将以下图块与您的项目关联。
+您可以将以下拼贴与项目关联。
 
 * [Assets](#assets)
 * [资源收藏集](#asset-collections)
@@ -105,11 +105,11 @@ ht-degree: 27%
 
 ![“资源”拼贴](assets/project-tile-assets.png)
 
-您可以直接在图块中上传资产。
+您可以直接在该拼贴中上传资源。
 
 ### 资源收藏集 {#asset-collections}
 
-与资源类似，您可以直接将[资源收藏集](/help/assets/manage-collections.md)添加到项目中。您可以在资源中定义收藏集。
+与资源类似，您可以直接将[资源收藏集](/help/assets/manage-collections.md)添加到项目中。 您可以在资源中定义收藏集。
 
 ![资产收藏集拼贴](assets/project-tile-asset-collection.png)
 
@@ -150,11 +150,11 @@ ht-degree: 27%
 
 ### 团队 {#team}
 
-在此拼贴中，您可以指定项目团队的成员。编辑时，您可以输入团队成员的姓名并分配用户角色。
+在此拼贴中，您可以指定项目团队的成员。 编辑时，您可以输入团队成员的姓名并分配用户角色。
 
 ![“团队”拼贴](assets/project-tile-team.png)
 
-您可以在团队中添加和删除团队成员。此外，您还可以编辑向团队成员分配的[用户角色](#userroles)。
+您可以在团队中添加和删除团队成员。 此外，您还可以编辑向团队成员分配的[用户角色](#userroles)。
 
 ### 登陆页面 {#landing-pages}
 
@@ -190,7 +190,7 @@ ht-degree: 27%
 
 ### 任务 {#tasks}
 
-“任务”拼贴允许您监测任何项目相关任务（包括工作流）的状态。[处理任务](/help/sites-authoring/task-content.md)中详细介绍了任务。
+“任务”拼贴允许您监测任何项目相关任务（包括工作流）的状态。 [处理任务](/help/sites-authoring/task-content.md)中详细介绍了任务。
 
 ![任务拼贴](assets/project-tile-tasks.png)
 
@@ -203,14 +203,14 @@ ht-degree: 27%
 * **[翻译项目](/help/sites-administering/translation.md)** — 这是用于管理翻译相关活动的参考示例。 它包括基本角色和用于管理翻译的工作流。
 * **简单项目** — 这是任何不适合其他类别的项目的参考示例。 它包括三个基本角色和四个常规的AEM工作流程。
 
-根据您选择的模板，您在项目中可以选择不同的选项，例如提供的用户角色和工作流。
+根据您选择的模板，项目中有不同的可用选项，例如提供的用户角色和工作流。
 
 ## 项目中的用户角色 {#user-roles-in-a-project}
 
 不同的用户角色在项目模板中定义，其使用有两个主要原因：
 
 1. 权限：用户角色属于列出的三个类别之一：观察者、编辑者、所有者。 例如，摄影师或撰稿人将拥有与编辑者相同的权限。 权限决定了用户可以对项目中的内容执行的操作。
-1. 工作流：工作流可确定在项目中向谁分配任务。 任务可以与项目角色关联。例如，可以将任务分配给摄影师，以便具有摄影师角色的所有团队成员都可以获得该任务。
+1. 工作流：工作流可确定在项目中向谁分配任务。 任务可以与项目角色关联。 例如，可以将任务分配给摄影师，以便具有摄影师角色的所有团队成员都将任务分配给他们。
 
 所有项目都支持以下默认角色，以便您管理安全和控制权限。
 
@@ -224,11 +224,11 @@ ht-degree: 27%
 
 ### 自动组创建 {#auto-group-creation}
 
-在创建项目并将用户添加到各种角色时，将自动创建与项目关联的组以管理关联的权限。
+在创建项目并将用户添加各种角色时，将自动创建与项目关联的组以管理关联的权限。
 
-例如，名为Myproject的项目将有三个组&#x200B;**Myproject所有者**、**Myproject编辑器**、**Myproject观察者**。
+例如，名为Myproject的项目将有三个组：**Myproject所有者**、**Myproject编辑器**、**Myproject观察者**。
 
-如果删除了项目，则只有在删除项目时选择适当的选项[时，才会删除这些组。](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project)管理员还可以手动删除&#x200B;**工具** > **安全** > **组**&#x200B;中的组。
+如果删除了项目，则只有在删除项目时选择适当的选项[时，才会删除这些组。](/help/sites-authoring/touch-ui-managing-projects.md#deleting-a-project) 管理员还可以手动删除&#x200B;**工具** > **安全** > **组**&#x200B;中的组。
 
 ## 其他资源 {#additional-resources}
 

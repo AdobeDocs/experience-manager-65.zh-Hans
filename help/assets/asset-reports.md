@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
 workflow-type: tm+mt
-source-wordcount: '1171'
+source-wordcount: '1173'
 ht-degree: 8%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 8%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 通过资产报告，您可以评估[!DNL Adobe Experience Manager Assets]部署的实用程序。 通过[!DNL Assets]，您可以为数字资源生成各种报告。 这些报表提供关于系统使用情况、用户如何与资源交互以及下载和共享哪些资源的有用信息。
@@ -99,7 +99,7 @@ ht-degree: 8%
 
    **[!UICONTROL 链接共享]**&#x200B;报表显示从[!DNL Assets]内与外部用户共享的资产的URL。 其中包括共享资产的用户的电子邮件 ID、接受共享资产的用户的电子邮件 ID、链接的共享日期和过期日期。 列不可自定义。
 
-   **[!UICONTROL 链接共享]**&#x200B;报告不包含子文件夹和呈现形式的选项，因为它仅发布显示在`/var/dam/share`下的共享URL。
+   **[!UICONTROL 链接共享]**&#x200B;报表不包含子文件夹和呈现形式的选项，因为它仅发布显示在`/var/dam/share`下的共享URL。
 
    链接共享报告的![详细信息页面](assets/link_share.png)
 
@@ -149,7 +149,7 @@ ht-degree: 8%
 
    ![从jcr:content](assets/property_picker.png)中的路径映射属性路径
 
-   要添加更多自定义列，请单击“添加”**&#x200B;**&#x200B;并重复步骤5和6。
+   要添加更多自定义列，请单击“添加”****&#x200B;并重复步骤5和6。
 
 1. 单击工具栏中的&#x200B;**[!UICONTROL 创建]**。 此时将显示一条消息，通知已启动报表生成。
 
@@ -168,4 +168,4 @@ ht-degree: 8%
 
 * 删除不再需要的报表。 使用DAM报告清除服务中的配置选项来配置清除报告的标准。
 
-* 如果未生成磁盘使用情况报表，并且您使用的是[!DNL Dynamic Media]，请确保所有资产都正确继续。 要解决此问题，请重新处理资源，然后再次生成报表。
+* 如果未生成磁盘使用情况报表，并且您使用的是[!DNL Dynamic Media]，请确保正确处理所有资源。 要解决此问题，请重新处理资源，然后再次生成报表。

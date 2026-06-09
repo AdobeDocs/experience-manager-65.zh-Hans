@@ -1,20 +1,20 @@
 ---
 title: 内容片段 – 关于删除的注意事项
-description: 在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
+description: 在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
 feature: Content Fragments
 role: User
 exl-id: 6212457e-a171-4c33-8d19-54c26516e981
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: a77b577341050316ce60ae809a4912bbbbce974c
 workflow-type: tm+mt
-source-wordcount: '510'
-ht-degree: 79%
+source-wordcount: '517'
+ht-degree: 72%
 
 ---
 
 # 内容片段 – 删除注意事项 {#content-fragments-delete-considerations}
 
-在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
+在 AEM 中定义内容片段删除策略之前，请查看这些重要注意事项。 内容片段是用于投放 headless 内容的强大工具，必须仔细考虑删除这些片段的影响。
 
 ## 权限 – 删除或不删除 {#permissions-delete-or-not-delete}
 
@@ -46,13 +46,13 @@ ht-degree: 79%
 
 对于需要编辑／更新内容片段的用户，**不允许他们删除整个片段**，必须分配特定权限，因为内容片段编辑器的基本操作要求可以删除临时子元素。
 
-例如，在处理变量时；在编辑元数据或管理关联的内容时，也可以。
+例如，在处理变量时、编辑元数据时，或管理关联的内容时。
 
 >[!NOTE]
 >
->编辑/更新内容片段所需的删除权限包含在通过用户和/或群组管理[&#128279;](/help/sites-administering/security.md#managing-permissions)分配的删除权限中。
+>编辑/更新内容片段所需的删除权限包含在通过用户和/或群组管理](/help/sites-administering/security.md#managing-permissions)分配的删除权限[中。
 
-编辑/更新片段所需的权限需要应用于包含内容片段的节点或适当的父节点（在 `/content/dam` 下的任何级别）。当分配给此类父节点时，权限将应用于该分支中的所有节点。
+编辑/更新片段所需的权限需要应用于包含内容片段的节点或适当的父节点（在 `/content/dam` 下的任何级别）。 当分配给此类父节点时，权限将应用于该分支中的所有节点。
 
 例如，将包含所有内容片段的文件夹，例如：
 
@@ -62,7 +62,7 @@ ht-degree: 79%
 >
 >在 `/content/dam` 也是可能的，因为此处存储了所有内容片段。
 >
->但是，此操作会将相同的删除权限应用到 *全部* 其他资产类型。
+>但是，此操作会将相同的删除权限应用于&#x200B;*所有*&#x200B;其他资产类型。
 
 允许特定用户和/或群组编辑/更新内容片段的先决条件是：
 
@@ -74,7 +74,7 @@ ht-degree: 79%
 
    * `jcr:addChildNodes`、`jcr:modifyProperties`
 
-* 对于 `jcr:content`所有内容片段的节点：
+* 对于所有内容片段的`jcr:content`节点：
 
    * `jcr:addChildNodes`、`jcr:modifyProperties` 和 `jcr:removeChildNodes`
 
@@ -82,9 +82,9 @@ ht-degree: 79%
 
    * `jcr:addChildNodes`, `jcr:modifyProperties` 和 `jcr:removeChildNodes`, `jcr:removeNode`
 
-这些`remove`权限必须在CRXDE Lite[&#128279;](/help/sites-administering/user-group-ac-admin.md#access-right-management)内通过访问控制列表进行管理。
+这些`remove`权限必须由CRXDE Lite](/help/sites-administering/user-group-ac-admin.md#access-right-management)中的访问控制列表[管理。
 
-`add`和`modify`权限也可以在CRXDE Lite中或使用“用户管理”控制台进行管理。
+`add`和`modify`权限也可以在CRXDE Lite中管理，也可以使用“用户管理”控制台进行管理。
 
 例如，组`content-authors-no-delete`的`remove`权限定义：
 
