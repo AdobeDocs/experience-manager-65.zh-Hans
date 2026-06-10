@@ -85,4 +85,4 @@ JEE上的AEM Forms提供了在WorkspaceHTML中使用自适应表单的功能。
    >有关创建自适应表单的详细信息，请参阅[创建自适应表单](../../forms/using/creating-adaptive-form.md)。
    >
    >
-   >有关创建进程的详细信息，请参阅[创建和管理进程](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html)。
+   >有关创建进程的详细信息，请参阅[创建和管理进程](https://help.adobe.com/zh_CN/AEMForms/6.1/WorkbenchHelp/WS92d06802c76abadb-1cc35bda128261a20dd-7ff7.2.html)。
