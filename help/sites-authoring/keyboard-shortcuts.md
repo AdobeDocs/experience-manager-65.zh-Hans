@@ -9,7 +9,7 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 1785216a13a809117cf178bd2dabf921e36dd9af
+source-git-commit: 512fb704c7edafc84f6c5856d076e7de503d5c22
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 72%
@@ -40,7 +40,7 @@ ht-degree: 72%
 | 控制台 | `?` | 键盘快捷键帮助 |
 |  | `/` | 调用[搜索](/help/sites-authoring/search.md) |
 |  | `Alt+`&lt;`Number`> | 切换要查看的[边栏选择器](/help/sites-authoring/basic-handling.md#rail-selector)选项 |
-|  | `Backtick` | 隐藏边栏 |
+|  | `` ` `` | 隐藏边栏 |
 |  | `e` | 编辑 |
 |  | `p` | 属性 |
 |  | `m` | 移动 |
