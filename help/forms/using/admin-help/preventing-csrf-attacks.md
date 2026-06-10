@@ -36,7 +36,7 @@ ht-degree: 0%
 * 在AEM forms SOAP或REST端点上发出HTTP请求的任何桌面客户端
 * 打开新的浏览器窗口并输入任何AEM forms web应用程序登录页的URL时
 
-在SOAP和REST端点上允许空反向链接。 在所有URI登录页面（如/adminui和/contentspace）及其对应的映射资源上也允许空反向链接。 例如， /contentspace的映射servlet是/contentspace/faces/jsp/login.jsp ，它应该是空引用异常。 只有在为Web应用程序启用GET过滤时才需要此例外。 您的应用程序可以指定是否允许空反向链接。 请参阅[强化和AEM表单的安全性](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)中的“防止跨站点请求伪造攻击”。
+在SOAP和REST端点上允许空反向链接。 在所有URI登录页面（如/adminui和/contentspace）及其对应的映射资源上也允许空反向链接。 例如， /contentspace的映射servlet是/contentspace/faces/jsp/login.jsp ，它应该是空引用异常。 只有在为Web应用程序启用GET过滤时才需要此例外。 您的应用程序可以指定是否允许空反向链接。 请参阅[强化和AEM表单的安全性](https://help.adobe.com/zh_CN/livecycle/11.0/HardeningSecurity/index.html)中的“防止跨站点请求伪造攻击”。
 
 **允许的反向链接异常：**&#x200B;允许的反向链接异常是允许的反向链接列表的子列表，从中阻止请求。 允许的“引用异常”专用于某个Web应用程序。 如果不允许允许的反向链接子集调用特定Web应用程序，您可以通过“允许的反向链接例外”来阻止列表反向链接。 在web.xml文件中为应用程序指定了允许的反向链接例外。 (请参阅“帮助和Tutorials”页面上的“强化和保护AEM表单的安全性”中的“防止跨站点请求伪造攻击”。)
 
@@ -47,7 +47,7 @@ AEM Forms提供反向链接筛选功能，可帮助阻止CSRF攻击。 反向链
 1. Forms服务器检查用于调用的HTTP方法：
 
    * 如果POST，Forms服务器将执行反向链接标头检查。
-   * 如果是GET，Forms服务器将绕过反向链接检查，除非CSRF_CHECK_GETS设置为true（在这种情况下，它将执行反向链接标头检查）。 在web.xml文件中为应用程序指定CSRF_CHECK_GETS。 （请参阅[强化和安全指南](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html)中的“防止跨站点请求伪造攻击”。）
+   * 如果是GET，Forms服务器将绕过反向链接检查，除非CSRF_CHECK_GETS设置为true（在这种情况下，它将执行反向链接标头检查）。 在web.xml文件中为应用程序指定CSRF_CHECK_GETS。 （请参阅[强化和安全指南](https://help.adobe.com/zh_CN/livecycle/11.0/HardeningSecurity/index.html)中的“防止跨站点请求伪造攻击”。）
 
 1. Forms服务器检查请求的URI是否已列入允许列表：
 

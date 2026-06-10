@@ -111,7 +111,7 @@ ht-degree: 0%
 
 Designer允许您使用示例XML数据预览和测试表单。 建议您经常使用示例数据测试表单，以确保表单正确呈现。
 
-如果您没有示例数据，Designer可以创建它，也可以自己创建它。 （请参阅[自动生成预览表单的示例数据](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2)和[创建预览表单的示例数据](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2)。）
+如果您没有示例数据，Designer可以创建它，也可以自己创建它。 （请参阅[自动生成预览表单的示例数据](https://help.adobe.com/zh_CN/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2)和[创建预览表单的示例数据](https://help.adobe.com/zh_CN/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2)。）
 
 使用示例数据源测试表单可确保映射数据和字段，并确保重复的子表单按预期重复。 您可以创建一个平衡的表单布局，为每个对象提供适当的空间以显示合并的数据。
 

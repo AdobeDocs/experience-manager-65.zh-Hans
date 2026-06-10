@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # 配置共享队列{#configuring-shared-queues}
 
-共享队列允许您有效地配置和管理用户队列。 用户队列只是分配给用户的所有任务，有关详细信息，请参阅[待办事项列表](https://help.adobe.com/en_US/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html)。 您可以根据组织需求分配、取消分配和重新分配用户队列。 您可以通过两种方式管理共享队列：
+共享队列允许您有效地配置和管理用户队列。 用户队列只是分配给用户的所有任务，有关详细信息，请参阅[待办事项列表](https://help.adobe.com/zh_CN/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html)。 您可以根据组织需求分配、取消分配和重新分配用户队列。 您可以通过两种方式管理共享队列：
 
 **管理对用户的访问**
 

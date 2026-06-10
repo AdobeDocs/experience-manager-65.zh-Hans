@@ -79,7 +79,7 @@ ht-degree: 1%
    </DDX>
    ```
 
-   有关自定义水印外观、文本和对齐的信息，请参阅[汇编程序服务和DDX引用](https://help.adobe.com/en_US/livecycle/11.0/ddxRef.pdf)文档中的添加和删除水印和背景。
+   有关自定义水印外观、文本和对齐的信息，请参阅[汇编程序服务和DDX引用](https://help.adobe.com/zh_CN/livecycle/11.0/ddxRef.pdf)文档中的添加和删除水印和背景。
 
    >[!NOTE]
    >

@@ -86,7 +86,7 @@ ht-degree: 0%
 
 1. 完成所有部分后，单击&#x200B;**[!UICONTROL 保存]**&#x200B;或&#x200B;**[!UICONTROL 另存为]**，并提供设置的名称。
 
-可以自定义对各种文件类型的支持。 (请参阅[使用AEM表单编程](https://www.adobe.com/go/learn_lc_programming_11)中的“添加对其他本机文件格式的支持[&#128279;](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)”。)
+可以自定义对各种文件类型的支持。 (请参阅[使用AEM表单编程](https://www.adobe.com/go/learn_lc_programming_11)中的“添加对其他本机文件格式的支持[&#128279;](https://help.adobe.com/zh_CN/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)”。)
 
 ## 更改默认设置 {#change-the-default-settings}
 
@@ -620,7 +620,7 @@ NOTE to WRITER: Unfinished sentence above.
 
 ## 其他应用程序设置（仅限Windows） {#other-applications-settings-windows-only}
 
-您不能通过管理控制台更改其他应用程序的设置；它们显示所支持文件类型的文件扩展名。 有关访问这些设置的说明，请参阅[创建或编辑文件类型设置](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html)。
+您不能通过管理控制台更改其他应用程序的设置；它们显示所支持文件类型的文件扩展名。 有关访问这些设置的说明，请参阅[创建或编辑文件类型设置](https://help.adobe.com/zh_CN/AEMForms/6.1/AdminHelp/WS92d06802c76abadb-5145d5d12905ce07e7-7e42.2.html)。
 
 * Corel WordPerfect： `wpd`
 * AdobePageMaker： `pmd, pm6, p65, pm`
