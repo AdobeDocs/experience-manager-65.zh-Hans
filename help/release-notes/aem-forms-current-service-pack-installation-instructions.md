@@ -5,9 +5,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
 workflow-type: tm+mt
-source-wordcount: '2149'
+source-wordcount: '2144'
 ht-degree: 91%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 91%
 
 | 产品 | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| 版本 | 6.5.24.0 |
+| 版本 | 6.5.25.0 |
 | 类型 | 服务包发行 |
-| 日期 | 2025年12月4日 |
+| 日期 | 2026年6月10日 |
 | 下载 URL | [最新 AEM Forms 版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans) |
 
 >[!NOTE]
@@ -176,8 +176,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 您可以通过以下两种方式之一自动安装 [!DNL ExperienceManager] 服务包。<!--       UPDATE FOR EACH NEW RELEASE -->
 
-* 当服务器在线时，将包放入 `../crx-quickstart/install` 文件夹中。
-该包会自动安装。
+* 当服务器联机时，将包放入`../crx-quickstart/install`文件夹中。
+软件包会自动安装。
 
 * 使用[包管理器的 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)。 请使用 `cmd=install&recursive=true` 以便安装嵌套的包。
 
