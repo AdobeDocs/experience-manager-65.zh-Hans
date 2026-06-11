@@ -9,9 +9,9 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 518481c75e22655bce0b104fe2eb5614f1d8a3b9
+source-git-commit: fddc5a648d8945e84283ce87725e64da57f1daed
 workflow-type: tm+mt
-source-wordcount: '3920'
+source-wordcount: '4096'
 ht-degree: 6%
 
 ---
@@ -923,7 +923,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | 添加支持 | 删除了支持 | 已弃用的支持 |
 | -------------- | --------------- | ------------------- |
 | ® Office 2024 | | ® Office 2021 |
-| 适用于PDF Generator和相关文档服务的Adobe Acrobat Pro DC（连续跟踪，最新版本） | Adobe Acrobat 2020（传统途径） |  |
+| 适用于PDF Generator和相关文档服务的Adobe Acrobat Pro DC（连续跟踪，最新版本） | Adobe Acrobat 2020（传统途径） | JBoss® Enterprise Application Platform (EAP) 7.4.10 |
 
 ### 版本6.5.23.0（2025年6月6日）
 
@@ -934,6 +934,7 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | Microsoft® SQL 服务器 2022 | Centos 7 | Microsoft® SQL 服务器 2019 |
 | ® SQL Server JDBC驱动程序12.10.0 | Red Hat® Enterprise Linux® 7（内核4.x）（64位） | ® SQL Server JDBC驱动程序8.2 |
 | Red Hat® Enterprise Linux® 9（内核5.x）（64位） | | Red Hat® Enterprise Linux® 8（内核4.x）（64位） |
+| 适用于PDF Generator和相关文档服务的Adobe Acrobat 2020 （Classic途径） | | ® Office 2019 |
 
 ### 版本6.5.22.0（2024年11月29日）
 
@@ -946,7 +947,9 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | 添加支持 | 删除了支持 | 已弃用的支持 |
 | -------------- | --------------- | ------------------- |
-| ® Office 2021 |  |  |
+| ® Office 2021 | ® Office Visio 2019 |  |
+|  | ®出版社2019年 |  |
+|  | ®2019年项目 |  |
 
 ### 版本6.5.19.1（2023年12月15日）
 
@@ -963,6 +966,21 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | 添加支持 | 删除了支持 | 已弃用的支持 |
 | -------------- | --------------- | ------------------- |
 | MongoDB 企业版 4.4 | Windows Server 2016（64位） | ® Windows Server 2019（64位） |
+| Oracle WebLogic Server 14c | MongoDB 企业版 4.0 | ® Active Directory 2016 |
+| My SQL JDBC连接器8 | Oracle Database 12c发行版2 (12.2.0.1.0) |  |
+| Active Directory 2022 | MySQL 5.7.35 |  |
+| ® Windows Server 2022（64位） | Microsoft® SQL 服务器 2016 |  |
+|  | JBoss® EAP 7.1.4 |  |
+|  | My SQL JDBC连接器5.1.44 |  |
+|  | ® SQL Server JDBC驱动程序6.2.1.0 |  |
+|  | ® SQL Server JDBC驱动程序6.2.2.0 |  |
+|  | 适用于SQL Server的® JDBC驱动程序8.x |  |
+|  | ® Sharepoint 2016 |  |
+|  | ® Office 2016 |  |
+|  | ® Office Visio 2016 |  |
+|  | ®出版社2016年 |  |
+|  | ®项目2016 |  |
+|  | OpenOffice 4.1.2 |  |
 |  | Acrobat 2017 (Classic Track)版本17.011.30078或更高版本 |  |
 
 ### 版本6.5.13.0（2022年6月2日）
@@ -978,6 +996,14 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 | 添加支持 | 删除了支持 | 已弃用的支持 |
 | -------------- | --------------- | ------------------- |
 |  | ® J9虚拟机（内部版本2.8、JRE 1.8.0） | MongoDB 企业版 4.0 |
+|  | Oracle Database 12c版本1 | MongoDB 企业版 4.2 |
+|  | Oracle数据库18c | ® DB2® 11.1 |
+|  | Oracle Unified Directory (OUD) 11g版本2 | Oracle Database 12c版本2 |
+|  | ®莲花多米诺9.0 | MySQL 5.7.35 |
+|  | ® FileNet 5.2 | ® SQL Server JDBC驱动程序6.2.1.0 |
+|  | Adobe Flash Player | JBoss® Enterprise Application Platform (EAP) 7.1.4 |
+|  | | ® Content Manager Server 8.5修复包2 |
+|  | | ® Content Manager客户端8.5 |
 |  | | Microsoft® SQL 服务器 2016 |
 |  | | Microsoft® Windows Server 2016 |
 
@@ -986,7 +1012,10 @@ The following platforms are marked as deprecated with AEM Forms 6.5.10.0 release
 
 | 添加支持 | 删除了支持 | 已弃用的支持 |
 | -------------- | --------------- | ------------------- |
-| Oracle Java™ SE 11（64位）适用于应用程序服务器JBoss® EAP 7.4的SDK。 | | [Adobe Acrobat 2017 — 对Adobe Acrobat 2017的核心支持将于2022年6月6日终止。](https://helpx.adobe.com/cn/support/programs/eol-matrix.html) |
+| Oracle Java™ SE 11（64位）适用于应用程序服务器JBoss® EAP 7.4的SDK。 | | Adobe Acrobat 2017 |
+|  | | Red Hat® Enterprise Linux® 7（内核3.x）（64位） |
+|  | | ® Windows Server 2016（64位） |
+|  | | ® Office 2016 |
 |  | | OpenOffice 4.1.2 |
 
 >[!NOTE]
