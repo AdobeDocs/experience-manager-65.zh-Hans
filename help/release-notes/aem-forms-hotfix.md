@@ -5,10 +5,10 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 1b8290b3e1b7e5f62cda1dd45561bc4e3c09703f
+source-git-commit: fddc5a648d8945e84283ce87725e64da57f1daed
 workflow-type: tm+mt
-source-wordcount: '2259'
-ht-degree: 81%
+source-wordcount: '4289'
+ht-degree: 71%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 81%
 
 >[!NOTE]
 >
-> 这些热修复补丁是累积性的，其中包含所有先前的修复。当您将最新的热修复补丁应用于某个版本时，它不仅会解决最新的问题，还会同时集成此前所有的错误修复和功能改进。
+> 这些热修复补丁是累积性的，其中包含所有先前的修复。 当您将最新的热修复补丁应用于某个版本时，它不仅会解决最新的问题，还会同时集成此前所有的错误修复和功能改进。
 
 ## AEM Forms 热修复补丁 {#hotfix-for-aem-forms}
 
@@ -28,6 +28,22 @@ ht-degree: 81%
     <td><strong>日期</strong></td>
     <td><strong>热修复补丁下载链接（AEM 软件分发链接）</strong></td>
     <td><strong>修复的问题</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>2026年6月8日</strong><br>
+      <em>适用于：</em> AEM 6.5.25.0 WAR/JEE部署（包括JEE上的AEM Forms）<br>
+    </td>
+    <td>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-service-pkg-6.5.25-NPR-44100-B0002.zip">适用于AEM Service Pack 6.5.25.0的修补程序(NPR-44100)</a></li>
+    </ul>
+    </td>
+    <td>
+    <ul>
+    <li><b>NPR-44100</b>在WAR/JEE部署上安装AEM 6.5 Service Pack 25.0后，<code>com.adobe.cq.screens.sessions</code>捆绑包将保持已安装状态并且从不变为活动状态。</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
@@ -43,8 +59,8 @@ ht-degree: 81%
     <li>Windows：适用于Weblogic JEE服务器的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/weblogic/adobe-aem-forms-jee-hotfix-6.5.24.0-win-weblogic.zip">适用于Windows上AEM Service Pack 6.5.24.0的修补程序</a></li>
     <li>Linux：适用于Weblogic JEE服务器的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/weblogic/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-weblogic.tar.gz">适用于Linux上AEM Service Pack 6.5.24.0的修补程序</a></li>
     <strong>Websphere：</strong>
-    <li>Windows：<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-win-websphere.zip">适用于在 Websphere JEE 服务器上运行的 AEM 服务包 6.5.24.0 的热修复补丁</a></li>
-    <li>Linux：<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-websphere.zip">适用于在 Linux 上运行的 Websphere JEE 服务器的 AEM 服务包 6.5.24.0 的热修复补丁</a></li>
+    <li>Windows：适用于Websphere JEE服务器的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-win-websphere.zip">适用于Windows上AEM Service Pack 6.5.24.0的修补程序</a></li>
+    <li>Linux：适用于Websphere JEE服务器的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-24-0-hotfix-patch/websphere/adobe-aem-forms-jee-hotfix-6.5.24.0-linux-websphere.zip">适用于Linux上AEM Service Pack 6.5.24.0的修补程序</a></li>
     </ul>
     </td>
     <td>
@@ -126,7 +142,7 @@ ht-degree: 81%
     <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/weblogic/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-weblogic.tar.gz">适用于在 Linux 上运行的 Weblogic JEE 服务器的 AEM 服务包 6.5.23.0 的热修复补丁</a></li>
     <strong>Websphere：</strong>
     <li>Windows — 适用于Websphere JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-win-websphere.zip">适用于AEM Service Pack 6.5.23.0的修补程序</a></li>
-    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序，用于Websphere JEE服务器<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-websphere.tar.gz"></a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序，用于Websphere JEE服务器</a><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-23-0-hotfix-3/websphere/adobe-aem-forms-jee-hotfix3-6.5.23.0-linux-websphere.tar.gz"></li>
     </ul>
     </td>
     <td>
@@ -160,13 +176,13 @@ ht-degree: 81%
     <li>Linux- <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/weblogic/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-weblogic.tar.gz">适用于在 Linux 上运行的 Weblogic JEE 服务器的 AEM 服务包 6.5.23.0 的热修复补丁</a></li>
     <li><strong>Websphere：</strong></li>
     <li>Windows — 适用于Websphere JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-win-websphere.zip">适用于AEM Service Pack 6.5.23.0的修补程序</a></li>
-    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序，用于Websphere JEE服务器<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip"></a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.23.0的修补程序，用于Websphere JEE服务器</a><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-0-hotfix-02/websphere/adobe-aem-forms-jee-hotfix2-6.5.23.0-linux-websphere.zip"></li>
     </ul>
     </td>
     <td>
     <ul>
-    <li>通过修复 Adobe Experience Manager（AEM）Forms 中的远程代码执行（RCE）漏洞来增强安全性。该问题与管理用户界面（UI）中的 Struts 开发模式相关，此模式允许通过调试功能执行任意的对象图导航语言（OGNL）计算。此修复确保禁用 Struts 开发模式，并应用适当的安全过滤器以防止未经授权的访问。</li>
-    <li>在 Adobe Experience Manager（AEM）Forms 的电子文档组件（EDC）模块中，增强了针对可扩展标记语言（XML）外部实体（XXE）漏洞的防护。这些漏洞源于对缺少 XXE 防护的 XML 文档处理不当，这可能会导致本地文件被读取。此修复包括：
+    <li>通过修复 Adobe Experience Manager（AEM）Forms 中的远程代码执行（RCE）漏洞来增强安全性。 该问题与管理用户界面（UI）中的 Struts 开发模式相关，此模式允许通过调试功能执行任意的对象图导航语言（OGNL）计算。 此修复确保禁用 Struts 开发模式，并应用适当的安全过滤器以防止未经授权的访问。</li>
+    <li>改进了针对Adobe Experience Manager (AEM) Forms的电子文档组件(EDC)模块中的可扩展标记语言(XML)外部实体(XXE)漏洞的保护。这些漏洞是由于不正确处理没有XXE保护的XML文档而造成的，这可能导致本地文件读取。此修复包括：
       <ul>
         <li>确保在 SecurityCheckHandler 类中使用的 DocumentBuilderFactory 已正确配置，以防止 XXE 攻击。</li>
         <li>更新 EDC Web 服务以安全地处理 XML 文档，从而防止出现对本地文件的未经授权的访问。</li>
@@ -191,8 +207,8 @@ ht-degree: 81%
     </td>
     <td>
     <ul>
-    <li>通过修复 Adobe Experience Manager（AEM）Forms 中的远程代码执行（RCE）漏洞来增强安全性。该问题与管理用户界面（UI）中的 Struts 开发模式相关，此模式允许通过调试功能执行任意的对象图导航语言（OGNL）计算。此修复确保禁用 Struts 开发模式，并应用适当的安全过滤器以防止未经授权的访问。</li>
-    <li>在 Adobe Experience Manager（AEM）Forms 的文档安全模块中，增强了针对可扩展标记语言（XML）外部实体（XXE）漏洞的防护。这些漏洞源于对缺少 XXE 防护的 XML 文档处理不当，这可能会导致本地文件被读取。此修复包括：
+    <li>通过修复 Adobe Experience Manager（AEM）Forms 中的远程代码执行（RCE）漏洞来增强安全性。 该问题与管理用户界面（UI）中的 Struts 开发模式相关，此模式允许通过调试功能执行任意的对象图导航语言（OGNL）计算。 此修复确保禁用 Struts 开发模式，并应用适当的安全过滤器以防止未经授权的访问。</li>
+    <li>改进了针对Adobe Experience Manager (AEM) Forms的Document Security模块中的可扩展标记语言(XML)外部实体(XXE)漏洞的保护。这些漏洞是由于不正确处理没有XXE保护的XML文档而造成的，这可能导致本地文件读取。此修复包括：
       <ul>
         <li>确保在 SecurityCheckHandler 类中使用的 DocumentBuilderFactory 已正确配置，以防止 XXE 攻击。</li>
         <li>更新文档安全 Web 服务以安全地处理 XML 文档，从而防止出现对本地文件的未经授权的访问。</li>
@@ -202,7 +218,7 @@ ht-degree: 81%
     </td>    
   </tr>
   <tr>
-    <td>2025 年 7 月 10 日 - </td>
+    <td>2025 年 7 月 10 日 -</td>
     <td>
     <ul>
     <li><strong>Jboss：</strong></li>
@@ -220,9 +236,9 @@ ht-degree: 81%
     <ul>
     <li><strong>此热修复补丁解决了以下问题：</strong>
       <ul>
-        <li><strong>FORMS-20533：</strong>AEM Forms 现已将表单组件中的 Struts 版本从 2.5.33 升级至 6.x。此次升级补充了 SP23 中未包含的 Struts 更新。相关支持已通过热修复补丁提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。</li>
-        <li><strong>FORMS-20532：</strong>AEM Forms 现已将输出组件中的 Struts 版本从 2.5.33 升级至 6.x。此次升级补充了 SP23 中未包含的 Struts 更新。相关支持已通过热修复补丁提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。</li>
-        <li><strong>FORMS-20203：</strong>当用户将 Struts 从 AEM 服务包 2.5.x 升级至 AEM Forms 服务包 6.x 时，策略 UI 无法显示所有配置，例如添加水印的选项。您可以通过下载并安装热修复补丁来解决此问题。</li>
+        <li><strong>FORMS-20533：</strong>AEM Forms 现已将表单组件中的 Struts 版本从 2.5.33 升级至 6.x。 此次升级补充了 SP23 中未包含的 Struts 更新。 相关支持已通过热修复补丁提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。</li>
+        <li><strong>FORMS-20532：</strong>AEM Forms 现已将输出组件中的 Struts 版本从 2.5.33 升级至 6.x。 此次升级补充了 SP23 中未包含的 Struts 更新。 相关支持已通过热修复补丁提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。</li>
+        <li><strong>FORMS-20203：</strong>当用户将 Struts 从 AEM 服务包 2.5.x 升级至 AEM Forms 服务包 6.x 时，策略 UI 无法显示所有配置，例如添加水印的选项。 您可以通过下载并安装热修复补丁来解决此问题。</li>
         <li><strong>FORMS-20360：</strong>在升级到 AEM Forms 服务包 6.5.23.0 后，ImageToPDF 转化服务失败并出现以下错误：<br><code>17:15:44,468 ERROR [com.adobe.pdfg.GeneratePDFImpl] (default task-49) ALC-PDG-001-000-ALC-PDG-011-028-Error occurred while converting the input image file to PDF. com/adobe/internal/pdftoolkit/core/encryption/EncryptionImp</code><br>
         您可以下载并安装热修复补丁来解决此问题。</li>
       </ul>
@@ -261,7 +277,7 @@ ht-degree: 81%
      </ul>
      </td>
     <td>
-    <ul><li>当用户在 JEE 服务器上更新至 AEM Forms 服务包 20（6.5.20.0），并使用输出服务生成 PDF 时，生成的 PDF 会出现可访问性问题。（LC-3922112）</li><li>在 AEM Forms JEE 上通过输出服务生成的标记 PDF 会显示“结构不当警告”。（LC-3922038）</li><li>当在 AEM Forms JEE 上提交表单时，数据中的重复 XML 元素实例会被移除。（LC-3922017）</li><li>当用户在 Linux 环境中以 HTML 形式渲染自适应表单（运行于 JEE）时，表单无法正常渲染。（LC-3921957）</li><li>当用户在 AEM Forms JEE 上使用输出服务将 XTG 文件转化为 PostScript 格式时，转化失败并报错：AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE。（LC-3921720）</li><li>在 JEE 服务器上升级到 AEM Forms 服务包 18（6.5.18.0）后，当用户提交表单时，无法渲染 HTML5 或 PDF Forms，并且 XMLFM 会崩溃。（LC-3921718）
+    <ul><li>当用户在 JEE 服务器上更新至 AEM Forms 服务包 20（6.5.20.0），并使用输出服务生成 PDF 时，生成的 PDF 会出现可访问性问题。 （LC-3922112）</li><li>在 AEM Forms JEE 上通过输出服务生成的标记 PDF 会显示“结构不当警告”。 （LC-3922038）</li><li>当在 AEM Forms JEE 上提交表单时，数据中的重复 XML 元素实例会被移除。 （LC-3922017）</li><li>当用户在 Linux 环境中以 HTML 形式渲染自适应表单（运行于 JEE）时，表单无法正常渲染。 （LC-3921957）</li><li>当用户在 AEM Forms JEE 上使用输出服务将 XTG 文件转化为 PostScript 格式时，转化失败并报错：AEM_OUT_001_003: Unexpected Exception: PAExecute Failure: XFA_RENDER_FAILURE。 （LC-3921720）</li><li>在JEE服务器上升级到AEM Forms Service Pack 18 (6.5.18.0)后，当用户提交表单时，将无法呈现HTML5或PDF forms，并且XMLFM崩溃。(LC-3921718)
     </ul>
     </td>    
   </tr>
@@ -269,15 +285,15 @@ ht-degree: 81%
     <td>2024 年 6 月 21 日</td>
      <td>
      <ul>
-     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">适用于 JBoss JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
-      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">适用于 Weblogic JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
-       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">适用于 Webshpere JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
-        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">适用于 OSGi 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">适用于 JBoss JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
+      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">适用于 Weblogic JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">适用于 Webshpere JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">适用于 OSGi 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
      </ul>
      </td>
     <td>
     <ul>
-    <li> 在升级到 AEM Forms 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 后，PaperCapture 服务无法对 PDF 执行 OCR（光学字符识别）操作。有关安装说明，请参阅<a href="/help/forms/using/papercapture-service-resolution.md"> 故障排查</a>文章。（CQDOC-21680） </li>
+    <li> 在升级到 AEM Forms 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 后，PaperCapture 服务无法对 PDF 执行 OCR（光学字符识别）操作。 有关安装说明，请参阅<a href="/help/forms/using/papercapture-service-resolution.md">疑难解答</a>文章。(CQDOC-21680) </li>
     </ul>
     </td>    
   </tr>
@@ -290,7 +306,7 @@ ht-degree: 81%
      </td>
     <td>
     <ul>
-    <li>在预览过程中，带有 XML 数据的草稿信件会卡在加载状态。有关该修补程序的下载和安装说明，请参阅<a href="#install-hotfix">下载并安装草稿信件问题热修复补丁</a>部分。（FORMS-14521）</li>
+    <li>在预览过程中，带有 XML 数据的草稿信件会卡在加载状态。 有关该修补程序的下载和安装说明，请参阅<a href="#install-hotfix">下载并安装草稿书信问题</a>部分的修补程序。(FORMS-14521)</li>
     </ul>
     </td>    
   </tr>
@@ -305,13 +321,13 @@ ht-degree: 81%
      </td>
     <td>
     <ul>
-    <li>在基于 XDP 的自适应表单中，如果复选框中嵌入了脚本，则不会执行复选框之后的元素脚本。针对该问题，现已提供热修复补丁。（FORMS-14244） </li>
-     <li> 在具有编辑/显示模式的字段中，日期选择器小组件在弹出窗口中切换月份时，行会被截断。针对该问题，现已提供热修复补丁。（FORMS-13620） </li>
-     <li>在后端调用 DOR（记录文档）服务时，表单提交失败。出现的错误信息为：“提交操作无法完成，因为表单资源未正确分配。”（FORMS-13798） </li>
-     <li>当从 Adobe Experience Manager 发布实例将自适应表单提交到 Adobe Experience Manager 工作流时，该工作流无法保存附件。（FORMS-14209） </li>
-     <li> 安装 AEM 6.5 Forms 服务包 20 软件包（AEM Forms SP20 附加包）后，AEM Sites 用户界面（UI）的性能显著下降。（FORMS-13791） </li>
-     <li>在交互式通信中，预填充服务因空指针异常而失败。（CQDOC-21355）</li>
-     <li>使用基于用户凭据身份认证的旧版 Adobe Analytics 云服务的配置无法正常运行，导致分析规则无法执行。（FORMS-15428）
+    <li>在基于 XDP 的自适应表单中，如果复选框中嵌入了脚本，则不会执行复选框之后的元素脚本。 针对该问题，现已提供热修复补丁。 （FORMS-14244） </li>
+     <li> 在具有编辑/显示模式的字段中，日期选择器小组件在弹出窗口中切换月份时，行会被截断。 针对该问题，现已提供热修复补丁。 （FORMS-13620） </li>
+     <li>在后端调用 DOR（记录文档）服务时，表单提交失败。 出现的错误信息为：“提交操作无法完成，因为表单资源未正确分配。” （FORMS-13798） </li>
+     <li>当从 Adobe Experience Manager 发布实例将自适应表单提交到 Adobe Experience Manager 工作流时，该工作流无法保存附件。  （FORMS-14209） </li>
+     <li> 安装 AEM 6.5 Forms 服务包 20 包（AEM Forms SP20 附加包）后，AEM Sites 用户界面（UI）的性能显著下降。  （FORMS-13791） </li>
+     <li>在交互式通信中，预填充服务因空指针异常而失败。 （CQDOC-21355）</li>
+     <li>使用具有基于用户凭据的身份验证的Adobe Analytics旧版云服务的配置无法正常运行，导致无法执行Analytics规则。(FORMS-15428)
     </ul>
     </td>    
   </tr>
@@ -324,7 +340,7 @@ ht-degree: 81%
      </td>
     <td>
     <ul>
-    <li>在 JEE 服务器上的 AEM Forms 中，使用上下文路径的 HTML5 Forms 无法正常渲染。（FORMS-12485、FORMS-12691）。</li>
+    <li>在 JEE 服务器上的 AEM Forms 中，使用上下文路径的 HTML5 Forms 无法正常渲染。 （FORMS-12485、FORMS-12691）。</li>
     </ul>
     </td>    
   </tr>
@@ -339,7 +355,7 @@ ht-degree: 81%
      </td>
     <td>
     <ul>
-    <li> 开箱即用的 Scribble Signature 组件在自适应表单的预览中无法渲染。（FORMS-12073）。</li>
+    <li> 开箱即用的 Scribble Signature 组件在自适应表单的预览中无法渲染。 （FORMS-12073）。</li>
     </ul>
     </td>    
    </tr>
@@ -354,9 +370,9 @@ ht-degree: 81%
      </td>
     <td>
     <ul>
-    <li>当在自适应表单的引导容器中设置了重定向 URL 时，内嵌签署功能会停止工作。（FORMS-10493）</li>
-    <li>用于本地化自适应表单的记录文档（DoR）模板发布失败。（FORMS-10535）</li>
-    <li>包含大型内联图像的交互式通信在编辑模式下无法打开。（FORMS-10578）</li>
+    <li>当在自适应表单的引导容器中设置了重定向 URL 时，内嵌签署功能会停止工作。 （FORMS-10493）</li>
+    <li>用于本地化自适应表单的记录文档（DoR）模板发布失败。 （FORMS-10535）</li>
+    <li>包含大型内联图像的交互式通信在编辑模式下无法打开。 （FORMS-10578）</li>
     </ul>
     </td>    
   </tr>
@@ -370,7 +386,7 @@ ht-degree: 81%
 1. 从软件分发链接下载[热修复补丁](#hotfix-for-adaptive-forms)。
 1. 提取热修复补丁存档文件，以获取 Experience Manager 包（.zip）和捆绑包（.jar）文件。
 1. 通过[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager.html?lang=es#accessing)上传并安装包（.zip）。
-1. 打开配置管理器捆绑包 `https://server:host/system/console/bundles`，上传并安装捆绑包（.jar）。热修复补丁即已安装完成。
+1. 打开配置管理器捆绑包 `https://server:host/system/console/bundles`，上传并安装捆绑包（.jar）。 热修复补丁即已安装完成。
 
 ## 安装 JEE 补丁 {#download-install-jee-patch}
 
