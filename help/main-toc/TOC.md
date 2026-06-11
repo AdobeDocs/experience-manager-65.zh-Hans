@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用 Adobe Experience Manager 6.5 文档，了解其工作原理以及该软件能为您带来的价值。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: d0adc4dcbe6b6045739e0b7e102c58a752fe7c14
+source-git-commit: 8f8aed4c653cc286b32c83a38382f2b10370cdc8
 workflow-type: tm+mt
-source-wordcount: '8247'
+source-wordcount: '8275'
 ht-degree: 96%
 
 ---
@@ -587,6 +587,9 @@ ht-degree: 96%
          + [在JEE上升级到AEM Forms for JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_cn)
          + [在JEE上升级到WebSphere版Adobe Experience Manager Forms](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_cn)
          + [在JEE上升级到Adobe Experience Manager Forms for WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_cn)
+         + 知识库文章 {#aem-forms-jee-knowledge-base-articles}
+            + [为JEE上的AEM Forms将JBoss EAP从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
+            + [为JEE上的AEM Forms将JBoss EAP群集从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
    + 管理 AEM Forms {#manage-administer-aem-forms}
       + [OSGi 上的 AEM Forms 群组和权限](/help/forms/using/forms-groups-privileges-tasks.md)
       + [创建新文件夹以对表单进行分类](/help/forms/using/creating-new-folders-categorize-forms.md)
