@@ -6,7 +6,7 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: dcf42fbacda68e1badbb9f7a6e7d42068f2281a9
+source-git-commit: ada1a7e3074515181f78dae914f7a664132c0226
 workflow-type: tm+mt
 source-wordcount: '7373'
 ht-degree: 20%
@@ -602,12 +602,6 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 * **FORMS-23722**&#x200B;如果将包含使用`bindref`的&#x200B;**文件附件**&#x200B;字段的表单提交到AEM工作流，且步骤为&#x200B;**分配任务**，则不会显示附件。 因此，当任务从“收件箱”中打开时，它们不会显示。 文件将正确地保存到存储库，但分配任务步骤UI无法显示附件。
 
 #### 可用修补程序的已知问题 {#aem-forms-issues-with-hotfixes}
-
-<!--
->[!NOTE]
->
->Avoid upgrading to Service Pack 6.5.25.0 for issues without an available hotfix. It may lead to unexpected errors. Upgrade to Service Pack 6.5.25.0 only after the required hotfixes are released.
--->
 
 以下问题已提供可下载并安装的热修复补丁： 您可以通过[下载并安装热修复补丁](/help/release-notes/aem-forms-hotfix.md)来解决这些问题：
 
