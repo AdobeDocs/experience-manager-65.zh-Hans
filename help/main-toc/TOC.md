@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用 Adobe Experience Manager 6.5 文档，了解其工作原理以及该软件能为您带来的价值。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 652162941dd716ae797ce50709e91757dad99054
+source-git-commit: 606ea57b0e9c012b9bc87ac87910337c025038ee
 workflow-type: tm+mt
-source-wordcount: '8272'
+source-wordcount: '8270'
 ht-degree: 96%
 
 ---
@@ -587,14 +587,14 @@ ht-degree: 96%
          + [在JEE上升级到AEM Forms for JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_cn)
          + [在JEE上升级到WebSphere版Adobe Experience Manager Forms](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_cn)
          + [在JEE上升级到Adobe Experience Manager Forms for WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_cn)
-         + [为JEE上的AEM Forms将JBoss EAP从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
-         + [为JEE上的AEM Forms将JBoss EAP群集从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
+         + [为AEM Forms on JEE将JBoss从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)
+         + [为JEE上的AEM Forms将JBoss群集从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)
    + 管理 AEM Forms {#manage-administer-aem-forms}
       + [OSGi 上的 AEM Forms 群组和权限](/help/forms/using/forms-groups-privileges-tasks.md)
       + [创建新文件夹以对表单进行分类](/help/forms/using/creating-new-folders-categorize-forms.md)
       + [搜索表单和资产](/help/forms/using/searching-forms-or-assets.md)
       + [管理表单元数据](/help/forms/using/manage-form-metadata.md)
-      + [下载 XFA 或 PDF Forms 模板](/help/forms/using/download-xfa-or-pdf-form.md)
+      + [下载XFA或PDF表单模板](/help/forms/using/download-xfa-or-pdf-form.md)
       + [删除表单和相关资源](/help/forms/using/deleting-forms-related-resources.md)
       + [在 AEM Forms 中获取 XDP 和 PDF 文档](/help/forms/using/get-xdp-pdf-documents-aem.md)
       + [在 AEM Forms 中导入和导出资产](/help/forms/using/import-export-forms-templates.md)
