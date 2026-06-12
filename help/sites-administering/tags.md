@@ -9,22 +9,22 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
 workflow-type: tm+mt
-source-wordcount: '1769'
-ht-degree: 7%
+source-wordcount: '1795'
+ht-degree: 11%
 
 ---
 
 # 管理标记 {#administering-tags}
 
-标记是用于对网站中的内容进行分类的简单快捷方法。它们可以被视为关键字或标签（元数据），从而允许更快地找到作为搜索结果的内容。
+标记是用于对网站中的内容进行分类的简单快捷方法。 它们可以被视为关键字或标签（元数据），从而允许更快地找到作为搜索结果的内容。
 
 在Adobe Experience Manager (AEM)中，标记可以是
 
 * 页面的内容节点（请参阅[使用标记](/help/sites-authoring/tags.md)）
 
-* 资源的元数据节点(请参阅[管理数字Assets的元数据](/help/assets/metadata.md))
+* 资源的元数据节点（请参阅[管理数字Assets的元数据](/help/assets/metadata.md)）
 
 除了页面和资源之外，标记还用于AEM Communities功能
 
@@ -34,7 +34,7 @@ ht-degree: 7%
 
 ## 标记功能 {#tag-features}
 
-AEM中标记的部分功能包括：
+AEM中的标记的一些功能包括：
 
 * 标记可以分组到各种命名空间中。 此类层次结构允许构建分类。 这些分类在整个 AEM 中是全局性的。
 * 新创建标记的主要限制是，它们必须在特定命名空间中是唯一的。
@@ -50,8 +50,8 @@ AEM中标记的部分功能包括：
    * 不是容器标记的标记称为叶标记
    * 标记命名空间是叶标记或容器标记
 
-* 标记由[搜索组件](https://helpx.adobe.com/cn/experience-manager/core-components/using/quick-search.html)使用，以便于查找内容。
-* 标记由[Teaser组件](https://helpx.adobe.com/cn/experience-manager/core-components/using/teaser.html)使用，该组件监视用户的标记云以提供目标内容。
+* 标记由[搜索组件](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html)使用，以便于查找内容。
+* 标记由[Teaser组件](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html)使用，该组件监视用户的标记云以提供目标内容。
 * 如果标记是内容的一个重要方面
 
    * 确保将标记与使用它们的页面一起打包
@@ -173,7 +173,7 @@ AEM中标记的部分功能包括：
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-选择命名空间或其他标记后，可以通过选择&#x200B;**`Edit`**&#x200B;图标来更改标题、描述并提供标题的本地化设置。
+选择命名空间或其他标记后，可以通过选择**`Edit`**图标来更改标题、描述并提供标题的本地化设置。
 
 进行编辑后，选择&#x200B;**保存**。
 
@@ -224,13 +224,13 @@ AEM中标记的部分功能包括：
 >
 >合并后，最初选择的&#x200B;**路径**&#x200B;将（实际上）不再存在。
 >
->移动或合并引用的标记时，不会实际删除该标记，因此可以保留引用。
+>在移动或合并引用的标记时，该标记不会被物理删除，以便能够维护引用。
 
 ### 发布标记 {#publishing-tags}
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
-选择命名空间或其他标记后，选择&#x200B;**Publish**&#x200B;图标以在发布环境中激活该标记。 与页面内容类似，仅发布选定的标记，无论其是否为容器标记。
+选择命名空间或其他标记后，选择&#x200B;**发布**&#x200B;图标以在发布环境中激活该标记。 与页面内容类似，仅发布选定的标记，无论其是否为容器标记。
 
 要发布分类（命名空间和子标记），最佳做法是创建命名空间的[包](/help/sites-administering/package-manager.md)（请参阅[分类根节点](/help/sites-developing/framework.md#taxonomy-root-node)）。 确保在创建包之前[将权限](#setting-tag-permissions)应用于命名空间。
 
@@ -244,7 +244,7 @@ AEM中标记的部分功能包括：
 
 ![chlimage_1-203](assets/chlimage_1-203.png)
 
-选择命名空间或其他标记后，选择&#x200B;**删除**&#x200B;图标将从创作环境中永久移除该标记。 如果标记已发布，也会将其从发布环境中删除。如果所选标记是容器标记，则也将移除其所有子标记。
+选择命名空间或其他标记后，选择&#x200B;**删除**&#x200B;图标将从创作环境中永久移除该标记。 如果标记已发布，也会将其从发布环境中删除。 如果所选标记是容器标记，则也将移除其所有子标记。
 
 ## 设置标记权限 {#setting-tag-permissions}
 
@@ -258,7 +258,7 @@ AEM中标记的部分功能包括：
       * 例如，浏览到http://localhost:4502/useradmin
 
    * 在左窗格中，选择要为其授予[读取权限](/help/sites-administering/security.md#permissions)的组（或用户）
-   * 在右侧窗格中，找到标记命名空间的&#x200B;**Path**
+   * 在右侧窗格中，找到标记命名空间的**Path**
 
       * 例如，`/content/cq:tags/mycommunity`
 
@@ -285,7 +285,7 @@ AEM中标记的部分功能包括：
 
 以下介绍如何将&#x200B;**Animals**&#x200B;标记的`title`从英语翻译为德语和法语。
 
-首先，选择&#x200B;**Stock Photography**&#x200B;命名空间下的标记，然后选择&#x200B;**`Edit`**&#x200B;图标（请参阅[编辑标记](#editing-tags)部分）。
+首先，选择&#x200B;**Stock摄影**&#x200B;命名空间下的标记，然后选择&#x200B;**`Edit`**&#x200B;图标（请参阅[编辑标记](#editing-tags)部分）。
 
 通过“编辑标记”面板，可以选择标记标题将本地化的语言。
 
@@ -311,4 +311,5 @@ AEM中标记的部分功能包括：
 
   有关标记框架和扩展以及在自定义应用程序中包括标记的信息。
 
-* [经典UI标记控制台](/help/sites-administering/classic-console.md)
+* [经典 UI 标记控制台](/help/sites-administering/classic-console.md)
+
