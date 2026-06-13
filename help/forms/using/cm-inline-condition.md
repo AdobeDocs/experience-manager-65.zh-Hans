@@ -200,7 +200,7 @@ AEM Forms允许您在文本模块中使用内联条件来自动呈现依赖于�
    * 在预览包含示例数据的信件时，根据相关数据字典创建的示例XML数据文件。
    * 附加到相关数据字典的XML数据文件。
 
-   有关详细信息，请参阅[数据字典](https://helpx.adobe.com/aem-forms/6-2/data-dictionary.html)。
+   有关详细信息，请参阅[数据字典](https://helpx.adobe.com/cn/aem-forms/6-2/data-dictionary.html)。
 
    ![6_repeatoutputpreview](assets/6_repeatoutputpreview.png)
 
