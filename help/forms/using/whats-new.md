@@ -1,6 +1,6 @@
 ---
-title: New features summary | AEM 6.5 Forms
-description: Latest features and improvements to AEM forms and documents, world's most advanced digital experience management solution.
+title: 新增功能摘要 |AEM 6.5 Forms
+description: AEM表单和文档（全球最高级的数字体验管理解决方案）的最新功能和改进。
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
@@ -15,7 +15,7 @@ ht-degree: 49%
 
 ---
 
-# New features summary | AEM 6.5 Forms{#new-features-summary-aem-forms}
+# 新增功能摘要 |AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 | 产品 | Adobe Experience Manager 6.5 |
 | -------- | ---------------------------- |
@@ -23,50 +23,50 @@ ht-degree: 49%
 | 类型 | 服务包发行 |
 | 日期 | 2023 年 12 月 8 日 |
 
-## What is included in Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)
+## Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)中包含的内容
 
-Experience Manager 6.5.19.0 includes new features, key customer-requested enhancements, bug fixes, and performance, stability, and security improvements that have been released since the initial availability of 6.5 in April 2019. [Install this service pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans) on Experience Manager 6.5.
+Experience Manager 6.5.19.0包括自2019年4月6.5首次发布以来发布的新功能、关键客户请求的增强功能、错误修复以及性能、稳定性和安全性改进。 在Experience Manager 6.5上[安装此Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
 
 ### 新增功能
 
-#### New Adaptive Form Core Components
+#### 新增自适应表单核心组件
 
-Vertical tabs, Terms &amp; Conditions, and Checkbox are added to enhance the scalability of forms.
+添加了垂直选项卡、条款和条件以及复选框，以增强表单的可伸缩性。
 
-* **[复选框组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=zh-Hans)**：基于核心组件的自适应表单现在包含复选框组件。 通过它，用户可二选一，即选择或取消选择特定选项。 它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。 复选框是一个常见的表单元素，用于提供是/否或真/假选择。
+* **[复选框组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**：基于核心组件的自适应表单现在包含复选框组件。 通过它，用户可二选一，即选择或取消选择特定选项。 它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。 复选框是一个常见的表单元素，用于提供是/否或真/假选择。
 
-* **[条款和条件组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=zh-Hans)**：基于核心组件的自适应表单现在包含条款和条件组件。 通过它，表单作者可在表单中引入一个特定的部分，其中为用户展示与使用服务、产品或平台相关的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
+* **[条款和条件组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**：基于核心组件的自适应表单现在包含条款和条件组件。 通过它，表单作者可在表单中引入一个特定的部分，其中为用户展示与使用服务、产品或平台相关的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
 
   ![纵向选项卡、条款与条件及复选框组件](/help/forms/using/assets/forms-components.png)
 
-* **[垂直选项卡组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=zh-Hans)**：基于核心组件的自适应表单现在可将表单内容整理到选项卡垂直列表中，从而提供结构化的、可导航的布局。 在表单中使用纵向选项卡可通过简化导航并改进表单内容的组织而增强整体用户体验，特别是在表单包含多个部分或复杂信息的情况下。
+* **[垂直选项卡组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**：基于核心组件的自适应表单现在可将表单内容整理到选项卡垂直列表中，从而提供结构化的、可导航的布局。 在表单中使用纵向选项卡可通过简化导航并改进表单内容的组织而增强整体用户体验，特别是在表单包含多个部分或复杂信息的情况下。
 
-#### 64-bit version of AEM Forms Designer
+#### AEM Forms Designer的64位版本
 
-The [64-bit version of AEM Forms Designer](/help/forms/using/installing-configuring-designer.md) brings enhanced performance, scalability, and memory management to empower your form creation experience. 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。 利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
+[64位版本的AEM Forms Designer](/help/forms/using/installing-configuring-designer.md)可提供增强的性能、可扩展性和内存管理，以增强您的表单创建体验。 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。 利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
 
-#### Connect an Adaptive Forms with Microsoft® SharePoint List
+#### 将自适应Forms连接到Microsoft® SharePoint列表
 
-AEM Forms provides an out-of-the-box integration to [submit forms data directly to SharePoint List](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)), letting you use SharePoint&#39;s Lists capabilities. 您可以将 Microsoft® SharePoint 列表配置为表单数据模型的数据源，并使用“通过表单数据模型提交”操作将自适应表单与 SharePoint 列表相连接。
+AEM Forms提供开箱即用的集成，允许您将表单数据直接提交到SharePoint列表](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)，从而您可以使用SharePoint的列表功能。 [您可以将 Microsoft® SharePoint 列表配置为表单数据模型的数据源，并使用“通过表单数据模型提交”操作将自适应表单与 SharePoint 列表相连接。
 
-#### Support to configure Document of Record properties for Adaptive Form Fragments
+#### 支持为自适应表单片段配置记录文档属性
 
-You can now easily [customize your Adaptive Form fragments and its fields in  Adaptive Form editor](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+您现在可以轻松[在自适应表单编辑器中](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)自定义您的自适应表单片段及其字段。
 
-#### Includes 64-bit version of XMLFM
+#### 包括64位版本的XMLFM
 
-The 64-bit iteration of XMLFM introduces heightened performance, scalability, and refined memory management. 这是首个在服务器端部署的原生 64 位服务。 By harnessing its inherent capability to access significantly larger memory resources compared to its 32-bit counterpart, XMLFM 64-bit empowers seamless handling of larger rendering workloads. This milestone not only represents a leap in performance but also introduces key enhancements to the native service framework within the AEM Forms server. This update equips AEM Forms server to seamlessly support any 64-bit native service.
+XMLFM的64位迭代带来了更高的性能、可扩展性和更精细的内存管理。 这是首个在服务器端部署的原生 64 位服务。 XMLFM 64位利用其固有的功能访问比32位对等项大得多的内存资源，从而能够无缝处理更大的渲染工作负载。 这一里程碑不仅实现了性能的飞跃，而且还对AEM Forms服务器中的本机服务框架引入了关键增强功能。 此更新使AEM Forms服务器能够无缝支持任何64位本机服务。
 
 
 
 ## 错误修复
 
-The release also includes fixes for 20+ customer reported issues. For detailed list of fixes included in the service pack, see [release notes](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans#forms-6519)
+该版本还包括对20多个客户报告问题的修复。 有关Service Pack中包含的修复的详细列表，请参阅[发行说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=zh-Hans#forms-6519)
 
 
-## Installing the service pack
+## 安装服务包
 
-The service pack brings new features and bug fixes for both AEM Forms on JEE and AEM Forms on OSGi. The installation instructions have changes in comparison to previous service packs, For installation instructions, see [AEM Forms service pack installation instructions](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans).
+此Service Pack为JEE上的AEM Forms和OSGi上的AEM Forms带来了新功能和错误修复。 与以前的Service Pack相比，安装说明发生了更改。有关安装说明，请参阅[AEM Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)。
 
 
 
@@ -132,7 +132,7 @@ There are several improvements in the Web channel layout auto-generated using th
 
 ### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Cloud-based digital signatures](https://helpx.adobe.com/cn/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
+[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
 #### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 

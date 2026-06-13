@@ -1,6 +1,6 @@
 ---
 title: 数据保护和数据隐私法规——Adobe Experience Manager 准备工作
-description: 了解 Adobe Experience Manager 如何支持各类数据保护和隐私法规。其中包括欧盟《通用数据保护条例》（GDPR）、加州消费者隐私法，以及在实施新 AEM 项目时的合规方法。
+description: 了解 Adobe Experience Manager 如何支持各类数据保护和隐私法规。 其中包括欧盟《通用数据保护条例》（GDPR）、加州消费者隐私法，以及在实施新 AEM 项目时的合规方法。
 contentOwner: AEM Docs
 topic-tags: introduction, grdp
 content-type: reference
@@ -12,8 +12,8 @@ feature: Compliance
 role: Developer, Leader, User
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '890'
-ht-degree: 100%
+source-wordcount: '931'
+ht-degree: 99%
 
 ---
 
@@ -29,7 +29,7 @@ ht-degree: 100%
 >
 >要详细了解 Adobe 对隐私问题的响应以及这对于您这样的 Adobe 客户的意义，请参阅 [Adobe 隐私中心。](https://www.adobe.com/cn/privacy.html)
 
-Adobe 提供了相关文档和操作流程（在可用时还包括 API），供客户的隐私管理员或 AEM 管理员处理数据保护和隐私请求。这些内容可帮助您符合相关法规。文档中记录的流程允许客户手动执行合规请求，或在可用时通过外部门户或服务调用 API 来完成。
+Adobe 提供了相关文档和操作流程（在可用时还包括 API），供客户的隐私管理员或 AEM 管理员处理数据保护和隐私请求。 这些内容可帮助您符合相关法规。 文档中记录的流程允许客户手动执行合规请求，或在可用时通过外部门户或服务调用 API 来完成。
 
 >[!CAUTION]
 >
@@ -79,7 +79,7 @@ Adobe Experience Manager 的实例以及其上运行的应用程序由 Adobe 客
 
    * Adobe 为客户的隐私管理员和 AEM 管理员提供文档和操作程序，使其能够手动执行与隐私法规相关的请求。
 
-Adobe 提供了在 Adobe Experience Manager 中处理与访问、删除和退出相关的隐私请求的操作程序。在某些情况下，可以使用客户自建的门户或脚本调用 API，以协助实现自动化。
+Adobe 提供了在 Adobe Experience Manager 中处理与访问、删除和退出相关的隐私请求的操作程序。 在某些情况下，可以使用客户自建的门户或脚本调用 API，以协助实现自动化。
 
 下图说明了隐私请求工作流可能的样子（使用 Adobe Experience Manager 6.5 说明）：
 
@@ -111,24 +111,23 @@ Adobe 提供了在 Adobe Experience Manager 中处理与访问、删除和退出
 
 ## AEM 与 Adobe Target 和 Adobe Analytics 的集成 {#aem-integration-with-adobe-target-adobe-analytics}
 
-这些 Adobe Experience Manager 集成都依托已符合数据保护和隐私（如 GDPR 或 CCPA）的服务。在这些集成过程中，Adobe Target 或 Adobe Analytics 的个人数据不会存储在 AEM 中。
-
+这些 Adobe Experience Manager 集成都依托已符合数据保护和隐私（如 GDPR 或 CCPA）的服务。 在这些集成过程中，Adobe Target 或 Adobe Analytics 的个人数据不会存储在 AEM 中。
 
 有关更多信息，请参阅以下内容：
 
 * [Adobe Target - 隐私概述](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics 数据隐私工作流](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hans)
+* [Adobe Analytics数据隐私工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities 通过[开箱即用的 API](/help/communities/user-ugc-management-service.md)，赋予数据主体数据可携带权、访问权和被遗忘权。这些 API 支持批量删除与批量导出用户生成的内容，并可禁用通过授权 ID 识别的用户帐户。但是，要永久删除用户帐户，则需要在 CRXDE Lite 中删除用户节点，以满足从系统中便捷退出的需求。
+AEM Communities 通过[开箱即用的 API](/help/communities/user-ugc-management-service.md)，赋予数据主体数据可携带权、访问权和被遗忘权。 这些 API 支持批量删除与批量导出用户生成的内容，并可禁用通过授权 ID 识别的用户帐户。 但是，要永久删除用户帐户，则需要在 CRXDE Lite 中删除用户节点，以满足从系统中便捷退出的需求。
 
-此外，AEM Communities 通过其批量审核控制台实现了“隐私保护即设计”的理念，该控制台允许具备权限的成员查找并删除用户的贡献和详细信息。成员管理控制台可对用户进行限制，直至禁止其继续贡献。同时，它还赋予数据主体删除自己所贡献的内容的权限。
+此外，AEM Communities 通过其批量审核控制台实现了“隐私保护即设计”的理念，该控制台允许具备权限的成员查找并删除用户的贡献和详细信息。 成员管理控制台可对用户进行限制，直至禁止其继续贡献。 同时，它还赋予数据主体删除自己所贡献的内容的权限。
 
 ## AEM Forms {#aem-forms}
 
-AEM Forms 包含可捕获、处理和存储数据的组件与工作流，以用于编排业务流程并完成数字化交易。不同的组件会使用不同的数据存储，同时也支持与自定义数据存储集成。以下文档说明了访问和处理用户数据的程序与指南，以支持组件级的数据保护与隐私（例如 GDPR 或 CCPA）工作流。
+AEM Forms 包含可捕获、处理和存储数据的组件与工作流，以用于编排业务流程并完成数字化交易。 不同的组件会使用不同的数据存储，同时也支持与自定义数据存储集成。 以下文档说明了访问和处理用户数据的程序与指南，以支持组件级的数据保护与隐私（例如 GDPR 或 CCPA）工作流。
 
 * [表单门户](/help/forms/using/forms-portal-handling-user-data.md)
 * [通信管理](/help/forms/using/correspondence-management-handling-user-data.md)

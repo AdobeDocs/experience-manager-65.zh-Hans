@@ -1,6 +1,6 @@
 ---
-title: 配置AdobeMobile ServicesCloud Service
-description: 请按照本页上的说明配置您的AdobeMobile ServicesCloud Service。
+title: 配置Adobe Mobile Services Cloud Service
+description: 按照此页面配置您的Adobe Mobile Services Cloud Service。
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -12,20 +12,20 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 0%
+source-wordcount: '440'
+ht-degree: 3%
 
 ---
 
-# 配置AdobeMobile ServicesCloud Service {#configure-your-adobe-mobile-services-cloud-service}
+# 配置Adobe Mobile Services Cloud Service {#configure-your-adobe-mobile-services-cloud-service}
 
 {{ue-over-mobile}}
 
 命令中心上的&#x200B;**移动量度图块**&#x200B;为您的移动应用程序提供实时分析。
 
-[Adobe移动分析](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK可通过PhoneGap插件使用。 收集量度并将其缓存在设备上，直到设备连接为止，届时，会将数据推送到AdobeMobile Services云以供生成报表和分析。
+[Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK可通过PhoneGap插件使用。 收集量度并将其缓存在设备上，直到设备连接为止，届时，会将数据推送到Adobe Mobile Services云以供报表和分析。
 
-AdobeMobile Analytics SDK提供以下功能：
+Adobe Mobile Analytics SDK提供以下功能：
 
 1. **移动渠道的数据收集** — 收集所有主要操作系统上移动网站和应用程序的全面数据。
 1. **移动参与分析** — 了解用户在您的移动应用程序、网站或视频中的参与情况，包括消费者启动渠道的频率、他们是否从中购买等。
@@ -44,13 +44,13 @@ AEM Command Center Metrics图块
 
 ## 配置Cloud Service {#configuring-the-cloud-service}
 
-要利用AdobeMobile Services Analytics，您需要使用Adobe Analytics帐户信息配置AEM Mobile Analytics Cloud服务。
+要利用Adobe Mobile Services Analytics，您需要使用Adobe Analytics帐户信息配置AEM Mobile Analytics Cloud服务。
 
-1. 单击右上角的图标以从应用程序仪表板的“**管理Cloud Service**”拼贴中添加或编辑Cloud Service。
+1. 单击右上角的图标，从应用程序仪表板的&#x200B;**管理云服务**&#x200B;图块添加或编辑云服务。
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. 将显示&#x200B;**添加或编辑Cloud Service**&#x200B;屏幕。 选择&#x200B;**AdobeMobile Services**，然后单击&#x200B;**下一步**。
+1. 将显示&#x200B;**添加或编辑云服务**&#x200B;屏幕。 选择&#x200B;**Adobe Mobile Services**，然后单击&#x200B;**下一步**。
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2474'
+source-wordcount: '2501'
 ht-degree: 1%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 1%
 * **数据模型对象**：数据属性使用后端数据源。
 * **基于规则的内容**：文本中根据规则显示或隐藏的部分内容。 规则也可以基于表单数据模型的属性和变量。
 * **变量**：在文本文档片段中，变量未绑定到后端数据源。 在准备交互式通信以将其提交到后处理时，代理会填充/选择变量中的值或将变量绑定到数据源。
-* **重复**：您的交互式通信中可能有动态信息，如信用卡对帐单中的交易，其发生次数会随着每次生成的交互式通信而不断变化。 使用重复，可以格式化并构建此类动态信息。 有关详细信息，请参阅[内联条件和重复](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/cm-inline-condition.html)。
+* **重复**：您的交互式通信中可能有动态信息，如信用卡对帐单中的交易，其发生次数会随着每次生成的交互式通信而不断变化。 使用重复，可以格式化并构建此类动态信息。 有关详细信息，请参阅[内联条件和重复](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html)。
 
 ## 创建文本 {#createtext}
 
@@ -229,13 +229,13 @@ ht-degree: 1%
 
 ### 粘贴格式化文本 {#paste}
 
-要重用其他应用程序(例如Microsoft®Word或HTML页面)中存在的文本的一个或多个段落，请将该文本复制并粘贴到文本编辑器中。 复制的文本的格式将保留在文本编辑器中。
+要重用存在于其他应用程序（例如®Word或HTML页面）中的文本的一个或多个段落，请复制该文本并将其粘贴到文本编辑器中。 复制的文本的格式将保留在文本编辑器中。
 
-您可以在可编辑的文本文档片段中复制并粘贴文本的一个或多个段落。 例如，您可能拥有Microsoft® Word文档，其中包含可接受的居住证明项目符号列表，如下所示：
+您可以在可编辑的文本文档片段中复制并粘贴文本的一个或多个段落。 例如，您可能拥有® Word文档，其中包含可接受的居住证明项目符号列表，如下所示：
 
 ![pastetextmsword-2](assets/pastetextmsword-2.png)
 
-您可以直接将文本从Microsoft® Word文档复制并粘贴到可编辑的文本文档片段中。 项目符号列表、字体和文本颜色等格式将保留在文本文档片段中。
+您可以直接将文本从® Word文档复制并粘贴到可编辑的文本文档片段中。 项目符号列表、字体和文本颜色等格式将保留在文本文档片段中。
 
 ![pastetexteditablemodule-1](assets/pastetexteditablemodule-1.png)
 

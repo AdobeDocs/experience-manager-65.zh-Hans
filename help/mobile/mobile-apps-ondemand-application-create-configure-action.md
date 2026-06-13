@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## 创建按需应用程序 {#creating-an-on-demand-application}
 
-创建应用程序通常是创建和管理AEM Mobile On-Demand内容的第一步，并且通常在AEM管理员级别执行。 它表示可在移动设备上查看的内容外壳，可以随时显示作者创建的内容，例如文章、图像和收藏集。
+创建应用程序通常是创建和管理AEM Mobile On-Demand内容的第一步，通常在AEM管理员级别执行。 它表示可在移动设备上查看的内容外壳，可以随时显示作者创建的内容，例如文章、图像和收藏集。
 
 您应用程序的详细信息可以在功能板或AEM Mobile控制中心中查看。
 
@@ -47,13 +47,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->此过程允许您在AEM中创建应用程序实例。
+>通过此流程，您可以在AEM中创建应用程序实例。
 
 ## 使用应用程序模板 {#using-app-templates}
 
-应用程序模板提供了一种简单的方式来使用开发人员创建的现有设计，用于在AEM中创建新的应用程序。
+应用程序模板提供了一种简单的方式来使用开发人员创建的现有设计，这些设计用于在AEM中创建新的应用程序。
 
-什么是应用程序模板？ 可将其视为一组页面模板和组件，它们代表应用程序的基线或基础。
+什么是应用程序模板？可将其视为一组页面模板和组件，它们代表应用程序的基线或基础。
 在基于其他应用程序的模板创建应用程序时，您会获得一个应用程序，其起点代表创建该应用程序的应用程序。
 
 您必须拥有现有的移动设备应用程序模板（或安装的应用程序具有应用程序模板），才能使用此功能。
@@ -74,7 +74,7 @@ ht-degree: 0%
 * [管理横幅](/help/mobile/mobile-on-demand-managing-banners.md)
 * [管理收藏集](/help/mobile/mobile-on-demand-managing-collections.md)
 * [上传共享资源](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publish取消发布内容](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [发布取消发布内容](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 要了解管理员和开发人员的角色和职责，请参阅以下资源：
 

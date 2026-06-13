@@ -11,8 +11,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '582'
-ht-degree: 2%
+source-wordcount: '590'
+ht-degree: 4%
 
 ---
 
@@ -41,7 +41,7 @@ ht-degree: 2%
 * 标题
 * 描述
 * 图标
-* 上次修改时间
+* 上次修改
 * 最后修改人
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
@@ -70,7 +70,7 @@ ht-degree: 2%
 * **篇文章**
 * **收藏集**
 
-通过单击右下角的省略号(...)，可以展开每个图块以提供更详细的列表视图。 这些列表视图提供了访问常见的Mobile On Demand操作（如删除、上传和编辑属性）的替代方式。
+单击省略号(...)可展开每个图块以提供更详细的列表视图 在右下角。 这些列表视图提供了访问常见的Mobile On Demand操作（如删除、上传和编辑属性）的替代方式。
 
 ### “管理横幅”拼贴 {#the-manage-banners-tile}
 
@@ -81,7 +81,7 @@ ht-degree: 2%
 * **已修改**：上次在AEM中修改
 * **已上传**：上次从AEM上传
 * **已发布**：上次发布的请求来自AEM
-* **SOURCE**：源(AEM本地或来自Mobile On-Demand的远程)
+* **SOURCE**：源（AEM本地或来自Mobile On-Demand的远程）
 
 下图显示了AEM Mobile应用程序仪表板中的&#x200B;**管理横幅**&#x200B;拼贴：
 
@@ -100,7 +100,7 @@ ht-degree: 2%
 * **已修改**：上次在AEM中修改
 * **已上传**：上次从AEM上传
 * **已发布**：上次发布的请求来自AEM
-* **SOURCE**：源(AEM本地或来自Mobile On-Demand的远程)
+* **SOURCE**：源（AEM本地或来自Mobile On-Demand的远程）
 
 下图显示了AEM Mobile应用程序仪表板中的&#x200B;**管理文章**&#x200B;拼贴：
 
@@ -119,7 +119,7 @@ ht-degree: 2%
 * **已修改**：上次在AEM中修改
 * **已上传**：上次从AEM上传
 * **已发布**：上次发布的请求来自AEM
-* **SOURCE**：源(AEM本地或来自Mobile On-Demand的远程)
+* **SOURCE**：源（AEM本地或来自Mobile On-Demand的远程）
 
 下图显示了AEM Mobile应用程序仪表板中的&#x200B;**管理收藏集**&#x200B;拼贴：
 
