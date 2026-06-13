@@ -55,7 +55,7 @@ AEM Fluid Experiences与经典AEM的不同之处在于，它仅涉及Headless投
 | [体验片段](/help/sites-authoring/experience-fragments.md) |
 | 用于结构化内容的HTTP API（读取） |
 | 用于结构化内容的HTTP API (CRUD) |
-| [ Universal Editor ](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
+| [&#x200B; Universal Editor &#x200B;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) |
 | [Dynamic Media](/help/assets/dynamic-media.md) |
 
 ## 管理和集成功能 {#admin-and-integration-features}

@@ -119,7 +119,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
    在下面查找主实例的示例配置：
 
-   ****&#x200B;的示例&#x200B;**org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
+   **&#x200B;**&#x200B;的示例&#x200B;**org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
 
    ```xml
    org.apache.sling.installer.configuration.persist=B"false"
@@ -325,7 +325,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
 您可以按照以下列出的步骤执行此操作：
 
-1. 转到JMX控制台并使用**org.apache.jackrabbit.oak： Status (&quot;Standby&quot;)**bean停止冷备用实例上的同步过程。 有关如何执行此操作的更多信息，请参阅[监控](#monitoring)部分。
+1. 转到JMX控制台并使用&#x200B;**org.apache.jackrabbit.oak： Status (&quot;Standby&quot;)**&#x200B;bean停止冷备用实例上的同步过程。 有关如何执行此操作的更多信息，请参阅[监控](#monitoring)部分。
 1. 停止冷备用实例。
 1. 在主实例上安装修补程序。 有关如何安装修补程序的更多详细信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
 1. 安装后，测试实例是否存在问题。
