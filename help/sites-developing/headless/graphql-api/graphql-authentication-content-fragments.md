@@ -7,8 +7,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '110'
-ht-degree: 42%
+source-wordcount: '112'
+ht-degree: 41%
 
 ---
 

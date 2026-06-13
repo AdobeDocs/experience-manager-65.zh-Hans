@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
 source-wordcount: '2005'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets]保留每个资源的元数据。 它允许更轻松地分类和组织资产，并帮助查找特定资产的人员。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。 [!DNL Adobe Experience Manager Assets]允许管理员配置和自定义元数据功能，以修改默认的Adobe产品。
+[!DNL Adobe Experience Manager Assets] 保持每个资产的元数据。 它可以让用户更轻松地分类和组织资产，帮助用户查找特定的资产。 通过保持和管理资产的元数据的功能，您可以根据资产的元数据自动组织和处理资产。 [!DNL Adobe Experience Manager Assets]允许管理员配置和自定义元数据功能，以修改默认的Adobe产品。
 
 ## 编辑元数据架构 {#metadata-schema}
 

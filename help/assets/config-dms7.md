@@ -13,7 +13,7 @@ feature: Configuration,Scene7 Mode
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6675'
+source-wordcount: '6444'
 ht-degree: 4%
 
 ---
@@ -28,8 +28,8 @@ ht-degree: 4%
 
 借助新架构，Experience Manager负责主源资产并与Dynamic Media同步，以进行资产处理和发布：
 
-1. 将主源资产上传到Experience Manager后，会将其复制到Dynamic Media。 届时，Dynamic Media将处理所有资源处理和演绎版生成，例如视频编码和图像的动态变量。
-(在Dynamic Media - Scene7模式下，默认上传文件大小为2 GB或更小。 要启用大小为2 GB（最大为15 GB）的上传文件，请参阅[（可选）配置Dynamic Media - Scene7模式以上传大于2 GB](#optional-config-dms7-assets-larger-than-2gb)的资产。)
+1. 将主源资产上传到Experience Manager后，会将其复制到Dynamic Media。届时，Dynamic Media将处理所有资源处理和演绎版生成，例如视频编码和图像的动态变量。
+(在Dynamic Media - Scene7模式下，默认上传文件大小为2 GB或更小。要启用大小为2 GB（最大为15 GB）的上传文件，请参阅[（可选）配置Dynamic Media - Scene7模式以上传大于2 GB](#optional-config-dms7-assets-larger-than-2gb)的资产。)
 1. 生成呈现版本后，Experience Manager可以安全地访问和预览远程Dynamic Media呈现版本（不会将二进制文件发送回Experience Manager实例）。
 1. 在内容准备好发布并批准后，它会触发Dynamic Media服务将内容推出到Delivery Server，并在CDN（内容分发网络）处缓存内容。
 
@@ -140,7 +140,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
       * **[!UICONTROL 选择性发布]**&#x200B;此选项允许您控制Dynamic Media中发布哪些文件夹。 它可让您使用智能裁切或动态呈现版本等功能，或决定哪些文件夹在Experience Manager中专门发布以供预览。 这些相同的资产&#x200B;*不是*&#x200B;发布在Dynamic Media中以便在公共域中交付。<br>您可以在&#x200B;**[!UICONTROL Dynamic Media云配置]**&#x200B;中设置此选项，或者，如果您愿意，也可以选择在文件夹的&#x200B;**[!UICONTROL 属性]**&#x200B;中的文件夹级别设置此选项。<br>请参阅[在Dynamic Media中使用选择性发布](/help/assets/selective-publishing.md)。<br>如果您稍后更改此配置，或稍后在文件夹级别更改此配置，则这些更改只会影响您从那时起上传的新资产。 文件夹中现有资源的发布状态保持不变，直到您从&#x200B;**[!UICONTROL 快速发布]**&#x200B;或&#x200B;**[!UICONTROL 管理发布]**&#x200B;对话框手动更改它们。
 
-   * **[!UICONTROL 安全预览服务器]** — 允许您指定安全呈现版本预览服务器的URL路径。 也就是说，在生成演绎版之后，Experience Manager可以安全地访问和预览远程Dynamic Media演绎版（不会将二进制文件发送回Experience Manager实例）。
+   * **[!UICONTROL 安全预览服务器]** — 允许您指定安全呈现版本预览服务器的URL路径。也就是说，在生成演绎版之后，Experience Manager可以安全地访问和预览远程Dynamic Media演绎版（不会将二进制文件发送回Experience Manager实例）。
 除非您有特殊安排使用您自己公司的服务器或特殊服务器，否则Adobe建议您保留指定的此设置。
 
    * **[!UICONTROL 同步所有内容]** - <!-- NEW OPTION, CQDOC-15371, Added March 4, 2020-->默认选定。 如果要有选择地包含或排除同步到Dynamic Media的资产，请取消选择此选项。 取消选择此选项可以从以下两种Dynamic Media同步模式中进行选择：
@@ -148,7 +148,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * **[!UICONTROL Dynamic Media同步模式]**
       * **[!UICONTROL 默认启用]** — 除非您特别将文件夹标记为排除，否则默认情况下该配置将应用于所有文件夹。<!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 默认情况下已禁用]** — 在您明确将选定文件夹标记为同步到Dynamic Media之前，该配置不会应用于任何文件夹。
-要将选定的文件夹标记为同步到Dynamic Media，请选择一个资产文件夹，然后在工具栏上选择&#x200B;**[!UICONTROL 属性]**。 在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉列表中选择以下三个选项。 完成后，选择&#x200B;**[!UICONTROL 保存]**。 *请记住：如果您选择了更早的&#x200B;**[!UICONTROL 同步所有内容]**，则这三个选项将不可用。* 另请参阅[在Dynamic Media中使用文件夹级别的选择性发布](/help/assets/selective-publishing.md)。
+要将选定的文件夹标记为同步到Dynamic Media，请选择一个资产文件夹，然后在工具栏上选择&#x200B;**[!UICONTROL 属性]**。在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉列表中选择以下三个选项。完成后，选择&#x200B;**[!UICONTROL 保存]**。*请记住：如果您之前选择了&#x200B;**[!UICONTROL 同步所有内容]**，则这三个选项将不可用。*&#x200B;另请参阅[在Dynamic Media中使用文件夹级别的选择性发布](/help/assets/selective-publishing.md)。
          * **[!UICONTROL 已继承]** — 文件夹中没有显式同步值；相反，该文件夹会从其上级文件夹之一或云配置中的默认模式继承同步值。 继承的详细状态通过工具提示显示。
          * **[!UICONTROL 为子文件夹启用]** — 包含此子树中的所有内容，以便同步到Dynamic Media。 文件夹特定的设置会覆盖云配置中的默认模式。
          * **[!UICONTROL 已对子文件夹禁用]** — 排除此子树中的所有内容，禁止同步到Dynamic Media。
@@ -299,8 +299,8 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
 1. 在&#x200B;**[!UICONTROL 属性]**&#x200B;选项卡的&#x200B;**[!UICONTROL 名称]**&#x200B;列下，找到`sizeLimit`。
 1. 在`sizeLimit`名称的右侧&#x200B;**[!UICONTROL 值]**&#x200B;列下，双击值字段。
-1. 输入以字节为单位的相应值，以便将大小限制增加到所需的最大上载大小。 例如，要将上传资源大小限制增加到10 GB，请在值字段中输入`10737418240`。
-您可以输入最多15 GB （`2013265920`字节）的值。 在这种情况下，不会上传大于15 GB的已上传资产。
+1. 输入以字节为单位的相应值，以便将大小限制增加到所需的最大上载大小。例如，要将上传资源大小限制增加到10 GB，请在值字段中输入`10737418240`。
+您可以输入最多15 GB （`2013265920`字节）的值。在这种情况下，不会上传大于15 GB的已上传资产。
 
    ![大小限制值](/help/assets/assets-dm/uploadassets15gb_c.png)
 

@@ -1,5 +1,5 @@
 ---
-title: osgi配置设置
+title: OSGi 配置设置
 description: 本文详细介绍了与项目实施相关的OSGi配置设置（按捆绑包列出）。 该列表可用作指南，并非详尽无遗。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '3360'
-ht-degree: 0%
+source-wordcount: '3293'
+ht-degree: 2%
 
 ---
 
-# osgi配置设置{#osgi-configuration-settings}
+# OSGi 配置设置{#osgi-configuration-settings}
 
 [OSGi](https://www.osgi.org/)是AEM技术栈栈中的基本元素。 它用于控制AEM的复合捆绑包及其配置。
 
@@ -37,11 +37,11 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 >[!NOTE]
 >
->可以使用[AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html?lang=zh-Hans)中的OSGi配置差异工具列出默认OSGi配置。
+>OSGi配置差异工具是[AEM Tools](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17488.html)的一部分，可用于列出默认的OSGi配置。
 
 >[!NOTE]
 >
->对于AEM中的特定功能区域，可能需要其他包。 在这些情况下，可在与相应功能相关的页面上找到配置详细信息。
+>AEM中的特定功能区域可能需要其他包。 在这些情况下，可在与相应功能相关的页面上找到配置详细信息。
 
 **AEM复制事件侦听器**&#x200B;配置：
 
@@ -67,7 +67,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 >请务必配置以下内容：
 >
 >**用户名**&#x200B;和&#x200B;**密码**，用于访问Apache Felix Web管理控制台本身的凭据。
->初次安装后必须更改密码以确保实例的[安全性](/help/sites-administering/security-checklist.md)。
+>初始安装后必须更改密码以确保实例的[安全性](/help/sites-administering/security-checklist.md)。
 
 >[!NOTE]
 >
@@ -77,20 +77,20 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 * **日志程序名称**&#x200B;和&#x200B;**日志格式**&#x200B;用于配置请求和访问日志的位置和格式（默认值： `request.log`）。 在分析与Web链相关的性能或调试功能时，此日志文件至关重要。 它与[Apache Sling请求记录器](#apacheslingrequestlogger)配对。
 
-请参阅[AEM日志记录](/help/sites-deploying/configure-logging.md)和[Sling日志记录](https://sling.apache.org/documentation/development/logging.html)。
+请参阅[AEM日志](/help/sites-deploying/configure-logging.md)和[Sling日志](https://sling.apache.org/documentation/development/logging.html)。
 
 **Apache Sling事件线程池**&#x200B;配置：
 
 * **最小池大小**&#x200B;和&#x200B;**最大池大小**，用于保存事件线程的池大小。
 
 * **队列大小**，池已用完时线程队列的最大大小。
-推荐值为`-1`，因为它将队列设置为无限制。 如果设置了限制，则超过该限制时可能会发生丢失。
+推荐值为`-1`，因为它将队列设置为无限制。如果设置了限制，则超过该限制时可能会发生丢失。
 
 * 更改这些设置有助于在事件较多的场景中提高性能。 例如，重型AEM DAM或工作流使用。
 * 应使用测试建立特定于您的方案的值。
 * 这些设置可能会影响实例的性能，因此请勿在没有理由且未充分考虑的情况下更改它们。
 
-**Apache SlingGETServlet**&#x200B;配置渲染的某些方面：
+**Apache Sling GET Servlet**&#x200B;配置渲染的某些方面：
 
 * **自动索引**&#x200B;启用/禁用浏览目录渲染。
 * **启用**（或禁用）默认呈现版本，如&#x200B;**HTML**、**纯文本**、**JSON**&#x200B;或&#x200B;**XML**。
@@ -112,7 +112,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 **Apache Sling JCR安装程序**&#x200B;这些参数可能不需要配置，但在开发或调试时可用于了解。 例如，安装文件夹对于签入、签出或创建包非常有用。
 
-* **安装文件夹名称regexp**&#x200B;和&#x200B;**安装文件夹的最大层次结构深度** — 指定存储库文件夹搜索要安装的资源的位置和深度。 当使用通配符时（如中的）。&#42;/install)已搜索所有合适的匹配项，例如`/libs/sling/install`和`/libs/cq/core/install`。
+* **安装文件夹名称regexp**&#x200B;和&#x200B;**安装文件夹的最大层次结构深度** — 指定存储库文件夹搜索要安装的资源的位置和深度。 当使用通配符时（如。&#42;/install中的），将搜索所有合适的匹配项，例如`/libs/sling/install`和`/libs/cq/core/install`。
 
 * **搜索路径**，jcrinstall搜索要安装的资源的路径列表，以及指示该路径的权重因子的数字。
 
@@ -130,7 +130,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 * 禁用&#x200B;**生成调试信息**
 * 禁用&#x200B;**保留生成的Java™**
-* 禁用&#x200B;**映射的内容**
+* 禁用&#x200B;**映射内容**
 * 禁用&#x200B;**显示Source片段**
 
 >[!NOTE]
@@ -145,7 +145,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 * **消息模式**&#x200B;定义日志消息的格式。
 
-请参阅[AEM日志记录](/help/sites-deploying/configure-logging.md#global-logging)和[Sling日志记录](https://sling.apache.org/documentation/development/logging.html)。
+请参阅[AEM日志](/help/sites-deploying/configure-logging.md#global-logging)和[Sling日志](https://sling.apache.org/documentation/development/logging.html)。
 
 **Apache Sling日志记录器配置（工厂配置）**&#x200B;配置：
 
@@ -157,7 +157,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 * 在开发过程中，此类配置非常有用；例如，在特定日志文件中记录特定服务的TRACE消息。
 * 在生产环境中，此类配置非常有用；例如，将有关特定服务的消息记录到单个日志文件以便于监视。
 
-请参阅[AEM日志记录](/help/sites-deploying/configure-logging.md)和[Sling日志记录](https://sling.apache.org/documentation/development/logging.html)。
+请参阅[AEM日志](/help/sites-deploying/configure-logging.md)和[Sling日志](https://sling.apache.org/documentation/development/logging.html)。
 
 **Apache Sling日志编写器配置（工厂配置）**&#x200B;配置：
 
@@ -169,7 +169,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 * 在开发过程中，此类配置非常有用；例如，在特定日志文件中记录特定服务的TRACE消息。
 * 在生产环境中，此类配置非常有用；例如，将有关特定服务的消息记录到单个日志文件以便于监视。
 
-请参阅[AEM日志记录](/help/sites-deploying/configure-logging.md)和[Sling日志记录](https://sling.apache.org/documentation/development/logging.html)。
+请参阅[AEM日志](/help/sites-deploying/configure-logging.md)和[Sling日志](https://sling.apache.org/documentation/development/logging.html)。
 
 **Apache Sling主Servlet**&#x200B;配置：
 
@@ -183,9 +183,9 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 反向链接筛选服务是一个OSGi服务，它允许您配置：
 
-* 应该筛选哪些http方法
-* 是否允许空的反向链接标头
-* 以及除服务器主机之外允许使用的服务器列表。
+* 需要被过滤的 HTTP 方法
+* 是否允许空的反向链接头
+* 以及除当前服务器主机外允许的服务器列表。
 
 有关更多详细信息，请参阅[安全核对清单 — 跨站点请求伪造问题](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery)。
 
@@ -202,7 +202,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 与[Apache Sling可自定义请求数据记录器](#apacheslingcustomizablerequestdatalogger)配对。
 
-请参阅[AEM日志记录](/help/sites-deploying/configure-logging.md)和[Sling日志记录](https://sling.apache.org/documentation/development/logging.html)。
+请参阅[AEM日志](/help/sites-deploying/configure-logging.md)和[Sling日志](https://sling.apache.org/documentation/development/logging.html)。
 
 **Apache Sling Resource Resolver Factory**&#x200B;配置Sling资源解析的中心方面：
 
@@ -234,8 +234,8 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 可以设置各种参数，包括：
 
-* **执行路径** — 列出搜索可执行脚本的路径。 通过配置特定路径，您可以限制可以运行的脚本。 如果未配置路径，则使用默认值( `/` = root)，允许运行所有脚本。
-如果配置的路径值以斜杠结尾，则搜索整个子树。 如果没有此类尾随斜杠，则只有在脚本完全匹配时才运行脚本。
+* **执行路径** — 列出搜索可执行脚本的路径。通过配置特定路径，您可以限制可以运行的脚本。如果未配置路径，则使用默认值( `/` = root)，允许运行所有脚本。
+如果配置的路径值以斜杠结尾，则搜索整个子树。如果没有此类尾随斜杠，则只有在脚本完全匹配时才运行脚本。
 
 * **脚本用户** — 此可选属性可以指定用于读取脚本的存储库用户帐户。 如果未指定帐户，则默认使用`admin`用户。
 
@@ -247,7 +247,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 >[!NOTE]
 >
->在AEM 6.0及更早的版本中，代理是在Day Commons HTTP客户端中配置的。 从AEM 6.1及更高版本开始，代理配置已移至“Apache HTTP组件代理配置”而不是“Day Commons HTTP Client”配置。
+>在AEM 6.0及更早版本中，代理是在Day Commons HTTP客户端中配置的。 从AEM 6.1及更高版本开始，代理配置已移至“Apache HTTP组件代理配置”而不是“Day Commons HTTP Client”配置。
 
 **Day CQ Antispam**&#x200B;配置使用的反垃圾邮件服务(Akismet)。 此功能要求您注册以下内容：
 
@@ -255,13 +255,13 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 * **API密钥**
 * **已注册的URL**
 
-**AdobeGraniteHTML库管理器**&#x200B;配置以控制对客户端库（css或js）的处理，包括如何查看基础结构。
+**Adobe Granite HTML Library Manager**&#x200B;配置以控制对客户端库（css或js）的处理，包括如何查看基础结构。
 
 * 对于生产实例：
 
-   * 启用&#x200B;**Minify**（删除CRLF和空白字符）。
-   * 启用&#x200B;**Gzip**（允许通过一个请求对文件进行gzip和访问）。
-   * 禁用&#x200B;**Debug**
+   * 启用&#x200B;**缩小**（移除 CRLF 和空白字符）。
+   * 启用 **Gzip**（允许文件压缩并通过单个请求访问）。
+   * 禁用&#x200B;**调试**
    * 禁用&#x200B;**计时**
 
 * 对于JS开发（尤其是在firebugging/debugging时）：
@@ -330,7 +330,7 @@ AEM中有两个可用的UI：
 >
 >在标准安装中，触摸优化UI是默认UI。
 
-**AdobeGranite SSO身份验证处理程序** — 配置SSO（单点登录）详细信息。 企业创作设置通常需要这些详细信息，通常使用LDAP。
+**Adobe Granite SSO身份验证处理程序** — 配置SSO（单点登录）详细信息。 企业创作设置通常需要这些详细信息，通常使用LDAP。
 
 可以使用各种配置属性：
 
@@ -338,7 +338,7 @@ AEM中有两个可用的UI：
 此身份验证处理程序活动的路径。 如果此参数留空，则会禁用身份验证处理程序。 例如，路径/会导致将身份验证处理程序用于整个存储库。
 
 * **服务排名**
-OSGi框架服务排名值用于指示调用此服务所用的顺序。 此值是一个`int`值，其中较高的值表示较高的优先级。
+OSGi框架服务排名值用于指示调用此服务所用的顺序。此值是一个`int`值，其中较高的值表示较高的优先级。
 默认值为`0`。
 
 * **标头名称**
@@ -401,7 +401,7 @@ OSGi框架服务排名值用于指示调用此服务所用的顺序。 此值是
 
 **Day CQ WCM页面统计信息**&#x200B;对于发布实例配置：
 
-* 用于发送数据的&#x200B;**URL**&#x200B;用于配置用于跟踪页面统计信息的URL(如果跟踪器请求通过Dispatcher则至关重要)；例如，默认值为`https://localhost:4502/libs/wcm/stats/tracker`。
+* 用于发送数据的&#x200B;**URL**&#x200B;用于配置用于跟踪页面统计信息的URL（如果跟踪器请求通过Dispatcher则至关重要）；例如，默认值为`https://localhost:4502/libs/wcm/stats/tracker`。
 
 * **跟踪脚本已启用**&#x200B;以启用(`true`)或禁用(`false`)在页面上包含跟踪脚本。 默认值为 `false`。
 
@@ -430,7 +430,7 @@ OSGi框架服务排名值用于指示调用此服务所用的顺序。 此值是
 控制CQ重写器的HTML分析器。
 
 * **要处理的其他标记** — 您可以添加或删除要由解析器处理的HTML标记。 默认情况下，将处理以下标记：A、IMG、AREA、FORM、BASE、LINK、SCRIPT、BODY、HEAD。
-* **保留驼峰式大小写** — 默认情况下，HTML解析器将驼峰式大小写（例如`eBay`）中的属性转换为小写（例如`ebay`）。 您可以关闭此设置以保留驼峰式大小写属性。 当使用前端框架(如Angular2)时，此设置很有用。
+* **保留驼峰式大小写** — 默认情况下，HTML解析器将驼峰式大小写的属性（例如`eBay`）转换为小写（例如`ebay`）。 您可以关闭此设置以保留驼峰式大小写属性。 当使用前端框架（如Angular 2）时，此设置很有用。
 
 **Day Commons JDBC连接池**&#x200B;配置对用作内容源的外部数据库的访问。
 
@@ -438,8 +438,8 @@ OSGi框架服务排名值用于指示调用此服务所用的顺序。 此值是
 
 **CDN重写器**&#x200B;必须确保AEM与CDN之间的通信，以便以安全的方式将资产/二进制文件传递给最终用户。 此过程涉及以下两个任务：
 
-* 第一次（或在缓存中资源过期后）通过CDN从AEM访问资源。
-* 安全访问CDN中缓存的资源。 将资源缓存在CDN中后，请求不会发送到AEM，并且所有有权对上的资源访问的用户都应从CDN提供服务。
+* 第一次（或在缓存中的资源过期后）通过CDN从AEM访问资源。
+* 安全访问CDN中缓存的资源。 将资源缓存在CDN中后，该请求不会发送到AEM，并且所有有权访问该资源的用户都应从CDN提供服务。
 
 AEM提供了一个重写器，用于将内部资产URL重写为外部CDN URL。 它会重写要传递到CDN的链接，包括JWS签名和过期时间，以允许安全地访问资产。 此功能将用于创作实例。
 
@@ -451,10 +451,10 @@ AEM提供了一个重写器，用于将内部资产URL重写为外部CDN URL。 
    `CDN_domain/content/dam/geometrixx-media/articles/paladin_trailer.jpg/_jcr_content/renditions/cq5dam.thumbnail.319.319.png?cdn_sign=JWS_SIGNATURE`
 
 1. 然后，用户的浏览器将资产请求转发到CDN服务器
-1. CDN应配置为将请求与`cdn_sign`参数一起转发到AEM。
+1. 应将CDN配置为将请求与`cdn_sign`参数一起转发到AEM。
 1. 身份验证处理程序验证`cdn_sign`参数并将资产返回到CDN，然后再传递给用户
 
-用户的浏览器、CDN和AEM之间的流量可按如下方式进行可视化。
+用户的浏览器、CDN和AEM之间的流量可以可视化，如下所示。
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 

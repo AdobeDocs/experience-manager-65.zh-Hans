@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '2057'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 下表提供了以编程方式与工作流交互时要使用的几个关键Java对象的参考文档的链接。 下面的示例演示了如何在代码中获取和使用类对象。
 
-| 功能 | 对象 |
+| 特性 | 对象 |
 |---|---|
 | 访问工作流 | [`WorkflowSession`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html) |
 | 执行和查询工作流实例 | [`Workflow`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html)</br>[`WorkItem`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkItem.html)</br>[`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html) |
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ## 在ECMA脚本中获取工作流对象 {#obtaining-workflow-objects-in-ecma-scripts}
 
-如[查找脚本](/help/sites-developing/the-basics.md#locating-the-script)中所述，AEM （通过Apache Sling）提供了一个执行服务器端ECMA脚本的ECMA脚本引擎。 [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html)类可立即作为`sling`变量供脚本使用。
+如[查找脚本](/help/sites-developing/the-basics.md#locating-the-script)中所述，AEM（通过Apache Sling）提供了一个执行服务器端ECMA脚本的ECMA脚本引擎。 [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html)类可立即作为`sling`变量供脚本使用。
 
 `ScriptHelper`类提供对可用于最终获取`WorkflowSession`对象的`SlingHttpServletRequest`的访问权限；例如：
 
@@ -74,7 +74,7 @@ REST API支持以下操作：
 >
 >通过使用适用于Web开发的Firefox扩展Firebug，可以在操作控制台时遵循HTTP流量。 例如，您可以通过`POST`请求检查发送到AEM服务器的参数和值。
 
-在此页中，假定AEM在端口`4502`的localhost上运行，并且安装上下文为“ `/`”（根）。 如果不是安装，则需要相应地调整HTTP请求所应用的URI。
+在本页中，假定AEM在端口`4502`的本地主机上运行，并且安装上下文为“ `/`”（根）。 如果不是安装，则需要相应地调整HTTP请求所应用的URI。
 
 `GET`请求支持的渲染是JSON渲染。 `GET`的URL应该具有`.json`扩展名，例如：
 
@@ -98,7 +98,7 @@ REST API支持以下操作：
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>创建新的工作流实例。 参数为： <br /> - <code>model</code>：相应工作流模型的ID (URI) <br /> - <code>payloadType</code>：包含有效负载的类型（例如，<code>JCR_PATH</code>或URL）。<br />有效负载作为参数<code>payload</code>发送。 使用包含新工作流实例资源的URL的位置标头发送回<code>201</code> (<code>CREATED</code>)响应。</p> </td>
+   <td><p>创建新的工作流实例。 参数为：<br /> - <code>model</code>：相应工作流模型的ID (URI)<br /> - <code>payloadType</code>：包含有效负载的类型（例如，<code>JCR_PATH</code>或URL）。<br /> 有效负载作为参数<code>payload</code>发送。 使用包含新工作流实例资源的URL的位置标头发送回<code>201</code> (<code>CREATED</code>)响应。</p> </td>
   </tr>
  </tbody>
 </table>
@@ -131,7 +131,7 @@ REST API支持以下操作：
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>更改实例的状态。 新状态将作为参数<code>state</code>发送，并且必须具有下列值之一： <code>RUNNING</code>、<code>SUSPENDED</code>或<code>ABORTED</code>。<br />如果新状态不可访问（例如，暂停已终止的实例时），<code>409</code> (<code>CONFLICT</code>)响应将发送回客户端。</td>
+   <td>更改实例的状态。 新状态将作为参数<code>state</code>发送，并且必须具有下列值之一： <code>RUNNING</code>、<code>SUSPENDED</code>或<code>ABORTED</code>。<br /> 如果新状态不可访问（例如，暂停已终止的实例时），则会将<code>409</code> (<code>CONFLICT</code>)响应发送回客户端。</td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +154,7 @@ REST API支持以下操作：
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>创建新的工作流模型。 如果发送了参数<code>title</code>，则使用指定的标题创建新模型。 将JSON模型定义作为参数<code>model</code>附加时，会根据提供的定义创建新的工作流模型。<br /> <code>201</code>响应(<code>CREATED</code>)被发送回包含新工作流模型资源的URL的位置标头。<br />当模型定义作为名为<code>modelfile</code>的文件参数附加时，也会发生同样的情况。<br />在<code>model</code>和<code>modelfile</code>参数的情况下，需要名为<code>type</code>的附加参数来定义序列化格式。 可以使用OSGI API集成新的序列化格式。 标准JSON序列化程序与工作流引擎一起交付。 其类型为JSON。 有关格式的示例，请参见下文。</td>
+   <td>创建新的工作流模型。 如果发送了参数<code>title</code>，则使用指定的标题创建新模型。 将JSON模型定义作为参数<code>model</code>附加时，会根据提供的定义创建新的工作流模型。<br /> 使用包含新工作流模型资源的URL的位置标头发送回<code>201</code>响应(<code>CREATED</code>)。<br /> 当模型定义作为名为<code>modelfile</code>.<br />的文件参数附加时，也会发生同样的情况 在<code>model</code>和<code>modelfile</code>参数的情况下，需要名为<code>type</code>的附加参数来定义序列化格式。 可以使用OSGI API集成新的序列化格式。 标准JSON序列化程序与工作流引擎一起交付。 其类型为JSON。 有关格式的示例，请参见下文。</td>
   </tr>
  </tbody>
 </table>
@@ -239,11 +239,11 @@ REST API支持以下操作：
   </tr>
   <tr>
    <td><code>PUT</code></td>
-   <td>更新模型的<code>HEAD</code>版本（创建新版本）。<br />必须将新版本模型的完整模型定义作为名为<code>model</code>的参数添加。 此外，创建新模型时需要<code>type</code>参数，且需要值为<code>JSON</code>.<br /> </td>
+   <td>更新模型的<code>HEAD</code>版本（创建新版本）。<br /> 必须将新版本的完整模型定义作为名为<code>model</code>的参数添加。 此外，创建新模型时需要<code>type</code>参数，且需要值为<code>JSON</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>与PUT的行为相同。 需要，因为AEM小组件不支持<code>PUT</code>操作。</td>
+   <td>与PUT的行为相同。 需要，因为AEM构件不支持<code>PUT</code>操作。</td>
   </tr>
   <tr>
    <td><code>DELETE</code></td>
@@ -358,7 +358,7 @@ REST API支持以下操作：
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>完成其URI作为参数<code>item</code>发送的工作项并将相应的工作流实例前进到下一个节点，如果返回一个步骤，则由参数<code>route</code>或<code>backroute</code>定义。<br />如果发送了参数<code>delegatee</code>，则由参数<code>item</code>标识的工作项将委派给指定的参与者。</td>
+   <td>完成其URI作为参数<code>item</code>发送的工作项，并将相应的工作流实例前进到下一个节点，如果返回一个步骤，则由参数<code>route</code>或<code>backroute</code>定义。<br /> 如果发送了参数<code>delegatee</code>，则由参数<code>item</code>标识的工作项将委派给指定的参与者。</td>
   </tr>
  </tbody>
 </table>
@@ -377,7 +377,7 @@ REST API支持以下操作：
 
 ### 如何获取所有正在运行的工作流的列表及其ID {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
-要获取所有正在运行的工作流的列表，请执行GET：
+要获取所有正在运行的工作流的列表，请执行GET ：
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
@@ -425,7 +425,7 @@ curl -u admin:admin -d "action=UPDATE&workflowTitle=myWorkflowTitle" http://loca
 
 ### 如何列出所有工作流模型 {#how-to-list-all-workflow-models}
 
-要获取所有可用工作流模型的列表，请执行GET：
+要获取所有可用工作流模型的列表，请执行“获取”以执行以下操作：
 
 `http://localhost:4502/etc/workflow/models.json`
 
@@ -566,7 +566,7 @@ curl -u admin:admin -X DELETE http://localhost:4502/etc/workflow/models/{id}
 
 此参数可设置为`true`以指示应从相关结果中排除系统工作流。
 
-您[可以更新OSGi配置](/help/sites-deploying/configuring-osgi.md) **AdobeGranite工作流PayloadMapCache**，该配置将工作流`Models`指定为系统工作流。 默认（运行时）工作流模型为：
+您[可以更新OSGi配置](/help/sites-deploying/configuring-osgi.md) **Adobe Granite工作流PayloadMapCache**，该配置将工作流`Models`指定为系统工作流。 默认（运行时）工作流模型为：
 
 * `/var/workflow/models/scheduled_activation/jcr:content/model`
 * `/var/workflow/models/scheduled_deactivation/jcr:content/model`

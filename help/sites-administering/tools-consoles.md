@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '594'
+source-wordcount: '597'
 ht-degree: 25%
 
 ---
@@ -102,7 +102,7 @@ ht-degree: 25%
   </tr>
   <tr>
    <td> </td>
-   <td>系统概览</td>
+   <td>系统概述</td>
   </tr>
   <tr>
    <td> </td>
@@ -182,7 +182,7 @@ ht-degree: 25%
   </tr>
   <tr>
    <td> </td>
-   <td>分析配置</td>
+   <td>洞察配置</td>
   </tr>
   <tr>
    <td> </td>
@@ -306,18 +306,18 @@ ht-degree: 25%
   </tr>
   <tr>
    <td> </td>
-   <td>facebook社交登录配置<br /> </td>
+   <td>Facebook社交登录配置<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>twitter社交登录配置<br /> </td>
+   <td>Twitter社交登录配置<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>pinterest社交登录配置<br /> </td>
+   <td>Pinterest社交登录配置<br /> </td>
   </tr>
   <tr>
-   <td>社区</td>
+   <td>Communities</td>
    <td> </td>
   </tr>
   <tr>
@@ -345,7 +345,7 @@ ht-degree: 25%
    <td>社区徽章</td>
   </tr>
   <tr>
-   <td>商务</td>
+   <td>Commerce</td>
    <td> </td>
   </tr>
   <tr>
@@ -376,7 +376,7 @@ ht-degree: 25%
    <td>Client Context表示动态组合的用户数据集合。 默认和Experience Cloud配置保留在此处。<br /> </td>
   </tr>
   <tr>
-   <td>Cloud Service配置<br /> </td>
+   <td>云服务配置<br /> </td>
    <td>保存与与Adobe Experience Cloud集成相关的配置。</td>
   </tr>
   <tr>
@@ -384,7 +384,7 @@ ht-degree: 25%
    <td>配置管理器设置。</td>
   </tr>
   <tr>
-   <td>商务</td>
+   <td>Commerce</td>
    <td>提供对导入程序和各种产品数据的访问。</td>
   </tr>
   <tr>
@@ -392,7 +392,7 @@ ht-degree: 25%
    <td>访问各种选项。</td>
   </tr>
   <tr>
-   <td>功能板</td>
+   <td>仪表板</td>
    <td>创建报告仪表板；这些仪表板提供了一种可自定义的方式，用于定义显示合并数据的页面。</td>
   </tr>
   <tr>
@@ -421,11 +421,11 @@ ht-degree: 25%
   </tr>
   <tr>
    <td>包</td>
-   <td>指向包管理器的替代链接，该链接显示已为AEM WCM加载的包。 与CRX的包管理器中显示的信息类似。</td>
+   <td>包管理器的替代链接，显示已为AEM WCM加载的包。 与CRX的包管理器中显示的信息类似。</td>
   </tr>
   <tr>
    <td>复制 — 复制代理</td>
-   <td>用于在发布页面时，将数据从创作实例复制到Publish，或者使用反向复制将数据从发布环境返回到创作环境。</td>
+   <td>用于在发布页面时，将数据从创作实例复制到发布，或使用反向复制将用户注释从发布环境返回到创作。</td>
   </tr>
   <tr>
    <td>报告</td>

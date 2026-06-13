@@ -1,5 +1,5 @@
 ---
-title: 自定义网站控制台（经典UI）
+title: 自定义网站控制台（经典 UI）
 description: 可以扩展网站管理控制台以显示自定义列
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 0%
+source-wordcount: '760'
+ht-degree: 1%
 
 ---
 
-# 自定义网站控制台（经典UI）{#customizing-the-websites-console-classic-ui}
+# 自定义网站控制台（经典 UI）{#customizing-the-websites-console-classic-ui}
 
 ## 向“网站(siteadmin)”控制台添加自定义列 {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
@@ -113,14 +113,14 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 ### 测试新服务 {#testing-the-new-service}
 
-当您打开网站管理控制台并浏览您的网站时，浏览器将发出Ajax调用以获取用于构建控制台的JSON对象。 例如，当您浏览到`/content/geometrixx`文件夹时，将向AEM服务器发送以下请求以构建控制台：
+当您打开网站管理控制台并浏览您的网站时，浏览器将发出Ajax调用以获取用于构建控制台的JSON对象。 例如，当您浏览到`/content/geometrixx`文件夹时，以下请求将发送到AEM服务器以构建控制台：
 
-[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json？start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 要确保新服务在部署包含该服务的捆绑包后正在运行，请执行以下操作：
 
 1. 将浏览器指向以下URL：
-   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json？start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. 响应应按以下方式显示新属性：
 
@@ -130,7 +130,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 上一步包括通过叠加`/libs/wcm/core/content/siteadmin`来调整网站管理控制台的节点结构，以显示所有Geometrixx页面的新属性。 按照以下步骤操作：
 
-1. 在CRXDE Lite中，创建节点结构`/apps/wcm/core/content`和类型为`sling:Folder`的节点以反映结构`/libs/wcm/core/content`。
+1. 在CRXDE Lite中，使用类型为`sling:Folder`的节点创建节点结构`/apps/wcm/core/content`以反映结构`/libs/wcm/core/content`。
 
 1. 复制节点`/libs/wcm/core/content/siteadmin`并将其粘贴到`/apps/wcm/core/content`下方。
 
@@ -138,7 +138,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
    * 删除&#x200B;**pageText**
 
-   * 将&#x200B;**pathRegex**&#x200B;设置为`/content/geometrixx(/.*)?`
+   * 将&#x200B;**pathRegex**&#x200B;设置为 `/content/geometrixx(/.*)?`
 这将使网格配置在所有Geometrixx网站中处于活动状态。
 
    * 将&#x200B;**storeProxySuffix**&#x200B;设置为`.pages.json`
@@ -147,11 +147,11 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
    * 要激活MSM功能，请将以下MSM参数添加到多字符串属性&#x200B;**storeReaderFields**&#x200B;中：
 
-      * **msm：isSource**
-      * **msm：isInBlueprint**
-      * **msm：isLiveCopy**
+      * **msm:isSource**
+      * **msm:isInBlueprint**
+      * **msm:isLiveCopy**
 
-1. 在`/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`下添加一个`starred`节点（类型为&#x200B;**nt：unstructured**），该节点具有以下属性：
+1. 在`/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`下添加一个`starred`节点（类型为&#x200B;**nt:unstructured**），该节点具有以下属性：
 
    * **dataIndex**： `starred`字符串类型
 
@@ -162,9 +162,9 @@ public class StarredListInfoProvider implements ListInfoProvider {
 1. （可选）删除您不想在`/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`中显示的列
 
 1. `/siteadmin`是一个虚路径，默认指向`/libs/wcm/core/content/siteadmin`。
-若要将此重定向到您在`/apps/wcm/core/content/siteadmin`上的siteadmin版本，请定义属性`sling:vanityOrder`使其值高于`/libs/wcm/core/content/siteadmin`上定义的值。 默认值为300，因此适合使用任何更高的值。
+若要将此重定向到您在`/apps/wcm/core/content/siteadmin`上的siteadmin版本，请定义属性`sling:vanityOrder`使其值高于`/libs/wcm/core/content/siteadmin`上定义的值。默认值为300，因此适合使用任何更高的值。
 
-1. 转到网站管理控制台并导航到Geometrixx站点：
+1. 转到网站管理控制台，然后导航到Geometrixx站点：
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx)。
 
 1. 名为&#x200B;**Starred**&#x200B;的新列可用，显示自定义信息如下：

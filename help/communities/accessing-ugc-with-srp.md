@@ -1,6 +1,6 @@
 ---
 title: 使用SRP访问UGC
-description: 当站点配置为使用ASRP或MSRP时，实际的UGC不会存储在AEM节点存储(JCR)中
+description: 当站点配置为使用ASRP或MSRP时，实际的UGC不会存储在AEM的节点存储(JCR)中
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -12,7 +12,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '342'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ ht-degree: 0%
 
 在创建社区站点之前，必须将[存储资源提供程序(SRP)](/help/communities/working-with-srp.md)配置为选择与基础[拓扑](/help/communities/topologies.md)一致的实现。 SRP实施基于三个存储选项：
 
-1. [ASRP](/help/communities/asrp.md) — 按需Adobe存储
+1. [ASRP](/help/communities/asrp.md) - Adobe按需存储
 1. [MSRP](/help/communities/msrp.md) - MongoDB
 1. [JSRP](/help/communities/jsrp.md) - JCR
 
 ## 关于UGC存储 {#about-ugc-storage}
 
-有关UGC存储的重要信息是，当站点配置为使用ASRP或MSRP时，实际的UGC不会存储在AEM的[节点存储](/help/sites-deploying/data-store-config.md) (JCR)中。
+对于UGC的存储，务必要了解的是，当站点配置为使用ASRP或MSRP时，实际的UGC不会存储在AEM的[节点存储](/help/sites-deploying/data-store-config.md) (JCR)中。
 
 虽然JCR中可能会存在跟踪UGC以提供有用元数据的节点，但不要将这些节点与真正的UGC混淆。
 

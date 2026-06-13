@@ -1,13 +1,13 @@
 ---
 title: 使用具有客户端设备像素比的智能成像
-description: 了解如何在Adobe Experience Manager as a Cloud Service和Dynamic Media中将客户端设备像素比与智能成像结合使用。
+description: 了解如何在Adobe Experience Manager as a Cloud Service的Dynamic Media中将客户端设备像素比与智能成像结合使用。
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
 solution: Experience Manager, Experience Manager Assets
 feature: Smart Imaging
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 0%
 
 **服务器端渲染的应用程序**
 
-1. 通过在HTML页的标头部分中包含以下脚本来加载Service Worker初始化(`srvinit.js`)：
+1. 通过在HTML页面的标题部分中包含以下脚本，加载Service Worker初始化(`srvinit.js`)：
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    ```
 
-   Adobe建议您在&#x200B;_之前加载此脚本_，以便Service Worker立即开始初始化。
+   Adobe建议您在&#x200B;_之前加载此脚本_，以便立即开始初始化Service Worker。
 
 1. 在HTML页面的body部分的顶部包含以下DPR图像标记代码：
 
@@ -43,7 +43,7 @@ ht-degree: 0%
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   您必须在HTML页的所有静态图像之前&#x200B;_包含此DPR图像标记代码_。
+   您必须在HTML页面中&#x200B;_之前包含此DPR图像标记代码_。
 
 **客户端渲染的应用程序**
 
@@ -56,12 +56,12 @@ ht-degree: 0%
 
    您可以将两个DPR脚本合并到一个脚本中，以避免多个网络请求。
 
-   Adobe建议您在HTML页的&#x200B;_之前加载这些脚本_。
-Adobe还建议您将应用程序Bootstrap在差异HTML标记下，而不是在正文元素下。 原因是`dprImageInjection.js`动态注入HTML页主体部分顶部的图像标签。
+   Adobe建议您在HTML页面的&#x200B;_之前加载这些脚本_。
+Adobe还建议您将应用程序Bootstrap在不同的HTML标记下，而不是在正文元素下。原因是`dprImageInjection.js`动态注入HTML页面中正文部分顶部的图像标记。
 
 ## JavaScript文件下载 {#client-side-dpr-script}
 
-下载中的以下JavaScript文件仅作为示例参考提供给您。 如果打算在HTML页中使用这些文件，请务必编辑每个文件的代码以满足自己的要求。
+下载中的以下JavaScript文件仅作为示例参考提供给您。 如果您打算在HTML页面中使用这些文件，请务必编辑每个文件的代码以满足您自己的要求。
 
 * `dprImageInjection.js`
 * `srvinit.js`

@@ -10,8 +10,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '790'
-ht-degree: 0%
+source-wordcount: '800'
+ht-degree: 1%
 
 ---
 
@@ -228,7 +228,7 @@ ht-degree: 0%
 
    1. **可选**：在自定义页面中，根据需要覆盖header.jsp、footer.jsp和body.jsp。
 
-1. 创建一个自定义模板（例如： `/apps/myAfCustomizations/myAfTemplates/forestTemplate`），其jcr：content指向在上一步中创建的自定义页面（例如： `myAfCustomizations/myAfPages/forestPage)`）。
+1. 创建一个自定义模板（例如： `/apps/myAfCustomizations/myAfTemplates/forestTemplate`），其jcr:content指向在上一步中创建的自定义页面（例如： `myAfCustomizations/myAfPages/forestPage)`）。
 
    ![CRX存储库快照](assets/2-1.png)
 

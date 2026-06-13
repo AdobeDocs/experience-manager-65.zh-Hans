@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '846'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ AEM Communities使用电子邮件执行以下操作：
 
   如果将跟踪器ID添加到消息正文，则使用此前缀。 默认值为`Please do not remove this:`。
 
-* **[!UICONTROL 作为HTML的电子邮件]**：如果选中，则将电子邮件的Content-Type设置为`"text/html;charset=utf-8"`。 默认值为选中。
+* **[!UICONTROL 作为HTML的电子邮件]**：如果选中，则将电子邮件的内容类型设置为`"text/html;charset=utf-8"`。 默认值为选中。
 
 * **[!UICONTROL 默认用户名]**
 
@@ -182,11 +182,11 @@ AEM Communities使用电子邮件执行以下操作：
 
 * **[!UICONTROL URL]**
 
-  *（必需）*&#x200B;出站邮件服务器。 例如：`pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=**&#x200B;**`。
+  *（必需）*&#x200B;出站邮件服务器。 例如 `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`。
 
-* **[!UICONTROL 导入到路径]**&amp;amp；ast；
+* **[!UICONTROL 导入到路径]**&amp;ast；
 
-  *（必需）*&#x200B;设置为`/content/usergenerated/mailFolder/postEmails`
+  *（必需）*&#x200B;设置为 `/content/usergenerated/mailFolder/postEmails`
 浏览到`postEmails`文件夹并选择&#x200B;**确定**。
 
 * **[!UICONTROL 以秒为单位的更新时间间隔]**

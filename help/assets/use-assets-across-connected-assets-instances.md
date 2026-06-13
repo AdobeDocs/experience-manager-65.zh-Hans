@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '4019'
+source-wordcount: '3999'
 ht-degree: 15%
 
 ---
@@ -162,7 +162,7 @@ ht-degree: 15%
 
 要在[!DNL Assets]和[!DNL Sites]部署中配置[!DNL Dynamic Media]，请执行以下操作：
 
-1. 在远程[!DNL Assets]作者部署上启用[!DNL Dynamic Media]并将其配置为全局配置。 要配置Dynamic Media，请参阅[配置Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)。
+1. 在远程[!DNL Assets]作者部署上启用[!DNL Dynamic Media]并将其配置为全局配置。要配置Dynamic Media，请参阅[配置Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)。
 在远程[!DNL Assets]部署的[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认启用]**。
 
 1. 创建连接的Assets配置，如[配置站点与资源部署之间的连接](#configure-a-connection-between-sites-and-assets-deployments)中所述。 此外，选择&#x200B;**[!UICONTROL 为Dynamic Media连接的Assets获取原始演绎版]**&#x200B;选项。

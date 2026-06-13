@@ -1,5 +1,5 @@
 ---
-title: 防止CSRF攻击
+title: 防止 CSRF 攻击
 description: 了解如何防止跨站点请求伪造(CSRF)攻击并保护用户数据不被破坏。
 contentOwner: admin
 content-type: reference
@@ -11,18 +11,18 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '955'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
 
-# 防止CSRF攻击 {#preventing-csrf-attacks}
+# 防止 CSRF 攻击 {#preventing-csrf-attacks}
 
 ## CSRF攻击的工作原理 {#how-csrf-attacks-work}
 
 跨站点请求伪造(CSRF)是一种网站漏洞，其中有效用户的浏览器可能被用于通过iFrame发送恶意请求。 由于浏览器基于域发送Cookie，因此如果用户登录到应用程序，则用户的数据可能会受损。
 
-例如，考虑一个您在浏览器中登录到管理控制台的情况。 您会收到一封包含链接的电子邮件。 单击链接，这将在浏览器中打开一个新选项卡。 您打开的页面包含一个隐藏的iFrame，它会使用经过身份验证的AEM表单会话中的Cookie向Forms服务器发出恶意请求。 由于User Management会收到有效的Cookie，因此会传递请求。
+例如，考虑一个您在浏览器中登录到管理控制台的情况。 您会收到一封包含链接的电子邮件。 单击链接，这将在浏览器中打开一个新选项卡。 您打开的页面包含一个隐藏的iFrame，它会使用经过身份验证的Forms表单会话中的Cookie向AEM服务器发出恶意请求。 由于User Management会收到有效的Cookie，因此会传递请求。
 
 ## CSRF相关术语 {#csrf-related-terms}
 
@@ -32,13 +32,13 @@ ht-degree: 0%
 
 **Null反向链接：**&#x200B;当您打开新的浏览器窗口或Tab键，然后键入地址并按Enter键时，反向链接为Null。 该请求是全新请求，并非源自父网页；因此，不存在该请求的反向链接。 Forms服务器可以从以下位置接收Null反向链接：
 
-* 在SOAP或REST端点上发出的来自Acrobat的请求
+* 在SOAP或Acrobat的REST端点上发出的请求
 * 在AEM forms SOAP或REST端点上发出HTTP请求的任何桌面客户端
-* 打开新的浏览器窗口并输入任何AEM forms web应用程序登录页的URL时
+* 在打开新的浏览器窗口并输入任何AEM forms web应用程序登录页面的URL时
 
 在SOAP和REST端点上允许空反向链接。 在所有URI登录页面（如/adminui和/contentspace）及其对应的映射资源上也允许空反向链接。 例如， /contentspace的映射servlet是/contentspace/faces/jsp/login.jsp ，它应该是空引用异常。 只有在为Web应用程序启用GET过滤时才需要此例外。 您的应用程序可以指定是否允许空反向链接。 请参阅[强化和AEM表单的安全性](https://help.adobe.com/zh_CN/livecycle/11.0/HardeningSecurity/index.html)中的“防止跨站点请求伪造攻击”。
 
-**允许的反向链接异常：**&#x200B;允许的反向链接异常是允许的反向链接列表的子列表，从中阻止请求。 允许的“引用异常”专用于某个Web应用程序。 如果不允许允许的反向链接子集调用特定Web应用程序，您可以通过“允许的反向链接例外”来阻止列表反向链接。 在web.xml文件中为应用程序指定了允许的反向链接例外。 (请参阅“帮助和Tutorials”页面上的“强化和保护AEM表单的安全性”中的“防止跨站点请求伪造攻击”。)
+**允许的反向链接异常：**&#x200B;允许的反向链接异常是允许的反向链接列表的子列表，从中阻止请求。 允许的“引用异常”专用于某个Web应用程序。 如果不允许允许的反向链接子集调用特定Web应用程序，您可以通过“允许的反向链接例外”来阻止列表反向链接。 在web.xml文件中为应用程序指定了允许的反向链接例外。 （请参阅“帮助和教程”页面上的“强化和AEM的安全性”表单中的“防止跨站点请求伪造攻击”。）
 
 ## 允许的反向链接的工作方式 {#how-allowed-referers-work}
 
@@ -46,8 +46,8 @@ AEM Forms提供反向链接筛选功能，可帮助阻止CSRF攻击。 反向链
 
 1. Forms服务器检查用于调用的HTTP方法：
 
-   * 如果POST，Forms服务器将执行反向链接标头检查。
-   * 如果是GET，Forms服务器将绕过反向链接检查，除非CSRF_CHECK_GETS设置为true（在这种情况下，它将执行反向链接标头检查）。 在web.xml文件中为应用程序指定CSRF_CHECK_GETS。 （请参阅[强化和安全指南](https://help.adobe.com/zh_CN/livecycle/11.0/HardeningSecurity/index.html)中的“防止跨站点请求伪造攻击”。）
+   * 如果是POST，Forms服务器将执行反向链接标头检查。
+   * 如果是GET，则Forms服务器会绕过反向链接检查，除非CSRF_CHECK_GETS设置为true（在这种情况下，它会执行反向链接标头检查）。 在web.xml文件中为应用程序指定CSRF_CHECK_GETS。 （请参阅[强化和安全指南](https://help.adobe.com/zh_CN/livecycle/11.0/HardeningSecurity/index.html)中的“防止跨站点请求伪造攻击”。）
 
 1. Forms服务器检查请求的URI是否已列入允许列表：
 
@@ -68,7 +68,7 @@ AEM Forms提供反向链接筛选功能，可帮助阻止CSRF攻击。 反向链
 
 运行Configuration Manager时，默认主机和IP地址或Forms服务器将会添加到允许的反向链接列表中。 您可以在管理控制台中编辑此列表。
 
-1. 在管理控制台中，单击设置>用户管理>配置>配置允许的反向链接URL 。允许的反向链接列表将显示在页面底部。
+1. 在管理控制台中，单击设置>用户管理>配置>配置允许的反向链接URL 。 允许的反向链接列表将显示在页面底部。
 1. 要添加允许的反向链接，请执行以下操作：
 
    * 在允许的反向链接框中键入主机名或IP地址。 要一次添加多个允许的反向链接，请在新行中输入每个主机名或IP地址。

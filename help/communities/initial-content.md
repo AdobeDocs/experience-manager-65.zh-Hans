@@ -11,7 +11,7 @@ feature: Communities
 role: Developer
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '508'
 ht-degree: 2%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 2%
 
    * SCF播放 — 要播放的主页的子页面。
 
-本教程未深入探讨[语言副本](../../help/sites-administering/tc-prep.md)。 相反，它设计为使根页面可以通过HTML标题为用户实现首选语言检测，并重定向到该语言的相应主页。 使用两个字母的国家代码作为页面的节点名称，例如，“en”表示英语，“fr”表示法语。
+本教程未深入探讨[语言副本](../../help/sites-administering/tc-prep.md)。 实际上，它设计为让根页面可以通过HTML标题为用户实施首选语言检测，并重定向到该语言的相应主页。 使用两个字母的国家代码作为页面的节点名称，例如，“en”表示英语，“fr”表示法语。
 
 ## 创建第一页 {#create-first-pages}
 

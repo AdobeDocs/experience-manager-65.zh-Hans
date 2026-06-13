@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3263'
 ht-degree: 14%
 
 ---
@@ -119,9 +119,9 @@ TBD: Add some info about XD integration and possibly info about DA v2.0.
 * 当Adobe Stock中的资源保存到[!DNL Experience Manager]时，它们成为常规[!DNL Assets]，二进制文件保存到[!DNL Experience Manager]存储库。 与[!DNL Adobe Stock]相关的某些元数据已保存在[!DNL Experience Manager]中，否则摄取过程将与任何其他文件相同。 例如，如果智能标记处于活动状态，则会在保存时将标记添加到这些资源。
 * 保存到[!DNL Experience Manager]的资源是副本，而不是链接回[!DNL Adobe Stock]。
 
-**在[!DNL Creative Cloud]**&#x200B;中使用从[!DNL Adobe Stock]保存到[!DNL Experience Manager]中的资产。 此集成独立于[!DNL Adobe Asset Link]，但[!DNL Adobe Asset Link]可以识别通过这种方式从[!DNL Stock]保存的这些资源，并在[!DNL Photoshop]、[!DNL Illustrator]或[!DNL InDesign]的[!DNL Adobe Asset Link]扩展UI中，在这些资源上显示其他元数据和[!DNL Adobe Stock]徽标。 这些文件可用于浏览、打开等，因为它们是保存到[!DNL Experience Manager]中的常规资源。
-在扩展名为[!DNL Adobe Asset Link]的[!DNL Creative Cloud]应用中工作的Creative用户，除了有权访问从[!DNL Adobe Stock]到[!DNL Experience Manager]的已许可资源外，还可以使用[!DNL Creative Cloud]“库”面板来搜索、预览和许可[!DNL Adobe Stock]资源。
-来自[!DNL Adobe Stock]且已许可并保存到[!DNL Experience Manager]中的[!DNL Assets]可供访问[!DNL Experience Manager Assets]部署的更广泛团队使用，而来自[!DNL Adobe Stock]的创意人员通过[!DNL Creative Cloud]库面板来许可资产，使其仅在默认情况下在其[!DNL Creative Cloud]帐户中可供自己使用。
+**在[!DNL Creative Cloud]**&#x200B;中使用从[!DNL Adobe Stock]保存到[!DNL Experience Manager]中的资产。此集成独立于[!DNL Adobe Asset Link]，但[!DNL Adobe Asset Link]能够识别以这种方式从[!DNL Stock]保存的这些资源，并在[!DNL Photoshop]、[!DNL Illustrator]或[!DNL InDesign]的[!DNL Adobe Asset Link]扩展UI中，在这些资源上显示其他元数据和[!DNL Adobe Stock]徽标。这些文件可用于浏览、打开等，因为它们是保存到[!DNL Experience Manager]中的常规资源。
+使用[!DNL Creative Cloud]应用且扩展名为[!DNL Adobe Asset Link]的Creative用户除了可以访问从[!DNL Adobe Stock]到[!DNL Experience Manager]的已许可资源外，还可以使用[!DNL Creative Cloud]库面板来搜索、预览和许可[!DNL Adobe Stock]资源。
+来自[!DNL Adobe Stock]且已许可并保存到[!DNL Experience Manager]中的[!DNL Assets]可供访问[!DNL Experience Manager Assets]部署的更广泛团队使用，而来自[!DNL Adobe Stock]的创意人员通过[!DNL Creative Cloud]库面板进行资产许可时，默认情况下仅可在其[!DNL Creative Cloud]帐户中供他们自己使用。
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
@@ -135,7 +135,7 @@ TBD: A condensed version of the below content is better placed in the Adobe DAM 
 
 将资产存储在DAM中可使其轻松访问和查找。 它确保资产可供整个组织或生态系统（包括合作伙伴、客户等）中的众多用户使用。
 
-大多数组织选择仅存储与下游营销/LOB流程相关的资产(通过[!DNL Experience Manager Sites]发布到Web渠道等渠道，或者发布到Adobe Experience Cloud提供的其他渠道（Marketing Cloud、Advertising Cloud和Analytics Cloud测量，提供给用户/合作伙伴等）。 此外，组织还会在DAM中存储可能接受审核/批准流程的资产。 这样，DAM存储的大部分资产都极有可能被使用，并且可避免存储闲置资产。
+大多数组织都选择仅存储与下游营销/LOB流程相关的资产(通过[!DNL Experience Manager Sites]发布到Web渠道等渠道，或者发布到Adobe Experience Cloud提供的其他渠道（Marketing Cloud、Advertising Cloud和由Analytics Cloud测量，提供给用户/合作伙伴等）。 此外，组织还会在DAM中存储可能接受审核/批准流程的资产。 这样，DAM存储的大部分资产都极有可能被使用，并且可避免存储闲置资产。
 
 存储资产还受技术和资源利用率考虑的约束。 DAM围绕存储的资产提供其他服务，包括提取元数据、版本控制、生成预览/转码、管理引用和添加访问控制信息。 这些服务会占用额外的时间和基础架构资源。
 

@@ -1,5 +1,5 @@
 ---
-title: 使用表单数据模型
+title: 处理表单数据模型
 description: 数据集成提供了表单数据模型编辑器，以配置和使用表单数据模型。
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '4159'
-ht-degree: 0%
+source-wordcount: '4255'
+ht-degree: 1%
 
 ---
 
-# 使用表单数据模型{#work-with-form-data-model}
+# 处理表单数据模型{#work-with-form-data-model}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您必须是&#x200B;**fdm-author**&#x200B;和&#x200B;**forms-user**&#x200B;组的成员才能创建和使用表单数据模型。 请联系您的AEM管理员以成为组的成员。
+>您必须是&#x200B;**fdm-author**&#x200B;和&#x200B;**forms-user**&#x200B;组的成员才能创建和使用表单数据模型。 联系AEM管理员以成为组成员。
 
 ## 添加数据模型对象和服务 {#add-data-model-objects-and-services}
 
@@ -113,7 +113,7 @@ ht-degree: 0%
 
    要手动绑定子属性与数据模型对象属性，请选择&#x200B;**[!UICONTROL 绑定引用]**&#x200B;字段旁边的浏览图标。 **[!UICONTROL 选择对象]**&#x200B;对话框列出了父数据模型对象的所有属性。 选择要绑定的属性，然后选择勾号图标。 请注意，您只能选择与子资产具有相同数据类型的资产。
 
-1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存子属性，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型。 现在，子属性已添加到数据模型对象中。
+1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存子属性，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型。现在，子属性已添加到数据模型对象中。
 
 创建数据模型对象和属性后，即可继续基于表单数据模型创建自适应表单和交互式通信。 之后，当您具有可用数据源并配置好数据源时，可以将表单数据模型与数据源绑定。 绑定将在关联的自适应表单和交互式通信中自动更新。 有关使用表单数据模型创建自适应表单和交互式通信的更多信息，请参阅[使用表单数据模型](/help/forms/using/using-form-data-model.md)。
 
@@ -182,13 +182,13 @@ ht-degree: 0%
 
 #### 用户配置文件属性 {#user-profile-attribute}
 
-从&#x200B;**[!UICONTROL 绑定到]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 用户配置文件属性]**，然后在&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中输入属性名称。 根据属性名称，从数据源检索已登录AEM实例的用户详细信息。
+从&#x200B;**[!UICONTROL 绑定到]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL 用户配置文件属性]**，然后在&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中输入属性名称。 根据属性名称，将从数据源检索登录到AEM实例的用户详细信息。
 
 在&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中指定的属性名称必须包含完整的绑定路径，直到用户的属性名称为止。 打开以下URL以访问CRXDE上的用户详细信息：
 
 `https://[server-name]:[port]/crx/de/index.jsp#/home/users/`
 
-![用户配置文件](assets/binding_crxde_user_profile_new.png)
+![用户轮廓](assets/binding_crxde_user_profile_new.png)
 
 在此示例中，在`grios`用户的&#x200B;**[!UICONTROL 绑定值]**&#x200B;字段中指定`profile.empid`。
 
@@ -381,9 +381,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->**NavigationPropertyName**&#x200B;参数的&#x200B;**默认值**&#x200B;字段中可用的值取决于&#x200B;**返回数组的状态？**&#x200B;切换按钮。 启用后，它将显示收藏集类型的导航属性。
+>**NavigationPropertyName**&#x200B;参数的&#x200B;**默认值**&#x200B;字段中可用的值取决于&#x200B;**返回数组？**&#x200B;的状态 切换按钮。 启用后，它将显示收藏集类型的导航属性。
 
-在此示例中，您还可以选择输出模型对象作为Person，选择导航属性参数作为Friends或BestFriend (具体取决于&#x200B;**Return数组是？**&#x200B;已启用或已禁用)。
+在此示例中，您还可以选择输出模型对象作为Person，选择导航属性参数作为Friends或BestFriend （取决于&#x200B;**返回数组？**） 启用或禁用)。
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
@@ -488,7 +488,7 @@ operationOptions.setValidationOptions(ValidationOptions.FULL);
    <td>Swagger和WSDL</td> 
   </tr> 
   <tr> 
-   <td>minlength</td> 
+   <td>minLength</td> 
    <td>指定字符串中包含的字符数的下限。 指定为下限的最小值也可以分配给输入数据中的参数。</td> 
    <td>Swagger和WSDL</td> 
   </tr> 

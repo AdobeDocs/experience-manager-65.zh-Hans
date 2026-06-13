@@ -1,5 +1,5 @@
 ---
-title: 更改接口的颜色方案
+title: 更改界面颜色方案
 description: 如何有选择地修改AEM Forms Workspace用户界面部分的配色方案。
 contentOwner: robhagat
 content-type: reference
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 0%
+source-wordcount: '220'
+ht-degree: 6%
 
 ---
 
-# 更改接口的颜色方案 {#changing-the-color-scheme-of-the-interface}
+# 更改界面颜色方案 {#changing-the-color-scheme-of-the-interface}
 
 您可以修改AEM Forms工作区用户界面部分的配色方案以满足您的要求。 以下是一些具有代表性的颜色方案自定义示例。 除了本文中讨论的步骤之外，请参阅[AEM Forms工作区自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)。
 

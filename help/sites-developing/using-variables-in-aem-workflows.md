@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '1942'
+source-wordcount: '2076'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[使用变量视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
+[“使用变量”视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
 变量是[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)接口的扩展。 您可以在ECMAScript中使用[MetaDataMap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)访问使用变量保存的元数据。
 
@@ -63,7 +63,7 @@ ht-degree: 0%
    * 表单数据模型 — 指定表单数据模型路径。
    * ArrayList — 指定集合的子类型。
 
-1. 指定变量的可选说明，并选择框内复选标记指示的![保存图标。](assets/Done_Icon.png)以保存更改。 变量将显示在左侧窗格中可用的列表中。
+1. 指定变量的可选说明，并选择框内复选标记指示的![保存图标。](assets/Done_Icon.png) 以保存更改。 变量将显示在左侧窗格中可用的列表中。
 
 创建变量时，请考虑以下实践：
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 1. 将&#x200B;**设置变量**&#x200B;步骤拖放到工作流编辑器中，选择该步骤，然后选择扳手指示的![配置图标。](assets/configure_icon.png) （配置）。
 1. 在设置变量对话框中，选择&#x200B;**[!UICONTROL 映射]** > **[!UICONTROL 添加映射]**。
 1. 在&#x200B;**映射变量**&#x200B;部分中，选择要存储数据的变量，选择映射模式，然后指定要在变量中存储的值。 映射模式因变量类型而异。
-1. 映射更多变量，以便生成有意义的表达式。 选择框内复选标记指示的![保存图标。](assets/Done_Icon.png)以保存更改。
+1. 映射更多变量，以便生成有意义的表达式。 选择框内复选标记指示的![保存图标。](assets/Done_Icon.png) 以保存更改。
 
 ### 示例1：查询XML变量以设置字符串变量的值 {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -251,8 +251,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 ## 编辑变量 {#edit-a-variable}
 
 1. 在编辑工作流页面上，选择工作流模型Sidekick中可用的“变量”图标。 左窗格中的变量部分显示所有现有变量。
-1. 选择铅笔符号表示的![编辑图标。要编辑的变量名称旁边的](assets/edit.png) （编辑）图标。
-1. 编辑变量信息并选择由复选标记指示的![保存图标。](assets/Done_Icon.png)以保存更改。 您无法编辑变量的&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Type]**&#x200B;字段。
+1. 选择铅笔符号指示的![编辑图标。](assets/edit.png) （编辑）图标（位于要编辑的变量名称旁）。
+1. 编辑变量信息并选择由复选标记指示的![保存图标。](assets/Done_Icon.png) 以保存更改。 您无法编辑变量的&#x200B;**[!UICONTROL Name]**&#x200B;和&#x200B;**[!UICONTROL Type]**&#x200B;字段。
 
 ## 删除变量 {#delete-a-variable}
 
@@ -262,4 +262,4 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 1. 在编辑工作流页面上，选择工作流模型Sidekick中可用的“变量”图标。 左窗格中的变量部分显示所有现有变量。
 1. 选择要删除的变量名称旁边的删除图标。
-1. 选择由复选标记符号指示的![完成图标。](assets/Done_Icon.png)以确认并删除该变量。
+1. 选择由复选标记符号指示的![完成图标。](assets/Done_Icon.png) 以确认并删除该变量。

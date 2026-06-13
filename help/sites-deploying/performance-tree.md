@@ -1,6 +1,6 @@
 ---
 title: 性能树
-description: 了解对AEM中的性能问题进行故障排除所需执行的步骤。
+description: 了解AEM中解决性能问题所需执行的步骤。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,8 +11,8 @@ feature: Administering
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1088'
-ht-degree: 9%
+source-wordcount: '1340'
+ht-degree: 12%
 
 ---
 
@@ -26,9 +26,9 @@ ht-degree: 9%
 
 ## 先决条件和假设 {#prerequisites-and-assumptions}
 
-假设在给定页面(AEM控制台或网页)上发现性能问题并且可以一致地复制。 在开始调查之前，必须具备测试或监控性能的方法。
+假设在给定页面（AEM控制台或网页）上发现性能问题并且可以一致地复制。 在开始调查之前，必须具备测试或监控性能的方法。
 
-分析从步骤0开始。 目标是确定哪个实体(Dispatcher、外部主机或AEM)应对性能问题负责，然后确定应调查哪个区域（服务器或网络）。
+分析从步骤0开始。 目标是确定哪个实体（Dispatcher、外部主机或AEM）应对性能问题负责，然后确定应调查哪个区域（服务器或网络）。
 
 ### 章节 1 {#section}
 
@@ -151,7 +151,7 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><strong>步骤 19</strong></td>
-   <td>100% CPU</td>
+   <td>100%CPU</td>
    <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans</a></td>
   </tr>
   <tr>
@@ -177,7 +177,7 @@ ht-degree: 9%
   <tr>
    <td><strong>步骤 23</strong></td>
    <td>查询速度慢</td>
-   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">有关查询和索引的最佳实践</a></td>
+   <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">查询与索引的最佳做法</a></td>
   </tr>
   <tr>
    <td><strong>步骤 24</strong></td>
@@ -242,12 +242,12 @@ ht-degree: 9%
     <ol>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans">常规Dispatcher配置</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#configuring-the-dispatcher-cache-cache">配置Dispatcher缓存</a></li>
-    </ol> <p>如何提高缓存率；使请求可缓存(Dispatcher最佳实践)</p> <p>此外，请考虑以下设置以优化缓存配置<br /> </p>
+    </ol> <p>如何提高缓存率；使请求可缓存（Dispatcher最佳实践）</p> <p>此外，请考虑以下设置以优化缓存配置<br /> </p>
     <ol>
      <li>为非GET的HTTP请求设置无缓存规则</li>
      <li>将查询字符串配置为不可缓存</li>
      <li>不缓存缺少扩展名的URL</li>
-     <li>缓存身份验证标头(自Dispatcher版本4.1.10之后可能提供)</li>
+     <li>缓存身份验证标头（自Dispatcher版本4.1.10之后可能提供）</li>
     </ol> </td>
   </tr>
   <tr>
@@ -257,7 +257,7 @@ ht-degree: 9%
   </tr>
   <tr>
    <td><strong>步骤 35</strong></td>
-   <td>配置Dispatcher</td>
+   <td>配置 Dispatcher</td>
    <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans">配置Dispatcher</a><br /> </td>
   </tr>
   <tr>
@@ -266,7 +266,7 @@ ht-degree: 9%
    <td><br />
     <ul>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-the-authoring-environment">创作层的缓存失效；</a></li>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-a-publishing-instance">Publish层的缓存失效。</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-a-publishing-instance">发布层的缓存失效。</a></li>
     </ul> </td>
   </tr>
   <tr>

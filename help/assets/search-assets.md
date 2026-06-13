@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5839'
+source-wordcount: '5796'
 ht-degree: 5%
 
 ---
@@ -53,7 +53,7 @@ ht-degree: 5%
 
 *图：了解[!DNL Experience Manager Assets]搜索结果界面。*
 
-**A.**&#x200B;将搜索另存为智能收藏集。 **B.**&#x200B;筛选条件或谓词以缩小搜索结果。 **C.**&#x200B;显示文件、文件夹或两者。 **D.** 单击“过滤器”以打开或关闭左边栏。 **E.**&#x200B;搜索位置为DAM。**F.**&#x200B;包含用户提供的搜索关键字的Omnisearch字段。 **G.**&#x200B;选择加载的搜索结果。 **小时**&#x200B;显示的搜索结果数占总搜索结果数。 **I.**&#x200B;关闭搜索。 **J.**&#x200B;在卡片视图和列表视图之间切换。
+**A.**&#x200B;将搜索另存为智能收藏集。 **B.**&#x200B;筛选条件或谓词以缩小搜索结果。 **C.**&#x200B;显示文件、文件夹或两者。 **D.** 单击“过滤器”以打开或关闭左边栏。 **E.**&#x200B;搜索位置为DAM。**F.**&#x200B;具有用户提供的搜索关键字的Omnisearch字段。 **G.**&#x200B;选择加载的搜索结果。 **小时**&#x200B;显示的搜索结果数占总搜索结果数。 **I.**&#x200B;关闭搜索。 **J.**&#x200B;在卡片视图和列表视图之间切换。
 
 ### 动态搜索Facet {#dynamicfacets}
 
@@ -88,7 +88,7 @@ ht-degree: 5%
 * `woman-running`
 
 但是，查询`woman -running`返回其元数据中不带`running`的资源。
-使用智能标记会添加额外的`OR`子句，以将任何搜索词作为应用的智能标记进行查找。 使用智能标记以`woman`或`running`标记的资产也出现在这样的搜索查询中。 所以搜索结果是，
+使用智能标记会添加额外的`OR`子句，以将任何搜索词作为应用的智能标记进行查找。使用智能标记以`woman`或`running`标记的资产也出现在此类搜索查询中。所以搜索结果是，
 
 * 元数据中包含`woman`和`running`关键字的Assets（默认行为）。
 
@@ -132,40 +132,40 @@ ht-degree: 5%
 
 ## 高级搜索 {#scope}
 
-[!DNL Experience Manager]提供了多种方法（如适用于所搜索资产的筛选条件），以帮助您更快地找到所需的资产。 下面介绍了一些常用方法。 Some [illustrated examples](#samples) are shared below.
+[!DNL Experience Manager]提供了多种方法（如适用于所搜索资产的筛选条件），以帮助您更快地找到所需的资产。 下面介绍了一些常用方法。 下面提供了一些[示例](#samples)。
 
-**Search for files or folders**: In the search results, see either files, folders, or both. From the **[!UICONTROL Filters]** panel, you can select the appropriate option. See [search interface](#searchui).
+**搜索文件或文件夹**：在搜索结果中，查看文件和/或文件夹。 从&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板中，您可以选择相应的选项。 请参阅[搜索界面](#searchui)。
 
-**Search for assets within a folder**: You can limit the search to a specific folder. In the **[!UICONTROL Filters]** panel, add the path of a folder. You can select only one folder at a time.
+**在文件夹中搜索资源**：您可以将搜索限制为特定文件夹。 在&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板中，添加文件夹的路径。 一次只能选择一个文件夹。
 
-![Limit search results to a folder by adding a folder path in Filters panel](assets/search_folder_select.gif)
+![通过在“筛选器”面板中添加文件夹路径将搜索结果限制为文件夹](assets/search_folder_select.gif)
 
-*Figure: Limit search results to a folder by adding a folder path in the Filters panel.*
+*图：通过在“筛选器”面板中添加文件夹路径，将搜索结果限制为文件夹。*
 
 ### 查找相似图像 {#visualsearch}
 
-To find images that are visually similar to a user-selected image, click the **[!UICONTROL Find Similar]** option from the card view of an image or from the toolbar. [!DNL Experience Manager] 会从 DAM 存储库中显示与用户所选图像相似的智能标记图像。 请参阅[如何配置相似性搜索](#configvisualsearch)。
+要查找与用户选择的图像视觉上相似的图像，请从图像的卡片视图或工具栏中单击&#x200B;**[!UICONTROL 查找类似]**&#x200B;选项。 [!DNL Experience Manager] 会从 DAM 存储库中显示与用户所选图像相似的智能标记图像。 请参阅[如何配置相似性搜索](#configvisualsearch)。
 
-![Find similar images using the option in the card view](assets/search_find_similar.png)
+![使用卡片视图中的选项查找类似图像](assets/search_find_similar.png)
 
-*Figure: Find similar images using the option in the card view.*
+*图：使用卡片视图中的选项查找类似图像。*
 
-### Adobe Stock images {#adobe-stock}
+### Adobe Stock图像 {#adobe-stock}
 
-From within the [!DNL Experience Manager] user interface, users can search [Adobe Stock assets](/help/assets/aem-assets-adobe-stock.md) and license the required assets. Add `Location: Adobe Stock` in the Omnisearch bar. You can also use the Filters panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number.
+在[!DNL Experience Manager]用户界面中，用户可以搜索[Adobe Stock资源](/help/assets/aem-assets-adobe-stock.md)并许可所需的资源。 在Omnisearch栏中添加`Location: Adobe Stock`。 您还可以使用过滤器面板查找所有许可或未许可的资源，或使用Adobe Stock文件号搜索特定资源。
 
-### Dynamic Media assets {#dmassets}
+### Dynamic Media资产 {#dmassets}
 
 您可以通过选择&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中的 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 集]**&#x200B;来过滤 Dynamic Media 图像。 该操作可过滤并显示图像集、轮播集、混合媒体集和旋转集等资产。
 
-### GQL search using specific values in metadata fields {#gql-search}
+### 使用元数据字段中的特定值的GQL搜索 {#gql-search}
 
-You can search digital assets based on exact values of metadata fields, such as, title, description, and creator. The GQL full-text search feature fetches only those assets whose metadata value exactly matches your search query. The names of the properties (Creator, Title, and so on) and the values are case-sensitive.
+您可以根据元数据字段（如标题、描述和创建者）的精确值搜索数字资源。 GQL全文搜索功能仅会获取其元数据值与搜索查询完全匹配的资源。 属性的名称（创建者、标题等）和值区分大小写。
 
-| Metadata field | Facet value and usage |
+| 元数据字段 | Facet值和使用情况 |
 |---|---|
-| 标题 | title:John |
-| 创建者 | creator:John |
+| 标题 | 标题:John |
+| 创建者 | 创建者:John |
 | 位置 | 位置:NA |
 | 描述 | description：&quot;Sample Image&quot; |
 | 创建者工具 | creatortool：&quot;Adobe Photoshop&quot; |
@@ -214,23 +214,23 @@ TBD: Where are the limit, size, orderby properties defined?
 
 ### 在[!DNL Experience Manager]桌面应用程序中搜索数字资产 {#desktop-app}
 
-Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面（Win或Mac）上可用。 Creatives can easily reveal the desired assets in Mac Finder or Windows Explorer, opened in desktop applications, and changed locally - the changes are saved back to [!DNL Experience Manager] with a new version created in the repository. The application supports basic searches using one or more keywords, `*` and `?` wildcards, and `AND` operator. See [browse, search, and preview assets](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets) in the desktop app.
+Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面（Win或Mac）上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets)。
 
 ### 在[!DNL Brand Portal]中搜索数字资源 {#brand-portal}
 
-Line-of-business users and marketers use Brand Portal to efficiently and securely share the approved digital assets with their extended internal teams, partners, and resellers. See [search assets on Brand Portal](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching).
+业务线用户和营销人员使用Brand Portal与其扩展的内部团队、合作伙伴和经销商高效、安全地共享获得批准的数字资源。 请参阅[在Brand Portal](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching)中搜索资源。
 
-### Search [!DNL Adobe Stock] images {#adobe-stock1}
+### 搜索[!DNL Adobe Stock]图像 {#adobe-stock1}
 
-From within the [!DNL Experience Manager] user interface, users can search Adobe Stock assets and license the required assets. Add `Location: Adobe Stock` in the Omnisearch field. You can also use the **[!UICONTROL Filters]** panel to find all the licensed or unlicensed assets or search a specific asset using Adobe Stock file number. See [manage [!DNL Adobe Stock] images in [!DNL Experience Manager]](/help/assets/aem-assets-adobe-stock.md#usemanage).
+在[!DNL Experience Manager]用户界面中，用户可以搜索Adobe Stock资源并许可所需的资源。 在Omnisearch字段中添加`Location: Adobe Stock`。 您还可以使用&#x200B;**[!UICONTROL 筛选器]**&#x200B;面板查找所有许可或未许可的资源，或使用Adobe Stock文件号搜索特定资源。 查看 [!DNL Experience Manager][&#128279;](/help/assets/aem-assets-adobe-stock.md#usemanage)中的管理 [!DNL Adobe Stock] 图像。
 
-### Search [!DNL Dynamic Media] assets {#dynamic-media}
+### 搜索[!DNL Dynamic Media]资源 {#dynamic-media}
 
 您可以通过选择&#x200B;**[!UICONTROL 过滤器]**&#x200B;面板中的 **[!UICONTROL Dynamic Media]** > **[!UICONTROL 集]**&#x200B;来过滤 Dynamic Media 图像。 该操作可过滤并显示图像集、轮播集、混合媒体集和旋转集等资产。 在创作网页时，作者可以在内容查找器中搜索集。 弹出菜单中提供集的过滤器。
 
-### Search digital assets in Content Finder when authoring web pages {#content-finder}
+### 创作网页时在Content Finder中搜索数字资产 {#content-finder}
 
-Authors can use Content Finder to search the DAM repository for the relevant assets and use the assets in the web pages they create. Authors can also use the Connected Assets functionality to search for assets that are available on a remote [!DNL Experience Manager] deployment. Authors can then use these assets in web pages on a local [!DNL Experience Manager] deployment. See [use remote assets](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
+作者可以使用内容查找器在DAM存储库中搜索相关资产，并在他们创建的网页中使用资产。 此外，作者还可以使用“连接的Assets”功能搜索远程[!DNL Experience Manager]部署中可用的资源。 然后，作者可以在本地[!DNL Experience Manager]部署的网页中使用这些资源。 请参阅[使用远程资产](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets)。
 
 ### 搜索收藏集 {#collections}
 
@@ -240,9 +240,9 @@ Authors can use Content Finder to search the DAM repository for the relevant ass
 
 >[!NOTE]
 >
->The asset selector was called [asset picker](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions) in prior versions of [!DNL Adobe Experience Manager].
+>在早期版本的[!DNL Adobe Experience Manager]中，资产选择器称为[资产选取器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions)。
 
-Asset selector lets you search, filter, and browse the DAM assets in a special way. Asset selector is available at `https://[aem_server]:[port]/aem/assetpicker.html`. You can fetch the metadata of assets that you select using the asset selector. You can launch it with supported request parameters, such as asset type (image, video, text) and selection mode (single or multiple selections). 这些参数为特定搜索实例设置资产选择器的上下文，并在整个选择过程中保持不变。
+资产选择器允许您以特殊方式搜索、过滤和浏览DAM资产。 资源选择器位于`https://[aem_server]:[port]/aem/assetpicker.html`。 您可以获取使用资源选择器选择的资源的元数据。 您可以通过受支持的请求参数启动它，例如资产类型（图像、视频、文本）和选择模式（单选或多选）。 这些参数为特定搜索实例设置资产选择器的上下文，并在整个选择过程中保持不变。
 
 资源选择器使用HTML5 `Window.postMessage`消息将选定资源的数据发送给收件人。 它仅在浏览模式下工作，并且仅适用于Omnisearch结果页面。
 

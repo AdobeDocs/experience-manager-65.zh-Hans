@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5中的Assets存储库重构
+title: AEM 6.5 中的 Assets 存储库重构
 description: 了解如何进行必要的更改，以迁移到Adobe Experience Manager (AEM) 6.5 for Assets中的新存储库结构。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1047'
-ht-degree: 2%
+source-wordcount: '1083'
+ht-degree: 3%
 
 ---
 
-# AEM 6.5中的Assets存储库重构 {#assets-repository-restructuring-in-aem}
+# AEM 6.5 中的 Assets 存储库重构 {#assets-repository-restructuring-in-aem}
 
 如AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到Adobe Experience Manager (AEM) 6.5的客户应使用此页面评估与影响AEM Assets解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
@@ -216,7 +216,7 @@ ht-degree: 2%
     <ol>
      <li>将所有自定义脚本或修改的脚本从<strong><code>/etc/dam/indesign/scripts</code></strong>复制到<strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
-       <li>在AEM 6.5中，只有复制新脚本或修改的脚本才能通过<strong><code>/libs/settings</code></strong>获得AEM提供的未修改脚本</li>
+       <li>在AEM 6.5中，只能通过<strong><code>/libs/settings</code></strong>复制AEM提供的未修改脚本的新脚本或修改的脚本</li>
       </ol> </li>
      <li>找到所有使用媒体提取流程WF步骤的工作流模型并
       <ol>

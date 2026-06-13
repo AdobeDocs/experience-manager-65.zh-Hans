@@ -13,8 +13,8 @@ exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
 workflow-type: tm+mt
-source-wordcount: '4397'
-ht-degree: 7%
+source-wordcount: '4530'
+ht-degree: 8%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 7%
 
 >[!NOTE]
 >
->默认情况下，当您在资产的详细信息视图中选择查看器时，系统会显示15个查看器预设。 您可以提高此限制。请参阅[增加显示的查看器预设数量](#increasing-the-number-of-viewer-presets-that-display)。
+>默认情况下，当您在资产的详细信息视图中选择查看器时，系统会显示15个查看器预设。 您可以提高此限制。 请参阅[增加显示的查看器预设数量](#increasing-the-number-of-viewer-presets-that-display)。
 
 ### 查看器对响应式设计网页的支持 {#viewer-support-for-responsive-designed-web-pages}
 
@@ -60,7 +60,7 @@ ht-degree: 7%
 >[!NOTE]
 >
 >在首次使用现成查看器之前，请发布这些查看器。
->请参阅[发布查看器预设]。(#publishing-viewer-presets)
+>查看[发布查看器预设]。(#publishing-viewer-presets)
 
 ### 查看器预设系统兼容性 {#viewer-preset-system-compatibility}
 
@@ -69,8 +69,8 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 * 台式机
 * Apple iPhone
 * Apple iPad
-* Android™智能手机
-* Android™平板电脑
+* ™智能手机
+* ™平板电脑
 * 对于视频，为[BlackBerry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678)和[Windows Phone](https://learn.microsoft.com/en-us/windows/uwp/audio-video-camera/supported-codecs)提供了对MP4播放的额外支持。
 
 ### 查看器预设的富媒体类型 {#rich-media-types-for-viewer-presets}
@@ -139,8 +139,8 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
    <td><strong>垂直缩放</strong></td>
    <td><p>垂直缩放查看器可让您最大化产品图像查看体验，以便为用户提供产品的最佳呈现。 样本的垂直位置执行以下操作：</p>
     <ul>
-     <li>确保色板“位于折页上方”。<br/>对于水平色板，根据用户的桌面屏幕大小，在用户向下滚动页面之前，这些色板不可见。 通过将色板垂直放置在查看器中，可以确保无论用户的屏幕大小如何，色板均可见。</li>
-     <li>最大化主图像大小。<br />对于水平色板，需要保留页面上的空间以确保它们可见。 此定位减小了主图像的大小。 但是，对于垂直样本布局，您无需分配此空间。 因此，您可以最大化主图像大小。</li>
+     <li>确保色板“位于折页上方”。<br/> 对于水平色板，根据用户的桌面屏幕大小，只有在用户向下滚动页面后，才会显示这些色板。 通过将色板垂直放置在查看器中，可以确保无论用户的屏幕大小如何，色板均可见。</li>
+     <li>最大化的主图像大小。<br /> 对于水平色板，需要保留页面上的空间以确保它们可见。 此定位减小了主图像的大小。 但是，对于垂直样本布局，您无需分配此空间。 因此，您可以最大化主图像大小。</li>
     </ul> </td>
   </tr>
   <tr>
@@ -163,7 +163,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 >[!NOTE]
 >
 >Dynamic Media中的所有现成查看器预设都已激活（开），但您必须发布它们。
->请参阅[发布查看器预设](#publishing-viewer-presets)。
+>查看[发布查看器预设](#publishing-viewer-presets)。
 >
 >您创建和添加的任何新查看器预设都必须激活*和*已发布。
 >请参阅[激活或停用查看器预设](#activating-or-deactivating-viewer-presets)和[发布查看器预设](#publishing-viewer-presets)。
@@ -361,14 +361,14 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
   <tr>
    <td><p><strong>捏开</strong></p> </td>
    <td><p>不适用</p> </td>
-   <td><p>放大(仅限iOS和Android™3倍)</p> </td>
-   <td><p>放大(仅限iOS和Android™3倍)</p> </td>
+   <td><p>放大（仅限iOS和Android™3倍）</p> </td>
+   <td><p>放大（仅限iOS和Android™3倍）</p> </td>
   </tr>
   <tr>
    <td><p><strong>捏紧关闭</strong></p> </td>
    <td><p>不适用</p> </td>
-   <td><p>缩小(仅限iOS和Android™ 3倍)</p> </td>
-   <td><p>缩小(仅限iOS和Android™ 3倍)</p> </td>
+   <td><p>缩小（仅限iOS和Android™ 3倍）</p> </td>
+   <td><p>缩小（仅限iOS和Android™ 3倍）</p> </td>
   </tr>
   <tr>
    <td><p><strong>轻扫</strong></p> </td>
@@ -446,7 +446,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
      导入CSS文件时，可视编辑器将检查CSS是否使用正确的查看器标记。 例如，如果要创建缩放查看器，则导入的所有CSS规则必须使用其在父查看器元素上定义的查看器类名称`.s7mixedmediaviewer`来定义。
 
-     您可以导入任意的手工制作CSS，只要它正确定义给定查看器的CSS标记即可。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中都有说明。 例如，如果您想阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=zh-Hans)。)但是，可视编辑器可能不了解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可用。
+     您可以导入任意的手工制作CSS，只要它正确定义给定查看器的CSS标记即可。 (CSS标记在[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources.html?lang=zh-Hans)的任何“自定义&#x200B;*&lt;查看器名称>*&#x200B;查看器”帮助主题中都有说明。 例如，如果要阅读有关缩放查看器的CSS标记，请参阅[自定义缩放查看器](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html?lang=zh-Hans)。 但是，可视编辑器可能并不了解某些CSS值。 在这种情况下，可视编辑器会尝试覆盖错误，以便CSS仍然可用。
 
    >[!NOTE]
    >
@@ -458,7 +458,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
    >对于按钮图稿，请选择2x图像并上传高分辨率图稿。 使用交互式图像和购物横幅时，您还可以从各种现成的热点按钮中进行选择。
 
 1. （可选）在“编辑查看器预设”页面顶部附近，选择&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**，为不同的设备和屏幕类型唯一定义可视样式。
-1. 在“查看器预设编辑器”页面上，选择&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡。 或者，您可以选择查看器中的任何可视元素，以选择进行配置。
+1. 在“查看器预设编辑器”页面上，选择&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡。或者，您可以选择查看器中的任何可视元素，以选择进行配置。
 例如，对于*VideoPlayer*&#x200B;类型，在&#x200B;**[!UICONTROL 修饰符]** > **[!UICONTROL 播放]**&#x200B;下，您可以从三个自适应比特率流选项中选择一个：
 
    * **[!UICONTROL 短划线]** — 视频流仅显示为短划线。 但是，在Safari/iOS设备上，您必须选择&#x200B;**[!UICONTROL hls]**&#x200B;作为类型。
@@ -472,7 +472,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
    可视编辑器中的许多组件都有一个与之关联的详细说明。 展开组件以显示其关联参数时，这些描述会显示在蓝色框中。
 
-   有些“查看器类型”具有的组件允许您在 **[!UICONTROL IS 命令]**&#x200B;文本字段中指定“图像提供”命令。有关可使用的命令列表，请参阅[图像提供 API 参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html?lang=zh-Hans)。
+   有些“查看器类型”具有的组件允许您在 **[!UICONTROL IS 命令]**&#x200B;文本字段中指定“图像提供”命令。 有关可使用的命令列表，请参阅[图像提供 API 参考](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html?lang=zh-Hans)。
 
    >[!NOTE]
    >
@@ -488,7 +488,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
    >[!IMPORTANT]
    >
-   >对于使用自适应比特率流配置文件的旧视频，URL将继续正常播放(使用HLS流播放)，直到您[重新处理视频资源](/help/assets/processing-profiles.md#reprocessing-assets)。 重新处理之后，同一URL可继续工作，但现在&#x200B;*同时启用了* DASH和HLS流。
+   >对于使用自适应比特率流配置文件的旧视频，URL将继续正常播放（使用HLS流播放），直到您[重新处理视频资源](/help/assets/processing-profiles.md#reprocessing-assets)。 重新处理之后，同一URL可继续工作，但现在&#x200B;*同时启用了* DASH和HLS流。
 
 ### 创建交互式查看器预设的特殊注意事项 {#special-considerations-for-creating-an-interactive-viewer-preset}
 
@@ -517,19 +517,19 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 
 在交互式视频查看器中，缩略图的自动滚动行为独立于您选择的显示模式。
 
-创建或编辑交互式视频查看器预设时，您可以从“行为”选项卡访问“自动滚动”。在“行为”选项卡中，从&#x200B;**[!UICONTROL 选定的组件]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL InteractiveSwatches]**。 “自动滚动”复选框列在“IS 命令”文本字段的下方。
+创建或编辑交互式视频查看器预设时，您可以从“行为”选项卡访问“自动滚动”。 在“行为”选项卡中，从&#x200B;**[!UICONTROL 选定的组件]**&#x200B;下拉菜单中选择&#x200B;**[!UICONTROL InteractiveSwatches]**。 “自动滚动”复选框列在“IS 命令”文本字段的下方。
 
-如果在查看器预设中禁用&#x200B;**[!UICONTROL 自动滚动]**（清除复选框），则在用户播放视频时，该面板仅显示整个视频长度的第一个缩略图。但是，如果需要，用户可以使用向上和向下箭头图标手动滚动缩略图。
+如果在查看器预设中禁用&#x200B;**[!UICONTROL 自动滚动]**（清除复选框），则在用户播放视频时，该面板仅显示整个视频长度的第一个缩略图。 但是，如果需要，用户可以使用向上和向下箭头图标手动滚动缩略图。
 
-在查看器预设中启用（选择）**[!UICONTROL 自动滚动]**&#x200B;后，在视频播放过程中，分配给视频区段的缩略图图像会在区段开始时滚动到视图中。但是，在某些情况下，区段内某些缩略图的显示时间是其之前或之后缩略图显示时间的两倍。发生此行为的原因是区段中缩略图的数量大于面板中可见缩略图的数量，且不可平均分割。
+在查看器预设中启用（选择）**[!UICONTROL 自动滚动]**&#x200B;后，在视频播放过程中，分配给视频区段的缩略图图像会在区段开始时滚动到视图中。 但是，在某些情况下，区段内某些缩略图的显示时间是其之前或之后缩略图显示时间的两倍。 发生此行为的原因是区段中缩略图的数量大于面板中可见缩略图的数量，且不可平均分割。
 
 举例说明，假设您有一个30秒的视频段。 而且，在30秒内总共会显示九个缩略图。 浏览器的大小调整方式应使显示面板中有四个可见的缩略图位置。 将30秒的视频时间段划分为3个子段。 下表显示了给定时间子区段显示哪些缩略图的细分：
 
 | **视频子区段** | **子区段时间（以秒为单位）** | **在面板中可见的缩略图** |
 |---|---|---|
-| 1 | 0-10 | 1、2、3、4 |
-| 2 | 10-20 | 4、5、6、7 |
-| 3 | 20-30 | 6、7、8、9 |
+| 1 | 0-10 | 1, 2, 3, 4 |
+| 2 | 10-20 | 4, 5, 6, 7 |
+| 3 | 20-30 | 6, 7, 8, 9 |
 
 视频子区段3的扩展范围不超过为其分配的缩略图。 另请注意，缩略图4、6和7在面板中的可见时间是其他缩略图的两倍。
 

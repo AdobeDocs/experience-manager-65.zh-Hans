@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
 source-wordcount: '2400'
-ht-degree: 10%
+ht-degree: 13%
 
 ---
 
@@ -29,7 +29,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets]保留每个资源的元数据。 它允许更轻松地分类和组织资产，并帮助查找特定资产的人员。 由于能够从上载到[!DNL Experience Manager Assets]的文件中提取元数据，因此元数据管理与创意工作流集成。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。
+[!DNL Adobe Experience Manager Assets] 保持每个资产的元数据。 它可以让用户更轻松地分类和组织资产，帮助用户查找特定的资产。 由于能够从上载到[!DNL Experience Manager Assets]的文件中提取元数据，因此元数据管理与创意工作流集成。 通过保持和管理资产的元数据的功能，您可以根据资产的元数据自动组织和处理资产。
 
 ## 元数据及其来源 {#how-to-edit-or-add-metadata}
 
@@ -39,7 +39,7 @@ Scope of metadata articles:
 
 * 首先，创建资产的本机应用程序向其添加一些元数据。 例如，[Acrobat将一些元数据](https://helpx.adobe.com/cn/acrobat/using/pdf-properties-metadata.html)添加到PDF文件，或者相机将一些基本元数据添加到照片。 在生成资源时，可以将元数据添加到本机应用程序本身。 例如，您可以在Adobe Lightroom[&#128279;](https://helpx.adobe.com/cn/lightroom-classic/help/metadata-basics-actions.html)中添加IPTC元数据。
 
-* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[!DNL Adobe Exchange]中查看如何[在 [!DNL Adobe Bridge]](https://helpx.adobe.com/cn/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)中使用元数据并查看 [!DNL Adobe Bridge][&#128279;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的标记面板。
+* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[!DNL Adobe Exchange]中查看如何[在 [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)中使用元数据并查看 [!DNL Adobe Bridge][&#128279;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的标记面板。
 
 * 在[!DNL Experience Manager Assets]中，您可以在[!UICONTROL 属性]页面中手动添加或编辑资源的元数据。
 
@@ -180,7 +180,7 @@ TBD: Review this overview.
 
 您可以将元数据配置文件应用到特定文件夹，或全局应用到所有资源。
 
-如果文件夹已具有您后来更改的现有元数据配置文件，您可以重新处理该文件夹中的资产。 查看编辑文件夹中用于处理资产的配置文件后[重新处理该文件夹中的资产](processing-profiles.md#reprocessing-assets)。
+如果某个文件夹当前有一个元数据配置文件，且您后来更改了此配置文件，就可以重新处理该文件夹中的资产。 查看编辑文件夹中用于处理资产的配置文件后[重新处理该文件夹中的资产](processing-profiles.md#reprocessing-assets)。
 
 您可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中将元数据轮廓应用到文件夹，或者如果您在文件夹中，也可以直接从&#x200B;**[!UICONTROL 属性]**&#x200B;中应用。 本节将介绍如何通过这两种方式将元数据轮廓应用到文件夹。
 

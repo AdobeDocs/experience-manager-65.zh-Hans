@@ -12,7 +12,7 @@ feature: Operations
 role: Admin
 source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
 workflow-type: tm+mt
-source-wordcount: '1897'
+source-wordcount: '1905'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ ht-degree: 0%
 
 在大多数情况下，WCM应用程序倾向于收集信息，但几乎不经常删除信息。 尽管添加了新图像，即使取代旧版本，版本控制系统仍保留旧图像并支持根据需要恢复旧图像。 因此，我们认为添加到系统中的大多数内容实际上都被永久存储。 那么，我们可能想要清理的存储库中“垃圾”的典型来源是什么？
 
-AEM将存储库用作多个内部活动和内部管理活动的存储空间：
+AEM将存储库用作多个内部和内部管理活动的存储空间：
 
 * 生成和下载的软件包
 * 为发布复制创建的临时文件
 * 工作流负载
 * 在DAM渲染期间临时创建的Assets
 
-当这些临时对象中的任意对象足够大，需要存储在数据存储中，并且当对象最终退出使用时，数据存储记录本身将保留为“垃圾”。 在典型的WCM创作/发布应用程序中，此类垃圾的最大来源通常是发布激活过程。 将数据复制到Publish时，如果首先在集合中以称为“Durbo”的有效数据格式收集数据，并将其存储在`/var/replication/data`下的存储库中，则不会复制这些数据。 数据包通常大于数据存储的临界大小阈值，因此最终存储为数据存储记录。 复制完成后，`/var/replication/data`中的节点将被删除，但数据存储记录仍保留为“垃圾桶”。
+当这些临时对象中的任意对象足够大，需要存储在数据存储中，并且当对象最终退出使用时，数据存储记录本身将保留为“垃圾”。 在典型的WCM创作/发布应用程序中，此类垃圾的最大来源通常是发布激活过程。 将数据复制到Publish时，如果首先以称为“Durbo”的有效数据格式在集合中收集数据，并将其存储在`/var/replication/data`下的存储库中，则不会将这些数据复制到发布中。 数据包通常大于数据存储的临界大小阈值，因此最终存储为数据存储记录。 复制完成后，`/var/replication/data`中的节点将被删除，但数据存储记录仍保留为“垃圾桶”。
 
 可回收垃圾的另一个来源是包。 包数据（与其他所有内容一样）存储在存储库中，因此对于大于4KB的包，存储在数据存储中。 在开发项目过程中或随着时间的推移在维护系统的同时，可能会多次构建和重建包，每次构建都会产生新的数据存储记录，从而孤立以前的构建记录。
 
@@ -123,7 +123,7 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 
 >[!NOTE]
 >
->数据存储垃圾收集任务仅在您配置了外部文件数据存储的情况下可见。 有关如何设置文件数据存储的信息，请参阅[在AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)中配置节点存储和数据存储。
+>数据存储垃圾收集任务仅在您配置了外部文件数据存储的情况下可见。 有关如何设置文件数据存储的信息，请参阅[在AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)中配置节点存储区和数据存储区。
 
 ### 通过JMX控制台运行数据存储垃圾收集 {#running-data-store-garbage-collection-via-the-jmx-console}
 
@@ -152,7 +152,7 @@ AEM将存储库用作多个内部活动和内部管理活动的存储空间：
 
 >[!NOTE]
 >
->仅当配置了外部文件数据存储时，数据存储垃圾收集任务才会启动。 如果尚未配置外部文件数据存储，则任务将在调用后返回消息`Cannot perform operation: no service of type BlobGCMBean found`。 有关如何设置文件数据存储的信息，请参阅[在AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)中配置节点存储和数据存储。
+>仅当配置了外部文件数据存储时，数据存储垃圾收集任务才会启动。 如果尚未配置外部文件数据存储，则任务将在调用后返回消息`Cannot perform operation: no service of type BlobGCMBean found`。 有关如何设置文件数据存储的信息，请参阅[在AEM 6](/help/sites-deploying/data-store-config.md#file-data-store)中配置节点存储区和数据存储区。
 
 ## 自动化数据存储垃圾收集 {#automating-data-store-garbage-collection}
 

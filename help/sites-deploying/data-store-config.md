@@ -125,52 +125,52 @@ customBlobStore=B"false"
 
 可以使用以下配置选项：
 
-* `repository.home`: Path to repository home under which various repository related data is stored. By default, binary files would be stored under `crx-quickstart/repository/datastore` directory
+* `repository.home`：存储各种存储库相关数据的存储库主目录的路径。 默认情况下，二进制文件将存储在`crx-quickstart/repository/datastore`目录下
 
-* `path`: Path to the directory under which the files would be stored. If specified then it takes precedence over `repository.home` value
+* `path`：存储文件的目录的路径。 如果已指定，则其优先于`repository.home`值
 
-* `minRecordLength`: The minimum size in bytes of a file stored in the data store. Binary content less than this value would be inlined.
-
->[!NOTE]
->
->When using a NAS to store shared file data stores, make sure you use only high performing devices to avoid performance issues.
-
-## Amazon S3 Data Store {#amazon-s-data-store}
-
-AEM can be configured to store data in Amazon&#39;s Simple Storage Service (S3). 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID进行配置。
+* `minRecordLength`：数据存储中存储的文件的最小字节数。 将内联小于此值的二进制内容。
 
 >[!NOTE]
 >
->AEM 6.5 supports storing data in Amazon&#39;s S3, however support is not extended to storing data in other platforms, whose vendors may have their own implementations of Amazon&#39;s S3 APIs.
+>使用NAS存储共享文件数据存储时，请确保仅使用高性能设备以避免性能问题。
 
-To enable the S3 data store functionality, a feature pack containing the S3 Datastore Connector must be downloaded and installed. Go to the [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) and download the latest version from the 1.10.x versions of the feature pack (for example, com.adobe.granite.oak.s3connector-1.10.0.zip). Also, you must download and install the latest AEM service pack as listed on the [AEM 6.5 Release Notes](/help/release-notes/release-notes.md) page.
+## Amazon S3数据存储 {#amazon-s-data-store}
+
+可以将AEM配置为将数据存储在Amazon的Simple Storage Service (S3)中。 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID进行配置。
 
 >[!NOTE]
 >
->When using AEM with TarMK, binaries will be stored by default in the `FileDataStore`. To use TarMK with the S3 Datastore, you must start AEM using the `crx3tar-nofds` runmode, for example:
+>AEM 6.5支持在Amazon的S3中存储数据，但是不支持在其他平台中存储数据，因为这些平台的供应商可能拥有自己实施的Amazon S3 API。
+
+要启用S3数据存储功能，必须下载并安装包含S3数据存储连接器的功能包。 转到[Adobe存储库](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/)，并从功能包的1.10.x版本（例如，com.adobe.granite.oak.s3connector-1.10.0.zip）下载最新版本。 此外，还必须下载并安装[AEM 6.5发行说明](/help/release-notes/release-notes.md)页面上列出的最新AEM Service Pack。
+
+>[!NOTE]
+>
+>在将AEM与TarMK结合使用时，二进制文件默认将存储在`FileDataStore`中。 要将TarMK与S3数据存储区结合使用，您必须使用`crx3tar-nofds`运行模式启动AEM，例如：
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
 ```
 
-Once downloaded, you can install and configure the S3 Connector as follows:
+下载后，您可以按如下方式安装和配置S3 Connector：
 
-1. Extract the contents of the feature pack zip file to a temporary folder.
+1. 将功能包zip文件的内容提取到临时文件夹。
 
-1. Go to the temporary folder and navigate to the following location:
+1. 转到临时文件夹并导航到以下位置：
 
    ```xml
    jcr_root/libs/system/install
    ```
 
-   Copy all the contents from the above location to `<aem-install>/crx-quickstart/install.`
+   将以上位置的所有内容复制到`<aem-install>/crx-quickstart/install.`
 
-1. If AEM is already configured to work with the Tar or MongoDB storage, remove any existing configuration files from the ***&lt;aem-install>***/*crx-quickstart*/*install* folder before proceeding. The files that must be removed are:
+1. 如果已将AEM配置为使用Tar或MongoDB存储，请先从&#x200B;***&lt;aem-install>***/*crx-quickstart*/*install*文件夹中删除所有现有的配置文件，然后再继续。 必须删除的文件包括：
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
 
-1. Return to the temporary location where the feature pack has been extracted, and copy the contents of the following folder:
+1. 返回到已提取功能包的临时位置，并复制以下文件夹的内容：
 
    * `jcr_root/libs/system/config`
 
@@ -178,7 +178,7 @@ Once downloaded, you can install and configure the S3 Connector as follows:
 
    * `<aem-install>/crx-quickstart/install`
 
-   Make sure you only copy the configuration files needed by your current configuration. For both a dedicated data store and a shared data store setup copy the `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` file.
+   确保仅复制当前配置所需的配置文件。 对于专用数据存储和共享数据存储设置，请复制`org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config`文件。
 
    >[!NOTE]
    >
@@ -389,55 +389,55 @@ Once downloaded, you can install and configure the S3 Connector as follows:
    >[https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)
    >
    >
-   >根据您在安装AEM时使用的Oak版本，必须使用该工具的不同版本。 Check the version requirements list below before using the tool:
+   >根据您在安装AEM时使用的Oak版本，必须使用该工具的不同版本。 在使用工具之前，请检查以下版本要求列表：
    >
    >
    >
-   >    * For Oak versions **1.2.x** use the Oak-run **1.2.12 or newer**
-   >    * For Oak versions **newer than the above**, use the version of Oak-run that matches the Oak core of your AEM installation.
+   >    * 对于Oak版本&#x200B;**1.2.x**，请使用Oak运行的&#x200B;**1.2.12或更高版本**
+   >    * 对于比上述&#x200B;**更新的Oak版本**，请使用与AEM安装的Oak核心匹配的Oak-run版本。
    >
    >
 
-1. Lastly, validate the configuration. To validate, look for a unique file added to the data store by each repository that is sharing it. The format of the files is `repository-[UUID]`, where the UUID is a unique identifier of each individual repository.
+1. 最后，验证配置。 要验证，请查找由共享它的每个存储库添加到数据存储中的唯一文件。 文件的格式为`repository-[UUID]`，其中UUID是每个存储库的唯一标识符。
 
-   Therefore, a proper configuration should have as many unique files as there are repositories sharing the data store.
+   因此，正确的配置应具有与共享数据存储区的存储库相同数量的唯一文件。
 
-   The files are stored differently, depending on the data store:
+   这些文件的存储方式各不相同，具体取决于数据存储：
 
-   * For the `FileDataStore` the files are created under the root path of the data store folder.
-   * For the `S3DataStore` the files are created in the configured S3 bucket under the `META` folder.
+   * 对于`FileDataStore`，将在数据存储文件夹的根路径下创建文件。
+   * 对于`S3DataStore`，将在`META`文件夹下配置的S3存储段中创建文件。
 
 ## Azure 数据存储 {#azure-data-store}
 
-AEM can be configured to store data in Microsoft®&#39;s Azure storage service. 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID进行配置。
+可以将AEM配置为将数据存储在Microsoft®的Azure存储服务中。 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID进行配置。
 
-To enable the Azure data store functionality, a feature pack containing the Azure Connector must be downloaded and installed. Go to the [Adobe Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) and download the latest version from the 1.6.x versions of the feature pack (for example, com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+要启用Azure数据存储功能，必须下载并安装包含Azure连接器的功能包。 转到[Adobe存储库](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/)，并从功能包的1.6.x版本（例如，com.adobe.granite.oak.azureblobconnector-1.6.3.zip）下载最新版本。
 
 >[!NOTE]
 >
->When using AEM with TarMK, binaries are stored by default in the FileDataStore. To use TarMK with the Azure DataStore, you must start AEM using the `crx3tar-nofds` runmode, for example:
+>在将AEM与TarMK结合使用时，默认情况下，二进制文件存储在FileDataStore中。 要将TarMK与Azure DataStore结合使用，您必须使用`crx3tar-nofds`运行模式启动AEM，例如：
 
 ```shell
 java -jar <aem-jar-file>.jar -r crx3tar-nofds
 ```
 
-Once downloaded, you can install and configure the Azure connector as follows:
+下载后，您可以按如下方式安装和配置Azure连接器：
 
-1. Extract the contents of the feature pack zip file to a temporary folder.
+1. 将功能包zip文件的内容提取到临时文件夹。
 
-1. Go to the temporary folder and copy the contents of `jcr_root/libs/system/install` to the `<aem-install>crx-quickstart/install` folder.
-1. If AEM is already configured to work with the Tar or MongoDB storage, remove any existing configuration files from the `/crx-quickstart/install` folder before proceeding. The files that must be removed are:
+1. 转到临时文件夹并将`jcr_root/libs/system/install`的内容复制到`<aem-install>crx-quickstart/install`文件夹。
+1. 如果已将AEM配置为使用Tar或MongoDB存储，请先从`/crx-quickstart/install`文件夹中删除所有现有的配置文件，然后再继续。 必须删除的文件包括：
 
-   ForMongoMK:
+   对于MongoMK：
 
    `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
-   For TarMK:
+   对于TarMK：
 
    `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
 
-1. Return to the temporary location where the feature pack has been extracted and copy the contents of `jcr_root/libs/system/config` to the `<aem-install>/crx-quickstart/install` folder.
-1. Edit the configuration file and add the configuration options required by your setup.
+1. 返回到已提取功能包的临时位置，并将`jcr_root/libs/system/config`的内容复制到`<aem-install>/crx-quickstart/install`文件夹。
+1. 编辑配置文件并添加安装程序所需的配置选项。
 1. 启动AEM。
 
 配置文件具有以下选项：

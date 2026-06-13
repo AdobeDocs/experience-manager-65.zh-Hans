@@ -1,6 +1,6 @@
 ---
-title: 对HTML5表单的脚本支持
-description: JavaScript、FormCalc属性以及HTML5 Forms中支持的其他方法。
+title: HTML5 Forms 的脚本支持
+description: HTML5 Forms支持的JavaScript、FormCalc属性和其他方法。
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '3916'
+source-wordcount: '3948'
 ht-degree: 6%
 
 ---
 
-# 对HTML5表单的脚本支持 {#scripting-support-for-html-forms}
+# HTML5 Forms 的脚本支持 {#scripting-support-for-html-forms}
 
 JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
 
@@ -77,7 +77,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
   </tr>
   <tr>
    <td>修饰符</td>
-   <td>确定在特定事件执行时是否按住修饰符键(例如，Microsoft®Windows®上的Ctrl)。</td>
+   <td>确定在特定事件执行时是否按住修饰符键（例如，®Windows®上的Ctrl）。</td>
    <td>无</td>
   </tr>
  </tbody>
@@ -135,7 +135,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
   <tr>
    <td><code>pageUp</code></td>
    <td>转到上一页。</td>
-   <td>HTML5表单与PDF表单不遵循相同的分页策略，因此HTML5表单的上一页与PDF表单的上一页不同。</td>
+   <td>HTML5表单不遵循与PDF表单相同的分页策略，因此HTML5表单的上一页与PDF表单的上一页不同。</td>
   </tr>
   <tr>
    <td><code>pageDown</code></td>
@@ -182,12 +182,12 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
   <tr>
    <td><code>access</code></td>
    <td>控制用户对内容的访问。</td>
-   <td>不适用于排除组。 此外，HTML5表单对非交互对象和受保护对象进行相同处理。<br /> </td>
+   <td>不适用于排除组。 此外，HTML5 Forms对非交互对象和受保护对象进行相同处理。<br /> </td>
   </tr>
   <tr>
    <td><code>name</code></td>
    <td>脚本表达式中用于标识此元素的标识符。</td>
-   <td>HTML5表单不允许设置对象的名称属性。 对于HTML5表单，它是只读属性。</td>
+   <td>HTML5 forms不允许设置对象的名称属性。 它是HTML5表单的只读属性。</td>
   </tr>
   <tr>
    <td><code>value</code></td>
@@ -512,7 +512,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
   <tr>
    <td>name</td>
    <td>指定此节点的名称。</td>
-   <td>HTML中不允许使用脚本设置名称。</td>
+   <td>在HTML中，不允许使用脚本设置名称。</td>
   </tr>
   <tr>
    <td>父母</td>
@@ -548,7 +548,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
 |---|---|---|
 | instancemanager | instanceManager对象可管理表单模型对象的实例创建、移除和移动。 | 无 |
 
-## content {#content}
+## 内容 {#content}
 
 | **属性** | **描述** | **异常** |
 |---|---|---|
@@ -575,7 +575,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>
     <ul>
      <li>无法检索默认值。 </li>
-     <li>更改会反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
+     <li>更改将反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -596,7 +596,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>
     <ul>
      <li>无法检索默认值。 </li>
-     <li>更改会反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
+     <li>更改将反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -617,7 +617,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>
     <ul>
      <li>无法检索默认值。 </li>
-     <li>更改会反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
+     <li>更改将反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -655,7 +655,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>
     <ul>
      <li>无法检索默认值。 </li>
-     <li>更改会反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
+     <li>更改将反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -676,7 +676,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>
     <ul>
      <li>无法检索默认值。 </li>
-     <li>更改会反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
+     <li>更改将反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -697,7 +697,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>
     <ul>
      <li>无法检索默认值。 </li>
-     <li>更改会反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
+     <li>这些更改反映在模型中，并可用于编写脚本，但未同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -755,7 +755,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>
     <ul>
      <li>无法检索默认值。 </li>
-     <li>更改会反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
+     <li>这些更改反映在模型中，并可用于编写脚本，但未同步到HTML元素。 因此，这些更改不会反映在UI中。</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -773,7 +773,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
   <tr>
    <td>边框</td>
    <td>border对象描述了checkButton对象周围的边框。 </td>
-   <td>更改会反映在模型中，并可用于编写脚本，但不会同步到HTML元素。 因此，这些更改未反映在UI中。<br /> </td>
+   <td>这些更改反映在模型中，并可用于编写脚本，但未同步到HTML元素。 因此，这些更改未反映在UI中。<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -1082,7 +1082,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>确定当前表单的页数。</td>
    <td>
     <ul>
-     <li>layout.pageCount()方法会为PDF表单和HTML表单返回不同的值。</li>
+     <li>layout.pageCount()方法会为PDF和HTML表单返回不同的值。</li>
      <li>通过隐藏对象来减少页数时，abspagecount方法返回不正确的值。<br /> </li>
     </ul> </td>
   </tr>
@@ -1096,7 +1096,7 @@ JavaScript、FormCalc属性以及HTML5表单中支持的方法如下所示：
    <td>确定当前表单的页数。</td>
    <td>
     <ul>
-     <li>layout.pageCount()方法会为PDF表单和HTML表单返回不同的值。</li>
+     <li>layout.pageCount()方法会为PDF和HTML表单返回不同的值。</li>
      <li>在通过隐藏对象来减少页数时，abspagecount方法返回不正确的值。</li>
     </ul> </td>
   </tr>
@@ -1285,18 +1285,18 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
   </tr>
   <tr>
    <td>app.setTimeOut()</td>
-   <td>指定JavaScript脚本和时间段。 该脚本只执行一次，在句点过后。此方法的返回值必须保存在JavaScript变量中。 否则，超时对象将接受垃圾回收，这会导致时钟停止。 要取消超时事件，请将返回的超时对象传递给clearTimeOut。</td>
+   <td>指定JavaScript脚本和时间段。 该脚本只会在经过一段时间后执行一次。此方法的返回值必须保存在JavaScript变量中。 否则，超时对象将接受垃圾回收，这会导致时钟停止。 要取消超时事件，请将返回的超时对象传递给clearTimeOut。</td>
    <td> </td>
   </tr>
   <tr>
    <td>app.clearInterval()</td>
    <td>取消最初由setInterval方法设置的先前注册的间隔。</td>
-   <td>在HTML5表单中，API无法正常运行。</td>
+   <td>在HTML5 Forms中，API无法正常运行。</td>
   </tr>
   <tr>
    <td>app.clearTimeOut()</td>
    <td>取消以前注册的超时间隔。 此间隔最初由setTimeOut设置。</td>
-   <td>在HTML5表单中，API无法正常运行。<br /> </td>
+   <td>在HTML5 Forms中，API无法正常运行。<br /> </td>
   </tr>
   <tr>
    <td>app.eval()</td>
@@ -1351,4 +1351,4 @@ FormCalc是一种特定于XFA的语言，用于创建以电子表单为中心的
 
 >[!NOTE]
 >
->HTML5表单在客户端（浏览器）呈现。 使用客户端&#x200B;**验证**&#x200B;和&#x200B;**计算**&#x200B;脚本，而不使用服务器端脚本。
+>HTML5表单在客户端（浏览器）上呈现。 使用客户端&#x200B;**验证**&#x200B;和&#x200B;**计算**&#x200B;脚本，而不使用服务器端脚本。

@@ -8,14 +8,14 @@ exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1645'
 ht-degree: 0%
 
 ---
 
 # [!DNL Assets]大小调整指南 {#assets-sizing-guide}
 
-在调整[!DNL Adobe Experience Manager Assets]实施的环境大小时，确保有足够的可用资源(磁盘、CPU、内存、IO和网络吞吐量)非常重要。 调整其中许多资源的大小需要了解有多少资源正在加载到系统中。 如果没有更好的量度，您可以将现有库的大小除以库的存留期，以找出创建资产的速率。
+在调整[!DNL Adobe Experience Manager Assets]实施的环境大小时，确保有足够的可用资源（磁盘、CPU、内存、IO和网络吞吐量）非常重要。 调整其中许多资源的大小需要了解有多少资源正在加载到系统中。 如果没有更好的量度，您可以将现有库的大小除以库的存留期，以找出创建资产的速率。
 
 ## 磁盘 {#disk}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 1. 确定加载到系统中的资源的大小和数量。
 1. 获取要上传到[!DNL Experience Manager]中的具有代表性的资源示例。 例如，如果您计划将PSD、JPG、AI和PDF文件加载到系统中，则需要每种文件格式的多个示例图像。 此外，这些示例应该能够代表不同的文件大小和图像的复杂性。
 1. 定义要使用的演绎版。
-1. 使用[!DNL Experience Manager]或[!DNL ImageMagick]应用程序在[!DNL Adobe Creative Cloud]中创建演绎版。 除了用户指定的呈现版本之外，还应创建现成的呈现版本。 对于实施Dynamic Media的用户，可以使用IC二进制文件生成要存储在Experience Manager中的PTIFF演绎版。
+1. 使用[!DNL ImageMagick]或[!DNL Adobe Creative Cloud]应用程序在[!DNL Experience Manager]中创建演绎版。 除了用户指定的呈现版本之外，还应创建现成的呈现版本。 对于实施Dynamic Media的用户，可以使用IC二进制文件生成要存储在Experience Manager中的PTIFF演绎版。
 1. 如果您计划使用子资产，请为相应的文件类型生成它们。
 1. 比较输出图像、演绎版和子资源与原始图像的大小。 它允许您在系统加载时生成预期的增长因子。 例如，如果在处理1 GB的资源后生成大小合计为3 GB的演绎版和子资源，则演绎版增长因子为3。
 1. 确定在系统中维护资源版本的最长时间。
@@ -77,7 +77,7 @@ ht-degree: 0%
 
 共享数据存储也会增加操作的复杂性，例如垃圾收集。 通常，只需单击一下即可启动独立数据存储的垃圾收集。 但是，共享数据存储除了在单个节点上运行实际集合之外，还需要对使用该数据存储的每个成员进行标记整理操作。
 
-对于AWS操作，实施单个中心位置(通过Amazon S3)而不是构建EBS卷的RAID阵列，可以显着抵消系统的复杂性和操作风险。
+对于AWS操作，实施单个中心位置（通过Amazon S3）而不是构建EBS卷的RAID阵列，可以显着抵消系统的复杂性和操作风险。
 
 #### 性能问题 {#performance-concerns}
 

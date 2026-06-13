@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2695'
 ht-degree: 1%
 
 ---
@@ -86,8 +86,8 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 >
 >与先前版本相比，AEM 6.3中区段节点存储和备用存储服务的PID发生了更改，如下所示：
 >
->* 从org.apache.jackrabbit.oak.将&#x200B;**plugins**.segment.standby.standby.store.StandbyStoreService重命名为org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
->* 从org.apache.jackrabbit.oak.将&#x200B;**plugins**.segment.SegmentNodeStoreService添加到org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
+>* 从org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService到org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
+>* 从org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService到org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 >
 >进行必要的配置调整，以便它们反映此更改。
 
@@ -102,12 +102,12 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
    1. 检查并删除您在`aem-primary/crx-quickstart/install`下可能具有的任何以前的OSGi配置
 
-   1. 在`install.primary`下创建名为`aem-primary/crx-quickstart/install`的文件夹
+   1. 在`aem-primary/crx-quickstart/install`下创建名为`install.primary`的文件夹
 
    1. 为`aem-primary/crx-quickstart/install/install.primary`下的首选节点存储和数据存储创建所需的配置
    1. 在同一位置创建名为`org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`的文件并相应地对其进行配置。 有关配置选项的详细信息，请参阅[配置](/help/sites-deploying/tarmk-cold-standby.md#configuration)。
 
-   1. 如果您正在将AEM TarMK实例与外部数据存储一起使用，请在`crx3`下创建名为`aem-primary/crx-quickstart/install`的文件夹，该文件夹名为`crx3`
+   1. 如果您正在将AEM TarMK实例与外部数据存储一起使用，请在`aem-primary/crx-quickstart/install`下创建名为`crx3`的文件夹，该文件夹名为`crx3`
 
    1. 将数据存储配置文件放置到`crx3`文件夹中。
 
@@ -155,14 +155,14 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 1. 接下来，准备备用实例。 为此，您可以执行与主实例相同的步骤：
 
    1. 删除`aem-standby/crx-quickstart/install`下可能包含的任何文件。
-   1. 在`install.standby`下创建名为`aem-standby/crx-quickstart/install`的文件夹
+   1. 在`aem-standby/crx-quickstart/install`下创建名为`install.standby`的文件夹
 
    1. 创建两个名为的配置文件：
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
 
-   1. 在`crx3`下创建名为`aem-standby/crx-quickstart/install`的文件夹
+   1. 在`aem-standby/crx-quickstart/install`下创建名为`crx3`的文件夹
 
    1. 创建数据存储配置并将其放在`aem-standby/crx-quickstart/install/crx3`下。 在本例中，必须创建的文件是：
 
@@ -336,7 +336,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
 ## 监测 {#monitoring}
 
-该功能使用JMX或MBean公开信息。 这样，您可以使用[JMX控制台](/help/sites-administering/jmx-console.md)来检查备用和主设备的当前状态。 可在名为`type org.apache.jackrabbit.oak:type="Standby"`的`Status`的MBean中找到该信息。
+该功能使用JMX或MBean公开信息。 这样，您可以使用[JMX控制台](/help/sites-administering/jmx-console.md)来检查备用和主设备的当前状态。 可在名为`Status`的`type org.apache.jackrabbit.oak:type="Standby"`的MBean中找到该信息。
 
 **待机**
 

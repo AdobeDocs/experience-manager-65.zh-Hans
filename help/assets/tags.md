@@ -13,7 +13,7 @@ exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '6951'
+source-wordcount: '6942'
 ht-degree: 6%
 
 ---
@@ -428,7 +428,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 * [!DNL Adobe Developer Console] — 已为Experience Platform标记创建集成。
 * Experience Manager创作节点 — IMS配置和Experience Platform Tags云配置。
 
-在配置过程中，确保您有权访问Adobe Experience Cloud中启用了Adobe Analytics和Experience Platform标记的公司。
+在配置过程中，请确保您有权访问Adobe Experience Cloud中一家已启用Adobe Analytics和Experience Platform标记的公司。
 
 ## 配置Adobe Analytics以进行集成 {#configuring-adobe-analytics-for-the-integration}
 
@@ -508,7 +508,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 
 **要为集成配置Experience Platform标记：**
 
-1. 首先，从Experience Cloud [主页](https://experience.adobe.com/#/home)访问Experience Platform Tags。 在菜单栏上，选择页面右上角附近的&#x200B;**[!UICONTROL 解决方案]**&#x200B;图标（3x3点表），然后选择&#x200B;**[!UICONTROL 标记]**。
+1. 首先从Experience Platform [主页](https://experience.adobe.com/#/home)访问Experience Cloud标记。 在菜单栏上，选择页面右上角附近的&#x200B;**[!UICONTROL 解决方案]**&#x200B;图标（3x3点表），然后选择&#x200B;**[!UICONTROL 标记]**。
 
    ![image2019-7-8_15-38-44](assets/image2019-7-8_15-38-44.png)
 
@@ -719,7 +719,7 @@ Experience Manager配置包含以下两个主要步骤：
 
    * 在&#x200B;**[!UICONTROL 为Experience Platform Tags API选择一个角色]**&#x200B;标题下，选择&#x200B;**[!UICONTROL 管理员]**。
 
-   * 在&#x200B;**[!UICONTROL 为Experience Platform标记API选择一个或多个产品配置文件]**&#x200B;标题下，选择名为&#x200B;**[!UICONTROL 标记 — &lt;your_company_name>]**&#x200B;的产品配置文件。
+   * 在&#x200B;**[!UICONTROL 为Experience Platform Tags API选择一个或多个产品配置文件]**&#x200B;标题下，选择名为&#x200B;**[!UICONTROL Tags - &lt;your_company_name>]**&#x200B;的产品配置文件。
 
    ![2019-07-25_13-49-18](assets/2019-07-25_13-49-18.png)
 
@@ -758,7 +758,7 @@ Experience Manager配置包含以下两个主要步骤：
    * **[!UICONTROL 授权服务器]** — 返回您之前打开的“集成详细信息”页面。 选择&#x200B;**[!UICONTROL JWT]**&#x200B;选项卡。 复制服务器名称（不含路径），如下面突出显示的那样。
 
    返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将名称粘贴到相应的字段中。
-例如， `https://ims-na1.adobelogin.com/`
+例如，`https://ims-na1.adobelogin.com/`
 （服务器名称仅作为示例）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)

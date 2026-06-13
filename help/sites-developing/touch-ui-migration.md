@@ -1,5 +1,5 @@
 ---
-title: 迁移到Touch UI
+title: 迁移至触控用户界面
 description: 了解Adobe Experience Manager迁移到Touch UI以及它给您带来的影响。
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 3%
+source-wordcount: '701'
+ht-degree: 12%
 
 ---
 
-# 迁移到Touch UI{#migration-to-the-touch-ui}
+# 迁移至触控用户界面{#migration-to-the-touch-ui}
 
 从版本6.0开始，Adobe Experience Manager (AEM)引入了一个称为&#x200B;*触屏UI*&#x200B;的新用户界面（也简称为&#x200B;*触屏UI*）。 它与Adobe Experience Cloud以及整个Adobe用户界面准则保持一致。 通过称为&#x200B;*经典UI*&#x200B;的旧版面向桌面的界面，这已成为AEM中的标准UI。
 
@@ -56,12 +56,12 @@ ht-degree: 3%
    <td><p>对话框节点：</p>
     <ul>
      <li>名称: <code>dialog</code></li>
-     <li><code>jcr:primaryType</code>:  <code>cq:Dialog</code></li>
+     <li><code>jcr:primaryType</code>: <code>cq:Dialog</code></li>
     </ul> </td>
    <td><p>对话框节点：</p>
     <ul>
      <li>名称: <code>cq:dialog</code></li>
-     <li><code>jcr:primaryType</code>:  <code>nt:unstructured</code></li>
+     <li><code>jcr:primaryType</code>: <code>nt:unstructured</code></li>
     </ul> </td>
   </tr>
   <tr>
@@ -104,25 +104,25 @@ ht-degree: 3%
 在开始之前，请检查状态和相关建议：
 
 * [触屏UI功能状态](/help/release-notes/touch-ui-features-status.md)
-* [客户的Recommendations用户界面](/help/sites-deploying/ui-recommendations.md)
+* [面向客户的用户界面建议](/help/sites-deploying/ui-recommendations.md)
 
 触屏UI的开发基础提供了坚实的基础：
 
-* [AEM触屏优化UI的概念](/help/sites-developing/touch-ui-concepts.md)
-* [AEM触屏优化UI的结构](/help/sites-developing/touch-ui-structure.md)
+* [AEM 触控用户界面的概念](/help/sites-developing/touch-ui-concepts.md)
+* [AEM 触控用户界面的结构](/help/sites-developing/touch-ui-structure.md)
 
 ## 迁移页面创作 {#migrating-page-authoring}
 
 迁移组件时，对话框是一个主要因素：
 
-* [正在开发AEM组件](/help/sites-developing/developing-components.md)（使用支持触屏的UI）
+* [开发AEM组件](/help/sites-developing/developing-components.md)（使用支持触屏的UI）
 * [从经典组件迁移](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [AEM现代化工具](/help/sites-developing/modernization-tools.md) — 帮助您将经典UI组件的对话框转换为触控UI
 
    * 在触屏UI中提供了一个兼容层，用于在“触屏UI包装器”中打开经典UI对话框，但此功能有限，不建议长期使用。
 
 * [在触屏UI中自定义对话框字段](https://helpx.adobe.com/cn/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
-* [创建新的Granite UI字段组件](/help/sites-developing/granite-ui-component.md)
+* [创建新的 Granite UI 字段组件](/help/sites-developing/granite-ui-component.md)
 * [自定义页面创作](/help/sites-developing/customizing-page-authoring-touch.md)（使用支持触屏的UI）
 
 ## 迁移控制台 {#migrating-consoles}
@@ -149,8 +149,8 @@ ht-degree: 3%
 
 * [Developing用户指南](/help/sites-developing/getting-started.md)
 * [Granite UI文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
-* [AEM 6.5 SitesTutorials和视频](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=zh-Hans)
-* [AEM Sites 开发快速入门 – WKND 教程](/help/sites-developing/getting-started.md)
+* [AEM 6.5 Sites教程和视频](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=zh-Hans)
+* [AEM Sites 开发入门——WKND 教程](/help/sites-developing/getting-started.md)
 * [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=zh-Hans)
 * [AEM 现代化工具](https://opensource.adobe.com/aem-modernize-tools/)
 

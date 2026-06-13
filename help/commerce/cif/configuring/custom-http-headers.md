@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '284'
 ht-degree: 3%
 
 ---
@@ -27,9 +27,9 @@ ht-degree: 3%
 
 要配置自定义HTTP标头，必须首先定义它们。 必须首先通过使用OSGi配置将自定义HTTP标头添加到`com.adobe.cq.cif.http.internal.HttpHeadersConfigProviderImpl`服务配置来定义它们。
 
-您可以在项目的“Cloud Service配置”页中配置HTTP标头的值：
+您可以在项目的Cloud Service配置页面中配置HTTP标头的值：
 
-1. 转到“工具”>“Cloud Services”>“CIF配置”中的“Cloud Service配置”页面。
+1. 转到“工具”>“Cloud Service服务”>“CIF配置”中的“云配置”页面。
 1. 打开现有配置或创建配置。
 1. 转到“高级”选项卡，然后找到“自定义HTTP标头”多字段。 您可以选择之前定义的题头并为它们分配值。
 
@@ -39,5 +39,5 @@ ht-degree: 3%
 
 虽然该服务允许定义任何标头名称，包括标准名称，但它们不可配置。 换句话说，您无法使用此功能覆盖标准HTTP标头。 可以在[mdn Web文档 — HTTP标头](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)下找到受限标头名称的列表。 除了这些标头之外，还有两个标头无法使用：
 
-* &quot;Store&quot; - CIF用于识别Adobe Commerce商店
+* &quot;Store&quot; — 由CIF用于识别Adobe Commerce商店
 * &quot;Preview-Version&quot; — 由CIF用于检索暂存产品

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1790'
+source-wordcount: '1820'
 ht-degree: 1%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 1%
 
 本教程是[创建您的第一个交互式通信](/help/forms/using/create-your-first-interactive-communication.md)系列中的步骤。 建议您按照时间顺序跟踪系列，以了解、执行和演示完整的教程用例。
 
-要创建交互式通信，必须在AEM服务器上为打印和Web渠道提供模板。
+要创建交互式通信，您必须在AEM服务器上为打印和Web渠道提供模板。
 
-打印渠道的模板在AdobeForms Designer中创建，并上传到AEM服务器。 然后，这些模板便可在创建交互式通信时使用。
+打印渠道的模板在Adobe Forms Designer中创建，并上传到AEM服务器。 然后，这些模板便可在创建交互式通信时使用。
 
 Web渠道的模板是在AEM中创建的。 模板作者和管理员可以创建、编辑和启用Web模板。 创建并启用后，这些模板便可在创建交互式通信时使用。
 
 本教程将指导您完成为打印和Web渠道创建模板的步骤，以便在创建交互式通信时使用这些模板。 在本教程结束时，您将能够：
 
-* 使用AdobeForms Designer为打印渠道创建XDP模板
+* 使用Adobe Forms Designer为打印渠道创建XDP模板
 * 将XDP模板上传到AEM Forms服务器
 * 为Web渠道创建和启用模板
 

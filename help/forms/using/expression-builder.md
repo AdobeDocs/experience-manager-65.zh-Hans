@@ -1,5 +1,5 @@
 ---
-title: 表达式生成器中的远程函数
+title: 在表达式生成器中使用远程函数
 description: 通信管理中的表达式生成器允许您创建表达式和远程函数。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 1%
+source-wordcount: '797'
+ht-degree: 2%
 
 ---
 
-# 表达式生成器中的远程函数{#remote-functions-in-expression-builder}
+# 在表达式生成器中使用远程函数{#remote-functions-in-expression-builder}
 
 使用表达式生成器，您可以创建表达式或条件，以对数据字典或最终用户提供的数据值进行计算。 通信管理使用表达式求值结果来选择资产（例如文本、图像、列表和条件），并根据需要在通信中插入这些资产。
 
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 * 添加两个数字： ${number1 + number2}
 * 要连接两个字符串： ${str1} ${str2}
-* 要比较两个数字： ${age &lt; 18}
+* 要比较两个数字：${age &lt; 18}
 
 您可以在[JSP EL规范](https://download.oracle.com/otn-pub/jcp/jsp-2.1-fr-spec-oth-JSpec/jsp-2_1-fr-spec-el.pdf)中找到更多信息。 客户端表达式管理器不支持JSP EL规范中的某些变量和函数，具体为：
 
@@ -126,7 +126,7 @@ ht-degree: 1%
   @org.apache.felix.scr.annotations.Property(name = "exm.service", boolValue = true)})
 ```
 
-exm.service=true条目指示Expression Manager，该服务包含适合在表达式中使用的远程函数。 &lt;service_id>值必须是有效的Java标识符（字母数字、$、_且不含其他特殊字符）。 此值以REMOTE_关键字为前缀，构成表达式内部使用的前缀。 例如，可以在使用REMOTE_foo：bar()的表达式中引用带有注释方法bar()的接口以及服务属性中的服务ID foo。
+exm.service=true条目指示Expression Manager，该服务包含适合在表达式中使用的远程函数。 &lt;service_id>值必须是有效的Java标识符（字母数字、$、_且不含其他特殊字符）。 此值以REMOTE_关键字为前缀，构成表达式内部使用的前缀。 例如，可以在使用REMOTE_foo:bar()的表达式中引用带有注释方法栏()的接口和服务属性中的服务ID foo。
 
 ```java
 package mergeandfuse.com;

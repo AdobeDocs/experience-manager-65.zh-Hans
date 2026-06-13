@@ -170,7 +170,7 @@ HTTP 方法决定了要执行的操作：
 
 ### 分页 {#paging}
 
-Assets REST API支持通过URL参数进行分页（适用于GET请求）：
+Assets REST API支持通过URL参数执行分页（用于GET请求）：
 
 * `offset` — 要检索的第一个（子）实体的编号
 * `limit` — 返回的最大实体数

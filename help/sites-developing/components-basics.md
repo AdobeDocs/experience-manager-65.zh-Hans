@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '4828'
-ht-degree: 0%
+source-wordcount: '4949'
+ht-degree: 1%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
 * **触屏优化UI**
   [标准用户界面](/help/sites-developing/touch-ui-concepts.md)基于Adobe Experience Cloud的统一用户体验，使用[Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)和[Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui)的基础技术。
-* **经典UI**
+* **经典用户界面**
 基于ExtJS技术的用户界面，AEM 6.4已弃用该技术。
 
 有关更多详细信息，请参阅[客户的UI界面建议](/help/sites-deploying/ui-recommendations.md)。
@@ -191,7 +191,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
 
    * `cq:editConfig (cq:EditConfig)` — 定义组件的编辑属性，并使组件显示在组件浏览器或Sidekick中。
 
-     注意：如果组件有对话框，它会自动显示在组件浏览器或Sidekick中，即使cq：editConfig不存在也是如此。
+     注意：如果组件有对话框，它会自动显示在组件浏览器或Sidekick中，即使cq:editConfig不存在也是如此。
 
    * `cq:childEditConfig (cq:EditConfig)` — 控制未定义自身`cq:editConfig`的子组件的作者UI方面。
    * 触屏优化UI：
@@ -269,7 +269,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
   <tr>
    <td><code>componentGroup</code></td>
    <td><code>String</code></td>
-   <td>在组件浏览器（触屏UI）或Sidekick（经典UI）中可选择组件的组。<br />值<code>.hidden</code>用于无法从UI选择的组件，例如实际的段落系统。</td>
+   <td>可在组件浏览器（触屏UI）或Sidekick（经典UI）中选择组件的组。<br /> 值<code>.hidden</code>用于无法从UI选择的组件，例如实际的段落系统。</td>
   </tr>
   <tr>
    <td><code>cq:isContainer</code></td>
@@ -344,7 +344,7 @@ AEM组件的结构强大而灵活，主要考虑因素包括：
   <tr>
    <td><code>cq:templatePath</code></td>
    <td><code>String</code></td>
-   <td>从组件浏览器或Sidekick添加组件时用作内容模板的节点的路径。 这必须是绝对路径，而不是相对于组件节点的路径。<br />除非您希望重复使用在其他位置已提供的内容，否则不是必需的，<code>cq:template</code>就足够了（请参阅下文）。</td>
+   <td>从组件浏览器或Sidekick添加组件时用作内容模板的节点的路径。 这必须是绝对路径，而不是相对于组件节点的路径。<br /> 除非您希望重复使用在其他位置已提供的内容，否则不是必需的，<code>cq:template</code>就足够了（请参阅下文）。</td>
   </tr>
   <tr>
    <td><code>jcr:created</code></td>
@@ -572,7 +572,7 @@ AEM中的组件遵循三个不同的层次结构：
       * 多个放置目标仅在经典UI中可用。
       * 在触屏优化UI中，允许使用单个放置目标。
 
-   * `cq:actionConfigs` （节点类型`nt:unstructured`）：定义附加到cq：actions列表的新操作列表。
+   * `cq:actionConfigs` （节点类型`nt:unstructured`）：定义附加到cq:actions列表的新操作列表。
    * `cq:formParameters` （节点类型`nt:unstructured`）：定义添加到对话框表单的其他参数。
    * `cq:inplaceEditing` （节点类型`cq:InplaceEditingConfig`）：为组件定义就地编辑配置。
    * `cq:listeners` （节点类型`cq:EditListenersConfig`）：定义在组件上发生操作之前或之后发生的情况。
@@ -599,7 +599,7 @@ AEM中的组件遵循三个不同的层次结构：
 
   `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* 例如，要查找`cq:editConfig`的子节点，可以搜索`cq:DropTargetConfig`类型的`cq:dropTargets`；可以在CRXDE Lite&#x200B;**中使用查询工具**&#x200B;并使用以下XPath查询字符串进行搜索：
+* 例如，要查找`cq:editConfig`的子节点，可以搜索`cq:DropTargetConfig`类型的`cq:dropTargets`；可以在&#x200B;**中使用查询工具**&#x200B;并使用以下XPath查询字符串进行搜索：
 
   `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -636,9 +636,9 @@ AEM中的组件遵循三个不同的层次结构：
 
 可在核心组件[中看到此模板的示例用法，例如在标题组件中。](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
-### 使用cq：EditConfig属性进行配置 {#configuring-with-cq-editconfig-properties}
+### 使用cq:EditConfig属性进行配置 {#configuring-with-cq-editconfig-properties}
 
-### cq：actions {#cq-actions}
+### cq:actions {#cq-actions}
 
 `cq:actions`属性(`String array`)定义了一个或多个可对组件执行的操作。 以下值可用于配置：
 
@@ -654,7 +654,7 @@ AEM中的组件遵循三个不同的层次结构：
   </tr>
   <tr>
    <td>-</td>
-   <td>添加分隔条。<br />仅在经典UI中可见。 触屏优化UI不会在上下文菜单中显示操作，因此该操作不适用。</td>
+   <td>添加分隔条。<br /> 仅在经典UI中可见。 触屏优化UI不会在上下文菜单中显示操作，因此该操作不适用。</td>
   </tr>
   <tr>
    <td><code>edit</code></td>
@@ -697,7 +697,7 @@ AEM中的组件遵循三个不同的层次结构：
     jcr:primaryType="cq:EditConfig"/>
 ```
 
-### cq：layout（仅限经典UI） {#cq-layout-classic-ui-only}
+### cq:layout（仅限经典UI） {#cq-layout-classic-ui-only}
 
 `cq:layout`属性(`String`)定义如何在经典UI中编辑该组件。 可以使用以下值：
 
@@ -709,11 +709,11 @@ AEM中的组件遵循三个不同的层次结构：
   </tr>
   <tr>
    <td><code>rollover</code></td>
-   <td>默认值。 组件版本可通过单击和/或上下文菜单“在鼠标悬停时”访问。<br />对于高级使用，相应的客户端对象为： <code>CQ.wcm.EditRollover</code>。</td>
+   <td>默认值。 组件版本可通过单击和/或上下文菜单“鼠标悬停在上”进行访问。<br /> 对于高级使用，相应的客户端对象为： <code>CQ.wcm.EditRollover</code>。</td>
   </tr>
   <tr>
    <td><code>editbar</code></td>
-   <td>可通过工具栏访问组件版本。<br />对于高级使用，相应的客户端对象为： <code>CQ.wcm.EditBar</code>。</td>
+   <td>可以通过工具栏访问组件版本。<br /> 对于高级使用，相应的客户端对象为： <code>CQ.wcm.EditBar</code>。</td>
   </tr>
   <tr>
    <td><code>auto</code></td>
@@ -736,7 +736,7 @@ AEM中的组件遵循三个不同的层次结构：
 </jcr:root>
 ```
 
-### cq：dialogMode（仅限经典UI） {#cq-dialogmode-classic-ui-only}
+### cq:dialogMode（仅限经典UI） {#cq-dialogmode-classic-ui-only}
 
 该组件可以链接到“编辑”对话框。 `cq:dialogMode`属性(`String`)定义如何在经典UI中打开组件对话框。 可以使用以下值：
 
@@ -776,11 +776,11 @@ AEM中的组件遵循三个不同的层次结构：
 </jcr:root>
 ```
 
-### cq：emptyText {#cq-emptytext}
+### cq:emptyText {#cq-emptytext}
 
 `cq:emptyText`属性(`String`)定义不存在可视内容时显示的文本。 默认为： `Drag components or assets here`。
 
-### cq：inherit {#cq-inherit}
+### cq:inherit {#cq-inherit}
 
 `cq:inherit`属性(`boolean`)定义缺少的值是否继承自它继承的组件。 默认为`false`。
 
@@ -793,9 +793,9 @@ AEM中的组件遵循三个不同的层次结构：
 * 用户始终可以在对话框中切换全屏模式。
 * 不适用于经典UI
 
-### 使用cq：EditConfig子节点进行配置 {#configuring-with-cq-editconfig-child-nodes}
+### 使用cq:EditConfig子节点进行配置 {#configuring-with-cq-editconfig-child-nodes}
 
-### cq：dropTargets {#cq-droptargets}
+### cq:dropTargets {#cq-droptargets}
 
 `cq:dropTargets`节点（节点类型`nt:unstructured`）定义了一个放置目标列表，该列表可以接受从内容查找器拖动的资产中的放置。 它用作`cq:DropTargetConfig`类型的节点的集合。
 
@@ -856,7 +856,7 @@ AEM中的组件遵循三个不同的层次结构：
     </cq:dropTargets>
 ```
 
-### cq：actionConfigs（仅限经典UI） {#cq-actionconfigs-classic-ui-only}
+### cq:actionConfigs（仅限经典UI） {#cq-actionconfigs-classic-ui-only}
 
 `cq:actionConfigs`节点（节点类型`nt:unstructured`）定义了一个新操作列表，这些操作将附加到`cq:actions`属性定义的列表。 `cq:actionConfigs`的每个子节点通过定义构件来定义新操作。
 
@@ -889,7 +889,7 @@ AEM中的组件遵循三个不同的层次结构：
 >
 >请参阅组件工具栏[添加新操作](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar)，作为支持触摸的UI的示例。
 
-### cq：formParameters {#cq-formparameters}
+### cq:formParameters {#cq-formparameters}
 
 `cq:formParameters`节点（节点类型`nt:unstructured`）定义了添加到对话框表单的其他参数。 每个属性都映射到一个表单参数。
 
@@ -901,7 +901,7 @@ AEM中的组件遵循三个不同的层次结构：
         name="photos/primary"/>
 ```
 
-### cq：inplaceEditing {#cq-inplaceediting}
+### cq:inplaceEditing {#cq-inplaceediting}
 
 `cq:inplaceEditing`节点（节点类型`cq:InplaceEditingConfig`）定义组件的就地编辑配置。 它可以具有以下属性：
 
@@ -940,7 +940,7 @@ AEM中的组件遵循三个不同的层次结构：
         editorType="plaintext"/>
 ```
 
-### cq：listeners {#cq-listeners}
+### cq:listeners {#cq-listeners}
 
 `cq:listeners`节点（节点类型`cq:EditListenersConfig`）定义在对该组件执行操作之前或之后发生的情况。 下表定义了它可能的属性。
 
@@ -973,7 +973,7 @@ AEM中的组件遵循三个不同的层次结构：
   </tr>
   <tr>
    <td><code>beforeinsert</code></td>
-   <td>处理程序会在插入组件之前触发。<br />仅针对触屏UI运行。</td>
+   <td>该处理程序在插入组件之前触发。<br /> 仅适用于触控式UI。</td>
    <td> </td>
   </tr>
   <tr>

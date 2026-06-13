@@ -11,8 +11,8 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2313'
-ht-degree: 2%
+source-wordcount: '2381'
+ht-degree: 1%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 2%
 >
 >例如，请参阅：
 >
->* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [http://localhost:4502/system/console/services？filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## 常规 {#general}
 
@@ -112,7 +112,7 @@ ht-degree: 2%
 ### 日期范围 {#daterange}
 
 将JCR DATE属性与日期/时间间隔匹配。 它使用ISO8601
-日期和时间格式(`YYYY-MM-DDTHH:mm:ss.SSSZ`)，并允许部分呈现，如`YYYY-MM-DD`。 或者，时间戳可以按UTC时区(UNIX®时间格式)提供自1970年以来的毫秒数。
+日期和时间格式(`YYYY-MM-DDTHH:mm:ss.SSSZ`)，并允许部分呈现，如`YYYY-MM-DD`。 或者，时间戳可以按UTC时区（UNIX®时间格式）提供自1970年以来的毫秒数。
 
 您可以查找介于两个时间戳之间的任何内容，比给定日期更新或更早的任何内容，也可以选择介于包含时间间隔和打开时间间隔之间的内容。
 
@@ -381,7 +381,7 @@ group.2_group.type=dam:Asset
 
 * **深度**
 
-  属性/相对路径可以存在的通配符级别数（例如，`property=size depth=2`检查节点/大小、节点/&amp;amp；ast；/size和节点/&amp;amp；ast；/&amp;amp；ast；/size）。
+  属性/相对路径可以存在的通配符级别数（例如，`property=size depth=2`检查节点/大小、 node/&amp;ast；/size和node/&amp;ast；/&amp;ast；/size）。
 
 ### rangeproperty {#rangeproperty}
 
@@ -483,7 +483,7 @@ group.2_group.type=dam:Asset
 
    * **选择性**：
 
-     仅在`p.properties`中指定的属性，该属性是相对路径的空格分隔列表（在URL中使用“+”）；如果相对路径的深度大于1，则这些属性表示为子对象；特殊的jcr：path属性包括点击的路径
+     仅在`p.properties`中指定的属性，这是相对路径的空格分隔列表（在URL中使用“+”）；如果相对路径的深度大于1，则这些属性表示为子对象；特殊的jcr:path属性包括点击的路径
 
 ### savedquery {#savedquery}
 

@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '769'
-ht-degree: 0%
+source-wordcount: '803'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 0%
 >
 >请参阅联机帮助中的以下资源，以了解AEM Mobile应用程序中的以下主题：
 >
->* [设计注意事项](https://helpx.adobe.com/cn/digital-publishing-solution/help/design-app.html)
+>* [设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [管理收藏集](https://helpx.adobe.com/cn/digital-publishing-solution/help/creating-collections.html)
+>* [管理收藏集](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
 >
 
 ## 创建收藏集 {#creating-a-collection}
@@ -74,7 +74,7 @@ ht-degree: 0%
 用于编辑收藏集的工作流：
 
 1. 在Mobile中，从目录中选择您的Mobile On-Demand应用程序。
-1. 从&#x200B;**管理收藏集**&#x200B;拼贴中选择源自AEM的文章。
+1. 从&#x200B;**管理收藏集**&#x200B;拼贴中选择一篇AEM来源文章。
 1. 从列表视图中单击高亮显示的收藏集，以在内容编辑器中打开它。
 1. 使用内容编辑器拖动收藏集内容（手稿、图像、文本等）。
 

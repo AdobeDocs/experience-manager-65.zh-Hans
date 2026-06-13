@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 0%
+source-wordcount: '422'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
    网站的其他部分不应缓存在创作实例上，因为它们随时可能更改。
 
-1. **对于Publish实例：**
+1. **对于发布实例：**
 
    ```xml
    LoadModule expires_module modules/mod_expires.so
@@ -73,7 +73,7 @@ ht-degree: 0%
    </Location>
    ```
 
-   这允许中间缓存（例如，浏览器缓存）将CSS、JavaScript、PNG和GIF文件存储长达一天的客户端缓存中。 尽管此示例说明了`/content`和`/etc/designs`以下所有内容的全局设置，但您应该让它更精细。
+   这允许中间缓存（例如浏览器缓存）将CSS、JavaScript、PNG和GIF文件存储长达一天的客户端缓存中。 尽管此示例说明了`/content`和`/etc/designs`以下所有内容的全局设置，但您应该让它更精细。
 
    根据站点更新的频率，您还可以考虑缓存HTML页面。 一个合理的时间段应该是一小时：
 

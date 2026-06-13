@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
 workflow-type: tm+mt
-source-wordcount: '2087'
+source-wordcount: '2208'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/variable-in-aem-workflows.html) |
 | AEM 6.5 | 本文 |
 
 工作流模型中的变量是一种根据其数据类型存储值的方法。 然后，可以在任何工作流步骤中使用变量的名称来检索存储在变量中的值。 您还可以使用变量名称来定义用于制定路由决策的表达式。
@@ -35,7 +35,7 @@ ht-degree: 1%
 
 <!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
-[变量介绍视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
+[变量简介视频](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
 变量是现有[MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)接口的扩展。 您可以在ECMAScript中使用[MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)访问使用变量保存的元数据。
 
@@ -279,8 +279,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### 使用工作流变量在JCR外部存储敏感用户数据 {#jcr-independent-persistance}
 
-使用Forms Workflow处理的数据可能包含敏感用户数据，如个人身份信息和敏感个人信息。 企业可以选择将数据从JCR存储存储存储到它们拥有并管理的外部数据存储中，由各种工作流步骤处理这些数据（并使用工作流变量进行传递）。 若要了解有关在外部存储中保留工作流数据的更多信息，请参阅[将工作流变量用于客户拥有的数据存储](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
-[!DNL Adobe Experience Manager]提供工作流API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer)以在外部Azure Blob存储中存储工作流变量。 有关使用API的详细信息，请参阅[使用工作流变量参数化敏感数据并将其存储在外部数据存储中](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables)。
+使用Forms Workflow处理的数据可能包含敏感用户数据，如个人身份信息和敏感个人信息。企业可以选择将数据从JCR存储存储存储到它们拥有并管理的外部数据存储中，由各种工作流步骤处理这些数据（并使用工作流变量进行传递）。若要了解有关在外部存储中保留工作流数据的更多信息，请参阅[将工作流变量用于客户拥有的数据存储](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
+[!DNL Adobe Experience Manager]提供工作流API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer)以在外部Azure Blob存储中存储工作流变量。有关使用API的详细信息，请参阅[使用工作流变量参数化敏感数据并将其存储在外部数据存储中](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables)。
 
 ## 编辑变量 {#edit-a-variable}
 

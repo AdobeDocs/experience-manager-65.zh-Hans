@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5中的存储元素
+title: AEM 6.5 中的存储元素
 description: 了解AEM 6.5中可用的节点存储实施以及如何维护存储库。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Deploying
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '729'
-ht-degree: 0%
+source-wordcount: '743'
+ht-degree: 2%
 
 ---
 
-# AEM 6.5中的存储元素{#storage-elements-in-aem}
+# AEM 6.5 中的存储元素{#storage-elements-in-aem}
 
 本文涵盖以下内容：
 
@@ -36,12 +36,12 @@ AEM 6最重要的变化之一是存储库级别的创新。
 
 >[!CAUTION]
 >
->区段节点存储的PID已从org.apache.jackrabbit.oak更改。将AEM 6早期版本中的&#x200B;**plugins**.segment.SegmentNodeStoreService更改为AEM 6.3中的org.apache.jackrabbit.oak.segment.SegmentNodeStoreService。确保进行了必要的配置调整，以便反映所做的更改。
+>区段节点存储的PID已从AEM 6早期版本中的org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService更改为AEM 6.3中的org.apache.jackrabbit.oak.segment.SegmentNodeStoreService。 确保进行了必要的配置调整，以便反映所做的更改。
 
 默认情况下，AEM 6使用Tar存储来存储节点和二进制文件，并使用默认配置选项。 您可以通过执行以下操作手动配置其存储设置：
 
 1. 下载AEM 6快速入门Jar并将其放入新文件夹中。
-1. 通过运行以下命令解压缩AEM：
+1. 通过运行以下各项解压缩AEM：
 
    `java -jar cq-quickstart-6.jar -unpack`
 
@@ -49,7 +49,7 @@ AEM 6最重要的变化之一是存储库级别的创新。
 
 1. 在新创建的文件夹中创建一个名为`org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`的文件。
 
-1. 编辑文件并设置配置选项。 以下选项可用于区段节点存储，它是AEM Tar存储实施的基础：
+1. 编辑文件并设置配置选项。 以下选项可用于区段节点存储，它是AEM实施Tar存储的基础：
 
    * `repository.home`：存储各种存储库相关数据的存储库主目录的路径。 默认情况下，区段文件将存储在crx-quickstart/segmentstore目录下。
    * `tarmk.size`：区段的最大大小（以MB为单位）。 默认值为256 MB。
@@ -62,7 +62,7 @@ AEM 6最重要的变化之一是存储库级别的创新。
 
 可以按照以下过程将AEM 6配置为使用MongoDB存储运行：
 
-1. 下载AEM 6快速入门jar并将其放入新文件夹中。
+1. 下载AEM 6快速入门Jar并将其放入新文件夹中。
 1. 通过运行以下命令解压缩AEM：
 
    `java -jar cq-quickstart-6.jar -unpack`
@@ -71,7 +71,7 @@ AEM 6最重要的变化之一是存储库级别的创新。
 1. 在安装目录中创建名为`crx-quickstart\install`的文件夹。
 1. 通过创建一个配置文件来配置节点存储，该配置文件具有您要在`crx-quickstart\install`目录中使用的配置的名称。
 
-   Document Node Store (作为AEM MongoDB存储实现的基础)使用名为`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`的文件
+   Document Node Store（AEM的MongoDB存储实现的基础）使用名为`org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.cfg`的文件
 
 1. 编辑文件并设置配置选项。 以下选项可供选择：
 

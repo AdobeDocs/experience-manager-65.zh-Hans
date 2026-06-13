@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 44%
+source-wordcount: '620'
+ht-degree: 54%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 44%
 * 作为存储库的一个文件夹中的独立单元开发。
 * 没有隐藏的配置文件。
 * 可以包含其他组件。
-* 可以在任何AEM系统中的任何地方运行。 它们还可以限制为在特定组件下运行。
+* 可以在任何AEM系统中的任何位置运行。 它们还可以限制为在特定组件下运行。
 * 拥有标准化的用户界面。
 * 具有可配置的编辑行为。
 * 使用使用基于Granite UI组件的子元素构建的对话框
@@ -49,7 +49,7 @@ ht-degree: 44%
 
 ## AEM中的现成组件 {#out-of-the-box-components-within-aem}
 
-AEM附带了各种[现成的组件](/help/sites-authoring/default-components.md)，这些组件可提供全面的功能，包括：
+AEM附带各种[现成的组件](/help/sites-authoring/default-components.md)，可提供全面的功能，包括：
 
 * 段落系统(`parsys`)
 * 页面（`responsivegrid` — 仅限触控式UI）
@@ -64,7 +64,7 @@ AEM附带了各种[现成的组件](/help/sites-authoring/default-components.md)
 提供了两组Adobe提供的AEM组件：
 
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [Foundation 组件 &#x200B;](/help/sites-authoring/default-components-foundation.md)
+* [基础组件](/help/sites-authoring/default-components-foundation.md)
 
 **核心组件**&#x200B;是随AEM 6.3引入的，它提供了灵活且丰富的创作功能。 [We.Retail参考网站](/help/sites-developing/we-retail.md)说明了如何使用核心组件，并代表了组件开发的当前最佳实践。
 
@@ -96,20 +96,20 @@ AEM附带了各种[现成的组件](/help/sites-authoring/default-components.md)
 
 以下页面提供了有关开发这些组件及其他组件的更详细信息：
 
-* [AEM组件 — 基础知识](/help/sites-developing/components-basics.md)
-* [开发AEM组件](/help/sites-developing/developing-components.md)
-* [开发AEM组件 — 代码示例](/help/sites-developing/developing-components-samples.md)
+* [AEM 组件——基础知识](/help/sites-developing/components-basics.md)
+* [开发 AEM 组件](/help/sites-developing/developing-components.md)
+* [开发 AEM 组件——代码示例](/help/sites-developing/developing-components-samples.md)
 * [配置多个就地编辑器](/help/sites-developing/multiple-inplace-editors.md)
 * [开发人员模式](/help/sites-developing/developer-mode.md)
-* [测试UI](/help/sites-developing/hobbes.md)
-* [内容片段的组件](/help/sites-developing/components-content-fragments.md)
-* [获取JSON格式的页面信息](/help/sites-developing/pageinfo.md)
+* [测试您的 UI](/help/sites-developing/hobbes.md)
+* [内容片段组件](/help/sites-developing/components-content-fragments.md)
+* [以 JSON 格式获取页面信息](/help/sites-developing/pageinfo.md)
 * [国际化组件](/help/sites-developing/i18n.md)
 * [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [使用隐藏条件](/help/sites-developing/hide-conditions.md)
 * 经典 UI
 
    * [AEM组件（经典UI）](/help/sites-developing/developing-components-classic.md)
-   * [使用和扩展小组件（经典UI）](/help/sites-developing/widgets.md)
-   * [使用xtype（经典UI）](/help/sites-developing/xtypes.md)
-   * [开发Forms（经典UI）](/help/sites-developing/developing-forms.md)
+   * [使用和扩展小组件（经典 UI）](/help/sites-developing/widgets.md)
+   * [使用 xtype（经典 UI）](/help/sites-developing/xtypes.md)
+   * [开发表单（经典 UI）](/help/sites-developing/developing-forms.md)

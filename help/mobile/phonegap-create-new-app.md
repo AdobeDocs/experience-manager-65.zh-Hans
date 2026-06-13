@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 1%
+source-wordcount: '574'
+ht-degree: 2%
 
 ---
 
@@ -31,16 +31,16 @@ AEM Mobile应用程序基于定义页面结构和属性的Blueprint。 您可以
 
 您还可以提供要用作应用程序缩略图的图像文件，选择要使用的PhoneGap Build配置，然后选择要使用的移动设备应用程序分析配置。 此图像仅用作缩略图，以在Experience Manager的移动应用程序控制台中表示您的移动应用程序。
 
-存在用于构建Cloud Service以及将AdobeMobile Services SDK插件集成到应用程序中的其他（和可选）选项卡。
+存在用于构建云服务并将Adobe Mobile Services SDK插件集成到应用程序中的其他（和可选）选项卡。
 
 * 构建：单击管理配置并在此处设置您的build.phonegap.com构建服务。 然后，您可以从下拉菜单中选择新创建的PhoneGap Build云服务。
-* Analytics：单击管理配置并设置您的[AdobeMobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=zh-Hans)云服务。 然后，您可以从下拉菜单中选择新创建的移动服务，以将其集成到移动应用程序中。
+* Analytics：单击管理配置并设置您的[Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html?lang=zh-Hans)云服务。 然后，您可以从下拉菜单中选择新创建的移动服务，以将其集成到移动应用程序中。
 
 ## 使用应用程序模板 {#using-app-templates}
 
-应用程序模板提供了一种简单的方式来使用开发人员创建的现有设计，这些设计用于在AEM中创建新的应用程序。
+通过应用程序模板，可以轻松使用开发人员创建的现有设计，以便在AEM中创建新应用程序。
 
-什么是应用程序模板？ 可将其视为一组页面模板和组件，它们代表应用程序的基线或基础。
+什么是应用程序模板？可将其视为一组页面模板和组件，它们代表应用程序的基线或基础。
 在基于其他应用程序的模板创建应用程序时，您将获得一个应用程序，该应用程序的起点代表创建该应用程序的应用程序。
 
 您必须拥有现有的移动设备应用程序模板（或安装的应用程序具有应用程序模板），才能使用此功能。
@@ -70,7 +70,7 @@ AEM Mobile应用程序基于定义页面结构和属性的Blueprint。 您可以
 * [编辑应用程序元数据](/help/mobile/phonegap-editmetadata.md)
 * [应用程序定义](/help/mobile/phonegap-app-definitions.md)
 * [导入现有的混合应用程序](/help/mobile/phonegap-adding-content-to-imported-app.md)
-* [Content Services](/help/mobile/develop-content-as-a-service.md)
+* [内容服务](/help/mobile/develop-content-as-a-service.md)
 
 ## 其他资源 {#additional-resources}
 

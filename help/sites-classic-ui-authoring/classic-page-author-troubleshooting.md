@@ -12,7 +12,7 @@ role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
 source-wordcount: '429'
-ht-degree: 27%
+ht-degree: 25%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->具有管理员权限的用户以及希望对AEM问题进行故障排除的用户，可以使用[AEM故障诊断（适用于管理员）](/help/sites-administering/troubleshoot.md)中所述的故障排除方法。 如果您没有足够的权限，请与系统管理员联系，了解有关AEM疑难解答的信息。
+>具有管理员权限的用户以及希望对AEM问题进行故障排除的用户，可以使用[AEM故障排除（适用于管理员）](/help/sites-administering/troubleshoot.md)中所述的故障排除方法。 如果您没有足够的权限，请联系系统管理员来解决AEM问题。
 
 ## 发布站点上仍显示旧的页面版本 {#old-page-version-still-on-published-site}
 
@@ -36,18 +36,18 @@ ht-degree: 27%
 
 * **原因**：
 
-   * 这可能有多种原因，通常是缓存(本地浏览器或Dispatcher)，但有时也可能是复制队列问题。
+   * 这可能有多种原因，通常是缓存（本地浏览器或Dispatcher），但有时也可能是复制队列问题。
 
 * **解决方案**：
 
    * 下面提供了多种可能性：
    * 确认已正确复制该页面。 检查页面状态，并在必要时检查复制队列的状态。
    * 清除本地浏览器中的缓存，然后再次访问页面。
-   * 向页面 URL 的结尾处添加 `?`。例如：
+   * 将`?`添加到页面URL的末尾。 例如：
 
      `http://localhost:4502/sites.html/content?`
 
-     这将会绕过调度程序而直接从 AEM 请求页面。如果收到更新的页面，则表示应清除调度程序缓存。
+     这将会绕过调度程序而直接从 AEM 请求页面。 如果收到更新的页面，则表示应清除调度程序缓存。
 
    * 如果复制队列存在问题，请与系统管理员联系。
 
@@ -55,7 +55,7 @@ ht-degree: 27%
 
 * **问题**：
 
-   * 在创作环境中编辑Sidekick页面时，内容不可见。
+   * 在创作环境中编辑内容页面时，Sidekick不可见。
 
 * **原因**：
 

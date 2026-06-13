@@ -8,7 +8,7 @@ role: Admin, User, Developer
 feature: Adaptive Forms
 source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
 workflow-type: tm+mt
-source-wordcount: '1810'
+source-wordcount: '1908'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=zh-Hans)集成，允许您捕获和跟踪已发布表单的性能指标。 分析这些量度背后的目标是使商业用户能够洞察最终用户行为并优化数据捕获体验。 您可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）用户的行为。
 
-您还可以使用Cloud Service框架执行分析。 有关如何将AEM Forms与Cloud Service框架集成的详细信息，请参阅[使用Cloud Service框架的Analytics](/help/forms/using/configure-analytics-forms-documents.md)。 与使用Adobe框架的Analytics相比，使用Cloud ServiceLaunch的主要优势在于，除了这些现成事件之外，您还可以定义自定义事件。 自定义事件是使用规则编辑器或客户clientlibs定义的，并映射到[!DNL Adobe Analytics]中的事件。
+您还可以使用Cloud Service Framework执行分析。 有关如何将AEM Forms与Cloud Service Framework集成的详细信息，请参阅[使用Cloud Service Framework的Analytics](/help/forms/using/configure-analytics-forms-documents.md)。 与使用Cloud Service Framework的Analytics相比，使用Adobe Launch的主要优势在于，除了这些现成事件之外，您还可以定义自定义事件。 自定义事件是使用规则编辑器或客户clientlibs定义的，并映射到[!DNL Adobe Analytics]中的事件。
 
 执行本文中提到的操作后，您可以在[!DNL Adobe Analytics]中配置和查看报表，如以下视频所示：
 
@@ -45,12 +45,12 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 ![Analytics概述](/help/forms/using/assets/analyticsworkflow.png)
 
-## 1.配置[!DNL Adobe Analytics] {#Configure-adobe-analytics}
+## &#x200B;1. 配置 [!DNL Adobe Analytics] {#Configure-adobe-analytics}
 
 在配置[!DNL Adobe Analytics]之前，创建：
 
 * 用于登录到[Adobe Experience Cloud](https://experience.adobe.com/#/home)的Adobe ID。
-* [报告包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html?lang=zh-Hans)。
+* [报告包](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html)。
 
 
 ### 安装AEM Forms和[!DNL Adobe Analytics]扩展 {#install-extensions}
@@ -165,7 +165,7 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择+并指定&#x200B;**[!UICONTROL Adobe Analytics]**&#x200B;作为扩展名称。
 
-1. 选择&#x200B;**[!UICONTROL 清除变量]**&#x200B;作为操作类型。 选择&#x200B;**[!UICONTROL 保留更改]**。 执行这些步骤后，**[!UICONTROL 操作]**&#x200B;部分显示为：
+1. 选择&#x200B;**[!UICONTROL 清除变量]**&#x200B;作为操作类型。选择&#x200B;**[!UICONTROL 保留更改]**。执行这些步骤后，**[!UICONTROL 操作]**&#x200B;部分显示为：
    ![操作配置](/help/forms/using/assets/actions-config.png)
 
    根据您的要求自定义&#x200B;**[!UICONTROL 操作]**&#x200B;部分。 例如，您可以在Actions流程中定义两个&#x200B;**发送信标**&#x200B;步骤，以便将数据发送到[!DNL Adobe Analytics]，并在一个步骤中将其视为页面查看，将数据发送到[!DNL Adobe Analytics]，而在第二个步骤中不要将其视为页面查看。
@@ -179,7 +179,7 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
    >[!VIDEO](https://video.tv.adobe.com/v/337425)
 
 
-### Publish流程 {#publish-flow}
+### 发布流 {#publish-flow}
 
 创建数据元素并在规则中使用它们后，发布配置以在[!DNL Adobe Analytics]中收集表单数据。
 
@@ -191,21 +191,21 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 1. 选择&#x200B;**[!UICONTROL 添加所有更改的资源]**，然后选择&#x200B;**[!UICONTROL 保存并生成到开发]**。
 
-1. 在&#x200B;**[!UICONTROL 开发]**&#x200B;部分中，选择![更多选项](/help/forms/using/assets/more-options-icon.svg)，然后选择&#x200B;**[!UICONTROL 批准Publish到生产环境]**。
+1. 在&#x200B;**[!UICONTROL 开发]**&#x200B;部分中，选择![更多选项](/help/forms/using/assets/more-options-icon.svg)，然后选择&#x200B;**[!UICONTROL 批准并发布到生产环境]**。
 
 1. 确认更改，发布流将很快显示在&#x200B;**[!UICONTROL 已发布]**&#x200B;部分中。
 
-![Publish流程](/help/forms/using/assets/publish-flow.png)
+![发布流](/help/forms/using/assets/publish-flow.png)
 
-## 2.配置AEM Forms {#configure-aem-forms}
+## &#x200B;2. 配置 AEM Forms {#configure-aem-forms}
 
-在创建AdobeLaunch配置之前，请使用AdobeLaunch作为云解决方案[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=zh-Hans)创建Adobe IMS配置。
+在创建Adobe Launch配置之前，请使用Adobe Launch作为云解决方案创建[Adobe IMS配置](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=zh-Hans)。
 
 ### 创建 Adobe Launch 配置 {#create-adobe-launch-configuration}
 
-执行以下步骤以创建AdobeLaunch配置：
+执行以下步骤以创建Adobe Launch配置：
 
-1. 在AEM Forms创作实例上，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Adobe启动配置]**。
+1. 在AEM Forms创作实例上，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 云服务]** > **[!UICONTROL Adobe启动配置]**。
 
 1. 选择要创建配置的文件夹，然后选择&#x200B;**[!UICONTROL 创建]**。
 
@@ -219,11 +219,11 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。
 
-1. Publish配置。
+1. 发布配置。
 
 >[!NOTE]
 >
-> 当您[将AEM Forms嵌入到AEM Sites页面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites)中时，自适应表单的iFrame中不支持AdobeLaunch配置。 要解决此问题，请直接在站点页面上配置Adobe启动规则，或将现有Adobe启动配置从AEM Forms迁移到站点页面。
+> 当您[将AEM Forms嵌入到AEM Sites页面](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-basic-authoring/embed-adaptive-form-aem-sites)中时，iFrame中的自适应表单不支持Adobe Launch配置。 要解决此问题，请直接在站点页面上配置Adobe Launch规则，或将现有Adobe Launch配置从AEM Forms迁移到站点页面。
 
 
 ### 为自适应表单启用[!DNL Adobe Analytics] {#enable-analytics-adaptive-form}
@@ -232,21 +232,21 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 1. 在AEM Forms创作实例上，导航到&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]** > **[!UICONTROL Forms和文档]**。
 1. 选择自适应表单并选择&#x200B;**[!UICONTROL 属性]**。
-1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，选择创建Adobe启动项配置时使用的[配置容器](#create-adobe-launch-configuration)。
+1. 在&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡中，选择创建Adobe Launch配置时使用的[配置容器](#create-adobe-launch-configuration)。
 1. 选择&#x200B;**[!UICONTROL 保存并关闭]**。 已为[!DNL Adobe Analytics]启用自适应表单。
-1. Publish表单。
+1. 发布表单。
 
 为自适应表单启用[!DNL Adobe Analytics]后，如果AEM Forms和[!DNL Adobe Analytics]之间存在适当的数据事件流，则可以[验证](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=zh-Hans#validate-the-page-view-beacon)。 AEM Forms与Adobe Analytics的集成已完成。 您现在可以[在Adobe Analytics](#view-reports-adobe-analytics)中配置和查看报告。
 
 >[!NOTE]
->如果同时启用使用Cloud Service框架的[Analytics](/help/forms/using/configure-analytics-forms-documents.md)和使用Adobe启动项的&#x200B;**Analytics**&#x200B;功能，则将优先使用使用Adobe启动项的&#x200B;**Analytics**。
+>如果同时启用使用Cloud Service Framework的[Analytics](/help/forms/using/configure-analytics-forms-documents.md)和使用Adobe Launch的&#x200B;**Analytics**&#x200B;功能，则将优先使用使用Adobe Launch的&#x200B;**Analytics**。
 > 
 
 ### 创建规则以捕获自定义事件（可选） {#capture-custom-events}
 
 使用规则编辑器针对自适应表单的特定字段创建规则，以将Analytics数据从自适应表单发送到[!DNL Adobe Analytics]。
 
-在两阶段流程中，您需要在自适应表单中的字段上定义规则。 规则调度事件。 事件名称将映射到Adobe启动项中的自定义捕获事件。
+在两阶段流程中，您需要在自适应表单中的字段上定义规则。 规则调度事件。 事件名称将映射到Adobe Launch中的自定义捕获事件。
 
 要在自适应表单中使用规则编辑器创建规则，请执行以下操作：
 
@@ -273,7 +273,7 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 1. 选择&#x200B;**保留更改**&#x200B;并执行[配置规则](#configure-rules)中指定的其余操作。
 
-## 3.在[!DNL Adobe Analytics]中配置和查看报告 {#view-reports-adobe-analytics}
+## &#x200B;3. 在[!DNL Adobe Analytics]中配置和查看报告 {#view-reports-adobe-analytics}
 
 将自适应表单配置为将事件数据发送到[!DNL Adobe Analytics]后，您可以在[!DNL Adobe Analytics]中开始查看报表：
 

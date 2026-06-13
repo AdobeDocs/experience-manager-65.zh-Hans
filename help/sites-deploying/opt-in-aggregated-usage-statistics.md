@@ -12,8 +12,8 @@ feature: Deploying
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '291'
-ht-degree: 1%
+source-wordcount: '307'
+ht-degree: 3%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## 简介 {#introduction}
 
-您可以发送有关您如何与Adobe Experience Cloud (AEM)交互的Adobe统计数据，以帮助改进Adobe Experience Manager。 此信息不包含有关贵公司网站访客的任何数据，并且仅用于帮助Adobe交付、支持和改善用户体验。
+您可以发送有关您如何与Adobe Experience Cloud (AEM)交互的Adobe统计数据，帮助改进Adobe Experience Manager。 此信息不包含有关贵公司网站访客的任何数据，并且仅用于帮助Adobe提供、支持和改善您的用户体验。
 
 您可以使用触屏UI或Web控制台选择收集使用情况统计数据。
 
@@ -33,13 +33,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->您可以随时选择退出，方法是使用[Web控制台](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console)，或不在AEM选择加入屏幕上选择选择加入选项。
+>您可以随时选择退出，方法是使用[Web控制台](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console)，或不在AEM选择加入屏幕上选择加入选项。
 
 ## 使用触屏UI选择加入 {#opt-in-by-using-the-touch-ui}
 
 首次启动AEM时，您可以使用触屏UI选择加入，如下所示：
 
-1. 在“AEM导航”屏幕上，单击&#x200B;**收件箱** （铃铛）图标。
+1. 在AEM导航屏幕上，单击&#x200B;**收件箱** （铃铛）图标。
 
    ![usage_statisticsnavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
@@ -70,7 +70,7 @@ ht-degree: 1%
 
    ![usage_statisticscollectionedit](assets/usage_statisticscollectionedit.png)
 
-1. 选中&#x200B;**已启用**&#x200B;复选框。 或者，如果您希望选择退出使用统计信息收集，则可以取消选中该复选框。
+1. 选中&#x200B;**启用**&#x200B;复选框。 或者，如果您希望选择退出使用统计信息收集，则可以取消选中该复选框。
 
    ![usage_statisticsselect](assets/usage_statisticsselect.png)
 

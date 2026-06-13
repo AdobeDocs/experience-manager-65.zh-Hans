@@ -8,12 +8,12 @@ exl-id: 7652663a-11ba-4a78-9a9f-221d514fe992
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
 
-# 灯箱 {#lightbox}
+# Lightbox {#lightbox}
 
 Lightbox是一种特殊的收藏集，可让您轻松访问资产。 您可以快速访问Lightbox以添加或删除资源。 它用作您的个人图像库。
 

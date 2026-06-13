@@ -12,8 +12,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '3084'
-ht-degree: 0%
+source-wordcount: '2963'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 在创建社区站点之前，*需要*&#x200B;执行以下操作：
 
-* 确保有一个或多个Publish实例正在运行。
+* 确保一个或多个发布实例正在运行。
 * 启用[通道服务](/help/communities/deploy-communities.md#tunnel-service-on-author)以管理成员和成员组。
 * 识别[主发布者](/help/communities/deploy-communities.md#primary-publisher)。
 * [当主发布者端口不是默认端口时，配置复制](/help/communities/deploy-communities.md#replication-agents-on-author) (4503)。
@@ -61,7 +61,7 @@ ht-degree: 0%
 
 要访问现有的社区站点以创作、修改、发布、导出或添加嵌套组，请选择站点的文件夹图标。
 
-## 站点创建 {#site-creation}
+## Site 创建 {#site-creation}
 
 站点创建控制台提供了一种分步方法，用于根据选定的[社区站点模板](/help/communities/sites.md)和设置来组装站点的功能。
 
@@ -179,14 +179,14 @@ ht-degree: 0%
 * **允许用户注册**
 
   如果选中，站点访客可以通过自助注册成为社区成员。
-如果未选中，则社区站点为*受限的*，并且必须将站点访客分配给社区站点的成员组、发出请求或通过电子邮件向其发送邀请。 如果未选中，则不应允许匿名访问。
-取消选中*私有*&#x200B;社区站点。 默认值为选中。
+如果未选中，则社区站点为*受限的*，并且必须将站点访客分配给社区站点的成员组、发出请求或通过电子邮件向其发送邀请。如果未选中，则不应允许匿名访问。
+取消选中*私有*&#x200B;社区站点。默认值为选中。
 
 * **允许匿名访问**
 
   如果选中，社区站点为&#x200B;*打开*，任何站点访客都可以访问该站点。
 如果未选中，则只有已登录成员才能访问该站点。
-取消选中*私有*&#x200B;社区站点。 默认值为选中。
+取消选中*私有*&#x200B;社区站点。默认值为选中。
 
 * **允许发送消息**
 
@@ -196,21 +196,21 @@ ht-degree: 0%
 
 * **允许社交登录： Facebook**
 
-  如果选中，则允许网站访客使用其Facebook帐户凭据登录。 应将选定的[Facebook云配置](/help/communities/social-login.md#create-a-facebook-connect-cloud-service)配置为在创建社区站点后将用户添加到社区站点的成员组。
+  如果选中，则允许网站访客使用其Facebook帐户凭据登录。应将选定的[Facebook云配置](/help/communities/social-login.md#create-a-facebook-connect-cloud-service)配置为在创建社区站点后将用户添加到社区站点的成员组。
 如果未选中，则不会显示Facebook登录信息。
-取消选中*私有*&#x200B;社区站点。 默认值为未选中。
+取消选中*私有*&#x200B;社区站点。默认值为未选中。
 
-* **允许社交登录：Twitter**
+* **允许社交登录： Twitter**
 
-  如果选中，则允许网站访客使用其Twitter帐户凭据登录。 应将选定的[Twitter云配置](/help/communities/social-login.md#create-a-twitter-connect-cloud-service)配置为在创建社区站点后将用户添加到社区站点的成员组。
-如果未选中，则不会显示Twitter登录信息。
-取消选中*私有*&#x200B;社区站点。 默认值为未选中。
+  如果选中，则允许网站访客使用其Twitter帐户凭据登录。应将选定的[Twitter云配置](/help/communities/social-login.md#create-a-twitter-connect-cloud-service)配置为在创建社区站点后将用户添加到社区站点的成员组。
+如果未选中，则不会显示Twitter登录。
+取消选中*私有*&#x200B;社区站点。默认值为未选中。
 
 >[!NOTE]
 >
 >**允许社交登录**
 >
->虽然Facebook和Twitter配置示例可能存在，并且可用于[生产环境](/help/sites-administering/production-ready.md)，但需要创建自定义Facebook和Twitter应用程序。 请参阅[使用Facebook和Twitter进行社交登录](/help/communities/social-login.md)。
+>虽然Facebook和Twitter配置示例可能存在，并且可用于[生产环境](/help/sites-administering/production-ready.md)，但需要创建自定义Facebook和Twitter应用程序。 查看使用Facebook和Twitter的[社交登录](/help/communities/social-login.md)。
 
 #### 标记 {#tagging}
 
@@ -267,7 +267,7 @@ ht-degree: 0%
 * **启用Analytics**
 
   仅在[为Communities功能](/help/communities/analytics.md)配置Adobe Analytics时可用。
-默认值为未选中。 选中后，会出现其他选择菜单：
+默认值为未选中。选中后，会出现其他选择菜单：
 
 ![站点分析 — 启用](assets/site-analytics-enable.png)
 
@@ -371,7 +371,7 @@ ht-degree: 0%
 
 ## 创作站点内容 {#authoring-site-content}
 
-可以使用与任何其他AEM网站相同的工具创作站点的内容。 要打开站点进行创作，请选择鼠标悬停在站点上时显示的`Open Site`图标。 站点将在新选项卡中打开，以便社区站点控制台保持可访问状态。
+可以使用与任何其他AEM网站相同的工具创作网站内容。 要打开站点进行创作，请选择鼠标悬停在站点上时显示的`Open Site`图标。 站点将在新选项卡中打开，以便社区站点控制台保持可访问状态。
 
 ![站点内容](assets/site-content.png)
 
@@ -393,8 +393,8 @@ ht-degree: 0%
 
 BASIC面板允许修改：
 
-* 社区站点标题
-* 社区站点描述
+* 社区网站标题
+* 社区网站描述
 
 不能修改社区站点名称。
 
@@ -445,8 +445,8 @@ BASIC面板允许修改：
 
 “设计”面板允许应用新主题：
 
-* [社区站点主题](#community-site-theme)
-* [社区站点品牌化](#community-site-branding)
+* [社区网站主题](#community-site-theme)
+* [社区网站品牌化](#community-site-branding)
 
    * 滚动到面板底部，以便更改品牌图像。
 
@@ -511,7 +511,7 @@ BASIC面板允许修改：
 >[!NOTE]
 >
 >如果[允许社交登录： Facebook](#user-management)已启用，则用户组`community-<site-name>-<uid>-members`后
->创建，应用的[Facebook云服务](/help/communities/social-login.md#createafacebookcloudservice)应配置为将用户添加到此组。
+>已创建，应用的[Facebook云服务](/help/communities/social-login.md#createafacebookcloudservice)应配置为将用户添加到此组。
 
 ## 配置身份验证错误 {#configure-for-authentication-error}
 

@@ -13,7 +13,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2856'
+source-wordcount: '2911'
 ht-degree: 2%
 
 ---
@@ -36,7 +36,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 
 >[!CAUTION]
 >
->在CRXDE Lite中可见的实施结构在UI可用时可能会发生更改。
+>在CRXDE Lite中可见的实施结构在UI可用之后可能会发生更改。
 
 ## 徽章 {#badges}
 
@@ -181,8 +181,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 >
 >*不*&#x200B;执行的操作的示例：
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring
->/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### 评分子规则 {#scoring-sub-rules}
 
@@ -290,7 +289,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 
 **注释：**
 
-* `rules`和`sub-rules`节点的类型为cq：Page。
+* `rules`和`sub-rules`节点的类型为cq:Page。
 
 * `subRules`是规则的`jcr:content`节点上类型为String[]的属性。
 
@@ -332,7 +331,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 
 >[!NOTE]
 >
->最佳实践：创建每个AEM站点唯一的徽章图像。
+>最佳实践：创建每个AEM站点特有的徽章图像。
 
 ![徽章 — 规则 — 配置](assets/badging-rule-configuration.png)
 
@@ -351,7 +350,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
      <li>数字=得分</li>
      <li>| =垂直线字符(U+007C)</li>
      <li>path =徽章图像资源的完整路径</li>
-    </ul> 必须对字符串进行排序，以使数字在值中递增，并且在数字和路径之间不应出现空格。<br />示例条目：<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
+    </ul> 必须对字符串进行排序，以使数字在值中递增，并且数字与路径之间不应出现空格。<br /> 示例条目：<br /> <code>80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png</code></td>
   </tr>
   <tr>
    <td>徽章类型</td>
@@ -376,7 +375,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 
 **注释：**
 
-* `rules`节点的类型为cq：Page。
+* `rules`节点的类型为cq:Page。
 * `rules`应位于存储库位置，每个人都具有读取权限。
 
    * 无论位置如何，规则名称都必须是唯一的。
@@ -391,20 +390,20 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 
 以下cURL命令显示了分配和撤消徽章的HTTP请求所必需的。 基本格式为：
 
-cURL -i -XPOST-H *标头* -u *登录* -F *操作* -F *徽章* *member-profile-url*
+cURL -i -X POST -H *标头* -u *登录* -F *操作* -F *徽章* *member-profile-url*
 
-*标头* = &quot;Accept：application/json&quot;
+*标头* = &quot;Accept:application/json&quot;
 要传递到服务器的自定义标头（必需）
 
-*登录* = administrator-id：password
-例如，admin：admin
+*登录* =管理员ID:password
+例如，管理员:admin
 
-*operation* = &quot;：operation=social：assignBadge&quot; OR &quot;：operation=social：deleteBadge&quot;
+*operation* = &quot;:operation=social:assignBadge&quot;或&quot;:operation=social:deleteBadge&quot;
 
 *徽章* = &quot;badgeContentPath=*badge-image-file*&quot;
 
 *badge-image-file* =徽章图像文件在存储库中的位置
-例如，/libs/settings/community/badging/images/moderator/jcr：content/moderator.png
+例如，/libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
 *member-profile-url* =发布时成员配置文件的端点
 例如，https://&lt;服务器>：&lt;端口>/home/users/community/riley/profile.social.json
@@ -500,7 +499,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | 更新 | 编辑成员的博客文章或评论 |
 | 删除 | 已删除成员的博客文章或评论 |
 
-**[QnA组件](/help/communities/working-with-qna.md)**
+**[问题与解答组件](/help/communities/working-with-qna.md)**
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **动词** | **描述** |
@@ -579,10 +578,10 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 
 可以使用[入门教程](/help/communities/getting-started.md) （参与）网站快速尝试评分和徽章：
 
-* 访问有关作者的CRXDE Lite。
+* 访问CRXDE Lite的创作实例。
 * 浏览到基本页：
 
-   * /content/sites/engage/en/jcr：content
+   * /content/sites/engage/en/jcr:content
 
 * 添加badgingRules属性：
 
@@ -630,11 +629,11 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 最后，
 
 * 浏览到发布实例上的组件。
-* 以社区成员身份登录(例如，weston.mccall@dodgit.com /密码)。
-* Post是一个新的论坛主题。
+* 以社区成员身份登录（例如，weston.mccall@dodgit.com /密码）。
+* 发布新论坛主题。
 * 必须刷新页面才能显示徽章。
 
-   * 注销并以其他社区成员身份登录(例如：aaron.mcdonald@mailinator.com/password)。
+   * 注销并以其他社区成员身份登录（例如：aaron.mcdonald@mailinator.com/password）。
 
 * 选择论坛。
 

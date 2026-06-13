@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '355'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 使用Dispatcher 4.1.6或更高版本解决了此问题。
 
-### 从CQ 5.4升级后无法访问论坛Post {#cannot-access-forum-post-after-upgrading-from-cq}
+### 从CQ 5.4升级后无法访问论坛 {#cannot-access-forum-post-after-upgrading-from-cq}
 
 如果在CQ 5.4上创建论坛并发布主题，然后站点升级到AEM 5.6.1或更高版本，则尝试查看现有帖子可能会导致页面上出现错误：
 
@@ -49,7 +49,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 * 发件人： `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * 收件人：`final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-Author和Publish上的失败情况不同。 在创作时，它静默失败，只是不显示论坛主题。 在Publish上，它会在页面上引发错误。
+在“创作”和“发布”页面上，失败情况不同。 在创作时，它静默失败，只是不显示论坛主题。 发布时，会在页面上引发错误。
 
 有关详细信息，请参阅[com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API。
 

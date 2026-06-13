@@ -1,5 +1,5 @@
 ---
-title: 操作功能板
+title: 操作仪表板
 description: 了解如何使用Adobe Experience Manager中的操作功能板。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,16 +12,16 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
 workflow-type: tm+mt
-source-wordcount: '5743'
+source-wordcount: '6016'
 ht-degree: 2%
 
 ---
 
-# 操作功能板 {#operations-dashboard}
+# 操作仪表板 {#operations-dashboard}
 
 ## 简介 {#introduction}
 
-AEM 6中的操作仪表板可帮助系统操作员一目了然地监控AEM系统运行状况。 它还提供有关AEM相关方面的自动生成诊断信息，并可让您配置和运行自包含的维护自动化，从而显着减少项目操作和支持案例。 操作功能板可通过自定义运行状况检查和维护任务进行扩展。 此外，可通过JMX从外部监控工具访问操作仪表板数据。
+AEM 6中的操作仪表板可帮助系统操作员概略监控AEM系统运行状况。 它还提供有关AEM相关方面的自动生成诊断信息，并可让您配置和运行自包含的维护自动化，从而显着减少项目操作和支持案例。 操作功能板可通过自定义运行状况检查和维护任务进行扩展。 此外，可通过JMX从外部监控工具访问操作仪表板数据。
 
 **操作仪表板：**
 
@@ -101,7 +101,7 @@ AEM 6中有两种类型的运行状况检查：
    >
    >`MBEAN_NAME`属性定义为此运行状况检查生成的mbean的名称。
 
-1. 创建运行状况检查后，必须创建新的配置节点，才能在操作功能板界面中访问该节点。 对于此步骤，需要知道运行状况检查的JMX Mbean名称（`MBEAN_NAME`属性）。 要为运行状况检查创建配置，请打开CRXDE并在以下路径下添加一个节点（类型为&#x200B;**nt：unstructured**）： `/apps/settings/granite/operations/hc`
+1. 创建运行状况检查后，必须创建新的配置节点，才能在操作功能板界面中访问该节点。 对于此步骤，需要知道运行状况检查的JMX Mbean名称（`MBEAN_NAME`属性）。 要为运行状况检查创建配置，请打开CRXDE并在以下路径下添加节点（类型为&#x200B;**nt:unstructured**）： `/apps/settings/granite/operations/hc`
 
    应在新节点上设置以下属性：
 
@@ -158,7 +158,7 @@ AEM 6中有两种类型的运行状况检查：
    >
    >为Apache Sling复合运行状况检查的每个新配置创建一个新的JMX Mbean。**
 
-1. 最后，必须将已创建的复合运行状况检查条目添加到操作仪表板配置节点中。 此过程与单个运行状况检查的过程相同：必须在`/apps/settings/granite/operations/hc`下创建类型为&#x200B;**nt：unstructured**&#x200B;的节点。 节点的资源属性由OSGI配置中的&#x200B;**hc.mean.name**&#x200B;值定义。
+1. 最后，必须将已创建的复合运行状况检查条目添加到操作仪表板配置节点中。 此过程与单独的运行状况检查相同：必须在`/apps/settings/granite/operations/hc`下创建类型为&#x200B;**nt:unstructured**&#x200B;的节点。 节点的资源属性由OSGI配置中的&#x200B;**hc.mean.name**&#x200B;值定义。
 
    例如，如果您创建了配置并将&#x200B;**hc.mbean.name**&#x200B;值设置为&#x200B;**diskusage**，则配置节点如下所示：
 
@@ -194,7 +194,7 @@ AEM 6中有两种类型的运行状况检查：
   </tr>
   <tr>
    <td>查询性能</td>
-   <td><p>此运行状况检查已在AEM 6.4</strong>中进行了简化<strong>，现在将检查最近重构的<code>Oak QueryStats</code> MBean，更具体而言是<code>SlowQueries </code>属性。 如果统计信息包含任何慢查询，则运行状况检查将返回警告。 否则，它会返回OK状态。<br /> </p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=queriesStatus，type=HealthCheck</a>。</p> </td>
+   <td><p>此运行状况检查已在AEM 6.4</strong>中进行了简化<strong>，现在可检查最近重构的<code>Oak QueryStats</code> MBean，更具体而言是<code>SlowQueries </code>属性。 如果统计信息包含任何慢查询，则运行状况检查将返回警告。 否则，它会返回OK状态。<br /> </p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueriesStatus%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=queriesStatus，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>观察队列长度</td>
@@ -202,14 +202,14 @@ AEM 6中有两种类型的运行状况检查：
     <ul>
      <li>如果<code>queueSize</code>值超过<code>maxQueueSize</code>值（即事件将被删除时），则返回严重状态</li>
      <li>如果<code>queueSize</code>值超过<code>maxQueueSize * WARN_THRESHOLD</code>，则返回警告（默认值为0.75） </li>
-    </ul> <p>每个队列的最大长度来自单独的配置(Oak和AEM)，并且无法通过此运行状况检查进行配置。 此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=ObservationQueueLengthHealthCheck，type=HealthCheck</a>。</p> </td>
+    </ul> <p>每个队列的最大长度来自单独的配置（Oak和AEM），并且无法通过此运行状况检查进行配置。 此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=ObservationQueueLengthHealthCheck，type=HealthCheck</a>。</p> </td>
   </tr>
   <tr>
    <td>查询遍历限制</td>
    <td><p>查询遍历限制检查<code>QueryEngineSettings</code> MBean，更具体地说<code>LimitInMemory</code>和<code>LimitReads</code>属性，并返回以下状态：</p>
     <ul>
      <li>如果其中一个限制等于或大于 <code>Integer.MAX_VALUE</code></li>
-     <li>如果其中一个限制小于10000(Oak中的推荐设置)，则返回警告状态</li>
+     <li>如果其中一个限制小于10000（Oak中的推荐设置），则返回警告状态</li>
      <li>如果无法检索<code>QueryEngineSettings</code>或任何限制，则返回“严重”状态</li>
     </ul> <p>此运行状况检查的Mbean是<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DqueryTraversalLimitsBundle%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=queryTraversalLimitsBundle，type=HealthCheck</a>。</p> </td>
   </tr>
@@ -241,7 +241,7 @@ AEM 6中有两种类型的运行状况检查：
     <ul>
      <li>如果索引中的文档超过10亿，则显示警告状态</li>
      <li>a如果索引中的文档超过15亿，则为严重状态</li>
-    </ul> <p>阈值可配置，运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=largeIndexHealthCheck，type=HealthCheck。</a></p> <p><strong>注意： </strong>此检查在AEM 6.4中可用，并且已回溯到AEM 6.3.2.0。</p> </td>
+    </ul> <p>阈值可配置，运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DlargeIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.healthcheck：name=largeIndexHealthCheck，type=HealthCheck。</a></p> <p><strong>注意：</strong>此检查在AEM 6.4中可用，并且已被反向移植到AEM 6.3.2.0。</p> </td>
   </tr>
   <tr>
    <td>系统维护</td>
@@ -297,7 +297,7 @@ AEM 6中有两种类型的运行状况检查：
   </tr>
   <tr>
    <td>安全检查</td>
-   <td><p>安全检查是一种组合检查，用于聚合多个安全相关检查的结果。 这些个人运行状况检查可解决<a href="/help/sites-administering/security-checklist.md">安全核对清单文档页面提供的安全核对清单中的不同问题。</a>该检查在启动实例时可用作安全冒烟测试。 </p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=securitychecks，type=HealthCheck</a></p> </td>
+   <td><p>安全检查是一种组合检查，用于聚合多个安全相关检查的结果。 这些个人运行状况检查可解决<a href="/help/sites-administering/security-checklist.md">安全核对清单文档页面提供的安全核对清单中的不同问题。</a> 该检查在实例启动时可用作安全冒烟测试。 </p> <p>此运行状况检查的MBean为<a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck：name=securitychecks，type=HealthCheck</a></p> </td>
   </tr>
   <tr>
    <td>活动包</td>
@@ -380,7 +380,7 @@ AEM 6中有两种类型的运行状况检查：
 
 >[!NOTE]
 >
->**使用AEM 6.4**，维护任务将以INFO级别中信息丰富的格式立即注销。 此工作流可让您更好地了解维护任务的状态。
+>**使用AEM 6.4**，在INFO级别以信息丰富的格式将维护任务以现成格式注销。 此工作流可让您更好地了解维护任务的状态。
 >
 >如果您使用第三方工具（如Splunk）来监控和响应维护任务活动，则可以使用以下log语句：
 
@@ -423,7 +423,7 @@ DATE+TIME [MaintanceLogger] Name=<MT_NAME>, Status=<MT_STATUS>, Time=<MT_TIME>, 
 
 ### 说明查询 {#explain-query}
 
-对于任何给定的查询，Oak会尝试根据&#x200B;**oak：index**&#x200B;节点下的存储库中定义的Oak索引找出最佳执行方式。 Oak可能会根据查询选择不同的索引。 了解Oak如何执行查询是优化查询的第一步。
+对于任何给定的查询，Oak会尝试根据&#x200B;**oak:index**&#x200B;节点下的存储库中定义的Oak索引找出最佳执行方式。 Oak可能会根据查询选择不同的索引。 了解Oak如何执行查询是优化查询的第一步。
 
 Explain查询是一种用于说明Oak如何执行查询的工具。 通过从AEM欢迎屏幕转到&#x200B;**工具 — 操作 — 诊断**&#x200B;可访问该区域。 然后，单击&#x200B;**查询性能**&#x200B;并切换到&#x200B;**解释查询**&#x200B;选项卡。
 
@@ -460,7 +460,7 @@ Explain查询是一种用于说明Oak如何执行查询的工具。 通过从AEM
 
 UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键入过滤条件。
 
-### 下载状态ZIP {#download-status-zip}
+### 下载状态 ZIP {#download-status-zip}
 
 此操作会触发下载zip文件，其中包含有关系统状态和配置的有用信息。 存档包含实例配置、包列表、OSGI、Sling量度和统计数据，这可能会导致产生大文件。 您可以使用&#x200B;**下载状态ZIP**&#x200B;窗口来减少大型状态文件的影响。 可从以下位置访问该窗口：**AEM >工具>操作>诊断>下载状态ZIP。**
 
@@ -472,7 +472,7 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 
 此操作会触发下载zip文件，其中包含有关系统中存在的线程的信息。 提供了有关每个线程的信息，例如其状态、类加载器和栈栈跟踪。
 
-### 下载栈转储 {#download-heap-dump}
+### 下载堆转储 {#download-heap-dump}
 
 您可以下载栈的快照以便稍后进行分析。 此操作会触发大型（数百MB）文件的下载。
 
@@ -495,7 +495,7 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 1. **项目清除**&#x200B;维护任务，位于&#x200B;**每周维护时段**&#x200B;菜单下；使用&#x200B;**添加**&#x200B;选项。
 1. 位于&#x200B;**每周维护时段**&#x200B;菜单下的&#x200B;**清除临时任务**&#x200B;维护任务；使用&#x200B;**添加**&#x200B;选项。
 
-日常维护时段默认时间是凌晨2:00至凌晨5:00。配置为在每周维护窗口中运行的任务在星期六凌晨1:00到凌晨2:00之间运行。
+每日维护窗口的默认时间是上午2:00到上午5:00。配置为在每周维护时段中运行的任务在星期六上午1:00到凌晨2:00之间运行。
 
 您还可以通过按任意两个维护卡上的齿轮图标来配置时间安排：
 
@@ -516,9 +516,9 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 尽管开发维护任务是为了减少Lucene相关的修订垃圾，但运行任务时普遍存在效率提高：
 
 * 每周运行一次的数据存储垃圾收集任务可以更快地完成。
-* 它也可能略微改善整体AEM性能。
+* 它也可能略微提高AEM的整体性能。
 
-您可以从&#x200B;**AEM > Tools > Operations > Maintenance > Daily Maintenance Window > Lucene Binaries Cleanup**&#x200B;访问Lucene二进制文件清理任务。
+您可以从&#x200B;**AEM >工具>操作>维护>每日维护窗口> Lucene二进制文件清理**&#x200B;访问Lucene二进制文件清理任务。
 
 ### 数据存储垃圾回收 {#data-store-garbage-collection}
 
@@ -613,19 +613,19 @@ See the Maintenance Window table below for additional configuration details. Ena
    <td>granite.maintenance.name</td>
    <td>任务的唯一名称 — 该名称用于引用任务，只是简单名称。</td>
    <td>MyMaintenanceTask</td>
-   <td>必填</td>
+   <td>必需</td>
   </tr>
   <tr>
    <td>granite.maintenance.title</td>
    <td>为此任务显示的标题</td>
    <td>我的特别维护任务</td>
-   <td>必填</td>
+   <td>必需</td>
   </tr>
   <tr>
    <td>job.topics</td>
-   <td>维护任务的唯一主题。<br /> Apache Sling作业处理将启动一个与此主题完全相同的作业来运行维护任务，当针对此主题注册任务时，该任务将运行。<br />主题必须以<i>com/adobe/granite/maintenance/job/</i>开头</td>
+   <td>维护任务的唯一主题。<br /> Apache Sling作业处理将启动一个与此主题完全相同的作业来运行维护任务，当针对此主题注册任务时，该任务将运行。<br /> 主题必须以<i>com/adobe/granite/maintenance/job/</i>开头</td>
    <td>com/adobe/granite/maintenance/job/MyMaintenanceTask</td>
-   <td>必填</td>
+   <td>必需</td>
   </tr>
  </tbody>
 </table>
@@ -654,7 +654,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 此操作在/apps/granite/operations/config/maintenance/`schedule`/`taskname`处添加相应的资源。 如果任务依赖于运行模式，则必须在该节点上使用对此维护任务必须处于活动状态的运行模式值设置属性granite.operations.conditions.runmode。
 
-## 系统概览 {#system-overview}
+## 系统概述 {#system-overview}
 
 **系统概述仪表板**&#x200B;显示AEM实例的配置、硬件和运行状况的高级概述。 系统运行状况是透明的，所有信息都汇总在单个仪表板中。
 
@@ -724,7 +724,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
    <td>系统</td>
    <td>
     <ul>
-     <li>操作系统和操作系统版本(例如，macOS X)</li>
+     <li>操作系统和操作系统版本（例如，macOS X）</li>
      <li>从<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a>检索到的系统平均负载</li>
      <li>磁盘空间（主目录所在的分区）</li>
      <li>最大栈，由<a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a>返回</li>

@@ -1,5 +1,5 @@
 ---
-title: 更改界面上的字体
+title: 更改界面字体
 description: 如何有选择地更改用户界面上的字体。
 contentOwner: robhagat
 content-type: reference
@@ -12,19 +12,19 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '272'
-ht-degree: 1%
+source-wordcount: '278'
+ht-degree: 6%
 
 ---
 
-# 更改界面上的字体{#changing-the-font-on-the-interface}
+# 更改界面字体{#changing-the-font-on-the-interface}
 
 您可以更改AEM Forms工作区中显示的字体。 在用户界面的特定部分中使用的字体在样式表的相应部分中定义。 您可以选择性地更改用户界面上的字体。
 
 执行[AEM Forms工作区自定义的一般步骤](../../forms/using/generic-steps-html-workspace-customization.md)，并根据您的要求，执行自定义CSS和/或HTML的步骤。
 
 1. 在现有样式中更改或添加字体系列。
-1. 更改或添加HTML元素的font-family inline。
+1. 更改或添加HTML元素的内嵌字体系列。
 1. 添加样式并将其用于HTML元素。
 
 例如，要将顶部导航栏锚点文本的字体更改为“Courier New”，请执行以下步骤：
@@ -40,7 +40,7 @@ ht-degree: 1%
       }
       ```
 
-   1. 要为HTML元素添加字体系列，请将`/libs/ws/js/runtime/templates/appnavigation.html`文件复制到`/apps/ws/js/runtime/templates/appnavigation.html`。
+   1. 要为HTML元素添加内嵌字体系列，请将`/libs/ws/js/runtime/templates/appnavigation.html`文件复制到`/apps/ws/js/runtime/templates/appnavigation.html`。
 
       按如下方式更新/apps/ws/js/runtime/templates/appnavigation.html文件：
 
@@ -61,7 +61,7 @@ ht-degree: 1%
       }
       ```
 
-      要为HTML元素添加font-family内联，请在/apps/ws/js/runtime/templates的appnavigation.html文件中添加以下内容。
+      要为HTML元素添加内联字体系列，请在/apps/ws/js/runtime/templates的appnavigation.html文件中添加以下内容。
 
       ```jsp
       <div id="topnav" class="myNewFontStyle">

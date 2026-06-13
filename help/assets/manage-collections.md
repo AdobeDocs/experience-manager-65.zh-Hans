@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2170'
 ht-degree: 15%
 
 ---
@@ -117,7 +117,7 @@ ht-degree: 15%
 您可以将资源添加到包含引用的资源或文件夹列表的收藏集。 智能收藏集使用搜索查询来填充资源。 因此，对资源和文件夹的静态引用不适用于它们。
 
 1. 在[!DNL A]资产用户界面中，选择资产并单击工具栏中的&#x200B;**[!UICONTROL 到收藏集]** ![添加到收藏集](assets/do-not-localize/add-to-collection.png)。
-或者，您可以将资产拖到界面上的&#x200B;**[!UICONTROL 拖放到收藏集]**&#x200B;区域。 当区域的标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时添加资源。
+或者，您可以将资产拖到界面上的&#x200B;**[!UICONTROL 拖放到收藏集]**&#x200B;区域。当区域的标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时添加资源。
 
 1. 在&#x200B;**[!UICONTROL 添加到收藏集]**&#x200B;页面中，选择要将资产添加到的收藏集。
 

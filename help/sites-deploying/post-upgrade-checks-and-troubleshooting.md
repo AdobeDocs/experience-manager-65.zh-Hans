@@ -1,5 +1,5 @@
 ---
-title: 升级后检查和故障排除
+title: 升级后的检查与疑难解答
 description: 了解如何对升级后可能显示的问题进行故障排除。
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
 
-# 升级后检查和故障排除{#post-upgrade-checks-and-troubleshooting}
+# 升级后的检查与疑难解答{#post-upgrade-checks-and-troubleshooting}
 
 ## 升级后检查 {#post-upgrade-checks}
 
@@ -29,7 +29,7 @@ ht-degree: 0%
 
 * [验证Oak版本](#main-pars-header-1293049773)
 
-* [Inspect PreUpgradeBackup文件夹](#main-pars-header-988995987)
+* [检查PreUpgradeBackup文件夹](#main-pars-header-988995987)
 
 * [页面初始验证](#main-pars-header-20827371)
 * [应用AEM Service Pack](#main-pars-header-215142387)
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 **error.log**
 
-在使用目标版本jar启动AEM期间和之后，应该仔细查看error.log。 应审查任何警告或错误。 通常，最好在日志的开头查找问题。 日志中稍后发生的错误实际上可能是文件早期调出的根本原因的副作用。 如果出现重复错误和警告，请参阅下面的[分析升级问题](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade)。
+在使用Target版本jar启动AEM期间和之后，应该仔细查看error.log。 应审查任何警告或错误。 通常，最好在日志的开头查找问题。 日志中稍后发生的错误实际上可能是文件早期调出的根本原因的副作用。 如果出现重复错误和警告，请参阅下面的[分析升级问题](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md#analyzing-issues-with-the-upgrade)。
 
 ### 验证OSGi包 {#verify-osgi-bundles}
 
@@ -79,17 +79,17 @@ ht-degree: 0%
 
 升级后，您应会看到Oak版本已更新为&#x200B;**1.10.2**。 要验证Oak版本，请导航到OSGi控制台，并查看与Oak捆绑包关联的版本：Oak Core、Oak Commons、Oak Segment Tar。
 
-### Inspect PreUpgradeBackup文件夹 {#inspect-preupgradebackup-folder}
+### 检查PreUpgradeBackup文件夹 {#inspect-preupgradebackup-folder}
 
 在升级期间，AEM会尝试备份自定义项并将其存储在`/var/upgrade/PreUpgradeBackup/<time-stamp-of-upgrade>`下。 若要在CRXDE Lite中查看此文件夹，您可能需要[临时启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md)。
 
 具有时间戳的文件夹应具有名为`mergeStatus`的属性，其值为`COMPLETED`。 **to-process**&#x200B;文件夹应为空，**覆盖**&#x200B;节点指示在升级期间覆盖哪些节点。 Leftovers节点下的内容表示在升级期间无法安全合并的内容。 如果您的实施依赖于任何子节点（并且尚未由升级后的代码包安装），则需要手动合并这些子节点。
 
-如果在暂存或生产环境中，则禁用本练习后的CRXDE Lite。
+如果在暂存或生产环境中，请在此练习之后禁用CRXDE Lite。
 
 ### 页面初始验证 {#initial-validation-of-pages}
 
-对AEM中的多个页面执行初始验证。 如果升级创作环境，请打开起始页和欢迎页( `/aem/start.html`， `/libs/cq/core/content/welcome.html`)。 在“创作”和“Publish”环境中，打开几个应用程序页面，并进行烟雾测试，以正确呈现这些页面。 如果发生任何问题，请查阅`error.log`以进行故障排除。
+对AEM中的多个页面执行初始验证。 如果升级创作环境，请打开起始页和欢迎页( `/aem/start.html`， `/libs/cq/core/content/welcome.html`)。 在创作和发布环境中，打开几个应用程序页面并进行冒烟测试，以使其正确呈现。 如果发生任何问题，请查阅`error.log`以进行故障排除。
 
 ### 应用AEM Service Pack {#apply-aem-service-packs}
 
@@ -97,7 +97,7 @@ ht-degree: 0%
 
 ### 迁移AEM功能 {#migrate-aem-features}
 
-升级后，AEM中的多项功能需要执行其他步骤。 在AEM 6.5中迁移这些功能和步骤的完整列表可在[升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md)页面上找到。
+升级后，AEM中的多项功能需要执行其他步骤。 您可以在[升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md)页面上找到这些功能以及在AEM 6.5中迁移这些功能的步骤的完整列表。
 
 ### 验证计划的维护配置 {#verify-scheduled-maintenance-configurations}
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 ### 启用复制代理 {#enable-replication-agents}
 
-完全升级并验证发布环境后，在创作环境中启用复制代理。 验证代理是否能够连接到相应的Publish实例。 有关事件顺序的更多详细信息，请参阅[升级过程](/help/sites-deploying/upgrade-procedure.md)。
+完全升级并验证发布环境后，在创作环境中启用复制代理。 验证代理是否能够连接到各自的发布实例。 有关事件顺序的更多详细信息，请参阅[升级过程](/help/sites-deploying/upgrade-procedure.md)。
 
 ### 启用自定义计划作业 {#enable-custom-scheduled-jobs}
 
@@ -133,13 +133,13 @@ ht-degree: 0%
 
 ### 存储库迁移失败  {#repository-migration-failing-}
 
-从基于CQ 5.4的CRX实例开始的任何场景，都应该适合从Source2到Oak的数据迁移。请确保完全按照本文档中的升级说明进行操作，包括准备`repository.xml`，并确保未通过JAAS启动自定义身份验证器，并且在开始迁移之前已检查实例是否不一致。
+从基于CQ 5.4的CRX实例开始的任何场景，都应该适合从Source2到Oak的数据迁移。 请确保完全按照本文档中的升级说明进行操作，包括准备`repository.xml`，并确保未通过JAAS启动自定义身份验证器，并且在开始迁移之前已检查实例是否不一致。
 
 如果迁移仍然失败，您可以通过检查`upgrade.log`找出根本原因。 如果问题尚不清楚，请向客户支持部门报告。
 
 ### 升级未运行 {#the-upgrade-did-not-run}
 
-在开始准备步骤之前，请确保先运行&#x200B;**source**&#x200B;实例，方法是使用Java™ -jar aem-quickstart.jar命令执行该实例。 这是确保正确生成quickstart.properties文件所必需的。 如果缺少该参数，升级将无法工作。 或者，您可以通过查看源实例安装文件夹中的`crx-quickstart/conf`来检查文件是否存在。 此外，在启动AEM以开始升级时，必须使用Java™ -jar aem-quickstart.jar命令执行该升级。 从启动脚本启动不会以升级模式启动AEM。
+在开始准备步骤之前，请确保先运行&#x200B;**source**&#x200B;实例，方法是使用Java™ -jar aem-quickstart.jar命令执行该实例。 这是确保正确生成quickstart.properties文件所必需的。 如果缺少该参数，升级将无法工作。 或者，您可以通过查看源实例安装文件夹中的`crx-quickstart/conf`来检查文件是否存在。 此外，在启动AEM以开始升级时，必须使用Java™ -jar aem-quickstart.jar命令执行该升级。 从启动脚本启动时，在升级模式下不会启动AEM。
 
 ### 包和捆绑包无法更新  {#packages-and-bundles-fail-to-update-}
 
@@ -179,7 +179,7 @@ ht-degree: 0%
 
 升级处理得当`/apps`和`/libs`，但在升级后可能需要从`/var/upgrade/PreUpgradeBackup`手动还原`/etc`下的更改。 请确保检查此位置，以查看是否有任何需要手动合并的内容。
 
-### 正在分析error.log和upgrade.log {#analyzing-the-error.log-and-upgrade.log}
+### 分析error.log和upgrade.log {#analyzing-the-error.log-and-upgrade.log}
 
 在大多数情况下，需要查阅日志来查找错误原因。 但是，在升级时，由于旧捆绑包可能无法正确升级，因此还需要监视依赖项问题。
 
