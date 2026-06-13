@@ -1,5 +1,5 @@
 ---
-title: Publish收藏集到Brand Portal
+title: 将收藏集发布到Brand Portal
 description: 了解如何将收藏集发布和取消发布到Brand Portal。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,12 +12,12 @@ exl-id: 8f426012-d9ec-418e-8ab6-78e4aeff7538
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '323'
 ht-degree: 30%
 
 ---
 
-# Publish收藏集到Brand Portal {#publish-collections-to-brand-portal}
+# 将收藏集发布到Brand Portal {#publish-collections-to-brand-portal}
 
 作为Adobe Experience Manager (AEM) Assets管理员，您可以将收藏集发布到贵组织的AEM Assets Brand Portal实例。 但是，您必须首先将AEM Assets与Brand Portal集成。 有关详细信息，请参阅[使用 Brand Portal 配置 AEM Assets](/help/assets/configure-aem-assets-with-brand-portal.md)。
 
@@ -25,11 +25,11 @@ ht-degree: 30%
 
 >[!NOTE]
 >
->无法将内容片段发布到 Brand Portal。因此，如果您在AEM创作中选择内容片段，则&#x200B;**Publish到Brand Portal**&#x200B;操作将不可用。
+>无法将内容片段发布到 Brand Portal。 因此，如果您在AEM创作中选择内容片段，则&#x200B;**发布到Brand Portal**&#x200B;操作将不可用。
 >
 >如果将包含内容片段的收藏集从AEM Author发布到Brand Portal，则文件夹中除内容片段之外的所有内容都将复制到Brand Portal界面。
 
-## 将收藏集Publish到Brand Portal {#publish-a-collection-to-brand-portal}
+## 将收藏集发布到Brand Portal {#publish-a-collection-to-brand-portal}
 
 1. 在 AEM Assets UI 中，单击 AEM 徽标。
 1. 从&#x200B;**导航**&#x200B;页面，转到&#x200B;**Assets >收藏集**。
@@ -54,4 +54,4 @@ ht-degree: 30%
 
 1. 在工具栏中，单击&#x200B;**从 Brand Portal 中删除**&#x200B;图标。
 1. 在对话框中，单击&#x200B;**取消发布**。
-1. 关闭确认消息。收藏集将从 Brand Portal 界面中删除。
+1. 关闭确认消息。 收藏集将从 Brand Portal 界面中删除。

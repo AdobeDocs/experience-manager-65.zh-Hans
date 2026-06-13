@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 7bf70ba18603bfd17dec391ddcd623e9085fbd04
 workflow-type: tm+mt
 source-wordcount: '984'
-ht-degree: 0%
+ht-degree: 5%
 
 ---
 
@@ -51,13 +51,13 @@ ht-degree: 0%
 
 ## 翻译混合媒体片段 {#translating-mixed-media-fragments}
 
-AEM允许您翻译包含各种媒体资产和收藏集的内容片段。 如果您翻译包含内联资源的内容片段，则这些资源的翻译副本将存储在目标语言根下。
+通过AEM，可翻译包含各种媒体资源和收藏集的内容片段。 如果您翻译包含内联资源的内容片段，则这些资源的翻译副本将存储在目标语言根下。
 
 如果内容片段包括集合，则集合中的资产将随内容片段一起翻译。 资产的翻译副本存储在相应的目标语言根中，该根位于与源语言根下的源资产的物理位置相匹配的位置。
 
 为了能够翻译包含混合媒体的内容片段，请首先编辑默认翻译框架以启用与内容片段关联的内联资产和收藏集的翻译。
 
-1. 单击AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具>部署>Cloud Service]**。
+1. 单击AEM徽标，然后导航到&#x200B;**[!UICONTROL 工具>部署>云服务]**。
 1. 在&#x200B;**[!UICONTROL Adobe Marketing Cloud]**&#x200B;下找到&#x200B;**[!UICONTROL 翻译集成]**，然后单击&#x200B;**[!UICONTROL 显示配置]**。
 
    ![chlimage_1-444](assets/chlimage_1-444.png)

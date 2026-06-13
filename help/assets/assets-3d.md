@@ -11,15 +11,10 @@ exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
 solution: Experience Manager, Experience Manager Assets
 autotag-review: '2026-05-18T18:43:11.851Z'
 TQID: 'https://experienceleague.adobe.com/Qejzp9vTp-wLn92GsZdPdKEdA-84PnmYIROxdVrB4MU'
-product_v2:
-  - id: e14eb250-3c22-4a07-9061-a78112b2b826
-  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
-role_v2:
-  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
-level_v2:
-  - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-topic_v2:
-  - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+product_v2: id: e14eb250-3c22-4a07-9061-a78112b2b826id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+role_v2: id: b69b2659-1057-424e-8fc5-ed9e016dc554
+level_v2: id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+topic_v2: id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
 source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
 workflow-type: tm+mt
 source-wordcount: 2419
@@ -163,7 +158,7 @@ Dynamic Media支持以下3D格式。
    * 从浏览器中的页面URL中删除`/editor.html`。
 
    ![3D资产显示在3D媒体组件内](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-以&#x200B;**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
+以**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
 
 1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，执行以下任一操作：
 
@@ -243,7 +238,7 @@ Dynamic Media包括一个Dynamic Media 3D Media组件，您可以在Adobe Experi
 
 将3D媒体组件添加到网页后，即可为其分配3D资产。
 
-请参阅将3D媒体组件添加到网页[&#128279;](#adding-the-three-d-media-component-to-a-web-page)。
+请参阅将3D媒体组件添加到网页](#adding-the-three-d-media-component-to-a-web-page)。[
 
 **要将3D资产分配给3D媒体组件：**
 

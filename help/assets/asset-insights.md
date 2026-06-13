@@ -18,7 +18,7 @@ ht-degree: 17%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/assets-insights.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 Assets Insights功能允许您跟踪第三方网站、营销活动和Adobe创意解决方案中使用的图像的用户评级和使用情况统计数据。 这有助于获得有关其性能和受欢迎程度的见解。
@@ -27,7 +27,7 @@ Assets Insights功能允许您跟踪第三方网站、营销活动和Adobe创意
 
 若要使用[!DNL Assets]分析从网站中捕获图像的使用情况统计数据，您必须在网站代码中包含该图像的嵌入代码。
 
-若要让 Assets Insights 显示资产的使用统计数据，需先配置该功能，以便从 Adobe Analytics 获取报告数据。 有关详细信息，请参阅[配置Assets分析](/help/assets/configure-asset-insights.md)。 要在内部部署安装中使用此功能，请单独购买[!DNL Adobe Analytics]许可证。 [!DNL Managed Services]上的客户将收到与[!DNL Experience Manager]捆绑的[!DNL Analytics]许可证。 请参阅[Managed Services产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-managed-services.html)。
+若要让 Assets Insights 显示资产的使用统计数据，需先配置该功能，以便从 Adobe Analytics 获取报告数据。 有关详细信息，请参阅[配置Assets分析](/help/assets/configure-asset-insights.md)。 要在内部部署安装中使用此功能，请单独购买[!DNL Adobe Analytics]许可证。 [!DNL Managed Services]上的客户将收到与[!DNL Experience Manager]捆绑的[!DNL Analytics]许可证。 请参阅[Managed Services产品说明](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html)。
 
 >[!NOTE]
 >

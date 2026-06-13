@@ -7,7 +7,7 @@ exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
 workflow-type: tm+mt
-source-wordcount: '1728'
+source-wordcount: '1741'
 ht-degree: 76%
 
 ---
@@ -127,7 +127,7 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->其中许多是Assets[和/或](/help/assets/manage-assets.md)AEM桌面应用程序[的](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)标准操作。
+>其中许多是Assets](/help/assets/manage-assets.md)和/或[AEM桌面应用程序](https://helpx.adobe.com/cn/experience-manager/desktop-app/aem-desktop-app.html)的[标准操作。
 
 ## 打开片段编辑器 {#opening-the-fragment-editor}
 
@@ -135,7 +135,7 @@ ht-degree: 76%
 
 >[!CAUTION]
 >
->要编辑内容片段，您需要[相应的权限](/help/sites-developing/customizing-content-fragments.md#asset-permissions)。如果您遇到问题，请联系您的系统管理员。
+>要编辑内容片段，您需要[相应的权限](/help/sites-developing/customizing-content-fragments.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
 
 >[!CAUTION]
 >
@@ -185,7 +185,7 @@ ht-degree: 76%
 
 ![模式](assets/cfm-managing-top-toolbar.png)
 
-* 当内容页面上已引用片段时，会显示一条消息。您可以&#x200B;**关闭**&#x200B;消息。
+* 当内容页面上已引用片段时，会显示一条消息。 您可以&#x200B;**关闭**&#x200B;消息。
 
 * 可以使用&#x200B;**切换侧面板**&#x200B;图标来隐藏/显示侧面板。
 
@@ -197,7 +197,7 @@ ht-degree: 76%
 
 * **保存**&#x200B;提供对&#x200B;**保存并关闭**&#x200B;选项的访问。
 
-* 三个圆点(**...**)下拉列表提供了对其他操作的访问权限：
+* 三个点(**...**) 下拉列表提供了对其他操作的访问权限：
    * **更新页面引用**
       * 这会更新任何页面引用。
    * **[快速发布](#publishing-and-referencing-a-fragment)**
@@ -232,7 +232,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >要编辑内容片段，您需要[相应的权限](/help/sites-developing/customizing-content-fragments.md#asset-permissions)。如果您遇到问题，请联系您的系统管理员。
+  >要编辑内容片段，您需要[相应的权限](/help/sites-developing/customizing-content-fragments.md#asset-permissions)。 如果您遇到问题，请联系您的系统管理员。
 
   >[!NOTE]
   >
@@ -240,7 +240,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
   >[!CAUTION]
   >
-  >除了仅保存您的更改外，这些操作还会更新任何引用，并确保 Dispatcher 按需要刷新。这些更改可能需要一些时间才能处理。因此，对于大型/复杂/重载系统，性能可能会受到影响。
+  >除了仅保存您的更改外，这些操作还会更新任何引用，并确保 Dispatcher 按需要刷新。 这些更改可能需要一些时间才能处理。 因此，对于大型/复杂/重载系统，性能可能会受到影响。
   >
   >使用&#x200B;**保存并关闭**&#x200B;时请记住这一点，然后快速重新进入片段编辑器以进行并保存进一步的更改。
 
@@ -277,7 +277,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 ## 将内容与片段关联 {#associating-content-with-your-fragment}
 
-您还可以[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段。这会提供一个连接，以便在将资源（即图像）添加到内容页面时，可以（可选）与片段一起使用资源（即图像）。
+您还可以[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)与片段。 这会提供一个连接，以便在将资源（即图像）添加到内容页面时，可以（可选）与片段一起使用资源（即图像）。
 
 ## 查看和编辑片段的元数据（属性） {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
@@ -368,7 +368,7 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 必须发布内容片段才能在发布环境中使用。 它们可以发布：
 
-* 创建后；使用Assets控制台[中可用的](#actions-for-a-content-fragment-assets-console)操作。
+* 创建后；使用Assets控制台](#actions-for-a-content-fragment-assets-console)中可用的[操作。
 * 从[内容片段编辑器](#toolbar-actions-in-the-content-fragment-editor)。
 * 当您[发布使用片段](/help/sites-authoring/content-fragments.md#publishing)的页面时；该片段将列在页面引用中。
 
@@ -392,4 +392,4 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
    >[!CAUTION]
    >
-   >如果片段已在页面中被引用，您将看到一条警告消息，需要您确认是否继续执行&#x200B;**强制删除**。片段及其内容片段组件将从任何内容页面中删除。
+   >如果片段已在页面中被引用，您将看到一条警告消息，需要您确认是否继续执行&#x200B;**强制删除**。 片段及其内容片段组件将从任何内容页面中删除。

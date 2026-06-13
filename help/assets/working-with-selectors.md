@@ -12,7 +12,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
 source-wordcount: '741'
-ht-degree: 2%
+ht-degree: 6%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 2%
 
 ![chlimage_1-520](assets/chlimage_1-520.png)
 
-当您选择热点或图像映射的目标位置时（而不是手动输入），您使用的是选择器。 仅当您是Experience Manager Sites客户时，站点选择器才有效。 产品选择器还需要Experience ManagerCommerce。
+当您选择热点或图像映射的目标位置时（而不是手动输入），您使用的是选择器。 仅当您是Experience Manager Sites客户时，站点选择器才有效。 产品选择器还需要Experience Manager Commerce。
 
 ## 使用产品选择器 {#selecting-products}
 
@@ -86,7 +86,7 @@ ht-degree: 2%
 
    ![chlimage_1-531](assets/chlimage_1-531.png)
 
-1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，如果您选择热点或图像映射，则可以导航到您指定的Experience Manager站点页面。
+1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，如果您选择热点或图像映射，请导航到您指定的Experience Manager站点页面。
 
 ## 使用资源选择器 {#selecting-assets}
 

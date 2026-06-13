@@ -1,6 +1,6 @@
 ---
-title: 预览资源
-description: 了解如何通过应用图像预设和查看器预设在Dynamic Media中预览资源，例如视频和图像。
+title: 预览资产
+description: 了解如何通过应用图像预设和查看器预设在Dynamic Media中预览资产（例如视频和图像）。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,7 +12,7 @@ exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1381'
+source-wordcount: '1432'
 ht-degree: 1%
 
 ---
@@ -78,7 +78,7 @@ ht-degree: 1%
       </ul> <p><strong>在特定查看器中预览资源</strong></p>
       <ul>
       <li>在页面的左上角附近，单击图标，此时将显示下拉列表。 从列表中选择<strong>查看器</strong>，然后选择要应用于该资源的查看器。</li>
-      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br />如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
+      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br /> 如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
       </tr>
       <tr>
       <td>多媒体</td>
@@ -99,7 +99,7 @@ ht-degree: 1%
       <td><p><strong>在特定查看器中预览资源</strong></p>
       <ul>
       <li>在页面的左上角附近，单击图标，此时将显示下拉列表。 从列表中选择<strong>查看器</strong>，然后选择要应用于该资源的查看器。</li>
-      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标，以便您可以分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br />如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
+      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标，以便您可以分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br /> 如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
       </tr>
       <tr>
       <td>旋转集</td>
@@ -108,7 +108,7 @@ ht-degree: 1%
       <td><p><strong>在特定查看器中预览资源</strong></p>
       <ul>
       <li>在页面的左上角附近，单击图标，此时将显示下拉列表。 从列表中选择<strong>查看器</strong>，然后选择要应用于该资源的查看器。</li>
-      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br />如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
+      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br /> 如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
       </tr>
       <tr>
       <td>混合媒体集</td>
@@ -117,7 +117,7 @@ ht-degree: 1%
       <td><p><strong>在特定查看器中预览资源</strong></p>
       <ul>
       <li>在页面的左上角附近，单击图标，此时将显示下拉列表。 从列表中选择<strong>查看器</strong>，然后选择要应用于该资源的查看器。</li>
-      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br />如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
+      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br /> 如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
       </tr>
       <tr>
       <td>传送集</td>
@@ -138,7 +138,7 @@ ht-degree: 1%
       </ul> <p><strong>在特定查看器中预览资源</strong></p>
       <ul>
       <li>在页面的左上角附近，选择图标，此时将显示下拉列表。 选择<strong>查看器</strong>，然后选择要应用于该资源的查看器。</li>
-      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br />如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
+      </ul> <p>使用<strong>+</strong>和<strong>-</strong>图标分别增大或减小所选图像的缩放比例。 如果要将图像还原为原始缩放，请选择<strong>重置</strong>。<br /> 如果您在触摸屏上，请双击要按步骤放大图像。 达到最大缩放时，再次双击图像可重置缩放状态。 拖动图像以平移。</p> </td>
       </tr>
     </tbody>
     </table>
