@@ -18,7 +18,7 @@ ht-degree: 15%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/search-facets.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Experience Manager Assets]的企业范围部署具有存储许多资产的容量。 有时，如果只使用[!DNL Experience Manager]的通用搜索功能，则查找正确的资产可能会很费时费力。
