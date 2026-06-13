@@ -372,7 +372,7 @@ Lucene索引是在Oak 1.0.9中引入的，对于在AEM 6初次发布时引入的
    * 如果这不能解决此问题，并且`AsyncIndexUpdate`异常持续存在，则：
 
       1. [重新索引](#how-to-re-index)错误的索引
-      1. 还要提交[Adobe支持](https://helpx.adobe.com/support.html)票证
+      1. 还要提交[Adobe支持](https://helpx.adobe.com/cn/support.html)票证
 
 ### 如何重新索引 {#how-to-re-index}
 

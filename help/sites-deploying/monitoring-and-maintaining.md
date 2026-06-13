@@ -228,13 +228,13 @@ AEM WCM会记录详细的日志。 打开包装并启动“快速入门”后，
    * `error.log`
 错误消息（严重程度不同）在此处注册。
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=zh-Hans)
 此日志仅在启用[!DNL Dynamic Media]时使用。 它提供用于分析ImageServer内部进程行为的统计和分析信息。
 
    * `request.log`
 每个访问请求都与响应一起注册。
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=zh-Hans)
 此日志仅在启用[!DNL Dynamic Media]时使用。 s7access日志记录通过`/is/image`和`/is/content`向[!DNL Dynamic Media]发出的每个请求。
 
    * `stderr.log`
@@ -1098,9 +1098,9 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 >
 >有关更多信息，另请参阅以下文章：
 >
->* [线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)
->* [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
->* [使用内置探查器进行分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html)
+>* [线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=zh-Hans)
+>* [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hans)
+>* [使用内置探查器进行分析](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=zh-Hans)
 >
 
 ### 内存不足 {#out-of-memory}
@@ -1116,7 +1116,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 用于[启动AEM](/help/sites-deploying/deploy.md#getting-started)的JVM设置
 * 知识库：
 
-* [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)
+* [分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hans)
 
 ### 磁盘I/O {#disk-i-o}
 
@@ -1134,7 +1134,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * 是否以及如何配置[版本清除](/help/sites-deploying/version-purging.md)
 * 知识库：
 
-   * [打开的文件太多]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html
+   * [打开的文件太多]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=zh-Hans
 
 ### 性能定期下降 {#regular-performance-degradation}
 
@@ -1143,7 +1143,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [内存不足](#outofmemory)
 * 知识库：
 
-   * [未关闭的资源解析程序](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)
+   * [未关闭的资源解析程序](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM调整 {#jvm-tuning}
 
