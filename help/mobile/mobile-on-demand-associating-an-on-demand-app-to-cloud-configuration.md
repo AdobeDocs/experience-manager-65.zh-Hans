@@ -11,8 +11,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '391'
-ht-degree: 2%
+source-wordcount: '406'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 {{ue-over-mobile}}
 
-将按需应用程序关联到云配置可允许Adobe Experience Manager (AEM)通过建立双向链接直接与Mobile On-Demand托管项目通信。 通过将您的应用程序关联到Mobile On-Demand项目，您将能够在AEM中执行内容创建（例如文章、横幅和收藏集），还可以将该内容提供给Mobile On-Demand。
+将按需应用程序关联到云配置可允许Adobe Experience Manager (AEM)通过建立双向链接直接与Mobile On-Demand托管项目通信。 通过将您的应用程序关联到Mobile On-Demand项目，您将能够在AEM中执行内容创建（如文章、横幅和收藏集），还可以将该内容提供给Mobile On-Demand。
 
 从那里，可以发布、预览和管理内容。 您还可以将现有Mobile On-Demand内容导入AEM并执行内容编辑。
 
@@ -32,7 +32,7 @@ ht-degree: 2%
 >
 >有关详细信息，请参阅管理部分中的[设置AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md)。
 
-要配置Mobile On-DemandCloud Service，请单击应用程序仪表板中&#x200B;**管理连接**&#x200B;图块右上角的顶部齿轮。
+要配置Mobile On-Demand Cloud Services，请单击应用程序仪表板中&#x200B;**管理连接**&#x200B;图块右上角的顶部齿轮。
 
 您应该熟悉应用程序功能板和可用的磁贴。 有关更多详细信息，请参阅[AEM Mobile应用程序功能板](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
 

@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '255'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 内容概述 {#content-overview}
 
-想一想在线杂志，主要内容包括文章、广告和封面。 在AEM中可以创建三种主要类型的Mobile On-Demand内容：
+想一想在线杂志，主要内容包括文章、广告和封面。 可在AEM中创建三种主要类型的Mobile On-Demand内容：
 
 * **文章**：基于文本与艺术一起传递信息
 * **横幅：**&#x200B;通常是图形促销链接
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要详细了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/cn/digital-publishing-solution/help/design-app.html)。
+>要详细了解AEM Mobile应用程序的设计注意事项，请参阅联机帮助中的[AEM Mobile应用程序的设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)。
 
 ## 创建和管理内容 {#creating-and-managing-content}
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 * [管理横幅](/help/mobile/mobile-on-demand-managing-banners.md)
 * [管理收藏集](/help/mobile/mobile-on-demand-managing-collections.md)
 * [上传共享资源](/help/mobile/mobile-on-demand-shared-resources.md)
-* [Publish取消发布内容](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [发布取消发布内容](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 
 >[!NOTE]
 >
