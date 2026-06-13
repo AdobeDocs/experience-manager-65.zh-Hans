@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 0%
+source-wordcount: '738'
+ht-degree: 5%
 
 ---
 
 # 单点登录 {#single-sign-on}
 
-单点登录(SSO)允许用户在提供一次身份验证凭据（如用户名和密码）后访问多个系统。 独立的系统（称为可信验证器）执行验证并向Experience Manager提供用户凭据。 Experience Manager会检查并强制实施用户的访问权限（即确定允许用户访问的资源）。
+单点登录(SSO)允许用户在提供一次身份验证凭据（如用户名和密码）后访问多个系统。 另一个系统（称为可信身份验证程序）执行身份验证并向Experience Manager提供用户凭据。 Experience Manager会检查并强制用户的访问权限（即确定允许用户访问的资源）。
 
 SSO身份验证处理程序服务(`com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`)处理受信任的身份验证程序提供的身份验证结果。 SSO身份验证处理程序按以下顺序在下列位置搜索SSO标识符(SSID)作为特殊属性的值：
 
@@ -39,7 +39,7 @@ SSO身份验证处理程序服务(`com.adobe.granite.auth.sso.impl.SsoAuthentica
 
 要为AEM实例配置SSO，请配置[SSO身份验证处理程序](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler)：
 
-1. 使用AEM时，可通过多种方法管理此类服务的配置设置；请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md)以了解更多详细信息和建议的做法。
+1. 在使用 AEM 时，可通过多种方式管理这些服务的配置设置。有关更多详情与最佳做法，请参阅[配置 OSGi](/help/sites-deploying/configuring-osgi.md)。
 
    例如，对于NTLM set：
 
@@ -65,11 +65,11 @@ SSO身份验证处理程序服务(`com.adobe.granite.auth.sso.impl.SsoAuthentica
 
 >[!CAUTION]
 >
->确保如果配置了SSO，则用户无法直接访问AEM。
+>确保如果已配置了SSO，则用户无法直接访问AEM。
 >
->通过要求用户通过运行SSO系统代理的Web服务器，可以确保任何用户都不能直接发送标头、Cookie或参数，从而使其受到AEM的信任，因为如果从外部发送，代理将过滤此类信息。
+>通过要求用户通过运行SSO系统代理的Web服务器，可以确保任何用户都不能直接发送将使其受到AEM信任的标头、Cookie或参数，因为如果从外部发送，代理将过滤此类信息。
 >
->任何无需通过Web服务器即可直接访问您的AEM实例的用户都可以通过发送标头、Cookie或参数（如果名称已知）来作为任何用户。
+>任何无需通过Web服务器即可直接访问您的AEM实例的用户都可以作为任何用户操作，方法是发送标头、Cookie或参数（如果名称已知）。
 >
 >另外，请确保在标头、Cookie和请求参数名称中，您仅配置SSO设置所需的名称。
 >
@@ -80,13 +80,12 @@ SSO身份验证处理程序服务(`com.adobe.granite.auth.sso.impl.SsoAuthentica
 
 >[!NOTE]
 >
->如果您还将[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)与Microsoft® Internet Information Server (IIS)一起使用，则需要在中进行其他配置：
+>如果您还将[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)与Microsoft® Internet Information Server (IIS)一起使用，则需要在中进行其他配置：
 >
 >* `disp_iis.ini`
 >* IIS
 >
->在`disp_iis.ini`集合中：
->(有关完整详细信息，请参阅[将Dispatcher与Microsoft® Internet Information Server一起安装](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=zh-Hans#microsoft-internet-information-server))
+>在`disp_iis.ini`中，设置：>（有关完整详细信息，请参阅[使用® Internet Information Server安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html#microsoft-internet-information-server)）
 >
 >* `servervariables=1` （将IIS服务器变量作为请求标头转发到远程实例）
 >* `replaceauthorization=1` （将除“Basic”以外的任何名为“Authorization”的标头替换为其“Basic”等效标头）
@@ -154,7 +153,7 @@ Transfer-Encoding: chunked
 
 >[!NOTE]
 >
->在浏览器中使用请求参数时，您只会看到部分HTML（不带CSS）。 这是因为来自HTML的所有请求都是在不使用request参数的情况下进行的。
+>在浏览器中使用请求参数时，您只会看到一些不带CSS的HTML 。 这是因为来自HTML的所有请求都是在没有请求参数的情况下发出的。
 
 ## 删除AEM注销链接 {#removing-aem-sign-out-links}
 

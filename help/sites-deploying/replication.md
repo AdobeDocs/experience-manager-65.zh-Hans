@@ -80,7 +80,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 >* 创作代理：反向复制代理(publish_reverse)
 >* 发布代理：反向复制（发件箱）
 >
->要检查代理或队列的状态，请使用&#x200B;**工具**&#x200B;控制台。
+>要检查代理或队列的状态，请使用&#x200B;**工具**控制台。
 >请参阅[监视您的复制代理](#monitoring-your-replication-agents)。
 
 #### 复制（创作到发布） {#replication-author-to-publish}
@@ -108,7 +108,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 用于从“创作”复制到“发布”。
 
 * Dispatcher 刷新
-用于管理Dispatcher缓存。 有关详细信息，请参阅[使创作环境中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-the-authoring-environment)和[使发布实例中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-a-publishing-instance)。
+用于管理Dispatcher缓存。 有关详细信息，请参阅[使创作环境中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment)和[使发布实例中的Dispatcher缓存失效](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)。
 
 * [反向复制](#reverse-replication-publish-to-author)
 用于从Publish复制到Author。 反向复制不用于Communities功能，例如论坛、博客和评论。 由于未启用发件箱，因此该功能实际上已被禁用。 使用反向复制需要自定义配置。
@@ -334,7 +334,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   当为页面定义的时间或超时发生时，将触发自动复制（根据需要激活或停用页面）。 这主要用于Dispatcher Flush代理。
 
-* 接收时&#x200B;**&#x200B;**
+* 接收时&#x200B;****
 
   如果选中，代理将在收到复制事件时进行链式复制。
 
@@ -356,7 +356,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 >[!NOTE]
 >
->当Dispatcher处理创作或发布实例的HTTP请求时，复制代理发出的HTTP请求必须包含PATH标头。 除了以下过程之外，还必须将PATH标头添加到Dispatcher的客户端标头列表中。 请参阅[/clientheaders （客户端标头）](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#specifying-the-http-headers-to-pass-through-clientheaders)。
+>当Dispatcher处理创作或发布实例的HTTP请求时，复制代理发出的HTTP请求必须包含PATH标头。 除了以下过程之外，还必须将PATH标头添加到Dispatcher的客户端标头列表中。 请参阅[/clientheaders （客户端标头）](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders)。
 >
 
 1. 访问AEM中的&#x200B;**工具**&#x200B;选项卡。
@@ -572,7 +572,7 @@ Publisher将解压缩所有项目，保存这些项目，并向作者报告。
 1. 从左侧导航栏中，转到&#x200B;**[!UICONTROL 复制 — 作者上的代理]**，然后双击&#x200B;**[!UICONTROL 默认代理]**。
    * 您还可以通过直接转到`http://serveraddress:serverport/etc/replication/agents.author/publish.html`访问默认的发布复制代理
 1. 按复制队列上方的&#x200B;**[!UICONTROL 编辑]**&#x200B;按钮。
-1. 在以下窗口中，转到&#x200B;**[!UICONTROL 批处理]**&#x200B;选项卡：
+1. 在以下窗口中，转到&#x200B;**[!UICONTROL 批处理]**选项卡：
    ![批次复制](assets/batchreplication.png)
 1. 配置代理。
 

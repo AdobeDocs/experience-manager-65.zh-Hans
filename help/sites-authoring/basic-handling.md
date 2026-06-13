@@ -122,7 +122,7 @@ ht-degree: 41%
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=zh-Hans">Screens</a>允许您管理任何地点、任何规模的面向客户的所有屏幕。</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens</a>允许您管理任何地点、任何规模的面向客户的所有屏幕。</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -155,7 +155,7 @@ ht-degree: 41%
 
   您还可以使用[快捷键](/help/sites-authoring/keyboard-shortcuts.md) `/`（正斜杠）从任何控制台中调用搜索。
 
-* [解决方案](https://business.adobe.com/cn/)
+* [解决方案](https://business.adobe.com/)
 
   ![解决方法](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -457,7 +457,7 @@ ht-degree: 41%
 ![列表视图](assets/bh-19.png)
 
 * 列表视图列出各项资源在当前级别的信息。
-* 您可以通过点按/单击资源名称来向下导航树，并使用标题[&#128279;](/help/sites-authoring/basic-handling.md#the-header)中的痕迹导航进行备份。
+* 您可以通过点按/单击资源名称来向下导航树，并使用标题](/help/sites-authoring/basic-handling.md#the-header)中的[痕迹导航进行备份。
 
 * 要轻松选择列表中的所有项目，请使用列表左上角的复选框。
 

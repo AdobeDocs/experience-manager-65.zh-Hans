@@ -1,5 +1,5 @@
 ---
-title: 使用双向SSL复制
+title: 使用双向 SSL 进行复制
 description: 了解如何配置AEM，以便创作实例上的复制代理使用双向SSL (MSSL)连接到发布实例。 通过使用MSSL，发布实例上的复制代理和HTTP服务使用证书来相互进行身份验证。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1319'
-ht-degree: 3%
+source-wordcount: '1409'
+ht-degree: 4%
 
 ---
 
-# 使用双向SSL复制{#replicating-using-mutual-ssl}
+# 使用双向 SSL 进行复制{#replicating-using-mutual-ssl}
 
 配置AEM，以便创作实例上的复制代理使用双向SSL (MSSL)连接到发布实例。 通过使用MSSL，发布实例上的复制代理和HTTP服务使用证书来相互进行身份验证。
 
@@ -25,10 +25,10 @@ ht-degree: 3%
 1. 为创作实例和发布实例创建或获取私钥和证书。
 1. 在创作实例和发布实例上安装密钥和证书：
 
-   * 作者：作者的私钥和Publish的证书。
-   * 发布：Publish的私钥和作者的证书。 证书与通过复制代理验证的用户帐户相关联。
+   * 作者：作者的私钥和发布的证书。
+   * 发布：发布的私钥和作者的证书。 证书与通过复制代理验证的用户帐户相关联。
 
-1. 在Publish实例上配置基于Jetty的HTTP服务
+1. 在发布实例上配置基于Jetty的HTTP服务。
 1. 配置复制代理的传输和SSL属性。
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
@@ -67,7 +67,7 @@ ht-degree: 3%
 
    | 选项 | 创作 | 发布 |
    |---|---|---|
-   |  — 别名 | 作者 | 发布 |
+   |  — 别名 | author | 发布 |
    | -keystore | author.keystore | publish.keystore |
 
 1. 要导出证书，请使用下表中的选项值输入以下命令：
@@ -78,8 +78,8 @@ ht-degree: 3%
 
    | 选项 | 创作 | 发布 |
    |---|---|---|
-   |  — 别名 | 作者 | 发布 |
-   | -file | author.cer | publish.cer |
+   |  — 别名 | author | 发布 |
+   | -file | 作者.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
 ### pkcs#12格式 {#pkcs-format}
@@ -119,7 +119,7 @@ ht-degree: 3%
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -in | author_request.csr | publish_request.csr |
-   | -out | author.cer | publish.cer |
+   | -out | 作者.cer | publish.cer |
 
 1. 要将私钥和签名证书添加到pkcs#12文件中，请使用下表中的选项值输入以下命令：
 
@@ -131,8 +131,8 @@ ht-degree: 3%
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
-   | -in | author.cer | publish.cer |
-   | -name | 作者 | 发布 |
+   | -in | 作者.cer | publish.cer |
+   | -name | author | 发布 |
 
 ## 在作者上安装私钥和TrustStore {#install-the-private-key-and-truststore-on-author}
 
@@ -162,7 +162,7 @@ ht-degree: 3%
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### 安装Publish证书 {#install-the-publish-certificate}
+### 安装发布证书 {#install-the-publish-certificate}
 
 1. 打开创作实例的“用户管理”页面。 ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. 要打开用户帐户的属性，请单击您的用户名。
@@ -177,7 +177,7 @@ ht-degree: 3%
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-## 在Publish上安装私钥和TrustStore {#install-private-key-and-truststore-on-publish}
+## 在发布时安装私钥和TrustStore {#install-private-key-and-truststore-on-publish}
 
 在发布实例上安装以下项目：
 
@@ -186,7 +186,7 @@ ht-degree: 3%
 
 要执行以下过程，您必须以发布实例管理员身份登录。
 
-### 安装Publish私钥 {#install-the-publish-private-key}
+### 安装发布私钥 {#install-the-publish-private-key}
 
 1. 打开发布实例的“用户管理”页面。 ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. 要打开用户帐户的属性，请单击您的用户名。
@@ -206,13 +206,13 @@ ht-degree: 3%
 1. 确保选中将证书映射到用户选项。 单击“选择证书文件”，选择“author.cer”，然后单击“打开”。
 1. 单击“提交”，然后关闭“TrustStore管理”对话框。
 
-## 在Publish上配置HTTP服务 {#configure-the-http-service-on-publish}
+## 在发布时配置HTTP服务 {#configure-the-http-service-on-publish}
 
 在发布实例上配置基于Apache Felix Jetty的HTTP服务的属性，以便在访问Granite Keystore时使用该服务。 服务的PID为`org.apache.felix.http`。
 
 下表列出了配置是否使用Web控制台时需要配置的OSGi属性。
 
-| Web控制台上的属性名称 | OSGi 属性名称 | 价值 |
+| Web控制台上的属性名称 | OSGi 属性名称 | 值 |
 |---|---|---|
 | 启用HTTPS | org.apache.felix.https.enable | true |
 | 启用HTTPS以使用Granite KeyStore | org.apache.felix.https.use.granite.keystore | true |
@@ -229,7 +229,7 @@ ht-degree: 3%
  <tbody>
   <tr>
    <th>属性</th>
-   <th>价值</th>
+   <th>值</th>
   </tr>
   <tr>
    <td>URI</td>

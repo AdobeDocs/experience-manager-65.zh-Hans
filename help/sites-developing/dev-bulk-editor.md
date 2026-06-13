@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1833'
-ht-degree: 1%
+source-wordcount: '1830'
+ht-degree: 2%
 
 ---
 
@@ -163,15 +163,15 @@ ht-degree: 1%
 
 ### 开发基于批量编辑器的组件：产品列表组件 {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-本节概述了如何使用批量编辑器，并介绍了基于批量编辑器的现有Geometrixx组件：产品列表组件。
+本节概述如何使用批量编辑器，并介绍基于批量编辑器的现有Geometrixx组件：产品列表组件。
 
-利用产品列表组件，用户可显示和编辑数据表。 例如，您可以使用产品列表组件表示目录中的产品。 该信息显示在标准HTML表中，并且任何编辑操作都在&#x200B;**编辑**&#x200B;对话框中执行，该对话框包含BulkEditor构件。 (此批量编辑器与在/etc/importers/bulkeditor.html上或通过“工具”菜单访问的编辑器相同)。 产品列表组件已针对特定的有限批量编辑器功能进行了配置。 可以配置批量编辑器的每个部分（或从批量编辑器派生的组件）。
+利用产品列表组件，用户可显示和编辑数据表。 例如，您可以使用产品列表组件表示目录中的产品。 该信息显示在标准HTML表中，并且任何编辑操作都在&#x200B;**编辑**&#x200B;对话框中执行，该对话框包含BulkEditor小组件。 （此批量编辑器与在/etc/importers/bulkeditor.html上或通过“工具”菜单访问的编辑器相同）。 产品列表组件已针对特定的有限批量编辑器功能进行了配置。 可以配置批量编辑器的每个部分（或从批量编辑器派生的组件）。
 
 使用批量编辑器，您可以添加、修改、删除、过滤和导出行，保存修改并导入一组行。 每一行都作为节点存储在Product List组件实例本身下。 每个单元格都是每个节点的属性。 这是一种设计选择，可以轻松进行更改，例如，您可以将节点存储在存储库中的其他位置。 查询servlet的角色是返回要显示的节点列表；搜索路径被定义为产品列表实例。
 
 产品列表组件的源代码位于存储库/apps/geometrixx/components/productlist中，它由若干部分组成，如所有Adobe Experience Manager (AEM)组件：
 
-* HTML渲染：渲染在JSP文件(/apps/geometrixx/components/productlist/productlist.jsp)中完成。 JSP读取当前Product List组件的子节点，并将每个子节点显示为HTML表的行。
+* HTML渲染：渲染在JSP文件(/apps/geometrixx/components/productlist/productlist.jsp)中完成。 JSP读取当前“产品列表”组件的子节点，并将每个子节点显示为HTML表中的一行。
 * “编辑”对话框，可在其中定义批量编辑器配置。 配置对话框以符合组件的需要：可用列以及对网格或搜索可能执行的操作。 有关所有配置属性的信息，请参阅[批量编辑器配置属性](#bulk-editor-configuration-properties)。
 
 以下是对话框子节点的XML表示形式：
@@ -433,7 +433,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>colsMetadata</td>
-   <td>列元数据配置。 可能的属性（应用于列的所有单元格）： <br />
+   <td>列元数据配置。可能的属性（应用于列的所有单元格）： <br />
     <ul>
      <li>cellStyle： html样式 </li>
      <li>cellCls： css类 </li>
@@ -459,7 +459,7 @@ CSS和只读列
 批量编辑器具有三个列配置：
 
 * 单元格CSS类名称(cellCls)：添加到已配置列的每个单元格的CSS类名称。
-* 单元格样式(cellStyle)：添加到已配置列的每个单元格的HTML样式。
+* 单元格样式(cellStyle)：一种HTML样式，添加到已配置列的每个单元格中。
 * 只读(readOnly)：为已配置列的每个单元格设置只读。
 
 配置必须定义为以下配置：
@@ -529,7 +529,7 @@ CSS和只读列
 
 在产品列表组件用例中，发送到查询servlet的两个参数如下：
 
-* 查询： &quot;path：/content/geometrixx/en/customers/jcr：content/par/productlist Cube&quot;
+* 查询： &quot;path：/content/geometrixx/en/customers/jcr:content/par/productlist Cube&quot;
 * 列：“Selection、ProductId、ProductName、Color、CatalogCode、SellingSku”
 
 并且JSON流返回如下：
@@ -555,7 +555,7 @@ CSS和只读列
 
 ### 保存Servlet {#save-servlet}
 
-在批量编辑器的默认配置中，每一行都是一个节点，此节点的路径存储在行记录中。 批量编辑器通过jcr路径保持行和节点之间的链接。 当用户编辑网格时，将生成所有修改的列表。 当用户单击&#x200B;**保存**&#x200B;时，将会向每个路径发送一个POST查询，其中具有更新的属性值。 这是Sling概念的基础，如果每个单元格是节点的属性，则它工作正常。 但是，如果实施查询Servlet来执行继承计算，则该模型无法工作，因为查询Servlet返回的属性可以从其他节点继承。
+在批量编辑器的默认配置中，每一行都是一个节点，此节点的路径存储在行记录中。 批量编辑器通过jcr路径保持行和节点之间的链接。 当用户编辑网格时，将生成所有修改的列表。 当用户单击&#x200B;**保存**&#x200B;时，将会向每个路径发送一个包含更新属性值的POST查询。 这是Sling概念的基础，如果每个单元格是节点的属性，则它工作正常。 但是，如果实施查询Servlet来执行继承计算，则该模型无法工作，因为查询Servlet返回的属性可以从其他节点继承。
 
 保存Servlet的概念是，修改不会直接发布到每个节点，而是发布到执行保存作业的一个Servlet。 这使此servlet能够分析修改并将属性保存在正确的节点上。
 
@@ -563,7 +563,7 @@ CSS和只读列
 
 * 参数名称： &lt;jcr path>/&lt;property name>
 
-  示例： /content/geometrixx/en/products/jcr：content/par/productlist/1258674859000/SellingSku
+  示例： /content/geometrixx/en/products/jcr:content/par/productlist/1258674859000/SellingSku
 
 * 值： &lt;值>
 
@@ -573,4 +573,4 @@ servlet需要知道catalogCode属性的存储位置。
 
 /libs/wcm/bulkeditor/save/POST.jsp上提供了默认的保存Servlet实施，该实施用在产品列表组件中。 它采用请求中的所有参数（采用&lt;jcr path>/&lt;property name>格式）并使用JCR API在节点上写入属性。 如果节点不存在，它还会创建节点（网格插入行）。
 
-请勿按原样使用默认代码，因为它重新实现了服务器本地的功能(&lt;jcr path>/&lt;property name>上的POST)，因此只是一个很好的起点，可让您构建可管理属性继承模型的保存servlet。
+请不要按原样使用默认代码，因为它重新实现了服务器本地的功能（&lt;jcr path>/&lt;property name>上的POST），因此只是一个很好的起点，用于构建可管理属性继承模型的保存servlet。
