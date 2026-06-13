@@ -404,7 +404,7 @@ Dynamic Media集成使用以下脚本：
     </ul>
     <div>
       中介绍了锐化
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">锐化图像</a>。
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=zh-Hans">锐化图像</a>。
     </div> </td>
   </tr>
   <tr>
@@ -424,7 +424,7 @@ Dynamic Media集成使用以下脚本：
   </tr>
   <tr>
    <td><strong>图像修饰符</strong></td>
-   <td><p>除了UI中可用的常见图像设置之外，Dynamic Media还支持您可以在<strong>图像修饰符</strong>字段中指定的大量高级图像修改。 这些参数在<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">图像服务器协议命令引用</a>中定义。</p> <p>重要信息：不支持API中列出的以下功能：</p>
+   <td><p>除了UI中可用的常见图像设置之外，Dynamic Media还支持您可以在<strong>图像修饰符</strong>字段中指定的大量高级图像修改。 这些参数在<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans#image-serving-api">图像服务器协议命令引用</a>中定义。</p> <p>重要信息：不支持API中列出的以下功能：</p>
     <ul>
      <li>基本模板化和文本渲染命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code>和 <code>req=xlate</code></li>
@@ -441,7 +441,7 @@ Dynamic Media集成使用以下脚本：
 
 ## 使用图像修饰符定义图像预设选项 {#defining-image-preset-options-with-image-modifiers}
 
-除了“基本”和“高级”选项卡中可用的选项外，您还可以定义图像修饰符，以便在定义图像预设时为您提供更多选项。 图像渲染依赖在[HTTP协议引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api)中详细定义的图像渲染API。
+除了“基本”和“高级”选项卡中可用的选项外，您还可以定义图像修饰符，以便在定义图像预设时为您提供更多选项。 图像渲染依赖在[HTTP协议引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans#image-serving-api)中详细定义的图像渲染API。
 
 以下是一些使用图像修饰符可以执行操作的基本示例。
 
@@ -449,7 +449,7 @@ Dynamic Media集成使用以下脚本：
 >
 >某些图像修饰符[不能在Experience Manager](#advanced-tab-options)中使用。
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) — 反转每个颜色组件以获得负图像效果。
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=zh-Hans#image-serving-api) — 反转每个颜色组件以获得负图像效果。
 
   ```xml
   &op_invert=1
@@ -457,7 +457,7 @@ Dynamic Media集成使用以下脚本：
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) — 将模糊滤镜应用于图像。
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=zh-Hans#image-serving-api) — 将模糊滤镜应用于图像。
 
   ```xml
   &op_blur=7
@@ -473,7 +473,7 @@ Dynamic Media集成使用以下脚本：
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) — 降低或增加亮度。
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=zh-Hans#image-serving-api) — 降低或增加亮度。
 
   ```xml
   &op_brightness=58
@@ -481,7 +481,7 @@ Dynamic Media集成使用以下脚本：
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) — 调整图像不透明度。 用于降低前景不透明度。
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=zh-Hans#image-serving-api) — 调整图像不透明度。 用于降低前景不透明度。
 
   ```xml
   opac=29
