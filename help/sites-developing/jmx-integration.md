@@ -1,5 +1,5 @@
 ---
-title: 将服务与JMX控制台集成
+title: 将服务与 JMX 控制台集成
 description: 公开服务属性和操作，以便能够使用JMX控制台创建和部署用于管理服务的MBean来执行管理任务
 topic-tags: extending-aem
 content-type: reference
@@ -9,12 +9,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
 
-# 将服务与JMX控制台集成{#integrating-services-with-the-jmx-console}
+# 将服务与 JMX 控制台集成{#integrating-services-with-the-jmx-console}
 
 创建并部署MBean以使用JMX控制台管理服务。 公开服务属性和操作，以便执行管理任务。
 

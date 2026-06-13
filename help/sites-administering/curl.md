@@ -1,5 +1,5 @@
 ---
-title: 在AEM中使用cURL
+title: 在 AEM 中使用 cURL
 description: 了解如何将cURL用于常见的Adobe Experience Manager任务。
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 12b370e3041ff179cd249f3d4e6ef584c4339909
 workflow-type: tm+mt
-source-wordcount: '1061'
-ht-degree: 1%
+source-wordcount: '1071'
+ht-degree: 3%
 
 ---
 
-# 在AEM中使用cURL{#using-curl-with-aem}
+# 在 AEM 中使用 cURL{#using-curl-with-aem}
 
 管理员通常需要自动执行或简化任何系统中的常见任务。 例如，在AEM中，管理用户、安装包和管理OSGi捆绑包是通常必须完成的任务。
 
@@ -223,7 +223,7 @@ curl -u <user>:<password> -FdeleteAuthorizable= http://localhost:4502/home/group
 
 有关详细信息，请参阅[备份和还原](/help/sites-administering/backup-and-restore.md#automating-aem-online-backup)。
 
-### osgi {#osgi}
+### OSGi {#osgi}
 
 #### 启动捆绑包 {#starting-a-bundle}
 
@@ -284,7 +284,7 @@ curl -u <user>:<password> -F "cmd=pause" -F "name=publish"  http://localhost:450
 curl -u <user>:<password> -F "cmd=clear" -F "name=publish"  http://localhost:4502/etc/replication/agents.author/publish/jcr:content.queue.json
 ```
 
-### 社区 {#communities}
+### Communities {#communities}
 
 #### 分配和撤销徽章 {#assign-and-revoke-badges}
 

@@ -12,7 +12,7 @@ feature: Authoring
 role: User,Admin,Developer
 source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
 workflow-type: tm+mt
-source-wordcount: '1540'
+source-wordcount: '1558'
 ht-degree: 63%
 
 ---
@@ -43,13 +43,13 @@ ht-degree: 63%
 
 * 对文件夹中的页面重新排序
 
-   * 这可以在[列表视图](/help/sites-authoring/basic-handling.md#list-view)中完成。更改已应用并在其他视图中可见。
+   * 这可以在[列表视图](/help/sites-authoring/basic-handling.md#list-view)中完成。 更改已应用并在其他视图中可见。
 
 #### 页面创作 {#page-authoring}
 
 * 导航链接
 
-   * 当您处于&#x200B;***编辑***&#x200B;模式下时，**链接不可用于导航**。若要使用链接进行导航，您需要使用以下任一方式[预览页面](/help/sites-authoring/editing-content.md#previewing-pages)：
+   * 当您处于&#x200B;***编辑***&#x200B;模式下时，**链接不可用于导航**。 若要使用链接进行导航，您需要使用以下任一方式[预览页面](/help/sites-authoring/editing-content.md#previewing-pages)：
 
       * [预览模式](/help/sites-authoring/editing-content.md#preview-mode)
       * [以发布的形式查看](/help/sites-authoring/editing-content.md#view-as-published)
@@ -68,7 +68,7 @@ ht-degree: 63%
 
 查找页面时存在很多方面；您可以导航和/或搜索：
 
-1. 打开&#x200B;**站点**&#x200B;控制台（使用&#x200B;**全局导航**&#x200B;中的[站点](/help/sites-authoring/basic-handling.md#global-navigation)选项） — 此操作将在您选择Adobe Experience Manager链接（左上方）时触发（下拉列表）。
+1. 打开&#x200B;**站点**&#x200B;控制台（使用[全局导航](/help/sites-authoring/basic-handling.md#global-navigation)中的&#x200B;**站点**&#x200B;选项） — 此操作将在您选择Adobe Experience Manager链接（左上方）时触发（下拉列表）。
 
 1. 通过点按/单击相应的页面，在树中向下导航。 页面资源的显示方式取决于您使用的视图 — [卡片、列表或列](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)：
 
@@ -78,7 +78,7 @@ ht-degree: 63%
 
    ![qgtap-01](assets/qgtap-01.png)
 
-1. 您还可以[搜索](/help/sites-authoring/search.md)页面。您可以从所显示的结果中选择页面。
+1. 您还可以[搜索](/help/sites-authoring/search.md)页面。 您可以从所显示的结果中选择页面。
 
    ![qgtap-03](assets/qgtap-03.png)
 
@@ -91,11 +91,11 @@ ht-degree: 63%
 
    ![qgtap-02](assets/qgtap-02.png)
 
-1. 这将打开向导，逐步指导您收集[创建新页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)时所需的信息。按照屏幕上的说明操作。
+1. 这将打开向导，逐步指导您收集[创建新页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)时所需的信息。 按照屏幕上的说明操作。
 
 ### 选择页面以执行其他操作 {#selecting-your-page-for-further-action}
 
-您可以选择一个页面，以对其执行操作。选择页面后，工具栏将自动更新，以显示与该资源相关的操作。
+您可以选择一个页面，以对其执行操作。 选择页面后，工具栏将自动更新，以显示与该资源相关的操作。
 
 选择页面的方式取决于您在控制台中所使用的视图：
 
@@ -178,7 +178,7 @@ ht-degree: 63%
 
    >[!NOTE]
    >
-   >您可以将组件&#x200B;**粘贴**&#x200B;到同一页面或其他页面。如果在剪切/复制操作之前粘贴到已打开的其他页面，则表明该页面需要刷新。
+   >您可以将组件&#x200B;**粘贴**&#x200B;到同一页面或其他页面。 如果在剪切/复制操作之前粘贴到已打开的其他页面，则表明该页面需要刷新。
 
    * [删除](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)组件：
 
@@ -186,7 +186,7 @@ ht-degree: 63%
 
    * 向页面[添加注释](/help/sites-authoring/annotations.md#annotations)：
 
-      * 选择&#x200B;**注释**&#x200B;模式（对话气泡图标）。使用&#x200B;**添加注释**（加号）图标添加注释。使用右上方的 X 退出注释模式。
+      * 选择&#x200B;**注释**&#x200B;模式（对话气泡图标）。 使用&#x200B;**添加注释**（加号）图标添加注释。 使用右上方的 X 退出注释模式。
 
      ![批注](do-not-localize/screen_shot_2018-03-21at160813.png)
 
@@ -214,7 +214,7 @@ ht-degree: 63%
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
-   1. 页面属性会显示。您可以进行需要的更新，然后使用“保存”保留这些更改
+   1. 页面属性会显示。 您可以进行需要的更新，然后使用“保存”保留这些更改
 
 * 在[编辑页面](#editing-your-page-content)时：
 
@@ -282,7 +282,7 @@ ht-degree: 63%
 
 ### 锁定页面（然后解锁） {#locking-your-page-then-unlocking}
 
-[锁定页面](/help/sites-authoring/editing-content.md#locking-a-page) ，可阻止其他作者在您处理页面时对其进行处理。可以找到“锁定”（和“解锁”）图标／按钮：
+[锁定页面](/help/sites-authoring/editing-content.md#locking-a-page) ，可阻止其他作者在您处理页面时对其进行处理。 可以找到“锁定”（和“解锁”）图标／按钮：
 
 * [选择页面](#selecting-your-page-for-further-action)后显示的工具栏。
 * 编辑页面时显示的[“页面信息”下拉菜单](#editing-the-page-properties)。
