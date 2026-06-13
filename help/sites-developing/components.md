@@ -31,7 +31,7 @@ ht-degree: 54%
 * 拥有标准化的用户界面。
 * 具有可配置的编辑行为。
 * 使用使用基于Granite UI组件的子元素构建的对话框
-* 使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)（推荐）或JSP开发。
+* 使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)（推荐）或JSP开发。
 * 可以开发以创建扩展默认功能的自定义组件。
 
 由于组件是模块化的，因此您可以：
@@ -63,7 +63,7 @@ AEM附带各种[现成的组件](/help/sites-authoring/default-components.md)，
 
 提供了两组Adobe提供的AEM组件：
 
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [基础组件](/help/sites-authoring/default-components-foundation.md)
 
 **核心组件**&#x200B;是随AEM 6.3引入的，它提供了灵活且丰富的创作功能。 [We.Retail参考网站](/help/sites-developing/we-retail.md)说明了如何使用核心组件，并代表了组件开发的当前最佳实践。
@@ -72,7 +72,7 @@ AEM附带各种[现成的组件](/help/sites-authoring/default-components.md)，
 
 >[!NOTE]
 >
->[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)表示组件设计和开发的当前最佳实践，并用作参考实施。
+>[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)表示组件设计和开发的当前最佳实践，并用作参考实施。
 >
 >[AEM现代化工具](modernization-tools.md)可以帮助迁移到核心组件。
 
@@ -105,7 +105,7 @@ AEM附带各种[现成的组件](/help/sites-authoring/default-components.md)，
 * [内容片段组件](/help/sites-developing/components-content-fragments.md)
 * [以 JSON 格式获取页面信息](/help/sites-developing/pageinfo.md)
 * [国际化组件](/help/sites-developing/i18n.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [使用隐藏条件](/help/sites-developing/hide-conditions.md)
 * 经典 UI
 
