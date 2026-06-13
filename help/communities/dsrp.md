@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '589'
-ht-degree: 0%
+source-wordcount: '628'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +37,7 @@ ht-degree: 0%
 
 ### MySQL配置 {#mysql-configuration}
 
-通过使用不同的数据库（模式）名称和不同的连接（服务器：端口），可以在同一连接池中的启用功能和公用存储(DSRP)之间共享MySQL安装。
+通过使用不同的数据库（架构）名称和不同的连接（服务器:port），可以在同一连接池中的启用功能和公用存储(DSRP)之间共享MySQL安装。
 
 有关安装和配置详细信息，请参阅[DSRP的MySQL配置](dsrp-mysql.md)。
 
@@ -68,7 +68,7 @@ ht-degree: 0%
 
      >[!NOTE]
      >
-     >默认存储配置现在存储在conf路径(`/conf/global/settings/community/srpc/defaultconfiguration`)中      而不是`etc`路径(`/etc/socialconfig/srpc/defaultconfiguration`)。 建议您按照[迁移步骤](#zerodt-migration-steps)操作，以使defaultsrp按预期工作。
+     >默认存储配置现在存储在conf路径(`/conf/global/settings/community/srpc/defaultconfiguration`)中，而不是`etc`路径(`/etc/socialconfig/srpc/defaultconfiguration`)中。 建议您按照[迁移步骤](#zerodt-migration-steps)操作，以使defaultsrp按预期工作。
 
   ![dsrp-config](assets/dsrp-config.png)
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
    * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)主机**
 
-     如果使用内部ZooKeeper运行Solr，则将此值留空。 否则，在使用外部ZooKeeper的[SolrCloud模式](solr.md#solrcloud-mode)中运行时，请将此值设置为ZooKeeper的URI，如&#x200B;*my.server.com:80*
+     如果使用内部ZooKeeper运行Solr，则将此值留空。 否则，在使用外部ZooKeeper在[SolrCloud模式](solr.md#solrcloud-mode)中运行时，将此值设置为ZooKeeper的URI，如&#x200B;*my.server.com:80*
 
      *默认*： *&lt;空白>*
 
@@ -110,7 +110,7 @@ ht-degree: 0%
 要确保defaultsrp页面[http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)按预期工作，请执行以下步骤：
 
 1. 将`/etc/socialconfig`处的路径重命名为`/etc/socialconfig_old`，以便系统配置回退到jsrp（默认）。
-1. 转到配置jsrp的defaultsrp页面[http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)。 单击&#x200B;**[!UICONTROL 提交]**&#x200B;按钮，以便在`/conf/global/settings/community/srpc`创建新的默认配置节点。
+1. 转到defaultsrp页面[http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)，其中配置了jsrp。 单击&#x200B;**[!UICONTROL 提交]**&#x200B;按钮，以便在`/conf/global/settings/community/srpc`创建新的默认配置节点。
 1. 删除已创建的默认配置`/conf/global/settings/community/srpc/defaultconfiguration`。
 1. 复制旧配置`/etc/socialconfig_old/srpc/defaultconfiguration`以替换上一步骤中删除的节点(`/conf/global/settings/community/srpc/defaultconfiguration`)。
 1. 删除旧`etc`节点`/etc/socialconfig_old`。

@@ -1,5 +1,5 @@
 ---
-title: 骨干交互
+title: Backbone 交互
 description: 有关在AEM Forms Workspace中使用骨干JavaScript模型的概念信息。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
 
-# 骨干交互{#backbone-interaction}
+# Backbone 交互{#backbone-interaction}
 
 Backbone是一个库，它有助于在Web应用程序中创建和遵循MVC架构。 Backbone的基本思想是将界面组织为逻辑视图，以模型为后盾，每个模型都可以在模型更改时独立更新，而无需重新绘制页面。 有关主干的更多信息，请参阅[https://backbonejs.org](https://backbonejs.org/)。
 

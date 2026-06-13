@@ -12,27 +12,27 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3301'
 ht-degree: 0%
 
 ---
 
-# 关于Document Security {#about-document-security}
+# 关于文档安全 {#about-document-security}
 
 Document Security确保只有授权用户才能使用您的文档。 使用Document Security，您可以安全地分发以支持的格式保存的任何信息。 支持的文件格式包括：
 
 * Adobe PDF文件
-* Microsoft®Word、Excel和PowerPoint文件
+* ®Word、Excel和PowerPoint文件
 
-有关策略如何保护支持的文件类型的详细信息，请参阅[更多Document Security信息](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=zh-Hans)。
+有关策略如何保护支持的文件类型的详细信息，请参阅[更多Document Security信息](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en)。
 
 使用Document Security，您可以轻松创建、存储预定义机密性设置并将其应用于文档。 为了防止信息超出您的覆盖范围，您还可以监控和控制在您分发文档后收件人如何使用您的文档。
 
-您可以使用策略保护文档。 *策略*&#x200B;是包含机密性设置和授权用户列表的信息的集合。您在策略中指定的机密性设置确定收件人如何使用您应用策略的文档。 例如，您可以指定收件人是否可以打印或复制文本、编辑文本或者向受保护文档添加签名和注释。
+您可以使用策略保护文档。 *策略*&#x200B;是包含机密性设置和授权用户列表的信息的集合。 您在策略中指定的机密性设置确定收件人如何使用您应用策略的文档。 例如，您可以指定收件人是否可以打印或复制文本、编辑文本或者向受保护文档添加签名和注释。
 
 Document Security用户通过最终用户网页创建策略。 管理员使用Document Security网页创建策略集，策略集包含可供所有授权用户使用的共享策略。
 
-虽然策略存储在Document Security中，但您可以通过客户端应用程序将它们应用到文档。 *Acrobat帮助*&#x200B;中详细介绍了如何将策略应用于PDF文档。 有关使用其他应用程序(如Microsoft® Office)应用策略的信息，请参阅该应用程序的&#x200B;*Acrobat Reader DC扩展帮助*。
+虽然策略存储在Document Security中，但您可以通过客户端应用程序将它们应用到文档。 *PDF帮助*&#x200B;中详细介绍了如何将策略应用到Acrobat文档。 使用其他应用程序（如® Office）来应用策略，记录在应用程序的&#x200B;*Acrobat Reader DC扩展帮助*&#x200B;中。
 
 将策略应用到文档时，策略中指定的机密性设置保护文档包含的信息。 机密性设置还可以保护PDF文档中的任何文件（文本、音频或视频）。 您可以将受策略保护的文档分发给策略授权的收件人。
 
@@ -149,7 +149,7 @@ Document Security管理员可以使用“用户管理”中的以下权限创建
 
 *策略*&#x200B;定义了一组机密性设置以及可以访问应用了该策略的文档的用户。 策略还允许动态更改文档的权限。 它授予文档安全人员更改机密性设置的权限，以撤销对文档的访问权限或切换策略。
 
-可以使用Adobe Acrobat®Pro和Acrobat Standard将策略保护应用于PDF文档。 使用安装了相应Acrobat Reader DC扩展的客户端应用程序，可以将策略保护应用于其他文件类型，如Microsoft®Word、Excel和PowerPoint文件。
+通过使用® Pro和Acrobat Standard，可以将策略保护应用于PDF文档。 使用安装了相应Acrobat Reader DC扩展的客户端应用程序，可以将策略保护应用于其他文件类型，如®Word、Excel和PowerPoint文件。
 
 ### 策略的工作方式 {#how-policies-work}
 
@@ -159,12 +159,12 @@ Document Security管理员可以使用“用户管理”中的以下权限创建
 
 >[!NOTE]
 >
->通过策略应用的机密性设置会覆盖可能已使用密码或证书安全选项应用于Acrobat中的PDF文档的任何设置。 (有关更多信息，请参阅Acrobat帮助。)
+>通过策略应用的机密性设置会通过使用密码或证书安全选项覆盖可能已应用于Acrobat中的PDF文档的任何设置。 （有关更多信息，请参阅Acrobat帮助。）
 
 用户和管理员通过Document Security网页创建策略。 一次只能将一个策略应用于文档。 可以使用以下方法之一应用策略：
 
 * 在Acrobat或其他客户端应用程序中打开文档，然后选择策略以保护文档。
-* 在Microsoft® Outlook中将文档作为电子邮件附件发送。 在这种情况下，您可以从策略列表中选择策略。 或者，您可以选择由Acrobat创建的自动生成的策略，该策略具有默认机密性设置集，以便仅为电子邮件收件人保护文档。
+* 在® Outlook中将文档作为电子邮件附件发送。 在这种情况下，您可以从策略列表中选择策略。 或者，您可以选择由Acrobat创建的自动生成的策略，该策略具有默认机密性设置集，以便仅为电子邮件收件人保护文档。
 
 可以使用客户端应用程序从文档中删除策略。
 
@@ -176,15 +176,15 @@ Document Security管理员可以使用“用户管理”中的以下权限创建
 1. Document Security会创建文档许可证和文档密钥，并对策略进行加密。 文档许可证、加密策略和文档密钥将返回到客户端应用程序。
 1. 使用文档密钥加密文档，并且文档密钥被丢弃。 文档现在嵌入了许可证和策略。 这些任务在支持的客户端应用程序中执行。
 
-将策略应用到文档时，该文档中包含的信息，包括PDF文档中包含的任何文件（文本、音频或视频），均受策略中指定的机密性设置保护。 Document Security生成许可证和加密信息，然后嵌入到文档中。 当您分发文档时，document security可以对尝试打开文档的收件人进行身份验证，并根据策略中指定的权限授权访问。
+将策略应用到文档时，该文档中包含的信息，包括PDF文档中包含的任何文件（文本、音频或视频），均受策略中指定的机密性设置的保护。 Document Security生成许可证和加密信息，然后嵌入到文档中。 当您分发文档时，document security可以对尝试打开文档的收件人进行身份验证，并根据策略中指定的权限授权访问。
 
 如果启用了离线使用，则收件人还可以在策略指定的时间段内离线使用受策略保护的文档（没有活动的Internet或网络连接）。
 
 ### 受策略保护的文档的工作方式 {#how-policy-protected-documents-work}
 
-要打开和使用受策略保护的文档，策略必须包括您的姓名作为收件人，并且您必须拥有有效的Document Security帐户。 对于PDF文档，您需要Acrobat或Adobe Reader®。 对于其他文件类型，您需要为安装了Acrobat Reader DC扩展的文件安装适当的应用程序。
+要打开和使用受策略保护的文档，策略必须包括您的姓名作为收件人，并且您必须拥有有效的Document Security帐户。 对于PDF文档，您需要Acrobat或Adobe Reader®。 对于其他文件类型，您需要安装有Acrobat Reader DC Extensions的相应文件应用程序。
 
-当您打开受策略保护的文档时，Acrobat、Adobe Reader或Acrobat Reader DC Extensions会连接到Document Security以验证您的身份。 然后，您可以继续登录。 如果正在审核文档使用情况，则会显示通知消息。 在文档安全确定要授予哪些文档权限后，它管理文档的解密。 然后，您可以根据策略机密性设置使用该文档。
+打开受策略保护的文档时，Acrobat、Adobe Reader或Acrobat Reader DC Extensions会连接到Document Security以验证您的身份。 然后，您可以继续登录。 如果正在审核文档使用情况，则会显示通知消息。 在文档安全确定要授予哪些文档权限后，它管理文档的解密。 然后，您可以根据策略机密性设置使用该文档。
 
 ![rm_psopen_online](assets/rm_psopen_online.png)
 
@@ -231,11 +231,11 @@ Document Security管理员可以使用“用户管理”中的以下权限创建
 
 安装Document Security后，将创建一个名为&#x200B;*全局策略集*&#x200B;的默认策略集。 安装软件的管理员管理此策略集。
 
-## 最佳实践 {#best-practices}
+## 最佳做法 {#best-practices}
 
 策略是可应用于各种文档的可重用权限和用户组集。 对于受保护的文档。 这些策略可确保只有授权用户才能使用允许的功能。 随着一个部门中不同用户角色和文档的增加，策略和策略集的数量预计会增加。 要创建和管理策略，以下是一些注意事项和最佳实践：
 
-* **创建可重用的策略：** Adobe建议在各种文档间重用策略。 它有助于将策略数量保持在最小，提供最佳性能，并使策略管理更加容易。 要创建可重用策略，请执行以下操作：
+* **创建可重用策略：** Adobe建议在各种文档中重用策略。 它有助于将策略数量保持在最小，提供最佳性能，并使策略管理更加容易。 要创建可重用策略，请执行以下操作：
 
 1. 在部门和组织级别确定和定义访问控制要求。
 
@@ -251,7 +251,7 @@ Document Security管理员可以使用“用户管理”中的以下权限创建
 
   使用策略集可以更轻松地向组织或部门中的特定用户分配和管理相关策略。 例如，为财务和人力资源部门单独设置政策有助于轻松管理相关政策，并将其应用于为相应部门指定的文件。
 
-* **使用外部授权程序动态应用权限：**&#x200B;您可以使用[外部授权程序](https://help.adobe.com/zh_CN/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)根据外部条件评估和动态应用权限。 在根据外部条件动态评估权限时，您可以：
+* **使用外部授权程序动态应用权限：**&#x200B;您可以使用[外部授权程序](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)根据外部条件评估和动态应用权限。 在根据外部条件动态评估权限时，您可以：
 
    * 为组织中的文档提供集中访问控制。
 
@@ -259,7 +259,7 @@ Document Security管理员可以使用“用户管理”中的以下权限创建
 
    * 使用内容管理系统使用的访问控制机制，以及标准策略评估过程。 例如，当服务确定用户是否可以打印受策略保护的文档时，它可以使用标准策略评估过程。 此外，它还可以使用内容管理系统使用的访问控制机制。
 
-  虽然可以使用外部授权处理程序完全替换Document Security策略评估流程，但建议您在策略评估流程中使用外部授权处理程序。 因此，可以使用与内容管理系统相同的控制机制来控制文档访问。 例如，当Document Security服务确定用户是否可以打印受策略保护的文档时，它使用标准策略评估流程。 它还使用内容管理系统使用的访问控制机制。 有关详细信息，请参阅[创建外部授权处理程序](https://help.adobe.com/zh_CN/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)。
+  虽然可以使用外部授权处理程序完全替换Document Security策略评估流程，但建议您在策略评估流程中使用外部授权处理程序。 因此，可以使用与内容管理系统相同的控制机制来控制文档访问。 例如，当Document Security服务确定用户是否可以打印受策略保护的文档时，它使用标准策略评估流程。 它还使用内容管理系统使用的访问控制机制。 有关详细信息，请参阅[创建外部授权处理程序](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)。
 
 * **将策略集保留为有限数：**&#x200B;有几个因素会导致策略和策略集不断增长。 一些常见因素包括：
 

@@ -11,8 +11,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 5%
+source-wordcount: '696'
+ht-degree: 4%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 5%
 
 ## 概述 {#overview}
 
-当成员与社区功能交互时，会发送可触发异步侦听器的OSGi事件，例如通知或游戏化（评分和徽章）。
+当成员与社区功能交互时，会发送可触发异步侦听器的OSGi事件，例如通知或gamification（评分和徽章）。
 
 组件的[SocialEvent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/scf/core/SocialEvent.html)实例将事件记录为`topic`发生的`actions`。 SocialEvent包含用于返回与操作关联的`verb`的方法。 `actions`和`verbs`之间存在&#x200B;*n-1*&#x200B;关系。
 
@@ -78,7 +78,7 @@ SocialEvent `topic`= com/adobe/cq/social/journal
 | 更新 | 编辑成员的博客文章或评论 |
 | 删除 | 已删除成员的博客文章或评论 |
 
-[QnA组件](qna-essentials.md)
+[问题与解答组件](qna-essentials.md)
 SocialEvent `topic` = com/adobe/cq/social/qna
 
 | **动词** | **描述** |
