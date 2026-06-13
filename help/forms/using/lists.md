@@ -127,7 +127,7 @@ ht-degree: 0%
 
    数据字典的示例数据文件中指定的占位符元素
 
-   书信](assets/placeholder_elements_in_text.png)中的![占位符元素
+   书信![&#128279;](assets/placeholder_elements_in_text.png)中的占位符元素
 
    CCR视图中的占位符元素值通过数据字典变量填充，如示例数据文件中所指定
 

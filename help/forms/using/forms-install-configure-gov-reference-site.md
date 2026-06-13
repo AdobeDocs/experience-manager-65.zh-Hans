@@ -232,7 +232,7 @@ ht-degree: 3%
 
 1. 导航至：
 
-   https://<aemserver>：<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://&lt;aemserver>：&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. 确保您正在使用MS® Dynamics应用程序注册中配置的同一重定向URL访问服务器。
 
@@ -386,7 +386,7 @@ ht-degree: 3%
    ![快速访问](assets/aftia-quick-access.jpg)
 1. 导航到管理员选项卡，然后选择用户管理（旧版）项目
    ![报告](assets/aftia-reports.jpg)
-1. 选择&#x200B;**用户**选项卡。
+1. 选择&#x200B;**用户**&#x200B;选项卡。
    ![用户管理](assets/aftia-user-management.jpg)
 1. 从用户列表中选择所需的用户。
 1. 滚动到页面底部，用户身份验证信息将显示在页面底部。
