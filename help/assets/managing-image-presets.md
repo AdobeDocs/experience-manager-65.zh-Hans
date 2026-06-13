@@ -284,7 +284,7 @@ Dynamic Media集成使用以下脚本：
 
 >[!NOTE]
 >
->要在将图像 **[!UICONTROL 预设应用到资产时]** ，查看URL和 **** RESS按钮，必须发布资产。
+>要在将图像 **[!UICONTROL 预设应用到资产时]** ，查看URL和 **&#x200B;**&#x200B;RESS按钮，必须发布资产。
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >

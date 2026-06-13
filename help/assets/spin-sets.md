@@ -93,7 +93,7 @@ ht-degree: 9%
 
 对于一维旋转集，至少需要8-12次拍摄项目；对于二维旋转集，至少需要16-24次拍摄项目。 拍摄必须定期进行，以便给人一种旋转和翻转项目的印象。 例如，如果一维旋转集包含12个镜头，则为每个镜头旋转项目30° (360/12)。
 
-您可以像在Experience Manager Assets](/help/assets/manage-assets.md)中[上传任何其他资源一样上传旋转集的图像。
+您可以像在Experience Manager Assets[&#128279;](/help/assets/manage-assets.md)中上传任何其他资源一样上传旋转集的图像。
 
 有关旋转集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media)。
 
