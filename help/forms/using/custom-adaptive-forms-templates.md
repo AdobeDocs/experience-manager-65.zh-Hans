@@ -11,8 +11,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 5723e9990969dff1b508062d69a68f68a20eb576
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 0%
+source-wordcount: '1288'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 ## 先决条件 {#prerequisites}
 
-* 了解AEM [页面模板](/help/sites-authoring/templates.md)和[自适应表单创作](https://helpx.adobe.com/cn/aem-forms/6-1/introduction-forms-authoring.html)
+* 了解AEM [页面模板](/help/sites-authoring/templates.md)和[自适应表单创作](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
 * 了解AEM [客户端库](/help/sites-developing/clientlibs.md)
 
@@ -92,7 +92,7 @@ AEM QuickStart提供了以下自适应表单模板：
 
 执行以下步骤以创建自定义模板，如simpleEnrollmentTemplate。
 
-1. 在创作实例上导航到CRXDE Lite。
+1. 在创作实例上导航到CRXDE Lite 。
 
 1. 在/apps目录下，为应用程序创建文件夹结构。 例如，如果应用程序名称为mycompany，请使用此名称创建一个文件夹。 通常，应用程序文件夹包含组件、配置、模板、src和安装目录。 在本例中，创建“组件”、“配置”和“模板”文件夹。
 
@@ -109,7 +109,7 @@ AEM QuickStart提供了以下自适应表单模板：
 
    您可以包含自定义组件或`parsys`组件，而不是`guideformtitle`。 例如，移除`guideformtitle`，然后添加自定义组件或`parsys`组件节点。 请确保组件的`sling:resourceType`属性引用了该组件，并在页面`component.jsp`文件中定义了该组件。
 
-1. 导航到位置/apps/mycompany/templates/enrollment-template/jcr：content。
+1. 导航到位置/apps/mycompany/templates/enrollment-template/jcr:content。
 
 1. 打开&#x200B;**[!UICONTROL 属性]**&#x200B;选项卡，并将`cq:designPath`属性的值更改为/etc/designs/mycompany。
 
@@ -117,9 +117,9 @@ AEM QuickStart提供了以下自适应表单模板：
 
 ## 创建自适应表单页面组件 {#create-an-adaptive-form-page-component}
 
-自定义模板的样式与默认模板相同，因为模板引用页面组件/libs/fd/af/components/page/base。 您可以在节点/apps/mycompany/templates/enrollment-template/jcr：content中找到作为属性`sling:resourceType`的组件引用。 由于基础是核心产品组件，因此请勿修改此组件。
+自定义模板的样式与默认模板相同，因为模板引用页面组件/libs/fd/af/components/page/base。 您可以在节点/apps/mycompany/templates/enrollment-template/jcr:content上找到定义为属性`sling:resourceType`的组件引用。 由于基础是核心产品组件，因此请勿修改此组件。
 
-1. 导航到节点/apps/mycompany/templates/enrollment-template/jcr：content并将属性`sling:resourceType`的值修改为/apps/mycompany/components/page/enrollmentpage
+1. 导航到节点/apps/mycompany/templates/enrollment-template/jcr:content，并将属性`sling:resourceType`的值修改为/apps/mycompany/components/page/enrollmentpage
 1. 将节点/libs/fd/af/components/page/base复制到文件夹/apps/mycompany/components/page。
 
 1. 将复制的组件重命名为`enrollmentpage`。
@@ -128,7 +128,7 @@ AEM QuickStart提供了以下自适应表单模板：
 
    1. 对于`enrollmentpage`节点，将属性`sling:resourceSuperType`的值设置为mycompany/components/page/contentpage。 `contentpage`组件是站点的基本页面组件。 其他页面组件可以对其进行扩展。 删除`enrollmentpage`下的脚本文件，`head.jsp`、`content.jsp`和`library.jsp`除外。 `sling:resourceSuperType`组件（在本例中为`contentpage`）包含所有此类脚本。 标题（包括导航栏和页脚）继承自`contentpage`组件。
 
-   1. 打开文件`head.jsp`。
+   1. 打开文件 `head.jsp`。
 
       JSP文件包含行`<cq.include script="library.jsp"/>`。
 

@@ -9,7 +9,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3982'
+source-wordcount: '4013'
 ht-degree: 2%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 2%
 
 在此工作流中：
 
-1. 表单设计器使用AdobeForms Designer创建布局和片段布局并将它们上传到CRX存储库。 布局包含典型的表单字段、版面功能（如页眉和页脚）以及用于内容投放的空“目标区域”。 之后，应用程序专家会映射这些目标区域所需的内容。 有关[设计布局](/help/forms/using/layout-design-details.md)的详细信息。
+1. 表单设计器使用Adobe Forms Designer创建布局和片段布局并将它们上传到CRX存储库。 布局包含典型的表单字段、版面功能（如页眉和页脚）以及用于内容投放的空“目标区域”。 之后，应用程序专家会映射这些目标区域所需的内容。 有关[设计布局](/help/forms/using/layout-design-details.md)的详细信息。
 1. 来自法律、财务或营销部门的主题专家，负责创建并上传各种通信模板中重复使用的内容，例如文本条款免责声明、条款和条件以及徽标等图像。
 1. 应用程序专家创建通信模板。 应用程序专家
 
@@ -93,7 +93,7 @@ ht-degree: 2%
 1. 已提交进行审查和批准。
 1. 通过应用数字签名、认证、加密或权限管理而得到保护。
 1. 转换为可搜索的PDF文档，其中包含归档和审核所需的所有元数据。
-1. 包含在包含更多文档的PDFPortfolio中，例如营销材料。 然后，可以将PDFPortfolio作为最终通信发送。
+1. 包含在PDF Portfolio中，其中包含更多文档，如营销材料。 PDF Portfolio随后可作为最终通信发送。
 
 ### 通信管理解决方案体系结构 {#correspondence-management-solution-architecture}
 
@@ -159,7 +159,7 @@ ht-degree: 2%
 
 * 索赔理算员或案例处理员等业务用户修改信件内容或部分的条件。
 * 方案是描述使用信件解决方案的用户体验、要求和好处的叙述。
-* 方案还提供：项目所需的技能组合和工具。
+* 方案还提供项目所需的:The技能组合和工具。
 * 规划实施的最佳实践。 “高级实施概述。
 
 ## 执行分析的好处 {#benefits-of-performing-the-analysis}
@@ -228,7 +228,7 @@ ht-degree: 2%
 
 * [兼容包](compatibility-package.md)。 安装兼容包以查看&#x200B;**Forms**&#x200B;页面上的&#x200B;**书信**&#x200B;选项。
 * 书信XDP （[布局](/help/forms/using/document-fragments.md)）。
-* 构成信件部分的其他XDP （[布局片段](document-fragments.md#document-fragments)）。 在[Designer](https://www.adobe.com/go/learn_aemforms_designer_65_cn)中创建XDP\Layouts。
+* 构成信件部分的其他XDP （[布局片段](document-fragments.md#document-fragments)）。 在[Designer](https://www.adobe.com/go/learn_aemforms_designer_65)中创建XDP\Layouts。
 * 相关的[数据字典](/help/forms/using/data-dictionary.md)（可选）。
 * 您要在通信中使用的[数据模块](/help/forms/using/document-fragments.md)。
 * [测试数据](/help/forms/using/data-dictionary.md#p-working-with-test-data-p)是其中移植了测试数据的XML文件。 如果您使用数据字典，则需要测试数据。
@@ -254,7 +254,7 @@ ht-degree: 2%
    * **描述（可选）：**&#x200B;描述书信以供您参考。
    * **数据字典（可选）**：数据字典可以与通信相关联。 您稍后插入此通信的资产应当具有与您为此处的通信选择的数据字典相同的数据字典，或者没有数据字典。
    * **标记（可选）：**&#x200B;选择要应用于通信的标记。 您还可以键入新的/自定义标记名称并按Enter键以创建它。
-   * **Post进程（可选）：**&#x200B;选择要应用于信件模板的发布进程。 开箱即用的发布流程，以及您使用AEM创建的发布流程，例如电子邮件和打印流程。
+   * **发布流程（可选）：**&#x200B;选择要应用于信件模板的发布流程。 开箱即用的发布流程，以及您使用AEM创建的发布流程，例如电子邮件和打印流程。
 
    ![通信属性](assets/createcorrespondenceproperties.png)
 
@@ -347,7 +347,7 @@ ht-degree: 2%
 1. 选择&#x200B;**库访问权限**&#x200B;以授予对库的访问权限。 如果启用了“库访问”，则理赔师可以在创建信件并插入附件时访问内容库。
 1. 选择&#x200B;**附件配置**&#x200B;并指定附件的最大数量。
 
-1. 选择&#x200B;**保存**。您的信件已创建并列在“信件”页面上。
+1. 选择&#x200B;**保存**。 您的信件已创建并列在“信件”页面上。
 
 在Correspondence Management中创建信件模板后，最终用户/代理/索赔理算员可以在CCR用户界面中打开信件，并通过输入数据、设置内容和管理附件来创建信件。 有关详细信息，请参阅[创建通信](/help/forms/using/create-correspondence.md)。
 

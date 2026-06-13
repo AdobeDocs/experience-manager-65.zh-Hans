@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 1%
+source-wordcount: '928'
+ht-degree: 3%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 1. 转到`https://[server]:[port]/system/console/configMgr`上的AEM Web控制台配置管理器。
 1. 单击&#x200B;**[!UICONTROL 自适应表单和交互式通信Web渠道配置]**&#x200B;以编辑其配置值。
-1. 在[!UICONTROL 编辑配置值]对话框中，指定AEM [!DNL Forms]服务器的实例可在&#x200B;**[!UICONTROL 自适应Forms的数量]**&#x200B;字段中缓存的最大表单数或文档数。 默认值为 100。
+1. 在[!UICONTROL 编辑配置值]对话框中，指定AEM [!DNL Forms]服务器实例可在&#x200B;**[!UICONTROL 自适应Forms数量]**&#x200B;字段中缓存的最大表单数或文档数。 默认值为 100。
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ ht-degree: 1%
 
 ### 在Dispatcher上缓存自适应表单的注意事项 {#considerations}
 
-* 使用自适应表单缓存时，请使用AEM [!DNL Dispatcher]来缓存自适应表单的客户端库(CSS和JavaScript)。
+* 使用自适应表单缓存时，请使用AEM [!DNL Dispatcher]来缓存自适应表单的客户端库（CSS和JavaScript）。
 * 在开发自定义组件时，在用于开发的服务器上，将禁用自适应表单缓存。
 * 不缓存不带扩展名的URL。 例如，缓存了模式为`/content/forms/[folder-structure]/[form-name].html`的URL，缓存时忽略模式为`/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`的URL。 因此，请使用带有扩展名的URL来获得缓存的好处。
 * 本地化自适应表单的注意事项：
@@ -60,10 +60,10 @@ ht-degree: 1%
 
 要在Dispatcher上启用和配置缓存自适应表单，请执行以下步骤：
 
-1. 为环境的每个发布实例打开以下URL，并[为环境的发布实例启用刷新代理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-a-publishing-instance)：
+1. 为环境的每个发布实例打开以下URL，并[为环境的发布实例启用刷新代理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)：
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [将以下内容添加到您的dispatcher.any文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#automatically-invalidating-cached-files)：
+1. [将以下内容添加到您的dispatcher.any文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files)：
 
    ```JSON
       /invalidate
@@ -92,7 +92,7 @@ ht-degree: 1%
    * 自适应表单会保留在缓存中，直到未发布表单的更新版本为止。
 
    * 发布自适应表单中引用的资源的较新版本时，受影响的自适应表单会自动失效。 引用的资源自动失效有一些例外。 有关异常的解决方法，请参阅[疑难解答](#troubleshooting)部分。
-1. [添加以下规则dispatcher.any或自定义规则文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#specifying-the-documents-to-cache)。 它不包括不支持缓存的URL。 例如，交互式通信。
+1. [添加以下规则dispatcher.any或自定义规则文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache)。 它不包括不支持缓存的URL。 例如，交互式通信。
 
    ```JSON
       /0000 {
@@ -116,7 +116,7 @@ ht-degree: 1%
       }
    ```
 
-1. [将以下参数添加到忽略URL参数列表](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#ignoring-url-parameters)：
+1. [将以下参数添加到忽略URL参数列表](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)：
 
    ```JSON
       /ignoreUrlParams {
@@ -126,7 +126,7 @@ ht-degree: 1%
       }
    ```
 
-您的AEM环境配置为缓存自适应表单。 它会缓存所有类型的自适应表单。 如果在传递缓存的页面之前需要检查页面的用户访问权限，请参阅[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-Hans)。
+您的AEM环境配置为缓存自适应表单。 它会缓存所有类型的自适应表单。 如果在传递缓存的页面之前需要检查页面的用户访问权限，请参阅[缓存受保护内容](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html?lang=zh-hans)。
 
 ## 疑难解答 {#troubleshooting}
 
@@ -136,7 +136,7 @@ ht-degree: 1%
 
 当您通过资产浏览器选择图像或视频并将其添加到自适应表单并在Assets编辑器中编辑这些图像和视频时，包含此类图像的自适应表单不会自动从Dispatcher缓存中失效。
 
-#### 解决方案 {#Solution1}
+#### 解决办法 {#Solution1}
 
 发布图像和视频后，明确取消发布并发布引用这些资产的自适应表单。
 
@@ -146,7 +146,7 @@ ht-degree: 1%
 
 当自适应表单URL没有任何本地化信息，并且在配置管理器中启用了&#x200B;**[!UICONTROL 使用浏览器区域设置]**&#x200B;时，将提供自适应表单的本地化版本。 仅缓存自适应表单的第一个实例并将其交付给每个后续用户。
 
-#### 解决方案 {#Solution3}
+#### 解决办法 {#Solution3}
 
 通过执行以下步骤来解决问题：
 

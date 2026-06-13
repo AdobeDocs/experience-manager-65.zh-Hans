@@ -11,8 +11,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '496'
-ht-degree: 0%
+source-wordcount: '498'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +45,7 @@ ht-degree: 0%
 1. 选择`reviewbeforesubmit`节点中的`cq:template`节点。 确保`guideNodeClass`属性的值为`guideButton`并相应地更改`jcr:title`属性。
 1. 更改`cq:Template`节点中的类型属性。 对于当前示例，请将type属性更改为button。
 
-   类型值在为该组件生成的HTML中添加为CSS类。 用户可以使用该CSS类来设置其操作的样式。 为按钮、提交、重置和保存类型值提供了移动设备和桌面设备的默认样式。
+   类型值在为该组件生成的HTML中作为CSS类添加。 用户可以使用该CSS类来设置其操作的样式。 为按钮、提交、重置和保存类型值提供了移动设备和桌面设备的默认样式。
 
 1. 从自适应表单编辑工具栏对话框中选择自定义操作。 面板的工具栏中将显示一个“审阅”按钮。
 

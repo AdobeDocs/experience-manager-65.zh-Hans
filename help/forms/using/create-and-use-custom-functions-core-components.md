@@ -8,7 +8,7 @@ role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3342'
 ht-degree: 2%
 
 ---
@@ -59,8 +59,8 @@ AEM Forms 6.5包括JavaScript函数，这些函数允许您使用规则编辑器
 * `@func [functionName] <Function Name>`
 
 >[!NOTE]
->`[functionName]`是函数的名称。 不允许使用空格。
->`<Function Name>` 是自适应Forms的规则编辑器中函数的显示名称。
+>`[functionName]`是函数的名称。不允许使用空格。
+>`<Function Name>`是自适应Forms的规则编辑器中函数的显示名称。
 >如果函数名称与函数本身的名称相同，则可以在语法中省略`[functionName]`。
 
 #### 参数
@@ -355,7 +355,7 @@ var c = {
 
 ### 使用AEM项目原型创建客户端库{#create-client-library-archetype}
 
-您可以向使用AEM项目原型[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)创建的项目中添加客户端库，从而添加自定义函数。
+您可以向使用AEM项目原型](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/developing/archetype/using#getting-started)创建的项目[中添加客户端库，从而添加自定义函数。
 如果您现有项目<!--and have already the project structure as shown in the image below,-->，则可以直接将[自定义函数](#create-add-custom-function)添加到本地项目。
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
@@ -382,11 +382,11 @@ var c = {
 
 * `.content.xml`文件
 * `js.txt`文件
-* `js` folder
+* `js`文件夹
 
 `Location is: [AEMaaCS project directory]/ui.apps/src/main/content/jcr_root/apps/experience-league/customclientlibs/`
 
-1. In the `.content.xml` add the following lines of code:
+1. 在`.content.xml`中，添加以下代码行：
 
    ```javascript
    <?xml version="1.0" encoding="UTF-8"?>
@@ -397,16 +397,16 @@ var c = {
 
    >[!NOTE]
    >
-   > You can choose any name for `client library folder` and `categories` property.
+   > 您可以为`client library folder`和`categories`属性选择任意名称。
 
-1. In the `js.txt` add the following lines of code:
+1. 在`js.txt`中，添加以下代码行：
 
    ```javascript
          #base=js
        function.js
    ```
 
-1. In the `js` folder, add the javascript file as `function.js` which includes the custom functions:
+1. 在`js`文件夹中，将javascript文件添加为`function.js`，其中包含自定义函数：
 
    ```javascript
    /**
@@ -431,53 +431,53 @@ var c = {
    }
    ```
 
-1. Save the files.
+1. 保存文件。
 
 ![自定义函数文件夹结构](assets/custom-function-added-files.png)
 
-**Include the new folder in filter.xml**:
+**在filter.xml中包含新文件夹**：
 
-1. Navigate to the `/ui.apps/src/main/content/META-INF/vault/filter.xml` file in your [AEMaaCS project directory].
+1. 导航到[AEMaaCS项目目录]中的`/ui.apps/src/main/content/META-INF/vault/filter.xml`文件。
 
-1. Open the file and add the following line at the end:
+1. 打开文件，并在末尾添加以下行：
 
    `<filter root="/apps/experience-league" />`
 1. 保存文件。
 
-   ![custom fuction filter xml](assets/custom-function-filterxml.png)
+   ![自定义函数筛选器xml](assets/custom-function-filterxml.png)
 
-1. Build the newly created client library folder to your AEM environment by following the steps given in [How to Build section](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build).
+1. 按照[如何生成部分](https://github.com/adobe/aem-project-archetype/tree/develop/src/main/archetype#how-to-build)中给出的步骤将新创建的客户端库文件夹生成到您的AEM环境中。
 
-## Create and deploy custom functions through CRXDE{#create-add-custom-function}
+## 通过CRXDE创建和部署自定义函数{#create-add-custom-function}
 
-If you are using the latest AEM Forms and Forms add-on, you can create a custom function through CRXDE to use the latest updates of custom functions. To do so, perform the following steps:
+如果您使用最新的AEM Forms和Forms加载项，则可以通过CRXDE创建自定义函数，以使用自定义函数的最新更新。 为此，请执行以下步骤：
 
 <!--![custom fuction folder structure](assets/custom-library-folder-structure.png)-->
 
 
-1. Log into `http://server:port/crx/de/index.jsp#`.
-1. 在 `/apps` 文件夹下创建一个文件夹。 For example, create a folder named as `experience-league`.
-1. Save your changes.
-1. Navigate to the created folder and create a node of type `cq:ClientLibraryFolder` as `clientlibs`.
-1. Navigate to the newly created `clientlibs` folder and add the `allowProxy` and `categories` properties:
+1. 登录`http://server:port/crx/de/index.jsp#`。
+1. 在 `/apps` 文件夹下创建一个文件夹。 例如，创建名为`experience-league`的文件夹。
+1. 保存更改。
+1. 导航到已创建的文件夹，并创建类型为`cq:ClientLibraryFolder`的节点作为`clientlibs`。
+1. 导航到新创建的`clientlibs`文件夹并添加`allowProxy`和`categories`属性：
 
-   ![Custom Library node properties](/help/forms/using/assets/customlibrary-catproperties.png)
+   ![自定义库节点属性](/help/forms/using/assets/customlibrary-catproperties.png)
 
    >[!NOTE]
    >
-   > You can provide any name in place of `customfunctionsdemo`.
+   > 您可以提供任意名称来取代`customfunctionsdemo`。
 
-1. Save your changes.
+1. 保存更改。
 
-1. Create a folder called `js` under the `clientlibs` folder.
-1. Create a JavaScript file called `functions.js` under the `js` folder.
-1. Create a file called `js.txt` under the `clientlibs` folder.
-1. Save your changes.
+1. 在`clientlibs`文件夹下创建名为`js`的文件夹。
+1. 在`js`文件夹下创建名为`functions.js`的JavaScript文件。
+1. 在`clientlibs`文件夹下创建名为`js.txt`的文件。
+1. 保存更改。
 创建的文件夹结构如下所示：
 
    ![创建的客户端库文件夹结构](/help/forms/using/assets/clientlibrary_folderstructure.png)
-1. Double-click the `functions.js` file to open the editor. The file comprises the code for custom function.
-Let&#39;s add the following code to the JavaScript file to calculate age based on the Date of Birth(YYYY-MM-DD).
+1. 双击`functions.js`文件以打开编辑器。该文件包含自定义函数的代码。
+让我们将以下代码添加到JavaScript文件中，以根据出生日期计算年龄(YYYY-MM-DD)。
 
    ```javascript
        /**
@@ -502,7 +502,7 @@ Let&#39;s add the following code to the JavaScript file to calculate age based o
    ```
 
 1. 保存`function.js`。
-1. Navigate to `js.txt` and add the following code:
+1. 导航到`js.txt`并添加以下代码：
 
    ```javascript
        #base=js
@@ -511,33 +511,33 @@ Let&#39;s add the following code to the JavaScript file to calculate age based o
 
 1. 保存 `js.txt` 文件。
 
-You can refer to the following [custom function](/help/forms/using/assets/customfunction.zip) folder. Download and install this folder on your AEM instance.
+您可以引用以下[自定义函数](/help/forms/using/assets/customfunction.zip)文件夹。 在您的AEM实例上下载并安装此文件夹。
 
-Now, you can use the custom function in your Adaptive Form by adding the client library.
+现在，您可以通过添加客户端库在自适应表单中使用自定义函数。
 
-## Add client library in an Adaptive Form{#add-client-library}
+## 在自适应表单中添加客户端库{#add-client-library}
 
-Once you have deployed your client library to your AEM Forms environment, use its capabilities in your Adaptive Form. To add the client library in your Adaptive Form
+将客户端库部署到AEM Forms环境后，请在自适应表单中使用其功能。 在自适应表单中添加客户端库
 
-1. Open your form in the edit mode. To open a form in the edit mode, select a form and select **[!UICONTROL Edit]**.
+1. 在编辑模式下打开表单。 若要在编辑模式下打开表单，请选择一个表单，然后选择&#x200B;**[!UICONTROL 编辑]**。
 1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
-1. Click the Guide Container properties icon. 这将打开“自适应表单容器”对话框。
-1. Open the **[!UICONTROL Basic]** tab and select the name of the **[!UICONTROL client library category]** from the drop-down list (in this case, select `customfunctionscategory`).
+1. 单击指南容器属性图标。 这将打开“自适应表单容器”对话框。
+1. 打开&#x200B;**[!UICONTROL 基本]**&#x200B;选项卡，并从下拉列表中选择&#x200B;**[!UICONTROL 客户端库类别]**&#x200B;的名称（在本例中，选择`customfunctionscategory`）。
 
-   ![Adding the custom function client library](/help/forms/using//assets/custom-function-category-name-core-component.png)
+   ![正在添加自定义函数客户端库](/help/forms/using//assets/custom-function-category-name-core-component.png)
 
 1. 单击&#x200B;**[!UICONTROL 完成]**。
 
-Now, you can create a rule to use custom functions in the rule editor:
+现在，您可以创建一个规则以在规则编辑器中使用自定义函数：
 
-![Adding the custom function client library](/help/forms/using//assets/calculateage-customfunction.png)
+![正在添加自定义函数客户端库](/help/forms/using//assets/calculateage-customfunction.png)
 
-Now, let&#39;s understand how to configure and use a custom function using the [Rule Editor&#39;s Invoke service in AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)
+现在，让我们了解如何在AEM Forms 6.5](/help/forms/using/rule-editor-core-components.md#invoke-form-data-model-service-invoke)中使用[规则编辑器的调用服务来配置和使用自定义函数
 
-## Using Custom Function in an Adaptive Form {#use-custom-functions}
+## 在自适应表单中使用自定义函数 {#use-custom-functions}
 
-In an Adaptive Form, you can use [Custom Functions within the rule editor](/help/forms/using/rule-editor-core-components.md).
-Let us add the following code to the JavaScript file (`Function.js` file) to calculate age based on the Date of Birth (YYYY-MM-DD). Create a custom function as `calculateAge()` which takes the date of birth as input and returns age:
+在自适应表单中，您可以在规则编辑器](/help/forms/using/rule-editor-core-components.md)中使用[自定义函数。
+让我们将以下代码添加到JavaScript文件（`Function.js`文件）中，以根据出生日期(YYYY-MM-DD)计算年龄。创建自定义函数作为`calculateAge()`，它将出生日期作为输入并返回年龄：
 
 ```javascript
     /**
@@ -572,7 +572,7 @@ Let us add the following code to the JavaScript file (`Function.js` file) to cal
 
 >[!NOTE]
 >
-> 您可以引用以下[自定义函数](/help/forms/using/assets/customfunctions.zip)文件夹。 使用[包管理器](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager)在AEM实例中下载并安装此文件夹。
+> 您可以引用以下[自定义函数](/help/forms/using/assets/customfunctions.zip)文件夹。 使用[包管理器](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/sites/administering/contentmanagement/package-manager)在AEM实例中下载并安装此文件夹。
 
 ### 在自定义函数中支持异步函数 {#support-of-async-functions}
 
@@ -776,7 +776,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 #### **用例**：在字段级别显示自定义消息并将字段标记为无效
 
-您可以使用`markFieldAsInvalid()`函数将字段定义为无效，并在字段级别设置自定义错误消息。 `fieldIdentifier`值可以是`fieldId`、`field qualifiedName`或`field dataRef`。 名为`option`的对象的值可以是`{useId: true}`、`{useQualifiedName: true}`或`{useDataRef: true}`。
+您可以使用`markFieldAsInvalid()`函数将字段定义为无效，并在字段级别设置自定义错误消息。`fieldIdentifier`值可以是`fieldId`、`field qualifiedName`或`field dataRef`。名为`option`的对象的值可以是`{useId: true}`、`{useQualifiedName: true}`或`{useDataRef: true}`。
 用于将字段标记为无效并设置自定义消息的语法包括：
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`

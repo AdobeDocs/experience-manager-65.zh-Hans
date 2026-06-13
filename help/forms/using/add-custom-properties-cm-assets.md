@@ -1,5 +1,5 @@
 ---
-title: 将自定义属性添加到通信管理资产
+title: 为通信管理资产添加自定义属性
 description: 了解如何将自定义属性添加到通信管理资产。
 content-type: reference
 topic-tags: correspondence-management
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '4434'
-ht-degree: 4%
+source-wordcount: '4415'
+ht-degree: 5%
 
 ---
 
-# 将自定义属性添加到通信管理资产{#add-custom-properties-to-correspondence-management-assets}
+# 为通信管理资产添加自定义属性{#add-custom-properties-to-correspondence-management-assets}
 
 ## 概述 {#overview}
 
@@ -77,7 +77,7 @@ ht-degree: 4%
 
       **名称：**&#x200B;地理位置（或您要为此属性提供的名称）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
       ![创建节点： GeoLocation](assets/geographicallocationcreatenode.png)
 
@@ -114,7 +114,7 @@ ht-degree: 4%
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
 1. 在新创建的覆盖节点下(/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items)
-为需要创建nt：unstructured类型的下拉列表（此处`geographicallocation`）的每个属性（字段）创建一个节点。
+为需要创建nt:unstructured类型的下拉列表（此处`geographicallocation`）的每个属性（字段）创建一个节点。
 1. 将以下属性添加到节点（此处为geographicallocation），然后单击&#x200B;**全部保存**：
 
    <table>
@@ -132,7 +132,7 @@ ht-degree: 4%
    <tr>
       <td>name</td>
       <td>字符串</td>
-      <td>。/extendedproperties/geographicallocation（保持与在items节点下创建的字段名称相同的值）</td>
+      <td>./extendedproperties/geographicallocation（保持与您在items节点下创建的字段名称相同的值）</td>
    </tr>
    <tr>
       <td>renderReadOnly</td>
@@ -150,7 +150,7 @@ ht-degree: 4%
 1. 在属性节点（此处为geographicallocation）下，添加名称为`items`的新节点。 在项节点下，为下拉列表中的值分别添加一个节点。 好的做法是将第一个节点添加为空白，作为下拉列表的默认值，并添加一个选项，让用户指定该字段的不含值。 要添加多个选项/下拉值，请重复以下步骤：
 
    1. 右键单击属性节点（此处为geographicallocation）并选择&#x200B;**创建** > **创建节点**。
-   1. 输入字段名称作为`item1,`，保留类型为nt：unstructured，然后单击&#x200B;**确定**。
+   1. 输入字段名称作为`item1,`，保留类型为nt:unstructured，然后单击&#x200B;**确定**。
    1. 将以下属性添加到新创建的节点（此处为item1），然后单击&#x200B;**全部保存**：
 
       <table>
@@ -220,7 +220,7 @@ ht-degree: 4%
 
       **名称：** commontab （或您要为此属性提供的名称）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击已创建的新节点（此处为“commontab”）。 CRX显示节点的属性。
    1. 将以下属性添加到节点（此处为commontab）：
@@ -254,7 +254,7 @@ ht-degree: 4%
 
       **名称：**&#x200B;项
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击&#x200B;**全部保存：**
 
@@ -265,7 +265,7 @@ ht-degree: 4%
 
       **名称：** Column1 （或者您要为节点提供的名称 — 此名称未出现在用户界面中。）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 将以下属性添加到节点（此处为Column1），然后单击&#x200B;**全部保存**：
 
@@ -291,25 +291,25 @@ ht-degree: 4%
 
       **名称：**&#x200B;项
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击&#x200B;**全部保存**。
 
-1. 要在自定义选项卡中创建字段（此处为“收件人”），请添加节点（此处为“地理位置”）。 此属性对应于您创建的列。 使用以下步骤创建字段（要创建更多字段/节点，请重复这些步骤。）: 
+1. 要在自定义选项卡中创建字段（此处为“收件人”），请添加节点（此处为“地理位置”）。 此属性对应于您创建的列。 使用以下步骤创建字段（要创建更多字段/节点，请重复这些步骤。）：
 
    1. 右键单击项目节点并选择&#x200B;**创建** > **创建节点**。
    1. 确保“创建节点”对话框具有以下值，然后单击&#x200B;**确定**：
 
       **名称：**&#x200B;地理位置（或字段属性的其他名称）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 将以下属性添加到字段节点（此处为GeographicLocation），然后单击&#x200B;**全部保存**。
 
       | **名称** | **类型** | **值** |
       |---|---|---|
       | 字段标签 | 字符串 | 收件人的位置（或您希望为字段提供的名称）。 |
-      | name | 字符串 | 。/extendedproperties/GeographicLocation |
+      | name | 字符串 | ./extendedproperties/GeographicLocation |
       | renderReadOnly | 布尔值 | true |
       | sling:resourceType | 字符串 | `/libs/granite/ui/components/coral/foundation/form/textfield` |
 
@@ -342,7 +342,7 @@ ht-degree: 4%
 
       **名称：** mytab（或您要为此属性提供的名称）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击已创建的新节点（此处为mytab）。 CRX显示节点的属性。
    1. 将以下两个属性添加到节点（此处为customtab）：
@@ -430,7 +430,7 @@ ht-degree: 4%
 
       **名称：** customtab （或您要为此属性提供的名称）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击已创建的新节点（此处为“自定义”选项卡）。 CRX显示节点的属性。
    1. 将以下两个属性添加到节点（此处为customtab）：
@@ -449,7 +449,7 @@ ht-degree: 4%
 
       **名称：**&#x200B;项
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击&#x200B;**全部保存**。
 
@@ -460,7 +460,7 @@ ht-degree: 4%
 
       **名称：** Column1（或您要为节点提供的名称）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 将以下属性添加到节点（此处为Column1），然后单击&#x200B;**全部保存**。
 
@@ -486,7 +486,7 @@ ht-degree: 4%
 
       **名称：**&#x200B;项
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击&#x200B;**全部保存：**
 
@@ -497,7 +497,7 @@ ht-degree: 4%
 
       **名称：**&#x200B;您选择的名称（此处为“地理位置”）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 将以下属性添加到节点，然后单击&#x200B;**全部保存**。
 
@@ -526,7 +526,7 @@ ht-degree: 4%
 
 1. 确保“覆盖节点”对话框具有以下字母值。 对于其他资源类型，路径如下表所示：
 
-   **路径：** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr：content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items
+   **路径：** /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items
 
    **位置：** /apps/
 
@@ -536,11 +536,11 @@ ht-degree: 4%
 
    | **资产/文档类型** | **要添加的路径** |
    |---|---|
-   | 文本 | /libs/fd/cm/ma/gui/content/createasset/createtext/jcr：content/body/items/form/items/textwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
-   | 列表 | /libs/fd/cm/ma/gui/content/createasset/createlist/jcr：content/body/items/form/items/listwizard/items/editproperties/items/properties/items/tables/items/tab1/items |
-   | 条件 | /libs/fd/cm/ma/gui/content/createasset/createcondition/jcr：content/body/items/form/items/conditionwizard/items/editproperties/items/properties/items/tables/items/tab1/items |
-   | 片段 | /libs/fd/cm/ma/gui/content/createasset/createfragment/jcr：content/body/items/form/items/fragmentwizard/items/properties/items/properties/items/tabs2/items/tab1/items |
-   | 书信 | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr：content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items |
+   | 文本 | /libs/fd/cm/ma/gui/content/createasset/createtext/jcr:content/body/items/form/items/textwizard/items/editproperties/items/properties/items/tabs/items/tab1/items |
+   | 列表 | /libs/fd/cm/ma/gui/content/createasset/createlist/jcr:content/body/items/form/items/listwizard/items/editproperties/items/properties/items/tables/items/tab1/items |
+   | 条件 | /libs/fd/cm/ma/gui/content/createasset/createcondition/jcr:content/body/items/form/items/conditionwizard/items/editproperties/items/properties/items/tables/items/tab1/items |
+   | 片段 | /libs/fd/cm/ma/gui/content/createasset/createfragment/jcr:content/body/items/form/items/fragmentwizard/items/properties/items/properties/items/items/tabs2/items/tab1/items |
+   | 书信 | /libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items |
 
 1. 单击&#x200B;**确定**。 文件夹结构将在apps文件夹中创建。
 
@@ -599,7 +599,7 @@ ht-degree: 4%
 
    1. 确保“覆盖节点”对话框具有以下值：
 
-      **路径：** /libs/fd/cm/ma/gui/content/cmassets/jcr：content/views/lists/columns
+      **路径：** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/lists/columns
 
       **位置：** /apps/
 
@@ -616,7 +616,7 @@ ht-degree: 4%
 
       **名称：**&#x200B;您选择的名称（此处为GeographicLocation）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 将以下属性添加到节点，然后单击&#x200B;**全部保存**。
 
@@ -713,7 +713,7 @@ ht-degree: 4%
       %>
       ```
 
-      在代码中，“地理位置”是您在创建自定义节点/字段时在name属性中设置的值。 在创建自定义节点/字段时，您指定了属性的名称。/extendedproperties/前缀： 。/extendedproperties/GeoLocation。 在代码中，前缀不是必需的。
+      在代码中，“地理位置”是您在创建自定义节点/字段时在name属性中设置的值。 在创建自定义节点/字段时，您指定了带。/extendedproperties/前缀的属性的名称： ./extendedproperties/GeoLocation。 在代码中，前缀不是必需的。
 
    1. 要在UI中显示新属性，请在结束tr (&lt;/tr>)标记之前添加TD标记，如下所示：
 
@@ -750,7 +750,7 @@ ht-degree: 4%
  </tbody>
 </table>
 
-添加sling：orderBefore属性以指定列位置时，还需要更新在此过程的步骤6.4中指定的相应&lt;td>标记的顺序。 例如，在本例中，您需要确保“地理位置”的&lt;td>标记放在“版本”列的&lt;td>标记之前：
+添加sling:orderBefore属性以指定列位置时，还需要更新在此过程的步骤6.4中指定的相应&lt;td>标记的顺序。 例如，在本例中，您需要确保“地理位置”的&lt;td>标记放在“版本”列的&lt;td>标记之前：
 
 ```xml
 <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
@@ -773,23 +773,23 @@ ht-degree: 4%
 
       **名称：**&#x200B;聚合
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击&#x200B;**全部保存**。
 
-1. 在新创建的聚合文件夹下，添加节点cm：resource。 在cm：resource下，添加一个名为include0的节点。
+1. 在新创建的聚合文件夹下，添加节点cm:resource。 在cm:resource下，添加名为include0的节点。
 
    1. 右键单击聚合文件夹并选择&#x200B;**创建** > **创建节点**。 确保“创建节点”对话框具有以下值，然后单击&#x200B;**确定**：
 
-      **名称：** cm：resource
+      **名称：** cm:resource
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
-   1. 右键单击cm：resource文件夹并选择&#x200B;**创建** > **创建节点**。 确保“创建节点”对话框具有以下值，然后单击&#x200B;**确定**：
+   1. 右键单击cm:resource文件夹并选择&#x200B;**创建** > **创建节点**。 确保“创建节点”对话框具有以下值，然后单击&#x200B;**确定**：
 
       **名称：** include0
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击已创建的新节点（此处为include0）。 CRX显示节点的属性。
    1. 将以下属性添加到节点（此处为include0）：
@@ -820,7 +820,7 @@ ht-degree: 4%
 
       **名称：**&#x200B;位置（或要添加到搜索的自定义属性的名称）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击已创建的新节点（此处为位置）。 CRX显示节点的属性。
    1. 将以下属性添加到节点（此处为位置）：
@@ -840,7 +840,7 @@ ht-degree: 4%
 >
 >如果您仍无法搜索，可能是因为索引问题。 对于重新索引，请转到以下节点并将属性“重新索引”的值更改为true：
 >
->/oak：index/cmLucene&quot;并更改属性的值
+>/oak:index/cmLucene”并更改属性的值
 
 ## 更改搜索页面的默认视图 {#change-default-view-of-the-search-page}
 
@@ -886,12 +886,12 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->这些步骤将更改所有控制台(如Forms和文档、Assets和站点)的默认视图。
+>这些步骤将更改所有控制台（如Forms和文档、Assets和站点）的默认视图。
 
 1. 转到`https://'[server]:[port]'/[ContextPath]/crx/de`并以管理员身份登录。
 1. 在apps文件夹中，创建一个名为list的文件夹，其路径/结构类似于中的列表文件夹：
 
-   /libs/fd/cm/ma/gui/content/cmassets/jcr：content/views/
+   /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
    1. 右键单击以下路径的items文件夹，然后选择&#x200B;**覆盖节点**：
 
@@ -899,7 +899,7 @@ ht-degree: 4%
 
    1. 确保“覆盖节点”对话框具有以下值：
 
-      **路径：** /libs/fd/cm/ma/gui/content/cmassets/jcr：content/views/list
+      **路径：** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list
 
       **位置：** /apps/
 
@@ -932,7 +932,7 @@ ht-degree: 4%
 
 要显示或隐藏自定义属性，请完成以下步骤：
 
-1. 在自定义属性节点（如geographicallocation）下，创建一个名为“granite：rendercondition”、类型为“nt：unstructured”的节点。
+1. 在自定义属性节点（如geographicallocation）下，创建名为“granite:rendercondition”且类型为“nt:unstructured”的节点。
 1. 将以下属性添加到节点，然后单击&#x200B;**全部保存**：
 
    <table>
