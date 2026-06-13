@@ -353,7 +353,7 @@ curl -u admin:admin -X POST \
 
 ### 使用 OSGi 配置管理缓存 {#cache-osgi-configration}
 
-要全局管理缓存，您可以为&#x200B;**持久查询服务配置**[配置 OSGi 设置](/help/sites-deploying/configuring-osgi.md)。 否则，此OSGi配置对发布实例](#publish-instances)使用[默认值。
+要全局管理缓存，您可以为&#x200B;**持久查询服务配置**&#x200B;[配置 OSGi 设置](/help/sites-deploying/configuring-osgi.md)。 否则，此OSGi配置对发布实例[&#128279;](#publish-instances)使用默认值。
 
 >[!NOTE]
 >
@@ -395,7 +395,7 @@ URL 可以划分为以下部分：
 
 ### 持久查询包
 
-可以将持久查询构建在[ AEM 程序包](/help/sites-administering/package-manager.md)中。 然后，可以在不同的环境中下载和安装 AEM 包。 AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
+可以将持久查询构建在[&#x200B; AEM 程序包](/help/sites-administering/package-manager.md)中。 然后，可以在不同的环境中下载和安装 AEM 包。 AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
 
 要创建包：
 

@@ -77,7 +77,7 @@ ${cqDesign.property1 == 'someText' && cqDesign.property2 || cqDesign.property3 !
 
 1. `disableChildren`的值是从设计配置中提取的，表达式`${cqDesign.disableChildren}`的计算结果为`false`，这意味着该选项将不会作为组件的一部分呈现。
 
-   您可以在GitHub](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40)中查看作为`granite:hide`属性[值的隐藏表达式。
+   您可以在GitHub[&#128279;](https://github.com/adobe/aem-core-wcm-components/blob/main/content/src/content/jcr_root/apps/core/wcm/components/list/v1/list/_cq_dialog/.content.xml#L40)中查看作为`granite:hide`属性值的隐藏表达式。
 
 1. 使用列表组件时，选项&#x200B;**子页面**&#x200B;不再为页面作者渲染。
 
