@@ -11,8 +11,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '666'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 0%
 >
 >请参阅联机帮助中的以下资源，以了解AEM Mobile应用程序中的以下主题：
 >
->* [设计注意事项](https://helpx.adobe.com/cn/digital-publishing-solution/help/design-app.html)
+>* [设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [创建横幅](https://helpx.adobe.com/cn/digital-publishing-solution/help/creating-banners.html)
+>* [创建横幅](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
 >
 
 ## 创建横幅 {#creating-a-banner}
@@ -78,7 +78,7 @@ ht-degree: 0%
 用于编辑文章的工作流：
 
 1. 在Mobile中，从目录中选择您的Mobile On-Demand应用程序。
-1. 从&#x200B;**管理横幅**&#x200B;图块中选择一个源自AEM的横幅。
+1. 从**管理横幅**图块中选择一个源自AEM的横幅。
 1. 从列表视图中单击高亮显示的横幅以在内容编辑器中打开它。
 1. 使用内容编辑器拖动横幅内容（手稿、图像、文本等）。
 

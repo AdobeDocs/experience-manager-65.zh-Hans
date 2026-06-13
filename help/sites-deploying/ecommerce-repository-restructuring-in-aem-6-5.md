@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5中的E-Commerce存储库重组
+title: AEM 6.5 中的电子商务存储库重构
 description: 了解如何进行必要的更改，以迁移到AEM 6.5中适用于E-Commerce的新存储库结构。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 1%
+source-wordcount: '215'
+ht-degree: 8%
 
 ---
 
-# AEM 6.5中的E-Commerce存储库重组{#e-commerce-repository-restructuring-in-aem}
+# AEM 6.5 中的电子商务存储库重构{#e-commerce-repository-restructuring-in-aem}
 
-如AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM E-Commerce解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
+如AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM E-Commerce解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
 ## 6.5版升级 {#with-upgrade}
 
@@ -47,7 +47,7 @@ ht-degree: 1%
      <li>/etc/commerce/orders<br /> </li>
      <li>/etc/commerce/payment-methods<br /> </li>
      <li>/etc/commerce/shipping-methods<br /> </li>
-    </ul> <p>对于较大的目录，Adobe建议您将以下Java™系统属性传递给AEM，以单独运行商业迁移任务：</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>迁移后，重新启动AEM。</p> </td>
+    </ul> <p>对于较大的目录，Adobe建议您通过将以下Java™系统资产传递到AEM来单独运行商业迁移任务：</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>迁移后，请重新启动AEM。</p> </td>
   </tr>
   <tr>
    <td><strong>注释</strong></td>

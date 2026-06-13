@@ -12,8 +12,8 @@ feature: Developing,Content Fragments
 role: Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '677'
-ht-degree: 3%
+source-wordcount: '690'
+ht-degree: 4%
 
 ---
 
@@ -158,7 +158,7 @@ conf
     <tr>
      <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>必填</p> </td>
-     <td><p>包含内容片段元素定义的节点。 它是强制性的，并且需要为<strong>Main</strong>元素至少包含一个子节点，但可以包含[1.n]个子节点。</p> <p>使用模板时，元素子分支复制到片段的模型子分支。</p> <p>第一个元素(在CRXDE Lite中查看)自动视为<i>main</i>元素；节点名称不相关，并且节点本身除了由主资源表示之外，不具有特殊意义；其他元素作为子资源处理。</p> </td>
+     <td><p>包含内容片段元素定义的节点。 它是强制性的，并且需要为<strong>Main</strong>元素至少包含一个子节点，但可以包含[1..n]个子节点。</p> <p>使用模板时，元素子分支复制到片段的模型子分支。</p> <p>第一个元素（在CRXDE Lite中查看）被自动视为<i>main</i>元素；节点名称无关，并且节点本身除了由主资源表示之外没有特殊意义；其他元素作为子资源处理。</p> </td>
     </tr>
    </tbody>
   </table>
@@ -234,7 +234,7 @@ conf
     <tr>
      <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>如果存在变体节点，则此为必填字段</p> </td>
-     <td><p>定义初始变量。<br />默认情况下，该变量会添加到内容片段的所有元素。</p> <p>变体的初始内容将与相应元素相同（请参阅<code class="code">defaultContent/
+     <td><p>定义初始变量。<br /> 默认情况下，变体会添加到内容片段的所有元素。</p> <p>变体的初始内容将与相应元素相同（请参阅<code class="code">defaultContent/
        initialContentType</code>）</p> </td>
     </tr>
     <tr>

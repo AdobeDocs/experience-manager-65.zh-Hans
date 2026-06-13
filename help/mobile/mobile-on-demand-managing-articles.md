@@ -11,8 +11,8 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '653'
-ht-degree: 0%
+source-wordcount: '685'
+ht-degree: 1%
 
 ---
 
@@ -30,9 +30,9 @@ ht-degree: 0%
 >
 >请参阅联机帮助中的以下资源，以了解AEM Mobile应用程序中的以下主题：
 >
->* [设计注意事项](https://helpx.adobe.com/cn/digital-publishing-solution/help/design-app.html)
+>* [设计注意事项](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
->* [管理文章](https://helpx.adobe.com/cn/digital-publishing-solution/help/creating-articles.html)
+>* [管理文章](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
 
 ## 创建文章 {#creating-an-article}
@@ -79,7 +79,7 @@ ht-degree: 0%
 用于编辑文章的工作流：
 
 1. 在Mobile中，从目录中选择您的Mobile On-Demand应用程序。
-1. 从&#x200B;**管理文章**&#x200B;拼贴中选择源自AEM的文章。
+1. 从&#x200B;**管理文章**&#x200B;图块中选择源自AEM的文章。
 1. 单击列表视图中突出显示的文章，以在内容编辑器中将其打开。
 1. 使用内容编辑器拖动文章内容（手稿、图像、文本等）。
 
