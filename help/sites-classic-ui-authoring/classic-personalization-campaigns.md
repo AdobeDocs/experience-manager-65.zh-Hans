@@ -1,5 +1,5 @@
 ---
-title: Campaign Management
+title: 营销活动管理
 description: Campaign管理为数字营销人员提供了交付个性化内容并为访客创建专用体验的机会。 它可让您跨Web、电子邮件和移动服务编排营销活动，从而吸引访客。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,13 +11,13 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '620'
-ht-degree: 0%
+source-wordcount: '625'
+ht-degree: 4%
 
 ---
 
 
-# Campaign Management{#campaign-management}
+# 营销活动管理{#campaign-management}
 
 Campaign管理为数字营销人员提供了交付个性化内容并为访客创建专用体验的机会。
 
@@ -25,27 +25,26 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 
 本文档介绍了构成营销活动的各种元素。 更多详细信息见以下文档：
 
-* [Teaser和策略](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
+* [Teaser 和策略](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [电子邮件营销](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
 * [登陆页面](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
-* [Target优惠](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
-* [使用营销活动经理](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
+* [Target 产品建议](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
+* [使用营销活动管理器](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [了解分段](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
-* [设置活动](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
+* [设置营销活动](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 营销活动管理由各种元素组成：
 
 * **品牌**
-在Adobe Experience Manager (AEM)中，品牌是顶层单位，构成了&#x200B;**促销活动**&#x200B;的集合。
+在Adobe Experience Manager (AEM)中，品牌是顶级单元，构成了**促销活动**&#x200B;的集合。
 
 * **营销活动**
-营销活动是单个&#x200B;**体验**&#x200B;的集合。
+营销活动是单个**体验**&#x200B;的集合。
 
 * **体验**
-重点内容形成了各种体验，在&#x200B;**接触点**&#x200B;提供给访客。 有多种类型的体验可用：
+重点内容形成了各种体验，在**接触点**&#x200B;提供给访客。 有多种类型的体验可用：
 
    * **预告**
-
      [Teaser页面/段落](#teasers)用于引导特定访客&#x200B;**区段**&#x200B;访问关注其兴趣的内容。
 
      Teaser页面可以：
@@ -57,7 +56,7 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 
    * **新闻稿**
 
-     [电子邮件通信](#emailmarketing)用于吸引用户并鼓励他们访问您的网站。 这些通常采用新闻稿的形式，发送给您的&#x200B;**潜在客户**（这些潜在客户已分组到&#x200B;**列表**）。 **注意：** Adobe不打算进一步增强此功能。 建议您[使用Adobe Campaign以及与AEM](/help/sites-administering/campaign.md)的集成。
+     [电子邮件通信](#emailmarketing)用于吸引用户并鼓励他们访问您的网站。 这些通常采用新闻稿的形式，发送给您的&#x200B;**潜在客户**（这些潜在客户已分组到&#x200B;**列表**）。 **注意：** Adobe不打算进一步增强此功能。 建议您[使用Adobe Campaign以及与AEM的集成](/help/sites-administering/campaign.md)。
 
    * **Adobe Target**
 
@@ -73,13 +72,13 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 
   您收集到的有关访客的信息以及如何联系这些访客的信息构成了潜在客户的基础。 **注意：** Adobe不打算进一步增强此功能。
 
-  建议您[使用Adobe Campaign以及与AEM](/help/sites-administering/campaign.md)的集成。
+  建议您[使用Adobe Campaign以及与AEM的集成](/help/sites-administering/campaign.md)。
 
 * **列表**
 
   潜在客户将分组到列表中，以便您能够对其执行集体操作。 注意： **注意：** Adobe不打算进一步增强此功能。
 
-  建议使用[使用Adobe Campaign以及与AEM的集成。](/help/sites-administering/campaign.md)
+  建议您[使用Adobe Campaign以及与AEM的集成。](/help/sites-administering/campaign.md)
 
 * **区段**
 

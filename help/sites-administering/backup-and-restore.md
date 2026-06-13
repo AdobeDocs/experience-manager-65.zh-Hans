@@ -11,14 +11,14 @@ feature: Operations
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2314'
+source-wordcount: '2225'
 ht-degree: 0%
 
 ---
 
 # 备份和恢复{#backup-and-restore}
 
-有两种方法可以在AEM中备份和恢复存储库内容：
+在AEM中备份和恢复存储库内容的方法有两种：
 
 * 您可以创建存储库的外部备份，并将其存储在安全位置。 如果存储库出现故障，您可以将其恢复到以前的状态。
 * 您可以创建存储库内容的内部版本。 这些版本与内容一起存储在存储库中，因此您可以快速恢复已更改或删除的节点和树。
@@ -40,7 +40,7 @@ ht-degree: 0%
 
 ## 脱机备份 {#offline-backup}
 
-您始终可以执行脱机备份。 这需要AEM的停机时间，但与在线备份相比，在所需时间方面可以非常高效。
+您始终可以执行脱机备份。 这需要AEM的停机时间，但与在线备份相比，在所需时间方面可能非常高效。
 
 在大多数情况下，您将使用文件系统快照来创建存储区的只读副本。 要创建脱机备份，请执行以下步骤：
 
@@ -67,23 +67,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果在具有自定义Blobstore配置的AEM实例上使用AEM联机备份功能，建议将数据存储的路径配置为在“`crx-quickstart`”目录之外，并单独备份数据存储。
+>如果在具有自定义Blobstore配置的AEM实例上使用AEM在线备份功能，建议将数据存储的路径配置为在“`crx-quickstart`”目录之外，并单独备份数据存储。
 
 >[!CAUTION]
 >
 >联机备份仅备份文件系统。 如果将存储库内容和/或存储库文件存储在数据库中，则需要单独备份该数据库。 如果将AEM与MongoDB一起使用，请参阅有关如何使用[MongoDB本机备份工具](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/)的文档。
 
-### AEM联机备份 {#aem-online-backup}
+### AEM在线备份 {#aem-online-backup}
 
 通过存储库的在线备份，您可以创建、下载和删除备份文件。 它是一种“热”或“在线”备份功能，因此可以在存储库以读写模式正常使用时执行。
 
 >[!CAUTION]
 >
->请勿同时运行AEM Online Backup和[数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md)或[修订清理](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)。 这将对系统性能产生负面影响。
+>请勿同时运行AEM联机备份和[数据存储垃圾收集](/help/sites-administering/data-store-garbage-collection.md)或[修订清理](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup)。 这将对系统性能产生负面影响。
 
 开始备份时，您可以指定&#x200B;**目标路径**&#x200B;和/或&#x200B;**延迟**。
 
-**目标路径**&#x200B;备份文件通常保存在保存快速入门jar文件(.jar)的文件夹的父文件夹中。 例如，如果AEM jar文件位于/InstallationKits/AEM下，则会在/InstallationKits下生成备份。 您还可以为所选位置指定目标。
+**目标路径**&#x200B;备份文件通常保存在保存快速入门jar文件(.jar)的文件夹的父文件夹中。 例如，如果AEM jar文件位于/InstallationKits/AEM下，则备份将生成在/InstallationKits下。 您还可以为所选位置指定目标。
 
 如果&#x200B;**TargetPath**&#x200B;是一个目录，则在此目录中创建存储库的图像。 如果存储备份时多次使用同一个目录（或总是使用同一个目录），
 
@@ -106,19 +106,19 @@ ht-degree: 0%
 
 **延迟**&#x200B;表示时间延迟（以毫秒为单位），因此存储库性能不受影响。 默认情况下，存储库备份以全速运行。 您可以减慢创建联机备份的速度，这样就不会减慢其他任务的速度。
 
-如果延迟时间非常长，请确保在线备份不会超过24小时。 如果是，则放弃此备份，因为它可能不包含所有二进制文件。
-1毫秒的延迟通常导致10%的CPU使用率，10毫秒的延迟通常导致3%的CPU使用率。 总延迟时间（以秒为单位）的估计如下：存储库大小（以MB为单位），乘以延迟时间（以毫秒为单位），再除以2（如果使用zip选项），或再除以4（备份到目录时）。 这意味着对具有1毫秒延迟的200 MB存储库的目录的备份将备份时间增加约50秒。
+如果延迟时间非常长，请确保在线备份不会超过24小时。如果是，则放弃此备份，因为它可能不包含所有二进制文件。
+1毫秒的延迟通常导致10%的CPU使用率，而10毫秒的延迟通常导致不到3%的CPU使用率。总延迟时间（以秒为单位）的估计如下：存储库大小（以MB为单位），乘以延迟时间（以毫秒为单位），再除以2（如果使用zip选项），或再除以4（备份到目录时）。这意味着对具有1毫秒延迟的200 MB存储库的目录的备份将备份时间增加约50秒。
 
 >[!NOTE]
 >
->有关该过程的内部详细信息，请参阅[AEM Online Backup的工作方式](#how-aem-online-backup-works)。
+>有关该过程的内部详细信息，请参阅[AEM联机备份的工作方式](#how-aem-online-backup-works)。
 
 要创建备份，请执行以下操作：
 
 1. 以管理员身份登录到AEM。
 
 1. 转到&#x200B;**工具 — 操作 — 备份。**
-1. 单击&#x200B;**创建**。此时将打开备份控制台。
+1. 单击&#x200B;**创建**。 此时将打开备份控制台。
 
    ![chlimage_1-1](assets/chlimage_1-1a.png)
 
@@ -192,7 +192,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->还可以使用AEM[&#128279;](/help/sites-administering/jmx-console.md)提供的MBean 触发备份。
+>还可以使用AEM](/help/sites-administering/jmx-console.md)提供的MBean [触发备份。
 
 ### 文件系统快照备份 {#filesystem-snapshot-backup}
 
@@ -202,14 +202,14 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 >
 >如果要使用此备份方法，您的系统必须支持文件系统快照。 例如，对于Linux ，这意味着文件系统应放置在逻辑卷上。
 
-1. 对部署了AEM的文件系统创建快照。
+1. 拍摄部署AEM的文件系统的快照。
 
 1. 装载文件系统快照。
 1. 执行备份并卸载快照。
 
-### AEM联机备份的工作原理 {#how-aem-online-backup-works}
+### AEM在线备份的工作原理 {#how-aem-online-backup-works}
 
-AEM Online Backup由一系列内部操作组成，以确保正在备份的数据和正在创建的备份文件的完整性。 以下列出感兴趣的客户。
+AEM在线备份由一系列内部操作组成，以确保正在备份的数据和正在创建的备份文件的完整性。 以下列出感兴趣的客户。
 
 联机备份使用以下算法：
 
@@ -244,7 +244,7 @@ AEM Online Backup由一系列内部操作组成，以确保正在备份的数据
 您可以按如下方式恢复备份：
 
 * 如果执行了文件系统快照备份，则只需还原系统的映像即可。
-* 如果将备份创建为zip文件，只需将新文件夹中的内容解压缩，然后从该位置启动AEM。
+* 如果已将备份创建为zip文件，只需将新文件夹中的内容解压缩，然后从该位置启动AEM。
 
 ## 包备份 {#package-backup}
 

@@ -1,5 +1,5 @@
 ---
-title: 使用JMX控制台监控服务器资源
+title: 使用 JMX 控制台监控服务器资源
 description: 了解如何使用JMX控制台监控服务器资源。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing,Operations
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '4830'
-ht-degree: 0%
+source-wordcount: '4969'
+ht-degree: 1%
 
 ---
 
-# 使用JMX控制台监控服务器资源{#monitoring-server-resources-using-the-jmx-console}
+# 使用 JMX 控制台监控服务器资源{#monitoring-server-resources-using-the-jmx-console}
 
 通过JMX控制台，您可以监视和管理CRX服务器上的服务。 后面的部分总结了通过JMX框架公开的属性和操作。
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >有关其他工作流管理工具和可能的工作流实例状态的说明，请参阅[工作流控制台](/help/sites-administering/workflows-administering.md)。
 
-### 运营 {#operations}
+### 运维 {#operations}
 
 **listRunningWorkflowsPerModel**&#x200B;列出每个工作流模型正在运行的工作流实例数。
 
@@ -107,7 +107,7 @@ ht-degree: 0%
    * 发起者
    * 实例ID
    * 模型ID
-   * 有效负荷
+   * 负载
    * 开始注释
    * 工作流标题
 
@@ -125,7 +125,7 @@ ht-degree: 0%
    * 发起者
    * 实例ID
    * 模型ID
-   * 有效负荷
+   * 负载
    * 开始注释
    * 工作流标题
 
@@ -144,7 +144,7 @@ ht-degree: 0%
    * 发起者
    * 实例ID
    * 模型ID
-   * 有效负荷
+   * 负载
    * 开始注释
    * 工作流标题
 
@@ -209,7 +209,7 @@ ht-degree: 0%
    * 发起者
    * 实例ID
    * 模型ID
-   * 有效负荷
+   * 负载
    * 开始注释
    * 工作流标题
 
@@ -244,7 +244,7 @@ ht-degree: 0%
  <tbody>
   <tr>
    <th>键</th>
-   <th>价值</th>
+   <th>值</th>
   </tr>
   <tr>
    <td>option.node.and.property.with.same.name.supported</td>
@@ -252,7 +252,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>指示不可引用节点标识符的稳定性。 可以使用以下值：
+   <td>指示不可引用节点标识符的稳定性。可以使用以下值：
     <ul>
      <li>identifier.stability.infinition.duration：标识符不会更改。</li>
      <li>identifier.stability.method.duration：在方法调用之间可以更改标识符。</li>
@@ -317,7 +317,7 @@ ht-degree: 0%
    <td>true表示LEVEL_1_SUPPORTED和OPTION_XML_IMPORT_SUPPORTED均为true。</td>
   </tr>
   <tr>
-   <td>write.supported</td>
+   <td>支持write</td>
    <td>true表示存储库使用API提供写访问权限。 false表示只读访问。</td>
   </tr>
   <tr>
@@ -333,7 +333,7 @@ ht-degree: 0%
    <td>true表示应用程序可以对存储库执行日志观察。 通过日志观察，可以获得特定时间段内的一组更改通知。 </td>
   </tr>
   <tr>
-   <td>query.languages</td>
+   <td>query.lanages</td>
    <td>存储库支持的查询语言。 无值表示不支持查询。</td>
   </tr>
   <tr>
@@ -401,7 +401,7 @@ ht-degree: 0%
    <td>存储库供应商的名称。</td>
   </tr>
   <tr>
-   <td>query.joins</td>
+   <td>query.join</td>
    <td><p>查询中连接的支持级别。 可以使用以下值：</p>
     <ul>
      <li>query.joins.none：不支持连接。 查询可以使用一个选择器。</li>
@@ -430,7 +430,7 @@ ht-degree: 0%
    <td>true表示存储库支持同名的同级节点（具有相同父项的节点）。</td>
   </tr>
   <tr>
-   <td>node.type.management.residual.definitions.supported</td>
+   <td>node.type.management.residence.definitions.supported</td>
    <td>true表示存储库支持带有剩余定义的名称属性。 如果受支持，项目定义的名称属性可以是星号(“*”)。</td>
   </tr>
   <tr>
@@ -446,7 +446,7 @@ ht-degree: 0%
    <td>true表示option.xml.export.support为true，而query.languages的长度不为零。</td>
   </tr>
   <tr>
-   <td>option.unfiled.content.supported</td>
+   <td>option.unfield.content.supported</td>
    <td>true表示存储库支持未归档的内容。 未归档的节点不属于存储库层次结构。</td>
   </tr>
   <tr>
@@ -526,7 +526,7 @@ ht-degree: 0%
 
 **ClusterNodeId**&#x200B;存储库群集的此节点的标识符。 只读。
 
-### 运营 {#operations-1}
+### 运维 {#operations-1}
 
 **createWorkspace**&#x200B;在此存储库中创建工作区。
 
@@ -672,7 +672,7 @@ ht-degree: 0%
 
 **PopularQueriesQueueSize** PopularQueries列表中的最大查询数。 读写。
 
-### 运营 {#operations-2}
+### 运维 {#operations-2}
 
 **clearSlowQueriesQueue**&#x200B;从SlowQueries列表中删除所有查询。
 
@@ -691,7 +691,7 @@ ht-degree: 0%
 * **域：** com.adobe.granite.replication
 * **类型：**&#x200B;代理
 * **名称：**&#x200B;没有值
-* **属性：** {id=&quot;*名称*&quot;}，其中&#x200B;*名称*&#x200B;是代理Name属性的值。
+* **属性：** {id="*Name*"}，其中&#x200B;*Name*&#x200B;是代理Name属性的值。
 
 ### 属性 {#attributes-3}
 
@@ -733,7 +733,7 @@ ht-degree: 0%
 
 **QueueLastProcessTime**&#x200B;指示上一个作业何时完成的日期值。 只读。
 
-### 运营 {#operations-3}
+### 运维 {#operations-3}
 
 **queueForceRetry**&#x200B;对于被阻止的队列，向队列发出重试命令。
 
@@ -751,7 +751,7 @@ ht-degree: 0%
 
 * 域： org.apache.sling
 * 类型：引擎
-* 属性：{service=RequestProcessor}
+* 属性: {service=RequestProcessor}
 
 ### 属性 {#attributes-4}
 
@@ -765,7 +765,7 @@ ht-degree: 0%
 
 **MeanRequestDurationMsec**&#x200B;处理请求所需的平均时间。 使用自上次重置统计信息以来的所有请求计算平均值
 
-### 运营 {#operations-4}
+### 运维 {#operations-4}
 
 **resetStatistics**&#x200B;将所有统计信息设置为零。 当您需要分析特定时间范围内的请求处理性能时，请重置统计信息。
 
@@ -793,7 +793,7 @@ ht-degree: 0%
 * 域： com.adobe.granite.quickstart
 * 类型：启动器
 
-### 运营 {#operations-5}
+### 运维 {#operations-5}
 
 **log**
 
@@ -851,7 +851,7 @@ ht-degree: 0%
      <li>内存管理器</li>
      <li>内存池</li>
      <li>操作系统</li>
-     <li>运行时</li>
+     <li>运行时间</li>
      <li>线程</li>
     </ul> </td>
    <td><a href="https://docs.oracle.com/javase/8/docs/api/javax/management/package-summary.html">javax.management</a>包</td>

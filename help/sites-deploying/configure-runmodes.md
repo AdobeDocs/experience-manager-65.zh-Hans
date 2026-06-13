@@ -1,6 +1,6 @@
 ---
 title: 运行模式
-description: 了解如何使用运行模式针对特定目的调整AEM实例。
+description: 了解如何使用运行模式出于特定目的调整AEM实例。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '746'
+source-wordcount: '750'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ ht-degree: 1%
 
 * `publish` + `intranet`
 
-* 根据需要。.
+* 根据需要。 . .
 
 每次启动时也可以选择定制的运行模式。
 
@@ -120,9 +120,9 @@ nosamplecontent运行模式专为生产安装而设计。
 
 如果您为多种运行模式定义了配置，则需要定义要在启动时使用的配置。 有多种方法可指定要使用的运行模式；分辨率的顺序为：
 
-1. [系统属性(](#using-a-system-property-in-the-start-script)
-1. [&#128279;](#using-the-sling-properties-file)
-1. [&#128279;](#using-the-r-option)
+1. [系统属性(`-D`)](#using-a-system-property-in-the-start-script)
+1. [`sling.properties`文件](#using-the-sling-properties-file)
+1. [`-r`选项](#using-the-r-option)
 1. [文件名检测](#filename-detection-renaming-the-jar-file)
 
 当您使用应用程序服务器时，还可以[在web.xml](#defining-the-run-mode-in-web-xml-with-application-server)中定义运行模式。
@@ -141,7 +141,7 @@ nosamplecontent运行模式专为生产安装而设计。
 
 ### 使用 — r选项 {#using-the-r-option}
 
-启动快速启动时，可以使用`-r`选项激活自定义运行模式。 例如，使用以下命令启动一个运行模式设置为dev的AEM实例。&quot;
+启动快速启动时，可以使用`-r`选项激活自定义运行模式。 例如，使用以下命令启动一个运行模式设置为dev的AEM实例。 &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -160,7 +160,7 @@ java -jar cq-56-p4545.jar -r dev
 通过在安装之前重命名安装jar文件，可以激活以下两种安装运行模式：
 
 * 发布
-* 作者
+* author
 
 jar文件必须使用命名约定：
 
