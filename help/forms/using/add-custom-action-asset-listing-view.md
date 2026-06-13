@@ -1,5 +1,5 @@
 ---
-title: 向资产列表视图添加自定义操作
+title: 在资产列表视图中添加自定义操作
 description: 本文介绍了如何将自定义操作添加到资产列表视图
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1333'
-ht-degree: 3%
+source-wordcount: '1381'
+ht-degree: 6%
 
 ---
 
-# 向资产列表视图添加自定义操作{#add-custom-action-to-the-asset-listing-view}
+# 在资产列表视图中添加自定义操作{#add-custom-action-to-the-asset-listing-view}
 
 ## 概述 {#overview}
 
@@ -27,7 +27,7 @@ ht-degree: 3%
 * 一个或多个资源类型或字母
 * 选择单个或多个资源/字母时执行（操作/命令变为活动状态），或没有选择时执行
 
-此自定义项通过向“资源列表”视图中添加命令“下载平面PDF”的方案进行演示。 此自定义方案允许用户下载单个选定书信的平面PDF。
+此自定义体现在向“资产列表”视图中添加命令“下载平面PDF”的方案中。 此自定义方案允许用户下载单个选定书信的平面PDF。
 
 ### 先决条件 {#prerequisites}
 
@@ -37,11 +37,11 @@ ht-degree: 3%
 * JavaScript
 * Java™
 
-## 方案：向“信件”列表用户界面添加命令以下载信件的平面PDF版本 {#addcommandtoletters}
+## 情景：向“信件”列表用户界面添加命令，以下载信件的平面PDF版本 {#addcommandtoletters}
 
-以下步骤将命令“Download Flat Asset”添加到Letter的Asset Listing视图中，并允许用户下载所选信件的平面PDF。PDF 将这些步骤与相应的代码和参数一起使用，您可以为不同的资产（例如数据字典或文本）添加一些其他功能。
+以下步骤将命令“Download Flat PDF”添加到信函的资源列表视图中，并允许用户下载选定信函的平面PDF。 将这些步骤与相应的代码和参数一起使用，您可以为不同的资产（例如数据字典或文本）添加一些其他功能。
 
-要自定义“通信管理”以允许用户下载平面信件PDF，请完成以下步骤：
+要自定义通信管理以允许用户下载平面信件PDF，请完成以下步骤：
 
 1. 转到`https://'[server]:[port]'/[ContextPath]/crx/de`并以管理员身份登录。
 
@@ -62,7 +62,7 @@ ht-degree: 3%
 
    1. 确保“覆盖节点”对话框具有以下值：
 
-      **路径：** /libs/fd/cm/ma/gui/content/cmassets/jcr：content/body/content/header/items/selection/items
+      **路径：** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
       **位置：** /apps/
 
@@ -82,7 +82,7 @@ ht-degree: 3%
 
       **名称：** downloadFlatPDF（或您要为此属性提供的名称）
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击已创建的新节点（此处downloadFlatPDF）。 CRX显示节点的属性。
 
@@ -108,7 +108,7 @@ ht-degree: 3%
         <tr>
         <td>图标</td>
         <td>字符串</td>
-        <td>icon-download<br /> <br />通信管理显示在命令/菜单左侧的图标。 有关可用的不同图标和设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans" target="_blank">CoralUI图标文档</a>。<br /> </td>
+        <td>icon-download<br /> <br />通信管理显示在命令/菜单左侧的图标。 有关可用的不同图标和设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">CoralUI图标文档</a>。<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -254,7 +254,7 @@ ht-degree: 3%
 
       **名称：** letterpdfdownloader (或者您要为此属性提供的名称 — 必须是唯一的。 如果在此处使用不同的名称，请在formaction.js文件的ACTION_URL变量中指定相同的名称。)
 
-      **类型：** nt：unstructured
+      **类型：** nt:unstructured
 
    1. 单击您创建的新节点（此处downloadFlatPDF）。 CRX显示节点的属性。
 
@@ -264,7 +264,7 @@ ht-degree: 3%
       |---|---|---|
       | sling:resourceType | 字符串 | fd/cm/ma/gui/components/admin/clientlibs/admin |
 
-1. 在下列位置使用命令的操作处理代码创建一个名为POST.jsp的文件：
+1. 使用以下位置命令的操作处理代码创建一个名为POST.jsp的文件：
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
@@ -272,12 +272,12 @@ ht-degree: 3%
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-      将文件命名为POST.jsp。 (仅文件名必须是POST.jsp。)
+      将文件命名为POST.jsp。 （仅文件名必须是POST.jsp。）
 
    1. 双击&#x200B;**POST.jsp**&#x200B;文件以在CRX中将其打开。
    1. 将以下代码添加到POST.jsp文件，然后单击&#x200B;**全部保存**：
 
-      此代码特定于书信渲染服务。 对于任何其他资产，请将该资产的Java™库添加到此代码中。 有关AEM Forms API的更多信息，请参阅[AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)。
+      此代码特定于书信渲染服务。 对于任何其他资产，请将该资产的Java™库添加到此代码中。 有关AEM Forms API的更多信息，请参阅[AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
 
       有关AEM库的详细信息，请参阅AEM [组件](/help/sites-developing/components.md)。
 
@@ -348,19 +348,19 @@ ht-degree: 3%
 
 ## 使用自定义功能下载信件的平面PDF {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-添加了自定义功能以下载信件的平面PDF后，可以使用以下步骤下载所选信件的平面PDF版本：
+添加了自定义功能以下载信件的平面PDF后，您可以使用以下步骤下载所选信件的平面PDF版本：
 
 1. 转到`https://'[server]:[port]'/[ContextPath]/projects.html`并登录。
 
 1. 选择&#x200B;**Forms >书信**。 通信管理列出了系统中可用的信件。
 1. 单击&#x200B;**选择**，然后单击书信以将其选定。
-1. 选择&#x200B;**更多** > **&lt;下载平面PDF>**（使用本文说明创建的自定义功能）。 出现“将书信下载为PDF”对话框。
+1. 选择&#x200B;**更多** > **&lt;下载平面PDF>**（使用本文说明创建的自定义功能）。 将书信下载为PDF对话框出现。
 
    菜单项名称、功能和替换文本基于[中创建的自定义设置：向信件列表用户界面添加命令以下载信件的平面PDF版本。](#addcommandtoletters)
 
    ![自定义功能：下载平面PDF](assets/5_downloadflatpdf.png)
 
-1. 在以PDF形式下载书信对话框中，选择要在PDF中填充数据的相关XML。
+1. 在将书信下载为PDF对话框中，选择要在PDF中填充数据的相关XML。
 
    >[!NOTE]
    >
@@ -368,4 +368,4 @@ ht-degree: 3%
 
    ![将书信下载为PDF](assets/6_downloadflatpdf.png)
 
-   该信件会以平面PDF下载到您的计算机。
+   该信件会作为平面PDF下载到您的计算机。

@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2781'
+source-wordcount: '2779'
 ht-degree: 2%
 
 ---
 
 # 自适应表单表达式{#adaptive-form-expressions}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 自适应表单为具有动态脚本编写功能的最终用户提供经过优化和简化的表单填写体验。 它允许您编写表达式以添加各种行为，如动态显示/隐藏字段和面板。 它还允许您添加计算字段、使字段只读、添加验证逻辑等。 动态行为基于用户输入或预填充的数据。
 
@@ -71,13 +71,13 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 
 ### 计算表达式 {#calculate-expression}
 
-计算表达式用于使用表达式自动计算字段的值。 通常，此类表达式使用其他字段的值属性。 例如，`field2.value + field3.value`。每当`field2`或`field3`的值更改时，就会重新触发表达式并重新计算该值。
+计算表达式用于使用表达式自动计算字段的值。 通常，此类表达式使用其他字段的值属性。 例如，`field2.value + field3.value`。 每当`field2`或`field3`的值更改时，就会重新触发表达式并重新计算该值。
 
 **应用于**：字段
 
 **返回类型**：表达式返回与显示表达式结果的字段（例如，小数）兼容的值。
 
-**示例**：用于显示&#x200B;**field1**&#x200B;中两个字段之和的计算表达式是：
+**示例**：用于显示&#x200B;**field1**中两个字段之和的计算表达式是：
 `field2.value + field3.value`
 
 ### 单击表达式 {#click-expression}
@@ -137,7 +137,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 **应用于**：字段
 
-**返回类型**：表达式返回代表字段验证状态的布尔值。 值&#x200B;**false**&#x200B;表示该字段无效，**true**&#x200B;表示该字段有效。
+**返回类型**：表达式返回代表字段验证状态的布尔值。值&#x200B;**false**&#x200B;表示该字段无效，**true**表示该字段有效。
 **示例**：对于表示UK邮政编码的字段，验证表达式为：
 
 (**this.value**&#x200B;和&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -159,7 +159,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 **返回类型：**&#x200B;值提交脚本表达式未返回任何值。 如果有任何表达式返回值，则忽略该值。
 
-**示例：**&#x200B;若要在提交时将在字段中输入的字母的大小写转换为大写，值commit表达式为：
+**示例：**若要在提交时将在字段中输入的字母的大小写转换为大写，值commit表达式为：
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -184,7 +184,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 **返回类型**：表达式返回布尔值，表示当前面板是否有效。 **True**&#x200B;表示当前面板有效，用户可以导航到下一个面板。
 
-**示例**：在以各种面板组织的表单中，导航到下一个面板之前，将验证当前面板。 在这种情况下，将使用步骤完成表达式。 通常，这些表达式使用GuideBridge验证API。 步骤完成表达式的示例如下：
+**示例**：在以各种面板组织的表单中，导航到下一个面板之前，将验证当前面板。在这种情况下，将使用步骤完成表达式。通常，这些表达式使用GuideBridge验证API。步骤完成表达式的示例如下：
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## 自适应表单中的验证 {#validations-in-adaptive-form}
@@ -193,13 +193,13 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 在字段中添加验证的方法包括：
 
-### 必填 {#required}
+### 必需 {#required}
 
 若要将某个组件设为必需，在该组件的&#x200B;**编辑**&#x200B;对话框中，您可以选择选项&#x200B;**标题和文本>必需**。 您还可以添加相应的&#x200B;**必需消息**（可选）。
 
 ### 验证模式 {#validation-patterns}
 
-字段有多个现成的验证模式。 要选择验证模式，请在组件的&#x200B;**编辑**&#x200B;对话框中，找到&#x200B;**模式**&#x200B;部分并选择&#x200B;**模式**。 您可以在&#x200B;**模式**&#x200B;文本框中创建自己的自定义验证模式。 仅当填写的数据符合验证模式时，才返回验证状态&#x200B;**True**，否则返回&#x200B;**False**。 要编写您自己的自定义验证模式，请参阅对HTML5表单的[Picture子句支持](/help/forms/using/picture-clause-support.md)。
+字段有多个现成的验证模式。 要选择验证模式，请在组件的&#x200B;**编辑**&#x200B;对话框中，找到&#x200B;**模式**&#x200B;部分并选择&#x200B;**模式**。 您可以在&#x200B;**模式**&#x200B;文本框中创建自己的自定义验证模式。 仅当填写的数据符合验证模式时，才返回验证状态&#x200B;**True**，否则返回&#x200B;**False**。 要编写您自己的自定义验证模式，请参阅HTML5表单的[Picture子句支持](/help/forms/using/picture-clause-support.md)。
 
 ### 验证表达式 {#validation-expressions}
 
@@ -273,15 +273,15 @@ guideBridge.on("elementValueChanged", function (event, data)  {
 
 ### 为字段创建自定义模式 {#creating-custom-patterns-for-a-field}
 
-如上所述，自适应表单允许作者提供验证模式或显示格式。 除了使用开箱即用模式之外，您还可以为自适应表单组件定义可重用的自定义模式。 例如，您可以定义文本字段或数字字段。 定义后，可在指定类型组件的所有表单中使用这些模式。 例如，您可以为文本字段创建自定义模式，并在其自适应表单的文本字段中使用该模式。 您可以通过访问组件的“编辑”对话框中的“模式”部分来选择自定义模式。 有关模式定义或格式的详细信息，请参阅HTML5表单[&#128279;](/help/forms/using/picture-clause-support.md)的Picture子句支持。
+如上所述，自适应表单允许作者提供验证模式或显示格式。 除了使用开箱即用模式之外，您还可以为自适应表单组件定义可重用的自定义模式。 例如，您可以定义文本字段或数字字段。 定义后，可在指定类型组件的所有表单中使用这些模式。 例如，您可以为文本字段创建自定义模式，并在其自适应表单的文本字段中使用该模式。 您可以通过访问组件的“编辑”对话框中的“模式”部分来选择自定义模式。 有关模式定义或格式的详细信息，请参阅HTML5表单的[Picture子句支持](/help/forms/using/picture-clause-support.md)。
 
 执行以下步骤可为特定字段类型创建自定义模式，并将其重复用于相同类型的其他字段：
 
-1. 在创作实例上导航到CRXDE Lite。
-1. 创建一个文件夹以保留您的自定义模式。 在/apps目录下，创建类型为sling：folder的节点。 例如，创建名为`customPatterns`的节点。 在此节点下，创建另一个类型为`nt:unstructed`的节点并将其命名为`textboxpatterns`。 此节点包含要添加的各种自定义模式。
+1. 在创作实例上导航到CRXDE Lite 。
+1. 创建一个文件夹以保留您的自定义模式。 在/apps目录下，创建sling:folder类型的节点。 例如，创建名为`customPatterns`的节点。 在此节点下，创建另一个类型为`nt:unstructed`的节点并将其命名为`textboxpatterns`。 此节点包含要添加的各种自定义模式。
 1. 打开已创建节点的属性选项卡。 例如，打开`textboxpatterns`的“属性”选项卡。 将`guideComponentType`属性添加到此节点，并将其值设置为&#x200B;*fd/af/components/formatter/guideTextBox*。
 
-1. 此属性的值因要定义模式的字段而异。 对于数值字段，`guideComponentType`属性的值为&#x200B;*fd/af/components/formatter/guideNumericBox*。 日期选取器字段的值为&#x200B;*fd/af/components/formatter/guideDatepicker*。
+1. 此属性的值因要定义模式的字段而异。对于数值字段，`guideComponentType`属性的值为&#x200B;*fd/af/components/formatter/guideNumericBox*。Datepicker字段的值为&#x200B;*fd/af/components/formatter/guideDatepicker*。
 &quot;
 1. 您可以通过为`textboxpatterns`节点分配属性来添加自定义模式。 添加具有名称（例如，`pattern1`）的属性，并将其值设置为要添加模式。 例如，添加值为Fax=text{99-999-9999999}的属性`pattern1`。 该模式适用于您在自适应Forms中使用的所有文本框。
 

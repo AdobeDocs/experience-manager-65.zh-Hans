@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2190'
 ht-degree: 0%
 
 ---
@@ -25,11 +25,11 @@ XFA表单模板或XDP是用于以下项目的模板：
 
 * 布局片段
 
-XDP是在AdobeForms Designer中设计的。 本文详细介绍了如何设计您的XDP以创建有效的对应/交互式通信，例如，在何处使用表单字段或目标区域，以及在何时使用布局片段。
+在Adobe Forms Designer中设计XDP。 本文详细介绍了如何设计您的XDP以创建有效的对应/交互式通信，例如，在何处使用表单字段或目标区域，以及在何时使用布局片段。
 
 ## 为信件或交互式通信的打印渠道创建布局 {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-布局定义交互式通信的信件/打印渠道的图形布局。 布局可包含典型的表单字段，如“Address”和“Reference Number”。 它还包含表示目标区域的空子表单。 在表单设计器中创建布局，完成后，应用程序专家会将其上传到AEM服务器。 从那里，您可以在创建交互式通信的通信模板或打印渠道时选择布局。
+布局定义交互式通信的信件/打印渠道的图形布局。 布局可包含典型的表单字段，如“Address”和“Reference Number”。 它还包含表示目标区域的空子表单。 在表单设计器中创建布局，完成后，应用程序专员会将其上传到AEM服务器。 从那里，您可以在创建交互式通信的通信模板或打印渠道时选择布局。
 
 ![Designer：创建布局](assets/claimsubrogationlayout.png)
 

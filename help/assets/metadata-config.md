@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
 source-wordcount: '2005'
-ht-degree: 4%
+ht-degree: 7%
 
 ---
 
@@ -28,7 +28,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets]保留每个资源的元数据。 它允许更轻松地分类和组织资产，并帮助查找特定资产的人员。 利用使用资源保留和管理元数据的功能，您可以根据资源的元数据自动组织和处理资源。 [!DNL Adobe Experience Manager Assets]允许管理员配置和自定义元数据功能，以修改默认的Adobe产品。
+[!DNL Adobe Experience Manager Assets] 保持每个资产的元数据。 它可以让用户更轻松地分类和组织资产，帮助用户查找特定的资产。 通过保持和管理资产的元数据的功能，您可以根据资产的元数据自动组织和处理资产。 [!DNL Adobe Experience Manager Assets]允许管理员配置和自定义元数据功能，以修改默认的Adobe产品。
 
 ## 编辑元数据架构 {#metadata-schema}
 
@@ -120,7 +120,7 @@ Scope of metadata articles:
 
 <!--
 TBD: Revisit to find out the correct config. and update these steps. When fixed, also o
-These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/cn/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
+These steps have been carried forward from old AEM versions. See https://helpx.adobe.com/experience-manager/6-2/assets/using/metadata-profiles.html#ApplyingaMetadataProfiletoFolders
 
 ### Configuration to apply a metadata profile globally {#apply-a-metadata-profile-globally}
 
@@ -280,7 +280,7 @@ To apply a metadata profile globally, follow these steps:
 >
 >* [元数据概念和了解](metadata-concepts.md)。
 >* [编辑多个收藏集的元数据属性](manage-collections.md#editing-collection-metadata-in-bulk)。
->* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html?lang=zh-Hans)。
+>* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-export.html)。
 >* [用于处理元数据、图像和视频的配置文件](processing-profiles.md)。
 >* [组织数字资产以使用处理配置文件的最佳实践](/help/assets/organize-assets.md)。
 >* [XMP写回](/help/assets/xmp-writeback.md)。

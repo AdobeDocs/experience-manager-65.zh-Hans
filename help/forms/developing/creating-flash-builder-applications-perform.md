@@ -1,6 +1,6 @@
 ---
 title: 创建使用HTTP令牌执行SSO身份验证的Flash Builder应用程序
-description: 使用使用HTTP令牌执行单点登录(SSO)身份验证的Flash Builder创建客户端应用程序。 对用户操作进行一次身份验证，然后使用该身份验证执行多个AEM Forms操作。
+description: 使用Flash Builder创建一个客户端应用程序，该应用程序使用HTTP令牌执行单点登录(SSO)身份验证。 对用户操作进行一次身份验证，然后使用该身份验证执行多个AEM Forms操作。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,22 +11,22 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1794'
 ht-degree: 0%
 
 ---
 
-# 创建使用HTTP令牌执行SSO身份验证的Flash Builder应用程序 {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+# 创建使用 HTTP 令牌执行 SSO 身份验证的 Flash Builder 应用程序 {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
-您可以使用使用HTTP令牌执行单点登录(SSO)身份验证的Flash Builder来创建客户端应用程序。 例如，假设您使用Flash Builder创建基于Web的应用程序。 接下来，假定应用程序包含不同的视图，其中每个视图调用不同的AEM Forms操作。 您可以创建一个登录页面，让用户只进行一次身份验证，而不是为每个Forms操作验证用户。 一旦验证，用户能够调用多个操作而无需再次验证。 例如，如果用户已登录Workspace(或其他Forms应用程序)，则无需再次进行身份验证。
+您可以使用Flash Builder创建客户端应用程序，该应用程序使用HTTP令牌执行单点登录(SSO)身份验证。 例如，假设您使用Flash Builder创建了一个基于Web的应用程序。 接下来，假定应用程序包含不同的视图，其中每个视图调用不同的AEM Forms操作。 您可以创建一个登录页面，让用户只进行一次身份验证，而不是为每个Forms操作验证用户。 一旦验证，用户能够调用多个操作而无需再次验证。 例如，如果用户已登录Workspace（或其他Forms应用程序），则无需再次进行身份验证。
 
 虽然客户端应用程序包含执行SSO身份验证所需的应用程序逻辑，但AEM forms user Management会执行实际的用户身份验证。 要使用HTTP令牌对用户进行身份验证，客户端应用程序将调用Authentication Manager服务的`authenticateWithHTTPToken`操作。 用户管理能够使用HTTP令牌对用户进行身份验证。 对于对AEM Forms的后续远程处理或Web服务调用，不必为身份验证传递凭据。
 
 >[!NOTE]
 >
->在阅读本节之前，建议您熟悉如何使用远程处理来调用AEM Forms。 (请参阅[使用AEM Forms Remoting调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。)
+>在阅读本节之前，建议您熟悉如何使用远程处理来调用AEM Forms。 （请参阅[使用AEM Forms Remoting调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting)。）
 
 在使用SSO对用户进行身份验证后，将调用名为`MyApplication/EncryptDocument`的以下AEM Forms短期进程。 （有关此进程的信息，例如其输入和输出值，请参阅[短期进程示例](/help/forms/developing/aem-forms-processes.md)。）
 
@@ -36,7 +36,7 @@ ht-degree: 0%
 >
 >此流程并非基于现有的AEM Forms流程。 要遵循讨论如何调用此进程的代码示例，请使用workbench创建名为`MyApplication/EncryptDocument`的进程。 （请参阅[使用Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)。）
 
-使用Flash Builder构建的客户端应用程序与在`/um/login`和`/um/logout`处配置的User Manager的安全servlet交互。 也就是说，客户端应用程序在启动期间向`/um/login` URL发送请求，以确定用户的状态。 然后，User Manager会使用用户状态进行响应。 客户端应用程序和User Manager安全servlet使用HTTP进行通信。
+使用Flash Builder构建的客户端应用程序与在`/um/login`和`/um/logout`处配置的用户管理器安全servlet交互。 也就是说，客户端应用程序在启动期间向`/um/login` URL发送请求，以确定用户的状态。 然后，User Manager会使用用户状态进行响应。 客户端应用程序和User Manager安全servlet使用HTTP进行通信。
 
 **请求格式**
 
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 **登录进程**
 
-当客户端应用程序启动时，您可以向`/um/login`安全Servlet发出POST请求。 例如，`https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`。当请求到达User Manager安全servlet时，它会执行以下步骤：
+当客户端应用程序启动时，您可以向`/um/login`安全servlet发出POST请求。 例如，`https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`。 当请求到达User Manager安全servlet时，它会执行以下步骤：
 
 1. 它查找名为`lcAuthToken`的Cookie。 如果用户已登录到另一个Forms应用程序，则此Cookie存在。 如果找到Cookie，则会验证其内容。
 1. 如果启用了基于标头的SSO，则servlet会查找已配置的标头以确定用户的身份。
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 收到此请求时，用户管理器安全servlet删除`lcAuthToken` Cookie并使用`authstate=LOGGED_OUT`进行响应。 客户端应用程序收到此值后，可以执行清理任务。
 
-## 创建使用SSO验证AEM Forms用户的客户端应用程序 {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
+## 创建使用SSO验证AEM表单用户的客户端应用程序 {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
 
 为了演示如何创建执行SSO验证的客户端应用程序，创建了一个示例客户端应用程序。 下图显示了客户端应用程序为使用SSO验证用户而执行的步骤。
 
@@ -128,7 +128,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->请注意，有两个名为um和views的程序包。 创建客户端应用程序时，请确保将文件放置到其正确的包中。 此外，请确保将adobe-remoting-provider.swc文件添加到项目的类路径中。 (请参阅[包含AEM Forms Flex库文件](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)。)
+>请注意，有两个名为um和views的程序包。 创建客户端应用程序时，请确保将文件放置到其正确的包中。 此外，请确保将adobe-remoting-provider.swc文件添加到项目的类路径中。 （请参阅[包含AEM Forms Flex库文件](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)。）
 
 ### 创建SSOStandalone.mxml文件 {#creating-the-ssostandalone-mxml-file}
 

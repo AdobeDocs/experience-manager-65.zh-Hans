@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '6201'
-ht-degree: 0%
+source-wordcount: '6236'
+ht-degree: 1%
 
 ---
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果服务器时区与客户端时区不同，则在WebSphere Application Server群集上使用.NET客户端在本机SOAP栈栈上使用AEM Forms生成PDF服务的WSDL时，可能会出现以下用户管理身份验证错误：
+>如果服务器时区与客户端时区不同，则在WebSphere Application Server群集上使用.NET客户端在本机SOAP栈栈上使用AEM Forms Generate PDF服务的WSDL时，可能会出现以下用户管理身份验证错误：
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 
@@ -203,7 +203,7 @@ ht-degree: 0%
 
 [步骤摘要](users.md#summary-of-steps)
 
-[快速入门(SOAP模式)：使用Java API添加用户](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API添加用户](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -336,7 +336,7 @@ ht-degree: 0%
 
 [快速启动（EJB模式）：使用Java API删除用户](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[快速入门(SOAP模式)：使用Java API删除用户](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API删除用户](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -403,8 +403,8 @@ ht-degree: 0%
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 有关这些JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -569,7 +569,7 @@ ht-degree: 0%
 
 1. 包括项目文件。
 
-   * 创建使用目录管理器WSDL的Microsoft .NET客户端程序集。 (请参阅[使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。)
+   * 创建使用目录管理器WSDL的Microsoft .NET客户端程序集。 （请参阅[使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。）
    * 引用Microsoft .NET客户端程序集。 （请参阅[创建使用Base64编码的.NET客户端程序集](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)。）
 
 1. 创建DirectoryManagerService客户端。
@@ -668,7 +668,7 @@ ht-degree: 0%
 
 [步骤摘要](users.md#summary-of-steps)
 
-[快速入门(SOAP模式)：使用Java API管理角色和权限](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API管理角色和权限](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -828,8 +828,8 @@ ht-degree: 0%
 
 1. 包括项目文件。
 
-   * 创建使用Authentication Manager WSDL的Microsoft .NET客户端程序集。 (请参阅[使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。)
-   * 引用Microsoft .NET客户端程序集。 (请参阅[使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)中的“引用.NET客户端程序集”。)
+   * 创建使用Authentication Manager WSDL的Microsoft .NET客户端程序集。 （请参阅[使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。）
+   * 引用Microsoft .NET客户端程序集。 （请参阅[使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)中的“引用.NET客户端程序集”。）
 
 1. 创建AuthenticationManagerService客户端。
 
@@ -851,7 +851,7 @@ ht-degree: 0%
 
 ## 以编程方式同步用户 {#programmatically-synchronizing-users}
 
-您可以使用用户管理API以编程方式同步用户。 在同步用户时，您将使用用户存储库中的用户数据更新AEM Forms。 例如，假设您将新用户添加到用户存储库中。 执行同步操作后，新用户将成为AEM Forms用户。 此外，用户存储库中不再存在的用户也将从AEM Forms中删除。
+您可以使用用户管理API以编程方式同步用户。 在同步用户时，您将使用用户存储库中的用户数据更新AEM Forms。 例如，假设您将新用户添加到用户存储库中。 执行同步操作后，新用户将成为AEM表单用户。 此外，用户存储库中不再存在的用户也将从AEM Forms中删除。
 
 下图显示了AEM Forms与用户存储库进行同步的情况。
 

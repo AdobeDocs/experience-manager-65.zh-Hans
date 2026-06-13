@@ -19,7 +19,7 @@ ht-degree: 8%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-schemas.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 组织可以提供一个元数据模型，用于增强资产发现、使用、互操作性等。 正确的元数据应用程序对于维护元数据驱动的工作流程和流程至关重要。 要遵循组织范围的元数据策略和标准，您可以使用帮助DAM用户一致的元数据架构。 [!DNL Adobe Experience Manager]允许使用简单灵活的方法创建、维护和应用元数据架构。
@@ -233,7 +233,7 @@ ht-degree: 8%
 
    ![select_dependentfield](assets/select_dependentfield.png)
 
-1. 在&#x200B;**[!UICONTROL 要求]**&#x200B;下，根据新规则&#x200B;**选项选择**&#x200B;必需。
+1. 在&#x200B;**[!UICONTROL 要求]**&#x200B;下，根据新规则&#x200B;]**选项选择**[!UICONTROL &#x200B;必需。
 1. 单击&#x200B;**[!UICONTROL 添加规则]**&#x200B;并选择&#x200B;**[!UICONTROL 资产类型]**&#x200B;字段以创建依赖关系。 还可以选择创建依赖关系时所依据的字段值。 在这种情况下，请选择“ **[!UICONTROL 视频]**”。 单击&#x200B;**[!UICONTROL 完成]**&#x200B;以保存更改。
 
    ![define_rule](assets/define_rule.png)

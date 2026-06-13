@@ -1,5 +1,5 @@
 ---
-title: 动态创建DDX文档
+title: 动态创建 DDX 文档
 description: 使用Java API和Web服务API动态创建DDX文档。 通过动态创建DDX文档，可以使用在运行期间获取的DDX文档中的值。
 contentOwner: admin
 content-type: reference
@@ -12,12 +12,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2153'
+source-wordcount: '2111'
 ht-degree: 0%
 
 ---
 
-# 动态创建DDX文档 {#dynamically-creating-ddx-documents}
+# 动态创建 DDX 文档 {#dynamically-creating-ddx-documents}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
@@ -36,7 +36,7 @@ ht-degree: 0%
  </DDX>
 ```
 
-此DDX文档可拆卸PDF文档。 建议您熟悉PDF文档的拆解。
+此DDX文档可拆卸PDF文档。 建议您熟悉PDF文档的拆解过程。
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ ht-degree: 0%
 要使用动态创建的DDX文档拆分PDF文档，请执行以下任务：
 
 1. 包括项目文件。
-1. 创建PDF汇编程序客户端。
+1. 创建PDF Assembler客户端。
 1. 创建DDX文档。
 1. 转换DDX文档。
 1. 设置运行时选项。
@@ -67,22 +67,22 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
-**创建PDF汇编程序客户端**
+**创建PDF Assembler客户端**
 
 在以编程方式执行汇编程序操作之前，请先创建汇编程序服务客户端。
 
 **创建DDX文档**
 
-使用您正在使用的编程语言创建DDX文档。 要创建拆卸PDF文档的DDX文档，请确保它包含`PDFsFromBookmarks`元素。 如果您使用Java API，请将用于创建DDX文档的数据类型转换为`com.adobe.idp.Document`实例。 如果您正在使用Web服务，请将数据类型转换为`BLOB`实例。
+使用您正在使用的编程语言创建DDX文档。 要创建拆卸PDF文档的DDX文档，请确保该文档包含`PDFsFromBookmarks`元素。 如果您使用Java API，请将用于创建DDX文档的数据类型转换为`com.adobe.idp.Document`实例。 如果您正在使用Web服务，请将数据类型转换为`BLOB`实例。
 
 **转换DDX文档**
 
 使用`org.w3c.dom`类创建的DDX文档必须转换为`com.adobe.idp.Document`对象。 要在使用Java API时执行此任务，请使用Java XML转换类。 如果您使用Web服务，请将DDX文档转换为`BLOB`对象。
 
-**引用PDF文档进行拆分**
+**引用PDF文档进行反汇编**
 
 要拆分PDF文档，请引用表示要拆分PDF文档的PDF文件。 当传递到Assembler服务时，将为文档中的每个1级书签返回一个单独的PDF文档。
 
@@ -92,11 +92,11 @@ ht-degree: 0%
 
 **拆分PDF文档**
 
-通过调用`invokeDDX`操作拆分PDF文档。 传递动态创建的DDX文档。 Assembler服务返回集合对象中已拆解的PDF文档。
+通过调用`invokeDDX`操作拆分PDF文档。 传递动态创建的DDX文档。 Assembler服务会返回收集对象中已分解的PDF文档。
 
 **保存已拆解的PDF文档**
 
-所有已拆解的PDF文档都会在集合对象中返回。 循环访问收藏集对象并将每个PDF文档另存为PDF文件。
+所有已拆解的PDF文档都会在收藏集对象中返回。 循环访问收藏集对象并将每个PDF文档另存为PDF文件。
 
 **另请参阅**
 
@@ -108,7 +108,7 @@ ht-degree: 0%
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[以编程方式拆分PDF文档](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
+[以编程方式拆分 PDF 文档](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
 
 ## 使用Java API动态创建DDX文档 {#dynamically-create-a-ddx-document-using-the-java-api}
 
@@ -118,7 +118,7 @@ ht-degree: 0%
 
    在您的Java项目的类路径中包含客户端JAR文件，例如adobe-assembler-client.jar。
 
-1. 创建PDF汇编程序客户端。
+1. 创建PDF Assembler客户端。
 
    * 创建包含连接属性的`ServiceClientFactory`对象。
    * 使用构造函数创建`AssemblerServiceClient`对象并传递`ServiceClientFactory`对象。
@@ -128,8 +128,7 @@ ht-degree: 0%
    * 通过调用`DocumentBuilderFactory`类`newInstance`方法创建Java `DocumentBuilderFactory`对象。
    * 通过调用`DocumentBuilderFactory`对象的`newDocumentBuilder`方法创建Java `DocumentBuilder`对象。
    * 调用`DocumentBuilder`对象的`newDocument`方法以实例化`org.w3c.dom.Document`对象。
-   * 通过调用`org.w3c.dom.Document`对象的`createElement`方法创建DDX文档的根元素。 此方法创建表示根元素的`Element`对象。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 接下来，通过调用子元素的`setAttribute`方法来为其设置值。 最后，通过调用标头元素的`appendChild`方法将元素附加到标头元素，并将子元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
-
+   * 通过调用`org.w3c.dom.Document`对象的`createElement`方法创建DDX文档的根元素。此方法创建表示根元素的`Element`对象。将表示元素名称的字符串值传递给`createElement`方法。将返回值强制转换为`Element`。接下来，通过调用子元素的`setAttribute`方法来为其设置值。最后，通过调用标头元素的`appendChild`方法将元素附加到标头元素，并将子元素对象作为参数传递。以下代码行显示此应用程序逻辑：
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * 通过调用`Document`对象的`createElement`方法创建`PDFsFromBookmarks`元素。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 通过调用`PDFsFromBookmarks`元素的`setAttribute`方法为其设置值。 通过调用DDX元素的`appendChild`方法，将`PDFsFromBookmarks`元素附加到`DDX`元素。 将`PDFsFromBookmarks`元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
@@ -152,15 +151,15 @@ ht-degree: 0%
    * 通过调用`ByteArrayOutputStream`对象的`toByteArray`方法填充字节数组。
    * 使用对象的构造函数并传递字节数组来创建一个`com.adobe.idp.Document`对象。
 
-1. 参照要拆解的PDF文档。
+1. 引用要分解的PDF文档。
 
    * 使用`HashMap`构造函数创建用于存储输入PDF文档的`java.util.Map`对象。
    * 使用对象的构造函数创建`java.io.FileInputStream`对象，并传递要拆解的PDF文档的位置。
    * 创建`com.adobe.idp.Document`对象。 传递包含PDF文档的`java.io.FileInputStream`对象以进行拆分。
    * 通过调用其`put`方法并传递以下参数，向`java.util.Map`对象添加一个条目：
 
-      * 表示键名的字符串值。 此值必须与DDX文档中指定的PDF源元素的值匹配。 （在动态创建的DDX文档中，值为`AssemblerResultPDF.pdf`。）
-      * 包含要拆解的PDF文档的`com.adobe.idp.Document`对象。
+      * 表示键名的字符串值。 此值必须匹配DDX文档中指定的PDF源元素的值。 （在动态创建的DDX文档中，值为`AssemblerResultPDF.pdf`。）
+      * 包含要分解的PDF文档的`com.adobe.idp.Document`对象。
 
 1. 设置运行时选项。
 
@@ -172,7 +171,7 @@ ht-degree: 0%
    调用`AssemblerServiceClient`对象的`invokeDDX`方法并传递以下值：
 
    * 表示动态创建的DDX文档的`com.adobe.idp.Document`对象
-   * 包含要拆解的PDF文档的`java.util.Map`对象
+   * 包含要分解的PDF文档的`java.util.Map`对象
    * 指定运行时选项（包括默认字体和作业日志级别）的`com.adobe.livecycle.assembler.client.AssemblerOptionSpec`对象
 
    `invokeDDX`方法返回一个`com.adobe.livecycle.assembler.client.AssemblerResult`对象，该对象包含已拆解的PDF文档以及发生的任何异常。
@@ -187,7 +186,7 @@ ht-degree: 0%
 
 **另请参阅**
 
-[快速入门(SOAP模式)：使用Java API动态创建DDX文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API动态创建DDX文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -205,7 +204,7 @@ ht-degree: 0%
    >
    >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
-1. 创建PDF汇编程序客户端。
+1. 创建PDF Assembler客户端。
 
    * 使用默认构造函数创建`AssemblerServiceClient`对象。
    * 使用`System.ServiceModel.EndpointAddress`构造函数创建`AssemblerServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/AssemblerService?blob=mtom`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。
@@ -243,9 +242,9 @@ ht-degree: 0%
 
    * 创建`BLOB`对象。 将字节数组分配给`BLOB`对象的`MTOM`字段。
 
-1. 参照要拆解的PDF文档。
+1. 引用要分解的PDF文档。
 
-   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储输入PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储输入的PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
    * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，该值表示输入PDF文档的文件位置以及打开文件的模式。
    * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
@@ -272,7 +271,7 @@ ht-degree: 0%
 
    * 访问`AssemblerResult`对象的`documents`字段，该字段是包含已拆卸PDF文档的`Map`对象。
    * 对`Map`对象进行迭代以获取每个结果文档。 然后，将该数组成员的`value`强制转换为`BLOB`。
-   * 通过访问其`BLOB`对象的`MTOM`属性，提取表示PDF文档的二进制数据。 这会返回一个字节数组，您可以将该字节写出到PDF文件中。
+   * 通过访问其`BLOB`对象的`MTOM`属性来提取表示PDF文档的二进制数据。 这会返回一个字节数组，您可以将其写出到PDF文件。
 
 **另请参阅**
 
