@@ -180,7 +180,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 ### 使用关联内容 {#using-associated-content}
 
-如果您有[与[内容片段](/help/assets/content-fragments/content-fragments.md)关联的内容](/help/assets/content-fragments/content-fragments-assoc-content.md)，则这些资产可从侧面板（在将片段放置到内容页面后）中获取。 关联内容实际上是中间内容的[特殊内容源](#adding-in-between-content)。
+如果您有[&#128279;](/help/assets/content-fragments/content-fragments-assoc-content.md)与[内容片段](/help/assets/content-fragments/content-fragments.md)关联的内容，则这些资产可从侧面板（在将片段放置到内容页面后）中获取。 关联内容实际上是中间内容的[特殊内容源](#adding-in-between-content)。
 
 >[!NOTE]
 >

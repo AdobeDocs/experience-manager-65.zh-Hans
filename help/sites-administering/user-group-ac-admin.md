@@ -60,7 +60,7 @@ CRX允许您配置用户和组帐户的访问权限。 然后将同样的基本�
 
 >[!NOTE]
 >
->CRX实现JSR-283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)定义的[访问控制。
+>CRX实现JSR-283[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)定义的访问控制。
 >
 >CRX存储库的标准安装配置为使用基于资源的访问控制列表。 这是JSR-283访问控制的一种可能实现以及Jackrabbit提供的实现之一。
 
