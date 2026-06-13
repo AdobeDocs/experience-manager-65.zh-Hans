@@ -1,5 +1,5 @@
 ---
-title: 支持自适应表单本地化的新区域设置
+title: 为自适应表单本地化新增区域设置提供支持
 description: AEM Forms允许您添加新的区域设置来本地化自适应表单。 默认情况下，支持的语言环境为英语、法语、德语和日语。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 2%
+source-wordcount: '839'
+ht-degree: 8%
 
 ---
 
-# 支持自适应表单本地化的新区域设置{#supporting-new-locales-for-adaptive-forms-localization}
+# 为自适应表单本地化新增区域设置提供支持{#supporting-new-locales-for-adaptive-forms-localization}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -29,18 +29,18 @@ ht-degree: 2%
 
 **表单特定词典**&#x200B;包含自适应表单中使用的字符串。 例如，标签、字段名称、错误消息、帮助描述等。 它作为每个区域设置的一组XLIFF文件进行管理，您可以在`https://<host>:<port>/libs/cq/i18n/translator.html`处访问它。
 
-**全局词典** AEM客户端库中有两个作为JSON对象管理的全局词典。 这些词典包含默认错误消息、月份名称、货币符号、日期和时间模式等。 您可以在CRXDe Lite的/libs/fd/xfaforms/clientlibs/I18N中找到这些词典。 这些位置包含每个区域设置的单独文件夹。 由于全局词典通常不经常更新，因此对于每种区域设置保留单独的JavaScript文件使浏览器能够在同一服务器上访问不同的自适应表单时缓存这些文件并降低网络带宽使用率。
+**全局词典** AEM客户端库中有两个全局词典，它们作为JSON对象进行管理。 这些词典包含默认错误消息、月份名称、货币符号、日期和时间模式等。 您可以在CRXDe Lite的/libs/fd/xfaforms/clientlibs/I18N中找到这些词典。 这些位置包含每个区域设置的单独文件夹。 由于全局词典通常不经常更新，因此对于每种区域设置保留单独的JavaScript文件使浏览器能够在同一服务器上访问不同的自适应表单时缓存这些文件并降低网络带宽使用率。
 
 ### 自适应表单本地化的工作原理 {#how-localization-of-adaptive-form-works}
 
 可以使用两种方法识别自适应表单的区域设置。 呈现自适应表单时，它通过以下方式标识请求的区域设置：
 
-* 正在查看自适应表单URL中的`[local]`选择器。 URL 的格式为 `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`。使用`[local]`选择器允许缓存自适应表单。
+* 正在查看自适应表单URL中的`[local]`选择器。 URL 的格式为 `http://host:port/content/forms/af/[afName].[locale].html?wcmmode=disabled`。 使用`[local]`选择器允许缓存自适应表单。
 
 * 按指定顺序查看以下参数：
 
    * 请求参数`afAcceptLang`
-要覆盖用户的浏览器区域设置，您可以传递`afAcceptLang`请求参数以强制实施区域设置。 例如，以下URL强制以日语区域设置呈现表单：
+要覆盖用户的浏览器区域设置，您可以传递`afAcceptLang`请求参数以强制实施区域设置。例如，以下URL强制以日语区域设置呈现表单：
      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * 使用`Accept-Language`标头在请求中指定的用户的浏览器区域设置。
@@ -96,7 +96,7 @@ I18N.js
 
 ### 为区域设置添加自适应表单客户端库 {#add-adaptive-form-client-library-for-a-locale-br}
 
-在`etc/<folderHierarchy>`下创建类型为`cq:ClientLibraryFolder`的节点，类别为`guides.I18N.<locale>`，依赖项为`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`和`guide.common`。 ”
+在`etc/<folderHierarchy>`下创建类型为`cq:ClientLibraryFolder`的节点，类别为`guides.I18N.<locale>`，依赖项为`xfaforms.3rdparty`、`xfaforms.I18N.<locale>`和`guide.common`。 &quot;
 
 将以下文件添加到客户端库：
 
@@ -128,7 +128,7 @@ LogMessages.js
 
 >[!NOTE]
 >
-> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+> 建议使用 “Ctrl + C” 命令重新启动 SDK。 如果使用其他方式（例如停止 Java 进程）重新启动 AEM SDK，则可能会导致 AEM 开发环境出现不一致情况。
 
 ## 用于添加西班牙语支持的示例库 {#sample-libraries-for-adding-support-for-spanish}
 

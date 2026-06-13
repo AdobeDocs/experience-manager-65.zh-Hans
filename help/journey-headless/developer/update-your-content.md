@@ -7,8 +7,8 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '1029'
-ht-degree: 87%
+source-wordcount: '1108'
+ht-degree: 84%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 87%
 
 ## 迄今为止的故事 {#story-so-far}
 
-在 AEM Headless 历程的上一个文档[如何通过 AEM 交付 API 访问您的内容](access-your-content.md)中，您已了解如何通过 AEM GraphQL API 访问 AEM 中的 Headless 内容，您现在应该：
+在 AEM Headless 历程的上一个文档[如何通过 AEM 传递 API 访问您的内容](access-your-content.md)中，您已了解如何通过 AEM GraphQL API 访问 AEM 中的 Headless 内容，现在应：
 
 * 深入了解 GraphQL。
 * 了解 AEM GraphQL API 的工作原理。
@@ -57,7 +57,7 @@ Assets HTTP API 包含：
 
 Assets HTTP API 的当前实施基于 **REST** 架构样式，并使您能够通过 **CRUD** 操作（创建、读取、更新、删除）访问内容（存储在 AEM 中）。
 
-通过这些操作，API允许您通过向Adobe Experience Manager前端应用程序提供内容服务，将JavaScript作为Headless CMS（内容管理系统）运行。 或者，任何其他可以执行 HTTP 请求并处理 JSON 响应的应用程序。例如，基于框架或自定义的单页应用程序 (SPA) 需要通过 API 提供的内容（通常采用 JSON 格式）。
+通过这些操作，API允许您通过向Adobe Experience Manager前端应用程序提供内容服务，将JavaScript作为headless CMS（内容管理系统）运行。 或者，任何其他可以执行 HTTP 请求并处理 JSON 响应的应用程序。 例如，基于框架或自定义的单页应用程序 (SPA) 需要通过 API 提供的内容（通常采用 JSON 格式）。
 
 <!--
 >[!NOTE]
@@ -183,7 +183,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## Assets HTTP API 和内容片段 {#assets-http-api-content-fragments}
 
-内容片段用于 Headless 交付，它是一种特殊类型的资源。它们用于访问结构化数据，例如文本、数字、日期等。
+内容片段用于 Headless 交付，它是一种特殊类型的资源。 它们用于访问结构化数据，例如文本、数字、日期等。
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.
@@ -257,7 +257,7 @@ API 引用文档中将定义受支持请求的准确格式。
 
 >[!NOTE]
 >
->有关更多详细信息，请参阅 API 引用。具体而言，[Adobe Experience Manager Assets API – 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)。
+>有关更多详细信息，请参阅 API 引用。 具体而言，[Adobe Experience Manager Assets API – 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)。
 
 ### 读取/交付 {#read-delivery}
 
@@ -269,7 +269,7 @@ API 引用文档中将定义受支持请求的准确格式。
 
 `http://<host>/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
-响应是序列化的 JSON，其内容的结构与内容片段中的一样。引用将作为引用 URL 提供。
+响应是序列化的 JSON，其内容的结构与内容片段中的一样。 引用将作为引用 URL 提供。
 
 可以执行两种类型的读取操作：
 
@@ -282,7 +282,7 @@ API 引用文档中将定义受支持请求的准确格式。
 
 `POST /{cfParentPath}/{cfName}`
 
-正文必须包含要创建的内容片段的 JSON 表示形式，包括应在内容片段元素上设置的任何初始内容。必须设置 `cq:model` 属性，并且该属性必须指向有效的内容片段模型。如果不这样做，将导致出错。此外，还必须添加一个设置为 `application/json` 的标头 `Content-Type`。
+正文必须包含要创建的内容片段的 JSON 表示形式，包括应在内容片段元素上设置的任何初始内容。 必须设置 `cq:model` 属性，并且该属性必须指向有效的内容片段模型。 如果不这样做，将导致出错。 此外，还必须添加一个设置为 `application/json` 的标头 `Content-Type`。
 
 ### 更新 {#update}
 
@@ -327,11 +327,11 @@ API 引用文档中将定义受支持请求的准确格式。
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [内容片段 REST API](/help/assets/assets-api-content-fragments.md)
    * [API 引用](/help/assets/assets-api-content-fragments.md#api-reference)
-* [Adobe Experience Manager Assets API – 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
 * [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
-* [已说明 CORS/AEM](https://helpx.adobe.com/cn/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
-* [视频 – 使用 AEM 针对 CORS 进行开发](https://helpx.adobe.com/cn/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* [CORS/AEM介绍](https://helpx.adobe.com/cn/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
+* [视频 — 使用AEM开发CORS](https://helpx.adobe.com/cn/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-Hans)

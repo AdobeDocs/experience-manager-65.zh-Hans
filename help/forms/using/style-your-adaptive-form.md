@@ -1,6 +1,6 @@
 ---
 title: 为自适应表单设置样式
-description: Learn to create a custom theme, style individual components, and use Web Fonts in a theme.
+description: 了解如何创建自定义主题、设置各个组件的样式以及在主题中使用Web Fonts。
 topic-tags: introduction
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
@@ -8,72 +8,72 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '2189'
+source-wordcount: '2174'
 ht-degree: 10%
 
 ---
 
 # 为自适应表单设置样式 {#do-not-publish-style-your-adaptive-form}
 
-Learn to create a custom theme, style individual components, and use Web Fonts in a theme.
+了解如何创建自定义主题、设置各个组件的样式以及在主题中使用Web Fonts。
 
-![hero-image](do-not-localize/08-style_your_adaptiveformmain.png)
+![主页图像](do-not-localize/08-style_your_adaptiveformmain.png)
 
-This tutorial is a step in the [Create Your First Adaptive Form](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) series. Adobe recommends that you follow the series in chronological sequence to understand, perform, and demonstrate the complete tutorial use case.
+本教程是[创建您的第一个自适应表单](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html)系列中的步骤。 Adobe建议您按照时间顺序跟踪系列，以了解、执行和演示完整的教程用例。
 
 ## 关于本教程  {#about-the-tutorial}
 
-You can use themes to provide a unique appearance and style to an adaptive form. You can apply out-of-the-box themes provided with the adaptive forms editor or create custom themes of your own. AEM [!DNL Forms] provide a [theme editor](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/themes.html) to create custom themes. A single theme can provide the different appearance to the same adaptive form opened on mobile, tablet, or desktop. Any prior knowledge of CSS or LESS is not required to use the theme editor, but it is desired.
+您可以使用主题为自适应表单提供独特的外观和样式。 您可以应用自适应表单编辑器提供的现成主题，或创建自己的自定义主题。 AEM [!DNL Forms]提供[主题编辑器](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/themes.html)以创建自定义主题。 单个主题可以为在移动设备、平板电脑或桌面上打开的相同自适应表单提供不同的外观。 使用主题编辑器不需要预先了解CSS或LESS，但需要使用。
 
-By the end of the tutorial, you should be able to do the following:
+在本教程结束时，您应该能够执行以下操作：
 
-* Apply an out of the box theme to an adaptive form
-* Create a theme for adaptive form using the theme editor
-* Style individual components
-* Bonus Section: Use Web Fonts in a custom theme
+* 将现成的主题应用于自适应表单
+* 使用主题编辑器为自适应表单创建主题
+* 为单个组件设置样式
+* 附加部分：在自定义主题中使用Web Fonts
 
-Your form should look similar to the following after you complete the tutorial:
+完成本教程后，您的表单应类似于以下内容：
 
-![Form with a custom theme](assets/styled-adaptive-form.png)
+![带有自定义主题的表单](assets/styled-adaptive-form.png)
 
 ## 开始之前 {#before-you-start}
 
-Download the header-style and logo images, given below, on your local machine. The header of the `shipping-address-add-update-form` adaptive form uses the header-style and logo images. The header-style image appears on the right side of the header.
+在本地计算机上下载下面给定的标题样式和徽标图像。 `shipping-address-add-update-form`自适应表单的页眉使用页眉样式和徽标图像。 标题样式图像显示在标题的右侧。
 
 [获取文件](assets/header-style.png)
 
 [获取文件](assets/logo-1.png)
 
-## Step 1: Apply a theme to your adaptive form {#step-apply-a-theme-to-your-adaptive-form}
+## 步骤1：将主题应用于自适应表单 {#step-apply-a-theme-to-your-adaptive-form}
 
-Adaptive forms editor provides multiple out-of-the-box themes. If you plan not to use a custom style for your adaptive form, you can also publish your adaptive forms with an out-of-the-box theme. Themes are independent of adaptive forms. You can apply the same theme to multiple adaptive forms.
+自适应表单编辑器提供了多个现成的主题。 如果您计划不使用自适应表单的自定义样式，则还可以使用现成的主题发布自适应表单。 主题与自适应表单无关。 您可以将同一主题应用于多个自适应表单。
 
-**To apply a theme to your adaptive form:**
+**要将主题应用于自适应表单：**
 
-1. Open the adaptive form for editing.
+1. 打开自适应表单进行编辑。
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-1. Open properties of **[!UICONTROL Adaptive Form container]**. In the properties browser, navigate to **[!UICONTROL Basic]** > **[!UICONTROL Adaptive Form Theme]**. The **[!UICONTROL Adaptive Form Theme]** field lists all the out-of-the-box and custom themes. By default, the Canvas theme is applied.
-1. Select a theme from the **[!UICONTROL Adaptive Form Theme]** field. For example, **Survey theme**. Select ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) so you can apply the selected theme.
+1. 打开&#x200B;**[!UICONTROL 自适应表单容器]**&#x200B;的属性。 在属性浏览器中，导航到&#x200B;**[!UICONTROL 基本]** > **[!UICONTROL 自适应表单主题]**。 **[!UICONTROL 自适应表单主题]**&#x200B;字段列出了所有现成的主题和自定义主题。 默认情况下，将应用画布主题。
+1. 从&#x200B;**[!UICONTROL 自适应表单主题]**&#x200B;字段中选择主题。 例如，**调查主题**。 选择![aem_6_3_forms_save](assets/aem_6_3_forms_save.png)，以便应用所选主题。
 
-   ![Adaptive form with the default theme](assets/default-adaptive-form.png)
+   ![带有默认主题的自适应表单](assets/default-adaptive-form.png)
 
-   **Figure:** *Adaptive form with the default theme*
+   **图：** *带有默认主题的自适应表单*
 
-   ![Adaptive form with the Survey theme](assets/adaptive-form-with-survey-theme.png)
+   带有调查主题的![自适应表单](assets/adaptive-form-with-survey-theme.png)
 
-   **Figure:** *Adaptive form with the Survey theme*
+   **图：** *带有调查主题的自适应表单*
 
-## Step 2: Update your adaptive form {#step-update-your-adaptive-form}
+## 第2步：更新您的自适应表单 {#step-update-your-adaptive-form}
 
-The design displayed above requires changes in placeholder text and logo of your existing adaptive form.
+以上显示的设计要求更改现有自适应表单的占位符文本和徽标。
 
-**To update your adaptive form:**
+**要更新您的自适应表单：**
 
-1. Change the existing logo and text of the header. To remove the logo:
+1. 更改标题的现有徽标和文本。 要删除徽标，请执行以下操作：
 
-   1. Open the form in the form editor.
+   1. 在表单编辑器中打开表单。
 
       [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
@@ -333,7 +333,7 @@ The design displayed above requires changes in placeholder text and logo of your
       <td>边距</td> 
       <td> 
        <ul> 
-        <li>Left: 10 px</li> 
+        <li>左：10像素</li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -342,11 +342,11 @@ The design displayed above requires changes in placeholder text and logo of your
       <td>40 px</td> 
      </tr> 
      <tr> 
-      <td>Dimensions &amp; Position<br /> </td> 
+      <td>维度和位置<br /> </td> 
       <td>边距</td> 
       <td><br /> 
        <ul> 
-        <li>Right: 2 rem</li> 
+        <li>右：2分米</li> 
         <li>左：10雷姆 </li> 
        </ul> </td> 
      </tr> 
@@ -399,7 +399,7 @@ The design displayed above requires changes in placeholder text and logo of your
     </tbody> 
    </table>
 
-1. Select the **[!UICONTROL Submit]** button and select the ![aem_6_3_edit](assets/aem_6_3_edit.png) icon. 设置以下属性：
+1. 选择&#x200B;**[!UICONTROL 提交]**&#x200B;按钮并选择![aem_6_3_edit](assets/aem_6_3_edit.png)图标。 设置以下属性：
 
    <table> 
     <tbody> 
@@ -418,10 +418,10 @@ The design displayed above requires changes in placeholder text and logo of your
       <td>边距</td> 
       <td> 
        <ul> 
-        <li>Top: 5 rem</li> 
-        <li>Right: 14 rem</li> 
-        <li>Bottom: 20 px</li> 
-        <li>Left: 20 px<br /> </li> 
+        <li>上：5分</li> 
+        <li>右：14雷姆</li> 
+        <li>底部：20像素</li> 
+        <li>左： 20像素<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -439,11 +439,11 @@ The design displayed above requires changes in placeholder text and logo of your
 
    ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Step 5: Bonus Section: Using Web Fonts in a custom theme {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## 步骤5：附加部分：在自定义主题中使用Web Fonts {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
-You can use various fonts to design an adaptive form. All the devices that the adaptive form is viewed on may not have the fonts used to design the adaptive form. You can use a web font service to deliver the required fonts to the target device.
+您可以使用各种字体设计自适应表单。 在查看自适应表单的所有设备上可能没有用于设计自适应表单的字体。 您可以使用Web字体服务将所需的字体交付给目标设备。
 
-[!DNL Adobe Fonts] is a Web Fonts service. You can configure and use the service with adaptive forms. To use [!DNL Adobe Fonts] in an adaptive form:
+[!DNL Adobe Fonts]是一项Web Fonts服务。 您可以在自适应表单中配置并使用服务。 要在自适应表单中使用[!DNL Adobe Fonts]，请执行以下操作：
 1. 浏览Adobe字体的[库](https://fonts.adobe.com/)并选择字体以设置表单的样式。
 <!--
 >[!NOTE]
@@ -479,7 +479,7 @@ You can use various fonts to design an adaptive form. All the devices that the a
 8. 在CRXDE中创建文件夹结构，例如`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`。
 9. 转到新创建的`clientlibs`文件夹并添加`allowProxy`和`categories`属性。
 10. 导航到`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`并创建css文件夹。
-11. 转到创建的CSS文件夹并创建一个文件。 例如，创建一个文件作为`fonts.css`，并粘贴嵌入代码以及URL。
+11. 转到创建的CSS文件夹并创建一个文件。例如，创建一个文件作为`fonts.css`，并粘贴嵌入代码以及URL。
     ![文件夹结构](/help/forms/using/assets/fonts-add-in-crxde.png)
 12. 保存更改。
 

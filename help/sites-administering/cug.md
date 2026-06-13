@@ -1,5 +1,5 @@
 ---
-title: 创建已关闭的用户组
+title: 创建封闭用户组
 description: 了解如何创建已关闭的用户组。
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Security
 role: Admin
 source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
 workflow-type: tm+mt
-source-wordcount: '710'
-ht-degree: 1%
+source-wordcount: '748'
+ht-degree: 3%
 
 ---
 
-# 创建已关闭的用户组{#creating-a-closed-user-group}
+# 创建封闭用户组{#creating-a-closed-user-group}
 
 封闭用户组(CUG)用于限制对已发布Internet站点内特定页面的访问。 此类页面要求分配的成员登录并提供安全凭据。
 
@@ -43,7 +43,7 @@ ht-degree: 1%
 
 要创建已关闭的用户组，请执行以下操作：
 
-1. 从AEM homescreen转到&#x200B;**Tools - Security**。
+1. 从AEM主屏幕转到&#x200B;**Tools - Security**。
 
    >[!NOTE]
    >
@@ -91,9 +91,9 @@ ht-degree: 1%
 
    >[!NOTE]
    >
-   >“权限”选项卡中的 CUG 无法从 Blueprint 转出到 Live Copy。在配置Live Copy时对此进行规划。
+   >“权限”选项卡中的 CUG 无法从 Blueprint 转出到 Live Copy。 在配置Live Copy时对此进行规划。
    >
-   >有关详细信息，请参阅[AEM中的已关闭的用户组 — Livecopy](closed-user-groups.md#aem-livecopy)。
+   >有关详细信息，请参阅AEM中的[已关闭的用户组 — Livecopy](closed-user-groups.md#aem-livecopy)。
 
 1. 将打开&#x200B;**编辑已关闭的用户组**&#x200B;对话框。 您可以在此搜索并选择您的CUG，然后通过&#x200B;**保存**&#x200B;确认组选择。
 
@@ -134,8 +134,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->当Dispatcher场启用了会话管理时，不会缓存场处理的所有页面。 要缓存超出CUG的页面，请在dispatcher.any中创建第二个场
->处理非CUG页面。
+>当Dispatcher场启用了会话管理时，不会缓存场处理的所有页面。要缓存CUG以外的页面，请在dispatcher.any>中创建另一个场来处理非CUG页面。
 
 1. 通过定义`/directory`配置[/sessionmanagement](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#enabling-secure-sessions-sessionmanagement)；例如：
 

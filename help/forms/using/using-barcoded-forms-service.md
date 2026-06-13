@@ -1,5 +1,5 @@
 ---
-title: 条形码Forms服务
+title: 条形码表单服务
 description: 使用AEM Forms条形码Forms服务从条形码的电子图像中提取数据。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,16 +11,16 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1003'
+source-wordcount: '1046'
 ht-degree: 0%
 
 ---
 
-# 条形码Forms服务{#barcoded-forms-service}
+# 条形码表单服务{#barcoded-forms-service}
 
 ## 概述 {#overview}
 
-条码Forms服务从条码的电子图像中提取数据。 该服务接受包括一个或多个条形码作为输入的TIFF和PDF文件，并提取条形码数据。 条形码数据可以通过多种方式进行格式化，包括XML、分隔字符串或使用JavaScript创建的任何自定义格式。
+条码Forms服务从条码的电子图像中提取数据。 该服务接受包含一个或多个条形码作为输入的TIFF和PDF文件，并提取条形码数据。 条形码数据可以通过多种方式进行格式化，包括XML、分隔字符串或使用JavaScript创建的任何自定义格式。
 
 条形码Forms服务支持作为扫描的TIFF或PDF文档提供的以下&#x200B;**二维(2D)**&#x200B;符号：
 
@@ -38,10 +38,10 @@ ht-degree: 0%
 
 您可以使用条形码Forms服务完成以下任务：
 
-* 从条形码图像(TIFF或PDF)中提取条形码数据。 数据以分隔文本形式存储。
+* 从条形码图像（TIFF或PDF）中提取条形码数据。 数据以分隔文本形式存储。
 * 将分隔的文本数据转换为XML（XDP或XFDF）。 XML数据比分隔文本更容易解析。 此外，XDP或XFDF格式的数据也可作为AEM Forms中其他服务的输入。
 
-对于图像中的每个条形码，条形码Forms服务会查找该条形码，对其进行解码并提取数据。 该服务返回XML文档内容元素中的条形码数据（必要时使用实体编码）。 例如，表单的以下扫描TIFF图像包含两个条形码：
+对于图像中的每个条形码，条形码Forms服务会查找该条形码，对其进行解码并提取数据。 该服务返回XML文档内容元素中的条形码数据（必要时使用实体编码）。 例如，以下表单的TIFF扫描图像包含两个条形码：
 
 ![示例](assets/example.png)
 
@@ -94,7 +94,7 @@ ht-degree: 0%
 
 ### 使用条形码表单的工作流 {#workflows-that-use-barcoded-forms}
 
-表单作者使用Designer创建交互式条形码表单。 (请参阅[Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63)。) 当用户使用Adobe Reader或Acrobat填写条形码表单时，会自动更新条形码以编码表单数据。
+表单作者使用Designer创建交互式条形码表单。 （请参阅[Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63)。） 当用户使用Adobe Reader或Acrobat填写条形码表单时，会自动更新条形码以编码表单数据。
 
 条形码Forms服务可用于将纸上存在的数据转换为电子格式。 例如，在填写并打印条形码表单时，可以扫描打印的副本并将其用作条形码Forms服务的输入。
 
@@ -124,8 +124,8 @@ ht-degree: 0%
 
 此外，在使用条形码Forms服务时，请考虑以下限制：
 
-* 该服务完全支持AcroForms以及包含通过Adobe Reader或Acrobat保存的2D条形码的静态表单。 但是，对于1D条形码，请拼合表单，或提供它作为扫描的PDF或TIFF文档。
-* 不完全支持动态XFA表单。 要正确解码动态表单中的1D和2D条形码，请拼合表单或将其提供为扫描的PDF或TIFF文档。
+* 该服务完全支持AcroForms以及包含使用Adobe Reader或Acrobat保存的2D条形码的静态表单。 但是，对于1D条形码，请拼合表单或将其提供为扫描的PDF或TIFF文档。
+* 不完全支持动态XFA表单。 要正确解码动态表单中的1D和2D条形码，请扁平化表单或将其提供为扫描的PDF或TIFF文档。
 
 此外，如果遵循上述限制，该服务可以对使用受支持符号的任何条形码进行解码。 有关如何创建交互式条形码表单的详细信息，请参阅[Designer帮助](https://www.adobe.com/go/learn_aemforms_designer_63)。
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 条码式Forms服务提供以下两个API：
 
-* **[解码](https://helpx.adobe.com/cn/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：解码输入PDF文档或tiff图像中的所有可用条形码。 它返回另一个XML文档，该文档包含从输入文档或图像中的所有可用条形码检索的数据。
+* **[解码](https://helpx.adobe.com/cn/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：解码输入PDF文档或tiff图像中可用的所有条形码。 它返回另一个XML文档，该文档包含从输入文档或图像中的所有可用条形码检索的数据。
 
 * **[extractToXML](https://helpx.adobe.com/cn/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**：将使用解码API解码的数据转换为XML数据。 此XML数据可以与XFA表单合并。 它会返回一个XML文档列表，每个文档对应一个条形码。
 
@@ -230,7 +230,7 @@ ht-degree: 0%
 %>
 ```
 
-### 在AEM Workflow中使用BCF服务 {#using-the-bcf-service-with-aem-workflows}
+### 在AEM工作流中使用BCF服务 {#using-the-bcf-service-with-aem-workflows}
 
 从工作流中运行条形码Forms服务与从JSP/Servlet中运行服务类似。 唯一的区别是在从JSP/Servlet运行服务时，文档对象会自动从ResourceResolverHelper对象中检索ResourceResolver对象的实例。 从工作流调用代码时，此自动机制不起作用。
 
