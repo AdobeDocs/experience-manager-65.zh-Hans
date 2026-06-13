@@ -1,5 +1,5 @@
 ---
-title: SharePoint连接器许可证、版权声明和免责声明
+title: SharePoint 连接器许可证、版权声明和免责声明
 description: 了解SharePoint连接器许可证、版权声明和免责声明。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '333'
-ht-degree: 1%
+source-wordcount: '406'
+ht-degree: 4%
 
 ---
 
-# SharePoint连接器许可证、版权声明和免责声明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
+# SharePoint 连接器许可证、版权声明和免责声明{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
 本节列出了必须使用Day JCR Connector for MS® SharePoint明确声明的所有许可证、版权声明和免责声明。
 

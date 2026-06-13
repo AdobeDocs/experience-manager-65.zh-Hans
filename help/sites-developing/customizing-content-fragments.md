@@ -10,8 +10,8 @@ feature: Content Fragments
 role: Developer
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '2728'
-ht-degree: 1%
+source-wordcount: '2867'
+ht-degree: 2%
 
 ---
 
@@ -64,7 +64,7 @@ ht-degree: 1%
    * 模板在创建内容片段时定义内容片段的（基本、纯文本）结构。
    * 模板在创建时复制到片段；因此对模板的进一步更改将不会反映在现有片段中。
    * 用于添加新变体的函数等，必须相应地更新片段。
-   * [内容片段模板](/help/sites-developing/content-fragment-templates.md)的工作方式与AEM生态系统内的其他模板机制（例如，页面模板等）的工作方式不同。 因此，应单独审议这些问题。
+   * [内容片段模板](/help/sites-developing/content-fragment-templates.md)的工作方式与AEM生态系统中的其他模板机制（例如，页面模板等）的工作方式不同。 因此，应单独审议这些问题。
    * 当基于模板时，内容的MIME类型根据实际内容进行管理；这意味着每个元素和变体可以具有不同的MIME类型。
 
 ### 与Assets集成 {#integration-with-assets}
@@ -84,7 +84,6 @@ ht-degree: 1%
 * 所有内容都存储在资源的`jcr:content/data`节点下：
 
    * 元素数据存储在主子节点下：
-
      `jcr:content/data/master`
 
    * 变体存储在子节点下，该子节点带有变体的名称：
@@ -93,7 +92,7 @@ ht-degree: 1%
    * 每个元素的数据作为属性存储在相应的子节点中，该属性具有元素名称：
 例如，元素`text`的内容作为属性`text`存储在`jcr:content/data/master`上
 
-* 元数据和关联内容存储在`jcr:content/metadata`下
+* 元数据和关联内容存储在下方 `jcr:content/metadata`
 除了标题和描述，它们不被视为传统元数据并存储在`jcr:content`上
 
 #### 将简单内容片段映射到Assets {#mapping-simple-content-fragments-to-assets}
@@ -134,7 +133,7 @@ ht-degree: 1%
 >
 >现在建议使用[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)。 有关详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)。
 
-可以从AEM页面引用内容片段，就像任何其他资源类型一样。 AEM提供了&#x200B;[**内容片段**&#x200B;核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans) — 一个[组件，它允许您在页面中包含内容片段](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)。 您还可以扩展此&#x200B;**内容片段**&#x200B;核心组件。
+可以从AEM页面引用内容片段，就像任何其他资源类型一样。 AEM提供了&#x200B;[**内容片段**&#x200B;核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans) — 一个[组件，它允许您在页面上包含内容片段](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)。 您还可以扩展此&#x200B;**内容片段**&#x200B;核心组件。
 
 * 组件使用`fragmentPath`属性引用实际内容片段。 `fragmentPath`属性的处理方式与其他资产类型的类似属性相同；例如，当内容片段移动到其他位置时。
 
@@ -225,7 +224,7 @@ ht-degree: 1%
 
   >[!NOTE]
   >
-  >AEM翻译工作流适用于`/content`：
+  >AEM翻译工作流可与`/content`配合使用：
   >
   >* 由于内容片段模型驻留在`/conf`中，因此这些翻译中不包含这些模型。 您可以[国际化UI字符串](/help/sites-developing/i18n-dev.md)。
   >
@@ -384,7 +383,7 @@ ht-degree: 1%
 
 ### 注意事项 {#caveats}
 
-应当指出：
+需要注意的是：
 
 * 实施API是为了提供UI支持的功能。
 * 整个API设计为&#x200B;**而非**&#x200B;自动保留更改（除非在API JavaDoc中另有说明）。 因此，您将始终必须提交相应请求的资源解析程序（或您实际使用的解析程序）。
@@ -417,7 +416,7 @@ ht-degree: 1%
 
 控制编辑会话的要求包括：
 
-* 编辑的内容片段可以跨越多个视图(=HTML页面)，应为原子结构。
+* 编辑的内容片段可以跨越多个视图（= HTML页面），应为原子结构。
 * 编辑也应是&#x200B;*事务性*；在编辑会话结束时，必须提交（保存）或回滚（取消）更改。
 * Edge案例应正确处理；这些案例包括用户通过手动输入URL或使用全局导航离开页面时的情况。
 * 应提供定期自动保存（每x分钟）以防止数据丢失。
@@ -533,7 +532,7 @@ ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "
 
 有关完整信息，请参阅[内容片段模板](/help/sites-developing/content-fragment-templates.md)。
 
-## 用于页面创作的组件 {#components-for-page-authoring}
+## 页面创作组件 {#components-for-page-authoring}
 
 有关详细信息，请参阅
 
