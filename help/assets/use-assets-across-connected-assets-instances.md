@@ -47,7 +47,7 @@ ht-degree: 15%
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS上的[!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites]内部部署 |
   |---|---|---|---|
   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 支持 | 支持 | 支持 |
-  | AMS **上的**[!DNL Experience Manager] 6.5 [!DNL Assets] | 支持 | 支持 | 支持 |
+  | AMS **上的**&#x200B;[!DNL Experience Manager] 6.5 [!DNL Assets] | 支持 | 支持 | 支持 |
   | **[!DNL Experience Manager]6.5 [!DNL Assets]内部部署** | 不支持 | 不支持 | 不支持 |
 
 ### 支持的文件格式 {#mimetypes}
@@ -173,7 +173,7 @@ ht-degree: 15%
    * 在本地[!DNL Sites]上，在[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认情况下已禁用]**。 [!DNL Sites]部署必须对[!DNL Dynamic Media]帐户具有只读访问权限。
    * 在本地[!DNL Sites]上的&#x200B;**[!UICONTROL 发布Assets]**&#x200B;选项中，选择&#x200B;**[!UICONTROL 选择性发布]**。 不要选择&#x200B;**[!UICONTROL 同步所有内容]**。
 
-1. 在图像核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)中启用[[!DNL Dynamic Media] 支持。 此功能允许当作者在本地[!DNL Sites]部署的网页中使用[!DNL Dynamic Media]个图像时，默认的[图像组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)显示[!DNL Dynamic Media]个图像。
+1. 在图像核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)中启用[!DNL Dynamic Media] 支持。 此功能允许当作者在本地[!DNL Sites]部署的网页中使用[!DNL Dynamic Media]个图像时，默认的[图像组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)显示[!DNL Dynamic Media]个图像。
 
 ## 使用远程资产 {#use-remote-assets}
 

@@ -94,7 +94,7 @@ Web渠道始终处于启用状态。
 
 ![通知14](assets/notifications1.png)
 
-电子邮件渠道依赖于电子邮件](/help/communities/email.md)的正确[配置，它提供的设置与Web渠道的设置相同。
+电子邮件渠道依赖于电子邮件[&#128279;](/help/communities/email.md)的正确配置，它提供的设置与Web渠道的设置相同。
 
 默认情况下，电子邮件渠道处于关闭状态。
 

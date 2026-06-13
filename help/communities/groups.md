@@ -22,7 +22,7 @@ ht-degree: 1%
 
 当社区站点的[模板结构](/help/communities/sites-console.md#step1)包含[组功能](/help/communities/functions.md#groups-function)时，“组”控制台提供创建社区组的权限。
 
-* AEM Communities支持在其他组内嵌套组。 如果新组](/help/communities/tools-groups.md)的[结构包含组函数，则可能进行组嵌套。
+* AEM Communities支持在其他组内嵌套组。 如果新组[&#128279;](/help/communities/tools-groups.md)的结构包含组函数，则可能进行组嵌套。
 * 仅对于创作环境，有一个与站点创建向导类似的组创建向导。
 * 成员是否可以在发布环境中创建组，可以在将组功能添加到社区站点结构或社区组结构时对其进行配置。
 

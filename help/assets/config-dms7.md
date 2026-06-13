@@ -148,7 +148,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
    * **[!UICONTROL Dynamic Media同步模式]**
       * **[!UICONTROL 默认启用]** — 除非您特别将文件夹标记为排除，否则默认情况下该配置将应用于所有文件夹。<!-- you can then deselect the folders that you do not want the configuration applied to.-->
       * **[!UICONTROL 默认情况下已禁用]** — 在您明确将选定文件夹标记为同步到Dynamic Media之前，该配置不会应用于任何文件夹。
-要将选定的文件夹标记为同步到Dynamic Media，请选择一个资产文件夹，然后在工具栏上选择**[!UICONTROL 属性]**。在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉列表中选择以下三个选项。完成后，选择&#x200B;**[!UICONTROL 保存]**。*请记住：如果您之前选择了&#x200B;**[!UICONTROL 同步所有内容]**，则这三个选项将不可用。*&#x200B;另请参阅[在Dynamic Media中使用文件夹级别的选择性发布](/help/assets/selective-publishing.md)。
+要将选定的文件夹标记为同步到Dynamic Media，请选择一个资产文件夹，然后在工具栏上选择&#x200B;**[!UICONTROL 属性]**。在&#x200B;**[!UICONTROL 详细信息]**&#x200B;选项卡的&#x200B;**[!UICONTROL Dynamic Media同步模式]**&#x200B;下拉列表中选择以下三个选项。完成后，选择&#x200B;**[!UICONTROL 保存]**。*请记住：如果您之前选择了&#x200B;**[!UICONTROL 同步所有内容]**，则这三个选项将不可用。*&#x200B;另请参阅[在Dynamic Media中使用文件夹级别的选择性发布](/help/assets/selective-publishing.md)。
          * **[!UICONTROL 已继承]** — 文件夹中没有显式同步值；相反，该文件夹会从其上级文件夹之一或云配置中的默认模式继承同步值。 继承的详细状态通过工具提示显示。
          * **[!UICONTROL 为子文件夹启用]** — 包含此子树中的所有内容，以便同步到Dynamic Media。 文件夹特定的设置会覆盖云配置中的默认模式。
          * **[!UICONTROL 已对子文件夹禁用]** — 排除此子树中的所有内容，禁止同步到Dynamic Media。

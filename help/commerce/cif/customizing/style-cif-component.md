@@ -334,7 +334,7 @@ webpack-dev-server代理来自AEM的本地实例的图像和一些CSS/JavaScript
 
 1. 使用与AEM登录实例相同的浏览器，在新的选项卡中导航到[http://localhost:8080/](http://localhost:8080/)。 您应会通过webpack-dev-server看到Venia主页：
 
-   端口80](../assets/style-cif-component/webpack-dev-server-port80.png)上的![Webpack开发服务器
+   端口80![&#128279;](../assets/style-cif-component/webpack-dev-server-port80.png)上的Webpack开发服务器
 
    保持webpack-dev-server正在运行。 它将在下一个练习中使用。
 
