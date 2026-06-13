@@ -7,12 +7,12 @@ feature: Adaptive Forms,Document Security
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '215'
-ht-degree: 0%
+source-wordcount: '228'
+ht-degree: 3%
 
 ---
 
-# 使用WS-Security标头传递凭据 {#using-execute-script-service-aem-forms-jee-workbench}
+# 使用 WS-Security 标头传递凭据 {#using-execute-script-service-aem-forms-jee-workbench}
 
 使用Web服务在JEE服务上调用AEM Forms时，您可以使用WS-Security标头传递AEM Forms on JEE所需的客户端身份验证信息。 WS-Security定义SOAP扩展以实现客户端身份验证、消息机密性和消息完整性。 因此，当JEE上的AEM Forms部署为独立服务器或群集环境时，您可以调用JEE上的AEM Forms 。
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->作为使用WS-Security标头调用服务的示例，本主题通过调用Encryption服务使用口令对PDF文档进行加密。
+>作为使用WS-Security标头调用服务的示例，本主题通过调用Encryption服务使用密码加密PDF文档。
 
 本文档涵盖以下主题：
 

@@ -1,5 +1,5 @@
 ---
-title: 使用SubmittedXML数据创建PDF文档
+title: 使用提交的 XML 数据创建 PDF 文档
 description: 使用Forms服务检索用户在交互式表单中输入的表单数据。 将表单数据传递到另一个AEM Forms服务操作，然后使用该数据创建PDF文档。
 contentOwner: admin
 content-type: reference
@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 0%
+source-wordcount: '1334'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## 使用提交的XML数据创建PDF文档 {#creating-pdf-documents-with-submitted-xml-data}
 
-使用户能够填写交互式表单的基于Web的应用程序要求将数据提交回服务器。 使用Forms服务，您可以检索用户输入到交互式表单中的表单数据。 然后，您可以将表单数据传递到另一个AEM Forms服务操作，并使用数据创建PDF文档。
+使用户能够填写交互式表单的基于Web的应用程序要求将数据提交回服务器。 使用Forms服务，您可以检索用户输入到交互式表单中的表单数据。 然后，您可以将表单数据传递到另一个AEM Forms服务操作，并使用这些数据创建PDF文档。
 
 >[!NOTE]
 >
@@ -33,26 +33,26 @@ ht-degree: 0%
 
 * 用户从基于Web的应用程序将XML数据提交到Forms服务。
 * Forms服务用于处理提交的表单并提取表单字段。 可以处理表单数据。 例如，可以将数据提交到企业数据库。
-* 表单数据会发送到Output服务以创建非交互式PDF文档。
+* 表单数据会发送到输出服务以创建非交互式PDF文档。
 * 非交互式PDF文档存储在内容服务中（已弃用）。
 
 下图提供了此工作流的可视表示形式。
 
 ![cd_cd_finsrv_architecture_xml_pdf1](assets/cd_cd_finsrv_architecture_xml_pdf1.png)
 
-用户从客户端Web浏览器提交表单后，非交互式PDF文档将存储在Content Services中（已弃用）。 下图显示了一个PDF文档，该文档存储在Content Services（已弃用）中。
+用户从客户端Web浏览器提交表单后，非交互式PDF文档存储在内容服务中（已弃用）。 下图显示了一个存储在Content Services中的PDF文档（已弃用）。
 
 ![cd_cd_cs_gui](assets/cd_cd_cs_gui.png)
 
 ### 步骤摘要 {#summary-of-steps}
 
-要创建具有提交的XML数据的非交互式PDF文档，并将其存储在Content Services的PDF文档中（已弃用），请执行以下任务：
+要创建包含提交的XML数据的非交互式PDF文档，并将其存储在内容服务（已弃用）的PDF文档中，请执行以下任务：
 
 1. 包括项目文件。
 1. 创建Forms、输出和文档管理对象。
 1. 使用Forms服务检索表单数据。
-1. 使用Output服务创建非交互式PDF文档。
-1. 使用文档管理服务将PDF表单存储在Content Services（已弃用）中。
+1. 使用输出服务创建非交互式PDF文档。
+1. 使用文档管理服务将PDF表单存储在内容服务中（已弃用）。
 
 **包含项目文件**
 
@@ -72,7 +72,7 @@ ht-degree: 0%
 
 **使用文档管理服务将PDF表单存储在Content Services中（已弃用）**
 
-使用文档管理服务API在Content Services中存储PDF文档（已弃用）。
+使用文档管理服务API在内容服务中存储PDF文档（已弃用）。
 
 **另请参阅**
 
@@ -80,11 +80,11 @@ ht-degree: 0%
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms服务API快速启动](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[表单服务 API 快速入门](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-### 使用Java API创建包含已提交XML数据的PDF文档 {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
+### 使用Java API创建包含提交的XML数据的PDF文档 {#create-a-pdf-document-with-submitted-xml-data-using-the-java-api}
 
-使用Forms、输出和文档管理API (Java)创建包含已提交XML数据的PDF文档：
+使用Forms、输出和文档管理API (Java)创建包含提交的XML数据的PDF文档：
 
 1. 包含项目文件
 
@@ -129,14 +129,14 @@ ht-degree: 0%
    * `generatePDFOutput`方法返回包含该操作结果的`OutputResult`对象。
    * 通过调用`OutputResult`对象的`getGeneratedDoc`方法检索非交互式PDF文档。 此方法返回表示非交互式PDF文档的`com.adobe.idp.Document`实例。
 
-1. 使用文档管理服务将PDF表单存储在Content Services中（已弃用）
+1. 使用文档管理服务将PDF表单存储在内容服务中（已弃用）
 
    通过调用`DocumentManagementServiceClientImpl`对象的`storeContent`方法并传递以下值来添加内容：
 
    * 一个字符串值，它指定添加内容的存储。 默认存储为`SpacesStore`。 此值是必需参数。
    * 一个字符串值，它指定添加内容的空间的完全限定路径（例如，`/Company Home/Test Directory`）。 此值是必需参数。
    * 表示新内容的节点名称（例如，`MortgageForm.pdf`）。 此值是必需参数。
-   * 指定节点类型的字符串值。 要添加新内容(如PDF文件)，请指定`{https://www.alfresco.org/model/content/1.0}content`。 此值是必需参数。
+   * 指定节点类型的字符串值。 要添加新内容，如PDF文件，请指定`{https://www.alfresco.org/model/content/1.0}content`。 此值是必需参数。
    * 表示内容的`com.adobe.idp.Document`对象。 此值是必需参数。
    * 指定编码值的字符串值（例如，`UTF-8`）。 此值是必需参数。
    * `UpdateVersionType`枚举值，指定如何处理版本信息（例如，`UpdateVersionType.INCREMENT_MAJOR_VERSION`以递增内容版本）。 )此值是必需参数。

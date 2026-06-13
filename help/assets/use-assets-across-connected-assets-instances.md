@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: bca6156727dca11b2e09be549f3def6130827193
 workflow-type: tm+mt
-source-wordcount: '4019'
+source-wordcount: '3999'
 ht-degree: 15%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 15%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 
@@ -42,12 +42,12 @@ ht-degree: 15%
 在使用或配置此功能之前，请确保：
 
 * 用户是每个部署中相应用户组的一部分。
-* 对于[!DNL Adobe Experience Manager]部署类型，满足一个支持的条件。[!DNL Experience Manager] 6.5 [!DNL Assets]与[!DNL Experience Manager] as a Cloud Service一起使用。 有关此功能如何在[!DNL Experience Manager]中作为[!DNL Cloud Service]使用的更多信息，请参阅[Experience Manager as a Cloud Service中的Assets连接](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=zh-Hans)。
+* 对于[!DNL Adobe Experience Manager]部署类型，满足一个支持的条件。[!DNL Experience Manager] 6.5 [!DNL Assets]与[!DNL Experience Manager] as a Cloud Service一起使用。 有关此功能如何在[!DNL Experience Manager]中作为[!DNL Cloud Service]使用的更多信息，请参阅[Experience Manager as a Cloud Service中的Assets连接](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html)。
 
   | | [!DNL Sites] as a [!DNL Cloud Service] | AMS上的[!DNL Experience Manager] 6.5 [!DNL Sites] | [!DNL Experience Manager] 6.5 [!DNL Sites]内部部署 |
   |---|---|---|---|
   | **[!DNL Experience Manager Assets]as a[!DNL Cloud Service]** | 支持 | 支持 | 支持 |
-  | AMS **上的**&#x200B;[!DNL Experience Manager] 6.5 [!DNL Assets] | 支持 | 支持 | 支持 |
+  | AMS **上的**[!DNL Experience Manager] 6.5 [!DNL Assets] | 支持 | 支持 | 支持 |
   | **[!DNL Experience Manager]6.5 [!DNL Assets]内部部署** | 不支持 | 不支持 | 不支持 |
 
 ### 支持的文件格式 {#mimetypes}
@@ -134,7 +134,7 @@ ht-degree: 15%
    >
    >在作者获取资产时，将会获取远程部署中可用的所有演绎版。 如果要为获取的资产创建更多演绎版，请跳过此配置步骤。 触发[!UICONTROL DAM更新资产]工作流并创建更多演绎版。 这些演绎版仅在本地[!DNL Sites]部署中可用，在远程DAM部署中不可用。
 
-1. 在[!DNL Assets]部署的CORS配置中将[!DNL Sites]部署添加为允许的源。 有关详细信息，请参阅[了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=zh-Hans)。
+1. 在[!DNL Assets]部署的CORS配置中将[!DNL Sites]部署添加为允许的源。 有关详细信息，请参阅[了解CORS](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html)。
 
 1. 配置[相同站点Cookie支持](/help/sites-administering/same-site-cookie-support.md)。
 
@@ -162,7 +162,7 @@ ht-degree: 15%
 
 要在[!DNL Assets]和[!DNL Sites]部署中配置[!DNL Dynamic Media]，请执行以下操作：
 
-1. 在远程[!DNL Assets]作者部署上启用[!DNL Dynamic Media]并将其配置为全局配置。 要配置Dynamic Media，请参阅[配置Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)。
+1. 在远程[!DNL Assets]作者部署上启用[!DNL Dynamic Media]并将其配置为全局配置。要配置Dynamic Media，请参阅[配置Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)。
 在远程[!DNL Assets]部署的[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认启用]**。
 
 1. 创建连接的Assets配置，如[配置站点与资源部署之间的连接](#configure-a-connection-between-sites-and-assets-deployments)中所述。 此外，选择&#x200B;**[!UICONTROL 为Dynamic Media连接的Assets获取原始演绎版]**&#x200B;选项。
@@ -173,7 +173,7 @@ ht-degree: 15%
    * 在本地[!DNL Sites]上，在[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认情况下已禁用]**。 [!DNL Sites]部署必须对[!DNL Dynamic Media]帐户具有只读访问权限。
    * 在本地[!DNL Sites]上的&#x200B;**[!UICONTROL 发布Assets]**&#x200B;选项中，选择&#x200B;**[!UICONTROL 选择性发布]**。 不要选择&#x200B;**[!UICONTROL 同步所有内容]**。
 
-1. 在图像核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=zh-Hans#dynamic-media)中启用[!DNL Dynamic Media] 支持。 此功能允许当作者在本地[!DNL Sites]部署的网页中使用[!DNL Dynamic Media]个图像时，默认的[图像组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)显示[!DNL Dynamic Media]个图像。
+1. 在图像核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html#dynamic-media)中启用[[!DNL Dynamic Media] 支持。 此功能允许当作者在本地[!DNL Sites]部署的网页中使用[!DNL Dynamic Media]个图像时，默认的[图像组件](https://www.aemcomponents.dev/content/core-components-examples/library/core-content/image.html)显示[!DNL Dynamic Media]个图像。
 
 ## 使用远程资产 {#use-remote-assets}
 
@@ -316,7 +316,7 @@ ht-degree: 15%
 
 * 要获取有关资源使用情况的见解，请在[!DNL Sites]实例上配置[Assets Insight](/help/assets/asset-insights.md)功能。
 
-* 无法将远程资产拖到[图像组件“配置”对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=zh-Hans#configure-dialog)上。 但是，您无需单击&#x200B;**[!UICONTROL 配置]**，即可将远程资产直接拖到“站点”页面上的图像组件中。
+* 无法将远程资产拖到[图像组件“配置”对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=en#configure-dialog)上。 但是，您无需单击&#x200B;**[!UICONTROL 配置]**，即可将远程资产直接拖到“站点”页面上的图像组件中。
 
 ### 权限和资产管理 {#permissions-and-managing-assets}
 

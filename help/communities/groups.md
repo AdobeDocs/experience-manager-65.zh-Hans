@@ -13,7 +13,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1727'
+source-wordcount: '1691'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 当社区站点的[模板结构](/help/communities/sites-console.md#step1)包含[组功能](/help/communities/functions.md#groups-function)时，“组”控制台提供创建社区组的权限。
 
-* AEM Communities支持在其他组内嵌套组。 如果新组[&#128279;](/help/communities/tools-groups.md)的结构包含组函数，则可能进行组嵌套。
+* AEM Communities支持在其他组内嵌套组。 如果新组](/help/communities/tools-groups.md)的[结构包含组函数，则可能进行组嵌套。
 * 仅对于创作环境，有一个与站点创建向导类似的组创建向导。
 * 成员是否可以在发布环境中创建组，可以在将组功能添加到社区站点结构或社区组结构时对其进行配置。
 
@@ -87,7 +87,7 @@ This is a 404 on helpx. Update or remove.
 * **社区组根**
 
   组的根路径。
-默认根是父站点，但根可以移动到网站内的任何位置。 不建议更改此设置。
+默认根是父站点，但根可以移动到网站内的任何位置。不建议更改此设置。
 
 * **其他可用的社区组语言**&#x200B;菜单
 

@@ -12,8 +12,8 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1556'
-ht-degree: 0%
+source-wordcount: '1624'
+ht-degree: 1%
 
 ---
 
@@ -87,17 +87,17 @@ ht-degree: 0%
 * 允许网站访客在不登录的情况下查看网站
 * 允许成员发送和接收来自其他社区成员的消息
 * 允许使用Facebook登录，而不是注册和创建用户档案
-* 允许使用Twitter登录，而不是注册和创建配置文件
+* 允许使用Twitter登录，而不是注册和创建用户档案
 
 >[!NOTE]
 >
->对于生产环境，需要创建自定义Facebook和Twitter应用程序。 请参阅[使用Facebook和Twitter进行社交登录](/help/communities/social-login.md)。
+>对于生产环境，需要创建自定义Facebook和Twitter应用程序。 查看使用Facebook和Twitter的[社交登录](/help/communities/social-login.md)。
 
 ![社区站点设置](assets/site-settings.png)
 
 #### 标记 {#tagging}
 
-应用于社区内容的标记可通过选择先前通过[标记控制台](/help/sites-administering/tags.md#tagging-console)定义的AEM命名空间（如[教程命名空间](/help/communities/setup.md#create-tutorial-tags)）进行控制。
+应用于社区内容的标记可通过选择之前通过[标记控制台](/help/sites-administering/tags.md#tagging-console)定义的AEM命名空间（如[Tutorial命名空间](/help/communities/setup.md#create-tutorial-tags)）进行控制。
 
 使用提前输入搜索可以轻松查找命名空间。 例如，
 
@@ -119,7 +119,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[通道服务](https://helpx.adobe.com/cn/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author)允许选择仅存在于发布环境中的成员和组。
+>[通道服务](https://helpx.adobe.com/experience-manager/6-3/help/communities/deploy-communities.html#tunnel-service-on-author)允许选择仅存在于发布环境中的成员和组。
 
 新站点中的![用户角色](assets/site-admin-1.png)
 
@@ -160,7 +160,7 @@ ht-degree: 0%
 
 ![communitiessitesconsole](assets/communitiessitesconsole.png)
 
-## Publish社区站点 {#publish-the-community-site}
+## 发布社区站点 {#publish-the-community-site}
 
 创建的站点应从“社区 — 站点”控制台进行管理，该控制台与可能创建新站点的控制台相同。
 
@@ -182,9 +182,9 @@ ht-degree: 0%
 
   选择属性图标将打开社区站点以修改属性，例如标题或更改主题。
 
-* **Publish站点**
+* **发布站点**
 
-  选择世界图标将发布社区站点（例如，如果您的发布服务器在本地计算机上运行，则默认情况下将发布到localhost：4503）。
+  选择世界图标将发布社区站点（例如，如果您的发布服务器在本地计算机上运行，则默认情况下将发布到localhost:4503）。
 
 * **导出站点**
 
@@ -203,15 +203,15 @@ ht-degree: 0%
 >在创作实例上，从主菜单中：
 >
 >1. 导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 复制]**&#x200B;菜单。
->1. 选择作者&#x200B;**上的**&#x200B;代理。
+>1. 选择作者&#x200B;]**上的**[!UICONTROL &#x200B;代理。
 >1. 选择&#x200B;**[!UICONTROL 默认代理（发布）]**。
 >1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;旁边，选择&#x200B;**[!UICONTROL 编辑]**。
 >1. 在“代理设置”的弹出对话框中，选择&#x200B;**[!UICONTROL 传输]**&#x200B;选项卡。
->1. 在URI中，将端口号4503更改为所需的端口号。 例如，要使用端口6103：https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>1. 在URI中，将端口号4503更改为所需的端口号。 例如，要使用端口6103： https://localhost:6103/bin/receive？sling:authRequestLogin=1
 >1. 选择&#x200B;**[!UICONTROL 确定]**。
 >1. （可选）选择&#x200B;**[!UICONTROL 清除]**&#x200B;或&#x200B;**[!UICONTROL 强制重试]**&#x200B;以重置复制队列。
 
-### 选择Publish {#select-publish}
+### 选择发布 {#select-publish}
 
 确保发布服务器运行后，选择world图标以发布社区站点。
 
@@ -263,7 +263,7 @@ ht-degree: 0%
 要开始使用，请执行以下操作：
 
 1. 在发布实例上，使用管理员权限登录。
-1. 浏览到[https://localhost:4503/crx/de](https://localhost:4503/crx/de)。
+1. 浏览至[https://localhost:4503/crx/de](https://localhost:4503/crx/de)。
 1. 在项目浏览器中，展开`/etc/map.`
 1. 选择`http`节点：
 
@@ -272,28 +272,28 @@ ht-degree: 0%
       * **名称** localhost.4503
 （请*不*&#x200B;使用“：”）
 
-      * **类型** [sling：Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+      * **类型** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. 选择了新创建的`localhost.4503`节点：
 
    * 添加属性：
 
-   * **名称** sling：match
+   * **名称** sling:match
       * **类型**&#x200B;字符串
       * **值** localhost.4503/$
 （必须以“$”字符结尾）
 
    * 添加属性：
 
-      * **名称** sling：internalRedirect
+      * **名称** sling:internalRedirect
       * **类型**&#x200B;字符串
       * **值** /content/sites/engage/en.html
 
 1. 选择&#x200B;**全部保存。**
 1. （可选）删除浏览历史记录。
-1. 浏览https://localhost:4503/。
+1. 浏览到https://localhost:4503/。
 
-   * 抵达https://localhost:4503/content/sites/engage/en.html
+   * 到达https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
 >
@@ -309,15 +309,15 @@ ht-degree: 0%
 
 #### 故障排除：无法重定向 {#troubleshooting-fail-to-redirect}
 
-正则表达式`sling:match`字符串末尾的“**$**”是关键的，因此只映射`https://localhost:4503/`，否则重定向值将前缀为URL中server：port后面可能存在的任何路径。 因此，当AEM尝试重定向到登录页面时，它会失败。
+正则表达式`sling:match`字符串末尾的“**$**”是关键的，因此只映射`https://localhost:4503/`，否则重定向值将前缀为URL中服务器:port之后可能存在的任何路径。 因此，当AEM尝试重定向到登录页面时，它会失败。
 
 ### 修改站点 {#modify-the-site}
 
-最初创建站点后，作者可以使用[打开站点图标](/help/communities/sites-console.md#authoring-site-content)执行标准的AEM创作活动。
+最初创建网站后，作者可以使用[打开网站图标](/help/communities/sites-console.md#authoring-site-content)执行标准的AEM创作活动。
 
 此外，管理员可以使用[编辑站点图标](/help/communities/sites-console.md#modifying-site-properties)来修改站点的属性，如标题。
 
-进行任何修改后，请记住&#x200B;**保存**&#x200B;并重新&#x200B;**Publish**&#x200B;网站。
+进行任何修改后，请记住&#x200B;**保存**&#x200B;并重新&#x200B;**发布**&#x200B;网站。
 
 >[!NOTE]
 >
