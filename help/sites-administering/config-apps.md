@@ -1,5 +1,5 @@
 ---
-title: 为AEM应用程序配置
+title: 为 AEM 应用程序进行配置
 description: 了解如何使用Adobe Experience Manager应用程序更新应用程序OTA（空中）的内容。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,21 +11,21 @@ feature: Configuring
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '153'
-ht-degree: 0%
+source-wordcount: '154'
+ht-degree: 18%
 
 ---
 
-# 为AEM应用程序配置{#configuring-for-aem-apps}
+# 为 AEM 应用程序进行配置{#configuring-for-aem-apps}
 
 Adobe Experience Manager应用程序允许您更新应用程序OTA的内容（空中）。 更新的内容存储在发布实例上。 要允许设备上的应用程序连接到发布实例并检查更新，必须将发布实例配置为允许空的反向链接标头。
 
 ## 配置空反向链接标头 {#configuring-empty-referrer-header}
 
-配置反向链接筛选服务：
+要配置反向链接过滤器服务：
 
-* 在以下位置打开Apache Felix控制台（**配置**）：
-* https://&lt;服务器>：&lt;端口号>/system/console/configMgr
+* 在以下地址打开 Apache Felix 控制台（**配置**）：
+* https://<服务器>：<端口号>/system/console/configMgr
 * 以管理员身份登录。
 * 在&#x200B;**配置**&#x200B;菜单中，选择： *Apache Sling引用过滤器*
 * 选中允许空字段，以便您可以允许为空/缺少反向链接标头。

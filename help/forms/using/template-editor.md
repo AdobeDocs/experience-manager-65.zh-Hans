@@ -11,18 +11,18 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2030'
-ht-degree: 3%
+source-wordcount: '1956'
+ht-degree: 4%
 
 ---
 
 # 自适应表单模板{#adaptive-form-templates}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
 | AEM 6.5 | 本文 |
 
 
@@ -37,7 +37,7 @@ ht-degree: 3%
 
 ## 使用模板 {#working-with-templates}
 
-您可以从“工具”菜单访问模板编辑器，方法是导航到&#x200B;**Adobe Experience Manager > “工具” > “模板”**。 在此处，模板在启用可编辑模板的文件夹中进行组织。 AEM提供了一个用于组织模板的全局文件夹。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](/help/sites-developing/page-templates-editable.md)。
+您可以从“工具”菜单访问模板编辑器，方法是导航到&#x200B;**Adobe Experience Manager > “工具” > “模板”**。 在此处，模板在启用可编辑模板的文件夹中进行组织。 AEM提供了一个全局文件夹来组织模板。 但是，默认情况下不启用此功能。 您可以请求管理员启用全局文件夹或创建模板文件夹。 有关如何创建文件夹的详细信息，请参阅[模板文件夹](/help/sites-developing/page-templates-editable.md)。
 
 选择打开文件夹后，您会看到“创建”按钮，该按钮允许您为自适应表单创建模板。
 
@@ -55,7 +55,7 @@ ht-degree: 3%
 
 ### 模板编辑器用户界面 {#template-editor-ui}
 
-在打开模板进行编辑时，您可以看到以下AEM Editor组件：
+在打开模板进行编辑时，您可以看到以下AEM编辑器组件：
 
 * **页面工具栏**
 包含以下选项：
@@ -63,8 +63,8 @@ ht-degree: 3%
    * **切换侧面板**：用于显示或隐藏侧栏。
    * **页面信息**：用于指定发布/取消发布时间、缩略图、客户端库、页面策略和页面设计客户端库等信息。
    * **模拟器**：用于模拟和自定义不同设备的外观。
-   * **图层选择器：**&#x200B;允许您更改图层。
-您可以选择&#x200B;**结构**&#x200B;层或&#x200B;**初始内容**&#x200B;层。 利用结构层，可添加和自定义页眉和页脚。 通过初始内容层，可自定义表单内容。
+   * **图层选择器：**允许您更改图层。
+您可以选择**结构**&#x200B;层或&#x200B;**初始内容**&#x200B;层。利用结构层，可添加和自定义页眉和页脚。通过初始内容层，可自定义表单内容。
 
    * **预览：**&#x200B;允许您预览发布模板时的外观。 您可以使用“图层选择器”和“预览”来切换编辑和预览模式。
 
@@ -115,8 +115,8 @@ ht-degree: 3%
 
 选择初始内容选项后，模板的自适应表单容器会像编辑的自适应表单一样打开。 与创作自适应表单一样，您可以指定初始设置，例如选择主题和提交操作。
 
-表单作者可将其用作创建表单的基础。 内容流结构在模板的初始内容层中指定。 要切换到编辑表单模板的初始内容，请在页面工具栏中的“预览”之前，选择![画布下拉列表](assets/canvas-drop-down.png) **>初始内容**。
-模板编辑器中的![初始内容层](assets/initial-content-layer.png)
+表单作者可将其用作创建表单的基础。内容流结构在模板的初始内容层中指定。要切换到编辑表单模板的初始内容，请在页面工具栏中的“预览”之前，选择![画布下拉列表](assets/canvas-drop-down.png) **>初始内容**。
+![模板编辑器中的初始内容层](assets/initial-content-layer.png)
 
 模板编辑器中的初始内容层，显示为指定属性而选择的自适应表单容器。
 
@@ -188,14 +188,14 @@ ht-degree: 3%
 
    >[!NOTE]
    >
-   >AEM Web控制台的URL是https://&#39;[服务器]：[端口]&#39;/system/console/configMgr
+   >AEM Web控制台的URL是https://&#39;[server]：[port]&#39;/system/console/configMgr
 
 1. 找到并打开&#x200B;**FormsManager配置**&#x200B;设置：
 
    * 要显示或隐藏现成的自适应表单模板，请选中或取消选中&#x200B;**包含现成的AF和AD模板**&#x200B;选项。
    * 要显示或隐藏在AEM 6.0 Forms或AEM 6.1 Forms版本中添加但现在已弃用的现成自适应表单模板，请选中或取消选中&#x200B;**包含AEM 6.0 AF模板**&#x200B;选项。 如果选中此选项，则为了生效，需要启用&#x200B;**包括现成的AF和AD模板**&#x200B;配置。
 
-1. 单击&#x200B;**保存**。现成模板的显示选项已更改。
+1. 单击&#x200B;**保存**。 现成模板的显示选项已更改。
 
 ## 推荐 {#recommendations}
 

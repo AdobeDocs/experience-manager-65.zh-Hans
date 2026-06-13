@@ -1,5 +1,5 @@
 ---
-title: 更新指向文档的链接
+title: 更新文档链接
 description: 如何更新AEM Forms工作区中Workspace帮助链接的目标以指向您的自定义文档链接。
 contentOwner: robhagat
 content-type: reference
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '141'
-ht-degree: 2%
+source-wordcount: '142'
+ht-degree: 11%
 
 ---
 
-# 更新指向文档的链接 {#updating-the-link-to-the-documentation}
+# 更新文档链接 {#updating-the-link-to-the-documentation}
 
 您可以通过选择&#x200B;**帮助> AEM Forms帮助**&#x200B;来访问Workspace工作区的默认帮助内容。 它指向Adobe网站上的在线文档。 但是，您可以将其更新为指向任何其他URL。
 

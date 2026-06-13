@@ -1,6 +1,6 @@
 ---
-title: Adobe分类
-description: 了解如何使用“Adobe分类”将分类数据导出到Adobe Analytics。
+title: Adobe 分类
+description: 了解如何使用Adobe Classifications将分类数据导出到Adobe Analytics。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
@@ -11,18 +11,18 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '619'
 ht-degree: 5%
 
 ---
 
-# Adobe分类{#adobe-classifications}
+# Adobe 分类{#adobe-classifications}
 
 Adobe分类按计划方式将分类数据导出到[Adobe Analytics](/help/sites-administering/adobeanalytics.md)。 导出程序是&#x200B;**com.adobe.cq.scheduled.exporter.Exporter**&#x200B;的实现。
 
 要配置此功能，请执行以下操作：
 
-1. 使用&#x200B;**导航**，选择&#x200B;**工具**、**Cloud Service**，然后选择&#x200B;**旧版Cloud Service**。
+1. 使用&#x200B;**导航**，选择&#x200B;**工具**、**云服务**，然后选择&#x200B;**旧版云服务**。
 1. 滚动到&#x200B;**Adobe Analytics**&#x200B;并选择&#x200B;**显示配置**。
 1. 单击Adobe Analytics配置旁边的&#x200B;**[+]**&#x200B;链接。
 
@@ -44,10 +44,10 @@ Adobe分类按计划方式将分类数据导出到[Adobe Analytics](/help/sites-
 
    | **字段** | **描述** |
    |---|---|
-   | 已启用 | 选择&#x200B;**是**&#x200B;以启用“Adobe分类”设置。 |
+   | 已启用 | 选择&#x200B;**是**&#x200B;以启用Adobe分类设置。 |
    | 发生冲突时覆盖 | 选择&#x200B;**是**&#x200B;以覆盖所有数据冲突。 默认情况下，此项设置为&#x200B;**否**。 |
    | 删除已处理的项目 | 如果设置为&#x200B;**是**，则在导出已处理的节点后将其删除。 默认值为&#x200B;**False**。 |
-   | 导出作业描述 | 输入Adobe分类作业的说明。 |
+   | 导出作业描述 | 输入Adobe分类作业的描述。 |
    | 通知电子邮件 | 输入Adobe分类通知的电子邮件地址。 |
    | 报表包 | 输入要为其运行导入作业的报表包。 |
    | 数据集 | 输入要为其运行导入作业的数据集关系ID。 |
@@ -59,13 +59,13 @@ Adobe分类按计划方式将分类数据导出到[Adobe Analytics](/help/sites-
 
 ## 修改页面大小 {#modifying-page-size}
 
-以页面形式处理记录。 默认情况下，“Adobe分类”会创建页面大小为1000的页面。
+以页面形式处理记录。 默认情况下，Adobe分类会创建页面大小为1000的页面。
 
-根据Adobe分类中的定义，页面最大大小可以是25000的，并且可以从Felix控制台进行修改。 在导出期间，“Adobe分类”会锁定源节点，以防止同时进行修改。 导出后、出错时或会话关闭时，节点会解锁。
+按照Adobe分类中的定义，页面最大大小可以是25000的，并且可以从Felix控制台进行修改。 在导出期间，Adobe Classifications会锁定源节点，以防止并发修改。 导出后、出错时或会话关闭时，节点会解锁。
 
 要更改页面大小，请执行以下操作：
 
-1. 导航到位于&#x200B;**https://&lt;host>：&lt;port>/system/console/configMgr**&#x200B;的OSGI控制台，然后选择&#x200B;**AdobeAEM分类导出程序**。
+1. 导航到位于&#x200B;**https://&lt;host>：&lt;port>/system/console/configMgr**&#x200B;的OSGI控制台，然后选择&#x200B;**Adobe AEM Classifications Exporter**。
 
    ![aa-26](assets/aa-26.png)
 
@@ -75,9 +75,9 @@ Adobe分类按计划方式将分类数据导出到[Adobe Analytics](/help/sites-
 
 >[!NOTE]
 >
->“Adobe分类”以前称为“SAINT导出器”。
+>Adobe Classifications以前称为SAINT导出器。
 
-导出器可以使用转换器将导出数据转换为特定格式。 对于Adobe分类，提供了实现Transformer接口的子接口`SAINTTransformer<String[]>`。 此接口用于将数据类型限制为SAINTAPI所使用的`String[]`，并具有标记器接口以查找可供选择的此类服务。
+导出器可以使用转换器将导出数据转换为特定格式。 对于Adobe分类，提供了实现Transformer接口的子接口`SAINTTransformer<String[]>`。 此接口用于将数据类型限制为SAINT API使用的`String[]`，并具有标记器接口以查找要选择的此类服务。
 
 在默认实现SAINTDefaultTransformer中，导出程序源的子资源被视为记录，属性名称作为键，属性值作为值。 **键**&#x200B;列自动添加为第一列 — 其值将是节点名称。 已忽略命名空间属性（包含`:`）。
 
@@ -142,6 +142,6 @@ Adobe分类按计划方式将分类数据导出到[Adobe Analytics](/help/sites-
  </tbody>
 </table>
 
-## 自动导出Adobe分类 {#automating-adobe-classifications-export}
+## 自动化Adobe分类导出 {#automating-adobe-classifications-export}
 
-您可以创建自己的工作流，这样任何新导入都会启动该工作流，在&#x200B;**/var/export/**&#x200B;中创建适当且结构正确的数据，以便将其导出到“Adobe分类”。
+您可以创建自己的工作流，这样任何新导入都会启动该工作流，在&#x200B;**/var/export/**&#x200B;中创建适当且结构正确的数据，以便将其导出到Adobe分类。
