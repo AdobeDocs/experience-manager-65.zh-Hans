@@ -1,5 +1,5 @@
 ---
-title: 配置Cookie用法
+title: 配置 Cookie 的使用
 description: AEM提供的服务允许您配置并控制Cookie在网页中的使用方式。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,14 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '549'
-ht-degree: 2%
+source-wordcount: '557'
+ht-degree: 5%
 
 ---
 
-# 配置Cookie用法{#configuring-cookie-usage}
+# 配置 Cookie 的使用{#configuring-cookie-usage}
 
-AEM提供的服务允许您配置并控制如何将Cookie用于网页：
+AEM提供的服务允许您配置并控制Cookie在网页中的使用方式：
 
 * 可配置的服务器端服务维护一个可用的Cookie列表。
 * JavaScript API允许您的JavaScript代码验证是否可以使用Cookie。
@@ -27,7 +27,7 @@ AEM提供的服务允许您配置并控制如何将Cookie用于网页：
 
 ## 配置允许的Cookie {#configuring-allowed-cookies}
 
-配置AdobeGranite选择退出服务以指定如何在您的网页上使用Cookie。 下表描述了可以配置的属性。
+配置Adobe Granite选择退出服务，以指定如何在您的网页上使用Cookie。 下表描述了可以配置的属性。
 
 要配置服务，您可以使用[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository)。 下表描述了任一方法所需的属性。 对于OSGi配置，服务PID为`com.adobe.granite.optout`。
 
@@ -39,7 +39,7 @@ AEM提供的服务允许您配置并控制如何将Cookie用于网页：
 
 ## 验证Cookie使用情况 {#validating-cookie-usage}
 
-使用客户端JavaScript调用AdobeGranite选择退出服务以验证您是否可以使用Cookie。 使用Granite.OptOutUtil JavaScript对象执行以下任意任务：
+使用客户端JavaScript调用Adobe Granite选择退出服务以验证您是否可以使用Cookie。 使用Granite.OptOutUtil JavaScript对象执行以下任意任务：
 
 * 获取Cookie名称列表，以表明用户不同意使用Cookie进行跟踪。
 * 获取可用的Cookie列表。

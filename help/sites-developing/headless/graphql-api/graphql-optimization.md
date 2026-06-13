@@ -7,7 +7,7 @@ feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '1915'
 ht-degree: 90%
 
 ---
@@ -66,7 +66,7 @@ ht-degree: 90%
 
 **推荐**
 
-[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 是 AEM 服务中的第一级缓存，位于 CDN 缓存之前。
+[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 是 AEM 服务中的第一级缓存，位于 CDN 缓存之前。
 
 **进一步的参考**
 
@@ -84,7 +84,7 @@ ht-degree: 90%
 
 请参阅：
 
-* [在AEM中使用CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans#using-dispatcher-with-a-cdn)
+* [在AEM中使用CDN](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn)
 
 #### 设置 HTTP 缓存控制标头 {#set-http-cache-control-headers}
 
@@ -185,11 +185,11 @@ AEM中的GraphQL支持两种类型的分页：
 
 * [限制/基于偏移的分页](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 这用于列表查询；这些查询以`List`结尾；例如，`articleList`。
-要使用它，您必须提供要返回的第一个项目的位置 (`offset`) 和要返回的项目数（`limit` 或页面大小）。
+若要使用它，您必须提供要返回的第一个项目的位置(`offset`)以及要返回的项目的数量（`limit`或页面大小）。
 
 * [基于游标的分页](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after)（由`first`和`after`表示）
 这会为每个项目提供一个唯一的ID；也称为光标。
-在查询中，您指定上一页的最后一项的光标，以及页面大小（要返回的项目的最大数量）。
+在查询中，指定上一页的最后一项的光标加上页面大小（返回的最大项数）。
 
   由于基于光标的分页不适合基于列表的查询的数据结构，因此，AEM 引入了 `Paginated` 查询类型；例如 `articlePaginated`。 所使用的数据结构和参数遵循 [GraphQL 光标连接规范](https://relay.dev/graphql/connections.htm)。
 

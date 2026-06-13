@@ -1,5 +1,5 @@
 ---
-title: 使用xtype（经典UI）
+title: 使用 xtype（经典 UI）
 description: 了解Adobe Experience Manager提供的所有xtype
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,16 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3865'
+source-wordcount: '7653'
 ht-degree: 0%
 
 ---
 
-# 使用xtype（经典UI）{#using-xtypes-classic-ui}
+# 使用 xtype（经典 UI）{#using-xtypes-classic-ui}
 
 本页介绍Adobe Experience Manager (AEM)可用的所有xtype。
 
-在ExtJS语言中，xtype是指定给类的符号名称。 您可以阅读ExtJS 2[&#128279;](https://www.sencha.com/learn/overview-of-extjs-2)概述中的“组件XTypes”段落，详细解释什么是xtype以及如何使用它。
+在ExtJS语言中，xtype是指定给类的符号名称。 您可以阅读ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2)概述中的“组件XTypes”段落，详细解释什么是xtype以及如何使用它。[
 
 有关AEM中所有可用小组件的完整信息，请参阅[小组件API文档](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)。
 
@@ -102,13 +102,13 @@ ht-degree: 0%
 
   BulkEditor提供了用于编辑搜索结果的搜索引擎和网格。
 
-  必须将BulkEditor插入到HTML表单中（导入功能所必需的）。 这完全适用于[CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)。
+  BulkEditor必须插入到HTML表单中（导入功能所必需的）。 这完全适用于[CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)。
 
 * bulkeditorform
 
   [CQ.wcm.BulkEditorForm](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditorForm)
 
-  BulkEditorForm提供了[CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)，它被HTML表单包围。 这是[CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)的独立版本，导入按钮需要HTML表单。
+  BulkEditorForm提供了由HTML表单包围的[CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)。 这是[CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor)的独立版本，导入按钮需要HTML表单。
 
 * 按钮
 
@@ -176,7 +176,7 @@ ht-degree: 0%
 
   支持自动完成、远程加载、寻呼和许多其他功能的组合框控件。
 
-  ComboBox的工作方式与传统HTML&lt;select>字段类似。 不同之处在于，要提交[valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)，您必须指定[hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)以创建隐藏的输入。
+  ComboBox的工作方式与传统HTML &lt;select>字段类似。 不同之处在于，要提交[valueField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)，您必须指定[hiddenName](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)以创建隐藏的输入。
 
 * 组件
 
@@ -192,7 +192,7 @@ ht-degree: 0%
 
 * 组件选择器
 
-  [CQ.form.ComponentSelector](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ComponentSelector)
+  [cq.form.ComponentSelector](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ComponentSelector)
 
   可用组件的分组、有序选择。
 
@@ -234,7 +234,7 @@ ht-degree: 0%
 
 * cq.workflow.model.selector
 
-  [CQ.wcm.WorkflowModelSelector](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.WorkflowModelSelector)
+  [cq.wcm.WorkflowModelSelector](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.WorkflowModelSelector)
 
   WorkflowModelSelector将WorkflowModelCombo与工作流的缩略图图像以及创建和编辑工作流模型的按钮组合在一起。
 
@@ -344,7 +344,7 @@ ht-degree: 0%
 
 * feedimporter
 
-  [CQ.wcm.FeedImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.FeedImporter)
+  [cq.wcm.FeedImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.FeedImporter)
 
   FeedImporter允许用户导入RSS或Atom信息源，并为每个信息源条目创建页面。
 
@@ -416,7 +416,7 @@ ht-degree: 0%
 
   [CQ.Ext.form.HtmlEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)
 
-  提供轻量级HTML编辑器组件。 Safari不支持某些工具栏功能，在需要时会自动隐藏这些功能。 在适当的情况下，这些内容会在配置选项中说明。
+  提供了一个轻量级HTML编辑器组件。 Safari不支持某些工具栏功能，在需要时会自动隐藏这些功能。 在适当的情况下，这些内容会在配置选项中说明。
 
   编辑器的工具栏按钮在[buttonTips](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.HtmlEditor)属性中定义了工具提示。
 
@@ -440,13 +440,13 @@ ht-degree: 0%
 
 * jsonstore
 
-  [CQ.Ext.data.JsonStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonStore)
+  [cq.Ext.data.JsonStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonStore)
 
   小型helper类，可简化从JSON数据创建[CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)的过程。 JsonStore自动配置了[CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader)。
 
 * 标签
 
-  [CQ.Ext.form.Label](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Label)
+  [cq.Ext.form.Label](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Label)
 
   基本标签字段。
 
@@ -578,9 +578,9 @@ ht-degree: 0%
 
 * offlineimporter
 
-  [CQ.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
+  [cq.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
 
-  OfflineImporter是一种用于导入Microsoft® Word文档并将其转换为AEM页面的工具。 此功能允许使用文字处理器离线编辑内容。
+  OfflineImporter是一种用于导入® Word文档并将其转换为AEM页面的工具。 此功能允许使用文字处理器离线编辑内容。
 
 * ownerdraw
 
@@ -718,7 +718,7 @@ ht-degree: 0%
 
   [CQ.wcm.Sidekick](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Sidekick)
 
-  Sidekick是一个浮动辅助函数，为用户提供用于编辑页面的常用工具。
+  Sidekick是一个浮动辅助函数，可为用户提供用于编辑页面的常用工具。
 
 * siteadmin
 
@@ -728,7 +728,7 @@ ht-degree: 0%
 
 * Siteimporter
 
-  [CQ.wcm.SiteImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteImporter)
+  [cq.wcm.SiteImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteImporter)
 
   站点导入器允许用户导入完整的网站并创建初始项目。
 
@@ -758,7 +758,7 @@ ht-degree: 0%
 
   SmartFile是一种智能文件上载程序。
 
-  如果安装了Flash插件（版本>= 9），则使用SWFupload库执行上载，这为处理上载提供了一种便捷的方法。
+  如果安装了Flash插件（版本>= 9），则使用SWFupload库执行上载，这为处理上载提供了一种方便的方法。
 
 * smartimage
 

@@ -10,7 +10,7 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '3832'
+source-wordcount: '3902'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## 在“创建通信”用户界面中创建通信 {#create-correspondence-in-the-create-correspondence-user-interface}
 
-在Correspondence Management[&#128279;](../../forms/using/create-letter.md)中创建信件模板后，最终用户/代理/索赔理算员可以在“创建信件”用户界面中打开信件，并通过输入数据、设置内容和管理附件来创建信件。 最后，理赔人或代理可以在预览模式下管理内容并提交信件。
+在Correspondence Management](../../forms/using/create-letter.md)中创建[信件模板后，最终用户/代理/索赔理算员可以在“创建信件”用户界面中打开信件，并通过输入数据、设置内容和管理附件来创建信件。 最后，理赔人或代理可以在预览模式下管理内容并提交信件。
 
 ### 预览通信 {#preview-a-correspondence}
 
@@ -49,7 +49,7 @@ ht-degree: 0%
 
    ![预览书信](assets/8_previewcustomdatafile.png)
 
-1. 默认情况下，书信HTML预览（移动设备表单预览）打开，且“数据”选项卡成为焦点。
+1. 默认情况下，书信HTML预览（移动设备表单预览）会打开，其中的“数据”选项卡处于焦点。
 
    有关移动表单及其支持的功能的详细信息，请参阅[移动Forms与PDF forms之间的功能区别](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html)。
 
@@ -57,7 +57,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关在信件预览的HTML或PDF呈现模式之间切换的更多信息，请参阅[更改信件的呈现模式](#changerenditionmode)。 有关Correspondence Management和AEM中对PDF支持的详细信息，请参阅[NPAPI浏览器插件停止使用及其影响](https://helpx.adobe.com/cn/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)。<!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
+   >有关在预览信件的HTML或PDF呈现模式之间切换的更多信息，请参阅[更改信件的呈现模式](#changerenditionmode)。 有关PDF在通信管理和AEM中支持的详细信息，请参阅[停止NPAPI浏览器插件及其影响](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)。<!-- and [PDF Forms to HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html). THIS URL IS A 404 AND NO SUITABLE REPLACEMENT TOPIC WAS FOUND. CONSIDER DELETING OR ADDING NEW LINK. COMMENTING OUT SO USERS DON'T CLICK IT. -->
 
 ### 输入数据 {#enterdata}
 
@@ -65,7 +65,7 @@ ht-degree: 0%
 
 1. 根据需要在字段中输入数据和内容变量。 填写所有标有星号(&#42;)的必填字段以启用&#x200B;**提交**&#x200B;按钮。
 
-   在HTML信预览中选择数据字段值，以高亮显示数据选项卡中的相应数据字段。
+   在HTML信件预览中选择数据字段值，以高亮显示数据选项卡中的相应数据字段。
 
    ![在书信](assets/2_enterdata.png)中输入数据![2_1_enterdata](assets/2_1_enterdata.png)
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
    ![4_highlightmoduleincontent](assets/4_highlightmoduleincontent.png)
 
-   在“内容”或“数据”选项卡中，通过点按HTML信件预览左上角的突出显示选定模块(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))，您可以禁用或启用在信件预览中选择相关文本、段落或数据字段时转到内容/数据模块的功能。
+   在“内容”或“数据”选项卡中，通过点按HTML信件预览左上角的突出显示选定模块(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))，可以禁用或启用在信件预览中选择相关文本、段落或数据字段时转到内容/数据模块的功能。
 
    有关“创建通信”用户界面中各种模块可用的操作的详细信息，请参阅“创建通信”用户界面中可用的[操作和信息](#actions-and-info-available-in-the-create-correspondence-content-tab)。
 
@@ -99,7 +99,7 @@ ht-degree: 0%
 
    ![5_edittextmodule](assets/5_edittextmodule.png)
 
-   您可能希望重新使用存在于另一个文档应用中的多个文本段落之一。 您可以直接复制和粘贴文本，例如从MS Word、HTML页或任何其他应用程序复制和粘贴文本。
+   您可能希望重新使用存在于另一个文档应用中的多个文本段落之一。 您可以直接复制并粘贴文本，例如从MS Word、HTML页面或任何其他应用程序复制并粘贴文本。
 
    您可以在可编辑文本模块中复制并粘贴文本的一个或多个段落。 例如，您可能有一个包含可接受居住证明项目符号列表的MS Word文档，如下所示：
 
@@ -229,7 +229,7 @@ ht-degree: 0%
 
 1. 根据需要，在内容选项卡中编辑内容模块。 要使内容层次结构中的相关内容模块获得焦点，您可以在信件预览中选择相关行或段落，或者直接在内容层次结构中选择内容模块。
 
-   例如，在下图中选择了“允许我们访问……”行，并在“内容”选项卡中选择了相应的内容模块。
+   例如，行“允许我们访问……” 在下图中选择了，然后在内容选项卡中选择了相应的内容模块。
 
    通过点按内容中的高亮显示选定模块(![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png))，您可以禁用或启用在信件预览中点按相关文本、段落或数据字段时在“内容”选项卡中高亮显示内容模块的功能。
 
@@ -237,7 +237,7 @@ ht-degree: 0%
 
 1. 若要在信件中添加分页符，请选择要插入分页符的位置，然后选择“在之前分页符”或“在之后分页符”(![pagebreakbeforeafter](assets/pagebreakbeforeafter.png))。
 
-   在信件中插入显式分页符占位符。 要查看明确的分页符对信件的影响，请参阅拼合的PDF预览。
+   在信件中插入显式分页符占位符。 要查看明确的分页符对信件有何影响，请参阅拼合的PDF预览。
 
    >[!NOTE]
    >
@@ -251,23 +251,23 @@ ht-degree: 0%
 
    此时将显示草稿信件名称对话框，其中包含信件实例ID。 您可以选择编辑此ID。 记下书信ID，然后选择&#x200B;**完成**。 您稍后可以使用此ID [重新加载草稿书信](submit-letter-topostprocess.md#reloaddraft)。
 
-1. 若要以拼合PDF的形式预览书信，并在提交书信时采用完全相同的布局和分页符，请选择（![预览](assets/preview.png)）预览。
+1. 若要以平面化PDF预览书信，并在提交书信时采用确切的布局和分页符，请选择（![预览](assets/preview.png)）预览。
 
-   信件显示为拼合的PDF。 拼合的PDF是信件的精确表示形式，因为它将提交时具有正确的字体、分隔符和信件布局。
+   该信件显示为一个扁平的PDF。 拼合的PDF是信件的精确表示形式，因为提交信件时将使用正确的字体、分隔符和信件布局。
 
    >[!NOTE]
    >
-   >如果您使用的是Mozilla Firefox和HTML呈现版本类型，若要将信件预览为拼合PDF，请确保您使用的是本机浏览器插件，而不是Acrobat插件。 要选择本机浏览器插件，请转到Mozilla Firefox的设置，对于内容类型PDF，请选择在Firefox中预览。
+   >如果您使用的是Mozilla Firefox和HTML呈现版本类型，要预览拼合的PDF形式的信件，请确保您使用的是本机浏览器插件，而不是Acrobat插件。 要选择本机浏览器插件，请转到Mozilla Firefox的设置，对于内容类型PDF，请选择“在Firefox中预览”。
 
-1. 如果发现拼合的PDF预览效果令人满意，请选择&#x200B;**提交**&#x200B;以提交书信。 或者，若要更改信件，请选择&#x200B;**退出预览**&#x200B;以返回信件的创建通信UI预览，从而更改信件。 选择提交后，如果在Publish实例上启用了管理书信实例配置，则会生成提交书信实例。
+1. 如果您发现拼合的PDF预览效果令人满意，请选择&#x200B;**提交**&#x200B;以提交书信。 或者，若要更改信件，请选择&#x200B;**退出预览**&#x200B;以返回信件的创建通信UI预览，从而更改信件。 选择提交后，如果在发布实例上启用了管理书信实例配置，则会生成提交书信实例。
 
    有关更多信息，请参阅保存草稿和提交信件实例下的草稿实例。
 
    您还可以将信件另存为草稿以便稍后更改信件。
 
-   进行所需的更改后，您可以从HTML5预览中提交书信，或再次选择“预览”以查看拼合的PDF输出。
+   进行所需的更改后，您可以从HTML5预览中提交书信，或再次选择预览以审阅拼合的PDF输出。
 
-   有关HTML5表单与PDF forms之间差异的信息，请参阅[HTML5表单与PDF forms之间的功能差异](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md)。
+   有关HTML5 Forms与PDF forms之间差异的信息，请参阅[HTML5 Forms与PDF forms之间的功能区别](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md)。
 
 ## 保存草稿和提交信件实例 {#savingdrafts}
 
@@ -275,21 +275,21 @@ ht-degree: 0%
 
 有两种类型的信件实例可以保存：草稿实例和提交实例。
 
-* **草稿实例**：草稿实例捕获您正在预览的信件的当前状态。 要保存草稿实例，请先确保信件及其引用的所有资产均处于“已发布”状态。 有关发布信件的信息，请参阅[Publish资产](../../forms/using/publishing-unpublishing-forms.md#publishanasset)。 在将信件另存为草稿之前，您需要Publish信件，因为当您发布信件时，会同时创建该信件的版本、其相关资源和数据。 您或其他用户无法编辑信件的已发布版本，并且以后可以在与已发布版本没有任何意外差异的情况下还原。 您可以稍后返回此实例，然后从所离开的位置继续。
+* **草稿实例**：草稿实例捕获您正在预览的信件的当前状态。 要保存草稿实例，请先确保信件及其引用的所有资产均处于“已发布”状态。 有关发布书信的信息，请参阅[发布资产](../../forms/using/publishing-unpublishing-forms.md#publishanasset)。 您需要先发布信件，然后才能将其另存为草稿，因为发布信件时，需要先创建该信件的版本、其相关资源和数据。 您或其他用户无法编辑信件的已发布版本，并且以后可以在与已发布版本没有任何意外差异的情况下还原。 您可以稍后返回此实例，然后从所离开的位置继续。
 
-* **提交实例**：提交实例在提交时捕获书信的状态。 提交实例存储信件实例在后处理后的PDF状态，以及用户在“创建通信”用户界面中输入的数据。
+* **提交实例**：提交实例在提交时捕获书信的状态。 提交实例存储信件实例在经过后处理后的PDF状态，以及用户在创建通信用户界面中输入的数据。
 
 只能在发布实例上查看信件时保存此类实例。 默认情况下，在实例上保存处于关闭状态。 要启用信件实例保存，请执行以下步骤。
 
 1. 在AEM中，使用以下URL打开服务器的Adobe Experience Manager Web控制台配置： https://&lt;server>：&lt;port>/&lt;contextpath>/system/console/configMgr
 1. 找到&#x200B;**[!UICONTROL 通信管理配置]**&#x200B;并单击它。
-1. 检查&#x200B;**[!UICONTROL Publish]**&#x200B;配置中的管理书信实例，然后单击&#x200B;**[!UICONTROL 保存]**。
+1. 检查&#x200B;**[!UICONTROL 在发布]**&#x200B;配置中管理书信实例，然后单击&#x200B;**[!UICONTROL 保存]**。
 
 ### 启用保存草稿功能 {#enable-save-draft-feature}
 
 在发布实例上发布信件或保存草稿之前，请在创作和发布实例上执行以下步骤以启用另存为草稿功能：
 
-默认情况下，*cq：lastReplicationAction*、*cq：lastreplicated*&#x200B;和&#x200B;*cq：lastReplicatedBy*&#x200B;属性未转移到发布实例。 若要将&#x200B;*cq：lastReplicationAction*、*cq：lastreplicated*&#x200B;和&#x200B;*cq：lastReplicatedBy*&#x200B;属性转移到发布实例，请禁用[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]组件。 要禁用组件，请执行以下操作：
+默认情况下，*cq:lastReplicationAction*、*cq:lastreplicated*&#x200B;和&#x200B;*cq:lastReplicatedBy*&#x200B;属性未转移到发布实例。 若要将&#x200B;*cq:lastReplicationAction*、*cq:lastreplicated*&#x200B;和&#x200B;*cq:lastReplicatedBy*&#x200B;属性转移到发布实例，请禁用[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]组件。 要禁用组件，请执行以下操作：
 
 1. 在创作实例上，打开Adobe Experience Manager Web控制台组件控制台。 默认URL为`http://author-server:port/system/console/components`
 
@@ -309,7 +309,7 @@ ht-degree: 0%
 
 1. 单击“保存”。
 
-![Publish实例](/help/forms/using/assets/correspondencemanagement.png)
+![发布实例](/help/forms/using/assets/correspondencemanagement.png)
 
 打开信件实例保存功能后，您可以选择保存信件实例的位置。 保存信件实例有两个选项：“本地保存”或“远程保存”。
 
@@ -319,7 +319,7 @@ ht-degree: 0%
 
 ### 远程保存 {#remote-save}
 
-此选项适用于担心在发布实例上保存用户数据的人员，通常情况下，这些发布实例位于公司防火墙之外。 打开远程保存后，书信实例不会保存在发布实例上，而是保存在通过LiveCycle客户端SDK配置指定的处理创作实例上。
+此选项适用于担心在发布实例上保存用户数据的人员，通常情况下，这些发布实例位于公司防火墙之外。 打开远程保存后，书信实例不会保存在发布实例上，而是保存在通过LiveCycle Client SDK配置指定的处理作者上。
 
 #### 启用远程保存 {#enable-remote-save}
 
@@ -333,7 +333,7 @@ ht-degree: 0%
 
    ![Adobe Experience Manager Web控制台配置](assets/2configmanager.png)
 
-1. 在此页面上，找到AdobeLiveCycle客户端SDK配置，然后单击该配置以展开它。
+1. 在此页面上，找到Adobe LiveCycle Client SDK配置，然后单击该配置以展开它。
 
 1. 在处理服务器URL中，输入LiveCycle服务器的名称，提供登录信息，然后单击&#x200B;**保存**。
 
@@ -348,17 +348,17 @@ ht-degree: 0%
 * 当使用“创建通信”用户界面将与信件模板关联的后处理作为提交或完成通信操作的一部分加载时，附件作为List&lt;com.adobe.idp.Document>在AttachmentDocs参数中传递。
 * 现成的投放机制（如电子邮件和打印）还会随生成的通信的PDF一起投放附件。
 
-## 信件预览的呈现模式：移动设备表单预览和PDF预览 {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
+## 信件预览的演绎版模式：Mobile表单预览和PDF预览 {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-AEM Forms Correspondence Management在创建信件UI中将信件显示为HTML。 但是，通信管理仍支持恢复到PDF预览而不是HTML预览。 有关在预览的HTML和PDF模式之间切换的更多信息，请参阅[更改书信的呈现模式](#changerenditionmode)。
+AEM Forms通信管理在创建通信UI中将信件显示为HTML。 但是，通信管理仍支持恢复到PDF预览，而不是HTML预览。 有关在HTML和PDF预览模式之间切换的更多信息，请参阅[更改书信的呈现模式](#changerenditionmode)。
 
-以下是HTML和PDF预览中提供的优势和功能。
+以下是HTML和PDF预览版中提供的优势和功能。
 
 **移动表单/HTML预览的优点**
 
 * **选择数据字段值以突出显示对应的数据字段**：在“创建通信”用户界面中，可以选择信件中的数据字段值以突出显示“数据”选项卡中的相应数据字段。 有关详细信息，请参阅[输入数据](#enterdata)。
 
-* **浏览器支持**：浏览器逐渐撤回对NPAPI的支持，这会影响信件的PDF预览。 书信的HTML/移动设备表单预览不受此影响。
+* **浏览器支持**：浏览器将逐渐撤回对NPAPI的支持，这会影响PDF预览信件。 信件的HTML/mobile forms预览不受此影响。
 * **在信件中高亮显示可编辑内容**：在“创建通信”用户界面中，可以选择“高亮显示可编辑内容”以灰色高亮显示信件中的所有可编辑内容。 有关详细信息，请参阅[管理内容](#managecontent)。
 
 `<li>` `<li>Benefits of HTML preview  <ul>   <li>Right to left</li>   <li>NPAPI</li>   <li>Highlight Editable Content</li>  </ul> </li>` `<li>Benefits of PDF preview  <ul>   <li>Page Break</li>   <li>Final Preview</li>  </ul> </li>`
@@ -367,7 +367,7 @@ AEM Forms Correspondence Management在创建信件UI中将信件显示为HTML。
 * **分页符**：在PDF预览中，您可以查看信件中的分页符对其输出的确切影响。
 * **最终预览**：在PDF预览中，您可以查看信件将出现在输出中的确切格式设置和外观。
 
-有关PDF forms中脚本支持的信息，请参阅[脚本支持](https://help.adobe.com/zh_CN/livecycle/11.0/ScriptingSupport/index.html)。
+有关PDF forms中脚本支持的信息，请参阅[脚本支持](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)。
 
 有关HTML5表单中脚本支持的详细信息，请参阅[HTML5表单的脚本支持](/help/forms/using/scripting-support.md)。
 
@@ -375,7 +375,7 @@ AEM Forms Correspondence Management在创建信件UI中将信件显示为HTML。
 
 默认情况下，创建通信UI使用HTML或移动表单呈现信件预览。 移动设备表单预览在任何浏览器中呈现时不会出现任何问题，因为它使用浏览器的本机插件，并且无需其他插件。 您可以将信件预览模式更改为PDF。 但是，浏览器限制可能会为信件的交互式PDF预览的不同功能带来问题。
 
-有关浏览器与信件预览兼容性的详细信息，请参阅[NPAPI浏览器插件停止使用及其影响](https://helpx.adobe.com/cn/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)。
+有关浏览器与信件预览兼容性的详细信息，请参阅[NPAPI浏览器插件停止使用及其影响](https://helpx.adobe.com/acrobat/kb/change-in-support-for-acrobat-and-reader-plug-ins-in-modern-web-.html)。
 
 要更改信件的预览模式，请完成以下步骤：
 

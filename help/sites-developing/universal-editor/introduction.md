@@ -6,7 +6,7 @@ role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
 source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1361'
 ht-degree: 96%
 
 ---
@@ -18,10 +18,10 @@ ht-degree: 96%
 
 ## 概述 {#overview}
 
-通用编辑器是一个多功能可视化编辑器，是 Adobe Experience Manager Sites 的一部分。它使作者能够对任何 Headless 体验进行所见即所得（WYSIWYG）编辑。
+通用编辑器是一个多功能可视化编辑器，是 Adobe Experience Manager Sites 的一部分。 它使作者能够对任何 Headless 体验进行所见即所得（WYSIWYG）编辑。
 
 * 作者可从通用编辑器的灵活性中受益，因为它为所有形式的 AEM Headless 内容提供相同、一致的可视化编辑体验。
-* 开发人员同样能够从通用编辑器的多样性中获益，因为它还支持对实施的真正解耦。它允许开发人员使用他们选择的几乎任何框架或架构，而不会施加任何 SDK 或技术限制。
+* 开发人员同样能够从通用编辑器的多样性中获益，因为它还支持对实施的真正解耦。 它允许开发人员使用他们选择的几乎任何框架或架构，而不会施加任何 SDK 或技术限制。
 
 请参阅 [AEM as a Cloud Service 文档中有关通用编辑器的章节](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)，以了解更多详细信息。
 
@@ -45,7 +45,7 @@ ht-degree: 96%
    * 支持内部部署和AMS*托管。
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
-本文档重点介绍 AEM 6.5 对通用编辑器的支持。要在 AEM 6.5 中使用通用编辑器，您需要：
+本文档重点介绍 AEM 6.5 对通用编辑器的支持。 要在 AEM 6.5 中使用通用编辑器，您需要：
 
 * 安装了服务包 23 或更高版本的 AEM 6.5
    * 服务包 21 和 22 也受支持，但需搭配[功能包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)使用。
@@ -53,7 +53,7 @@ ht-degree: 96%
 
 >[!NOTE]
 >
->*如果您使用Adobe Managed Services(AMS)，请联系CSE您的客户成功工程师(CSE)，以便使用通用编辑器。
+>*如果您使用Adobe Managed Services (AMS)，并且想要使用通用编辑器，请联系您的客户成功工程师(CSE)。
 
 ## 设置 {#setup}
 
@@ -142,7 +142,7 @@ ht-degree: 96%
 1. 安装 Node.js 版本 >=20。
 1. 从[软件分发](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud/software-distribution/home)下载并解压最新的通用编辑器服务
 1. 通过环境变量或 `.env` 文件配置通用编辑器服务。
-   * [有关详细信息，请参阅 AEM as a Cloud Service 通用编辑器文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
+   * [有关详细信息，请参阅AEM as a Cloud Service通用编辑器文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)
    * 请注意，如果需要重写内部 IP，可能需要使用 `UES_MAPPING` 选项。
 1. 运行 `universal-editor-service.cjs`
 
@@ -161,7 +161,7 @@ ht-degree: 96%
 
    >[!NOTE]
    >
-   >默认端口为 8080。如果在[您的 `.env` 文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)中通过 `UES_PORT` 参数更改了端口值，则必须在此处相应调整。
+   >默认端口为 8080。 如果在[您的 `.env` 文件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/local-dev#setting-up-service)中通过 `UES_PORT` 参数更改了端口值，则必须在此处相应调整。
 
 1. 重新启动 Apache。
 
@@ -169,7 +169,7 @@ ht-degree: 96%
 
 在更新 AEM 并运行本地通用编辑器服务后，您可以开始使用通用编辑器编辑 Headless 内容。
 
-但是，您的应用程序必须进行接入配置才能充分利用通用编辑器。这需要在页面中添加元标记，以指示编辑器如何以及在何处对内容进行持久化。有关此接入配置的详细信息，请参阅 [AEM as a Cloud Service 的通用编辑器文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
+但是，您的应用程序必须进行接入配置才能充分利用通用编辑器。 这需要在页面中添加元标记，以指示编辑器如何以及在何处对内容进行持久化。 有关此接入配置的详细信息，请参阅 [AEM as a Cloud Service 的通用编辑器文档。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/getting-started#instrument-page)
 
 请注意，在参考 AEM as a Cloud Service 的通用编辑器文档时，如果使用 AEM 6.5，则需进行以下调整：
 
@@ -193,7 +193,7 @@ ht-degree: 96%
 
 ## AEM 6.5 与 AEM as a Cloud Service 的差异 {#differences}
 
-AEM 6.5 中的通用编辑器在整体上与 AEM as a Cloud Service 的工作方式相同，其中包括用户界面和大部分配置。但仍有一些差异需要注意。
+AEM 6.5 中的通用编辑器在整体上与 AEM as a Cloud Service 的工作方式相同，其中包括用户界面和大部分配置。 但仍有一些差异需要注意。
 
 * 在 6.5 中，通用编辑器仅支持 Headless 用例。
 * 在 6.5 中，通用编辑器的设置略有不同（如当前文档[所述](#setup)）。

@@ -11,8 +11,8 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '545'
-ht-degree: 0%
+source-wordcount: '550'
+ht-degree: 2%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您还可以使用&#x200B;**[!UICONTROL 通过电子邮件发送PDF]**&#x200B;选项，通过电子邮件将填写好的表单作为PDF附件发送。 可用于此操作的配置选项与&#x200B;**[!UICONTROL 发送电子邮件]**&#x200B;操作的可用选项相同。 电子邮件PDF操作仅适用于基于XFA的自适应表单
+>您还可以使用&#x200B;**[!UICONTROL 通过电子邮件发送PDF]**&#x200B;选项，将完成的表单通过电子邮件作为PDF附件发送。 可用于此操作的配置选项与&#x200B;**[!UICONTROL 发送电子邮件]**&#x200B;操作的可用选项相同。 电子邮件PDF操作仅适用于基于XFA的自适应表单
 
 ## 发送电子邮件操作 {#email-action}
 

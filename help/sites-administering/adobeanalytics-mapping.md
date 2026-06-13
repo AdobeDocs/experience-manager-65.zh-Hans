@@ -1,5 +1,5 @@
 ---
-title: 将组件数据映射到Adobe Analytics属性
+title: 建立组件数据与 Adobe Analytics 属性的映射
 description: 了解如何使用SiteCatalyst属性映射组件数据。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Integration
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '1449'
-ht-degree: 0%
+source-wordcount: '1458'
+ht-degree: 1%
 
 ---
 
-# 将组件数据映射到Adobe Analytics属性{#mapping-component-data-with-adobe-analytics-properties}
+# 建立组件数据与 Adobe Analytics 属性的映射{#mapping-component-data-with-adobe-analytics-properties}
 
 将组件添加到框架中以收集要发送到Adobe Analytics的数据。 用于收集Analytics数据的组件将数据存储在相应的&#x200B;**CQ变量**&#x200B;中。 将此类组件添加到框架时，该框架会显示CQ变量列表，以便您可以将每个变量添加到相应的&#x200B;**Analytics变量**。
 
@@ -88,7 +88,7 @@ AEM使用命名产品相关变量和事件的约定来命名这些要映射到Ad
 
 ### 在Adobe Analytics中检查报告 {#checking-reports-on-adobe-analytics}
 
-1. 使用提供给AEM的相同凭据登录Adobe Analytics网站。
+1. 使用提供给Adobe Analytics的相同凭据登录AEM网站。
 1. 确保选定的RSID是前面步骤中使用的RSID。
 1. 在&#x200B;**报表**（页面左侧）中，选择&#x200B;**自定义转化**，然后选择&#x200B;**自定义转化1-10**，并选择与`eVar7`对应的变量
 
@@ -105,11 +105,11 @@ AEM使用命名产品相关变量和事件的约定来命名这些要映射到Ad
 选择一个RSID后，属于该RSID的所有变量都会添加到列表中。\
 需要`cf#`才能将Analytics变量映射到不同跟踪组件上存在的CQ变量。 请参阅为基本跟踪设置框架。
 
-根据为框架选择的视图，内容查找器将由Analytics变量(在AEM视图中)或CQ变量（在Analytics视图中）填充。
+根据为框架选择的视图，内容查找器将由Analytics变量（在AEM视图中）或CQ变量（在Analytics视图中）填充。
 
 可通过以下方式操作列表：
 
-1. 在&#x200B;**AEM视图**&#x200B;中，可以使用以下三个筛选按钮根据选择的变量类型对列表进行筛选：
+1. 在&#x200B;**AEM视图**&#x200B;中，可以使用三个筛选器按钮根据选择的变量类型对列表进行筛选：
 
    * 如果未选择&#x200B;*按钮*，列表将显示完整列表。
    * 如果选择&#x200B;**流量**&#x200B;按钮，列表将仅显示属于流量部分的变量。
@@ -151,7 +151,7 @@ AEM使用命名产品相关变量和事件的约定来命名这些要映射到Ad
 
 1. 这是打开框架时的默认视图。
 1. 左侧：内容查找器(cf#)由基于所选RSID的Adobe Analytics变量填充。
-1. Tab标头(**AEM视图**&#x200B;和&#x200B;**Analytics视图**)：使用这些标头在两个视图之间切换。
+1. Tab标头（**AEM视图**&#x200B;和&#x200B;**Analytics视图**）：使用这些标头在两个视图之间切换。
 
 1. **AEM视图**：
 
@@ -174,7 +174,7 @@ AEM使用命名产品相关变量和事件的约定来命名这些要映射到Ad
 
 1. 通过切换到框架上的&#x200B;**Analytics视图**&#x200B;选项卡，可以访问此视图。
 1. 左侧：内容查找器(cf#)由CQ变量填充，该变量基于CQ视图中拖放到框架上的组件。
-1. Tab标头(**AEM视图**&#x200B;和&#x200B;**Analytics视图**)：使用这些标头在两个视图之间切换。
+1. Tab标头（**AEM视图**&#x200B;和&#x200B;**Analytics视图**）：使用这些标头在两个视图之间切换。
 
 1. 三个表（流量、转化、事件）列出了所有可用的Adobe Analytics变量。 属于选定的RSID。 此处显示的映射应该与AEM视图中的映射相同：
 
@@ -198,8 +198,7 @@ AEM使用命名产品相关变量和事件的约定来命名这些要映射到Ad
 >
 >任何表的CQ变量列也可以内联填充，方法是双击该字段并向其添加文本。 这些字段接受JavaScript作为输入。
 >
->例如，在`prop3`旁边，您可以添加：
->     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>例如，在`prop3`旁边，您可以添加：> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >使用&#x200B;*：* （冒号）发送与其&#x200B;*sitesection*&#x200B;连接且以&#x200B;*Adobe*&#x200B;为前缀的页面的&#x200B;*title*&#x200B;作为`prop3`
 >
 

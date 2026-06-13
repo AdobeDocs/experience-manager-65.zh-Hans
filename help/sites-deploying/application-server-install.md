@@ -11,7 +11,7 @@ feature: Deploying
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1186'
 ht-degree: 0%
 
 ---
@@ -20,16 +20,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`JAR`和`WAR`是Adobe Experience Manager (AEM)中发布的文件类型。 这些格式正在进行质量保证，以满足Adobe承诺的支持级别。
+>`JAR`和`WAR`是Adobe Experience Manager (AEM)在中发布的文件类型。 这些格式正在进行质量保证，以满足Adobe承诺的支持级别。
 >
 
-本节介绍如何通过应用程序服务器安装Adobe Experience Manager (AEM)。 请参阅[支持的平台](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers)部分，了解为各个应用程序服务器提供的特定支持级别。
+本节将介绍如何通过应用程序服务器安装Adobe Experience Manager (AEM)。 请参阅[支持的平台](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers)部分，了解为各个应用程序服务器提供的特定支持级别。
 
 以下应用程序服务器的安装步骤已说明：
 
-* [WebSphere](#websphere)
-* [Jboss](#jboss-eap)
-* [oracleWebLogic 12.1.3/12.2](#oracle-weblogic)
+* [WebSphere® 8.5](#websphere)
+* [JBoss® EAP 6.3.0/6.4.0](#jboss-eap)
+* [Oracle WebLogic 12.1.3/12.2](#oracle-weblogic)
 * [Tomcat 8/8.5](#tomcat)
 
 有关安装Web应用程序、服务器配置以及如何启动和停止服务器的详细信息，请参阅相应的应用程序服务器文档。
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ### 在应用程序服务器中安装AEM时的默认行为 {#default-behaviour-when-installing-aem-in-an-application-server}
 
-AEM作为单个war文件来部署。
+AEM提供单个war文件来进行部署。
 
 如果部署，则默认情况下会发生以下情况：
 
@@ -59,9 +59,9 @@ AEM作为单个war文件来部署。
 
 * sling.home：在部署之前在AEM war文件的`WEB-INF/web.xml`文件中配置`sling.home`参数
 
-* 上下文根目录：重命名AEM war文件
+* 上下文根：重命名AEM war文件
 
-#### Publish安装 {#publish-installation}
+#### 发布安装 {#publish-installation}
 
 要部署发布实例，您需要将运行模式设置为发布：
 
@@ -87,7 +87,7 @@ AEM作为单个war文件来部署。
 1. 将sling.run.modes更改为发布实例的发布。
 1. 重新打包web.xml文件。
 1. 请重命名war文件，使其名称不同。 例如，一个重命名为aemauthor.war，另一个重命名为aempublish.war。
-1. 使用更高的内存设置。 例如，默认AEM实例使用`-Xmx3072m`
+1. 使用更高的内存设置。 例如，默认的AEM实例使用`-Xmx3072m`
 1. 部署两个Web应用程序。
 1. 部署后，停止两个Web应用程序。
 1. 在创作实例和发布实例中，均确保在sling.properties文件中，属性felix.service.urlhandlers=false设置为false（默认设置为true）。
@@ -103,7 +103,7 @@ AEM作为单个war文件来部署。
 
 * 让基本身份验证标头通过：
 
-   * 允许AEM对用户进行身份验证的一种方法是禁用WebSphere®服务器的全局管理安全性，要实现此目的：转到“安全性”>“全局安全性”，然后取消选中“启用管理安全性”复选框，保存并重新启动服务器。
+   * 允许AEM对用户进行身份验证的一种方法是禁用WebSphere®服务器的全局管理安全性，要实现此目的：转到“安全”>“全局安全性”，然后取消选中“启用管理安全性”复选框，保存并重新启动服务器。
 
 * 设置`"JAVA_OPTS= -Xmx2048m"`
 * 如果要使用上下文根= /安装AEM，请更改现有默认Web应用程序的上下文根。
@@ -134,7 +134,7 @@ AEM作为单个war文件来部署。
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-如果您使用部署扫描程序安装AEM Web应用程序，则在实例的xml文件(例如，`configuration/standalone.xml)`：`deployment-timeout,` `deployment-timeout`
+如果您使用部署扫描程序安装AEM Web应用程序，则在实例的xml文件(例如，`configuration/standalone.xml)`：`deployment-timeout,``deployment-timeout`
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -148,7 +148,7 @@ AEM作为单个war文件来部署。
 
 * 启用AEM Web应用程序。
 
-#### oracleWebLogic 12.1.3/12.2 {#oracle-weblogic}
+#### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
 在部署之前，请阅读上面的[常规说明](#general-description)。
 
@@ -191,7 +191,7 @@ AEM作为单个war文件来部署。
 
    * 增加VM内存设置：
 
-      * 在`bin/catalina.bat`中(在UNIX®上为`catalina.sh`)添加以下设置：
+      * 在`bin/catalina.bat`中（在UNIX®上为`catalina.sh`）添加以下设置：
       * `set "JAVA_OPTS= -Xmx2048m`
 
    * 在安装时，Tomcat不启用管理员或管理员访问权限。 因此，您必须手动编辑`tomcat-users.xml`以允许访问这些帐户：
