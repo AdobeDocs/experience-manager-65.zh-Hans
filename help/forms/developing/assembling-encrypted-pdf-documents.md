@@ -1,5 +1,5 @@
 ---
-title: 汇编加密的PDF文档
+title: 组装加密的 PDF 文档
 description: 使用Java API和Web服务API汇编加密的PDF文档。
 contentOwner: admin
 content-type: reference
@@ -12,16 +12,16 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1641'
-ht-degree: 0%
+source-wordcount: '1676'
+ht-degree: 1%
 
 ---
 
-# 汇编加密的PDF文档 {#assembling-encrypted-pdf-documents}
+# 组装加密的 PDF 文档 {#assembling-encrypted-pdf-documents}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
-您可以使用Assembler服务用密码加密PDF文档。 使用密码加密PDF文档后，用户必须指定密码才能在Adobe Reader或Acrobat中查看PDF文档。 要使用口令加密PDF文档，DDX文档必须包含加密PDF文档所需的加密元素值。
+您可以使用Assembler服务用密码加密PDF文档。 使用密码加密PDF文档后，用户必须指定密码才能在Adobe Reader或Acrobat中查看PDF文档。 要使用密码加密PDF文档，DDX文档必须包含加密PDF文档所需的加密元素值。
 
 为了进行此讨论，假定使用以下DDX文档。
 
@@ -37,11 +37,11 @@ ht-degree: 0%
  </DDX>
 ```
 
-在此DDX文档中，请注意源属性被分配了值`inDoc`。 如果只有一个输入PDF文档传递到Assembler服务并且返回了一个PDF文档，并且您调用了`invokeOneDocument`操作，则将值`inDoc`分配给PDF源属性。 调用`invokeOneDocument`操作时，`inDoc`值是必须在DDX文档中指定的预定义键。
+在此DDX文档中，请注意源属性被分配了值`inDoc`。 如果只有一个输入PDF文档传递到Assembler服务并返回了一个PDF文档，且您调用了`invokeOneDocument`操作，则将值`inDoc`分配给PDF源属性。 调用`invokeOneDocument`操作时，`inDoc`值是必须在DDX文档中指定的预定义键。
 
 相反，在将两个或更多输入PDF文档传递到Assembler服务时，您可以调用`invokeDDX`操作。 在这种情况下，将输入PDF文档的文件名分配给`source`属性。
 
-加密服务不必是AEM Forms安装的一部分，也可以使用密码对PDF文档进行加密。 请参阅[加密和解密PDF文档](/help/forms/developing/encrypting-decrypting-pdf-documents.md)。
+加密服务不必是AEM表单安装的一部分，也可以使用密码加密PDF文档。 请参阅[加密和解密PDF文档](/help/forms/developing/encrypting-decrypting-pdf-documents.md)。
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ ht-degree: 0%
 要汇编加密的PDF文档，请执行以下步骤：
 
 1. 包括项目文件。
-1. 创建PDF汇编程序客户端。
+1. 创建PDF Assembler客户端。
 1. 引用现有DDX文档。
 1. 引用不安全的PDF文档。
 1. 设置运行时选项。
@@ -72,8 +72,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 如果AEM Forms部署在除JBoss之外的受支持J2EE应用程序服务器上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为JAR文件，这些文件特定于部署AEM Forms的J2EE应用程序服务器。 有关所有AEM Forms JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -83,7 +83,7 @@ ht-degree: 0%
 
 **引用现有DDX文档**
 
-要组合PDF文档，必须引用DDX文档。 例如，考虑本节介绍的DDX文档。 要加密PDF文档，DDX文档必须包含`PasswordEncryptionProfile`元素。
+必须引用DDX文档才能组合PDF文档。 例如，考虑本节介绍的DDX文档。 要加密PDF文档，DDX文档必须包含`PasswordEncryptionProfile`元素。
 
 **引用不安全的PDF文档**
 
@@ -95,11 +95,11 @@ ht-degree: 0%
 
 **加密文档**
 
-创建Assembler服务客户端、引用包含加密信息的DDX文档、引用不安全的PDF文档并设置运行时选项后，可以调用`invokeOneDocument`操作。 由于只有一个输入PDF文档被传递到Assembler服务（并且正在返回一个文档），因此您可以使用`invokeOneDocument`操作而不是`invokeDDX`操作。
+创建Assembler服务客户端、引用包含加密信息的DDX文档、引用不安全的PDF文档并设置运行时选项后，可以调用`invokeOneDocument`操作。 由于只有一个输入PDF文档被传递到Assembler服务（并且返回了一个文档），因此您可以使用`invokeOneDocument`操作而不是`invokeDDX`操作。
 
 **保存加密的PDF文档**
 
-如果只有一个PDF文档传递到Assembler服务，则Assembler服务返回单个文档，而不是集合对象。 也就是说，在调用`invokeOneDocument`操作时，将返回单个文档。 由于此节中引用的DDX文档包含加密信息，因此Assembler服务会返回使用口令加密的PDF文档。
+如果只有一个PDF文档传递到Assembler服务，则Assembler服务返回单个文档，而不是集合对象。 也就是说，在调用`invokeOneDocument`操作时，将返回单个文档。 由于此部分引用的DDX文档包含加密信息，因此Assembler服务会返回使用密码加密的PDF文档。
 
 **另请参阅**
 
@@ -107,7 +107,7 @@ ht-degree: 0%
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[以编程方式组合PDF文档](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[以编程方式组装 PDF 文档](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
 ## 使用Java API汇编加密的PDF文档 {#assemble-an-encrypted-pdf-document-using-the-java-api}
 
@@ -127,7 +127,7 @@ ht-degree: 0%
 
 1. 引用不安全的PDF文档。
 
-   * 使用对象的构造函数并传递不安全的PDF文档的位置来创建`java.io.FileInputStream`对象。
+   * 使用对象的构造函数并传递不安全的PDF文档的位置来创建一个`java.io.FileInputStream`对象。
    * 创建一个`com.adobe.idp.Document`对象并传递包含PDF文档的`java.io.FileInputStream`对象。 此`com.adobe.idp.Document`对象被传递到`invokeOneDocument`方法。
 
 1. 设置运行时选项。
@@ -140,10 +140,10 @@ ht-degree: 0%
    调用`AssemblerServiceClient`对象的`invokeOneDocument`方法并传递以下值：
 
    * 表示DDX文档的`com.adobe.idp.Document`对象。 请确保此DDX文档包含PDF源元素的值`inDoc`。
-   * 包含不安全PDF文档的`com.adobe.idp.Document`对象。
+   * 包含不安全的PDF文档的`com.adobe.idp.Document`对象。
    * 指定运行时选项（包括默认字体和作业日志级别）的`com.adobe.livecycle.assembler.client.AssemblerOptionSpec`对象。
 
-   `invokeOneDocument`方法返回包含密码加密PDF文档的`com.adobe.idp.Document`对象。
+   `invokeOneDocument`方法返回包含密码加密的PDF文档的`com.adobe.idp.Document`对象。
 
 1. 保存加密的PDF文档。
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 **另请参阅**
 
-[快速入门(SOAP模式)：使用Java API汇编加密的PDF文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API汇编加密的PDF文档](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
 ## 使用Web服务API汇编加密的PDF文档 {#assemble-an-encrypted-pdf-document-using-the-web-service-api}
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 1. 引用不安全的PDF文档。
 
-   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储输入PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储输入的PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
    * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示输入PDF文档的文件位置以及用于打开文件的模式。
    * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
@@ -203,14 +203,14 @@ ht-degree: 0%
    调用`AssemblerServiceClient`对象的`invokeOneDocument`方法并传递以下值：
 
    * 表示DDX文档的`BLOB`对象
-   * 表示不安全PDF文档的`BLOB`对象
+   * 表示不安全的PDF文档的`BLOB`对象
    * 指定运行时选项的`AssemblerOptionSpec`对象
 
    `invokeOneDocument`方法返回包含加密PDF文档的`BLOB`对象。
 
 1. 保存加密的PDF文档。
 
-   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示加密PDF文档的文件位置以及用于打开文件的模式。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示已加密PDF文档的文件位置以及用于打开文件的模式。
    * 创建一个字节数组，用于存储`invokeOneDocument`方法返回的`BLOB`对象的内容。 通过获取`BLOB`对象的`MTOM`数据成员的值填充字节数组。
    * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。

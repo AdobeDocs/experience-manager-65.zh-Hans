@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '718'
-ht-degree: 0%
+source-wordcount: '722'
+ht-degree: 2%
 
 ---
 
-# 使用Web服务API拆分PDF文档 {#disassemble-a-pdf-document-usingthe-web-service-api}
+# 使用 Web 服务 API 拆分 PDF 文档 {#disassemble-a-pdf-document-usingthe-web-service-api}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
@@ -30,7 +30,7 @@ ht-degree: 0%
    >
    >将`localhost`替换为承载AEM Forms的服务器的IP地址。
 
-1. 创建PDF汇编程序客户端。
+1. 创建PDF Assembler客户端。
 
    * 使用默认构造函数创建`AssemblerServiceClient`对象。
    * 使用`System.ServiceModel.EndpointAddress`构造函数创建`AssemblerServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/AssemblerService?blob=mtom`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。
@@ -51,16 +51,16 @@ ht-degree: 0%
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
    * 使用字节数组的内容指定其`MTOM`属性以填充`BLOB`对象。
 
-1. 参照要拆解的PDF文档。
+1. 引用要分解的PDF文档。
 
-   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储输入PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储输入的PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
    * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示输入PDF文档的文件位置以及打开文件的模式。
    * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
    * 通过将`MTOM`字段分配给字节数组的内容来填充`BLOB`对象。
-   * 创建`MyMapOf_xsd_string_To_xsd_anyType`对象。 此集合对象用于存储要拆解的PDF。
+   * 创建`MyMapOf_xsd_string_To_xsd_anyType`对象。 此收藏集对象用于存储要拆解的PDF。
    * 创建`MyMapOf_xsd_string_To_xsd_anyType_Item`对象。
-   * 将表示键名的字符串值分配给`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`key`字段。 此值必须与DDX文档中指定的PDF源元素的值匹配。
+   * 将表示键名的字符串值分配给`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`key`字段。 此值必须匹配DDX文档中指定的PDF源元素的值。
    * 将存储PDF文档的`BLOB`对象分配给`MyMapOf_xsd_string_To_xsd_anyType_Item`对象的`value`字段。
    * 将`MyMapOf_xsd_string_To_xsd_anyType_Item`对象添加到`MyMapOf_xsd_string_To_xsd_anyType`对象。 调用`MyMapOf_xsd_string_To_xsd_anyType`对象&#39; `Add`方法并传递`MyMapOf_xsd_string_To_xsd_anyType`对象。
 
@@ -74,7 +74,7 @@ ht-degree: 0%
    调用`AssemblerServiceClient`对象的`invokeDDX`方法并传递以下值：
 
    * 一个`BLOB`对象，表示拆卸PDF文档的DDX文档
-   * 包含要拆解的PDF文档的`MyMapOf_xsd_string_To_xsd_anyType`对象
+   * 包含要分解的PDF文档的`MyMapOf_xsd_string_To_xsd_anyType`对象
    * 指定运行时选项的`AssemblerOptionSpec`对象
 
    `invokeDDX`方法返回包含作业结果和发生的任何异常的`AssemblerResult`对象。
@@ -85,10 +85,10 @@ ht-degree: 0%
 
    * 访问`AssemblerResult`对象的`documents`字段，该字段是包含已拆卸PDF文档的`Map`对象。
    * 对`Map`对象进行迭代以获取每个结果文档。 然后，将该数组成员的`value`强制转换为`BLOB`。
-   * 通过访问其`BLOB`对象的`MTOM`属性，提取表示PDF文档的二进制数据。 这会返回一个字节数组，您可以将该字节写出到PDF文件中。
+   * 通过访问其`BLOB`对象的`MTOM`属性来提取表示PDF文档的二进制数据。 这会返回一个字节数组，您可以将其写出到PDF文件。
 
 **另请参阅**
 
-[以编程方式拆分PDF文档](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
+[以编程方式拆分 PDF 文档](/help/forms/developing/programmatically-disassembling-pdf-documents.md#programmatically-disassembling-pdf-documents)
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)

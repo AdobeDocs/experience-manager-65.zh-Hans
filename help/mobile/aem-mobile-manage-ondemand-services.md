@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 0%
+source-wordcount: '266'
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 0%
 ## 使用Preflight预览 {#previewing-with-preflight-1}
 
 1. 在Mobile中，从目录中选择您的Mobile On-Demand应用程序。
-1. 单击&#x200B;**管理文章**（或横幅/收藏集）拼贴中的省略号(...)。
+1. 单击省略号(...) 从&#x200B;**管理文章**（或横幅/收藏集）拼贴。
 1. 从操作栏中选择&#x200B;**印前检查**。
 1. 从对话框中单击&#x200B;**激活印前检查**。
 1. 您的应用程序现在可以在Mobile On-Demand Preflight应用程序上预览。
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Preflight应用程序用于预览内容和浏览页面。 若要深入了解预检应用程序，请单击[此处](https://helpx.adobe.com/cn/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
+>AEM Preflight应用程序用于预览内容和浏览页面。 若要深入了解预检应用程序，请单击[此处](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
 >
 
 ### 快速入门 {#getting-ahead}

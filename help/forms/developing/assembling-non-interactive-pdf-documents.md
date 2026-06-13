@@ -1,5 +1,5 @@
 ---
-title: 汇编非交互式PDF文档
+title: 组装非交互式 PDF 文档
 description: 使用非交互式PDF表单作为输入，使用Java API和Web服务API汇编非交互式PDF文档。
 contentOwner: admin
 content-type: reference
@@ -12,14 +12,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1763'
+source-wordcount: '1819'
 ht-degree: 0%
 
 ---
 
-# 汇编非交互式PDF文档 {#assembling-non-interactive-pdf-documents}
+# 组装非交互式 PDF 文档 {#assembling-non-interactive-pdf-documents}
 
-使用交互式PDF表单作为输入时，可以组合非交互式PDF文档。 即，假设您有一个表单，用户可以使用它向表单字段中输入数据。 您可以将该表单传递到Assembler服务，从而导致Assembler服务返回一个PDF文档，该文档阻止用户在其字段中输入数据。 本文档是非交互式PDF表单。 例如，下图显示了表示交互式表单的抵押应用程序。
+使用交互式PDF表单作为输入时，可以组合非交互式PDF文档。 即，假设您有一个表单，用户可以使用它向表单字段中输入数据。 您可以将该表单传递到Assembler服务，从而导致Assembler服务返回PDF文档，该文档阻止用户在其字段中输入数据。 本文档是非交互式PDF表单。 例如，下图显示了表示交互式表单的抵押应用程序。
 
 为了进行此讨论，假定使用以下DDX文档。
 
@@ -33,17 +33,17 @@ ht-degree: 0%
  </DDX>
 ```
 
-在此DDX文档中，请注意源属性被分配了值`inDoc`。 如果只有一个输入PDF文档传递到Assembler服务并且返回了一个PDF文档，并且您调用了`invokeOneDocument`操作，则将值`inDoc`分配给PDF源属性。 调用`invokeOneDocument`操作时，`inDoc`值是必须在DDX文档中指定的预定义键。
+在此DDX文档中，请注意源属性被分配了值`inDoc`。 如果只有一个输入PDF文档传递到Assembler服务并返回了一个PDF文档，且您调用了`invokeOneDocument`操作，则将值`inDoc`分配给PDF源属性。 调用`invokeOneDocument`操作时，`inDoc`值是必须在DDX文档中指定的预定义键。
 
 相反，在将两个或更多输入PDF文档传递到Assembler服务时，您可以调用`invokeDDX`操作。 在这种情况下，将输入PDF文档的文件名分配给`source`属性。
 
-此DDX文档包含`NoXFA`元素，它指示Assembler服务返回非交互式PDF文档。
+此DDX文档包含`NoXFA`元素，该元素指示Assembler服务返回非交互式PDF文档。
 
-如果输入PDF文档基于Acrobat表单或静态XFA表单，则汇编程序服务可以汇编非交互式PDF文档，而无需将输出服务作为AEM表单安装的一部分。 但是，如果输入PDF文档是动态XFA表单，则输出服务必须是AEM表单安装的一部分。 在组装动态XFA表单时，如果Output服务不是AEM表单安装的一部分，则会引发异常。 请参阅[创建文档输出流](/help/forms/developing/creating-document-output-streams.md)。
+如果输入PDF文档基于Acrobat表单或静态XFA表单，则Assembler服务可以组合非交互式PDF文档，而无需将输出服务作为AEM表单安装的一部分。 但是，如果输入PDF文档是动态XFA表单，则输出服务必须是AEM表单安装的一部分。 在组装动态XFA表单时，如果Output服务不是AEM表单安装的一部分，则会引发异常。 请参阅[创建文档输出流](/help/forms/developing/creating-document-output-streams.md)。
 
 >[!NOTE]
 >
->在阅读本节之前，建议您熟悉使用Assembler服务组合PDF文档。 本节不讨论相关概念，例如创建包含输入文档的收藏集对象，或者了解如何从返回的收藏集对象中提取结果。 (请参阅[以编程方式组合PDF文档](/help/forms/developing/programmatically-assembling-pdf-documents.md)。)
+>在阅读本节之前，建议您熟悉使用Assembler服务组合PDF文档。 本节不讨论相关概念，例如创建包含输入文档的收藏集对象，或者了解如何从返回的收藏集对象中提取结果。 （请参阅[以编程方式组合PDF文档](/help/forms/developing/programmatically-assembling-pdf-documents.md)。）
 
 >[!NOTE]
 >
@@ -55,14 +55,14 @@ ht-degree: 0%
 
 ## 步骤摘要 {#summary-of-steps}
 
-要组合非交互式PDF文档，请执行以下任务：
+要汇编非交互式PDF文档，请执行以下任务：
 
 1. 包括项目文件。
-1. 创建PDF汇编程序客户端。
+1. 创建PDF Assembler客户端。
 1. 引用现有DDX文档。
 1. 引用交互式PDF文档。
 1. 设置运行时选项。
-1. 组合PDF文档。
+1. 汇编PDF文档。
 1. 保存非交互式PDF文档。
 
 **包含项目文件**
@@ -74,8 +74,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
-* adobe-utilities.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 如果AEM Forms部署在除JBoss之外的受支持J2EE应用程序服务器上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为JAR文件，这些文件特定于部署AEM Forms的J2EE应用程序服务器。
 
@@ -85,7 +85,7 @@ ht-degree: 0%
 
 **引用现有DDX文档**
 
-要组合PDF文档，必须引用DDX文档。 此DDX文档必须包含`NoXFA`元素，该元素指示Assembler服务返回非交互式PDF文档。
+必须引用DDX文档才能组合PDF文档。 此DDX文档必须包含`NoXFA`元素，该元素指示Assembler服务返回非交互式PDF文档。
 
 **引用交互式PDF文档**
 
@@ -97,11 +97,11 @@ ht-degree: 0%
 
 **汇编PDF文档**
 
-创建Assembler服务客户端、引用DDX文档、引用交互式PDF文档并设置运行时选项后，可以调用`invokeOneDocument`操作。 由于只有一个输入PDF文档被传递到Assembler服务并返回了一个文档，因此您可以使用`invokeOneDocument`操作（与`invokeDDX`操作相反）。
+创建Assembler服务客户端、引用DDX文档、引用交互式PDF文档并设置运行时选项后，可以调用`invokeOneDocument`操作。 由于只有一个输入PDF文档被传递到Assembler服务并返回了一个文档，因此您可以使用`invokeOneDocument`操作，而不是`invokeDDX`操作。
 
 **保存非交互式PDF文档**
 
-如果只有一个PDF文档传递到Assembler服务，则Assembler服务返回单个文档，而不是集合对象。 也就是说，在调用`invokeOneDocument`操作时，将返回单个文档。 由于此节中引用的DDX文档包含创建非交互式PDF文档的说明，因此Assembler服务返回可以保存为PDF文件的非交互式PDF文档。
+如果只有一个PDF文档传递到Assembler服务，则Assembler服务返回单个文档，而不是集合对象。 也就是说，在调用`invokeOneDocument`操作时，将返回单个文档。 由于本节中引用的DDX文档包含有关创建非交互式PDF文档的说明，因此Assembler服务会返回一个非交互式PDF文档，该文档可以保存为PDF文件。
 
 **另请参阅**
 
@@ -109,7 +109,7 @@ ht-degree: 0%
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[以编程方式组合PDF文档](/help/forms/developing/programmatically-assembling-pdf-documents.md)
+[以编程方式组装 PDF 文档](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
 ## 使用Java API汇编非交互式PDF文档 {#assemble-a-non-interactive-pdf-document-using-the-java-api}
 
@@ -131,7 +131,7 @@ ht-degree: 0%
 
 1. 引用交互式PDF文档。
 
-   * 使用构造函数创建`java.io.FileInputStream`对象并传递交互式PDF文档的位置。
+   * 使用对象的构造函数并传递交互式PDF文档的位置来创建一个`java.io.FileInputStream`对象。
    * 创建一个`com.adobe.idp.Document`对象并传递包含PDF文档的`java.io.FileInputStream`对象。 此`com.adobe.idp.Document`对象被传递到`invokeOneDocument`方法。
 
 1. 设置运行时选项。
@@ -139,7 +139,7 @@ ht-degree: 0%
    * 使用构造函数创建存储运行时选项的`AssemblerOptionSpec`对象。
    * 通过调用属于`AssemblerOptionSpec`对象的方法，设置运行时选项以满足您的业务要求。 例如，要指示Assembler服务在发生错误时继续处理作业，请调用`AssemblerOptionSpec`对象的`setFailOnError`方法并传递`false`。
 
-1. 组合PDF文档。
+1. 汇编PDF文档。
 
    调用`AssemblerServiceClient`对象的`invokeOneDocument`方法并传递以下值：
 
@@ -154,9 +154,9 @@ ht-degree: 0%
    * 创建`java.io.File`对象并确保文件扩展名为.pdf。
    * 调用`Document`对象的`copyToFile`方法以将`Document`对象的内容复制到文件中。 确保使用`invokeOneDocument`方法返回的`Document`对象。
 
-* “快速入门(SOAP模式)：使用Java API汇编非交互式PDF文档”
+* “快速入门（SOAP模式）：使用Java API汇编非交互式PDF文档”
 
-## 使用Web服务API组合非交互式PDF文档 {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
+## 使用Web服务API汇编非交互式PDF文档 {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
 使用Assembler服务API（Web服务）汇编非交互式PDF文档：
 
@@ -191,7 +191,7 @@ ht-degree: 0%
 
 1. 引用交互式PDF文档。
 
-   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储输入PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储输入的PDF文档。 此`BLOB`对象作为参数传递给`invokeOneDocument`。
    * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示输入PDF文档的文件位置以及用于打开文件的模式。
    * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，使用流数据填充字节数组。 传递字节数组、起始位置和要读取的流长度。
@@ -202,7 +202,7 @@ ht-degree: 0%
    * 使用构造函数创建存储运行时选项的`AssemblerOptionSpec`对象。
    * 通过为属于`AssemblerOptionSpec`对象的数据成员分配值，设置运行时选项以满足您的业务要求。 例如，要指示Assembler服务在发生错误时继续处理作业，请将`false`分配给`AssemblerOptionSpec`对象的`failOnError`数据成员。
 
-1. 组合PDF文档。
+1. 汇编PDF文档。
 
    调用`AssemblerServiceClient`对象的`invokeOneDocument`方法并传递以下值：
 

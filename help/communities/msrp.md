@@ -11,8 +11,8 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1142'
-ht-degree: 0%
+source-wordcount: '1195'
+ht-degree: 1%
 
 ---
 
@@ -80,7 +80,7 @@ ht-degree: 0%
 
    * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files)主机**
 
-     在使用外部ZooKeeper在[SolrCloud模式](solr.md#solrcloud-mode)中运行时，请将此值设置为ZooKeeper的`HOST:PORT`，如&#x200B;*my.server.com:2181*
+     在使用外部ZooKeeper在[SolrCloud模式](solr.md#solrcloud-mode)中运行时，请将此值设置为ZooKeeper的`HOST:PORT`，例如&#x200B;*my.server.com:2181*
 
      对于ZooKeeper Ensemble，请输入逗号分隔的`HOST:PORT`值，如&#x200B;*host1:2181，host2:2181*
 
@@ -185,8 +185,8 @@ MSRP必须标识为所有创作实例和发布实例上的公用存储。
 
 cURL -u *登录* -d *数据* *重新索引 — url*
 
-*登录* = administrator-id：password
-例如：admin：admin
+*登录* =管理员ID:password
+例如： admin:admin
 
 *数据* = &quot;batchSize=*大小*&amp;path=*路径&quot;*
 
@@ -237,7 +237,7 @@ GitHub上为此提供了一个开源工具：
 
 * [AEM Communities UGC迁移工具](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-可以自定义迁移工具，以便将AEM Social早期版本的UGC导出到AEM Communities 6.1或更高版本中。
+可以自定义迁移工具，以便将AEM社交社区早期版本的UGC导出到AEM Communities 6.1或更高版本中。
 
 ### 错误 — 未定义的字段provider_id {#error-undefined-field-provider-id}
 
@@ -264,9 +264,9 @@ at com.adobe.cq.social.scf.core.BaseSocialComponent.toJSONString(BaseSocialCompo
 
 1. 从[https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar)（版本2.13.2或更高版本）下载驱动程序。
 1. 将捆绑包复制到AEM实例的“crx-quickstart/install”文件夹中。
-1. 重新启动AEM实例。
+1. 重启 AEM 实例。
 
 ## 资源 {#resources}
 
-* [带有MongoDB的AEM](../../help/sites-deploying/aem-with-mongodb.md)
+* [AEM 与 MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [MongoDB文档](https://docs.mongodb.org/)

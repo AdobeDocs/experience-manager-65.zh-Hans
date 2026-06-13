@@ -1,6 +1,6 @@
 ---
-title: 将PDF转换为Postscript和Image文件
-description: 使用Java API和Web服务API，使用转换PDF服务将PDF文档转换为PostScript和多种图像格式(JPEG、JPEG2000、PNG和TIFF)。
+title: 将 PDF 转化为 Postscript 和图像文件
+description: 使用转换PDF服务，通过Java API和Web服务API将PDF文档转换为PostScript以及多种图像格式（JPEG、JPEG 2000、PNG和TIFF）。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2820'
 ht-degree: 0%
 
 ---
@@ -22,16 +22,16 @@ ht-degree: 0%
 
 **关于转换PDF服务**
 
-转换PDF服务将PDF文档转换为PostScript和多种图像格式(JPEG、JPEG2000、PNG和TIFF)。 将PDF文档转换为PostScript对于在任何PostScript打印机上进行基于服务器的无人参与打印很有用。 在不支持PDF文档的内容管理系统中归档文档时，将PDF文档转换为多页TIFF文件是切实可行的。
+转换PDF服务将PDF文档转换为PostScript和多种图像格式（JPEG、JPEG 2000、PNG和TIFF）。 将PDF文档转换为PostScript对于在任何PostScript打印机上进行基于服务器的无人参与打印很有用。 在不支持PDF文档的内容管理系统中存档文档时，将PDF文档转换为多页TIFF文件是一种切实可行的做法。
 
-您可以使用转换PDF服务完成以下任务：
+您可以使用Convert PDF服务完成以下任务：
 
 * 将PDF文档转换为PostScript。
 * 将PDF文档转换为图像格式。
 
 >[!NOTE]
 >
->有关ConvertPDF服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关转换PDF服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 将PDF文档转换为PostScript {#converting-pdf-documents-to-postscript}
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->有关ConvertPDF服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关转换PDF服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -58,9 +58,9 @@ ht-degree: 0%
 
 **创建转换PDF客户端**
 
-您必须先创建转换PDF服务客户端，然后才能以编程方式执行转换PDF服务操作。 如果您使用的是Java API，请创建一个`ConvertPdfServiceClient`对象。 如果您使用的是Web服务API，请创建一个`ConvertPDFServiceService`对象。
+您必须先创建转化PDF服务客户端，然后才能以编程方式执行转化PDF服务操作。 如果您使用的是Java API，请创建一个`ConvertPdfServiceClient`对象。 如果您使用的是Web服务API，请创建一个`ConvertPDFServiceService`对象。
 
-本节使用AEM Forms中引入的Web服务功能。 要访问新功能，您必须使用`lc_version`属性构建代理对象。 (请参阅[使用Web服务调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)中的“使用Web服务访问新功能”。)
+本节使用AEM Forms中引入的Web服务功能。 要访问新功能，您必须使用`lc_version`属性构建代理对象。 （请参阅[使用Web服务调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services)中的“使用Web服务访问新功能”。）
 
 **引用要转换为PostScript文件的PDF文档**
 
@@ -70,9 +70,9 @@ ht-degree: 0%
 
 将PDF文档转换为PostScript文件时，您可以定义运行时选项，以指定创建的PostScript类型。 例如，您可以定义一个级别3的PostScript文件。
 
-通常，生成的PostScript文件将反映输入PDF文档的大小。 如果选择`ShrinkToFit`选项(收缩PostScript文件的输出以适合页面)，您将不会看到输入PDF文档与生成的PostScript文件之间的差异。 `ShrinkToFit`选项仅在您选择在比输入PDF文档小的页码上打印时才生效。 要选择较小的页面大小，请定义`PageSize`选项。 此外，建议将`RotateAndCenter`选项设置为`true`以获取正确的PostScript输出。
+通常，生成的PostScript文件将反映输入PDF文档的大小。 如果选择`ShrinkToFit`选项（收缩PostScript文件的输出以适合页面），您将不会看到输入PDF文档与生成的PostScript文件之间存在差异。 `ShrinkToFit`选项仅在您选择在小于输入PDF文档的页面大小上进行打印时生效。 要选择较小的页面大小，请定义`PageSize`选项。 此外，建议将`RotateAndCenter`选项设置为`true`以获取正确的PostScript输出。
 
-同样，如果选择`ExpandToFit`选项(该选项会扩展PostScript文件的输出以适合页面)，则只有在选择打印的页面大小大于输入PDF文档的大小时，它才会生效。 要选择更大的页面大小，请定义`PageSize`选项。 此外，建议将`RotateAndCenter`选项设置为`true`以获取正确的PostScript输出。
+同样，如果选择`ExpandToFit`选项（该选项会扩展PostScript文件的输出以适合页面），则只有在选择打印的页面大小大于输入PDF文档的大小时，它才会生效。 要选择更大的页面大小，请定义`PageSize`选项。 此外，建议将`RotateAndCenter`选项设置为`true`以获取正确的PostScript输出。
 
 >[!NOTE]
 >
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[转换PDF服务API快速启动](/help/forms/developing/convert-pdf-service-java-api.md#convert-pdf-service-java-api-quick-start-soap)
+[转换PDF服务API快速入门](/help/forms/developing/convert-pdf-service-java-api.md#convert-pdf-service-java-api-quick-start-soap)
 
 ### 使用Java API将PDF文档转换为PS {#convert-a-pdf-document-to-ps-using-the-java-api}
 
@@ -139,7 +139,7 @@ ht-degree: 0%
 
 [步骤摘要](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[快速入门(SOAP模式)：使用Java API将PDF文档转换为PostScript](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API将PDF文档转换为PostScript](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -172,8 +172,8 @@ ht-degree: 0%
 
 1. 引用要转换为PostScript文件的PDF文档。
 
-   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储转换为PostScript文件的PDF文档。
-   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示要转换的PDF文档的文件位置和要以何种模式打开文件。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储已转换为PostScript文件的PDF文档。
+   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示要转换的PDF文档的文件位置以及用于打开文件的模式。
    * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
    * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。
@@ -209,13 +209,13 @@ ht-degree: 0%
 
 ## 将PDF文档转换为图像格式 {#converting-pdf-documents-to-image-formats}
 
-您可以使用转换PDF服务以编程方式将PDF文档转换为图像格式，包括JPEG、JPEG2000、TIFF和PNG。 通过将PDF文档转换为图像文件，可以将PDF文档用作图像文件。 例如，可以将映像放入企业内容管理系统进行存储。
+您可以使用转换PDF服务以编程方式将PDF文档转换为图像格式，包括JPEG、JPEG 2000、TIFF和PNG。 通过将PDF文档转换为图像文件，可以将PDF文档用作图像文件。 例如，可以将映像放入企业内容管理系统进行存储。
 
-将PDF文档转换为图像时，转换PDF服务会为文档中的每个页面创建单独的图像。 也就是说，如果文档有20页，则ConvertPDF服务将创建20个图像文件。 将PDF文档转换为图像格式时，您可以为PDF文档中的每个页面创建单个图像，或者为整个PDF文档创建单个图像文件。
+将PDF文档转换为图像时，转换PDF服务会为文档中的每个页面创建单独的图像。 也就是说，如果文档有20页，转换PDF服务将创建20个图像文件。 将PDF文档转换为图像格式时，您可以为PDF文档中的每个页面创建单个图像，或者为整个PDF文档创建单个图像文件。
 
 >[!NOTE]
 >
->有关ConvertPDF服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关转换PDF服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
@@ -234,11 +234,11 @@ ht-degree: 0%
 
 **创建转换PDF客户端**
 
-您必须先创建转换PDF服务客户端，然后才能以编程方式执行转换PDF服务操作。 如果您使用的是Java API，请创建一个`ConvertPdfServiceClient`对象。 如果您使用的是Web服务API，请创建一个`ConvertPDFServiceService`对象。
+您必须先创建转化PDF服务客户端，然后才能以编程方式执行转化PDF服务操作。 如果您使用的是Java API，请创建一个`ConvertPdfServiceClient`对象。 如果您使用的是Web服务API，请创建一个`ConvertPDFServiceService`对象。
 
 **检索要转换的PDF文档**
 
-检索要转换为图像的PDF文档。 无法将交互式PDF文档转换为图像。 如果尝试这样做，则会引发异常。 要将交互式PDF文档转换为图像文件，必须先拼合该PDF文档，然后才能将其转换。 (请参阅[拼合PDF文档](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。)
+检索PDF文档以转换为图像。 无法将交互式PDF文档转换为图像。 如果尝试这样做，则会引发异常。 要将交互式PDF文档转换为图像文件，必须先拼合PDF文档，然后才能将其转换。 （请参阅[拼合PDF文档](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents)。）
 
 **设置运行时选项**
 
@@ -246,11 +246,11 @@ ht-degree: 0%
 
 **将PDF转换为图像**
 
-创建服务客户端并设置运行时选项后，可以将PDF文档转换为图像。 将返回包含图像的收藏集对象。
+在创建服务客户端并设置运行时选项后，可以将PDF文档转换为图像。 将返回包含图像的收藏集对象。
 
 **从收藏集中检索图像文件**
 
-您可以从ConvertPDF服务返回的集合对象中检索图像文件。 集合中的每个元素都是可另存为图像文件(如JPG文件)的`com.adobe.idp.Document`实例（如果您使用的是Web服务，则是`BLOB`实例）。
+您可以从Convert PDF服务返回的收藏集对象中检索图像文件。 集合中的每个元素都是可另存为图像文件（如JPG文件）的`com.adobe.idp.Document`实例（如果您使用的是Web服务，则是`BLOB`实例）。
 
 图像文件的格式依赖于`ImageConvertFormat`运行时选项。 也就是说，如果将`ImageConvertFormat`运行时选项设置为`ImageConvertFormat.JPEG`，则可以将图像文件另存为JPG文件。
 
@@ -260,7 +260,7 @@ ht-degree: 0%
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[转换PDF服务API快速启动](/help/forms/developing/convert-pdf-service-java-api.md#convert-pdf-service-java-api-quick-start-soap)
+[转换PDF服务API快速入门](/help/forms/developing/convert-pdf-service-java-api.md#convert-pdf-service-java-api-quick-start-soap)
 
 ### 使用Java API将PDF文档转换为图像文件 {#convert-a-pdf-document-to-image-files-using-the-java-api}
 
@@ -304,7 +304,7 @@ ht-degree: 0%
 
 **另请参阅**
 
-[快速入门(SOAP模式)：使用Java API将PDF文档转换为JPEG文件](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API将PDF文档转换为JPEG文件](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 ### 使用Web服务API将PDF文档转换为图像文件 {#convert-a-pdf-document-to-image-files-using-the-web-service-api}
 
@@ -334,7 +334,7 @@ ht-degree: 0%
 1. 检索要转换的PDF文档。
 
    * 使用构造函数创建`BLOB`对象。 此`BLOB`对象用于存储PDF表单。
-   * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，该值指定PDF表单的位置和打开文件的模式。
+   * 通过调用其构造函数创建`System.IO.FileStream`对象。 传递一个字符串值，该值指定PDF表单的位置以及用来打开文件的模式。
    * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 通过获取`System.IO.FileStream`对象的`Length`属性确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法，使用流数据填充字节数组。 传递字节数组、起始位置和要读取的流长度。
    * 使用字节数组的内容分配其`MTOM`字段以填充`BLOB`对象。

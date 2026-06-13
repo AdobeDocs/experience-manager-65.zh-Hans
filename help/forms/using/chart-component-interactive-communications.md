@@ -11,7 +11,7 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2621'
+source-wordcount: '2678'
 ht-degree: 1%
 
 ---
@@ -81,7 +81,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>系列&gt;数据模型对象</td>
-   <td>要向图表添加多个系列的表单数据模型集合项的名称。<br />为绘制在X轴和Y轴上的属性选择父表单数据模型对象属性，以形成有意义的系列。 您绑定的数据模型对象必须为Number、String或Date类型。</td>
+   <td>要向图表添加多个系列的表单数据模型集合项的名称。<br /> 为绘制在X轴和Y轴上的属性选择父表单数据模型对象属性，以形成有意义的系列。 您绑定的数据模型对象必须为Number、String或Date类型。</td>
    <td>打印和Web</td>
   </tr>
   <tr>
@@ -170,7 +170,7 @@ ht-degree: 1%
      <li><strong>参考点&gt;系列的数据模型对象： </strong>如果您选择<span class="uicontrol">数据模型对象，则可用于多个系列象限图</code> 从“绑定类型”下拉列表中。 定义表单数据模型对象属性以标识参考点的系列。 </li>
      <li><strong>参考点&gt;系列的数据模型对象值： </strong>如果您选择<span class="uicontrol">数据模型对象，则可用于多个系列象限图</code> 从“绑定类型”下拉列表中。 使用系列的表单数据模型对象属性以及在此字段中定义的值来标识参考点的系列。</li>
      <li><strong>参考点&gt;参考点的数据模型对象： </strong>如果选择<span class="uicontrol">数据模型对象，可用于象限图</code> 从“绑定类型”下拉列表中。 定义表单数据模型对象属性，该属性是绘制在X轴和Y轴上的属性的同级。 此外，对于多个系列，定义一个数据模型对象属性，该属性是为系列定义的数据模型对象属性的子实体。</li>
-     <li><strong>参考点&gt;参考点的数据模型对象值： </strong>可用于象限图表（如果选择<span class="uicontrol">数据模型对象）</code> 从“绑定类型”下拉列表中。 使用参考点的表单数据模型对象属性以及在此字段中定义的值来标识图表的参考点。<br /> <strong>象限标签&gt;左上角：</strong>可用于象限图以指定左上象限的名称。</li>
+     <li><strong>参考点&gt;参考点的数据模型对象值： </strong>可用于象限图表（如果选择<span class="uicontrol">数据模型对象）</code> 从“绑定类型”下拉列表中。 使用参考点的表单数据模型对象属性以及在此字段中定义的值来标识图表的参考点。<br /> <strong>象限标签&gt;左上角：</strong>可用于象限图表以指定左上象限的名称。</li>
      <li><strong>象限标签&gt;右上方：</strong>可用于象限图以指定右上象限的名称。</li>
      <li><strong>象限标签&gt;右下方： </strong>可用于象限图以指定右下象限的名称。</li>
      <li><strong>象限标签&gt;左下方： </strong>可用于象限图以指定左下象限的名称。</li>
@@ -232,7 +232,7 @@ Multiply(valueArray, category) {
 
    * 添加值为`fd/af/reducer`的属性`guideComponentType`。 （必填）
 
-   * 将属性`value`添加到自定义JavaScript™函数的完全限定名称。 （必需）并将其值设置为自定义函数的名称，如Multiply。
+   * 将属性`value`添加到自定义™函数的完全限定名称。 （必需）并将其值设置为自定义函数的名称，如Multiply。
    * 添加属性`jcr:description`，使其具有要显示为自定义函数名称的值，该自定义函数显示在“函数”下拉列表中。 例如，**乘**。
 
    * 添加属性`qtip`，其值将作为自定义函数的简短说明。 当指针悬停在&#x200B;**函数**&#x200B;下拉列表中的函数名称上时，它显示为工具提示。

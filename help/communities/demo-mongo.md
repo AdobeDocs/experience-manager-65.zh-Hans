@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '800'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果MongoDB在&#x200B;*之后* AEM启动，**重新启动**&#x200B;所有&#x200B;**AEM**&#x200B;实例，以便它们正确连接到MongoDB。
+>如果MongoDB在&#x200B;*之后* AEM启动，则&#x200B;**重新启动**&#x200B;所有&#x200B;**AEM**&#x200B;实例，以便它们正确连接到MongoDB。
 
 ### 演示生产选项：设置MongoDB副本集 {#demo-production-option-setup-mongodb-replica-set}
 
@@ -130,7 +130,7 @@ ht-degree: 0%
 >
 >如果Solr Console不可用，请查看&lt;solrinstall>/example/logs下的日志。 查看SOLR是否尝试绑定到无法解析的特定主机名（例如“user-macbook-pro”）。
 >
->如果是，请使用此主机名的新条目（例如127.0.0.1 user-macbook-pro）更新`etc/hosts`文件以正确启动Solr。
+>如果是，请使用此主机名的新条目（例如，127.0.0.1 user-macbook-pro）更新`etc/hosts`文件以正确启动Solr。
 
 ### SolrCloud {#solrcloud}
 
@@ -152,7 +152,7 @@ ht-degree: 0%
 
 1. 在发布实例上，浏览到[社区组件指南](http://localhost:4503/content/community-components/en/comments.html)页面并选择“注释”组件。
 1. 登录以发布评论：
-1. 在注释文本输入框中输入文本，然后单击&#x200B;**[!UICONTROL Post]**
+1. 在评论文本输入框中输入文本，然后单击&#x200B;**[!UICONTROL 帖子]**
 
    ![帖子评论](assets/post-comment.png)
 
@@ -188,4 +188,4 @@ ht-degree: 0%
    * 在JCR中，如果[/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)不包含[srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc)节点，则表示存储提供程序为JSRP。
    * 如果srpc节点存在并且包含节点[defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration)，则defaultconfiguration的属性应将MSRP定义为默认提供程序。
 
-1. 确保选择MSRP后重新启动AEM。
+1. 确保在选择MSRP后重新启动AEM。
