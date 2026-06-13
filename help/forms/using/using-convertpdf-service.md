@@ -1,5 +1,5 @@
 ---
-title: ConvertPDF服务
+title: ConvertPDF 服务
 description: 使用Adobe Experience Manager Forms ConvertPDF服务将PDF文档转换为PostScript或图像文件。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,33 +10,33 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '382'
-ht-degree: 0%
+source-wordcount: '412'
+ht-degree: 1%
 
 ---
 
-# ConvertPDF服务 {#convertpdf-service}
+# ConvertPDF 服务 {#convertpdf-service}
 
 ## 概述 {#overview}
 
-转换PDF服务将PDF文档转换为PostScript或图像文件(JPEG、JPEG2000、PNG和TIFF)。 将PDF文档转换为PostScript对于在任何PostScript打印机上进行基于服务器的无人参与打印很有用。 在不支持PDF文档的内容管理系统中归档文档时，将PDF文档转换为多页TIFF文件是切实可行的。
+转换PDF服务将PDF文档转换为PostScript或图像文件（JPEG、JPEG 2000、PNG和TIFF）。 将PDF文档转换为PostScript对于在任何PostScript打印机上进行基于服务器的无人参与打印很有用。 在不支持PDF文档的内容管理系统中存档文档时，将PDF文档转换为多页TIFF文件是一种切实可行的做法。
 
-您可以使用ConvertPDF服务完成以下操作：
+您可以使用Convert PDF服务完成以下操作：
 
-* 将PDF文档转换为PostScript。 转换为PostScript时，您可以使用转换操作指定源文档以及是否转换为PostScript级别2或级别3。 转换为PostScript文件的PDF文档必须是非交互式文档。
-* 将PDF文档转换为JPEG、JPEG2000、PNG和TIFF图像格式。 当转换为任何这些图像格式时，可以使用转换操作来指定源文档和图像选项规范。 该规范包含各种首选项，如图像转换格式、图像分辨率和颜色转换。
+* 将PDF文档转换为PostScript。 转换为PostScript时，您可以使用转换操作指定源文档以及是否转换为PostScript级别2或级别3。 您转换为PostScript文件的PDF文档必须是非交互式文档。
+* 将PDF文档转换为JPEG、JPEG 2000、PNG和TIFF图像格式。 当转换为任何这些图像格式时，可以使用转换操作来指定源文档和图像选项规范。 该规范包含各种首选项，如图像转换格式、图像分辨率和颜色转换。
 
 ## 配置服务的属性   {#properties}
 
-您可以使用AEM控制台中的&#x200B;**AEMFD ConvertPDF服务**&#x200B;配置此服务的属性。 AEM控制台的默认URL为`https://[host]:'port'/system/console/configMgr`。
+您可以在AEM控制台中使用&#x200B;**AEMFD ConvertPDF服务**&#x200B;配置此服务的属性。 AEM控制台的默认URL为`https://[host]:'port'/system/console/configMgr`。
 
 ## 使用服务 {#using-the-service}
 
 ConvertPDF服务提供以下两个API：
 
-* **[toPS](https://helpx.adobe.com/cn/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**：将PDF文档转换为PostScript文件。
+* **[toPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**：将PDF文档转换为PostScript文件。
 
-* **[toImage](https://helpx.adobe.com/cn/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**：将PDF文档转换为图像文件。 支持的图像格式为JPEG、JPEG2000、PNG和TIFF。
+* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**：将PDF文档转换为图像文件。 支持的图像格式为JPEG、JPEG2000、PNG和TIFF。
 
 ### 将toPS API与JSP或Servlet一起使用 {#using-tops-api-with-a-jsp-or-servlets}
 
