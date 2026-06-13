@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3628'
 ht-degree: 2%
 
 ---
@@ -59,7 +59,7 @@ ht-degree: 2%
 
   ![wf-22-1](assets/wf-22-1.png)
 
-* [cq：dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
+* [cq:dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
   包含以下选项卡的对话框：
 
@@ -96,7 +96,7 @@ ht-degree: 2%
 
 ## 创建自定义工作流步骤组件 {#creating-custom-workflow-step-components}
 
-可以使用与任何其他组件[&#128279;](/help/sites-developing/components.md)相同的方式创建工作流步骤组件。
+可以使用与任何其他组件](/help/sites-developing/components.md)相同的方式创建工作流步骤组件[。
 
 要从（现有）基本步骤组件之一继承，请将以下属性添加到`cq:Component`节点：
 
@@ -131,7 +131,7 @@ ht-degree: 2%
 
    >[!NOTE]
    >
-   >有关cq：editConfig节点的更多信息，请参阅[配置组件的编辑行为](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)。
+   >有关cq:editConfig节点的更多信息，请参阅[配置组件的编辑行为](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)。
 
 1. 在`cq:EditConfig`节点下，添加以下节点：
 
@@ -175,14 +175,14 @@ ht-degree: 2%
 
 要集中特定工作流场景中使用的组件，请在设计中配置关键功能，并移除模型开发人员更改该组件的功能。
 
-1. 在cq：component节点下，添加以下节点：
+1. 在cq:component节点下，添加以下节点：
 
    * 名称：`cq:editConfig`
    * 类型：`cq:EditConfig`
 
-   有关cq：editConfig节点的更多信息，请参阅[配置组件的编辑行为](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)。
+   有关cq:editConfig节点的更多信息，请参阅[配置组件的编辑行为](/help/sites-developing/developing-components.md#configuring-the-edit-behavior)。
 
-1. 在cq：EditConfig节点下，添加以下节点：
+1. 在cq:EditConfig节点下，添加以下节点：
 
    * 名称：`cq:formParameters`
    * 类型：`nt:unstructured`
@@ -215,9 +215,9 @@ ht-degree: 2%
    * 名称：`cq:editConfig`
    * 类型：`cq:EditConfig`
 
-   有关cq：editConfig节点的更多信息，请参阅[配置组件的编辑行为](/help/sites-developing/components-basics.md#edit-behavior)。
+   有关cq:editConfig节点的更多信息，请参阅[配置组件的编辑行为](/help/sites-developing/components-basics.md#edit-behavior)。
 
-1. 在cq：EditConfig节点下，添加以下节点：
+1. 在cq:EditConfig节点下，添加以下节点：
 
    * 名称：`cq:formParameters`
    * 类型：`nt:unstructured`
@@ -527,7 +527,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 要使用脚本，请执行以下操作：
 
-1. 创建脚本(例如，使用CRXDE Lite)并将其保存在`//apps/workflow/scripts/`下的存储库中
+1. 创建脚本（例如，使用CRXDE Lite）并将其保存在`//apps/workflow/scripts/`下的存储库中
 1. 若要在&#x200B;**进程步骤**&#x200B;编辑对话框中指定用于标识脚本的标题，请将以下属性添加到脚本的`jcr:content`节点：
 
    | 名称 | 类型 | 价值 |
@@ -644,7 +644,7 @@ function getParticipant() {
 }
 ```
 
-1. 创建脚本(例如，使用CRXDE Lite)并将其保存在`//apps/workflow/scripts`下的存储库中
+1. 创建脚本（例如，使用CRXDE Lite）并将其保存在`//apps/workflow/scripts`下的存储库中
 1. 若要在&#x200B;**进程步骤**&#x200B;编辑对话框中指定用于标识脚本的标题，请将以下属性添加到脚本的`jcr:content`节点：
 
    | 名称 | 类型 | 价值 |
@@ -1031,7 +1031,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 >
 >经典UI模型编辑器对话框仍可与标准的触屏UI编辑器一起使用。
 >
->如果您要将经典UI步骤对话框升级到标准UI对话框，则AEM具有[现代化工具](/help/sites-developing/modernization-tools.md)。 转换后，仍可针对某些情况对对话框进行一些手动改进。
+>不过，如果您要将经典UI步骤对话框升级到标准UI对话框，AEM具有[现代化工具](/help/sites-developing/modernization-tools.md)。 转换后，仍可针对某些情况对对话框进行一些手动改进。
 >
 >* 如果升级后的对话框为空，您可以查看`/libs`中的对话框，这些对话框的功能与有关如何提供解决方案的示例类似。 例如：
 >

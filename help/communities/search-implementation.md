@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1207'
 ht-degree: 3%
 
 ---
@@ -48,7 +48,7 @@ ht-degree: 3%
 
 ### ASRP搜索 {#asrp-searches}
 
-对于[ASRP](asrp.md)，UGC存储在Adobe云中。 虽然UGC在CRX中不可见，但[审核](moderate-ugc.md)在创作环境和Publish环境中均可用。 [UGC搜索API](#ugc-search-api)的使用对于ASRP的工作方式与其他SRP的工作方式相同。
+对于[ASRP](asrp.md)，UGC存储在Adobe云中。 虽然UGC在CRX中不可见，但[审核](moderate-ugc.md)在创作和发布环境中均可用。 [UGC搜索API](#ugc-search-api)的使用对于ASRP的工作方式与其他SRP的工作方式相同。
 
 当前不存在用于管理ASRP搜索的工具。
 
@@ -56,12 +56,12 @@ ht-degree: 3%
 
 ### MSRP搜索 {#msrp-searches}
 
-对于[MSRP](msrp.md)，UGC存储在配置为使用Solr进行搜索的MongoDB中。 UGC在CRX中不可见，但[审核](moderate-ugc.md)在创作环境和Publish环境中均可用。
+对于[MSRP](msrp.md)，UGC存储在配置为使用Solr进行搜索的MongoDB中。 UGC在CRX中不可见，但[审核](moderate-ugc.md)在创作和发布环境中均可用。
 
 关于MSRP和Solr：
 
 * AEM平台的嵌入式Solr不用于MSRP。
-* 如果对AEM平台使用远程Solr，则可以与MSRP共享，但它们应使用不同的集合。
+* 如果对AEM平台使用远程Solr，则可以与MSRP共享，但它们应使用不同的收藏集。
 * Solr可以配置为标准搜索或多语言搜索(MLS)。
 * 有关配置详细信息，请参阅用于MSRP的[Solr配置](msrp.md#solr-configuration)。
 
@@ -73,15 +73,15 @@ ht-degree: 3%
 
 对于[JSRP](jsrp.md)，UGC存储在[Oak](../../help/sites-deploying/platform.md)中，并且仅在输入它的AEM Author或Publish实例的存储库中可见。
 
-由于UGC通常在Publish环境中输入，因此对于多发布者生产系统，必须配置[发布群集](topologies.md)，而不是发布场，以便输入的内容对所有发布者可见。
+由于UGC通常输入在发布环境中，对于多发布者生产系统，必须配置[发布群集](topologies.md)，而不是发布场，以便输入的内容对所有发布者可见。
 
-对于JSRP，在Publish环境中输入的UGC在创作环境中从不可见。 因此，所有[审核](moderate-ugc.md)任务均在Publish环境中执行。
+对于JSRP，在发布环境中输入的UGC在创作环境中从不可见。 因此，所有[审核](moderate-ugc.md)任务都在发布环境中进行。
 
 自定义搜索功能应使用[UGC搜索API](#ugc-search-api)。
 
 #### Oak索引 {#oak-indexing}
 
-虽然从AEM 6.2开始，Oak索引不会自动为AEM平台搜索创建，但已为AEM Communities添加这些索引，以改进性能并在显示UGC搜索结果时支持分页。
+虽然从Oak 6.2开始，AEM平台搜索不会自动创建AEM索引，但已为AEM Communities添加这些索引，以改进性能并在显示UGC搜索结果时支持分页。
 
 如果自定义属性正在使用中并且搜索缓慢，则必须为自定义属性创建其他索引以提高其性能。 要保持可移植性，在创建可搜索的自定义属性时，请遵循[命名要求](#naming-of-custom-properties)。
 
@@ -92,7 +92,7 @@ ht-degree: 3%
 * 现有索引的视图。
 * 启动重新索引的功能。
 
-要查看[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)中的现有Oak索引，位置为：
+要在[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)中查看现有Oak索引，位置为：
 
 * `/oak:index/socialLucene`
 
@@ -106,29 +106,29 @@ ht-degree: 3%
 
 | **属性** | **数据类型** |
 |---|---|
-| isFlagged | *布尔型* |
-| isSpam | *布尔型* |
-| 读取 | *布尔型* |
-| 影响 | *布尔型* |
-| 附件 | *布尔型* |
+| isFlagged | *布尔值* |
+| isSpam | *布尔值* |
+| 读取 | *布尔值* |
+| 影响 | *布尔值* |
+| 附件 | *布尔值* |
 | 情绪 | *长* |
-| 已标记 | *布尔型* |
+| 已标记 | *布尔值* |
 | 已添加 | *日期* |
 | modifieddate | *日期* |
 | 州/省 | *字符串* |
 | 用户标识符 | *字符串* |
 | 回复 | *长* |
 | jcr:title | *字符串* |
-| jcr：description | *字符串* |
+| jcr:description | *字符串* |
 | sling:resourceType | *字符串* |
-| allowThreadedReply | *布尔型* |
-| isDraft | *布尔型* |
+| allowThreadedReply | *布尔值* |
+| isDraft | *布尔值* |
 | publishdate | *日期* |
 | publishJobId | *字符串* |
-| 已回复 | *布尔型* |
-| chosenanswered | *布尔型* |
+| 已回复 | *布尔值* |
+| chosenanswered | *布尔值* |
 | 标记 | *字符串* |
-| cq：Tag | *字符串* |
+| cq:Tag | *字符串* |
 | author_display_name | *字符串* |
 | location_t | *字符串* |
 | 父路径 | *字符串* |
@@ -147,7 +147,7 @@ Solr是使用架构的查询语言的示例。
 
 | **后缀** | **数据类型** |
 |---|---|
-| _b | *布尔型* |
+| _b | *布尔值* |
 | _dt | *日历* |
 | _d | *双精度浮点数* |
 | _tl | *长* |

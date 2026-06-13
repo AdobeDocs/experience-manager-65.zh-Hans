@@ -8,7 +8,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '467'
 ht-degree: 1%
 
 ---
@@ -113,7 +113,7 @@ ht-degree: 1%
 
 ## 代码示例 {#code-samples}
 
-您可以在GitHub[&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)上的aem-authoring-hybrideditors项目中找到此页面的代码。 您可以以[ZIP存档](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip)的形式下载完整项目。
+您可以在GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)上的[aem-authoring-hybrideditors项目中找到此页面的代码。 您可以以[ZIP存档](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip)的形式下载完整项目。
 
 ## 添加就地编辑器 {#add-an-in-place-editor}
 
@@ -121,4 +121,4 @@ ht-degree: 1%
 
 >[!MORELIKETHIS]
 >
->* [在Experience Manager](/help/sites-administering/rich-text-editor.md)中配置富文本编辑器。
+>* [在Experience Manager中配置富文本编辑器](/help/sites-administering/rich-text-editor.md)。

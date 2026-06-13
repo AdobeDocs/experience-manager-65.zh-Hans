@@ -8,8 +8,8 @@ exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 0b90fdd13efc5408ef94ee1966f04a80810b515e
 workflow-type: tm+mt
-source-wordcount: '1558'
-ht-degree: 0%
+source-wordcount: '1571'
+ht-degree: 2%
 
 ---
 
@@ -57,7 +57,7 @@ ht-degree: 0%
    ![chlimage_1-104](assets/chlimage_1-309.png)
 
 1. （可选）单击&#x200B;**[!UICONTROL 标记]**&#x200B;并为宣传册选择一个或多个标记。 单击&#x200B;**[!UICONTROL 确认]**&#x200B;确认您的选择。
-1. 单击&#x200B;**[!UICONTROL 创建]**。将显示一个对话框，确认已创建新宣传册。 单击&#x200B;**[!UICONTROL 打开]**&#x200B;以在编辑模式下打开宣传册。
+1. 单击&#x200B;**[!UICONTROL 创建]**。 将显示一个对话框，确认已创建新宣传册。 单击&#x200B;**[!UICONTROL 打开]**&#x200B;以在编辑模式下打开宣传册。
 
    <!--![chlimage_1-106](assets/.png) -->
 
@@ -124,7 +124,7 @@ ht-degree: 0%
    >
    >要使[!DNL Experience Manager]能够解析图像，请执行以下操作：
    >
-   >* 创建[!DNL InDesign]模板时嵌入图像（请参阅[关于链接和嵌入的图形](https://helpx.adobe.com/cn/indesign/using/graphics-links.html)）。
+   >* 创建[!DNL InDesign]模板时嵌入图像（请参阅[关于链接和嵌入的图形](https://helpx.adobe.com/indesign/using/graphics-links.html)）。
    >* 将[!DNL Experience Manager]装载到本地文件系统，然后将缺少的图标映射到[!DNL Experience Manager]中的现有资源。
    >
 

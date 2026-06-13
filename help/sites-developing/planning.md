@@ -11,8 +11,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '979'
-ht-degree: 0%
+source-wordcount: '988'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 * [需要哪些测试环境？](/help/sites-developing/test-environments.md)
 * [定义测试用例](/help/sites-developing/test-cases.md)
-* [测试 — 何时与谁？](/help/sites-developing/when-who.md)
+* [测试——何时进行以及与谁进行？](/help/sites-developing/when-who.md)
 
 ## 开始之前 {#before-you-start}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 **文档** — 请参阅任意文档部分或操作方法文章以了解更多信息。
 
-**测试的基本原则** — 您应该了解软件测试和质量保证的基本原则。 最好具有测试项目方面的经验。
+**测试的基本原则** — 您应该了解软件测试和质量Assurance的基本原则。 最好具有测试项目方面的经验。
 
 有许多网站、书籍和课程涉及这些原则，因此本文件不详细讨论这些原则。
 

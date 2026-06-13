@@ -1,5 +1,5 @@
 ---
-title: 创建新的Granite UI字段组件
+title: 创建新的 Granite UI 字段组件
 description: Granite UI提供了一系列旨在用于表单的组件，称为字段
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '498'
-ht-degree: 0%
+source-wordcount: '548'
+ht-degree: 2%
 
 ---
 
-# 创建新的Granite UI字段组件{#creating-a-new-granite-ui-field-component}
+# 创建新的 Granite UI 字段组件{#creating-a-new-granite-ui-field-component}
 
 Granite UI提供一系列设计用于表单的组件；这些组件在Granite UI词汇中称为&#x200B;*字段*。 标准Granite表单组件在以下位置提供：
 
@@ -43,7 +43,7 @@ Granite UI提供一系列设计用于表单的组件；这些组件在Granite UI
 
 * 客户端：
 
-   * 提供一些词汇(即HTML语言的扩展)的clientlibs集合，以通过超媒体驱动的用户界面实现通用的交互模式。
+   * clientlibs的集合，提供一些词汇（即HTML语言的扩展）以通过超媒体驱动的用户界面实现通用交互模式。
 
 通用Granite UI组件`field`由两个感兴趣的文件组成：
 
