@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
 workflow-type: tm+mt
-source-wordcount: '10334'
+source-wordcount: '10377'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,10 @@ ht-degree: 0%
 **允许扩展身份验证**&#x200B;选择以启用扩展身份验证，然后输入扩展身份验证登录URL。
 
 选择此选项可使客户端应用程序使用扩展身份验证。 扩展身份验证为AEM Forms服务器上配置的自定义身份验证流程和各种身份验证选项提供了支持。 例如，用户现在可以从Acrobat和AEM客户端体验基于SAML的身份验证，而不是Reader表单用户名/密码。 默认情况下，登录URL包含&#x200B;*localhost*&#x200B;作为服务器名称。 将服务器名称替换为完全限定的主机名。 如果尚未启用扩展身份验证，则会从基本URL自动填充登陆URL中的主机名。 请参阅[添加扩展身份验证提供程序](configuring-client-server-options.md#add-the-extended-authentication-provider)。
+
+>[!NOTE]
+>
+> JEE Service Pack 6.5.25.0及更高版本上的AEM Forms中提供了外部浏览器身份验证。 如果您使用的是Service Pack 6.5.24.0或更早版本，请升级到Service Pack 6.5.25.0或安装适用的JEE修补程序修补程序。 请参阅[从外部浏览器配置扩展身份验证以获得Document Security](/help/forms/using/admin-help/configure-external-browser-authentication-document-security.md)。
 
 ***注意&#x200B;**：Apple Mac OS X版本11.0.6及更高版本支持Adobe Acrobat扩展身份验证。*
 
