@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: a452674c-aea0-45d6-88cd-438af539d355
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 98a772829d3568a5826ea9e3ae65760f1587040f
+source-git-commit: 89a07256cd5bb850aac19565ad86273322fa1f31
 workflow-type: tm+mt
-source-wordcount: '986'
+source-wordcount: '1029'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,11 @@ ht-degree: 3%
 
 * 已部署Service Pack 6.5.25.0的JEE上的AEM Forms 6.5，或已部署Service Pack 6.5.24.0，并在支持的应用程序服务器（JBoss、WebLogic或WebSphere）上安装适用的JEE修补程序修补程序。 查看AEM Forms JEE修补程序2的[软件分发链接6.5.24.0](#software-distribution-links)。
 * 扩展身份验证（第三方身份验证）已经在IDP中启用和正常工作。 请参阅[服务器配置设置](/help/forms/using/admin-help/configuring-client-server-options.md#server-configuration-settings)和[添加扩展身份验证提供程序](/help/forms/using/admin-help/configuring-client-server-options.md#add-the-extended-authentication-provider)。
-* 使用最新更新安装在客户端Windows PC上的Adobe Acrobat Pro或Adobe Acrobat Reader（64位）
+* 使用最新更新安装在客户端Windows PC上的Adobe Acrobat Pro或Adobe Acrobat Reader（64位）。
+
+>[!NOTE]
+>
+> 外部浏览器身份验证需要客户端上的Adobe Acrobat或Adobe Acrobat Reader的支持版本。 有关版本详细信息和更新，请参阅[Acrobat发行说明（2026年3月连续跟踪）](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix)。
 
 ### AEM Forms JEE修补程序2的软件分发链接6.5.24.0 {#software-distribution-links}
 
@@ -115,7 +119,7 @@ To disable external browser authentication on specific client machines (forcing 
 ### 此时将打开嵌入式浏览器，而不是系统浏览器 {#embedded-browser-opens-instead-of-system-browser}
 
 * 验证服务器是否启用了外部浏览器身份验证。 请参阅[启用外部浏览器身份验证](#enable-external-browser-authentication)。
-* 确认Acrobat或Reader版本支持此功能。
+* 确认Acrobat或Reader版本支持此功能。 请参阅[Acrobat](#acrobat)。
 
 ### 在浏览器中验证成功，但文档未解锁 {#authentication-succeeds-but-document-does-not-unlock}
 
