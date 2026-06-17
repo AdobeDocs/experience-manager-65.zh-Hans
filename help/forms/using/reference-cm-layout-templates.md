@@ -10,8 +10,8 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '453'
-ht-degree: 0%
+source-wordcount: '476'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 在通信管理中，信件模板包含典型的表单字段、布局功能（如页眉和页脚）以及用于内容投放的空“目标区域”。
 
-通信管理在[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)中提供书信模板。 您可以根据品牌和业务需求在Designer中自定义模板。 该资源包包含以下模板：
+通信管理在[AEM Forms附加组件包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en)中提供书信模板。 您可以根据品牌和业务需求在Designer中自定义模板。 该资源包包含以下模板：
 
 * Classic
 * Classic简单用法
@@ -42,7 +42,7 @@ ht-degree: 0%
 
 ![列出了所有CM书信模板](assets/templatescorrespondence.png)
 
-安装AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES包后，模板将列在templates-folder中
+安装AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES包后，这些模板将列在templates-folder中
 
 ## Classic {#classic}
 
@@ -50,7 +50,7 @@ Classic模板顶部带有徽标，非常适合于普通专业信件。
 
 ![经典](assets/classic.png)
 
-使用ClassicPDF创建的信件的模板预览
+使用Classic模板创建的信件的PDF预览
 
 ## Classic简单用法 {#classic-simple}
 
@@ -58,7 +58,7 @@ Classic模板顶部带有徽标，非常适合于普通专业信件。
 
 ![联系人信息片段](assets/classicsimple.png)
 
-使用Classic SimplePDF创建的信件的模板预览
+使用Classic Simple模板创建的信件的PDF预览
 
 ## 平衡左侧 {#balanced-left}
 
@@ -66,7 +66,7 @@ Classic模板顶部带有徽标，非常适合于普通专业信件。
 
 ![balancedleft](assets/balancedleft.png)
 
-使用“左平衡”模板创建的信件的PDF预览
+使用平衡左侧模板创建的信件的PDF预览
 
 ## 向右平衡 {#balanced-right}
 
@@ -74,7 +74,7 @@ Balanced Right模板左侧具有公司徽标，并为在信件本身中输入收
 
 ![balancedright](assets/balancedright.png)
 
-使用“右平衡”模板创建的信件的PDF预览
+使用“右均衡”模板创建的信件的PDF预览
 
 ## 可视化左侧 {#visual-left}
 
@@ -82,7 +82,7 @@ Visual Left模板在页面左侧有一个侧头，其中公司徽标放在侧头
 
 ![可视化左侧](assets/visualleft.png)
 
-使用“可视化左侧”PDF创建的信件的模板预览
+使用“可视化左侧”模板创建的信件的PDF预览
 
 ## 视觉顶部 {#visual-top}
 
@@ -90,7 +90,7 @@ Visual Left模板在页面左侧有一个侧头，其中公司徽标放在侧头
 
 ![visualtop](assets/visualtop.png)
 
-使用Visual TopPDF创建的信件的模板预览
+使用Visual Top模板创建的信件的PDF预览
 
 ## Visual Top — 经典 {#visual-top-classic}
 
@@ -98,4 +98,4 @@ Visual Top - Classic模板的页面顶部有一个带有公司徽标的标题。
 
 ![visualtopclassic](assets/visualtopclassic.png)
 
-使用Visual Top - ClassicPDF创建的信件的模板预览
+使用Visual Top - Classic模板创建的信件的PDF预览

@@ -1,5 +1,5 @@
 ---
-title: 启用Forms Portal组件
+title: 启用表单门户组件
 description: 现成Forms Portal组件已禁用。 启用Document Services和Document Services谓词组以启用Forms Portal组件。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '332'
-ht-degree: 5%
+source-wordcount: '354'
+ht-degree: 18%
 
 ---
 
-# 启用Forms Portal组件 {#enabling-forms-portal-components}
+# 启用表单门户组件 {#enabling-forms-portal-components}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -52,5 +52,5 @@ ht-degree: 5%
 * [使用草稿和提交组件](/help/forms/using/draft-submission-component.md)
 * [自定义草稿和已提交表单的存储](/help/forms/using/draft-submission-component.md)
 * [将草稿和提交组件与数据库集成的示例](/help/forms/using/integrate-draft-submission-database.md)
-* [自定义表单门户组件的模板](/help/forms/using/customizing-templates-forms-portal-components.md)
-* [在门户上发布表单的简介](/help/forms/using/introduction-publishing-forms.md)
+* [自定义表单门户组件模板](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md)

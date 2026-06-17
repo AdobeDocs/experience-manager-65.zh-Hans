@@ -1,5 +1,5 @@
 ---
-title: 自定义创建通信UI
+title: 自定义创建通信用户界面
 description: 了解如何在AEM Forms环境中自定义通信用户界面(UI)，例如徽标。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1099'
-ht-degree: 1%
+source-wordcount: '1098'
+ht-degree: 2%
 
 ---
 
-# 自定义创建通信UI{#customize-create-correspondence-ui}
+# 自定义创建通信用户界面{#customize-create-correspondence-ui}
 
 ## 概述 {#overview}
 
@@ -32,7 +32,7 @@ ht-degree: 1%
 
 要设置您选择的徽标图像，请执行以下操作：
 
-1. 在CRX[&#128279;](#creatingfolderstructure)中创建相应的文件夹结构。
+1. 在CRX](#creatingfolderstructure)中创建相应的[文件夹结构。
 1. [将新的徽标文件](#uploadlogo)上传到您在CRX中创建的文件夹中。
 
 1. [在CRX上设置CSS](#createcss)以引用新徽标。
@@ -114,7 +114,7 @@ ht-degree: 1%
 
 使用以下步骤将自定义徽标文件上传到CRX：
 
-1. 转到`https://'[server]:[port]'/[contextpath]/crx/de`。 如有必要，请以管理员身份登录。
+1. 转到 `https://'[server]:[port]'/[contextpath]/crx/de`. 如有必要，请以管理员身份登录。
 1. 在CRXDE中，右键单击以下路径的&#x200B;**imgs**&#x200B;文件夹，然后选择&#x200B;**创建>创建文件**：
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -127,21 +127,21 @@ ht-degree: 1%
 
 1. 单击&#x200B;**全部保存**。
 
-   在您创建的新文件（此处为CustomLogo.png）下，将显示jcr：content属性。
+   在您创建的新文件（此处为CustomLogo.png）下，将显示jcr:content属性。
 
-1. 单击文件夹结构中的jcr：content。
+1. 单击文件夹结构中的jcr:content。
 
-   此时将显示jcr：content的属性。
+   出现jcr:content的属性。
 
    ![jcrcontentproperties](assets/jcrcontentproperties.png)
 
-1. 双击&#x200B;**jcr：data**&#x200B;属性。
+1. 双击&#x200B;**jcr:data**&#x200B;属性。
 
-   此时将显示“编辑jcr：data”对话框。
+   出现“编辑jcr:data”对话框。
 
-   现在，单击newlogo.png文件夹，然后双击jcr：content （dim选项）并设置nt：resource类型。 如果该属性不存在，请创建名为jcr：content的属性。
+   现在，单击newlogo.png文件夹，然后双击jcr:content （dim选项）并设置nt:resource类型。 如果不存在，请创建名为jcr:content的属性。
 
-1. 在“编辑jcr：data”对话框中，单击&#x200B;**浏览**&#x200B;并选择要用作徽标的图像文件（此处为CustomLogo.png）。
+1. 在“编辑jcr:data”对话框中，单击&#x200B;**浏览**&#x200B;并选择要用作徽标的图像文件（此处为CustomLogo.png）。
 
    根据您用于访问AEM Forms的浏览器，支持的图像文件格式会有所不同。 所有浏览器都支持JPEG、GIF和PNG。 有关更多信息，请参阅特定于浏览器的文档，了解支持的图像格式。
 
@@ -157,7 +157,7 @@ ht-degree: 1%
 
 使用以下步骤可创建样式表，以便通过UI呈现徽标：
 
-1. 转到`https://'[server]:[port]'/[contextpath]/crx/de`。 如有必要，请以管理员身份登录。
+1. 转到 `https://'[server]:[port]'/[contextpath]/crx/de`. 如有必要，请以管理员身份登录。
 1. 在以下位置创建一个名为customcss.css的文件（不能使用其他文件名）：
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -165,8 +165,8 @@ ht-degree: 1%
    创建customcss.css文件的步骤：
 
    1. 右键单击&#x200B;**css**&#x200B;文件夹并选择&#x200B;**创建>创建文件**。
-   1. 在“新建文件”对话框中，将CSS的名称指定为`customcss.css`（不能使用其他文件名），然后单击“确定”**&#x200B;**。
-   1. 将以下代码添加到新创建的css文件中。 在代码的content：url中，指定您上传到CRXDE中的imgs文件夹的图像名称。
+   1. 在“新建文件”对话框中，将CSS的名称指定为`customcss.css`（不能使用其他文件名），然后单击“确定”****。
+   1. 将以下代码添加到新创建的css文件中。 在代码的内容:url中，指定已上载到CRXDE中的imgs文件夹的图像名称。
 
       ```css
       .logo, .logo:after {

@@ -1,6 +1,6 @@
 ---
 title: 自定义错误对话框
-description: 如何自定义LiveCycleAEM Forms工作区的错误对话框以添加其他错误描述。
+description: 如何自定义LiveCycle AEM Forms工作区的错误对话框以添加其他错误描述。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -10,8 +10,8 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '151'
-ht-degree: 4%
+source-wordcount: '155'
+ht-degree: 8%
 
 ---
 

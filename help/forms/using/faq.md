@@ -12,8 +12,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: aee0e36fe488af764459494c1bc802fb519b1a54
 workflow-type: tm+mt
-source-wordcount: '2018'
-ht-degree: 0%
+source-wordcount: '1982'
+ht-degree: 1%
 
 ---
 
@@ -168,34 +168,34 @@ ht-degree: 0%
 
 1. 为什么屏幕阅读器无法正确处理日期/时间字段对象？
 
-   答案：屏幕阅读器不支持日期/时间字段。 However, you can manually enter date/time to the field to make the screen reader read it. Use tool-tip or screen-reader text to instruct the user to manually select date/time for the field.
+   答案：屏幕阅读器不支持日期/时间字段。 但是，您可以在字段中手动输入日期/时间，以使屏幕阅读器能够阅读该字段。 使用工具提示或屏幕阅读器文本指示用户手动选择字段的日期/时间。
 
-1. Do HTML5 forms support display patterns for floating fields?
+1. HTML5表单是否支持浮动字段的显示模式？
 
-   Answer: HTML5 forms do not support display patterns for floating fields.
+   答案： HTML5表单不支持浮动字段的显示模式。
 
-1. What is the format of the Date field in HTML5 Forms?
-Answer: The Date field accepts the ISO format, YYYY-MM-DD. If you specify a date in some other format, the Date Field does not accept the formatting until the user tabs out of the field.
+1. HTML5 Forms中日期字段的格式是什么？
+答案：日期字段接受ISO格式，YYYY-MM-DD。如果以某种其他格式指定日期，则在用户退出该字段之前，日期字段不接受格式。
 
-### Scripting {#scripting}
+### 脚本 {#scripting}
 
-1. Are there any limitations in JavaScript implementation for HTML Forms?
-
-   回答：
-
-   * There is limited support for xfa.connectionSet script. For connectionSet, only server-side invocation of web service is supported. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
-   * There is no support for $record and $data in client side scripts. However, if the scripts are written in a formReady, layoutReady block, the scripts still work because these events run on the server side.
-   * XFA Draw element-specific scripts such as changing the Draw text (or Caption text if there are fields) are not supported.
-
-1. Are there any limitations in using formCalc?
-
-   Answer: Only a subset of the formCalc scripts is currently implemented. For detailed information, see [Scripting Support](/help/forms/using/scripting-support.md).
-
-1. Is there any recommended naming convention and are there any reserved keywords to avoid?
+1. JavaScript实施对HTML Forms是否有任何限制？
 
    回答：
-   * In AEM Forms Designer, it is recommended not to begin the name of an object (such as a subform or a text field) with an underscore (_). To use underscore at the beginning of the name, add a prefix after the underscore,_&lt;prefix>&lt;objectname>.
-   * All HTML5 forms APIs are reserved keywords. For custom APIs/functions, use a name that is not identical to [HTML5 forms APIs](/help/forms/using/scripting-support.md).
+
+   * xfa.connectionSet脚本的支持有限。 对于connectionSet，仅支持在服务器端调用Web服务。 有关详细信息，请参阅[脚本支持](/help/forms/using/scripting-support.md)。
+   * 客户端脚本不支持$record和$data。 但是，如果脚本是在formReady、layoutReady块中编写的，则脚本仍然有效，因为这些事件在服务器端运行。
+   * 不支持特定于XFA Draw元素的脚本，例如更改Draw文本（如果存在字段，则更改Caption文本）。
+
+1. 使用formCalc是否有任何限制？
+
+   回答：当前仅实现了formCalc脚本的子集。 有关详细信息，请参阅[脚本支持](/help/forms/using/scripting-support.md)。
+
+1. 是否有任何推荐的命名惯例以及要避免的保留关键字？
+
+   回答：
+   * 在AEM Forms Designer中，建议不要以下划线(_)作为对象名称（如子表单或文本字段）的开头。 要在名称的开头使用下划线，请在下划线后添加前缀，_&lt;前缀>&lt;对象名称>。
+   * 所有HTML5 Forms API都是保留关键词。 对于自定义API/函数，请使用与[HTML5 Forms API](/help/forms/using/scripting-support.md)不同的名称。
 
 1. HTML5表单是否支持浮动字段？
 

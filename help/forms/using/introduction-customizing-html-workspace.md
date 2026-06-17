@@ -1,6 +1,6 @@
 ---
-title: 自定义AEM表单工作区简介
-description: 快速介绍，其中包括概念和技术信息，以自定义用于流程管理的LiveCycleAEM Forms工作区。
+title: 自定义 AEM Forms 工作区简介
+description: 快速介绍，其中包括概念和技术信息，以针对流程管理自定义LiveCycle AEM Forms Workspace。
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,12 +12,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1752'
-ht-degree: 0%
+source-wordcount: '1790'
+ht-degree: 1%
 
 ---
 
-# 自定义AEM表单工作区简介{#introduction-to-customizing-aem-form-workspace}
+# 自定义 AEM Forms 工作区简介{#introduction-to-customizing-aem-form-workspace}
 
 AEM表单工作区提供了修改其界面的呈现语义和功能的功能。 用于更改样式、布局、格式、品牌和核心功能的自定义项类型如下所述。
 
@@ -145,7 +145,7 @@ CSS自定义的顶级步骤包括：
 
 #### HTML模板 {#html-template}
 
-HTML模板有助于定义workspace用户界面的外观和布局。 通过更新默认HTML模板，您可以自定义版面默认用户界面。
+HTML模板可帮助定义工作区用户界面的外观和布局。 通过更新默认HTML模板，您可以自定义布局默认用户界面。
 
 对HTML模板进行自定义的顶级步骤如下：
 
@@ -182,7 +182,7 @@ HTML模板有助于定义workspace用户界面的外观和布局。 通过更新
 
 它主要用于自定义，因为它提供生成以下内容的功能：
 
-* 用于发送、调试和开发配置文件的CRX包(在[CRX包](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)中提到)。
+* 用于发送、调试和开发配置文件的CRX包（在[CRX包](../../forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)中提到）。
 * 自定义代码的缩小版本（用于语义更改）。
 
 #### WS内容 {#ws-content}
@@ -202,7 +202,7 @@ HTML模板有助于定义workspace用户界面的外观和布局。 通过更新
       * js：
 
          * libs — 包含AEM Forms工作区中使用的所有第三方库。
-         * 许可证 — 包含HTML和JS文件的许可证，以及用于在相应源文件中添加这些许可证前缀的代码。
+         * 许可证 — 包含HTML和JS文件的许可证以及用于在相应源文件中添加这些许可证前缀的代码。
          * minifier — 用于组合、缩小和升级customizedJavaScript代码。
          * resourcejs_optimizer — 用于JavaScript源的组合、缩小和升级。
          * resource_generator — 用于生成register.js和modelcontroller.js。
@@ -210,9 +210,9 @@ HTML模板有助于定义workspace用户界面的外观和布局。 通过更新
 
             * 初始值设定项 — 包含用于初始化AEM Forms工作区中使用的骨干视图和模型的initializer.js。
             * 模型 — 包含AEM Forms工作区中存在的所有组件的主干模型。
-            * 路由 — 包含JavaScript文件和HTML文件，这些文件加载AEM Forms工作区中的启动进程、待办事项、跟踪和首选项。
+            * 路由 — 包含JavaScript文件和HTML文件，这些文件在AEM Forms工作区中加载启动进程、待办事项、跟踪和首选项。
             * 服务 — 包含在AEM Forms工作区中使用的service.js。 所有服务器调用均通过service.js进行。
-            * 模板 — 包含所有模板，即AEM Forms workspace中所有视图的HTML文件。
+            * 模板 — 包含所有模板，即AEM Forms工作区中所有视图的HTML文件。
             * util — 包含在AEM Forms工作区中使用的所有实用程序文件(javascript)。
             * 视图 — 包含AEM Forms工作区中所有组件的主干视图。
 
@@ -239,9 +239,9 @@ CRX包可以部署在CRX™存储库上。 它在`[LC root]\crx-repository\insta
 
 | **配置文件** | **描述** | **使用** |
 |---|---|---|
-| 装运模板 | 此配置文件使用缩小功能创建尽可能小的CRX包。 此包效率最高。 所有JavaScript™文件将合并并缩小为一个JS文件。 | 当JS文件中不需要进一步语义更改时，使用此配置文件。 |
+| 装运模板 | 此配置文件使用缩小功能创建尽可能小的CRX包。 此包效率最高。 所有™文件将合并并缩小为一个JS文件。 | 当JS文件中不需要进一步语义更改时，使用此配置文件。 |
 | 调试配置文件 | 此配置文件创建一个效率适度的CRX包。 包的大小略大于使用Ship profile创建的包。 此包将大多数JavaScript文件合并为一个JS文件。 | 使用此配置文件进行调试。 |
-| 开发配置文件 | 此配置文件将创建一个尽可能大的CRX包。 所有JavaScript文件都可单独使用，因为它们位于SDK包中。 | 在合并语义更改时使用此配置文件。 |
+| 开发配置文件 | 此配置文件将创建一个尽可能大的CRX包。 所有JavaScript文件都可单独使用，就像在SDK包中一样。 | 在合并语义更改时使用此配置文件。 |
 
 #### 发货配置文件 {#ship-profile}
 
@@ -263,7 +263,7 @@ CRX包可以部署在CRX™存储库上。 它在`[LC root]\crx-repository\insta
 
    * 运行时：
 
-      * 模板 — 包含所有模板，即AEM Forms workspace中所有组件的HTML文件。
+      * 模板 — 包含所有模板，即AEM Forms工作区中所有组件的HTML文件。
 
    * main.js（合并、缩小和放大）。
    * registry.js
@@ -308,7 +308,7 @@ CRX包可以部署在CRX™存储库上。 它在`[LC root]\crx-repository\insta
 
    * 运行时：
 
-      * 模板 — 包含所有模板，即AEM Forms workspace中所有组件的HTML文件。
+      * 模板 — 包含所有模板，即AEM Forms工作区中所有组件的HTML文件。
 
    * main.js（已组合）。
    * registry.js
@@ -352,9 +352,9 @@ mvn clean -P在客户端上安装开发 — pkg
 
       * 初始值设定项 — 包含initializer.js和modelcontrollerpath.js。
       * 模型 — 包含AEM Forms工作区中所有组件的模型。
-      * 路由 — 包含JavaScript文件和HTML文件，这些文件加载AEM Forms工作区中的启动进程、待办事项、跟踪和首选项。
+      * 路由 — 包含JavaScript文件和HTML文件，这些文件在AEM Forms工作区中加载启动进程、待办事项、跟踪和首选项。
       * 服务 — 包含在AEM Forms工作区中使用的service.js。
-      * 模板 — 包含所有模板，即AEM Forms workspace中所有组件的HTML文件。
+      * 模板 — 包含所有模板，即AEM Forms工作区中所有组件的HTML文件。
       * util — 包含在AEM Forms工作区中使用的所有实用工具文件(JavaScript)。
       * 视图 — 包含AEM Forms工作区中所有组件的视图。
 
