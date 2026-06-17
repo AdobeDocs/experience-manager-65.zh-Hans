@@ -149,7 +149,7 @@ ht-degree: 0%
    ![task_search_result](assets/task_search_result.png)
 
 1. 单击左上角的边栏按钮![lc_pr_rail_button](assets/lc_pr_rail_button.png)以折叠&#x200B;**我的筛选器**&#x200B;窗格并展开&#x200B;**报表**&#x200B;面板的可用空间。
-1. 使用**报表**面板右上角的选项对查询结果执行操作。
+1. 使用&#x200B;**报表**&#x200B;面板右上角的选项对查询结果执行操作。
 
    * **刷新**：使用存储中的最新数据刷新报告
 
