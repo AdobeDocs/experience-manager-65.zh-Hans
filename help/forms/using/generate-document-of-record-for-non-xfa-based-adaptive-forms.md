@@ -11,7 +11,7 @@ role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
 workflow-type: tm+mt
-source-wordcount: '4370'
+source-wordcount: '4312'
 ht-degree: 4%
 
 ---
@@ -59,39 +59,39 @@ ht-degree: 4%
 
 选择表单模型时，使用记录文档模板配置下可用的选项配置记录文档。 请参阅[记录文档模板配置](#document-of-record-template-configuration)。
 
-## Automatically generated document of record {#automatically-generated-document-of-record}
+## 自动生成记录文档 {#automatically-generated-document-of-record}
 
-A document of record lets your customers keep a copy of submitted form for printing purpose. When you automatically generate a document of record, everytime you change your form, its document of record is updated immediately. For example, you remove age field for customers who select United States of America as their country. When such customers generate a document of record, the age field is not visible to them in the document of record.
+记录文档允许客户保留已提交表单的副本以进行打印。 当您自动生成记录文档时，每次更改表单时，其记录文档都会立即更新。 例如，对于选择美利坚合众国作为其国家/地区的客户，您将删除年龄字段。 当此类客户生成记录文档时，他们在记录文档中看不到年龄字段。
 
-Automatically generated document of record has the following advantages:
+自动生成的记录文档具有以下优点：
 
-* It takes care of data binding.
-* It automatically hides fields which are marked exclude from document of record at the time of submission. No extra effort is required.
-* It saves time for designing document of record template.
-* It lets you try different styling and appearance using different base templates and choose best style and appearance for Document of Record. Styling appearances are optional, and if you do not specify styling, system styles are set as default.
-* It ensures any change in form is immediately reflected in document of record.
+* 它负责数据绑定。
+* 它会自动隐藏在提交时标记为从记录文档中排除的字段。 无需额外工作。
+* 本发明为记录文档模板的设计节省了时间。
+* 它允许您使用不同的基本模板尝试不同的样式和外观，并为记录文档选择最佳的样式和外观。 样式外观是可选的，如果未指定样式，系统样式将设置为缺省值。
+* 它确保表单中的任何更改都立即反映在记录文档中。
 
-## Components to automatically generate a document of record {#components-to-automatically-generate-a-document-of-record}
+## 自动生成记录文档的组件 {#components-to-automatically-generate-a-document-of-record}
 
-To generate a document of record for adaptive forms, you need the following components:
+要为自适应表单生成记录文档，您需要以下组件：
 
-**Adaptive form** Adaptive form for which you want to generate a document of record.
+**自适应表单**&#x200B;要为其生成记录文档的自适应表单。
 
-**Adaptive form fragment** Adaptive form fragment for which you want to generate a document of record.
+**要为其生成记录文档的自适应表单片段**。
 
-**Base template (recommended)** XFA template (XDP file) created in AEM Designer. Base template is used to specify styling and branding information for document of record template.
+在AEM Designer中创建的&#x200B;**基本模板（推荐）** XFA模板（XDP文件）。 基本模板用于指定记录文档模板的样式和品牌信息。
 
-See [Base template of a document of record](#base-template-of-a-document-of-record)
+查看记录文档的[基本模板](#base-template-of-a-document-of-record)
 
 >[!NOTE]
 >
->Base template of a document of record is also called meta-template of a document of record.
+>记录文档的基础模板也称为记录文档的元模板。
 
-**Document of record template** XFA template (XDP file) generated from an adaptive form.
+从自适应表单生成的&#x200B;**记录文档模板** XFA模板（XDP文件）。
 
 请参阅[记录文档模板配置](#document-of-record-template-configuration)。
 
-**Form data** Information filled in by a user in the adaptive form. It merges with the document of record template to generate the document of record.
+**表单数据**&#x200B;用户在自适应表单中填写的信息。 它与记录文档模板合并以生成记录文档。
 
 ## 自适应表单元素映射 {#mapping-of-adaptive-form-elements}
 
@@ -434,7 +434,7 @@ See [Base template of a document of record](#base-template-of-a-document-of-reco
       * 水平
       * 与自适应表单相同
      >[!NOTE]
-     > 垂直对齐和水平对齐仅适用于以下情况     单选按钮和复选框
+     > 垂直对齐和水平对齐仅适用于单选按钮和复选框
 * **[!UICONTROL 母版页属性]**&#x200B;有关[母版页属性](#master-page-properties-master-page-properties)的详细信息，请单击
 
 ## 在记录文档中应用分页符 {#apply-page-breaks-in-dor}

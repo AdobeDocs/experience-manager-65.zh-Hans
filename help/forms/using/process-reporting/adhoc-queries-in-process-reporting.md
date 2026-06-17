@@ -1,5 +1,5 @@
 ---
-title: 进程报告中的临时查询
+title: 流程报告中的临时查询
 description: 创建自定义查询以在Process Reporting中搜索AEM Forms on JEE流程和任务详细信息
 content-type: reference
 topic-tags: process-reporting
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1635'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
 
-# 进程报告中的临时查询{#ad-hoc-queries-in-process-reporting}
+# 流程报告中的临时查询{#ad-hoc-queries-in-process-reporting}
 
 ## 进程报告中的临时查询 {#ad-hoc-queries-in-process-reporting-1}
 

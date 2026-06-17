@@ -9,8 +9,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '652'
-ht-degree: 2%
+source-wordcount: '658'
+ht-degree: 4%
 
 ---
 
@@ -73,7 +73,7 @@ ht-degree: 2%
      <li>记帐日期</li>
      <li>帐单期间</li>
     </ul> <p> </p> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>客户详细信息</td>
@@ -92,7 +92,7 @@ ht-degree: 2%
      <li>州代码</li>
      <li>连接数</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>账单摘要</td>
@@ -106,7 +106,7 @@ ht-degree: 2%
      <li>应付金额</li>
      <li>到期日期</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>费用汇总</td>
@@ -124,7 +124,7 @@ ht-degree: 2%
      <li>应付总额（使用费计算字段）</li>
     </ul> <p>表 — 帐单</p> </td>
    <td>无字段</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>分项呼叫 — 传出</td>
@@ -138,20 +138,20 @@ ht-degree: 2%
     </ul> </td>
    <td><p>所有值</p> <p>表 — 调用</p> </td>
    <td>无字段</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>立即付款</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>Paynow</td>
   </tr>
   <tr>
    <td>增值服务</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>ValueAddedServices</td>
   </tr>
  </tbody>

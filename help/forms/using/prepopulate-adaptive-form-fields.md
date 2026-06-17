@@ -1,5 +1,5 @@
 ---
-title: 预填自适应表单字段
+title: 预填充自适应表单字段
 description: 使用现有数据预填自适应表单的字段。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -11,14 +11,14 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2203'
+source-wordcount: '2289'
 ht-degree: 3%
 
 ---
 
-# 预填自适应表单字段{#prefill-adaptive-form-fields}
+# 预填充自适应表单字段{#prefill-adaptive-form-fields}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -91,7 +91,7 @@ ht-degree: 3%
 
 * **提交的XML结构**：当不使用预填充XML时，提交的XML包含`afData`包装器标记中绑定和未绑定字段的数据。 如果使用预填充XML，则提交的XML具有与预填充XML相同的结构。 如果预填充XML以`afData`根标记开头，则输出XML也具有相同的格式。 如果预填充XML没有`afData/afBoundData`包装器，而是直接从架构根标记（如`employeeData`）开始，则提交的XML也以`employeeData`标记开始。
 
-Prefill-Submit-Data-ContentPackage.zip
+预填充 — 提交 — Data-ContentPackage.zip
 
 [获取文件](assets/prefill-submit-data-contentpackage.zip)
 包含预填充数据和已提交数据的示例
@@ -138,7 +138,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
->建议不要在绑定面板(通过从Sidekick或数据源选项卡拖动组件而创建的具有非空`bindRef`的面板)中使用未绑定字段。 它可能会导致这些未绑定字段的数据丢失。 此外，建议整个表单中的字段名称是唯一的，特别是对于未绑定的字段。
+>建议不要在绑定面板（通过从Sidekick或“数据源”选项卡拖动组件而创建的具有非空`bindRef`的面板）中使用未绑定字段。 它可能会导致这些未绑定字段的数据丢失。 此外，建议整个表单中的字段名称是唯一的，特别是对于未绑定的字段。
 
 #### 不具有afData和afBoundData包装器的示例 {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -203,7 +203,7 @@ Prefill-Submit-Data-ContentPackage.zip
 
 >[!NOTE]
 >
->在绑定面板(通过从Sidekick或数据源选项卡拖动组件而创建的具有非空bindRef的面板)中使用未绑定字段，是&#x200B;**不**&#x200B;推荐的，因为它可能会导致未绑定字段的数据丢失。 建议在表单中保留唯一的字段名称，尤其是未绑定的字段。
+>不建议在绑定面板（通过从Sidekick或“数据源”选项卡拖动组件而创建的具有非空bindRef的面板）中使用未绑定字段，因为这样可能会导致未绑定字段的数据丢失。**&#x200B;** 建议在表单中保留唯一的字段名称，尤其是未绑定的字段。
 
 ### 无表单模型的自适应表单 {#adaptive-form-with-no-form-model}
 
@@ -241,7 +241,7 @@ Prefill-Submit-Data-ContentPackage.zip
 >预填充服务配置适用于自适应表单、HTML5表单和HTML5表单集。
 
 1. 使用URL打开&#x200B;**[!UICONTROL Adobe Experience Manager Web控制台配置]**：\
-   https://&lt;服务器>：&lt;端口>/system/console/configMgr
+   https://<服务器>：<端口>/system/console/configMgr
 1. 搜索并打开&#x200B;**[!UICONTROL 默认预填充服务配置]**。
 
    ![预填充配置](assets/prefill_config_new.png)
@@ -391,11 +391,9 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
    1. 启用Configuration.af.clientside.datamerge.enabled.name选项
 * 要从命令行启用或禁用：
    * 要启用，请运行以下cURL命令：
-
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * 要禁用，请运行以下cURL命令：
-
      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
   要充分利用客户端预填充数据选项，请更新预填充服务以返回[FileAttachmentMap](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)和[CustomContext](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
