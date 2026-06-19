@@ -141,7 +141,7 @@ ht-degree: 96%
          + [参与工作流](/help/sites-authoring/workflows-participating.md)
          + [使用项目工作流](/help/sites-authoring/projects-with-workflows.md)
       + 页面性能 {#page-performance}
-         + [内容洞察](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html?lang=zh-Hans)
+         + [内容洞察](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
          + [分析页面性能](/help/sites-authoring/ci-analyze.md)
          + [请参阅页面分析数据](/help/sites-authoring/pa-using.md)
       + 个性化 {#personalization}
@@ -263,9 +263,9 @@ ht-degree: 96%
       + 最佳做法 {#bestpractices}
          + [最佳做法](/help/sites-administering/administer-best-practices.md)
          + [翻译最佳做法](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html?lang=zh-Hans)
-         + [MSM 最佳做法](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html?lang=zh-Hans)
+         + [MSM 最佳做法](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
          + [AEM Sites - GDPR 就绪](/help/sites-administering/gdpr-compliance-sites.md)
-         + [处理 AEM Foundation 的 GDPR 请求](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html?lang=zh-Hans)
+         + [处理 AEM Foundation 的 GDPR 请求](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
          + [AEM Commerce - GDPR 就绪](/help/sites-administering/gdpr-compliance-commerce.md)
       + 内容管理 {#contentmanagement}
          + [包管理器](/help/sites-administering/package-manager.md)
@@ -549,7 +549,7 @@ ht-degree: 96%
          + [安装和配置数据采集功能](/help/forms/using/installing-configuring-aem-forms-osgi.md)
          + [在 OSGi 上安装和配置以 Forms 为中心的工作流](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
          + [安装和配置交互式通信](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
-         + [安装和配置自动化表单转换服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hans)
+         + [安装和配置自动化表单转换服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
       + 安装 JEE 上的 AEM Forms {#jee-installation}
          + [JEE 上的 AEM Forms 支持的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)
          + [使用JBoss Turnkey在JEE上安装和部署AEM Forms](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_cn)
