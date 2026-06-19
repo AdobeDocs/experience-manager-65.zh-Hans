@@ -6,10 +6,10 @@ solution-title: Experience Cloud
 user-guide-description: 使用 Adobe Experience Manager 6.5 文档，了解其工作原理以及该软件能为您带来的价值。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: 6af329d2faa778c3cdbb83854fb36066242e14d5
+source-git-commit: ec3941675081255879065c3be9d5af77474b2072
 workflow-type: tm+mt
-source-wordcount: '8279'
-ht-degree: 96%
+source-wordcount: '8286'
+ht-degree: 95%
 
 ---
 
@@ -141,7 +141,7 @@ ht-degree: 96%
          + [参与工作流](/help/sites-authoring/workflows-participating.md)
          + [使用项目工作流](/help/sites-authoring/projects-with-workflows.md)
       + 页面性能 {#page-performance}
-         + [内容洞察](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html)
+         + [内容洞察](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/authoring/siteandpage/content-insights.html?lang=zh-Hans)
          + [分析页面性能](/help/sites-authoring/ci-analyze.md)
          + [请参阅页面分析数据](/help/sites-authoring/pa-using.md)
       + 个性化 {#personalization}
@@ -263,9 +263,9 @@ ht-degree: 96%
       + 最佳做法 {#bestpractices}
          + [最佳做法](/help/sites-administering/administer-best-practices.md)
          + [翻译最佳做法](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/tc-bp.html?lang=zh-Hans)
-         + [MSM 最佳做法](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html)
+         + [MSM 最佳做法](https://experienceleague.adobe.com/docs/experience-manager-65/content/sites/administering/introduction/msm-best-practices.html?lang=zh-Hans)
          + [AEM Sites - GDPR 就绪](/help/sites-administering/gdpr-compliance-sites.md)
-         + [处理 AEM Foundation 的 GDPR 请求](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html)
+         + [处理 AEM Foundation 的 GDPR 请求](https://experienceleague.adobe.com/docs/experience-manager-65/content/security/handling-gdpr-requests-for-aem-platform.html?lang=zh-Hans)
          + [AEM Commerce - GDPR 就绪](/help/sites-administering/gdpr-compliance-commerce.md)
       + 内容管理 {#contentmanagement}
          + [包管理器](/help/sites-administering/package-manager.md)
@@ -564,6 +564,7 @@ ht-degree: 96%
          + [在JBoss集群上的JEE上配置Adobe Experience Manager Forms](https://www.adobe.com/go/learn_aemforms_clusterJBoss_65_cn)
          + [在WebSphere群集上的JEE上配置Adobe Experience Manager Forms](https://www.adobe.com/go/learn_aemforms_clusterWebSphere_65_cn)
          + [在WebLogic群集上的JEE上配置Adobe Experience Manager Forms](https://www.adobe.com/go/learn_aemforms_clusterWebLogic_65_cn)
+         + [缓解AEM Forms JEE中的序列化问题](/help/forms/using/mitigating-serialization-issues-forms-jee.md)
       + 配置 AEM Forms {#configure-aem-forms}
          + [AEM Forms 服务器性能优化](/help/forms/using/performance-tuning-aem-forms.md)
          + [配置自适应表单缓存](/help/forms/using/configure-adaptive-forms-cache.md)
@@ -1404,7 +1405,7 @@ ht-degree: 96%
          + [Headless 和 AEM](/help/sites-developing/headless/introduction.md)
          + Headless 历程 {#journeys}
             + Headless 开发人员历程 {#developer}
-               + [了解 AEM 中的 Headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html?lang=zh-Hans)
+               + [了解 AEM 中的 Headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html)
                + [了解 CMS Headless 开发](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html?lang=zh-Hans)
                + [AEM Headless as a Cloud Service 快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html?lang=zh-Hans)
                + [首次 AEM Headless 使用体验的路径](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html?lang=zh-Hans)
