@@ -5,9 +5,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 1c2c350e91fe9a0a67618ea4ec00d4a8b4e3f0ca
 workflow-type: tm+mt
-source-wordcount: '2313'
+source-wordcount: '2294'
 ht-degree: 13%
 
 ---
@@ -106,7 +106,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. 在&#x200B;**[!UICONTROL 添加 API]** 页面中，依次选择 **[!UICONTROL Experience Cloud]** 和&#x200B;**[!UICONTROL 智能内容]**。 单击&#x200B;**[!UICONTROL 下一步]**。
 
-1. 选择&#x200B;**[!UICONTROL OAuth服务器到服务器]**。 单击&#x200B;**[!UICONTROL 下一步]**。
+1. 选择&#x200B;**[!UICONTROL OAuth服务器到服务器]**。单击&#x200B;**[!UICONTROL 下一步]**。
 有关如何执行此配置的详细信息，请参阅Developer Console文档，具体取决于您的要求：
 
    * 有关概述，请参阅developer.adobe.com上的&#x200B;*服务器到服务器身份验证*。
@@ -146,7 +146,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. 确认检查运行状况对话框，并在配置处于正常状态时单击关闭。
 
-### 创建新配置 {#configure-smart-content-service}
+### 创建新配置
 
 <!--
 >[!CAUTION]
@@ -175,7 +175,7 @@ To configure the Smart Content Service, follow these top-level steps:
 
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。
 
-### 验证配置 {#validate-the-configuration}
+### 验证配置
 
 完成配置后，可以使用JMX MBean来验证配置。 要进行验证，请执行以下步骤。
 
@@ -281,7 +281,7 @@ To use Smart Content Service APIs, create an integration in Adobe Developer Cons
 
    *Figure: Details of integration in Adobe Developer Console*
 
-### Configure Smart Content Service {#configure-smart-content-service}
+### Configure Smart Content Service
 
 >[!CAUTION]
 >
@@ -338,7 +338,7 @@ An authorization scope is an OAuth string that contains the following prerequisi
 6. Delete the old configuration for `"Access Token provider name: adobe-ims-similaritysearch"` in `/system/console/configMgr`.
 7. Restart the console.
 
-### Validate the configuration {#validate-the-configuration}
+### Validate the configuration
 
 After you have completed the configuration, you can use a JMX MBean to validate the configuration. To validate, follow these steps.
 
