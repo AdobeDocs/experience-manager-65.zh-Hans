@@ -549,7 +549,7 @@ ht-degree: 95%
          + [安装和配置数据采集功能](/help/forms/using/installing-configuring-aem-forms-osgi.md)
          + [在 OSGi 上安装和配置以 Forms 为中心的工作流](/help/forms/using/installing-configuring-forms-centric-workflow-on-osgi.md)
          + [安装和配置交互式通信](/help/forms/using/installing-configuring-intreactive-communication-correspondence-management.md)
-         + [安装和配置自动化表单转换服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
+         + [安装和配置自动化表单转换服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hans)
       + 安装 JEE 上的 AEM Forms {#jee-installation}
          + [JEE 上的 AEM Forms 支持的平台](/help/forms/using/aem-forms-jee-supported-platforms.md)
          + [使用JBoss Turnkey在JEE上安装和部署AEM Forms](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_cn)
@@ -1405,7 +1405,7 @@ ht-degree: 95%
          + [Headless 和 AEM](/help/sites-developing/headless/introduction.md)
          + Headless 历程 {#journeys}
             + Headless 开发人员历程 {#developer}
-               + [了解 AEM 中的 Headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html)
+               + [了解 AEM 中的 Headless](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/overview.html?lang=zh-Hans)
                + [了解 CMS Headless 开发](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/learn-about.html?lang=zh-Hans)
                + [AEM Headless as a Cloud Service 快速入门](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/getting-started.html?lang=zh-Hans)
                + [首次 AEM Headless 使用体验的路径](https://experienceleague.adobe.com/docs/experience-manager-65/content/headless/developer/path-to-first-experience.html?lang=zh-Hans)
