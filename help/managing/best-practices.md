@@ -1,6 +1,6 @@
 ---
 title: 项目管理——最佳做法清单
-description: 实施 Adobe Experience Manager（AEM）的项目管理需要充分的规划与理解。项目清单旨在为项目投放提供一套最佳做法。它们会引导您完成项目生命周期的各个阶段，并对您的状态进行高层次监控。
+description: 实施 Adobe Experience Manager（AEM）的项目管理需要充分的规划与理解。 项目清单旨在为项目投放提供一套最佳做法。 它们会引导您完成项目生命周期的各个阶段，并对您的状态进行高层次监控。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
@@ -10,10 +10,10 @@ exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
 workflow-type: tm+mt
-source-wordcount: '3212'
-ht-degree: 100%
+source-wordcount: '3275'
+ht-degree: 97%
 
 ---
 
@@ -56,13 +56,13 @@ ht-degree: 100%
 
 ## 按角色划分的状态 {#status-by-role}
 
-**按角色划分的状态**&#x200B;工作表按&#x200B;**[阶段](#phases-and-milestones)**&#x200B;与&#x200B;**[用户画像](#persona)**&#x200B;维度，细分展示&#x200B;[**健康度**、**质量与&#x200B;**完整度**](#projectheartbeat)。
+按Role **列出的**&#x200B;状态工作表显示按&#x200B;**[阶段](#phases-and-milestones)**&#x200B;和&#x200B;**[角色](#persona)**&#x200B;列出的&#x200B;[**运行状况**、**质量**&#x200B;和&#x200B;**完整性**](#projectheartbeat)&#x200B;的详细细目。
 
 ## 阶段和里程碑 {#phases-and-milestones}
 
 项目计划会被划分为清晰的（高层级）阶段。
 
-每个阶段都包含相应的里程碑。针对每个[用户画像](#persona)（或角色），列出了相关的里程碑，以及为产出既定可交付结果所需的文档。
+每个阶段都包含相应的里程碑。 针对每个[用户画像](#persona)（或角色），列出了相关的里程碑，以及为产出既定可交付结果所需的文档。
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ ht-degree: 100%
 
 ### 准备阶段 {#preparation}
 
-项目准备构成整个项目的基础。需明确关键需求，并设定清晰的目标与期望，包括：
+项目准备构成整个项目的基础。 需明确关键需求，并设定清晰的目标与期望，包括：
 
 * **业务理由**
 
@@ -80,9 +80,9 @@ ht-degree: 100%
 
    * 应制定基本范围和初步计划，以界定项目需要完成的内容及时间框架；如有助于澄清情况，还可明确哪些内容不在项目范围内。
 
-您如何准备、规划和执行项目，以及如何实施解决方案，会受到现有约束条件的影响。例如，固定预算、固定时间线、内容数量以及所需质量。
+您如何准备、规划和执行项目，以及如何实施解决方案，会受到现有约束条件的影响。 例如，固定预算、固定时间线、内容数量以及所需质量。
 
-与往常一样，调整任何一个因素都会影响其他因素。例如，在缩短时间的同时仍要求保持相同质量，往往会导致成本上升，同时可处理的内容数量减少。预算通常是关键因素，因此这种关联关系不容忽视。
+与往常一样，调整任何一个因素都会影响其他因素。 例如，在缩短时间的同时仍要求保持相同质量，往往会导致成本上升，同时可处理的内容数量减少。 预算通常是关键因素，因此这种关联关系不容忽视。
 
 四大要素：
 
@@ -120,7 +120,7 @@ ht-degree: 100%
 
 ### 规划 {#planning}
 
-项目规划是对准备工作的进一步落实。在此阶段，您应将目标和期望转化为清晰的路线图，路线图需包含具体任务，并辅以明确的沟通与严格的评审机制，以衡量项目进展。
+项目规划是对准备工作的进一步落实。 在此阶段，您应将目标和期望转化为清晰的路线图，路线图需包含具体任务，并辅以明确的沟通与严格的评审机制，以衡量项目进展。
 
 #### 里程碑 {#milestones-1}
 
@@ -134,11 +134,11 @@ ht-degree: 100%
 
   为避免出现意外情况，应通过风险评估识别并量化潜在风险，同时评估其影响与发生概率。
 
-  风险评估应在项目生命周期的早期进行，以确保尽早发现并评估潜在漏洞。根据评估结果，您可以向利益相关者汇报是否能够实施全部需求，并在必要时规划并跟踪相应的应对措施。
+  风险评估应在项目生命周期的早期进行，以确保尽早发现并评估潜在漏洞。 根据评估结果，您可以向利益相关者汇报是否能够实施全部需求，并在必要时规划并跟踪相应的应对措施。
 
 * **沟通**
 
-  沟通始终是任何项目成功的关键。应进行清晰高效的沟通，以确保所有人：
+  沟通始终是任何项目成功的关键。 应进行清晰高效的沟通，以确保所有人：
 
    * 朝着相同的基本目标努力
    * 基于相同的信息来源
@@ -146,7 +146,7 @@ ht-degree: 100%
 
 * **启动会**
 
-  启动会用于正式宣告项目即将开始。这是一个绝佳的机会，可用于：
+  启动会用于正式宣告项目即将开始。 这是一个绝佳的机会，可用于：
 
    * 邀请所有相关方（或至少各组代表）。
    * 介绍项目的关键信息。
@@ -188,7 +188,7 @@ ht-degree: 100%
 
    * 各环境的流程；例如部署与维护要求
    * 维护活动（数据存储垃圾回收、TarPM 优化等）
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 缓存
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 缓存
    * [集群](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)发布/作者共享
    * 客户端性能优化（JS 压缩、合并、CSS Sprite、HTTP 请求总数等）
 
@@ -243,7 +243,7 @@ ht-degree: 100%
 
 ### 运营规划与运营 {#operations-planning-and-operations}
 
-同样地，必须做好运营规划，以确保在项目生命周期的各个阶段都具备所需的运行环境。还需要配套的维护流程来保障其运行。
+同样地，必须做好运营规划，以确保在项目生命周期的各个阶段都具备所需的运行环境。 还需要配套的维护流程来保障其运行。
 
 #### 里程碑 {#milestones-3}
 
@@ -263,7 +263,7 @@ ht-degree: 100%
 
 * **监控与维护**
 
-  监控与维护是确保解决方案上线后平稳运行的关键环节。为此，您需要定义：
+  监控与维护是确保解决方案上线后平稳运行的关键环节。 为此，您需要定义：
 
    * 需要监控的内容
    * 维护任务；包括常规任务与特殊情况处理
@@ -276,7 +276,7 @@ ht-degree: 100%
 
 * **恢复计划**
 
-  确保制定了恢复计划。在紧急情况下，必须依靠该计划来保障 AEM 的生产使用。计划应涵盖备份、恢复、故障切换等情况。
+  确保制定了恢复计划。 在紧急情况下，必须提供此插件以确保AEM的生产使用。这应该包括备份、恢复、回退和其他情况。
 
 ### 开发 {#development}
 
@@ -371,7 +371,7 @@ ht-degree: 100%
    * 解决方案满足用户/客户的需求
    * 客户/用户认可解决方案（功能、设计和性能）
 
-  应制定正式的客户交接清单；理想情况下，应能自动化执行，并在夜间基于快照运行。测试结果应发送给项目经理和开发团队
+  应制定正式的客户交接清单；理想情况下，应能自动化执行，并在夜间基于快照运行。 测试结果应发送给项目经理和开发团队
 
 * **性能与负载测试**
 
@@ -390,7 +390,7 @@ ht-degree: 100%
 
 ### 转出 {#rollout}
 
-新应用程序的转出需要精心规划，以确保平稳切换至正式上线。这包括确认较高的安全水平、对所有潜在用户进行培训，以及进行多次演练，以确保所有问题已得到解决。
+新应用程序的转出需要精心规划，以确保平稳切换至正式上线。 这包括确认较高的安全水平、对所有潜在用户进行培训，以及进行多次演练，以确保所有问题已得到解决。
 
 #### 里程碑 {#milestones-6}
 
@@ -432,7 +432,7 @@ ht-degree: 100%
 
 ### 上线 {#go-live}
 
-您希望上线事宜尽可能顺利。同样，需要规划最后阶段，以确保无缝执行。
+您希望上线事宜尽可能顺利。 同样，需要规划最后阶段，以确保无缝执行。
 
 #### 里程碑 {#milestones-7}
 
@@ -462,7 +462,7 @@ ht-degree: 100%
 
 ## 用户画像 {#persona}
 
-这些清单是按照用户画像设计的。这些角色在项目生命周期中扮演着重要作用。
+这些清单是按照用户画像设计的。 这些角色在项目生命周期中扮演着重要作用。
 
 另外还有一些[其他用户画像](#other-persona)，他们会参与特定任务。
 
@@ -491,8 +491,8 @@ ht-degree: 100%
 解决方案架构师的职责包括：
 
 * 负责解决方案和系统的高层级设计。
-* 协助定义 AEM 的实施策略。例如，是否实施集群部署，是否需要冷备份，或者何时需要内容传递网络（CDN）。
-* 还需根据客户需求定义 AEM 解决方案架构。这可能包括用户角色（及相关权限）的概念、模板与组件之间的关系，或何时采用多站点管理。
+* 协助定义 AEM 的实施策略。 例如，是否实施集群部署，是否需要冷备份，或者何时需要内容传递网络（CDN）。
+* 还需根据客户需求定义 AEM 解决方案架构。 这可能包括用户角色（及相关权限）的概念、模板与组件之间的关系，或何时采用多站点管理。
 
 ### 业务分析师 {#business-analyst}
 
@@ -503,7 +503,7 @@ ht-degree: 100%
    * 供项目经理在规划开发时使用
    * 供开发团队在设计与开发过程中使用
 
-* 与客户紧密合作以分析需求。并将这些需求与以下内容对照：
+* 与客户紧密合作以分析需求。 并将这些需求与以下内容对照：
 
    * 成功的定义。
    * 成功的评判标准。
@@ -553,7 +553,7 @@ ht-degree: 100%
 
 * 利益相关者
 
-   * 通常是业务方面人员，他们对项目的成功有既得利益。他们往往会参与预算投入。
+   * 通常是业务方面人员，他们对项目的成功有既得利益。 他们往往会参与预算投入。
 
 * 法律顾问
 
@@ -565,7 +565,7 @@ ht-degree: 100%
 
 * 技术文档撰写人员
 
-   * 根据项目的规模和性质，可聘请专业的技术写作者为特定群体编写指南和手册。例如，供系统管理员使用的《维护手册》或供作者使用的《用户指南》。
+   * 根据项目的规模和性质，可聘请专业的技术写作者为特定群体编写指南和手册。 例如，供系统管理员使用的《维护手册》或供作者使用的《用户指南》。
 
 * 系统管理员
 
@@ -610,15 +610,16 @@ ht-degree: 100%
    * [企业 DevOps](/help/managing/enterprise-devops.md)
    * [SEO 和 URL 管理最佳做法](/help/managing/seo-and-url-management.md)
    * [AEM 与 Web 无障碍指南](/help/managing/web-accessibility.md)
-   * [通用数据保护条例](/help/managing/data-protection-and-privacy.md)* [部署与维护最佳做法](/help/sites-deploying/best-practices.md)
+   * [通用数据保护条例](/help/managing/data-protection-and-privacy.md)
+* [部署和维护最佳实践](/help/sites-deploying/best-practices.md)
 * [管理最佳做法](/help/sites-administering/administer-best-practices.md)
 * [开发最佳做法](/help/sites-developing/best-practices.md)
 * [创作最佳做法](/help/sites-authoring/best-practices.md)
 
 ## 关键文档区域 {#key-documentation-areas}
 
-* AEM 文档
-此外，以下 AEM 文档部分尤为重要（但不限于此清单）：
+* AEM文档
+此外，AEM文档的以下部分尤其令人感兴趣（但是，此列表并非详尽无遗）：
 
    * [安全性](/help/sites-developing/security.md)
    * [推荐的部署](/help/sites-deploying/recommended-deploys.md)
@@ -628,8 +629,8 @@ ht-degree: 100%
 
       * [开发——基础知识](/help/sites-developing/the-basics.md)
       * [MSM 概念](/help/sites-administering/msm.md)
-      * [HTML 模板语言（HTL）](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)
+      * [HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * 相关文档
 
-   * Adobe Experience Cloud - [Adobe Experience Cloud 规划](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=zh-Hans)
+   * Adobe Experience Cloud - [Adobe Experience Cloud 规划](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
