@@ -1,5 +1,5 @@
 ---
-title: 艰难的一天
+title: 高压日
 description: Tough Day测试模拟了在所有操作同时进行的最坏情况下约1000位作者的日常负载。
 topic-tags: testing
 content-type: reference
@@ -7,18 +7,18 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 0dc83f7613a7202658d2d2eda421cb58c7e0092a
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1838'
 ht-degree: 1%
 
 ---
 
-# 艰难的一天{#tough-day}
+# 高压日{#tough-day}
 
 ## 第2天是多么艰难 {#what-is-tough-day}
 
-“Touch Day 2”是一款应用程序，可让您对AEM实例的限制进行压力测试。 它可以直接与默认测试套件一起运行，也可以根据测试需要进行配置。 您可以观看[此录制](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html?lang=zh-Hans)以演示应用程序。
+“第2天很艰难”是一个应用程序，可用于对AEM实例的限制进行压力测试。 它可以直接与默认测试套件一起运行，也可以根据测试需要进行配置。
 
 >[!CAUTION]
 >
@@ -131,8 +131,8 @@ java -jar toughday2.jar --host=host --protocol=https --port=4502 --duration=30m 
 | `--protocol=<Val>` | 用于主机的协议。 | http | http或https |
 | `--host=<Val>` | 要定位的主机名或IP。 |  |  |
 | `--port=<Val>` | 主机的端口。 | 4502 |  |
-| `--user=<Val>` | 实例的用户名。 | 管理员 |  |
-| `--password=<Val>` | 给定用户的密码。 | 管理员 |  |
+| `--user=<Val>` | 实例的用户名。 | admin |  |
+| `--password=<Val>` | 给定用户的密码。 | admin |  |
 | `--duration=<Val>` | 测试的持续时间。 可以用&#x200B;**秒**&#x200B;秒、**分钟**&#x200B;分钟、**小时**&#x200B;天和&#x200B;**天**&#x200B;天表示。 | 1d |  |
 | `--timeout=<Val>` | 测试将运行多长时间，才会被中断并标记为失败。 以秒为单位表示。 | 180 |  |
 | `--suite=<Val>` | 该值可以是预定义测试包中的一个或列表（以逗号分隔）。 | toughday |  |
@@ -396,7 +396,7 @@ publishmode:
         -add : CreatePageTreeTest
 ```
 
-### 日志记录 {#logging}
+### 记录 {#logging}
 
 “Tough Day 2”会在您运行“Tough Day 2”的同一目录中创建一个日志文件夹。 此文件夹包含两种类型的日志：
 
