@@ -188,7 +188,7 @@ ht-degree: 97%
 
    * 各环境的流程；例如部署与维护要求
    * 维护活动（数据存储垃圾回收、TarPM 优化等）
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 缓存
+   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 缓存
    * [集群](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)发布/作者共享
    * 客户端性能优化（JS 压缩、合并、CSS Sprite、HTTP 请求总数等）
 
@@ -629,8 +629,8 @@ ht-degree: 97%
 
       * [开发——基础知识](/help/sites-developing/the-basics.md)
       * [MSM 概念](/help/sites-administering/msm.md)
-      * [HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)
 
 * 相关文档
 
-   * Adobe Experience Cloud - [Adobe Experience Cloud 规划](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * Adobe Experience Cloud - [Adobe Experience Cloud 规划](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=zh-Hans)
