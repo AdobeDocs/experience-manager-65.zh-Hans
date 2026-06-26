@@ -262,7 +262,7 @@ Configuration Manager使用部署在您的应用程序服务器上的servlet对J
 1. 启动AEM Forms服务器。
 1. 在浏览器中键入以下URL以测试更改并确保其不再有效。
 
-   https://<localhost>：<port>/adobe-bootstrapper/bootstrap
+   https://&lt;localhost>：&lt;port>/adobe-bootstrapper/bootstrap
 
 **锁定对信任存储区的远程访问**
 
