@@ -8,9 +8,9 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
 workflow-type: tm+mt
-source-wordcount: '7800'
+source-wordcount: '7949'
 ht-degree: 1%
 
 ---
@@ -807,6 +807,20 @@ addAllowedRefererExceptions(UMConstants.LC_GLOBAL_ALLOWED_REFERER_EXCEPTION, Arr
 * 如果被拒绝的请求没有Referrer标头，请修改您的客户端应用程序以包含Referrer标头。
 * 如果客户端可以在浏览器中工作，请尝试使用该部署模型。
 * 作为最后手段，您可以将资源添加到允许的URI列表中。 建议不要使用此设置。
+
+### 缓解序列化问题 {#mitigating-serialization-issues}
+
+Java反序列化攻击利用应用程序对不受信任的数据进行反序列化，从而可能允许在服务器上远程执行代码。 JEE上的AEM Forms包括一个反序列化防火墙，该防火墙在任何反序列化对象的尝试之前执行预检检查。 该检查针对防火墙式的允许列表和/或序列化测试类名，并拒绝已知可通过反序列化攻击攻击的类。
+
+在运行&#x200B;**JDK 11或更高版本**&#x200B;的安装中，此保护由平台的本机序列化过滤激活，无需手动步骤。 在运行&#x200B;**JDK 8**&#x200B;的安装上，本机序列化筛选无效，因此NotSoSerial代理必须在启动时显式连接到JVM。
+
+通过浏览到反序列化筛选器运行状况检查，验证保护是否处于活动状态：
+
+```text
+https://<server>:<port>/system/console/healthcheck?tags=deserialization
+```
+
+如果运行状况检查报告在JDK 8实例上失败，请按照[缓解AEM Forms JEE中的序列化问题](/help/forms/using/mitigating-serialization-issues-forms-jee.md)中的说明附加并配置代理。
 
 ## 安全网络配置 {#secure-network-configuration}
 
