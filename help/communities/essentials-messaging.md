@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '419'
 ht-degree: 2%
 
 ---
@@ -111,7 +111,7 @@ ht-degree: 2%
 > not valid: mb.setInboxPath( "/mail/inbox/" );
 >```
 
-### 社区站点 {#community-site}
+### 社区网站 {#community-site}
 
 使用该向导创建的社区站点结构在选中时包括消息传送功能。 查看[社区站点控制台](/help/communities/sites-console.md#user-management)的`User Management`设置。
 

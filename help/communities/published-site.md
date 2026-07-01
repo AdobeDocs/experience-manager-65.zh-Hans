@@ -12,19 +12,19 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1195'
+source-wordcount: '1210'
 ht-degree: 0%
 
 ---
 
 # 体验已发布的站点 {#experience-the-published-site}
 
-## 在Publish上浏览到新站点 {#browse-to-new-site-on-publish}
+## 发布时浏览到新站点 {#browse-to-new-site-on-publish}
 
 现在，新创建的社区站点已发布，请浏览到创建站点时显示的URL，但在发布服务器上，例如：
 
 * 作者URL = https://localhost:4502/content/sites/engage/en.html
-* PUBLISH URL = https://localhost:4503/content/sites/engage/en.html
+* 发布URL = https://localhost:4503/content/sites/engage/en.html
 
 为了最大程度地减少有关哪个成员已登录创作和发布的混淆，建议为每个实例使用不同的浏览器。
 
@@ -55,7 +55,7 @@ ht-degree: 0%
 
 要保护您社区站点的内容不被匿名用户通过jcr内容和json访问，请执行以下步骤：
 
-1. 在AEM创作实例上，转到https:// hostname：port/editor.html/content/site/sitename.html。
+1. 在AEM创作实例上，转到https:// hostname:port/editor.html/content/site/sitename.html。
 
    >[!NOTE]
    >
@@ -72,13 +72,13 @@ ht-degree: 0%
    ![站点身份验证](assets/site-authentication.png)
 
 1. 添加登录页面的路径。 例如，**/content/......./GetStarted**。
-1. Publish页面。
+1. 发布页面。
 
 ## 受信任的社区成员 {#trusted-community-member}
 
 此体验假设[Aaron McDonald](/help/communities/tutorials.md#demo-users)被分配了[社区管理者和审查方](/help/communities/create-site.md#roles)的角色。 如果没有，请返回创作环境以[修改站点设置](/help/communities/sites-console.md#modifying-site-properties)，并选择Aaron McDonald作为社区管理者和审查方。
 
-选择右上角的`Log in`，并使用用户名(aaron.mcdonald@mailinator.com)和密码(password)签名。 请注意能够使用Twitter或Facebook凭据登录。
+选择右上角的`Log in`，并使用用户名(aaron.mcdonald@mailinator.com)和密码(password)签名。 请注意可以使用Twitter或Facebook凭据登录。
 
 ![登录](assets/login.png)
 
@@ -187,7 +187,7 @@ ht-degree: 0%
 
 仅棒球组可见。
 
-以Weston McCall (weston.mccall@dodgit.com /密码)登录，并导航到同一位置。 请注意，Weston能够`Join`打开的`Baseball`组和`enter or Leave`私有`Gymnastics`组。
+以Weston McCall （weston.mccall@dodgit.com /密码）登录，并导航到同一位置。 请注意，Weston能够`Join`打开的`Baseball`组和`enter or Leave`私有`Gymnastics`组。
 
 ![grouplink3](assets/grouplink3.png)
 
