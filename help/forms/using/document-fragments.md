@@ -10,7 +10,7 @@ role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
 source-wordcount: '239'
-ht-degree: 1%
+ht-degree: 5%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 * **条件**：条件允许您根据提供的数据定义在创建通信时要包含的内容。 该条件用控制变量描述。 控制变量可以是数据字典元素或占位符。
 
-   * [交互式通信条件](/help/forms/using/conditions-interactive-communications.md)
+   * [交互式通信中的条件](/help/forms/using/conditions-interactive-communications.md)
 
 * **列表：**&#x200B;列表是一组文档片段，包括文本、列表、条件和图像。 列表元素的顺序可以固定或可编辑。 创建信件时，您可以使用部分或所有列表元素来复制可重用元素模式。
 * **布局片段**：布局片段是可在一或多个字母中使用的布局。 布局片段用于创建可重复的模式，尤其是动态表。 布局可包含典型的表单字段，如“Address”和“Reference Number”。 它还包含表示目标区域的空子表单。 在Designer中创建布局(XDP)，然后将其上传到AEM Forms。

@@ -1,6 +1,6 @@
 ---
 title: Communities组件
-description: 了解AEM Communities何时获得许可，可以使用标准AEM创作工具将社区功能添加到任何AEM站点。
+description: 了解AEM Communities何时获得许可，可以使用标准的AEM创作工具将Communities功能添加到任何AEM站点。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -13,7 +13,7 @@ role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '293'
-ht-degree: 14%
+ht-degree: 17%
 
 ---
 
