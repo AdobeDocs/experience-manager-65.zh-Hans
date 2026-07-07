@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用 Adobe Experience Manager 6.5 文档，了解其工作原理以及该软件能为您带来的价值。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: ec3941675081255879065c3be9d5af77474b2072
+source-git-commit: d4a8b41ee8136bb69845fdf65456e1407b2b5d19
 workflow-type: tm+mt
-source-wordcount: '8286'
+source-wordcount: '8300'
 ht-degree: 95%
 
 ---
@@ -1213,6 +1213,7 @@ ht-degree: 95%
       + [即使 AEM Forms 服务器尚未完全启动，也能处理文档](/help/forms/using/processing-documents-even-if-aem-forms-server-not-fully-up.md)
       + [无法使用输出服务、表单服务或记录文档（DoR）服务](/help/forms/using/connection-issues-with-output-forms-and-document-of-record-dor-services.md)
       + [缓解 Experience Manager Forms 中的 Struts 2 RCE 漏洞](/help/forms/using/mitigating-struts-2-rce-vulnerabilities-for-experience-manager-manager-form.md)
+      + [缓解JEE上Experience Manager Forms的Apache Axis Document Security Web服务漏洞](/help/forms/using/mitigating-apache-axis-document-security-webservice-vulnerability-for-aem-forms-jee.md)
       + [在升级到 6.5.12.0 时，MySQL 数据库备份失败](/help/forms/using/failed-to-back-up-the-database-on-upgrading-to-aem-forms-service-pack-6-5-12-0.md)
       + [在工作台上生成 PDF 时，无法批量打印大量 PDF 文件](/help/forms/using/pdf-generation-service-fails-to-print-a-large-number-of-pdfs-on-workbench.md)
       + [如何正确重启 AEM SDK](/help/forms/using/restart-aem-sdk.md)
