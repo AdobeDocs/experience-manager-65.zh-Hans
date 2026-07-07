@@ -1,6 +1,6 @@
 ---
-title: Dynamic Media - Scene7模式疑难解答
-description: 了解在Dynamic Media模式下运行时，如何对Scene7中的设置、配置和一般问题进行故障排除和解决。
+title: 排查 Dynamic Media - Scene7 模式问题
+description: 了解如何在Dynamic Media以Scene7模式运行时对其设置、配置和常规问题进行故障排除和解决。
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -13,31 +13,31 @@ mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1393'
-ht-degree: 0%
+source-wordcount: '1410'
+ht-degree: 1%
 
 ---
 
-# Dynamic Media - Scene7模式疑难解答{#troubleshooting-dynamic-media-scene-mode}
+# 排查 Dynamic Media - Scene7 模式问题{#troubleshooting-dynamic-media-scene-mode}
 
 以下文档介绍了对运行&#x200B;**dynamicmedia_scene7**&#x200B;运行模式的Dynamic Media进行的故障排除。
 
 ## 设置和配置 {#setup-and-configuration}
 
-通过执行以下操作，确保Dynamic Media已正确设置：
+通过执行以下操作，确保已正确设置Dynamic Media：
 
 * 启动命令包含`-r dynamicmedia_scene7`运行模式参数。
-* 任何Adobe Experience Manager 6.4累积修补程序包(CFP)都是在&#x200B;*之前*&#x200B;安装的任何可用Dynamic Media功能包。
+* 任何Adobe Experience Manager 6.4累积修补程序包(CFP)的安装&#x200B;*前*&#x200B;都是任何可用的Dynamic Media功能包。
 * 已安装可选功能包18912 。
 
-  此可选功能包适用于FTP支持，或者您要将资产从Dynamic Media Classic迁移到Dynamic Media。
+  此可选功能包适用于FTP支持，或者您要将资产从Dynamic Media Classic迁移到Dynamic Media 。
 
-* 导航到Cloud Service用户界面，并确认设置的帐户出现在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下。
+* 导航到Cloud Services用户界面，并确认设置的帐户出现在&#x200B;**[!UICONTROL 可用配置]**&#x200B;下。
 * 确保已启用`Dynamic Media Asset Activation (scene7)`复制代理。
 
   此复制代理位于“创作中的代理”下。
 
-## 常规(所有Assets) {#general-all-assets}
+## 常规（所有Assets） {#general-all-assets}
 
 以下是适用于所有资产的一些常规提示和技巧。
 
@@ -47,14 +47,14 @@ ht-degree: 0%
 
 | **属性** | **示例** | **描述** |
 |---|---|---|
-| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | 表示节点已链接到Dynamic Media的一般指示符。 |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete**&#x200B;或错误文本 | 将资源上传到Dynamic Media的状态。 |
+| `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | 节点链接到Dynamic Media的一般指示符。 |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete**&#x200B;或错误文本 | 将资产上传到Dynamic Media的状态。 |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | 必须填充以生成指向Dynamic Media远程资产的URL。 |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **成功**&#x200B;或&#x200B;**失败：`<error text>`** | 资产（旋转集、图像集等）、图像预设、查看器预设、图像映射更新的同步状态，或者已编辑的图像的同步状态。 |
 
 ### 同步日志记录 {#synchronization-logging}
 
-同步错误和问题记录在`error.log`中(Experience Manager服务器目录`/crx-quickstart/logs/`)。 有足够的日志记录功能来确定大多数问题的根本原因，但您可以通过Sling控制台([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))增加对`com.adobe.cq.dam.ips`程序包的DEBUG日志记录以收集更多信息。
+同步错误和问题记录在`error.log` （Experience Manager服务器目录`/crx-quickstart/logs/`）中。 有足够的日志记录功能来确定大多数问题的根本原因，但您可以通过Sling控制台([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))增加对`com.adobe.cq.dam.ips`程序包的DEBUG日志记录功能，以收集更多信息。
 
 ### 移动、复制、删除 {#move-copy-delete}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 ### 版本控制 {#version-control}
 
-在替换现有Dynamic Media资源（名称和位置相同）时，您可以保留两个资源或替换/创建版本：
+替换现有Dynamic Media资产（名称和位置相同）时，您可以保留两个资产或替换/创建版本：
 
 * 保留这两个名称将为已发布的资源URL创建一个具有唯一名称的资源。 例如，`image.jpg`是原始资产，`image1.jpg`是新上传的资产。
 
@@ -81,7 +81,7 @@ ht-degree: 0%
   <tr>
    <td><strong>问题</strong></td>
    <td><strong>如何调试</strong></td>
-   <td><strong>解决方案</strong></td>
+   <td><strong>解决办法</strong></td>
   </tr>
   <tr>
    <td>无法访问资产详细信息视图中的复制URL/嵌入按钮</td>
@@ -89,13 +89,13 @@ ht-degree: 0%
     <ol>
      <li><p>转到CRX/DE ：</p>
       <ul>
-       <li>检查JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>中的预设是否已定义。 如果您从Experience Manager6.x升级到6.4并选择退出迁移，则此位置适用。 否则，位置为<code>/conf/global/settings/dam/dm/presets/viewer</code>。</li>
+       <li>检查JCR <code>/etc/dam/presets/viewer/&lt;preset&gt; has lastReplicationAction</code>中的预设是否已定义。 如果您从Experience Manager 6.x升级到6.4并选择退出迁移，则此位置适用。 否则，位置为<code>/conf/global/settings/dam/dm/presets/viewer</code>。</li>
        <li>检查以确保JCR中的资产在元数据下有<code>dam:scene7FileStatus</code><strong> </strong>显示为<code>PublishComplete</code>。</li>
       </ul> </li>
     </ol> </td>
    <td><p>刷新页面/导航到其他页面并返回（必须重新编译侧边栏JSP）</p> <p>如果这行不通：</p>
     <ul>
-     <li>Publish资源。</li>
+     <li>发布资源。</li>
      <li>重新上传资源并发布。</li>
     </ul> </td>
   </tr>
@@ -121,7 +121,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td>上传的资产未显示在资产选择器中</td>
-   <td><p>检查资产具有属性<code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code>(CRXDE Lite)</p> </td>
+   <td><p>检查资产具有属性<code>jcr:content</code> &gt; <strong><code>dam:assetState</code></strong> = <code>processed</code> (CRXDE Lite)</p> </td>
    <td><p>检查所有资产是否已完成处理。</p> </td>
   </tr>
   <tr>
@@ -146,7 +146,7 @@ ht-degree: 0%
   <tr>
    <td><strong>问题</strong></td>
    <td><strong>如何调试</strong></td>
-   <td><strong>解决方案</strong></td>
+   <td><strong>解决办法</strong></td>
   </tr>
   <tr>
    <td>无法预览视频</td>
@@ -176,7 +176,7 @@ ht-degree: 0%
    <td>
     <ol>
      <li>使用检查您的Experience Manager实例 <code>-r dynamicmedia_scene7</code></li>
-     <li>检查是否已正确设置Cloud Service下的Dynamic Media配置。</li>
+     <li>检查是否正确设置了云服务下的Dynamic Media配置。</li>
      <li>检查文件夹是否具有视频配置文件。 此外，检查视频配置文件。</li>
     </ol> </td>
   </tr>
@@ -218,14 +218,14 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >配置Dynamic Media云设置后，可能需要大约10分钟才能同步查看器资源。
+   >在配置Dynamic Media云设置后，可能需要大约10分钟才能同步查看器资产。
 
 1. 如果仍有未激活的资源，请选择&#x200B;**列出所有未激活的Assets**&#x200B;按钮之一以查看详细信息。
 
 **解决方案**
 
 1. 导航到管理工具中的查看器预设列表： `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`
-1. 选择所有查看器预设，然后选择&#x200B;**Publish**。
+1. 选择所有查看器预设，然后选择&#x200B;**发布**。
 1. 导航回示例管理器，并观察未激活的资源计数现在为零。
 
 ### 问题：查看器预设图稿在资产详细信息中预览或复制URL/嵌入代码中返回404 {#viewer-preset-404}
@@ -254,9 +254,8 @@ ht-degree: 0%
 1. 导航到CRX包管理器： `https://localhost:4502/crx/packmgr/`。
 1. 在列表中搜索查看器包；它以`cq-dam-scene7-viewers-content`开头。
 1. 选择&#x200B;**重新安装**。
-1. 在Cloud Service下，导航到Dynamic Media配置页面，然后打开适用于Dynamic Media - S7配置的配置对话框。
-1. 不做更改，选择&#x200B;**保存**。
-此save操作会再次触发逻辑以创建并同步示例资产、查看器预设CSS和图稿。
+1. 在云服务下，导航到Dynamic Media配置页面，然后打开Dynamic Media - S7配置的配置对话框。
+1. 不做更改，选择&#x200B;**保存**。此save操作会再次触发逻辑以创建并同步示例资产、查看器预设CSS和图稿。
 
 ### 问题：查看器预设创作中未加载图像预览 {#image-preview-not-loading}
 
@@ -275,4 +274,4 @@ ht-degree: 0%
 1. 删除`viewer`文件夹。
 1. 在CRXDE Lite页面的左上角附近，选择&#x200B;**[!UICONTROL 全部保存]**。
 1. 在CRXDE Lite页面的左上角，选择&#x200B;**返回主页**&#x200B;图标。
-1. 在Cloud Service[&#128279;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)中重新创建Dynamic Media配置。
+1. 在云服务[&#128279;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)中重新创建Dynamic Media配置。
