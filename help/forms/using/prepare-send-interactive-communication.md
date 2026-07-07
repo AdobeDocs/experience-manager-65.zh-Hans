@@ -1,5 +1,5 @@
 ---
-title: 使用Agent UI准备和发送交互式通信
+title: 使用代理 UI 准备并发送交互式通信
 description: 利用代理UI，代理可以准备交互式通信并将其发送到发布流程。 代理在允许的情况下进行所需的修改，并将交互式通信提交至发布流程，如电子邮件或打印件。
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '2010'
-ht-degree: 0%
+source-wordcount: '2029'
+ht-degree: 3%
 
 ---
 
-# 使用Agent UI准备和发送交互式通信 {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# 使用代理 UI 准备并发送交互式通信 {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 利用代理UI，代理可以准备交互式通信并将其发送到发布流程。 代理在允许的情况下进行所需的修改，并将交互式通信提交至发布流程，如电子邮件或打印件。
 
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 ### 输入数据 {#enter-data}
 
-1. 在数据选项卡中，根据需要输入变量、表单数据模型属性和打印模板(XDP)字段的数据。 填写所有标有星号(&amp;amp；ast；)的必填字段以启用&#x200B;**提交**&#x200B;按钮。
+1. 在数据选项卡中，根据需要输入变量、表单数据模型属性和打印模板(XDP)字段的数据。 填写所有标有星号(&amp;ast；)的必填字段以启用&#x200B;**提交**&#x200B;按钮。
 
    在交互式通信预览中选择数据字段值，以高亮显示数据选项卡中的相应数据字段，反之亦然。
 
@@ -138,7 +138,7 @@ ht-degree: 0%
 
 #### 附件投放 {#attachmentdelivery}
 
-* 当使用服务器端API作为交互式或非交互式PDF呈现交互式通信时，呈现的PDF包含附件作为PDF附件。
+* 使用服务器端API作为交互式或非交互式PDF呈现交互式通信时，呈现的PDF包含附件作为PDF附件。
 * 在使用代理UI提交过程中加载与交互式通信关联的后处理时，附件将作为List&lt;com.adobe.idp.Document> inAttachmentDocs参数传递。
 * 投放机制工作流（如电子邮件和打印）也随交互式通信的PDF版本一起投放附件。
 
@@ -146,7 +146,7 @@ ht-degree: 0%
 
 ### 文档片段 {#document-fragments}
 
-![&#x200B; &#x200B;](do-not-localize/contentoptionsdocfragments.png)
+![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **向上/向下箭头**：用于在交互式通信中向上或向下移动文档片段的箭头。
 * **删除**：如果允许，请从交互式通信中删除文档片段。
@@ -172,7 +172,7 @@ ht-degree: 0%
 
 ## 将交互式通信另存为草稿 {#save-as-draft}
 
-您可以使用代理UI为每个交互式通信保存一个或多个草稿，并稍后检索草稿以继续处理。 您可以为每个草稿指定不同的名称来标识它。
+您可以使用代理 UI 为每个交互式通信保存一个或多个草稿，并在稍后检索草稿以继续处理。 您可以为每个草稿指定不同的名称，以便识别。
 
 Adobe建议按顺序执行这些指令，以成功地将交互式通信另存为草稿。
 
@@ -180,7 +180,7 @@ Adobe建议按顺序执行这些指令，以成功地将交互式通信另存为
 
 缺省情况下，“另存为草稿”功能未启用。 执行以下步骤以启用该功能：
 
-1. 实施[ccrDocumentInstance](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html)服务提供程序接口(SPI)。
+1. 实施[ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html)服务提供程序接口(SPI)。
 
    SPI允许您使用草稿ID作为唯一标识符将交互式通信的草稿版本保存到数据库中。 这些说明假定您事先知道如何使用Maven项目构建OSGi捆绑包。
 
