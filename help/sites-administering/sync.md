@@ -106,7 +106,7 @@ ht-degree: 2%
 
 在步骤3中使用授权用户在Author上配置Sling分发。
 
-* 每个发布实例上的&#x200B;****
+* 每个发布实例上的&#x200B;**&#x200B;**
 
    * 使用管理员权限登录
    * 访问[安全控制台](/help/sites-administering/security.md)
