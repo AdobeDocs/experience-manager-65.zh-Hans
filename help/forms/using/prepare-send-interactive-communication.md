@@ -180,7 +180,7 @@ Adobe建议按顺序执行这些指令，以成功地将交互式通信另存为
 
 缺省情况下，“另存为草稿”功能未启用。 执行以下步骤以启用该功能：
 
-1. 实施[ccrDocumentInstance](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html)服务提供程序接口(SPI)。
+1. 实施[ccrDocumentInstance](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/fd/ccm/ccr/ccrDocumentInstance/api/services/CCRDocumentInstanceService.html)服务提供程序接口(SPI)。
 
    SPI允许您使用草稿ID作为唯一标识符将交互式通信的草稿版本保存到数据库中。 这些说明假定您事先知道如何使用Maven项目构建OSGi捆绑包。
 
