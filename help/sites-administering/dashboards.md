@@ -1,5 +1,5 @@
 ---
-title: 功能板
+title: 仪表板
 description: 了解如何创建、配置和开发新的AEM功能板。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '832'
-ht-degree: 3%
+source-wordcount: '834'
+ht-degree: 4%
 
 ---
 
-# 功能板{#dashboards}
+# 仪表板{#dashboards}
 
 使用AEM时，您可以管理多种不同类型的内容（例如，页面、资源）。 AEM功能板提供了一种易于使用和自定义的方法来定义显示合并数据的页面。
 
@@ -70,7 +70,7 @@ ht-degree: 3%
 
 ### 网站分析报表组件 {#web-analytics-reporting-components}
 
-AEM附带一组组件，这些组件呈现[SiteCatalyst](/help/sites-administering/adobeanalytics.md)数据的多个指标。 这些组件在Sidekick中的&#x200B;**仪表板**&#x200B;部分下列出。
+AEM附带一组组件，这些组件渲染[SiteCatalyst](/help/sites-administering/adobeanalytics.md)数据的多个量度。 这些组件在Sidekick中的&#x200B;**功能板**&#x200B;部分下列出。
 
 每个报表组件至少提供三个选项卡：
 
