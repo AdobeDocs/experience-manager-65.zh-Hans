@@ -12,8 +12,8 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 0%
+source-wordcount: '943'
+ht-degree: 3%
 
 ---
 
@@ -27,8 +27,8 @@ ht-degree: 0%
 
 以下模板将详细介绍：
 
-* [页面模板 — 可编辑](/help/sites-developing/page-templates-editable.md)
-* [页面模板 — 静态](/help/sites-developing/page-templates-static.md)
+* [页面模板（可编辑）](/help/sites-developing/page-templates-editable.md)
+* [页面模板（静态）](/help/sites-developing/page-templates-static.md)
 * [内容片段模板](/help/sites-developing/content-fragment-templates.md)
 * [自适应模板渲染](/help/sites-developing/templates-adaptive-rendering.md)
 
@@ -61,14 +61,14 @@ AEM现在提供了两种用于创建页面的基本模板类型：
 
 >[!NOTE]
 >
->请参阅[使用可编辑的页面模板开发Experience Manager站点](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=zh-Hans)。
+>请参阅[使用可编辑的页面模板开发Experience Manager站点](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)。
 
 ### 静态模板 {#static-templates}
 
 静态模板：
 
 * 必须由开发人员定义和配置。
-* AEM的原始模板系统已经有许多版本可用。
+* AEM的原始模板系统已推出多个版本。
 * 静态模板是指与要创建页面具有相同结构，但没有任何实际内容的节点的层次结构。
 * 创建页面时复制了此变量，此后不存在动态连接。
 * 使用[设计模式](/help/sites-authoring/default-components-designmode.md)保存设计属性。

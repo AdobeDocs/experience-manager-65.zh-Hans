@@ -1,5 +1,5 @@
 ---
-title: 为查询生成器实施自定义谓词计算器
+title: 为查询生成器实施自定义谓词评估器
 description: 查询生成器提供了一种查询内容存储库的简单方法
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '664'
-ht-degree: 0%
+source-wordcount: '816'
+ht-degree: 2%
 
 ---
 
-# 为查询生成器实施自定义谓词计算器{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
+# 为查询生成器实施自定义谓词评估器{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
 本节介绍如何通过实现自定义谓词求值器来扩展[查询生成器](/help/sites-developing/querybuilder-api.md)。
 
@@ -44,14 +44,14 @@ GITHUB上的代码
 
 您可以在GitHub上找到此页面的代码。
 
-* 在GitHub上[打开aem-search-custom-predicate-evaluator项目](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
+* [在GitHub上打开aem-search-custom-predicate-evaluator项目](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)
 * 将项目下载为[ZIP文件](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip)
 
 ### 谓词计算器详细信息 {#predicate-evaluator-in-detail}
 
 谓词计算器处理某些谓词的计算，这些谓词是查询的定义约束。
 
-它将更高级别的搜索限制（例如“宽度> 200”）映射到适合实际内容模型的特定JCR查询(例如，元数据/@width > 200)。 或者，它可以手动筛选节点并检查其约束。
+它将更高级别的搜索限制（例如“宽度> 200”）映射到适合实际内容模型的特定JCR查询（例如，元数据/@width > 200）。 或者，它可以手动筛选节点并检查其约束。
 
 >[!NOTE]
 >

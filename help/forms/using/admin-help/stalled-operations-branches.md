@@ -1,5 +1,5 @@
 ---
-title: 处理停止的操作和分支
+title: 处理停滞的操作和分支
 description: “停止的操作”页面和“停止的分支”页面显示已停止的进程。
 contentOwner: admin
 content-type: reference
@@ -12,11 +12,11 @@ role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '719'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
-# 处理停止的操作和分支 {#working-with-stalled-operations-and-branches}
+# 处理停滞的操作和分支 {#working-with-stalled-operations-and-branches}
 
 >[!NOTE]
 > 
@@ -78,7 +78,7 @@ ht-degree: 0%
 
 ## 当提升用户不存在时，进程不会停止 {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-当AEM Forms User服务中的“分配任务”操作配置为在特定时间段后将该任务提升给另一个用户，并且在执行“分配任务”操作后但在提升发生之前删除提升用户时，会发生错误。
+当AEM Forms User服务中的“分配任务”操作配置为在特定时间段后将该任务提升给另一个用户，并且提升用户在“分配任务”操作执行之后但在提升发生之前被删除时，会发生错误。
 
 出现这种情况时，进程和任务的状态在配置的升级时间不会更改，升级不会发生，但进程不会停止。 服务器日志中显示以下消息：
 
