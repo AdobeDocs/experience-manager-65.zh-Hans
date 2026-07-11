@@ -61,7 +61,7 @@ AEM现在提供了两种用于创建页面的基本模板类型：
 
 >[!NOTE]
 >
->请参阅[使用可编辑的页面模板开发Experience Manager站点](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html)。
+>请参阅[使用可编辑的页面模板开发Experience Manager站点](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=zh-Hans)。
 
 ### 静态模板 {#static-templates}
 
