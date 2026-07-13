@@ -42,7 +42,7 @@ ht-degree: 1%
 
 除了可以选择升级代码库和自定义以与新的AEM版本配合使用外，6.5还可以通过[AEM 6.5](/help/sites-deploying/backward-compatibility.md)中的向后兼容性中所述的向后兼容性功能，帮助更有效地管理您的自定义项。
 
-如上所述和下图所示，在第一步运行[模式检测器](/help/sites-deploying/pattern-detector.md)可以帮助您评估升级的整体复杂性。 它还有助于您决定是要以兼容模式运行，还是更新自定义项以使用所有新的AEM 6.5功能。 有关更多详细信息，请参阅AEM 6.5](/help/sites-deploying/backward-compatibility.md)中的[向后兼容性。[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+如上所述和下图所示，在第一步运行[模式检测器](/help/sites-deploying/pattern-detector.md)可以帮助您评估升级的整体复杂性。 它还有助于您决定是要以兼容模式运行，还是更新自定义项以使用所有新的AEM 6.5功能。 有关更多详细信息，请参阅AEM 6.5[&#128279;](/help/sites-deploying/backward-compatibility.md)中的向后兼容性。[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## 升级代码库 {#upgrade-code-base}
 
