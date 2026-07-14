@@ -1,6 +1,6 @@
 ---
-title: 使用SAPCommerce Cloud进行开发
-description: SAPCommerce Cloud集成框架包括一个带有API的集成层。
+title: 使用 SAP Commerce Cloud 进行开发
+description: SAP Commerce Cloud集成框架包含一个带有API的集成层。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,12 +11,12 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '2303'
-ht-degree: 0%
+source-wordcount: '2335'
+ht-degree: 1%
 
 ---
 
-# 使用SAPCommerce Cloud进行开发 {#developing-with-sap-commerce-cloud}
+# 使用 SAP Commerce Cloud 进行开发 {#developing-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 ## 电子商务引擎选择 {#ecommerce-engine-selection}
 
-电子商务框架可与任何电子商务解决方案一起使用，使用的引擎必须由AEM识别：
+电子商务框架可与任何电子商务解决方案一起使用，使用的引擎必须可由AEM识别：
 
 * 电子商务引擎是支持`CommerceService`接口的OSGi服务
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->通过使用CRXDE Lite，您可以看到在hybris实施的产品组件中如何处理这种情况：
+>使用CRXDE Lite，您可以看到在hybris实施的产品组件中如何处理这种情况：
 >
 >`/apps/geometrixx-outdoors/components/hybris/product/product.jsp`
 
@@ -157,21 +157,21 @@ hybris使用用户会话来存储信息，如客户的购物车。 会话ID从`J
 在Hybris中维护的产品数据必须在AEM中可用。 已实施以下机制：
 
 * ID的初始加载由hybris作为馈送提供。 此信息源可能有更新。
-* hybris通过信息源(AEM轮询)提供更新信息。
+* hybris通过信息源（即AEM轮询的信息源）提供更新信息。
 * 当AEM使用产品数据时，它会向hybris发送有关当前数据的请求（使用上次修改日期的条件get请求）。
 * 在Hybris上，可以声明方式指定馈送内容。
-* 将馈送结构映射到AEM内容模型会在AEM端的馈送适配器中进行。
+* 将信息源结构映射到AEM内容模型会在AEM端的信息源适配器中进行。
 
 ![chlimage_1-12](/help/sites-developing/assets/chlimage_1-12a.png)
 
-* 导入器(b)用于初始设置AEM中的目录页面树结构。
+* 导入器(b)用于在AEM中为目录初始设置页面树结构。
 * hybris中的目录更改通过信息源指示给AEM，然后传播到AEM (b)
 
    * 添加/删除/更改了有关目录版本的产品。
 
    * 产品已批准。
 
-* hybris扩展提供了一个轮询导入程序（“hybris”方案），可以将其配置为按指定的时间间隔(例如，每24小时将更改导入AEM，其中时间间隔以秒为单位)：
+* hybris扩展提供了一个轮询导入程序（“hybris”方案），该方案可以配置为按指定的时间间隔（例如，每24小时将更改导入AEM，而此时间间隔以秒为单位）：
 
   ```JavaScript
       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
@@ -186,7 +186,7 @@ hybris使用用户会话来存储信息，如客户的购物车。 会话ID从`J
 
 * AEM中的目录配置可识别&#x200B;**暂存**&#x200B;和&#x200B;**联机**&#x200B;目录版本。
 
-* 在目录版本之间同步产品需要激活或停用相应的AEM页面(a、c)
+* 在目录版本之间同步产品时，需要激活或停用相应的AEM页面(a、c)
 
    * 将产品添加到&#x200B;**Online**&#x200B;目录版本需要激活产品页面。
 
@@ -200,17 +200,17 @@ hybris使用用户会话来存储信息，如客户的购物车。 会话ID从`J
 
 * 激活的产品页面必须访问产品数据的&#x200B;**联机**&#x200B;版本(d)。
 
-* AEM Publish实例需要访问hybris以检索产品和个性化数据(d)。
+* AEM发布实例需要访问hybris，以检索产品和个性化数据(d)。
 
 ### 架构 {#architecture}
 
 #### 产品和变体的架构 {#architecture-of-product-and-variants}
 
-单个产品可以有多个变体；例如，它可能因颜色和/或大小而异。 产品必须定义哪些属性驱动变体；Adobe词这些&#x200B;*变体轴*。
+单个产品可以有多个变体；例如，它可能因颜色和/或大小而异。 产品必须定义哪些属性驱动变体；Adobe将这&#x200B;*个变体轴*&#x200B;称为。
 
 但是，并非所有属性都是变量轴。 变体也可能会影响其他属性；例如，价格可能取决于大小。 购物者无法选择这些属性，因此不被视为变量轴。
 
-每个产品和/或变体由一个资源表示，因此将1:1映射到存储库节点。 由此推断，特定产品和/或变体可通过其路径唯一标识。
+每个产品和/或变体都由一个资源表示，因此将1:1映射到存储库节点。 由此推断，特定产品和/或变体可通过其路径唯一标识。
 
 产品/变型资源并不总是包含实际产品数据。 它可能是其他系统（如hybris）上保留的数据的表示形式。 例如，产品描述和定价不会存储在AEM中，而是从电子商务引擎中实时检索。
 
@@ -227,13 +227,13 @@ hybris使用用户会话来存储信息，如客户的购物车。 会话ID从`J
 >
 >1. 再加一个
 >
->通过产品引用的`variationAxis`属性选择此附加变体(通常Geometrixx Outdoors为`color`)。
+>通过产品引用的`variationAxis`属性选择此附加变体（通常为Geometrixx Outdoors的`color`）。
 
 #### 产品引用和产品数据 {#product-references-and-product-data}
 
 通常，产品数据位于`/etc`下，产品引用位于`/content`下。
 
-产品变体和产品数据节点之间必须是1:1映射。
+产品变体和产品数据节点之间必须存在1:1映射。
 
 产品引用还必须具有呈现每个变体的节点 — 但不要求呈现所有变体。 例如，如果产品具有S、M、L变体，则产品数据可能为：
 
@@ -409,7 +409,7 @@ public class AxisFilter implements VariantFilter {
 * 购物车属于`CommerceSession:`
 
    * `CommerceSession`执行添加或删除等操作。
-   * `CommerceSession`还在购物车上执行各种计算。&quot;
+   * `CommerceSession`还在购物车上执行各种计算。 &quot;
 
 * 虽然不直接与购物车相关，但`CommerceSession`还必须提供目录定价信息（因为它拥有定价）
 
@@ -429,16 +429,16 @@ public class AxisFilter implements VariantFilter {
 * 存储
 
    * 在hybris示例中，hybris服务器拥有购物车。
-   * 在AEM一般情况下，购物车存储在[ClientContext](/help/sites-administering/client-context.md)中。
+   * 在AEM的通用用例中，购物车存储在[ClientContext](/help/sites-administering/client-context.md)中。
 
 **个性化**
 
 * 始终通过[ClientContext](/help/sites-administering/client-context.md)推动个性化。
-* 在所有情况下都将创建购物车的ClientContext`/version/`：
+* 在以下所有情况下都将创建购物车的ClientContext `/version/`：
 
    * 应使用`CommerceSession.addCartEntry()`方法添加产品。
 
-* 下面说明了ClientContext车中的购物车信息示例：
+* 下面显示了ClientContext购物车中的购物车信息示例：
 
 ![chlimage_1-13](/help/sites-developing/assets/chlimage_1-13a.png)
 
@@ -498,7 +498,7 @@ public class AxisFilter implements VariantFilter {
 >
 >您可以实施送货选择器；例如：
 >
->`yourProject/commerce/components/shippingpicker`：
+>`yourProject/commerce/components/shippingpicker`:
 >
 >* 这基本上可以是`foundation/components/form/radio`的副本，但是具有对`CommerceSession`的回调：
 >
@@ -535,7 +535,7 @@ public class AxisFilter implements VariantFilter {
 
 这将使用搜索API查询选定的商务引擎（请参阅[电子商务引擎选择](#ecommerce-engine-selection)）：
 
-#### 搜索API {#search-api}
+#### 搜索 API {#search-api}
 
 核心项目提供了几个通用/帮助程序类：
 
@@ -551,7 +551,7 @@ public class AxisFilter implements VariantFilter {
 
 ### 用户集成 {#user-integration}
 
-在AEM和各种电子商务系统之间提供集成。 这就要求有一种策略来同步不同系统之间的购买者，以便特定于AEM的代码只需了解AEM，反之亦然：
+在AEM和各种电子商务系统之间提供集成。 这就要求采用一种在不同系统之间同步购物者的策略，以便特定于AEM的代码只需了解AEM，反之亦然：
 
 * 身份验证
 
@@ -559,13 +559,13 @@ public class AxisFilter implements VariantFilter {
 
 * Hybris中的帐户
 
-  AEM为每个购物者在hybris中创建相应的（下属）帐户。 该帐户的用户名与AEM的用户名相同。 加密随机密码是在AEM中自动生成并存储（加密）的。
+  AEM会为每个购物者在hybris中创建对应的（下属）帐户。 该帐户的用户名与AEM的用户名相同。 自动生成加密随机密码并将其存储在AEM中（加密）。
 
 #### 预先存在的用户 {#pre-existing-users}
 
-AEM前端可以位于现有hybris实施的前面。 此外，还可以在现有AEM安装中添加一个hybris引擎。 要实现此目的，系统必须能够正常处理任一系统中的现有用户：
+AEM前端可以位于现有Hybris实施的前面。 此外，还可以在现有AEM安装中添加一个hybris引擎。 要实现此目的，系统必须能够正常处理任一系统中的现有用户：
 
-* AEM >hybris
+* AEM >海布里斯
 
    * 登录到hybris时，如果AEM用户不存在：
 
@@ -576,10 +576,10 @@ AEM前端可以位于现有hybris实施的前面。 此外，还可以在现有A
 
 * hybris > AEM
 
-   * 在登录到AEM时，如果系统可以识别用户：
+   * 在登录到AEM时，如果系统识别了用户，则：
 
       * 尝试使用提供的用户名/密码登录hybris
-      * 如果成功，请在AEM中创建具有相同密码的用户(AEM特定的salt将导致AEM特定的哈希)
+      * 如果成功，请在AEM中创建使用相同密码的用户（特定于AEM的salt将生成特定于AEM的哈希）
 
    * 上述算法在Sling `AuthenticationInfoPostProcessor`中实现
 
