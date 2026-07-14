@@ -1,5 +1,5 @@
 ---
-title: 对配置属性的加密支持
+title: 配置属性的加密支持
 description: 了解AEM中提供的对配置属性的加密支持。
 contentOwner: User
 content-type: reference
@@ -11,12 +11,12 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 0%
+source-wordcount: '280'
+ht-degree: 4%
 
 ---
 
-# 对配置属性的加密支持{#encryption-support-for-configuration-properties}
+# 配置属性的加密支持{#encryption-support-for-configuration-properties}
 
 ## 概述 {#overview}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 这些步骤显示如何加密Mail服务的SMTP密码。 您可以为要加密的OSGI属性完成这些步骤。
 
-1. 转到位于&#x200B;*https://&lt;serveraddress>：&lt;serverport>/system/console/configMgr*&#x200B;的AEM Web控制台
+1. 转到&#x200B;*https://&lt;serveraddress>：&lt;serverport>/system/console/configMgr*&#x200B;处的AEM Web控制台
 1. 在左上角，转到&#x200B;**Main - Crypto Support**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
@@ -42,7 +42,7 @@ ht-degree: 0%
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
 1. 在&#x200B;**纯文本**&#x200B;字段中，输入要保护的敏感数据的文本。
-1. 选择&#x200B;**Protect**。 受保护文本显示为加密文本。
+1. 选择&#x200B;**保护**。 受保护文本显示为加密文本。
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 

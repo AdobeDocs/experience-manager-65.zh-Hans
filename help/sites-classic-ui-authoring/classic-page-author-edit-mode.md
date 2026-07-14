@@ -1,5 +1,5 @@
 ---
-title: 用于页面创作的组件
+title: 页面创作组件
 description: 在从Sidekick的“组件”选项卡和插入新组件选择器（在双击将组件或资产拖动到此处区域）编辑页面时，组件可用。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '5991'
+source-wordcount: '6064'
 ht-degree: 3%
 
 ---
 
-# 用于页面创作的组件{#components-for-page-authoring}
+# 页面创作组件{#components-for-page-authoring}
 
 以下组件可在为标准网页创作内容时使用。 这些组件构成了可用于AEM标准安装的现成组件子集。
 
@@ -71,13 +71,13 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->AEM不支持用于自适应呈现的&#42;&#42;动画.gif文件。
+>&#42;&#42;动画.gif文件在AEM中不受支持以进行自适应呈现版本。
 
 #### 图像大小和质量 {#images-sizes-and-quality}
 
 下表列出了为给定视区宽度生成的图像宽度。 计算所生成图像的高度以保持不变的长宽比，并且图像边缘内不会出现空格。 可使用裁剪来避免留空格。
 
-当图像是JPEG图像时，视区大小也会影响JPEG质量。 可以使用以下JPEG特性：
+如果图像是JPEG图像，则视区大小也会影响JPEG质量。 可以使用以下JPEG特性：
 
 * 低(0.42)
 * Medium (0.82)
@@ -128,7 +128,7 @@ ht-degree: 3%
 
 有关自定义自适应图像组件的信息，请参阅[了解自适应图像组件](/help/sites-developing/responsive.md#using-adaptive-images)。
 
-### 轮盘 {#carousel}
+### 轮播 {#carousel}
 
 利用轮盘组件，可显示与各个页面关联的图像：
 
@@ -156,10 +156,8 @@ ht-degree: 3%
 * **列表**
 在此，您可以指定在轮播中包含页面的方式：
 
-   * **生成列表使用**
-可通过多种方法来构建页面列表 — 子页面、固定列表、搜索或高级搜索（均如下所述）。
-无论您选择哪种方法，您包含在列表中的页面都应当已经有一个与页面关联的图像。 轮播中显示的就是此图像。 如果页面的页面属性下没有页面的图像，则应在开始之前将图像与页面关联。 否则，轮盘将显示一个空白页。 请参阅[编辑页面属性](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)。
-根据您选择的项目，将显示一个新面板：
+   * **生成列表，使用**
+可通过多种方法来构建页面列表 — 子页面、固定列表、搜索或高级搜索（均如下所述）。无论您选择哪种方法，您包含在列表中的页面都应当已经有一个与页面关联的图像。 轮播中显示的就是此图像。 如果页面的页面属性下没有页面的图像，则应在开始之前将图像与页面关联。 否则，轮盘将显示一个空白页。 请参阅[编辑页面属性](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)。根据您选择的项目，将显示一个新面板：
 
       * 子页面的&#x200B;**选项**
 
@@ -173,7 +171,7 @@ ht-degree: 3%
 
       * **搜索选项**
 
-         * **开始于**
+         * **开始位置**
 手动或使用选择器输入起始路径。
 
          * **搜索查询**
@@ -182,8 +180,7 @@ ht-degree: 3%
       * 高级搜索的&#x200B;**选项**
 
          * **Querybuilder谓词表示法**
-您可以使用Querybuilder谓词表示法输入搜索查询。 例如，您可以输入“fulltext=Marketing”，以使其内容中包含“Marketing”的所有页面都显示在轮播中。
-有关查询表达式和更多示例的完整讨论，请参阅[QueryBuilder API](/help/sites-developing/querybuilder-api.md)。
+您可以使用Querybuilder谓词表示法输入搜索查询。 例如，您可以输入“fulltext=Marketing”，以使其内容中包含“Marketing”的所有页面都显示在轮播中。有关查询表达式和更多示例的完整讨论，请参阅[QueryBuilder API](/help/sites-developing/querybuilder-api.md)。
 
    * **排序依据**
 从下拉菜单中选择`jcr:title`、`jcr:created`、`cq:lastModified`或`cq:template`。
@@ -276,7 +273,7 @@ ht-degree: 3%
 
      定义iframe的大小
 
-外部应用程序已集成到AEM页面的段落系统中；例如，在使用`https://en.wikipedia.org/wiki/Main_Page`的Target应用程序时：
+外部应用程序已集成到AEM页面的段落系统中；例如，使用`https://en.wikipedia.org/wiki/Main_Page`的Target应用程序时：
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -286,9 +283,9 @@ ht-degree: 3%
 
 ### 闪光灯 {#flash}
 
-通过Flash组件，可加载Flash影片。 您可以将Flash资源从内容查找器拖到组件上，也可以使用对话框：
+Flash组件允许您加载Flash影片。 您可以将Flash资源从内容查找器拖到组件上，也可以使用对话框：
 
-* **Flash**
+* **闪存**
 
    * **Flash电影**
 
@@ -296,7 +293,7 @@ ht-degree: 3%
 
    * **大小**
 
-     以像素为单位的Dimension，显示区域用于保存影片。
+     存放影片的显示区域的尺寸（以像素为单位）。
 
 * **备用图像**
 
@@ -318,7 +315,7 @@ ht-degree: 3%
 
    * **最低版本**
 
-     运行影片所需的AdobeFlash Player的最低版本。 默认值为9.0.0。
+     运行电影所需的最低版本的Adobe Flash Player。 默认值为9.0.0。
 
    * **属性**
 
@@ -340,7 +337,7 @@ ht-degree: 3%
 >
 >Internet Explorer用户必须上传图像并单击&#x200B;**确定**，然后重新打开图像以在预览中查看上传的文件，并能够执行修改（即裁切）。
 >
->有关AEM使用的HTML5功能的详细信息，请参阅[认证平台](/help/release-notes/release-notes.md#certifiedplatforms)部分。
+>有关AEM使用的HTML5功能的更多信息，请参阅[认证平台](/help/release-notes/release-notes.md#certifiedplatforms)部分。
 
 加载图像时，可以配置以下内容：
 
@@ -519,7 +516,7 @@ ht-degree: 3%
 
 ### 引用 {#reference}
 
-**引用**&#x200B;组件允许您引用AEM网站其他页面（在当前实例中）中的文本。 然后，引用的段落的内容会像在当前页面上一样显示。 当源段落发生更改（可能需要页面刷新）时，内容会更新。
+通过&#x200B;**引用**&#x200B;组件，您可以引用AEM网站其他页面（在当前实例中）的文本。 然后，引用的段落的内容会像在当前页面上一样显示。 当源段落发生更改（可能需要页面刷新）时，内容会更新。
 
 * **段落引用**
 
@@ -577,8 +574,7 @@ ht-degree: 3%
 
    * **拼写检查文本**
 
-     如果某人输入了类似的词语，则此文本会在该词语之前显示。
-例如，如果您键入`Geometrixxe`，则系统显示“您的意思是？ Geometrixx”。
+     如果某人输入了类似的词语，则此文本会在该词语之前显示。例如，如果您键入`Geometrixxe`，则系统显示“您的意思是？ Geometrixx”。
 
    * **类似的页面文本**
 
@@ -658,7 +654,7 @@ ht-degree: 3%
 >
 >**Table**&#x200B;组件基于[富文本编辑器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)，它与&#x200B;**[Text](#text)**&#x200B;组件一样。
 >
->Adobe建议对表使用&#x200B;**Table**&#x200B;组件，尽管也可以使用&#x200B;**Text**&#x200B;组件构造它们。
+>Adobe建议对表使用&#x200B;**Table**&#x200B;组件，尽管也可以使用&#x200B;**Text**&#x200B;组件来构造它们。
 
 **Table**&#x200B;组件已预配置为允许您构建、填充和格式化表。 使用该对话框，您可以配置表格并从头开始创建内容，或者通过从外部编辑器（如Excel、OpenOffice或记事本）复制并粘贴电子表格或表格来创建内容。
 
@@ -676,7 +672,7 @@ ht-degree: 3%
 
 配置标记云组件时，您可以指定：
 
-* **要显示的标记**
+* 要显示的&#x200B;**标记**
 从中收集要显示的标记的位置。 从页面、具有所有子项或所有标记的页面中进行选择。
 
 * **页**
@@ -693,7 +689,7 @@ ht-degree: 3%
 >
 >**Text**&#x200B;组件基于[富文本编辑器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)，它与&#x200B;**[Table](#table)**&#x200B;组件一样。
 >
->Adobe建议对表使用&#x200B;**Table**&#x200B;组件，尽管也可以使用&#x200B;**Text**&#x200B;组件构造它们。
+>Adobe建议对表使用&#x200B;**Table**&#x200B;组件，尽管也可以使用&#x200B;**Text**&#x200B;组件来构造它们。
 
 文本组件允许您使用WYSIWYG编辑器输入文本块，该编辑器具有[富文本编辑器](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md)提供的功能。 通过一系列图标可以设置文本的格式，包括字体特征、对齐方式、链接、列表和缩进。
 
@@ -807,7 +803,7 @@ ht-degree: 3%
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` (Flash视频)
+>* `FLV` （Flash视频）
 >
 
 ## 列 {#columns}
@@ -898,8 +894,7 @@ Forms由几个不同的组件组成：
 
    * **元素名称**
 
-     表单元素的名称。 它指示数据存储到存储库中的什么位置。
-此字段为必填项，应当仅包含以下字符：
+     表单元素的名称。 它指示数据存储到存储库中的什么位置。此字段为必填项，应当仅包含以下字符：
 
       * 字母数字字符
       * `_ . / : -`
@@ -978,7 +973,7 @@ Forms由几个不同的组件组成：
 
    * **操作类型**
 
-     表单需要操作。 操作定义使用用户提交的数据触发执行的操作(与HTML中的action=类似)。 某些客户需要相应的&#x200B;**操作配置**。
+     表单需要操作。 操作定义根据用户提交的数据触发执行的操作（类似于HTML中的action= ）。 某些客户需要相应的&#x200B;**操作配置**。
 
      标准AEM安装中包含一系列操作类型：
 
@@ -1012,9 +1007,7 @@ Forms由几个不同的组件组成：
 
    * **加载路径**
 
-     用于将预定义值加载到表单字段中的节点属性的路径。
-此字段是可选的，用于指定存储库中节点的路径。 当此节点具有匹配字段名称的属性时，表单上的相应字段将预加载这些属性的值。 如果不存在匹配项，则字段包含默认值。
-使用&#x200B;**加载路径**，您可以预加载包含必填字段中的值的表单。 请参阅[预加载表单值](/help/sites-developing/developing-forms.md#preloading-form-values)。
+     用于将预定义值加载到表单字段中的节点属性的路径。此字段是可选的，用于指定存储库中节点的路径。 当此节点具有匹配字段名称的属性时，表单上的相应字段将预加载这些属性的值。 如果不存在匹配项，则字段包含默认值。使用&#x200B;**加载路径**，您可以预加载包含必填字段中的值的表单。 请参阅[预加载表单值](/help/sites-developing/developing-forms.md#preloading-form-values)。
 
    * **客户端验证**
 
@@ -1044,8 +1037,7 @@ Forms由几个不同的组件组成：
       * **创建内容**
 
          * 内容路径
-表单转储的任何内容的内容路径。 输入以斜杠`/`结尾的路径。 斜杠表示对于每个表单端口，将在给定位置创建一个新节点；例如：
-           `/forms/feedback/`
+表单转储的任何内容的内容路径。 输入以斜杠`/`结尾的路径。 斜杠表示对于每个表单端口，将在给定位置创建一个新节点；例如：           `/forms/feedback/`
 
          * **类型**
 
@@ -1120,8 +1112,7 @@ Forms由几个不同的组件组成：
 
          * **内容路径**
 
-           表单转储的任何内容的内容路径。 输入以斜杠`/`结尾的路径。 斜杠表示对于每个表单端口，将在给定位置创建一个新节点；例如：
-           `/forms/feedback/`
+           表单转储的任何内容的内容路径。 输入以斜杠`/`结尾的路径。 斜杠表示对于每个表单端口，将在给定位置创建一个新节点；例如：           `/forms/feedback/`
 
          * **查看数据……**
 
@@ -1294,7 +1285,7 @@ Captcha组件要求用户键入屏幕上显示的字母数字字符串。 字符
 >
 >请参阅[预加载具有多个值的表单字段](/help/sites-developing/developing-forms.md#preloading-form-fields-with-multiple-values)。
 
-### “提交”按钮 {#submit-button}
+### 提交按钮 {#submit-button}
 
 利用此组件，可创建包含默认文本的提交按钮：
 

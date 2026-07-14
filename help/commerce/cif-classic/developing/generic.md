@@ -8,7 +8,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >[API文档](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation)也可用。
 
-集成框架包括带有API的集成层。 这使您能够为电子商务功能构建AEM组件（独立于您的特定电子商务引擎）。 它还允许您使用内部CRX数据库或插入电子商务系统并将产品数据提取到AEM中。
+集成框架包括带有API的集成层。 这使您能够为电子商务功能构建AEM组件（独立于您的特定电子商务引擎）。 它还允许您使用内部CRX数据库或插入电子商务系统，并将产品数据提取到AEM中。
 
 提供了多个现成的AEM组件以使用集成层。 目前，这些方法包括：
 
@@ -51,7 +51,7 @@ ht-degree: 0%
 
 * `cq:commerceProvider`属性还用于引用相应的商务工厂定义。
 
-   * 例如，值为Geometrixx的`cq:commerceProvider`属性与&#x200B;**Day CQ Commerce Factory for Geometrixx-Outdoors** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`)的OSGi配置相关联，其中参数`commerceProvider`也具有值`geometrixx`。
+   * 例如，值为Geometrixx的`cq:commerceProvider`属性与Geometrixx-Outdoors的&#x200B;**Day CQ Commerce Factory** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`)的OSGi配置相关联，其中参数`commerceProvider`还具有值`geometrixx`。
    * 此处可以配置其他属性（在适当且可用时）。
 
 在标准AEM安装中，需要特定实施，例如：
@@ -108,11 +108,11 @@ ht-degree: 0%
 
 #### 产品和变体的架构 {#architecture-of-product-and-variants}
 
-单个产品可以有多个变体；例如，它可能因颜色和/或大小而异。 产品必须定义哪些属性驱动变体；Adobe词这些&#x200B;*变体轴*。
+单个产品可以有多个变体；例如，它可能因颜色和/或大小而异。 产品必须定义哪些属性驱动变体；Adobe将这&#x200B;*个变体轴*&#x200B;称为。
 
 但是，并非所有属性都是变量轴。 变体也可能会影响其他属性；例如，价格可能取决于大小。 购物者无法选择这些属性，因此不被视为变量轴。
 
-每个产品和/或变体由一个资源表示，因此将1:1映射到存储库节点。 由此推断，特定产品和/或变体可通过其路径唯一标识。
+每个产品和/或变体都由一个资源表示，因此将1:1映射到存储库节点。 由此推断，特定产品和/或变体可通过其路径唯一标识。
 
 任何产品资源都可以用`Product API`表示。 产品API中的大多数调用都是特定于变体的（尽管变体可能继承来自祖先的共享值），但也有列出变体集（`getVariantAxes()`、`getVariants()`等）的调用。
 
@@ -120,14 +120,14 @@ ht-degree: 0%
 >
 >实际上，变量轴由`Product.getVariantAxes()`返回的任何值确定：
 >
->* 对于通用实现，AEM会从产品数据( `cq:productVariantAxes`)中的属性读取它
+>* 对于通用实施，AEM会从产品数据( `cq:productVariantAxes`)中的属性读取它
 >
 >虽然产品（通常）可以具有多个变体轴，但现成的产品组件仅处理两个变体轴：
 >
 >1. `size`
 >1. 再加一个
 >
->   通过产品引用的`variationAxis`属性选择此附加变体(通常Geometrixx Outdoors为`color`)。
+>   通过产品引用的`variationAxis`属性选择此附加变体（通常为Geometrixx Outdoors的`color`）。
 
 #### 产品引用和PIM数据 {#product-references-and-pim-data}
 
@@ -137,7 +137,7 @@ ht-degree: 0%
 
 * `/content`下的产品引用。
 
-产品变体和产品数据节点之间必须是1:1映射。
+产品变体和产品数据节点之间必须存在1:1映射。
 
 产品引用还必须具有呈现每个变体的节点 — 但不要求呈现所有变体。 例如，如果产品具有S、M、L变体，则产品数据可能为：
 
@@ -237,7 +237,7 @@ public class AxisFilter implements VariantFilter {
 
 * **常规存储机制**
 
-   * 产品节点nt：unstructured。
+   * 产品节点不是:unstructured。
    * 产品节点可以是：
 
       * 引用，将产品数据存储在其他位置：
@@ -332,11 +332,11 @@ public class AxisFilter implements VariantFilter {
 **个性化**
 
 * 始终通过[ClientContext](/help/sites-administering/client-context.md)推动个性化。
-* 在所有情况下都将创建购物车的ClientContext`/version/`：
+* 在以下所有情况下都将创建购物车的ClientContext `/version/`：
 
    * 应使用`CommerceSession.addCartEntry()`方法添加产品。
 
-* 下面说明了ClientContext车中的购物车信息示例：
+* 下面显示了ClientContext购物车中的购物车信息示例：
 
 ![chlimage_1-33](/help/sites-developing/assets/chlimage_1-33a.png)
 
@@ -408,7 +408,7 @@ public class AxisFilter implements VariantFilter {
 
 这将使用搜索API查询选定的商务引擎（请参阅[电子商务引擎选择](#ecommerce-engine-selection)）：
 
-#### 搜索API {#search-api}
+#### 搜索 API {#search-api}
 
 核心项目提供了几个通用/帮助程序类：
 
@@ -472,7 +472,7 @@ public class AxisFilter implements VariantFilter {
       * `DiscountPromotionHandler`，应用购物车范围的绝对折扣或百分比折扣
       * `PerfectPartnerPromotionHandler`，如果合作伙伴产品也在购物车中，则应用产品绝对折扣或百分比折扣
 
-   * ClientContext`SegmentMgr`解析区段，ClientContext`CartMgr`解析促销活动。 至少具有一个已解析区段的每个促销活动都会触发。
+   * ClientContext `SegmentMgr`解析区段，而ClientContext `CartMgr`解析促销活动。 至少具有一个已解析区段的每个促销活动都会触发。
 
       * 已触发的促销活动会通过AJAX调用发送回服务器以重新计算购物车。
       * ClientContext面板中还会显示触发的促销活动（和添加的优惠券）。
@@ -512,7 +512,7 @@ public List<Voucher> getVouchers() throws CommerceException;
 * 简短描述
 * 引用指示折扣类型和值的相关促销
 
-提供的`AbstractJcrCommerceSession`可以应用优惠券。 类`getVouchers()`返回的凭单是`cq:Page`的实例，该实例包含具有以下属性的jcr：content节点（等等）：
+提供的`AbstractJcrCommerceSession`可以应用优惠券。 类`getVouchers()`返回的凭证是`cq:Page`的实例，该实例包含具有以下属性的jcr:content节点（等等）：
 
 * `sling:resourceType` （字符串） — 这需要`commerce/components/voucher`
 
