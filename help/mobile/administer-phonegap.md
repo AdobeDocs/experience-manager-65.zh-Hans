@@ -1,6 +1,6 @@
 ---
 title: 使用AEM管理Adobe PhoneGap Enterprise的内容
-description: 此页用作管理Adobe PhoneGap Enterprise的登录页。
+description: 此页用作管理Adobe PhoneGap Enterprise的登陆页。
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -11,7 +11,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 {{ue-over-mobile}}
 
-***AEM管理员***&#x200B;负责通过使用创建向导创建应用程序或导入现有应用程序向AEM Mobile目录添加新应用程序。 使用AEM Mobile的&#x200B;*创建向导*&#x200B;创建应用程序的AEM管理员，通常会从Adobe的现成引用示例或（通常）由&#x200B;*AEM开发人员创建的自定义应用程序模板中选择所需的应用程序模板之一。*
+***AEM管理员***&#x200B;负责通过使用创建向导创建应用程序或导入现有应用程序向AEM Mobile目录添加新应用程序。 使用AEM的&#x200B;*创建向导*&#x200B;创建应用程序的AEM Mobile管理员，通常会从Adobe的开箱即用参考示例或（通常）由&#x200B;*AEM开发人员创建的自定义应用程序模板中选择所需的应用程序模板之一。*
 
 使用HTML5和PhoneGap构建移动应用程序后，您可以在命令中心管理该应用程序。 您还可以使用Cordova网页视图在命令中心管理本机应用程序的HTML5内容（以允许PhoneGap插件访问本机功能）。
 
@@ -32,14 +32,14 @@ AEM Apps Control Center允许您构建和部署移动应用程序，在发布移
 
 1. [配置用户和组](/help/mobile/configure-users-groups.md)
 1. [将反向链接筛选条件设置为允许为空](/help/mobile/setting-referrer-filter-empty.md)
-1. [配置Adobe PhoneGap BuildCloud Service](/help/mobile/configure-phonegap-build-cloud.md)
+1. [配置Adobe PhoneGap Build Cloud Service](/help/mobile/configure-phonegap-build-cloud.md)
 1. [配置Adobe Analytics Cloud服务](/help/mobile/configure-adobe-mobile-cloud-service.md)
 
 有关内容服务Content Services的信息，请参阅[管理Content Services](/help/mobile/developing-content-services.md)。
 
 >[!NOTE]
 >
->*AEM Verify*&#x200B;是一种在任何iOS或Android™移动设备上运行AEM移动应用程序的快速而简单的方法。 *AEM Verify*&#x200B;是你的设备上的移动应用，你将其连接到运行快速入门以获取要查看的应用列表的服务器。 单击[此处](/help/mobile/phonegap-mobile-quickstart.md)查看详细信息。
+>*AEM Verify*&#x200B;是一种在任何iOS或Android™移动设备上运行AEM移动应用程序的快速轻松的方法。 *AEM验证*&#x200B;是你的设备上的移动应用，你将其连接到运行快速入门以获取要查看的应用列表的服务器。 单击[此处](/help/mobile/phonegap-mobile-quickstart.md)查看详细信息。
 
 ## 其他资源 {#additional-resources}
 
