@@ -30,7 +30,7 @@ AEM Forms 6.5支持以下CAPTCHA解决方案：
 
 Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站点免受自动机器人、恶意攻击、垃圾邮件和不需要的自动流量的侵害。 在提交表单之前，它会呈现一个复选框以验证用户身份，确认其为真人后才允许提交表单。
 
->[!VIDEO](https://video.tv.adobe.com/v/3440940/)
+>[!VIDEO](https://video.tv.adobe.com/v/3440950?captions=chi_hans)
 
 ### 将AEM Forms环境与Turnstile验证码集成的先决条件 {#prerequisite}
 
