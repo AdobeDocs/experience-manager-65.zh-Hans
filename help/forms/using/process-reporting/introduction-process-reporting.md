@@ -1,5 +1,5 @@
 ---
-title: 进程报告简介
+title: 流程报告简介
 description: AEM Forms on JEE Process Reporting的简介和主要功能
 content-type: reference
 topic-tags: process-reporting
@@ -9,14 +9,14 @@ exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: c29c24f3e8b05d12689536376ce1a07798f784e6
 workflow-type: tm+mt
-source-wordcount: '294'
-ht-degree: 0%
+source-wordcount: '305'
+ht-degree: 3%
 
 ---
 
-# 进程报告简介{#introduction-to-process-reporting}
+# 流程报告简介{#introduction-to-process-reporting}
 
 ![进程报告](assets/process-reporting.png)
 
@@ -31,7 +31,7 @@ Process Reporting提供了一组现成的报告，可让您筛选、查看有关
 进程报告基于以下模块构建：
 
 * 从AEM Forms数据库读取流程数据
-* Publish流程数据到嵌入式流程报表存储库
+* 将流程数据发布到嵌入式流程报表存储库
 * 提供用于查看报告的基于浏览器的用户界面
 
 ## 主要功能 {#key-capabilities}
@@ -46,7 +46,7 @@ Process Reporting提供了一组现成的报告，可让您筛选、查看有关
 
 ### 临时报表 {#adhoc-reports}
 
-![打印&amp; — 颜色](assets/print-&-colour.png)
+![打印&amp; — 颜色](assets/print-and-colour.png)
 
 使用筛选器获取数据的特定视图。
 
