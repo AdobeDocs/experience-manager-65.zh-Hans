@@ -10,7 +10,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '788'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 * [概念](/help/commerce/cif-classic/administering/concepts.md)
 * [管理（通用）](/help/commerce/cif-classic/administering/generic.md)
 
-Adobe提供以下两个版本的Commerce integration framework：
+Adobe提供两个版本的Commerce integration framework：
 
 <table>
  <tbody>
@@ -31,7 +31,7 @@ Adobe提供以下两个版本的Commerce integration framework：
   </tr>
   <tr>
    <td><p>支持的 AEM 版本</p> </td>
-   <td><p>内部部署AEM或AMS 6.x</p> </td>
+   <td><p>AEM内部部署或AMS 6.x</p> </td>
    <td>AEM AMS 6.4和6.5</td>
   </tr>
   <tr>
@@ -58,8 +58,8 @@ Adobe提供以下两个版本的Commerce integration framework：
    <td><p>产品目录</p> </td>
    <td>
     <ul>
-     <li>产品导入器、编辑器、AEM中的缓存</li>
-     <li>带有AEM或代理页面的常规目录</li>
+     <li>AEM中的产品导入器、编辑器和缓存</li>
+     <li>包含AEM或代理页面的常规目录</li>
     </ul> </td>
    <td>
     <ul>
@@ -88,7 +88,7 @@ Adobe提供以下两个版本的Commerce integration framework：
   </tr>
   <tr>
    <td>可用性</td>
-   <td><p>是。SAPCommerce Cloud(扩展已更新，以支持AEM 6.4和Hybris 5 （默认），并保持与Hybris 4的兼容性</p> <p>SalesforceCommerce Cloud(支持AEM 6.4的开放源连接器)</p> </td>
+   <td><p>是。 SAP Commerce Cloud(扩展已更新，以支持AEM 6.4和Hybris 5（默认），并保持与Hybris 4的兼容性</p> <p>Salesforce Commerce Cloud（开源的连接器，用于支持AEM 6.4）</p> </td>
    <td>通过GitHub的开源提供。 Adobe Commerce (支持2.3.2（默认）并与2.3.1兼容)。</td>
   </tr>
   <tr>
@@ -133,12 +133,12 @@ AEM eCommerce提供：
 
 * 许多&#x200B;**现成的AEM组件**，用于说明可为您的项目实现什么：
 
-   * 产品显示
-   * 购物车
-   * 结帐
-   * 最近查看的产品
-   * 优惠券
-   * 和其他
+  * 产品显示
+  * 购物车
+  * 结帐
+  * 最近查看的产品
+  * 优惠券
+  * 和其他
 
   ![geometrixx组件示例](/help/sites-administering/assets/chlimage_1-130.png)
 
@@ -148,25 +148,25 @@ AEM eCommerce提供：
 
 * **搜索** — 使用：
 
-   * AEM搜索
-   * 电子商务系统的搜寻
-   * 第三方搜索
-   * 或两者的组合。
+  * AEM搜索
+  * 电子商务系统的搜寻
+  * 第三方搜索
+  * 或两者的组合。
 
   ![搜索示例](/help/sites-administering/assets/chlimage_1-131.png)
 
-* 使用AEM功能&#x200B;**在多个渠道**&#x200B;上展示您的内容，无论该渠道是完整的浏览器窗口还是移动设备。 这将以访客所需的格式提供您的内容。
+* 使用AEM功能&#x200B;**在多个渠道**（整个浏览器窗口或移动设备）上展示您的内容。 这将以访客所需的格式提供您的内容。
 
   ![移动视图示例](/help/sites-administering/assets/chlimage_1-132.png)
 
-* 能够基于[AEM电子商务框架&#x200B;](#the-framework)**来**&#x200B;开发您自己的集成实现。
+* 能够基于[AEM电子商务框架&#x200B;](#the-framework)**来**&#x200B;开发您自己的集成实施。
 
   当前可用的两个实施均基于相同的基础构建 — 基于常规API（框架）。 实施新集成仅涉及实施您的集成所需的功能。 任何新实施均可使用前端组件，因为它们使用接口（因此独立于实施）。
 
 * 基于购物者数据和活动&#x200B;**开发**&#x200B;体验驱动型商务的可能性。 这让您可以了解许多场景：
 
-   * 例如，当订单总额超过特定数量时，可以降低运费。
-   * 另一种方法可能会让您提供使用用户档案数据的季节性选件（例如，位置）。 之后，可以高亮显示这些内容，在必要时同样取决于其他因素。
+  * 例如，当订单总额超过特定数量时，可以降低运费。
+  * 另一种方法可能会让您提供使用用户档案数据的季节性选件（例如，位置）。 之后，可以高亮显示这些内容，在必要时同样取决于其他因素。
 
   在下面的示例中，显示了一个Teaser，因为购物车的内容不到$75：
 
@@ -178,9 +178,9 @@ AEM eCommerce提供：
 
 * 以及其他功能，包括：
 
-   * 跨会话保留的购物车内容
-   * 完整订单历史记录
-   * 快速目录更新
+  * 跨会话保留的购物车内容
+  * 完整订单历史记录
+  * 快速目录更新
 
 ## 框架 {#the-framework}
 

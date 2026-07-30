@@ -1,6 +1,6 @@
 ---
-title: 将AEM与SAPCommerce Cloud结合使用
-description: 了解如何将Adobe Experience Manager与SAPCommerce Cloud结合使用。
+title: 将AEM与SAP Commerce Cloud结合使用
+description: 了解如何将Adobe Experience Manager与SAP Commerce Cloud结合使用。
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
@@ -10,12 +10,12 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '1574'
+source-wordcount: '1769'
 ht-degree: 1%
 
 ---
 
-# SAPCOMMERCE CLOUD{#sap-commerce-cloud}
+# SAP Commerce Cloud{#sap-commerce-cloud}
 
 安装后，您可以配置实例：
 
@@ -31,7 +31,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->hybris 5.3.0.1及更高版本不需要此参数。
+>hybris 5.3.0.1和更高版本不需要此项。
 
 1. 在浏览器中，导航到&#x200B;**hybris管理控制台**，网址为：
 
@@ -106,7 +106,7 @@ ht-degree: 1%
 可以为OSGi服务配置导入的&#x200B;**目录版本** (`hybris.catalog.version`)：
 
 **Day CQ Commerce Hybris配置**
-(`com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
+( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
 **目录版本**&#x200B;设置为`Online`或`Staged`（默认值）。
 
@@ -161,7 +161,7 @@ ht-degree: 1%
 
 可以为以下配置导入时要生成的结构：
 
-**Day CQ Commerce Hybris默认导入处理程序**
+&quot;**Day CQ Commerce Hybris默认导入处理程序**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
 使用AEM时，可通过多种方法管理此类服务的配置设置；有关完整的详细信息，请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md)。 有关可配置参数及其缺省值的完整列表，另请参阅控制台。
@@ -173,7 +173,7 @@ ht-degree: 1%
 1. 配置OSGi捆绑包：
 
    **Day CQ Commerce Hybris默认响应分析器**
-(`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
+   (`com.adobe.cq.commerce.hybris.impl.importer.DefaultResponseParser`)
 
    您可以在此定义加载和映射所需的各种选项和属性。
 
@@ -240,17 +240,17 @@ ht-degree: 1%
        /etc/commerce/products/outdoors
    ```
 
-   您可以在CRXDE Lite中打开此项；例如：
+   例如，您可以在CRXDE Lite中打开此设置：
 
    `[http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
 
 ### 增量导入 {#incremental-import}
 
-1. 检查AEM中相关产品的信息，位于以下相应子树中：
+1. 在AEM中位于以下相应子树状结构的相应产品中检查所保存的信息：
 
    `/etc/commerce/products`
 
-   您可以在CRXDE Lite中打开此项；例如：
+   例如，您可以在CRXDE Lite中打开此设置：
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -278,11 +278,11 @@ ht-degree: 1%
 
 导入过程可能需要较长时间，因此，作为产品同步的扩展，您可以选择目录的特定区域以进行手动触发的快速更新。 这会使用导出信息源以及标准属性配置。
 
-1. 检查AEM中相关产品的信息，位于以下相应子树中：
+1. 在AEM中位于以下相应子树状结构的相应产品中检查所保存的信息：
 
    `/etc/commerce/products`
 
-   您可以在CRXDE Lite中打开此项；例如：
+   例如，您可以在CRXDE Lite中打开此设置：
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -316,7 +316,7 @@ ht-degree: 1%
 导入器使用的参数可以配置用于：
 
 **Day CQ Commerce Hybris目录导入程序**
-(`com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
+( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
 使用AEM时，可通过多种方法管理此类服务的配置设置；有关完整的详细信息，请参阅[配置OSGi](/help/sites-deploying/configuring-osgi.md)。 有关可配置参数及其缺省值的完整列表，另请参阅控制台。
 
@@ -411,7 +411,7 @@ hybris包附带一个目录导入程序，用于设置初始页面结构。
 
 1. 通过以下任一方式打开[客户端上下文设计页面](/help/sites-administering/client-context.md)：
 
-   * 打开页面进行编辑，然后使用&#x200B;**Ctrl-Alt-c** (windows)或&#x200B;**control-option-c** (Mac)打开客户端上下文。 使用客户端上下文左上角的铅笔图标来&#x200B;**打开ClientContext设计页**。
+   * 打开页面进行编辑，然后使用&#x200B;**Ctrl-Alt-c** (windows)或&#x200B;**control-option-c** (Mac)打开客户端上下文。 使用客户端上下文左上角的铅笔图标来&#x200B;**打开ClientContext设计页面**。
    * 直接导航到[http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)
 
 1. [将&#x200B;**订单历史记录**&#x200B;组件](/help/sites-administering/client-context.md#adding-a-property-component)添加到客户端上下文的&#x200B;**购物车** t组件中。

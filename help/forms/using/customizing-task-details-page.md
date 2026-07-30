@@ -1,5 +1,5 @@
 ---
-title: 自定义任务详细信息页面
+title: 自定义任务详情页面
 description: 如何在AEM Forms工作区中自定义“任务详细信息”页面，以修改显示的关于任务的默认信息。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,19 +10,19 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 0%
+source-wordcount: '267'
+ht-degree: 4%
 
 ---
 
-# 自定义任务详细信息页面 {#customizing-the-task-details-page}
+# 自定义任务详情页面 {#customizing-the-task-details-page}
 
 任务详细信息页面包含有关任务及其流程的信息。 但是，您可以自定义“任务详细信息”页面来添加或删除信息。
 
 可以将以下信息添加到任务详细信息页面：
 
-* 任务的JSON对象中的可用信息([AEM Forms工作区JSON对象描述](/help/forms/using/html-workspace-json-object-description.md)中的任务部分)
-* 进程实例的JSON对象中的可用信息([AEM Forms工作区JSON对象说明](/help/forms/using/html-workspace-json-object-description.md)中的进程实例部分)
+* 任务的JSON对象中的可用信息（[AEM Forms工作区JSON对象描述](/help/forms/using/html-workspace-json-object-description.md)中的任务部分）
+* 进程实例的JSON对象中的可用信息（[AEM Forms工作区JSON对象说明](/help/forms/using/html-workspace-json-object-description.md)中的进程实例部分）
 
 要自定义任务详细信息页面，请执行以下操作：
 
