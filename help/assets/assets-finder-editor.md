@@ -393,7 +393,7 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 
 要使用“资产编辑器”页面多重编辑资产，请执行以下操作：
 
-1. 打开Geometrixx **新闻中心**页面：
+1. 打开Geometrixx **新闻中心**&#x200B;页面：
    `https://localhost:4502/content/geometrixx/en/company/press.html`
 
 1. 选择资源：
