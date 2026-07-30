@@ -7,19 +7,19 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '946'
-ht-degree: 6%
+source-wordcount: '1070'
+ht-degree: 10%
 
 ---
 
-# Commerce integration frameworkGitHub版本概述
+# Commerce integration framework GitHub版本概述
 
 ## 发行日期： 2019年11月
 
 | GitHub | 版本 | 详细的发行说明 |
 |:-------|:-----:|---------------------:|
 | CIF连接器 | 0.7.1 | [发行说明](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF核心组件 | 0.6.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF 核心组件 | 0.6.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF原型 | 0.6.2 | [发行说明](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### 新增功能 {#what-is-new-november}
@@ -30,7 +30,7 @@ ht-degree: 6%
 
 * 购物车中添加了添加/删除优惠券支持。
 
-* AEM Venia店面添加了Braintree支付支持。
+* AEM Venia店前添加了Braintree支付支持。
 
 ### 改进内容 {#what-is-improved-november}
 
@@ -45,14 +45,14 @@ ht-degree: 6%
 | GitHub | 版本 | 详细的发行说明 |
 |:-------|:-----:|---------------------:|
 | CIF连接器 | 0.6.0 | [发行说明](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF核心组件 | 0.5.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF 核心组件 | 0.5.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF原型 | 0.5.0 | [发行说明](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### 新增功能 {#what-is-new-october}
 
 * 产品详细信息页面和产品列表页面的完全可创作模板。 作者现在可以创建模板，并将产品列表和产品详细信息组件拖放到这些模板上。 除了添加其他组件外，作者现在还可以更改这些模板的布局，为他们提供无限制的自由，以便结合营销和商业内容创建令人惊叹的体验。
 
-* 所有便于作者使用的CIF核心组件都已增强，以支持[AEM样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=zh-Hans)。 为产品列表组件提供了示例样式。
+* 所有便于作者使用的CIF核心组件均已得到增强，可支持[AEM的样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=zh-Hans)。 为产品列表组件提供了示例样式。
 
 * 用于帐户管理的基于React的客户端组件。 此版本支持以下功能：登录、忘记密码和创建帐户。
 
@@ -67,7 +67,7 @@ ht-degree: 6%
 | GitHub | 版本 | 详细的发行说明 |
 |:-------|:-----:|---------------------:|
 | CIF连接器 | 0.5.0 | [发行说明](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF核心组件 | 0.4.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF 核心组件 | 0.4.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF原型 | 0.4.0 | [发行说明](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### 新增功能 {#what-is-new-september}
@@ -89,40 +89,40 @@ ht-degree: 6%
 | GitHub | 版本 | 详细的发行说明 |
 |:-------|:-----:|---------------------:|
 | CIF连接器 | 0.4.0 | [发行说明](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF核心组件 | 0.3.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF 核心组件 | 0.3.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF原型 | 0.3.0 | [发行说明](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### 新增功能 {#what-is-new-august}
 
-* 在CIF原型中嵌入CIF Connector是可选的，这样可为开发人员提供更大的灵活性。
+* 在CIF原型中嵌入CIF连接器为可选操作，以便为开发人员提供更大的灵活性。
 
 * CIF组件与“Venia”特定的CSS样式分离，允许开发人员应用他们选择的CSS样式。
 
 * 多存储/站点功能，允许在多个CIF站点结构上使用AEM核心组件，并允许底层GraphQL客户端实施连接到不同的Adobe Commerce存储/存储视图。
 
-* 为某些GraphQL查询启用了通过HTTPGET的GraphQL缓存，以减少响应时间。
+* 为通过HTTP GET的特定GraphQL查询启用了GraphQL缓存以减少响应时间。
 
-* 产品描述视图是在AEM产品控制台中启用的。
+* 产品描述视图是在AEM的“产品”控制台中启用的。
 
 * Commerce Teaser扩展了WCM Teaser组件，以允许作者还将CTA字段添加到产品详细信息页面或产品列表页面。
 
-* 按钮允许作者放置在AEM页面上并链接到AEM页面、产品详细信息页面、产品列表页面或外部链接。
+* 按钮可让作者放置在AEM页面上并链接到AEM页面、产品详细信息页面、产品列表页面或外部链接。
 
 ### 改进内容 {#what-is-improved-august}
 
-* Adobe Commerce存储配置已从OSGi移至AEM产品控制台，以使集成设置更便于作者使用。
+* Adobe Commerce存储配置已从OSGi移至AEM产品控制台，以使集成设置更便于创作。
 
 ## 发行日期： 2019年7月
 
 | GitHub | 版本 | 详细的发行说明 |
 |:-------|:-----:|---------------------:|
 | CIF连接器 | 0.3.0 | [发行说明](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF核心组件 | 0.2.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF 核心组件 | 0.2.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF原型 | 0.2.0 | [发行说明](https://github.com/adobe/aem-cif-project-archetype/releases) |
 
 ### 新增功能 {#what-is-new-july}
 
-* 为开发人员提供多个部署选项的首个CIF原型： 1.部署AEM Venia storefront 2. 为新项目部署基架3. 在现有项目中使用CIF元素
+* 向开发人员提供多个部署选项的首个CIF原型： 1.部署AEM Venia storefront 2. 为新项目部署基架3. 在现有项目中使用CIF元素
 
 * 多级目录导航，以支持通过类别和子类别的导航。
 
@@ -143,7 +143,7 @@ ht-degree: 6%
 | GitHub | 版本 | 详细的发行说明 |
 |:-------|:-----:|---------------------:|
 | CIF连接器 | 0.2.0 | [发行说明](https://github.com/adobe/commerce-cif-connector/releases) |
-| CIF核心组件 | 0.1.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
+| CIF 核心组件 | 0.1.0 | [发行说明](https://github.com/adobe/aem-core-cif-components/releases) |
 
 ### 新增功能 {#what-is-new-june}
 
@@ -151,10 +151,10 @@ ht-degree: 6%
 
 * CIF连接器和创作工具（产品控制台、产品选取器和类别选取器）使作者能够在AEM中创建包含商业内容的体验。
 
-* 与Adobe Commerce 2.3.1兼容的CIF核心组件的第一个版本：
-   * 产品详细信息
-   * 产品列表
-   * 产品Teaser
-   * 导航
-   * 产品搜索
-   * 购物车(REST)
+* 与CIF 2.3.1兼容的Adobe Commerce核心组件的第一个版本：
+  * 产品详细信息
+  * 产品列表
+  * 产品预告
+  * 导航
+  * 产品搜索
+  * 购物车(REST)

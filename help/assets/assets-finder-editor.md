@@ -1,5 +1,5 @@
 ---
-title: 创建和配置资产编辑器页面
+title: 创建并配置资产编辑器页面
 description: 了解如何创建自定义资产编辑器页面并同时编辑多个资产。
 contentOwner: AG
 role: User, Admin
@@ -8,12 +8,12 @@ exl-id: 53e310a9-c511-447a-91bd-8c5b2760dc03
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '2088'
-ht-degree: 1%
+source-wordcount: '2121'
+ht-degree: 2%
 
 ---
 
-# 创建和配置资产编辑器页面 {#creating-and-configuring-asset-editor-pages}
+# 创建并配置资产编辑器页面 {#creating-and-configuring-asset-editor-pages}
 
 本文档将介绍以下内容：
 
@@ -206,7 +206,7 @@ For more information, see the [predicate Javadocs](https://helpx.adobe.com/exper
 要创建资产编辑器页面，请执行以下操作：
 
 1. 在&#x200B;**[!UICONTROL 网站]**&#x200B;选项卡中，导航到要创建资产编辑器页面的位置，然后单击&#x200B;**新建**。
-1. 选择&#x200B;**Geometrixx资产编辑器**&#x200B;并单击&#x200B;**创建**。 将创建新页面，并且该页面列在&#x200B;**网站**&#x200B;选项卡中。
+1. 选择&#x200B;**Geometrixx Asset Editor**，然后单击&#x200B;**创建**。 将创建新页面，并且该页面列在&#x200B;**网站**&#x200B;选项卡中。
 
 ![screen_shot_2012-04-23at15858pm](assets/screen_shot_2012-04-23at15858pm.png)
 
