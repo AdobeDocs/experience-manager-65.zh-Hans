@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3276'
 ht-degree: 2%
 
 ---
@@ -52,7 +52,7 @@ ht-degree: 2%
 * **超时**
 
   步骤“超时”之前的一段时间。
-您可以选择： **关闭**、**立即**、**1h**、**6h**、**12h**、**24h**。
+  您可以选择： **关闭**、**立即**、**1h**、**6h**、**12h**、**24h**。
 
 * **超时处理程序**
 
@@ -68,15 +68,15 @@ ht-degree: 2%
 
 * **通过电子邮件通知用户**
 
-   * 当工作流到达步骤时，通过向参与者发送电子邮件通知参与者。
-   * 如果启用，会向属性&#x200B;**用户/组**&#x200B;定义的用户发送电子邮件，如果定义了组，则会向组的每个成员发送电子邮件。
+  * 当工作流到达步骤时，通过向参与者发送电子邮件通知参与者。
+  * 如果启用，会向属性&#x200B;**用户/组**&#x200B;定义的用户发送电子邮件，如果定义了组，则会向组的每个成员发送电子邮件。
 
 * **用户/组**
 
-   * 下拉选择框允许您导航到用户或组并选择它们。
-   * 如果将步骤分配给特定用户，则只有此用户才能执行该步骤。
-   * 如果将步骤分配给整个组，则当工作流达到此步骤时，该组中的所有用户都会在其&#x200B;**工作流收件箱**&#x200B;中执行该操作。
-   * 有关详细信息，请参阅[参与工作流](/help/sites-authoring/workflows-participating.md)。
+  * 下拉选择框允许您导航到用户或组并选择它们。
+  * 如果将步骤分配给特定用户，则只有此用户才能执行该步骤。
+  * 如果将步骤分配给整个组，则当工作流达到此步骤时，该组中的所有用户都会在其&#x200B;**工作流收件箱**&#x200B;中执行该操作。
+  * 有关详细信息，请参阅[参与工作流](/help/sites-authoring/workflows-participating.md)。
 
 ## AND 拆分 {#and-split}
 
@@ -90,8 +90,8 @@ ht-degree: 2%
 
 * 编辑&#x200B;**AND拆分属性**：
 
-   * **拆分名称**：分配名称以供说明
-   * 选择所需的分支数；2、3、4或5。
+  * **拆分名称**：分配名称以供说明
+  * 选择所需的分支数；2、3、4或5。
 
 * 根据需要将工作流步骤添加到分支。
 
@@ -112,7 +112,7 @@ ht-degree: 2%
 * [通用](#step-properties-common-tab)
 * **容器**
 
-   * **子工作流**：选择要启动的工作流。
+  * **子工作流**：选择要启动的工作流。
 
 ## 跳转步骤 {#goto-step}
 
@@ -130,12 +130,12 @@ ht-degree: 2%
 * [通用](#step-properties-common-tab)
 * **进程**
 
-   * **目标步骤**：选择评估路由表达式的条件后要执行的步骤。
-   * **路由表达式**：选择规则定义、外部脚本或确定是否执行&#x200B;**目标步骤**&#x200B;的ECMA脚本。
+  * **目标步骤**：选择评估路由表达式的条件后要执行的步骤。
+  * **路由表达式**：选择规则定义、外部脚本或确定是否执行&#x200B;**目标步骤**&#x200B;的ECMA脚本。
 
-      * **规则定义：**&#x200B;使用[表达式编辑器](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor)定义规则。
-      * **外部脚本：**&#x200B;外部脚本的路径。
-      * **ECMA脚本**：用于确定是否执行&#x200B;**跳转步骤**&#x200B;的脚本。
+    * **规则定义：**&#x200B;使用[表达式编辑器](/help/forms/using/variable-in-aem-workflows.md#use-expression-editor)定义规则。
+    * **外部脚本：**&#x200B;外部脚本的路径。
+    * **ECMA脚本**：用于确定是否执行&#x200B;**跳转步骤**&#x200B;的脚本。
 
 #### 模拟for循环 {#simulating-a-for-loop}
 
@@ -198,18 +198,18 @@ function check(){
 
 * 编辑&#x200B;**OR拆分属性**：
 
-   * **公共**
+  * **公共**
 
-      * 指定拆分名称。
+    * 指定拆分名称。
 
-   * **分支(*x)***
+  * **分支(*x)***
 
-      * **添加分支：**&#x200B;向步骤中添加更多分支。
-      * **选择路由表达式**：要计算活动分支，请选择路由表达式。 可能的值包括：规则定义、外部脚本和ECMA脚本。
-      * **单击以添加表达式**：如果选择&#x200B;**规则定义**&#x200B;作为路由表达式，则添加表达式以评估活动分支。
-      * **脚本路径**：如果选择&#x200B;**外部脚本**&#x200B;作为路由表达式，则指向包含用于评估活动分支的脚本的文件的路径。
-      * **脚本**：如果选择&#x200B;**ECMA脚本**&#x200B;作为路由表达式，请在框中添加脚本以评估活动分支。
-      * **默认路由**：如果有多个分支，则遵循默认分支。 您只能指定一个分支作为默认分支。
+    * **添加分支：**&#x200B;向步骤中添加更多分支。
+    * **选择路由表达式**：要计算活动分支，请选择路由表达式。 可能的值包括：规则定义、外部脚本和ECMA脚本。
+    * **单击以添加表达式**：如果选择&#x200B;**规则定义**&#x200B;作为路由表达式，则添加表达式以评估活动分支。
+    * **脚本路径**：如果选择&#x200B;**外部脚本**&#x200B;作为路由表达式，则指向包含用于评估活动分支的脚本的文件的路径。
+    * **脚本**：如果选择&#x200B;**ECMA脚本**&#x200B;作为路由表达式，请在框中添加脚本以评估活动分支。
+    * **默认路由**：如果有多个分支，则遵循默认分支。 您只能指定一个分支作为默认分支。
 
   >[!NOTE]
   >
@@ -269,7 +269,7 @@ function check(){
 * [用户/组](#step-properties-user-group-tab)
 * **对话框**
 
-   * **对话框路径**：您创建的[对话框的对话框节点的路径](#dialog-participant-step-creating-a-dialog)。
+  * **对话框路径**：您创建的[对话框的对话框节点的路径](#dialog-participant-step-creating-a-dialog)。
 
 #### 对话框参与者步骤 — 创建对话框 {#dialog-participant-step-creating-a-dialog}
 
@@ -284,20 +284,18 @@ function check(){
 
 * **使用有效负载**&#x200B;存储数据
 
-   * 要将构件数据存储为工作流有效负荷的属性，请为构件节点的name属性的值使用以下格式：
+  * 要将构件数据存储为工作流有效负荷的属性，请为构件节点的name属性的值使用以下格式：
+    `./jcr:content/nodename`
 
-     `./jcr:content/nodename`
-
-   * 该数据存储在有效负荷节点的`nodename`属性中。 如果节点不包含该属性，则会创建属性。
-   * 与有效负载一起存储时，后续使用具有相同有效负载的对话框会覆盖属性的值。
+  * 该数据存储在有效负荷节点的`nodename`属性中。 如果节点不包含该属性，则会创建属性。
+  * 与有效负载一起存储时，后续使用具有相同有效负载的对话框会覆盖属性的值。
 
 * **与工作项一起存储数据**
 
-   * 要将小部件数据存储为工作项元数据的属性，请为name属性的值使用以下格式：
+  * 要将小部件数据存储为工作项元数据的属性，请为name属性的值使用以下格式：
+    `nodename`
 
-     `nodename`
-
-   * 该数据存储在工作项`metadata`的`nodename`属性中。 如果之后对同一有效负载使用该对话框，则数据将保留。
+  * 该数据存储在工作项`metadata`的`nodename`属性中。 如果之后对同一有效负载使用该对话框，则数据将保留。
 
 #### 对话框参与者步骤 — 对话框定义 {#dialog-participant-step-dialog-definition}
 
@@ -387,13 +385,13 @@ function check(){
 * [通用](#step-properties-common-tab)
 * **参与者选择器**
 
-   * **参与者选择器**：您创建的[参与者选择器](#developingtheparticipantchooser)的名称。
-   * **参数**：任何必需的参数。
-   * **电子邮件**：是否应向用户发送电子邮件通知。
+  * **参与者选择器**：您创建的[参与者选择器](#developingtheparticipantchooser)的名称。
+  * **参数**：任何必需的参数。
+  * **电子邮件**：是否应向用户发送电子邮件通知。
 
 * **对话框**
 
-   * **对话框路径**：您创建的[对话框的对话框节点的路径（与&#x200B;**对话框参与者步骤**&#x200B;一样）](#dialog-participant-step-creating-a-dialog)。
+  * **对话框路径**：您创建的[对话框的对话框节点的路径（与&#x200B;**对话框参与者步骤**&#x200B;一样）](#dialog-participant-step-creating-a-dialog)。
 
 #### 动态参与者步骤 — 开发参与者选择器 {#dynamic-participant-step-developing-the-participant-chooser}
 
@@ -405,7 +403,7 @@ function check(){
 
   脚本必须包含一个名为getParticipant的函数，该函数将用户ID作为`String`值返回。 将自定义脚本存储在`/apps/myapp/workflow/scripts`文件夹或子文件夹中。
 
-  一个示例脚本包含在标准AEM实例中：
+  标准AEM实例中包含一个示例脚本：
 
   `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
@@ -432,9 +430,9 @@ function check(){
 
   服务必须实现[com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)接口。 该界面定义了以下成员：
 
-   * `SERVICE_PROPERTY_LABEL`字段：使用此字段指定参与者选择器的名称。 该名称出现在&#x200B;**动态参与者步骤**&#x200B;属性的可用参与者选择器列表中。
+  * `SERVICE_PROPERTY_LABEL`字段：使用此字段指定参与者选择器的名称。 该名称出现在&#x200B;**动态参与者步骤**&#x200B;属性的可用参与者选择器列表中。
 
-   * `getParticipant`方法：以`String`值的形式返回动态解析的主体ID。
+  * `getParticipant`方法：以`String`值的形式返回动态解析的主体ID。
 
   >[!CAUTION]
   >
@@ -516,7 +514,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [用户/组](#step-properties-user-group-tab)
 * **表单**
 
-   * **表单路径**：您创建的[表单的路径](#form-participant-step-creating-the-form)。
+  * **表单路径**：您创建的[表单的路径](#form-participant-step-creating-the-form)。
 
 #### 表单参与者步骤 — 创建表单 {#form-participant-step-creating-the-form}
 
@@ -555,7 +553,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [通用](#step-properties-common-tab)
 * **参数**
 
-   * **参与者**：指定可供选择的用户列表。 要将用户添加到列表，请单击&#x200B;**添加项**，然后键入用户节点的主目录路径或用户ID。 用户的顺序不会影响分派工作项的可能性。
+  * **参与者**：指定可供选择的用户列表。 要将用户添加到列表，请单击&#x200B;**添加项**，然后键入用户节点的主目录路径或用户ID。 用户的顺序不会影响分派工作项的可能性。
 
 ### 工作流发起者参与人选择器 {#workflow-initiator-participant-chooser}
 
@@ -580,14 +578,14 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [通用](#step-properties-common-tab)
 * **进程**
 
-   * **进程**：要执行的进程实现。 使用下拉菜单选择ECMAScript或OSGi服务。 有关以下内容的信息：
+  * **进程**：要执行的进程实现。 使用下拉菜单选择ECMAScript或OSGi服务。 有关以下内容的信息：
 
-      * 标准ECMAScript和OSGi服务，请参阅[进程步骤的内置进程](/help/sites-developing/workflows-process-ref.md)。
-      * 为流程步骤创建ECMAScript，请参阅[使用ECMAScript实施流程步骤](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)。
-      * 正在为进程步骤创建OSGi服务，请参阅[使用Java™类实施进程步骤](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)。
+    * 标准ECMAScript和OSGi服务，请参阅[进程步骤的内置进程](/help/sites-developing/workflows-process-ref.md)。
+    * 为流程步骤创建ECMAScript，请参阅[使用ECMAScript实施流程步骤](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript)。
+    * 正在为进程步骤创建OSGi服务，请参阅[使用Java™类实施进程步骤](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)。
 
-   * **处理程序前进**：选择此选项可自动将工作流前进到执行后的下一个步骤。 如果未选中，则实施脚本必须处理工作流提升。
-   * **参数**：要传递给进程的参数。
+  * **处理程序前进**：选择此选项可自动将工作流前进到执行后的下一个步骤。 如果未选中，则实施脚本必须处理工作流提升。
+  * **参数**：要传递给进程的参数。
 
 ## 设置变量 {#set-variable}
 
@@ -602,15 +600,15 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 * [通用](/help/sites-developing/workflows-step-ref.md#step-properties-common-tab)
 * **映射**
 
-   * **选择变量：**&#x200B;使用此选项选择一个变量来设置其值。
-   * **选择映射模式：**&#x200B;要设置变量的值，请选择映射模式。 根据变量的数据类型，您可以使用以下选项设置变量的值：
+  * **选择变量：**&#x200B;使用此选项选择一个变量来设置其值。
+  * **选择映射模式：**&#x200B;要设置变量的值，请选择映射模式。 根据变量的数据类型，您可以使用以下选项设置变量的值：
 
-      * **文本：**&#x200B;当您知道要指定的确切值时，请使用选项。
-      * **表达式：**&#x200B;根据表达式计算要使用的值时，请使用选项。 表达式是在提供的表达式编辑器中创建的。
-      * **JSON点表示法：**&#x200B;使用选项从JSON或FDM类型变量中检索值。
-      * **XPATH：**&#x200B;使用选项从XML类型变量中检索值。
-      * **相对于有效负载：**&#x200B;当要保存到变量的值在相对于有效负载的路径上可用时，请使用选项。
-      * **绝对路径：**&#x200B;当要保存到变量的值在绝对路径上可用时，请使用选项。
+    * **文本：**&#x200B;当您知道要指定的确切值时，请使用选项。
+    * **表达式：**&#x200B;根据表达式计算要使用的值时，请使用选项。 表达式是在提供的表达式编辑器中创建的。
+    * **JSON点表示法：**&#x200B;使用选项从JSON或FDM类型变量中检索值。
+    * **XPATH：**&#x200B;使用选项从XML类型变量中检索值。
+    * **相对于有效负载：**&#x200B;当要保存到变量的值在相对于有效负载的路径上可用时，请使用选项。
+    * **绝对路径：**&#x200B;当要保存到变量的值在绝对路径上可用时，请使用选项。
 
-   * **指定值：**&#x200B;要映射到变量，请指定值。 在此字段中指定的值取决于映射模式。
-   * **添加映射：**&#x200B;使用此选项可添加更多映射以设置变量的值。
+  * **指定值：**&#x200B;要映射到变量，请指定值。 在此字段中指定的值取决于映射模式。
+  * **添加映射：**&#x200B;使用此选项可添加更多映射以设置变量的值。
