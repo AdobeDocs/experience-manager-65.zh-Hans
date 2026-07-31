@@ -38,7 +38,7 @@ We.Retail使用最新的Adobe Experience Manager (AEM)技术，例如HTL、响�
 | [HTML 模板语言](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-htl/content/overview) | 所有组件都基于HTL |  |
 | [电子商务功能](/help/commerce/cif-classic/developing/ecommerce.md) | 功能产品目录 |  |
 | [社区站点](/help/communities/overview.md) | 允许访客加入社区讨论、阅读博客等 |  |
-| [ Universal Editor ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/introduction) | 所有组件都基于新的核心组件，并且更加可用，可开箱即用且可由用户配置 | [试用！](/help/sites-developing/we-retail-core-components.md) |
+| [&#x200B; Universal Editor &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/introduction) | 所有组件都基于新的核心组件，并且更加可用，可开箱即用且可由用户配置 | [试用！](/help/sites-developing/we-retail-core-components.md) |
 | [内容片段](/help/assets/content-fragments/content-fragments.md) | We.Retail体验部分展示了通过内容片段重用内容的强大功能。 | [试试看！](/help/sites-developing/we-retail-content-fragments.md) |
 | [体验片段](/help/sites-authoring/experience-fragments.md) | 体验片段是由一个或多个组件组成的组，其中包括可在页面中引用的内容和布局。 | [试试看！](/help/sites-developing/we-retail-experience-fragments.md) |
 

@@ -275,7 +275,7 @@ function check(){
 
 要创建对话框，必须创建对话框：
 
-* 确定所得数据在有效负载](#dialog-participant-step-storing-data-in-the-payload)中的[存储位置。
+* 确定所得数据在有效负载[&#128279;](#dialog-participant-step-storing-data-in-the-payload)中的存储位置。
 * [定义对话框；包括定义用于收集和保存数据的字段](#dialog-participant-step-dialog-definition)。
 
 #### 对话框参与者步骤 — 在有效负荷中存储数据 {#dialog-participant-step-storing-data-in-the-payload}
@@ -504,7 +504,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 >[!CAUTION]
 >
->本节介绍用于页面创作](/help/sites-authoring/default-components-foundation.md#form)的基础组件的[Forms部分。
+>本节介绍用于页面创作[&#128279;](/help/sites-authoring/default-components-foundation.md#form)的基础组件的Forms部分。
 
 #### 表单参与者步骤 — 配置 {#form-participant-step-configuration}
 
