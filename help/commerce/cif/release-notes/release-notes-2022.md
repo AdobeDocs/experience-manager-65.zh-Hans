@@ -7,21 +7,21 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '648'
-ht-degree: 43%
+source-wordcount: '962'
+ht-degree: 36%
 
 ---
 
-# Commerce integration frameworkGitHub版本概述
+# Commerce integration framework GitHub版本概述
 
 ## 系统要求概述
 
-查看下表中，您当前使用或计划将来使用的CIF版本的最低系统要求。
+请查看下表中当前使用或计划将来使用的CIF版本的最低系统要求。
 
 | 组件 | 系统要求 |
 |:-------|:-----:|
 | CIF加载项 | 最低配置：AEM 6.5.7、Adobe Commerce 2.3.5 GraphQL架构 |
-| CIF核心组件 | [系统要求](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
+| CIF 核心组件 | [系统要求](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM 项目原型 | [系统要求](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
 ## 发行日期： 2022年9月
@@ -29,8 +29,8 @@ ht-degree: 43%
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2022.09.20.00 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.09.20.00.zip) |
-| CIF核心组件 | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
-| CIF Venia引用站点 | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
+| CIF 核心组件 | 2.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.11.0) |
+| CIF Venia参考站点 | 2022.09.02 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.09.02) |
 
 ### 新增功能 {#what-is-new-september}
 
@@ -55,8 +55,8 @@ ht-degree: 43%
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2022.07.05.00 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.07.05.00.zip) |
-| CIF核心组件 | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
-| CIF Venia引用站点 | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
+| CIF 核心组件 | 2.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.10.0) |
+| CIF Venia参考站点 | 2022.07.04 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.07.04) |
 
 ### 新增功能 {#what-is-new-june}
 
@@ -75,8 +75,8 @@ ht-degree: 43%
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2022.05.31.00 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.05.31.00.zip) |
-| CIF核心组件 | 2.9.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0) |
-| CIF Venia引用站点 | 2022.05.30 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.05.30) |
+| CIF 核心组件 | 2.9.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.9.0) |
+| CIF Venia参考站点 | 2022.05.30 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.05.30) |
 
 ### 新增功能 {#what-is-new-may}
 
@@ -99,8 +99,8 @@ ht-degree: 43%
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2022.04.28.00 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.04.28.00.zip) |
-| CIF核心组件 | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
-| CIF Venia引用站点 | 2022.04.28 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
+| CIF 核心组件 | 2.8.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.8.0) |
+| CIF Venia参考站点 | 2022.04.28 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.04.28) |
 
 ### 新增功能 {#what-is-new-april}
 
@@ -117,8 +117,8 @@ ht-degree: 43%
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2022.02.24.00 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.02.24.00.zip) |
-| CIF核心组件 | 2.6.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) |
-| CIF Venia引用站点 | 2022.02.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.02.24) |
+| CIF 核心组件 | 2.6.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.6.0) |
+| CIF Venia参考站点 | 2022.02.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.02.24) |
 
 ### 新增功能 {#what-is-new-march}
 
@@ -126,24 +126,24 @@ ht-degree: 43%
 * 改进了多商店场景的 SEO：PDP/PLP 的 URL 格式现在可以通过 CIF 云配置属性在商店级别进行配置
 * 产品选取器通过用户界面中的新筛选器选项支持暂存产品。 使内容从业者能够为即将发布的产品准备产品内容管理
 * 通过使用 CIF 云配置名称而非配置代理 URL，简化了 CIF 配置管理和错误处理
-* 产品列表和轮盘组件的手动类别选择。允许内容从业者在目录体验之外的内容页面上使用这些组件
+* 产品列表和轮播组件的手动类别选择。 允许内容从业者在目录体验之外的内容页面上使用这些组件
 
 ## 发行日期： 2022年1月
 
 | 组件 | 版本 | 详细信息 |
 |:-------|:-----:|---------------------:|
 | CIF加载项 | 2022.01.20.00 | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2022.01.20.00.zip) |
-| CIF核心组件 | 2.5.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.5.0) |
-| CIF Venia引用站点 | 2022.01.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.01.27) |
+| CIF 核心组件 | 2.5.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.5.0) |
+| CIF Venia参考站点 | 2022.01.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2022.01.27) |
 
 ### 新增功能 {#what-is-new-january}
 
 * 增强的 myAccount 组件
 * 产品推荐组件支持其他页面类型（主页、购物车、订单确认）
 * **愿望清单**
-   * 登录的访客可以将产品添加到愿望清单
-   * 通过 myAccount 可以管理愿望清单及其产品
-   * 可以通过策略（例如产品预告片、产品详细信息）在组件级别启用/禁用“添加到愿望清单”按钮
-   * 作为核心组件提供，位于 AEM Venia Storefront 中
+  * 登录的访客可以将产品添加到愿望清单
+  * 通过 myAccount 可以管理愿望清单及其产品
+  * 可以通过策略（例如产品预告片、产品详细信息）在组件级别启用/禁用“添加到愿望清单”按钮
+  * 作为核心组件提供，位于 AEM Venia Storefront 中
 
 ![愿望清单](/help/assets/CIF/wishlist.png)

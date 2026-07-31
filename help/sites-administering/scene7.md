@@ -11,8 +11,8 @@ feature: Integration
 role: Admin
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '5405'
-ht-degree: 0%
+source-wordcount: '5545'
+ht-degree: 1%
 
 ---
 
@@ -162,7 +162,7 @@ Experience Manager Dynamic Media是直接在Experience Manager平台中统一的
 1. （可选；请参阅用例表） — 如果选择启用从Assets到Dynamic Media Classic的自动上传，则必须添加以下内容：
 
    1. 设置自动上传至Dynamic Media Classic。
-   1. 在&#x200B;***Dam更新资产**&#x200B;工作流(`https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)末尾的所有Dynamic Media工作流步骤*&#x200B;之后添加&#x200B;**Dynamic Media Classic上传**&#x200B;步骤
+   1. 在&#x200B;***Dam更新资产**工作流(`https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)末尾的所有Dynamic Media工作流步骤*&#x200B;之后添加&#x200B;**Dynamic Media Classic上传**&#x200B;步骤
    1. （可选）在[https://&lt;服务器>：&lt;端口>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl)中按MIME类型限制Dynamic Media Classic资源上传。 此列表中未包含的资源MIME类型不会上传到Dynamic Media Classic服务器。
    1. （可选）在Dynamic Media Classic配置中设置视频。 您可以同时为Dynamic Media和/或Dynamic Media Classic启用视频编码。 在Experience Manager实例中，动态演绎版用于本地预览和播放，而Dynamic Media Classic视频演绎版则生成并存储在Dynamic Media Classic服务器上。 为Dynamic Media和Dynamic Media Classic设置视频编码服务时，请将[视频处理配置文件](/help/assets/video-profiles.md)应用于Dynamic Media Classic资源文件夹。
    1. （可选） [在Dynamic Media Classic中配置安全预览](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)。
@@ -199,8 +199,8 @@ Adobe建议您让根文件夹仅指向子文件夹，而不是指向整个公司
 * 必须通过Dynamic Media Classic内容浏览器，直接从Dynamic Media Classic将Experience Manager Assets尚不支持的Dynamic Media Classic资产类型添加到Experience Manager网站。 例如，图像模板。
 * 对于Experience Manager Assets和Dynamic Media Classic都支持的资源类型，决定如何上传它们取决于以下因素：
 
-   * 资产当前所在的位置，以及
-   * 在公共存储库中管理这些组件有多重要
+  * 资产当前所在的位置，以及
+  * 在公共存储库中管理这些组件有多重要
 
 假设这些资源已在Dynamic Media Classic中，在公共存储库中管理它们并不重要。 如果是这种情况，则将资产导出到Experience Manager Assets以仅将其同步回Dynamic Media Classic以进行交付是不必要的往返过程。 Adobe建议您将资产保留在单个存储库中，并同步到Dynamic Media Classic以便仅进行交付。
 
@@ -210,11 +210,11 @@ Adobe建议您让根文件夹仅指向子文件夹，而不是指向整个公司
 
 >[!NOTE]
 >
->Adobe建议您仅使用指定的目标文件夹来导入Dynamic Media Classic资源。 位于目标文件夹之外的数字资产只能在已启用Dynamic Media Classic配置的页面上的Dynamic Media Classic组件中使用。 此外，它们还被放置在Dynamic Media Classic的按需文件夹中。 按需文件夹未与Experience Manager同步(但可在Dynamic Media Classic内容浏览器中搜索资产)。
+>Adobe建议您仅使用指定的目标文件夹来导入Dynamic Media Classic资源。 位于目标文件夹之外的数字资产只能在已启用Dynamic Media Classic配置的页面上的Dynamic Media Classic组件中使用。 此外，它们还被放置在Dynamic Media Classic的按需文件夹中。 按需文件夹未与Experience Manager同步（但可在Dynamic Media Classic内容浏览器中搜索资产）。
 
 **要将Dynamic Media Classic配置为与Experience Manager集成：**
 
-1. [定义云配置](#creating-a-cloud-configuration-for-scene) — 定义Dynamic Media Classic文件夹和Assets文件夹之间的映射。 即使只想进行单向(Experience Manager Assets到Dynamic Media Classic)同步，请完成此步骤。
+1. [定义云配置](#creating-a-cloud-configuration-for-scene) — 定义Dynamic Media Classic文件夹和Assets文件夹之间的映射。 即使只想进行单向（Experience Manager Assets到Dynamic Media Classic）同步，请完成此步骤。
 1. [启用&#x200B;**Adobe CQ s7dam Dam侦听器**](#enabling-the-adobe-cq-scene-dam-listener) — 在[!UICONTROL OSGi]控制台中完成。
 1. 如果您希望Experience Manager Assets自动上传到Dynamic Media Classic，则必须打开该选项并将Dynamic Media Classic添加到[!UICONTROL DAM更新资产]工作流。 您还可以手动上传资源。
 1. 将Dynamic Media Classic组件添加到Sidekick。 通过此功能，用户可在其Experience Manager页面上使用Dynamic Media Classic组件。
@@ -368,7 +368,7 @@ Adobe建议您让根文件夹仅指向子文件夹，而不是指向整个公司
 
    >[!NOTE]
    >
-   >最佳实践：大多数资产最多可在几分钟内摄取（例如，图像）。 但在某些情况下（例如较大的视频），为了适应较长的处理时间，会将超时值增加到7200秒（两个小时）。 否则，此Dynamic Media Classic上载作业在JCR (Java™内容存储库)元数据中被标记为&#x200B;**[!UICONTROL UploadFailed]**。
+   >最佳实践：大多数资产最多可在几分钟内摄取（例如，图像）。 但在某些情况下（例如较大的视频），为了适应较长的处理时间，会将超时值增加到7200秒（两个小时）。 否则，此Dynamic Media Classic上载作业在JCR （Java™内容存储库）元数据中被标记为&#x200B;**[!UICONTROL UploadFailed]**。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -421,7 +421,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 在将资源推送到Dynamic Media Classic而不发布它们之前，您必须设置以下设置：
 
 1. [使用Admin Console创建支持案例](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 在您的支持案例中，请求为您的Dynamic Media Classic帐户启用安全预览。
-1. [为您的Dynamic Media Classic帐户设置安全预览](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=zh-Hans)。
+1. [为您的Dynamic Media Classic帐户设置安全预览](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html)。
 
 这些步骤与在Dynamic Media Classic中创建任何安全测试设置时所遵循的步骤相同。
 
@@ -448,9 +448,9 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 1. 选择&#x200B;**[!UICONTROL Dynamic Media Classic]**。
 1. 在Dynamic Media Classic中选择您的配置。
 1. 选择&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。
-1. 在&#x200B;**[!UICONTROL 启用安全视图]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 在AEM发布激活时]**&#x200B;以将资产推送到Dynamic Media Classic而不发布。 (默认情况下，此值设置为&#x200B;**[!UICONTROL 立即]**，其中立即发布Dynamic Media Classic资源。)
+1. 在&#x200B;**[!UICONTROL 启用安全视图]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 在AEM发布激活时]**&#x200B;以将资产推送到Dynamic Media Classic而不发布。 （默认情况下，此值设置为&#x200B;**[!UICONTROL 立即]**，其中立即发布Dynamic Media Classic资源。）
 
-   有关在公开资源之前测试资源的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=zh-Hans)。
+   有关在公开资源之前测试资源的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html)。
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -537,7 +537,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 
 您可以启用通过同步Digital Asset Manager/Dynamic Media Classic资源触发的可配置Dynamic Media Classic上传作业参数。
 
-具体来说，您可以在Experience Manager Web控制台配置面板的OSGi (Open Service Gateway Initiative)区域中，按MIME类型配置接受的文件格式。 然后，您可以自定义JCR (Java™内容存储库)中每个MIME类型使用的各个上载作业参数。
+具体来说，您可以在Experience Manager Web控制台配置面板的OSGi (Open Service Gateway Initiative)区域中，按MIME类型配置接受的文件格式。 然后，您可以自定义JCR （Java™内容存储库）中每个MIME类型使用的各个上载作业参数。
 
 **要启用基于MIME类型的资源：**
 
@@ -565,7 +565,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 
    例如，`psprocess="rasterize"&psresolution=120` 。
 
-   有关您可以使用的更多上载作业参数，请参阅[Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=zh-Hans)。
+   有关您可以使用的更多上载作业参数，请参阅[Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html)。
 
    >[!NOTE]
    >
@@ -583,7 +583,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 
 **如果将数字资产发布到Dynamic Media Classic失败：**
 
-* 检查要上传的资源是否位于&#x200B;**[!UICONTROL CQ target]**&#x200B;文件夹中(您在Dynamic Media Classic云配置中指定此文件夹)。
+* 检查要上传的资源是否位于&#x200B;**[!UICONTROL CQ target]**&#x200B;文件夹中（您在Dynamic Media Classic云配置中指定此文件夹）。
 * 如果不是，则必须在&#x200B;**[!UICONTROL 页面属性]**&#x200B;中为该页面配置云配置，以允许上载到&#x200B;**[!UICONTROL CQ临时]**&#x200B;文件夹。
 
 * 检查日志以了解任何信息。
@@ -598,12 +598,12 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 
 **如果Experience Manager中的新资源或修改的资源未自动上传到Dynamic Media Classic：**
 
-* 确保资产位于CQ目标文件夹中。 只有位于CQ目标文件夹中的资源才会自动更新(前提是您已将Experience Manager Assets配置为自动上传资源)。
+* 确保资产位于CQ目标文件夹中。 只有位于CQ目标文件夹中的资源才会自动更新（前提是您已将Experience Manager Assets配置为自动上传资源）。
 * 确保您已将Cloud Services配置配置为启用自动上传，并且已更新和保存DAM资产工作流以包含Dynamic Media Classic上传。
 * 将图像上传到Dynamic Media Classic目标文件夹的子文件夹时，请确保执行以下操作之一：
 
-   * 确保所有资源的名称（无论位于何处）都是唯一的。 否则，主目标文件夹中的资产将被删除，并且仅保留子文件夹中的资产。
-   * 在Dynamic Media Classic帐户的“设置”区域中更改Dynamic Media Classic覆盖资产的方式。 如果在子文件夹中使用同名的资源，请勿将Dynamic Media Classic设置为覆盖任何位置的资源。
+  * 确保所有资源的名称（无论位于何处）都是唯一的。 否则，主目标文件夹中的资产将被删除，并且仅保留子文件夹中的资产。
+  * 在Dynamic Media Classic帐户的“设置”区域中更改Dynamic Media Classic覆盖资产的方式。 如果在子文件夹中使用同名的资源，请勿将Dynamic Media Classic设置为覆盖任何位置的资源。
 
 **如果您删除的资源或文件夹未在Dynamic Media Classic和Experience Manager之间同步：**
 
