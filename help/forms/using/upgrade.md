@@ -20,7 +20,7 @@ ht-degree: 12%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 
@@ -61,7 +61,7 @@ AEM 6.5 Forms包括多项新增功能和增强功能，可简化表单和交易�
 * JEE上的AEM 6.1 Forms
 * JEE上的AEM 6.2 Forms
 
-JEE上的AEM 6.5.18.0 Forms提供两种类型的安装程序： [完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)和[修补程序安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
+JEE上的AEM 6.5.18.0 Forms提供两种类型的安装程序： [完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)和[修补程序安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)。
 
 **完整安装程序**：您可以使用完整安装程序设置新的AEM Forms实例，或从JEE上的AEM 6.5.x.x Forms升级到JEE上的AEM 6.5.18.0 Forms。
 
@@ -71,7 +71,7 @@ JEE上的AEM 6.5.18.0 Forms提供两种类型的安装程序： [完整安装程
 
 ![完整安装程序和修补程序安装程序](/help/forms/using/assets/full-and-patch-installer.png)
 
-请参阅[AEM 6.5 Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html)文章，安装最新的Service Pack for JEE环境。
+请参阅[AEM 6.5 Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans)文章，安装最新的Service Pack for JEE环境。
 
 <!--
 [Work in Progress]
