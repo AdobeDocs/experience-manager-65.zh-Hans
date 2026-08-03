@@ -9,10 +9,10 @@ role: Admin,User
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms Upgrade
-source-git-commit: 4f9129101f537e035b8a7ec52fbc046ae6f93f92
+source-git-commit: beb40e8e83b52b60d68dffecb95f3d877a47d397
 workflow-type: tm+mt
-source-wordcount: '362'
-ht-degree: 7%
+source-wordcount: '427'
+ht-degree: 12%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/migrate-to-forms-as-a-cloud-service.html) |
 | AEM 6.5 | 本文 |
 
 
@@ -45,7 +45,7 @@ AEM 6.5 Forms包括多项新增功能和增强功能，可简化表单和交易�
 
 下图显示了AEM Forms on JEE的可用升级路径：
 
-![JEE升级6.5](do-not-localize/upgradepathjee.png)
+![JEE升级6.5](do-not-localize/upgradepathjee.svg)
 
 
 您可以通过以下方式执行直接升级：
@@ -61,7 +61,7 @@ AEM 6.5 Forms包括多项新增功能和增强功能，可简化表单和交易�
 * JEE上的AEM 6.1 Forms
 * JEE上的AEM 6.2 Forms
 
-JEE上的AEM 6.5.18.0 Forms提供两种类型的安装程序： [完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)和[修补程序安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)。
+JEE上的AEM 6.5.18.0 Forms提供两种类型的安装程序： [完整安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)和[修补程序安装程序](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
 
 **完整安装程序**：您可以使用完整安装程序设置新的AEM Forms实例，或从JEE上的AEM 6.5.x.x Forms升级到JEE上的AEM 6.5.18.0 Forms。
 
@@ -71,7 +71,7 @@ JEE上的AEM 6.5.18.0 Forms提供两种类型的安装程序： [完整安装程
 
 ![完整安装程序和修补程序安装程序](/help/forms/using/assets/full-and-patch-installer.png)
 
-请参阅[AEM 6.5 Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans)文章，安装最新的Service Pack for JEE环境。
+请参阅[AEM 6.5 Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html)文章，安装最新的Service Pack for JEE环境。
 
 <!--
 [Work in Progress]
