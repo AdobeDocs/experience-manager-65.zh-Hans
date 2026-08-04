@@ -255,7 +255,7 @@ AEM 可通过多种格式和不同层级的技术栈提供内容。 其中部分
 
 #### AEM 和 Commerce {#aem-commerce}
 
-Commerce integration framework的改进自AEM 6.4之后加快了发布周期。 使用Commerce integration framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)从[AEM和Adobe Commerce集成中了解更多信息。
+Commerce integration framework的改进自AEM 6.4之后加快了发布周期。 使用Commerce integration framework[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)从AEM和Adobe Commerce集成中了解更多信息。
 
 #### Communities 附加组件 {#communities-add-on}
 
@@ -360,7 +360,7 @@ AEM 6.5 引入了以下功能和增强，旨在提升 AEM 用户、DAM 角色以
 
 [!DNL Experience Manager Assets Brand Portal] 可帮助您轻松获取、有效管控并安全地向外部供应商/代理机构和内部业务用户分发已批准的资产，且支持跨设备访问。 它能够提升资产共享效率，加快资产上市时间，并降低不合规使用和未经授权的访问的风险。
 
-有关更多信息，请参阅[ Brand Portal 新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
+有关更多信息，请参阅[&#x200B; Brand Portal 新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
 #### 连接的资产 {#connectedassets}
 
