@@ -10,7 +10,7 @@ hide: true
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '5796'
+source-wordcount: '5853'
 ht-degree: 5%
 
 ---
@@ -88,7 +88,7 @@ ht-degree: 5%
 * `woman-running`
 
 但是，查询`woman -running`返回其元数据中不带`running`的资源。
-使用智能标记会添加额外的`OR`子句，以将任何搜索词作为应用的智能标记进行查找。使用智能标记以`woman`或`running`标记的资产也出现在此类搜索查询中。所以搜索结果是，
+使用智能标记会添加额外的`OR`子句，以将任何搜索词作为应用的智能标记进行查找。 使用智能标记以`woman`或`running`标记的资产也出现在这样的搜索查询中。 所以搜索结果是，
 
 * 元数据中包含`woman`和`running`关键字的Assets（默认行为）。
 

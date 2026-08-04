@@ -148,36 +148,36 @@ AEM 可通过多种格式和不同层级的技术栈提供内容。 其中部分
 * 单页应用程序可使用 Maven Project Archetype 1.0.6 及以上版本，详见 [GitHub 发行说明](https://github.com/adobe/aem-spa-project-archetype/releases)。
 * 支持 HTL 1.4，详见 [GitHub 发行说明](https://github.com/adobe/htl-spec/releases/tag/1.4)。
 
-   * 支持字符串、数组和对象的 &quot;in&quot; 运算符：
+  * 支持字符串、数组和对象的 &quot;in&quot; 运算符：
 
-     ```html
-     ${'a' in 'abc'}
-     ${100 in myArray}
-     ${'a' in myObject}
-     ```
+    ```html
+    ${'a' in 'abc'}
+    ${100 in myArray}
+    ${'a' in myObject}
+    ```
 
-   * 支持使用 data-sly-set 变量声明：
-     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+  * 支持使用 data-sly-set 变量声明：
+    `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * 列表与循环控制参数：begin、step、end：
-     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+  * 列表与循环控制参数：begin、step、end：
+    `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
-   * data-sly-unwrap 的标识符：
+  * data-sly-unwrap 的标识符：
 
-     ```html
-     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-     </div>
-     ```
+    ```html
+    <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+    text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+    </div>
+    ```
 
-   * 支持负数
+  * 支持负数
 
 * 核心组件 2.3.2 及以上版本，详见 [GitHub 发行说明](https://github.com/adobe/aem-core-wcm-components/releases)。
 * 布局容器网格系统，详见 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid)。
 * Clientlib 管理器：将 JavaScript clientlibs 的默认压缩工具改为 Google Closure Compiler（此前默认为 Yahoo YUI），并将 Google Closure Compiler 更新至 v20190121 版本。
 * 模板编辑器与策略
 
-   * 为使用 JS SDK（即 SPA 编辑器）的单页应用程序创建和编辑模板
+  * 为使用 JS SDK（即 SPA 编辑器）的单页应用程序创建和编辑模板
 
 * 参考站点 We.Retail 4.0，详见 [GitHub 发行说明](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)。
 * 用于将现有网站升级至最新编辑器功能的工具包，详见 [GitHub 代码库](https://github.com/adobe/aem-modernize-tools)。
@@ -457,17 +457,17 @@ Adobe 已建立相应的流程和机制，用于收集、优先排序并跟踪�
 * We.Retail 参考实施（[了解更多](/help/sites-developing/we-retail.md)）
 * Maven 项目原型：
 
-   * 用于全栈站点：[GitHub 项目](https://github.com/adobe/aem-project-archetype)
-   * 用于 React/Angular 单页应用程序：[GitHub 项目](https://github.com/adobe/aem-spa-project-archetype)
+  * 用于全栈站点：[GitHub 项目](https://github.com/adobe/aem-project-archetype)
+  * 用于 React/Angular 单页应用程序：[GitHub 项目](https://github.com/adobe/aem-spa-project-archetype)
 
 * 适用于各类目标平台的 AEM Screens 播放器（[下载](https://download.macromedia.com/screens/)）
 
 * 智能内容语言模型。 预装英语——可下载更多语言
 
-   * [德语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [西班牙语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [意大利语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [法语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+  * [德语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+  * [西班牙语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+  * [意大利语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+  * [法语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * AEM 现代化工具套件，例如对话框转化工具。 （[GitHub 项目](https://github.com/adobe/aem-modernize-tools)）
 
@@ -526,9 +526,9 @@ Adobe 会持续评估产品功能，并在未来逐步以更强大的版本替�
 
   在执行以下操作时，请确保属性 `htmllibmanager.fileSystemOutputCacheLocation` 不是空字符串：
 
-   1. 调用 `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`。
-   2. 升级至 AEM 6.5。
-   3. 在 AEM 6.5 上执行“延迟内容迁移”。
+  1. 调用 `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`。
+  2. 升级至 AEM 6.5。
+  3. 在 AEM 6.5 上执行“延迟内容迁移”。
 
 * 如果在 AEM 6.5 实例中使用 JDK 11，部署某些包后部分页面可能会显示为空白。 日志文件中会出现如下错误消息：
 
@@ -575,13 +575,13 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * 当自适应表单被配置为动态更新某组件的值，并且承载该表单的发布实例是通过 Dispatcher 访问时，字段的动态更新功能将会停止工作。 要解决此问题，请在发布实例上打开 CRXDE，导航至 `/libs/fd/af/runtime/clientlibs/guideChartReducer`，并创建如下所示的属性。
 
-   * 名称：allowProxy
-   * 类型：布尔值
-   * 值：真
-   * 受保护：假
-   * 必填：假
-   * 多值：假
-   * 自动创建：假
+  * 名称：allowProxy
+  * 类型：布尔值
+  * 值：真
+  * 受保护：假
+  * 必填：假
+  * 多值：假
+  * 自动创建：假
 
   该属性允许运行时文件夹下的客户端库访问代理。 （CQ-4268679）
 
