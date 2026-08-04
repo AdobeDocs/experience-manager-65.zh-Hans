@@ -21,7 +21,7 @@ ht-degree: 96%
 | 版本 | 6.5 |
 | 类型 | 主要版本 |
 | 正式发行日期 | 2019 年 4 月 8 日 |
-| 推荐更新 | 请参阅 [AEM 最新更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans)。 |
+| 推荐更新 | 请参阅 [AEM 最新更新](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)。 |
 
 ### 普通 {#trivia}
 
@@ -118,7 +118,7 @@ Quickstart 使用 Eclipse Jetty 9.4.15 作为 Servlet 引擎。
 
 #### Headless 内容管理 {#headless-content-management}
 
-AEM 可通过多种格式和不同层级的技术栈提供内容。 其中部分功能自 2008 年就已存在，如 [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 和 [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)。 内容服务（[Sling 模型导出器](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=zh-Hans)）是在 AEM 6.3 中引入的，并由 AEM SJ SDK 用于为单页应用程序提供内容。 [HTTP API for Assets](/help/assets/mac-api-assets.md) 是一个 CRUD API，它已针对 AEM 6.5 进行了扩展。
+AEM 可通过多种格式和不同层级的技术栈提供内容。 其中部分功能自 2008 年就已存在，如 [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) 和 [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html)。 内容服务（[Sling 模型导出器](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html)）是在 AEM 6.3 中引入的，并由 AEM SJ SDK 用于为单页应用程序提供内容。 [HTTP API for Assets](/help/assets/mac-api-assets.md) 是一个 CRUD API，它已针对 AEM 6.5 进行了扩展。
 
 新增 HTTP API 功能：
 
@@ -140,7 +140,7 @@ AEM 可通过多种格式和不同层级的技术栈提供内容。 其中部分
 * 借助动态占位符，根据数据触发内容的位置或配置进行个性化。
 * 通过 Adobe Analytics 与 AEM Screens Player 的集成，提供统一的洞察
 
-有关对 AEM Screens 所做更改的更多详细信息，请参阅 [AEM Screens 用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)中的发行说明。
+有关对 AEM Screens 所做更改的更多详细信息，请参阅 [AEM Screens 用户指南](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)中的发行说明。
 
 #### 组件与模板开发 {#component-amp-template-development}
 
@@ -148,36 +148,36 @@ AEM 可通过多种格式和不同层级的技术栈提供内容。 其中部分
 * 单页应用程序可使用 Maven Project Archetype 1.0.6 及以上版本，详见 [GitHub 发行说明](https://github.com/adobe/aem-spa-project-archetype/releases)。
 * 支持 HTL 1.4，详见 [GitHub 发行说明](https://github.com/adobe/htl-spec/releases/tag/1.4)。
 
-   * 支持字符串、数组和对象的 &quot;in&quot; 运算符：
+  * 支持字符串、数组和对象的 &quot;in&quot; 运算符：
 
-     ```html
-     ${'a' in 'abc'}
-     ${100 in myArray}
-     ${'a' in myObject}
-     ```
+    ```html
+    ${'a' in 'abc'}
+    ${100 in myArray}
+    ${'a' in myObject}
+    ```
 
-   * 支持使用 data-sly-set 变量声明：
-     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+  * 支持使用 data-sly-set 变量声明：
+    `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * 列表与循环控制参数：begin、step、end：
-     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+  * 列表与循环控制参数：begin、step、end：
+    `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
-   * data-sly-unwrap 的标识符：
+  * data-sly-unwrap 的标识符：
 
-     ```html
-     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-     </div>
-     ```
+    ```html
+    <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+    text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+    </div>
+    ```
 
-   * 支持负数
+  * 支持负数
 
 * 核心组件 2.3.2 及以上版本，详见 [GitHub 发行说明](https://github.com/adobe/aem-core-wcm-components/releases)。
 * 布局容器网格系统，详见 [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-responsivegrid)。
 * Clientlib 管理器：将 JavaScript clientlibs 的默认压缩工具改为 Google Closure Compiler（此前默认为 Yahoo YUI），并将 Google Closure Compiler 更新至 v20190121 版本。
 * 模板编辑器与策略
 
-   * 为使用 JS SDK（即 SPA 编辑器）的单页应用程序创建和编辑模板
+  * 为使用 JS SDK（即 SPA 编辑器）的单页应用程序创建和编辑模板
 
 * 参考站点 We.Retail 4.0，详见 [GitHub 发行说明](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases)。
 * 用于将现有网站升级至最新编辑器功能的工具包，详见 [GitHub 代码库](https://github.com/adobe/aem-modernize-tools)。
@@ -246,16 +246,16 @@ AEM 可通过多种格式和不同层级的技术栈提供内容。 其中部分
 
 * Adobe Target 集成现已使用 Target Standard API。 AEM 的早期版本使用的 Target Classic HTTP API 现已弃用。
 * 包含 Adobe Target `mbox.js` 版本 63。 Adobe 强烈建议将实施切换至 `at.js` v1.x。
-* 包含 `at.js` 版本 1.5.0。 Adobe 建议使用 [Adobe Experience Platform Launch](https://business.adobe.com/cn/products/experience-platform/launch.html) 来配置 `at.js` v1.x，并将其部署到网站。
+* 包含 `at.js` 版本 1.5.0。 Adobe 建议使用 [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) 来配置 `at.js` v1.x，并将其部署到网站。
 
 #### AEM 与 Adobe Analytics {#aem-amp-adobe-analytics}
 
 * 包含 `s_code.js` H.27.5。 Adobe 建议将实施切换至 `AppMeasurement.js`。
-* 包含 `AppMeasurement.js` v1.8.0。 Adobe 建议使用 [Adobe Experience Platform Launch](https://business.adobe.com/cn/products/experience-platform/launch.html) 将 AppMeasurement.js 部署到网站。
+* 包含 `AppMeasurement.js` v1.8.0。 Adobe 建议使用 [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) 将 AppMeasurement.js 部署到网站。
 
 #### AEM 和 Commerce {#aem-commerce}
 
-Commerce integration framework的改进自AEM 6.4之后加快了发布周期。 使用Commerce integration framework[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html?lang=zh-Hans)从AEM和Adobe Commerce集成中了解更多信息。
+Commerce integration framework的改进自AEM 6.4之后加快了发布周期。 使用Commerce integration framework](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html)从[AEM和Adobe Commerce集成中了解更多信息。
 
 #### Communities 附加组件 {#communities-add-on}
 
@@ -360,7 +360,7 @@ AEM 6.5 引入了以下功能和增强，旨在提升 AEM 用户、DAM 角色以
 
 [!DNL Experience Manager Assets Brand Portal] 可帮助您轻松获取、有效管控并安全地向外部供应商/代理机构和内部业务用户分发已批准的资产，且支持跨设备访问。 它能够提升资产共享效率，加快资产上市时间，并降低不合规使用和未经授权的访问的风险。
 
-有关更多信息，请参阅[&#x200B; Brand Portal 新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=zh-Hans)。
+有关更多信息，请参阅[ Brand Portal 新增功能](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html)。
 
 #### 连接的资产 {#connectedassets}
 
@@ -376,7 +376,7 @@ AEM 6.5 引入了以下功能和增强，旨在提升 AEM 用户、DAM 角色以
 
 [!DNL Dynamic Media] 在 [!DNL Experience Manager Assets] 中提供了增强的富媒体创作与投放能力，助力打造沉浸式和个性化的前沿体验。 通过上传单个高质量的主资产，并利用 Adobe 的先进云渲染与查看器，您可以即时交付任意组合的渲染版本，以支持组织的媒体战略。
 
-有关新 [!DNL Dynamic Media] 功能的详细信息，请参阅 [Dynamic Media 发行说明](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=zh-Hans)。
+有关新 [!DNL Dynamic Media] 功能的详细信息，请参阅 [Dynamic Media 发行说明](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html)。
 
 ##### 360 视频支持 {#video-support}
 
@@ -388,7 +388,7 @@ AEM 6.5 引入了以下功能和增强，旨在提升 AEM 用户、DAM 角色以
 
 ##### 辅助功能增强 {#accessibility-enhancements}
 
-[!DNL Dynamic Media] 查看器现已支持增强的辅助功能，例如 Aria 支持、屏幕阅读器和替代文本。 有关更多详细信息，请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html?lang=zh-Hans)。
+[!DNL Dynamic Media] 查看器现已支持增强的辅助功能，例如 Aria 支持、屏幕阅读器和替代文本。 有关更多详细信息，请参阅[查看器参考指南](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/homeviewers.html)。
 
 #### 搜索体验增强 {#experience-enhancement-for-searching}
 
@@ -435,7 +435,7 @@ AEM 6.5 Forms 新增功能与增强。 亮点包括：
 
 Adobe 采用以客户为中心的开发模式，允许客户在规范制定、开发和测试等各个阶段参与开发过程。 感谢在此过程中作出贡献的所有客户和合作伙伴。
 
-Adobe 已建立相应的流程和机制，用于收集、优先排序并跟踪以客户为导向的错误修复和功能增强请求的开发。 [Experience Manager 支持门户](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager#support) 已与 Adobe 增强与缺陷跟踪系统集成。 客户问题会在可能的情况下由客户支持团队识别并解决。 当问题升级至研发团队时，所有客户信息均会被记录，并用于优先级排序和报告。 在开发中，优先处理付费支持、保修问题以及客户付费的功能增强。
+Adobe 已建立相应的流程和机制，用于收集、优先排序并跟踪以客户为导向的错误修复和功能增强请求的开发。 [Experience Manager 支持门户](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) 已与 Adobe 增强与缺陷跟踪系统集成。 客户问题会在可能的情况下由客户支持团队识别并解决。 当问题升级至研发团队时，所有客户信息均会被记录，并用于优先级排序和报告。 在开发中，优先处理付费支持、保修问题以及客户付费的功能增强。
 
 这一优先级流程在 AEM 6.5 中已促成了 750 多项以客户为中心的修复与改进。
 
@@ -445,7 +445,7 @@ Adobe 已建立相应的流程和机制，用于收集、优先排序并跟踪�
 
 * 独立版快速入门：`cq-quickstart-6.5.0.jar`。
 * 应用程序服务器快速入门：`cq-quickstart-6.5.0.war`。
-* 适用于各类 Web 服务器和平台的 Dispatcher 4.3.2 或更高版本。 请参阅[下载链接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=zh-Hans)
+* 适用于各类 Web 服务器和平台的 Dispatcher 4.3.2 或更高版本。 请参阅[下载链接](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html)
 * Eclipse IDE 插件（[了解更多并下载](/help/sites-developing/aem-eclipse.md)）
 
 * Brackets 代码编辑器扩展（[了解更多并下载](/help/sites-developing/aem-brackets.md)）
@@ -457,17 +457,17 @@ Adobe 已建立相应的流程和机制，用于收集、优先排序并跟踪�
 * We.Retail 参考实施（[了解更多](/help/sites-developing/we-retail.md)）
 * Maven 项目原型：
 
-   * 用于全栈站点：[GitHub 项目](https://github.com/adobe/aem-project-archetype)
-   * 用于 React/Angular 单页应用程序：[GitHub 项目](https://github.com/adobe/aem-spa-project-archetype)
+  * 用于全栈站点：[GitHub 项目](https://github.com/adobe/aem-project-archetype)
+  * 用于 React/Angular 单页应用程序：[GitHub 项目](https://github.com/adobe/aem-spa-project-archetype)
 
 * 适用于各类目标平台的 AEM Screens 播放器（[下载](https://download.macromedia.com/screens/)）
 
 * 智能内容语言模型。 预装英语——可下载更多语言
 
-   * [德语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-   * [西班牙语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
-   * [意大利语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-   * [法语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+  * [德语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+  * [西班牙语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+  * [意大利语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+  * [法语](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
 * AEM 现代化工具套件，例如对话框转化工具。 （[GitHub 项目](https://github.com/adobe/aem-modernize-tools)）
 
@@ -478,7 +478,7 @@ Adobe 已建立相应的流程和机制，用于收集、优先排序并跟踪�
 
 **Forms**
 
-* [AEM Forms功能包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)
+* [AEM Forms功能包](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)
 * [AEM Forms OSGi客户端SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## 语言 {#languages}
@@ -526,9 +526,9 @@ Adobe 会持续评估产品功能，并在未来逐步以更强大的版本替�
 
   在执行以下操作时，请确保属性 `htmllibmanager.fileSystemOutputCacheLocation` 不是空字符串：
 
-   1. 调用 `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`。
-   2. 升级至 AEM 6.5。
-   3. 在 AEM 6.5 上执行“延迟内容迁移”。
+  1. 调用 `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`。
+  2. 升级至 AEM 6.5。
+  3. 在 AEM 6.5 上执行“延迟内容迁移”。
 
 * 如果在 AEM 6.5 实例中使用 JDK 11，部署某些包后部分页面可能会显示为空白。 日志文件中会出现如下错误消息：
 
@@ -575,13 +575,13 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * 当自适应表单被配置为动态更新某组件的值，并且承载该表单的发布实例是通过 Dispatcher 访问时，字段的动态更新功能将会停止工作。 要解决此问题，请在发布实例上打开 CRXDE，导航至 `/libs/fd/af/runtime/clientlibs/guideChartReducer`，并创建如下所示的属性。
 
-   * 名称：allowProxy
-   * 类型：布尔值
-   * 值：真
-   * 受保护：假
-   * 必填：假
-   * 多值：假
-   * 自动创建：假
+  * 名称：allowProxy
+  * 类型：布尔值
+  * 值：真
+  * 受保护：假
+  * 必填：假
+  * 多值：假
+  * 自动创建：假
 
   该属性允许运行时文件夹下的客户端库访问代理。 （CQ-4268679）
 
@@ -597,4 +597,4 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 * 在[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)中获取产品更新、补丁及附加功能包。
 
-* [通过 Admin Console 获取客户支持](https://adminconsole.adobe.com/)。 若要了解更多信息，请参阅[全新 Adobe 客户支持体验](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=zh-Hans)。
+* [通过 Admin Console 获取客户支持](https://adminconsole.adobe.com/)。 若要了解更多信息，请参阅[全新 Adobe 客户支持体验](https://experienceleague.adobe.com/docs/customer-one/using/home.html)。

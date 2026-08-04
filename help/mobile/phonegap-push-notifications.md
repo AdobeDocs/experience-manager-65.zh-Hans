@@ -11,8 +11,8 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '3135'
-ht-degree: 0%
+source-wordcount: '3248'
+ht-degree: 1%
 
 ---
 
@@ -26,11 +26,11 @@ ht-degree: 0%
 >
 >*推送通知不保证会传送；它们更像公告。 尽最大努力确保每个人都收到这些邮件，但它们不是保证的投放机制。 此外，发送推送的时间可能从不到一秒到最多半小时不等。*
 
-在AEM中使用推送通知需要一些不同的技术。 首先，必须使用推送通知服务提供商来管理ethenotifications和设备(AEM尚未执行此操作)。 使用AEM现成配置了两个提供程序： [Amazon Simple Notification Service](https://aws.amazon.com/sns/) （或SNS）和[Pushwoosh](https://www.pushwoosh.com/)。 其次，给定移动操作系统的推送技术必须通过适当的服务 — 适用于Apple设备的iOS推送通知服务（或APNS）；以及适用于Android™设备的Google云消息（或GCM）。 虽然AEM不会直接与这些平台特定的服务进行通信，但AEM必须提供一些相关的配置信息，以及这些服务执行推送的通知。
+在AEM中使用推送通知需要一些不同的技术。 首先，必须使用推送通知服务提供商来管理ethenotifications和设备（AEM尚未执行此操作）。 使用AEM现成配置了两个提供程序： [Amazon Simple Notification Service](https://aws.amazon.com/sns/) （或SNS）和[Pushwoosh](https://www.pushwoosh.com/)。 其次，给定移动操作系统的推送技术必须通过适当的服务 — 适用于Apple设备的iOS推送通知服务（或APNS）；以及适用于Android™设备的Google云消息（或GCM）。 虽然AEM不会直接与这些平台特定的服务进行通信，但AEM必须提供一些相关的配置信息，以及这些服务执行推送的通知。
 
 安装和配置后（如下所述），其工作方式如下：
 
-1. 推送通知在AEM中创建，并发送到服务提供商(Amazon SNS或Pushwoosh)。
+1. 推送通知在AEM中创建，并发送到服务提供商（Amazon SNS或Pushwoosh）。
 1. 服务提供商接收该请求并将其发送到核心提供商（APNS或GCM）。
 1. 核心提供商将通知推送到为该推送注册的所有设备。 对于每个设备，它会使用蜂窝数据网络或WiFi（设备上的任何可用项）。
 1. 如果为其注册的应用程序未运行，则会在设备上显示通知。 用户点击通知会启动应用程序并在应用程序中显示通知。 如果应用程序已在运行，则仅显示应用程序内通知。
@@ -48,7 +48,7 @@ ht-degree: 0%
 1. 向应用程序添加推送支持
 1. 准备电话以进行测试
 
-当Experience Manager管理员执行以下操作时：
+Experience Manager管理员会执行以下操作：
 
 1. 在AEM应用程序上配置推送
 1. 构建和部署应用程序
@@ -71,13 +71,13 @@ ht-degree: 0%
 
 转到Google页面[此处](https://developer.android.com/google/gcm/index.html)，熟悉Android™的Google Cloud Messaging。
 
-[执行以下步骤](https://developer.android.com/google/gcm/gs.html)以&#x200B;**创建Google API项目**、**启用GCM服务**&#x200B;和&#x200B;**获取API密钥**。 您需要&#x200B;**API密钥**&#x200B;才能将推送通知发送到Android™设备。 此外，请记录您的&#x200B;**项目编号**，有时也称为&#x200B;**GCM发件人ID**。
+[执行以下步骤](https://developer.android.com/google/gcm/gs.html)以&#x200B;**创建Google API项目**、**启用GCM服务**&#x200B;和&#x200B;**获取API密钥**。 您需要&#x200B;**API密钥**&#x200B;才能将推送通知发送到™设备。 此外，请记录您的&#x200B;**项目编号**，有时也称为&#x200B;**GCM发件人ID**。
 
 以下步骤显示了创建GCM API密钥的不同方法：
 
 1. 登录google并转到[Google的开发者页面](https://developers.google.com/mobile/add?platform=android&cntapi=gcm)。
 1. 从列表中选择您的应用程序（或创建一个）。
-1. 在Android™包名称下，输入您的应用程序ID，即`com.adobe.cq.mobile.weretail.outdoorsapp`。 （如果上述方法不起作用，请使用“test.test”重试。）
+1. 在™包名称下，输入您的应用程序ID，即`com.adobe.cq.mobile.weretail.outdoorsapp`。 （如果上述方法不起作用，请使用“test.test”重试。）
 1. 单击&#x200B;**继续选择并配置服务**
 1. 选择Cloud Messaging，然后单击&#x200B;**启用Google Cloud Messaging**。
 1. 随后将显示新的服务器API密钥和（新的或现有的）发件人ID。
@@ -96,7 +96,7 @@ AEM配置为使用下列三种推送通知服务之一：
 
 *Amazon SNS*&#x200B;和&#x200B;*Pushwoosh*&#x200B;配置允许您从AEM屏幕内部发送推送消息。
 
-*AdobeMobile Services*&#x200B;配置允许您使用Adobe Analytics帐户在AdobeMobile Services中配置和发送推送通知（但必须使用此配置集构建应用程序才能启用AMS推送通知）。
+*Adobe Mobile Services*&#x200B;配置允许您使用Adobe Analytics帐户在Adobe Mobile Services中配置和发送推送通知（但必须使用此配置集构建应用程序才能启用AMS推送通知）。
 
 #### 使用Amazon SNS消息服务 {#using-the-amazon-sns-messaging-service}
 
@@ -170,7 +170,7 @@ AEM配置为使用下列三种推送通知服务之一：
    <table>
     <tbody>
      <tr>
-     <td><p> </p> <p>{</p> <p> “版本”：“2012-10-17”，</p> <p> "Statement"： [</p> <p> {</p> <p> "Action"： [</p> <p> "mobileanalytics：PutEvents"，</p> <p> “cognito-sync：*”，</p> <p> "SNS：CreatePlatformEndpoint"，</p> <p> "SNS：Subscribe"</p> <p> ]，</p> <p> "Effect"： "Allow"，</p> <p> "Resource"： [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
+     <td><p> </p> <p>{</p> <p> “版本”：“2012-10-17”，</p> <p> "Statement"： [</p> <p> {</p> <p> "Action"： [</p> <p> "mobileanalytics：PutEvents"，</p> <p> “cognito-sync：*”，</p> <p> "SNS：CreatePlatformEndpoint"，</p> <p> "SNS：Subscribe"</p> <p> ],</p> <p> "Effect"： "Allow"，</p> <p> "Resource"： [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td>
      </tr>
     </tbody>
     </table>
@@ -193,14 +193,14 @@ AEM配置为使用下列三种推送通知服务之一：
 
 1. **创建应用程序**
 
-   1. 要获得Android™支持，您必须提供GCM API密钥。
+   1. 要获得™支持，您必须提供GCM API密钥。
    1. 配置应用程序时，选择Cordova作为框架。
    1. 对于iOS支持，您必须提供证书文件(.cer)、推送证书(.p12)和私钥密码；这些密码应该已从Apple的APNS站点中获取。 对于“框架”，请选择“Cordova”。
    1. Pushwoosh将为该应用程序生成一个应用程序ID，格式为“XXXXX-XXXXX”，其中每个X都是一个十六进制值（0到F）。
 
 >[!NOTE]
 >
->*如果在AEM中使用相同的应用程序ID（和其他相关值： API访问令牌和GCM ID）配置了第二个应用程序，则通过AEM上的第二个应用程序发送的任何推送通知都将发送到具有该应用程序ID的任何其他应用程序。*
+>*如果在AEM中使用相同的应用程序ID（和其他相关值： API访问令牌和GCM ID）配置了第二个应用程序，则通过AEM上的第二个应用程序发送的任何推送通知都将发送到使用该应用程序ID的任何其他应用程序。*
 
 ### 步骤3：向应用程序添加推送支持 {#step-add-push-support-to-the-app}
 
@@ -208,12 +208,12 @@ AEM配置为使用下列三种推送通知服务之一：
 
 创建两个名为notificationsConfig的内容节点（一个在app-config中，一个在app-config-dev中）：
 
-* /content/`<your app>`/shell/jcr：content/pge-app/app-config-dev/notificationsConfig
-* /content/`<your app>`/shell/jcr：content/pge-app/app-config/notificationsConfig
+* /content/`<your app>`/shell/jcr:content/pge-app/app-config-dev/notificationsConfig
+* /content/`<your app>`/shell/jcr:content/pge-app/app-config/notificationsConfig
 
 使用以下属性（.content.xml文件）：
-&lt;jcr：root xmlns：jcr=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns：nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot;
-jcr：primaryType=&quot;nt：unstructured&quot;
+&lt;jcr:root xmlns:jcr=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot;
+jcr:primaryType=&quot;nt:unstructured&quot;
 excludeProperties=&quot;[appAPIAccessToken]&quot;
 path=&quot;。./../../...&quot;
 targetRootDirectory=&quot;www&quot;
@@ -227,7 +227,7 @@ type=&quot;notificationsconfig&quot;/>
 
 必须按照以下步骤将推送通知客户端库添加到应用程序中：
 
-CRXDE Lite：
+在CRXDE Lite中：
 
 1. 导航到&#x200B;*/etc/designs/phonegap/&lt;应用程序名称>/clientlibsall。*
 1. 在属性窗格中双击嵌入部分。
@@ -252,9 +252,9 @@ CRXDE Lite：
 
 使用XCode 8.1时，在使用推送通知之前，您必须转到项目中的功能选项卡，并将推送通知切换为打开状态。
 
-#### Android™ {#android}
+#### ™ {#android}
 
-要使用CLI在Android™手机上安装应用程序（请参阅下文： **步骤6 — 构建和部署应用程序**），您必须先将手机置于“开发人员模式”。 有关此操作的详细信息，请参阅[启用设备上开发人员选项](https://developer.android.com/tools/device.html#developer-device-options)。
+要使用CLI在™手机上安装应用程序（请参阅下文： **步骤6 — 构建和部署应用程序**），您必须先将手机置于“开发人员模式”。 有关此操作的详细信息，请参阅[启用设备上开发人员选项](https://developer.android.com/tools/device.html#developer-device-options)。
 
 ### 步骤5：在AEM应用程序上配置推送 {#step-configure-push-on-aem-apps}
 
@@ -263,10 +263,10 @@ CRXDE Lite：
 1. 为推送通知创建相应的授权组。
 1. 以相应的用户身份登录AEM，然后单击“应用程序”选项卡。
 1. 单击应用程序。
-1. 找到管理Cloud Service图块，然后单击铅笔图标以修改云配置。
-1. 选择Amazon SNS连接、Pushwoosh连接或AdobeMobile Services作为通知配置。
+1. 找到管理云服务拼贴，然后单击铅笔图标以修改您的云配置。
+1. 选择Amazon SNS Connection、Pushwoosh Connection或Adobe Mobile Services作为通知配置。
 1. 输入提供程序属性，单击提交以保存它们，然后单击完成。 除非有AMS，否则在此阶段不会对其进行远程验证。
-1. 此时，您应该会看到刚才在“管理Cloud Service”拼贴上输入的配置。
+1. 现在，您应该会看到刚才在“管理云服务”拼贴上输入的配置。
 
 ### 步骤6：构建和部署应用程序 {#step-build-and-deploy-the-app}
 
@@ -274,7 +274,7 @@ CRXDE Lite：
 
 使用PhoneGap构建和部署应用程序的方法有两种。
 
-**注意：**&#x200B;对于推送通知测试，模拟器不够，因为推送通知在推送提供程序(Apple或Google)和设备之间使用不同的协议。 当前的Mac/PC硬件和模拟器不支持此功能。
+**注意：**&#x200B;对于推送通知测试，模拟器不够，因为推送通知在推送提供程序（Apple或Google）和设备之间使用不同的协议。 当前的Mac/PC硬件和模拟器不支持此功能。
 
 1. *PhoneGap Build*&#x200B;是PhoneGap提供的服务，它将在其服务器上为您构建应用程序，并允许您将其直接下载到设备。 请参阅`https://build.phonegap.com/`上的PhoneGap Build文档，了解如何设置和使用PhoneGap Build。
 
@@ -293,19 +293,19 @@ CRXDE Lite：
 1. 发送通知
 
    * 在应用程序仪表板中，找到推送通知拼贴。
-   * 选择通知，或单击右下方的详细信息按钮(. ..)，显示通知列表。 此列表还指示通知是否已准备好发送、已发送，或者在发送过程中是否出现错误。
+   * 选择通知，或单击右下方的详细信息按钮( )。 . .)，显示通知列表。 此列表还指示通知是否已准备好发送、已发送，或者在发送过程中是否出现错误。
    * 选中一个通知的复选框（仅限），然后单击列表上方的“发送通知”按钮。 在出现的对话框中，您有机会“取消”或“发送”通知。
 
 1. 处理结果
 
-   * 如果推送通知服务(Amazon SNS或Pushwoosh)收到发送请求，确认该请求有效，然后将其成功发送给本机提供程序（APNS和GCM），“发送”对话框会关闭，但不显示任何消息。 在通知列表中，该通知的状态将列为“已发送”。
+   * 如果推送通知服务（Amazon SNS或Pushwoosh）收到发送请求，确认该请求有效，然后将其成功发送给本机提供程序（APNS和GCM），“发送”对话框会关闭，但不显示任何消息。 在通知列表中，该通知的状态将列为“已发送”。
    * 如果推送发送失败，则对话框会显示一条消息，指示问题。 在通知列表中，该通知的状态列为“错误”，但如果问题已解决，则可再次发送通知。 如果出现错误，则服务器错误日志中应显示其他错误信息。
    * 请注意，iOS与Android推送通知之间存在一些平台差异™ 其中包括：
 
-      * 在Android™上部署应用程序后，使用CLI构建将会启动该应用程序。 在iOS上，您必须手动启动它。 由于推送注册步骤是在启动时执行的，因此Android™应用程序可以立即接收推送通知（因为它已启动并注册），而iOS应用程序则无法接收推送通知。
-      * 在Android™上，“确定”按钮文本全部为大写字母（以及在应用程序内通知中添加的任何其他按钮中均为大写字母），而在iOS中，并非如此。
+     * 在™上部署应用程序后，使用CLI构建将会启动该应用程序。 在iOS上，您必须手动启动它。 由于推送注册步骤是在启动时执行的，因此™应用程序可以立即接收推送通知（因为它已启动并注册），而iOS应用程序则无法接收推送通知。
+     * 在™上，“确定”按钮文本全部为大写字母（以及在应用程序内通知中添加的任何其他按钮中均为大写字母），而在iOS中，并非如此。
 
-对于AMS推送通知，必须从AMS服务器编写并发送通知。 除了通过AWS和Pushwoosh的AEM通知功能之外，AMS还提供其他推送通知功能。
+对于AMS推送通知，必须从AMS服务器编写并发送通知。 AMS提供了其他推送通知功能，这些功能超出了AEM在AWS和Pushwoosh中提供的通知功能。
 
 >[!NOTE]
 >
@@ -325,7 +325,7 @@ CRXDE Lite：
 >
 >要访问仪表板中的“推送通知”拼贴，请执行以下步骤。
 
-1. 单击&#x200B;**管理Cloud Service**&#x200B;图块的右上角的编辑。
+1. 单击&#x200B;**Manage Cloud Services**&#x200B;图块的右上角的编辑。
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
