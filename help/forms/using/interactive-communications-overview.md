@@ -8,15 +8,20 @@ exl-id: 6cfbeec0-0be3-48b2-a4bb-fd19c69c92c7
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 2e13a0cd09477ccd5374f1850efad882c8222f0a
 workflow-type: tm+mt
-source-wordcount: '487'
-ht-degree: 7%
+source-wordcount: '526'
+ht-degree: 10%
 
 ---
 
 
 # 交互式通信概述 {#interactive-communications-overview}
+
+| 版本 | 文章链接 |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
+| AEM 6.5 | 本文 |
 
 本文包括概述、示例用例、创建工作流以及交互式通信与信件之间的区别。
 
@@ -28,7 +33,7 @@ ht-degree: 7%
 
 以下是交互式通信的主要功能：
 
-- 与表单数据模型的现成集成，支持对后端数据库和其他CRM系统(如MS® Dynamics)的轻松而简化的访问
+- 与表单数据模型的现成集成，支持对后端数据库和其他CRM系统（如MS® Dynamics）的轻松而简化的访问
 - 用于打印和Web渠道的集成创作界面，能够自动从打印渠道生成Web渠道
 - 以易于理解的可视格式在打印和Web中显示信息的图表
 - 文档片段支持规则编辑器和表单数据模型
@@ -87,7 +92,7 @@ ht-degree: 7%
   <tr>
    <td>架构</td>
    <td>表单数据模型 </td>
-   <td>数据字典 </td>
+   <td>数据词典 </td>
   </tr>
   <tr>
    <td>本地化</td>
@@ -124,7 +129,7 @@ ht-degree: 7%
    <td>支持</td>
   </tr>
    <tr>
-   <td>提交内容</td>
+   <td>提交</td>
    <td>支持</td>
    <td>支持</td>
   </tr>
