@@ -20,7 +20,7 @@ ht-degree: 10%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/interactive-communication/overview/introduction) |
 | AEM 6.5 | 本文 |
 
 本文包括概述、示例用例、创建工作流以及交互式通信与信件之间的区别。
