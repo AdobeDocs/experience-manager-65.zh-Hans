@@ -12,7 +12,7 @@ feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2924'
+source-wordcount: '2955'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ ht-degree: 0%
 >
 >您使用AEM Tools创建的PhoneGap应用程序已配置为通过Content Sync将AEM页面用作内容。
 
-内容同步框架将创建一个包含Web内容的存档文件。 内容可以是简单页面、图像和PDF文件或整个Web应用程序中的任意内容。 内容同步API提供了从移动应用程序或构建进程访问存档文件的权限，以便可以检索内容并将其包含在应用程序中。
+内容同步框架将创建一个包含Web内容的存档文件。 内容可以是简单页面、图像和PDF文件中的任何内容，也可以是整个Web应用程序。 内容同步API提供了从移动应用程序或构建进程访问存档文件的权限，以便可以检索内容并将其包含在应用程序中。
 
 以下一系列步骤展示了Content Sync的典型用例：
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 创建内容同步配置以指定交付给客户端的ZIP文件的内容。 您可以创建任意数量的内容同步配置。 每个配置都有一个名称用于标识。
 
-要创建内容同步配置，请向存储库中添加`cq:ContentSyncConfig`节点，并将`sling:resourceType`属性设置为`contentsync/config`。 `cq:ContentSyncConfig`节点可以位于存储库中的任意位置，但是AEM发布实例上的用户必须能够访问该节点。 因此，您应在`/content`下添加节点。
+要创建内容同步配置，请向存储库中添加`cq:ContentSyncConfig`节点，并将`sling:resourceType`属性设置为`contentsync/config`。 `cq:ContentSyncConfig`节点可以位于存储库中的任意位置，但是该节点必须可供AEM发布实例上的用户访问。 因此，您应在`/content`下添加节点。
 
-要指定内容同步ZIP文件的内容，请将子节点添加到cq：ContentSyncConfig节点。 每个子节点的以下属性标识要包含的内容项，以及在添加内容项时如何对其进行处理：
+要指定内容同步ZIP文件的内容，请将子节点添加到cq:ContentSyncConfig节点。 每个子节点的以下属性标识要包含的内容项，以及在添加内容项时如何对其进行处理：
 
 * `path`：内容的位置。
 * `type`：用于处理内容的配置类型的名称。 提供了几种类型，有关这些类型的说明，请参见配置类型。
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 指定可以从内容同步下载的用户或组。 您可以配置可以从所有内容同步缓存下载的默认用户或组，也可以覆盖默认用户或组，并配置特定内容同步配置的访问权限。
 
-安装AEM后，管理员组的成员可以默认从Content Sync下载。
+安装AEM后，管理员组的成员默认情况下可以从Content Sync下载。
 
 ### 设置内容同步下载的默认访问权限 {#setting-the-default-access-for-content-sync-downloads}
 
@@ -100,13 +100,13 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 
 您可以覆盖默认用户，并指定更新特定内容同步缓存的用户或组。
 
-要覆盖默认用户，请通过将以下属性添加到cq：ContentSyncConfig节点来指定用户或组，以更新特定内容同步配置：
+要覆盖默认用户，请通过将以下属性添加到cq:ContentSyncConfig节点来指定用户或组，该用户或组将执行特定Content Sync配置的更新：
 
 * 名称： updateuser
 * 类型：字符串
 * 值：可执行更新的用户或组的名称。
 
-如果cq：ContentSyncConfig节点没有`updateuser`属性，则默认匿名用户将更新缓存。
+如果cq:ContentSyncConfig节点没有`updateuser`属性，则默认匿名用户将更新缓存。
 
 ### 配置类型 {#configuration-types}
 
@@ -135,11 +135,11 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 * **path** - /content/dam下的资产文件夹的路径。
 * **演绎版** — 类型是一个字符串数组，允许用户指定要使用的演绎版，而不是默认图像。 以下列表汇总了一些现成的演绎版，但您也可以使用工作流创建的任何演绎版：
 
-   * *原始*
-   * *cq5dam.thumbnail.48.48.png*
-   * *cq5dam.thumbnail.319.319.png*
-   * *cq5dam.thumbnail.140.100.png*
-   * *cq5dam.web.1280.1280.png*
+  * *原始*
+  * *cq5dam.thumbnail.48.48.png*
+  * *cq5dam.thumbnail.319.319.png*
+  * *cq5dam.thumbnail.140.100.png*
+  * *cq5dam.web.1280.1280.png*
 
 **图像** — 收集图像。
 
@@ -178,7 +178,7 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 
 名为&#x200B;**PathRewriterTransformerFactory**&#x200B;的AEM服务允许您配置将重写的特定html属性。 该服务可以在Web控制台中进行配置，并且具有`rewrite`节点的每个属性的配置： `clientlibs`、`images`和`links`。
 
-此功能是在AEM 5.5中添加的。
+AEM 5.5中添加了此功能。
 
 ### 示例内容同步配置 {#example-content-sync-configuration}
 
@@ -288,7 +288,7 @@ public class OtherTypeUpdateHandler extends AbstractSlingResourceUpdateHandler {
 
 ### 实施自定义更新处理程序 {#implementing-a-custom-update-handler}
 
-每个We.Retail Mobile页面的左上角都有一个徽标，我们想将该徽标包含在zip文件中。 但是，对于缓存优化，AEM不引用图像文件在存储库中的实际位置，这会阻止我们仅使用&#x200B;**副本**&#x200B;配置类型。 我们必须提供自己的&#x200B;**徽标**&#x200B;配置类型，以便在AEM请求的位置提供图像。 以下代码列表显示了徽标更新处理程序的完整实施：
+每个We.Retail Mobile页面的左上角都有一个徽标，我们想将该徽标包含在zip文件中。 但是，对于缓存优化，AEM不引用图像文件在存储库中的实际位置，这会阻止我们仅使用&#x200B;**副本**&#x200B;配置类型。 我们必须改为提供我们自己的&#x200B;**徽标**&#x200B;配置类型，以便在AEM请求的位置提供图像。 以下代码列表显示了徽标更新处理程序的完整实施：
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

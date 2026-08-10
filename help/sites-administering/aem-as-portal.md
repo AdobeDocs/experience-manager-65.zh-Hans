@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '6110'
+source-wordcount: '6118'
 ht-degree: 0%
 
 ---
@@ -171,7 +171,7 @@ Portlet可以配置自己的缓存，以便显示Portlet中的内容而无需访
 部署缓存后，portlet将缓存发布实例中的内容。 可以通过AEM中的Dispatcher刷新使Portlet缓存失效。 要将Portlet配置为使用自己的缓存，请执行以下操作：
 
 1. 在作者中配置以门户服务器为目标的复制代理。
-1. 假定门户服务器在主机&#x200B;**localhost** **port 8080**&#x200B;上运行，并且上下文&#x200B;**cqportlet**&#x200B;中装载了AEM portlet Web应用程序，则用于刷新缓存的URL为`https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`。使用GET作为方法。
+1. 假定门户服务器在主机&#x200B;**localhost** **port 8080**&#x200B;上运行，并且上下文&#x200B;**cqportlet**&#x200B;中装载了AEM portlet Web应用程序，则用于刷新缓存的URL为`https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`。 使用GET作为方法。
    **注意：**&#x200B;您可以发送名为&#x200B;**Path**&#x200B;的http标头，而不使用请求参数。
 
 #### 通过复制代理刷新缓存 {#flushing-the-cache-via-replication-agent}
@@ -730,7 +730,7 @@ AEM快速入门JAR文件包含portlet组件文件。 要获取文件(cq-portlet-
 
 要访问AEM WCM提供的内容，门户服务器需要安装AEM Portal Director Portlet。 要执行此操作，请使用本节中提供的步骤安装、配置Portlet并将其添加到门户页面。
 
-默认情况下，Portlet连接到localhost:4503上的发布实例，并连接到localhost:4502上的创作实例。 这些值可以在部署portlet的过程中更改。 门户控制器可在存储库的/libs/portal/directory下作为内容使用。 下载应用程序war文件，然后再使用它。
+默认情况下，portlet连接到localhost：4503上的发布实例，并连接到localhost：4502上的创作实例。 这些值可以在部署portlet的过程中更改。 门户控制器可在存储库的/libs/portal/directory下作为内容使用。 下载应用程序war文件，然后再使用它。
 
 ### 正在下载war文件 {#downloading-the-war-file}
 
@@ -776,7 +776,7 @@ AEM快速入门JAR文件包含portlet组件文件。 要获取文件(cq-portlet-
    * **作者基本URL**： AEM创作实例的基本URL。
    * **发布基本URL**： AEM发布实例的基本URL。
    * **作者用作发布**：是否将作者实例用作发布
-实例（用于开发）？
+     实例（用于开发）？
 
    ![chlimage_1-137](assets/chlimage_1-137.png)
 

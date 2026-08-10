@@ -11,7 +11,7 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '2950'
+source-wordcount: '2976'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 使用Content Sync将内容打包，以便能够在本机移动设备应用程序中使用。 在Adobe Experience Manager (AEM)中创作的页面可用作应用程序内容，即使设备处于离线状态也是如此。 此外，由于AEM页面基于Web标准，因此它们可以跨平台工作，使您能够将其嵌入任何本机包装器中。 此策略可减少开发工作量，并让您轻松更新应用程序内容。
 
-内容同步框架将创建一个包含Web内容的存档文件。 内容可以是简单页面、图像和PDF文件或整个Web应用程序中的任意内容。 内容同步API提供了从移动应用程序或构建进程访问存档文件的权限，以便可以检索内容并将其包含在应用程序中。
+内容同步框架将创建一个包含Web内容的存档文件。 内容可以是简单页面、图像和PDF文件中的任何内容，也可以是整个Web应用程序。 内容同步API提供了从移动应用程序或构建进程访问存档文件的权限，以便可以检索内容并将其包含在应用程序中。
 
 以下一系列步骤展示了Content Sync的典型用例：
 
@@ -39,7 +39,7 @@ ht-degree: 0%
 
 * 处理程序必须实现&#x200B;*com.day.cq.contentsync.handler.ContentUpdateHandler*（直接或扩展具有此功能的类）
 * 处理程序可以扩展&#x200B;*com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* 如果处理程序更新ContentSync缓存，则只能报告true。 如果错误地报告true，则AEM会在实际没有发生更新时创建更新。
+* 如果处理程序更新ContentSync缓存，则只能报告true。 如果错误地报告为true，则AEM会在实际没有发生更新时创建更新。
 * 仅当内容发生更改时，处理程序才应更新缓存。 如果不需要白色，请勿写入缓存。 这会导致创建不必要的更新。
 
 >[!NOTE]
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 创建内容同步配置以指定交付给客户端的ZIP文件的内容。 您可以创建任意数量的内容同步配置。 每个配置都有一个名称用于标识。
 
-要创建内容同步配置，请向存储库中添加`cq:ContentSyncConfig`节点，并将`sling:resourceType`属性设置为`contentsync/config`。 `cq:ContentSyncConfig`节点可以位于存储库中的任意位置，但是AEM发布实例上的用户必须能够访问该节点。 因此，您应在`/content`下添加节点。
+要创建内容同步配置，请向存储库中添加`cq:ContentSyncConfig`节点，并将`sling:resourceType`属性设置为`contentsync/config`。 `cq:ContentSyncConfig`节点可以位于存储库中的任意位置，但是该节点必须可供AEM发布实例上的用户访问。 因此，您应在`/content`下添加节点。
 
-要指定内容同步ZIP文件的内容，请将子节点添加到cq：ContentSyncConfig节点。 每个子节点的以下属性标识要包含的内容项，以及在添加内容项时如何对其进行处理：
+要指定内容同步ZIP文件的内容，请将子节点添加到cq:ContentSyncConfig节点。 每个子节点的以下属性标识要包含的内容项，以及在添加内容项时如何对其进行处理：
 
 * `path`：内容的位置。
 * `type`：用于处理内容的配置类型的名称。 有几种类型可用，在&#x200B;*配置类型*&#x200B;一节中有介绍。
@@ -69,7 +69,7 @@ ht-degree: 0%
 
 指定可以从内容同步下载的用户或组。 您可以配置可以从所有内容同步缓存下载的默认用户或组，也可以覆盖默认用户或组，并配置特定内容同步配置的访问权限。
 
-安装AEM后，管理员组的成员可以默认从Content Sync下载。
+安装AEM后，管理员组的成员默认情况下可以从Content Sync下载。
 
 #### 设置内容同步下载的默认访问权限 {#setting-the-default-access-for-content-sync-downloads}
 
@@ -100,7 +100,7 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 
 您可以覆盖默认用户，并指定更新特定内容同步缓存的用户或组。
 
-要覆盖默认用户，请通过将以下属性添加到cq：ContentSyncConfig节点来指定用户或组，以更新特定内容同步配置：
+要覆盖默认用户，请通过将以下属性添加到cq:ContentSyncConfig节点来指定用户或组，该用户或组将执行特定Content Sync配置的更新：
 
 * 名称：`updateuser`
 * 类型：`String`
@@ -172,7 +172,7 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 
 名为&#x200B;**PathRewriterTransformerFactory**&#x200B;的AEM服务允许您配置将重写的特定html属性。 该服务可以在Web控制台中进行配置，并且具有`rewrite`节点的每个属性的配置： `clientlibs`、`images`和`links`。
 
-此功能是在AEM 5.5中添加的。
+AEM 5.5中添加了此功能。
 
 ### 示例内容同步配置 {#example-content-sync-configuration}
 

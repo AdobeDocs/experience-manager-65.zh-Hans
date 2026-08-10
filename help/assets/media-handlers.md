@@ -112,9 +112,9 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 * `com.day.cq.dam.api.handler.AssetHandler`接口：此接口描述添加了对特定MIME类型的支持的服务。 添加MIME类型需要实现此接口。 该界面包含用于导入和导出特定文档、用于创建缩略图和提取元数据的方法。
 * `com.day.cq.dam.core.AbstractAssetHandler`类：此类用作所有其他资产处理程序实现的基础，并提供常用功能。
 * `com.day.cq.dam.core.AbstractSubAssetHandler` class:
-   * 此类用作所有其他资产处理程序实现的基础，并提供常用功能以及子资产提取的常用功能。
-   * 启动实现的最佳方法是继承提供的抽象实现，该实现处理大多数事务并提供合理的默认行为：com.day.cq.dam.core.AbstractAssetHandler类。
-   * 此类已提供抽象服务描述符。 因此，如果您从此类继承并使用maven-sling-plugin，请确保将继承标志设置为true。
+  * 此类用作所有其他资产处理程序实现的基础，并提供常用功能以及子资产提取的常用功能。
+  * 启动实现的最佳方法是继承提供的抽象实现，该实现处理大多数事务并提供合理的默认行为：com.day.cq.dam.core.AbstractAssetHandler类。
+  * 此类已提供抽象服务描述符。 因此，如果您从此类继承并使用maven-sling-plugin，请确保将继承标志设置为true。
 
 必须实施以下方法：
 

@@ -7,7 +7,7 @@ feature: Administering
 role: Admin
 source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
 workflow-type: tm+mt
-source-wordcount: '1060'
+source-wordcount: '1068'
 ht-degree: 1%
 
 ---
@@ -45,10 +45,10 @@ Adobe Experience Manager (AEM)允许您将页面导出为包括图像、`.js`和
 1. 请求导出页面，在URL中将后缀`html`替换为`export.zip`。
 
    例如：
-   * localhost:4502/content/we-retail/language-masters/en.html
+   * localhost：4502/content/we-retail/language-masters/en.html
 
    访问方式：
-   * localhost:4502/content/we-retail/language-masters/en.export.zip
+   * localhost：4502/content/we-retail/language-masters/en.export.zip
 
 1. 将存档文件下载到您的文件系统。
 
@@ -56,7 +56,7 @@ Adobe Experience Manager (AEM)允许您将页面导出为包括图像、`.js`和
 
    * 子文件夹`content`，它是反映存储库中页面路径的一系列子文件夹的根
 
-      * 在此结构中有选定页面(`<page-name>.html`)的html文件
+     * 在此结构中有选定页面(`<page-name>.html`)的html文件
 
    * 根据导出模板中的设置，可以找到其他资源（`.js`个文件、`.css`个文件、图像等）
 
@@ -119,16 +119,16 @@ For more details about the type property, see the Overview of configuration type
 * `page`
 页面节点用于将页面html复制到zip文件。 它具有以下特性：
 
-   * 必需节点。
-   * 位于`/etc/contentsync/templates/<mysite>`下。
-   * 使用属性`Name`设置为`page`进行定义。
-   * 节点类型为`nt:unstructured`
+  * 必需节点。
+  * 位于`/etc/contentsync/templates/<mysite>`下。
+  * 使用属性`Name`设置为`page`进行定义。
+  * 节点类型为`nt:unstructured`
 
   `page`节点具有以下属性：
 
-   * 值为`pages`的`type`属性集。
+  * 值为`pages`的`type`属性集。
 
-   * 它没有`path`属性，因为当前页面路径已动态复制到配置。
+  * 它没有`path`属性，因为当前页面路径已动态复制到配置。
   <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
@@ -140,25 +140,25 @@ For more details about the type property, see the Overview of configuration type
 * `design`
 设计节点用于复制用于导出页面的设计。 它具有以下特性：
 
-   * 可选。
-   * 位于`/etc/contentsync/templates/<mysite>`下。
-   * 定义时属性`Name`设置为`design`。
-   * 节点类型为`nt:unstructured`。
+  * 可选。
+  * 位于`/etc/contentsync/templates/<mysite>`下。
+  * 定义时属性`Name`设置为`design`。
+  * 节点类型为`nt:unstructured`。
 
   `design`节点具有以下属性：
 
-   * `type`属性设置为值`copy`。
+  * `type`属性设置为值`copy`。
 
-   * 它没有`path`属性，因为当前页面路径被动态复制到配置。
+  * 它没有`path`属性，因为当前页面路径被动态复制到配置。
 
 * `generic`
 通用节点用于将clientlibs `.js`或`.css`文件等资源复制到zip文件。 它具有以下特性：
 
-   * 可选。
-   * 位于`/etc/contentsync/templates/<mysite>`下。
-   * 无特定名称。
-   * 节点类型为`nt:unstructured`。
-   * 具有`type`属性和`type`相关属性。<!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
+  * 可选。
+  * 位于`/etc/contentsync/templates/<mysite>`下。
+  * 无特定名称。
+  * 节点类型为`nt:unstructured`。
+  * 具有`type`属性和`type`相关属性。<!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
   例如，以下配置节点将`mysite.clientlibs.js`文件复制到zip文件：
 
