@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -103,19 +103,19 @@ ht-degree: 0%
 
 ![community-component4](assets/community-component4.png)
 
-* **包含具有sling：include**&#x200B;的子组件
+* **包含具有sling:include**&#x200B;的子组件
 
   如果未选中，《组件指南》将使用存储库中的现有资源（一个jcr节点，它是par节点的子节点）。
 
-   * 显示的文本为：“此组件通过其par节点包括在内。”
+  * 显示的文本为：“此组件通过其par节点包括在内。”
 
   如果选中，组件指南会使用sling动态包含子节点的resourceType（非现有资源）的组件。
 
-   * 显示的文本为：“此组件是动态包含的。”
+  * 显示的文本为：“此组件是动态包含的。”
 
   默认值为未选中。
 
-### Publish交互 {#publish-interactions}
+### 发布交互 {#publish-interactions}
 
 在发布实例上使用本指南时，能够以网站访客（未登录）以及登录时具有各种权限的成员身份体验组件和功能。
 
@@ -149,7 +149,7 @@ ht-degree: 0%
 
 以注释组件为例，在创作或发布实例上使用管理员权限登录：
 
-1. 浏览[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
+1. 浏览至[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)
 
    例如，[http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 

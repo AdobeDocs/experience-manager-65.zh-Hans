@@ -12,8 +12,8 @@ feature: Developing,Personalization
 role: Developer
 source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
 workflow-type: tm+mt
-source-wordcount: '2791'
-ht-degree: 1%
+source-wordcount: '2898'
+ht-degree: 2%
 
 ---
 
@@ -49,7 +49,7 @@ ht-degree: 1%
   - channels (string) multiple
 ```
 
-默认情况下，`cq:ClientLibraryFolder`节点可以放置在存储库的`/apps`、`/libs`和`/etc`子树中的任意位置(这些默认值和其他设置可通过[系统控制台](https://localhost:4502/system/console/configMgr)的&#x200B;**Adobe Granite HTML库管理器**&#x200B;面板进行控制)。
+默认情况下，`cq:ClientLibraryFolder`节点可以放置在存储库的`/apps`、`/libs`和`/etc`子树中的任意位置（这些默认值和其他设置可通过[系统控制台](https://localhost:4502/system/console/configMgr)的&#x200B;**Adobe Granite HTML库管理器**&#x200B;面板进行控制）。
 
 每个`cq:ClientLibraryFolder`都填充了一组JS和/或CSS文件以及几个支持文件（见下文）。 `cq:ClientLibraryFolder`的属性配置如下：
 
@@ -66,15 +66,15 @@ ht-degree: 1%
 
 ### 使用HTL {#using-htl}
 
-在HTL中，通过AEM提供的帮助程序模板来加载客户端库，该模板可通过[`data-sly-use`](https://helpx.adobe.com/cn/experience-manager/htl/using/block-statements.html#use)访问。 此文件中有三个可用的模板，可以通过[`data-sly-call`](https://helpx.adobe.com/cn/experience-manager/htl/using/block-statements.html#template-call)来调用它们：
+在HTL中，通过AEM提供的帮助程序模板来加载客户端库，该模板可通过[`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use)访问。 此文件中有三个可用的模板，可以通过[`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call)来调用它们：
 
 * **css** — 仅加载引用的客户端库的CSS文件。
 * **js** — 仅加载引用的客户端库的JavaScript文件。
-* **all** — 加载引用的客户端库的所有文件(CSS和JavaScript)。
+* **all** — 加载引用的客户端库的所有文件（CSS和JavaScript）。
 
-每个帮助程序模板都需要一个 `categories` 选项来引用所需的客户端库。该选项可以是字符串值的数组，也可以是包含逗号分隔值列表的字符串。
+每个帮助程序模板都需要一个 `categories` 选项来引用所需的客户端库。 该选项可以是字符串值的数组，也可以是包含逗号分隔值列表的字符串。
 
-有关详细信息和使用示例，请参阅文档[HTML模板语言快速入门](https://helpx.adobe.com/cn/experience-manager/htl/using/getting-started.html#loading-client-libraries)。
+有关详细信息和使用示例，请参阅文档[HTML模板语言快速入门](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries)。
 
 ### 使用JSP {#using-jsp}
 
@@ -97,11 +97,11 @@ ht-degree: 1%
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 ```
 
-有关完整信息，包括筛选JS、CSS或主题库的属性，请参阅[ui：includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib)。
+有关完整的信息（包括筛选JS、CSS或主题库的属性），请参阅[ui:includeClientLib](/help/sites-developing/taglib.md#lt-ui-includeclientlib)。
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`过去通常用于包含客户端库，但自AEM 5.6之后已弃用。应改用[`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib)，如上所述。
+>`<cq:includeClientLib>`过去通常用于包含客户端库，但自AEM 5.6之后已弃用。 应改用[`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib)，如上所述。
 
 ## 创建客户端库文件夹 {#creating-client-library-folders}
 
@@ -206,7 +206,7 @@ Web客户端必须具有访问`cq:ClientLibraryFolder`节点的权限。 您还�
 
 * **名称：**&#x200B;依赖项
 * **类型：**&#x200B;字符串[]
-* **值：**&#x200B;当前库文件夹所依赖的cq：ClientLibraryFolder节点的categories属性值。
+* **值：**&#x200B;当前库文件夹所依赖的cq:ClientLibraryFolder节点的categories属性值。
 
 例如，/ `etc/clientlibs/myclientlibs/publicmain`依赖于`cq.jquery`库。 引用主客户端库的JSP将生成包含以下代码的HTML：
 
@@ -446,7 +446,7 @@ AEM提供了几种用于调试和测试客户端库文件夹的工具。
 
    * 在Web浏览器中打开以下URL（根据需要使用不同的主机和端口）：
 
-      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
+     * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
 
    默认页面显示没有categories属性值的标记的输出。
 

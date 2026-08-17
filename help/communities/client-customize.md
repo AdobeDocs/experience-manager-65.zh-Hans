@@ -11,7 +11,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1235'
+source-wordcount: '1242'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 有关叠加注释组件的快速示例，请尝试[叠加注释组件教程](overlay-comments.md)。
 
-## 扩展名 {#extensions}
+## 扩展 {#extensions}
 
 扩展（覆盖）组件是一种针对特定用途进行修改的方法，不会影响使用默认组件的所有实例。 扩展组件在/apps文件夹中具有唯一名称，它引用/libs文件夹中的默认组件，因此组件的默认设计和行为不会受到修改。
 
@@ -95,7 +95,7 @@ ht-degree: 0%
 1. 标识要更改的元素（例如，编辑器区域、工具栏按钮、消息字体等）。
 1. 标识影响这些元素的CSS类/规则。
 1. 创建样式表文件(.css)。
-1. 在网站的客户端库文件夹([clientlibs](#clientlibs-for-scf))中包含样式表，并确保它包含在模板和具有[ui：includeClientLib](../../help/sites-developing/clientlibs.md)的页面中。
+1. 在网站的客户端库文件夹([clientlibs](#clientlibs-for-scf))中包含样式表，并确保它包含在模板和具有[ui:includeClientLib](../../help/sites-developing/clientlibs.md)的页面中。
 
 1. 重新定义已在样式表中标识(#2)的CSS类和规则，并添加样式。
 
@@ -111,7 +111,7 @@ ht-degree: 0%
 
 要扩展组件JavaScript实施，您需要：
 
-1. 为应用程序创建一个组件，并将jcr：resourceSuperType设置为扩展组件的jcr：resourceType的值，例如social/forum/components/hbs/forum。
+1. 为应用程序创建一个组件，并将jcr:resourceSuperType设置为扩展组件的jcr:resourceType的值，例如social/forum/components/hbs/forum。
 1. 检查默认SCF组件的JavaScript以确定需要使用SCF.registerComponent()注册哪些方法。
 1. 复制扩展组件的JavaScript或从头开始。
 1. 扩展方法。
@@ -161,7 +161,7 @@ SCF的clientlibs遵循两个变体的非常特定的命名模式，这些模式�
 
 ### 完成Clientlibs {#complete-clientlibs}
 
-完整的（非创作）clientlib包含依赖项，并且便于与ui：includeClientLib一起使用。
+完整的（非创作）clientlibs包含依赖项，并且便于与ui:includeClientLib一起包含。
 
 这些版本可在以下位置找到：
 

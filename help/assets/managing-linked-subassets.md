@@ -1,6 +1,6 @@
 ---
 title: 管理包含引用和多个页面的复合资产
-description: 了解如何在 [!DNL Adobe InDesign]、 [!DNL Adobe Illustrator]和 [!DNL Adobe Photoshop]内创建对数字资源的引用。 使用页面查看器功能可以查看多页文件(如PDF、INDD、PPT、PPTX和AI文件)的各个子资产页面。
+description: 了解如何在 [!DNL Adobe InDesign]、 [!DNL Adobe Illustrator]和 [!DNL Adobe Photoshop]内创建对数字资源的引用。 使用页面查看器功能可查看多页文件（如PDF、INDD、PPT、PPTX和AI文件）的各个子资产页面。
 contentOwner: AG
 role: User, Admin
 feature: Asset Management
@@ -8,7 +8,7 @@ exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 您可以从[!DNL Adobe Illustrator]文件中引用现有的数字资源。
 
-1. 使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans)，在本地文件系统上获取数字资产。 导航到要引用的资源的文件系统位置。
+1. 使用[[!DNL Experience Manager] 桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)，在本地文件系统上获取数字资产。 导航到要引用的资源的文件系统位置。
 1. 将资源从本地文件夹拖到[!DNL Illustrator]文件中。
 
 1. 将[!DNL Illustrator]文件保存到已装入的驱动器，或将[上传](/help/assets/manage-assets.md#uploading-assets)到[!DNL Experience Manager]存储库。
@@ -54,7 +54,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果[!DNL InDesign Server]已代理，则[!DNL InDesign]文件在其XMP元数据中嵌入其预览。 在这种情况下，不会明确要求提取缩略图。 但是，如果未代理[!DNL InDesign Server]，则必须为[!DNL InDesign]文件显式提取缩略图。
+>如果[!DNL InDesign Server]已代理，则[!DNL InDesign]文件在其XMP元数据中嵌入了其预览。 在这种情况下，不会明确要求提取缩略图。 但是，如果未代理[!DNL InDesign Server]，则必须为[!DNL InDesign]文件显式提取缩略图。
 
 上传INDD文件时，通过查询存储库中具有`xmpMM:InstanceID`和`xmpMM:DocumentID`属性的资产来获取引用。
 
@@ -65,14 +65,14 @@ ht-degree: 0%
 ### 通过导出ZIP文件创建对资产的引用 {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
 1. 执行[创建工作流模型](/help/sites-developing/workflows-models.md)中的步骤以创建工作流。
-1. 使用[!DNL Adobe InDesign]的[程序包功能](https://helpx.adobe.com/cn/indesign/how-to/indesign-package-files-for-handoff.html)导出文档。 [!DNL Adobe InDesign]可以将文档和链接的资源导出为包。 在这种情况下，导出的文件夹包含一个`Links`文件夹，该文件夹包含[!DNL InDesign]文件中的子资源。 `Links`文件夹与INDD文件位于同一文件夹中。
+1. 使用[!DNL Adobe InDesign]的[程序包功能](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html)导出文档。 [!DNL Adobe InDesign]可以将文档和链接的资源导出为包。 在这种情况下，导出的文件夹包含一个`Links`文件夹，该文件夹包含[!DNL InDesign]文件中的子资源。 `Links`文件夹与INDD文件位于同一文件夹中。
 1. 创建ZIP文件并将其上载到[!DNL Experience Manager]存储库。
 1. 启动`Unarchiver`工作流。
 1. 工作流完成后，链接文件夹中的引用将自动引用为子资产。 要查看引用的资源列表，请导航到[!DNL InDesign]资源的资源详细信息页面并关闭[边栏](/help/sites-authoring/basic-handling.md#rail-selector)。
 
 ## [!DNL Adobe Photoshop]：添加数字资产作为引用 {#refps}
 
-1. 使用[!DNL Experience Manager]桌面应用访问[!DNL Experience Manager Assets]。 下载并显示本地文件系统上的资源。 在[!DNL Adobe Photoshop]中使用[!UICONTROL 放置链接的]功能。 请参阅[将资源放入桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#place-assets-in-native-documents)。
+1. 使用[!DNL Experience Manager]桌面应用访问[!DNL Experience Manager Assets]。 下载并显示本地文件系统上的资源。 在[!DNL Adobe Photoshop]中使用[!UICONTROL 放置链接的]功能。 请参阅[将资源放入桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents)。
 
 1. 将[!DNL Photoshop]文件保存到已挂载的驱动器或[上传](/help/assets/manage-assets.md#uploading-assets)到[!DNL Experience Manager]存储库。
 1. 工作流完成后，对现有[!DNL Experience Manager]资产的引用将列在资产详细信息页面中。
@@ -87,7 +87,7 @@ ht-degree: 0%
 
 ## 创建子资产 {#generate-subassets}
 
-对于支持的多页格式(PDF文件、AI文件、[!DNL Microsoft PowerPoint]和[!DNL Apple Keynote]文件以及[!DNL Adobe InDesign]文件)的资源，[!DNL Experience Manager]可以生成与原始资源的每个单独页面对应的子资源。 这些子资产已链接到&#x200B;*父*&#x200B;资产，有助于进行多页面查看。 对于所有其他目的，子资产将被视为[!DNL Experience Manager]中的正常资产。
+对于支持的多页格式资源 — PDF文件、AI文件、[!DNL Microsoft PowerPoint]和[!DNL Apple Keynote]文件以及[!DNL Adobe InDesign]文件 — [!DNL Experience Manager]可以生成与原始资源的每个单独页面对应的子资源。 这些子资产已链接到&#x200B;*父*&#x200B;资产，有助于进行多页面查看。 对于所有其他目的，子资产将被视为[!DNL Experience Manager]中的正常资产。
 
 默认情况下，子资源生成处于禁用状态。 要启用子资产生成，请执行以下步骤：
 
@@ -100,14 +100,14 @@ ht-degree: 0%
 * 新资源： [!UICONTROL DAM更新Assets]工作流对上传到[!DNL Experience Manager]的任何新资源执行。 为新的多页面资源自动生成子资源。
 * 现有多页面资源：执行以下任一步骤后，手动执行[!UICONTROL DAM更新Assets]工作流：
 
-   * 选择资产并单击[!UICONTROL 时间轴]以打开左侧面板。 或者，使用键盘快捷键`alt + 3`。 单击[!UICONTROL 启动工作流]，选择[!UICONTROL DAM更新资产]，单击[!UICONTROL 启动]，然后单击[!UICONTROL 继续]。
-   * 选择一个资产，然后单击工具栏中的[!UICONTROL 创建] > [!UICONTROL 工作流]。 从弹出对话框中，选择[!UICONTROL DAM更新资产]工作流，单击[!UICONTROL 开始]，然后单击[!UICONTROL 继续]。
+  * 选择资产并单击[!UICONTROL 时间轴]以打开左侧面板。 或者，使用键盘快捷键`alt + 3`。 单击[!UICONTROL 启动工作流]，选择[!UICONTROL DAM更新资产]，单击[!UICONTROL 启动]，然后单击[!UICONTROL 继续]。
+  * 选择一个资产，然后单击工具栏中的[!UICONTROL 创建] > [!UICONTROL 工作流]。 从弹出对话框中，选择[!UICONTROL DAM更新资产]工作流，单击[!UICONTROL 开始]，然后单击[!UICONTROL 继续]。
 
 对于Microsoft Word文档，请执行&#x200B;**[!UICONTROL DAM解析Word文档]**&#x200B;工作流。 它从Microsoft Word文档的内容生成一个`cq:Page`组件。 从文档提取的图像是从`cq:Page`组件引用的。 即使禁用子资产生成，也会提取这些图像。
 
 >[!NOTE]
 >
->在[!UICONTROL 进程参数]的[!UICONTROL 创建子资产进程 — 步骤属性]中，您可以指定[!DNL Experience Manager]生成的子资产数。 默认值为 5。要生成所有子资产，请将该字段留空。 如果字段为负，则不会生成任何子资产。
+>在[!UICONTROL 进程参数]的[!UICONTROL 创建子资产进程 — 步骤属性]中，您可以指定[!DNL Experience Manager]生成的子资产数。 默认值为 5。 要生成所有子资产，请将该字段留空。 如果字段为负，则不会生成任何子资产。
 
 ## 查看子资产 {#viewing-subassets}
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 
 以下选项在工具栏、左边栏和页面查看器控件中可用：
 
-* **[!UICONTROL 桌面操作]**，用于使用[!DNL Experience Manager]桌面应用程序打开或显示特定子资产。 如果您使用的是[!DNL Experience Manager]桌面应用程序，请查看如何[配置桌面操作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#desktopactions-v2)。
+* **[!UICONTROL 桌面操作]**，用于使用[!DNL Experience Manager]桌面应用程序打开或显示特定子资产。 如果您使用的是[!DNL Experience Manager]桌面应用程序，请查看如何[配置桌面操作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)。
 
 * **[!UICONTROL 属性]**&#x200B;选项打开特定子资源的[!UICONTROL 属性]页面。
 
@@ -141,7 +141,7 @@ ht-degree: 0%
 
 >[!MORELIKETHIS]
 >
->* [使用Adobe Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans)
->* [在Adobe Experience Manager中配置桌面操作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#desktopactions-v2)
->* [在Adobe Photoshop中创建链接智能对象](https://helpx.adobe.com/cn/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
->* [将图形置于Adobe InDesign](https://helpx.adobe.com/cn/indesign/using/placing-graphics.html)
+>* [使用Adobe Experience Manager桌面应用程序](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+>* [在Adobe Experience Manager中配置桌面操作](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [在Adobe Photoshop中创建链接智能对象](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
+>* [将图形置于Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)

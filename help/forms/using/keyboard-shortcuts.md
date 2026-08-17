@@ -1,5 +1,5 @@
 ---
-title: AEM Forms键盘快捷键
+title: AEM Forms 键盘快捷键
 description: 本文列出了可用于Windows和Macintosh操作系统的自适应表单编辑器、主题编辑器、内容浏览器和通信管理的键盘快捷键。
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1192'
-ht-degree: 5%
+source-wordcount: '1208'
+ht-degree: 6%
 
 ---
 
-# AEM Forms键盘快捷键 {#aem-forms-keyboard-shortcuts}
+# AEM Forms 键盘快捷键 {#aem-forms-keyboard-shortcuts}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。</span>
 
 本文列出了可用于Windows和Macintosh操作系统的自适应表单编辑器、主题编辑器、内容浏览器和通信管理的键盘快捷键。
 
@@ -29,22 +29,22 @@ ht-degree: 5%
 | 关闭所选自适应表单组件的“属性”浏览器 | Ctrl+Alt+W | Command+Alt+W |
 | 在属性浏览器中保存所选自适应表单组件的更改 | Ctrl+S | Command+S |
 | 编辑所选自适应表单组件的规则 | Ctrl+Alt+Enter | Command+Alt+Return |
-| 在预览模式和当前选定的模式（例如，编辑和基架）之间切换 | Ctrl+Shift+M | Ctrl+Shift+M&amp;amp；ast； |
-| 撤消上次更改 | Ctrl+Z | Ctrl+Z&amp;amp；ast； |
-| 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;amp；ast； |
+| 在预览模式和当前选定的模式（例如，编辑和基架）之间切换 | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast； |
+| 撤消上次更改 | Ctrl+Z | Ctrl+Z&amp;ast； |
+| 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;ast； |
 | 选择多个组件 | Shift +单击 | Shift +单击 |
-| 复制所选的组件 | Ctrl-C | Ctrl-C&amp;amp；ast； |
-| 剪切所选元件。 在将剪切组件粘贴到新位置之前，它不会消失。 | Ctrl-X | Ctrl-X&amp;amp；ast； |
+| 复制所选的组件 | Ctrl-C | Ctrl-C&amp;ast； |
+| 剪切所选元件。 在将剪切组件粘贴到新位置之前，它不会消失。 | Ctrl-X | Ctrl-X&amp;ast； |
 | 粘贴组件 | Ctrl+V | Ctrl+V |
-| 删除所选的组件 | Ctrl+Del | Ctrl+Del&amp;amp；ast； |
-| 删除所选的组件 | Ctrl+退格键 | Ctrl+退格键&amp;amp；ast； |
-| 在预览模式下使用富文本编辑器组件时将文本变为粗体 | Ctrl+B | Ctrl+B&amp;amp；ast； |
-| 在预览模式下使用富文本编辑器组件时使文本变为斜体 | Ctrl+I | Ctrl+I&amp;amp；ast； |
-| 在预览模式下使用富文本编辑器组件时将文本变为粗体 | Ctrl+U | Ctrl+U&amp;amp；ast； |
+| 删除所选的组件 | Ctrl+Del | Ctrl+Del&amp;ast； |
+| 删除所选的组件 | Ctrl+退格键 | Ctrl+Backspace&amp;ast； |
+| 在预览模式下使用富文本编辑器组件时将文本变为粗体 | Ctrl+B | Ctrl+B&amp;ast； |
+| 在预览模式下使用富文本编辑器组件时使文本变为斜体 | Ctrl+I | Ctrl+I&amp;Ast； |
+| 在预览模式下使用富文本编辑器组件时将文本变为粗体 | Ctrl+U | Ctrl+U&amp;Ast； |
 
 >[!NOTE]
 >
->标有“&amp;amp；ast；”的快捷方式可同时使用macOS上的Ctrl和Command键。
+>标有“&amp;ast；”的快捷键同时适用于macOS上的Ctrl和Command键。
 
 >[!NOTE]
 >
@@ -60,13 +60,13 @@ ht-degree: 5%
 |---|---|---|
 | 打开主题中选定组件的属性浏览器 | Alt+Enter | Alt+Return |
 | 关闭主题中选定组件的属性浏览器 | Ctrl+Alt+W | Command+Alt+W |
-| 撤消上次更改 | Ctrl+Z | Ctrl+Z&amp;amp；ast； |
-| 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;amp；ast； |
-| 在属性浏览器中为主题中的选定组件保存更改 | Ctrl+S | Ctrl+S&amp;amp；ast； |
+| 撤消上次更改 | Ctrl+Z | Ctrl+Z&amp;ast； |
+| 重做最后一次更改 | Ctrl+Y | Ctrl+Y&amp;ast； |
+| 在属性浏览器中为主题中的选定组件保存更改 | Ctrl+S | Ctrl+S&amp;ast； |
 
 >[!NOTE]
 >
->标有“&amp;amp；ast；”的快捷方式可同时使用macOS上的Ctrl和Command键。
+>标有“&amp;ast；”的快捷键同时适用于macOS上的Ctrl和Command键。
 
 ## 内容浏览器  {#contentbrowser}
 
@@ -79,7 +79,7 @@ ht-degree: 5%
 | 在Forms对象树中选择下一个项目 | 向下箭头 | 向下箭头 |
 | 选择Forms对象树中的上一项 | 向上箭头键 | 向上箭头键 |
 
-[1]替换Ctrl +向右箭头键和Command +向右箭头键(适用于macOS)。\
+[1]替换Ctrl +向右箭头键和Command +向右箭头键（适用于macOS）。\
 [2]替换Windows的Ctrl +向左箭头和macOS的Command +向左箭头。
 
 ## 通信管理 {#correspondence-management}

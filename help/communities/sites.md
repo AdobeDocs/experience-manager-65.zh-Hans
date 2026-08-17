@@ -1,5 +1,5 @@
 ---
-title: 站点模板
+title: Site 模板
 description: 了解如何访问“站点模板”控制台以创建社区站点。
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,12 +11,12 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '458'
 ht-degree: 3%
 
 ---
 
-# 站点模板 {#site-templates}
+# Site 模板 {#site-templates}
 
 站点模板控制台类似于[组模板](tools-groups.md)控制台，其侧重于社区组感兴趣的功能。
 
@@ -34,7 +34,7 @@ ht-degree: 3%
 
 ![站点模板](assets/site-template.png)
 
-## 创建站点模板 {#create-site-template}
+## 创建网站模板 {#create-site-template}
 
 要开始创建站点模板，请选择`Create`。
 

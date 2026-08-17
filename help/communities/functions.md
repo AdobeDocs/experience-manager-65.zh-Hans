@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2215'
+source-wordcount: '2253'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ ht-degree: 2%
 
 ## 预建函数 {#pre-built-functions}
 
-以下简要介绍了AEM Communities提供的功能。 每个函数都包括一个或多个AEM页面，其中包含相互连接在一起的社区组件，这些组件可轻松合并到[社区站点模板](/help/communities/sites.md)中的功能。
+以下简要介绍了AEM Communities提供的功能。 每个函数都包含一个或多个包含社区组件的AEM页面，这些组件一起连接到一个功能中，该功能可轻松合并到[社区站点模板](/help/communities/sites.md)中。
 
 社区站点模板提供了社区站点的结构，包括登录、用户配置文件、通知、消息、站点菜单、搜索、主题设定和品牌推广功能。
 
@@ -226,10 +226,10 @@ ht-degree: 2%
 
   如果选中，则论坛仅允许特权成员通过选择[特权成员安全组](/help/communities/users.md#privileged-members-group)来发布主题。 如果未选择，则允许所有社区成员发帖。 默认值为取消选中。
 
-* **允许Publish创建**
+* **允许发布创建**
 
   如果选择，则授权社区成员可以在发布环境中创建组。 如果取消选择，则只能从社区站点的“组”控制台在创作环境中创建新组（子社区）。
-默认处于选中状态。
+  默认处于选中状态。
 
 ### 构思功能 {#ideation-function}
 
@@ -272,17 +272,17 @@ ht-degree: 2%
 * **显示徽章**
 
   如果选择，则排行榜中将包含徽章图标列。
-默认值为取消选中。
+  默认值为取消选中。
 
 * **显示徽章名称**
 
   如果选择，则徽章名称的列将包含在排行榜中。
-默认值为取消选中。
+  默认值为取消选中。
 
 * **显示头像**
 
   如果选择该选项，则成员的头像图像将包含在排行榜中，位于其名称链接旁边，指向其成员配置文件。
-默认值为取消选中。
+  默认值为取消选中。
 
 ### 页面功能 {#page-function}
 

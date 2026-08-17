@@ -12,16 +12,16 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '2028'
+source-wordcount: '2073'
 ht-degree: 2%
 
 ---
 
 # 审核控制台 {#moderation-console}
 
-在AEM Communities中，管理员和社区审查方（指定为审查方的受信任社区成员）可以在Author和Publish环境中对社区内容[&#128279;](/help/communities/moderate-ugc.md)进行批量审查。
+在AEM Communities中，管理员和社区审查方（指定为审查方的受信任社区成员）可以在创作和发布环境中批量[审查社区内容](/help/communities/moderate-ugc.md)。
 
-管理员和社区审查方也可以在Publish环境中执行[上下文审核](/help/communities/in-context.md)。
+管理员和社区审查方也可以在发布环境中执行[上下文审核](/help/communities/in-context.md)。
 
 所有[社区站点](/help/communities/sites-console.md)的一项功能是可供具有管理权限登录的用户使用的`Administration`菜单项。 `Administration`链接提供对审核控制台的访问权限。
 
@@ -38,7 +38,7 @@ ht-degree: 2%
 
 仅当以管理员或具有` [moderator permissions](/help/communities/in-context.md#identifyingtrustedmembers)`的成员身份登录时，才能执行审核任务。
 
-## Publish环境访问 {#publish-environment-access}
+## 发布环境访问权限 {#publish-environment-access}
 
 要从已发布的社区站点访问审核控制台，需要通过管理链接；当社区审核者登录时，将显示该链接。
 
@@ -58,13 +58,13 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->仅当所选的SRP实施公用存储时，Publish环境中的UGC才对Author可见。 例如，默认情况下，存储为JSRP，这不是Author和Publish的常用存储。 查看[社区内容存储](/help/communities/working-with-srp.md)。
+>仅当所选的SRP实施公用存储时，发布环境中的UGC才对Author可见。 例如，默认存储为JSRP，它不是Author和Publish的常用存储。 查看[社区内容存储](/help/communities/working-with-srp.md)。
 
 ![moderationconsoleauthor](assets/moderationconsoleauthor.png)
 
 ## 审核控制台UI {#moderation-console-ui}
 
-除了左导航边栏(显示在创作实例上，但不显示在Publish上)外，审核UI包含以下主要区域：
+除了左导航边栏（显示在创作实例上，但不显示在发布实例上）外，审核UI包括以下主要区域：
 
 * **[顶部导航栏](#top-navigation-bar)**
 * **[工具栏](#toolbar)**
@@ -78,14 +78,14 @@ ht-degree: 2%
 
 工具栏位于顶部导航栏的下方，在左侧提供以下切换开关：
 
-* [筛选器边栏](/help/communities/moderation.md#filterrail)
+* [筛选边栏](/help/communities/moderation.md#filterrail)
 打开边栏，通过该边栏可选择要过滤内容的属性。
 
 工具栏位于顶部导航栏的下方，在左侧提供以下切换开关：
 
 ![切换开关](assets/toggleswitch.png)
 
-[筛选器边栏](/help/communities/moderation.md#filterrail)
+[筛选边栏](/help/communities/moderation.md#filterrail)
 在选择搜索时打开边栏，通过该边栏可选择要筛选内容的属性。
 
 ![筛选边栏](assets/filterrail.png)
@@ -100,7 +100,7 @@ ht-degree: 2%
 * 帖子位置
 * 发布时间
 * 回复帖子的数量
-* 与帖子相关的[情绪](/help/communities/moderate-ugc.md#sentiment)
+* 与帖子关联的[情绪](/help/communities/moderate-ugc.md#sentiment)
 * 如果批准，将显示复选标记
 * 如果有附件，则显示回形针
 
@@ -140,7 +140,7 @@ ht-degree: 2%
 
 ![文本搜索](assets/text-search.png)
 
-#### 站点 {#site}
+#### 网站 {#site}
 
 站点限制将引用的UGC显示给选定社区站点的帖子。 如果未选中任何站点，则会显示对UGC的所有引用。
 
@@ -150,7 +150,7 @@ ht-degree: 2%
 >
 >管理员访问批量审核控制台时，将显示对UGC的所有引用，包括未使用[站点创建向导](/help/communities/sites-console.md)创建的站点，如Geometrixx示例。
 >
->当受信任的社区成员在Publish上访问批量审阅控制台时，将仅显示对该成员有权审阅的社区站点所创建的UGC的引用。 此外，还可以使用“站点”过滤器来筛选它。
+>当受信任的社区成员在“发布”上访问批量审核控制台时，将仅显示对该成员有权审核的社区站点所创建的UGC的引用。 此外，还可以使用“站点”过滤器来筛选它。
 
 #### 内容类型 {#content-type}
 
@@ -182,9 +182,9 @@ ht-degree: 2%
 * 选择配置以便您可以在编辑模式下打开。
 * 输入要筛选的组件的ResourceType：
 
-   * 例如，要筛选包含的投票组件，请输入：
+  * 例如，要筛选包含的投票组件，请输入：
 
-     `Voting=social/tally/components/hbs/voting`
+    `Voting=social/tally/components/hbs/voting`
 
   ![additional-contenttype](assets/additional-contenttype.png)
 
@@ -227,7 +227,7 @@ ht-degree: 2%
 
 #### 情绪 {#sentiment}
 
-[情绪](/help/communities/moderate-ugc.md#sentiment)将引用的UGC限制为显示情绪值为正数、负数或中性的帖子。
+[情绪](/help/communities/moderate-ugc.md#sentiment)将引用的UGC显示限制为具有情绪值（正、负或中性）的帖子。
 
 ![情绪](assets/sentiment.png)
 
@@ -241,11 +241,11 @@ GitHub上的[示例项目](https://github.com/Adobe-Marketing-Cloud/aem-communit
 
 要安装“标记”过滤器的示例：
 
-1. 在AEM创作(`https://[aem-author]:4502/crx/packmgr/index.jsp`)实例和AEM Publish (`https://[aem-publish]:4503/crx/packmgr/index.jsp`)实例上打开包管理器。
+1. 在AEM创作(`https://[aem-author]:4502/crx/packmgr/index.jsp`)实例和AEM发布(`https://[aem-publish]:4503/crx/packmgr/index.jsp`)实例上打开包管理器。
 1. 从GitHub代码生成包`com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip`，并安装和启用该包。
-1. 在AEM创作(`https://[aem-author]:4502/system/console/bundles`)实例和AEM Publish (`https://[aem-publish]:4503/system/console/bundles`)实例上打开包控制台。
+1. 在AEM创作(`https://[aem-author]:4502/system/console/bundles`)实例和AEM发布(`https://[aem-publish]:4503/system/console/bundles`)实例上打开包控制台。
 1. 从GitHub生成包(`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`)，并安装和启用该包。
-1. 转到AEM Author (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`)和AEM Publish (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`)实例上的&#x200B;**/apps/social/moderation/facets**&#x200B;节点。
+1. 转到AEM创作(`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`)和AEM发布(`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`)实例上的&#x200B;**/apps/social/moderation/facets**&#x200B;节点。
 1. 添加具有`jcr:read`权限的技术用户&#x200B;**communities-utility-reader**。
 
 要在现有社区网站上显示自定义过滤器，请执行以下操作：

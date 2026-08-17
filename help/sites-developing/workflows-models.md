@@ -12,7 +12,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2503'
 ht-degree: 3%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->有关经典UI的使用，请参阅[AEM 6.3文档](https://helpx.adobe.com/cn/experience-manager/6-3/help/sites-developing/workflows-models.html)以供参考。
+>有关经典UI的使用，请参阅[AEM 6.3文档](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html)以供参考。
 
 您可以创建[工作流模型](/help/sites-developing/workflows.md#model)，以定义用户启动工作流时执行的一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。
 
@@ -33,7 +33,7 @@ ht-degree: 3%
 
 * 步骤&#x200B;**流程开始**&#x200B;和&#x200B;**流程结束**。
 这些表示工作流的开始和结束。 这些步骤是必需的，无法编辑/删除。
-* 名为&#x200B;**步骤1**&#x200B;的示例&#x200B;**参与者**&#x200B;步骤。
+* 名为&#x200B;**步骤1**&#x200B;的示例&#x200B;**参与者**步骤。
 此步骤配置为向工作流发起者分配工作项。 编辑或删除此步骤，并根据需要添加步骤。
 
 使用编辑器创建工作流：
@@ -85,9 +85,9 @@ ht-degree: 3%
 * 步骤浏览器不可用（左侧）。
 * 工具栏（右侧）中提供了&#x200B;**编辑**&#x200B;操作。
 * 最初，模型及其属性以只读模式显示为：
-   * 默认工作流位于`/libs`中
-   * 旧版工作流位于`/etc`中
-选择&#x200B;**编辑**&#x200B;将：
+  * 默认工作流位于`/libs`中
+  * 旧版工作流位于 `/etc`
+    选择**编辑**&#x200B;将：
 * 将工作流的副本放入`/conf`
 * 使步骤浏览器可用
 * 允许您进行更改
@@ -199,7 +199,7 @@ ht-degree: 3%
 
 1. 将`Workflow : DAM`添加到&#x200B;**[!UICONTROL 标记]**&#x200B;字段。 使用复选框（勾号）确认选择。
 
-1. 使用&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;确认添加标记。
+1. 使用&#x200B;**[!UICONTROL 保存并关闭]**确认添加标记。
    ![编辑模型](assets/workflow_model_edit_activation1.png)的页面属性
 
 1. 使用&#x200B;**[!UICONTROL 同步]**&#x200B;完成该过程。 现在，该工作流在触屏UI中可用。
@@ -250,10 +250,10 @@ ht-degree: 3%
    |---|---|
    | 步骤 1 | 创建 |
    | 步骤 2 | 创建 |
-   | 步骤 3 | 审查 |
+   | 步骤 3 | 审阅 |
    | 步骤 4 | 批准 |
    | 步骤 5 | 批准 |
-   | 步骤 6 | 完成 |
+   | 步骤 6 | 完整 |
 
 1. 使用&#x200B;**同步**（编辑器工具栏）确认更改以生成运行时模型。
 
@@ -391,7 +391,7 @@ ht-degree: 3%
 
    ![wf-13](assets/wf-13.png)
 
-1. 将此工作流应用于您的页面，以便当用户移动到&#x200B;**完成**&#x200B;的&#x200B;**验证内容**&#x200B;步骤时，他们可以选择是希望按照请求&#x200B;**Publish页面**，还是&#x200B;**拒绝Publish请求**。
+1. 将此工作流应用于您的页面，以便当用户移动到&#x200B;**完成**&#x200B;的&#x200B;**验证内容**&#x200B;步骤时，他们可以选择是要&#x200B;**按请求发布页面**，还是&#x200B;**拒绝发布请求**。
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -415,7 +415,6 @@ ht-degree: 3%
    * 通过将&#x200B;**值**&#x200B;设置为`true`，将此路由定义为&#x200B;**默认路由**。
 
    * 作为&#x200B;**规则**，设置脚本的路径。 例如：
-
      `/apps/myapp/workflow/scripts/myscript1.ecma`
 
    >[!NOTE]
@@ -425,7 +424,6 @@ ht-degree: 3%
 1. 编辑&#x200B;**OR拆分**&#x200B;的&#x200B;**分支2**&#x200B;的属性。
 
    * 作为&#x200B;**规则**，设置其他脚本的路径。 例如：
-
      `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. 设置每个分支中各个步骤的属性。 确保设置了&#x200B;**用户/组**。
