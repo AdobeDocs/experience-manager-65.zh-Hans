@@ -140,7 +140,7 @@ AEM收件箱仅显示活动任务。 已完成的任务未出现在列表中。 
      | allowExplicitSharing | allowExplicitSharing | Boolean |
 
 
-   * 通过AEM包部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)项目创建可部署的AEM包。 使用以下示例代码将索引添加到AEM Archetype项目中：
+   * 通过AEM包部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans)项目创建可部署的AEM包。 使用以下示例代码将索引添加到AEM Archetype项目中：
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +150,8 @@ AEM收件箱仅显示活动任务。 已完成的任务未出现在列表中。 
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [创建属性索引并将其设置为true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index)。
+1. [创建属性索引并将其设置为true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=zh-Hans#the-property-index)。
 
 1. 在CRX DE中配置索引或通过包进行部署后，[重新索引存储库](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)。
 
-https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=zh-Hans
