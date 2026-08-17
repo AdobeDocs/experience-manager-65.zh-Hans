@@ -9,9 +9,9 @@ exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1585'
+source-wordcount: '1590'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 提供了两种不同类型的组。 您可以手动创建组并将用户和其他组添加到其中。 您还可以创建动态组，以自动包含满足一组指定规则的所有用户。
 
-如果用户属于多个组（例如，500个或更多）或这些组嵌套得很深（例如，30个级别），则用户响应速度可能会较慢。 如果您遇到此问题，可以将AEM表单配置为从特定域预取信息。 (请参阅[配置AEM表单以预取域信息](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)。)
+如果用户属于多个组（例如，500个或更多）或这些组嵌套得很深（例如，30个级别），则用户响应速度可能会较慢。 如果您遇到此问题，可以将AEM表单配置为从特定域预取信息。 （请参阅[配置AEM表单以预取域信息](/help/forms/using/admin-help/configure-aem-forms-prefetch-domain.md#configure-aem-forms-to-prefetch-domain-information)。）
 
 ## 手动创建组 {#create-a-group-manually}
 
@@ -66,7 +66,7 @@ ht-degree: 0%
 
 使用以下两种方法之一创建动态组：
 
-* 基于电子邮件域(如@adobe.com)启用动态组的自动创建。 启用此功能后，用户管理会为AEM Forms数据库中的每个唯一电子邮件域创建一个动态组。 使用cron表达式指定用户管理搜索AEM表单数据库以查找新电子邮件域的频率。 这些动态组已添加到DefaultDom本地域，并命名为“具有&#x200B;*`[email domain]`*&#x200B;邮件ID的所有用户”。
+* 基于电子邮件域（如@adobe.com）启用动态组的自动创建。 启用此功能后，用户管理会为AEM表单数据库中的每个唯一电子邮件域创建一个动态组。 使用cron表达式可指定用户管理在AEM表单数据库中搜索新电子邮件域的频率。 这些动态组已添加到DefaultDom本地域，并命名为“具有&#x200B;*`[email domain]`*&#x200B;邮件ID的所有用户”。
 * 根据指定的条件（包括用户的电子邮件域、描述、规范名称和域名）创建动态组。 要属于动态组，用户必须满足所有指定的标准。 要设置“或”条件，请创建两个不同的动态组，并将它们添加到本地组中。 例如，使用该方法创建一组属于@adobe.com电子邮件域或其规范名称包含ou=adobe.com的用户。 但是，用户不一定必须同时满足这两个条件。
 
 动态组仅包含用户。 它不能包含其他组。 但是，动态组可以属于父组。

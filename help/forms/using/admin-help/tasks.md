@@ -1,5 +1,5 @@
 ---
-title: 使用任务
+title: 处理任务
 description: 使用“任务搜索”页可以按用户名或任务ID搜索任务。 了解有关使用任务的更多信息。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,14 @@ exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 'null'
 workflow-type: tm+mt
 source-wordcount: '852'
 ht-degree: 0%
 
 ---
 
-# 使用任务 {#working-with-tasks}
+# 处理任务 {#working-with-tasks}
 
 >[!NOTE]
 > 

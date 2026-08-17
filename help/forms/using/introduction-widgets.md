@@ -1,5 +1,5 @@
 ---
-title: 自适应表单和HTML5表单的外观框架
+title: 自适应表单和 HTML5 Forms 的外观框架
 description: Mobile Forms将表单模板渲染为HTML5表单。 这些表单使用jQuery、Backbone.js和Underscore.js文件作为外观并启用脚本。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,18 +8,18 @@ exl-id: 3458471a-9815-463e-8044-68631073863c
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1152'
-ht-degree: 2%
+source-wordcount: '1165'
+ht-degree: 3%
 
 ---
 
-# 自适应表单和HTML5表单的外观框架 {#appearance-framework-for-adaptive-and-html-forms}
+# 自适应表单和 HTML5 Forms 的外观框架 {#appearance-framework-for-adaptive-and-html-forms}
 
-Forms(自适应表单和HTML5表单)使用[jQuery](https://jquery.com/)、[Backbone.js](https://backbonejs.org/)和[Underscore.js](https://underscorejs.org/)库的外观和脚本。 表单中所有的交互元素（如字段和按钮）也使用[jQuery UI](https://jqueryui.com/) **小组件**&#x200B;架构。 此架构使Form开发人员能够使用Forms中一组丰富的可用jQuery小部件和插件。 在从leadDigits/trailDigits限制或实施picture子句等用户捕获数据时，您还可以实施特定于表单的逻辑。 表单开发人员可以创建和使用自定义外观，以改进数据捕获体验，并使其更便于用户使用。
+Forms（自适应表单和HTML5表单）使用[jQuery](https://jquery.com/)、[Backbone.js](https://backbonejs.org/)和[Underscore.js](https://underscorejs.org/)库的外观和脚本。 表单中所有的交互元素（如字段和按钮）也使用[jQuery UI](https://jqueryui.com/) **小组件**&#x200B;架构。 此架构使Form开发人员能够使用Forms中一组丰富的可用jQuery小部件和插件。 在从leadDigits/trailDigits限制或实施picture子句等用户捕获数据时，您还可以实施特定于表单的逻辑。 表单开发人员可以创建和使用自定义外观，以改进数据捕获体验，并使其更便于用户使用。
 
-本文面向对jQuery和jQuery构件具有充分了解的开发人员。 它提供了外观框架的洞察信息，并使开发人员能够为表单字段创建替代外观。
+本文面向对jQuery和jQuery构件具有充分了解的开发人员。 它将insight纳入外观框架中，并使开发人员能够为表单字段创建替代外观。
 
 外观框架依赖各种选项、事件（触发器）和函数来捕获用户与表单的交互，并响应模型更改以通知最终用户。 此外：
 
@@ -51,7 +51,7 @@ Forms(自适应表单和HTML5表单)使用[jQuery](https://jquery.com/)、[Backb
   </tr>
   <tr>
    <td>screenReaderText</td>
-   <td>屏幕Reader使用此值来讲述有关字段的信息。 该表单提供了值，您可以覆盖该值。<br /> </td>
+   <td>屏幕阅读器使用此值来讲述有关字段的信息。 该表单提供了值，您可以覆盖该值。<br /> </td>
   </tr>
   <tr>
    <td>tabIndex</td>
@@ -265,6 +265,6 @@ Forms(自适应表单和HTML5表单)使用[jQuery](https://jquery.com/)、[Backb
 | 选项 | 描述 |
 |---|---|
 | 天 | 该字段的本地化日期名称。 |
-| 月 | 该字段的本地化月份名称。 |
+| 个月 | 该字段的本地化月份名称。 |
 | 零 | 数字0的本地化文本。 |
 | 明文 | 清除按钮的本地化文本。 |

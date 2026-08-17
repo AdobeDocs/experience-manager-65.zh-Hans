@@ -1,5 +1,5 @@
 ---
-title: 自适应表单关键字
+title: 自适应表单关键词
 description: 在自适应表单中不能使用这些保留字作为标识符。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,16 +8,16 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 26%
+source-wordcount: '266'
+ht-degree: 30%
 
 ---
 
-# 自适应表单关键字 {#adaptive-forms-keywords}
+# 自适应表单关键词 {#adaptive-forms-keywords}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 自适应表单关键字是对自适应表单具有特殊意义的预定义保留标识符。 在自适应表单中不能将这些关键字用作标识符。 下表列出了作为自适应表单保留标识符的所有关键字。
 
@@ -26,12 +26,12 @@ ht-degree: 26%
   <tr>
    <td><p>初始化</p> </td>
    <td><p>getonoffValues</p> </td>
-   <td><p>minOccurs</p> </td>
+   <td><p>minOccur</p> </td>
   </tr>
   <tr>
    <td><p>验证</p> </td>
    <td><p>setGuideState</p> </td>
-   <td><p>maxOccure</p> </td>
+   <td><p>maxOccur</p> </td>
   </tr>
   <tr>
    <td><p>forceElementFocusChange</p> </td>

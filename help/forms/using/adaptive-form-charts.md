@@ -7,9 +7,9 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 ![主页图像](assets/charts_hero_image.jpg)
 
 图表或图形是数据的可视化表示形式。 它允许您将大量信息压缩为易于理解的视觉格式，使您能够更好地可视化、解释和分析复杂数据。
-AEM Forms附加组件包提供了一个现成的Chart组件。 您可以在自适应表单和文档中使用以在&#x200B;**可重复面板**&#x200B;和&#x200B;**表**&#x200B;中直观地呈现二维数据。 图表组件允许您添加和配置以下类型的图表：
+AEM Forms附加组件包提供了一个现成的Chart组件。 您可以在自适应表单和文档中使用以在**可重复面板**&#x200B;和&#x200B;**表**&#x200B;中直观地呈现二维数据。 图表组件允许您添加和配置以下类型的图表：
 
 1. 饼图
 1. 列
-1. 环形
-1. 长条
-1. 线条
+1. 圆环图
+1. 条形图
+1. 线形图
 1. 线和点
 1. 点
 1. 区域
@@ -36,7 +36,7 @@ AEM Forms附加组件包提供了一个现成的Chart组件。 您可以在自�
 
 ## 添加图表 {#add-chart}
 
-默认情况下，图表组件在AEM侧边栏中可用。 您可以在创作模式下将图表组件从AEM侧栏拖放到自适应表单或文档。 删除组件时，它将为图表创建占位符。
+默认情况下，图表组件在AEM侧边栏中可用。 您可以在创作模式下将图表组件从AEM侧边栏拖放到自适应表单或文档。 删除组件时，它将为图表创建占位符。
 
 ## 配置图表 {#configure-chart}
 
@@ -149,10 +149,10 @@ Multiply(valueArray, category) {
 编写自定义函数后，请执行以下操作以使其可用于图表配置：
 
 1. 在与自适应表单或文档关联的客户端库中添加自定义函数。
-1. 在CRXDE Lite中，在apps文件夹中创建一个nt：unstructured节点，该节点具有以下属性：
+1. 在CRXDE Lite中，在apps文件夹中创建一个nt:unstructured节点，该节点具有以下属性：
    * 将guideComponentType设置为fd/af/reducer。 （必填）
    * 将值设置为自定义JavaScript函数的完全限定名称。 （必填）
-   * 将jcr：description设置为有意义的名称。 它出现在&#x200B;**使用函数**&#x200B;下拉列表中。 例如，**乘**。
+   * 将jcr:description设置为有意义的名称。 它出现在&#x200B;**使用函数**&#x200B;下拉列表中。 例如，**乘**。
    * 将qtip设置为函数的简短说明。 将鼠标指针悬停在“使用函数”下拉列表中的函数名称上时，它会显示为工具提示。
    * 单击&#x200B;**全部保存**&#x200B;以保存配置。
    * 函数现在可用于图表中。
@@ -173,7 +173,7 @@ chartType属性指定图表的类型。 可能的值为饼图、圆环图、条�
 
 假定您配置了柱状图。 但是，您还希望为用户提供一个选项，以便从下拉列表中选择不同的图表类型并重新绘制图表。 您可以使用规则中的chartType属性实现此目的，如下所示：
 
-1. 从自适应表单的AEM侧边栏中拖放下拉列表组件。
+1. 从自适应表单上的AEM侧边栏中拖放下拉列表组件。
 1. 选择组件并点按![设置](cmppr1.png)。
 1. 指定下拉列表的标题。 例如，选择图表类型。
 1. 在项部分中添加支持的图表类型以填充下拉列表。 单击&#x200B;**完成**。

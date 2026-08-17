@@ -1,5 +1,5 @@
 ---
-title: Oak查询和索引
+title: Oak 查询与索引
 description: 了解如何使用Adobe Experience Manager (AEM) 6.5配置索引。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eeeb31d81c22f8dace7a170953bf45a709f5ac73
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '3051'
-ht-degree: 0%
+source-wordcount: '3098'
+ht-degree: 2%
 
 ---
 
-# Oak查询和索引{#oak-queries-and-indexing}
+# Oak 查询与索引{#oak-queries-and-indexing}
 
 >[!NOTE]
 >
@@ -70,17 +70,17 @@ Oak查询引擎支持以下语言：
 
 如果大型存储库中需要重新索引，尤其是使用MongoDB和进行全文索引时，请考虑文本预提取，并使用oak-run构建初始索引和重新索引。
 
-索引在&#x200B;**Oak：index**&#x200B;节点下的存储库中配置为节点。
+索引在&#x200B;**Oak:index**&#x200B;节点下的存储库中配置为节点。
 
-索引节点的类型必须是&#x200B;**oak：QueryIndexDefinition。**&#x200B;每个索引器都有几个配置选项作为节点属性使用。 有关详细信息，请参阅下面每种索引器类型的配置详细信息。
+索引节点的类型必须是&#x200B;**oak:QueryIndexDefinition.** 每个索引器都有多个配置选项作为节点属性使用。 有关详细信息，请参阅下面每种索引器类型的配置详细信息。
 
 ### 属性索引 {#the-property-index}
 
 属性索引对于具有属性约束但不是全文的查询非常有用。 可按照以下步骤对其进行配置：
 
 1. 通过转到`http://localhost:4502/crx/de/index.jsp`打开CRXDE
-1. 在&#x200B;**oak：index**&#x200B;下创建节点
-1. 为节点&#x200B;**PropertyIndex**&#x200B;命名，并将节点类型设置为&#x200B;**oak：QueryIndexDefinition**
+1. 在&#x200B;**oak:index**&#x200B;下创建节点
+1. 为节点&#x200B;**PropertyIndex**&#x200B;命名，并将节点类型设置为&#x200B;**oak:QueryIndexDefinition**
 1. 为新节点设置以下属性：
 
    * **类型：** `property` （类型为String）
@@ -94,7 +94,7 @@ Oak查询引擎支持以下语言：
 
 * **type**&#x200B;属性指定索引的类型，在这种情况下，必须将其设置为&#x200B;**属性**
 
-* **propertyNames**&#x200B;属性指示存储在索引中的属性的列表。 如果缺少节点名称，则会将节点名称用作属性名称引用值。 在此示例中，其作业是公开其节点的唯一标识符(UUID)的&#x200B;**jcr：uuid**&#x200B;属性将添加到索引中。
+* **propertyNames**&#x200B;属性指示存储在索引中的属性的列表。 如果缺少节点名称，则会将节点名称用作属性名称引用值。 在此示例中，其作业是公开其节点的唯一标识符(UUID)的&#x200B;**jcr:uuid**&#x200B;属性将添加到索引中。
 
 * **唯一**&#x200B;标志，如果设置为&#x200B;**true**，则该标志在属性索引上添加唯一性约束。
 
@@ -117,8 +117,8 @@ AEM 6中提供了基于Apache Lucene的全文索引器。
 
 您可以按照以下过程配置Lucene全文索引：
 
-1. 打开CRXDE并在&#x200B;**oak：index**&#x200B;下创建节点。
-1. 为节点&#x200B;**LuceneIndex**&#x200B;命名，并将节点类型设置为&#x200B;**oak：QueryIndexDefinition**
+1. 打开CRXDE并在&#x200B;**oak:index**&#x200B;下创建节点。
+1. 为节点&#x200B;**LuceneIndex**&#x200B;命名，并将节点类型设置为&#x200B;**oak:QueryIndexDefinition**
 1. 将以下属性添加到节点：
 
    * **类型：** `lucene` （类型为String）
@@ -159,14 +159,14 @@ Lucene索引具有以下配置选项：
 
 | <b>令牌</b> | <b>文档ID</b> |
 | --- | --- |
-| 194 | ...，200，... |
-| 品牌 | ...，100... |
-| 多维数据集 | ...，200,300，... |
+| 194 | ..., 200,... |
+| 品牌 | ..., 100,... |
+| 多维数据集 | ..., 200, 300,... |
 | 维度 | 300 |
-| 完成 | ...，100... |
+| 完成 | ..., 100,... |
 | 发明 | 200 |
-| 对象 | ...，300... |
-| 鲁比克 | ...，100,200，... |
+| 对象 | ..., 300,... |
+| 鲁比克 | ..., 100, 200,... |
 
 文档列表已排序。 这在查询时很方便。
 
@@ -189,8 +189,8 @@ Lucene索引具有以下配置选项：
 
 | <b>令牌</b> | <b>文档ID</b> |
 | --- | --- |
-| 鲁比克 | 10、100、200、1000 |
-| 多维数据集 | 30， 200， 300， 2000 |
+| 鲁比克 | 10, 100, 200, 1000 |
+| 多维数据集 | 30, 200, 300, 2000 |
 
 
 Lucene在两个列表（或循环`n`列表，在搜索`n`个单词时）之间来回切换：
@@ -316,39 +316,39 @@ select * from [nt:base] where [alias] = '/admin'
 
 * **名称：** `analyzers`
 
-   * **名称：** `default`
+  * **名称：** `default`
 
-      * **名称：** `charFilters`
-      * **类型：** `nt:unstructured`
+    * **名称：** `charFilters`
+    * **类型：** `nt:unstructured`
 
-         * **名称：** `HTMLStrip`
-         * **名称：** `Mapping`
+      * **名称：** `HTMLStrip`
+      * **名称：** `Mapping`
 
-      * **名称：** `tokenizer`
+    * **名称：** `tokenizer`
 
-         * **属性名称：** `name`
+      * **属性名称：** `name`
 
-            * **类型：** `String`
-            * **值：** `Standard`
+        * **类型：** `String`
+        * **值：** `Standard`
 
-      * **名称：** `filters`
-      * **类型：** `nt:unstructured`
+    * **名称：** `filters`
+    * **类型：** `nt:unstructured`
 
-         * **名称：** `LowerCase`
-         * **名称：** `Stop`
+      * **名称：** `LowerCase`
+      * **名称：** `Stop`
 
-            * **属性名称：** `words`
+        * **属性名称：** `words`
 
-               * **类型：** `String`
-               * **值：** `stop1.txt, stop2.txt`
+          * **类型：** `String`
+          * **值：** `stop1.txt, stop2.txt`
 
-            * **名称：** `stop1.txt`
+        * **名称：** `stop1.txt`
 
-               * **类型：** `nt:file`
+          * **类型：** `nt:file`
 
-            * **名称：** `stop2.txt`
+        * **名称：** `stop2.txt`
 
-               * **类型：** `nt:file`
+          * **类型：** `nt:file`
 
 过滤器、charFilters和tokenizers的名称是通过删除工厂后缀形成的。 因此：
 
@@ -425,7 +425,7 @@ AEM也可以配置为与远程Solr服务器实例配合使用：
 1. 在&#x200B;**Oak Solr**&#x200B;服务器提供程序下的下拉列表中选择&#x200B;**远程Solr**。
 
 1. 前往CRXDE并以管理员身份登录。
-1. 在&#x200B;**oak：index**&#x200B;下创建名为&#x200B;**solrIndex**&#x200B;的节点，并设置以下属性：
+1. 在&#x200B;**oak:index**&#x200B;下创建名为&#x200B;**solrIndex**&#x200B;的节点，并设置以下属性：
 
    * **类型：** solr（类型为String）
    * **异步：**&#x200B;异步（字符串类型）
@@ -510,7 +510,7 @@ ACS Commons包还公开可用于创建属性索引的OSGi配置。
 
 #### MBean输出 {#mbean-output}
 
-有时，提供与索引相关的MBean的输出以进行调试会很有用。 您可以执行以下操作来实现此目标：
+有时，提供与索引相关的MBean的输出以进行调试会很有用。 您可以通过以下方式来实现：
 
 1. 转到JMX控制台：
    `https://serveraddress:port/system/console/jmx`

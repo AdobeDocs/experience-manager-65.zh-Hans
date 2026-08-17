@@ -9,10 +9,10 @@ exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1010'
-ht-degree: 66%
+source-wordcount: '1015'
+ht-degree: 63%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 66%
 >
 >[JMX控制台](/help/sites-administering/jmx-console.md#workflow-maintenance)提供额外的工作流维护操作。
 
-提供了一系列控制台来管理您的工作流。使用[全局导航](/help/sites-authoring/basic-handling.md#global-navigation)以打开&#x200B;**工具**&#x200B;窗格，然后选择&#x200B;**工作流**：
+提供了一系列控制台来管理您的工作流。 使用[全局导航](/help/sites-authoring/basic-handling.md#global-navigation)以打开&#x200B;**工具**&#x200B;窗格，然后选择&#x200B;**工作流**：
 
 * **模型**：管理工作流定义
 * **实例**：查看和管理正在运行的工作流实例
@@ -96,12 +96,12 @@ ht-degree: 66%
 当工作流失败时，AEM会提供&#x200B;**故障**&#x200B;控制台，以便您进行调查，并在找到初始原因后执行适当的操作：
 
 * **失败详细信息**
-打开一个窗口以显示&#x200B;**失败消息**、**步骤**&#x200B;和&#x200B;**失败栈栈**。
+打开一个窗口以显示**失败消息**、**步骤**&#x200B;和&#x200B;**失败栈栈**。
 
 * **打开历史记录**
 显示工作流历史记录的详细信息。
 
-* **重试步骤** — 再次运行脚本步骤组件实例。 修复导致原始错误的故障后，使用“重试步骤”命令。例如，在修复流程步骤执行的脚本中的错误后，重试该步骤。
+* **重试步骤** — 再次运行脚本步骤组件实例。 修复导致原始错误的故障后，使用“重试步骤”命令。 例如，在修复流程步骤执行的脚本中的错误后，重试该步骤。
 * **终止** — 如果错误导致工作流出现不可调和的情况，则终止工作流。 例如，工作流可以依赖于环境条件，例如存储库中对工作流实例不再有效的信息。
 * **终止并重试** — 类似于&#x200B;**终止**，只不过使用原始有效负载、标题和描述来启动新的工作流实例。
 
@@ -117,9 +117,9 @@ ht-degree: 66%
 
 最大限度地减少工作流实例的数量可以提高工作流引擎的性能，因此，您可以定期从存储库中清除已完成或正在运行的工作流实例。
 
-配置 **Adobe Granite 工作流清除配置**&#x200B;以根据其时限和状态清除工作流实例。您还可以清除所有模型或特定模型的工作流实例。
+配置 **Adobe Granite 工作流清除配置**&#x200B;以根据其时限和状态清除工作流实例。 您还可以清除所有模型或特定模型的工作流实例。
 
-您还可以创建多个服务配置以清除满足不同条件的工作流实例。例如，创建一个配置，以便在特定工作流模型的实例运行时间超过预期时间时清除这些实例。 创建另一个配置，以便在一定天数后清除所有已完成的工作流，从而最大限度地减小存储库。
+您还可以创建多个服务配置以清除满足不同条件的工作流实例。 例如，创建一个配置，以便在特定工作流模型的实例运行时间超过预期时间时清除这些实例。 创建另一个配置，以便在一定天数后清除所有已完成的工作流，从而最大限度地减小存储库。
 
 要配置服务，您可以使用[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)。 下表描述了任一方法所需的属性。
 
@@ -148,7 +148,7 @@ ht-degree: 66%
   <tr>
    <td>工作流状态</td>
    <td>scheduledpurge.workflowStatus</td>
-   <td><p>要清除的工作流实例的状态。以下值有效：</p>
+   <td><p>要清除的工作流实例的状态。 以下值有效：</p>
     <ul>
      <li>已完成：清除已完成的工作流实例。</li>
      <li>正在运行：清除正在运行的工作流实例。</li>
@@ -157,7 +157,7 @@ ht-degree: 66%
   <tr>
    <td>要清除的模型</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>要清除的工作流模型的 ID。ID是模型节点的路径，例如：<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>要指定多个模型，请单击 Web 控制台中的 + 按钮。 </p> <p>请勿指定任何值以清除所有工作流模型的实例。</p> </td>
+   <td><p>要清除的工作流模型的 ID。 ID是模型节点的路径，例如：<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>要指定多个模型，请单击 Web 控制台中的 + 按钮。 </p> <p>请勿指定任何值以清除所有工作流模型的实例。</p> </td>
   </tr>
   <tr>
    <td>工作流时限</td>
@@ -169,7 +169,7 @@ ht-degree: 66%
 
 ## 设置收件箱的最大大小 {#setting-the-maximum-size-of-the-inbox}
 
-通过配置&#x200B;**AdobeGranite工作流服务**，使用[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)，可以设置收件箱的最大大小。 下表描述了为任一方法配置的属性。
+通过配置&#x200B;**Adobe Granite工作流服务**、使用[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[将OSGi配置添加到存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)，可以设置收件箱的最大大小。 下表描述了为任一方法配置的属性。
 
 >[!NOTE]
 >
@@ -183,13 +183,13 @@ ht-degree: 66%
 
 ## 将工作流变量用于客户拥有的数据存储 {#using-workflow-variables-customer-datastore}
 
-工作流处理的数据存储在 Adobe 提供的存储 (JCR) 中。此类数据本质上可能是敏感的。您可能希望将所有用户定义的元数据/数据保存在您自己的托管存储中，而不是 Adobe 提供的存储中。这些部分描述了如何为外部存储设置这些变量。
+工作流处理的数据存储在 Adobe 提供的存储 (JCR) 中。 此类数据本质上可能是敏感的。 您可能希望将所有用户定义的元数据/数据保存在您自己的托管存储中，而不是 Adobe 提供的存储中。 这些部分描述了如何为外部存储设置这些变量。
 
 ### 设置模型以使用元数据的外部存储 {#set-model-for-external-storage}
 
-在工作流模型级别，提供了一个标志来指示模型（及其运行时实例）具有元数据的外部存储。对于标记为外部存储的模型的工作流实例，工作流变量不会保留在JCR中。
+在工作流模型级别，提供了一个标志来指示模型（及其运行时实例）具有元数据的外部存储。 对于标记为外部存储的模型的工作流实例，工作流变量不会保留在JCR中。
 
-属性 *userMetadataPersistenceEnabled* 会存储在工作流模型的 *jcr:content 节点*&#x200B;上。此标志会作为 *cq:userMetaDataCustomPersistenceEnabled* 保留在工作流元数据中。
+属性&#x200B;*userMetadataPersistenceEnabled*&#x200B;存储在工作流模型的&#x200B;*jcr:content节点*&#x200B;上。 此标志作为&#x200B;*cq:userMetaDataCustomPersistenceEnabled*&#x200B;保留在工作流元数据中。
 
 以下插图显示的是如何在工作流上设置标志。
 

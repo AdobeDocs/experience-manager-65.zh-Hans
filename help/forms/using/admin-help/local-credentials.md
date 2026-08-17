@@ -9,10 +9,10 @@ exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 0%
+source-wordcount: '545'
+ht-degree: 1%
 
 ---
 
@@ -37,11 +37,11 @@ AEM forms支持采用标准PKCS12格式（.pfx和.p12文件）的最多4096位�
 
    * **文档签名凭据：**&#x200B;用于在文档上颁发数字签名的凭据。
    * **Acrobat Reader DC扩展凭据：**&#x200B;特定于Acrobat Reader DC扩展的数字证书，允许在生成的PDF文档中激活Adobe Reader使用权限。
-   * **默认值：**&#x200B;指示这是用于Acrobat Reader DC扩展的默认凭据。
+   * **默认值：**&#x200B;指示这是要与Acrobat Reader DC扩展一起使用的默认凭据。
 
    有关获取凭据的信息，请参阅[准备安装AEM表单](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf)。
 
-1. 在“别名”框中，键入凭据的标识符。 此标识符用作Acrobat Reader DC扩展和签名服务中凭据的显示名称。 此别名还用于使用AEM forms SDK以编程方式访问凭据。
+1. 在“别名”框中，键入凭据的标识符。 此标识符用作Acrobat Reader DC扩展和签名服务中凭据的显示名称。 此别名还用于使用AEM表单SDK以编程方式访问凭据。
 
    >[!NOTE]
    >

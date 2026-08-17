@@ -1,5 +1,5 @@
 ---
-title: 工作管理器和限制
+title: 工作管理器与限流
 description: 本文档提供了有关工作管理器的背景信息，并提供了有关配置工作管理器限制选项的说明。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,14 @@ exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1042'
-ht-degree: 0%
+source-wordcount: '1053'
+ht-degree: 1%
 
 ---
 
-# 工作管理器和限制{#work-manager-and-throttling}
+# 工作管理器与限流{#work-manager-and-throttling}
 
 >[!NOTE]
 > 
@@ -26,7 +26,7 @@ AEM表单（及更早版本）使用JMS队列异步执行操作。 在AEM表单�
 
 ## 关于长期（异步）操作 {#about-long-lived-asynchronous-operations}
 
-在AEM表单中，服务执行的操作可以是短期的（同步），也可以是长期的（异步）。 短期操作在从中调用它们的同一线程上同步完成。 这些操作在继续之前会等待响应。
+在AEM Forms中，服务执行的操作可以是短期的（同步），也可以是长期的（异步）。 短期操作在从中调用它们的同一线程上同步完成。 这些操作在继续之前会等待响应。
 
 长期运营可能跨多个系统，甚至可能扩展到组织之外，例如，客户必须填写并提交贷款申请表，作为集成多个自动化和人工任务的较大解决方案的一部分。 在等待回应的同时，这种行动必须继续进行。 长寿运营以异步方式执行其基础工作，从而允许资源在等待完成时以其他方式参与。 与短期操作不同，工作管理器在调用长期操作后并不认为该操作已完成。 必须发生外部触发器（如请求对同一服务执行其他操作的系统或提交表单的用户）才能完成操作。
 
@@ -40,7 +40,7 @@ AEM表单（及更早版本）使用JMS队列异步执行操作。 AEM Forms使�
 1. 工作管理器将工作项存储在数据库表中，并为工作项分配唯一标识符。 数据库记录包含执行工作项所需的所有信息。
 1. 当线程空闲时，工作管理器线程拉入工作项。 在拉入工作项之前，线程可以检查所需的服务是否已启动，是否有足够的栈大小来拉入下一个工作项，以及是否有足够的CPU周期来处理该工作项。 在安排执行时，工作管理器还会评估工作项的属性（如优先级）。
 
-AEM forms管理员可以使用运行状况监视器检查Work Manager统计信息，例如队列中的工作项数及其状态。 您还可以使用运行状况监视器暂停、继续、重试或删除工作项。 （请参阅[查看与工作管理器相关的统计信息](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)。）
+AEM Forms管理员可以使用运行状况监视器检查工作管理器统计信息，例如队列中的工作项数及其状态。 您还可以使用运行状况监视器暂停、继续、重试或删除工作项。 （请参阅[查看与工作管理器相关的统计信息](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager)。）
 
 ## 配置工作管理器限制选项 {#configuring-work-manager-throttling-options}
 

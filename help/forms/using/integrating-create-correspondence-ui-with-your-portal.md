@@ -1,5 +1,5 @@
 ---
-title: 将“创建通信UI”与您的自定义门户集成
+title: 将创建通信用户界面与您的自定义门户集成
 description: 了解如何将创建通信UI与您的自定义门户集成
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,14 @@ feature: Correspondence Management
 exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '413'
-ht-degree: 4%
+source-wordcount: '414'
+ht-degree: 8%
 
 ---
 
-# 将“创建通信UI”与您的自定义门户集成{#integrating-create-correspondence-ui-with-your-custom-portal}
+# 将创建通信用户界面与您的自定义门户集成{#integrating-create-correspondence-ui-with-your-custom-portal}
 
 ## 概述 {#overview}
 
@@ -35,7 +35,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->以这种方式调用并不安全，因为必需的参数是作为GET请求传递的，方法是在URL中公开相同的（可见）。
+>这样调用并不安全，因为必需的参数是作为GET请求传递的，方法是在URL中公开相同的（可见）。
 
 >[!NOTE]
 >

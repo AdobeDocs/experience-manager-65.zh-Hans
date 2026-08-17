@@ -1,5 +1,5 @@
 ---
-title: 管理HSM凭证
+title: 管理 HSM 凭据
 description: 了解如何管理HSM凭证。 您可以从“信任存储区管理”页面管理HSM。 您可以查看、检查、更新、重置和删除HSM组件。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,14 @@ exl-id: facbeab2-de95-4778-894c-faa771d3391e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1355'
 ht-degree: 0%
 
 ---
 
-# 管理HSM凭证 {#managing-hsm-credentials}
+# 管理 HSM 凭据 {#managing-hsm-credentials}
 
 从“信任存储区管理”页面，您可以管理Hardware Security Module (HSM)凭据。 HSM是第三方PKCS#11设备，可用于安全生成和存储私钥。 HSM可物理保护对私钥的访问和使用。
 
@@ -36,7 +36,7 @@ AEM forms Digital Signatures可以使用存储在HSM上的凭据来应用服务�
 
 1. 在管理控制台中，单击“设置”>“信任存储区管理”>“HSM凭据”，然后单击“添加”。
 1. 在“配置文件名称”框中，键入用于标识别名的字符串。 此值用作某些数字签名操作（如“签名签名字段”操作）的属性。
-1. 在“PKCS11库”框中，键入服务器上HSM客户端库的完全限定路径。 例如，`c:\Program Files\LunaSA\cryptoki.dll`。在群集环境中，此路径对于群集中的所有服务器必须相同。
+1. 在“PKCS11库”框中，键入服务器上HSM客户端库的完全限定路径。 例如，`c:\Program Files\LunaSA\cryptoki.dll`。 在群集环境中，此路径对于群集中的所有服务器必须相同。
 1. 单击“测试HSM连通性”。 如果AEM Forms能够连接到HSM设备，则会显示一条消息，说明HSM可用。 单击“下一步”。
 1. 使用令牌名称、插槽ID或插槽列表索引来标识凭据在HSM上的存储位置。
 
@@ -51,10 +51,10 @@ AEM forms Digital Signatures可以使用存储在HSM上的凭据来应用服务�
 
 1. 在管理控制台中，单击“设置”>“信任存储区管理”>“HSM凭据”，然后单击“添加”。
 1. 在“配置文件名称”框中，键入用于标识别名的字符串。 此值用作某些数字签名操作（如“签名签名字段”操作）的属性。
-1. 在“PKCS11库”框中，键入服务器上HSM客户端库的完全限定路径。 例如，`c:\Program Files\LunaSA\cryptoki.dll`。在群集环境中，此路径对于群集中的所有服务器必须相同。
+1. 在“PKCS11库”框中，键入服务器上HSM客户端库的完全限定路径。 例如，`c:\Program Files\LunaSA\cryptoki.dll`。 在群集环境中，此路径对于群集中的所有服务器必须相同。
 1. 选中Offline Profile Creation复选框。 单击“下一步”。
 1. 在HSM设备列表中，选择存储凭据的HSM设备的制造商。
-1. 在“插槽类型”列表中，选择“插槽ID”、“插槽索引”或“令牌名称”，然后在“插槽信息”框中指定一个值。 AEM Forms使用这些设置来确定凭据在HSM中的存储位置。
+1. 在“插槽类型”列表中，选择“插槽ID”、“插槽索引”或“令牌名称”，然后在“插槽信息”框中指定一个值。 AEM Forms使用这些设置来确定凭据在HSM上的存储位置。
 
    * **令牌名称：**&#x200B;对应于分区名称（例如，HSMPART1）。
    * **插槽ID：**&#x200B;插槽ID是与插槽对应的整数，该整数又与分区相对应。 例如，客户端(Forms Server)首先在HSMPART1分区中注册。 这会将插槽1映射到此客户端的HSMPART1分区。 由于HSMPART1是第一个注册的分区，因此插槽ID为1，您应该将插槽信息设置为1。
@@ -106,5 +106,5 @@ AEM Forms使用基于Web服务的IPC/RPC机制。 此机制使AEM表单能够使
 
 此机制不支持在线创建HSM配置文件或进行状态检查。 但是，可通过两种方式创建HSM配置文件和执行状态检查：
 
-* 通过传递签名者证书来创建AEM Forms客户端凭据。 按照[在Windows 64位平台上使用Sun JDK配置AEM Forms ES的HSM支持](https://kb2.adobe.com/cps/808/cpsid_80835.html)中的步骤操作。 Web服务位置作为Credential属性传入。 还支持使用证书或证书SHA-1十六进制创建离线HSM配置文件。 但是，如果您已从早期版本的AEM表单升级到AEM表单，则进行客户端更改，因为凭据包含证书和Web服务信息。
-* Web服务位置在Signature服务的管理控制台中指定。 （请参阅[签名服务设置](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)。）在此处，客户端仅承载信任存储区中HSM配置文件的别名。 即使您从早期版本的AEM表单升级到AEM表单，也可以无缝地使用此选项，而无需进行任何客户端更改。 此选项不支持使用证书SHA-1的HSM配置文件。
+* 通过传递签名者证书来创建AEM Forms客户端凭据。 按照[在Windows 64位平台上使用Sun JDK配置AEM Forms ES的HSM支持](https://kb2.adobe.com/cps/808/cpsid_80835.html)中的步骤操作。 Web服务位置作为Credential属性传入。 还支持使用证书或证书SHA-1十六进制创建离线HSM配置文件。 但是，如果您已从早期版本的AEM表单升级到AEM表单，则需进行客户端更改，因为凭据包含证书和Web服务信息。
+* Web服务位置在Signature服务的管理控制台中指定。 （请参阅[签名服务设置](/help/forms/using/admin-help/configure-service-settings.md#signature-service-settings)。） 在此，客户端仅携带信任存储区中HSM配置文件的别名。 即使您从早期版本的AEM表单升级到AEM表单，也可以无缝使用此选项，而无需进行任何客户端更改。 此选项不支持使用证书SHA-1的HSM配置文件。

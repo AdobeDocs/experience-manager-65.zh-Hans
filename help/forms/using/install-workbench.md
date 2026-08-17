@@ -7,10 +7,10 @@ role: Admin, User, Developer
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 solution: Experience Manager, Experience Manager Forms
 feature: Workbench,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2184'
-ht-degree: 0%
+source-wordcount: '2298'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## 谁应该阅读本文档？ {#who-should-read-this-doc}
 
-本文档面向负责安装、配置、管理或部署Workbench的管理员或开发人员。 此外，还包括有关配置您的系统以支持升级后的AEM Forms流程的信息。 所提供的信息基于这样一种假设：阅读本文档的任何人都熟悉Microsoft® Windows®操作系统。
+本文档面向负责安装、配置、管理或部署Workbench的管理员或开发人员。 此外，还包括有关配置您的系统以支持升级后的AEM Forms流程的信息。 所提供的信息基于这样一种假设：阅读本文档的任何人都熟悉® Windows®操作系统。
 
 ## 附加信息 {#additional-information}
 
@@ -37,11 +37,11 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p>有关AEM Forms以及它如何与其他Adobe产品集成的一般信息</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=zh-Hans">AEM Forms概述</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms概述</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>AEM Forms的所有可用文档</p> </td>
-   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=zh-Hans">AEM Forms文档</a><br /> <br /> </p> </td>
+   <td><p><a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/getting-started/introduction-aem-forms.html?lang=en">AEM Forms文档</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>有关此产品版本的修补程序更新、技术说明和其他信息</p> </td>
@@ -100,7 +100,7 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
 
 ### 支持的平台 {#supported-platforms}
 
-在[AEM Forms支持的平台](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65_cn)上，查看Workbench支持的平台的完整列表。
+在[AEM Forms支持的平台](https://www.adobe.com/go/learn_aemforms_supportedplatforms_65)上，查看Workbench支持的平台的完整列表。
 
 ## Designer安装注意事项 {#designer-installation-considerations}
 
@@ -114,10 +114,10 @@ Workbench是一个集成开发环境(IDE)，开发人员和表单作者使用它
    <td><p><strong>必需操作</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Acrobat Pro或Acrobat Pro Extended(包括Designer)</p> </td>
+   <td><p>Acrobat Pro或Acrobat Pro Extended（包括Designer）</p> </td>
    <td><p>无。<br /> 
 Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended一起安装的Designer实例。<br />
-不同版本的Designer可以共存于同一系统中，例如，Designer 6.4.x for Workbench 6.4和Designer 6.5.0.x for Workbench 6.5。无需卸载随Acrobat 10 Pro或Acrobat 10 Pro Extended或更高版本安装的Designer版本。
+不同版本的Designer可以共存于同一系统中，例如，Designer 6.4.x for Workbench 6.4和Designer 6.5.0.x for Workbench 6.5。 无需卸载随Acrobat 10 Pro或Acrobat 10 Pro Extended或更高版本安装的Designer版本。
 <br /></p> </td>
   </tr>
   <tr>
@@ -130,7 +130,7 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 ### 在Windows 10上卸载Designer（独立） {#uninstall-designer-standalone-windows10}
 
 1. 转到&#x200B;**控制面板>程序>程序和功能**
-1. 在当前安装的程序列表中，选择&#x200B;**AdobeDesigner**。
+1. 在当前安装的程序列表中，选择&#x200B;**Adobe Designer**。
 1. 单击&#x200B;**卸载**，然后单击&#x200B;**是**。
 
 ## 安装Workbench {#installing-workbench}
@@ -153,11 +153,11 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 
    >[!NOTE]
    >
-   >如果遇到错误“无法创建Java™虚拟机”，请创建一个名为_JAVA_Variables且值为 — Xmx512M的OPTIONS变量，然后运行安装程序。
+   >如果遇到错误“无法创建Java™虚拟机”，请创建一个名为_JAVA_OPTIONS的环境变量（值为 — Xmx512M）并运行安装程序。
 
 1. 在“Introduction（简介）”屏幕上，单击“Next（下一步）”。
 1. 阅读产品许可协议，选择“I accept the terms of the License Agreement（我接受许可协议的条款）” ，然后单击“Next（下一步）”。
-1. （可选）如果需要此工具创建和修改表单，请选择安装AdobeDesigner 。
+1. （可选）如果需要此工具创建和修改表单，请选择安装Adobe Designer 。
 
    >[!NOTE]
    >
@@ -173,8 +173,8 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 1. 查看安装摘要。 选择启动AEM Forms Workbench ，以启动Workbench ，然后单击下一步。
 1. 查看发行说明，然后单击完成。
 1. 以下项目现已安装在您的计算机上：
-   * **Workbench**：若要从“开始”菜单运行Workbench，请选择“所有程序”>“AEM Forms”>“Workbench”（如果您选择将快捷方式文件夹存储在该处）。 有关信息，   请参阅<a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">使用Workbench</a>文档。
-   * **Designer**：您可以从Workbench内部访问Designer。 有关信息，请参阅<a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer帮助</a>中的入门主题。
+   * **Workbench**：若要从“开始”菜单运行Workbench，请选择“所有程序”>“AEM Forms”>“Workbench”（如果您选择将快捷方式文件夹存储在该处）。 有关信息，请参阅<a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">使用Workbench</a>文档。
+   * **Designer**：您可以从Workbench内部访问Designer。 有关信息，请参阅<a href="https://helpx.adobe.com/cn/content/dam/help/en/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer帮助</a>中的入门主题。
    * **AEM Forms SDK**：有关使用SDK的更多信息，请参阅<a href="https://helpx.adobe.com/pdf/aem-forms/6-3/programming-with-aem-forms.pdf">使用AEM Forms编程</a>。
 
 ## 升级流程 {#upgrading-processes}
@@ -187,11 +187,11 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 
 >[!NOTE]
 >
->如果您将AEM Forms配置为使用EMC Documentum®或IBM® FileNet存储库提供程序，并且希望登录到其他存储库(在AEM Forms管理控制台中配置为默认的存储库)，请以username@Repository的形式提供用户名。
+>如果您将AEM Forms配置为使用EMC Documentum®或IBM® FileNet存储库提供程序，并且希望登录到其他存储库（在AEM Forms管理控制台中配置为默认的存储库），请以username@Repository的形式提供用户名。
 
 ### 配置超时设置 {#configuring-timeout-settings}
 
-默认情况下，Workbench会在两小时后超时，无论是否处于活动状态或非活动状态。 要编辑超时设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=zh-Hans">管理控制台帮助</a>中的“配置用户管理>配置高级系统属性”。
+默认情况下，Workbench会在两小时后超时，无论是否处于活动状态或非活动状态。 要编辑超时设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">管理控制台帮助</a>中的“配置用户管理>配置高级系统属性”。
 
 ### 配置Workbench以通过HTTPS进行连接 {#configuring-workbench-to-connect-over-HTTPS}
 
@@ -214,7 +214,7 @@ Workbench安装过程会检测计算机上随Acrobat Pro或Acrobat Pro Extended�
 
 1. 打开命令提示符窗口，导航到[Workbench_HOME]/workbench/jre/bin，然后键入以下命令：
    `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
-其中：
+   其中：
    * `changeit`是cacerts密钥库的默认密码。
    * certname是您在步骤1中选择的证书。
    * 示例是您为证书选择的别名。 此值可更改。
@@ -258,8 +258,8 @@ Forms服务通过引用文件名或存储库位置或按值接收模板，这些
 * 对于非钝化输入模板，缓存取决于生成文档的内容根目录和文件名。
 只有内容根和模板文件名相同的请求才会使用相同的缓存。
 以下最佳实践可确保将动态生成的模板传递到Forms服务时，缓存不会无限增加：
-   * 在所有动态生成的模板中剥离UUID或传递相同的UUID。
-   * 通过模板字节或磁盘上的相同文件名生成文档。
+  * 在所有动态生成的模板中剥离UUID或传递相同的UUID。
+  * 通过模板字节或磁盘上的相同文件名生成文档。
 
 ### 卸载Workbench {#uninstalling-workbench}
 

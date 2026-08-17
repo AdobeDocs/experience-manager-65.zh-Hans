@@ -10,9 +10,9 @@ exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ ht-degree: 0%
 * 单击&#x200B;**添加**
 * 单击&#x200B;**全部保存**
 
-注意：在类别值前面加上“apps”。 是一个用于将“拥有的应用程序”标识为/apps文件夹中的约定，而不是/libs中的约定。 重要：添加占位符`js.tx`t和&#x200B;**`css.txt`**&#x200B;文件。 （正式来说，它不是cq：ClientLibraryFolder，没有它们。）
+注意：在类别值前面加上“apps.”是一种将“拥有的应用程序”标识为/apps文件夹中的约定，而不是/libs中的约定。 重要：添加占位符`js.tx`t和&#x200B;**`css.txt`**&#x200B;文件。 （正式来说，它不是没有它们的cq:ClientLibraryFolder。）
 
 1. 右键单击&#x200B;**`/etc/designs/an-scf-sandbox/clientlibs`**
 1. 选择&#x200B;**创建文件……**
@@ -74,7 +74,7 @@ css.txt和js.txt的第一行标识了找到以下文件列表的基本位置。
 
 ### 嵌入SCF Clientlibs {#embed-scf-clientlibs}
 
-在`clientlibs`节点的&#x200B;**属性**&#x200B;选项卡中，输入多值字符串属性&#x200B;**embed**。 这会为SCF组件[&#128279;](/help/communities/client-customize.md#clientlibs-for-scf)嵌入必要的客户端库(clientlibs)。 在本教程中，添加了社区组件所需的许多clientlibs。
+在`clientlibs`节点的&#x200B;**属性**&#x200B;选项卡中，输入多值字符串属性&#x200B;**embed**。 这会为SCF组件](/help/communities/client-customize.md#clientlibs-for-scf)嵌入必要的[客户端库(clientlibs)。 在本教程中，添加了社区组件所需的许多clientlibs。
 
 这可能是也可能不是用于生产站点的所需方法，因为需要考虑方便性相对于为每个页面下载的clientlibs的大小/速度。
 
@@ -89,16 +89,16 @@ css.txt和js.txt的第一行标识了找到以下文件列表的基本位置。
 * 单击&#x200B;**`Multi`**
 * 值： **`cq.social.scf`**
 
-   * 它会弹出一个对话框，
-在每个条目后单击&#x200B;**`+`**&#x200B;以添加以下clientlib类别：
+  * 它会弹出一个对话框，
+    在每个条目后单击**`+`**&#x200B;以添加以下clientlib类别：
 
-      * **`cq.ckeditor`**
-      * **`cq.social.author.hbs.comments`**
-      * **`cq.social.author.hbs.forum`**
-      * **`cq.social.author.hbs.rating`**
-      * **`cq.social.author.hbs.reviews`**
-      * **`cq.social.author.hbs.voting`**
-      * 单击&#x200B;**确定**
+    * **`cq.ckeditor`**
+    * **`cq.social.author.hbs.comments`**
+    * **`cq.social.author.hbs.forum`**
+    * **`cq.social.author.hbs.rating`**
+    * **`cq.social.author.hbs.reviews`**
+    * **`cq.social.author.hbs.voting`**
+    * 单击&#x200B;**确定**
 
 * 单击&#x200B;**全部保存**
 
@@ -162,26 +162,26 @@ Include语句属于`html`脚本的`head`部分。 默认&#x200B;**`foundation he
 * 在CRXDE Lite中，单击[包图标](https://localhost:4502/crx/packmgr/)
 * 单击&#x200B;**创建包**
 
-   * 包名称： an-scf-sandbox-minimal-pkg
-   * 版本：0.1
-   * 组： `leave as default`
-   * 单击&#x200B;**确定**
+  * 包名称： an-scf-sandbox-minimal-pkg
+  * 版本：0.1
+  * 组： `leave as default`
+  * 单击&#x200B;**确定**
 
-* 单击&#x200B;**编辑**
+* 点击&#x200B;**编辑**
 
-   * 选择&#x200B;**筛选器**&#x200B;选项卡
+  * 选择&#x200B;**筛选器**&#x200B;选项卡
 
-      * 单击&#x200B;**添加筛选器**
-      * 根路径：浏览到`/apps/an-scf-sandbox`
-      * 单击&#x200B;**完成**
-      * 单击&#x200B;**添加筛选器**
-      * 根路径：浏览到`/etc/designs/an-scf-sandbox`
-      * 单击&#x200B;**完成**
-      * 单击&#x200B;**添加筛选器**
-      * 根路径：浏览到`/content/an-scf-sandbox**`
-      * 单击&#x200B;**完成**
+    * 单击&#x200B;**添加筛选器**
+    * 根路径：浏览到`/apps/an-scf-sandbox`
+    * 单击&#x200B;**完成**
+    * 单击&#x200B;**添加筛选器**
+    * 根路径：浏览到`/etc/designs/an-scf-sandbox`
+    * 单击&#x200B;**完成**
+    * 单击&#x200B;**添加筛选器**
+    * 根路径：浏览到`/content/an-scf-sandbox**`
+    * 单击&#x200B;**完成**
 
-   * 单击&#x200B;**保存**
+  * 单击&#x200B;**保存**
 
 * 单击&#x200B;**生成**
 

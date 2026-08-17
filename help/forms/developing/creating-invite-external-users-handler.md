@@ -1,22 +1,22 @@
 ---
-title: 创建“邀请外部用户”处理程序
+title: 创建外部用户邀请处理程序
 description: 了解如何创建邀请外部用户处理程序。 它允许Rights Management服务邀请外部用户成为Rights Management用户。
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 0%
+source-wordcount: '1165'
+ht-degree: 4%
 
 ---
 
-# 创建“邀请外部用户”处理程序 {#create-invite-external-users-handler}
+# 创建外部用户邀请处理程序 {#create-invite-external-users-handler}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
-您可以为Rights Management服务创建“邀请外部用户”处理程序。 通过“邀请外部用户”处理程序，Rights Management服务可邀请外部用户成为Rights Management用户。 当用户成为Rights Management用户后，用户能够执行任务，例如打开受策略保护的PDF文档。 将邀请外部用户处理程序部署到AEM Forms后，您可以使用管理控制台与其交互。
+您可以为Rights Management服务创建邀请外部用户处理程序。 通过“邀请外部用户”处理程序，Rights Management服务可以邀请外部用户成为Rights Management用户。 当用户成为Rights Management用户后，该用户能够执行任务，例如打开受策略保护的PDF文档。 将邀请外部用户处理程序部署到AEM Forms后，您可以使用管理控制台与其交互。
 
 >[!NOTE]
 >
@@ -36,13 +36,13 @@ ht-degree: 0%
 
 要设置开发环境，必须创建一个Java项目，如Eclipse项目。 支持的Eclipse版本是`3.2.1`或更高版本。
 
-Rights ManagementSPI要求在项目的类路径中设置`edc-server-spi.jar`文件。 如果不引用此JAR文件，则无法在Java项目中使用Rights ManagementSPI。 此JAR文件与AEM Forms SDK一起安装在`[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`文件夹中。
+Rights Management SPI要求在项目的类路径中设置`edc-server-spi.jar`文件。 如果不引用此JAR文件，则无法在Java项目中使用Rights Management SPI。 此JAR文件与AEM Forms SDK一起安装在`[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi`文件夹中。
 
-除了将`edc-server-spi.jar`文件添加到项目的类路径外，还必须添加使用Rights Management服务API所需的JAR文件。 在“邀请外部Rights Management”处理程序中使用“用户服务API”需要这些文件。
+除了将`edc-server-spi.jar`文件添加到项目的类路径外，还必须添加使用Rights Management服务API所需的JAR文件。 在邀请外部用户处理程序中使用Rights Management服务API时需要这些文件。
 
 ## 定义邀请外部用户处理程序实施 {#define-invite-external-users-handler}
 
-要开发邀请外部用户处理程序，必须创建实现`com.adobe.edc.server.spi.ersp.InvitedUserProvider`接口的Java类。 此类包含一个名为`invitedUser`的方法，当电子邮件地址是使用可通过管理控制台访问的&#x200B;**添加受邀用户**&#x200B;页提交时，Rights Management服务将调用该方法。
+要开发邀请外部用户处理程序，必须创建实现`com.adobe.edc.server.spi.ersp.InvitedUserProvider`接口的Java类。 此类包含一个名为`invitedUser`的方法，当使用可通过管理控制台访问的&#x200B;**添加受邀用户**&#x200B;页面提交电子邮件地址时，Rights Management服务将调用该方法。
 
 `invitedUser`方法接受`java.util.List`实例，该实例包含从&#x200B;**添加受邀用户**&#x200B;页面提交的字符串类型电子邮件地址。 `invitedUser`方法返回`InvitedUserProviderResult`对象的数组，这通常是电子邮件地址到用户对象的映射（不返回null）。
 
@@ -215,7 +215,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ![邀请用户](assets/ci_ci_InviteUsers.png)
 
-A.组件所需的外部JAR文件B. JAVA文件
+A.组件B所需的外部JAR文件。 JAVA文件
 
 将邀请外部用户处理程序打包到JAR文件中。 在上图中，请注意列出了.JAVA文件。 打包到JAR文件后，还必须指定相应的.CLASS文件。 如果没有.CLASS文件，授权处理程序将无法工作。
 
@@ -238,10 +238,10 @@ A.组件所需的外部JAR文件B. JAVA文件
 
    >[!NOTE]
    >
-   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+   > 建议使用 “Ctrl + C” 命令重新启动 SDK。 如果使用其他方式（例如停止 Java 进程）重新启动 AEM SDK，则可能会导致 AEM 开发环境出现不一致情况。
 
 1. 登录到管理控制台。
-1. 单击&#x200B;**[!UICONTROL 服务]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 配置]** >已邀请&#x200B;**[!UICONTROL 用户注册]**。
+1. 单击&#x200B;**[!UICONTROL 服务]** > **[!UICONTROL Rights Management]** > **[!UICONTROL 配置]** >已邀请的&#x200B;**[!UICONTROL 用户注册]**。
 1. 通过选中&#x200B;**[!UICONTROL 启用受邀用户注册]**&#x200B;框启用受邀用户注册。 在&#x200B;**[!UICONTROL 使用内置注册系统]**&#x200B;下，单击&#x200B;**[!UICONTROL 否]**。 保存您的设置。
 1. 在管理控制台主页中，单击&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 用户管理]** > **[!UICONTROL 域管理]**。
 1. 单击&#x200B;**[!UICONTROL 新建本地域]**。 在以下页面中，创建一个名称和标识符值为`EDC_EXTERNAL_REGISTERED`的域。 保存更改。

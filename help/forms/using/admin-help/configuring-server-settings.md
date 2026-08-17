@@ -9,9 +9,9 @@ exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2643'
+source-wordcount: '2665'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ ht-degree: 0%
 >
 >AEM Forms版本已弃用Flex Workspace。
 
-默认情况下，由AEM表单发送的电子邮件包含指向(JEE上的AEM表单已弃用)Flex Workspace的链接。 您可以将AEM表单配置为发送包含指向AEM Forms Workspace的链接的电子邮件。 要详细了解AEM Forms Workspace与(JEE上的AEM Forms已弃用)Flex Workspace相比所具有的优势，请参阅[此](/help/forms/using/features-html-workspace-available-flex.md)文章。
+默认情况下，AEM表单发送的电子邮件包含指向（JEE上的AEM表单已弃用）Flex Workspace的链接。 您可以将AEM表单配置为发送包含指向AEM Forms Workspace的链接的电子邮件。 要详细了解AEM Forms Workspace与（JEE上的AEM Forms已弃用）Flex Workspace相比所具有的优势，请参阅[此](/help/forms/using/features-html-workspace-available-flex.md)文章。
 
 1. 在管理控制台中，单击主页>服务>表单工作流>服务器设置>任务通知。
 1. 打开任务分配模板。
@@ -98,7 +98,7 @@ ht-degree: 0%
 1. （仅限用户通知）要在提醒电子邮件中包含表单的附件及其数据，请选择“包括表单数据”。
 1. 在“主题”框中，键入电子邮件主题行的文本。 此字段已预填充默认文本。 有关自定义此字段的详细信息，请参阅[自定义通知内容](configuring-server-settings.md#customizing-the-content-of-notifications)。
 1. 在通知模板框中，键入电子邮件正文的文本。 此字段已预填充默认文本。 有关自定义此字段的详细信息，请参阅[自定义通知内容](configuring-server-settings.md#customizing-the-content-of-notifications)。
-1. 在“邮件格式”列表中，选择发送电子邮件的格式，即HTML或文本。 默认格式为HTML。
+1. 在邮件格式列表中，选择用于发送电子邮件的格式，即HTML或文本。 默认格式为HTML。
 1. 在电子邮件编码列表中，选择要用于电子邮件的编码格式。 默认值为UTF-8，日本以外的大多数用户都将使用该格式。 日本用户可以选择ISO2022-JP。
 1. 单击“保存”。
 
@@ -112,7 +112,7 @@ ht-degree: 0%
 1. （仅限用户通知）要在任务分配电子邮件中包含表单的附件及其数据，请选择“包括表单数据”。
 1. 在“主题”框中，键入电子邮件主题行的文本。 此字段已预填充默认文本。 有关自定义此字段的详细信息，请参阅[自定义通知内容](configuring-server-settings.md#customizing-the-content-of-notifications)。
 1. 在通知模板框中，键入电子邮件正文的文本。 此字段已预填充默认文本。 有关自定义此字段的详细信息，请参阅[自定义通知内容](configuring-server-settings.md#customizing-the-content-of-notifications)。
-1. 在“邮件格式”列表中，选择发送电子邮件的格式，即HTML或文本。 默认格式为HTML。
+1. 在邮件格式列表中，选择用于发送电子邮件的格式，即HTML或文本。 默认格式为HTML。
 1. 在电子邮件编码列表中，选择要用于电子邮件的编码格式。 默认值为UTF-8，日本以外的大多数用户都将使用该格式。 日本用户可以选择ISO2022-JP。
 1. 单击“保存”。
 
@@ -125,7 +125,7 @@ ht-degree: 0%
 1. 选择启用截止日期或启用组 — 截止日期。
 1. 在“主题”框中，键入电子邮件主题行的文本。 此字段已预填充默认文本。 有关自定义此字段的详细信息，请参阅[自定义通知内容](configuring-server-settings.md#customizing-the-content-of-notifications)。
 1. 在通知模板框中，键入电子邮件正文的文本。 此字段已预填充默认文本。 有关自定义此字段的详细信息，请参阅[自定义通知内容](configuring-server-settings.md#customizing-the-content-of-notifications)。
-1. 在“邮件格式”列表中，选择发送电子邮件的格式，即HTML或文本。 默认格式为HTML。
+1. 在邮件格式列表中，选择用于发送电子邮件的格式，即HTML或文本。 默认格式为HTML。
 1. 在电子邮件编码列表中，选择要用于电子邮件的编码格式。 默认值为UTF-8，日本以外的大多数用户都将使用该格式。 日本用户可以选择ISO2022-JP。
 1. 单击“保存”。
 
@@ -156,7 +156,7 @@ For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.ad
 1. 在“电子邮件地址”框中，键入分支停止时要通知的用户地址。 使用格式user@domain.com ，并用逗号分隔每个地址。 通常情况下，此电子邮件地址适用于管理员。
 1. 在“主题”框中，键入电子邮件主题行的文本。 此字段已预填充默认文本。 有关自定义此字段的详细信息，请参阅[自定义通知内容](configuring-server-settings.md#customizing-the-content-of-notifications)。
 1. 在通知模板框中，键入电子邮件正文的文本。 此字段已预填充默认文本。 有关自定义此字段的详细信息，请参阅[自定义通知内容](configuring-server-settings.md#customizing-the-content-of-notifications)。
-1. 在“邮件格式”列表中，选择发送电子邮件的格式，即HTML或文本。 默认格式为HTML。
+1. 在邮件格式列表中，选择用于发送电子邮件的格式，即HTML或文本。 默认格式为HTML。
 1. 在电子邮件编码列表中，选择要用于电子邮件的编码格式。 默认值为UTF-8，日本以外的多数用户都使用该格式。 日本用户可以选择ISO2022-JP。
 1. 单击“保存”。
 
@@ -182,7 +182,7 @@ For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.ad
 
 ### 富文本编辑器 {#rich-text-editor}
 
-Notification Template区域是一个富文本编辑器，可用于生成电子邮件通知消息的HTML。 它提供字体和段落格式选项，这些选项位于通知模板框的下方。 这些选项包括字体类型、大小、样式和颜色，以及段落对齐方式和项目符号。
+通知模板区域是一个富文本编辑器，它允许您为电子邮件通知消息生成HTML。 它提供字体和段落格式选项，这些选项位于通知模板框的下方。 这些选项包括字体类型、大小、样式和颜色，以及段落对齐方式和项目符号。
 
 ### URL生成 {#url-generation}
 
@@ -206,7 +206,7 @@ Notification Template区域是一个富文本编辑器，可用于生成电子�
 
 **JBoss：** 8080
 
-**Oracle的WebLogic Server：** 7001
+**Oracle WebLogic Server：** 7001
 
 **IBM WebSphere：** 9080
 
@@ -226,7 +226,7 @@ Notification Template区域是一个富文本编辑器，可用于生成电子�
 
 **指令**&#x200B;任务指令属性的内容，如Workbench中进程的用户步骤中所定义。
 
-**notification-host** AEM forms应用程序服务器的主机名。
+**notification-host** AEM表单应用程序服务器的主机名。
 
 **process-name**&#x200B;进程的名称。
 
@@ -250,7 +250,7 @@ Notification Template区域是一个富文本编辑器，可用于生成电子�
 
 **process-id**&#x200B;进程实例标识符。
 
-**notification-host** AEM forms应用程序服务器的主机名。
+**notification-host** AEM表单应用程序服务器的主机名。
 
 对于停止的操作，您可以在“主题”和“通知模板”框中使用以下变量：
 
@@ -260,7 +260,7 @@ Notification Template区域是一个富文本编辑器，可用于生成电子�
 
 **process-id**&#x200B;进程实例标识符。
 
-**notification-host** AEM forms应用程序服务器的主机名。
+**notification-host** AEM表单应用程序服务器的主机名。
 
 ### 在主题框中使用变量 {#using-a-variable-in-the-subject-box}
 

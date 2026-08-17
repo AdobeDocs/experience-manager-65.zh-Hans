@@ -9,9 +9,9 @@ exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e9afc12af78140ae0ec12cc2ee95fc9e175f8d94
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '3241'
+source-wordcount: '3263'
 ht-degree: 0%
 
 ---
@@ -124,7 +124,7 @@ ht-degree: 0%
 >
 >请勿在此设置中包含用户的DN。 要同步特定用户，请使用“搜索过滤器”设置。
 
-虽然Base DN是Administration Console中的强制设置，但某些目录服务器(如IBM Domino Enterprise Server)可能需要空的BaseDN。 要指定空的基本DN，请导出config.xml文件，编辑config.xml文件中的设置，然后重新导入它。 （请参阅[导入和导出配置文件](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)。）
+虽然Base DN是Administration Console中的强制设置，但某些目录服务器（如IBM Domino Enterprise Server）可能需要空的BaseDN。 要指定空的基本DN，请导出config.xml文件，编辑config.xml文件中的设置，然后重新导入它。 （请参阅[导入和导出配置文件](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)。）
 
 **搜索筛选器：** （必需）用于查找与用户关联的记录的搜索筛选器。 您可以执行一级搜索或子级搜索。 （请参阅搜索筛选器语法或RFC 2254。） 有关Microsoft AD架构的其他信息，请参阅Active Directory架构。
 
@@ -140,7 +140,7 @@ ht-degree: 0%
 
 **首字母：**&#x200B;用户首字母的架构属性
 
-**业务日历：**&#x200B;允许您根据此设置的值（业务日历键）将业务日历映射到用户。 业务日历定义业务日和非业务日。 在计算事件（如提醒、截止日期和呈报）的未来日期和时间时，AEM表单可以使用业务日历。 为用户分配业务日历键的方式取决于您使用的是企业域、本地域还是混合域。 （请参阅配置业务日历。）
+**业务日历：**&#x200B;允许您根据此设置的值（业务日历键）将业务日历映射到用户。 业务日历定义业务日和非业务日。 AEM表单在计算事件（如提醒、截止日期和呈报）的未来日期和时间时，可以使用业务日历。 为用户分配业务日历键的方式取决于您使用的是企业域、本地域还是混合域。 （请参阅配置业务日历。）
 
 如果您使用的是企业域，则可以将“业务日历”设置映射到LDAP目录中的字段。 例如，如果目录中的每个用户记录都包含&#x200B;*国家/地区*&#x200B;字段，并且要根据用户所在的国家/地区分配业务日历，请将&#x200B;*国家/地区*&#x200B;字段名称指定为业务日历设置的值。 然后，您可以将业务日历键（为LDAP目录中的&#x200B;*国家/地区*&#x200B;字段定义的值）映射到表单工作流中的业务日历。
 
@@ -162,7 +162,7 @@ ht-degree: 0%
 
 **时区：**&#x200B;包含用户所在时区的架构属性。 该值是一个字符串，例如城市/国家/地区。
 
-**启用虚拟列表视图(VLV)控件：**&#x200B;允许AEM表单从目录服务器批量检索数据的LDAP控件。 如果将Sun One用作LDAP目录并且该目录包含许多用户，则启用VLV将创建一个索引，“用户管理”可在搜索用户时使用该索引。 当使用只能同步有限数量数据的普通用户帐户时，此功能非常有用。 也可以为组启用VLV。 如果选择“启用虚拟列表视图(VLV)控件”，请在“排序字段”框中指定一个名称。
+**启用虚拟列表视图(VLV)控件：**&#x200B;一个LDAP控件，它允许AEM表单从目录服务器批量检索数据。 如果将Sun One用作LDAP目录并且该目录包含许多用户，则启用VLV将创建一个索引，“用户管理”可在搜索用户时使用该索引。 当使用只能同步有限数量数据的普通用户帐户时，此功能非常有用。 也可以为组启用VLV。 如果选择“启用虚拟列表视图(VLV)控件”，请在“排序字段”框中指定一个名称。
 
 >[!NOTE]
 >
@@ -180,7 +180,7 @@ ht-degree: 0%
 
 **基本DN：** （必需）目录的基本可分辨名称。
 
-虽然Base DN是Administration Console中的强制设置，但某些目录服务器(如IBM Domino Enterprise Server)需要空的BaseDN。 要指定空的基本DN，请导出config.xml文件，编辑config.xml文件中的设置，然后重新导入它。 （请参阅[导入和导出配置文件](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)。）
+虽然Base DN是Administration Console中的强制设置，但某些目录服务器（如IBM Domino Enterprise Server）需要空的BaseDN。 要指定空的基本DN，请导出config.xml文件，编辑config.xml文件中的设置，然后重新导入它。 （请参阅[导入和导出配置文件](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file)。）
 
 **搜索筛选器：** （必需）用于查找与组关联的记录的搜索筛选器。 您可以执行一级搜索或子级搜索。
 
@@ -204,7 +204,7 @@ ht-degree: 0%
 
 **修改时间戳：**&#x200B;若要启用增量目录同步，请设置此值以修改时间戳。 （请参阅启用增量目录同步。）
 
-**启用虚拟列表视图(VLV)控件：**&#x200B;允许AEM表单从目录服务器批量检索数据的LDAP控件。 如果将Sun One用作LDAP目录并且该目录包含许多组，则启用VLV将创建一个索引，“用户管理”可在搜索组时使用该索引。 当使用只能同步有限数量数据的普通用户帐户时，此功能非常有用。 您也可以为用户启用VLV。 如果选择启用虚拟列表视图(VLV)控件，请指定排序字段名称。
+**启用虚拟列表视图(VLV)控件：**&#x200B;一个LDAP控件，它允许AEM表单从目录服务器批量检索数据。 如果将Sun One用作LDAP目录并且该目录包含许多组，则启用VLV将创建一个索引，“用户管理”可在搜索组时使用该索引。 当使用只能同步有限数量数据的普通用户帐户时，此功能非常有用。 您也可以为用户启用VLV。 如果选择启用虚拟列表视图(VLV)控件，请指定排序字段名称。
 
 >[!NOTE]
 >
@@ -226,7 +226,7 @@ ht-degree: 0%
 
 目录同步是User Management的重要要求。 用户和组从企业目录同步到AEM表单数据库，以分配角色和权限。 用户数量从100到100000+不等，这取决于需求，对数据的有效同步提出了工程上的挑战。
 
-LDAP协议提供了一种机制，通过使用请求控件以分页方式查询大型数据集。 使用Microsoft Active Directory时，LDAP到AEM表单的数据库同步使用PagedResultsControl检索特定大小的批次数据。 Sun ONE Directory Server不支持此控制。 要完成针对Sun ONE Directory Server的分页查询，请使用Virtual List View (VLV)控件。 此控件包括目录服务器端配置和客户端实施。
+LDAP协议提供了一种机制，通过使用请求控件以分页方式查询大型数据集。 使用Microsoft Active Directory时，LDAP到AEM表单数据库同步使用PagedResultsControl检索特定大小的批次数据。 Sun ONE Directory Server不支持此控制。 要完成针对Sun ONE Directory Server的分页查询，请使用Virtual List View (VLV)控件。 此控件包括目录服务器端配置和客户端实施。
 
 >[!NOTE]
 >
@@ -238,7 +238,7 @@ LDAP协议提供了一种机制，通过使用请求控件以分页方式查询�
 
 ### 为VLV配置Sun ONE Directory Server {#configuring-the-sun-one-directory-server-for-vlv}
 
-创建VLV需要包含`vlvSearch`和`vlvIndex`对象类的一对条目。 vlvSearch条目包括搜索基和`vlvFilter`属性，后者指定包含要排序的属性的对象类。 `vlvIndex`对象类包含`vlvSort`属性，该属性指定要排序的一个或多个属性以及排序这些属性的顺序。 (减号(-)表示反字母顺序)。 在AEM表单中使用VLV时，需要为用户和组设置单独的条目。
+创建VLV需要包含`vlvSearch`和`vlvIndex`对象类的一对条目。 vlvSearch条目包括搜索基和`vlvFilter`属性，后者指定包含要排序的属性的对象类。 `vlvIndex`对象类包含`vlvSort`属性，该属性指定要排序的一个或多个属性以及排序这些属性的顺序。 (减号(-)表示反字母顺序)。 要将VLV与AEM表单一起使用，用户和组需要单独的条目。
 
 >[!NOTE]
 >

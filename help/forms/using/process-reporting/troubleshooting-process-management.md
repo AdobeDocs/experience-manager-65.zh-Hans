@@ -8,10 +8,10 @@ exl-id: 165d4c69-d7ca-45f8-a9de-764cb8ecab7e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 0%
+source-wordcount: '110'
+ht-degree: 6%
 
 ---
 
