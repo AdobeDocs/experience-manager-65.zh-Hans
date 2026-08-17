@@ -29,7 +29,7 @@ ht-degree: 1%
 
 * [Personalization](/help/sites-administering/personalization.md)允许访客配置访问您网站的特定方式。
 
-登录（和注销）功能由具有&#x200B;**个人资料**](#profiles-and-user-accounts)&#x200B;的[帐户提供，该帐户保存有关已注册访客（用户）的其他信息。 注册和授权的实际流程可能有所不同：
+登录（和注销）功能由具有&#x200B;**个人资料**&#x200B;[&#128279;](#profiles-and-user-accounts)&#x200B;的帐户提供，该帐户保存有关已注册访客（用户）的其他信息。 注册和授权的实际流程可能有所不同：
 
 * 从网站自助注册
 
