@@ -8,10 +8,10 @@ exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1502'
-ht-degree: 1%
+source-wordcount: '1537'
+ht-degree: 5%
 
 ---
 
@@ -37,7 +37,7 @@ AEM Forms portal草稿和提交组件允许用户将其表单另存为草稿，�
 
    用于数据库集成的示例包
 
-[获取文件](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
+   [获取文件](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
 1. 转到https://[*host*]：[*port*]/crx/packmgr/上的AEM包管理器。
 1. 单击&#x200B;**[!UICONTROL 上传包]**。
@@ -93,7 +93,7 @@ AEM Forms portal草稿和提交组件允许用户将其表单另存为草稿，�
  <tbody>
   <tr>
    <td><strong>属性</strong></td>
-   <td><strong>价值</strong></td>
+   <td><strong>值</strong></td>
   </tr>
   <tr>
    <td>数据源名称</td>
@@ -149,7 +149,7 @@ AEM Forms portal草稿和提交组件允许用户将其表单另存为草稿，�
   </tr>
   <tr>
    <td>验证查询</td>
-   <td>示例值为SELECT 1(mysql)，从dual(oracle)中选择1，选择1(MS Sql Server) (validationQuery)</td>
+   <td>示例值为SELECT 1(mysql)，从dual(oracle)中选择1，从SELECT 1(MS Sql Server) (validationQuery)</td>
   </tr>
   <tr>
    <td>验证查询超时</td>
@@ -315,7 +315,7 @@ AEM Forms portal草稿和提交组件允许用户将其表单另存为草稿，�
 
 >[!NOTE]
 >
-> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+> 建议使用 “Ctrl + C” 命令重新启动 SDK。 如果使用其他方式（例如停止 Java 进程）重新启动 AEM SDK，则可能会导致 AEM 开发环境出现不一致情况。
 
 ## 表单门户数据和元数据服务的示例代码 {#sample-code-for-forms-portal-data-and-metadata-service}
 
@@ -330,7 +330,7 @@ Forms Portal的数据库实施使用其他元数据表。 该表具有基于表�
 执行以下步骤以创建[客户端库](/help/sites-developing/clientlibs.md)并使用脚本：
 
 1. 登录到CRXDE并导航到/etc/clientlibs/
-1. 创建&#x200B;**cq：ClientLibraryFolder**&#x200B;类型的节点，并提供该节点的名称。 例如：`validation`。
+1. 创建类型为&#x200B;**cq:ClientLibraryFolder**&#x200B;的节点并提供该节点的名称。 例如 `validation`。
 
    单击&#x200B;**[!UICONTROL 全部保存]**。
 
@@ -343,7 +343,7 @@ Forms Portal的数据库实施使用其他元数据表。 该表具有基于表�
 
    在上述代码中，`util`是文件夹的名称，是`util`文件夹中文件的`util.js`名称。 `util`文件夹和`util.js`文件是在后续步骤中创建的。
 
-1. 右键单击在步骤2中创建的`cq:ClientLibraryFolder`节点，选择创建>创建文件夹。 创建名为`util`的文件夹。 单击&#x200B;**[!UICONTROL 全部保存]**。 右键单击`util`文件夹，选择“创建”>“创建文件”。 创建名为`util.js`的文件。 单击&#x200B;**[!UICONTROL 全部保存]**。
+1. 右键单击在步骤2中创建的`cq:ClientLibraryFolder`节点，选择创建>创建文件夹。 创建一个名为 `util` 的文件夹。 单击&#x200B;**[!UICONTROL 全部保存]**。 右键单击`util`文件夹，选择“创建”>“创建文件”。 创建名为 `util.js` 的文件。 单击&#x200B;**[!UICONTROL 全部保存]**。
 
 1. 将以下代码添加到util.js文件，然后单击&#x200B;**[!UICONTROL 全部保存]**。 代码验证文件名的长度。
 
@@ -420,4 +420,4 @@ Forms Portal的数据库实施使用其他元数据表。 该表具有基于表�
    >
    >如果您使用的是自定义客户端库，而不是guideRuntime和guideRuntimeWithXfa客户端库，请使用类别名称将在此过程中创建的客户端库嵌入到运行时加载的自定义库中。
 
-1. 单击&#x200B;**[!UICONTROL 全部保存。]**&#x200B;现在，当文件名大于150（包括扩展名）字符时，会显示消息。
+1. 单击&#x200B;**[!UICONTROL 全部保存。]** 现在，当文件名大于150（包括扩展名）字符时，会显示消息。

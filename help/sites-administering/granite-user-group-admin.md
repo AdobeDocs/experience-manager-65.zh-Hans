@@ -1,5 +1,5 @@
 ---
-title: Granite操作 — 用户和组管理
+title: Granite 操作——用户和群组管理
 description: 了解Granite用户和组管理。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,19 +9,19 @@ exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '951'
-ht-degree: 1%
+source-wordcount: '956'
+ht-degree: 3%
 
 ---
 
 
-# Granite操作 — 用户和组管理{#granite-operations-user-and-group-administration}
+# Granite 操作——用户和群组管理{#granite-operations-user-and-group-administration}
 
 由于Granite采用了CRX Repository实现的JCR API规范，因此它有自己的用户和组管理。
 
-这些帐户是[AEM帐户](/help/sites-administering/security.md)的基础基础，如果从[AEM用户控制台](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)（例如，`http://localhost:4502/useradmin`）访问这些帐户，则将反映对Granite管理所做的任何帐户更改。 从AEM Users控制台中，您还可以管理权限和其他AEM详细信息。
+这些帐户是[AEM帐户](/help/sites-administering/security.md)的基础基础，如果从[AEM用户控制台](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)（例如，`http://localhost:4502/useradmin`）访问这些帐户，则将反映对Granite管理所做的任何帐户更改。 从AEM用户控制台中，您还可以管理权限和其他AEM详情。
 
 Granite用户和组管理控制台都可以从触控优化UI的&#x200B;**[工具](/help/sites-administering/tools-consoles.md)**&#x200B;控制台中使用：
 
@@ -35,9 +35,9 @@ Granite用户和组管理控制台都可以从触控优化UI的&#x200B;**[工具
 
   **用户**&#x200B;控制台列表：
 
-   * 用户名
-   * 用户登录名（帐户名）
-   * 已指定帐户的任何标题
+  * 用户名
+  * 用户登录名（帐户名）
+  * 已指定帐户的任何标题
 
 * [组管理](#group-administration)
 
@@ -45,9 +45,9 @@ Granite用户和组管理控制台都可以从触控优化UI的&#x200B;**[工具
 
   **组**&#x200B;控制台列表：
 
-   * 组名称
-   * 组描述
-   * 组中的用户/组数
+  * 组名称
+  * 组描述
+  * 组中的用户/组数
 
 ## 用户管理 {#user-administration}
 
@@ -91,8 +91,8 @@ Granite用户和组管理控制台都可以从触控优化UI的&#x200B;**[工具
    * **关于**
    * **帐户设置**
 
-      * **状态**
-您可以将帐户标记为&#x200B;**活动**&#x200B;或&#x200B;**非活动**。
+     * **状态**
+       您可以将帐户标记为&#x200B;**活动**&#x200B;或&#x200B;**非活动**。
 
    * **照片**
 

@@ -5,14 +5,14 @@ exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '3945'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
 
-# 在JEE服务器群集中配置AEM Forms并对其进行故障排除 {#configuring-troubleshooting-aem-forms-jee-server-cluster}
+# 配置和排查 JEE 上的 AEM Forms 服务器集群 {#configuring-troubleshooting-aem-forms-jee-server-cluster}
 
 ## 必备知识 {#prerequisites}
 
@@ -224,9 +224,9 @@ GDS访问和共享的验证最好通过以交互用户身份访问每个节点�
 
 引用：
 
-* 通过JBoss®群集的[高可用性企业服务](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
+* [通过JBoss®群集提供高可用性企业服务](https://docs.jboss.org/jbossas/jboss4guide/r4/html/cluster.chapt.html)
 
-* [OracleWebLogic Server-Using群集](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
+* [Oracle WebLogic Server-Using群集](https://docs.oracle.com/cd/E12840_01/wls/docs103/pdf/cluster.pdf)
 
 ### 如何检查JBoss®是否正确群集？ {#check-jboss-clustering}
 
@@ -249,7 +249,7 @@ and ones like:
 
 通常，JEE上的AEM Forms在集群中使用内部Quartz调度程序是为了在一般情况下自动遵循JEE上AEM Forms的全局集群配置。 但是，存在一个错误#2794033，如果将TCP定位器用于Gemfire而不是多播自动发现，则该错误会导致Quartz的自动群集配置失败。 在这种情况下，Quartz在非群集模式下错误地运行。 这会导致Quartz表中出现死锁和数据损坏。 在8.2.x版中，副作用比9.0版更严重，因为石英用量较少，但仍存在。
 
-此问题的修复如下所示： 8.2.1.2 QF2.143和9.0.0.2 QF2.44。
+此问题的修复如下： 8.2.1.2 QF2.143和9.0.0.2 QF2.44。
 
 还有一个解决方法，即设置以下两个属性：
 
@@ -295,7 +295,7 @@ Caused by: java.sql.SQLException: ORA-00060: deadlock detected while waiting for
 
 为了使群集平稳运行，所有群集节点上的时钟必须密切同步。 手工操作是不够的，必须由定期运行的某种形式的时间同步服务来完成。 所有节点上的时钟必须彼此位于一秒内。 最佳实践要求不仅同步群集节点，还要同步负载平衡器、数据库服务器、 GDS NAS服务器以及任何其他组件。
 
-Windows时间同步倾向于到域控制器。 UNIX®系统可以使用NTP同步到不同的时间源。 如果可能，最好是所有系统(JEE节点上的AEM Forms和其他系统组件)都同步到同一源。
+Windows时间同步倾向于到域控制器。 UNIX®系统可以使用NTP同步到不同的时间源。 如果可能，最好是所有系统（JEE节点上的AEM Forms和其他系统组件）都同步到同一源。
 
 即使是在最暂时的测试环境中，手动设置节点上的时钟也不够。 手动设置时钟无法提供足够的精确同步，两个节点上的时钟不可避免地会相互漂移，甚至在一天的时间段内也是如此。 主动的时间同步机制是保证机群可靠运行的必要条件。
 
@@ -320,7 +320,7 @@ JEE上的AEM Forms中的某些文件路径设置在整个群集内建立，并�
 应检查以下设置：
 
 1. 临时目录的位置
-1. Adobe服务器字体目录的位置
+1. Adobe Server Fonts目录的位置
 1. Customer Fonts目录的位置
 1. System Fonts目录的位置
 1. 数据服务配置文件的位置

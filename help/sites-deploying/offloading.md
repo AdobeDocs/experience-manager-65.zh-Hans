@@ -9,9 +9,9 @@ feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2386'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 卸载会在拓扑中的Experience Manager实例之间分发处理任务。 通过卸载，您可以使用特定的Experience Manager实例来执行特定类型的处理。 专业化的处理使您能够最大限度地利用可用的服务器资源。
 
-卸载基于[Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)和Sling JobManager功能。 要使用卸载，可以将Experience Manager集群添加到拓扑中，并确定集群处理的作业主题。 集群由一个或多个Experience Manager实例组成，因此单个实例被视为集群。
+卸载基于[Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)和Sling JobManager功能。 要使用卸载，请将Experience Manager群集添加到拓扑中，并确定群集处理的作业主题。 集群由一个或多个Experience Manager实例组成，因此单个实例被视为集群。
 
 有关向拓扑添加实例的信息，请参阅[管理拓扑](/help/sites-deploying/offloading.md#administering-topologies)。
 
@@ -33,7 +33,7 @@ Sling JobManager和JobConsumer允许创建拓扑中处理的作业：
 * JobManager：为特定主题创建作业的服务。
 * JobConsumer：执行一个或多个主题作业的服务。 可以为同一主题注册多个JobConsumer服务。
 
-当JobManager创建作业时，卸载框架选择拓扑中的一个Experience Manager集群来执行作业：
+当JobManager创建作业时，卸载框架会在拓扑中选择一个Experience Manager群集来执行作业：
 
 * 集群必须包括一个或多个正在运行为作业主题注册的JobConsumer的实例。
 * 必须至少为集群中的一个实例启用该主题。
@@ -67,7 +67,7 @@ Sling JobManager和JobConsumer允许创建拓扑中处理的作业：
 
 ### 查看拓扑 {#viewing-the-topology}
 
-使用“拓扑浏览器”可浏览Experience Manager实例所参与的拓扑的状态。 拓扑浏览器显示拓扑的群集和实例。
+使用拓扑浏览器可浏览Experience Manager实例参与的拓扑的状态。 拓扑浏览器显示拓扑的群集和实例。
 
 对于每个集群，您会看到一个集群成员列表，该列表指示每个成员加入集群的顺序以及哪个成员是领导者。 Current属性指明您当前正在管理的实例。
 
@@ -111,7 +111,7 @@ Apache Sling基于资源的发现服务在每个实例上运行，以控制Exper
 * 要将实例加入拓扑，请指定根成员的Topology Connector服务的URL。
 * 要启用实例以加入拓扑，请将该实例添加到根成员的拓扑连接器服务的允许列表中。
 
-使用Web控制台或sling：OsgiConfig节点配置org.apache.sling.discovery.impt.Config服务的以下属性：
+使用Web控制台或sling:OsgiConfig节点配置org.apache.sling.discovery.impt.Config服务的以下属性：
 
 <table>
  <tbody>
@@ -176,7 +176,7 @@ Apache Sling基于资源的发现服务在每个实例上运行，以控制Exper
 
 ## 配置主题使用 {#configuring-topic-consumption}
 
-使用卸载浏览器配置拓扑中Experience Manager实例的主题消耗。 对于每个实例，您可以指定它使用的主题。 例如，要配置拓扑以便只有一个实例使用特定类型的主题，请在除一个实例之外的所有实例上禁用该主题。
+使用卸载浏览器配置拓扑中Experience Manager实例的主题使用情况。 对于每个实例，您可以指定它使用的主题。 例如，要配置拓扑以便只有一个实例使用特定类型的主题，请在除一个实例之外的所有实例上禁用该主题。
 
 作业在启用了相关主题的实例之间使用循环调度逻辑进行分配。
 
@@ -208,7 +208,7 @@ Experience Manager中安装了多个JobConsumer实施。 为其注册这些JobCo
 | 作业主题 | 服务 PID | 描述 |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | 随Apache Sling一起安装。 处理OSGi事件管理员生成的作业以实现向后兼容性。 |
-| com/day/cq/replication/job/&amp;amp；ast； | com.day.cq.replication.impl.AgentManagerImpl | 复制作业负载的复制代理。 |
+| com/day/cq/replication/job/&amp;ast； | com.day.cq.replication.impl.AgentManagerImpl | 复制作业负载的复制代理。 |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -220,13 +220,13 @@ Apache Sling作业使用者管理器服务提供主题允许列表和阻止列�
 
 **注意：**&#x200B;如果实例属于拓扑，则还可以在拓扑中的任何计算机上使用“卸载浏览器”来启用或禁用主题。
 
-创建已启用主题列表的逻辑首先允许允许列表中的所有主题，然后删除阻止列表上的主题。 默认情况下，将启用所有主题(允许列表值为`*`)，并且不会禁用任何主题(阻止列表没有值)。
+创建已启用主题列表的逻辑首先允许允许列表中的所有主题，然后删除阻止列表上的主题。 默认情况下，将启用所有主题（允许列表值为`*`），并且不会禁用任何主题（阻止列表没有值）。
 
 使用Web控制台或`sling:OsgiConfig`节点配置以下属性。 对于`sling:OsgiConfig`节点，作业使用者管理器服务的PID为org.apache.sling.event.impl.jobs.JobConsumerManager。
 
 | Web控制台中的属性名称 | osgi ID | 描述 |
 |---|---|---|
-| 主题允许列表 | job.consumermanager.whitelist | 本地JobManager服务处理的主题列表。 默认值&amp;amp；ast；会导致将所有主题发送到注册的TopicConsumer服务。 |
+| 主题允许列表 | job.consumermanager.whitelist | 本地JobManager服务处理的主题列表。 默认值&amp;ast；会导致将所有主题发送到注册的TopicConsumer服务。 |
 | 主题阻止列表 | job.consumermanager.blacklist | 本地JobManager服务不处理的主题列表。 |
 
 ## 创建用于卸载的复制代理 {#creating-replication-agents-for-offloading}
@@ -261,13 +261,13 @@ Apache Sling作业使用者管理器服务提供主题允许列表和阻止列�
 
 `offloading_<slingid>`，其中`<slingid>`是辅助进程实例的Sling ID。
 
-示例： `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
+示例：`offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **在创作实例上命名反向代理：**
 
 `offloading_reverse_<slingid>`，其中`<slingid>`是辅助进程实例的Sling ID。
 
-示例： `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
+示例：`offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **为辅助进程实例上的发件箱命名：**
 
@@ -278,7 +278,7 @@ Apache Sling作业使用者管理器服务提供主题允许列表和阻止列�
 1. 在作者上创建&#x200B;**复制代理**。 （请参阅有关复制代理的[文档](/help/sites-deploying/replication.md)）。 指定任何&#x200B;**标题**。 **名称**&#x200B;必须遵循命名约定。
 1. 使用以下属性创建代理：
 
-   | 属性 | 价值 |
+   | 属性 | 值 |
    |---|---|
    | “设置”>“序列化类型” | 默认 |
    | 传输>传输URI | https://*`<ip of target instance>`*：*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
@@ -292,7 +292,7 @@ Apache Sling作业使用者管理器服务提供主题允许列表和阻止列�
 1. 在作者上创建&#x200B;**反向复制代理**。 （请参阅有关复制代理[&#128279;](/help/sites-deploying/replication.md)的文档。） 指定任何&#x200B;**标题**。 **名称**&#x200B;必须遵循命名约定。
 1. 使用以下属性创建代理：
 
-   | 属性 | 价值 |
+   | 属性 | 值 |
    |---|---|
    | “设置”>“序列化类型” | 默认 |
    | 传输>传输URI | https://*`<ip of target instance>`*：*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
@@ -305,7 +305,7 @@ Apache Sling作业使用者管理器服务提供主题允许列表和阻止列�
 1. 在辅助进程实例上创建&#x200B;**复制代理**。 （请参阅有关复制代理[&#128279;](/help/sites-deploying/replication.md)的文档。） 指定任何&#x200B;**标题**。 **名称**&#x200B;必须为`offloading_outbox`。
 1. 使用以下属性创建代理。
 
-   | 属性 | 价值 |
+   | 属性 | 值 |
    |---|---|
    | “设置”>“序列化类型” | 默认 |
    | 传输>传输URI | repo://var/replication/outbox |

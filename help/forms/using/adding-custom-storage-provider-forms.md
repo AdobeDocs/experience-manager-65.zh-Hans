@@ -8,10 +8,10 @@ feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 0%
+source-wordcount: '337'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 AEM Forms允许您将表单另存为草稿。 草稿功能允许您维护正在处理的表单，您可以稍后从任何设备完成并提交该表单。
 
-默认情况下，AEM Forms将与表单草稿和提交关联的用户数据存储在Publish实例上的`/content/forms/fp`节点中。 此外，AEM Forms Portal组件提供数据服务，您可以使用这些数据服务自定义存储草稿和提交的用户数据的实施。 例如，您可以将用户数据存储到数据存储中。
+默认情况下，AEM Forms将与表单草稿和提交关联的用户数据存储在发布实例上的`/content/forms/fp`节点中。 此外，AEM Forms Portal组件提供数据服务，您可以使用这些数据服务自定义存储草稿和提交的用户数据的实施。 例如，您可以将用户数据存储到数据存储中。
 
 ## 先决条件  {#prerequisites}
 

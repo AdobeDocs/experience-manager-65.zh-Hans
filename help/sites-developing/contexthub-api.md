@@ -1,5 +1,5 @@
 ---
-title: ContextHub JavaScript API参考
+title: ContextHub JavaScript API 参考
 description: 将ContextHub组件添加到页面后，脚本即可使用ContextHub JavaScript API
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ feature: Context Hub,Developing,Personalization
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '4913'
+source-wordcount: '4976'
 ht-degree: 2%
 
 ---
 
-# ContextHub JavaScript API参考{#contexthub-javascript-api-reference}
+# ContextHub JavaScript API 参考{#contexthub-javascript-api-reference}
 
 将[ContextHub组件添加到页面](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component)后，您的脚本即可使用ContextHub JavaScript API。
 
@@ -28,7 +28,7 @@ ContextHub JavaScript API定义的常量值。
 
 下表列出了ContextHub存储区发生的names事件。 另请参阅[ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing)。
 
-| 常量 | 描述 | 价值 |
+| 常量 | 描述 | 值 |
 |---|---|---|
 | ContextHub.Constants.EVENT_NAMESPACE | ContextHub的事件命名空间 | ch |
 | ContextHub.Constants.EVENT_ALL_STORES_READY | 指示所有必需的存储已注册、初始化并准备使用 | 全店就绪 |
@@ -69,7 +69,7 @@ ContextHub JavaScript API定义的常量值。
 | ContextHub.Constants.EVENT_UI_INITIALIZED | 在UI容器初始化时触发 | ui已初始化 |
 | ContextHub.Constants.ACTIVE_UI_MODE | 指示活动的UI模式 | /_/active-ui-mode |
 
-## ContextHub JavaScript API参考 {#contexthub-javascript-api-reference-2}
+## ContextHub JavaScript API 参考 {#contexthub-javascript-api-reference-2}
 
 ContextHub对象提供对所有存储的访问权限。
 
@@ -271,9 +271,9 @@ contexthub.Utils.Persistence对象。 有关默认值和初始化的信息，请
 * **名称：**&#x200B;存储的名称。
 * **config：**&#x200B;包含配置属性的对象：
 
-   * eventDeferring：默认值为32。
-   * 事件：此存储的[ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing)对象。 默认值是ContextHub.eventing对象使用的值。
-   * 持久性：此存储的ContextHub.Utils.Persistence对象。 默认值为ContextHub.persistence对象。
+  * eventDeferring：默认值为32。
+  * 事件：此存储的[ContextHub.Utils.Eventing](/help/sites-developing/contexthub-api.md#contexthub-utils-eventing)对象。 默认值是ContextHub.eventing对象使用的值。
+  * 持久性：此存储的ContextHub.Utils.Persistence对象。 默认值为ContextHub.persistence对象。
 
 #### isEventingPaused() {#iseventingpaused}
 
@@ -303,7 +303,7 @@ contexthub.Utils.Persistence对象。 有关默认值和初始化的信息，请
 * **key：** （字符串）要删除的键的名称。
 * **选项：** （对象）选项的对象。 以下对象属性有效：
 
-   * 静默：值`true`阻止触发`data`事件。 默认值为 `false`。
+  * 静默：值`true`阻止触发`data`事件。 默认值为 `false`。
 
 **返回**
 
@@ -376,7 +376,7 @@ contexthub.Utils.Persistence对象。 有关默认值和初始化的信息，请
 * **key：** （字符串）键的名称。
 * **选项：** （对象）选项的对象。 以下对象属性有效：
 
-   * 静默：值`true`阻止触发`data`事件。 默认值为 `false`。
+  * 静默：值`true`阻止触发`data`事件。 默认值为 `false`。
 
 * **值：** （对象）要与键关联的值。
 
@@ -387,11 +387,11 @@ contexthub.Utils.Persistence对象。 有关默认值和初始化的信息，请
 * 值为`true`表示存储了数据对象。
 * 值为`false`表示数据存储未更改。
 
-## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
+## contexthub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
 包含JSON数据的存储。 数据从外部JSONP服务或选择性地从返回JSON数据的服务中检索。 创建此类的实例时，使用[`init`](/help/sites-developing/contexthub-api.md#init-name-config)函数指定服务详细信息。
 
-存储使用内存中持久性(JavaScript变量)。 存储数据仅在页面的生命周期内可用。
+存储使用内存中持久性（JavaScript变量）。 存储数据仅在页面的生命周期内可用。
 
 ContextHub.Store.JSONPStore扩展[ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core)并继承该类的函数。
 
@@ -405,16 +405,16 @@ ContextHub.Store.JSONPStore扩展[ContextHub.Store.Core](/help/sites-developing/
 
 * **serviceConfig：**&#x200B;包含以下属性的对象：
 
-   * host： （字符串）服务器名称或IP地址。
-   * jsonp： （布尔值）如果值为true，则表示该服务为JSONP服务；否则为false。 如果为true，则{callback： &quot;ContextHub.Callbacks.*Object.name*}对象已添加到service.params对象。
-   * params： （对象）表示为对象属性的URL参数。 参数名是属性名，参数值是属性值。
-   * path： （字符串）服务的路径。
-   * port： (Number)服务的端口号。
-   * secure： （字符串或布尔值）确定用于服务URL的协议：
+  * host： （字符串）服务器名称或IP地址。
+  * jsonp： （布尔值）如果值为true，则表示该服务为JSONP服务；否则为false。 为true时，{callback： &quot;ContextHub.Callbacks.*Object.name*}对象将添加到service.params对象中。
+  * params： （对象）表示为对象属性的URL参数。 参数名是属性名，参数值是属性值。
+  * path： （字符串）服务的路径。
+  * port： (Number)服务的端口号。
+  * secure： （字符串或布尔值）确定用于服务URL的协议：
 
-      * 自动： //
-      * true： https://
-      * false： https://
+    * 自动： //
+    * true： https://
+    * false： https://
 
 * **覆盖：** （布尔值）。 值为`true`会导致现有服务配置被替换为`serviceConfig`的属性。 值为`false`会导致现有服务配置属性与`serviceConfig`的属性合并。
 
@@ -435,16 +435,16 @@ ContextHub.Store.JSONPStore扩展[ContextHub.Store.Core](/help/sites-developing/
 具有以下属性的对象：
 
 * **主机：** （字符串）服务器名称或IP地址。
-* **jsonp：** （布尔值）值为true表示该服务是JSONP服务，否则为false。 如果为true，则{callback： &quot;ContextHub.Callbacks.*Object.name*}对象已添加到service.params对象。
+* **jsonp：** （布尔值）值为true表示该服务是JSONP服务，否则为false。 为true时，{callback： &quot;ContextHub.Callbacks.*Object.name*}对象将添加到service.params对象中。
 
 * **参数：** （对象） URL参数表示为对象属性。 参数名是属性名，参数值是属性值。
 * **path：** （字符串）服务的路径。
 * **端口：** （编号）服务的端口号。
 * **secure：** （字符串或布尔值）确定用于服务URL的协议：
 
-   * 自动： //
-   * true： https://
-   * false： https://
+  * 自动： //
+  * true： https://
+  * false： https://
 
 #### getServiceURL(resolve) {#getserviceurl-resolve}
 
@@ -467,24 +467,24 @@ ContextHub.Store.JSONPStore扩展[ContextHub.Store.Core](/help/sites-developing/
 * **name：** （字符串）存储的名称。
 * **config：** （对象）包含服务属性的对象。 JSONPStore对象使用`service`对象的属性来构建JSONP服务的URL：
 
-   * eventDeferring： 32。
-   * 事件：此存储的ContextHub.Utils.Eventing对象。 默认值是`ContextHub.eventing`对象。
-   * 持久性：此存储的ContextHub.Utils.Persistence对象。 默认情况下，使用内存持久性(JavaScript对象)。
-   * 服务： （对象）
+  * eventDeferring： 32。
+  * 事件：此存储的ContextHub.Utils.Eventing对象。 默认值是`ContextHub.eventing`对象。
+  * 持久性：此存储的ContextHub.Utils.Persistence对象。 默认情况下，使用内存持久性（JavaScript对象）。
+  * 服务： （对象）
 
-      * host： （字符串）服务器名称或IP地址。
-      * jsonp： （布尔值）如果值为true，则表示该服务为JSONP服务；否则为false。 为true时，`{callback: "ContextHub.Callbacks.*Object.name*}`对象将添加到`service.params`。
-      * params： （对象）表示为对象属性的URL参数。 参数名称和值分别是对象属性名称和值。
-      * path： （字符串）服务的路径。
-      * port： (Number)服务的端口号。
-      * secure： （字符串或布尔值）确定用于服务URL的协议：
+    * host： （字符串）服务器名称或IP地址。
+    * jsonp： （布尔值）如果值为true，则表示该服务为JSONP服务；否则为false。 为true时，`{callback: "ContextHub.Callbacks.*Object.name*}`对象将添加到`service.params`。
+    * params： （对象）表示为对象属性的URL参数。 参数名称和值分别是对象属性名称和值。
+    * path： （字符串）服务的路径。
+    * port： (Number)服务的端口号。
+    * secure： （字符串或布尔值）确定用于服务URL的协议：
 
-         * 自动： //
-         * true： https://
-         * false： https://
+      * 自动： //
+      * true： https://
+      * false： https://
 
-      * timeout： (Number)超时前等待JSONP服务响应的时间（以毫秒为单位）。
-      * ttl：在两次调用JSONP服务之间经过的最小时间（以毫秒为单位）。 （请参阅[queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)函数）。
+    * timeout： (Number)超时前等待JSONP服务响应的时间（以毫秒为单位）。
+    * ttl：在两次调用JSONP服务之间经过的最小时间（以毫秒为单位）。 （请参阅[queryService](/help/sites-developing/contexthub-api.md#queryservice-reload)函数）。
 
 #### queryService（重新加载） {#queryservice-reload}
 
@@ -518,9 +518,9 @@ ContextHub.Store.PersistedJSONPStore扩展[ContextHub.Store.JSONPStore](/help/si
 
 ContextHub.Store.PersistedStore扩展[ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core)，因此它继承了该类的所有函数。 此存储中的数据将根据ContextHub持久性的配置进行保留。
 
-## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
+## contexthub.Store.SessionStore {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore扩展[ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core)，因此它继承了该类的所有函数。 使用内存中持久性(JavaScript对象)保留此存储中的数据。
+ContextHub.Store.SessionStore扩展[ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core)，因此它继承了该类的所有函数。 使用内存中持久性（JavaScript对象）保留此存储中的数据。
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -580,10 +580,10 @@ if (ContextHub.Utils.Cookie.exists("name")) {
 
 * （可选） **筛选器：**&#x200B;匹配Cookie密钥的条件。 要返回所有Cookie，请不要指定任何值。 支持以下类型：
 
-   * 字符串：将字符串与Cookie键进行比较。
-   * 数组：数组中的每一项都是一个过滤器。
-   * RegExp对象：对象的测试函数用于匹配Cookie键。
-   * 函数：测试Cookie键以查找匹配项的函数。 该函数必须将Cookie密钥作为参数，如果测试确认匹配，则返回true。
+  * 字符串：将字符串与Cookie键进行比较。
+  * 数组：数组中的每一项都是一个过滤器。
+  * RegExp对象：对象的测试函数用于匹配Cookie键。
+  * 函数：测试Cookie键以查找匹配项的函数。 该函数必须将Cookie密钥作为参数，如果测试确认匹配，则返回true。
 
 **返回**
 
@@ -621,10 +621,10 @@ ContextHub.Utils.Cookie.getItem("name");
 
 * **筛选器：**&#x200B;匹配Cookie密钥的条件。 支持以下类型：
 
-   * 字符串：将字符串与Cookie键进行比较。
-   * 数组：数组中的每一项都是一个过滤器。
-   * RegExp对象：对象的测试函数用于匹配Cookie键。
-   * 函数：测试Cookie键以查找匹配项的函数。 函数必须将Cookie密钥作为参数，如果测试确认匹配，则返回`true`。
+  * 字符串：将字符串与Cookie键进行比较。
+  * 数组：数组中的每一项都是一个过滤器。
+  * RegExp对象：对象的测试函数用于匹配Cookie键。
+  * 函数：测试Cookie键以查找匹配项的函数。 函数必须将Cookie密钥作为参数，如果测试确认匹配，则返回`true`。
 
 **返回**
 
@@ -666,9 +666,9 @@ ContextHub.Utils.Cookie.vanish([/^cq-authoring/, 'cq-scrollpos']);
 * **值：**&#x200B;包含Cookie值的字符串。
 * **选项：**（可选）一个对象，它包含以下任何配置Cookie属性的属性：
 
-   * 过期：指定Cookie过期时间的`date`或`number`值。 日期值指定绝对到期时间。 一个数字（以天为单位）将过期时间设置为当前时间加上数字。 默认值为 `undefined`。
-   * secure：指定Cookie的`Secure`属性的`boolean`值。 默认值为 `false`。
-   * 路径：用作Cookie的`Path`属性的`String`值。 默认值为 `undefined`。
+  * 过期：指定Cookie过期时间的`date`或`number`值。 日期值指定绝对到期时间。 一个数字（以天为单位）将过期时间设置为当前时间加上数字。 默认值为 `undefined`。
+  * secure：指定Cookie的`Secure`属性的`boolean`值。 默认值为 `false`。
+  * 路径：用作Cookie的`Path`属性的`String`值。 默认值为 `undefined`。
 
 **返回**
 
@@ -699,7 +699,7 @@ ContextHub.Utils.Cookie.setItem("name", "mycookie", {
 
 此函数不返回值。
 
-## ContextHub.Utils.Eventing {#contexthub-utils-eventing}
+## contexthub.Utils.Eventing {#contexthub-utils-eventing}
 
 允许您将函数绑定和取消绑定到ContextHub存储事件。 使用存储的[eventing](/help/sites-developing/contexthub-api.md#eventing)属性访问存储的ContextHub.Utils.Eventing对象。
 

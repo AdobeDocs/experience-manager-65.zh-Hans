@@ -1,5 +1,5 @@
 ---
-title: 工作流过程参考
+title: 工作流流程参考
 description: 有关Adobe Experience Manager中的工作流，请参阅此流程参考。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,14 @@ exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '1078'
 ht-degree: 1%
 
 ---
 
-# 工作流过程参考{#workflow-process-reference}
+# 工作流流程参考{#workflow-process-reference}
 
 AEM提供了多个可用于创建工作流模型的流程步骤。 还可以为内置步骤未涵盖的任务添加自定义流程步骤（请参阅[创建工作流模型](/help/sites-developing/workflows-models.md)）。
 
@@ -31,13 +31,13 @@ AEM提供了多个可用于创建工作流模型的流程步骤。 还可以为�
 * 对于Java™类进程，提供了完全限定的类名。
 * 对于ECMAScript进程，提供脚本的路径。
 
-### 有效负荷 {#payload}
+### 负载 {#payload}
 
 有效负载是工作流实例执行操作的实体。 有效负载由启动工作流实例的上下文隐式选择。
 
-例如，如果将工作流应用于AEM页面&#x200B;*P*，则随着工作流的进行，将&#x200B;*P*&#x200B;从一个步骤传递到另一个步骤，每个步骤都可能会以某种方式选择性地对&#x200B;*P*&#x200B;执行操作。
+例如，如果将工作流应用于AEM页面&#x200B;*P*，则随着工作流的进行，*P*&#x200B;将按步骤传递，每个步骤会以某种方式选择性地对&#x200B;*P*&#x200B;执行操作。
 
-在大多数情况下，有效负载是存储库中的JCR节点(例如，AEM页面或Asset)。 JCR节点有效负载作为字符串(JCR路径或JCR标识符(UUID))传递。 有时，有效负载可以是JCR属性（作为JCR路径传递）、URL、二进制对象或通用Java™对象。 对有效负载执行操作的各个流程步骤通常需要特定类型的有效负载，或根据有效负载类型执行不同的操作。 对于下面描述的每个进程，将介绍预期的有效负载类型（如果有）。
+在最常见的情况下，有效负载是存储库中的JCR节点（例如，AEM页面或Asset）。 JCR节点有效负载作为字符串(JCR路径或JCR标识符(UUID))传递。 有时，有效负载可以是JCR属性（作为JCR路径传递）、URL、二进制对象或通用Java™对象。 对有效负载执行操作的各个流程步骤通常需要特定类型的有效负载，或根据有效负载类型执行不同的操作。 对于下面描述的每个进程，将介绍预期的有效负载类型（如果有）。
 
 ### 参数 {#arguments}
 
@@ -72,7 +72,7 @@ AEM提供了多个可用于创建工作流模型的流程步骤。 还可以为�
 
 >[!CAUTION]
 >
->如果您是从AEM 6.2之前的版本升级，则可能需要更新实施。
+>如果您是从AEM 6.2之前的版本升级，您可能需要更新实施。
 >
 >在以前的版本中，管理会话被传递到`WorkflowProcess`实施，然后可以拥有对存储库的完全访问权限，而无需定义特定ACL。
 >
@@ -80,7 +80,7 @@ AEM提供了多个可用于创建工作流模型的流程步骤。 还可以为�
 >
 >当代码更改不可行时，还可以使用短期解决方案实现向后兼容性：
 >
->* 使用Web控制台(`/system/console/configMgr`)找到&#x200B;**AdobeGranite工作流配置服务**
+>* 使用Web控制台(`/system/console/configMgr`)找到&#x200B;**Adobe Granite工作流配置服务**
 >
 >* 启用&#x200B;**工作流进程旧模式**
 >
@@ -135,7 +135,7 @@ AEM提供了多个可用于创建工作流模型的流程步骤。 还可以为�
 
 * 从资源提取元数据。
 * 创建三种指定大小的缩略图。
-* 假设资源最初不是GIF或PNG(在这种情况下，不会创建JPEG)，则从资源创建JPEG图像。
+* 假定资源最初不是GIF或PNG（在这种情况下，不会创建JPEG），则从资源创建JPEG图像。
 * 设置资源的上次修改日期。
 
 ```shell
@@ -208,7 +208,7 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 在下列情况下，该步骤不生效：
 
 * 有效负载已锁定
-* 有效负载节点不包含jcr：content子节点
+* 有效负载节点不包含jcr:content子节点
 
 ### Unlockprocess {#unlockprocess}
 
@@ -223,7 +223,7 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 在下列情况下，该步骤不生效：
 
 * 有效负载已解锁
-* 有效负载节点不包含jcr：content子节点
+* 有效负载节点不包含jcr:content子节点
 
 ## 版本控制流程 {#versioning-processes}
 
@@ -231,7 +231,7 @@ com.day.cq.dam.core.process.ExtractMetadataProcess,
 
 ### CreateVersionProcess {#createversionprocess}
 
-创建工作流有效负载的版本(AEM页面或DAM资源)。
+创建工作流有效负载（AEM页面或DAM资源）的版本。
 
 * **Java™类**： `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 

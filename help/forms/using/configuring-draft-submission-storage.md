@@ -1,5 +1,5 @@
 ---
-title: 为草稿和提交配置存储服务
+title: 配置草稿和提交的存储服务
 description: 了解如何为草稿和提交配置存储
 topic-tags: publish
 content-type: reference
@@ -8,14 +8,14 @@ exl-id: 51ca2844-91f0-453a-9b39-b876399ebecb
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '531'
-ht-degree: 0%
+source-wordcount: '537'
+ht-degree: 3%
 
 ---
 
-# 为草稿和提交配置存储服务 {#configuring-storage-services-for-drafts-and-submissions}
+# 配置草稿和提交的存储服务 {#configuring-storage-services-for-drafts-and-submissions}
 
 ## 概述 {#overview}
 
@@ -33,7 +33,7 @@ AEM Forms Portal数据和元数据服务为草稿和提交提供支持。 默认
 
 >[!NOTE]
 >
->当您使用Forms Portal提交操作或启用自适应表单中的在表单门户中存储数据选项时，表单数据存储在AEM存储库中。 在生产环境中，建议不要将草稿或已提交的表单数据存储在AEM存储库中。 相反，您必须将草稿和提交组件与企业数据库等安全存储集成以存储草稿和提交的表单数据。
+>当您使用Forms Portal提交操作或启用自适应表单中的在表单门户中存储数据选项时，表单数据存储在AEM存储库中。 在生产环境中，建议不要将草稿或提交的表单数据存储在AEM存储库中。 相反，您必须将草稿和提交组件与企业数据库等安全存储集成以存储草稿和提交的表单数据。
 >
 >有关详细信息，请参阅将草稿和提交组件与数据库集成的[示例](/help/forms/using/integrate-draft-submission-database.md)。
 
@@ -51,7 +51,7 @@ AEM Forms Portal数据和元数据服务为草稿和提交提供支持。 默认
  <tbody>
   <tr>
    <th>属性</th>
-   <th>价值</th>
+   <th>值</th>
   </tr>
   <tr>
    <td>Forms门户草稿数据服务(草稿数据服务(<strong>draft.data.service</strong>)的标识符)</td>
@@ -80,7 +80,7 @@ AEM Forms Portal数据和元数据服务为草稿和提交提供支持。 默认
  <tbody>
   <tr>
    <th>属性</th>
-   <th>价值</th>
+   <th>值</th>
   </tr>
   <tr>
    <td>Forms门户草稿数据服务(草稿数据服务(<strong>draft.data.service</strong>)的标识符)</td>

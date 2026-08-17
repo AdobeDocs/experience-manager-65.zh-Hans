@@ -10,9 +10,9 @@ feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '563'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ product字段允许导航到用户希望通过不同视图选择的产品。 默
 
 类别选取器可以在组件对话框中使用，其使用方式与产品选取器类似。
 
-以下代码片段可以在cq：dialog配置中使用：
+可以在cq:dialog配置中使用以下代码片段：
 
 ```xml
 <category jcr:primaryType="nt:unstructured" 

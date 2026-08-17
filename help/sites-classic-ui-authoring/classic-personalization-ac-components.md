@@ -1,5 +1,5 @@
 ---
-title: Adobe Campaign组件
+title: Adobe Campaign 组件
 description: 与Adobe Campaign集成时，您拥有的组件可用于处理新闻稿和表单。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,14 @@ exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '2548'
-ht-degree: 4%
+source-wordcount: '2564'
+ht-degree: 7%
 
 ---
 
-# Adobe Campaign组件{#adobe-campaign-components}
+# Adobe Campaign 组件{#adobe-campaign-components}
 
 与Adobe Campaign集成时，您拥有的组件可用于处理新闻稿和表单。 本文档中对此进行了说明。
 
@@ -25,11 +25,11 @@ ht-degree: 4%
 >
 >已弃用AEM电子邮件组件。 由于电子邮件将内容和样式融合在一起，因此由AEM提供的现成可用电子邮件组件对于客户的重用受到限制，因为需要将自定义样式实施到项目所需的任何组件中。
 >
->电子邮件组件可以在项目级别实施，已弃用的AEM电子邮件组件说明了如何实现这一点。 但是，请勿在项目中使用这些已弃用的组件。
+>可以在项目级别实施电子邮件组件，已弃用的AEM电子邮件组件说明了如何实现这一点。 但是，请勿在项目中使用这些已弃用的组件。
 
 ## Adobe Campaign新闻稿组件 {#adobe-campaign-newsletter-components}
 
-所有Campaign组件都遵循[电子邮件模板最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳实践，并且基于Adobe标记语言[HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html)。
+所有Campaign组件都遵循[电子邮件模板最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳实践，并基于Adobe标记语言[HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html)。
 
 当您打开配置为与Adobe Campaign集成的新闻稿/电子邮件时，您应会在&#x200B;**Adobe Campaign新闻稿**&#x200B;部分中看到以下组件：
 
@@ -61,7 +61,7 @@ ht-degree: 4%
 * **标题**
 如果要使用页面标题以外的名称，请在此处输入该名称。
 
-* **标题级别(1， 2， 3， 4)**
+* **标题级别(1、2、3、4)**
 标题级别基于HTML标题大小1-4。
 
 以下示例显示了正在显示的标题（营销活动）组件。
@@ -134,8 +134,8 @@ ht-degree: 4%
 * **链接工具提示**
 添加了关于如何使用链接的其他信息。
 
-* **LinkType**
-在下拉列表中，选择&#x200B;**自定义URL**&#x200B;和&#x200B;**自适应文档**。 此字段为必填字段。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
+* **链接类型**
+在下拉列表中，选择&#x200B;**自定义URL**&#x200B;和&#x200B;**自适应文档**。 该字段为必填项。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
 
 * **其他URL参数**
 添加任何其他URL参数。 单击“添加项目”可添加多个项目。
@@ -176,20 +176,20 @@ ht-degree: 4%
 * **图像属性** （**高级图像属性**）
 用于指定以下内容：
 
-   * **标题**
-块的标题；由mouseover显示。
+  * **标题**
+    块的标题；由mouseover显示。
 
-   * **替换文本**
-图像无法显示时要显示的替换文本。
+  * **替换文本**
+    图像无法显示时要显示的替换文本。
 
-   * **链接到**
-创建指向网站内资产或其他页面的链接。
+  * **链接到**
+    创建指向网站内资产或其他页面的链接。
 
-   * **描述**
-图像的描述。
+  * **描述**
+    图像的描述。
 
-   * **大小**
-设置图像的高度和宽度。
+  * **大小**
+    设置图像的高度和宽度。
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ ht-degree: 4%
 
 ### 文本与个性化（营销活动） {#text-personalization-campaign}
 
-文本与Personalization（营销活动）组件允许您使用WYSIWYG编辑器和[富文本编辑器](/help/sites-authoring/rich-text-editor.md)提供的功能输入文本块。 此外，此组件允许您使用Adobe Campaign中可用的上下文字段和个性化块；另请参阅[插入Personalization](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization)。
+文本与Personalization （营销活动）组件允许您使用WYSIWYG编辑器输入文本块，该编辑器具有[富文本编辑器](/help/sites-authoring/rich-text-editor.md)提供的功能。 此外，此组件允许您使用Adobe Campaign中可用的上下文字段和个性化块；另请参阅[插入Personalization](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization)。
 
 图标的选择允许您设置文本格式，包括字体特征、对齐方式、链接、列表和缩进。
 
@@ -216,7 +216,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->只考虑在&#x200B;**nms：seedMember**&#x200B;架构或其扩展中定义的字段。 链接到`nms:seedMember`的表的属性不可用。
+>只考虑在&#x200B;**nms:seedMember**&#x200B;架构或其扩展中定义的字段。 链接到`nms:seedMember`的表的属性不可用。
 
 ## Adobe Campaign表单组件 {#adobe-campaign-form-components}
 
@@ -227,8 +227,8 @@ ht-degree: 4%
 当您打开配置为与Adobe Campaign集成的表单时，您会在&#x200B;**Adobe Campaign**&#x200B;部分中看到以下组件：
 
 * 复选框（营销活动）
-* 日期字段（营销活动）和日期字段/HTML5（营销活动）
-* 已加密的主要密钥（营销活动）
+* 日期字段（营销活动）和日期字段/HTML5 （营销活动）
+* 已加密的主键（营销活动）
 * 错误显示（营销活动）
 * 隐藏的协调键（营销活动）
 * 数字字段（营销活动）
@@ -304,7 +304,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 * **映射**
 选择适当的Adobe Campaign个性化字段。
 
-* **协调密钥**
+* **对帐密钥**
 如果此字段是对帐密钥的一部分，则选中此复选框。
 
 #### 约束 {#constraints}
@@ -327,7 +327,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 ![chlimage_1-91](assets/chlimage_1-91.png)
 
-### 日期字段（营销活动）和日期字段/HTML5（营销活动） {#date-field-campaign-and-date-field-html-campaign}
+### 日期字段（营销活动）和日期字段/HTML 5 （营销活动） {#date-field-campaign-and-date-field-html-campaign}
 
 使用日期字段可允许收件人输入日期；例如，您可能希望收件人指定其出生日期。 日期格式与Adobe Campaign实例中使用的格式匹配。
 
@@ -342,9 +342,9 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
-### 已加密的主要密钥（营销活动） {#encrypted-primary-key-campaign}
+### 已加密的主键（营销活动） {#encrypted-primary-key-campaign}
 
-此组件定义URL参数的名称，该参数将包含Adobe Campaign配置文件的标识符(分别为&#x200B;**主资源标识符**&#x200B;或&#x200B;**Adobe Campaign Standard中的Encrypted主密钥**&#x200B;和6.1)。
+此组件定义URL参数的名称，该参数将包含Adobe Campaign配置文件的标识符（分别为&#x200B;**主资源标识符**&#x200B;或&#x200B;**Adobe Campaign Standard中的Encrypted主密钥**&#x200B;和6.1）。
 
 显示和修改Adobe Campaign配置文件数据&#x200B;**的每个表单都必须**&#x200B;包含加密的主密钥组件。
 
@@ -408,13 +408,13 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 使用&#x200B;**订阅核对清单（营销活动）**&#x200B;组件修改与Adobe Campaign配置文件关联的订阅。
 
-添加到表单时，此组件将所有可用的订阅显示为复选框，并允许用户选择所需的订阅。 当用户提交表单时，此组件根据表单操作类型(**Adobe Campaign：订阅服务**&#x200B;或&#x200B;**Adobe Campaign：取消订阅服务**)，为用户订阅或取消订阅所选服务。
+添加到表单时，此组件将所有可用的订阅显示为复选框，并允许用户选择所需的订阅。 当用户提交表单时，此组件根据表单操作类型（**Adobe Campaign：订阅服务**&#x200B;或&#x200B;**Adobe Campaign：取消订阅服务**），为用户订阅或取消订阅所选服务。
 
 >[!NOTE]
 >
 >组件不会检查用户已订阅/取消订阅的服务。
 
-您可以[在订阅核对清单(Campaign)组件中](#settings-common-to-most-components)配置大多数Adobe Campaign组件通用的设置。 (此组件没有Adobe Campaign配置可用。)
+您可以[在订阅核对清单(Campaign)组件中](#settings-common-to-most-components)配置大多数Adobe Campaign组件通用的设置。 （此组件没有Adobe Campaign配置可用。）
 
 以下示例显示了正在显示的订阅核对清单（营销活动）组件。
 

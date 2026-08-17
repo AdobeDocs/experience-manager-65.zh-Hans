@@ -7,9 +7,9 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1739'
+source-wordcount: '1771'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ ht-degree: 0%
 
 **区域设置：**&#x200B;用户的ISO区域设置
 
-**业务日历键：**&#x200B;允许您根据此设置的值将业务日历映射到用户。 业务日历定义业务日和非业务日。 在计算事件（如提醒、截止日期和呈报）的未来日期和时间时，AEM表单可以使用业务日历。 为用户分配业务日历键的方式取决于您使用的是企业域、本地域还是混合域。 （请参阅[添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。）
+**业务日历键：**&#x200B;允许您根据此设置的值将业务日历映射到用户。 业务日历定义业务日和非业务日。 AEM表单在计算事件（如提醒、截止日期和呈报）的未来日期和时间时，可以使用业务日历。 为用户分配业务日历键的方式取决于您使用的是企业域、本地域还是混合域。 （请参阅[添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。）
 
 如果使用本地域或混合域，则有关用户的信息仅存储在User Management数据库中。 对于这些用户，将业务日历键设置为字符串。 然后，将业务日历键（字符串）映射到表单工作流中的业务日历。
 
@@ -90,7 +90,7 @@ ht-degree: 0%
 
 确保用户ID是唯一的。 请勿使用分配给已删除用户的服务器。
 
-AEM forms无法区分用户ID和密码相同但属于不同域的用户帐户。 为了避免此问题，请不要在多个域中创建具有相同用户ID的帐户。
+AEM表单无法区分用户ID和密码相同但属于不同域的用户帐户。 为了避免此问题，请不要在多个域中创建具有相同用户ID的帐户。
 
 将SQL Server用作数据库时，不能创建超过255个字符的用户ID。
 
@@ -160,7 +160,7 @@ AEM forms无法区分用户ID和密码相同但属于不同域的用户帐户。
 
 >[!NOTE]
 >
->JEE上的AEM Forms还允许将在OSGi上运行的AEM forms加载项的用户识别为AEM用户。 在以下情形中，需要在JEE上的AEM Forms和在OSGi上运行的AEM Forms加载项之间进行单点登录(例如，HTML工作区)，则需要此项。 上述删除操作仅会从JEE上的AEM Forms中删除用户。 用户不会从在OSGi环境中运行的AEM Forms加载项中删除。 但是在删除用户后所做的任何登录尝试(登录AEM Forms附加组件JEE服务器或AEM Forms附加组件OSGi环境)都将被拒绝。
+>JEE上的AEM Forms还允许在OSGi上运行的AEM forms加载项的用户被识别为AEM用户。 在以下情形中，需要在JEE上的AEM Forms与在OSGi上运行的AEM Forms加载项（例如HTML工作区）之间进行单点登录，则需要此项。 上述删除操作仅会从JEE上的AEM Forms中删除用户。 用户不会从在OSGi环境中运行的AEM Forms加载项中删除。 但是在删除用户后所做的任何登录尝试（登录AEM Forms附加组件JEE服务器或AEM Forms附加组件OSGi环境）都将被拒绝。
 
 ## 创建自定义登录错误处理程序 {#create-custom-login-error-handler}
 
@@ -169,10 +169,10 @@ AEM forms无法区分用户ID和密码相同但属于不同域的用户帐户。
 * 通信管理解决方案
 * AEM forms Workspace
 
-  ***注意&#x200B;**： AEM Forms版本已弃用Flex Workspace。*
+  ***注意&#x200B;**：已为AEM Forms版本弃用Flex Workspace。*
 
 * 表单管理器
-* 进程报告
+* 流程报告
 
 CQ提供了一种机制来覆盖默认的404处理程序jsp。
 

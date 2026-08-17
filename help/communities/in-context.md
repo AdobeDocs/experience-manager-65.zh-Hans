@@ -11,7 +11,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '830'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 
 ## 示例 {#example}
 
-使用在[AEM Communities快速入门](getting-started.md)时创建的[Geometrixx参与](http://localhost:4503/content/sites/engage/en.html)网站，可以在论坛中设置一个主题，以便在Publish环境中体验各种审核活动。 请参阅下文。
+使用在[AEM Communities快速入门](getting-started.md)时创建的[Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html)网站，可以在论坛中设置一个主题，以便在发布环境中体验各种审核活动。 请参阅下文。
 
 创建站点时，通过将Aaron McDonald (`aaron.mcdonald@mailinator.com`)添加到社区参与审查方组，将其识别为受信任的社区成员。
 
@@ -50,40 +50,40 @@ ht-degree: 0%
 
 * 以Rebekah Larsen的身份登录(rebekah.larsen@trashymail.com)
 
-   * 选择论坛
-   * 选择新的Post
-   * 输入主题
+  * 选择论坛
+  * 选择新帖子
+  * 输入主题
 
-     蜂鸣喂鸟机什么时候换花蜜
+    蜂鸣喂鸟机什么时候换花蜜
 
-   * 输入正文文本
+  * 输入正文文本
 
-     我每年都挂一只蜂鸟喂食器，可没取得多少成功。 他们似乎来了一两天，就这样了。 我每周换一次会不会太长？ 我一定要早点改吗？
+    我每年都挂一只蜂鸟喂食器，可没取得多少成功。 他们似乎来了一两天，就这样了。 我每周换一次会不会太长？ 我一定要早点改吗？
 
-   * 选择Post
-   * 选择注销
+  * 选择帖子
+  * 选择注销
 
 * 以Aaron McDonald (aaron.mcdonald@mailinator.com)登录
 
-   * 选择论坛
-   * 对于“蜂鸟”主题，请选择“阅读更多”
-   * 输入Post回复的评论
+  * 选择论坛
+  * 对于“蜂鸟”主题，请选择“阅读更多”
+  * 为帖子回复输入评论
 
-     我每周换一次衣服，从5月到10月都有。
+    我每周换一次衣服，从5月到10月都有。
 
-   * 选择回复
-   * 选择注销
+  * 选择回复
+  * 选择注销
 
 * 以Andrew Schaeffer身份登录(andrew.schaeffer@trashymail.com)
 
-   * 选择论坛
-   * 对于“蜂鸟”主题，请选择“阅读更多”
-   * 输入Post回复的评论
+  * 选择论坛
+  * 对于“蜂鸟”主题，请选择“阅读更多”
+  * 为帖子回复输入评论
 
-     我销售花蜜和饲料 — 请访问https://my.viral.url/
+    我销售花蜜和饲料 — 请访问https://my.viral.url/
 
-   * 选择回复
-   * 选择注销
+  * 选择回复
+  * 选择注销
 
 ### 匿名网站访客(#5) {#anonymous-site-visitor}
 
@@ -122,9 +122,9 @@ ht-degree: 0%
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-选择管理菜单项，以便您可以从Publish环境中访问[审核控制台](moderation.md)。
+选择“管理”菜单项，以便您可以从“发布”环境访问[审核控制台](moderation.md)。
 
-请注意，对于管理员，所有可审核内容均可见，而不仅仅是Geometrixx参与社区网站中的内容。
+请注意，对于管理员，所有可审核内容均可见，而不仅仅是Geometrixx Engage社区网站中的内容。
 
 搜索过滤器是一个可切换打开或关闭的侧面板。
 
@@ -145,11 +145,11 @@ ht-degree: 0%
 
 ![社区论坛 — 审查方](assets/community-forum-moderator.png)
 
-选择管理菜单项，以便您可以从Publish环境中访问[审核控制台](moderation.md)。
+选择“管理”菜单项，以便您可以从“发布”环境访问[审核控制台](moderation.md)。
 
-请注意，对于社区审查方，只能看到GeometrixxEngage社区站点中的可审查内容。
+请注意，对于社区审查方，只能看到Geometrixx Engage社区站点中的可审查内容。
 
-请注意，社区审查方具有和管理员相同的选项（图像已关闭搜索侧栏），但没有对其他AEM控制台的访问权限。
+请注意，社区审查方具有的选项与管理员的选项相同（图像已关闭搜索侧栏），但无法访问其他AEM控制台。
 
 注销。
 

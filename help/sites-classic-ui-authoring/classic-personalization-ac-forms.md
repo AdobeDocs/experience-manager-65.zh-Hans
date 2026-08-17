@@ -1,6 +1,6 @@
 ---
-title: 在AEM中创建Adobe Campaign Forms
-description: AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可以将特定字段插入表单并映射到Adobe Campaign数据库。
+title: 在 AEM 中创建 Adobe Campaign 表单
+description: 通过AEM，您可以创建并使用与网站上的Adobe Campaign交互的表单。 可以将特定字段插入表单并映射到Adobe Campaign数据库。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -9,16 +9,16 @@ exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1227'
-ht-degree: 0%
+source-wordcount: '1231'
+ht-degree: 1%
 
 ---
 
-# 在AEM中创建Adobe Campaign Forms{#creating-adobe-campaign-forms-in-aem}
+# 在 AEM 中创建 Adobe Campaign 表单{#creating-adobe-campaign-forms-in-aem}
 
-AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可以将特定字段插入表单并映射到Adobe Campaign数据库。
+通过AEM，您可以创建并使用与网站上的Adobe Campaign交互的表单。 可以将特定字段插入表单并映射到Adobe Campaign数据库。
 
 您可以管理新的联系人订阅、退订和用户配置文件数据，同时将其数据集成到您的Adobe Campaign数据库中。
 
@@ -50,7 +50,7 @@ AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可�
 
 >[!NOTE]
 >
->当使用Adobe Campaign 6.1.x或Adobe Campaign Standard时，请确保将页面&#x200B;**jcr：content**&#x200B;节点上的&#x200B;**acMapping**&#x200B;属性分别设置为&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
+>当使用Adobe Campaign 6.1.x或Adobe Campaign Standard时，请确保将页面&#x200B;**jcr:content**&#x200B;节点上的&#x200B;**acMapping**&#x200B;属性分别设置为&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
 >
 
 ### 创建表单 {#creating-a-form}
@@ -81,7 +81,7 @@ AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可�
 此部分仅详细介绍指向Adobe Campaign的特定链接。 有关如何在Adobe Experience Manager中使用表单的更多常规概述的信息，请参阅[编辑模式组件](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)。
 
 1. 导航到要编辑的表单。
-1. 在工具箱中，选择&#x200B;**Page** > **Page Properties...**，然后转到弹出窗口的&#x200B;**Cloud Service**&#x200B;选项卡。
+1. 在工具箱中，选择&#x200B;**页面** > **页面属性……**，然后转到弹出窗口的&#x200B;**云服务**&#x200B;选项卡。
 1. 通过单击&#x200B;**添加服务**，然后在服务的下拉列表中选择与您的Adobe Campaign实例对应的配置来添加Adobe Campaign服务。 此配置在设置实例之间的连接时执行。 有关详细信息，请参阅[将AEM连接到Adobe Campaign](/help/sites-administering/campaignonpremise.md#connecting-aem-to-adobe-campaign)。
 
    >[!NOTE]
@@ -90,7 +90,7 @@ AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可�
 
 1. 使用表单开头的&#x200B;**编辑**&#x200B;按钮访问表单的常规参数。 **表单**&#x200B;选项卡允许您选择在验证表单后将用户重定向到的感谢页面。
 
-   **高级**&#x200B;表单允许您选择表单类型。 **Post选项**&#x200B;字段允许您在三种类型的Adobe Campaign表单之间进行选择：
+   **高级**&#x200B;表单允许您选择表单类型。 **发布选项**&#x200B;字段允许您在三种类型的Adobe Campaign表单之间进行选择：
 
    * **Adobe Campaign：保存配置文件**：允许您在Adobe Campaign中创建或更新收件人（默认值）。
    * **Adobe Campaign：订阅服务**：允许您在Adobe Campaign中管理收件人的订阅。
@@ -98,7 +98,7 @@ AEM允许您创建并使用与网站上的Adobe Campaign交互的表单。 可�
 
    **操作配置**&#x200B;字段允许您指定是否希望在Adobe Campaign数据库中创建收件人配置文件（如果该配置文件不存在）。 为此，请选中&#x200B;**如果不存在则创建用户**&#x200B;选项。
 
-1. 将所选组件从工具箱中拖放到表单中，以添加这些组件。 有关可用的Adobe Campaign特定组件的详细信息，请参阅[Adobe表单组件](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)。
+1. 将所选组件从工具箱中拖放到表单中，以添加这些组件。 有关可用的Adobe Campaign特定组件的更多信息，请参阅[Adobe表单组件](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)。
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 

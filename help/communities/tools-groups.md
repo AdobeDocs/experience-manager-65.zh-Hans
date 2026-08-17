@@ -12,7 +12,7 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 2%
 
 ---
@@ -35,7 +35,7 @@ ht-degree: 2%
 
 要在AEM创作环境中访问组模板控制台，请执行以下操作：
 
-* 选择&#x200B;**工具 | Communities | 全局导航中的组模板**。
+* 选择&#x200B;**工具 |社区 |全局导航中的组模板**。
 
 此控制台显示可从中创建[社区站点](/help/communities/sites-console.md)的模板，并允许创建新组模板。
 

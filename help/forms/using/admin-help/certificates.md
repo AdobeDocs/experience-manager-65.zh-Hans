@@ -9,9 +9,9 @@ exl-id: 1fe0e7b4-6109-4f7a-8858-8237a1c5c93b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '646'
+source-wordcount: '653'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 * **信任具有CA：**&#x200B;的证书身份验证以进行CRL验证，同时选择“信任身份”。
 * **信任具有ICA的证书身份验证：**&#x200B;仅选择信任身份。 不应信任ICA进行证书身份验证。 如果您信任ICA进行证书身份验证，则ICA将成为用于路径构建的CA。 如果ICA在证书身份验证和身份方面都受信任，则CA供应商证书将被忽略，因为ICA将成为CA。
 * **信任具有HTTP的OCSP服务器：**&#x200B;如果OSCP响应服务器驻留在HTTPs位置，则还必须选择“信任于SSL连接”。 如果OSCP响应者需要CRL验证，请确保同时选择“信任身份”。
-* **Adobe根：**&#x200B;不选择SSL连接或OCSP Server信任存储类型。 SSL连接和OCSP服务器不信任Adobe根目录。 Adobe不会颁发OCSP和SSL证书。 使用别名=&quot;ADOBEROOT&quot;隐式信任Adobe根目录。
+* **Adobe根：**&#x200B;不选择SSL连接或OCSP服务器信任存储类型。 SSL连接和OCSP服务器不信任Adobe根目录。 Adobe不颁发OCSP和SSL证书。 使用别名=&quot;ADOBEROOT&quot;隐式信任Adobe根目录。
 
 仅支持X509v3证书。 此证书类型可以在二进制DER编码文件（.cer文件）或包含同一DER编码证书的Base64编码版本的文本文件(包括隐私增强邮件(PEM)格式的X509证书)中提供。
 
@@ -40,10 +40,10 @@ ht-degree: 0%
 1. 在管理控制台中，单击&#x200B;**[!UICONTROL 设置>信任存储区管理>证书]**。
 1. 单击导入，然后在“信任存储类型”下，选择以下选项之一：
 
-   * **SSL连接的信任：**&#x200B;指定AEM表单可以使用证书通过SSL连接到外部系统。
+   * **信任SSL连接：**&#x200B;指定AEM表单可以使用证书通过SSL连接到外部系统。
    * **信任证书签名：**&#x200B;指定在用于认证作者数字签名的文档签名操作中信任证书。
    * **信任签名：**&#x200B;指定在非作者数字签名的文档签名操作中信任证书。
-   * **信任证书身份验证：**&#x200B;指定AEM Forms使用证书对使用证书或智能卡身份验证的用户进行身份验证。
+   * **信任证书身份验证：**&#x200B;指定AEM表单使用证书来验证使用证书或智能卡身份验证的用户。
    * **OCSP服务器的信任：**&#x200B;指定AEM表单可以使用证书连接到外部OCSP响应程序
    * **信任标识：**&#x200B;指定证书可用于信任以上指定类型以外的信息。
 

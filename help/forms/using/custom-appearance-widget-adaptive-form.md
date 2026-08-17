@@ -11,8 +11,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 0%
+source-wordcount: '1744'
+ht-degree: 1%
 
 ---
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 1. **扩展现有的构件类**：扩展现有的构件类并覆盖所需的类。
 1. **创建客户端库**：创建`clientLib: af.customwidget`库并添加所需的JavaScript和CSS文件。
 
-1. **生成并安装项目**：生成Maven项目并在AEM上安装生成的内容包。
+1. **生成并安装项目**：在AEM上生成Maven项目并安装生成的内容包。
 1. **更新自适应表单**：更新自适应表单字段属性以使用自定义外观。
 
 ### 创建项目 {#create-a-project}
@@ -126,13 +126,13 @@ maven原型是创建自定义外观的起点。 要使用的原型的详细信�
   </tr>
   <tr>
    <td><code>render</code></td>
-   <td>渲染函数为小部件的默认HTML元素返回jQuery对象。 默认的HTML元素应为可聚焦类型。 例如，<code>&lt;a&gt;</code>、<code>&lt;input&gt;</code>和<code>&lt;li&gt;</code>。 返回的元素用作<code>$userControl</code>。 如果<code>$userControl</code>指定上述约束，<code>AbstractWidget</code>类的函数将按预期工作，否则某些常用API（集中、单击）需要更改。 </td>
+   <td>渲染函数为小组件的默认HTML元素返回jQuery对象。 默认的HTML元素应为可聚焦类型。 例如，<code>&lt;a&gt;</code>、<code>&lt;input&gt;</code>和<code>&lt;li&gt;</code>。 返回的元素用作<code>$userControl</code>。 如果<code>$userControl</code>指定上述约束，<code>AbstractWidget</code>类的函数将按预期工作，否则某些常用API（集中、单击）需要更改。 </td>
   </tr>
   <tr>
    <td><code>getEventMap</code></td>
-   <td>返回将HTML事件转换为XFA事件的映射。 <br /> <code class="code">&lbrace;
+   <td>返回将HTML事件转换为XFA事件的映射。<br /> <code class="code">&lbrace;
       blur: XFA_EXIT_EVENT,
-      &rbrace;</code><br />此示例显示<code>blur</code>是一个HTML事件，<code>XFA_EXIT_EVENT</code>是相应的XFA事件。 </td>
+      &rbrace;</code><br /> 此示例显示<code>blur</code>是一个HTML事件，<code>XFA_EXIT_EVENT</code>是相应的XFA事件。 </td>
   </tr>
   <tr>
    <td><code>getOptionsMap</code></td>

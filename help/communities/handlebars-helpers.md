@@ -7,9 +7,9 @@ exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1531'
 ht-degree: 2%
 
 ---
@@ -154,7 +154,7 @@ Then content-loadmore would return
 // returns "03-18-2015"
 ```
 
-## 等于 {#equals}
+## 等号 {#equals}
 
 根据等式条件返回内容的帮助程序。
 
@@ -237,7 +237,7 @@ Then content-loadmore would return
 
 只有少数几个社区组件可供包含。<!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
-此帮助程序仅适用于服务器端，可提供类似于JSP脚本的[cq：include](../../help/sites-developing/taglib.md)的功能。
+此帮助程序仅适用于服务器端，可提供类似于JSP脚本的[cq:include](../../help/sites-developing/taglib.md)的功能。
 
 ### 参数 {#parameters-6}
 
@@ -277,7 +277,7 @@ Then content-loadmore would return
 
 一个包含AEM html客户端库的帮助程序，该客户端库可以是js、css或主题库。 对于不同类型的多个包含项（例如js和css），必须在Handlebars脚本中多次使用此标记。
 
-此帮助程序仅适用于服务器端，它提供的功能与JSP脚本的[ui：includeClientLib](../../help/sites-developing/taglib.md)类似。
+此帮助程序仅适用于服务器端，它提供的功能与JSP脚本的[ui:includeClientLib](../../help/sites-developing/taglib.md)类似。
 
 ### 参数 {#parameters-7}
 
@@ -428,7 +428,7 @@ var input = {{xss-jsString topic-title}}
 
 ## Xss-validHref {#xss-validhref}
 
-一个帮助程序，用于对作为HTMLhref或srce属性值写入的URL进行清理以帮助防御XSS。
+一个帮助程序，用于对作为HTML href或srce属性值写入的URL进行清理以帮助防御XSS。
 
 注意：此辅助函数可能返回空字符串。
 
@@ -458,12 +458,12 @@ var input = {{xss-jsString topic-title}}
 
 * Handlebars为名为“options”的帮助程序提供最终参数。 特殊对象“options”包括
 
-   * 可选的专用数据(options.data)
-   * 调用的可选键值属性(options.hash)
-   * 能够调用自身(options.fn())
-   * 能够调用自身的反函数(options.inverse())
+  * 可选的专用数据(options.data)
+  * 调用的可选键值属性(options.hash)
+  * 能够调用自身(options.fn())
+  * 能够调用自身的反函数(options.inverse())
 
-* 建议从帮助程序返回的HTML字符串内容是SafeString。
+* 建议从帮助程序返回的HTML String内容是SafeString。
 
 ### Handlebars.js文档中的简单帮助程序示例： {#an-example-of-a-simple-helper-from-handlebars-js-documentation}
 
@@ -488,7 +488,7 @@ template(context);
 将呈现：
 
 &lt;ul>
-&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>Post！&lt;/a>&lt;/li>
+&lt;li>&lt;a href=&quot;/posts/hello-world&quot;>帖子！&lt;/a>&lt;/li>
 &lt;/ul>
 
 ### Handlebars.js文档中的块帮助程序示例： {#an-example-of-a-block-helper-from-handlebars-js-documentation}
@@ -519,7 +519,7 @@ template(data);
 
 ## 自定义SCF帮助程序 {#custom-scf-helpers}
 
-必须在服务器端和客户端实施自定义帮助程序，尤其是在传递数据时。 对于SCF，大多数模板在服务器端编译和渲染，因为服务器在请求页面时为给定组件生成HTML。
+必须在服务器端和客户端实施自定义帮助程序，尤其是在传递数据时。 对于SCF，当服务器在请求页面时为给定组件生成HTML时，大多数模板会在服务器端编译和渲染。
 
 ### 服务器端自定义帮助程序 {#server-side-custom-helpers}
 

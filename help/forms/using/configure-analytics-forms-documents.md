@@ -9,16 +9,16 @@ exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '1531'
-ht-degree: 1%
+source-wordcount: '1546'
+ht-degree: 3%
 
 ---
 
-# 使用Cloud Service框架进行分析 {#analyticsusingcloudframework}
+# 使用Cloud Service框架的Analytics {#analyticsusingcloudframework}
 
-AEM Forms与Analytics集成，允许您捕获和跟踪已发布表单和文档的性能指标。 分析这些量度背后的目的是，根据有关提高表单或文档可用性的更改数据做出明智的决策。
+AEM Forms与Analytics集成，允许您捕获和跟踪已发布表单和文档的性能指标。 分析这些指标的目的在于，根据有关使表单或文档更有用所需的更改的数据做出明智的决策。
 
 >[!NOTE]
 >
@@ -26,11 +26,11 @@ AEM Forms与Analytics集成，允许您捕获和跟踪已发布表单和文档�
 >
 >除了附加组件包之外，您还需要Adobe Analytics帐户和AEM实例管理员权限。 有关解决方案的信息，请参阅[Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)。
 
-您还可以使用Adobe启动项执行分析。 有关如何将AEM Forms与Adobe启动项集成的详细信息，请参阅[使用Adobe启动项的Analytics](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)。
+您还可以使用Adobe Launch执行分析。 有关如何将AEM Forms与Adobe Launch集成的详细信息，请参阅[使用Adobe Launch的Analytics](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)。
 
 ## 概述 {#overview}
 
-您可以使用Adobe Analytics发现用户在使用自适应表单、HTML5表单和交互式通信时面临的交互模式和问题。 Adobe分析开箱即用地跟踪和存储有关以下参数的信息：
+您可以使用Adobe Analytics发现用户在使用自适应表单、HTML5表单和交互式通信时面临的交互模式和问题。 Adobe Analytics开箱即用地跟踪和存储有关以下参数的信息：
 
 * **平均填写时间**：填写表单所花费的平均时间。
 * **呈现版本**：表单被打开的次数。
@@ -38,7 +38,7 @@ AEM Forms与Analytics集成，允许您捕获和跟踪已发布表单和文档�
 * **提交次数**：提交表单的次数。
 * **中止**：用户未完成表单而离开的次数。
 
-您可以自定义Adobe Analytics以添加/删除更多参数。 除上述信息外，此报表还包含有关HTML5和自适应表单各个面板的以下信息：
+您可以自定义Adobe Analytics以添加/删除更多参数。 除了上述信息之外，此报表还包含有关HTML5和自适应表单各个面板的以下信息：
 
 * **时间**：在面板和面板的字段上花费的时间。
 * **错误**：在面板和面板的字段中遇到的错误数。
@@ -102,16 +102,16 @@ Analytics数据存储在特定于客户的存储库（称为报表包）中。 �
 
    >[!NOTE]
    >
-   >用于配置AEM Forms Analytics的事件编号和Prop编号必须不同于[AEM Analytics](/help/sites-administering/adobeanalytics.md)配置中使用的事件编号和Prop编号。
+   >用于配置AEM Forms analytics的事件编号和prop编号必须不同于[AEM analytics](/help/sites-administering/adobeanalytics.md)配置中使用的事件编号和prop编号。
 
 1. 注销Adobe Marketing Cloud帐户。
 
 ## 创建Cloud Service配置 {#creating-cloud-service-configuration}
 
-Cloud Service配置是有关Adobe Analytics帐户的信息。 通过配置，Adobe Experience Manager (AEM)可以连接到Adobe Analytics。 为您使用的每个Analytics帐户创建单独的配置。
+Cloud Service配置是有关您的Adobe Analytics帐户的信息。 通过该配置，Adobe Experience Manager (AEM)可以连接到Adobe Analytics。 为您使用的每个Analytics帐户创建单独的配置。
 
 1. 以管理员身份登录到您的AEM创作实例。
-1. 单击左上角的&#x200B;**Adobe Experience Manager** > **工具** ![锤子图标](/help/forms/using/assets/tools.png) > **Cloud Service** > **旧版Cloud Service**。
+1. 单击左上角的&#x200B;**Adobe Experience Manager** > **工具** ![锤子图标](/help/forms/using/assets/tools.png) > **云服务** > **旧版云服务**。
 1. 找到&#x200B;**Adobe Analytics**&#x200B;图标。 单击&#x200B;**显示配置**，然后继续单击&#x200B;**[+]**&#x200B;以添加新配置。
 
    如果您是首次使用的用户，请单击&#x200B;**立即配置**。
@@ -131,7 +131,7 @@ Cloud Service配置是有关Adobe Analytics帐户的信息。 通过配置，Ado
 
 Adobe Analytics框架是Adobe Analytics变量与AEM变量之间的一组映射。 使用框架配置表单如何将数据填充到Adobe Analytics报表中。 框架与Adobe Analytics配置相关联。 您可以为每个配置创建多个框架。
 
-1. 在AEM Cloud Services控制台的Adobe Analytics下，单击&#x200B;**显示配置**。
+1. 在AEM云服务控制台上，单击Adobe Analytics下的&#x200B;**显示配置**。
 1. 单击Analytics配置旁边的&#x200B;**[+]**&#x200B;链接。
 
    ![Adobe Analytics配置](assets/adobe-analytics-cloud-services.png)
@@ -145,15 +145,15 @@ Adobe Analytics框架是Adobe Analytics变量与AEM变量之间的一组映射�
    ![information_to_send_to_report_suite](assets/information_to_send_to_report_suite.png)
 
 1. 将&#x200B;**other**&#x200B;类别中的&#x200B;**Form Analytics组件**&#x200B;从Sidekick拖动到框架上。
-1. 要通过组件中定义的变量来映射Analytics变量，请将变量从AEM内容查找器拖动到跟踪组件上的字段。
+1. 要将Analytics变量与在组件中定义的变量进行映射，请将一个变量从AEM内容查找器拖动到跟踪组件上的某个字段中。
 
-   ![将AEM变量映射到Adobe Analytics变量](assets/analytics_new.png)
+   ![将AEM变量与Adobe Analytics变量进行映射](assets/analytics_new.png)
 
 1. 使用sidekick中的&#x200B;**页面选项卡**&#x200B;激活框架，单击&#x200B;**激活框架**。
 
 ## 配置AEM Forms Analytics配置服务 {#configuring-aem-forms-analytics-configuration-service}
 
-1. 在创作实例上，打开`https://<server>:<port>;/system/console/configMgr`处的AEM Web控制台配置管理器。
+1. 在创作实例上，打开位于`https://<server>:<port>;/system/console/configMgr`的AEM Web控制台配置管理器。
 1. 查找并打开AEM Forms Analytics配置
 
    ![AEM Forms Analytics配置服务](assets/analytics_configuration.png)
@@ -163,7 +163,7 @@ Adobe Analytics框架是Adobe Analytics变量与AEM变量之间的一组映射�
 1. 为以下字段指定适当的值，然后单击&#x200B;**保存**。
 
    * **SiteCatalyst框架**：选择您在设置跟踪框架部分中定义的框架/配置。
-   * **字段时间跟踪基线**：以秒为单位指定必须跟踪字段访问的持续时间。 默认值为 0。如果该值大于0（零），则会向Adobe Analytics服务器发送两个单独的跟踪事件。 第一个事件会指示Analytics服务器停止跟踪已退出的字段。 第二个事件在指定的持续时间过后发送。 第二个事件会指示Analytics服务器开始跟踪已访问的字段。 使用两个不同的事件有助于准确测量在字段上逗留的时间。 当值为0（零）时，单个跟踪事件将发送到Adobe Analytics服务器。
+   * **字段时间跟踪基线**：以秒为单位指定必须跟踪字段访问的持续时间。 默认值为 0。 如果该值大于0（零），则会向Adobe Analytics服务器发送两个单独的跟踪事件。 第一个事件会指示Analytics服务器停止跟踪已退出的字段。 第二个事件在指定的持续时间过后发送。 第二个事件会指示Analytics服务器开始跟踪已访问的字段。 使用两个不同的事件有助于准确测量在字段上逗留的时间。 当值为0（零）时，单个跟踪事件将发送到Adobe Analytics服务器。
 
    * **Analytics报告同步cron**：指定用于从Adobe Analytics获取报告的cron表达式。 默认值为0 0 2 ？&#42; &#42;。
 

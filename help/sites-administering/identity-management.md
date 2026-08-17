@@ -12,7 +12,7 @@ feature: Administering
 role: Admin
 source-git-commit: 315171dca4501718a34fd33f937334f7e7958963
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1254'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ ht-degree: 1%
 
 * 从网站自助注册
 
-  可以将[社区站点](/help/communities/sites-console.md)配置为允许访客使用其Facebook或Twitter帐户进行自助注册或登录。
+  可以将[社区站点](/help/communities/sites-console.md)配置为允许访客使用其Facebook或Twitter帐户自行注册或登录。
 
 * 网站注册申请
 
@@ -58,7 +58,7 @@ ht-degree: 1%
 
 可以使用[表单](/help/sites-authoring/default-components.md#form-component)收集注册信息，然后生成新的帐户和配置文件。
 
-例如，用户可以使用“Geometrixx”页面请求新的配置文件
+例如，用户可以使用Geometrixx页面请求新的配置文件
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
 ![注册表单示例](assets/registerform.png)
@@ -75,7 +75,7 @@ ht-degree: 1%
 
 这将为访客提供&#x200B;**用户名**&#x200B;和&#x200B;**密码**&#x200B;的标准字段，以及一个&#x200B;**登录**&#x200B;按钮，以便在输入凭据时激活登录过程。
 
-例如，用户可以使用以下页面上的&#x200B;**登录**&#x200B;选项登录或创建Geometrixx：
+例如，用户可以登录，也可以使用Geometrixx工具栏上的&#x200B;**登录**&#x200B;选项创建帐户，该工具栏使用页面：
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -83,11 +83,11 @@ ht-degree: 1%
 
 ## 注销 {#logging-out}
 
-由于存在登录机制，因此还需要注销机制。 该选项可用作Geometrixx中的&#x200B;**注销**&#x200B;选项。
+由于存在登录机制，因此还需要注销机制。 这在Geometrixx中作为&#x200B;**注销**&#x200B;选项提供。
 
 ## 查看和更新用户档案 {#viewing-and-updating-a-profile}
 
-根据您的注册表，访客可能在他们的个人资料中注册了信息。 他们应该能够在以后的阶段查看和/或更新此内容。 这可以用类似的形式完成；例如，在Geometrixx中：
+根据您的注册表，访客可能在他们的个人资料中注册了信息。 他们应该能够在以后的阶段查看和/或更新此内容。 可使用类似形式完成此操作；例如，在Geometrixx中：
 
 ```
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
@@ -194,7 +194,7 @@ http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 
 这些访问权限由以下通配符ACL定义：
 
-/home每个用户都允许jcr：read rep：glob = &#42;/profile&#42;
+/home每个人都允许jcr:read rep:glob = &#42;/profile&#42;
 
 这允许：
 

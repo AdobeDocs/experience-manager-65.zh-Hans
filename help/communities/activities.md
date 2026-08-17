@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '473'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -89,11 +89,11 @@ ht-degree: 0%
 * 查看其他成员的配置文件时。
 * 在主要功能页面上，例如论坛、问题与解答和博客。
 
-   * 遵循该常规功能的所有活动。
+  * 遵循该常规功能的所有活动。
 
 * 特定条目，例如论坛主题、问题或博客文章。
 
-   * 关注该特定条目的所有活动。
+  * 关注该特定条目的所有活动。
 
 ### 附加信息 {#additional-information}
 

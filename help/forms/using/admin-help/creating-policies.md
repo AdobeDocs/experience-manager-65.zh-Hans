@@ -9,9 +9,9 @@ feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '4725'
+source-wordcount: '4769'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ Document Security提供了以下类型的策略。
 
 首次安装Document Security时，它包含一个名为&#x200B;*Restrict to All Principals*&#x200B;的共享策略。 当将此策略应用于文档时，任何可以登录Document Security的用户都可以访问该文档。 此策略位于名为&#x200B;*全局策略集*&#x200B;的策略集中。 默认情况下，不启用此策略。 如果它适合您组织的需要，则可以启用它。
 
-**Microsoft® Outlook自动生成的策略**
+**® Outlook自动生成的策略**
 
-使用Acrobat，您可以将策略应用到在Microsoft® Outlook中作为电子邮件附件发送的文档。 在Outlook中，可以使用现有策略保护文档。 或者，您也可以使用Acrobat通过默认机密性设置生成的自动生成策略，该策略适用于附加到电子邮件的文档。 (请参阅&#x200B;*[Acrobat帮助](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*。)
+使用Acrobat，您可以将策略应用到在Microsoft® Outlook中作为电子邮件附件发送的文档。 在Outlook中，可以使用现有策略保护文档。 或者，您也可以使用Acrobat通过默认机密性设置生成的自动生成策略，该策略适用于附加到电子邮件的文档。 （请参阅&#x200B;*[Acrobat帮助](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*。）
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Document Security提供了以下类型的策略。
 
 >[!NOTE]
 >
->在Microsoft® Outlook中，Acrobat为附加到电子邮件的文档收件人自动生成的策略不会出现在策略列表中。 您只能通过打开关联文档的文档详情页面来查看这些策略。
+>在® Outlook中，Acrobat为附加到电子邮件的文档收件人自动生成的策略不会出现在策略列表中。 您只能通过打开关联文档的文档详情页面来查看这些策略。
 
 在编辑策略时，以下限制适用：
 
@@ -166,7 +166,7 @@ Document Security提供了以下类型的策略。
 
 这些文档权限在“权限”选项卡上提供。 您可以将这些权限应用于PDF、PTC Pro/E和Microsoft Office文件。
 
-**打印：**&#x200B;允许用户打印受此策略保护的文档。 对于Office和Pro/E文件，可以选中“打印”复选框以允许打印，或清除该复选框以防止打印。 如果选中“显示PDF的自定义权限”复选框，则可以从以下选项中进行选择：
+**打印：**&#x200B;允许用户打印受此策略保护的文档。 对于Office和Pro/E文件，可以选中“打印”复选框以允许打印，或清除该复选框以防止打印。 如果选中显示PDF的自定义权限复选框，则可以从以下选项中进行选择：
 
 **不允许：**&#x200B;不允许用户打印PDF。
 
@@ -174,23 +174,23 @@ Document Security提供了以下类型的策略。
 
 **低分辨率。 仅允许**&#x200B;用户以低分辨率打印PDF。
 
-**修改：**&#x200B;允许用户修改受此策略保护的文档。 对于Office和Pro/E文件，您可以选中“修改”复选框以允许修改，或清除该复选框以防止修改。 如果选中“显示PDF的自定义权限”复选框，则可以从以下选项中进行选择：
+**修改：**&#x200B;允许用户修改受此策略保护的文档。 对于Office和Pro/E文件，您可以选中“修改”复选框以允许修改，或清除该复选框以防止修改。 如果选中显示PDF的自定义权限复选框，则可以从以下选项中进行选择：
 
-**不允许：**&#x200B;不允许用户修改该PDF。
+**不允许：**&#x200B;不允许用户修改PDF。
 
-**任何：**&#x200B;用户可以修改该PDF。
+**任何：**&#x200B;用户可以修改PDF。
 
 **协作：**&#x200B;允许用户使用Adobe Acrobat中的“协作”选项与他人协作。 此权限允许用户复制表单数据，即使策略中未明确提供复制权限。
 
 **更改页面：**&#x200B;允许用户在PDF中添加和删除页面以及编辑内容。
 
-**Fill &amp; Sign：**&#x200B;允许用户在PDF上填写表单字段并进行签名。
+**填写并签名：**&#x200B;允许用户在PDF上填写表单字段并签名。
 
 **复制：**&#x200B;允许用户从受此策略保护的文档复制文本。
 
-**屏幕Reader：**&#x200B;如果选中“显示PDF的自定义权限”复选框，则会显示此权限。 选择此选项时，Adobe Acrobat有权向PDF添加临时标记，以提高其通过屏幕阅读器可读性。
+**屏幕Reader：**&#x200B;如果您选中“显示PDF的自定义权限”复选框，则会显示此权限。 选择此选项时，Adobe Acrobat有权将临时标记添加到PDF，以提高其通过屏幕阅读器可读性。
 
-这些文档权限在“选项”选项卡上提供。 可将这些权限应用于PDF、PTC Pro/E和Microsoft Office文件：
+这些文档权限在“选项”选项卡上提供。 您可以将这些权限应用于PDF、PTC Pro/E和Microsoft Office文件：
 
 **脱机：**&#x200B;允许用户脱机查看受此策略保护的文档。
 
@@ -266,9 +266,9 @@ Document Security提供了以下类型的策略。
 >
 >对于提供匿名用户访问权限的策略，匿名用户的用户名和标识符不显示为水印，即使您选择此类型的水印也是如此。
 
-**仅将认证的Acrobat插件用于PDF：**&#x200B;如果为策略选择了此项，则此选项指定在打开受策略保护的文档时，Acrobat 8.0及更高版本必须以认证模式运行。 当Acrobat以认证模式运行时，不会加载任何第三方插件。
+**仅对PDF使用认证的Acrobat插件：**&#x200B;如果为策略选择了此选项，则此选项指定在打开受策略保护的文档时，Acrobat 8.0及更高版本必须以认证模式运行。 当Acrobat以认证模式运行时，不会加载任何第三方插件。
 
-如果您担心文档收件人会编写一个插件，以规避Acrobat 8.0和更高版本中的任何文档保护，请选择此选项。 如果您的文档收件人必须使用Acrobat中的第三方插件与文档交互，请勿选择此选项。
+如果您担心文档收件人会编写一个插件，该插件可能会绕过Acrobat 8.0及更高版本中的任何文档保护，请选择此选项。 如果您的文档收件人必须使用Acrobat中的第三方插件与文档交互，请勿选择此选项。
 
 此选项仅在Acrobat 8.0或更高版本中启用认证模式；管理员必须禁用Acrobat 7.0的访问权限。
 
@@ -285,14 +285,14 @@ Document Security提供了以下类型的策略。
 **加密算法和密钥长度：**&#x200B;用于保护您的文档。 您可以从以下选项中进行选择：
 
 * AES 128位
-* AES 256位。 只有Acrobat 9.0及更高版本支持此选项。 要对PDF文件使用AES 256加密，请获取并安装Java Cryptography Extension (JCE)无限强度管辖策略文件。 这些文件替换[JAVE_HOME]/lib/security文件夹中的local_policy.jar和US_export_policy.jar文件。 例如，如果您使用的是Sun JDK 1.6，请将下载的文件复制到[dep root]/Java/jdk1.6.0_26/lib/security文件夹。 您可以从[Java SE下载](https://java.sun.com/javase/downloads/index.jsp)下载这些文件。
+* AES 256位。 只有Acrobat 9.0及更高版本支持此选项。 要对PDF文件使用AES 256加密，请获取并安装Java加密扩展(JCE)无限强度管辖策略文件。 这些文件替换[JAVE_HOME]/lib/security文件夹中的local_policy.jar和US_export_policy.jar文件。 例如，如果您使用的是Sun JDK 1.6，请将下载的文件复制到[dep root]/Java/jdk1.6.0_26/lib/security文件夹。 您可以从[Java SE下载](https://java.sun.com/javase/downloads/index.jsp)下载这些文件。
 * 不加密。 Acrobat 9.0及更高版本当前支持此选项。 如果选择此选项，“文档限制”选项将禁用。 如果要使用Document Security进行文档审核或版本控制，但不希望加密文档，则此选项可能很有用。
 
 **文档限制：**&#x200B;选择要加密的PDF文档组件。 其他客户端应用程序加密整个文档，但不加密链接或嵌入的文件。 您可以从以下选项中进行选择：
 
 * 整个文档，包括其附件和元数据。 *元数据*&#x200B;是有关文档及其内容的信息，可通过文档“属性”对话框或Acrobat“高级”菜单查看这些信息。 在Acrobat中，您可以将不同类型的文件（例如，文本、音频和视频文件）附加到PDF文档。
 * 文档及其附件，但不包括元数据。
-* 仅限文档附件。 您可以对PDF文件的附件进行加密，而无需对文档内容进行加密。
+* 仅限文档附件。 您可以加密PDF文件的附件，而无需加密文档内容。
 
 ## 启用或禁用共享策略 {#enable-or-disable-shared-policies}
 
@@ -398,7 +398,7 @@ Document Security提供了以下类型的策略。
 
 >[!NOTE]
 >
->使用客户端应用程序从文档中删除策略。 (请参阅Acrobat帮助或相应的Acrobat Reader DC扩展帮助。)
+>使用客户端应用程序从文档中删除策略。 （请参阅Acrobat帮助或相应的Acrobat Reader DC扩展帮助。）
 
 ## 对策略列表进行排序 {#sort-the-policy-list}
 

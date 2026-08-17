@@ -11,8 +11,8 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 5723e9990969dff1b508062d69a68f68a20eb576
 workflow-type: tm+mt
-source-wordcount: '523'
-ht-degree: 0%
+source-wordcount: '549'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 创建自适应表单时，可以指定表单的工具栏布局。 工具栏布局定义命令和表单上工具栏的布局。
 
-工具栏布局的使用严重依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 组织和优化此代码的服务可能是一个复杂的问题。 为了帮助解决此问题，AEM提供了客户端库文件夹，这允许您在存储库中存储客户端代码，将其按类别整理，并定义何时以及如何向客户端提供每种类别的代码。 然后，客户端库系统负责在最终网页中产生正确的链接，以加载正确的代码。 有关详细信息，请参阅[客户端库在AEM中的工作方式。](/help/sites-developing/clientlibs.md)
+工具栏布局的使用严重依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 组织和优化此代码的服务可能是一个复杂的问题。 为了帮助解决此问题，AEM提供了客户端库文件夹，这让您可以在存储库中存储客户端代码，将其按类别整理，并定义何时以及如何向客户端提供每种类别的代码。 然后，客户端库系统负责在最终网页中产生正确的链接，以加载正确的代码。 有关详细信息，请参阅[客户端库在AEM中的工作方式。](/help/sites-developing/clientlibs.md)
 
 ![示例工具栏布局](assets/default_toolbar_layout.png)
 
@@ -65,7 +65,7 @@ CustomToolbarLayoutDemo.zip
 
 1. 将复制的节点`mobileFixedToolbarLayout`重命名为`customToolbarLayout.`
 
-   此外，为节点提供相关描述。 例如，将节点的jcr：description更改为&#x200B;**自定义工具栏**&#x200B;的布局。
+   此外，为节点提供相关描述。 例如，将节点的jcr:description更改为&#x200B;**自定义工具栏**&#x200B;的布局。
 
    节点的`guideComponentType`属性确定布局类型。 在这种情况下，布局类型为工具栏，因此会显示在工具栏布局选择下拉列表中。
 

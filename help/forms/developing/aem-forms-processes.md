@@ -1,5 +1,5 @@
 ---
-title: 了解AEM Forms流程
+title: 理解 AEM Forms 流程
 description: 了解AEM Forms流程如何包括表单创建、提交、数据处理、验证、集成、工作流自动化和输出管理。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,14 @@ role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 939a2efa64c853928a9082aa30d7338e98deb695
+source-git-commit: 'null'
 workflow-type: tm+mt
-source-wordcount: '793'
+source-wordcount: '831'
 ht-degree: 0%
 
 ---
 
-# 了解AEM Forms流程 {#understanding-aem-forms-processes}
+# 理解 AEM Forms 流程 {#understanding-aem-forms-processes}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
@@ -50,9 +50,9 @@ ht-degree: 0%
 
 调用此短暂的进程时，它将执行以下操作：
 
-1. 获取作为输入值传递到进程的非安全PDF文档。
+1. 获取作为输入值传递到进程的不安全PDF文档。
 1. 使用密码加密PDF文档。 此进程的输入参数的名称为`inDoc`，数据类型为document。
-1. 将密码加密的PDF文件作为PDF文件保存到本地文件系统。 此过程会将加密的PDF文档作为输出值返回。 此进程的输出参数的名称为`outDoc`，数据类型为document。
+1. 将密码加密的PDF文档另存为PDF文件到本地文件系统。 此过程会将加密的PDF文档作为输出值返回。 此进程的输出参数的名称为`outDoc`，数据类型为document。
 
    此进程在从中调用它的同一执行线程上同步完成。 此短期进程的名称为`MyApplication/EncryptDocument`，其操作为`invoke`。
 
@@ -62,8 +62,8 @@ ht-degree: 0%
 
    *使用AEM Forms编程*&#x200B;描述了以下以编程方式调用此短暂进程的方法：
 
-   * [通过使用AEM Forms Remoting传递不安全的文档来调用短期进程](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)(使用Flex应用程序)
-   * [使用调用API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java™调用API)调用短期进程
+   * [通过使用AEM Forms Remoting传递不安全的文档来调用短期进程](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting)（使用Flex应用程序）
+   * [使用调用API](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) （Java™调用API）调用短期进程
    * [使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)（Web服务示例）
    * [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)（Web服务示例）
    * [使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)（Web服务示例）
