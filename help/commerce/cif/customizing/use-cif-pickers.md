@@ -53,7 +53,7 @@ product字段允许导航到用户希望通过不同视图选择的产品。 默
 >
 >从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`sku`或`slug`作为产品标识符。 Adobe仍仅对使用CIF核心组件版本1.x的项目支持`id`。
 
-在[CIF核心组件](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml)项目中可以找到`cifproductfield`的完整工作示例。 另请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs)。
+在[CIF核心组件](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml)项目中可以找到`cifproductfield`的完整工作示例。 另请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hans#customizing-dialogs)。
 
 ## 类别选取器 {#category-picker}
 
@@ -78,7 +78,7 @@ product字段允许导航到用户希望通过不同视图选择的产品。 默
 
 >[!CAUTION]
 >
->与`cifproductfield`组件相同，`cifcategoryfield`组件还需要`cif.shell.picker` clientlib。 要将clientlib添加到对话框，您可以使用`extraClientlibs`属性。 请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html#customizing-dialogs)。
+>与`cifproductfield`组件相同，`cifcategoryfield`组件还需要`cif.shell.picker` clientlib。 要将clientlib添加到对话框，您可以使用`extraClientlibs`属性。 请参阅AEM核心组件文档的[自定义对话框](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=zh-Hans#customizing-dialogs)。
 >[!CAUTION]
 >
 >从CIF核心组件版本2.0.0开始，删除了`id`的支持并将其替换为`uid`。 Adobe建议使用`uid`或`urlPath`作为类别标识符。 Adobe仍仅对使用CIF核心组件版本1.x的项目支持`id`和`idAndUrlPath`。
