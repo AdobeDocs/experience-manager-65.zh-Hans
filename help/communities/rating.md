@@ -9,7 +9,7 @@ exl-id: 7534ad5d-b408-4b09-bd3d-da7ab009d55b
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 'null'
+source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '223'
 ht-degree: 1%
