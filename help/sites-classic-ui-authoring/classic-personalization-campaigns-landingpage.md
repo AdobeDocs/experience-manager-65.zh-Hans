@@ -10,7 +10,7 @@ exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 'null'
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '3376'
 ht-degree: 2%
@@ -32,7 +32,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->AEM 6.5[&#128279;](/help/release-notes/deprecated-removed-features.md#deprecated-features)已弃用用于导入登陆页面的设计导入程序。
+>AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features)已弃用用于导入登陆页面的设计导入程序[。
 
 >[!CAUTION]
 >

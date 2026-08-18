@@ -9,7 +9,7 @@ exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 'null'
+source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 3%
@@ -92,7 +92,7 @@ Granite用户和组管理控制台都可以从触控优化UI的&#x200B;**[工具
    * **帐户设置**
 
      * **状态**
-       您可以将帐户标记为&#x200B;**活动**&#x200B;或&#x200B;**非活动**。
+       您可以将帐户标记为**活动**&#x200B;或&#x200B;**非活动**。
 
    * **照片**
 

@@ -10,7 +10,7 @@ exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 'null'
+source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '2564'
 ht-degree: 7%
@@ -135,7 +135,7 @@ ht-degree: 7%
 添加了关于如何使用链接的其他信息。
 
 * **链接类型**
-在下拉列表中，选择&#x200B;**自定义URL**&#x200B;和&#x200B;**自适应文档**。 该字段为必填项。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
+在下拉列表中，选择**自定义URL**&#x200B;和&#x200B;**自适应文档**。 该字段为必填项。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
 
 * **其他URL参数**
 添加任何其他URL参数。 单击“添加项目”可添加多个项目。
@@ -384,7 +384,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无**&#x200B;或&#x200B;**数值 —**&#x200B;来添加数值或无约束的约束。 如果选择数字，则用户在字段中输入的答案必须是数字。
 
 * **约束消息** — 此外，您还可以添加约束消息，以便用户了解如何正确设置其答案的格式。
