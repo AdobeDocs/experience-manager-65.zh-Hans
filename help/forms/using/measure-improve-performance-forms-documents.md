@@ -1,5 +1,5 @@
 ---
-title: 衡量和提高表单的有效性和转换率
+title: 衡量并提升表单的有效性和转化率
 description: AEM Forms与Adobe Target和Adobe Analytics解决方案集成，可让您测量并提高表单的性能和转化率。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1274'
-ht-degree: 0%
+source-wordcount: '1295'
+ht-degree: 1%
 
 ---
 
-# 衡量和提高表单的有效性和转换率{#measure-and-improve-effectiveness-and-conversion-of-forms}
+# 衡量并提升表单的有效性和转化率{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
 ## 挑战 {#the-challenge-br}
 
@@ -32,7 +32,7 @@ ht-degree: 0%
 
 ## 解决方案 {#the-solution}
 
-AEM Forms与[Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)解决方案([Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html)和[Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html))集成，这些解决方案可以帮助您监视和分析表单的执行情况，并让您试验并识别可提高转化率的体验。
+AEM Forms与[Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)解决方案（[Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html)和[Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html)）集成，这些解决方案可以帮助您监视和分析表单的执行情况，并让您试验并识别可提高转化率的体验。
 
 ## 工作流 {#the-workflow}
 
@@ -78,7 +78,7 @@ AEM Forms与[Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)�
 
 当您的客户访问启用了Analytics的表单并与之交互时，其交互将在高度安全的Analytics数据库中捕获。 数据库由客户端分段，并通过安全连接进行访问。
 
-您可以从启用了Analytics的表单的AEM中查看报表并分析数据。 要查看报表，请执行以下操作：
+您可以从AEM中为启用了Analytics的表单查看报表并分析数据。 要查看报表，请执行以下操作：
 
 1. 在AEM服务器上，导航到&#x200B;**Forms > Forms和文档**。
 1. 选择要为其生成分析报表的表单。
@@ -114,7 +114,7 @@ AEM Forms与[Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)�
 
 >[!NOTE]
 >
->您可以在Adobe Marketing Cloud上的Analytics帐户中查看详细报告，并更深入地了解客户及其与您的表单的交互。
+>您可以在Adobe Marketing Cloud上的Analytics帐户中查看详细报告，并更深入地了解insight中的客户及其与您的表单的交互。
 
 #### 步骤3：分析数据点 {#step-analyze-data-points}
 
@@ -138,7 +138,7 @@ AEM Forms与Target的集成允许为自适应表单创建A/B测试。 在A/B测�
 
 ![自适应表单的A/B测试摘要报告示例](assets/ab-test-report-4.png)
 
-## 最佳实践 {#best-practices}
+## 最佳做法 {#best-practices}
 
 真正的最佳实践是您在执行此工作流时自我标识的最佳实践。 它们特定于您的环境和要求。 通过工作流捕获您的学习内容，并将其作为最佳实践进行记录。
 

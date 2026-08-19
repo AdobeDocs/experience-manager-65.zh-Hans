@@ -1,5 +1,5 @@
 ---
-title: 集成问题疑难解答
+title: 排查集成问题
 description: 了解如何对与Adobe Experience Manager集成时出现的问题进行故障排除。
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Integration
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1078'
-ht-degree: 1%
+source-wordcount: '1102'
+ht-degree: 2%
 
 ---
 
-# 集成问题疑难解答{#troubleshooting-integration-issues}
+# 排查集成问题{#troubleshooting-integration-issues}
 
 ## 一般疑难解答提示 {#general-troubleshooting-tips}
 
@@ -48,27 +48,27 @@ ${ myHtlVariable }
 
 ### 报表导入器导致CPU/内存使用率较高 {#the-report-importer-causes-high-cpu-memory-usage}
 
-报表导入器导致CPU/内存使用率高或导致`OutOfMemoryError`异常。
+报告导入程序导致CPU/内存使用率高或导致`OutOfMemoryError`异常。
 
-#### 解决方案 {#solution}
+#### 解决办法 {#solution}
 
 要解决此问题，请尝试以下操作：
 
 * 确保没有注册大量PollingImporters（请参阅下面的“由于PollingImporter而关闭需要很长时间”部分）。
 * 在[OSGi控制台](/help/sites-deploying/configuring-osgi.md)中使用`ManagedPollingImporter`配置的CRON表达式在一天中的某个时间运行报表导入程序。
 
-有关在AEM中创建自定义数据导入器服务的其他详细信息，请阅读以下文章[https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html)。
+有关在AEM中创建自定义数据导入器服务的其他详细信息，请参阅以下文章[https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html)。
 
 ### 由于PollingImporter，关闭需要很长时间 {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analytics在设计时考虑到了继承机制。 通常，您可通过在页面属性[Cloud Service](/help/sites-developing/extending-cloud-config.md)选项卡中添加对Analytics配置的引用来启用站点的Analytics。 然后，配置会自动继承到所有子页面，而无需再次引用它，除非页面需要不同的配置。 添加对站点的引用也会自动创建多个节点(12适用于AEM 6.3及更早版本，6适用于AEM 6.4)   `cq;PollConfig`类型，用于实例化用于将Analytics数据导入AEM的PollingImporters。 因此：
+Analytics在设计时考虑到了继承机制。 通常，您通过在页面属性[云服务](/help/sites-developing/extending-cloud-config.md)选项卡中添加对Analytics配置的引用来启用站点的Analytics。 然后，配置会自动继承到所有子页面，而无需再次引用它，除非页面需要不同的配置。 添加对站点的引用也会自动创建`cq;PollConfig`类型的多个节点（12个用于AEM 6.3及更早版本，6个用于AEM 6.4及更高版本），这些节点实例化了用于将Analytics数据导入AEM的PollingImporters。 因此：
 
 * 具有引用Analytics的大量页面会导致大量轮询导入程序。
 * 此外，复制和粘贴引用Analytics配置的页面会导致其PollingImporters重复。
 
-#### 解决方案 {#solution-1}
+#### 解决办法 {#solution-1}
 
-首先，分析[error.log](/help/sites-deploying/configure-logging.md)可能会让您深入了解活动或注册的PollingImporters的数量。 例如：
+首先，分析[error.log](/help/sites-deploying/configure-logging.md)可能会为您提供有关活动或注册的PollingImporters数量的insight。 例如：
 
 ```
 # Count PollingImporter entries
@@ -84,27 +84,27 @@ sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\)\/jcr:content.*/\1/p" e
 
 其次，确保仅排名最前的页面（层级中的较高位置）引用了Analytics配置。
 
-有关在AEM中创建自定义数据导入器服务的其他详细信息，请阅读以下文章[https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html)。
+有关在AEM中创建自定义数据导入器服务的其他详细信息，请参阅以下文章[https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html)。
 
 ## DTM（旧版）问题 {#dtm-legacy-issues}
 
 ### DTM脚本标记未在页面源中呈现 {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-页面中未正确包含[DTM](/help/sites-administering/dtm.md)脚本标记，即使已在页面属性[Cloud Service](/help/sites-developing/extending-cloud-config.md)选项卡中引用了该配置。
+[DTM](/help/sites-administering/dtm.md)脚本标记未正确包含在页面中，即使已在页面属性[云服务](/help/sites-developing/extending-cloud-config.md)选项卡中引用了该配置。
 
-#### 解决方案 {#solution-2}
+#### 解决办法 {#solution-2}
 
 要解决此问题，可以尝试以下操作：
 
-* 确保加密的属性可以解密(请注意，加密可能在每个AEM实例上使用不同的自动生成密钥)。 有关其他详细信息，另请阅读[对配置属性的加密支持](/help/sites-administering/encryption-support-for-configuration-properties.md)。
+* 确保加密的属性可以解密（请注意，加密可能在每个AEM实例上使用其他自动生成的密钥）。 有关其他详细信息，另请阅读[对配置属性的加密支持](/help/sites-administering/encryption-support-for-configuration-properties.md)。
 * 重新发布`/etc/cloudservices/dynamictagmanagement`中找到的配置
 * 检查`/etc/cloudservices`上的ACL。 ACL应为：
 
-   * 允许； jcr：read； webservice-support-servicelibfinder
-   * 允许； jcr：read；每个人；`rep:glob:`&amp;amp；ast；`/defaults/`&amp;amp；ast；
-   * 允许； jcr：read；每个人；`rep:glob:`&amp;amp；ast；`/defaults`
-   * 允许； jcr：read；每个人；`rep:glob:`&amp;amp；ast；`/public/`&amp;amp；ast；
-   * 允许； jcr：read；每个人；`rep:glob:`&amp;amp；ast；`/public`
+  * 允许；jcr:read；webservice-support-servicelibfinder
+  * 允许； jcr:read；每个人；`rep:glob:`&amp;ast；`/defaults/`&amp;ast；
+  * 允许；jcr:read；每个人；`rep:glob:`&amp;ast；`/defaults`
+  * 允许； jcr:read；每个人；`rep:glob:`&amp;ast；`/public/`&amp;ast；
+  * 允许；jcr:read；每个人；`rep:glob:`&amp;ast；`/public`
 
 有关管理ACL的详细信息，请阅读[用户管理和安全](/help/sites-administering/security.md#permissions-in-aem)页。
 
@@ -114,7 +114,7 @@ sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\)\/jcr:content.*/\1/p" e
 
 出现此问题是因为自定义页面组件不包含处理Target DTM集成的正确JSP或客户端库。
 
-#### 解决方案 {#solution-3}
+#### 解决办法 {#solution-3}
 
 您可以尝试以下解决方案：
 
@@ -144,7 +144,7 @@ sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\)\/jcr:content.*/\1/p" e
 
 当使用DTM在网站上实施Adobe Analytics并使用自定义代码时，可能会出现此问题。 原因是使用`s = new AppMeasurement()`实例化`s`对象。
 
-#### 解决方案 {#solution-4}
+#### 解决办法 {#solution-4}
 
 使用`s_gi`而不是`new AppMeasurement`实例化方法。 例如：
 
@@ -157,11 +157,11 @@ var s=s_gi(s_account)
 
 此问题可能由多种原因引起：
 
-* 使用第三方Tag Management Systems异步加载Target客户端库（`mbox.js`或`at.js`）可能会随机中断定位。 Target库应在页面标头中同步加载。 当从AEM交付库时，情况始终如此。
+* 使用第三方Tag Management Systems异步加载Target客户端库（`mbox.js`或`at.js`）可能会随机中断定位。 Target库应在页面标头中同步加载。 在从AEM交付库时，此情况始终相同。
 
 * 同时加载两个Target客户端库(`at.js`)，例如，一个使用DTM，另一个使用AEM中的Target配置。 如果`at.js`版本不同，这可能会导致`adobe.target`定义的冲突。
 
-#### 解决方案 {#solution-5}
+#### 解决办法 {#solution-5}
 
 您可以尝试以下解决方案：
 
@@ -172,7 +172,7 @@ var s=s_gi(s_account)
 
 开箱即用的AEM 6.2和6.3与AT.js版本1.3.0+不兼容。 由于AT.js版本1.3.0引入了其API的参数验证，`adobe.target.applyOffer()`需要一个`atjs-itegration.js`代码未提供的“mbox”参数。
 
-#### 解决方案 {#solution-6}
+#### 解决办法 {#solution-6}
 
 要解决此问题，请编辑`atjs-itegration.js`并在`adobe.target.applyOffer()`的参数对象中添加`"mbox": mboxName`字段，如下所示：
 
@@ -193,7 +193,7 @@ adobe.target.getOffer({
 
 此问题很可能是[A4T Analytics Cloud配置](/help/sites-administering/target-configuring.md)配置问题。
 
-#### 解决方案 {#solution-7}
+#### 解决办法 {#solution-7}
 
 您需要通过向AEM发出以下验证请求来验证是否为您的Target帐户正确启用了A4T：
 

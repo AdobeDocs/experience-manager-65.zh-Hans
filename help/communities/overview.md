@@ -12,14 +12,14 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 2%
+source-wordcount: '1332'
+ht-degree: 1%
 
 ---
 
 # AEM Communities概述 {#aem-communities-overview}
 
-Adobe Experience Manager (AEM) Communities允许您快速创建本地社区站点，该站点提高了性能、改进了站点管理，并鼓励将站点访客转化为有价值的社区成员。
+Adobe Experience Manager (AEM)社区允许您快速创建本地社区站点，该站点提高了性能、改进了站点管理，并鼓励将站点访客转化为有价值的社区成员。
 
 ## Communities功能 {#communities-features}
 
@@ -27,7 +27,7 @@ AEM Communities支持与网站访客建立关系，这些网站访客：
 
 * **通过博客、问答和事件日历通知**，
 * 同时&#x200B;**通过论坛、评论和其他社区内容获得见解**，通常称为用户生成内容(UGC)。
-* 它允许Publish环境中受信任的成员进行&#x200B;**审核**，
+* 它允许受信任的成员在发布环境中进行&#x200B;**审核**，
 * 使用Twitter和Facebook的&#x200B;**社交登录**，
 * 社区内容的&#x200B;**内联翻译**，
 * 从已发布的社区站点创建&#x200B;**社区组**，
@@ -38,42 +38,42 @@ AEM Communities支持与网站访客建立关系，这些网站访客：
 
 社区功能可以使用GitHub.com上公开提供的[AEM演示计算机](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki)或新的`We.Retail`参考实现进行演示。
 
-## 社区站点 {#community-sites}
+## 社区网站 {#community-sites}
 
-社区站点是使用简单向导创建的AEM站点，该向导会导致网站具有许多预连接到站点的常见功能。
+社区站点是使用简单向导创建的AEM站点，该向导会导致网站具有许多预先连接到站点的常见功能。
 
 [站点创建向导](/help/communities/sites-console.md)：
 
 * 基于所选的[社区站点模板](/help/communities/sites.md)组合站点的功能，该模板为：
 
-   * 通过[社区功能](#community-functions)生成
-   * 可选的[社区组](#communitygroups)功能
+  * 通过[社区功能](#community-functions)生成
+  * 可选的[社区组](#communitygroups)功能
 
 * 使用设置配置：
 
-   * 审核
-   * 登录
-   * 转换
+  * 审核
+  * 登录
+  * 转换
 
 * 提供以下基本功能：
 
-   * 响应式设计：使用[TwitterBootstrap主题](https://getbootstrap.com)
+  * 响应式设计：使用[TwitterBootstrap主题](https://getbootstrap.com)
 
-   * 登录：自助注册，[社交登录](/help/communities/social-login.md)，用户配置文件
+  * 登录：自助注册，[社交登录](/help/communities/social-login.md)，用户配置文件
 
-      * 通知：
-成员会看到与其相关的事件，以及用户生成的内容，其中他们是[@mentioned](/help/communities/overview.md#mentionssupport)。
+    * 通知：
+      成员会看到与其相关的事件，以及用户生成的内容，其中他们是[@mentioned](/help/communities/overview.md#mentionssupport)。
 
-      * 消息：成员可以在社区站点中发送或接收消息。
-      * 搜索：可在社区站点内搜索。
-      * 语言切换：能够为[多语言站点](/help/sites-administering/translation.md)选择语言。
+    * 消息：成员可以在社区站点中发送或接收消息。
+    * 搜索：可在社区站点内搜索。
+    * 语言切换：能够为[多语言站点](/help/sites-administering/translation.md)选择语言。
 
-      * 管理：授权成员在社区站点中审核和管理用户的权限。
+    * 管理：授权成员在社区站点中审核和管理用户的权限。
 
 * 无需执行许多页面级创作步骤：
 
-   * 品牌策略：可选择性上传横幅图像以在社区站点的所有页面上显示
-   * 导航菜单：为社区站点模板中包含的功能提供了导航链接。
+  * 品牌策略：可选择性上传横幅图像以在社区站点的所有页面上显示
+  * 导航菜单：为社区站点模板中包含的功能提供了导航链接。
 
 要体验快速创建社区站点的简便性，请访问[AEM Communities快速入门](/help/communities/getting-started.md)。
 
@@ -95,49 +95,49 @@ AEM Communities支持与网站访客建立关系，这些网站访客：
 
 * [Sites &#x200B;](/help/communities/sites-console.md)控制台
 
-   * 站点创建
-   * 站点编辑
-   * 站点管理
-   * [社区组](/help/communities/groups.md)控制台
+  * 站点创建
+  * 站点编辑
+  * 站点管理
+  * [社区组](/help/communities/groups.md)控制台
 
 * [审核](/help/communities/moderation.md)控制台
 
-   * 适用于“创作”和“Publish”环境的通用批量审核UI。
-   * 新建筛选条件。
+  * 适用于创作和发布环境的通用批量审核UI。
+  * 新建筛选条件。
 
 * [成员和组](/help/communities/members.md)管理控制台
 
-   * 允许您从创作环境创建和管理发布端用户（成员）。
-   * 允许您禁止成员。
-   * 允许您从创作环境创建和管理发布端用户组（成员组）。
+  * 允许您从创作环境创建和管理发布端用户（成员）。
+  * 允许您禁止成员。
+  * 允许您从创作环境创建和管理发布端用户组（成员组）。
 
 * [报告](/help/communities/reports.md)控制台
 
-   * 允许您生成有关工作、帖子及视图的报告。
+  * 允许您生成有关工作、帖子及视图的报告。
 
 全局工具控制台提供对以下Communities工具的访问：
 
 * [站点模板](/help/communities/tools.md#sitetemplatesconsole)控制台
 
-   * 创建和管理社区站点模板。
+  * 创建和管理社区站点模板。
 
 * [组模板](/help/communities/tools.md#grouptemplatesconsole)控制台
 
-   * 创建和管理社区组模板。
+  * 创建和管理社区组模板。
 
 * [社区功能](/help/communities/tools.md#communityfunctionsconsole)控制台
 
-   * 创建和管理社区功能。
+  * 创建和管理社区功能。
 
 * [存储配置](/help/communities/tools.md#storageconfiguratonconsole)控制台
 
-   * 选择并配置站点的[公用存储](/help/communities/working-with-srp.md)。
+  * 选择并配置站点的[公用存储](/help/communities/working-with-srp.md)。
 
 * [组件指南](/help/communities/components-guide.md)
 
-   * 示例站点[社区组件](https://localhost:4502/editor.html/content/community-components/en.html)提供了所有Communities组件的示例及其默认配置和试验这些组件的能力。
+  * 示例站点[社区组件](https://localhost:4502/editor.html/content/community-components/en.html)提供了所有Communities组件的示例及其默认配置和试验这些组件的能力。
 
-## 社区站点模板 {#community-site-templates}
+## 社区网站模板 {#community-site-templates}
 
 社区站点创建基于选择的社区站点模板，可快速设置独立于任何示例站点的社区站点。
 
@@ -199,7 +199,7 @@ AEM Communities支持与网站访客建立关系，这些网站访客：
 
 ## AEM演示计算机 {#aem-demo-machine}
 
-[AEM演示计算机](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine)管理和运行AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites)、[Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets)、[Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities)、[Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps)和[Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)的演示，这些演示通常需要比启动QuickStart实例更多的设置。 AEM Demo Machine设置其他[基础架构](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure)，如MongoDB、Solr、MySQL、FFmpeg和电子邮件服务器。
+[AEM演示计算机](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine)为AEM [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites)、[Assets](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets)、[Communities](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities)、[Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps)和[Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)管理和运行演示，通常需要比启动QuickStart实例更多的设置。 AEM Demo Machine设置了额外的[基础架构](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure)，如MongoDB、Solr、MySQL、FFmpeg和电子邮件服务器。
 
 AEM演示计算机包括：
 
@@ -208,7 +208,7 @@ AEM演示计算机包括：
 
 * 要安装的包。
 
-已在Windows、macOS和Linux®上成功使用CQ 5.5、CQ 5.6.1、AEM 6.0、AEM 6.1、AEM 6.2、AEM 6.3和AEM 6.4测试AEM演示计算机。
+在Windows、macOS和Linux®上成功测试了AEM Demo Machine与CQ 5.5、CQ 5.6.1、AEM 6.0、AEM 6.1、AEM 6.2、AEM 6.3和AEM 6.4的配合使用。
 
 AEM演示计算机需要有效的AEM许可证。
 
