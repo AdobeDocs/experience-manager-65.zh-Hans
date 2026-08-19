@@ -6,10 +6,10 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
+source-git-commit: 4a2915dc890887ad8c7174d3ef5f1de8413fd8f4
 workflow-type: tm+mt
-source-wordcount: '7373'
-ht-degree: 20%
+source-wordcount: '7412'
+ht-degree: 21%
 
 ---
 
@@ -55,9 +55,9 @@ Experience Manager 6.5.25.0包括新增功能、客户请求的关键增强功�
 * JEE事务日志中的[表单级别详细信息](/help/forms/using/transaction-report-overview-jee.md#form-level-details-transaction-log-jee)：除了现有的服务和操作信息外，JEE上的AEM Forms现在还在`transaction_log.log`中记录每个事务的表单级别详细信息。 在分析提交、演绎版和转化时，管理员可以将交易报告数据与特定表单关联。 (FORMS-21574)
 
 * [更新了支持的平台矩阵](/help/forms/using/aem-forms-jee-supported-platforms.md)： JEE Service Pack上的AEM Forms 6.5.25.0添加了对与以下新技术的兼容性的支持：
-   * JBoss® Enterprise Application Platform (EAP) 7.4.23
-   * IBM® Content Manager 客户端 8.7
-   * ® Windows Terminal Server 2025上的AEM Forms Designer
+  * JBoss® Enterprise Application Platform (EAP) 7.4.23
+  * IBM® Content Manager 客户端 8.7
+  * ® Windows Terminal Server 2025上的AEM Forms Designer
 
   >[!NOTE]
   >
@@ -509,7 +509,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -537,13 +537,13 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
   要解决此异常，请执行以下操作：
 
-   1. 从 `crx-quickstart/repository/` 中删除以下两个文件夹
+  1. 从 `crx-quickstart/repository/` 中删除以下两个文件夹
 
-      * `cache`
-      * `diff-cache`
+     * `cache`
+     * `diff-cache`
 
-   1. 安装Service Pack，或重新启动Experience Manager as a Cloud Service。
-`cache`和`diff-cache`的新文件夹是自动创建的，您在`error.log`中不再遇到与`mvstore`相关的异常。
+  1. 安装服务包，或重新启动 Experience Manager as a Cloud Service。
+     新的 `cache` 和 `diff-cache` 文件夹会自动创建，并且不会再在 `error.log` 中遇到与 `mvstore` 相关的异常。
 
 * 请将可能使用了自定义 API 名称的 GraphQL 查询更新为使用内容模型的默认名称。
 
@@ -551,24 +551,24 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
   要解决该问题，必须在 `/indexRules/dam:Asset/properties` 下配置 `damAssetLucene`，以添加以下两个属性：
 
-   * `contentFragment`
-      * `jcr:primaryType="nt:unstructured"`
-      * `name="jcr:content/contentFragment"`
-      * `propertyIndex="{Boolean}true"`
-      * `type="Boolean"`
-   * `model`
-      * `jcr:primaryType="nt:unstructured"`
-      * `name="jcr:content/data/cq:model"`
-      * `ordered="{Boolean}true"`
-      * `propertyIndex="{Boolean}true"`
-      * `type="String"`
+  * `contentFragment`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/contentFragment"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="Boolean"`
+  * `model`
+    * `jcr:primaryType="nt:unstructured"`
+    * `name="jcr:content/data/cq:model"`
+    * `ordered="{Boolean}true"`
+    * `propertyIndex="{Boolean}true"`
+    * `type="String"`
 
   在修改索引定义后，需要重新索引（`reindex` = `true`）。
 
   完成以上步骤后，GraphQL 查询的性能应会提升。
 
-* 尝试移动、删除或发布内容片段、站点或页面时，在获取内容片段引用时出现问题。后台查询失败；功能无法正常工作。
-为确保操作正确，必须将以下属性添加到索引定义节点`/oak:index/damAssetLucene`（不需要重新索引）：
+* 在尝试移动、删除或发布内容片段、网站或页面时，获取内容片段引用时会出现问题。 后台查询失败；功能无法正常工作。
+为确保该功能正常运行，必须将以下属性添加到索引定义节点 `/oak:index/damAssetLucene`（无需重新索引）：
 
   ```xml
   "tags": [
@@ -582,12 +582,12 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 * 用户可以在 [!DNL Assets] 的层级中重命名文件夹，并将嵌套文件夹发布到 [!DNL Brand Portal]。 但是，在 [!DNL Brand Portal] 中，文件夹标题不会更新，直到重新发布根文件夹。
 
 * 在安装 [!DNL Experience Manager] 6.5.x.x 期间，可能会显示以下错误和警告消息：
-   * 当在 [!DNL Experience Manager] 中使用 Target Standard API（IMS 身份验证）配置 Adobe Target 集成时，将体验片段导出到 Target 会导致创建错误的产品建议类型。 在 Target 中，系统不会创建类型为“Experience Fragment”/来源为“Adobe Experience Manager”的产品建议，而是会创建多个类型为“HTML”/来源为“Adobe Target Classic”的产品建议。
-   * `com.adobe.granite.maintenance.impl.TaskScheduler`：未在 `granite/operations/maintenance` 找到维护窗口。
-   * 当在自适应表单中使用 SUM、MAX 和 MIN 等聚合函数时，服务器端验证失败（CQ-4274424）。
-   * `com.adobe.granite.maintenance.impl.TaskScheduler`：未在 `granite/operations/maintenance` 找到维护窗口。
-   * 通过 Shoppable Banner 查看器预览资产时，Dynamic Media 交互式图像中的热点不可见。
-   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`：等待完成取消注册的注册变更时超时。
+  * 当在 [!DNL Experience Manager] 中使用 Target Standard API（IMS 身份验证）配置 Adobe Target 集成时，将体验片段导出到 Target 会导致创建错误的产品建议类型。 在 Target 中，系统不会创建类型为“Experience Fragment”/来源为“Adobe Experience Manager”的产品建议，而是会创建多个类型为“HTML”/来源为“Adobe Target Classic”的产品建议。
+  * `com.adobe.granite.maintenance.impl.TaskScheduler`：未在 `granite/operations/maintenance` 找到维护窗口。
+  * 当在自适应表单中使用 SUM、MAX 和 MIN 等聚合函数时，服务器端验证失败（CQ-4274424）。
+  * `com.adobe.granite.maintenance.impl.TaskScheduler`：未在 `granite/operations/maintenance` 找到维护窗口。
+  * 通过 Shoppable Banner 查看器预览资产时，Dynamic Media 交互式图像中的热点不可见。
+  * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`：等待完成取消注册的注册变更时超时。
 
 * 从 AEM 6.5.15 开始，由 `org.apache.servicemix.bundles.rhino` 捆绑包提供的 Rhino JavaScript 引擎引入了新的提升行为。 使用严格模式（`use strict;`）的脚本必须声明正确的变量。 否则脚本将无法运行，并会抛出运行时错误。
 
@@ -606,16 +606,15 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 以下问题已提供可下载并安装的热修复补丁： 您可以通过[下载并安装热修复补丁](/help/release-notes/aem-forms-hotfix.md)来解决这些问题：
 
 * **NPR-44100**&#x200B;在WAR/JEE部署（包括JEE上的AEM Forms）上安装AEM 6.5 Service Pack 25后，`com.adobe.cq.screens.sessions`捆绑包将保留为“已安装”状态并且永远不会变为活动状态。 要解决此问题，请[下载并安装AEM Service Pack 6.5.25.0的修补程序](/help/release-notes/aem-forms-hotfix.md)。
+* **FORMS-23491** AEM Forms 6.5.24.0 JEE部署(JBoss、WebLogic、WebSphere)受CVE-2025-64775的影响，该漏洞在多部分请求处理中存在Apache Struts拒绝服务漏洞。 要解决此问题，请[下载并安装AEM Service Pack 6.5.24.0的修补程序](/help/release-notes/aem-forms-hotfix.md)。
 * **FORMS-14926**&#x200B;安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`<AEM_Forms_Installation>/lib/caching/lib`文件夹下找到Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`的重复条目，请执行以下步骤，以解决该问题：
 
-   1. 如果定位器正在运行，请先停止定位器。
-   2. 停止 AEM 服务器。
-   3. 进入 `<AEM_Forms_Installation>/lib/caching/lib`。
-   4. 移除所有 Geode 补丁文件，仅保留 `geode-*-1.15.1.2.jar`。 确认仅存在 `version 1.15.1.2` 的 Geode jar。
-   5. 以管理员模式打开命令提示符。
-   6. 使用 `geode-*-1.15.1.2.jar` 文件安装 Geode 补丁。
-
-   * AEM Forms 现已将表单组件中的 Struts 版本从 2.5.33 升级至 6.x。 此升级提供了以前未包含在SP24中的Struts更改。 相关支持已通过[热修复补丁](/help/release-notes/aem-forms-hotfix.md)提供，您可以下载并安装该热修复补丁，以支持 Struts 的最新版本。
+  1. 如果定位器正在运行，请先停止定位器。
+  2. 停止 AEM 服务器。
+  3. 进入 `<AEM_Forms_Installation>/lib/caching/lib`。
+  4. 移除所有 Geode 补丁文件，仅保留 `geode-*-1.15.1.2.jar`。 确认仅存在 `version 1.15.1.2` 的 Geode jar。
+  5. 以管理员模式打开命令提示符。
+  6. 使用 `geode-*-1.15.1.2.jar` 文件安装 Geode 补丁。
 
 ## 已包含的 OSGi 捆绑包和内容包{#osgi-bundles-and-content-packages-included}
 
@@ -631,11 +630,11 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 这些网站仅对客户开放。 如果您已是客户并需要访问权限，请联系您的 Adobe 客户经理。
 
 * [从 licensing.adobe.com 下载产品](https://licensing.adobe.com/)
-* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
+* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
 
