@@ -92,7 +92,7 @@ AEM Forms将显示表单的Analytics报表以及表单中每个面板的Analytic
 * **草稿**：将表单另存为草稿的次数
 * **提交内容**：提交表单的次数
 * **中止**：用户开始填写表单后离开而未填写表单的次数
-* **独特访客**：独特访客呈现表单的次数。 有关独特访客的详细信息，请参阅[独特访客、访问和客户行为](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)。
+* **独特访客**：独特访客呈现表单的次数。 有关独特访客的详细信息，请参阅[独特访客、访问和客户行为](https://helpx.adobe.com/cn/analytics/kb/unique-visitors-visitor-behavior.html)。
 
 ![扩展的表单级摘要分析报告](assets/analytics-report.png)
 
