@@ -11,45 +11,45 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '556'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
 
-# 最佳实践 {#best-practices}
+# 最佳做法 {#best-practices}
 
 {{ue-over-mobile}}
 
 构建AEM Mobile On-demand Services应用程序与构建直接在Cordova（或PhoneGap）外壳中运行的应用程序不同。 开发人员应该熟悉：
 
-* 现成支持的插件和特定于Adobe Experience Manager (AEM) Mobile的插件。
+* 开箱即用的支持插件和特定于Adobe Experience Manager (AEM) Mobile的插件。
 
 >[!NOTE]
 >
 >要深入了解插件，请参阅以下资源：
 >
->* [在AEM Mobile中使用Cordova插件](https://helpx.adobe.com/cn/digital-publishing-solution/help/cordova-api.html)
->* [使用特定于AEM Mobile且启用了Cordova的插件](https://helpx.adobe.com/cn/digital-publishing-solution/help/app-runtime-api.html)
+>* [在AEM Mobile中使用Cordova插件](https://helpx.adobe.com/digital-publishing-solution/help/cordova-api.html)
+>* [使用特定于AEM Mobile且启用了Cordova的插件](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
 * 使用插件功能的模板应以这样的方式编写，即仍然可以在浏览器中创作这些模板，而无需使用插件桥。
 
-   * 例如，在尝试访问插件的API之前，请确保等待&#x200B;*deviceready*&#x200B;函数。
+  * 例如，在尝试访问插件的API之前，请确保等待&#x200B;*deviceready*&#x200B;函数。
 
 ## AEM开发人员指南 {#guidelines-for-aem-developers}
 
 以下准则可帮助符合条件的AEM开发人员创建要构建移动应用程序模板和组件的网站：
 
-**构建AEM站点模板以鼓励重复使用和扩展**
+**构建AEM站点模板以鼓励重用和扩展**
 
 * 与单个整体脚本文件相比，更喜欢多个组件脚本文件
 
-   * 提供了多个空扩展点，如&#x200B;*customheaderlibs.html*&#x200B;和&#x200B;*customfooterlibs.html*，它们允许开发人员更改页面模板，同时尽可能少地复制核心代码
-   * 随后，可通过Sling的&#x200B;*sling：resourceSuperType*&#x200B;机制扩展和自定义模板
+  * 提供了多个空扩展点，如&#x200B;*customheaderlibs.html*&#x200B;和&#x200B;*customfooterlibs.html*，它们允许开发人员更改页面模板，同时尽可能少地复制核心代码
+  * 随后，可通过Sling的&#x200B;*sling:resourceSuperType*&#x200B;机制扩展和自定义模板
 
 * 与将JSP作为模板语言相比，首选Sightly/HTL
 
-   * 使用此选项鼓励将代码与标记分离，提供内置的XSS保护，并具有更熟悉的语法
+  * 使用此选项鼓励将代码与标记分离，提供内置的XSS保护，并具有更熟悉的语法
 
 **优化设备上性能**
 

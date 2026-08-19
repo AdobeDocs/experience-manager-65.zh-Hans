@@ -1,5 +1,5 @@
 ---
-title: 实施Analytics的服务器端页面命名
+title: 为 Analytics 实施服务器端页面命名
 description: Adobe Analytics使用s.pageName属性来唯一标识页面，并关联为页面收集的数据
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,24 +11,24 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 0%
+source-wordcount: '866'
+ht-degree: 1%
 
 ---
 
-# 实施Analytics的服务器端页面命名{#implementing-server-side-page-naming-for-analytics}
+# 为 Analytics 实施服务器端页面命名{#implementing-server-side-page-naming-for-analytics}
 
-Adobe Analytics使用`s.pageName`属性唯一标识页面，并关联为页面收集的数据。 通常，您需要在AEM中执行以下任务，为AEM发送到Analytics的此属性分配值：
+Adobe Analytics使用`s.pageName`属性唯一标识页面，并关联为页面收集的数据。 通常，您需要在AEM中执行以下任务，以便为AEM发送到Analytics的此属性分配值：
 
-* 使用Analytics云服务框架将CQ变量映射到Analytics `s.pageName`属性。 (请参阅[将组件数据映射到Adobe Analytics属性](/help/sites-administering/adobeanalytics-mapping.md)。)
+* 使用Analytics云服务框架将CQ变量映射到Analytics `s.pageName`属性。 （请参阅[将组件数据映射到Adobe Analytics属性](/help/sites-administering/adobeanalytics-mapping.md)。）
 
-* 设计页面组件，使其包含您映射到`s.pageName`属性的CQ变量。 (请参阅[为自定义组件实施Adobe Analytics跟踪](/help/sites-developing/extending-analytics-components.md)。)
+* 设计页面组件，使其包含您映射到`s.pageName`属性的CQ变量。 （请参阅[为自定义组件实施Adobe Analytics跟踪](/help/sites-developing/extending-analytics-components.md)。）
 
-要在站点控制台和内容分析中显示Analytics报表数据，AEM要求每个页面具有`s.pageName`属性值。 AEM Analytics Java API定义您实施的`AnalyticsPageNameProvider`接口，该接口为站点控制台和内容分析提供`s.pageName`属性的值。 您的`AnaltyicsPageNameProvider`服务解析了服务器上的pageName属性以用于生成报表，因为可以在客户端上使用JavaScript动态设置该属性以用于跟踪。
+要在站点控制台和内容Insight中公开Analytics报表数据，AEM要求每个页面具有`s.pageName`属性值。 AEM Analytics Java API定义您实施的`AnalyticsPageNameProvider`接口，以便为站点控制台和内容分析提供`s.pageName`属性的值。 您的`AnaltyicsPageNameProvider`服务解析了服务器上的pageName属性以用于生成报表，因为可以在客户端上使用JavaScript动态设置该属性以用于跟踪。
 
 ## 默认的Analytics页面名称提供程序服务 {#the-default-analytics-page-name-provider-service}
 
-`DefaultPageNameProvider`服务是默认服务，用于确定用于检索页面的Analytics数据的`s.pageName`属性的值。 该服务可与AEM Foundation页面组件( `/libs/foundation/components/page`)配合使用。 此页面组件定义以下旨在映射到`s.pageName`属性的CQ变量：
+`DefaultPageNameProvider`服务是默认服务，用于确定用于检索页面的Analytics数据的`s.pageName`属性的值。 该服务可与AEM Foundation Page组件( `/libs/foundation/components/page`)配合使用。 此页面组件定义以下旨在映射到`s.pageName`属性的CQ变量：
 
 * `pagedata.path`：该值设置为页面路径。
 * `pagedata.title`：该值设置为页面标题。
@@ -42,7 +42,7 @@ Adobe Analytics使用`s.pageName`属性唯一标识页面，并关联为页面�
 
 * `pagedata.navTitle`：服务使用`page.getNavigationTitle()`
 
-`page`对象是页面的[`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/cn/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java对象。
+`page`对象是页面的[`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java对象。
 
 如果不将CQ变量映射到框架中的`s.pageName`属性，则从页面路径生成`s.pageName`的值。 例如，路径为`/content/geometrixx/en`的页面使用`s.pageName`的值`content:geometrixx:en`。
 
@@ -75,7 +75,7 @@ Adobe Analytics使用`s.pageName`属性唯一标识页面，并关联为页面�
 
 ### 实施Analytics页面名称提供程序服务 {#implementing-an-analytics-page-name-provider-service}
 
-将`com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider`接口实施为OSGi服务以自定义检索`s.pageName`属性值的逻辑。 “站点”页面分析和内容分析使用此服务从Analytics中检索报表数据。
+将`com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider`接口实施为OSGi服务以自定义检索`s.pageName`属性值的逻辑。 Sites页面分析和内容Insight使用该服务从Analytics中检索报表数据。
 
 AnalyticsPageNameProvider接口定义了必须实施的两种方法：
 

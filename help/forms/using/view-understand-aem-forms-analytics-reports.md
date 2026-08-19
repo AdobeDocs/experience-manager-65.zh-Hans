@@ -1,5 +1,5 @@
 ---
-title: 查看和了解AEM Forms analytics报表
+title: 查看并理解 AEM Forms 分析报告
 description: AEM Forms与Adobe Analytics集成，并为您提供有关已发布自适应表单的摘要和详细分析。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,14 +11,14 @@ role: Admin, User, Developer
 feature: Adaptive Forms
 source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
 workflow-type: tm+mt
-source-wordcount: '1056'
-ht-degree: 0%
+source-wordcount: '1082'
+ht-degree: 3%
 
 ---
 
-# 查看和了解AEM Forms analytics报表 {#view-and-understand-aem-forms-analytics-reports}
+# 查看并理解 AEM Forms 分析报告 {#view-and-understand-aem-forms-analytics-reports}
 
-Adobe Experience Manager Forms与Adobe Analytics集成，允许您捕获和跟踪已发布表单和文档的性能指标。 分析这些量度背后的目的是，根据有关提高表单或文档可用性的更改数据做出明智的决策。
+Adobe Experience Manager Forms与Adobe Analytics集成，允许您捕获和跟踪已发布表单和文档的性能指标。 分析这些指标的目的在于，根据有关使表单或文档更有用所需的更改的数据做出明智的决策。
 
 ## 设置analytics {#setting-up-analytics}
 
@@ -63,7 +63,7 @@ AEM Forms将显示表单的Analytics报表以及表单中每个面板的Analytic
 
 ![自适应表单的摘要报告](assets/analyticsdashboard_callout.png)
 
-**A.**&#x200B;转化&#x200B;**B.**&#x200B;表单级摘要&#x200B;**C.**&#x200B;面板级摘要&#x200B;**D.**&#x200B;访客浏览器 — 筛选器&#x200B;**E.**&#x200B;访客操作系统 — 筛选器&#x200B;**F.**&#x200B;访客语言 — 筛选器
+**A.**&#x200B;转化&#x200B;**B.**&#x200B;表单级摘要&#x200B;**C.**&#x200B;面板级摘要&#x200B;**D.**&#x200B;访客浏览器 — 筛选器&#x200B;**E.** 访客操作系统 — 筛选器&#x200B;**F.**&#x200B;访客语言 — 筛选器
 
 默认情况下，将显示过去七天的分析报表。 您可以查看过去15天、上个月等的报表，或指定日期范围。
 
@@ -75,7 +75,7 @@ AEM Forms将显示表单的Analytics报表以及表单中每个面板的Analytic
 
 ### 自适应表单和HTML5表单的转化图 {#conversions-graph-for-adaptive-and-html-forms}
 
-表单级转化图表让您深入了解表单在下列关键绩效指标(KPI)上的执行情况：
+表单级转化图为您提供了一个insight，用于了解表单对以下关键绩效指标(KPI)的执行情况：
 
 * **呈现版本**：表单被打开的次数
 * **访客数**：表单的访客数
@@ -83,16 +83,16 @@ AEM Forms将显示表单的Analytics报表以及表单中每个面板的Analytic
 
 ![转化图](assets/conversion-graph.png)
 
-### 自适应表单和HTML5表单的Analytics报表 {#analytics-report-for-adaptive-and-html-forms}
+### 自适应和HTML5表单的Analytics报表 {#analytics-report-for-adaptive-and-html-forms}
 
-表单级别摘要部分使您可以深入分析表单对以下关键绩效指标(KPI)的执行情况：
+表单级别摘要部分为您提供了一个insight，用于了解表单对以下关键绩效指标(KPI)的执行情况：
 
 * **平均填写时间**：填写表单所花费的平均时间。 当用户在表单上花费时间但未提交时，该时间不计入此计算中。
 * **呈现版本**：呈现或打开表单的次数
 * **草稿**：将表单另存为草稿的次数
 * **提交内容**：提交表单的次数
 * **中止**：用户开始填写表单后离开而未填写表单的次数
-* **独特访客**：独特访客呈现表单的次数。 有关独特访客的详细信息，请参阅[独特访客、访问和客户行为](https://helpx.adobe.com/cn/analytics/kb/unique-visitors-visitor-behavior.html)。
+* **独特访客**：独特访客呈现表单的次数。 有关独特访客的详细信息，请参阅[独特访客、访问和客户行为](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html)。
 
 ![扩展的表单级摘要分析报告](assets/analytics-report.png)
 
@@ -126,7 +126,7 @@ AEM Forms将显示表单的Analytics报表以及表单中每个面板的Analytic
 
 要进一步筛选分析数据，可以单击任何表中的条目。 例如，如果单击“浏览器分发”表中的Google Chrome，则将使用与Google Chrome浏览器相关的数据重新渲染报表，如下所示：
 
-![筛选器已应用于Analytics报表 — Google Chrome &#x200B;](assets/filter-1.png)
+![筛选器已应用于Analytics报表 — Google Chrome ](assets/filter-1.png)
 
 如果在应用过滤器后查看面板报表，则也会根据应用的过滤器显示面板报表数据。
 
@@ -138,7 +138,7 @@ AEM Forms将显示表单的Analytics报表以及表单中每个面板的Analytic
 
 ![关闭按钮以移除应用的筛选器](assets/close-filter.png)
 
-### A/B测试 {#a-b-testing}
+### A/B 测试 {#a-b-testing}
 
 如果您已启用并设置了表单的A/B测试，则报表页面中会有一个下拉菜单，可用来显示A/B测试报表。 A/B测试报告显示您已设置的表单两个版本的比较性能。
 
