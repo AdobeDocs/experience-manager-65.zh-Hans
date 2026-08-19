@@ -126,7 +126,7 @@ AEM Forms将显示表单的Analytics报表以及表单中每个面板的Analytic
 
 要进一步筛选分析数据，可以单击任何表中的条目。 例如，如果单击“浏览器分发”表中的Google Chrome，则将使用与Google Chrome浏览器相关的数据重新渲染报表，如下所示：
 
-![筛选器已应用于Analytics报表 — Google Chrome ](assets/filter-1.png)
+![筛选器已应用于Analytics报表 — Google Chrome &#x200B;](assets/filter-1.png)
 
 如果在应用过滤器后查看面板报表，则也会根据应用的过滤器显示面板报表数据。
 
