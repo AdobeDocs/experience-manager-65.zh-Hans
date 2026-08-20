@@ -1,5 +1,5 @@
 ---
-title: 为登陆页面扩展和配置设计导入程序
+title: 扩展与配置登陆页面的设计导入器
 description: 了解如何为登陆页面配置设计导入程序。
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,12 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '3442'
-ht-degree: 0%
+source-wordcount: '3524'
+ht-degree: 1%
 
 ---
 
-# 为登陆页面扩展和配置设计导入程序{#extending-and-configuring-the-design-importer-for-landing-pages}
+# 扩展与配置登陆页面的设计导入器{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 本节介绍如何配置，并根据需要扩展登陆页面的设计导入程序。 导入后使用登陆页面包含在[登陆页面中。](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
 
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 1. 创建TagHandler
 
-   * 标记处理程序是一个POJO，用于处理特定类型的HTML标记。 您的TagHandler可以处理的HTML标签的“种类”是通过TagHandlerFactory的OSGi属性“tagpattern.name”定义的。 此OSGi属性本质上是一个正则表达式，它应该匹配您要处理的输入html标记。 所有嵌套的标记将被抛到标记处理程序中以供处理。 例如，如果注册包含嵌套&lt;p>标记的div，&lt;p>标记也会被抛到TagHandler中，具体取决于您要如何进行处理。
+   * 标记处理程序是一个POJO，用于处理特定类型的HTML标记。 您的TagHandler可以处理的HTML标记的“种类”是通过TagHandlerFactory的OSGi属性“tagpattern.name”定义的。 此OSGi属性本质上是一个正则表达式，它应该匹配您要处理的输入html标记。 所有嵌套的标记将被抛到标记处理程序中以供处理。 例如，如果注册包含嵌套&lt;p>标记的div，&lt;p>标记也会被抛到TagHandler中，具体取决于您要如何进行处理。
    * 标记处理程序界面类似于SAX内容处理程序界面。 它会接收每个html标记的SAX事件。 作为标记处理程序提供程序，您需要实施某些生命周期方法，这些方法由设计导入程序框架自动调用。
 
 1. 创建其对应的TagHandlerFactory。
@@ -47,7 +47,7 @@ ht-degree: 0%
 
 创建导入程序页面后，您可以导入完整的HTML登录页面。 要导入HTML登陆页面，您需要先将其内容压缩到设计包中。 设计包包含您的HTML登陆页面以及引用的资产（图像、css、图标、脚本等）。
 
-下面的备忘单提供了一个示例，介绍如何准备HTML以进行导入：
+以下备忘单提供了一个示例，介绍如何准备HTML以进行导入：
 
 登陆页备忘单
 
@@ -72,13 +72,13 @@ zip文件布局示例如下：
 >
 >设计包&#x200B;**必须**&#x200B;至少包含根级别的&#x200B;**index.html**&#x200B;文件。 如果要导入的登陆页面也具有移动设备版本，则zip文件必须在根级别包含&#x200B;**mobile.index.html**&#x200B;以及&#x200B;**index.html**。
 
-### 准备登录页面HTML {#preparing-the-landing-page-html}
+### 准备登陆页面HTML {#preparing-the-landing-page-html}
 
-为了能够导入HTML，您需要向登陆页面HTML添加画布div。
+为了能够导入HTML，您需要将画布div添加到登陆页面HTML。
 
-画布div是带有`id="cqcanvas"`的html **div**，必须插入到HTML`<body>`标记中，并且必须包含要进行转换的内容。
+画布div是带有`id="cqcanvas"`的html **div**，必须插入到HTML `<body>`标记中，并且必须包含要进行转换的内容。
 
-添加画布div后登陆页面HTML的示例片段如下所示：
+添加画布div后，登陆页面HTML的示例代码片段如下所示：
 
 ```xml
 <!doctype html>
@@ -98,23 +98,23 @@ zip文件布局示例如下：
 
 ### 准备HTML以包含可编辑的AEM组件 {#preparing-the-html-to-include-editable-aem-components}
 
-导入登陆页面时，您可以选择按原样导入页面，这意味着在导入登陆页面后，您无法在AEM中编辑任何导入的项目(您仍然可以在页面上添加其他AEM组件)。
+导入登陆页面时，您可以选择按原样导入页面，这意味着在导入登陆页面后，您无法在AEM中编辑任何导入的项目（您仍然可以在页面上添加其他AEM组件）。
 
 在导入登陆页面之前，您可能需要转换登陆页面的某些部分，以便它们是可编辑的AEM组件。 这样，即使用户在导入了登陆页面设计之后，也可以快速编辑登陆页面的各个部分。
 
 要执行此操作，您需要将`data-cq-component`添加到所导入HTML文件中的相应组件。
 
-以下部分将介绍如何编辑HTML文件，以便将登陆页面的某些部分转换为其他可编辑的AEM组件。 在[登陆页面组件](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)中详细描述了组件。
+以下部分将介绍如何编辑HTML文件，以便将登陆页面的某些部分转换为各种可编辑的AEM组件。 在[登陆页面组件](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)中详细描述了组件。
 
 >[!NOTE]
 >
->用于将部分登录页转换为AEM组件的HTML标记同时具有长格式和简写标签声明。 对每个组件都进行了描述。
+>用于将部分登陆页面转换为AEM组件的HTML标记同时具有长格式和简写标记声明。 对每个组件都进行了描述。
 
 ### 限制 {#limitations}
 
 在导入之前，请注意以下限制：
 
-### 不保留应用于&amp;amp；lt；body>标记的任何属性，如类或id {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
+### 不保留应用于&amp;lt；body>标记的任何属性，如类或id {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
 如果对body标记（例如`<body id="container">`）应用了id或类等任何属性，则在导入后不会保留该属性。 因此，要导入的设计不应与`<body>`标记上应用的属性有任何依赖关系。
 
@@ -134,11 +134,11 @@ Internet Explorer和Firefox 3.6及更早版本不支持拖放zip上传。 要在
 
 ### 假定仅HTML标记 {#html-only-markup-assumed}
 
-导入时，由于安全原因，将清理标记，以避免导入和发布无效的标记。 这假定仅HTML标记以及所有其他形式的元素(例如内联SVG或Web组件)将被过滤掉。
+导入时，由于安全原因，将清理标记，以避免导入和发布无效的标记。 这假定仅HTML标记以及所有其他形式的元素（例如内联SVG或Web组件）将被过滤掉。
 
 ### 文本 {#text}
 
-HTML标记可在设计包内的HTML中插入文本组件(`foundation/components/text`)：
+HTML标记在设计包的HTML中插入文本组件(`foundation/components/text`)：
 
 ```xml
 <div data-cq-component="text"> <p>This is some editable text</p> </div>
@@ -147,7 +147,7 @@ HTML标记可在设计包内的HTML中插入文本组件(`foundation/components/
 在HTML中包含上述标记，会执行以下操作：
 
 * 在导入设计包后创建的登陆页中创建一个可编辑的AEM文本组件(`sling:resourceType=foundation/components/text`)。
-* 将已创建文本组件的`text`属性设置为`div`内包含的HTML。
+* 将所创建文本组件的`text`属性设置为`div`内包含的HTML。
 
 **简写组件标记声明**：
 
@@ -178,7 +178,7 @@ HTML标记可在设计包内的HTML中插入文本组件(`foundation/components/
 
 ### 标题 {#title}
 
-HTML标记，在设计包的HTML中插入标题组件(`wcm/landingpage/components/title`)：
+HTML标记可在设计包的HTML中插入标题组件(`wcm/landingpage/components/title`)：
 
 ```xml
 <div data-cq-component="title"> <h1>This is some editable title text</h1> </div>
@@ -200,7 +200,7 @@ HTML标记，在设计包的HTML中插入标题组件(`wcm/landingpage/component
 
 ### 图像 {#image}
 
-HTML标记，可在设计包内的HTML中插入图像组件(foundation/components/image)：
+HTML标记可在设计包内的HTML中插入图像组件(foundation/components/image)：
 
 ```xml
 <div data-cq-component="image">
@@ -210,7 +210,7 @@ HTML标记，可在设计包内的HTML中插入图像组件(foundation/component
 
 在HTML中包含上述标记，会执行以下操作：
 
-* 在导入设计包后创建的登陆页面中创建可编辑的AEM图像组件(`sling:resourceType=foundation/components/image`)。
+* 在导入设计包后创建的登陆页中创建一个可编辑的AEM图像组件(`sling:resourceType=foundation/components/image`)。
 * 将已创建图像组件的`fileReference`属性设置为导入src属性中指定的图像的路径。
 * 将`alt`属性设置为img标记中alt属性的值。
 * 将`title`属性设置为img标记中title属性的值。
@@ -235,9 +235,9 @@ HTML标记，可在设计包内的HTML中插入图像组件(foundation/component
 
 否则，图像组件div之外的图像标记支持绝对URL图像。
 
-### 行动号召组件 {#call-to-action-components}
+### call-to-action组件 {#call-to-action-components}
 
-您可以将导入的登陆页面部分标记为“可编辑的行动号召组件” — 在导入登陆页面后，可以编辑此类导入的行动号召组件。 AEM包含以下CTA组件：
+您可以将部分登陆页面标记为导入为“可编辑的Call to action组件” — 在导入登陆页面后，可以编辑此类导入的call-to-action组件。 AEM包含以下CTA组件：
 
 * 点进链接 — 允许您添加文本链接，在单击该链接时，会将访客导向到目标URL。
 * 图形链接 — 允许您添加图像，单击该图像可将访客转到目标URL。
@@ -252,7 +252,7 @@ HTML标记，可在设计包内的HTML中插入图像组件(foundation/component
 * 目标URL，支持第三方和AEM URL
 * 页面渲染选项（同一窗口、新窗口等）
 
-HTML标记，用于在导入的zip文件中包含点进组件。 此处href映射到目标URL，“查看产品详细信息”映射到标签，等等。
+HTML标记，以在导入的zip文件中包含点进组件。 此处href映射到目标URL，“查看产品详细信息”映射到标签，等等。
 
 ```xml
 <div id="cqcanvas">
@@ -276,7 +276,7 @@ HTML标记，用于在导入的zip文件中包含点进组件。 此处href映�
 
 #### 图形链接 {#graphical-link}
 
-此CTA组件可用于添加登陆页面上带有链接的任何图形图像。 图像可以是简单的按钮，也可以是作为背景的任何图形图像。 单击图像时，用户将被带入组件属性中指定的目标URL。 它是“行动号召”小组的一部分。
+此CTA组件可用于添加登陆页面上带有链接的任何图形图像。 图像可以是简单的按钮，也可以是作为背景的任何图形图像。 单击图像时，用户将被带入组件属性中指定的目标URL。 它是“Call to action”组的一部分。
 
 支持的属性
 
@@ -316,17 +316,17 @@ HTML标记，以在导入的zip文件中包含图形链接组件。 此处href�
 >具有关联的`css .hasbackground { background-image: pathtoimage }`
 >
 
-### 潜在客户表单 {#lead-form}
+### 销售线索表单 {#lead-form}
 
 商机表单是用于收集访客/商机的配置文件信息的表单。 此信息可以存储并用于以后根据此信息执行有效的营销。 此信息通常包括标题、姓名、电子邮件、出生日期、地址、兴趣等。 它是“CTA潜在客户表单”组的一部分。
 
 **支持的功能**
 
 * 预定义的潜在客户字段 — 名字、姓氏、地址、dob、性别、关于、用户ID、电子邮件ID、提交按钮在Sidekick中可用。 只需将所需的组件拖放到潜在客户表单中。
-* 借助这些组件，作者可以设计独立的潜在客户表单，这些字段对应于潜在客户表单字段。 在独立或导入的zip应用程序中，用户可以使用cq：form或cta潜在客户表单字段添加额外的字段和名称，并根据要求进行设计。
+* 借助这些组件，作者可以设计独立的潜在客户表单，这些字段对应于潜在客户表单字段。 在独立或导入的zip应用程序中，用户可以使用cq:form或cta潜在客户表单字段、名称添加额外的字段，并根据要求进行设计。
 * 使用CTA潜在客户表单的特定预定义名称映射潜在客户表单字段，例如，潜在客户表单中的名字使用firstName等。
-* 未映射到潜在客户表单的字段将映射到cq：form组件 — 文本、单选、复选框、下拉列表、隐藏、密码。
-* 用户可以使用“label”标记提供标题，也可以使用样式属性“class”提供样式(仅适用于CTA潜在客户表单组件)。
+* 未映射到潜在客户表单映射到cq:form组件的字段 — 文本、单选、复选框、下拉列表、隐藏、密码。
+* 用户可以使用“label”标记提供标题，也可以使用样式属性“class”提供样式（仅适用于CTA潜在客户表单组件）。
 * 感谢页面和订阅列表可作为表单的隐藏参数提供（显示在index.htm中），也可以从“潜在客户表单开始”的编辑栏添加/编辑
 
   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
@@ -335,7 +335,7 @@ HTML标记，以在导入的zip文件中包含图形链接组件。 此处href�
 
 * 可以通过编辑每个组件的配置来提供所需的约束，例如 — 。
 
-HTML标记，以在导入的zip文件中包含图形链接组件。 此处“firstName”映射到潜在客户表单firstName，依此类推，但复选框除外 — 这两个复选框映射到cq：form下拉组件。
+HTML标记，以在导入的zip文件中包含图形链接组件。 此处“firstName”映射到潜在客户表单firstName，依此类推，但复选框除外 — 这两个复选框映射到cq:form下拉组件。
 
 ```xml
 <div id="cqcanvas">
@@ -368,11 +368,11 @@ HTML标记，以在导入的zip文件中包含图形链接组件。 此处“fir
 
 ### Parsys {#parsys}
 
-AEM Parsys组件是可以包含其他AEM组件的容器组件。 可以在导入的HTML中添加Parsys组件。 这允许用户向登陆页面添加/删除可编辑的AEM组件，即使是在已导入之后。
+AEM Parsys组件是可以包含其他AEM组件的容器组件。 可以在导入的HTML中添加Parsys组件。 这允许用户向登陆页面添加/删除可编辑的AEM组件，即使该页面已在导入之后。
 
 段落系统使用户能够使用Sidekick添加组件。
 
-在设计包的HTML中插入Parsys组件(`foundation/components/parsys`)的HTML标记：
+HTML标记在设计包的HTML中插入Parsys组件( `foundation/components/parsys`)：
 
 ```xml
 <div data-cq-component="parsys">
@@ -387,7 +387,7 @@ AEM Parsys组件是可以包含其他AEM组件的容器组件。 可以在导入
 * 使用默认组件初始化sidekick。 通过将组件从Sidekick拖到Parsys组件上，可以将新组件添加到登陆页面。
 * 两个标题组件也是Parsys的一部分。
 
-### 目标 {#target}
+### Target {#target}
 
 目标组件显示页面上某个体验的内容。 可以在营销活动中创建许多体验，并且目标组件可以动态地向访问页面的各种用户显示不同体验的内容。
 
@@ -414,16 +414,16 @@ AEM Parsys组件是可以包含其他AEM组件的容器组件。 可以在导入
 除了指定导入的组件是否为可编辑的AEM组件之外，您还可以在导入设计包之前配置以下内容：
 
 * 通过提取在导入的HTML中定义的元数据来设置页面属性。
-* 指定HTML中的charset编码。
+* 在HTML中指定字符集编码。
 * 覆盖导入程序页面模板。
 
 ### 通过提取导入的HTML中定义的元数据来设置页面属性 {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
-设计导入程序应提取并保留在导入HTML的头中声明的以下元数据，作为属性“jcr：description”：
+设计导入程序应提取并保留在导入HTML的头中声明的以下元数据，作为属性“jcr:description”：
 
 * &lt;meta name=&quot;description&quot; content=&quot;>
 
-设计导入程序应提取并保留HTML标记中设置的Lang属性作为属性“jcr：language”
+设计导入程序应提取并保留HTML标记中设置的Lang属性作为属性“jcr:language”
 
 * &lt;html lang=&quot;en&quot;>
 
@@ -443,17 +443,17 @@ AEM Parsys组件是可以包含其他AEM组件的容器组件。 可以在导入
 
 通过在以下位置创建一个空白登陆页面模板，可以对该模板进行叠加： `/apps/<appName>/designimporter/templates/<templateName>`
 
-在[模板](/help/sites-developing/templates.md)下说明了在AEM中创建模板的步骤。
+在AEM中创建模板的步骤在[模板](/help/sites-developing/templates.md)下进行了说明。
 
 ### 从登陆页面引用组件 {#referring-a-component-from-landing-page}
 
-假设您有一个组件，且您要使用data-cq-component属性在HTML中引用该组件，这样设计导入器就会在此处呈现一个组件include 。 例如，您要引用表组件(`resourceType = /libs/foundation/components/table`)。 需要在HTML中添加以下内容：
+假设您有一个组件，并且要在HTML中使用data-cq-component属性引用该组件，那么设计导入器会在此处呈现一个组件include 。 例如，您要引用表组件(`resourceType = /libs/foundation/components/table`)。 需要在HTML中添加以下内容：
 
 `<div data-cq-component="/libs/foundation/components/table">foundation table</div>`
 
 data-cq-component中的路径应为组件的resourceType。
 
-### 最佳实践 {#best-practices}
+### 最佳做法 {#best-practices}
 
 对于在导入时标记为组件转换的元素，不建议使用类似于以下内容的CSS选择器。
 
@@ -461,16 +461,16 @@ data-cq-component中的路径应为组件的resourceType。
 |---|---|---|
 | E + F | F元素前面紧跟一个E元素 | [相邻的同级组合器](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | F元素，前面有E元素 | [常规同级组合器](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
-| E：root | E元素，文档的根 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E：nth-child(n) | E元素，其父元素的第n个子元素 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E：nth-last-child(n) | E元素，其父项的第n个子项，从最后一个元素开始计数 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E：nth-of-type(n) | E元素，其类型的第n个同级 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
-| E：nth-last-of-type(n) | E元素（其类型的第n个同级），从最后一个元素开始计数 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:root | E元素，文档的根 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-child(n) | E元素，其父元素的第n个子元素 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-child(n) | E元素，其父项的第n个子项，从最后一个元素开始计数 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-of-type(n) | E元素，其类型的第n个同级 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
+| E:nth-last-of-type(n) | E元素（其类型的第n个同级），从最后一个元素开始计数 | [构造伪类](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
 这是因为其他html元素（如&lt;div>标记）在导入后会添加到生成的Html。
 
-* 此外，对于标记为转换为AEM组件的元素，也不建议使用依赖上述结构的脚本。
-* 不建议在标记标记上使用样式进行组件转换，如&lt;div data-cq-component=&quot;&amp;amp；ast；&quot;>。
+* 此外，不建议将依赖于上述结构的脚本与标记为转换为AEM组件的元素一起使用。
+* 不建议在标记标记上使用样式进行组件转换，如&lt;div data-cq-component=&quot;&amp;ast；&quot;>。
 * 设计布局应遵循HTML5样板中的最佳实践。 阅读更多内容：[https://html5boilerplate.com/](https://html5boilerplate.com/)。
 
 ## 配置OSGI模块 {#configuring-osgi-modules}
@@ -494,7 +494,7 @@ data-cq-component中的路径应为组件的resourceType。
   <tr>
    <td>登陆页面设计导入程序</td>
    <td>提取筛选器</td>
-   <td>用于从提取中筛选文件的正则表达式的列表。 从提取中排除与任何指定模式匹配的<br />个Zip条目</td>
+   <td>用于从提取中筛选文件的正则表达式的列表。<br /> 与任何指定模式匹配的压缩条目将从提取中排除</td>
   </tr>
   <tr>
    <td>登陆页面生成器</td>
@@ -514,7 +514,7 @@ data-cq-component中的路径应为组件的resourceType。
   <tr>
    <td>登陆页面条目预处理程序</td>
    <td>搜索模式 </td>
-   <td>存档条目内容中要搜索的模式。 此正则表达式与条目内容逐行匹配。 匹配后，匹配的文本将替换为指定的替换模式。<br /> <br />请参阅下面有关登陆页面条目预处理程序的当前限制的注释。</td>
+   <td>存档条目内容中要搜索的模式。 此正则表达式与条目内容逐行匹配。 匹配后，匹配的文本将替换为指定的替换模式。<br /> <br /> 有关登陆页面条目预处理器的当前限制，请参阅下面的注释。</td>
   </tr>
   <tr>
    <td> </td>
@@ -554,11 +554,11 @@ data-cq-component中的路径应为组件的resourceType。
 
 ### 导入后显示的警告 {#warnings-displayed-after-import}
 
-如果出现任何警告(例如，HTML是指包中不存在的图像)，则设计导入程序会导入zip文件，但同时会在结果窗格中显示问题/警告列表，单击问题链接将显示警告列表，并指出设计包中的任何问题。 设计导入程序捕获并显示警告的不同情况如下：
+如果出现任何警告（例如，HTML引用包中不存在的图像），则设计导入程序会导入zip文件，但同时会在结果窗格中显示问题/警告列表，单击问题链接将显示警告列表，并指出设计包中的任何问题。 设计导入程序捕获并显示警告的不同情况如下：
 
 * HTML是指包中不存在的图像。
-* HTML是指包中不存在的脚本。
-* HTML是指包中不存在的样式。
+* HTML引用的脚本在包中不存在。
+* HTML引用的样式在包中不存在。
 
 ### ZIP文件的文件存储在AEM中的什么位置？ {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 

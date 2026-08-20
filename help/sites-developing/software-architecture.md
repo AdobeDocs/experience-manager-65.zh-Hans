@@ -1,5 +1,5 @@
 ---
-title: 软件体系结构
+title: 软件架构
 description: 了解为Adobe Experience Manager构建软件的一些最佳实践。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,16 @@ feature: Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '612'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
 
-# 软件体系结构{#software-architecture}
+# 软件架构{#software-architecture}
 
 ## 针对升级进行设计 {#design-for-upgrades}
 
-扩展开箱即用行为时，请务必牢记升级事项。 始终应用/apps目录中的自定义项，并叠加到/libs目录中的相应节点顶部，或使用sling：resourceSuperType扩展开箱即用的行为。 虽然可能需要进行一些修改才能支持新的AEM版本，但如果遵循此实践，则新版本不应覆盖您的自定义设置。
+扩展开箱即用行为时，请务必牢记升级事项。 始终应用/apps目录中的自定义项，并叠加到/libs目录中相应节点的顶部，或使用sling:resourceSuperType扩展开箱即用的行为。 虽然可能需要进行一些修改才能支持新的AEM版本，但如果遵循此实践，则新版本不应覆盖您的自定义设置。
 
 ### 尽可能重用模板和组件 {#reuse-template-and-components-when-possible}
 

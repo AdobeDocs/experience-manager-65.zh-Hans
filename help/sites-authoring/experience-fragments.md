@@ -7,8 +7,8 @@ feature: Authoring,Experience Fragments
 role: User
 source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
 workflow-type: tm+mt
-source-wordcount: '1505'
-ht-degree: 72%
+source-wordcount: '1541'
+ht-degree: 71%
 
 ---
 
@@ -31,8 +31,8 @@ ht-degree: 72%
 
 您可以使用体验片段：
 
-* 如果作者希望重用页面的各个部分（体验的片段），他们需要复制并粘贴该片段。 创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。体验片段无需复制/粘贴。
-* 支持Headless CMS用例。 作者希望仅将 AEM 用于创作，而不是用于提供给客户。第三方系统/触点会使用该体验，然后将其提供给最终用户。
+* 如果作者希望重用页面的各个部分（体验的片段），他们需要复制并粘贴该片段。 创建并维护这些复制/粘贴体验非常费时，而且容易导致用户错误。 体验片段无需复制/粘贴。
+* 支持 headless CMS 用例。 作者希望仅将 AEM 用于创作，而不是用于提供给客户。 第三方系统/触点会使用该体验，然后将其提供给最终用户。
 * 具有[多站点管理(MSM)](/help/sites-administering/msm.md)；作为体验片段是页面的一部分。 这同时适用于单个片段及其所在的文件夹。
 
 >[!NOTE]
@@ -49,22 +49,22 @@ ht-degree: 72%
 
 * 当您需要重复使用体验时。
 
-   * 将与相同或相似内容重用的体验
+  * 将与相同或相似内容重用的体验
 
 * 当您使用 AEM 作为第三方的内容投放平台时。
 
-   * 任何需要使用 AEM 作为内容投放平台的解决方案
-   * 将内容嵌入第三方接触点
+  * 任何需要使用 AEM 作为内容投放平台的解决方案
+  * 将内容嵌入第三方接触点
 
 * 当您有一个具有不同变体或呈现版本的体验时。
 
-   * 特定于渠道或上下文的变量
-   * 对组有意义的体验（例如，跨渠道具有不同体验的营销活动）
+  * 特定于渠道或上下文的变量
+  * 对组有意义的体验（例如，跨渠道具有不同体验的营销活动）
 
 * 当您使用全渠道商业时。
 
-   * 在[社交媒体](/help/sites-developing/experience-fragments.md#social-variations)渠道中大规模共享商业相关内容
-   * 使触点具有事务性
+  * 在[社交媒体](/help/sites-developing/experience-fragments.md#social-variations)渠道中大规模共享商业相关内容
+  * 使触点具有事务性
 
 ## 组织您的体验片段 {#organizing-your-experience-fragments}
 
@@ -87,7 +87,7 @@ ht-degree: 72%
   >
   >您可以使用[模板编辑器](/help/sites-authoring/templates.md)创建自己的模板。
 
-WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构还说明了如何使用其他功能，如多站点管理（包括语言副本）。
+WKND 项目可根据 `Contributors` 构建一些体验片段。 使用的结构还说明了如何使用其他功能，如多站点管理（包括语言副本）。
 
 请参阅：
 
@@ -177,7 +177,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 1. 输入&#x200B;**体验片段**&#x200B;的&#x200B;**属性**。
 
-   **标题**&#x200B;是必填项。如果&#x200B;**Name**&#x200B;留空，它将从&#x200B;**Title**&#x200B;派生。
+   **标题**&#x200B;是必填项。 如果&#x200B;**Name**&#x200B;留空，它将从&#x200B;**Title**&#x200B;派生。
 
    ![xf-04](assets/xf-04.png)
 
@@ -299,7 +299,7 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 #### 管理构建块 {#managing-a-building-block}
 
-您的构建块会显示在&#x200B;**构建块**&#x200B;选项卡中。对于每个基块，可执行以下操作：
+您的构建块会显示在&#x200B;**构建块**&#x200B;选项卡中。 对于每个基块，可执行以下操作：
 
 * 转至母版：在新选项卡中打开根页面变体
 * 重命名
@@ -336,31 +336,31 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
    * **基本**
 
-      * **标题** – 必填项
+     * **标题** – 必填项
 
-      * **描述**
-      * **标记**
-      * **变体总数** – 仅供参考
+     * **描述**
+     * **标记**
+     * **变体总数** – 仅供参考
 
-      * **Web 变体的数量** – 仅供参考
-      * **非Web变体的数量** — 仅供参考&#x200B;**信息**
+     * **Web 变体的数量** – 仅供参考
+     * **非Web变体的数量** — 仅供参考&#x200B;**信息**
 
-      * **使用此片段的页数** – 仅供参考
+     * **使用此片段的页数** – 仅供参考
 
    * **Cloud Service**
 
-      * **云配置**
-      * **Cloud Service 配置**
-      * **Facebook 页面 ID**
-      * **Pinterest 钉板**
+     * **云配置**
+     * **Cloud Service 配置**
+     * **Facebook 页面 ID**
+     * **Pinterest 钉板**
 
    * **引用**
 
-      * 引用列表。
+     * 引用列表。
 
    * **社交媒体状态**
 
-      * 社交媒体变体的详细信息。
+     * 社交媒体变体的详细信息。
 
 ## 纯 HTML 演绎版 {#the-plain-html-rendition}
 
@@ -372,6 +372,6 @@ WKND 项目可根据 `Contributors` 构建一些体验片段。使用的结构�
 
 ## 导出体验片段 {#exporting-experience-fragments}
 
-默认情况下，将以 HTML 格式提供体验片段。这可以由 AEM 和相似的第三方渠道使用。
+默认情况下，将以 HTML 格式提供体验片段。 这可以由 AEM 和相似的第三方渠道使用。
 
-要导出到 Adobe Target，还可以使用 JSON。有关完整信息，请参阅[Target与体验片段的集成](/help/sites-administering/experience-fragments-target.md)。
+要导出到 Adobe Target，还可以使用 JSON。 有关完整信息，请参阅[Target与体验片段的集成](/help/sites-administering/experience-fragments-target.md)。

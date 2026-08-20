@@ -10,14 +10,14 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
+source-wordcount: '642'
+ht-degree: 1%
 
 ---
 
-# 在AEM Forms工作区中集成第三方应用程序{#integrating-third-party-applications-in-aem-forms-workspace}
+# 在 AEM Forms 工作区中集成第三方应用程序{#integrating-third-party-applications-in-aem-forms-workspace}
 
-AEM Forms工作区支持管理表单和文档的任务分配和完成活动。 这些表单和文档可以是以XDP、PDF、HTML或Flex格式呈现的XDP Forms、Flex®表单或指南（已弃用）。
+AEM Forms工作区支持管理表单和文档的任务分配和完成活动。 这些表单和文档可以是以XDP、PDF、Flex®或Flex格式呈现的XDP Forms、HTML表单或指南（已弃用）。
 
 这些功能得到了进一步增强。 AEM Forms现在支持与第三方应用程序协作，这些应用程序支持类似于AEM Forms工作区的功能。 此功能的共同部分是任务分配和后续审批的工作流。 AEM Forms为AEM Forms企业用户提供单一的统一体验，因此可通过AEM Forms工作区处理所支持应用程序的所有此类任务分配或批准。
 
@@ -101,12 +101,12 @@ AEM Forms工作区支持管理表单和文档的任务分配和完成活动。 �
    ```
 
    [获取文件](assets/dscsample.zip)
-下载DSC：上面附加的DSCSample.zip文件中提供了示例DSC。 下载并解压缩DSCSample.zip文件。 在使用DSC服务之前，必须对其进行配置。 请参阅[配置DSC服务](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
+   下载DSC：上面附加的DSCSample.zip文件中提供了示例DSC。 下载并解压缩DSCSample.zip文件。 在使用DSC服务之前，必须对其进行配置。 请参阅[配置DSC服务](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)。
 
    在“定义活动”对话框中，选择相应的活动（如getLetterInstanceInfo），然后单击&#x200B;**确定**。
 
 1. 部署应用程序。 如果出现提示，请签入并保存资产。
-1. 登录到https://&#39;[server]：[port]&#39;/lc/content/ws上的AEM表单工作区。
+1. 登录到https://&#39;[server]：[port]&#39;/lc/content/ws上的AEM Forms工作区。
 1. 打开您已添加的任务CMRenderer。 此时将出现“通信管理”信件。
 
    ![cminworkspace](assets/cminworkspace.png)

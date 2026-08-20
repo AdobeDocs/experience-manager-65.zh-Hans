@@ -11,8 +11,8 @@ feature: Multi Site Manager, Language Copy
 role: Admin
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 33%
+source-wordcount: '370'
+ht-degree: 40%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 33%
 
 * 多站点管理器(MSM)允许您在多个位置使用相同的站点内容，同时允许以下变化：
 
-   * [重用内容：多站点管理器和 Live Copy](/help/sites-administering/msm.md)
+  * [重用内容：多网站管理器和 Live Copy](/help/sites-administering/msm.md)
 
 * 通过翻译，您可以自动翻译页面内容、资源和用户生成的内容，以创建和维护多语言网站：
 
-   * [翻译多语言站点的内容](/help/sites-administering/translation.md)
+  * [为多语言网站翻译内容](/help/sites-administering/translation.md)
 
 * 这两个功能可以结合使用，以满足[跨国和多语言](#multinational-and-multilingual-sites)网站的需求。
 
@@ -38,9 +38,9 @@ ht-degree: 33%
 
 * 使用[多站点管理器](/help/sites-administering/msm.md)可以：
 
-   * 重用主站点的内容和翻译，为其他国家/地区和文化创建站点。
-   * 确保将多站点管理器的使用限制为使用一种语言的内容，例如，英语母版>国家/地区站点的英语分支，法语母版>国家/地区站点的法语分支。
-   * 必要时，分离活动副本的元素以添加本地化详细信息。
+  * 重用主站点的内容和翻译，为其他国家/地区和文化创建站点。
+  * 确保将多站点管理器的使用限制为使用一种语言的内容，例如，英语母版>国家/地区站点的英语分支，法语母版>国家/地区站点的法语分支。
+  * 必要时，分离活动副本的元素以添加本地化详细信息。
 
 下图说明了主要概念的相交部分（但未显示涉及的所有级别/元素）：
 

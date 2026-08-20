@@ -1,5 +1,5 @@
 ---
-title: Forms用户管理 | 处理用户数据
+title: Forms用户管理 |处理用户数据
 description: 了解AEM Forms JEE用户管理组件如何让您创建、授权和管理需要访问AEM Forms的用户。
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,12 +9,12 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '904'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
 
-# Forms用户管理 | 处理用户数据 {#forms-user-management-handling-user-data}
+# Forms用户管理 |处理用户数据 {#forms-user-management-handling-user-data}
 
 用户管理是一个AEM Forms JEE组件，允许创建、管理和授权AEM Forms用户访问AEM Forms。 用户管理使用域作为获取用户信息的目录。 支持以下域类型：
 
@@ -28,7 +28,7 @@ ht-degree: 0%
 
 ## 用户数据和数据存储 {#user-data-and-data-stores}
 
-用户管理将用户数据存储在数据库中，如My Sql、Oracle、MS® SQL Server和IBM® DB2®。 此外，任何至少在`https://'[server]:[port]'lc`处在AEM作者的Forms应用程序中登录一次的用户，都会在AEM存储库中创建该用户。 因此，用户管理存储在以下数据存储中：
+用户管理将用户数据存储在数据库中，如My Sql、Oracle、MS® SQL Server和IBM® DB2®。 此外，任何至少在`https://'[server]:[port]'lc`处在AEM创作的Forms应用程序中登录一次的用户，都会在AEM存储库中创建该用户。 因此，用户管理存储在以下数据存储中：
 
 * 数据库
 * AEM存储库
@@ -58,16 +58,16 @@ ht-degree: 0%
   </tr>
   <tr>
    <td><p><code>EdcPrincipalLocalAccountEntity</code></p> <p><code class="code">EdcPrincipalLocalAccount
-       </code>(Oracle和MS® SQL数据库)</p> </td>
+       </code>（Oracle和MS® SQL数据库）</p> </td>
    <td>仅存储本地用户的数据。</td>
   </tr>
   <tr>
    <td><p><code>EdcPrincipalEmailAliasEntity</code></p> <p><code class="code">EdcPrincipalEmailAliasEn
-       </code>(Oracle和MS® SQL数据库)</p> </td>
+       </code>（Oracle和MS® SQL数据库）</p> </td>
    <td>包含本地、企业和混合域中所有用户的条目。 它包含用户电子邮件ID。</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (Oracle和MS® SQL数据库)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> （Oracle和MS® SQL数据库）</p> </td>
    <td>存储用户和组之间的映射。</td>
   </tr>
   <tr>
@@ -79,7 +79,7 @@ ht-degree: 0%
    <td>存储用户和组的承担者与权限之间的映射。</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle和MS® SQL数据库)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> （Oracle和MS® SQL数据库）</p> </td>
    <td>存储与主体对应的旧属性和新属性值。<br /> </td>
   </tr>
  </tbody>
@@ -87,11 +87,11 @@ ht-degree: 0%
 
 ### AEM存储库 {#aem-repository}
 
-至少访问过`https://'[server]:[port]'lc`下的Forms应用程序的用户管理数据也存储在AEM存储库中。
+在`https://'[server]:[port]'lc`下至少访问过一次Forms应用程序的用户的用户管理数据也存储在AEM存储库中。
 
 ## 访问和删除用户数据 {#access-and-delete-user-data}
 
-您可以访问和导出用户管理数据库和AEM资料档案库中用户的用户管理数据，如有必要，可以永久删除这些数据。
+您可以访问和导出用户管理数据库和AEM存储库中用户的用户管理数据，并在必要时永久删除这些数据。
 
 ### 数据库 {#database-1}
 
@@ -111,7 +111,7 @@ select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_
 
 >[!NOTE]
 >
->以下命令使用My SQL和IBM® DB2®数据库中的数据库表名。 在Oracle和MS® SQL数据库上运行这些命令时，请替换这些命令中的以下表名：
+>以下命令使用My SQL和® DB2®数据库中的数据库表名。 在Oracle和MS® SQL数据库上运行这些命令时，请在命令中替换以下表名：
 >
 >* 将`EdcPrincipalLocalAccountEntity`替换为`EdcPrincipalLocalAccount`
 >
@@ -170,11 +170,11 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 ### AEM存储库 {#aem-repository-1}
 
-如果Forms JEE用户至少访问过AEM创作实例，则将其数据存储在AEM Forms存储库中。 您可以从AEM存储库访问和删除其用户数据。
+如果Forms JEE用户至少访问过AEM创作实例，则其数据将存储在AEM Forms存储库中。 您可以从AEM存储库访问和删除其用户数据。
 
 #### 访问用户数据 {#access-user-data}
 
-要查看在AEM存储库中创建的用户，请使用AEM管理员凭据登录`https://'[server]:[port]'/lc/useradmin`。 请注意，URL中的`server`和`port`是AEM创作实例的。 在这里，您可以使用用户的用户名搜索用户。 双击某个用户，以便查看该用户的属性、权限和组等信息。 用户的`Path`属性指定到AEM存储库中创建的用户节点的路径。
+要查看在AEM存储库中创建的用户，请使用AEM管理员凭据登录`https://'[server]:[port]'/lc/useradmin`。 请注意，URL中的`server`和`port`是AEM创作实例的URL。 在这里，您可以使用用户的用户名搜索用户。 双击某个用户，以便查看该用户的属性、权限和组等信息。 用户的`Path`属性指定到AEM存储库中创建的用户节点的路径。
 
 #### 删除用户数据 {#delete-aem}
 
@@ -182,5 +182,5 @@ Select * from EdcPrincipalEntity where id='<principal_id>';
 
 1. 使用AEM管理员凭据转到`https://'[server]:[port]'/lc/useradmin`。
 1. 搜索用户，并双击用户名以打开用户属性。 复制`Path`属性。
-1. 转到`https://'[server]:[port]'/lc/crx/de/index.jsp`上的AEMCRXDE Lite，然后导航或搜索用户路径。
-1. 删除路径，然后单击&#x200B;**[!UICONTROL 全部保存]**&#x200B;以从AEM存储库中永久删除用户。
+1. 在`https://'[server]:[port]'/lc/crx/de/index.jsp`转到AEM CRXDE Lite并导航或搜索用户路径。
+1. 删除路径并单击&#x200B;**[!UICONTROL 全部保存]**&#x200B;以从AEM存储库中永久删除用户。

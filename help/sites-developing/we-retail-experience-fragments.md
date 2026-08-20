@@ -1,5 +1,5 @@
 ---
-title: 在We.Retail中尝试体验片段
+title: 在 We.Retail 中试用体验片段
 description: 了解如何使用We.Retail在Adobe Experience Manager中试用体验片段。
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,14 +11,14 @@ feature: Experience Fragments,Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '241'
-ht-degree: 22%
+source-wordcount: '244'
+ht-degree: 32%
 
 ---
 
-# 在We.Retail中尝试体验片段{#trying-out-experience-fragments-in-we-retail}
+# 在 We.Retail 中试用体验片段{#trying-out-experience-fragments-in-we-retail}
 
-在We.Retail中尝试体验片段
+在 We.Retail 中试用体验片段
 
 [体验片段](/help/sites-authoring/experience-fragments.md)是由一个或多个组件组成的组，这些组件包括可在页面中引用的内容和布局。 它们可以包含任何组件。
 
@@ -30,7 +30,7 @@ ht-degree: 22%
 >
 >**[内容片段](/help/sites-developing/we-retail-content-fragments.md)**&#x200B;和&#x200B;**体验片段**&#x200B;是 AEM 中的两个不同功能：
 >
->* **内容片段**&#x200B;是可编辑内容，主要为文本和相关图像。它们是纯内容，没有设计和布局。
+>* **内容片段**&#x200B;是可编辑内容，主要为文本和相关图像。 它们是纯内容，没有设计和布局。
 >* **体验片段**&#x200B;是经过充分布局的内容；例如，网页的一个片段。
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。

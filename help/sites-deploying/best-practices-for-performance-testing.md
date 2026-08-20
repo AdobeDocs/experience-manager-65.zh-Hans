@@ -1,5 +1,5 @@
 ---
-title: 性能测试的最佳实践
+title: 性能测试最佳做法
 description: 了解用于性能测试的整体策略和方法，以及可用于帮助此过程的一些工具。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
+source-wordcount: '1827'
+ht-degree: 2%
 
 ---
 
-# 性能测试的最佳实践{#best-practices-for-performance-testing}
+# 性能测试最佳做法{#best-practices-for-performance-testing}
 
 ## 简介 {#introduction}
 
@@ -62,8 +62,8 @@ AEM中的许多性能度量（如查询响应时间）都可能会受系统上�
 * 也可以使用[Vercara](https://vercara.com/website-performance-management)等网站负载测试工具。
 * 测试移动或响应式网站时，必须使用一组单独的工具。 它们通过调节网络带宽来工作，模拟速度较慢的移动连接，如3G或EDGE。 使用范围更广的工具包括：
 
-   * **[网络链接调节器](https://nshipster.com/network-link-conditioner/)** — 它提供了易于使用的UI，并且在网络栈栈上以相当低的级别工作。 它包括OS X和iOS的版本；
-   * [**Charles**](https://www.charlesproxy.com/) - Web调试代理应用程序，除了多种其他用途之外，还提供网络调节。 为Windows、OS X和Linux®提供了版本。
+  * **[网络链接调节器](https://nshipster.com/network-link-conditioner/)** — 它提供了易于使用的UI，并且在网络栈栈上以相当低的级别工作。 它包括OS X和iOS的版本；
+  * [**Charles**](https://www.charlesproxy.com/) - Web调试代理应用程序，除了多种其他用途之外，还提供网络调节。 为Windows、OS X和Linux®提供了版本。
 
 #### 优化工具 {#optimization-tools}
 
@@ -118,7 +118,7 @@ Google的PageSpeed工具提供了网站分析功能，用于确保对页面性�
 1. 将其放在/crx-quickstart/install文件夹下。
 
 >[!NOTE]
->请参阅[AEM 6.x | 性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=zh-Hans)
+>请参阅[AEM 6.x |性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=zh-Hans)
 
 默认设置为10,000，但大多数部署都必须将其增加到20,000或50,000。
 

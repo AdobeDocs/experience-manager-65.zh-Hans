@@ -7,7 +7,7 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '433'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 1%
 
 ## 打开产品驾驶舱 {#opening-product-cockpit}
 
-访问产品驾驶舱的最简单方法是通过AEM主菜单中的“Commerce”菜单。 也可以使用Omnisearch(搜索Commerce)或打开`https://<yourAEMInstance>/commerce.html`。
+访问产品驾驶舱的最简单方法是通过AEM主菜单中的“Commerce”菜单。 也可以使用Omnisearch（搜索Commerce）或打开`https://<yourAEMInstance>/commerce.html`。
 
 ![AEM菜单](/help/commerce/cif/assets/aem-menu.png)
 
@@ -76,12 +76,12 @@ ht-degree: 1%
 
 ### Commerce选项卡 {#tabs}
 
-常规和变量选项卡显示来自商业后端的预定义商业属性。 此数据(包括 变体)是AEM中的只读数据，因为记录系统是商务后端。 变体选项卡仅显示具有变体的产品，并显示所有变体的列表。
+常规和变量选项卡显示来自商业后端的预定义商业属性。 此数据（包括变体）在AEM中为只读数据，因为记录系统是商务后端。 变体选项卡仅显示具有变体的产品，并显示所有变体的列表。
 
 ![目录属性](/help/commerce/cif/assets/catalog-properties.png)
 
-### AEM内容选项卡 {#content-tabs}
+### AEM“内容”选项卡 {#content-tabs}
 
-这些按AEM内容类型(体验片段、内容片段、关联的Assets)分组的选项卡显示与商务对象关联的AEM内容。 “查看详细信息”操作将打开一个包含选定内容的新浏览器选项卡。
+这些按AEM内容类型（体验片段、内容片段、关联的Assets）分组的选项卡显示与商务对象关联的AEM内容。 “查看详细信息”操作将打开一个包含选定内容的新浏览器选项卡。
 
 ![内容属性](/help/commerce/cif/assets/content-properties.png)
