@@ -39,7 +39,7 @@ MSM 是用于自动化内容部署的可配置框架。 实施通常涉及网站
 >您还可以使用[引用组件](/help/sites-authoring/default-components-foundation.md#reference)重复使用单个页面或段落。 但请记住：
 >
 >* MSM更加灵活，允许对同步的内容以及同步时间进行细粒度控制。
->* 现在建议将[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)置于基础组件之上。
+>* 现在建议将[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)置于基础组件之上。
 >
 
 ## Live Copy 源和 Blueprint 配置 {#live-copy-sources-and-blueprint-configurations}

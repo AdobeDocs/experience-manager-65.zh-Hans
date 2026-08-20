@@ -385,4 +385,4 @@ Translator工具底部的搜索栏提供了字符串选择选项：
 
 >[!NOTE]
 >
->使用Dispatcher时，您需要[使缓存的页面失效](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)才能在渲染的组件字符串中包含新词典字符串。
+>使用Dispatcher时，您需要[使缓存的页面失效](https://helpx.adobe.com/cn/experience-manager/dispatcher/using/page-invalidate.html)才能在渲染的组件字符串中包含新词典字符串。

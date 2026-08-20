@@ -28,7 +28,7 @@ App Builder为客户提供了一种方法，可轻松地在各种用例中扩展
 
 >[!NOTE]
 >
->对于希望使用App Builder的AEM as a Cloud Service客户，请参阅[使用Adobe Developer App Builder扩展Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)。
+>对于希望使用App Builder的AEM as a Cloud Service客户，请参阅[使用Adobe Developer App Builder扩展Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=zh-Hans)。
 
 ## 架构 {#architecture}
 
