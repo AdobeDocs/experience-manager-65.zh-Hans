@@ -11,8 +11,8 @@ feature: Administering
 role: Admin
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 0%
+source-wordcount: '534'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->此基础组件已被弃用。 Adobe建议改用[核心组件嵌入组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html?lang=zh-Hans)。
+>此基础组件已被弃用。 Adobe建议改用[核心组件嵌入组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html)。
 
 >[!CAUTION]
 >
@@ -84,4 +84,4 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->升级AEM实例时，不会保留对默认现成工作流模型所做的更改。 Adobe建议先复制修改过的工作流模型，然后再进行编辑。 例如，在[!UICONTROL DAM更新资产]模型中编辑FFmpeg转码步骤之前，请复制现成的[!UICONTROL DAM更新资产]模型，以选取升级之前存在的视频配置文件名称。 然后，您可以叠加`/apps`节点以允许AEM检索对现成模型的自定义更改。
+>升级AEM实例时，不会保留对默认现成工作流模型所做的更改。 Adobe建议您在编辑已修改的工作流模型之前先复制这些模型。 例如，在[!UICONTROL DAM更新资产]模型中编辑FFmpeg转码步骤之前，请复制现成的[!UICONTROL DAM更新资产]模型，以选取升级之前存在的视频配置文件名称。 然后，您可以叠加`/apps`节点，以便AEM检索对现成模型的自定义更改。

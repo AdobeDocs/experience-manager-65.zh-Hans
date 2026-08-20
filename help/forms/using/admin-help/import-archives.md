@@ -1,5 +1,5 @@
 ---
-title: 导入和管理存档
+title: 导入并管理归档文件
 description: 了解如何导入和管理存档。 存档导入并管理在Workbench中创建的LCA。 您可以导入、配置、使用和删除存档。
 contentOwner: admin
 content-type: reference
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1450'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
 
-# 导入和管理存档 {#import-and-manage-archives}
+# 导入并管理归档文件 {#import-and-manage-archives}
 
 >[!NOTE]
 > 
@@ -31,7 +31,7 @@ ht-degree: 0%
 1. 单击“浏览”找到要导入的存档，然后单击“预览”。
 1. 查看将随归档文件一起安装的资源和对象的列表。 由于没有可用的撤消功能，请确保与现有资源、对象和服务配置没有冲突。
 
-   如果选择导入服务配置，则AEM Forms将导入LCA中进程使用的所有进程配置文件（端点、安全配置文件和服务配置参数）。
+   如果选择导入服务配置，AEM表单将导入LCA中的进程使用的所有进程配置文件（端点、安全配置文件和服务配置参数）。
 
 1. 单击“导入”。
 1. 查看导入结果，然后单击跳过配置以完成导入过程，或单击配置配置归档文件。
@@ -96,14 +96,14 @@ ht-degree: 0%
 
 1. 单击“已完成”以完成配置。
 
-## 配置作为归档文件一部分的AEM表单 {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## 配置作为存档文件一部分的AEM表单 {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. 在管理控制台中，单击“服务”>“应用程序和服务”>“应用程序管理”，然后单击“存档”选项卡。
 1. 在“归档文件管理”页上，选择要配置的归档文件。
 1. 在“查看存档”页上，选择突出显示的存档资源。
 1. 配置导入的流程存档文件。
 
-## 使用配置向导配置作为归档文件一部分的AEM表单 {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
+## 使用配置向导配置作为存档文件一部分的AEM表单 {#use-the-configuration-wizard-to-configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. 在管理控制台中，单击“服务”>“应用程序和服务”>“应用程序管理”，然后单击“存档”选项卡。
 1. 单击要配置的存档文件旁边的配置。
@@ -165,7 +165,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要删除包含存储在第三方存储库( EMC Documentum Content Server 、 IBM FileNet Content Manager或IBM Content Manager )中的资产的存档，还必须使用Workbench从存储库中删除资产文件。
+>要删除包含存储在第三方存储库（ EMC Documentum Content Server 、 IBM FileNet Content Manager或IBM Content Manager ）中的资产的存档，还必须使用Workbench从存储库中删除资产文件。
 
 1. 在管理控制台中，单击服务>应用程序和服务>存档管理。
 1. 在“归档文件管理”页中，选中要删除的归档文件的复选框，然后单击“删除”。

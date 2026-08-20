@@ -11,7 +11,7 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -46,22 +46,22 @@ Servlet应基于resourceTypes而不是路径进行定义。 这使得使用JCR�
 
 ### 避免定义新节点类型 {#avoid-defining-new-node-types}
 
-节点类型在基础结构层中处于较低级别，通过使用分配给nt：unstructured、oak：Unstructured、sling：Folder或cq：Page节点类型的sling：resourceType可以满足大多数要求。 节点类型等同于存储库中的架构，并且将来更改节点类型可能会很昂贵。
+节点类型在基础结构层中的工作级别较低，使用分配给nt:unstructured、oak:Unstructured、sling:Folder或cq:Page节点类型的sling:resourceType可以满足大多数要求。 节点类型等同于存储库中的架构，并且将来更改节点类型可能会很昂贵。
 
 ### 遵守JCR中的命名约定 {#adhere-to-naming-conventions-in-the-jcr}
 
-遵守命名惯例可为代码库增加一致性，从而降低缺陷的发生率，并提高开发人员在系统中工作的速度。 Adobe在开发AEM时使用以下约定：
+遵守命名惯例可为代码库增加一致性，从而降低缺陷的发生率，并提高开发人员在系统中工作的速度。 Adobe在开发AEM时使用了以下约定：
 
 * 节点名称
 
-   * 全部小写
-   * 使用连字符进行分词
+  * 全部小写
+  * 使用连字符进行分词
 
 * 属性名称
 
-   * 驼峰式大小写，以小写字母开头
+  * 驼峰式大小写，以小写字母开头
 
 * 组件(JSP/HTML)
 
-   * 全部小写
-   * 使用连字符进行分词
+  * 全部小写
+  * 使用连字符进行分词

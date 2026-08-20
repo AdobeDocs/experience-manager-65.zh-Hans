@@ -1,6 +1,6 @@
 ---
-title: AEM Forms工作区简介
-description: 使用LiveCycleAEM Forms Workspace通过业务流程自动化提高组织效率并创建无纸化办公室。
+title: AEM Forms 工作区简介
+description: 使用LiveCycle AEM Forms Workspace实现业务流程自动化，从而提高组织效率并创建无纸化办公室。
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,16 +12,16 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '205'
-ht-degree: 0%
+source-wordcount: '213'
+ht-degree: 4%
 
 ---
 
-# AEM Forms工作区简介{#introduction-to-aem-forms-workspace}
+# AEM Forms 工作区简介{#introduction-to-aem-forms-workspace}
 
-Forms workflow通过自动化关键文档和表单相关业务流程并提供可视性来提高组织效率。 使用“流程管理”模块，您可以构建可在线或离线访问的简化的端到端工作流（包括人员、系统、内容和业务规则）。Forms工作流包括AEM Forms工作区。 AEM Forms工作区新增了扩展和集成工作区的功能，使其更便于用户使用。
+Forms workflow通过自动化关键文档和表单相关业务流程并提供可视性来提高组织效率。 使用“流程管理”模块，您可以构建可在线或离线访问的简化的端到端工作流 — 包括人员、系统、内容和业务规则。Forms工作流包括AEM Forms工作区。 AEM Forms工作区新增了扩展和集成工作区的功能，使其更便于用户使用。
 
-AEM Forms工作区与更多设备和外形规格兼容。 它允许在没有Flash®播放器和Adobe®Reader®的客户端上进行任务管理。 它有助于在PDF forms之外再现HTMLForms。
+AEM Forms工作区与更多设备和外形规格兼容。 它允许在没有Flash® Player和Adobe® Reader®的客户端上进行任务管理。 它有助于在PDF forms之外再现HTML Forms。
 
 ![html-ws](assets/html-ws.png)
 

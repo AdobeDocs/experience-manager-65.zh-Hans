@@ -11,7 +11,7 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1527'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 0%
 
 为确保成功备份和恢复，系统映像备份必须始终可用。 然后，如果发生丢失，您可以将整个环境恢复到一致状态。
 
-在备份GDS 、 AEM资料档案库和Content Storage Root目录的同时备份数据库有助于在需要恢复时使这些系统保持同步。
+在备份GDS 、 AEM存储库和Content Storage Root目录的同时备份数据库有助于在需要恢复时使这些系统保持同步。
 
-本节中介绍的备份过程要求您在备份AEM Forms数据库、AEM资料档案库、GDS和内容存储根目录之前进入安全备份模式。 备份完成后，必须退出安全备份模式。 安全备份模式用于标记驻留在GDS中的长期和永久文档。 此模式可确保自动文件清理机制（文件收集器）在释放安全备份模式之前不会删除过期文件。 必须使GDS备份与数据库备份保持同步。
+本节中介绍的备份过程要求您在备份AEM Forms数据库、AEM存储库、GDS和内容存储根目录之前进入安全备份模式。 备份完成后，必须退出安全备份模式。 安全备份模式用于标记驻留在GDS中的长期和永久文档。 此模式可确保自动文件清理机制（文件收集器）在释放安全备份模式之前不会删除过期文件。 必须使GDS备份与数据库备份保持同步。
 
 GDS位置必须备份的频率取决于AEM Forms的使用方式以及可用的备份窗口。 备份窗口可能会受到长期进程的影响，因为这些进程可以运行几天。 如果不断更改、添加和删除此目录中的文件，则应更频繁地备份GDS位置。
 
@@ -43,31 +43,31 @@ GDS位置必须备份的频率取决于AEM Forms的使用方式以及可用的�
 将AEM Forms置于安全备份（快照）模式或滚动备份（连续覆盖）模式。 在将AEM Forms设置为进入任一备份模式之前，请确保满足以下条件：
 
 * 验证系统版本并记录自上次执行完整系统映像备份以来应用的修补程序或更新。
-* 如果使用的是滚动模式或快照模式备份，请确保为数据库配置了正确的日志设置，以允许对数据库进行热备份。 (请参阅[AEM Forms数据库](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。)
+* 如果使用的是滚动模式或快照模式备份，请确保为数据库配置了正确的日志设置，以允许对数据库进行热备份。 （请参阅[AEM Forms数据库](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。）
 
 除此之外，请遵循以下备份/恢复过程指南。
 
 * 使用可用的操作系统或第三方备份实用程序备份GDS目录。 （请参阅[GDS位置](/help/forms/using/admin-help/files-back-recover.md#gds-location)。）
 * （可选）使用可用的操作系统或第三方备份和实用程序备份内容存储根目录。 (请参阅[内容存储根位置（独立环境）](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-stand-alone-environment)或[内容存储根位置（群集环境）](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-location-clustered-environment)。)
-* 备份   创作和发布实例（ crx -repository备份）。
+* 备份创作实例和发布实例（ crx -repository备份）。
 
   要备份Correspondence Management Solution环境，请按照[备份和还原](/help/sites-administering/backup-and-restore.md)中所述对创作实例和发布实例执行步骤。
 
   备份创作实例和发布实例时，请考虑以下几点：
 
-   * 请确保同步创作实例和发布实例的备份，以便同时启动。 虽然在执行备份时您可以继续使用创作和发布实例，但建议不要在备份期间发布任何资产，以避免任何未捕获的更改。 等待创作实例和发布实例的备份结束，然后再发布新资产。
-   * 创作节点的完整备份包括Forms Manager和AEM Forms Workspace数据的备份。
-   * Workbench开发人员可以继续在本地处理其流程。 他们不应在备份阶段部署任何新流程。
-   * 应根据AEM Forms中所有数据(DB、GDS、AEM存储库和任何其他自定义数据)的备份总耗时来确定每个备份会话的长度（用于滚动备份模式）。
+  * 请确保同步创作实例和发布实例的备份，以便同时启动。 虽然在执行备份时您可以继续使用创作和发布实例，但建议不要在备份期间发布任何资产，以避免任何未捕获的更改。 等待创作实例和发布实例的备份结束，然后再发布新资产。
+  * 创作节点的完整备份包括Forms Manager和AEM Forms Workspace数据的备份。
+  * Workbench开发人员可以继续在本地处理其流程。 他们不应在备份阶段部署任何新流程。
+  * 应根据AEM Forms中所有数据（DB、GDS、AEM存储库和任何其他自定义数据）的备份总耗时来确定每个备份会话的长度（用于滚动备份模式）。
 
 备份AEM Forms数据库，包括任何事务日志。 请参阅[AEM Forms数据库](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database)。
 
 有关详细信息，请参阅适用于您的数据库的知识库文章：
 <!-- The four URLs below are all 404s; checked July 19, 2023 -->
-* [Oracle的AEM Forms备份和恢复](https://www.adobe.com/go/kb403624)
-* 适用于AEM Forms的[MySQL备份和恢复](https://www.adobe.com/go/kb403625)
-* [Microsoft® SQL Server Backup and Recovery for AEM Forms](https://www.adobe.com/go/kb403623)
-* 适用于AEM Forms的[DB2®备份和恢复](https://www.adobe.com/go/kb403626)
+* [适用于AEM Forms的Oracle备份和恢复](https://www.adobe.com/go/kb403624)
+* [适用于AEM Forms的MySQL备份和恢复](https://www.adobe.com/go/kb403625)
+* [适用于AEM Forms的Microsoft® SQL Server备份和恢复](https://www.adobe.com/go/kb403623)
+* [针对AEM Forms的DB2®备份和恢复](https://www.adobe.com/go/kb403626)
 
 这些文章为数据的备份和恢复提供了基本的数据库功能指导。 它们并非旨在作为特定供应商的数据库备份和恢复功能的全面技术指南。 它们概述了为AEM Forms应用程序数据创建可靠的数据库备份策略所需的命令。
 
@@ -95,7 +95,7 @@ GDS位置必须备份的频率取决于AEM Forms的使用方式以及可用的�
 
 您可以使用命令行界面`LCBackupMode`脚本将AEM Forms置于安全备份模式。
 
-1. 设置ADOBELIVECYCLE并启动应用程序服务器。
+1. 设置ADOBE_LIVECYCLE并启动应用程序服务器。
 1. 转到`*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline`文件夹。
 1. 根据您的操作系统，编辑`LCBackupMode.cmd`或`LCBackupMode.sh`脚本以提供适用于您的系统的默认值。
 1. 在命令提示符下，在一行上运行以下命令：

@@ -1,5 +1,5 @@
 ---
-title: 配置商业日历
+title: 配置业务日程表
 description: 业务日历为您的组织定义业务日和非业务日。 了解如何配置业务日历。
 contentOwner: admin
 content-type: reference
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1949'
 ht-degree: 0%
 
 ---
 
-# 配置商业日历 {#configuring-business-calendars}
+# 配置业务日程表 {#configuring-business-calendars}
 
 *工作日历*&#x200B;为您的组织定义工作日和非工作日（例如，法定假日、周末和公司停业日）。 使用业务日历时，AEM表单在执行某些日期计算时会跳过非业务日。 在Workbench中，您可以指定是将业务日历用于与用户相关的事件（如任务提醒、截止日期和升级），还是用于与用户无关的操作（如计时器事件和等待服务）。
 
@@ -24,11 +24,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->使用业务日历计算日期和时间时，AEM Forms会使用运行服务器的日期和时间，并且不会调整时区之间的差异。 例如，如果任务提醒安排在伦敦运行的服务器上于上午10:00发生，但接收提醒的用户位于纽约市，则用户将在本地时间上午5:00收到提醒。
+>使用业务日历计算日期和时间时，AEM Forms会使用运行服务器的日期和时间，但不会调整时区之间的差异。 例如，如果任务提醒安排在伦敦运行的服务器上于上午10:00发生，但接收提醒的用户位于纽约市，则用户将在本地时间上午5:00收到提醒。
 
 ## 使用默认业务日历 {#using-the-default-business-calendar}
 
-AEM Forms提供了一个默认的业务日历（名为&#x200B;*内置日历*），将星期六和星期日指定为非工作日。 如果组织中的所有用户具有相同的非工作日，则可以更新默认的业务日历以适合您的组织。 仅使用默认业务日历时，您无需在“用户管理”中启用业务日历或提供任何映射。 如果未定义其它业务日历，AEM Forms将使用默认的业务日历。
+AEM Forms提供了一个默认的业务日历（名为&#x200B;*内置日历*），将星期六和星期日指定为非工作日。 如果组织中的所有用户具有相同的非工作日，则可以更新默认的业务日历以适合您的组织。 仅使用默认业务日历时，您无需在“用户管理”中启用业务日历或提供任何映射。 如果未定义其他业务日历，AEM Forms将使用默认的业务日历。
 
 ## 设置多个业务日历 {#setting-up-multiple-business-calendars}
 
@@ -40,21 +40,21 @@ AEM Forms提供了一个默认的业务日历（名为&#x200B;*内置日历*）�
 
    **组成员资格：**&#x200B;您可以根据用户的组成员资格为用户分配业务日历。 在这种情况下，组中的每个用户将使用相同的业务日历。
 
-   如果用户是两个不同组的成员，并且这些组被映射到两个不同的业务日历，AEM Forms将使用它在搜索结果中找到的第一个日历。 在这种情况下，请考虑使用业务日历键将用户与业务日历相关联。
+   如果用户是两个不同组的成员，并且这些组映射到两个不同的业务日历，AEM Forms将使用它在搜索结果中找到的第一个日历。 在这种情况下，请考虑使用业务日历键将用户与业务日历相关联。
 
    **业务日历键：**&#x200B;您可以根据业务日历键为用户分配业务日历，该键是“用户管理”中指定的设置。 然后，将业务日历键映射到表单工作流中的业务日历。
 
    为用户分配业务日历键的方式取决于您使用的是企业域、本地域还是混合域。 有关设置域的详细信息，请参阅[添加域](/help/forms/using/admin-help/adding-domains.md#adding-domains)。
 
-   如果使用本地域或混合域，则有关用户的信息仅存储在User Management数据库中。 要为这些用户设置业务日历键，请在“用户管理”中添加或编辑用户时，在“业务日历键”字段中输入字符串。 （请参阅[添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)。）然后，将业务日历键（字符串）映射到表单工作流中的业务日历。 （请参阅[将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
+   如果使用本地域或混合域，则有关用户的信息仅存储在User Management数据库中。 要为这些用户设置业务日历键，请在“用户管理”中添加或编辑用户时，在“业务日历键”字段中输入字符串。 （请参阅[添加和配置用户](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users)。） 然后，将业务日历键（字符串）映射到表单工作流中的业务日历。 （请参阅[将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
 
-   如果您使用的是企业域，则有关用户的信息驻留在第三方存储系统中，例如LDAP目录，用户管理将该目录与用户管理数据库同步。 这样，您可以将业务日历键映射到LDAP目录中的字段。 例如，如果目录中的每个用户记录都包含“国家/地区”字段，并且要根据用户所在的国家/地区分配业务日历，请在指定目录的用户设置时，在“业务日历键”字段中指定“国家/地区”字段名称。 （请参阅[配置目录](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)。）然后，您可以将业务日历键（为LDAP目录中的“国家/地区”字段定义的值）映射到表单工作流中的业务日历。 （请参阅[将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
+   如果您使用的是企业域，则有关用户的信息驻留在第三方存储系统中，例如LDAP目录，用户管理将该目录与用户管理数据库同步。 这样，您可以将业务日历键映射到LDAP目录中的字段。 例如，如果目录中的每个用户记录都包含“国家/地区”字段，并且要根据用户所在的国家/地区分配业务日历，请在指定目录的用户设置时，在“业务日历键”字段中指定“国家/地区”字段名称。 （请参阅[配置目录](/help/forms/using/admin-help/configuring-directories.md#configuring-directories)。） 然后，您可以将业务日历键（为LDAP目录中的“国家/地区”字段定义的值）映射到表单工作流中的业务日历。 （请参阅[将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
 
 1. 在表单工作流中，为共享相同非工作日的每组用户定义一个日历。 （请参阅[创建或更新业务日历](configuring-business-calendars.md#create-or-update-a-business-calendar)。）
 1. 在表单工作流中，映射每个日历的业务日历键或组成员资格。 （请参阅[将用户和组映射到业务日历](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar)。）
 1. 在Workbench中，流程开发人员选择是否将业务日历用于提醒、截止日期和升级。 （请参阅[工作台帮助](https://www.adobe.com/go/learn_aemforms_workbench_63)。）
 
-   如果流程开发人员选择使用业务日历，AEM Forms将根据“用户管理”设置和Administration Console中定义的业务日历映射动态选择相应的业务日历；如果不存在映射，则使用默认日历。
+   如果流程开发人员选择使用业务日历，则AEM Forms将根据“用户管理”设置和Administration Console中定义的业务日历映射动态选择相应的业务日历；如果不存在映射，则将使用默认日历。
 
    如果流程开发人员不使用业务日历，则事件的日期计算会将每天视为一个业务日。 例如，任务截止日期配置为在任务分配给用户后的三天发生。 这项任务在星期四分派。 任务截止日期为星期日，即使它是一个周末。
 
@@ -95,7 +95,7 @@ AEM Forms提供了一个默认的业务日历（名为&#x200B;*内置日历*）�
 
 ## 将用户和组映射到业务日历 {#mapping-users-and-groups-to-a-business-calendar}
 
-可以使用两种方法将业务日历与用户关联。 您可以根据业务日历键或用户所属的目录组向用户分配业务日历。 您可以使用“映射”选项卡指定AEM表单将使用的方式，还可以将业务日历键和组映射到业务日历。 有关将业务日历密钥与用户关联的详细信息，请参阅[设置多个业务日历](configuring-business-calendars.md#setting-up-multiple-business-calendars)。
+可以使用两种方法将业务日历与用户关联。 您可以根据业务日历键或用户所属的目录组向用户分配业务日历。 使用“映射”选项卡可指定AEM表单将使用的方法，还可以将业务日历键和组映射到业务日历。 有关将业务日历密钥与用户关联的详细信息，请参阅[设置多个业务日历](configuring-business-calendars.md#setting-up-multiple-business-calendars)。
 
 ### 根据业务日历键将业务日历与用户关联 {#associate-business-calendars-with-users-based-on-business-calendar-keys}
 
@@ -118,18 +118,18 @@ AEM Forms提供了一个默认的业务日历（名为&#x200B;*内置日历*）�
 
    >[!NOTE]
    >
-   >在Workbench中，如果您已将用户服务配置为使用业务日历，并且已将该服务分配给某个组，则AEM Forms会使用此处指定的组映射来解析该组的日历。 AEM Forms始终使用组映射来解析组的日历，即使您使用业务日历键为用户解析日历也是如此。 如果未找到组映射，则使用默认的业务日历。
+   >在Workbench中，如果您已将用户服务配置为使用业务日历，并且已将该服务分配给某个组，则AEM Forms将使用此处指定的组映射来解析该组的日历。 AEM Forms始终使用组映射来解析组的日历，即使您使用业务日历键为用户解析日历也是如此。 如果未找到组映射，则使用默认的业务日历。
 
 1. 对于“目录服务组”列表中的每个项目，选择日历。
 1. 单击“保存”。
 
 ## 导出和导入业务日历 {#exporting-and-importing-business-calendars}
 
-AEM表单允许您将业务日历导出为XML文件并将其导入。 您可以使用此功能将日历从暂存系统移动到生产系统。
+通过AEM表单，您可以将业务日历导出和导入为XML文件。 您可以使用此功能将日历从暂存系统移动到生产系统。
 
 >[!NOTE]
 >
->此功能可导出和导入所有已定义的业务日历，包括AEM表单提供的默认业务日历。 与现有日历同名的导入业务日历将覆盖现有日历。
+>此功能可导出和导入所有定义的业务日历，包括AEM表单提供的默认业务日历。 与现有日历同名的导入业务日历将覆盖现有日历。
 
 ### 导出业务日历 {#export-business-calendars}
 

@@ -1,5 +1,5 @@
 ---
-title: AEM Forms工作区的功能在Flex工作区中不可用
+title: AEM Forms 工作区的功能在 Flex 工作区中不可用
 description: AEM Forms工作区在基于Flex的Workspace之外进行创新。 了解特性和功能的差异。
 contentOwner: robhagat
 content-type: reference
@@ -11,12 +11,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '378'
-ht-degree: 0%
+source-wordcount: '384'
+ht-degree: 5%
 
 ---
 
-# AEM Forms工作区的功能在Flex工作区中不可用 {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
+# AEM Forms 工作区的功能在 Flex 工作区中不可用 {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
 AEM Forms工作区在基于Flex的工作区之外进行创新，以提供有助于提高业务集成和用户工作效率的功能和特性。
 
@@ -40,4 +40,4 @@ AEM Forms工作区在基于Flex的工作区之外进行创新，以提供有助�
 
 ## 支持基于最终用户设备的自定义任务呈现 {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
-AEM Forms工作区支持XDP表单的HTML演绎版。 如果在基于设备或用户代理路由到不同的XDP演绎版的渲染过程中使用这种支持，则允许用户将XDP表单作为移动设备上的HTML和桌面上的PDF进行查看。 这有助于为在不同设备上的不同环境中工作的用户提供流程管理的无缝覆盖。
+AEM Forms工作区支持XDP表单的HTML演绎版。 此支持用在根据设备或用户代理路由到不同的XDP演绎版的渲染过程中时，允许用户在移动设备上以HTML的形式查看XDP表单，在桌面上以PDF的形式查看。 这有助于为在不同设备上的不同环境中工作的用户提供流程管理的无缝覆盖。

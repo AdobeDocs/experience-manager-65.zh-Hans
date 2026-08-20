@@ -7,7 +7,7 @@ feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -28,14 +28,14 @@ App Builder为客户提供了一种方法，可轻松地在各种用例中扩展
 
 >[!NOTE]
 >
->对于希望使用App Builder的AEM as a Cloud Service客户，请参阅[使用Adobe Developer App Builder扩展Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html?lang=zh-Hans)。
+>对于希望使用App Builder的AEM as a Cloud Service客户，请参阅[使用Adobe Developer App Builder扩展Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/app-builder.html)。
 
 ## 架构 {#architecture}
 
-Adobe Developer App Builder提供了一个通用、一致、标准化的开发平台，用于扩展Adobe Cloud解决方案(例如AEM)，而不是开箱即用的解决方案，该平台包括：
+Adobe Developer App Builder提供了一个通用、一致、标准化的开发平台，用于扩展Adobe Cloud解决方案（例如AEM），而不是开箱即用的解决方案，该平台包括：
 
 * Adobe Developer Console — 用于自定义微服务和扩展开发，允许开发人员在访问创建插件和集成所需的所有工具和API时构建和管理项目。
-* 开发人员工具 — 开源工具、SDK和库，允许开发人员轻松构建自定义扩展和集成。 使用React Spectrum(Adobe的UI工具包)为所有Adobe应用程序具有一个通用UI。
+* 开发人员工具 — 开源工具、SDK和库，允许开发人员轻松构建自定义扩展和集成。 使用React Spectrum（Adobe的UI工具包）为所有Adobe应用程序具有一个通用UI。
 * 服务 — 用于在Adobe的无服务器平台上托管基础架构的I/O运行时，以及用于基于事件的集成的I/O事件。 Adobe还为存储数据和文件提供开箱即用支持。
 * Adobe Experience Cloud — 开发人员可以提交要在其Experience Cloud组织中发布的扩展和集成。然后，系统管理员可以审核、管理和批准这些扩展。 发布后，您的自定义App Builder扩展和工具可以与其他Adobe Experience Cloud应用程序一起找到。
 
@@ -62,5 +62,5 @@ App Builder为开发人员提供了视频和文档，包括指南和参考文档
 
 准备好开始开发了吗？ 有许多示例应用程序可帮助您快速入门：
 
-* Adobe Developer网站上的[App Builder代码实验室](https://developer.adobe.com/app-builder/docs/resources/)
+* [Adobe Developer网站上的App Builder代码实验室](https://developer.adobe.com/app-builder/docs/resources/)
 

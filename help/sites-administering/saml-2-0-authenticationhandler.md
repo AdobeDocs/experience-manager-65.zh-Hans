@@ -11,7 +11,7 @@ feature: Security
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '821'
+source-wordcount: '864'
 ht-degree: 1%
 
 ---
@@ -31,17 +31,17 @@ AEM附带[SAML](https://saml.xml.org/saml-specifications)身份验证处理程�
 
 >[!NOTE]
 >
->请参阅[AEM与SAML集成的演示](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=zh-Hans)。
+>请参阅[AEM与SAML集成的演示](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html)。
 
 ## 配置SAML 2.0身份验证处理程序 {#configuring-the-saml-authentication-handler}
 
-[Web控制台](/help/sites-deploying/configuring-osgi.md)提供对名为&#x200B;**AdobeGranite SAML 2.0身份验证处理程序**&#x200B;的[SAML](https://saml.xml.org/saml-specifications) 2.0身份验证处理程序配置的访问权限。 可以设置以下属性。
+[Web控制台](/help/sites-deploying/configuring-osgi.md)提供对名为&#x200B;**Adobe Granite SAML 2.0身份验证处理程序**&#x200B;的[SAML](https://saml.xml.org/saml-specifications) 2.0身份验证处理程序配置的访问权限。 可以设置以下属性。
 
 >[!NOTE]
 >
 >默认情况下，SAML 2.0身份验证处理程序处于禁用状态。 至少设置以下属性之一以启用处理程序：
 >
->* 身份提供程序POSTURL，或IDP URL。
+>* 身份提供程序POST URL，或IDP URL。
 >* 服务提供商实体ID。
 >
 
@@ -53,7 +53,7 @@ AEM附带[SAML](https://saml.xml.org/saml-specifications)身份验证处理程�
 
 **服务排名** OSGi框架服务排名值指示调用此服务的顺序。 这是一个整数值，其中较高的值表示较高的优先级。
 
-**IDP证书别名**&#x200B;全局truststore中IdP证书的别名。 如果此属性为空，则将禁用身份验证处理程序。 有关如何设置证书，请参阅下面的“将IdP证书添加到AEM TrustStore”一章。
+**IDP证书别名**&#x200B;全局truststore中IdP证书的别名。 如果此属性为空，则将禁用身份验证处理程序。 有关如何设置IdP证书的信息，请参阅下面的“将IdP证书添加到AEM TrustStore”一章。
 
 IDP的&#x200B;**IDP URL** URL应将SAML身份验证请求发送到此处。 如果此属性为空，则将禁用身份验证处理程序。
 
@@ -86,7 +86,7 @@ IDP的&#x200B;**IDP URL** URL应将SAML身份验证请求发送到此处。 如�
 
 **添加到组**&#x200B;成功身份验证后是否应自动将用户添加到CRX组。
 
-**组成员资格**&#x200B;包含此用户应添加到的CRX组列表的saml：Attribute的名称。
+**组成员资格**&#x200B;包含此用户应添加到的CRX组列表的saml:Attribute的名称。
 
 ## 将IdP证书添加到AEM TrustStore {#add-the-idp-certificate-to-the-aem-truststore}
 
@@ -101,7 +101,7 @@ SAML断言经过签名并可选择进行加密。 为了使其生效，您必须
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## 将服务提供程序密钥和证书链添加到AEM密钥库 {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## 将服务提供商密钥和证书链添加到AEM密钥库 {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ SAML断言经过签名并可选择进行加密。 为了使其生效，您必须
 
 ## 为SAML配置记录器 {#configure-a-logger-for-saml}
 
-您可以设置日志记录器，以调试因错误配置SAML导致的任何问题。 您可以执行以下操作来实现此目标：
+您可以设置日志记录器，以调试因错误配置SAML导致的任何问题。 您可以通过以下方式来实现：
 
 1. 转到Web控制台，网址为&#x200B;*http://localhost:4502/system/console/configMgr*
 1. 搜索并单击名为&#x200B;**Apache Sling日志记录器配置**&#x200B;的项目

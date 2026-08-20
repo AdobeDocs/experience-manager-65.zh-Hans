@@ -1,5 +1,5 @@
 ---
-title: 使用Translator管理词典
+title: 使用 Translator 管理词典
 description: AEM提供了一个控制台，用于管理组件UI中使用的文本的各种翻译
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '2318'
-ht-degree: 0%
+source-wordcount: '2350'
+ht-degree: 2%
 
 ---
 
-# 使用Translator管理词典{#using-translator-to-manage-dictionaries}
+# 使用 Translator 管理词典{#using-translator-to-manage-dictionaries}
 
 AEM提供了一个控制台，用于管理组件UI中使用的文本的各种翻译。 此控制台位于
 
@@ -30,7 +30,7 @@ AEM提供了一个控制台，用于管理组件UI中使用的文本的各种翻
 >
 >仅编辑为您的项目创建并位于`/apps`下的词典。
 >
->此工具中还提供了AEM系统词典。 请勿更改AEM系统词典，因为这会导致AEM UI出现问题。 此外，升级时可能会丢失更改。 AEM系统字典位于`/libs`下。
+>此工具中还提供了AEM系统词典。 请勿更改AEM系统词典，因为这可能会导致AEM UI出现问题。 此外，升级时可能会丢失更改。 AEM系统字典位于`/libs`下。
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ AEM提供了一个控制台，用于管理组件UI中使用的文本的各种翻
 >
 >仅编辑为您的项目创建并位于`/apps`下的词典。
 >
->请勿更改AEM系统词典，因为这会导致AEM UI出现问题。 此外，升级时可能会丢失更改。 AEM系统字典位于`/libs`下。
+>请勿更改AEM系统词典，因为这可能会导致AEM UI出现问题。 此外，升级时可能会丢失更改。 AEM系统字典位于`/libs`下。
 
 ### 添加、更改和删除字符串 {#adding-changing-and-removing-strings}
 
@@ -178,11 +178,11 @@ Translator工具底部的搜索栏提供了字符串选择选项：
 * **按文本筛选：**&#x200B;与英文字符串、注释或翻译匹配的模式。 只有与全部或部分阵列匹配的项才会出现在表中。
 * **更改： Any、Modified、New、Deleted：**&#x200B;显示已更改但未保存的项目。
 
-   * 任意：显示已修改、添加或删除的项目。
-   * 已修改：显示已更改的项目。
-   * 新增：显示已添加的项目。
-   * 已删除：显示要删除的项目。
-   * 多项选择：显示具有所有选定属性的项目。
+  * 任意：显示已修改、添加或删除的项目。
+  * 已修改：显示已更改的项目。
+  * 新增：显示已添加的项目。
+  * 已删除：显示要删除的项目。
+  * 多项选择：显示具有所有选定属性的项目。
 
 * **具有注释**：显示包含翻译人员注释的项。
 * **缺少翻译：**&#x200B;显示至少一种语言没有翻译的项目。
@@ -205,7 +205,7 @@ Translator工具底部的搜索栏提供了字符串选择选项：
    >
    >仅编辑为您的项目创建并位于`/apps`下的词典。
    >
-   >此工具中还提供了AEM系统词典。 请勿更改AEM系统词典，因为这会导致AEM UI出现问题。 此外，升级时可能会丢失更改。 AEM系统字典位于`/libs`下。
+   >此工具中还提供了AEM系统词典。 请勿更改AEM系统词典，因为这可能会导致AEM UI出现问题。 此外，升级时可能会丢失更改。 AEM系统字典位于`/libs`下。
 
 1. 要编辑其中一个字符串的翻译文本，您可以：
 
@@ -282,7 +282,7 @@ Translator工具底部的搜索栏提供了字符串选择选项：
 
 使用以下过程添加或删除语言。
 
-1. 使用CRXDE Lite创建节点：
+1. 使用CRXDE Lite创建一个节点：
 
    `/etc/languages`
 
@@ -292,18 +292,18 @@ Translator工具底部的搜索栏提供了字符串选择选项：
    * **类型**：`Multi-String`
    * **值**：要显示的语言列表。 例如：
 
-      * fr
-      * es
+     * fr
+     * es
 
    >[!NOTE]
    >
    >语言代码必须为小写。
 
-1. 单击CRXDE Lite中的&#x200B;**全部保存**&#x200B;并重新加载转换器。 网格将更新以显示定义的语言。
+1. 在CRXDE Lite中单击&#x200B;**全部保存**&#x200B;并重新加载转换器。 网格将更新以显示定义的语言。
 
    >[!NOTE]
    >
-   >翻译人员将仅保存词典[&#128279;](#creating-a-dictionary)中实际存在的语言(即，在词典路径（如`/apps/myProject/i18n`）下)的翻译。
+   >翻译人员将仅保存词典](#creating-a-dictionary)中实际[存在的语言(即，在词典路径（如`/apps/myProject/i18n`）下)的翻译。
    >
    >确保这些语言与网格中显示的语言对应。
 
@@ -385,4 +385,4 @@ Translator工具底部的搜索栏提供了字符串选择选项：
 
 >[!NOTE]
 >
->使用Dispatcher时，您需要[使缓存的页面失效](https://helpx.adobe.com/cn/experience-manager/dispatcher/using/page-invalidate.html)才能在渲染的组件字符串中包含新词典字符串。
+>使用Dispatcher时，您需要[使缓存的页面失效](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)才能在渲染的组件字符串中包含新词典字符串。

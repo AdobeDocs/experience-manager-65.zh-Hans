@@ -1,6 +1,6 @@
 ---
-title: AEM Forms工作区JSON对象说明
-description: 有关LiveCycleAEM Forms Workspace中使用的JSON JavaScript对象的概念信息，可用于自定义、扩展、修改和重用。
+title: AEM Forms 工作区 JSON 对象描述
+description: 有关LiveCycle AEM Forms Workspace中使用的JSON JavaScript对象的概念信息，可用于自定义、扩展、修改和重用。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -10,12 +10,12 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2168'
 ht-degree: 8%
 
 ---
 
-# AEM Forms工作区JSON对象说明 {#aem-forms-workspace-json-object-description}
+# AEM Forms 工作区 JSON 对象描述 {#aem-forms-workspace-json-object-description}
 
 下面介绍了AEM Forms工作区中使用的JSON对象。
 
@@ -238,7 +238,7 @@ ht-degree: 8%
   <tr>
    <td>状态<br /> </td>
    <td>周五</td>
-   <td>1 =已创建（从起始点创建任务。）<br /> 2 =已创建并保存（任务是从起点创建并保存的。）<br /> 3 =已分配（任务在进程启动后分配给用户。）<br /> 4 =已分配并已保存（任务已分配并已保存。）<br /> 100 =已完成（任务已完成。）<br /> 101 =已截止（任务已达到截止日期。）<br /> 102 =已终止<br /> </td>
+   <td>1 =已创建（任务是从起点创建的。）<br /> 2 =已创建并保存（从起始点创建并保存任务。）<br /> 3 =已分配（任务在进程启动后分配给用户。）<br /> 4 =已分配和保存（任务已分配和保存。）<br /> 100 =已完成（任务已完成。）<br /> 101 =已截止（任务已达到截止日期。）<br /> 102 =已终止<br /> </td>
   </tr>
   <tr>
    <td>stepName<br /> </td>
@@ -412,7 +412,7 @@ ht-degree: 8%
   <tr>
    <td>类型</td>
    <td>周五</td>
-   <td>它包含队列的类型。<br /> 0 — 用户队列。<br /> 1. 共享队列。<br /> 2. 组队列。<br type="_moz" /> </td>
+   <td>它包含队列的类型。<br /> 0 — 用户队列。<br /> 1.共享队列。<br /> 2.组队列。<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>查询</td>
@@ -606,7 +606,7 @@ ht-degree: 8%
   <tr>
    <td>assignmentType<br type="_moz" /> </td>
    <td>周五</td>
-   <td>0 =初始分配<br /> 1 =转发（任务已转发到任务的当前所有者。）<br /> 2 =已返回（任务已由任务的先前所有者返回到任务的当前所有者。）<br /> 3 =已声明（任务当前所有者已声明任务。）<br /> 4 =提升（提升后任务已分配给当前任务所有者。）<br /> 5 =管理员已分配（任务已由管理员分配给任务的当前所有者。）<br /> 6 =已咨询（已咨询任务给任务的当前所有者。）<br type="_moz" /> </td>
+   <td>0 =初始分配<br /> 1 =转发（任务已转发到任务的当前所有者。）<br /> 2 =已返回（任务已由任务的先前所有者返回到任务的当前所有者。）<br /> 3 =已声明（任务当前所有者已声明任务。）<br /> 4 =提升（提升后任务已分配给任务的当前所有者。）<br /> 5 =管理员已分配（任务已由管理员分配给任务的当前所有者。）<br /> 6 =已咨询（已咨询任务当前所有者。）<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>assignmentUpdateTime<br type="_moz" /> </td>
