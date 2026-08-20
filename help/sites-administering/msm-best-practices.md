@@ -91,7 +91,7 @@ MSM 是用于自动化内容部署的可配置框架。 实施通常涉及网站
 
 * 要创建站点，您需要[Blueprint配置](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations)。
 * 要允许选择在新站点中创建的语言路径，相应的语言根必须存在于 Blueprint（源）中。
-* 将[新站点创建为Live Copy ](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)（依次使用&#x200B;**Create**&#x200B;和&#x200B;**Site**）后，此Live Copy的前两个级别为&#x200B;*浅*。 页面的子级不属于实时关系，但如果找到与触发器匹配的实时关系，则转出仍会下降。
+* 将[新站点创建为Live Copy &#x200B;](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)（依次使用&#x200B;**Create**&#x200B;和&#x200B;**Site**）后，此Live Copy的前两个级别为&#x200B;*浅*。 页面的子级不属于实时关系，但如果找到与触发器匹配的实时关系，则转出仍会下降。
 
   这有助于避免：
 

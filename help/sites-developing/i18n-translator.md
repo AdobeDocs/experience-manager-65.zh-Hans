@@ -303,7 +303,7 @@ Translator工具底部的搜索栏提供了字符串选择选项：
 
    >[!NOTE]
    >
-   >翻译人员将仅保存词典](#creating-a-dictionary)中实际[存在的语言(即，在词典路径（如`/apps/myProject/i18n`）下)的翻译。
+   >翻译人员将仅保存词典[&#128279;](#creating-a-dictionary)中实际存在的语言(即，在词典路径（如`/apps/myProject/i18n`）下)的翻译。
    >
    >确保这些语言与网格中显示的语言对应。
 
