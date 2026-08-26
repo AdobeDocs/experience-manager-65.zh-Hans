@@ -100,7 +100,7 @@ ht-degree: 8%
 
 Forms portal提供开箱即用的服务(API)，用于在本地和远程AEM Forms发布实例的crx存储库上存储数据。 您可以使用自定义实施替换默认功能，如[为草稿和提交配置存储服务](/help/forms/using/configuring-draft-submission-storage.md)文章中所述。 有关在自定义实施中将内容存储在安全位置所需方法的详细信息，请参阅[自定义草稿和提交数据服务](/help/forms/using/custom-draft-submission-data-services.md)和[草稿和提交组件的自定义存储](/help/forms/using/adding-custom-storage-provider-forms.md)。
 
-AEM Forms文档提供了一个用于将草稿和提交组件与数据库](integrate-draft-submission-database.md)集成的[示例。 您可以使用示例实施来开发自己的自定义实施。
+AEM Forms文档提供了一个用于将草稿和提交组件与数据库[&#128279;](integrate-draft-submission-database.md)集成的示例。 您可以使用示例实施来开发自己的自定义实施。
 
 ## 相关文章
 
