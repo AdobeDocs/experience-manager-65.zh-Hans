@@ -1,5 +1,5 @@
 ---
-title: Forms门户 | 处理用户数据
+title: Forms门户 |处理用户数据
 description: 了解如何管理AEM Forms Portal上的用户数据，例如访问、删除和数据存储。
 contentOwner: vishgupt
 topic-tags: grdp
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
 
-# Forms门户 | 处理用户数据 {#forms-portal-handling-user-data}
+# Forms门户 |处理用户数据 {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms]门户提供可用于在[!DNL AEM Sites]页面上列出自适应表单、HTML5表单和其他Forms资源的组件。 此外，您还可以将其配置为显示草稿以及为登录用户提交的自适应表单和HTML5表单。 有关Forms门户的更多信息，请参阅[在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md)。
+[!DNL AEM Forms]门户提供可用于在[!DNL AEM Sites]页面上列出自适应表单、HTML5表单和其他Forms资源的组件。 此外，您还可以将其配置为向登录用户显示草稿以及提交的自适应表单和HTML5表单。 有关Forms门户的更多信息，请参阅[在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md)。
 
 当登录用户将自适应表单另存为草稿或提交时，它们显示在Forms Portal的草稿和提交选项卡中。 起草或提交表单的数据存储在为AEM部署配置的数据存储中。 匿名用户的草稿和提交内容不会显示在Forms Portal页面上；但是，数据存储到配置的数据存储中。 请参阅[为草稿和提交配置存储服务](/help/forms/using/configuring-draft-submission-storage.md)。
 
@@ -45,7 +45,7 @@ Forms Portal在以下场景中存储草稿和已提交表单的数据：
   </tr>
   <tr>
    <td><p>默认</p> </td>
-   <td><p>Author和Publish实例的AEM存储库</p> </td>
+   <td><p>创作和发布实例的AEM存储库</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>

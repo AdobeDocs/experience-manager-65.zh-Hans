@@ -1,5 +1,5 @@
 ---
-title: 在使用API的网页上列出表单
+title: 使用 API 在网页上列出表单
 description: 以编程方式查询Forms Manager以检索经过过滤的表单列表，并在您自己的网页上显示。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,16 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 1%
+source-wordcount: '693'
+ht-degree: 6%
 
 ---
 
-# 在使用API的网页上列出表单 {#listing-forms-on-a-web-page-using-apis}
+# 使用 API 在网页上列出表单 {#listing-forms-on-a-web-page-using-apis}
 
 AEM Forms提供了一个基于REST的搜索API，Web开发人员可以使用该API来查询和检索一组符合搜索条件的表单。 您可以使用API根据各种筛选器搜索表单。 响应对象包含表单属性、属性和渲染表单端点。
 
-要使用REST API搜索表单，请使用下述查询参数向`https://'[server]:[port]'/libs/fd/fm/content/manage.json`上的服务器发送GET请求。
+要使用REST API搜索表单，请使用下述查询参数将GET请求发送到位于`https://'[server]:[port]'/libs/fd/fm/content/manage.json`的服务器。
 
 ## 查询参数 {#query-parameters}
 
@@ -175,5 +175,5 @@ orderings:[{"name" :"lastModifiedDate":"order":"ASC"}]
 * [使用草稿和提交组件](/help/forms/using/draft-submission-component.md)
 * [自定义草稿和已提交表单的存储](/help/forms/using/draft-submission-component.md)
 * [将草稿和提交组件与数据库集成的示例](/help/forms/using/integrate-draft-submission-database.md)
-* [自定义表单门户组件的模板](/help/forms/using/customizing-templates-forms-portal-components.md)
-* [在门户上发布表单的简介](/help/forms/using/introduction-publishing-forms.md)
+* [自定义表单门户组件模板](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md)

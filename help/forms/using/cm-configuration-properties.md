@@ -10,8 +10,8 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 3%
+source-wordcount: '854'
+ht-degree: 4%
 
 ---
 
@@ -51,11 +51,11 @@ ht-degree: 3%
    <td>节目类型</td>
    <td>“创建通信”应用程序用于呈现信件预览的演绎版类型。 </td>
    <td>HTML演绎版</td>
-   <td>HTML呈现版本/PDF呈现版本</td>
+   <td>HTML呈现版本/ PDF呈现版本</td>
   </tr>
   <tr>
-   <td><p>启用CCRPDF高亮显示</p> </td>
-   <td><p>在“创建通信”应用程序中启用对PDF的突出显示</p> </td>
+   <td><p>启用CCR PDF高亮显示</p> </td>
+   <td><p>在创建通信应用程序中启用PDF上的高亮显示</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -68,8 +68,8 @@ ht-degree: 3%
   <tr>
    <td><p>目标高亮颜色</p> </td>
    <td><p>创建通信应用程序中的目标高亮颜色</p> </td>
-   <td><p>90；155；245</p> </td>
-   <td><p>R；G；B格式的任意RGB</p> </td>
+   <td><p>90;155;245</p> </td>
+   <td><p>R；G；B格式的任何RGB颜色</p> </td>
   </tr>
   <tr>
    <td><p>内容高亮类型</p> </td>
@@ -80,8 +80,8 @@ ht-degree: 3%
   <tr>
    <td><p>内容高亮颜色</p> </td>
    <td><p>创建通信应用程序中的内容高亮颜色</p> </td>
-   <td><p>210；225；245</p> </td>
-   <td><p>R；G；B格式的任意RGB</p> </td>
+   <td><p>210;225;245</p> </td>
+   <td><p>R；G；B格式的任何RGB颜色</p> </td>
   </tr>
   <tr>
    <td><p>字段高亮类型</p> </td>
@@ -92,8 +92,8 @@ ht-degree: 3%
   <tr>
    <td><p>字段高亮颜色</p> </td>
    <td><p>创建通信应用程序中的字段高亮颜色</p> </td>
-   <td><p>210；225；245</p> </td>
-   <td><p>R；G；B格式的任意RGB</p> </td>
+   <td><p>210;225;245</p> </td>
+   <td><p>R；G；B格式的任何RGB颜色</p> </td>
   </tr>
   <tr>
    <td><p>应用程序超时</p> </td>
@@ -102,7 +102,7 @@ ht-degree: 3%
    <td><p>任意数字</p> </td>
   </tr>
   <tr>
-   <td><p>文档参数名称PDF</p> </td>
+   <td><p>PDF文档参数名称</p> </td>
    <td><p>后处理中PDF文档的参数名称</p> </td>
    <td><p>inPDFDoc</p> </td>
    <td><p>任何字符串变量名称</p> </td>
@@ -127,7 +127,7 @@ ht-degree: 3%
   </tr>
   <tr>
    <td><p>PDF提交类型</p> </td>
-   <td><p>PDF提交类型(从“创建通信”应用产品提交时生成的PDF类型)</p> </td>
+   <td><p>PDF提交类型（从创建通信应用程序提交时生成的PDF类型）</p> </td>
    <td><p>非交互式</p> </td>
    <td><p>交互式/非交互式</p> </td>
   </tr>
@@ -152,18 +152,18 @@ ht-degree: 3%
   <tr>
    <td><p>数据显示格式</p> </td>
    <td><p>指定数据的区域设置特定显示格式</p> </td>
-   <td><p>locale=en_US； dateFormat=dd-MM-yyyy； numberDecimalSeparator=.； numberGroupSeparator=，； numberUseGroupSeparator=truelocale=de_DE； dateFormat=dd-MM-yyyy； numberDecimalSeparator=，； numberGroupSeparator=.； numberUseGroupSeparator=truelocale=fr_FR； dateFormat=dd-MM-yyyy； numberDecimalSeparator=，； numberGroupSeparator= ； numberUseGroupSeparator=truelocale=ja_JP； dateFormat=dd-MM-yyy； numberDecimalSeparator=。； numberGroupSeparator=，； numberUseGroupSeparator=true</p> </td>
-   <td><p>—</p> </td>
+   <td><p>locale=en_US； dateFormat=dd-MM-yyyy； numberDecimalSeparator=.； numberGroupSeparator=，； numberUseGroupSeparator=truelocale=de_DE； dateFormat=dd-MM-yyy； numberDecimalSeparator=，；； numberUseGroupSeparator=fr_FR； dateFormat=dd-MM-yyy； numberDecimalSeparator=； numberUseGroupSeparator=truelocale=ja_JP； dateFormat=dd-MM-yyyy； numberDecimalSeparator=.； numberGroupSeparator=，； numberUseGroupSeparator=true</p> </td>
+   <td><p>--</p> </td>
   </tr>
   <tr>
    <td><p>数据编辑格式</p> </td>
    <td><p>编辑数据格式。 当将数据写入字符串或从字符串中解析数据时，将使用此选项</p> </td>
    <td><p>locale=en_US； dateFormat=dd-MM-yyyy； numberDecimalSeparator=.； numberGroupSeparator=，； numberUseGroupSeparator=true</p> </td>
-   <td>—<p> </p> </td>
+   <td>--<p> </p> </td>
   </tr>
   <tr>
-   <td><p>在Publish中管理书信实例</p> </td>
-   <td><p>启用/禁用管理书信功能(仅适用于Publish服务器)</p> </td>
+   <td><p>管理发布时的书信实例</p> </td>
+   <td><p>启用/禁用管理书信功能（仅适用于发布服务器）</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -198,7 +198,7 @@ ht-degree: 3%
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>启用Publish审核</p> </td>
+   <td><p>启用发布审核</p> </td>
    <td><p>启用/禁用资产发布的审核功能</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> </td>
@@ -242,7 +242,7 @@ ht-degree: 3%
   <tr>
    <td><p>CM用户根目录</p> </td>
    <td><p>包含所有通信管理用户资产的文件夹的URL</p> </td>
-   <td><p>—</p> </td>
+   <td><p>--</p> </td>
    <td><p>有效的文件夹位置</p> </td>
   </tr>
   <tr>

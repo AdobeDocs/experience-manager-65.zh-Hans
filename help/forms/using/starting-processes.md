@@ -1,6 +1,6 @@
 ---
-title: 启动进程
-description: 如何使用LiveCycleAEM Forms工作区 — 选择流程、添加注释和附件、保存草稿副本以及添加到收藏夹。
+title: 启动流程
+description: 如何使用LiveCycle AEM Forms工作区 — 选择进程、添加注释和附件、保存草稿副本以及添加到收藏夹。
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '1334'
+source-wordcount: '1356'
 ht-degree: 0%
 
 ---
 
-# 启动进程 {#starting-processes}
+# 启动流程 {#starting-processes}
 
 AEM Forms工作区按管理员或流程设计者设置的类别来组织流程。 您也可以将经常使用的进程放入“收藏夹”类别，以便快速找到它们。
 
@@ -46,7 +46,7 @@ AEM Forms工作区按管理员或流程设计者设置的类别来组织流程�
 
 1. 通过单击任务选择流程。 与流程关联的表单将在“表单”选项卡中打开。
 
-   流程中的每个表单都有一个唯一的URL。 您可以使用唯一URL通过特定的流程和表单直接启动HTMLWorkspace。 URL的格式为https://&lt;server>：&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>。 &lt;ApplicationName>%2F&lt;ProcessName>字符串始终进行URL编码。 示例URL为http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess。 示例中的ApplicationName%2FProcessName字符串已进行URL编码。
+   流程中的每个表单都有一个唯一的URL。 您可以使用唯一URL通过特定的流程和表单直接启动HTML Workspace。 URL的格式为https://&lt;server>：&lt;port>/lc/libs/ws/index.html#/startprocess/&lt;ApplicationName>%2F&lt;ProcessName>。 &lt;ApplicationName>%2F&lt;ProcessName>字符串始终进行URL编码。 示例URL为http://localhost:8080/lc/libs/ws/index.html#/startprocess/MyApplication%2FNewProcess。 示例中的ApplicationName%2FProcessName字符串已进行URL编码。
 
 1. 按照表格提供的说明填写表格。 如有必要，请单击&#x200B;**最大化**&#x200B;以增加表单的可见区域。
 1. 如果“附件”选项卡可用，请根据需要添加附件。
@@ -58,7 +58,7 @@ AEM Forms工作区按管理员或流程设计者设置的类别来组织流程�
 
    Process Management将启动该流程，并将表单路由到需要完成该流程中下一个任务的相应人员的待办事项列表中。
 
-   如果必须在提交表单之前将其关闭，并且不会丢失输入的数据，请保存草稿并在流程允许时稍后完成。 如果表单和流程允许，您还可以单击&#x200B;**脱机**，稍后从Adobe®Reader®或Adobe® Acrobat® Professional或Acrobat Standard提交它。
+   如果必须在提交表单之前将其关闭，并且不会丢失输入的数据，请保存草稿并在流程允许时稍后完成。 如果表单和流程允许，您还可以单击&#x200B;**脱机**，稍后再从®Reader®或Adobe®Acrobat® Professional或Acrobat Standard提交它。
 
    >[!NOTE]
    >

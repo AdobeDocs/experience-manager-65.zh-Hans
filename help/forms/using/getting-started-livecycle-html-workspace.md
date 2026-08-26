@@ -1,6 +1,6 @@
 ---
-title: AEM Forms工作区快速入门
-description: 如何开始使用LiveCycleAEM Forms工作区来管理您的业务自动化流程。
+title: AEM Forms 工作区快速入门
+description: 如何开始使用LiveCycle AEM Forms工作区来管理您的业务自动化流程。
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,12 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '993'
-ht-degree: 0%
+source-wordcount: '1010'
+ht-degree: 1%
 
 ---
 
-# AEM Forms工作区快速入门 {#getting-started-with-aem-forms-workspace}
+# AEM Forms 工作区快速入门 {#getting-started-with-aem-forms-workspace}
 
 您可以使用AEM Forms工作区执行以下任务：
 
@@ -56,7 +56,7 @@ AEM Forms workspace是基于Web的HTML应用程序，与屏幕阅读器兼容。
 * AEM Forms工作区帮助会在单独的浏览器窗口中打开。 查看帮助后，焦点将返回到包含AEM Forms工作区的浏览器窗口。 当焦点返回时，“帮助”菜单将保持焦点。
 * 打开表单以启动流程或完成任务时，焦点仍然位于现有元素中，并且不会更改为表单。 使用选项卡将焦点移动到表单并在表单中浏览。 在表单中Tab键顺序取决于表单的类型和设计。
 
-  对于PDF forms，当您通过选项卡进入表单的结尾或提交表单时，光标焦点会跳转到浏览器的地址栏。 再次通过菜单（而不是整个表单）按Tab键转到表单操作按钮，如“另存为草稿”和“完成”。 如果表单仍处于打开状态，您还可以通过按钮跳转到表单中。
+  对于PDF forms，当您通过选项卡进入表单结尾或提交表单时，光标焦点会跳转到浏览器地址栏。 再次通过菜单（而不是整个表单）按Tab键转到表单操作按钮，如“另存为草稿”和“完成”。 如果表单仍处于打开状态，您还可以通过按钮跳转到表单中。
 
 ## 管理首选项 {#managing-preferences}
 
@@ -77,5 +77,5 @@ AEM Forms workspace是基于Web的HTML应用程序，与屏幕阅读器兼容。
 * **日期格式：**&#x200B;指定在AEM Forms工作区中使用的日期显示格式。
 * **时间格式**：指定在AEM Forms工作区中使用的时间显示格式。
 * **通过电子邮件通知任务事件：**&#x200B;指定您是否收到任务事件的电子邮件通知，包括任务分配、提醒以及任务在待办事项列表和您所属的待办事项组中的截止日期。
-* **在电子邮件中附加Forms：**&#x200B;指定是否将表单副本附加到电子邮件通知邮件。 仅支持PDF和XDP表单的附件。
+* **在电子邮件中附加Forms：**&#x200B;指定是否将表单副本附加到电子邮件通知邮件。 只有PDF和XDP表单支持附件。
 * **定期保存草稿：**&#x200B;指定是否定期自动保存表单草稿。 要定期保存草稿，请启用此选项，并将自动保存持续时间设置为1到30分钟。 当启用了自动保存并且用户正在处理草稿时，将在指定的分钟数后定期保存草稿。 仅当自上次保存或自动保存以来草稿中有更改时，才会自动保存草稿。 保存草稿后，屏幕上将显示一条警告消息。
