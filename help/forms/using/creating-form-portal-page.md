@@ -11,8 +11,8 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1666'
-ht-degree: 2%
+source-wordcount: '1702'
+ht-degree: 6%
 
 ---
 
@@ -77,7 +77,7 @@ Forms portal组件类别
    <td>配置使用AEM Forms UI上传资源的文件夹。 默认情况下，其中列出了所有上传的资源。 有关AEM Forms UI的详细信息，请参阅<a href="../../forms/using/introduction-managing-forms.md" target="_blank">管理表单简介</a>。</td>
   </tr>
   <tr>
-   <td><p><span class="uicontrol"><strong>显示区</strong></code></p> </td>
+   <td><p><span class="uicontrol"><strong>显示器</strong></code></p> </td>
    <td>标题文本</td>
    <td>Search &amp; Lister组件的标题。 默认标题为<strong>Forms门户。</strong></td>
   </tr>
@@ -119,16 +119,16 @@ Forms portal组件类别
   <tr>
    <td><span class="uicontrol"><strong>表单链接</strong></code></td>
    <td>呈现类型</td>
-   <td>根据指定的渲染类型控制表单的列表。 可用的选项包括PDF和HTML。 例如，如果选择“仅HTML”作为渲染类型，则会过滤掉PDF forms。</td>
+   <td>根据指定的渲染类型控制表单的列表。 可用的选项有PDF和HTML。 例如，如果您只选择HTML作为渲染类型，则会过滤掉PDF forms。</td>
   </tr>
   <tr>
    <td> </td>
-   <td>HTML配置文件</td>
+   <td>HTML 配置文件</td>
    <td>配置用于渲染的HTML配置文件。 下拉列表中列出了所有可用的配置文件。</td>
   </tr>
   <tr>
    <td> </td>
-   <td>提交URL</td>
+   <td>提交 URL</td>
    <td><p>配置提交表单数据的servlet。</p> <p><strong>注意：</strong> <em>可以在多个位置指定表单的提交URL，其优先顺序如下：</em></p>
     <ol>
      <li><em>表单中嵌入的提交URL（在提交按钮中）具有最高优先级。</em></li>
@@ -139,12 +139,12 @@ Forms portal组件类别
   <tr>
    <td> </td>
    <td>HTML渲染操作工具提示</td>
-   <td>配置工具提示的文本，当指针悬停在<img height="16" src="assets/aem6forms_panel-html.png" width="13" />上时，将显示工具提示(HTML5图标)。</td>
+   <td>配置工具提示的文本，当指针悬停在<img height="16" src="assets/aem6forms_panel-html.png" width="13" />上时，将显示工具提示（HTML5图标）。</td>
   </tr>
   <tr>
    <td> </td>
    <td>PDF渲染操作工具提示</td>
-   <td>配置工具提示的文本，当指针悬停在<img height="16" src="assets/aem6forms_panel-pdf.png" width="14" />上时，将显示工具提示(PDF图标)。</td>
+   <td>配置工具提示的文本，当指针悬停在<img height="16" src="assets/aem6forms_panel-pdf.png" width="14" />上时，将显示工具提示的文本（PDF图标）。</td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>样式</strong></code></td>
@@ -161,7 +161,7 @@ Forms portal组件类别
 
 ### 搜索窗格 {#search-pane}
 
-“搜索”窗格允许您从AEM Sidekick中的“文档服务谓词”类别添加“日期谓词”、“全文谓词”、“属性谓词”和“标记谓词”组件。 这些组件为用户实施搜索功能以对列出的表单执行搜索。
+“搜索”窗格允许您从AEM Sidekick中的“文档服务谓词”类别添加日期谓词、全文谓词、属性谓词和标记谓词组件。 这些组件为用户实施搜索功能以对列出的表单执行搜索。
 
 **提示：** *您可以根据预设条件控制表单门户上显示的表单列表，并为最终用户隐藏搜索功能。 要控制表单列表，请使用谓词组件应用搜索过滤器。 您还可以指定默认筛选器值，并从“编辑组件”对话框的“显示”选项卡中禁用搜索。*
 
@@ -261,5 +261,5 @@ forms portal开箱即用地提供渲染操作。 您可以自定义表单门户�
 * [使用草稿和提交组件](/help/forms/using/draft-submission-component.md)
 * [自定义草稿和已提交表单的存储](/help/forms/using/draft-submission-component.md)
 * [将草稿和提交组件与数据库集成的示例](/help/forms/using/integrate-draft-submission-database.md)
-* [自定义表单门户组件的模板](/help/forms/using/customizing-templates-forms-portal-components.md)
-* [在门户上发布表单的简介](/help/forms/using/introduction-publishing-forms.md)
+* [自定义表单门户组件模板](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md)

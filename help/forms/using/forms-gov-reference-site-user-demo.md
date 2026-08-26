@@ -9,7 +9,7 @@ feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2478'
+source-wordcount: '2522'
 ht-degree: 1%
 
 ---
@@ -24,22 +24,22 @@ ht-degree: 1%
 
 * AEM Forms
 
-   * 自动化表单转换
-   * 创作
-   * 表单数据模型/数据源
+  * 自动化表单转换
+  * 创作
+  * 表单数据模型/数据源
 
 * AEM Forms
 
-   * 数据捕获
-   * （可选）数据集成(MS® Dynamics)
-   * （可选）Adobe Sign
+  * 数据捕获
+  * （可选）数据集成(MS® Dynamics)
+  * （可选）Adobe Sign
 
 * 工作流
 * 电子邮件通知
 * （可选）客户通信
 
-   * 打印渠道
-   * Web 渠道
+  * 打印渠道
+  * Web 渠道
 
 * Adobe Analytics
 * 数据Source集成
@@ -64,14 +64,14 @@ We.Gov演示包附带以下内置虚拟用户：
 
 * **We.Gov Forms用户**
 
-   * George Lang（会员）
-   * Camila Santos（成员）
+  * George Lang（会员）
+  * Camila Santos（成员）
 
 * **We.Gov用户**
 
-   * George Lang（会员）
-   * Camila Santos（成员）
-   * Aya Tan（会员）
+  * George Lang（会员）
+  * Camila Santos（成员）
+  * Aya Tan（会员）
 
 ### 演示概述术语图例 {#demo-overview-terms-legend}
 
@@ -81,28 +81,28 @@ We.Gov演示包附带以下内置虚拟用户：
 1. **链接**：在We.Gov网站的主菜单顶部。
 1. **用户说明**：浏览用户故事时要遵循的一组数字步骤。
 1. **Forms门户**： *https://&lt;aemserver>：&lt;port>/content/we-gov/formsportal.html*
-1. **移动视图**：We.Gov用户使用调整大小的浏览器复制移动视图。
+1. **移动视图**:We.Gov用户使用调整大小的浏览器复制移动视图。
 1. **桌面视图**： We.gov用户，用于在笔记本电脑或桌面上查看演示。
 1. **预屏表单**： We.Gov网站主页上的表单。
 1. **自适应表单**： We.gov演示的注册申请表单。
 
    *https://&lt;aemserver>：&lt;端口>/content/forms/af/adobe-gov-forms/enrollment-application-for-health-benefits.html*
 
-1. **AdobeWe.Gov站点**： *https://&lt;aemserver>：&lt;port>/content/we-gov/home.html*
+1. **Adobe We.Gov站点**： *https://&lt;aemserver>：&lt;port>/content/we-gov/home.html*
 1. **Adobe收件箱**：位于AEM后端中的顶部菜单栏[铃铛图标](assets/bell.svg)。
 
    *https://&lt;aemserver>：&lt;端口>/aem/start.html*
 
 1. **电子邮件客户端**：查看电子邮件的首选方式(Gmail、Outlook)
-1. **CTA**：行动号召
+1. **CTA**： Call to action
 1. **导航**：在浏览器页面上找到特定参考点。
-1. **AFC**：Automated forms conversion
+1. **AFC**：自动表单转换
 
-## automated forms conversion（卡米拉） {#automated-forms-conversion}
+## 自动表单转换(Camila) {#automated-forms-conversion}
 
-**此部分**： CX销售线索的Camila有一个现有的基于PDF的表单，该表单已用作基于纸张的流程的一部分。 作为现代化工作的一部分，Camila希望使用此PDF表单自动创建现代自适应Forms。
+**本节**： CX销售线索的Camila现有基于PDF的表单，已用作基于纸张的流程的一部分。 作为现代化工作的一部分，Camila希望使用此PDF表单自动创建现代自适应Forms。
 
-### automated forms conversion- We.Gov （卡米拉） {#automated-forms-conversion-wegov}
+### 自动化表单转换 — We.Gov (Camila) {#automated-forms-conversion-wegov}
 
 1. 导航到&#x200B;*https://&lt;aemserver>：&lt;port>/aem/start.html*
 
@@ -114,7 +114,7 @@ We.Gov演示包附带以下内置虚拟用户：
 
    ![上载表单](assets/aftia-upload-form.jpg)
 
-1. 然后，Camilla选择PDF表单并单击&#x200B;**开始自动转换**&#x200B;开始转换过程。 如果您已转换表单，则可能需要单击&#x200B;**覆盖转换**。
+1. 然后，Camilla选择PDF表单并单击&#x200B;**开始自动转换**&#x200B;以开始转换过程。 如果您已转换表单，则可能需要单击&#x200B;**覆盖转换**。
 
    >[!NOTE]
    >
@@ -144,7 +144,7 @@ We.Gov演示包附带以下内置虚拟用户：
 
 **此部分**：转换文档并生成自适应表单后，Camila必须将自适应表单连接到数据源。
 
-1. Camila在以[Automated forms conversion转换的表单上打开属性 — We.Gov](#automated-forms-conversion-wegov)。
+1. Camila打开在[自动表单转换中转换的表单上的属性 — We.Gov](#automated-forms-conversion-wegov)。
 
 1. 然后，Camila选择“Form Model（表单模型）” > “Select Form Data Model（从以下列表中选择）” > “Select We.gov Enrollment FDM（从选项列表中选择注册FDM）”。
 
@@ -227,7 +227,7 @@ Aya必须先在家查看一些文档，然后才能完成服务请求申请。 �
    1. **已婚**：显示婚姻从属面板
    1. **已离婚**：显示亲属面板的旁边
    1. **丧偶**：显示亲属面板的旁边
-   1. **您有孩子吗？**： （是/否）单选按钮显示子依赖面板。
+   1. **您有子项吗？**： （是/否）单选按钮显示子项依赖面板。
 
       1. （添加/删除）按钮，用于添加/删除多个子项从属面板。
 
@@ -254,9 +254,9 @@ Aya必须先在家查看一些文档，然后才能完成服务请求申请。 �
 
    **用户说明：**
 
-1. 右键单击“圆形CTA”可移动到下一节。
+1. 右键单击“圆形CTA”可移动到下一部分。
 
-   ![右圆形CTA](/help/forms/using/assets/right_circle_cta_new.png)
+   ![右圆圈CTA](/help/forms/using/assets/right_circle_cta_new.png)
 
    表单将填充到Aya的最后一个条目处。 Aya已输入所有信息并准备提交。
 
@@ -266,7 +266,7 @@ Aya必须先在家查看一些文档，然后才能完成服务请求申请。 �
    >
    >当Aya填写电话号码字段时，她必须填写为一个连续11位数的数字，且不含破折号、空格或连字符。
 
-   提交后，Aya会收到“感谢”页面。 （可选）Aya还会收到一封电子邮件，她可以打开该电子邮件以使用Adobe Sign电子方式签署记录文档。
+   提交后，Aya会收到“感谢”页面。 （可选）Aya还会收到一封电子邮件，她可以将其打开以使用Adobe Sign电子方式签署记录文档。
 
 ### 可选：Adobe Sign (Aya) {#adobe-sign}
 
@@ -351,7 +351,7 @@ George批准Aya的申请，并且借助现有的自动化工作流，还会向Ay
 
 **此部分：** Camila CX销售线索与Aya建立了欢迎电话联系，以说明如何使用她批准的政府服务。
 
-### （可选） AEM收件箱和MS® Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### （可选）AEM收件箱和MS® Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **用户说明：**
 
@@ -395,7 +395,7 @@ George批准Aya的申请，并且借助现有的自动化工作流，还会向Ay
 
 ## （可选）欢迎套件公民(Aya) {#welcome-kit-citizen-aya}
 
-**此部分：** Aya收到一封电子邮件，其中包含指向交互式通信的链接，该链接概述了她的好处，并包含要填写的表单字段。 附带PDF权益声明和邮件中的交互式通信信件链接（主题/品牌与交互式通信相同）。
+**此部分：** Aya收到一封电子邮件，其中包含指向交互式通信的链接，该链接概述了她的好处，并包含要填写的表单字段。 附带PDF权益声明，并链接到邮件中的交互式通信信件（主题/品牌与交互式通信相同）。
 
 ### 电子邮件客户端通知(Aya) {#aya-user-story-email-client}
 
@@ -408,13 +408,13 @@ George批准Aya的申请，并且借助现有的自动化工作流，还会向Ay
 
    1. 这将打开同一文档的Web渠道版本。
 
-1. 要快速了解直接PDF的参考，请执行以下操作：
+1. 要直接快速引用PDF，请执行以下操作：
 
    *https://&lt;aemserver>：&lt;port>/aem/formdetails.html/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook*
 
 1. 要直接快速引用集成电路，请执行以下操作：
 
-   *https://&lt;aemserver>：&lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr：content？channel=web&amp;mode=preview&amp;wcmmode=disabled*
+   *https://&lt;aemserver>：&lt;port>/content/dam/formsanddocuments/adobe-gov-forms/welcome-handbook/we-gov-welcome-handbook/jcr:content？channel=web&amp;mode=preview&amp;wcmmode=disabled*
 
    ![欢迎权益手册](/help/forms/using/assets/welcome_benefits_handbook.png)![交互式通信链接](/help/forms/using/assets/interactive_communication.png)
 
@@ -442,7 +442,7 @@ George批准Aya的申请，并且借助现有的自动化工作流，还会向Ay
 
 **此部分**： Camila将导航到“数据源”页，以验证服务器在Derby数据库中复制的数据。
 
-1. 用户体验完成且用户提交完成后，Camila将导航到AEM Forms中的“数据源”选项卡(**Forms** > **数据集成**)
+1. 用户体验完成且用户提交完成后，Camila将导航到AEM Forms中的“数据源”选项卡（**Forms** > **数据集成**）
 
 1. 然后，Camila选择AEM Forms We.gov FDM，然后编辑&#x200B;**We.gov注册FDM**。
 
@@ -486,11 +486,11 @@ George批准Aya的申请，并且借助现有的自动化工作流，还会向Ay
 
 1. 导航到&#x200B;*https://&lt;aemserver>：&lt;port>/sites.html/content*
 1. 选择&#x200B;**AEM Forms We.Gov Site**&#x200B;以查看站点页面。
-1. 选择一个网站页面（例如“主页”），然后选择&#x200B;**Analytics和Recommendations**。
+1. 选择一个网站页面（例如“主页”），然后选择&#x200B;**分析和推荐**。
 
    ![分析和推荐](/help/forms/using/assets/analytics_recommendation.jpg)
 
-1. 在此页面上，您会看到从Adobe Analytics中获取的与AEM Sites页面相关的信息(注意：通过设计，这些信息会定期从Adobe Analytics中刷新，并且不会实时显示)。
+1. 在此页面上，您会看到从Adobe Analytics中获取的与AEM Sites页面相关的信息（注意：通过设计，这些信息会定期从Adobe Analytics中刷新，并且不会实时显示）。
 
    ![Adobe Analytics关键量度](/help/forms/using/assets/analytics_key_metrics.jpg)
 

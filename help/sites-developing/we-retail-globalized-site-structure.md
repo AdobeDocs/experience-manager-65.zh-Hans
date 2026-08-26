@@ -1,5 +1,5 @@
 ---
-title: 在We.Retail中尝试全局化网站结构
+title: 在 We.Retail 中试用全球化站点结构
 description: 了解如何使用We.Retail在Adobe Experience Manager中尝试全局化网站结构。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,12 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 0%
+source-wordcount: '436'
+ht-degree: 8%
 
 ---
 
-# 在We.Retail中尝试全局化网站结构{#trying-out-the-globalized-site-structure-in-we-retail}
+# 在 We.Retail 中试用全球化站点结构{#trying-out-the-globalized-site-structure-in-we-retail}
 
 We.Retail构建时采用了全球化网站结构，该结构提供了语言母版，可实时复制到特定于国家/地区的网站。 所有开箱即用的设置允许您试验此结构和内置翻译功能。
 
@@ -53,7 +53,7 @@ We.Retail构建时采用了全球化网站结构，该结构提供了语言母�
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-1. 单击德语以查看翻译项目的详细信息。 状态为&#x200B;**草稿**。 若要使用Microsoft®的翻译服务开始翻译，请单击&#x200B;**翻译作业**&#x200B;标题旁边的V形标记，然后选择&#x200B;**开始**。
+1. 单击德语以查看翻译项目的详细信息。 状态为&#x200B;**草稿**。 若要使用®的翻译服务开始翻译，请单击&#x200B;**翻译作业**&#x200B;标题旁边的V形标记，然后选择&#x200B;**开始**。
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
@@ -67,7 +67,7 @@ We.Retail构建时采用了全球化网站结构，该结构提供了语言母�
 
 >[!NOTE]
 >
->此过程演示了与Microsoft®机器翻译的内置集成。 使用[AEM Translation Integration Framework](/help/sites-administering/translation.md)，您可以与许多标准翻译服务集成以编排AEM的翻译。
+>此过程演示了与®机器翻译的内置集成。 使用[AEM翻译集成框架](/help/sites-administering/translation.md)，您可以与许多标准翻译服务集成以编排AEM的翻译。
 
 ## 更多信息 {#further-information}
 

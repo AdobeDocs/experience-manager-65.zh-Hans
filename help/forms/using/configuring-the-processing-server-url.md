@@ -1,5 +1,5 @@
 ---
-title: 配置AEM DS设置
+title: 配置 AEM DS 设置
 description: 了解如何在提交表单之前指定处理服务器URL。
 contentOwner: amgoyal
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,19 +11,19 @@ solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 0%
+source-wordcount: '242'
+ht-degree: 3%
 
 ---
 
-# 配置AEM DS设置{#configuring-aem-ds-settings}
+# 配置 AEM DS 设置{#configuring-aem-ds-settings}
 
 本文介绍了如何配置&#x200B;**AEM DS设置服务**。 此设置可用于多种场景，例如：
 
 * 在通信管理中
 
-   * 用于配置AEM Forms工作流程
-   * 使用Forms门户远程保存草稿/提交内容时
+  * 用于配置AEM Forms工作流程
+  * 使用Forms门户远程保存草稿/提交内容时
 
 * 在自适应表单中，适用于从发布实例提交自适应表单的情况
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
 1. 在相应字段中添加以下信息：
 
-   **[!UICONTROL 处理服务器URL]**：处理服务器是必须触发Forms或AEM工作流的服务器。 这可以与AEM创作实例的URL或其他服务器URL(即https://localhost:port/)相同。
+   **[!UICONTROL 处理服务器URL]**：处理服务器是必须触发Forms或AEM工作流的服务器。 这可以与AEM创作实例的URL或其他服务器URL（即https://localhost:port/）相同。
 
    **[!UICONTROL 正在处理服务器用户名]**：工作流用户的用户名[基于正在使用的服务器URL]
 

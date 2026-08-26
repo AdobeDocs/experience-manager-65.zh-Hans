@@ -12,7 +12,7 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1142'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## 简介 {#introduction}
 
-构思功能为Publish环境中的登录站点访客（社区成员）提供了一个用于执行以下操作的区域：
+构思功能为发布环境中的登录站点访客（社区成员）提供了一个用于执行以下操作的区域：
 
 * 提出想法并与社区分享。
 * 查看和评论想法。
@@ -30,7 +30,7 @@ ht-degree: 0%
 
 此文档的此部分描述了：
 
-* 将构思功能添加到AEM站点。
+* 向AEM站点添加构思功能。
 * 构思组件的配置设置。
 
 ### 向页面添加构思 {#adding-a-ideation-to-a-page}

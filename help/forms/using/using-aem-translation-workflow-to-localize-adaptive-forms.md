@@ -1,5 +1,5 @@
 ---
-title: 使用AEM翻译工作流将自适应表单和记录文档本地化
+title: 使用 AEM 翻译工作流对自适应表单和记录文档进行本地化
 description: 了解如何使用AEM翻译工作流本地化自适应表单和记录文档。
 content-type: reference
 topic-tags: develop
@@ -10,14 +10,14 @@ solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 20%
+source-wordcount: '814'
+ht-degree: 24%
 
 ---
 
-# 使用AEM翻译工作流将自适应表单和记录文档本地化 {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
+# 使用 AEM 翻译工作流对自适应表单和记录文档进行本地化 {#using-aem-translation-workflow-to-localize-adaptive-forms-and-document-of-record}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 本地化的表单可帮助您跨地域提供更广泛的受众。 Adobe Experience Manager翻译工作流可帮助您本地化自适应表单及其记录文档。 您可以使用&#x200B;**机器翻译**&#x200B;或&#x200B;**人工翻译员**&#x200B;本地化自适应表单。
 
@@ -46,16 +46,16 @@ ht-degree: 20%
 
    有关记录文档设置和配置的更多信息，请参阅：
 
-[记录文档模板配置](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
+   [记录文档模板配置](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-template-configuration-p)
 
-[记录文档设置](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
+   [记录文档设置](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md#p-document-of-record-settings-p)
 
 1. [自定义记录文档的品牌信息](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md)，并确保将浏览器区域设置设置为使用计算机语言将自适应表单本地化的相同语言。 浏览器区域设置有助于本地化记录文档中的品牌信息。
-1. 要查看本地化的记录文档，请选择生成预览。 记录文档PDF在浏览器中生成并在新选项卡中打开。
+1. 要查看本地化的记录文档，请选择生成预览。 生成记录文档PDF并在浏览器的新选项卡中打开。
 
 ## 使用人工翻译本地化自适应表单及其记录文档 {#localizing-an-adaptive-form-and-its-document-of-record-using-human-translation}
 
-在人工翻译中，内容将发送给翻译提供商并由专业翻译人员进行翻译。 完成后，将返回翻译的内容并将其导入 AEM。当您的翻译提供商与 AEM 集成时，内容会在 AEM 和翻译提供商之间自动发送。
+在人工翻译中，内容将发送给翻译提供商并由专业翻译人员进行翻译。 完成后，将返回翻译的内容并将其导入 AEM。 当您的翻译提供商与 AEM 集成时，内容会在 AEM 和翻译提供商之间自动发送。
 
 对于翻译，包含XLIFF格式文件的词典将与专业翻译人员共享。 该词典包括适用于每种区域设置的单独的XLIFF文件。 每个XLIFF文件都包含将向最终用户显示的文本，以及相应的本地化文本的占位符。
 

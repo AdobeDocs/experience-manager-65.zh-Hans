@@ -1,6 +1,6 @@
 ---
 title: 访问和填写已发布的表单
-description: Forms Portal为Web开发人员提供了组件，以便在使用Adobe Experience Manager (AEM)创作的网站上创建和自定义Forms Portal。
+description: Forms Portal为Web开发人员提供了组件，以便在使用Forms (AEM)创作的网站上创建和自定义Adobe Experience Manager Portal。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
@@ -11,8 +11,8 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '935'
-ht-degree: 0%
+source-wordcount: '942'
+ht-degree: 1%
 
 ---
 
@@ -30,7 +30,7 @@ Forms Portal可减少管理开销和生产延迟。 它为Web开发人员配备�
 
 导航到已发布的Forms Portal页面。 有关创建Forms Portal页面的详细信息，请参阅[创建Forms Portal页面](../../forms/using/creating-form-portal-page.md)。
 
-Forms Portal的搜索和列表程序组件显示AEM服务器的Publish实例上可用的表单。 此列表包含在创作Forms Portal页面时在筛选器中定义的所有表单或表单。 Forms Portal页面看起来类似于，如下图所示：
+Forms Portal的搜索和列表程序组件显示AEM服务器的发布实例上可用的表单。 此列表包含在创作Forms Portal页面时在筛选器中定义的所有表单或表单。 Forms Portal页面看起来类似于，如下图所示：
 
 ![示例表单门户页面](assets/forms-portal-page.png)
 
@@ -42,7 +42,7 @@ Forms Portal页面示例
 
 * 在面板、卡片或网格视图中列出现成可用的表单。 它还支持Forms Manager中特定文件夹的自定义templatesList表单。
 * 指定表单的呈现方式 — HTML5、PDF或两者。
-* 指定PDF和XFA表单的呈现方式 — HTML5、PDF或两者。 非XFA表单作为HTML5。
+* 指定PDF和XFA表单的呈现方式 — HTML5、PDF或两者。 非XFA表单，即HTML5。
 * 启用基于条件（如表单属性、元数据和标记）的表单搜索。
 * 将表单数据提交到Servlet。
 * 使用自定义样式表(CSS)自定义门户的外观。
