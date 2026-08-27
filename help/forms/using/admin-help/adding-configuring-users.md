@@ -7,7 +7,7 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 0%
@@ -169,7 +169,7 @@ AEM表单无法区分用户ID和密码相同但属于不同域的用户帐户。
 * 通信管理解决方案
 * AEM forms Workspace
 
-  ***注意&#x200B;**：已为AEM Forms版本弃用Flex Workspace。*
+  ***注意&#x200B;**： AEM Forms版本已弃用Flex Workspace。*
 
 * 表单管理器
 * 流程报告

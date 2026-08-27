@@ -9,9 +9,9 @@ exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
-source-wordcount: '2495'
+source-wordcount: '2503'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ ht-degree: 0%
 
 **应用程序管理员：**&#x200B;可以使用所有Workbench功能。 可以使用Administration Console中的“应用程序和服务”页来配置服务运行时属性、端点和安全性。
 
-**AEM Forms管理员：**&#x200B;可以为所有已安装的服务执行所有任务。
+**AEM表单管理员：**&#x200B;可以为所有已安装的服务执行所有任务。
 
 **安全管理员：**&#x200B;控制用户管理设置，并管理与任何用户管理器域关联的用户和组
 
@@ -48,35 +48,35 @@ ht-degree: 0%
 
 ### 其他默认角色 {#additional-default-roles}
 
-根据您安装的AEM Forms组件，可能包括以下其他默认角色
+根据您安装的AEM表单组件，可能包括以下其他默认角色
 
 **Document Upload Application User：**&#x200B;可以使用Flex Remoting上载文档。
 
 **Forms管理员：**&#x200B;可以从“管理控制台”的Forms页面查看和修改设置
 
-**AEM Forms Contentspace管理员：**&#x200B;可以从管理控制台中的“内容服务（已弃用）”页面查看和修改设置
+**AEM forms Contentspace管理员：**&#x200B;可以从管理控制台中的“内容服务（已弃用）”页面查看和修改设置
 
 **AEM forms Contentspace用户：**&#x200B;可以登录Contentspace（已弃用）网页
 
 **Documentum Connector Administrator：**&#x200B;可以从管理控制台中的“EMC Documentum连接器”页面查看和修改设置
 
-**AEM Forms FileNet连接器管理员：**&#x200B;可以从管理控制台中的IBM FileNet连接器页面查看和修改设置
+**AEM forms FileNet Connector管理员：**&#x200B;可以从管理控制台中的IBM FileNet连接器页面查看和修改设置
 
 **AEM forms IBM CM连接器管理员：**&#x200B;可以从管理控制台中的IBM Content Manager连接器页面查看和修改设置
 
-**Rights Management管理员：**&#x200B;执行相关Rights Management页上所有服务器配置所需的所有任务
+**Rights Management管理员：**&#x200B;执行相关Rights Management页面上所有服务器配置所需的所有任务
 
 **Rights Management最终用户：**&#x200B;可以访问Rights Management最终用户网页
 
 **Rights Management邀请用户：**&#x200B;可以邀请用户
 
-**Rights Management管理受邀用户和本地用户：**&#x200B;可以执行管理相关Rights Management页上的所有受邀用户和本地用户所需的任务
+**Rights Management管理受邀用户和本地用户：**&#x200B;可以执行管理相关Rights Management页面上的所有受邀用户和本地用户所需的任务
 
-**Rights Management策略集管理员：**&#x200B;执行相关Rights Management页上所有策略集所需的所有任务
+**Rights Management策略集管理员：**&#x200B;执行相关Rights Management页面上所有策略集所需的所有任务
 
-**Rights Management超级管理员：**&#x200B;执行Rights Management页所需的所有任务
+**Rights Management超级管理员：**&#x200B;执行Rights Management页面所需的所有任务
 
-**AEM forms Workspace管理员：**&#x200B;可以在“管理控制台”的Workspace页面中查看和修改设置
+**AEM表单Workspace管理员：**&#x200B;可以在“管理控制台”的Workspace页面中查看和修改设置
 
 ***注意&#x200B;**： AEM Forms版本已弃用Flex Workspace。*
 
@@ -84,7 +84,7 @@ ht-degree: 0%
 
 **输出管理员：**&#x200B;可以从管理控制台的“输出”页面查看和修改设置
 
-**PDFG管理员：**&#x200B;可以从管理控制台的“PDF Generator”页面查看和修改设置
+**PDFG管理员：**&#x200B;可以从管理控制台的PDF Generator页面查看和修改设置
 
 **PDFG用户：**&#x200B;可以访问PDF Generator的所有非管理功能
 
@@ -96,7 +96,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Forms版本弃用Flex工作区。
+>AEM Forms版本已弃用Flex Workspace。
 
 ## 创建角色 {#create-a-role}
 
@@ -143,7 +143,7 @@ ht-degree: 0%
 
 ## 删除角色 {#delete-a-role}
 
-您可以删除已创建的任何角色，但不能删除产品中包含的默认AEM表单角色。
+您可以删除之前创建的任何角色，但不会删除产品中包含的默认AEM表单角色。
 
 1. 在管理控制台中，单击设置>用户管理>角色管理，然后单击角色名称。
 
@@ -184,7 +184,7 @@ ht-degree: 0%
 
 **ADD_REMOVE_ENDPOINT_PERM：**&#x200B;添加、删除和修改服务的端点
 
-**登录Admin Console：**&#x200B;查看管理控制台
+**Admin Console登录：**&#x200B;查看管理控制台
 
 **证书修改：**&#x200B;修改信任存储区中任意证书的信任设置
 
@@ -222,7 +222,7 @@ ht-degree: 0%
 
 **DELETE_版本_PERM：**&#x200B;删除服务的版本
 
-**文档上载：**&#x200B;在AEM表单中上载文档
+**文档上传：**&#x200B;在AEM表单中上传文档
 
 **域控制：**&#x200B;创建、删除或修改任何用户管理域的设置，包括其身份验证和目录提供程序
 
@@ -254,7 +254,7 @@ ht-degree: 0%
 
 **PERM_OUTPUT_ADMIN：**&#x200B;输出管理员
 
-**PERM_READER_扩展_WEB_APPLICATION：**&#x200B;使用Acrobat Reader DC扩展Web应用程序
+**PERM_READER_EXTENSIONS_WEB_APPLICATION：**&#x200B;使用Acrobat Reader DC扩展Web应用程序
 
 **PERM_SP_ADMIN：**&#x200B;管理SharePoint连接器设置
 
@@ -300,13 +300,13 @@ ht-degree: 0%
 
 **Rights Management策略集编辑策略：**&#x200B;编辑策略集中的策略
 
-**Rights Management策略集管理文档发布者：**&#x200B;在创建策略集时，您为用户分配文档发布者的角色。 文档发布者是使用策略保护文档的用户。
+**Rights Management策略集管理Document Publisher：**&#x200B;在创建策略集时，您为用户分配Document Publisher的角色。 文档发布者是使用策略保护文档的用户。
 
 **Rights Management策略集删除协调器：**&#x200B;从策略集中删除策略集协调器
 
 **Rights Management策略集撤销文档：**&#x200B;撤销对策略集中文档的访问权限
 
-**Rights Management策略集切换策略：**&#x200B;文档切换策略
+**Rights Management策略集切换策略：**&#x200B;切换文档策略
 
 **Rights Management策略集取消撤销文档：**&#x200B;取消撤销文档
 

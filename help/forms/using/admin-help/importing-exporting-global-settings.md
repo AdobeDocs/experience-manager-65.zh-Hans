@@ -9,9 +9,9 @@ exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1219'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Forms版本弃用Flex工作区。
+>AEM Forms版本已弃用Flex Workspace。
 
 例如，您可以通过导出一个环境中的搜索模板定义和全局设置并将它们导入另一个环境，来从开发环境移动到生产环境。
 
@@ -70,7 +70,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->AEM Forms版本弃用Flex工作区。
+>AEM Forms版本已弃用Flex Workspace。
 
 Workspace全局设置文件包含以下设置：
 
@@ -90,7 +90,7 @@ Workspace全局设置文件包含以下设置：
 
 ### JGgroup设置 {#jgroup-settings}
 
-仅当您从AdobeLiveCycleES 2.5或更早版本升级过时，才会显示这些设置。
+仅当您从Adobe LiveCycle ES 2.5或更早版本升级过时，才会显示这些设置。
 
 **server_remoteevents_ClientTimeoutMilliseconds：** JGroup等待事件消息的最长时间。 此设置不应更改。
 
@@ -132,7 +132,7 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 **server_debugLevel：**&#x200B;不更改此设置。
 
-**client_pollingInterval：**&#x200B;设置(JEE上已弃用的AEM表单)Flex Workspace上使用的轮询间隔（以秒为单位）以检测新任务和修改的任务。 默认值为3秒。 这在AEM Forms Workspace中不起作用。
+**client_pollingInterval：**&#x200B;设置（JEE上的AEM表单已弃用） Flex Workspace上使用的轮询间隔（以秒为单位）以检测新任务和修改的任务。 默认值为3秒。 这在AEM Forms Workspace中不起作用。
 
 **client_systemContext_name：**&#x200B;指定要在AEM Forms Workspace中任务附件的“添加者”字段（在“附件”选项卡中）中显示的自定义名称（例如“公民”）。
 
