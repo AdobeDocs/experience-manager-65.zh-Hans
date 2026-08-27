@@ -1,5 +1,5 @@
 ---
-title: Workspace概述
+title: 工作区概述
 description: 工作区允许用户启动、参与和跟踪业务流程。 让我们进一步了解工作区。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,14 @@ exl-id: da1224e4-566a-402f-9d8b-27fda5f3101b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
 workflow-type: tm+mt
 source-wordcount: '124'
-ht-degree: 0%
+ht-degree: 4%
 
 ---
 
-# Workspace概述 {#overview-of-workspace}
+# 工作区概述 {#overview-of-workspace}
 
 Workspace允许用户启动、参与和跟踪业务流程。
 
@@ -28,7 +28,7 @@ Workspace允许用户启动、参与和跟踪业务流程。
 
 >[!NOTE]
 >
->AEM Forms版本弃用Flex工作区。
+>AEM Forms版本已弃用Flex Workspace。
 
 >[!NOTE]
 >
