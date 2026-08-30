@@ -10,10 +10,10 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 7%
+source-wordcount: '1582'
+ht-degree: 8%
 
 ---
 
@@ -51,7 +51,7 @@ Adobe Analytics帐户必须：
 
 ### 配置AEM以使用您的Adobe Analytics数据中心 {#configuring-aem-to-use-your-adobe-analytics-data-centers}
 
-Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html?lang=zh-Hans)收集、处理和存储与您的Adobe Analytics报表包关联的数据。 配置AEM以使用托管Adobe Analytics报表包的数据中心。 您的合同中提到了数据中心。 请联系您组织中的管理员以了解此信息。
+Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics/analyze/reports-analytics/reporting-interface/overview-data-collection.html)收集、处理和存储与您的Adobe Analytics报表包关联的数据。 配置AEM以使用托管Adobe Analytics报表包的数据中心。 您的合同中提到了数据中心。 请联系您组织中的管理员以了解此信息。
 
 如有必要，请使用以下内容路由到正确的数据中心： `https://api.omniture.com/`。
 
@@ -84,9 +84,13 @@ Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics
 
 >[!CAUTION]
 >
+>[Adobe Analytics 1.4 API的生命周期已结束](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/)。 因此，不再支持使用用户凭据（用户名和密码）的Adobe Analytics配置。
+
+>[!CAUTION]
+>
 >由于 Adobe Analytics API 的安全性更改，AEM 内置的 Activity Map 版本已无法继续使用。
 >
->现在应使用Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hans)提供的ActivityMap插件。
+>现在应使用Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap插件。
 
 ## 为Activity Map配置 {#configuring-for-the-activity-map}
 
@@ -94,7 +98,7 @@ Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics
 >
 >由于 Adobe Analytics API 的安全性更改，AEM 内置的 Activity Map 版本已无法继续使用。
 >
->现在应使用Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hans)提供的ActivityMap插件。
+>现在应使用Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)提供的[ActivityMap插件。
 
 ## 创建Adobe Analytics框架 {#creating-a-adobe-analytics-framework}
 
@@ -150,21 +154,21 @@ Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics
 
 * **跟踪服务器**
 
-   * 包含用于发送Adobe Analytics调用的URL
+  * 包含用于发送Adobe Analytics调用的URL
 
-      * `cname` — 默认为Adobe Analytics帐户的&#x200B;*公司名称*
-      * `d1` — 对应于将信息发送到的数据中心（`d1`、`d2`或`d3`）
-      * `sc.omtrdc.net` — 域名
+    * `cname` — 默认为Adobe Analytics帐户的&#x200B;*公司名称*
+    * `d1` — 对应于将信息发送到的数据中心（`d1`、`d2`或`d3`）
+    * `sc.omtrdc.net` — 域名
 
 * **安全跟踪服务器**
 
-   * 具有与跟踪服务器相同的区段
-   * 用于从安全页面(`https://`)发送数据
+  * 具有与跟踪服务器相同的区段
+  * 用于从安全页面(`https://`)发送数据
 
 * **访客命名空间**
 
-   * 命名空间可确定跟踪URL的第一部分。
-   * 例如，将命名空间更改为&#x200B;**CNAME**&#x200B;会导致对Adobe Analytics进行的调用类似于&#x200B;**CNAME.d1.omtrdc.net**，而不是默认调用。
+  * 命名空间可确定跟踪URL的第一部分。
+  * 例如，将命名空间更改为&#x200B;**CNAME**&#x200B;会导致对Adobe Analytics进行的调用类似于&#x200B;**CNAME.d1.omtrdc.net**，而不是默认调用。
 
 ## 将页面与Adobe Analytics框架关联 {#associating-a-page-with-a-adobe-analytics-framework}
 
@@ -174,7 +178,7 @@ Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics
 
 1. 从&#x200B;**站点**&#x200B;控制台中，选择要使用跟踪设置的页面。
 1. 直接从控制台或页面编辑器打开&#x200B;**[页面属性](/help/sites-authoring/editing-page-properties.md)**。
-1. 打开 **&#x200B; Cloud Services**&#x200B;选项卡。
+1. 打开** Cloud Services**选项卡。
 
 1. 使用&#x200B;**添加配置**&#x200B;下拉菜单从可用选项中选择&#x200B;**Adobe Analytics**。 如果存在继承，请在选择器可用之前禁用继承。
 
@@ -183,7 +187,7 @@ Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics
 1. 选择&#x200B;**保存并关闭**。
 1. 要激活该页面和任何连接的配置/文件，请&#x200B;**[发布](/help/sites-authoring/publishing-pages.md)**&#x200B;该页面。
 1. 最后一步是访问发布实例上的页面，并使用&#x200B;**搜索**&#x200B;组件搜索关键字（例如，茄子）。
-1. 然后，您可以使用适当的工具检查对Adobe Analytics进行的调用；例如[Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html?lang=zh-Hans)。
+1. 然后，您可以使用适当的工具检查对Adobe Analytics进行的调用；例如[Adobe Experience Cloud Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html)。
 1. 根据提供的示例，调用应包含在eVar7中输入的值（即，eggplant），并且事件列表应包含event3。
 
 ### 页面视图 {#page-views}
@@ -198,17 +202,17 @@ Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics
 
 * **获取尝试**：
 尝试获取已排队报告的次数。
-默认值为`6`。
+默认为 `6`。
 
 * **获取延迟**：
 尝试获取已排队报告的间隔毫秒数。
-默认值为`10000`。由于这是以毫秒为单位的，因此它对应于10秒。
+默认为 `10000`。 由于这是以毫秒为单位的，因此它对应于10秒。
 
 * **提取频率**：
 用于确定提取Analytics报告的频率的`cron`表达式。
 默认值为`0 0 0/12 * * ?`；这对应于每小时12次提取。
 
-要配置此OSGi服务，您可以使用存储库[&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中的[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或osgiConfig节点（服务PID为`com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`）。
+要配置此OSGi服务，您可以使用存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中的[Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)或[osgiConfig节点（服务PID为`com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`）。
 
 ## 编辑Adobe Analytics配置和/或框架 {#editing-adobe-analytics-configurations-and-or-frameworks}
 

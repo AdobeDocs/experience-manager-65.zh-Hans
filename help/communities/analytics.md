@@ -10,9 +10,9 @@ role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 86ce8d1ead6f2b760eb0d037042ddfc2af418913
 workflow-type: tm+mt
-source-wordcount: '2785'
+source-wordcount: '2821'
 ht-degree: 1%
 
 ---
@@ -31,14 +31,14 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
 * 在发布环境中：
 
-   * 社区[趋势](/help/communities/trends.md)的报告
-   * 允许网站访客按“查看次数最多”、“最活跃”、“最喜欢”进行排序
-   * 查看UGC（用户生成的内容）列表计数
+  * 社区[趋势](/help/communities/trends.md)的报告
+  * 允许网站访客按“查看次数最多”、“最活跃”、“最喜欢”进行排序
+  * 查看UGC（用户生成的内容）列表计数
 
 * 在创作环境中：
 
-   * 在[成员管理控制台](/help/communities/members.md)中显示参与率数据（查看次数、帖子、关注次数、点赞）
-   * 启用资源[报告](/help/communities/reports.md)的趋势摘要、视频心率和视频设备
+  * 在[成员管理控制台](/help/communities/members.md)中显示参与率数据（查看次数、帖子、关注次数、点赞）
+  * 启用资源[报告](/help/communities/reports.md)的趋势摘要、视频心率和视频设备
 
 支持的社区功能包括：
 
@@ -71,7 +71,7 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 * **用户名**
 
   有权管理Analytics帐户的用户登录用户名
-（应包括Web服务访问权限）。
+  （应包括Web服务访问权限）。
 
 * **密码**
 
@@ -87,37 +87,37 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
 ## 用于视频报表的Adobe Analytics报表包 {#adobe-analytics-report-suite-for-video-reporting}
 
-使用Adobe Experience Cloud的[报表包管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=zh-Hans)，可以配置Analytics报表包，以便启用社区站点来提供社区功能报表。
+使用Adobe Experience Cloud的[报表包管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html)，可以配置Analytics报表包，以便启用社区站点来提供社区功能报表。
 
-通过使用[公司名称和用户名](/help/communities/analytics.md#prerequisites)登录到[Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans)，可以将新的或现有的报表包配置为具有：
+通过使用[公司名称和用户名](/help/communities/analytics.md#prerequisites)登录到[Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)，可以将新的或现有的报表包配置为具有：
 
-* [11转化变量](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=zh-Hans) (eVar)
+* [11转化变量](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) (eVar)
 
-   * **`evar1`**&#x200B;到&#x200B;**`evar11`**&#x200B;已启用
+  * **`evar1`**&#x200B;到&#x200B;**`evar11`**&#x200B;已启用
 
-   * 可以重新利用（重命名）现有eVar或创建用于Communities功能的项目
+  * 可以重新利用（重命名）现有eVar或创建用于Communities功能的项目
 
-* [7个成功事件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=zh-Hans) （个事件）
+* [7个成功事件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) （个事件）
 
-   * **`event1`**&#x200B;到&#x200B;**`event7`**&#x200B;已启用
+  * **`event1`**&#x200B;到&#x200B;**`event7`**&#x200B;已启用
 
-   * 类型&#x200B;**`Counter`**
+  * 类型&#x200B;**`Counter`**
 
-      * 不是&#x200B;**`Counter (no subrelations)`**
+    * 不是&#x200B;**`Counter (no subrelations)`**
 
-   * 可以重新利用（重命名）现有事件或创建要用于Communities功能的事件
+  * 可以重新利用（重命名）现有事件或创建要用于Communities功能的事件
 
-* [视频管理](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)
+* [视频管理](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
-   * 视频报表控制台
+  * 视频报表控制台
 
-      * 启用`Video Core`
-      * 选择保存
+    * 启用`Video Core`
+    * 选择保存
 
-   * 视频核心测量控制台
+  * 视频核心测量控制台
 
-      * 选择`Use Solution Variables`
-      * 选择保存
+    * 选择`Use Solution Variables`
+    * 选择保存
 
 如果使用&#x200B;**新报表包**，则新报表包可能仅包含4个evar和6个事件变量，而社区需要11个evar和7个事件变量。
 
@@ -159,6 +159,10 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
 ## AEM Analytics Cloud服务配置 {#aem-analytics-cloud-service-configuration}
 
+>[!CAUTION]
+>
+>[Adobe Analytics 1.4 API的生命周期已结束](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/)。 因此，不再支持使用用户凭据（用户名和密码）的Adobe Analytics配置。
+
 要创建Analytics集成，以便使用Adobe Analytics实例上的标准UI将AEM与社区站点集成，请执行以下操作：
 
 * 从全局导航： **[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 云服务]**
@@ -177,11 +181,13 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
 * **标题**
 
-  （必需）配置的显示标题。例如，输入&#x200B;*社区分析*
+  （必需）配置的显示标题。
+  例如，输入*社区分析*
 
 * **名称**
 
-  （可选）如果未指定，则名称默认为从标题派生的有效节点名称。例如，输入&#x200B;*社区*
+  （可选）如果未指定，则名称默认为从标题派生的有效节点名称。
+  例如，输入*社区*
 
 * **模板**
 
@@ -189,7 +195,7 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
 * 选择&#x200B;**创建**
 
-   * 启动配置页面并打开`Analytics Settings`对话框
+  * 启动配置页面并打开`Analytics Settings`对话框
 
 ### Analytics设置对话框 {#analytics-settings-dialog}
 
@@ -233,10 +239,10 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
 * 选择&#x200B;**连接到Analytics**
 
-   * 如果不成功，
+  * 如果不成功，
 
-      * 验证条目是否不包含前导空格。
-      * 尝试使用其他数据中心。
+    * 验证条目是否不包含前导空格。
+    * 尝试使用其他数据中心。
 
 * 选择&#x200B;**确定**。
 
@@ -253,11 +259,12 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 * **标题**
 
   （必需）框架的显示标题
-例如，输入*Community Framework*。
+  例如，输入*Community Framework*。
 
 * **名称**
 
-  （可选）如果未指定，则名称默认为从标题派生的有效节点名称。例如，输入&#x200B;*社区*。
+  （可选）如果未指定，则名称默认为从标题派生的有效节点名称。
+  例如，输入*社区*。
 
 * *模板*
 
@@ -316,8 +323,8 @@ Analytics云服务和框架现已完成。 在启用了此Analytics服务的情�
 要在[创建社区站点](/help/communities/sites-console.md)时添加Analytics Cloud服务，请执行以下操作：
 
 * 在步骤3中的[ANALYTICS选项卡](/help/communities/sites-console.md#analytics)下：
-   * 选中&#x200B;**启用Analytics**&#x200B;复选框。
-   * 从下拉框中选择框架。
+  * 选中&#x200B;**启用Analytics**&#x200B;复选框。
+  * 从下拉框中选择框架。
 
 * 或者，返回到Analytics框架配置以调整变量映射。
 
@@ -329,8 +336,8 @@ Analytics云服务和框架现已完成。 在启用了此Analytics服务的情�
 * 选择社区站点的编辑站点图标。
 * 选择设置。
 * 在Analytics部分中：
-   * 选中&#x200B;**启用Analytics**&#x200B;复选框。
-   * 从下拉框中选择框架。
+  * 选中&#x200B;**启用Analytics**&#x200B;复选框。
+  * 从下拉框中选择框架。
 
 * 或者，返回到Analytics框架配置以调整变量映射。
 
@@ -634,27 +641,28 @@ Adobe Analytics凭据已加密。 为了便于作者和发布者之间复制或�
 * 在主发布服务器上，使用管理权限登录。
 * 导航到[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。 例如，[https://localhost:4503/crx/de](https://localhost:4503/crx/de)。
 
-* 在语言根的`jcr:content`节点（例如，`/content/sites/engage/en/jcr:content`）下，导航到为Analytics报表配置的组件。例如，**`analytics/reportConfigs/social_forum_components_hbs_topic`**
+* 在语言根的`jcr:content`节点（例如，`/content/sites/engage/en/jcr:content`）下，导航到为Analytics报表配置的组件。
+例如，**`analytics/reportConfigs/social_forum_components_hbs_topic`**
 
 * 请注意创建的时间段：
 
-   * `last30Days`
-   * `last90Days`
-   * `thisYear`
+  * `last30Days`
+  * `last90Days`
+  * `thisYear`
 
 * 注意`total`节点。
 
-   * 修改&#x200B;**`interval`**&#x200B;属性会覆盖报表导入程序时间间隔。
-   * 该值以秒为单位，设置为四小时（14400秒）。
+  * 修改&#x200B;**`interval`**&#x200B;属性会覆盖报表导入程序时间间隔。
+  * 该值以秒为单位，设置为四小时（14400秒）。
 
 ![组件报告](assets/component-report.png)
 
 ## 在Analytics中管理用户数据 {#manage-user-data-in-analytics}
 
-Adobe Analytics提供了允许您访问、导出和删除用户数据的API。 有关详细信息，请参阅[提交访问和删除请求](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hans)。
+Adobe Analytics提供了允许您访问、导出和删除用户数据的API。 有关详细信息，请参阅[提交访问和删除请求](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)。
 
 ## 资源 {#resources}
 
-* Adobe Experience Cloud： [Analytics帮助和引用](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hans)
+* Adobe Experience Cloud： [Analytics帮助和引用](https://experienceleague.adobe.com/docs/analytics.html)
 * AEM： [与Adobe Analytics集成](/help/sites-administering/adobeanalytics.md)
 * AEM：[Analytics与外部提供程序](/help/sites-administering/external-providers.md)

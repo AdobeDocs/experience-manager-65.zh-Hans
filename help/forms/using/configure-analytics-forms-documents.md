@@ -9,14 +9,20 @@ exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1546'
-ht-degree: 3%
+source-wordcount: '1611'
+ht-degree: 2%
 
 ---
 
 # 使用Cloud Service框架的Analytics {#analyticsusingcloudframework}
+
+>[!CAUTION]
+>
+>适用于AEM Forms的Analytics功能板已弃用。 您无法再在AEM Forms中查看Analytics报表。 要查看表单分析数据，请使用Adobe Analytics UI。
+>
+>此外，[Adobe Analytics 1.4 API的生命周期已结束](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/)。 因此，不再支持使用用户凭据（用户名和密码）的Adobe Analytics配置。
 
 AEM Forms与Analytics集成，允许您捕获和跟踪已发布表单和文档的性能指标。 分析这些指标的目的在于，根据有关使表单或文档更有用所需的更改的数据做出明智的决策。
 
