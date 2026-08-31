@@ -10,10 +10,10 @@ exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 36265810f0284acfd13dfd01d89c250d9923cd45
+source-git-commit: f6f6552b10cbc84d9e39e46905c2fa68201d4d96
 workflow-type: tm+mt
-source-wordcount: '1491'
-ht-degree: 7%
+source-wordcount: '1582'
+ht-degree: 8%
 
 ---
 
@@ -84,6 +84,10 @@ Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics
 
 >[!CAUTION]
 >
+>[Adobe Analytics 1.4 API的生命周期已结束](https://developer.adobe.com/analytics-apis/docs/1.4/guides/eol/)。 因此，不再支持使用用户凭据（用户名和密码）的Adobe Analytics配置。
+
+>[!CAUTION]
+>
 >由于 Adobe Analytics API 的安全性更改，AEM 内置的 Activity Map 版本已无法继续使用。
 >
 >现在应使用Adobe Analytics[&#128279;](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hans)提供的ActivityMap插件。
@@ -150,21 +154,21 @@ Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics
 
 * **跟踪服务器**
 
-   * 包含用于发送Adobe Analytics调用的URL
+  * 包含用于发送Adobe Analytics调用的URL
 
-      * `cname` — 默认为Adobe Analytics帐户的&#x200B;*公司名称*
-      * `d1` — 对应于将信息发送到的数据中心（`d1`、`d2`或`d3`）
-      * `sc.omtrdc.net` — 域名
+    * `cname` — 默认为Adobe Analytics帐户的&#x200B;*公司名称*
+    * `d1` — 对应于将信息发送到的数据中心（`d1`、`d2`或`d3`）
+    * `sc.omtrdc.net` — 域名
 
 * **安全跟踪服务器**
 
-   * 具有与跟踪服务器相同的区段
-   * 用于从安全页面(`https://`)发送数据
+  * 具有与跟踪服务器相同的区段
+  * 用于从安全页面(`https://`)发送数据
 
 * **访客命名空间**
 
-   * 命名空间可确定跟踪URL的第一部分。
-   * 例如，将命名空间更改为&#x200B;**CNAME**&#x200B;会导致对Adobe Analytics进行的调用类似于&#x200B;**CNAME.d1.omtrdc.net**，而不是默认调用。
+  * 命名空间可确定跟踪URL的第一部分。
+  * 例如，将命名空间更改为&#x200B;**CNAME**&#x200B;会导致对Adobe Analytics进行的调用类似于&#x200B;**CNAME.d1.omtrdc.net**，而不是默认调用。
 
 ## 将页面与Adobe Analytics框架关联 {#associating-a-page-with-a-adobe-analytics-framework}
 
@@ -198,11 +202,11 @@ Adobe Analytics [数据中心](https://experienceleague.adobe.com/docs/analytics
 
 * **获取尝试**：
 尝试获取已排队报告的次数。
-默认值为`6`。
+默认为 `6`。
 
 * **获取延迟**：
 尝试获取已排队报告的间隔毫秒数。
-默认值为`10000`。由于这是以毫秒为单位的，因此它对应于10秒。
+默认为 `10000`。 由于这是以毫秒为单位的，因此它对应于10秒。
 
 * **提取频率**：
 用于确定提取Analytics报告的频率的`cron`表达式。
