@@ -6,9 +6,9 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: 4a2915dc890887ad8c7174d3ef5f1de8413fd8f4
+source-git-commit: b30bc6ce844cacce396a09c5195c48083b96a9ec
 workflow-type: tm+mt
-source-wordcount: '7412'
+source-wordcount: '7444'
 ht-degree: 21%
 
 ---
@@ -372,7 +372,8 @@ ContextHub现在加载时不会出现JavaScript错误，从而中断个性化。
 
 #### 安全性{#foundation-security-6525}
 
-AEM现在会列入允许列表其他包含客户端密钥的关键字。 当受支持的集成使用这些客户端密钥命名模式时，配置创建不再失败。 (GRANITE-66495)
+* AEM现在会列入允许列表其他包含客户端密钥的关键字。 当受支持的集成使用这些客户端密钥命名模式时，配置创建不再失败。 (GRANITE-66495)
+* Sling XSS包现在使用Java HTML清理器库，应使用`XSSAPI#filterHTML()`方法安全地呈现HTML内容，而不是将数据传递到其他API。 (GRANITE-63840)
 
 <!-- #### Sling{#foundation-sling-6525} -->
 
