@@ -6,17 +6,17 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
 workflow-type: tm+mt
-source-wordcount: '2477'
-ht-degree: 38%
+source-wordcount: '2559'
+ht-degree: 37%
 
 ---
 
 
 # 编辑页面属性{#editing-page-properties}
 
-您可以为页面定义所需的属性。这些属性会因页面性质而异。例如，某些页面可能已连接到Live Copy，而其他页面未连接到，因此Live Copy信息会根据需要变得可用。
+您可以为页面定义所需的属性。 这些属性会因页面性质而异。 例如，某些页面可能已连接到Live Copy，而其他页面未连接到，因此Live Copy信息会根据需要变得可用。
 
 ## 页面属性 {#page-properties}
 
@@ -27,34 +27,34 @@ ht-degree: 38%
 #### 标题和标记 {#tile}
 
 * **标题** — 页面的标题显示在各种位置
-   * 例如，**网站**&#x200B;选项卡列表和&#x200B;**站点**&#x200B;卡片/列表视图。
-   * 这是必填字段。
+  * 例如，**网站**&#x200B;选项卡列表和&#x200B;**站点**&#x200B;卡片/列表视图。
+  * 这是必填字段。
 * **标记** — 在此，可以通过更新选择框中的列表在页面中添加或删除标记。
-   * 选择某个标记后，该标记会列在选择框的下方。 您可以使用“x”从此列表中移除标记。
-   * 通过在空的选择框中键入名称可输入新标记。
-      * 当您按Enter键时，将创建新标记。
-      * 新标记将在右侧显示一个小星号，指示它是新标记。
-   * 通过下拉列表，您可以从现有标记中进行选择。
-   * 当您将鼠标悬停在选择框中的标记条目上时，会显示 x，用于为此页面删除该标记。
-   * 有关标记的详细信息，请参阅[使用标记。](/help/sites-authoring/tags.md)
+  * 选择某个标记后，该标记会列在选择框的下方。 您可以使用“x”从此列表中移除标记。
+  * 通过在空的选择框中键入名称可输入新标记。
+    * 当您按Enter键时，将创建新标记。
+    * 新标记将在右侧显示一个小星号，指示它是新标记。
+  * 通过下拉列表，您可以从现有标记中进行选择。
+  * 当您将鼠标悬停在选择框中的标记条目上时，会显示 x，用于为此页面删除该标记。
+  * 有关标记的详细信息，请参阅[使用标记。](/help/sites-authoring/tags.md)
 * **在导航中隐藏** — 指示在生成的站点的页面导航中是显示还是隐藏页面
 
 #### 品牌化 {#branding}
 
-通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。 此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)中的页面组件。
 
 * **覆盖** – 选中可在此页面上定义品牌概要。
-   * 该值会由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
+  * 该值会由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
 * **覆盖值** — 要附加到页面标题的品牌概要的文本
-   * 该值附加到页面标题后的竖线字符（如`Cycling Tuscany | Always ready for the WKND`）
+  * 该值附加到页面标题后的竖线字符（如`Cycling Tuscany | Always ready for the WKND`）
 
 #### 更多标题和描述 {#more}
 
 * **页面标题** — 要在页面上使用的标题
-   * 通常由标题组件使用
-   * 如果留空，则会使用&#x200B;**标题**。
+  * 通常由标题组件使用
+  * 如果留空，则会使用&#x200B;**标题**。
 * **导航标题** — 您可以指定单独的标题以在导航中使用（例如，如果您希望某些内容能更加简洁）。
-   * 如果留空，则会使用&#x200B;**标题**。
+  * 如果留空，则会使用&#x200B;**标题**。
 * **子标题** — 要在页面上使用的子标题
 * **描述** — 页面的描述、用途或要添加的任何其他详细信息
 
@@ -62,15 +62,17 @@ ht-degree: 38%
 
 页面的打开/关闭时间是一种临时隐藏已发布内容的便捷方法。 关闭发布实例后，内容仍会保留在该实例上。 关闭页面不会取消发布内容。
 
-* **开启时间** – 使已发布页面在发布环境中可见（呈现）的日期和时间。该页面必须手动发布或通过预配置的自动复制进行发布。
+* **开启时间** – 使已发布页面在发布环境中可见（呈现）的日期和时间。 该页面必须手动发布或通过预配置的自动复制进行发布。
 
-   * 如果已经[发布，](/help/sites-authoring/publishing-pages.md)此页面在发布实例上可用，但在指定时间呈现之前保持隐匿（隐藏）状态。
-   * 如果未发布并[配置为自动复制，](/help/sites-deploying/replication.md)则页面将在指定的时间自动发布，然后呈现。
-   * 如果未发布且未配置为自动复制，则该页面不会自动发布，因此在尝试访问该页面时将会显示404。
+  * 如果已经[发布，](/help/sites-authoring/publishing-pages.md)此页面在发布实例上可用，但在指定时间呈现之前保持隐匿（隐藏）状态。
+  * 如果未发布并[配置为自动复制，](/help/sites-deploying/replication.md)则页面将在指定的时间自动发布，然后呈现。
+  * 如果未发布且未配置为自动复制，则该页面不会自动发布，因此在尝试访问该页面时将会显示404。
 
 * **结束时间** – 与&#x200B;**开启时间**&#x200B;类似并且经常与其结合使用，可定义已发布页面在发布环境中隐藏的时间。
 
 对于要发布的页面，请将这些字段（**开启时间**&#x200B;和&#x200B;**关闭时间**）留空，这些字段可立即在发布环境中使用并可用，直到它们被停用（一般场景）。
+
+配置打开/关闭时间后，您将在站点控制台](/help/sites-authoring/basic-handling.md#views)的[列表和卡片视图以及控制台侧面板的[时间线视图中看到与打开时间相关的其他图标和信息。](/help/sites-authoring/basic-handling.md#timeline)
 
 >[!NOTE]
 >如果&#x200B;**开启时间**&#x200B;或&#x200B;**结束时间**&#x200B;是过去的时间，并且已配置自动复制，则会立即触发相关操作。
@@ -85,7 +87,7 @@ ht-degree: 38%
 
 输入此页面的虚URL，这样可让您的URL长度更短和/或更具有表现性。
 
-例如，如果将网站`welcome`的虚URL设置为由路径`/v1.0/startpage`标识的页面`http://example.com,`，则`http://example.com/welcome`将是`http://example.com/content/v1.0/startpage`的虚URL
+例如，如果将网站`http://example.com,`的虚URL设置为由路径`/v1.0/startpage`标识的页面`welcome`，则`http://example.com/welcome`将是`http://example.com/content/v1.0/startpage`的虚URL
 
 >[!CAUTION]
 >
@@ -95,7 +97,7 @@ ht-degree: 38%
 >* 不支持正则表达式模式。
 >* 不应设置为现有页面。
 
-配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#enabling-access-to-vanity-urls-vanity-urls)。
+配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)。
 
 * **添加** — 点击或单击可添加虚URL。
 * **删除** — 点击或单击可删除虚URL。
@@ -110,10 +112,10 @@ ht-degree: 38%
 * **重定向** – 指示此页面应自动重定向到的页面
 * **设计** — 指示用于此页面的[设计](/help/sites-developing/designer.md)。
 * **别名** – 指定要用于此页面的别名
-   * 例如，如果您为页面 `/content/wknd/us/en/magazine/members-only` 定义别名 `private`，则也可以通过 `/content/wknd/us/en/magazine/private` 访问此页面
-   * 创建别名将设置页面节点上的 `sling:alias` 属性，这只会影响资源，而不会影响存储库路径。
-   * 无法发布编辑器中按别名处理的页面。编辑器中的[发布选项](/help/sites-authoring/publishing-pages.md)仅适用于通过其实际路径访问的页面。
-   * 有关详细信息，请参阅SEO和URL管理最佳实践下的[本地化的页面名称](/help/managing/seo-and-url-management.md#localized-page-names)。
+  * 例如，如果您为页面 `/content/wknd/us/en/magazine/members-only` 定义别名 `private`，则也可以通过 `/content/wknd/us/en/magazine/private` 访问此页面
+  * 创建别名将设置页面节点上的 `sling:alias` 属性，这只会影响资源，而不会影响存储库路径。
+  * 无法发布编辑器中按别名处理的页面。 编辑器中的[发布选项](/help/sites-authoring/publishing-pages.md)仅适用于通过其实际路径访问的页面。
+  * 有关详细信息，请参阅SEO和URL管理最佳实践下的[本地化的页面名称](/help/managing/seo-and-url-management.md#localized-page-names)。
 
 #### 配置 {#configuration}
 
@@ -147,9 +149,9 @@ ht-degree: 38%
 #### SEO {#seo}
 
 * **规范URL** — 用于覆盖页面的规范URL
-   * 如果留空，则页面的URL是它的规范URL。
-* **Robots标记** — 使用下拉菜单选择Robots标记以控制搜索引擎爬网程序的行为
-   * 有些选项会相互冲突，在这种情况下，以更宽松的选项为准。
+  * 如果留空，则页面的URL是它的规范URL。
+* **Robots标签** — 使用下拉菜单选择Robots标签，以控制搜索引擎爬虫的行为
+  * 有些选项会相互冲突，在这种情况下，以更宽松的选项为准。
 * **生成站点地图** — 在选中时，将为此页面及其后代生成`sitemap.xml`。
 
 ### 图像 {#images}
@@ -175,18 +177,18 @@ ht-degree: 38%
 
 * **Cloud Service配置** — 定义用于页面的云服务的配置
 * **继承自** — 对于活动副本和语言副本，默认从Blueprint继承云配置。
-   * 取消选中以覆盖继承
+  * 取消选中以覆盖继承
 
 ### 个性化 {#personalization}
 
 #### ContextHub 配置 {#contexthub}
 
 * **继承自** — 默认情况下，ContextHub配置继承自父页面。
-   * 取消选中以覆盖继承。
+  * 取消选中以覆盖继承。
 * **ContextHub路径** — 选择[ContextHub配置](/help/sites-developing/ch-configuring.md)
 * **段路径** — 选择[段路径](/help/sites-administering/segmentation.md)。
 
-#### 定位配置 {#targeting}
+#### 目标选择配置 {#targeting}
 
 选择一个[品牌以指定定位范围。](/help/sites-authoring/target-adobe-campaign.md)
 
@@ -214,7 +216,7 @@ ht-degree: 38%
 
 ### Blueprint {#blueprint}
 
-此选项卡仅对用作 Blueprint 的页面可见。Blueprint 用作 Live Copy 的基础，并且是[多站点管理](/help/sites-administering/msm.md)的一部分。
+此选项卡仅对用作 Blueprint 的页面可见。 Blueprint 用作 Live Copy 的基础，并且是[多站点管理](/help/sites-administering/msm.md)的一部分。
 
 * **转出** — 启动Blueprint内容到活动副本的转出
 * **Live Copy概述** — 打开一个窗口以浏览Live Copy页面结构
@@ -223,7 +225,7 @@ ht-degree: 38%
 
 ### Live Copy {#live-copy}
 
-此选项卡仅对配置为 Live Copy 的页面可见。与[Blueprint一样，](#blueprint)活动副本是[多站点管理的一部分。](/help/sites-administering/msm.md)
+此选项卡仅对配置为 Live Copy 的页面可见。 与[Blueprint一样，](#blueprint)活动副本是[多站点管理的一部分。](/help/sites-administering/msm.md)
 
 * **同步** — 将Live Copy与Blueprint同步，并保留本地修改
 * **重置** — 将Live Copy重置为Blueprint的状态，并删除本地修改
@@ -251,16 +253,16 @@ ht-degree: 38%
 
 * 从&#x200B;**Sites**&#x200B;控制台中：
 
-   * [创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)（属性的子集）
+  * [创建页面](/help/sites-authoring/managing-pages.md#creating-a-new-page)（属性的子集）
 
-   * 单击或点按&#x200B;**属性**
+  * 单击或点按&#x200B;**属性**
 
-      * 单页面
-      * 多个页面（只有一部分属性可用于整体编辑）
+    * 单页面
+    * 多个页面（只有一部分属性可用于整体编辑）
 
 * 从页面编辑器中：
 
-   * 使用&#x200B;**页面信息**（然后&#x200B;**打开属性**）
+  * 使用&#x200B;**页面信息**（然后&#x200B;**打开属性**）
 
 ### 从 Sites 控制台中 – 单个页面 {#from-the-sites-console-single-page}
 
@@ -302,9 +304,9 @@ ht-degree: 38%
 
 >[!NOTE]
 >
->也可以对资源使用批量编辑属性功能。两者相似，但在几个方面有所不同。 有关详细信息，请参阅[编辑多个Assets的属性](/help/assets/metadata.md)。
+>也可以对资源使用批量编辑属性功能。 两者相似，但在几个方面有所不同。 有关详细信息，请参阅[编辑多个Assets的属性](/help/assets/metadata.md)。
 >
->还有[批量编辑器](/help/sites-administering/bulk-editor.md)。 通过此编辑器，您可以使用GQL(Google查询语言)从多个页面搜索内容，然后直接使用批量编辑器编辑内容，再将更改保存到原始页面。
+>还有[批量编辑器](/help/sites-administering/bulk-editor.md)。 通过此编辑器，您可以使用GQL（Google查询语言）从多个页面搜索内容，然后直接使用批量编辑器编辑内容，再将更改保存到原始页面。
 
 可以通过多种方法选择要批量编辑的多个页面，这些方法包括：
 
@@ -322,7 +324,7 @@ ht-degree: 38%
 * 属于同一资源类型
 * 不是 Live Copy 的一部分
 
-   * 如果有任何页面在 Live Copy 中，则会在属性打开时显示一条消息。
+  * 如果有任何页面在 Live Copy 中，则会在属性打开时显示一条消息。
 
 进入“批量编辑”后，可以执行以下操作：
 
@@ -330,23 +332,23 @@ ht-degree: 38%
 
   查看多个页面的页面属性时，您可以看到以下内容：
 
-   * 受影响的页面列表
+  * 受影响的页面列表
 
-      * 您可以根据需要进行选择/取消选择
+    * 您可以根据需要进行选择/取消选择
 
-   * 选项卡
+  * 选项卡
 
-      * 与查看单页面的属性时一样，这些属性按选项卡进行排序。
+    * 与查看单页面的属性时一样，这些属性按选项卡进行排序。
 
-   * 一部分属性
+  * 一部分属性
 
-      * 将显示所有选定页面的可用属性，这些属性已明确定义为可批量编辑。
-      * 如果将选择的页面减少到一页，则会显示所有属性。
+    * 将显示所有选定页面的可用属性，这些属性已明确定义为可批量编辑。
+    * 如果将选择的页面减少到一页，则会显示所有属性。
 
-   * 具有相同值的通用属性
+  * 具有相同值的通用属性
 
-      * 在“查看”模式中，只显示具有相同值的属性。
-      * 当字段为多值（例如，标记）时，仅当&#x200B;*所有*&#x200B;为公共值时才会显示值。 如果只有一些是通用的，则仅在编辑时才显示它们。
+    * 在“查看”模式中，只显示具有相同值的属性。
+    * 当字段为多值（例如，标记）时，仅当&#x200B;*所有*&#x200B;为公共值时才会显示值。 如果只有一些是通用的，则仅在编辑时才显示它们。
 
   如果不存在具有相同值的属性，则会显示一条消息。
 
@@ -354,13 +356,13 @@ ht-degree: 38%
 
   编辑多个页面的页面属性时：
 
-   * 您可以更新可用字段中的值。
+  * 您可以更新可用字段中的值。
 
-      * 当您选择&#x200B;**完成**&#x200B;时，新值会应用于所有选定页面。
-      * 当字段有多个值时（例如，“标记”），您可以附加新值或删除公共值。
+    * 当您选择&#x200B;**完成**&#x200B;时，新值会应用于所有选定页面。
+    * 当字段有多个值时（例如，“标记”），您可以附加新值或删除公共值。
 
-   * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如文本`<Mixed Entries>`。
+  * 如果不同页面具有相同的字段，但这些字段的值不同，则会用一个特殊的值表示它们，例如文本`<Mixed Entries>`。
 
 >[!NOTE]
 >
->可以对页面组件进行配置，以指定可批量编辑的字段。请参阅[配置页面以批量编辑页面属性](/help/sites-developing/bulk-editing.md)。
+>可以对页面组件进行配置，以指定可批量编辑的字段。 请参阅[配置页面以批量编辑页面属性](/help/sites-developing/bulk-editing.md)。
