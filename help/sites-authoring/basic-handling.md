@@ -10,10 +10,10 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 8cb06cb2240f4ba460493dda1615cb64006d4646
+source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
 workflow-type: tm+mt
-source-wordcount: '3016'
-ht-degree: 41%
+source-wordcount: '3122'
+ht-degree: 39%
 
 ---
 
@@ -253,11 +253,11 @@ ht-degree: 41%
 
   从&#x200B;**工具**&#x200B;控制台，您还可以访问外部&#x200B;**资源**：
 
-   * **文档**
-查看Web Experience Management文档
+  * **文档**
+    查看Web Experience Management文档
 
-   * **开发人员资源**
-开发人员资源和下载
+  * **开发人员资源**
+    开发人员资源和下载
 
   >[!NOTE]
   >
@@ -404,33 +404,34 @@ ht-degree: 41%
 
 列视图允许通过一系列的层叠列，对内容树进行可视化导航。 通过此视图，可以查看和遍历您网站的树结构。
 
-选择最左列的资源会在右侧的列中显示子资源。 在右列中选择资源，会在右列的另一列中显示子资源，依此类推。
+选择最左列的资源会在右侧的列中显示子资源。 在右列中选择资源，会在右侧的另一列中显示子资源，依此类推。
 
 * 您可以通过点按或单击资源名称或资源名称右侧的V形标记在树中向上和向下导航。
 
-   * 点按或单击时，资源名称和V形会突出显示。
+  * 点按或单击时，资源名称和V形会突出显示。
 
-     ![列视图](assets/bh-17.png)
+    ![列视图](assets/bh-17.png)
 
-   * 单击/点按的资源的子资源将在其右侧的列中显示。
-   * 如果单击没有子级的资源名称，其详细信息将显示在最后一列中。
+  * 单击/点按的资源的子资源将在其右侧的列中显示。
+  * 如果单击没有子级的资源名称，其详细信息将显示在最后一列中。
 
 * 点按或单击缩略图将选择资源。
 
-   * 选中后，缩略图上将叠加一个复选标记，并且资源名称也会突出显示。
-   * 所选资源的详细信息将显示在最后一列。
-   * 操作工具栏会变得可用。
+  * 选中后，缩略图上将叠加一个复选标记，并且资源名称也会突出显示。
+  * 所选资源的详细信息将显示在最后一列。
+  * 操作工具栏会变得可用。
 
-     ![列视图](assets/bh-18.png)
+    ![列视图](assets/bh-18.png)
 
   在列视图中选择页面时，所选页面将与以下详细信息一起显示在最后一列中：
 
-   * 页面标题
-   * 页面名称（页面 URL 的一部分）
-   * 页面所基于的模板
-   * 修改详细信息
-   * 页面语言
-   * 发布详细信息
+  * 页面标题
+  * 页面名称（页面 URL 的一部分）
+  * 页面所基于的模板
+  * 修改详细信息
+  * 页面语言
+  * 发布详细信息
+  * [页面打开/关闭时间](/help/sites-authoring/editing-page-properties.md#on-off-time)（如果已设置）
 
 ### 信息卡视图 {#card-view}
 
@@ -438,13 +439,13 @@ ht-degree: 41%
 
 * 信息卡视图显示各个项目在当前级别的信息信息卡。 它们提供如下信息：
 
-   * 页面内容的可视表示形式。
-   * 页面标题。
-   * 重要日期（如上次编辑时间、上次发布时间）。
-   * 页面被锁定、隐藏或是Live Copy的一部分时。
-   * （在适当时）您何时需要在工作流中采取相应的操作。
+  * 页面内容的可视表示形式。
+  * 页面标题。
+  * 重要日期（如上次编辑时间、上次发布时间）。
+  * 页面被锁定、隐藏或是Live Copy的一部分时。
+  * （在适当时）您何时需要在工作流中采取相应的操作。
 
-      * 指示必需操作的标记可能与您的[收件箱](/help/sites-authoring/inbox.md)中的条目相关。
+    * 指示必需操作的标记可能与您的[收件箱](/help/sites-authoring/inbox.md)中的条目相关。
 
 * 此视图中还提供了[快速操作](#quick-actions)，例如选择以及编辑之类的常用操作。
 
@@ -463,26 +464,31 @@ ht-degree: 41%
 
   ![列表视图 — 选择全部](assets/bh-20.png)
 
-   * 如果选择了列表中的所有项目，此复选框即会显示为选中状态。
+  * 如果选择了列表中的所有项目，此复选框即会显示为选中状态。
 
-      * 要取消全选，请单击复选框。
+    * 要取消全选，请单击复选框。
 
-   * 如果只选择了部分项目，此复选框中会显示一个减号。
+  * 如果只选择了部分项目，此复选框中会显示一个减号。
 
-      * 要选择全部，请单击复选框。
-      * 要取消全选，请再次单击复选框。
+    * 要选择全部，请单击复选框。
+    * 要取消全选，请再次单击复选框。
 
 * 使用位于“视图”按钮下方的&#x200B;**视图设置**&#x200B;选项选择要显示的列。 可以显示以下列：
 
-   * **名称** – 页面名称，在多语言创作环境中非常有用，因为它是页面 URL 的一部分，无论用户使用何种语言，都不会发生更改
-   * **修改时间** – 上次修改日期和上次修改用户
-   * **发布时间** – 发布状态
-   * **模板** – 页面所基于的模板
-   * **工作流** – 当前应用于页面的工作流。 当您将鼠标悬停在上面或打开时间轴时，会提供更多信息。
+  * **名称** – 页面名称，在多语言创作环境中非常有用，因为它是页面 URL 的一部分，无论用户使用何种语言，都不会发生更改
+  * **修改时间** – 上次修改日期和上次修改用户
+    * 如果自上次发布后页面已更新，则列条目将带有警告图标。
+    * ![自上次发布后已修改](assets/modified.png)
+  * **发布时间** – 发布状态
+    * 如果页面设置了[打开/关闭时间](/help/sites-authoring/editing-page-properties.md#on-time)，则列条目将带有时钟图标。
+    * 将鼠标悬停在图标上可查看详细信息。
+    * ![开关时间集](assets/on-off-time.png)
+  * **模板** – 页面所基于的模板
+  * **工作流** – 当前应用于页面的工作流。 当您将鼠标悬停在上面或打开时间轴时，会提供更多信息。
 
-   * **页面分析**
-   * **独特访客**
-   * **页面停留时间**
+  * **页面分析**
+  * **独特访客**
+  * **页面停留时间**
 
   ![查看设置 — 配置列](assets/bh-21.png)
 
@@ -542,25 +548,27 @@ ht-degree: 41%
 
 * [查看与选定项目相关的各种事件](#timelineviewevents)。
 
-   * 可以从下拉列表中选择事件类型：
+  * 可以从下拉列表中选择事件类型：
 
-      * [评论](#timelineaddingandviewingcomments)
-      * 注释
-      * 活动
-      * [启动项](/help/sites-authoring/launches.md)
-      * [版本](/help/sites-authoring/working-with-page-versions.md)
-      * [工作流](/help/sites-authoring/workflows-applying.md)
+    * [评论](#timelineaddingandviewingcomments)
+    * 注释
+    * 活动，包括编辑和发布
+      * 如果页面设置了[打开/关闭时间](/help/sites-authoring/editing-page-properties.md#on-off-time)，并且当前时间在打开/关闭时间窗口之外，则可能会显示“页面无效”活动。
+      * 这仅表示页面超出其有效期限，不一定表示页面已取消发布。
+    * [启动项](/help/sites-authoring/launches.md)
+    * [版本](/help/sites-authoring/working-with-page-versions.md)
+    * [工作流](/help/sites-authoring/workflows-applying.md)
 
-         * [临时工作流](/help/sites-developing/workflows.md#transient-workflows)除外，因为没有保存它们的历史记录信息
+      * [临时工作流](/help/sites-developing/workflows.md#transient-workflows)除外，因为没有保存它们的历史记录信息
 
-      * 并全部显示
+    * 并全部显示
 
 * [添加/查看有关所选项目的备注](#timelineaddingandviewingcomments)。 **评论**&#x200B;框显示在事件列表的底部。 键入评论后跟回车可注册该评论。 选择“注释”或“显 **示全部** ” **时，将显示** “注释”。
 
 * 特定的控制台还具有其他功能。 例如，在站点控制台中，您可以执行以下操作：
 
-   * [保存版本](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui)。
-   * [启动工作流](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail)。
+  * [保存版本](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui)。
+  * [启动工作流](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail)。
 
 这些选项可通过&#x200B;**评论**&#x200B;字段旁边的V形标记访问。
 
@@ -576,8 +584,8 @@ ht-degree: 41%
 * [语言副本](/help/sites-administering/tc-prep.md#seeing-the-status-of-language-roots)
 * 内容引用：
 
-   * 从其他页面到所选页面的直接链接
-   * 引用组件在选定页面中借用的内容、借出的内容或两者同时借用的内容
+  * 从其他页面到所选页面的直接链接
+  * 引用组件在选定页面中借用的内容、借出的内容或两者同时借用的内容
 
 ![bh-28](assets/bh-28.png)
 
