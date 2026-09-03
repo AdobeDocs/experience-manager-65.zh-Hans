@@ -72,7 +72,7 @@ ht-degree: 37%
 
 对于要发布的页面，请将这些字段（**开启时间**&#x200B;和&#x200B;**关闭时间**）留空，这些字段可立即在发布环境中使用并可用，直到它们被停用（一般场景）。
 
-配置打开/关闭时间后，您将在站点控制台](/help/sites-authoring/basic-handling.md#views)的[列表和卡片视图以及控制台侧面板的[时间线视图中看到与打开时间相关的其他图标和信息。](/help/sites-authoring/basic-handling.md#timeline)
+配置打开/关闭时间后，您将在站点控制台[&#128279;](/help/sites-authoring/basic-handling.md#views)的列表和卡片视图以及控制台侧面板的[时间线视图中看到与打开时间相关的其他图标和信息。](/help/sites-authoring/basic-handling.md#timeline)
 
 >[!NOTE]
 >如果&#x200B;**开启时间**&#x200B;或&#x200B;**结束时间**&#x200B;是过去的时间，并且已配置自动复制，则会立即触发相关操作。
