@@ -32,7 +32,7 @@ Adobe提供两个版本的Commerce integration framework：
 
 ## 部署其他实施 {#deploying-other-implementations}
 
-对于AEM和Adobe Commerce，请参阅[使用[AEM和Adobe Commerce集成](/help/commerce/cif/integrating/magento.md)Commerce integration framework](/help/commerce/cif/introduction.md)。
+对于AEM和Adobe Commerce，请参阅[&#128279;](/help/commerce/cif/introduction.md)使用[AEM和Adobe Commerce集成](/help/commerce/cif/integrating/magento.md)Commerce integration framework。
 
 >[!NOTE]
 >
