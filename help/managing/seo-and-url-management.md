@@ -395,7 +395,7 @@ AEM Sites 包含 `SitemapGenerator` 的默认实施，它将遍历页面树以�
 要限制 Sitemap 的内容，可以在需要时实施以下服务接口：
 
 * 可以实施 [SitemapPageFilter](https://javadoc.io/doc/com.adobe.cq.wcm/com.adobe.aem.wcm.seo/latest/com/adobe/aem/wcm/seo/sitemap/SitemapPageFilter.html)，以在由 AEM Sites 特定的 Sitemap 生成器生成的 XML Sitemap 中隐藏页面
-* 可以实施 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 或 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)，以从由 [Commerce 集成框架](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)特定的 Sitemap 生成器生成的 XML Sitemap 筛选出产品或类别
+* 可以实施 [SitemapProductFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapProductFilter.html) 或 [SitemapCategoryFilter](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/sitemap/SitemapCategoryFilter.html)，以从由 [Commerce 集成框架](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html?lang=zh-Hans)特定的 Sitemap 生成器生成的 XML Sitemap 筛选出产品或类别
 
 如果默认实施无法满足特定用例，或扩展点不够灵活，您可以实施自定义的 `SitemapGenerator`，以完全控制生成的 Sitemap 内容。 以下示例使用了 AEM Sites 的默认实施逻辑。 它使用 [ResourceTreeSitemapGenerator](https://javadoc.io/doc/org.apache.sling/org.apache.sling.sitemap/latest/org/apache/sling/sitemap/spi/generator/ResourceTreeSitemapGenerator.html) 作为起点来遍历页面树：
 

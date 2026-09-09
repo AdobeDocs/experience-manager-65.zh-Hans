@@ -50,7 +50,7 @@ PIM数据通过GraphQL请求向AEM和客户端公开。 Adobe的建议是将PIM�
 
 ## &#x200B;9. AEM Dispatcher的缓存失效如何与AEM和Commerce一起使用？
 
-Adobe 建议为 Dispatcher 上缓存的页面设置基于 TTL 的缓存失效。 对于价格或股票等动态信息，Adobe建议在客户端渲染日期。 有关基于TTL的缓存失效的详细信息，请参阅[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html)
+Adobe 建议为 Dispatcher 上缓存的页面设置基于 TTL 的缓存失效。 对于价格或股票等动态信息，Adobe建议在客户端渲染日期。 有关基于TTL的缓存失效的详细信息，请参阅[AEM Dispatcher](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17458.html?lang=zh-Hans)
 
 ## &#x200B;10. 是否建议使用Commerce跨AEM内容进行统一搜索？
 
@@ -70,7 +70,7 @@ Adobe建议在AEM中管理与营销相关的数据和内容。 利用内容片�
 
 ## &#x200B;14. 当公司在整个展示层中使用AEM时，如何确保PCI合规性？
 
-Adobe 建议使用抽象的付款方式。 这样做可使浏览器客户端与支付网关提供商直接通信，以便Adobe不会保留或传递持卡人日期，也不会保留商业解决方案。 此方法仅需要 3 级 PCI 合规性。 但是，要完全符合 PCI 标准，还需要考虑其他事项，例如员工如何与系统和数据交互。 有关Adobe Commerce PCI合规性的详细信息，请参阅[PCI合规性](https://business.adobe.com/products/magento/pci-compliance.html)
+Adobe 建议使用抽象的付款方式。 这样做可使浏览器客户端与支付网关提供商直接通信，以便Adobe不会保留或传递持卡人日期，也不会保留商业解决方案。 此方法仅需要 3 级 PCI 合规性。 但是，要完全符合 PCI 标准，还需要考虑其他事项，例如员工如何与系统和数据交互。 有关Adobe Commerce PCI合规性的详细信息，请参阅[PCI合规性](https://business.adobe.com/cn/products/magento/pci-compliance.html)
 
 ## &#x200B;15. 如果我使用AEM和Adobe Commerce云版本，则此联合解决方案是否符合PCI标准？
 
