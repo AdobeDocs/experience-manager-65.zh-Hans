@@ -127,9 +127,9 @@ ht-degree: 15%
 ### 新增功能 {#what-is-new-july}
 
 * CIF核心组件v2
-   * 简化并改进了PDP/PLP URL和SEO配置
-   * 创作模式下暂存的产品数据的视觉指示器，用于更好地显示即将发生的更改
-   * 内容和商务页面的新Sitemap组件
+  * 简化并改进了PDP/PLP URL和SEO配置
+  * 创作模式下暂存的产品数据的视觉指示器，用于更好地显示即将发生的更改
+  * 内容和商务页面的新Sitemap组件
 
 * 支持[Adobe Commerce AI产品推荐，由AEM Storefront中的Adobe AI](https://business.adobe.com/ai/adobe-genai.html)提供支持，使用预定义或动态创建的推荐
 
