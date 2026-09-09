@@ -10,7 +10,7 @@ feature: Compliance
 role: Developer,Leader
 source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
 workflow-type: tm+mt
-source-wordcount: '3793'
+source-wordcount: '3800'
 ht-degree: 98%
 
 ---
@@ -254,7 +254,7 @@ Resource myPage = req.getResource();
 
    使用Web控制台（例如，localhost：4502/system/console/configMgr），您可以配置Sling资源解析程序：
 
-   * **Apache Sling Resource Resolver Factory**
+   * **Apache Sling资源解析程序工厂**
      `(org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl)`。
 
    Adobe 建议您将缩短 URL 所需的映射构建为正则表达式，然后在构建中包含的 `config.publish` 下的 OsgiConfignode 节点下定义这些配置。

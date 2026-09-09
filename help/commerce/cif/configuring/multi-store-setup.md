@@ -11,7 +11,7 @@ solution: Experience Manager,Commerce
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '416'
 ht-degree: 2%
 
 ---
@@ -22,13 +22,13 @@ AEM CIF核心组件可用于多个AEM站点结构，并且底层GraphQL客户端
 
 视频演练，详细介绍用于将多个Adobe Commerce Store视图与Adobe Experience Manager Sites集成的选项。
 
->[!VIDEO](https://video.tv.adobe.com/v/32824/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/32824/?captions=chi_hans&quality=12)
 
 Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration framework配合使用，以全局方式跨地区和区域管理站点。
 
-建议的设置是在AEM网站与Adobe Commerce商店视图之间使用1:1关系。
+建议的设置是在AEM网站与Adobe Commerce商店视图之间使用1:1的关系。
 
-要将AEM站点和AEM CIF核心组件也连接到专用存储视图，请执行以下步骤：
+要将AEM站点和AEM CIF核心组件连接到专用商店视图，请执行以下步骤：
 
 ## 配置 {#configuration}
 
@@ -36,7 +36,7 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 
 2. 确保AEM与Adobe Commerce之间的连接正常。
 
-3. 按照以下步骤创建CIFCloud Service配置的子配置：
+3. 按照以下步骤创建CIF Cloud Service配置的子配置：
 
    * 在AEM中，转到“工具”>“常规”>[配置浏览器](/help/sites-administering/configurations.md#using-configuration-browser)
    * 选择您创建的基本配置
@@ -46,7 +46,7 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 
    >[!TIP]
    >
-   >Commerce目录可以通过使用ID或UID来寻址。 Adobe Commerce 2.4.2中引入了UID。仅当您的Commerce后端支持版本2.4.2或更高版本的GraphQL架构时，才启用此功能。
+   >Commerce目录可以通过使用ID或UID来寻址。 Adobe Commerce 2.4.2中引入了UID。 仅当您的Commerce后端支持版本2.4.2或更高版本的GraphQL架构时，才启用此功能。
 
 4. 将子配置分配给AEM站点
 
@@ -61,4 +61,4 @@ Live Copy和Language Copy的AEM多站点管理功能可与Commerce integration f
 * [Adobe Commerce网站、商店和视图](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html?lang=zh-Hans)
 * [AEM CIF核心组件 — 多存储/站点配置](https://github.com/adobe/aem-core-cif-components#multi-store--site-configuration)
 * [使用多站点管理器](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/translation/multi-site-manager-feature-video-use.html?lang=zh-Hans)
-* [重用内容：多站点管理器和 Live Copy](/help/sites-administering/msm.md)
+* [重用内容：多网站管理器和 Live Copy](/help/sites-administering/msm.md)

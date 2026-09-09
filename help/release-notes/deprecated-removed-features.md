@@ -24,7 +24,7 @@ Adobe 持续评估产品功能，并在长期演进中不断重塑或替换旧�
 沟通有关即将删除或取代 Adobe Experience Manager（AEM）功能的消息时，适用以下规则：
 
 1. 首先发布弃用公告。 功能在弃用阶段仍可使用，但不会再进行改进。
-1. 最早会在下一个主要版本中移除已弃用的功能。 实际移除目标日期将在稍后公布。
+1. 最早会在下一个主要版本中移除已弃用的功能。 实际移除日期将在稍后公布。
 
 在实际移除之前，此过程将为客户提供至少一个发布周期时间，使客户的实施能够适应功能弃用后的新版本或后续版本。
 
@@ -50,14 +50,14 @@ Adobe 持续评估产品功能，并在长期演进中不断重塑或替换旧�
 | 动态标记管理器（DTM） | 与 DTM 的集成已弃用。 | 请改用 Adobe Experience Platform Launch 作为标记管理器。 |   |
 | Adobe Target | 在 AEM 6.5 中，新增了使用基于 [!DNL Adobe I/O] 的 Adobe Target Standard API（REST API）连接 Adobe Target 服务的功能，因此 Target Classic API（XML）方式已弃用。 | 请重新配置集成以[使用新的 API](/help/sites-administering/target.md)。 |  |
 | Adobe Target | 在 AEM 中使用基于 `mbox.js` 的 Adobe Target 集成已弃用。 | 请改用 `at.js` 1.x。 |  |
-| Commerce | 2018 年，[CIF REST](https://github.com/adobe/commerce-cif-api) 作为一组微服务提供，用于支持 AEM 与电商引擎的集成。 Adobe 在于 2018 年中期收购 Adobe Commerce（原 Magento）后，基于以下两点原因决定调整策略。 Commerce 已有自己的一套 Commerce API（REST 和 GraphQL），维持两套 API 并不是好的做法。 市场趋势表明，客户正逐步转向 GraphQL，因为这是一种更高效的数据查询方式。 2019 年，Adobe 发布了新的 Commerce 集成框架，其中使用 Commerce 的 GraphQL API 作为可信的数据源。 Adobe 不再计划对 CIF REST 进行进一步投入。 建议客户使用替代方案。 | 对于 AEM-Commerce 集成，请切换至 [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) 和 [AEM CIF 核心组件](https://github.com/adobe/aem-core-cif-components)。 请参阅[使用 Commerce 集成框架](/help/commerce/cif/integrating/magento.md)实现 AEM 与 Adobe Commerce 的集成。 支持采用该新方法的第三方（非 Commerce）集成已纳入 Adobe 的产品路线图。 |  |
+| Commerce | 2018 年，[CIF REST](https://github.com/adobe/commerce-cif-api) 作为一组微服务提供，用于支持 AEM 与电商引擎的集成。 Adobe 在 2018 年中期收购 Adobe Commerce（原 Magento）后，基于以下两点原因决定调整策略。 Commerce 已有自己的一套 Commerce API（REST 和 GraphQL），维持两套 API 并不是好的做法。 市场趋势表明，客户正逐步转向 GraphQL，因为这是一种更高效的数据查询方式。 2019 年，Adobe 发布了新的 Commerce 集成框架，其中使用 Commerce 的 GraphQL API 作为可信的数据源。 Adobe 不再计划对 CIF REST 进行进一步投入。 建议客户使用替代方案。 | 对于 AEM-Commerce 集成，请切换至 [AEM CIF Archetype](https://github.com/adobe/aem-cif-project-archetype) 和 [AEM CIF 核心组件](https://github.com/adobe/aem-core-cif-components)。 请参阅[使用 Commerce 集成框架](/help/commerce/cif/integrating/magento.md)实现 AEM 与 Adobe Commerce 的集成。 支持采用该新方法的第三方（非 Commerce）集成已纳入 Adobe 的产品路线图。 |  |
 | 组件（AEM Sites） | Adobe 不再计划对存储在 `/libs/foundation/components` 下的大多数基础组件进行进一步增强。 可在组件文件夹中查找 `cq:deprecated` 和 `cq:deprecatedReason` 属性。 AEM 6.5 仍包含基础组件，客户从早期版本升级后可继续按原方式使用。 此外，尽管这些基础组件已弃用，但仍为其提供支持。 | Adobe 建议在未来的项目中使用核心组件。 现有站点可保持不变，或使用 [AEM Modernize Tools Suite](https://github.com/adobe/aem-modernize-tools) 将站点重构为使用核心组件。 |  |
 | 组件（AEM Sites） | 从6.5开始，设计导入程序组件`/libs/wcm/designimporter/components`已被标记为已弃用。 Adobe不打算进一步增强设计导入程序实施。 | Adobe 计划在未来版本中为该用例提供替代实施。 |  |
 | 基础 | Granite 卸载框架。 Adobe 不再计划增强在 CQ 5.6.1 中引入的用于实现资产处理外部化的卸载框架。 | Adobe 正在开发下一代云原生卸载框架。 |  |
-| 开发人员 | `Hobbes.js`. Adobe 不再计划增强 `hobbes.js` 用户界面测试框架。 | Adobe 建议客户改用 Selenium 自动化工具。 |  |
+| 开发人员 | `Hobbes.js`. Adobe 不再计划增强 `hobbes.js` 用户界面测试框架。 | Adobe 建议客户使用 Selenium 自动化工具。 |  |
 | 开发人员 | jQuery UI 客户端库。 Adobe 不再计划维护和更新随发行版（快速入门）提供的 jQuery UI 客户端库。 | Adobe 建议仍需要 jQuery UI 的客户将其直接添加到项目代码库中。 |  |
 | 开发人员 | jQuery 动画客户端库（`granite.jquery.animation`）。 Adobe 不再计划维护和更新随发行版（快速入门）提供的 jQuery 动画客户端库。 | Adobe 建议仍需要 jQuery 动画的客户将其直接添加到项目代码库中。 |  |
-| 开发人员 | Handlebars 客户端库。 Adobe 不再计划维护和更新随发行版（快速入门）提供的 Handlebars 客户端库。 | Adobe 建议仍需要 `Handlebars` 的客户将其直接添加到项目代码库中。 |  |
+| 开发人员 | Handlebars 客户端库。 Adobe 不再计划维护和更新随发行版（快速入门）提供的 Handlebar 客户端库。 | Adobe 建议仍需要 `Handlebars` 的客户将其直接添加到项目代码库中。 |  |
 | 开发人员 | Lawnchair 客户端库。 Adobe 不再计划维护和更新随发行版（快速入门）提供的 Lawnchair 客户端库。 | Adobe 建议仍需要 Lawnchair 的客户将其直接添加到项目代码库中。 |  |
 | 开发人员 | `Granite.Sling.js` 客户端库。 Adobe 不再计划增强随发行版（快速入门）提供的 Granite.Sling.js 客户端库。 | Adobe 建议依赖此库功能的客户重构代码，以停止使用该库。 |  |
 | 开发人员 | 使用 YUI 对 JavaScript 客户端库进行压缩/缩小。 Adobe 不打算进一步更新 YUI 库。 在 AEM 6.4 之前，YUI 默认用于压缩 JavaScript，并提供切换至 Google Closure Compiler（GCC）的选项。 从 AEM 6.5 开始，GCC 成为默认选项。 | Adobe 建议升级至 AEM 6.5 的客户在实施中改用 GCC。 |  |
@@ -82,11 +82,11 @@ Adobe 持续评估产品功能，并在长期演进中不断重塑或替换旧�
 | Forms | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | 暂无替代方案。 |  |
 | Forms | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | 暂无替代方案 |  |
 | Forms | 从 LiveCycle ES4 SP1 直接升级到 JEE 上的 AEM 6.5 Forms 的单步升级不可用 | 请参阅 AEM Forms 升级文档中的[可用升级路径](../forms/using/upgrade.md)。 |  |
-| Forms | 已移除 JEE 上的 AEM Forms 中基于 UDP 的集群支持 | JEE 上的 AEM Forms 仅支持基于 TCP 的集群。 如果您将早期版本中的 UDP 多播服务器升级至 JEE 上的 AEM 5.5 Forms，请执行手动配置，以切换至基于 TCP 的 gemfire 集群。 详细说明请参阅[升级至 JEE 上的 AEM 6.5 Forms](../forms/using/upgrade-forms-jee.md)。 |  |
+| Forms | 已移除 JEE 上的 AEM Forms 中基于 UPD 的集群支持 | JEE 上的 AEM Forms 仅支持基于 TCP 的集群。 如果您将早期版本中的 UDP 多播服务器升级至 JEE 上的 AEM 5.5 Forms，请执行手动配置，以切换至基于 TCP 的 gemfire 集群。 详细说明请参阅[升级至 JEE 上的 AEM 6.5 Forms](../forms/using/upgrade-forms-jee.md)。 |  |
 | 开发人员 | Firebug Lite 已从默认发行版（快速入门）中移除。 | 请使用浏览器内置开发者控制台。 |  |
 | 开发人员 | HTML 客户端库管理器中对 `customJavaScriptPath` 的支持已移除。 | 暂无替代方案 |  |
 | [!DNL Assets] | 在 [!DNL Adobe Experience Manager] 6.5 中已移除资产卸载功能。 | 暂无替代方案。 |  |
-| 缓存 | `system/console/slingjsp` 已移除，并且在 AEM 6.5 中不再可用。 | 类和 Slightly 缓存存储在 Apache Sling Commons FileSystem ClassLoader 捆绑包下。 您可以在 AEM网页控制台中查看捆绑包编号，并直接从文件系统（`crx-quickstart/launchpad/felix/bundle<ID>`）中移除缓存文件夹。 |  |
+| 缓存 | `system/console/slingjsp` 已移除，并且在 AEM 6.5 中不再可用。 | 类和 Slightly 缓存存储在 Apache Sling Commons FileSystem ClassLoader 捆绑包中。 您可以在 AEM网页控制台中查看捆绑包编号，并直接从文件系统（`crx-quickstart/launchpad/felix/bundle<ID>`）中移除缓存文件夹。 |  |
 | Screens | 已移除 activemq 捆绑包支持及相关配置。 |  |  |
 
 <!--
