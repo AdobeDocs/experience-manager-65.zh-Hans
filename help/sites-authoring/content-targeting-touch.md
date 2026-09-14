@@ -14,9 +14,7 @@ source-git-commit: ee6294a03b2e4faf4e3c2dc8a466d03a0fb8a28a
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 72%
-
 ---
-
 # 使用定位模式创作目标内容{#authoring-targeted-content-using-targeting-mode}
 
 通过定位模块，您可以为AEM创作目标内容。 通过定位模式和 Target 组件，可以创建体验的内容：
