@@ -5,13 +5,11 @@ exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 15a33b28a5148473cf7942328a85c594249a3571
+source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
 workflow-type: tm+mt
-source-wordcount: '4046'
-ht-degree: 81%
-
+source-wordcount: '4751'
+ht-degree: 69%
 ---
-
 # Adobe Experience Manager Forms 热修复补丁{#aem-form-hotfix}
 
 本文列出了为解决 AEM Forms 的已知问题、提升其系统稳定性以及增强其整体性能而实施的重要修复。
@@ -19,6 +17,8 @@ ht-degree: 81%
 >[!NOTE]
 >
 > 这些热修复补丁是累积性的，其中包含所有先前的修复。 当您将最新的热修复补丁应用于某个版本时，它不仅会解决最新的问题，还会同时集成此前所有的错误修复和功能改进。
+>
+> 由于该修补程序是累积性的，因此如果在以前的Service Pack上应用它，则会使您的部署保持最新，其中包含Service Pack以及最新发布的修补程序。该修补程序不仅针对该修补程序所列出的问题，还构建在该修补程序之上。
 
 ## AEM Forms 热修复补丁 {#hotfix-for-aem-forms}
 
@@ -28,6 +28,52 @@ ht-degree: 81%
     <td><strong>日期</strong></td>
     <td><strong>热修复补丁下载链接（AEM 软件分发链接）</strong></td>
     <td><strong>修复的问题</strong></td>
+  </tr>
+  <tr>
+    <td>
+      <strong>2026年9月18日</strong><br>
+      <em>适用于：</em> AEM 6.5.25.0 Forms JEE部署(JBoss、WebLogic、WebSphere)<br>
+    </td>
+    <td>
+    <p><strong>要安装此修补程序，请按照以下顺序完成这些步骤：</strong></p>
+    <p><strong>步骤1：安装修补程序</strong></p>
+    <ul>
+    <strong>JBoss：</strong>
+    <li>Windows — 适用于JBoss JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-win-jboss.zip">适用于AEM Service Pack 6.5.25.0的修补程序</a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.25.0的修补程序，适用于JBoss JEE服务器</a><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/jboss/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-jboss.tar.gz"></li>
+    <strong>WebLogic：</strong>
+    <li>Windows — 适用于Weblogic JEE服务器的Windows上的<a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-win-weblogic.zip">适用于AEM Service Pack 6.5.25.0的修补程序</a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.25.0的修补程序，适用于Weblogic JEE服务器</a><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/weblogic/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-weblogic.tar.gz"></li>
+    <strong>WebSphere：</strong>
+    <li>Windows - <a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix2-6.5.25.0-win-websphere.zip">适用于Windows上的AEM Service Pack 6.5.25.0的修补程序（适用于Websphere JEE服务器）</a></li>
+    <li>Linux — 适用于Linux上的AEM Service Pack 6.5.25.0的修补程序，用于Websphere JEE服务器</a><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/websphere/adobe-aem-forms-jee-hotfix-6.5.25.0-linux-websphere.tar.gz"></li>
+    </ul>
+    <p>按照标准<a href="/help/release-notes/jee-patch-installer-65.md">AEM Forms JEE修补程序安装说明</a>操作。</p>
+    <p><strong>步骤2：安装漏洞修复捆绑包</strong></p>
+    <ul>
+    <li><a href="https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/hotfix/aem-6-5-25-0-hotfix/SP25Bundles_VULN-36670.zip">适用于AEM 6.5.25.0的漏洞修复捆绑包</a></li>
+    </ul>
+    <ol>
+    <li>在<code>http://&lt;host&gt;:&lt;port&gt;/lc/system/console/bundles</code>处打开OSGi控制台。</li>
+    <li>单击<strong>安装/更新</strong>。</li>
+    <li>选中<strong>启动包</strong>和<strong>刷新包</strong>复选框。</li>
+    <li>单击<strong>选择文件</strong>，然后上载下载的捆绑包。</li>
+    <li>等待日志设置完毕，并且包显示为<strong>活动</strong>。</li>
+    </ol>
+    <p><strong>步骤3：更新AEM Forms Workbench安装程序</strong></p>
+    <p>您必须更新到最新的AEM Forms Workbench安装程序(6.5.25.0)。 有关详细信息，请参阅<a href="https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases">AEM Forms发行版</a>。</p>
+    <p><strong>步骤4：更新客户端库文件（开发人员）</strong></p>
+    <p>此修补程序包含对SDK客户端库<code>adobe-livecycle-client.jar</code>的主要更新（请参阅<a href="/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files">包含AEM Forms Java库文件</a>）。 如果项目使用此JAR文件，请在安装修补程序后更新项目类路径中的<code>adobe-livecycle-client.jar</code>。 最新版本位于<code>&lt;AEM_Forms_Installation_dir&gt;\sdk\client-libs\common\adobe-livecycle-client.jar</code>。</p>
+    <p>此修补程序是累积性的，因此您可以将其应用于Service Pack 25 (6.5.25.0)或更早版本的Service Pack，而无需先安装Service Pack 25。</p>
+    </td>
+    <td>
+    <ul>
+    <li><b>FORMS-26802</b> SOAP SDK身份验证强化后，LCM Configuration Manager、Workbench和Designer无法连接到服务器，错误为<code>ALC-LCM-200-001</code>（<code>/soap/sdk</code>端点拒绝未经身份验证的请求）。 此修补程序可恢复连接，同时在端点上强制实施身份验证。</li>
+    <li><b>FORMS-26679</b>在AEM Forms Document Security上，身份验证Cookie在Microsoft Entra ID (MFA)重定向之后被丢弃，导致打开受策略保护的文档时出现“Cookie可能未启用”错误。 此修补程序会在跨站点重定向过程中保留会话Cookie。</li>
+    <li><b>FORMS-26617</b>在WebLogic上，使用Microsoft SQL Server JDBC驱动程序12.10.0时，通过Configuration Manager的数据库配置失败，出现“未找到合适的驱动程序”。 此修补程序可恢复成功的数据源配置。</li>
+    <li>安装最新的FORMS 6.5内部版本后，<b>AEM Forms-27869</b> PDF打开缓慢。 此修补程序可提高文档打开性能。</li>
+    </ul>
+    </td>
   </tr>
   <tr>
     <td>
@@ -238,10 +284,10 @@ ht-degree: 81%
     <td>2024 年 6 月 21 日</td>
      <td>
      <ul>
-     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">适用于 JBoss JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
-      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">适用于 Weblogic JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
-       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">适用于 Webshpere JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
-        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&reserved=0">适用于 OSGi 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
+     <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">适用于 JBoss JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
+      <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">适用于 Weblogic JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
+       <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">适用于 Webshpere JEE 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
+        <li><a href="https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fexperience.adobe.com%2F%23%2Fdownloads%2Fcontent%2Fsoftware-distribution%2Fen%2Faem.html%3Fpackage%3D%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Fhotfix%2FPaperCaptureSvc.zip&amp;data=05%7C02%7Cruchitas%40adobe.com%7Cf50f80aab6994875271a08dc91f2f137%7Cfa7b1b5a7b34438794aed2c178decee1%7C0%7C0%7C638545719814675925%7CUnknown%7CTWFpbGZsb3d8eyJWIjoiMC4wLjAwMDAiLCJQIjoiV2luMzIiLCJBTiI6Ik1haWwiLCJXVCI6Mn0%3D%7C0%7C%7C%7C&amp;sdata=9pTrMfiMD%2B5kQezxsZwTdOmaaktxURR99d7f6wHr%2FWQ%3D&amp;reserved=0">适用于 OSGi 服务器上的 AEM 服务包 6.5.21.0 或 AEM Forms 服务包 6.5.22.0 的热修复补丁</a> </li>
      </ul>
      </td>
     <td>
@@ -265,7 +311,7 @@ ht-degree: 81%
      <li> 在具有编辑/显示模式的字段中，日期选择器小组件在弹出窗口中切换月份时，行会被截断。 针对该问题，现已提供热修复补丁。 （FORMS-13620） </li>
      <li>在后端调用 DOR（记录文档）服务时，表单提交失败。 出现的错误信息为：“提交操作无法完成，因为表单资源未正确分配。” （FORMS-13798） </li>
      <li>当从 Adobe Experience Manager 发布实例将自适应表单提交到 Adobe Experience Manager 工作流时，该工作流无法保存附件。  （FORMS-14209） </li>
-     <li> 安装 AEM 6.5 Forms 服务包 20 包（AEM Forms SP20 附加包）后，AEM Sites 用户界面（UI）的性能显著下降。  （FORMS-13791） </li>
+     <li> 安装 AEM 6.5 Forms 服务包 20 包（AEM Forms SP20 附加组件包）后，AEM Sites 用户界面（UI）的性能显著下降。  （FORMS-13791） </li>
      <li>在交互式通信中，预填充服务因空指针异常而失败。 （CQDOC-21355）</li>
     </ul>
     </td>    
