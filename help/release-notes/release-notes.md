@@ -1,18 +1,16 @@
 ---
-title: ' [!DNL Adobe Experience Manager] 6.5 发行说明'
+title: '[!DNL Adobe Experience Manager] 6.5的发行说明'
 description: 查找 [!DNL Adobe Experience Manager] 6.5 的版本信息、新增功能、安装操作方法和详细更改列表。
 mini-toc-levels: 4
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: 811fccbc-6f63-4309-93c8-13b7ace07925
-source-git-commit: b30bc6ce844cacce396a09c5195c48083b96a9ec
+source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
 workflow-type: tm+mt
-source-wordcount: '7444'
-ht-degree: 21%
-
+source-wordcount: '7679'
+ht-degree: 20%
 ---
-
 # [!DNL Adobe Experience Manager]6.5 最新服务包发行说明 {#aem-service-pack-release-notes}
 
 <!-- For an itemized list of all issues found in this release information, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
@@ -64,6 +62,8 @@ Experience Manager 6.5.25.0包括新增功能、客户请求的关键增强功�
   > 要将JBoss EAP从7.4.10升级到7.4.23，请参阅：
   > * [将JEE上的AEM Forms的JBoss EAP从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)（对于独立环境）。
   > * [对于群集环境，请将JEE上的AEM Forms的JBoss EAP群集从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)。
+
+* **Configuration Manager (LCM) Express模式凭据提示：**&#x200B;在JEE上使用Configuration Manager (LCM)在Express模式下配置AEM Forms时，LCM现在会显示一个新屏幕，提示您在配置期间输入AEM管理员凭据，而不是使用内置的默认凭据。 此更改可通过AEM Service Pack 6.5.25.0的[修补程序](/help/release-notes/aem-forms-hotfix.md)获取。 有关配置步骤，请参阅[使用JBoss Turnkey在JEE上安装和部署AEM Forms](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_cn)。 (FORMS-26365)
 
 ## 修复了Service Pack 25中的问题 {#fixed-issues}
 
@@ -583,11 +583,11 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 * 用户可以在 [!DNL Assets] 的层级中重命名文件夹，并将嵌套文件夹发布到 [!DNL Brand Portal]。 但是，在 [!DNL Brand Portal] 中，文件夹标题不会更新，直到重新发布根文件夹。
 
 * 在安装 [!DNL Experience Manager] 6.5.x.x 期间，可能会显示以下错误和警告消息：
-  * 当在 [!DNL Experience Manager] 中使用 Target Standard API（IMS 身份验证）配置 Adobe Target 集成时，将体验片段导出到 Target 会导致创建错误的产品建议类型。 在 Target 中，系统不会创建类型为“Experience Fragment”/来源为“Adobe Experience Manager”的产品建议，而是会创建多个类型为“HTML”/来源为“Adobe Target Classic”的产品建议。
+  * 当在 [!DNL Experience Manager] 中使用 Target Standard API（IMS 身份验证）配置 Adobe Target 集成时，将体验片段导出到 Target 会导致创建错误的产品建议类型。 在 Target 中，系统不会创建类型为“体验片段”/来源为“Adobe Experience Manager”的产品建议，而是会创建多个类型为“HTML”/来源为“Adobe Target Classic”的产品建议。
   * `com.adobe.granite.maintenance.impl.TaskScheduler`：未在 `granite/operations/maintenance` 找到维护窗口。
   * 当在自适应表单中使用 SUM、MAX 和 MIN 等聚合函数时，服务器端验证失败（CQ-4274424）。
   * `com.adobe.granite.maintenance.impl.TaskScheduler`：未在 `granite/operations/maintenance` 找到维护窗口。
-  * 通过 Shoppable Banner 查看器预览资产时，Dynamic Media 交互式图像中的热点不可见。
+  * 通过 Shoppable Banner 查看器预览资产时，Dynamic Media 交互式图像中的交互热点不可见。
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`：等待完成取消注册的注册变更时超时。
 
 * 从 AEM 6.5.15 开始，由 `org.apache.servicemix.bundles.rhino` 捆绑包提供的 Rhino JavaScript 引擎引入了新的提升行为。 使用严格模式（`use strict;`）的脚本必须声明正确的变量。 否则脚本将无法运行，并会抛出运行时错误。
@@ -607,6 +607,10 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 以下问题已提供可下载并安装的热修复补丁： 您可以通过[下载并安装热修复补丁](/help/release-notes/aem-forms-hotfix.md)来解决这些问题：
 
 * **NPR-44100**&#x200B;在WAR/JEE部署（包括JEE上的AEM Forms）上安装AEM 6.5 Service Pack 25后，`com.adobe.cq.screens.sessions`捆绑包将保留为“已安装”状态并且永远不会变为活动状态。 要解决此问题，请[下载并安装AEM Service Pack 6.5.25.0的修补程序](/help/release-notes/aem-forms-hotfix.md)。
+* **FORMS-26802** SOAP SDK身份验证强化后，LCM Configuration Manager、Workbench和Designer无法连接到JEE服务器上的AEM Forms，错误为`ALC-LCM-200-001`，因为`/soap/sdk`端点拒绝未经身份验证的请求。 要解决此问题，请[下载并安装AEM Service Pack 6.5.25.0的修补程序](/help/release-notes/aem-forms-hotfix.md)。
+* **FORMS-26679**&#x200B;在AEM Forms Document Security上，身份验证Cookie在Microsoft Entra ID (MFA)重定向之后被丢弃，导致打开受策略保护的文档时出现“Cookie可能未启用”错误。 要解决此问题，请[下载并安装AEM Service Pack 6.5.25.0的修补程序](/help/release-notes/aem-forms-hotfix.md)。
+* **FORMS-26617**&#x200B;在使用WebLogic的JEE上的AEM Forms上，使用Microsoft SQL Server JDBC驱动程序12.10.0时，通过Configuration Manager进行数据库配置失败，出现“未找到合适的驱动程序”。 要解决此问题，请[下载并安装AEM Service Pack 6.5.25.0的修补程序](/help/release-notes/aem-forms-hotfix.md)。
+* 安装最新的FORMS 6.5内部版本后，**AEM Forms-27869** PDF打开缓慢。 要解决此问题，请[下载并安装AEM Service Pack 6.5.25.0的修补程序](/help/release-notes/aem-forms-hotfix.md)。
 * **FORMS-23491** AEM Forms 6.5.24.0 JEE部署(JBoss、WebLogic、WebSphere)受CVE-2025-64775的影响，该漏洞在多部分请求处理中存在Apache Struts拒绝服务漏洞。 要解决此问题，请[下载并安装AEM Service Pack 6.5.24.0的修补程序](/help/release-notes/aem-forms-hotfix.md)。
 * **FORMS-14926**&#x200B;安装AEM Forms JEE Service Pack 21 (6.5.21.0)后，如果在`<AEM_Forms_Installation>/lib/caching/lib`文件夹下找到Geode jars `(geode-*-1.15.1.jar and geode-*-1.15.1.2.jar)`的重复条目，请执行以下步骤，以解决该问题：
 
