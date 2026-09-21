@@ -63,7 +63,7 @@ Experience Manager 6.5.25.0包括新增功能、客户请求的关键增强功�
   > * [将JEE上的AEM Forms的JBoss EAP从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-from-7-4-10-to-7-4-23.md)（对于独立环境）。
   > * [对于群集环境，请将JEE上的AEM Forms的JBoss EAP群集从7.4.10升级到7.4.23](/help/forms/using/upgrade-jboss-eap-cluster-from-7-4-10-to-7-4-23.md)。
 
-* **Configuration Manager (LCM) Express模式凭据提示：**&#x200B;在JEE上使用Configuration Manager (LCM)在Express模式下配置AEM Forms时，LCM现在会显示一个新屏幕，提示您在配置期间输入AEM管理员凭据，而不是使用内置的默认凭据。 此更改可通过AEM Service Pack 6.5.25.0的[修补程序](/help/release-notes/aem-forms-hotfix.md)获取。 有关配置步骤，请参阅[使用JBoss Turnkey在JEE上安装和部署AEM Forms](https://www.adobe.com/go/learn_aemforms_installTurnkey_65)。 (FORMS-26365)
+* **Configuration Manager (LCM) Express模式凭据提示：**&#x200B;在JEE上使用Configuration Manager (LCM)在Express模式下配置AEM Forms时，LCM现在会显示一个新屏幕，提示您在配置期间输入AEM管理员凭据，而不是使用内置的默认凭据。 此更改可通过AEM Service Pack 6.5.25.0的[修补程序](/help/release-notes/aem-forms-hotfix.md)获取。 有关配置步骤，请参阅[使用JBoss Turnkey在JEE上安装和部署AEM Forms](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_cn)。 (FORMS-26365)
 
 ## 修复了Service Pack 25中的问题 {#fixed-issues}
 
@@ -635,11 +635,11 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 这些网站仅对客户开放。 如果您已是客户并需要访问权限，请联系您的 Adobe 客户经理。
 
 * [从 licensing.adobe.com 下载产品](https://licensing.adobe.com/)
-* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
+* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
 
