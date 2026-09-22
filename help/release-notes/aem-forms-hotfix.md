@@ -14,7 +14,7 @@ ht-degree: 68%
 
 本文列出了为解决 AEM Forms 的已知问题、提升其系统稳定性以及增强其整体性能而实施的重要修复。
 
-本文适用于AEM 6.5 Forms（非LTS）。 对于AEM 6.5 LTS部署，请参阅[Adobe Experience Manager Forms 6.5 LTS修补程序](https://experienceleague.adobe.com/en/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes)。
+本文适用于AEM 6.5 Forms（非LTS）。 对于AEM 6.5 LTS部署，请参阅[Adobe Experience Manager Forms 6.5 LTS修补程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes)。
 
 >[!NOTE]
 >
