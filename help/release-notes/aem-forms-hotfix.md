@@ -1,18 +1,20 @@
 ---
-title: AEM Forms 热修复补丁
-description: 提供有关如何下载和安装 AEM Forms 热修复补丁的信息。
+title: AEM 6.5 Forms的修补程序
+description: 提供了有关如何下载和安装AEM 6.5 Forms修补程序的信息。 有关AEM 6.5 LTS的信息，请参阅AEM Forms 6.5 LTS修补程序一文。
 exl-id: 37287332-3c8d-4ddc-a77e-3c5ee332898b
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 11e155ed72caf8f75bd2d8c8293723f24fe82945
+source-git-commit: 8133fcba5caddc7c0054766a92a32e28bfbc6b21
 workflow-type: tm+mt
-source-wordcount: '4751'
-ht-degree: 69%
+source-wordcount: '4809'
+ht-degree: 68%
 ---
-# Adobe Experience Manager Forms 热修复补丁{#aem-form-hotfix}
+# Adobe Experience Manager 6.5 Forms修补程序{#aem-form-hotfix}
 
 本文列出了为解决 AEM Forms 的已知问题、提升其系统稳定性以及增强其整体性能而实施的重要修复。
+
+本文适用于AEM 6.5 Forms（非LTS）。 对于AEM 6.5 LTS部署，请参阅[Adobe Experience Manager Forms 6.5 LTS修补程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65-lts/content/forms/adobe-experience-manager-forms-65-lts-hotfixes)。
 
 >[!NOTE]
 >
@@ -73,6 +75,7 @@ ht-degree: 69%
     <li><b>FORMS-26617</b>在WebLogic上，使用Microsoft SQL Server JDBC驱动程序12.10.0时，通过Configuration Manager的数据库配置失败，出现“未找到合适的驱动程序”。 此修补程序可恢复成功的数据源配置。</li>
     <li>安装最新的FORMS 6.5内部版本后，<b>AEM Forms-27869</b> PDF打开缓慢。 此修补程序可提高文档打开性能。</li>
     </ul>
+    <p><strong>内部版本：</strong> AEMForms-6.5.0-0134</p>
     </td>
   </tr>
   <tr>
