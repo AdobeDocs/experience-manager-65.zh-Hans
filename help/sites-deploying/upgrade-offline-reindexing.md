@@ -1,5 +1,5 @@
 ---
-title: 使用离线重新索引以减少升级期间的停机时间
+title: 使用离线重新索引以减少升级过程中的停机时间
 description: 了解如何使用离线重新索引方法以减少执行AEM升级时的系统停机时间。
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1306'
-ht-degree: 0%
-
+source-wordcount: '1384'
+ht-degree: 2%
 ---
-
-# 使用离线重新索引以减少升级期间的停机时间 {#offline-reindexing-to-reduce-downtime-during-upgrades}
+# 使用离线重新索引以减少升级过程中的停机时间 {#offline-reindexing-to-reduce-downtime-during-upgrades}
 
 ## 简介 {#introduction}
 
@@ -30,11 +28,11 @@ ht-degree: 0%
 
 大多数客户在升级过程中面临的问题是缩短停机时间。 解决方案是在升级期间&#x200B;**跳过**&#x200B;重新索引活动。 这可以通过创建新指令&#x200B;**prior**&#x200B;来执行升级，然后在升级期间直接导入这些指令来实现。
 
-## 方针 {#approach}
+## 方法 {#approach}
 
 ![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-process.png)
 
-其思想是在升级之前使用[Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md)工具针对目标AEM版本的索引定义创建索引。 上图显示了离线重新索引方法。
+建议在升级之前使用[Oak-run](/help/sites-deploying/indexing-via-the-oak-run-jar.md)工具针对目标AEM版本的索引定义创建索引。 上图显示了离线重新索引方法。
 
 此外，这是方法中描述的步骤顺序：
 
@@ -45,7 +43,7 @@ ht-degree: 0%
 
 ### 文本提取 {#text-extraction}
 
-要在AEM中启用完全索引，将提取二进制文件(如PDF)中的文本并将其添加到索引中。 在索引过程中，这通常是代价高昂的步骤。 文本提取是一个优化步骤，尤其适合在资产存储库存储大量二进制文件时对其重新编制索引。
+要在AEM中启用完整索引，将提取二进制文件（如PDF）中的文本并将其添加到索引中。 在索引过程中，这通常是代价高昂的步骤。 文本提取是一个优化步骤，尤其适合在资产存储库存储大量二进制文件时对其重新编制索引。
 
 ![offline-reindexing-upgrade-text-extraction](assets/offline-reindexing-upgrade-text-extraction.png)
 
@@ -65,7 +63,7 @@ java java -jar oak-run.jar tika <nodestore path> --fds-path <datastore path> --d
 
 请使用`--fake-ds-path=temp`参数而不是`–fds-path`来加快进程。
 
-**2。重用现有索引**&#x200B;中可用的二进制文本存储
+**2. 重用现有索引**&#x200B;中可用的二进制文本存储
 
 从现有系统中转储索引数据并提取文本存储。
 
@@ -85,7 +83,7 @@ java -jar oak-run.jar tika --data-file text-extraction/oak-binary-stats.csv --st
 
 其中`oak-index-name`是全文索引的名称，例如“lucene”。
 
-**3。 使用针对上述步骤**&#x200B;中遗漏的二进制文件的tika库运行文本提取进程
+**3. 使用针对上述步骤**&#x200B;中遗漏的二进制文件的tika库运行文本提取进程
 
 ```
 java -cp oak-run.jar:tika-app-1.21.jar org.apache.jackrabbit.oak.run.Main tika --data-file text-extraction/oak-binary-stats.csv --store-path text-extraction/store --fds-path <datastore path> extract
@@ -107,7 +105,7 @@ java -cp oak-run.jar:tika-app-1.21.jar org.apache.jackrabbit.oak.run.Main tika -
 
 **1. 为目标AEM版本**&#x200B;生成Oak Lucene索引定义
 
-转储现有的索引定义。 发生更改的索引定义是使用目标AEM版本的AdobeGranite存储库包和oak-run生成的。
+转储现有的索引定义。 发生更改的索引定义是使用目标AEM版本的Adobe Granite存储库包和oak-run生成的。
 
 要转储&#x200B;**源** AEM实例的索引定义，请运行此命令：
 
@@ -133,7 +131,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 以上步骤创建一个名为`merge-index-definitions_target.json`的JSON文件，该文件是索引定义。
 
-**2。在存储库**&#x200B;中创建检查点
+**2. 在存储库**&#x200B;中创建检查点
 
 在生产&#x200B;**源** AEM实例中创建生命周期较长的检查点。 此操作应在克隆存储库之前完成。
 
@@ -149,7 +147,7 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 **为生成的索引定义执行脱机索引**
 
-可以使用oak-run离线完成Lucene重新索引。 此进程在`indexing-result/indexes`下的磁盘中创建索引数据。 它&#x200B;**不**&#x200B;写入存储库，因此不需要停止正在运行的AEM实例。 创建的文本存储将馈送到此进程：
+可以使用oak-run离线完成Lucene重新索引。 此进程在`indexing-result/indexes`下的磁盘中创建索引数据。 它&#x200B;**不会**&#x200B;写入存储库，因此不需要停止正在运行的AEM实例。 创建的文本存储将馈送到此进程：
 
 ```
 java -Doak.indexer.memLimitInMB=500 -jar oak-run.jar index <nodestore path> --reindex --doc-traversal-mode --checkpoint <checkpoint> --fds-path <datastore path> --index-definitions-file merge-index-definitions_target.json --pre-extracted-text-dir text-extraction/store
@@ -168,7 +166,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 ### 导入索引 {#importing-indexes}
 
-使用AEM 6.4及更高版本，AEM具有按启动顺序从磁盘导入索引的内置功能。 启动期间观察文件夹`<repository>/indexing-result/indexes`是否存在索引数据。 在开始新版本的&#x200B;**target** AEM jar之前，您可以在[升级过程](in-place-upgrade.md#performing-the-upgrade)期间将预创建的索引复制到上述位置。 AEM会将其导入到存储库中，并从系统中删除相应的检查点。 因此，完全避免了重新索引。
+通过AEM 6.4及更高版本，AEM具有按启动顺序从磁盘导入索引的内置功能。 启动期间观察文件夹`<repository>/indexing-result/indexes`是否存在索引数据。 在开始新版本的&#x200B;**target** AEM jar之前，您可以在[升级过程](in-place-upgrade.md#performing-the-upgrade)期间将预创建的索引复制到上述位置。 AEM会将其导入存储库，并从系统中删除相应的检查点。 因此，完全避免了重新索引。
 
 ## 其他提示和疑难解答 {#troubleshooting}
 

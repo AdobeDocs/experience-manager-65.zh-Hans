@@ -1,5 +1,5 @@
 ---
-title: Oak-run.jar索引用例
+title: Oak-run.jar 索引用例
 description: 了解使用Oak运行的工具执行索引的各种用户案例。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,18 +11,16 @@ feature: Deploying
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1380'
+source-wordcount: '1435'
 ht-degree: 0%
-
 ---
-
-# Oak-run.jar索引用例{#oak-run-jar-indexing-use-cases}
+# Oak-run.jar 索引用例{#oak-run-jar-indexing-use-cases}
 
 Oak-run支持在命令行上索引用例，而无需通过AEM的JMX控制台来协调这些用例的执行。
 
 使用oak-run.jar index命令方法管理Oak索引的总体优势包括：
 
-1. Oak-run index命令为AEM 6.4提供了一个新的索引工具集。
+1. Oak-run index command为AEM 6.4提供了一个新的索引工具集。
 1. Oak-run缩短了重新索引时间，从而减少了大型存储库重新索引的时间。
 1. Oak-run可减少在AEM中重新索引时的资源消耗，从而提高整体系统性能。
 1. Oak-run提供带外重新索引功能，支持以下情况：生产必须可用，不能容忍维护或重新索引所需的停机时间。
@@ -73,7 +71,7 @@ Valid indexes :
 
 ## 用例2 — 索引统计数据 {#usecase2indexstatistics}
 
-为了诊断一些与查询性能Adobe相关的案例，通常需要现有的索引定义，即来自客户设置的与索引相关的统计数据。 到目前为止，此信息分散于多种资源。 为了更便于故障排除，Adobe创建了工具，该工具将：
+为了诊断一些与查询性能有关的案例，Adobe通常需要现有的索引定义，即来自客户设置的与索引相关的统计数据。 到目前为止，此信息分散于多种资源。 为了更便于故障排除，Adobe创建了工具，该工具将：
 
 1. 将系统上存在的所有索引定义转储到一个JSON文件中；
 
@@ -123,7 +121,7 @@ java -jar oak-run*.jar index --fds-path=/path/to/datastore  /path/to/segmentstor
 
 为了实现这些目标，oak-run索引工具支持根据需要使用的不同重新索引模式。 oak-run index命令具有以下优点：
 
-* **带外重新索引** - oak-run重新索引可以与正在运行的AEM设置分开完成，因此它最大限度地降低了对正在使用的AEM实例的影响；
+* **带外重新索引** - oak-run重新索引可以与正在运行的AEM设置分开完成，因此，它最大限度地降低了对正在使用的AEM实例的影响；
 
 * **非同道重新索引** — 重新索引在不影响索引操作的情况下进行。 这意味着异步索引器可以继续索引其他索引；
 
@@ -141,7 +139,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 这提供了以下好处
 
-* 对运行AEM实例的影响最小。 大多数读取可以从辅助服务器完成，并且运行AEM缓存不会因重新索引所需的所有遍历而受到负面影响；
+* 对运行AEM实例的影响降至最低。 大多数读取可以从辅助服务器完成，并且运行AEM缓存不会因重新索引所需的所有遍历而受到不利影响；
 * 用户还可以通过`--index-definitions-file`选项提供新索引或更新索引的JSON。
 
 ### 重新索引 — SegmentNodeStore {#reindexsegmentnodestore}
@@ -159,7 +157,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 这将涉及以下内容：
 
 1. 步骤文本
-1. 将`oak-run`连接到AEM在只读模式下使用的同一存储库并执行索引。 有关如何实现此目标的示例：
+1. 将`oak-run`连接到AEM以只读模式使用的同一存储库并执行索引。 有关如何实现此目标的示例：
 
    ```shell
    java -jar oak-run-1.7.6.jar index --fds-path=/Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/datastore/ --checkpoint 26b7da38-a699-45b2-82fb-73aa2f9af0e2 --reindex --index-paths=/oak:index/lucene /Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/segmentstore/
@@ -185,7 +183,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 在此使用案例中，您可以对克隆的设置执行重新索引，以将对正在运行的AEM实例的影响降至最低：
 
-1. 通过JMX操作创建检查点。 您可以通过转到[JMX控制台](/help/sites-administering/jmx-console.md)并搜索`CheckpointManager`来执行此操作。 然后，使用以秒为单位的高过期值(例如，**2592000**)单击&#x200B;**createCheckpoint(long p1)**&#x200B;操作。
+1. 通过JMX操作创建检查点。 您可以通过转到[JMX控制台](/help/sites-administering/jmx-console.md)并搜索`CheckpointManager`来执行此操作。 然后，使用以秒为单位的高过期值（例如，**2592000**）单击&#x200B;**createCheckpoint(long p1)**&#x200B;操作。
 1. 将`crx-quickstart`文件夹复制到新计算机
 1. 通过oak-run index命令执行重新索引
 
@@ -209,4 +207,4 @@ Oak-run现在支持以JSON格式提供索引定义，并支持在带外模式下
 
 1. 更新后的JSON随后将提供给系统管理员
 1. 系统管理员遵循带外方法，在不同的安装上准备索引
-1. 完成此操作后，将在运行的AEM安装中导入生成的索引文件。
+1. 完成后，生成的索引文件将在运行的AEM安装中导入。
