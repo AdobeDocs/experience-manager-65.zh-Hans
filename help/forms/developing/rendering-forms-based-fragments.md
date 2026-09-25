@@ -1,27 +1,30 @@
 ---
-title: 基于片段渲染Forms
+title: 基于片段渲染表单
+
 description: 使用Forms服务呈现基于使用Designer创建的片段的表单。
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2189'
-ht-degree: 0%
-
+source-wordcount: '2204'
+ht-degree: 1%
 ---
-
-# 基于片段渲染Forms {#rendering-forms-based-on-fragments}
+# 基于片段渲染表单 {#rendering-forms-based-on-fragments}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
-## 基于片段渲染Forms {#rendering-forms-based-on-fragments-inner}
+## 基于片段渲染表单 {#rendering-forms-based-on-fragments-inner}
 
 Forms服务可以渲染基于您使用Designer创建的片段的表单。 *片段*&#x200B;是表单的可重用部分，保存为可插入到多个表单设计中的单独XDP文件。 例如，片段可以包含地址块或法律文本。
 
@@ -81,7 +84,7 @@ Forms服务可以渲染基于您使用Designer创建的片段的表单。 *片�
 
 **渲染表单**
 
-基于片段的表单可以以与非片段表单相同的方式呈现。 也就是说，您可以将表单渲染为PDF、HTML或表单参考线（已弃用）。 本节中的示例将基于片段的表单渲染为交互式PDF表单。 (请参阅[渲染交互式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)。)
+基于片段的表单可以以与非片段表单相同的方式呈现。 也就是说，您可以将表单渲染为PDF、HTML或表单指南（已弃用）。 本节中的示例将基于片段的表单渲染为交互式PDF表单。 （请参阅[渲染交互式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)。）
 
 **将表单数据流写入客户端Web浏览器**
 
@@ -97,9 +100,9 @@ Forms服务渲染表单时，会返回一个您必须写入客户端Web浏览器
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms服务API快速启动](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[表单服务 API 快速入门](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[呈现交互式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[渲染交互式 PDF 表单](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [创建可渲染Forms的Web应用程序](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -147,9 +150,9 @@ Forms服务渲染表单时，会返回一个您必须写入客户端Web浏览器
 
 **另请参阅**
 
-[基于片段渲染Forms](#rendering-forms-based-on-fragments)
+[基于片段渲染表单](#rendering-forms-based-on-fragments)
 
-[快速入门(SOAP模式)：使用Java API基于片段呈现表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API基于片段呈现表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-based-on-fragments-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -181,7 +184,7 @@ Forms服务渲染表单时，会返回一个您必须写入客户端Web浏览器
 
    * 一个字符串值，它指定窗体设计名称，包括文件扩展名。 如果您引用的表单设计是Forms应用程序的一部分，请确保指定完整路径，如`Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。
    * 包含要与表单合并的数据的`BLOB`对象。 如果不想合并数据，请传递`null`。
-   * 存储运行时选项的`PDFFormRenderSpec`对象。 如果输入文档是PDFPDF，则无法设置标记文档选项。 如果输入文件是XDP文件，则可以设置标记的PDF选项。
+   * 存储运行时选项的`PDFFormRenderSpec`对象。 如果输入文档是PDF文档，则无法设置标记的PDF选项。 如果输入文件是XDP文件，则可以设置标记的PDF选项。
    * 包含Forms服务所需的URI值的`URLSpec`对象。
    * 存储文件附件的`java.util.HashMap`对象。 这是一个可选参数，如果您不想将文件附加到表单，则可以指定`null`。
    * 方法填充的空`com.adobe.idp.services.holders.BLOBHolder`对象。 此参数用于存储渲染的表单。
@@ -203,6 +206,6 @@ Forms服务渲染表单时，会返回一个您必须写入客户端Web浏览器
 
 **另请参阅**
 
-[基于片段渲染Forms](#rendering-forms-based-on-fragments)
+[基于片段渲染表单](#rendering-forms-based-on-fragments)
 
 [使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

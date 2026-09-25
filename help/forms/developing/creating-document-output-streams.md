@@ -1,6 +1,6 @@
 ---
 title: 创建文档输出流
-description: 使用Output服务将文档转换为PDF(包括PDF/A文档)、PostScript、Printer Control Language (PCL)和Zebra - ZPL、Intermec - IPL、Datamax - DPL和TecToshiba - TPCL标签格式。
+description: 使用输出服务将文档转换为PDF（包括PDF/A文档）、PostScript、Printer Control Language (PCL)和Zebra - ZPL、Intermec - IPL、Datamax - DPL和TecToshiba - TPCL标签格式。
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,21 +8,20 @@ topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '18860'
+source-wordcount: '19156'
 ht-degree: 0%
-
 ---
-
 # 创建文档输出流  {#creating-document-output-streams}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
 **关于输出服务**
 
-使用“输出”服务，可以将文档输出为PDF(包括PDF/A文档)、PostScript、打印机控制语言(PCL)以及以下标签格式：
+通过“输出”服务，您可以将文档输出为PDF（包括PDF/A文档）、PostScript、打印机控制语言(PCL)以及以下标签格式：
 
 * 斑马 — ZPL
 * Intermec - IPL
@@ -31,11 +30,11 @@ ht-degree: 0%
 
 使用Output服务，您可以将XML表单数据与表单设计合并，并将文档输出到网络打印机或文件。
 
-可通过两种方式将表单设计（XDP文件）传递到Output服务。 您可以将包含表单设计的`com.adobe.idp.Document`实例传递到Output服务。 或者，您可以传递一个用于指定表单设计位置的URI值。 这两种方法在&#x200B;*使用AEM forms*&#x200B;编程中进行了讨论。
+可通过两种方式将表单设计（XDP文件）传递到Output服务。 您可以将包含表单设计的`com.adobe.idp.Document`实例传递到Output服务。 或者，您可以传递一个用于指定表单设计位置的URI值。 这两种方法在&#x200B;*使用AEM Forms编程*&#x200B;中进行了讨论。
 
 >[!NOTE]
 >
->Output服务不支持包含应用程序对象特定脚本的AcroformPDF文档。 包含应用程序对象特定脚本的AcroformPDF文档不会渲染。
+>Output服务不支持包含应用程序对象特定脚本的Acroform PDF文档。 包含应用程序对象特定脚本的Acroform PDF文档不会渲染。
 
 以下部分将演示如何使用URI值将表单设计传递到Output服务：
 
@@ -73,11 +72,11 @@ ht-degree: 0%
 
 ## 创建PDF文档 {#creating-pdf-documents}
 
-您可以使用Output服务创建基于表单设计和您提供的XML表单数据的PDF文档。 Output服务创建的PDF文档不是交互式PDF文档；用户无法输入或修改表单数据。
+您可以使用Output服务创建基于表单设计和您提供的XML表单数据的PDF文档。 输出服务创建的PDF文档不是交互式PDF文档；用户无法输入或修改表单数据。
 
-如果要创建用于长期存储的PDF文档，建议您创建一个PDF/A文档。 (请参阅[创建PDF/A文档](creating-document-output-streams.md#creating-pdf-a-documents)。)
+如果要创建用于长期存储的PDF文档，建议您创建一个PDF/A文档。 （请参阅[创建PDF/A文档](creating-document-output-streams.md#creating-pdf-a-documents)。）
 
-要创建可让用户输入数据的交互式PDF表单，请使用Forms服务。 (请参阅[渲染交互式PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)。)
+要创建可让用户输入数据的交互式PDF表单，请使用Forms服务。 （请参阅[渲染交互式PDF forms](/help/forms/developing/rendering-forms.md#rendering-interactive-pdf-forms)。）
 
 >[!NOTE]
 >
@@ -104,8 +103,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 如果将AEM Forms部署在受支持的J2EE应用程序服务器而不是JBoss上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为特定于已部署AEM Forms的J2EE应用程序服务器的JAR文件。
 
@@ -160,23 +159,23 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->您可以用编程方式从输出服务返回的复杂数据类型检索PDF文档，而不是设置文件URI运行时选项。 但是，通过设置文件URI运行时选项，您无需创建以编程方式检索PDF文档的应用程序逻辑。
+>您可以采用编程方式从输出服务返回的复杂数据类型中检索PDF文档，而不是设置文件URI运行时选项。 但是，通过设置文件URI运行时选项，您无需创建以编程方式检索PDF文档的应用程序逻辑。
 
 **设置渲染运行时选项**
 
-创建PDF文档时，可以设置渲染运行时选项。 虽然这些选项不是必需的(与所需的PDF运行时选项不同)，但您可以执行诸如提高输出服务性能的任务。 例如，您可以缓存Output服务用于提高性能的表单设计。
+可在创建PDF文档时设置渲染运行时选项。 虽然这些选项不是必需的（与PDF运行时所需的选项不同），但您可以执行各种任务，例如提高输出服务的性能。 例如，您可以缓存Output服务用于提高性能的表单设计。
 
 如果您使用已标记的Acrobat表单作为输入，则无法使用输出服务Java或Web服务API来关闭已标记的设置。 如果您尝试以编程方式将此选项设置为`false`，则仍会标记结果PDF文档。
 
 >[!NOTE]
 >
->如果未指定渲染运行时选项，则使用默认值。 有关渲染运行时选项的信息，请参阅`RenderOptionsSpec`类引用。 (请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en))。
+>如果未指定渲染运行时选项，则使用默认值。 有关渲染运行时选项的信息，请参阅`RenderOptionsSpec`类引用。 （请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)）。
 
 **生成PDF文档**
 
-在引用包含表单数据的有效XML数据源并设置运行时选项后，可以调用Output服务，从而生成PDF文档。
+在引用包含表单数据的有效XML数据源并设置运行时选项后，可以调用输出服务，从而生成PDF文档。
 
-在生成PDF文档时，您可以指定Output服务创建PDF文档所需的URI值。 窗体设计可以存储在服务器文件系统等位置或作为AEM Forms应用程序的一部分进行存储。 可以使用内容根URI值`repository:///`引用作为Forms应用程序一部分的表单设计（或其他资源，如图像文件）。 例如，考虑位于名为&#x200B;*Applications/FormsApplication*&#x200B;的Forms应用程序中的以下名为&#x200B;*Loan.xdp*&#x200B;的表单设计：
+在生成PDF文档时，您可以指定输出服务创建PDF文档所需的URI值。 窗体设计可以存储在服务器文件系统等位置或作为AEM Forms应用程序的一部分进行存储。 可以使用内容根URI值`repository:///`引用作为Forms应用程序一部分的表单设计（或其他资源，如图像文件）。 例如，考虑位于名为&#x200B;*Applications/FormsApplication*&#x200B;的Forms应用程序中的以下名为&#x200B;*Loan.xdp*&#x200B;的表单设计：
 
 ![cp_cp_formrepository](assets/cp_cp_formrepository.png)
 
@@ -190,7 +189,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->要查看通过引用Forms应用程序中的XDP来创建PDF文档的完整快速入门，请参阅[快速入门（EJB模式）：使用Java API基于应用程序XDP文件创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)。
+>要查看通过引用PDF应用程序中的XDP来创建Forms文档的完整快速入门，请参阅[快速入门（EJB模式）：使用Java API基于应用程序XDP文件创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)。
 
 **检索操作的结果**
 
@@ -229,7 +228,7 @@ ht-degree: 0%
 1. 设置PDF运行时选项。
 
    * 使用构造函数创建`PDFOutputOptionsSpec`对象。
-   * 通过调用`PDFOutputOptionsSpec`对象的`setFileURI`方法来设置文件URI选项。 传递一个字符串值，该值指定Output服务生成的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
+   * 通过调用`PDFOutputOptionsSpec`对象的`setFileURI`方法来设置文件URI选项。 传递一个字符串值，该值指定输出服务生成的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
 
 1. 设置渲染运行时选项。
 
@@ -238,11 +237,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果输入文档是Acrobat表单(在Acrobat中创建的表单)或已签名或认证的XFA文档，则无法使用`RenderOptionsSpec`对象的`setPdfVersion`方法设置PDF文档的版本。 输出PDF文档保留原始PDF版本。 同样，如果输入文档是Acrobat表单或已签名或认证的XFA文档，则无法通过调用`RenderOptionsSpec`对象的`setTaggedPDF`方法来设置已标记的Adobe PDF选项。
+   >如果输入文档是PDF表单（在Acrobat中创建的表单）或已签名或认证的Acrobat文档，则无法使用`RenderOptionsSpec`对象的`setPdfVersion`方法设置文档的版本。 输出的PDF文档会保留原始PDF版本。 同样，如果输入文档是Acrobat表单或已签名或认证的XFA文档，则无法通过调用`RenderOptionsSpec`对象的`setTaggedPDF`方法来设置已标记的Adobe PDF选项。
 
    >[!NOTE]
    >
-   >如果输入PDF文档经过验证或数字签名，则不能使用`RenderOptionsSpec`对象的`setLinearizedPDF`方法设置线性化PDF选项。 (请参阅[对PDF文档进行数字签名&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*。)*
+   >如果输入的PDF文档经过验证或数字签名，则无法使用`RenderOptionsSpec`对象的`setLinearizedPDF`方法设置线性化PDF选项。 （请参阅[对PDF文档进行数字签名&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*。）*
 
 1. 生成PDF文档。
 
@@ -259,7 +258,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >通过调用`generatePDFOutput`方法生成PDF文档时，不能将数据与已签署或已验证的XFAPDF表单合并。 （请参阅[对文档进行数字签名和认证&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*。）*
+   >通过调用`generatePDFOutput`方法生成PDF文档时，无法将数据与已签名或认证的XFA PDF表单合并。 （请参阅[对文档进行数字签名和认证&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*。）*
 
    >[!NOTE]
    >
@@ -275,7 +274,7 @@ ht-degree: 0%
    * 创建包含操作结果的`java.io.File`对象。 确保文件扩展名为.xml。
    * 调用`com.adobe.idp.Document`对象的`copyToFile`方法以将`com.adobe.idp.Document`对象的内容复制到文件中（确保您使用`getStatusDoc`方法返回的`com.adobe.idp.Document`对象）。
 
-   虽然Output服务将PDF文档写入传递到`PDFOutputOptionsSpec`对象的`setFileURI`方法的参数指定的位置，但可以通过调用`OutputResult`对象的`getGeneratedDoc`方法以编程方式检索PDF/A文档。
+   虽然Output服务会将PDF文档写入传递给`PDFOutputOptionsSpec`对象的`setFileURI`方法的参数指定的位置，但您可以通过调用`OutputResult`对象的`getGeneratedDoc`方法以编程方式检索PDF/A文档。
 
 **另请参阅**
 
@@ -283,7 +282,7 @@ ht-degree: 0%
 
 [快速入门（EJB模式）：使用Java API创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[快速入门(SOAP模式)：使用Java API创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -309,10 +308,10 @@ ht-degree: 0%
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用XML数据源。
 
@@ -325,7 +324,7 @@ ht-degree: 0%
 1. 设置PDF运行时选项
 
    * 使用构造函数创建`PDFOutputOptionsSpec`对象。
-   * 通过分配一个字符串值来设置文件URI选项，该字符串值指定输出服务生成到`PDFOutputOptionsSpec`对象的`fileURI`数据成员的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
+   * 通过分配一个字符串值来设置文件URI选项，该字符串值指定输出服务向`PDFOutputOptionsSpec`对象的`fileURI`数据成员生成的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
 
 1. 设置渲染运行时选项。
 
@@ -334,11 +333,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果输入文档是Acrobat表单(在Acrobat中创建的表单)或已签名或认证的XFA文档，则无法使用`RenderOptionsSpec`对象的`setPdfVersion`方法设置PDF文档的版本。 输出PDF文档保留原始PDF版本。 同样，如果输入文档是Acrobat表单或已签名或认证的XFA文档，则通过调用`RenderOptionsSpec`对象的`setTaggedPDF`*方法无法设置已标记Adobe PDF选项。*
+   >如果输入文档是PDF表单（在Acrobat中创建的表单）或已签名或认证的Acrobat文档，则无法使用`RenderOptionsSpec`对象的`setPdfVersion`方法设置文档的版本。 输出的PDF文档会保留原始PDF版本。 同样，如果输入文档是Acrobat表单或已签名或认证的XFA文档，则通过调用`RenderOptionsSpec`对象的`setTaggedPDF`*方法无法设置已标记Adobe PDF选项。*
 
    >[!NOTE]
    >
-   >如果输入PDF文档经过认证或数字签名，则不能使用`RenderOptionsSpec`对象的`linearizedPDF`成员来设置线性化PDF选项。 (请参阅[对PDF文档进行数字签名&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*。)*
+   >如果输入的PDF文档经过认证或数字签名，则无法使用`RenderOptionsSpec`对象的`linearizedPDF`成员设置线性化PDF选项。 （请参阅[对PDF文档进行数字签名&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*。）*
 
 1. 生成PDF文档。
 
@@ -356,7 +355,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >通过调用`generatePDFOutput`方法生成PDF文档时，不能将数据与已签署或已验证的XFAPDF表单合并。 （请参阅[对文档进行数字签名和认证&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*。）*
+   >通过调用`generatePDFOutput`方法生成PDF文档时，无法将数据与已签名或认证的XFA PDF表单合并。 （请参阅[对文档进行数字签名和认证&#x200B;](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*。）*
 
    >[!NOTE]
    >
@@ -371,11 +370,11 @@ ht-degree: 0%
 
    另请参阅
 
-[步骤摘要](creating-document-output-streams.md#summary-of-steps)
+   [步骤摘要](creating-document-output-streams.md#summary-of-steps)
 
-[使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+   [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+   [使用SwaRef调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
    >[!NOTE]
    >
@@ -383,23 +382,23 @@ ht-degree: 0%
 
 ## 创建PDF/A文档 {#creating-pdf-a-documents}
 
-您可以使用Output服务创建PDF/A文档。 由于PDF/A是用于长期保存文档内容的存档格式，因此所有字体都将嵌入，并且文件是未压缩的。 因此，PDF/A 文档通常比标准 PDF 文档大。此外，PDF/文档不包含音频和视频内容。 与其他“输出”服务任务一样，提供表单设计和数据以与表单设计合并，以创建PDF/文档。
+您可以使用Output服务创建PDF/A文档。 由于PDF/A是一种用于长期保存文档内容的存档格式，因此所有字体都将嵌入，并且文件是未压缩的。 因此，PDF/A 文档通常比标准 PDF 文档大。 此外，PDF/A文档不包含音频和视频内容。 与其他“输出”服务任务一样，您可以提供表单设计和数据以与表单设计合并，从而创建PDF/A文档。
 
-PDF/A-1规范包含两个一致性级别，即a和b。两者之间的主要区别在于对逻辑结构（辅助功能）的支持，一致性级别b不需要该支持。无论一致性级别如何，PDF/A-1都指示所有字体都嵌入到生成的PDF/A文档中。
+PDF/A-1规范包含两个合规性级别，即a和b。 两者之间的主要区别在于对逻辑结构（辅助功能）的支持，合规性级别b不需要该支持。 无论符合程度如何，PDF/A-1都指示所有字体都嵌入到生成的PDF/A文档中。
 
-尽管PDF/A是归档PDF文档的标准，但是如果标准PDF文档满足公司的需要，则不必使用PDF/A进行归档。 PDF/A标准的目的是建立一个PDF文件，它可以长期存储并且满足文档保存要求。 例如，无法将URL嵌入到PDF/A中，因为随着时间的推移，该URL可能会变得无效。
+尽管PDF/A是PDF文档存档标准，但是如果标准的PDF/A文档满足贵公司的需求，则无需使用PDF/A进行存档。 PDF/A标准的目的是建立可长期存储的PDF文件，并满足文档保存要求。 例如，无法将URL嵌入到PDF/A中，因为随着时间的推移，该URL可能会变得无效。
 
-您的组织必须评估自己的需求、您打算保留文档的时间长度、文件大小考虑因素，并确定自己的归档策略。 您可以使用DocConverter服务以编程方式确定PDF文档是否符合PDF/A标准。 (请参阅[以编程方式确定PDF/合规性](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)。)
+您的组织必须评估自己的需求、您打算保留文档的时间长度、文件大小考虑因素，并确定自己的归档策略。 您可以使用DocConverter服务以编程方式确定PDF文档是否符合PDF/A标准。 （请参阅以编程方式确定PDF/A合规性[。）](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy)
 
-PDF/文档必须使用在表单设计中指定的字体，且不能替换字体。 因此，如果位于PDF文档中的字体在主机操作系统(OS)上不可用，则会发生异常。
+PDF/A文档必须使用在表单设计中指定的字体，且不能替换字体。 因此，如果位于PDF文档中的字体在主机操作系统(OS)上不可用，则会发生异常。
 
-在Acrobat中打开PDF/A文档时，将显示一条消息，确认该文档为PDF/A文档，如下图所示。
+在Acrobat中打开PDF/A文档时，会显示一条消息，确认该文档为PDF/A文档，如下图所示。
 
 ![cp_cp_pdfamessage](assets/cp_cp_pdfamessage.png)
 
 >[!NOTE]
 >
->AIIM网站有可在[https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml](https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml)访问的PDF/常见问题解答部分。
+>AIIM网站有一个PDF/A常见问题解答部分，您可以在[https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml](https://www.loc.gov/preservation/digital/formats/fdd/fdd000125.shtml)中访问该部分。
 
 >[!NOTE]
 >
@@ -407,14 +406,14 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
 ### 步骤摘要 {#summary_of_steps-1}
 
-要创建PDF/文档，请执行以下步骤：
+要创建PDF/A文档，请执行以下步骤：
 
 1. 包括项目文件。
 1. 创建输出客户端对象。
 1. 引用XML数据源。
 1. 设置PDF/A运行时选项。
 1. 设置渲染运行时选项。
-1. 生成PDF/文档。
+1. 生成PDF/A文档。
 1. 检索操作的结果。
 
 **包含项目文件**
@@ -426,8 +425,8 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 如果将AEM Forms部署在受支持的J2EE应用程序服务器而不是JBoss上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为特定于已部署AEM Forms的J2EE应用程序服务器的JAR文件。
 
@@ -441,21 +440,21 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
 **设置PDF/A运行时选项**
 
-创建PDF/A文档时，可以设置“文件URI”选项。 URI相对于托管AEM Forms的J2EE应用程序服务器。 也就是说，如果设置C:\Adobe ，文件将写入服务器上的文件夹，而不是客户端计算机。 URI指定Output服务生成的PDF/A文件的名称和位置。
+在创建PDF/A文档时，您可以设置“文件URI”选项。 URI相对于托管AEM Forms的J2EE应用程序服务器。 也就是说，如果设置C:\Adobe ，文件将写入服务器上的文件夹，而不是客户端计算机。 URI指定输出服务生成的PDF/A文件的名称和位置。
 
 **设置渲染运行时选项**
 
-在创建PDF/A文档时，可以设置渲染运行时选项。 可以设置的两个PDF/A相关选项是`PDFAConformance`和`PDFARevisionNumber`值。 `PDFAConformance`值指的是PDF文档如何遵守指定保留长期电子文档的要求。 此选项的有效值为`A`和`B`。 有关级别a和b合规性的信息，请参阅标题为&#x200B;*ISO 19005-1 Document management*&#x200B;的PDF/A-1 ISO规范。
+您可以在创建PDF/A文档时设置渲染运行时选项。 可以设置的两个PDF/A相关选项是`PDFAConformance`和`PDFARevisionNumber`值。 `PDFAConformance`值是指PDF文档如何遵守指定电子文档保留时间长短的要求。 此选项的有效值为`A`和`B`。 有关级别a和b合规性的信息，请参阅标题为&#x200B;*ISO 19005-1文档管理*&#x200B;的PDF/A-1 ISO规范。
 
-`PDFARevisionNumber`值是指PDF/A文档的修订号。 有关PDF/A文档的修订版本号的信息，请参阅标题为&#x200B;*ISO 19005-1 Document management*&#x200B;的PDF/A-1 ISO规范。
+`PDFARevisionNumber`值是指PDF/A文档的修订号。 有关PDF/A文档修订版本号的信息，请参阅标题为&#x200B;*ISO 19005-1文档管理*&#x200B;的PDF/A-1 ISO规范。
 
 >[!NOTE]
 >
->创建PDF/A 1A文档时，不能将已标记Adobe PDF选项设置为`false`。 PDF/A 1A将始终是带标签的PDF文档。 此外，在创建PDF/A 1B文档时，不能将已标记的Adobe PDF选项设置为`true`。 PDF/A 1B将始终是未标记的PDF文档。
+>创建PDF/A 1A文档时，不能将已标记Adobe PDF选项设置为`false`。 PDF/A 1A将始终是标记的PDF文档。 此外，在创建PDF/A 1B文档时，不能将已标记Adobe PDF选项设置为`true`。 PDF/A 1B将始终是未标记的PDF文档。
 
-**生成PDF/文档**
+**生成PDF/A文档**
 
-在引用包含表单数据的有效XML数据源并设置运行时选项后，可以调用输出服务，使其生成PDF/A文档。
+在引用包含表单数据的有效XML数据源并设置运行时选项后，可以调用Output服务，使其生成PDF/A文档。
 
 **检索操作的结果**
 
@@ -463,9 +462,9 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
 **另请参阅**
 
-[使用Java API创建PDF/文档](creating-document-output-streams.md#create-a-pdf-a-document-using-the-java-api)
+[使用Java API创建PDF/A文档](creating-document-output-streams.md#create-a-pdf-a-document-using-the-java-api)
 
-[使用Web服务API创建PDF/文档](creating-document-output-streams.md#create-a-pdf-a-document-using-the-web-service-api)
+[使用Web服务API创建PDF/A文档](creating-document-output-streams.md#create-a-pdf-a-document-using-the-web-service-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -473,9 +472,9 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
 [输出服务API快速启动](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-### 使用Java API创建PDF/文档 {#create-a-pdf-a-document-using-the-java-api}
+### 使用Java API创建PDF/A文档 {#create-a-pdf-a-document-using-the-java-api}
 
-使用输出API (Java)创建PDF/文档：
+使用输出API (Java)创建PDF/A文档：
 
 1. 包括项目文件。
 
@@ -494,7 +493,7 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 1. 设置PDF/A运行时选项。
 
    * 使用构造函数创建`PDFOutputOptionsSpec`对象。
-   * 通过调用`PDFOutputOptionsSpec`对象的`setFileURI`方法来设置文件URI选项。 传递一个字符串值，该值指定Output服务生成的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
+   * 通过调用`PDFOutputOptionsSpec`对象的`setFileURI`方法来设置文件URI选项。 传递一个字符串值，该值指定输出服务生成的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
 
 1. 设置渲染运行时选项。
 
@@ -506,11 +505,11 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
    >
    >PDF/A文档的PDF版本是1.4，无论您为`RenderOptionsSpec`对象的&#x200B;`setPdfVersion`*方法指定哪个值。*
 
-1. 生成PDF/文档。
+1. 生成PDF/A文档。
 
-   通过调用`OutputClient`对象的`generatePDFOutput`方法并传递以下值来创建PDF/文档：
+   通过调用`OutputClient`对象的`generatePDFOutput`方法并传递以下值来创建PDF/A文档：
 
-   * `TransformationFormat`枚举值。 要生成PDF/文档，请指定`TransformationFormat.PDFA`。
+   * `TransformationFormat`枚举值。 要生成PDF/A文档，请指定`TransformationFormat.PDFA`。
    * 一个字符串值，它指定窗体设计的名称。
    * 一个字符串值，它指定表单设计所在的内容根。
    * 包含PDF运行时选项的`PDFOutputOptionsSpec`对象。
@@ -525,7 +524,7 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
    >[!NOTE]
    >
-   >您还可以通过调用`OutputClient`对象的`generatePDFOutput`2方法创建PDF/A文档。 (请参阅[将Content Services中的文档（已弃用）传递给输出服务](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)。)
+   >您还可以通过调用`OutputClient`对象的`generatePDFOutput`2方法来创建PDF /A文档。 (请参阅[将Content Services中的文档（已弃用）传递给输出服务](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)。)
 
 1. 检索操作的结果。
 
@@ -535,21 +534,21 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
    >[!NOTE]
    >
-   >虽然Output服务将PDF/A文档写入传递给`PDFOutputOptionsSpec`对象的`setFileURI`方法的参数指定的位置，但可以通过调用`OutputResult`对象的`getGeneratedDoc`方法以编程方式检索PDF/A文档。
+   >虽然Output服务会将PDF/A文档写入传递给`PDFOutputOptionsSpec`对象的`setFileURI`方法的参数指定的位置，但您可以通过调用`OutputResult`对象的`getGeneratedDoc`方法以编程方式检索PDF/A文档。
 
 **另请参阅**
 
 [步骤摘要](creating-document-output-streams.md#summary-of-steps)
 
-[快速入门(SOAP模式)：使用Java API创建PDF/A文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API创建PDF/A文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [正在设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
-### 使用Web服务API创建PDF/文档 {#create-a-pdf-a-document-using-the-web-service-api}
+### 使用Web服务API创建PDF/A文档 {#create-a-pdf-a-document-using-the-web-service-api}
 
-使用输出API（Web服务）创建PDF/文档：
+使用输出API（Web服务）创建PDF/A文档：
 
 1. 包括项目文件。
 
@@ -567,10 +566,10 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用XML数据源。
 
@@ -583,7 +582,7 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 1. 设置PDF/A运行时选项。
 
    * 使用构造函数创建`PDFOutputOptionsSpec`对象。
-   * 通过分配一个字符串值来设置文件URI选项，该字符串值指定输出服务生成到`PDFOutputOptionsSpec`对象的`fileURI`数据成员的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机
+   * 通过分配一个字符串值来设置文件URI选项，该字符串值指定输出服务向`PDFOutputOptionsSpec`对象的`fileURI`数据成员生成的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机
 
 1. 设置渲染运行时选项。
 
@@ -593,9 +592,9 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
    >[!NOTE]
    >
-   >无论您指定哪个值，PDF/A文档的PDF版本均为1.4。
+   >PDF/A文档的PDF版本是1.4，无论您指定哪个值。
 
-1. 生成PDF/文档。
+1. 生成PDF/A文档。
 
    通过调用`OutputServiceService`对象的`generatePDFOutput`方法并传递以下值来创建PDF文档：
 
@@ -611,7 +610,7 @@ PDF/文档必须使用在表单设计中指定的字体，且不能替换字体�
 
    >[!NOTE]
    >
-   >您还可以通过调用`OutputClient`对象的`generatePDFOutput`2方法创建PDF/A文档。 (请参阅[将Content Services中的文档（已弃用）传递给输出服务](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)。)
+   >您还可以通过调用`OutputClient`对象的`generatePDFOutput`2方法来创建PDF /A文档。 (请参阅[将Content Services中的文档（已弃用）传递给输出服务](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)。)
 
 1. 检索操作的结果。
 
@@ -737,7 +736,7 @@ Output服务可呈现基于表单设计的非交互式PDF表单，该表单通�
 
 [快速启动（EJB模式）：使用Java API将文档传递到Output Service](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[快速入门(SOAP模式)：使用Java API将文档传递到输出服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API将文档传递到输出服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -767,9 +766,9 @@ Output服务可呈现基于表单设计的非交互式PDF表单，该表单通�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -831,11 +830,11 @@ Output服务可呈现基于表单设计的非交互式PDF表单，该表单通�
 
 您可以以编程方式从AEM Forms存储库检索Loan.xdp，并将其传递到`com.adobe.idp.Document`对象中的输出服务。
 
-您可以使用以下两种方式之一，基于存储库中的XDP文件创建PDF。 您可以按引用传递XDP位置，也可以以编程方式从存储库检索XDP，并将其传递到XDP文件中的Output服务。
+您可以使用以下两种方法之一，基于存储库中的XDP文件创建PDF。 您可以按引用传递XDP位置，也可以以编程方式从存储库检索XDP，并将其传递到XDP文件中的Output服务。
 
 [快速入门（EJB模式）：使用Java API基于应用程序XDP文件创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api)（显示如何通过引用传递XDP文件的位置）。
 
-[快速入门（EJB模式）：使用Java API将AEM Forms存储库中的文档传递到Output服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)(显示如何以编程方式从AEM Forms存储库检索XDP文件并将其传递到`com.adobe.idp.Document`实例中的Output服务)。 （本节讨论如何执行此任务）
+[快速入门（EJB模式）：使用Java API将AEM Forms存储库中的文档传递到Output服务](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)（显示如何以编程方式从AEM Forms存储库检索XDP文件并将其传递到`com.adobe.idp.Document`实例中的Output服务）。 （本节讨论如何执行此任务）
 
 >[!NOTE]
 >
@@ -905,14 +904,14 @@ ResourceRepositoryClient
 
 1. 从AEM Forms存储库检索表单设计。
 
-   调用`ResourceRepositoryClient`对象的`readResourceContent`方法，并将指定URI位置的字符串值传递给XDP文件。 例如，`/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。此值为必填项。 此方法返回表示XDP文件的`com.adobe.idp.Document`实例。
+   调用`ResourceRepositoryClient`对象的`readResourceContent`方法，并将指定URI位置的字符串值传递给XDP文件。 例如，`/Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`。 此值为必填项。 此方法返回表示XDP文件的`com.adobe.idp.Document`实例。
 
 1. 呈现非交互式PDF表单。
 
    调用`OutputClient`对象的`generatePDFOutput2`方法并传递以下值：
 
    * `TransformationFormat`枚举值。 要生成PDF文档，请指定`TransformationFormat.PDF`。
-   * 一个字符串值，它指定其他资源（如图像）所在的内容根。 例如：`repository:///Applications/FormsApplication/1.0/FormsFolder/`。
+   * 一个字符串值，它指定其他资源（如图像）所在的内容根。 例如 `repository:///Applications/FormsApplication/1.0/FormsFolder/`。
    * 表示表单设计的`com.adobe.idp.Document`对象（使用`ResourceRepositoryClient`对象的`readResourceContent`方法返回的实例）。
    * 包含PDF运行时选项的`PDFOutputOptionsSpec`对象。
    * 包含渲染运行时选项的`RenderOptionsSpec`对象。
@@ -938,13 +937,13 @@ ResourceRepositoryClient
 
 ## 使用片段创建PDF文档 {#creating-pdf-documents-using-fragments}
 
-您可以使用Output和Assembler服务创建基于片段的输出流，例如PDF文档。 Assembler服务基于多个XDP文件中的片段来组合XDP文档。 组装的XDP文档被传递到Output服务，该服务将创建一个PDF文档。 尽管此工作流显示正在生成的PDF文档，但“输出”服务可以为此工作流生成其他输出类型，如ZPL。 PDF文档仅用于讨论目的。
+您可以使用Output和Assembler服务创建基于片段的输出流，例如PDF文档。 Assembler服务基于多个XDP文件中的片段来组合XDP文档。 组装的XDP文档将传递到Output服务，该服务将创建PDF文档。 尽管此工作流显示正在生成的PDF文档，但输出服务可以为此工作流生成其他输出类型，如ZPL。 PDF文档仅用于讨论目的。
 
 下图显示了此工作流。
 
 ![cp_cp_outputassemblegrations](assets/cp_cp_outputassemblefragments.png)
 
-在读取&#x200B;*使用片段*&#x200B;创建PDF文档之前，建议您熟悉使用Assembler服务来组合多个XDP文档。 （请参阅[汇编多个XDP片段](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments)。）
+在阅读&#x200B;*使用片段创建PDF文档*&#x200B;之前，建议您熟悉使用Assembler服务来组合多个XDP文档。 （请参阅[汇编多个XDP片段](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments)。）
 
 >[!NOTE]
 >
@@ -978,11 +977,11 @@ ResourceRepositoryClient
 
 **使用输出服务生成PDF文档**
 
-您可以使用Output服务使用Assembler服务创建的表单设计生成PDF文档。 传递Assembler服务返回到Output服务的`com.adobe.idp.Document`实例。
+您可以使用Output服务通过Assembler服务创建的表单设计来生成PDF文档。 传递Assembler服务返回到Output服务的`com.adobe.idp.Document`实例。
 
 **将PDF文档另存为PDF文件**
 
-在Output服务生成PDF文档之后，可以将其另存为PDF文件。
+在Output服务生成PDF文档后，您可以将其另存为PDF文件。
 
 **另请参阅**
 
@@ -996,13 +995,13 @@ ResourceRepositoryClient
 
 [输出服务API快速启动](/help/forms/developing/output-service-java-api-quick.md#output-service-java-api-quick-start-soap)
 
-[组装多个XDP片段](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments)
+[组装多个 XDP 片段](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments)
 
 [创建PDF文档](creating-document-output-streams.md#creating-pdf-documents)
 
 ### 使用Java API基于片段创建PDF文档 {#create-a-pdf-document-based-on-fragments-using-the-java-api}
 
-使用输出服务API和汇编程序服务API (Java)基于片段创建PDF文档：
+使用输出服务API和汇编程序服务API (Java)，基于片段创建PDF文档：
 
 1. 包括项目文件。
 
@@ -1053,7 +1052,7 @@ ResourceRepositoryClient
 
 [快速入门（EJB模式）：使用Java API基于片段创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[快速入门(SOAP模式)：使用Java API基于片段创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API基于片段创建PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1091,9 +1090,9 @@ ResourceRepositoryClient
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给`OutputServiceClient.ClientCredentials.UserName.UserName`字段。
-      * 将相应的密码值分配给`OutputServiceClient.ClientCredentials.UserName.Password`字段。
-      * 将常量值`HttpClientCredentialType.Basic`分配给`BasicHttpBindingSecurity.Transport.ClientCredentialType`字段。
+     * 将AEM表单用户名分配给`OutputServiceClient.ClientCredentials.UserName.UserName`字段。
+     * 将相应的密码值分配给`OutputServiceClient.ClientCredentials.UserName.Password`字段。
+     * 将常量值`HttpClientCredentialType.Basic`分配给`BasicHttpBindingSecurity.Transport.ClientCredentialType`字段。
 
    * 将`BasicHttpSecurityMode.TransportCredentialOnly`常量值分配给`BasicHttpBindingSecurity.Security.Mode`字段。
 
@@ -1111,7 +1110,7 @@ ResourceRepositoryClient
 
    `invokeDDX`方法返回包含作业结果和发生的任何异常的`AssemblerResult`对象。 要获取新创建的XDP文档，请执行以下步骤：
 
-   * 访问`AssemblerResult`对象的`documents`字段，该字段是包含生成PDF文档的`Map`对象。
+   * 访问`AssemblerResult`对象的`documents`字段，该字段是包含结果PDF文档的`Map`对象。
    * 循环访问`Map`对象以检索组合表单设计。 将该数组成员的`value`强制转换为`BLOB`。 将此`BLOB`实例传递到输出服务。
 
 1. 使用Output服务生成PDF文档。
@@ -1181,10 +1180,10 @@ ResourceRepositoryClient
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
-如果将AEM Forms部署在受支持的J2EE应用程序服务器而不是JBoss上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为特定于已部署AEM Forms的J2EE应用程序服务器的JAR文件。 (请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。)
+如果将AEM Forms部署在受支持的J2EE应用程序服务器而不是JBoss上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为特定于已部署AEM Forms的J2EE应用程序服务器的JAR文件。 （请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。）
 
 **创建输出客户端对象**
 
@@ -1273,7 +1272,7 @@ ResourceRepositoryClient
 
 [步骤摘要](creating-document-output-streams.md#summary-of-steps)
 
-[快速入门(SOAP模式)：使用Java API打印到文件](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API打印到文件](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1299,10 +1298,10 @@ ResourceRepositoryClient
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用XML数据源。
 
@@ -1386,8 +1385,8 @@ ResourceRepositoryClient
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 如果将AEM Forms部署在受支持的J2EE应用程序服务器而不是JBoss上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为特定于已部署AEM Forms的J2EE应用程序服务器的JAR文件。
 
@@ -1416,7 +1415,7 @@ ResourceRepositoryClient
 
 检索要发送到打印机的打印流。 例如，您可以检索PostScript文件并将其发送到打印机。
 
-如果打印机支持PDF，则可以选择发送PDF文件。 但是，向打印机发送PDF文档的问题是每个打印机制造商对PDF解释器的实现方式不同。 也就是说，有些打印制造商使用Adobe PDF的解释，但具体取决于打印机。 其他打印机有自己的PDF解释器。 因此，打印结果可能会有所不同。
+如果您的打印机支持PDF，则可以选择发送PDF文件。 但是，将PDF文档发送到打印机时出现的一个问题是，每个打印机制造商对PDF解释器的实现方式不同。 也就是说，有些打印制造商使用Adobe PDF的解释，但具体取决于打印机。 其他打印机有自己的PDF解释程序。 因此，打印结果可能会有所不同。
 
 将PDF文档发送到打印机的另一个限制是它只能打印；它不能访问双面打印、纸盒选择和装订，除非通过打印机上的设置。
 
@@ -1511,7 +1510,7 @@ ResourceRepositoryClient
 
 >[!NOTE]
 >
->如果您使用的是网络打印机，并且访问机制为SharedPrinter，则需要指定打印机的完整网络路径。使用Java API将打印流发送到网络打印机
+>如果使用的是网络打印机，并且访问机制为SharedPrinter，则需要指定打印机的完整网络路径。使用Java API将打印流发送到网络打印机
 
 使用输出API (Java)将打印流发送到网络打印机：
 
@@ -1541,12 +1540,12 @@ ResourceRepositoryClient
 
    * 通过调用`OutputClient`对象的`generatePrintedOutput`方法并传递以下值来检索要打印的文档：
 
-      * 指定打印流的`PrintFormat`枚举值。 例如，要创建PostScript打印流，请传递`PrintFormat.PostScript`。
-      * 一个字符串值，它指定窗体设计的名称。
-      * 一个字符串值，它指定相关附属文件（如图像文件）的位置。
-      * 一个字符串值，它指定要使用的XDC文件的位置。
-      * 包含打印到文件所需的运行时选项的`PrintedOutputOptionsSpec`对象。
-      * 表示包含要与表单设计合并的表单数据的XML数据源的`com.adobe.idp.Document`对象。
+     * 指定打印流的`PrintFormat`枚举值。 例如，要创建PostScript打印流，请传递`PrintFormat.PostScript`。
+     * 一个字符串值，它指定窗体设计的名称。
+     * 一个字符串值，它指定相关附属文件（如图像文件）的位置。
+     * 一个字符串值，它指定要使用的XDC文件的位置。
+     * 包含打印到文件所需的运行时选项的`PrintedOutputOptionsSpec`对象。
+     * 表示包含要与表单设计合并的表单数据的XML数据源的`com.adobe.idp.Document`对象。
 
      此方法返回包含操作结果的`OutputResult`对象。
 
@@ -1585,10 +1584,10 @@ ResourceRepositoryClient
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用XML数据源。
 
@@ -1610,15 +1609,15 @@ ResourceRepositoryClient
 
    * 通过调用`OutputServiceService`对象的`generatePrintedOutput`方法并传递以下值来检索要打印的文档：
 
-      * 指定打印流的`PrintFormat`枚举值。 例如，要创建PostScript打印流，请传递`PrintFormat.PostScript`。
-      * 一个字符串值，它指定窗体设计的名称。
-      * 一个字符串值，它指定相关附属文件（如图像文件）的位置。
-      * 一个字符串值，它指定要使用的XDC文件的位置。
-      * 包含向网络打印机发送打印流时使用的打印运行时选项的`PrintedOutputOptionsSpec`对象。
-      * 包含包含表单数据的XML数据源的`BLOB`对象。
-      * 由`generatePrintedOutput`方法填充的`BLOB`对象。 `generatePrintedOutput`方法使用所生成的描述文档的元数据填充此对象。 （只有Web服务调用才需要此参数值。）
-      * 由`generatePrintedOutput`方法填充的`BLOB`对象。 `generatePrintedOutput`方法使用结果数据填充此对象。 （只有Web服务调用才需要此参数值。）
-      * 包含操作结果的`OutputResult`对象。 （只有Web服务调用才需要此参数值。）
+     * 指定打印流的`PrintFormat`枚举值。 例如，要创建PostScript打印流，请传递`PrintFormat.PostScript`。
+     * 一个字符串值，它指定窗体设计的名称。
+     * 一个字符串值，它指定相关附属文件（如图像文件）的位置。
+     * 一个字符串值，它指定要使用的XDC文件的位置。
+     * 包含向网络打印机发送打印流时使用的打印运行时选项的`PrintedOutputOptionsSpec`对象。
+     * 包含包含表单数据的XML数据源的`BLOB`对象。
+     * 由`generatePrintedOutput`方法填充的`BLOB`对象。 `generatePrintedOutput`方法使用所生成的描述文档的元数据填充此对象。 （只有Web服务调用才需要此参数值。）
+     * 由`generatePrintedOutput`方法填充的`BLOB`对象。 `generatePrintedOutput`方法使用结果数据填充此对象。 （只有Web服务调用才需要此参数值。）
+     * 包含操作结果的`OutputResult`对象。 （只有Web服务调用才需要此参数值。）
 
    * 通过获取`OutputResult`对象的`generatedDoc`方法的值，创建要发送到打印机的`BLOB`对象。 此方法返回一个包含`generatePrintedOutput`方法返回的PostScript数据的`BLOB`对象。
 
@@ -1638,11 +1637,11 @@ ResourceRepositoryClient
 
 ## 创建多个输出文件 {#creating-multiple-output-files}
 
-Output服务可以为XML数据源内的每个记录创建单独的文档，也可以为包含所有记录的单个文件创建单独的文档（此功能是默认设置）。 例如，假设有10条记录位于XML数据源中，并且您指示输出服务使用输出服务API为每个记录创建单独的PDF文档（或其他类型的输出）。 因此，Output服务会生成十份PDF文档。 （您可以向打印机发送多个打印流，而不是创建文档。）
+Output服务可以为XML数据源内的每个记录创建单独的文档，也可以为包含所有记录的单个文件创建单独的文档（此功能是默认设置）。 例如，假设有10条记录位于XML数据源中，您指示输出服务使用输出服务API为每个记录创建单独的PDF文档（或其他类型的输出）。 因此，输出服务会生成十个PDF文档。 （您可以向打印机发送多个打印流，而不是创建文档。）
 
-下图还显示了处理包含多个记录的XML数据文件的Output服务。 但是，假定您指示Output服务创建包含所有数据记录的单个PDF文档。 在这种情况下，Output服务会生成一个包含所有记录的文档。
+下图还显示了处理包含多个记录的XML数据文件的Output服务。 但是，假设您指示输出服务创建包含所有数据记录的单个PDF文档。 在这种情况下，Output服务会生成一个包含所有记录的文档。
 
-下图显示了处理包含多个记录的XML数据文件的Output服务。 假设您指示Output服务为每个数据记录创建一个单独的PDF文档。 在这种情况下，Output服务将为每个数据记录生成单独的PDF文档。
+下图显示了处理包含多个记录的XML数据文件的Output服务。 假设您指示输出服务为每个数据记录创建一个单独的PDF文档。 在这种情况下，输出服务会为每个数据记录生成单独的PDF文档。
 
 ![cm_outputbatchmany](assets/cm_outputbatchmany.png)
 
@@ -1726,8 +1725,8 @@ Output服务可以为XML数据源内的每个记录创建单独的文档，也�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 如果将AEM Forms部署在受支持的J2EE应用程序服务器而不是JBoss上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为特定于已部署AEM Forms的J2EE应用程序服务器的JAR文件。
 
@@ -1823,7 +1822,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 1. 设置PDF运行时选项
 
    * 使用构造函数创建`PDFOutputOptionsSpec`对象。
-   * 通过调用`PDFOutputOptionsSpec`对象的`setGenerateManyFiles`方法设置“多个文件”选项。 例如，传递值`true`以指示输出服务为XML数据源中的每个记录创建单独的PDF文件。 (如果传递`false`，输出服务将生成包含所有记录的单个PDF文档)。
+   * 通过调用`PDFOutputOptionsSpec`对象的`setGenerateManyFiles`方法设置“多个文件”选项。 例如，传递值`true`以指示输出服务为XML数据源中的每个记录创建单独的PDF文件。 （如果传递`false`，输出服务将生成包含所有记录的单个PDF文档）。
    * 通过调用`PDFOutputOptionsSpec`对象的`setFileUri`方法并传递指定输出服务生成的文件位置的字符串值来设置文件URI选项。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
    * 通过调用`OutputOptionsSpec`对象的`setRecordName`方法并传递一个字符串值来设置“记录名称”选项，该字符串值指定数据源中用于分隔数据记录的XML元素名称。 (例如，请考虑本节前面显示的XML数据源。 用于分隔数据记录的XML元素的名称为LoanRecord)。
 
@@ -1880,10 +1879,10 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用XML数据源。
 
@@ -1896,7 +1895,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 1. 设置PDF运行时选项。
 
    * 使用构造函数创建`PDFOutputOptionsSpec`对象。
-   * 通过为`OutputOptionsSpec`对象的`generateManyFiles`数据成员分配布尔值来设置“多个文件”选项。 例如，将值`true`分配给此数据成员，以指示输出服务为XML数据源中的每个记录创建单独的PDF文件。 (如果将`false`分配给此数据成员，则Output服务将生成包含所有记录的单个PDF)。
+   * 通过为`OutputOptionsSpec`对象的`generateManyFiles`数据成员分配布尔值来设置“多个文件”选项。 例如，将值`true`分配给此数据成员，以指示输出服务为XML数据源中的每个记录创建单独的PDF文件。 （如果将`false`分配给此数据成员，则输出服务会生成一个包含所有记录的PDF）。
    * 通过分配一个字符串值来设置文件URI选项，该字符串值指定输出服务向`OutputOptionsSpec`对象的`fileURI`数据成员生成的文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
    * 通过分配一个字符串值来设置记录名称选项，该字符串值指定数据源中的XML元素名称，该数据源将数据记录与`OutputOptionsSpec`对象的`recordName`数据成员分开。
    * 通过指定一个整数值来设置副本选项，该值指定输出服务向`OutputOptionsSpec`对象的`copies`数据成员生成的副本数。
@@ -1937,7 +1936,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
 ## 创建搜索规则 {#creating-search-rules}
 
-您可以创建搜索规则，以导致Output服务检查输入数据并根据数据内容使用不同的表单设计来生成输出。 例如，如果文本&#x200B;*mortgage*&#x200B;位于输入数据中，则输出服务可以使用名为Mortgage.xdp的表单设计。 同样，如果文本&#x200B;*automobile*&#x200B;在输入数据中，则Output服务可使用保存为AutomobileLoan.xdp的表单设计。 尽管Output服务可以生成不同的输出类型，但本节假定Output服务生成一个PDF文件。 下图显示了通过处理XML数据文件并使用多种表单设计之一来生成PDF文件的Output服务。
+您可以创建搜索规则，以导致Output服务检查输入数据并根据数据内容使用不同的表单设计来生成输出。 例如，如果文本&#x200B;*mortgage*&#x200B;位于输入数据中，则输出服务可以使用名为Mortgage.xdp的表单设计。 同样，如果文本&#x200B;*automobile*&#x200B;在输入数据中，则Output服务可使用保存为AutomobileLoan.xdp的表单设计。 尽管Output服务可以生成不同的输出类型，但本节假定Output服务会生成PDF文件。 下图显示了Output服务，该服务通过处理XML数据文件并使用多种表单设计之一来生成PDF文件。
 
 此外，输出服务能够生成文档包，其中在数据集中提供了多个记录，并且每个记录与表单设计匹配，并且单个文档由多个表单设计组成。
 
@@ -1969,8 +1968,8 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 如果AEM Forms部署在受支持的J2EE应用程序服务器（不是JBoss）上，则必须将adobe-utilities.jar和jbossall-client.jar替换为特定于部署AEM Forms的J2EE应用程序服务器的JAR文件。
 
@@ -1992,7 +1991,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
 **设置PDF运行时选项**
 
-设置以下PDF运行时选项，以便Output服务基于多个表单设计成功创建PDF文档：
+设置以下PDF运行时选项，以便输出服务根据多个表单设计成功创建PDF文档：
 
 * **文件URI**：指定输出服务生成的PDF文件的名称和位置。
 * **规则**：指定您定义的规则。
@@ -2000,11 +1999,11 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
 **设置渲染运行时选项**
 
-可以在创建PDF文件时设置渲染运行时选项。 虽然这些选项不是必需的(与PDF运行时选项不同)，但您可以执行诸如提高Output服务性能之类的任务。 例如，您可以缓存Output服务用于提高性能的表单设计。
+您可以在创建PDF文件时设置渲染运行时选项。 虽然这些选项不是必需的（与PDF运行时选项不同），但您可以执行各种任务，例如提高Output服务的性能。 例如，您可以缓存Output服务用于提高性能的表单设计。
 
 **生成PDF文档**
 
-在引用有效的XML数据源并设置运行时选项后，可以调用Output服务，从而生成PDF文档。 如果Output服务在输入数据中找到指定的文本模式，则它使用相应的表单设计。 如果未使用文本模式，则Output服务将使用默认表单设计。
+在引用有效的XML数据源并设置运行时选项后，可以调用输出服务，从而生成PDF文档。 如果Output服务在输入数据中找到指定的文本模式，则它使用相应的表单设计。 如果未使用文本模式，则Output服务将使用默认表单设计。
 
 **检索操作的结果**
 
@@ -2086,7 +2085,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
 [快速入门（EJB模式）：使用Java API创建搜索规则](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[快速入门(SOAP模式)：使用Java API创建搜索规则](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API创建搜索规则](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2112,10 +2111,10 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用XML数据源。
 
@@ -2141,7 +2140,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 1. 设置PDF运行时选项
 
    * 使用构造函数创建`PDFOutputOptionsSpec`对象。
-   * 通过分配一个字符串值来设置文件URI选项，该字符串值指定输出服务生成到`PDFOutputOptionsSpec`对象的`fileURI`数据成员的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
+   * 通过分配一个字符串值来设置文件URI选项，该字符串值指定输出服务生成给`PDFOutputOptionsSpec`对象的`fileURI`数据成员的PDF文件的位置。 文件URI选项相对于托管AEM Forms的J2EE应用程序服务器，而不是客户端计算机。
    * 通过指定一个整数值来设置副本选项，该值指定输出服务向`PDFOutputOptionsSpec`对象的`copies`数据成员生成的副本数。
    * 将存储规则的`MyArrayOf_xsd_anyType`对象分配给`PDFOutputOptionsSpec`对象的`rules`数据成员，以设置您定义的规则。
    * 通过为`PDFOutputOptionsSpec`对象的`lookAhead`数据方法指定一个表示要扫描的字节数的整数值，来设置要扫描的已定义文本模式的字节数。
@@ -2153,11 +2152,11 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
    >[!NOTE]
    >
-   >如果输入文档是Acrobat表单，则无法使用`RenderOptionsSpec`对象的`pdfVersion`成员来设置PDF文档的版本。 输出PDF文档保留Acrobat表单的PDF版本。 同样，如果输入PDF是Acrobat表单，则无法使用`RenderOptionsSpec`对象的`taggedPDF`方法设置标记文档选项。
+   >如果输入文档是PDF表单，则无法使用`RenderOptionsSpec`对象的`pdfVersion`成员来设置Acrobat文档的版本。 输出PDF文档保留PDF版本的Acrobat表单。 同样，如果输入文档是Acrobat表单，则无法使用`RenderOptionsSpec`对象的`taggedPDF`方法设置标记的PDF选项。
 
    >[!NOTE]
    >
-   >如果输入PDF文档经过认证或数字签名，则不能使用`RenderOptionsSpec`对象的`linearizedPDF`成员来设置线性化PDF选项。 有关信息，请参阅[对PDF文档进行数字签名](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)。
+   >如果输入的PDF文档经过认证或数字签名，则无法使用`RenderOptionsSpec`对象的`linearizedPDF`成员设置线性化PDF选项。 有关信息，请参阅[对PDF文档进行数字签名](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)。
 
 1. 生成PDF文档
 
@@ -2175,7 +2174,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
    >[!NOTE]
    >
-   >通过调用`generatePDFOutput`方法生成PDF文档时，不能将数据与已签名、已验证或包含使用权限的XFAPDF表单合并。 有关使用权限的信息，请参阅[将使用权限应用于PDF文档](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)。
+   >通过调用`generatePDFOutput`方法生成PDF文档时，不能将数据与已签名、已验证或包含使用权限的XFA PDF表单合并。 有关使用权限的信息，请参阅[将使用权限应用到PDF文档](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)。
 
 1. 检索操作的结果
 
@@ -2194,14 +2193,14 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
 ## 拼合PDF文档 {#flattening-pdf-documents}
 
-可以使用Output服务将交互式PDF文档转换为非交互式PDF。 交互式PDF文档允许用户输入或修改PDF文档字段中的数据。 将交互式PDF文档转换为非交互式PDF文档的过程称为&#x200B;*拼合*。 当PDF文档被拼合时，用户无法修改文档字段中的数据。 拼合PDF文档的一个原因是确保无法修改数据。
+您可以使用Output服务将交互式PDF文档转换为非交互式PDF。 交互式PDF文档允许用户输入或修改PDF文档字段中的数据。 将交互式PDF文档转换为非交互式PDF文档的过程称为&#x200B;*拼合*。 将PDF文档拼合后，用户无法修改文档字段中的数据。 拼合PDF文档的一个原因是确保无法修改数据。
 
 您可以拼合以下类型的PDF文档：
 
-* 交互式XFAPDF文档
+* 交互式XFA PDF文档
 * Acrobat Forms
 
-尝试拼合非交互式PDFPDF会导致异常。
+尝试拼合非交互式PDF文档的PDF会导致异常。
 
 >[!NOTE]
 >
@@ -2226,8 +2225,8 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-output-client.jar
-* adobe-utilities.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 如果将AEM Forms部署在受支持的J2EE应用程序服务器而不是JBoss上，则必须将adobe-utilities.jar和jbossall-client.jar文件替换为特定于已部署AEM Forms的J2EE应用程序服务器的JAR文件。 有关所有AEM Forms JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -2241,11 +2240,11 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
 **转换PDF文档**
 
-检索交互式PDF文档后，可将其转换为非交互式PDF文档。 Output服务返回非交互式PDF文档。
+检索交互式PDF文档后，可将其转换为非交互式PDF文档。 Output服务会返回非交互式PDF文档。
 
 **将非交互式PDF文档另存为PDF文件**
 
-可以将非交互式PDF文档另存为PDF文件。
+您可以将非交互式PDF文档另存为PDF文件。
 
 **另请参阅**
 
@@ -2283,9 +2282,9 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
    * 包含交互式PDF文档的`com.adobe.idp.Document`对象。
    * `TransformationFormat`枚举值。 要生成非交互式PDF文档，请指定`TransformationFormat.PDF`。
-   * 指定修订号的`PDFARevisionNumber`枚举值。 由于此参数适用于PDF/文档，因此您可以指定`null`。
-   * 表示修订编号和年份的字符串值，用冒号分隔。 由于此参数适用于PDF/文档，因此您可以指定`null`。
-   * 表示PDF/A合规性级别的`PDFAConformance`枚举值。 由于此参数适用于PDF/文档，因此您可以指定`null`。
+   * 指定修订号的`PDFARevisionNumber`枚举值。 由于此参数适用于PDF/A文档，因此您可以指定`null`。
+   * 表示修订编号和年份的字符串值，用冒号分隔。 由于此参数适用于PDF/A文档，因此您可以指定`null`。
+   * 表示PDF/A合规性级别的`PDFAConformance`枚举值。 由于此参数适用于PDF/A文档，因此您可以指定`null`。
 
    `transformPDF`方法返回包含非交互式PDF文档的`com.adobe.idp.Document`对象。
 
@@ -2300,7 +2299,7 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
 
 [快速入门（EJB模式）：使用Java API转换PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-[快速入门(SOAP模式)：使用Java API转换PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API转换PDF文档](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2326,10 +2325,10 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`OutputServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`OutputServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索交互式PDF文档。
 
@@ -2346,10 +2345,10 @@ Output服务执行操作后，会返回用于指定操作是否成功的XML数�
    * 包含交互式PDF文档的`BLOB`对象。
    * `TransformationFormat`枚举值。 要生成非交互式PDF文档，请指定`TransformationFormat.PDF`。
    * 指定修订号的`PDFARevisionNumber`枚举值。
-   * 一个布尔值，它指定是否使用`PDFARevisionNumber`枚举值。 由于此参数适用于PDF/文档，因此您可以指定`false`。
-   * 表示修订编号和年份的字符串值，用冒号分隔。 由于此参数适用于PDF/文档，因此您可以指定`null`。
+   * 一个布尔值，它指定是否使用`PDFARevisionNumber`枚举值。 由于此参数适用于PDF/A文档，因此您可以指定`false`。
+   * 表示修订编号和年份的字符串值，用冒号分隔。 由于此参数适用于PDF/A文档，因此您可以指定`null`。
    * 表示PDF/A合规性级别的`PDFAConformance`枚举值。
-   * 指定是否使用`PDFAConformance`枚举值的布尔值。 由于此参数适用于PDF/文档，因此您可以指定`false`。
+   * 指定是否使用`PDFAConformance`枚举值的布尔值。 由于此参数适用于PDF/A文档，因此您可以指定`false`。
 
    `transformPDF`方法返回包含非交互式PDF文档的`BLOB`对象。
 

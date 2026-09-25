@@ -1,21 +1,24 @@
 ---
 title: 使用凭据
+
 description: 使用信任管理器API和Java API将凭据导入AEM Forms。 此外，了解如何使用信任管理器API和Java API删除凭据。
+
+
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1077'
-ht-degree: 0%
-
+source-wordcount: '1100'
+ht-degree: 1%
 ---
-
 # 使用凭据 {#working-with-credentials}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -24,8 +27,8 @@ ht-degree: 0%
 
 凭据包含签名或识别文档所需的私钥信息。 证书是您为信任配置的公钥信息。 AEM Forms将证书和凭据用于多种用途：
 
-* Acrobat Reader DC扩展使用凭据在PDF文档中启用Adobe Reader使用权限。 (请参阅[将使用权限应用于PDF文档](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)。)
-* 签名服务在执行操作(如对PDF文档进行数字签名)时访问证书和凭据。 (请参阅[对PDF文档进行数字签名](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)。)
+* Acrobat Reader DC扩展使用凭据在PDF文档中启用Adobe Reader使用权限。 （请参阅[将使用权限应用于PDF文档](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)。）
+* 签名服务在执行操作（如对PDF文档进行数字签名）时访问证书和凭据。 （请参阅[对PDF文档进行数字签名](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)。）
 
 您可以使用信任管理器Java API以编程方式与Credential服务交互。 您可以执行以下任务：
 
@@ -38,7 +41,7 @@ ht-degree: 0%
 
 ## 使用信任管理器API导入凭据 {#importing-credentials-by-using-the-trust-manager-api}
 
-您可以使用信任管理器API以编程方式将凭据导入AEM Forms。 例如，您可以导入用于签署PDF文档的凭据。 (请参阅[对PDF文档进行数字签名](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents))。
+您可以使用信任管理器API以编程方式将凭据导入AEM Forms。 例如，您可以导入用于签署PDF文档的凭据。 （请参阅[对PDF文档进行数字签名](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)）。
 
 导入凭据时，请指定凭据的别名。 别名用于执行需要凭据的Forms操作。 导入凭据后，即可在管理控制台中查看，如下图所示。 请注意，凭据的别名是&#x200B;*安全*。
 
@@ -66,8 +69,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-truststore-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 有关这些JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -118,16 +121,16 @@ ht-degree: 0%
    * 创建一个包含一个元素的字符串数组。 将值`truststore.usage.type.sign`分配给元素。
    * 调用`CredentialServiceClient`对象的`importCredential`方法并传递以下值：
 
-      * 指定凭据的别名值的字符串值。
-      * 存储凭据的`com.adobe.idp.Document`实例。
-      * 一个字符串值，它指定与凭据关联的密码。
-      * 包含用法值的字符串数组。 例如，您可以指定此值`truststore.usage.type.sign`。 要导入Reader扩展凭据，请指定`truststore.usage.type.lcre`。
+     * 指定凭据的别名值的字符串值。
+     * 存储凭据的`com.adobe.idp.Document`实例。
+     * 一个字符串值，它指定与凭据关联的密码。
+     * 包含用法值的字符串数组。 例如，您可以指定此值`truststore.usage.type.sign`。 要导入Reader扩展凭据，请指定`truststore.usage.type.lcre`。
 
 **另请参阅**
 
 [使用信任管理器API导入凭据](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
-[快速入门(SOAP模式)：使用Java API导入凭据](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API导入凭据](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -156,8 +159,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-truststore-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 有关这些JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -200,7 +203,7 @@ ht-degree: 0%
 
 [使用信任管理器API删除凭据](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-[快速入门(SOAP模式)：使用Java API删除凭据](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API删除凭据](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

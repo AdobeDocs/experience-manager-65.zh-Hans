@@ -1,35 +1,38 @@
 ---
-title: 渲染启用权限的Forms
+title: 渲染已启用权限的表单
+
 description: 使用Forms服务呈现应用了使用权限的表单。 您可以使用Java API和Web服务API呈现启用权限的表单。
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1447'
-ht-degree: 0%
-
+source-wordcount: '1488'
+ht-degree: 1%
 ---
+# 渲染已启用权限的表单 {#rendering-rights-enabled-forms}
 
-# 渲染启用权限的Forms {#rendering-rights-enabled-forms}
+Forms服务可以呈现已应用了使用权限的表单。 使用权限与默认在Acrobat中可用，但在Adobe Reader中不可用的功能相关，例如向表单添加注释或填写表单字段并保存表单的功能。 对其应用了使用权限的Forms称为启用权限的表单。 在Adobe Reader中打开启用了权限的表单的用户可以执行为该表单启用的操作。
 
-Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrobat中默认提供的功能有关，但在Adobe Reader中不可用，例如向表单添加注释或填写表单字段并保存表单的功能。 对其应用了使用权限的Forms称为启用权限的表单。 在Adobe Reader中打开启用了权限的表单的用户可以执行为该表单启用的操作。
-
-要对表单应用使用权限，AEM表单安装中必须包含Acrobat Reader DC扩展服务。 此外，您必须具有有效的凭据，以便能够对PDF文档应用使用权限。 也就是说，在渲染启用权限的表单之前，必须正确配置Acrobat Reader DC扩展服务。 (请参阅[关于Acrobat Reader DC扩展服务](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)。)
-
->[!NOTE]
->
->要呈现包含使用权限的表单，必须使用XDP文件作为输入，而非PDF文件。 如果您使用PDF文件作为输入，则表单仍会呈现；但是，它不会是启用权限的表单。
+要对表单应用使用权限，Acrobat Reader DC扩展服务必须是AEM表单安装的一部分。 此外，您必须具有有效的凭据，以便能够向PDF文档应用使用权限。 即，在呈现启用权限的表单之前，必须正确配置Acrobat Reader DC扩展服务。 （请参阅[关于Acrobat Reader DC扩展服务](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service)。）
 
 >[!NOTE]
 >
->指定以下使用权限时，不能使用XML数据预填充表单： `enableComments`、`enableCommentsOnline`、`enableEmbeddedFiles`或`enableDigitalSignatures`。 (请参阅[使用可流动布局预填充Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。)
+>要呈现包含使用权限的表单，您必须使用XDP文件作为输入，而不是PDF文件。 如果您使用PDF文件作为输入，则表单仍会呈现；但是，它不会是启用权限的表单。
+
+>[!NOTE]
+>
+>指定以下使用权限时，不能使用XML数据预填充表单： `enableComments`、`enableCommentsOnline`、`enableEmbeddedFiles`或`enableDigitalSignatures`。 （请参阅[使用可流动布局预填充Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)。）
 
 >[!NOTE]
 >
@@ -67,7 +70,7 @@ Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrob
 
 **将表单数据流写入客户端Web浏览器**
 
-当Forms服务呈现启用权限的表单时，它会返回一个您必须写入客户端Web浏览器的表单数据流。 将表单写入客户端Web浏览器后，该表单对用户可见。 查看Adobe Reader中启用了权限的表单的用户能够执行为该表单启用的操作。
+当Forms服务呈现启用权限的表单时，它会返回一个您必须写入客户端Web浏览器的表单数据流。 将表单写入客户端Web浏览器后，该表单对用户可见。 在Adobe Reader中查看启用了权限的表单的用户能够执行为该表单启用的操作。
 
 **另请参阅**
 
@@ -79,9 +82,9 @@ Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrob
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms服务API快速启动](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[表单服务 API 快速入门](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[呈现交互式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[渲染交互式 PDF 表单](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
 [创建可渲染Forms的Web应用程序](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -132,7 +135,7 @@ Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrob
 
 **另请参阅**
 
-[快速入门(SOAP模式)：使用Java API呈现启用权限的表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API呈现启用权限的表单](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -180,6 +183,6 @@ Forms服务可以呈现已应用了使用权限的表单。 使用权限与Acrob
 
 **另请参阅**
 
-[渲染启用权限的Forms](#rendering-rights-enabled-forms)
+[渲染已启用权限的表单](#rendering-rights-enabled-forms)
 
 [使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

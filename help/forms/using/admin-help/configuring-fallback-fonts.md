@@ -1,24 +1,24 @@
 ---
-title: 配置回退字体
+title: 配置后备字体
 description: 了解如何为AEM Forms配置后备字体。 可以使用FontManagerResources.properties文件将默认字体手动映射到回退字体。
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 0%
-
+source-wordcount: '271'
+ht-degree: 2%
 ---
+# 配置后备字体 {#configuring-fallback-fonts}
 
-# 配置回退字体 {#configuring-fallback-fonts}
-
-您可以手动配置FontManagerResources.properties文件，以便在服务器上没有默认字体时，将默认AEM Forms字体映射到回退（或替换）。 此属性文件位于adobe-fontmanager.jar文件中。
+您可以手动配置FontManagerResources.properties文件，以便在服务器上没有默认字体时，将默认的AEM Forms字体映射到回退（或替换）。 此属性文件位于adobe-fontmanager.jar文件中。
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ ht-degree: 0%
 1. 找到FontManagerResources.properties文件并在文本编辑器中将其打开。
 1. 根据需要修改“通用”和“后备”字体位置和名称，并保存文件。
 
-   FontManagerResources.properties文件中的字体条目相对于&#x200B;*`[aem-forms root]`*/fonts目录。 如果指定的字体不是默认的AEM Forms字体，则必须在此目录结构（在现有目录或新创建的目录中）中安装这些字体。
+   FontManagerResources.properties文件中的字体条目相对于&#x200B;*`[aem-forms root]`*/fonts目录。 如果指定的字体不是默认的AEM表单字体，则必须将这些字体安装在此目录结构内（在现有目录内或新创建的目录中）。
 
    >[!NOTE]
    >

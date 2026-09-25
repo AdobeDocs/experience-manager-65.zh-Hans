@@ -1,5 +1,5 @@
 ---
-title: 从AEM Workflow启动Document Services API
+title: 从 AEM 工作流中调用文档服务 API
 description: 了解如何在DDX或提供的输入上调用AEM文档服务。 另请参阅如何将PDF转换为PDF/A
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,19 +10,17 @@ feature: Interactive Communication
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 0%
-
+source-wordcount: '1173'
+ht-degree: 1%
 ---
-
-# 从AEM Workflow启动Document Services API  {#initiate-document-services-apis-from-aem-workflow}
+# 从 AEM 工作流中调用文档服务 API  {#initiate-document-services-apis-from-aem-workflow}
 
 ## 汇编程序 {#assembler}
 
 AEM Forms提供自定义工作流以调用以下Assembler服务API：
 
 * **invoke**：对提供的输入调用输入DDX中指定的操作。
-* **toPDFA**：将输入PDF文档转换为PDF/A文档。
+* **toPDFA**：将输入的PDF文档转换为PDF/A文档。
 
 ### 调用DDX工作流 {#invoke-ddx-workflow}
 
@@ -38,9 +36,9 @@ AEM Forms提供自定义工作流以调用以下Assembler服务API：
 
 * **DDX**：它是调用DDX工作流步骤的必需输入，可以通过从DDX输入下拉列表中选择以下选项之一来指定。
 
-   * *相对于有效负荷*： DDX输入文件相对于工作流项的有效负荷文件夹。
-   * *使用有效负载*：工作流项目的有效负载用作输入DDX文档。
-   * *绝对路径*： CRX存储库中DDX文档的绝对路径。
+  * *相对于有效负荷*： DDX输入文件相对于工作流项的有效负荷文件夹。
+  * *使用有效负载*：工作流项目的有效负载用作输入DDX文档。
+  * *绝对路径*： CRX存储库中DDX文档的绝对路径。
 
 * **从PayLoad创建映射**：在选中时，有效负荷文件夹下的所有文档都将添加到汇编程序中`invoke` API的输入文档映射中。 每个文档的节点名称在映射中用作键。
 
@@ -66,7 +64,7 @@ AEM Forms提供自定义工作流以调用以下Assembler服务API：
 
 ### 转换为PDF/A工作流 {#convert-to-pdf-a-workflow}
 
-转换到PDF/工作流步骤调用`toPDFA`汇编程序服务API。 它用于将PDF文档转换为PDF/A兼容文档。
+转换到PDF/A工作流步骤将调用`toPDFA`汇编程序服务API。 它用于将PDF文档转换为PDF/A兼容文档。
 
 1. 将&#x200B;**[!UICONTROL ConvertToPDFA]**&#x200B;工作流步骤拖动到Sidekick中“Forms Workflow”选项卡下。
 
@@ -83,12 +81,12 @@ AEM Forms提供自定义工作流以调用以下Assembler服务API：
 
 #### 转换选项 {#conversion-options}
 
-“转换选项”允许您指定更改PDF/A转换过程的选项。
+转化选项允许您指定更改PDF/A转化过程的选项。
 
 * *符合性* ：指定输出PDF/A必须符合的PDF/A标准。
-* *结果级别* ：指定用于PDF/A转换日志的日志级别。
+* *结果级别* ：指定要用于PDF/A转换日志的日志级别。
 * *签名* ：指定转换期间必须如何处理输入文档中的签名。
-* *色彩空间* ：指定用于输出PDF/A文档的预定义色彩空间。
+* *色彩空间* ：指定要用于输出PDF/A文档的预定义色彩空间。
 * *验证*&#x200B;转换：指定转换后的PDF/A文档在转换后是否应验证PDF/A的合规性。
 * *作业日志级别* ：指定用于处理日志的日志级别。
 
@@ -98,16 +96,16 @@ AEM Forms提供自定义工作流以调用以下Assembler服务API：
 
 “输出文档”选项卡允许您指定输出文档的目标
 
-* *PDFA Document*：指定保存转换的PDF/文档的位置。 它可以覆盖有效负载文档或保存在有效负载文件夹下。
+* *PDFA文档*：指定保存转换后的PDF/A文档的位置。 它可以覆盖有效负载文档或保存在有效负载文件夹下。
 * *转换日志*：指定转换日志的保存位置。 它可以覆盖有效负荷文档，也可以保存在有效负荷文件夹下。
 
 ## Forms {#forms}
 
-渲染PDF表单工作流是`renderPDFForm`Forms服务API的包装器，用于使用XDPPDF和数据xml创建模板表单。
+渲染PDF表单工作流是`renderPDFForm`Forms服务API的包装器，用于使用XDP模板和数据xml创建PDF表单。
 
 ### 呈现PDF表单工作流 {#render-pdf-form-workflow}
 
-1. 在Sidekick中，将渲染PDF表单工作流步骤拖动到“Forms Workflow”选项卡下。
+1. 在Sidekick中，将渲染PDF表单工作流步骤拖动到Forms Workflow选项卡下。
 1. 双击添加的工作流步骤以编辑组件。
 1. 在“编辑组件”对话框中，配置输入文档、输出文档和其他参数，然后单击&#x200B;**[!UICONTROL 确定]**。
 
@@ -127,7 +125,7 @@ AEM Forms提供自定义工作流以调用以下Assembler服务API：
 * *提交URL*：为生成的PDF表单指定默认提交URL。
 * *区域设置*：为生成的PDF表单指定默认区域设置。
 * *Acrobat版本*：为生成的PDF表单指定目标Acrobat版本。
-* *已标记的PDF*：指定是否使生成的PDF可访问。
+* *标记的PDF*：指定是否使生成的PDF可访问。
 * *XCI文档*：指定XCI文件的路径。
 
 ## 输出 {#output}
@@ -136,7 +134,7 @@ AEM Forms提供自定义工作流以调用以下Assembler服务API：
 
 ### 生成非交互式PDF输出工作流   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
-1. 在“Sidekick”中，将“生成非交互式PDF输出”Forms Workflow拖动到“工作流”选项卡下。
+1. 在Sidekick中，将生成非交互式PDF输出工作流拖动到Forms Workflow选项卡下。
 1. 双击添加的工作流步骤以编辑组件。
 1. 在“编辑组件”对话框中，配置输入文档、输出文档和其他参数，然后单击&#x200B;**[!UICONTROL 确定]**。
 
@@ -153,8 +151,8 @@ AEM Forms提供自定义工作流以调用以下Assembler服务API：
 #### 其他参数 {#additional-parameters-1}
 
 * *内容根*：指定存储输入XDP模板中使用的片段或图像的存储库中的文件夹的路径。
-* *区域设置*：为生成的PDF表单指定默认区域设置。
+* *区域设置*：指定生成的PDF表单的默认区域设置。
 * *Acrobat版本*：为生成的PDF表单指定目标Acrobat版本。
-* 线性PDF：指定是否优化生成的PDF以进行Web查看。
-* *已标记的PDF*：指定是否使生成的PDF可访问。
+* 线性化PDF：指定是否优化生成的PDF以进行Web查看。
+* *标记的PDF*：指定是否使生成的PDF可访问。
 * *XCI文档*：指定XCI文件的路径。
