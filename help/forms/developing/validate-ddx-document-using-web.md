@@ -1,22 +1,25 @@
 ---
 title: 使用Web服务API验证DDX文档
+
 description: 使用Assembler服务API验证DDX文档。
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Developer
 exl-id: 069e5b10-ab93-4492-a70d-6a0d462105a6
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '634'
-ht-degree: 0%
-
+source-wordcount: '642'
+ht-degree: 2%
 ---
-
-# 使用Web服务API验证DDX文档 {#validate-a-ddx-document-using-theweb-service-api}
+# 使用 Web 服务 API 验证 DDX 文档 {#validate-a-ddx-document-using-theweb-service-api}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
@@ -30,7 +33,7 @@ ht-degree: 0%
    >
    >将localhost替换为Forms服务器的IP地址。
 
-1. 创建PDF汇编程序客户端。
+1. 创建PDF Assembler客户端。
 
    * 使用默认构造函数创建`AssemblerServiceClient`对象。
    * 使用`System.ServiceModel.EndpointAddress`构造函数创建`AssemblerServiceClient.Endpoint.Address`对象。 将指定WSDL的字符串值传递给AEM Forms服务（例如，`http://localhost:8080/soap/services/AssemblerService?blob=mtom`）。 您无需使用`lc_version`属性。 此属性在创建服务引用时使用。
@@ -38,10 +41,10 @@ ht-degree: 0%
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`AssemblerServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`AssemblerServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用现有DDX文档。
 
@@ -81,6 +84,6 @@ ht-degree: 0%
 
 **另请参阅**
 
-[验证DDX文档](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
+[验证 DDX 文档](/help/forms/developing/validating-ddx-documents.md#validating-ddx-documents)
 
 [使用MTOM调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
