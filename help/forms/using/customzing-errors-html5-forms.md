@@ -1,5 +1,5 @@
 ---
-title: 自定义HTML5表单的错误消息
+title: 自定义 HTML5 Forms 的错误消息
 description: 了解如何自定义HTML5表单的错误消息显示，包括如何更改其位置和外观。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
@@ -9,16 +9,14 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '497'
-ht-degree: 3%
-
+source-wordcount: '508'
+ht-degree: 6%
 ---
-
-# 自定义HTML5表单的错误消息 {#customizing-error-messages-for-html-forms}
+# 自定义 HTML5 Forms 的错误消息 {#customizing-error-messages-for-html-forms}
 
 在HTML5表单中，开箱即用的错误消息和警告具有固定的位置和外观（字体和颜色），仅对选定字段显示错误，并且只显示一个错误。
 
-本文提供了自定义HTML5表单错误消息的步骤，以便您可以执行以下操作：
+本文介绍了自定义HTML5表单错误消息的步骤，以便您执行以下操作：
 
 * 更改错误消息的外观和位置。 您可以生成错误以显示于任何字段的顶部、底部和右侧。
 * 在任意给定时刻显示多个字段的错误消息。
@@ -37,7 +35,7 @@ ht-degree: 3%
 要自定义错误消息的位置，请为每个错误和警告字段添加&lt;div>标记，将&lt;div>标记放在左侧或右侧，并在&lt;div>标记上应用css样式。 有关详细步骤，请参阅以下步骤：
 
 1. 导航到`CustomErrorManager-1.0-SNAPSHOT`文件夹并打开`etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`文件夹。
-1. 打开 `customErrorManager.js` 文件以供编辑。文件中的`markError`函数接受以下参数：
+1. 打开 `customErrorManager.js` 文件以供编辑。 文件中的`markError`函数接受以下参数：
 
    |   |  |
    |---|---|

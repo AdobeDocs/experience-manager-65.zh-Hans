@@ -1,6 +1,6 @@
 ---
-title: 使用CRXDE Lite进行开发
-description: CRXDE Lite会嵌入到Adobe Experience Manager (AEM)中，使您能够在该浏览器中执行标准开发任务
+title: 使用 CRXDE Lite 进行开发
+description: CRXDE Lite已嵌入到Adobe Experience Manager (AEM)中，并允许您在浏览器中执行标准开发任务
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
@@ -12,19 +12,17 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '2114'
-ht-degree: 1%
-
+source-wordcount: '2116'
+ht-degree: 2%
 ---
+# 使用 CRXDE Lite 进行开发{#developing-with-crxde-lite}
 
-# 使用CRXDE Lite进行开发{#developing-with-crxde-lite}
-
-本节介绍如何使用CRXDE Lite来开发Adobe Experience Manager (AEM)应用程序。
+本节介绍如何使用CRXDE Lite开发Adobe Experience Manager (AEM)应用程序。
 
 有关可用的不同开发环境的更多信息，请参阅概述文档。
 
-CRXDE Lite会嵌入到AEM中，使您能够在该浏览器中执行标准开发任务。 使用CRXDE Lite，您可以在日志记录时创建项目、创建和编辑文件(如.jsp和.java)、文件夹、模板、组件、对话框、节点、属性和捆绑包。
-当您无法直接访问AEM服务器时，建议进行CRXDE Lite。 或者，在通过扩展或修改现成组件和Java™捆绑包来开发应用程序时，或者在不需要专用调试器时，代码完成和语法突出显示。
+CRXDE Lite已嵌入到AEM中，使您能够在该浏览器中执行标准开发任务。 使用CRXDE Lite，您可以在日志记录时创建项目、创建和编辑文件(如.jsp和.java)、文件夹、模板、组件、对话框、节点、属性和捆绑包。
+如果您无法直接访问CRXDE Lite服务器，则建议使用AEM 。 或者，在通过扩展或修改现成组件和Java™捆绑包来开发应用程序时，或者在不需要专用调试器时，代码完成和语法突出显示。
 
 >[!NOTE]
 >
@@ -72,7 +70,7 @@ CRXDE Lite提供以下功能：
   </tr>
   <tr>
    <td>编辑窗格</td>
-   <td><p><strong>主页</strong>选项卡：允许您搜索内容和/或文档并访问开发人员资源（文档、开发人员博客、知识库）和支持(Adobe主页和支持中心)。<br /> </p> <p>双击<strong>资源管理器</strong>窗格中的文件，以便显示其内容。 例如，.jsp或.java文件。 然后，您可以修改它并保存更改。</p> <p>在<strong>编辑</strong>窗格中编辑文件后，工具栏上有以下工具： <br /> </p> - <strong>在树中显示： </strong>在存储库树中显示文件。<br /> - <strong>搜索/替换……</strong>：执行搜索或替换。<br /> <br />双击<strong>编辑</strong>窗格的状态行打开<strong>转到行</strong>对话框，以便输入要转到的特定行号。<br /> </td>
+   <td><p><strong>主页</strong>选项卡：允许您搜索内容和/或文档并访问开发人员资源（文档、开发人员博客、知识库）和支持（Adobe主页和支持中心）。<br /> </p> <p>双击<strong>资源管理器</strong>窗格中的文件，以便显示其内容。 例如，.jsp或.java文件。 然后，您可以修改它并保存更改。</p> <p>在<strong>编辑</strong>窗格中编辑文件后，工具栏上有以下工具： <br /> </p> - <strong>在树中显示： </strong>在存储库树中显示文件。<br /> - <strong>搜索/替换……</strong>：执行搜索或替换。<br /> <br /> 双击<strong>编辑</strong>窗格的状态行打开<strong>转到行</strong>对话框，以便输入要转到的特定行号。<br /> </td>
   </tr>
   <tr>
    <td>“属性”选项卡<br /> </td>
@@ -143,9 +141,9 @@ CRXDE Lite提供以下功能：
 
 ## 创建文件夹 {#creating-a-folder}
 
-要创建具有CRXDE Lite的文件夹，请执行以下操作：
+要使用CRXDE Lite创建文件夹，请执行以下操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 在“导航”窗格中，右键单击要在其下创建文件夹的文件夹，选择&#x200B;**创建……**，然后选择&#x200B;**创建文件夹……**。
 
 1. 输入文件夹&#x200B;**名称**&#x200B;并单击&#x200B;**确定**。
@@ -156,12 +154,12 @@ CRXDE Lite提供以下功能：
 
 要使用CRXDE Lite创建模板，请执行以下操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 在“导航”窗格中，右键单击要创建模板的文件夹，选择&#x200B;**创建……**，然后选择&#x200B;**创建模板……**。
 
 1. 输入模板的&#x200B;**标签**、**标题**、**描述**、**资源类型**&#x200B;和&#x200B;**排名**。 单击&#x200B;**下一步**。
 
-1. 此步骤是可选的：设置&#x200B;**允许的路径**。 单击&#x200B;**下一步**
+1. 此步骤是可选的：设置&#x200B;**允许的路径**。 点击&#x200B;**下一个**
 
 1. 此步骤是可选的：设置&#x200B;**允许的父项**。 单击&#x200B;**下一步**。
 
@@ -181,9 +179,9 @@ CRXDE Lite提供以下功能：
 
 此处介绍的功能仅在安装了CQ5时才可用，即节点类型`cq:Component`在存储库中可用。
 
-要创建具有CRXDE Lite的组件，请执行以下操作：
+要使用CRXDE Lite创建组件，请执行以下操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 在“导航”窗格中，右键单击要在其中创建组件的文件夹，选择&#x200B;**创建……**，然后选择&#x200B;**创建组件……**。
 
 1. 输入组件的&#x200B;**标签**、**标题**、**描述**、**超级资源类型**&#x200B;和&#x200B;**组**。 单击&#x200B;**下一步**。
@@ -204,9 +202,9 @@ CRXDE Lite提供以下功能：
 
 ## 创建对话框 {#creating-a-dialog}
 
-要创建带有CRXDE Lite的对话框，请执行以下操作：
+要创建与CRXDE Lite的对话，请执行以下操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 在“导航”窗格中，右键单击要创建对话框的组件，选择&#x200B;**创建……**，然后选择&#x200B;**创建对话框……**。
 
 1. 输入&#x200B;**标签**&#x200B;和&#x200B;**标题**。 单击&#x200B;**确定**。
@@ -223,9 +221,9 @@ CRXDE Lite提供以下功能：
 
 ## 创建节点 {#creating-a-node}
 
-要创建具有CRXDE Lite的节点，请执行以下操作：
+要使用CRXDE Lite创建节点，请执行以下操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 在“导航”窗格中，右键单击要在其中创建节点的节点，选择&#x200B;**创建……**，然后选择&#x200B;**创建节点……**。
 1. 输入&#x200B;**名称**&#x200B;和&#x200B;**类型**。 单击&#x200B;**确定**。
 1. 单击&#x200B;**全部保存**&#x200B;将更改保存在服务器上。
@@ -240,9 +238,9 @@ CRXDE Lite提供以下功能：
 
 ## 创建资产 {#creating-a-property}
 
-要创建具有CRXDE Lite的资产，请执行以下操作：
+要使用CRXDE Lite创建资产，请执行以下操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 在“导航”窗格中，选择要添加新属性的节点。
 1. 在底部窗格的&#x200B;**属性**&#x200B;选项卡中，输入&#x200B;**名称**、**类型**&#x200B;和&#x200B;**值**。 单击&#x200B;**添加**。
 
@@ -252,7 +250,7 @@ CRXDE Lite提供以下功能：
 
 要创建脚本，请执行以下操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 在“导航”窗格中，右键单击要创建脚本的组件，选择&#x200B;**创建……**，然后选择&#x200B;**创建文件……**。
 
 1. 输入文件&#x200B;**名称**，包括其扩展名。 单击&#x200B;**确定**。
@@ -263,11 +261,11 @@ CRXDE Lite提供以下功能：
 
 ## 导出和导入节点类型 {#exporting-and-importing-node-types}
 
-使用CRXDE Lite，您可以以[CND （压缩命名空间和节点类型定义）表示法](https://jackrabbit.apache.org/jcr/node-type-notation.html)导入和/或导出节点类型定义。
+使用CRXDE Lite，您可以在[CND （压缩命名空间和节点类型定义）表示法](https://jackrabbit.apache.org/jcr/node-type-notation.html)中导入和/或导出节点类型定义。
 
 要导出节点类型定义，请执行以下操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 选择所需的节点。
 1. 选择&#x200B;**工具**，然后选择&#x200B;**导出节点类型**。
 
@@ -275,18 +273,18 @@ CRXDE Lite提供以下功能：
 
 要导入节点类型定义，请执行以下操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 选择&#x200B;**工具**，然后选择&#x200B;**导入节点类型……**。
 
 1. 在文本框中输入定义的CND表示法。
 1. 如果要更新现有定义，请选中&#x200B;**允许更新**。
 1. 单击&#x200B;**导入**。
 
-## 日志记录 {#logging}
+## 记录 {#logging}
 
-通过CRXDE Lite，您可以显示文件系统上位于`<crx-install-dir>/crx-quickstart/server/logs`的文件`error.log`，并使用适当的日志级别对其进行筛选。 按照以下步骤操作：
+使用CRXDE Lite，您可以显示文件系统上位于`<crx-install-dir>/crx-quickstart/server/logs`的文件`error.log`，并使用适当的日志级别对其进行筛选。 按照以下步骤操作：
 
-1. 在浏览器中打开CRXDE Lite。
+1. 在浏览器中打开CRXDE Lite 。
 1. 在窗口底部的&#x200B;**控制台**&#x200B;选项卡中，从右侧的下拉菜单中选择&#x200B;**服务器日志**。
 
 1. 单击&#x200B;**停止**&#x200B;图标以显示消息。

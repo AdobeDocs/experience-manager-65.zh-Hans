@@ -11,16 +11,14 @@ feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 0%
-
+source-wordcount: '478'
+ht-degree: 1%
 ---
-
 # 对话框编辑器{#dialog-editor}
 
 对话框编辑器提供了一个图形界面，用于轻松创建和编辑对话框和基架。
 
-要查看其工作方式，请转到CRXDE Lite，打开`/libs/foundation/components/chart`的资源管理器树，然后双击节点`dialog`：
+要查看其工作方式，请转到CRXDE Lite，打开`/libs/foundation/components/chart`的资源管理器树并双击节点`dialog`：
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 

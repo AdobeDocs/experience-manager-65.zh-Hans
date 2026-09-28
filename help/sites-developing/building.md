@@ -1,24 +1,26 @@
 ---
-title: 在AEM应用程序中生成标记
+title: 在 AEM 应用程序中构建标记功能
+
 description: 以编程方式处理自定义AEM应用程序中的标记或扩展标记
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
+
 feature: Developing,Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
 solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '868'
-ht-degree: 0%
-
+source-wordcount: '932'
+ht-degree: 6%
 ---
+# 在 AEM 应用程序中构建标记功能{#building-tagging-into-an-aem-application}
 
-# 在AEM应用程序中生成标记{#building-tagging-into-an-aem-application}
-
-对于以编程方式使用自定义AEM应用程序中的标记或扩展标记，本页介绍如何使用
+为了以编程方式使用自定义AEM应用程序中的标记或扩展标记，本页介绍了
 
 * [标记API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -152,35 +154,35 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 如有关管理标记的文档中所述，在[管理不同语言的标记](/help/sites-administering/tags.md#managing-tags-in-different-languages)部分中，可以使用不同语言定义标记`title`。 然后，将区分语言的属性添加到标记节点。 此属性的格式为`jcr:title.<locale>`，例如，法语翻译为`jcr:title.fr`。 `<locale>`必须为小写的ISO区域设置字符串，并使用“_”而不是“ — ”，例如： `de_ch`。
 
-将&#x200B;**Animals**&#x200B;标记添加到&#x200B;**Products**&#x200B;页面时，值`stockphotography:animals`将添加到节点/content/geometrixx/en/products/jcr：content的属性`cq:tags`。 将从标记节点中引用翻译。
+将&#x200B;**Animals**&#x200B;标记添加到&#x200B;**Products**&#x200B;页面时，值`stockphotography:animals`将添加到节点/content/geometrixx/en/products/jcr:content的属性`cq:tags`。 将从标记节点中引用翻译。
 
 服务器端API具有本地化的`title`相关方法：
 
 * [com.day.cq.tagging.Tag](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/Tag.html)
 
-   * getLocalizedTitle（区域设置）
-   * getLocalizedTitlePaths()
-   * getLocalizedTitles()
-   * getTitle（区域设置）
-   * getTitlePath（区域设置）
+  * getLocalizedTitle（区域设置）
+  * getLocalizedTitlePaths()
+  * getLocalizedTitles()
+  * getTitle（区域设置）
+  * getTitlePath（区域设置）
 
 * [com.day.cq.tagging.TagManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/tagging/TagManager.html)
 
-   * canCreateTagByTitle(String tagTitlePath， Locale)
-   * createTagByTitle(String tagTitlePath， Locale)
-   * resolveByTitle(String tagTitlePath， Locale)
+  * canCreateTagByTitle(String tagTitlePath， Locale)
+  * createTagByTitle(String tagTitlePath， Locale)
+  * resolveByTitle(String tagTitlePath， Locale)
 
 在AEM中，可以从页面语言或用户语言获取语言：
 
 * 要在JSP中检索页面语言，请执行以下操作：
 
-   * `currentPage.getLanguage(false)`
+  * `currentPage.getLanguage(false)`
 
 * 要在JSP中检索用户语言，请执行以下操作：
 
-   * `slingRequest.getLocale()`
+  * `slingRequest.getLocale()`
 
-`currentPage`和`slingRequest`可通过[&lt;cq：definedObjects>](/help/sites-developing/taglib.md)标记在JSP中使用。
+`currentPage`和`slingRequest`可通过[&lt;cq:definedObjects](/help/sites-developing/taglib.md)标记在JSP中使用。
 
 对于标记，本地化取决于上下文，因为标记`titles`能够以页面语言、用户语言或任何其他语言显示。
 
@@ -200,4 +202,4 @@ http://localhost:4502/system/console/configMgr/com.day.cq.tagging.impl.TagGarbag
 
 >[!CAUTION]
 >
->通过官方更新包（包括Service Pack、Security Service Pack、Extended Feature Pack、Cumulative Feature Pack、修补程序等）安装与标记相关的现成内容，会将`/content/cq:tags`节点的languages属性重置为默认值。 因此，在安装之前，必须从属性中添加它。
+>通过官方更新包（包括服务包、安全服务包、扩展功能包、累计功能包、补丁等）安装与标记相关的开箱即用内容时，会将 `/content/cq:tags` 节点的语言属性重置为默认值。 因此，需要在安装之前从属性中添加该项。

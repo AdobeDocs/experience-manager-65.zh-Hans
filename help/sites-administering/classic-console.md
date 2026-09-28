@@ -1,5 +1,5 @@
 ---
-title: 经典UI标记控制台
+title: 经典 UI 标记控制台
 description: 了解Adobe Experience Manager Classic UI标记控制台。
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,13 +12,11 @@ feature: Administering
 role: Admin
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 2%
-
+source-wordcount: '905'
+ht-degree: 3%
 ---
 
-
-# 经典UI标记控制台{#classic-ui-tagging-console}
+# 经典 UI 标记控制台{#classic-ui-tagging-console}
 
 本节适用于经典UI标记控制台。
 
@@ -50,19 +48,19 @@ ht-degree: 2%
 1. 在这两种情况下，输入
 
    * **标题**
-（*必需*）标记的显示标题。 虽然可以输入任何字符，
-建议不要使用以下特殊字符：
+     （*必需*）标记的显示标题。 虽然可以输入任何字符，
+     建议不要使用以下特殊字符：
 
-      * `colon (:)` — 命名空间分隔符
-      * `forward slash (/)` — 子标记分隔符
+     * `colon (:)` — 命名空间分隔符
+     * `forward slash (/)` — 子标记分隔符
 
      如果输入，将不显示这些字符。
 
    * **名称**
-（*必需*）标记的节点名称。
+     （*必需*）标记的节点名称。
 
    * **描述**
-（*可选*）标记的说明。
+     （*可选*）标记的说明。
 
    * 选择&#x200B;**创建**
 

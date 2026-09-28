@@ -1,5 +1,5 @@
 ---
-title: 自定义自适应表单的错误消息的布局和位置
+title: 自定义自适应表单错误消息的布局与位置
 description: 您可以自定义自适应对象的错误消息的布局和位置。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,10 @@ role: User, Developer
 feature: Adaptive Forms,Foundation Components
 source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
 workflow-type: tm+mt
-source-wordcount: '521'
-ht-degree: 0%
-
+source-wordcount: '530'
+ht-degree: 5%
 ---
-
-# 自定义自适应表单的错误消息的布局和位置{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
+# 自定义自适应表单错误消息的布局与位置{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
 您可以自定义自适应表单的错误消息的布局和位置。 您可以执行以下自定义设置：
 
@@ -51,11 +49,11 @@ ht-degree: 0%
 
 ## 创建自定义字段布局 {#create-a-custom-field-layout}
 
-1. 打开CRXDE Lite。 默认URL为https://&#39;[服务器]：[端口]&#39;/crx/de。
+1. 打开 CRXDE Lite。 默认URL为https://&#39;[服务器]：[端口]&#39;/crx/de。
 1. 将字段布局从/libs/fd/af/layouts/field节点（例如defaultFieldLayout）复制到/apps节点（例如/apps/af-field-layout）。
 1. 重命名复制的节点和defaultFieldLayout.jsp文件。 例如，errorOnRight.jsp。
 
-1. 更改所复制节点的qtip和jcr：description属性的值。 例如，将属性的值更改为Error On Right
+1. 更改所复制节点的qtip和jcr:description属性的值。 例如，将属性的值更改为Error On Right
 
 1. 要添加新样式和行为，请在/etc节点中创建客户端库。
 

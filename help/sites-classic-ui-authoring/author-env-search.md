@@ -1,10 +1,12 @@
 ---
 title: 搜索
 description: AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类型。
+
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
+
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 solution: Experience Manager, Experience Manager Sites
@@ -12,18 +14,16 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '412'
-ht-degree: 12%
-
+source-wordcount: '474'
+ht-degree: 11%
 ---
-
 # 搜索{#searching}
 
 AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类型。
 
 >[!NOTE]
 >
->在创作环境之外，还可以搜索其他机制，如[查询生成器](/help/sites-developing/querybuilder-api.md)和[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。
+>在创作环境之外，还可以使用其他机制进行搜索，如[查询生成器](/help/sites-developing/querybuilder-api.md)和[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。
 
 ## 搜索基础知识 {#search-basics}
 
@@ -92,6 +92,6 @@ AEM 的创作环境提供了多种内容搜索机制，具体取决于资源类�
 
 >[!NOTE]
 >
->在标准AEM安装中，“查找和替换”使用Lucene进行搜索功能。
+>在标准的AEM安装中，“查找和替换”使用Lucene进行搜索功能。
 >
 >Lucene索引长度最大为16k的字符串属性。 超出此范围的字符串将不会被搜索。

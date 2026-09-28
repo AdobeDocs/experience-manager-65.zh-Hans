@@ -1,22 +1,24 @@
 ---
-title: 自定义欢迎控制台（经典UI）
+title: 自定义欢迎控制台（经典 UI）
+
 description: “欢迎”控制台提供了指向AEM中各种控制台和功能的链接列表
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 6%
-
+source-wordcount: '466'
+ht-degree: 8%
 ---
-
-# 自定义欢迎控制台（经典UI）{#customizing-the-welcome-console-classic-ui}
+# 自定义欢迎控制台（经典 UI）{#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
 >
@@ -84,7 +86,7 @@ ht-degree: 6%
    <td> </td>
   </tr>
   <tr>
-   <td> Cloud Service</td>
+   <td> 云服务</td>
    <td><code>/libs/cq/core/content/welcome/resources/cloudservices</code></td>
   </tr>
   <tr>

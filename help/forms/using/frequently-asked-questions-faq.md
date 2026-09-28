@@ -8,13 +8,11 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '98'
-ht-degree: 0%
-
+source-wordcount: '99'
+ht-degree: 4%
 ---
+# 常见问题解答（FAQ） {#frequently-asked-questions-faq}
 
-# 常见问题解答(FAQ) {#frequently-asked-questions-faq}
+1. 为什么中的条形码和签名字段未显示在我的HTML 5表单中？
 
-1. 为什么中的条形码和签名字段未出现在我的HTML5表单中？
-
-   答案：条形码和签名字段在HTML或移动场景中无关。 这些字段显示为非交互区域。 但是，AEM Forms Designer提供了一个新的签名涂写字段，该字段可用于代替签名字段。 还可以添加用于条形码的[自定义构件](../../forms/using/custom-widgets.md)并将其集成。
+   回答：条形码和签名字段在HTML或移动设备场景中无关。 这些字段显示为非交互区域。 但是，AEM Forms Designer提供了一个新的签名涂写字段，该字段可用于代替签名字段。 还可以添加用于条形码的[自定义构件](../../forms/using/custom-widgets.md)并将其集成。
