@@ -1,5 +1,5 @@
 ---
-title: 为HTML5表单创建CSS样式
+title: 为 HTML5 Forms 创建 CSS 样式
 description: 了解如何通过修改与HTML表单元素关联的CSS类来更改HTML5表单的外观。
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,10 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '812'
-ht-degree: 2%
-
+source-wordcount: '825'
+ht-degree: 4%
 ---
-
-# 为HTML5表单创建CSS样式 {#creating-css-styles-for-html-forms}
+# 为 HTML5 Forms 创建 CSS 样式 {#creating-css-styles-for-html-forms}
 
 基于XFA的表单模板的HTML5演绎版包含多个HTML元素。 这些元素按顺序排列。 每个元素都有明确定义的CSS类。 您可以使用这些CSS类选择和更改元素的外观。
 
@@ -25,7 +23,7 @@ ht-degree: 2%
 >
 >在CSS类中，请勿更改width、height、border-thickness、top、left、right、bottom、padding、margin以及其他位置和大小属性的值。 位置和大小属性的任何更改都会使表单的布局发生变化。
 
-## CSS类  用于元素  {#css-classes-nbsp-for-elements-nbsp}
+## 元素的CSS类  {#css-classes-nbsp-for-elements-nbsp}
 
 每个元素都包含明确定义的CSS类。 可以修改这些类以更改元素的外观。 每个元素（字段和绘制元素除外）都有两个CSS类 — Type类和Name类。
 
@@ -124,7 +122,7 @@ ht-degree: 2%
 
 ## 不同字段的CSS类 {#css-classes-for-different-fields}
 
-AEM Forms Designer支持表单中各种类型的字段，如NumericField、DecimalField和Date Field。 HTML中的所有字段都包含上述CSS类。 它们还包含一些额外的类，具体取决于字段类型。
+AEM Forms Designer支持表单中各种类型的字段，如NumericField、DecimalField和Date Field。 HTML中的所有这些字段都包含上述CSS类。 它们还包含一些额外的类，具体取决于字段类型。
 
 每个字段都有一个表示UI元素的关联构件。 下面列出了每个字段的类以及与每个字段关联的构件。
 
@@ -135,7 +133,7 @@ AEM Forms Designer支持表单中各种类型的字段，如NumericField、Decim
    <td><strong>子类型</strong></td>
    <td><strong>构件名称</strong></td>
    <td><strong>构件类型</strong></td>
-   <td><strong>HTMLUI标记</strong></td>
+   <td><strong>HTML UI标记</strong></td>
   </tr>
   <tr>
    <td>按钮<br type="_moz" /> </td>
@@ -224,16 +222,16 @@ AEM Forms Designer支持表单中各种类型的字段，如NumericField、Decim
  </tbody>
 </table>
 
-## 其他Draw元素的CSS类 {#css-classes-for-different-draw-elements}
+## 不同绘制元素的CSS类 {#css-classes-for-different-draw-elements}
 
 您可以使用AEM Forms Designer插入静态绘制元素，如文本和图像。 对于每个绘制元素，单独的CSS类与该元素关联。 绘制元素的CSS类列表如下所列。 每个绘制元素都有一个与之关联的绘制类。
 
-| **Draw类型** | **CSS类** |
+| **绘制类型** | **CSS类** |
 |---|---|
 | 文本 | text |
 | 图像 | 图像 |
 | 矩形 | 矩形 |
-| 线条 | 折线图 |
+| 线形图 | 折线图 |
 
 ## 设置窗体其他部分的样式 {#styling-other-parts-of-the-form}
 

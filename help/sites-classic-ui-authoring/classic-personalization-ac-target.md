@@ -1,5 +1,5 @@
 ---
-title: 定位Adobe Campaign
+title: 面向 Adobe Campaign 的目标选择
 description: 设置分段包括创建区段、品牌、营销活动和体验。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 0%
-
+source-wordcount: '816'
+ht-degree: 1%
 ---
-
-# 定位Adobe Campaign{#targeting-your-adobe-campaign}
+# 面向 Adobe Campaign 的目标选择{#targeting-your-adobe-campaign}
 
 要定位Adobe Campaign新闻稿，您需要先设置分段，该功能仅在经典UI中可用。 之后，您可以为Adobe Campaign创建定位体验。
 
@@ -87,7 +85,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >默认情况下，AEM随附的电子邮件示例使用Adobe Campaign作为定位引擎。 对于自定义新闻稿，您可能需要选择Adobe Campaign作为定位引擎。 定位时，单击工具栏中的+ ，输入新活动的标题，然后选择&#x200B;**Adobe Campaign**&#x200B;作为定位引擎。
+   >默认情况下，AEM中包含的电子邮件示例使用Adobe Campaign作为定位引擎。 对于自定义新闻稿，您可能需要选择Adobe Campaign作为定位引擎。 定位时，单击工具栏中的+ ，输入新活动的标题，然后选择&#x200B;**Adobe Campaign**&#x200B;作为定位引擎。
 
 1. 单击&#x200B;**默认**，然后单击您添加的文本和Personalization组件，您会看到带有箭头的靶心。 单击图标以定位此组件。
 
@@ -97,9 +95,9 @@ ht-degree: 0%
 1. 导航到其他区段（女性）并单击&#x200B;**添加选件**&#x200B;和加号图标+。 然后编辑此选件。
 1. 单击&#x200B;**下一步**&#x200B;查看映射，单击&#x200B;**下一步**&#x200B;查看不适用于Adobe Campaign的设置，然后单击&#x200B;**保存**。
 
-   当内容在Adobe Campaign内的投放中使用时，AEM会自动为Adobe Campaign生成正确的定位代码
+   当Adobe Campaign内的投放中使用内容时，AEM会自动为Adobe Campaign生成正确的定位代码
 
-1. 在Adobe Campaign中，创建您的投放 — 选择包含AEM内容的&#x200B;**电子邮件投放**，并根据需要选择本地AEM帐户，然后确认您的更改。
+1. 在Adobe Campaign中，创建投放 — 选择包含AEM内容的&#x200B;**电子邮件投放**，并根据需要选择本地AEM帐户，然后确认更改。
 
    在HTML视图中，目标组件的不同体验包含在Adobe Campaign定位代码中。
 

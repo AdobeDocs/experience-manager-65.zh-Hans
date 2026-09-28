@@ -12,11 +12,9 @@ feature: Administering,Personalization
 role: Admin
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1128'
-ht-degree: 7%
-
+source-wordcount: '1139'
+ht-degree: 8%
 ---
-
 
 # 配置分段 {#configuring-segmentation}
 
@@ -24,13 +22,13 @@ ht-degree: 7%
 >
 >本文档介绍与Client Context一起使用的区段的配置。 要使用Touch UI在ContextHub中配置区段，请参阅[使用ContextHub配置分段](/help/sites-administering/segmentation.md)。
 
-分段是创建营销活动时的主要考虑事项。有关分段的工作方式和关键术语的信息，请参阅[分段术语表](/help/sites-authoring/segmentation-overview.md)。
+分段是创建营销活动时的主要考虑事项。 有关分段的工作方式和关键术语的信息，请参阅[分段术语表](/help/sites-authoring/segmentation-overview.md)。
 
 根据您收集到的有关网站访客的信息以及要实现的目标，必须定义目标内容所需的区段和策略。
 
-之后，这些区段可用于为访客提供具体的目标内容。此内容在网站的[营销活动](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)部分中维护。 此处定义的Teaser页面可以包含在任何页面上作为Teaser段落，并定义专用内容适用于的访客区段。
+之后，这些区段可用于为访客提供具体的目标内容。 此内容在网站的[营销活动](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)部分中维护。 此处定义的Teaser页面可以包含在任何页面上作为Teaser段落，并定义专用内容适用于的访客区段。
 
-AEM可让您轻松创建和更新区段、Teaser和营销活动。 它还允许您验证定义的结果。
+通过AEM，您可以轻松创建和更新区段、Teaser和营销活动。 它还允许您验证定义的结果。
 
 通过&#x200B;**区段编辑器**，可轻松定义区段：
 
@@ -113,7 +111,7 @@ AEM可让您轻松创建和更新区段、Teaser和营销活动。 它还允许�
 
 >[!CAUTION]
 >
->区段编辑器不检查任何循环引用。例如，区段A引用另一个区段B，而后者又引用区段A。请确保您的区段不包含任何循环引用。
+>区段编辑器不检查任何循环引用。 例如，区段A引用另一个区段B，而后者又引用区段A。请确保您的区段不包含任何循环引用。
 
 >[!NOTE]
 >
@@ -146,10 +144,10 @@ AEM可让您轻松创建和更新区段、Teaser和营销活动。 它还允许�
 
 ### 使用 AND 和 OR 容器 {#using-and-and-or-containers}
 
-您可以在AEM中构建复杂区段。 了解一些基本要点会有所帮助：
+您可以在AEM中构建复杂的区段。 了解一些基本要点会有所帮助：
 
 * 定义的顶级始终是最初创建的AND容器；此操作无法更改，但不会影响区段定义的其余部分。
-* 确保容器的嵌套有意义。可以将容器视为布尔表达式的括号。
+* 确保容器的嵌套有意义。 可以将容器视为布尔表达式的括号。
 
 以下示例用于选择符合以下条件的访客：
 
@@ -182,7 +180,7 @@ OR
 
 >[!NOTE]
 >
->所有特征都会立即解析，但大多数特征仅在页面重新加载时发生变化。 对鼠标位置的更改会立即可见，因此可用于测试目的。
+>将立即解析所有特征，尽管大多数特征仅在页面重新加载时发生变化。 对鼠标位置的更改会立即可见，因此可用于测试目的。
 
 此类测试还可以在内容页面上执行，并与&#x200B;**Teaser**&#x200B;组件结合使用。
 

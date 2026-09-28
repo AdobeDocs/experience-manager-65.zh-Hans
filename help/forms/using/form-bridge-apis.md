@@ -1,5 +1,5 @@
 ---
-title: 适用于HTML5表单的Form Bridge API
+title: HTML5 Forms 的 Form Bridge API
 description: 外部应用程序使用FormBridge API连接到XFA Mobile表单。 API在父窗口中调度FormBridgeInitialized事件。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,11 +11,9 @@ role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
 source-wordcount: '938'
-ht-degree: 0%
-
+ht-degree: 1%
 ---
-
-# 适用于HTML5表单的Form Bridge API {#form-bridge-apis-for-html-forms}
+# HTML5 Forms 的 Form Bridge API {#form-bridge-apis-for-html-forms}
 
 您可以使用Form Bridge API打开基于XFA的HTML5表单与您的应用程序之间的通信渠道。 表单Bridge API提供了&#x200B;**connect** API来创建连接。
 
@@ -59,8 +57,8 @@ window.addEventListener("FormBridgeInitialized",
 
 * **输入**：
 
-   * **处理程序**：连接表单Bridge后要执行的函数
-   * **上下文**： *处理程序*&#x200B;函数的上下文(this)所设置的对象。
+  * **处理程序**：连接表单Bridge后要执行的函数
+  * **上下文**： *处理程序*&#x200B;函数的上下文(this)所设置的对象。
 
 * **输出**：无
 * **错误**：无
@@ -69,13 +67,13 @@ window.addEventListener("FormBridgeInitialized",
 
 * **输入：**
 
-   * **选项：**&#x200B;包含以下属性的JavaScript对象：
+  * **选项：**&#x200B;包含以下属性的JavaScript对象：
 
-      * **错误**：错误处理程序函数
-      * **success**：成功处理程序函数。 此函数传递了一个包含&#x200B;*数据*&#x200B;属性中的XML的对象。
-      * **context**： *success*&#x200B;函数的上下文(this)所设置的对象
-      * **validationChecker**：用于调用以检查从服务器收到的验证错误的函数。 验证函数传递了错误字符串的数组。
-      * **formState**：必须为其返回数据XML的XFA表单的JSON状态。 如果未指定，则返回当前渲染表单的数据XML。
+    * **错误**：错误处理程序函数
+    * **success**：成功处理程序函数。 此函数传递了一个包含&#x200B;*数据*&#x200B;属性中的XML的对象。
+    * **context**： *success*&#x200B;函数的上下文(this)所设置的对象
+    * **validationChecker**：用于调用以检查从服务器收到的验证错误的函数。 验证函数传递了错误字符串的数组。
+    * **formState**：必须为其返回数据XML的XFA表单的JSON状态。 如果未指定，则返回当前渲染表单的数据XML。
 
 * **输出：**&#x200B;无
 * **错误：**&#x200B;无
@@ -84,42 +82,42 @@ window.addEventListener("FormBridgeInitialized",
 
 * **输入：**
 
-   * 要覆盖的配置的&#x200B;**configName：**&#x200B;名称
+  * 要覆盖的配置的&#x200B;**configName：**&#x200B;名称
 
-      * **小组件配置：**&#x200B;允许用户使用自定义小组件覆盖表单中的默认小组件。 将按如下方式覆盖配置：
+    * **小组件配置：**&#x200B;允许用户使用自定义小组件覆盖表单中的默认小组件。 将按如下方式覆盖配置：
 
-        *formBridge.registerConfig(&quot;widgetConfig&quot;：{/&amp;amp；ast；configuration&amp;amp；ast；/})*
+      *formBridge.registerConfig(&quot;widgetConfig&quot;：{/&amp;ast；configuration&amp;ast；/})*
 
-      * **pagingConfig：**&#x200B;允许用户覆盖仅呈现第一页的默认行为。 将按如下方式覆盖配置：
+    * **pagingConfig：**&#x200B;允许用户覆盖仅呈现第一页的默认行为。 将按如下方式覆盖配置：
 
-        *window.formBridge.registerConfig(&quot;pagingConfig&quot;：{pagingDisabled： &lt;true | false>， shrinkPageDisabled： &lt;true | false> })。*
+      *window.formBridge.registerConfig(&quot;pagingConfig&quot;：{pagingDisabled： &lt;true | false>， shrinkPageDisabled： &lt;true | false> })。*
 
-      * **LoggingConfig：**&#x200B;允许用户覆盖日志记录级别，禁用某个类别的日志记录，或者是否显示日志控制台或发送到服务器。 可按如下方式覆盖配置：
+    * **LoggingConfig：**&#x200B;允许用户覆盖日志记录级别，禁用某个类别的日志记录，或者是否显示日志控制台或发送到服务器。 可按如下方式覆盖配置：
 
-     ```javascript
-     formBridge.registerConfig{
-       "LoggerConfig" : {
-     {
-     "on":`<true *| *false>`,
-     "category":`<array of categories>`,
-     "level":`<level of categories>`, "
-     type":`<"console"/"server"/"both">`
-     }
-       }
-     ```
+    ```javascript
+    formBridge.registerConfig{
+      "LoggerConfig" : {
+    {
+    "on":`<true *| *false>`,
+    "category":`<array of categories>`,
+    "level":`<level of categories>`, "
+    type":`<"console"/"server"/"both">`
+    }
+      }
+    ```
 
-      * **SubmitServiceProxyConfig：**&#x200B;允许用户注册提交和记录器代理服务。
+    * **SubmitServiceProxyConfig：**&#x200B;允许用户注册提交和记录器代理服务。
 
-        ```javascript
-        window.formBridge.registerConfig("submitServiceProxyConfig",
-        {
-        "submitServiceProxy" : "`<submitServiceProxy>`",
-        "logServiceProxy": "`<logServiceProxy>`",
-        "submitUrl" : "`<submitUrl>`"
-        });
-        ```
+      ```javascript
+      window.formBridge.registerConfig("submitServiceProxyConfig",
+      {
+      "submitServiceProxy" : "`<submitServiceProxy>`",
+      "logServiceProxy": "`<logServiceProxy>`",
+      "submitUrl" : "`<submitUrl>`"
+      });
+      ```
 
-   * **配置：**&#x200B;配置值
+  * **配置：**&#x200B;配置值
 
 * **输出：**&#x200B;在&#x200B;*数据*&#x200B;属性中包含配置原始值的对象。
 
@@ -129,7 +127,7 @@ window.addEventListener("FormBridgeInitialized",
 
 * **输入：**
 
-   * **fieldArray：**&#x200B;要隐藏的字段的Som表达式数组
+  * **fieldArray：**&#x200B;要隐藏的字段的Som表达式数组
 
 * **输出：**&#x200B;无
 * **错误：**&#x200B;无
@@ -138,7 +136,7 @@ window.addEventListener("FormBridgeInitialized",
 
 * **输入：**
 
-   * **fieldArray：**&#x200B;要显示的字段的Som表达式数组
+  * **fieldArray：**&#x200B;要显示的字段的Som表达式数组
 
 * **输出：**&#x200B;无
 * **错误：**&#x200B;无
@@ -160,12 +158,12 @@ window.addEventListener("FormBridgeInitialized",
 
 * **输入：**
 
-   * **选项：**&#x200B;包含以下属性的JavaScript对象：
+  * **选项：**&#x200B;包含以下属性的JavaScript对象：
 
-      * **错误**：错误处理程序函数
-      * **success**： Success处理程序函数
-      * **context**： *success*&#x200B;函数的上下文(this)所设置的对象
-      * **formState**：表单的JSON状态。 表单将恢复为JSON状态。
+    * **错误**：错误处理程序函数
+    * **success**： Success处理程序函数
+    * **context**： *success*&#x200B;函数的上下文(this)所设置的对象
+    * **formState**：表单的JSON状态。 表单将恢复为JSON状态。
 
 * **输出：**&#x200B;无
 * **错误：**&#x200B;无
@@ -180,8 +178,8 @@ window.addEventListener("FormBridgeInitialized",
 
 * **输入：**
 
-   * **som：**&#x200B;包含字段的Som表达式的数组。 用于设置字段值的som表达式。
-   * **值：**&#x200B;数组包含与&#x200B;**som**&#x200B;数组中提供的Som表达式对应的值。 如果该值的数据类型与fieldType不同，则不会修改该值。
+  * **som：**&#x200B;包含字段的Som表达式的数组。 用于设置字段值的som表达式。
+  * **值：**&#x200B;数组包含与&#x200B;**som**&#x200B;数组中提供的Som表达式对应的值。 如果该值的数据类型与fieldType不同，则不会修改该值。
 
 * **输出：**&#x200B;无
 * **错误：**&#x200B;如果Som表达式不正确，则引发异常
@@ -210,8 +208,8 @@ if(a.errors) {
 
 * **输入：**
 
-   * **som：**&#x200B;包含字段的Som表达式的数组
-   * **属性**：需要其值的属性的名称
+  * **som：**&#x200B;包含字段的Som表达式的数组
+  * **属性**：需要其值的属性的名称
 
 * **输出：**&#x200B;在&#x200B;*数据*&#x200B;属性中包含结果为数组的对象
 
@@ -221,9 +219,9 @@ if(a.errors) {
 
 * **输入：**
 
-   * **som：**&#x200B;数组包含必须设置其值的字段的Som表达式
-   * **属性**：必须设置其值的属性
-   * **值：**&#x200B;数组包含Som表达式中指定的字段的给定属性的值
+  * **som：**&#x200B;数组包含必须设置其值的字段的Som表达式
+  * **属性**：必须设置其值的属性
+  * **值：**&#x200B;数组包含Som表达式中指定的字段的给定属性的值
 
 * **输出：**&#x200B;无
 * **错误：**&#x200B;无

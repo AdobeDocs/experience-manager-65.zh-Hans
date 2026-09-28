@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '693'
-ht-degree: 2%
-
+source-wordcount: '692'
+ht-degree: 7%
 ---
-
 # 延迟内容迁移 {#lazy-content-migration}
 
 为了向后兼容，从Adobe Experience Manager (AEM) 6.3开始的&#x200B;**/etc**&#x200B;和&#x200B;**/content**&#x200B;中的内容和配置在升级后不会立即接触或转换。 这样做是为了确保客户应用程序对这些结构的依赖关系保持不变。 即使开箱即用的AEM 6.5中的内容将在其他位置托管，与这些内容结构相关的功能仍然相同。
@@ -59,5 +57,5 @@ ht-degree: 2%
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | 延迟 | 清理&#x200B;**/etc/cloudsettings** （包含ContextHub配置）。 首次访问时自动迁移配置。 如果启动延迟内容迁移的同时升级&#x200B;**/etc/cloudsettings**&#x200B;中的此内容，则必须在升级之前通过包保留并重新安装，以便隐式转换生效，并且在完成之后后续卸载包。 |
 | `CQ64UsersTitleFixTask` | &lt; 6.4 | 延迟 | 将旧版标题结构调整为用户配置文件节点中的标题。 |
 | `CQ64CommerceMigrationTask` | &lt; 6.4 | 延迟 | 将商务内容从&#x200B;**/etc/commerce**&#x200B;迁移到&#x200B;**/var/commerce**。 在迁移期间，将移动内容并更新对已移动内容的引用，以反映新位置。 |
-| `CQ65DMMigrationTask` | &lt; 6.5 | 延迟 | 将旧目录设置和Dynamic MediaCloud Service设置从&#x200B;**/etc**&#x200B;迁移到&#x200B;**/conf** |
+| `CQ65DMMigrationTask` | &lt; 6.5 | 延迟 | 将旧目录设置和Dynamic Media云服务设置从&#x200B;**/etc**&#x200B;迁移到&#x200B;**/conf** |
 | `CQ65LegacyClientlibsCleanupTask` | &lt; 6.5 | 延迟 | 清理&#x200B;**/etc/clientlibs**&#x200B;下的旧版clientlibs |

@@ -1,6 +1,6 @@
 ---
 title: 扩展搜索功能
-description: 将 [!DNL Adobe Experience Manager Assets] 的搜索功能扩展到默认搜索功能之外。
+description: 将[!DNL Adobe Experience Manager Assets]的搜索功能扩展到默认搜索功能之外。
 contentOwner: AG
 role: Developer
 feature: Search
@@ -8,11 +8,9 @@ exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '814'
-ht-degree: 16%
-
+source-wordcount: '830'
+ht-degree: 7%
 ---
-
 # 扩展资产搜索 {#extending-assets-search}
 
 您可以扩展[!DNL Adobe Experience Manager Assets]搜索功能。 开箱即用，[!DNL Experience Manager Assets]按字符串搜索资源。
@@ -140,7 +138,7 @@ ht-degree: 16%
    </script>
    ```
 
-1. 为了使组件可用，您需要能够对其进行编辑。要使组件可编辑，请在 CRXDE 中添加主类型 **cq:EditConfig** 的 **cq:editConfig** 节点。为了删除段落，请添加带有单个值 **DELETE** 的多值属性 **cq:actions**。
+1. 为了使组件可用，您需要能够对其进行编辑。 若要使组件可编辑，请在CRXDE中添加主类型&#x200B;**cq:EditConfig**&#x200B;的节点&#x200B;**cq:editConfig**。 为了删除段落，请添加单值为&#x200B;**DELETE**&#x200B;的多值&#x200B;**cq:actions**。
 1. 导航到浏览器，并在示例页面（例如，**press.html**）上切换到设计模式并为谓词段落系统启用新组件（例如，**left**）。
 
 1. 在&#x200B;**编辑**&#x200B;模式下，新组件现在可在Sidekick中使用（可在&#x200B;**搜索**&#x200B;组中找到）。 在&#x200B;**Predicates**&#x200B;列中插入组件并键入搜索词，例如&#x200B;**Diamond**，然后单击放大镜开始搜索。
@@ -244,7 +242,7 @@ ht-degree: 16%
        });
    ```
 
-1. 为了使组件可用，您需要能够对其进行编辑。要使组件可编辑，请在 CRXDE 中添加主类型 **cq:EditConfig** 的 **cq:editConfig** 节点。为了删除段落，请添加带有单个值 **DELETE** 的多值属性 **cq:actions**。
+1. 为了使组件可用，您需要能够对其进行编辑。 若要使组件可编辑，请在CRXDE中添加主类型&#x200B;**cq:EditConfig**&#x200B;的节点&#x200B;**cq:editConfig**。 为了删除段落，请添加单值为&#x200B;**DELETE**&#x200B;的多值&#x200B;**cq:actions**。
 1. 导航到浏览器，并在示例页面（例如，**press.html**）上切换到设计模式并为谓词段落系统启用新组件（例如，**left**）。
 1. 在&#x200B;**编辑**&#x200B;模式下，新组件现在可在Sidekick中使用（可在&#x200B;**搜索**&#x200B;组中找到）。 在&#x200B;**Predicates**&#x200B;列中插入组件。
 

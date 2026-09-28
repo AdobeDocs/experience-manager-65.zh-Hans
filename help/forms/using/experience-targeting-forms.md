@@ -1,5 +1,5 @@
 ---
-title: 在AEM Forms中创建目标体验
+title: 在 AEM Forms 中创建定向体验
 description: 在AEM Forms中使用Target为目标客户创建自定义体验。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,12 +10,10 @@ feature: Adaptive Forms
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '840'
-ht-degree: 0%
-
+source-wordcount: '846'
+ht-degree: 2%
 ---
-
-# 在AEM Forms中创建目标体验 {#create-targeted-experiences-in-aem-forms}
+# 在 AEM Forms 中创建定向体验 {#create-targeted-experiences-in-aem-forms}
 
 ## 将Adobe Target与AEM Forms集成 {#integrate-adobe-target-with-aem-forms}
 
@@ -36,8 +34,8 @@ Adobe Target与AEM集成后，您可以创建针对目标受众自定义的体�
 1. 在“活动”页面中，选择&#x200B;**创建>创建品牌**。
 1. 系统会要求您选择模板并输入属性。
 
-   选择模板，然后选择&#x200B;**下一步。**&#x200B;在“属性”部分输入品牌标题，然后选择&#x200B;**创建。**
-您的品牌现在已列在活动页面中。
+   选择模板，选择&#x200B;**下一步。** 在“属性”部分输入品牌标题，然后选择&#x200B;**创建。**
+   您的品牌现在已列在活动页面中。
 
 1. 在“活动”页面中选择您的品牌。
 1. 在品牌的主区域内，选择&#x200B;**创建** > **创建活动**。
