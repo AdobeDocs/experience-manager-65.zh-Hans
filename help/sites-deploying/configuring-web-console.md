@@ -10,12 +10,10 @@ feature: Configuring
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '716'
 ht-degree: 1%
-
 ---
-
-# Web 控制台{#web-console}
+# 网页控制台{#web-console}
 
 Adobe Experience Manager (AEM)中的Web控制台基于[Apache Felix Web管理控制台](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html)。 Apache Felix是社区努力实施OSGi R4服务平台，其中包括OSGi框架和标准服务。
 
@@ -23,7 +21,7 @@ Adobe Experience Manager (AEM)中的Web控制台基于[Apache Felix Web管理控
 >
 >在Web控制台上，任何提及默认设置的描述都与Sling默认设置相关。
 >
->AEM有自己的默认值，因此默认设置可能与控制台上记录的那些值不同。
+>AEM有自己的默认值，因此默认设置可能与控制台中记录的那些值不同。
 
 Web控制台提供了一系列用于维护OSGi捆绑包的选项卡，包括：
 
@@ -65,8 +63,8 @@ Web控制台提供了一系列用于维护OSGi捆绑包的选项卡，包括：
 
   允许您更新现有配置。 它们具有永久标识(PID)，可以是：
 
-   * 标准ID和AEM的组成部分；如果删除，这些值将返回到默认设置。
-   * 从“工厂配置”创建的实例；这些实例由用户创建，删除操作将删除该实例。
+  * 标准和AEM的组成部分；如果删除这些值，则会返回默认设置。
+  * 从“工厂配置”创建的实例；这些实例由用户创建，删除操作将删除该实例。
 
 * **工厂配置**
 

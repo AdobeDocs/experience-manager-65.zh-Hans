@@ -1,5 +1,5 @@
 ---
-title: ASRP -Adobe存储资源提供程序
+title: ASRP - Adobe存储资源提供程序
 description: 设置AEM Communities以使用关系数据库作为其公用存储
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -12,12 +12,10 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '792'
+source-wordcount: '825'
 ht-degree: 1%
-
 ---
-
-# ASRP -Adobe存储资源提供程序 {#asrp-adobe-storage-resource-provider}
+# ASRP - Adobe存储资源提供程序 {#asrp-adobe-storage-resource-provider}
 
 ## 关于ASRP {#about-asrp}
 
@@ -46,7 +44,7 @@ ht-degree: 1%
 
 **在AEM创作实例上：**
 
-* 在全局导航中，导航到&#x200B;**[!UICONTROL 工具> Communities > Storage Configuration]**，然后选择&#x200B;**[!UICONTROL Adobe存储资源提供程序(ASRP)]**。
+* 在全局导航中，导航到&#x200B;**[!UICONTROL 工具> Communities > Storage Configuration]**，然后选择&#x200B;**[!UICONTROL Adobe Storage Resource Provider (ASRP)]**。
 
 ![asrp-default](assets/asrp-default.png)
 
@@ -73,7 +71,7 @@ ht-degree: 1%
 
 ### 复制加密密钥 {#replicate-the-crypto-key}
 
-使用者密钥和秘密密钥已加密。 为了使密钥正确加密/解密，所有AEM实例上的主Granite加密密钥必须相同。
+使用者密钥和秘密密钥已加密。 为了正确加密/解密密钥，所有AEM实例上的主Granite加密密钥必须相同。
 
 按照[复制加密密钥](/help/communities/deploy-communities.md#replicate-the-crypto-key)中的说明操作。
 
@@ -140,7 +138,7 @@ Adobe云存储基础结构使用&#x200B;*最终一致性*&#x200B;来实现其扩
 
 通过检查存储选项的配置，确保已将ASRP配置为默认提供程序。 默认情况下，存储资源提供程序是JSRP，而不是ASRP。
 
-在所有创作和发布AEM实例上，重新访问“存储配置”控制台，或检查AEM存储库。
+在所有创作和发布AEM实例上，重新访问“存储配置”控制台，或查看AEM存储库。
 
 在JCR中，如果[/conf/global/settings/communities](https://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)：
 

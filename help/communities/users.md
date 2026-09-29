@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1922'
 ht-degree: 0%
-
 ---
-
 # 管理用户和用户组 {#managing-users-and-user-groups}
 
 ## 概述 {#overview}
@@ -46,7 +44,7 @@ ht-degree: 0%
 
 ### 动态创建的用户组 {#dynamically-created-user-groups}
 
-创建新社区站点时，将使用唯一ID (uid)和权限动态创建新用户组，这些唯一的ID和权限适用于在创作环境（请参阅[创作组角色](#author-group-roles)）或发布环境(请参阅[Publish组角色](#publish-group-roles))中管理社区站点所需的各种管理功能。
+创建新社区站点时，将使用唯一ID (uid)和权限动态创建新用户组，这些唯一的ID和权限适用于在创作环境（请参阅[创作组角色](#author-group-roles)）或发布环境（请参阅[发布组角色](#publish-group-roles)）中管理社区站点所需的各种管理功能。
 
 组名称是在[社区站点创建](sites-console.md#step13asitetemplate)期间从给定站点的名称生成的。 唯一ID可避免同一服务器上名称相似的社区站点和社区组的命名冲突。
 
@@ -72,7 +70,7 @@ ht-degree: 0%
 
 | 如果组成员…… | 主要角色 |
 |---|---|
-| 管理员 | 管理员组由系统管理员组成，系统管理员具有社区管理员的所有能力以及管理社区管理员组的能力。 |
+| administrators | 管理员组由系统管理员组成，系统管理员具有社区管理员的所有能力以及管理社区管理员组的能力。 |
 | 社区管理员 | 社区管理员组会自动成为所有社区站点以及在站点上创建的任何社区组的成员。 社区管理员组的初始成员是管理员组。 在创作环境中，社区管理员可以创建社区站点、管理站点、管理成员（他们可以从社区中禁止成员）并审核内容。 |
 | 社区&lt;*站点名称*>站点内容管理器 | 社区站点内容管理器能够执行传统的AEM创作、内容创建和修改社区站点的页面。 |
 | 无 | 匿名网站访客可能无法访问作者环境。 |
@@ -94,18 +92,18 @@ ht-degree: 0%
 在发布环境中，站点访客可能会成为社区成员，具体取决于社区站点的[设置](sites-console.md#user-management)：
 
 * 当社区站点为私有（已关闭）时：
-   * 通过邀请
-   * 按管理员的操作
+  * 通过邀请
+  * 按管理员的操作
 
 * 当社区站点为公共（开放）时：
-   * 通过自助注册
-   * 通过使用Facebook和Twitter进行社交登录
+  * 通过自助注册
+  * 通过Facebook和Twitter进行社交登录
 
 >[!NOTE]
 >
 >如果网站访客注册为一个开放社区网站的成员，则他们会自动成为同一发布环境中其他开放社区网站的成员。
 
-### Publish组角色 {#publish-group-roles}
+### 发布组角色 {#publish-group-roles}
 
 | 如果组成员…… | 主要角色 |
 |---|---|
@@ -116,7 +114,7 @@ ht-degree: 0%
 | *拥有权限的成员安全组* | 手动创建和维护的用户组，用于限制内容创建。 查看[拥有权限的成员组](#privileged-members-group)。 |
 | 无 | 发现网站的匿名网站访客可以查看和搜索允许匿名访问的社区网站。 要参与并发布内容，用户必须自行注册（如果允许）并成为社区成员。 |
 
-### 将成员分配给Publish组角色 {#assigning-members-to-publish-group-roles}
+### 将成员分配给发布组角色 {#assigning-members-to-publish-group-roles}
 
 当[在创作环境中创建社区站点](sites-console.md)时，或当[修改站点属性时，可能会为成员](sites-console.md#modifying-site-properties)分配在发布环境中执行的各种角色，例如审查方、组管理员、资源联系人或拥有权限的成员。
 
@@ -198,7 +196,7 @@ ht-degree: 0%
 
 ### LDAP集成 {#ldap-integration}
 
-AEM支持使用LDAP对用户进行身份验证和创建用户帐户。 [使用AEM 6](../../help/sites-administering/ldap-config.md)配置LDAP中对此进行了详细说明。
+AEM支持使用LDAP对用户进行身份验证和创建用户帐户。 [使用AEM 6](../../help/sites-administering/ldap-config.md)配置LDAP中对此进行了详细介绍。
 
 以下是特定于社区成员和成员组的一些配置详细信息。
 
@@ -211,9 +209,9 @@ AEM支持使用LDAP对用户进行身份验证和创建用户帐户。 [使用AE
 
    * 设置以下属性：
 
-      * **[!UICONTROL 用户自动成员资格]**： `community-<site name>-<uid>-members`
-      * **[!UICONTROL 用户路径前缀]**： `/community`
-      * **[!UICONTROL 组路径前缀]**： `/community`
+     * **[!UICONTROL 用户自动成员资格]**： `community-<site name>-<uid>-members`
+     * **[!UICONTROL 用户路径前缀]**： `/community`
+     * **[!UICONTROL 组路径前缀]**： `/community`
 
 4. [外部登录模块](../../help/sites-administering/ldap-config.md#the-external-login-module)
 

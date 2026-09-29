@@ -1,5 +1,5 @@
 ---
-title: 使用CRX2Oak迁移工具
+title: 使用 CRX2Oak 迁移工具
 description: 了解如何将CRX2Oak迁移工具与Adobe Experience Manager结合使用。 该工具旨在帮助您在不同的存储库之间迁移数据。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
 workflow-type: tm+mt
-source-wordcount: '1175'
-ht-degree: 0%
-
+source-wordcount: '1217'
+ht-degree: 1%
 ---
-
-# 使用CRX2Oak迁移工具{#using-the-crx-oak-migration-tool}
+# 使用 CRX2Oak 迁移工具{#using-the-crx-oak-migration-tool}
 
 ## 简介 {#introduction}
 
@@ -45,17 +43,17 @@ CRX2Oak是一种用于在不同存储库之间迁移数据的工具。
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-## 功能 {#features}
+## 特性 {#features}
 
-在AEM升级期间以某种方式调用CRX2Oak，即用户可以指定预定义的迁移配置文件，以自动重新配置持久性模式。 这称为快速启动模式。
+CRX升级期间以某种方式调用AEM2Oak，即用户可以指定预定义的迁移配置文件，以自动重新配置持久性模式。 这称为快速启动模式。
 
-如果需要进行更多自定义，它也可以单独运行。 但是，在此模式下，只能对存储库进行更改，并且必须手动对AEM执行任何其他重新配置。 这称为独立模式。
+如果需要进行更多自定义，它也可以单独运行。 但是，在此模式下，只能对存储库进行更改，并且必须手动执行对AEM的任何其他重新配置。 这称为独立模式。
 
 另外要注意的是，在独立模式下使用默认设置时，只会迁移节点存储，而新存储库会重用旧的二进制存储。
 
 ### 自动快速启动模式 {#automated-quickstart-mode}
 
-自AEM 6.3起，CRX2Oak就能够处理用户定义的迁移配置文件，配置文件可使用所有可用的迁移选项进行配置。 这样既提高了灵活性，又能够自动配置AEM，在独立模式下使用该工具时，这些功能将不可用。
+自AEM 6.3起，CRX2Oak就能够处理用户定义的迁移配置文件，配置文件可使用所有可用的迁移选项进行配置。 这样既可以提高灵活性，又可以自动配置AEM，在独立模式下使用工具时，将无法使用这些功能。
 
 要将CRX2Oak切换到快速启动模式，请通过此操作系统环境变量在AEM安装目录中定义crx-quickstart文件夹的路径：
 
@@ -144,7 +142,7 @@ CRX2Oak的开源版本以oak-upgrade的形式提供。 它支持所有功能，�
 * `--fail-on-error`：如果无法从源存储库读取节点，强制迁移失败。
 * `--ldap`：将LDAP用户从CQ 5.x实例迁移到基于Oak的实例。 要使此功能正常工作，必须将Oak配置中的身份提供程序命名为ldap。 有关详细信息，请参阅[LDAP文档](/help/sites-administering/ldap-config.md)。
 
-* `--ldap-config:`将此项与使用多个LDAP服务器进行身份验证的CQ 5.x存储库的`--ldap`参数一起使用。 您可以使用它指向CQ 5.x `ldap_login.conf`或`jaas.conf`配置文件。 格式为`--ldapconfig=path/to/ldap_login.conf`。
+* `--ldap-config:`将此项与使用多个LDAP服务器进行身份验证的CQ 5.x存储库的`--ldap`参数一起使用。 您可以使用它指向CQ 5.x `ldap_login.conf`或`jaas.conf`配置文件。 格式为 `--ldapconfig=path/to/ldap_login.conf`。
 
 ### 版本存储选项 {#version-store-options}
 
@@ -194,11 +192,11 @@ CRX2Oak的开源版本以oak-upgrade的形式提供。 它支持所有功能，�
   </tr>
   <tr>
    <td>快速入门模式</td>
-   <td>运行CRX2Oak时，可以将<strong>(日志级TRACE</strong>或<strong>)日志级DEBUG </strong>选项添加到命令行。 在此模式下，日志会自动重定向到<strong>upgrade.log文件</strong>。</td>
+   <td>运行CRX2Oak时，可以将<strong>（日志级TRACE</strong>或<strong>）日志级DEBUG </strong>选项添加到命令行。 在此模式下，日志会自动重定向到<strong>upgrade.log文件</strong>。</td>
   </tr>
   <tr>
    <td>独立模式</td>
-   <td><p>将<strong>—trace</strong>选项添加到CRX2Oak命令行，以便在标准输出中显示TRACE事件（您必须使用重定向字符“&gt;”或“T形”命令自己重定向日志，以供以后检查）。</p> </td>
+   <td><p>将<strong>—trace</strong>选项添加到CRX2Oak命令行，以便您可以在标准输出上显示TRACE事件（您必须使用重定向字符“&gt;”或“tee”命令自己重定向日志，以供以后检查）。</p> </td>
   </tr>
  </tbody>
 </table>

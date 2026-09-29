@@ -1,28 +1,30 @@
 ---
-title: 如何使用Eclipse开发AEM项目
+title: 如何使用 Eclipse 开发 AEM 项目
+
 description: 本指南介绍如何使用Eclipse开发基于AEM的项目
+
+
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
+
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 0%
-
+source-wordcount: '448'
+ht-degree: 4%
 ---
-
-# 如何使用Eclipse开发AEM项目{#how-to-develop-aem-projects-using-eclipse}
+# 如何使用 Eclipse 开发 AEM 项目{#how-to-develop-aem-projects-using-eclipse}
 
 本指南介绍如何使用Eclipse开发基于AEM的项目。
 
 >[!NOTE]
 >
->Adobe现在提供了[AEM Eclipse开发工具](/help/sites-developing/aem-eclipse.md)，可帮助您使用Eclipse开发AEM解决方案。
+>Adobe现在提供适用于Eclipse的[AEM开发工具](/help/sites-developing/aem-eclipse.md)，可帮助您使用Eclipse开发AEM解决方案。
 
 ## 概述 {#overview}
 
@@ -54,7 +56,7 @@ ht-degree: 0%
 Eclipse还可以在使用JSP时提供支持，例如，
 
 * 自动完成标记库
-* 由&lt;cq：defineObjects />和&lt;sling：defineObjects />定义的对象的Eclipse感知
+* 由&lt;cq:defineObjects />和&lt;sling:defineObjects /定义的对象的Eclipse感知
 
 要使此功能正常工作，请执行以下操作：
 
@@ -132,4 +134,4 @@ Eclipse还可以在使用JSP时提供支持，例如，
 
    >[!NOTE]
    >
-   >如果在`/libs`中包含`/libs/foundation/global.jsp`或其他JSP，则必须将其复制到项目，以便Eclipse能够解析该包含。 同时，您需要确保它未由Maven捆绑到您的内容包中。 有关如何实现此目标请参见[如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md)。
+   >如果在`/libs`中包含`/libs/foundation/global.jsp`或其他JSP，则必须将其复制到项目，以便Eclipse能够解析该包含。 同时，您需要确保它未由Maven捆绑到您的内容包中。 有关如何实现此目标的信息，请参见[如何使用Apache Maven构建AEM项目](/help/sites-developing/ht-projects-maven.md)。
