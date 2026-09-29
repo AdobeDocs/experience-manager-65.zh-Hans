@@ -1,6 +1,6 @@
 ---
-title: DB2&amp；reg；数据库：每周运行进程
-description: 了解如何提高AEM Forms DB2&amp；reg；数据库的性能。
+title: DB2&reg；数据库：每周运行一个进程
+description: 了解如何提高AEM Forms DB2&reg；数据库的性能。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
@@ -11,20 +11,18 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '148'
+source-wordcount: '149'
 ht-degree: 0%
-
 ---
-
 # DB2®数据库：每周运行一个进程{#db-database-running-a-process-weekly}
 
 如果AEM Forms DB2®数据库开始运行缓慢，则每周运行以下进程可以提高其性能：
 
 1. 启动DB2®控制中心：
 
-   (Windows)选择“开始”>“程序”>“IBM® DB2®”>“常规管理工具”>“控制中心”。
+   (Windows)选择“开始”>“程序”>“® DB2®”>“常规管理工具”>“控制中心”。
 
-   (Linux®和UNIX®)在命令提示符下，键入`db2jcc`命令。
+   （Linux®和UNIX®）在命令提示符下，键入`db2jcc`命令。
 
 1. 在DB2® Control Center对象树中，单击所有数据库。
 1. 单击为AEM Forms创建的数据库，然后单击“表”文件夹。

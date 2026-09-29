@@ -1,5 +1,5 @@
 ---
-title: 为启用了SSL的LDAP服务器配置用户管理
+title: 为启用 SSL 的 LDAP 服务器配置用户管理
 description: 了解如何为启用了SSL的LDAP服务器配置用户管理，以使同步能够通过LDAPS正常工作。
 contentOwner: admin
 content-type: reference
@@ -11,18 +11,16 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '279'
-ht-degree: 0%
-
+source-wordcount: '282'
+ht-degree: 6%
 ---
-
-# 为启用了SSL的LDAP服务器配置用户管理 {#configure-user-management-for-an-ssl-enabled-ldap-server}
+# 为启用 SSL 的 LDAP 服务器配置用户管理 {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 要使同步通过LDAPS正常工作，应用程序服务器的Java运行时环境(JRE)中必须存在证书颁发机构(CA)颁发的LDAP证书。 将证书导入应用服务器的JRE cacerts文件，该文件通常位于&#x200B;*[JAVA_HOME]*/jre/lib/security/cacerts目录中。
 
 1. 在目录服务器上启用SSL。 有关详细信息，请参阅目录供应商提供的文档。
 1. 从目录服务器导出客户端证书。
-1. 使用keytool程序将客户端证书文件导入AEM forms应用程序服务器的默认Java虚拟机(JVM™)证书存储中。 此任务的过程因您的JVM和客户端安装路径而异。 例如，如果将BEA WebLogic Server与JDK 1.5一起使用，请在命令提示符下键入以下文本：
+1. 使用keytool程序将客户端证书文件导入AEM表单应用程序服务器的默认Java虚拟机(JVM™)证书存储中。 此任务的过程因您的JVM和客户端安装路径而异。 例如，如果将BEA WebLogic Server与JDK 1.5一起使用，请在命令提示符下键入以下文本：
 
    `keytool -import -alias`*别名* `-file certificatename -keystore C:\bea\jdk15_04\jre\lib\security\cacerts`
 
