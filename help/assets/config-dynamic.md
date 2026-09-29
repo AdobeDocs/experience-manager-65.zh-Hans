@@ -652,7 +652,7 @@ Dynamic Media Cloud Service支持图像和视频、视频分析和视频编码�
      ```
 
    * **通过Experience Manager中的视频报表工具检查Video Analytics预设**
-     导航到**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频报告]**
+     导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频报告]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -869,7 +869,7 @@ Experience Manager 6.4及更高版本将此预设保存在`/conf/global/settings
 
 >[!NOTE]
 >
->Dynamic Media在启用](#enabling-dynamic-media)后可开箱即用[。 但是，您可以选择通过配置Dynamic Media映像服务器来满足某些规范或要求来微调安装。
+>Dynamic Media在启用[&#128279;](#enabling-dynamic-media)后可开箱即用。 但是，您可以选择通过配置Dynamic Media映像服务器来满足某些规范或要求来微调安装。
 
 **先决条件** - *在*&#x200B;之前，配置Dynamic Media映像服务器，请确保您的Windows®虚拟机包括Microsoft® Visual C++库的安装。 运行Dynamic Media图像服务器需要库。 您可以[在此处](https://www.microsoft.com/en-us/download/details.aspx?id=26999)下载® Visual C++ 2010可再发行软件包(x64)。
 
@@ -964,7 +964,7 @@ Adobe的色彩管理使用ICC（国际色彩联盟）配置文件，该格式由
 
 >[!NOTE]
 >
->仅当您安装了Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)中的[Feature Pack 12445时，才可使用Adobe的标准颜色配置文件集。 所有功能包和Service Pack均可在[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)中获取。 功能包12445提供了Adobe的颜色配置文件。
+>仅当您安装了Software Distribution[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445)中的Feature Pack 12445时，才可使用Adobe的标准颜色配置文件集。 所有功能包和Service Pack均可在[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)中获取。 功能包12445提供了Adobe的颜色配置文件。
 
 
 ### 安装功能包12445 {#installing-feature-pack}
@@ -1272,28 +1272,28 @@ Adobe的色彩管理使用ICC（国际色彩联盟）配置文件，该格式由
   </tr>
   <tr>
    <td>复制查看器URL</td>
-   <td><p>“复制URL”对话框显示类似于以下内容的URL（URL仅用于演示目的）：</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&amp;config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&amp;serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&amp;contentRoot=%2F</code></p> <p>其中<code>PUBLISHNODE</code>引用常规Experience Manager发布节点，<code>IMAGESERVICEPUBLISHNODE</code>引用图像服务URL。</p> <p>另请参阅<a href="/help/assets/delivering-dynamic-media-assets.md">传送Dynamic Media Assets</a>。</p> </td>
+   <td><p>“复制URL”对话框显示类似于以下内容的URL（URL仅用于演示目的）：</p> <p><code>https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/BasicZoomViewer.html?asset=/content/dam/path/to/Image.jpg&config=/conf/global/settings/dam/dm/presets/viewer/Zoom_dark&serverUrl=https://IMAGESERVICEPUBLISHNODE/is/image/&contentRoot=%2F</code></p> <p>其中<code>PUBLISHNODE</code>引用常规Experience Manager发布节点，<code>IMAGESERVICEPUBLISHNODE</code>引用图像服务URL。</p> <p>另请参阅<a href="/help/assets/delivering-dynamic-media-assets.md">传送Dynamic Media Assets</a>。</p> </td>
   </tr>
   <tr>
    <td>复制查看器的嵌入代码</td>
    <td><p>复制嵌入代码对话框会显示类似于以下内容的代码片段（代码示例仅用于演示目的）：</p> <p><code class="code">&lt;style type="text/css"&gt;
-       #s7basiczoom_div.s7basiczoomviewer{
+       &#x200B;#s7basiczoom_div.s7basiczoomviewer&lbrace;
        width:100%;
        height:auto;
-       }
+       &rbrace;
        &lt;/style&gt;
        &lt;script
        type="text/javascript" src="https://PUBLISHNODE/etc/dam/viewers/s7viewers/html5/js/BasicZoomViewer.js"&gt;&lt;/script&gt;
        &lt;div id="s7basiczoom_div"&gt;&lt;/div&gt;
        &lt;script type="text/javascript"&gt;
-       var s7basiczoomviewer = new s7viewers.BasicZoomViewer({
+       var s7basiczoomviewer = new s7viewers.BasicZoomViewer(&lbrace;
        "containerId" : "s7basiczoom_div",
-       "params" : {
+       "params" : &lbrace;
        "serverurl" : "https://IMAGESERVICEPUBLISHNODE/is/image/",
        "contenturl" : "https://PUBLISHNODE/",
        "config" : "/conf/global/settings/dam/dm/presets/viewer/Zoom_dark",
-       "asset" : "/content/dam/path/to/Image.jpg" }
-       }).init();
+       "asset" : "/content/dam/path/to/Image.jpg" &rbrace;
+       &rbrace;).init();
        &lt;/script&gt;</code></p> <p>其中<code>PUBLISHNODE</code>引用常规Experience Manager发布节点，<code>IMAGESERVICEPUBLISHNODE</code>引用图像服务URL。</p> <p>另请参阅<a href="/help/assets/delivering-dynamic-media-assets.md">传送Dynamic Media Assets</a>。</p> </td>
   </tr>
  </tbody>
