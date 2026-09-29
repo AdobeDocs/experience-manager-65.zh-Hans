@@ -8,13 +8,11 @@ exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '2168'
 ht-degree: 8%
-
 ---
-
 # AEM Forms 工作区 JSON 对象描述 {#aem-forms-workspace-json-object-description}
 
 下面介绍了AEM Forms工作区中使用的JSON对象。
@@ -23,49 +21,49 @@ ht-degree: 8%
 
    类别显示在工作区的启动进程选项卡中。 这些类别用于对起点进行分类。
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>属性</strong></td>
-   <td><strong>仅限客户端</strong></td>
-   <td><strong>评论</strong></td>
-  </tr>
-  <tr>
-   <td>name</td>
-   <td>周五</td>
-   <td>类别名称</td>
-  </tr>
-  <tr>
-   <td>id</td>
-   <td>周五</td>
-   <td>类别ID<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>描述<br type="_moz" /> </td>
-   <td>周五</td>
-   <td>类别描述<br type="_moz" /> </td>
-  </tr>
-  <tr>
-   <td>parentOid<br type="_moz" /> </td>
-   <td>周五</td>
-   <td>包含父类别<br type="_moz" />的oid </td>
-  </tr>
-  <tr>
-   <td>startPointsList<br type="_moz" /> </td>
-   <td>周二</td>
-   <td>包含某个类别中存在的所有起点的列表</td>
-  </tr>
-  <tr>
-   <td>categorylist</td>
-   <td>周二</td>
-   <td>包含类别<br type="_moz" />的直接子类别的列表 </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>属性</strong></td>
+      <td><strong>仅限客户端</strong></td>
+      <td><strong>评论</strong></td>
+   </tr>
+   <tr>
+      <td>name</td>
+      <td>周五</td>
+      <td>类别名称</td>
+   </tr>
+   <tr>
+      <td>id</td>
+      <td>周五</td>
+      <td>类别ID<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>描述<br type="_moz" /> </td>
+      <td>周五</td>
+      <td>类别描述<br type="_moz" /> </td>
+   </tr>
+   <tr>
+      <td>parentOid<br type="_moz" /> </td>
+      <td>周五</td>
+      <td>包含父类别<br type="_moz" />的oid </td>
+   </tr>
+   <tr>
+      <td>startPointsList<br type="_moz" /> </td>
+      <td>周二</td>
+      <td>包含某个类别中存在的所有起点的列表</td>
+   </tr>
+   <tr>
+      <td>categorylist</td>
+      <td>周二</td>
+      <td>包含类别<br type="_moz" />的直接子类别的列表 </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->所有“起点”和“收藏”都是在客户端定义的类别。 收藏类别包含用户标记为收藏的所有起点。 “所有起点”类别包含所有起点。
+   >[!NOTE]
+   >
+   >所有“起点”和“收藏”都是在客户端定义的类别。 收藏类别包含用户标记为收藏的所有起点。 “所有起点”类别包含所有起点。
 
 1. 起点
 

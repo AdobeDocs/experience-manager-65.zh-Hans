@@ -6,13 +6,11 @@ feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2193'
 ht-degree: 10%
-
 ---
-
 # 为自适应表单设置样式 {#do-not-publish-style-your-adaptive-form}
 
 了解如何创建自定义主题、设置各个组件的样式以及在主题中使用Web Fonts。
@@ -23,7 +21,7 @@ ht-degree: 10%
 
 ## 关于本教程  {#about-the-tutorial}
 
-您可以使用主题为自适应表单提供独特的外观和样式。 您可以应用自适应表单编辑器提供的现成主题，或创建自己的自定义主题。 AEM [!DNL Forms]提供[主题编辑器](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/themes.html)以创建自定义主题。 单个主题可以为在移动设备、平板电脑或桌面上打开的相同自适应表单提供不同的外观。 使用主题编辑器不需要预先了解CSS或LESS，但需要使用。
+您可以使用主题为自适应表单提供独特的外观和样式。 您可以应用自适应表单编辑器提供的现成主题，或创建自己的自定义主题。 AEM [!DNL Forms]提供[主题编辑器](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html)以创建自定义主题。 单个主题可以为在移动设备、平板电脑或桌面上打开的相同自适应表单提供不同的外观。 使用主题编辑器不需要预先了解CSS或LESS，但需要使用。
 
 在本教程结束时，您应该能够执行以下操作：
 
@@ -444,16 +442,18 @@ ht-degree: 10%
 您可以使用各种字体设计自适应表单。 在查看自适应表单的所有设备上可能没有用于设计自适应表单的字体。 您可以使用Web字体服务将所需的字体交付给目标设备。
 
 [!DNL Adobe Fonts]是一项Web Fonts服务。 您可以在自适应表单中配置并使用服务。 要在自适应表单中使用[!DNL Adobe Fonts]，请执行以下操作：
-1. 浏览Adobe字体的[库](https://fonts.adobe.com/)并选择字体以设置表单的样式。
+
 <!--
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] is now called Adobe Fonts and is included with Creative Cloud and other subscriptions. [Learn more](https://fonts.adobe.com/).
 -->
 
->[!NOTE]
->
-> 可添加标记或筛选器以优化字体列表。
+1. 浏览Adobe字体的[库](https://fonts.adobe.com/)并选择字体以设置表单的样式。
+
+   >[!NOTE]
+   >
+   > 可添加标记或筛选器以优化字体列表。
 
 1. 单击&lt;/>按钮将系列添加到Web项目中，以防您找到所需的字体。
 
@@ -465,23 +465,25 @@ ht-degree: 10%
    >
    > 只有在Web项目中具有&lt;/>按钮时，才能添加字体。
 
-2. 命名您的Web项目。
-3. 选中复选框以选择要包括的字体粗细和样式。
+1. 命名您的Web项目。
+1. 选中复选框以选择要包括的字体粗细和样式。
 
    ![添加字体库](assets/add-a-font-window.png)
 
-4. 选择&#x200B;**单击**&#x200B;以创建项目。
-5. 从屏幕复制嵌入代码和URL。
+1. 选择&#x200B;**单击**&#x200B;以创建项目。
+1. 从屏幕复制嵌入代码和URL。
    ![嵌入代码和URL](assets/font-add-url.png)
 
-6. 单击&#x200B;**完成**&#x200B;以关闭Web项目窗口。
-7. 登录AEM实例并转到URL `http://server:port/crx/de/index.jsp#`
-8. 在CRXDE中创建文件夹结构，例如`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`。
-9. 转到新创建的`clientlibs`文件夹并添加`allowProxy`和`categories`属性。
-10. 导航到`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`并创建css文件夹。
-11. 转到创建的CSS文件夹并创建一个文件。例如，创建一个文件作为`fonts.css`，并粘贴嵌入代码以及URL。
-    ![文件夹结构](/help/forms/using/assets/fonts-add-in-crxde.png)
-12. 保存更改。
+1. 单击&#x200B;**完成**&#x200B;以关闭Web项目窗口。
+1. 登录AEM实例并转到URL `http://server:port/crx/de/index.jsp#`
+1. 在CRXDE中创建文件夹结构，例如`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`。
+1. 转到新创建的`clientlibs`文件夹并添加`allowProxy`和`categories`属性。
+1. 导航到`/apps/[fontslibrary]/[customlibrary(clientlibrary)]`并创建css文件夹。
+1. 转到创建的CSS文件夹并创建一个文件。 例如，创建一个文件作为`fonts.css`，并粘贴嵌入代码以及URL。
+
+   ![文件夹结构](/help/forms/using/assets/fonts-add-in-crxde.png)
+
+1. 保存更改。
 
 >[!NOTE]
 >

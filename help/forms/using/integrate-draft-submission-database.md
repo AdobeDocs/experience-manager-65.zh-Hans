@@ -8,13 +8,11 @@ exl-id: 2e4f8f51-df02-4bbb-99bb-30181facd1e0
 solution: Experience Manager, Experience Manager Forms
 feature: Forms Portal
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1537'
 ht-degree: 5%
-
 ---
-
 # 将草稿和提交组件与数据库集成的示例 {#sample-for-integrating-drafts-submissions-component-with-database}
 
 ## 示例概述 {#sample-overview}
@@ -26,7 +24,7 @@ AEM Forms portal草稿和提交组件允许用户将其表单另存为草稿，�
 >[!NOTE]
 >
 >* 本文档中说明的示例和配置均基于MySQL 5.6.24，您必须将它们适当地替换为您的数据库系统。
->* 确保您已安装最新版本的AEM Forms附加组件包。 有关可用包的列表，请参阅[AEM Forms发行版](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)文章。
+>* 确保您已安装最新版本的AEM Forms附加组件包。 有关可用包的列表，请参阅[AEM Forms发行版](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章。
 >* 示例包仅适用于自适应Forms提交操作。
 
 ## 设置和配置示例 {#set-up-and-configure-the-sample}
@@ -89,79 +87,79 @@ AEM Forms portal草稿和提交组件允许用户将其表单另存为草稿，�
 1. 可以通过Apache Sling Connection Pooled Data Source进行数据库连接。
 1. 对于Apache Sling连接，在Web控制台配置的编辑模式下，查找并单击以打开&#x200B;**[!UICONTROL Apache Sling连接池化数据源]**。 按照下表所述指定属性的值：
 
-<table>
- <tbody>
-  <tr>
+   <table>
+   <tbody>
+   <tr>
    <td><strong>属性</strong></td>
    <td><strong>值</strong></td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>数据源名称</td>
    <td><p>用于从数据源池筛选驱动程序的数据源名称</p> <p><strong>注意： </strong><em>示例实现使用FormsPortal作为数据源名称。</em></p> </td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>JDBC驱动程序类</td>
    <td>com.mysql.jdbc.Driver</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>JDBC连接URI<br /> </td>
    <td>jdbc:mysql://[<em>主机</em>]：[<em>端口</em>]/[<em>架构名称</em>]</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>用户名</td>
    <td>用于对数据库表进行身份验证和执行操作的用户名</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>密码</td>
    <td>与用户名关联的密码</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>事务隔离</td>
    <td>读取已提交</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>最大活动连接数</td>
    <td>1000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>最大空闲连接数</td>
    <td>100</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>最小空闲连接数</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>初始大小</td>
    <td>10</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>最大等待</td>
    <td>100000</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>借阅测试</td>
    <td>已选中</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>空闲时测试</td>
    <td>已选中</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>验证查询</td>
    <td>示例值为SELECT 1(mysql)，从dual(oracle)中选择1，从SELECT 1(MS Sql Server) (validationQuery)</td>
-  </tr>
-  <tr>
+   </tr>
+   <tr>
    <td>验证查询超时</td>
    <td>10000</td>
-  </tr>
- </tbody>
-</table>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->* 示例中未提供用于MySQL的JDBC驱动程序。 请确保已为其配置并提供配置JDBC连接池所需的信息。
->* 将创作实例和发布实例指向使用同一数据库。 对于所有创作实例和发布实例，JDBC连接URI字段的值必须相同。
+   >[!NOTE]
+   >
+   >* 示例中未提供用于MySQL的JDBC驱动程序。 请确保已为其配置并提供配置JDBC连接池所需的信息。
+   >* 将创作实例和发布实例指向使用同一数据库。 对于所有创作实例和发布实例，JDBC连接URI字段的值必须相同。
 
 1. 保留其他配置不变，然后单击&#x200B;**[!UICONTROL 保存]**。
 

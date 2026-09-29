@@ -8,18 +8,16 @@ role: Developer, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '2400'
 ht-degree: 13%
-
 ---
-
 # 管理数字资源的元数据 {#managing-metadata-for-digital-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 <!--
@@ -29,7 +27,7 @@ Scope of metadata articles:
 * metadata-config.md: New article. Contains all configuration and administration how-to info related to metadata of assets.
 -->
 
-[!DNL Adobe Experience Manager Assets] 保持每个资产的元数据。 它可以让用户更轻松地分类和组织资产，帮助用户查找特定的资产。 由于能够从上载到[!DNL Experience Manager Assets]的文件中提取元数据，因此元数据管理与创意工作流集成。 通过保持和管理资产的元数据的功能，您可以根据资产的元数据自动组织和处理资产。
+[!DNL Adobe Experience Manager Assets] 保持每个资产的元数据。 它可以让用户更轻松地分类和组织资产，帮助用户查找特定的资产。 由于能够从上载到[!DNL Experience Manager Assets]的文件中提取元数据，因此元数据管理与创意工作流集成。 通过随资产保留和管理元数据的功能，您可以根据元数据自动组织和处理资产。
 
 ## 元数据及其来源 {#how-to-edit-or-add-metadata}
 
@@ -37,9 +35,9 @@ Scope of metadata articles:
 
 以下方法可用于向数字资源添加元数据：
 
-* 首先，创建资产的本机应用程序向其添加一些元数据。 例如，[Acrobat将一些元数据](https://helpx.adobe.com/cn/acrobat/using/pdf-properties-metadata.html)添加到PDF文件，或者相机将一些基本元数据添加到照片。 在生成资源时，可以将元数据添加到本机应用程序本身。 例如，您可以在Adobe Lightroom[&#128279;](https://helpx.adobe.com/cn/lightroom-classic/help/metadata-basics-actions.html)中添加IPTC元数据。
+* 首先，创建资产的本机应用程序向其添加一些元数据。 例如，[Acrobat将一些元数据](https://helpx.adobe.com/acrobat/using/pdf-properties-metadata.html)添加到PDF文件，或者相机将一些基本元数据添加到照片。 在生成资源时，可以将元数据添加到本机应用程序本身。 例如，您可以在Adobe Lightroom](https://helpx.adobe.com/lightroom-classic/help/metadata-basics-actions.html)中[添加IPTC元数据。
 
-* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[!DNL Adobe Exchange]中查看如何[在 [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)中使用元数据并查看 [!DNL Adobe Bridge][&#128279;](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的标记面板。
+* 在将资源上传到[!DNL Experience Manager]之前，您可以使用用于创建资源的本机应用程序或使用其他元数据编辑应用程序来编辑和修改元数据。 将资源上传到Experience Manager时，将处理元数据。 例如，在[!DNL Adobe Exchange]中查看如何[在 [!DNL Adobe Bridge]](https://helpx.adobe.com/bridge/user-guide.html/bridge/using/metadata-adobe-bridge.ug.html)中使用元数据并查看 [!DNL Adobe Bridge]](https://exchange.adobe.com/creativecloud.details.20009.aem-tags-panel-for-bridge-cc.html)的[标记面板。
 
 * 在[!DNL Experience Manager Assets]中，您可以在[!UICONTROL 属性]页面中手动添加或编辑资源的元数据。
 
@@ -82,7 +80,7 @@ Scope of metadata articles:
 
 >[!NOTE]
 >
->批量编辑方法适用于文件夹或收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索[&#128279;](search-assets.md#metadataupdates)后批量更新元数据。
+>批量编辑方法适用于文件夹或收藏集中可用的资产。 对于跨文件夹可用的资源或与通用条件匹配的资源，可在搜索](search-assets.md#metadataupdates)后[批量更新元数据。
 
 1. 在[!DNL Assets]用户界面中，导航到要编辑的资源的位置。
 1. 选择要编辑其公共属性的资源。
@@ -154,7 +152,7 @@ Scope of metadata articles:
 
 1. 在工具栏中，单击&#x200B;**[!UICONTROL 导出]**。 将显示一条消息，确认元数据已导出。 关闭消息。
 
-1. 打开导出作业的收件箱通知。 选择作业，然后单击工具栏中的&#x200B;**[!UICONTROL 打开]**。 要下载包含元数据的CSV文件，请单击工具栏中的&#x200B;**[!UICONTROL CSV下载]**。 单击&#x200B;**[!UICONTROL 关闭]**。
+1. 打开收件箱中有关导出作业的通知。 选择作业，然后单击工具栏中的&#x200B;**[!UICONTROL 打开]**。 要下载包含元数据的CSV文件，请单击工具栏中的&#x200B;**[!UICONTROL CSV下载]**。 单击&#x200B;**[!UICONTROL 关闭]**。
 
    ![用于下载包含批量导出的元数据的CSV文件的对话框](assets/csv_download.png)
 
@@ -245,7 +243,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 >
 >* [元数据概念和了解](metadata-concepts.md)。
 >* [编辑多个收藏集的元数据属性](manage-collections.md#editing-collection-metadata-in-bulk)
->* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=zh-Hans)
+>* 在Experience Manager Assets中[元数据导入和导出](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html)
 
 <!--
 TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
