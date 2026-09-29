@@ -24,7 +24,7 @@ AEM Forms portal草稿和提交组件允许用户将其表单另存为草稿，�
 >[!NOTE]
 >
 >* 本文档中说明的示例和配置均基于MySQL 5.6.24，您必须将它们适当地替换为您的数据库系统。
->* 确保您已安装最新版本的AEM Forms附加组件包。 有关可用包的列表，请参阅[AEM Forms发行版](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章。
+>* 确保您已安装最新版本的AEM Forms附加组件包。 有关可用包的列表，请参阅[AEM Forms发行版](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)文章。
 >* 示例包仅适用于自适应Forms提交操作。
 
 ## 设置和配置示例 {#set-up-and-configure-the-sample}

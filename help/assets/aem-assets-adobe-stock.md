@@ -16,7 +16,7 @@ ht-degree: 4%
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=en) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-assets-adobe-stock.html?lang=zh-Hans) |
 | AEM 6.5 | 本文 |
 
 <!--
@@ -473,8 +473,8 @@ To configure the [!DNL Adobe Stock] cloud service:
 >[!MORELIKETHIS]
 >
 >* [有关将 [!DNL Adobe Stock] 资源与 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)一起使用的视频教程
->* [[!DNL Adobe Stock] 企业计划帮助](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
->* [[!DNL Adobe Stock] 常见问题](https://helpx.adobe.com/stock/faq.html)
+>* [[!DNL Adobe Stock] 企业计划帮助](https://helpx.adobe.com/cn/enterprise/using/adobe-stock-enterprise.html)
+>* [[!DNL Adobe Stock] 常见问题](https://helpx.adobe.com/cn/stock/faq.html)
 
 
 <!--
