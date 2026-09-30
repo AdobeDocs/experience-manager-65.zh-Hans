@@ -9,13 +9,11 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1207'
+source-wordcount: '1210'
 ht-degree: 3%
-
 ---
-
 # Search Essentials {#search-essentials}
 
 ## 概述 {#overview}
@@ -26,11 +24,11 @@ ht-degree: 3%
 
 * 社区成员发布的内容
 
-   * 它使用AEM Communities的UGC搜索API。
+  * 它使用AEM Communities的UGC搜索API。
 
 * 用户和用户组（用户数据）
 
-   * 它使用AEM平台搜索功能。
+  * 它使用AEM平台搜索功能。
 
 文档中的此部分与创建自定义组件（用于创建或管理UGC）的开发人员有关。
 
@@ -44,7 +42,7 @@ ht-degree: 3%
 
 ## UGC搜索API {#ugc-search-api}
 
-[UGC公用存储](working-with-srp.md)由各种存储资源提供程序(SRP)之一提供，每个提供程序可能具有不同的本地查询语言。 因此，无论选择哪个SRP，自定义代码都应使用[UGC API包](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*)中的方法，这些方法会调用适用于所选SRP的查询语言。
+[UGC公用存储](working-with-srp.md)由各种存储资源提供程序(SRP)之一提供，每个提供程序可能具有不同的本地查询语言。 因此，无论选择哪个SRP，自定义代码都应使用[UGC API包](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) (*com.adobe.cq.social.ugc.api*)中的方法，这些方法会调用适用于所选SRP的查询语言。
 
 ### ASRP搜索 {#asrp-searches}
 
@@ -160,8 +158,8 @@ Solr是使用架构的查询语言的示例。
 
 * 对于多值类型，请将“s”添加到后缀，例如：
 
-   * `viewDate_dt`：单一日期属性
-   * `viewDates_dts`：日期属性列表
+  * `viewDate_dt`：单一日期属性
+  * `viewDates_dts`：日期属性列表
 
 ## 过滤器 {#filters}
 
@@ -171,11 +169,11 @@ AND和OR逻辑的过滤器语法如下所示（在URL编码之前显示）：
 
 * 要指定OR或使用带有逗号分隔值的过滤器参数，请执行以下操作：
 
-   * `filter=name eq 'Jennifer',name eq 'Jen'`
+  * `filter=name eq 'Jennifer',name eq 'Jen'`
 
 * 要指定AND使用多个过滤器参数，请执行以下操作：
 
-   * `filter = name eq 'Jackson'&filter=message eq 'testing'`
+  * `filter = name eq 'Jackson'&filter=message eq 'testing'`
 
 [搜索组件](search.md)的默认实现使用此语法，如打开[社区组件指南](components-guide.md)中的搜索结果页面的URL中所示。 要试验，请浏览到[http://localhost:4503/content/community-components/en/search.html](http://localhost:4503/content/community-components/en/search.html)。
 
@@ -193,9 +191,9 @@ AND和OR逻辑的过滤器语法如下所示（在URL编码之前显示）：
 URL引用Communities组件（资源），而不是引用放置该组件的页面，这一点很重要：
 
 * 正确：论坛组件
-   * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
+  * `/content/community-components/en/forum/jcr:content/content/forum.social.json`
 * 不正确：论坛页面
-   * `/content/community-components/en/forum.social.json`
+  * `/content/community-components/en/forum.social.json`
 
 ## SRP工具 {#srp-tools}
 

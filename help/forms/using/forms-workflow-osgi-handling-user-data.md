@@ -1,19 +1,20 @@
 ---
 title: OSGi上以Forms为中心的工作流 |处理用户数据
+
 description: OSGi上以Forms为中心的工作流 |处理用户数据
+
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 role: Admin,User
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1033'
 ht-degree: 1%
-
 ---
-
 # OSGi上以Forms为中心的工作流 |处理用户数据 {#forms-centric-workflows-on-osgi-handling-user-data}
 
 以Forms为中心的AEM工作流使您能够自动执行以Forms为中心的真实业务流程。 工作流由一系列步骤组成，这些步骤按照关联工作流模型中指定的顺序执行。 每个步骤都会执行特定操作，例如向用户分配任务或发送电子邮件。 工作流可与存储库中的资产、用户帐户和服务进行交互。 因此，工作流可以协调涉及Experience Manager任何方面的复杂活动。
@@ -157,5 +158,5 @@ ht-degree: 1%
 您还可以使用API来访问和删除节点和属性。 有关更多信息，请参阅以下文档。
 
 * [如何以编程方式访问 AEM JCR](/help/sites-developing/access-jcr.md)
-* [删除节点和属性](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
+* [删除节点和属性](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/10_Writing.html#10.9%20Removing%20Nodes%20and%20Properties)
 * [API参考](https://helpx.adobe.com/cn/experience-manager/6-3/sites-developing/reference-materials/javadoc/overview-summary.html)

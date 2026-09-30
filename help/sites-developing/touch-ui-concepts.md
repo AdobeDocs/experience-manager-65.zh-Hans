@@ -10,13 +10,11 @@ exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2240'
 ht-degree: 1%
-
 ---
-
 # Adobe Experience Manager触屏优化UI的概念{#concepts-of-the-aem-touch-enabled-ui}
 
 Adobe Experience Manager (AEM)为创作环境提供了带[响应式设计](/help/sites-authoring/responsive-layout.md)的触控式UI，该设计可在触控和桌面设备上运行。
@@ -28,24 +26,24 @@ Adobe Experience Manager (AEM)为创作环境提供了带[响应式设计](/help
 触屏优化UI包括：
 
 * 符合以下条件的包标头：
-   * 显示徽标
-   * 提供指向全局导航的链接
-   * 提供指向其他通用操作的链接；例如搜索、帮助、Experience Cloud解决方案、通知和用户设置。
+  * 显示徽标
+  * 提供指向全局导航的链接
+  * 提供指向其他通用操作的链接；例如搜索、帮助、Experience Cloud解决方案、通知和用户设置。
 * 左侧边栏（需要时显示，可隐藏），其中可显示：
-   * 时间线
-   * 引用
-   * 过滤器
+  * 时间线
+  * 引用
+  * 过滤器
 * 导航标头，同样是上下文相关的，可显示：
-   * 指示您当前在该控制台中使用哪个控制台，或您的位置，或同时使用两者
-   * 为左侧边栏选择
-   * 痕迹导航
-   * 访问适当的&#x200B;**创建**&#x200B;操作
-   * 查看选择
+  * 指示您当前在该控制台中使用哪个控制台，或您的位置，或同时使用两者
+  * 为左侧边栏选择
+  * 痕迹导航
+  * 访问适当的&#x200B;**创建**&#x200B;操作
+  * 查看选择
 * 内容区域：
-   * 列出内容项目（页面、资产、论坛帖子等）
-   * 可以根据请求设置格式，例如列、卡片或列表
-   * 使用响应式设计（显示器根据您的设备和/或窗口大小自动调整大小）
-   * 使用无限滚动（不再分页，所有项目都列在一个窗口中）
+  * 列出内容项目（页面、资产、论坛帖子等）
+  * 可以根据请求设置格式，例如列、卡片或列表
+  * 使用响应式设计（显示器根据您的设备和/或窗口大小自动调整大小）
+  * 使用无限滚动（不再分页，所有项目都列在一个窗口中）
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -200,7 +198,7 @@ Granite UI和ExtJS（用于经典UI）之间的差异也令人感兴趣：
 
 ### Granite UI基础组件 {#granite-ui-foundation-components}
 
-[Granite UI基础组件](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)提供了构建任何UI所需的基本构建块。 其中包括：
+[Granite UI基础组件](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)提供了构建任何UI所需的基本构建块。 其中包括：
 
 * 按钮
 * 超链接
@@ -257,7 +255,7 @@ Granite UI和ExtJS（用于经典UI）之间的差异也令人感兴趣：
 
 ### Granite UI管理组件 {#granite-ui-administration-components}
 
-[Granite UI管理组件](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)构建在基础组件上，以提供任何管理应用程序都可以实现的通用构建块。 其中包括：
+[Granite UI管理组件](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)构建在基础组件上，以提供任何管理应用程序都可以实现的通用构建块。 其中包括：
 
 * 全局导航栏
 * 边栏（骨架）

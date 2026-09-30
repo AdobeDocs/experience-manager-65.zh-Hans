@@ -6,16 +6,14 @@ exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2887'
-ht-degree: 0%
-
+source-wordcount: '3073'
+ht-degree: 1%
 ---
-
 # 配置富文本编辑器 {#configure-the-rich-text-editor}
 
-富文本编辑器(RTE)为作者提供了一系列广泛的功能来编辑其文本内容。 为所见即所得文本编辑体验提供了图标、选择框、工具栏和菜单。
+富文本编辑器(RTE)为作者提供了一系列广泛的功能来编辑其文本内容。 提供了图标、选择框、工具栏和菜单，以提供WYSIWYG文本编辑体验。
 
 要了解如何使用RTE功能进行创作，请参阅[使用富文本编辑器进行创作](/help/sites-authoring/rich-text-editor.md)。 可以将RTE配置为启用、禁用和扩展创作组件中可用的功能。 以下工作流说明了在Experience Manager中完成RTE配置任务的建议顺序。
 
@@ -25,7 +23,7 @@ ht-degree: 0%
 
 ## 了解触屏优化UI和经典UI {#understand-touch-enabled-ui-and-classic-ui}
 
-触屏优化UI是用于Experience Manager的标准用户界面。 Adobe为创作环境引入了触屏优化UI，其中具有[响应式设计](/help/sites-authoring/responsive-layout.md)。 触屏优化UI专为触控和桌面设备而设计。 该界面与原始经典UI有很大不同。
+触屏优化UI是Experience Manager的标准用户界面。 Adobe为创作环境引入了触屏优化UI，其中包含[响应式设计](/help/sites-authoring/responsive-layout.md)。 触屏优化UI专为触控和桌面设备而设计。 该界面与原始经典UI有很大不同。
 
 已启用触控的用户界面中的![富文本编辑器工具栏](assets/chlimage_1-35.png)
 
@@ -69,7 +67,7 @@ ht-degree: 0%
 
 ### 全屏编辑 {#full-screen-editing}
 
-Experience Manager组件可以在全屏视图中打开，该视图会隐藏页面内容并占据可用屏幕。 请考虑全屏编辑内联编辑的详细版本，因为它提供了最多的编辑选项。 使用内联编辑模式时，可通过单击紧凑工具栏中的![rte_fullscreen](assets/rte_fullscreen.png)来打开该页面。
+Experience Manager组件能够以全屏视图打开，该视图会隐藏页面内容并占据可用屏幕。 请考虑全屏编辑内联编辑的详细版本，因为它提供了最多的编辑选项。 使用内联编辑模式时，可通过单击紧凑工具栏中的![rte_fullscreen](assets/rte_fullscreen.png)来打开该页面。
 
 在对话框的全屏模式以及详细的RTE工具栏中，对话框中可用的选项和组件也可用。 它仅适用于包含RTE以及其他组件的对话框。
 
@@ -95,8 +93,8 @@ Experience Manager组件可以在全屏视图中打开，该视图会隐藏页�
 
 * `features`属性：
 
-   * 用于激活或停用该插件的基本功能
-   * 可使用标准化的程序进行配置
+  * 用于激活或停用该插件的基本功能
+  * 可使用标准化的程序进行配置
 
 * 在适当时，需要专门配置的其他属性和选项。
 
@@ -116,14 +114,14 @@ RTE的基本功能由相应插件专属的节点上的`features`属性值激活�
 | 图像 | 图像 | 基本图像支持（从内容或内容查找器拖动）。 根据浏览器的不同，支持的作者行为也有所不同 |
 | 键 |  | 若要定义此值，请参阅[选项卡大小](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)。 |
 | 两端对齐 | justifyleft justifycenter justifyright | 段落对齐方式。 |
-| 链接 | modifylink取消链接锚点 | [超链接和锚点](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles)。 |
+| 多个链接 | modifylink取消链接锚点 | [超链接和锚点](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles)。 |
 | 列表 | 有序无序缩进缩进 | 此插件同时控制[缩进和列表](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin)；包括嵌套列表。 |
 | misctools | specialchars sourceedit | 其他工具允许作者输入[特殊字符](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar)或编辑HTML源。 此外，如果要定义自己的列表，可以添加整个[范围的特殊字符](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar)。 |
 | 参数格式 | paraformat | 默认段落格式为段落、标题1、标题2和标题3 （`<p>`、`<h1>`、`<h2>`和`<h3>`）。 您可以[添加更多段落格式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats)或扩展列表。 |
 | 拼写检查 | 复选文本 | [语言感知拼写检查器](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict)。 |
 | 样式 | 样式 | 支持使用CSS类进行样式设置。 如果要添加（或扩展）自己的样式范围以用于文本，请[添加新文本样式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles)。 |
 | 下标 | 下标上标 | 基本格式的扩展，可添加子脚本和超级脚本。 |
-| 表 | 表删除表插入行删除插入列删除列cellprops mergecells拆分单元选择列选择列 | 如果要为整个表或单个单元格添加自己的样式，请参阅[配置表样式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)。 |
+| 表格 | 表删除表插入行删除插入列删除列cellprops mergecells拆分单元选择列选择列 | 如果要为整个表或单个单元格添加自己的样式，请参阅[配置表样式](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)。 |
 | 撤消 | 撤消重做 | [撤消和重做](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory)操作的历史记录大小。 |
 
 >[!NOTE]
@@ -152,7 +150,7 @@ RTE的基本功能由相应插件专属的节点上的`features`属性值激活�
 
 配置以下仅适用于Touch UI中的对话框编辑模式的属性：
 
-* `useFixedInlineToolbar`：将在RTE节点（sling：resourceType= `cq/gui/components/authoring/dialog/richtext`的节点）上定义的此Boolean属性设置为`True`，以使RTE工具栏固定而不是浮动。
+* `useFixedInlineToolbar`：将在RTE节点（sling:resourceType= `cq/gui/components/authoring/dialog/richtext`的节点）上定义的此Boolean属性设置为`True`，以使RTE工具栏固定而非浮动。
 
   当此属性为true时，默认情况下，富文本编辑会在“foundation-contentloaded”事件中启动。
 
@@ -166,10 +164,10 @@ RTE的基本功能由相应插件专属的节点上的`features`属性值激活�
 
 ## 自定义就地编辑 {#customizing-in-place-editing}
 
-通过配置以下HTML，您可以定义文本编辑器从哪个属性选择器开始：
+通过配置以下属性，您可以定义文本编辑器从哪个HTML选择器开始：
 
-* **`editElementQuery`** — 在`cq:InplaceEditingConfig`上定义，此属性用于指定将在其上开始文本组件的内联编辑的HTML元素的选择器。 如果未指定，则会在文本组件HTML上直接开始内联编辑。
-* **`textPropertyName`** — 在`cq:InplaceEditingConfig`上定义，此属性用于指定将保存在HTML节点上的属性的名称，其中文本组件的内容值将在内联编辑后保留。
+* **`editElementQuery`** — 在`cq:InplaceEditingConfig`上定义，此属性用于指定将在其上开始文本组件的内联编辑的HTML元素选择器。 如果未指定，将直接在文本组件HTML上开始内联编辑。
+* **`textPropertyName`** — 在`cq:InplaceEditingConfig`上定义，此属性用于指定将保存在内容节点上的属性的名称，其中文本组件的HTML值将在内联编辑后保留。
 
 对话框模式的相应属性为`name`。
 
@@ -198,7 +196,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 ## 配置RTE工具栏 {#dialogfullscreen}
 
-AEM允许您为不同的编辑模式以不同的方式配置富文本编辑器的界面。 默认设置如下所示。 您可以根据自己的要求覆盖这些默认值。 您只需自定义要提供给作者的工具栏功能。 您无需指定所有工具栏配置。
+通过AEM，您可以为不同的编辑模式以不同的方式配置富文本编辑器的界面。 默认设置如下所示。 您可以根据自己的要求覆盖这些默认值。 您只需自定义要提供给作者的工具栏功能。 您无需指定所有工具栏配置。
 
 要为`dialogFullScreen`配置工具栏，请使用以下示例配置。
 
@@ -325,17 +323,17 @@ RTE中的可用选项会从用户界面配置下游流向内容策略。
 
 ## 更多信息 {#further-information}
 
-有关配置RTE的更多信息，请参阅[AEM Widget API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText)参考。
+有关配置RTE的更多信息，请参阅[AEM Widget API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText)参考。
 
 具体来说，要查看插件及相关可用选项，请执行以下操作：
 
-* [CQ.form.RichText](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.RichText)组件提供了一个表单字段，用于编辑样式化文本信息(RTF)。 要了解富文本表单的所有可用参数，请参阅配置选项。
-* 富文本组件使用[CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)下列出的插件提供多种功能。 对于每个插件：
+* [CQ.form.RichText](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.RichText)组件提供了一个表单字段，用于编辑样式化文本信息(RTF)。 要了解富文本表单的所有可用参数，请参阅配置选项。
+* 富文本组件使用[CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)下列出的插件提供多种功能。 对于每个插件：
 
-   * 有关可以启用（或禁用）的功能的详细信息，请参阅功能
-   * 有关相应插件的详细配置，请参阅所有可用参数的配置选项
+  * 有关可以启用（或禁用）的功能的详细信息，请参阅功能
+  * 有关相应插件的详细配置，请参阅所有可用参数的配置选项
 
-* 此外，还提供了有关链接的HTML规则的更多信息。
+* 此外，还提供了有关HTML Rules for Links的更多信息。
 
 这些资源可用于扩展和自定义您自己的RTE。 例如，要在创建链接时列出页面中可用的锚点，您可以提供自己的`LinkPlugin`实现。
 
@@ -375,9 +373,9 @@ AEM RTE功能具有以下限制：
 
 在源编辑模式下添加的&#x200B;**HTML内容丢失**
 
-请勿添加易受XSS影响的HTML。 AEM而非RTE，可能会删除一些HTML内容以遵守XSS反精神病规则。
+请勿添加易受XSS影响的HTML。 AEM（而非RTE）可能会删除一些HTML内容，以遵守XSS防雾规则。
 
-要验证粘贴的HTML是否已保存，请在CRXDE（在content节点中）中检查保存的内容。
+要验证粘贴的HTML是否已保存，请在CRXDE（在“内容”节点中）中检查保存的内容。
 
 如果未保存，则HTML必须已被RTE删除，因为它不符合RTE规则。
 

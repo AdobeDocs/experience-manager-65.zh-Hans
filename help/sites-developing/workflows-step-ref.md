@@ -1,22 +1,24 @@
 ---
 title: 工作流步骤参考
+
 description: 有关Adobe Experience Manager中的工作流，请参阅此步骤参考。
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
+
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3276'
+source-wordcount: '3288'
 ht-degree: 2%
-
 ---
-
 # 工作流步骤参考 {#workflow-step-reference}
 
 工作流模型由一系列各种类型的步骤组成。 根据类型，可以使用参数和脚本配置并扩展这些步骤，以提供所需的功能和控制。
@@ -340,7 +342,7 @@ function check(){
 
 1. **示例对话框定义**
 
-   以下XML代码段表示在有效负荷内容的`watchEmail`节点中存储`String`值的对话框。 标题节点表示[TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html)组件：
+   以下XML代码段表示在有效负荷内容的`watchEmail`节点中存储`String`值的对话框。 标题节点表示[TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/form/textfield/index.html)组件：
 
    ```xml
    jcr:primaryType="nt:unstructured"
@@ -428,7 +430,7 @@ function check(){
 
 * **OSGi服务**
 
-  服务必须实现[com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)接口。 该界面定义了以下成员：
+  服务必须实现[com.day.cq.workflow.exec.ParticipantStepChooser](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html)接口。 该界面定义了以下成员：
 
   * `SERVICE_PROPERTY_LABEL`字段：使用此字段指定参与者选择器的名称。 该名称出现在&#x200B;**动态参与者步骤**&#x200B;属性的可用参与者选择器列表中。
 

@@ -9,13 +9,11 @@ exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Search,Query Builder
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2381'
+source-wordcount: '2385'
 ht-degree: 1%
-
 ---
-
 # 查询生成器谓词参考{#query-builder-predicate-reference}
 
 >[!CAUTION]
@@ -27,7 +25,7 @@ ht-degree: 1%
 >
 >例如，请参阅：
 >
->* [http://localhost:4502/system/console/services？filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
+>* [http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29](http://localhost:4502/system/console/services?filter=%28component.factory%3Dcom.day.cq.search.eval.PredicateEvaluator%2F*%29)
 
 ## 常规 {#general}
 
@@ -229,7 +227,7 @@ group.2_group.type=dam:Asset
 
 ### hasPermission {#haspermission}
 
-将结果限制为当前会话具有指定[JCR权限的项目。](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
+将结果限制为当前会话具有指定[JCR权限的项目。](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html#16.2.3%20Standard%20Privileges)
 
 这是仅用于过滤的谓词，不能使用搜索索引。 它不支持彩块化提取。
 
@@ -269,7 +267,7 @@ group.2_group.type=dam:Asset
 
 ### memberOf {#memberof}
 
-查找属于特定[sling资源集合](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)成员的项。
+查找属于特定[sling资源集合](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/resource/collection/ResourceCollection.html)成员的项。
 
 这是仅用于过滤的谓词，不能使用搜索索引。 不支持Facet提取。
 
@@ -473,17 +471,17 @@ group.2_group.type=dam:Asset
 
   （仅适用于JSON servlet）选择点击作为JSON写入的方式，并使用这些标准点击（可通过ResultHitWriter服务扩展）：
 
-   * **简单**：
+  * **简单**：
 
-     最小项目，如`path`、`title`、`lastmodified`、`excerpt`（如果已设置）。
+    最小项目，如`path`、`title`、`lastmodified`、`excerpt`（如果已设置）。
 
-   * **完整**：
+  * **完整**：
 
-     Sling JSON节点渲染，其中`jcr:path`指示点击路径：默认情况下，仅列出节点的直接属性，包括包含`p.nodedepth=N`的较深树，其中0表示整个无限子树；添加`p.acls=true`以包含给定结果项上当前会话的JCR权限（映射： `create` = `add_node`，`modify` = `set_property`，`delete` = `remove`）。
+    Sling JSON节点渲染，其中`jcr:path`指示点击路径：默认情况下，仅列出节点的直接属性，包括包含`p.nodedepth=N`的较深树，其中0表示整个无限子树；添加`p.acls=true`以包含给定结果项上当前会话的JCR权限（映射： `create` = `add_node`，`modify` = `set_property`，`delete` = `remove`）。
 
-   * **选择性**：
+  * **选择性**：
 
-     仅在`p.properties`中指定的属性，这是相对路径的空格分隔列表（在URL中使用“+”）；如果相对路径的深度大于1，则这些属性表示为子对象；特殊的jcr:path属性包括点击的路径
+    仅在`p.properties`中指定的属性，这是相对路径的空格分隔列表（在URL中使用“+”）；如果相对路径的深度大于1，则这些属性表示为子对象；特殊的jcr:path属性包括点击的路径
 
 ### savedquery {#savedquery}
 

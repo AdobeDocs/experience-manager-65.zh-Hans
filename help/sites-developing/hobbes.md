@@ -1,37 +1,37 @@
 ---
-title: 测试UI
-description: AEM提供了一个用于实现AEM UI测试自动化的框架
+title: 测试您的 UI
+description: AEM提供了一个框架，用于实现AEM UI测试的自动化
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components, testing
+
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '759'
-ht-degree: 1%
-
+source-wordcount: '795'
+ht-degree: 4%
 ---
-
-# 测试UI{#testing-your-ui}
+# 测试您的 UI{#testing-your-ui}
 
 >[!NOTE]
 >
->从AEM 6.5开始，弃用hobbes.js UI测试框架。 Adobe不打算进一步增强其功能，因此建议客户使用Selenium自动化功能。
+>从AEM 6.5开始，弃用hobbes.js UI测试框架。 Adobe不打算进一步增强其功能，因此建议客户使用Selenium自动化。
 >
 >请参阅[已弃用和已删除的功能](/help/release-notes/deprecated-removed-features.md)。
 
-AEM提供了一个用于实现AEM UI测试自动化的框架。 使用该框架，您可以直接在Web浏览器中编写和运行UI测试。 该框架提供了用于创建测试的JavaScript API。
+AEM提供了一个框架，用于实现AEM UI测试的自动化。 使用该框架，您可以直接在Web浏览器中编写和运行UI测试。 该框架提供了用于创建测试的JavaScript API。
 
 AEM测试框架使用Hobbes.js，这是一个使用JavaScript编写的测试库。 Hobbes.js框架是在开发过程中为测试AEM而开发的。 该框架现在可供公众用于测试您的AEM应用程序。
 
 >[!NOTE]
 >
->有关API的完整详细信息，请参阅Hobbes.js [文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)。
+>有关API的完整详细信息，请参阅Hobbes.js [文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)。
 
 ## 测试结构 {#structure-of-tests}
 
@@ -104,9 +104,9 @@ AEM测试框架使用Hobbes.js，这是一个使用JavaScript编写的测试库�
 
 以下过程将引导您使用[We.Retail内容](/help/sites-developing/we-retail.md)创建和执行测试包，但您可以轻松修改测试以使用其他网页。
 
-有关创建您自己的测试包的完整详细信息，请参阅[Hobbes.js API文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html)。
+有关创建您自己的测试包的完整详细信息，请参阅[Hobbes.js API文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/test-api/index.html)。
 
-1. 打开CRXDE Lite。 ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
+1. 打开 CRXDE Lite。 ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. 右键单击`/etc/clientlibs`文件夹，然后单击&#x200B;**创建>创建文件夹**。 键入`myTests`作为名称，然后单击&#x200B;**确定**。
 1. 右键单击`/etc/clientlibs/myTests`文件夹，然后单击&#x200B;**创建>创建节点**。 使用以下属性值，然后单击&#x200B;**确定**：
 

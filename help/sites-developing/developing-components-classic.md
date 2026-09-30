@@ -10,24 +10,22 @@ exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2340'
-ht-degree: 0%
-
+source-wordcount: '2450'
+ht-degree: 2%
 ---
-
 # 开发Adobe Experience Manager (AEM)组件（经典UI）{#developing-aem-components-classic-ui}
 
 经典UI使用ExtJS创建提供组件外观的小部件。 由于这些构件的性质，组件与经典UI的交互方式与[触屏启用UI](/help/sites-developing/developing-components.md)存在一些差异。
 
 >[!NOTE]
 >
->组件开发的许多方面对于经典UI和触屏UI都是通用的，因此&#x200B;**您必须先阅读[AEM组件 — 基础知识](/help/sites-developing/components-basics.md)，然后再阅读**，该页面介绍经典UI的具体内容。
+>组件开发的许多方面对于经典UI和触屏UI都是通用的，因此&#x200B;**您必须先阅读[AEM组件 — 基础知识](/help/sites-developing/components-basics.md)，然后再阅读**&#x200B;此页面，该页面介绍经典UI的详细信息。
 
 >[!NOTE]
 >
->虽然HTML模板语言(HTL)和JSP都可以用于开发经典UI的组件，但此页说明了使用JSP进行开发。 这完全是因为在经典UI中使用JSP的历史记录。
+>尽管HTML模板语言(HTL)和JSP都可以用于开发经典UI的组件，但此页说明了使用JSP进行的开发。 这完全是因为在经典UI中使用JSP的历史记录。
 >
 >HTL现在是适用于AEM的推荐脚本语言。 请参阅[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)和[开发AEM组件](/help/sites-developing/developing-components.md)以比较方法。
 
@@ -63,24 +61,24 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
 * `<cq:defineObjects />`
 
-   * `slingRequest` — 包装的请求对象( `SlingHttpServletRequest`)。
-   * `slingResponse` — 包装的响应对象( `SlingHttpServletResponse`)。
-   * `resource` - Sling资源对象( `slingRequest.getResource();`)。
-   * `resourceResolver` - Sling资源解析程序对象( `slingRequest.getResoucreResolver();`)。
-   * `currentNode` — 请求的已解析JCR节点。
-   * `log` — 默认记录器()。
-   * `sling` - Sling脚本帮助程序。
-   * `properties` — 寻址的资源(`resource.adaptTo(ValueMap.class);`)的属性。
-   * `pageProperties` — 已寻址资源的页面的属性。
-   * `pageManager` — 用于访问AEM内容页面的页面管理器( `resourceResolver.adaptTo(PageManager.class);`)。
-   * `component` — 当前AEM组件的组件对象。
-   * `designer` — 用于检索设计信息的Designer对象(`resourceResolver.adaptTo(Designer.class);`)。
-   * `currentDesign` — 已寻址资源的设计。
-   * `currentStyle` — 已寻址资源的样式。
+  * `slingRequest` — 包装的请求对象( `SlingHttpServletRequest`)。
+  * `slingResponse` — 包装的响应对象( `SlingHttpServletResponse`)。
+  * `resource` - Sling资源对象( `slingRequest.getResource();`)。
+  * `resourceResolver` - Sling资源解析程序对象( `slingRequest.getResoucreResolver();`)。
+  * `currentNode` — 请求的已解析JCR节点。
+  * `log` — 默认记录器()。
+  * `sling` - Sling脚本帮助程序。
+  * `properties` — 寻址的资源(`resource.adaptTo(ValueMap.class);`)的属性。
+  * `pageProperties` — 已寻址资源的页面的属性。
+  * `pageManager` — 用于访问AEM内容页面的页面管理器( `resourceResolver.adaptTo(PageManager.class);`)。
+  * `component` — 当前AEM组件的组件对象。
+  * `designer` — 用于检索设计信息的Designer对象(`resourceResolver.adaptTo(Designer.class);`)。
+  * `currentDesign` — 已寻址资源的设计。
+  * `currentStyle` — 已寻址资源的样式。
 
 ### 访问内容 {#accessing-content}
 
-访问AEM WCM中的内容有三种方法：
+可通过三种方法访问AEM WCM中的内容：
 
 * 通过`global.jsp`中引入的属性对象：
 
@@ -92,15 +90,15 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
 * 通过`global.jsp`中引入的`currentPage`对象：
 
-  `currentPage`对象是页面的实例(请参阅[AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html))。 page类提供了一些访问内容的方法。
+  `currentPage`对象是页面的实例（请参阅[AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)）。 page类提供了一些访问内容的方法。
 
-  示例： `String pageTitle = currentPage.getTitle();`
+  示例：`String pageTitle = currentPage.getTitle();`
 
 * 通过`global.jsp`中引入的`currentNode`对象：
 
   `currentNode`对象是节点的实例（请参阅[JCR API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)）。 `getProperty()`方法可以访问节点的属性。
 
-  示例： `String pageTitle = currentNode.getProperty("jcr:title");`
+  示例：`String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## JSP标记库 {#jsp-tag-libraries}
 
@@ -112,7 +110,7 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
 现代网站在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 组织和优化此代码的服务可能是一个复杂的问题。
 
-为了帮助解决此问题，AEM提供了&#x200B;**客户端库文件夹**，可让您将客户端代码存储在存储库中，将其组织为不同类别并定义何时以及如何向客户端提供每种类别的代码。 然后，客户端库系统负责在最终网页中产生正确的链接，以加载正确的代码。
+为了帮助解决此问题，AEM提供了&#x200B;**客户端库文件夹**，可让您将客户端代码存储在存储库中，将其按类别组织并定义何时以及如何向客户端提供每种类别的代码。 然后，客户端库系统负责在最终网页中产生正确的链接，以加载正确的代码。
 
 有关详细信息，请参阅文档[使用客户端HTML库](/help/sites-developing/clientlibs.md)。
 
@@ -148,7 +146,7 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
 要基于现有组件为AEM开发新组件，可以复制该组件，为新组件创建一个JavaScript文件，并将其存储在AEM可访问的位置（另请参阅[自定义组件和其他元素](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)）：
 
-1. 使用CRXDE Lite在下列位置创建一个组件文件夹：
+1. 使用CRXDE Lite在以下位置创建一个组件文件夹：
 
    / `apps/<myProject>/components/<myComponent>`
 
@@ -164,8 +162,8 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
    * 在对话框中添加字段
 
-      * `cq:dialog` — 触屏UI的对话框
-      * `dialog` — 经典UI的对话框
+     * `cq:dialog` — 触屏UI的对话框
+     * `dialog` — 经典UI的对话框
 
    * 替换`.jsp`文件（将其命名为新组件）
    * 或者完全重新处理整个组件（如果需要）
@@ -176,8 +174,8 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
    >
    >的组件：
    >
-   >* 触屏优化UI使用[Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)组件
-   >* 经典UI使用[ExtJS小组件](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+   >* 触屏优化UI使用[Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)组件
+   >* 经典UI使用[ExtJS小组件](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >
@@ -196,7 +194,7 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
 1. 通过以下任一方式激活段落系统中的新组件：
 
-   * 使用CRXDE Lite将值`<path-to-component>`（例如`/apps/geometrixx/components/myComponent`）添加到节点`/etc/designs/geometrixx/jcr:content/contentpage/par`的属性组件
+   * 使用CRXDE Lite将值`<path-to-component>`（例如`/apps/geometrixx/components/myComponent`）添加到节点`/etc/designs/geometrixx/jcr:content/contentpage/par`的属性组件中
    * 按照[向段落系统添加新组件](#adding-a-new-component-to-the-paragraph-system-design-mode)中的说明操作
 
 1. 在AEM WCM中，打开网站中的页面，并插入您创建的类型的段落，以确保组件正常工作。
@@ -216,7 +214,7 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
      `<contextPath>/ Test.html?wcmmode=design`
 
-   * 在Sidekick中单击设计
+   * 单击Sidekick中的“设计”
 
    您现在处于设计模式，可以编辑段落系统。
 
@@ -251,11 +249,11 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
 >[!NOTE]
 >
->此示例基于Geometrixx示例内容，该内容不再随AEM一起提供，已被We.Retail取代。 有关如何下载和安装Geometrixx，请参阅文档[We.Retail参考实施](/help/sites-developing/we-retail.md#we-retail-geometrixx)。
+>此示例基于Geometrixx示例内容，AEM不再提供该内容，已由We.Retail取代。 有关如何下载和安装Geometrixx的信息，请参阅文档[We.Retail参考实施](/help/sites-developing/we-retail.md#we-retail-geometrixx)。
 
 #### 扩展现有文本时间组件 {#extending-the-existing-textimage-component}
 
-要创建组件，可使用标准文本页面组件作为基础并对其进行修改。 将新组件存储在GeometrixxAEM WCM示例应用程序中。
+要创建组件，可使用标准文本页面组件作为基础并对其进行修改。 您可以将新组件存储在Geometrixx AEM WCM示例应用程序中。
 
 1. 将标准文本时间组件从`/libs/foundation/components/textimage`复制到Geometrixx组件文件夹`/apps/geometrixx/components`中，使用文本时间作为目标节点名称。 （导航到组件，右键单击并选择复制，然后浏览到目标目录来复制组件。）
 
@@ -278,16 +276,16 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
    * 组件名称
 
-      * 将`jcr:description`设置为`Text Image Component (Extended)`
-      * 将`jcr:title`设置为`Text Image (Extended)`
+     * 将`jcr:description`设置为`Text Image Component (Extended)`
+     * 将`jcr:title`设置为`Text Image (Extended)`
 
    * 组，其中组件在Sidekick中列出（保持原样）
 
-      * 将`componentGroup`保留设置为`General`
+     * 将`componentGroup`保留设置为`General`
 
    * 新组件的父组件（标准文本时间组件）
 
-      * 将`sling:resourceSuperType`设置为`foundation/components/textimage`
+     * 将`sling:resourceSuperType`设置为`foundation/components/textimage`
 
    执行此步骤后，组件节点将如下所示：
 
@@ -305,24 +303,24 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
    * 对于前两个选项卡（tab1和tab2）：
 
-      * 将xtype更改为cqinclude（以继承自标准组件）。
-      * 分别添加值为`/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`和`/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`的路径属性。
-      * 删除所有其他属性或子节点。
+     * 将xtype更改为cqinclude（以继承自标准组件）。
+     * 分别添加值为`/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`和`/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`的路径属性。
+     * 删除所有其他属性或子节点。
 
    * 对于选项卡3：
 
-      * 不更改属性和子节点
-      * 将字段定义添加到`tab3/items`，节点位置类型为`cq:Widget`
-      * 为新`tab3/items/position`节点设置以下属性（类型为String）：
+     * 不更改属性和子节点
+     * 将字段定义添加到`tab3/items`，节点位置类型为`cq:Widget`
+     * 为新`tab3/items/position`节点设置以下属性（类型为String）：
 
-         * `name`：`./imagePosition`
-         * `xtype`：`selection`
-         * `fieldLabel`：`Image Position`
-         * `type`：`select`
+       * `name`：`./imagePosition`
+       * `xtype`：`selection`
+       * `fieldLabel`：`Image Position`
+       * `type`：`select`
 
-      * 添加类型为`cq:WidgetCollection`的子节点`position/options`以表示两个图像放置选项，并在其下创建两个类型为`nt:unstructured`的节点o1和o2。
-      * 对于节点`position/options/o1`，将属性`text`设置为`Left`并将`value`设置为`left.`
-      * 对于节点`position/options/o2`，将属性`text`设置为`Right`并将`value`设置为`right`。
+     * 添加类型为`cq:WidgetCollection`的子节点`position/options`以表示两个图像放置选项，并在其下创建两个类型为`nt:unstructured`的节点o1和o2。
+     * 对于节点`position/options/o1`，将属性`text`设置为`Left`并将`value`设置为`left.`
+     * 对于节点`position/options/o2`，将属性`text`设置为`Right`并将`value`设置为`right`。
 
    * 删除Tab4。
 
@@ -357,8 +355,8 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
 开发组件后，您可以将其添加到段落系统，这样作者就可以在编辑页面时选择并使用组件。 这些步骤允许您测试组件。
 
-1. 以Geometrixx（如英语/公司）打开页面。
-1. 单击Sidekick中的设计切换到设计模式。
+1. 在Geometrixx中打开一个页面，如英语/公司。
+1. 通过单击Sidekick中的设计切换到设计模式。
 1. 通过单击页面中间段落系统上的编辑来编辑段落系统设计。 此时将显示一个组件列表，该列表可放置在段落系统中，并且应包含新开发的组件文本图像（扩展） 。 选择段落系统并单击确定，以将其激活。
 1. 切换回编辑模式。
 1. 将文本图像（扩展）段落添加到段落系统中，使用示例内容初始化文本和图像。 保存更改。
@@ -370,7 +368,7 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
 ### 禁用图像组件的上载功能 {#disable-upload-capability-of-the-image-component}
 
-要禁用此功能，可使用标准图像组件作为基础并对其进行修改。 将新组件存储在Geometrixx示例应用程序中。
+要禁用此功能，可使用标准图像组件作为基础并对其进行修改。 您可以将新组件存储在Geometrixx示例应用程序中。
 
 1. 将标准图像组件从`/libs/foundation/components/image`复制到Geometrixx组件文件夹`/apps/geometrixx/components`中，使用图像作为目标节点名称。
 
@@ -378,7 +376,7 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
 
 1. 编辑组件元数据：
 
-   * 将&#x200B;**jcr：title**&#x200B;设置为`Image (Extended)`
+   * 将&#x200B;**jcr:title**&#x200B;设置为`Image (Extended)`
 
 1. 导航到 `/apps/geometrixx/components/image/dialog/items/image`。
 1. 添加属性：
@@ -390,7 +388,7 @@ JSP脚本文件`global.jsp`用于为任何用于呈现组件的JSP脚本提供�
    ![chlimage_1-63](assets/chlimage_1-63a.png)
 
 1. 单击&#x200B;**全部保存**。 该组件已准备好进行测试。
-1. 以Geometrixx（如英语/公司）打开页面。
+1. 在Geometrixx中打开一个页面，如英语/公司。
 1. 切换到设计模式并激活图像（扩展）。
 1. 切换回编辑模式并将其添加到段落系统。 在下一张图片中，您可以看到原始图像组件与您创建的组件之间的差异。
 

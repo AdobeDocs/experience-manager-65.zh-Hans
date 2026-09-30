@@ -10,13 +10,11 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '6780'
+source-wordcount: '6781'
 ht-degree: 1%
-
 ---
-
 # AEM 中的封闭用户组{#closed-user-groups-in-aem}
 
 ## 简介 {#introduction}
@@ -101,10 +99,10 @@ CUG策略的权限评估以及与默认授权模型或任何其他授权模型�
 * 为必须保护的数据或内容创建威胁模型，以确定威胁边界，并清楚地了解数据的敏感性和与授权访问相关的角色
 * 为存储库内容和CUG建模，以遵循与授权相关的一般方面和最佳实践：
 
-   * 请记住，仅当给定的CUG以及在设置授权中部署的其他模块的评估允许给定主题读取给定存储库项目时，才会授予读取权限
-   * 避免创建读取访问已被其他授权模块限制的冗余CUG
-   * 对嵌套CUG的过度需求可能会突显内容设计中的问题
-   * 对CUG的过度需求（例如，在每个页面上）可能表明需要自定义授权模型，该模型可能更适合匹配现有应用程序和内容的特定安全需求。
+  * 请记住，仅当给定的CUG以及在设置授权中部署的其他模块的评估允许给定主题读取给定存储库项目时，才会授予读取权限
+  * 避免创建读取访问已被其他授权模块限制的冗余CUG
+  * 对嵌套CUG的过度需求可能会突显内容设计中的问题
+  * 对CUG的过度需求（例如，在每个页面上）可能表明需要自定义授权模型，该模型可能更适合匹配现有应用程序和内容的特定安全需求。
 
 * 将CUG策略支持的路径限制为存储库中的几棵树，以便优化性能。 例如，自AEM 6.3起，仅允许将/content节点下的CUG作为默认值提供。
 * CUG策略旨在向一小部分主体授予读取权限。 对大量主体的需求可能会突出显示内容或应用程序设计中的问题，应当重新考虑。
@@ -146,10 +144,10 @@ Apache Sling身份验证要求通过页面或节点层次结构继承。 继承�
 * 区分过期密码和需要定期登录作为重定向的原因；
 * 如果是常规登录，测试是否可以按照以下顺序获取登录路径：
 
-   * 通过新`com.adobe.granite.auth.requirement.impl.RequirementService`实现的LoginPathProvider，
-   * 旧的、已弃用的CUG实施中的
-   * 从登录页面映射（如`LoginSelectorHandler`所定义），
-   * 最后，回退到默认登录页面，如`LoginSelectorHandler`所定义。
+  * 通过新`com.adobe.granite.auth.requirement.impl.RequirementService`实现的LoginPathProvider，
+  * 旧的、已弃用的CUG实施中的
+  * 从登录页面映射（如`LoginSelectorHandler`所定义），
+  * 最后，回退到默认登录页面，如`LoginSelectorHandler`所定义。
 
 * 通过以上列出的调用获得有效的登录路径后，用户的请求将被重定向到该页面。
 
@@ -158,10 +156,10 @@ Apache Sling身份验证要求通过页面或节点层次结构继承。 继承�
 * 登录路径的注册取决于区分过期密码和需要定期登录才能进行重定向
 * 如果定期登录，则测试是否可以按照以下顺序获取登录路径：
 
-   * 从`LoginPathProvider`（由新`com.adobe.granite.auth.requirement.impl.RequirementService`实现），
-   * 旧的、已弃用的CUG实施中的
-   * 通过与`LoginSelectorHandler`一起定义的登录页面映射，
-   * 最后回退到使用`LoginSelectorHandler`定义的默认登录页面。
+  * 从`LoginPathProvider`（由新`com.adobe.granite.auth.requirement.impl.RequirementService`实现），
+  * 旧的、已弃用的CUG实施中的
+  * 通过与`LoginSelectorHandler`一起定义的登录页面映射，
+  * 最后回退到使用`LoginSelectorHandler`定义的默认登录页面。
 
 * 通过以上列出的调用获得有效的登录路径后，用户的请求将被重定向到该页面。
 
@@ -179,9 +177,9 @@ Apache Sling身份验证要求通过页面或节点层次结构继承。 继承�
 * 对存储库内容进行建模，以便身份验证要求适用于整个树，而无需再次从要求中排除嵌套的子树。
 * 要避免指定然后注册冗余登录路径，请执行以下操作：
 
-   * 依赖继承并避免定义嵌套登录路径，
-   * 不要将可选登录路径设置为与默认值或继承值对应的值，
-   * 应用程序开发人员应确定在与`LoginSelectorHandler`关联的全局登录路径配置（默认和映射）中应配置哪些登录路径。
+  * 依赖继承并避免定义嵌套登录路径，
+  * 不要将可选登录路径设置为与默认值或继承值对应的值，
+  * 应用程序开发人员应确定在与`LoginSelectorHandler`关联的全局登录路径配置（默认和映射）中应配置哪些登录路径。
 
 ## 存储库中的表示方式 {#representation-in-the-repository}
 
@@ -205,7 +203,7 @@ Oak文档介绍了新的CUG策略在存储库内容中的反映方式。 有关�
 
 ### 管理CUG策略 {#managing-cug-policies}
 
-使用JCR访问控制管理API管理用于限制CUG读取访问的新类型的访问控制策略，并遵循[JCR 2.0规范](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)中描述的机制。
+使用JCR访问控制管理API管理用于限制CUG读取访问的新类型的访问控制策略，并遵循[JCR 2.0规范](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)中描述的机制。
 
 #### 设置新的CUG策略 {#set-a-new-cug-policy}
 

@@ -9,13 +9,11 @@ role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,AEM Forms on JEE,Platform Matrix
-source-git-commit: 87e11d37b9aa14ee3d4e47ae30eaa25f151a9b5b
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '4096'
+source-wordcount: '4259'
 ht-degree: 6%
-
 ---
-
 
 
 # AEM Forms on JEE的支持平台 {#supported-platforms-for-aem-forms-on-jee}
@@ -106,8 +104,9 @@ Adobe建议使用这些配置，并在标准软件维护协议中提供完全支
 
 >[!NOTE]
 >
->为帮助AEM Forms客户降低拥有成本、简化部署架构并使开发栈栈现代化，Adobe Experience Manager企业平台正在从基于应用程序服务器的部署转向基于OSGi的独立部署。Adobe通过减少的基础架构组件列表，继续支持AEM Forms JEE栈栈。
-><br>>在版本6.5中，不再支持在Adobe客户中使用率最低的基础结构组件，如下所示：
+>为帮助AEM Forms客户降低拥有成本、简化部署架构并使开发栈栈现代化，Adobe Experience Manager企业平台正在从基于应用程序服务器的部署转向基于OSGi的独立部署。 Adobe通过减少的基础架构组件列表，继续支持AEM Forms JEE栈栈。
+><br>
+>在版本6.5中，不再支持Adobe客户中使用率最低的基础架构组件，如下所示：
 >
 > - ® DB2®数据库
 > - ® AIX®和Sun Solaris™操作系统
@@ -383,6 +382,7 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
 > - libXau.x86_64 (1.0.8-2.1.el7)
 > - glibc-locale.x86_64 （ 2.17或更高版本）
 > - OpenSSL 3（操作系统上的默认位置需要）。
+> - 在Red Hat® Enterprise Linux® 9上，32位OpenOffice内部版本需要`libcrypt.so.1`，默认情况下不安装该内部版本。 如果缺少它，则OpenOffice无法启动，并出现错误`soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`，并且OpenOffice到PDF的转换失败。 安装`libxcrypt-compat`包（32位）以提供库： `sudo dnf install -y libxcrypt-compat.i686`。
 
 对于OpenSSL 3安装：库libcrypto.so.3和libssl.so.3必须在LD_LIBRARY_PATH环境变量表示的默认库路径中可用。 如果它们安装在非标准位置，请确保在启动服务器之前将此路径添加到LD_LIBRARY_PATH。
 
@@ -420,7 +420,7 @@ Adobe Experience Manager Forms需要由Java™开发工具包(JDK)分发提供�
 1. JEE上的AEM Forms不支持SUSE® Linux® Enterprise Server 12上的JBoss®。 SUSE® Linux® Enterprise Server 12仅支持IBM® WebSphere®。
 1. 除Oracle Java™ SE外，JEE上的AEM Forms不支持任何使用JBoss®JDK。
 1. 除® JDK之外，JEE上的AEM Forms不支持任何包含IBM® WebSphere®的JDK。
-1. CRX-repository支持TarMK、MongoDB和关系数据库(RDBMK)类型的持久性。应用程序服务器和CRX-repository之间不能有两个不同的数据库系统。但是，在JEE环境上的AEM Forms上，您可以将MongoMK与CRX-repository结合使用，并将受支持的关系数据库与应用程序服务器结合使用。
+1. CRX-repository支持TarMK、MongoDB和关系数据库(RDBMK)类型的持久性。 应用程序服务器和CRX-repository之间不能有两个不同的数据库系统。 但是，在JEE环境上的AEM Forms上，您可以将MongoMK与CRX-repository结合使用，并将受支持的关系数据库与应用程序服务器结合使用。
 @@ -432,12 +359,12 @@选择平台以设置AEM F时，请考虑以下异常
 1. WebLogic服务器不支持高于1.8.0_281的JDK版本。 （FORMS-8498）
 1. 不支持使用 JDK 11.0.20 安装 JEE 上的 AEM Forms 安装程序。 仅支持使用 JDK 11.0.19 或更早版本安装 JEE 上的 AEM Forms 安装程序。

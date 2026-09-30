@@ -11,13 +11,11 @@ exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '782'
+source-wordcount: '785'
 ht-degree: 1%
-
 ---
-
 # 创建设备组筛选器{#creating-device-group-filters}
 
 {{ue-over-mobile}}
@@ -30,7 +28,7 @@ ht-degree: 1%
 
 ## 过滤器Java™类 {#the-filter-java-class}
 
-设备组筛选器是实现[com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html)接口的OSGi组件。 部署后，实现类会提供筛选服务，可供设备组配置使用。
+设备组筛选器是实现[com.day.cq.wcm.mobile.api.device.DeviceGroupFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html)接口的OSGi组件。 部署后，实现类会提供筛选服务，可供设备组配置使用。
 
 本文中介绍的解决方案使用Apache Felix Maven SCR插件促进组件和服务的开发。 因此，示例Java™类使用`@Component`和`@Service`注释。 该类具有以下结构：
 
@@ -94,7 +92,7 @@ public String getTitle() {
 * 用户代理的名称
 * 包含设备功能的映射对象。 Map键是WURFL™功能名称，值是WURFL™数据库中的相应值。
 
-[com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html)接口包含静态字段中的WURFL™功能名称子集。 从设备功能图检索值时，使用这些字段常量作为键。
+[com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html)接口包含静态字段中的WURFL™功能名称子集。 从设备功能图检索值时，使用这些字段常量作为键。
 
 例如，以下代码示例确定设备是否支持CSS：
 

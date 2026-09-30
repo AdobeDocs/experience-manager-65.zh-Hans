@@ -5,13 +5,11 @@ exl-id: 15d08758-cf75-43c0-9818-98a579d64183
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1072'
 ht-degree: 1%
-
 ---
-
 # 页面导出器{#the-page-exporter}
 
 Adobe Experience Manager (AEM)允许您将页面导出为包括图像、`.js`和`.css`文件的完整网页。
@@ -64,7 +62,7 @@ Adobe Experience Manager (AEM)允许您将页面导出为包括图像、`.js`和
 
 ## 为站点创建页面导出程序配置 {#creating-a-page-exporter-configuration-for-your-site}
 
-页面导出程序基于[内容同步框架](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html)。 **页面属性**&#x200B;对话框中可用的配置是导出模板，这些模板定义了页面所需的依赖项。
+页面导出程序基于[内容同步框架](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html)。 **页面属性**&#x200B;对话框中可用的配置是导出模板，这些模板定义了页面所需的依赖项。
 
 触发页面导出时，将引用导出模板。 页面路径和设计路径都会动态应用。 然后，使用标准的内容同步功能创建zip文件。
 
@@ -108,7 +106,7 @@ Adobe Experience Manager (AEM)允许您将页面导出为包括图像、`.js`和
 
 ### 页面导出程序配置节点 {#page-exporter-configuration-nodes}
 
-模板由节点结构组成，因为它使用[Content Sync框架](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html)。 每个节点都有一个`type`属性，该属性定义了zip文件创建过程中的特定操作。
+模板由节点结构组成，因为它使用[Content Sync框架](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/package-summary.html)。 每个节点都有一个`type`属性，该属性定义了zip文件创建过程中的特定操作。
 
 <!--
 For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
@@ -179,7 +177,7 @@ For more details about the type property, see the Overview of configuration type
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-为了满足某些特定要求，请实施[自定义更新处理程序](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html)。
+为了满足某些特定要求，请实施[自定义更新处理程序](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html)。
 
 <!--
 To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
@@ -187,7 +185,7 @@ To meet some specific requirements, you may need to implement a custom `type` pr
 
 ## 以编程方式导出页面 {#programmatically-exporting-a-page}
 
-若要以编程方式导出页面，您可以使用[PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI服务。 此服务允许您：
+若要以编程方式导出页面，您可以使用[PageExporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI服务。 此服务允许您：
 
 * 导出页面并写入HTTP servlet响应。
 * 导出页面并在特定位置保存zip文件。

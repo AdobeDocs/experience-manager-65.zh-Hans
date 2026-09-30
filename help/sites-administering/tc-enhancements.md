@@ -7,13 +7,11 @@ feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '669'
+source-wordcount: '688'
 ht-degree: 26%
-
 ---
-
 # 翻译增强功能{#translation-enhancements}
 
 本页介绍AEM翻译管理功能的增量增强和细化。
@@ -66,7 +64,7 @@ ht-degree: 26%
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. 列表视图显示每个已编辑的文本组件的源和翻译的并排比较。选择应将哪些翻译更新同步到翻译记忆库，然后选择&#x200B;**更新记忆库**。
+1. 列表视图显示每个已编辑的文本组件的源和翻译的并排比较。 选择应将哪些翻译更新同步到翻译记忆库，然后选择&#x200B;**更新记忆库**。
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
@@ -79,9 +77,9 @@ AEM 会更新已配置的 TMS 的翻译记忆中现有字符串的翻译。
 要使用此功能：
 
 * TMS 必须配置为可与 AEM 一起使用。
-* 连接器需要执行该方法[`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)。
-   * 此方法中的代码确定翻译记忆更新请求的情况。
-   * AEM 翻译框架通过实施该方法来将字符串值对（原始和更新的翻译）发送回 TMS。
+* 连接器需要执行该方法[`storeTranslation`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html)。
+  * 此方法中的代码确定翻译记忆更新请求的情况。
+  * AEM 翻译框架通过实施该方法来将字符串值对（原始和更新的翻译）发送回 TMS。
 
 对于使用专有翻译记忆的情况，可以拦截翻译记忆更新并将其发送到自定义目标。
 
@@ -93,7 +91,7 @@ AEM 会更新已配置的 TMS 的翻译记忆中现有字符串的翻译。
 
 >[!CAUTION]
 >
->仅允许一个级别。例如，以下内容将不允许“es”页面解析为语言副本：
+>仅允许一个级别。 例如，以下内容将不允许“es”页面解析为语言副本：
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
@@ -102,7 +100,7 @@ AEM 会更新已配置的 TMS 的翻译记忆中现有字符串的翻译。
 
 >[!NOTE]
 >
->语言根可以具有任何页面名称，而不仅仅是语言的ISO代码。 AEM将始终首先检查路径和名称，但如果页面名称未标识语言，则AEM将检查页面的cq：language属性以标识语言。
+>语言根可以具有任何页面名称，而不仅仅是语言的ISO代码。 AEM将始终首先检查路径和名称，但如果页面名称未标识语言，AEM将检查页面的cq:language属性以标识语言。
 
 ## 翻译状态报告 {#translation-status-reporting}
 

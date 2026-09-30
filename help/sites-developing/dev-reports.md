@@ -9,13 +9,11 @@ exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5297'
+source-wordcount: '5299'
 ht-degree: 2%
-
 ---
-
 
 # 开发报告 {#developing-reports}
 
@@ -108,7 +106,7 @@ Adobe Experience Manager (AEM)提供了一组[标准报表](/help/sites-administ
 查询：
 
 * 定义为[`reportbase`](#report-base)组件的一部分。
-* 基于[CQ QueryBuilder](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/QueryBuilder.html)。
+* 基于[CQ QueryBuilder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/search/QueryBuilder.html)。
 * 检索用作报表基础的数据。 结果集（表）的每一行都绑定到查询返回的节点。 然后，将从此数据集中提取[单个列](#column-base-component)的特定信息。
 
 * 通常包括：
@@ -382,7 +380,7 @@ N:charting
 
 每个报告都可以有一个配置对话框，允许用户为报告指定各种参数。 打开报表页面时，可通过&#x200B;**编辑**&#x200B;按钮访问此对话框。
 
-此对话框是标准CQ [对话框](/help/sites-developing/components-basics.md#dialogs)，可按此方式进行配置（有关详细信息，请参阅[CQ.Dialog](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Dialog)）。
+此对话框是标准CQ [对话框](/help/sites-developing/components-basics.md#dialogs)，可按此方式进行配置（有关详细信息，请参阅[CQ.Dialog](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Dialog)）。
 
 示例对话框如下所示：
 

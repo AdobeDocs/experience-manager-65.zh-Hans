@@ -9,13 +9,11 @@ exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '236'
-ht-degree: 2%
-
+source-wordcount: '280'
+ht-degree: 1%
 ---
-
 # 论坛要点 {#forum-essentials}
 
 本页提供了使用论坛功能的基本信息。
@@ -55,9 +53,9 @@ ht-degree: 2%
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [论坛API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
+* [论坛API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [论坛端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [论坛端点](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 

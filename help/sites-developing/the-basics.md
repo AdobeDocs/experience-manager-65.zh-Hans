@@ -9,13 +9,11 @@ exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3364'
-ht-degree: 2%
-
+source-wordcount: '3377'
+ht-degree: 1%
 ---
-
 # AEM 核心概念 {#aem-core-concepts}
 
 >[!NOTE]
@@ -28,10 +26,10 @@ ht-degree: 2%
 
 * Web应用程序技术的基本知识，包括：
 
-   * request -response (XMLHttpRequest / XMLHttpResponse)循环
-   * HTML
-   * CSS
-   * JavaScript
+  * request -response (XMLHttpRequest / XMLHttpResponse)循环
+  * HTML
+  * CSS
+  * JavaScript
 
 * 具有Experience Server (CRX)的工作知识，包括Content Explorer
 * 对于在经典UI中进行开发，还需要JSP的基础知识(JavaServer Pages)，包括理解和修改简单JSP示例的能力。
@@ -40,11 +38,11 @@ ht-degree: 2%
 
 ## Java™内容存储库 {#java-content-repository}
 
-Java™ Content Repository (JCR)标准[JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)指定了一种独立于供应商且独立于实施的方法，用于在内容存储库内的粒度级别双向访问内容。
+Java™ Content Repository (JCR)标准[JSR 283](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)指定了一种独立于供应商且独立于实施的方法，用于在内容存储库内的粒度级别双向访问内容。
 
 规范牵头机构为Adobe Research （瑞士） AG。
 
-[JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html)包javax.jcr.&amp;ast；用于直接访问和处理存储库内容。
+[JCR API 2.0](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/index.html)包javax.jcr.&amp;ast；用于直接访问和处理存储库内容。
 
 ## Experience Server (CRX)和Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -86,8 +84,8 @@ Sling 采用&#x200B;*以内容为中心*&#x200B;的框架。 这意味着处理�
 * RESTful，而不仅仅是在曲面上；资源和表示在服务器内正确建模
 * 删除一个或多个数据模型
 
-   * 以前需要用到的URL结构、业务对象、数据库架构；
-   * 现在简化为： URL =资源= JCR结构
+  * 以前需要用到的URL结构、业务对象、数据库架构；
+  * 现在简化为： URL =资源= JCR结构
 
 ### URL分解 {#url-decomposition}
 
@@ -160,11 +158,11 @@ Sling还允许将JCR节点以外的内容作为资源，但这是一项高级功
 * 当需要方法(GET、POST)时，将按照HTTP规范（例如jobs.POST.esp）以大写形式指定（请参阅下文）
 * 支持各种脚本引擎：
 
-   * HTL（HTML模板语言 — Adobe Experience Manager为HTML首选和推荐的服务器端模板系统）： `.html`
-   * ECMAScript (JavaScript)页面（服务器端执行）： `.esp, .ecma`
-   * Java™服务器页面（服务器端执行）： `.jsp`
-   * Java™ Servlet编译器（服务器端执行）： `.java`
-   * JavaScript模板（客户端执行）： `.jst`
+  * HTL（HTML模板语言 — Adobe Experience Manager为HTML首选和推荐的服务器端模板系统）： `.html`
+  * ECMAScript (JavaScript)页面（服务器端执行）： `.esp, .ecma`
+  * Java™服务器页面（服务器端执行）： `.jsp`
+  * Java™ Servlet编译器（服务器端执行）： `.java`
+  * JavaScript模板（客户端执行）： `.jst`
 
 Felix管理控制台(`http://<host>:<port>/system/console/slingscripting`)上列出了给定的AEM实例支持的脚本引擎列表。
 
@@ -198,19 +196,19 @@ Felix管理控制台(`http://<host>:<port>/system/console/slingscripting`)上列
 
 * 如果未定义sling:resourceType，则：
 
-   * 内容路径用于搜索适当的脚本（如果基于路径的ResourceTypeProvider处于活动状态）。
+  * 内容路径用于搜索适当的脚本（如果基于路径的ResourceTypeProvider处于活动状态）。
 
-     例如，`../content/corporate/jobs/developer.html`的脚本将在`/apps/content/corporate/jobs/`中生成搜索。
+    例如，`../content/corporate/jobs/developer.html`的脚本将在`/apps/content/corporate/jobs/`中生成搜索。
 
-   * 使用主节点类型。
+  * 使用主节点类型。
 
 * 如果未找到脚本，则使用默认脚本。
 
   默认演绎版支持纯文本(.txt)、HTML (.html)和JSON (.json)，所有这些演绎版都列出了节点的属性（格式适当）。 扩展名.res或不带请求扩展名的请求的默认演绎版是假脱机资源（如果可能）。
 * 对于http错误处理（代码403或404），Sling会在以下位置查找脚本：
 
-   * [自定义脚本](/help/sites-developing/customizing-errorhandler-pages.md)的/apps/sling/servlet/errorhandler位置
-   * 或标准脚本/libs/sling/servlet/errorhandler/403.esp或404.esp的位置。
+  * [自定义脚本](/help/sites-developing/customizing-errorhandler-pages.md)的/apps/sling/servlet/errorhandler位置
+  * 或标准脚本/libs/sling/servlet/errorhandler/403.esp或404.esp的位置。
 
 如果给定请求应用了多个脚本，则会选择具有最佳匹配的脚本。 匹配项越具体，其效果就越好；换句话说，无论请求扩展名或方法名称是否匹配，选择器越匹配越好。
 
@@ -243,30 +241,30 @@ Felix管理控制台(`http://<host>:<port>/system/console/slingscripting`)上列
 
 * /
 
-   * a
-   * b
+  * a
+  * b
 
-      * sling:resourceSuperType = a
+    * sling:resourceSuperType = a
 
-   * c
+  * c
 
-      * sling:resourceSuperType = b
+    * sling:resourceSuperType = b
 
-   * x
+  * x
 
-      * sling:resourceType = c
+    * sling:resourceType = c
 
-   * y
+  * y
 
-      * sling:resourceType = c
-      * sling:resourceSuperType = a
+    * sling:resourceType = c
+    * sling:resourceSuperType = a
 
 类型层次结构：
 
 * `/x`
-   * 为`[ c, b, a, <default>]`
+  * 为`[ c, b, a, <default>]`
 * 当`/y`时
-   * 层次结构为`[ c, a, <default>]`
+  * 层次结构为`[ c, a, <default>]`
 
 这是因为`/y`具有`sling:resourceSuperType`属性，而`/x`没有，因此其超类型取自其资源类型。
 
@@ -278,8 +276,8 @@ Felix管理控制台(`http://<host>:<port>/system/console/slingscripting`)上列
 
 * 自动处理GET以外的http方法，包括：
 
-   * POST、PUT、通过sling默认实现处理的DELETE
-   * sling:resourceType位置中的`POST.jsp`脚本
+  * POST、PUT、通过sling默认实现处理的DELETE
+  * sling:resourceType位置中的`POST.jsp`脚本
 
 * 您的代码架构不再像以前那样干净或结构清晰；这对于大规模开发至关重要
 
@@ -336,7 +334,7 @@ OSGi定义了一种用于开发和部署模块化应用程序和库的架构（�
 
 **项**&#x200B;项是节点或属性。
 
-有关处理Item对象的详细信息，请参阅接口javax.jcr.Item的[Java™文档](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html)
+有关处理Item对象的详细信息，请参阅接口javax.jcr.Item的[Java™文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html)
 
 **节点（及其属性）**&#x200B;节点及其属性在JCR API 2.0规范(JSR 283)中定义。 它们存储内容、对象定义、渲染脚本和其他数据。
 
@@ -352,7 +350,7 @@ OSGi定义了一种用于开发和部署模块化应用程序和库的架构（�
 
 当前节点对象为currentNode。
 
-有关处理Node对象的详细信息，请参阅[Java™文档](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)。
+有关处理Node对象的详细信息，请参阅[Java™文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html)。
 
 **小组件**&#x200B;在AEM中，所有用户输入都由小组件管理。 这些通常用于控制内容的编辑。
 
@@ -391,7 +389,7 @@ AEM是使用ExtJS构件库开发的。
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage是当前页面对象。 有关处理页面对象的详细信息，请参阅[Java™文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html)。
+TcurrentPage是当前页面对象。 有关处理页面对象的详细信息，请参阅[Java™文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/Page.html)。
 
 **页面管理器**&#x200B;页面管理器是一个提供页面级操作方法的界面。
 
@@ -399,7 +397,7 @@ TcurrentPage是当前页面对象。 有关处理页面对象的详细信息，�
 
 页面myPage = pageManager.getContainingPage(myResource)；
 
-pageManager是页面管理器对象，myResource是资源对象。 有关页面管理器所提供方法的详细信息，请参阅[Java™文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html)。
+pageManager是页面管理器对象，myResource是资源对象。 有关页面管理器所提供方法的详细信息，请参阅[Java™文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/api/PageManager.html)。
 
 ## 存储库中的结构 {#structure-within-the-repository}
 
@@ -470,9 +468,9 @@ FileVault为JCR存储库提供文件系统映射和版本控制。 它可用于�
 * 高效地管理网站的不同语言版本。
 * 根据源站点自动更新一个或多个站点：
 
-   * 实施通用的基础结构并在多个站点间使用通用内容。
-   * 最大限度地利用可用资源。
-   * 保持统一的外观和风格。
-   * 将工作重点放在管理不同站点之间的内容上。
+  * 实施通用的基础结构并在多个站点间使用通用内容。
+  * 最大限度地利用可用资源。
+  * 保持统一的外观和风格。
+  * 将工作重点放在管理不同站点之间的内容上。
 
 有关详细信息，请参阅[多站点管理器](/help/sites-administering/msm.md)。

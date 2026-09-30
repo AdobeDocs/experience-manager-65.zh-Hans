@@ -9,13 +9,11 @@ exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3107'
+source-wordcount: '3109'
 ht-degree: 3%
-
 ---
-
 # 用户、组和访问权限管理{#user-group-and-access-rights-administration}
 
 启用对CRX存储库的访问涉及几个主题：
@@ -60,7 +58,7 @@ CRX允许您配置用户和组帐户的访问权限。 然后将同样的基本�
 
 >[!NOTE]
 >
->CRX实现JSR-283[&#128279;](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)定义的访问控制。
+>CRX实现JSR-283[&#128279;](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)定义的访问控制。
 >
 >CRX存储库的标准安装配置为使用基于资源的访问控制列表。 这是JSR-283访问控制的一种可能实现以及Jackrabbit提供的实现之一。
 
@@ -70,22 +68,22 @@ CRX允许您配置用户和组帐户的访问权限。 然后将同样的基本�
 
 * **主体**&#x200B;是一个具有访问权限的实体。 承担者包括：
 
-   * 用户帐户
-   * 组帐户
+  * 用户帐户
+  * 组帐户
 
-     如果用户帐户属于一个或多个组，则它也会与每个组承担者相关联。
+    如果用户帐户属于一个或多个组，则它也会与每个组承担者相关联。
 
 * **subject**&#x200B;用于表示请求的源。
 
   它用于合并适用于该请求的访问权限。 这些源自：
 
-   * 用户主体
+  * 用户主体
 
-     您直接分配给用户帐户的权限。
+    您直接分配给用户帐户的权限。
 
-   * 与该用户关联的所有组主体
+  * 与该用户关联的所有组主体
 
-     所有权限都会分配给用户所属的任何组。
+    所有权限都会分配给用户所属的任何组。
 
   然后使用结果来允许或拒绝对请求资源的访问。
 
@@ -124,8 +122,8 @@ CRX中的访问权限评估如下：
 
 * 用户主体始终优先于组主体，不论如何：
 
-   * 在访问控制列表中的顺序
-   * 它们在节点层次结构中的位置
+  * 在访问控制列表中的顺序
+  * 它们在节点层次结构中的位置
 
 * 对于给定的主体，给定节点上最多有一个deny和1 allow条目。 该实施始终会清除冗余条目，并确保允许条目和拒绝条目中未列出相同的权限。
 
@@ -491,7 +489,7 @@ CRX中的访问权限评估如下：
 
 ### 特权 {#privileges}
 
-添加访问控制条目时，可以选择以下权限（有关完整详细信息，请参阅[安全API](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)）：
+添加访问控制条目时，可以选择以下权限（有关完整详细信息，请参阅[安全API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/security/Privilege.html)）：
 
 <table>
  <tbody>

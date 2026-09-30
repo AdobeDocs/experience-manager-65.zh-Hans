@@ -9,13 +9,11 @@ exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1466'
-ht-degree: 39%
-
+source-wordcount: '1471'
+ht-degree: 38%
 ---
-
 # 自定义页面创作{#customizing-page-authoring}
 
 >[!CAUTION]
@@ -28,8 +26,8 @@ Adobe Experience Manager (AEM)提供了各种机制，允许您自定义创作�
 
   Clientlibs允许您扩展默认实施以实现新功能，同时重用标准函数、对象和方法。 定制时，您可以在 `/apps.` 下创建自己的 clientlib。新的 clientlib 必须：
 
-   * 取决于创作clientlib `cq.authoring.editor.sites.page`
-   * 属于相应的`cq.authoring.editor.sites.page.hook`类别
+  * 取决于创作clientlib `cq.authoring.editor.sites.page`
+  * 属于相应的`cq.authoring.editor.sites.page.hook`类别
 
 * 叠加
 
@@ -37,7 +35,7 @@ Adobe Experience Manager (AEM)提供了各种机制，允许您自定义创作�
 
 >[!NOTE]
 >
->有关详细信息，请参阅[JS文档集](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)。
+>有关详细信息，请参阅[JS文档集](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/jsdoc/ui-touch/editor-core/index.html)。
 
 可以通过多种方式使用这些功能来扩展AEM实例中的页面创作功能。 下面介绍了所做的选择（在高级别）。
 
@@ -47,7 +45,7 @@ Adobe Experience Manager (AEM)提供了各种机制，允许您自定义创作�
 >
 >* 正在使用和创建[clientlibs](/help/sites-developing/clientlibs.md)。
 >* 使用和创建[叠加图](/help/sites-developing/overlays.md)。
->* [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Granite](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [AEM触屏启用UI的结构](/help/sites-developing/touch-ui-structure.md)，了解有关用于页面创作的结构区域的详细信息。
 >
 
@@ -107,9 +105,9 @@ GITHUB上的代码
 
 创作页面时，用户通常必须从资源（例如，页面、组件和资产）中进行选择。 这可以采用列表形式，例如，作者必须从中选择项目。
 
-为了使列表保持合理的大小并且与用例相关，可以通过自定义谓词的形式实施筛选条件。 例如，如果使用[`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)组件允许用户选择特定资源的路径，则可以通过以下方式筛选显示的路径：
+为了使列表保持合理的大小并且与用例相关，可以通过自定义谓词的形式实施筛选条件。 例如，如果使用[`pathbrowser`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)组件允许用户选择特定资源的路径，则可以通过以下方式筛选显示的路径：
 
-* 通过实施 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 界面来实施自定义谓词。
+* 通过实施 [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) 界面来实施自定义谓词。
 * 指定谓词的名称，并在使用 `pathbrowser` 时引用该名称。
 
 有关创建自定义谓词的详细信息，请参阅[为查询生成器实施自定义谓词计算器](/help/sites-developing/implementing-custom-predicate-evaluator.md)。
@@ -151,12 +149,12 @@ GITHUB上的代码
 
      例如：
 
-      * `/libs/foundation/components/text/cq:editConfig`
-      * `/libs/foundation/components/image/cq:editConfig`
+     * `/libs/foundation/components/text/cq:editConfig`
+     * `/libs/foundation/components/image/cq:editConfig`
 
-         * 属性：`editorType`
+       * 属性：`editorType`
 
-           定义触发对该组件进行就地编辑时使用的内联编辑器的类型；例如，`text`, `textimage`, `image`, `title`。
+         定义触发对该组件进行就地编辑时使用的内联编辑器的类型；例如，`text`, `textimage`, `image`, `title`。
 
 1. 可以使用包含配置的`config`节点和包含必要插件配置详细信息的`plugin`节点来配置编辑器的其他配置详细信息。
 

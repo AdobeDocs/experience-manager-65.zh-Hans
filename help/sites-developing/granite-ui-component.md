@@ -9,13 +9,11 @@ exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '550'
 ht-degree: 2%
-
 ---
-
 # 创建新的 Granite UI 字段组件{#creating-a-new-granite-ui-field-component}
 
 Granite UI提供一系列设计用于表单的组件；这些组件在Granite UI词汇中称为&#x200B;*字段*。 标准Granite表单组件在以下位置提供：
@@ -28,35 +26,35 @@ Granite UI提供一系列设计用于表单的组件；这些组件在Granite UI
 
 >[!NOTE]
 >
->有关字段的完整详细信息，请参阅[Granite用户界面文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)。
+>有关字段的完整详细信息，请参阅[Granite用户界面文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)。
 
 使用Granite UI Foundation框架来开发和/或扩展Granite组件。 这包含两个元素：
 
 * 服务器端：
 
-   * 基础组件的集合
+  * 基础组件的集合
 
-      * 基础 — 模块化、可组合、可分层、可重用
-      * 组件 — Sling组件
+    * 基础 — 模块化、可组合、可分层、可重用
+    * 组件 — Sling组件
 
-   * 帮助应用程序开发的辅助程序
+  * 帮助应用程序开发的辅助程序
 
 * 客户端：
 
-   * clientlibs的集合，提供一些词汇（即HTML语言的扩展）以通过超媒体驱动的用户界面实现通用交互模式。
+  * clientlibs的集合，提供一些词汇（即HTML语言的扩展）以通过超媒体驱动的用户界面实现通用交互模式。
 
 通用Granite UI组件`field`由两个感兴趣的文件组成：
 
 * `init.jsp`：处理常规处理；添加标签、描述，并提供呈现字段时所需的表单值。
 * `render.jsp`：这是执行字段的实际渲染的位置，必须覆盖您的自定义字段；由`init.jsp`包含。
 
-有关详细信息，请参阅[Granite UI文档 — 字段](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)。
+有关详细信息，请参阅[Granite UI文档 — 字段](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html)。
 
 有关示例，请参阅：
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * 由[代码示例](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)提供
+  * 由[代码示例](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)提供
 
 * `granite/ui/components/foundation/form`
 

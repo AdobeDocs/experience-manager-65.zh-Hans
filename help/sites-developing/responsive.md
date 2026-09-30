@@ -10,13 +10,11 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5464'
+source-wordcount: '5471'
 ht-degree: 0%
-
 ---
-
 # 网页的响应式设计{#responsive-design-for-web-pages}
 
 {{ue-over-mobile}}
@@ -506,7 +504,7 @@ adaptive-image.jsp脚本包含以下用于生成div元素和媒体查询的代�
 
 #### 实施详细信息 {#implementation-details}
 
-`com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet`类扩展[AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)类。 AdaptiveImageComponentServlet源代码位于`/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`文件夹中。
+`com.day.cq.wcm.foundation.impl.AdaptiveImageComponentServlet`类扩展[AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)类。 AdaptiveImageComponentServlet源代码位于`/libs/foundation/src/impl/src/com/day/cq/wcm/foundation/impl`文件夹中。
 
 类使用Felix SCR注释来配置与servlet关联的资源类型和文件扩展名，以及第一个选择器的名称。
 
@@ -539,11 +537,11 @@ adaptive-image.jsp脚本包含以下用于生成div元素和媒体查询的代�
             description = "List of widths this component is permitted to generate.")
 ```
 
-`AbstractImageServlet`类提供用于处理HTTP请求的`doGet`方法。 此方法确定与请求关联的资源，从存储库中检索资源属性，并在[ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html)对象中返回这些属性。
+`AbstractImageServlet`类提供用于处理HTTP请求的`doGet`方法。 此方法确定与请求关联的资源，从存储库中检索资源属性，并在[ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html)对象中返回这些属性。
 
 >[!NOTE]
 >
->[com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html)类提供`getFileReference method`，该类检索资源的`fileReference`属性的值。
+>[com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html)类提供`getFileReference method`，该类检索资源的`fileReference`属性的值。
 
 `AdaptiveImageComponentServlet`类覆盖`createLayer`方法。 该方法从`ImageContext`对象中获取图像资源的路径和请求的图像宽度。 然后调用`info.geometrixx.commons.impl.AdaptiveImageHelper`类的方法，执行实际图像缩放。
 
@@ -611,7 +609,7 @@ AdaptiveImageComponentServlet类也会覆盖writeLayer方法。 此方法将JPEG
 
 #### 实施详细信息 {#implementation-details-1}
 
-info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet类扩展[AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)类。 如果您安装了cq-geometrixx-commons-pkg包，则ImageReferenceModificationServlet源代码位于`/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`文件夹中。
+info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet类扩展[AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)类。 如果您安装了cq-geometrixx-commons-pkg包，则ImageReferenceModificationServlet源代码位于`/apps/geometrixx-commons/src/core/src/main/java/info/geometrixx/commons/impl/servlets`文件夹中。
 
 类使用Felix SCR注释来配置与servlet关联的资源类型和文件扩展名，以及第一个选择器的名称。
 
@@ -651,12 +649,12 @@ info.geometrixx.commons.impl.servlets.ImageReferenceModificationServlet类扩展
             description = "List of resolutions this component is permitted to generate.")
 ```
 
-`AbstractImageServlet`类提供用于处理HTTP请求的`doGet`方法。 此方法确定与调用关联的资源，从存储库检索资源属性，并将其保存在[ImageContext](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html)对象中。
+`AbstractImageServlet`类提供用于处理HTTP请求的`doGet`方法。 此方法确定与调用关联的资源，从存储库检索资源属性，并将其保存在[ImageContext](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.ImageContext.html)对象中。
 
-`ImageReferenceModificationServlet`类覆盖`createLayer`方法并实施用于确定要呈现的图像资源的逻辑。 该方法检索页面`jcr:content`节点的名为`image`的子节点。 从此`image`节点创建了[Image](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/foundation/Image.html)对象，`getFileReference`方法返回了图像节点的`fileReference`属性中的图像文件路径。
+`ImageReferenceModificationServlet`类覆盖`createLayer`方法并实施用于确定要呈现的图像资源的逻辑。 该方法检索页面`jcr:content`节点的名为`image`的子节点。 从此`image`节点创建了[Image](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/foundation/Image.html)对象，`getFileReference`方法返回了图像节点的`fileReference`属性中的图像文件路径。
 
 >[!NOTE]
->[com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html)类提供getFileReferencemethod。
+>[com.day.cq.commons.DownloadResource](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/DownloadResource.html)类提供getFileReferencemethod。
 >
 
 ## 开发流体网格 {#developing-a-fluid-grid}

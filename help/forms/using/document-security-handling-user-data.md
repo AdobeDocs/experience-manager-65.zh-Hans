@@ -7,13 +7,11 @@ role: Admin,User
 exl-id: 00c01a12-1180-4f35-9179-461bf177c787
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '989'
+source-wordcount: '993'
 ht-degree: 0%
-
 ---
-
 # Document Security |处理用户数据 {#document-security-handling-user-data}
 
 AEM Forms document security允许您创建、存储预定义的安全设置，并将其应用于您的文档。 它确保只有授权用户才能使用文档。 您可以使用策略保护文档。 策略是包含安全设置和授权用户列表的信息的集合。 您可以将策略应用到一个或多个文档，并授权在AEM Forms JEE用户管理中添加的用户。
@@ -125,7 +123,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
 >[!NOTE]
 >
->要从`EdcAuditEntity`表中导出数据，请使用采用[EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)作为参数的[EventManager.exportEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API以导出基于`principalId`、`policyId`或`licenseId`的审核数据。
+>要从`EdcAuditEntity`表中导出数据，请使用采用[EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)作为参数的[EventManager.exportEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API以导出基于`principalId`、`policyId`或`licenseId`的审核数据。
 
 要获取系统中某个用户的完整数据，必须访问用户管理数据库并从中导出数据。 有关详细信息，请参阅[Forms用户管理：处理用户数据](/help/forms/using/user-management-handling-user-data.md)。
 
@@ -150,7 +148,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 
    >[!NOTE]
    >
-   >要从`EdcAuditEntity`表中删除数据，请使用采用[EventSearchFilter](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)作为参数的[EventManager.deleteEvents](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API来删除基于`principalId`、`policyId`或`licenseId`的审核数据。
+   >要从`EdcAuditEntity`表中删除数据，请使用采用[EventSearchFilter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html)作为参数的[EventManager.deleteEvents](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API来删除基于`principalId`、`policyId`或`licenseId`的审核数据。
 
 1. 活动和归档策略XML文件分别存储在`EdcPolicyXmlEntity`和`EdcPolicyArchiveEntity`数据库表中。 要从这些表中删除用户的数据，请执行以下操作：
 
