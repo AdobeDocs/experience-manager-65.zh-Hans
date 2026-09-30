@@ -5,13 +5,11 @@ feature: Adaptive Forms, Core Components
 role: User
 level: Beginner, Intermediate
 exl-id: 107ad23b-53df-41d4-ab97-b09d189abc1b
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '5734'
+source-wordcount: '5748'
 ht-degree: 3%
-
 ---
-
 # 将规则添加到自适应表单核心组件 {#adaptive-forms-rule-editor}
 
 本文包含自适应Forms核心组件的最新规则编辑器功能，包括：
@@ -536,17 +534,11 @@ Users in the forms-power-users group can access code editor. For other users, co
 
 1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;保存规则。
 
-<!--
-1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
+   >[!NOTE]
+   >
+   > 或者，您可以在“配偶薪金”字段上编写显示规则，而不是“婚姻状况”字段上的显示规则，以实施相同的行为。
 
-   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
-   -->
-
->[!NOTE]
->
-> 或者，您可以在“配偶薪金”字段上编写显示规则，而不是“婚姻状况”字段上的显示规则，以实施相同的行为。
-
-![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
+   ![write-rules-visual-editor-9](assets/write-rules-visual-editor-9-cc.png)
 
 1. 接下来，编写规则以计算贷款资格金额（占总薪金的50%），并在“贷款资格”字段中显示。 若要获得此结果，请在贷款资格字段中创建&#x200B;**[!UICONTROL 设置值]**。
 
@@ -611,6 +603,12 @@ Users in the forms-power-users group can access code editor. For other users, co
 您可以使用Else条件编写组合规则，以控制“配偶薪金”字段的可见性，并在婚姻状况为“已婚”时计算贷款资格。
 
 ![write-rules-visual-editor-19](assets/write-rules-visual-editor-19-cc.png)
+
+<!--
+1. Repeat steps 1 through 5 to define another rule to hide the Spouse Salary field if the marital Status is Single. The rule appears as follows in the rule editor.
+
+   ![write-rules-visual-editor-8](assets/write-rules-visual-editor-8-cc.png)
+-->
 
 
 <!--

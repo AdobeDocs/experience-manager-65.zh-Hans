@@ -4,13 +4,11 @@ description: 使用AEM 6.5自适应表单核心组件向自适应表单添加注
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: 91e6fca2-60ba-45f1-98c3-7b3fb1d762f5
-source-git-commit: 130d900a9c268362b75ffa947606c7145a1f8c9d
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '652'
 ht-degree: 0%
-
 ---
-
 # 对自适应表单进行版本控制、审核和注释
 
 <!--
@@ -67,7 +65,8 @@ ht-degree: 0%
 审阅是一种允许一个或多个审阅人对表单进行评论的机制。 任何表单用户均可对表单进行注释或通过注释审阅表单。 若要评论表单，请选择&#x200B;**[!UICONTROL 表单]**，然后向表单添加&#x200B;**[!UICONTROL 评论]**。
 
 >[!NOTE]
-> 如上所述，在自适应表单核心组件中使用注释时，表单功能[向表单添加审阅者](/help/forms/using/create-reviews-forms.md)被禁用。
+>
+>如上所述，在自适应表单核心组件中使用注释时，表单功能[向表单添加审阅者](/help/forms/using/create-reviews-forms.md)被禁用。
 
 
 ![在表单上添加评论](assets/form-comments.png)

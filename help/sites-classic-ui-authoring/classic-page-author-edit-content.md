@@ -12,16 +12,14 @@ feature: Authoring
 role: User
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1829'
-ht-degree: 16%
-
+source-wordcount: '1843'
+ht-degree: 19%
 ---
-
 # 编辑页面内容{#editing-page-content}
 
 创建页面（新页面或者作为启动项或 Live Copy 的一部分）后，您可以编辑内容，以进行所需的更新。
 
-内容使用可拖动到页面上的[组件](/help/sites-classic-ui-authoring/classic-page-author-default-components.md)（适用于内容类型）进行添加。然后，可以就地编辑、移动或删除这些内容。
+内容使用可拖动到页面上的[组件](/help/sites-classic-ui-authoring/classic-page-author-default-components.md)（适用于内容类型）进行添加。 然后，可以就地编辑、移动或删除这些内容。
 
 >[!NOTE]
 >
@@ -42,7 +40,7 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 * 工作流
 * 模式
 * 基架
-* ClientContext
+* Client Context
 * 网站
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
@@ -101,13 +99,13 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 
 >[!NOTE]
 >
->可针对您的安装配置此行为。有关更多详细信息，请参阅[配置段落系统以便通过拖动资产创建组件实例](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance)。
+>可针对您的安装配置此行为。 有关更多详细信息，请参阅[配置段落系统以便通过拖动资产创建组件实例](/help/sites-developing/developing-components.md#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance)。
 
 要通过拖动以上某一资源类型创建组件，请执行以下操作：
 
 1. 确保页面处于&#x200B;[**编辑**&#x200B;模式](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)。
 1. 打开[内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder)。
-1. 将所需的资源拖动到所需位置。[组件占位符](#componentplaceholder)显示组件将放置的位置。
+1. 将所需的资源拖动到所需位置。 [组件占位符](#componentplaceholder)显示组件将放置的位置。
 
    将在所需位置创建一个适合该资源类型的组件 — 该组件将包含选定的资源。
 
@@ -121,7 +119,7 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 
 * **右键单击**&#x200B;该段落，然后单击&#x200B;**编辑**。
 
-* **在段落上单击**&#x200B;两次（缓慢双击）以进入就地编辑模式。 您将能够直接编辑页面上的文本，而不是在对话框窗口中编辑。 在此模式下，将为您提供位于页面顶部的工具栏。 只需进行更改，更改将自动保存。
+* **在段落上单击**&#x200B;两次（缓慢双击）以进入就地编辑模式。 此时您可直接在页面上编辑文本，而无需在对话框中操作。 在此模式下，将为您提供位于页面顶部的工具栏。 完成修改后会自动保存。
 
 ## 移动组件 {#moving-a-component}
 
@@ -148,7 +146,7 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 
    ![screen_shot_2012-02-15at120220pm](assets/screen_shot_2012-02-15at120220pm.png)
 
-1. 从菜单中选择&#x200B;**删除**。 AEM WCM请求确认您要删除段落，因为此操作无法撤消。
+1. 从菜单中选择&#x200B;**删除**。 AEM WCM会请求确认您要删除段落，因为此操作无法撤消。
 1. 单击&#x200B;**确定**。
 
 >[!NOTE]
@@ -180,7 +178,7 @@ Sidekick是创作页面时的关键工具。 在创作页面时，它会浮动�
 * [启动项](/help/sites-classic-ui-authoring/classic-launches.md)（当基于活动副本时）。
 * 特定组件；例如，Geometrixx中的继承段落系统。
 
-您可以取消（随后也可以重新启用）继承。根据组件，可以从以下位置执行此操作：
+您可以取消（随后也可以重新启用）继承。 根据组件，可以从以下位置执行此操作：
 
 1. **Live Copy**
 
@@ -242,7 +240,7 @@ AEM允许您锁定页面，这样其他人就无法更改其内容。 当您要�
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   此时将显示一条消息，表明您的页面已被其他用户锁定。 此外，在&#x200B;**网站**&#x200B;控制台的右侧窗格中，AEM WCM将显示已锁定页面，并指示哪个用户已锁定该页面。
+   此时将显示一条消息，表明您的页面已被其他用户锁定。 此外，在&#x200B;**网站**&#x200B;控制台的右侧窗格中，AEM WCM将页面显示为已锁定，并指示哪个用户已锁定页面。
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -277,7 +275,7 @@ AEM会存储您执行的操作的历史记录以及执行操作的顺序。 因�
 
 如果选择了内容页面上的某个元素，则撤消和重做命令将应用于所选项目，如文本组件。
 
-撤消和重做命令的行为与其他软件程序中的类似。 在做出内容决策时，可使用命令恢复网页的最新状态。 例如，如果您将文本段落移至页面上的其他位置，可以使用撤消命令移回该段落。如果随后再次决定移动段落，请使用重做命令。
+撤消和重做命令的行为与其他软件程序中的类似。 在做出内容决策时，可使用命令恢复网页的最新状态。 例如，如果您将文本段落移至页面上的其他位置，可以使用撤消命令移回该段落。 如果随后再次决定移动段落，请使用重做命令。
 
 >[!NOTE]
 >
@@ -304,4 +302,4 @@ AEM会存储您执行的操作的历史记录以及执行操作的顺序。 因�
 
 >[!NOTE]
 >
->对文件和图像的更改执行撤消和重做操作需要特殊的权限。 此外，撤消文件和图像更改的历史记录至少会持续几个小时。 但在超过此时间后，将无法保证可以撤消这些更改。您的管理员可以提供权限并更改十小时的默认时间。
+>对文件和图像的更改执行撤消和重做操作需要特殊的权限。 此外，撤消文件和图像更改的历史记录至少会持续几个小时。 但在超过此时间后，将无法保证可以撤消这些更改。 您的管理员可以提供权限并更改十小时的默认时间。

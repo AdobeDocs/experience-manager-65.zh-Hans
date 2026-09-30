@@ -5,13 +5,11 @@ solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 8ad159ce65fd11c6d1d75a2bc75061f6996f173e
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2144'
+source-wordcount: '2149'
 ht-degree: 91%
-
 ---
-
 # AEM 6.5 Forms 服务包安装说明 {#aem-form-patch-installation-instructions}
 
 ## 发行版信息
@@ -95,15 +93,15 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 1. 将 **JEE 上的 AEM Forms 服务包安装程序存档**&#x200B;提取到您的硬盘驱动器：
 
    * **窗口**
-导航到安装介质上的相应目录或硬盘上复制安装程序的文件夹，然后双击`aemforms65_cfp_install.exe`文件。
+     导航到安装介质上的相应目录或硬盘上复制安装程序的文件夹，然后双击`aemforms65_cfp_install.exe`文件。
 
-      * （Windows 32 位）`Windows\Disk1\InstData\VM`
-      * （Windows 64 位）`Windows_64Bit`\ `Disk1\InstData\VM`
+     * （Windows 32 位）`Windows\Disk1\InstData\VM`
+     * （Windows 64 位）`Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-导航到相应的目录，然后从Shell中键入`./aem65_cfp_install.bin`。
+     导航到相应的目录，然后从Shell中键入`./aem65_cfp_install.bin`。
 
-      * （Linux®）`Linux/Disk1/InstData/NoVM`
+     * （Linux®）`Linux/Disk1/InstData/NoVM`
 
    这会启动安装向导，引导您完成安装。
 
@@ -176,8 +174,8 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 您可以通过以下两种方式之一自动安装 [!DNL ExperienceManager] 服务包。<!--       UPDATE FOR EACH NEW RELEASE -->
 
-* 当服务器联机时，将包放入`../crx-quickstart/install`文件夹中。
-软件包会自动安装。
+* 当服务器在线时，将包放入 `../crx-quickstart/install` 文件夹中。
+该包会自动安装。
 
 * 使用[包管理器的 HTTP API](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)。 请使用 `cmd=install&recursive=true` 以便安装嵌套的包。
 
@@ -189,9 +187,9 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   要了解与此版本兼容的已经过认证的平台，请参阅[技术要求](/help/sites-deploying/technical-requirements.md)。
 
-   1. 在[!UICONTROL 已安装的产品]下，产品信息页面（`/system/console/productinfo`）会显示更新后的版本字符串 `Adobe Experience Manager (spversion)`。<!-- UPDATE FOR EACH NEW RELEASE -->
-   1. 在 OSGi 控制台中，所有 OSGi 捆绑包均应处于&#x200B;**[!UICONTROL 活跃]**&#x200B;或&#x200B;**[!UICONTROL 片段]**&#x200B;状态（使用网页控制台：`/system/console/bundles`）。
-   1. OSGi 捆绑包 `org.apache.jackrabbit.oak-core` 的版本应为 1.22.14 或更高版本（使用网页控制台：`/system/console/bundles`）。
+  1. 在[!UICONTROL 已安装的产品]下，产品信息页面（`/system/console/productinfo`）会显示更新后的版本字符串 `Adobe Experience Manager (spversion)`。<!-- UPDATE FOR EACH NEW RELEASE -->
+  1. 在 OSGi 控制台中，所有 OSGi 捆绑包均应处于&#x200B;**[!UICONTROL 活跃]**&#x200B;或&#x200B;**[!UICONTROL 片段]**&#x200B;状态（使用网页控制台：`/system/console/bundles`）。
+  1. OSGi 捆绑包 `org.apache.jackrabbit.oak-core` 的版本应为 1.22.14 或更高版本（使用网页控制台：`/system/console/bundles`）。
 
 +++
 
@@ -262,11 +260,11 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
   要了解与此版本兼容的已经过认证的平台，请参阅[技术要求](/help/sites-deploying/technical-requirements.md)。
 
-   1. 在[!UICONTROL 已安装的产品]下，产品信息页面（`/system/console/productinfo`）会显示更新后的版本字符串 `Adobe Experience Manager (spversion)`。<!-- UPDATE FOR EACH NEW RELEASE -->
+  1. 在[!UICONTROL 已安装的产品]下，产品信息页面（`/system/console/productinfo`）会显示更新后的版本字符串 `Adobe Experience Manager (spversion)`。<!-- UPDATE FOR EACH NEW RELEASE -->
 
-   1. 在 OSGi 控制台中，所有 OSGi 捆绑包均应处于&#x200B;**[!UICONTROL 活跃]**&#x200B;或&#x200B;**[!UICONTROL 片段]**&#x200B;状态（使用网页控制台：`/system/console/bundles`）。
+  1. 在 OSGi 控制台中，所有 OSGi 捆绑包均应处于&#x200B;**[!UICONTROL 活跃]**&#x200B;或&#x200B;**[!UICONTROL 片段]**&#x200B;状态（使用网页控制台：`/system/console/bundles`）。
 
-      1. OSGi 捆绑包 `org.apache.jackrabbit.oak-core` 的版本应为 1.22.14 或更高版本（使用网页控制台：`/system/console/bundles`）。
+     1. OSGi 捆绑包 `org.apache.jackrabbit.oak-core` 的版本应为 1.22.14 或更高版本（使用网页控制台：`/system/console/bundles`）。
 
 +++
 
@@ -281,7 +279,7 @@ From AEM Service Pack 6.5.19.0 and onwards, XMLFM (XML output) will be available
 
 ## 疑难解答
 
-* 如果在安装服务包过程中&#x200B;**包管理器 UI 对话框**&#x200B;意外退出，请等待错误日志稳定后再访问部署。 在确认安装成功之前，请先等待与卸载更新程序包相关的特定日志出现。 通常，该问题会在 Safari 浏览器中出现，但也可能会在其他浏览器中间歇出现。
+* 如果在安装服务包过程中&#x200B;**包管理器 UI 对话框**&#x200B;意外退出，请等待错误日志稳定后再访问部署。 在确认安装成功之前，请先等待与卸载更新程序捆绑包相关的特定日志出现。 通常，该问题会在 Safari 浏览器中出现，但也可能会在其他浏览器中间歇出现。
 
 * 安装完成后，请检查监控日志（error.log），确认是否还有活动。 请等待几分钟，直到日志中不再有任何活动。 重启 AEM 实例。
 

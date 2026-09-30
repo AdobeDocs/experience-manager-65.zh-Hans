@@ -5,13 +5,11 @@ exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
 feature: Commerce Integration Framework
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '2662'
+source-wordcount: '2667'
 ht-degree: 5%
-
 ---
-
 # 自定义Adobe Experience Manager CIF核心组件 {#customize-cif-components}
 
 [CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia)是使用[CIF核心组件](https://github.com/adobe/aem-core-cif-components)的参考代码库。 在本教程中，您进一步扩展了[Product Teaser](https://github.com/adobe/aem-core-cif-components/tree/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser)组件以显示Adobe Commerce中的自定义属性。 您还可以详细了解Adobe Experience Manager (AEM)与GraphQL之间的Adobe Commerce集成以及CIF核心组件提供的扩展挂接。
@@ -55,7 +53,7 @@ Venia品牌最近开始使用可持续材料制造一些产品，并且公司希
 
 1. 添加必要的OSGi配置，以便将AEM实例连接到Adobe Commerce实例，或将配置添加到新创建的项目。
 
-1. 此时，您应该拥有连接到Adobe Commerce实例的工作中店面版本。 导航到`US` > `Home`页面，网址为： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
+1. 此时，您应该拥有连接到Adobe Commerce实例的工作中店面版本。 导航至`US` > `Home`页面，网址为： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
    您应该会看到店面当前使用的是Venia主题。 展开店面的主菜单，您应该会看到各种类别，这表示与Adobe Commerce的连接正在正常工作。
 
@@ -395,7 +393,7 @@ AEM组件的常见扩展是修改组件生成的标记。 这是通过覆盖组�
    $ mvn clean install -PautoInstallSinglePackage -Pclassic
    ```
 
-1. 打开新的浏览器窗口并导航到AEM和&#x200B;**OSGi控制台** > **状态** > **Sling模型**： [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
+1. 打开新的浏览器窗口，并导航到AEM和&#x200B;**OSGi控制台** > **状态** > **Sling模型**： [http://localhost:4502/system/console/status-slingmodels](http://localhost:4502/system/console/status-slingmodels)
 
 1. 搜索`MyProductTeaserImpl`，您应该会看到如下所示的一行：
 

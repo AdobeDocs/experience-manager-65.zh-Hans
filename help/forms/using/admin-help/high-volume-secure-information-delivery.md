@@ -1,22 +1,24 @@
 ---
-title: 大批量安全信息交付
+title: 大规模安全信息投放
+
 description: Document Security支持将许可证关联到用户，而不是关联到批量生产环境中的文档。
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '320'
-ht-degree: 0%
-
+source-wordcount: '326'
+ht-degree: 3%
 ---
-
-# 大批量安全信息交付 {#high-volume-secure-information-delivery}
+# 大规模安全信息投放 {#high-volume-secure-information-delivery}
 
 在批量生产环境中（例如为电信公司生成每月安全发票的环境中），创建特定于每个文档的许可证可能会成为一个资源密集型过程。 在这种情况下，Document Security支持将许可证与用户关联，而不是与文档关联。 为用户生成的许可证用于为该用户保护的所有文档。
 
@@ -28,4 +30,4 @@ Document Security还支持抽象策略。 抽象策略是包含所有策略属�
 
 仅通过Document Security Java SDK支持创建抽象策略。 但是，您可以管理从document security网页的抽象策略创建的策略。 使用此方法创建的策略的行为与从Document Security网页创建的策略相同。
 
-有关详细信息，请参阅[使用AEM窗体编程](https://www.adobe.com/go/learn_aemforms_programming_63)。
+有关详细信息，请参阅[使用AEM表单编程](https://www.adobe.com/go/learn_aemforms_programming_63)。

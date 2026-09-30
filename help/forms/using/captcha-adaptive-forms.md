@@ -9,13 +9,11 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '1959'
 ht-degree: 12%
-
 ---
-
 # 在自适应表单中使用 CAPTCHA{#using-captcha-in-adaptive-forms}
 
 | 版本 | 文章链接 |
@@ -24,7 +22,7 @@ ht-degree: 12%
 | AEM 6.5 | 本文 |
 
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 CAPTCHA（区分计算机和人类的完全自动化公共图灵测试）是一种在线交易中常用的程序，用于区分人类和自动化程序或机器人。 它提出了一个挑战，并评估用户响应以确定是人还是机器人与网站交互。 如果测试失败，它会阻止用户继续操作，并通过阻止机器人发布垃圾邮件或恶意目的来帮助确保在线交易的安全。
 
@@ -51,39 +49,39 @@ AEM Forms用户可以使用Google的reCAPTCHA服务在自适应表单中实施CA
 1. 为网站[&#128279;](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key)创建[API密钥](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key)和站点密钥。
 1. 为云服务创建配置容器。
 
-   1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。 See the [Configuration Browser](/help/sites-administering/configurations.md) documentation for more information.
-   1. Do the following to enable the global folder for cloud configurations or skip this step to create and configure another folder for cloud service configurations.
-      1. In the Configuration Browser, select the **[!UICONTROL global]** folder and select **[!UICONTROL Properties]**.
-      1. In the Configuration Properties dialog, enable **[!UICONTROL Cloud Configurations]**.
+   1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。 有关详细信息，请参阅[配置浏览器](/help/sites-administering/configurations.md)文档。
+   1. 执行以下操作可为云配置启用全局文件夹，或跳过此步骤为云服务配置创建和配置其他文件夹。
+      1. 在配置浏览器中，选择&#x200B;**[!UICONTROL 全局]**&#x200B;文件夹，然后选择&#x200B;**[!UICONTROL 属性]**。
+      1. 在配置属性对话框中，启用&#x200B;**[!UICONTROL 云配置]**。
       1. 选择&#x200B;**[!UICONTROL 保存并关闭]**，以保存配置并退出对话框。
 
-   1. In the Configuration Browser, select **[!UICONTROL Create]**.
-   1. In the Create Configuration dialog, specify a title for the folder and enable **[!UICONTROL Cloud Configurations]**.
-   1. Select **[!UICONTROL Create]** to create the folder enabled for cloud service configurations.
-1. Configure the cloud service for reCAPTCHA Enterprise.
+   1. 在配置浏览器中，选择&#x200B;**[!UICONTROL 创建]**。
+   1. 在创建配置对话框中，指定文件夹的标题并启用&#x200B;**[!UICONTROL 云配置]**。
+   1. 选择&#x200B;**[!UICONTROL 创建]**&#x200B;以创建为云服务配置启用的文件夹。
+1. 为reCAPTCHA Enterprise配置云服务。
 
-   1. On your Experience Manager author instance, go to ![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**.
-   1. Select **[!UICONTROL reCAPTCHA]**. The Configurations page opens. Select the configuration container created in the previous step and select **[!UICONTROL Create]**.
-   1. Select version as reCAPTCHA Enterprise and specify Name; Project ID, Site Key, and API key(Obtained in Step 2 and 3) for reCAPTCHA Enterprise service.
-   1. Select key type, the key type should be same as the site key configured in the google cloud project, for example, **Checkbox site key** or **Score-based site key**.
-   1. Specify a threshold score in the range 0–1 ([Click to know more about score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores greater than or equal to the threshold scores identify human interaction, otherwise considered bot interaction.
+   1. 在您的Experience Manager创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**。
+   1. 选择&#x200B;**[!UICONTROL reCAPTCHA]**。 此时将打开“配置”页面。 选择在上一步中创建的配置容器，然后选择&#x200B;**[!UICONTROL 创建]**。
+   1. 选择版本作为reCAPTCHA Enterprise ，并为reCAPTCHA Enterprise服务指定名称、项目ID、站点密钥和API密钥（在步骤2和3中获取）。
+   1. 选择密钥类型，密钥类型应与Google Cloud项目中配置的站点密钥相同，例如，**复选框站点密钥**&#x200B;或&#x200B;**基于得分的站点密钥**。
+   1. 指定范围在0到1之间的阈值分数（[单击以了解有关分数](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)的详细信息）。 分数大于或等于阈值分数标识人交互，否则被视为机器人交互。
 
       > 注意:
       >
-      > * Form authors can specify a score in the range suitable for uninterrupted form submission.
+      > * 表单作者可以在适合不间断表单提交的范围中指定分数。
 
    1. 选择&#x200B;**[!UICONTROL 创建]**，创建云服务配置。
 
-   1. In the Edit Component dialog, specify the name, project ID, site key, API key (obtained in steps 2 and 3), select the key type, and enter the threshold score. Select **[!UICONTROL Save Settings]** and then select **[!UICONTROL OK]** to complete the configuration.
+   1. 在“编辑组件”对话框中，指定名称、项目ID、站点密钥、API密钥（在步骤2和3中获得），选择密钥类型，然后输入阈值分数。 选择&#x200B;**[!UICONTROL 保存设置]**，然后选择&#x200B;**[!UICONTROL 确定]**&#x200B;以完成配置。
 
-Once the reCAPTCHA Enterprise service is enabled, it is available for use in adaptive forms. See [using CAPTCHA in adaptive forms](#using-reCAPTCHA).
+reCAPTCHA Enterprise服务一旦启用，就可用于自适应表单。 请参阅在自适应表单[&#128279;](#using-reCAPTCHA)中使用CAPTCHA 。
 
 ![reCAPTCHA Enterprise](/help/forms/using/assets/recaptcha1-enterprise.png)
 
 
-### Configure Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
+### 配置Google reCAPTCHA v2 {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
-1. Obtain [reCAPTCHA API key pair](https://www.google.com/recaptcha/admin) from Google. It includes a **site key** and a **secret key**.
+1. 从Google获取[reCAPTCHA API密钥对](https://www.google.com/recaptcha/admin)。 它包含&#x200B;**站点密钥**&#x200B;和&#x200B;**密钥**。
 1. 为云服务创建配置容器。
    1. 转到&#x200B;**[!UICONTROL 工具>常规>配置浏览器]**。 有关详细信息，请参阅[配置浏览器](/help/sites-administering/configurations.md)文档。
    1. 执行以下操作可为云配置启用全局文件夹，或跳过此步骤为云服务配置创建和配置其他文件夹。
@@ -238,7 +236,7 @@ Once the reCAPTCHA Enterprise service is enabled, it is available for use in ada
 
 >[!NOTE]
 >
-> * 如果选择大小为&#x200B;**[!UICONTROL 不可见]**&#x200B;或reCAPTCHA Enterprise基于得分的键的reCAPTCHA v2配置，则显示/隐藏选项不适用。
+>* 如果选择大小为&#x200B;**[!UICONTROL 不可见]**&#x200B;或reCAPTCHA Enterprise基于得分的键的reCAPTCHA v2配置，则显示/隐藏选项不适用。
 
 ### 验证验证码 {#validate-captcha}
 
@@ -281,29 +279,29 @@ if (slingRequest.getParameter("numericbox1614079614831").length() >= 5) {
     }
 ```
 
-The example signifies that the `ValidateCAPTCHA` API validates the CAPTCHA in the form only if number of digits in the numeric box specified by the user while filling the form is greater than 5.
+该示例表示`ValidateCAPTCHA` API仅在填写表单时用户指定的数字框中的数字位数大于5时才验证表单中的验证码。
 
-**Option 1: Use [!DNL Experience Manager Forms] ValidateCAPTCHA API to validate CAPTCHA using a custom Submit Action**
+**选项1：使用[!DNL Experience Manager Forms] ValidateCAPTCHA API通过自定义提交操作来验证CAPTCHA**
 
-Perform the following steps to use the `ValidateCAPTCHA` API to validate CAPTCHA using a custom Submit Action:
+执行以下步骤，使用`ValidateCAPTCHA` API通过自定义提交操作验证验证码：
 
-1. Add the script that includes the `ValidateCAPTCHA` API to custom Submit Action. For more on custom Submit Actions, see [Create a custom Submit Action for Adaptive Forms](custom-submit-action-form.md).
-1. Select the name of the custom Submit Action from the **[!UICONTROL Submit Action]** drop-down list in **[!UICONTROL Submission]** properties of an Adaptive Form.
-1. 选择&#x200B;**[!UICONTROL 提交]**。 The CAPTCHA gets validated based on the conditions defined in `ValidateCAPTCHA` API of the custom Submit Action.
+1. 将包含`ValidateCAPTCHA` API的脚本添加到自定义提交操作。 有关自定义提交操作的详细信息，请参阅[为自适应Forms创建自定义提交操作](custom-submit-action-form.md)。
+1. 从自适应表单的&#x200B;**[!UICONTROL 提交]**&#x200B;属性中的&#x200B;**[!UICONTROL 提交操作]**&#x200B;下拉列表中选择自定义提交操作的名称。
+1. 选择&#x200B;**[!UICONTROL 提交]**。 根据自定义提交操作的`ValidateCAPTCHA` API中定义的条件验证验证码。
 
-**Option 2: Use [!DNL Experience Manager Forms] ValidateCAPTCHA API to validate CAPTCHA on a user action before submitting the form**
+**选项2：在提交表单**&#x200B;之前，使用[!DNL Experience Manager Forms] ValidateCAPTCHA API在用户操作中验证验证码
 
-You can also invoke `ValidateCAPTCHA` API by applying rules on a component in an Adaptive Form.
+您还可以通过对自适应表单中的组件应用规则来调用`ValidateCAPTCHA` API。
 
-For example, you add a **[!UICONTROL Validate CAPTCHA]** button in an Adaptive Form and create a rule to invoke a service on the click of a button.
+例如，您在自适应表单中添加了&#x200B;**[!UICONTROL 验证CAPTCHA]**&#x200B;按钮，并创建了一个规则以在单击按钮时调用服务。
 
-The following figure illustrates how you can invoke a service on the click of a **[!UICONTROL Validate CAPTCHA]** button:
+下图说明了如何通过单击&#x200B;**[!UICONTROL 验证CAPTCHA]**&#x200B;按钮调用服务：
 
-![Validate CAPTCHA](assets/captcha-validation1.gif)
+![验证验证码](assets/captcha-validation1.gif)
 
-You can invoke the custom servlet that includes `ValidateCAPTCHA` API using the rule editor and enable or disable the submit button of the Adaptive Form based on the validation result.
+您可以使用规则编辑器调用包含`ValidateCAPTCHA` API的自定义servlet，并根据验证结果启用或禁用自适应表单的提交按钮。
 
-Similarly, you can use rule editor to include a custom method to validate CAPTCHA in an Adaptive Form.
+同样，您可以使用规则编辑器在自适应表单中包含用于验证验证码的自定义方法。
 
 <!--
 ### Add custom CAPTCHA services {#add-custom-captcha-service}

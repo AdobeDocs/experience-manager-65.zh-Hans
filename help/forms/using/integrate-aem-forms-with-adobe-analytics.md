@@ -6,13 +6,11 @@ exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 feature: Adaptive Forms
-source-git-commit: 38e3439b5b9f3b4bc56bb1618d33e570ca0603f5
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1920'
 ht-degree: 0%
-
 ---
-
 # 使用[!DNL Adobe Launch]的Analytics {#analyticsusingadobelaunch}
 
 AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=zh-Hans)集成，允许您捕获和跟踪已发布表单的性能指标。 分析这些量度背后的目标是使商业用户能够洞察最终用户行为并优化数据捕获体验。 您可以通过Adobe Analytics for Adaptive Forms捕获和跟踪已登录和未登录（匿名）用户的行为。
@@ -165,7 +163,7 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 
 1. 在&#x200B;**[!UICONTROL 操作]**&#x200B;部分中，选择+并指定&#x200B;**[!UICONTROL Adobe Analytics]**&#x200B;作为扩展名称。
 
-1. 选择&#x200B;**[!UICONTROL 清除变量]**&#x200B;作为操作类型。选择&#x200B;**[!UICONTROL 保留更改]**。执行这些步骤后，**[!UICONTROL 操作]**&#x200B;部分显示为：
+1. 选择&#x200B;**[!UICONTROL 清除变量]**&#x200B;作为操作类型。 选择&#x200B;**[!UICONTROL 保留更改]**。 执行这些步骤后，**[!UICONTROL 操作]**&#x200B;部分显示为：
    ![操作配置](/help/forms/using/assets/actions-config.png)
 
    根据您的要求自定义&#x200B;**[!UICONTROL 操作]**&#x200B;部分。 例如，您可以在Actions流程中定义两个&#x200B;**发送信标**&#x200B;步骤，以便将数据发送到[!DNL Adobe Analytics]，并在一个步骤中将其视为页面查看，将数据发送到[!DNL Adobe Analytics]，而在第二个步骤中不要将其视为页面查看。
@@ -239,8 +237,8 @@ AEM Forms与[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-
 为自适应表单启用[!DNL Adobe Analytics]后，如果AEM Forms和[!DNL Adobe Analytics]之间存在适当的数据事件流，则可以[验证](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=zh-Hans#validate-the-page-view-beacon)。 AEM Forms与Adobe Analytics的集成已完成。 您现在可以[在Adobe Analytics](#view-reports-adobe-analytics)中配置和查看报告。
 
 >[!NOTE]
+>
 >如果同时启用使用Cloud Service Framework的[Analytics](/help/forms/using/configure-analytics-forms-documents.md)和使用Adobe Launch的&#x200B;**Analytics**&#x200B;功能，则将优先使用使用Adobe Launch的&#x200B;**Analytics**。
-> 
 
 ### 创建规则以捕获自定义事件（可选） {#capture-custom-events}
 

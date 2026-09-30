@@ -1,5 +1,5 @@
 ---
-title: 呈现交互式PDF forms
+title: 渲染交互式 PDF 表单
 description: 使用Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF forms，以从用户那里收集信息。 您可以使用Forms服务通过Java API和Web服务API呈现交互式表单。
 contentOwner: admin
 content-type: reference
@@ -9,15 +9,14 @@ topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '2455'
+source-wordcount: '2471'
 ht-degree: 0%
-
 ---
-
-# 呈现交互式PDF forms {#rendering-interactive-pdf-forms}
+# 渲染交互式 PDF 表单 {#rendering-interactive-pdf-forms}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
@@ -45,11 +44,11 @@ Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF forms
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>从HTML页调用<code>GetLoanForm</code> Java Servlet。 </p></td>
+   <td><p>从HTML页面调用<code>GetLoanForm</code> Java Servlet。 </p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p><code>GetLoanForm</code> Java Servlet使用Forms服务客户端API向客户端Web浏览器呈现贷款表单。 (请参阅<a href="#render-an-interactive-pdf-form-using-the-java-api">使用Java API渲染交互式PDF表单</a>。)</p></td>
+   <td><p><code>GetLoanForm</code> Java Servlet使用Forms服务客户端API向客户端Web浏览器呈现贷款表单。 （请参阅<a href="#render-an-interactive-pdf-form-using-the-java-api">使用Java API渲染交互式PDF表单</a>。）</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -57,11 +56,11 @@ Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF forms
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p><code>HandleData</code> Java Servlet使用Forms服务客户端API处理表单提交并检索表单数据。 然后，将数据存储在企业数据库中。 (请参阅<a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">处理提交的Forms</a>。)</p></td>
+   <td><p><code>HandleData</code> Java Servlet使用Forms服务客户端API处理表单提交并检索表单数据。 然后，将数据存储在企业数据库中。 （请参阅<a href="/help/forms/developing/handling-submitted-forms.md#handling-submitted-forms">处理提交的Forms</a>。）</p></td>
   </tr>
   <tr>
    <td><p>5</p></td>
-   <td><p>确认表单将呈现回Web浏览器。 诸如用户名字和姓氏的数据在呈现之前将与表单合并。 (请参阅<a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">使用可流动布局预填充Forms</a>。)</p></td>
+   <td><p>确认表单将呈现回Web浏览器。 诸如用户名字和姓氏的数据在呈现之前将与表单合并。 （请参阅<a href="/help/forms/developing/prepopulating-forms-flowable-layouts.md">使用可流动布局预填充Forms</a>。）</p></td>
   </tr>
  </tbody>
 </table>
@@ -78,7 +77,7 @@ Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF forms
 
 ![ri_ri_confirm](assets/ri_ri_confirm.png)
 
-`HandleData` Java Servlet会使用用户的名字、姓氏和金额预填充此表单。 预填充表单后，该表单会被发送到客户端Web浏览器。 (请参阅[使用可流动布局预填充Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md))
+`HandleData` Java Servlet会使用用户的名字、姓氏和金额预填充此表单。 预填充表单后，该表单会被发送到客户端Web浏览器。 （请参阅[使用可流动布局预填充Forms](/help/forms/developing/prepopulating-forms-flowable-layouts.md)）
 
 **Java Servlet**
 
@@ -150,17 +149,17 @@ Forms应用程序中资源的路径为：
 * 在Designer中设计表单设计时单击提交按钮
 * 通过使用Forms服务客户端API
 
-如果在表单设计内定义了目标URL，请勿使用Forms服务客户端API覆盖它。 也就是说，使用Forms API设置目标URL会将表单设计中指定的URL重置为使用API指定的URL。 如果要将PDF表单提交到表单设计中指定的目标URL，则以编程方式将目标URL设置为空字符串。
+如果在表单设计内定义了目标URL，请勿使用Forms服务客户端API覆盖它。 也就是说，使用Forms API设置目标URL会将表单设计中指定的URL重置为使用API指定的URL。 如果您要将PDF表单提交到表单设计中指定的目标URL，则以编程方式将目标URL设置为空字符串。
 
 如果您的表单包含提交按钮和计算按钮（具有在服务器上运行的相应脚本），则可以通过编程方式定义将表单发送到哪个URL以执行脚本。 使用表单设计上的提交按钮指定将表单数据发布到的URL。 （请参阅[计算表单数据](/help/forms/developing/calculating-form-data.md)。）
 
 >[!NOTE]
 >
->您还可以将`com.adobe.idp.Document`实例传递到Forms服务，而不是指定URL值来引用XDP文件。 `com.adobe.idp.Document`实例包含表单设计。 (请参阅[将文档传递到Forms服务](/help/forms/developing/passing-documents-forms-service.md)。)
+>您还可以将`com.adobe.idp.Document`实例传递到Forms服务，而不是指定URL值来引用XDP文件。 `com.adobe.idp.Document`实例包含表单设计。 （请参阅[将文档传递到Forms服务](/help/forms/developing/passing-documents-forms-service.md)。）
 
 **将文件附加到表单**
 
-您可以将文件附加到表单。 渲染带有文件附件的PDF表单时，用户可以使用文件附件窗格在Acrobat中检索文件附件。 您可以将不同的文件类型附加到表单（如文本文件）或二进制文件(如JPG文件)。
+您可以将文件附加到表单。 渲染带有文件附件的PDF表单时，用户可以使用文件附件窗格在Acrobat中检索文件附件。 您可以将不同的文件类型附加到表单（如文本文件）或二进制文件（如JPG文件）。
 
 >[!NOTE]
 >
@@ -176,11 +175,11 @@ Forms应用程序中资源的路径为：
 
 >[!NOTE]
 >
->如果输入文档是PDFPDF，则无法设置标记文档运行时选项。 如果输入文件是XDP文件，则可以设置标记的PDF选项。
+>如果输入文档是PDF文档，则无法设置标记的PDF运行时选项。 如果输入文件是XDP文件，则可以设置标记的PDF选项。
 
 ## 使用Java API呈现交互式PDF表单 {#render-an-interactive-pdf-form-using-the-java-api}
 
-使用Forms API (Java)呈现交互式PDF表单：
+使用PDF API (Java)呈现交互式Forms表单：
 
 1. 包含项目文件
 
@@ -203,7 +202,7 @@ Forms应用程序中资源的路径为：
    * 创建一个`java.util.HashMap`对象以使用其构造函数存储文件附件。
    * 对每个要附加到渲染表单的文件调用`java.util.HashMap`对象的`put`方法。 将以下值传递到此方法：
 
-      * 一个字符串值，它指定文件附件的名称，包括文件扩展名。
+     * 一个字符串值，它指定文件附件的名称，包括文件扩展名。
 
    * 包含文件附件的`com.adobe.idp.Document`对象。
 
@@ -235,7 +234,7 @@ Forms应用程序中资源的路径为：
 
 ## 使用Web服务API呈现交互式PDF表单 {#render-an-interactive-pdf-form-using-the-web-service-api}
 
-使用Forms API（Web服务）呈现交互式PDF表单：
+使用PDF API（Web服务）呈现交互式Forms表单：
 
 1. 包含项目文件
 
@@ -258,7 +257,7 @@ Forms应用程序中资源的路径为：
    * 创建一个`java.util.HashMap`对象以使用其构造函数存储文件附件。
    * 对每个要附加到渲染表单的文件调用`java.util.HashMap`对象的`put`方法。 将以下值传递到此方法：
 
-      * 一个字符串值，它指定文件附件的名称，包括文件扩展名
+     * 一个字符串值，它指定文件附件的名称，包括文件扩展名
 
    * 包含文件附件的`BLOB`对象
 

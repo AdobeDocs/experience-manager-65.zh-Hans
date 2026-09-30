@@ -1,21 +1,23 @@
 ---
 title: 性能优化
+
 description: 了解如何配置AEM的某些方面以优化性能。
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
+
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
 source-wordcount: '6649'
 ht-degree: 14%
-
 ---
-
 # 性能优化 {#performance-optimization}
 
 >[!NOTE]
@@ -549,7 +551,7 @@ www.myCompany.com/pictures/gallery.christmas.1.html
 
 如果您允许用户更改字体大小（或任何其他版面自定义设置），请确保各种自定义设置都反映在 URL 中。
 
-例如，由于不会缓存 cookie，因此如果您将字体大小存储在 cookie（或类似机制）中，则不会为缓存的页面保留字体大小。 因此，Dispatcher 会随机返回任意字体大小的文档。
+例如，由于不会缓存 Cookie，因此如果您将字体大小存储在 Cookie（或类似机制）中，则不会为缓存的页面保留字体大小。 因此，Dispatcher 会随机返回任意字体大小的文档。
 
 在 URL 中包含字体大小作为选择器可避免出现此问题：
 
@@ -584,7 +586,7 @@ www.myCompany.com/news/main.large.html
 
 #### 使用于导航的图像文件失效 {#invalidating-image-files-used-for-navigation}
 
-如果将图片用于导航条目，则方法基本上与标题相同，但会稍微复杂一些。 将所有导航图像与目标页面一起存储。 如果将两张图片用于一般或活动场景，则可以使用以下脚本：
+如果将图片用于导航条目，则方法基本上与标题相同，但会稍微复杂一些。 将所有导航图像与目标页面一起存储。 如果将两张图片分别用于普通和活跃状态，则可以使用以下脚本：
 
 * 一个正常显示页面的脚本。
 * 一个处理“.normal”请求并返回正常图片的脚本。
@@ -598,7 +600,7 @@ www.myCompany.com/news/main.large.html
 
 建议您将个性化限制在必要的地方。 原因如下：
 
-* 如果您使用可随意自定义的开始页面，则用户每次请求该页面时都必须对它进行编辑。
+* 如果您使用可随意自定义的开始页面，则用户每次请求该页面时都必须重新生成该页面。
 * 相反，如果您有十个不同的开始页面可供选择，则可以缓存其中的每个页面，从而提高性能。
 
 >[!TIP]

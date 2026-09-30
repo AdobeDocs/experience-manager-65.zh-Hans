@@ -1,18 +1,16 @@
 ---
-title: 将 [!DNL Assets] 与 [!DNL InDesign Server]集成
-description: 了解如何将 [!DNL Adobe Experience Manager Assets] 与 [!DNL Adobe InDesign Server]集成。
+title: 将[!DNL Assets]与[!DNL InDesign Server]集成
+description: 了解如何将[!DNL Adobe Experience Manager Assets]与[!DNL Adobe InDesign Server]集成。
 contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '1579'
+source-wordcount: '1584'
 ht-degree: 2%
-
 ---
-
 # 将[!DNL Adobe Experience Manager Assets]与[!DNL Adobe InDesign Server]集成 {#integrating-aem-assets-with-indesign-server}
 
 [!DNL Adobe Experience Manager Assets]使用：
@@ -42,9 +40,9 @@ ht-degree: 2%
    * 检索INDD文件。
    * 执行[!DNL InDesign Server]命令：
 
-      * 将提取结构、文本和任何媒体文件。
-      * PDF和JPG呈现版本会生成。
-      * 将生成HTML和IDML演绎版。
+     * 将提取结构、文本和任何媒体文件。
+     * PDF和JPG呈现版本会生成。
+     * 将生成HTML和IDML演绎版。
 
    * 将结果文件发布回[!DNL Experience Manager Assets]。
 
@@ -137,7 +135,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 ![chlimage_1-96](assets/chlimage_1-289.png)
 
 * **页面提取处理程序**：从弹出列表中，选择要使用的处理程序。 提取处理程序对相关`RenditionPicker`选择的特定演绎版进行操作（请参阅`ExtractionHandler` API）。 在标准[!DNL Experience Manager]安装中，以下各项可用：
-   * IDML导出提取句柄：对MediaExtract步骤中生成的`IDML`呈现版本进行操作。
+  * IDML导出提取句柄：对MediaExtract步骤中生成的`IDML`呈现版本进行操作。
 
 * **页面名称**：指定要分配给结果页面的名称。 如果留空，则名称为“page”（如果“page”已存在，则为派生项）。
 
@@ -164,7 +162,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
    ![proxy_idsworkerconfig](assets/proxy_idsworkerconfig.png)
 
    * **IDS池**
-用于与[!DNL InDesign Server]通信的SOAP端点。 您可以添加、删除和排序项目。
+     用于与[!DNL InDesign Server]通信的SOAP端点。 您可以添加、删除和排序项目。
 
 1. 单击“确定”进行保存。
 
@@ -204,19 +202,20 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
    如果有多台计算机运行[!DNL InDesign Server]，请为每台计算机添加SOAP端点（每台计算机的处理器数–1）。
 
+   >[!NOTE]
+   >
+   >在使用工作线程池时，您可以启用IDS工作线程的阻止列表。
+   >
+   >为此，请在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`配置下启用&#x200B;**[!UICONTROL enable.retry.name]**&#x200B;复选框，该复选框启用IDS作业重试。
+   >
+   >此外，在`com.day.cq.dam.ids.impl.IDSPoolImpl.name`配置下，为`max.errors.to.blacklist`参数设置正值，该值决定在从作业处理程序列表中禁止ID之前进行作业重试的次数。
+   >
+   >默认情况下，在可配置的时间(`retry.interval.to.whitelist.name`)之后（以分钟为单位），将重新验证IDS Worker。 如果联机找到辅助进程，则会将其从阻止列表中删除。
+
 <!-- 
 TBD: Make updates to configurations for allow and block list after product updates are done.
 -->
 
->[!NOTE]
->
->在使用工作线程池时，您可以启用IDS工作线程的阻止列表。
->
->为此，请在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`配置下启用&#x200B;**[!UICONTROL enable.retry.name]**&#x200B;复选框，该复选框启用IDS作业重试。
->
->此外，在`com.day.cq.dam.ids.impl.IDSPoolImpl.name`配置下，为`max.errors.to.blacklist`参数设置正值，该值决定在从作业处理程序列表中禁止ID之前进行作业重试的次数。
->
->默认情况下，在可配置的时间(`retry.interval.to.whitelist.name`)之后（以分钟为单位），将重新验证IDS Worker。 如果联机找到辅助进程，则会将其从阻止列表中删除。
 
 ## 启用对[!DNL InDesign Server] 10.0或更高版本的支持 {#enabling-support-for-indesign-server-or-later}
 

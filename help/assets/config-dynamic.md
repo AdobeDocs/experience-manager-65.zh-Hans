@@ -12,13 +12,11 @@ role: User, Admin
 exl-id: 5719d32c-4f19-47c1-bea9-8fd0bc8439ed
 feature: Configuration,Hybrid Mode
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
 workflow-type: tm+mt
-source-wordcount: '8511'
+source-wordcount: '8519'
 ht-degree: 4%
-
 ---
-
 # 配置 Dynamic Media - 混合模式 {#configuring-dynamic-media-hybrid-mode}
 
 ## Dynamic Media- 混合模式附加组件包（适用于 AEM 6.5.23 及更高版本）
@@ -629,7 +627,7 @@ Dynamic Media Cloud Service支持图像和视频、视频分析和视频编码�
 1. 执行以下任一操作以验证软件包安装，并在必要时调试软件包安装：
 
    * **通过JCR检查Video Analytics预设**
-要通过JCR检查Video Analytics预设，您必须有权访问CRXDE Lite。
+     要通过JCR检查Video Analytics预设，您必须有权访问CRXDE Lite。
 
      Experience Manager — 在CRXDE Lite中，导航到`/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
@@ -640,7 +638,7 @@ Dynamic Media Cloud Service支持图像和视频、视频分析和视频编码�
    * **通过图像服务器检查视频分析预设**
 
      您可以通过发出图像服务器req=userdata请求来直接验证Video Analytics预设。
-例如，要查看创作节点上的Analytics预设，您可以提出以下请求：
+     例如，要查看创作节点上的Analytics预设，您可以提出以下请求：
 
      `https://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
@@ -654,7 +652,7 @@ Dynamic Media Cloud Service支持图像和视频、视频分析和视频编码�
      ```
 
    * **通过Experience Manager中的视频报表工具检查Video Analytics预设**
-导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频报告]**
+     导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]** > **[!UICONTROL 视频报告]**
 
      `https://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -1001,248 +999,248 @@ Adobe的色彩管理使用ICC（国际色彩联盟）配置文件，该格式由
 
    **颜色校正属性表**
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>属性</strong></td>
-   <td><strong>类型</strong></td>
-   <td><strong>默认</strong></td>
-   <td><strong>描述</strong></td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=zh-Hans">iccprofilergb</a></td>
-   <td>字符串</td>
-   <td>&lt;空&gt;</td>
-   <td>默认RGB颜色配置文件的名称。</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=zh-Hans">iccprofilecmyk</a></td>
-   <td>字符串</td>
-   <td>&lt;空&gt;</td>
-   <td>默认CMYK颜色配置文件的名称。</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=zh-Hans">iccprofilegray</a></td>
-   <td>字符串</td>
-   <td>&lt;空&gt;</td>
-   <td>默认灰色颜色配置文件的名称。</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=zh-Hans">iccprofilesrcrgb</a></td>
-   <td>字符串</td>
-   <td>&lt;空&gt;</td>
-   <td>用于没有嵌入颜色配置文件的RGB图像的默认RGB颜色配置文件的名称</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=zh-Hans">iccprofilesrccmyk</a></td>
-   <td>字符串</td>
-   <td>&lt;空&gt;</td>
-   <td>用于没有嵌入颜色配置文件的CMYK图像的默认CMYK颜色配置文件的名称。</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=zh-Hans">iccprofilesrcgray</a></td>
-   <td>字符串</td>
-   <td>&lt;空&gt;</td>
-   <td>用于没有嵌入颜色配置文件的CMYK图像的默认灰度颜色配置文件的名称。</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=zh-Hans">iccblackpointcompensation</a></td>
-   <td>布尔值</td>
-   <td>真</td>
-   <td>指定在颜色校正期间是否进行黑点补偿。 Adobe建议启用此设置。</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=zh-Hans">iccdither</a></td>
-   <td>布尔值</td>
-   <td>假</td>
-   <td>指定在颜色校正期间是否执行仿色。</td>
-  </tr>
-  <tr>
-   <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=zh-Hans">iccrenderintent</a></td>
-   <td>字符串</td>
-   <td>相对</td>
-   <td><p>指定渲染方法。 可接受的值为：<strong>可感知、相对、饱和度、绝对。</strong><i></i>Adobe建议使用<strong>相对</strong><i></i>作为默认值。</p> </td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <td><strong>属性</strong></td>
+      <td><strong>类型</strong></td>
+      <td><strong>默认</strong></td>
+      <td><strong>描述</strong></td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html?lang=zh-Hans">iccprofilergb</a></td>
+      <td>字符串</td>
+      <td>&lt;空&gt;</td>
+      <td>默认RGB颜色配置文件的名称。</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=zh-Hans">iccprofilecmyk</a></td>
+      <td>字符串</td>
+      <td>&lt;空&gt;</td>
+      <td>默认CMYK颜色配置文件的名称。</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=zh-Hans">iccprofilegray</a></td>
+      <td>字符串</td>
+      <td>&lt;空&gt;</td>
+      <td>默认灰色颜色配置文件的名称。</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html?lang=zh-Hans">iccprofilesrcrgb</a></td>
+      <td>字符串</td>
+      <td>&lt;空&gt;</td>
+      <td>用于没有嵌入颜色配置文件的RGB图像的默认RGB颜色配置文件的名称</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html?lang=zh-Hans">iccprofilesrccmyk</a></td>
+      <td>字符串</td>
+      <td>&lt;空&gt;</td>
+      <td>用于没有嵌入颜色配置文件的CMYK图像的默认CMYK颜色配置文件的名称。</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html?lang=zh-Hans">iccprofilesrcgray</a></td>
+      <td>字符串</td>
+      <td>&lt;空&gt;</td>
+      <td>用于没有嵌入颜色配置文件的CMYK图像的默认灰度颜色配置文件的名称。</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccblackpointcompensation.html?lang=zh-Hans">iccblackpointcompensation</a></td>
+      <td>布尔值</td>
+      <td>真</td>
+      <td>指定在颜色校正期间是否进行黑点补偿。 Adobe建议启用此设置。</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccdither.html?lang=zh-Hans">iccdither</a></td>
+      <td>布尔值</td>
+      <td>假</td>
+      <td>指定在颜色校正期间是否执行仿色。</td>
+   </tr>
+   <tr>
+      <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html?lang=zh-Hans">iccrenderintent</a></td>
+      <td>字符串</td>
+      <td>相对</td>
+      <td><p>指定渲染方法。 可接受的值为：<strong>可感知、相对、饱和度、绝对。</strong><i></i>Adobe建议使用<strong>相对</strong><i></i>作为默认值。</p> </td>
+   </tr>
+   </tbody>
+   </table>
 
->[!NOTE]
->
->属性名称区分大小写，且必须全部小写。
+   >[!NOTE]
+   >
+   >属性名称区分大小写，且必须全部小写。
 
-**颜色配置文件表**
+   **颜色配置文件表**
 
-安装了以下颜色配置文件：
+   安装了以下颜色配置文件：
 
-<table>
- <tbody>
-  <tr>
-   <th><p>名称</p> </th>
-   <th><p>颜色间距</p> </th>
-   <th><p>描述</p> </th>
-  </tr>
-  <tr>
-   <td>Adobe RGB</td>
-   <td>RGB</td>
-   <td>Adobe RGB (1998)</td>
-  </tr>
-  <tr>
-   <td>AppleRGB</td>
-   <td>RGB</td>
-   <td>Apple RGB</td>
-  </tr>
-  <tr>
-   <td>CIERGB</td>
-   <td>RGB</td>
-   <td>CIE RGB</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra27</td>
-   <td>CMYK</td>
-   <td>涂层的FOGRA27 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedFogra39</td>
-   <td>CMYK</td>
-   <td>涂层纸FOGRA39 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>CoatedGraCol</td>
-   <td>CMYK</td>
-   <td>涂层纸GRACoL 2006 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>ColorMatchRGB</td>
-   <td>RGB</td>
-   <td>ColorMatch RGB</td>
-  </tr>
-  <tr>
-   <td>欧洲ISOCoated</td>
-   <td>CMYK</td>
-   <td>欧洲ISO铜版FOGRA27</td>
-  </tr>
-  <tr>
-   <td>EuroscaleCoated</td>
-   <td>CMYK</td>
-   <td>欧元标尺Coated v2</td>
-  </tr>
-  <tr>
-   <td>EuroscaleUncoated</td>
-   <td>CMYK</td>
-   <td>欧元规模无涂层版本2</td>
-  </tr>
-  <tr>
-   <td>JapanColorCoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001涂布</td>
-  </tr>
-  <tr>
-   <td>JapanColorPaper</td>
-   <td>CMYK</td>
-   <td>《日本彩色2002报纸》</td>
-  </tr>
-  <tr>
-   <td>JapanColorUncoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2001无涂层</td>
-  </tr>
-  <tr>
-   <td>JapanColorWebCoated</td>
-   <td>CMYK</td>
-   <td>Japan Color 2003 Web Coated</td>
-  </tr>
-  <tr>
-   <td>Japanawebcoated</td>
-   <td>CMYK</td>
-   <td>日本Web Coated (Ad)</td>
-  </tr>
-  <tr>
-   <td>新闻纸快照2007</td>
-   <td>CMYK</td>
-   <td>美国新闻纸(SNAP 2007)</td>
-  </tr>
-  <tr>
-   <td>NTSC</td>
-   <td>RGB</td>
-   <td>NTSC （1953年）</td>
-  </tr>
-  <tr>
-   <td>PAL</td>
-   <td>RGB</td>
-   <td>PAL/SECAM</td>
-  </tr>
-  <tr>
-   <td>ProPhoto</td>
-   <td>RGB</td>
-   <td>ProPhoto RGB</td>
-  </tr>
-  <tr>
-   <td>PS4默认</td>
-   <td>CMYK</td>
-   <td>Photoshop 4默认CMYK</td>
-  </tr>
-  <tr>
-   <td>PS5默认</td>
-   <td>CMYK</td>
-   <td>Photoshop 5默认CMYK</td>
-  </tr>
-  <tr>
-   <td>SheetfedCoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Coated v2</td>
-  </tr>
-  <tr>
-   <td>SheetfedUncoated</td>
-   <td>CMYK</td>
-   <td>U.S. Sheetfed Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>SMPTE</td>
-   <td>RGB</td>
-   <td>SMPTE-C</td>
-  </tr>
-  <tr>
-   <td>sRGB</td>
-   <td>RGB</td>
-   <td>sRGB IEC61966-2.1</td>
-  </tr>
-  <tr>
-   <td>UncoatedFogra29</td>
-   <td>CMYK</td>
-   <td>无涂层的FOGRA29 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoat</td>
-   <td>CMYK</td>
-   <td>U.S. Web Coated (SWOP) v2</td>
-  </tr>
-  <tr>
-   <td>WebCoatedFogra28</td>
-   <td>CMYK</td>
-   <td>网页涂层的FOGRA28 (ISO 12647-2:2004)</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade3</td>
-   <td>CMYK</td>
-   <td>Web涂层的SWOP 2006 3级纸</td>
-  </tr>
-  <tr>
-   <td>WebCoatedGrade5</td>
-   <td>CMYK</td>
-   <td>Web涂层的SWOP 2006 5级纸</td>
-  </tr>
-  <tr>
-   <td>WebUncoated</td>
-   <td>CMYK</td>
-   <td>U.S. Web Uncoated v2</td>
-  </tr>
-  <tr>
-   <td>宽色域RGB</td>
-   <td>RGB</td>
-   <td>宽色域RGB</td>
-  </tr>
- </tbody>
-</table>
+   <table>
+   <tbody>
+   <tr>
+      <th><p>名称</p> </th>
+      <th><p>颜色间距</p> </th>
+      <th><p>描述</p> </th>
+   </tr>
+   <tr>
+      <td>Adobe RGB</td>
+      <td>RGB</td>
+      <td>Adobe RGB (1998)</td>
+   </tr>
+   <tr>
+      <td>AppleRGB</td>
+      <td>RGB</td>
+      <td>Apple RGB</td>
+   </tr>
+   <tr>
+      <td>CIERGB</td>
+      <td>RGB</td>
+      <td>CIE RGB</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra27</td>
+      <td>CMYK</td>
+      <td>涂层的FOGRA27 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedFogra39</td>
+      <td>CMYK</td>
+      <td>涂层纸FOGRA39 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>CoatedGraCol</td>
+      <td>CMYK</td>
+      <td>涂层纸GRACoL 2006 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>ColorMatchRGB</td>
+      <td>RGB</td>
+      <td>ColorMatch RGB</td>
+   </tr>
+   <tr>
+      <td>欧洲ISOCoated</td>
+      <td>CMYK</td>
+      <td>欧洲ISO铜版FOGRA27</td>
+   </tr>
+   <tr>
+      <td>EuroscaleCoated</td>
+      <td>CMYK</td>
+      <td>欧元标尺Coated v2</td>
+   </tr>
+   <tr>
+      <td>EuroscaleUncoated</td>
+      <td>CMYK</td>
+      <td>欧元规模无涂层版本2</td>
+   </tr>
+   <tr>
+      <td>JapanColorCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001涂布</td>
+   </tr>
+   <tr>
+      <td>JapanColorPaper</td>
+      <td>CMYK</td>
+      <td>《日本彩色2002报纸》</td>
+   </tr>
+   <tr>
+      <td>JapanColorUncoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2001无涂层</td>
+   </tr>
+   <tr>
+      <td>JapanColorWebCoated</td>
+      <td>CMYK</td>
+      <td>Japan Color 2003 Web Coated</td>
+   </tr>
+   <tr>
+      <td>Japanawebcoated</td>
+      <td>CMYK</td>
+      <td>日本Web Coated (Ad)</td>
+   </tr>
+   <tr>
+      <td>新闻纸快照2007</td>
+      <td>CMYK</td>
+      <td>美国新闻纸(SNAP 2007)</td>
+   </tr>
+   <tr>
+      <td>NTSC</td>
+      <td>RGB</td>
+      <td>NTSC （1953年）</td>
+   </tr>
+   <tr>
+      <td>PAL</td>
+      <td>RGB</td>
+      <td>PAL/SECAM</td>
+   </tr>
+   <tr>
+      <td>ProPhoto</td>
+      <td>RGB</td>
+      <td>ProPhoto RGB</td>
+   </tr>
+   <tr>
+      <td>PS4默认</td>
+      <td>CMYK</td>
+      <td>Photoshop 4默认CMYK</td>
+   </tr>
+   <tr>
+      <td>PS5默认</td>
+      <td>CMYK</td>
+      <td>Photoshop 5默认CMYK</td>
+   </tr>
+   <tr>
+      <td>SheetfedCoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Coated v2</td>
+   </tr>
+   <tr>
+      <td>SheetfedUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Sheetfed Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>SMPTE</td>
+      <td>RGB</td>
+      <td>SMPTE-C</td>
+   </tr>
+   <tr>
+      <td>sRGB</td>
+      <td>RGB</td>
+      <td>sRGB IEC61966-2.1</td>
+   </tr>
+   <tr>
+      <td>UncoatedFogra29</td>
+      <td>CMYK</td>
+      <td>无涂层的FOGRA29 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoat</td>
+      <td>CMYK</td>
+      <td>U.S. Web Coated (SWOP) v2</td>
+   </tr>
+   <tr>
+      <td>WebCoatedFogra28</td>
+      <td>CMYK</td>
+      <td>网页涂层的FOGRA28 (ISO 12647-2:2004)</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade3</td>
+      <td>CMYK</td>
+      <td>Web涂层的SWOP 2006 3级纸</td>
+   </tr>
+   <tr>
+      <td>WebCoatedGrade5</td>
+      <td>CMYK</td>
+      <td>Web涂层的SWOP 2006 5级纸</td>
+   </tr>
+   <tr>
+      <td>WebUncoated</td>
+      <td>CMYK</td>
+      <td>U.S. Web Uncoated v2</td>
+   </tr>
+   <tr>
+      <td>宽色域RGB</td>
+      <td>RGB</td>
+      <td>宽色域RGB</td>
+   </tr>
+   </tbody>
+   </table>
 
 1. 选择&#x200B;**[!UICONTROL 全部保存]**。
 
