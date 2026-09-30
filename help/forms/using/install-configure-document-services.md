@@ -1568,7 +1568,7 @@ ALC-PDG-015-003 — 系统无法打开输入文件。 再次提交文件或联�
 
 +++ 无法将XPS文件转换为PDF
 
-要解决此问题，请在Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html)上[创建特定于功能的注册表项。
+要解决此问题，请在Windows[&#128279;](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html)上创建特定于功能的注册表项。
 
 +++
 
