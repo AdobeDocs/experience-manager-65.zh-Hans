@@ -174,8 +174,8 @@ ht-degree: 2%
 在部署Java™ Servlet之前，请确保交互式通信以及相应的数据文件已准备就绪。 执行以下步骤，以便创建和部署Java™ Servlet：
 
 1. 登录AEM实例并创建交互式通信。 要使用下面给出的示例代码中提到的交互式通信，[单击此处](assets/SimpleMediumIC.zip)。
-1. [在您的AEM实例上使用Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html)生成和部署AEM项目。
-1. 将[AEM Forms Client SDK版本6.0.12或更高版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)添加到AEM项目的POM文件的依赖项列表中。 例如，
+1. [在您的AEM实例上使用Apache Maven](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=zh-Hans)生成和部署AEM项目。
+1. 将[AEM Forms Client SDK版本6.0.12或更高版本](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)添加到AEM项目的POM文件的依赖项列表中。 例如，
 
    ```xml
        <dependency>
@@ -325,7 +325,7 @@ ht-degree: 2%
    * 指定WEB选项时，将为每个记录生成一个JSON文件。 您可以使用JSON文件[预填充Web模板](#web-template)。
    * 当您同时指定PRINT和WEB选项时，将为每个记录生成PDF文档和JSON文件。
 
-1. [使用maven将更新的代码部署到AEM实例](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html)。
+1. [使用maven将更新的代码部署到AEM实例](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/aem-project-archetype.html?lang=zh-Hans)。
 1. 要生成交互式通信，请调用批处理API。 批处理API打印会根据记录数量返回一系列son文件。 您可以使用JSON文件[预填充Web模板](#web-template)。 如果您使用上述代码，则API部署在`http://localhost:4502/bin/batchServlet`。 该代码会打印并返回PDF和JSON文件流。
 
 ### 预填充Web模板 {#web-template}
@@ -361,4 +361,4 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->默认情况下仅启用CRX协议。 要启用其他支持的协议，请参阅[使用配置管理器配置预填充服务](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=en)。
+>默认情况下仅启用CRX协议。 要启用其他支持的协议，请参阅[使用配置管理器配置预填充服务](https://experienceleague.adobe.com/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/prepopulate-adaptive-form-fields.html?lang=zh-Hans)。

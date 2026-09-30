@@ -181,9 +181,9 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 >[!NOTE]
 >
->[核心组件文本组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor)允许模板编辑器在GUI中将多个RTE插件配置为内容策略，从而无需技术配置。 内容策略可以与RTE UI配置配合使用，如本文档所述。
+>[核心组件文本组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=zh-Hans#the-text-component-and-the-rich-text-editor)允许模板编辑器在GUI中将多个RTE插件配置为内容策略，从而无需技术配置。 内容策略可以与RTE UI配置配合使用，如本文档所述。
 >
->有关详细信息，请参阅本文档的[RTE UI设置和内容策略](/help/sites-administering/rich-text-editor.md)部分，以及[创建页面模板](/help/sites-authoring/templates.md)和[核心组件开发人员文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html)。
+>有关详细信息，请参阅本文档的[RTE UI设置和内容策略](/help/sites-administering/rich-text-editor.md)部分，以及[创建页面模板](/help/sites-authoring/templates.md)和[核心组件开发人员文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=zh-Hans)。
 
 >[!NOTE]
 >
@@ -259,7 +259,7 @@ RTE中的可用选项会从用户界面配置下游流向内容策略。
 * 如果RTE的用户界面配置已移除或未启用某个项目，则内容策略无法对其进行配置。
 * 作者只能访问由用户界面配置和内容策略提供的功能。
 
-例如，您可以看到[文本核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html#the-text-component-and-the-rich-text-editor)。
+例如，您可以看到[文本核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=zh-Hans#the-text-component-and-the-rich-text-editor)。
 
 ## 自定义工具栏图标和命令之间的映射 {#iconstoolbar}
 

@@ -445,7 +445,7 @@ pageManager是页面管理器对象，myResource是资源对象。 有关页面�
 
 ## Dispatcher {#the-dispatcher}
 
-Dispatcher是Adobe用于缓存和/或负载平衡的工具。 可在[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)下找到更多信息。
+Dispatcher是Adobe用于缓存和/或负载平衡的工具。 可在[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)下找到更多信息。
 
 ## FileVault（源修订版系统） {#filevault-source-revision-system}
 
