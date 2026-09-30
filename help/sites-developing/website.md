@@ -10,13 +10,11 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4923'
-ht-degree: 4%
-
+source-wordcount: '5032'
+ht-degree: 3%
 ---
-
 # 创建功能全面的网站(JSP){#create-a-fully-featured-website-jsp}
 
 >[!NOTE]
@@ -59,7 +57,7 @@ ht-degree: 4%
 
 ## 安装Adobe Experience Manager {#installing-adobe-experience-manager}
 
-要安装用于开发网站的AEM实例，请按照使用创作和发布实例[设置](/help/sites-deploying/deploy.md#author-and-publish-installs)部署环境的说明操作，或执行[通用安装](/help/sites-deploying/deploy.md#default-local-install)。 一般安装包括下载AEM快速入门JAR文件，将license.properties文件放在与JAR文件相同的目录中，并双击JAR文件。
+要安装用于开发网站的AEM实例，请按照使用创作和发布实例](/help/sites-deploying/deploy.md#author-and-publish-installs)设置[部署环境的说明操作，或执行[通用安装](/help/sites-deploying/deploy.md#default-local-install)。 一般安装包括下载AEM快速入门JAR文件，将license.properties文件放在与JAR文件相同的目录中，并双击JAR文件。
 
 安装AEM后，单击欢迎页面上的CRXDE Lite链接以访问CRXDE Lite开发环境：
 
@@ -140,7 +138,7 @@ static.css文件和图像的示例
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
-   允许的路径属性的值是&#x200B;*正则表达式。路径与表达式匹配的*&#x200B;页面可以使用模板。 在这种情况下，正则表达式与&#x200B;**/content**&#x200B;文件夹和所有子页面的路径匹配。
+   允许的路径属性的值是&#x200B;*正则表达式。* 路径与表达式匹配的页面可以使用模板。 在这种情况下，正则表达式与&#x200B;**/content**&#x200B;文件夹和所有子页面的路径匹配。
 
    当作者在/content下创建页面时，**contentpage**&#x200B;模板会出现在要使用的可用模板列表中。
 
@@ -175,7 +173,7 @@ static.css文件和图像的示例
 
 向contentpage.jsp脚本中添加代码以定义页面内容。
 
-1. 在CRXDE Lite中，在`contentpage.jsp`中打开文件`/apps/mywebsite/components/contentpage`。 默认情况下，文件包含以下代码：
+1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`中打开文件`contentpage.jsp`。 默认情况下，文件包含以下代码：
 
    ```java
    <%--
@@ -229,7 +227,7 @@ static.css文件和图像的示例
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
-1. 单击&#x200B;**创建**。在文件夹树中，选择&#x200B;**/Websites/My Website**&#x200B;页面，然后单击&#x200B;**新建** > **新建页面**。
+1. 单击&#x200B;**创建**。 在文件夹树中，选择&#x200B;**/Websites/My Website**&#x200B;页面，然后单击&#x200B;**新建** > **新建页面**。
 1. 在“创建页面”对话框中，输入以下属性值，然后单击“创建”：
 
    * Title：英语
@@ -266,7 +264,7 @@ static.css文件和图像的示例
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
-1. 在新的Web浏览器选项卡或窗口中，打开[https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html)以查看“产品”页面：
+1. 在新的Web浏览器选项卡或窗口中，打开[https://localhost:4502/content/mywebsite/en/products.html](https://localhost:4502/content/mywebsite/en/products.html)以查看产品页面：
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -295,7 +293,7 @@ static.css文件和图像的示例
 
    1. 单击“全部保存”。
 
-1. 打开`contentpage.jsp`下的`/apps/mywebsite/components/contentpage`文件并使用以下代码替换现有代码：
+1. 打开`/apps/mywebsite/components/contentpage`下的`contentpage.jsp`文件并使用以下代码替换现有代码：
 
    ```xml
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -327,9 +325,9 @@ static.css文件和图像的示例
 
 **提示：**&#x200B;当组件包含的文件与组件的超类型中的文件具有相同的名称和相对位置时，它称为&#x200B;*覆盖*。
 
-1. 在CRXDE Lite中，在`left.jsp`下创建文件`/apps/mywebsite/components/contentpage`：
+1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下创建文件`left.jsp`：
 
-   1. 右键单击节点`/apps/mywebsite/components/contentpage`，然后选择&#x200B;**创建**&#x200B;然后选择&#x200B;**创建文件**。
+   1. 右键单击节点`/apps/mywebsite/components/contentpage`，然后选择&#x200B;**创建**&#x200B;然后选择**创建文件**。
 
    1. 在窗口中，键入`left.jsp`作为&#x200B;**名称**，然后单击&#x200B;**确定**。
 
@@ -345,7 +343,7 @@ static.css文件和图像的示例
    ```
 
 1. 保存更改。
-1. 在CRXDE Lite中，在`center.jsp`下创建文件`/apps/mywebsite/components/contentpage`：
+1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下创建文件`center.jsp`：
 
    1. 右键单击节点`/apps/mywebsite/components/contentpage`，选择&#x200B;**创建**，然后选择&#x200B;**创建文件**。
 
@@ -363,7 +361,7 @@ static.css文件和图像的示例
    ```
 
 1. 保存更改。
-1. 在CRXDE Lite中，在`right.jsp`下创建文件`/apps/mywebsite/components/contentpage`：
+1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下创建文件`right.jsp`：
 
    1. 右键单击节点`/apps/mywebsite/components/contentpage`，选择&#x200B;**创建**，然后选择&#x200B;**创建文件**。
 
@@ -379,7 +377,7 @@ static.css文件和图像的示例
    ```
 
 1. 保存更改。
-1. 在CRXDE Lite中，在`body.jsp`下创建文件`/apps/mywebsite/components/contentpage`：
+1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下创建文件`body.jsp`：
 1. 编辑文件`body.jsp`以移除现有内容并使用以下代码替换：
 
    ```java
@@ -431,7 +429,7 @@ static.css文件和图像的示例
 
 将渲染脚本添加到topnav以生成指向子页面的文本链接：
 
-1. 在CRXDE Lite中，打开`topnav.jsp`下的文件`/apps/mywebsite/components/topnav`。
+1. 在CRXDE Lite中，打开`/apps/mywebsite/components/topnav`下的文件`topnav.jsp`。
 1. 通过复制并粘贴以下代码来替换现有的代码：
 
    ```xml
@@ -458,7 +456,7 @@ static.css文件和图像的示例
 
 要在内容页面组件中包含topnav，请执行以下操作：
 
-1. 在CRXDE Lite中，打开`body.jsp`下的`/apps/mywebsite/components/contentpage`并替换：
+1. 在CRXDE Lite中，打开`/apps/mywebsite/components/contentpage`下的`body.jsp`并替换：
 
    ```xml
    <div class="topnav">topnav</div>
@@ -493,7 +491,7 @@ static.css文件和图像的示例
 
 此练习演示了[Sling请求处理](/help/sites-developing/the-basics.md#sling-request-processing)。 修改topnav.jsp脚本以调用一个脚本，该脚本可动态生成图像以用于页面导航链接。 在本练习中，Sling解析图像源文件的URL以确定用于渲染图像的脚本。
 
-例如，指向“产品”页面的图像链接的来源可以是https://localhost:4502/content/mywebsite/en/products.navimage.png。 Sling解析此URL以确定资源类型以及用于呈现资源的脚本：
+例如，指向产品页面的图像链接的来源可以是https://localhost:4502/content/mywebsite/en/products.navimage.png。 Sling解析此URL以确定资源类型以及用于呈现资源的脚本：
 
 1. Sling将资源的路径确定为`/content/mwebysite/en/products.png.`
 1. Sling将此路径与`/content/mywebsite/en/products`节点匹配。
@@ -503,7 +501,7 @@ static.css文件和图像的示例
 
 在本练习中，Sling将这些URL与您创建的/apps/mywebsite/components/contentpage/navimage.png.java脚本进行匹配。
 
-1. 在CRXDE Lite中，打开`topnav.jsp`下的定位锚点元素的内容（第14行）下的`/apps/mywebsite/components/topnav.`：
+1. 在CRXDE Lite中，打开`/apps/mywebsite/components/topnav.`下的定位锚点元素的内容（第14行）下的`topnav.jsp`：
 
    ```xml
    <%=child.getTitle() %>
@@ -517,15 +515,15 @@ static.css文件和图像的示例
 
 1. 保存更改。
 1. 右键单击`/apps/mywebsite/components/contentpage`节点，然后单击&#x200B;**创建** > **创建文件**。
-1. 在&#x200B;**创建文件**&#x200B;窗口中，键入&#x200B;**作为**&#x200B;名称`navimage.png.java`。
+1. 在&#x200B;**创建文件**&#x200B;窗口中，键入`navimage.png.java`作为&#x200B;**名称**。
 
    .java文件扩展名指示Sling应使用Apache Sling脚本Java™支持编译脚本和创建servlet。
 
 1. 将以下代码复制到`navimage.png.java.`此代码扩展AbstractImageServlet类：
 
-   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)创建用于存储当前资源属性的ImageContext对象。
+   * [AbstractImageServlet](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html)创建用于存储当前资源属性的ImageContext对象。
    * 资源的父页面是从ImageContext对象提取的。 然后获取页面标题和副标题。
-   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html)用于从站点设计的navimage_bg.jpg文件、页面标题和页面子标题生成图像。
+   * [ImageHelper](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/ImageHelper.html)用于从站点设计的navimage_bg.jpg文件、页面标题和页面子标题生成图像。
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -725,7 +723,7 @@ static.css文件和图像的示例
 
 开发listchildren组件的脚本。
 
-1. 在CRXDE Lite中，打开`listchildren.jsp`下的文件`/apps/mywebsite/components/listchildren`。
+1. 在CRXDE Lite中，打开`/apps/mywebsite/components/listchildren`下的文件`listchildren.jsp`。
 1. 将默认代码替换为以下代码：
 
    ```xml
@@ -798,7 +796,7 @@ static.css文件和图像的示例
    | 名称 | 类型 | 价值 |
    |---|---|---|
    | 字段标签 | 字符串 | 列表根的路径 |
-   | name | 字符串 | 。/listroot |
+   | name | 字符串 | ./listroot |
    | xtype | 字符串 | textfield |
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
@@ -807,7 +805,7 @@ static.css文件和图像的示例
 
 要在内容页面组件中包含listchildren组件，请按照以下步骤操作：
 
-1. 在CRXDE Lite中，打开`left.jsp`下的文件`/apps/mywebsite/components/contentpage`，并找到以下代码（第4行）：
+1. 在CRXDE Lite中，打开`/apps/mywebsite/components/contentpage`下的文件`left.jsp`，并找到以下代码（第4行）：
 
    ```xml
    <div>newslist</div>
@@ -872,7 +870,7 @@ static.css文件和图像的示例
 
 本节介绍如何创建脚本以显示带有主页链接的徽标图像。
 
-1. 在CRXDE Lite中，打开`logo.jsp`下的文件`/apps/mywebsite/components/logo`。
+1. 在CRXDE Lite中，打开`/apps/mywebsite/components/logo`下的文件`logo.jsp`。
 1. 以下代码创建指向网站主页的链接并添加对徽标图像的引用。 将代码复制到`logo.jsp`：
 
    ```xml
@@ -926,9 +924,9 @@ static.css文件和图像的示例
 
    | 名称 | 类型 | 价值 |
    |---|---|---|
-   | fileNameParameter | 字符串 | 。/imageName |
-   | fileReferenceParameter | 字符串 | 。/imageReference |
-   | name | 字符串 | 。/image |
+   | fileNameParameter | 字符串 | ./imageName |
+   | fileReferenceParameter | 字符串 | ./imageReference |
+   | name | 字符串 | ./image |
    | 标题 | 字符串 | 图像 |
    | xtype | 字符串 | html5smartimage |
 
@@ -938,7 +936,7 @@ static.css文件和图像的示例
 
 创建脚本以检索徽标图像并将其写入页面。
 
-1. 右键单击徽标组件节点，然后单击创建>创建文件，以创建名为img.GET.java的脚本文件。
+1. 右键单击徽标组件节点，然后单击“创建”>“创建文件”以创建名为img.GET.java的脚本文件。
 1. 打开文件，将以下代码复制到文件中，然后单击“全部保存”：
 
 ```java
@@ -1009,7 +1007,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### 将徽标组件添加到Contentpage组件 {#adding-the-logo-component-to-the-contentpage-component}
 
-1. 在CRXDE Lite中，打开`left.jsp`下的`/apps/mywebsite/components/contentpage file`，并找到以下代码行：
+1. 在CRXDE Lite中，打开`/apps/mywebsite/components/contentpage file`下的`left.jsp`，并找到以下代码行：
 
    ```xml
    <div>logo</div>
@@ -1199,7 +1197,7 @@ public class img_GET extends AbstractImageServlet {
 |---|---|---|
 | 接受 | 字符串 | image/(gif\|jpeg\|png) |
 | 组 | 字符串 | 媒体 |
-| propertyName | 字符串 | 。/imageReference |
+| propertyName | 字符串 | ./imageReference |
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -1457,7 +1455,7 @@ public class img_GET extends AbstractImageServlet {
 
 要在内容页面的左侧部分包含搜索输入框，请按照以下步骤操作：
 
-1. 在CRXDE Lite中，打开`left.jsp`下的文件`/apps/mywebsite/components/contentpage`，并找到以下代码（第2行）：
+1. 在CRXDE Lite中，打开`/apps/mywebsite/components/contentpage`下的文件`left.jsp`，并找到以下代码（第2行）：
 
    ```xml
    %><div class="left">
@@ -1530,6 +1528,6 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 保存更改。
-1. 在浏览器中，重新加载 **&#x200B; Products**&#x200B;页面。 整个页面如下所示：
+1. 在浏览器中，重新加载** Products**页面。 整个页面如下所示：
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

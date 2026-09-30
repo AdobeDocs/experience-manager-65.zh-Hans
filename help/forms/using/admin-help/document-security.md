@@ -1,22 +1,25 @@
 ---
 title: 什么是Document Security？
+
 description: 了解如何创建、存储和应用预定义的机密性设置，以及如何使用Document Security安全地分发信息。
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3301'
+source-wordcount: '3302'
 ht-degree: 0%
-
 ---
-
 # 关于文档安全 {#about-document-security}
 
 Document Security确保只有授权用户才能使用您的文档。 使用Document Security，您可以安全地分发以支持的格式保存的任何信息。 支持的文件格式包括：
@@ -24,7 +27,7 @@ Document Security确保只有授权用户才能使用您的文档。 使用Docum
 * Adobe PDF文件
 * ®Word、Excel和PowerPoint文件
 
-有关策略如何保护支持的文件类型的详细信息，请参阅[更多Document Security信息](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=zh-Hans)。
+有关策略如何保护支持的文件类型的详细信息，请参阅[更多Document Security信息](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en)。
 
 使用Document Security，您可以轻松创建、存储预定义机密性设置并将其应用于文档。 为了防止信息超出您的覆盖范围，您还可以监控和控制在您分发文档后收件人如何使用您的文档。
 
@@ -75,15 +78,15 @@ Document Security包括服务器和用户界面：
 
   具有此角色的用户有权访问管理控制台中的所有文档安全设置。 这些权限与角色关联：
 
-   * 管理配置
-   * 管理策略
-   * 管理策略集
-   * 管理文档
-   * 管理文档发布者
-   * 管理受邀用户和本地用户
-   * 查看事件
-   * 委派
-   * 邀请外部用户
+  * 管理配置
+  * 管理策略
+  * 管理策略集
+  * 管理文档
+  * 管理文档发布者
+  * 管理受邀用户和本地用户
+  * 查看事件
+  * 委派
+  * 邀请外部用户
 
   **Document Security管理员**
 
@@ -97,12 +100,12 @@ Document Security包括服务器和用户界面：
 
   具有此角色的用户可以使用管理控制台的Document Security部分编辑其他用户的策略以及创建、编辑和删除策略集。 当策略集管理员创建策略集时，可以为该策略集分配策略集协调器。 这些权限与角色关联：
 
-   * 管理策略
-   * 管理策略集
-   * 管理文档
-   * 管理文档发布者
-   * 查看事件
-   * 委派
+  * 管理策略
+  * 管理策略集
+  * 管理文档
+  * 管理文档发布者
+  * 查看事件
+  * 委派
 
   >[!NOTE]
   >
@@ -112,9 +115,9 @@ Document Security包括服务器和用户界面：
 
   具有此角色的用户可以执行在相关Document Security网页上管理所有受邀用户和本地用户所需的任务。 这些权限与角色关联：
 
-   * 管理受邀用户和本地用户
-   * 邀请外部用户
-   * 访问最终用户网页
+  * 管理受邀用户和本地用户
+  * 邀请外部用户
+  * 访问最终用户网页
 
   >[!NOTE]
   >
@@ -124,8 +127,8 @@ Document Security包括服务器和用户界面：
 
   具有此角色的用户可以邀请用户。 这些权限与角色关联：
 
-   * 邀请外部用户
-   * 访问最终用户网页
+  * 邀请外部用户
+  * 访问最终用户网页
 
   **Document Security用户**
 
@@ -251,28 +254,28 @@ Document Security管理员可以使用“用户管理”中的以下权限创建
 
   使用策略集可以更轻松地向组织或部门中的特定用户分配和管理相关策略。 例如，为财务和人力资源部门单独设置政策有助于轻松管理相关政策，并将其应用于为相应部门指定的文件。
 
-* **使用外部授权程序动态应用权限：**&#x200B;您可以使用[外部授权程序](https://help.adobe.com/zh_CN/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)根据外部条件评估和动态应用权限。 在根据外部条件动态评估权限时，您可以：
+* **使用外部授权程序动态应用权限：**&#x200B;您可以使用[外部授权程序](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)根据外部条件评估和动态应用权限。 在根据外部条件动态评估权限时，您可以：
 
-   * 为组织中的文档提供集中访问控制。
+  * 为组织中的文档提供集中访问控制。
 
-   * 通过动态确定用户是否可以访问受策略保护的文档，控制对受策略保护文档的访问。 例如，动态确定用户是否可以打印受策略保护的文档。
+  * 通过动态确定用户是否可以访问受策略保护的文档，控制对受策略保护文档的访问。 例如，动态确定用户是否可以打印受策略保护的文档。
 
-   * 使用内容管理系统使用的访问控制机制，以及标准策略评估过程。 例如，当服务确定用户是否可以打印受策略保护的文档时，它可以使用标准策略评估过程。 此外，它还可以使用内容管理系统使用的访问控制机制。
+  * 使用内容管理系统使用的访问控制机制，以及标准策略评估过程。 例如，当服务确定用户是否可以打印受策略保护的文档时，它可以使用标准策略评估过程。 此外，它还可以使用内容管理系统使用的访问控制机制。
 
-  虽然可以使用外部授权处理程序完全替换Document Security策略评估流程，但建议您在策略评估流程中使用外部授权处理程序。 因此，可以使用与内容管理系统相同的控制机制来控制文档访问。 例如，当Document Security服务确定用户是否可以打印受策略保护的文档时，它使用标准策略评估流程。 它还使用内容管理系统使用的访问控制机制。 有关详细信息，请参阅[创建外部授权处理程序](https://help.adobe.com/zh_CN/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)。
+  虽然可以使用外部授权处理程序完全替换Document Security策略评估流程，但建议您在策略评估流程中使用外部授权处理程序。 因此，可以使用与内容管理系统相同的控制机制来控制文档访问。 例如，当Document Security服务确定用户是否可以打印受策略保护的文档时，它使用标准策略评估流程。 它还使用内容管理系统使用的访问控制机制。 有关详细信息，请参阅[创建外部授权处理程序](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)。
 
 * **将策略集保留为有限数：**&#x200B;有几个因素会导致策略和策略集不断增长。 一些常见因素包括：
 
-   * 在一段时间内增加组织内的用户角色、部门和文档。
-   * 组织内各部门单独工作，严格控制部门政策。 它会导致组织内出现相同的策略。
+  * 在一段时间内增加组织内的用户角色、部门和文档。
+  * 组织内各部门单独工作，严格控制部门政策。 它会导致组织内出现相同的策略。
 
   Adobe建议将策略和策略集的数量保持为最小。 它有助于轻松管理策略和策略集并提供更好的性能。 要使数字保持最小，请执行以下操作：
 
-   * 创建可重用策略。 这些策略可以在多个部门之间共享。
-   * 如果某些策略适用于多个部门而不是每个部门的单个策略集，请考虑创建组织范围的策略集。
-   * 策略集中与组相关的策略。 不要为每个策略创建单独的策略集。
-   * 使用外部授权程序动态控制用户权限。
+  * 创建可重用策略。 这些策略可以在多个部门之间共享。
+  * 如果某些策略适用于多个部门而不是每个部门的单个策略集，请考虑创建组织范围的策略集。
+  * 策略集中与组相关的策略。 不要为每个策略创建单独的策略集。
+  * 使用外部授权程序动态控制用户权限。
 
   >[!NOTE]
   >
-  >您可以使用[getAllPolicysetnames()](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API检索最多1000个策略集名称。 在内部，API最多可检索1000个策略，而API调用器对这些策略具有文档发布者权限，然后可创建一组与检索到的策略关联的唯一策略集名称，并将其返回给您。 例如，当API检索1000个策略并且检索到的策略与总共200个策略集关联时，API仅返回200个策略集名称。
+  >您可以使用[getAllPolicysetnames()](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/programlc/javadoc/com/adobe/livecycle/rightsmanagement/client/PolicyManager.html) API检索最多1000个策略集名称。 在内部，API最多可检索1000个策略，而API调用器对这些策略具有文档发布者权限，然后可创建一组与检索到的策略关联的唯一策略集名称，并将其返回给您。 例如，当API检索1000个策略并且检索到的策略与总共200个策略集关联时，API仅返回200个策略集名称。

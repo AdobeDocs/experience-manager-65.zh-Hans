@@ -9,9 +9,9 @@ exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1189'
 ht-degree: 5%
 ---
 # 基本处理{#basic-handling}
@@ -139,7 +139,7 @@ ht-degree: 5%
 >范围：
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->有关更多详细信息，请参阅CQ小组件API中的[SiteAdmin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin)。
+>有关更多详细信息，请参阅CQ小组件API中的[SiteAdmin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin)。
 
 ## 网站控制台上的页面信息 {#page-information-on-the-websites-console}
 

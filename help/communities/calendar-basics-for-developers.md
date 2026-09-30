@@ -1,6 +1,6 @@
 ---
 title: 日历要点
-description: 了解如何使用Experience Manager社区中的日历功能。 日历支持识别拥有权限的成员用户组。
+description: 了解如何在Experience Manager Communities中使用日历功能。 日历支持识别拥有权限的成员用户组。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,13 +9,11 @@ exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '204'
+source-wordcount: '244'
 ht-degree: 2%
-
 ---
-
 # 日历要点 {#calendar-essentials}
 
 本页提供有关使用日历功能的基本信息。
@@ -56,9 +54,9 @@ ht-degree: 2%
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [日历API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
+* [日历API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/calendar/client/api/package-summary.html)
 
-* [日历端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
+* [日历端点](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/calendar/client/endpoints/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 

@@ -10,16 +10,14 @@ exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 2%
-
+source-wordcount: '475'
+ht-degree: 1%
 ---
-
 # 博客要点 {#blog-essentials}
 
-截至AEM 6.1 Communities，博客是一种社区活动。 博客文章现在从发布环境发布，以前，只能在创作环境中创建并发布博客文章。
+从AEM 6.1 Communities开始，博客属于社区活动。 博客文章现在从发布环境发布，以前，只能在创作环境中创建并发布博客文章。
 
 博客文章现在可由任何社区成员创建，除非限制为拥有权限的成员。
 
@@ -78,9 +76,9 @@ ht-degree: 2%
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [博客API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [博客API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [博客端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [博客端点](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [服务器端自定义](/help/communities/server-customize.md)
 
@@ -114,9 +112,9 @@ UGC应使用标准审核方法之一进行审核。
 
 AEM平台会阻止其他网站的链接，以防止XSS攻击，如中所述
 
-* [Protect抵御跨站点脚本(XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [防止跨站点脚本(XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-从AEM 6.2开始，以前需要手动进行的修改包含在默认的AntiSamy配置文件中。
+从AEM 6.2开始，之前需要手动进行的修改包含在默认的AntiSamy配置文件中。
 
 通过选择`Embed Media from External Sites`图标，可在博客文章中嵌入富媒体：
 

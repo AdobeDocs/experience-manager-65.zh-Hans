@@ -9,13 +9,11 @@ exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '520'
 ht-degree: 4%
-
 ---
-
 # OWASP 十大安全风险{#owasp-top}
 
 [开放Web应用程序安全项目](https://owasp.org/) (OWASP)维护一个列表，其中列出了他们认为的[十大Web应用程序安全风险](https://owasp.org/www-project-top-ten/)。
@@ -62,7 +60,7 @@ AEM使用可靠的身份验证技术，依赖于[Apache Jackrabbit](https://jack
 
 ## &#x200B;8. 限制URL访问失败 {#failure-to-restrict-url-access}
 
-存储库允许通过访问控制条目为任何给定路径上的任何给定用户或组设置[细粒度权限（由JCR指定）](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html)。 存储库强制执行访问限制。
+存储库允许通过访问控制条目为任何给定路径上的任何给定用户或组设置[细粒度权限（由JCR指定）](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/16_Access_Control_Management.html)。 存储库强制执行访问限制。
 
 ## &#x200B;9. 传输层保护不足 {#insufficient-transport-layer-protection}
 

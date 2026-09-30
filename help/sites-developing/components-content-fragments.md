@@ -1,6 +1,6 @@
 ---
-title: 内容片段的组件
-description: Adobe Experience Manager (AEM)内容片段作为独立于页面的资源而创建和管理
+title: 内容片段组件
+description: Adobe Experience Manager (AEM)内容片段作为独立于页面的资产而创建和管理
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
@@ -11,14 +11,12 @@ exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Content Fragments
 role: Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1004'
+ht-degree: 5%
 ---
-
-# 内容片段的组件{#components-for-content-fragments}
+# 内容片段组件{#components-for-content-fragments}
 
 ## 用于片段创作的组件 {#components-for-fragment-authoring}
 
@@ -28,11 +26,11 @@ ht-degree: 0%
 
 查看[内容片段管理API — 客户端](/help/sites-developing/customizing-content-fragments.md#the-content-fragment-management-api-client-side)。
 
-## 用于页面创作的组件 {#components-for-page-authoring}
+## 页面创作组件 {#components-for-page-authoring}
 
 >[!CAUTION]
 >
->现在建议使用[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)。 有关详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)。
+>现在建议使用[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)。 有关详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)。
 >
 >此部分详细介绍为与内容片段（**常规**&#x200B;组中的&#x200B;**内容片段**）一起使用而交付的原始组件。
 
@@ -40,7 +38,7 @@ ht-degree: 0%
 >
 >另请参阅[内容片段配置用于渲染的组件](/help/sites-developing/content-fragments-config-components-rendering.md)以了解更多信息。
 
-Adobe Experience Manager (AEM)内容片段是[作为独立于页面的资源创建和管理的](/help/assets/content-fragments/content-fragments.md)。 它们允许您创建渠道中性内容，以及各种（特定于渠道的）变体。 [然后，您可以在创作内容页面时使用这些片段及其变体](/help/sites-authoring/content-fragments.md)。 您也可以[将现有内容片段资产从资产浏览器拖到页面](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)上（对于其他基于资产的组件，例如基础组件图像），从而使用现有内容片段资产。 现成的内容片段组件仅显示引用的内容片段的一个[元素](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。 使用组件对话框，您可以定义要在页面上显示的[元素、变体和片段段落范围](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。
+Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创建和管理](/help/assets/content-fragments/content-fragments.md)。 它们允许您创建渠道中性内容，以及各种（特定于渠道的）变体。 [然后，您可以在创作内容页面时使用这些片段及其变体](/help/sites-authoring/content-fragments.md)。 您也可以[将现有内容片段资产从资产浏览器拖到页面](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)上（对于其他基于资产的组件，例如基础组件图像），从而使用现有内容片段资产。 现成的内容片段组件仅显示引用的内容片段的一个[元素](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。 使用组件对话框，您可以定义要在页面上显示的[元素、变体和片段段落范围](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。
 
 >[!NOTE]
 >
@@ -81,21 +79,21 @@ Adobe Experience Manager (AEM)内容片段是[作为独立于页面的资源创�
 * 由三个段落组成的内容片段的实例
 * 第二段之后已经插入了一些内容
 
-   * 这意味着内容存储在第二个parsys中。
+  * 这意味着内容存储在第二个parsys中。
 
 基本上，如果此实例的段落结构发生更改（通过更改显示的变体、元素或段落范围），它可能会影响在内容片段内容时显示的中间内容：
 
 * 编辑，并在第二段之前添加另一段：
 
-   * 中间内容在新创建的段落之后显示（第二个parsys现在保存新创建的段落）。
+  * 中间内容在新创建的段落之后显示（第二个parsys现在保存新创建的段落）。
 
 * 将编辑并删除第二段：
 
-   * 中间内容显示在之前是第三段的段落之后（第二个parsys现在包含前三个段落）。
+  * 中间内容显示在之前是第三段的段落之后（第二个parsys现在包含前三个段落）。
 
 * 进行了配置，以便仅显示第一段：
 
-   * 不显示中间内容（由于新配置，第二个Parsys不再呈现）。
+  * 不显示中间内容（由于新配置，第二个Parsys不再呈现）。
 
 ### 自定义内容片段组件 {#customizing-the-content-fragment-component}
 
@@ -104,9 +102,9 @@ Adobe Experience Manager (AEM)内容片段是[作为独立于页面的资源创�
 * 重用HTL渲染脚本及其关联的POJO，以便查看中间内容功能的实施方式。
 * 重用内容片段节点： `cq:editConfig`
 
-   * `afterinsert`/`afteredit`/`afterdelete`侦听器用于触发JS事件。 这些事件在`cq.authoring.editor.plugin.cfm`客户端库中进行处理，以便在侧面板中显示关联的内容。
-   * `cq:dropTargets`配置为支持拖动内容片段资产。
-   * `cq:inplaceEditing`配置为支持在页面编辑器中创作内容片段。 片段就地编辑器在`cq.authoring.editor.plugin.cfm`客户端库中定义，允许快速链接在[片段编辑器](/help/assets/content-fragments/content-fragments-variations.md)中打开当前[元素/变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。
+  * `afterinsert`/`afteredit`/`afterdelete`侦听器用于触发JS事件。 这些事件在`cq.authoring.editor.plugin.cfm`客户端库中进行处理，以便在侧面板中显示关联的内容。
+  * `cq:dropTargets`配置为支持拖动内容片段资产。
+  * `cq:inplaceEditing`配置为支持在页面编辑器中创作内容片段。 片段就地编辑器在`cq.authoring.editor.plugin.cfm`客户端库中定义，允许快速链接在[片段编辑器](/help/assets/content-fragments/content-fragments-variations.md)中打开当前[元素/变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)。
 
 ### 呈现前资源重写 {#asset-rewriting-before-rendering}
 
@@ -131,4 +129,4 @@ Adobe Experience Manager (AEM)内容片段是[作为独立于页面的资源创�
 * `transformer-cfm-parfilter` — 如果指定了段落范围，则过滤掉不需要的段落（对内容片段组件可以这样做）
 * `transformer-cfm-assetprocessor` — 在内部用于检索嵌入到片段中的资源列表
 
-呈现过程通过[`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)公开，如有必要，自定义组件可以使用（例如）。
+呈现过程通过[`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html)公开，如有必要，自定义组件可以使用（例如）。

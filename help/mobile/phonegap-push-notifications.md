@@ -9,13 +9,11 @@ exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '3248'
+source-wordcount: '3252'
 ht-degree: 1%
-
 ---
-
 # 推送通知{#push-notifications}
 
 {{ue-over-mobile}}
@@ -212,7 +210,7 @@ AEM配置为使用下列三种推送通知服务之一：
 * /content/`<your app>`/shell/jcr:content/pge-app/app-config/notificationsConfig
 
 使用以下属性（.content.xml文件）：
-&lt;jcr:root xmlns:jcr=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot;
+&lt;jcr:root xmlns:jcr=&quot; [https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/1.0/index.html)&quot;
 jcr:primaryType=&quot;nt:unstructured&quot;
 excludeProperties=&quot;[appAPIAccessToken]&quot;
 path=&quot;。./../../...&quot;

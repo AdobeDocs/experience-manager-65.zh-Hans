@@ -9,13 +9,11 @@ exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '240'
-ht-degree: 2%
-
+source-wordcount: '279'
+ht-degree: 3%
 ---
-
 # Tag Essentials {#tag-essentials}
 
 在启用“标记”的情况下配置AEM Communities组件后，社区成员将能够标记他们在发布环境中发布的内容。
@@ -73,9 +71,9 @@ ht-degree: 2%
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [社交标签云API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [社交标记云API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [社交标签管理器](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [社交标签管理器](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 

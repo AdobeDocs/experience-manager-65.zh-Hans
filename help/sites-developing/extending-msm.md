@@ -10,13 +10,11 @@ exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2661'
-ht-degree: 54%
-
+source-wordcount: '2718'
+ht-degree: 50%
 ---
-
 # 扩展多网站管理器{#extending-the-multi-site-manager}
 
 此页面可帮助您扩展多站点管理器的功能：
@@ -32,8 +30,8 @@ ht-degree: 54%
 >此页面应与[重用内容：多站点管理器](/help/sites-administering/msm.md)一起阅读。
 >
 >以下网站存储库重组部分也可能对您有帮助：
->* [多站点管理器Blueprint配置](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=zh-Hans#multi-site-manager-blueprint-configurations)
->* [多站点管理器转出配置](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html?lang=zh-Hans#multi-site-manager-rollout-configurations)
+>* [多站点管理器Blueprint配置](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
+>* [多站点管理器转出配置](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
 >[!CAUTION]
 >
@@ -43,8 +41,8 @@ ht-degree: 54%
 
 多站点管理由以下软件包组成：
 
-* [com.day.cq.wcm.msm.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
-* [com.day.cq.wcm.msm.commons](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
+* [com.day.cq.wcm.msm.api](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
+* [com.day.cq.wcm.msm.commons](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
 主MSM API对象按以下方式交互（另请参阅[使用的术语](/help/sites-administering/msm.md#terms-used)）：
 
@@ -56,28 +54,28 @@ ht-degree: 54%
 
   ![Blueprint](assets/chlimage_1-74.png)
 
-   * 使用 Blueprint 配置 (`Blueprint`) 是可选的，但是：
+  * 使用 Blueprint 配置 (`Blueprint`) 是可选的，但是：
 
-      * 允许作者在源上使用&#x200B;**转出**&#x200B;选项(以（显式）将修改推送到从此源继承的活动副本)。
-      * 允许作者使用&#x200B;**创建站点**；这允许用户轻松选择语言并配置Live Copy的结构。
-      * 为任何生成的活动副本定义默认转出配置。
+    * 允许作者在源上使用&#x200B;**转出**&#x200B;选项(以（显式）将修改推送到从此源继承的活动副本)。
+    * 允许作者使用&#x200B;**创建站点**；这允许用户轻松选择语言并配置Live Copy的结构。
+    * 为任何生成的活动副本定义默认转出配置。
 
 * **`LiveRelationship`**
 
   `LiveRelationship`指定Live Copy分支中的资源与其等效的源/Blueprint资源之间的连接（关系）。
 
-   * 这些关系会在实现继承和转出时使用。
-   * `LiveRelationship` 对象提供对与关系相关的转出配置 (`RolloutConfig`), `LiveCopy`, 和 `LiveStatus` 对象的访问（引用）。
+  * 这些关系会在实现继承和转出时使用。
+  * `LiveRelationship` 对象提供对与关系相关的转出配置 (`RolloutConfig`), `LiveCopy`, 和 `LiveStatus` 对象的访问（引用）。
 
-   * 例如，Live Copy 会在 `/content/copy/us` 中从 `/content/we-retail/language-masters` 的源/Blueprint 进行创建。 资源 `/content/we.retail/language-masters/en/jcr:content` 和 `/content/copy/us/en/jcr:content` 建立关系。
+  * 例如，Live Copy 会在 `/content/copy/us` 中从 `/content/we-retail/language-masters` 的源/Blueprint 进行创建。 资源 `/content/we.retail/language-masters/en/jcr:content` 和 `/content/copy/us/en/jcr:content` 建立关系。
 
 * **`LiveCopy`**
 
   `LiveCopy`包含Live Copy资源及其源/Blueprint资源之间关系(`LiveRelationship`)的配置详细信息。
 
-   * 使用 `LiveCopy` 类来访问页面路径、源/Blueprint 页面的路径、转出配置以及 `LiveCopy` 中是否也包含子页面。
+  * 使用 `LiveCopy` 类来访问页面路径、源/Blueprint 页面的路径、转出配置以及 `LiveCopy` 中是否也包含子页面。
 
-   * 每次使用&#x200B;**创建站点**&#x200B;或&#x200B;**创建 Live Copy** 时，都会创建一个 `LiveCopy` 节点。
+  * 每次使用&#x200B;**创建站点**&#x200B;或&#x200B;**创建 Live Copy** 时，都会创建一个 `LiveCopy` 节点。
 
 * **`LiveStatus`**
 
@@ -87,7 +85,7 @@ ht-degree: 54%
 
   `LiveAction`是对转出中涉及的每个资源执行的操作。
 
-   * LiveActions仅由RolloutConfigs生成。
+  * LiveActions仅由RolloutConfigs生成。
 
 * **`LiveActionFactory`**
 
@@ -97,29 +95,29 @@ ht-degree: 54%
 
   `RolloutConfig`包含一个`LiveActions`的列表，将在触发时使用。 `LiveCopy` 继承了 `RolloutConfig`，而结果则显示在 `LiveRelationship` 中。
 
-   * 首次设置Live Copy时也会使用RolloutConfig（触发LiveActions）。
+  * 首次设置Live Copy时也会使用RolloutConfig（触发LiveActions）。
 
 ## 创建新的同步操作 {#creating-a-new-synchronization-action}
 
 创建要用于转出配置的自定义同步操作。 当[安装的操作](/help/sites-administering/msm-sync.md#installed-synchronization-actions)不符合您的特定应用程序要求时，创建同步操作。 为此，请创建两个类：
 
-* 执行操作的 [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 接口的实施。
-* 实现[`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html)接口并创建`LiveAction`类实例的OSGI组件。
+* 执行操作的 [`com.day.cq.wcm.msm.api.LiveAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) 接口的实施。
+* 实现[`com.day.cq.wcm.msm.api.LiveActionFactory`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html)接口并创建`LiveAction`类实例的OSGI组件。
 
 `LiveActionFactory` 为给定配置创建 `LiveAction` 类的实例：
 
 * `LiveAction` 类包括以下方法：
 
-   * `getName`：返回操作的名称。 名称用于引用操作，例如在转出配置中。
-   * `execute`：执行操作的任务。
+  * `getName`：返回操作的名称。 名称用于引用操作，例如在转出配置中。
+  * `execute`：执行操作的任务。
 
 * `LiveActionFactory` 类包括以下成员：
 
-   * `LIVE_ACTION_NAME`：包含关联`LiveAction`的名称的字段。 此名称必须与 `LiveAction` 类的 `getName` 方法返回的值一致。
+  * `LIVE_ACTION_NAME`：包含关联`LiveAction`的名称的字段。 此名称必须与 `LiveAction` 类的 `getName` 方法返回的值一致。
 
-   * `createAction`：创建`LiveAction`的实例。 可选的 `Resource` 参数可用于提供配置信息。
+  * `createAction`：创建`LiveAction`的实例。 可选的 `Resource` 参数可用于提供配置信息。
 
-   * `createsAction`：返回关联`LiveAction`的名称。
+  * `createsAction`：返回关联`LiveAction`的名称。
 
 ### 访问 LiveAction 配置节点 {#accessing-the-liveaction-configuration-node}
 
@@ -127,7 +125,7 @@ ht-degree: 54%
 
 例如，`LiveAction` 需要存储 Blueprint 作者的姓名。 配置节点的属性包括存储该信息的 Blueprint 页面的属性名称。 在运行时，`LiveAction` 会从配置中检索属性名称，然后获取属性值。
 
-[`LiveActionFactory.createAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 方法的参数是一个 `Resource` 对象。 此`Resource`对象表示转出配置中此实时操作的`cq:LiveSyncAction`节点；请参阅[创建转出配置](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)。 像往常一样，当使用配置节点时，您应该将其调整为 `ValueMap` 对象：
+[`LiveActionFactory.createAction`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) 方法的参数是一个 `Resource` 对象。 此`Resource`对象表示转出配置中此实时操作的`cq:LiveSyncAction`节点；请参阅[创建转出配置](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)。 像往常一样，当使用配置节点时，您应该将其调整为 `ValueMap` 对象：
 
 ```java
 public LiveAction createAction(Resource resource) throws WCMException {
@@ -145,9 +143,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 以下对象作为 `LiveAction` 对象的 `execute` 方法的参数提供：
 
-* 表示Live Copy源的[`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html)对象。
+* 表示Live Copy源的[`Resource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/api/resource/Resource.html)对象。
 * 表示Live Copy目标的`Resource`对象。
-* live copy的[`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html)对象。
+* live copy的[`LiveRelationship`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html)对象。
 * `autoSave`值指示您的`LiveAction`是否应保存对存储库所做的更改。
 
 * 重置值表示转出重置模式。
@@ -164,7 +162,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->`Resource` 参数可能是不适应 `Node` 对象的 `null` 或 `Resources` 对象，如 [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 对象。
+>`Resource` 参数可能是不适应 `Node` 对象的 `null` 或 `Resources` 对象，如 [`NonExistingResource`](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) 对象。
 
 ## 创建新的转出配置 {#creating-a-new-rollout-configuration}
 
@@ -207,19 +205,19 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
    * **类型**：`cq:RolloutConfig`
 
 1. 向该节点添加以下属性：
-   * **名称**：`jcr:title`
-     **类型**：`String`
+   * **名称**： `jcr:title`
+     **类型**： `String`
      **值**：将显示在UI中的标识标题。
-   * **名称**：`jcr:description`
-     **类型**：`String`
+   * **名称**： `jcr:description`
+     **类型**： `String`
      **值**：可选描述。
-   * **名称**：`cq:trigger`
-     **类型**：`String`
+   * **名称**： `cq:trigger`
+     **类型**： `String`
      **值**：要使用的[转出触发器](/help/sites-administering/msm-sync.md#rollout-triggers)。 选择自：
-      * `rollout`
-      * `modification`
-      * `publish`
-      * `deactivate`
+     * `rollout`
+     * `modification`
+     * `publish`
+     * `deactivate`
 
 1. 单击&#x200B;**全部保存**。
 
@@ -237,7 +235,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 1. **创建**&#x200B;具有以下节点属性的节点：
 
    * **名称**：同步操作的节点名称。
-该名称必须与[同步操作](/help/sites-administering/msm-sync.md#installed-synchronization-actions)下的表中的&#x200B;**操作名称**&#x200B;相同，例如，`contentCopy`或`workflow`。
+     该名称必须与[同步操作](/help/sites-administering/msm-sync.md#installed-synchronization-actions)下的表中的&#x200B;**操作名称**&#x200B;相同，例如，`contentCopy`或`workflow`。
    * **类型**：`cq:LiveSyncAction`
 
 1. 根据需要添加和配置任意数量的同步操作节点。 重新排列操作节点，使其顺序与您希望它们发生的顺序相一致。 最顶层的操作节点首先出现。
@@ -548,7 +546,7 @@ GITHUB上的代码
 
 使用您创建的 `LiveActionFactory` 创建 MSM 转出配置：
 
-1. 使用标准过程[&#128279;](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)创建和配置转出配置 — 并使用属性：
+1. 使用标准过程](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration)创建和配置[转出配置 — 并使用属性：
 
    * **标题**：转出配置示例
    * **名称**：examplerolloutconfig
@@ -659,11 +657,11 @@ MSM 使用存储的语言和国家/地区代码列表来确定与页面语言版
 
 * 联系电子邮件:
 
-   * 此属性不需要推出，因为每个国家/地区（或品牌等）中的此属性将有所不同。
+  * 此属性不需要推出，因为每个国家/地区（或品牌等）中的此属性将有所不同。
 
 * 主要视觉风格：
 
-   * 项目要求是推出此属性，因为此属性（通常）对所有国家/地区（或品牌等）通用。
+  * 项目要求是推出此属性，因为此属性（通常）对所有国家/地区（或品牌等）通用。
 
 那么您需要确保：
 
@@ -679,28 +677,28 @@ MSM 使用存储的语言和国家/地区代码列表来确定与页面语言版
 
 * `cq-msm-lockable`
 
-   * 适用于触屏UI对话框中的项目
-   * 将在对话框中创建链链接符号
-   * 仅当取消继承（链链接已断开）时才允许编辑
-   * 仅适用于资源的第一个子级别
-      * **类型**：`String`
+  * 适用于触屏UI对话框中的项目
+  * 将在对话框中创建链链接符号
+  * 仅当取消继承（链链接已断开）时才允许编辑
+  * 仅适用于资源的第一个子级别
+    * **类型**：`String`
 
-      * **值**：包含正在考虑的属性的名称(可与属性`name`的值比较；例如，请参阅
-        `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+    * **值**：包含正在考虑的属性的名称(可与属性`name`的值比较；例如，请参阅
+      `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 当定义了 `cq-msm-lockable` 时，断开/闭合链的操作会通过以下方式与 MSM 相互作用：
 
 * 如果`cq-msm-lockable`的值为：
 
-   * **相对**（例如，`myProperty` 或 `./myProperty`）
+  * **相对**（例如，`myProperty` 或 `./myProperty`）
 
-      * 它将从`cq:propertyInheritanceCancelled`添加和删除属性。
+    * 它将从`cq:propertyInheritanceCancelled`添加和删除属性。
 
-   * **绝对**（例如，`/image`）
+  * **绝对**（例如，`/image`）
 
-      * 通过将`cq:LiveSyncCancelled` mixin添加到`./image`并将`cq:isCancelledForChildren`设置为`true`，中断链将取消继承。
+    * 通过将`cq:LiveSyncCancelled` mixin添加到`./image`并将`cq:isCancelledForChildren`设置为`true`，中断链将取消继承。
 
-      * 关闭链将恢复继承。
+    * 关闭链将恢复继承。
 
 >[!NOTE]
 >

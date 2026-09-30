@@ -1,5 +1,5 @@
 ---
-title: 将URL外部化
+title: 外部化 URL
 description: 外部化器是一种OSGI服务，它允许您以编程方式将资源路径转换为外部和绝对URL
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,18 @@ exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
-
+source-wordcount: '504'
+ht-degree: 2%
 ---
-
-# 将URL外部化{#externalizing-urls}
+# 外部化 URL{#externalizing-urls}
 
 在Adobe Experience Manager (AEM)中，**外部化器**&#x200B;是一个OSGI服务，它允许您通过为路径添加预配置的DNS作为前缀，以编程方式将资源路径（例如`/path/to/my/page`）转换为外部和绝对URL（例如`https://www.mycompany.com/path/to/my/page`）。
 
 由于如果实例在Web层后面运行，则它无法知道自己的外部可见URL，并且有时必须在请求范围之外创建链接，因此，此服务提供了一个中心位置来配置这些外部URL并构建它们。
 
-本页介绍如何配置&#x200B;**Externalizer**&#x200B;服务及其使用方法。 有关详细信息，请参阅[Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html)。
+本页介绍如何配置&#x200B;**Externalizer**&#x200B;服务及其使用方法。 有关详细信息，请参阅[Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/Externalizer.html)。
 
 ## 配置Externalizer服务 {#configuring-the-externalizer-service}
 
@@ -51,12 +49,12 @@ ht-degree: 0%
 
    * **方案**&#x200B;是http或https，但也可以是ftp等。
 
-      * 如果需要，可使用https强制执行https链接
-      * 如果客户端代码在请求URL外部化时未覆盖方案，则使用此选项。
+     * 如果需要，可使用https强制执行https链接
+     * 如果客户端代码在请求URL外部化时未覆盖方案，则使用此选项。
 
    * **server**&#x200B;是主机名（可以是域名或ip地址）。
    * **端口** （可选）是端口号。
-   * 仅当AEM作为Web应用程序安装在不同的上下文路径下时，才会设置&#x200B;**contextpath**（可选）。
+   * 仅当AEM作为Web应用程序安装在其他上下文路径下时，才会设置&#x200B;**contextpath**（可选）。
 
    例如：`production https://my.production.instance`
 
@@ -128,4 +126,4 @@ ht-degree: 0%
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. 您可以在[Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html)中找到更多示例。
+1. 您可以在[Javadocs](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/Externalizer.html)中找到更多示例。

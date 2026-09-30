@@ -9,13 +9,11 @@ exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '225'
+source-wordcount: '267'
 ht-degree: 2%
-
 ---
-
 # 社交图要点  {#social-graph-essentials}
 
 社区成员关注[活动](essentials-activities.md)且被关注的能力是通过两个组件建立的：
@@ -60,7 +58,7 @@ ht-degree: 2%
     <ul>
      <li>名称: <strong><code>outgoing</code></strong></li>
      <li>类型：布尔值</li>
-     <li>值： <br />
+     <li>值：<br />
       <ul>
        <li><i>True </i>- <code>following</code>组件列出了登录成员 <code>follows</code></li>
        <li><i>False </i>- <code>following</code>组件列出了<code>follow </code>登录成员的成员</li>
@@ -82,8 +80,8 @@ ht-degree: 2%
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [社交图API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [社交图API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [社交图端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [社交图端点](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [服务器端自定义](server-customize.md)

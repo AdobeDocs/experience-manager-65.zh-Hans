@@ -9,13 +9,11 @@ exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2739'
 ht-degree: 1%
-
 ---
-
 # 参与 AEM 贡献{#contributing-to-aem}
 
 ## 开发方法论 {#development-methodology}
@@ -44,7 +42,7 @@ AEM的开发遵循大型开源项目中普遍采用的行之有效的方法体�
 * 浏览器Cookie
 * 和其他现代Web开发概念
 
-Adobe Experience Manager的技术栈栈基于[Apache Felix](https://felix.apache.org/documentation/index.html) OSGI容器和[Apache Sling](https://sling.apache.org/index.html) Web框架，并嵌入基于[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html)的Java™内容存储库([JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html))。 请熟悉您打算投稿的区域中使用的这些单独项目以及任何其他开源组件（例如Apache Lucene）。
+Adobe Experience Manager的技术栈栈基于[Apache Felix](https://felix.apache.org/documentation/index.html) OSGI容器和[Apache Sling](https://sling.apache.org/index.html) Web框架，并嵌入基于[Apache Jackrabbit](https://jackrabbit.apache.org/jcr/jcr-api.html)的Java™内容存储库([JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html))。 请熟悉您打算投稿的区域中使用的这些单独项目以及任何其他开源组件（例如Apache Lucene）。
 
 ## 部落知识 {#tribal-knowledge}
 

@@ -9,13 +9,11 @@ exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
-
+source-wordcount: '321'
+ht-degree: 0%
 ---
-
 # Voting Essentials {#voting-essentials}
 
 投票组件（[tally](tally.md)子类）是一种有用的工具，它允许成员通过简单地选择上箭头或下箭头来表示其意见来对特定内容进行评级。
@@ -59,9 +57,9 @@ ht-degree: 1%
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [计费API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [标签API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [计数的端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [标签端点](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 

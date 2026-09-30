@@ -1,5 +1,5 @@
 ---
-title: 记录自定义实施的交易
+title: 记录自定义实施的事务
 description: 使用TransactionRecorder API自动记录未作为事务入帐的操作。
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,25 +8,23 @@ feature: Transaction Reports
 exl-id: b0c4f72a-e65f-453a-af66-5d9f98a9d6df
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: acb023caf0a7e64fea9cf5d9198d672ee14c8d88
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '237'
-ht-degree: 9%
-
+source-wordcount: '286'
+ht-degree: 7%
 ---
-
 # 在OSGi上记录AEM Forms的自定义实施交易 {#record-a-transaction-for-custom-implementations}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/using-communications/record-transaction-custom-implementation) |
 | AEM 6.5 | 本文 |
 
 使用TransactionRecorder API自动记录未作为事务入帐的操作
 
-您可以使用自定义代码提交PDF表单，或将代理UI预览URL发送给最终用户以预览交互式通信。 或者，您也可以使用自定义方法提交表单，而不是使用AEM Forms提供的提交方法。 前面提到的AEM Forms API的所有操作和自定义实现都不会计为交易。 AEM Forms提供了一个API [TransactionRecorder](https://developer.adobe.com/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html)，以将此类操作记录为事务。
+您可以使用自定义代码提交PDF表单或向最终用户发送代理UI预览URL以预览交互式通信。 或者，您也可以使用自定义方法提交表单，而不是使用AEM Forms提供的提交方法。 前面提到的AEM Forms API的所有操作和自定义实现都不会计为交易。 AEM Forms提供了一个API [TransactionRecorder](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html)，以将此类操作记录为事务。
 
-要记录事务，请编写[标准sling servlet](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=zh-Hans)并从客户端调用servlet以记录事务。 您可以使用AJAX或任何其他标准方法调用servlet。
+要记录事务，请编写[标准sling servlet](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/store-and-retrieve-af-with-2fa/create-servlet.html?lang=en)并从客户端调用servlet以记录事务。 您可以使用AJAX或任何其他标准方法调用servlet。
 
 ## 服务器端代码示例 {#sample-server-sided-code}
 

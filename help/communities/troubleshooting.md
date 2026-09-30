@@ -9,13 +9,11 @@ exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '371'
 ht-degree: 0%
-
 ---
-
 # 社区疑难解答 {#troubleshooting}
 
 本节包含社区故障诊断时的常见问题和已知问题。
@@ -51,7 +49,7 @@ at org.apache.sling.scripting.core.impl.DefaultSlingScript.eval(DefaultSlingScri
 
 在“创作”和“发布”页面上，失败情况不同。 在创作时，它静默失败，只是不显示论坛主题。 发布时，会在页面上引发错误。
 
-有关详细信息，请参阅[com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API。
+有关详细信息，请参阅[com.day.cq.commons.date.RelativeTimeFormat](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API。
 
 ## 常见问题 {#common-concerns}
 

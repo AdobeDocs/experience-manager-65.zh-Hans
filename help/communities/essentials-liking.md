@@ -10,13 +10,11 @@ exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '327'
 ht-degree: 0%
-
 ---
-
 # 点赞Essentials {#liking-essentials}
 
 Liking组件（[总计](tally.md)子类）是一个有用的工具，它允许成员通过简单地选择心形图标来表达对特定内容的正面意见。
@@ -60,9 +58,9 @@ Liking组件（[总计](tally.md)子类）是一个有用的工具，它允许�
 
 ## 服务器端的Essentials {#essentials-for-server-side}
 
-* [标签API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [标签API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [标签端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [标签端点](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [服务器端自定义](server-customize.md)
 

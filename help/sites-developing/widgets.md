@@ -1,22 +1,24 @@
 ---
 title: 使用和扩展小组件（经典 UI）
+
 description: Adobe Experience Manager基于Web的界面使用AJAX和其他现代浏览器技术，支持作者在网页上对WYSIWYG内容进行编辑和格式化
+
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
+
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '5042'
+source-wordcount: '5049'
 ht-degree: 0%
-
 ---
-
 # 使用和扩展小组件（经典 UI）{#using-and-extending-widgets-classic-ui}
 
 >[!NOTE]
@@ -31,9 +33,9 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 这些构件包含在AEM中，除了AEM本身的使用之外，还可以由使用AEM构建的任何网站使用。
 
-有关AEM中所有可用小组件的完整参考，请参阅[小组件API文档](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)或现有xtypes[&#128279;](/help/sites-developing/xtypes.md)的列表。 此外，框架的所有者[Sencha](https://examples.sencha.com/extjs/7.6.0/)网站上提供了许多说明如何使用ExtJS框架的示例。
+有关AEM中所有可用小组件的完整参考，请参阅[小组件API文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)或现有xtypes](/help/sites-developing/xtypes.md)的[列表。 此外，框架的所有者[Sencha](https://examples.sencha.com/extjs/7.6.0/)网站上提供了许多说明如何使用ExtJS框架的示例。
 
-本页提供了有关如何使用和扩展构件的某些见解。 它首先介绍如何在页面[&#128279;](#including-the-client-sided-code-in-a-page)中包含客户端代码。 然后，它描述了一些已创建的示例组件，以说明一些基本用法和扩展。 这些组件在&#x200B;**包共享**&#x200B;上的&#x200B;**使用ExtJS小组件**&#x200B;包中可用。
+本页提供了有关如何使用和扩展构件的某些见解。 它首先介绍如何在页面](#including-the-client-sided-code-in-a-page)中[包含客户端代码。 然后，它描述了一些已创建的示例组件，以说明一些基本用法和扩展。 这些组件在&#x200B;**包共享**&#x200B;上的&#x200B;**使用ExtJS小组件**&#x200B;包中可用。
 
 此包中包含以下示例：
 
@@ -98,7 +100,7 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 * 要同时包含JavaScript代码和样式表，请执行以下操作：
   `<ui:includeClientLib categories="<category-name1>, <category-name2>, ..."/>`
-其中`<category-nameX>`是客户端库的名称。
+  其中`<category-nameX>`是客户端库的名称。
 
 * 要仅包含JavaScript代码，请执行以下操作：
   `<ui:includeClientLib js="<category-name>"/>`
@@ -118,8 +120,9 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 要遵循此页面上的教程，请在本地AEM实例中安装包&#x200B;**使用ExtJS小组件**，并创建一个包含组件的示例页面。 为此，请执行以下操作：
 
 1. 在AEM实例中，从包共享下载名为&#x200B;**使用ExtJS小组件(v01)**&#x200B;的包并安装该包。 它在存储库中创建位于`/apps`下的项目`extjstraining`。
-1. 将包含脚本(js)和样式表(css)的客户端库包含在Geometrixx页面jsp的head标记中。 您即将在&#x200B;**Geometrixx**&#x200B;分支的新页面中包含示例组件：
-在&#x200B;**CRXDE Lite**&#x200B;中，打开文件`/apps/geometrixx/components/page/headlibs.jsp`并将`cq.extjstraining`类别添加到现有`<ui:includeClientLib>`标记中，如下所示：   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
+1. 将包含脚本(js)和样式表(css)的客户端库包含在Geometrixx页面jsp的head标记中。 您即将在&#x200B;**Geometrixx**分支的新页面中包含示例组件：
+在**CRXDE Lite**&#x200B;中，打开文件`/apps/geometrixx/components/page/headlibs.jsp`并将`cq.extjstraining`类别添加到现有`<ui:includeClientLib>`标记中，如下所示：
+   `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. 在`/content/geometrixx/en/products`下方的&#x200B;**Geometrixx**&#x200B;分支中创建页面，并使用ExtJS小组件&#x200B;**将其称为**。
 1. 进入设计模式，并将名为&#x200B;**使用ExtJS小组件**&#x200B;的组的所有组件添加到Geometrixx的设计中
 1. 返回编辑模式：使用ExtJS小组件&#x200B;**的组**&#x200B;的组件在Sidekick中可用。
@@ -207,7 +210,7 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 要使用“多面板”对话框，请执行以下操作：
 
-1. 将&#x200B;**对话框基础知识**&#x200B;组件的对话框替换为&#x200B;**多面板**&#x200B;对话框：
+1. 将&#x200B;**对话框基础知识**&#x200B;组件的对话框替换为&#x200B;**多面板**对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -228,7 +231,7 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 要使用&#x200B;**Rich**&#x200B;对话框：
 
-1. 将&#x200B;**Dialog Basics**&#x200B;组件的对话框替换为&#x200B;**Rich**&#x200B;对话框：
+1. 将&#x200B;**Dialog Basics**&#x200B;组件的对话框替换为&#x200B;**Rich**对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -309,7 +312,8 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 该逻辑通过事件侦听器和JavaScript代码实现，如下所示：
 
-* `ownerdraw`小组件有一个“`loadcontent`”侦听器，用于显示有关包含该组件的页面的信息。 即，在加载内容时smartfile小组件所引用的资产：  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
+* `ownerdraw`小组件有一个“`loadcontent`”侦听器，用于显示有关包含该组件的页面的信息。 即，在加载内容时smartfile小组件所引用的资产：
+  `loadcontent="function(field,rec,path){Ejst.x2.showInfo(field,rec,path);}"`
   使用`ownerdraw`对象设置了`field`
   `path`设置为组件的内容路径（例如，`/content/geometrixx/en/products/triangle/ui-tutorial/jcr:content/par/dynamicdialogs`）
 * `Ejst.x2`对象在`exercises.js`文件中定义，位于：
@@ -323,7 +327,7 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 要使用&#x200B;**任意**&#x200B;对话框：
 
-1. 将&#x200B;**动态对话框**&#x200B;组件的对话框替换为&#x200B;**任意**&#x200B;对话框：
+1. 将&#x200B;**动态对话框**&#x200B;组件的对话框替换为&#x200B;**任意**对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -355,11 +359,11 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
   `panel`是包含所选内容和dialogfieldset小组件的面板；
   `fieldSet`是dialogfieldset对象；
   `show`是所选内容的值（true或false）；
-根据“`show`”，是否显示dialogfieldset
+  根据“`show`”，是否显示dialogfieldset
 
 要使用&#x200B;**切换字段**&#x200B;对话框，请执行以下操作：
 
-1. 将&#x200B;**动态对话框**&#x200B;组件的对话框替换为&#x200B;**切换字段**&#x200B;对话框：
+1. 将&#x200B;**动态对话框**&#x200B;组件的对话框替换为&#x200B;**切换字段**对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -376,7 +380,8 @@ AEM附带的现成小组件应该涵盖大多数用例。 但是，有时可能�
 自定义小部件和插件包含在名为&#x200B;**3的组件中。 使用ExtJS小组件**&#x200B;包的&#x200B;**的自定义小组件**。 要将此组件包含在示例页面中，请执行以下操作：
 
 1. 添加&#x200B;**3。 从** Sidekick **中的**&#x200B;使用ExtJS小组件&#x200B;**选项卡将自定义小组件**&#x200B;组件添加到示例页面。
-1. 组件显示标题、一些文本，单击&#x200B;**属性**&#x200B;链接时，段落的属性存储在存储库中。 再次单击将隐藏属性。该组件显示如下：
+1. 组件显示标题、一些文本，单击&#x200B;**属性**链接时，段落的属性存储在存储库中。 再次单击将隐藏属性。
+该组件显示如下：
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -390,9 +395,10 @@ AEM附带的现成小组件应该涵盖大多数用例。 但是，有时可能�
 * 显示一个包含面板（节点类型= `cq:Widget`，xtype = ` [panel](/help/sites-developing/xtypes.md#panel)`）的`tabpanel`构件（节点类型= `cq:Widget`，xtype = ` [tabpanel](/help/sites-developing/xtypes.md#tabpanel)`）。
 * 面板具有`multifield`小组件（节点类型= `cq:Widget`，xtype = ` [multifield](/help/sites-developing/xtypes.md#multifield)`）。
 * `multifield`构件具有基于自定义xtype“`ejstcustom`”的fieldconfig（节点类型= `nt:unstructured`，xtype = `ejstcustom`，optionsProvider = `Ejst.x3.provideOptions`）：
-   * “`fieldconfig`”是` [CQ.form.MultiField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.MultiField)`对象的配置选项。
-   * “`optionsProvider`”是`ejstcustom`小部件的配置。 它使用`exercises.js`中定义的`Ejst.x3.provideOptions`方法设置，位于：     `/apps/extjstraining/clientlib/js/exercises.js`
-并返回两个选项。
+  * “`fieldconfig`”是` [CQ.form.MultiField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.MultiField)`对象的配置选项。
+  * “`optionsProvider`”是`ejstcustom`小部件的配置。 它使用`exercises.js`中定义的`Ejst.x3.provideOptions`方法设置，位于：
+    `/apps/extjstraining/clientlib/js/exercises.js`
+    并返回两个选项。
 * 由位于以下位置的`multifield`节点定义：
   `/apps/extjstraining/components/customwidgets/multifield`
 * 通过请求以json格式呈现：
@@ -403,12 +409,12 @@ AEM附带的现成小组件应该涵盖大多数用例。 但是，有时可能�
 * 是名为`Ejst.CustomWidget`的JavaScript对象
 * 在`CustomWidget.js` JavaScript文件中定义：
   `/apps/extjstraining/clientlib/js/CustomWidget.js`
-* 扩展` [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)`小组件。
+* 扩展` [CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField)`小组件。
 * 有三个字段：`hiddenField` (Textfield)、`allowField` (ComboBox)和`otherField` (Textfield)
 * 覆盖`CQ.Ext.Component#initComponent`以添加三个字段：
-   * `allowField`是“select”类型的[CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection)对象。 optionsProvider是Selection对象的配置，通过对话框中定义的CustomWidget的optionsProvider配置实例化
-   * `otherField`是[CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)对象
-* 覆盖[CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField)的方法`setValue`、`getValue`和`getRawValue`以设置和检索具有以下格式的CustomWidget的值：
+  * `allowField`是“select”类型的[CQ.form.Selection](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.Selection)对象。 optionsProvider是Selection对象的配置，通过对话框中定义的CustomWidget的optionsProvider配置实例化
+  * `otherField`是[CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)对象
+* 覆盖[CQ.form.CompositeField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.CompositeField)的方法`setValue`、`getValue`和`getRawValue`以设置和检索具有以下格式的CustomWidget的值：
   `<allowField value>/<otherField value>, for example: 'Bla1/hello'`。
 * 将自身注册为“`ejstcustom`”xtype：
   `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
@@ -436,15 +442,15 @@ AEM附带的现成小组件应该涵盖大多数用例。 但是，有时可能�
 * 是名为`Ejst.CustomWidget`的JavaScript对象
 * 在`CustomBrowseField.js` JavaScript文件中定义：
   `/apps/extjstraining/clientlib/js/CustomBrowseField.js`
-* 扩展` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`。
+* 扩展` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)`。
 * 定义名为`browseWindow`的浏览窗口。
-* 覆盖` [CQ.Ext.form.TriggerField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick`以在单击箭头时显示浏览窗口。
-* 定义[CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)对象：
-   * 它通过调用在`/bin/wcm/siteadmin/tree.json`注册的servlet获取其数据。
-   * 其根为“ `apps/extjstraining`”。
-* 定义`window`对象(` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)：
-   * 基于预定义面板。
-   * 有一个&#x200B;**确定**&#x200B;按钮，用于设置所选路径的值并隐藏面板。
+* 覆盖` [CQ.Ext.form.TriggerField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TriggerField)#onTriggerClick`以在单击箭头时显示浏览窗口。
+* 定义[CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)对象：
+  * 它通过调用在`/bin/wcm/siteadmin/tree.json`注册的servlet获取其数据。
+  * 其根为“ `apps/extjstraining`”。
+* 定义`window`对象(` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)：
+  * 基于预定义面板。
+  * 有一个&#x200B;**确定**&#x200B;按钮，用于设置所选路径的值并隐藏面板。
 * 窗口固定在&#x200B;**路径**&#x200B;字段下。
 * 选定的路径在`show`事件中从浏览字段传递到窗口。
 * 将自身注册为“`ejstbrowse`”xtype：
@@ -452,7 +458,7 @@ AEM附带的现成小组件应该涵盖大多数用例。 但是，有时可能�
 
 要使用&#x200B;**自定义树状浏览**&#x200B;基于构件的对话框，请执行以下操作：
 
-1. 将&#x200B;**自定义小组件**&#x200B;组件的对话框替换为&#x200B;**自定义树浏览**&#x200B;对话框：
+1. 将&#x200B;**自定义小组件**&#x200B;组件的对话框替换为&#x200B;**自定义树浏览**对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -475,12 +481,12 @@ RTE插件：
 * 是名为`Ejst.InsertTextPlugin`的JavaScript对象
 * 在`InsertTextPlugin.js` JavaScript文件中定义：
   `/apps/extjstraining/clientlib/js/InsertTextPlugin.js`
-* 扩展` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`对象。
-* 以下方法定义了` [CQ.form.rte.plugins.Plugin](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`对象并在实现插件中被覆盖：
-   * `getFeatures()`返回插件使其可用的所有功能的数组。
-   * `initializeUI()`将新按钮添加到RTE工具栏。
-   * 当按钮悬停时，`notifyPluginConfig()`显示标题和文本。
-   * 单击按钮时调用`execute()`并执行插件操作：它显示一个用于定义要包含的文本的窗口。
+* 扩展` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`对象。
+* 以下方法定义了` [CQ.form.rte.plugins.Plugin](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)`对象并在实现插件中被覆盖：
+  * `getFeatures()`返回插件使其可用的所有功能的数组。
+  * `initializeUI()`将新按钮添加到RTE工具栏。
+  * 当按钮悬停时，`notifyPluginConfig()`显示标题和文本。
+  * 单击按钮时调用`execute()`并执行插件操作：它显示一个用于定义要包含的文本的窗口。
 * `insertText()`使用相应的对话框对象`Ejst.InsertTextPlugin.Dialog`插入文本（请参阅后续内容）。
 * `executeInsertText()`由对话框的`apply()`方法调用，该方法是在单击&#x200B;**确定**&#x200B;按钮时触发的。
 * 将自身注册为“`inserttext`”插件：
@@ -489,7 +495,7 @@ RTE插件：
 
 要使用基于&#x200B;**富文本编辑器(RTE)插件**&#x200B;的对话框：
 
-1. 将&#x200B;**自定义小组件**&#x200B;组件的对话框替换为基于&#x200B;**富文本编辑器(RTE)插件**&#x200B;的对话框：
+1. 将&#x200B;**自定义小组件**&#x200B;组件的对话框替换为基于&#x200B;**富文本编辑器(RTE)插件**的对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件。
 1. 单击右侧的最后一个图标（带有四个箭头的图标）。 输入路径并单击&#x200B;**确定**：
@@ -506,7 +512,7 @@ RTE插件：
 
 ### 树概述 {#tree-overview}
 
-开箱即用的` [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)`对象提供树状结构数据的树状结构UI表示形式。 **使用ExtJS小组件**&#x200B;包中包含的树概述组件显示了如何使用`TreePanel`对象在给定路径下显示JCR树。 窗口本身可以停靠/取消停靠。 在此示例中，窗口逻辑嵌入在&lt;script>&lt;/script>标记之间的组件jsp中。
+开箱即用的` [CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)`对象提供树状结构数据的树状结构UI表示形式。 **使用ExtJS小组件**&#x200B;包中包含的树概述组件显示了如何使用`TreePanel`对象在给定路径下显示JCR树。 窗口本身可以停靠/取消停靠。 在此示例中，窗口逻辑嵌入在&lt;script>&lt;/script>标记之间的组件jsp中。
 
 要将&#x200B;**树概述**&#x200B;组件包含到示例页面，请执行以下操作：
 
@@ -538,13 +544,13 @@ RTE插件：
 嵌入到组件jsp中的JavaScript代码：
 
 * 通过尝试从页面检索树窗口来定义`tree`对象。
-* 如果显示树的窗口不存在，则会创建`treePanel` ([CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel))：
-   * `treePanel`包含用于创建窗口的数据。
-   * 通过调用在以下位置注册的servlet来检索数据：
-     `/bin/wcm/siteadmin/tree.json`
+* 如果显示树的窗口不存在，则会创建`treePanel` ([CQ.Ext.tree.TreePanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel))：
+  * `treePanel`包含用于创建窗口的数据。
+  * 通过调用在以下位置注册的servlet来检索数据：
+    `/bin/wcm/siteadmin/tree.json`
 * `beforeload`侦听器确保加载了选定的节点。
 * `root`对象将路径`apps/extjstraining`设置为树根。
-* `tree` (` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)是基于预定义的`treePanel`设置的，显示为：
+* `tree` (` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`)是基于预定义的`treePanel`设置的，显示为：
   `tree.show();`
 * 如果存在该窗口，则会根据从存储库中检索到的宽度、高度和停靠属性显示该窗口。
 
@@ -615,21 +621,21 @@ RTE插件：
 
 * 通过尝试从页面检索窗口组件来定义`grid`对象：
   `var grid = CQ.Ext.getCmp("<%= node.getName() %>-grid");`
-* 如果`grid`不存在，则通过调用`getGridPanel()`方法定义[CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)对象(`gridPanel`)（请参阅下文）。 此方法在`defaultgrid.js`中定义。
-* `grid`是基于预定义的GridPanel的` [CQ.Ext.Window](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.Window)`对象，显示为： `grid.show();`
+* 如果`grid`不存在，则通过调用`getGridPanel()`方法定义[CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)对象(`gridPanel`)（请参阅下文）。 此方法在`defaultgrid.js`中定义。
+* `grid`是基于预定义的GridPanel的` [CQ.Ext.Window](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.Window)`对象，显示为： `grid.show();`
 * 如果存在`grid`，则根据从存储库检索到的宽度、高度和停靠属性显示它。
 
-组件jsp中引用的JavaScript文件(`defaultgrid.js`)定义了`getGridPanel()`方法，该方法由嵌入到JSP中的脚本调用，并基于静态数据返回` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象。 其逻辑如下：
+组件jsp中引用的JavaScript文件(`defaultgrid.js`)定义了`getGridPanel()`方法，该方法由嵌入到JSP中的脚本调用，并基于静态数据返回` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象。 其逻辑如下：
 
 * `myData`是格式化为包含五列四行的表的静态数据数组。
 * `store`是使用`myData`的`CQ.Ext.data.Store`对象。
 * `store`已加载到内存中：
   `store.load();`
-* `gridPanel`是使用`store`的` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象：
-   * 列宽始终按比例分配：
-     `forceFit: true`
-   * 一次只能选择一行：
-     `singleSelect:true`
+* `gridPanel`是使用`store`的` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象：
+  * 列宽始终按比例分配：
+    `forceFit: true`
+  * 一次只能选择一行：
+    `singleSelect:true`
 
 #### 示例2：引用搜索网格 {#example-reference-search-grid}
 
@@ -639,7 +645,7 @@ RTE插件：
 * 基于通过调用servlet从存储库检索的数据。
 * 可以编辑最后一列的单元格。 该值保留在由第一列中显示的路径定义的节点下方的`test`属性中。
 
-如前面一节中所述，窗口对象通过调用`/apps/extjstraining/components/gridoverview/defaultgrid.js`的`defaultgrid.js`文件中定义的`getGridPanel()`方法获取其` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象。 **Grid概述**&#x200B;组件为`getGridPanel()`方法提供了不同的实现，该方法在`/apps/extjstraining/components/gridoverview/referencesearch.js`的`referencesearch.js`文件中定义。 通过切换组件jsp中引用的.js文件，网格将基于从存储库检索的数据。
+如前面一节中所述，窗口对象通过调用`/apps/extjstraining/components/gridoverview/defaultgrid.js`的`defaultgrid.js`文件中定义的`getGridPanel()`方法获取其` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象。 **Grid概述**组件为`getGridPanel()`方法提供了不同的实现，该方法在`/apps/extjstraining/components/gridoverview/referencesearch.js`的`referencesearch.js`文件中定义。 通过切换组件jsp中引用的.js文件，网格将基于从存储库检索的数据。
 
 切换在组件jsp中引用的.js文件：
 
@@ -654,20 +660,22 @@ RTE插件：
 
 ![screen_shot_2012-02-01at121429pm](assets/screen_shot_2012-02-01at121429pm.png)
 
-组件jsp (`referencesearch.js`)中引用的JavaScript代码定义从组件jsp调用的`getGridPanel()`方法，并根据从存储库动态检索的数据返回` [CQ.Ext.grid.GridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象。 `referencesearch.js`中的逻辑将某些动态数据定义为GridPanel的基础：
+组件jsp (`referencesearch.js`)中引用的JavaScript代码定义从组件jsp调用的`getGridPanel()`方法，并根据从存储库动态检索的数据返回` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象。 `referencesearch.js`中的逻辑将某些动态数据定义为GridPanel的基础：
 
-* `reader`是一个` [CQ.Ext.data.JsonReader](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)`对象，它以json格式读取三列的servlet响应。
-* `cm`是三列的` [CQ.Ext.grid.ColumnModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)`对象。可以编辑“测试”列单元格，因为它们是使用编辑器定义的：  `editor: new [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
+* `reader`是一个` [CQ.Ext.data.JsonReader](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.JsonReader)`对象，它以json格式读取三列的servlet响应。
+* `cm`是三列的` [CQ.Ext.grid.ColumnModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.ColumnModel)`对象。
+可以编辑“测试”列单元格，因为它们是使用编辑器定义的：
+  `editor: new [CQ.Ext.form.TextField](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField)({})`
 * 这些列可排序：
   `cm.defaultSortable = true;`
-* `store`是` [CQ.Ext.data.GroupingStore](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)`对象：
-   * 它通过调用在“`/bin/querybuilder.json`”注册的servlet获取其数据，该注册带有几个用于筛选查询的参数
-   * 它基于`reader`，提前定义
-   * 该表按“**jcr:path**”列升序排序
-* `gridPanel`是可编辑的` [CQ.Ext.grid.EditorGridPanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)`对象：
-   * 它基于预定义的`store`和列模型`cm`
-   * 一次只能选择一行：
-     `sm: new [CQ.Ext.grid.RowSelectionModel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
-   * `afteredit`侦听器确保对“**Test**”列中的单元格进行编辑后：
-      * “**jcr:path**”列定义的路径上的节点的属性“`test`”在存储库中使用单元格的值设置
-      * 如果POST成功，该值将添加到`store`对象，否则将被拒绝
+* `store`是` [CQ.Ext.data.GroupingStore](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)`对象：
+  * 它通过调用在“`/bin/querybuilder.json`”注册的servlet获取其数据，该注册带有几个用于筛选查询的参数
+  * 它基于`reader`，提前定义
+  * 该表按“**jcr:path**”列升序排序
+* `gridPanel`是可编辑的` [CQ.Ext.grid.EditorGridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.EditorGridPanel)`对象：
+  * 它基于预定义的`store`和列模型`cm`
+  * 一次只能选择一行：
+    `sm: new [CQ.Ext.grid.RowSelectionModel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.RowSelectionModel)({singleSelect:true})`
+  * `afteredit`侦听器确保对“**Test**”列中的单元格进行编辑后：
+    * “**jcr:path**”列定义的路径上的节点的属性“`test`”在存储库中使用单元格的值设置
+    * 如果POST成功，该值将添加到`store`对象，否则将被拒绝

@@ -10,13 +10,11 @@ exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '422'
 ht-degree: 2%
-
 ---
-
 # 消息传送要点 {#messaging-essentials}
 
 本页记录了关于使用消息传送组件在网站上包含消息传送功能的详细信息。
@@ -92,9 +90,9 @@ ht-degree: 2%
 ## 服务器端的Essentials {#essentials-for-server-side}
 
 * [配置消息传送](/help/communities/configure-messaging.md)
-* SCF组件的[消息传送客户端API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html)
-* [服务的消息传送API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html)
-* [消息传送端点](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* SCF组件的[消息传送客户端API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html)
+* [服务的消息传送API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html)
+* [消息传送端点](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [服务器端自定义](/help/communities/server-customize.md)
 
 >[!CAUTION]

@@ -6,13 +6,11 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '4534'
+source-wordcount: '4567'
 ht-degree: 1%
-
 ---
-
 # 概念{#concepts}
 
 集成框架为以下项目提供机制和组件：
@@ -40,7 +38,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->[电子商务集成框架](https://business.adobe.com/cn/products/experience-manager/sites/ecommerce-integrations.html)是一个AEM加载项。
+>[电子商务集成框架](https://business.adobe.com/products/experience-manager/sites/ecommerce-integrations.html)是一个AEM加载项。
 >
 >您的销售代表可以根据相应的引擎提供完整的详细信息。
 
@@ -60,33 +58,33 @@ ht-degree: 1%
 
 * AEM可以：
 
-   * 请求：
+  * 请求：
 
-      * 电子商务引擎中的产品信息。
+    * 电子商务引擎中的产品信息。
 
-   * 提供：
+  * 提供：
 
-      * 产品信息、购物车和结账的用户视图。
-      * 将购物车和结帐信息发送到电子商务引擎。
-      * 搜索引擎优化(SEO)。
-      * 社区功能。
-      * 非结构化营销互动。
+    * 产品信息、购物车和结账的用户视图。
+    * 将购物车和结帐信息发送到电子商务引擎。
+    * 搜索引擎优化(SEO)。
+    * 社区功能。
+    * 非结构化营销互动。
 
 * 电子商务引擎可以：
 
-   * 提供：
+  * 提供：
 
-      * 数据库中的产品信息。
-      * 产品变型管理。
-      * Order Management。
-      * ERP（企业资源规划）。
-      * 搜索产品信息。
+    * 数据库中的产品信息。
+    * 产品变型管理。
+    * Order Management。
+    * ERP（企业资源规划）。
+    * 搜索产品信息。
 
-   * 进程：
+  * 进程：
 
-      * 购物车。
-      * 结帐。
-      * 订单履行。
+    * 购物车。
+    * 结帐。
+    * 订单履行。
 
 >[!NOTE]
 >
@@ -126,7 +124,7 @@ AEM eCommerce是通过电子商务引擎实现的：
 >
 >在AEM中使用基于JCR的通用开发实现的AEM电子商务是：
 >
->* 一个独立的AEM原生电子商务示例，用于说明该API的使用。 利用现有的数据展示和营销活动，可用于控制产品数据、购物车和结账。 在本例中，产品数据库存储在AEM（Adobe的[JCR](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html)实现）的本地存储库中。
+>* 一个独立的AEM原生电子商务示例，用于说明该API的使用。 利用现有的数据展示和营销活动，可用于控制产品数据、购物车和结账。 在本例中，产品数据库存储在AEM（Adobe的[JCR](https://experienceleague.adobe.com/en/tools/aem-api-documentation/spec/jcr/2.0/index.html)实现）的本地存储库中。
 >
 >  标准AEM安装包含[通用电子商务实施](/help/commerce/cif-classic/administering/generic.md)的基础知识。
 
@@ -150,7 +148,7 @@ AEM目前有两个示例商业提供程序：
 >
 >Geometrixx导入程序使用CSV文件；其实施上方的注释中包含接受的架构描述（允许使用自定义属性）。
 
-[ProductServicesManager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html)（通过[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)）维护[ProductImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)和[CatalogBlueprintImporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)接口的实现列表。 导入器向导的&#x200B;**Importer/Commerce提供程序**&#x200B;下拉字段（使用`commerceProvider`属性作为名称）中列出了这些项。
+[ProductServicesManager](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html)（通过[OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)）维护[ProductImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)和[CatalogBlueprintImporter](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)接口的实现列表。 导入器向导的&#x200B;**Importer/Commerce提供程序**&#x200B;下拉字段（使用`commerceProvider`属性作为名称）中列出了这些项。
 
 如果下拉菜单中提供了特定的导入程序/商务提供程序，则必须在以下任一位置定义所需的任何补充数据（取决于导入程序类型）：
 
@@ -169,24 +167,24 @@ AEM目前有两个示例商业提供程序：
 
 * 产品信息管理(PIM)用户，负责维护：
 
-   * 产品信息。
-   * 分类、分类、审批。
-   * 与数字资产管理交互。
-   * 定价 — 通常来自ERP系统，在商业系统中没有明确维护。
+  * 产品信息。
+  * 分类、分类、审批。
+  * 与数字资产管理交互。
+  * 定价 — 通常来自ERP系统，在商业系统中没有明确维护。
 
 * 作者/营销经理，负责维护：
 
-   * 所有渠道的营销内容。
-   * 促销活动。
-   * 优惠券。
-   * 营销活动。
+  * 所有渠道的营销内容。
+  * 促销活动。
+  * 优惠券。
+  * 营销活动。
 
 * 冲浪者/购物者：
 
-   * 查看您的产品信息。
-   * 将商品放入购物车。
-   * 查他们的订单。
-   * 期望订单履行。
+  * 查看您的产品信息。
+  * 将商品放入购物车。
+  * 查他们的订单。
+  * 期望订单履行。
 
 虽然实际位置可能取决于您的实施；例如，通用或使用电子商务引擎：
 
@@ -265,15 +263,15 @@ AEM目前有两个示例商业提供程序：
 
   企业资源规划(ERP)信息。
 
-   * **SKU**
+  * **SKU**
 
-     库存单位(SKU)信息。
+    库存单位(SKU)信息。
 
-   * **颜色**
-   * **大小**
-   * **价格**
+  * **颜色**
+  * **大小**
+  * **价格**
 
-     产品的单价。
+    产品的单价。
 
 * **摘要**
 
@@ -394,19 +392,19 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 
 * 内容卷
 
-   * Assets
-   * 本地化的I18ned产品和SKU
+  * Assets
+  * 本地化的I18ned产品和SKU
 
 * 用户活动：
 
-   * 批量编辑
-   * 批量发布
-   * 大量搜索请求
+  * 批量编辑
+  * 批量发布
+  * 大量搜索请求
 
 * 后台进程
 
-   * 导入
-   * 同步更新（例如，定价）
+  * 导入
+  * 同步更新（例如，定价）
 
 * 维护要求（备份、Tar PM优化、数据存储垃圾收集等）
 
@@ -505,9 +503,9 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 
 * 优惠券供应：
 
-   * 优惠券代码（由购物者键入购物车中）。
-   * 优惠券标签（在购物者将其输入购物车后显示）。
-   * 提升路径（定义凭证应用的操作）。
+  * 优惠券代码（由购物者键入购物车中）。
+  * 优惠券标签（在购物者将其输入购物车后显示）。
+  * 提升路径（定义凭证应用的操作）。
 
 * 外部商业引擎也可以提供优惠券。
 
@@ -516,9 +514,9 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 * 优惠券是一种基于页面的组件，使用“网站”控制台创建/编辑。
 * **优惠券**&#x200B;组件提供：
 
-   * 凭证管理的呈现器；这将显示当前购物车中的任何凭证。
-   * 用于管理（添加/删除）优惠券的编辑对话框（表单）。
-   * 在购物车中添加/删除优惠券所需的操作。
+  * 凭证管理的呈现器；这将显示当前购物车中的任何凭证。
+  * 用于管理（添加/删除）优惠券的编辑对话框（表单）。
+  * 在购物车中添加/删除优惠券所需的操作。
 
 * 优惠券没有自己的开始和结束日期/时间，但会使用父营销活动的日期/时间。
 
@@ -541,16 +539,16 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 * 促销活动是一个基于页面的组件，使用“网站”控制台创建/编辑。 &quot;
 * 促销供应：
 
-   * 优先级
-   * 提升处理程序路径
+  * 优先级
+  * 提升处理程序路径
 
 * 您可以将促销活动关联到促销活动，以定义其打开/关闭日期/时间。
 * 您可以将促销活动连接到体验以定义其区段。
 * 与体验无关的促销活动不会自行触发，但仍可以通过优惠券触发。
 * 提升组件包含：
 
-   * 用于提升管理的渲染器和对话框
-   * 用于呈现和编辑特定于提升处理程序的配置参数的子组件
+  * 用于提升管理的渲染器和对话框
+  * 用于呈现和编辑特定于提升处理程序的配置参数的子组件
 
 在AEM中，促销活动也已集成到[促销活动管理](/help/sites-authoring/personalization.md)中：
 
@@ -707,8 +705,8 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 * 所选项目的产品页面的链接
 * 能够：
 
-   * 更新单个物料的编号/数量
-   * 删除单个项目
+  * 更新单个物料的编号/数量
+  * 删除单个项目
 
 ![电子商务_购物车](/help/sites-administering/assets/ecommerce_shoppingcart.png)
 
@@ -812,7 +810,7 @@ AEM支持多种语言的产品内容。 在请求数据时，集成框架会从�
 
 >[!NOTE]
 >
->创建订单向导中使用的字段取决于为位置定义的触屏优化基架。在常规示例中，这可以在以下位置找到：
+>创建订单向导中使用的字段取决于为位置定义的触屏优化基架。 在常规示例中，这可以在以下位置找到：
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 在AEM中保留订单后，订单控制台将为每个订单显示以下内容：

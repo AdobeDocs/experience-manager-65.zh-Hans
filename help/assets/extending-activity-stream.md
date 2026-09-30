@@ -1,25 +1,23 @@
 ---
-title: 将 [!DNL Assets] 与活动流集成
-description: 描述 [!DNL Experience Manager] 的记录功能以及如何将其配置为记录特定事件。
+title: 将[!DNL Assets]与活动流集成
+description: 描述[!DNL Experience Manager]的记录功能以及如何将其配置为记录特定事件。
 contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '258'
 ht-degree: 0%
-
 ---
-
 # 将[!DNL Assets]与活动流集成 {#integrating-assets-with-activity-stream}
 
 [!DNL Adobe Experience Manager Assets]用户可执行许多操作，如创建、上传和删除Assets。 可以记录这些操作，以便您能够提供用户所做操作的历史记录。 本节介绍[!DNL Experience Manager]的记录功能以及如何配置[!DNL Experience Manager]以记录特定事件。
 
 ## 性能注意事项和默认行为 {#performance-considerations-and-default-behavior}
 
-例如，在执行批量导入时，这种集成可能会耗用CPU和磁盘空间。 出于这些原因，默认情况下将禁用与活动流的[!DNL Assets]集成。
+例如，在执行批量导入时，此集成可能会占用大量的CPU和磁盘空间。 出于这些原因，默认情况下将禁用与活动流的[!DNL Assets]集成。
 
 ## 支持的操作事件 {#supported-action-events}
 
@@ -59,4 +57,4 @@ ht-degree: 0%
 
 ## 读取录制的事件 {#reading-recorded-events}
 
-记录的事件将作为活动存储。 您可以使用[ActivityManager API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)以编程方式读取它们。
+记录的事件将作为活动存储。 您可以使用[ActivityManager API](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html)以编程方式读取它们。
