@@ -6,13 +6,11 @@ role: Admin, Developer
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 2b097caa05ec889ae445d74a905fb6c3f8457cee
+source-git-commit: b860fd19c0aeaa94fb0e04052dac70b0bc58b11b
 workflow-type: tm+mt
-source-wordcount: '10688'
+source-wordcount: '10825'
 ht-degree: 2%
-
 ---
-
 # 安装和配置文档服务 {#installing-and-configuring-document-services}
 
 AEM Forms提供一套OSGi服务来完成不同的文档级别操作，例如，用于创建、汇编、分发和存档PDF文档，添加数字签名以限制对文档的访问，以及对条形码Forms进行解码的服务。 这些服务包含在AEM Forms附加组件包中。 这些服务统称为文档服务。 可用文档服务及其主要功能的列表如下：
@@ -37,9 +35,9 @@ AEM Forms提供一套OSGi服务来完成不同的文档级别操作，例如，�
 
 * **签名服务：**&#x200B;允许您在AEM服务器上处理数字签名和文档。 例如，签名服务通常用于以下情况：
 
-   * AEM服务器在将表单发送到用户以使用Acrobat或Adobe Reader打开之前对表单进行认证。
-   * AEM服务器使用Acrobat或Adobe Reader验证已添加到表单的签名。
-   * AEM服务器代表公共公证人签署表单。
+  * AEM服务器在将表单发送到用户以使用Acrobat或Adobe Reader打开之前对表单进行认证。
+  * AEM服务器使用Acrobat或Adobe Reader验证已添加到表单的签名。
+  * AEM服务器代表公共公证人签署表单。
 
   签名服务访问存储在信任存储中的证书和凭据。 有关详细信息，请参阅[签名服务](/help/forms/using/aem-document-services-programmatically.md)。
 
@@ -64,18 +62,18 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
 * AEM实例的安装路径不包含空格。
 * AEM实例已启动并正在运行。 在AEM术语中，“实例”是指以创作或发布模式在服务器上运行的AEM副本。 通常，您只需要一个AEM实例（创作或发布）即可运行AEM Forms文档服务：
 
-   * **作者**：用于创建、上载和编辑内容以及管理网站的AEM实例。 内容准备好上线后，即会复制到发布实例。
-   * **发布**：通过Internet或内部网络向公众提供已发布内容的AEM实例。
+  * **作者**：用于创建、上载和编辑内容以及管理网站的AEM实例。 内容准备好上线后，即会复制到发布实例。
+  * **发布**：通过Internet或内部网络向公众提供已发布内容的AEM实例。
 
 * 满足内存要求。 AEM Forms附加组件包需要：
 
-   * 用于基于® Windows的安装的15 GB临时空间。
-   * 用于基于UNIX的安装的6 GB临时空间。
+  * 用于基于® Windows的安装的15 GB临时空间。
+  * 用于基于UNIX的安装的6 GB临时空间。
 
 * 已安装在®Windows和Linux®上执行PDF生成器转换所需的客户端软件：
 
-   * **® Windows**：安装[Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)或[Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**：安装[Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+  * **® Windows**：安装[Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)或[Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
+  * **Linux®**：安装[Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
 
 >[!NOTE]
 >
@@ -165,26 +163,30 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
 
 * **（仅限PDF Generator**）安装32位版本的libcurl、libcrypto和libssl库并创建以下符号链接。 符号链接指向各个库的最新版本：
 
-   * /usr/lib/libcurl.so
-   * /usr/lib/libcrypto.so
-   * /usr/lib/libssl.so
+  * /usr/lib/libcurl.so
+  * /usr/lib/libcrypto.so
+  * /usr/lib/libssl.so
 
 * **（仅限PDF Generator）** PDF Generator服务支持将HTML文件转换为PDF文档的WebKit和WebToPDF路由。 要启用WebToPDF路由的转换，请安装下面列出的64位库。 通常，这些库已经安装。 如果缺少任何库，请手动进行安装：
 
-   * linux-gate.so.1
-   * libz.so.1
-   * libfontconfig.so.1
-   * libfreetype.so.6
-   * libdl.so.2
-   * librt.so.1
-   * libpthread.so.0
-   * libstdc++.so.6
-   * libm.so.6
-   * libgcc_s.so.1
-   * libc.so.6
-   * ld-linux.so.2
-   * libexpat.so.1
+  * linux-gate.so.1
+  * libz.so.1
+  * libfontconfig.so.1
+  * libfreetype.so.6
+  * libdl.so.2
+  * librt.so.1
+  * libpthread.so.0
+  * libstdc++.so.6
+  * libm.so.6
+  * libgcc_s.so.1
+  * libc.so.6
+  * ld-linux.so.2
+  * libexpat.so.1
 * （仅限PDF Generator）要在RHEL 8或RHEL 9、SLES15安装程序中启用WebKit路由，默认情况下32位`nspr`库可能不可用；如果不存在，请安装该库。
+
+* 在Red Hat® Enterprise Linux® 9上，32位OpenOffice内部版本需要`libcrypt.so.1`，默认情况下不安装该内部版本。 如果缺少它，则OpenOffice无法启动，并出现错误`soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`，并且OpenOffice到PDF的转换失败。 安装`libxcrypt-compat`包（32位）以提供库：
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 * （仅限PDF Generator）如果WebToPDF转换在Unix®服务器上失败，并出现以下错误：
 
@@ -212,7 +214,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 通常，您只需�
 >* Adobe Acrobat、Microsoft®Word、Excel和Powerpoint仅适用于Microsoft®Windows。 如果您使用的是基于UNIX的操作系统，请安装OpenOffice以将RTF文件和支持的® Office文件转换为PDF文档。
 >* 关闭在安装Adobe Acrobat和第三方软件后显示的所有对话框，这些对话框适用于配置为使用PDF Generator服务的所有用户。
 >* 至少启动一次所有已安装的软件。 关闭配置为使用PDF Generator服务的所有用户的所有对话框。
->* [检查Adobe Acrobat序列号到期日期](https://helpx.adobe.com/cn/enterprise/kb/volume-license-expiration-check.html)并设置更新许可证的日期，或[根据到期日期迁移序列号](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)。
+>* [检查Adobe Acrobat序列号到期日期](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html)并设置更新许可证的日期，或[根据到期日期迁移序列号](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number)。
 
 ### 安装Adobe Acrobat Pro DC {#install-adobe-acrobat-pro-dc}
 
@@ -909,7 +911,7 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 >
 >服务器端自动化方案（如AEM Forms PDF Generator）需要禁用保护模式。 此设置只能在专用服务器环境中更改，不能在最终用户桌面上更改。
 
-有关详细信息，请参阅[有关保护模式的Adobe文档](https://helpx.adobe.com/cn/acrobat/kb/protected-mode-troubleshooting-reader.html)。
+有关详细信息，请参阅[有关保护模式的Adobe文档](https://helpx.adobe.com/acrobat/kb/protected-mode-troubleshooting-reader.html)。
 
 
 
@@ -1092,10 +1094,10 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该资源包中包�
    1. 从&#x200B;**[!UICONTROL 解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Forms]**。
    2. 选择包的版本和类型。 您还可以使用&#x200B;**[!UICONTROL 搜索下载]**&#x200B;选项来筛选结果。
 1. 选择适用于您的操作系统的包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
-1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
+1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
 1. 选择该包并点击&#x200B;**[!UICONTROL 安装]**。
 
-   您还可以通过[AEM Forms发行版](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)文章中列出的直接链接下载包。
+   您还可以通过[AEM Forms发行版](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)文章中列出的直接链接下载包。
 
 1. 安装包后，系统会提示您重新启动AEM实例。 **不立即停止服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止出现在`[AEM-Installation-Directory]/crx-quickstart/logs/error`.log文件中并且日志稳定。
 
@@ -1128,7 +1130,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该资源包中包�
 
    >[!NOTE]
    >
-   >您使用Adobe以外的其他各方提供的字体的权利受这些各方向您提供的这些字体的许可协议管辖，并且不在您使用Adobe软件的许可范围内。Adobe建议您查看并确保在将non-Adobe字体与Adobe软件结合使用之前，遵守所有适用的非Adobe许可协议，特别是在服务器环境中使用字体时。
+   >您使用Adobe以外的其他各方提供的字体的权利受这些各方向您提供的这些字体的许可协议管辖，并且不在您使用Adobe软件的许可范围内。 Adobe建议您查看并确保在将non-Adobe字体与Adobe软件结合使用之前，遵守所有适用的非Adobe许可协议，特别是在服务器环境中使用字体时。
    >在将新字体安装到fonts文件夹时，请重新启动AEM Forms实例。
    >
 
@@ -1191,7 +1193,7 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该资源包中包�
    <td>3600秒</td>
   </tr>
   <tr>
-   <td>作业盗取秒数</td>
+   <td>作业过期秒数</td>
    <td>允许PDF Generator服务运行转换的持续时间。 确保“作业过期时间（秒）”的值大于“PDFG清理扫描时间（秒）”值。</td>
    <td>7200秒</td>
   </tr>
@@ -1247,7 +1249,7 @@ DocAssurance服务可以对PDF文档应用使用权限。 要对PDF文档应用�
 
 * 证书附带的私钥密码。
 
-* 私钥别名。您可以执行Java keytool命令以查看私钥别名：
+* 私钥别名。 您可以执行Java keytool命令以查看私钥别名：
   `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
 * Keystore文件密码。 如果您使用Adobe的Reader扩展证书，则Keystore文件密码始终与“私钥”密码相同。
@@ -1405,13 +1407,13 @@ Assembler服务依赖于Reader扩展服务、签名服务、Forms服务和输出
 * 确保在PDF Generator配置UI中添加了PDF用户。
 * 确保PDF Generator用户是管理员组的成员，并且已为该用户设置了[替换进程级别令牌](#grant-the-replace-a-process-level-token-privilege)权限。
 * 确保已在PDF Generator UI中配置用户，并执行以下操作：
-   1. 使用PDF Generator用户登录Microsoft® Windows。
-   1. 打开® Office或OpenOffice应用程序并取消所有对话框。
-   1. 将AdobePDF设置为默认打印机。
-   1. 将Acrobat设置为PDF文件的默认程序。
-   1. 在Microsoft Office应用程序中使用选项“文件”>“打印”和“Acrobat”功能区执行手动转换，并取消所有对话框。
-   1. 结束与转换相关的所有进程，如winword.exe、powerpoint.exe和excel.exe。
-   1. 重新启动AEM Forms服务器。
+  1. 使用PDF Generator用户登录Microsoft® Windows。
+  1. 打开® Office或OpenOffice应用程序并取消所有对话框。
+  1. 将AdobePDF设置为默认打印机。
+  1. 将Acrobat设置为PDF文件的默认程序。
+  1. 在Microsoft Office应用程序中使用选项“文件”>“打印”和“Acrobat”功能区执行手动转换，并取消所有对话框。
+  1. 结束与转换相关的所有进程，如winword.exe、powerpoint.exe和excel.exe。
+  1. 重新启动AEM Forms服务器。
 
 **Linux®**
 
@@ -1419,6 +1421,10 @@ Assembler服务依赖于Reader扩展服务、签名服务、Forms服务和输出
 
 * 在[控制台](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/)或dt （设备树）配置文件中，创建环境变量`OpenOffice_PATH`并将其设置为指向已设置的OpenOffice安装。
 * 如果安装OpenOffice时出现问题，请确保OpenOffice安装所需的[32位库](#extrarequirements)可用。
+
+* 在Red Hat® Enterprise Linux® 9上，32位OpenOffice内部版本需要`libcrypt.so.1`，默认情况下不安装该内部版本。 如果缺少它，则OpenOffice无法启动，并出现错误`soffice.bin: error while loading shared libraries: libcrypt.so.1: cannot open shared object file: No such file or directory`，并且OpenOffice到PDF的转换失败。 安装`libxcrypt-compat`包（32位）以提供库：
+
+  `sudo dnf install -y libxcrypt-compat.i686`
 
 +++
 
@@ -1451,29 +1457,29 @@ Assembler服务依赖于Reader扩展服务、签名服务、Forms服务和输出
 * 确保在系统上安装了32位lib curl、libcrypto和libssl库的最新版本。 同时创建指向各个库的最新版本（32位）的符号链接`/usr/lib/libcurl.so` (或libcurl.a （对于AIX®）、`/usr/lib/libcrypto.so` (或libcrypto.a （对于AIX®）和`/usr/lib/libssl.so` (或libssl.a （对于AIX®）)。
 
 * 对® SSL套接字提供程序执行以下步骤：
-   1. 将java.security文件从`<WAS_Installed_JAVA>\jre\lib\security`复制到AEM Forms服务器上的任何位置。 默认位置为“默认位置”= `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`。
+  1. 将java.security文件从`<WAS_Installed_JAVA>\jre\lib\security`复制到AEM Forms服务器上的任何位置。 默认位置为“默认位置”= `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`。
 
-   1. 在复制的位置编辑java.security文件，并使用JSSE2工厂更改默认的SSL套接字工厂（使用JSSE2工厂而非WebSphere®）。
+  1. 在复制的位置编辑java.security文件，并使用JSSE2工厂更改默认的SSL套接字工厂（使用JSSE2工厂而非WebSphere®）。
 
-      更改以下默认JSSE套接字工厂：
+     更改以下默认JSSE套接字工厂：
 
-      ```
-      #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     #ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     #ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
-      和
+     和
 
-      ```
-      ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
-      ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
-      WebSphere socket factories (in cryptosf.jar)
-      #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
-      #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
-      ```
+     ```
+     ssl.SocketFactory.provider=com.ibm.jsse2.SSLSocketFactoryImpl
+     ssl.ServerSocketFactory.provider=com.ibm.jsse2.SSLServerSocketFactoryImpl
+     WebSphere socket factories (in cryptosf.jar)
+     #ssl.SocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLSocketFactory
+     #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
+     ```
 
 +++
 
@@ -1562,7 +1568,7 @@ ALC-PDG-015-003 — 系统无法打开输入文件。 再次提交文件或联�
 
 +++ 无法将XPS文件转换为PDF
 
-要解决此问题，请在Windows[&#128279;](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html)上创建特定于功能的注册表项。
+要解决此问题，请在Windows](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html)上[创建特定于功能的注册表项。
 
 +++
 
