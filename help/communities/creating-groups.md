@@ -1,6 +1,6 @@
 ---
 title: 社区组
-description: 了解社区组功能如何让您通过Publish和Author中的授权用户在社区站点中动态创建子社区。
+description: 了解社区组功能如何允许您通过发布和创作中的授权用户在社区站点中动态创建子社区。
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '565'
 ht-degree: 1%
-
 ---
-
 # 社区组 {#community-groups}
 
 社区组功能允许子社区由发布和创作环境中的授权用户（社区成员和作者）在社区站点中动态创建。

@@ -1,5 +1,5 @@
 ---
-title: 编码提示
+title: 编码技巧
 description: 了解在Adobe Experience Manager中编码最佳实践的一些提示。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '861'
 ht-degree: 0%
-
 ---
-
-# 编码提示{#coding-tips}
+# 编码技巧{#coding-tips}
 
 ## 尽可能使用taglibs或HTL {#use-taglibs-or-htl-as-much-as-possible}
 
@@ -75,11 +73,11 @@ CSS规则应该特定于应用程序上下文中的目标元素。 例如，应�
 
 ### 编写可本地化的代码 {#write-localizable-code}
 
-任何不是由作者提供的字符串都应通过JSP/Java中的&#x200B;*I18n.get()*&#x200B;和JavaScript中的&#x200B;*CQ.I18n.get()*&#x200B;包含在对AEM i18n词典的调用中。 如果找不到任何实施，此实施将返回传递给它的字符串，因此在使用主要语言实施功能后，这提供了实施本地化的灵活性。
+任何不是由作者提供的字符串，都应通过JSP/Java中的&#x200B;*I18n.get()*&#x200B;和JavaScript中的&#x200B;*CQ.I18n.get()*&#x200B;包含在对AEM的i18n词典的调用中。 如果找不到任何实施，此实施将返回传递给它的字符串，因此在使用主要语言实施功能后，这提供了实施本地化的灵活性。
 
 ### 为安全而转义资源路径 {#escape-resource-paths-for-safety}
 
-虽然JCR中的路径不应包含空格，但它们的存在不应导致代码中断。 Jackrabbit提供了包含&#x200B;*escape()*&#x200B;和&#x200B;*escapePath()*&#x200B;方法的文本实用程序类。 对于JSP，Granite UI公开&#x200B;*granite：encodeURIPath() EL*&#x200B;函数。
+虽然JCR中的路径不应包含空格，但它们的存在不应导致代码中断。 Jackrabbit提供了包含&#x200B;*escape()*&#x200B;和&#x200B;*escapePath()*&#x200B;方法的文本实用程序类。 对于JSP，Granite UI公开&#x200B;*granite:encodeURIPath() EL*&#x200B;函数。
 
 ### 使用XSS API和/或HTL防止跨站点脚本攻击 {#use-the-xss-api-and-or-htl-to-protect-against-cross-site-scripting-attacks}
 

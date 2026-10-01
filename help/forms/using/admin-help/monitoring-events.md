@@ -1,22 +1,24 @@
 ---
-title: 监视事件
+title: 监控事件
+
 description: 启用审核功能后，通过Document Security可监视特定类型的事件。 您可以使用Document Security轻松搜索和排序事件列表。
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 078b9ad1-16e2-40f4-92dc-e4093c0bb6ac
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '968'
 ht-degree: 0%
-
 ---
-
-# 监视事件 {#monitoring-events}
+# 监控事件 {#monitoring-events}
 
 启用审核功能后，通过Document Security可监视特定类型的事件。 您可以看到的事件取决于您的角色：
 

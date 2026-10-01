@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '993'
 ht-degree: 1%
-
 ---
-
 # 使用注释 {#using-comments}
 
 ## 简介 {#introduction}
@@ -190,7 +188,7 @@ ht-degree: 1%
 
 当网站访客登录时，根据配置，他们可能
 
-* Post新评论
+* 发表新评论
 * 编辑他们自己的评论
 * 删除他们自己的评论
 * 标记其他人的评论

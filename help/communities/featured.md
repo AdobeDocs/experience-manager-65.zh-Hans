@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '349'
 ht-degree: 2%
-
 ---
-
 # 特色内容功能 {#featured-content-feature}
 
 ## 简介 {#introduction}
@@ -69,7 +67,7 @@ ht-degree: 2%
 
 * **[!UICONTROL 精选内容的位置]**
 
-  *（必需）*&#x200B;浏览到包含可精选内容的页面（该页面的组件必须配置为允许精选内容）。 例如：`/content/sites/engage/en/forum`。
+  *（必需）*&#x200B;浏览到包含可精选内容的页面（该页面的组件必须配置为允许精选内容）。 例如 `/content/sites/engage/en/forum`。
 
 * **[!UICONTROL 显示限制]**
 

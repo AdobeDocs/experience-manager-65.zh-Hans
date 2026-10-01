@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '251'
 ht-degree: 1%
-
 ---
-
 # 使用点赞 {#using-liking}
 
 `Liking`组件是一个有用的工具，它允许用户表达对特定内容的意见，如论坛中的评论。 使用`Liking`组件时，成员会选择心形图标来指示积极意见。
