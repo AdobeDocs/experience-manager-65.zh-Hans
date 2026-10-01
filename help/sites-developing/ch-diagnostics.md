@@ -13,9 +13,7 @@ source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
 source-wordcount: '472'
 ht-degree: 1%
-
 ---
-
 # ContextHub 诊断 {#contexthub-diagnostics}
 
 ContextHub提供了一个诊断页面，您可以在该页面中查看ContextHub框架的概述。 要打开页面，请转到AEM创作实例的`contexthub.diagnostics.html`页面，例如：

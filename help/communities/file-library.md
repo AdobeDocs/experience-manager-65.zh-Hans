@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '754'
 ht-degree: 1%
-
 ---
-
 # 文件库功能{#file-library-feature}
 
 ## 简介 {#introduction}
@@ -112,7 +110,7 @@ ht-degree: 1%
 
 * **UI提及模式**
 
-  指定允许的模式字符串，以便在帖子中标记(@mention)已注册的用户。 例如：`~{{familyName}}{{givenName}}`。
+  指定允许的模式字符串，以便在帖子中标记(@mention)已注册的用户。 例如 `~{{familyName}}{{givenName}}`。
 
 * **允许线程回复**
 

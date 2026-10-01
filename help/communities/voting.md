@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '257'
 ht-degree: 1%
-
 ---
-
 # 使用投票 {#using-voting}
 
 `Voting`组件是一个非常有用的工具，它允许社区成员对特定内容（如QnA组件中的答案）进行评级。 使用`Voting`组件时，成员选择向上或向下箭头来指示其意见。

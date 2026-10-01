@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '463'
 ht-degree: 1%
-
 ---
-
 # 搜索功能 {#search-feature}
 
 搜索功能可与各种其他功能（如论坛）配合使用，以提供搜索内容的功能。
@@ -53,7 +51,7 @@ ht-degree: 1%
 * **[!UICONTROL 搜索路径]**
 通过使用“添加项目”按钮添加搜索路径，内容搜索受到限制。 例如，要将搜索限制到特定论坛，请选择放置在页面中的论坛组件：
 
-   * `/content/community-components/en/forum/jcr:content/content/forum`
+  * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL 结果页]**
 结果将显示在使用浏览器选择包含`Search Results`组件的页面时指定的单独页面上。

@@ -11,11 +11,9 @@ feature: Forms Portal
 role: Admin, User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '408'
-ht-degree: 0%
-
+source-wordcount: '412'
+ht-degree: 4%
 ---
-
 # 在页面中嵌入链接组件{#embedding-link-component-in-a-page}
 
 ## 先决条件 {#prerequisites}
@@ -42,7 +40,7 @@ ht-degree: 0%
 
    * **资源路径**：存储资源的存储库路径。
 
-   * **渲染类型**：渲染格式 — PDF、HTML或自动。 自动渲染类型会检测用户环境，并相应地将表单渲染为HTML或PDF。 例如，如果从移动设备访问表单，则自动渲染类型以HTML渲染表单。
+   * **渲染类型**：渲染格式 — PDF、HTML或Auto。 自动渲染类型会检测用户环境，并相应地将表单渲染为HTML或PDF。 例如，如果从移动设备访问表单，则自动渲染类型将在HTML中渲染表单。
    * **将URL：** URL提交到提交表单数据的Servlet。
    * **HTML配置文件**：用于将表单渲染为HTML的配置文件。
    * **PDF配置文件**：用于将表单渲染为PDF文档的配置文件。
@@ -53,9 +51,9 @@ ht-degree: 0%
 
 ## 使用链接组件的最佳实践 {#best-practices-for-using-link-component-br}
 
-* 如果在“表单路径”中指定的PDF指向文档(该文档的PDF作为其允许的渲染格式)，请确保选择“路径”作为渲染类型。
+* 如果在“表单路径”中指定的路径指向文档，且该文档具有PDF作为其允许的渲染格式，请确保选择PDF作为渲染类型。
 * 可以在多个位置指定表单的提交URL，其优先顺序如下：
 
-   1. 表单中嵌入的提交URL（在提交按钮中）具有最高优先级。
-   1. Forms Manager中提到的提交URL具有中优先级。
-   1. Forms Portal中提到的提交URL的优先级最低。
+  1. 表单中嵌入的提交URL（在提交按钮中）具有最高优先级。
+  1. Forms Manager中提到的提交URL具有中优先级。
+  1. Forms Portal中提到的提交URL的优先级最低。

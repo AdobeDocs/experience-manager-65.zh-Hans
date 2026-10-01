@@ -1,5 +1,5 @@
 ---
-title: 为WebSphere应用程序服务器配置SSL
+title: 为 WebSphere 应用程序服务器配置 SSL
 description: 了解如何为WebSphere应用程序服务器配置SSL。
 contentOwner: admin
 content-type: reference
@@ -11,12 +11,10 @@ feature: Document Security
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1220'
-ht-degree: 0%
-
+source-wordcount: '1237'
+ht-degree: 1%
 ---
-
-# 为WebSphere应用程序服务器配置SSL {#configuring-ssl-for-websphere-application-server}
+# 为 WebSphere 应用程序服务器配置 SSL {#configuring-ssl-for-websphere-application-server}
 
 此部分包含使用IBM WebSphere应用程序服务器配置SSL的以下步骤。
 
@@ -29,21 +27,21 @@ ht-degree: 0%
 
 ### 为WebSphere创建Linux或UNIX用户 {#create-a-linux-or-unix-user-for-websphere}
 
-1. 以根用户身份登录。
-1. 通过在命令提示符中输入以下命令来创建用户：
+1. 以root用户身份登录。
+1. 通过在命令提示符下输入以下命令来创建用户：
 
-   * （Linux 和 Sun Solaris） `useradd`
-   * （IBM AIX） `mkuser`
+   * （Linux和Sun Solaris） `useradd`
+   * (IBM AIX) `mkuser`
 
-1. 通过在命令提示符中输入 `passwd` 来设置新用户的密码。
-1. （Linux 和 Solaris）通过在命令提示符中输入 `pwconv` （不带参数）来创建影子密码文件。
+1. 通过在命令提示符下输入`passwd`设置新用户的密码。
+1. （Linux和Solaris）通过在命令提示符下输入`pwconv`（不带参数）来创建影子密码文件。
 
    >[!NOTE]
    >
-   >（Linux 和 Solaris）要使 WebSphere Application Server 本地操作系统安全注册表正常工作，必须存在影子密码文件。 影子密码文件通常名为 **/etc/shadow** ，基于 /etc/passwd 文件。 如果影子口令文件不存在，那么在启用全局安全性并将用户注册表配置为本地操作系统之后会发生错误。
+   >（Linux和Solaris）要使WebSphere Application Server本地OS安全注册表正常工作，必须存在卷影密码文件。 影子密码文件通常名为&#x200B;**/etc/shadow**，它基于/etc/passwd文件。 如果卷影密码文件不存在，则在启用全局安全并将用户注册表配置为本地操作系统后会发生错误。
 
-1. 在文本编辑器中从 /etc 目录中打开组文件。
-1. 将您在步骤 2 中创建的用户添加到组中 `root` 。
+1. 在文本编辑器中从/etc目录打开组文件。
+1. 将您在步骤2中创建的用户添加到`root`组。
 1. 保存并关闭该文件。
 1. （启用SSL的UNIX）以root用户身份启动和停止WebSphere。
 
@@ -71,7 +69,7 @@ ht-degree: 0%
 1. 在管理安全性下，选择&#x200B;**管理用户角色**。
 1. 单击添加，然后执行以下操作：
 
-   1. 在搜索框中键入&#x200B;**&amp;amp；ast；**，然后单击搜索。
+   1. 在搜索框中键入&#x200B;**&amp;ast；**，然后单击搜索。
    1. 单击角色下的&#x200B;**管理员**。
    1. 将新创建的用户添加到映射到角色并将其映射到管理员。
 
@@ -105,19 +103,19 @@ ht-degree: 0%
 1. 单击&#x200B;**个人证书**。
 1. 如果您添加了已使用ikeyman创建的密钥库，则会显示您的证书。 否则，您需要通过执行以下步骤来添加新的自签名证书：
 
-   1. 选择“ **创建>自签名证书**”。
-   1. 在证书表单上指定适当的值。 确保将别名和公用名保留为计算机的完全限定域名。
+   1. 选择&#x200B;**创建>自签名证书**。
+   1. 在证书表单上指定适当的值。 请确保将别名和公用名保留为计算机的完全限定的域名。
    1. 单击&#x200B;**应用**。
 
-1. 重复步骤 2 到 10 以创建信任库。
+1. 为创建信任库重复步骤2至10。
 
-## 将定制密钥库和信任库应用于服务器 {#apply-custom-keystore-and-truststore-to-the-server}
+## 将自定义密钥库和信任库应用到服务器 {#apply-custom-keystore-and-truststore-to-the-server}
 
-1. 在 WebSphere 管理控制台中，选择“安全性” **>“SSL 证书和密钥管理**”。
-1. 单击管理 **端点安全配置**。 将打开本地拓扑图。
-1. 在“入站”下，选择节点的直接子级。
-1. 在“相关项”下，选择“SSL 配置&#x200B;**”。**
-1. 选择“ **NodeDeafultSSLSetting**”。
+1. 在WebSphere管理控制台中，选择&#x200B;**安全> SSL证书和密钥管理**。
+1. 单击&#x200B;**管理终结点安全配置**。 此时将打开本地拓扑图。
+1. 在入站下，选择节点的直接子节点。
+1. 在“相关项目”下，选择&#x200B;**SSL配置**。
+1. 选择&#x200B;**NodeDefaultSSLSetting**。
 1. 从信任库名称和密钥库名称下拉列表中，选择您创建的自定义信任库和密钥库。
 1. 单击&#x200B;**应用**。
 1. 保存主配置。
@@ -125,7 +123,7 @@ ht-degree: 0%
 
    现在，您的配置文件会在自定义SSL设置和证书上运行。
 
-## 启用对AEM表单本地程序的支持 {#enabling-support-for-aem-forms-natives}
+## 启用对AEM本地表单的支持 {#enabling-support-for-aem-forms-natives}
 
 1. 在WebSphere管理控制台中，选择&#x200B;**安全>全局安全**。
 1. 在“身份验证”部分中，展开&#x200B;**RMI/IIOP安全**，然后单击&#x200B;**CSIv2入站通信**。
@@ -149,7 +147,7 @@ ht-degree: 0%
 1. 单击检索签名者信息，然后验证是否检索了信息。
 1. 单击应用，然后单击保存。
 
-现在，从已添加证书的站点的HTML到PDF转换将在生成PDF服务中起作用。
+现在，从添加证书的站点的HTML到PDF的转换将在生成PDF服务中起作用。
 
 >[!NOTE]
 >

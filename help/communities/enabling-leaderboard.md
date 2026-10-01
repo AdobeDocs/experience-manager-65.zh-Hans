@@ -12,11 +12,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '425'
 ht-degree: 2%
-
 ---
-
 # 排行榜功能 {#leaderboard-feature}
 
 ## 简介 {#introduction}
@@ -59,22 +57,22 @@ ht-degree: 2%
 * **显示名称**
 
   为展示板显示的描述性名称，反映为显示徽章和分数而选择的规则。
-如果未输入任何内容，则默认值为`Leaderboard`。
+  如果未输入任何内容，则默认值为`Leaderboard`。
 
 * **徽章**
 
   如果选中，则排行榜中将包含一列徽章图标。
-默认值为未选中。
+  默认值为未选中。
 
 * **徽章名称**
 
   如果选中，则排行榜中将包含徽章名称列。
-默认值为未选中。
+  默认值为未选中。
 
 * **使用头像**
 
   如果选中，则成员的头像图像将包含在排行榜中，位于其名称链接旁边，指向其成员配置文件。
-默认值为未选中。
+  默认值为未选中。
 
 #### “规则”选项卡 {#rules-tab}
 
@@ -104,19 +102,19 @@ ht-degree: 2%
 
 * 设置选项卡：
 
-   * 显示名称= `Participation Board`
-   * `checked`：
+  * 显示名称= `Participation Board`
+  * `checked`:
 
-      * 徽章
-      * 徽章名称
-      * 使用头像
+    * 徽章
+    * 徽章名称
+    * 使用头像
 
 * “规则”选项卡：
 
-   * 规则位置= `/content/sites/<site name>/jcr:content`
-   * 评分规则= `/libs/settings/community/scoring/rules/forums-scoring`
-   * 徽章规则= `/libs/settings/community/badging/rules//reference-badging`
-   * 显示限制= `10`
+  * 规则位置= `/content/sites/<site name>/jcr:content`
+  * 评分规则= `/libs/settings/community/scoring/rules/forums-scoring`
+  * 徽章规则= `/libs/settings/community/badging/rules//reference-badging`
+  * 显示限制= `10`
 
 ![参与者 — 排行榜](assets/participants-leaderboard.png)
 
@@ -128,18 +126,18 @@ ht-degree: 2%
 
 * 设置选项卡：
 
-   * 显示名称= `Expertise Board`
-   * `checked`：
+  * 显示名称= `Expertise Board`
+  * `checked`:
 
-      * 徽章
-      * 使用头像
+    * 徽章
+    * 使用头像
 
 * “规则”选项卡：
 
-   * 规则位置= `/content/sites/<site name>/jcr:content`
-   * 评分规则= `/libs/settings/community/scoring/rules/adv-forums-scoring`
-   * 徽章规则= `/libs/settings/community/badging/rules/adv-forums-badging`
-   * 显示限制= `10`
+  * 规则位置= `/content/sites/<site name>/jcr:content`
+  * 评分规则= `/libs/settings/community/scoring/rules/adv-forums-scoring`
+  * 徽章规则= `/libs/settings/community/badging/rules/adv-forums-badging`
+  * 显示限制= `10`
 
 ![专家 — 排行榜](assets/experts-leaderboard.png)
 

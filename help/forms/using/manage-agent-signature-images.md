@@ -11,11 +11,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '692'
-ht-degree: 1%
-
+source-wordcount: '689'
+ht-degree: 3%
 ---
-
 # 管理代理签名图像{#manage-agent-signature-images}
 
 ## 概述 {#overview}
@@ -31,10 +29,10 @@ agentFolder DDE的值从Correspondence Management配置属性的CMUserRoot配置
 
 ## 添加代理签名图像 {#adding-agent-signature-image}
 
-1. 确保代理签名映像的名称与用户的AEM用户名相同。 （图像文件名不需要扩展名。）
+1. 确保代理签名图像与用户的AEM用户名同名。 （图像文件名不需要扩展名。）
 1. 在CRX的内容文件夹中，创建一个名为`cmUserRoot`的文件夹。
 
-   1. 转到`https://'[server]:[port]'/crx/de`。 如有必要，请以管理员身份登录。
+   1. 转到 `https://'[server]:[port]'/crx/de`. 如有必要，请以管理员身份登录。
 
    1. 右键单击&#x200B;**content**&#x200B;文件夹，然后选择&#x200B;**创建** > **创建文件夹**。
 
@@ -44,11 +42,11 @@ agentFolder DDE的值从Correspondence Management配置属性的CMUserRoot配置
 
       >[!NOTE]
       >
-      >cmUserRoot是AEM查找代理签名映像的默认位置。 但是，您可以通过编辑[通信管理配置属性](/help/forms/using/cm-configuration-properties.md)中的CM用户根属性来更改它。
+      >cmUserRoot是AEM查找代理签名图像的默认位置。 但是，您可以通过编辑[通信管理配置属性](/help/forms/using/cm-configuration-properties.md)中的CM用户根属性来更改它。
 
 1. 在内容资源管理器中，导航到cmUserRoot文件夹并在其中添加代理签名图像。
 
-   1. 转到`https://'[server]:[port]'/crx/explorer/index.jsp`。 如有必要，以管理员身份登录。
+   1. 转到 `https://'[server]:[port]'/crx/explorer/index.jsp`. 如有必要，以管理员身份登录。
    1. 单击&#x200B;**内容资源管理器**。 内容资源管理器将在新窗口中打开。
    1. 在内容资源管理器中，导航到cmUserRoot文件夹并将其选定。 右键单击&#x200B;**cmUserRoot**&#x200B;文件夹并选择&#x200B;**新建节点**。
 
@@ -58,19 +56,19 @@ agentFolder DDE的值从Correspondence Management配置属性的CMUserRoot配置
 
       **名称：** JohnDoe（或代理签名文件的名称）
 
-      **类型：** nt：file
+      **类型：** nt:file
 
       在`cmUserRoot`文件夹下，将创建一个名为`JohnDoe`的新文件夹（或您在上一步中提供的名称）。
 
    1. 单击您已创建的新文件夹（此处`JohnDoe`）。 内容资源管理器将文件夹的内容显示为灰色。
 
-   1. 双击&#x200B;**jcr：content**&#x200B;属性，将其类型设置为&#x200B;**nt：resource**，然后单击绿色复选标记保存该条目。
+   1. 双击&#x200B;**jcr:content**&#x200B;属性，将其类型设置为&#x200B;**nt:resource**，然后单击绿色复选标记保存该条目。
 
-      如果属性不存在，请先创建一个名为jcr：content的属性。
+      如果属性不存在，请先创建名为jcr:content的属性。
 
-      ![jcr：content属性](assets/3_jcrcontentntresource.png)
+      ![jcr:content属性](assets/3_jcrcontentntresource.png)
 
-      jcr：content的子属性中包括jcr：data，它呈灰显状态。 双击jcr：data。 该属性将变为可编辑，并且条目中会显示“选择文件”按钮。 单击&#x200B;**选择文件**，然后选择要用作徽标的图像文件。 图像文件无需扩展名。
+      jcr:content的子属性中包含jcr:data，该子属性呈暗灰色。 双击jcr:data。 该属性将变为可编辑，并且条目中会显示“选择文件”按钮。 单击&#x200B;**选择文件**，然后选择要用作徽标的图像文件。 图像文件无需扩展名。
 
       ![JCR数据](assets/5_jcrdata.png)
 

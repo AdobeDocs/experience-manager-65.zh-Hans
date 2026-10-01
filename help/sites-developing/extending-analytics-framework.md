@@ -1,5 +1,5 @@
 ---
-title: 自定义Adobe Analytics框架
+title: 自定义 Adobe Analytics 框架
 description: 了解如何为Adobe Experience Manager自定义Adobe Analytics框架。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Integration
 role: Developer
 source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
 workflow-type: tm+mt
-source-wordcount: '1610'
+source-wordcount: '1638'
 ht-degree: 0%
-
 ---
-
-# 自定义Adobe Analytics框架{#customizing-the-adobe-analytics-framework}
+# 自定义 Adobe Analytics 框架{#customizing-the-adobe-analytics-framework}
 
 Adobe Analytics框架确定使用Adobe Analytics跟踪的信息。 要自定义默认框架，请使用JavaScript添加自定义跟踪，集成Adobe Analytics插件，以及更改用于跟踪的框架中的常规设置。
 
@@ -24,7 +22,7 @@ Adobe Analytics框架确定使用Adobe Analytics跟踪的信息。 要自定义�
 
 当某个页面与Adobe Analytics框架关联，并且该页面包含[对Analytics模块](/help/sites-administering/adobeanalytics.md)的引用时，将自动为该页面生成analytics.sitecatalyst.js文件。
 
-页面中的JavaScript会创建一个`s_gi`对象(s_code.js Adobe Analytics库定义了该对象)并将值分配给其属性。 对象实例的名称为`s`。 此部分中的代码示例对该`s`变量进行了多次引用。
+页面中的JavaScript会创建一个`s_gi`对象（s_code.js Adobe Analytics库定义了该对象）并将值分配给其属性。 对象实例的名称为`s`。 此部分中的代码示例对该`s`变量进行了多次引用。
 
 以下示例代码类似于analytics.sitecatalyst.js文件中的代码：
 
@@ -122,7 +120,7 @@ s.trackingServerSecure = "xxxxxxx.net";
 
 `s.prop10= 'CONSTANT';`
 
-[analytics.sitecatalyst.js](/help/sites-developing/extending-analytics-components.md)文件中的代码(包括Adobe Analytics `s-code.js`文件的内容)包含以下代码：
+[analytics.sitecatalyst.js](/help/sites-developing/extending-analytics-components.md)文件中的代码（包括Adobe Analytics `s-code.js`文件的内容）包含以下代码：
 
 `if (s.usePlugins) s.doPlugins(s)`
 
@@ -185,7 +183,7 @@ s.doPlugins=s_doPlugins;
 */
 ```
 
-analytics.sitecatalyst.js文件中的代码(包括Adobe Analytics s_code.js文件的内容)包含以下代码：
+analytics.sitecatalyst.js文件中的代码（包括Adobe Analytics s_code.js文件的内容）包含以下代码：
 
 如果(s.usePlugins) s.doPlugins(s)
 
@@ -193,7 +191,7 @@ analytics.sitecatalyst.js文件中的代码(包括Adobe Analytics s_code.js文�
 
 >[!NOTE]
 >
->请勿编辑/libs/cq/analytics/components/sitecatalyst/config.js.jsp文件。 某些AEM升级或维护任务可以重新安装原始文件，从而删除更改。
+>请勿编辑/libs/cq/analytics/components/sitecatalyst/config.js.jsp文件。 某些AEM升级或维护任务可以重新安装原始文件，从而删除您的更改。
 
 1. 在CRXDE Lite中，创建/apps/cq/analytics/components文件夹结构：
 
@@ -263,7 +261,7 @@ AEM会安装以下Adobe Analytics插件，以便默认情况下可以使用：
 
 >[!NOTE]
 >
->为插件创建客户端库文件夹。 不要向`/libs/cq/analytics/clientlibs/sitecatalyst/plugins`文件夹添加插件。 这种做法可确保在AEM重新安装或升级任务期间不会覆盖您对`sitecatalyst.plugins`类别的贡献。
+>为插件创建客户端库文件夹。 不要向`/libs/cq/analytics/clientlibs/sitecatalyst/plugins`文件夹添加插件。 这种做法可确保在AEM重新安装或升级任务期间，不会覆盖您对`sitecatalyst.plugins`类别的贡献。
 
 使用以下过程可为插件创建客户端库文件夹。 您只需执行一次此过程。 要将插件添加到客户端库文件夹，请使用以下步骤。
 
@@ -273,7 +271,7 @@ AEM会安装以下Adobe Analytics插件，以便默认情况下可以使用：
 
    * 名称：客户端库文件夹的名称，如my-plugins
 
-   * 类型：cq：ClientLibraryFolder
+   * 类型： cq:ClientLibraryFolder
 
 1. 选择您创建的客户端库文件夹，并使用右下方的属性栏添加以下属性：
 

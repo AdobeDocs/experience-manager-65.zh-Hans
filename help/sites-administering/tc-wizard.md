@@ -1,18 +1,16 @@
 ---
-title: 语言复制向导
-description: 了解如何在AdobeExperience Manager中使用语言复制向导。
+title: 语言副本向导
+description: 了解如何使用Adobe Experience Manager中的“语言复制向导”。
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
 solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '219'
-ht-degree: 22%
-
+source-wordcount: '220'
+ht-degree: 35%
 ---
-
-# 语言复制向导{#language-copy-wizard}
+# 语言副本向导{#language-copy-wizard}
 
 语言复制向导是一种用于创建和检测多语言内容结构的引导式体验。 现在，创建语言副本变得更加简单和快速。
 
@@ -40,7 +38,7 @@ ht-degree: 22%
 
    >[!NOTE]
    >
-   >默认情况下，只有一种翻译设置。要能够选择其他设置，您必须先配置云配置。请参阅[配置翻译集成框架](/help/sites-administering/tc-tic.md)。
+   >默认情况下，只有一种翻译设置。 要能够选择其他设置，您必须先配置云配置。 请参阅[配置翻译集成框架](/help/sites-administering/tc-tic.md)。
 
 1. 按&#x200B;**下一步**&#x200B;按钮可转到向导的&#x200B;**翻译**&#x200B;步骤。 在此处，您可以选择仅创建结构、创建翻译项目或添加到现有翻译项目。
 
@@ -50,6 +48,6 @@ ht-degree: 22%
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. “**创建**”按钮结束向导。
+1. 最后，该向导将显示&#x200B;**创建**&#x200B;按钮。
 
    ![chlimage_1-14](assets/chlimage_1-14.jpeg)

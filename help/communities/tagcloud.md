@@ -11,11 +11,9 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '579'
 ht-degree: 4%
-
 ---
-
 # 使用社交标签云 {#using-social-tag-cloud}
 
 ## 简介 {#introduction}
@@ -50,11 +48,11 @@ ht-degree: 4%
 
 ![social-tag-cloud](assets/social-tag-cloud.png)
 
-* **[!UICONTROL 要显示的社交标签]**
+* 要显示的&#x200B;**[!UICONTROL 社交标签]**
 确定要显示的UGC标记。 下拉选项包括：
 
-   * `From page and child pages`
-   * `All tags`
+  * `From page and child pages`
+  * `All tags`
 
   默认值为`From page and child pages`，其中“page”引用下面的&#x200B;**Page**&#x200B;设置。
 
@@ -84,8 +82,8 @@ ht-degree: 4%
 
   例如：
 
-   * 已选中：`Geometrixx Media: Gadgets / Cars`
-   * 取消选中： `Cars`
+  * 已选中：`Geometrixx Media: Gadgets / Cars`
+  * 取消选中： `Cars`
 
   简单的标记没有区别。
 
@@ -103,8 +101,8 @@ ht-degree: 4%
 
   `Geometrixx Media (the namespace)`、`Gadgets` 和 `Cars`
 
-   * 选中：如果应用，则仅显示`Cars`。
-   * 取消选中： `Geometrixx Media`、`Gadgets`和`Cars`如果应用，则显示。
+  * 选中：如果应用，则仅显示`Cars`。
+  * 取消选中： `Geometrixx Media`、`Gadgets`和`Cars`如果应用，则显示。
 
   简单标记是叶标记。
 

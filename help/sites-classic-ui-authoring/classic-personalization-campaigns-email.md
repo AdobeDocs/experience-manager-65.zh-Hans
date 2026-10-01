@@ -12,11 +12,9 @@ feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1802'
+ht-degree: 2%
 ---
-
 
 # 电子邮件营销{#e-mail-marketing}
 
@@ -29,7 +27,7 @@ ht-degree: 0%
 
 创建后，您可以立即或在另一个计划时间（通过使用工作流）向特定用户组发送新闻稿。 此外，用户可以按自己选择的格式订阅新闻稿。
 
-此外，通过AEM可以管理新闻稿功能，包括维护主题、存档新闻稿和查看新闻稿统计数据。
+此外，通过AEM可管理新闻稿功能，包括维护主题、存档新闻稿和查看新闻稿统计数据。
 
 >[!NOTE]
 >
@@ -37,14 +35,14 @@ ht-degree: 0%
 
 本文档介绍了在AEM中创建新闻稿的基础知识。 有关如何使用电子邮件营销的更多详细信息，请参阅以下文档：
 
-* [创建有效的新闻稿登陆页面](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
+* [创建高效的新闻稿登陆页面](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-landingpage.md)
 * [管理订阅](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-subscriptions.md)
 * [将电子邮件发布到电子邮件服务提供商](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-newsletters.md)
-* [跟踪退回的电子邮件](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
+* [跟踪退回电子邮件](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email-tracking-bounces.md)
 
 >[!NOTE]
 >
->如果您更新电子邮件提供商、进行外部测试或发送新闻稿，并且未先将新闻稿发布到Publish实例或者Publish实例不可用，则这些操作将失败。 请务必发布您的新闻稿，并确保Publish实例已启动并正在运行。
+>如果更新电子邮件提供商、进行外部测试或发送新闻稿，并且新闻稿未先发布到发布实例或者发布实例不可用，则这些操作将失败。 请务必发布您的新闻稿，并确保发布实例已启动并正在运行。
 
 ## 创建新闻稿体验 {#creating-a-newsletter-experience}
 
@@ -72,26 +70,26 @@ ht-degree: 0%
 
    ![页面属性对话框](assets/mcm_newnewsletterdialog.png)
 
-   * **来自名称**
-应作为新闻稿发件人显示的名称。
+   * **发件人姓名**
+     应作为新闻稿发件人显示的名称。
 
    * **发件人地址**
-应作为新闻稿发件人显示的邮件地址。
+     应作为新闻稿发件人显示的邮件地址。
 
    * **主题**
-新闻稿的主题。
+     新闻稿的主题。
 
    * **回复**
-邮件地址，负责处理已发送新闻稿的回复。
+     邮件地址，负责处理已发送新闻稿的回复。
 
    * **描述**
-新闻稿的说明。
+     新闻稿的说明。
 
-   * **开启时间**
-发送新闻稿的准时。
+   * **准时**
+     发送新闻稿的准时。
 
    * **默认收件人列表**
-应接收新闻稿的默认列表。
+     应接收新闻稿的默认列表。
 
    稍后可以从&#x200B;**属性……**&#x200B;对话框更新这些内容。
 
@@ -99,7 +97,7 @@ ht-degree: 0%
 
 ## 向新闻稿添加内容 {#adding-content-to-newsletters}
 
-您可以在新闻稿中添加内容（包括动态内容），就像在任何AEM组件中一样。 在Geometrixx中，新闻稿模板具有某些可用于在新闻稿中添加和修改内容的组件。
+您可以在新闻稿中添加内容（包括动态内容），就像在任何AEM组件中一样。 在Geometrixx中，新闻稿模板包含某些可用于在新闻稿中添加和修改内容的组件。
 
 1. 在MCM中，单击&#x200B;**促销活动**&#x200B;选项卡，然后双击要向其添加内容或编辑的新闻稿。 新闻稿随即打开。
 
@@ -205,7 +203,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您更新电子邮件提供商、进行外部测试或发送新闻稿，并且未先将新闻稿发布到Publish实例或者Publish实例不可用，则这些操作将失败。 请务必发布您的新闻稿，并确保Publish实例已启动并正在运行。
+>如果更新电子邮件提供商、进行外部测试或发送新闻稿，并且新闻稿未先发布到发布实例或者发布实例不可用，则这些操作将失败。 请务必发布您的新闻稿，并确保发布实例已启动并正在运行。
 
 试飞新闻稿：
 
@@ -234,7 +232,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->如果您更新电子邮件提供商、进行外部测试或发送新闻稿，并且未先将新闻稿发布到Publish实例或者Publish实例不可用，则这些操作将失败。 请务必发布您的新闻稿，并确保Publish实例已启动并正在运行。
+>如果更新电子邮件提供商、进行外部测试或发送新闻稿，并且新闻稿未先发布到发布实例或者发布实例不可用，则这些操作将失败。 请务必发布您的新闻稿，并确保发布实例已启动并正在运行。
 
 ### 从营销活动发送新闻稿 {#sending-newsletters-from-a-campaign}
 
@@ -295,9 +293,9 @@ ht-degree: 0%
 
 ### 订阅新闻稿 {#subscribing-to-a-newsletter-1}
 
-订阅新闻稿(以Geometrixx网站为例)：
+要订阅新闻稿（以Geometrixx网站为例），请执行以下操作：
 
-1. 单击&#x200B;**网站**&#x200B;并导航到Geometrixx **工具栏**&#x200B;并将其打开。
+1. 单击&#x200B;**网站**&#x200B;并导航到Geometrixx **工具栏**&#x200B;并打开它。
 
    ![订阅示例](assets/chlimage_1-121.png)
 
