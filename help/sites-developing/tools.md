@@ -1,10 +1,12 @@
 ---
-title: 测试和跟踪工具
+title: 测试与跟踪工具
 description: AEM提供了用于测试组件UI的框架和用于测试和调试组件的机制
+
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
+
 docset: aem65
 exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
 solution: Experience Manager, Experience Manager Sites
@@ -12,12 +14,10 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 1%
-
+source-wordcount: '293'
+ht-degree: 5%
 ---
-
-# 测试和跟踪工具{#testing-and-tracking-tools}
+# 测试与跟踪工具{#testing-and-tracking-tools}
 
 ## 测试 {#testing}
 

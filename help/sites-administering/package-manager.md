@@ -11,11 +11,9 @@ exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: c705667e60ccfbc4612ef3212dbe549e6bea66a9
 workflow-type: tm+mt
-source-wordcount: '3568'
-ht-degree: 1%
-
+source-wordcount: '3576'
+ht-degree: 2%
 ---
-
 
 # 包管理器 {#working-with-packages}
 
@@ -35,7 +33,7 @@ ht-degree: 1%
 
 ## 包管理器 {#package-manager}
 
-包管理器用于管理AEM安装中的包。 在您[分配了必要的权限](#permissions-needed-for-using-the-package-manager)之后，您可以使用包管理器执行各种操作，包括配置、生成、下载和安装包。
+包管理器会管理AEM安装中的包。 在您[分配了必要的权限](#permissions-needed-for-using-the-package-manager)之后，您可以使用包管理器执行各种操作，包括配置、生成、下载和安装包。
 
 ### 所需权限 {#required-permissions}
 
@@ -65,8 +63,8 @@ Package Manager分为四个主要功能区域：
 * **左侧导航面板** — 此面板允许您对包列表进行筛选和排序。
 * **包列表** — 这是实例上的包列表，按照左侧导航面板中的选择进行筛选和排序。
 * **活动日志** — 此面板最初最小化，并展开以详细说明包管理器的活动，如生成或安装包时。 在“活动日志”选项卡中，还有其它按钮用于：
-   * **清除日志**
-   * **显示/隐藏**
+  * **清除日志**
+  * **显示/隐藏**
 * **工具栏** — 工具栏包含用于左侧导航面板和包列表的刷新按钮以及用于搜索、创建和上传包的按钮。
 
 ![包管理器UI](assets/package-manager-ui.png)
@@ -128,7 +126,7 @@ Package Manager分为四个主要功能区域：
 | 名称 | 程序包的名称 |
 | 组 | 要组织包，可以键入新组的名称或选择现有组 |
 | 版本 | 用于版本的文本 |
-| 描述 | 允许对格式进行HTML标记的包的简短描述 |
+| 描述 | 允许使用HTML标记进行格式化的包的简短描述 |
 | 缩略图 | 与包列表一起显示的图标 |
 
 #### 包缩略图 {#thumbnails}
@@ -141,7 +139,7 @@ Package Manager分为四个主要功能区域：
 
 ![官方修补程序缩略图](assets/official-hotfix.png)
 
-扩展的官方AEM安装
+AEM正式安装扩展
 
 ![正式AEM安装或扩展缩略图](assets/official-installation.png)
 
@@ -175,7 +173,7 @@ Official Service Pack
 | include | Include将包括指定目录中与正则表达式匹配的所有文件和文件夹。 Include **将不会**&#x200B;包含指定根路径下的其他文件或文件夹。 |
 | 排除 | 排除将排除与正则表达式匹配的所有文件和文件夹。 |
 
-最常在首次[创建包时定义包筛选器。](#creating-a-new-package)但是，以后也可以编辑它们，此后应重新构建包以根据新的筛选器定义更新其内容。
+最常在您[创建包时定义包筛选器。](#creating-a-new-package) 但是，它们也可以稍后进行编辑，之后应重建包以根据新的筛选器定义更新其内容。
 
 >[!TIP]
 >
@@ -240,11 +238,11 @@ Official Service Pack
 
 1. 单击&#x200B;**确定**&#x200B;以创建包。
 
-1. AEM在程序包列表的顶部列出新程序包。
+1. AEM在包列表的顶部列出新包。
 
    ![新包](assets/new-package.png)
 
-1. 单击&#x200B;**编辑**&#x200B;以定义[包内容。完成编辑设置后，](#package-contents)单击&#x200B;**保存**。
+1. 单击&#x200B;**编辑**&#x200B;以定义[包内容。](#package-contents) 完成编辑设置后，单击&#x200B;**保存**。
 
 1. 您现在可以[生成](#building-a-package)您的包。
 
@@ -260,7 +258,7 @@ Official Service Pack
 
 1. 单击&#x200B;**生成**。 此时会出现一个对话框，要求您确认是否确实要生成包，因为任何现有的包内容都将被覆盖。
 
-1. 单击&#x200B;**确定**。 AEM会生成资源包，并在活动列表中列出添加到资源包的所有内容。 完成AEM后，将显示已生成包的确认信息，并且（关闭对话框时）会更新包列表信息。
+1. 单击&#x200B;**确定**。 AEM会生成资源包，并在活动列表中列出添加到资源包的所有内容。 完成后，AEM会显示一条确认消息，确认软件包已生成，（当您关闭对话框时）会更新软件包列表信息。
 
 ### 编辑资源包 {#edit-package}
 
@@ -365,11 +363,11 @@ Official Service Pack
 
 **检查的内容**
 
-此验证检查所有JAR文件（OSGi包）的包，提取其`manifest.xml`（包含所述OSGi包所依赖的版本依赖项），并使用正确的版本验证AEM实例导出所述依赖项。
+此验证检查所有JAR文件（OSGi包）的包，提取其`manifest.xml`（包含所述OSGi包所依赖的版本依赖项），并验证AEM实例是否以正确的版本导出所述依赖项。
 
 **报告方式**
 
-任何无法由AEM实例满足的版本化依赖项都会列在包管理器的“活动日志”中。
+任何无法由AEM实例满足的版本化依赖项都会在包管理器的活动日志中列出。
 
 **错误状态**
 
@@ -430,7 +428,7 @@ Official Service Pack
 可以通过两种不同的方式验证包：
 
 * [通过包管理器UI](#via-package-manager)
-* [通过HTTPPOST请求，例如使用cURL](#via-post-request)
+* [通过HTTP POST请求，例如使用cURL](#via-post-request)
 
 在上传包后但在安装包之前应始终进行验证。
 
@@ -446,7 +444,7 @@ Official Service Pack
 
 1. 然后，所选验证将运行，结果将显示在包管理器的活动日志中。
 
-##### 通过HTTPPOST请求验证包 {#via-post-request}
+##### 通过HTTP POST请求验证包 {#via-post-request}
 
 POST请求采用以下形式。
 
@@ -528,7 +526,7 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 ### 基于文件系统的上载和安装 {#file-system-based-upload-and-installation}
 
-安装包时，您可以完全放弃包管理器。 AEM可以检测位于主机本地文件系统上特定位置的软件包，并自动上传和安装它们。
+安装包时，您可以完全放弃包管理器。 AEM可以检测放置在主机本地文件系统上特定位置的软件包，并自动上传和安装它们。
 
 1. 在AEM安装文件夹下，jar和`license.properties`文件旁边有一个`crx-quicksart`文件夹。 在`crx-quickstart`下创建名为`install`的文件夹，生成路径`<aem-home>/crx-quickstart/install`。
 
@@ -578,13 +576,13 @@ curl -v -X POST --user admin:admin -F file=@/Users/SomeGuy/Desktop/core.wcm.comp
 
 1. 将复制资源包，并在活动日志中报告详细信息。
 
-## Software Distribution {#software-distribution}
+## 软件分发 {#software-distribution}
 
 AEM包可用于在AEM环境中创建和共享内容。
 
 [Software Distribution](https://downloads.experiencecloud.adobe.com)是一项集中式服务，旨在简化AEM包的搜索和下载。
 
-有关详细信息，请参阅[软件分发文档。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans)
+有关详细信息，请参阅[软件分发文档。](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!NOTE]
 >

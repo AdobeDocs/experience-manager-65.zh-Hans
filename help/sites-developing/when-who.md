@@ -1,5 +1,5 @@
 ---
-title: 测试 — 何时与谁？
+title: 测试——何时进行以及与谁进行？
 description: 各种角色可以参与测试和项目开发的各个阶段。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '269'
-ht-degree: 0%
-
+source-wordcount: '270'
+ht-degree: 3%
 ---
-
-# 测试 — 何时与谁？{#testing-when-and-with-whom}
+# 测试——何时进行以及与谁进行？{#testing-when-and-with-whom}
 
 各种角色可以参与测试和项目开发的各个阶段。
 
@@ -33,8 +31,8 @@ ht-degree: 0%
    <td>这些测试首先在链中，尽管在开发期间会重复/扩展。</td>
   </tr>
   <tr>
-   <td>质量保证团队</td>
-   <td><p>您需要一个质量保证团队（无论规模大小）来进行功能和性能测试。</p> <p>这些是中性的、专注的测试者 — 软件界的一条金科玉律始终规定，开发人员永远不应测试自己的作品。</p> <p>此团队的成员可以来自“日”项目团队、合作伙伴和/或您的客户团队。</p> </td>
+   <td>Assurance质量团队</td>
+   <td><p>您需要一支优质的Assurance团队（无论大小）来进行功能和性能测试。</p> <p>这些是中性的、专注的测试者 — 软件界的一条金科玉律始终规定，开发人员永远不应测试自己的作品。</p> <p>此团队的成员可以来自“日”项目团队、合作伙伴和/或您的客户团队。</p> </td>
    <td><p>第一个功能版本应该提供给测试人员（如果可能）。 尽管早期的临时版本可能会产生许多错误，但它可以就关键问题提供早期反馈。</p> </td>
   </tr>
   <tr>

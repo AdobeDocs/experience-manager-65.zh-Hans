@@ -1,20 +1,22 @@
 ---
 title: 通信管理概述
+
 description: 本主题为您提供了通信管理的概览。
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
+
 feature: Correspondence Management
 exl-id: c7f1acf3-ec2b-4a71-83a4-c71981d4cefa
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '217'
-ht-degree: 1%
-
+source-wordcount: '226'
+ht-degree: 3%
 ---
-
 # 通信管理概述 {#correspondence-management-overview}
 
 ## 简介 {#introduction}
@@ -44,5 +46,5 @@ ht-degree: 1%
 它提高了客户参与度，使您能够：
 
 * 添加交互式技术以实现双向渠道，减少书面提交
-* 使用内置的端到端文档安全功能的Protect敏感信息
+* 使用内置的端到端文档安全保护敏感信息
 * 通过客户首选的通信渠道（电子邮件、邮件、手机或传真）发送通信。
