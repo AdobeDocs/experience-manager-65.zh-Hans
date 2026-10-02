@@ -7,14 +7,12 @@ exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 solution: Experience Manager, Experience Manager Sites
 source-git-commit: 3bb516289dbff4fb3b94685b9e25360e7717776e
 workflow-type: tm+mt
-source-wordcount: '258'
-ht-degree: 63%
-
+source-wordcount: '270'
+ht-degree: 64%
 ---
-
 # 连接到 Microsoft Translator {#connecting-to-microsoft-translator}
 
-AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/)提供内置连接器以翻译页面内容或资源。 从Microsoft获取使用Microsoft Translator的许可证后，请按照本页上的说明配置连接器。
+AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business/)提供了一个内置连接器，用于翻译页面内容或资源。 从Microsoft获取使用Microsoft Translator的许可证后，请按照本页上的说明配置连接器。
 
 | 属性 | 描述 |
 |---|---|
@@ -25,12 +23,12 @@ AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business
 
 以下过程将创建 Microsoft Translator 配置。
 
-1. 在[导航面板中，](/help/sites-authoring/basic-handling.md#first-steps)单击&#x200B;**工具** > **Cloud Service** > **翻译Cloud Service**。
-1. 导航到要创建配置的位置。通常它在您的站点根中，也可以是全局默认配置。
+1. 在[导航面板中，](/help/sites-authoring/basic-handling.md#first-steps)单击&#x200B;**工具** > **云服务** > **翻译云服务**。
+1. 导航到要创建配置的位置。 通常它在您的站点根中，也可以是全局默认配置。
 1. 单击&#x200B;**创建**&#x200B;按钮。
 1. 定义您的配置。
    1. 在下拉列表中选择 **Microsoft Translator**。
-   1. 为您的配置键入标题。标题在 Cloud Service 控制台中以及页面属性下拉列表中标识该配置。
+   1. 为您的配置键入标题。 标题在 Cloud Service 控制台中以及页面属性下拉列表中标识该配置。
    1. （可选）键入一个名称以用于存储该配置的存储库节点。
 
    ![创建翻译配置](assets/create-translation-config.png)
