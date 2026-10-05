@@ -1,5 +1,5 @@
 ---
-title: 配置SSL的概述
+title: SSL 配置概述
 description: 了解如何通过配置SSL增强通信的安全性。
 contentOwner: admin
 content-type: reference
@@ -11,12 +11,10 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '211'
-ht-degree: 0%
-
+source-wordcount: '213'
+ht-degree: 3%
 ---
-
-# 配置SSL的概述 {#overview-of-configuring-ssl}
+# SSL 配置概述 {#overview-of-configuring-ssl}
 
 您可以创建安全套接字层(SSL)凭据并在应用程序服务器上配置SSL，以增强与应用程序服务器通信的安全性。
 

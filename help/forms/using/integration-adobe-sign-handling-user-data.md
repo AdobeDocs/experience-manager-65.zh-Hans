@@ -1,5 +1,5 @@
 ---
-title: 与Adobe Sign集成 | 处理用户数据
+title: 与Adobe Sign集成 |处理用户数据
 description: 了解AEM Forms与Adobe Sign的集成，以在自适应表单中进行电子签名。 它支持各种工作流的多个签名选项。
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,12 @@ exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
 solution: Experience Manager, Experience Manager Forms
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '323'
 ht-degree: 0%
-
 ---
+# 与Adobe Sign集成 |处理用户数据 {#integration-with-adobe-sign-handling-user-data}
 
-# 与Adobe Sign集成 | 处理用户数据 {#integration-with-adobe-sign-handling-user-data}
-
-[!DNL AEM Forms]与[!DNL &#x200B; Adobe Sign]集成以启用自适应表单中的电子签名工作流，以处理法律、销售、工资单、人力资源管理工作流的表单或协议。 它允许单个和多用户签名、顺序和同步签名工作流、以匿名或登录用户身份签名表单以及多种验证用户的方法。
+[!DNL AEM Forms]与[!DNL  Adobe Sign]集成以启用自适应表单中的电子签名工作流，以处理法律、销售、工资单、人力资源管理工作流的表单或协议。 它允许单个和多用户签名、顺序和同步签名工作流、以匿名或登录用户身份签名表单以及多种验证用户的方法。
 
 当签名者或多个签名者签名并提交自适应表单时，将生成包含签名者相关信息的[!DNL Adobe Sign]协议。
 
@@ -30,6 +28,6 @@ ht-degree: 0%
 
 用户数据在协议内收集，但未保存在任何服务表中。 [!DNL Adobe Sign]使管理员能够自行选择管理他们在服务中控制的数据。 [!DNL Adobe Sign]服务上的隐私管理员可以根据请求者的电子邮件地址列出或删除协议。
 
-[!DNL Adobe Sign]提供一个Web应用程序，该应用程序允许按参与者搜索协议，并在必要时删除协议。 有关详细信息，请参阅[Adobe Sign — 功能：删除用户信息](https://helpx.adobe.com/cn/sign/help/adobesign_gdpr_user_deletion.html)。
+[!DNL Adobe Sign]提供一个Web应用程序，该应用程序允许按参与者搜索协议，并在必要时删除协议。 有关详细信息，请参阅[Adobe Sign — 功能：删除用户信息](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html)。
 
-配置为使用Forms Portal提交操作的自适应表单的协议数据也保存在Forms Portal数据存储中。 要访问和删除Forms Portal数据存储中的数据，请参阅[Forms Portal | 正在处理用户数据](/help/forms/using/forms-portal-handling-user-data.md)。
+配置为使用Forms Portal提交操作的自适应表单的协议数据也保存在Forms Portal数据存储中。 要访问和删除Forms Portal数据存储中的数据，请参阅[Forms Portal |处理用户数据](/help/forms/using/forms-portal-handling-user-data.md)。

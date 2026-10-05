@@ -11,11 +11,9 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '358'
-ht-degree: 0%
-
+source-wordcount: '359'
+ht-degree: 1%
 ---
-
 # 设计和Designer{#designs-and-the-designer}
 
 >[!CAUTION]
@@ -44,7 +42,7 @@ Designer用于在AEM中使用[Classic UI](/help/release-notes/touch-ui-features-
 >
 >在设计模式下对页面所做的所有更改将保留在网站的设计节点下，并自动应用于具有相同设计的所有页面。
 
-## 您将需要什么 {#what-you-will-need}
+## 您需要什么 {#what-you-will-need}
 
 要实现您的设计，您需要：
 
