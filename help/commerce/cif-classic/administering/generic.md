@@ -11,11 +11,9 @@ feature: Commerce Integration Framework
 role: Admin, Developer
 source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
 workflow-type: tm+mt
-source-wordcount: '2907'
+source-wordcount: '2961'
 ht-degree: 2%
-
 ---
-
 # 管理通用电子商务 {#administering-generic-ecommerce}
 
 Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保留的商务信息的方法（与使用外部电子商务引擎不同）。 这包括：
@@ -30,7 +28,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 >[!NOTE]
 >
->标准AEM安装包括通用AEM (JCR)电子商务实施。
+>标准AEM安装包括通用的AEM (JCR)电子商务实施。
 >
 >它旨在用于演示目的，或作为根据您的要求进行自定义实施的基本基础。
 
@@ -118,7 +116,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
    * **Commerce提供程序**
 
-     您的[商务提供程序](/help/commerce/cif-classic/administering/concepts.md#commerce-providers)的导入程序；默认为Geometrixx。
+     您的[商业提供程序](/help/commerce/cif-classic/administering/concepts.md#commerce-providers)的导入程序；默认情况下，为Geometrixx。
 
    * **Source文件**
 
@@ -138,7 +136,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 #### 创建产品信息 — 触屏优化UI {#creating-product-information-touch-optimized-ui}
 
-1. 使用&#x200B;**产品**&#x200B;控制台(通过&#x200B;**Commerce**)导航到所需的位置。
+1. 使用&#x200B;**产品**&#x200B;控制台（通过&#x200B;**Commerce**）导航到所需的位置。
 1. 使用&#x200B;**创建**&#x200B;图标选择以下任一选项（具体取决于结构和位置）：
 
    * **创建产品**
@@ -172,7 +170,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 #### 编辑产品信息 — 触屏优化UI {#editing-product-information-touch-optimized-ui}
 
-1. 使用&#x200B;**产品**&#x200B;控制台(通过&#x200B;**Commerce**)导航到您的产品信息。
+1. 使用&#x200B;**产品**&#x200B;控制台（通过&#x200B;**Commerce**）导航到您的产品信息。
 1. 使用：
 
    * [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)
@@ -188,7 +186,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 #### 显示产品引用 — 触控优化的UI {#showing-product-references-touch-optimized-ui}
 
-1. 使用&#x200B;**产品**&#x200B;控制台(通过&#x200B;**Commerce**)导航到您的产品信息。
+1. 使用&#x200B;**产品**&#x200B;控制台（通过&#x200B;**Commerce**）导航到您的产品信息。
 1. 使用图标打开引用的辅助边栏：
 
    ![双箭头图标](/help/sites-administering/do-not-localize/chlimage_1-16.png)
@@ -329,15 +327,15 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 >
 >通常，产品信息会通过引用它的页面发布。 例如，在发布引用产品Y的页面X时，AEM会询问您是否还想发布产品Y。
 >
->对于特殊情况，AEM还支持直接从产品数据发布。
+>在特殊情况下，AEM还支持直接从产品数据发布。
 
-1. 使用&#x200B;**产品**&#x200B;控制台(通过&#x200B;**Commerce**)导航到您的产品信息。
+1. 使用&#x200B;**产品**&#x200B;控制台（通过&#x200B;**Commerce**）导航到您的产品信息。
 1. 使用：
 
    * [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)
    * [选择模式](/help/sites-authoring/basic-handling.md#navigating-and-selection-mode)
 
-   根据需要选择&#x200B;**Publish**&#x200B;或&#x200B;**取消发布**&#x200B;图标：
+   根据需要选择&#x200B;**发布**&#x200B;或&#x200B;**取消发布**&#x200B;图标：
 
    ![世界图标](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![带有十字符号的世界图标 — 无符号](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
@@ -375,7 +373,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 >
 >另请阅读AEM[&#128279;](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)中的事件处理。
 
-### 包含添加到购物车链接的图像 {#image-with-add-to-cart-links}
+### 添加到购物车图像链接 {#image-with-add-to-cart-links}
 
 使用包含添加到购物车链接的图像组件，您可以通过创建与图像上的产品链接的热点来快速将产品添加到购物车。
 
@@ -455,7 +453,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 要生成目录，请执行以下操作：
 
-1. 打开站点控制台(例如，[http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content))。
+1. 打开站点控制台（例如，[http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)）。
 1. 导航到要创建页面的位置。
 1. 要打开选项列表，请使用&#x200B;**创建**&#x200B;图标：
 
@@ -494,11 +492,11 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 1. 使用&#x200B;**分区Blueprint**&#x200B;模板创建页面。
 
-   例如：`Swimwear`。
+   例如 `Swimwear`。
 
 1. 打开新的`Swimwear`页面，然后单击&#x200B;**编辑Blueprint**。 将打开&#x200B;**属性**&#x200B;对话框，您可以设置&#x200B;**产品**&#x200B;选项。
 
-   例如，打开&#x200B;**标记/关键字**&#x200B;字段以选择“活动”，然后从“Geometrixx — 户外”部分选择“游泳”。
+   例如，打开&#x200B;**Tags/Keywords**&#x200B;字段以选择“活动”，然后从Geometrixx-Outdoors部分选择“游泳”。
 
 1. 单击&#x200B;**确定**&#x200B;以保存您的属性；示例产品显示在Blueprint页面的&#x200B;**产品选择标准**&#x200B;下。
 1. 单击&#x200B;**转出更改……**，选择&#x200B;**转出页面和所有子页面**，然后单击&#x200B;**下一步**，再单击&#x200B;**转出**。 成功完成转出后，**状态**&#x200B;指示器显示为绿色。
@@ -587,7 +585,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 1. 打开创作实例的&#x200B;**网站**&#x200B;控制台。
 1. 在左侧窗格中，选择所需的&#x200B;**营销活动**。
 1. 单击&#x200B;**新建**，选择&#x200B;**促销活动**&#x200B;模板，然后为新优惠券指定一个&#x200B;**标题**（如有必要，指定&#x200B;**名称**）。
-1. 单击&#x200B;**创建**。新的促销页面将显示在右侧窗格中。
+1. 单击&#x200B;**创建**。 新的促销页面将显示在右侧窗格中。
 
 1. 通过以下任一方式编辑&#x200B;**属性**：
 
@@ -609,7 +607,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 1. 打开创作实例的&#x200B;**网站**&#x200B;控制台。
 1. 在左侧窗格中，选择所需的&#x200B;**营销活动**。
 1. 单击&#x200B;**新建**，选择&#x200B;**优惠券**&#x200B;模板，然后为新优惠券指定一个&#x200B;**标题**（如有必要，还指定&#x200B;**名称**）。
-1. 单击&#x200B;**创建**。新凭单页面将显示在右侧窗格中。
+1. 单击&#x200B;**创建**。 新凭单页面将显示在右侧窗格中。
 
 1. 双击打开您的新优惠券页面，然后单击&#x200B;**编辑**&#x200B;并根据需要配置信息。
 1. 单击&#x200B;**确定**&#x200B;进行保存。
@@ -635,17 +633,17 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 ### 将优惠券添加到购物车 {#adding-vouchers-to-a-cart}
 
-要允许用户将优惠券添加到其购物车，您可以使用内置的&#x200B;**优惠券**&#x200B;组件(Commerce类别)。 将此项添加到显示购物车的同一页面（但这不是强制性的）。 优惠券组件只是用户可以在其中输入优惠券代码的表单，它是实际显示应用优惠券及其折扣列表的购物车组件。
+要允许用户将优惠券添加到其购物车，您可以使用内置的&#x200B;**优惠券**&#x200B;组件（Commerce类别）。 将此项添加到显示购物车的同一页面（但这不是强制性的）。 优惠券组件只是用户可以在其中输入优惠券代码的表单，它是实际显示应用优惠券及其折扣列表的购物车组件。
 
-在演示站点(Geometrixx Outdoors语 — 英语)中，您可以在购物车页面上看到实际购物车下的优惠券表单。
+在演示站点（Geometrixx Outdoors — 英语）中，您可以在购物车页面上看到实际购物车下的优惠券表单。
 
 ## 订单 {#orders}
 
 >[!NOTE]
 >
->请记住，开箱即用的AEM没有与订单相关的标准功能所需的操作，例如退回商品、更新订单状态、执行履行、生成装箱单。 它主要用于技术预览。
+>请记住，开箱即用的AEM没有与订单相关的标准功能所需的操作，例如退货、更新订单状态、履行订单和生成装箱单。 它主要用于技术预览。
 >
->AEM中的通用Order Management一直保持为基本；向导中可用的字段取决于基架：
+>AEM中的通用Order Management一直是基本的；向导中可用的字段取决于基架：
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 >
 >如果您创建自定义基架，则可以存储更多订单信息。
