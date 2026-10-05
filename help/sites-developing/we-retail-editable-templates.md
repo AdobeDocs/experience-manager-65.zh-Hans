@@ -76,4 +76,4 @@ We.Retail中的所有页面都基于可编辑的模板，允许非开发人员�
 
 有关详细信息，请参阅创作文档[创建页面模板](/help/sites-authoring/templates.md)或开发人员文档页面[模板 — 可编辑](/help/sites-developing/page-templates-editable.md)，了解有关可编辑模板的完整技术详细信息。
 
-您可能还希望调查[核心组件](/help/sites-developing/we-retail-core-components.md)。 有关核心组件的功能概述，请参阅创作文档[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)；有关技术概述，请参阅开发人员文档[开发核心组件](https://helpx.adobe.com/experience-manager/core-components/using/developing.html)。
+您可能还希望调查[核心组件](/help/sites-developing/we-retail-core-components.md)。 有关核心组件的功能概述，请参阅创作文档[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)；有关技术概述，请参阅开发人员文档[开发核心组件](https://helpx.adobe.com/cn/experience-manager/core-components/using/developing.html)。
