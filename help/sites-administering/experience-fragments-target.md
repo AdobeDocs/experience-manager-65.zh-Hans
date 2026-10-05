@@ -25,7 +25,7 @@ ht-degree: 40%
 * JSON：支持 Headless 内容交付
 * HTML 和 JSON
 
-AEM体验片段可以导出到Adobe Target中的默认工作区，也可以导出到Adobe Target的用户定义的工作区。 可使用Adobe Developer Console完成此操作，为此，AEM必须使用IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md)与Adobe Target [集成。
+AEM体验片段可以导出到Adobe Target中的默认工作区，也可以导出到Adobe Target的用户定义的工作区。 可使用Adobe Developer Console完成此操作，为此，AEM必须使用IMS[&#128279;](/help/sites-administering/setting-up-ims-integrations-for-aem.md)与Adobe Target 集成。
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ AEM体验片段可以导出到Adobe Target中的默认工作区，也可以导�
 
 需要执行各种操作：
 
-1. 您必须使用IMS](/help/sites-administering/setting-up-ims-integrations-for-aem.md)将AEM与Adobe Target集成[。
+1. 您必须使用IMS[&#128279;](/help/sites-administering/setting-up-ims-integrations-for-aem.md)将AEM与Adobe Target集成。
 
    >[!NOTE]
    >

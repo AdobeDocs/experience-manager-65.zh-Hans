@@ -29,7 +29,7 @@ ht-degree: 28%
 您还可以通过配置A4T Analytics Cloud配置，将Adobe Target配置为在定位内容时使用Adobe Target作为报表源。
 
 要找到云配置和框架，请通过&#x200B;**工具** > **部署** > **云**&#x200B;导航到&#x200B;**云服务**。 ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-在Adobe Target下，单击**显示配置**。
+在Adobe Target下，单击&#x200B;**显示配置**。
 
 ### 已设置的目标配置属性 {#provisioned-target-configuration-properties}
 
@@ -202,7 +202,7 @@ ht-degree: 28%
 
    这将打开框架页面。 Sidekick提供的组件表示来自可以映射的[Client Context](/help/sites-administering/client-context.md)或[ContextHub](/help/sites-developing/ch-configuring.md)的信息。
 
-   框架](assets/chlimage_1-162.png)的![组件
+   框架![&#128279;](assets/chlimage_1-162.png)的组件
 
 1. 将表示要用于映射的数据的客户端上下文组件拖动到放置目标。 或者，将&#x200B;**ContextHub存储**&#x200B;组件拖动到框架。
 
