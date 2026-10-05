@@ -371,7 +371,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 >[!NOTE]
 >
->另请阅读AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)中的[事件处理。
+>另请阅读AEM[&#128279;](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)中的事件处理。
 
 ### 添加到购物车图像链接 {#image-with-add-to-cart-links}
 
@@ -663,7 +663,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
    ![加号形状创建图标](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. 将打开向导。 使用&#x200B;**基本**、**内容**、**付款**&#x200B;和&#x200B;**履行**&#x200B;选项卡输入有关新订单](/help/commerce/cif-classic/administering/concepts.md#order-information)的[信息。
+1. 将打开向导。 使用&#x200B;**基本**、**内容**、**付款**&#x200B;和&#x200B;**履行**&#x200B;选项卡输入有关新订单[&#128279;](/help/commerce/cif-classic/administering/concepts.md#order-information)的信息。
 
 1. 选择&#x200B;**创建**&#x200B;以保存信息。
 
