@@ -1,20 +1,23 @@
 ---
 title: '教程：创建交互式通信 '
+
 description: 使用所有构建块创建交互式通信
+
+
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 docset: aem65
+
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '1884'
-ht-degree: 0%
-
+source-wordcount: '1914'
+ht-degree: 1%
 ---
-
 # 教程：创建交互式通信 {#tutorial-create-interactive-communication}
 
 ![09-style-your-adaptive-form-small](assets/09-style-your-adaptive-form-small.png)
@@ -179,7 +182,7 @@ ht-degree: 0%
    1. 在&#x200B;**边框**&#x200B;部分中，指定&#x200B;**1.5px**&#x200B;作为&#x200B;**边框宽度**，选择&#x200B;**实线**&#x200B;作为&#x200B;**边框样式**，并指定&#x200B;**46px**&#x200B;作为&#x200B;**边框半径**。
 
    1. 从&#x200B;**背景**&#x200B;部分中选择红色作为按钮的背景颜色。
-   1. 在&#x200B;**Dimension和位置**&#x200B;节的&#x200B;**边距**&#x200B;字段中，选择&#x200B;**同时编辑**&#x200B;图标，并将&#x200B;**右侧**&#x200B;边距设置为&#x200B;**450px**。 “顶部”、“底部”和“左侧”字段设置为空白。
+   1. 在&#x200B;**维度和位置**&#x200B;节的&#x200B;**边距**&#x200B;字段中，选择&#x200B;**同时编辑**&#x200B;图标，并将&#x200B;**右侧**&#x200B;边距设置为&#x200B;**450px**。 “顶部”、“底部”和“左侧”字段设置为空白。
 
    ![在交互式通信中插入超链接](assets/ic_web_hyperlink_new.png)
 
