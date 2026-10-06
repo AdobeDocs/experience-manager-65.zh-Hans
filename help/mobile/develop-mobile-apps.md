@@ -11,11 +11,9 @@ feature: Mobile
 role: User
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '113'
+source-wordcount: '115'
 ht-degree: 1%
-
 ---
-
 # 移动应用程序{#mobile-apps}
 
 {{ue-over-mobile}}

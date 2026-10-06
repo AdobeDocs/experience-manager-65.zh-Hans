@@ -1,28 +1,26 @@
 ---
 title: 修饰标记
-description: 呈现网页中的组件后，可以生成一个 HTML 元素，以将呈现的组件封装在其中。对于开发人员而言，AEM 可提供清晰而简单的逻辑来控制用于封装所包含组件的修饰标记。
+description: 呈现网页中的组件后，可以生成一个 HTML 元素，以将呈现的组件封装在其中。 对于开发人员而言，AEM 可提供清晰而简单的逻辑来控制用于封装所包含组件的修饰标记。
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '879'
-ht-degree: 7%
-
+source-wordcount: '890'
+ht-degree: 10%
 ---
-
 # 修饰标记{#decoration-tag}
 
-呈现网页中的组件后，可以生成一个 HTML 元素，以将呈现的组件封装在其中。这主要有两个目的：
+呈现网页中的组件后，可以生成一个 HTML 元素，以将呈现的组件封装在其中。 这主要有两个目的：
 
 * 仅当组件使用HTML元素封装时，才能对其进行编辑。
 * 包装元素用于应用提供以下功能的HTML类：
 
-   * 布局信息
-   * 样式信息
+  * 布局信息
+  * 样式信息
 
-对于开发人员而言，AEM可提供清晰而简单的逻辑来控制用于封装所包含组件的修饰标记。 是否以及如何呈现修饰标记取决于两个因素的组合，本页将深入探讨这两个因素：
+对于开发人员而言，AEM 可提供清晰而简单的逻辑来控制用于封装所包含组件的修饰标记。 是否以及如何呈现修饰标记取决于两个因素的组合，本页将深入探讨这两个因素：
 
 * 组件本身可以使用一组属性配置其修饰标记。
 * 包含组件（HTL、JSP、Dispatcher等）的脚本可以使用包含参数定义修饰标记的方面。
@@ -39,13 +37,13 @@ ht-degree: 7%
 
 可以将以下属性和节点应用于组件以控制其修饰标记的行为：
 
-* **`cq:noDecoration {boolean}`：**&#x200B;此属性可以添加到组件中，true值会强制AEM不在该组件上生成任何包装元素。
+* **`cq:noDecoration {boolean}`：**&#x200B;此属性可以添加到组件中，true值强制AEM不在该组件上生成任何包装器元素。
 
 * **`cq:htmlTag`节点：**&#x200B;此节点可以添加到组件下，并且可以具有以下属性：
 
-   * **`cq:tagName {String}`：**&#x200B;这可用于指定用于封装组件的自定义HTML标记，而不是默认的DIV元素。
-   * **`class {String}`：**&#x200B;这可用于指定要添加到包装器的CSS类名。
-   * 其他属性名称将添加为HTML属性，其字符串值与提供的值相同。
+  * **`cq:tagName {String}`：**&#x200B;这可用于指定用于封装组件的自定义HTML标记，而不是默认DIV元素。
+  * **`class {String}`：**&#x200B;这可用于指定要添加到包装器的CSS类名。
+  * 其他属性名称将添加为HTML属性，其字符串值与提供的值相同。
 
 ## 脚本控件 {#script-controls}
 
@@ -145,7 +143,7 @@ ht-degree: 7%
 当包含使用`cq:includ`e或`sling:include`的组件时，AEM中的默认行为是使用DIV封装该元素。 但是，可以通过两种方式自定义此包装：
 
 * 明确告知AEM不要使用`cq:noDecoration`封装组件。
-* 使用自定义HTML标记以使用`cq:htmlTag`/`cq:tagName`或`decorationTagName`封装组件。
+* 使用自定义HTML标记使用`cq:htmlTag`/`cq:tagName`或`decorationTagName`封装组件。
 
 ### 决策树 {#decision-tree-1}
 

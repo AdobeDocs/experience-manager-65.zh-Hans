@@ -1,22 +1,24 @@
 ---
-title: Target优惠
+title: Target 产品建议
+
 description: 在Adobe Experience Manager中创建Target选件，以便在Adobe Target中使用。
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
+
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '100'
-ht-degree: 8%
-
+source-wordcount: '104'
+ht-degree: 13%
 ---
-
-# Target优惠{#target-offers}
+# Target 产品建议{#target-offers}
 
 ## 创建Test&amp;Target优惠体验 {#creating-a-test-target-offer-experience}
 

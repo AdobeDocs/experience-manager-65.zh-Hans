@@ -1,22 +1,24 @@
 ---
-title: 在We.Retail中尝试可编辑模板
+title: 在 We.Retail 中试用可编辑模板
+
 description: 了解如何使用We.Retail在Adobe Experience Manager中试用可编辑模板。
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 0%
-
+source-wordcount: '495'
+ht-degree: 6%
 ---
-
-# 在We.Retail中尝试可编辑模板{#trying-out-editable-templates-in-we-retail}
+# 在 We.Retail 中试用可编辑模板{#trying-out-editable-templates-in-we-retail}
 
 使用可编辑模板，创建和维护模板不再只是开发人员的任务。 高级用户（称为模板作者）现在可以创建模板。 开发人员仍需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，模板作者就可以灵活地创建和配置模板，而无需开发项目。
 
@@ -57,10 +59,10 @@ We.Retail中的所有页面都基于可编辑的模板，允许非开发人员�
    * 选择现有策略或为容器创建策略
    * 定义在使用此组件时可供页面作者使用的功能，例如
 
-      * 允许的粘贴源
-      * 格式化选项
-      * 允许的段落样式
-      * 允许的特殊字符
+     * 允许的粘贴源
+     * 格式化选项
+     * 允许的段落样式
+     * 允许的特殊字符
 
    许多基于核心组件的组件允许通过可编辑的模板在组件级别配置选项，从而无需由开发人员进行自定义。
 

@@ -1,21 +1,23 @@
 ---
 title: 开箱即用的应用程序处理程序
-description: 按照本页上的说明，了解带AEM的Adobe PhoneGap Enterprise的现成处理程序。
+
+description: 阅读本页，了解带AEM的Adobe PhoneGap Enterprise的现成处理程序。
+
+
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
+
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
 source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1419'
 ht-degree: 0%
-
 ---
-
 # 开箱即用的应用程序处理程序{#out-of-the-box-app-handlers}
 
 {{ue-over-mobile}}
@@ -24,7 +26,7 @@ ht-degree: 0%
 
 * 处理程序必须实现&#x200B;*com.day.cq.contentsync.handler.ContentUpdateHandler*（直接或扩展具有此功能的类）
 * 处理程序可以扩展&#x200B;*com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* 如果处理程序更新了ContentSync缓存，则只能报告true。 错误地报告为true将允许AEM创建更新。
+* 如果处理程序更新了ContentSync缓存，则只能报告true。 如果将true报告为假，则允许AEM创建更新。
 * 仅当内容发生实际更改时，处理程序才应更新缓存。 如果不需要白色，请不要写入缓存，并避免不必要的更新创建。
 
 ## 开箱即用的处理程序 {#out-of-the-box-handlers}
@@ -43,7 +45,7 @@ ht-degree: 0%
 
 * ***includeImages - Boolean*** — 用于确定是否应包含图像的可选布尔属性。 默认值为&#x200B;*true*。
 
-   * 默认情况下，只考虑包含资源类型为foundation/components/image的图像组件。
+  * 默认情况下，只考虑包含资源类型为foundation/components/image的图像组件。
 
 * ***includeVideos — 布尔值*** — 可选布尔值属性确定是否应包含视频。 默认值为&#x200B;*true*。
 
@@ -53,13 +55,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->受此处理程序影响的图像和视频组件的资源类型通过配置&#x200B;*com.adobe.cq.mobile.platform.impl.contentsync.handler*&#x200B;的属性进行设置。*MobilePagesUpdateHandler OSGi服务*。
+>通过配置&#x200B;*com.adobe.cq.mobile.platform.impl.contentsync.handler*.*MobilePagesUpdateHandler OSGi服务*&#x200B;的属性，可以设置受此处理程序影响的图像和视频组件的资源类型。
 
 **mobilepageassets**&#x200B;收集应用程序页面资源。
 
-**mobilecontentlisting**&#x200B;列出了ContentSync zip的内容。 设备上的客户端js使用此项来执行AEM应用程序所需的初始文件复制。
+**mobilecontentlisting**&#x200B;列出了ContentSync zip的内容。 设备上的客户端JS使用此项来执行AEM应用程序所需的初始文件复制。
 
-应该将此处理程序添加到任何AEM Apps ContentSync配置中。
+应该将此处理程序添加到任何AEM应用程序ContentSync配置中。
 
 * ***类型 — 字符串 — mobilecontentlisting***
 * ***path*** — 字符串 — 保留为空，必须存在才能被视为有效的处理程序，但路径被推断为当前的ContentSync缓存。 此值将被忽略。
@@ -86,7 +88,7 @@ ht-degree: 0%
 
 **mobilecontentpackageslisting**&#x200B;列出给定应用中的AEM内容包以及要向其发出更新请求的serverURL。 这用于设备上的客户端js请求内容更新
 
-该处理程序应在AEM App Shell ContentSync配置（具有page-type=app-instance的节点）上使用
+该处理程序应在AEM应用程序外壳ContentSync配置（具有pge-type=app-instance的节点）上使用
 
 * ***类型 — 字符串 — mobilecontentpackageslisting***
 * ***path &#x200B;**-**String*** — 应用程序Shell的路径（节点的pge-type=app-instance）。
@@ -121,7 +123,7 @@ ht-degree: 0%
 
 **widgetconfig**&#x200B;包含更新的config.xml，它将通过命令中心所做的任何编辑与提供的config.xml合并在一起。 如果未包含此处理程序，则通过管理界面更改的任何应用程序详细信息将不会包含在缓存中。
 
-此处理程序应在AEM App Shell ContentSync配置（pge-type=[app-instance]的节点）上使用。
+此处理程序应在AEM应用程序外壳ContentSync配置（pge-type=[应用程序实例]的节点）上使用。
 
 * ***类型 — 字符串* - &#x200B;** widgetconfig
 * ***path &#x200B;**-**String*** — 任何应用程序Shell子节点（pge-type=[app-instance]的节点）的路径。
@@ -132,7 +134,7 @@ ht-degree: 0%
 
 在编译时使用此插件配置AMS插件以提供分析支持。
 
-该处理程序应在AEM App Shell ContentSync配置（具有page-type=app-instance的节点）上使用
+该处理程序应在AEM应用程序外壳ContentSync配置（具有pge-type=app-instance的节点）上使用
 
 * ***类型 — 字符串*** - mobileADBMobileConfigJSON
 * ***path - String*** — 应用程序shell的路径（具有pge-type=app-instance的节点或扩展/libs/mobileapps/core/components/instance的RT）
@@ -140,9 +142,9 @@ ht-degree: 0%
 
 **notificationsconfig**&#x200B;提取设备上所需的通知配置。 这些属性提取自与应用程序关联的相应推送服务云服务配置。
 
-将提取云服务jcr：content节点中的非AEM属性，并将其添加到&#x200B;**pge-notifications-config.json** JSON文件中，以包含在应用程序内容的www根中。
+已提取云服务jcr:content节点中的非AEM属性，并将其添加到&#x200B;**pge-notifications-config.json** JSON文件中以包含在应用程序内容的www根中。
 
-AEM属性是使用“cq”、“sling”或“jcr”进行命名空间的属性。 可以使用content-sync配置节点上的“excludeProperties”属性排除其他属性。
+AEM资产是使用“cq”、“sling”或“jcr”进行命名空间的资产。 可以使用content-sync配置节点上的“excludeProperties”属性排除其他属性。
 
 * ***类型 — 字符串*** - notificationsconfig
 * ***excludeProperties — 字符串[]*** — 要排除的属性
@@ -152,9 +154,9 @@ AEM属性是使用“cq”、“sling”或“jcr”进行命名空间的属性�
 * ***类型 — 字符串*** - contentsyncconfigcontent
 * ***path — 字符串*** — 指向以下项之一的路径：
 
-   * 其他ContentSync配置
-   * 到内容包（将使用其phonegap-exportTemplate属性来查找其ContentSync配置）
-   * 到移动设备资源（应用程序内容将位于该资源下，如果这些内容包的page-includeInBuild属性为true，则使用phonegap-exportTemplate查找其ContentSync配置）
+  * 其他ContentSync配置
+  * 到内容包（将使用其phonegap-exportTemplate属性来查找其ContentSync配置）
+  * 到移动设备资源（应用程序内容将位于该资源下，如果这些内容包的page-includeInBuild属性为true，则使用phonegap-exportTemplate查找其ContentSync配置）
 
 * ***autoCreateFirstUpdateBeforeImport - Boolean*** — 如果为true，则在导入之前在目标配置中创建初始&#x200B;**更新**（如果一次不存在）
 

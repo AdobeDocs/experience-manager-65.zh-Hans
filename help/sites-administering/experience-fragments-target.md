@@ -12,11 +12,9 @@ feature: Integration
 role: Admin
 source-git-commit: dcb55b3b185fe5dccf52377a12556e33d818e410
 workflow-type: tm+mt
-source-wordcount: '1438'
-ht-degree: 41%
-
+source-wordcount: '1487'
+ht-degree: 40%
 ---
-
 # 将体验片段导出到 Adobe Target{#exporting-experience-fragments-to-adobe-target}
 
 您可以将在Adobe Experience Manager (AEM)中创建的[体验片段](/help/sites-authoring/experience-fragments.md)导出到Adobe Target (Target)。 然后，可以将它们用作Target活动中的选件，以大规模测试和个性化体验。
@@ -27,7 +25,7 @@ ht-degree: 41%
 * JSON：支持 Headless 内容交付
 * HTML 和 JSON
 
-AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也可以导出到Adobe Target的用户定义的工作区。 可使用Adobe Developer Console完成此操作，为此，AEM必须使用IMS[&#128279;](/help/sites-administering/setting-up-ims-integrations-for-aem.md)与Adobe Target 集成。
+AEM体验片段可以导出到Adobe Target中的默认工作区，也可以导出到Adobe Target的用户定义的工作区。 可使用Adobe Developer Console完成此操作，为此，AEM必须使用IMS[&#128279;](/help/sites-administering/setting-up-ims-integrations-for-aem.md)与Adobe Target 集成。
 
 >[!NOTE]
 >
@@ -37,11 +35,11 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 >[!NOTE]
 >
->Adobe Target 本身没有 Adobe Target 工作区。可以在Adobe IMS (Identity Management System)中定义和管理这些工作区，然后使用Adobe Developer Console中的集成选择它们以便跨解决方案使用。
+>Adobe Target 本身没有 Adobe Target 工作区。 可以在Adobe IMS (Identity Management System)中定义和管理这些工作区，然后使用Adobe Developer Console中的集成选择它们以便跨解决方案使用。
 
 >[!NOTE]
 >
->Adobe Target 工作区可用于允许组织（组）的成员仅为该组织创建和管理选件和活动；不向其他用户授予访问权限。例如，全球关注的国家/地区特定的组织。
+>Adobe Target 工作区可用于允许组织（组）的成员仅为该组织创建和管理产品建议和活动；不向其他用户授予访问权限。 例如，全球关注的国家/地区特定的组织。
 
 >[!NOTE]
 >
@@ -67,7 +65,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
    >[!NOTE]
    >
-   >对于默认情况下未涵盖的链接重写，可以使用[体验片段链接重写器提供程序](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html)。利用它，可以为您的实例开发自定义规则。
+   >对于默认情况下未涵盖的链接重写，可以使用[体验片段链接重写器提供程序](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html)。 利用它，可以为您的实例开发自定义规则。
 
 ## 添加云配置 {#add-the-cloud-configuration}
 
@@ -96,7 +94,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
    >[!NOTE]
    >
-   >可以自定义体验片段选件的 JSON 格式。为此，请定义一个客户体验片段组件，然后注明如何在组件“Sling模型”中导出其属性。
+   >可以自定义体验片段产品建议的 JSON 格式。 为此，请定义一个客户体验片段组件，然后注明如何在组件“Sling模型”中导出其属性。
    >
    >请参阅核心组件：
    >
@@ -113,9 +111,9 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
    >
    >Externalizer域是可选的。
    >
-   >如果您希望导出的内容指向特定的&#x200B;*发布*&#x200B;域，可配置AEM外部化器。 有关详细信息，请参阅[配置AEM链接外部化器](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)。
+   >如果您希望导出的内容指向特定的&#x200B;*发布*&#x200B;域，可配置AEM外部化器。 有关更多详细信息，请参阅[配置AEM链接外部化器](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)。
    >
-   >另请注意，外部化器域仅与发送到 Target 的体验片段的内容相关，与查看选件内容等元数据无关。
+   >另请注意，外部化器域仅与发送到 Target 的体验片段的内容相关，与查看产品建议内容等元数据无关。
 
    例如，对于文件夹：
 
@@ -127,7 +125,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 >[!CAUTION]
 >
->对于媒体资源（例如图像），仅将引用导出到 Target。资源本身仍存储在 AEM Assets 中，并且从 AEM 发布实例进行交付。
+>对于媒体资源（例如图像），仅将引用导出到 Target。 资源本身仍存储在 AEM Assets 中，并且从 AEM 发布实例进行交付。
 >
 >因此，在导出到Target之前，必须发布包含所有相关资产的体验片段。
 
@@ -146,11 +144,11 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
    >
    >如果已导出体验片段，请选择&#x200B;**在 Adobe Target 中更新**。
 
-1. 根据需要单击&#x200B;**导出而不发布**&#x200B;或&#x200B;**Publish**。
+1. 根据需要单击&#x200B;**导出而不发布**&#x200B;或&#x200B;**发布**。
 
    >[!NOTE]
    >
-   >选择&#x200B;**Publish**&#x200B;将立即发布体验片段并将其发送到Target。
+   >选择&#x200B;**发布**&#x200B;将立即发布体验片段并将其发送到Target。
 
 1. 在确认对话框中，单击&#x200B;**确定**。
 
@@ -178,21 +176,21 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 ## 删除已导出到 Adobe Target 的体验片段 {#deleting-an-experience-fragment-already-exported-to-adobe-target}
 
-如果删除已导出到Target的体验片段已在Adobe Target的选件中使用，则可能会导致出现问题。 由于 AEM 正在交付片段内容，因此，删除片段会导致选件不可用。
+如果删除已导出到Target的体验片段已在Adobe Target的选件中使用，则可能会导致出现问题。 由于 AEM 正在交付片段内容，因此，删除片段会导致产品建议不可用。
 
 避免此类情况：
 
 * 如果体验片段当前未在活动中使用，AEM 将允许用户删除片段而不显示警告消息。
-* 如果Adobe Target中的活动正在使用体验片段，则会出现一条错误消息，警告AEM用户删除该片段可能会对活动产生的后果。
+* 如果Adobe Target中的活动正在使用体验片段，则会出现一条错误消息，警告AEM用户删除该片段可能会给活动带来的后果。
 
-  AEM 中的错误消息不会禁止用户（强制）删除体验片段。如果删除体验片段：
+  AEM 中的错误消息不会禁止用户（强制）删除体验片段。 如果删除体验片段：
 
-   * 带有 AEM 体验片段的 Target 选件可能会显示意外行为
+  * 带有 AEM 体验片段的 Target 产品建议可能会显示意外行为
 
-      * 该选件可能仍会呈现，因为体验片段 HTML 已推送到 Target
-      * 如果也从 AEM 中删除了引用的资源，则体验片段中的任何引用都无法正常工作。
+    * 该产品建议可能仍会呈现，因为体验片段 HTML 已推送到 Target
+    * 如果也从 AEM 中删除了引用的资源，则体验片段中的任何引用都无法正常工作。
 
-   * 由于体验片段在AEM中不再存在，因此无法对体验片段进行任何进一步的修改。
+  * 由于体验片段在AEM中不再存在，因此无法对体验片段进行任何进一步的修改。
 
 
 ## 从导出到Target的体验片段中删除ClientLibs {#removing-clientlibs-from-fragments-exported-target}
@@ -269,7 +267,7 @@ AEM Experience Fragments可以导出到Adobe Target中的默认工作区，也�
 
 ### 注意事项 {#considerations}
 
-如果您需要在Adobe Target中使用“体验片段选件”支持AEM站点和非AEM站点，则必须创建两个体验片段（两种不同的模板类型）：
+如果您需要使用Adobe Target中的体验片段选件支持AEM站点和非AEM站点，则必须创建两个体验片段（两种不同的模板类型）：
 
 * 一个带有叠加，用于删除clientlibs/额外的html
 

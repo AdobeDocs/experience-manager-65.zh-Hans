@@ -9,11 +9,9 @@ solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f941782f9a4201e7bff898853d3fc18954418500
 workflow-type: tm+mt
-source-wordcount: '908'
-ht-degree: 3%
-
+source-wordcount: '997'
+ht-degree: 9%
 ---
-
 # 教程：创建您的第一个自适应表单 {#tutorial-create-your-first-adaptive-form}
 
 | 版本 | 文章链接 |
@@ -66,9 +64,9 @@ ht-degree: 3%
 * 创建提交操作以发送包含表单内容的电子邮件。
 * 预览并提交自适应表单。
 
-[![查看指南](assets/see-the-guide-sm.png)](create-adaptive-form.md)
+[![请参阅指南](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
-## 步骤2：创建表单数据模型 {#step-create-form-data-model}
+## 步骤 2：创建表单数据模型 {#step-create-form-data-model}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -82,7 +80,7 @@ ht-degree: 3%
 * 为表单数据模型配置读写服务。
 * 测试表单数据模型，并使用测试数据配置服务。
 
-[![查看指南](assets/see-the-guide-sm.png)](create-form-data-model.md)
+[![请参阅指南](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## 步骤3：将规则应用于自适应表单字段 {#step-apply-rules-to-adaptive-form-fields}
 
@@ -95,23 +93,23 @@ ht-degree: 3%
 * 创建规则并将其应用于自适应表单字段。
 * 使用规则触发表单数据模型服务，将数据更新到数据库。
 
-[![查看指南](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
+[![请参阅指南](assets/see-the-guide-sm.png)](apply-rules-to-adaptive-form-fields.md)
 
 ## 第4步：设置自适应表单的样式 {#step-style-your-adaptive-form}
 
 ![adaptive-form-styling](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
-自适应表单提供主题和[编辑器](../../forms/using/themes.md)以创建自适应表单的主题。 主题包含组件和面板的样式详细信息，您可以在不同的表单中重复使用主题。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。将主题应用于表单时，指定的样式会反映在表单的相应组件上。 自适应表单还支持特定于表单的样式的内联样式。
+自适应表单提供主题和[编辑器](../../forms/using/themes.md)以创建自适应表单的主题。 主题包含组件和面板的样式详细信息，您可以在不同的表单中重复使用主题。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。 将主题应用于表单时，指定的样式会反映在表单的相应组件上。 自适应表单还支持特定于表单的样式的内联样式。
 
 目标：
 
 * 将现成的主题应用于自适应表单。
 * 使用主题编辑器为自适应表单创建主题。
-* 在自定义主题中使用Web Fonts。
+* 在自定义主题中使用Web Fonts 。
 
-[![查看指南](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
+[![请参阅指南](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## 步骤5：Publish您的自适应表单 {#step-publish-your-adaptive-form}
+## 步骤5：发布自适应表单 {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
@@ -119,8 +117,8 @@ ht-degree: 3%
 
 目标：
 
-* 将自适应表单作为AEM页面Publish。
+* 将自适应表单发布为AEM页面。
 * 将自适应表单嵌入到AEM [!DNL Sites]页面中。
-* 将自适应表单嵌入到外部网页(托管在AEM外部的非AEM网页)中。
+* 将自适应表单嵌入到外部网页（托管在AEM外部的非AEM网页）中。
 
-[![查看指南](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)
+[![请参阅指南](assets/see-the-guide-sm.png)](publish-your-adaptive-form.md)

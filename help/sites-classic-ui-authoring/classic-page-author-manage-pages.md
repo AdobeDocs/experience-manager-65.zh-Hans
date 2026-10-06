@@ -11,11 +11,9 @@ feature: Authoring
 role: User
 source-git-commit: 25bf0d64b6839afec0112ea8c9fde0510e56ccf4
 workflow-type: tm+mt
-source-wordcount: '1898'
-ht-degree: 17%
-
+source-wordcount: '1916'
+ht-degree: 16%
 ---
-
 # 创建和组织页面{#creating-and-organizing-pages}
 
 本节介绍如何使用Adobe Experience Manager (AEM)创建和管理页面，以便您随后能够在这些页面上[创建内容](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md)。
@@ -79,13 +77,13 @@ ht-degree: 17%
 
 * **[标题](#title)**：
 
-   * 它会在控制台中向用户显示并在编辑中的页面内容顶部显示。
-   * 此字段为必填字段。
+  * 它会在控制台中向用户显示并在编辑中的页面内容顶部显示。
+  * 此字段为必填字段。
 
 * **[名称](#name)**：
 
-   * 用于生成 URI。
-   * 此字段的用户输入是可选的。如果未指定，名称会从标题派生。
+  * 用于生成 URI。
+  * 此字段的用户输入是可选的。 如果未指定，名称会从标题派生。
 
 创建页面时，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证页面名称。
 
@@ -106,7 +104,7 @@ ht-degree: 17%
 | 标题 | 派生的名称 |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;amp；ast；c+ | sc---c-.html |
+| SC%&amp;&amp;ast；c+ | sc—c-.html |
 
 #### 名称 {#name}
 
@@ -125,11 +123,11 @@ ht-degree: 17%
 
 ### 模板 {#templates}
 
-在 AEM 中，模板可指定特定类型的页面。模板会作为要创建的任何新页面的基础。
+在 AEM 中，模板可指定特定类型的页面。 模板会作为要创建的任何新页面的基础。
 
-模板定义页面的结构，包括缩略图图像和其他属性。 例如，您可能会有产品页面、站点地图和联系信息的单独模板。模板包括各个[组件](#components)。
+模板定义页面的结构，包括缩略图图像和其他属性。 例如，您可能会有产品页面、站点地图和联系信息的单独模板。 模板包括各个[组件](#components)。
 
-AEM 附带了一些现成的模板。所提供的模板取决于各个网站，而需要提供的信息（在创建新页面时）取决于所使用的UI。 关键的字段如下：
+AEM 附带了一些现成的模板。 所提供的模板取决于各个网站，而需要提供的信息（在创建新页面时）取决于所使用的UI。 关键的字段如下：
 
 * **标题**
 在生成的网页上显示的标题。
@@ -164,7 +162,7 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
 
    ![screen_shot_2012-02-15at114413am](assets/screen_shot_2012-02-15at114413am.png)
 
-1. 在&#x200B;**新建……**&#x200B;菜单（单击&#x200B;**新建……**&#x200B;旁边的箭头）中，选择&#x200B;**新建页面……**。 将打开&#x200B;**创建页面**&#x200B;窗口。
+1. 在&#x200B;**新建……**&#x200B;菜单（单击&#x200B;**新建……**&#x200B;旁边的箭头）中，选择&#x200B;**新建页面……**。将打开&#x200B;**创建页面**&#x200B;窗口。
 
    单击&#x200B;**新建……**&#x200B;本身也可作为&#x200B;**新建页面……**&#x200B;选项的快捷方式。
 
@@ -173,8 +171,8 @@ AEM 附带了一些现成的模板。所提供的模板取决于各个网站，�
    * 提供&#x200B;**标题**；此标题向用户显示。
    * 提供&#x200B;**名称**；用于生成URI。 如果未指定，则将从标题派生名称。
 
-      * 如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证此名称。
-      * 在经典UI中，**无法在**&#x200B;名称&#x200B;**字段中输入无效字符**。
+     * 如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证此名称。
+     * 在经典UI中，**无法在**&#x200B;名称&#x200B;**字段中输入无效字符**。
 
    * 单击要用于创建新页面的模板。
 
@@ -324,7 +322,7 @@ AEM提供将内部链接更新到要重命名或移动的页面的功能。 此�
 
 ### 锁定页面 {#locking-a-page}
 
-您可以在控制台中或者在编辑单个页面时[锁定/解锁页面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)。有关锁定页面的信息也会同时显示在这两个位置。
+您可以在控制台中或者在编辑单个页面时[锁定/解锁页面](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page)。 有关锁定页面的信息也会同时显示在这两个位置。
 
 ### 创建新文件夹 {#creating-a-new-folder}
 
