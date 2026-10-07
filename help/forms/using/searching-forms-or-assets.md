@@ -1,22 +1,25 @@
 ---
-title: 搜索表单和资源
+title: 搜索表单和资产
+
 description: 您可以使用AEM搜索在AEM实例中搜索表单和资源。 通过基本和高级搜索，您可以快速找到资源。
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '689'
-ht-degree: 3%
-
+source-wordcount: '690'
+ht-degree: 5%
 ---
-
-# 搜索表单和资源{#searching-for-forms-and-assets}
+# 搜索表单和资产{#searching-for-forms-and-assets}
 
 您可以使用文本字符串或文本字符串以及通配符来搜索表单或表单资产。 您还可以使用“搜索”面板中各种类别中可用的标准来缩小搜索范围。
 
@@ -49,7 +52,7 @@ Adobe Experience Manager在元数据属性中搜索输入的文本并返回相�
 
 ![搜索AEM表单和资源搜索的字段和参数或筛选器](assets/search_forms_assets.png)
 
-用于AEM表单和资源搜索的搜索字段和参数或筛选器
+AEM表单和资源搜索的搜索字段和参数或过滤器
 
 ### 资产路径 {#asset-path}
 
@@ -66,7 +69,7 @@ Adobe Experience Manager在元数据属性中搜索输入的文本并返回相�
 | 1 个月前 | 搜索上个月内修改的所有资源。 |
 | 1 年前 | 搜索过去一年内修改的所有资源。 |
 
-### 资源状态 {#asset-status}
+### 资产状态 {#asset-status}
 
 您可以使用以下状态之一搜索资源：
 
@@ -91,7 +94,7 @@ Adobe Experience Manager在元数据属性中搜索输入的文本并返回相�
    <td>搜索所有表单模板。<br /> </td> 
   </tr>
   <tr>
-   <td>PDF表单</td> 
+   <td>PDF 表单</td> 
    <td>搜索所有PDF文档。</td> 
   </tr>
   <tr>

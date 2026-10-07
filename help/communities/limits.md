@@ -11,11 +11,9 @@ solution: Experience Manager
 feature: Communities
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '436'
 ht-degree: 0%
-
 ---
-
 # 成员贡献限制 {#member-contribution-limits}
 
 ## 概述 {#overview}
@@ -42,7 +40,7 @@ ht-degree: 0%
 * 使用管理员权限登录。
 * 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)。
 
-   * 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * 找到`AEM Communities User Generated Content Contribution Limits Configuration`。
 * 选择编辑图标。

@@ -1,5 +1,5 @@
 ---
-title: 正在报告中的自定义报表
+title: 流程报告中的自定义报告
 description: 您可以创建自定义报表并将这些报表添加到AEM Forms on JEE流程报表UI。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,12 +11,10 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: e821be5233fd5f6688507096790d219d25903892
 workflow-type: tm+mt
-source-wordcount: '837'
-ht-degree: 1%
-
+source-wordcount: '1053'
+ht-degree: 15%
 ---
-
-# 正在报告中的自定义报表{#custom-reports-in-process-reporting}
+# 流程报告中的自定义报告{#custom-reports-in-process-reporting}
 
 您可以使用QueryBuilder的REST接口，或使用QueryBuilder API创建OSGi服务以创建自定义报表。
 
