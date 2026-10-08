@@ -15,9 +15,9 @@ ht-degree: 9%
 ---
 # AEM 6.5 中的 Forms 存储库重构{#forms-repository-restructuring-in-aem}
 
-如AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Forms解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
+如AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Forms解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
-升级为6.5的&#x200B;****
+升级为6.5的&#x200B;**&#x200B;**
 
 * [杂项](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 

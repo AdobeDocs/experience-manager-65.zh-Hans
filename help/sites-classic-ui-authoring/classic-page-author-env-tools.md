@@ -39,7 +39,7 @@ AEM的创作环境提供了各种可用于组织和编辑内容的机制。 可�
 
 可从AEM中直接访问各种&#x200B;**帮助**&#x200B;资源：
 
-除了从控制台工具栏](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)访问[帮助外，您还可以从sidekick访问帮助(使用？ 图标)在编辑页面时：
+除了从控制台工具栏[&#128279;](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help)访问帮助外，您还可以从sidekick访问帮助(使用？ 图标)在编辑页面时：
 
 ![Sidekick已折叠](do-not-localize/sidekick-collapsed-2.png)
 
@@ -177,7 +177,7 @@ AEM会显示直接引用所选页面以及任何间接引用的所有页面。 �
 
 * [Blueprint](/help/sites-administering/msm-best-practices.md)
 
-在网站控制台](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)中可以看到其他[页面间关系。
+在网站控制台[&#128279;](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console)中可以看到其他页面间关系。
 
 ## 审核日志 {#audit-log}
 
