@@ -77,7 +77,7 @@ AI 助手支持 AEM as a Cloud Service，包括以下解决方案：
 
 **要访问 AEM 中的 AI 助手：**
 
-1. 客户必须另外签订协议才能访问 Adobe Experience Manager 中的大多数 AI 驱动的和代理式功能。 请联系您的 Adobe 代表，获取更多详情。 有关generative AI启用的工作方式，请参阅[CX Enterprise应用程序中的Generative AI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai)。
+1. 客户必须另外签订协议才能访问 Adobe Experience Manager 中的大多数 AI 驱动的和代理式功能。 请联系您的 Adobe 代表，获取更多详情。 有关generative AI启用的工作方式，请参阅[CX Enterprise应用程序中的Generative AI](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai)。
 
 1. 您的组织获得此协议后，所有用户都可以在默认情况下使用AI Assistant获取产品知识。 不需要额外的每个用户或每个组权限。
 
