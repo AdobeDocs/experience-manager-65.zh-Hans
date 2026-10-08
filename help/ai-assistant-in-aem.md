@@ -62,7 +62,7 @@ AI 助手支持 AEM as a Cloud Service，包括以下解决方案：
 
 以下这段时长 3 分 25 秒的视频分步介绍了 AEM 中的 AI 助手。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475368/?captions=chi_hans&learn=on&enablevpops)
 
 ## 获取 AEM 中 AI 助手的访问权限{#get-access}
 
