@@ -14,9 +14,7 @@ source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '267'
 ht-degree: 0%
-
 ---
-
 # 叠加Communities组件 {#overlay-communities-components}
 
 [覆盖](/help/communities/client-customize.md#overlays)默认组件的目的是在全局范围内更改组件的外观或行为（针对对该组件的所有相对引用）。 它依赖于sling的性质，以在在/libs文件夹中进行搜索之前解析到/apps文件夹。 因此，组件的路径与默认组件的路径相同，不同之处在于它位于/apps文件夹中，而不是/libs文件夹中。

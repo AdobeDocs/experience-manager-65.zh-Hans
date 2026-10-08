@@ -1,6 +1,6 @@
 ---
-title: AEM Communities 6.4中的存储库重构
-description: 了解如何进行必要的更改，以迁移到AEM 6.4 for Communities中的新存储库结构。
+title: AEM Communities 6.4 中的存储库重构
+description: 了解如何进行必要的更改，以迁移到AEM 6.4中适用于社区的新存储库结构。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
@@ -10,12 +10,10 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 1%
-
+source-wordcount: '1034'
+ht-degree: 2%
 ---
-
-# AEM Communities 6.5中的存储库重构 {#repository-restructuring-for-aem-communities-in}
+# AEM Communities 6.5 中的存储库重构 {#repository-restructuring-for-aem-communities-in}
 
 如AEM 6.4[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Communities解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
@@ -28,12 +26,12 @@ ht-degree: 1%
 
 * [徽章配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#badging-configurations)
 * [经典社区控制台设计](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#classic-communities-console-designs)
-* [facebook社交登录配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
+* [Facebook社交登录配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
 * [语言选项配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#language-options-configurations)
 
-* [pinterest社交登录配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
+* [Pinterest社交登录配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
 * [评分配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#scoring-configurations)
-* [twitter社交登录配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
+* [Twitter社交登录配置](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
 * [杂项](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#misc)
 
 ## 6.5版升级 {#with-upgrade}
@@ -166,7 +164,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-### facebook社交登录配置 {#facebook-social-login-configurations}
+### Facebook社交登录配置 {#facebook-social-login-configurations}
 
 <table>
  <tbody>
@@ -185,11 +183,11 @@ ht-degree: 1%
     <ol>
      <li>将先前位置中的现有配置迁移到新位置。
       <ol>
-       <li>通过AEM创作UI，在<strong>工具&gt;Cloud Service&gt; Facebook社交登录配置</strong>处手动重新创建新的Facebook社交登录配置。<br /> 或 <br /> </li>
-       <li>将任何新的Facebook云配置从上一个位置复制到<code>/conf/global or /conf/&lt;tenant&gt;</code>下的相应新位置。</li>
+       <li>通过AEM创作UI，在<strong>工具&gt;云服务&gt; Facebook社交登录配置</strong>处手动重新创建新的Facebook社交登录配置。<br /> 或<br /> </li>
+       <li>将任何新的Facebook云配置从上一个位置复制到适当的新位置（位于<code>/conf/global or /conf/&lt;tenant&gt;</code>下）。</li>
       </ol> </li>
      <li>通过将<code>[cq:Page]/jcr:content@cq:conf</code>属性设置为“新位置”中的绝对路径，更新任何AEM Communities站点根以引用新的Facebook社交登录配置。</li>
-     <li>取消旧版Facebook ConnectCloud Service与任何更新为引用新位置的AEM Communities站点根的关联。</li>
+     <li>取消旧版Facebook Connect Cloud Service与任何更新为引用新位置的AEM Communities站点根的关联。</li>
     </ol> </td>
   </tr>
   <tr>
@@ -222,7 +220,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-### pinterest社交登录配置 {#pinterest-social-login-configurations}
+### Pinterest社交登录配置 {#pinterest-social-login-configurations}
 
 <table>
  <tbody>
@@ -241,11 +239,11 @@ ht-degree: 1%
     <ol>
      <li>将先前位置中的现有配置迁移到新位置。
       <ol>
-       <li>通过AEM创作UI，在<strong>工具&gt;Cloud Service&gt; Pinterest社交登录配置</strong>处手动重新创建新的Pinterest社交登录配置。<br />或</li>
+       <li>通过AEM创作UI，在<strong>工具&gt; Cloud Services &gt; Pinterest社交登录配置</strong>处手动重新创建新的Pinterest社交登录配置。<br /> 或</li>
        <li>将任何新的Pinterest云配置从上一个位置复制到<code>/conf/global or /conf/&lt;tenant&gt;</code>下的相应新位置。</li>
       </ol> </li>
      <li>通过将<code>[cq:Page]/jcr:content@cq:conf</code>属性设置为新位置中的绝对路径，更新任何AEM Communities站点根以引用新的Pinterest社交登录配置。</li>
-     <li>取消旧版Pinterest ConnectCloud Service与任何更新为引用新位置的AEM Communities站点根的关联。</li>
+     <li>取消旧版Pinterest Connect Cloud Service与任何更新为引用新位置的AEM Communities站点根的关联。</li>
     </ol> </td>
   </tr>
   <tr>
@@ -288,7 +286,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-### twitter社交登录配置 {#twitter-social-login-configurations}
+### Twitter社交登录配置 {#twitter-social-login-configurations}
 
 <table>
  <tbody>
@@ -307,11 +305,11 @@ ht-degree: 1%
     <ol>
      <li>将先前位置中的现有配置迁移到新位置。
       <ol>
-       <li>通过AEM创作UI，在<strong>工具&gt;Cloud Service&gt;Twitter社交登录配置</strong>处手动重新创建新的Twitter社交登录配置。<br /> 或 <br /> </li>
+       <li>通过AEM创作UI，在<strong>工具&gt; Cloud Services &gt; Twitter社交登录配置</strong>处手动重新创建新的Twitter社交登录配置。<br /> 或<br /> </li>
        <li>将任何新Twitter云配置从上一个位置复制到<code>/conf/global or /conf/&lt;tenant&gt;</code>下的相应新位置。</li>
       </ol> </li>
-     <li>通过将<code>[cq:Page]/jcr:content@cq:conf</code>属性设置为“新位置”中的绝对Twitter，更新任何AEM Communities站点根以引用新的社交登录配置。</li>
-     <li>取消旧版Twitter连接Cloud Service与任何更新为引用新位置的AEM Communities站点根的关联。</li>
+     <li>通过将<code>[cq:Page]/jcr:content@cq:conf</code>属性设置为新位置中的绝对路径，更新任何AEM Communities站点根以引用新的Twitter社交登录配置。</li>
+     <li>取消旧版Twitter Connect Cloud Service与任何更新为引用新位置的AEM Communities站点根的关联。</li>
     </ol> </td>
   </tr>
   <tr>
@@ -335,7 +333,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td><strong>重组指南</strong></td>
-   <td><p>Adobe在以下位置提供了迁移实用程序：</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td>
+   <td><p>Adobe在以下位置提供了一个迁移实用程序：</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td>
   </tr>
   <tr>
    <td><strong>注释</strong></td>

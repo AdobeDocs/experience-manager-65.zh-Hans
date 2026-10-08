@@ -1,5 +1,5 @@
 ---
-title: AEM Forms工作区自定义的常规步骤
+title: AEM Forms 工作区自定义的通用步骤
 description: 如何开始自定义Adobe Experience Manager Forms工作区用户界面。
 contentOwner: robhagat
 content-type: reference
@@ -12,12 +12,10 @@ feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '300'
-ht-degree: 9%
-
+source-wordcount: '302'
+ht-degree: 14%
 ---
-
-# AEM Forms工作区自定义的常规步骤 {#generic-steps-for-aem-forms-workspace-customization}
+# AEM Forms 工作区自定义的通用步骤 {#generic-steps-for-aem-forms-workspace-customization}
 
 执行任何自定义的常规步骤包括：
 
@@ -27,7 +25,7 @@ ht-degree: 9%
 1. 选择&#x200B;**[!UICONTROL 存储库]**&#x200B;选项。 在&#x200B;**[!UICONTROL 访问控制]**&#x200B;列表中，单击&#x200B;**[!UICONTROL +]**&#x200B;以添加一个条目。 再次单击&#x200B;**[!UICONTROL +]**。
 1. 搜索并选择&#x200B;**PERM_WORKSPACE_USER**&#x200B;主体。
 
-   ![选择PERM_WORKSPACE_USER主体作为自定义HTMLWorkspace的常规步骤的一部分](assets/perm_workspace_user.png)
+   ![选择PERM_WORKSPACE_USER主体作为自定义HTML Workspace的常规步骤的一部分](assets/perm_workspace_user.png)
 
 1. 将`jcr:read`权限授予主体。
 1. 单击&#x200B;**[!UICONTROL 全部保存]**。
@@ -84,7 +82,7 @@ ht-degree: 9%
 
    1. 将`/libs/ws/js/libs/jqueryui`文件夹复制到`/apps/ws/js/libs`。 单击&#x200B;**[!UICONTROL 全部保存]**。
 
-1. 对HTML自定义执行以下操作：
+1. 对HTML自定义项执行以下操作：
 
    1. 在`/apps/ws/js`下，创建名为`runtime`的文件夹。 单击&#x200B;**[!UICONTROL 全部保存]**。
 

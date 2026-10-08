@@ -8,11 +8,9 @@ exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
 solution: Experience Manager, Experience Manager Assets
 source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 0%
-
+source-wordcount: '449'
+ht-degree: 4%
 ---
-
 # 准备要翻译的资产 {#preparing-assets-for-translation}
 
 多语言资源是指具有多种语言的二进制文件、元数据和标记的资源。 通常，资产的二进制文件、元数据和标记都以一种语言存在，然后会翻译成其他语言以用于多语言项目。
@@ -46,7 +44,7 @@ ht-degree: 0%
 
 要创建语言根，请创建一个文件夹并使用ISO语言代码作为Name属性的值。 创建语言根后，您可以在语言根的任何级别创建语言副本。
 
-例如，示例层次结构的意大利语副本的根页面将`it`作为Name属性。 Name属性用作存储库中资产节点的名称，从而确定资产的路径。(`https://[aem_server]:[port]/assets.html/content/dam/it/`)。
+例如，示例层次结构的意大利语副本的根页面将`it`作为Name属性。 Name属性用作存储库中资产节点的名称，从而确定资产的路径。 (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
 1. 从[!DNL Assets]控制台中，单击&#x200B;**[!UICONTROL 创建]**，然后从菜单中选择&#x200B;**[!UICONTROL 文件夹]**。
 
@@ -56,7 +54,7 @@ ht-degree: 0%
 
    ![在文件夹中添加语言代码](assets/Add-language-code-in-folder.png)
 
-1. 单击&#x200B;**[!UICONTROL 创建]**。语言根在[!DNL Assets]控制台中创建。
+1. 单击&#x200B;**[!UICONTROL 创建]**。 语言根在[!DNL Assets]控制台中创建。
 
 ## 查看语言根 {#viewing-language-roots}
 

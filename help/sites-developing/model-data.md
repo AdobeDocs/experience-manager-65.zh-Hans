@@ -1,5 +1,5 @@
 ---
-title: 数据建模 — David Nuescheler模型
+title: 数据建模——David Nuescheler 的模型
 description: David Nuescheler的内容建模建议
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,12 +11,10 @@ feature: Developing
 role: Developer
 source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
 workflow-type: tm+mt
-source-wordcount: '1767'
-ht-degree: 0%
-
+source-wordcount: '1780'
+ht-degree: 1%
 ---
-
-# 数据建模 — David Nuescheler模型{#data-modeling-david-nuescheler-s-model}
+# 数据建模——David Nuescheler 的模型{#data-modeling-david-nuescheler-s-model}
 
 ## 源 {#source}
 
@@ -46,7 +44,7 @@ David是Day Software AG的联合创始人兼首席技术官，后者是全球内
 
 我建议不要担心ERD意义上的声明数据结构。 最初。
 
-学习在开发过程中喜爱nt：unstructured (&amp; friends)。
+了解如何在开发中喜欢nt:unstructured (&amp; friends)。
 
 我的结论是：结构非常昂贵，通常完全没有必要向底层存储显式声明结构。
 
@@ -173,11 +171,11 @@ JCR引入了工作区的抽象概念，使得许多开发人员不知道如何�
 
 如果内容模型泄露的内容甚至远程闻起来像文件或文件夹，我尝试使用（或扩展）`nt:file`、`nt:folder`和`nt:resource`。
 
-根据我的经验，许多通用应用程序允许隐式与nt：folder和nt：files进行交互，并且如果它们富含其他元信息，则知道如何处理和显示这些事件。 例如，与位于JCR之上的文件服务器实施（如CIFS或WebDAV）的直接交互变为隐式交互。
+根据我的经验，许多通用应用程序允许与nt:folder和nt:files进行隐式交互，并且如果它们富含其他元信息，则知道如何处理和显示这些事件。 例如，与位于JCR之上的文件服务器实施（如CIFS或WebDAV）的直接交互变为隐式交互。
 
-我认为根据经验，可以使用以下内容：如果必须存储文件名和mime类型，则`nt:file`/`nt:resource`是很好的匹配。 如果您可以有多个“文件”，则nt：folder是存储这些文件的理想位置。
+我认为根据经验，可以使用以下内容：如果必须存储文件名和mime类型，则`nt:file`/`nt:resource`是很好的匹配。 如果您可以有多个“文件”，则nt:folder是存储这些文件的理想位置。
 
-如果必须为资源添加元信息，比如“author”或“description”属性，请扩展`nt:resource`，而不是`nt:file`。 我很少扩展nt：file，经常扩展`nt:resource`。
+如果必须为资源添加元信息，比如“author”或“description”属性，请扩展`nt:resource`，而不是`nt:file`。 我很少扩展nt:file，经常扩展`nt:resource`。
 
 #### 示例 {#example-6}
 
@@ -209,7 +207,7 @@ JCR引入了工作区的抽象概念，使得许多开发人员不知道如何�
 
 另请注意，项目可以通过路径进行标识。 而且，尽管“符号链接”对于大多数用户来说比对UNIX®文件系统中的硬链接更有意义，但是对于大多数应用程序而言，引用目标节点也是有意义的。
 
-更重要的是，它是&#x200B;**mix**：referenceable，这意味着它可以在您实际必须引用它的时间点应用于节点。
+更重要的是，它是&#x200B;**mix**:referenceable，这意味着它可以在您实际必须引用它的时间点应用于节点。
 
 因此，仅仅因为您希望能够潜在引用“文档”类型的节点并不意味着您的“文档”节点类型必须从`mix:referenceable`以静态方式扩展。 这是因为可将其动态添加到“文档”的任何实例。
 
@@ -221,7 +219,7 @@ JCR引入了工作区的抽象概念，使得许多开发人员不知道如何�
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
 ```
 
-而非：
+不使用：
 
 ```xml
 [Blog]

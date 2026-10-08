@@ -1,5 +1,5 @@
 ---
-title: 页面模板 — 静态
+title: 页面模板（静态）
 description: 模板用于创建页面，并定义可在所选范围内使用的组件
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -12,12 +12,10 @@ feature: Developing
 role: Developer
 source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
 workflow-type: tm+mt
-source-wordcount: '1601'
-ht-degree: 1%
-
+source-wordcount: '1585'
+ht-degree: 2%
 ---
-
-# 页面模板 — 静态{#page-templates-static}
+# 页面模板（静态）{#page-templates-static}
 
 模板用于创建页面，并定义可在所选范围内使用的组件。 模板是一种节点层次结构，与要创建页面的结构相同，但没有任何实际内容。
 
@@ -32,7 +30,7 @@ ht-degree: 1%
 
 ## 模板的属性和子节点 {#properties-and-child-nodes-of-a-template}
 
-模板是cq：Template类型的节点，具有以下属性和子节点：
+模板是cq:Template类型的节点，具有以下属性和子节点：
 
 <table>
  <tbody>
@@ -42,7 +40,7 @@ ht-degree: 1%
    <td><strong>描述 <br /> </strong></td>
   </tr>
   <tr>
-   <td>.<br /> </td>
+   <td>. <br /> </td>
    <td> cq:Template</td>
    <td>当前模板。 模板为节点类型cq：Template。<br /> </td>
   </tr>
@@ -103,7 +101,7 @@ ht-degree: 1%
 
 要创建页面，必须将模板（节点树`/apps/<myapp>/template/<mytemplate>`）复制到站点树中的相应位置：如果使用&#x200B;**网站**&#x200B;选项卡创建页面，则会发生这种情况。
 
-此复制操作还会为页面提供其初始内容（通常是仅顶级内容）和属性sling：resourceType，以及用于呈现页面的页面组件的路径（子节点jcr：content中的所有内容）。
+此复制操作还会为页面提供其初始内容（通常是仅顶级内容）和属性sling:resourceType，该属性是用于呈现页面的页面组件的路径（子节点jcr:content中的所有内容）。
 
 ## 模板的结构方式 {#how-templates-are-structured}
 
@@ -114,16 +112,16 @@ ht-degree: 1%
 
 ### 模板的结构 {#the-structure-of-a-template}
 
-模板是在类型为&#x200B;**cq：Template**&#x200B;的节点下创建的。
+模板是在类型为&#x200B;**cq:Template**&#x200B;的节点下创建的。
 
 ![screen_shot_2012-02-13at63646pm](assets/screen_shot_2012-02-13at63646pm.png)
 
 可以设置各种属性，特别是：
 
-* **jcr：title** — 模板的标题；在创建页面时显示在对话框中。
-* **jcr：description** — 模板的描述；在创建页面时显示在对话框中。
+* **jcr:title** — 模板的标题；在创建页面时显示在对话框中。
+* **jcr:description** — 模板的描述；在创建页面时显示在对话框中。
 
-此节点包含一个jcr：content (cq：PageContent)节点，该节点用作结果页面的内容节点的基础；此节点使用sling：resourceType引用要用于呈现新页面实际内容的组件。
+此节点包含一个jcr:content (cq:PageContent)节点，该节点用作结果页面的内容节点的基础；此节点使用sling:resourceType引用要用于呈现新页面实际内容的组件。
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -133,19 +131,19 @@ ht-degree: 1%
 
 ### 模板生成的内容 {#the-content-produced-by-a-template}
 
-模板用于创建类型为`cq:Page`的页面（如前所述，页面是一种特殊类型的组件）。 每个AEM页都有一个结构化节点`jcr:content`。 此功能：
+模板用于创建类型为`cq:Page`的页面（如前所述，页面是一种特殊类型的组件）。 每个AEM页面都有一个结构化节点`jcr:content`。 此功能：
 
-* 属于cq：PageContent类型
+* 为cq:PageContent类型
 * 是保存定义的内容定义的结构化节点类型
 * 具有属性`sling:resourceType`，用于引用包含用于呈现内容的sling脚本的组件
 
 ### 默认模板 {#default-templates}
 
-AEM附带各种现成的默认模板。 有时，您可能希望按原样使用这些模板。 在这种情况下，必须确保模板可用于您的网站。
+AEM附带多种现成的默认模板。 有时，您可能希望按原样使用这些模板。 在这种情况下，必须确保模板可用于您的网站。
 
-例如，AEM附带多个模板，包括一个内容页和主页。
+例如，AEM附带多个模板，包括内容页面和主页。
 
-| **标题** | **Component** | **位置** | **目的** |
+| **标题** | **Component** | **位置** | **用途** |
 |---|---|---|---|
 | 主页 | homepage | geometrixx | Geometrixx主页模板。 |
 | 内容页面 | contentpage | geometrixx | Geometrixx内容页面模板。 |
@@ -160,13 +158,13 @@ AEM附带各种现成的默认模板。 有时，您可能希望按原样使用�
 1. 作为&#x200B;**类型**，选择&#x200B;**XPath**。
 
 1. 在&#x200B;**查询**&#x200B;输入字段中，输入以下字符串：
-//element(&#42;， cq：Template)
+//element(&#42;， cq:Template)
 
 1. 单击&#x200B;**执行**。 该列表显示在结果框中。
 
 通常，您会采用现有模板并开发一个新模板供您使用。 有关详细信息，请参阅[开发页面模板](#developing-page-templates)。
 
-要为您的网站启用现有模板，并且您希望在从&#x200B;**网站**&#x200B;控制台直接在&#x200B;**网站**&#x200B;下创建页面时将其显示在&#x200B;**创建页面**&#x200B;对话框中，请将模板节点的allowedPaths属性设置为： **/content(/)。&#42;)？**
+要为您的网站启用现有模板，并且您希望在从&#x200B;**网站**&#x200B;控制台直接在&#x200B;**网站**&#x200B;下创建页面时将其显示在&#x200B;**创建页面**&#x200B;对话框中，请将模板节点的allowedPaths属性设置为： **/content(/.&#42;)？**
 
 ## 模板设计的应用方式 {#how-template-designs-are-applied}
 
@@ -204,7 +202,7 @@ AEM按照以下顺序确定与内容节点最相关的样式：
 
 `/root/branch/leaf`
 
-下表描述了AEM如何选择设计。
+下表介绍了AEM如何选择设计。
 
 <table>
  <tbody>
@@ -265,11 +263,11 @@ AEM按照以下顺序确定与内容节点最相关的样式：
 
 ## 开发页面模板 {#developing-page-templates}
 
-AEM页面模板只是用于创建页面的模型。 它们可以根据需要包含尽可能少或尽可能多的初始内容，其角色是创建正确的初始节点结构，并将所需的属性（主要是sling：resourceType）设置为允许编辑和渲染。
+AEM页面模板只是用于创建页面的模型。 它们可以根据需要包含尽可能少或尽可能多的初始内容，它们的角色是创建正确的初始节点结构，并将所需的属性（主要是sling:resourceType）设置为允许编辑和渲染。
 
 ### 创建模板（基于现有模板） {#creating-a-new-template-based-on-an-existing-template}
 
-可以完全从头开始创建新模板，但通常会复制并更新现有模板，以节省您的时间和精力。 例如，可以使用Geometrixx中的模板来帮助您入门。
+可以完全从头开始创建新模板，但通常会复制并更新现有模板，以节省您的时间和精力。 例如，Geometrixx中的模板可用于帮助您入门。
 
 要基于现有模板创建模板，请执行以下操作：
 
@@ -281,7 +279,7 @@ AEM页面模板只是用于创建页面的模型。 它们可以根据需要包�
    >
    >可用模板的列表取决于新页面的位置以及在每个模板中指定的放置限制。 查看[模板可用性](#templateavailibility)。
 
-1. 更改新模板节点的&#x200B;**jcr：title**&#x200B;以反映其新角色。 您还可以更新&#x200B;**jcr：description**（如果适用）。 请确保根据需要更改页面的模板可用性。
+1. 更改新模板节点的&#x200B;**jcr:title**&#x200B;以反映其新角色。 您还可以更新&#x200B;**jcr:description**（如果适用）。 请确保根据需要更改页面的模板可用性。
 
    >[!NOTE]
    >
@@ -289,13 +287,13 @@ AEM页面模板只是用于创建页面的模型。 它们可以根据需要包�
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. 复制模板所基于的组件（由模板中&#x200B;**jcr：content**&#x200B;节点的&#x200B;**sling：resourceType**&#x200B;属性指示）以创建实例。
+1. 复制模板所基于的组件（由模板内&#x200B;**jcr:content**&#x200B;节点的&#x200B;**sling:resourceType**&#x200B;属性指示）以创建实例。
 
    组件存储在&#x200B;**/apps/&lt;网站名称>/components/&lt;组件名称>**&#x200B;中。
 
-1. 更新新组件的&#x200B;**jcr：title**&#x200B;和&#x200B;**jcr：description**。
+1. 更新新组件的&#x200B;**jcr:title**&#x200B;和&#x200B;**jcr:description**。
 1. 如果您希望在模板选择列表（大小为128 x 98像素）中显示新的缩略图，请替换thumbnail.png。
-1. 更新模板的&#x200B;**jcr：content**&#x200B;节点的&#x200B;**sling：resourceType**&#x200B;以引用新组件。
+1. 更新模板的&#x200B;**jcr:content**&#x200B;节点的&#x200B;**sling:resourceType**&#x200B;以引用新组件。
 1. 对模板、其基础组件或两者的功能或设计进行其他更改。
 
    >[!NOTE]

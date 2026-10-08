@@ -1,22 +1,24 @@
 ---
-title: 管理受邀的用户帐户和本地用户帐户
+title: 管理邀请用户和本地用户帐户
+
 description: 使用Document Security，您可以搜索、查看、编辑、锁定、解锁和删除受邀和本地用户帐户。
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
+
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1211'
 ht-degree: 0%
-
 ---
-
-# 管理受邀的用户帐户和本地用户帐户 {#managing-invited-and-local-user-accounts}
+# 管理邀请用户和本地用户帐户 {#managing-invited-and-local-user-accounts}
 
 >[!NOTE]
 > 
@@ -99,7 +101,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->对于通过AEM Forms User Management界面删除的受邀用户，只有在通过以下过程再次将其删除之后，才能将其重新激活。
+>对于通过AEM表单用户管理界面删除的受邀用户，只有在通过以下过程再次将其删除之后，才能将其重新激活。
 
 1. 在管理控制台中，单击“服务”>“Document Security”>“受邀用户和本地用户”，然后单击“受邀用户”选项卡。
 1. 选中一个或多个用户旁边的复选框，单击删除，然后单击确定。
@@ -132,6 +134,6 @@ ht-degree: 0%
 * 向上指的三角形表示升序。
 * 向下三角形表示降序。
 
-   1. 在管理控制台中，单击“服务”>“Document Security”>“受邀用户和本地用户”。
-   1. 要对受邀用户进行排序，请单击“受邀用户”选项卡，然后单击相应的列标题。
-   1. 要对本地用户进行排序，请单击“本地用户”选项卡，然后单击相应的列标题。
+  1. 在管理控制台中，单击“服务”>“Document Security”>“受邀用户和本地用户”。
+  1. 要对受邀用户进行排序，请单击“受邀用户”选项卡，然后单击相应的列标题。
+  1. 要对本地用户进行排序，请单击“本地用户”选项卡，然后单击相应的列标题。

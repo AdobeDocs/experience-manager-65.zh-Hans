@@ -1,5 +1,5 @@
 ---
-title: AEM表单的备份和恢复策略
+title: AEM Forms 的备份与恢复策略
 description: 了解如何实施策略以备份数据并确保数据与AEM表单数据保持同步。
 contentOwner: admin
 content-type: reference
@@ -11,30 +11,28 @@ feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1518'
-ht-degree: 0%
-
+source-wordcount: '1523'
+ht-degree: 3%
 ---
+# AEM Forms 的备份与恢复策略{#backup-and-recovery-strategy-for-aem-forms}
 
-# AEM表单的备份和恢复策略{#backup-and-recovery-strategy-for-aem-forms}
+如果您的AEM表单实施将其他自定义数据存储在其他数据库中，则您负责实施策略以备份此数据，并确保其与AEM表单数据保持同步。 此外，应用程序必须设计得足够强健，能够处理其他数据库不同步的情况。 强烈建议在事务上下文中执行任何数据库操作，以帮助保持一致状态。
 
-如果您的AEM表单实施将其他自定义数据存储在其他数据库中，则您负责实施策略以备份此数据并确保其与AEM表单数据保持同步。 此外，应用程序必须设计得足够强健，能够处理其他数据库不同步的情况。 强烈建议在事务上下文中执行任何数据库操作，以帮助保持一致状态。
-
-确定使用AEM表单的方式后，请确定必须备份哪些文件、备份频率以及备份窗口是否可用。
+在您确定如何使用AEM表单后，请确定必须备份哪些文件、备份频率以及备份窗口是否可用。
 
 >[!NOTE]
 >
->与AEM forms实施的任何其他方面一样，您的备份和恢复策略必须先在开发或暂存环境中开发和测试，然后才能用于生产，以确保整个解决方案按预期工作，且不会丢失数据。
+>与AEM forms实施的任何其他方面一样，您的备份和恢复策略必须在开发或暂存环境中开发和测试，然后才能用于生产，以确保整个解决方案按预期工作，且不会丢失数据。
 
-Adobe Experience Manager (AEM)是AEM表单的一个组成部分。 因此，您需要备份AEM以及与AEM表单备份同步，因为通信管理解决方案和服务（如表单管理器）都基于AEM表单的AEM部分中所存储的数据。为了防止任何数据丢失，必须备份AEM表单的特定数据，以确保GDS和AEM（存储库）与数据库引用关联。数据库、GDS、AEM和内容存储根目录必须还原到与原始数据库具有相同DNS名称的计算机。
+Adobe Experience Manager (AEM)是AEM表单必不可少的组成部分。 因此，您需要备份AEM以及与AEM表单同步备份，因为通信管理解决方案和服务（例如表单管理器）均基于AEM表单的AEM部分中存储的数据。为了防止任何数据丢失，必须对AEM表单特定数据进行备份，以确保GDS和AEM （存储库）与数据库引用相关联。必须将数据库、 GDS 、 AEM和Content Storage Root目录还原到与原始目录具有相同DNS名称的计算机。
 
 ## 备份类型 {#types-of-backups}
 
-AEM Forms备份策略包含两种类型的备份：
+AEM Forms备份策略涉及两种类型的备份：
 
 **系统映像：**&#x200B;如果硬盘驱动器或整个计算机停止工作，则可以用来还原计算机内容的完整系统备份。 只有在部署AEM表单之前，才需要执行系统映像备份。 然后，内部公司策略会规定系统映像备份的频率。
 
-**AEM表单特定数据：**&#x200B;数据库、全局文档存储(GDS)和AEM存储库中存在应用程序数据，必须实时备份。 GDS是用于存储进程中使用的长期文件的目录。 这些文件可能包括PDF、策略或表单模板。
+**AEM表单特定数据：**&#x200B;应用程序数据存在于数据库、全局文档存储(GDS)和AEM存储库中，必须实时备份。 GDS是用于存储进程中使用的长期文件的目录。 这些文件可能包括PDF、策略或表单模板。
 
 >[!NOTE]
 >
@@ -44,9 +42,9 @@ AEM Forms备份策略包含两种类型的备份：
 
 * **快照备份**&#x200B;模式表示AEM Forms系统处于无限期备份模式或在指定的分钟数内处于备份模式，此后不再启用备份模式。 要进入或退出快照备份模式，可以使用以下选项之一。 在恢复方案后，不应启用快照备份模式。
 
-   * 使用管理控制台中的“备份设置”页。 要进入快照模式，请选中“在安全备份模式下操作”复选框。 取消选中该复选框可退出快照模式。
-   * 使用LCBackupMode脚本（请参阅[备份数据库、GDS和内容存储根目录](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)）。 要退出快照备份模式，请在脚本参数中，将`continuousCoverage`参数设置为`false`或使用`leaveContinuousCoverage`选项。
-   * 使用提供的备份/恢复API。<!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
+  * 使用管理控制台中的“备份设置”页。 要进入快照模式，请选中“在安全备份模式下操作”复选框。 取消选中该复选框可退出快照模式。
+  * 使用LCBackupMode脚本（请参阅[备份数据库、GDS和内容存储根目录](/help/forms/using/admin-help/backing-aem-forms-data.md#back-up-the-database-gds-aem-repository-and-content-storage-root-directories)）。 要退出快照备份模式，请在脚本参数中，将`continuousCoverage`参数设置为`false`或使用`leaveContinuousCoverage`选项。
+  * 使用提供的备份/恢复API。<!-- Fix broken link(see AEM forms API Reference section on AEM Forms Help and Tutorials page).-->
 
 * **正在滚动备份**&#x200B;模式表示系统始终处于备份模式，一旦释放上一个会话，就会启动新的备份模式会话。 没有超时与滚动备份模式相关联。 当调用LCBackupMode脚本或API离开滚动备份模式时，将开始新的滚动备份模式会话。 此模式在支持连续备份时非常有用，但仍允许从GDS目录中清除旧文档和不需要的文档。 不支持通过“备份和恢复”页滚动备份模式。 恢复方案后，仍启用滚动备份模式。 您可以使用带有`leaveContinuousCoverage`选项的LCBackupMode脚本退出连续备份模式（滚动备份模式）。
 
@@ -54,7 +52,7 @@ AEM Forms备份策略包含两种类型的备份：
 >
 >退出滚动备份模式会立即启动新的备份模式会话。 要完全禁用滚动备份模式，请使用脚本中的`leaveContinuousCoverage`选项，该选项将覆盖现有的滚动备份会话。 当处于快照备份模式时，您可以像往常一样退出备份模式。
 
-为防止数据丢失，AEM表单特定数据的备份方式必须确保GDS和内容存储根目录文档与数据库引用关联。
+为防止数据丢失，AEM表单特定数据的备份方式必须确保GDS和Content Storage根目录文档与数据库引用关联。
 
 >[!NOTE]
 >
@@ -68,11 +66,11 @@ AEM Forms备份策略包含两种类型的备份：
 * 更改驱动器号或目录路径
 * 更改为其他数据库主机、端口或名称
 
-通常，此类恢复方案是由承载应用程序服务器、数据库服务器或Forms服务器的服务器的硬件故障引起的。 除了本节所述的AEM表单特定配置之外，如果AEM Forms服务器的主机名或IP地址发生更改，您还应该对AEM表单部署的其他部分（如负载平衡器和防火墙）进行必要的更改。
+通常，此类恢复方案是由承载应用程序服务器、数据库服务器或Forms服务器的服务器的硬件故障引起的。 除了本节所述的AEM表单特定配置外，如果AEM服务器的主机名或IP地址发生更改，您还应该对AEM Forms表单部署的其他部分（如负载平衡器和防火墙）进行必要的更改。
 
 ### 无法更改的内容 {#what-cannot-be-changed}
 
-即使可以更改数据库服务器和许多其他参数，在从备份中恢复AEM表单时，也不能更改应用程序服务器类型或数据库类型。 例如，如果要恢复AEM表单备份，则无法将应用程序服务器从JBoss更改为WebLogic，或将数据库从Oracle更改为DB2。 此外，恢复的AEM表单必须使用相同的文件系统路径，如fonts目录。
+即使可以更改数据库服务器和许多其他参数，但在从备份中恢复AEM表单时，也不能更改应用程序服务器类型或数据库类型。 例如，如果要恢复AEM表单备份，则无法将应用程序服务器从JBoss更改为WebLogic，或将数据库从Oracle更改为DB2。 此外，恢复的AEM表单必须使用相同的文件系统路径，例如fonts目录。
 
 ### 恢复后重新启动 {#restarting-after-a-recovery}
 
@@ -86,14 +84,14 @@ AEM Forms备份策略包含两种类型的备份：
    1. 单击&#x200B;**管理选项**。
    1. 单击&#x200B;**开始**&#x200B;从存储库同步资产。
 
-1. 在群集环境中，主节点(对于AEM)应在辅助节点之前启动。
-1. 在验证系统的正常运行之前，请确保不从内部或外部源(如Web、SOAP或EJB进程启动器)启动任何进程。
+1. 在群集环境中，主节点（对于AEM）应在辅助节点之前启动。
+1. 在验证系统的正常运行之前，请确保不从内部或外部源（如Web、SOAP或EJB进程启动器）启动任何进程。
 
 如果移动或更改了主AEM表单数据库，请查看与您的应用程序服务器相关的安装指南，以了解有关更新AEM表单数据源IDP_DS和EDC_DS的数据库连接信息的信息。
 
 >[!NOTE]
 > 
-> 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+> 建议使用 “Ctrl + C” 命令重新启动 SDK。 如果使用其他方式（例如停止 Java 进程）重新启动 AEM SDK，则可能会导致 AEM 开发环境出现不一致情况。
 
 ### 更改AEM表单主机名或IP地址 {#changing-the-aem-forms-hostname-or-ip-address}
 
@@ -109,6 +107,6 @@ AEM Forms备份策略包含两种类型的备份：
 
 >[!NOTE]
 >
->只有在这种情况下，您才应使用此脚本来更改GDS位置。 要在AEM表单运行时更改GDS位置，请使用Administration Console。 (请参阅[配置常规AEM表单设置](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*。)*
+>只有在这种情况下，您才应使用此脚本来更改GDS位置。 要在AEM表单运行时更改GDS位置，请使用Administration Console。 （请参阅[配置常规AEM表单设置](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*。） *
 
 设置GDS路径后，以维护模式启动Forms服务器，然后使用管理控制台更新新节点的剩余文件系统路径。 验证所有必需的配置均已更新后，请重新启动并测试AEM表单。

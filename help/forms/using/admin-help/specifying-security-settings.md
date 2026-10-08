@@ -1,5 +1,5 @@
 ---
-title: 指定安全设置
+title: 指定安全性设置
 description: 了解如何指定安全设置以保护XML数据文件。 安全设置功能控制XML输入中的外部实体。
 contentOwner: admin
 content-type: reference
@@ -12,11 +12,9 @@ role: User, Developer
 source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
 workflow-type: tm+mt
 source-wordcount: '101'
-ht-degree: 1%
-
+ht-degree: 7%
 ---
-
-# 指定安全设置 {#specifying-security-settings}
+# 指定安全性设置 {#specifying-security-settings}
 
 >[!NOTE]
 > 

@@ -1,5 +1,5 @@
 ---
-title: 推荐的社区拓扑
+title: 适用于 Communities 的推荐拓扑
 description: 如何处理用户生成的内容(UGC)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,24 +11,22 @@ feature: Communities
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '548'
-ht-degree: 1%
-
+source-wordcount: '552'
+ht-degree: 3%
 ---
-
-# 推荐的社区拓扑 {#recommended-topologies-for-communities}
+# 适用于 Communities 的推荐拓扑 {#recommended-topologies-for-communities}
 
 自AEM Communities 6.1起，采用了一种独特的方法来处理网站访客（成员）从发布环境提交的用户生成内容(UGC)。
 
-此方法与AEM平台处理通常从创作环境管理的站点内容的方式存在根本性的不同。
+此方法与AEM平台处理通常从创作环境管理的网站内容的方式存在根本性差异。
 
-AEM平台使用节点存储区，将站点内容从创作复制到发布，而AEM Communities使用单个通用存储区来存储UGC，且永远不会复制该存储。
+AEM平台使用一个节点存储区，将站点内容从创作复制到发布，而AEM Communities则使用单个通用存储区来存储从未复制的UGC。
 
 对于公共UGC存储，需要选择[存储资源提供程序(SRP)](working-with-srp.md)。 建议的选项包括：
 
 * [DSRP — 关系数据库存储资源提供程序](dsrp.md)
 * [MSRP - MongoDB存储资源提供程序](msrp.md)
-* [ASRP -Adobe存储资源提供程序](asrp.md)
+* [ASRP - Adobe存储资源提供程序](asrp.md)
 
 另一个SRP选项[JSRP - JCR存储资源提供程序](jsrp.md)不支持作者和发布环境同时访问公共UGC存储。
 
@@ -43,7 +41,7 @@ AEM平台使用节点存储区，将站点内容从创作复制到发布，而AE
 
 >[!NOTE]
 >
->有关AEM平台的详细信息，请参阅[建议的部署](../../help/sites-deploying/recommended-deploys.md)和[AEM平台简介](../../help/sites-deploying/data-store-config.md)。
+>有关AEM平台的更多信息，请参阅[建议的部署](../../help/sites-deploying/recommended-deploys.md)和[AEM平台简介](../../help/sites-deploying/data-store-config.md)。
 
 ## 用于生产 {#for-production}
 
@@ -61,7 +59,7 @@ AEM平台使用节点存储区，将站点内容从创作复制到发布，而AE
 
 有关Oak微内核的更多详细信息，请访问[推荐的部署](../../help/sites-deploying/recommended-deploys.md)。
 
-### TarMKPublish农场 {#tarmk-publish-farm}
+### TarMK发布场 {#tarmk-publish-farm}
 
 当拓扑是发布场时，重要的相关主题包括：
 
@@ -74,7 +72,7 @@ AEM平台使用节点存储区，将站点内容从创作复制到发布，而AE
 |-------------|------------------------|----------------------------------|---------------------------|---------------|
 | 任何 | JCR | MySQL | DSRP | 是 |
 | 任何 | JCR | MongoDB | MSRP | 是 |
-| 任何 | JCR | Adobe按需存储 | ASRP | 是 |
+| 任何 | JCR | Adobe on-demandstorage | ASRP | 是 |
 
 ### JSRP {#jsrp}
 

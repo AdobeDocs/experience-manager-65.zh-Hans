@@ -1,27 +1,30 @@
 ---
-title: 将文档传递到FormsService
+title: 将文档传递给表单服务
+
 description: 将包含表单设计的com.adobe.idp.Document对象传递到Forms服务。 Forms服务渲染com.adobe.idp.Document对象中的表单设计。
+
+
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
+
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1689'
 ht-degree: 0%
-
 ---
-
 # 将文档传递到Forms服务 {#passing-documents-to-the-formsservice}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
-AEM Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF forms，以从用户那里收集信息。 交互式PDF表单基于表单设计，该表单设计通常保存为XDP文件并在Designer中创建。 从AEM Forms开始，您可以将包含表单设计的`com.adobe.idp.Document`对象传递到Forms服务。 然后，Forms服务渲染`com.adobe.idp.Document`对象中的表单设计。
+AEM Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF forms，以从用户那里收集信息。 交互式PDF表单基于表单设计，该表单设计通常另存为XDP文件并在Designer中创建。 从AEM Forms开始，您可以将包含表单设计的`com.adobe.idp.Document`对象传递到Forms服务。 然后，Forms服务渲染`com.adobe.idp.Document`对象中的表单设计。
 
 将`com.adobe.idp.Document`对象传递到Forms服务的好处是，其他服务操作返回`com.adobe.idp.Document`实例。 也就是说，您可以从另一个服务操作获取`com.adobe.idp.Document`实例并对其进行渲染。 例如，假设XDP文件存储在名为`/Company Home/Form Designs`的Content Services（已弃用）节点中，如下图所示。
 
@@ -63,7 +66,7 @@ AEM Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF f
 
 **对表单数据流执行操作**
 
-根据客户端应用程序的类型，可以将表单写入客户端Web浏览器或将表单另存为PDF文件。 基于Web的应用程序通常将表单写入Web浏览器。 但是，桌面应用程序通常将表单保存为PDF文件。
+根据客户端应用程序的类型，您可以将表单写入客户端Web浏览器或将表单另存为PDF文件。 基于Web的应用程序通常将表单写入Web浏览器。 但是，桌面应用程序通常将表单另存为PDF文件。
 
 **另请参阅**
 
@@ -71,7 +74,7 @@ AEM Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF f
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms服务API快速启动](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[表单服务 API 快速入门](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 ## 使用Java API将文档传递到Forms服务 {#pass-documents-to-the-forms-service-using-the-java-api}
 
@@ -121,7 +124,7 @@ AEM Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF f
 
 **另请参阅**
 
-[快速入门(SOAP模式)：使用Java API将文档传递到Forms服务](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API将文档传递到Forms服务](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -151,9 +154,9 @@ AEM Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF f
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`FormsServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`FormsServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`FormsServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`FormsServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -184,7 +187,7 @@ AEM Forms服务向客户端设备（通常是Web浏览器）呈现交互式PDF f
    * 存储文件附件的`Map`对象。 此值是一个可选参数，如果您不想将文件附加到表单，则可以指定`null`。
    * 用于存储页数的长输出参数。
    * 用于存储区域设置值的字符串输出参数。
-   * 用于存储交互PDF表单`.`的`FormsResult`输出参数
+   * 用于存储交互式PDF表单`.`的`FormsResult`输出参数
 
    `renderPDFForm2`方法返回包含交互式PDF表单的`FormsResult`对象。
 
