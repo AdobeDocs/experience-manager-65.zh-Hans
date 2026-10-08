@@ -12,10 +12,8 @@ role: Admin, User, Developer
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
 source-wordcount: '145'
-ht-degree: 0%
-
+ht-degree: 5%
 ---
-
 # 了解文件夹结构 {#understanding-the-folder-structure}
 
 AEM Forms工作区组件使用骨干在MVC架构上设计。 每个组件都有一个文件，用于：
@@ -24,7 +22,7 @@ AEM Forms工作区组件使用骨干在MVC架构上设计。 每个组件都有�
 * 模板，即包含接口控件的HTML文件。
 * 视图，充当模板的Controller类。
 
-所有组件的资产都放置在如下所述的文件夹结构中。 要访问资源，请登录CRXDE Lite并浏览到`/libs/ws/js/runtime/`。
+所有组件的资产都放置在如下所述的文件夹结构中。 要访问资源，请登录CRXDE Lite并浏览至`/libs/ws/js/runtime/`。
 
 **个模型**&#x200B;包含主干模型。
 

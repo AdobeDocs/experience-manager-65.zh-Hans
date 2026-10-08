@@ -1,25 +1,28 @@
 ---
 title: 创建表单数据模型
+
 description: 了解如何在不配置数据源的情况下创建表单数据模型。
+
+
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integration
+
 docset: aem65
+
 feature: Form Data Model
 exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
 workflow-type: tm+mt
-source-wordcount: '952'
-ht-degree: 1%
-
+source-wordcount: '974'
+ht-degree: 3%
 ---
-
 # 创建表单数据模型{#create-form-data-model}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/create-form-data-models.html) |
 | AEM 6.5 | 本文 |
 
 
@@ -33,7 +36,7 @@ AEM Forms数据集成提供了一个直观的用户界面，用于创建和使�
 
 >[!NOTE]
 >
->您必须是&#x200B;**fdm-author**&#x200B;和&#x200B;**forms-user**&#x200B;组的成员才能创建和使用表单数据模型。 请联系您的AEM管理员以成为组的成员。
+>您必须是&#x200B;**fdm-author**&#x200B;和&#x200B;**forms-user**&#x200B;组的成员才能创建和使用表单数据模型。 联系AEM管理员以成为组成员。
 
 ## 创建表单数据模型 {#data-sources}
 

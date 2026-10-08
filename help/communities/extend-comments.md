@@ -13,9 +13,7 @@ source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
-
 ---
-
 # 扩展注释组件  {#extend-comments-component}
 
 [扩展](client-customize.md#extensions)默认组件的目的是为了针对特定用途更改组件的外观或行为。

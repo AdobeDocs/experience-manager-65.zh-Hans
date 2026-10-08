@@ -1,5 +1,5 @@
 ---
-title: 按值呈现Forms
+title: 按值渲染表单
 description: 使用Forms API (Java)通过Java API和Web服务API按值呈现表单。
 contentOwner: admin
 content-type: reference
@@ -9,15 +9,14 @@ topic-tags: operations
 role: Developer
 exl-id: a3a6a06d-ec90-4147-a5f0-e776a086ee12
 solution: Experience Manager, Experience Manager Forms
+
 feature: Adaptive Forms,Document Services,APIs & Integrations
 source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
 workflow-type: tm+mt
-source-wordcount: '1822'
-ht-degree: 0%
-
+source-wordcount: '1848'
+ht-degree: 1%
 ---
-
-# 按值呈现Forms {#rendering-forms-by-value}
+# 按值渲染表单 {#rendering-forms-by-value}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
@@ -35,11 +34,11 @@ Forms服务还可以解决表单设计中链接内容的位置。 例如，从�
 
 * 表单设计中不能包含相对链接的内容。 所有图像和片段必须嵌入到表单设计内或绝对引用。
 * 渲染表单后无法执行服务器端计算。 如果将表单提交回Forms服务，则会提取并返回数据，而无需任何服务器端计算。
-* 由于HTML只能在运行时使用链接的图像，因此无法生成包含嵌入图像的HTML。 这是因为Forms服务通过从引用的表单设计中检索图像来支持带有HTML的嵌入式图像。 由于按值传递的表单设计没有引用位置，因此在显示HTML页面时无法提取嵌入的图像。 因此，图像引用必须是绝对路径，才能在HTML中渲染。
+* 由于HTML只能在运行时使用链接的图像，因此无法生成具有嵌入图像的HTML。 这是因为Forms服务通过从引用的表单设计检索图像来支持使用HTML嵌入图像。 由于按值传递的表单设计没有引用位置，因此在显示HTML页面时无法提取嵌入的图像。 因此，图像引用必须是绝对路径，才能在HTML中渲染。
 
 >[!NOTE]
 >
->尽管您可以按值呈现不同类型的表单(例如，包含使用权限的HTML表单或表单)，本节将讨论如何呈现交互式PDF forms。
+>虽然您可以按值呈现不同类型的表单（例如，包含使用权限的HTML表单或表单），但本节将讨论如何呈现交互式PDF forms。
 
 >[!NOTE]
 >
@@ -93,7 +92,7 @@ Forms服务还可以解决表单设计中链接内容的位置。 例如，从�
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms服务API快速启动](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[表单服务 API 快速入门](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
 [将文档传递到Forms服务](/help/forms/developing/passing-documents-forms-service.md)
 
@@ -142,9 +141,9 @@ Forms服务还可以解决表单设计中链接内容的位置。 例如，从�
 
 **另请参阅**
 
-[按值呈现Forms](/help/forms/developing/rendering-forms.md)
+[按值渲染表单](/help/forms/developing/rendering-forms.md)
 
-[快速入门(SOAP模式)：使用Java API按值渲染](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API按值渲染](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-by-value-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -166,7 +165,7 @@ Forms服务还可以解决表单设计中链接内容的位置。 例如，从�
 1. 参考表单设计
 
    * 使用构造函数创建`java.io.FileInputStream`对象。 传递一个指定XDP文件位置的字符串值。
-   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储已用密码加密的PDF文档。
+   * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储已使用密码加密的PDF文档。
    * 创建用于存储`java.io.FileInputStream`对象的内容的字节数组。 您可以通过使用其`available`方法获取`java.io.FileInputStream`对象的大小来确定字节数组的大小。
    * 通过调用`java.io.FileInputStream`对象的`read`方法并传递字节数组，使用流数据填充字节数组。
    * 通过调用其`setBinaryData`方法并传递字节数组来填充`BLOB`对象。
@@ -199,6 +198,6 @@ Forms服务还可以解决表单设计中链接内容的位置。 例如，从�
 
 **另请参阅**
 
-[按值呈现Forms](#rendering-forms-by-value)
+[按值渲染表单](#rendering-forms-by-value)
 
 [使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

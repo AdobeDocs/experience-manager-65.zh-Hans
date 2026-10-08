@@ -12,11 +12,9 @@ solution: Experience Manager, Experience Manager Sites
 role: Developer
 source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
 workflow-type: tm+mt
-source-wordcount: '1637'
-ht-degree: 0%
-
+source-wordcount: '1651'
+ht-degree: 1%
 ---
-
 
 # AEM 标记框架 {#aem-tagging-framework}
 
@@ -36,7 +34,7 @@ ht-degree: 0%
 * 标记的内容节点的`NodeType`必须包含[`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin。
 * [`TagID`](#tagid)已添加到内容节点的[`cq:tags`](#tagged-content-cq-tags-property)属性，并解析为类型为` [cq:Tag](#tags-cq-tag-node-type)`的节点。
 
-## 标记：cq：Tag节点类型  {#tags-cq-tag-node-type}
+## 标记：cq:Tag节点类型  {#tags-cq-tag-node-type}
 
 标记声明在类型为`cq:Tag`的节点的存储库中捕获。
 
@@ -78,7 +76,7 @@ TagID包含[命名空间](#tag-namespace)，后跟本地TagID。 [容器标记](
 
 ### 标记命名空间 {#tag-namespace}
 
-命名空间允许您对事物进行分组。 最典型的使用案例是每个站点的命名空间（例如，公共、内部和门户）或大型应用程序(例如，WCM、Assets、社区)。 但命名空间可用于满足各种其他需求。 命名空间在用户界面中仅用于显示适用于当前内容的标记（即特定命名空间的标记）的子集。
+命名空间允许您对事物进行分组。 最典型的使用案例是每个站点的命名空间（例如，公共、内部和门户）或大型应用程序（例如，WCM、Assets、社区）。 但命名空间可用于满足各种其他需求。 命名空间在用户界面中仅用于显示适用于当前内容的标记（即特定命名空间的标记）的子集。
 
 标记的命名空间是分类子树中的第一个级别，它是[分类根节点](#taxonomy-root-node)正下方的节点。 命名空间是`cq:Tag`类型的节点，其父项不是`cq:Tag`节点类型。
 
@@ -129,11 +127,11 @@ TagID包含[命名空间](#tag-namespace)，后跟本地TagID。 [容器标记](
 * 允许用户/作者读取对他们应可读取的所有命名空间（大多数是所有）的访问权限。
 * 允许用户/作者写入对标记应由用户/作者自由定义的命名空间的访问权限（在`/content/cq:tags/some_namespace`下添加节点）
 
-## 可标记的内容：cq：Taggable Mixin {#taggable-content-cq-taggable-mixin}
+## 可标记的内容：cq:Taggable Mixin {#taggable-content-cq-taggable-mixin}
 
 对于要将标记附加到内容类型的应用程序开发人员，节点的注册([CND](https://jackrabbit.apache.org/jcr/node-type-notation.html))必须包含`cq:Taggable` mixin或`cq:OwnerTaggable` mixin。
 
-继承自`cq:Taggable`的`cq:OwnerTaggable` mixin旨在指示内容可由所有者/作者分类。 在AEM中，它只是`cq:PageContent`节点的特性。 标记框架不需要`cq:OwnerTaggable` mixin。
+继承自`cq:Taggable`的`cq:OwnerTaggable` mixin旨在指示内容可由所有者/作者分类。 在AEM中，它只是`cq:PageContent`节点的属性。 标记框架不需要`cq:OwnerTaggable` mixin。
 
 >[!NOTE]
 >
@@ -164,7 +162,7 @@ AEM中包含的节点类型的基本定义如下：
     mixin
 ```
 
-## 标记的内容：cq：tags属性 {#tagged-content-cq-tags-property}
+## 标记的内容： cq:tags属性 {#tagged-content-cq-tags-property}
 
 `cq:tags`属性是一个`String`数组，用于在作者或网站访客将一个或多个标记ID应用于内容时存储这些标记ID。 仅当添加到使用`[cq:Taggable](#taggable-content-cq-taggable-mixin)` mixin定义的节点时，属性才有意义。
 
@@ -178,14 +176,14 @@ AEM中包含的节点类型的基本定义如下：
 
 * 将标记A移动或合并到`/content/cq:tags`下的标记B中时：
 
-   * 标记A未删除，因此获取了`cq:movedTo`属性。
-   * 已创建标记B（如果发生了移动）并获取`cq:backlinks`属性。
+  * 标记A未删除，因此获取了`cq:movedTo`属性。
+  * 已创建标记B（如果发生了移动）并获取`cq:backlinks`属性。
 
 * `cq:movedTo`指向标记B。
 
-   * 此属性表示标记A已移动或合并到标记B中。移动标记B会相应地更新此属性。 标记A因此而隐藏，并仅保留在存储库中，以解决指向标记A的内容节点中的标记ID。标记垃圾回收器会删除标记A之类的标记，内容节点不再指向这些标记。
+  * 此属性表示标记A已移动或合并到标记B中。移动标记B会相应地更新此属性。 标记A因此而隐藏，并仅保留在存储库中，以解决指向标记A的内容节点中的标记ID。标记垃圾回收器会删除标记A之类的标记，内容节点不再指向这些标记。
 
-   * `cq:movedTo`属性的特殊值为`nirvana`。 该标记在删除标记时应用，但无法从存储库中删除，因为存在必须保留带有`cq:movedTo`的子标记。
+  * `cq:movedTo`属性的特殊值为`nirvana`。 该标记在删除标记时应用，但无法从存储库中删除，因为存在必须保留带有`cq:movedTo`的子标记。
 
   >[!NOTE]
   >
@@ -205,13 +203,13 @@ AEM中包含的节点类型的基本定义如下：
 
 * 读取内容节点的`cq:tags`属性涉及以下分辨率：
 
-   1. 如果`/content/cq:tags`下没有匹配项，则不会返回任何标记。
+  1. 如果`/content/cq:tags`下没有匹配项，则不会返回任何标记。
 
-   1. 如果标记设置了`cq:movedTo`属性，则采用引用的标记ID。
+  1. 如果标记设置了`cq:movedTo`属性，则采用引用的标记ID。
 
-      * 只要后续标记具有`cq:movedTo`属性，就重复此步骤。
+     * 只要后续标记具有`cq:movedTo`属性，就重复此步骤。
 
-   1. 如果后续标记没有`cq:movedTo`属性，则读取该标记。
+  1. 如果后续标记没有`cq:movedTo`属性，则读取该标记。
 
 * 要在移动或合并标记时发布更改，必须复制`cq:Tag`节点及其所有反向链接。 当在标记管理控制台中激活标记时，会自动执行此操作。
 
@@ -225,4 +223,4 @@ AEM中包含的节点类型的基本定义如下：
 
 自Adobe Experience Manager 6.4起，标记存储在`/content/cq:tags`下，而以前的版本将标记存储在`/etc/tags`下。
 
-从6.4之前的版本升级AEM系统时，必须将标记迁移到`/content/cq:tags`。 有关详细信息，请参阅AEM 6.5[&#128279;](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)中的常见存储库重构。
+从6.4之前的版本升级AEM系统时，必须将标记迁移到`/content/cq:tags`。 有关详细信息，请参阅[AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags)中的常见存储库重新构建。

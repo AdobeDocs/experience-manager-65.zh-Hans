@@ -1,5 +1,5 @@
 ---
-title: AEM 6.5中的Forms存储库重构
+title: AEM 6.5 中的 Forms 存储库重构
 description: 了解如何进行必要的更改，以迁移到AEM 6.5 for Forms中的新存储库结构。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,24 +10,22 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 7%
-
+source-wordcount: '521'
+ht-degree: 9%
 ---
+# AEM 6.5 中的 Forms 存储库重构{#forms-repository-restructuring-in-aem}
 
-# AEM 6.5中的Forms存储库重构{#forms-repository-restructuring-in-aem}
+如AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的父[存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Forms解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
 
-如AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到AEM 6.5的客户应使用此页面评估与影响AEM Forms解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
-
-升级为6.5的&#x200B;**&#x200B;**
+升级为6.5的&#x200B;****
 
 * [杂项](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
 **在将来升级之前**
 
-* [EchosignCloud Service配置](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
-* [RecaptchaCloud Service配置](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
-* [TypekitCloud Service配置](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#typekit-cloud-service-configurations)
+* [Echosign Cloud Service配置](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
+* [Recaptcha Cloud Service配置](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
+* [Typekit Cloud Service配置](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#typekit-cloud-service-configurations)
 * [杂项](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
 ## 6.5版升级 {#with-upgrade}
@@ -90,7 +88,7 @@ ht-degree: 7%
 
 ## 在将来升级之前 {#prior-to-upgrade}
 
-### EchosignCloud Service配置 {#echosign-cloud-service-configuration}
+### Echosign Cloud Service配置 {#echosign-cloud-service-configuration}
 
 | **上一个位置** | `/etc/cloudservices/echosign` |
 |---|---|
@@ -98,7 +96,7 @@ ht-degree: 7%
 | **重组指南** | 将从Forms迁移UI触发[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
-### RecaptchaCloud Service配置 {#recaptcha-cloud-service-configurations}
+### Recaptcha Cloud Service配置 {#recaptcha-cloud-service-configurations}
 
 | **上一个位置** | `/etc/cloudservices/recaptcha` |
 |---|---|
@@ -106,7 +104,7 @@ ht-degree: 7%
 | **重组指南** | 将从Forms迁移UI触发[延迟内容迁移](/help/sites-deploying/lazy-content-migration.md)实用程序。 |
 | **注释** | 不适用 |
 
-### TypekitCloud Service配置 {#typekit-cloud-service-configurations}
+### Typekit Cloud Service配置 {#typekit-cloud-service-configurations}
 
 | **上一个位置** | `/etc/cloudservices/typekit` |
 |---|---|

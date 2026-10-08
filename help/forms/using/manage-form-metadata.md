@@ -1,26 +1,29 @@
 ---
 title: 管理表单元数据
+
 description: 元数据允许更轻松地分类和组织资源，并帮助正在查找特定资源的用户。
+
+
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
+
 docset: aem65
+
 role: Admin,User
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1998'
 ht-degree: 2%
-
 ---
-
 # 管理表单元数据{#manage-form-metadata}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
 | AEM 6.5 | 本文 |
 
 ## 概述  {#overview-nbsp}
@@ -41,7 +44,7 @@ AEM Forms支持以下资源类型：
 
 * 表单模板（XFA表单）
 * PDF forms
-* 文档(平面PDF)
+* 文档（平面PDF）
 * 自适应表单
 * 资源
 * XFS
@@ -73,7 +76,7 @@ AEM Forms支持以下资源类型：
    <td><p>指定资源类型的只读值。 它可以具有以下值之一：</p> 
     <ul> 
      <li>表单模板</li> 
-     <li>PDF表单、PDF表单(Acroform)或PDF表单（签名）</li> 
+     <li>PDF form、PDF form (Acroform)或PDF form （签名）</li> 
      <li>文档，文档（已签署）</li> 
      <li>自适应表单</li> 
      <li>资源</li> 
@@ -94,7 +97,7 @@ AEM Forms支持以下资源类型：
    <td>除资源以外的所有其他资源</td> 
    <td><p>根据表单类型自动计算的只读值。</p> 
     <ul> 
-     <li>PDF/表单模板/文档 — 从上传的二进制文件获取。</li> 
+     <li>PDF/Form template/Document — 从上传的二进制文件获取。</li> 
      <li>自适应表单 — 创建表单时登录用户。</li> 
     </ul> </td> 
   </tr> 
@@ -114,16 +117,16 @@ AEM Forms支持以下资源类型：
    <td>一个只读值，指定上次发布表单的时间。</td> 
   </tr> 
   <tr> 
-   <td>Publish开启/结束时间</td> 
+   <td>发布开启/结束时间</td> 
    <td>除资源以外的所有其他资源</td> 
    <td><p>计划自动发布/取消发布表单的时间。 用户在编辑元数据时设置此值。</p> 
     <ul> 
-     <li>Publish的打开和关闭时间都应晚于当前日期。 </li> 
-     <li>Publish关闭时间应在发布开启时间之后。 </li> 
+     <li>发布开始时间和发布结束时间均应在当前日期之后。 </li> 
+     <li>发布关闭时间应在发布开启时间之后。 </li> 
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>提交URL</td> 
+   <td>提交 URL</td> 
    <td><p>表单模板</p> <p>PDF表单</p> </td> 
    <td><p>配置用户指定的URL以将表单数据提交到servlet。</p> <p>可以使用以下任一方法配置提交URL，并按优先级顺序列出：</p> 
     <ul> 
@@ -135,7 +138,7 @@ AEM Forms支持以下资源类型：
   <tr> 
    <td>HTML渲染配置文件</td> 
    <td>表单模板</td> 
-   <td>以HTML格式呈现表单HTML时使用的模板呈现配置文件。</td> 
+   <td>以HTML格式呈现表单模板时使用的HTML呈现配置文件。</td> 
   </tr> 
   <tr> 
    <td>渲染格式</td> 
@@ -144,7 +147,7 @@ AEM Forms支持以下资源类型：
     <ul> 
      <li>HTML</li> 
      <li>PDF</li> 
-     <li> 双向</li> 
+     <li>双向</li> 
     </ul> <p>此选项用于限制表单仅在Forms Portal上对最终用户可见。</p> </td> 
   </tr> 
   <tr> 
@@ -295,11 +298,11 @@ AEM Forms在此工具中公开受支持表单类型的元数据架构。 通过�
 1. 单击刚刚拖动的组件。 在右侧面板中打开的设置选项卡中，填写以下字段的信息：
 
    1. 指定字段标签，该标签用作位于架构中的字段上方的显示名称（例如：Department）
-   1. 在映射到属性字段下，您可以看到预填充的值&#x200B;**。/jcr：content/metadata/default“**”。 将“**default**”更改为所需的属性名称，该属性名称用于存储crx存储库中的属性(例如：“”。/jcr：content/metadata/department&#39;)
+   1. 在映射到属性字段下，您可以看到预填充值&#x200B;**。/jcr:content/metadata/default&#39;**。 将“**default**”更改为所需的属性名称，该名称用于在crx存储库中存储属性（例如：“。/jcr:content/metadata/department”）
 
       >[!NOTE]
       >
-      >请勿更改前缀&#39;。/jcr：content/metadata/&#39; ，它定义存储属性的路径。
+      >请勿更改前缀“。/jcr:content/metadata/”，因为它定义了存储属性的路径。
       >
       >此外，属性名称必须是唯一的，以避免在存储库中的同一位置写入两个或更多属性的值。 因此，建议您更改“default”值。
 

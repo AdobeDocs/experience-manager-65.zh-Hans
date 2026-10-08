@@ -1,5 +1,5 @@
 ---
-title: 准备内容以进行翻译
+title: 准备要翻译的内容
 description: 了解如何准备内容以在Adobe Experience Manager中进行翻译。
 contentOwner: Guillaume Carlino
 feature: Language Copy
@@ -8,14 +8,12 @@ solution: Experience Manager, Experience Manager Sites
 role: Admin
 source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
 workflow-type: tm+mt
-source-wordcount: '669'
-ht-degree: 44%
-
+source-wordcount: '681'
+ht-degree: 41%
 ---
-
 # 准备内容以进行翻译{#preparing-content-for-translation}
 
-多语言网站通常以多种语言提供一定数量的内容。使用一种语言创作该站点的内容，然后将此内容翻译成其他语言。通常，多语言站点包含多个页面分支，每个分支均包含采用其他语言的站点页面。
+多语言网站通常以多种语言提供一定数量的内容。 使用一种语言创作该站点的内容，然后将此内容翻译成其他语言。 通常，多语言站点包含多个页面分支，每个分支均包含采用其他语言的站点页面。
 
 示例Geometrixx演示站点包括几个语言分支并使用以下结构：
 
@@ -31,21 +29,21 @@ ht-degree: 44%
              |- zh
 ```
 
-站点的每个语言分支均称为语言副本。语言副本的根页面（称为语言根）标识了语言副本中内容的语言。例如，`/content/geometrixx/fr` 是法语副本的语言根。语言副本必须使用[正确配置的语言根](/help/sites-administering/tc-prep.md#creating-a-language-root)，以便在翻译源站点内容时使用正确的语言。
+站点的每个语言分支均称为语言副本。 语言副本的根页面（称为语言根）标识了语言副本中内容的语言。 例如，`/content/geometrixx/fr` 是法语副本的语言根。 语言副本必须使用[正确配置的语言根](/help/sites-administering/tc-prep.md#creating-a-language-root)，以便在翻译源站点内容时使用正确的语言。
 
-您最初为其创作站点内容的语言副本是语言母版。语言母版是翻译成其他语言的源。
+您最初为其创作站点内容的语言副本是语言母版。 语言母版是翻译成其他语言的源。
 
 使用以下步骤可准备站点以进行翻译：
 
-1. 创建语言母版的语言根。例如，英语Geometrixx演示站点的语言根为/content/geometrixx/en。 确保根据[创建语言根](/help/sites-administering/tc-prep.md#creating-a-language-root)中的信息来正确配置语言根。
+1. 创建语言母版的语言根。 例如，英语Geometrixx演示站点的语言根为/content/geometrixx/en。 确保根据[创建语言根](/help/sites-administering/tc-prep.md#creating-a-language-root)中的信息来正确配置语言根。
 1. 创作语言母版的内容。
-1. 创建站点的每个语言副本的语言根。例如，Geometrixx示例站点的法语副本为/content/geometrixx/fr。
+1. 创建站点的每个语言副本的语言根。 例如，Geometrixx示例站点的法语副本为/content/geometrixx/fr。
 
-准备好内容以进行翻译后，您可以在语言副本和相关翻译项目中自动创建缺失的页面。（请参阅[创建翻译项目](/help/sites-administering/tc-manage.md)。）有关 AEM 中内容翻译过程的概述，请参阅[翻译多语言网站的内容](/help/sites-administering/translation.md)。
+准备好内容以进行翻译后，您可以在语言副本和相关翻译项目中自动创建缺失的页面。 （请参阅[创建翻译项目](/help/sites-administering/tc-manage.md)。） 有关AEM中内容翻译过程的概述，请参阅[翻译多语言网站的内容](/help/sites-administering/translation.md)。
 
 ## 创建语言根 {#creating-a-language-root}
 
-创建语言根作为标识了内容语言的语言副本的根页。创建语言根后，您可以创建包含语言副本的翻译项目。
+创建语言根作为标识了内容语言的语言副本的根页。 创建语言根后，您可以创建包含语言副本的翻译项目。
 
 要创建语言根，您需要创建一个页面并使用ISO语言代码作为Name属性的值。 语言代码必须采用下列格式之一：
 
@@ -53,7 +51,7 @@ ht-degree: 44%
 
 * `<language-code>_<country-code>`或`<language-code>-<country-code>`支持的国家/地区代码是由ISO 3166定义的小写或大写两字母代码，例如，`en_US`、`en_us`、`en_GB`、`en-gb`。
 
-根据您为全球站点选择的结构，您可以使用任一格式。例如，Geometrixx站点的法语副本的根页面将`fr`作为Name属性。 Name属性用作存储库中页面节点的名称，从而确定页面的路径。 (http://localhost:4502/content/geometrixx/fr.html)
+根据您为全球站点选择的结构，您可以使用任一格式。  例如，Geometrixx站点的法语副本的根页面将`fr`作为Name属性。 Name属性用作存储库中页面节点的名称，从而确定页面的路径。 (http://localhost:4502/content/geometrixx/fr.html)
 
 以下过程使用触控优化的UI创建网站的语言副本。 有关使用经典UI的说明，请参阅[使用经典UI创建语言根](/help/sites-administering/tc-lroot-classic.md)。
 

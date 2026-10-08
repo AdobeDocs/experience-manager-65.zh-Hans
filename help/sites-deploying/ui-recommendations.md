@@ -1,10 +1,14 @@
 ---
-title: 客户的用户界面推荐
+title: 面向客户的用户界面建议
+
 description: 与经典用户界面和触屏优化用户界面相关的推荐列表。
+
+
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
+
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 solution: Experience Manager, Experience Manager Sites
@@ -12,12 +16,10 @@ feature: Administering
 role: Admin
 source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
 workflow-type: tm+mt
-source-wordcount: '764'
-ht-degree: 0%
-
+source-wordcount: '790'
+ht-degree: 1%
 ---
-
-# 客户的用户界面推荐{#user-interface-recommendations-for-customers}
+# 面向客户的用户界面建议{#user-interface-recommendations-for-customers}
 
 Adobe Experience Manager附带两个UI — 统一的Experience Cloud UI（也称为触屏UI）和经典UI。
 
@@ -28,7 +30,7 @@ Adobe Experience Manager附带两个UI — 统一的Experience Cloud UI（也称
 * **UI（或标准UI）**
 在5.6.0中引入的现代用户界面作为技术预览版，并在后续版本中进行了扩展。 它基于Adobe Experience Cloud的统一用户体验，以前称为触屏UI或触屏UI。
 
-* **经典UI**
+* **经典用户界面**
 基于ExtJS技术的用户界面，该界面在2008年随CQ 5.1引入。
 
 * **网站管理员**
@@ -40,14 +42,14 @@ Adobe Experience Manager附带两个UI — 统一的Experience Cloud UI（也称
 * **DAM/Assets管理员**
 用于管理数字资产（包括图像、视频、文档和下载）的功能。
 
-* **ContextHub**
+* **上下文中心**
 用于汇总访客相关信息并将其用于各种目的的功能。 提供一个用户界面来模拟访问站点的人。 从AEM 6.2开始，ContextHub取代了以前的技术Client Context。
 
 ## 常规 {#general}
 
 在过去几年中，Adobe使用统一的用户界面更新了所有Adobe Experience Cloud解决方案。 Experience Cloud解决方案中的用户可享受到有关如何使用和操作应用程序的通用模式的一致体验。 在每个版本中，Adobe都根据客户在各种解决方案中提供的反馈来优化其用户界面。
 
-Adobe Experience Manager（以前称为CQ5）的原始用户界面，在2008年引入，供运行版本5.0-5.6.1的客户使用，现在位于AEM 6.5中。这可保证客户可以更新到6.5版本，并受益于具有新功能的更新平台，同时继续使用相同的用户界面。
+Adobe Experience Manager（以前称为CQ5）的原始用户界面，在2008年引入，供运行版本5.0-5.6.1的客户使用，现在位于AEM 6.5中。 这可保证客户可以更新到6.5版本，并受益于具有新功能的更新平台，同时继续使用相同的用户界面。
 
 Adobe建议客户计划在2018/19年度切换到新UI。 这可以在更新6.5期间完成，也可以在更新后的单独项目中完成，包括对自定义项和组件对话框所做的必要调整。
 
@@ -72,7 +74,7 @@ Adobe建议客户计划在2018/19年度切换到新UI。 这可以在更新6.5�
    <td>
     <ol>
      <li>更新至6.5</li>
-     <li>使用默认UI进行站点管理、资产等。 etc.<br /> </li>
+     <li>使用默认UI进行站点管理、资产……等<br /> </li>
      <li>配置“编辑页面”操作以打开经典UI页面编辑器。 查看<a href="#selecting-your-ui">选择您的UI</a>。</li>
     </ol> <p>然后，在第二阶段：</p>
     <ol>
@@ -84,12 +86,12 @@ Adobe建议客户计划在2018/19年度切换到新UI。 这可以在更新6.5�
    <td>
     <ol>
      <li>更新至6.5</li>
-     <li>使用默认UI进行站点管理、资产等。 以此类推。</li>
+     <li>使用默认UI进行站点管理、资产等。</li>
      <li>配置“编辑页面”操作以打开经典UI页面编辑器。 查看<a href="#selecting-your-ui">选择您的UI</a>。</li>
     </ol> <p>然后，在第二阶段：</p>
     <ol>
      <li>更新组件对话框以使用Coral 3对话框格式。 Adobe建议使用<a href="/help/sites-developing/modernization-tools.md">AEM现代化工具</a>来更新组件。</li>
-     <li>配置ContextHub(ClientContext的替代项)并更新页面模板以使用ContextHub。 ContextHub具有允许加载自定义ClientContext存储的兼容模式。</li>
+     <li>配置ContextHub（ClientContext的替代项）并更新页面模板以使用ContextHub。 ContextHub具有允许加载自定义ClientContext存储的兼容模式。</li>
     </ol> </td>
   </tr>
   <tr>
