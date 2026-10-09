@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用 Adobe Experience Manager 6.5 文档，了解其工作原理以及该软件能为您带来的价值。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: b3d193fafabe3f04a98ac17b30a5c6506472faf3
+source-git-commit: f46e653863a8724a5f50bed7a2f76079803b162e
 workflow-type: tm+mt
-source-wordcount: '8305'
+source-wordcount: '8300'
 ht-degree: 95%
 ---
 
@@ -1237,7 +1237,6 @@ ht-degree: 95%
 + AEM 中的 AI {#ai-in-aem}
   + [概述](/help/ai-in-aem/overview.md)
   + AI 助手 {#ai-assistant}
-    + [配置 AEM 中的 AI 助手](/help/ai-assistant-in-aem-admin.md)
     + [关于 AEM 中的 AI 助手](/help/ai-assistant-in-aem.md)
 + 内容和 Commerce {#commerce}
   + [简介和概述](/help/commerce/cif/introduction.md)
