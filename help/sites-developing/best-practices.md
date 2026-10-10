@@ -40,7 +40,7 @@ Adobe工程和咨询团队开发了一组面向AEM开发人员的全面的最佳
 * [代码陷阱](/help/sites-developing/code-pitfalls.md)
 * [JCR交互](/help/sites-developing/jcr-integration.md)
 * [OSGi包](/help/sites-developing/osgi-bundles.md)
-* [Java API最佳实践](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Java API最佳实践](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=zh-Hans)
 
 ### 其他最佳实践信息 {#additional-best-practices-information}
 
@@ -104,8 +104,8 @@ HTML模板语言(HTL)是随AEM 6.0引入的新HTML模板系统。 它取代了JS
 
 |  |  |  |
 |---|---|---|
-| HTL 概述 | [HTL概述和语法](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 本文档介绍HTL是什么、如何移动到HTL、示例项目、语法、表达式和语句 |
-| 在Java中使用API | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | HTL Java Use-API让HTL文件可以访问自定义Java类中的Helper方法。 |
+| HTL 概述 | [HTL概述和语法](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans) | 本文档介绍HTL是什么、如何移动到HTL、示例项目、语法、表达式和语句 |
+| 在Java中使用API | [HTL Java Use-API](https://helpx.adobe.com/cn/experience-manager/htl/using/use-api.html) | HTL Java Use-API让HTL文件可以访问自定义Java类中的Helper方法。 |
 
 >[!NOTE]
 >

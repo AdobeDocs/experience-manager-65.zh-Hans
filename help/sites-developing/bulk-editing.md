@@ -71,7 +71,7 @@ ht-degree: 29%
 
    >[!NOTE]
    >
-   >此示例假设核心组件已安装在实例上，如果实例运行的是We.Retail示例内容，就是这种情况。 有关详细信息，请参阅[核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)。
+   >此示例假设核心组件已安装在实例上，如果实例运行的是We.Retail示例内容，就是这种情况。 有关详细信息，请参阅[核心组件文档](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)。
 
 1. 导航至`cq:dialog` 定义中的必填字段。
 1. 在字段节点上定义以下属性：

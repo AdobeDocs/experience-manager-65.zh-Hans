@@ -38,7 +38,7 @@ AEM Forms JEE工作流提供了用于设计、创建和管理业务流程的工�
 * 使用观察文件夹
 * 使用电子邮件
 
-有关创建AEM Forms JEE工作流进程的更多信息，请参阅[Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_65)。
+有关创建AEM Forms JEE工作流进程的更多信息，请参阅[Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_65_cn)。
 
 ## 用户数据和数据存储 {#user-data-and-data-stores}
 
@@ -141,7 +141,7 @@ AEM Forms JEE工作流提供了用于设计、创建和管理业务流程的工�
 
 1. 使用具有正确连接设置的`ServiceClientFactory`实例创建公共`ProcessManager`客户端(`com.adobe.idp.workflow.client.ProcessManager`)的实例。
 
-   有关详细信息，请参阅[类ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)的Java™ API引用。
+   有关详细信息，请参阅[类ProcessManager](https://helpx.adobe.com/cn/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)的Java™ API引用。
 
 1. 检查工作流实例的状态。 如果状态不是2 (COMPLETE)或4 (TERMINATED)，请首先通过调用以下方法终止实例：
 
