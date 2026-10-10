@@ -9,13 +9,20 @@ exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '399'
 ht-degree: 5%
-
 ---
-
 # 发展中的社区  {#developing-communities}
 
 ## 概述 {#overview}
@@ -33,7 +40,7 @@ Adobe Experience Manager (AEM)社区简化了社区功能（如论坛、用户�
 > 
 >强烈建议与[最新版本](deploy-communities.md#latest-releases)保持同步。
 
-## 建议的部署 {#recommended-deployments}
+## 推荐的部署 {#recommended-deployments}
 
 * [社区内容存储](working-with-srp.md)：讨论UGC公用存储的可用社交资源提供程序(SRP)选项
 * [社区推荐的拓扑](topologies.md)：根据用例和SRP选择讨论拓扑
@@ -56,7 +63,7 @@ AEM Communities组件、功能和功能为[社区站点](sites-console.md)提供
 * [适用于社区组件的Clientlibs](clientlibs.md)
 * [社区功能](functions.md)
 * [社区组模板](tools-groups.md)
-* [社区站点模板](sites.md)
+* [社区网站模板](sites.md)
 
 ## 社区成员 {#community-members}
 

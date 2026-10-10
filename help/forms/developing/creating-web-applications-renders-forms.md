@@ -1,5 +1,5 @@
 ---
-title: 创建呈现Forms的Web应用程序
+title: 创建渲染表单的 Web 应用程序
 description: 创建基于Web的应用程序，该应用程序使用Java Servlet调用Forms服务和渲染表单。 Java Servlet用作返回表单的Forms服务与客户端Web浏览器之间的链接。
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,29 @@ role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1832'
+source-wordcount: '1870'
 ht-degree: 0%
-
 ---
-
 # 创建可渲染Forms的Web应用程序 {#creating-web-applications-thatrenders-forms}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -27,7 +43,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->本节介绍如何创建基于Web的应用程序，该应用程序使用Java servlet调用Forms服务并基于片段呈现表单。 (请参阅[根据片段渲染Forms](/help/forms/developing/rendering-forms-based-fragments.md)。)
+>本节介绍如何创建基于Web的应用程序，该应用程序使用Java servlet调用Forms服务并基于片段呈现表单。 （请参阅[根据片段渲染Forms](/help/forms/developing/rendering-forms-based-fragments.md)。）
 
 使用Java Servlet，您可以将表单写入客户端Web浏览器，以便客户查看表单并在表单中输入数据。 使用数据填充表单后，Web用户单击表单上的提交按钮以将信息发送回Java Servlet，从中可检索和处理数据。 例如，可以将数据发送到另一个进程。
 
@@ -59,7 +75,7 @@ ht-degree: 0%
 
 要访问采购订单Dynamic.xdp表单设计，请将`Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp`指定为表单名称（传递给`renderPDFForm`方法的第一个参数），并将`repository:///`指定为内容根URI值。
 
-Web应用程序使用的XML数据文件已从Data文件夹移至`C:\Adobe`(属于承载AEM Forms的J2EE应用程序服务器的文件系统)。 文件名是采购订单&#x200B;*Canada.xml*&#x200B;和采购订单&#x200B;*US.xml*。
+Web应用程序使用的XML数据文件已从Data文件夹移至`C:\Adobe`（属于承载AEM Forms的J2EE应用程序服务器的文件系统）。 文件名是采购订单&#x200B;*Canada.xml*&#x200B;和采购订单&#x200B;*US.xml*。
 
 >[!NOTE]
 >
@@ -82,7 +98,7 @@ Web应用程序使用的XML数据文件已从Data文件夹移至`C:\Adobe`(属�
 
 ### 创建Web项目 {#creating-a-web-project}
 
-创建包含可调用Forms服务的Java servlet的Web应用程序的第一步是创建一个Web项目。 本文档所基于的Java IDE是Eclipse 3.3。使用Eclipse IDE创建一个Web项目，并将所需的JAR文件添加到您的项目中。 最后，将名为&#x200B;*index.html*&#x200B;的HTML页和Java Servlet添加到您的项目中。
+创建包含可调用Forms服务的Java servlet的Web应用程序的第一步是创建一个Web项目。 本文档所基于的Java IDE是Eclipse 3.3。 使用Eclipse IDE创建一个Web项目，并将所需的JAR文件添加到您的项目中。 最后，将名为&#x200B;*index.html*&#x200B;的HTML页面和Java Servlet添加到您的项目中。
 
 以下列表指定了必须添加到Web项目中的JAR文件：
 
@@ -111,7 +127,7 @@ Web应用程序使用的XML数据文件已从Data文件夹移至`C:\Adobe`(属�
 1. 展开&#x200B;**Web**&#x200B;文件夹，选择&#x200B;**Servlet**，然后单击&#x200B;**下一步**。
 1. 在“创建Servlet”对话框中，键入`RenderFormFragment`作为Servlet的名称，然后单击&#x200B;**完成**。
 
-**要向项目添加HTML页，请执行以下操作：**
+**要将HTML页面添加到您的项目，请执行以下操作：**
 
 1. 在“项目资源管理器”窗口中，右键单击`FragmentsWebApplication`项目并选择&#x200B;**新建** > **其他**。
 1. 展开&#x200B;**Web**&#x200B;文件夹，选择&#x200B;**HTML**，然后单击&#x200B;**下一步**。
@@ -119,7 +135,7 @@ Web应用程序使用的XML数据文件已从Data文件夹移至`C:\Adobe`(属�
 
 >[!NOTE]
 >
->有关创建调用`RenderFormFragment` Java Servlet的HTML页的信息，请参阅[创建网页](/help/forms/developing/rendering-forms.md#creating-the-web-page)。
+>有关创建调用`RenderFormFragment` Java Servlet的HTML页面的信息，请参阅[创建网页](/help/forms/developing/rendering-forms.md#creating-the-web-page)。
 
 ### 为servlet创建Java应用程序逻辑 {#creating-java-application-logic-for-the-servlet}
 
@@ -329,7 +345,7 @@ Java Servlet通过使用以下Java代码捕获从HTML页面发布的数据：
              }
 ```
 
-以下HTML代码位于在开发环境设置期间创建的index.html文件中。 （请参阅[创建Web项目](/help/forms/developing/rendering-forms.md#creating-a-web-project)。）
+以下HTML代码位于在设置开发环境期间创建的index.html文件中。 （请参阅[创建Web项目](/help/forms/developing/rendering-forms.md#creating-a-web-project)。）
 
 ```xml
  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

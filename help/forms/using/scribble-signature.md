@@ -1,5 +1,5 @@
 ---
-title: 在HTML5表单中使用涂写签名
+title: 在 HTML5 Forms 中使用手写签名
 description: HTML5表单越来越多地用于触摸设备，并且通常会要求支持签名。 在移动设备上签署文档已成为一种可接受的在移动设备上签署表单的方式。
 contentOwner: robhagat
 content-type: reference
@@ -10,16 +10,29 @@ feature: Forms Designer,Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: 794033c1-20ea-55a4-a8a6-b1107e12deb0
+    internal-label: Designer
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '655'
-ht-degree: 0%
-
+source-wordcount: '657'
+ht-degree: 2%
 ---
+# 在 HTML5 Forms 中使用手写签名{#using-scribble-signature-in-html-forms}
 
-# 在HTML5表单中使用涂写签名{#using-scribble-signature-in-html-forms}
-
-HTML5表单越来越多地用于触摸设备，并且通常会要求支持签名。 脚本编写（使用手写笔或手指书写）正在成为在移动设备上签名表单的一种可接受的方式。 HTML5表单和Forms Designer现在支持在表单上涂写签名字段的选项。 在浏览器中呈现表单时，可以使用手写笔、鼠标或触摸登录这些字段。
+HTML5表单越来越多地用于触摸设备，并且通常会要求支持签名。 脚本编写（使用手写笔或手指书写）正在成为在移动设备上签名表单的一种可接受的方式。 HTML5 forms和Forms Designer现在支持在表单上涂写签名字段的选项。 在浏览器中呈现表单时，可以使用手写笔、鼠标或触摸登录这些字段。
 
 ## 如何使用涂鸦签名字段设计表单 {#how-to-design-a-form-using-scribble-signature-field}
 
@@ -30,7 +43,7 @@ HTML5表单越来越多地用于触摸设备，并且通常会要求支持签名
 
    >[!NOTE]
    >
-   >呈现字段时，将反映在Forms Designer中选择的字段的Dimension。 但是，呈现的签名框的维度是根据字段的长宽比计算的，而不是根据Forms Designer中指定的维度计算的。
+   >在Forms Designer中选择的字段的维度在呈现该字段时反映出来。 但是，呈现的签名框的维度是根据字段的长宽比计算的，而不是根据Forms Designer中指定的维度计算的。
 
 1. 配置签名涂写字段。
 

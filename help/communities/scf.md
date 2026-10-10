@@ -9,13 +9,20 @@ exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1512'
 ht-degree: 0%
-
 ---
-
 # 社交组件框架 {#social-component-framework}
 
 社交组件框架(SCF)简化了服务器端和客户端上配置、自定义和扩展Communities组件的过程。
@@ -23,7 +30,7 @@ ht-degree: 0%
 框架的好处包括：
 
 * **功能性**：开箱即用的轻松集成，对80%的用例很少自定义或没有自定义。
-* **Skinnable**：一致地使用CSS样式的HTML属性。
+* **可skinnable**：一致地使用HTML属性来设置CSS样式。
 * **可扩展**：组件实现是面向对象的并且业务逻辑较轻 — 易于在服务器上添加增量业务登录。
 * **灵活**：易于叠加和自定义的简单无逻辑JavaScript模板。
 * **可访问**： HTTP API支持从任何客户端（包括移动应用程序）发布内容。
@@ -50,19 +57,19 @@ Handlebars JS模板可以扩展模型/视图JS组件，以处理用户与客户�
 要自定义或扩展组件，您只需将叠加和扩展写入/apps目录，这可以简化升级到未来版本的过程。
 
 * 对于外观设计：
-   * 仅[CSS需要编辑](client-customize.md#skinning-css)。
+  * 仅[CSS需要编辑](client-customize.md#skinning-css)。
 * 外观：
-   * 更改JS模板和CSS。
+  * 更改JS模板和CSS。
 * 对于Look、Feel和UX：
-   * 更改JS模板、CSS和[扩展/覆盖JavaScript](client-customize.md#extending-javascript)。
+  * 更改JS模板、CSS和[扩展/覆盖JavaScript](client-customize.md#extending-javascript)。
 * 要修改JS模板或GET端点可用的信息，请执行以下操作：
-   * 扩展[SocialComponent](server-customize.md#socialcomponent-interface)。
+  * 扩展[SocialComponent](server-customize.md#socialcomponent-interface)。
 * 要在操作期间添加自定义处理，请执行以下操作：
-   * 编写[OperationExtension](server-customize.md#operationextension-class)。
+  * 编写[OperationExtension](server-customize.md#operationextension-class)。
 * 要添加自定义操作，请执行以下操作：
-   * 创建[Sling Post操作](server-customize.md#postoperation-class)。
-   * 根据需要使用现有[OperationServices](server-customize.md#operationservice-class)。
-   * 添加JavaScript代码以根据需要从客户端调用您的操作。
+  * 创建[Sling帖子操作](server-customize.md#postoperation-class)。
+  * 根据需要使用现有[OperationServices](server-customize.md#operationservice-class)。
+  * 添加JavaScript代码以根据需要从客户端调用您的操作。
 
 ## 服务器端框架 {#server-side-framework}
 
@@ -80,9 +87,9 @@ Java™ API提供了易于继承或子类的抽象类和接口。
 
 HTTP API支持对PhoneGap应用程序、本机应用程序以及其他集成和混合的客户端平台进行轻松自定义和选择。 此外，HTTP API允许社区站点作为服务运行，而无需客户端，这样框架组件可以集成到基于任何技术构建的任何网页中。
 
-### HTTP API -GET请求 {#http-api-get-requests}
+### HTTP API - GET请求 {#http-api-get-requests}
 
-对于每个SocialComponent，该框架都提供一个基于HTTP的API端点。 通过向资源发送GET请求来访问端点，该资源具有“.social.json”选择器+扩展。 使用Sling将请求传递给`DefaultSocialGetServlet`。
+对于每个SocialComponent，该框架都提供一个基于HTTP的API端点。 通过向具有“.social.json”选择器+扩展名的资源发送GET请求来访问端点。 使用Sling将请求传递给`DefaultSocialGetServlet`。
 
 **`DefaultSocialGetServlet`**
 
@@ -94,11 +101,11 @@ HTTP API支持对PhoneGap应用程序、本机应用程序以及其他集成和�
 
 **`GET Request`**
 
-默认的GETservlet监听.social.json请求，SocialComponent使用可自定义的JSON对这些请求进行响应。
+默认的GET servlet监听.social.json请求，SocialComponent使用可自定义的JSON对这些请求进行响应。
 
 ![scf-framework](assets/scf-framework.png)
 
-### HTTP API -POST请求 {#http-api-post-requests}
+### HTTP API - POST请求 {#http-api-post-requests}
 
 除了GET（读取）操作外，框架还定义端点模式以启用组件上的其他操作，包括创建、更新和删除。 这些端点是HTTP API，它们接受输入并使用HTTP状态代码或JSON响应对象进行响应。
 
@@ -106,7 +113,7 @@ HTTP API支持对PhoneGap应用程序、本机应用程序以及其他集成和�
 
 **`POST Request`**
 
-每个SocialComponent操作都有一个SlingPOST：operation。 每个操作的业务逻辑和维护代码都封装在OperationService中，该服务可通过HTTP API或从其他位置作为OSGi服务访问。 提供了用于操作前/操作后支持可插拔操作扩展的挂接。
+每个SocialComponent操作都有一个Sling POST:operation。 每个操作的业务逻辑和维护代码都封装在OperationService中，该服务可通过HTTP API或从其他位置作为OSGi服务访问。 提供了用于操作前/操作后支持可插拔操作扩展的挂接。
 
 ![scf-post-request](assets/scf-post-request.png)
 
@@ -171,7 +178,7 @@ Handlebars (HBS)模板文件(.hbs)类似于.jsp和.html模板文件，但它们�
 
 `{{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}`
 
-**使用JSP**&#x200B;时，使用标记[cq：include](../../help/sites-developing/taglib.md#lt-cq-include)包含资源：
+**使用JSP**&#x200B;时，包含使用标记[cq:include](../../help/sites-developing/taglib.md#lt-cq-include)的资源：
 
 ```
 <cq:include path="votes"
@@ -192,7 +199,7 @@ Handlebars (HBS)模板文件(.hbs)类似于.jsp和.html模板文件，但它们�
 
 该框架包括[Backbone.js](https://backbonejs.org/)的扩展，这是一个模型视图JavaScript框架，用于促进开发丰富的交互式组件。 面向对象的性质支持可扩展/可重用的框架。 HTTP API简化了客户端和服务器之间的通信。
 
-框架使用服务器端Handlebars模板来呈现客户端的组件。 这些模型基于HTTP API生成的JSON响应。 视图将自己绑定到Handlebars模板生成的HTML并提供交互性。
+框架使用服务器端Handlebars模板来呈现客户端的组件。 这些模型基于HTTP API生成的JSON响应。 视图将自己绑定到由Handlebars模板生成的HTML并提供交互性。
 
 ### CSS约定 {#css-conventions}
 
@@ -207,7 +214,7 @@ Handlebars (HBS)模板文件(.hbs)类似于.jsp和.html模板文件，但它们�
 要自定义客户端上Communities组件的外观和行为，请参考[客户端自定义项](client-customize.md)，其中包含有关以下项的信息：
 
 * [叠加](client-customize.md#overlays)
-* [扩展名](client-customize.md#extensions)
+* [扩展](client-customize.md#extensions)
 * [HTML标记](client-customize.md#htmlmarkup)
 * [为CSS设置外观](client-customize.md#skinning-css)
 * [扩展JavaScript](client-customize.md#extending-javascript)

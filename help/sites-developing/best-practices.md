@@ -1,6 +1,6 @@
 ---
 title: 面向AEM开发人员的最佳实践
-description: Adobe工程和咨询团队已经为AEM开发人员制定了一组全面的最佳实践。
+description: Adobe工程和咨询团队开发了一组面向AEM开发人员的全面的最佳实践。
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,44 +9,53 @@ exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '445'
-ht-degree: 3%
-
+source-wordcount: '497'
+ht-degree: 7%
 ---
-
-# 最佳实践{#best-practices}
+# 最佳做法{#best-practices}
 
 ## 开发人员最佳实践 — 快速入门 {#best-practices-for-developers-getting-started}
 
-Adobe工程和咨询团队已经为AEM开发人员制定了一组全面的最佳实践。 Adobe开发人员在开发核心的AEM产品更新和客户实施客户代码时，应遵守这些最佳实践。
+Adobe工程和咨询团队开发了一组面向AEM开发人员的全面的最佳实践。 Adobe开发人员在开发用于客户实施的核心AEM产品更新和客户代码时，应遵守这些最佳实践。
 
 在开始AEM开发项目之前，请先查看以下最佳实践：
 
 * [开发实践](/help/sites-developing/development-practices.md)
 * [内容架构](/help/sites-developing/content-architecture.md)
-* [软件体系结构](/help/sites-developing/software-architecture.md)
-* [编码提示](/help/sites-developing/coding-tips.md)
+* [软件架构](/help/sites-developing/software-architecture.md)
+* [编码技巧](/help/sites-developing/coding-tips.md)
 * [代码陷阱](/help/sites-developing/code-pitfalls.md)
 * [JCR交互](/help/sites-developing/jcr-integration.md)
 * [OSGi包](/help/sites-developing/osgi-bundles.md)
-* [Java API最佳实践](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=zh-Hans)
+* [Java API最佳实践](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### 其他最佳实践信息 {#additional-best-practices-information}
 
 以下区域提供了专门用于开发最佳实践的文档：
 
 * [Sites](#sites)
-* [社区](/help/sites-developing/best-practices.md#communities)
+* [Communities](/help/sites-developing/best-practices.md#communities)
 * [工具/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
 下面的表格中介绍了特定文档并将其链接到该文档。
 
 有关管理、部署和维护或创作的最佳实践，请参阅以下内容之一：
 
-* [管理最佳实践](/help/sites-administering/administer-best-practices.md)
-* [创作最佳实践](/help/sites-authoring/best-practices.md)
+* [管理最佳做法](/help/sites-administering/administer-best-practices.md)
+* [创作最佳做法](/help/sites-authoring/best-practices.md)
 * [部署最佳实践](/help/sites-deploying/best-practices.md)
 
 ## Sites {#sites}
@@ -78,7 +87,7 @@ Adobe工程和咨询团队已经为AEM开发人员制定了一组全面的最佳
  </tbody>
 </table>
 
-## 社区 {#communities}
+## Communities {#communities}
 
 [AEM Communities](/help/communities/overview.md)简化了本地社区的创建和管理。
 
@@ -91,12 +100,12 @@ Adobe工程和咨询团队已经为AEM开发人员制定了一组全面的最佳
 
 ## 工具/HTL {#tooling-htl}
 
-HTML模板语言(HTL)是随AEM 6.0引入的新HTML模板系统。它取代了JSP和ESP作为AEM首选的模板系统。
+HTML模板语言(HTL)是随AEM 6.0引入的新HTML模板系统。 它取代了JSP和ESP作为AEM的首选模板系统。
 
 |  |  |  |
 |---|---|---|
-| HTL 概述 | [HTL概述和语法](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans) | 本文档介绍HTL是什么、如何移动到HTL、示例项目、语法、表达式和语句 |
-| 在Java中使用API | [HTL Java Use-API](https://helpx.adobe.com/cn/experience-manager/htl/using/use-api.html) | HTL Java Use-API让HTL文件可以访问自定义Java类中的Helper方法。 |
+| HTL 概述 | [HTL概述和语法](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | 本文档介绍HTL是什么、如何移动到HTL、示例项目、语法、表达式和语句 |
+| 在Java中使用API | [HTL Java Use-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | HTL Java Use-API让HTL文件可以访问自定义Java类中的Helper方法。 |
 
 >[!NOTE]
 >

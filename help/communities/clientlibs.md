@@ -10,13 +10,20 @@ exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '406'
 ht-degree: 0%
-
 ---
-
 # 适用于社区组件的Clientlibs {#clientlibs-for-communities-components}
 
 ## 简介 {#introduction}
@@ -69,21 +76,21 @@ ht-degree: 0%
 * 浏览到[https://&lt;服务器>：&lt;端口>/crx/de](https://localhost:4502/crx/de)。
 * 找到要添加组件的页面的`clientlibslist`节点：
 
-   * `/content/sites/sample/en/page/jcr:content/clientlibslist`
+  * `/content/sites/sample/en/page/jcr:content/clientlibslist`
 
 * 选择`clientlibslist`节点后：
 
-   * 找到字符串[]属性`scg:requiredClientLibs`。
-   * 选择其`Value`，以便访问“字符串数组”对话框。
+  * 找到字符串[]属性`scg:requiredClientLibs`。
+  * 选择其`Value`，以便访问“字符串数组”对话框。
 
-      * 如有必要，向下滚动。
-      * 选择+以输入新的客户端库。
+    * 如有必要，向下滚动。
+    * 选择+以输入新的客户端库。
 
-         * 重复以上步骤以添加更多客户端库。
+      * 重复以上步骤以添加更多客户端库。
 
-         * 选择&#x200B;**确定**。
+      * 选择&#x200B;**确定**。
 
-   * 选择&#x200B;**全部保存**。
+  * 选择&#x200B;**全部保存**。
 
 >[!NOTE]
 >

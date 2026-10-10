@@ -1,5 +1,5 @@
 ---
-title: 使用XMP实用程序
+title: 使用 XMP 实用程序
 description: 使用XMP实用程序Java和Web服务API以编程方式将XMP元数据导入PDF文档，并从PDF文档中检索和保存XMP元数据。
 contentOwner: admin
 content-type: reference
@@ -9,39 +9,55 @@ role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1380'
-ht-degree: 0%
-
+source-wordcount: '1401'
+ht-degree: 1%
 ---
-
-# 使用XMP实用程序 {#working-with-xmp-utilities}
+# 使用 XMP 实用程序 {#working-with-xmp-utilities}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
 
-**关于XMP Utilities服务**
+**关于XMP实用工具服务**
 
-PDF文档包含元数据，该元数据是有关文档与文档内容（如文本和图形）区分开的信息。 Adobe可扩展元数据平台(XMP)是处理文档元数据的标准。
+PDF文档包含元数据，元数据是有关文档与文档内容（如文本和图形）区分开的信息。 Adobe可扩展元数据平台(XMP)是用于处理文档元数据的标准。
 
-XMP Utilities服务可以从PDF文档中检索和保存XMP元数据，并将XMP元数据导入PDF文档。
+XMP实用工具服务可以从XMP文档中检索和保存PDF元数据，并将XMP元数据导入PDF文档。
 
 您可以使用XMP Utilities服务完成这些任务：
 
-* 将元数据导入PDF文档。 (请参阅[将元数据导入PDF文档](xmp-utilities.md#importing-metadata-into-pdf-documents)。)
-* 从PDF文档导出元数据。 (请参阅[从PDF文档导出元数据](xmp-utilities.md#exporting-metadata-from-pdf-documents)。)
+* 将元数据导入PDF文档。 （请参阅[将元数据导入PDF文档](xmp-utilities.md#importing-metadata-into-pdf-documents)。）
+* 从PDF文档导出元数据。 （请参阅[从PDF文档导出元数据](xmp-utilities.md#exporting-metadata-from-pdf-documents)。）
 
 >[!NOTE]
 >
->有关XMP Utilities服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关XMP实用工具服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 将元数据导入PDF文档 {#importing-metadata-into-pdf-documents}
 
-您可以使用XMP实用程序Java和Web服务API以编程方式将XMP元数据导入PDF文档。 元数据提供有关PDF文档的信息，例如文档的作者以及与文档相关的关键字。 元数据可以在文档的文档属性对话框中，如下图所示。
+您可以使用XMP实用程序Java和Web服务API以编程方式将XMP元数据导入PDF文档。 元数据提供有关PDF文档的信息，例如文档的作者以及与文档相关的关键词。 元数据可以在文档的文档属性对话框中，如下图所示。
 
 ![ww_ww_metadatadatadalog](assets/ww_ww_metadatadialog.png)
 
-若要以编程方式将元数据导入PDF文档，可以使用指定元数据值的现有XML文档，也可以使用`XMPUtilityMetadata`类型的对象。 (请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。)
+若要以编程方式将元数据导入PDF文档，您可以使用指定元数据值的现有XML文档，也可以使用类型为`XMPUtilityMetadata`的对象。 （请参阅[AEM Forms API引用](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)。）
 
 >[!NOTE]
 >
@@ -114,7 +130,7 @@ XMP Utilities服务可以从PDF文档中检索和保存XMP元数据，并将XMP�
 
 >[!NOTE]
 >
->有关XMP Utilities服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关XMP实用工具服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary-of-steps}
 
@@ -130,11 +146,11 @@ XMP Utilities服务可以从PDF文档中检索和保存XMP元数据，并将XMP�
 
 **创建XMPUtilityService客户端**
 
-必须先创建XMPUtilityService客户端，然后才能以编程方式执行XMP Utilities操作。 使用Java API，可通过创建`XMPUtilityServiceClient`对象来实现这一点。 使用Web服务API，可使用`XMPUtilityServiceService`对象实现此目的。
+必须先创建XMPUtilityService客户端，然后才能以编程方式执行XMP实用程序操作。 使用Java API，可通过创建`XMPUtilityServiceClient`对象来实现这一点。 使用Web服务API，可使用`XMPUtilityServiceService`对象实现此目的。
 
 **调用XMP元数据导入操作**
 
-创建服务客户端后，可以调用某个XMP元数据导入操作以将XMP元数据导入指定的PDF文档中。
+创建服务客户端后，您可以调用某个XMP元数据导入操作，将XMP元数据导入指定的PDF文档。
 
 **另请参阅**
 
@@ -188,11 +204,11 @@ XMP Utilities服务可以从PDF文档中检索和保存XMP元数据，并将XMP�
 
 ### 使用Web服务API导入XMP元数据 {#importing-xmp-metadata-using-the-web-service-api}
 
-要使用XMP Utilities Web服务API以编程方式导入XMP元数据，请执行以下任务：
+要使用XMP实用程序Web服务API以编程方式导入XMP元数据，请执行以下任务：
 
 1. 包含项目文件
 
-   * 创建使用XMP Utilities服务WSDL文件的Microsoft .NET客户端程序集。 (请参阅[使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。)
+   * 创建使用Microsoft实用程序服务WSDL文件的XMP .NET客户端程序集。 （请参阅[使用Base64编码调用AEM Forms](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)。）
    * 引用Microsoft .NET客户端程序集。 （请参阅[创建使用Base64编码的.NET客户端程序集](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)。）
 
 1. 创建XMPUtilityService客户端
@@ -231,11 +247,11 @@ XMP Utilities服务可以从PDF文档中检索和保存XMP元数据，并将XMP�
 
 >[!NOTE]
 >
->有关XMP Utilities服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
+>有关XMP实用工具服务的详细信息，请参阅[AEM Forms服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ### 步骤摘要 {#summary_of_steps-1}
 
-要从PDF文档中导出XMP元数据，请执行以下步骤：
+要从PDF文档导出XMP元数据，请执行以下步骤：
 
 1. 包括项目文件。
 1. 创建XMPUtilityService客户端。
@@ -247,11 +263,11 @@ XMP Utilities服务可以从PDF文档中检索和保存XMP元数据，并将XMP�
 
 **创建XMPUtilityService客户端**
 
-必须先创建XMPUtilityService客户端，然后才能以编程方式执行XMP Utilities操作。 使用Java AP时，可通过创建`XMPUtilityServiceClient`对象来实现这一点。 使用Web服务API，可使用`XMPUtilityServiceService`对象完成此操作。
+必须先创建XMPUtilityService客户端，然后才能以编程方式执行XMP实用程序操作。 使用Java AP时，可通过创建`XMPUtilityServiceClient`对象来实现这一点。 使用Web服务API，可使用`XMPUtilityServiceService`对象完成此操作。
 
 **调用XMP元数据导出操作**
 
-创建服务客户端后，可以调用某个XMP元数据导出操作，该操作可用于检查XMP元数据或将其保存到磁盘。
+创建服务客户端后，您可以调用某个XMP元数据导出操作，该操作可用于检查XMP元数据或将其保存到磁盘。
 
 **另请参阅**
 
@@ -265,7 +281,7 @@ XMP Utilities服务可以从PDF文档中检索和保存XMP元数据，并将XMP�
 
 ### 使用Java API导出XMP元数据 {#export-xmp-metadata-using-the-java-api}
 
-使用XMP Utilities API (Java)导出XMP元数据：
+使用XMP实用程序API (Java)导出XMP元数据：
 
 1. 包含项目文件
 
@@ -295,11 +311,11 @@ XMP Utilities服务可以从PDF文档中检索和保存XMP元数据，并将XMP�
 
 ### 使用Web服务API导出XMP元数据 {#export-xmp-metadata-using-the-web-service-api}
 
-使用XMP Utilities API（Web服务）导出XMP元数据：
+使用XMP实用程序API（Web服务）导出XMP元数据：
 
 1. 包含项目文件
 
-   * 创建使用XMP Utilities服务WSDL文件的Microsoft .NET客户端程序集。
+   * 创建使用Microsoft实用程序服务WSDL文件的XMP .NET客户端程序集。
    * 引用Microsoft .NET客户端程序集。
 
 1. 创建XMPUtilityService客户端

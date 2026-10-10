@@ -1,5 +1,5 @@
 ---
-title: Forms JEE工作流 | 处理用户数据
+title: Forms JEE工作流 |处理用户数据
 description: 了解如何使用AEM Forms JEE工作流设计、创建和管理业务流程。
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -7,14 +7,28 @@ role: Admin,User
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1379'
+source-wordcount: '1407'
 ht-degree: 0%
-
 ---
-
-# Forms JEE工作流 | 处理用户数据 {#forms-jee-workflows-handling-user-data}
+# Forms JEE工作流 |处理用户数据 {#forms-jee-workflows-handling-user-data}
 
 AEM Forms JEE工作流提供了用于设计、创建和管理业务流程的工具。 工作流进程包含一系列按指定顺序执行的步骤。 每个步骤都会执行特定操作，例如向用户分配任务或发送电子邮件。 进程可与资产、用户帐户和服务进行交互，并且可以使用以下任意方法触发：
 
@@ -24,7 +38,7 @@ AEM Forms JEE工作流提供了用于设计、创建和管理业务流程的工�
 * 使用观察文件夹
 * 使用电子邮件
 
-有关创建AEM Forms JEE工作流进程的更多信息，请参阅[Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_65_cn)。
+有关创建AEM Forms JEE工作流进程的更多信息，请参阅[Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_65)。
 
 ## 用户数据和数据存储 {#user-data-and-data-stores}
 
@@ -127,7 +141,7 @@ AEM Forms JEE工作流提供了用于设计、创建和管理业务流程的工�
 
 1. 使用具有正确连接设置的`ServiceClientFactory`实例创建公共`ProcessManager`客户端(`com.adobe.idp.workflow.client.ProcessManager`)的实例。
 
-   有关详细信息，请参阅[类ProcessManager](https://helpx.adobe.com/cn/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)的Java™ API引用。
+   有关详细信息，请参阅[类ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html)的Java™ API引用。
 
 1. 检查工作流实例的状态。 如果状态不是2 (COMPLETE)或4 (TERMINATED)，请首先通过调用以下方法终止实例：
 

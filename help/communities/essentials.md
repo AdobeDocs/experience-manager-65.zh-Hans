@@ -9,16 +9,23 @@ exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '208'
-ht-degree: 15%
-
+source-wordcount: '211'
+ht-degree: 16%
 ---
-
 # 组件、功能和功能要点  {#component-function-and-feature-essentials}
 
-Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员并登录[社区站点](overview.md#communitiessites)，然后才能发布内容。 因此，[社区站点模板](sites.md)（从中创建社区站点[&#128279;](sites-console.md)）设计为包括登录功能和用户配置文件、消息传送、搜索、审核和翻译。
+Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员并登录[社区站点](overview.md#communitiessites)，然后才能发布内容。 因此，[社区站点模板](sites.md)（从中创建社区站点[](sites-console.md)）设计为包括登录功能和用户配置文件、消息传送、搜索、审核和翻译。
 
 当[社区组功能](functions.md#groups-function)包含在选定的社区站点模板中时，社区站点支持成员创建社区组。
 
@@ -30,10 +37,10 @@ Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员�
 * [审核](reviews-basics.md)
 * [总计](tally.md)
 
-   * [点赞](essentials-liking.md)
-   * [评分](rating-basics.md)
-   * [投票](essentials-voting.md)
-   * *轮询（不再可用）*
+  * [点赞](essentials-liking.md)
+  * [评分](rating-basics.md)
+  * [投票](essentials-voting.md)
+  * *轮询（不再可用）*
 
 ## 具有函数的组件 {#components-with-functions}
 
@@ -49,10 +56,10 @@ Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员�
 * [排行榜](leaderboard.md)
 * [问题和答案](qna-essentials.md) `(QnA)`
 
-## 功能 {#features}
+## 特性 {#features}
 
 * [客户端库](clientlibs.md)
-* [社区站点](sites-for-developers.md)
+* [社区网站](sites-for-developers.md)
 * [组件OSGi事件](events.md)
 * [组件侧载](sideloading.md)
 * [消息](essentials-messaging.md)
@@ -75,10 +82,10 @@ Adobe Experience Manager (AEM) Communities功能要求站点访客成为成员�
 
 * [社交组件框架(SCF)](scf.md)
 
-   * [客户端自定义](client-customize.md)
-   * [服务器端自定义](server-customize.md)
-   * [存储资源提供程序概述](srp.md)
+  * [客户端自定义](client-customize.md)
+  * [服务器端自定义](server-customize.md)
+  * [存储资源提供程序概述](srp.md)
 
-* [编码准则](code-guide.md)
+* [编码指南](code-guide.md)
 * [教程](tutorials.md)
 * [疑难解答](troubleshooting.md)

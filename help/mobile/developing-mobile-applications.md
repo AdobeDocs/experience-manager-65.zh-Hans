@@ -1,6 +1,6 @@
 ---
 title: 在AEM中开发移动应用程序
-description: 按照本页中的说明，开始使用Adobe PhoneGap Enterprise在AEM中开发移动应用程序。
+description: 按照本页上的说明，开始使用Adobe PhoneGap Enterprise在AEM中开发移动应用程序。
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,18 +9,22 @@ exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '600'
 ht-degree: 1%
-
 ---
-
 # 在AEM中开发移动应用程序 {#developing-mobile-applications-in-aem}
 
 {{ue-over-mobile}}
 
-AEM使用Adobe PhoneGap和Adobe发布解决方案，允许您创建和管理内容丰富且基于实用工具的跨平台移动应用程序：
+AEM使用Adobe PhoneGap和Adobe Publishing Solutions，允许您创建和管理内容丰富且基于实用工具的跨平台移动应用程序：
 
 * 在一个位置管理您所有公司的移动应用程序。
 * 查看开发和暂存环境中的应用程序，而无需复杂的配置配置文件以及额外工作来构建和上传应用程序以进行共享。
@@ -31,7 +35,7 @@ AEM使用Adobe PhoneGap和Adobe发布解决方案，允许您创建和管理内�
 
 AEM与Adobe PhoneGap Build服务(`https://build.phonegap.com/`)集成以简化应用程序构建和部署过程。
 
-**AdobeContentSync**&#x200B;使用户能够轻松地将Over-The-Air (OTA)页面和内容更新下载到他们的设备，而无需重新安装应用程序，或从appStore、Google Play或其他应用程序源下载。
+**Adobe ContentSync**&#x200B;使用户能够轻松地将Over-The-Air (OTA)页面和内容更新下载到其设备，而无需重新安装应用程序或从appStore、Google Play或其他应用程序源下载。
 
 **Adobe Analytics**&#x200B;已完全集成到AEM应用程序中，允许详细跟踪分发、地理位置、操作系统、设备、点击流、iBeacon跟踪等。
 
@@ -53,7 +57,7 @@ Starter Kit Git存储库的自述文件中包含有关使用Starter Kit的教程
 
 ## 针对IOS 9和HTTP主机进行开发 {#developing-for-ios-and-http-hosts}
 
-iOS开发人员应了解在iOS 9上运行的Cordova应用程序存在的未决问题。 此问题会阻止对不安全的主机(如&#x200B;*http://localhost:4502*)发出请求。 此问题将通过即将发布的cordova-ios（由Cordova CLI使用）解决，但与此同时，有两种可用的解决方法：
+iOS开发人员应了解在iOS 9上运行的Cordova应用程序存在的未决问题。 此问题会阻止对不安全的主机（如&#x200B;*http://localhost:4502*）发出请求。 此问题将通过即将发布的cordova-ios（由Cordova CLI使用）解决，但与此同时，有两种可用的解决方法：
 
 1. 作为直接的解决方法，您仍然可以使用任何iOS 8模拟器，而不会出现任何问题。
 1. 如果必须使用iOS 9，则可以手动编辑您的应用程序 — Info.plist（在“&lt;应用程序根>/platforms/ios/&lt;应用程序名称>/&lt;应用程序名称>-Info.plist”文件中运行`cordova platform add ios`后找到）以包含以下属性：
@@ -81,7 +85,7 @@ iOS开发人员应了解在iOS 9上运行的Cordova应用程序存在的未决�
 * [单页面应用程序](/help/mobile/phonegap-single-page-applications.md)
 * [使用PhoneGap CLI开发应用程序](/help/mobile/phonegap-apps-pg-cli.md)
 * [访问设备功能](/help/mobile/phonegap-access-device-features.md)
-* [使用AdobeMobile Analytics跟踪应用程序性能](/help/mobile/phonegap-intro-to-app-analytics.md)
+* [使用Adobe Mobile Analytics跟踪应用程序性能](/help/mobile/phonegap-intro-to-app-analytics.md)
 * [将Adobe Analytics添加到您的移动应用程序](/help/mobile/phonegap-add-analytics-to-apps.md)
 * [推送通知](/help/mobile/phonegap-push-notifications.md)
 * [AEM Mobile内容个性化](/help/mobile/phonegap-aem-mobile-content-personalization.md)

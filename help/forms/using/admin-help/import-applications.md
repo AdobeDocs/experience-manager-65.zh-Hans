@@ -1,5 +1,5 @@
 ---
-title: 导入和管理应用程序
+title: 导入并管理应用程序
 description: 了解如何导入和管理应用程序。 应用程序是一个容器，用于存储实施AEM Forms解决方案所需的资源。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,28 @@ exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '852'
+source-wordcount: '855'
 ht-degree: 0%
-
 ---
-
-# 导入和管理应用程序{#import-and-manage-applications}
+# 导入并管理应用程序{#import-and-manage-applications}
 
 在AEM Forms中，*应用程序*&#x200B;是用于存储实施AEM Forms解决方案所需的资源的容器。 例如，表单设计、表单片段、图像、进程、DDX文件、表单指南、HTML页面和SWF文件。 在项目的开发阶段，Workbench用户可以直接从Workbench的“应用程序”视图中部署应用程序。 部署后，这些应用程序将显示在管理控制台的“应用程序管理”页面的“应用程序”选项卡上。
 
@@ -26,7 +40,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->存在一个已知问题，即未来版本的LCA文件不一定向后兼容。 虽然可以从未来版本的AEM Forms（例如，预览版本）查看和导入LCA文件，但这样做不受支持，并且可能会导致异常行为。
+>存在一个已知问题，即未来版本的LCA文件不一定向后兼容。 虽然可以从未来版本的AEM表单（例如，预览版本）查看和导入LCA文件，但这样做不受支持，并且可能会导致异常行为。
 
 使用“应用程序”选项卡导入和管理在Workbench中创建的应用程序。 应用程序管理员还可以导出应用程序的运行时配置。 导出运行时配置无需在启动已部署的应用程序之前手动重新配置生产环境中的设置。 运行时配置文件包含：
 
@@ -102,7 +116,7 @@ ht-degree: 0%
 1. 单击应用程序的名称。
 1. 单击“导出运行时配置”(Export Runtime Config)并保存生成的配置文件(XML)。
 
-## AEM forms应用程序的脚本部署 {#scripted-deployment-of-aem-forms-applications}
+## AEM表单应用程序的脚本部署 {#scripted-deployment-of-aem-forms-applications}
 
 您还可以使用脚本部署工具来部署应用程序文件，包括指定以下设置的settings.xml文件：
 

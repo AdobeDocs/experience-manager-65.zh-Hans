@@ -4,13 +4,23 @@ description: 根据字段、内容和表单组件比较两个不同的表单。
 feature: Adaptive Forms, Core Components
 role: User, Developer, Admin
 exl-id: bcd6e9cf-b33b-4468-8b99-0da196f65eaa
-source-git-commit: 94a9f4087e36bfe5701ad9aafd4e8446ca643ddf
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '202'
-ht-degree: 7%
-
+source-wordcount: '222'
+ht-degree: 6%
 ---
-
 # 比较自适应表单 {#compare-two-forms}
 
 <!--
@@ -23,7 +33,7 @@ ht-degree: 7%
 
 ## 先决条件 {#prerequisite-versioning}
 
-要在基于核心组件的自适应表单中使用比较功能，请确保在AEM 6.5 Forms环境中启用了[自适应表单核心组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
+要在基于核心组件的自适应表单中使用比较功能，请确保在AEM 6.5 Forms环境中启用了[自适应表单核心组件](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/forms/adaptive-forms-core-components/enable-adaptive-forms-core-components)。
 
 ## 比较不同的自适应表单 {#compare-af-65}
 

@@ -9,18 +9,25 @@ exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '364'
 ht-degree: 1%
-
 ---
-
 # 社区组件基础知识 {#communities-components-basics}
 
 ## 概述 {#overview}
 
-本文档的创作部分介绍了如何在创作编辑模式下将社区功能添加到AEM站点，并描述了组件配置。
+此文档的创作部分介绍了如何在创作编辑模式下将社区功能添加到AEM站点，并描述了组件配置。
 
 可以使用AEM实例和交互式[社区组件指南](components-guide.md)来探索组件。
 
