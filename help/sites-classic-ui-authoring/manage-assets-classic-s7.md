@@ -175,7 +175,7 @@ Experience Manager中提供了以下Dynamic Media Classic (Scene7)组件：
 
 1. 将sidekick中&#x200B;**[!UICONTROL Dynamic Media Classic (Scene7)]**&#x200B;组中的组件拖动到所需位置的页面上。
 
-1. 选择***[!UICONTROL 编辑]**，以便打开该组件。
+1. 选择&#x200B;***[!UICONTROL 编辑]**，以便打开该组件。
 
 1. 根据需要编辑该组件并选择&#x200B;**[!UICONTROL 确定]**&#x200B;以保存更改。
 
@@ -214,13 +214,13 @@ Experience Manager中提供了以下Dynamic Media Classic (Scene7)组件：
 
 按+按钮时，HTML5缩放组件会显示较大的图像。
 
-资产底部有缩放工具。 选择要放大的&#x200B;**[!UICONTROL +]**。 选择要减少的&#x200B;**[!UICONTROL -]**。 选择&#x200B;**[!UICONTROL x]**&#x200B;或重置缩放箭头可使图像恢复到导入图像的原始大小。 选择对角线箭头，以便全屏显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 通过此组件，您可以配置所有Dynamic Media Classic (Scene7)组件](#settings-common-to-all-scene-components)共有的[设置。
+资产底部有缩放工具。 选择要放大的&#x200B;**[!UICONTROL +]**。 选择要减少的&#x200B;**[!UICONTROL -]**。 选择&#x200B;**[!UICONTROL x]**&#x200B;或重置缩放箭头可使图像恢复到导入图像的原始大小。 选择对角线箭头，以便全屏显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 通过此组件，您可以配置所有Dynamic Media Classic (Scene7)组件[&#128279;](#settings-common-to-all-scene-components)共有的设置。
 
 ![HTML5 Zoom组件内郁金香花的图像。](do-not-localize/chlimage_1-3.png)
 
 ### 弹出 {#flyout}
 
-在HTML5弹出组件中，资源显示为分屏；左侧的资源使用指定大小；右侧的缩放部分显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 通过此组件，您可以配置所有Dynamic Media Classic (Scene7)组件](/help/sites-administering/scene7.md#settingscommontoallscene7components)共有的[设置。
+在HTML5弹出组件中，资源显示为分屏；左侧的资源使用指定大小；右侧的缩放部分显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 通过此组件，您可以配置所有Dynamic Media Classic (Scene7)组件[&#128279;](/help/sites-administering/scene7.md#settingscommontoallscene7components)共有的设置。
 
 >[!NOTE]
 >
@@ -234,7 +234,7 @@ Experience Manager中提供了以下Dynamic Media Classic (Scene7)组件：
 
 Dynamic Media Classic (Scene7)图像组件允许您将Dynamic Media Classic (Scene7)功能添加到图像，例如Dynamic Media Classic (Scene7)修饰符、图像或查看器预设以及锐化。 Dynamic Media Classic (Scene7)图像组件与Experience Manager中的其他图像组件类似，具有特殊的Dynamic Media Classic (Scene7)功能。 在此示例中，图像应用了Dynamic Media Classic (Scene7) URL修饰符`&op_invert=1`。
 
-Dynamic Media Classic (Scene 7)图像组件](do-not-localize/chlimage_1-4.png)中的球体图像![
+Dynamic Media Classic (Scene 7)图像组件![&#128279;](do-not-localize/chlimage_1-4.png)中的球体图像
 
 **标题，替换文本** — 在“高级”选项卡中，为已关闭图形的用户添加标题和替换文本。
 
@@ -260,7 +260,7 @@ Dynamic Media Classic (Scene 7)图像组件](do-not-localize/chlimage_1-4.png)�
 
 Dynamic Media Classic (Scene7)图像模板是导入Dynamic Media Classic (Scene7)的分层Photoshop内容，其中内容和属性进行了参数化以反映可变性。 通过&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，您可以在Experience Manager中导入图像并动态更改文本。 此外，您可以将&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件配置为使用来自客户端上下文的值，以便每个用户以个性化的方式体验图像。
 
-选择&#x200B;**[!UICONTROL 编辑]** — 以配置该组件。 您可以配置所有Dynamic Media Classic (Scene7)组件](/help/sites-administering/scene7.md#settingscommontoallscene7components)共有的[设置以及本节中描述的其他设置。
+选择&#x200B;**[!UICONTROL 编辑]** — 以配置该组件。 您可以配置所有Dynamic Media Classic (Scene7)组件[&#128279;](/help/sites-administering/scene7.md#settingscommontoallscene7components)共有的设置以及本节中描述的其他设置。
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 

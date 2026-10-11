@@ -51,7 +51,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->有关详细信息，请参阅Sling文档以及资源解析](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)和[资源](https://sling.apache.org/documentation/the-sling-engine/resources.html)的[映射。
+>有关详细信息，请参阅Sling文档以及资源解析[&#128279;](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)和[资源](https://sling.apache.org/documentation/the-sling-engine/resources.html)的映射。
 
 ## 查看映射定义 {#viewing-mapping-definitions}
 
@@ -63,7 +63,7 @@ JCR资源解析器计算映射表单两个列表（自上而下）以查找匹�
 显示当前配置（如[Apache Sling资源解析程序](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)所定义）。
 
 * 配置测试
-这可让您输入URL或资源路径。 单击**解析**&#x200B;或&#x200B;**映射**&#x200B;以确认系统将如何转换该条目。
+这可让您输入URL或资源路径。 单击&#x200B;**解析**&#x200B;或&#x200B;**映射**&#x200B;以确认系统将如何转换该条目。
 
 * **解析器映射条目**
 ResourceResolver.resolve方法用于将URL映射到资源的条目列表。
