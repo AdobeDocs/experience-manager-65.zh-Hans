@@ -1,5 +1,5 @@
 ---
-title: 配置页面以批量编辑页面属性
+title: 配置页面以便批量编辑页面属性
 description: 批量编辑页面属性允许您同时编辑多个页面的属性
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Developer
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '407'
-ht-degree: 24%
-
+source-wordcount: '419'
+ht-degree: 29%
 ---
-
-# 配置页面以批量编辑页面属性 {#configuring-your-page-for-bulk-editing-of-page-properties}
+# 配置页面以便批量编辑页面属性 {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 [批量编辑页面属性](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages)功能让您一次编辑多个页面的属性。
 
@@ -38,7 +47,7 @@ ht-degree: 24%
 
 >[!NOTE]
 >
->批量编辑也可用于Assets。 其操作大体相同，只有少数几点差别。有关完整信息，请参阅[编辑多个Assets的属性](/help/assets/metadata.md)。 您可以使用[架构编辑器](/help/assets/metadata-schemas.md)自定义Assets的批量元数据编辑器中的字段。
+>批量编辑也可用于Assets。 其操作大体相同，只有少数几点差别。 有关完整信息，请参阅[编辑多个Assets的属性](/help/assets/metadata.md)。 您可以使用[架构编辑器](/help/assets/metadata-schemas.md)自定义Assets的批量元数据编辑器中的字段。
 
 ## 启用字段 {#enabling-a-field}
 

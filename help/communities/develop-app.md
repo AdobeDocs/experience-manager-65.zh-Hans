@@ -9,13 +9,20 @@ exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '600'
 ht-degree: 4%
-
 ---
-
 # 开发沙盒应用程序  {#develop-sandbox-application}
 
 在此部分中，现在，模板在[初始应用程序](initial-app.md)部分中设置，初始页面在[初始内容](initial-content.md)部分中建立，您可以开发应用程序。 为此，您需要使用基础脚本，这些脚本包含启用通过社区组件进行创作的功能。 在此部分末尾，您有一个功能齐全的网站。
@@ -65,7 +72,7 @@ ht-degree: 4%
    %>
    ```
 
-1. 意识到打开/关闭脚本标记，将“ // TODO ...”替换为&lt;html>的head和body部分的`includes`个脚本。
+1. 意识到打开/关闭脚本标记，请替换“ // TODO ...” 包含`includes`个用于&lt;html>的head和body部分的脚本。
 
    使用`foundation/components/page`的超类型，未在此同一文件夹中定义的任何脚本都将解析为`/apps/foundation/components/page`文件夹中的脚本（如果存在），否则解析为`/libs/foundation/components/page`文件夹中的脚本。
 
@@ -92,7 +99,7 @@ ht-degree: 4%
    要设置进行创作，请使用本地脚本叠加`body.jsp`，并在正文中包含段落系统(parsys)：
 
    1. 导航到 `/apps/an-scf-sandbox/components`。
-   1. 选择`playpage`节点。
+   1. 选择 `playpage` 节点。
    1. 右键单击并选择`Create > Create File...`
 
       * 名称： **body.jsp**
@@ -175,11 +182,11 @@ ht-degree: 4%
 * 选择&#x200B;**[!UICONTROL 打开属性]**
 * 在高级选项卡上
 
-   * 对于重定向条目，请浏览到&#x200B;**[!UICONTROL 网站]** > **[!UICONTROL SCF沙盒站点]** > **[!UICONTROL SCF沙盒]**
-   * 单击&#x200B;**[!UICONTROL 确定]**
+  * 对于重定向条目，请浏览到&#x200B;**[!UICONTROL 网站]** > **[!UICONTROL SCF沙盒站点]** > **[!UICONTROL SCF沙盒]**
+  * 单击&#x200B;**[!UICONTROL 确定]**
 
 * 单击&#x200B;**[!UICONTROL 确定]**
 
 发布站点后，在发布实例上浏览到根页面时，会重定向到英文页面。
 
-播放Communities SCF组件之前的最后一步是添加客户端库文件夹(clientlibs) .... [添加Clientlibs](add-clientlibs.md)
+播放Communities SCF组件之前的最后一步是添加客户端库文件夹(clientlibs)....[添加Clientlibs](add-clientlibs.md)

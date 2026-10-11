@@ -1,5 +1,5 @@
 ---
-title: 为Adobe Analytics配置链接跟踪
+title: 为 Adobe Analytics 配置链接跟踪
 description: 了解如何为SiteCatalyst配置链接跟踪。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,21 +9,30 @@ exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1615'
-ht-degree: 0%
-
+source-wordcount: '1645'
+ht-degree: 1%
 ---
 
-
-# 为Adobe Analytics配置链接跟踪{#configuring-link-tracking-for-adobe-analytics}
+# 为 Adobe Analytics 配置链接跟踪{#configuring-link-tracking-for-adobe-analytics}
 
 当用户单击网站页面上的链接时，您可以在Adobe Analytics中捕获相关信息。 例如，使用链接跟踪功能了解用户如何与您的网站进行交互、跟踪文件下载以及跟踪退出链接。
 
 ## 为Adobe Analytics Framework配置链接跟踪 {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. 使用&#x200B;**导航**，通过&#x200B;**部署**，**Cloud Service**&#x200B;转到&#x200B;**Adobe Analytics**&#x200B;部分。
+1. 使用&#x200B;**导航**，通过&#x200B;**部署**，**云服务**&#x200B;转到&#x200B;**Adobe Analytics**&#x200B;部分。
 
 1. 使用&#x200B;**显示配置**，打开所需的Adobe Analytics框架。
 1. 展开&#x200B;**链接跟踪配置**&#x200B;部分并根据需要进行配置（此页面提供了更多详细信息）：
@@ -48,7 +57,7 @@ ht-degree: 0%
 * pdf
 * xls
 
-例如，为PDF文件启用下载跟踪后，每当用户单击指向PDF文件的链接时，就会跟踪PDF的下载。
+例如，如果为PDF文件启用了下载跟踪，那么只要用户单击指向PDF文件的链接，就会跟踪PDF的下载。
 
 框架的下载跟踪属性作为针对页面生成的`analytics.sitecatalyst.js`文件中的代码实施。 以下代码示例表示默认的下载跟踪配置：
 
@@ -109,7 +118,7 @@ s.linkLeaveQueryString= false;
 
 ## 通过链接点击发送变量数据 {#sending-variable-data-with-link-clicks}
 
-您可以将AEM配置为当用户单击链接时，将事件和变量数据发送到Adobe Analytics。 通过&#x200B;**链接跟踪配置**&#x200B;属性，可指定要在发生链接点击时跟踪的Adobe Analytics事件和变量。
+您可以将AEM配置为在用户单击链接时将事件和变量数据发送到Adobe Analytics。 通过&#x200B;**链接跟踪配置**&#x200B;属性，可指定要在发生链接点击时跟踪的Adobe Analytics事件和变量。
 
 框架映射确定事件和变量值。 您可以将Adobe Analytics变量映射到内容组件的变量，这些变量存储着您希望在单击链接时跟踪的数据。
 
@@ -156,7 +165,7 @@ s.linkTrackVars= 'prop4';
    >
    >如果您不该在其中公开自己的组件（通过在其页面组件中定义Analytics子节点），
 
-   通过从左侧面板拖动Analytics(SiteCatalyst)变量，根据下表配置映射：
+   通过从左侧面板拖动Analytics (SiteCatalyst)变量，根据下表配置映射：
 
 <table>
  <tbody>
@@ -167,7 +176,7 @@ s.linkTrackVars= 'prop4';
   </tr>
   <tr>
    <td>pagedata.title</td>
-   <td>自定义eVar1 (eVar1)</td>
+   <td>自定义eVar 1 (eVar1)</td>
    <td>EVAR1</td>
   </tr>
   <tr>
@@ -178,7 +187,7 @@ s.linkTrackVars= 'prop4';
  </tbody>
 </table>
 
-1. 将搜索组件拖动到框架的映射区域。 搜索组件属于Sidekick中的常规组件组。 通过从左侧面板拖动Analytics(SiteCatalyst)变量，根据下表配置映射：
+1. 将搜索组件拖动到框架的映射区域。 搜索组件属于Sidekick中的常规组件组。 通过从左侧面板拖动Analytics (SiteCatalyst)变量，根据下表配置映射：
 
 <table>
  <tbody>
@@ -188,13 +197,13 @@ s.linkTrackVars= 'prop4';
    <th>Adobe Analytics变量</th>
   </tr>
   <tr>
-   <td>eventdata.keyword</td>
-   <td>自定义eVar2 (eVar2)</td>
+   <td>事件数据。关键字</td>
+   <td>自定义eVar 2 (eVar2)</td>
    <td>EVAR2</td>
   </tr>
   <tr>
    <td>eventdata.results</td>
-   <td>自定义eVar3 (eVar3)</td>
+   <td>自定义eVar 3 (eVar3)</td>
    <td>EVAR3</td>
   </tr>
   <tr>

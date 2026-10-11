@@ -1,5 +1,5 @@
 ---
-title: 调试HTML5表单
+title: 调试 HTML5 Forms
 description: 本文档列出了解决各种已知问题的步骤。
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,29 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '811'
-ht-degree: 0%
-
+source-wordcount: '844'
+ht-degree: 1%
 ---
-
-# 调试HTML5表单 {#debugging-html-forms}
+# 调试 HTML5 Forms {#debugging-html-forms}
 
 本文档包含多个疑难解答场景。 对于每种情况，都提供了一些解决问题的步骤。 按照以下步骤操作，如果问题仍然存在，请配置日志记录器以获取并查看错误/警告日志。 有关HTML5表单日志记录的更多详细信息，请参阅[生成HTML5表单的日志](/help/forms/using/enable-logs.md)。
 
@@ -45,7 +60,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>与模板合并的数据文件的绝对路径。<br />注意：路径定义了数据文件的绝对路径。</td>
+   <td>与模板合并的数据文件的绝对路径。<br /> 注意：路径定义数据文件的绝对路径。</td>
   </tr>
   <tr>
    <td>数据</td>
@@ -57,7 +72,7 @@ ht-degree: 0%
 ## 问题：无法呈现表单（显示错误消息） {#problem-unable-to-render-form}
 
 1. 请确保指定的参数正确。 有关参数的详细信息，请参阅[渲染参数](#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page)。
-1. 登录到CRX包管理器(位于https://&lt;server>：&lt;port>/crx/packmgr/index.jsp)，然后检查是否正确安装了以下包：
+1. 登录到CRX包管理器（位于https://&lt;server>：&lt;port>/crx/packmgr/index.jsp），然后检查是否正确安装了以下包：
 
    * adobe-lc-forms-content-pkg-&lt;version>.zip
    * adobe-lc-forms-runtime-pkg-&lt;version>.zip
@@ -70,11 +85,11 @@ ht-degree: 0%
 
    (com.adobe.livecyclescala-lang.bundle)
 
-   * AdobeXFA Forms渲染器
+   * Adobe XFA Forms渲染器
 
    (com.adobe.livecycle.adobe-lc-forms-core)
 
-   * AdobeXFA Forms LC连接器
+   * Adobe XFA Forms LC连接器
 
    (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
@@ -105,21 +120,21 @@ ht-degree: 0%
 
 ### 问题：遇到意外错误 {#problem-unexpected-error-encountered}
 
-1. 在表单URL中，添加查询参数debugClientLibs并将其值设置为true(例如： https://&lt;server>：&lt;port>/content/xfaforms/profiles/test.html？contentRoot=&lt;some path>&amp;template=&lt;xdp文件的名称>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. 在表单URL中，添加查询参数debugClientLibs并将其值设置为true（例如：https://&lt;server>：&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path>&amp;template=&lt;xdp文件的名称>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true）
 1. 在桌面浏览器（如Chrome）中，转到“开发人员工具”>“控制台”。
 1. 打开日志以标识错误类型。 有关日志的详细信息，请参阅HTML5表单的[日志](/help/forms/using/enable-logs.md)。
 1. 转到“开发人员工具”>“控制台”。 使用栈栈跟踪来查找导致错误的代码。 调试错误以解决问题。
 
    >[!NOTE]
    >
-   >如果脚本编写失败，请检查在表单PDF呈现期间是否也出现同样的问题。 如果为“是”，则表明表单脚本逻辑存在问题。
+   >如果脚本编写失败，请检查在表单的PDF呈现期间是否也出现同样的问题。 如果为“是”，则表明表单脚本逻辑存在问题。
 
 ## 问题：无法提交表单 {#problem-unable-to-submit-the-form}
 
 1. 确保您有权访问AEM服务器，并且已连接到该服务器。
 1. 检查参数submitUrl是否正确。
 1. 使用调试选项作为&#x200B;**1-a5-b5-c5**&#x200B;启用HTML5表单[&#128279;](/help/forms/using/enable-logs.md)的日志中提到的客户端日志。 然后渲染表单并单击提交。 打开浏览器调试控制台并检查是否存在错误。
-1. 在[日志中找到HTML5表单](/help/forms/using/enable-logs.md)的服务器日志。 检查在提交期间服务器日志中是否有任何错误。
+1. 查找HTML5表单[&#128279;](/help/forms/using/enable-logs.md)的日志中提到的服务器日志。 检查在提交期间服务器日志中是否有任何错误。
 
 ## 问题：本地化的错误消息不显示 {#problem-localized-error-messages-do-not-display}
 
@@ -128,7 +143,7 @@ ht-degree: 0%
 1. 在左侧的文件夹层次结构中，导航到/libs/fd/xfaforms/clientlibs/I18N ，并确保存在以下文件和文件夹：
 
    * Namespace.js
-   * LogMessages.js
+   * logmessages.js
    * 语言文件夹
 
 1. 如果以上任何文件或文件夹不存在，请再次安装&#x200B;**adobe-lc-forms-runtime-pkg-&lt;version>.zip**&#x200B;包。
@@ -154,7 +169,7 @@ ht-degree: 0%
    可能的原因是URL中的一个或多个参数不正确。
 
    检查以下参数：
-步骤文本
+   步骤文本
 
 <table>
  <tbody>
@@ -172,7 +187,7 @@ ht-degree: 0%
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>与模板合并的数据文件的绝对路径。<br />注意：路径定义了数据文件的绝对路径。</td>
+   <td>与模板合并的数据文件的绝对路径。<br /> 注意：路径定义数据文件的绝对路径。</td>
   </tr>
   <tr>
    <td>数据</td>

@@ -10,13 +10,20 @@ exl-id: c9b34b00-525d-4ca3-bd18-11bb7ce66787
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1169'
 ht-degree: 0%
-
 ---
-
 # 日历功能 {#calendar-feature}
 
 ## 简介 {#introduction}
@@ -92,7 +99,7 @@ ht-degree: 0%
 
 * **附加图像文件大小上限**
 
-  仅在选中允许文件上传时才相关。 上传的图像文件可以包含的最大字节数。 默认值为2097152 **&#x200B; &#x200B;**(2 Mb)。
+  仅在选中允许文件上传时才相关。 上传的图像文件可以包含的最大字节数。 默认值为 **&#x200B; **(2 Mb)。
 
 * **允许的封面图像类型**
 
@@ -199,7 +206,7 @@ ht-degree: 0%
 具体而言，他们可以：
 
 * 创建日历事件
-* Post日历事件的评论
+* 将评论发布到日历事件
 * 编辑他们自己的日历事件或评论
 * 删除他们自己的日历事件或评论
 * 标记其他人的日历事件或评论

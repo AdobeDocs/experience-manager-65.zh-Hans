@@ -1,5 +1,5 @@
 ---
-title: 重用自适应表单
+title: 重复使用自适应表单
 description: 您可以重用现有的自适应表单来创建新的自适应表单。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,16 +8,32 @@ feature: Adaptive Forms,Foundation Components
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 11%
-
+source-wordcount: '629'
+ht-degree: 13%
 ---
+# 重复使用自适应表单 {#reusing-adaptive-forms}
 
-# 重用自适应表单 {#reusing-adaptive-forms}
-
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -58,7 +74,7 @@ ht-degree: 11%
 
 单击复制操作会自动退出选择模式，并使粘贴![aem6forms_paste](assets/aem6forms_paste.png)图标可见。 现在，转到所需的文件夹路径并单击粘贴![aem6forms_paste](assets/aem6forms_paste.png)图标以粘贴复制的自适应表单。
 
-如果粘贴到同一文件夹或此目标文件夹中存在另一个具有相同节点名称(存储于CRX存储库中)的文件，则会在后缀中附加1(例如，myaf将变为myaf1，如果同一位置存在myaf1，myaf将变为myaf2。 所有其他属性仍保持与原始自适应表单相同。
+如果粘贴到同一文件夹或此目标文件夹中存在另一个具有相同节点名称（存储于CRX存储库中）的文件，则会在后缀中附加1(例如，myaf将变为myaf1，如果同一位置存在myaf1，myaf将变为myaf2。 所有其他属性仍保持与原始自适应表单相同。
 
 单击粘贴![aem6forms_paste](assets/aem6forms_paste.png)图标后，该图标将再次隐藏。 同时，您只能粘贴一次。 要再次创建同一资产的副本，请再次复制该副本。
 

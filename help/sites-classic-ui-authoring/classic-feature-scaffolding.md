@@ -10,13 +10,22 @@ exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1418'
 ht-degree: 0%
-
 ---
-
 # 基架{#scaffolding}
 
 有时您可能需要创建大量共享结构但内容不同的页面。 通过标准Adobe Experience Manager (AEM)界面，您需要创建每个页面，将相应的组件拖动到页面上，然后单独填充每个组件。
@@ -45,7 +54,7 @@ ht-degree: 0%
 
 * **标题文本**：这是此基架页面本身的名称。 在本例中，它称为“News”。
 * **描述**：这显示在基架页面的标题下方。
-* **目标模板**：此基架在创建页面时将使用的模板。 在此示例中，它是&#x200B;*Geometrixx内容页面*&#x200B;模板。
+* **目标模板**：此基架在创建页面时将使用的模板。 在此示例中，它是&#x200B;*Geometrixx Content Page*&#x200B;模板。
 * **目标路径**：这是此基架将在其下创建页面的父页面的路径。 在此示例中，路径为&#x200B;*/content/geometrixx/en/news*。
 
 脚手架的主体就是它的形式。 当用户希望使用基架创建页面时，他填写表单并单击底部的&#x200B;*创建*。 在上面的&#x200B;**新闻**&#x200B;示例中，该表单包含以下字段：
@@ -91,7 +100,7 @@ ht-degree: 0%
 
 `./jcr:content/par/text/text`
 
-这是使用基架创建页面时要将此字段内容写入其中的属性的名称。 属性以节点中的相对路径表示，表示要创建的页面。 它指定节点文本下方的属性文本，该文本位于节点par之下，节点本身是页面节点之下jcr：content节点的子节点。
+这是使用基架创建页面时要将此字段内容写入其中的属性的名称。 属性以节点中的相对路径表示，表示要创建的页面。 它指定位于节点文本下方的属性文本，该文本位于节点par下方，它本身是页面节点下方jcr:content节点的子节点。
 
 这将为将输入到此字段的文本定义内容存储的位置。 但是，我们还需要为此内容指定两个其他特征：
 
@@ -118,7 +127,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->对话框编辑器允许用户更改对话框定义中&#x200B;*existing*&#x200B;属性的值。 若要添加新属性，用户必须使用[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。 例如，当使用对话框编辑器向对话框定义中添加新的隐藏字段时，它没有&#x200B;*value*&#x200B;属性（即，名为“value”的属性）。 如果相关隐藏字段要求设置默认值属性，则必须使用某个CRX工具手动添加此属性。 无法用对话框编辑器本身添加值。 但是，属性一旦出现，便可以使用对话框编辑器编辑其值。
+>对话框编辑器允许用户更改对话框定义中&#x200B;*existing*&#x200B;属性的值。 要添加新属性，用户必须使用[CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)。 例如，当使用对话框编辑器向对话框定义中添加新的隐藏字段时，它没有&#x200B;*value*&#x200B;属性（即，名为“value”的属性）。 如果相关隐藏字段要求设置默认值属性，则必须使用某个CRX工具手动添加此属性。 无法用对话框编辑器本身添加值。 但是，属性一旦出现，便可以使用对话框编辑器编辑其值。
 
 第二个隐藏字段可以通过单击它来显示，如下所示：
 

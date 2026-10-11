@@ -10,20 +10,27 @@ role: Admin
 exl-id: e29aae44-67be-43d2-8004-c986412d9e63
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '906'
+source-wordcount: '912'
 ht-degree: 0%
-
 ---
-
 # SRP — 社区内容存储 {#srp-community-content-storage}
 
 ## 简介 {#introduction}
 
 从AEM Communities 6.1开始，用户生成的内容(UGC)存储在存储资源提供商(SRP)提供的单个公共存储中。 有几种SRP选项可供选择，如ASRP、MSRP和JSRP。
 
-与以前的版本不同，UGC不会跨AEM实例进行反向/正向复制。 相反，SRP允许直接从所有创作和发布实例中访问UGC以进行创建、读取、更新和删除(CRUD)操作，但JSRP除外。
+与以前的版本不同，UGC在AEM实例间不进行反向/正向复制。 相反，SRP允许直接从所有创作和发布实例中访问UGC以进行创建、读取、更新和删除(CRUD)操作，但JSRP除外。
 
 以下是每个SRP选项[&#128279;](#characteristics-of-srp-options)的特性，在选择适当的SRP和[基础部署](/help/communities/topologies.md)时，这些特性对于决策过程至关重要。
 
@@ -31,21 +38,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->SRP仅适用于社区内容。 它不影响站点内容的存储位置（[节点存储](/help/sites-deploying/data-store-config.md)），也不影响AEM实例之间用户注册、用户配置文件和用户组的安全处理（另请参阅[管理用户数据](#managing-user-data)）。
+>SRP仅适用于社区内容。 它不影响网站内容的存储位置（[节点存储](/help/sites-deploying/data-store-config.md)），也不影响AEM实例之间用户注册、用户配置文件和用户组的安全处理（另请参阅[管理用户数据](#managing-user-data)）。
 
 >[!CAUTION]
 >
->截至AEM 6.1，[UGC从未复制](#ugc-never-replicated)。
+>自AEM 6.1起，从不复制[UGC](#ugc-never-replicated)。
 >
 >当部署不包含公用存储（如默认的[JSRP](/help/communities/topologies.md#jsrp)拓扑）时，UGC将仅在输入它的AEM发布或创作实例上可见。 仅当拓扑包含发布群集时，UGC才在任何发布实例上可见。
 
 ## SRP选项的特性 {#characteristics-of-srp-options}
 
-[ASRP -Adobe存储资源提供程序](/help/communities/asrp.md)
+[ASRP - Adobe存储资源提供程序](/help/communities/asrp.md)
 
-使用此选项，UGC会远程保留在由Adobe托管和管理的云服务中。 它需要额外的许可证，并且需要与客户代表合作，为该特定许可证设置帐户。 ASRP要求：
+使用此选项，UGC可远程保留在由Adobe托管和管理的云服务中。 它需要额外的许可证，并且需要与客户代表合作，为该特定许可证设置帐户。 ASRP要求：
 
-* Adobe提供并支持的相关云服务用于存储社区内容。
+* Adobe提供并支持的关联云服务用于存储社区内容。
 * 在特定地区（美国、欧洲、中东和非洲、亚太地区）选择数据中心。
 
 * 对UGC的所有编程访问都必须通过SRP API。
@@ -97,7 +104,7 @@ DSRP适合：
 
 JSRP：
 
-* 将社区内容存储在社区内容发布到的AEM创作或发布实例的JCR存储库。
+* 将社区内容存储在社区内容发布到的AEM创作或发布实例的JCR存储库中。
 * 要求通过SRP API访问UGC的所有程序化权限。
 * 如果部署了多个发布实例，则需要发布群集（TarMK场中的发布实例之间没有复制机制）。
 * 审核仅在发布环境中执行（创作和发布之间没有反向/正向复制机制）。
@@ -109,7 +116,7 @@ JSRP：
 
 有关每个选项的详细配置信息，请参阅：
 
-* [ASRP -Adobe存储资源提供程序](/help/communities/asrp.md)
+* [ASRP - Adobe存储资源提供程序](/help/communities/asrp.md)
 * [MSRP - MongoDB存储资源提供程序](/help/communities/msrp.md)
 * [DSRP — 关系数据库存储资源提供程序](/help/communities/dsrp.md)
 * [JSRP - JCR存储资源提供程序](/help/communities/jsrp.md)
@@ -136,6 +143,6 @@ CommunitIes感兴趣的还有&#x200B;[*用户*、*用户组*&#x200B;和&#x200B;*
 
 ### 升级到AEM Communities 6.5 {#upgrading-to-aem-communities}
 
-在升级到AEM 6.5 Communities时，如果需要保留预先存在的UGC，则应该根据AEM 5.6.1或AEM 6.0社区使用的是Adobe按需存储还是UGC本地存储来采取步骤。
+在升级到AEM 6.5 Communities时，如果需要保留预先存在的UGC，则应该根据AEM 5.6.1或AEM 6.0社区使用的是Adobe按需存储还是UGC本地存储来采取相应步骤。
 
 有关详细信息，请访问[升级到AEM Communities 6.5](/help/communities/upgrade.md)。

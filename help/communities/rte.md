@@ -9,13 +9,20 @@ exl-id: 821e32f4-da8d-4bbb-936a-0844b8a24cdd
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '240'
 ht-degree: 3%
-
 ---
-
 # 富文本编辑器要点 {#rich-text-editor-essentials}
 
 ## 概述 {#overview}
@@ -60,7 +67,7 @@ Communities组件的当前配置位于`cq.social.  scf   clientlib`的存储库�
 要向工具栏添加超链接选项，请执行以下操作：
 
 * 添加名为“`links`”的工具栏
-   * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
+  * `{ name: 'links', items: [ 'Link','Unlink','Anchor' ] }`
 * 选择&#x200B;**[!UICONTROL 全部保存]**
 
 #### /libs/clientlibs/social/commons/scf/ckrte.js {#libs-clientlibs-social-commons-scf-ckrte-js}

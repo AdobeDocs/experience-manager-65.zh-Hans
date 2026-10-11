@@ -10,13 +10,22 @@ exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 53%
-
+source-wordcount: '289'
+ht-degree: 59%
 ---
-
 # 与 Adobe Analytics 集成{#integrating-with-adobe-analytics}
 
 通过将Adobe Analytics与AEM集成，您可以跟踪您的网页活动：
@@ -33,11 +42,11 @@ ht-degree: 53%
 
 以下页面可帮助您配置集成：
 
-* [连接到Adobe Analytics并创建框架](/help/sites-administering/adobeanalytics-connect.md)
-* [为Adobe Analytics配置链接跟踪](/help/sites-administering/adobeanalytics-link.md)
-* [将组件数据映射到Adobe Analytics属性](/help/sites-administering/adobeanalytics-mapping.md)
-* [为Adobe Analytics配置视频跟踪](/help/sites-administering/adobeanalytics-video.md)
-* [Adobe分类](/help/sites-administering/adobeanalytics-classifications.md)
+* [连接 Adobe Analytics 并创建框架](/help/sites-administering/adobeanalytics-connect.md)
+* [为 Adobe Analytics 配置链接跟踪](/help/sites-administering/adobeanalytics-link.md)
+* [建立组件数据与 Adobe Analytics 属性的映射](/help/sites-administering/adobeanalytics-mapping.md)
+* [为 Adobe Analytics 配置视频跟踪](/help/sites-administering/adobeanalytics-video.md)
+* [Adobe 分类](/help/sites-administering/adobeanalytics-classifications.md)
 
 您还可以使用[选择加入向导](/help/sites-administering/opt-in.md)轻松执行集成。
 
@@ -53,11 +62,11 @@ ht-degree: 53%
 
 >[!NOTE]
 >
->如果您使用的是具有自定义代理配置的 Adobe Analytics，则需要配置 **Apache HTTP Client** 代理配置所需的[两个 OSGi 包](/help/sites-deploying/configuring-osgi.md)（例如，使用 Web Console）。这两个包都是必需的，因为 AEM 的某些功能使用 3.x API，而其他功能使用 4.x API。配置：
+>如果您使用的是具有自定义代理配置的 Adobe Analytics，则需要配置 **Apache HTTP Client** 代理配置所需的[两个 OSGi 包](/help/sites-deploying/configuring-osgi.md)（例如，使用 Web Console）。 这两个包都是必需的，因为 AEM 的某些功能使用 3.x API，而其他功能使用 4.x API。 配置：
 >
 >* **Day Commons HTTP 客户端 3.1** 以配置 3.x API；
->  &#x200B;>  例如，[https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
+>  例如，[https://localhost:4502/system/console/configMgr/com.day.commons.httpclient](https://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >
 >* **Apache HTTP 组件代理配置**&#x200B;以配置 4.x API；
->  &#x200B;>  例如，[https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
+>  例如，[https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
