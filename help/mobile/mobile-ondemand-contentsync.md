@@ -81,7 +81,7 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 
 如果您正在[使用Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)配置服务，请键入用户或组的名称作为“可授权回退缓存”属性的值。
 
-如果您在存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中进行[配置，请使用以下有关服务的信息：
+如果您在存储库[&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中进行配置，请使用以下有关服务的信息：
 
 * PID： com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * 属性名称： contentsync.fallback.authorizable

@@ -38,7 +38,7 @@ ht-degree: 15%
 
   * 查看[在We.Retail中查找内容片段资产的位置](#where-to-find-content-fragments-in-we-retail)
 
-* 然后，您可以在创作](/help/sites-authoring/content-fragments.md)内容页面时[使用这些片段及其变体。
+* 然后，您可以在创作[&#128279;](/help/sites-authoring/content-fragments.md)内容页面时使用这些片段及其变体。
 
   * 查看[在We.Retail中使用内容片段的位置](#where-content-fragments-are-used-in-we-retail)
 
@@ -83,7 +83,7 @@ We.Retail中有多个示例内容片段；通过&#x200B;**Assets**、**文件**�
 
 ## 在We.Retail中使用内容片段的位置 {#where-content-fragments-are-used-in-we-retail}
 
-为说明使用内容片段](/help/sites-authoring/content-fragments.md)进行[页面创作，下面提供了几个示例页面，例如：
+为说明使用内容片段[&#128279;](/help/sites-authoring/content-fragments.md)进行页面创作，下面提供了几个示例页面，例如：
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 

@@ -40,9 +40,9 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 这些构件包含在AEM中，除了AEM本身的使用之外，还可以由使用AEM构建的任何网站使用。
 
-有关AEM中所有可用小组件的完整参考，请参阅[小组件API文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)或现有xtypes](/help/sites-developing/xtypes.md)的[列表。 此外，框架的所有者[Sencha](https://examples.sencha.com/extjs/7.6.0/)网站上提供了许多说明如何使用ExtJS框架的示例。
+有关AEM中所有可用小组件的完整参考，请参阅[小组件API文档](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html)或现有xtypes[&#128279;](/help/sites-developing/xtypes.md)的列表。 此外，框架的所有者[Sencha](https://examples.sencha.com/extjs/7.6.0/)网站上提供了许多说明如何使用ExtJS框架的示例。
 
-本页提供了有关如何使用和扩展构件的某些见解。 它首先介绍如何在页面](#including-the-client-sided-code-in-a-page)中[包含客户端代码。 然后，它描述了一些已创建的示例组件，以说明一些基本用法和扩展。 这些组件在&#x200B;**包共享**&#x200B;上的&#x200B;**使用ExtJS小组件**&#x200B;包中可用。
+本页提供了有关如何使用和扩展构件的某些见解。 它首先介绍如何在页面[&#128279;](#including-the-client-sided-code-in-a-page)中包含客户端代码。 然后，它描述了一些已创建的示例组件，以说明一些基本用法和扩展。 这些组件在&#x200B;**包共享**&#x200B;上的&#x200B;**使用ExtJS小组件**&#x200B;包中可用。
 
 此包中包含以下示例：
 
@@ -127,8 +127,8 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 要遵循此页面上的教程，请在本地AEM实例中安装包&#x200B;**使用ExtJS小组件**，并创建一个包含组件的示例页面。 为此，请执行以下操作：
 
 1. 在AEM实例中，从包共享下载名为&#x200B;**使用ExtJS小组件(v01)**&#x200B;的包并安装该包。 它在存储库中创建位于`/apps`下的项目`extjstraining`。
-1. 将包含脚本(js)和样式表(css)的客户端库包含在Geometrixx页面jsp的head标记中。 您即将在&#x200B;**Geometrixx**分支的新页面中包含示例组件：
-在**CRXDE Lite**&#x200B;中，打开文件`/apps/geometrixx/components/page/headlibs.jsp`并将`cq.extjstraining`类别添加到现有`<ui:includeClientLib>`标记中，如下所示：
+1. 将包含脚本(js)和样式表(css)的客户端库包含在Geometrixx页面jsp的head标记中。 您即将在&#x200B;**Geometrixx**&#x200B;分支的新页面中包含示例组件：
+在&#x200B;**CRXDE Lite**&#x200B;中，打开文件`/apps/geometrixx/components/page/headlibs.jsp`并将`cq.extjstraining`类别添加到现有`<ui:includeClientLib>`标记中，如下所示：
    `%><ui:includeClientLib categories="apps.geometrixx-main, cq.extjstraining"/><%`
 1. 在`/content/geometrixx/en/products`下方的&#x200B;**Geometrixx**&#x200B;分支中创建页面，并使用ExtJS小组件&#x200B;**将其称为**。
 1. 进入设计模式，并将名为&#x200B;**使用ExtJS小组件**&#x200B;的组的所有组件添加到Geometrixx的设计中
@@ -217,7 +217,7 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 要使用“多面板”对话框，请执行以下操作：
 
-1. 将&#x200B;**对话框基础知识**&#x200B;组件的对话框替换为&#x200B;**多面板**对话框：
+1. 将&#x200B;**对话框基础知识**&#x200B;组件的对话框替换为&#x200B;**多面板**&#x200B;对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -238,7 +238,7 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 要使用&#x200B;**Rich**&#x200B;对话框：
 
-1. 将&#x200B;**Dialog Basics**&#x200B;组件的对话框替换为&#x200B;**Rich**对话框：
+1. 将&#x200B;**Dialog Basics**&#x200B;组件的对话框替换为&#x200B;**Rich**&#x200B;对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -334,7 +334,7 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 要使用&#x200B;**任意**&#x200B;对话框：
 
-1. 将&#x200B;**动态对话框**&#x200B;组件的对话框替换为&#x200B;**任意**对话框：
+1. 将&#x200B;**动态对话框**&#x200B;组件的对话框替换为&#x200B;**任意**&#x200B;对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -370,7 +370,7 @@ AEM使用[ExtJS](https://www.sencha.com/)构件库，该库提供了可在所有
 
 要使用&#x200B;**切换字段**&#x200B;对话框，请执行以下操作：
 
-1. 将&#x200B;**动态对话框**&#x200B;组件的对话框替换为&#x200B;**切换字段**对话框：
+1. 将&#x200B;**动态对话框**&#x200B;组件的对话框替换为&#x200B;**切换字段**&#x200B;对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -387,7 +387,7 @@ AEM附带的现成小组件应该涵盖大多数用例。 但是，有时可能�
 自定义小部件和插件包含在名为&#x200B;**3的组件中。 使用ExtJS小组件**&#x200B;包的&#x200B;**的自定义小组件**。 要将此组件包含在示例页面中，请执行以下操作：
 
 1. 添加&#x200B;**3。 从** Sidekick **中的**&#x200B;使用ExtJS小组件&#x200B;**选项卡将自定义小组件**&#x200B;组件添加到示例页面。
-1. 组件显示标题、一些文本，单击&#x200B;**属性**链接时，段落的属性存储在存储库中。 再次单击将隐藏属性。
+1. 组件显示标题、一些文本，单击&#x200B;**属性**&#x200B;链接时，段落的属性存储在存储库中。 再次单击将隐藏属性。
 该组件显示如下：
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
@@ -465,7 +465,7 @@ AEM附带的现成小组件应该涵盖大多数用例。 但是，有时可能�
 
 要使用&#x200B;**自定义树状浏览**&#x200B;基于构件的对话框，请执行以下操作：
 
-1. 将&#x200B;**自定义小组件**&#x200B;组件的对话框替换为&#x200B;**自定义树浏览**对话框：
+1. 将&#x200B;**自定义小组件**&#x200B;组件的对话框替换为&#x200B;**自定义树浏览**&#x200B;对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件：对话框显示如下：
 
@@ -502,7 +502,7 @@ RTE插件：
 
 要使用基于&#x200B;**富文本编辑器(RTE)插件**&#x200B;的对话框：
 
-1. 将&#x200B;**自定义小组件**&#x200B;组件的对话框替换为基于&#x200B;**富文本编辑器(RTE)插件**的对话框：
+1. 将&#x200B;**自定义小组件**&#x200B;组件的对话框替换为基于&#x200B;**富文本编辑器(RTE)插件**&#x200B;的对话框：
 按照为[示例2：单面板对话框](#example-single-panel-dialog)描述的步骤操作
 1. 编辑组件。
 1. 单击右侧的最后一个图标（带有四个箭头的图标）。 输入路径并单击&#x200B;**确定**：
@@ -652,7 +652,7 @@ RTE插件：
 * 基于通过调用servlet从存储库检索的数据。
 * 可以编辑最后一列的单元格。 该值保留在由第一列中显示的路径定义的节点下方的`test`属性中。
 
-如前面一节中所述，窗口对象通过调用`/apps/extjstraining/components/gridoverview/defaultgrid.js`的`defaultgrid.js`文件中定义的`getGridPanel()`方法获取其` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象。 **Grid概述**组件为`getGridPanel()`方法提供了不同的实现，该方法在`/apps/extjstraining/components/gridoverview/referencesearch.js`的`referencesearch.js`文件中定义。 通过切换组件jsp中引用的.js文件，网格将基于从存储库检索的数据。
+如前面一节中所述，窗口对象通过调用`/apps/extjstraining/components/gridoverview/defaultgrid.js`的`defaultgrid.js`文件中定义的`getGridPanel()`方法获取其` [CQ.Ext.grid.GridPanel](https://experienceleague.adobe.com/en/tools/aem-api-documentation/6-5/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)`对象。 **Grid概述**&#x200B;组件为`getGridPanel()`方法提供了不同的实现，该方法在`/apps/extjstraining/components/gridoverview/referencesearch.js`的`referencesearch.js`文件中定义。 通过切换组件jsp中引用的.js文件，网格将基于从存储库检索的数据。
 
 切换在组件jsp中引用的.js文件：
 

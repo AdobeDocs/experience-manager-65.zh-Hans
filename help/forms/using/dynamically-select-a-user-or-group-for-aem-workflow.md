@@ -36,7 +36,7 @@ ht-degree: 5%
 
 在大型组织中，需要动态地为流程选择用户。 例如，根据代理与客户的接近程度选择现场代理为客户提供服务。 在这种情况下，将动态选择代理。
 
-在OSGi](/help/forms/using/aem-forms-workflow.md)上分配任务和[以Forms为中心的工作流的Adobe Sign步骤，提供了用于动态选择用户的选项。 您可以使用ECMAScript或OSGi捆绑包为“分配任务”步骤动态选择被分配人，或为“签名文档”步骤选择签名者。
+在OSGi[&#128279;](/help/forms/using/aem-forms-workflow.md)上分配任务和以Forms为中心的工作流的Adobe Sign步骤，提供了用于动态选择用户的选项。 您可以使用ECMAScript或OSGi捆绑包为“分配任务”步骤动态选择被分配人，或为“签名文档”步骤选择签名者。
 
 ## 使用ECMAScript动态选择用户或组 {#use-ecmascript-to-dynamically-select-a-user-or-group}
 

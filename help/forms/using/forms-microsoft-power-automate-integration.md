@@ -145,7 +145,7 @@ ht-degree: 14%
 
 ## 使用调用® Power Automate流提交操作将数据发送到Power Automate流 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
-将AEM Forms创作实例与Microsoft® Power Automate](#connect-forms-server-with-power-automate)连接后，执行以下操作以配置自适应表单以在提交表单时将捕获的数据发送到Microsoft®流。[
+将AEM Forms创作实例与Microsoft® Power Automate[&#128279;](#connect-forms-server-with-power-automate)连接后，执行以下操作以配置自适应表单以在提交表单时将捕获的数据发送到Microsoft®流。
 
 1. 登录到创作实例，选择您的自适应表单并单击&#x200B;**[!UICONTROL 属性]**。
 1. 在配置容器中，浏览并选择在[创建® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration)部分创建的容器，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。

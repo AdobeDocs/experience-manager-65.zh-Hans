@@ -34,7 +34,7 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-_适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Apache许可证2下发布的适用于Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html)的[Eclipse插件的Eclipse插件。
+_适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Apache许可证2下发布的适用于Apache Sling[&#128279;](https://sling.apache.org/documentation/development/ide-tooling.html)的Eclipse插件的Eclipse插件。
 
 它提供了多项功能，可简化AEM的开发：
 

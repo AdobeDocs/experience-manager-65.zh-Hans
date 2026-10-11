@@ -329,7 +329,7 @@ AEM部署有三个重要的构建基块。 内容作者、编辑者和批准者�
 >
 >有关如何在Adobe Managed Services之外的Azure或AWS上部署AEM的建议，Adobe建议直接与云提供商合作。 或者，与支持在您选择的云环境中部署AEM的Adobe合作伙伴之一合作。 选定的云提供商或合作伙伴负责其支持的架构的规模规格、设计和实施，以满足您的特定性能、负载、可扩展性和安全要求。
 >
->>另请参阅[技术要求](/help/sites-deploying/technical-requirements.md#supported-platforms)页面。
+>&#x200B;>另请参阅[技术要求](/help/sites-deploying/technical-requirements.md#supported-platforms)页面。
 
 ### 搜索 {#search-features}
 

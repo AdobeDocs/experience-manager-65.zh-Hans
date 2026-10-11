@@ -66,7 +66,7 @@ ht-degree: 75%
 
 * 有关使用 React 或 Angular 框架创建 SPA 的开发经验
 * 有关创建内容片段和使用编辑器的基本 AEM 技能
-* 请务必查看AEM](/help/sites-developing/headful-headless.md)中的[Headful和Headless文档，以了解可能的SPA集成的各种级别。
+* 请务必查看AEM[&#128279;](/help/sites-developing/headful-headless.md)中的Headful和Headless文档，以了解可能的SPA集成的各种级别。
 
 ### 工具 {#tools}
 

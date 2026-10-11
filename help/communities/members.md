@@ -216,4 +216,4 @@ AEM Communities功能通常要求网站访客先注册并登录，然后才能�
 
 如果未以`admin`身份登录，则登录用户必须是`administrators`用户组的成员。
 
-另请参阅作者](deploy-communities.md#replication-agents-on-author)上的[复制代理。
+另请参阅作者[&#128279;](deploy-communities.md#replication-agents-on-author)上的复制代理。

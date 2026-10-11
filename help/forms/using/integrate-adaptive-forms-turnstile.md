@@ -68,7 +68,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
       ![配置旋转门](assets/config-hcaptcha.png)
    1. 将&#x200B;**[!UICONTROL 小组件类型]**&#x200B;指定为托管、非交互或不可见。
    1. 提供其他详细信息，如&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Name]**。
-   1. 为必备项](#prerequisite)中获取的Turnstile服务[指定&#x200B;**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**。
+   1. 为必备项[&#128279;](#prerequisite)中获取的Turnstile服务指定&#x200B;**[!UICONTROL 站点密钥]**&#x200B;和&#x200B;**[!UICONTROL 密钥]**。
    1. 单击&#x200B;**[!UICONTROL 创建]**。
 
       ![配置Cloud Service以将您的AEM Forms环境与Turnstile连接](assets/config-turntstile.png)

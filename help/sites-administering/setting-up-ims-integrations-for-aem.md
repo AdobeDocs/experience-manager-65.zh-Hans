@@ -114,5 +114,5 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
    ![填写 OAuth 详细信息](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. 使用&#x200B;**保存并关闭**来保存您的更新。
+1. 使用&#x200B;**保存并关闭**&#x200B;来保存您的更新。
 返回控制台时，**JWT凭据（已弃用）**&#x200B;警告消失。

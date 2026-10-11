@@ -116,7 +116,7 @@ Apache可以使用HTTP协议与CRX通信。 这些配置用于使用HTTP进行�
 
 1. 启用压缩。 在`APACHE_HOME/conf/httpd.conf`配置文件中添加以下配置。
 
-   用于HTML5表单的&#x200B;****
+   用于HTML5表单的&#x200B;**&#x200B;**
 
    ```xml
    <Location /content/xfaforms>

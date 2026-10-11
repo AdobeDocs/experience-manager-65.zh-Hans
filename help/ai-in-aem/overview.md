@@ -42,7 +42,7 @@ ht-degree: 76%
 
 ## AI 助手 {#ai-assistant}
 
-](/help/ai-assistant-in-aem.md)Adobe Experience Manager 中的 AI 助手[提供了一个对话界面，用于简化为您的 AEM 相关查询找到相应的回答。
+[&#128279;](/help/ai-assistant-in-aem.md)Adobe Experience Manager 中的 AI 助手提供了一个对话界面，用于简化为您的 AEM 相关查询找到相应的回答。
 
 ## 更多信息 {#further-information}
 

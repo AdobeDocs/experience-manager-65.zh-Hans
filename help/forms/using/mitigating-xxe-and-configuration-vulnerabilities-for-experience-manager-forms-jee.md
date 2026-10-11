@@ -87,7 +87,7 @@ ht-degree: 8%
 
 **步骤1：下载并解压缩修补程序包**
 
-- 下载适用于6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md)的[修补程序 从Adobe软件分发门户
+- 下载适用于6.5.18.0 - 6.5.22.[&#128279;](/help/release-notes/aem-forms-hotfix.md)的修补程序 从Adobe软件分发门户
 - 本地提取
 
 **步骤2：导航到正确的版本文件夹**

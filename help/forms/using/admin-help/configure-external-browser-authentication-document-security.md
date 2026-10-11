@@ -55,7 +55,7 @@ JEE Service Pack 6.5.25.0及更高版本上的AEM Forms中提供了外部浏览�
 
 如果您在JEE Service Pack 6.5.24.0或更早版本上的AEM Forms上，请执行以下操作之一：
 
-* 升级到JEE Service Pack 6.5.25.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip)上的[AEM Forms。
+* 升级到JEE Service Pack 6.5.25.0[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip)上的AEM Forms。
 * 使用以下链接为您的应用程序服务器和平台安装AEM Forms JEE修补程序6.5.24.0修补程序。
 
 从[AEM Forms Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下载并安装适用于您平台的Adobe JEE修补程序6.5.24.0修补程序：

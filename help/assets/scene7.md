@@ -155,7 +155,7 @@ Experience Manager中提供了以下Dynamic Media Classic组件：
 
 按&#x200B;**[!UICONTROL +]**&#x200B;按钮时，HTML5缩放组件显示较大的图像。
 
-资产底部有缩放工具。 如果要放大，请选择&#x200B;**[!UICONTROL +]**；如果要缩小，请选择&#x200B;**[!UICONTROL -]**。 点按&#x200B;**[!UICONTROL x]**&#x200B;或重置缩放箭头可将图像恢复到导入图像的原始大小。 选择对角线箭头，以便全屏显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 使用此组件，您可以配置所有[!UICONTROL Dynamic Media Classic]组件](#settings-common-to-all-scene-components)共有的[设置。
+资产底部有缩放工具。 如果要放大，请选择&#x200B;**[!UICONTROL +]**；如果要缩小，请选择&#x200B;**[!UICONTROL -]**。 点按&#x200B;**[!UICONTROL x]**&#x200B;或重置缩放箭头可将图像恢复到导入图像的原始大小。 选择对角线箭头，以便全屏显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 使用此组件，您可以配置所有[!UICONTROL Dynamic Media Classic]组件[&#128279;](#settings-common-to-all-scene-components)共有的设置。
 
 ![chlimage_1-227](/help/assets/assets/do-not-localize/chlimage_1-227.png)
 

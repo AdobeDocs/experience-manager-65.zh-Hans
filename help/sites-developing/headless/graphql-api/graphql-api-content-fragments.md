@@ -188,7 +188,7 @@ GraphQL是一种类型的API，这意味着数据必须清楚地按类型构建�
 
 GraphQL 规范提供了一系列准则，说明如何创建可靠的 API 用于询问特定实例上的数据。 要完成这些准则，客户端必须提取[架构](#schema-generation)，其中包含查询所需的所有类型。
 
-对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**[内容片段模型](/help/assets/content-fragments/content-fragments-models.md)及其数据类型。
+对于内容片段，GraphQL 架构（结构和类型）基于&#x200B;**已启用**&#x200B;[内容片段模型](/help/assets/content-fragments/content-fragments-models.md)及其数据类型。
 
 >[!CAUTION]
 >

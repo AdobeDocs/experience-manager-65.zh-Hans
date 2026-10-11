@@ -164,7 +164,7 @@ AEM中的所有云服务配置都已合并到AEM存储库的`/conf`文件夹中�
 
 1. 以管理员身份登录到[!DNL Experience Manager Forms]创作实例并转到[!DNL Experience Manager] Web控制台包。 默认URL为[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)。
 
-1. 为REST数据源&#x200B;]**选择**[!UICONTROL &#x200B;表单数据模型Http客户端配置。
+1. 为REST数据源&#x200B;**选择**&#x200B;表单数据模型Http客户端配置。
 
 1. 在[!UICONTROL REST数据源]的表单数据模型HTTP客户端配置对话框中：
 
@@ -194,7 +194,7 @@ AEM中的所有云服务配置都已合并到AEM存储库的`/conf`文件夹中�
    * 选择身份验证类型 — None、OAuth2.0（[授权代码](https://oauth.net/2/grant-types/authorization-code/)、[客户端凭据](https://oauth.net/2/grant-types/client-credentials/)）、Basic Authentication、Custom Authentication、X509 Token或Mutual Authentication — 以访问SOAP服务，并相应地提供身份验证的详细信息。
 
      如果选择&#x200B;**[!UICONTROL X509 Token]**&#x200B;作为身份验证类型，请配置X509证书。 有关详细信息，请参阅[设置证书](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)。
-     在**[!UICONTROL 密钥别名]**&#x200B;字段中指定X509证书的KeyStore别名。 在&#x200B;**[!UICONTROL 生存时间]**&#x200B;字段中指定身份验证请求保持有效的时间（秒）。 （可选）选择对消息正文或时间戳标头签名或同时选择两者。
+     在&#x200B;**[!UICONTROL 密钥别名]**&#x200B;字段中指定X509证书的KeyStore别名。 在&#x200B;**[!UICONTROL 生存时间]**&#x200B;字段中指定身份验证请求保持有效的时间（秒）。 （可选）选择对消息正文或时间戳标头签名或同时选择两者。
 
      如果选择&#x200B;**[!UICONTROL 相互身份验证]**&#x200B;作为身份验证类型，请参阅[RESTful和SOAP Web服务的基于证书的相互身份验证](#mutual-authentication)。
 

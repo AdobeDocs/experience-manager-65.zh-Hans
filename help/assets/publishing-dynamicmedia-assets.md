@@ -35,7 +35,7 @@ ht-degree: 4%
 您可以通过选择已上传的资源并点按&#x200B;**[!UICONTROL 发布]**&#x200B;或&#x200B;**[!UICONTROL 快速发布]**，来发布您的Dynamic Media资源。 发布Dynamic Media资产后，您可以通过URL或在网页上嵌入代码的方式将其包含在网页中。
 
 您还可以即时发布您上传的资产，无需任何用户干预。 请参阅[配置Dynamic Media - Scene7模式](config-dms7.md)。
-或者，您可以在文件夹级别使用**[!UICONTROL 选择性发布]**，有选择地将资源发布到Dynamic Media或Adobe Experience Manager，二者互斥。 请参阅[在Dynamic Media中使用选择性发布](/help/assets/selective-publishing.md)。
+或者，您可以在文件夹级别使用&#x200B;**[!UICONTROL 选择性发布]**，有选择地将资源发布到Dynamic Media或Adobe Experience Manager，二者互斥。 请参阅[在Dynamic Media中使用选择性发布](/help/assets/selective-publishing.md)。
 
 在&#x200B;**[!UICONTROL 卡片视图]**&#x200B;中，资产名称的正下方以及日期和时间的左侧会显示一个小地球图标，指示资产已发布。 在&#x200B;**[!UICONTROL 列表视图]**&#x200B;中，**[!UICONTROL 已发布]**&#x200B;列显示已发布的资产和未发布的资产。
 

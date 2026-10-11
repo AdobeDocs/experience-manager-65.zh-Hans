@@ -109,7 +109,7 @@ Adobe 建议在安装完成后（适用于所有实例）更改具有特权的 [
 
 **更改 OSGi 网页控制台管理员密码的步骤**：
 
-1. 在&#x200B;**工具**、**操作**&#x200B;菜单中，打开&#x200B;**网页控制台**，进入&#x200B;**配置**部分。
+1. 在&#x200B;**工具**、**操作**&#x200B;菜单中，打开&#x200B;**网页控制台**，进入&#x200B;**配置**&#x200B;部分。
 例如：`<server>:<port>/system/console/configMgr`。
 1. 找到并打开 **Apache Felix OSGi 管理控制台**&#x200B;的条目。
 1. 更改&#x200B;**用户名**&#x200B;和&#x200B;**密码**。
@@ -391,7 +391,7 @@ Sling 采用&#x200B;*以内容为中心*&#x200B;的框架。 每个 HTTP 请求�
 
 尽管不推荐，但如需与现有应用程序保持向后兼容，可禁用该功能以恢复旧的实施。 如需禁用，请执行以下操作：
 
-1. 进入网页控制台，在 **Apache Jackrabbit Oak SecurityProvider** 中的 **requiredServicePids** 属性里移除** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** 条目。
+1. 进入网页控制台，在 **Apache Jackrabbit Oak SecurityProvider** 中的 **requiredServicePids** 属性里移除 **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** 条目。
 
    您也可在 OSGi 配置中查找 **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** PID 来定位 Oak 安全提供商。
 

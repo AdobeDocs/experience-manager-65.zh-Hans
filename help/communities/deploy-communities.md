@@ -316,7 +316,7 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 
 >[!NOTE]
 >
->验证是否正确配置了作者](#replication-agents-on-author)上的[复制代理。
+>验证是否正确配置了作者[&#128279;](#replication-agents-on-author)上的复制代理。
 
 将密钥资料存储在存储库中，将加密密钥从创作实例复制到其他实例的方式如下：
 
@@ -342,7 +342,7 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 
   ![granite-crypto](assets/granite-crypto.png)
 
-* 片刻后，应该会显示&#x200B;**成功**对话框：
+* 片刻后，应该会显示&#x200B;**成功**&#x200B;对话框：
   `Operation completed successfully.`
 
 ### Apache HTTP 服务器 {#apache-http-server}

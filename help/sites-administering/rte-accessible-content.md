@@ -71,7 +71,7 @@ RTE包含在启用了触屏操作的用户界面和Classic用户界面的各种�
 
 ## 使用源编辑功能 {#use-of-the-source-edit-feature}
 
-在某些情况下，内容作者会发现必须检查和调整使用RTE创建的HTML源代码。 例如，在RTE内创建的一段内容可能需要额外的标记以确保符合WCAG 2.0。 可以使用RTE的[源编辑](/help/sites-administering/rich-text-editor.md#aboutplugins)选项完成此操作。 您可以在`misctools`插件](/help/sites-administering/rich-text-editor.md#aboutplugins)上指定[`sourceedit`功能。
+在某些情况下，内容作者会发现必须检查和调整使用RTE创建的HTML源代码。 例如，在RTE内创建的一段内容可能需要额外的标记以确保符合WCAG 2.0。 可以使用RTE的[源编辑](/help/sites-administering/rich-text-editor.md#aboutplugins)选项完成此操作。 您可以在`misctools`插件[&#128279;](/help/sites-administering/rich-text-editor.md#aboutplugins)上指定`sourceedit`功能。
 
 >[!CAUTION]
 >

@@ -47,7 +47,7 @@ SPA创作功能提供了一个全面的解决方案，用于在AEM中支持SPA�
 
 本文说明了We.Retail Journal示例SPA上的天气组件示例。
 
-在阅读本文之前，您应该熟悉AEM](/help/sites-developing/spa-getting-started-react.md)的SPA应用程序的[结构。
+在阅读本文之前，您应该熟悉AEM[&#128279;](/help/sites-developing/spa-getting-started-react.md)的SPA应用程序的结构。
 
 >[!CAUTION]
 >本文档仅将[We.Retail Journal应用程序](https://github.com/adobe/aem-sample-we-retail-journal)用于演示目的。 请勿将其用于任何项目工作。

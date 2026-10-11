@@ -146,7 +146,7 @@ AEM Communities提供程序扩展[Adobe Granite OAuth应用程序和提供程序
 此提供程序需要编辑以：
 
 * 允许用户更新
-* 在范围](#adobe-granite-oauth-application-and-provider)中添加其他字段[
+* 在范围[&#128279;](#adobe-granite-oauth-application-and-provider)中添加其他字段
 
   * 默认情况下，并不包括默认情况下允许的所有字段。
 

@@ -352,7 +352,7 @@ AEM 允许轻松地使用相应的 HTML 元素构建语义上有意义的 Web �
   要打开您可以在其中选择&#x200B;**表属性**&#x200B;选项卡的&#x200B;**表**&#x200B;对话框，请执行以下操作：
 
   * 定义相应的&#x200B;**题注**。
-  * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、****** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
+  * 理想情况下，请删除 **Width**、 **Height**、Border **、** Border Border Sell PaddingSpacing **、**&#x200B;**&#x200B;** Cell Spacing的默认值。 因为这些属性可以在全局样式表中设置。
 
   然后，您可以使用&#x200B;**单元格属性**&#x200B;来选择单元格是数据单元格还是标题单元格：
 

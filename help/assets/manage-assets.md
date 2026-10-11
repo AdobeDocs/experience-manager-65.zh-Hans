@@ -209,7 +209,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上载
 1. 在上传页面的右下角，单击&#x200B;**[!UICONTROL 提交上传]**。
 
    要查看上载进度，请在全局导航栏上单击&#x200B;**[!UICONTROL 作业]**。 “作业”页显示上载的进度。 您可以随时在[!DNL Experience Manager]中继续工作并返回Dynamic Media Classic中的“作业”页面以查看正在进行的作业。
-   若要取消正在进行的上载作业，请单击“持续时间”时间旁边的**[!UICONTROL 取消]**。
+   若要取消正在进行的上载作业，请单击“持续时间”时间旁边的&#x200B;**[!UICONTROL 取消]**。
 
 #### 上载作业选项 {#upload-job-options}
 
@@ -419,7 +419,7 @@ Photoshop文档(PSD)文件最常用于创建图像模板。 上传PSD文件时�
 
    *图：使用日期选择器计划资产激活。*
 
-1. 如果要更新元数据属性中的复制代理触发器，请选中&#x200B;**[!UICONTROL 已达到打开/关闭时间]**选项。
+1. 如果要更新元数据属性中的复制代理触发器，请选中&#x200B;**[!UICONTROL 已达到打开/关闭时间]**&#x200B;选项。
    ![代理设置](assets-dm/Agent-settings.png)
 
 1. 要在特定持续时间后停用资产，请从&#x200B;**[!UICONTROL 关闭时间]**&#x200B;字段旁边的日期选取器中选择停用日期/时间。 停用日期应晚于资源的激活日期。 在[!UICONTROL 结束时间]后，无法通过[!DNL Assets] Web界面或HTTP API使用资产及其演绎版。
@@ -490,7 +490,7 @@ Photoshop文档(PSD)文件最常用于创建图像模板。 上传PSD文件时�
 
 1. 导航到要移动的资源的位置。
 
-1. 选择资源，然后单击工具栏中的&#x200B;**[!UICONTROL 移动]**选项。
+1. 选择资源，然后单击工具栏中的&#x200B;**[!UICONTROL 移动]**&#x200B;选项。
    ![在Assets工具栏中移动选项](assets/do-not-localize/move.png)
 
 1. 在[!UICONTROL 移动Assets]向导中，执行以下操作之一：
@@ -736,7 +736,7 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
 
 >[!NOTE]
 >
->时间轴包含多个特定于内容片段](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)的[选项。
+>时间轴包含多个特定于内容片段[&#128279;](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)的选项。
 
 ## 为资源作批注 {#annotating}
 
@@ -746,7 +746,7 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
 
 >[!NOTE]
 >
->对于内容片段，在片段编辑器](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)中创建[注释。
+>对于内容片段，在片段编辑器[&#128279;](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)中创建注释。
 
 1. 导航到要将注释添加到的资源的位置。
 1. 从以下选项之一单击&#x200B;**[!UICONTROL 注释]**&#x200B;选项：
@@ -846,7 +846,7 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
 
    已生成PDF上的![批注和审阅状态](assets/annotation-status-pdf.png)
 
-1. 使用右上方的选项下载PDF](assets/do-not-localize/download.png)的![下载选项，或在PDF](assets/do-not-localize/print.png)PDF上打印![打印选项。
+1. 使用右上方的选项下载PDF![&#128279;](assets/do-not-localize/download.png)的![下载选项，或在PDF](assets/do-not-localize/print.png)PDF上打印打印选项。
 
    >[!NOTE]
    >

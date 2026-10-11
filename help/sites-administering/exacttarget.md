@@ -75,7 +75,7 @@ ht-degree: 3%
 
 1. 在欢迎页面上，单击&#x200B;**工具**。 或直接转到`https://<hostname>:<port>/misadmin#/etc`导航到那里。
 1. 依次选择&#x200B;**工具**、**云服务配置、**&#x200B;和&#x200B;**ExactTarget**。
-1. 单击&#x200B;**新建**&#x200B;以打开**创建页面**窗口。
+1. 单击&#x200B;**新建**&#x200B;以打开&#x200B;**创建页面**&#x200B;窗口。
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 
