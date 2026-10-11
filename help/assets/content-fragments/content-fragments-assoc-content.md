@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 3648662306bb1e7ea27a9d74f42bfa321bf5b91f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '257'
 ht-degree: 49%
-
 ---
-
 # 关联的内容{#associated-content}
 
 AEM的关联内容功能提供了连接，以便在将资产添加到内容页面时，可以（可选）将资产与片段一起使用。 这为Headless内容投放提供了灵活性，方法是[在页面上使用内容片段时提供要访问的一系列资产，](/help/sites-authoring/content-fragments.md#using-associated-content)，同时还有助于减少搜索适当资产所需的时间。 可以使用内容片段编辑器配置任何关联的内容。
@@ -35,7 +47,7 @@ AEM的关联内容功能提供了连接，以便在将资产添加到内容页�
 
 1. 选择所需的集合。
 
-   您可以选择将片段本身添加到选定的集合中； 这有助于跟踪。
+   您可以选择将片段本身添加到选定的收藏集中；这有助于跟踪。
 
    ![选择收藏集](assets/cfm-assoc-content-02.png)
 
@@ -49,5 +61,5 @@ AEM的关联内容功能提供了连接，以便在将资产添加到内容页�
 
 * **删除**&#x200B;关联。
 * **添加资源**&#x200B;到收藏集。
-* 选择资源以执行进一步操作。
-* 编辑资源。
+* 选择资产以执行进一步操作。
+* 编辑资产。

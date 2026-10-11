@@ -5,18 +5,27 @@ feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '441'
-ht-degree: 0%
-
+source-wordcount: '449'
+ht-degree: 2%
 ---
-
 # 应用程序服务器安装的升级步骤{#upgrade-steps-for-application-server-installations}
 
-本节介绍更新AEM for Application Server安装所需的过程。
+本节介绍为应用程序服务器安装更新AEM时需要执行的过程。
 
-此过程中的所有示例都使用Tomcat作为应用程序服务器，并暗示您已部署了AEM的工作版本。 此过程用于记录从&#x200B;**AEM版本6.4到6.5**&#x200B;执行的升级。
+此过程中的所有示例都使用Tomcat作为应用程序服务器，并暗示您已部署AEM的工作版本。 此过程旨在记录从&#x200B;**AEM版本6.4到6.5**&#x200B;执行的升级。
 
 1. 首先，启动TomCat。 在大多数情况下，可以通过从终端运行`./catalina.sh`启动脚本和以下命令来执行此操作：
 
@@ -30,7 +39,7 @@ ht-degree: 0%
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. 接下来，取消部署AEM 6.4。可以从TomCat App Manager (`http://serveraddress:serverport/manager/html`)执行此操作
+1. 接下来，取消部署AEM 6.4。 可以从TomCat App Manager (`http://serveraddress:serverport/manager/html`)执行此操作
 
 1. 现在，使用crx2oak迁移工具迁移存储库。 为此，请从[此位置](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)下载最新版本的crx2oak。
 
@@ -69,7 +78,7 @@ ht-degree: 0%
 
    * 通过运行`find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`删除&#x200B;**sling.options.file**
 
-1. 现在，创建用于AEM 6.5的节点存储和数据存储。为此，可在`crx-quickstart\install`下创建两个名称如下的文件：
+1. 现在，创建用于AEM 6.5的节点存储和数据存储。 为此，可在`crx-quickstart\install`下创建两个名称如下的文件：
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`

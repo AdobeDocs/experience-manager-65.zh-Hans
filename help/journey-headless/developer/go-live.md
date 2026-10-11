@@ -5,13 +5,39 @@ exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1930'
 ht-degree: 51%
-
 ---
-
 # 如何使用 Headless 应用程序上线 {#go-live}
 
 在[AEM Headless开发人员历程](overview.md)的这一部分中，了解如何实时部署Headless应用程序。
@@ -118,9 +144,9 @@ Node.js是用于处理JavaScript项目`ui.frontend`子项目的前端资源的AE
 ### 最大程度地提高 CDN 缓存命中率 {#maximize-cdn}
 
 * 不要使用直接 GraphQL 查询，除非您从表面请求实时内容。
-   * 尽可能使用持久查询。
-   * 提供600秒以上的CDN TTL，以便CDN可以缓存它们。
-   * AEM 可以计算模型更改对现有查询的影响。
+  * 尽可能使用持久查询。
+  * 提供600秒以上的CDN TTL，以便CDN可以缓存它们。
+  * AEM 可以计算模型更改对现有查询的影响。
 * 在低内容更改率和高内容更改率之间拆分JSON文件/GraphQL查询，以减少到CDN的客户端流量并分配更高的TTL。 这样做可最大限度地减少CDN使用源服务器重新验证JSON的情况。
 * 要使CDN中的内容主动失效，请使用软清除。 这样做可让CDN重新下载内容而不会导致缓存丢失。
 
@@ -164,15 +190,15 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 * 验证应用程序的预览版和生产版
 * 验证当前服务可用性状态的 AEM 状态页面
 * 访问性能报告
-   * 交付性能
-      * 源服务器 – 调用次数、错误率、CPU 负载、负载流量
-   * 创作性能
-      * 检查用户、请求和加载的数量
+  * 交付性能
+    * 源服务器 – 调用次数、错误率、CPU 负载、负载流量
+  * 创作性能
+    * 检查用户、请求和加载的数量
 * 访问特定于应用程序和空间的性能报表
-   * 在服务器启动后，检查一般指标是否为绿色/橙色/红色，然后识别具体的应用程序问题
-   * 打开上面过滤到应用程序或空间的相同报告（例如，Photoshop 桌面、付费专区）
-   * 使用 Splunk 日志 API 访问服务和应用程序性能
-   * 如果还有其他问题，请联系客户支持。
+  * 在服务器启动后，检查一般指标是否为绿色/橙色/红色，然后识别具体的应用程序问题
+  * 打开上面过滤到应用程序或空间的相同报告（例如，Photoshop 桌面、付费专区）
+  * 使用 Splunk 日志 API 访问服务和应用程序性能
+  * 如果还有其他问题，请联系客户支持。
 
 ## 疑难解答 {#troubleshooting}
 
@@ -225,10 +251,10 @@ You can start deploying your code by using the Cloud Manager CI/CD pipeline, whi
 
 * CDN缓存
 
-   * [控制CDN缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans#controlling-a-cdn-cache)
+  * [控制CDN缓存](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans#controlling-a-cdn-cache)
 
-   * 正在配置[CDN重写器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=zh-Hans) （*搜索CDN重写器*）
+  * 正在配置[CDN重写器](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=zh-Hans) （*搜索CDN重写器*）
 
 * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
-* [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-Hans)
+* [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)

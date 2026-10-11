@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2309'
-ht-degree: 60%
-
+source-wordcount: '2442'
+ht-degree: 62%
 ---
-
 # 变体——创作片段内容{#variations-authoring-fragment-content}
 
 [变体](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment)是AEM内容片段的一项重要功能，因为它们允许您创建和编辑主控内容的副本，用于特定渠道和/或场景，从而使Headless内容投放更加灵活。
@@ -41,7 +53,7 @@ ht-degree: 60%
 
 ## 创作内容 {#authoring-your-content}
 
-当您打开内容片段进行编辑时，**变体**&#x200B;选项卡会默认打开。在此，您可以为主要或任何变体创作内容。结构化片段包含在内容模型中定义的各种数据类型的各种字段。
+当您打开内容片段进行编辑时，**变体**&#x200B;选项卡会默认打开。 在此，您可以为主要或任何变体创作内容。 结构化片段包含在内容模型中定义的各种数据类型的各种字段。
 
 例如：
 
@@ -51,22 +63,22 @@ ht-degree: 60%
 
 * 直接在&#x200B;**变体**&#x200B;选项卡中编辑您的内容；每种数据类型都提供不同的编辑选项，例如：
 
-   * 对于&#x200B;**多行文本**&#x200B;字段，您还可以打开[全屏编辑器](#full-screen-editor)以：
+  * 对于&#x200B;**多行文本**&#x200B;字段，您还可以打开[全屏编辑器](#full-screen-editor)以：
 
-      * 选择[格式](#formats)
-      * 查看更多编辑选项([富文本](#rich-text)格式)
-      * 访问[操作](#actions)
+    * 选择[格式](#formats)
+    * 查看更多编辑选项([富文本](#rich-text)格式)
+    * 访问[操作](#actions)
 
-   * 对于&#x200B;**片段引用**&#x200B;字段，[编辑内容片段](#fragment-references-edit-content-fragment)选项可用，具体取决于模型定义。
+  * 对于&#x200B;**片段引用**&#x200B;字段，[编辑内容片段](#fragment-references-edit-content-fragment)选项可用，具体取决于模型定义。
 
 * 将&#x200B;**标记**&#x200B;分配给当前变量；可以添加、更新和删除标记
 
-   * [标记](/help/sites-authoring/tags.md)在组织片段时功能强大，因为它们可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
+  * [标记](/help/sites-authoring/tags.md)在组织片段时功能强大，因为它们可用于内容分类和分类。 标记可用于查找内容（按标记）和应用批量操作。
 
-      * 搜索标记将返回片段，并突出显示标记变量。
-      * 变体标记还可用于对特定内容分发网络（CDN）配置文件（用于 CDN 缓存）的变体进行分组，而不是使用变体名称。
+    * 搜索标记将返回片段，并突出显示标记变量。
+    * 变体标记还可用于对特定内容分发网络（CDN）配置文件（用于 CDN 缓存）的变体进行分组，而不是使用变体名称。
 
-     例如，您可以将相关片段标记为“圣诞节发布”，以仅允许作为子集浏览这些片段，或复制这些片段以供将来在新文件夹中再次发布。
+    例如，您可以将相关片段标记为“圣诞节发布”，以仅允许作为子集浏览这些片段，或复制这些片段以供将来在新文件夹中再次发布。
 
   >[!NOTE]
   >
@@ -130,17 +142,17 @@ ht-degree: 60%
 * 段落样式：段落，标题 1/2/3
 * [插入资源](#inserting-assets-into-your-fragment)
 * 打开全屏编辑器，其中提供了以下格式选项：
-   * 搜索
-   * 查找/替换
-   * 拼写检查程序
-   * [注释](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
+  * 搜索
+  * 查找/替换
+  * 拼写检查程序
+  * [注释](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)
 * [插入内容片段](#inserting-content-fragment-into-your-fragment)；当您的&#x200B;**多行文本**&#x200B;字段配置为&#x200B;**允许片段引用**&#x200B;时可用。
 
 也可以从全屏编辑器访问[操作](#actions)。
 
 ### 纯文本 {#plain-text}
 
-纯文本允许快速输入内容，而无需设置格式或标记信息。您还可以打开全屏编辑器以进一步[操作](#actions)。
+纯文本允许快速输入内容，而无需设置格式或标记信息。 您还可以打开全屏编辑器以进一步[操作](#actions)。
 
 >[!CAUTION]
 >
@@ -152,7 +164,7 @@ ht-degree: 60%
 >
 >有关完整信息，请参阅[Markdown](/help/assets/content-fragments/content-fragments-markdown.md)文档。
 
-这让您使用 Markdown 设置文本格式。您可以定义：
+这让您使用 Markdown 设置文本格式。 您可以定义：
 
 * 标题
 * 段落和换行符
@@ -279,7 +291,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 1. 打开全屏编辑器。
 
-1. 顶部工具栏中有&#x200B;**注释**&#x200B;图标。您可以根据需要选择一些文本。
+1. 顶部工具栏中有&#x200B;**注释**&#x200B;图标。 您可以根据需要选择一些文本。
 
    ![注释](assets/cfm-variations-07.png)
 
@@ -295,11 +307,11 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
    ![注释](assets/cfm-variations-07b.png)
 
-1. 关闭全屏编辑器时，注释仍会高亮显示。如果选中，将打开一个对话框，以便您进一步编辑注释。
+1. 关闭全屏编辑器时，注释仍会高亮显示。 如果选中，将打开一个对话框，以便您进一步编辑注释。
 
 1. 选择&#x200B;**“保存”**。
 
-1. 关闭全屏编辑器时，注释仍会高亮显示。如果选中，将打开一个对话框，以便您进一步编辑注释。
+1. 关闭全屏编辑器时，注释仍会高亮显示。 如果选中，将打开一个对话框，以便您进一步编辑注释。
 
    ![注释](assets/cfm-variations-07c.png)
 
@@ -307,7 +319,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 注释：
 
-* 在编辑器的全屏和正常模式下，由文本上的高亮显示指示。然后，可通过单击高亮显示的文本来查看、编辑和/或删除注释的完整详细信息，此时将重新打开对话框。
+* 在编辑器的全屏和正常模式下，由文本上的高亮显示指示。 然后，可通过单击高亮显示的文本来查看、编辑和/或删除注释的完整详细信息，此时将重新打开对话框。
 
   >[!NOTE]
   >
@@ -331,7 +343,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 >
 >无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
 >
->但是，必须在[页面编辑器](/help/sites-authoring/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
+>但是，必须在[页面编辑器](/help/sites-authoring/content-fragments.md)中编排资源格式（例如，大小）。 资源在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 >
@@ -372,7 +384,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 >
 >无法在引用页面上移动或删除这些资源，必须在片段编辑器中完成此操作。
 >
->但是，必须在[页面编辑器](/help/sites-authoring/content-fragments.md)中编排资源格式（例如，大小）。资源在片段编辑器中的呈现形式仅用于创作内容流。
+>但是，必须在[页面编辑器](/help/sites-authoring/content-fragments.md)中编排资源格式（例如，大小）。 资源在片段编辑器中的呈现形式仅用于创作内容流。
 
 >[!NOTE]
 >
@@ -478,7 +490,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 <!-- needs new screenshot for synchronize effect -->
 
-1. 在片段编辑器中打开内容片段。确保&#x200B;**母版**&#x200B;已编辑。
+1. 在片段编辑器中打开内容片段。 确保&#x200B;**母版**&#x200B;已编辑。
 
 1. 选择一个特定的变体，然后从以下任一位置选择相应的同步操作：
 

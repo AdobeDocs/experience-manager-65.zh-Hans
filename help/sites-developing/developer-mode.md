@@ -10,13 +10,22 @@ exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 1%
-
+source-wordcount: '707'
+ht-degree: 2%
 ---
-
 # 开发人员模式{#developer-mode}
 
 在Adobe Experience Manager (AEM)中编辑页面时，有多种[模式](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui)可用，包括开发人员模式。 这将打开一个侧面板，其中包含多个选项卡，为开发人员提供有关当前页面的信息。 三个选项卡包括：
@@ -82,8 +91,8 @@ ht-degree: 1%
 * 显示呈现组件的服务器端计算时间。
 * 允许您展开树并选择树中的特定组件。 选择提供对组件详细信息的访问；例如：
 
-   * 存储库路径
-   * 脚本链接(在CRXDE Lite中访问)
+  * 存储库路径
+  * 脚本链接（在CRXDE Lite中访问）
 
 * 选定的组件（在内容流中，由蓝色边框指示）将在内容树中突出显示（反之亦然）。
 
@@ -99,19 +108,19 @@ ht-degree: 1%
 
 * **查看详细信息**：显示以下内容的列表链接：
 
-   * 用于呈现组件的所有组件脚本。
-   * 此特定组件的存储库内容路径。
+  * 用于呈现组件的所有组件脚本。
+  * 此特定组件的存储库内容路径。
 
   ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **编辑脚本**：链接：
 
-   * 在CRXDE Lite中打开组件脚本。
+  * 在CRXDE Lite中打开组件脚本。
 
 * 展开组件条目（箭头头）也可显示：
 
-   * 选定组件中的层次结构。
-   * 所选组件、嵌套在其中的任何单个组件以及组合总计的呈现时间。
+  * 选定组件中的层次结构。
+  * 所选组件、嵌套在其中的任何单个组件以及组合总计的呈现时间。
 
   ![chlimage_1-15](assets/chlimage_1-15.png)
 

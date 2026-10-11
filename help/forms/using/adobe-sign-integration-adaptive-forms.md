@@ -9,16 +9,36 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: a16aea24-4e85-528d-9377-cd80bb039c1d
+    internal-label: Acrobat Sign
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2218'
 ht-degree: 20%
-
 ---
-
 # 将[!DNL Adobe Sign]与AEM [!DNL Forms]集成{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -277,7 +297,7 @@ Adobe Acrobat Sign政府解决方案团队要求为Adobe Acrobat Sign应用程�
    您还可以在浏览器窗口中打开以下URL：
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. 找到并打开&#x200B;**[!UICONTROL Adobe Sign配置服务]**&#x200B;选项。 在&#x200B;**[!UICONTROL 状态更新计划程序表达式]**&#x200B;字段中指定[cron表达式](https://en.wikipedia.org/wiki/Cron#CRON_expression)，然后单击&#x200B;**[!UICONTROL 保存]**。 例如，要在每天凌晨:00运行配置服务，请在&#x200B;**[!UICONTROL 状态更新计划程序表达式]**&#x200B;字段中指定`0 0 0 1/1 * ? *`。
+1. 找到并打开&#x200B;**[!UICONTROL Adobe Sign配置服务]**&#x200B;选项。 在&#x200B;**[!UICONTROL 状态更新计划程序表达式]**&#x200B;字段中指定[cron表达式](https://en.wikipedia.org/wiki/Cron#CRON_expression)，然后单击&#x200B;**[!UICONTROL 保存]**。 例如，要在每天凌晨00:00运行配置服务，请在&#x200B;**[!UICONTROL 状态更新计划程序表达式]**&#x200B;字段中指定`0 0 0 1/1 * ? *`。
 
 [!DNL Adobe Sign]的默认同步间隔现已更改。
 

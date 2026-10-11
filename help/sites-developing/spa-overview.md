@@ -11,17 +11,31 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1648'
-ht-degree: 85%
-
+source-wordcount: '1653'
+ht-degree: 84%
 ---
-
 
 # SPA 编辑器概述{#spa-editor-overview}
 
-单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。 开发人员希望能够使用 SPA 框架构建站点，而作者则希望能够在 AEM 中顺畅地为使用此类框架构建的站点编辑内容。
+单页应用程序 (SPA) 可以为网站用户提供引人入胜的良好体验。 开发人员希望能够使用 SPA 框架构建网站，而作者则希望能够在 AEM 中顺畅地为使用此类框架构建的网站编辑内容。
 
 SPA 编辑器提供了一个全面的解决方案来支持 AEM 中的 SPA。 此页面概述了 SPA 支持在 AEM 中的结构、SPA 编辑器的工作原理以及 SPA 框架和 AEM 保持同步的方式。
 
@@ -42,7 +56,7 @@ AEM 中的 SPA 支持引入了一个薄的 JS 层，该层在页面编辑器中�
 
 ## 设计 {#design}
 
-SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素。 此操作将委派给 SPA 框架。 从 JCR 中以 JSON 数据结构形式获取子组件或模型的呈现。 之后，根据该结构将 SPA 组件添加到页面。 此行为将页面组件的初始主体构图与非 SPA 对应项区分开来。
+SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素。 此操作将委派给 SPA 框架。 从 JCR 中以 JSON 数据结构形式获取子组件或模型的呈现。 之后，根据该结构将 SPA 组件添加到页面。 此行为将页面组件的初始正文构成与非 SPA 对应项区分开来。
 
 ### 页面模型管理 {#page-model-management}
 
@@ -69,7 +83,7 @@ SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素
 
 ## 工作流 {#workflow}
 
-您可以通过将 SPA 编辑器视为 SPA 和 AEM 之间的介质来理解两者之间的交互流程。
+您可以将 SPA 编辑器视为 SPA 和 AEM 之间的中介，从而理解两者之间的交互流程。
 
 * 页面编辑器和 SPA 之间的通信采用的是 JSON 而不是 HTML。
 * 页面编辑器通过 iframe 和消息 API 向 SPA 提供最新版本的页面模型。
@@ -90,7 +104,7 @@ SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素
 1. SPA 编辑器检测呈现的组件并生成叠加。
 1. 作者单击叠加，这将显示组件的编辑工具栏。
 1. SPA 编辑器通过向服务器发出 POST 请求来保存编辑内容。
-1. SPA 编辑器向 SPA 编辑器请求更新的 JSON，后者通过 DOM 事件发送到 SPA。
+1. SPA 编辑器请求更新后的 JSON，并通过 DOM 事件将其发送到 SPA。
 1. SPA 重新呈现相关组件，并更新其 DOM。
 
 >[!NOTE]
@@ -152,8 +166,8 @@ SPA 的页面组件不通过 JSP 或 HTL 文件提供其子组件的 HTML 元素
 1. **6a** 页面模型向页面编辑器提供更新后的创作数据。
 
    **6b** 页面模型将更改发送到组件编排器。
-1. 组件编排器将获取组件映射。
-1. 组件编排器将更新页面内容。
+1. 组件编排器获取组件映射。
+1. 组件编排器更新页面内容。
 1. 当 SPA 更新完页面内容时，页面编辑器将加载创作环境。
 
 ## 要求和限制 {#requirements-limitations}

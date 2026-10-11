@@ -9,13 +9,26 @@ exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '294'
-ht-degree: 41%
-
+ht-degree: 39%
 ---
-
 # 解决 AEM 中有关创作方面的问题{#troubleshooting-aem-when-authoring}
 
 以下部分涵盖您在使用 AEM 时可能遇到的一些问题，以及有关如何解决这些问题的建议。
@@ -32,34 +45,34 @@ ht-degree: 41%
 
 * **问题**：
 
-   * 您已经更改了一个页面，并将该页面复制到发布站点，但该页面的&#x200B;*旧*&#x200B;版本仍显示在发布站点上。
+  * 您已经更改了一个页面，并将该页面复制到发布站点，但该页面的&#x200B;*旧*&#x200B;版本仍显示在发布站点上。
 
 * **原因**：
 
-   * 这可能有多种原因，通常是缓存(本地浏览器或Dispatcher)，但有时也可能是复制队列问题。
+  * 这可能有多种原因，通常是缓存（本地浏览器或Dispatcher），但有时也可能是复制队列问题。
 
 * **解决方案**：
 
-   * 下面提供了多种可能性：
-   * 确认已正确复制该页面。 检查页面状态，并在必要时检查复制队列的状态。
-   * 清除本地浏览器中的缓存，然后再次访问页面。
-   * 向页面 URL 的结尾处添加 `?`。例如：
+  * 下面提供了多种可能性：
+  * 确认已正确复制该页面。 检查页面状态，并在必要时检查复制队列的状态。
+  * 清除本地浏览器中的缓存，然后再次访问页面。
+  * 将`?`添加到页面URL的末尾。 例如：
 
-      * `http://localhost:4502/sites.html/content?`
-      * 这将会绕过调度程序而直接从 AEM 请求页面。如果收到更新的页面，则表示应清除调度程序缓存。
+    * `http://localhost:4502/sites.html/content?`
+    * 这将会绕过调度程序而直接从 AEM 请求页面。 如果收到更新的页面，则表示应清除调度程序缓存。
 
-   * 如果复制队列存在问题，请与系统管理员联系。
+  * 如果复制队列存在问题，请与系统管理员联系。
 
 ## 组件操作在工具栏上不可见 {#component-actions-not-visible-on-toolbar}
 
 * **问题**：
 
-   * 在创作环境中编辑内容页面时，所有适用的组件操作均不可见。
+  * 在创作环境中编辑内容页面时，所有适用的组件操作均不可见。
 
 * **原因**：
 
-   * 在极少数情况下，之前的操作可能会影响工具栏。
+  * 在极少数情况下，之前的操作可能会影响工具栏。
 
 * **解决方案**：
 
-   * 刷新页面。
+  * 刷新页面。

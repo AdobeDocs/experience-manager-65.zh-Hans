@@ -10,13 +10,20 @@ exl-id: d4295a77-b931-4bc8-b3b4-eec42fdcfc56
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '400'
 ht-degree: 0%
-
 ---
-
 # 向示例页面添加注释  {#add-comment-to-sample-page}
 
 现在，自定义注释系统的组件已放置在application目录(/apps)中，可以使用扩展组件。 要受影响的网站中评论系统的实例必须将其resourceType设置为自定义评论系统，并包括所有必要的客户端库。
@@ -55,11 +62,11 @@ ht-degree: 0%
 
 ![verify-comment-crxde](assets/verify-comment-crxde.png)
 
-#### Publish示例页面 {#publish-sample-page}
+#### 发布示例页面 {#publish-sample-page}
 
 将自定义组件添加到页面后，还需要（重新）[发布页面](/help/communities/sites-console.md#publishing-the-site)。
 
-#### Publish：示例页面上的替代注释 {#publish-alt-comment-on-sample-page}
+#### 发布：示例页面上的Alt注释 {#publish-alt-comment-on-sample-page}
 
 在发布自定义应用程序和示例页面后，可以输入注释。 使用[演示用户](/help/communities/tutorials.md#demo-users)或管理员登录后，可以发布评论。
 

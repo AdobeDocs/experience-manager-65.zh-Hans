@@ -9,13 +9,22 @@ exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '171'
-ht-degree: 2%
-
+source-wordcount: '172'
+ht-degree: 6%
 ---
-
 # 请求分析脚本{#request-analysis-script}
 
 ## 下载 {#download}
@@ -28,9 +37,9 @@ ht-degree: 2%
 
 编写此脚本是为了便于分析`access.log`文件，生成可读报告供以后处理。
 
-它可以生成总请求数、GET与POST、随时间变化的请求分布等等。
+它生成整体请求数、GET与POST、随时间变化的请求分布等等。
 
-输出采用Markdown语法，因此将输出转换为使用pandoc等PDF或使用Markdown查看器等插件在浏览器中显示的工具会更容易。
+输出采用Markdown语法，因此将更易于用pandoc等工具转换为PDF，或在Markdown查看器等插件的浏览器中显示。
 
 它可以分析命令行上提供的自定义路径。
 

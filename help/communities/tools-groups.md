@@ -10,13 +10,20 @@ role: Admin
 exl-id: aed2c3f2-1b5e-4065-8cec-433abb738ef5
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '551'
 ht-degree: 2%
-
 ---
-
 # 组模板 {#group-templates}
 
 组模板控制台类似于[站点模板](/help/communities/sites.md)控制台。 两者都是用于一组预布线页面的蓝图以及构成社区站点的功能。 不同之处在于，站点模板适用于主社区，组模板适用于社区组（嵌套在主社区中的子社区）。

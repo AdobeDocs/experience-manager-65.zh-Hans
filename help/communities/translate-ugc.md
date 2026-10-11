@@ -9,16 +9,23 @@ role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1125'
 ht-degree: 0%
-
 ---
-
 # 翻译用户生成的内容 {#translating-user-generated-content}
 
-Adobe Experience Manager (AEM)社区的翻译功能扩展了[将页面内容](../../help/sites-administering/translation.md)翻译为用户生成的内容(UGC)的概念，该内容发布到使用[社交组件框架(SCF)组件](scf.md)的社区站点。
+Adobe Experience Manager (AEM)社区的翻译功能扩展了[将页面内容](../../help/sites-administering/translation.md)翻译为用户生成的内容(UGC)的概念，该内容使用[社交组件框架(SCF)组件](scf.md)发布到社区站点。
 
 UGC的翻译使站点访客和成员能够通过消除语言障碍体验全球社区。
 
@@ -32,7 +39,7 @@ UGC的翻译使站点访客和成员能够通过消除语言障碍体验全球�
 
 ## 概述 {#overview}
 
-此部分具体讨论了翻译服务如何与UGC配合使用。 它还假定您了解如何通过配置[翻译集成框架](../../help/sites-administering/tc-tic.md)将AEM连接到[翻译服务提供商](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider)并将该服务集成到网站。
+此部分具体讨论了翻译服务如何与UGC配合使用。 它还假定您了解如何将AEM连接到[翻译服务提供商](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider)，并通过配置[翻译集成框架](../../help/sites-administering/tc-tic.md)将该服务集成到网站。
 
 当翻译服务提供商与站点相关联时，站点的每个语言副本都会维护其自身通过SCF组件（如注释）发布的UGC线程。
 
@@ -77,7 +84,7 @@ AEM Communities包含针对为多种语言启用的[默认翻译服务](../../he
 * 选择&#x200B;**[!UICONTROL 工具]**
 * 选择&#x200B;**[!UICONTROL 操作]**
 * 选择&#x200B;**[!UICONTROL 云]**
-* 选择&#x200B;**[!UICONTROL Cloud Service]**
+* 选择&#x200B;**[!UICONTROL 云服务]**
 * 向下滚动到&#x200B;**[!UICONTROL 翻译集成]**
 
   ![翻译集成](assets/translation-integration.png)
@@ -115,21 +122,21 @@ AEM Communities包含针对为多种语言启用的[默认翻译服务](../../he
 * **[!UICONTROL 站点]**&#x200B;选项卡：可保留为默认值。
 
 * **[!UICONTROL 社区]**&#x200B;选项卡：
-   * **[!UICONTROL 翻译提供商]**
-从下拉列表中选择翻译提供商。 默认值为`microsoft`，试用服务。
+  * **[!UICONTROL 翻译提供商]**
+    从下拉列表中选择翻译提供商。 默认值为`microsoft`，试用服务。
 
-   * **[!UICONTROL 内容类别]**
-选择描述正在翻译的内容的类别。 默认值为`General.`
+  * **[!UICONTROL 内容类别]**
+    选择描述正在翻译的内容的类别。 默认值为`General.`
 
-   * **[!UICONTROL 选择区域设置……]**
-（可选）通过选择存储UGC的区域设置，来自所有语言副本的帖子将显示在一个全局对话中。 按照惯例，为网站选择[基本语言](sites-console.md#translation)的区域设置。 选择`No Common Store`将禁用全局翻译。 默认情况下，全局翻译处于禁用状态。
+  * **[!UICONTROL 选择区域设置……]**
+    （可选）通过选择存储UGC的区域设置，来自所有语言副本的帖子将显示在一个全局对话中。 按照惯例，为网站选择[基本语言](sites-console.md#translation)的区域设置。 选择`No Common Store`将禁用全局翻译。 默认情况下，全局翻译处于禁用状态。
 
 * **[!UICONTROL Assets]**&#x200B;选项卡：可保留为默认值。
 * 选择&#x200B;**[!UICONTROL 确定]**
 
 #### 激活 {#activation}
 
-必须将新的翻译集成云服务激活到Publish环境。 与网站关联时，如果尚未激活，激活工作流会在发布与其关联的页面时提示发布此云服务配置。
+必须将新的翻译集成云服务激活到发布环境。 与网站关联时，如果尚未激活，激活工作流会在发布与其关联的页面时提示发布此云服务配置。
 
 ## 管理翻译设置 {#managing-translation-settings}
 

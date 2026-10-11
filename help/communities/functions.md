@@ -10,13 +10,20 @@ role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2253'
 ht-degree: 2%
-
 ---
-
 # 社区功能{#community-functions}
 
 社区体验中预期的功能类型是众所周知的。 社区功能作为社区功能提供。 本质上，它们是预连接的一个或多个页面，用于实施社区功能，该功能不仅需要在创作模式下将组件添加到页面。 它们是用于定义[社区站点模板](/help/communities/sites.md)结构的构建块，社区站点是从该模板[创建的](/help/communities/sites-console.md)。

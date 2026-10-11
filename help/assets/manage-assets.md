@@ -1,5 +1,5 @@
 ---
-title: 管理您的数字资源
+title: 管理您的数字资产
 description: 了解上传、下载、编辑、搜索、删除、注释和版本数字资源等资源管理任务。
 contentOwner: AG
 role: User
@@ -8,14 +8,25 @@ mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10112'
+source-wordcount: '10238'
 ht-degree: 3%
-
 ---
-
-# 管理您的数字资源 {#manage-digital-assets}
+# 管理您的数字资产 {#manage-digital-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -197,8 +208,8 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上载
 1. 在“上载作业选项”对话框的右下角，单击&#x200B;**[!UICONTROL 保存]**。
 1. 在上传页面的右下角，单击&#x200B;**[!UICONTROL 提交上传]**。
 
-   要查看上载进度，请在全局导航栏上单击&#x200B;**[!UICONTROL 作业]**。“作业”页显示上载的进度。您可以随时在[!DNL Experience Manager]中继续工作并返回Dynamic Media Classic中的“作业”页面以查看正在进行的作业。
-若要取消正在进行的上载作业，请单击“持续时间”时间旁边的&#x200B;**[!UICONTROL 取消]**。
+   要查看上载进度，请在全局导航栏上单击&#x200B;**[!UICONTROL 作业]**。 “作业”页显示上载的进度。 您可以随时在[!DNL Experience Manager]中继续工作并返回Dynamic Media Classic中的“作业”页面以查看正在进行的作业。
+   若要取消正在进行的上载作业，请单击“持续时间”时间旁边的&#x200B;**[!UICONTROL 取消]**。
 
 #### 上载作业选项 {#upload-job-options}
 
@@ -206,7 +217,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上载
 |---|---|---|
 | 作业名称 | | 在文本字段中预填充的默认名称包括用户输入的名称部分以及日期和时间戳。 您可以使用默认名称或为此上载作业输入您自己创建的名称。 <br>作业和其他上载和发布作业均记录在“作业”页面上，您可以在该页面上检查作业的状态。 |
 | 上传后发布 | | 自动发布您上传的资产。 |
-| 在任意文件夹内，使用相同的基本资源名称（不区分扩展名）进行覆盖 | | 如果希望上载的文件以相同的名称替换现有文件，请选择此选项。 此选项的名称可能不同，具体取决于&#x200B;**[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]** > **[!UICONTROL 上载到应用程序]** > **[!UICONTROL 覆盖图像]**&#x200B;中的设置。 |
+| 在任意文件夹内，使用相同的基本资产名称（不区分扩展名）进行覆盖 | | 如果希望上载的文件以相同的名称替换现有文件，请选择此选项。 此选项的名称可能不同，具体取决于&#x200B;**[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]** > **[!UICONTROL 上载到应用程序]** > **[!UICONTROL 覆盖图像]**&#x200B;中的设置。 |
 | 上传时解压缩Zip或Tar文件 | | |
 | 作业选项 | | 单击&#x200B;**[!UICONTROL 作业选项]**，以便打开[!UICONTROL 上载作业选项]对话框并选择影响整个上载作业的选项。 对于所有文件类型，这些选项都相同。<br>您可以从“应用程序常规设置”页面开始选择用于上载文件的默认选项。 若要打开此页面，请选择&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]**。 选择&#x200B;**[!UICONTROL 默认上载选项]**&#x200B;选项以打开[!UICONTROL 上载作业选项]对话框。 |
 | | 时间 | 选择“一次性”或“循环”。 要设置循环作业，请选择重复选项（每日、每周、每月或自定义）以指定希望FTP上载作业重复的时间。 然后，根据需要指定计划选项。 |
@@ -470,8 +481,8 @@ Photoshop文档(PSD)文件最常用于创建图像模板。 上传PSD文件时�
 
 ## 移动和重命名资源 {#moving-or-renaming-assets}
 
-将资源（或文件夹）移动到其他位置时，不会复制资源（或文件夹），这与复制资源时不同。将资源（或文件夹）放置到目标位置，并从源位置将其删除。在将资源移动到新位置时，您还可以重命名资源。
-如果您要将已发布的资产移至其他位置，则可以选择重新发布该资产。默认情况下，对已发布的资产执行移动操作会自动取消发布该资产。如果作者在移动资产时选择[!UICONTROL Republish]选项，则会重新发布已移动的资产。
+将资源（或文件夹）移动到其他位置时，不会复制资源（或文件夹），这与复制资源时不同。 将资源（或文件夹）放置到目标位置，并从源位置将其删除。 在将资源移动到新位置时，您还可以重命名资源。
+如果您要将已发布的资产移至其他位置，则可以选择重新发布该资产。 默认情况下，对已发布的资产执行移动操作会自动取消发布该资产。 如果作者在移动资产时选择[!UICONTROL Republish]选项，则会重新发布已移动的资产。
 
 ![移动已发布的资产时，您可以重新发布该资产](assets/republish-on-move.png)
 

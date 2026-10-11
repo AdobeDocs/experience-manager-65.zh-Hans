@@ -9,13 +9,17 @@ exl-id: be093025-b19f-4499-a7b5-aae5ab74f966
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '625'
 ht-degree: 2%
-
 ---
-
 # 使用“创建”向导创建AEM Mobile应用程序{#creating-a-new-aem-mobile-app-using-create-wizard}
 
 {{ue-over-mobile}}
@@ -40,7 +44,7 @@ AEM Mobile应用程序基于定义页面结构和属性的Blueprint。 您可以
 
 通过应用程序模板，可以轻松使用开发人员创建的现有设计，以便在AEM中创建新应用程序。
 
-什么是应用程序模板？可将其视为一组页面模板和组件，它们代表应用程序的基线或基础。
+什么是应用程序模板？ 可将其视为一组页面模板和组件，它们代表应用程序的基线或基础。
 在基于其他应用程序的模板创建应用程序时，您将获得一个应用程序，该应用程序的起点代表创建该应用程序的应用程序。
 
 您必须拥有现有的移动设备应用程序模板（或安装的应用程序具有应用程序模板），才能使用此功能。

@@ -1,6 +1,6 @@
 ---
 title: 与Adobe Creative Cloud集成的最佳实践
-description: 将 [!DNL Adobe Experience Manager] 与 [!DNL Adobe Creative Cloud] 集成以简化资产传输工作流并实现高内容速度的最佳实践。
+description: 将[!DNL Adobe Experience Manager]与[!DNL Adobe Creative Cloud]集成以简化资产传输工作流并实现高内容速度的最佳实践。
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -8,13 +8,35 @@ feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+subfeature_v2:
+  - id: f7212149-7f65-4e43-89c2-1f075f45be16
+    internal-label: Collaboration
+  - id: f14a07fd-abc1-452c-8a48-fbcbc24a66ef
+    internal-label: Adobe Asset Link
+  - id: d18d21f5-ea10-400d-a1f0-a2071ad38419
+    internal-label: Desktop App
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3390'
 ht-degree: 14%
-
 ---
-
 # [!DNL Adobe Experience Manager]和[!DNL Creative Cloud]集成最佳实践 {#aem-and-creative-cloud-integration-best-practices}
 
 | 版本 | 文章链接 |
@@ -119,9 +141,9 @@ TBD: Add some info about XD integration and possibly info about DA v2.0.
 * 当Adobe Stock中的资源保存到[!DNL Experience Manager]时，它们成为常规[!DNL Assets]，二进制文件保存到[!DNL Experience Manager]存储库。 与[!DNL Adobe Stock]相关的某些元数据已保存在[!DNL Experience Manager]中，否则摄取过程将与任何其他文件相同。 例如，如果智能标记处于活动状态，则会在保存时将标记添加到这些资源。
 * 保存到[!DNL Experience Manager]的资源是副本，而不是链接回[!DNL Adobe Stock]。
 
-**在[!DNL Creative Cloud]**&#x200B;中使用从[!DNL Adobe Stock]保存到[!DNL Experience Manager]中的资产。此集成独立于[!DNL Adobe Asset Link]，但[!DNL Adobe Asset Link]能够识别以这种方式从[!DNL Stock]保存的这些资源，并在[!DNL Photoshop]、[!DNL Illustrator]或[!DNL InDesign]的[!DNL Adobe Asset Link]扩展UI中，在这些资源上显示其他元数据和[!DNL Adobe Stock]徽标。这些文件可用于浏览、打开等，因为它们是保存到[!DNL Experience Manager]中的常规资源。
-使用[!DNL Creative Cloud]应用且扩展名为[!DNL Adobe Asset Link]的Creative用户除了可以访问从[!DNL Adobe Stock]到[!DNL Experience Manager]的已许可资源外，还可以使用[!DNL Creative Cloud]库面板来搜索、预览和许可[!DNL Adobe Stock]资源。
-来自[!DNL Adobe Stock]且已许可并保存到[!DNL Experience Manager]中的[!DNL Assets]可供访问[!DNL Experience Manager Assets]部署的更广泛团队使用，而来自[!DNL Adobe Stock]的创意人员通过[!DNL Creative Cloud]库面板进行资产许可时，默认情况下仅可在其[!DNL Creative Cloud]帐户中供他们自己使用。
+**在[!DNL Creative Cloud]**&#x200B;中使用从[!DNL Adobe Stock]保存到[!DNL Experience Manager]中的资产。 此集成独立于[!DNL Adobe Asset Link]，但[!DNL Adobe Asset Link]可以识别通过这种方式从[!DNL Stock]保存的这些资源，并在[!DNL Photoshop]、[!DNL Illustrator]或[!DNL InDesign]的[!DNL Adobe Asset Link]扩展UI中，在这些资源上显示其他元数据和[!DNL Adobe Stock]徽标。 这些文件可用于浏览、打开等，因为它们是保存到[!DNL Experience Manager]中的常规资源。
+在扩展名为[!DNL Adobe Asset Link]的[!DNL Creative Cloud]应用中工作的Creative用户，除了有权访问从[!DNL Adobe Stock]到[!DNL Experience Manager]的已许可资源外，还可以使用[!DNL Creative Cloud]“库”面板来搜索、预览和许可[!DNL Adobe Stock]资源。
+来自[!DNL Adobe Stock]且已许可并保存到[!DNL Experience Manager]中的[!DNL Assets]可供访问[!DNL Experience Manager Assets]部署的更广泛团队使用，而来自[!DNL Adobe Stock]的创意人员通过[!DNL Creative Cloud]库面板来许可资产，使其仅在默认情况下在其[!DNL Creative Cloud]帐户中可供自己使用。
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.

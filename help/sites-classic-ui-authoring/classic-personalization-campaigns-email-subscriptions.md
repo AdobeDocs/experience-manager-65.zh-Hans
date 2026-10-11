@@ -9,13 +9,24 @@ exl-id: add05d22-3a11-49e9-a554-2315962552d5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 0%
-
+source-wordcount: '947'
+ht-degree: 1%
 ---
-
 # 管理订阅{#managing-subscriptions}
 
 >[!NOTE]
@@ -23,16 +34,16 @@ ht-degree: 0%
 >Adobe不打算进一步增强此功能（管理潜在客户和列表）。
 >建议使用[Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
 
-可以通过AEM网页上使用的&#x200B;**表单**&#x200B;组件，要求用户订阅&#x200B;**电子邮件服务提供程序的**&#x200B;邮件列表。 要准备带有注册表单的AEM页面以订阅电子邮件服务邮件列表，必须将相应的服务配置应用于潜在订阅者将访问的AEM页面。
+借助在AEM网页上使用的&#x200B;**表单**&#x200B;组件，可以要求用户订阅&#x200B;**电子邮件服务提供程序的**&#x200B;邮件列表。 要准备带有注册表单的AEM页面以订阅电子邮件服务邮件列表，必须将相应的服务配置应用于潜在订阅者将访问的AEM页面。
 
 ## 将电子邮件服务配置应用到页面 {#applying-email-service-configuration-to-a-page}
 
-要配置AEM页面，请执行以下操作：
+配置AEM页面：
 
 1. 导航到&#x200B;**网站**&#x200B;选项卡。
 1. 选择需要为服务配置的页面。 右键单击页面并选择&#x200B;**属性**。
 
-1. 选择&#x200B;**Cloud Service**，然后选择&#x200B;**添加服务**。 从可用配置列表中选择配置。
+1. 选择&#x200B;**云服务**，然后选择&#x200B;**添加服务**。 从可用配置列表中选择配置。
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -60,7 +71,7 @@ ht-degree: 0%
 1. 在&#x200B;**表单**&#x200B;选项卡中，选择用户提交表单后要前往的感谢页面（如果留空，表单会在提交时重新显示）。 单击&#x200B;**确定**。 表单中显示&#x200B;**电子邮件ID**&#x200B;组件，可让您创建表单，用户可在其中提交其电子邮件地址以订阅或取消订阅邮件列表。
 1. 从sidekick的&#x200B;**表单**&#x200B;分区添加&#x200B;**提交**&#x200B;按钮组件。
 
-   表单已准备就绪。 将上面步骤中配置的页面与&#x200B;**感谢您**&#x200B;页面一起Publish到发布实例。 任何访问页面的潜在订阅者都可以填写表单并订阅配置中提供的列表。
+   表单已准备就绪。 将上面步骤中配置的页面以及&#x200B;**感谢**&#x200B;页面发布到发布实例。 任何访问页面的潜在订阅者都可以填写表单并订阅配置中提供的列表。
 
    >[!NOTE]
    >
@@ -74,7 +85,7 @@ ht-degree: 0%
 1. 创建包。 将筛选器设置为`/etc/key`。
 1. 生成并下载包。
 1. 导航到发布实例上的包管理器，并上传此包。
-1. 导航到Publish osgi控制台，然后重新启动名为&#x200B;**AdobeGranite加密支持**&#x200B;的捆绑包。
+1. 导航到发布osgi控制台，并重新启动名为&#x200B;**Adobe Granite加密支持**&#x200B;的包。
 
 ## 从列表中取消订阅用户 {#unsubscribing-users-from-lists}
 
@@ -110,7 +121,7 @@ ht-degree: 0%
 1. 将键从创作导出到发布。
 1. 从sidekick的&#x200B;**表单**&#x200B;分区添加&#x200B;**提交**&#x200B;按钮组件。
 
-   注册表单已准备就绪。 将上面步骤中配置的页面与&#x200B;**感谢您**&#x200B;页面一起Publish到发布实例。 任何访问页面的潜在订阅者都可以填写表单，并且在提交表单时，访客将收到一封使用填写表单的电子邮件ID的自动回复电子邮件。
+   注册表单已准备就绪。 将上面步骤中配置的页面以及&#x200B;**感谢**&#x200B;页面发布到发布实例。 任何访问页面的潜在订阅者都可以填写表单，并且在提交表单时，访客将收到一封使用填写表单的电子邮件ID的自动回复电子邮件。
 
    >[!NOTE]
    >

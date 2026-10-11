@@ -9,13 +9,29 @@ role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2754'
+source-wordcount: '2784'
 ht-degree: 0%
-
 ---
-
 # 导入和导出数据 {#importing-and-exporting-data}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -24,13 +40,13 @@ ht-degree: 0%
 
 表单数据集成服务可以将数据导入PDF表单并从PDF表单导出数据。 导入和导出操作支持两种类型的PDF forms：
 
-* Acrobat表单(在Acrobat中创建)是包含表单字段的PDF文档。
-* AdobeXML表单(在Designer中创建)是符合XMLAdobeXML Forms架构(XFA)的PDF文档。
+* Acrobat表单（在Acrobat中创建）是包含表单字段的PDF文档。
+* Adobe XML表单（在Designer中创建）是符合XML Adobe XML Forms架构(XFA)的PDF文档。
 
 根据PDF表单的类型，表单数据可以以下列格式之一存在：
 
 * XFDF文件，它是Acrobat表单数据格式的XML版本。
-* XDP文件，它是一个包含表单字段定义的XML文件。 它还可能包含表单字段数据和嵌入式PDF文件。 Designer生成的XDP文件只能在其携带嵌入的base-64编码PDF文档时使用。
+* XDP文件，它是一个包含表单字段定义的XML文件。 它还可能包含表单字段数据和嵌入的PDF文件。 Designer生成的XDP文件只能在其携带嵌入的base-64编码的PDF文档时使用。
 
 您可以使用表单数据集成服务完成这些任务：
 
@@ -43,7 +59,7 @@ ht-degree: 0%
 
 ## 导入表单数据 {#importing-form-data}
 
-您可以使用表单数据集成服务将表单数据导入交互式PDF forms。 交互式PDF表单是一种PDF文档，其中包含一个或多个用于从User收集信息或用于显示自定义信息的字段。 表单数据集成服务不支持表单计算、验证或脚本。
+您可以使用表单数据集成服务将表单数据导入交互式PDF forms中。 交互式PDF表单是一种PDF文档，其中包含一个或多个用于从用户那里收集信息或用于显示自定义信息的字段。 表单数据集成服务不支持表单计算、验证或脚本。
 
 要将数据导入到Designer中创建的表单，必须引用有效的XDP XML数据源。 考虑以下抵押贷款申请表示例。
 
@@ -106,8 +122,8 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 有关这些JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -125,11 +141,11 @@ ht-degree: 0%
 
 **将数据导入PDF表单**
 
-在引用PDF表单和有效的XML数据源后，可以将数据导入PDF表单。
+在引用PDF表单和有效的XML数据源后，您可以将数据导入PDF表单。
 
 **将PDF表单另存为PDF文件**
 
-将数据导入表单后，可以将表单另存为PDF文件。 保存为PDF文件后，用户即可在Adobe Reader或Acrobat中打开表单，并使用导入的数据查看表单。
+将数据导入表单后，可将表单另存为PDF文件。 保存为PDF文件后，用户可以在Adobe Reader或Acrobat中打开表单，并使用导入的数据查看表单。
 
 **另请参阅**
 
@@ -160,7 +176,7 @@ ht-degree: 0%
 
 1. 引用PDF表单。
 
-   * 使用构造函数创建`java.io.FileInputStream`对象。 传递一个指定PDF表单位置的字符串值。
+   * 使用构造函数创建`java.io.FileInputStream`对象。 传递一个字符串值，该值用于指定PDF表单的位置。
    * 使用`com.adobe.idp.Document`构造函数创建存储PDF表单的`com.adobe.idp.Document`对象。 将包含PDF表单的`java.io.FileInputStream`对象传递给构造函数。
 
 1. 引用XML数据源。
@@ -175,7 +191,7 @@ ht-degree: 0%
    * 存储PDF表单的`com.adobe.idp.Document`对象。
    * 存储表单数据的`com.adobe.idp.Document`对象。
 
-   `importData`方法返回一个`com.adobe.idp.Document`对象，该对象存储的PDF表单包含XML数据源中的数据。
+   `importData`方法返回一个用于存储包含XML数据源中数据的PDF表单的`com.adobe.idp.Document`对象。
 
 1. 将PDF表单另存为PDF文件。
 
@@ -186,7 +202,7 @@ ht-degree: 0%
 
 [步骤摘要](importing-exporting-data.md#summary-of-steps)
 
-[快速入门(SOAP模式)：使用Java API导入表单数据](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API导入表单数据](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -212,10 +228,10 @@ ht-degree: 0%
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用PDF表单。
 
@@ -240,11 +256,11 @@ ht-degree: 0%
    * 存储PDF表单的`BLOB`对象。
    * 存储表单数据的`BLOB`对象。
 
-   `importData`方法返回一个`BLOB`对象，该对象存储的PDF表单包含XML数据源中的数据。
+   `importData`方法返回一个用于存储包含XML数据源中数据的PDF表单的`BLOB`对象。
 
 1. 将PDF表单另存为PDF文件。
 
-   * 通过调用其构造函数并传递表示PDF文件的文件位置的字符串值来创建`System.IO.FileStream`对象。
+   * 通过调用其构造函数并传递表示PDF文件位置的字符串值来创建`System.IO.FileStream`对象。
    * 创建一个字节数组，用于存储`importData`方法返回的`BLOB`对象的数据内容。 通过获取`BLOB`对象的`MTOM`字段的值填充字节数组。
    * 通过调用其构造函数并传递`System.IO.FileStream`对象来创建`System.IO.BinaryWriter`对象。
    * 通过调用`System.IO.BinaryWriter`对象的`Write`方法并传递字节数组，将字节数组的内容写入PDF文件。
@@ -282,20 +298,20 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-formdataintegration-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
 
 **创建表单数据集成服务客户端**
 
-您必须先创建数据集成服务客户端，然后才能以编程方式将数据导入PDF表单客户端API。 创建服务客户端时，您可以定义调用服务所需的连接设置。 有关信息，[正在设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
+您必须先创建数据集成服务客户端，然后才能以编程方式将数据导入PDF formClient API。 创建服务客户端时，您可以定义调用服务所需的连接设置。 有关信息，[正在设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)。
 
 **引用PDF表单**
 
-要从PDF表单导出数据，您必须引用在Designer或Acrobat中创建的、包含表单数据的PDF表单。 如果尝试从空的PDF表单中导出数据，您将获得空的XML架构。
+要从PDF表单导出数据，您必须引用在Designer或Acrobat中创建并包含表单数据的PDF表单。 如果尝试从空的PDF表单中导出数据，您将获得空的XML架构。
 
 **从PDF表单导出数据**
 
-在引用包含表单数据的PDF表单后，可以从表单中导出数据。 数据在基于表单的XML架构中导出。
+在引用包含表单数据的PDF表单后，可以从该表单导出数据。 数据在基于表单的XML架构中导出。
 
 **将表单数据另存为XML文件**
 
@@ -346,7 +362,7 @@ ht-degree: 0%
 
 [步骤摘要](importing-exporting-data.md#summary-of-steps)
 
-[快速入门(SOAP模式)：使用Java API导出表单数据](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API导出表单数据](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -370,10 +386,10 @@ ht-degree: 0%
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`FormDataIntegrationClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用PDF表单。
 

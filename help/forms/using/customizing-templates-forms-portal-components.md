@@ -9,13 +9,24 @@ feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1188'
+source-wordcount: '1257'
 ht-degree: 1%
-
 ---
-
 # 自定义Forms Portal组件的模板{#customizing-templates-for-forms-portal-components}
 
 ## 先决条件 {#prerequisites}
@@ -41,8 +52,8 @@ Forms Portal允许您在表单列表中使用自定义元数据。 在为资源�
    * 搜索和列表程序组件：&quot;/libs/fd/fp/formTemplate&quot;
    * 草稿和提交组件：
 
-      * 草稿部分： /libs/fd/fp/draftsTemplate
-      * 提交部分：/libs/fd/fp/submissionsTemplate
+     * 草稿部分： /libs/fd/fp/draftsTemplate
+     * 提交部分：/libs/fd/fp/submissionsTemplate
 
    * 链接组件： /libs/fd/fp/linkTemplate
 
@@ -120,8 +131,8 @@ Forms Portal为占位符提供了一个语法，用于显示自定义/现成元�
 1. **本地化支持**：若要本地化任何静态文本，请使用属性`${localize-YOUR_TEXT}`并使本地化值可用（如果尚未存在）。
    *在所讨论的示例中，属性`${localize-Apply}`和`${localize-Download}`用于本地化“应用和下载”文本。*
 
-1. **排序支持**：单击HTML元素可对搜索结果排序。要在表布局中实施排序，请在特定表标题上添加“data-sortKey”属性。此外，添加其值作为要排序的元数据。
-例如，对于网格视图中的“Title”标头，“data-sortKey”标头的值为“title”。单击标题，以便对特定列中的值进行排序。
+1. **排序支持**：单击HTML元素可对搜索结果排序。 要在表布局中实施排序，请在特定表标题上添加“data-sortKey”属性。 此外，添加其值作为要排序的元数据。
+例如，对于网格视图中的“Title”标头，“data-sortKey”标头的值为“title”。 单击标题，以便对特定列中的值进行排序。
 
 1. **使用配置属性**： Search &amp; Lister组件有多个可在用户界面中使用的配置。 例如，要显示通过“编辑”对话框保存的HTML工具提示文本，请使用`${config-htmlLinkText}`属性。 **同样，对于PDF工具提示文本，请使用** `${config-pdfLinkText}`属性。
 

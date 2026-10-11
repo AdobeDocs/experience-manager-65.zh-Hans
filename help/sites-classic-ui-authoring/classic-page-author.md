@@ -9,13 +9,22 @@ exl-id: a3606d72-1bd8-4886-9285-6457dae66486
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '299'
+source-wordcount: '304'
 ht-degree: 0%
-
 ---
-
 # 创作页面{#authoring-pages}
 
 下面提供了使用AEM进行创作的概述：
@@ -43,7 +52,7 @@ ht-degree: 0%
 浮动的“检查器”窗口，显示在可编辑页面上。 从此处，可将新组件拖动到页面上，并可执行特定于页面的操作。
 
 * **[内容查找器](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-在每个可创作页面的左侧，内容查找器提供对一系列资源的快速访问，包括数字资源(例如其他图像、Flash元素和文档)、其他页面和段落。 这些项目可以拖动到页面；例如，放置资产或创建指向其他页面的链接。
+在每个可创作页面的左侧，内容查找器提供对一系列资产（包括数字资产，例如其他图像、Flash元素和文档）、其他页面和段落的快速访问。 这些项目可以拖动到页面；例如，放置资产或创建指向其他页面的链接。
 
 * **上下文菜单**
 右键单击大多数屏幕元素（例如，页面上的段落）可显示一个上下文菜单，其中包含相应的操作选项。

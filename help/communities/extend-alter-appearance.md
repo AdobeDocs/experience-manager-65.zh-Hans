@@ -10,13 +10,20 @@ exl-id: 27e1bff3-385e-4ced-87af-54044b7e8812
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '285'
 ht-degree: 0%
-
 ---
-
 # 更改外观(HBS) {#alter-the-appearance-hbs}
 
 现在，应用程序目录(/apps)中的自定义注释系统组件已准备就绪，resourceSuperType引用了默认注释系统，并且自定义模型/视图已注册，接下来您可以编辑实施。
@@ -33,23 +40,23 @@ ht-degree: 0%
 
 * 打开[/apps/custom/components/comments/comment/**comment.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comment/comment.hbs)
 
-   * 注释掉标记，其中包含注释帖子的头像（~第21行）：
+  * 注释掉标记，其中包含注释帖子的头像（~第21行）：
 
-     ```
-       <!--
-        <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-        -->
-     ```
+    ```
+      <!--
+       <<img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+       -->
+    ```
 
 * 打开[/apps/custom/components/comments/**comments.hbs**](https://localhost:4502/crx/de/index.jsp#/apps/custom/components/comments/comments.hbs)
 
-   * 注释掉标记，该标记包括下一个注释条目（~第44行）的头像：
+  * 注释掉标记，该标记包括下一个注释条目（~第44行）的头像：
 
-     ```
-       <!--
-        <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
-        -->
-     ```
+    ```
+      <!--
+       <img class="scf-composer-avatar" src="{{loggedInUser.avatarUrl}}"></img>
+       -->
+    ```
 
 * 选择&#x200B;**全部保存**
 
@@ -61,11 +68,11 @@ ht-degree: 0%
 
 * 从主菜单
 
-   * 选择&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 复制]**。
-   * 选择&#x200B;**[!UICONTROL 激活树]**。
-   * 将`Start Path`设置为`/apps/custom`。
-   * 取消选择&#x200B;**[!UICONTROL Only Modified]**。
-   * 选择&#x200B;**[!UICONTROL 激活]**&#x200B;按钮。
+  * 选择&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 复制]**。
+  * 选择&#x200B;**[!UICONTROL 激活树]**。
+  * 将`Start Path`设置为`/apps/custom`。
+  * 取消选择&#x200B;**[!UICONTROL Only Modified]**。
+  * 选择&#x200B;**[!UICONTROL 激活]**&#x200B;按钮。
 
 ### 查看已发布示例页面上的修改评论 {#view-modified-comment-on-published-sample-page}
 

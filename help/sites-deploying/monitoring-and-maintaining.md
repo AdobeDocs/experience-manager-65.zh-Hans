@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5992'
+source-wordcount: '6001'
 ht-degree: 1%
-
 ---
-
 # 监控和维护Adobe Experience Manager实例{#monitoring-and-maintaining-your-aem-instance}
 
 部署AEM实例后，必须监控和维护其操作、性能和完整性。
@@ -126,7 +135,7 @@ CRX文档的[备份和还原](/help/sites-administering/backup-and-restore.md)�
    ![版本清除配置](assets/version-purge-configuration.png)
 
    * **清除路径**
-设置要清除的内容的开始路径；例如，`/content/wknd`。
+     设置要清除的内容的开始路径；例如，`/content/wknd`。
 
      >[!CAUTION]
      >
@@ -136,17 +145,17 @@ CRX文档的[备份和还原](/help/sites-administering/backup-and-restore.md)�
 
    * **递归清除版本**
 
-      * 如果只想清除由路径定义的节点，请取消选择。
-      * 选择是否要清除由路径及其子项定义的节点。
+     * 如果只想清除由路径定义的节点，请取消选择。
+     * 选择是否要清除由路径及其子项定义的节点。
 
    * **最大版本数**
-设置要保留的最大版本数（针对每个节点）。 留空将不使用此设置。
+     设置要保留的最大版本数（针对每个节点）。 留空将不使用此设置。
 
    * **最小版本数**
-设置要保留的最小版本数（针对每个节点）。 留空将不使用此设置。
+     设置要保留的最小版本数（针对每个节点）。 留空将不使用此设置。
 
    * **最大版本期限**
-设置要保留的最大版本保留时间（以天为单位，针对每个节点）。 留空将不使用此设置。
+     设置要保留的最大版本保留时间（以天为单位，针对每个节点）。 留空将不使用此设置。
 
    然后&#x200B;**保存**。
 
@@ -219,37 +228,37 @@ AEM WCM会记录详细的日志。 打开包装并启动“快速入门”后，
 
 * `<cq-installation-dir>/crx-quickstart/logs`
 
-   * `access.log`
-此处注册了对AEM WCM和存储库的所有访问请求。
+  * `access.log`
+    此处注册了对AEM WCM和存储库的所有访问请求。
 
-   * `audit.log`
-审核操作在此处注册。
+  * `audit.log`
+    审核操作在此处注册。
 
-   * `error.log`
-错误消息（严重程度不同）在此处注册。
+  * `error.log`
+    错误消息（严重程度不同）在此处注册。
 
-   * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=zh-Hans)
-此日志仅在启用[!DNL Dynamic Media]时使用。 它提供用于分析ImageServer内部进程行为的统计和分析信息。
+  * [`ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html?lang=zh-Hans)
+    此日志仅在启用[!DNL Dynamic Media]时使用。 它提供用于分析ImageServer内部进程行为的统计和分析信息。
 
-   * `request.log`
-每个访问请求都与响应一起注册。
+  * `request.log`
+    每个访问请求都与响应一起注册。
 
-   * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=zh-Hans)
-此日志仅在启用[!DNL Dynamic Media]时使用。 s7access日志记录通过`/is/image`和`/is/content`向[!DNL Dynamic Media]发出的每个请求。
+  * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=zh-Hans)
+    此日志仅在启用[!DNL Dynamic Media]时使用。 s7access日志记录通过`/is/image`和`/is/content`向[!DNL Dynamic Media]发出的每个请求。
 
-   * `stderr.log`
-保存启动期间生成的错误消息（同样严重性各异）。 默认情况下，日志级别设置为`Warning` ( `WARN`)
+  * `stderr.log`
+    保存启动期间生成的错误消息（同样严重性各异）。 默认情况下，日志级别设置为`Warning` ( `WARN`)
 
-   * `stdout.log`
-保存指示启动期间事件的日志记录消息。
+  * `stdout.log`
+    保存指示启动期间事件的日志记录消息。
 
-   * `upgrade.log`
-提供从`com.day.compat.codeupgrade`和`com.adobe.cq.upgradesexecutor`包运行的所有升级操作的日志。
+  * `upgrade.log`
+    提供从`com.day.compat.codeupgrade`和`com.adobe.cq.upgradesexecutor`包运行的所有升级操作的日志。
 
 * `<cq-installation-dir>/crx-quickstart/repository/segmentstore`
 
-   * `journal.log`
-修订日记信息。
+  * `journal.log`
+    修订日记信息。
 
 >[!NOTE]
 >
@@ -316,9 +325,9 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
      值：指定记录器将为其记录消息的OSGi服务；例如，以下所有项：
 
-      * `org.apache.sling`
-      * `org.apache.felix`
-      * `com.day`
+     * `org.apache.sling`
+     * `org.apache.felix`
+     * `com.day`
 
    * 名称：`org.apache.sling.commons.log.level`
 
@@ -328,13 +337,13 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 根据需要配置其他参数：
 
-      * 名称：`org.apache.sling.commons.log.pattern`
+     * 名称：`org.apache.sling.commons.log.pattern`
 
-        类型：`String`
+       类型：`String`
 
-        值：根据需要指定日志消息的模式；例如，
+       值：根据需要指定日志消息的模式；例如，
 
-        `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
+       `{0,date,dd.MM.yyyy HH:mm:ss.SSS} *{4}* [{2}] {3} {5}`
 
    >[!NOTE]
    >
@@ -411,17 +420,17 @@ DEBUG 3 WebApp Panel: WebApp successfully deployed
 
    * 根据需要配置其他参数：
 
-      * 名称：`org.apache.sling.commons.log.file.number`
+     * 名称：`org.apache.sling.commons.log.file.number`
 
-        类型：`Long`
+       类型：`Long`
 
-        值：指定要保留的日志文件数；例如，`5`
+       值：指定要保留的日志文件数；例如，`5`
 
-      * 名称：`org.apache.sling.commons.log.file.size`
+     * 名称：`org.apache.sling.commons.log.file.size`
 
-        类型：`String`
+       类型：`String`
 
-        值：根据需要指定以按大小/日期控制文件旋转；例如，`'.'yyyy-MM-dd`
+       值：根据需要指定以按大小/日期控制文件旋转；例如，`'.'yyyy-MM-dd`
 
    >[!NOTE]
    >
@@ -568,19 +577,19 @@ OSGi事件还会生成审核记录，可在AEM Web Console的&#x200B;**配置状
 
 * 在您遇到性能问题之前：
 
-   * 尽可能多的收集信息，以便在正常情况下对系统积累良好的工作知识
+  * 尽可能多的收集信息，以便在正常情况下对系统积累良好的工作知识
 
 * 当您遇到性能问题时：
 
-   * 尝试使用一个（最好是多个）标准Web浏览器复制它，将其复制到您知道通用性能良好的其他客户端和/或服务器本身（如果可能）
-   * 检查在适当的时段内是否有任何更改（与系统相关），以及这些更改是否影响了性能
-   * 提出以下问题：
+  * 尝试使用一个（最好是多个）标准Web浏览器复制它，将其复制到您知道通用性能良好的其他客户端和/或服务器本身（如果可能）
+  * 检查在适当的时段内是否有任何更改（与系统相关），以及这些更改是否影响了性能
+  * 提出以下问题：
 
-      * 问题是否仅在特定时间出现？
-      * 问题是否只出现在特定页面上？
-      * 其他请求是否受到影响？
+    * 问题是否仅在特定时间出现？
+    * 问题是否只出现在特定页面上？
+    * 其他请求是否受到影响？
 
-   * 收集尽可能多的信息，以便与您在正常情况下了解的系统进行比较：
+  * 收集尽可能多的信息，以便与您在正常情况下了解的系统进行比较：
 
 ### 用于监控和分析性能的工具 {#tools-for-monitoring-and-analyzing-performance}
 
@@ -719,15 +728,15 @@ Adobe建议将“慢”页面与`request.log`隔离，然后单独对其进行�
 * 指示是请求（向右箭头）还是响应（向左箭头）的箭头。
 * 对于请求，该行包含：
 
-   * 方法（通常为GET、HEAD或POST）
-   * 所请求的页面
-   * 协议
+  * 方法（通常为GET、HEAD或POST）
+  * 所请求的页面
+  * 协议
 
 * 对于响应，该行包含：
 
-   * 状态代码(200表示“成功”，404表示“页面未找到”
-   * MIME类型
-   * 响应时间
+  * 状态代码(200表示“成功”，404表示“页面未找到”
+  * MIME类型
+  * 响应时间
 
 使用小型脚本，您可以从日志文件中提取所需信息并汇编所需的统计信息。 根据这些统计数据，您可以看到哪些页面或页面类型速度较慢，以及整体性能是否令人满意。
 
@@ -1124,17 +1133,17 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 
 * 无论您是否已禁用调试信息收集，都可以在多个位置对其进行配置，其中包括：
 
-   * [Apache Sling JSP脚本处理程序](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
-   * [Apache Sling JavaScript处理程序](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
-   * [Apache Sling日志记录配置](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
-   * [CQ HTML库管理器](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
-   * [CQ WCM调试过滤器](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+  * [Apache Sling JSP脚本处理程序](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjspscripthandler)
+  * [Apache Sling JavaScript处理程序](/help/sites-deploying/osgi-configuration-settings.md#apacheslingjavascripthandler)
+  * [Apache Sling日志记录配置](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
+  * [CQ HTML库管理器](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
+  * [CQ WCM调试过滤器](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
+  * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * 是否以及如何配置[版本清除](/help/sites-deploying/version-purging.md)
 * 知识库：
 
-   * [打开的文件太多]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=zh-Hans
+  * [打开的文件太多]&#x200B;(https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17470.html?lang=zh-Hans
 
 ### 性能定期下降 {#regular-performance-degradation}
 
@@ -1143,7 +1152,7 @@ grep "<date>" access.log | cut -d " " -f 3 | sort -u | wc -l
 * [内存不足](#outofmemory)
 * 知识库：
 
-   * [未关闭的资源解析程序](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23761)
+  * [未关闭的资源解析程序](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23761)
 
 ### JVM调整 {#jvm-tuning}
 

@@ -4,13 +4,21 @@ description: 功能切换是AEM中的一项功能，它允许管理员在运行�
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: 08815c2b-23b3-4545-a3ab-ba47ba1c3c55
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '448'
 ht-degree: 2%
-
 ---
-
 # Adobe Experience Manager (AEM) 6.5中的功能切换{#enable-feature-toggle-aem-forms-65}
 
 功能切换是AEM中的一项功能，它允许管理员动态启用或禁用特定功能。 此功能在管理&#x200B;**早期采用者功能**&#x200B;和&#x200B;**预发行功能**&#x200B;时特别有用，无需对代码库进行主要部署或更改。 它可确保灵活并控制可在AEM环境中访问哪些功能。

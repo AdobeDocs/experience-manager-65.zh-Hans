@@ -7,13 +7,27 @@ feature: Release Information
 role: User,Admin,Developer
 exl-id: 01fe5b53-2244-445f-a4d0-bd58ea38b611
 solution: Experience Manager
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3356'
-ht-degree: 97%
-
+source-wordcount: '3374'
+ht-degree: 98%
 ---
-
 # 主要功能与增强功能汇总
 
 该汇总内容列出了 Adobe Experience Manager 6.5 在前八个服务包中新增的主要功能与增强功能。
@@ -31,17 +45,17 @@ ht-degree: 97%
 
   最新版本更新了支持的平台矩阵，确保与新技术的兼容性。
 
-   * IBM® Content Manager 客户端 8.7
+  * IBM® Content Manager 客户端 8.7
 
-   * MongoDB 企业版 7.0
+  * MongoDB 企业版 7.0
 
-   * MySQL 8.4
+  * MySQL 8.4
 
-   * Microsoft® SQL 服务器 2022
+  * Microsoft® SQL 服务器 2022
 
-   * Microsoft® SQL 服务器 JDBC 驱动程序 12.8
+  * Microsoft® SQL 服务器 JDBC 驱动程序 12.8
 
-   * Red Hat® Enterprise Linux® 9（内核 4.x，64 位）
+  * Red Hat® Enterprise Linux® 9（内核 4.x，64 位）
 
 * [强化了文件附件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/file-attachment)：作为一项安全措施，该组件现已阻止提交扩展名经过修改、试图绕过允许文件类型检查的文件。 此类文件在提交过程中会被拦截，以确保仅接受有效文件类型。
 
@@ -67,19 +81,19 @@ IPTC 选项卡现已支持[!UICONTROL 替代文本]和[!UICONTROL 扩展描述]�
 
 * [PDF/A 合规性增强](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdfa-documents-converting-documents-to-pdf-a-documents)：用户现在可以将 PDF 转化为 PDF/A 格式（1a、2a、3a）以满足存档需求，同时还可确保无障碍访问并验证其对这些标准的符合性。
 
-* **支持静态 PDF 文档自动调整字体大小**：AEM Forms Designer、OutputService 和 FormsService 现已支持静态 PDF 自动调整字体大小。 当用户将文本、数字、密码或日期时间字段的字体大小设置为 0 时，字体大小会在这些字段中自动调整，而不会改变字段的整体尺寸。 要使用此功能，用户需在自定义 XCI 中传递以下标记：`<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`。
+* **支持静态 PDF 文档自动调整字体大小**：AEM Forms Designer、OutputService 和 FormsService 现已支持静态 PDF 自动调整字体大小。 当用户将文本、数值、密码或日期时间字段的字体大小设置为 0 时，字体大小会在这些字段中自动调整，而不会改变字段的整体尺寸。 要使用此功能，用户需在自定义 XCI 中传递以下标记：`<behaviorOverride>patch-LC-3921991:1</behaviorOverride>`。
 
 #### AEM Forms 中的新 Beta 功能 {#beta-aem-forms-sp22}
 
 Beta 功能为您提供获取前沿创新的独家体验，并参与塑造其未来发展的宝贵机会。 有兴趣在您的环境中启用 Beta 功能吗？ 请使用您的官方邮箱发送电子邮件至 aem-forms-ea@adobe.com，并在邮件中列出您感兴趣的功能列表。
 
 * [hCaptcha](/help/forms/using/integrate-adaptive-forms-hcaptcha.md) 和 [Cloudflare Turnstile CAPTCHA 服务](/help/forms/using/integrate-adaptive-forms-turnstile.md)：AEM Forms 支持以下验证码服务：
-   * hCaptcha 通过复选框小组件对用户进行验证，从而保护表单免受机器人、垃圾信息和自动滥用的侵扰。 它确保只有真实用户才能继续操作，从而提升在线交易的安全性。
-   * Cloudflare Turnstile 提供了一种安全机制，旨在保护表单免受自动化机器人、恶意攻击、垃圾信息和不必要的自动化流量的侵扰。 在提交表单之前，它会呈现一个复选框以验证用户身份，确认其为真人后才允许提交表单。
+  * hCaptcha 通过复选框小组件对用户进行验证，从而保护表单免受机器人、垃圾信息和自动滥用的侵扰。 它确保只有真实用户才能继续操作，从而提升在线交易的安全性。
+  * Cloudflare Turnstile 提供了一种安全机制，旨在保护表单免受自动化机器人、恶意攻击、垃圾信息和不必要的自动化流量的侵扰。 在提交表单之前，它会呈现一个复选框以验证用户身份，确认其为真人后才允许提交表单。
 
 * 自适应表单版本控制：
-   * [创建自适应表单的多个版本](/help/forms/using/add-versioning-reviews-comments.md)：现在用户可以轻松管理现有表单的不同变体。 该流程简化了版本控制，并便于对表单进行比较和优化，且整个操作均在一个统一而高效的工作流中完成。
-   * [比较自适应表单](/help/forms/using/compare-forms-core-components.md)：现在用户可以轻松对比两个表单，以识别其中的差异。 它使团队成员能够比较修订内容，并有效地讨论相关变化，从而促进顺利协作。
+  * [创建自适应表单的多个版本](/help/forms/using/add-versioning-reviews-comments.md)：现在用户可以轻松管理现有表单的不同变体。 该流程简化了版本控制，并便于对表单进行比较和优化，且整个操作均在一个统一而高效的工作流中完成。
+  * [比较自适应表单](/help/forms/using/compare-forms-core-components.md)：现在用户可以轻松对比两个表单，以识别其中的差异。 它使团队成员能够比较修订内容，并有效地讨论相关变化，从而促进顺利协作。
 
 ## AEM 6.5 服务包 21 - 2024 年 6 月 6 日
 
@@ -98,16 +112,16 @@ IPTC 选项卡现已支持[!UICONTROL 替代文本]和[!UICONTROL 扩展描述]�
 
 * **支持 Oauth 凭据**：提供一种全新且更易用的凭据，用于服务器间身份验证，以取代现有的服务帐户（JWT）凭据。 （NPR-41994）
 * [AEM Forms 中的规则编辑器增强功能](/help/forms/using/rule-editor-core-components.md)：
-   * 支持使用 `When-then-else` 功能实施嵌套条件。
-   * 验证或重置面板和表单（包括字段）。
-   * 在自定义函数中支持现代 JavaScript 特性，如 let 和箭头函数（支持 ES10）。
+  * 支持使用 `When-then-else` 功能实施嵌套条件。
+  * 验证或重置面板和表单（包括字段）。
+  * 在自定义函数中支持现代 JavaScript 特性，如 let 和箭头函数（支持 ES10）。
 * [适用于 PDF 辅助功能的 AutoTag API](/help/forms/using/aem-document-services-programmatically.md#doc-utility-services-doc-utility-services)：OSGi 上的 AEM Forms 现已支持新的 AutoTag API，可通过添加段落和列表等标记来增强 PDF 的无障碍标准。 此功能可让使用辅助技术的用户更方便地访问 PDF。
 * **16 位 PNG 支持**：PDF Generator 的 ImageToPdf 服务现已支持将具有 16 位色深的 PNG 转化为 PDF。
-* **将工件应用于 XDP 中的单个文本块**：Forms Designer 现在允许用户在 XDP 文件中的单个文本块上配置设置。 通过此功能，您可以控制在生成的 PDF 中哪些元素会被视为工件。 这些元素（如页眉和页脚）可供辅助技术访问，从而提升无障碍性。 主要功能包括：可将文本块标记为工件，并将这些设置嵌入到 XDP 元数据中。 Forms Output 服务会在生成 PDF 时应用这些设置，以确保正确的 PDF/UA 标记。
+* **将工件应用于 XDP 中的单个文本块**：Forms Designer 现在允许用户在 XDP 文件中的单个文本块上配置设置。 通过此功能，您可以控制在生成的 PDF 中哪些元素会被视为工件。 这些元素（如页眉和页脚）可供辅助技术使用。 主要功能包括：可将文本块标记为工件，并将这些设置嵌入到 XDP 元数据中。 Forms Output 服务会在生成 PDF 时应用这些设置，以确保正确的 PDF/UA 标记。
 * **AEM Forms Designer 已通过 `GB18030:2022` 标准认证**：凭借 `GB18030:2022` 认证，Forms Designer 现已支持中文 Unicode 字符集，允许您在所有可编辑字段和对话框中输入中文字符。
-* [在 JEE 服务器中支持 WebToPDF 路径](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings)：通过 PDF Generator 服务，现在在 JEE 上也支持使用 WebToPDF 路径将 HTML 文件转化为 PDF 文档。 此功能是在现有的 Webkit 和 WebCapture（仅限 Windows）路径基础上的新增支持。 此前 WebToPDF 路由已在 OSGi 上提供，并扩展到 JEE。 现在，在 JEE 和 OSGi 平台上，PDF Generator 服务均支持以下跨不同操作系统的路由：
-   * **Windows**：Webkit、WebCapture、WebToPDF
-   * **Linux®**：Webkit、WebToPDF
+* [在 JEE 服务器中支持 WebToPDF 路径](/help/forms/using/admin-help/configure-service-settings.md#generate-pdf-service-settings-generate-pdf-service-settings)：通过 PDF Generator 服务，现在在 JEE 上也支持使用 WebToPDF 路径将 HTML 文件转化为 PDF 文档。 此功能是在现有的 Webkit 和 WebCapture（仅限 Windows）路径基础上的新增支持。 此前 WebToPDF 路由已在 OSGi 上提供，并扩展到 JEE。 现在，在 JEE 和 OSGi 平台上，PDF Generator 服务均支持以下跨不同操作系统的路径：
+  * **Windows**：Webkit、WebCapture、WebToPDF
+  * **Linux®**：Webkit、WebToPDF
 
 
 ## AEM 6.5 服务包 20 – 2024 年 2 月 22 日
@@ -121,9 +135,9 @@ IPTC 选项卡现已支持[!UICONTROL 替代文本]和[!UICONTROL 扩展描述]�
 
 * **JEE 上的 AEM Forms 的事务报告**：JEE 上的 AEM Forms 引入了事务报告功能。 该功能可对文档事务进行全面记录，例如转化、渲染和提交操作。 此增强功能可提升工作效率，并有助于改进记录管理。 该功能默认处于禁用状态。 您可以在管理员 UI 中启用。
 * **通过 ECDSA 支持增强安全性**：AEM Forms 现已在 JEE 和 OSGi 技术栈中全面支持椭圆曲线数字签名算法（ECDSA）。 用户现在可以对 PDF 文档进行签名、认证和验证，从而显著提升安全性。 支持的 EC 曲线算法包括：
-   * ECDSA 椭圆曲线 P256 搭配 SHA256 摘要算法
-   * ECDSA 椭圆曲线 P384 搭配 SHA384 摘要算法
-   * ECDSA 椭圆曲线 P512 搭配 SHA512 摘要算法
+  * ECDSA 椭圆曲线 P256 搭配 SHA256 摘要算法
+  * ECDSA 椭圆曲线 P384 搭配 SHA384 摘要算法
+  * ECDSA 椭圆曲线 P512 搭配 SHA512 摘要算法
 * **Forms Designer 与 Windows 11 的无缝兼容性**：AEM Forms Designer 现已支持 Windows 11，确保顺利安装以及顺畅运行。 用户可放心升级至 Windows 11，而无需重新安装 Forms Designer，也无需担心兼容性问题，从而保证工作流不受中断。
 * **通过在 AEM Forms Designer 中使用自定义“字幕”角色来提升无障碍性**：AEM Forms Designer 现已支持一个名为“字幕”的自定义无障碍角色，使用户能够在 XDP 中创建个性化的字幕元素。 该功能通过允许用户将自定义字幕集成到文档设计中，进一步提升了无障碍性，从而改善包容性和用户体验。
 
@@ -135,13 +149,13 @@ IPTC 选项卡现已支持[!UICONTROL 替代文本]和[!UICONTROL 扩展描述]�
 ### [!DNL Forms]
 
 * **新的自适应表单核心组件**：新增了纵向选项卡、条款与条件以及复选框，以增强表单的可扩展性。
-   * **[复选框组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**：基于核心组件的自适应表单现在包含复选框组件。 通过它，用户可二选一，即选择或取消选择特定选项。 它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。 复选框是一个常见的表单元素，用于提供是/否或真/假选择。
+  * **[复选框组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox)**：基于核心组件的自适应表单现在包含复选框组件。 通过它，用户可二选一，即选择或取消选择特定选项。 它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。 复选框是一个常见的表单元素，用于提供是/否或真/假选择。
 
-   * **[条款与条件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**：基于核心组件的自适应表单现已包含条款与条件组件。 表单作者可以在表单中添加此部分，用于向用户展示服务、产品或平台的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
+  * **[条款与条件组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions)**：基于核心组件的自适应表单现已包含条款与条件组件。 表单作者可以在表单中添加此部分，用于向用户展示服务、产品或平台的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
 
-     ![纵向选项卡、条款与条件及复选框组件](/help/forms/using/assets/forms-components.png)
+    ![纵向选项卡、条款与条件及复选框组件](/help/forms/using/assets/forms-components.png)
 
-   * **[纵向选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**：基于核心组件的自适应表单现在可将表单内容整理到纵向选项卡列表中，从而提供结构化的、可导航的布局。 表单中的纵向选项卡通过简化导航和组织内容来提升用户体验。 当表单包含多个部分或复杂信息时，该功能尤其有帮助。
+  * **[纵向选项卡组件](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs)**：基于核心组件的自适应表单现在可将表单内容整理到纵向选项卡列表中，从而提供结构化的、可导航的布局。 表单中的纵向选项卡通过简化导航和组织内容来提升用户体验。 当表单包含多个部分或复杂信息时，该功能尤其有帮助。
 
 * **[AEM Forms Designer 64 位版本](/help/forms/using/installing-configuring-designer.md)**：AEM Forms Designer 的 64 位版本带来更佳的性能、可扩展性和内存管理，以全面提升表单创建体验。 利用 64 位架构，您可以轻松处理更大、更复杂的项目，确保无缝的设计工作流程和优化的效率。 利用此最新版本，提升您的表单设计能力并迎接 AEM Forms Designer 的未来。
 
@@ -162,48 +176,48 @@ IPTC 选项卡现已支持[!UICONTROL 替代文本]和[!UICONTROL 扩展描述]�
 
 ### [!DNL Forms]
 
-* **[通过规则编辑器中的自定义错误处理程序增强错误处理能力](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)**——您现在可以在外部服务返回错误时调用自定义函数（使用客户端库）。 并且，您可以向终端用户提供定制化响应。 或者，您可以针对服务返回的错误采取特定操作。 例如，您可以在后台针对特定错误代码调用自定义工作流，或告知用户该服务当前不可用。
+* **[通过规则编辑器中的自定义错误处理程序增强错误处理能力](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms)**——您现在可以在外部服务返回错误时调用自定义函数（使用客户端库）。 并且，您可以向终端用户提供定制化响应。 或者，您可以针对服务返回的错误采取特定操作。 例如，您可以在后台针对特定错误代码调用自定义工作流，或告知客户该服务当前不可用。
 
 * **[增增强的 Adobe Sign 工作流步骤](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/workflows/aem-forms-workflow-step-reference#sign-document-step)**——AEM 工作流中的 Adobe Sign 工作流步骤现已提供以下增强功能。
 
-   * **基于政府身份证件的 Adobe Sign 身份验证增强安全性**——Adobe Acrobat Sign 的基于政府身份证件验证功能提供了额外的安全保障。 用户可通过政府签发的身份证件（如驾驶证、国家身份证、护照）来验证其身份。 通过利用可信身份证明文件，此增强功能将签名过程的可信度提高一级，使其成为需要更高的安全性、合规性和用户验证的场景的理想之选。
+  * **基于政府身份证件的 Adobe Sign 身份验证增强安全性**——Adobe Acrobat Sign 的基于政府身份证件验证功能提供了额外的安全保障。 用户可通过政府签发的身份证件（如驾驶证、国家身份证、护照）来验证其身份。 通过利用可信身份证明文件，此增强功能将签名过程的可信度提高一级，使其成为需要更高的安全性、合规性和用户验证的场景的理想之选。
 
-   * **通过审核记录提升 Adobe Sign 文档透明度**——借助审核记录功能，您可以深入洞察 Adobe Sign 文档的完整生命周期。 通过审核记录，您可以保留与文档相关的所有操作与交互的完整记录。 这些操作和交互包括谁查看、编辑或签署了文档，以及每个事件的时间戳。 此增强功能对于保持合规性、解决争议和确保数字协议的完整性至关重要。
+  * **通过审核记录提升 Adobe Sign 文档透明度**——借助审核记录功能，您可以深入洞察 Adobe Sign 文档的完整生命周期。 通过审核记录，您可以保留与文档相关的所有操作与交互的完整记录。 这些操作和交互包括谁查看、编辑或签署了文档，以及每个事件的时间戳。 此增强功能对于保持合规性、解决争议和确保数字协议的完整性至关重要。
 
 
-   * **扩展协议接收人的角色设置，不再局限于签署人**——Adobe Acrobat Sign 现已支持将协议接收人的角色扩展到签署人之外，以更好地满足不同的工作流需求。 启用此选项后，协议中的每个接收者均可单独配置其角色，其中签名者为默认角色。
+  * **扩展协议接收人的角色设置，不再局限于签署人**——Adobe Acrobat Sign 现已支持将协议接收人的角色扩展到签署人之外，以更好地满足不同的工作流需求。 启用此选项后，协议中的每个接收者均可单独配置其角色，其中签名者为默认角色。
 
 
 * **[EE 上的 AEM Forms 完整安装程序](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms)**——此服务包提供 EE 上的 AEM Forms 的完整安装程序，并支持多种全新的软件组合，其中包括：
-   * Microsoft® Windows Server 2022
-   * Microsoft® Active Directory 2022
-   * Oracle WebLogic 14C（适用于 Windows Server 2022）
-   * Red Hat® JBoss® 7.4.10
-   * MongoDB 6.0 <!-- it was previously MongoDB 4.4 -->
-   * MySQL JDBC Connector 8
+  * Microsoft® Windows Server 2022
+  * Microsoft® Active Directory 2022
+  * Oracle WebLogic 14C（适用于 Windows Server 2022）
+  * Red Hat® JBoss® 7.4.10
+  * MongoDB 6.0 <!-- it was previously MongoDB 4.4 -->
+  * MySQL JDBC Connector 8
 
 如果您正在安装或计划在 JEE 环境中使用 AEM 6.5 Forms 的最新软件，Adobe 建议使用 JEE 上的 AEM 6.5.18.0 Forms 完整安装程序。 有关已新增和已弃用软件的完整列表，请参阅 JEE 上的 AEM Forms 或 OSGi 上的 AEM Forms 的相关文档。
 
 ## AEM 6.5 服务包 17 – 2025 年 5 月 22 日
 
 * **搜索体验增强** - 您现在可以对搜索结果中显示的资产快速执行以下操作：
-   * 创建工作流
-   * 创建一个版本
-   * 关联或取消关联资产
+  * 创建工作流
+  * 创建一个版本
+  * 关联或取消关联资产
 
-  您无需导航到资源的位置并查看其属性即可执行这些操作。
+  您无需导航到资产的位置并查看其属性即可执行这些操作。
 
-* **Dynamic Media _快照_**&#x200B;允许您使用测试图像或Dynamic Media URL预览图像修饰符和智能成像优化，例如WebP或AVIF输出、带宽感知压缩和设备像素比缩放。然后，您可以立即比较每个设置对质量和文件大小的影响。
-请参阅[动态媒体快照](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)。
+* **Dynamic Media _快照_**&#x200B;功能可让您通过测试图像或 Dynamic Media URL 预览图像修饰符和智能成像优化效果——例如 WebP 或 AVIF 输出、带宽感知压缩以及设备像素比缩放。 您可以立即比较每个设置对图像质量和文件大小的影响。
+请参阅 [Dynamic Media 快照](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot)。
 * **使用 Dynamic Media 的 DASH 流媒体**——为 Dynamic Media 视频传递中的自适应流媒体新增了协议（DASH——基于 HTTP 的动态自适应流媒体），并启用了 CMAF 支持。 现已在所有地区开放使用。
 * **Experience Manager Sites和内容片段与Assets新一代Dynamic Media的集成** — 用户现在可以在Experience Manager Sites 6.5中使用其云托管的资源。 他们可以在内部部署或Managed Services实例上创作和交付这些资源。
 
 ### [!DNL Forms]
 
 * **[在 AEM 页面编辑器中使用自适应表单](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)**——您现在可以使用 AEM 页面编辑器快速创建多个表单，并将其添加到 Sites 页面中。 通过使用该功能，内容作者可以使用自适应表单组件（包括动态行为、验证、数据集成、生成记录文档和业务流程自动化）的强大功能，在 Sites 页面内创建无缝的数据捕获体验。 您可以：
-   * 通过将表单组件拖放到 AEM Sites 编辑器或体验片段中的自适应表单容器组件，即可创建自适应表单。
-   * 您还可以在 AEM Sites 编辑器中使用自适应表单向导，以独立于任何 Sites 页面的方式创建表单，从而灵活地在多个页面间重复使用这些表单。
-   * 将多个表单添加到 Sites 页面，简化用户体验并提供更大的灵活性。
+  * 通过将表单组件拖放到 AEM Sites 编辑器或体验片段中的自适应表单容器组件，即可创建自适应表单。
+  * 您还可以在 AEM Sites 编辑器中使用自适应表单向导，以独立于任何 Sites 页面的方式创建表单，从而灵活地在多个页面间重复使用这些表单。
+  * 将多个表单添加到 Sites 页面，简化用户体验并提供更大的灵活性。
 * **[在 Experience Manager Forms 中支持 reCAPTCHA Enterprise](/help/forms/using/captcha-adaptive-forms.md)**——Experience Manager Forms 现已支持 reCAPTCHA Enterprise。 除了现有的 Google reCAPTCHA v2 支持外，此功能还提供了针对欺诈活动和垃圾邮件的增强保护。
 * **[在 Experience Manager Forms 中新增对 Adobe Acrobat Sign 政府版的支持](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**——AEM Forms 现已支持与 Adobe Acrobat Sign 政府版（符合 FedRAMP 标准）集成。 此集成在提交自适应表单时，为与政府相关的帐户（政府部门和机构）提供了更高级别的合规性和安全性，以支持电子签名。 通过与 Adobe Acrobat Sign 政府版的集成，Adobe 的合作伙伴和政府客户能够在自适应表单中使用电子签名，以满足最关键和最敏感的业务需求。 这层额外的安全保障机制确保所有电子签名完全符合 FedRAMP Moderate 合规性，使 Adobe 的政府客户能够安心使用。
 * **启用 Experience Manager Forms 与 Salesforce 的数据交换集成**——使用 OAuth 2.0 客户端凭据流程配置 Experience Manager Forms 与 Salesforce 应用程序之间的集成。 此功能可实现应用程序的安全、直接身份验证和授权，并允许在无需用户参与的情况下实现无缝通信。

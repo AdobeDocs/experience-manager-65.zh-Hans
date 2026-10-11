@@ -10,13 +10,28 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: aee0e36fe488af764459494c1bc802fb519b1a54
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1982'
-ht-degree: 1%
-
+source-wordcount: '2004'
+ht-degree: 0%
 ---
-
 
 # HTML5 Forms 常见问题解答（FAQ）{#frequently-asked-questions-faq-for-html-forms}
 
@@ -175,7 +190,7 @@ ht-degree: 1%
    答案： HTML5表单不支持浮动字段的显示模式。
 
 1. HTML5 Forms中日期字段的格式是什么？
-答案：日期字段接受ISO格式，YYYY-MM-DD。如果以某种其他格式指定日期，则在用户退出该字段之前，日期字段不接受格式。
+答案：日期字段接受ISO格式，YYYY-MM-DD。 如果以某种其他格式指定日期，则在用户退出该字段之前，日期字段不接受格式。
 
 ### 脚本 {#scripting}
 

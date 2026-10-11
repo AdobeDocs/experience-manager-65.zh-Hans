@@ -9,20 +9,24 @@ exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '320'
 ht-degree: 3%
-
 ---
-
 # 使用内容属性导出内容{#using-content-properties-to-export-content}
 
 {{ue-over-mobile}}
 
-在AEM中，应用表示为&#x200B;*cq：Pages*。
+在AEM中，应用程序表示为&#x200B;*cq:Pages*。
 
-除了下面显示的表示支持属性的集成的其他属性之外，它们还共享在任何&#x200B;*cq：Page*&#x200B;中找到的相同公共属性。
+除了下面显示的表示支持属性的集成的其他属性之外，它们还共享在任何&#x200B;*cq:Page*&#x200B;中找到的相同公共属性。
 
 ## 应用程序属性 {#app-properties}
 
@@ -38,7 +42,7 @@ ht-degree: 3%
   <tr>
    <td>dps-cloudConfig</td>
    <td>String：Path</td>
-   <td><p>配置的Mobile On-DemandCloud Service的路径。 用于AEM Mobile到Mobile On-Demand操作（API调用）</p> <p>当作者选择将Mobile On-DemandCloud Service与应用程序关联时，可以通过“管理连接”拼贴配置此关联。</p> </td>
+   <td><p>配置的Mobile On-Demand Cloud Service的路径。 用于AEM Mobile到Mobile On-Demand操作（API调用）</p> <p>当作者选择将Mobile On-Demand Cloud Service与应用程序关联时，可以通过“管理连接”拼贴配置此关联。</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
@@ -48,7 +52,7 @@ ht-degree: 3%
   <tr>
    <td>dps-projectId</td>
    <td>字符串</td>
-   <td><p>此应用程序链接/绑定的Mobile On-Demand项目的ID/URI。</p> <p>当作者从关联的Mobile On-DemandCloud Service的可用项目列表中选择项目时，可通过“管理连接”拼贴配置此关联。</p> </td>
+   <td><p>此应用程序链接/绑定的Mobile On-Demand项目的ID/URI。</p> <p>当作者从关联的Mobile On-Demand Cloud Service的可用项目列表中选择项目时，可通过“管理连接”拼贴配置此关联。</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
@@ -63,7 +67,7 @@ ht-degree: 3%
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
    <td>日期</td>
-   <td>上次将共享资源从AEM上传到AEM Mobile的日期。</td>
+   <td>从AEM上次将共享资源上传到AEM Mobile的日期。</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploadedBy</td>

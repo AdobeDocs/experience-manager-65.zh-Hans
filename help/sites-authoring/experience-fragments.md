@@ -5,13 +5,27 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Experience Fragments
 role: User
-source-git-commit: 382368d7a91ba2229ce1cdfe19f3b9871b93498e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: f61d1313-5cf1-4533-b29c-ac9f75c4b270
+    internal-label: Experience Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1541'
 ht-degree: 71%
-
 ---
-
 # 体验片段{#experience-fragments}
 
 在Adobe Experience Manager (AEM)中，体验片段由一个或多个组件组成，其中包括可在页面中引用的内容和布局。 它们可以包含任何组件。

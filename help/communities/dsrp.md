@@ -9,13 +9,20 @@ role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '628'
+source-wordcount: '633'
 ht-degree: 1%
-
 ---
-
 # DSRP — 关系数据库存储资源提供程序 {#dsrp-relational-database-storage-resource-provider}
 
 ## 关于DSRP {#about-dsrp}
@@ -60,48 +67,48 @@ ht-degree: 1%
 * 使用管理员权限登录
 * 从&#x200B;**主菜单**
 
-   * 选择&#x200B;**[!UICONTROL 工具]** （从左侧窗格）
-   * 选择&#x200B;**[!UICONTROL 社区]**
-   * 选择&#x200B;**[!UICONTROL 存储配置]**
+  * 选择&#x200B;**[!UICONTROL 工具]** （从左侧窗格）
+  * 选择&#x200B;**[!UICONTROL 社区]**
+  * 选择&#x200B;**[!UICONTROL 存储配置]**
 
-      * 例如，结果位置为： [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
+    * 例如，结果位置为： [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
 
-     >[!NOTE]
-     >
-     >默认存储配置现在存储在conf路径(`/conf/global/settings/community/srpc/defaultconfiguration`)中，而不是`etc`路径(`/etc/socialconfig/srpc/defaultconfiguration`)中。 建议您按照[迁移步骤](#zerodt-migration-steps)操作，以使defaultsrp按预期工作。
+    >[!NOTE]
+    >
+    >默认存储配置现在存储在conf路径(`/conf/global/settings/community/srpc/defaultconfiguration`)中，而不是`etc`路径(`/etc/socialconfig/srpc/defaultconfiguration`)中。 建议您按照[迁移步骤](#zerodt-migration-steps)操作，以使defaultsrp按预期工作。
 
   ![dsrp-config](assets/dsrp-config.png)
 
 * 选择&#x200B;**[!UICONTROL 数据库存储资源提供程序(DSRP)]**
 * **数据库配置**
 
-   * **[!UICONTROL JDBC数据源名称]**
+  * **[!UICONTROL JDBC数据源名称]**
 
-     为MySQL连接指定的名称必须与[JDBC OSGi配置](dsrp-mysql.md#configurejdbcconnections)中输入的名称相同
+    为MySQL连接指定的名称必须与[JDBC OSGi配置](dsrp-mysql.md#configurejdbcconnections)中输入的名称相同
 
-     *默认*：社区
+    *默认*：社区
 
-   * **[!UICONTROL 数据库名称]**
+  * **[!UICONTROL 数据库名称]**
 
-     为[init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)脚本中的架构指定的名称
+    为[init_schema.sql](dsrp-mysql.md#obtain-the-sql-script)脚本中的架构指定的名称
 
-     *默认*：社区
+    *默认*：社区
 
 * **SolrConfiguration**
 
-   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)主机**
+  * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html)主机**
 
-     如果使用内部ZooKeeper运行Solr，则将此值留空。 否则，在使用外部ZooKeeper在[SolrCloud模式](solr.md#solrcloud-mode)中运行时，将此值设置为ZooKeeper的URI，如&#x200B;*my.server.com:80*
+    如果使用内部ZooKeeper运行Solr，则将此值留空。 否则，在使用外部ZooKeeper的[SolrCloud模式](solr.md#solrcloud-mode)中运行时，请将此值设置为ZooKeeper的URI，如&#x200B;*my.server.com:80*
 
-     *默认*： *&lt;空白>*
+    *默认*： *&lt;空白>*
 
-   * **[!UICONTROL Solr URL]**
+  * **[!UICONTROL Solr URL]**
 
-     *默认*： https://127.0.0.1:8983/solr/
+    *默认*： https://127.0.0.1：8983/solr/
 
-   * **[!UICONTROL Solr收藏集]**
+  * **[!UICONTROL Solr收藏集]**
 
-     *默认值*： collection1
+    *默认值*： collection1
 
 * 选择&#x200B;**[!UICONTROL 提交]**。
 
@@ -110,7 +117,7 @@ ht-degree: 1%
 要确保defaultsrp页面[http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)按预期工作，请执行以下步骤：
 
 1. 将`/etc/socialconfig`处的路径重命名为`/etc/socialconfig_old`，以便系统配置回退到jsrp（默认）。
-1. 转到defaultsrp页面[http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)，其中配置了jsrp。 单击&#x200B;**[!UICONTROL 提交]**&#x200B;按钮，以便在`/conf/global/settings/community/srpc`创建新的默认配置节点。
+1. 转到配置jsrp的defaultsrp页面[http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)。 单击&#x200B;**[!UICONTROL 提交]**&#x200B;按钮，以便在`/conf/global/settings/community/srpc`创建新的默认配置节点。
 1. 删除已创建的默认配置`/conf/global/settings/community/srpc/defaultconfiguration`。
 1. 复制旧配置`/etc/socialconfig_old/srpc/defaultconfiguration`以替换上一步骤中删除的节点(`/conf/global/settings/community/srpc/defaultconfiguration`)。
 1. 删除旧`etc`节点`/etc/socialconfig_old`。
@@ -123,14 +130,14 @@ ht-degree: 1%
 
 * 对于作者：
 
-   * 从主菜单导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 复制]**
-   * 双击&#x200B;**[!UICONTROL 激活树]**
-   * **起始路径**：
+  * 从主菜单导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 复制]**
+  * 双击&#x200B;**[!UICONTROL 激活树]**
+  * **起始路径**：
 
-      * 浏览到`/etc/socialconfig/srpc/`
+    * 浏览到`/etc/socialconfig/srpc/`
 
-   * 确保未选择`Only Modified`。
-   * 选择&#x200B;**[!UICONTROL 激活]**。
+  * 确保未选择`Only Modified`。
+  * 选择&#x200B;**[!UICONTROL 激活]**。
 
 ## 管理用户数据 {#managing-user-data}
 

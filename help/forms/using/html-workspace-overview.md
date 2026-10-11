@@ -1,5 +1,5 @@
 ---
-title: 使用AEM Forms工作区
+title: 使用 AEM Forms 工作区
 description: 通过流程工作流的此快速概述开始使用AEM Forms工作区。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,18 +9,36 @@ exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1019'
-ht-degree: 0%
-
+source-wordcount: '1056'
+ht-degree: 1%
 ---
-
-# 使用AEM Forms工作区{#working-with-aem-forms-workspace}
+# 使用 AEM Forms 工作区{#working-with-aem-forms-workspace}
 
 ## 简介 {#introduction}
 
-AEM Forms工作区是AEM Forms的一部分。 除了PDF forms之外，Workspace还促进了HTMLForms的演绎版。 现在，您可以从移动界面和Web应用程序参与业务流程。
+AEM Forms工作区是AEM Forms的一部分。 Workspace除PDF forms之外还促进了HTML Forms的演绎版。 现在，您可以从移动界面和Web应用程序参与业务流程。
 
 此外，AEM Forms工作区可通过使用标准HTML和JavaScript™开发方法进行高度自定义。 它是一个基于组件的软件，可轻松与其他Web应用程序集成。
 
@@ -105,13 +123,13 @@ AEM Forms客户不支持Flex Workspace。 所有使用Flex Workspace的客户都
  </tbody>
 </table>
 
-Flex WorkspaceAEM Forms工作区中未提供的某些功能包括：消息和通知、欢迎页面、审批容器以及管理列标题的选项。 有关完整列表，请参阅[Flex Workspace在AEM Forms工作区中不可用的功能](/help/forms/using/features-flex-workspace-available-html.md)。
+Flex Workspace工作区中未提供的某些功能包括：消息和通知、欢迎页面、审批容器以及管理列标题的选项。 有关完整列表，请参阅[Flex Workspace在AEM Forms工作区中不可用的功能](/help/forms/using/features-flex-workspace-available-html.md)。
 
 ## 使用AEM Forms工作区进行开发 {#developing-with-aem-forms-workspace}
 
 ### 架构 {#architecture}
 
-AEM Forms工作区是托管在CRX™上的基于HTML和JavaScript™的Web应用程序。 在浏览器中打开Workspace URL时，将访问CRX™资源，并在浏览器中将应用程序呈现为HTML页面。 JavaScript库和自定义JavaScript代码可管理应用程序的内部和外部行为，例如用户界面、用户交互和与AEM Forms服务器的通信。 有关详细信息，请参阅AEM Forms工作区[架构](/help/forms/using/html-workspace-architecture.md)。
+AEM Forms工作区是一个基于HTML和JavaScript™的Web应用程序，托管在CRX™上。 在浏览器中打开Workspace URL时，将访问CRX™资源，并在浏览器中将应用程序呈现为HTML页面。 JavaScript库和自定义JavaScript代码可管理应用程序的内部和外部行为，例如用户界面、用户交互和与AEM Forms服务器的通信。 有关详细信息，请参阅AEM Forms工作区[架构](/help/forms/using/html-workspace-architecture.md)。
 
 ### AEM Forms工作区自定义 {#aem-forms-workspace-customization}
 
@@ -133,7 +151,7 @@ AEM Forms工作区交付项包括部署在CRX上的CRX包、包含完整源代�
 
 默认情况下，对于新流程，XDP表单在桌面上以PDF格式呈现，在平板电脑上以HTML格式呈现。 可以始终以HTML格式呈现XDP表单。 有关详细信息，请参阅[新渲染和提交服务](/help/forms/using/new-render-submit-service.md)。
 
-[移动Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html)功能，它与[配置文件](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html)配合使用，可启用XDP表单的HTML演绎版。 默认情况下，“渲染新HTML表单”使用`default.html`配置文件，您可以更改该配置文件。 您还可以添加在以HTML格式呈现XDP表单之前发生的自定义更改。
+[移动Forms](https://helpx.adobe.com/livecycle/help/mobile-forms/introduction.html)功能与[配置文件](https://helpx.adobe.com/livecycle/help/mobile-forms/creating-profile.html)配合使用，可支持HTML的XDP表单演绎版。 默认情况下，“渲染新的HTML表单”使用`default.html`配置文件，您可以更改该配置文件。 您还可以添加在以HTML格式呈现XDP表单之前发生的自定义更改。
 
 ## AEM Forms工作区应用程序 {#aem-forms-workspace-app}
 

@@ -1,6 +1,6 @@
 ---
 title: 支持的文件格式和MIME类型
-description: ' [!DNL Assets] 和 [!DNL Dynamic Media] 支持的文件格式和MIME类型以及每种格式支持的功能。'
+description: '[!DNL Assets]和[!DNL Dynamic Media]支持的文件格式和MIME类型以及每种格式支持的功能。'
 contentOwner: AG
 mini-toc-levels: 1
 role: User, Admin
@@ -8,13 +8,29 @@ feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2045'
+source-wordcount: '2047'
 ht-degree: 10%
-
 ---
-
 # [!DNL Adobe Experience Manager Assets]中支持的格式 {#assets-supported-formats}
 
 [!DNL Experience Manager Assets]支持广泛的文件格式，并且每种功能对于不同的MIME类型都有不同的支持。 要将[!DNL Assets]与其他符合标准的数字资产管理(DAM)解决方案和桌面软件集成，请使用Adobe的[!DNL Extensible Metadata Platform] (XMP)。
@@ -68,7 +84,7 @@ ht-degree: 10%
 | DN | ✓ | ✓ | ✓ | | ✓ | ✓ | − | − |
 | gLB | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | gLTF | ✓ | ✓ | ✓ | | ✓ | − | ✓ | − |
-| 对象 | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
+| OBJ | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | STL | ✓ | ✓ | ✓ | ✓ | ✓ | − | ✓ | ✓ |
 | 美元z | ✓ | ✓ | ✓ | ✓ | ✓ | − | − | ✓ |
 
@@ -334,12 +350,12 @@ Dynamic Media支持以下3D格式。
 
 另请参阅[在Dynamic Media中使用3D资产](/help/assets/assets-3d.md)。
 
-| 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
+| 3D文件扩展名 | 文件格式 | MIME 类型 | 注释 |
 |---|---|---|---|
 | GLB | 二进制GL传输 | model/gltf-binary | 将材料和纹理作为单个资产包含在内。 |
-| 对象 | WaveFront 3D对象文件 | application/x-tgif |  |
+| OBJ | WaveFront 3D对象文件 | application/x-tgif |  |
 | STL | 立体成形 | application/vnd.ms-pki.stl |  |
-| USDZ | 通用场景描述Zip存档 | model/vnd.usdz+zip | *仅支持摄取；不可查看或交互。* USDZ是一种专有的3D格式，可供Safari和iOS设备本机查看。 |
+| USDZ | Universal Scene Description Zip存档 | model/vnd.usdz+zip | *仅支持摄取；不可查看或交互。* USDZ是一种专有的3D格式，可供Safari和iOS设备本机查看。 |
 
 >[!MORELIKETHIS]
 >

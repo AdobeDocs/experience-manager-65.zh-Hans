@@ -1,20 +1,27 @@
 ---
 title: 使用和扩展小组件（经典 UI）
-
 description: Adobe Experience Manager基于Web的界面使用AJAX和其他现代浏览器技术，支持作者在网页上对WYSIWYG内容进行编辑和格式化
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '5049'
 ht-degree: 0%

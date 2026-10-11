@@ -10,13 +10,24 @@ exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Operations
 role: Admin
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4969'
+source-wordcount: '4975'
 ht-degree: 1%
-
 ---
-
 # 使用 JMX 控制台监控服务器资源{#monitoring-server-resources-using-the-jmx-console}
 
 通过JMX控制台，您可以监视和管理CRX服务器上的服务。 后面的部分总结了通过JMX框架公开的属性和操作。
@@ -53,37 +64,37 @@ ht-degree: 1%
 * 参数：无
 * 返回值：包含以下列的表格式数据：
 
-   * Jobs
-   * 队列名称
-   * 活动作业
-   * 平均处理时间
-   * 平均等待时间
-   * 取消的作业
-   * 失败的作业
-   * 已完成的作业
-   * 已处理的作业
-   * 排队的作业
+  * Jobs
+  * 队列名称
+  * 活动作业
+  * 平均处理时间
+  * 平均等待时间
+  * 取消的作业
+  * 失败的作业
+  * 已完成的作业
+  * 已处理的作业
+  * 排队的作业
 
 **returnWorkflowJobTopicInfo**&#x200B;按主题列出工作流作业的处理信息。
 
 * 参数：无
 * 返回值：包含以下列的表格式数据：
 
-   * 主题名称
-   * 平均处理时间
-   * 平均等待时间
-   * 取消的作业
-   * 失败的作业
-   * 已完成的作业
-   * 已处理的作业
+  * 主题名称
+  * 平均处理时间
+  * 平均等待时间
+  * 取消的作业
+  * 失败的作业
+  * 已完成的作业
+  * 已处理的作业
 
 **returnFailedWorkflowCount**&#x200B;显示失败的工作流实例数。 您可以指定工作流模型来查询或检索所有工作流模型的信息。
 
 * 参数：
 
-   * model：要查询的模型的ID。 要查看所有工作流模型的失败工作流实例计数，请不要指定任何值。 ID是模型节点的路径，例如：
+  * model：要查询的模型的ID。 要查看所有工作流模型的失败工作流实例计数，请不要指定任何值。 ID是模型节点的路径，例如：
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 返回的值：失败的工作流实例数。
 
@@ -96,65 +107,65 @@ ht-degree: 1%
 
 * 参数：
 
-   * 重新启动实例： （可选）指定值`true`以在实例终止后重新启动实例。 默认值`false`导致无法重新启动已终止的工作流实例。
-   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
-   * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的失败实例。 ID是模型节点的路径，例如：
+  * 重新启动实例： （可选）指定值`true`以在实例终止后重新启动实例。 默认值`false`导致无法重新启动已终止的工作流实例。
+  * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
+  * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的失败实例。 ID是模型节点的路径，例如：
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 返回值：有关已终止实例的表格式数据，包含以下列：
 
-   * 发起者
-   * 实例ID
-   * 模型ID
-   * 负载
-   * 开始注释
-   * 工作流标题
+  * 发起者
+  * 实例ID
+  * 模型ID
+  * 负载
+  * 开始注释
+  * 工作流标题
 
 **retryFailedWorkItems**&#x200B;尝试执行工作项步骤失败。 您可以针对特定工作流模型重试所有失败的工作项或仅重试失败的工作项。 您可以选择测试工序以查看结果，而无需实际执行该工序。
 
 * 参数：
 
-   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
-   * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的失败工作项。 ID是模型节点的路径，例如：
+  * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
+  * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的失败工作项。 ID是模型节点的路径，例如：
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 返回值：有关重试的失败工作项的表格式数据，包括以下列：
 
-   * 发起者
-   * 实例ID
-   * 模型ID
-   * 负载
-   * 开始注释
-   * 工作流标题
+  * 发起者
+  * 实例ID
+  * 模型ID
+  * 负载
+  * 开始注释
+  * 工作流标题
 
 **PurgeActive**&#x200B;删除特定时期的活动工作流实例。 您可以清除所有模型的活动实例，或仅清除特定模型的实例。 您可以选择测试工序以查看结果，而无需实际执行该工序。
 
 * 参数：
 
-   * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的工作流实例。 ID是模型节点的路径，例如：
+  * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的工作流实例。 ID是模型节点的路径，例如：
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * 自工作流启动以来的天数：要清除的工作流实例的时限（以天为单位）。
-   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * 自工作流启动以来的天数：要清除的工作流实例的时限（以天为单位）。
+  * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
 
 * 返回值：有关已清除的活动工作流实例的表格数据，包括以下列：
 
-   * 发起者
-   * 实例ID
-   * 模型ID
-   * 负载
-   * 开始注释
-   * 工作流标题
+  * 发起者
+  * 实例ID
+  * 模型ID
+  * 负载
+  * 开始注释
+  * 工作流标题
 
 **countStaleWorkflows**&#x200B;返回过期的工作流实例数。 您可以检索所有工作流模型或特定模型的过时实例数。
 
 * 参数：
 
-   * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的工作流实例。 ID是模型节点的路径，例如：
+  * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的工作流实例。 ID是模型节点的路径，例如：
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 返回的值：过期的工作流实例数。
 
@@ -162,10 +173,10 @@ ht-degree: 1%
 
 * 参数：
 
-   * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的过时实例。 ID是模型节点的路径，例如：
+  * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的过时实例。 ID是模型节点的路径，例如：
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
 
 * 返回的值：已重新启动的工作流实例的列表。
 
@@ -178,9 +189,9 @@ ht-degree: 1%
 
 * 参数：
 
-   * 模型： （可选）返回其运行实例数的模型的ID。 指定无模型可返回所有工作流模型的运行实例数。 ID是模型节点的路径，例如：
+  * 模型： （可选）返回其运行实例数的模型的ID。 指定无模型可返回所有工作流模型的运行实例数。 ID是模型节点的路径，例如：
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 返回的值：正在运行的工作流实例的数量。
 
@@ -188,9 +199,9 @@ ht-degree: 1%
 
 * 参数：
 
-   * 模型： （可选）返回已完成实例数的模型的ID。 指定无模型可返回所有工作流模型的已完成实例数。 ID是模型节点的路径，例如：
+  * 模型： （可选）返回已完成实例数的模型的ID。 指定无模型可返回所有工作流模型的已完成实例数。 ID是模型节点的路径，例如：
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
 * 返回的值：已完成的工作流实例的数量。
 
@@ -198,20 +209,20 @@ ht-degree: 1%
 
 * 参数：
 
-   * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的工作流实例。 ID是模型节点的路径，例如：
+  * 模型： （可选）要应用操作的模型的ID。 不指定任何模型以将操作应用于所有工作流模型的工作流实例。 ID是模型节点的路径，例如：
 
-     `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * 自工作流完成以来的天数：工作流实例处于已完成状态的天数。
-   * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
+    `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
+  * 自工作流完成以来的天数：工作流实例处于已完成状态的天数。
+  * 试运行： （可选）指定值`true`以查看操作的结果，而不实际执行操作。 默认值`false`导致执行该操作。
 
 * 返回值：有关已清除的已完成工作流实例的表格数据，包括以下列：
 
-   * 发起者
-   * 实例ID
-   * 模型ID
-   * 负载
-   * 开始注释
-   * 工作流标题
+  * 发起者
+  * 实例ID
+  * 模型ID
+  * 负载
+  * 开始注释
+  * 工作流标题
 
 ## 存储库 {#repository}
 
@@ -252,7 +263,7 @@ ht-degree: 1%
   </tr>
   <tr>
    <td>identifier.stability</td>
-   <td>指示不可引用节点标识符的稳定性。可以使用以下值：
+   <td>指示不可引用节点标识符的稳定性。 可以使用以下值：
     <ul>
      <li>identifier.stability.infinition.duration：标识符不会更改。</li>
      <li>identifier.stability.method.duration：在方法调用之间可以更改标识符。</li>
@@ -532,7 +543,7 @@ ht-degree: 1%
 
 * 参数：
 
-   * name：表示新工作区名称的字符串值。
+  * name：表示新工作区名称的字符串值。
 
 * 返回值：无
 
@@ -540,7 +551,7 @@ ht-degree: 1%
 
 * 参数：
 
-   * 删除：一个布尔值，指示是否删除未使用的存储库项目。 值为true会导致删除未使用的节点和属性。 如果值为false，则会扫描所有节点，但不会删除任何节点。
+  * 删除：一个布尔值，指示是否删除未使用的存储库项目。 值为true会导致删除未使用的节点和属性。 如果值为false，则会扫描所有节点，但不会删除任何节点。
 
 * 返回值：无
 
@@ -553,13 +564,13 @@ ht-degree: 1%
 
 * 参数：
 
-   * `target`：（可选）一个`String`值，表示要将存储库数据存档到的ZIP文件或目录的名称。 要使用ZIP文件，请包含ZIP文件扩展名。 要使用目录，请不要包含文件扩展名。
+  * `target`：（可选）一个`String`值，表示要将存储库数据存档到的ZIP文件或目录的名称。 要使用ZIP文件，请包含ZIP文件扩展名。 要使用目录，请不要包含文件扩展名。
 
-     要执行增量备份，请指定以前用于备份的目录。
+    要执行增量备份，请指定以前用于备份的目录。
 
-     您可以指定绝对路径或相对路径。 相对路径相对于crx-quickstart目录的父级路径。
+    您可以指定绝对路径或相对路径。 相对路径相对于crx-quickstart目录的父级路径。
 
-     未指定值时，将使用默认值`backup-currentdate.zip`，其中`currentdate`的格式为`yyyyMMdd-HHmm`。
+    未指定值时，将使用默认值`backup-currentdate.zip`，其中`currentdate`的格式为`yyyyMMdd-HHmm`。
 
 * 返回值：无
 
@@ -592,7 +603,7 @@ ht-degree: 1%
 
 * 参数：
 
-   * `background`：一个布尔值，指示是否在后台运行操作，以便在执行期间可以使用Web控制台。 值为true会在后台运行该操作。
+  * `background`：一个布尔值，指示是否在后台运行操作，以便在执行期间可以使用Web控制台。 值为true会在后台运行该操作。
 
 * 返回值：无
 
@@ -605,9 +616,9 @@ ht-degree: 1%
 
 * 参数：
 
-   * `master`：一个字符串值，表示运行主存储库节点的计算机的IP地址或计算机名。
-   * `username`：用于对群集进行身份验证的名称。
-   * `password`：用于身份验证的密码。
+  * `master`：一个字符串值，表示运行主存储库节点的计算机的IP地址或计算机名。
+  * `username`：用于对群集进行身份验证的名称。
+  * `password`：用于身份验证的密码。
 
 * 返回值：无
 
@@ -623,28 +634,28 @@ ht-degree: 1%
 * 类型：`TimeSeries`
 * 名称： `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Enum类中的以下值之一：
 
-   * BUNDLE_CACHE_ACCESS_COUNTER
-   * BUNDLE_CACHE_MISS_AVERAGE
-   * BUNDLE_CACHE_MISS_COUNTER
-   * BUNDLE_CACHE_MISS_DURATION
-   * BUNDLE_CACHE_SIZE_COUNTER
-   * BUNDLE_COUNTER
-   * BUNDLE_READ_COUNTER
-   * BUNDLE_WRITE_AVERAGE
-   * BUNDLE_WRITE_COUNTER
-   * BUNDLE_WRITE_DURATION
-   * BUNDLE_WS_SIZE_COUNTER
-   * QUERY_AVERAGE
-   * 查询计数
-   * QUERY_DURATION
-   * SESSION_COUNT
-   * SESSION_LOGIN_COUNTER
-   * SESSION_READ_AVERAGE
-   * SESSION_READ_COUNTER
-   * SESSION_READ_DURATION
-   * SESSION_WRITE_AVERAGE
-   * SESSION_WRITE_COUNTER
-   * SESSION_WRITE_DURATION
+  * BUNDLE_CACHE_ACCESS_COUNTER
+  * BUNDLE_CACHE_MISS_AVERAGE
+  * BUNDLE_CACHE_MISS_COUNTER
+  * BUNDLE_CACHE_MISS_DURATION
+  * BUNDLE_CACHE_SIZE_COUNTER
+  * BUNDLE_COUNTER
+  * BUNDLE_READ_COUNTER
+  * BUNDLE_WRITE_AVERAGE
+  * BUNDLE_WRITE_COUNTER
+  * BUNDLE_WRITE_DURATION
+  * BUNDLE_WS_SIZE_COUNTER
+  * QUERY_AVERAGE
+  * 查询计数
+  * QUERY_DURATION
+  * SESSION_COUNT
+  * SESSION_LOGIN_COUNTER
+  * SESSION_READ_AVERAGE
+  * SESSION_READ_COUNTER
+  * SESSION_READ_DURATION
+  * SESSION_WRITE_AVERAGE
+  * SESSION_WRITE_COUNTER
+  * SESSION_WRITE_DURATION
 
 ### 属性 {#attributes-1}
 
@@ -816,7 +827,7 @@ ht-degree: 1%
 设置服务器启动进程的完成值。 QuickStart窗口中的进度条表示完成值。
 
 * 参数：
-   * p1：一个浮点值，以小数形式表示启动过程完成的程度。 该值应介于0和1之间。 例如，0.3表示已完成30%。
+  * p1：一个浮点值，以小数形式表示启动过程完成的程度。 该值应介于0和1之间。 例如，0.3表示已完成30%。
 * 返回值：无。
 
 ## 第三方服务 {#third-party-services}

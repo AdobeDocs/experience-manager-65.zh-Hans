@@ -1,5 +1,5 @@
 ---
-title: 与BrightEdge Content Optimizer集成
+title: 与 BrightEdge Content Optimizer 集成
 description: 了解如何将AEM与BrightEdge Content Optimizer集成。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,20 +9,29 @@ exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '490'
-ht-degree: 0%
-
+source-wordcount: '500'
+ht-degree: 4%
 ---
-
-# 与BrightEdge Content Optimizer集成{#integrating-with-brightedge-content-optimizer}
+# 与 BrightEdge Content Optimizer 集成{#integrating-with-brightedge-content-optimizer}
 
 创建BrightEdge云配置，以便AEM可以使用您的BrightEdge帐户的凭据进行连接。 如果使用多个帐户，可以创建多个配置。
 
 在创建配置时，需要指定标题。 标题应为描述性的，以便用户能够将配置与BrightEdge帐户关联。 当页面作者或管理员将网页与BrightEdge帐户关联时，此标题将显示在下拉列表中。
 
-1. 在边栏中，单击“工具” > “操作” > “云” > “Cloud Service” 。
+1. 在边栏中，单击工具>操作>云>云服务。
 1. 单击BrightEdge Content Optimizer部分中显示的链接。 是否已创建BrightEdge配置将决定链接文本：
 
    * 立即配置：当尚未创建任何配置时，将显示此链接。
@@ -38,7 +47,7 @@ ht-degree: 0%
 
 根据需要修改BrightEdge配置的用户名和密码。 修改将影响使用该配置的所有页面。
 
-1. 在边栏中，单击“工具” > “操作” > “云” > “Cloud Service” 。
+1. 在边栏中，单击工具>操作>云>云服务。
 1. 在BrightEdge Content Optimizer部分中，单击显示配置。
 
    ![chlimage_1-5](assets/chlimage_1-5a.png)
@@ -53,7 +62,7 @@ ht-degree: 0%
 1. 打开经典“网站”控制台。 ([http://localhost:4502/siteadmin#/content](http://localhost:4502/siteadmin#/content))
 1. 在网站树中，选择包含要与BrightEdge配置关联的页面的文件夹或页面。
 1. 在页面列表中，右键单击要配置的页面，然后单击“属性”。
-1. 在“Cloud Service”选项卡上，单击“添加服务”按钮，在“Cloud Service”对话框中，选择BrightEdge Content Optimizer ，然后单击“确定”。
+1. 在“云服务”选项卡上，单击添加服务按钮，在“云服务”对话框中，选择BrightEdge Content Optimizer ，然后单击确定。
 1. 在BrightEdge Content Optimizer列表中，选择要与页面关联的BrightEdge配置，然后单击“确定”。
 
    ![chlimage_1-6](assets/chlimage_1-6a.png)
@@ -63,10 +72,10 @@ ht-degree: 0%
 激活BrightEdge配置以将其复制到发布实例上，并使已发布的页面能够与BrightEdge服务交互。
 
 1. 在边栏上，单击站点，然后浏览并选择与BrightEdge配置关联的页面。
-1. 单击Publish图标，然后单击Publish。
+1. 单击“发布”图标，然后单击“发布”。
 
    ![chlimage_1-7](assets/chlimage_1-7a.png)
 
-1. 在显示的配置列表中，确保已选择BrightEdge配置，然后单击Publish。
+1. 在显示的配置列表中，确保已选择BrightEdge配置，然后单击“发布”。
 
    ![chlimage_1-8](assets/chlimage_1-8a.png)

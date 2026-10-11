@@ -10,16 +10,28 @@ exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 9b766fe6e253782be3bc47849b4857216274ae20
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '871'
 ht-degree: 0%
-
 ---
-
 # 默认为SSL/TLS{#ssl-tls-by-default}
 
-为了不断提高AEM的安全性，Adobe引入了一项默认称为SSL的功能。 其目的是鼓励使用HTTPS连接到AEM实例。
+为了持续提高AEM的安全性，Adobe默认引入了SSL功能。 其目的是鼓励使用HTTPS连接到AEM实例。
 
 ## 默认启用SSL/TLS {#enabling-ssl-tls-by-default}
 
@@ -55,7 +67,7 @@ ht-degree: 0%
 
 默认情况下，有三种方法可自动化SSL/TLS。
 
-### 通过HTTPPOST {#via-http-post}
+### 通过HTTP POST {#via-http-post}
 
 第一种方法是发布到配置向导正在使用的SSLSetup服务器：
 
@@ -92,7 +104,7 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-此servlet与任何slingPOSTservlet一样，将使用“200确定”或错误HTTP状态代码进行响应。 您可以在响应的HTML正文中找到有关状态的详细信息。
+此servlet与任何sling POST servlet一样，将使用“200 OK”或错误HTTP状态代码进行响应。 您可以在响应的HTML正文中找到有关状态的详细信息。
 
 以下是成功响应和错误的示例。
 
@@ -195,7 +207,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 >[!NOTE]
 >
->请参阅[将cURL与AEM](https://helpx.adobe.com/cn/experience-manager/6-4/sites/administering/using/curl.html)结合使用，获取AEM中有用cURL命令的集中列表。
+>请参阅[将cURL与AEM结合使用](https://helpx.adobe.com/cn/experience-manager/6-4/sites/administering/using/curl.html)，获取AEM中有用cURL命令的集中列表。
 
 您还可以使用cURL工具自动配置SSL/TLS。 为此，您可以将配置参数发布到此URL：
 
@@ -242,7 +254,7 @@ curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm
 ### 启用TLS 1.3连接 {#enabling-tls-connection}
 
 1. 转到Web控制台
-1. 然后，导航到&#x200B;**OSGi** - **配置** - **AdobeGranite SSL连接器工厂**
+1. 然后，导航到&#x200B;**OSGi** - **配置** - **Adobe Granite SSL连接器工厂**
 1. 转到&#x200B;**包含的密码套件**&#x200B;字段并添加以下条目。 在添加每个字段后，您可以通过按字段左侧的“**+**”按钮确认每个添加：
 
    * `TLS_AES_256_GCM_SHA384`

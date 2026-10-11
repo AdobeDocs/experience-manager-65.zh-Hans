@@ -1,5 +1,5 @@
 ---
-title: 将资源导入和导出到AEM Forms
+title: 在 AEM Forms 中导入和导出资产
 description: 您可以从中导入自适应表单和模板，也可以从中将其导出到AEM实例。 这有助于迁移表单或跨系统移动表单。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,30 @@ role: Admin,User
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2508'
-ht-degree: 0%
-
+source-wordcount: '2540'
+ht-degree: 1%
 ---
-
-# 将资源导入和导出到AEM Forms{#importing-and-exporting-assets-to-aem-forms}
+# 在 AEM Forms 中导入和导出资产{#importing-and-exporting-assets-to-aem-forms}
 
 您可以在不同AEM Forms实例之间移动表单和相关资源、主题、数据字典、文档片段和字母。 将系统迁移或将表单从暂存服务器移动到生产服务器时，需要执行此类移动。 对于支持通过AEM Forms UI上传和导入的资源，建议使用Forms UI进行导出或导入。 不建议使用AEM包管理器导出或导入此类资源。
 
@@ -27,26 +43,26 @@ ht-degree: 0%
 
 ## 下载或上传Forms &amp; Documents资源 {#download-or-upload-forms-amp-documents-assets}
 
-通过AEM Forms用户界面，可将资源下载为AEM CRXAEM包或二进制文件，从而从实例导出资源。 然后，您可以将下载的AEM CRX包或二进制文件导入到另一个AEM实例中。
+通过AEM Forms用户界面，可将资源下载为AEM CRX包或二进制文件，从而从AEM实例中导出资源。 然后，您可以将下载的AEM CRX包或二进制文件导入到另一个AEM实例中。
 
 除自适应表单模板和自适应表单内容策略之外，所有资源都支持通过AEM Forms用户界面导出和导入。 因此，在从AEM Forms UI导出自适应表单时，不会像其他相关的资源一样自动导出相关的自适应表单模板和内容策略。
 
-对于这些资源类型，必须使用AEM包管理器在源AEM服务器上创建CRX包，并在目标服务器上安装该包。 有关创建和安装包的信息，请参阅[使用包](/help/sites-administering/package-manager.md)。
+对于这些资源类型，必须使用AEM包管理器在源CRX服务器上创建AEM包，并在目标服务器上安装该包。 有关创建和安装包的信息，请参阅[使用包](/help/sites-administering/package-manager.md)。
 
 ### 下载Forms和文档资源 {#download-forms-amp-documents-assets}
 
 要下载Forms和文档资源，请执行以下操作：
 
 1. 登录到AEM Forms实例。
-1. 选择Experience Manager![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/compass.png)图标> Forms > Forms &amp; Documents。
+1. 选择Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/compass.png)图标> Forms > Forms &amp; Documents。
 1. 选择表单资源并选择&#x200B;**下载**&#x200B;图标。
 1. 在下载资产中，选择以下选项之一，然后选择&#x200B;**下载**。
 
    * **下载为CRX包：**&#x200B;使用相应选项将所有选定的资源和相关依赖项从一个AEM Forms实例下载并移动到另一个实例。 它将所有资源和文件夹下载为crx包。 任何表单资源，包括在AEM中创作的表单（自适应表单、交互式通信和自适应表单片段）、表单集、表单模板、PDF文档和资源（XSD、XFS、图像），都可以从AEM Forms UI中作为包下载。
-将资源下载为包的优势在于，它还可以下载选定要下载的资源已使用的资源。 例如，如果您有一个自适应表单，该表单使用表单模板、XSD和图像。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也会下载。
+     将资源下载为包的优势在于，它还可以下载选定要下载的资源已使用的资源。 例如，如果您有一个自适应表单，该表单使用表单模板、XSD和图像。 当您选择此自适应表单并将其下载为包时，下载的包中还包含表单模板、XSD和图像。 与资源关联的所有元数据属性（包括自定义属性）也会下载。
 
-   * **将资源下载为二进制文件：**&#x200B;使用选项仅下载表单模板(XDP)、PDF forms(PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它将具有二进制文件的表单资源(如XSD、XDP、图像、PDF和XDP)下载为.zip文件。
-无法使用&#x200B;**将资产下载为二进制文件**&#x200B;选项下载自适应表单、交互式通信、自适应表单片段、主题和表单集。 要下载这些资源，您应该使用&#x200B;**下载为CRX包**&#x200B;选项。
+   * **将资源下载为二进制文件：**&#x200B;使用选项仅下载表单模板(XDP)、PDF forms (PDF)、文档(PDF)和资源（图像、架构、样式表）。 您可以使用外部应用程序编辑这些资源。 它将具有二进制文件的表单资产（如XSD、XDP、图像、PDF和XDP）下载为.zip文件。
+     无法使用&#x200B;**将资产下载为二进制文件**&#x200B;选项下载自适应表单、交互式通信、自适应表单片段、主题和表单集。 要下载这些资源，您应该使用&#x200B;**下载为CRX包**&#x200B;选项。
 
    选定的资产将下载为存档（.zip文件）。
 
@@ -61,7 +77,7 @@ ht-degree: 0%
 <!--[!VIDEO](https://vimeo.com/)-->
 
 1. 登录到AEM Forms实例。
-1. 选择Experience Manager![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/compass.png)图标> Forms> Forms &amp; Documents。
+1. 选择Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/compass.png)图标> Forms> Forms &amp; Documents。
 1. 选择&#x200B;**创建** >**文件上传**。 此时会显示上传表单或资源包对话框。
 1. 在对话框中，浏览并选择要导入的软件包或存档。 您还可以选择PDF文档、XSD、图像、样式表和XDP表单。 选择&#x200B;**打开**。 您选择的文件夹或文件名不得包含任何特殊字符。
 
@@ -84,7 +100,7 @@ ht-degree: 0%
 要下载主题，请执行以下操作：
 
 1. 登录到AEM Forms实例。
-1. 选择Experience Manager![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/compass.png)图标> Forms>主题。
+1. 选择Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/compass.png)图标> Forms>主题。
 1. 选择主题，然后选择&#x200B;**下载**。 主题将下载为存档（.zip文件）。
 
 ### 上传主题 {#uploading-a-theme}
@@ -99,7 +115,7 @@ ht-degree: 0%
 上传的主题可在主题页面中找到。
 
 1. 登录到AEM Forms实例。
-1. 选择Experience Manager![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/compass.png)图标> Forms>主题。
+1. 选择Experience Manager ![adobeexperiencemanager](assets/adobeexperiencemanager.png)图标>导航![compass](assets/compass.png)图标> Forms>主题。
 1. 单击&#x200B;**创建** > **文件上传**。 在“文件上传”提示下，浏览并选择计算机上的主题包，然后单击&#x200B;**上传**。 主题已上传。
 
 ## 在通信管理中导入和导出资源 {#import-and-export-assets-in-correspondence-management}
@@ -123,7 +139,7 @@ ht-degree: 0%
 
 ### 将所有相应的管理资产导出为资源包 {#export-all-the-correspondence-management-assets-as-a-package}
 
-使用此选项可以从AEM Forms实例中作为包下载所有相应的管理资源和相关依赖项。
+使用此选项可从AEM表单实例中作为包下载所有相应的管理资源和相关依赖项。
 
 例如，如果通信管理具有一个使用图像和文本的字母，则下载的包还包含与字母相关的图像和文本。 与资源关联的所有元数据属性（包括自定义属性）也会下载。 下载包(.cmp)后，您可以[将该包导入其他AEM Forms实例](../../forms/using/import-export-forms-templates.md#p-upload-forms-documents-assets-p)。
 
@@ -146,7 +162,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >“导出所有Assets”进程一经启动便无法取消。 此外，在导出所有操作的过程中，请勿创建、删除、修改或发布任何资源，也不要启动Publish全部Assets流程。a
+   >“导出所有Assets”进程一经启动便无法取消。 此外，在导出所有操作的过程中，请勿创建、删除、修改或发布任何资源，也不要启动“发布所有Assets”流程。a
 
 1. 选择&#x200B;**下载导出的包**&#x200B;链接以下载包文件。
 
@@ -158,7 +174,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->在导入旧的通信管理资产以进行迁移时，请使用管理员帐户登录。 有关迁移旧通信管理资产的更多信息，请参阅[将通信管理资产迁移到AEM 6.1表单](/help/forms/using/migration-utility.md)。
+>在导入旧的通信管理资产以进行迁移时，请使用管理员帐户登录。 有关迁移旧通信管理资源的详细信息，请参阅[将通信管理资源迁移到AEM 6.1表单](/help/forms/using/migration-utility.md)。
 
 1. 在数据字典、信件或文档片段页面上，选择&#x200B;**创建>文件上载**，然后选择.cmp文件。
 1. 通信管理显示“导入Assets”对话框，其中包含已导入的资产列表。 选择&#x200B;**导入**。
@@ -251,7 +267,7 @@ AEM Forms用户界面使用文件夹来排列资源。 这些文件夹用于排�
 
 * 搜索目录
 * 标记
-* 搜索条件；例如，修改日期、Publish状态、LiveCopy状态。
+* 搜索条件；例如，修改日期、发布状态、LiveCopy状态。
 
 侧面板还允许您使用所选名称保存搜索设置。
 

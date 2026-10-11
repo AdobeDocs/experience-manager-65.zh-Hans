@@ -1,5 +1,5 @@
 ---
-title: 选择您的UI
+title: 选择您的 UI
 description: 为了方便创作用户，启用了触屏的UI允许在必要时切换到经典UI。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 57d45b06-e76e-420c-8cd0-389bd9f811af
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '195'
-ht-degree: 0%
-
+source-wordcount: '199'
+ht-degree: 3%
 ---
-
-# 选择您的UI{#selecting-your-ui}
+# 选择您的 UI{#selecting-your-ui}
 
 由于触屏优化UI取代了经典UI，因此AEM实例的用户或管理员必须做出积极决定，才能继续使用经典UI。 由于经典UI不再进行维护，因此创作用户不可能简单地从经典UI切换到触屏UI中的等效项。
 

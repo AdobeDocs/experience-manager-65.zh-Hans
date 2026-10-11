@@ -1,5 +1,5 @@
 ---
-title: 动态选择用户或组以执行以AEM Forms为中心的工作流步骤
+title: 为以 AEM Forms 为中心的工作流步骤动态选择用户或用户组
 description: 了解如何在运行时为AEM Forms工作流选择用户或组。
 content-type: troubleshooting
 topic-tags: publish
@@ -7,26 +7,42 @@ exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '873'
-ht-degree: 1%
-
+source-wordcount: '949'
+ht-degree: 5%
 ---
-
-# 动态选择用户或组以执行以AEM Forms为中心的工作流步骤 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
+# 为以 AEM Forms 为中心的工作流步骤动态选择用户或用户组 {#dynamically-select-a-user-or-group-for-aem-forms-centric-workflow-steps}
 
 了解如何在运行时为AEM Forms工作流选择用户或组。
 
 在大型组织中，需要动态地为流程选择用户。 例如，根据代理与客户的接近程度选择现场代理为客户提供服务。 在这种情况下，将动态选择代理。
 
-在OSGi[&#128279;](/help/forms/using/aem-forms-workflow.md)上分配以Forms为中心的工作流的任务和Adobe Sign步骤，提供用于动态选择用户的选项。 您可以使用ECMAScript或OSGi捆绑包为“分配任务”步骤动态选择被分配人，或为“签名文档”步骤选择签名者。
+在OSGi[&#128279;](/help/forms/using/aem-forms-workflow.md)上分配任务和以Forms为中心的工作流的Adobe Sign步骤，提供了用于动态选择用户的选项。 您可以使用ECMAScript或OSGi捆绑包为“分配任务”步骤动态选择被分配人，或为“签名文档”步骤选择签名者。
 
 ## 使用ECMAScript动态选择用户或组 {#use-ecmascript-to-dynamically-select-a-user-or-group}
 
 ECMAScript是一种脚本语言。 它用于客户端脚本和服务器应用程序。 执行以下步骤，使用ECMAScript动态选择用户或组：
 
-1. 打开CRXDE Lite。 URL是`https://'[server]:[port]'/crx/de/index.jsp`
+1. 打开 CRXDE Lite。 URL是`https://'[server]:[port]'/crx/de/index.jsp`
 1. 在以下路径创建扩展名为.ecma的文件。 如果路径（节点结构）不存在，请创建路径：
 
    * （分配任务步骤的路径） `/apps/fd/dashboard/scripts/participantChooser`
@@ -38,9 +54,9 @@ ECMAScript是一种脚本语言。 它用于客户端脚本和服务器应用程
 
 1. 添加脚本的显示名称。 此名称显示在工作流步骤中。 要指定名称，请执行以下操作：
 
-   1. 展开脚本节点，右键单击&#x200B;**[!UICONTROL jcr：content]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL Mixins]**。
+   1. 展开脚本节点，右键单击&#x200B;**[!UICONTROL jcr:content]**&#x200B;节点，然后单击&#x200B;**[!UICONTROL Mixins]**。
    1. 在“编辑Mixin”对话框中添加属性`mix:title`，然后单击&#x200B;**确定**。
-   1. 将以下属性添加到脚本的jcr：content节点：
+   1. 将以下属性添加到脚本的jcr:content节点：
 
       | 名称 | 类型 | 价值 |
       |--- |--- |--- |
@@ -52,7 +68,7 @@ ECMAScript是一种脚本语言。 它用于客户端脚本和服务器应用程
 
 ### 用于动态选择用户或组的示例ECMAScript {#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group}
 
-以下示例ECMAScript为“分配任务”步骤动态选择被分配人。 在此脚本中，根据有效负载的路径选择用户。 使用此脚本之前，请确保脚本中提到的所有用户都存在于AEM中。 如果脚本中提到的用户在AEM中不存在，则相关进程可能会失败。
+以下示例ECMAScript为“分配任务”步骤动态选择被分配人。 在此脚本中，根据有效负载的路径选择用户。 使用此脚本之前，请确保脚本中提到的所有用户都存在于AEM中。 如果脚本中提到的用户在AEM中不存在，则相关流程可能会失败。
 
 ```javascript
 function getParticipant() {
@@ -72,7 +88,7 @@ var path = workflowData.getPayload().toString();
 }
 ```
 
-以下示例ECMAScript为Adobe Sign步骤动态选择被分配人。 在使用以下脚本之前，请确保脚本中提到的用户信息（电子邮件地址和电话号码）正确无误。 如果脚本中提到的用户信息不正确，则相关进程可能会失败。
+以下示例ECMAScript为Adobe Sign步骤动态选择代理人。 在使用以下脚本之前，请确保脚本中提到的用户信息（电子邮件地址和电话号码）正确无误。 如果脚本中提到的用户信息不正确，则相关进程可能会失败。
 
 >[!NOTE]
 >
@@ -115,7 +131,7 @@ function getAdobeSignRecipients() {
 
 ## 使用Java界面动态选择用户或组 {#use-java-interface-to-dynamically-choose-a-user-or-group}
 
-您可以使用[RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面动态选择Adobe Sign的用户或组并分配任务步骤。 您可以创建一个使用了[RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java接口的OSGi捆绑包，并将其部署到AEM Forms服务器。 这使该选项可以在AEM Workflow的分配任务和Adobe Sign组件中进行选择。
+您可以使用[RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java界面动态选择用户或组以执行Adobe Sign和分配任务步骤。 您可以创建一个使用了[RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java接口的OSGi捆绑包，并将其部署到AEM Forms服务器。 这使该选项可以在AEM工作流的分配任务和Adobe Sign组件中进行选择。
 
 您需要[AEM Forms客户端SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans) jar和[granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)文件来编译下面列出的代码示例。 将这些jar文件作为外部依赖项添加到OSGi捆绑包项目中。 您可以使用任何Java IDE创建OSGi捆绑包。 以下过程提供了使用Eclipse创建OSGi捆绑包的步骤：
 
@@ -231,11 +247,11 @@ function getAdobeSignRecipients() {
 
 1. 将捆绑包上传到AEM Forms服务器。 您可以使用AEM包管理器将包导入到AEM Forms服务器。
 
-导入捆绑包后，在Adobe Sign和分配任务步骤中，提供了用于选择用于动态选择用户或组的Java界面的选项。
+导入捆绑包后，中提供了用于选择用于动态选择用户或组的Java界面的选项，以执行Adobe Sign和分配任务步骤。
 
 ### 用于动态选择用户或组的示例Java代码 {#sample-java-code-to-dynamically-choose-a-user-or-a-group}
 
-以下代码示例动态选择Adobe Sign步骤的被分配人。 您可以在OSGi捆绑包中使用代码。 在使用下列代码之前，请确保代码中提到的用户信息（电子邮件地址和电话号码）正确无误。 如果代码中提到的用户信息不正确，则相关流程可能会失败。
+以下代码示例为Adobe Sign步骤动态选择被分配人。 您可以在OSGi捆绑包中使用代码。 在使用下列代码之前，请确保代码中提到的用户信息（电子邮件地址和电话号码）正确无误。 如果代码中提到的用户信息不正确，则相关流程可能会失败。
 
 ```java
 /*************************************************************************

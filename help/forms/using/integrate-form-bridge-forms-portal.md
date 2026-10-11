@@ -1,6 +1,6 @@
 ---
-title: 将Form Bridge与HTML5表单的自定义门户集成
-description: 您可以使用FormBridge API从“HTML”页获取或设置表单字段的值并提交表单。
+title: 将 Form Bridge 集成至 HTML5 Forms 的自定义门户中
+description: 您可以使用FormBridge API从HTML页面获取或设置表单字段的值并提交表单。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
@@ -9,22 +9,37 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '393'
-ht-degree: 0%
-
+source-wordcount: '394'
+ht-degree: 4%
 ---
-
-# 将Form Bridge与HTML5表单的自定义门户集成{#integrating-form-bridge-with-custom-portal-for-html-forms}
+# 将 Form Bridge 集成至 HTML5 Forms 的自定义门户中{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
 FormBridge是一个HTML5 Forms Bridge API，它允许您与表单交互。 有关FormBridge API引用，请参阅[FormBridge API引用](/help/forms/using/form-bridge-apis.md)。
 
-您可以使用FormBridge API从“HTML”页获取或设置表单字段的值并提交表单。 例如，您可以使用API构建类似于向导的体验。
+您可以使用FormBridge API从HTML页面获取或设置表单字段的值并提交表单。 例如，您可以使用API构建类似于向导的体验。
 
 现有的HTML应用程序可以使用FormBridge API与表单进行交互并将其嵌入到HTML页面中。 您可以使用以下步骤通过Form Bridge API设置字段的值。
 
-## 将HTML5表单集成到网页 {#integrating-html-forms-to-a-web-page}
+## 将HTML5 Forms集成到网页 {#integrating-html-forms-to-a-web-page}
 
 1. **选择配置文件或创建配置文件**
 
@@ -77,17 +92,17 @@ FormBridge是一个HTML5 Forms Bridge API，它允许您与表单交互。 有�
    >**第9**&#x200B;行，包含用于CSS样式和JavaScript文件的附加JSP引用以设计页面。
    >
    >
-   >**第18**&#x200B;行上的&lt;div id=&quot;rightdiv&quot;>标记包含XFA表单的HTML片段。
+   >**第18**&#x200B;行上的&lt;div id=&quot;rightdiv&quot;>标记包含XFA表单的HTML代码片段。
    >
    >
-   >页面样式为两个容器：**left**&#x200B;和&#x200B;**right**。 正确的容器具有表单。 左侧容器包含两个输入字段和一个外部HTML页的一部分。
+   >页面样式为两个容器：**left**&#x200B;和&#x200B;**right**。 正确的容器具有表单。 左侧容器包含两个输入字段和一个外部HTML页面的一部分。
    >
    >
    >以下屏幕抓图显示了表单在浏览器中的显示方式。
 
    ![门户](assets/portal.jpg)
 
-   左侧是&#x200B;**HTML页**&#x200B;的一部分。 包含字段的右侧是&#x200B;**xfa表单**。
+   左侧是&#x200B;**HTML页面**&#x200B;的一部分。 包含字段的右侧是&#x200B;**xfa表单**。
 
 1. **从页面访问表单字段**
 

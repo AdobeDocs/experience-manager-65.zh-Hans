@@ -1,18 +1,29 @@
 ---
 title: '[!DNL Assets]大小调整指南'
-description: 确定有效量度以估计部署 [!DNL Adobe Experience Manager Assets]所需的基础结构和资源的最佳实践。
+description: 确定有效量度以估计部署[!DNL Adobe Experience Manager Assets]所需的基础结构和资源的最佳实践。
 contentOwner: AG
 role: Developer, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1645'
 ht-degree: 0%
-
 ---
-
 # [!DNL Assets]大小调整指南 {#assets-sizing-guide}
 
 在调整[!DNL Adobe Experience Manager Assets]实施的环境大小时，确保有足够的可用资源（磁盘、CPU、内存、IO和网络吞吐量）非常重要。 调整其中许多资源的大小需要了解有多少资源正在加载到系统中。 如果没有更好的量度，您可以将现有库的大小除以库的存留期，以找出创建资产的速率。

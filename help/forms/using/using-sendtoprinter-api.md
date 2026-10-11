@@ -1,5 +1,5 @@
 ---
-title: 使用sendToPrinter API
+title: 使用 sendToPrinter API
 description: 使用sendToPrinter服务将文档发送到打印机。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,32 @@ feature: Document Services,APIs & Integrations
 exl-id: 585d4053-1056-4d2b-a9df-9516775afe50
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '364'
-ht-degree: 14%
-
+source-wordcount: '362'
+ht-degree: 16%
 ---
-
-# 使用sendToPrinter API {#using-the-sendtoprinter-api}
+# 使用 sendToPrinter API {#using-the-sendtoprinter-api}
 
 ## 概述 {#overview}
 
@@ -27,11 +45,11 @@ ht-degree: 14%
 
   在将文档发送到打印机时，请指定以下打印协议之一：
 
-   * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
-   * **DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
-   * **LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
-   * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
-   * **CIF**： Output服务支持Common Internet File System (CIF)打印协议。
+  * **CUPS** `: A printing protocol named common UNIX printing system. This protocol is used for UNIX operating systems and enables a computer to function as a print server. The print server accepts print requests from client applications, processes them, and sends them to configured printers. On the IBM AIX® operating system, usage of CUPS is not recommended.`
+  * **DirectIP** `: A standard protocol for remote printing and managing print jobs. This protocol can be used locally or remotely. Print queues are not required.`
+  * **LPD** `: A printing protocol named Line Printer Daemon protocol or Line Printer Remote (LPR) protocol. This protocol provides network print server functionality for UNIX-based systems.`
+  * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
+  * **CIFS**：输出服务支持通用Internet文件系统(CIFS)打印协议。
 
 ## 使用SendToPrinter服务 {#using-sendtoprinter-service}
 
@@ -57,15 +75,15 @@ ht-degree: 14%
 | DirectIP | 无效 | 任意 | 出现异常，说明找不到打印机。 |
 | DirectIP | 有效 | 任意 | 打印作业成功。 |
 | CIFS | 有效 | 空 | 打印作业成功。 |
-| CIFS | 无效 | 任意 | 使用CIF打印时出现未知错误。 |
+| CIFS | 无效 | 任意 | 使用CIFS打印时出现未知错误。 |
 | CIFS | 空 | 任意 | 出现异常，指示所需的参数sPrintServerUri不能为空。 |
 
 ## 身份验证支持 {#authentication-support}
 
-只有CIF打印支持身份验证。 要进行身份验证，请在PrinterSpec中提供用户名/密码/域。 可以通过执行以下步骤使用AEM Granite CyprtoSupport服务加密口令：
+只有CIFS打印支持身份验证。 要进行身份验证，请在PrinterSpec中提供用户名/密码/域。 可以通过执行以下步骤来使用AEM Granite CyprtoSupport服务加密密码：
 
 1. 转到https://&lt;server>：&lt;port>/system/console。
 
 1. 转到&#x200B;**[!UICONTROL Main]** > **[!UICONTROL 加密支持]**。
 
-1. 输入一些纯文本，然后单击&#x200B;**[!UICONTROL Protect]**。
+1. 输入一些纯文本，然后单击&#x200B;**[!UICONTROL 保护]**。

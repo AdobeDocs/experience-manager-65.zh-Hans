@@ -1,6 +1,6 @@
 ---
-title: 在Designer中更改零页内容
-description: 在非Adobe PDF查看器中查看XFAPDF时，您知道如何更改在该页面的第0页上显示的消息吗？
+title: 在 Designer 中更改 Page Zero 内容
+description: 在非Adobe PDF查看器中查看XFA PDF时，您知道如何更改在该页面的第0页上显示的消息吗？
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 docset: aem65
@@ -8,16 +8,34 @@ feature: Adaptive Forms,Forms Designer,Designer
 exl-id: 466b7e85-a2f8-4e1e-8afc-1566b0ccb84c
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: 794033c1-20ea-55a4-a8a6-b1107e12deb0
+    internal-label: Designer
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '230'
-ht-degree: 0%
-
+source-wordcount: '232'
+ht-degree: 6%
 ---
+# 在 Designer 中更改 Page Zero 内容 {#changing-page-zero-content-in-designer}
 
-# 在Designer中更改零页内容 {#changing-page-zero-content-in-designer}
-
-如果非Adobe PDF查看器(如[!DNL Chrome]或[!DNL Firefox]中的默认PDF查看器)无法读取PDF/XFA表单的内容，则默认显示“零页”内容。 默认的Page Zero消息如下所示。
+如果非Adobe PDF查看器（如[!DNL Chrome]或[!DNL Firefox]中的默认PDF查看器）无法读取PDF/XFA表单的内容，则默认显示零页内容。 默认的Page Zero消息如下所示。
 
 ![defaultpage0message](assets/defaultpage0message.png)
 

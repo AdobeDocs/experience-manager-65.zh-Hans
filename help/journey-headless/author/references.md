@@ -1,17 +1,37 @@
 ---
 title: 了解如何在内容片段中使用引用
-description: 了解如何在内容片段中对内容、其他片段和其他资产（媒体）使用引用。介绍 Headless CMS 创作的嵌套片段的必要性和机制。
+description: 了解如何在内容片段中对内容、其他片段和其他资产（媒体）使用引用。 介绍 Headless CMS 创作的嵌套片段的必要性和机制。
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 95%
-
+source-wordcount: '724'
+ht-degree: 92%
 ---
-
 # 了解如何在内容片段中使用引用 {#author-headless-references}
 
 ## 迄今为止的故事 {#story-so-far}
@@ -25,16 +45,16 @@ ht-degree: 95%
 ## 目标 {#objective}
 
 * **受众**：高级
-* **目标**：介绍如何在 Headless CMS 创作中使用引用。提供了哪些类型的引用，它们的作用是什么：
+* **目标**：介绍如何在 Headless CMS 创作中使用引用。 提供了哪些类型的引用，它们的作用是什么：
 
-   * 内容引用
-   * 资产/媒体引用
-   * 片段引用
-   * 文本块中的临时引用
+  * 内容引用
+  * 资产/媒体引用
+  * 片段引用
+  * 文本块中的临时引用
 
 ## 什么是引用？ {#what-are-references}
 
-引用只是一种用于连接资源的机制，无论它是其他内容、资产（如图像）还是其他片段。虽然非常相似，但仍有些许不同。
+引用只是一种用于连接资源的机制，无论它是其他内容、资产（如图像）还是其他片段。 虽然非常相似，但仍有些许不同。
 
 一些引用具有专用数据类型（例如，内容引用和片段引用），而其他引用只是作为引用内容添加到文本块中（资源引用和临时引用）。
 
@@ -46,7 +66,7 @@ ht-degree: 95%
 
 ## 资产/媒体引用 {#assets-media-references}
 
-可以使用&#x200B;**插入资产**&#x200B;选项在文本块中引用资产（例如，图像或媒体）。这将打开一个浏览器，其中您可选择资产。
+可以使用&#x200B;**插入资产**&#x200B;选项在文本块中引用资产（例如，图像或媒体）。 这将打开一个浏览器，其中您可选择资产。
 
 ![内容片段 – 插入资产](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -61,16 +81,16 @@ ht-degree: 95%
 * 人员
 * 奖励
 
-看似简单明了，但公司有 CEO 和员工....他们每个人都被定义为一个人员。
+这看起来很简单，但一家公司既有CEO又有EMPLOYEES....而且他们都是人，每个人被定义为一个人。
 
 一个人员可以获得一个（或两个）奖励。
 
 * 我的公司 – 公司
-   * CEO – 人员
-   * 员工 – 人员
-      * 个人奖励 – 奖励
+  * CEO – 人员
+  * 员工 – 人员
+    * 个人奖励 – 奖励
 
-这只适用于初学者。根据复杂性，奖励可以是特定于公司的，或者公司可以在特定城市设立主要办事处。
+这只适用于初学者。 根据复杂性，奖励可以是特定于公司的，或者公司可以在特定城市设立主要办事处。
 
 可以使用片段引用来表示这些相互关系，因为您（作者）和 Headless 应用程序都已理解它们。
 
@@ -78,7 +98,7 @@ ht-degree: 95%
 
 ### 如何创作嵌套片段 {#author-nested-fragment}
 
-创作片段引用非常简单（尽管该字段通常将不赋予&#x200B;**片段引用**&#x200B;标签）。您可以直接键入引用，或者（更有可能）选择文件夹图标以打开浏览器，以便导航并选择所需的片段。
+创作片段引用非常简单（尽管该字段通常将不赋予&#x200B;**片段引用**&#x200B;标签）。 您可以直接键入引用，或者（更有可能）选择文件夹图标以打开浏览器，以便导航并选择所需的片段。
 
 ![内容片段 – 引用](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
@@ -89,7 +109,7 @@ ht-degree: 95%
 
 ### 如何导航嵌套片段 {#navigate-nested-fragment}
 
-利用内容片段编辑器的&#x200B;**结构树**&#x200B;选项卡，您可以浏览您的片段所引用的片段，然后浏览它们可能包含的任何引用。选择引用会打开该片段进行编辑。
+利用内容片段编辑器的&#x200B;**结构树**&#x200B;选项卡，您可以浏览您的片段所引用的片段，然后浏览它们可能包含的任何引用。 选择引用会打开该片段进行编辑。
 
 >[!NOTE]
 >
@@ -105,28 +125,28 @@ ht-degree: 95%
 
 ## 后续内容 {#whats-next}
 
-现在您已了解内容片段中的引用和结构，下一步是[了解元数据和标记](metadata-tagging.md)。这将介绍和讨论如何为内容片段定义元数据和标记。
+现在您已了解内容片段中的引用和结构，下一步是[了解元数据和标记](metadata-tagging.md)。 这将介绍和讨论如何为内容片段定义元数据和标记。
 
 ## 其他资源 {#additional-resources}
 
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
 
-   * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
+  * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [将配置应用到 Assets 文件夹](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [将配置应用到 Assets 文件夹](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [创建内容片段](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [创建内容片段](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
-   * [变体 - 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
+  * [变体 - 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+  * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [内容片段模型 – 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [内容片段模型 – 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [内容片段模型 – 属性](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [内容片段模型 – 属性](/help/assets/content-fragments/content-fragments-models.md#properties)
 
 * 快速入门指南
-   * [创建Assets文件夹Headless快速入门指南](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+  * [创建Assets文件夹Headless快速入门指南](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [AEM Headless 内容架构师历程](/help/journey-headless/architect/overview.md)
 

@@ -8,13 +8,29 @@ exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3622'
+source-wordcount: '3734'
 ht-degree: 2%
-
 ---
-
 # OSGi 上以表单为中心的工作流{#forms-centric-workflow-on-osgi}
 
 ![主页图像](do-not-localize/header.png)
@@ -278,8 +294,8 @@ AEM Forms应用程序与AEM Forms服务器同步，并允许您更改帐户中�
 
 从自适应表单提交到[!DNL Experience Manager]工作流的任何数据都可以包含您企业最终用户的PII（个人身份信息）或SPD（敏感个人数据）。 但是，不必将您的数据存储在[!DNL Adobe Experience Manager] [JCR存储库](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=zh-Hans)中。 通过将信息参数化到[工作流变量](/help/forms/using/variable-in-aem-workflows.md)中，您可以将最终用户数据存储到托管数据存储（例如，Azure blob storage）中。
 
-在[!DNL Adobe Experience Manager] Forms工作流中，通过工作流变量处理并通过一系列工作流步骤传递数据。这些变量是存储在工作流实例元数据节点中的命名属性或键值对；例如，`/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`。这些工作流变量可以外部化到JCR以外的单独存储库中，然后由[!DNL Adobe Experience Manager]工作流处理。[!DNL Adobe Experience Manager]提供API `[!UICONTROL UserMetaDataPersistenceProvider]`以将工作流变量存储在托管外部存储中。若要了解有关在[!DNL Adobe Experience Manager]中使用客户拥有的数据存储的工作流变量的更多信息，请参阅[管理外部数据存储的工作流变量](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
-[!DNL Adobe]提供了以下[示例](https://github.com/adobe/workflow-variable-externalizer)，以使用API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md)将变量从工作流元数据映射存储到Azure blob存储。在类似的行中，您可以使用该示例作为指导，使用[UserMetaDataPersistenceProvider] API将[!DNL Adobe Experience Manager]外部的任何其他数据存储中的工作流变量外部化并管理它们。
+在[!DNL Adobe Experience Manager] Forms工作流中，通过工作流变量处理并通过一系列工作流步骤传递数据。 这些变量是存储在工作流实例元数据节点中的命名属性或键值对；例如，`/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`。 这些工作流变量可以外部化到JCR以外的单独存储库中，然后由[!DNL Adobe Experience Manager]工作流处理。 [!DNL Adobe Experience Manager]提供API `[!UICONTROL UserMetaDataPersistenceProvider]`以将工作流变量存储在托管外部存储中。 若要了解有关在[!DNL Adobe Experience Manager]中使用客户拥有的数据存储的工作流变量的更多信息，请参阅[管理外部数据存储的工作流变量](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
+[!DNL Adobe]提供了以下[示例](https://github.com/adobe/workflow-variable-externalizer)，以使用API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md)将变量从工作流元数据映射存储到Azure Blob存储。 在类似的行中，您可以使用该示例作为指导，使用[UserMetaDataPersistenceProvider] API将[!DNL Adobe Experience Manager]外部的任何其他数据存储中的工作流变量外部化并管理这些变量。
 
 >[!NOTE]
 >

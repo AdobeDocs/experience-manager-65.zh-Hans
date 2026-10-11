@@ -9,13 +9,29 @@ feature: Document Services
 exl-id: 84c8125d-0f16-432a-9567-63b868667537
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 2eac9acd8b92582424557222b673211b29a15185
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2167'
 ht-degree: 6%
-
 ---
-
 # 使用组装服务{#using-assembler-service}
 
 Assembler服务允许您组合、重新排列和扩充PDF和XDP文档，并获取有关PDF文档的信息。 提交给Assembler服务的每个作业包括Document Description XML (DDX)文档、源文档和外部资源（字符串和图形）。 有关汇编程序服务的详细信息，请参阅[汇编程序服务概述](../../forms/using/overview-aem-document-services.md#p-assembler-service-p)。
@@ -321,9 +337,9 @@ source="myFragmentSource"/>
 
 * 文本信息。
 
-   * 文档每一页上的单词
-   * 文档每一页上的每个单词的位置
-   * 文档每页每个段落中的句子
+  * 文档每一页上的单词
+  * 文档每一页上的每个单词的位置
+  * 文档每页每个段落中的句子
 
 * 书签，包括页码、标题、目标和外观。 您可以导出此\
   从PDF文档导入数据并将其导入PDF文档。

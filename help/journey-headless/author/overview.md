@@ -5,13 +5,33 @@ exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '876'
 ht-degree: 81%
-
 ---
-
 # AEM Headless 内容作者历程 {#aem-headless-author-journey}
 
 从此处开始，借助 AEM 强大而灵活的 Headless 功能以及为 Headless 项目创作内容的方法，实施引导式历程。
@@ -20,9 +40,9 @@ ht-degree: 81%
 
 Headless 实施对于向受众提供体验而言变得越来越重要，无论他们身在何处以及渠道如何。
 
-Headless 内容不是基于页面和组件的传统结构，而是基于渠道中性的、可重复使用的内容片段的创建及其跨渠道交付。
+Headless 内容不是基于页面和组件的传统结构， 而是基于渠道中性的、可重复使用的内容片段的创建及其跨渠道交付。
 
-在 AEM 中，这是使用内容片段实现的。您在单个内容片段中创作内容，然后应用程序可以根据需要选择和使用这些内容片段。
+在 AEM 中，这是使用内容片段实现的。 您在单个内容片段中创作内容，然后应用程序可以根据需要选择和使用这些内容片段。
 
 此灵活性意味着，Headless 是一种用于实施数字体验的现代化的动态开发模式。
 
@@ -42,29 +62,29 @@ Headless 内容不是基于页面和组件的传统结构，而是基于渠道�
 
 ## 受众 {#audience}
 
-此历程专为内容作者用户画像设计。作为内容作者，您将在内容片段中创建实际内容。
+此历程专为内容作者用户画像设计。 作为内容作者，您将在内容片段中创建实际内容。
 
-该历程列出了有关为 AEM Headless 项目创作内容的要求、步骤和方法。此历程将定义作者为成功实施项目而必须与之互动的其他用户画像，但历程的视角是内容作者的视角。
+该历程列出了有关为 AEM Headless 项目创作内容的要求、步骤和方法。 此历程将定义作者为成功实施项目而必须与之互动的其他用户画像，但历程的视角是内容作者的视角。
 
 此历程中的信息对于其他角色可能很有用，但一些信息对于特定角色将是多余的。 请继续关注即将推出的涵盖其他角色的历程。
 
 ## Headless 内容作者历程 {#the-journey}
 
-您将在此历程中探究多个主题。以下文章为您提供了 AEM 中的 Headless 的基础知识以及指向详细技术文档的链接。
+您将在此历程中探究多个主题。 以下文章为您提供了 AEM 中的 Headless 的基础知识以及指向详细技术文档的链接。
 
-虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是初次使用 AEM 中的 Headless，Adobe 建议您从头开始，然后循序渐进。
+虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。 因此，如果您是初次使用 AEM 中的 Headless，Adobe 建议您从头开始，然后循序渐进。
 
 | # | 文章 | 描述 |
 |---|---|---|
 | 0 | AEM Headless 内容作者历程 | 本文档 |
 | 1 | [为AEM Headless创作 — 简介](introduction.md) | 简单介绍Adobe Experience Manager的Headless功能，以及如何为项目创作内容。 |
 | 2 | [使用 AEM 为 Headless 创作基本内容](basics.md) | 了解使用内容片段为 Headless CMS 创作内容的概念和机制。 |
-| 3 | [了解如何在内容片段中使用引用](references.md) | 了解如何在内容片段中使用引用。利用这些功能，还可使用嵌套片段为Headless CMS创建和管理多个级别的结构。 |
+| 3 | [了解如何在内容片段中使用引用](references.md) | 了解如何在内容片段中使用引用。 利用这些功能，还可使用嵌套片段为Headless CMS创建和管理多个级别的结构。 |
 | 4 | [了解如何为内容片段定义元数据和标记](metadata-tagging.md) | 了解如何为内容片段定义元数据和标记。 |
 
 ## 后续内容 {#what-is-next}
 
-您现在已准备好开始您的 Adobe Headless 历程。我们鼓励您继续此历程的下一部分，并阅读文章[为AEM Headless创作 — 简介。](introduction.md)
+您现在已准备好开始您的 Adobe Headless 历程。 我们鼓励您继续此历程的下一部分，并阅读文章[为AEM Headless创作 — 简介。](introduction.md)
 
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
@@ -77,7 +97,7 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 ## 其他资源 {#additional-resources}
 
-文档历程将提供叙述来指导您完成复杂、相互关联的流程和使用相关功能，从而向您说明 AEM 如何解决业务问题。历程说明了多项功能如何协作以满足单一业务需求。
+文档历程将提供叙述来指导您完成复杂、相互关联的流程和使用相关功能，从而向您说明 AEM 如何解决业务问题。 历程说明了多项功能如何协作以满足单一业务需求。
 
 因此，旅程旨在自立。 但是，其中多个可以相互关联。 查看这些附加历程，详细了解 AEM 的强大功能如何协作。
 
@@ -85,6 +105,6 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 * [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
 * [Headless架构师历程](/help/journey-headless/architect/overview.md) — 从这里开始了解Adobe Experience Manager强大而灵活的Headless功能，以及如何对项目内容进行建模。
 * [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans) — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
-   * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
-* [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
+  * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
+* [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。
+* [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)

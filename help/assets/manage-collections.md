@@ -8,13 +8,27 @@ feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c73531c3-4c05-471e-beff-cefb35857910
+    internal-label: Collections
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2170'
+source-wordcount: '2201'
 ht-degree: 15%
-
 ---
-
 # 管理收藏集 {#managing-collections}
 
 | 版本 | 文章链接 |
@@ -56,7 +70,7 @@ ht-degree: 15%
    >若要使成员能够与其他用户共享收藏集，请在路径`home/users`上提供`dam-users`组读取权限。 将权限授予位于`/content/dam/collections`位置的用户以允许这些用户在弹出列表中查看收藏集。 或者，将用户设为`dam-users`组的一部分。
 
 1. （可选）为收藏集添加缩略图图像。
-1. 单击“**[!UICONTROL 创建]**”，然后单击“**[!UICONTROL 确定]**”关闭对话框。 具有指定标题和属性的集合将在“收藏集”控制台中打开。
+1. 单击“**[!UICONTROL 创建]**”，然后单击“**[!UICONTROL 确定]**”关闭对话框。 具有指定标题和属性的收藏集将在“收藏集”控制台中打开。
 
    >[!NOTE]
    >
@@ -117,7 +131,7 @@ ht-degree: 15%
 您可以将资源添加到包含引用的资源或文件夹列表的收藏集。 智能收藏集使用搜索查询来填充资源。 因此，对资源和文件夹的静态引用不适用于它们。
 
 1. 在[!DNL A]资产用户界面中，选择资产并单击工具栏中的&#x200B;**[!UICONTROL 到收藏集]** ![添加到收藏集](assets/do-not-localize/add-to-collection.png)。
-或者，您可以将资产拖到界面上的&#x200B;**[!UICONTROL 拖放到收藏集]**&#x200B;区域。当区域的标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时添加资源。
+或者，您可以将资产拖到界面上的&#x200B;**[!UICONTROL 拖放到收藏集]**&#x200B;区域。 当区域的标签更改为&#x200B;**[!UICONTROL 拖放到“添加”]**&#x200B;时添加资源。
 
 1. 在&#x200B;**[!UICONTROL 添加到收藏集]**&#x200B;页面中，选择要将资产添加到的收藏集。
 

@@ -11,13 +11,24 @@ feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 0c3d9e95f2b1942392cd269891360dd8552e2715
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '10724'
+source-wordcount: '10732'
 ht-degree: 2%
-
 ---
-
 # Dynamic Media 中的视频 {#video}
 
 本节介绍如何在Dynamic Media中使用视频。
@@ -43,23 +54,23 @@ ht-degree: 2%
 
    * 创建自己的视频编码配置文件。 或者，您只需使用随Dynamic Media提供的预定义&#x200B;_自适应视频编码_&#x200B;配置文件即可。
 
-      * [创建视频编码配置文件](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
-      * 最大输出视频编码分辨率为8,192 × 4,320或4,320 × 8,192.md。
-      * 了解有关[视频编码最佳实践](#best-practices-for-encoding-videos)的更多信息。
+     * [创建视频编码配置文件](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。
+     * 最大输出视频编码分辨率为8,192 × 4,320或4,320 × 8,192.md。
+     * 了解有关[视频编码最佳实践](#best-practices-for-encoding-videos)的更多信息。
 
    * 将视频处理配置文件关联到一个或多个要上传主源视频的文件夹。
 
-      * [将视频配置文件应用到文件夹](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)。
-      * 了解有关[用于组织数字资产以使用处理配置文件的最佳实践的更多信息](/help/assets/organize-assets.md)。
-      * 了解有关[组织数字资源](/help/assets/organize-assets.md)的详细信息。
+     * [将视频配置文件应用到文件夹](/help/assets/video-profiles.md#applying-a-video-profile-to-folders)。
+     * 了解有关[用于组织数字资产以使用处理配置文件的最佳实践的更多信息](/help/assets/organize-assets.md)。
+     * 了解有关[组织数字资源](/help/assets/organize-assets.md)的详细信息。
 
    * 将您的主源视频上传到文件夹。 将视频添加到文件夹时，会根据您分配给该文件夹的视频处理配置文件对其进行编码。
 
-      * Dynamic Media主要支持最长30分钟且最小分辨率大于25×25的短格式视频。
-      * 支持的最大输入视频分辨率为16,384 × 16,384。
-      * 您可以上传每个大小最大为15 GB的视频文件。
-      * [上传您的视频](/help/assets/managing-video-assets.md#upload-and-preview-video-assets)。
-      * 了解有关[支持的输入文件格式](/help/assets/assets-formats.md#supported-multimedia-formats)的详细信息。
+     * Dynamic Media主要支持最长30分钟且最小分辨率大于25×25的短格式视频。
+     * 支持的最大输入视频分辨率为16,384 × 16,384。
+     * 您可以上传每个大小最大为15 GB的视频文件。
+     * [上传您的视频](/help/assets/managing-video-assets.md#upload-and-preview-video-assets)。
+     * 了解有关[支持的输入文件格式](/help/assets/assets-formats.md#supported-multimedia-formats)的详细信息。
 
    * 从资源或工作流视图中监视[视频编码进度](#monitoring-video-encoding-and-youtube-publishing-progress)。
 
@@ -67,55 +78,55 @@ ht-degree: 2%
 
    * 组织、浏览和搜索视频资源
 
-      * [组织数字资源](/help/assets/organize-assets.md)
-详细了解[组织数字资产以使用处理配置文件的最佳实践](organize-assets.md)
+     * [组织数字资源](/help/assets/organize-assets.md)
+       详细了解[组织数字资产以使用处理配置文件的最佳实践](organize-assets.md)
 
-      * [搜索视频资源](search-assets.md#custompredicates)或[搜索资源](/help/assets/search-assets.md)
+     * [搜索视频资源](search-assets.md#custompredicates)或[搜索资源](/help/assets/search-assets.md)
 
    * 预览和发布视频资产
 
-      * 查看源视频、视频的编码呈现版本及其关联的缩略图：
-        [预览视频](managing-video-assets.md#upload-and-preview-video-assets)或[预览资源](previewing-assets.md)
-        [查看视频演绎版](video-renditions.md)
-        [管理视频演绎版](manage-assets.md#managing-renditions)
+     * 查看源视频、视频的编码呈现版本及其关联的缩略图：
+       [预览视频](managing-video-assets.md#upload-and-preview-video-assets)或[预览资源](previewing-assets.md)
+       [查看视频演绎版](video-renditions.md)
+       [管理视频演绎版](manage-assets.md#managing-renditions)
 
-      * [管理查看器预设](managing-viewer-presets.md)
-      * [发布资源](publishing-dynamicmedia-assets.md)
+     * [管理查看器预设](managing-viewer-presets.md)
+     * [发布资源](publishing-dynamicmedia-assets.md)
 
    * 使用视频元数据
 
-      * 查看已编码视频演绎版的属性，如帧速率、音频和视频比特率以及编解码器：
-        [查看视频演绎版属性](video-renditions.md)
+     * 查看已编码视频演绎版的属性，如帧速率、音频和视频比特率以及编解码器：
+       [查看视频演绎版属性](video-renditions.md)
 
-      * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
-        [编辑视频属性](manage-assets.md#editing-properties)
+     * 编辑视频的属性，如标题、描述和标记、自定义元数据字段：
+       [编辑视频属性](manage-assets.md#editing-properties)
 
-      * [管理数字资源的元数据](metadata.md)
-      * [元数据架构](metadata-schemas.md)
+     * [管理数字资源的元数据](metadata.md)
+     * [元数据架构](metadata-schemas.md)
 
    * 审核、批准和注释视频，并保持完整的版本控制
 
-      * [为视频添加批注](managing-video-assets.md#annotate-video-assets)或[为资源添加批注](manage-assets.md#annotating)
+     * [为视频添加批注](managing-video-assets.md#annotate-video-assets)或[为资源添加批注](manage-assets.md#annotating)
 
-      * [创建一个版本](manage-assets.md#asset-versioning)
-      * [将工作流应用于资源](assets-workflow.md)或查看[启动资源工作流](manage-assets.md#starting-a-workflow-on-an-asset)
+     * [创建一个版本](manage-assets.md#asset-versioning)
+     * [将工作流应用于资源](assets-workflow.md)或查看[启动资源工作流](manage-assets.md#starting-a-workflow-on-an-asset)
 
-      * [审核文件夹资产](bulk-approval.md)
-      * [项目](../sites-authoring/projects.md)
+     * [审核文件夹资产](bulk-approval.md)
+     * [项目](../sites-authoring/projects.md)
 
 1. **通过执行以下操作之一发布Dynamic Media视频**：
 
    * 如果您使用Adobe Experience Manager作为Web内容管理系统，则可以直接将视频添加到网页。
 
-      * [将视频添加到网页](adding-dynamic-media-assets-to-pages.md)。
+     * [将视频添加到网页](adding-dynamic-media-assets-to-pages.md)。
 
    * 如果您使用的是第三方Web内容管理系统，则可以将视频链接或嵌入到网页。
 
-      * 使用URL集成视频：
-        [将URL链接到您的Web应用程序](linking-urls-to-yourwebapplication.md)。
+     * 使用URL集成视频：
+       [将URL链接到您的Web应用程序](linking-urls-to-yourwebapplication.md)。
 
-      * 在网页上使用嵌入代码集成视频：
-        [在网页上嵌入视频查看器](embed-code.md)。
+     * 在网页上使用嵌入代码集成视频：
+       [在网页上嵌入视频查看器](embed-code.md)。
 
    * [生成视频报告](#viewing-video-reports)。
 
@@ -143,8 +154,8 @@ Dynamic Media中的视频是一款端到端解决方案，可让您轻松发布�
 
 * 以各种支持的格式上传视频，并将其编码到MP4 H.264以在多个屏幕上播放。 您可以使用预定义的自适应视频预设、单个视频编码预设或自定义自己的编码来控制视频的质量和大小。
 
-   * 生成自适应视频集时，该视频集包含MP4视频。
-   * **注意**：主/源视频未添加到自适应视频集。
+  * 生成自适应视频集时，该视频集包含MP4视频。
+  * **注意**：主/源视频未添加到自适应视频集。
 
 * 所有HTML5视频查看器中的视频字幕。
 * 使用完整的元数据支持来组织、浏览和搜索视频，从而高效管理视频资产。
@@ -158,8 +169,8 @@ Dynamic Media支持MP4 H.264视频的移动视频播放。<!-- LINK IS 404 WITH 
 
 * 使用Dynamic Media视频查看器预设播放视频，包括以下内容：
 
-   * 单个视频查看器。
-   * 混合媒体查看器，将视频和图像内容组合在一起。
+  * 单个视频查看器。
+  * 混合媒体查看器，将视频和图像内容组合在一起。
 
 * 配置视频播放器以满足您的品牌推广需求。
 * 将视频与简单URL或嵌入代码集成到您的网站、移动网站或移动应用程序。
@@ -285,7 +296,7 @@ DASH是国际标准，HLS是Apple标准。 两者都用于自适应视频流。 
 
 ## 视频编码最佳实践 {#best-practices-for-encoding-videos}
 
-如果您已启用Dynamic Media并设置了视频云服务，则&#x200B;**Dynamic Media编码视频**&#x200B;工作流会对视频进行编码。 此工作流会捕获工作流进程历史记录和失败信息。 如果您已启用Dynamic Media并设置了视频云服务，则在您上传视频时，**[!UICONTROL Dynamic Media编码视频]**&#x200B;工作流将自动生效。 （如果您未使用Dynamic Media，则&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流将生效。）
+如果您已启用Dynamic Media并设置了视频云服务，则&#x200B;**Dynamic Media编码视频**&#x200B;工作流会对视频进行编码。 此工作流会捕获工作流流程历史记录和失败信息。 如果您已启用Dynamic Media并设置了视频云服务，则在您上传视频时，**[!UICONTROL Dynamic Media编码视频]**&#x200B;工作流将自动生效。 （如果您未使用Dynamic Media，则&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流将生效。）
 
 <!--
 DEAD The following are best-practice tips for encoding source video files.
@@ -463,10 +474,10 @@ Dynamic Media建议使用MP4 H.264视频编码预设。 由于MP4文件使用H.2
 1. 在“视频报表”页面上，执行以下操作之一：
 
    * 在右上角附近，选择&#x200B;**刷新视频报告**&#x200B;图标。
-仅当报表的结束日期为当天时，才使用刷新。 这样做可确保您看到自上次运行报表以来发生的视频跟踪。
+     仅当报表的结束日期为当天时，才使用刷新。 这样做可确保您看到自上次运行报表以来发生的视频跟踪。
 
    * 在右上角附近，选择&#x200B;**日期选取器**&#x200B;图标。
-指定要获取其视频数据的开始和结束日期范围，然后选择&#x200B;**[!UICONTROL 运行报表]**。
+     指定要获取其视频数据的开始和结束日期范围，然后选择&#x200B;**[!UICONTROL 运行报表]**。
 
    “排名最前的量度”组框标识了您网站上所有&#x200B;*已发布*&#x200B;视频的各种聚合量度。
 
@@ -970,15 +981,15 @@ Experience Manager中的所有视频都必须具有关联的缩略图，删除�
 
    * 要将视频中的帧用作新缩略图，请执行以下操作：
 
-      * 在工具栏上，选择&#x200B;**[!UICONTROL 从视频中选择帧]**。
-      * 选择“播放”按钮，然后在要捕获为视频新缩略图的帧上选择“暂停”按钮。
+     * 在工具栏上，选择&#x200B;**[!UICONTROL 从视频中选择帧]**。
+     * 选择“播放”按钮，然后在要捕获为视频新缩略图的帧上选择“暂停”按钮。
 
    * 要将图像资产用作新缩略图，请执行以下操作：
 
-      * 在工具栏上，选择&#x200B;**[!UICONTROL 从Assets中选择缩略图]**。
-      * 选择&#x200B;**[!UICONTROL 选择缩略图]**。
-      * 导航到要使用的之前上传和发布的图像资产。 资源会自动调整大小以用作视频的缩略图。
-      * 选择图像资源，然后选择&#x200B;**[!UICONTROL 选择]**。
+     * 在工具栏上，选择&#x200B;**[!UICONTROL 从Assets中选择缩略图]**。
+     * 选择&#x200B;**[!UICONTROL 选择缩略图]**。
+     * 导航到要使用的之前上传和发布的图像资产。 资源会自动调整大小以用作视频的缩略图。
+     * 选择图像资源，然后选择&#x200B;**[!UICONTROL 选择]**。
 
 1. 在“更改缩略图”页面上，选择&#x200B;**[!UICONTROL 保存更改]**。
 1. 在视频的“属性”页面的右上角，选择&#x200B;**[!UICONTROL 保存并关闭]**。
@@ -1113,11 +1124,11 @@ String getVideoManifestURI(Resource resource, ManifestType manifestType, boolean
 
 * `IllegalArgumentException`被记录为以下任意项：
 
-   * 传递的`resource`参数为null。
-   * 传递的`resource`参数不是视频。
-   * 传递的`manifestType`参数为null。
-   * `onlyIfPublished`参数作为true传递，但视频未发布。
-   * 未使用Dynamic Media中的自适应视频集摄取视频。
+  * 传递的`resource`参数为null。
+  * 传递的`resource`参数不是视频。
+  * 传递的`manifestType`参数为null。
+  * `onlyIfPublished`参数作为true传递，但视频未发布。
+  * 未使用Dynamic Media中的自适应视频集摄取视频。
 
 * 在连接到Dynamic Media时出现问题时记录`IOException`。
 * 当传递的`manifestType`参数为`ManifestType.DASH`且未使用DASH格式处理视频时，将记录`UnsupportedOperationException`。

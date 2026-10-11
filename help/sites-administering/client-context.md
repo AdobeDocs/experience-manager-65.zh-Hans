@@ -1,5 +1,5 @@
 ---
-title: ClientContext
+title: Client Context
 description: 了解如何使用Client Context查看有关Adobe Experience Manager中当前页面和访客的信息。
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,26 @@ exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1961'
+source-wordcount: '2007'
 ht-degree: 0%
-
 ---
 
-
-# ClientContext{#client-context}
+# Client Context{#client-context}
 
 >[!NOTE]
 >
@@ -41,7 +52,7 @@ Client Context是一种机制，可为您提供有关当前页面和访客的特
 ![客户端上下文窗口的“编辑”、“加载”和“重置”图标](do-not-localize/clientcontext_icons.png)
 
 * **编辑**
-将打开一个新页面，允许您编辑、添加或删除配置文件属性[&#128279;](#editingprofiledetails)。
+将打开一个新页面，让您[编辑、添加或删除配置文件属性](#editingprofiledetails)。
 
 * **加载**
 您可以[从配置文件列表中进行选择并加载要测试的配置文件](#loading-a-new-user-profile)。
@@ -211,13 +222,13 @@ Client Context允许您以交互方式更改详细信息：
 
 ### 添加属性组件 {#adding-a-property-component}
 
-打开&#x200B;**ClientContext设计页**&#x200B;后，您还可以使用可用组件&#x200B;**添加**&#x200B;全新属性（组件在Sidekick上或双击&#x200B;**将组件或资产拖动到此处**&#x200B;框后打开的&#x200B;**插入新组件**&#x200B;对话框中列出）：
+打开&#x200B;**ClientContext设计页面**&#x200B;后，您还可以使用可用组件&#x200B;**添加**&#x200B;全新属性（组件在Sidekick上或双击&#x200B;**将组件或资产拖动到此处**&#x200B;框后打开的&#x200B;**插入新组件**&#x200B;对话框中列出）：
 
 ![将属性添加到客户端上下文窗口](assets/clientcontext_alisonparker_new.png)
 
 ### 删除属性组件 {#removing-a-property-component}
 
-打开&#x200B;**ClientContext设计页**&#x200B;后，如果不再需要，您还可以&#x200B;**删除**&#x200B;属性。 这包括提供的现成属性；**重置**&#x200B;将恢复这些属性（如果已删除）。
+打开&#x200B;**ClientContext设计页面**&#x200B;后，如果不再需要，您还可以&#x200B;**删除**&#x200B;属性。 这包括提供的现成属性；**重置**&#x200B;将恢复这些属性（如果已删除）。
 
 ## 通过JSONP在客户端上下文中存储数据 {#storing-data-in-client-context-via-jsonp}
 
@@ -249,7 +260,7 @@ Client Context允许您以交互方式更改详细信息：
    ![JSONP服务的属性](assets/chlimage_1-40.png)
 
 1. 单击“确定”。
-1. 返回“Geometrixx Outdoors”主页并刷新该页。 Client Context现在包含来自JSONP存储组件的信息。
+1. 返回Geometrixx Outdoors主页并刷新页面。 Client Context现在包含来自JSONP存储组件的信息。
 
    ![使用数据填充的JSONP组件示例](assets/chlimage_1-41.png)
 

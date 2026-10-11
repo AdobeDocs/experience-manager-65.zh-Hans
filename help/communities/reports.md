@@ -10,13 +10,20 @@ role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '415'
 ht-degree: 6%
-
 ---
-
 # 报表控制台 {#reports-console}
 
 ## 概述 {#overview}
@@ -43,17 +50,17 @@ ht-degree: 6%
 
 * 选择自：
 
-   * **[!UICONTROL 工作分配报表]**
+  * **[!UICONTROL 工作分配报表]**
 
-      * 为选定的社区站点、用户或组以及分配生成报告。
+    * 为选定的社区站点、用户或组以及分配生成报告。
 
-   * **[!UICONTROL 发布报告]**
+  * **[!UICONTROL 发布报告]**
 
-      * 为选定的社区站点、内容类型和时间段生成报告。
+    * 为选定的社区站点、内容类型和时间段生成报告。
 
-   * **[!UICONTROL 查看报告]**
+  * **[!UICONTROL 查看报告]**
 
-      * 为选定的社区站点、内容类型和时间段生成报告。
+    * 为选定的社区站点、内容类型和时间段生成报告。
 
 ![报告](assets/reports1.png)
 
@@ -77,10 +84,10 @@ ht-degree: 6%
 
   选择以下选项之一：
 
-   * 过去 7 天
-   * 过去 30 天
-   * 过去 90 天
-   * 去年
+  * 过去 7 天
+  * 过去 30 天
+  * 过去 90 天
+  * 去年
 
 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报告。
 
@@ -106,10 +113,10 @@ ht-degree: 6%
 
   选择以下选项之一：
 
-   * 过去 7 天
-   * 过去 30 天
-   * 过去 90 天
-   * 去年
+  * 过去 7 天
+  * 过去 30 天
+  * 过去 90 天
+  * 去年
 
 选择&#x200B;**[!UICONTROL 生成]**&#x200B;以创建报告。
 
@@ -123,6 +130,6 @@ ht-degree: 6%
 
 ### 报告未显示在AEM创作实例中 {#reports-do-not-show-in-aem-author-instance}
 
-如果报表未显示在AEM创作实例中，请检查是否存在自定义设置，例如Publish实例上的URL映射。 如果仅在Communities站点的AEM Publish实例上完成URL映射，请确保在&#x200B;**站点趋势报表社交组件工厂**&#x200B;配置中的AEM创作实例中已配置相同内容。
+如果报表未显示在AEM创作实例中，请检查是否存在自定义设置，例如发布实例上的URL映射。 如果仅在Communities站点的AEM发布实例上完成URL映射，请确保在&#x200B;**站点趋势报表社交组件工厂**&#x200B;配置中的AEM创作实例中已配置相同内容。
 
 AEM作者上的![URL映射](assets/sitetrend.png)

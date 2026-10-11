@@ -5,13 +5,39 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1995'
 ht-degree: 90%
-
 ---
-
 # 优化 GraphQL 查询 {#optimizing-graphql-queries}
 
 >[!NOTE]
@@ -30,7 +56,7 @@ ht-degree: 90%
 
 **推荐**
 
-强烈建议使用持久 GraphQL 查询。
+强烈建议使用存续的 GraphQL 查询。
 
 持久 GraphQL 查询借助内容分发网络 (CDN) 帮助降低查询执行性能。 客户端应用程序通过 GET 请求来请求持久查询，以实现支持边缘的快速执行。
 
@@ -114,7 +140,7 @@ or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-i
 请参阅：
 
 * [正在缓存您的持久查询](/help/sites-developing/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
-* [如何使 GraphQL 查询持久](/help/sites-developing/headless/graphql-api/persisted-queries.md#how-to-persist-query)
+* [如何持久化 GraphQL 查询](/help/sites-developing/headless/graphql-api/persisted-queries.md#how-to-persist-query)
 <!--
 * [Managing cache for your persisted queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache)
 -->
@@ -137,16 +163,16 @@ Contact Adobe to enable this capability for your AEM Cloud Service program and e
 
 这是因为&#x200B;*所有*&#x200B;共享将在 GraphQL 查询中使用的模型的片段都必须加载到内存中。 这将消耗较多的时间和内存。 只能在将整个结果集加载到内存中&#x200B;**后**，再应用筛选（它可能会减少最终结果集中的项目数）。
 
-这可能会给人留下一种印象，那就是，即使较小的结果集也会导致性能不佳。 然而，实际上这种缓慢是由初始结果集的大小引起的，因为必须先内部处理此情况，之后才能应用筛选。
+这可能会给人留下一种印象，那就是，即使较小的结果集也会导致性能不佳。 然而，实际上这种缓慢是由初始结果集的大小引起的，因为在应用筛选之前，必须先在内部处理该结果集。
 
-要减少性能和内存问题，必须使该初始结果集尽可能的小。
+要减少性能和内存问题，必须使该初始结果集尽可能小。
 
 AEM 提供了两种方法来优化 GraphQL 查询：
 
 * [混合筛选](#use-aem-graphql-hybrid-filtering)
 * [分页](#use-aem-graphql-pagination)
 
-   * [排序](#use-graphql-sorting)与优化没有直接关系，而与分页有关
+  * [排序](#use-graphql-sorting)与优化没有直接关系，而与分页有关
 
 每种方法都有自己的用例和限制。 此部分提供有关混合筛选和分页的信息，以及一些用于优化 GraphQL 查询的[最佳实践](#best-practices)。
 
@@ -185,11 +211,11 @@ AEM中的GraphQL支持两种类型的分页：
 
 * [限制/基于偏移的分页](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 这用于列表查询；这些查询以`List`结尾；例如，`articleList`。
-若要使用它，您必须提供要返回的第一个项目的位置(`offset`)以及要返回的项目的数量（`limit`或页面大小）。
+要使用它，您必须提供要返回的第一个项目的位置 (`offset`) 和要返回的项目数（`limit` 或页面大小）。
 
 * [基于游标的分页](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#paginated-first-after)（由`first`和`after`表示）
 这会为每个项目提供一个唯一的ID；也称为光标。
-在查询中，指定上一页的最后一项的光标加上页面大小（返回的最大项数）。
+在查询中，您指定上一页的最后一项的光标，以及页面大小（要返回的项目的最大数量）。
 
   由于基于光标的分页不适合基于列表的查询的数据结构，因此，AEM 引入了 `Paginated` 查询类型；例如 `articlePaginated`。 所使用的数据结构和参数遵循 [GraphQL 光标连接规范](https://relay.dev/graphql/connections.htm)。
 
@@ -217,7 +243,7 @@ AEM中的GraphQL支持两种类型的分页：
 
 >[!NOTE]
 >
->对顶级字段进行排序也会对性能产生（虽然很小）影响。
+>对顶级字段进行排序也会对性能产生影响（尽管很小）。
 
 **进一步的参考**
 
@@ -241,7 +267,7 @@ AEM中的GraphQL支持两种类型的分页：
 
 在 AEM 中，通常考虑的最佳实践是，使用存储库结构来缩小要处理的内容范围。
 
-此方法也将应用于 GraphQL 查询。
+此方法也应应用于 GraphQL 查询。
 
 这可以通过在顶级片段的 `_path` 字段上应用筛选来完成：
 
@@ -290,7 +316,7 @@ AEM中的GraphQL支持两种类型的分页：
 
 ### 避免筛选多行文本字段 {#avoid-filtering-multiline-textfields}
 
-无法通过 JCR 查询筛选多行文本字段的字段（html、markdown、plaintext、json），因为必须即时计算这些字段的内容。
+无法通过 JCR 查询筛选多行文本字段 (html、markdown、plaintext、json)，因为这些字段的内容必须即时计算。
 
 如果您仍需要筛选多行文本字段，请考虑通过添加额外的筛选表达式来限制初始结果集的大小，并使用 `AND` 将它们组合使用。 通过筛选 `_path` 字段来限制范围也是一个好方法。
 
@@ -324,7 +350,7 @@ AEM中的GraphQL支持两种类型的分页：
 
 不过，创建具有过多级别的结构可能会增加 GraphQL 查询的处理时间，因为 GraphQL 必须遍历所有嵌套内容片段的整个层次结构。
 
-深度嵌套也会对内容监管产生不利影响。 通常，建议将内容片段嵌套限制在五个层次或六个层次以下。
+深度嵌套也会对内容治理产生不利影响。 通常，建议将内容片段嵌套限制在五个层次或六个层次以下。
 
 ### 请勿输出所有格式（多行文本元素） {#do-not-output-all-formats}
 

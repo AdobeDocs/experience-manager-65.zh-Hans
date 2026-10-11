@@ -10,13 +10,24 @@ exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: f965c449da06a1b7e60428e0734c621f004d318c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2898'
 ht-degree: 2%
-
 ---
-
 # 使用客户端库{#using-client-side-libraries}
 
 现代网站在很大程度上依赖于由复杂的JavaScript和CSS代码驱动的客户端处理。 组织和优化此代码的服务可能是一个复杂的问题。

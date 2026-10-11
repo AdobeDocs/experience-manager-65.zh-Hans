@@ -9,13 +9,30 @@ exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1280'
+source-wordcount: '1295'
 ht-degree: 1%
-
 ---
-
 # 在 AEM 中创建 Adobe Campaign 表单 {#creating-adobe-campaign-forms-in-aem}
 
 通过AEM，您可以创建并使用与网站上的Adobe Campaign交互的表单。 可以将特定字段插入表单并映射到Adobe Campaign数据库。
@@ -52,7 +69,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->当使用Adobe Campaign Classic或Adobe Campaign Standard时，请确保将页面&#x200B;**jcr**&#x200B;节点上的&#x200B;**acMapping:content**&#x200B;属性分别设置为&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
+>当使用Adobe Campaign Classic或Adobe Campaign Standard时，请确保将页面&#x200B;**jcr:content**&#x200B;节点上的&#x200B;**acMapping**&#x200B;属性分别设置为&#x200B;**mapRecipient**&#x200B;或&#x200B;**profile**
 >
 
 1. 在AEM的站点中，导航到要创建页面的位置。
@@ -90,7 +107,7 @@ ht-degree: 1%
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
-1. 单击“**高级**”选项卡并选择它的表单类型 — **订阅、取消订阅、**&#x200B;或&#x200B;**保存配置文件**，然后单击“**确定”。**&#x200B;每个表单只能有一个类型。
+1. 单击“**高级**”选项卡并选择它的表单类型 — **订阅、取消订阅、**&#x200B;或&#x200B;**保存配置文件**，然后单击“**确定”。** 每个表单只能有一种类型。
 
    * **Adobe Campaign：保存配置文件**：允许您在Adobe Campaign中创建或更新收件人（默认值）。
    * **Adobe Campaign：订阅服务**：允许您在Adobe Campaign中管理收件人的订阅。

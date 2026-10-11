@@ -9,13 +9,27 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 0487a5669fbaab35974eb85eb099b82e0847a4f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '962'
-ht-degree: 12%
-
+source-wordcount: '1079'
+ht-degree: 17%
 ---
-
 # 在AEM 6.5 Forms上启用自适应Forms核心组件 {#enable-adaptive-forms-core-components}
 
 | 版本 | 文章链接 |
@@ -108,11 +122,11 @@ ht-degree: 12%
 
       >[!WARNING]
       >
-      >* 使用版本45创建Archetype项目时，`[AEM Archetype Project Folder]/pom.xml`最初将forms核心组件版本设置为1.1.28。在构建或部署原型项目之前，请将Forms核心组件版本更新为1.1.26。您可以在[AEM 6.5 Forms版本历史记录](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=zh-Hans#aem-as-form-version-history)中找到最新版本。
+      >* 使用版本45创建Archetype项目时，`[AEM Archetype Project Folder]/pom.xml`最初将forms核心组件版本设置为1.1.28。 在构建或部署原型项目之前，请将Forms核心组件版本更新为1.1.26。 您可以在[AEM 6.5 Forms版本历史记录](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/version.html?lang=zh-Hans#aem-as-form-version-history)中找到最新版本。
 
       >[!NOTE]
       >
-      >* 列入允许列表如果您设置了任何其他拓扑，请确保将提交、预填充和其他必需的URL以及必要的选择器（例如，`/content/forms/*model.json`）添加到Dispatcher层的中。
+      >* 如果您设置了任何其他拓扑，请确保将提交、预填充和其他必需的URL以及必要的选择器（例如，`/content/forms/*model.json`）添加到Dispatcher层的中。
 
    1. 保存并关闭该文件。
 
@@ -152,7 +166,7 @@ ht-degree: 12%
 ### 在启用核心组件上添加了哪些功能？
 
 
-为您的环境启用自适应表单核心组件时，将有一个空白的基于核心组件的自适应表单模板和 Canvas 3.0 主题添加到您的环境。为您的环境启用自适应表单核心组件后，您可以：
+为您的环境启用自适应表单核心组件时，将有一个空白的基于核心组件的自适应表单模板和 Canvas 3.0 主题添加到您的环境。 为您的环境启用自适应表单核心组件后，您可以：
 
 * 创建基于核心组件的自适应Forms。
 * 创建基于核心组件的自适应表单模板。

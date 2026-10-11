@@ -1,6 +1,6 @@
 ---
 title: 创建共享资源导出配置
-description: 请参阅此页面，了解如何从Adobe Experience Manager (AEM)导出共享资源以供上传到AEM Mobile。
+description: 请阅读本页，了解如何从Adobe Experience Manager (AEM)导出共享资源以供上传到AEM Mobile。
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,13 +9,17 @@ exl-id: 576b4567-c7b6-4196-84e7-47e980637540
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '293'
 ht-degree: 0%
-
 ---
-
 # 创建共享资源导出配置{#creating-shared-resources-export-configuration}
 
 {{ue-over-mobile}}
@@ -32,7 +36,7 @@ Adobe Experience Manager (AEM) Mobile用户使用Content Sync将实时内容导�
 
 以下资源介绍了从AEM导出共享资源以供上传到AEM Mobile。
 
-共享的HTML资源允许文章共享原本会复制到所有文章的HTML资源，并且可以包括图标、字体、JavaScript和css。
+共享的HTML资源允许文章共享在其他情况下所有文章都将重复的HTML资源，并且可以包含图标、字体、JavaScript和css。
 
 在&#x200B;**&lt;dps-exportTemplate>/dps-HTMLResources>**&#x200B;找到的内容同步配置应配置为导出设备上属性静态呈现所需的所有内容和项目。
 

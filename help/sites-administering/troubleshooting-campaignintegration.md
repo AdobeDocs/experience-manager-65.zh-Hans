@@ -9,13 +9,22 @@ exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '826'
 ht-degree: 0%
-
 ---
-
 
 # Adobe Campaign Classic集成疑难解答{#troubleshooting-your-adobe-campaign-classic-integration}
 
@@ -28,8 +37,8 @@ ht-degree: 0%
 检查两个解决方案(AEM > Adobe Campaign Classic、Adobe Campaign Classic > AEM)是否发送和接收了HTTP调用。 此提示可帮助您避免防火墙/SSL问题。
 
 * 对于AEM功能，您可以看到从AEM创作界面请求了JSON调用
-   * 这些调用不应导致HTTP-500错误。
-   * 如果您看到HTTP-500错误，请查看`error.log`以了解更多信息。
+  * 这些调用不应导致HTTP-500错误。
+  * 如果您看到HTTP-500错误，请查看`error.log`以了解更多信息。
 * 提高AEM中促销活动类的调试级别也有助于排除问题。
 
 ## 如果连接失败 {#when-the-connection-fails}
@@ -131,8 +140,8 @@ at sun.security.ssl.AppOutputStream.write(Unknown Source)
 
 * 必须将AEM Dispatcher或反向代理配置为将原始协议作为标头传递。
 * AEM的OSGi配置中的&#x200B;**Apache Felix Http服务SSL过滤器**&#x200B;必须使用所需的标头设置进行配置。
-   * `https://<host>:<port>/system/console/configMgr`
-   * 请参阅[https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
+  * `https://<host>:<port>/system/console/configMgr`
+  * 请参阅[https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 
 ## 无法在页面属性中选择自定义模板 {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 

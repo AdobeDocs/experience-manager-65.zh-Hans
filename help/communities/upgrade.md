@@ -1,5 +1,5 @@
 ---
-title: 升级到AEM 6.5 Communities
+title: 升级到AEM 6.5社区
 description: 如何从早期版本升级到AEM 6.5 Communities
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,18 +10,25 @@ exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '659'
 ht-degree: 0%
-
 ---
-
-# 升级到AEM 6.5 Communities {#upgrading-to-aem-communities}
+# 升级到AEM 6.5社区 {#upgrading-to-aem-communities}
 
 根据每个站点的拓扑和功能，在升级到AEM Communities 6.5或安装最新功能包时可能需要执行以下操作。
 
-此部分特定于Communities，用于补充[升级到AEM 6.5](/help/sites-deploying/upgrade.md)（平台）中提供的信息。
+此部分专用于社区，用于补充[升级到AEM 6.5](/help/sites-deploying/upgrade.md)（平台）中提供的信息。
 
 ## 从AEM 6.1或更高版本升级 {#upgrading-from-aem-or-later}
 
@@ -50,22 +57,22 @@ ht-degree: 0%
 * 配置[ASRP](/help/communities/asrp.md)。
 * 执行以下步骤以使预先存在的UGC可见：
 
-   * 浏览到Web控制台：
+  * 浏览到Web控制台：
 
-      * 例如，[https://&lt;主机>：&lt;端口>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+    * 例如，[https://&lt;主机>：&lt;端口>/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
-      * 找到&#x200B;**AEM Communities实用工具**&#x200B;配置。
-      * 选择以展开配置面板：
+    * 找到&#x200B;**AEM Communities实用工具**&#x200B;配置。
+    * 选择以展开配置面板：
 
-         * *取消选中* `Cloud Storage`
+      * *取消选中* `Cloud Storage`
 
-         * 选择&#x200B;**保存**
+      * 选择&#x200B;**保存**
 
-     ![实用工具](assets/utilities.png)
+    ![实用工具](assets/utilities.png)
 
 ### 内部部署存储 {#on-premise-storage}
 
-如果升级后的站点不使用云存储，则必须转换任何预先存在的UGC，以符合AEM 6.1社区中为支持公用存储引入的新结构。
+如果升级后的站点不使用Cloud Storage，则任何预先存在的UGC都必须转换以符合AEM 6.1 Communities中引入的新结构以支持公用存储。
 
 为此，GitHub上提供了开源迁移工具：
 [AEM Communities UGC迁移工具](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
@@ -84,11 +91,11 @@ ht-degree: 0%
 
 在AEM 6.0中，JSP组件与新的HBS框架组件保留在同一位置，而HBS组件通常位于名为“hbs”的子文件夹中。
 
-从AEM 6.1开始，JSP组件已完全删除。 对于社区，建议使用SCF组件替换所有使用的JSP组件。
+截至AEM 6.1，JSP组件已完全删除。 对于社区，建议使用SCF组件替换所有使用的JSP组件。
 
 ## AEM Communities UGC迁移工具 {#aem-communities-ugc-migration-tool}
 
-[AEM Communities UGC迁移工具](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)是一个在GitHub上提供的开源迁移工具，可以对其进行自定义以从早期版本的AEM Social Communities中导出UGC，并将其导入AEM Communities 6.1或更高版本。
+[AEM Communities UGC迁移工具](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)是一款在GitHub上提供的开源迁移工具，可对其进行自定义以从早期版本的AEM社交社区中导出UGC，并将其导入AEM Communities 6.1或更高版本。
 
 除了从早期版本移动UGC外，还可以使用此工具将UGC从一个[SRP](/help/communities/working-with-srp.md)移动到另一个，例如从MSRP到DSRP。
 
@@ -96,8 +103,8 @@ ht-degree: 0%
 
 从概念上讲，社区组件分为三代：
 
-**第1代**：大致上是CQ 5.4到AEM 5.6.0，这些组件是&#x200B;**collab**&#x200B;组件，它们将UGC存储在本地存储库中，使用复制作为跨平台同步UGC的方法。 其他区别涉及使用Java Server Pages (JSP)进行实施以及仅在创作环境中进行创作的博客功能。
+**第1代**：大致上是CQ 5.4到AEM 5.6.0，这些组件是&#x200B;**协作**&#x200B;组件，它们将UGC存储在本地存储库中，使用复制作为跨平台同步UGC的方法。 其他区别涉及使用Java Server Pages (JSP)进行实施以及仅在创作环境中进行创作的博客功能。
 
-**第2**&#x200B;代：从AEM 5.6.1到AEM 6.1，这是&#x200B;**协作**&#x200B;和&#x200B;**社交**&#x200B;组件的组合。 AEM 6.0引入了新的[社交组件框架](/help/communities/scf.md) (SCF)，并且AEM 6.2引入了[公共UGC存储](/help/communities/working-with-srp.md)，其中使用[存储资源提供程序](/help/communities/srp.md) (SRP)访问UGC。
+**第2**&#x200B;代：从AEM 5.6.1到AEM 6.1，这是&#x200B;**协作**&#x200B;和&#x200B;**社交**&#x200B;组件的组合。 AEM 6.0引入了新的[社交组件框架](/help/communities/scf.md) (SCF)，而AEM 6.2引入了[公共UGC存储](/help/communities/working-with-srp.md)，其中使用[存储资源提供程序](/help/communities/srp.md) (SRP)访问UGC。
 
-**第3代**：从AEM 6.2开始，只有&#x200B;**social**&#x200B;个组件在SCF中实现为Handlebars (HBS)组件，需要为UGC选择SRP。
+**第3代**：从AEM 6.2开始，只有&#x200B;**social**&#x200B;个组件在SCF中作为需要为UGC选择SRP的Handlebars (HBS)组件实现。

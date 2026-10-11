@@ -6,26 +6,42 @@ role: Developer, Admin
 feature: Developer Tools,Renditions
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '694'
+source-wordcount: '731'
 ht-degree: 0%
-
 ---
-
 # 使用PDF光栅器 {#using-pdf-rasterizer}
 
-将大型、内容密集型PDF或AI文件上传到[!DNL Adobe Experience Manager Assets]时，默认库可能无法生成准确的输出。 与默认库的输出相比，Adobe的PDF光栅器库可以生成更可靠和更准确的输出。 Adobe建议将PDF光栅器库用于以下场景：
+将大型、内容密集型PDF或AI文件上传到[!DNL Adobe Experience Manager Assets]时，默认库可能无法生成准确的输出。 与默认库的输出相比，Adobe的PDF光栅器库可以生成更可靠、更准确的输出。 Adobe建议将PDF光栅器库用于以下场景：
 
-Adobe建议为以下内容使用PDF光栅器库：
+Adobe建议将PDF光栅器库用于：
 
 * 繁重、内容密集的AI文件或PDF文件。
-* 默认情况下，不会生成AI文件以及包含缩略图的PDF文件。
+* AI文件和PDF文件，其中包含默认不生成的缩略图。
 * 具有Pantone匹配系统(PMS)颜色的AI文件。
 
-与开箱即用输出相比，使用PDF光栅器生成的缩略图和预览质量更好，因此可跨设备提供一致的观看体验。 Adobe PDF光栅器库不支持任何色彩空间转换。 它始终输出到RGB，与源文件的色彩空间无关。
+与开箱即用输出相比，使用PDF光栅器生成的缩略图和预览质量更好，因此可在各个设备上提供一致的查看体验。 Adobe PDF光栅器库不支持任何色彩空间转换。 无论源文件的色彩空间如何，它始终输出到RGB。
 
-1. 从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip)在[!DNL Adobe Experience Manager]PDF上安装部署光栅器包。
+1. 从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip)在[!DNL Adobe Experience Manager]部署上安装PDF光栅器包。
 
    >[!NOTE]
    >
@@ -60,7 +76,7 @@ Adobe建议为以下内容使用PDF光栅器库：
 
    * `-s`：最大图像尺寸（高度或宽度）。 每页都将转换为DPI。 如果页面大小不同，则每个页面可能会按不同的数量进行缩放。 默认值为实际页面大小。
 
-   * `-t`：输出图像类型。 有效类型为JPEG、PNG、GIF和BMP。 默认值为“JPEG”。
+   * `-t`：输出图像类型。 有效类型为JPEG、PNG、GIF和BMP。 默认值为JPEG。
 
    * `-i`：输入PDF的路径。 它是必需参数。
 
@@ -76,7 +92,7 @@ Adobe建议为以下内容使用PDF光栅器库：
    ![web_enabled_image1](assets/web_enabled_image1.png)
 
 1. 保存工作流。
-1. 要启用PDF光栅器以使用PDF库处理PDF，请从[!UICONTROL 工作流]控制台中打开&#x200B;**[!UICONTROL DAM流程子资产]**&#x200B;模型。
+1. 要使PDF光栅器能够使用PDF Libraries处理PDF页面，请从[!UICONTROL 工作流]控制台打开&#x200B;**[!UICONTROL DAM处理子资产]**&#x200B;模型。
 1. 从侧面板中，将PDF光栅器处理程序步骤拖动到&#x200B;**[!UICONTROL 创建支持Web的图像演绎版]**&#x200B;步骤下。
 1. 为&#x200B;**[!UICONTROL PDF光栅器处理程序]**&#x200B;步骤配置以下参数：
 
@@ -90,7 +106,7 @@ Adobe建议为以下内容使用PDF光栅器库：
 
    * `-s`：最大图像尺寸（高度或宽度）。 每页都将转换为DPI。 如果页面大小不同，则每个页面可能会按不同的数量进行缩放。 默认值为实际页面大小。
 
-   * `-t`：输出图像类型。 有效类型为JPEG、PNG、GIF和BMP。 默认值为“JPEG”。
+   * `-t`：输出图像类型。 有效类型为JPEG、PNG、GIF和BMP。 默认值为JPEG。
 
    * `-i`：输入PDF的路径。 它是必需参数。
 
@@ -106,4 +122,4 @@ Adobe建议为以下内容使用PDF光栅器库：
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. 保存工作流。
-1. 将PDF文件或AI文件上载到[!DNL Experience Manager Assets]。 PDF光栅器会为文件生成缩略图和Web呈现形式。
+1. 将PDF文件或AI文件上传到[!DNL Experience Manager Assets]。 PDF光栅器会为文件生成缩略图和Web演绎版。

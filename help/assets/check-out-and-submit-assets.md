@@ -1,5 +1,5 @@
 ---
-title: 签入和签出 [!DNL Assets]中的文件
+title: 签入和签出[!DNL Assets]中的文件
 description: 了解如何签出资源以进行编辑，并在更改完成后重新签入。
 contentOwner: AG
 role: User
@@ -7,13 +7,22 @@ feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '479'
 ht-degree: 5%
-
 ---
-
 # 在[!DNL Experience Manager] DAM中签入和签出文件 {#check-in-and-check-out-files-in-assets}
 
 | 版本 | 文章链接 |

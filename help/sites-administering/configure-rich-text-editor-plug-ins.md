@@ -6,13 +6,22 @@ exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f64a1014dfd1155bcf815e75a27102244ef6c6de
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '4473'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
 
 # 配置富文本编辑器插件 {#configure-the-rich-text-editor-plug-ins}
 
@@ -39,16 +48,16 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
    * 根据您的组件，父节点包括：
 
-      * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
-      * 替代配置节点： `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
-      * `text: .../text/dialog/items/tab1/items/text`
+     * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
+     * 替代配置节点： `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
+     * `text: .../text/dialog/items/tab1/items/text`
 
    * 类型为： **jcr:primaryType** `cq:Widget`
    * 两者都具有以下属性：
 
-      * **名称** `name`
-      * **类型** `String`
-      * **值** `./text`
+     * **名称** `name`
+     * **类型** `String`
+     * **值** `./text`
 
 1. 根据您配置的接口，创建一个节点`<rtePlugins-node>`（如果它不存在）：
 
@@ -167,7 +176,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 |---|---|---|
 | `allowBlockTags` | 字符串 | 定义允许的块标记列表。 一些可能的块标记包括： <ul> <li>标题(h1、h2、h3)</li> <li>第(p)款</li> <li>列表(ol， ul)</li> <li>表(table)</li> </ul> |
 | `fallbackBlockTag` | 字符串 | 定义块标记，该标记用于具有未包含在`allowBlockTags`中的块标记的任何块。 `p`通常就足够了。 |
-| 表 | nt:unstructured | 定义粘贴表时的行为。 此节点必须具有属性`allow` （类型Boolean）才能定义是否允许粘贴表。 如果allow设置为`false`，则必须指定属性`ignoreMode` （类型String）以定义如何处理粘贴的表内容。 `ignoreMode`的有效值为： <ul> <li>`remove`：删除表内容。</li> <li>`paragraph`：将表格单元格转换为段落。</li> </ul> |
+| 表格 | nt:unstructured | 定义粘贴表时的行为。 此节点必须具有属性`allow` （类型Boolean）才能定义是否允许粘贴表。 如果allow设置为`false`，则必须指定属性`ignoreMode` （类型String）以定义如何处理粘贴的表内容。 `ignoreMode`的有效值为： <ul> <li>`remove`：删除表内容。</li> <li>`paragraph`：将表格单元格转换为段落。</li> </ul> |
 | list | nt:unstructured | 定义粘贴列表时的行为。 必须具有属性`allow` （类型Boolean）以定义是否允许粘贴列表。 如果`allow`设置为`false`，则必须指定属性`ignoreMode`（类型字符串）以定义如何处理粘贴的任何列表内容。 `ignoreMode`的有效值为： <ul><li> `remove`：删除列表内容。</li> <li>`paragraph`：将列表项转换为段落。</li> </ul> |
 
 以下是有效`htmlPasteRules`结构的示例。
@@ -304,7 +313,7 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
 1. 将属性文本添加到同一节点。 值是作者在选择样式时看到的样式名称。
    * 名称: `text`
-*类型： `String`
+     *类型： `String`
    * 值： `Japanese word-wrap`
 
 1. 创建样式表并指定其路径。 请参阅[指定样式表](#locationofstylesheet)的位置。 将以下内容添加到样式表中。 根据需要更改背景颜色。
@@ -511,13 +520,13 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
    * 要为整个表定义样式（可在&#x200B;**表属性**&#x200B;下使用）：
 
-      * **名称** `tableStyles`
-      * **类型** `cq:WidgetCollection`
+     * **名称** `tableStyles`
+     * **类型** `cq:WidgetCollection`
 
    * 要为单个单元格定义样式（可在&#x200B;**单元格属性**&#x200B;下使用）：
 
-      * **名称** `cellStyles`
-      * **类型** `cq:WidgetCollection`
+     * **名称** `cellStyles`
+     * **类型** `cq:WidgetCollection`
 
 1. 创建一个节点（视情况在`tableStyles`或`cellStyles`节点下），以便您可以表示单个样式：
 
@@ -528,15 +537,15 @@ RTE功能通过一系列插件提供，每个插件都具有功能属性。 您�
 
    * 定义要引用的CSS样式
 
-      * **名称** `cssName`
-      * **类型** `String`
-      * **值** CSS类的名称（不带前缀`.`，例如`cssClass`而不是`.cssClass`）
+     * **名称** `cssName`
+     * **类型** `String`
+     * **值** CSS类的名称（不带前缀`.`，例如`cssClass`而不是`.cssClass`）
 
    * 定义要在下拉选择器中显示的描述性文本
 
-      * **名称** `text`
-      * **类型** `String`
-      * **值**&#x200B;要显示在选择列表中的文本
+     * **名称** `text`
+     * **类型** `String`
+     * **值**&#x200B;要显示在选择列表中的文本
 
 1. 保存所有更改。
 
@@ -689,58 +698,58 @@ RTE允许作者撤消或重做前几次编辑。 默认情况下，历史中存�
 
    * 内部链接的CSS样式：
 
-      * **名称** `cssInternal`
-      * **类型** `String`
-      * **值** CSS类的名称（不带前缀“。”；例如，`cssClass`而不是`.cssClass`）
+     * **名称** `cssInternal`
+     * **类型** `String`
+     * **值** CSS类的名称（不带前缀“。”；例如，`cssClass`而不是`.cssClass`）
 
    * 外部链接的CSS样式
 
-      * **名称** `cssExternal`
-      * **类型** `String`
-      * **值** CSS类的名称（不带前缀“。”；例如，`cssClass`而不是`.cssClass`）
+     * **名称** `cssExternal`
+     * **类型** `String`
+     * **值** CSS类的名称（不带前缀“。”；例如，`cssClass`而不是`.cssClass`）
 
    * 有效&#x200B;**协议**&#x200B;的数组。 支持的协议为`http://`、`https://`、`file://`和`mailto:`。
 
-      * **名称** `protocols`
-      * **类型** `String[]`
-      * **值**&#x200B;一个或多个协议
+     * **名称** `protocols`
+     * **类型** `String[]`
+     * **值**&#x200B;一个或多个协议
 
    * **defaultProtocol** （类型为&#x200B;**字符串**&#x200B;的属性）：用户未明确指定协议时要使用的协议。
 
-      * **名称** `defaultProtocol`
-      * **类型** `String`
-      * **值**&#x200B;一个或多个默认协议
+     * **名称** `defaultProtocol`
+     * **类型** `String`
+     * **值**&#x200B;一个或多个默认协议
 
    * 有关如何处理链接的目标属性的定义。 创建节点：
 
-      * **名称** `targetConfig`
-      * **类型** `nt:unstructured`
+     * **名称** `targetConfig`
+     * **类型** `nt:unstructured`
 
      在节点`targetConfig`上，定义所需的属性：
 
-      * 指定目标模式：
+     * 指定目标模式：
 
-         * **名称** `mode`
-         * **类型** `String`
-         * **值**
+       * **名称** `mode`
+       * **类型** `String`
+       * **值**
 
-            * `auto`：表示选择了自动目标
+         * `auto`：表示选择了自动目标
 
-              （由外部链接的`targetExternal`属性或内部链接的`targetInternal`指定）。
+           （由外部链接的`targetExternal`属性或内部链接的`targetInternal`指定）。
 
-            * `manual`：在此上下文中不适用
-            * `blank`：在此上下文中不适用
+         * `manual`：在此上下文中不适用
+         * `blank`：在此上下文中不适用
 
-      * 内部链接的目标：
+     * 内部链接的目标：
 
-         * **名称** `targetInternal`
-         * **类型** `String`
-         * **值**&#x200B;内部链接的目标（仅在模式为`auto`时使用）
+       * **名称** `targetInternal`
+       * **类型** `String`
+       * **值**&#x200B;内部链接的目标（仅在模式为`auto`时使用）
 
-      * 外部链接的目标：
+     * 外部链接的目标：
 
-         * **名称** `targetExternal`
-         * **类型** `String`
-         * **值**&#x200B;外部链接的目标（仅在模式为`auto`时使用）。
+       * **名称** `targetExternal`
+       * **类型** `String`
+       * **值**&#x200B;外部链接的目标（仅在模式为`auto`时使用）。
 
 1. 保存所有更改。

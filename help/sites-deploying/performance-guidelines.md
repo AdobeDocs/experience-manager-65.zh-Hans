@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 6f3c4f4aa4183552492c6ce5039816896bd67495
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3000'
 ht-degree: 6%
-
 ---
-
 # 性能指南{#performance-guidelines}
 
 本页提供了有关如何优化AEM部署性能的一般准则。 如果您是AEM的新用户，请在开始阅读性能指南之前阅读以下页面：
@@ -354,12 +363,12 @@ AEM部署有三个重要的构建基块。 内容作者、编辑者和批准者�
 * 尽量不要使用查询
 * 请勿使用Sling绑定在Java™代码中获取OSGi服务，而是使用：
 
-   * DS组件中的@Reference
-   * 在Sling模型中@Inject用
-   * Sightly Use类中的sling.getService()
-   * JSP中的sling.getService()
-   * ServiceTracker
-   * 直接访问OSGi服务注册表
+  * DS组件中的@Reference
+  * 在Sling模型中@Inject用
+  * Sightly Use类中的sling.getService()
+  * JSP中的sling.getService()
+  * ServiceTracker
+  * 直接访问OSGi服务注册表
 
 有关在AEM上进行开发的更多详细信息，请阅读[开发 — 基础知识](/help/sites-developing/the-basics.md)。 有关其他最佳实践，请参阅[开发最佳实践](/help/sites-developing/best-practices.md)。
 
@@ -834,24 +843,24 @@ Adobe建议将TarMK作为客户在所有部署场景中使用的默认持久性�
 
 * **TarMK文件数据存储** — 针对大多数客户推荐的体系结构：
 
-   * 最小拓扑：一个创作实例、两个发布实例、两个Dispatcher
-   * 如果文件数据存储是共享的，则启用无二进制复制
+  * 最小拓扑：一个创作实例、两个发布实例、两个Dispatcher
+  * 如果文件数据存储是共享的，则启用无二进制复制
 
 * **具有文件数据存储的MongoMK** — 为创作层的水平可扩展性推荐的体系结构：
 
-   * 最小拓扑：三个创作实例、三个MongoDB实例、两个发布实例、两个Dispatcher
-   * 如果文件数据存储是共享的，则启用无二进制复制
+  * 最小拓扑：三个创作实例、三个MongoDB实例、两个发布实例、两个Dispatcher
+  * 如果文件数据存储是共享的，则启用无二进制复制
 
 * **节点存储** — 存储在本地磁盘上，而不是网络连接存储(NAS)
 * 使用&#x200B;**Amazon S3**&#x200B;时：
 
-   * Amazon S3数据存储区在创作层和发布层之间共享
-   * 必须打开无二进制复制
-   * 数据存储垃圾收集要求首先在所有创作和发布节点上运行一次，然后在创作节点上再运行一次
+  * Amazon S3数据存储区在创作层和发布层之间共享
+  * 必须打开无二进制复制
+  * 数据存储垃圾收集要求首先在所有创作和发布节点上运行一次，然后在创作节点上再运行一次
 
 * **除了开箱即用索引之外，还应创建自定义索引** — 基于最常见的搜索
 
-   * Lucene索引应该用于自定义索引
+  * Lucene索引应该用于自定义索引
 
 * **自定义工作流可以显着提高性能** — 删除“更新资产”工作流中的视频步骤，禁用未使用的监听程序等。
 

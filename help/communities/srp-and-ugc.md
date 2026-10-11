@@ -9,13 +9,20 @@ exl-id: 8279684f-23dd-4234-bf01-fd2ce74bcb4e
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '693'
 ht-degree: 0%
-
 ---
-
 # SRP和UGC Essentials {#srp-and-ugc-essentials}
 
 ## 简介 {#introduction}
@@ -36,7 +43,7 @@ SRP API不是抽象类，它是一个接口。 不应轻率地执行自定义实
 
 使用SRP API的方法是通过提供的实用程序，例如SocialResourceUtilities包中的实用程序。
 
-从AEM 6.0或更低版本升级时，需要迁移所有SRP的UGC(开放式Source工具适用)。 请参阅[升级到AEM Communities 6.3](upgrade.md)。
+从AEM 6.0或更低版本升级时，需要为可用的开放Source工具所适用的所有SRP迁移UGC。 请参阅[升级到AEM Communities 6.3](upgrade.md)。
 
 >[!NOTE]
 >
@@ -100,7 +107,7 @@ protected void doGet(final SlingHttpServletRequest request, final SlingHttpServl
 
 ## 与UGC相关的存储位置 {#ugc-related-storage-locations}
 
-以下对存储位置的说明在使用JSRP或MSRP进行开发时可能会有所帮助。 当前没有用于访问ASRP中存储的UGC的UI，因为存在JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md))和MSRP （MongoDB工具）。
+以下对存储位置的说明在使用JSRP或MSRP进行开发时可能会有所帮助。 与JSRP ([CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md))和MSRP （MongoDB工具）一样，当前没有用于访问ASRP中存储的UGC的UI。
 
 **组件位置**
 
@@ -124,7 +131,7 @@ UGC既未在这两个位置创建，也只能使用调用SRP API的[实用程序
 * 根路径= `/content/usergenerated/asi/srp-choice`
 * JSRP的UGC节点= `/content/usergenerated/asi/jcr/content/community-components/en/comments/jcr:content/content/includable/comments/srzd-let_it_be_`
 
-*请注意*，对于JSRP，UGC节点将&#x200B;*仅*&#x200B;出现在输入它的AEM实例（创作或发布）上。 如果在发布实例中输入，则无法从“创作”的审核控制台中进行审核。
+*请注意*，对于JSRP，UGC节点将&#x200B;*仅*&#x200B;存在于输入它的AEM实例（创作或发布）上。 如果在发布实例中输入，则无法从“创作”的审核控制台中进行审核。
 
 ## 相关信息 {#related-information}
 

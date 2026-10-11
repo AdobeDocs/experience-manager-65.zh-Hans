@@ -1,18 +1,29 @@
 ---
-title: ' [!DNL Assets]的最佳实践'
+title: '[!DNL Assets]的最佳实践'
 description: 通过确定并遵循取决于您的部署和配置的最佳做法，增强系统在负载下的稳定性和性能。
 contentOwner: AG
 feature: Asset Management
 role: Developer, Admin
 exl-id: 6b50f1b3-9c1c-47c8-a43e-6f40c42a41cc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 0%
-
+source-wordcount: '512'
+ht-degree: 1%
 ---
-
 # [!DNL Assets]的最佳实践 {#best-practices-for-assets}
 
 [!DNL Adobe Experience Manager Assets]是提供高质量数字营销体验的重要组成部分，有助于通过提高内容速度来实现业务目标。 如果您在[!DNL Experience Manager Assets]内处理大量资产或定期/定期上传大量资产（包括视频和Dynamic Media），则优化数字资产管理体验对于提高系统效率至关重要。

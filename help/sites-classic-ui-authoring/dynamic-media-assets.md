@@ -1,6 +1,6 @@
 ---
 title: 在Sites Classic创作中使用Dynamic Media
-description: Dynamic Media可帮助按需提供丰富的视觉推销和营销资源，自动针对Web、移动和社交网站上的消费进行扩展。 Dynamic Media使用一组主要源资源，通过其可扩展、性能优化的全球网络实时生成并提供多种丰富内容变体。
+description: Dynamic Media可帮助按需提供丰富的可视化商品推销和营销资产，自动扩展以用于Web、移动和社交网站上的使用。 通过使用一组主要源资产，Dynamic Media通过其可扩展、性能优化的全球网络实时生成和提供多种多样的丰富内容变体。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
@@ -9,18 +9,27 @@ exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: caf2d5b4f03823e57c579eafdd47b52ef9357493
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '200'
-ht-degree: 2%
-
+source-wordcount: '211'
+ht-degree: 1%
 ---
-
 # 使用 Dynamic Media{#working-with-dynamic-media}
 
-[Dynamic Media](https://business.adobe.com/cn/products/experience-manager/assets/dynamic-media.html)可帮助按需提供丰富的视觉营销和营销资源，可自动扩展以用于Web、移动和社交网站上的使用。 Dynamic Media使用一组主要源资源，通过其可扩展、性能优化的全球网络实时生成并提供多种丰富内容变体。
+[Dynamic Media](https://business.adobe.com/cn/products/experience-manager/assets/dynamic-media.html)可帮助按需提供丰富的可视化推销和营销资产，可自动扩展以用于Web、移动和社交网站上的使用。 通过使用一组主要源资产，Dynamic Media通过其可扩展、性能优化的全球网络实时生成和提供多种多样的丰富内容变体。
 
-Dynamic Media提供交互式查看体验，包括缩放、360度旋转和视频。 Dynamic Media独特地整合了Adobe Experience Manager数字资产管理(Assets)解决方案的工作流，以简化和简化数字营销活动管理流程。
+Dynamic Media提供交互式查看体验，包括缩放、360度旋转和视频。 Dynamic Media以独特方式整合了Adobe Experience Manager数字资产管理(Assets)解决方案的工作流，以简化和简化数字营销活动管理流程。
 
 经典UI中不提供使用Dynamic Media的功能。 请参阅[使用Dynamic Media](/help/assets/dynamic-media.md)，其中包含支持触屏的用户界面。
 

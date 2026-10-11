@@ -1,6 +1,6 @@
 ---
-title: 群集环境中的备份和恢复策略
-description: 如果AEM表单实施将其他自定义数据存储在其他数据库中，则必须实施策略来备份此数据，确保它与AEM表单数据保持同步。
+title: 集群环境下的备份与恢复策略
+description: 如果您的AEM表单实施将其他自定义数据存储在其他数据库中，则必须实施策略来备份此数据，确保它与AEM表单数据保持同步。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
@@ -9,32 +9,46 @@ exl-id: 98c96349-f253-475f-b646-352269814a38
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1396'
-ht-degree: 0%
-
+source-wordcount: '1428'
+ht-degree: 1%
 ---
-
-# 群集环境中的备份和恢复策略 {#strategy-for-backup-and-restore-in-a-clustered-environment}
+# 集群环境下的备份与恢复策略 {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
 >[!NOTE]
 >
->如果AEM表单实施将其他自定义数据存储在其他数据库中，则必须实施策略来备份此数据，确保它与AEM表单数据保持同步。 此外，应用程序必须设计得足够强健，能够处理其他数据库不同步的情况。 强烈建议在事务上下文中执行任何数据库操作，以帮助保持一致状态。
+>如果您的AEM表单实施将其他自定义数据存储在其他数据库中，则必须实施策略来备份此数据，确保它与AEM表单数据保持同步。 此外，应用程序必须设计得足够强健，能够处理其他数据库不同步的情况。 强烈建议在事务上下文中执行任何数据库操作，以帮助保持一致状态。
 
 您需要备份AEM表单系统的以下部分，以便从任何错误中恢复：
 
-* AEM表单使用的数据库
+* AEM Forms使用的数据库
 * 具有长期数据和其他持久性文档的GDS
 * AEM数据库(crx-repository)
 
 >[!NOTE]
 >
->您需要备份AEM表单设置正在使用的任何其他数据，例如客户字体、连接器数据等。
+>您需要备份AEM表单设置使用的任何其他数据，例如客户字体、连接器数据等。
 
 ## 备份群集环境 {#back-up-a-clustered-environment}
 
-本主题讨论备份任何AEM表单群集环境的以下策略：
+本主题讨论备份任何AEM表单集群环境的以下策略：
 
 * 离线备份与停机时间
 * 不停机进行脱机备份（备份已关闭的辅助节点）
@@ -119,8 +133,8 @@ ht-degree: 0%
    >如果损坏的节点是AEM主节点，请关闭整个群集节点。
 
 1. 从系统映像重新创建物理系统。
-1. 将自映像生成以来应用的修补程序或更新应用到AEM表单。 此信息是在备份过程中记录的。 必须将AEM表单恢复到与备份系统时相同的修补程序级别。
-1. （*可选*）如果所有其他节点工作正常，则AEM存储库可能也已损坏。 在这种情况下，您将在AEM存储库的error.log文件中看到一条存储库取消同步消息。
+1. 将自生成图像以来应用的修补程序或更新应用到AEM表单。 此信息是在备份过程中记录的。 必须将AEM表单恢复到与备份系统时相同的修补程序级别。
+1. （*可选*）如果所有其他节点工作正常，则AEM存储库也有可能已损坏。 在这种情况下，您将在AEM存储库的error.log文件中看到一条存储库取消同步消息。
 
    要恢复存储库，请执行以下步骤。
 
@@ -133,7 +147,7 @@ ht-degree: 0%
    1. 删除节点上的文件clusterNode/revision.log 。
    1. 删除节点上的.lock （如果存在）。
    1. 删除节点上的repository/system.id （如果存在）。
-   1. 删除节点上的文件&amp;amp；ast；&amp;amp；ast；/listener.properties （如果存在）。
+   1. 删除节点上的文件&amp;ast；&amp;ast；/listener.properties （如果存在）。
    1. 恢复单个群集节点的repository/cluster_node.id 。
 
 >[!NOTE]
@@ -148,7 +162,7 @@ ht-degree: 0%
 
 1. 停止所有群集节点。
 1. 从系统映像重新创建物理系统。
-1. 对自映像生成以来应用的AEM formsAEM表单应用补丁或更新。 此信息记录在备份过程的步骤1中。 必须将AEM表单恢复到与备份系统时相同的修补程序级别。
+1. 将自生成图像以来应用的修补程序或更新应用到AEM formsAEM表单。 此信息记录在备份过程的步骤1中。 必须将AEM表单恢复到与备份系统时相同的修补程序级别。
 1. 恢复数据库、GDS和连接器。
 1. 执行以下操作以离线恢复AEM存储库：
 
@@ -163,7 +177,7 @@ ht-degree: 0%
    1. 删除所有群集节点上的文件clusterNode/revision.log 。
    1. 删除所有群集节点上的.lock （如果存在）。
    1. 删除repository/system.id所有群集节点（如果存在）。
-   1. 删除所有群集节点上的文件&amp;amp；ast；&amp;amp；ast；/listener.properties （如果存在）。
+   1. 删除所有群集节点上的文件&amp;ast；&amp;ast；/listener.properties （如果存在）。
    1. 恢复单个群集节点的repository/cluster_node.id 。
 
 >[!NOTE]
@@ -181,10 +195,10 @@ ht-degree: 0%
 ### 恢复单个发布者节点 {#recover-a-single-publisher-node}
 
 1. 关闭必须恢复的节点，并在节点再次启动之前不执行任何发布活动。
-1. 使用[还原备份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)还原Publish节点。
+1. 使用[还原备份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)还原发布节点。
 
 ### 恢复群集 {#recover-a-cluster}
 
 1. 关闭群集。
-1. 使用[还原备份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)还原Publish节点。
+1. 使用[还原备份](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)还原发布节点。
 1. 启动主节点，然后启动创作群集的辅助节点。

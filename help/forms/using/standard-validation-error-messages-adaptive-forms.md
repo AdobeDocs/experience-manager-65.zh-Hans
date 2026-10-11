@@ -10,16 +10,32 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2357'
-ht-degree: 78%
-
+source-wordcount: '2537'
+ht-degree: 81%
 ---
-
 # 自适应Forms中的错误处理程序 {#error-handlers-in-adaptive-form}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -52,7 +68,7 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。 它还提
 ## 失败/错误响应格式 {#failure-response-format}
 
 如果服务器验证错误消息采用以下标准格式，则自适应表单会在字段级别显示错误。
-以下代码说明了现有的故障响应结构：
+以下代码说明了现有的失败响应结构：
 
 ```javascript
    {
@@ -105,19 +121,19 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。 它还提
 
 其中：
 * `type (required)` 指定失败类型。 它可以是下列任一值：
-   * `SERVER_SIDE_VALIDATION` 指示因服务器端验证导致的失败。
-   * `FORM_SUBMISSION` 指示表单提交期间发生的失败。
-   * `SERVICE_INVOCATION` 指示第三方服务调用期间发生的失败。
-   * `FAILURE` 指示常见失败。
-   * `VALIDATION_ERROR` 指示因验证错误导致的失败。
+  * `SERVER_SIDE_VALIDATION` 指示因服务器端验证导致的失败。
+  * `FORM_SUBMISSION` 指示表单提交期间发生的失败。
+  * `SERVICE_INVOCATION` 指示第三方服务调用期间发生的失败。
+  * `FAILURE` 指示常见失败。
+  * `VALIDATION_ERROR` 指示因验证错误导致的失败。
 
 * `title (optional)` 提供失败的标题或简要描述。
 * `detail (optional)` 提供有关失败的其他详细信息（如有必要）。
 * `instance (optional)` 表示与失败相关的实例或标识符，并可帮助跟踪或识别具体发生的失败。
 * `validationErrors (required)` 包含有关验证错误的信息。 它包含以下字段：
-   * `fieldname`提及未能通过验证条件的字段的SOM表达式。
-   * `dataRef` 表示未通过验证的字段的 JSON 路径或 XPath。
-   * `details` 包含带错误字段的验证错误消息。
+  * `fieldname`提及未能通过验证条件的字段的SOM表达式。
+  * `dataRef` 表示未通过验证的字段的 JSON 路径或 XPath。
+  * `details` 包含带错误字段的验证错误消息。
 * `originCode (optional)` 字段由 AEM 添加，包含由外部服务返回的 http 状态代码。
 * `originMessage (optional)` 字段由 AEM 添加，包含由外部服务返回的原始错误数据。
 
@@ -202,8 +218,8 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。 它还提
 
 ### 添加默认错误处理程序函数 {#add-default-errror-handler}
 
-如果错误响应位于标准架构中或服务器端验证失败，则支持使用默认错误处理程序在字段上显示错误消息。
-要了解如何使用[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hans#invoke)操作来使用默认错误处理程序，请以包含两个字段&#x200B;**Pet ID**&#x200B;和&#x200B;**Pet名称**&#x200B;的简单自适应表单为例，在&#x200B;**Pet ID**&#x200B;字段使用默认错误处理程序来检查配置为调用外部服务的REST终结点返回的各种错误，例如`200 - OK`、`404 - Not Found`、`400 - Bad Request`。要使用规则编辑器的“调用服务”操作添加默认错误处理程序，请执行以下步骤：
+如果错误响应处于标准架构或服务器端验证失败，则支持默认错误处理程序以在字段上显示错误消息。
+为了了解如何通过[规则编辑器的调用服务](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/rule-editor.html?lang=zh-Hans#invoke)操作来使用默认错误处理程序，以具有&#x200B;**宠物 ID** 和&#x200B;**宠物名称**&#x200B;这两个字段的简单自适应表单为例，并在&#x200B;**宠物 ID** 字段上使用默认错误处理程序，以检查为调用外部服务而配置的 REST 端点所返回的各种错误，例如 `200 - OK`、`404 - Not Found`、`400 - Bad Request`。 要使用规则编辑器的调用服务操作添加默认错误处理程序，请执行以下步骤：
 
 1. 在创作模式下打开自适应表单，选择一个表单组件，然后选择&#x200B;**[!UICONTROL 规则编辑器]**&#x200B;以打开规则编辑器。
 1. 选择&#x200B;**[!UICONTROL 创建]**。
@@ -264,8 +280,8 @@ AEM Forms 为表单提交提供现成的成功和错误处理程序。 它还提
 创建的文件夹结构如下所示：
 
    ![创建的客户端库文件夹结构](/help/forms/using/assets/customclientlibrary_folderstructure.png)
-1. 双击`functions.js`文件以打开编辑器。文件包含自定义错误处理程序的代码。
-让我们将以下代码添加到JavaScript文件，以在浏览器控制台中显示从REST服务端点收到的响应和标头。
+1. 双击`functions.js`文件以打开编辑器。 该文件包含自定义错误处理程序的代码。
+让我们将以下代码添加到该 JavaScript 文件中，以在浏览器控制台中显示从 REST 服务端点接收到的响应和标头。
 
    ```javascript
        /**

@@ -1,6 +1,6 @@
 ---
-title: 如何以编程方式访问AEM JCR
-description: 您可以通过编程方式修改位于AEM存储库(Adobe Experience Cloud的一部分)中的节点和属性
+title: 如何以编程方式访问 AEM JCR
+description: 您可以通过编程方式修改位于AEM存储库（Adobe Experience Cloud的一部分）中的节点和属性
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -9,16 +9,30 @@ exl-id: fe946b9a-b29e-4aa5-b973-e2a652417a55
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,JCR
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: cd14456d-a492-4b5c-8a82-1fbd4460dbd2
+    internal-label: Java Content Repository
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 0%
-
+source-wordcount: '603'
+ht-degree: 2%
 ---
+# 如何以编程方式访问 AEM JCR{#how-to-programmatically-access-the-aem-jcr}
 
-# 如何以编程方式访问AEM JCR{#how-to-programmatically-access-the-aem-jcr}
-
-您可以通过编程方式修改位于Adobe CQ存储库(Adobe Experience Cloud的一部分)中的节点和属性。 要访问CQ存储库，请使用Java™内容存储库(JCR) API。 您可以使用Java™ JCR API创建、替换、更新和删除Adobe CQ存储库中的(CRUD)内容。 有关Java™ JCR API的详细信息，请参阅[https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html)。
+您可以通过编程方式修改位于Adobe CQ存储库（Adobe Experience Cloud的一部分）中的节点和属性。 要访问CQ存储库，请使用Java™内容存储库(JCR) API。 您可以使用Java™ JCR API创建、替换、更新和删除Adobe CQ存储库中的(CRUD)内容。 有关Java™ JCR API的详细信息，请参阅[https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html)。
 
 >[!NOTE]
 >
@@ -34,7 +48,7 @@ ht-degree: 0%
 
 ## 创建存储库实例 {#create-a-repository-instance}
 
-虽然有不同的方法连接到存储库并建立连接，但此开发文章使用属于`org.apache.jackrabbit.commons.JcrUtils`类的静态方法。 方法的名称为`getRepository`。 此方法采用表示Adobe CQ服务器URL的字符串参数。 例如：`http://localhost:4503/crx/server`。
+虽然有不同的方法连接到存储库并建立连接，但此开发文章使用属于`org.apache.jackrabbit.commons.JcrUtils`类的静态方法。 方法的名称为`getRepository`。 此方法采用表示Adobe CQ服务器URL的字符串参数。 例如 `http://localhost:4503/crx/server`。
 
 `getRepository`方法返回`Repository`实例，如以下代码示例所示。
 
@@ -141,6 +155,6 @@ try {
 }
 ```
 
-运行完整的代码示例并创建节点后，您可以查看&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;中的新节点，如下图所示。
+运行完整的代码示例并创建节点后，您可以在&#x200B;**[!UICONTROL CRXDE Lite]**&#x200B;中查看新节点，如下图所示。
 
 ![chlimage_1-68](assets/chlimage_1-68a.png)

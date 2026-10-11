@@ -4,13 +4,19 @@ description: 了解通用编辑器的灵活性，以及它如何帮助您在 AEM
 feature: Developing
 role: Developer
 exl-id: 7bdf1fcc-02b9-40bc-8605-e6508a84d249
-source-git-commit: 28e44586c6a8596037a44fa10d21b3fdcdea1606
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1361'
 ht-degree: 96%
-
 ---
-
 
 # 通用编辑器 {#universal-editor}
 
@@ -40,15 +46,15 @@ ht-degree: 96%
 通用编辑器受到以下环境支持：
 
 * AEM 6.5
-   * 支持内部部署和AMS*托管。
+  * 支持内部部署和AMS*托管。
 * [AEM 6.5 LTS](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65-lts/content/implementing/developing/headless/universal-editor/introduction)
-   * 支持内部部署和AMS*托管。
+  * 支持内部部署和AMS*托管。
 * [AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
 
 本文档重点介绍 AEM 6.5 对通用编辑器的支持。 要在 AEM 6.5 中使用通用编辑器，您需要：
 
 * 安装了服务包 23 或更高版本的 AEM 6.5
-   * 服务包 21 和 22 也受支持，但需搭配[功能包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)使用。
+  * 服务包 21 和 22 也受支持，但需搭配[功能包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/cq-6.5.21-universal-editor-1.0.0.zip)使用。
 * 正确配置 Dispatcher
 
 >[!NOTE]
@@ -129,11 +135,11 @@ ht-degree: 96%
 映射示例：
 
 * 打开 AEM 作者上 `/content/foo` 下的所有页面：
-   * `/content/foo:${author}${path}.html?login-token=${token}`
-   * 这会打开 `https://localhost:4502/content/foo/x.html?login-token=<token>`
+  * `/content/foo:${author}${path}.html?login-token=${token}`
+  * 这会打开 `https://localhost:4502/content/foo/x.html?login-token=<token>`
 * 打开远程 NextJS 服务器上 `/content/bar` 下的所有页面，提供所有变量的信息
-   * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
-   * 这会打开 `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
+  * `/content/bar:nextjs.server${path}?env=${env}&author=https://${author}&publish=https://${publish}&login-token=${token}`
+  * 这会打开 `https://nextjs.server/content/bar/x?env=prod&author=https://localhost:4502&publish=https://localhost:4503&login-token=<token>`
 
 ### 设置通用编辑器服务 {#set-up-ue}
 

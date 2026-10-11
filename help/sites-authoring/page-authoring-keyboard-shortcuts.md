@@ -9,16 +9,29 @@ exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '220'
 ht-degree: 55%
-
 ---
-
 # 编辑页面时的键盘快捷键{#keyboard-shortcuts-when-editing-pages}
 
-在整个 AEM 环境中都可以使用各种键盘快捷键。某些可应用于编辑页面，其他可应用于控制台[的使用](/help/sites-authoring/keyboard-shortcuts.md)。
+在整个 AEM 环境中都可以使用各种键盘快捷键。 某些可应用于编辑页面，其他可应用于控制台[的使用](/help/sites-authoring/keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
@@ -42,7 +55,7 @@ ht-degree: 55%
 
 >[!NOTE]
 >
->&amp;amp；ast；用户开始在“预览”模式下与页面交互后，`Ctrl-Shift-m`快捷键便不再可用。 用户必须单击顶部编辑器栏或返回到“编辑”模式，才能使该快捷键再次变为可用。
+>&amp;ast；用户开始在“预览”模式下与页面交互后，`Ctrl-Shift-m`快捷方式便不再可用。 用户必须单击顶部编辑器栏或返回到“编辑”模式，才能使该快捷键再次变为可用。
 
 在使用[控制台](/help/sites-authoring/keyboard-shortcuts.md)时，桌面用户也可以使用各种键盘快捷键。
 

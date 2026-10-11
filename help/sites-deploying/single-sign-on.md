@@ -9,13 +9,25 @@ feature: Security
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '738'
+source-wordcount: '752'
 ht-degree: 5%
-
 ---
-
 # 单点登录 {#single-sign-on}
 
 单点登录(SSO)允许用户在提供一次身份验证凭据（如用户名和密码）后访问多个系统。 另一个系统（称为可信身份验证程序）执行身份验证并向Experience Manager提供用户凭据。 Experience Manager会检查并强制用户的访问权限（即确定允许用户访问的资源）。
@@ -85,7 +97,8 @@ SSO身份验证处理程序服务(`com.adobe.granite.auth.sso.impl.SsoAuthentica
 >* `disp_iis.ini`
 >* IIS
 >
->在`disp_iis.ini`中，设置：>（有关完整详细信息，请参阅[使用® Internet Information Server安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=zh-Hans#microsoft-internet-information-server)）
+>在`disp_iis.ini`集合中：
+>（有关完整详细信息，请参阅[将Dispatcher与Microsoft® Internet Information Server一起安装](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=zh-Hans#microsoft-internet-information-server)）
 >
 >* `servervariables=1` （将IIS服务器变量作为请求标头转发到远程实例）
 >* `replaceauthorization=1` （将除“Basic”以外的任何名为“Authorization”的标头替换为其“Basic”等效标头）
@@ -148,7 +161,7 @@ Transfer-Encoding: chunked
 如果您请求，这也适用：
 `http://localhost:4502/libs/cq/core/content/welcome.html?TestParameter=admin`
 
-或者，您可以使用以下curl命令将`TestHeader`标头发送到`admin:`
+或者，您可以使用以下curl命令将`TestHeader`标头发送到 `admin:`
 `curl -D - -H "TestHeader: admin" http://localhost:4502/libs/cq/core/content/welcome.html`
 
 >[!NOTE]

@@ -5,13 +5,29 @@ feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1415'
+source-wordcount: '1419'
 ht-degree: 9%
-
 ---
-
 # 教程：创建自适应表单 {#do-not-publish-tutorial-create-an-adaptive-form}
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
@@ -186,4 +202,4 @@ AEM [!DNL Forms]提供了许多组件以便在自适应表单上显示信息。 
 1. 使用![标尺](assets/ruler.png)查看表单在各种设备上的外观。
 1. 填写表单的字段并选择&#x200B;**[!UICONTROL 提交]**。 表单已提交，您将被重定向到默认的&#x200B;**感谢**&#x200B;页面。 您还可以指定自定义感谢页面。 有关详细信息，请参阅[配置重定向页面](/help/forms/using/configuring-redirect-page.md)。
 
-用于添加地址的自适应表单已准备就绪。 如果您使用了本教程中提到的名称，并在运行AEM Forms服务器的计算机上访问了该表单，则该表单可在[http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)中找到。
+用于添加地址的自适应表单已准备就绪。 如果您使用了本教程中提到的名称，并在运行AEM Forms服务器的计算机上访问该表单，则该表单可在[http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)中找到。

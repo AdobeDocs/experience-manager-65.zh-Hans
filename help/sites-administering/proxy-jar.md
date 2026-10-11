@@ -10,13 +10,22 @@ exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1190'
 ht-degree: 0%
-
 ---
-
 # 代理服务器工具（proxy.jar）{#proxy-server-tool-proxy-jar}
 
 代理服务器充当在客户端和服务器之间中继请求的中间服务器。 代理服务器跟踪所有客户端 — 服务器交互并输出整个TCP通信的日志。 这使您能够准确地监视正在发生的情况，而无需访问主服务器。
@@ -143,7 +152,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 </html>
 ```
 
-如果AEM在localhost:4303上运行，请按如下方式启动代理服务器：
+如果AEM在localhost：4303上运行，请如下所示启动代理服务器：
 
 ```xml
 java -jar proxy.jar localhost 4303 4444 -logfile test.log

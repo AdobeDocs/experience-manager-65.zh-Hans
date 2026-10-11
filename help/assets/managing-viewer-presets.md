@@ -11,13 +11,27 @@ feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 13c495b8b7e9824c5de8469df96bec00c74c8dbc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8e79b3c-92b5-4c4d-a46c-5f16d63a14dc
+    internal-label: Viewer presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4530'
+source-wordcount: '4654'
 ht-degree: 8%
-
 ---
-
 # 管理查看器预设{#managing-viewer-presets}
 
 查看器预设是设置集合，用于确定用户在其计算机屏幕和移动设备上查看富媒体资产的方式。 如果您是管理员，则可以创建查看器预设。 设置可用于一系列查看器配置选项。 例如，您可以更改查看器的显示大小或缩放行为。
@@ -60,7 +74,7 @@ ht-degree: 8%
 >[!NOTE]
 >
 >在首次使用现成查看器之前，请发布这些查看器。
->查看[发布查看器预设]。(#publishing-viewer-presets)
+>请参阅[发布查看器预设]。(#publishing-viewer-presets)
 
 ### 查看器预设系统兼容性 {#viewer-preset-system-compatibility}
 
@@ -163,7 +177,7 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
 >[!NOTE]
 >
 >Dynamic Media中的所有现成查看器预设都已激活（开），但您必须发布它们。
->查看[发布查看器预设](#publishing-viewer-presets)。
+>请参阅[发布查看器预设](#publishing-viewer-presets)。
 >
 >您创建和添加的任何新查看器预设都必须激活*和*已发布。
 >请参阅[激活或停用查看器预设](#activating-or-deactivating-viewer-presets)和[发布查看器预设](#publishing-viewer-presets)。
@@ -458,15 +472,15 @@ Dynamic Media随附的所有现成查看器预设与以下系统完全兼容：
    >对于按钮图稿，请选择2x图像并上传高分辨率图稿。 使用交互式图像和购物横幅时，您还可以从各种现成的热点按钮中进行选择。
 
 1. （可选）在“编辑查看器预设”页面顶部附近，选择&#x200B;**[!UICONTROL Desktop]**、**[!UICONTROL Tablet]**&#x200B;或&#x200B;**[!UICONTROL Phone]**，为不同的设备和屏幕类型唯一定义可视样式。
-1. 在“查看器预设编辑器”页面上，选择&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡。或者，您可以选择查看器中的任何可视元素，以选择进行配置。
+1. 在“查看器预设编辑器”页面上，选择&#x200B;**[!UICONTROL 行为]**&#x200B;选项卡。 或者，您可以选择查看器中的任何可视元素，以选择进行配置。
 例如，对于*VideoPlayer*&#x200B;类型，在&#x200B;**[!UICONTROL 修饰符]** > **[!UICONTROL 播放]**&#x200B;下，您可以从三个自适应比特率流选项中选择一个：
 
    * **[!UICONTROL 短划线]** — 视频流仅显示为短划线。 但是，在Safari/iOS设备上，您必须选择&#x200B;**[!UICONTROL hls]**&#x200B;作为类型。
    * **[!UICONTROL hls]** — 视频流仅作为hls。
    * **[!UICONTROL auto]** — 最佳实践。 DASH和HLS流的创建过程优化了存储。 因此，Adobe建议您始终选择&#x200B;**[!UICONTROL auto]**&#x200B;作为播放类型。 视频流采用短划线、HLS或渐进式格式，如以下播放顺序所示：
-      * 如果浏览器支持DASH，则首先使用DASH流。
-      * 如果浏览器不支持DASH，则使用HLS流式传输，其次是。
-      * 如果浏览器不支持DASH或HLS，则最后使用渐进式播放。
+     * 如果浏览器支持DASH，则首先使用DASH流。
+     * 如果浏览器不支持DASH，则使用HLS流式传输，其次是。
+     * 如果浏览器不支持DASH或HLS，则最后使用渐进式播放。
 
 1. 从&#x200B;**[!UICONTROL 选定类型]**&#x200B;下拉菜单中，选择要更改其行为的组件。
 

@@ -10,13 +10,20 @@ exl-id: d121dc05-7d15-44ba-8d2d-b59d6c6480c8
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '967'
 ht-degree: 0%
-
 ---
-
 # 消息传送功能 {#messaging-feature}
 
 除了在论坛和评论中发生的公开可见的交互之外，AEM Communities的消息传送功能还允许社区成员更私密地相互交互。
@@ -63,7 +70,8 @@ ht-degree: 0%
 1. 在`Preview`模式下，选择&#x200B;**消息**&#x200B;链接以打开主消息页面。 然后选择&#x200B;**收件箱**、**已发送邮件**&#x200B;或&#x200B;**垃圾桶**&#x200B;以配置该邮件列表的组件。
 
 1. 在`Edit`模式下，选择页面上的组件。
-1. 要访问配置对话框，请选择`link`图标以取消继承。取消继承后，可以选择配置图标以打开配置对话框。
+1. 要访问配置对话框，请选择`link`图标以取消继承。
+取消继承后，可以选择配置图标以打开配置对话框。
 
 1. 配置完成后，需要通过选择`broken link`图标来恢复继承。
 
@@ -136,7 +144,8 @@ ht-degree: 0%
 * 在`Preview`模式下，选择&#x200B;**消息**&#x200B;链接以打开主消息页面。 然后选择“新建消息”按钮，以打开`Compose Message`页面。
 
 * 在`Edit`模式下，选择包含消息正文的页面上的主组件。
-* 要访问配置对话框，请选择`link`图标以取消继承。取消继承后，可以选择配置图标以打开配置对话框。
+* 要访问配置对话框，请选择`link`图标以取消继承。
+取消继承后，可以选择配置图标以打开配置对话框。
 
 * 配置完成后，需要通过选择`broken link`图标来恢复继承。
 

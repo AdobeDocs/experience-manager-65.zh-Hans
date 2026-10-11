@@ -1,6 +1,6 @@
 ---
-title: 国际化UI字符串
-description: Java&amp；trade；和JavaScript API使您能够国际化字符串
+title: 国际化 UI 字符串
+description: Java&trade；和JavaScript API使您能够国际化字符串
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,14 +9,23 @@ exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1091'
 ht-degree: 0%
-
 ---
-
-# 国际化UI字符串 {#internationalizing-ui-strings}
+# 国际化 UI 字符串 {#internationalizing-ui-strings}
 
 Java™和JavaScript API使您能够国际化以下资源类型中的字符串：
 
@@ -29,7 +38,7 @@ Java™和JavaScript API使您能够国际化以下资源类型中的字符串�
 
 ## 在Java™和JSP代码中国际化字符串 {#internationalizing-strings-in-java-and-jsp-code}
 
-`com.day.cq.i18n` Java™包允许您在UI中显示本地化的字符串。 `I18n`类提供从Adobe Experience Manager (AEM)词典中检索本地化字符串的`get`方法。 `get`方法的唯一必需参数是英语中的字符串文字。 英语是UI的默认语言。 以下示例将单词`Search`本地化：
+`com.day.cq.i18n` Java™包允许您在UI中显示本地化的字符串。 `I18n`类提供从Adobe Experience Manager (AEM)词典检索本地化字符串的`get`方法。 `get`方法的唯一必需参数是英语中的字符串文字。 英语是UI的默认语言。 以下示例将单词`Search`本地化：
 
 `i18n.get("Search");`
 
@@ -169,7 +178,7 @@ UI字符串通常基于JCR节点属性。 例如，页面的`jcr:title`属性通
 
 `${prop}_commentI18n`
 
-例如，`cq:page`节点包含正在本地化的jcr：title属性。 提示作为名为jcr：title_commentI18n的属性的值提供。
+例如，`cq:page`节点包含正在本地化的jcr:title属性。 提示作为名为jcr:title_commentI18n的属性的值提供。
 
 ### 测试国际化范围 {#testing-internationalization-coverage}
 

@@ -9,13 +9,24 @@ feature: Asset Management
 role: User, Admin
 exl-id: 7a568cae-e505-4b3a-abc5-8aae723460c3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1504'
+source-wordcount: '1506'
 ht-degree: 4%
-
 ---
-
 # 在Dynamic Media中优化图像质量的最佳实践 {#best-practices-for-optimizing-the-quality-of-your-images}
 
 优化图像质量可能是一个耗时的过程，因为许多因素有助于呈现可接受的结果。 结果部分具有主观性，因为个人对图像质量的看法不同。 结构化试验是关键。
@@ -26,7 +37,7 @@ Adobe Experience Manager包含100多条Dynamic Media图像投放命令，可用�
 
 * JPG或PNG是提供高品质且大小和重量可控的图像的最佳选择。
 * 如果未在URL中提供任何格式命令，则Dynamic Media图像投放默认为JPG进行投放。
-* JPG压缩的比率为10:1，通常生成的图像文件较小。 PNG压缩的比率约为2:1，除非有时（如图像包含白色背景时）。 但是，PNG文件通常比JPG文件大。
+* JPG按10:1的比例压缩，通常生成的图像文件较小。 PNG压缩的比例约为2:1，除非有时，例如当图像包含白色背景时。 但是，PNG文件通常比JPG文件大。
 * JPG使用有损压缩，这意味着压缩期间会丢弃图片元素（像素）。 另一方面，PNG使用无损压缩。
 * JPG压缩照片图像时通常比具有锐边和对比度的合成图像更加逼真。
 * 如果图像包含透明度，请使用PNG，因为JPG不支持透明度。
@@ -60,24 +71,24 @@ See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photosh
 * 简单锐化(`&op_sharpen`) — 与Photoshop中使用的锐化滤镜类似，简单锐化会在动态调整大小后对图像的最终视图应用基本锐化。 但是，此方法不可由用户配置。 除非需要，否则最佳实践为不使用&amp;op_sharpen。
 * USM锐化( `&op_USM`) - USM锐化是一种行业标准锐化滤镜。 最佳实践是遵循以下准则，使用钝化蒙版来锐化图像。 USM锐化允许您控制以下三个参数：
 
-   * `&op_sharpen=amount,radius,threshold`
+  * `&op_sharpen=amount,radius,threshold`
 
-      * **[!UICONTROL *数量&#x200B;*]**（0-5，效果强度。）
-      * **[!UICONTROL *半径&#x200B;*]**（0-250，围绕锐化对象绘制的“锐化线”的宽度，以像素为单位。）
+    * **[!UICONTROL *数量&#x200B;*]**（0-5，效果强度。）
+    * **[!UICONTROL *半径&#x200B;*]**（0-250，围绕锐化对象绘制的“锐化线”的宽度，以像素为单位。）
 
-     请记住，参数半径和数量彼此对应。 减小半径可以通过增加量来补偿。 半径允许更细的控制，因为较低的值仅锐化边缘像素，而较高的值锐化较宽范围的像素。
+    请记住，参数半径和数量彼此对应。 减小半径可以通过增加量来补偿。 半径允许更细的控制，因为较低的值仅锐化边缘像素，而较高的值锐化较宽范围的像素。
 
-      * **[!UICONTROL *阈值&#x200B;*]**（0-255，效果敏感度。）
+    * **[!UICONTROL *阈值&#x200B;*]**（0-255，效果敏感度。）
 
-            此参数确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素，而滤镜会锐化这些像素。 **[!UICONTROL threshold]**&#x200B;参数有助于避免过度锐化颜色相似的区域，如肤色。 例如，阈值为12时，会忽略肤色亮度的细微变化，以避免添加“杂色”，同时仍会为高对比度区域添加边缘对比度，如睫毛与皮肤相遇的地方。
-        
-        有关如何设置这三个参数的更多信息（包括要与过滤器一起使用的最佳实践），请参阅以下资源：
+          此参数确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素，而滤镜会锐化这些像素。 **[!UICONTROL threshold]**&#x200B;参数有助于避免过度锐化颜色相似的区域，如肤色。 例如，阈值为12时，会忽略肤色亮度的细微变化，以避免添加“杂色”，同时仍会为高对比度区域添加边缘对比度，如睫毛与皮肤相遇的地方。
+      
+      有关如何设置这三个参数的更多信息（包括要与过滤器一起使用的最佳实践），请参阅以下资源：
 
-        有关锐化图像的Experience Manager帮助主题。
+      有关锐化图像的Experience Manager帮助主题。
 
-        最佳实践白皮书[在Adobe Dynamic Media Classic中锐化图像](/help/assets/assets/sharpening_images.pdf)。
+      最佳实践白皮书[在Adobe Dynamic Media Classic中锐化图像](/help/assets/assets/sharpening_images.pdf)。
 
-      * Experience Manager还允许您控制第四个参数：单色(0,1)。 此参数确定是使用值0分别将钝化蒙版应用于每个颜色组件，还是使用值1将钝化蒙版应用于图像亮度/强度。
+    * Experience Manager还允许您控制第四个参数：单色(0,1)。 此参数确定是使用值0分别将钝化蒙版应用于每个颜色组件，还是使用值1将钝化蒙版应用于图像亮度/强度。
 
 作为最佳实践，请从钝化蒙版半径参数开始。 可以开始使用的Radius设置如下：
 
@@ -98,8 +109,8 @@ See also [Sharpening an image with unsharp mask](https://helpx.adobe.com/photosh
 * 作为最佳实践，要停留在中间，请将`qlt= value`设置为85以停留在中间。
 * 在`qlt=`中使用色度标志
 
-   * `qlt=`参数具有第二个设置，允许您使用值`,1`打开RGB色度缩减像素采样，或使用值`,0`关闭。
-   * 要保持简单，请从关闭RGB色度缩减像素采样(`,0`)开始。 此设置通常可以获得更好的图像质量，尤其是对于具有大量锐边和对比度的合成图像。
+  * `qlt=`参数具有第二个设置，允许您使用值`,1`打开RGB色度缩减像素采样，或使用值`,0`关闭。
+  * 要保持简单，请从关闭RGB色度缩减像素采样(`,0`)开始。 此设置通常可以获得更好的图像质量，尤其是对于具有大量锐边和对比度的合成图像。
 
 作为JPG压缩的最佳实践，请使用`&qlt=85,0`。
 

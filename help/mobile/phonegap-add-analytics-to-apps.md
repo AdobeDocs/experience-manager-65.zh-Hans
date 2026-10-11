@@ -1,6 +1,6 @@
 ---
 title: 将Adobe Analytics添加到您的移动应用程序
-description: 关注此页面，了解如何通过与Analytics Mobile Services集成，在Adobe Experience Manager应用程序中使用移动应用程序Adobe。
+description: 关注此页面，了解如何通过与Adobe Mobile Services集成，在Adobe Experience Manager应用程序中使用移动应用程序分析。
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -9,22 +9,26 @@ exl-id: 8d965e94-c368-481d-b000-6e22456c34db
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '883'
+source-wordcount: '919'
 ht-degree: 0%
-
 ---
-
 # 将Adobe Analytics添加到您的移动应用程序{#add-adobe-analytics-to-your-mobile-application}
 
 {{ue-over-mobile}}
 
-想要为您的移动应用程序用户打造引人入胜的相关体验？ 如果您没有使用AdobeMobile Services SDK来监控和衡量应用程序的生命周期和使用情况，那么您的决策依据是什么？ 您最忠诚的客户在哪里？ 如何保证您保持相关状态并优化转化？
+想要为您的移动应用程序用户打造引人入胜的相关体验？ 如果您没有使用Adobe Mobile Services SDK来监控和衡量应用程序的生命周期和使用情况，那么您的决策依据是什么？ 您最忠诚的客户在哪里？ 如何保证您保持相关状态并优化转化？
 
 您的用户是否正在访问所有内容？ 他们是否在放弃该应用程序，如果是，在哪里放弃？ 他们多久留在应用程序中，多久回访一次以使用应用程序？ 您可以引入哪些更改，然后衡量这些更改是否提高了客户保留率？ 崩溃率如何？您的应用程序是否为用户而崩溃？
 
-通过与[AdobeMobile Services](https://business.adobe.com/cn/products/campaign/mobile-marketing.html)集成，在您的Adobe Experience Manager (AEM)应用程序中利用[移动应用程序Analytics](https://business.adobe.com/cn/products/analytics/mobile-marketing.html)。
+通过与[Adobe Mobile Services](https://business.adobe.com/cn/products/campaign/mobile-marketing.html)集成，在您的Adobe Experience Manager (AEM)应用程序中利用[Mobile App Analytics](https://business.adobe.com/cn/products/analytics/mobile-marketing.html)。
 
 检测您的AEM应用程序，以跟踪、报告和了解用户如何参与您的移动设备应用程序和内容，并测量关键生命周期量度，例如启动次数、应用程序逗留时间和崩溃率。
 
@@ -38,7 +42,7 @@ ht-degree: 0%
 AEM Mobile需要使用Adobe Analytics帐户来收集和报告应用程序中的跟踪数据。 作为配置的一部分，AEM *管理员*&#x200B;必须首先：
 
 * 在Mobile Services中设置Adobe Analytics帐户，并为您的应用程序创建报表包。
-* 在Adobe Experience Manager (AEM)中配置AMSCloud Service。
+* 在Adobe Experience Manager (AEM)中配置AMS Cloud Service。
 
 ## 对于开发人员 — 将移动分析集成到您的应用程序中 {#for-developers-integrate-mobile-analytics-into-your-app}
 
@@ -46,9 +50,9 @@ AEM Mobile需要使用Adobe Analytics帐户来收集和报告应用程序中的�
 
 设置Analytics帐户后，创建内容同步配置以将内容拉入您的移动应用程序。
 
-有关其他详细信息，请参阅配置内容同步内容。 配置必须指示Content Sync将ADBMobileConfig放入/www目录。 例如，在Geometrixx Outdoors应用程序中，Content Sync配置位于： */content/phonegap/geometrixx-outdoors/shell/jcr：content/pge-app/app-config/ams-ADBMobileConfig*。 此外，还有用于开发的配置。 但是，如果存在Geometrixx Outdoors，则它与非开发配置相同。
+有关其他详细信息，请参阅配置内容同步内容。 配置必须指示Content Sync将ADBMobileConfig放入/www目录。 例如，在Geometrixx Outdoors应用程序中，Content Sync配置位于： */content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*。 此外，还有用于开发的配置。 但是，如果存在Geometrixx Outdoors，则它与非开发配置相同。
 
-有关如何从移动设备应用程序AEM应用程序仪表板下载ADBMobileConfig的详细信息，请参阅Analytics - Mobile Services -AdobeMobile Services SDK配置文件。
+有关如何从移动设备应用程序AEM应用程序仪表板下载ADBMobileConfig的详细信息，请参阅Analytics - Mobile Services - Adobe Mobile Services SDK配置文件。
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -64,7 +68,7 @@ AEM Mobile需要使用Adobe Analytics帐户来收集和报告应用程序中的�
 
 如果使用PhoneGap CLI进行构建，则可以使用cordova构建挂接脚本来完成此操作。 这可以在Geometrixx Outdoors应用程序中看到，网址为：*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-对于iOS，必须将文件复制到XCode项目的&#x200B;**资源**&#x200B;目录(例如，“platforms/ios/Geometrixx/Resources/ADBMobileConfig.json”)。 如果应用程序面向Android™，则要复制到的路径为“platforms/android/assets/ADBMobileConfig.json”。 有关在PhoneGap CLI构建期间使用挂接的更多详细信息，请参阅[Cordova/PhoneGap项目需要的三个挂接](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c)。
+对于iOS，必须将文件复制到XCode项目的&#x200B;**资源**&#x200B;目录（例如，“platforms/ios/Geometrixx/Resources/ADBMobileConfig.json”）。 如果应用程序面向™，则要复制到的路径为“platforms/android/assets/ADBMobileConfig.json”。 有关在PhoneGap CLI构建期间使用挂接的更多详细信息，请参阅[Cordova/PhoneGap项目需要的三个挂接](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c)。
 
 ```xml
 ///////////////////////////
@@ -87,7 +91,7 @@ AEM Mobile需要使用Adobe Analytics帐户来收集和报告应用程序中的�
 
 ### 在应用程序中添加AMS插件 {#add-the-ams-plugin-in-the-app}
 
-对于要收集数据的应用程序，需要将AdobeMobile Services (AMS)插件作为应用程序的一部分包含在内。 通过将插件作为功能包含在应用程序的config.xml中，可以使用另一个Cordova挂接在PhoneGap Build过程中自动添加插件。
+对于要收集数据的应用程序，需要将Adobe Mobile Services (AMS)插件包含在应用程序中。 通过将插件作为功能包含在应用程序的config.xml中，可以使用另一个Cordova挂接在PhoneGap Build过程中自动添加插件。
 
 ```xml
 <feature name="ADBMobile">
@@ -95,7 +99,7 @@ AEM Mobile需要使用Adobe Analytics帐户来收集和报告应用程序中的�
 </feature>
 ```
 
-Geometrixx Outdoors应用程序config.xml位于&#x200B;*/content/phonegap/geometrixx-outdoors/shell/jcr：content/pge-app/app-content/phonegap/www/config.xml*。 上述示例请求使用特定版本的插件，方法是在插件URL后添加“#”，然后添加标记值。 这是要遵循的一个良好实践，以确保不会出现因在构建期间添加未经测试的插件而导致的意外问题。
+Geometrixx Outdoors应用程序config.xml位于&#x200B;*/content/phonegap/geometrixx-outdoors/shell/jcr:content/pge-app/app-content/phonegap/www/config.xml*。 上述示例请求使用特定版本的插件，方法是在插件URL后添加“#”，然后添加标记值。 这是要遵循的一个良好实践，以确保不会出现因在构建期间添加未经测试的插件而导致的意外问题。
 
 执行这些步骤后，您的应用程序将能够报告Adobe Analytics提供的所有生命周期量度。 这包括启动次数、崩溃次数和安装次数等数据。 如果这是您关心的唯一数据，则表示您已完成。 如果要收集自定义数据，则必须检测代码。
 
@@ -118,6 +122,6 @@ Geometrixx Outdoors应用程序config.xml位于&#x200B;*/content/phonegap/geomet
 
 | **标签** | **描述** | **默认** |
 |---|---|---|
-| API端点 | AdobeMobile Services HTTP API的基本URL | https://api.omniture.com |
+| API端点 | Adobe Mobile Services HTTP API的基本URL | https://api.omniture.com |
 | 配置端点 | 用于检索给定报表包ID的ADB移动设备配置的URL | /ams/1.0/app/config/ |
 | Mobile Service应用程序 | 获取用户公司内的应用程序列表 | /ams/1.0/apps |

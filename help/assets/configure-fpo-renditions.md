@@ -7,13 +7,25 @@ feature: Renditions
 exl-id: 1e4ddd73-a31c-4ddd-94eb-1dac6a4835b3
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1098'
 ht-degree: 1%
-
 ---
-
 # 为Adobe InDesign生成“仅用于置入”演绎版 {#fpo-renditions}
 
 | 版本 | 文章链接 |

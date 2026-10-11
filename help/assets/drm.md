@@ -1,19 +1,35 @@
 ---
 title: Digital Rights Management资源
-description: 了解如何在 [!DNL Experience Manager]中管理已许可资源的资源到期状态和信息。
+description: 了解如何在[!DNL Experience Manager]中管理已许可资源的资源到期状态和信息。
 contentOwner: AG
 role: User, Admin
 feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: bbc7b67e-ac49-47fe-8657-97e42c72f200
+    internal-label: Digital rights management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1440'
 ht-degree: 8%
-
 ---
-
 # 资产的 Digital Rights Management {#digital-rights-management-in-assets}
 
 | 版本 | 文章链接 |

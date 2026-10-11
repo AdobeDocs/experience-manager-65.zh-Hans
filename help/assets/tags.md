@@ -11,13 +11,29 @@ feature: Viewers
 role: User, Admin, Developer
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d17d085a-e808-49dd-b9a6-85a996b999bd
+    internal-label: Viewers
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '6942'
-ht-degree: 6%
-
+source-wordcount: '6946'
+ht-degree: 7%
 ---
-
 # 将Dynamic Media查看器与Adobe Analytics和Experience Platform标记集成 {#integrating-dynamic-media-viewers-with-adobe-analytics-and-adobe-launch}
 
 ## 什么是Dynamic Media Viewer与Adobe Analytics和Experience Platform标记的集成？ {#what-is-dynamic-media-viewers-integration-with-adobe-analytics-and-adobe-launch}
@@ -214,7 +230,7 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 
 同样，当查看器在页面上发送相应事件时，数据元素的值也会自动更新。 即使在规则配置中未指定特定事件，也会发生值更新。 例如，假设为ZOOM事件的“scale”参数定义了数据元素&#x200B;**[!UICONTROL ZoomScale]**。 但是，规则配置中唯一存在的规则是由&#x200B;**[!UICONTROL LOAD]**&#x200B;事件触发的。 每次用户在查看器中运行缩放时，**[!UICONTROL ZoomScale]**&#x200B;的值仍会更新。
 
-任何Dynamic media查看器在网页上都有唯一标识符。 数据元素会跟踪值本身，以及填充该值的查看器。 例如，假设同一页面上有多个查看器，以及指向&#x200B;**[!UICONTROL LOAD]**&#x200B;事件及其“asset”参数的&#x200B;**[!UICONTROL AssetName]**&#x200B;数据元素。 **[!UICONTROL AssetName]**&#x200B;数据元素维护与页面上加载的每个查看器关联的资产名称集合。
+任何 Dynamic Media 查看器在网页上都有唯一标识符。 数据元素会跟踪值本身，以及填充该值的查看器。 例如，假设同一页面上有多个查看器，以及指向&#x200B;**[!UICONTROL LOAD]**&#x200B;事件及其“asset”参数的&#x200B;**[!UICONTROL AssetName]**&#x200B;数据元素。 **[!UICONTROL AssetName]**&#x200B;数据元素维护与页面上加载的每个查看器关联的资产名称集合。
 
 数据元素返回的确切值取决于上下文。 如果在由Dynamic Media查看器事件触发的规则中请求数据元素，则为启动规则的查看器返回数据元素值。 此外，数据元素是在某个规则中请求的，该规则是由某个其他Experience Platform Tags扩展中的事件触发的。 此时，数据元素的值来自上次更新此数据元素的查看器。
 
@@ -225,13 +241,13 @@ Dynamic Media Viewers 扩展提供的唯一数据元素类型是&#x200B;**[!UICO
 * **[!UICONTROL ZoomScale]**&#x200B;数据元素指向&#x200B;**[!UICONTROL ZOOM]**&#x200B;事件及其“缩放”参数。
 * **[!UICONTROL TrackPan]**&#x200B;规则具有以下属性：
 
-   * 使用Dynamic Media查看器&#x200B;**[!UICONTROL PAN]**&#x200B;事件作为触发器。
-   * 将&#x200B;**[!UICONTROL ZoomScale]**&#x200B;数据元素的值发送到Adobe Analytics。
+  * 使用Dynamic Media查看器&#x200B;**[!UICONTROL PAN]**&#x200B;事件作为触发器。
+  * 将&#x200B;**[!UICONTROL ZoomScale]**&#x200B;数据元素的值发送到Adobe Analytics。
 
 * **[!UICONTROL TrackKey]**&#x200B;规则具有以下属性：
 
-   * 使用核心Experience Platform Tags扩展中的按键事件作为触发器。
-   * 将&#x200B;**[!UICONTROL ZoomScale]**&#x200B;数据元素的值发送到Adobe Analytics。
+  * 使用核心Experience Platform Tags扩展中的按键事件作为触发器。
+  * 将&#x200B;**[!UICONTROL ZoomScale]**&#x200B;数据元素的值发送到Adobe Analytics。
 
 现在，假定最终用户加载网页时带有两个查看器。 在&#x200B;*查看器1*&#x200B;中，他们放大到50%的缩放比例；然后在&#x200B;*查看器2*&#x200B;中，他们放大到25%的缩放比例。 在&#x200B;*查看器1*&#x200B;中，他们平移图像，最后在键盘上选择一个键。
 
@@ -448,7 +464,7 @@ Adobe建议您仔细阅读本节之前的所有文档，以便了解整个集成
 
    现在，选择一个报表包。
 
-### 选择报表包 {#selecting-a-report-suite}
+### 选择一个报告包 {#selecting-a-report-suite}
 
 1. 在 Adobe Analytics 页面的右上角附近，在&#x200B;**[!UICONTROL 搜索报告]**&#x200B;字段的右侧，从下拉列表中选择正确的报表包。 如果有多个可用报表包，并且您不确定要使用哪个报表包，请与 Adobe Analytics 管理员联系，帮助您选择要使用的报表包。
 
@@ -758,8 +774,8 @@ Experience Manager配置包含以下两个主要步骤：
    * **[!UICONTROL 授权服务器]** — 返回您之前打开的“集成详细信息”页面。 选择&#x200B;**[!UICONTROL JWT]**&#x200B;选项卡。 复制服务器名称（不含路径），如下面突出显示的那样。
 
    返回到&#x200B;**[!UICONTROL 帐户]**&#x200B;页面，然后将名称粘贴到相应的字段中。
-例如，`https://ims-na1.adobelogin.com/`
-（服务器名称仅作为示例）
+   例如， `https://ims-na1.adobelogin.com/`
+   （服务器名称仅作为示例）
 
    ![2019-07-25_15-01-53](assets/2019-07-25_15-01-53.png)
 

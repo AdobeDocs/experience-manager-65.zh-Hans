@@ -10,13 +10,20 @@ exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '611'
 ht-degree: 1%
-
 ---
-
 # 创作嵌套组{#authoring-nested-groups}
 
 ## 创建创作组 {#creating-groups-on-author}
@@ -27,14 +34,14 @@ ht-degree: 1%
 * 选择&#x200B;**[!UICONTROL 参与文件夹]**&#x200B;以将其打开。
 * 选择&#x200B;**[!UICONTROL 入门教程]**&#x200B;英语站点的信息卡。
 
-   * 选择卡片图像。
-   * 请&#x200B;*不*&#x200B;选择一个图标。
+  * 选择卡片图像。
+  * 请&#x200B;*不*&#x200B;选择一个图标。
 
 结果访问[组控制台](/help/communities/groups.md)：
 
 ![创建组](assets/create-group.png)
 
-“组”功能将显示为文件夹，可在其中创建组的实例。 要打开该文件夹，请选择“组”文件夹。 在Publish上创建的组可见。
+“组”功能将显示为文件夹，可在其中创建组的实例。 要打开该文件夹，请选择“组”文件夹。 发布时创建的组可见。
 
 ![create-new-group](assets/create-new-group.png)
 
@@ -48,13 +55,13 @@ ht-degree: 1%
 
 * **社区组模板**：
 
-   * **[!UICONTROL 社区组标题]**：艺术
-   * **[!UICONTROL 社区组描述]**：各种艺术组的父组
-   * **[!UICONTROL 社区组根]**： *保留为默认值*
-   * **[!UICONTROL 其他可用的社区组语言]**：使用下拉菜单选择可用的社区组语言。 该菜单显示创建父社区站点时采用的所有语言。 用户可以在这些语言中进行选择，以便通过此单一步骤在多个区域设置中创建组。 在相应社区站点的“组”控制台中，以多种指定语言创建同一组。
-   * **[!UICONTROL 社区组名称]**： arts
-   * **[!UICONTROL 模板]**：用于选择`Reference Group`的下拉列表
-   * 选择&#x200B;**[!UICONTROL 下一步]**
+  * **[!UICONTROL 社区组标题]**：艺术
+  * **[!UICONTROL 社区组描述]**：各种艺术组的父组
+  * **[!UICONTROL 社区组根]**： *保留为默认值*
+  * **[!UICONTROL 其他可用的社区组语言]**：使用下拉菜单选择可用的社区组语言。 该菜单显示创建父社区站点时采用的所有语言。 用户可以在这些语言中进行选择，以便通过此单一步骤在多个区域设置中创建组。 在相应社区站点的“组”控制台中，以多种指定语言创建同一组。
+  * **[!UICONTROL 社区组名称]**： arts
+  * **[!UICONTROL 模板]**：用于选择`Reference Group`的下拉列表
+  * 选择&#x200B;**[!UICONTROL 下一步]**
 
 ![嵌套社区组](assets/parent-to-nestedgroup.png)
 
@@ -62,23 +69,23 @@ ht-degree: 1%
 
 * **[!UICONTROL Design]**
 
-   * 更改设计或允许默认父站点的设计。
-   * 选择&#x200B;**[!UICONTROL 下一步]**。
+  * 更改设计或允许默认父站点的设计。
+  * 选择&#x200B;**[!UICONTROL 下一步]**。
 
 * **[!UICONTROL 设置]**
 
-   * **[!UICONTROL 审核]**
+  * **[!UICONTROL 审核]**
 
-      * 留空（继承自父站点）。
+    * 留空（继承自父站点）。
 
-   * **[!UICONTROL 成员资格]**
+  * **[!UICONTROL 成员资格]**
 
-      * 使用默认`Optional Membership.`
+    * 使用默认`Optional Membership.`
 
-      * **[!UICONTROL 缩略图]**
-         * `optional.*`
+    * **[!UICONTROL 缩略图]**
+      * `optional.*`
 
-      * **[!UICONTROL 选择“下一步”]**。
+    * **[!UICONTROL 选择“下一步”]**。
 
 * 选择&#x200B;**[!UICONTROL 创建]**。
 
@@ -88,7 +95,7 @@ ht-degree: 1%
 
 ![嵌套组](assets/create-community-group.png)
 
-#### Publish集团 {#publish-group}
+#### 发布组 {#publish-group}
 
 在创建嵌套在`arts`组中的组之前，将鼠标悬停在`arts`卡片上并选择发布图标以进行发布。
 
@@ -139,29 +146,29 @@ ht-degree: 1%
 
 发布主社区站点后：
 
-* Publish各个组：
+* 单独发布每个组：
 
-   * 正在等待确认该组已发布。
+  * 正在等待确认该组已发布。
 
-* 在发布嵌套于以下位置的任何组之前，先对父组进行Publish：
+* 发布父组后再发布嵌套在以下内容中的任何组：
 
-   * 必须以自上而下的方式发布所有组。
+  * 必须以自上而下的方式发布所有组。
 
 ![组已发布](assets/group-published.png)
 
-## Publish体验 {#experience-on-publish}
+## 发布体验 {#experience-on-publish}
 
 登录时可能会体验不同的组，例如，使用[演示用户](/help/communities/tutorials.md#demo-users)进行以下操作：
 
 * 艺术/历史组成员： `emily.andrews@mailinator.com/password`
-   * 受限（机密）组“艺术/历史”可见：
-   * 能够查看可选（公共）组。
-   * 能够加入受限（开放）组。
+  * 受限（机密）组“艺术/历史”可见：
+  * 能够查看可选（公共）组。
+  * 能够加入受限（开放）组。
 
 * 组管理器： `aaron.mcdonald@mailinator.com/password`
 
-   * 能够查看可选（公共）组。
-   * 能够加入受限（开放）组。
-   * 无法查看受限（机密）组。
+  * 能够查看可选（公共）组。
+  * 能够加入受限（开放）组。
+  * 无法查看受限（机密）组。
 
 访问作者上的社区[成员和组控制台](/help/communities/members.md)以将其他用户添加到与社区组对应的各种成员组。

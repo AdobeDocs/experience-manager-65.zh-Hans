@@ -5,13 +5,26 @@ exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '321'
 ht-degree: 0%
-
 ---
-
 # 创作页面{#authoring-pages}
 
 下面提供了两种类型的AEM创作概述：
@@ -40,7 +53,7 @@ ht-degree: 0%
 * **[组件浏览器](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
 在可编辑页面的左侧，可以打开滑动浏览器；可以从此处将组件拖动到页面上，然后进行编辑。
 
-* **[资产浏览器](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
+* **[资源浏览器](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
 在可编辑页面的左侧，可以打开滑动浏览器；从这里，可以将资产拖动到页面上；例如，放置资产或创建指向其他页面的链接。
 
 * **组件工具栏**

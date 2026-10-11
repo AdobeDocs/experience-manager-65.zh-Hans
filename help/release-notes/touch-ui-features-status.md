@@ -1,22 +1,36 @@
 ---
 title: 触控 UI 功能状态
-description: 与 [!DNL Adobe Experience Manager] 触控 UI 相关的发行说明。
+description: 特定于[!DNL Adobe Experience Manager]触屏UI的发行说明。
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 100%
-
+source-wordcount: '1137'
+ht-degree: 97%
 ---
-
 # 触控 UI 功能状态 {#touch-ui-feature-status}
 
-从 Adobe Experience Manager（AEM）6.4 起，[经典 UI 已弃用](../release-notes/deprecated-removed-features.md)。Adobe 不再对经典 UI 进行任何功能增强，并鼓励用户使用触控 UI 中提供的强大新功能。
+从 Adobe Experience Manager（AEM）6.4 起，[经典 UI 已弃用](../release-notes/deprecated-removed-features.md)。 Adobe 不再对经典 UI 进行任何功能增强，并鼓励用户使用触控 UI 中提供的强大新功能。
 
-从 6.0 版本开始，AEM 引入了一种新的用户界面，称为“触控 UI”（Touch UI），该界面与 [!DNL Adobe Experience Cloud] 保持一致，并遵循 Adobe 的整体用户界面规范。随着功能几乎达到对等，触控 UI 已成为 AEM 的标准用户界面，而传统的桌面式界面则被称为“经典 UI”。
+从 6.0 版本开始，AEM 引入了一种新的用户界面，称为“触控 UI”（Touch UI），该界面与 [!DNL Adobe Experience Cloud] 保持一致，并遵循 Adobe 的整体用户界面规范。 随着功能几乎达到对等，触控 UI 已成为 AEM 的标准用户界面，而传统的桌面式界面则被称为“经典 UI”。
 
 尽管大多数功能已在触控 UI 中提供，但仍有部分功能尚未完善，并会在未来版本中补充。
 
@@ -26,7 +40,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->本页面仅涵盖与经典 UI 的功能对等情况。触控 UI 中新增的、经典 UI 中不具备的独有功能未在此列出。
+>本页面仅涵盖与经典 UI 的功能对等情况。 触控 UI 中新增的、经典 UI 中不具备的独有功能未在此列出。
 
 >[!NOTE]
 >
@@ -75,8 +89,8 @@ ht-degree: 100%
 | Live Copy 操作（推出） | 完整 |  |
 | 查看语言副本 | 完整 |  |
 | 查找并替换 | 缺失 | 请使用经典 UI。 |
-| 通知收件箱（JCR 事件） | 缺失 | 请使用经典 UI。将在未来版本中由不同的实施方式替代。 |
-| 引用 | 完整 | 在 AEM 6.5 中新增了显示传入页面链接的功能。出于性能方面的考虑，仅显示页面的直接链接。 |
+| 通知收件箱（JCR 事件） | 缺失 | 请使用经典 UI。 将在未来版本中由不同的实施方式替代。 |
+| 引用 | 完整 | 显示添加到AEM 6.5的传入页面链接。 出于性能原因，仅显示指向该页面的直接链接。 |
 
 ## 功能状态：页面编辑器 {#feature-status-page-editor}
 
@@ -101,7 +115,7 @@ ht-degree: 100%
 | 编辑属性 | 完整 |  |
 | 转出页面 | 完整 |  |
 | 启动并显示工作流 | 完整 |  |
-| 工作流包处理 | 大部分提供 | 可在触控 UI 中使用。多个工作流负载仍在经典 UI 中呈现。 |
+| 工作流包处理 | 大部分提供 | 可在触控 UI 中使用。 多个工作流负载仍在经典 UI 中呈现。 |
 | 锁定/解锁页面 | 完整 |  |
 | 发布页面 | 完整 |  |
 | 取消发布页面 | 完整 |  |

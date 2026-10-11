@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6847'
+source-wordcount: '6946'
 ht-degree: 0%
-
 ---
-
 # 文档片段{#document-fragments}
 
 ## 文档片段 {#document-fragments-1}
@@ -202,10 +215,10 @@ ht-degree: 0%
 * 在文本模块中使用适当的数据字典绑定。
 * 在更改文本资产时使用文本编辑器时，以下规则适用：
 
-   * 允许添加&#x200B;**变量：**
-   * **允许删除变量：**
-   * **允许更新属性：**
-   * **在不使用数据字典元素之前允许更改数据字典：**。 更新时无法更改数据字典。
+  * 允许添加&#x200B;**变量：**
+  * **允许删除变量：**
+  * **允许更新属性：**
+  * **在不使用数据字典元素之前允许更改数据字典：**。 更新时无法更改数据字典。
 
 ## 列表 {#list}
 
@@ -250,7 +263,7 @@ ht-degree: 0%
    ![选择要添加到列表中的资源](assets/selectassets.png)
 
 1. 资产将会添加到“列表项”页面。
-要更改列表中资源的顺序，请选择并按住箭头图标（ ![拖放](assets/dragndrop.png) ）并拖放。当用户在“创建通信”用户界面中打开信件模板时，内容将按照您在此处定义的顺序装配。
+要更改列表中资源的顺序，请选择并按住箭头图标（ ![拖放](assets/dragndrop.png) ）并拖放。 当用户在“创建通信”用户界面中打开信件模板时，内容将按照您在此处定义的顺序装配。
 
    ![对列表中的资源重新排序和配置](assets/listitems.png)
 
@@ -283,8 +296,8 @@ ht-degree: 0%
 * 使用适当的数据字典绑定
 * 使用列表编辑器更改列表时，以下规则适用：
 
-   * 属性更新：允许
-   * **更改数据字典：**&#x200B;允许直到没有使用该数据字典的项目与其关联为止。 更新时无法更改数据字典。
+  * 属性更新：允许
+  * **更改数据字典：**&#x200B;允许直到没有使用该数据字典的项目与其关联为止。 更新时无法更改数据字典。
 
 ## 条件 {#conditions}
 
@@ -340,10 +353,10 @@ ht-degree: 0%
 * 使用适当的数据字典绑定
 * 使用条件编辑器编辑条件时，以下规则适用：
 
-   * 允许添加&#x200B;**变量：**
-   * **允许删除变量：**
-   * **允许更新属性：**
-   * **在不使用数据字典元素之前允许更改数据字典：**。
+  * 允许添加&#x200B;**变量：**
+  * **允许删除变量：**
+  * **允许更新属性：**
+  * **在不使用数据字典元素之前允许更改数据字典：**。
 
 ## 布局片段 {#layoutfragments}
 
@@ -375,18 +388,18 @@ ht-degree: 0%
 
 * 对于占位符表，您可以在创建片段时自定义以下属性。
 
-   * 行计数
-   * 列计数
-   * 每列的页眉和页脚
-   * 每列的类型（目标区域/字段）
-   * 每列的宽度比率
+  * 行计数
+  * 列计数
+  * 每列的页眉和页脚
+  * 每列的类型（目标区域/字段）
+  * 每列的宽度比率
 
 * 对于非占位符表，可以自定义以下属性：
 
-   * 行计数
-   * 列计数
-   * 其他列的页眉和页脚
-   * 每列的宽度比率
+  * 行计数
+  * 列计数
+  * 其他列的页眉和页脚
+  * 每列的宽度比率
 
 您可以将片段嵌套在信件中。 这意味着您可以在片段中添加片段。 通信管理解决方案最多支持信件中的四个嵌套级别： **信件&#x200B;*>*片段&#x200B;*>*片段&#x200B;*>*片段&#x200B;*>*片段。**
 
@@ -485,7 +498,7 @@ ht-degree: 0%
 * **动态表**：布局片段提供将动态表的字段绑定到集合DDE的功能。 在生成信件时，表行是根据DDE集合的大小生成的。
 
 DD有一个收集元素Nominied_details，它有一个复合元素，该复合元素具有三个原始元素：Nominied_name、Nominied_address和Nominied_gender。
-动态XDP还具有相同的标头。这样，您就可以将动态XDP字段映射到上述的DD字段。
+动态XDP还具有相同的标头。 这样，您就可以将动态XDP字段映射到上述的DD字段。
 
 ### 示例文件的示例：在信件中使用静态和动态表 {#examplewithsamplefiles}
 
@@ -509,7 +522,7 @@ DD有一个收集元素Nominied_details，它有一个复合元素，该复合�
    或者，使用与此步骤一起附加的静态和动态XDP。
 
    有关使用布局片段的详细信息，请参阅[布局片段](#layoutfragments)。
-有关设计版面的详细信息，请参阅[Designer帮助](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)。
+   有关设计版面的详细信息，请参阅[Designer帮助](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/)。
 
    [获取文件](assets/static.xdp.zip)
 
@@ -526,7 +539,7 @@ DD有一个收集元素Nominied_details，它有一个复合元素，该复合�
 
 1. 基于静态XDP创建布局片段。 属性的“表”选项卡显示表是静态的（“配置对象”字段）。 行数(1)和列数(3)派生自XDP/布局片段。
 
-   您可以在此处更改列数和行数。根据您在此屏幕中选择的内容，静态表的行数和列数在使用此布局创建的信件中保持固定。
+   您可以在此处更改列数和行数。 根据您在此屏幕中选择的内容，静态表的行数和列数在使用此布局创建的信件中保持固定。
    [![创建布局片段屏幕](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. 使用其中的布局片段创建书信。 在信件中插入动态XDP时，请将其字段的绑定设置为数据字典的收集元素。

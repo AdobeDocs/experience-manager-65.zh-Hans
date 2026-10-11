@@ -9,13 +9,26 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: 512fb704c7edafc84f6c5856d076e7de503d5c22
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 72%
-
 ---
-
 # 控制台的键盘快捷键{#keyboard-shortcuts-for-consoles}
 
 在整个 AEM 环境中都可以使用各种键盘快捷键。 有些可应用于控制台的使用，其他应用于[页面编辑](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)。
@@ -72,7 +85,7 @@ AEM 避免出现热门浏览器已使用的常见快捷键，但 AEM 快捷键�
 >
 >AEM 快捷键不取代默认浏览器行为。
 >
->如果 AEM 快捷键与浏览器快捷键之间发生冲突，则 AEM 快捷键将不起作用，服从浏览器功能。
+>如果 AEM 快捷键与浏览器快捷键之间发生冲突，则 AEM 快捷键将不起作用，而会让位于浏览器行为。
 
 >[!CAUTION]
 >
@@ -84,7 +97,7 @@ AEM 避免出现热门浏览器已使用的常见快捷键，但 AEM 快捷键�
 
 AEM为一些常用功能（编辑、属性、复制/粘贴、显示各种边栏菜单等）提供了键盘快捷键。
 
-对于不使用键盘快捷键或要求使用特定辅助功能的用户，可禁用所有键盘快捷键。
+对于不使用键盘快捷键或有特定辅助功能需求的用户，可禁用所有键盘快捷键。
 
 可在以下两个位置停用键盘快捷键：
 
@@ -93,4 +106,4 @@ AEM为一些常用功能（编辑、属性、复制/粘贴、显示各种边栏�
 
 >[!NOTE]
 >
->列视图和内容树的导航快捷键始终处于激活状态。
+>列视图和内容树的导航快捷键始终处于启用状态。

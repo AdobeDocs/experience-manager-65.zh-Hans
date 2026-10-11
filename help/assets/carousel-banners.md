@@ -10,13 +10,27 @@ feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: e82a35fa-5829-4d45-8047-ede0efd4c4ad
+    internal-label: Carousel banners
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4665'
+source-wordcount: '4791'
 ht-degree: 3%
-
 ---
-
 # 轮播横幅{#carousel-banners}
 
 轮播横幅通过轻松创建交互式轮播促销内容并将其交付到任何屏幕，使营销人员能够推动转化。
@@ -88,7 +102,7 @@ ht-degree: 3%
 
    * [将轮播横幅添加到您的网站页面](#adding-a-carousel-banner-to-your-website-page)您可以将复制的轮播横幅URL或嵌入代码添加到网站页面。
 
-      * [将轮播横幅与现有概览集成](#integrating-the-carousel-banner-with-an-existing-quickview)。 如果您使用第三方Web内容管理系统，则必须将新的轮播横幅与网站上现有的概览实施集成。
+     * [将轮播横幅与现有概览集成](#integrating-the-carousel-banner-with-an-existing-quickview)。 如果您使用第三方Web内容管理系统，则必须将新的轮播横幅与网站上现有的概览实施集成。
 
    * [在Experience Manager中将轮播横幅添加到您的网站](/help/assets/adding-dynamic-media-assets-to-pages.md)如果您是Experience Manager Sites客户，则可以使用交互式媒体组件将轮播集直接添加到Experience Manager中的页面。
 
@@ -286,23 +300,23 @@ ht-degree: 3%
 
    * 选择&#x200B;**[!UICONTROL 概览]**。
 
-      * 如果您是Experience Manager Sites和电子商务客户，请选择产品选取器图标（放大镜）以打开选择产品页面。 选择要使用的产品，然后选择页面右上角的复选标记，以便您可以返回到轮盘横幅编辑器。
-      * 如果您不是Experience Manager Sites或电子商务客户
+     * 如果您是Experience Manager Sites和电子商务客户，请选择产品选取器图标（放大镜）以打开选择产品页面。 选择要使用的产品，然后选择页面右上角的复选标记，以便您可以返回到轮盘横幅编辑器。
+     * 如果您不是Experience Manager Sites或电子商务客户
 
-         * 如果要定义热点变量，请参阅[识别这些变量](#identifying-hotspot-and-image-map-variables)。
-         * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），它是您提供的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充概览模板的变量部分，以便系统知道将点按的热点与特定SKU的概览相关联。
-         * （可选）如果概览中还有其他变量必须用来进一步标识产品，请选择&#x200B;**[!UICONTROL 添加通用变量]**。 在文本字段中，指定一个额外的变量。 例如， category=Mens是一个添加的变量。
+       * 如果要定义热点变量，请参阅[识别这些变量](#identifying-hotspot-and-image-map-variables)。
+       * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），它是您提供的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充概览模板的变量部分，以便系统知道将点按的热点与特定SKU的概览相关联。
+       * （可选）如果概览中还有其他变量必须用来进一步标识产品，请选择&#x200B;**[!UICONTROL 添加通用变量]**。 在文本字段中，指定一个额外的变量。 例如， category=Mens是一个添加的变量。
 
-         * 有关详细信息，请参阅[使用选择器](/help/assets/working-with-selectors.md)。
+       * 有关详细信息，请参阅[使用选择器](/help/assets/working-with-selectors.md)。
 
    * 选择&#x200B;**[!UICONTROL 超链接]**。
 
-      * 如果您是Experience Manager Sites客户，请选择站点选择器图标（文件夹）以导航到URL。
-        >[!NOTE]
-        >
-        >如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+     * 如果您是Experience Manager Sites客户，请选择站点选择器图标（文件夹）以导航到URL。
+       >[!NOTE]
+       >
+       >如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
 
-      * 如果您是独立客户，请在HREF文本字段中指定链接网页的完整URL路径。
+     * 如果您是独立客户，请在HREF文本字段中指定链接网页的完整URL路径。
 
    请确保您指定是在新的浏览器选项卡（推荐的默认值）中还是同一选项卡中打开链接。
 
@@ -310,16 +324,16 @@ ht-degree: 3%
 
    * 选择&#x200B;**[!UICONTROL 体验片段]**。
 
-      * 如果您是Experience Manager Sites客户，请选择“搜索”图标（放大镜）以打开“体验片段”页面。选择要使用的体验片段，然后选择页面右上角的&#x200B;**[!UICONTROL 选择]**，以便您可以返回热点管理页面。
-请参阅[体验片段](/help/sites-authoring/experience-fragments.md)。
+     * 如果您是Experience Manager Sites客户，请选择“搜索”图标（放大镜）以打开“体验片段”页面。 选择要使用的体验片段，然后选择页面右上角的&#x200B;**[!UICONTROL 选择]**，以便您可以返回热点管理页面。
+       查看[体验片段](/help/sites-authoring/experience-fragments.md)。
 
-      * 指定体验片段在横幅上显示的宽度和高度。
+     * 指定体验片段在横幅上显示的宽度和高度。
 
-        >[!NOTE]
-        >
-        >将查看器嵌入体验片段时，不支持轮播横幅中的社交媒体共享工具。
-        >
-        >要解决此问题，请创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
+       >[!NOTE]
+       >
+       >将查看器嵌入体验片段时，不支持轮播横幅中的社交媒体共享工具。
+       >
+       >要解决此问题，请创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -379,7 +393,7 @@ ht-degree: 3%
 
 如果对轮播横幅满意，则可以发布该横幅。
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/embed-code.md)。
-请参阅[将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+请参阅[将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
 请参阅[将Dynamic Media Assets添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md)。
 
 您可以从轮播编辑器（首选方法）或&#x200B;**[!UICONTROL 查看器]**&#x200B;列表中预览轮播横幅。

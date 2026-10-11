@@ -9,13 +9,22 @@ feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1999'
 ht-degree: 1%
-
 ---
-
 # 配置 OSGi{#configuring-osgi}
 
 [OSGi](https://www.osgi.org/)是Adobe Experience Manager (AEM)技术栈栈中的基本元素。 它用于控制AEM的复合捆绑包及其配置。
@@ -34,22 +43,22 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 * [Adobe CQ Web控制台](#osgi-configuration-with-the-web-console)
 
-   * Web控制台是OSGi配置的标准界面。 它提供了一个用于编辑各种属性的UI，在其中可以从预定义列表中选择可能的值。
+  * Web控制台是OSGi配置的标准界面。 它提供了一个用于编辑各种属性的UI，在其中可以从预定义列表中选择可能的值。
 
-     因此，这是最简单的方法。
+    因此，这是最简单的方法。
 
-   * 使用Web控制台所做的任何配置都将立即应用并适用于当前实例，不论当前运行模式如何，也不论后续是否对运行模式进行了任何更改。
+  * 使用Web控制台所做的任何配置都将立即应用并适用于当前实例，不论当前运行模式如何，也不论后续是否对运行模式进行了任何更改。
 
 * [配置文件](#osgi-configuration-with-configuration-files)
 
-   * 包含在Web控制台中定义的设置。
-   * 可以包含在内容包中，以供在其他实例中使用。
+  * 包含在Web控制台中定义的设置。
+  * 可以包含在内容包中，以供在其他实例中使用。
 
 * [存储库中的content-nodes (sling:osgiConfig)](#osgi-configuration-in-the-repository)
 
-   * 需要使用CRXDE Lite手动配置。
-   * 由于`sling:OsgiConfig`节点的命名约定，您可以将配置绑定到特定的[运行模式](/help/sites-deploying/configure-runmodes.md)。 您甚至可以在同一存储库中保存多个运行模式的配置。
-   * 任何适当的配置都会立即应用（取决于运行模式）。
+  * 需要使用CRXDE Lite手动配置。
+  * 由于`sling:OsgiConfig`节点的命名约定，您可以将配置绑定到特定的[运行模式](/help/sites-deploying/configure-runmodes.md)。 您甚至可以在同一存储库中保存多个运行模式的配置。
+  * 任何适当的配置都会立即应用（取决于运行模式）。
 
 无论您使用哪种方法，所有这些配置方法都可以：
 
@@ -302,7 +311,9 @@ Web控制台不显示存储库中已保存更改的位置，但可以轻松地�
 例如，如果实例是以运行模式`author,dev,emea`启动的，且`/apps/*/config.author/`和`/apps/*/config.emea.author/`都定义了配置
 `com.day.cq.wcm.core.impl.VersionManagerImpl`，已应用`/apps/*/config.emea.author/`中的配置。
 
-此规则的粒度处于PID级别。您不能在`/apps/*/config.author/`中为同一PID定义某些属性，也不能在`/apps/*/config.emea.author/`中为同一PID定义更具体的属性。匹配运行模式数最高的配置对整个PID有效。
+此规则的粒度处于PID级别。
+您不能在`/apps/*/config.author/`中为同一PID定义某些属性，也不能在`/apps/*/config.emea.author/`中为同一PID定义更具体的属性。
+匹配运行模式数最高的配置对整个PID有效。
 
 ### 标准配置 {#standard-configurations}
 
@@ -334,17 +345,17 @@ Web控制台不显示存储库中已保存更改的位置，但可以轻松地�
 
   `/apps/{somewhere}`
 
-   * 默认情况下，`{somewhere}`为`system/config`，因此该配置将写入
+  * 默认情况下，`{somewhere}`为`system/config`，因此该配置将写入
 
-     `/apps/system/config`
+    `/apps/system/config`
 
-   * 但是，如果您编辑的配置最初来自存储库中的其他位置，例如：
+  * 但是，如果您编辑的配置最初来自存储库中的其他位置，例如：
 
-     /libs/foo/config/someconfig
+    /libs/foo/config/someconfig
 
-     然后将更新的配置写入原始位置下；例如：
+    然后将更新的配置写入原始位置下；例如：
 
-     `/apps/foo/config/someconfig`
+    `/apps/foo/config/someconfig`
 
 * 由`admin`更改的设置保存在下面的`*.config`文件中：
 
@@ -352,17 +363,17 @@ Web控制台不显示存储库中已保存更改的位置，但可以轻松地�
      /crx-quickstart/launchpad/config
   ```
 
-   * 此区域是OSGi配置管理员的专用数据，包含`admin`指定的所有配置详细信息，无论他们如何进入系统。
-   * 此区域是一个实施详细信息，您绝不能直接编辑此目录。
-   * 但是，知道这些配置文件的位置很有用，这样就可以获取副本进行备份，或者执行多个安装，或者同时执行两者：
+  * 此区域是OSGi配置管理员的专用数据，包含`admin`指定的所有配置详细信息，无论他们如何进入系统。
+  * 此区域是一个实施详细信息，您绝不能直接编辑此目录。
+  * 但是，知道这些配置文件的位置很有用，这样就可以获取副本进行备份，或者执行多个安装，或者同时执行两者：
 
-      * Apache Felix OSGi管理控制台
+    * Apache Felix OSGi管理控制台
 
-        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+      `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
-      * CRX Sling客户端存储库
+    * CRX Sling客户端存储库
 
-        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+      `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >

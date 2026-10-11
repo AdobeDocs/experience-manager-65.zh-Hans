@@ -1,5 +1,5 @@
 ---
-title: Content Services
+title: 内容服务
 description: 了解如何使用AEM Mobile Content Services请求由AEM管理的内容。
 contentOwner: User
 content-type: reference
@@ -8,14 +8,18 @@ exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 1%
-
+source-wordcount: '295'
+ht-degree: 2%
 ---
-
-# Content Services{#content-services}
+# 内容服务{#content-services}
 
 {{ue-over-mobile}}
 
@@ -27,11 +31,11 @@ ht-degree: 1%
 
 AEM Mobile Content Services是一项轻量级功能，用于请求由AEM管理的内容。 这为所有应用程序开发人员提供了一种高性能的方法，无需深入了解AEM的内容存储库(JCR)和Web框架(Sling)，即可检索内容。 它允许请求应用程序与内容存储库分离。
 
-Content Services引入了几个新的AEM结构，这些结构使开发人员能够访问AEM管理的内容，而无需了解该内容的存储库结构。
+Content Services引入了几个新的AEM结构，这些结构允许开发人员访问AEM管理的内容，而无需了解该内容的存储库结构。
 
-这些构造对于保持灵活性以及通过在AEM管理的内容和使用内容的移动应用程序之间提供一个抽象层来实现未来扩展是必需的。 这使得AEM Content Services可以充当本机应用程序的内容需求与AEM内容存储库之间的抽象层。
+这些构建对于保持灵活性以及通过在由AEM管理的内容和使用内容的移动应用程序之间提供一个抽象层来实现未来扩展是必需的。 这使得AEM Content Services能够充当本机应用程序的内容需求与AEM内容存储库之间的抽象层。
 
-Content Services可以将内容作为资源、打包HTML(HTML/CSS/JS)或独立于渠道的内容来交付。
+Content Services可以将内容作为资产、打包的HTML (HTML/CSS/JS)或独立于渠道的内容来交付。
 
 >[!CAUTION]
 >

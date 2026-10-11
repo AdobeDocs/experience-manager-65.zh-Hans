@@ -9,13 +9,24 @@ exl-id: d1741525-a475-4a76-bd16-55318023495e
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 4%
-
 ---
-
 
 # 营销活动管理{#campaign-management}
 
@@ -44,23 +55,23 @@ Campaign管理为数字营销人员提供了交付个性化内容并为访客创
 * **体验**
 重点内容形成了各种体验，在&#x200B;**接触点**&#x200B;提供给访客。 有多种类型的体验可用：
 
-   * **预告**
-     [Teaser页面/段落](#teasers)用于引导特定访客&#x200B;**区段**&#x200B;访问关注其兴趣的内容。
+  * **个Teasers**
+    [Teaser页面/段落](#teasers)用于引导特定访客&#x200B;**区段**&#x200B;访问关注其兴趣的内容。
 
-     Teaser页面可以：
+    Teaser页面可以：
 
-      * 提供一系列选项供访客选择
-      * 仅显示一个基于特定访客区段的Teaser段落。 例如，显示的Teaser段落可能取决于访客的年龄。
+    * 提供一系列选项供访客选择
+    * 仅显示一个基于特定访客区段的Teaser段落。 例如，显示的Teaser段落可能取决于访客的年龄。
 
-     通常，Teaser页面是一种临时操作，在特定时间段内持续存在，直到它被下一个Teaser页面替换为止。
+    通常，Teaser页面是一种临时操作，在特定时间段内持续存在，直到它被下一个Teaser页面替换为止。
 
-   * **新闻稿**
+  * **新闻稿**
 
-     [电子邮件通信](#emailmarketing)用于吸引用户并鼓励他们访问您的网站。 这些通常采用新闻稿的形式，发送给您的&#x200B;**潜在客户**（这些潜在客户已分组到&#x200B;**列表**）。 **注意：** Adobe不打算进一步增强此功能。 建议您[使用Adobe Campaign以及与AEM的集成](/help/sites-administering/campaign.md)。
+    [电子邮件通信](#emailmarketing)用于吸引用户并鼓励他们访问您的网站。 这些通常采用新闻稿的形式，发送给您的&#x200B;**潜在客户**（这些潜在客户已分组到&#x200B;**列表**）。 **注意：** Adobe不打算进一步增强此功能。 建议您[使用Adobe Campaign以及与AEM的集成](/help/sites-administering/campaign.md)。
 
-   * **Adobe Target**
+  * **Adobe Target**
 
-     这允许与Adobe Target（以前称为Test&amp;Target）集成，后者为营销人员提供了一个转化网站优化工具，让他们拥有必要的功能，以便始终提供与其客户更密切相关的在线内容和选件，从而产生更高的转化。 Adobe Target提供了一个直观的界面，可用于从单个应用程序设计和执行测试、创建受众区段和定位内容。
+    这允许与Adobe Target（以前称为Test&amp;Target）集成，后者为营销人员提供了一个转化网站优化工具，让他们拥有必要的功能，以便始终提供与其客户更密切相关的在线内容和选件，从而产生更高的转化。 Adobe Target提供了一个直观的界面，可用于从单个应用程序设计和执行测试、创建受众区段和定位内容。
 
 * **接触点**
 

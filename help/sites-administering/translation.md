@@ -1,23 +1,35 @@
 ---
-title: 翻译多语言站点的内容
+title: 为多语言网站翻译内容
 description: 了解如何翻译多语言站点的内容。
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 6ccfe612-8cfd-4ca2-ad01-8e4af36d44fa
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 74%
-
+source-wordcount: '257'
+ht-degree: 73%
 ---
+# 为多语言网站翻译内容 {#translating-content-for-multilingual-sites}
 
-# 翻译多语言站点的内容 {#translating-content-for-multilingual-sites}
+自动翻译页面内容、资产和用户生成的内容，以创建和维护多语言网站。 要自动化翻译工作流，您可以将翻译服务提供商与 AEM 集成并创建项目以将内容翻译成多种语言。 AEM 支持人工翻译工作流和机器翻译工作流。
 
-自动翻译页面内容、资产和用户生成的内容，以创建和维护多语言网站。 要自动化翻译工作流，您可以将翻译服务提供商与 AEM 集成并创建项目以将内容翻译成多种语言。AEM 支持人工翻译工作流和机器翻译工作流。
-
-* 人工翻译：内容将发送给您的翻译提供商并由专业翻译人员进行翻译。 完成后，将返回翻译的内容并将其导入 AEM。当您的翻译提供商与 AEM 集成时，内容会在 AEM 和翻译提供商之间自动发送。
+* 人工翻译：内容将发送给您的翻译提供商并由专业翻译人员进行翻译。 完成后，将返回翻译的内容并将其导入 AEM。 当您的翻译提供商与 AEM 集成时，内容会在 AEM 和翻译提供商之间自动发送。
 * 机器翻译：机器翻译服务将立即翻译您的内容。
 
 翻译内容涉及以下步骤：

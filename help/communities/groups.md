@@ -11,13 +11,20 @@ role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
 solution: Experience Manager
 feature: Communities
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1739'
 ht-degree: 1%
-
 ---
-
 # 社区组控制台 {#community-groups-console}
 
 当社区站点的[模板结构](/help/communities/sites-console.md#step1)包含[组功能](/help/communities/functions.md#groups-function)时，“组”控制台提供创建社区组的权限。
@@ -56,8 +63,8 @@ This is a 404 on helpx. Update or remove.
 * 选择现有的社区站点文件夹，以便您可以将其打开。
 * 在文件夹中选择社区站点的实例。
 
-   * 社区站点的结构必须包括分组功能。
-   * 这些屏幕截图来自[在发布](/help/communities/published-site.md)上创建组后的“快速入门”教程。
+  * 社区站点的结构必须包括分组功能。
+  * 这些屏幕截图来自[在发布](/help/communities/published-site.md)上创建组后的“快速入门”教程。
 
   ![创建组](assets/create-group.png)
 
@@ -78,7 +85,7 @@ This is a 404 on helpx. Update or remove.
 * **社区组标题**
 
   组的显示标题。
-标题将显示在组的已发布站点上。
+  标题将显示在组的已发布站点上。
 
 * **社区组说明**
 
@@ -87,7 +94,7 @@ This is a 404 on helpx. Update or remove.
 * **社区组根**
 
   组的根路径。
-默认根是父站点，但根可以移动到网站内的任何位置。不建议更改此设置。
+  默认根是父站点，但根可以移动到网站内的任何位置。 不建议更改此设置。
 
 * **其他可用的社区组语言**&#x200B;菜单
 
@@ -97,10 +104,10 @@ This is a 404 on helpx. Update or remove.
 
   显示在URL中的组根页面的名称。 避免在组名称中使用下划线字符(_)和关键字（如资源和配置）。
 
-   * 请仔细检查名称，因为创建组后更改名称并不容易。
-   * 基础URL显示在`Community Group Name`的下方。
-   * 对于有效的URL，请附加“.html”
-     *例如*，`https://localhost:4502/content/sites/mysight/en/mygroup.html`。
+  * 请仔细检查名称，因为创建组后更改名称并不容易。
+  * 基础URL显示在`Community Group Name`的下方。
+  * 对于有效的URL，请附加“.html”
+    *例如*，`https://localhost:4502/content/sites/mysight/en/mygroup.html`。
 
 * **社区组模板**&#x200B;菜单
 
@@ -134,8 +141,8 @@ This is a 404 on helpx. Update or remove.
 * 图像已固定到浏览器窗口的左边缘
 * 不会调整图像大小，因此当图像宽度为：
 
-   * 如果宽度小于浏览器的宽度，则图像将水平重复。
-   * 大于浏览器的宽度，图像似乎被裁剪。
+  * 如果宽度小于浏览器的宽度，则图像将水平重复。
+  * 大于浏览器的宽度，图像似乎被裁剪。
 
 ### 步骤3：设置 {#step-settings}
 
@@ -239,14 +246,14 @@ BASIC面板允许修改
 * 将其他[社区功能](/help/communities/functions.md)拖放到站点结构中。
 * 在站点结构中社区功能的实例上：
 
-   * **`Gear icon`**
-编辑设置，包括显示标题、URL和[拥有权限的成员组](/help/communities/users.md#privilegedmembersgroups)。
+  * **`Gear icon`**
+    编辑设置，包括显示标题、URL和[拥有权限的成员组](/help/communities/users.md#privilegedmembersgroups)。
 
-   * **`Trashcan icon`**
-从站点结构中移除（删除）函数。
+  * **`Trashcan icon`**
+    从站点结构中移除（删除）函数。
 
-   * **`Grid icon`**
-修改在站点顶级导航栏中显示的函数顺序。
+  * **`Grid icon`**
+    修改在站点顶级导航栏中显示的函数顺序。
 
 >[!CAUTION]
 >
@@ -271,7 +278,7 @@ BASIC面板允许修改
 * [社区组主题](#community-group-theme)
 * [社区组品牌](#community-group-branding)
 
-   * 滚动到面板底部，以便更改品牌图像。
+  * 滚动到面板底部，以便更改品牌图像。
 
 ### 修改设置 {#modify-settings}
 

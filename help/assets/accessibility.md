@@ -1,18 +1,31 @@
 ---
-title: ' [!DNL Adobe Experience Manager Assets]的可访问功能和接口'
-description: 了解 [!DNL Adobe Experience Manager] 6.5 [!DNL Assets] 中的辅助功能如何帮助残障用户。
+title: '[!DNL Adobe Experience Manager Assets]的可访问功能和界面'
+description: 了解[!DNL Adobe Experience Manager] 6.5 [!DNL Assets]中的辅助功能如何帮助残障用户。
 contentOwner: AG
 feature: Asset Management
 role: User, Developer, Leader
 exl-id: 15555941-99a2-4586-8d7b-b22f3ec17805
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1932'
+source-wordcount: '1934'
 ht-degree: 1%
-
 ---
-
 <!--
 Possible topics to cover in this article are below.
 
@@ -44,7 +57,7 @@ Possible topics to cover in this article are below.
 
 要读取包含合规性级别详细信息的报表，请参阅[无障碍合规性报表](https://www.adobe.com/cn/accessibility/compliance.html) (ACR)页面。
 
-要了解[!DNL Dynamic Media]如何访问，请参阅 [!DNL Dynamic Media][&#128279;](/help/assets/accessibility-dm.md)中的辅助功能。
+要了解[!DNL Dynamic Media]如何访问，请参阅 [!DNL Dynamic Media]&#x200B;[&#128279;](/help/assets/accessibility-dm.md)中的辅助功能。
 
 ## 辅助技术 {#at-support}
 
@@ -206,9 +219,9 @@ TBD: Anything about accessibility in DA, BP? AAL team confirmed that there's no 
 
 * 在链接共享对话框中，在浏览模式下导航时，屏幕阅读器将：
 
-   * 在加载对话框时不讲述表信息。
-   * 导航到列出的所有建议。
-   * 讲述为添加电子邮件地址和搜索字段显示的建议。
+  * 在加载对话框时不讲述表信息。
+  * 导航到列出的所有建议。
+  * 讲述为添加电子邮件地址和搜索字段显示的建议。
 
 ## 无障碍文档 {#accessible-docs}
 

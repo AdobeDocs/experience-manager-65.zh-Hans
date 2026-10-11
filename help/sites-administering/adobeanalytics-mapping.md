@@ -10,13 +10,22 @@ exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1458'
+source-wordcount: '1461'
 ht-degree: 1%
-
 ---
-
 # 建立组件数据与 Adobe Analytics 属性的映射{#mapping-component-data-with-adobe-analytics-properties}
 
 将组件添加到框架中以收集要发送到Adobe Analytics的数据。 用于收集Analytics数据的组件将数据存储在相应的&#x200B;**CQ变量**&#x200B;中。 将此类组件添加到框架时，该框架会显示CQ变量列表，以便您可以将每个变量添加到相应的&#x200B;**Analytics变量**。
@@ -180,25 +189,26 @@ AEM使用命名产品相关变量和事件的约定来命名这些要映射到Ad
 
    * **流量**：
 
-      * 流量变量(`prop1`)已映射到CQ变量(`eventdata.downloadLink`)
+     * 流量变量(`prop1`)已映射到CQ变量(`eventdata.downloadLink`)
 
-      * 当组件旁边有挂锁时，这意味着该组件继承自父框架，因此无法编辑
+     * 当组件旁边有挂锁时，这意味着该组件继承自父框架，因此无法编辑
 
    * **转换**：
 
-      * 转化变量(`eVar1`)映射到CQ变量(`pagedata.title`)
+     * 转化变量(`eVar1`)映射到CQ变量(`pagedata.title`)
 
-      * 通过双击CQ变量字段并手动输入代码，映射到内联添加的JavaScript表达式的转化变量(`eVar3`)
+     * 通过双击CQ变量字段并手动输入代码，映射到内联添加的JavaScript表达式的转化变量(`eVar3`)
 
    * **事件**：
 
-      * 事件变量(`event1`)映射到CQ事件(`eventdata.events.pageView`)
+     * 事件变量(`event1`)映射到CQ事件(`eventdata.events.pageView`)
 
 >[!NOTE]
 >
 >任何表的CQ变量列也可以内联填充，方法是双击该字段并向其添加文本。 这些字段接受JavaScript作为输入。
 >
->例如，在`prop3`旁边，您可以添加：> `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
+>例如，在`prop3`旁边，您可以添加：
+>     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 >使用&#x200B;*：* （冒号）发送与其&#x200B;*sitesection*&#x200B;连接且以&#x200B;*Adobe*&#x200B;为前缀的页面的&#x200B;*title*&#x200B;作为`prop3`
 >
 

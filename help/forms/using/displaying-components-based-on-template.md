@@ -1,5 +1,5 @@
 ---
-title: 根据使用的模板显示组件
+title: 基于所用模板显示组件
 description: 创建表单时，了解如何根据所选模板在侧栏中启用组件。
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,14 +10,30 @@ exl-id: 1fc56829-db81-4450-b1d8-b4a31110199e
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,Foundation Components
-source-git-commit: 8a77756e8ba771c8de9950c2323bef8f23cc59b4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '351'
-ht-degree: 1%
-
+source-wordcount: '354'
+ht-degree: 5%
 ---
-
-# 根据使用的模板显示组件{#displaying-components-based-on-the-template-used}
+# 基于所用模板显示组件{#displaying-components-based-on-the-template-used}
 
 当表单作者使用[模板](../../forms/using/template-editor.md)创建自适应表单时，表单作者可以查看和使用基于模板策略的特定组件。 您可以指定一个模板内容策略，以便选择表单作者在表单创作时看到的一组组件。
 
@@ -39,7 +55,7 @@ ht-degree: 1%
 
    默认内容策略的路径为： `/conf/<your-folder>/settings/wcm/policies/fd/af/layouts/gridFluidLayout/default`
 
-   在`gridFluidLayout`文件夹中，复制粘贴默认策略并对其进行重命名。 例如：`myPolicy`。
+   在`gridFluidLayout`文件夹中，复制粘贴默认策略并对其进行重命名。 例如 `myPolicy`。
 
    ![正在复制默认策略](assets/crx-default1.png)
 

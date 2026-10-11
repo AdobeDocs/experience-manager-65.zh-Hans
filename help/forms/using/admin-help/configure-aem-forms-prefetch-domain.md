@@ -9,20 +9,34 @@ exl-id: cf5283a5-dbfb-460d-a8bd-11cd15ab8640
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
-
 ---
-
 # 配置AEM表单以预取域信息 {#configure-aem-forms-to-prefetchdomain-information}
 
 >[!NOTE]
 > 
 > 确保用户具有访问管理员控制台的管理员权限。
 
-如果用户属于多个组（例如，500个或更多）或这些组嵌套得很深（例如，30个级别），则用户响应速度可能会较慢。 如果遇到此问题，可以将AEM表单配置为从特定域预取信息。
+如果用户属于多个组（例如，500个或更多）或这些组嵌套得很深（例如，30个级别），则用户响应速度可能会较慢。 如果您遇到此问题，可以将AEM表单配置为从特定域预取信息。
 
 1. 在管理控制台中，单击&#x200B;**[!UICONTROL 设置>用户管理>配置>导入和导出配置文件]**。
 1. 要将当前配置设置导出到文件，请单击&#x200B;**[!UICONTROL 导出]**&#x200B;并将配置文件保存到其他位置。

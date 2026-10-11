@@ -1,6 +1,6 @@
 ---
 title: 创建启动项
-description: 可创建启动项，以允许更新现有网页的新版本，以便将来激活。在创建启动项时，需要指定标题和源页面。
+description: 可创建启动项，以允许更新现有网页的新版本，以便将来激活。 在创建启动项时，需要指定标题和源页面。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,20 +10,29 @@ exl-id: 8ab21067-c19a-4faa-8bf0-cd9f21f6df70
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '368'
+source-wordcount: '374'
 ht-degree: 54%
-
 ---
-
 # 创建启动项{#creating-launches}
 
-可创建启动项，以允许更新现有网页的新版本，以便将来激活。在创建启动项时，需要指定标题和源页面：
+可创建启动项，以允许更新现有网页的新版本，以便将来激活。 在创建启动项时，需要指定标题和源页面：
 
 * 标题会显示在&#x200B;**Sidekick**&#x200B;中，作者可以从中访问这些标题以进行处理。
-* 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
-* 默认情况下，[Live Copy](/help/sites-administering/msm.md) 会在源页面发生更改时自动更新启动页面。您可以指定创建一个静态副本，以防止自动更改。
+* 默认情况下，源页面的子页面包含在启动项中。 必要时，可只使用源页面。
+* 默认情况下，[Live Copy](/help/sites-administering/msm.md) 会在源页面发生更改时自动更新启动页面。 您可以指定创建一个静态副本，以防止自动更改。
 
 （可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**&#x200B;[&#128279;](/help/sites-classic-ui-authoring/classic-launches-editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
 
@@ -35,7 +44,7 @@ ht-degree: 54%
 1. 单击&#x200B;**新建……**，然后单击&#x200B;**新建启动项……**。
 1. 在&#x200B;**创建启动项**&#x200B;对话框中，指定以下属性的值：
 
-   * **启动项标题**：启动项的名称。该名称应当体现出作者的相关信息。
+   * **启动项标题**：启动项的名称。 该名称应当体现出作者的相关信息。
    * **Source页面**：要创建启动项的页面的路径。 默认情况下，将包含所有子页面。
    * **排除子页面**：选择此选项可仅为源页面而不是子页面创建启动项。 默认情况下，不选中此选项。
    * **保持同步**：选择此选项可在源页面更改时自动更新启动页面的内容。 这是通过将启动项设为[Live Copy](/help/sites-administering/msm.md)来实现的。

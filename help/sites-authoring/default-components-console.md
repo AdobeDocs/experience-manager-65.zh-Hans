@@ -5,13 +5,26 @@ exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '280'
+source-wordcount: '283'
 ht-degree: 57%
-
 ---
-
 # 组件控制台{#components-console}
 
 组件控制台允许您浏览针对实例定义的所有组件，并查看每个组件的关键信息。
@@ -40,14 +53,14 @@ ht-degree: 57%
 
   在“属性”选项卡上，您可以：
 
-   * 查看组件的常规属性。
-   * 查看如何为组件定义[图标或缩写](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)。
+  * 查看组件的常规属性。
+  * 查看如何为组件定义[图标或缩写](/help/sites-developing/components-basics.md#component-icon-in-touch-ui)。
 
-      * 单击图标的源将转到该组件。
+    * 单击图标的源将转到该组件。
 
-   * 查看组件的&#x200B;**资源类型**&#x200B;和&#x200B;**资源超级类型**（如果定义）。
+  * 查看组件的&#x200B;**资源类型**&#x200B;和&#x200B;**资源超级类型**（如果定义）。
 
-      * 单击“资源超级类型”将转到该组件。
+    * 单击“资源超级类型”将转到该组件。
 
   >[!NOTE]
   >
@@ -67,6 +80,6 @@ ht-degree: 57%
 
 * **文档**
 
-  如果开发人员提供了组件[的](/help/sites-developing/developing-components.md#documenting-your-component)文档，则该文档将显示在&#x200B;**Documentation**&#x200B;选项卡上。 如果没有可用文档，则不会显示&#x200B;**文档**&#x200B;选项卡。
+  如果开发人员提供了组件[&#128279;](/help/sites-developing/developing-components.md#documenting-your-component)的文档，则该文档将显示在&#x200B;**Documentation**&#x200B;选项卡上。 如果没有可用文档，则不会显示&#x200B;**文档**&#x200B;选项卡。
 
   ![文档](assets/chlimage_1-171.png)

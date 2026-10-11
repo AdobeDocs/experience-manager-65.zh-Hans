@@ -9,20 +9,24 @@ exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '296'
 ht-degree: 1%
-
 ---
-
 # AEM Mobile On-Demand {#aem-mobile-on-demand}
 
 {{ue-over-mobile}}
 
 >[!NOTE]
 >
->如果您未使用AdobeExperience Manager (AEM)作为内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/cn/digital-publishing-solution/topics.html)。
+>如果您未使用Adobe Experience Manager (AEM)作为内容管理源，请参阅[AEM Mobile On-demand Services帮助](https://helpx.adobe.com/digital-publishing-solution/topics.html)。
 
 ## AEM 管理员 {#aem-administrator}
 
@@ -32,20 +36,20 @@ ht-degree: 1%
 >
 >在开始设置AEM Mobile On-demand Services环境之前，请参阅[AEM Mobile应用程序仪表板或控制中心](/help/mobile/mobile-apps-ondemand-application-dashboard.md)。
 
-***AEM管理员***&#x200B;负责通过使用创建向导创建应用程序或导入现有应用程序将应用程序添加到AEM Mobile目录。 使用AEM Mobile的&#x200B;*创建向导*&#x200B;创建应用程序的AEM管理员通常会从Adobe的现成引用示例或（通常）由&#x200B;*AEM开发人员创建的自定义应用程序模板中选择所需的应用程序模板之一。*
+***AEM管理员***&#x200B;负责通过使用创建向导创建应用程序或导入现有应用程序将应用程序添加到AEM Mobile目录。 使用AEM的&#x200B;*创建向导*&#x200B;创建应用程序的AEM Mobile管理员通常会从Adobe的开箱即用参考示例或（通常）由&#x200B;*AEM开发人员创建的自定义应用程序模板中选择所需的应用程序模板之一。*
 
 >[!NOTE]
 >
->有关设置AEM组和权限的详细信息，请在联机帮助中单击[创建用户角色和授予访问权限](https://helpx.adobe.com/cn/digital-publishing-solution/help/account-admin-dps.html)。
+>有关设置AEM组和权限的详细信息，请在联机帮助中单击[创建用户角色和授予访问权限](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)。
 
 AEM管理员在使用AEM Mobile On-demand Services创建应用程序时负责以下任务：
 
 * [设置涵盖的AEM Mobile](/help/mobile/aem-mobile-setup.md)
 
-   * AEM Mobile配置
-   * 为AEM Mobile创建项目
-   * 配置AEM Mobile连接器
-   * 添加AEM Mobile用户角色和分配权限
+  * AEM Mobile配置
+  * 为AEM Mobile创建项目
+  * 配置AEM Mobile连接器
+  * 添加AEM Mobile用户角色和分配权限
 
 * [配置用户和用户组](/help/mobile/aem-mobile-configure-users.md)
 * [使用Preflight预览](/help/mobile/aem-mobile-manage-ondemand-services.md)

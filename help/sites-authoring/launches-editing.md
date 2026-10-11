@@ -11,13 +11,31 @@ exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '529'
 ht-degree: 75%
-
 ---
-
 # 编辑启动项{#editing-launches}
 
 ## 编辑启动页面 {#editing-launch-pages}
@@ -29,9 +47,9 @@ ht-degree: 75%
 
 >[!NOTE]
 >
->您不能在启动项中移动页面。尝试此操作将触发警告消息：
+>您不能在启动项中移动页面。 尝试此操作将触发警告消息：
 >
->* 警告：此页面是启动项的源。不允许移动此页面。
+>* 警告：此页面是启动项的源。 不允许移动此页面。
 
 ### 编辑基于 Live Copy 的启动页面 {#editing-launch-pages-subject-to-a-live-copy}
 
@@ -71,11 +89,11 @@ Live Copy 用于将&#x200B;**&#x200B;源分支&#x200B;**&#x200B;中的内容同�
 
    * [“启动项”控制台](/help/sites-authoring/launches.md#the-launches-console)：
 
-      * 选择&#x200B;**编辑**。
+     * 选择&#x200B;**编辑**。
 
    * [“引用”（Sites 控制台）](/help/sites-authoring/launches.md#launches-in-references-sites-console)，可显示可用操作：
 
-      * 选择&#x200B;**编辑启动项**。
+     * 选择&#x200B;**编辑启动项**。
 
    此时会显示源页面。
 
@@ -93,11 +111,11 @@ Live Copy 用于将&#x200B;**&#x200B;源分支&#x200B;**&#x200B;中的内容同�
 
    * [“启动项”控制台](/help/sites-authoring/launches.md#the-launches-console)：
 
-      * 选择&#x200B;**属性**。
+     * 选择&#x200B;**属性**。
 
    * [“引用”（Sites 控制台）](/help/sites-authoring/launches.md#launches-in-references-sites-console)，可显示可用操作：
 
-      * 选择&#x200B;**编辑属性**。
+     * 选择&#x200B;**编辑属性**。
 
    详细信息会显示。
 

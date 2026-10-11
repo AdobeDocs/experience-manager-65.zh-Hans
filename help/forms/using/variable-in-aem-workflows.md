@@ -9,13 +9,27 @@ exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 704a815e961dc2c690e034a1b1cbe60800c643ae
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2291'
 ht-degree: 1%
-
 ---
-
 # AEM Forms工作流中的变量{#variables-in-aem-forms-workflows}
 
 | 版本 | 文章链接 |
@@ -279,8 +293,8 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### 使用工作流变量在JCR外部存储敏感用户数据 {#jcr-independent-persistance}
 
-使用Forms Workflow处理的数据可能包含敏感用户数据，如个人身份信息和敏感个人信息。企业可以选择将数据从JCR存储存储存储到它们拥有并管理的外部数据存储中，由各种工作流步骤处理这些数据（并使用工作流变量进行传递）。若要了解有关在外部存储中保留工作流数据的更多信息，请参阅[将工作流变量用于客户拥有的数据存储](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
-[!DNL Adobe Experience Manager]提供工作流API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer)以在外部Azure Blob存储中存储工作流变量。有关使用API的详细信息，请参阅[使用工作流变量参数化敏感数据并将其存储在外部数据存储中](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables)。
+使用Forms Workflow处理的数据可能包含敏感用户数据，如个人身份信息和敏感个人信息。 企业可以选择将数据从JCR存储存储存储到它们拥有并管理的外部数据存储中，由各种工作流步骤处理这些数据（并使用工作流变量进行传递）。 若要了解有关在外部存储中保留工作流数据的更多信息，请参阅[将工作流变量用于客户拥有的数据存储](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore)。
+[!DNL Adobe Experience Manager]提供工作流API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer)以在外部Azure Blob存储中存储工作流变量。 有关使用API的详细信息，请参阅[使用工作流变量参数化敏感数据并将其存储在外部数据存储中](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables)。
 
 ## 编辑变量 {#edit-a-variable}
 

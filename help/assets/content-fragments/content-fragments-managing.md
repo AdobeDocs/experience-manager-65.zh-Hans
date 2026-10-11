@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 11a8181e860c724c817dd549b351df079c8227e2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1741'
 ht-degree: 76%
-
 ---
-
 # 管理内容片段 {#managing-content-fragments}
 
 了解如何使用Assets控制台管理您的AEM内容片段，即Headless内容的基础。
@@ -59,7 +71,7 @@ ht-degree: 76%
 
    * [模型](/help/assets/content-fragments/content-fragments-models.md) — 用于创建需要结构化内容的片段；例如，**冒险**&#x200B;模型
 
-      * 将显示所有可用模型。
+     * 将显示所有可用模型。
 
    选择后，使用&#x200B;**下一步**&#x200B;继续。
 
@@ -69,23 +81,23 @@ ht-degree: 76%
 
    * **基本**
 
-      * **标题**
+     * **标题**
 
-        片段标题。
+       片段标题。
 
-        必填。
+       必填。
 
-      * **描述**
+     * **描述**
 
-      * **标记**
+     * **标记**
 
    * **高级**
 
-      * **名称**
+     * **名称**
 
-        名称；用于组成URL。
+       名称；用于组成URL。
 
-        必填；将自动从标题派生，但可以更新。
+       必填；将自动从标题派生，但可以更新。
 
 1. 选 **择创建** ，以完成操作，然后打开片段 **进行编辑** ，或返回控制台并执行完 **成**。
 
@@ -105,17 +117,17 @@ ht-degree: 76%
 
 * **下载**
 
-   * 将片段另存为ZIP文件；您可以定义是否包含元素、变体、元数据。
+  * 将片段另存为ZIP文件；您可以定义是否包含元素、变体、元数据。
 
 * **创建**
 * **签出**
 * **属性**
 
-   * 允许您查看和/或编辑片段的元数据。
+  * 允许您查看和/或编辑片段的元数据。
 
 * **编辑**
 
-   * 允许您[打开片段以编辑内容](/help/assets/content-fragments/content-fragments-variations.md)及其元素、变体、关联的内容和元数据。
+  * 允许您[打开片段以编辑内容](/help/assets/content-fragments/content-fragments-variations.md)及其元素、变体、关联的内容和元数据。
 
 * **管理标记**
 * **到收藏集**
@@ -191,17 +203,17 @@ ht-degree: 76%
 
 * 在片段名称下方，您可以看到用于创建当前片段的[内容片段模型](/help/assets/content-fragments/content-fragments-models.md)的名称：
 
-   * 该名称还是一个打开模型编辑器的链接。
+  * 该名称还是一个打开模型编辑器的链接。
 
 * 查看片段的状态；例如，有关创建、修改或发布时间的信息。
 
 * **保存**&#x200B;提供对&#x200B;**保存并关闭**&#x200B;选项的访问。
 
 * 三个点(**...**) 下拉列表提供了对其他操作的访问权限：
-   * **更新页面引用**
-      * 这会更新任何页面引用。
-   * **[快速发布](#publishing-and-referencing-a-fragment)**
-   * **[管理发布](#publishing-and-referencing-a-fragment)**
+  * **更新页面引用**
+    * 这会更新任何页面引用。
+  * **[快速发布](#publishing-and-referencing-a-fragment)**
+  * **[管理发布](#publishing-and-referencing-a-fragment)**
 
 <!--
 * See the status of the fragment; for example, information about when it was created, modified or published. The status is also color-coded:
@@ -227,8 +239,8 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * **保存**&#x200B;和&#x200B;**保存并关闭**
 
-   * **保存**&#x200B;将保存最新更改并保留在编辑器中。
-   * **保存并关闭**&#x200B;将保存最新更改并退出编辑器。
+  * **保存**&#x200B;将保存最新更改并保留在编辑器中。
+  * **保存并关闭**&#x200B;将保存最新更改并退出编辑器。
 
   >[!CAUTION]
   >
@@ -290,17 +302,17 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 * 查看有关版本、注释和批注的信息
 * 版本操作
 
-   * **[还原到此版本](#reverting-to-a-version)**（选择现有片段，然后选择特定版本）
+  * **[还原到此版本](#reverting-to-a-version)**（选择现有片段，然后选择特定版本）
 
-   * **[与当前比较](#comparing-fragment-versions)**（选择现有片段，然后选择特定版本）
+  * **[与当前比较](#comparing-fragment-versions)**（选择现有片段，然后选择特定版本）
 
-   * 添加&#x200B;**标签**&#x200B;和/或&#x200B;**注释**（选择现有片段，然后选择特定版本）
+  * 添加&#x200B;**标签**&#x200B;和/或&#x200B;**注释**（选择现有片段，然后选择特定版本）
 
-   * **保存为版本**（选择现有片段，然后选择时间线底部的向上箭头）
+  * **保存为版本**（选择现有片段，然后选择时间线底部的向上箭头）
 
 * 注释操作
 
-   * **删除**
+  * **删除**
 
 >[!NOTE]
 >
@@ -334,9 +346,9 @@ This updates any page references and ensures that the Dispatcher is flushed as r
 
 * 任何差异都会突出显示
 
-   * 已删除的文本 – 红色
-   * 插入的文本 – 绿色
-   * 替换文本 – 蓝色
+  * 已删除的文本 – 红色
+  * 插入的文本 – 绿色
+  * 替换文本 – 蓝色
 
 * 全屏图标让您自行打开任一版本；然后切换回并行视图
 * 您可以&#x200B;**还原**&#x200B;到特定版本

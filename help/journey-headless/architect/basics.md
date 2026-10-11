@@ -5,13 +5,29 @@ exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 94%
-
+source-wordcount: '904'
+ht-degree: 89%
 ---
-
 # 学习使用 AEM 对 Headless 进行内容建模的基础知识 {#content-modeling-headless-basics}
 
 ## 迄今为止的故事 {#story-so-far}
@@ -33,7 +49,7 @@ ht-degree: 94%
 
 为了确保您的应用程序能够一致而高效地从 AEM 请求和接收所需内容，必须设置这些内容的结构。
 
-这意味着您的应用程序会预先知道响应的形式，从而了解如何处理它。这比接收自由格式的内容要简单得多，必须对自由格式的内容进行分析以确定它包含什么以及如何使用它。
+这意味着您的应用程序会预先知道响应的形式，从而了解如何处理它。 这比接收自由格式的内容要简单得多，必须对自由格式的内容进行分析以确定它包含什么以及如何使用它。
 
 ### 方法简介 {#how}
 
@@ -48,7 +64,7 @@ AEM 使用内容片段提供以 Headless 方式将内容传递到应用程序所
 >
 >内容片段模型还用作 AEM GraphQL 架构的基础，用于检索您的内容 - 开发人员历程中提供了更多相关信息。
 
-使用 AEM GraphQL API 发出对您的内容的请求，这是标准 GraphQL API 的自定义实施。AEM GraphQL API 允许应用程序对内容片段执行（复杂）查询，每个查询都根据特定的模型类型执行。
+使用 AEM GraphQL API 发出对您的内容的请求，这是标准 GraphQL API 的自定义实施。 AEM GraphQL API 允许应用程序对内容片段执行（复杂）查询，每个查询都根据特定的模型类型执行。
 
 然后，您的应用程序可以使用返回的内容。
 
@@ -70,7 +86,7 @@ AEM 使用内容片段提供以 Headless 方式将内容传递到应用程序所
 1. **数据类型**&#x200B;允许您定义各个属性。
 例如，以&#x200B;**文本**&#x200B;形式定义包含教师姓名的字段，并以&#x200B;**数字**&#x200B;形式定义其服务年数。
 1. 数据类型&#x200B;**内容引用**&#x200B;和&#x200B;**片段引用**&#x200B;允许您创建与AEM中其他内容的关系。
-1. **片段引用**&#x200B;数据类型可让您通过嵌套内容片段（根据模型类型）来实施结构的多个层次。这对于您的内容建模是至关重要的。
+1. **片段引用**&#x200B;数据类型可让您通过嵌套内容片段（根据模型类型）来实施结构的多个层次。 这对于您的内容建模是至关重要的。
 
 例如：
 
@@ -100,15 +116,15 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 两种数据类型都提供了对特定片段之外的内容的引用：
 
 * **内容引用**
-这提供了对任意类型的其他内容的简单引用。
+这提供了对任何类型其他内容的简单引用。
 例如，您可以在指定位置引用图像。
 
 * **片段引用**
 这会提供对其他内容片段的引用。
 这种类型的引用用于创建嵌套内容，引入对内容进行建模所需的关系。
 数据类型可配置为允许片段作者执行以下操作：
-   * 直接编辑引用的片段。
-   * 根据相应的模型创建内容片段
+  * 直接编辑引用的片段。
+  * 根据相应的模型创建内容片段
 
 >[!NOTE]
 >
@@ -118,7 +134,7 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 
 对于内容建模，**片段引用**&#x200B;数据类型可让您创建结构的多个层次和关系。
 
-借助此引用，您可以&#x200B;*连接*&#x200B;各种内容片段模型来表示相互关系。这可让 Headless 应用程序遵循连接并在必要时访问内容。
+借助此引用，您可以&#x200B;*连接*&#x200B;各种内容片段模型来表示相互关系。 这可让 Headless 应用程序遵循连接并在必要时访问内容。
 
 >[!NOTE]
 >
@@ -133,28 +149,28 @@ AEM 提供了以下数据类型以供您用来进行内容建模：
 * 人员
 * 奖励
 
-看似简单明了，但公司有 CEO 和员工....他们每个人都被定义为一个人员。
+这看起来很简单，但一家公司既有CEO又有EMPLOYEES....而且他们都是人，每个人被定义为一个人。
 
 一个人员可以获得一个（或两个）奖励。
 
 * 我的公司 – 公司
-   * CEO – 人员
-   * 员工 – 人员
-      * 个人奖励 – 奖励
+  * CEO – 人员
+  * 员工 – 人员
+    * 个人奖励 – 奖励
 
-这只适用于初学者。根据复杂性，奖励可以是特定于公司的，或者公司可以在特定城市设立主要办事处。
+这只适用于初学者。 根据复杂性，奖励可以是特定于公司的，或者公司可以在特定城市设立主要办事处。
 
 可以使用片段引用来表示这些相互关系，因为您（架构师）、您的内容作者和 Headless 应用程序都已理解它们。
 
 ## 后续内容 {#whats-next}
 
-现在您已了解基础知识，下一步是[了解如何在 AEM 中创建内容片段模型](model-structure.md)。这将介绍和讨论可用的各种引用，以及如何使用片段引用创建结构层次 - 针对 Headless 的建模的关键部分。
+现在您已了解基础知识，下一步是[了解如何在 AEM 中创建内容片段模型](model-structure.md)。 这将介绍和讨论可用的各种引用，以及如何使用片段引用创建结构层次 - 针对 Headless 的建模的关键部分。
 
 ## 其他资源 {#additional-resources}
 
 * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [内容片段模型 – 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
+  * [内容片段模型 – 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [创作概念](/help/sites-authoring/author.md)
 

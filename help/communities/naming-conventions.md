@@ -1,6 +1,6 @@
 ---
-title: Java&amp；贸易；包名称中的命名约定
-description: 了解命名惯例以及Java&amp；trade；包名称中连字符的使用。
+title: Java&trade；包名称中的命名约定
+description: 了解命名惯例以及Java&trade；包名称中连字符的使用。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -9,14 +9,21 @@ exl-id: 863900c3-5fe8-41a3-a151-466d0c62eeea
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '142'
+source-wordcount: '143'
 ht-degree: 1%
-
 ---
-
-# 命名约定 {#naming-conventions}
+# 命名惯例 {#naming-conventions}
 
 ## Java™包名称中的连字符 {#hyphens-in-java-package-name}
 

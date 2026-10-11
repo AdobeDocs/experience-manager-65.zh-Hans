@@ -1,6 +1,6 @@
 ---
 title: 您的收件箱
-description: 您可以接收来自AEM各个区域的通知，例如有关工作项或表示必须对页面内容执行的操作的任务的通知。
+description: 您可以接收来自AEM各个区域的通知，例如有关工作项或表示您必须对页面内容执行的操作的任务的通知。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
@@ -10,16 +10,25 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 0%
-
+source-wordcount: '586'
+ht-degree: 1%
 ---
-
 # 您的收件箱{#your-inbox}
 
-您可以接收来自AEM各个区域的通知，例如有关工作项或表示必须对页面内容执行的操作的任务的通知。
+您可以接收来自AEM各个区域的通知，例如有关工作项或表示您必须对页面内容执行的操作的任务的通知。
 
 您会在两个收件箱中收到这些通知，这两个收件箱之间用通知类型隔开：
 
@@ -81,7 +90,7 @@ ht-degree: 0%
    * 已激活：页面已激活时。
    * 已停用：页面已停用时。
    * 删除（联合）：对页面进行删除复制时，即对页面执行的删除操作进行复制时。
-删除或移动页面时，会自动复制删除操作：该页面将在执行删除操作的源实例上以及复制代理定义的目标实例上删除。
+     删除或移动页面时，会自动复制删除操作：该页面将在执行删除操作的源实例上以及复制代理定义的目标实例上删除。
 
    * 修改时间：修改页面时。
    * 创建时间：创建页面时。
@@ -93,8 +102,8 @@ ht-degree: 0%
    * 单击&#x200B;**添加**&#x200B;以向表中添加新行。
    * 单击&#x200B;**路径**&#x200B;表单元格并输入路径，例如`/content/docs`。
 
-   * 若要收到属于子树的所有页面的通知，是否设置&#x200B;**Exact？**&#x200B;至&#x200B;**否**。
-要仅收到路径所定义页面上操作的通知，是否设置&#x200B;**精确？**&#x200B;至&#x200B;**是**。
+   * 若要收到属于子树的所有页面的通知，请设置&#x200B;**Exact？** 至&#x200B;**否**。
+     若要仅收到路径所定义页面上操作的通知，请设置&#x200B;**Exact？** 至&#x200B;**是**。
 
    * 要允许该规则，请将&#x200B;**规则**&#x200B;设置为&#x200B;**允许**。 如果设置为&#x200B;**Deny**，则拒绝该规则，但不会将其删除，以后可以允许。
 

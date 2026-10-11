@@ -1,6 +1,6 @@
 ---
 title: 样式系统
-description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
+description: 样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。 这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
@@ -8,18 +8,31 @@ exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1296'
+source-wordcount: '1314'
 ht-degree: 83%
-
 ---
-
 # 样式系统{#style-system}
 
-样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
+样式系统允许模板作者在组件的内容策略中定义样式类，以便内容作者在页面上编辑组件时能够选择这些类。 这些样式可以作为组件的替代可视化变量，从而使组件变得更加灵活。
 
-使用样式系统，您无需为每种样式开发自定义组件，也无需自定义组件对话框来启用此类样式功能。样式系统允许使用更多可重用组件，可以快速轻松地调整这些组件以满足内容作者的需求，而无需进行任何 AEM 后端开发。
+使用样式系统，您无需为每种样式开发自定义组件，也无需自定义组件对话框来启用此类样式功能。 样式系统允许使用更多可重用组件，可以快速轻松地调整这些组件以满足内容作者的需求，而无需进行任何 AEM 后端开发。
 
 ## 用例 {#use-case}
 
@@ -52,7 +65,7 @@ ht-degree: 83%
 
 1. 之后，AEM 页面作者可以在页面编辑器中通过组件工具栏的样式菜单选择设计的样式。
 
-请注意，实际上只有最后三个步骤在 AEM 中执行。这意味着，必需的 CSS 和 JavaScript 的所有开发工作都可以在没有 AEM 的情况下完成。
+请注意，实际上只有最后三个步骤在 AEM 中执行。 这意味着，必需的 CSS 和 JavaScript 的所有开发工作都可以在没有 AEM 的情况下完成。
 
 实际上，要实施这些样式，只需在 AEM 上部署并在所需模板的组件中进行选择即可。
 
@@ -85,7 +98,7 @@ ht-degree: 83%
 
    >[!NOTE]
    >
-   >在此示例中，**颜色**&#x200B;样式（**黑色**、**白色**&#x200B;和&#x200B;**灰色**）是互斥的，而&#x200B;**样式**&#x200B;选项（**下划线**、**右对齐**&#x200B;和&#x200B;**最小间距**）则可以组合使用。这可以在[模板中配置为模板作者](#as-a-template-author)。
+   >在此示例中，**颜色**&#x200B;样式（**黑色**、**白色**&#x200B;和&#x200B;**灰色**）是互斥的，而&#x200B;**样式**&#x200B;选项（**下划线**、**右对齐**&#x200B;和&#x200B;**最小间距**）则可以组合使用。 这可以在[模板中配置为模板作者](#as-a-template-author)。
 
 ### 作为模板作者 {#as-a-template-author}
 
@@ -106,11 +119,11 @@ ht-degree: 83%
    * **样式名称：**&#x200B;在配置组件样式时将向内容作者显示的样式描述。
    * **CSS 类：**&#x200B;与样式关联的 CSS 类的实际名称。
 
-   使用拖动手柄可调整组以及组中样式的顺序。使用添加或删除图标可添加或者删除组或组中的样式。
+   使用拖动手柄可调整组以及组中样式的顺序。 使用添加或删除图标可添加或者删除组或组中的样式。
 
 >[!CAUTION]
 >
->配置为组件策略的样式属性的CSS类(以及任何必需的JavaScript)必须部署为[客户端库](/help/sites-developing/clientlibs.md)才能正常工作。
+>配置为组件策略的样式属性的CSS类（以及任何必需的JavaScript）必须部署为[客户端库](/help/sites-developing/clientlibs.md)才能正常工作。
 
 ## 设置 {#setup}
 
@@ -142,15 +155,15 @@ ht-degree: 83%
 
 ### 具有元素名称的样式 {#styles-with-element-names}
 
-开发人员还可以使用 `cq:styleElements` 字符串数组属性为组件上的样式配置允许的元素名称列表。然后，在设计对话框内策略的“样式”选项卡中，模板作者也可以为每个样式选择一个要设置的元素名称。这将设置包装器元素的元素名称。
+开发人员还可以使用 `cq:styleElements` 字符串数组属性为组件上的样式配置允许的元素名称列表。 然后，在设计对话框内策略的“样式”选项卡中，模板作者也可以为每个样式选择一个要设置的元素名称。 这将设置包装器元素的元素名称。
 
-此属性在 `cq:Component` 节点上设置。例如：
+此属性在 `cq:Component` 节点上设置。 例如：
 
 * `/apps/<yoursite>/components/content/list@cq:styleElements=[div,section,span]`
 
 >[!CAUTION]
 >
->避免为可以合并的样式定义元素名称。当定义多个元素名称时，其优先级顺序为：
+>避免为可以合并的样式定义元素名称。 当定义多个元素名称时，其优先级顺序为：
 >
 >1. HTL 优先于所有内容：`data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. 然后，在多个活动样式中，会采用组件策略中配置的样式列表中的第一个样式。

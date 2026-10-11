@@ -8,13 +8,31 @@ exl-id: 933c164e-7c39-4d2e-834b-53a3c2b4ec90
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '399'
-ht-degree: 3%
-
+source-wordcount: '407'
+ht-degree: 2%
 ---
-
 # 参考自适应表单片段{#reference-adaptive-form-fragments}
 
 [自适应表单片段](../../forms/using/adaptive-form-fragments.md)是一组字段，或包含可在创建表单时使用的一组字段的面板。 它可让您轻松快速地创建表单。 您可以使用侧边栏中的资产浏览器将自适应表单片段拖放到表单中，并在表单编辑器中编辑该表单片段。

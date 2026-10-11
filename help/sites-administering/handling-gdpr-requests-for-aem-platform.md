@@ -6,13 +6,22 @@ exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
-workflow-type: ht
-source-wordcount: '458'
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+workflow-type: tm+mt
+source-wordcount: '455'
 ht-degree: 100%
-
 ---
-
 # 处理 Adobe Experience Manager（AEM）基础的 GDPR 请求{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
@@ -21,7 +30,7 @@ ht-degree: 100%
 
 ## AEM 基础 GDPR 支持 {#aem-foundation-gdpr-support}
 
-在 AEM 基础层级，所存储的个人数据为用户轮廓。因此，本文主要说明如何访问和删除用户轮廓，以分别满足 GDPR 的“访问”和“删除”请求。
+在 AEM 基础层级，所存储的个人数据为用户轮廓。 因此，本文主要说明如何访问和删除用户轮廓，以分别满足 GDPR 的“访问”和“删除”请求。
 
 ## 访客用户配置文件 {#accessing-a-user-profile}
 
@@ -41,7 +50,7 @@ ht-degree: 100%
 
 ### HTTP API {#http-api}
 
-如前所述，Adobe 提供了用于访问用户数据的 API 来促进自动化。有多种类型的 API 可供您使用：
+如前所述，Adobe 提供了用于访问用户数据的 API 来促进自动化。 有多种类型的 API 可供您使用：
 
 **UserProperties API**
 
@@ -75,7 +84,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### 禁用用户 {#disable-user}
 
 1. 如上所述，打开用户管理控制台并搜索有问题的用户。
-1. 将鼠标悬停在用户上方并单击选择图标。配置文件显示为灰色，表明它已被选中。
+1. 将鼠标悬停在用户上方并单击选择图标。 配置文件显示为灰色，表明它已被选中。
 
 1. 在顶部菜单中点击“禁用”按钮以禁用该用户：
 
@@ -99,7 +108,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
-1. 删除轮廓节点及其所有子节点。根据 AEM 版本，轮廓节点有两种格式：
+1. 删除轮廓节点及其所有子节点。 根据 AEM 版本，轮廓节点有两种格式：
 
    1. `[!UICONTROL /profile]` 下的默认私有轮廓
    1. `[!UICONTROL /profiles]`，适用于使用 AEM 6.5 创建的新轮廓

@@ -1,6 +1,6 @@
 ---
 title: 查看系统信息
-description: 了解如何查看资源监控图表和运行AEM表单的服务器的相关信息。
+description: 了解如何查看资源监控图表以及运行AEM表单的服务器的相关信息。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
@@ -9,16 +9,30 @@ exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 0%
-
+source-wordcount: '546'
+ht-degree: 1%
 ---
-
 # 查看系统信息 {#view-system-information}
 
-“系统”选项卡显示资源监控图表和运行AEM表单的服务器的相关信息。 要访问此信息，请在管理控制台中单击页面右上角的运行状况监视器。 如果在群集环境中运行AEM表单，则显示的信息为从“服务器”列表中选择的节点。
+“系统”选项卡显示资源监控图表和运行AEM表单的服务器的相关信息。 要访问此信息，请在管理控制台中单击页面右上角的运行状况监视器。 如果在群集环境中运行AEM表单，则显示的信息适用于从“服务器”列表中选择的节点。
 
 要将当前系统信息保存为属性文件，请单击“保存”。
 
@@ -50,7 +64,7 @@ ht-degree: 0%
 
 **编译时间：**&#x200B;编译所花费的时间。
 
-**实时Threads数：**&#x200B;当前存在于AEM表单系统中的线程总数。
+**实时Threads数：** AEM表单系统中当前存在的线程总数。
 
 **Threads峰值数：**&#x200B;系统上记录的最大实时线程数。
 
@@ -88,7 +102,7 @@ ht-degree: 0%
 
 **AEM表单版本：**&#x200B;已安装的AEM表单版本。
 
-**修补程序版本：** AEM Forms修补程序号。
+**修补程序版本：** AEM表单修补程序编号。
 
 **数据库名称：** AEM表单使用的数据库类型。
 

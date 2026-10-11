@@ -6,13 +6,22 @@ feature: Workfront Integrations and Apps
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '569'
-ht-degree: 4%
-
+source-wordcount: '575'
+ht-degree: 6%
 ---
-
 # 安装 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | 版本 | 文章链接 |

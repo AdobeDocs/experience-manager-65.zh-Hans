@@ -9,13 +9,20 @@ role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 2%
-
 ---
-
 # SRP的Solr配置 {#solr-configuration-for-srp}
 
 ## 适用于AEM平台的Solr {#solr-for-aem-platform}
@@ -36,13 +43,13 @@ ht-degree: 2%
 * 无需服务
 * 运行模式的选择：
 
-   * 独立模式
-   * [SolrCloud模式](#solrcloud-mode) （建议用于生产环境）
+  * 独立模式
+  * [SolrCloud模式](#solrcloud-mode) （建议用于生产环境）
 
 * 多语言搜索(MLS)的选择
 
-   * [安装标准MLS](#installing-standard-mls)
-   * [安装高级MLS](#installing-advanced-mls)
+  * [安装标准MLS](#installing-standard-mls)
+  * [安装高级MLS](#installing-advanced-mls)
 
 ## SolrCloud模式 {#solrcloud-mode}
 
@@ -288,35 +295,35 @@ AEM Communities的多语言搜索(MLS)是为Solr平台而构建的，旨在跨�
 * 在独立模式下安装Solr。
 * 如果运行Solr5，请创建集合1（与Solr4类似）：
 
-   * `./bin/solr start`
-   * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
+  * `./bin/solr start`
+  * `./bin/solr create_core -c collection1 -d sample_techproducts_configs`
 
 * 运行安装脚本：安装[-v 4|5] [-d solrhome] [-c collectionpath]
 其中：
 
-   * -d solrhome
+  * -d solrhome
 
-     Solr安装目录
+    Solr安装目录
 
-   * -c集合路径
+  * -c集合路径
 
-     solr中的收藏集路径
+    solr中的收藏集路径
 
-   * — 帮助
+  * — 帮助
 
-     打印命令行选项
+    打印命令行选项
 
-   * -v [4|5]
+  * -v [4|5]
 
-     为solr设置版本
+    为solr设置版本
 
 * Solr 4.10.4的示例：
 
-   * Install.bat -v 4 -d c：/solr-4.10.4 -c：/solr-4.10.4/example/solr/collection1
+  * Install.bat -v 4 -d c：/solr-4.10.4 -c：/solr-4.10.4/example/solr/collection1
 
 * Solr 5.4.0的示例：
 
-   * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
+  * Install.sh -v 5 -d /tmp/solr-5.4.0 -c /tmp/solr-5.4.0/server/solr/collection1
 
 **注释**：
 

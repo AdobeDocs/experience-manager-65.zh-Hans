@@ -5,13 +5,37 @@ exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '847'
+source-wordcount: '845'
 ht-degree: 91%
-
 ---
-
 # 配置翻译规则 {#configure-translation-rules}
 
 了解如何定义翻译规则，标识要翻译的内容。
@@ -27,42 +51,42 @@ ht-degree: 91%
 
 ## 目标 {#objective}
 
-本文档可帮助您了解如何使用 AEM 的翻译规则来标识翻译内容。阅读本文档后，您应：
+本文档可帮助您了解如何使用 AEM 的翻译规则来标识翻译内容。 阅读本文档后，您应：
 
 * 了解翻译规则的用途。
 * 能够定义您自己的翻译规则。
 
 ## 翻译规则 {#translation-rules}
 
-代表您的 Headless 内容的内容片段可以包含按结构化字段编排的许多信息。根据您的项目需求，可能不必翻译内容片段中的所有字段。
+代表您的 Headless 内容的内容片段可以包含按结构化字段编排的许多信息。 根据您的项目需求，可能不必翻译内容片段中的所有字段。
 
-翻译规则标识翻译项目中包含或排除的内容。在翻译内容时，AEM 会根据这些规则提取或收集内容。这样一来，只会将必须翻译的内容发送到翻译服务。
+翻译规则标识翻译项目中包含或排除的内容。 在翻译内容时，AEM 会根据这些规则提取或收集内容。 这样一来，只会将必须翻译的内容发送到翻译服务。
 
 翻译规则包含以下信息：
 
 * 规则应用于的内容的路径
-   * 规则也应用于内容的后代
+  * 规则也应用于内容的后代
 * 包含要翻译的内容的属性的名称
-   * 属性可以特定于某个特定的资源类型或所有资源类型
+  * 属性可以特定于某个特定的资源类型或所有资源类型
 
 由于定义了内容片段结构的内容片段模型是您自己的项目所独有的，因此，设置翻译规则至关重要，这样一来，AEM 才能知道要翻译的内容模型元素。
 
 >[!TIP]
 >
->通常，内容架构师为翻译专家提供翻译所需的所有字段的&#x200B;**属性名称**。 需要使用这些名称才能配置翻译规则。作为翻译专家，您[可以自行查找这些&#x200B;**属性名称**](getting-started.md#content-models)，如本历程中前面所述。
+>通常，内容架构师为翻译专家提供翻译所需的所有字段的&#x200B;**属性名称**。 需要使用这些名称才能配置翻译规则。 作为翻译专家，您[可以自行查找这些&#x200B;**属性名称**](getting-started.md#content-models)，如本历程中前面所述。
 
 ## 创建翻译规则 {#creating-rules}
 
-可以创建多个规则来支持复杂的翻译要求。例如，一个您可能正在处理的项目需要翻译模型的所有字段，但在另一个项目中，仅需翻译描述字段，而标题无需翻译。
+可以创建多个规则来支持复杂的翻译要求。 例如，一个您可能正在处理的项目需要翻译模型的所有字段，但在另一个项目中，仅需翻译描述字段，而标题无需翻译。
 
-翻译规则旨在处理此类情况。但在此示例中，我们通过关注一个简单的单一配置来说明如何创建规则。
+翻译规则旨在处理此类情况。 但在此示例中，我们通过关注一个简单的单一配置来说明如何创建规则。
 
-提供了一个用于配置翻译规则的&#x200B;**翻译配置**&#x200B;控制台。要访问它，请执行以下操作：
+提供了一个用于配置翻译规则的&#x200B;**翻译配置**&#x200B;控制台。 要访问它，请执行以下操作：
 
 1. 导航到&#x200B;**工具** > **常规**。
 1. 单击&#x200B;**翻译配置**。
 
-在&#x200B;**翻译配置** UI 中，有若干选项可用于您的翻译规则。下面我们重点介绍基本 Headless 本地化配置所需的最为必要和典型的步骤。
+在&#x200B;**翻译配置** UI 中，有若干选项可用于您的翻译规则。 下面我们重点介绍基本 Headless 本地化配置所需的最为必要和典型的步骤。
 
 1. 单击&#x200B;**添加上下文**，以添加路径。 这是受规则影响的内容的路径。
    ![添加上下文](assets/add-translation-context.png)
@@ -71,7 +95,7 @@ ht-degree: 91%
 1. AEM 将保存配置。
 1. 选择您创建的上下文，然后单击&#x200B;**编辑**。 这将打开&#x200B;**翻译规则编辑器**&#x200B;以配置属性。
    ![翻译规则编辑器](assets/translation-rules-editor.png)
-1. 默认情况下，所有配置都继承自父路径，在此示例中为 `/content/dam`。取消选中选项&#x200B;**从`/content/dam`**&#x200B;继承以向配置添加其他字段。
+1. 默认情况下，所有配置都继承自父路径，在此示例中为 `/content/dam`。 取消选中选项&#x200B;**从`/content/dam`**&#x200B;继承以向配置添加其他字段。
 1. 取消选中后，在列表的&#x200B;**常规**&#x200B;部分下，添加您[之前标识为翻译字段](getting-started.md#content-models)的内容片段模型的属性名称。
    1. 在&#x200B;**新属性**&#x200B;字段中输入属性名称。
    1. 这将自动选中&#x200B;**翻译**&#x200B;和&#x200B;**继承**&#x200B;选项。
@@ -84,7 +108,7 @@ ht-degree: 91%
 
 ## 高级用法 {#advanced-usage}
 
-有若干其他属性可配置为您的翻译规则的一部分。此外，还可手动将规则指定为 XML，而这可提高独特性和灵活性。
+有若干其他属性可作为您的翻译规则的一部分进行配置。 此外，还可手动将规则指定为 XML，而这可提高独特性和灵活性。
 
 通常，无需此类功能即可开始本地化您的 Headless 内容，但如果您愿意，可以参阅[其他资源](#additional-resources)部分以了解详细信息。
 

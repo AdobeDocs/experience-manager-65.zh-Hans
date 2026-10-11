@@ -1,6 +1,6 @@
 ---
 title: 创建新文件夹以对表单进行分类
-description: 使用文件夹整理表单模板、PDF、资源和自适应表单。
+description: 使用文件夹组织您的表单模板、PDF、资源和自适应表单。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
@@ -8,16 +8,30 @@ role: Admin,User
 exl-id: f8af1ac3-6a95-4f91-8979-6b41a7e02ca4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '386'
-ht-degree: 0%
-
+source-wordcount: '387'
+ht-degree: 3%
 ---
-
 # 创建新文件夹以对表单进行分类 {#create-new-folders-to-categorize-forms}
 
-您可以使用文件夹更好地组织资源。 由于AEM Forms支持多种类型的资源(表单模板、PDF、文档、资源和自适应表单以及各种元数据)，因此您可以使用文件夹根据所需的标准对表单进行分类。
+您可以使用文件夹更好地组织资源。 由于AEM Forms支持多种类型的资源（表单模板、PDF、文档、资源和自适应表单以及各种元数据），因此您可以使用文件夹根据所需的标准对表单进行分类。
 
 AEM Forms允许您更改文件夹的标题。 标题与存储库中存储文件夹的节点名称不同。 相反，标题将保留为文件夹的元数据。 如果更改文件夹的标题，则该文件夹中存在的任何资源的路径都不会受到影响。
 
@@ -25,7 +39,7 @@ AEM Forms允许您更改文件夹的标题。 标题与存储库中存储文件�
 
 您可以通过以下方式之一在AEM Forms中创建文件夹：
 
-* 上传包含所需文件夹结构中的资源的ZIP文件(请参阅[在AEM Forms中获取XDP和PDF文档](/help/forms/using/get-xdp-pdf-documents-aem.md))
+* 上传包含所需文件夹结构中的资源的ZIP文件（请参阅[在AEM Forms中获取XDP和PDF文档](/help/forms/using/get-xdp-pdf-documents-aem.md)）
 
 * 创建空文件夹
 

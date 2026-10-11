@@ -9,13 +9,20 @@ exl-id: 1f60a0d4-a272-45e8-9742-4b706be8502e
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '567'
 ht-degree: 1%
-
 ---
-
 # 设置网站结构 {#setup-website-structure}
 
 要设置您的网站，请按照下面的说明说明在下列位置创建文件夹：
@@ -89,7 +96,7 @@ ht-degree: 1%
 
 1. 要在经典UI中使用Designer工具，请浏览到[https://&lt;server>：&lt;port>/miscadmin](http://localhost:4502/miscadmin)。
 
-   注意：如果使用CRXDE Lite创建`cq:Page`类型的Node，则不会将页的“访问控制”和“复制”设置为默认设置。
+   注意：如果您使用CRXDE Lite创建`cq:Page`类型的节点，则不会将页面的访问控制和复制设置为默认设置。
 
 1. 在资源管理器窗格中，选择&#x200B;**[!UICONTROL 设计]**&#x200B;文件夹，然后单击&#x200B;**[!UICONTROL 新建]** > **[!UICONTROL 新建页面]**。
 
@@ -105,7 +112,7 @@ ht-degree: 1%
 
 1. 如果未显示“SCF沙盒”文件夹，请刷新资源管理器窗格。
 
-1. 返回CRXDE Lite(http:// localhost：4502/crx/de)并展开/etc/designs以查看名为“an-scf-sandbox”的节点。
+1. 返回CRXDE Lite (http:// localhost：4502/crx/de)并展开/etc/designs以查看名为“an-scf-sandbox”的节点。
 
    在CRXDE的右下窗格中，您可以查看“属性”选项卡、“访问控制”选项卡和“复制”选项卡，以查看使用“设计页模板”定义的内容。
 

@@ -1,5 +1,5 @@
 ---
-title: 页面模板 — 可编辑
+title: 页面模板（可编辑）
 description: 引入了可编辑模板，允许非开发人员创建和编辑模板，提供保留与从中创建的任何页面的动态连接的模板，并使页面组件更通用
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,30 @@ exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3187'
-ht-degree: 4%
-
+source-wordcount: '3283'
+ht-degree: 5%
 ---
-
-# 页面模板 — 可编辑 {#page-templates-editable}
+# 页面模板（可编辑） {#page-templates-editable}
 
 可编辑模板已引入到：
 
 * 允许专业作者[创建和编辑模板](/help/sites-authoring/templates.md)。
 
-   * 此类专用作者称为&#x200B;**模板作者**
-   * 模板作者必须是`template-authors`组的成员。
+  * 此类专用作者称为&#x200B;**模板作者**
+  * 模板作者必须是`template-authors`组的成员。
 
 * 提供保留与从中创建的任何页面的动态连接的模板。 这样做可确保对模板所做的任何更改都反映在页面本身中。
 * 使页面组件变得更通用，以便无需自定义即可使用核心页面组件。
@@ -39,7 +48,7 @@ ht-degree: 4%
 
 * 提供了创建可编辑模板的概述
 
-   * 有关详细信息，请参阅[创建页面模板](/help/sites-authoring/templates.md)
+  * 有关详细信息，请参阅[创建页面模板](/help/sites-authoring/templates.md)
 
 * 描述创建可编辑模板所需的管理员/开发人员任务
 * 描述可编辑模板的技术基础
@@ -51,11 +60,11 @@ ht-degree: 4%
 >以下教程可能也适合在新项目中设置可编辑页面模板：
 >[AEM Sites快速入门第2部分 — 创建基础页和模板](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/pages-templates.html?lang=zh-Hans)
 
-## 创建新模板 {#creating-a-new-template}
+## 创建新的模板 {#creating-a-new-template}
 
 创建可编辑模板主要由模板作者使用[模板控制台和模板编辑器](/help/sites-authoring/templates.md)完成。 本节概述了此过程，并在后面描述了技术级别所发生的情况。
 
-有关如何在AEM项目中使用可编辑模板的信息，请参阅[使用Lazybones创建AEM项目](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478?profile.language=zh-Hans)。
+有关如何在AEM项目中使用可编辑模板的信息，请参阅[使用Lazybones创建AEM项目](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478)。
 
 创建可编辑模板时，您可以：
 
@@ -73,7 +82,7 @@ ht-degree: 4%
    * 利用结构，可为模板定义组件和内容。
    * 不能在生成页面上移动在模板结构中定义的组件，也不能从任何生成页面中删除这些组件。
 
-      * 如果您在`We.Retail`示例内容之外的自定义文件夹中创建模板，则可以选择“基础组件”或使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)。
+     * 如果您在`We.Retail`示例内容之外的自定义文件夹中创建模板，则可以选择“基础组件”或使用[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)。
 
    * 如果要使页面作者能够添加和删除组件，请在模板中添加段落系统。
    * 可以解锁组件，然后再将其锁定，以便定义初始内容。
@@ -86,7 +95,7 @@ ht-degree: 4%
 
    * 内容策略定义组件的设计属性。
 
-      * 例如，可用的元件或最小/最大尺寸。
+     * 例如，可用的组件或最小/最大尺寸。
 
    * 这些策略适用于模板（以及使用该模板创建的页面）。
 
@@ -136,7 +145,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->模板是简化页面创建工作流的强大工具。不过，太多的模板会让作者不知所措，并使页面创建变得混乱。一个好的经验法则是将模板的数量保持在 100 个以内。
+>模板是简化页面创建工作流的强大工具。 不过，太多的模板会让作者不知所措，并使页面创建变得混乱。 一个好的经验法则是将模板的数量保持在 100 个以内。
 >
 >由于潜在的性能影响，Adobe 建议不要使用超过 1000 个模板。
 
@@ -374,18 +383,18 @@ ht-degree: 4%
 
 * 模板类型可以有效地为模板提供模板。 创建模板时，将使用所选模板类型的结构和初始内容来创建模板。
 
-   * 将复制模板类型以创建模板。
-   * 复制完成后，模板和模板类型之间的唯一连接是用作信息的静态引用。
+  * 将复制模板类型以创建模板。
+  * 复制完成后，模板和模板类型之间的唯一连接是用作信息的静态引用。
 
 * 模板类型允许您定义：
 
-   * 页面组件的资源类型。
-   * 根节点的策略，用于定义模板编辑器中允许的组件。
-   * Adobe建议为响应式网格定义断点，并在模板类型上设置移动设备模拟器。 此步骤是可选的，因为也可以在单个模板上定义配置（请参阅[模板类型和移动设备组](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)）。
+  * 页面组件的资源类型。
+  * 根节点的策略，用于定义模板编辑器中允许的组件。
+  * Adobe建议您在模板类型上为响应式网格和移动设备仿真器设置定义断点。 此步骤是可选的，因为也可以在单个模板上定义配置（请参阅[模板类型和移动设备组](/help/sites-developing/page-templates-editable.md#p-template-type-and-mobile-device-groups-br-p)）。
 
 * AEM提供了少量的现成模板类型，如“HTML5页面”和“自适应表单页面”。
 
-   * 其他示例作为[`We.Retail`](/help/sites-developing/we-retail.md)示例内容的一部分提供。
+  * 其他示例作为[`We.Retail`](/help/sites-developing/we-retail.md)示例内容的一部分提供。
 
 * 模板类型通常由开发人员定义。
 
@@ -435,7 +444,7 @@ ht-degree: 4%
 如果您已创建可作为其他模板基础的模板，则可以将此模板作为模板类型复制。
 
 1. 创建模板，就像创建任何可编辑的模板一样。 请参阅[创建页面模板](/help/sites-authoring/templates.md#creating-a-new-template-template-author)。 这可以作为模板类型的基础。
-1. 使用CRXDE Lite，将新创建的模板从`templates`节点复制到[模板文件夹](/help/sites-developing/page-templates-editable.md#template-folders)下的`template-types`节点。
+1. 使用CRXDE Lite将新创建的模板从`templates`节点复制到[模板文件夹](/help/sites-developing/page-templates-editable.md#template-folders)下的`template-types`节点。
 1. 从[模板文件夹](/help/sites-developing/page-templates-editable.md#template-folders)下的`templates`节点中删除模板。
 1. 在`template-types`节点下的模板副本中，从所有`jcr:content`节点中删除所有`cq:template`和`cq:templateType`属性。
 
@@ -492,13 +501,13 @@ GITHUB上的代码
 
 * `<template-name>`
 
-   * ` [initial](#initial-content)`
-   * `jcr:content`
-   * ` [structure](#structure)`
-   * ` [policies](#policies)`
-   * `thumbnail.png`
+  * ` [initial](#initial-content)`
+  * `jcr:content`
+  * ` [structure](#structure)`
+  * ` [policies](#policies)`
+  * `thumbnail.png`
 
-### jcr：content {#jcr-content}
+### jcr:content {#jcr-content}
 
 此节点保存模板的属性：
 
@@ -506,9 +515,9 @@ GITHUB上的代码
 
 * **名称**：`status`
 
-   * **类型**：`String`
+  * **类型**：`String`
 
-   * **值**： `draft`、`enabled`或`disabled`
+  * **值**： `draft`、`enabled`或`disabled`
 
 ### 结构 {#structure}
 
@@ -518,10 +527,10 @@ GITHUB上的代码
 * 对结构所做的更改会反映在使用模板创建的任何页面中。
 * `root` (`structure/jcr:content/root`)节点定义了结果页面中可用的组件列表。
 
-   * 无法在任何生成页面上移动或删除在模板结构中定义的组件。
-   * 解锁组件后，`editable`属性将设置为`true`。
+  * 无法在任何生成页面上移动或删除在模板结构中定义的组件。
+  * 解锁组件后，`editable`属性将设置为`true`。
 
-   * 解锁已包含内容的组件后，此内容将移至`initial`分支。
+  * 解锁已包含内容的组件后，此内容将移至`initial`分支。
 
 * `cq:responsive`节点包含响应布局的定义。
 
@@ -545,7 +554,7 @@ GITHUB上的代码
 
 * `root`节点上的属性`cq:policy`
   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
-为页面的段落系统提供内容策略的相对引用。
+  为页面的段落系统提供内容策略的相对引用。
 
 * 属性`cq:policy`位于`root`下的组件显式节点上，提供指向各个组件策略的链接。
 
@@ -580,23 +589,21 @@ GITHUB上的代码
 
    * 正在设置`jcr:content`节点上的状态属性。
 
-      * 例如，在：
+     * 例如，在：
+       `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
-        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+     * 定义属性：
 
-      * 定义属性：
-
-         * 名称：状态
-         * 类型：字符串
-         * 值： `enabled`
+       * 名称：状态
+       * 类型：字符串
+       * 值： `enabled`
 
 1. **允许的模板**
 
    * [在子分支的相应页面或根页面的&#x200B;**页面属性**](/help/sites-authoring/templates.md#allowing-a-template-author)&#x200B;上定义允许的模板路径。
    * 设置属性：
-
      `cq:allowedTemplates`
-在所需分支的`jcr:content`节点上。
+     在所需分支的`jcr:content`节点上。
 
    例如，其值为：
 
@@ -610,41 +617,41 @@ GITHUB上的代码
 
 * 具有对模板和模板类型中包含的信息的引用。 您可以使用具有以下属性的`jcr:content`节点来实现此功能：
 
-   * `cq:template`
-提供对实际模板的动态引用；使对模板所做的更改能够反映在实际页面上。
+  * `cq:template`
+    提供对实际模板的动态引用；使对模板所做的更改能够反映在实际页面上。
 
-   * `cq:templateType`
-提供对模板类型的引用。
+  * `cq:templateType`
+    提供对模板类型的引用。
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
 上图显示了模板、内容和组件如何相互关联：
 
-* 控制器 — `/content/<my-site>/<my-page>`
+* 控制器 —  `/content/<my-site>/<my-page>`
 引用模板的结果页面。 内容控制着整个过程。 根据定义，访问相应的模板和组件。
 
-* 配置 — `/conf/<my-folder>/settings/wcm/templates/<my-template>`
+* 配置 —  `/conf/<my-folder>/settings/wcm/templates/<my-template>`
 [模板和相关内容策略](#template-definitions)定义页面配置。
 
 * 模型 — OSGi包
 [OSGI包](/help/sites-deploying/osgi-configuration-settings.md)实现该功能。
 
-* 视图 — `/apps/<my-site>/components`
+* 视图 —  `/apps/<my-site>/components`
 在创作和发布环境中，内容均由[组件](/help/sites-developing/components.md)渲染。
 
 呈现页面时：
 
 * **模板**：
 
-   * 引用其`jcr:content`节点的`cq:template`属性以访问与该页面对应的模板。
+  * 引用其`jcr:content`节点的`cq:template`属性以访问与该页面对应的模板。
 
 * **组件**：
 
-   * 页面组件将模板的`structure/jcr:content`树与页面的`jcr:content`树合并。
+  * 页面组件将模板的`structure/jcr:content`树与页面的`jcr:content`树合并。
 
-   * 页面组件仅允许作者编辑已标记为可编辑的模板结构的节点（以及任何子节点）。
-   * 在页面上呈现组件时，将从`jcr:content`节点中获取该组件的相对路径；随后将搜索模板的`policies/jcr:content`节点下的相同路径。
+  * 页面组件仅允许作者编辑已标记为可编辑的模板结构的节点（以及任何子节点）。
+  * 在页面上呈现组件时，将从`jcr:content`节点中获取该组件的相对路径；随后将搜索模板的`policies/jcr:content`节点下的相同路径。
 
-      * 此节点的`cq:policy`属性指向实际内容策略（即保存该组件的设计配置）。
+    * 此节点的`cq:policy`属性指向实际内容策略（即保存该组件的设计配置）。
 
-      * 此功能允许您拥有多个重复使用相同内容策略配置的模板。
+    * 此功能允许您拥有多个重复使用相同内容策略配置的模板。

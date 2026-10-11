@@ -10,13 +10,22 @@ exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '281'
-ht-degree: 7%
-
+source-wordcount: '293'
+ht-degree: 8%
 ---
-
 # 编辑启动项{#editing-launches}
 
 ## 编辑启动页面 {#editing-launch-pages}
@@ -45,9 +54,9 @@ ht-degree: 7%
 
    * 在&#x200B;**常规**&#x200B;选项卡中，可以编辑：
 
-      * **标题**
-      * **上线日期**：该日期等于启动日期
-      * **生产就绪**
+     * **标题**
+     * **上线日期**：该日期等于启动日期
+     * **生产就绪**
 
      有关这些字段的用途和交互的信息，请参阅[启动项 — 事件的顺序](/help/sites-authoring/launches.md#launches-the-order-of-events)。
 

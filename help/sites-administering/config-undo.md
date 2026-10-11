@@ -9,13 +9,22 @@ exl-id: 2cf3ac3f-ee17-480d-a32a-c57631502693
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f6a903263eca2c412c6ca9af2f5e51ea1c5878aa
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '701'
-ht-degree: 7%
-
+source-wordcount: '710'
+ht-degree: 8%
 ---
-
 # 为页面编辑配置撤销功能{#configuring-undo-for-page-editing}
 
 [OSGi服务](/help/sites-deploying/configuring-osgi.md) **Day CQ WCM撤消配置** ( `com.day.cq.wcm.undo.UndoConfigService`)公开了几个属性，这些属性控制用于编辑页面的撤消和重做命令的行为。
@@ -47,16 +56,16 @@ ht-degree: 7%
 * **启用**
 ( `cq.wcm.undo.enabled`)
 
-   * **描述**：确定页面作者是否可以撤消和重做更改。
-   * **默认值**： `Selected`
-   * **类型**：`Boolean`
+  * **描述**：确定页面作者是否可以撤消和重做更改。
+  * **默认值**： `Selected`
+  * **类型**：`Boolean`
 
 * **路径**
 ( `cq.wcm.undo.path`)
 
-   * **描述**：用于保留二进制撤消数据的存储库路径。 当作者更改二进制数据（如图像）时，数据的原始版本将保留在此处。 撤消对二进制数据的更改时，此二进制撤消数据将还原到页面。
-   * **默认值**： `/var/undo`
-   * **类型**：`String`
+  * **描述**：用于保留二进制撤消数据的存储库路径。 当作者更改二进制数据（如图像）时，数据的原始版本将保留在此处。 撤消对二进制数据的更改时，此二进制撤消数据将还原到页面。
+  * **默认值**： `/var/undo`
+  * **类型**：`String`
 
   >[!NOTE]
   >
@@ -65,86 +74,86 @@ ht-degree: 7%
 * **分钟 有效性**
 ( `cq.wcm.undo.validity`)
 
-   * **描述**：二进制还原数据的存储时间下限（以小时为单位）。 在此时间段之后，二进制数据可供删除，以节省磁盘空间。
-   * **默认值**： `10`
-   * **类型**：`Integer`
+  * **描述**：二进制还原数据的存储时间下限（以小时为单位）。 在此时间段之后，二进制数据可供删除，以节省磁盘空间。
+  * **默认值**： `10`
+  * **类型**：`Integer`
 
 * **步骤**
 ( `cq.wcm.undo.steps`)
 
-   * **描述**：还原历史记录中存储的最大页面操作数。
-   * **默认值**： `20`
-   * **类型**：`Integer`
+  * **描述**：还原历史记录中存储的最大页面操作数。
+  * **默认值**： `20`
+  * **类型**：`Integer`
 
 * **持久性**
 ( `cq.wcm.undo.persistence`)
 
-   * **描述**：保留撤消历史记录的类。 提供了两个持久性类：
+  * **描述**：保留撤消历史记录的类。 提供了两个持久性类：
 
-      * `CQ.undo.persistence.WindowNamePersistence`：使用window.name属性保留历史记录。
-      * `CQ.undo.persistence.CookiePersistance`：使用Cookie保留历史记录。
+    * `CQ.undo.persistence.WindowNamePersistence`：使用window.name属性保留历史记录。
+    * `CQ.undo.persistence.CookiePersistance`：使用Cookie保留历史记录。
 
-   * **默认值**： `CQ.undo.persistence.WindowNamePersistence`
-   * **类型**：`String`
+  * **默认值**： `CQ.undo.persistence.WindowNamePersistence`
+  * **类型**：`String`
 
 * **持久性模式**
 ( `cq.wcm.undo.persistence.mode`)
 
-   * **描述**：确定何时保留撤消历史记录。 选择此选项可在每次编辑页面后保留还原历史记录。 清除此选项可仅在发生页面重新加载（例如，用户导航到其他页面）时保留。
+  * **描述**：确定何时保留撤消历史记录。 选择此选项可在每次编辑页面后保留还原历史记录。 清除此选项可仅在发生页面重新加载（例如，用户导航到其他页面）时保留。
 
-     保留撤消历史记录会使用Web浏览器资源。 如果用户的浏览器对页面编辑的反应较慢，请尝试在页面重新加载时保留撤消历史记录。
+    保留撤消历史记录会使用Web浏览器资源。 如果用户的浏览器对页面编辑的反应较慢，请尝试在页面重新加载时保留撤消历史记录。
 
-   * **默认值**： `Selected`
-   * **类型**：`Boolean`
+  * **默认值**： `Selected`
+  * **类型**：`Boolean`
 
 * **标记模式**
 ( `cq.wcm.undo.markermode`)
 
-   * **描述**：指定用于指示发生撤消或重做时受影响的段落的可视提示。 以下值有效：
+  * **描述**：指定用于指示发生撤消或重做时受影响的段落的可视提示。 以下值有效：
 
-      * 闪烁：段落的选择指示器会暂时闪烁。
-      * 选择：选定段落。
+    * 闪烁：段落的选择指示器会暂时闪烁。
+    * 选择：选定段落。
 
-   * **默认值**： `flash`
-   * **类型**：`String`
+  * **默认值**： `flash`
+  * **类型**：`String`
 
 * **个组件良好**
 ( `cq.wcm.undo.whitelist`)
 
-   * **描述**：您希望受撤消和重做命令影响的组件列表。 当组件路径在撤消/重做操作中正常运行时，将其添加到此列表。 附加星号(&amp;ast；)以指定一组组件：
+  * **描述**：您希望受撤消和重做命令影响的组件列表。 当组件路径在撤消/重做操作中正常运行时，将其添加到此列表。 附加星号(&amp;ast；)以指定一组组件：
 
-      * 以下值指定基础文本组件：
+    * 以下值指定基础文本组件：
 
-        `foundation/components/text`
+      `foundation/components/text`
 
-      * 以下值指定所有基础组件：
+    * 以下值指定所有基础组件：
 
-        `foundation/components/*`
+      `foundation/components/*`
 
-   * 当向不在此列表中的组件发出撤消或重做命令时，将显示一条消息，指示该命令可能不可靠。
+  * 当向不在此列表中的组件发出撤消或重做命令时，将显示一条消息，指示该命令可能不可靠。
 
-   * **默认**：属性已使用AEM提供的许多组件填充。
-   * **类型**：`String[]`
+  * **默认**：属性已使用AEM提供的许多组件填充。
+  * **类型**：`String[]`
 
 * **组件错误**
 ( `cq.wcm.undo.blacklist`)
 
-   * **描述**：不想受撤消命令影响的组件和/或组件操作的列表。 使用undo命令添加行为不正确的组件和组件操作：
+  * **描述**：不想受撤消命令影响的组件和/或组件操作的列表。 使用undo命令添加行为不正确的组件和组件操作：
 
-      * 当您希望撤消历史记录中不包含组件的任何操作（例如，`collab/forum/components/post`）时，添加组件路径
-      * 如果希望撤消历史记录中省略该特定操作（其他操作运行正常）（例如，`collab/forum/components/post:insertParagraph.`），请在路径后附加一个冒号(：)和一个操作
+    * 当您希望撤消历史记录中不包含组件的任何操作（例如，`collab/forum/components/post`）时，添加组件路径
+    * 如果希望撤消历史记录中省略该特定操作（其他操作运行正常）（例如，`collab/forum/components/post:insertParagraph.`），请在路径后附加一个冒号(：)和一个操作
 
   >[!NOTE]
   >
   >当操作在此列表上时，它仍会添加到撤消历史记录中。 用户无法撤消撤消历史记录中早于&#x200B;**错误组件**&#x200B;操作的操作。
 
-   * 典型操作名称如下：
+  * 典型操作名称如下：
 
-      * `insertParagraph`：组件已添加到页面。
-      * `removeParagraph`：组件已删除。
-      * `moveParagraph`：段落被移动到其他位置。
-      * `updateParagraph`：段落属性已更改。
+    * `insertParagraph`：组件已添加到页面。
+    * `removeParagraph`：组件已删除。
+    * `moveParagraph`：段落被移动到其他位置。
+    * `updateParagraph`：段落属性已更改。
 
-   * **默认**：属性已使用多个组件操作填充。
-   * **类型**：`String[]`
+  * **默认**：属性已使用多个组件操作填充。
+  * **类型**：`String[]`
 

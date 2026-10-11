@@ -1,5 +1,5 @@
 ---
-title: 核对清单
+title: 清单
 description: 以下核对表重点说明了一些主要的测试问题
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 2%
-
+ht-degree: 3%
 ---
-
-# 核对清单{#checklists}
+# 清单{#checklists}
 
 以下核对清单重点介绍了一些主要问题 — 有关完整的详细信息，请阅读与测试相关的其他部分。
 

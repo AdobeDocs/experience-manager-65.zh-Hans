@@ -9,13 +9,22 @@ exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Administering
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1802'
 ht-degree: 100%
-
 ---
-
 
 # Adobe Experience Manager（AEM）中的服务用户 {#service-users-in-aem}
 
@@ -41,31 +50,31 @@ ht-degree: 100%
 
 * **更改访问控制**
 
-   * 确保确实需要访问权限的用户或用户组能够获得相应的访问权限；
+  * 确保确实需要访问权限的用户或用户组能够获得相应的访问权限；
 
 * **优化内容结构**
 
-   * 将内容移动到其他位置，例如与可用的请求会话相匹配的访问控制位置；
-   * 调整内容的粒度；
+  * 将内容移动到其他位置，例如与可用的请求会话相匹配的访问控制位置；
+  * 调整内容的粒度；
 
 * **将代码重构为合适的服务**
 
-   * 将业务逻辑从 JSP 代码中移到服务层。 这样可以支持不同的内容建模方式。
+  * 将业务逻辑从 JSP 代码中移到服务层。 这样可以支持不同的内容建模方式。
 
 此外，请确保您开发的任何新功能都遵循以下原则：
 
 * **安全需求应主导内容结构设计**
 
-   * 访问控制应当自然融入管理流程
-   * 访问控制必须由存储库强制执行，而不是依赖应用程序
+  * 访问控制应当自然融入管理流程
+  * 访问控制必须由存储库强制执行，而不是依赖应用程序
 
 * **使用节点类型**
 
-   * 限制可设置的属性范围
+  * 限制可设置的属性范围
 
 * **遵循隐私设置**
 
-   * 如果存在私有轮廓，例如对于在私有 `/profile` 节点中的信息，则不要暴露其中的轮廓图片、电子邮件或完整姓名。
+  * 如果存在私有轮廓，例如对于在私有 `/profile` 节点中的信息，则不要暴露其中的轮廓图片、电子邮件或完整姓名。
 
 ## 严格的访问控制 {#strict-access-control}
 
@@ -78,7 +87,7 @@ ht-degree: 100%
 * 为节点类型应用 ACL
 * 限制权限
 
-   * 例如，当仅需要写入属性时，不要授予 `jcr:write` 权限；而应使用 `jcr:modifyProperties`
+  * 例如，当仅需要写入属性时，不要授予 `jcr:write` 权限；而应使用 `jcr:modifyProperties`
 
 ## 服务用户与映射 {#service-users-and-mappings}
 

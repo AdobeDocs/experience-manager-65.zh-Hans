@@ -9,31 +9,40 @@ exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '530'
-ht-degree: 6%
-
+source-wordcount: '533'
+ht-degree: 13%
 ---
+# 最佳做法{#best-practices}
 
-# 最佳实践{#best-practices}
-
-最佳实践描述如何以尽可能高效和最有效的方式开发、管理或使用AEM。 此不断增加的主题列表包括AEM中的多个领域。
+最佳实践描述如何以尽可能高效和最有效的方式开发、管理或使用AEM。 这一不断增加的主题列表包括AEM中的多个领域。
 
 以下区域提供了有关最佳实践的文档：
 
-* [资源](#assets)
+* [Assets](#assets)
 * [Sites](#sites)
 
 有关创作、部署和维护或开发的最佳实践，请参阅以下内容之一：
 
-* [创作最佳实践](/help/sites-authoring/best-practices.md)
-* [制定最佳实践](/help/sites-developing/best-practices.md)
+* [创作最佳做法](/help/sites-authoring/best-practices.md)
+* [开发最佳做法](/help/sites-developing/best-practices.md)
 * [部署最佳实践](/help/sites-deploying/best-practices.md)
 
 下面的表格中介绍了特定文档并将其链接到该文档。
 
-## 资源 {#assets}
+## Assets {#assets}
 
 以下主题介绍了有关Assets的最佳实践，包括Dynamic Media功能和Dynamic Media Classic集成：
 
@@ -50,7 +59,7 @@ ht-degree: 6%
    <td>大多数处理配置文件是基于文件夹的，因为视频、元数据、图像处理始终应用于文件夹。 此最佳实践文档介绍如何定义和设置文件夹层次结构，因为层次结构对如何处理内容有显着影响。 </td>
   </tr>
   <tr>
-   <td>Scene7与AEM集成</td>
+   <td>集成Scene7和AEM</td>
    <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">将Scene7与AEM集成的最佳实践</a></td>
    <td><p>描述何时启用轮询导入程序、如何测试您的集成，以及何时使用内容浏览器而不是直接上传到Assets。</p> </td>
   </tr>
@@ -60,9 +69,9 @@ ht-degree: 6%
    <td>作为有关<a href="/help/assets/managing-image-presets.md">管理图像预设</a>的文档的一部分，这些主题描述了什么是图像预设以及有关选择图像预设选项的最佳实践。</td>
   </tr>
   <tr>
-   <td>Dynamic Media与与Scene7的直接集成</td>
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM集成与Dynamic Media</a></td>
-   <td>描述何时最好使用Dynamic Media解决方案、何时将S7与AEM集成或者何时同时使用这两种解决方案。</td>
+   <td>Dynamic Media与Scene7直接集成</td>
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM集成与Dynamic Media集成</a></td>
+   <td>描述何时最好使用Dynamic Media解决方案、何时将S7与AEM集成或者何时同时使用二者。</td>
   </tr>
  </tbody>
 </table>
@@ -76,21 +85,21 @@ ht-degree: 6%
   <tr>
    <td>GDPR合规性</td>
    <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites GDPR合规性</a></td>
-   <td>欧盟有关数据隐私权的《通用数据保护条例》自2018年5月起生效。 AEM Sites符合GDPR。 本页将指导客户完成在AEM Sites中处理GDPR请求的过程。 它描述了私有数据的存储位置，以及如何手动或使用代码删除私有数据。</td>
+   <td>欧盟《通用数据保护条例》关于数据隐私权的规定自 2018 年 5 月起正式生效。 AEM Sites符合GDPR。 此页面将指导客户完成在 AEM Sites 中处理 GDPR 请求的过程。 它描述了私有数据的存储位置，以及如何手动或使用代码移除私有数据。</td>
   </tr>
   <tr>
    <td>为您的实例定义默认UI。</td>
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">为实例配置默认UI</a></p> </td>
-   <td>AEM具有两个UI：触控优化和classic。 本节详细介绍如何为实例定义默认UI。</td>
+   <td>AEM具有两个UI：触控优化和Classic。 本节详细介绍如何为实例定义默认UI。</td>
   </tr>
   <tr>
    <td>多站点管理</td>
-   <td><a href="/help/sites-administering/msm-best-practices.md">MSM 最佳实践</a></td>
+   <td><a href="/help/sites-administering/msm-best-practices.md">MSM 最佳做法</a></td>
    <td>使用MSM自动进行内容部署的最佳实践。 </td>
   </tr>
   <tr>
    <td>翻译内容</td>
-   <td><a href="/help/sites-administering/tc-bp.md">翻译最佳实践</a></td>
+   <td><a href="/help/sites-administering/tc-bp.md">翻译最佳做法</a></td>
    <td>规划和实施多语言站点的最佳实践。</td>
   </tr>
   <tr>

@@ -9,13 +9,20 @@ role: Admin
 exl-id: dbe28334-3b38-4362-b4f8-e0630e634503
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '274'
 ht-degree: 1%
-
 ---
-
 # 适用于社区的FFmpeg {#ffmpeg-for-communities}
 
 ## 概述 {#overview}
@@ -24,7 +31,7 @@ FFmpeg是一种用于转换和流式传输音频和视频的解决方案，安�
 
 ## 安装FFmpeg {#installing-ffmpeg}
 
-FFmpeg应安装在托管AEM *作者*&#x200B;实例的服务器上。
+FFmpeg应安装在托管AEM *创作*&#x200B;实例的服务器上。
 
 1. 转到[https://www.ffmpeg.org](https://www.ffmpeg.org/)。
 1. 针对您的特定环境（Macintosh、Windows或Linux）下载最新版本的FFmpeg。
@@ -37,13 +44,13 @@ FFmpeg应安装在托管AEM *作者*&#x200B;实例的服务器上。
 
    您应该能够从系统中的任何目录运行FFmpeg。
 
-   * 例如：`ffmpeg -version`。
+   * 例如 `ffmpeg -version`。
 
 ## 配置FFmpeg转码服务 {#configure-ffmpeg-transcoding-service}
 
 默认情况下，在安装FFmpeg时，将根据[!UICONTROL DAM更新资产]工作流定义配置多个演绎版（转码）。
 
-由于转码需要占用大量CPU，因此建议修改目标演绎版列表。 在大多数情况下，不需要转码。
+由于转码需要占用大量的CPU资源，因此建议修改目标演绎版列表。 在大多数情况下，不需要转码。
 
 要修改[!UICONTROL DAM更新资产]工作流，并在此示例中关闭转码，请执行以下操作：
 
@@ -57,7 +64,7 @@ FFmpeg应安装在托管AEM *作者*&#x200B;实例的服务器上。
 * 双击&#x200B;**[!UICONTROL FFmpeg转码]**&#x200B;步骤以访问“步骤属性”对话框。
 * 在&#x200B;**[!UICONTROL 进程]**&#x200B;选项卡下：
 
-   * **[!UICONTROL 参数]**：清除所有条目以禁用转码默认值： `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
+  * **[!UICONTROL 参数]**：清除所有条目以禁用转码默认值： `profile:format_ogg,profile:format_aac,profile:format_flv,profile:format_aac_ie`
 
   ![configure-ffmpeg](assets/configure-ffmpeg.png)
 

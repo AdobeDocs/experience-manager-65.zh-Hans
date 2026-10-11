@@ -6,13 +6,25 @@ feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: ffa4c2522bfe98d99693e3c17666b728377337f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 62%
-
 ---
-
 # 标识要翻译的内容{#identifying-content-to-translate}
 
 翻译规则为翻译项目中包含或排除的页面、组件和资源标识要翻译的内容。 在翻译页面或资源时，AEM 会提取此内容，以便将其发送到翻译服务。
@@ -64,13 +76,13 @@ ht-degree: 62%
 * `path` 属性包含应用规则的分支的根节点的路径。
 * 子 `property` 元素为所有资源类型标识要翻译的节点属性：
 
-   * `name` 属性包含属性名。
-   * 可选 `translate` 属性等于 `false`（如果该属性未翻译）。 默认情况下，值为`true`。 在覆盖以前的规则时，此属性很有用。
+  * `name` 属性包含属性名。
+  * 可选 `translate` 属性等于 `false`（如果该属性未翻译）。 默认情况下，值为`true`。 在覆盖以前的规则时，此属性很有用。
 
 * 子 `node` 元素为特定资源类型标识要翻译的节点属性：
 
-   * `resourceType` 属性包含解析为实施资源类型的组件的路径。
-   * 子 `property` 元素标识要翻译的节点属性。 按照与节点规则的子 `property` 元素相同的方式使用此节点。
+  * `resourceType` 属性包含解析为实施资源类型的组件的路径。
+  * 子 `property` 元素标识要翻译的节点属性。 按照与节点规则的子 `property` 元素相同的方式使用此节点。
 
 以下示例规则导致为 `/content` 节点下的所有页面翻译所有 `text` 属性的内容。 该规则适用于任何在`text`属性中存储内容的组件，例如foundation文本组件和foundation图像组件。
 

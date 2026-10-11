@@ -9,13 +9,22 @@ exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4700'
+source-wordcount: '4702'
 ht-degree: 6%
-
 ---
-
 # 查询与索引的最佳做法{#best-practices-for-queries-and-indexing}
 
 除了在AEM 6中过渡到Oak之外，对查询和索引的管理方式也进行了一些重大更改。 在Jackrabbit 2下，所有内容均默认编制索引，并可自由查询。 在Oak中，必须在`oak:index`节点下手动创建索引。 可以在没有索引的情况下执行查询，但对于大型数据集，查询将运行缓慢，甚至中止。
@@ -128,13 +137,13 @@ Lucene注册一个JMX Bean，它将提供有关索引内容的详细信息，包
 
 * 监测日志中触发大型节点遍历或大型栈内存消耗的查询： &quot;
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
-   * 优化查询以减少遍历的节点数
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
+  * 优化查询以减少遍历的节点数
 
 * 监测日志中触发大型栈内存消耗的查询：
 
-   * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
-   * 优化查询以减少栈内存消耗
+  * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
+  * 优化查询以减少栈内存消耗
 
 对于AEM 6.0 - 6.2版本，您可以通过AEM启动脚本中的JVM参数调整节点遍历阈值，以防止大型查询超出环境。
 
@@ -248,59 +257,59 @@ Lucene索引是在Oak 1.0.9中引入的，对于在AEM 6初次发布时引入的
 
 * 适用于/if：
 
-   * 所有Oak版本
-   * 仅[属性索引](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
+  * 所有Oak版本
+  * 仅[属性索引](https://jackrabbit.apache.org/oak/docs/query/property-index.html)
 
 * 症状：
 
-   * 结果中缺少属性索引的定义更新之前存在的节点
+  * 结果中缺少属性索引的定义更新之前存在的节点
 
 * 如何验证：
 
-   * 确定在部署更新的索引定义之前是否创建/修改了缺少的节点。
-   * 根据索引的修改时间验证任何缺失节点的`jcr:created`或`jcr:lastModified`属性
+  * 确定在部署更新的索引定义之前是否创建/修改了缺少的节点。
+  * 根据索引的修改时间验证任何缺失节点的`jcr:created`或`jcr:lastModified`属性
 
 * 如何解决：
 
-   * [重新索引](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) Lucene索引
-   * 或者，触摸（执行良性的写入操作）丢失的节点
+  * [重新索引](/help/sites-deploying/best-practices-for-queries-and-indexing.md#how-to-re-index) Lucene索引
+  * 或者，触摸（执行良性的写入操作）丢失的节点
 
-      * 需要手动接触或自定义代码
-      * 需要知道缺失节点集
-      * 需要更改节点上的任何属性
+    * 需要手动接触或自定义代码
+    * 需要知道缺失节点集
+    * 需要更改节点上的任何属性
 
 #### Lucene索引定义更改 {#lucene-index-definition-change}
 
 * 适用于/if：
 
-   * 所有Oak版本
-   * 仅[Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * 所有Oak版本
+  * 仅[Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * 症状：
 
-   * Lucene索引不包含预期结果
-   * 查询结果未反映索引定义的预期行为
-   * 查询计划未根据索引定义报告预期输出
+  * Lucene索引不包含预期结果
+  * 查询结果未反映索引定义的预期行为
+  * 查询计划未根据索引定义报告预期输出
 
 * 如何验证：
 
-   * 验证是否已使用Lucene索引统计数据JMX Mbean (LuceneIndex)方法`diffStoredIndexDefinition`更改了索引定义。
+  * 验证是否已使用Lucene索引统计数据JMX Mbean (LuceneIndex)方法`diffStoredIndexDefinition`更改了索引定义。
 
 * 如何解决：
 
-   * 1.6之前的Oak版本：
+  * 1.6之前的Oak版本：
 
-      * [重新索引](#how-to-re-index) Lucene索引
+    * [重新索引](#how-to-re-index) Lucene索引
 
-   * Oak版本1.6+
+  * Oak版本1.6+
 
-      * 如果现有内容不受更改的影响，则只需刷新
+    * 如果现有内容不受更改的影响，则只需刷新
 
-         * 通过设置[oak:queryIndexDefinition]@refresh=true来[刷新](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) Lucene索引
+      * 通过设置[oak:queryIndexDefinition]@refresh=true来[刷新](https://jackrabbit.apache.org/oak/docs/query/lucene.html#stored-index-definition) Lucene索引
 
-      * 否则，[重新索引](#how-to-re-index) Lucene索引
+    * 否则，[重新索引](#how-to-re-index) Lucene索引
 
-         * 注意：使用上次良好重新索引（或初始索引）后的索引状态，直到触发新的重新索引为止
+      * 注意：使用上次良好重新索引（或初始索引）后的索引状态，直到触发新的重新索引为止
 
 ### 错误和特殊情况 {#erring-and-exceptional-situations}
 
@@ -317,62 +326,62 @@ Lucene索引是在Oak 1.0.9中引入的，对于在AEM 6初次发布时引入的
 
 * 适用于/if：
 
-   * 所有Oak版本
-   * 仅[Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * 所有Oak版本
+  * 仅[Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * 症状：
 
-   * Lucene索引不包含预期结果
+  * Lucene索引不包含预期结果
 
 * 如何验证：
 
-   * 错误日志文件包含一个异常，表示Lucene索引的二进制文件缺失
+  * 错误日志文件包含一个异常，表示Lucene索引的二进制文件缺失
 
 * 如何解决：
 
-   * 执行遍历存储库检查；例如：
+  * 执行遍历存储库检查；例如：
 
-     [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
+    [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
-     遍历存储库可确定是否缺少其他二进制文件（Lucene文件除外）
+    遍历存储库可确定是否缺少其他二进制文件（Lucene文件除外）
 
-   * 如果缺少Lucene索引以外的二进制文件，则从备份中还原
-   * 否则，[重新索引](#how-to-re-index) *所有* Lucene索引
-   * 注意:
+  * 如果缺少Lucene索引以外的二进制文件，则从备份中还原
+  * 否则，[重新索引](#how-to-re-index) *所有* Lucene索引
+  * 注意:
 
-     此条件表示数据存储配置错误，可能会导致ANY二进制文件（例如，资产二进制文件）丢失。
+    此条件表示数据存储配置错误，可能会导致ANY二进制文件（例如，资产二进制文件）丢失。
 
-     在这种情况下，请还原到存储库的最后一个已知良好版本以恢复所有丢失的二进制文件。
+    在这种情况下，请还原到存储库的最后一个已知良好版本以恢复所有丢失的二进制文件。
 
 #### Lucene索引二进制文件损坏 {#lucene-index-binary-is-corrupt}
 
 * 适用于/if：
 
-   * 所有Oak版本
-   * 仅[Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
+  * 所有Oak版本
+  * 仅[Lucene索引](https://jackrabbit.apache.org/oak/docs/query/lucene.html)
 
 * 症状：
 
-   * Lucene索引不包含预期结果
+  * Lucene索引不包含预期结果
 
 * 如何验证：
 
-   * `AsyncIndexUpdate`（每五秒一次）将失败，错误日志中出现异常：
+  * `AsyncIndexUpdate`（每五秒一次）将失败，错误日志中出现异常：
 
-     `...a Lucene index file is corrupt...`
+    `...a Lucene index file is corrupt...`
 
 * 如何解决：
 
-   * 删除Lucene索引的本地副本
+  * 删除Lucene索引的本地副本
 
-      1. 停止AEM
-      1. 删除`crx-quickstart/repository/index`处的Lucene索引的本地副本
-      1. 重新启动AEM
+    1. 停止AEM
+    1. 删除`crx-quickstart/repository/index`处的Lucene索引的本地副本
+    1. 重新启动AEM
 
-   * 如果这不能解决此问题，并且`AsyncIndexUpdate`异常持续存在，则：
+  * 如果这不能解决此问题，并且`AsyncIndexUpdate`异常持续存在，则：
 
-      1. [重新索引](#how-to-re-index)错误的索引
-      1. 还要提交[Adobe支持](https://helpx.adobe.com/cn/support.html)票证
+    1. [重新索引](#how-to-re-index)错误的索引
+    1. 还要提交[Adobe支持](https://helpx.adobe.com/cn/support.html)票证
 
 ### 如何重新索引 {#how-to-re-index}
 
@@ -385,7 +394,7 @@ Lucene索引是在Oak 1.0.9中引入的，对于在AEM 6初次发布时引入的
 * 使用[oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing)重新索引属性索引
 * 在属性索引上将async-reindex属性设置为true
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 * 通过&#x200B;**PropertyIndexAsyncReindex** MBean，使用Web控制台异步重新索引属性索引；
 
@@ -398,7 +407,7 @@ Lucene索引是在Oak 1.0.9中引入的，对于在AEM 6初次发布时引入的
 * 使用[oak-run.jar重新索引](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing) Lucene属性索引。
 * 在lucene属性索引上，将async-reindex属性设置为true
 
-   * `[oak:queryIndexDefinition]@reindex-async=true`
+  * `[oak:queryIndexDefinition]@reindex-async=true`
 
 >[!NOTE]
 >
@@ -440,7 +449,7 @@ Lucene索引是在Oak 1.0.9中引入的，对于在AEM 6初次发布时引入的
 * [oak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)版本1.7.4+
 * 文件系统文件夹/共享用于存储可从索引AEM实例访问的提取文本
 
-   * 文本预提取OSGi配置需要指向提取的文本文件的文件系统路径，因此必须可直接从AEM实例（本地驱动器或文件共享装载）访问这些文件
+  * 文本预提取OSGi配置需要指向提取的文本文件的文件系统路径，因此必须可直接从AEM实例（本地驱动器或文件共享装载）访问这些文件
 
 #### 如何执行文本预提取 {#how-to-perform-text-pre-extraction}
 

@@ -14,23 +14,40 @@ autotag-review: '2026-05-18T18:40:39.792Z'
 TQID: 'https://experienceleague.adobe.com/rt98uGXgnhI4s10OP5uh5e4tKysOBlBY9vmAnsipI0Y'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a9d2a4a6-0a32-4f6e-8eb1-128ec2b18a80
+    internal-label: Components
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: cdd65e7e-8839-44a2-bc21-0e03623b5dd1
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Optimization
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 3403
+source-wordcount: '3404'
 ht-degree: 6%
-
 ---
-
 # 将 Dynamic Media 资产添加到页面{#adding-dynamic-media-assets-to-pages}
 
-若要将Dynamic Media功能添加到您在网站上使用的资产，您可以直接在页面上添加&#x200B;**Dynamic Media**、**Interactive Media**、**Media**&#x200B;或&#x200B;**Video 360 Media**&#x200B;组件。 您可以通过进入布局模式并启用Dynamic Media组件来添加组件。 然后，您可以将这些组件添加到页面，并将资产添加到该组件。 Dynamic media组件是智能的——它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
+若要将Dynamic Media功能添加到您在网站上使用的资产，您可以直接在页面上添加&#x200B;**Dynamic Media**、**Interactive Media**、**Media**&#x200B;或&#x200B;**Video 360 Media**&#x200B;组件。 您可以通过进入布局模式并启用Dynamic Media组件来添加组件。 然后，您可以将这些组件添加到页面，并将资产添加到该组件。 Dynamic Media 组件是智能的，它们知道您添加的是图像还是视频，可用的配置选项会相应地发生更改。
 
 如果您使用Adobe Experience Manager作为WCM，则可以直接将Dynamic Media资源添加到页面。 如果您为 WCM 使用第三方，请[链接](/help/assets/linking-urls-to-yourwebapplication.md)或[嵌入](/help/assets/embed-code.md)资产。 有关响应式第三方网站，请参阅[将优化的图像交付到响应式网站](/help/assets/responsive-site.md)。
 
@@ -186,7 +203,7 @@ ht-degree: 6%
 
   仅当满足以下条件时，才会显示&#x200B;**[!UICONTROL 为更高分辨率的设备优化]**&#x200B;选项：
 
-   * 在预设类型下，已选择&#x200B;**[!UICONTROL 图像预设]**，并从&#x200B;**[!UICONTROL 图像预设]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESS_IP]**。
+  * 在预设类型下，已选择&#x200B;**[!UICONTROL 图像预设]**，并从&#x200B;**[!UICONTROL 图像预设]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL RESS_IP]**。
 
   图像预设的![设备像素比设置](/help/assets/assets-dm/dpr-ress-ip.png)
 
@@ -224,10 +241,10 @@ ht-degree: 6%
 
   例如，使用查看器修饰符，您可以执行以下操作：
 
-   * 将字幕文件与视频关联：[字幕](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=zh-Hans)
-   * 将导航文件与视频关联： [导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=zh-Hans)
+  * 将字幕文件与视频关联：[字幕](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=zh-Hans)
+  * 将导航文件与视频关联： [导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html?lang=zh-Hans)
 
-     您可以通过选择组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;来编辑以下高级设置。
+    您可以通过选择组件中的&#x200B;**[!UICONTROL 编辑]**&#x200B;来编辑以下高级设置。
 
 * **[!UICONTROL 标题]** — 更改视频的标题。
 
@@ -261,7 +278,7 @@ ht-degree: 6%
 
   仅当满足以下条件时，才会显示&#x200B;**[!UICONTROL 为更高分辨率的设备优化]**&#x200B;选项：
 
-   * 在预设类型下，已选择&#x200B;**[!UICONTROL 智能裁切]**&#x200B;选项。
+  * 在预设类型下，已选择&#x200B;**[!UICONTROL 智能裁切]**&#x200B;选项。
 
   智能裁剪的![设备像素比设置](/help/assets/assets-dm/dpr-smartcrop.png)
 

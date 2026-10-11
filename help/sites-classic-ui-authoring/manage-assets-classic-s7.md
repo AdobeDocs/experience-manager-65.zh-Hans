@@ -10,13 +10,22 @@ exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3545'
-ht-degree: 0%
-
+source-wordcount: '3578'
+ht-degree: 2%
 ---
-
 # 将Dynamic Media Classic (Scene7)功能添加到您的页面{#adding-scene-features-to-your-page}
 
 [Adobe Dynamic Media Classic (Scene7)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/home.html?lang=zh-Hans)是一个托管解决方案，用于管理、增强、发布富媒体资源并将其交付给Web、移动设备、电子邮件和连接到Internet的显示和打印。
@@ -29,9 +38,9 @@ ht-degree: 0%
 * 图像模板
 * 图像
 
-您可以将数字资源直接从Experience Manager发布到Dynamic Media Classic (Scene7)，也可以将数字资源从Dynamic Media Classic (Scene7)发布到Experience Manager。
+您可以将数字资产直接从Experience Manager发布到Dynamic Media Classic (Scene7)，也可以将数字资产从Dynamic Media Classic (Scene7)发布到Experience Manager。
 
-本文档介绍如何将数字资源从Experience Manager发布到Dynamic Media Classic (Scene7)，反之亦然。 还详细介绍了查看器。 有关为Dynamic Media Classic (Scene7)配置Experience Manager的信息，请参阅[将Dynamic Media Classic (Scene7)与Experience Manager集成](/help/sites-administering/scene7.md)。
+本文档介绍如何将Experience Manager中的数字资产发布到Dynamic Media Classic (Scene7)或反之。 还详细介绍了查看器。 有关为Dynamic Media Classic (Scene7)配置Experience Manager的信息，请参阅[将Dynamic Media Classic (Scene7)与Experience Manager集成](/help/sites-administering/scene7.md)。
 
 另请参阅[添加图像映射](/help/assets/image-maps.md)。
 
@@ -49,16 +58,16 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Experience Manager以异步方式发布到Dynamic Media Classic (Scene7)。 选择&#x200B;**[!UICONTROL Publish]**&#x200B;后，可能需要几秒钟才能将资源发布到Dynamic Media Classic (Scene7)。
+>Experience Manager以异步方式发布到Dynamic Media Classic (Scene7)。 选择&#x200B;**[!UICONTROL 发布]**&#x200B;后，可能需要几秒钟才能将资源发布到Dynamic Media Classic (Scene7)。
 >
 
 ### 从Assets控制台中发布 {#publishing-from-the-assets-console}
 
-如果资产位于Dynamic Media Classic (Scene7)目标文件夹中，您可以从Assets控制台发布到Dynamic Media Classic (Scene7)。
+如果资产位于Dynamic Media Classic (Scene7)目标文件夹中，则可以从Assets控制台发布到Dynamic Media Classic (Scene7)。
 
 1. 在Experience Manager Classic UI中，选择&#x200B;**[!UICONTROL Digital Assets]**&#x200B;以访问数字资产管理器。
 
-1. 从目标文件夹中选择要发布到Dynamic Media Classic (Scene7)的资源（或资源）或文件夹，右键单击并选择&#x200B;**[!UICONTROL Publish到Dynamic Media Classic (Scene7)]**。 或者，您也可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中选择&#x200B;**[!UICONTROL Publish到Dynamic Media Classic (Scene7)]**。
+1. 从目标文件夹中选择要发布到Dynamic Media Classic (Scene7)的资源（或资源）或文件夹，右键单击并选择&#x200B;**[!UICONTROL 发布到Dynamic Media Classic (Scene7)]**。 或者，您也可以从&#x200B;**[!UICONTROL 工具]**&#x200B;菜单中选择&#x200B;**[!UICONTROL 发布到Dynamic Media Classic (Scene7)]**。
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -66,23 +75,23 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果资源不在Dynamic Media Classic (Scene7)同步文件夹中，则两个菜单中的&#x200B;**[!UICONTROL Publish到Dynamic Media Classic (Scene7)]**&#x200B;均可见但处于禁用状态。
+   >如果资源不在Dynamic Media Classic (Scene7)同步文件夹中，则两个菜单中的&#x200B;**[!UICONTROL 发布到Dynamic Media Classic (Scene7)]**&#x200B;均可见但处于禁用状态。
 
-### 从资源访问Publish {#publishing-from-an-asset}
+### 从资源发布 {#publishing-from-an-asset}
 
 您可以手动发布资源，只要该资源位于已同步的Dynamic Media Classic (Scene7)文件夹内。
 
 >[!NOTE]
 >
->如果资产不在Dynamic Media Classic (Scene7)同步文件夹中，则不会显示指向&#x200B;**[!UICONTROL Publish到Dynamic Media Classic (Scene7)]**&#x200B;的链接。
+>如果资产不在Dynamic Media Classic (Scene7)同步文件夹中，则不会显示指向&#x200B;**[!UICONTROL 发布到Dynamic Media Classic (Scene7)]**&#x200B;的链接。
 
 要直接从数字资源发布到Dynamic Media Classic (Scene7)，请执行以下操作：
 
-1. 在Experience Manager中，选择&#x200B;**[!UICONTROL 数字Assets]**&#x200B;以访问数字资产管理器。
+1. 在Experience Manager中，选择&#x200B;**[!UICONTROL Digital Assets]**&#x200B;以访问数字资产管理器。
 
 1. 双击可打开资产。
 
-1. 在资源详细信息窗格中，选择&#x200B;**[!UICONTROL Publish to Dynamic Media Classic (Scene7)]**。
+1. 在资源详细信息窗格中，选择&#x200B;**[!UICONTROL 发布到Dynamic Media Classic (Scene7)]**。
 
    ![screen_shot_2012-02-22at34828pm](assets/screen_shot_2012-02-22at34828pm.png)
 
@@ -90,11 +99,11 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果资产未正确发布到Dynamic Media Classic (Scene7)，则链接将更改为&#x200B;**[!UICONTROL 发布失败]**。 如果资产已发布到Dynamic Media Classic (Scene7)，则链接显示为&#x200B;**[!UICONTROL Re-Publish to Dynamic Media Classic (Scene7)]**。 重新发布允许您更改Experience Manager中的资产并重新发布它们。
+   >如果资产未正确发布到Dynamic Media Classic (Scene7)，则链接将更改为&#x200B;**[!UICONTROL 发布失败]**。 如果资产已发布到Dynamic Media Classic (Scene7)，则链接显示为&#x200B;**[!UICONTROL 重新发布到Dynamic Media Classic (Scene7)]**。 通过重新发布，您可以在Experience Manager中更改资产并重新发布它们。
 
-### CQ目标文件夹外部的Publish资源 {#publishing-assets-from-outside-the-cq-target-folder}
+### 从CQ目标文件夹外部发布资产 {#publishing-assets-from-outside-the-cq-target-folder}
 
-Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资源发布到Dynamic Media Classic (Scene7)。 但是，如果必须从目标文件夹以外的文件夹上传资源，您仍然可以通过将其上传到Dynamic Media Classic (Scene7)上的按需文件夹来执行此操作。 首先，为要显示资产的页面配置云配置。 然后，将Dynamic Media Classic (Scene7)组件添加到页面中，并将资产拖放到组件上。 为该页面设置页面属性后，在选定触发器上传到Dynamic Media Classic (Scene7)时，将显示&#x200B;**[!UICONTROL Publish到Dynamic Media Classic (Scene7)]**&#x200B;链接。
+Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资源发布到Dynamic Media Classic (Scene7)。 但是，如果必须从Dynamic Media Classic (Scene7)上的目标文件夹以外的文件夹上传资源，您仍然可以通过将其上传到按需文件夹来执行此操作。 首先，为要显示资产的页面配置云配置。 然后，将Dynamic Media Classic (Scene7)组件添加到页面，并将资产拖放到组件上。 为该页面设置页面属性后，将显示一个&#x200B;**[!UICONTROL 发布到Dynamic Media Classic (Scene7)]**&#x200B;链接，其中在选择了将触发器上传到Dynamic Media Classic (Scene7)时显示。
 
 >[!NOTE]
 >
@@ -106,7 +115,7 @@ Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资
 
 1. 在Sidekick中，选择&#x200B;**[!UICONTROL 页面]**&#x200B;图标，然后选择&#x200B;**[!UICONTROL 页面属性]**。
 
-1. 选择&#x200B;**[!UICONTROL Cloud Service]**。
+1. 选择&#x200B;**[!UICONTROL 云服务]**。
 1. 选择&#x200B;**[!UICONTROL 添加服务]**。
 1. 选择&#x200B;**[!UICONTROL Dynamic Media Classic (Scene7)]**。
 1. 在&#x200B;**[!UICONTROL Adobe Dynamic Media Classic (Scene7)]**&#x200B;下拉列表中，选择所需的配置并选择&#x200B;**[!UICONTROL 确定]**。
@@ -130,7 +139,7 @@ Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资
 
 ## Dynamic Media Classic (Scene7)组件 {#scene-components}
 
-以下Dynamic Media Classic (Scene7)组件在Experience Manager中可用：
+Experience Manager中提供了以下Dynamic Media Classic (Scene7)组件：
 
 * 缩放
 * 弹出（缩放）
@@ -142,13 +151,13 @@ Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资
 >
 >默认情况下，这些组件不可用，必须在使用之前在设计模式中进行选择。
 
-在设计模式下提供组件后，您可以将组件像任何其他Experience Manager组件一样添加到页面。 如果在同步文件夹中或在页面上，或者使用Dynamic Media Classic (Scene7)云配置，则尚未发布到Dynamic Media Classic (Scene7)的Assets将发布到Dynamic Media Classic (Scene7)。
+在设计模式下提供这些组件后，您可以像添加任何其他Experience Manager组件一样将这些组件添加到页面。 如果在同步文件夹中、页面上或使用Dynamic Media Classic (Scene7)云配置，则尚未发布到Dynamic Media Classic (Scene7)的Assets将发布到Dynamic Media Classic (Scene7)。
 
 >[!NOTE]
 >
 >如果您正在创建和开发自定义S7查看器并使用内容查找器，则必须显式添加`allowfullscreen`参数。
 
-### Flash查看器生命周期终止通知 {#flash-viewers-end-of-life-notice}
+### Flash 查看器生命周期结束通知 {#flash-viewers-end-of-life-notice}
 
 自2017年1月31日起，Adobe Dynamic Media Classic (Scene7)正式终止对Flash查看器平台的支持。
 
@@ -160,7 +169,7 @@ Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资
 
 1. 在Experience Manager中，打开要添加Dynamic Media Classic (Scene7)组件的页面。
 
-1. 如果没有可用的Dynamic Media Classic (Scene7)组件，请选择Sidekick中的标尺以进入&#x200B;**设计**&#x200B;模式，选择&#x200B;**[!UICONTROL 编辑]** parsys，然后选择所有&#x200B;**[!UICONTROL Dynamic Media Classic (Scene7)]**&#x200B;组件以使其可用。
+1. 如果没有可用的Dynamic Media Classic (Scene7)组件，请选择Sidekick中的标尺以进入&#x200B;**设计**&#x200B;模式，选择&#x200B;**[!UICONTROL 编辑]** parsys，然后选择所有&#x200B;**[!UICONTROL Dynamic Media Classic (Scene7)]**&#x200B;组件以使它们可用。
 
 1. 通过在Sidekick中选择铅笔返回到&#x200B;**编辑**&#x200B;模式。
 
@@ -176,7 +185,7 @@ Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资
 
 要在经典UI中为响应式网站添加交互式查看体验，请执行以下操作：
 
-1. 登录Experience Manager，并确保您已[配置Adobe Dynamic Media Classic (Scene7)Cloud Service](/help/sites-administering/scene7.md#configuring-scene-integration)，并且Dynamic Media Classic (Scene7)组件可用。
+1. 登录到Experience Manager，并确保您[配置了Adobe Dynamic Media Classic (Scene7)云服务](/help/sites-administering/scene7.md#configuring-scene-integration)并且Dynamic Media Classic (Scene7)组件可用。
 
    >[!NOTE]
    >
@@ -191,27 +200,27 @@ Adobe建议仅从Dynamic Media Classic (Scene7)目标文件夹中的资源将资
 
 ### 所有Dynamic Media Classic (Scene7)组件通用的设置 {#settings-common-to-all-scene-components}
 
-尽管配置选项有所不同，但以下内容是所有Dynamic Media Classic (Scene7)组件共有的：
+尽管配置选项有所不同，但以下内容对于所有Dynamic Media Classic (Scene7)组件都是通用的：
 
-* **文件引用** — 浏览到要引用的文件。 文件引用显示资源URL，不一定是完整的Dynamic Media Classic (Scene7) URL，包括URL命令和参数。 您无法在此字段中添加Dynamic Media Classic (Scene7) URL命令和参数。 相反，必须通过组件中的相应功能添加这些变量。
+* **文件引用** — 浏览到要引用的文件。 文件引用显示资产URL，不一定是完整的Dynamic Media Classic (Scene7) URL，包括URL命令和参数。 您无法在此字段中添加Dynamic Media Classic (Scene7) URL命令和参数。 相反，必须通过组件中的相应功能添加这些变量。
 * **宽度** — 允许您设置宽度。
 * **高度** — 允许您设置高度。
 
-您可以通过打开（双击）Dynamic Media Classic (Scene7)组件来设置这些配置选项，例如，在打开&#x200B;**Zoom**&#x200B;组件时：
+您可以通过打开（双击）Dynamic Media Classic (Scene7)组件来设置这些配置选项，例如，当您打开&#x200B;**缩放**&#x200B;组件时：
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
 ### 缩放 {#zoom}
 
-按+按钮时，HTML5缩放组件显示较大的图像。
+按+按钮时，HTML5缩放组件会显示较大的图像。
 
-资产底部有缩放工具。 选择要放大的&#x200B;**[!UICONTROL +]**。 选择要减少的&#x200B;**[!UICONTROL -]**。 选择&#x200B;**[!UICONTROL x]**&#x200B;或重置缩放箭头可使图像恢复到导入图像的原始大小。 选择对角线箭头，以便全屏显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 通过此组件，您可以配置所有Dynamic Media Classic (Scene7)组件通用的[设置](#settings-common-to-all-scene-components)。
+资产底部有缩放工具。 选择要放大的&#x200B;**[!UICONTROL +]**。 选择要减少的&#x200B;**[!UICONTROL -]**。 选择&#x200B;**[!UICONTROL x]**&#x200B;或重置缩放箭头可使图像恢复到导入图像的原始大小。 选择对角线箭头，以便全屏显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 通过此组件，您可以配置所有Dynamic Media Classic (Scene7)组件[&#128279;](#settings-common-to-all-scene-components)共有的设置。
 
-![HTML5缩放组件中的郁金香花的图像。](do-not-localize/chlimage_1-3.png)
+![HTML5 Zoom组件内郁金香花的图像。](do-not-localize/chlimage_1-3.png)
 
 ### 弹出 {#flyout}
 
-在HTML5弹出组件中，资源显示为分屏；左侧的资源使用指定大小；右侧的缩放部分显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 通过此组件，您可以配置所有Dynamic Media Classic (Scene7)组件通用的[设置](/help/sites-administering/scene7.md#settingscommontoallscene7components)。
+在HTML5弹出组件中，资源显示为分屏；左侧的资源使用指定大小；右侧的缩放部分显示。 选择&#x200B;**[!UICONTROL 编辑]**，以便配置该组件。 通过此组件，您可以配置所有Dynamic Media Classic (Scene7)组件[&#128279;](/help/sites-administering/scene7.md#settingscommontoallscene7components)共有的设置。
 
 >[!NOTE]
 >
@@ -249,9 +258,9 @@ Dynamic Media Classic (Scene 7)图像组件![&#128279;](do-not-localize/chlimage
 
 ### 图像模板 {#image-template}
 
-Dynamic Media Classic (Scene7)图像模板是导入Dynamic Media Classic (Scene7)的分层Photoshop内容，其中内容和属性进行了参数化以实现可变性。 通过&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，您可以导入图像并在Experience Manager中动态更改文本。 此外，您可以将&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件配置为使用来自客户端上下文的值，以便每个用户以个性化的方式体验图像。
+Dynamic Media Classic (Scene7)图像模板是导入Dynamic Media Classic (Scene7)的分层Photoshop内容，其中内容和属性进行了参数化以反映可变性。 通过&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件，您可以在Experience Manager中导入图像并动态更改文本。 此外，您可以将&#x200B;**[!UICONTROL 图像模板]**&#x200B;组件配置为使用来自客户端上下文的值，以便每个用户以个性化的方式体验图像。
 
-选择&#x200B;**[!UICONTROL 编辑]** — 以配置该组件。 您可以配置所有Dynamic Media Classic (Scene7)组件通用的[设置](/help/sites-administering/scene7.md#settingscommontoallscene7components)以及此部分描述的其他设置。
+选择&#x200B;**[!UICONTROL 编辑]** — 以配置该组件。 您可以配置所有Dynamic Media Classic (Scene7)组件[&#128279;](/help/sites-administering/scene7.md#settingscommontoallscene7components)共有的设置以及本节中描述的其他设置。
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -259,7 +268,7 @@ Dynamic Media Classic (Scene7)图像模板是导入Dynamic Media Classic (Scene7
 
 >[!NOTE]
 >
->Dynamic Media Classic (Scene7) URL命令和参数无法直接添加到文件引用URL。 它们只能在&#x200B;**[!UICONTROL 参数]**&#x200B;面板的组件UI中定义。
+>Dynamic Media Classic (Scene7) URL命令和参数不能直接添加到文件引用URL。 它们只能在&#x200B;**[!UICONTROL 参数]**&#x200B;面板的组件UI中定义。
 
 **标题，替换文本** — 在Dynamic Media Classic (Scene7)的“图像模板”选项卡中，为已关闭图形的用户添加标题和替换文本。
 
@@ -314,7 +323,7 @@ Dynamic Media Classic (Scene7) **[!UICONTROL Video]**&#x200B;组件(可从Sideki
 
 ### 视频组件的已知限制 {#known-limitations-for-the-video-component}
 
-AdobeDAM和WCM会显示是否上传了主源视频。 它们不显示这些代理资源：
+Adobe DAM和WCM会显示是否上传了主源视频。 它们不显示这些代理资源：
 
 * Dynamic Media Classic (Scene7)编码呈现版本
 * Dynamic Media Classic (Scene7)自适应视频集
@@ -325,13 +334,13 @@ AdobeDAM和WCM会显示是否上传了主源视频。 它们不显示这些代�
 
 Dynamic Media Classic (Scene7)内容浏览器允许您直接在Experience Manager中查看Dynamic Media Classic (Scene7)中的内容。 要访问内容浏览器，请在内容查找器中，选择触控优化用户界面中的&#x200B;**Dynamic Media Classic (Scene7)**&#x200B;或传统用户界面中的&#x200B;**S7**&#x200B;图标。 两个用户界面之间的功能相同。
 
-如果您有多个配置，默认情况下Experience Manager会显示[默认配置](/help/sites-administering/scene7.md#configuring-a-default-configuration)。 您可以直接在Dynamic Media Classic (Scene7)内容浏览器的下拉菜单中选择其他配置。
+如果您有多个配置，Experience Manager默认显示[默认配置](/help/sites-administering/scene7.md#configuring-a-default-configuration)。 您可以直接在Dynamic Media Classic (Scene7)内容浏览器的下拉菜单中选择其他配置。
 
 >[!NOTE]
 >
 >* 按需文件夹中的Assets不会出现在Dynamic Media Classic (Scene7)内容浏览器中。
 >* 启用[安全预览](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)后，Dynamic Media Classic (Scene7)上已发布和未发布的资源都会显示在Dynamic Media Classic (Scene7)内容浏览器中。
->* 如果您在内容浏览器中未看到&#x200B;**[!UICONTROL Dynamic Media Classic (Scene7)]**&#x200B;或&#x200B;**[!UICONTROL S7]**&#x200B;图标，则必须[配置Dynamic Media Classic (Scene7)以使用Experience Manager](/help/sites-administering/scene7.md)。
+>* 如果您在内容浏览器中未看到&#x200B;**[!UICONTROL Dynamic Media Classic (Scene7)]**&#x200B;或&#x200B;**[!UICONTROL S7]**&#x200B;图标作为一个选项，则必须[配置Dynamic Media Classic (Scene7)以使用Experience Manager](/help/sites-administering/scene7.md)。
 >* 对于视频，Dynamic Media Classic (Scene7)内容浏览器支持：
 >   * 自适应视频集：包含跨多个屏幕无缝播放所需的所有视频演绎版的容器
 >   * 单个MP4视频
@@ -360,7 +369,7 @@ Dynamic Media Classic (Scene7)内容浏览器允许您直接在Experience Manage
 
 ### 使用内容浏览器搜索Dynamic Media Classic (Scene7)资源 {#searching-for-scene-assets-with-the-content-browser}
 
-搜索Dynamic Media Classic (Scene7)资源与搜索Experience Manager资源类似。 唯一例外是，当您搜索时，您实际上会看到Dynamic Media Classic (Scene7)系统中资源的远程视图，而不是直接将其导入Experience Manager。
+搜索Dynamic Media Classic (Scene7)资源与搜索Experience Manager资源类似。 唯一例外是，当您搜索时，实际上会看到Dynamic Media Classic (Scene7)系统中资源的远程视图，而不是直接将资源导入Experience Manager。
 
 您可以使用经典UI或触屏优化UI来查看和搜索资产。 根据界面，您的搜索方式会略有不同。
 
@@ -372,21 +381,21 @@ Dynamic Media Classic (Scene7)内容浏览器允许您直接在Experience Manage
 
 **文件夹/路径** — 文件夹的名称基于您选择的配置。 通过选择文件夹图标并选择子文件夹，然后选择复选标记以将其选中，您可以向下钻取到更低级别。
 
-如果输入关键字并选择文件夹，则Experience Manager将搜索该文件夹及其所有子文件夹。 但是，如果在搜索时未输入任何关键字，则选择该文件夹只会显示该文件夹中的资源，不包括任何子文件夹。
+如果输入关键字并选择文件夹，Experience Manager将搜索该文件夹及其所有子文件夹。 但是，如果在搜索时未输入任何关键字，则选择该文件夹只会显示该文件夹中的资源，不包括任何子文件夹。
 
-默认情况下，Experience Manager会搜索选定的文件夹和所有子文件夹。
+默认情况下，Experience Manager会搜索选定的文件夹及其所有子文件夹。
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
-**资源类型** — 选择Dynamic Media Classic (Scene7)以浏览Dynamic Media Classic (Scene7)内容。 此选项仅在配置Dynamic Media Classic (Scene7)后可用。
+**资源类型** — 选择Dynamic Media Classic (Scene7)以浏览Dynamic Media Classic (Scene7)内容。 仅当配置了Dynamic Media Classic (Scene7)时，此选项才可用。
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**配置** — 如果您在Cloud Service中定义了多个Dynamic Media Classic (Scene7)配置，则可以在此处选择它。 因此，文件夹会根据您选择的配置进行更改。
+**配置** — 如果您在Cloud Services中定义了多个Dynamic Media Classic (Scene7)配置，则可以在此处选择它。 因此，文件夹会根据您选择的配置进行更改。
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**资源类型** — 在Dynamic Media Classic (Scene7)浏览器中，您可以筛选结果以包含以下任一项：图像、模板、视频和自适应视频集。 如果不选择任何资源类型，默认情况下，Experience Manager将搜索所有资源类型。
+**资源类型** — 在Dynamic Media Classic (Scene7)浏览器中，您可以筛选结果以包含以下任一项：图像、模板、视频和自适应视频集。 如果您未选择任何资源类型，Experience Manager默认将搜索所有资源类型。
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -395,9 +404,9 @@ Dynamic Media Classic (Scene7)内容浏览器允许您直接在Experience Manage
 >* 在经典UI中，您还可以搜索&#x200B;**Flash**&#x200B;和&#x200B;**FXG**。 不支持在触屏优化UI中过滤这两个术语。
 >
 >* 搜索视频时，您将搜索单个演绎版。 结果返回原始演绎版（仅&#42;.mp4）和编码的演绎版。
->* 搜索自适应视频集时，您将搜索文件夹及其所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，则Experience Manager不会搜索子文件夹。
+>* 搜索自适应视频集时，您将搜索文件夹及其所有子文件夹，但前提是已向搜索添加了关键词。 如果尚未添加关键字，Experience Manager将不会搜索子文件夹。
 >
 
-**Publish状态** — 您可以根据发布状态筛选资源：已取消发布或已发布。 如果您未选择任何Publish状态，默认情况下，Experience Manager将搜索所有发布状态。
+**发布状态** — 您可以根据发布状态筛选资源：已取消发布或已发布。 如果您未选择任何发布状态，Experience Manager默认将搜索所有发布状态。
 
 ![chlimage_1-70](assets/chlimage_1-70.png)

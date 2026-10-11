@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 579c90bb4d8ee8a3b7e633ecc9fb0b797b297ca2
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10377'
+source-wordcount: '10381'
 ht-degree: 0%
-
 ---
-
 # 配置Document Security服务器 {#configure-the-document-security-server}
 
 >[!NOTE]
@@ -474,10 +485,10 @@ Document Security可以跟踪可能在受保护文档上执行的各种自定义
 * 无法使用受密码保护的PDF文档作为水印元素。
 * Acrobat和Adobe Reader 10之前的版本不支持以下水印功能：
 
-   * PDF水印
-   * 水印中的多个元素（文本/PDF）
-   * 高级选项，例如页面范围或显示选项
-   * 文本格式选项，例如指定的字体、字体名称和颜色。 但是，早期版本的Acrobat和Reader将以默认字体和颜色显示文本内容。
+  * PDF水印
+  * 水印中的多个元素（文本/PDF）
+  * 高级选项，例如页面范围或显示选项
+  * 文本格式选项，例如指定的字体、字体名称和颜色。 但是，早期版本的Acrobat和Reader将以默认字体和颜色显示文本内容。
 
 * Acrobat 9.0及更早版本： Acrobat 9.0及更早版本不支持在动态水印中使用策略名称。 如果Acrobat 9.0打开受策略保护的文档，该文档包含动态水印，其中包括策略名称和其他动态数据，则水印显示时将不包含策略名称。 如果动态水印仅包含策略名称，则Acrobat会显示错误消息
 

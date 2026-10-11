@@ -9,16 +9,34 @@ feature: CDN Cache,Dynamic Media Classic
 role: User, Admin
 exl-id: 7020343a-b556-4091-9717-93fcc55e623b
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: e17747bc-9b7b-44e6-a443-f54229a02620
+    internal-label: Integrations
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: fc27aefe-8efd-48a6-89bf-c46e0e334a63
+    internal-label: CDN cache
+  - id: c12bda38-aa1a-4647-b62e-42cd4537dac6
+    internal-label: Dynamic Media Classic
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '737'
 ht-degree: 13%
-
 ---
-
 # 通过Dynamic Media Classic使内容交付网络缓存失效 {#invalidating-your-cdn-cached-content}
 
-Dynamic Media资源由CDN（内容分发网络）缓存，以便快速交付。 但是，当您更新资产时，希望这些更改立即生效。 使CDN缓存内容失效可让您快速更新Dynamic Media交付的资源，而不是等待缓存过期。
+Dynamic Media资产由CDN（内容分发网络）缓存，以便快速交付。 但是，当您更新资产时，希望这些更改立即生效。 使CDN缓存内容失效可让您快速更新Dynamic Media交付的资产，而不是等待缓存过期。
 
 >[!NOTE]
 >
@@ -26,7 +44,7 @@ Dynamic Media资源由CDN（内容分发网络）缓存，以便快速交付。 
 
 >[!IMPORTANT]
 >
->以下步骤仅适用于Adobe Experience Manager 6.5、Service Pack 5(Experience Manager6.5.5)或更早版本中的Dynamic Media。<br>如果您在Experience Manager6.5、Service Pack 6 (Experience Manager6.5.6)或更高版本中使用Dynamic Media，请按照[通过Dynamic Media使CDN缓存失效](/help/assets/invalidate-cdn-cache-dynamic-media.md)中提供的步骤操作。
+>以下步骤仅适用于Adobe Experience Manager 6.5、Service Pack 5 (Experience Manager 6.5.5)或更早版本中的Dynamic Media 。<br>如果您在Experience Manager 6.5 Service Pack 6 (Experience Manager 6.5.6)或更高版本中使用Dynamic Media，请按照[通过Dynamic Media使CDN缓存失效](/help/assets/invalidate-cdn-cache-dynamic-media.md)中提供的步骤操作。
 
 <!-- REMOVED MARCH 28, 2022 BECAUSE OF 404; NO REDIRECT WAS PUT IN PLACE BY SUPPORT See also [Cache overview in Dynamic Media Classic (Scene7)](https://helpx.adobe.com/experience-manager/scene7/kb/base/caching-questions/scene7-caching-overview.html). -->
 
@@ -34,7 +52,7 @@ Dynamic Media资源由CDN（内容分发网络）缓存，以便快速交付。 
 
 1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=zh-Hans#system-requirements-dmc-app)，然后登录到您的帐户。
 
-   在设置时，Adobe提供了您的凭据和登录。 如果您没有此信息，请联系Adobe客户支持。
+   您的凭据和登录在配置时由Adobe提供。 如果您没有此信息，请联系Adobe客户支持。
 
 1. 在页面的右上角附近，导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
 1. 在“应用程序常规设置”页面的“服务器”组标题下，找到&#x200B;**[!UICONTROL CDN失效模板]**&#x200B;文本框。
@@ -45,7 +63,7 @@ Dynamic Media资源由CDN（内容分发网络）缓存，以便快速交付。 
 
    `https://server.com/is/image/Company/<ID>?$product$`
 
-   如果模板仅包含`<ID>`，则Dynamic Media将填充`https://<server>/is/image`，其中`<server>`是在“常规设置”中定义的Publish服务器名称，&lt;ID>是选定要失效的资源。
+   如果模板仅包含`<ID>`，则Dynamic Media将填充`https://<server>/is/image`，其中`<server>`是在“常规设置”中定义的发布服务器名称，&lt;ID>是选定要失效的资源。
 
 1. 在页面的右下角，选择&#x200B;**[!UICONTROL 关闭]**。
 1. 在Dynamic Media Classic用户界面中，选择一个或多个资源，然后转到&#x200B;**[!UICONTROL 文件]** > **[!UICONTROL 使CDN失效]**。 您将看到一个列表，其中包含从您创建的模板和您选择的资源生成的一个或多个URL。 它使用“应用程序常规设置”下“已发布的服务器名称”下列出的服务器URL。
@@ -62,6 +80,6 @@ Dynamic Media资源由CDN（内容分发网络）缓存，以便快速交付。 
 
    >[!NOTE]
    >
-   >当您选择资源，然后转到&#x200B;**[!UICONTROL 文件]** > **[!UICONTROL 使CDN无效]**&#x200B;时，Dynamic Media会使用无效CDN模板从内容交付网络(CDN)自动创建要无效的URL。 如果 **[!UICONTROL CDN 无效模板]**&#x200B;文本框中没有任何内容，则会显示空白 URL 列表。CDN 上的缓存不是基于资产，而是基于 URL。因此，必须了解您网站上的完整 URL。确定这些 URL 后，可以将其添加到步骤前面的&#x200B;**[!UICONTROL 无效 CDN 模板]**。然后，您可以选择这些资产，并在一个步骤中使 URL 失效。
+   >当您选择资产，然后转到&#x200B;**[!UICONTROL 文件]** > **[!UICONTROL 使CDN无效]**&#x200B;时，Dynamic Media会使用无效CDN模板从内容交付网络(CDN)自动创建要无效的URL。 如果 **[!UICONTROL CDN 无效模板]**&#x200B;文本框中没有任何内容，则会显示空白 URL 列表。 CDN 上的缓存不是基于资产，而是基于 URL。 因此，必须了解您网站上的完整 URL。 确定这些 URL 后，可以将其添加到步骤前面的&#x200B;**[!UICONTROL 无效 CDN 模板]**。 然后，您可以选择这些资产，并在一个步骤中使 URL 失效。
    >
    >另一个选项是将完整的URL添加到&#x200B;**[!UICONTROL 使CDN]**&#x200B;无效。 如果遵循这种方法，则无需在转到&#x200B;**[!UICONTROL 文件>使CDN无效]**&#x200B;选项之前在Dynamic Media Classic中选择资源。

@@ -10,13 +10,26 @@ exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: ed9b9f3835af2dc40ed4c5d3f9e3209dfc6bed90
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3030'
 ht-degree: 46%
-
 ---
-
 # 编辑页面内容{#editing-page-content}
 
 创建页面（新页面或者作为启动项或Live Copy的一部分）后，您可以编辑内容以进行所需的更新。
@@ -269,9 +282,9 @@ ht-degree: 46%
 
   此操作可将组件从剪贴板粘贴到页面。 原稿是否保留取决于您使用的是复制还是剪切。
 
-   * 您可以粘贴到同一页面或其他页面。
-   * 粘贴的项目会被粘贴到选择粘贴操作时所在的项目上方。
-   * 仅当剪贴板上有内容时，才会显示“粘贴”操作。
+  * 您可以粘贴到同一页面或其他页面。
+  * 粘贴的项目会被粘贴到选择粘贴操作时所在的项目上方。
+  * 仅当剪贴板上有内容时，才会显示“粘贴”操作。
 
   ![粘贴](assets/screen_shot_2018-03-22at113553.png)
 
@@ -514,15 +527,15 @@ AEM允许您锁定页面，这样其他人就无法修改页面内容。 当您�
 
 * **Sites**&#x200B;控制台
 
-   1. 在[选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中选择页面。
-   1. 选择锁定图标。
+  1. 在[选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中选择页面。
+  1. 选择锁定图标。
 
   ![锁定图标](assets/screen_shot_2018-03-22at134928.png)
 
 * **页面编辑器**
 
-   1. 要打开菜单，请选择&#x200B;**页面信息**&#x200B;图标。
-   1. 选择&#x200B;**锁定页面**&#x200B;选项。
+  1. 要打开菜单，请选择&#x200B;**页面信息**&#x200B;图标。
+  1. 选择&#x200B;**锁定页面**&#x200B;选项。
 
 锁定后，控制台视图信息将更新，编辑锁定符号时将显示在工具栏中。
 

@@ -1,5 +1,5 @@
 ---
-title: 在We.Retail中试用核心组件
+title: 在 We.Retail 中试用核心组件
 description: 了解如何使用We.Retail在Adobe Experience Manager中试用核心组件。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '538'
-ht-degree: 0%
-
+source-wordcount: '561'
+ht-degree: 8%
 ---
-
-# 在We.Retail中试用核心组件{#trying-out-core-components-in-we-retail}
+# 在 We.Retail 中试用核心组件{#trying-out-core-components-in-we-retail}
 
 核心组件是灵活的新式组件，具有轻松的扩展性并允许轻松集成到项目中。 核心组件是围绕几个主要设计原则构建的，例如HTL、开箱即用的可用性、可配置性、版本控制和可扩展性。 We.Retail构建于核心组件之上。
 

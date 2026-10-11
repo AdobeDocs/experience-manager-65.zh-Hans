@@ -5,13 +5,25 @@ feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: e71050fe23cc4c436859776918637158098864ef
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2373'
 ht-degree: 60%
-
 ---
-
 # 使用内容片段 {#working-with-content-fragments}
 
 通过Adobe Experience Manager (AEM)，内容片段允许您设计、创建、策划和[发布独立于页面的内容](/help/sites-authoring/content-fragments.md)。 它们允许您准备内容以准备在多个位置/多个渠道上使用，非常适用于Headless投放。
@@ -22,15 +34,15 @@ ht-degree: 60%
 
 * 此结构可以介于以下两种之间：
 
-   * 基本
-      * 例如，单个多行文本字段。
-      * 用于准备直接内容以用于页面创作。
-   * 复杂
-      * 多种数据类型（包括文本、数字、布尔值、数据和时间等）的字段组合。
-      * 用于准备更多结构化内容以进行页面创作，或用于交付到应用程序。
-   * 嵌套
-      * 可用的引用数据类型允许您嵌套内容。
-      * 通常用于将内容投放到应用程序。
+  * 基本
+    * 例如，单个多行文本字段。
+    * 用于准备直接内容以用于页面创作。
+  * 复杂
+    * 多种数据类型（包括文本、数字、布尔值、数据和时间等）的字段组合。
+    * 用于准备更多结构化内容以进行页面创作，或用于交付到应用程序。
+  * 嵌套
+    * 可用的引用数据类型允许您嵌套内容。
+    * 通常用于将内容投放到应用程序。
 
 使用 AEM 核心组件的 Sling 模型 (JSON) 导出功能，内容片段也可以以 JSON 格式投放。 此投放形式：
 
@@ -130,12 +142,12 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
 
 * 存储为&#x200B;**资源**：
 
-   * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
-   * 在内容片段编辑器中创作和编辑。
+  * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
+  * 在内容片段编辑器中创作和编辑。
 
 * 在包含内容片段组件[&#128279;](/help/sites-authoring/content-fragments.md) （引用组件）的页面编辑器中使用：
 
-   * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
+  * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
 * 可使用 [AEM GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)。
 
@@ -155,9 +167,9 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 * **插入资源**&#x200B;到片段（混合媒体片段）
 
-   * 是片段的一部分（请参阅[内容片段的组成部分](#constituent-parts-of-a-content-fragment)）。
-   * 定义资源的位置。
-   * 请参阅[将资源插入片段](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)（在片段编辑器中）以了解更多信息。
+  * 是片段的一部分（请参阅[内容片段的组成部分](#constituent-parts-of-a-content-fragment)）。
+  * 定义资源的位置。
+  * 请参阅[将资源插入片段](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)（在片段编辑器中）以了解更多信息。
 
   >[!NOTE]
   >
@@ -165,16 +177,16 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 * **关联的内容**
 
-   * 连接到片段；但不是片段的固定部分（请参阅[内容片段的组成部分](#constituent-parts-of-a-content-fragment)）。
-   * 具有一定的定位灵活性。
-   * 在页面上使用片段时，可轻松使用（作为中间内容）。
-   * 请参阅[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)以了解更多信息。
+  * 连接到片段；但不是片段的固定部分（请参阅[内容片段的组成部分](#constituent-parts-of-a-content-fragment)）。
+  * 具有一定的定位灵活性。
+  * 在页面上使用片段时，可轻松使用（作为中间内容）。
+  * 请参阅[关联内容](/help/assets/content-fragments/content-fragments-assoc-content.md)以了解更多信息。
 
 * 页面编辑器的&#x200B;**资源浏览器**&#x200B;中的可用资源
 
-   * 允许完全灵活地选择资源。
-   * 具有一定的定位灵活性。
-   * 不提供为特定片段批准的概念。
+  * 允许完全灵活地选择资源。
+  * 具有一定的定位灵活性。
+  * 不提供为特定片段批准的概念。
 
 <!--
   * See [Assets Browser](/help/sites-authoring/environment-tools.md#assets-browser) for more information.
@@ -186,55 +198,55 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 * **片段元素**
 
-   * 元素与包含内容的数据字段关联。
-   * 您可以使用内容模型创建内容片段。 模型中指定的元素（字段）定义片段的结构。 这些元素（字段）可以是各种数据类型。
+  * 元素与包含内容的数据字段关联。
+  * 您可以使用内容模型创建内容片段。 模型中指定的元素（字段）定义片段的结构。 这些元素（字段）可以是各种数据类型。
 
 * **片段段落**
 
-   * 以单个实体分隔的文本块（通常为多行）。
+  * 以单个实体分隔的文本块（通常为多行）。
 
-   * 在[富文本](/help/assets/content-fragments/content-fragments-variations.md#rich-text)和 [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) 模式中，一个段落可以被格式化为一个标题，在这种情况下它和后面的段落属于一个单元。
+  * 在[富文本](/help/assets/content-fragments/content-fragments-variations.md#rich-text)和 [Markdown](/help/assets/content-fragments/content-fragments-variations.md#markdown) 模式中，一个段落可以被格式化为一个标题，在这种情况下它和后面的段落属于一个单元。
 
-   * 在页面创作期间启用内容控制。
+  * 在页面创作期间启用内容控制。
 
 * **插入到片段中的资源（混合媒体片段）**
 
-   * 插入到实际片段中并用作片段内部内容的资源（图像）。
-   * 嵌入在片段的段落系统中。
-   * 可以[在页面上使用/引用片段时](/help/sites-authoring/content-fragments.md)进行格式化。
-   * 只能使用片段编辑器在片段中添加、删除或移动到片段中。 无法在页面编辑器中执行这些操作。
-   * 只能在片段编辑器[&#128279;](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)中使用富文本格式添加、删除或移动片段。
-   * 只能添加到多行文本元素（任何片段类型）。
-   * 附于前文（段落）。
+  * 插入到实际片段中并用作片段内部内容的资源（图像）。
+  * 嵌入在片段的段落系统中。
+  * 可以[在页面上使用/引用片段时](/help/sites-authoring/content-fragments.md)进行格式化。
+  * 只能使用片段编辑器在片段中添加、删除或移动到片段中。 无法在页面编辑器中执行这些操作。
+  * 只能在片段编辑器[&#128279;](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)中使用富文本格式添加、删除或移动片段。
+  * 只能添加到多行文本元素（任何片段类型）。
+  * 附于前文（段落）。
 
-     >[!CAUTION]
-     >
-     >通过切换为纯文本格式，可以（意外）从片段中删除资源。
+    >[!CAUTION]
+    >
+    >通过切换为纯文本格式，可以（意外）从片段中删除资源。
 
-     >[!NOTE]
-     >
-     >在页面上使用片段时，资源也可以添加为[其他（中间）内容](/help/sites-authoring/content-fragments.md#using-associated-content)；使用资源浏览器中的关联内容或资源。
+    >[!NOTE]
+    >
+    >在页面上使用片段时，资源也可以添加为[其他（中间）内容](/help/sites-authoring/content-fragments.md#using-associated-content)；使用资源浏览器中的关联内容或资源。
 
 * **关联的内容**
 
-   * 这是片段外部的内容，但与编辑相关。 通常是图像、视频或其他片段。
-   * 将收藏集中的单个资源添加到页面后，即可在页面编辑器中与片段一起使用。 这表示它们是可选的，具体取决于特定渠道的要求。
-   * 资源包括[通过收藏集关联到片段](/help/assets/content-fragments/content-fragments-assoc-content.md)；关联的收藏集允许作者决定在创作页面时要使用的资源。
+  * 这是片段外部的内容，但与编辑相关。 通常是图像、视频或其他片段。
+  * 将收藏集中的单个资源添加到页面后，即可在页面编辑器中与片段一起使用。 这表示它们是可选的，具体取决于特定渠道的要求。
+  * 资源包括[通过收藏集关联到片段](/help/assets/content-fragments/content-fragments-assoc-content.md)；关联的收藏集允许作者决定在创作页面时要使用的资源。
 
-      * 收藏集可以作为默认内容与片段关联，也可以由作者在片段创作期间关联。
-      * [资源 (DAM) 收藏集](/help/assets/manage-collections.md)是片段关联内容的基础。
-   * 或者，您也可以将片段本身添加到集合中以帮助跟踪。
+    * 收藏集可以作为默认内容与片段关联，也可以由作者在片段创作期间关联。
+    * [资源 (DAM) 收藏集](/help/assets/manage-collections.md)是片段关联内容的基础。
+  * 或者，您也可以将片段本身添加到集合中以帮助跟踪。
 
 * **片段元数据**
 
-   * 使用[资源元数据架构](/help/assets/metadata-schemas.md)。
-   * 标记可在以下情况下创建：
+  * 使用[资源元数据架构](/help/assets/metadata-schemas.md)。
+  * 标记可在以下情况下创建：
 
-      * 创建和创作片段
-      * 或更高版本：
+    * 创建和创作片段
+    * 或更高版本：
 
-         * 通过从控制台查看/编辑片段&#x200B;**属性**
-         * 通过在片段编辑器中编辑&#x200B;**元数据**
+      * 通过从控制台查看/编辑片段&#x200B;**属性**
+      * 通过在片段编辑器中编辑&#x200B;**元数据**
 
   >[!CAUTION]
   >
@@ -242,23 +254,23 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 * **主控**
 
-   * 片段的一部分
+  * 片段的一部分
 
-      * 每个内容片段都有一个主控实例。
-      * 无法删除主控。
+    * 每个内容片段都有一个主控实例。
+    * 无法删除主控。
 
-   * 主控可以在&#x200B;**[变体](/help/assets/content-fragments/content-fragments-variations.md)**&#x200B;下的片段编辑器中访问。
-   * 主控不是此变体，而是所有变体的基础。
+  * 主控可以在&#x200B;**[变体](/help/assets/content-fragments/content-fragments-variations.md)**&#x200B;下的片段编辑器中访问。
+  * 主控不是此变体，而是所有变体的基础。
 
 * **变体**
 
-   * 特定于编辑目的的片段文本的演绎版；可以与渠道相关，但不是强制性的，也可以用于临时本地修改。
-   * 创建为&#x200B;**母版**&#x200B;的副本，但随后可以根据需要进行编辑；变体本身之间存在内容重叠。
-   * 可以在片段创作期间定义。
-   * 存储在片段中，以帮助避免内容副本的散布。
-   * 如果主控内容已更新，则变体可以与主控[同步](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master)。
-   * 可以[概述](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text)以快速将文本截断为预定义的长度。
-   * 在片段编辑器的[变体](/help/assets/content-fragments/content-fragments-variations.md)选项卡下可用。
+  * 特定于编辑目的的片段文本的演绎版；可以与渠道相关，但不是强制性的，也可以用于临时本地修改。
+  * 创建为&#x200B;**母版**&#x200B;的副本，但随后可以根据需要进行编辑；变体本身之间存在内容重叠。
+  * 可以在片段创作期间定义。
+  * 存储在片段中，以帮助避免内容副本的散布。
+  * 如果主控内容已更新，则变体可以与主控[同步](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master)。
+  * 可以[概述](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text)以快速将文本截断为预定义的长度。
+  * 在片段编辑器的[变体](/help/assets/content-fragments/content-fragments-variations.md)选项卡下可用。
 
 ### 使用内容片段创作页面时的中间内容 {#in-between-content-when-page-authoring-with-content-fragments}
 
@@ -280,24 +292,24 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 
 * **内容模型**
 
-   * [使用配置浏览器启用](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
-   * [使用工具创建](/help/assets/content-fragments/content-fragments-models.md)。
-   * 需要[创建片段](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
-   * 定义片段的结构（标题、内容元素、标记定义）。
-   * 内容模型定义需要一个标题和一个数据元素；其他内容都是可选的。
-   * 模型可定义默认内容（如果适用）。
-   * 创作片段内容时，作者无法更改定义的结构。
-   * 创建从属内容片段后对模型所做的更改可能会影响这些内容片段。
+  * [使用配置浏览器启用](/help/assets/content-fragments/content-fragments-configuration-browser.md)。
+  * [使用工具创建](/help/assets/content-fragments/content-fragments-models.md)。
+  * 需要[创建片段](/help/assets/content-fragments/content-fragments-managing.md#creating-content-fragments)。
+  * 定义片段的结构（标题、内容元素、标记定义）。
+  * 内容模型定义需要一个标题和一个数据元素；其他内容都是可选的。
+  * 模型可定义默认内容（如果适用）。
+  * 创作片段内容时，作者无法更改定义的结构。
+  * 创建从属内容片段后对模型所做的更改可能会影响这些内容片段。
 
 要将内容片段用于页面创作，您还需要：
 
 * **内容片段组件**
 
-   * 有助于以HTML和/或JSON格式传送片段。
-   * 需要[在页面上引用片段](/help/sites-authoring/content-fragments.md)。
-   * 负责片段的布局和投放；即渠道。
-   * 片段需要一个或多个专用组件来定义布局并投放部分或全部元素/变体和关联内容。
-   * 在创作中将片段拖动到页面上将自动关联所需的组件。
+  * 有助于以HTML和/或JSON格式传送片段。
+  * 需要[在页面上引用片段](/help/sites-authoring/content-fragments.md)。
+  * 负责片段的布局和投放；即渠道。
+  * 片段需要一个或多个专用组件来定义布局并投放部分或全部元素/变体和关联内容。
+  * 在创作中将片段拖动到页面上将自动关联所需的组件。
 
 ## 使用示例 {#example-usage}
 

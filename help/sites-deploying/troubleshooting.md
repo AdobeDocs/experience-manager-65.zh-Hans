@@ -9,13 +9,25 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 solution: Experience Manager, Experience Manager Sites
 feature: Deploying
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: c191041a-8b54-4bde-9e43-bc8d8f8cea74
+    internal-label: Deploying
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1219'
+source-wordcount: '1220'
 ht-degree: 0%
-
 ---
-
 # AEM安装问题疑难解答{#troubleshooting}
 
 此部分包含有关可帮助您进行故障排除的日志的详细信息，还包含有关您在AEM中可能遇到的某些问题的信息。
@@ -101,7 +113,7 @@ java -Xmx256m -XX：+HeapDumpOnOutOfMemoryError -jar &amp;ast；.jar
 
 在某些情况下，即使存储库本身成功运行，AEM WCM欢迎屏幕也不会自动显示。 此问题可能取决于操作系统设置、浏览器配置或类似因素。
 
-常见症状是AEM WCM快速启动窗口显示“AEM WCM正在启动，等待服务器启动”.... 如果该消息显示的时间相对较长，请使用默认的4502端口或实例正在运行的端口http://localhost:4502/，手动将AEM WCM URL输入浏览器窗口。
+常见症状是AEM WCM快速启动窗口显示“AEM WCM正在启动，等待服务器启动”.... 如果该消息显示的时间相对较长，请使用默认的4502端口或实例正在运行的端口http://localhost:4502/ ，手动将AEM WCM URL输入浏览器窗口。
 
 此外，日志可能会揭示浏览器未启动的原因。
 

@@ -11,30 +11,38 @@ thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '805'
-ht-degree: 3%
-
+source-wordcount: '958'
+ht-degree: 10%
 ---
-
 # 高级URL配置 {#url}
 
 >[!NOTE]
 >
->搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。因此，必须解决许多AEM项目中的SEO问题。 请参阅[SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=zh-Hans)以了解更多信息。
+>搜索引擎优化 (SEO) 已成为许多营销人员关注的重点。 因此，在众多 AEM 项目中必须解决与 SEO 相关的问题。 请参阅[SEO和URL管理最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html?lang=zh-Hans)以了解更多信息。
 
 [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)提供了高级配置以自定义产品和类别页面的URL。 许多实施都会自定义这些URL，以实现搜索引擎优化(SEO)。 以下视频详细介绍如何配置[Sling映射](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)的`UrlProvider`服务和功能以自定义产品和类别页面的URL。
 
->[!VIDEO](https://video.tv.adobe.com/v/38584/?quality=12&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/38584/?captions=chi_hans&quality=12)
 
 ## 配置 {#configuration}
 
-要根据SEO要求和需要配置`UrlProvider`服务，项目必须提供“CIF URL提供程序配置”的OSGI配置。
+要根据SEO要求和需求配置`UrlProvider`服务，项目必须提供“CIF URL提供程序配置”的OSGI配置。
 
 >[!NOTE]
 >
->自AEM CIF核心组件版本2.0.0开始，URL提供程序配置仅提供预定义的url格式，而不提供1.x版本中已知的自由文本可配置格式。 此外，使用选择器在URL中传递数据的方法已替换为后缀。
+>自AEM CIF核心组件版本2.0.0开始，URL提供程序配置仅提供预定义的URL格式，而不提供1.x版本中已知的自由文本可配置格式。 此外，使用选择器在URL中传递数据的方法已替换为后缀。
 
 ### 产品页面URL格式 {#product}
 
@@ -83,7 +91,7 @@ ht-degree: 3%
 
 `UrlProvider`预配置为在创作层实例上生成指向此类页面的深层链接。 这对于编辑器非常有用，编辑器使用预览模式浏览站点，导航到特定产品或类别页面，然后切换回编辑模式以编辑页面。
 
-另一方面，在发布层实例中，目录页面URL应保持稳定，以免在搜索引擎排名方面失去优势。 因此，默认情况下，发布层实例不会呈现指向特定目录页面的深层链接。 若要更改此行为，可以将&#x200B;_CIF URL提供程序特定页面策略_&#x200B;配置为始终生成特定页面URL。
+另一方面，在发布层实例中，目录页面URL应保持稳定，以免在搜索引擎排名方面失去优势。 因此，默认情况下，发布层实例不会呈现指向特定目录页面的深层链接。 要更改此行为，可以将&#x200B;_CIF URL提供程序特定页面策略_&#x200B;配置为始终生成特定页面URL。
 
 ## 自定义URL格式 {#custom-url-format}
 
@@ -97,7 +105,7 @@ ht-degree: 3%
 
 ## 与AEM Dispatcher相结合 {#dispatcher}
 
-使用带有`mod_rewrite`模块的AEM Dispatcher HTTP Server也可以实现URL重写。 [AEM项目原型](https://github.com/adobe/aem-project-archetype)提供了一个引用AEM Dispatcher配置，该配置已包含所生成大小的基本[重写规则](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud)。
+使用带有`mod_rewrite`模块的AEM Dispatcher HTTP Server也可以实现URL重写。 [AEM项目原型](https://github.com/adobe/aem-project-archetype)提供了一个参考AEM Dispatcher配置，该配置已包含所生成大小的基本[重写规则](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud)。
 
 ## 示例
 

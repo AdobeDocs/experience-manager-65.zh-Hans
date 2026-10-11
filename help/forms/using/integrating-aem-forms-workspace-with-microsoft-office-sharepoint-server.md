@@ -1,5 +1,5 @@
 ---
-title: 将AEM表单工作区与Microsoft Office SharePoint Server集成
+title: 将 AEM Forms 工作区与 Microsoft Office SharePoint 服务器集成
 description: 您可以将AEM表单工作区与Microsoft Office SharePoint Server集成。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,28 @@ exl-id: d080932f-d5fb-482d-9329-62da5df10362
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '551'
-ht-degree: 0%
-
+source-wordcount: '554'
+ht-degree: 3%
 ---
-
-# 将AEM表单工作区与Microsoft Office SharePoint Server集成{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
+# 将 AEM Forms 工作区与 Microsoft Office SharePoint 服务器集成{#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
 **— 要求**
 
@@ -26,7 +40,7 @@ ht-degree: 0%
 **用户级别**
 开始
 
-您可以在AEM Forms Workspace Office SharePoint Server(例如，Microsoft Office SharePoint Server 2007)中将Microsoft用作Web部件。 用户可以通过使用Web浏览器连接到您的AEM Forms Workspace服务器来访问SharePoint，以提供统一的体验。 在本文中，您将了解在AEM Forms Office SharePoint Server中将Microsoft Workspace显示为Web部件的基本步骤。 您可以执行本文中所述的步骤来提供统一的体验，以便连接到SharePoint服务器的用户可以从同一端口访问AEM Forms Workspace。
+您可以在AEM Forms Workspace Office SharePoint Server（例如，Microsoft Office SharePoint Server 2007）中将Microsoft用作Web部件。 用户可以通过使用Web浏览器连接到您的AEM Forms Workspace服务器来访问SharePoint，以提供统一的体验。 在本文中，您将了解在AEM Forms Office SharePoint Server中将Microsoft Workspace显示为Web部件的基本步骤。 您可以执行本文中所述的步骤来提供统一的体验，以便连接到SharePoint服务器的用户可以从同一端口访问AEM Forms Workspace。
 
 >[!NOTE]
 >

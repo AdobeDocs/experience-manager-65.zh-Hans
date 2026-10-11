@@ -1,5 +1,5 @@
 ---
-title: ContextHub UI模块类型示例
+title: ContextHub UI 模块类型示例
 description: ContextHub提供了几个可在解决方案中使用的示例UI模块。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,25 @@ exl-id: df28180f-7af4-437d-8e91-bfd305f73113
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Personalization
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1171'
-ht-degree: 0%
-
+source-wordcount: '1190'
+ht-degree: 2%
 ---
-
-# ContextHub UI模块类型示例 {#sample-contexthub-ui-module-types}
+# ContextHub UI 模块类型示例 {#sample-contexthub-ui-module-types}
 
 ContextHub提供了几个可在解决方案中使用的示例UI模块。 提供了以下信息：
 
@@ -55,16 +66,16 @@ contexthub.base UI模块类型是所有其他UI模块类型的基类型。 因�
 * **storeMapping：**&#x200B;密钥/存储映射。 使用手柄栏模板中的键访问关联的ContextHub存储数据。
 * **列表：**&#x200B;在单击UI模块时作为列表在弹出框中显示的项数组。 如果包含此项目，请不要包含poverTemplate。 该值是一个包含以下键的对象数组：
 
-   * 标题：为此项目显示的文本
-   * 图像： （可选）应在左侧显示的图像的URL
-   * 图标： （可选）应在左侧显示的CUI图标类；如果指定了图像，则忽略此类别
-   * selected： （可选）一个布尔值，它指定是否将此项显示为选定项(true=selected)。 默认情况下，选定的项目会以粗体字体显示。 使用`listType`属性配置其他外观（请参阅下文）。
+  * 标题：为此项目显示的文本
+  * 图像： （可选）应在左侧显示的图像的URL
+  * 图标： （可选）应在左侧显示的CUI图标类；如果指定了图像，则忽略此类别
+  * selected： （可选）一个布尔值，它指定是否将此项显示为选定项(true=selected)。 默认情况下，选定的项目会以粗体字体显示。 使用`listType`属性配置其他外观（请参阅下文）。
 
 * **listType：**&#x200B;用于弹出框列表项的样式。 使用以下值之一：
 
-   * 复选标记
-   * 复选框
-   * 无线电
+  * 复选标记
+  * 复选框
+  * 无线电
 
 * **poverTemplate：**&#x200B;一个Handlebars模板，它指定单击UI模块时要在弹出窗口中呈现的内容。 如果您包含此项，请不要包含`list`项。
 

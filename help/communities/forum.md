@@ -10,18 +10,25 @@ exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1233'
-ht-degree: 1%
-
+source-wordcount: '1249'
+ht-degree: 0%
 ---
-
 # 论坛功能{#forum-feature}
 
 ## 简介 {#introduction}
 
-论坛功能为Publish环境中的登录站点访客（社区成员）提供了一个区域，用于：
+论坛功能为发布环境中的登录站点访客（社区成员）提供了一个区域，用于：
 
 * 创建主题
 * 查看和回复主题
@@ -76,7 +83,7 @@ ht-degree: 1%
 
 * 每页&#x200B;**个主题**
 
-  定义每个页面显示的主题/帖子数。默认为 10。
+  定义每个页面显示的主题/帖子数。 默认值为10。
 
 * **已审核**
 
@@ -122,7 +129,7 @@ ht-degree: 1%
 
   仅在选中`Allow File Uploads`时才相关。 包含“点”分隔符的逗号分隔文件扩展名列表。 例如，.jpg、.jpeg、.png、.doc、.docx、.pdf。 如果指定了任何文件类型，则无法上载未指定的文件类型。 默认值为无指定以便允许所有文件类型。
 
-* **附加图像文件大小上限**
+* **最大附加图像文件大小**
 仅在选中允许文件上传时才相关。 上传的图像文件可以包含的最大字节数。 默认值为2097152 (2 Mb)。
 
 * **允许线程回复**
@@ -167,7 +174,7 @@ ht-degree: 1%
 
 * **UI提及模式**
 
-  指定允许的样式字符串以在帖子中标记(@mention)已注册用户。 例如：`~{{familyName}}{{givenName}}`。
+  指定允许的样式字符串以在帖子中标记(@mention)已注册用户。 例如 `~{{familyName}}{{givenName}}`。
 
 >[!NOTE]
 >

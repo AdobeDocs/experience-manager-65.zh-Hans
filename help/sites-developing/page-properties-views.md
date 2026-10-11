@@ -9,13 +9,22 @@ exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 43%
-
+source-wordcount: '500'
+ht-degree: 45%
 ---
-
 # 自定义页面属性的视图{#customizing-views-of-page-properties}
 
 每个页面都有一组可供用户查看和编辑的[属性](/help/sites-authoring/editing-page-properties.md)；创建页面（创建视图）时需要某些属性，其他属性可在以后的阶段查看和编辑（编辑视图）。 这些页面属性由相应页面组件的对话框(`cq:dialog`)定义和提供。
@@ -30,17 +39,17 @@ ht-degree: 43%
 
 * 在编辑视图中可用（例如，**查看属性**）
 
-如果需要任何更改，则必须专门配置字段。这是使用相应的节点属性完成的：
+如果需要任何更改，则必须专门配置字段。 这是使用相应的节点属性完成的：
 
 * 页面属性在创建视图中可用（例如，**创建页面**&#x200B;向导）：
 
-   * 名称：`cq:showOnCreate`
-   * 类型：`Boolean`
+  * 名称：`cq:showOnCreate`
+  * 类型：`Boolean`
 
 * 编辑视图中可用的页面属性（例如，**视图**/**编辑**）**属性**&#x200B;选项)：
 
-   * 名称：`cq:hideOnEdit`
-   * 类型：`Boolean`
+  * 名称：`cq:hideOnEdit`
+  * 类型：`Boolean`
 
 例如，查看Foundation Page组件的&#x200B;**Basic**&#x200B;选项卡上&#x200B;**More Titles and Description**&#x200B;下分组的字段的设置。 这些内容在&#x200B;**创建页面**&#x200B;向导中可见，因为`cq:showOnCreate`已设置为`true`：
 
@@ -56,7 +65,7 @@ ht-degree: 43%
 
 您还可以通过配置页面组件的对话框并应用相应的节点属性来配置可用字段。
 
-例如，默认情况下&#x200B;[**创建页面**&#x200B;向导](/help/sites-authoring/managing-pages.md#creating-a-new-page)会显示在&#x200B;**更多标题和描述**&#x200B;中分组的字段。若要对其进行隐藏，您可以配置：
+例如，默认情况下&#x200B;[**创建页面**&#x200B;向导](/help/sites-authoring/managing-pages.md#creating-a-new-page)会显示在&#x200B;**更多标题和描述**&#x200B;中分组的字段。 若要对其进行隐藏，您可以配置：
 
 1. 在 `/apps` 下创建您的页面组件。
 1. 为页面组件的 `basic` 部分创建一个覆盖（使用[&#x200B; Sling 资源合并器](/help/sites-developing/sling-resource-merger.md)提供的&#x200B;*对话框差异*）；例如：
@@ -80,7 +89,7 @@ ht-degree: 43%
    >1. 在`/apps`下重新创建所需项（即`/libs`中存在的项）
    >1. 在`/apps`中进行任何更改
 
-1. 将 `basic` 上的 `path` 属性设置为指向基本选项卡的覆盖（另请参阅下一步）。例如：
+1. 将 `basic` 上的 `path` 属性设置为指向基本选项卡的覆盖（另请参阅下一步）。 例如：
 
    ```xml
    /apps/demos/components/page/tabs/basic
@@ -112,4 +121,4 @@ GITHUB上的代码
 
 您可以在GitHub上找到此页面的代码
 
-* 在GitHub上[打开aem-authoring-extension-page-dialog项目](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* [在GitHub上打开aem-authoring-extension-page-dialog项目](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

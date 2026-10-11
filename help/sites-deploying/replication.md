@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: e4c42f989baf1a91e94944c612ee6b8de1dc331a
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3334'
+source-wordcount: '3471'
 ht-degree: 3%
-
 ---
-
 # 复制{#replication}
 
 复制代理在Adobe Experience Manager (AEM)中发挥着重要作用，作为一种机制，用于：
@@ -81,7 +90,7 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 >* 发布代理：反向复制（发件箱）
 >
 >要检查代理或队列的状态，请使用&#x200B;**工具**&#x200B;控制台。
->请参阅[监视您的复制代理](#monitoring-your-replication-agents)。
+>请参阅[监视复制代理](#monitoring-your-replication-agents)。
 
 #### 复制（创作到发布） {#replication-author-to-publish}
 
@@ -115,8 +124,8 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
 * 静态代理
 这是一个“将节点的静态表示存储在文件系统中的代理”。
-例如，在默认设置下，内容页面和DAM资源将作为HTML或相应的资源格式存储在`/tmp`下。查看配置的`Settings`和`Rules`选项卡。
-这是请求的，以便当直接从应用程序服务器请求页面时，可以看到内容。这是一个专用代理，（可能）在大多数情况下不需要它。
+例如，在默认设置下，内容页面和DAM资源将作为HTML或相应的资源格式存储在`/tmp`下。 查看配置的`Settings`和`Rules`选项卡。
+这是请求的，以便当直接从应用程序服务器请求页面时，可以看到内容。 这是一个专用代理，（可能）在大多数情况下不需要它。
 
 ## 复制代理 — 配置参数 {#replication-agents-configuration-parameters}
 
@@ -138,16 +147,16 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   当代理处于&#x200B;**启用**&#x200B;状态时，队列显示为：
 
-   * 正在处理项目时&#x200B;**活动**。
-   * 队列为空时&#x200B;**空闲**。
-   * 当项目在队列中但无法处理（例如，接收队列被禁用）时，**已阻止**。
+  * 正在处理项目时&#x200B;**活动**。
+  * 队列为空时&#x200B;**空闲**。
+  * 当项目在队列中但无法处理（例如，接收队列被禁用）时，**已阻止**。
 
 * **序列化类型**
 
   序列化的类型：
 
-   * **默认值**：设置是否自动选择代理。
-   * **Dispatcher刷新**：如果要使用代理刷新Dispatcher缓存，请选择此选项。
+  * **默认值**：设置是否自动选择代理。
+  * **Dispatcher刷新**：如果要使用代理刷新Dispatcher缓存，请选择此选项。
 
 * **重试延迟**
 
@@ -159,8 +168,8 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   根据环境，代理会使用此用户帐户来：
 
-   * 从创作环境收集内容并对其进行打包
-   * 在发布环境中创建和编写内容
+  * 从创作环境收集内容并对其进行打包
+  * 在发布环境中创建和编写内容
 
   将此字段留空以使用系统用户帐户（在sling中定义为管理员用户的帐户；默认情况下为`admin`）。
 
@@ -180,9 +189,9 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   指定用于日志消息的详细级别。
 
-   * `Error`：仅记录错误
-   * `Info`：记录错误、警告和其他信息性消息
-   * `Debug`：在消息中使用高级别的详细信息，主要用于调试目的
+  * `Error`：仅记录错误
+  * `Info`：记录错误、警告和其他信息性消息
+  * `Debug`：在消息中使用高级别的详细信息，主要用于调试目的
 
   默认： `Info`
 
@@ -202,8 +211,8 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   例如：
 
-   * 默认代理可能会复制到`https://localhost:4503/bin/receive`
-   * Dispatcher Flush代理可能会复制到`https://localhost:8000/dispatcher/invalidate.cache`
+  * 默认代理可能会复制到`https://localhost:4503/bin/receive`
+  * Dispatcher Flush代理可能会复制到`https://localhost:8000/dispatcher/invalidate.cache`
 
   此处指定的协议（HTTP或HTTPS）确定传输方法。
 
@@ -281,21 +290,21 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
   对于Dispatcher Flush代理，不需要更改三个标准条目：
 
-   * `CQ-Action:{action}`
-   * `CQ-Handle:{path}`
-   * `CQ-Path:{path}`
+  * `CQ-Action:{action}`
+  * `CQ-Handle:{path}`
+  * `CQ-Path:{path}`
 
   在刷新手柄或路径时，将酌情使用这些参数来指示要使用的操作。 子参数是动态的：
 
-   * `{action}`表示复制操作
+  * `{action}`表示复制操作
 
-   * `{path}`表示路径
+  * `{path}`表示路径
 
   与请求相关的路径/操作将替换它们，因此无需“硬编码”：
 
   >[!NOTE]
   >
-  >如果您在建议的默认上下文以外的其他上下文中安装了AEM，则必须在HTTP标头中注册该上下文。例如：
+  >如果您在建议的默认上下文以外的其他上下文中安装了AEM，则必须在HTTP标头中注册该上下文。 例如：
   >`CQ-Handle:/<*yourContext*>{path}`
 
 * **关闭连接**
@@ -424,19 +433,19 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
    * 在&#x200B;**设置**&#x200B;选项卡中：
 
-      * 激活&#x200B;**已启用**。
-      * 输入&#x200B;**描述**。
-      * 将&#x200B;**重试延迟**&#x200B;设置为`60000`。
+     * 激活&#x200B;**已启用**。
+     * 输入&#x200B;**描述**。
+     * 将&#x200B;**重试延迟**&#x200B;设置为`60000`。
 
-      * 将&#x200B;**序列化类型**&#x200B;保留为`Default`。
+     * 将&#x200B;**序列化类型**&#x200B;保留为`Default`。
 
    * 在&#x200B;**传输**&#x200B;选项卡中：
 
-      * 输入新发布实例所需的URI；例如，
-        `https://localhost:4504/bin/receive`。
+     * 输入新发布实例所需的URI；例如，
+       `https://localhost:4504/bin/receive`。
 
-      * 输入用于复制的站点特定用户帐户。
-      * 您可以根据需要配置其他参数。
+     * 输入用于复制的站点特定用户帐户。
+     * 您可以根据需要配置其他参数。
 
 1. 单击&#x200B;**确定**。
 
@@ -467,19 +476,19 @@ AEM的标准安装中包含的We-Retail网站可用于说明复制。
 
    * 在&#x200B;**设置**&#x200B;选项卡中：
 
-      * 激活&#x200B;**已启用**。
-      * 输入&#x200B;**描述**。
-      * 将&#x200B;**序列化类型**&#x200B;保留为`Dispatcher Flush`，或者在创建代理时将其设置为此类型。
+     * 激活&#x200B;**已启用**。
+     * 输入&#x200B;**描述**。
+     * 将&#x200B;**序列化类型**&#x200B;保留为`Dispatcher Flush`，或者在创建代理时将其设置为此类型。
 
-      * （可选）选择&#x200B;**别名更新**&#x200B;以启用对Dispatcher的别名或虚名路径失效请求。
+     * （可选）选择&#x200B;**别名更新**&#x200B;以启用对Dispatcher的别名或虚名路径失效请求。
 
    * 在&#x200B;**传输**&#x200B;选项卡中：
 
-      * 输入新发布实例所需的URI；例如，
-        `https://localhost:80/dispatcher/invalidate.cache`。
+     * 输入新发布实例所需的URI；例如，
+       `https://localhost:80/dispatcher/invalidate.cache`。
 
-      * 输入用于复制的站点特定用户帐户。
-      * 您可以根据需要配置其他参数。
+     * 输入用于复制的站点特定用户帐户。
+     * 您可以根据需要配置其他参数。
 
    对于Dispatcher Flush代理，仅在您使用基于路径的虚拟主机条目来区分场时使用URI属性，并使用此字段来定位要失效的场。 例如，场 #1 的虚拟主机为 `www.mysite.com/path1/*`，场 #2 的虚拟主机为 `www.mysite.com/path2/*`。 您可以使用 URL `/path1/invalidate.cache` 锁定第一个场，使用 `/path2/invalidate.cache` 锁定第二个场。
 

@@ -1,20 +1,27 @@
 ---
 title: 面向客户的用户界面建议
-
 description: 与经典用户界面和触屏优化用户界面相关的推荐列表。
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '790'
 ht-degree: 1%

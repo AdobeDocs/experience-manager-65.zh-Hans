@@ -5,13 +5,33 @@ exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1653'
-ht-degree: 70%
-
+source-wordcount: '1701'
+ht-degree: 72%
 ---
-
 # 使用 AEM 为 Headless 创作基本内容 {#author-headless-basics}
 
 ## 迄今为止的故事 {#story-so-far}
@@ -24,8 +44,8 @@ ht-degree: 70%
 
 * **受众**：初学者
 * **目标**：介绍 Headless CMS 创作的基础知识：
-   * 使用 AEMaaCS 进行创作简介
-   * 内容片段简介
+  * 使用 AEMaaCS 进行创作简介
+  * 内容片段简介
 
 ## 基本处理 {#basic-handling}
 
@@ -193,8 +213,8 @@ AEM 安装通常至少包含两个环境：
 
 * **内容片段模型**
 
-  您将在编辑器顶部看到内容片段模型的名称 — 直接在片段名称下。此链接也是将您带到模型编辑器的链接。
-内容片段模型实际上对您的内容片段至关重要，因为它们定义了您使用的结构。但是，创建和编辑这些角色通常由另一个角色（内容架构师）负责。
+  您将在编辑器顶部看到内容片段模型的名称 - 位于片段名称的正下方。 这也是一个可将您转至模型编辑器的链接。
+  实际上，内容片段模型对您的内容片段至关重要，因为它们定义了您使用的结构。 不过，创建和编辑这些模型（通常）是另一个用户画像（即内容架构师）的责任。
 
   >[!NOTE]
   >
@@ -234,38 +254,38 @@ AEM 安装通常至少包含两个环境：
 
 * [基本处理](/help/sites-authoring/basic-handling.md) – 此页面主要基于&#x200B;**Sites**&#x200B;控制台，但许多/大多数功能也用于在 **Assets** 控制台下创作&#x200B;**内容片段**。
 
-   * [“导航”面板](/help/sites-authoring/basic-handling.md#navigation-panel)
+  * [“导航”面板](/help/sites-authoring/basic-handling.md#navigation-panel)
 
-   * [标头](/help/sites-authoring/basic-handling.md#the-header)
+  * [标头](/help/sites-authoring/basic-handling.md#the-header)
 
-   * [操作工具栏](/help/sites-authoring/basic-handling.md#actions-toolbar)
+  * [操作工具栏](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
-   * [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)
+  * [快速操作](/help/sites-authoring/basic-handling.md#quick-actions)
 
-   * [查看和选择资源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+  * [查看和选择资源](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   * [边栏选择器](/help/sites-authoring/basic-handling.md#rail-selector)
+  * [边栏选择器](/help/sites-authoring/basic-handling.md#rail-selector)
 
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
 
-   * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
+  * [管理内容片段](/help/assets/content-fragments/content-fragments-managing.md)
 
-      * [将配置应用到 Assets 文件夹](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
+    * [将配置应用到 Assets 文件夹](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
-      * [创建内容片段](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+    * [创建内容片段](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
 
-   * [变体 - 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
+  * [变体 - 创作片段内容](/help/assets/content-fragments/content-fragments-variations.md)
 
-   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+  * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [内容片段模型 – 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
+    * [内容片段模型 – 数据类型](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
-      * [内容片段模型 – 属性](/help/assets/content-fragments/content-fragments-models.md#properties)
+    * [内容片段模型 – 属性](/help/assets/content-fragments/content-fragments-models.md#properties)
 
-      * [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    * [内容片段模型 – 允许 Assets 文件夹中的内容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
 * 快速入门指南
-   * [创建Assets文件夹Headless快速入门指南](/help/sites-developing/headless/getting-started/create-assets-folder.md)
+  * [创建Assets文件夹Headless快速入门指南](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [AEM Headless 内容架构师历程](/help/journey-headless/architect/overview.md)
 

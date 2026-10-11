@@ -9,22 +9,29 @@ exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '508'
 ht-degree: 2%
-
 ---
-
 # 初始沙盒内容 {#initial-sandbox-content}
 
 在此部分中，您将创建以下所有使用[页面模板](initial-app.md#createthepagetemplate)的页面：
 
 * SCF沙盒站点，重定向到主页的英语版本。
 
-   * SCF沙盒 — 站点的英文版本的主页。
+  * SCF沙盒 — 站点的英文版本的主页。
 
-   * SCF播放 — 要播放的主页的子页面。
+  * SCF播放 — 要播放的主页的子页面。
 
 本教程未深入探讨[语言副本](../../help/sites-administering/tc-prep.md)。 实际上，它设计为让根页面可以通过HTML标题为用户实施首选语言检测，并重定向到该语言的相应主页。 使用两个字母的国家代码作为页面的节点名称，例如，“en”表示英语，“fr”表示法语。
 
@@ -90,9 +97,9 @@ ht-degree: 2%
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
 
-   * 名称：`cq:designPath`
-   * 类型：`String`
-   * 值： `/etc/designs/an-scf-sandbox`
+  * 名称：`cq:designPath`
+  * 类型：`String`
+  * 值： `/etc/designs/an-scf-sandbox`
 
 * 单击绿色`[+] Add`
 

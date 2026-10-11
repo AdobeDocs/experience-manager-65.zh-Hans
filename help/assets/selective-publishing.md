@@ -10,13 +10,27 @@ role: User, Admin
 exl-id: cd025e9d-6fb1-436c-9e78-795f2daaf345
 feature: Publishing
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3028'
 ht-degree: 3%
-
 ---
-
 # 在Dynamic Media中配置文件夹级别的选择性发布 {#selective-publish-configure-folder}
 
 您可以选择在文件夹级别向Adobe Experience Manager或Dynamic Media发布资源或从中取消发布资源。 您可以使用&#x200B;**[!UICONTROL 管理出版物]**&#x200B;或&#x200B;**[!UICONTROL 快速发布]**，而不是仅依赖其设置全局应用于Dynamic Media实例中的所有文件夹的&#x200B;**[!UICONTROL Dynamic Media配置]**。
@@ -37,7 +51,7 @@ ht-degree: 3%
 
 无论您是否依赖以下任一项：
 
-* **[!UICONTROL 发布]** Dynamic Media配置&#x200B;**[!UICONTROL 中设置的Assets]**&#x200B;值。
+* **[!UICONTROL 发布**&#x200B;[!UICONTROL &#x200B; Dynamic Media配置&#x200B;]&#x200B;**中设置的Assets]**&#x200B;值。
 * 在文件夹级别属性中设置了&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;值。
 
 您可以选择&#x200B;**[!UICONTROL 立即]**、**[!UICONTROL 激活]**&#x200B;或&#x200B;**[!UICONTROL 选择性发布]**。 例如，您可以将&#x200B;**[!UICONTROL Dynamic Media配置]**&#x200B;中的&#x200B;**[!UICONTROL 发布Assets]**&#x200B;值设置为&#x200B;**[!UICONTROL 激活时]**，但是将文件夹级别的&#x200B;**[!UICONTROL Dynamic Media发布]**&#x200B;模式值设置为&#x200B;**[!UICONTROL 选择性发布]**，反之亦然。
@@ -76,8 +90,8 @@ ht-degree: 3%
 
    | Dynamic Media发布模式选项 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 立即]** | 将资源上传到此文件夹后，系统会将这些资源摄取到Experience Manager并立即提供URL/Embed。 此选项仅绑定到Experience Manager发布，无需用户干预即可发布资产。<br>如果您在上一步中选择了&#x200B;*在*&#x200B;同步模式&#x200B;**[!UICONTROL 下从Dynamic Media同步]**&#x200B;中排除此文件夹子树中的所有内容，则此选项&#x200B;**[!UICONTROL 不可用]**。 |
-   | **[!UICONTROL 激活时]** | 将资源上传到此文件夹后，必须先明确发布资源，然后才能提供URL/嵌入链接。 此选项仅绑定到Experience Manager发布。<br>如果您在上一步中选择了&#x200B;*在*&#x200B;同步模式&#x200B;**[!UICONTROL 下从Dynamic Media同步]**&#x200B;中排除此文件夹子树中的所有内容，则此选项&#x200B;**[!UICONTROL 不可用]**。 |
+   | **[!UICONTROL 立即]** | 将资源上传到此文件夹后，系统会将这些资源摄取到Experience Manager并立即提供URL/Embed。 此选项仅绑定到Experience Manager发布，无需用户干预即可发布资产。<br>如果您在上一步中选择了&#x200B;**[!UICONTROL 在**&#x200B;[!UICONTROL &#x200B;同步模式&#x200B;]&#x200B;**下从Dynamic Media同步]**&#x200B;中排除此文件夹子树中的所有内容，则此选项&#x200B;*不可用*。 |
+   | **[!UICONTROL 激活时]** | 将资源上传到此文件夹后，必须先明确发布资源，然后才能提供URL/嵌入链接。 此选项仅绑定到Experience Manager发布。<br>如果您在上一步中选择了&#x200B;**[!UICONTROL 在**&#x200B;[!UICONTROL &#x200B;同步模式&#x200B;]&#x200B;**下从Dynamic Media同步]**&#x200B;中排除此文件夹子树中的所有内容，则此选项&#x200B;*不可用*。 |
    | **[!UICONTROL 选择性发布]** | Assets将发布到您选择的Experience Manager或Dynamic Media以在公共域中交付。 两种发布方法相互排斥。 也就是说，您可以将资源发布到DMS7，以便使用智能裁剪或动态呈现版本等功能。 或者，您也可以将资源专门发布到Experience Manager以进行安全预览；这些相同的资源&#x200B;*未*&#x200B;发布到DMS7以供在公共域中交付。 如果您在上一步的&#x200B;**[!UICONTROL 同步模式]**&#x200B;中选择了&#x200B;**[!UICONTROL 从Dynamic Media同步]**&#x200B;中排除此文件夹子树状结构中的所有内容，则此选项不可用。 |
 
 1. 在页面的右上角，选择&#x200B;**[!UICONTROL 保存并关闭]**，然后选择&#x200B;**[!UICONTROL 确定]**&#x200B;以返回到Experience Manager Assets。
@@ -114,7 +128,7 @@ ht-degree: 3%
 
    | 操作 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 发布]**(到Experience Manager) | 选择此选项可将资源发布到Experience Manager以进行安全预览。 |
+   | **[!UICONTROL 发布]**（到Experience Manager） | 选择此选项可将资源发布到Experience Manager以进行安全预览。 |
    | **[!UICONTROL 发布到Dynamic Media]** | 选择此选项可将资源发布到Dynamic Media以在公共域中交付，或者也可使用智能裁剪或动态呈现版本等功能。<br>仅当文件夹属性中的&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;设置为&#x200B;**[!UICONTROL 选择性发布]**&#x200B;时，此选项才可用。 |
 
 1. 在&#x200B;**[!UICONTROL 计划]**&#x200B;下，设置发布时间。
@@ -146,7 +160,7 @@ ht-degree: 3%
 
    | 操作 | 描述 |
    | --- | --- |
-   | **[!UICONTROL 取消发布]**(从Experience Manager) | 如果要从Experience Manager取消发布资源，请选择此选项。 |
+   | **[!UICONTROL 取消发布]**（从Experience Manager） | 如果要从Experience Manager取消发布资源，请选择此选项。 |
    | **[!UICONTROL 从Dynamic Media取消发布]** | 如果要从Dynamic Media取消发布资产，请选择此选项。<br>仅当文件夹属性中的&#x200B;**[!UICONTROL Dynamic Media发布模式]**&#x200B;设置为&#x200B;**[!UICONTROL 选择性发布]**&#x200B;时，此选项才可用。 |
 
 1. 在&#x200B;**[!UICONTROL 计划]**&#x200B;下，设置停用时间。
@@ -188,7 +202,7 @@ ht-degree: 3%
    | “快速发布”选项 | 作用 |
    | --- | --- |
    | 发布到Experience Manager | 将选定的资源立即发布到Experience Manager。 |
-   | 发布至 Brand Portal | 将所选资源立即发布到&#x200B;**[!UICONTROL Brand Portal]**。<br>仅当您的Experience Manager Assets实例已配置&#x200B;**[!UICONTROL Brand Portal]**&#x200B;时，此选项才可用。 |
+   | 发布至 Brand Portal | 将所选资源立即发布到&#x200B;**[!UICONTROL Brand Portal]**。<br>此选项仅在Experience Manager Assets实例已配置&#x200B;**[!UICONTROL Brand Portal]**&#x200B;时才可用。 |
    | 发布到 Dynamic Media | 将选定的资源立即发布到Dynamic Media。<br>必须将资源同步到Dynamic Media。 如有必要，请确保文件夹属性中的&#x200B;**[!UICONTROL 同步模式]**&#x200B;已设置为&#x200B;**[!UICONTROL 将此文件夹子树中的所有内容同步到Dynamic Media]**。 |
 
 1. 选择&#x200B;**[!UICONTROL 确定]**，然后选择&#x200B;**[!UICONTROL 关闭]**。

@@ -7,13 +7,31 @@ role: Admin, User, Developer
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,Correspondence Management
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1478'
 ht-degree: 8%
-
 ---
-
 # 安装和配置交互式通信{#install-and-configure-interactive-communications}
 
 ## 简介 {#introduction}
@@ -43,15 +61,15 @@ AEM Forms Interactive Communications在AEM Forms的创作实例上运行管理�
 * AEM实例的安装路径不包含空格。
 * AEM实例已启动并正在运行。 在AEM术语中，“实例”是指以创作或发布模式在服务器上运行的AEM副本。 您需要至少一个AEM实例（创作或处理）才能运行AEM Forms交互式通信和通信管理功能：
 
-   * **作者**：用于创建、上载和编辑内容以及管理网站的AEM实例。 内容准备好上线后，即会复制到发布实例。
-   * **处理：**&#x200B;处理实例是[强化的创作AEM](/help/forms/using/hardening-securing-aem-forms-environment.md)实例。 您可以设置“创作”实例，并在执行安装后进行强化。
+  * **作者**：用于创建、上载和编辑内容以及管理网站的AEM实例。 内容准备好上线后，即会复制到发布实例。
+  * **处理：**&#x200B;处理实例是[强化的创作AEM](/help/forms/using/hardening-securing-aem-forms-environment.md)实例。 您可以设置“创作”实例，并在执行安装后进行强化。
 
-   * **发布**：通过Internet或内部网络向公众提供已发布内容的AEM实例。
+  * **发布**：通过Internet或内部网络向公众提供已发布内容的AEM实例。
 
 * 满足内存要求。 AEM Forms附加组件包需要：
 
-   * 用于基于® Windows的安装的15 GB临时空间。
-   * 用于基于UNIX的安装的6 GB临时空间。
+  * 用于基于® Windows的安装的15 GB临时空间。
+  * 用于基于UNIX的安装的6 GB临时空间。
 
 * 基于UNIX的系统的额外要求：如果您使用的是基于UNIX的操作系统，请从相应操作系统的安装媒体安装以下软件包。
 

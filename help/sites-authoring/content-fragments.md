@@ -10,13 +10,31 @@ exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Content Fragments
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 68%
-
 ---
-
 # 使用内容片段进行页面创作{#page-authoring-with-content-fragments}
 
 Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创建和管理](/help/assets/content-fragments/content-fragments.md)。
@@ -42,27 +60,27 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 * **营销和营销活动策略**
 
-   * 通过集中管理的内容片段审核内容。
+  * 通过集中管理的内容片段审核内容。
 
 * **Creative Pro**
 
-   * 通过与内容片段关联的收藏集跟踪创意资源。
+  * 通过与内容片段关联的收藏集跟踪创意资产。
 
 * **撰稿人**
 
-   * 在 AEM 内容片段编辑器中编写。
-   * 可以创建内容变体。
-   * 可以将相关内容与内容片段关联。
-   * 可以使用版本控制/工作流。
-   * 可以共享内容片段。
-   * 可以集中管理翻译。
+  * 在 AEM 内容片段编辑器中编写。
+  * 可以创建内容变体。
+  * 可以将相关内容与内容片段关联。
+  * 可以使用版本控制/工作流。
+  * 可以共享内容片段。
+  * 可以集中管理翻译。
 
 * **生成器和旅行管理器**
 
-   * 从 AEM 内的预定义片段和具有创作功能的变体中选择。
-   * 可以依赖始终保持最新的片段和关联内容，因为撰稿人和创意人员会在集中管理的片段和资源中进行更新。
-   * 可以依赖为了相关性而进行管理的关联媒体内容。
-   * 可以快速创建随机内容变体，同时仍然确保这些变体在片段中受到集中管理。
+  * 在 AEM 中创作时，可从预定义的片段和变体中进行选择。
+  * 可以依赖始终保持最新的片段和关联内容，因为撰稿人和创意人员会在集中管理的片段和资源中进行更新。
+  * 可以依赖已按相关性进行甄选的关联媒体内容。
+  * 可以即时创建临时内容变体，同时仍然确保这些变体在片段中受到集中管理。
 
 ## 将内容片段添加到您的页面 {#adding-a-content-fragment-to-your-page}
 
@@ -107,14 +125,14 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 * **显示模式**：
 
-   * **单个文本元素**
+  * **单个文本元素**
 
-   * **多个元素**
+  * **多个元素**
 
 * **元素**
 
-   * 默认&#x200B;**Main**&#x200B;始终可用。
-   * 如果片段是使用相应的模板创建的，则可以进行选择。
+  * 默认&#x200B;**Main**&#x200B;始终可用。
+  * 如果片段是使用相应的模板创建的，则可以进行选择。
 
   >[!NOTE]
   >
@@ -122,15 +140,15 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 
 * **变体**
 
-   * 默认&#x200B;**主控**&#x200B;始终可用。
-   * 如果变体是为片段而创建的，则有可选择的变体可用。
+  * 默认&#x200B;**主控**&#x200B;始终可用。
+  * 如果变体是为片段而创建的，则有可选择的变体可用。
 
 * **段落**：指定要包含的段落范围：
 
-   * **全部**
-   * **范围**：例如 `1`、`3-5`、`9-*`
+  * **全部**
+  * **范围**：例如 `1`、`3-5`、`9-*`
 
-      * **将标题处理为它们自己的段落**
+    * **将标题处理为它们自己的段落**
 
 * **将标题处理为它们自己的段落**
 
@@ -164,7 +182,7 @@ Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创
 >
 >您还可以[在片段本身中插入可视资源（图像）](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)。
 >
->在片段本身中插入的可视资源会附加到片段中的前一段落后面。 这意味着无法在可视资源与前一段落之间放置中间内容。
+>在片段本身中插入的可视资源会附加到片段中的前一段落后面。 这意味着无法在可视资产与前一段落之间放置中间内容。
 
 >[!CAUTION]
 >

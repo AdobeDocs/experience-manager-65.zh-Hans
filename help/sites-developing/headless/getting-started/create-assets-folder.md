@@ -5,16 +5,42 @@ exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '369'
-ht-degree: 81%
-
+ht-degree: 78%
 ---
-
 # 创建Assets文件夹Headless快速入门指南 {#creating-an-assets-folder}
 
-使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。然后，将内容片段存储在资源文件夹中。
+使用 AEM 内容片段模型定义内容片段的结构，也就是 Headless 内容的基础。 然后，将内容片段存储在资源文件夹中。
 
 ## 什么是资源文件夹？ {#what-is-an-assets-folder}
 
@@ -26,27 +52,27 @@ Assets文件夹用于[组织传统内容资源](/help/assets/manage-assets.md)�
 
 ## 如何创建资源文件夹 {#how-to-create-an-assets-folder}
 
-管理员只需要偶尔创建文件夹，在创建内容时用于组织内容。对于本指南快速入门，我们只需要创建一个文件夹。
+管理员只需要偶尔创建文件夹，在创建内容时用于组织内容。 对于本指南快速入门，我们只需要创建一个文件夹。
 
 1. 登录AEM，从主菜单选择&#x200B;**导航> Assets >文件**。
 1. 单击&#x200B;**创建>文件夹**。
 1. 提供文件夹的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
    * **名称**&#x200B;将成为存储库中的节点名称。
-      * 它会根据标题自动生成，并根据 [AEM 命名约定](/help/sites-developing/naming-conventions.md)进行调整。
-      * 如有必要可以调整。
+     * 它会根据标题自动生成，并根据 [AEM 命名约定](/help/sites-developing/naming-conventions.md)进行调整。
+     * 如有必要可以调整。
 
    ![创建文件夹](assets/assets-folder-create.png)
 1. 选择您创建的文件夹，然后从工具栏中选择&#x200B;**属性**（或者使用`p` [键盘快捷键。](/help/sites-authoring/keyboard-shortcuts.md)）
 1. 在&#x200B;**属性**&#x200B;窗口中，选择 **Cloud Services** 选项卡。
-1. 对于&#x200B;**云配置**，选择[您之前创建的配置。](create-configuration.md)
+1. 对于&#x200B;**云配置**，请选择您之前创建的[配置。](create-configuration.md)
    ![配置资源文件夹](assets/assets-folder-configure.png)
 1. 单击&#x200B;**保存并关闭**。
 1. 在确认窗口中单击&#x200B;**确定**。
 
    ![确认窗口](assets/assets-folder-confirmation.png)
 
-您可以在创建的文件夹中创建其他子文件夹。子文件夹将继承父文件夹的&#x200B;**云配置**。但是，如果您希望使用来自其他配置的模型，则可以覆盖此项。
+您可以在创建的文件夹中创建其他子文件夹。 子文件夹将继承父文件夹的&#x200B;**云配置**。 但是，如果您希望使用来自其他配置的模型，则可以覆盖此项。
 
 如果您使用本地化的站点结构，则可以在新文件夹下[创建语言根](/help/assets/multilingual-assets.md)。
 

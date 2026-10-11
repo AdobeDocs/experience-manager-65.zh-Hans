@@ -9,13 +9,27 @@ exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '867'
 ht-degree: 0%
-
 ---
-
 # 自定义搜索模板 {#customizing-search-templates}
 
 >[!NOTE]
@@ -57,9 +71,9 @@ ht-degree: 0%
 
    * 对于您选择的每个Process Element、Task Element和Process Variable，请填写“标准”选项卡底部的相应搜索字段：
 
-      * 从提供的列表中选择关系运算符（如“等于”），并在其旁边的框中指定操作数的值。
-      * （可选）要允许用户更改Workspace中的操作数值，请选择允许用户更改操作数。
-      * （可选）要允许用户更改关系运算符，请选择允许用户选择其他关系运算符。 在显示的列表中，选择用户可用的运算符。
+     * 从提供的列表中选择关系运算符（如“等于”），并在其旁边的框中指定操作数的值。
+     * （可选）要允许用户更改Workspace中的操作数值，请选择允许用户更改操作数。
+     * （可选）要允许用户更改关系运算符，请选择允许用户选择其他关系运算符。 在显示的列表中，选择用户可用的运算符。
 
      **提示**： *如果您选择“进程名称”作为元素，则可以单击操作数字段旁边的图标以显示一个列表，从中可以选择在Forms服务器上运行的进程。 选择流程后，该流程中定义的任何流程变量都可以在“标准”选项卡顶部的“流程变量”下选择。*
 

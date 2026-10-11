@@ -9,13 +9,27 @@ exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 0835dca60d8011ce8660f1e7fdefb2b14ccd6129
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1025'
 ht-degree: 0%
-
 ---
-
 
 # 同步目录 {#synchronizing-directories}
 
@@ -25,7 +39,7 @@ ht-degree: 0%
 
 您还可以设置每日同步计划，以自动将User Management数据库与源目录服务器的更改或更新同步。 但是，此过程使用网络和服务器资源。 选择低使用时间段，并避免安排不必要的同步，从而限制系统和网络资源。 要最大限度地减少不必要的同步，请改用立即同步选项。
 
-您还可以指定在同步域时是否将用户和组信息推送到AdobeLiveCycleContent Services 9（已弃用）。
+您还可以指定在同步域时是否将用户和组信息推送到Adobe LiveCycle Content Services 9（已弃用）。
 
 >[!NOTE]
 >
@@ -37,7 +51,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe®LiveCycle®内容服务ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 Content Services（已弃用）支持于2014年12月31日终止。 请参阅[Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
+>® LiveCycle® Content Services ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 Content Services（已弃用）支持于2014年12月31日终止。 请参阅[Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
 
 ## 启用增量目录同步 {#enable-delta-directory-synchronization}
 
@@ -73,7 +87,7 @@ ht-degree: 0%
 1. 在管理控制台中，单击设置>用户管理>配置>配置高级系统属性。
 1. 在Synch Finisher Cron表达式下，输入一个cron表达式，该表达式表示用户管理重试失败的同步的时间间隔。 cron表达式的使用基于Quartz开源作业调度系统1.4.0版。
 
-   默认值为0 0/13 &amp;amp；ast； ？ &amp;amp；ast； ，这意味着每13分钟进行一次检查。
+   缺省值为0 0/13 &amp;ast； ？ &amp;ast； ，这意味着每13分钟进行一次检查。
 
 ## 手动同步目录 {#manually-synchronize-directories}
 

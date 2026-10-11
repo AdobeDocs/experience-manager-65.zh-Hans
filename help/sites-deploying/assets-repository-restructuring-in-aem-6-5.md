@@ -8,13 +8,22 @@ feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 3%
-
 ---
-
 # AEM 6.5 中的 Assets 存储库重构 {#assets-repository-restructuring-in-aem}
 
 如AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的父存储库重构页面中所述，升级到Adobe Experience Manager (AEM) 6.5的客户应使用此页面评估与影响AEM Assets解决方案的存储库更改相关的工作量。 在AEM 6.5升级过程中，有些更改需要您尽心尽力，而其他更改则可能会推迟到将来升级时再进行。
@@ -77,7 +86,7 @@ ht-degree: 3%
    <td><strong>重组指南</strong></td>
    <td><p>如果客户修改了电子邮件模板，请执行以下操作以与新的存储库结构保持一致：</p>
     <ol>
-     <li><code>/libs/settings/dam/notification</code>电子邮件模板应从<strong><code>/etc/notification/email/default</code></strong>复制到<strong><code>/apps/settings/notification/email/default</code></strong>
+     <li><code>/libs/settings/dam/notification</code>电子邮件模板应从<strong><code>/etc/notification/email/default</code></strong>复制到 <strong><code>/apps/settings/notification/email/default</code></strong>
       <ol>
        <li>由于目标位于<strong> <code>/apps</code></strong>中，因此此更改应保留在SCM中。</li>
       </ol> </li>
@@ -140,7 +149,7 @@ ht-degree: 3%
    <td><strong>重组指南</strong></td>
    <td><p>如果电子邮件模板（<strong>downloadasset</strong>或<strong>transientworkflowcompleted</strong>）已被修改，请按照以下步骤调整为新结构：</p>
     <ol>
-     <li>应将更新的电子邮件模板从<strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong>复制到<strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
+     <li>更新的电子邮件模板应从<strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong>复制到 <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
       <ol>
        <li>由于目标位于<strong> <code>/apps</code></strong>中，因此此更改应保留在SCM中。</li>
       </ol> </li>
@@ -181,7 +190,7 @@ ht-degree: 3%
    <td><strong>重组指南</strong></td>
    <td><p>如果客户修改了电子邮件模板，则要与新的存储库结构保持一致：</p>
     <ol>
-     <li>应将更新的电子邮件模板从<strong><code>/etc/dam/adhocassetshare</code></strong>复制到<strong><code>/apps/settings/dam/adhocassetshare</code></strong>
+     <li>更新的电子邮件模板应从<strong><code>/etc/dam/adhocassetshare</code></strong>复制到 <strong><code>/apps/settings/dam/adhocassetshare</code></strong>
       <ol>
        <li>由于目标位于<strong><code>/apps</code></strong>中，此更改应保留在SCM中。</li>
       </ol> </li>
@@ -214,7 +223,7 @@ ht-degree: 3%
    <td><strong>重组指南</strong></td>
    <td><p>要与新的存储库结构保持一致，请执行以下操作：</p>
     <ol>
-     <li>将所有自定义脚本或修改的脚本从<strong><code>/etc/dam/indesign/scripts</code></strong>复制到<strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
+     <li>将所有自定义脚本或修改的脚本从<strong><code>/etc/dam/indesign/scripts</code></strong>复制到 <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
        <li>在AEM 6.5中，只能通过<strong><code>/libs/settings</code></strong>复制AEM提供的未修改脚本的新脚本或修改的脚本</li>
       </ol> </li>

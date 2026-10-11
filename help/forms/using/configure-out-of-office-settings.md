@@ -5,18 +5,34 @@ exl-id: e4c9d74c-e08d-4675-91f2-4f9fc2f1bcea
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 2%
-
+source-wordcount: '856'
+ht-degree: 1%
 ---
-
 # 配置外出设置 {#configure-out-of-office-settings}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/configure-out-of-office-settings.html) |
 | AEM 6.5 | 本文 |
 
 如果您计划不在办公室，则可以指定在该期间分配给您的物料的情况。
@@ -58,14 +74,14 @@ ht-degree: 2%
    >
    >受让人的顺序很重要。 当将项目分配给启用了外出设置的用户时，将按照添加受分配人的顺序根据指定的受分配人列表评估项目。 当项目与条件匹配时，即会将其分配给被分配人，且不会选中下一个被分配人。
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。该设置将在指定的开始日期和时间生效。 如果您在办公室外时登录，则在更改设置之前，不会将您视为办公室成员。
+1. 选择&#x200B;**[!UICONTROL 保存]**。 该设置将在指定的开始日期和时间生效。 如果您在办公室外时登录，则在更改设置之前，不会将您视为办公室成员。
 
 现在，在“外出”时段分配给您的项目会自动分配给指定的被分配人。
 ![外出](assets/out-of-office.png)
 
 >[!NOTE]
 >
->(仅适用于以Forms为中心的工作流项目)启用工作流中&#x200B;**分配任务**&#x200B;步骤的&#x200B;**允许被分配人使用“外出”设置**&#x200B;选项进行委派。 只有启用了上述选项的项目才会委派给其他用户。
+>（仅适用于以Forms为中心的工作流项目）启用工作流中&#x200B;**分配任务**&#x200B;步骤的&#x200B;**允许被分配人使用“外出”设置**&#x200B;选项进行委派。 只有启用了上述选项的项目才会委派给其他用户。
 
 ## 限制 {#limitations}
 

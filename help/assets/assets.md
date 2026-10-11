@@ -1,18 +1,31 @@
 ---
-title: 简介 [!DNL Adobe Experience Manager Assets]
+title: '[!DNL Adobe Experience Manager Assets] 简介'
 description: 在 Experience Manager 中创建、管理、处理和分发数字资产。 这些指南介绍了最佳实践、辅助功能以及如何使用 AEM 6.5 资源。
 hide: true
 feature: Asset Management
 role: Leader, Developer, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '924'
 ht-degree: 5%
-
 ---
-
 
 # 关于[!DNL Adobe Experience Manager Assets]作为DAM解决方案 {#administering-assets}
 
@@ -67,15 +80,15 @@ AEM [!DNL Assets]是一种数字资源管理(DAM)工具，它是[!DNL Experience
 
 * **元数据** [!DNL Assets]包含元数据；例如，作者、到期日期和DRM信息(Digital Rights Management)。 元数据受访问控制。 [!DNL Assets]支持以下各种现成的通用元数据架构：
 
-   * 都柏林核心：包括作者、描述、日期、主题等。
-   * IPTC：包括事件、模型、位置等。
-   * WCM：包括页面属性、[!UICONTROL 开启时间]和[!UICONTROL 关闭时间]等。
+  * 都柏林核心：包括作者、描述、日期、主题等。
+  * IPTC：包括事件、模型、位置等。
+  * WCM：包括页面属性、[!UICONTROL 开启时间]和[!UICONTROL 关闭时间]等。
 
 * **标记**： [!DNL Assets]可以被标记和分类。 请参阅[组织资产](/help/assets/organize-assets.md)。
 
 * **演绎版**：演绎版是资产的二进制表示形式。 [!DNL Assets]始终具有主要表示形式 — 已上传文件的表示形式。 它们可以具有任意数量的其他表示法，这些表示法是例如通过自定义工作流步骤在上传资产时创建的。 演绎版可以具有不同的尺寸、不同的分辨率、添加的水印或某些其他变化的特征。
 
-* **版本**：版本控制功能在特定时间点创建数字资源的快照。 您可以将资源还原到以前的版本。 查看 [!DNL Assets][&#128279;](manage-assets.md#asset-versioning)中的版本控制。
+* **版本**：版本控制功能在特定时间点创建数字资源的快照。 您可以将资源还原到以前的版本。 查看 [!DNL Assets]&#x200B;[&#128279;](manage-assets.md#asset-versioning)中的版本控制。
 
 * **子资产**：子资产是构成资产的资产，例如[!DNL Adobe Photoshop]文件中的图层或PDF文件中的页面。 在[!DNL Assets]中，您可以像管理资产一样管理子资产。
 

@@ -10,13 +10,20 @@ role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '849'
 ht-degree: 0%
-
 ---
-
 # 配置电子邮件 {#configuring-email}
 
 AEM Communities使用电子邮件执行以下操作：
@@ -36,7 +43,7 @@ AEM Communities使用电子邮件执行以下操作：
 
 * 以管理员权限登录到主发布服务器，并访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)：
 
-   * 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * 找到`Day CQ Mail Service`。
 * 选择编辑图标。
@@ -91,7 +98,7 @@ AEM Communities使用电子邮件执行以下操作：
 
 * 以管理员权限登录到主发布服务器，并访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)
 
-   * 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * 找到`AEM Communities Email Reply Configuration`。
 
@@ -187,7 +194,7 @@ AEM Communities使用电子邮件执行以下操作：
 * **[!UICONTROL 导入到路径]**&amp;ast；
 
   *（必需）*&#x200B;设置为 `/content/usergenerated/mailFolder/postEmails`
-浏览到`postEmails`文件夹并选择&#x200B;**确定**。
+  浏览到`postEmails`文件夹并选择&#x200B;**确定**。
 
 * **[!UICONTROL 以秒为单位的更新时间间隔]**
 
@@ -212,8 +219,8 @@ AEM Communities使用电子邮件执行以下操作：
 * 使用管理员权限登录到主发布服务器，并浏览到[https://&lt;server>：&lt;port>/crx/de/index.jsp#/etc/importers/polling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling)。
 * 选择新创建的配置并修改以下属性：
 
-   * **feedType**：将`pop3s`替换为&#x200B;**`emailreply`**
-   * **源**：将源的协议`pop3s://`替换为&#x200B;**`emailreply://`**
+  * **feedType**：将`pop3s`替换为&#x200B;**`emailreply`**
+  * **源**：将源的协议`pop3s://`替换为&#x200B;**`emailreply://`**
 
 ![轮询协议](assets/polling-protocol.png)
 

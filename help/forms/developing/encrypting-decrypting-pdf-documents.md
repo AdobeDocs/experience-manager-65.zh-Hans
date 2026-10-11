@@ -1,20 +1,33 @@
 ---
 title: 对 PDF 文档进行加密和解密
-
 description: 使用加密服务加密和解密文档。 加密服务任务包括使用密码加密PDF文档，使用证书加密PDF文档，从PDF文档中删除基于密码的加密，从PDF文档中删除基于证书的加密，解锁PDF文档以便可以执行其他服务操作，以及确定安全PDF文档的加密类型。
-
-
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
 solution: Experience Manager, Experience Manager Forms
-
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '8295'
 ht-degree: 0%

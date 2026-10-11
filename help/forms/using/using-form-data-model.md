@@ -8,13 +8,26 @@ feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1268'
-ht-degree: 2%
-
+source-wordcount: '1314'
+ht-degree: 3%
 ---
-
 # 使用表单数据模型{#use-form-data-model}
 
 | 版本 | 文章链接 |
@@ -30,7 +43,7 @@ AEM Forms数据集成让您可以使用不同的后端数据源创建表单数�
 * [AEM Forms数据集成](../../forms/using/data-integration.md)
 * [配置数据源](../../forms/using/configure-data-sources.md)
 * [创建表单数据模型](../../forms/using/create-form-data-models.md)
-* [使用表单数据模型](../../forms/using/work-with-form-data-model.md)
+* [处理表单数据模型](../../forms/using/work-with-form-data-model.md)
 
 表单数据模型是JSON架构的扩展，可用于执行以下操作：
 
@@ -85,7 +98,7 @@ AEM Forms数据集成让您可以使用不同的后端数据源创建表单数�
 
 [交互式通信中的文本](/help/forms/using/texts-interactive-communications.md)
 
-[交互式通信条件](/help/forms/using/conditions-interactive-communications.md)
+[交互式通信中的条件](/help/forms/using/conditions-interactive-communications.md)
 
 [列表片段](/help/forms/using/lists.md)
 

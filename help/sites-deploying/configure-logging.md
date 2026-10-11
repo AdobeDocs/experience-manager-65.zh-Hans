@@ -1,5 +1,5 @@
 ---
-title: 日志记录
+title: 记录
 description: 了解如何为中央日志记录服务配置全局参数、各个服务的特定设置以及如何请求数据记录。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '640'
 ht-degree: 0%
-
 ---
-
-# 日志记录{#logging}
+# 记录{#logging}
 
 通过AEM，您可以配置：
 
@@ -85,19 +94,19 @@ AEM使用以下功能将日志消息写入文件：
 
 * 记录器：
 
-   * Apache Sling可自定义请求数据记录器
+  * Apache Sling可自定义请求数据记录器
 
-     (org.apache.sling.engine.impl.log.RequestLoggerService)
+    (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * 将有关请求内容的消息写入`request.log`。
+  * 将有关请求内容的消息写入`request.log`。
 
 * 链接到：
 
-   * Apache Sling请求记录器
+  * Apache Sling请求记录器
 
-     (org.apache.sling.engine.impl.log.RequestLogger)
+    (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * 将消息写入`request.log`或`access.log`。
+  * 将消息写入`request.log`或`access.log`。
 
 如有必要，可以自定义这些选项，但标准配置适用于大多数安装。
 
@@ -105,24 +114,24 @@ AEM使用以下功能将日志消息写入文件：
 
 * 记录器：
 
-   * Apache Sling日志记录器配置
+  * Apache Sling日志记录器配置
 
-     (org.apache.sling.commons.log.LogManager.factory.config)
+    (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * 将`Information`条消息写入`logs/error.log`。
+  * 将`Information`条消息写入`logs/error.log`。
 
 * 指向作者的链接：
 
-   * Apache Sling日志记录编写器配置
+  * Apache Sling日志记录编写器配置
 
-     (org.apache.sling.commons.log.LogManager.factory.writer)
+    (org.apache.sling.commons.log.LogManager.factory.writer)
 
 * 记录器：
 
-   * Apache Sling日志记录器配置
-(org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+  * Apache Sling日志记录器配置
+    (org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
-   * 将服务`org.apache.pdfbox`的`Warning`消息写入`../logs/error.log`。
+  * 将服务`org.apache.pdfbox`的`Warning`消息写入`../logs/error.log`。
 
 * 未链接到特定的Writer，因此将创建并使用具有默认配置（每日日志轮换）的隐式Writer。
 

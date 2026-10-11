@@ -1,6 +1,6 @@
 ---
-title: 在HTMLWorkspace中使用自适应表单
-description: 了解如何在HTMLWorkspace中使用自适应表单，让字段工作人员能够访问其设备上的表单。
+title: 在 HTML 工作区中使用自适应表单
+description: 了解如何在HTML Workspace中使用自适应表单，让字段工作人员能够访问其设备上的表单。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -9,18 +9,34 @@ exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Workbench
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 36ac8e9c-5c7a-56d8-af5e-39399fd7b101
+    internal-label: Workbench
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '690'
-ht-degree: 0%
-
+source-wordcount: '706'
+ht-degree: 1%
 ---
+# 在 HTML 工作区中使用自适应表单{#using-an-adaptive-form-in-html-workspace}
 
-# 在HTMLWorkspace中使用自适应表单{#using-an-adaptive-form-in-html-workspace}
+JEE上的AEM Forms提供了在HTML Workspace中使用自适应表单的功能。
 
-JEE上的AEM Forms提供了在WorkspaceHTML中使用自适应表单的功能。
-
-由于可以在流程设计期间选择XDP，因此添加了从现有自适应表单AEM存储库中浏览的功能。 此功能使Process Designer能够在“起点”和“任务”中配置自适应表单。
+由于可以在流程设计期间选择XDP，因此添加了从现有自适应表单AEM存储库浏览的功能。 此功能使Process Designer能够在“起点”和“任务”中配置自适应表单。
 
 ## 流程设计经验 {#process-design-experience}
 
@@ -32,11 +48,11 @@ JEE上的AEM Forms提供了在WorkspaceHTML中使用自适应表单的功能。
 
 ### LiveCycle应用程序导出和导入 {#livecycle-application-export-and-import}
 
-由于自适应表单位于AEM存储库中，因此LiveCycle应用程序导出仅包含所用自适应表单的引用。 因此，LiveCycle应用程序的导出和导入是一个两步过程。 LiveCycle应用程序包括进程定义等。 包含自适应表单的单独资源包将作为ZIP文件从AEM导出。 导入时，通过Workbench导入LiveCycle应用程序，通过AEM导入自适应表单。
+由于自适应表单位于AEM存储库中，因此LiveCycle应用程序导出仅包含所用自适应表单的引用。 因此，导出和导入LiveCycle应用程序需要两个步骤。 LiveCycle应用程序包括进程定义等。 包含自适应表单的单独资源包将作为ZIP文件从AEM导出。 导入时，LiveCycle应用程序通过Workbench导入，自适应表单通过AEM导入。
 
-## WorkspaceHTML中自适应表单的用户体验 {#user-experience-of-adaptive-form-in-html-workspace}
+## HTML Workspace中自适应表单的用户体验 {#user-experience-of-adaptive-form-in-html-workspace}
 
-除了可用于移动设备表单的控件外，HTMLWorkspace还提供某些特定于表单的自适应控件。 当用户打开任务或起点时，用户可以在HTMLWorkspace中添加附件、保存、签名、提交和导航自适应表单。 具体情况如下：
+除了可用于移动设备表单的控件之外，HTML Workspace还提供某些特定于表单的自适应控件。 当用户打开任务或起点时，用户可以在HTML Workspace中添加附件、保存、签名、提交和导航自适应表单。 具体情况如下：
 
 1. 要附加文件，请使用任务附件，就像在Mobile Forms中一样。 自适应表单的任何文件附件类型按钮都处于隐藏状态。
 
@@ -46,9 +62,9 @@ JEE上的AEM Forms提供了在WorkspaceHTML中使用自适应表单的功能。
 
 1. **自适应表单全局工具栏可见性**：如果流程Designer隐藏全局/顶级工具栏，则工具栏和按钮不会显示在自适应表单上。
 
-1. **自适应Forms的Workspace导航控件**：“下一个”/“上一个”按钮与WorkspaceHTML中自适应表单的“保存”、“提交”和“路由操作”按钮一起可用。 单击下一个/上一个按钮，以便在HTMLWorkspace中导航自适应表单的面板。 “下一个”/“上一个”按钮提供深层导航，类似于自适应表单的移动视图中的导航控件。
+1. **自适应Forms的Workspace导航控件**：“下一个”/“上一个”按钮与HTML Workspace中自适应表单的“保存”、“提交”和“路由操作”按钮一起可用。 单击下一个/上一个按钮，以便在HTML Workspace中导航自适应表单的面板。 “下一个”/“上一个”按钮提供深层导航，类似于自适应表单的移动视图中的导航控件。
 
-1. **自适应表单的电子签名服务和摘要组件**：摘要组件在HTMLWorkspace中无法正常工作。 换言之，如果自适应表单具有摘要组件，则它在工作区中不可见。 工作区用户不是在电子签名组件中自动提交，而是在HTMLWorkspace中单击提交或路由操作。 签名文档后，该文档将显示为平面签名文档。 单击&#x200B;**提交**&#x200B;或路由操作，以便关闭/完成任务或起点。\
+1. **自适应表单的电子签名服务和摘要组件**：摘要组件在HTML Workspace中无法正常工作。 换言之，如果自适应表单具有摘要组件，则它在工作区中不可见。 工作区用户不会在E-sign组件中单击“自动提交”，而是在HTML Workspace中单击“提交”或“路由”操作。 签名文档后，该文档将显示为平面签名文档。 单击&#x200B;**提交**&#x200B;或路由操作，以便关闭/完成任务或起点。\
    从eSign服务服务器收集已签名的文档，并将数据xml文件转发到流程中的下一步。
 
 ## 在流程设计中使用自适应表单的步骤 {#steps-to-use-adaptive-forms-in-process-design}

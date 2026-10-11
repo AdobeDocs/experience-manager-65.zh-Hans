@@ -5,13 +5,26 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2506'
 ht-degree: 63%
-
 ---
-
 # 创建和组织页面 {#creating-and-organizing-pages}
 
 本节介绍如何使用Adobe Experience Manager (AEM)创建和管理页面，以便您随后能够在这些页面上[创建内容](/help/sites-authoring/editing-content.md)。
@@ -85,13 +98,13 @@ ht-degree: 63%
 
 * **[标题](#title)**：
 
-   * 它会在控制台中向用户显示并在编辑中的页面内容顶部显示。
-   * 此字段为必填字段。
+  * 它会在控制台中向用户显示并在编辑中的页面内容顶部显示。
+  * 此字段为必填字段。
 
 * **[名称](#name)**：
 
-   * 用于生成 URI。
-   * 此字段的用户输入是可选的。 如果未指定，名称会从标题派生。 请参阅以下部分[页面名称限制和最佳实践](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices)，以获取详细信息。
+  * 用于生成 URI。
+  * 此字段的用户输入是可选的。 如果未指定，名称会从标题派生。 请参阅以下部分[页面名称限制和最佳实践](/help/sites-authoring/managing-pages.md#page-name-restrictions-and-best-practices)，以获取详细信息。
 
 #### 页面名称限制和最佳实践 {#page-name-restrictions-and-best-practices}
 
@@ -211,14 +224,14 @@ AEM 附带了一些现成的模板。 可用模板取决于单个网站。 关�
 
    * **标题**：
 
-      * 此字段将显示给用户，是必填字段。
+     * 此字段将显示给用户，是必填字段。
 
    * **名称**：
 
-      * 用于生成 URI。 如果未指定，名称会从标题派生。
-      * 如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证此名称。
+     * 用于生成 URI。 如果未指定，名称会从标题派生。
+     * 如果您在创建页面时提供页面&#x200B;**Name**，AEM [将依据AEM和JCR实行的惯例](/help/sites-developing/naming-conventions.md)验证此名称。
 
-      * 您在&#x200B;**名称**&#x200B;字段中&#x200B;**无法提交无效的字符**。 当 AEM 检测到无效字符时，此字段将会突出显示，并出现一条说明性消息以指示需要删除/替换的字符。
+     * 您在&#x200B;**名称**&#x200B;字段中&#x200B;**无法提交无效的字符**。 当 AEM 检测到无效字符时，此字段将会突出显示，并出现一条说明性消息以指示需要删除/替换的字符。
 
    >[!NOTE]
    >
@@ -343,8 +356,8 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 
    * 使用[列视图](/help/sites-authoring/basic-handling.md#column-view)导航到页面的新位置：
 
-      * 通过单击目标的缩略图选择目标。
-      * 单击&#x200B;**下一步**&#x200B;以继续。
+     * 通过单击目标的缩略图选择目标。
+     * 单击&#x200B;**下一步**&#x200B;以继续。
 
    * 使用&#x200B;**返回**&#x200B;以返回到页面名称指定步骤。
 
@@ -384,8 +397,8 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
 页面移动操作始终以异步方式处理，从而使用户能够不受阻碍地在UI中继续创作。
 
 * 用户必须定义何时应执行异步操作
-   * **现在**：立即开始执行异步作业。
-   * **稍后**：允许用户定义何时开始异步作业。
+  * **现在**：立即开始执行异步作业。
+  * **稍后**：允许用户定义何时开始异步作业。
 
   ![异步页面移动](assets/asynchronous-page-move.png)
 
@@ -415,8 +428,8 @@ AEM 还有一项功能是允许您对引用被重命名页面或被移动页面�
    * **取消**&#x200B;可中止操作
    * **删除**&#x200B;可确认操作：
 
-      * 如果页面没有引用，则页面将被删除。
-      * 如果该页面具有引用，则会出现一个消息框，通知您&#x200B;**一个或多个页面被引用。** 您可以选择&#x200B;**强制删除**&#x200B;或&#x200B;**取消**。
+     * 如果页面没有引用，则页面将被删除。
+     * 如果该页面具有引用，则会出现一个消息框，通知您&#x200B;**一个或多个页面被引用。** 您可以选择&#x200B;**强制删除**&#x200B;或&#x200B;**取消**。
 
 >[!NOTE]
 >

@@ -1,6 +1,6 @@
 ---
 title: 提升启动项
-description: 您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。提升启动页面时，源页面的相应页面将被提升页面的内容替换。
+description: 您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。 提升启动页面时，源页面的对应页面会被替换为提升页面的内容。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -10,16 +10,25 @@ exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '315'
-ht-degree: 56%
-
+ht-degree: 64%
 ---
-
 # 提升启动项{#promoting-launches}
 
-您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。提升启动页面时，源页面的对应页面会被替换为提升页面的内容。提升启动页面时可以做出以下选择：
+您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。 提升启动页面时，源页面的对应页面会被替换为提升页面的内容。 提升启动页面时可以做出以下选择：
 
 * 是只提升当前页面还是提升整个启动项。
 * 是否提升当前页面的子页面。
@@ -49,6 +58,6 @@ ht-degree: 56%
 
 要在提升页面时自动启动工作流，请[为包节点配置工作流启动器](/help/sites-administering/workflows-starting.md#workflows-launchers)。
 
-例如，您可以在作者提升启动页面时自动生成页面激活请求。配置工作流启动器，以在包节点被修改时启动请求激活工作流。
+例如，您可以在作者提升启动页面时自动生成页面激活请求。 配置工作流启动器，以在包节点被修改时启动请求激活工作流。
 
 ![chlimage_1-136](assets/chlimage_1-136.png)

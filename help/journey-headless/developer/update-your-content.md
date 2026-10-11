@@ -5,13 +5,39 @@ exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin, Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 84%
-
 ---
-
 # 如何通过 AEM Assets API 更新您的内容 {#update-your-content}
 
 在 [AEM Headless 开发人员历程](overview.md)的这一部分中，了解如何使用 REST API 访问和更新内容片段的内容。
@@ -30,9 +56,9 @@ ht-degree: 84%
 
 * **受众**：高级
 * **目标**：了解如何使用 REST API 访问和更新内容片段的内容：
-   * 引入 AEM Assets HTTP API。
-   * 引入和讨论 API 中的内容片段支持。
-   * 阐释 API 的详细信息。
+  * 引入 AEM Assets HTTP API。
+  * 引入和讨论 API 中的内容片段支持。
+  * 阐释 API 的详细信息。
 
 <!--
   * Look at sample code to see how things work in practice.
@@ -215,9 +241,9 @@ Associated content is currently not exposed.
 Assets REST API 使用 `/api/assets` 端点并需要资产路径才能访问资产（不带前导 `/content/dam`）。
 
 * 这意味着，要访问以下位置的资产：
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * 您需要请求：
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 例如，要访问 `/content/dam/wknd/en/adventures/cycling-tuscany`，需要请求 `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -247,9 +273,9 @@ API 引用文档中将定义受支持请求的准确格式。
 * 强烈建议您将创建绑定到创作实例（目前无法使用此 API 复制要发布的片段）。
 * 可以通过这两种方式交付，因为 AEM 仅以 JSON 格式提供请求的内容。
 
-   * 来自 AEM 创作实例的存储和交付应足以满足防火墙背后的媒体库应用程序的需求。
+  * 来自 AEM 作者实例的存储和投放应足以满足防火墙背后的媒体库应用程序的需求。
 
-   * 对于实时 Web 交付，建议使用 AEM 发布实例。
+  * 对于实时 Web 交付，建议使用 AEM 发布实例。
 
 >[!CAUTION]
 >
@@ -326,12 +352,12 @@ API 引用文档中将定义受支持请求的准确格式。
 
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 * [内容片段 REST API](/help/assets/assets-api-content-fragments.md)
-   * [API 引用](/help/assets/assets-api-content-fragments.md#api-reference)
+  * [API 引用](/help/assets/assets-api-content-fragments.md#api-reference)
 * [Adobe Experience Manager Assets API — 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
 * [AEM 核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
 * [CORS/AEM介绍](https://helpx.adobe.com/cn/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [视频 — 使用AEM开发CORS](https://helpx.adobe.com/cn/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
 * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-Hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)

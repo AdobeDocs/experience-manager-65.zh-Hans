@@ -11,13 +11,21 @@ thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: a45b09c52d780a954e606d4cae73a3a02a8a6aa4
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2684'
+source-wordcount: '2693'
 ht-degree: 6%
-
 ---
-
 # 样式AEM CIF核心组件 {#style-aem-cif-core-components}
 
 [CIF Venia项目](https://github.com/adobe/aem-cif-guides-venia)是使用[CIF核心组件](https://github.com/adobe/aem-core-cif-components)的参考代码库。 在本教程中，您将检查Venia参考项目，并了解AEM CIF核心组件使用的CSS和JavaScript的组织方式。 您还将使用CSS创建样式以更新&#x200B;**Product Teaser**&#x200B;组件的默认样式。
@@ -59,7 +67,7 @@ ht-degree: 6%
 
 1. 添加必要的OSGi配置以将您的AEM实例连接到Adobe Commerce实例，或将配置添加到新创建的项目。
 
-1. 此时，您应该拥有连接到Adobe Commerce实例的工作中店面版本。 导航到`US` > `Home`页面，网址为： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
+1. 此时，您应该拥有连接到Adobe Commerce实例的工作中店面版本。 导航至`US` > `Home`页面，网址为： [http://localhost:4502/editor.html/content/venia/us/en.html](http://localhost:4502/editor.html/content/venia/us/en.html)。
 
    您应该会看到店面当前使用的是Venia主题。 展开店面的主菜单，您应该会看到各种类别，这表示与Adobe Commerce的连接正在正常工作。
 
@@ -479,7 +487,7 @@ AEM还会尝试缓存客户端库以提高性能。 有时，在代码部署后�
 
 ## 其他资源 {#additional-resources}
 
-* [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
+* [AEM 项目原型模板](https://github.com/adobe/aem-project-archetype)
 * [AEM CIF核心组件](https://github.com/adobe/aem-core-cif-components)
 * [设置本地AEM开发环境](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=zh-hans)
 * [客户端库](/help/sites-developing/clientlibs.md)

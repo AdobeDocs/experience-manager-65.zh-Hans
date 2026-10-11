@@ -4,13 +4,21 @@ description: 使用Turnstile服务轻松增强表单安全性。 里面有分步
 feature: Adaptive Forms, Foundation Components
 role: User, Developer
 exl-id: bed93ce3-89db-477a-8316-7598275e4bca
-source-git-commit: 8025412849a1f324537019247a5e37b7931df7e7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '862'
 ht-degree: 15%
-
 ---
-
 # 将AEM Forms环境与Turnstile连接 {#connect-your-forms-environment-with-turnstile-service}
 
 <span class="preview">此功能基于功能切换ID `FT_FORMS-12407`。 要启用该功能，请按照[启用功能切换](/help/forms/using/enable-feature-toggle.md)文章中给出的步骤操作。</span>
@@ -56,7 +64,7 @@ Cloudflare的Turnstile Captcha是一项安全措施，旨在保护表单和站�
 1. 配置云服务：
    1. 在您的AEM创作实例上，转到![tools-1](assets/tools-1.png) > **[!UICONTROL Cloud Services]**，然后单击&#x200B;**[!UICONTROL Turnstile]**。
       云服务中的![Turnstile](assets/turnstile-in-ui.png)
-   1. 选择已创建或已更新的配置容器，如上一节所述。单击&#x200B;**[!UICONTROL 创建]**。
+   1. 选择已创建或已更新的配置容器，如上一节所述。 单击&#x200B;**[!UICONTROL 创建]**。
       ![配置旋转门](assets/config-hcaptcha.png)
    1. 将&#x200B;**[!UICONTROL 小组件类型]**&#x200B;指定为托管、非交互或不可见。
    1. 提供其他详细信息，如&#x200B;**[!UICONTROL Title]**、**[!UICONTROL Name]**。

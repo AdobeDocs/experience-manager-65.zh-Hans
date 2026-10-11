@@ -9,13 +9,31 @@ role: User, Admin,Developer
 exl-id: b0ac587b-8592-4d37-9ce0-98a0859c367f
 feature: Configuration,Rulesets
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: 9e13e2c2-3788-53ff-a622-b0cb8a3a3622
+    internal-label: Rulesets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '748'
 ht-degree: 0%
-
 ---
-
 # 使用规则集转换URL {#using-rulesets-to-transform-urls}
 
 您可以在Dynamic Media中部署规则集以转换URL。 规则集是以脚本语言（如JavaScript）编写的指令集，用于评估XML数据并在该数据满足特定条件时执行特定操作。 每个规则包括至少一个条件和至少一个操作。 规则根据条件评估XML数据，如果满足条件，则执行相应的操作。 规则集的示例包括：

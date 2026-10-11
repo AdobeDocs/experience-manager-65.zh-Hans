@@ -1,5 +1,5 @@
 ---
-title: JCR集成
+title: JCR 集成
 description: 了解一些需要在JCR级别与Adobe Experience Manager集成时的提示。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 170474c1-c7f4-446c-bda4-84768d44a078
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '303'
-ht-degree: 0%
-
+source-wordcount: '304'
+ht-degree: 1%
 ---
-
-# JCR集成{#jcr-integration}
+# JCR 集成{#jcr-integration}
 
 ## 与JCR API相比，首选Sling资源API {#prefer-the-sling-resource-api-to-jcr-api}
 
@@ -32,4 +41,4 @@ Sling API的工作级别比JCR API更高、更抽象。 这使您的代码可以
 
 ## 消除JCR管理访问权限的使用 {#eliminate-use-of-jcr-admin-access}
 
-自AEM 6起，登录管理功能已弃用，从ResourceResolverFactory获取管理会话的功能也已弃用。 而是应该为需要此类访问权限的后台操作创建服务帐户，并且可以使用ResourceResolverFactory为此帐户获取ResourceResolver。
+从AEM 6开始，登录管理已弃用，从ResourceResolverFactory获取管理会话的方式也已弃用。 而是应该为需要此类访问权限的后台操作创建服务帐户，并且可以使用ResourceResolverFactory为此帐户获取ResourceResolver。

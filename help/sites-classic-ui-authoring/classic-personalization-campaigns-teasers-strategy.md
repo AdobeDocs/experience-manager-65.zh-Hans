@@ -1,5 +1,5 @@
 ---
-title: Teaser和策略
+title: Teaser 和策略
 description: 营销活动通常使用Teaser作为吸引特定访客群体访问专注于其兴趣内容的机制。 为特定营销活动定义了一个或多个Teaser。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,20 +10,31 @@ exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1202'
-ht-degree: 2%
-
+source-wordcount: '1203'
+ht-degree: 3%
 ---
-
-# Teaser和策略{#teasers-and-strategies}
+# Teaser 和策略{#teasers-and-strategies}
 
 营销活动通常使用Teaser作为吸引特定访客群体访问专注于其兴趣内容的机制。 为特定营销活动定义了一个或多个Teaser。
 
 >[!NOTE]
 >
->AEM 6.2现已弃用Teaser组件。请改用[Target组件](/help/sites-authoring/content-targeting-touch.md)。
+>AEM 6.2现已弃用Teaser组件。 请改用[Target组件](/help/sites-authoring/content-targeting-touch.md)。
 
 * **品牌页面**&#x200B;存储在网站的“促销活动”部分。 品牌包含单独的营销活动。
 * **促销活动页面**&#x200B;存储在网站的“促销活动”部分。 每个营销活动都有一个单独的页面，其中包含了Teaser定义。 容器或概述页面还包含有关各个Teaser页面的某些信息和统计信息。
@@ -31,7 +42,7 @@ ht-degree: 2%
 AEM中的Teaser由以下几个部分组成：
 
 * **Teaser页面**&#x200B;存储在相应的营销活动页面下，并保存每个特定营销活动可用的Teaser段落的定义。 在显示Teaser段落时，会使用这些定义；包括内容变体，以及用于选择变体和Boost因子的区段。
-* **Teaser组件**&#x200B;现成可用，允许您在内容页面中创建特定Teaser段落的实例。 您可以从sidekick中拖动Teaser组件，然后指定您的Teaser定义以创建您自己的Teaser段落。 **注意：** AEM 6.2现已弃用Teaser组件。请改用[Target组件](/help/sites-authoring/content-targeting-touch.md)。
+* **Teaser组件**&#x200B;现成可用，允许您在内容页面中创建特定Teaser段落的实例。 您可以从sidekick中拖动Teaser组件，然后指定您的Teaser定义以创建您自己的Teaser段落。 **注意：** AEM 6.2现已弃用Teaser组件。 请改用[Target组件](/help/sites-authoring/content-targeting-touch.md)。
 * **Teaser段落**&#x200B;是内容页面中Teaser的实际实例。 这些功能可吸引部分访客进入专注于其兴趣的内容。
 * 包含营销活动内容的页面侧重于特定访客区段。 通常，Teaser段落会将访客引向此类页面。
 
@@ -111,7 +122,7 @@ AEM中的Teaser由以下几个部分组成：
 
 然后，如果将此变量应用于访客，其中：
 
-* 已成功解析&#x200B;**S1**、**S2和&#x200B;**&#x200B;S6**
+* 已成功解析&#x200B;**S1**、**S2和** S6**
 
 * 标记&#x200B;**marketing**&#x200B;具有三次点击
 * 标记&#x200B;**业务**&#x200B;有六个点击
@@ -235,20 +246,20 @@ Teaser页面/段落用于引导特定访客区段访问关注其兴趣的内容�
 
 >[!NOTE]
 >
->AEM 6.2现已弃用Teaser组件。请改用[Target组件](/help/sites-authoring/content-targeting-touch.md)。
+>AEM 6.2现已弃用Teaser组件。 请改用[Target组件](/help/sites-authoring/content-targeting-touch.md)。
 
 1. 导航到要放置指向活动页面的Teaser段落的内容页面。
-1. 在所需位置添加&#x200B;**Teaser**&#x200B;组件(可在sidekick的&#x200B;**Personalization**&#x200B;部分中找到)。 首次创建时，将显示尚未配置营销活动路径：
+1. 在所需位置添加&#x200B;**Teaser**&#x200B;组件（可在sidekick的&#x200B;**Personalization**&#x200B;部分中找到）。 首次创建时，将显示尚未配置营销活动路径：
 
    ![chlimage_1](assets/chlimage_1.png)
 
 1. 编辑Teaser组件以添加：
 
    * **营销活动路径**
-包含个别Teaser页面的营销活动页面的路径；区段确切决定要显示哪个Teaser。
+     包含个别Teaser页面的营销活动页面的路径；区段确切决定要显示哪个Teaser。
 
    * **[策略](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
-成功解析多个区段时用于选择的方法。
+     成功解析多个区段时用于选择的方法。
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 

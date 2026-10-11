@@ -9,13 +9,20 @@ exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1135'
+source-wordcount: '1154'
 ht-degree: 0%
-
 ---
-
 # 存储资源提供程序概述 {#storage-resource-provider-overview}
 
 ## 简介 {#introduction}
@@ -40,12 +47,12 @@ ht-degree: 0%
 
 ## 关于存储库 {#about-the-repository}
 
-要了解SRP，了解AEM社区站点中AEM存储库(Oak)的角色会很有帮助。
+要了解SRP，了解AEM存储库(Oak)在AEM社区站点中的角色会很有帮助。
 
 **Java™内容存储库(JCR)**
 此标准为内容存储库定义了数据模型和应用程序编程接口([JCR API](https://jackrabbit.apache.org/jcr/jcr-api.html))。 它结合了传统文件系统和关系数据库系统的特点，并添加了内容应用程序通常需要的一些其他功能。
 
-JCR的一个实现是AEM存储库Oak。
+JCR的一个实施是AEM存储库Oak。
 
 **Apache Jackrabbit Oak**
 [Oak](../../help/sites-deploying/platform.md)是JCR 2.0的一种实现，它是一个专为以内容为中心的应用程序而设计的数据存储系统。 它是一种针对非结构化和半结构化数据而设计的分层数据库。 存储库不仅存储面向用户的内容，还存储应用程序使用的所有代码、模板和内部数据。 用于访问内容的UI是[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)。
@@ -56,7 +63,7 @@ JCR和Oak通常用于引用AEM存储库。
 
 对于UGC，内容由公共发布环境中的注册站点访客（社区成员）输入。 这是随机发生的。
 
-对于管理和报告，从专用创作环境访问UGC很有用。 使用SRP时，从Author访问UGC会更加一致，并且会提高性能，因为无需从Publish反向复制到创作。
+对于管理和报告，从专用创作环境访问UGC很有用。 使用SRP时，从“创作”对UGC的访问更一致，并且性能更高，因为无需从“发布”到“创作”进行反向复制。
 
 ## 关于SRP {#about-srp}
 
@@ -70,17 +77,17 @@ JCR和Oak通常用于引用AEM存储库。
 
 ### ASRP {#asrp}
 
-如果存在ASRP，则UGC不会存储在JCR中，而是存储在由Adobe托管和管理的云服务中。 不能使用CRXDE Lite查看或使用JCR API访问存储在ASRP中的UGC。
+如果存在ASRP，则UGC不会存储在JCR中，而是存储在由Adobe托管和管理的云服务中。 无法使用CRXDE Lite查看或使用JCR API访问存储在ASRP中的UGC。
 
-请参阅[ASRP -Adobe存储资源提供程序](asrp.md)。
+请参阅[ASRP - Adobe存储资源提供程序](asrp.md)。
 
 开发人员无法直接访问UGC。
 
-ASRP使用Adobe云进行查询。
+ASRP使用Adobe cloud进行查询。
 
 ### MSRP {#msrp}
 
-如果存在，则MSRP、UGC不存储在JCR中，而是存储在MongoDB中。 可能无法使用CRXDE Lite查看或使用JCR API访问存储在MSRP中的UGC。
+如果存在，则MSRP、UGC不存储在JCR中，而是存储在MongoDB中。 无法使用CRXDE Lite查看或使用JCR API访问存储在MSRP中的UGC。
 
 请参阅[MSRP - MongoDB存储资源提供程序](msrp.md)。
 
@@ -90,13 +97,13 @@ MSRP使用Solr进行查询。
 
 ### JSRP {#jsrp}
 
-JSRP是访问单个AEM实例上所有UGC的默认提供程序。 它可让您快速体验AEM Communities 6.1，而无需设置MSRP或ASRP。
+JSRP是访问单个AEM实例上的所有UGC的默认提供程序。 它可让您快速体验AEM Communities 6.1，而无需设置MSRP或ASRP。
 
 请参阅[JSRP - JCR存储资源提供程序](jsrp.md)。
 
-如果在JCR中存储UGC时存在JSRP，并且在CRXDE Lite和JCR API中可访问UGC，则Adobe建议不要使用JCR API来执行此操作。 如果这样做，则以后的更改可能会影响自定义代码。
+如果在JCR中存储UGC时存在JSRP，并且在CRXDE Lite和JCR API中可访问它，则Adobe建议您不要使用JCR API来这样做。 如果这样做，则以后的更改可能会影响自定义代码。
 
-此外，不共享创作环境和Publish环境的存储库。 虽然发布实例集群会生成共享发布存储库，但在Publish中输入的UGC在Author中不可见，因此无法从作者管理UGC。 UGC仅保留在输入它的实例的AEM存储库(JCR)中。
+此外，不共享创作环境和发布环境的存储库。 虽然发布实例集群导致共享发布存储库，但在发布时输入的UGC在Author上不可见，因此无法从作者管理UGC。 UGC仅保留在输入它的实例的AEM存储库(JCR)中。
 
 JSRP使用Oak索引进行查询。
 

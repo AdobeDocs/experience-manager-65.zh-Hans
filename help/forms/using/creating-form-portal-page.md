@@ -9,13 +9,24 @@ feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: fa155e29-cba2-5e77-9efd-4824be5ce4c8
+    internal-label: Forms Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1702'
 ht-degree: 6%
-
 ---
-
 # 创建表单门户页面{#creating-a-forms-portal-page}
 
 | 版本 | 文章链接 |

@@ -1,6 +1,6 @@
 ---
 title: 编辑页面时的键盘快捷键
-description: 在整个 AEM 环境中都可以使用各种键盘快捷键。有些可应用于编辑页面，另一些可应用于对控制台的使用。
+description: 在整个 AEM 环境中都可以使用各种键盘快捷键。 有些可应用于编辑页面，另一些可应用于对控制台的使用。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -9,16 +9,25 @@ exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '307'
-ht-degree: 14%
-
+source-wordcount: '308'
+ht-degree: 15%
 ---
-
 # 编辑页面时的键盘快捷键{#keyboard-shortcuts-when-editing-pages}
 
-在整个 AEM 环境中都可以使用各种键盘快捷键。某些可应用于编辑页面，其他可应用于控制台[的使用](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)。
+在整个 AEM 环境中都可以使用各种键盘快捷键。 某些可应用于编辑页面，其他可应用于控制台[的使用](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md)。
 
 >[!NOTE]
 >
@@ -69,7 +78,7 @@ ht-degree: 14%
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>剪切选定的段落。<strong><br />注意：</strong>剪切的段落在粘贴到新位置之前不会消失。</td>
+   <td>剪切所选段落。<strong><br /> 注意：</strong>在将剪切的段落粘贴到新位置之前，它不会消失。</td>
   </tr>
   <tr>
    <td> </td>
@@ -94,7 +103,7 @@ ht-degree: 14%
   <tr>
    <td> </td>
    <td><strong><code>Alt-right-click</code></strong></td>
-   <td>强制默认（浏览器）上下文菜单。<br /> <strong>注意：</strong> AEM上下文菜单仅在经典UI中出现。</td>
+   <td>强制使用默认（浏览器）上下文菜单。<br /> <strong>注意：</strong> AEM上下文菜单仅在经典UI中出现。</td>
   </tr>
   <tr>
    <td> </td>

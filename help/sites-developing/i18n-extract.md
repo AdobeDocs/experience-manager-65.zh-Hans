@@ -1,5 +1,5 @@
 ---
-title: 提取字符串以进行翻译
+title: 提取用于翻译的字符串
 description: 使用xgettext-maven-plugin从源代码中提取需要翻译的字符串
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '475'
-ht-degree: 0%
-
+source-wordcount: '482'
+ht-degree: 2%
 ---
-
-# 提取字符串以进行翻译{#extracting-strings-for-translating}
+# 提取用于翻译的字符串{#extracting-strings-for-translating}
 
 使用xgettext-maven-plugin从源代码中提取需要翻译的字符串。 Maven插件会将字符串提取到您发送的XLIFF文件中进行翻译。 将从以下位置提取字符串：
 
@@ -66,10 +75,10 @@ i18n.any文件的/filter部分标识xgettext-maven-plugin工具解析的文件�
 | 前缀 | 效果 |
 |---|---|
 | / | 指示JCR路径。 因此，该前缀与jcr_root目录下的文件匹配。 |
-| &amp;amp；ast； | 指示文件系统中的常规文件。 |
+| &amp;ast； | 指示文件系统中的常规文件。 |
 | 无 | 没有前缀或以文件夹或文件名开头的模式表示文件系统中的常规文件。 |
 
-当在模式中使用时，/字符表示子目录，而&amp;amp；ast；字符匹配所有。 下表列出了几个规则示例。
+当在模式中使用时，/字符表示子目录，&amp;ast；字符与全部匹配。 下表列出了几个规则示例。
 
 <table>
  <tbody>

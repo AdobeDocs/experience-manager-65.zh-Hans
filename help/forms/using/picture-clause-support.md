@@ -1,6 +1,6 @@
 ---
-title: HTML5表单的Picture子句支持
-description: HTML5表单支持XFA Picture子句用于显示日期、文本和数字符号的值以及格式化的值。
+title: HTML5 Forms 的 Picture 子句支持
+description: HTML5 forms支持XFA Picture子句用于显示日期、文本和数字符号的值以及格式化的值。
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,19 +10,34 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '659'
-ht-degree: 0%
-
+source-wordcount: '652'
+ht-degree: 3%
 ---
+# HTML5 Forms 的 Picture 子句支持 {#picture-clause-support-for-html-forms}
 
-# HTML5表单的Picture子句支持 {#picture-clause-support-for-html-forms}
+HTML5 forms支持XFA Picture子句用于显示日期、文本和数字符号的值以及格式化的值。 支持以下Picture子句表达式：
 
-HTML5表单支持XFA Picture子句用于显示日期、文本和数字符号的值以及格式化的值。 支持以下Picture子句表达式：
-
-* category(locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
-* category.subcategory{}
+* 类别（区域设置）{picture-clause} |类别（区域设置）{picture-clause} |类别（区域设置）{picture-clause}
+* 类别子类别{}
 
 >[!NOTE]
 >
@@ -35,9 +50,9 @@ Date Picture子句支持的表达式：
 * date.long{}
 * date.short{}
 * date.medium{}
-* date.full{}
+* 日期。全部{}
 * date.short{}
-* date{date Picture子句符号}
+* 日期{date Picture Clause symbols}
 
 >[!NOTE]
 >
@@ -98,25 +113,25 @@ Date Picture子句支持的表达式：
 
 ## Numeric图片子句 {#numeric-picture-clause}
 
-HTML5表单支持数字图片符号。 但是，PDF forms和HTMLForms之间的支持存在差异。
+HTML5表单支持数字图片符号。 但是，PDF forms与HTML Forms之间的支持存在差异。
 
-在&#x200B;**PDF forms**&#x200B;中，数字的格式与Picture子句中的符号数无关
+在&#x200B;**PDF forms**&#x200B;中，一个数字的格式与Picture子句中的符号数无关
 
-在&#x200B;**HTMLForms**&#x200B;中，仅当数字的位数小于Picture子句中的符号数时，才会格式化该数字。
+在&#x200B;**HTML Forms**&#x200B;中，仅当数字的位数小于Picture子句中的符号数时，才会格式化该数字。
 
 **示例**：考虑使用Picture子句： num{zzz，zzz，zz9}。
 
 在HTML和PDF forms中，数字&#x200B;**10000**&#x200B;的格式均为&#x200B;**10,000**。
 
-数字1000000PDF forms格式为1,000,000。 但是，在HTMLForms中，该数字保持为1000000格式。
+在PDF forms中，数字1000000的格式为1,000,000。 但是，在HTML Forms中，该数字的格式仍为1000000。
 
-**HTMLForms**&#x200B;中Numeric Picture子句支持的表达式包括：
+**HTML Forms**&#x200B;中的Numeric Picture子句支持的表达式包括：
 
 * num.integer{}
 * num.decimal{}
 * num.currency{}
-* num.percent{}
-* num{Numeric Picture子句符号}
+* 数字。%{}
+* 数字{Numeric Picture Clause Symbols}
 
 <table>
  <tbody>
@@ -205,9 +220,9 @@ HTML5表单支持数字图片符号。 但是，PDF forms和HTMLForms之间的�
 
 ## 文本图片子句 {#text-picture-clause}
 
-HTML5表单支持以下Text Picture子句表达式：
+HTML5 Forms支持以下Text Picture子句表达式：
 
-* text{text Picture子句符号}
+* text{text Picture clause symbols}
 
 | **符号** | **解释** |
 |---|---|

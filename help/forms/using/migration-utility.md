@@ -11,13 +11,27 @@ role: Admin,User
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1789'
 ht-degree: 1%
-
 ---
-
 # 迁移 AEM Forms 资产和文档{#migrate-aem-forms-assets-and-documents}
 
 迁移实用程序将[自适应Forms资源](../../forms/using/introduction-forms-authoring.md)、[云配置](/help/sites-developing/extending-cloud-config.md)和[通信管理资源](/help/forms/using/cm-overview.md)从早期版本中使用的格式转换为Adobe Experience Manager (AEM) 6.5 Forms中使用的格式。 运行迁移实用程序时，将迁移以下内容：
@@ -53,13 +67,13 @@ ht-degree: 1%
 
 对于相应的管理资产：
 
-* 对于从上一个平台导入的资产，将添加一个属性： **fd：version=1.0**。
-* 自AEM 6.1 Forms起，无法立即使用注释。 之前添加的注释可在资源中使用，但不会自动在界面中显示。 自定义AEM Forms用户界面中的extendedProperties属性以显示注释。
-* 在某些早期版本(如LiveCycleES4)中，文本是使用Flex RichTextEditor进行编辑的，但由于AEM 6.1 Forms，因此使用HTML编辑器。 由于此渲染和字体外观，字体大小和字体边距可能与创作用户界面中以前的版本不同。 但是，字母在呈现时看起来相同。
-* 文本模块中的列表已得到改进，现在呈现方式有所不同。 视觉上可能有所差异。 Adobe建议您渲染并查看您在文本模块中使用列表的字母。
+* 对于从上一个平台导入的资产，将添加一个属性： **fd:version=1.0**。
+* 自AEM 6.1 Forms起，无法立即使用评论。 之前添加的注释可在资源中使用，但不会自动在界面中显示。 自定义AEM Forms用户界面中的extendedProperties属性以显示注释。
+* 在某些早期版本（如LiveCycle ES4）中，使用Flex RichTextEditor编辑文本，但由于AEM 6.1 Forms，因此使用HTML编辑器。 由于此渲染和字体外观，字体大小和字体边距可能与创作用户界面中以前的版本不同。 但是，字母在呈现时看起来相同。
+* 文本模块中的列表已得到改进，现在呈现方式有所不同。 视觉上可能有所差异。 Adobe建议您渲染并查看在文本模块中使用列表的字母。
 * 由于图像内容模块已转换为DAM资源并在迁移期间将布局和片段添加到表单，因此这些模块的“更新者”属性将更改为“管理员”。
 * 资产的版本历史记录未迁移，且在迁移后不可用。 迁移后的后续版本历史记录将得到维护。
-* 由于AEM 6.1 Forms已弃用“准备就绪Publish”状态，因此“准备就绪Publish”状态的所有资源都将更改为“已修改”状态。
+* 由于AEM 6.1 Forms已弃用发布准备就绪状态，因此所有处于发布准备就绪状态的资源都将更改为已修改状态。
 * 由于用户界面在AEM Forms 6.3中进行了更新，因此执行自定义设置的步骤也有所不同。 如果您是从6.3之前的版本迁移，请重做自定义设置。
 * 布局片段从`/content/apps/cm/layouts/fragmentlayouts/1001`移至`/content/apps/cm/modules/fragmentlayouts`。 资产中的数据字典引用显示数据字典的路径而不是其名称。
 * 必须重新调整用于文本模块中对齐的任何制表符空格。 有关详细信息，请参阅[通信管理 — 使用制表符间距排列文本](https://helpx.adobe.com/aem-forms/kb/cm-tab-spacing-limitations.html)。
@@ -95,11 +109,11 @@ ht-degree: 1%
 
    * 要迁移&#x200B;**资源**，请选择“AEM Forms Assets迁移”，然后在下一个屏幕中选择“开始迁移”**&#x200B;**。 将迁移以下项：
 
-      * 自适应表单
-      * 文档片段
-      * 主题
-      * 书信
-      * 数据字典
+     * 自适应表单
+     * 文档片段
+     * 主题
+     * 书信
+     * 数据字典
 
    >[!NOTE]
    >
@@ -107,36 +121,36 @@ ht-degree: 1%
 
    * 要迁移自适应表单自定义组件，请选择&#x200B;**自适应Forms自定义组件迁移**，然后在“自定义组件迁移”页面中选择&#x200B;**开始迁移**。 将迁移以下项：
 
-      * 为自适应Forms编写的自定义组件
-      * 组件叠加（如果有）。
+     * 为自适应Forms编写的自定义组件
+     * 组件叠加（如果有）。
 
    * 要迁移自适应表单模板，请选择&#x200B;**自适应Forms模板迁移**，然后在“自定义组件迁移”页面中选择&#x200B;**开始迁移**。 将迁移以下项：
 
-      * 使用AEM模板编辑器在`/apps`或`/conf`下创建的自适应表单模板。
+     * 使用AEM模板编辑器在`/apps`或`/conf`下创建的自适应表单模板。
 
-   * 迁移AEM Forms Cloud Configuration Services以使用新的上下文感知云服务模式，其中包括支持触摸的UI（位于`/conf`下）。 迁移AEM Forms云配置服务时，`/etc`中的云服务将移至`/conf`。 如果您没有任何依赖于旧版路径(`/etc`)的Cloud Service自定义设置，Adobe建议您在升级到6.5后运行迁移实用程序；请使用Cloud Configuration Touch UI执行任何进一步的工作。 如果您有任何现有的云服务自定义设置，请在升级后的安装中继续使用经典UI，直到自定义设置更新为与迁移的路径(`/conf`)一致，然后运行迁移实用程序。
+   * 迁移AEM Forms Cloud Configuration Services以使用新的上下文感知云服务模式，其中包括支持触摸的UI（位于`/conf`下）。 迁移AEM Forms云配置服务时，`/etc`中的云服务将移至`/conf`。 如果没有依赖于旧版路径(`/etc`)的云服务自定义设置，Adobe建议您在升级到6.5后运行迁移实用程序；请使用云配置触屏UI执行任何进一步的工作。 如果您有任何现有的云服务自定义设置，请在升级后的安装中继续使用经典UI，直到自定义设置更新为与迁移的路径(`/conf`)一致，然后运行迁移实用程序。
 
    要迁移&#x200B;**AEM Forms云服务**（包括以下服务），请选择AEM Forms云配置迁移（云配置迁移独立于AEMFD兼容包）。 选择AEM Forms云配置迁移，然后在“配置迁移”页面上，选择&#x200B;**开始迁移**：
 
    * 表单数据模型云服务
 
-      * Source路径： `/etc/cloudservices/fdm`
-      * 目标路径： `/conf/global/settings/cloudconfigs/fdm`
+     * Source路径： `/etc/cloudservices/fdm`
+     * 目标路径： `/conf/global/settings/cloudconfigs/fdm`
 
    * Recaptcha
 
-      * Source路径： `/etc/cloudservices/recaptcha`
-      * 目标路径： `/conf/global/settings/cloudconfigs/recaptcha`
+     * Source路径： `/etc/cloudservices/recaptcha`
+     * 目标路径： `/conf/global/settings/cloudconfigs/recaptcha`
 
    * Adobe Sign
 
-      * Source路径： `/etc/cloudservices/echosign`
-      * 目标路径： `/conf/global/settings/cloudconfigs/echosign`
+     * Source路径： `/etc/cloudservices/echosign`
+     * 目标路径： `/conf/global/settings/cloudconfigs/echosign`
 
    * Typekit云服务
 
-      * Source路径： `/etc/cloudservices/typekit`
-      * 目标路径： `/conf/global/settings/cloudconfigs/typekit`
+     * Source路径： `/etc/cloudservices/typekit`
+     * 目标路径： `/conf/global/settings/cloudconfigs/typekit`
 
    在迁移过程中，浏览器窗口会显示以下内容：
 
@@ -156,15 +170,15 @@ ht-degree: 1%
 
 * 要在自定义组件中迁移规则和脚本（如果从6.3升级，则不需要），请选择自适应Forms自定义组件迁移，然后在下一个屏幕中，选择开始迁移。 将迁移以下项：
 
-   * 使用规则编辑器（6.1 FP1及更高版本）创建的规则和脚本
+  * 使用规则编辑器（6.1 FP1及更高版本）创建的规则和脚本
 
-   * 在6.1及更低版本的UI中使用“脚本”选项卡创建的脚本
+  * 在6.1及更低版本的UI中使用“脚本”选项卡创建的脚本
 
 * 要迁移模板（如果从6.3和6.4升级，则不需要），请选择自适应Forms模板迁移，然后在下一个屏幕中选择开始迁移。 将迁移以下项：
 
-   * 旧模板 — 在/apps下使用AEM 6.1 Forms或更低版本创建的自适应表单模板。 这包括模板组件中定义的脚本。
+  * 旧模板 — 在/apps下使用AEM 6.1 Forms或更低版本创建的自适应表单模板。 这包括模板组件中定义的脚本。
 
-   * 新模板 — 使用`/conf`下的模板编辑器创建的自适应表单模板。 这包括迁移使用规则编辑器创建的规则和脚本。
+  * 新模板 — 使用`/conf`下的模板编辑器创建的自适应表单模板。 这包括迁移使用规则编辑器创建的规则和脚本。
 
 ### 运行迁移实用程序后的内部管理任务 {#housekeepingtasks}
 
@@ -177,6 +191,6 @@ ht-degree: 1%
    1. 在最新的Designer中打开XFA文件并保存。 XFA的版本将更新到最新版本。
    1. 在Forms用户界面中上传XFA。
 
-1. Publish迁移前在上一个系统中发布的所有资源。 迁移实用程序仅会更新创作实例上的资源，要更新Publish实例上的资源，您必须发布资源。
+1. 发布迁移前在上一个系统中发布的所有资源。 迁移实用程序仅在创作实例上更新资产，要更新发布实例上的资产，您必须发布资产。
 
 1. 在AEM Forms 6.4和6.5中，更改了Forms用户组的某些权限。 如果您希望您的任何用户能够上传包含脚本的XDP和自适应Forms或使用代码编辑器，则必须将它们添加到forms-power-users组。 同样，模板作者无法在规则编辑器中再使用代码编辑器。 要使用户能够使用代码编辑器，请将其添加到af-template-script-writers组。 有关将用户添加到组的说明，请参阅[管理用户和用户组](/help/communities/users.md)。

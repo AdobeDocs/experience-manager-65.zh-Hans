@@ -1,5 +1,5 @@
 ---
-title: 选择使用Adobe Analytics和Adobe Target
+title: 启用 Adobe Analytics 和 Adobe Target
 description: 了解如何选择使用Adobe Analytics和Adobe Target。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1298'
-ht-degree: 10%
-
+source-wordcount: '1329'
+ht-degree: 9%
 ---
-
-# 选择使用Adobe Analytics和Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
+# 启用 Adobe Analytics 和 Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
 AEM有一个选择加入过程，可帮助您与Adobe Analytics和Adobe Target集成。 这是现成可用的，可作为分配给管理员用户组的预加载任务。
 
@@ -30,7 +39,7 @@ AEM有一个选择加入过程，可帮助您与Adobe Analytics和Adobe Target�
 
 * 选择退出集成。
 
-  如果您希望[手动配置集成](/help/sites-administering/marketing-cloud.md)，请考虑此选项。 另请参阅[使用DTM将AEM与Adobe TargetAdobe Analytics集成](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)。
+  如果您希望[手动配置集成](/help/sites-administering/marketing-cloud.md)，请考虑此选项。 另请参阅[使用DTM将AEM与Adobe Target集成](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html)。
 
 * 使用脚本配置设置和预配。
 
@@ -102,7 +111,7 @@ AEM有一个选择加入过程，可帮助您与Adobe Analytics和Adobe Target�
 
 安装AEM在服务器启动时读取的属性文件，以配置帐户属性以便与Analytics和Target集成。 使用属性文件时，选择加入向导会自动使用文件中的属性，并相应地创建云配置。
 
-属性文件是一个名为marketingcloud.properties的文本文件，该文件保存在AEM进程正在使用的工作目录中（通常与JAR文件相同的目录）。 文件包含以下属性：
+属性文件是一个名为marketingcloud.properties的文本文件，该文件将保存在AEM进程使用的工作目录中（通常与JAR文件相同的目录）。 文件包含以下属性：
 
 * analytics.server：您使用的Analytics数据中心的URL。
 * analytics.company：与您的Analytics用户帐户关联的公司。
@@ -152,17 +161,17 @@ target.password=
 
 在配置与Analytics和Target的集成时，AEM会自动创建所需的云配置和框架。 例如，Analytics云配置称为已设置的Analytics帐户。
 
-您无需更改云配置。 但是，您可以根据需要配置框架。 (请参阅[将组件数据映射到Adobe Analytics属性](/help/sites-administering/adobeanalytics-mapping.md)和[添加Target框架](/help/sites-administering/target.md)。)
+您无需更改云配置。 但是，您可以根据需要配置框架。 （请参阅[将组件数据映射到Adobe Analytics属性](/help/sites-administering/adobeanalytics-mapping.md)和[添加Target框架](/help/sites-administering/target.md)。）
 
 >[!NOTE]
 >
 >默认情况下，当您选择加入 Adobe Target 配置向导时，将启用“准确定位”。
 >
->准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
+>准确定位意味着，云服务配置将等到上下文加载完后，再加载内容。 因此，就性能而言，准确定位可能会导致加载内容前有几毫秒的延迟。
 >
->对于创作实例，“准确定位”始终处于启用状态。但在发布实例上，您可以通过清除云服务配置中“准确定位”旁边的复选标记来选择全局关闭准确定位 (**http://localhost:4502/etc/cloudservices.html**)。无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
+>对于作者实例，“准确定位”始终处于启用状态。 但是，在发布实例上，您可以通过清除云服务配置(**http://localhost:4502/etc/cloudservices.html**)中“准确定位”旁边的复选标记来选择全局关闭准确定位。 无论您在云服务配置中的设置如何，您都可以为各个组件打开和关闭“准确定位”。
 >
->如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。直接对这些组件进行任何更改。
+>如果您&#x200B;***已经***&#x200B;创建目标组件并更改此设置，则您的更改不会影响这些组件。 直接对这些组件进行任何更改。
 
 >[!CAUTION]
 >
@@ -180,9 +189,9 @@ target.password=
 
 * 如果要使用填写了所有必需凭据的&#x200B;**marketingcloud.properties**&#x200B;文件，则必须发送以下参数：
 
-   * `automaticProvisioning`= `true`
-   * `servicename`= `analytics|target`
-   * `path`=用于附加已创建的云服务配置的AEM页面的路径
+  * `automaticProvisioning`= `true`
+  * `servicename`= `analytics|target`
+  * `path`=指向AEM页面的路径，以附加创建的云服务配置
 
   例如，同时创建Analytics和Target配置并将它们附加到we.retail页面的curl请求如下所示：
 
@@ -191,17 +200,17 @@ target.password=
   ```
 
 * 如果您不想使用&#x200B;**marketingcloud.properties**&#x200B;文件，则必须发送凭据和参数。 例如：
-   * automaticProvisioning= `true`
-   * servicename= `analytics|target`
-   * path=用于附加已创建的AEM服务配置的Cloud Service页面的路径；可以定义多个路径
-   * analytics.server= `https://servername`
-   * analytics.company= `Name of company`
-   * analytics.username= `me`
-   * analytics.secret= `secret`
-   * analytics.reportsuite= `we-retail`
-   * target.clientcode= `mycompany`
-   * target.email= `me@adobe.com`
-   * target.password= `password`
+  * automaticProvisioning= `true`
+  * servicename= `analytics|target`
+  * path=path到AEM页面以附加创建的云服务配置；可以定义多个路径
+  * analytics.server= `https://servername`
+  * analytics.company= `Name of company`
+  * analytics.username= `me`
+  * analytics.secret= `secret`
+  * analytics.reportsuite= `we-retail`
+  * target.clientcode= `mycompany`
+  * target.email= `me@adobe.com`
+  * target.password= `password`
 
   在这种情况下，创建Analytics和Target配置并将它们附加到We-Retail页面的curl请求将是：
 

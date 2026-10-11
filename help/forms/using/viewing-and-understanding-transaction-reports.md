@@ -8,20 +8,33 @@ feature: Transaction Reports
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: bcb3e79d-a57e-59a4-ad50-e03803c9f153
+    internal-label: Transaction Reports
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '890'
 ht-degree: 0%
-
 ---
-
 # 在OSGi上查看和了解AEM Forms的交易报表{#viewing-and-understanding-transaction-reports}
 
 通过事务报表，您可以捕获和跟踪已提交的表单、已处理的文档和已渲染文档的数量。 跟踪这些交易背后的目标是针对产品使用情况做出明智的决策，并重新平衡硬件和软件投资。 有关详细信息，请参阅[AEM Forms交易报告概述](../../forms/using/transaction-reports-overview.md)。
 
 ## 设置事务报表  {#setting-up-transaction-reports}
 
-事务报表功能作为AEM Forms附加组件包的一部分提供。 有关在所有创作实例和发布实例上安装附加组件包的信息，请参阅[安装和配置AEM表单](/help/forms/using/installing-configuring-aem-forms-osgi.md)。 安装AEM Forms附加组件包后，请执行以下操作：
+交易报表功能作为AEM Forms附加组件包的一部分提供。 有关在所有创作实例和发布实例上安装附加组件包的信息，请参阅[安装和配置AEM表单](/help/forms/using/installing-configuring-aem-forms-osgi.md)。 安装AEM Forms附加组件包后，请执行以下操作：
 
 * 在所有发布实例上启用反向复制
 * 启用交易报表
@@ -65,7 +78,7 @@ ht-degree: 0%
 
 1. 以管理员身份登录到作者实例。 转到&#x200B;**工具** > **操作** > **Web控制台**。
 1. 找到并打开&#x200B;**Forms事务存储库存储提供程序**&#x200B;服务。
-1. 在&#x200B;**发件箱**&#x200B;字段中指定自定义发件箱的名称。 单击&#x200B;**保存**。将在所有创作实例上创建一个具有指定名称的发件箱。
+1. 在&#x200B;**发件箱**&#x200B;字段中指定自定义发件箱的名称。 单击&#x200B;**保存**。 将在所有创作实例上创建一个具有指定名称的发件箱。
 
 ## 查看事务处理报表 {#viewing-the-transaction-report}
 
@@ -80,13 +93,13 @@ AEM Forms显示自配置日期以来的事务报表，如以下摘要报表中�
 
 ![sample-transaction-report-author](assets/sample-transaction-report-author.png)
 
-* 使用&#x200B;**将日期重置为今天**&#x200B;选项重置事务记录。 如果将日期重置为今天，则所有先前的事务记录都将丢失。 在创作实例上重置日期时，此更改不会影响Publish实例上的交易报表，反之亦然。
-* 使用&#x200B;**显示仅Publish实例的事务**&#x200B;查看仅在配置的发布实例或发布场上发生的所有事务。
+* 使用&#x200B;**将日期重置为今天**&#x200B;选项重置事务记录。 如果将日期重置为今天，则所有先前的事务记录都将丢失。 在创作实例上重置日期时，此更改不会影响“发布”实例上的事务报表，反之亦然。
+* 使用&#x200B;**仅显示发布实例的事务**&#x200B;查看仅在配置的发布实例或发布场上发生的所有事务。
 * 使用类别：**Document Processed**、**Documents Rendered**&#x200B;和&#x200B;**Forms Submitted**&#x200B;查看相应的事务。 有关这些类别中记帐的交易类型，请参阅[可记帐交易报告API](../../forms/using/transaction-reports-billable-apis.md)。
 
 ## 查看交易记录日志 {#view-transaction-reporting-logs}
 
-交易报告会将报告中显示的所有信息和一些附加信息放置在日志中。 日志中提供的信息对高级用户很有帮助。 例如，日志将事务划分为多个粒度类别，而报告中显示了三个整合的类别。 日志位于`/crx-repository/logs/`目录的`error.log`文件中。 即使不从AEM Web控制台启用事务报告，日志也可用。
+交易报告会将报告中显示的所有信息和一些附加信息放置在日志中。 日志中提供的信息对高级用户很有帮助。 例如，日志将事务划分为多个粒度类别，而报告中显示了三个整合的类别。 日志位于`/crx-repository/logs/`目录的`error.log`文件中。 即使未从AEM Web控制台启用事务报表，日志也将可用。
 
 ## 相关文章 {#related-articles}
 

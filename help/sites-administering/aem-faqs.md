@@ -5,13 +5,22 @@ exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '999'
+source-wordcount: '1088'
 ht-degree: 1%
-
 ---
-
 # AEM 常见问题解答 {#aem-faqs}
 
 了解一些AEM故障排除和配置问题的答案。
@@ -49,7 +58,7 @@ ht-degree: 1%
 
 #### 如何审核AEM功能（如登录尝试和ACL或权限更改）？ {#how-to-audit-aem-capabilities-such-as-login-attempts-and-acl-or-permission-changes}
 
-AEM引入了记录管理更改的功能，以便更好地进行故障排除和审核。默认情况下，该信息记录在`error.log`文件中。为了更便于监视，建议将它们重定向到单独的日志文件。
+AEM引入了记录管理更改的功能，以便更好地进行故障排除和审核。 默认情况下，该信息记录在`error.log`文件中。 为了更便于监视，建议将它们重定向到单独的日志文件。
 要将输出重定向到单独的日志文件，请参阅[如何在AEM中审核用户管理操作](/help/sites-administering/audit-user-management-operations.md)。
 
 #### 如何默认启用SSL？ {#how-to-enable-ssl-by-default}
@@ -88,7 +97,7 @@ Adobe Experience Manager (AEM) 6.4随SSL向导提供，并提供用于配置Jett
 
 当您通过Touch UI （**引用** > **更新语言副本**）创建语言副本时，会在新语言下创建新的DAM文件夹，并从中引用资产。
 
-这是现成配置的默认设置。您可以在翻译配置中设置&#x200B;**翻译页面Assets** = **不翻译**。
+这是现成配置的默认设置。 您可以在翻译配置中设置&#x200B;**翻译页面Assets** = **不翻译**。
 对于AEM 6.4，**工具** > **云服务** > **翻译云服务**。
 
 #### 如何禁用会导致AEM SegmentStore (AEM 6.3.1.1)呈指数增长的AEM组件？ {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}

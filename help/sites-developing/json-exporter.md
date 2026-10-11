@@ -1,6 +1,6 @@
 ---
 title: 内容服务的 JSON 导出器
-description: AEM Content Services旨在概括AEM中/来自AEM的内容的描述和交付，而不只是关注网页。 它们使用可供任何客户使用的标准化方法，将内容投放到非传统AEM网页的渠道。
+description: AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，而不只是关注网页。 它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。
 contentOwner: User
 content-type: reference
 topic-tags: components
@@ -9,18 +9,27 @@ exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '411'
-ht-degree: 23%
-
+source-wordcount: '453'
+ht-degree: 43%
 ---
-
 # 内容服务的 JSON 导出器{#json-exporter-for-content-services}
 
 AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，而不只是关注网页。
 
-它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。这些渠道可以包括：
+它们使用可供任何客户使用的标准化方法，将内容投放到非传统 AEM 网页的渠道。 这些渠道可以包括：
 
 * [单页面应用程序](spa-walkthrough.md)
 * 本机移动设备应用程序
@@ -82,15 +91,15 @@ AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，�
 
 * Assets HTTP API
 
-   * [Assets HTTP API](/help/assets/mac-api-assets.md)
+  * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
 * Sling模型：
 
-   * [Sling模型 — 将模型类与自130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)以来的资源类型相关联
+  * [Sling模型 — 自130年起将模型类与资源类型相关联](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * 带有JSON的AEM：
 
-   * [获取JSON格式的页面信息](/help/sites-developing/pageinfo.md)
+  * [以 JSON 格式获取页面信息](/help/sites-developing/pageinfo.md)
 
 ## 相关文档 {#related-documentation}
 

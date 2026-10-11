@@ -1,19 +1,33 @@
 ---
 title: '[!DNL Assets] HTTP API。'
-description: 在 [!DNL Adobe Experience Manager Assets]中使用HTTP API创建、读取、更新、删除和管理数字资源。
+description: 在[!DNL Adobe Experience Manager Assets]中使用HTTP API创建、读取、更新、删除和管理数字资源。
 contentOwner: AG
 role: Developer
 feature: Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 1%
-
 ---
-
 # [!DNL Assets] HTTP API {#assets-http-api}
 
 | 版本 | 文章链接 |

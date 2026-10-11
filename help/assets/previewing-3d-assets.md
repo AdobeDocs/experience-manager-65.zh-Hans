@@ -8,13 +8,22 @@ role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '605'
 ht-degree: 9%
-
 ---
-
 # 在Adobe Experience Manager中预览3D资源 {#previewing-3d-assets-aem}
 
 | 版本 | 文章链接 |
@@ -24,7 +33,7 @@ ht-degree: 9%
 
 Experience Manager支持在创作过程中上传、交付和以交互式方式预览3D资产。
 
-交互式3D查看器可从Experience Manager的资源详细信息页面访问。 该查看器提供了各种控件，其中包括一组交互式相机控件，可让您对 3D 资源执行绕行、缩放和平移操作。
+交互式3D查看器可从Experience Manager的资源详细信息页面访问。 该查看器提供了各种控件，其中包括一组交互式相机控件，可让您对 3D 资产执行旋转、缩放和平移操作。
 
 <!-- See also [Working with 3D assets in Dynamic Media](/help/assets/assets-3d.md). -->
 
@@ -32,14 +41,14 @@ Experience Manager支持在创作过程中上传、交付和以交互式方式�
 
 交互式3D预览支持以下文件格式：
 
-| 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
+| 3D文件扩展名 | 文件格式 | MIME 类型 | 注释 |
 |---|---|---|---|
 | GLB | 二进制GL传输 | model/gltf-binary | |
 | GLTF | GL传输格式 | model/gltf+json | 请参阅下面的&#x200B;**注释**。 |
-| 对象 | WaveFront 3D对象文件 | application/x-tgif | |
+| OBJ | WaveFront 3D对象文件 | application/x-tgif | |
 | STL | 立体成形 | application/vnd.ms-pki.stl | |
 | DN | Adobe Dimension | model/x-adobe-dn | 仅支持摄取；预览不可用。 |
-| USDZ | 通用场景描述Zip存档 | model/vnd.usdz+zip | 仅支持摄取；预览不可用。 |
+| USDZ | Universal Scene Description Zip存档 | model/vnd.usdz+zip | 仅支持摄取；预览不可用。 |
 
 >[!NOTE]
 >
@@ -68,12 +77,12 @@ Experience Manager支持在创作过程中上传、交付和以交互式方式�
 
 1. 在页面的右上角附近，从“视图”下拉列表中选择&#x200B;**[!UICONTROL 卡片视图]**，然后导航到要预览的3D资源。
 
-   ![3D卡选择](/help/assets/assets-dm/3d-card-select.png)
+   ![3D卡片选择](/help/assets/assets-dm/3d-card-select.png)
    _在卡片视图中，选择要预览的3D资源的卡片。_
 
 1. 选择3D资产的卡。
 
-   ![交互式3D预览](/help/assets/assets-dm/3d-preview.png)
+   ![交互式三维预览](/help/assets/assets-dm/3d-preview.png)
    _在资源详细信息视图页面中交互式预览3D资源。_
 1. 在3D资产的资产详细信息视图页面上，执行以下任一操作：
 

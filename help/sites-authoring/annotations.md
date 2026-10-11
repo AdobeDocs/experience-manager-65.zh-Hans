@@ -9,13 +9,26 @@ exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '633'
-ht-degree: 34%
-
+source-wordcount: '636'
+ht-degree: 26%
 ---
-
 # 编辑页面时的批注{#annotations-when-editing-a-page}
 
 向网站页面添加内容时，通常会先进行讨论，然后再实际发布。 为此，您可以添加注释，其中许多与内容直接相关的组件（例如，与布局相反）可以让您添加注释。
@@ -83,8 +96,7 @@ ht-degree: 34%
    * 输入注释文本。
    * 创建草图（线和形状）以突出显示组件的某个区域。
 
-
-     创建草绘时，光标将变为十字线。 您可以绘制多条不同的线。草图线反映注释颜色，可为箭头、圆环或椭圆环。
+     创建草绘时，光标将变为十字线。 您可以绘制多条不同的线。 草图线反映注释颜色，可为箭头、圆环或椭圆环。
 
      ![草图](do-not-localize/screen_shot_2018-03-22at110640.png)
 
@@ -104,13 +116,13 @@ ht-degree: 34%
 
    * 单击文本标记以打开注释。 打开后，即可查看全文、进行更改或删除注释。
 
-      * 不能独立于注释删除草图。
+     * 不能独立于注释删除草图。
 
    * 调整文本标记位置。
    * 单击草绘线以选取该草绘，并将其拖动到所需位置。
    * 移动或复制组件
 
-      * 还将移动或复制任何相关的注释及其草图，并且它们相对于段落的位置将保持不变。
+     * 还将移动或复制任何相关的注释及其草图，并且它们相对于段落的位置将保持不变。
 
 1. 要退出“注释”模式并返回以前使用的模式，请单击顶部工具栏右侧的“注释”图标（x符号）。
 
@@ -120,6 +132,6 @@ ht-degree: 34%
 
 ### 注释指示器 {#annotation-indicator}
 
-在“编辑”模式下不会显示注释，但工具栏右上方的徽章会显示当前页面存在的注释数。该徽章取代了默认的“注释”图标，但还可用作打开/关闭“注释”模式的快速链接：
+在“编辑”模式下不会显示注释，但工具栏右上方的徽章会显示当前页面存在的注释数。 徽章取代了默认的“注释”图标，但还可用作在“注释”模式下切换的快速链接：
 
 ![批注指示器](assets/chlimage_1-242.png)

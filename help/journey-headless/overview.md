@@ -5,13 +5,31 @@ exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Developing,Content Fragments
 role: Admin, Developer
-source-git-commit: 050049f22d329d3af0cfc8fa4bbb12fe7f99b5fc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '457'
+source-wordcount: '459'
 ht-degree: 57%
-
 ---
-
 # AEM Headless 历程 {#aem-headless-journeys}
 
 这里概述了可用的引导式历程，让您了解AEM强大的Headless功能。
@@ -20,7 +38,7 @@ ht-degree: 57%
 
 Headless 实施对于向受众提供体验而言变得越来越重要，无论他们身在何处以及渠道如何。
 
-Headless 实施放弃了传统的全栈解决方案中的页面和组件管理，专注于创建渠道中性的、可重用的内容片段，以及它们的跨渠道交付。这是一种现代化的动态开发模式，用于实施数字体验。
+Headless 实施放弃了传统的全栈解决方案中的页面和组件管理，专注于创建渠道中性的、可重用的内容片段，以及它们的跨渠道交付。 这是一种现代化的动态开发模式，用于实施数字体验。
 
 如果您不熟悉AEM和/或Headless，AEM的Headless历程是您开始通过叙述方式了解理论和技术的绝佳地方，从而以Headless方式解决各种业务问题。
 
@@ -40,7 +58,7 @@ Headless历程专为不同的角色而设计，从不同的角度列出了实施
 
 虽然历程中的信息可能对多个用户画像都很有用，但历程针对的是某个特定用户画像，因此某些信息对某些角色而言可能是多余的。
 
-## Headless 历程  {#headless-journeys}
+## Headless 历程 {#headless-journeys}
 
 以下文档历程可用于Headless主题。
 

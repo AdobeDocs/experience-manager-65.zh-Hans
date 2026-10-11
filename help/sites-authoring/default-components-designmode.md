@@ -5,13 +5,26 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '905'
-ht-degree: 10%
-
+source-wordcount: '912'
+ht-degree: 12%
 ---
-
 # 在设计模式下配置默认组件{#configuring-components-in-design-mode}
 
 现成安装AEM实例后，组件浏览器中会立即显示一组组件选项。
@@ -43,7 +56,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->有关[的详细信息，请参阅](/help/sites-developing/components.md)开发组件[和](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)使用模板和组件的准则`parsys`。
+>有关`parsys`的详细信息，请参阅[开发组件](/help/sites-developing/components.md)和[使用模板和组件的准则](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components)。
 
 >[!CAUTION]
 >
@@ -136,7 +149,7 @@ ht-degree: 10%
 
    **功能**
 
-   通过&#x200B;**功能**&#x200B;选项卡，您可以启用或禁用该组件的其他功能。 例如，对于图像组件，您可以定义图像的方向、可用的裁切选项以及是否可以上传图像。
+   **功能**&#x200B;选项卡让您启用或禁用组件的其他功能。 例如，对于图像组件，您可以定义图像的方向、可用的裁切选项以及是否可以上传图像。
 
    **样式**
 

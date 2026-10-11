@@ -1,24 +1,32 @@
 ---
-title: 迁移到AEM Commerce integration framework (CIF)加载项
-description: 如何从旧版本迁移到AEM Commerce integration framework (CIF)加载项。
+title: 迁移到AEM Commerce Integration Framework (CIF)加载项
+description: 如何从旧版本迁移到AEM Commerce Integration Framework (CIF)加载项。
 exl-id: c6c0c2fc-6cfa-4c64-b3d8-7e428b2a4b2e
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: b4056a4c1483dc8dcedc3c0f8f6b42f8dead0847
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '262'
-ht-degree: 4%
-
+source-wordcount: '322'
+ht-degree: 5%
 ---
-
 # Experience Manager加载项的迁移指南 {#cif-migration}
 
 本指南帮助确定您需要为Experience Manager加载项迁移更新的区域。
 
 ## CIF加载项
 
-CIF加载项可通过[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&amp;2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&amp;2_group.propertyvalues.operation=equals&amp;2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=16)用于AEM 6.5。 它是兼容的，提供了与适用于Experience Manager as a Cloud Service的CIF加载项相同的功能。
+CIF加载项可通过[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?fulltext=commerce*&2_group.propertyvalues.property=.%2Fjcr%3Acontent%2Fmetadata%2Fdc%3Aversion&2_group.propertyvalues.operation=equals&2_group.propertyvalues.0_values=target-version%3Aaem%2F6-5&orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&orderby.sort=desc&layout=list&p.offset=0&p.limit=16)用于AEM 6.5。 它是兼容的，提供了与适用于Experience Manager as a Cloud Service的CIF加载项相同的功能。
 
 请参阅[AEM内容和Commerce快速入门](getting-started.md)。
 

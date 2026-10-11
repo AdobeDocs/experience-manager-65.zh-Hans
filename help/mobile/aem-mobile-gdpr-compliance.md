@@ -6,13 +6,17 @@ exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '683'
-ht-degree: 0%
-
+source-wordcount: '707'
+ht-degree: 2%
 ---
-
 # AEM Mobile - GDPR就绪 {#aem-mobile-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -23,13 +27,13 @@ ht-degree: 0%
 
 ## AEM Mobile GDPR支持 {#aem-mobile-gdpr-support}
 
-AEM Mobile随时准备帮助客户履行其GDPR合规义务。 AEM Mobile中未存储任何个人数据。 如果已配置，您可以使用Adobe ID登录AdobeExperience Mobile 。
+AEM Mobile随时准备帮助客户履行其GDPR合规义务。 AEM Mobile中未存储任何个人数据。 如果已配置，您可以使用Adobe ID登录到Adobe Experience Mobile 。
 
 <!-- [https://aemmobile.adobe.com/signin/index.html](https://aemmobile.adobe.com/signin/index.html) -->
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe的数字发布产品(在AEM Mobile之前)支持Adobe的GDPR准备工作。 请参阅[https://business.adobe.com/cn/privacy/general-data-protection-regulation.html](https://business.adobe.com/cn/privacy/general-data-protection-regulation.html)。 下面提供了有关在Digital Publishing Suite产品中支持GDPR相关功能的详细信息，包括如何与Adobe合作来启动GDPR请求。
+Adobe的数字发布产品（在AEM Mobile之前）支持Adobe的GDPR准备工作。 请参阅[https://business.adobe.com/cn/privacy/general-data-protection-regulation.html](https://business.adobe.com/cn/privacy/general-data-protection-regulation.html)。 下面提供了有关在Digital Publishing Suite产品中支持GDPR相关功能的具体信息，包括如何与Adobe合作启动GDPR请求。
 
 要确保不会将AEM Mobile与旧版Digital Publishing Suite产品混淆，您可以在此处登录Digital Publishing Suite产品：
 
@@ -37,7 +41,7 @@ Adobe的数字发布产品(在AEM Mobile之前)支持Adobe的GDPR准备工作。
 
 ### 启动GDPR请求 {#initiating-a-gdpr-request}
 
-请联系Adobe客户关怀团队，以便您可以为该Digital Publishing Suite启动GDPR请求。
+请联系Adobe客户关怀部门，以便您能够启动针对Digital Publishing Suite的GDPR请求。
 
 查找客户数据需要以下ID。 收到的任何子集意味着其他ID不适用于此用户。
 
@@ -51,15 +55,15 @@ Adobe的数字发布产品(在AEM Mobile之前)支持Adobe的GDPR准备工作。
 * 对于Windows应用用户，最终用户的App Store ID： *dpsc-windowsAppStoreId*
 * 最终用户用于与DPS应用程序交互的电子邮件地址： *电子邮件*
 
-### 常见问题解答(FAQ) {#frequently-asked-questions-faq}
+### 常见问题解答（FAQ） {#frequently-asked-questions-faq}
 
-**启动Adobe请求时，DELETE是否正在删除我的App Store购买项目？**
+**启动DELETE请求时，Adobe是否删除我的App Store购买项目？**
 
-Adobe会删除与应用商店购买（订阅等）相关的信息，但购买行为仍会记录在应用商店中。 如果应用程序（最终用户）已登录到应用商店，则会再次提取这些回执，并将其发送给Adobe。 稍后，这些内容会被视为新购买，并由应用程序恢复，然后再次访问。
+Adobe会删除其拥有的应用商店购买信息（订阅等），但购买行为仍会在应用商店中记录。 如果应用程序（最终用户）已登录到应用商店，则会再次提取这些回执，并将其发送到Adobe。 稍后，这些内容会被视为新购买，并由应用程序恢复，然后再次访问。
 
-**启动DELETEAdobe时请求是否正在删除客户提供的权利？**
+**在启动DELETE请求时，Adobe是否删除客户提供的权利？**
 
-Adobe删除其拥有的客户额外直接权利津贴信息。 如果应用程序（最终用户）登录到客户使用的OAuth机制，则会向Adobe发送信息，然后服务会再次获取额外权利。
+Adobe会删除它所拥有的客户额外直接权利津贴的信息。 如果应用程序（最终用户）登录到客户使用的OAuth机制，则会向Adobe发送信息，然后服务会再次获取额外权利。
 
 **最终用户需要什么？**
 
@@ -67,7 +71,7 @@ Adobe删除其拥有的客户额外直接权利津贴信息。 如果应用程�
 
 **当设备上的人员共享某个应用程序时，会发生什么情况？**
 
-Adobe具有最少的信息，可直接关联回特定用户。 它使用随机创建的UUID关联数据，该UUID保留在应用程序数据中，并在应用程序发起的每个请求中传递。 这意味着在同一设备上共享应用程序的最终用户使用的是相同的UUID，并且所有数据都被视为归GDPR请求人所有。 对于访问和删除请求，DPSC都将共享应用程序的人员视为一个人。
+Adobe几乎没有直接关联回特定用户的信息。 它使用随机创建的UUID关联数据，该UUID保留在应用程序数据中，并在应用程序发起的每个请求中传递。 这意味着在同一设备上共享应用程序的最终用户使用的是相同的UUID，并且所有数据都被视为归GDPR请求人所有。 对于访问和删除请求，DPSC都将共享应用程序的人员视为一个人。
 
 **Analytics跟踪了哪些个人数据？**
 
@@ -75,13 +79,13 @@ Adobe具有最少的信息，可直接关联回特定用户。 它使用随机�
 
 **最终用户提供了其信息，但未找到任何内容。 为什么不？**
 
-随着Digital Publishing Suite产品的发展，服务实现发生了变化，更多数据被混淆。 如果使用用户提供的数据未找到任何数据，则意味着用户的数据无法跟踪回该人员。
+随着Digital Publishing Suite产品的不断发展，服务实现发生了变化，并且更多数据被混淆。 如果使用用户提供的数据未找到任何数据，则意味着用户的数据无法跟踪回该人员。
 
 ### 示例 {#example}
 
-请联系Adobe客户关怀团队，以便您发出GDPR请求。
+请联系Adobe客户关怀团队，以便您能够启动GDPR请求。
 
-以下是Digital Publishing SuiteGDPR请求的输入和结果输出示例：
+以下是Digital Publishing Suite GDPR请求的输入和结果输出示例：
 
 #### 输入： {#inputs}
 

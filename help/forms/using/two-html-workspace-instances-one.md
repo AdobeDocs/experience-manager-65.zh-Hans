@@ -1,6 +1,6 @@
 ---
-title: 在一台服务器上托管两个AEM Forms工作区实例
-description: LC管理员如何自定义HTMLWS，以便在可以通过不同URL访问的单个服务器上托管两个实例。
+title: 在同一服务器上托管两个 AEM Forms 工作区实例
+description: LC管理员如何自定义HTML WS，以便在可以通过不同URL访问的单个服务器上托管两个实例。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,14 +8,32 @@ exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '302'
-ht-degree: 0%
-
+ht-degree: 5%
 ---
-
-# 在一台服务器上托管两个AEM Forms工作区实例 {#hosting-two-aem-forms-workspace-instances-on-one-server}
+# 在同一服务器上托管两个 AEM Forms 工作区实例 {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
 AEM Forms的默认安装和设置只允许服务器上有一个AEM Forms工作区。 但是，您可能需要在一台AEM Forms服务器上托管两个不同的AEM Forms工作区实例。 这两个实例可以通过不同的URL进行访问。
 

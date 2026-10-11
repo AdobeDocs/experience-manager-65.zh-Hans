@@ -15,25 +15,35 @@ autotag-review: '2026-05-18T18:37:44.170Z'
 TQID: 'https://experienceleague.adobe.com/ePAqMpipETShCgP-zIuOJjvkopRXp77eHxrGlgBC1SQ'
 product_v2:
   - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
 feature_v2:
   - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: d8ea7e82-d45e-442f-bb04-b3788a7abcb0
+    internal-label: Video profiles
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
+    internal-label: Experienced
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
+    internal-label: Metadata
   - id: bbbea26f-9621-49eb-9ab8-e06fb3bbce8c
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Artificial intelligence
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: 3779
+source-wordcount: '3789'
 ht-degree: 8%
-
 ---
-
 # 视频配置文件 {#video-profiles}
 
 Dynamic Media已随附预定义的自适应视频编码配置文件。 此现成配置文件中的设置已经过优化，可为客户提供最佳观看体验。 当您使用自适应视频编码配置文件对主要源视频进行编码时，视频播放器在播放期间会根据客户的Internet连接速度自动调整视频流的质量。 此功能称为自适应比特率流。
@@ -237,13 +247,13 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 1. 执行以下操作：
    * 在&#x200B;**[!UICONTROL 宽度]**&#x200B;字段中，输入&#x200B;**[!UICONTROL 自动]**。
    * 在&#x200B;**[!UICONTROL 高度]**&#x200B;字段中，输入像素值。
-为了帮助您可视化视频大小，请选择“高度”的信息图标以打开&#x200B;**[!UICONTROL 大小计算器]**&#x200B;页面。 使用&#x200B;**[!UICONTROL 大小计算器]**&#x200B;页面可进一步按需设置视频尺寸（蓝框）。 完成后，在对话框的右上角，选择&#x200B;**[!UICONTROL X]**。
+     为了帮助您可视化视频大小，请选择“高度”的信息图标以打开&#x200B;**[!UICONTROL 大小计算器]**&#x200B;页面。 使用&#x200B;**[!UICONTROL 大小计算器]**&#x200B;页面可进一步按需设置视频尺寸（蓝框）。 完成后，在对话框的右上角，选择&#x200B;**[!UICONTROL X]**。
 1. （可选）执行以下操作之一：
 
    * 选择&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡，并确保选中&#x200B;**[!UICONTROL 使用默认值]**&#x200B;复选框（推荐）。
 
    * 清除&#x200B;**[!UICONTROL 使用默认值]**&#x200B;复选框，并指定所需的视频设置和音频设置。
-选择每个选项旁边的信息图标，以了解基于所选视频格式编解码器的其他说明或推荐的设置。
+     选择每个选项旁边的信息图标，以了解基于所选视频格式编解码器的其他说明或推荐的设置。
 
 1. 在页面的右上角，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存预设。
 1. 执行下列操作之一：
@@ -362,7 +372,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 1. 在“视频配置文件”页面上，检查一个视频配置文件名称。
 1. 在工具栏上，选择&#x200B;**[!UICONTROL 复制]**。
 1. 在视频编码配置文件页面上，输入配置文件的新名称。
-1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。 选择信息图标以获取自适应比特率流的描述。 （如果要复制渐进式视频轮廓，请勿选中此复选框。）
+1. 作为最佳实践，请确保选中“自 **[!UICONTROL 适应流播放的编码]** ”复选框。 选择信息图标以获取自适应比特率流的描述。 （如果要复制渐进式视频配置文件，请勿选中此复选框。）
 
    在Dynamic Media — 混合模式下，如果WebM视频预设是视频配置文件的一部分，则无法为自适应流进行&#x200B;**[!UICONTROL 编码]**，因为所有预设都必须是MP4。
 1. 在“视频编码预设”标题下，添加、编辑或删除构成配置文件的视频编码预设。
@@ -394,7 +404,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 
 ### 将视频配置文件应用到特定文件夹 {#applying-video-profiles-to-specific-folders}
 
-您可以从“工具”菜单中将视频轮廓应用到 **[!UICONTROL 文件夹]** ，或者如果您在文件夹中，也可以从“属 **[!UICONTROL 性”]**。 本节将介绍这两种将视频轮廓应用到文件夹的方法。
+您可以从“工具”菜单中将视频轮廓应用到 **[!UICONTROL 文件夹]** ，或者如果您在文件夹中，也可以从“属 **[!UICONTROL 性”]**。 本节将介绍这两种将视频配置文件应用到文件夹的方法。
 
 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
@@ -414,7 +424,7 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，然后从下拉菜单中选择配置文件，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
 
    ![chlimage_1-518](assets/chlimage_1-518.png)
-您可以[监视视频配置文件处理作业](#monitoring-the-progress-of-an-encoding-job)的进度。
+   您可以[监视视频配置文件处理作业](#monitoring-the-progress-of-an-encoding-job)的进度。
 
 ### 全局应用视频配置文件 {#applying-a-video-profile-globally}
 
@@ -453,4 +463,4 @@ Dynamic Media已随附预定义的自适应视频编码配置文件（MP4 H.264�
 
 1. 选择Experience Manager徽标并导航到&#x200B;**[!UICONTROL Assets]**，然后导航到要将视频配置文件从中删除的文件夹。
 1. 在文件夹中，选择复选标记，然后选择&#x200B;**[!UICONTROL 属性]**。
-1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，然后从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了轮廓，则文件夹名称正下方会显示轮廓的名称。
+1. 选择&#x200B;**[!UICONTROL 视频配置文件]**&#x200B;选项卡，然后从下拉菜单中选择&#x200B;**[!UICONTROL 无]**，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。 如果文件夹已经分配了配置文件，则文件夹名称正下方会显示配置文件的名称。

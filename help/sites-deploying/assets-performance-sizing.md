@@ -1,5 +1,5 @@
 ---
-title: Assets Performance指南
+title: 资产性能指南
 description: 了解如何为新的数字资产管理(DAM)设置确定最佳硬件大小以及如何排查性能问题
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: fbe15e1b-830b-4752-bd02-0d239a90bc68
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1205'
-ht-degree: 0%
-
+source-wordcount: '1224'
+ht-degree: 5%
 ---
-
-# Assets Performance指南{#assets-performance-guide}
+# 资产性能指南{#assets-performance-guide}
 
 在性能很重要的情况下，通常使用数字资产管理(DAM)。 但是，典型的DAM设置包含多个可能会影响性能的硬件和软件组件。 本文档提供了以下内容：
 
@@ -31,7 +40,7 @@ ht-degree: 0%
 
 交互性能以页面响应时间来衡量。 这是从接收HTTP请求到关闭HTTP响应所花费的时间，可以从请求日志文件确定该时间。 典型的目标性能是页面响应时间少于两秒。
 
-**2。资源处理**&#x200B;资源处理问题是，当用户上传资源时，需要几分钟才能将资源轻松转换并摄取到Adobe Experience Manager (AEM) DAM中。
+**2. 资源处理**&#x200B;资源处理问题是，当用户上传资源时，需要几分钟才能将资源轻松转换并摄取到Adobe Experience Manager (AEM) DAM中。
 
 资产处理性能的测量依据是平均工作流处理完成时间。 从调用资产更新工作流流程到完成该流程所用的时间，可以从工作流报表用户界面中确定。 典型的Target性能取决于处理的资源大小和类型以及演绎版的数量。 目标性能的示例可能如下所示：
 
@@ -39,11 +48,11 @@ ht-degree: 0%
 * 对于使用标准演绎版小于100 MB的图像，时间不到一分钟
 * 小于5分钟的高清视频剪辑小于1分钟
 
-**3。 下载速度**&#x200B;从AEM DAM下载时吞吐量问题比较长，浏览DAM管理员或DAM Finder时不会立即显示缩略图。
+**3. 下载速度**&#x200B;从AEM DAM下载时吞吐量问题比较长，浏览DAM管理员或DAM Finder时不会立即显示缩略图。
 
 吞吐量性能是以每秒千位下载速率来衡量的。 对于100个并发下载，典型的目标性能为300 Kbps。
 
-**4。 影响资产处理性能的因素**
+**4. 影响资产处理性能的因素**
 
 要能够估计处理资产所需的硬件，应该考虑以下方面：
 
@@ -57,11 +66,11 @@ ht-degree: 0%
 
 DAM流程非常适合于大量并行执行。 批量上传资产和多核处理器可加快每个资产的绝对逗留时间。
 
-**5。 正在估算执行资产处理的硬件需求**
+**5. 正在估算执行资产处理的硬件需求**
 
-广泛处理数字资产需要优化的硬件资源，最相关的因素是图像大小和已处理图像的峰值吞吐量。
+对数字资产进行大量处理时，需要优化硬件资源；最相关的因素包括图像尺寸与峰值处理吞吐量。
 
-分配至少16 GB的栈并将[!UICONTROL DAM更新资产]工作流配置为使用[Camera Raw包](/help/assets/camera-raw.md)摄取原始图像。
+至少分配 16 GB 的堆内存，并将 [!UICONTROL DAM 更新资产]工作流配置为在摄取 RAW 图像时使用 [Camera Raw 包](/help/assets/camera-raw.md)。
 
 ## 了解系统 {#understanding-the-system}
 

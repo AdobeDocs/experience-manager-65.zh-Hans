@@ -8,13 +8,26 @@ feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3826'
 ht-degree: 1%
-
 ---
-
 # 数据字典{#data-dictionary}
 
 ## 简介 {#introduction}
@@ -199,7 +212,7 @@ ht-degree: 1%
 1. 创建数据条目后，您可以在预览包含测试数据的信件时使用此XML文件。
 
    您可以添加包含DD的测试数据（选择DD并选择上载测试数据并上载此xml文件）
-因此，在这之后，当您正常预览信件时（不是自定义），此XML数据将在信件中使用。 您还可以选择自定义，然后上载此XML。
+   因此，在这之后，当您正常预览信件时（不是自定义），此XML数据将在信件中使用。 您还可以选择自定义，然后上载此XML。
 
 ## 示例 {#samples}
 

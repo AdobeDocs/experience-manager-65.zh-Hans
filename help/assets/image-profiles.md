@@ -9,13 +9,27 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 7c1aeec18f35b019a63d0385ada248b26a0df9de
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3063'
+source-wordcount: '3098'
 ht-degree: 4%
-
 ---
-
 # Dynamic Media 图像轮廓 {#image-profiles}
 
 上传图像时，您可以通过将图像配置文件应用到文件夹来在上传时自动裁切图像。
@@ -61,9 +75,9 @@ ht-degree: 4%
 
 | 选项 | 何时使用 | 描述 |
 | --- | --- | --- |
-| 像素裁剪 | 仅根据尺寸批量裁切图像。 | 要使用此选项，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 像素裁切]**。<br><br>若要从图像侧面裁切，请输入要从图像任何侧面或每侧面裁切的像素数。 裁切图像的数量取决于图像文件中的ppi（每英寸像素数）设置。<br><br>图像配置文件像素裁切按以下方式呈现：<br>·值为“顶部”、“底部”、“左侧”和“右侧”。<br>·左上角被视为`0,0`，像素裁切将从此处计算。<br>·裁切起点：左为X，上为Y<br>·水平计算：原始图像的水平像素维度减去Left，再减去Right。<br>·垂直计算：垂直像素高度减去“顶部”，然后减去“底部”。<br><br>例如，假设您有4000 x 3000像素的图像。 您可以使用以下值：Top=250、Bottom=500、Left=300、Right=700。<br><br>从左上(300,250)裁切，使用填充空间（4000-300-700、3000-250-500或3000,2250）。 |
-| 智能裁剪 | 根据视觉焦点批量裁切图像。 | 智能裁剪利用Adobe人工智能的强大功能快速批量自动裁剪图像。 智能裁切会自动检测并裁切到任何图像中的焦点，以捕获预期的目标点，而不管屏幕大小如何。</p> <p>要使用智能裁切，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 智能裁切]**，然后启用（打开）响应式图像裁切的右侧。</p> <p>大型、Medium和小型的默认断点大小通常涵盖大部分图像在移动设备和平板电脑设备、桌面和横幅上使用的完整大小。 如果需要，可以编辑“大”、“Medium”和“小”的默认名称。</p> <p>要添加更多断点，请选择&#x200B;**[!UICONTROL 添加裁切]**&#x200B;以删除裁切，选择“垃圾桶”图标。 |
-| 颜色和图像样本 | 批量为每个图像生成图像样本。 | **注意**： Dynamic Media Classic不支持智能色板。<br><br>从显示颜色或纹理的产品图像自动定位并生成高质量色板。<br><br>要使用颜色和图像样本，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 智能裁切]**，然后在颜色和图像样本的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入一个像素值。<br><br>虽然所有图像裁剪都可以从“呈现版本”边栏中使用，但样本只能通过“复制URL”功能使用。 使用您自己的查看组件渲染网站上的色板。 (此规则的例外是轮播横幅。 Dynamic Media为轮播横幅中使用的样本提供查看组件。)<br><br>**使用图像样本**<br>&#x200B;图像样本的URL简单明了。 它是：<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>，其中`:Swatch`已附加到资产请求。<br><br>**使用色板**<br>&#x200B;要使用色板，您发出了包含以下内容的`req=userdata`请求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色板资源：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>，以下是色板资源对应的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>`req=userdata`响应如下：<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>您还可以请求采用XML或JSON格式的`req=userdata`响应，如以下相应的URL示例所示：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意：**&#x200B;创建您自己的WCM组件以请求所表示的色板并解析`SmartSwatchColor`属性，以24位RGB十六进制值表示。<br><br>另请参阅查看器参考指南[`userdata`中的](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)。 |
+| 像素裁剪 | 仅根据尺寸批量裁切图像。 | 要使用此选项，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 像素裁切]**。<br><br>若要从图像侧面裁切，请输入要从图像任何侧面或每侧面裁切的像素数。 裁切图像的数量取决于图像文件中的ppi（每英寸像素数）设置。<br><br>图像配置文件像素裁切按以下方式呈现：<br>·值为“上”、“下”、“左”和“右”。<br>·左上角为`0,0`，从此处计算像素裁切。<br>·裁切起点：“左”为X，“上”为Y<br>·水平计算：原始图像的水平像素维度减去“左”，然后减去“右”。<br>·垂直计算：垂直像素高度减去“上”，然后减去“下”。<br><br>例如，假设您有4000 x 300像素图像。 您可以使用以下值：Top=250、Bottom=500、Left=300、Right=700。<br><br>从左上角(300,250)开始，使用（4000-300-700、3000-250-500或3000,2250）的填充空间裁切。 |
+| 智能裁剪 | 根据视觉焦点批量裁切图像。 | 智能裁剪利用Adobe AI中的人工智能的强大功能快速批量自动裁剪图像。 智能裁切会自动检测并裁切到任何图像中的焦点，以捕获预期的目标点，而不管屏幕大小如何。</p> <p>要使用智能裁切，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 智能裁切]**，然后启用（打开）响应式图像裁切的右侧。</p> <p>大型、Medium和小型的默认断点大小通常涵盖大部分图像在移动设备和平板电脑设备、桌面和横幅上使用的完整大小。 如果需要，可以编辑“大”、“Medium”和“小”的默认名称。</p> <p>要添加更多断点，请选择&#x200B;**[!UICONTROL 添加裁切]**&#x200B;以删除裁切，选择“垃圾桶”图标。 |
+| 颜色和图像样本 | 批量为每个图像生成图像样本。 | **注意**： Dynamic Media Classic不支持智能色板。<br><br>自动从显示颜色或纹理的产品图像查找并生成高质量色板。<br><br>要使用颜色和图像样本，请从“裁切选项”下拉列表中选择&#x200B;**[!UICONTROL 智能裁切]**，然后在颜色和图像样本的右侧，启用（打开）该功能。 在“宽度”和“高度”文本框中输入一个像素值。<br><br>虽然所有图像裁剪都可以从“呈现版本”边栏中使用，但样本只能通过“复制URL”功能使用。 使用您自己的查看组件渲染网站上的色板。 (此规则的例外是轮播横幅。 Dynamic Media为轮播横幅中使用的样本提供了查看组件。)<br><br>**使用图像样本**<br>&#x200B;图像样本的URL非常简单。 它是：<br><br>`/is/image/company/&lt;asset_name&gt;:Swatch`<br>，其中`:Swatch`已附加到资产请求。<br><br>**使用色板**<br>&#x200B;要使用色板，您发出了包含以下内容的`req=userdata`请求：<br>`/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata`<br><br>例如，以下是Dynamic Media Classic中的色板资源：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch`<br>，以下是色板资源对应的`req=userdata` URL：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata`<br><br>`req=userdata`响应如下：<br>`SmartCropDef=Swatch SmartCropHeight=200.0`<br>`SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200`<br>`SmartCropType=Swatch`<br>`SmartCropWidth=200.0`<br>`SmartSwatchColor=0xA56DB2`<br><br>您还可以请求采用XML或JSON格式的`req=userdata`响应，如以下相应的URL示例所示：<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,json`<br>`https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml`<br><br>**注意：**&#x200B;创建您自己的WCM组件以请求所表示的色板并解析`SmartSwatchColor`属性，以24位RGB十六进制值表示。<br><br>另请参阅查看器参考指南[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/req/r-userdata)中的`userdata`。 |
 
 ## 钝化蒙版 {#unsharp-mask}
 
@@ -77,9 +91,9 @@ ht-degree: 4%
 
 | 选项 | 描述 |
 | --- | --- |
-| 数量 | 控制应用于边缘像素的对比度数量。 默认值为1.75。对于高分辨率图像，最高可将其增加到5。 将“量”视为滤镜强度的度量。 范围是0-5。 |
-| 半径 | 确定边缘像素周围影响锐化的像素数。对于高分辨率图像，输入1到2。低值仅锐化边缘像素；高值锐化较宽范围的像素。 正确的值取决于图像的大小。 默认值为0.2。范围是0-250。 |
-| 阈值 | 确定在应用钝化蒙版滤镜时要忽略的对比度范围。换句话说，此选项确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素并进行锐化。 为避免引入噪声，请尝试使用0-255之间的值。 |
+| 数量 | 控制应用于边缘像素的对比度数量。 默认值为1.75。 对于高分辨率图像，最高可将其增加到5。 将“量”视为滤镜强度的度量。 范围是0-5。 |
+| 半径 | 确定边缘像素周围影响锐化的像素数。 对于高分辨率图像，输入1到2。 低值仅锐化边缘像素；高值锐化较宽范围的像素。 正确的值取决于图像的大小。 默认值为0.2。 范围是0-250。 |
+| 阈值 | 确定在应用钝化蒙版滤镜时要忽略的对比度范围。 换句话说，此选项确定锐化的像素与周围区域必须有多大的不同，才会被视为边缘像素并进行锐化。 为避免引入噪声，请尝试使用0-255之间的值。 |
 
 在[锐化图像](/help/assets/assets/sharpening_images.pdf)中描述了锐化。
 
@@ -103,7 +117,7 @@ ht-degree: 4%
 
    ![裁切](assets/crop.png)
 
-1. 选择&#x200B;**[!UICONTROL 保存]**。新创建的配置文件将显示在可用配置文件的列表中。
+1. 选择&#x200B;**[!UICONTROL 保存]**。 新创建的配置文件将显示在可用配置文件的列表中。
 
 ## 编辑或删除Dynamic Media图像配置文件 {#editing-or-deleting-image-profiles}
 
@@ -222,7 +236,7 @@ ht-degree: 4%
 **要编辑多个图像的智能裁剪或智能色板：**
 
 1. 选择Experience Manager徽标并导航到&#x200B;**[!UICONTROL Assets]**，然后导航到应用了智能裁剪或智能色板图像配置文件的文件夹。
-1. 在文件夹中，选择&#x200B;**[!UICONTROL 更多操作]** (...)图标，然后选择&#x200B;**[!UICONTROL 智能裁切]**。
+1. 在该文件夹中，选择&#x200B;**[!UICONTROL 更多操作]** (...) 图标，然后选择&#x200B;**[!UICONTROL 智能裁剪]**。
 
 1. 在&#x200B;**[!UICONTROL 编辑智能裁剪]**&#x200B;页面上，执行以下任一操作：
 
@@ -240,15 +254,15 @@ ht-degree: 4%
 
    * 调整智能裁剪框的大小。 执行以下任一操作：
 
-      * 如果图像仅具有智能裁切或智能色板，请在图像上拖动裁切框的角手柄以调整裁切可视区域的大小。
-      * 如果图像同时具有智能裁切和智能色板，请在图像上拖动裁切框的角手柄以调整裁切可视区域的大小。 或者，选择图像下方的智能色板（颜色色板为静态），然后拖动裁切框的角手柄以调整色板的可查看区域大小。
+     * 如果图像仅具有智能裁切或智能色板，请在图像上拖动裁切框的角手柄以调整裁切可视区域的大小。
+     * 如果图像同时具有智能裁切和智能色板，请在图像上拖动裁切框的角手柄以调整裁切可视区域的大小。 或者，选择图像下方的智能色板（颜色色板为静态），然后拖动裁切框的角手柄以调整色板的可查看区域大小。
 
      ![调整图像的智能裁剪大小](assets/edit_smart_crops-resize.png)
 
    * 移动智能裁剪框。 执行以下任一操作：
 
-      * 如果图像具有智能裁切或仅具有智能色板，请在图像上将裁切框拖动到新位置。
-      * 如果图像同时具有智能裁切和智能色板，请在图像上将智能裁切框拖动到新位置。 或者，选择图像下方的智能色板（颜色色板是静态的），然后将智能色板裁切框拖动到新位置。
+     * 如果图像具有智能裁切或仅具有智能色板，请在图像上将裁切框拖动到新位置。
+     * 如果图像同时具有智能裁切和智能色板，请在图像上将智能裁切框拖动到新位置。 或者，选择图像下方的智能色板（颜色色板是静态的），然后将智能色板裁切框拖动到新位置。
 
      ![edit_smart_ranks-move](assets/edit_smart_crops-move.png)
 

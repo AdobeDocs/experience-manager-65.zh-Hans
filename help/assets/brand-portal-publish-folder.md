@@ -1,5 +1,5 @@
 ---
-title: Publish文件夹到Brand Portal
+title: 将文件夹发布到Brand Portal
 description: 了解如何将文件夹发布和取消发布到Brand Portal。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,24 +10,36 @@ feature: Brand Portal
 role: User
 exl-id: 92a156f0-ce2a-4c83-bd57-0c29efbf784f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: e00c7c12-7035-41fe-ad76-1ec82c8c3f01
+    internal-label: Brand Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '565'
+source-wordcount: '568'
 ht-degree: 34%
-
 ---
-
-# Publish文件夹到Brand Portal{#publish-folders-to-brand-portal}
+# 将文件夹发布到Brand Portal{#publish-folders-to-brand-portal}
 
 作为Adobe Experience Manager (AEM) Assets管理员，您可以将资产和文件夹发布到AEM Assets Brand Portal实例（或安排在稍后的日期/时间执行发布工作流）。 但是，您必须首先将AEM Assets与Brand Portal集成。 有关详细信息，请参阅[使用 Brand Portal 配置 AEM Assets](/help/assets/configure-aem-assets-with-brand-portal.md)。
 
 发布资源或文件夹后，Brand Portal中的用户即可使用该资源或文件夹。
 
-如果您随后在AEM Assets中对原始资源或文件夹进行了修改，则在重新发布该资源或文件夹之前，这些更改不会反映在Brand Portal中。 此功能可确保在 Brand Portal 中不会出现进行中的更改。只有管理员发布的已批准更改才会出现在 Brand Portal 中。
+如果您随后在AEM Assets中对原始资源或文件夹进行了修改，则在重新发布该资源或文件夹之前，这些更改不会反映在Brand Portal中。 此功能可确保在 Brand Portal 中不会出现进行中的更改。 只有管理员发布的已批准更改才会出现在 Brand Portal 中。
 
-## Publish文件夹到Brand Portal {#publish-folders-to-brand-portal-1}
+## 将文件夹发布到Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. 在AEM Assets界面中，将鼠标悬停在所需文件夹上，然后从快速操作中选择&#x200B;**Publish**&#x200B;选项。
+1. 在AEM Assets界面中，将鼠标悬停在所需文件夹上，然后从快速操作中选择&#x200B;**发布**&#x200B;选项。
 
    或者，选择所需的文件夹，然后执行其他步骤。
 
@@ -37,33 +49,33 @@ ht-degree: 34%
 
    要将选定文件夹发布到 Brand Portal，请执行以下任一操作：
 
-   * 在工具栏中，选择&#x200B;**快速发布**。然后从菜单中选择&#x200B;**Publish到Brand Portal**。
+   * 在工具栏中，选择&#x200B;**快速发布**。 然后从菜单中选择&#x200B;**发布到Brand Portal**。
 
    * 在工具栏中，选择&#x200B;**管理发布**。
 
-   1. 从&#x200B;**操作**&#x200B;选择&#x200B;**Publish到Brand Portal**，从&#x200B;**计划**&#x200B;选择&#x200B;**立即**，然后单击&#x200B;**下一步**。
+   1. 从&#x200B;**操作**&#x200B;中选择&#x200B;**发布到Brand Portal**，从&#x200B;**计划**&#x200B;中选择&#x200B;**立即**，然后单击&#x200B;**下一步**。
    1. 在&#x200B;**范围**&#x200B;中确认您的选择，然后单击&#x200B;**发布到 Brand Portal**。
 
-   此时将显示一条消息，表明文件夹已排队等候发布到 Brand Portal。登录到Brand Portal界面可查看已发布的文件夹。
+   此时将显示一条消息，表明文件夹已排队等候发布到 Brand Portal。 登录到Brand Portal界面可查看已发布的文件夹。
 
    **稍后发布文件夹**
 
    要计划在稍后的日期或时间发布到Brand Portal资源文件夹工作流，请执行以下操作：
 
    1. 选择要发布的资产/文件夹后，从顶部的工具栏中选择&#x200B;**管理发布**。
-   1. 从&#x200B;**操作**&#x200B;选择&#x200B;**Publish到Brand Portal**，从&#x200B;**计划**&#x200B;选择&#x200B;**稍后**。
+   1. 从&#x200B;**操作**&#x200B;中选择&#x200B;**发布到Brand Portal**，从&#x200B;**计划**&#x200B;中选择&#x200B;**稍后**。
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
-   1. 选择&#x200B;**激活日期**，并指定时间。单击&#x200B;**下一步**。
-   1. 在&#x200B;**范围**&#x200B;中确认您的选择。单击&#x200B;**下一步**。
-   1. 在&#x200B;**工作流**&#x200B;下指定工作流标题。单击&#x200B;**稍后发布**。
+   1. 选择&#x200B;**激活日期**，并指定时间。 单击&#x200B;**下一步**。
+   1. 在&#x200B;**范围**&#x200B;中确认您的选择。 单击&#x200B;**下一步**。
+   1. 在&#x200B;**工作流**&#x200B;下指定工作流标题。 单击&#x200B;**稍后发布**。
 
       ![manageschedulepub](assets/manageschedulepub.png)
 
 ## 从Brand Portal取消发布文件夹 {#unpublish-folders-from-brand-portal}
 
-您可以通过从AEM创作实例中取消发布已发布到Brand Portal的任何资源文件夹，来删除该文件夹。 取消发布原始文件夹后，Brand Portal 用户将无法再使用其副本。
+您可以通过从Brand Portal创作实例中取消发布已发布到AEM的任何资源文件夹，来删除该文件夹。 取消发布原始文件夹后，Brand Portal 用户将无法再使用其副本。
 
 您可以选择快速从Brand Portal中取消发布文件夹，或安排在以后的日期和时间取消发布。 要从 Brand Portal 取消发布资产文件夹，请执行以下操作：
 
@@ -89,9 +101,9 @@ ht-degree: 34%
 
    1. 在工具栏中，选择&#x200B;**管理发布**。
    1. 从&#x200B;**操作**&#x200B;中选择&#x200B;**从Brand Portal中取消发布**，然后从&#x200B;**计划**&#x200B;中选择&#x200B;**稍后**。
-   1. 选择&#x200B;**激活日期**，并指定时间。单击&#x200B;**下一步**。
+   1. 选择&#x200B;**激活日期**，并指定时间。 单击&#x200B;**下一步**。
    1. 在&#x200B;**范围**&#x200B;中确认您的选择，然后单击&#x200B;**下一步**。
-   1. 在&#x200B;**工作流**&#x200B;中指定&#x200B;**工作流标题**。单击&#x200B;**稍后取消发布。**
+   1. 在&#x200B;**工作流**&#x200B;中指定&#x200B;**工作流标题**。 单击&#x200B;**稍后取消发布。**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 

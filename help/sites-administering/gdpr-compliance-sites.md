@@ -9,13 +9,31 @@ exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 solution: Experience Manager, Experience Manager Sites
 feature: Compliance
 role: Admin, Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '902'
 ht-degree: 100%
-
 ---
-
 # AEM Sites - GDPR 就绪{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
@@ -24,7 +42,7 @@ ht-degree: 100%
 
 欧盟《通用数据保护条例》关于数据隐私权的规定自 2018 年 5 月起正式生效。
 
-AEM Sites 已经准备好帮助客户履行 GDPR 合规义务。此页面将指导客户完成在 AEM Sites 中处理 GDPR 请求的过程。它描述了私有数据的存储位置，以及如何手动或使用代码移除私有数据。
+AEM Sites 已经准备好帮助客户履行 GDPR 合规义务。 此页面将指导客户完成在 AEM Sites 中处理 GDPR 请求的过程。 它描述了私有数据的存储位置，以及如何手动或使用代码移除私有数据。
 
 有关更多信息，请参阅 [Adobe 隐私中心的 GDPR 页面](https://www.adobe.com/privacy/general-data-protection-regulation.html)。
 
@@ -40,7 +58,7 @@ AEM Sites 已经准备好帮助客户履行 GDPR 合规义务。此页面将指�
 
 [平台 GDPR 文档](/help/managing/data-protection-and-privacy.md)涵盖了发布服务器上用于验证网站访客的用户帐户和 UGC 内容。
 
-默认情况下，AEM Sites 组件不会存储访客在发布服务器上输入的表单数据。建议将数据转发到第三方系统或 Adobe Campaign 以供进一步处理。
+默认情况下，AEM Sites 组件不会存储访客在发布服务器上输入的表单数据。 建议将数据转发到第三方系统或 Adobe Campaign 以供进一步处理。
 
 ## 选择加入/选择退出 {#opt-in-opt-out}
 
@@ -60,7 +78,7 @@ AEM Sites 包括与通过 Target 提供的增强型个性化的可选集成，�
 
 ## ContextHub {#contexthub}
 
-AEM 提供了一个可选的数据层 [ContextHub](/help/sites-developing/contexthub.md)。这会将特定于访客的数据保留在浏览器中，以用于基于规则的个性化。
+AEM 提供了一个可选的数据层 [ContextHub](/help/sites-developing/contexthub.md)。 这会将特定于访客的数据保留在浏览器中，以用于基于规则的个性化。
 
 默认情况下，此访客数据不会存储在 AEM 中；AEM 将规则发送到数据层，以在浏览器中做出个性化决策。
 
@@ -68,20 +86,20 @@ AEM 提供了一个可选的数据层 [ContextHub](/help/sites-developing/contex
 >
 >在 Adobe AEM（CQ）5.6 之前，ClientContext（ContextHub 的早期版本）会将数据发送至服务器，但不会存储这些数据。
 >
->Adobe AEM 6.4 及更早版本现已停止提供支持（EOL），不在本文档涵盖范围内。请参见[旧版本的 Adobe Experience Manager、CQ 和 CRX 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions)。
+>Adobe AEM 6.4 及更早版本现已停止提供支持（EOL），不在本文档涵盖范围内。 请参见[旧版本的 Adobe Experience Manager、CQ 和 CRX 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions)。
 
 ### 实施选择加入/选择退出 {#implementing-opt-in-opt-out}
 
 网站所有者需要根据以下指南实施选择退出组件。
 
-这些指南将选择加入作为默认设置加以实施。因此，在任何个人数据存储到浏览器（客户端）持久层之前，网站访问者必须明确同意。
+这些指南将选择加入作为默认设置加以实施。 因此，在任何个人数据存储到浏览器（客户端）持久层之前，网站访问者必须明确同意。
 
 * 每次包含 ContextHub 组件时都应包含选择退出组件。
 * 网站需向访问者展示与 GDPR 相关的条款和条件，并允许他们：
 
-   * 接受
-   * 拒绝
-   * 更改其上一个选择
+  * 接受
+  * 拒绝
+  * 更改其上一个选择
 
 * 如果网站访客接受网站的条款和条件，则应删除 ContextHub 选择退出 Cookie：
 
@@ -108,49 +126,49 @@ AEM 提供了一个可选的数据层 [ContextHub](/help/sites-developing/contex
 
 * 例如，使用浏览器的控制台：
 
-   * Chrome：
+  * Chrome：
 
-      * 打开“开发人员工具”>“应用程序”>“存储”：
+    * 打开“开发人员工具”>“应用程序”>“存储”：
 
-         * “本地存储”>“（网站）”>“ContextHubPersistence”
-         * “会话存储”>“（网站）”>“ContextHubPersistence”
-         * “Cookie”>“（网站）”>“SessionPersistence”
+      * “本地存储”>“（网站）”>“ContextHubPersistence”
+      * “会话存储”>“（网站）”>“ContextHubPersistence”
+      * “Cookie”>“（网站）”>“SessionPersistence”
 
-   * Firefox：
+  * Firefox：
 
-      * 打开“开发人员工具”>“存储”：
+    * 打开“开发人员工具”>“存储”：
 
-         * “本地存储”>“（网站）”>“ContextHubPersistence”
-         * “会话存储”>“（网站）”>“ContextHubPersistence”
-         * “Cookie”>“（网站）”>“SessionPersistence”
+      * “本地存储”>“（网站）”>“ContextHubPersistence”
+      * “会话存储”>“（网站）”>“ContextHubPersistence”
+      * “Cookie”>“（网站）”>“SessionPersistence”
 
-   * Safari：
+  * Safari：
 
-      * 在菜单栏中打开“偏好设置”>“高级”>“显示开发”菜单
-      * 打开“开发”>“显示 JavaScript 控制台”
+    * 在菜单栏中打开“偏好设置”>“高级”>“显示开发”菜单
+    * 打开“开发”>“显示 JavaScript 控制台”
 
-         * “控制台”>“存储”>“本地存储”>“（网站）”>“ContextHubPersistence”
-         * “控制台”>“存储”>“会话存储”>“（网站）”>“ContextHubPersistence”
-         * “控制台”>“存储”>“Cookie”>“（网站）”>“ContextHubPersistence”
+      * “控制台”>“存储”>“本地存储”>“（网站）”>“ContextHubPersistence”
+      * “控制台”>“存储”>“会话存储”>“（网站）”>“ContextHubPersistence”
+      * “控制台”>“存储”>“Cookie”>“（网站）”>“ContextHubPersistence”
 
-   * Internet Explorer：
+  * Internet Explorer：
 
-      * 打开“开发人员工具”>“控制台”
+    * 打开“开发人员工具”>“控制台”
 
-         * localStorage.getItem（&#39;ContextHubPersistence&#39;）
-         * sessionStorage.getItem（&#39;ContextHubPersistence&#39;）
-         * document.cookie
+      * localStorage.getItem（&#39;ContextHubPersistence&#39;）
+      * sessionStorage.getItem（&#39;ContextHubPersistence&#39;）
+      * document.cookie
 
 * 在浏览器的控制台中使用 ContextHub API：
 
-   * ContextHub 提供以下数据持久层：
+  * ContextHub 提供以下数据持久层：
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL（default）
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL（default）
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     ContextHub 存储会定义使用哪个持久层，因此，要查看持久存储的当前状态，应检查所有层。
+    ContextHub 存储会定义使用哪个持久层，因此，要查看持久存储的当前状态，应检查所有层。
 
 例如，要查看存储在 localStorage 中的数据，请执行以下操作：
 
@@ -158,28 +176,28 @@ AEM 提供了一个可选的数据层 [ContextHub](/help/sites-developing/contex
 
 * 使用浏览器的控制台：
 
-   * Chrome - 打开“开发人员工具”>“应用程序”>“存储”：
+  * Chrome - 打开“开发人员工具”>“应用程序”>“存储”：
 
-      * “本地存储”>“（网站）”>“ContextHubPersistence”
-      * “会话存储”>“（网站）”>“ContextHubPersistence”
-      * “Cookie”>“（网站）”>“SessionPersistence”
+    * “本地存储”>“（网站）”>“ContextHubPersistence”
+    * “会话存储”>“（网站）”>“ContextHubPersistence”
+    * “Cookie”>“（网站）”>“SessionPersistence”
 
-   * Firefox - 打开“开发人员工具”>“存储”：
+  * Firefox - 打开“开发人员工具”>“存储”：
 
-      * “本地存储”>“（网站）”>“ContextHubPersistence”
-      * “会话存储”>“（网站）”>“ContextHubPersistence”
-      * “Cookie”>“（网站）”>“SessionPersistence”
+    * “本地存储”>“（网站）”>“ContextHubPersistence”
+    * “会话存储”>“（网站）”>“ContextHubPersistence”
+    * “Cookie”>“（网站）”>“SessionPersistence”
 
 * 在浏览器的控制台中使用 ContextHub API：
 
-   * ContextHub 提供以下数据持久层：
+  * ContextHub 提供以下数据持久层：
 
-      * ContextHub.Utils.Persistence.Modes.LOCAL（default）
-      * ContextHub.Utils.Persistence.Modes.SESSION
-      * ContextHub.Utils.Persistence.Modes.COOKIE
-      * ContextHub.Utils.Persistence.Modes.WINDOW
+    * ContextHub.Utils.Persistence.Modes.LOCAL（default）
+    * ContextHub.Utils.Persistence.Modes.SESSION
+    * ContextHub.Utils.Persistence.Modes.COOKIE
+    * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     ContextHub 存储会定义使用哪个持久层，因此，要查看持久存储的当前状态，应检查所有层。
+    ContextHub 存储会定义使用哪个持久层，因此，要查看持久存储的当前状态，应检查所有层。
 
 例如，要查看存储在 localStorage 中的数据，请执行以下操作：
 
@@ -218,7 +236,7 @@ console.log(storage.getTree());
 
 * 要清除所有 ContextHub 持久层，必须为所有层调用适当的代码：
 
-   * ContextHub.Utils.Persistence.Modes.LOCAL（default）
-   * ContextHub.Utils.Persistence.Modes.SESSION
-   * ContextHub.Utils.Persistence.Modes.COOKIE
-   * ContextHub.Utils.Persistence.Modes.WINDOW
+  * ContextHub.Utils.Persistence.Modes.LOCAL（default）
+  * ContextHub.Utils.Persistence.Modes.SESSION
+  * ContextHub.Utils.Persistence.Modes.COOKIE
+  * ContextHub.Utils.Persistence.Modes.WINDOW

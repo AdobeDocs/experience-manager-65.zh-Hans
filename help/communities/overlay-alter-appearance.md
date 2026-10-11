@@ -1,6 +1,6 @@
 ---
 title: 更改外观
-description: 了解如何编辑负责在Adobe Experience Manager Communities中为每个评论创建整体HTML的comment.hbs脚本。
+description: 了解如何编辑负责为Adobe Experience Manager Communities中的每个评论创建整体HTML的comment.hbs脚本。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
@@ -10,18 +10,25 @@ exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
 # 更改外观 {#alter-the-appearance}
 
 ## 修改脚本 {#modify-the-script}
 
-`comment.hbs`脚本负责为每个评论创建整体HTML。
+`comment.hbs`脚本负责为每个评论创建整个HTML。
 
 要不在每个发布的评论旁边显示头像，请执行以下操作：
 

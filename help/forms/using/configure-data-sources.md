@@ -8,13 +8,26 @@ feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2096'
+source-wordcount: '2186'
 ht-degree: 2%
-
 ---
-
 # 配置数据源{#configure-data-sources}
 
 | 版本 | 文章链接 |
@@ -131,10 +144,10 @@ AEM中的所有云服务配置都已合并到AEM存储库的`/conf`文件夹中�
    * 从Swagger Source下拉列表中选择URL或文件，并相应地指定Swagger定义文件的Swagger URL或从本地文件系统上传Swagger文件。
    * 根据Swagger Source输入，以下字段已预填充值：
 
-      * 方案：REST API使用的传输协议。 下拉列表中显示的方案类型数取决于Swagger源中定义的方案。
-      * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
-      * 基本路径：所有API路径的URL前缀。 它是一个可选字段。\
-        如有必要，请编辑这些字段的预填充值。
+     * 方案：REST API使用的传输协议。 下拉列表中显示的方案类型数取决于Swagger源中定义的方案。
+     * 主机：提供REST API的主机的域名或IP地址。 它是必填字段。
+     * 基本路径：所有API路径的URL前缀。 它是一个可选字段。\
+       如有必要，请编辑这些字段的预填充值。
 
    * 选择身份验证类型 — None、OAuth2.0（[授权代码](https://oauth.net/2/grant-types/authorization-code/)、[客户端凭据](https://oauth.net/2/grant-types/client-credentials/)）、基本身份验证、API密钥、自定义身份验证或相互身份验证 — 以访问RESTful服务，并相应地提供身份验证的详细信息。
 
@@ -180,8 +193,8 @@ AEM中的所有云服务配置都已合并到AEM存储库的`/conf`文件夹中�
    * 服务端点。 在此字段中指定一个值以覆盖WSDL中提到的服务端点。
    * 选择身份验证类型 — None、OAuth2.0（[授权代码](https://oauth.net/2/grant-types/authorization-code/)、[客户端凭据](https://oauth.net/2/grant-types/client-credentials/)）、Basic Authentication、Custom Authentication、X509 Token或Mutual Authentication — 以访问SOAP服务，并相应地提供身份验证的详细信息。
 
-     如果选择&#x200B;**[!UICONTROL X509 Token]**&#x200B;作为身份验证类型，请配置X509证书。有关详细信息，请参阅[设置证书](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)。
-在&#x200B;**[!UICONTROL 密钥别名]**&#x200B;字段中指定X509证书的KeyStore别名。在&#x200B;**[!UICONTROL 生存时间]**&#x200B;字段中指定身份验证请求保持有效的时间（以秒为单位）。（可选）选择对消息正文或时间戳标头签名或同时选择两者。
+     如果选择&#x200B;**[!UICONTROL X509 Token]**&#x200B;作为身份验证类型，请配置X509证书。 有关详细信息，请参阅[设置证书](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)。
+     在&#x200B;**[!UICONTROL 密钥别名]**&#x200B;字段中指定X509证书的KeyStore别名。 在&#x200B;**[!UICONTROL 生存时间]**&#x200B;字段中指定身份验证请求保持有效的时间（秒）。 （可选）选择对消息正文或时间戳标头签名或同时选择两者。
 
      如果选择&#x200B;**[!UICONTROL 相互身份验证]**&#x200B;作为身份验证类型，请参阅[RESTful和SOAP Web服务的基于证书的相互身份验证](#mutual-authentication)。
 

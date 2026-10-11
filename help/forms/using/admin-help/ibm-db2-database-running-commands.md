@@ -1,5 +1,5 @@
 ---
-title: IBM DB2数据库：运行命令以进行常规维护
+title: IBM DB2 数据库：运行命令以进行常规维护
 description: 本文档列出了为定期维护AEM表单数据库而推荐的IBM DB2命令。
 contentOwner: admin
 content-type: reference
@@ -9,18 +9,32 @@ exl-id: 7a4281e7-1544-473a-a471-e9a4c2819a58
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '391'
-ht-degree: 0%
-
+ht-degree: 4%
 ---
-
-# IBM DB2数据库：运行命令以进行常规维护 {#ibm-db-database-running-commands-for-regular-maintenance}
+# IBM DB2 数据库：运行命令以进行常规维护 {#ibm-db-database-running-commands-for-regular-maintenance}
 
 建议使用以下IBM DB2命令来定期维护AEM表单数据库。 有关DB2数据库的维护和性能调整的详细信息，请参阅&#x200B;*IBM DB2 Administration Guide*。
 
-* **runstats：**&#x200B;此命令更新描述数据库表物理特性的统计信息及其关联的索引。 由AEM表单生成的动态SQL语句自动使用这些更新的统计信息，但构建在数据库中的静态SQL语句要求同时运行`db2rbind`命令。
+* **runstats：**&#x200B;此命令更新描述数据库表物理特性的统计信息及其关联的索引。 由AEM表单生成的动态SQL语句自动使用这些更新的统计信息，但在数据库中构建的静态SQL语句要求同时运行`db2rbind`命令。
 * **db2rbind：**&#x200B;此命令重新绑定数据库中的所有包。 运行`runstats`实用程序后使用此命令重新验证数据库中的所有包。
 * **重组表或索引：**&#x200B;此命令检查是否需要对某些表和索引进行重组。
 
@@ -36,7 +50,7 @@ ht-degree: 0%
 
 ## 在AEM表单数据库上使用runstats命令 {#use-the-runstats-command-on-your-aem-forms-database}
 
-对以下AEM forms数据库表和索引运行`runstats`命令。
+对以下AEM表单数据库表和索引运行`runstats`命令。
 
 >[!NOTE]
 >
@@ -66,9 +80,9 @@ ht-degree: 0%
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY FOR INDEXES ALL
 ```
 
-## 在AEM forms数据库上运行reorg命令 {#run-the-reorg-command-on-your-aem-forms-database}
+## 在AEM表单数据库上运行reorg命令 {#run-the-reorg-command-on-your-aem-forms-database}
 
-对以下AEM forms数据库表和索引运行`reorg`命令。 有关正确的语法和用法，请参阅数据库制造商的文档。
+对以下AEM表单数据库表和索引运行`reorg`命令。 有关正确的语法和用法，请参阅数据库制造商的文档。
 
 ```sql
      TABLE <schema>.EDCPRINCIPALGROUPENTITY

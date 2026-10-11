@@ -10,13 +10,20 @@ exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1631'
 ht-degree: 1%
-
 ---
-
 # 创作社区站点{#author-a-new-community-site}
 
 ## 创建社区站点 {#create-a-community-site}
@@ -48,10 +55,10 @@ ht-degree: 1%
 
 * **社区站点名称**：参与
 
-   * 双击名称，因为创建站点后不易对其进行更改
-   * 初始URL显示在社区站点名称下方
-   * 对于有效的URL，请附加基本语言代码+“.html”
-   * *例如*，https://localhost:4502/content/sites/ `engage/en.html`
+  * 双击名称，因为创建站点后不易对其进行更改
+  * 初始URL显示在社区站点名称下方
+  * 对于有效的URL，请附加基本语言代码+“.html”
+  * *例如*，https://localhost:4502/content/sites/ `engage/en.html`
 
 * **模板**：下拉菜单选择`Reference Site`
 
@@ -184,7 +191,7 @@ ht-degree: 1%
 
 * **发布站点**
 
-  选择世界图标将发布社区站点（例如，如果您的发布服务器在本地计算机上运行，则默认情况下将发布到localhost:4503）。
+  选择世界图标将发布社区站点（例如，如果您的发布服务器在本地计算机上运行，则默认情况下将发布到localhost：4503）。
 
 * **导出站点**
 
@@ -207,7 +214,7 @@ ht-degree: 1%
 >1. 选择&#x200B;**[!UICONTROL 默认代理（发布）]**。
 >1. 在&#x200B;**[!UICONTROL 设置]**&#x200B;旁边，选择&#x200B;**[!UICONTROL 编辑]**。
 >1. 在“代理设置”的弹出对话框中，选择&#x200B;**[!UICONTROL 传输]**&#x200B;选项卡。
->1. 在URI中，将端口号4503更改为所需的端口号。 例如，要使用端口6103： https://localhost:6103/bin/receive？sling:authRequestLogin=1
+>1. 在URI中，将端口号4503更改为所需的端口号。 例如，要使用端口6103： https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >1. 选择&#x200B;**[!UICONTROL 确定]**。
 >1. （可选）选择&#x200B;**[!UICONTROL 清除]**&#x200B;或&#x200B;**[!UICONTROL 强制重试]**&#x200B;以重置复制队列。
 
@@ -263,37 +270,37 @@ ht-degree: 1%
 要开始使用，请执行以下操作：
 
 1. 在发布实例上，使用管理员权限登录。
-1. 浏览至[https://localhost:4503/crx/de](https://localhost:4503/crx/de)。
+1. 浏览到[https://localhost:4503/crx/de](https://localhost:4503/crx/de)。
 1. 在项目浏览器中，展开`/etc/map.`
 1. 选择`http`节点：
 
    * 选择&#x200B;**创建节点：**
 
-      * **名称** localhost.4503
-（请*不*&#x200B;使用“：”）
+     * **名称** localhost.4503
+       （请*不*&#x200B;使用“：”）
 
-      * **类型** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
+     * **类型** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
 1. 选择了新创建的`localhost.4503`节点：
 
    * 添加属性：
 
    * **名称** sling:match
-      * **类型**&#x200B;字符串
-      * **值** localhost.4503/$
-（必须以“$”字符结尾）
+     * **类型**&#x200B;字符串
+     * **值** localhost.4503/$
+       （必须以“$”字符结尾）
 
    * 添加属性：
 
-      * **名称** sling:internalRedirect
-      * **类型**&#x200B;字符串
-      * **值** /content/sites/engage/en.html
+     * **名称** sling:internalRedirect
+     * **类型**&#x200B;字符串
+     * **值** /content/sites/engage/en.html
 
 1. 选择&#x200B;**全部保存。**
 1. （可选）删除浏览历史记录。
-1. 浏览到https://localhost:4503/。
+1. 浏览https://localhost:4503/。
 
-   * 到达https://localhost:4503/content/sites/engage/en.html
+   * 抵达https://localhost:4503/content/sites/engage/en.html
 
 >[!NOTE]
 >

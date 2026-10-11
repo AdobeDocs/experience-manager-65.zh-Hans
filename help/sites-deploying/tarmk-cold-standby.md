@@ -10,13 +10,22 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2696'
 ht-degree: 1%
-
 ---
-
 # 如何以 TarMK 冷备用方式运行 AEM{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## 简介 {#introduction}

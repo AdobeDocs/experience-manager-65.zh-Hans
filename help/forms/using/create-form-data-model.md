@@ -8,22 +8,35 @@ exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 1%
-
+source-wordcount: '1629'
+ht-degree: 2%
 ---
-
 # 教程：创建表单数据模型 {#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
 本教程是[创建您的第一个自适应表单](../../forms/using/create-your-first-adaptive-form.md)系列中的步骤。 Adobe建议您按照时间顺序跟踪系列，以了解、执行和演示完整的教程用例。
 
-## 关于教程 {#about-the-tutorial}
+## 关于本教程 {#about-the-tutorial}
 
-AEM [!DNL Forms]数据集成模块允许您从不同的后端数据源(如AEM用户配置文件、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库)创建表单数据模型。 您可以在表单数据模型中配置数据模型对象和服务，并将其与自适应表单关联。 自适应表单字段绑定到数据模型对象属性。 这些服务使您能够预填充自适应表单并将提交的表单数据写回数据模型对象。
+AEM [!DNL Forms]数据集成模块允许您从不同的后端数据源（如AEM用户配置文件、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库）创建表单数据模型。 您可以在表单数据模型中配置数据模型对象和服务，并将其与自适应表单关联。 自适应表单字段绑定到数据模型对象属性。 这些服务使您能够预填充自适应表单并将提交的表单数据写回数据模型对象。
 
 有关表单数据集成和表单数据模型的详细信息，请参阅[AEM Forms数据集成](../../forms/using/data-integration.md)。
 
@@ -54,39 +67,39 @@ AEM [!DNL Forms]数据集成模块允许您从不同的后端数据源(如AEM用
 
 执行以下操作以配置您的[!DNL MySQL]数据库：
 
-1. 将数据库的 [!DNL MySQL] JDBC 驱动程序作为 OSGi 捆绑包安装：
+1. 以OSGi捆绑包形式为[!DNL MySQL]数据库安装JDBC驱动程序：
 
-   1. [!DNL MySQL]从 下载 `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`JDBC 驱动程序 OSGi 捆绑包。<!-- This URL is an insecure link but using https is not possible -->
+   1. 从`http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`下载[!DNL MySQL] JDBC驱动程序OSGi包。<!-- This URL is an insecure link but using https is not possible -->
    1. 以管理员身份登录AEM [!DNL Forms]创作实例，然后转到AEM Web控制台包。 默认URL为[https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)。
 
    1. 选择&#x200B;**[!UICONTROL 安装/更新]**。 出现[!UICONTROL 上载/安装包]对话框。
 
-   1. 选择&#x200B;**[!UICONTROL 选择文件]**&#x200B;浏览并选择[!DNL MySQL] JDBC驱动程序OSGi包。 选择&#x200B;**[!UICONTROL 启动包]**&#x200B;和&#x200B;**[!UICONTROL 刷新包]**，然后选择&#x200B;**[!UICONTROL 安装或更新]**。 [!DNL Oracle Corporation's]确保 的 [!DNL MySQL] JDBC 驱动程序处于活动状态。驱动程序已安装。
+   1. 选择&#x200B;**[!UICONTROL 选择文件]**&#x200B;浏览并选择[!DNL MySQL] JDBC驱动程序OSGi包。 选择&#x200B;**[!UICONTROL 启动包]**&#x200B;和&#x200B;**[!UICONTROL 刷新包]**，然后选择&#x200B;**[!UICONTROL 安装或更新]**。 确保[!DNL MySQL]的[!DNL Oracle Corporation's] JDBC驱动程序处于活动状态。 已安装驱动程序。
 
-1. 将数据库配置为 [!DNL MySQL] 数据源：
+1. 将[!DNL MySQL]数据库配置为数据源：
 
-   1. 转到位于 https://localhost:4502/system/console/configMgr[&#128279;](https://localhost:4502/system/console/configMgr) 的 AEM Web 控制台。
-   1. 找到 **Apache Sling 连接池数据源** 配置。 选择此项可在编辑模式下打开配置。
+   1. 转到AEM Web控制台，网址为[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)。
+   1. 找到&#x200B;**Apache Sling Connection Pooled DataSource**&#x200B;配置。 选择以在编辑模式下打开配置。
    1. 在配置对话框中，指定以下详细信息：
 
       * **数据源名称：**&#x200B;您可以指定任意名称。 例如，指定&#x200B;**WeRetailMySQL**。
       * **数据源服务属性名称**：指定包含数据源名称的服务属性的名称。 在将数据源实例注册为OSGi服务时指定它。 例如，**datasource.name**。
       * **JDBC驱动程序类**：指定JDBC驱动程序的Java™类名。 对于[!DNL MySQL]数据库，请指定&#x200B;**com.mysql.jdbc.Driver**。
-      * **JDBC 连接 URI：**&#x200B;指定数据库的连接 URL。 对于 [!DNL MySQL] 在端口 3306 和 `weretail`架构上运行的数据库，URL 为： `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC连接URI**：指定数据库的连接URL。 对于在端口3306和架构`weretail`上运行的[!DNL MySQL]数据库，URL为： `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > [!DNL MySQL]当数据库位于防火墙后面时，数据库主机名不是公共 DNS。必须将数据库的 IP 地址添加到 *AEM 主机的 /etc/hosts* 文件中。
+      > 当[!DNL MySQL]数据库位于防火墙后面时，数据库主机名不是公共DNS。 数据库的IP地址必须添加到AEM主机的&#x200B;*/etc/hosts*&#x200B;文件中。
 
-      * **用户名：**&#x200B;数据库用户名。 需要启用 JDBC 驱动程序才能与数据库建立连接。
+      * **用户名：**&#x200B;数据库用户名。 必须启用JDBC驱动程序才能与数据库建立连接。
       * **密码：**&#x200B;数据库的密码。 必须启用JDBC驱动程序才能与数据库建立连接。
 
       >[!NOTE]
       >
-      >AEM Forms不支持[!DNL MySQL]的NT身份验证。 转到 https://localhost:4502/system/console/configMgr[&#128279;](https://localhost:4502/system/console/configMgr) 的AEM Web控制台，然后搜索“Apache Sling连接池数据源”。对于“JDBC 连接 URI”属性，请将“integratedSecurity”的值设置为 False，并使用创建的用户名和密码与数据库连接 [!DNL MySQL] 。
+      >AEM Forms不支持[!DNL MySQL]的NT身份验证。 转到位于[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)的AEM Web控制台并搜索“Apache Sling连接池化数据源”。 对于“JDBC连接URI”属性，将“integratedSecurity”的值设置为False，并使用创建的用户名和密码连接到[!DNL MySQL]数据库。
 
-      * **借用时测试：** 启用 **[!UICONTROL 借用]** 时测试选项。
-      * **退货时测试：**&#x200B;启用退货&#x200B;**&#x200B;**&#x200B;时测试选项。
+      * **借记测试：**&#x200B;启用&#x200B;**[!UICONTROL 借记测试]**&#x200B;选项。
+      * **返回时测试：**&#x200B;启用&#x200B;**[!UICONTROL 返回时测试]**&#x200B;选项。
       * **验证查询：**&#x200B;指定SQL SELECT查询以验证池中的连接。 查询必须至少返回一行。 例如，**从customerdetails**&#x200B;中选择&#42;。
       * **事务隔离**：将该值设置为&#x200B;**READ_COMMITTED**。
 
@@ -131,17 +144,17 @@ AEM [!DNL Forms]提供了一个直观的用户界面，用于[从配置的数据
 
    * **数据模型对象**：
 
-      * id
-      * name
-      * shippingAddress
-      * 城市
-      * 州/省
-      * 邮政编码
+     * id
+     * name
+     * shippingAddress
+     * 城市
+     * 州/省
+     * 邮政编码
 
    * **服务：**
 
-      * get
-      * 更新
+     * get
+     * 更新
 
    选择&#x200B;**添加选定项**&#x200B;以将选定数据模型对象和服务添加到表单数据模型。
 
@@ -162,11 +175,11 @@ AEM [!DNL Forms]提供了一个直观的用户界面，用于[从配置的数据
 
       ![写入默认值](assets/write-default.png)
 
-      按如下方式添加和配置 **id** 参数。
+      按如下方式添加和配置&#x200B;**id**&#x200B;参数。
 
       ![id-arg](assets/id-arg.png)
 
-   1. 选择“完成&#x200B;**”**&#x200B;以保存数据模型对象属性。然后，选择 **[!UICONTROL 保存]** 以保存表单数据模型。
+   1. 选择&#x200B;**[!UICONTROL 完成]**&#x200B;以保存数据模型对象属性。 然后，选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存表单数据模型。
 
       **[!UICONTROL get]**&#x200B;和&#x200B;**[!UICONTROL update]**&#x200B;服务已添加为数据模型对象的默认服务。
 
@@ -243,4 +256,4 @@ AEM [!DNL Forms]提供了一个直观的用户界面，用于[从配置的数据
 
 >[!NOTE]
 >
-> 您可以使用自适应表单中的表单数据模型创建和使用SharePoint列表配置，以在SharePoint列表中保存数据或生成的记录文档。 有关详细步骤，请参阅[将自适应表单连接到Microsoft® SharePoint列表](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration)。
+> 您可以使用自适应表单中的表单数据模型创建和使用SharePoint列表配置，以在SharePoint列表中保存数据或生成的记录文档。 有关详细步骤，请参阅[将自适应表单连接到® SharePoint列表](/help/forms/using/configuring-submit-actions.md#create-a-sharepoint-list-configuration)。

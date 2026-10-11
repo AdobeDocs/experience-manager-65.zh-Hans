@@ -9,16 +9,25 @@ exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '492'
-ht-degree: 0%
-
+source-wordcount: '497'
+ht-degree: 3%
 ---
-
 # 自适应模板渲染{#adaptive-template-rendering}
 
-自适应模板渲染提供了一种管理具有变体的页面的方法。 这项功能最初对于为移动设备提供各种HTML输出很有用（例如，功能手机与智能电话），但在需要将体验交付到需要不同标记或HTML输出的各种设备时，这项功能非常有用。
+自适应模板渲染提供了一种管理具有变体的页面的方法。 此功能最初对于为移动设备交付各种HTML输出（例如，功能手机与智能手机对比）很有用，但在必须向需要不同标记或HTML输出的各种设备交付体验时，此功能非常有用。
 
 ## 概述 {#overview}
 
@@ -63,7 +72,7 @@ ht-degree: 0%
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. 使用CRXDE Lite，通过将设备组添加到网站结构上的多值字符串属性`cq:deviceGroups`中，允许在网站上使用该设备组。
+1. 使用CRXDE Lite，通过将设备组添加到网站结构上的多值字符串属性`cq:deviceGroups`中，允许在您的网站上使用该设备组。
 
    `/content/<your-site>/jcr:content`
 

@@ -9,13 +9,27 @@ exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '459'
 ht-degree: 5%
-
 ---
-
 # 创建登录界面{#creating-a-new-login-screen}
 
 您可以修改所有使用AEM Forms登录屏幕的AEM Forms模块的登录屏幕。 例如，修改会同时影响Forms Manager和AEM Forms工作区的登录屏幕。
@@ -25,7 +39,7 @@ ht-degree: 5%
 1. 使用管理员权限在`/lc/crx/de`登录。
 1. 执行以下操作：
 
-   1. 在`/libs/livecycle/core/content`处复制`/apps/livecycle/core/content`的分层结构。
+   1. 在`/apps/livecycle/core/content`处复制`/libs/livecycle/core/content`的分层结构。
 
       维护相同的（节点/文件夹）属性和访问控制。
 
@@ -39,7 +53,7 @@ ht-degree: 5%
 
 1. 执行以下操作：
 
-   1. 在`/libs/livecycle/core/components/login`处复制`/apps/livecycle/core/components/login`的分层结构。 维护相同的（节点/文件夹）属性和访问控制。
+   1. 在`/apps/livecycle/core/components/login`处复制`/libs/livecycle/core/components/login`的分层结构。 维护相同的（节点/文件夹）属性和访问控制。
 
    1. 将组件文件夹：从`/libs/livecycle/core`复制到`/apps/livecycle/core`。
 
@@ -58,7 +72,7 @@ ht-degree: 5%
 
    1. 将文件夹重命名为要支持的区域设置名称。 例如 `ar`。
 
-   1. 将`jcr:language`文件夹的属性`ar`值更改为`ar`。
+   1. 将`ar`文件夹的属性`jcr:language`值更改为`ar`。
 
    >[!NOTE]
    >
@@ -245,7 +259,7 @@ ht-degree: 5%
    * 从 `/libs/livecycle/core/content`
    * 至`/apps/livecycle/core/content`
 
-1. 从节点`login.js`删除文件`jquery-1.8.0.min.js`和`/apps/livecycle/core/content/login.`
+1. 从节点`/apps/livecycle/core/content/login.`删除文件`login.js`和`jquery-1.8.0.min.js`
 1. 修改CSS文件中的样式。
 1. 要添加新样式，请执行以下操作：
 

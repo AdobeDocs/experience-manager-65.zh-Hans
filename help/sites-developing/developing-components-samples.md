@@ -1,5 +1,5 @@
 ---
-title: 开发AEM组件 — 代码示例
+title: 开发 AEM 组件——代码示例
 description: 本节提供了有关如何为AEM创建自己的组件的一些示例。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,21 +10,30 @@ exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '203'
-ht-degree: 5%
-
+source-wordcount: '244'
+ht-degree: 11%
 ---
-
-# 开发AEM组件 — 代码示例{#developing-aem-components-code-samples}
+# 开发 AEM 组件——代码示例{#developing-aem-components-code-samples}
 
 本节提供了有关如何为AEM创建自己的组件的一些示例。
 
 有关底层概念，请参阅：
 
 * [AEM组件 — 基础知识](/help/sites-developing/components-basics.md)
-* [开发AEM组件](/help/sites-developing/developing-components.md)
+* [开发 AEM 组件](/help/sites-developing/developing-components.md)
 
 有关经典UI的信息，请参阅经典UI的[AEM组件](/help/sites-developing/developing-components-classic.md)。
 
@@ -42,7 +51,7 @@ GITHUB上的代码
 
 您可以在GitHub上找到此页面的代码
 
-* 在GitHub上[打开aem-authoring-dialog-fields-customization项目](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
+* [在GitHub上打开aem-authoring-dialog-fields-customization项目](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
 * 将项目下载为[ZIP文件](https://codeload.github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/zip/refs/heads/master)
 
 >[!NOTE]

@@ -9,13 +9,20 @@ role: Admin
 exl-id: 36f2e3d2-46c7-48a8-a1e9-213f581bd9f3
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '324'
+source-wordcount: '326'
 ht-degree: 0%
-
 ---
-
 # 社区控制台 {#communities-consoles}
 
 AEM Communities的控制台可在全局导航面板的创作环境中使用，用于访问管理任务，例如：
@@ -28,13 +35,13 @@ AEM Communities的控制台可在全局导航面板的创作环境中使用，�
 * 创建[自定义徽章](badges.md)
 * 正在为UGC[&#128279;](srp-config.md)配置默认存储
 
-当[UGC存储](working-with-srp.md)配置为由Author和Publish环境共享的公用存储时，可在Author和Publish环境中使用的[审核控制台](moderation.md)在UGC的单独实例上运行。
+将[UGC存储](working-with-srp.md)配置为创作和发布环境共享的公用存储时，可在创作和发布环境中使用的[审核控制台](moderation.md)在UGC的单独实例上运行。
 
 在创作环境中，以管理员权限登录后，`Communities`控制台可以从导航和工具控制台中使用。
 
 >[!NOTE]
 >
->在Publish环境中，当登录成员具有相应的权限时，[社区站点](sites-console.md)会显示`Administration`菜单项。
+>在发布环境中，当登录成员具有适当权限时，[社区站点](sites-console.md)显示`Administration`菜单项。
 
 ## 全局导航面板 {#global-navigation-panel}
 
@@ -55,11 +62,11 @@ AEM Communities的控制台可在全局导航面板的创作环境中使用，�
 
 * [审核](moderation.md)
 
-  “审阅”控制台用于批量审阅UGC和创作环境。 在Publish环境中，对于一个或多个社区站点，分配了[社区审查方](users.md#publishenvironmentusersandgroups)角色的社区成员可以访问类似的批量审查控制台。
+  “审阅”控制台用于批量审阅UGC和创作环境。 在“发布”环境中，对于一个或多个社区站点，分配了[社区审查方](users.md#publishenvironmentusersandgroups)角色的社区成员，也可以访问类似的批量审查控制台。
 
 * [成员、组](members.md)
 
-  “成员”和“组”控制台用于从创作环境管理Publish环境中存在的社区成员和成员组。
+  “成员”和“组”控制台用于从创作环境管理发布环境中存在的社区成员和成员组。
 
 * [报告](reports.md)
 

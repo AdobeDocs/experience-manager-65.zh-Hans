@@ -1,6 +1,6 @@
 ---
-title: 使用“连接的Assets”在 [!DNL Sites]中共享DAM资源
-description: 在另一个 [!DNL Adobe Experience Manager Sites] 部署中创建网页时，使用远程 [!DNL Adobe Experience Manager Assets] 部署中的可用资产。
+title: 在[!DNL Sites]中使用“连接的Assets”共享DAM资源
+description: 在另一个[!DNL Adobe Experience Manager Sites]部署中创建网页时，使用远程[!DNL Adobe Experience Manager Assets]部署中的可用资源。
 contentOwner: AK
 mini-toc-levels: 2
 role: User, Admin, Leader
@@ -8,13 +8,31 @@ feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 3aa2a621-ec4f-5c9b-bbb0-bd5a3b1279a6
+    internal-label: User and Groups
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: f498a57f-d890-4726-b1d0-8f291d1e6206
+    internal-label: Connected assets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '3999'
+source-wordcount: '4025'
 ht-degree: 15%
-
 ---
-
 # 在[!DNL Experience Manager Sites]中使用“连接的Assets”共享DAM资源 {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
 | 版本 | 文章链接 |
@@ -23,7 +41,7 @@ ht-degree: 15%
 | AEM 6.5 | 本文 |
 
 
-在大型企业中，可以分发创建网站所需的基础环境。 有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。 一个原因可能是地理上分散但需要协同工作的现有部署。 另一个原因可能是并购导致基础架构存在差异，包括母公司希望一起使用的不同[!DNL Experience Manager]版本。
+在大型企业中，创建网站所需的基础架构可能是分布式的。 有时，网站创建功能和用于创建这些网站的数字资产可能驻留在不同的部署中。 一个原因可能是地理上分散但需要协同工作的现有部署。 另一个原因可能是并购导致基础架构存在差异，包括母公司希望一起使用的不同[!DNL Experience Manager]版本。
 
 通过集成[!DNL Experience Manager Sites]和[!DNL Experience Manager Assets]，“连接的Assets”功能支持上述用例。 用户可以在[!DNL Sites]中创建使用来自单独[!DNL Assets]部署的数字资产的网页。
 
@@ -68,7 +86,7 @@ ht-degree: 15%
 | [!DNL Sites]作者 | 本地 | <ul><li>`Authors` （对远程DAM具有读取访问权限，对本地[!DNL Sites]具有作者访问权限） </li> <li>本地[!DNL Sites]上的`dam-users`</li></ul> | `ksaner` | 最终用户是使用此集成提高内容速度的[!DNL Sites]作者。 作者使用[!UICONTROL 内容查找器]在本地Web页中使用所需的图像在远程DAM中搜索和浏览资产。 使用的 DAM 用户的 `ksaner` 凭据。 |
 | [!DNL Assets]管理员 | 远程 | [!DNL Experience Manager] `administrators` | 远程[!DNL Experience Manager]上的`admin` | 配置跨源资源共享 (CORS)。 |
 | DAM 用户 | 远程 | `Authors` | 远程[!DNL Experience Manager]上的`ksaner` | 远程[!DNL Experience Manager]部署上的作者角色。 使用[!UICONTROL 内容查找器]在“连接的Assets”中搜索和浏览资源。 |
-| DAM 分发人员（技术用户） | 远程 | [!DNL Sites] `Authors` | 远程[!DNL Experience Manager]上的`ksaner` | [!DNL Experience Manager]本地服务器（不是[!DNL Sites]作者角色）代表[!DNL Sites]作者使用远程部署上的此用户获取远程资产。 此角色与上述两个 `ksaner` 角色不同，它属于另一个不同的用户组。 |
+| DAM 分销商（技术用户） | 远程 | [!DNL Sites] `Authors` | 远程[!DNL Experience Manager]上的`ksaner` | [!DNL Experience Manager]本地服务器（不是[!DNL Sites]作者角色）代表[!DNL Sites]作者使用远程部署上的此用户获取远程资产。 此角色与上述两个 `ksaner` 角色不同，它属于另一个不同的用户组。 |
 
 ### 连接的Assets架构 {#connected-assets-architecture}
 
@@ -103,7 +121,7 @@ ht-degree: 15%
 
    1. 配置的&#x200B;**[!UICONTROL 标题]**。
    1. **[!UICONTROL 远程DAM URL]**&#x200B;是[!DNL Assets]位置的URL，格式为`https://[assets_servername]:[port]`。
-   1. DAM 分发人员（技术用户）的凭据。
+   1. DAM 分销商（技术用户）的凭据。
    1. 在&#x200B;**[!UICONTROL 装入点]**&#x200B;字段中，输入[!DNL Experience Manager]获取资产的本地[!DNL Experience Manager]路径。 例如，`remoteassets` 文件夹。 从DAM获取的资产存储在[!DNL Sites]部署的此文件夹中。
    1. **[!UICONTROL 本地站点URL]**&#x200B;是[!DNL Sites]部署的位置。 [!DNL Assets]部署使用此值维护对此[!DNL Sites]部署获取的数字资产的引用。
    1. [!DNL Sites]技术用户的凭据。
@@ -162,7 +180,7 @@ ht-degree: 15%
 
 要在[!DNL Assets]和[!DNL Sites]部署中配置[!DNL Dynamic Media]，请执行以下操作：
 
-1. 在远程[!DNL Assets]作者部署上启用[!DNL Dynamic Media]并将其配置为全局配置。要配置Dynamic Media，请参阅[配置Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)。
+1. 在远程[!DNL Assets]作者部署上启用[!DNL Dynamic Media]并将其配置为全局配置。 要配置Dynamic Media，请参阅[配置Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services)。
 在远程[!DNL Assets]部署的[!UICONTROL Dynamic Media同步模式]中，选择&#x200B;**[!UICONTROL 默认启用]**。
 
 1. 创建连接的Assets配置，如[配置站点与资源部署之间的连接](#configure-a-connection-between-sites-and-assets-deployments)中所述。 此外，选择&#x200B;**[!UICONTROL 为Dynamic Media连接的Assets获取原始演绎版]**&#x200B;选项。
@@ -177,7 +195,7 @@ ht-degree: 15%
 
 ## 使用远程资产 {#use-remote-assets}
 
-网站作者使用内容查找器连接到DAM部署。 作者可以浏览、搜索以及拖动组件中的远程资产。 要验证远程DAM，请准备好管理员提供的凭据（如果有）。
+网站作者使用内容查找器连接到DAM部署。 作者可以浏览、搜索以及将远程资产拖到组件中。 要验证远程DAM，请准备好管理员提供的凭据（如果有）。
 
 作者可以在单个网页中使用本地DAM和远程DAM部署上可用的资产。 使用内容查找器，可在搜索本地 DAM 与搜索远程 DAM 之间切换。
 
@@ -185,7 +203,7 @@ ht-degree: 15%
 
 ### 使用说明演示 {#walk-through-of-usage}
 
-使用上述设置尝试创作体验，以了解该功能是如何运作的。 使用您在远程 DAM 部署中选择的文档或图像。
+使用上述设置尝试创作体验，以了解该功能是如何运作的。 在远程 DAM 部署上使用您自行选择的文档或图像。
 
 1. 通过从[!DNL Experience Manager]工作区访问&#x200B;**[!UICONTROL Assets]** > **[!UICONTROL 文件]**，导航到远程部署上的[!DNL Assets]界面。 或者，也可以在浏览器中访问 `https://[assets_servername_ams]:[port]/assets.html/content/dam`。 上传您选择的资产。
 1. 在[!DNL Sites]部署上，在右上角的配置文件激活器中单击&#x200B;**[!UICONTROL 模拟为]**。 提供 `ksaner` 作为用户名，选择提供的选项，然后单击&#x200B;**[!UICONTROL 确定]**。
@@ -325,7 +343,7 @@ ht-degree: 15%
 * 仅支持图像和列出的文档格式。 不支持[!DNL Content Fragments]和[!DNL Experience Fragments]。
 * [!DNL Experience Manager]未获取元数据架构。 这意味着可能无法显示所有获取的元数据。 如果在[!DNL Sites]部署中单独更新架构，则会显示所有元数据属性。
 * 所有[!DNL Sites]作者都拥有对获取的副本的读取权限，即使作者无法访问远程DAM部署。
-* 没有支持自定义集成的 API。
+* 没有用于自定义集成的 API 支持。
 * 该功能支持无缝搜索和使用远程资产。 为了能够在本地部署中一次使用许多远程资产，请考虑批量迁移这些资产。 请参阅 [Assets 迁移指南](assets-migration-guide.md)。
 * 无法在[!UICONTROL 页面属性]用户界面上将远程资产用作页面缩略图。 您可以从[!UICONTROL 缩略图]的[!UICONTROL 页面属性]用户界面中设置网页的缩略图，方法是单击[!UICONTROL 选择图像]。
 
@@ -339,7 +357,7 @@ ht-degree: 15%
 ### 用途 {#usage}
 
 * 用户可以在创作时搜索远程资产并将这些资产拖动到本地页面上。 不支持其他功能。
-* 获取操作会在 5 秒后超时。 作者在获取资产时可能会遇到问题，比如，网络问题。 作者可以通过将远程资产从[!UICONTROL 内容查找器]拖到[!UICONTROL 页面编辑器]来重新尝试。
+* 获取操作会在 5 秒后超时。 例如，如果存在网络问题，作者在获取资产时可能会遇到问题。 作者可以通过将远程资产从[!UICONTROL 内容查找器]拖到[!UICONTROL 页面编辑器]来重新尝试。
 * 可以对获取的资产执行无损的简单编辑以及通过`Image`组件支持的编辑。 资产是只读的。
 * 重新获取资产的唯一方法是将其拖动到页面上。 没有API支持或其他方法可重新获取资产以对其进行更新。
 * 如果从DAM中停用资产，则这些资产将继续在[!DNL Sites]页面上使用。

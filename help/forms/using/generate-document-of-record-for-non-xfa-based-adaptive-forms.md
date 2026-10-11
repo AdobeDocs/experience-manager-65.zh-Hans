@@ -9,16 +9,32 @@ feature: Adaptive Forms,Foundation Components
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4312'
+source-wordcount: '4370'
 ht-degree: 4%
-
 ---
-
 # 为自适应表单或自适应表单片段生成记录文档 {#generate-document-of-record-for-adaptive-forms}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -51,8 +67,8 @@ ht-degree: 4%
 * [XML架构](../../forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-xml-or-json-schema)
 允许您为自适应表单选择XML架构定义。 在为自适应表单选择XML架构时，您可以：
 
-   * 为记录文档关联XFA模板。 确保关联的XFA模板使用与您的自适应表单相同的XML架构
-   * 自动生成记录文档
+  * 为记录文档关联XFA模板。 确保关联的XFA模板使用与您的自适应表单相同的XML架构
+  * 自动生成记录文档
 
 * 无
 允许您创建没有表单模型的自适应表单。 系统会自动为您的自适应表单生成记录文档。
@@ -393,23 +409,23 @@ ht-degree: 4%
 * **从记录文档排除标题：**&#x200B;设置属性会从记录文档排除面板/表的标题。 仅适用于面板和表格。
 * **从记录文档排除描述：**&#x200B;设置属性从记录文档排除面板/表的描述。 仅适用于面板和表格。
 * **[!UICONTROL 分页]** > **[!UICONTROL 放置]**：确定您选择放置面板的位置。
-   * **[!UICONTROL 置入]** > **[!UICONTROL 置于上一项]**：将面板置于父面板中上一对象的后面。
-   * **[!UICONTROL 放置]** > **[!UICONTROL 在内容区域中]** >内容区域的名称：将面板放置在指定的内容区域中。
-   * **[!UICONTROL 放置]** > **[!UICONTROL 位于下一个内容区域的顶部]**：将面板置于下一个内容区域的顶部。
-   * **[!UICONTROL 放置]** > **[!UICONTROL 内容区域顶部]** >内容区域名称：将面板放置在指定内容区域的顶部。
-   * **[!UICONTROL 放置]** > **[!UICONTROL 在页面上]** >母版页的名称：将面板放置在指定的页面上。 如果未自动插入分页符，[!DNL AEM Forms]将添加分页符。
-   * **[!UICONTROL 置入]** > **[!UICONTROL 下一页顶部]**：将面板置于下一页顶部。 如果未自动插入分页符，[!DNL AEM Forms]将添加分页符。
-   * **[!UICONTROL 置入]** > **[!UICONTROL 页面顶部]** >母版页的名称：呈现指定的页面时，将面板置于页面顶部。 如果未自动插入分页符，[!DNL AEM Forms]将添加分页符。
+  * **[!UICONTROL 置入]** > **[!UICONTROL 置于上一项]**：将面板置于父面板中上一对象的后面。
+  * **[!UICONTROL 放置]** > **[!UICONTROL 在内容区域中]** >内容区域的名称：将面板放置在指定的内容区域中。
+  * **[!UICONTROL 放置]** > **[!UICONTROL 位于下一个内容区域的顶部]**：将面板置于下一个内容区域的顶部。
+  * **[!UICONTROL 放置]** > **[!UICONTROL 内容区域顶部]** >内容区域名称：将面板放置在指定内容区域的顶部。
+  * **[!UICONTROL 放置]** > **[!UICONTROL 在页面上]** >母版页的名称：将面板放置在指定的页面上。 如果未自动插入分页符，[!DNL AEM Forms]将添加分页符。
+  * **[!UICONTROL 置入]** > **[!UICONTROL 下一页顶部]**：将面板置于下一页顶部。 如果未自动插入分页符，[!DNL AEM Forms]将添加分页符。
+  * **[!UICONTROL 置入]** > **[!UICONTROL 页面顶部]** >母版页的名称：呈现指定的页面时，将面板置于页面顶部。 如果未自动插入分页符，[!DNL AEM Forms]将添加分页符。
 * **[!UICONTROL 分页]** > **[!UICONTROL After]**：确定放置面板后要填充的区域。**[!UICONTROL After]**&#x200B;部分中有以下字段可用：
-   * **[!UICONTROL After]** > **[!UICONTROL 继续填充父项]**：继续合并父面板中剩余要填充的所有对象的数据。
-   * **[!UICONTROL After]** > **[!UICONTROL 转到下一个内容区域]**：在放置面板后开始填充下一个内容区域。
-   * **[!UICONTROL After]** > **[!UICONTROL 转到内容区域]** >内容区域名称：在放置面板后开始填充指定的内容区域。
-   * **[!UICONTROL After]** > **[!UICONTROL 转到下一页]**：在放置面板后开始填充下一页。
-   * **[!UICONTROL After]** > **[!UICONTROL 转到页面]** >页面名称：在放置面板后开始填充指定的页面。
+  * **[!UICONTROL After]** > **[!UICONTROL 继续填充父项]**：继续合并父面板中剩余要填充的所有对象的数据。
+  * **[!UICONTROL After]** > **[!UICONTROL 转到下一个内容区域]**：在放置面板后开始填充下一个内容区域。
+  * **[!UICONTROL After]** > **[!UICONTROL 转到内容区域]** >内容区域名称：在放置面板后开始填充指定的内容区域。
+  * **[!UICONTROL After]** > **[!UICONTROL 转到下一页]**：在放置面板后开始填充下一页。
+  * **[!UICONTROL After]** > **[!UICONTROL 转到页面]** >页面名称：在放置面板后开始填充指定的页面。
 * **[!UICONTROL 分页]** > **[!UICONTROL 溢出]**：为跨页面的面板或表设置溢出。 **[!UICONTROL 溢出]**&#x200B;部分中有以下字段可用：
-   * **[!UICONTROL 溢出]** > **[!UICONTROL 无]**：开始填充下一页。 如果未自动插入分页符，[!DNL AEM Forms]将添加分页符。
-   * **[!UICONTROL 溢出]** > **[!UICONTROL 转到内容区域]** >内容区域的名称：开始填充指定的内容区域。
-   * **[!UICONTROL 溢出]** > **[!UICONTROL 转到页面]** >页面名称：开始填充指定的页面。
+  * **[!UICONTROL 溢出]** > **[!UICONTROL 无]**：开始填充下一页。 如果未自动插入分页符，[!DNL AEM Forms]将添加分页符。
+  * **[!UICONTROL 溢出]** > **[!UICONTROL 转到内容区域]** >内容区域的名称：开始填充指定的内容区域。
+  * **[!UICONTROL 溢出]** > **[!UICONTROL 转到页面]** >页面名称：开始填充指定的页面。
 
   >[!NOTE]
   >
@@ -420,21 +436,21 @@ ht-degree: 4%
 **表单级别设置**
 
 * **[!UICONTROL 基本]**
-   * **模板：**&#x200B;您可以选择“默认”或“自定义”模板。
-     ![替换文本](image.png)
-   * **个性色：**&#x200B;您可以预定义[!UICONTROL 记录文档]的模板颜色。
-   * **字体系列：**&#x200B;为[!UICONTROL 记录文档]文本选择字体类型。
-   * **包括DoR中未绑定的字段：**&#x200B;设置属性包括来自[!UICONTROL 记录文档]中基于架构的自适应表单的未绑定字段。 默认情况下，它为true。
-   * **隐藏时从DoR中排除字段：**&#x200B;设置属性以在提交表单时从[!UICONTROL 记录文档]中排除隐藏字段。 在服务器[&#128279;](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)上启用重新验证时，服务器会重新计算隐藏字段，然后再从[!UICONTROL 记录文档]中排除这些字段
+  * **模板：**&#x200B;您可以选择“默认”或“自定义”模板。
+    ![替换文本](image.png)
+  * **个性色：**&#x200B;您可以预定义[!UICONTROL 记录文档]的模板颜色。
+  * **字体系列：**&#x200B;为[!UICONTROL 记录文档]文本选择字体类型。
+  * **包括DoR中未绑定的字段：**&#x200B;设置属性包括来自[!UICONTROL 记录文档]中基于架构的自适应表单的未绑定字段。 默认情况下，它为true。
+  * **隐藏时从DoR中排除字段：**&#x200B;设置属性以在提交表单时从[!UICONTROL 记录文档]中排除隐藏字段。 在服务器[&#128279;](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)上启用重新验证时，服务器会重新计算隐藏字段，然后再从[!UICONTROL 记录文档]中排除这些字段
 * **[!UICONTROL 表单字段属性]**
-   * 如果勾选选项&#x200B;**对于复选框和单选按钮组件，则仅显示选定的值**，它将生成仅具有选定值的DoR输出。
-   * 可以为多个选定值选择分隔符，也可以选择任何其他分隔符类型。
-   * 选项对齐
-      * 垂直
-      * 水平
-      * 与自适应表单相同
-     >[!NOTE]
-     > 垂直对齐和水平对齐仅适用于单选按钮和复选框
+  * 如果勾选选项&#x200B;**对于复选框和单选按钮组件，则仅显示选定的值**，它将生成仅具有选定值的DoR输出。
+  * 可以为多个选定值选择分隔符，也可以选择任何其他分隔符类型。
+  * 选项对齐
+    * 垂直
+    * 水平
+    * 与自适应表单相同
+    >[!NOTE]
+    > 垂直对齐和水平对齐仅适用于单选按钮和复选框
 * **[!UICONTROL 母版页属性]**&#x200B;有关[母版页属性](#master-page-properties-master-page-properties)的详细信息，请单击
 
 ## 在记录文档中应用分页符 {#apply-page-breaks-in-dor}

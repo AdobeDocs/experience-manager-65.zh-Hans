@@ -10,20 +10,38 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1096'
-ht-degree: 78%
-
+source-wordcount: '1098'
+ht-degree: 77%
 ---
-
 # 创建启动项{#creating-launches}
 
-可创建启动项，以允许更新现有网页的新版本，以便将来激活。在创建启动项时，需要指定标题和源页面：
+可创建启动项，以允许更新现有网页的新版本，以便将来激活。 在创建启动项时，需要指定标题和源页面：
 
 * 标题会显示在[“引用”](/help/sites-authoring/author-environment-tools.md#references)边栏中，作者可以从中访问启动项，从而对其进行处理。
-* 默认情况下，源页面的子页面包含在启动项中。必要时，可只使用源页面。
-* 默认情况下，[Live Copy](/help/sites-administering/msm.md) 会在源页面发生更改时自动更新启动页面。您可以指定创建一个静态副本，以防止自动更改。
+* 默认情况下，源页面的子页面包含在启动项中。 必要时，可只使用源页面。
+* 默认情况下，[Live Copy](/help/sites-administering/msm.md) 会在源页面发生更改时自动更新启动页面。 您可以指定创建一个静态副本，以防止自动更改。
 
 （可选）您可以指定启 **动日期** （和时间）以定义何时提升和激活启动页面。 但是，启 **动日期仅与生产就绪标** 志结合使用(请 **参阅编辑启动配置**&#x200B;[&#128279;](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration));要使动作实际自动发生，必须同时设置这两个操作。
 
@@ -41,12 +59,12 @@ ht-degree: 78%
 
    * **启动项**：
 
-      1. 从工具栏中选择&#x200B;**创建启动项**&#x200B;以打开向导。
+     1. 从工具栏中选择&#x200B;**创建启动项**&#x200B;以打开向导。
 
    * **Sites**：
 
-      1. 从工具栏中选择&#x200B;**“创建”**&#x200B;以打开选择框。
-      1. 从该选择框中，选择&#x200B;**创建启动项**&#x200B;以打开向导。
+     1. 从工具栏中选择&#x200B;**“创建”**&#x200B;以打开选择框。
+     1. 从该选择框中，选择&#x200B;**创建启动项**&#x200B;以打开向导。
 
    >[!NOTE]
    >
@@ -54,7 +72,7 @@ ht-degree: 78%
    >
    >这将使用选定的页面作为初始源页面。
 
-1. 在&#x200B;**“选择源”**&#x200B;步骤中，您需要&#x200B;**“添加页面”**。您可以通过指定每个页面的路径来选择多个页面：
+1. 在&#x200B;**“选择源”**&#x200B;步骤中，您需要&#x200B;**“添加页面”**。 您可以通过指定每个页面的路径来选择多个页面：
 
    * 导航到所需的位置。
    * 选择源页面并进行确认（复选标记）。
@@ -75,7 +93,7 @@ ht-degree: 78%
 
    * **包括子页面**:
 
-      * 指定您希望创建的启动项包括还是不包括子页面。  默认情况下，将包括这些子页面。
+     * 指定您希望创建的启动项包括还是不包括子页面。  默认情况下，将包括这些子页面。
 
    继续&#x200B;**“下一步”**。
 
@@ -83,10 +101,10 @@ ht-degree: 78%
 
 1. 在向导的&#x200B;**“属性”**&#x200B;步骤中，您可以指定：
 
-   * **启动项标题**：启动项的名称。该名称应当体现出作者的相关信息。
+   * **启动项标题**：启动项的名称。 该名称应当体现出作者的相关信息。
    * **包含现有内容**：使用原始内容创建启动项。
    * **使用新模板替换页面**：有关更多详细信息，请参阅[使用新模板创建启动项](#create-launch-with-new-template)。
-   * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。此选项通过将启动项设为[Live Copy](/help/sites-administering/msm.md)来实现此目标。
+   * **继承源页面活动数据**：选中此选项，可在源页面发生更改时自动更新启动页面的内容。 此选项通过将启动项设为[Live Copy](/help/sites-administering/msm.md)来实现此目标。
 
      默认情况下，此选项处于选中状态。
 
@@ -94,12 +112,12 @@ ht-degree: 78%
 
    ![指定属性](assets/chlimage_1-227.png)
 
-1. 使用&#x200B;**“创建”**&#x200B;完成该过程并创建新启动项。确认对话框将询问您是否要立即打开该启动项：
+1. 使用&#x200B;**“创建”**&#x200B;完成该过程并创建新启动项。 确认对话框将询问您是否要立即打开该启动项：
 
    如果您返回控制台（单击&#x200B;**完成**），则可以从以下任一位置查看（并访问）您的启动项：
 
    * [**启动项**&#x200B;控制台](/help/sites-authoring/launches.md#the-launches-console)
-   * [**站点**&#x200B;控制台&#x200B;**中的**&#x200B;引用](/help/sites-authoring/launches.md#launches-in-references-sites-console)
+   * **站点**&#x200B;控制台[&#128279;](/help/sites-authoring/launches.md#launches-in-references-sites-console)中的&#x200B;**引用**
 
 ### 使用新模板创建启动项 {#create-launch-with-new-template}
 
@@ -107,7 +125,7 @@ ht-degree: 78%
 
 >[!CAUTION]
 >
->此选项仅在从&#x200B;**Sites**&#x200B;控制台中创建启动项时可用。在从&#x200B;**启动项**&#x200B;控制台中创建启动项时，此选项不可用。
+>此选项仅在从&#x200B;**Sites**&#x200B;控制台中创建启动项时可用。 在从&#x200B;**启动项**&#x200B;控制台中创建启动项时，此选项不可用。
 
 ![使用新模板替换页面](assets/chlimage_1-228.png)
 
@@ -154,7 +172,7 @@ ht-degree: 78%
 
 1. 输入&#x200B;**“启动项标题”**&#x200B;和任何其他所需的详细信息（与常规启动项一样）。
 
-1. 使用&#x200B;**“创建”**&#x200B;完成该过程并创建新启动项。确认对话框将询问您是否要立即打开该启动项：
+1. 使用&#x200B;**“创建”**&#x200B;完成该过程并创建新启动项。 确认对话框将询问您是否要立即打开该启动项：
 
    如果选择&#x200B;**“完成”**，您将返回到&#x200B;**Sites**&#x200B;控制台的&#x200B;**引用**&#x200B;边栏，如果您选择了相应的页面，则会显示新的启动项。
 
@@ -164,8 +182,8 @@ ht-degree: 78%
 
 * 通过点按/单击缩略图选择相应的启动项。
 * 工具栏即会显示 — 选择“克隆”。
-   * 克隆将创建并显示在控制台中。
-   * **启动项标题**&#x200B;将指示它是克隆。 您可以通过编辑[启动项配置](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) （**属性**）来更新标题。
+  * 克隆将创建并显示在控制台中。
+  * **启动项标题**&#x200B;将指示它是克隆。 您可以通过编辑[启动项配置](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration) （**属性**）来更新标题。
 
 ## 删除启动项 {#deleting-a-launch}
 

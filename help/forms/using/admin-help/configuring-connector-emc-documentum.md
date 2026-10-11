@@ -1,6 +1,6 @@
 ---
-title: 为EMC Documentum配置连接器
-description: 了解如何配置EMC Documentum连接器，以实现AEM Forms与EMC Documentum之间的通信。
+title: 配置 EMC Documentum 连接器
+description: 了解如何配置Connector for EMC Documentum ，以实现AEM Forms与EMC Documentum之间的通信。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -9,14 +9,28 @@ exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 1%
-
+source-wordcount: '1043'
+ht-degree: 2%
 ---
-
-# 为EMC Documentum配置连接器 {#configuring-connector-for-emc-documentum}
+# 配置 EMC Documentum 连接器 {#configuring-connector-for-emc-documentum}
 
 >[!NOTE]
 > 
@@ -28,7 +42,7 @@ Connector for EMC Documentum实现了AEM Forms与EMC Documentum之间的通信�
 
 >[!NOTE]
 >
->在早期版本中，资产可以存储在ECM存储库中。 在当前版本中，资产存储在AEM Forms本地存储库中，并且已弃用存储库Provider服务。 在升级到AEM表单时，将资产从ECM存储库迁移到AEM表单存储库。 有关详细信息，请参阅适用于您的应用程序服务器的AEM表单升级指南。
+>在早期版本中，资产可以存储在ECM存储库中。 在当前版本中，资产存储在AEM表单本地存储库中，并且存储库提供程序服务已被弃用。 当您升级到AEM表单时，会将资源从ECM存储库迁移到AEM表单存储库。 有关详细信息，请参阅适用于您的应用程序服务器的AEM表单升级指南。
 
 ## 配置服务器连接 {#configuring-the-server-connection}
 
@@ -72,7 +86,7 @@ Connector for EMC Documentum实现了AEM Forms与EMC Documentum之间的通信�
 
 >[!NOTE]
 >
->要选择除列出的系统信息库服务提供程序之外的其他系统信息库服务提供程序，请在“应用程序和服务”>“服务管理”中配置RepositoryService。<!-- Fix broken link (See Managing Services) -->。
+>要选择除列出的系统信息库服务提供程序之外的其他系统信息库服务提供程序，请在“应用程序和服务”>“服务管理”中配置RepositoryService。 <!-- Fix broken link (See Managing Services) -->.
 
 1. 在管理控制台中，单击“服务”>“EMC Documentum连接器”>“配置设置”。
 1. 在“资料库服务提供程序信息”区域中，选择替代资料库服务提供程序。
@@ -80,7 +94,7 @@ Connector for EMC Documentum实现了AEM Forms与EMC Documentum之间的通信�
 
 ## 配置存储库凭据 {#configuring-repository-credentials}
 
-Documentum凭据信息在AEM表单系统上下文中使用。 存储库凭据特定于Documentum中的特定存储库。 您可以为任意数量的存储库提供凭据；但是，您只能为每个存储库指定一组凭据。
+Documentum凭据信息用于AEM表单系统上下文。 存储库凭据特定于Documentum中的特定存储库。 您可以为任意数量的存储库提供凭据；但是，您只能为每个存储库指定一组凭据。
 
 ### 添加存储库凭据 {#add-a-repository-credential}
 

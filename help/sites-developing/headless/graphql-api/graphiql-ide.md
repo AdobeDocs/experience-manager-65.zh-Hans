@@ -5,13 +5,25 @@ exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '792'
 ht-degree: 91%
-
 ---
-
 # 使用 GraphiQL IDE {#graphiql-ide}
 
 标准[GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql) IDE的实施可与Adobe Experience Manager (AEM)的GraphQL API一起使用。
@@ -20,7 +32,7 @@ ht-degree: 91%
 >
 >GraphiQL 包含在 AEM 的所有环境中（但只有在配置端点时才可访问/显示）。
 >
->在以前的版本中，安装 GraphiQL IDE 时需要软件包。 如果您已安装此软件，现可将其移除。
+>在以前的版本中，安装 GraphiQL IDE 时需要软件包。 如果您已安装此包，现可将其移除。
 
 >[!NOTE]
 >在使用 GraphiQL IDE 之前，您必须在[配置浏览器](/help/assets/content-fragments/content-fragments-configuration-browser.md)中[配置您的端点](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)。
@@ -50,9 +62,9 @@ ht-degree: 91%
 
 第一步，您需要选择您想用于查询的&#x200B;**[端点](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)**。 该端点适用于您要用于查询的 Sites 配置。
 
-这可以从右上角的下拉列表中获得。
+可从右上角的下拉列表中找到此项。
 
-## 创建并持久新查询 {#creating-new-query}
+## 创建并持久保存新查询 {#creating-new-query}
 
 您可以在编辑器中输入新查询，该编辑器位于左中面板的 GraphiQL 徽标正下方。
 
@@ -83,7 +95,7 @@ ht-degree: 91%
 
 您可以立即运行新查询，或者加载并运行持久查询。 要加载持久查询，请从列表中选择它，查询会显示在编辑器面板中。
 
-在两种情况下，编辑器面板中显示的查询都是在以下情况下执行的查询：
+无论哪种情况，编辑器面板中显示的查询都是您执行以下任一操作时将执行的查询：
 
 * 单击&#x200B;**执行查询**&#x200B;图标
 * 使用键盘组合`Control-Enter`
@@ -172,7 +184,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 <!-- what happens if you try to delete something that is still published? -->
 
 
-## 正在生产环境中安装您的持久查询 {#installing-persisted-query-production}
+## 在生产环境中安装持久查询 {#installing-persisted-query-production}
 
 在使用 GraphiQL 开发和测试您的持久查询之后，最终目标是将其[转移到生产环境](/help/sites-developing/headless/graphql-api/persisted-queries.md#transfer-persisted-query-production)中，供应用程序使用。
 

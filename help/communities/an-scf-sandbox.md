@@ -9,20 +9,27 @@ exl-id: 89858814-6625-4a56-8359-cc1eca402816
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '494'
+source-wordcount: '512'
 ht-degree: 0%
-
 ---
-
 # 创建SCF沙盒  {#create-an-scf-sandbox}
 
 从AEM 6.1 Communities开始，快速创建沙盒的最简单方法是创建社区站点。 请参阅[AEM Communities快速入门](getting-started.md)。
 
 另一个对开发人员有用的工具是[社区组件指南](components-guide.md)，该指南允许探索和快速制作社区组件和功能的原型。
 
-创建网站的练习对于了解AEM网站的结构非常有用，该网站可能包括Communities功能，同时还提供了一些简单页面，可在其上探索使用[社交组件框架(SCF)](scf.md)。
+创建网站的练习对于了解AEM网站的结构会非常有用，该网站可能包括Communities功能，同时还提供了一些简单页面，可在其上探索使用[社交组件框架(SCF)](scf.md)。
 
 本教程主要面向不熟悉AEM且有兴趣使用SCF组件的开发人员。 它介绍如何创建SCF沙盒站点，与[如何创建功能完善的Internet网站](../../help/sites-developing/website.md)的教程类似，该教程侧重于站点上的结构，如导航、徽标、搜索、工具栏和列出子页面。
 
@@ -51,16 +58,16 @@ ht-degree: 0%
 
 * [快速入门](../../help/sites-deploying/deploy.md#getting-started)：用于部署AEM实例。
 
-   * [基础知识](../../help/sites-developing/the-basics.md)：适用于网站和功能的开发人员。
-   * [作者的首要步骤](../../help/sites-authoring/first-steps.md)：创作页面内容。
+  * [基础知识](../../help/sites-developing/the-basics.md)：适用于网站和功能的开发人员。
+  * [作者的首要步骤](../../help/sites-authoring/first-steps.md)：创作页面内容。
 
 ## 使用CRXDE Lite开发环境 {#using-crxde-lite-development-environment}
 
-AEM开发人员在[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)开发环境中将大部分时间花在创作实例上。 CRXDE Lite提供对CRX存储库的限制较少的访问。 经典UI工具和触屏优化UI控制台提供了对CRX存储库特定部分的更结构化访问。
+AEM开发人员在[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)开发环境中将大量时间用在创作实例上。 CRXDE Lite提供了对CRX存储库的更宽松的访问。 经典UI工具和触屏优化UI控制台提供了对CRX存储库特定部分的更结构化访问。
 
-使用管理权限登录后，可通过多种方式访问CRXDE Lite：
+以管理权限登录后，可通过多种方式访问CRXDE Lite：
 
-1. 从全局导航中，选择导航&#x200B;**[!UICONTROL 工具>CRXDE Lite]**。
+1. 从全局导航中，选择导航&#x200B;**[!UICONTROL 工具> CRXDE Lite]**。
 
    ![crxde-lite](assets/tools-crxde.png)
 
@@ -72,7 +79,7 @@ AEM开发人员在[CRXDE Lite](../../help/sites-developing/developing-with-crxde
 
    例如，在本地创作实例上：[http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-要使用CRXDE Lite功能，您必须使用开发人员或管理员权限登录。 对于默认的localhost实例，您可以登录使用
+要使用CRXDE Lite，您必须使用开发人员或管理员权限登录。 对于默认的localhost实例，您可以登录使用
 
 * `username: admin`
 * `password: admin`

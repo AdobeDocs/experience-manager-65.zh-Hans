@@ -1,19 +1,35 @@
 ---
 title: 有关资产使用和共享的报告
-description: 有关 [!DNL Adobe Experience Manager Assets] 中您的资产的报告，可帮助您了解数字资产的使用情况、活动和共享。
+description: 有关[!DNL Adobe Experience Manager Assets]中您的资产的报告，以帮助您了解数字资产的使用情况、活动和共享。
 contentOwner: AG
 role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 555cb326a4a554d98904cf1a2b27b609ba67c806
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1173'
+source-wordcount: '1174'
 ht-degree: 8%
-
 ---
-
 # 资产报告 {#asset-reports}
 
 | 版本 | 文章链接 |

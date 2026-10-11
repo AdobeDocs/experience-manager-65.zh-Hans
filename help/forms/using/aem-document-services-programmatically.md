@@ -8,13 +8,31 @@ feature: Document Services,APIs & Integrations
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
 exl-id: f2e4f509-cca2-44a3-9231-e1954b0fefe3
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '6595'
 ht-degree: 1%
-
 ---
-
 # 以编程方式使用 AEM 文档服务  {#using-aem-document-services-programmatically}
 
 本文档中的示例和示例可帮助您了解在OSGi环境上的AEM Forms上使用AEM Document Services 。 有关JEE环境上的AEM Forms的示例和示例，请参阅
@@ -278,28 +296,28 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>pageNumber</code></td>
-   <td>The page number on which the signature field is added. Valid values are 1 to the number of pages contained within the document. This parameter is mandatory and cannot accept a null value.<br /> </td>
+   <td>添加签名字段的页码。 有效值为1到文档中包含的页数。 此参数是必需的，不能接受null值。<br /> </td>
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
-   <td>A <code>PositionRectangle object</code> that specifies the position for the signature field. 此参数是必需的，不能接受null值。 If the specified rectangle does not lie at least partially on the crop box of the specified page, an <code>InvalidArgumentException</code> is thrown. Also, neither the height or width of the specified rectangle can be 0 or negative. Lower left X or lower left Y coordinates can be 0 or greater but not negative, and are relative to the crop box of the page.</td>
+   <td>指定签名字段位置的<code>PositionRectangle object</code>。 此参数是必需的，不能接受null值。 如果指定的矩形至少部分不位于指定页面的裁切框中，则会引发<code>InvalidArgumentException</code>。 此外，指定矩形的高度或宽度不能为0或负数。 左下X或左下Y坐标可以为0或更大，但不是负数，并且与页面的裁切框相关。</td>
   </tr>
   <tr>
    <td><code>fieldMDPOptionsSpec</code></td>
-   <td><code>FieldMDPOptionSpec</code>对象，它指定签名字段后锁定的PDF文档字段。 This is an optional parameter and can be null.</td>
+   <td><code>FieldMDPOptionSpec</code>对象，它指定签名字段后锁定的PDF文档字段。 这是一个可选参数，可以为null。</td>
   </tr>
   <tr>
    <td><code>seedValueOptionsSpec</code></td>
-   <td>指定字段的各种种子值的<code>SeedValueOptions</code>对象。 This is an optional parameter and can be null.</td>
+   <td>指定字段的各种种子值的<code>SeedValueOptions</code>对象。 这是一个可选参数，可以为null。</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
-   <td>Includes the parameters required to unlock an encrypted file. This parameter is required only for the encypted files.</td>
+   <td>包含解锁加密文件所需的参数。 只有加密的文件才需要此参数。</td>
   </tr>
  </tbody>
 </table>
 
-Here is a sample Java code that adds a signature field to a PDF document.
+以下是一个Java代码示例，用于向PDF文档添加签名字段。
 
 ```java
 /*************************************************************************
@@ -427,7 +445,7 @@ public class AddSignatureField {
 
 ### 应用文档时间戳 {#apply-document-timestamp}
 
-You can programmatically timestamp a document as per [PAdES 4](https://en.wikipedia.org/wiki/PAdES) specifications. You can also use [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) specification for transaction related documents.
+您可以按照[PAdES 4](https://en.wikipedia.org/wiki/PAdES)规范以编程方式为文档添加时间戳。 您也可以对事务相关文档使用[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)规范。
 
 **语法**： `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
@@ -445,19 +463,19 @@ You can programmatically timestamp a document as per [PAdES 4](https://en.wikipe
   </tr>
   <tr>
    <td><code>VerificationTime</code></td>
-   <td>The time at which the signature should be validated<br /> </td>
+   <td>签名应验证的时间<br /> </td>
   </tr>
   <tr>
    <td><code>ValidationPreferences</code> </td>
-   <td>Preferences to control validation configurations.</td>
+   <td>用于控制验证配置的首选项。</td>
   </tr>
   <tr>
    <td><code>ResourceResolver</code></td>
-   <td>Resource resolver to the granite trust store.</td>
+   <td>Granite信任存储区的资源解析程序。</td>
   </tr>
   <tr>
    <td><code>UnlockOptions</code></td>
-   <td>Includes the parameters require to unlock an encrypted file. This is required only if the file is encrypted.</td>
+   <td>包含解锁加密文件所需的参数。 仅当文件已加密时才需要此项。</td>
   </tr>
  </tbody>
 </table>
@@ -871,13 +889,13 @@ public class GetSignatureFields {
 }
 ```
 
-### Modifying signature fields  {#modifying-signature-fields-nbsp}
+### 修改签名字段  {#modifying-signature-fields-nbsp}
 
-You can modify signature fields that are in a PDF document. Modifying a signature field involves manipulating its signature field lock dictionary values or seed value dictionary values.
+您可以修改PDF文档中的签名字段。 修改签名字段涉及处理其签名字段锁定字典值或种子值字典值。
 
-A field lock dictionary specifies a list of fields that are locked when the signature field is signed. A locked field prevents users from editing the field. A seed value dictionary contains constraining information that is used at the time the signature is applied. For example, you can change permissions that control the actions that can occur without invalidating a signature.
+字段锁定字典指定签名字段签名时锁定的字段列表。 锁定的字段可阻止用户编辑该字段。 种子值字典包含应用签名时使用的约束信息。 例如，您可以更改在不使签名失效的情况下控制可能发生的操作的权限。
 
-By modifying an existing signature field, you can edit the PDF document to reflect changing business requirements. For example, a new business requirement requires locking all document fields after the document is signed.
+通过修改现有签名字段，可以编辑PDF文档以反映不断变化的业务要求。 例如，新的业务要求要求在签署文档后锁定所有文档字段。
 
 **语法**： `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
 
@@ -895,11 +913,11 @@ By modifying an existing signature field, you can edit the PDF document to refle
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>签名字段的名称。 This parameter is mandatory and cannot accept a null value.<br /> </td>
+   <td>签名字段的名称。 此参数是必需的，不能接受null值。<br /> </td>
   </tr>
   <tr>
    <td><code>pdfSignatureFieldProperties</code></td>
-   <td>Object that specifies information about the <code>PDFSeedValueOptionSpec</code> and <code>FieldMDPOptionSpec</code> values of the signature field.</td>
+   <td>指定有关签名字段<code>PDFSeedValueOptionSpec</code>和<code>FieldMDPOptionSpec</code>值的信息的对象。</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -908,7 +926,7 @@ By modifying an existing signature field, you can edit the PDF document to refle
  </tbody>
 </table>
 
-The following Java code sample modifies a signature field by locking all fields in the form when a signature is applied to the signature field.
+以下Java代码示例通过在签名应用于签名字段时锁定表单中的所有字段来修改签名字段。
 
 ```java
 /*************************************************************************
@@ -1038,11 +1056,11 @@ public class ModifySignatureField {
 }
 ```
 
-### Certifying PDF documents  {#certifying-pdf-documents-nbsp}
+### 认证PDF文档  {#certifying-pdf-documents-nbsp}
 
-You can secure a PDF document by certifying it with a particular type of signature called a certified signature. A certified signature is distinguished from a digital signature in these ways:
+您可以通过使用称为认证签名的特定签名类型来认证PDF文档，从而保护文档安全。 认证签名与数字签名在以下方面有所不同：
 
-* It must be the first signature applied to the PDF document. In other words, when the certified signature is applied, other signature fields in the document must be unsigned. Only one certified signature is permitted in a PDF document. To sign and certify a PDF document, certify it before signing it. 认证PDF文档后，您可以对附加签名字段进行数字签名。
+* 它必须是应用于PDF文档的第一个签名。 换言之，在应用经验证的签名时，文档中的其他签名字段必须未签名。 PDF文档中只允许一个认证签名。 要签署和认证PDF文档，请在签署之前进行认证。 认证PDF文档后，您可以对附加签名字段进行数字签名。
 * 文档的作者或创建者可以指定以特定方式修改文档，而不会使已验证签名失效。 例如，文档可以允许填写表单或添加注释。 如果作者指定不允许进行某些修改，Acrobat将限制用户以这种方式修改文档。 如果进行了此类修改，则认证签名无效。 此外，Acrobat会在用户打开文档时发出警告。 （对于未验证的签名，不会阻止修改，并且正常的编辑操作不会使原始签名失效。）
 * 在签署时，将扫描文档以查找可能会使文档内容不明确或误导性的特定内容类型。 例如，注释可能会遮蔽页面上的某些文本，而这些文本对于了解正在认证的内容非常重要。 可以就此类内容提供解释（法律证明）。
 
@@ -1351,32 +1369,32 @@ secureDocument允许您按特定顺序单独或以任何组合方式加密、签
 
 使用密码加密PDF文档时，用户必须指定密码才能在Adobe Reader或Acrobat中打开PDF文档。 此外，在其他AEM Forms Document Services操作使用该文档之前，必须解锁已密码加密的PDF文档。
 
-**Encrypting PDF documents with certificates**
+**使用证书加密PDF文档**
 
-Certificate-based encryption lets you encrypt a document for specific recipients using public key technology.
+基于证书的加密允许您使用公钥技术为特定收件人加密文档。
 
-Various recipients can be given different permissions for the document. Many aspects of encryption are made possible by public key technology.
+可以为各种收件人授予该文档的不同权限。 公钥技术使加密的许多方面成为可能。
 
-An algorithm is used to generate two large numbers, known as keys that have the following properties:
+算法用于生成两个大数字，称为具有以下属性的键：
 
-* One key is used to encrypt a set of data. Later, only the other key can be used to decrypt the data.
-* It is impossible to distinguish one key from the other.
-* One of the keys acts as a user&#39;s private key. It is important that only the user has access to this key.
-* The other key is the user&#39;s public key, which can be shared with others.
+* 一个密钥用于加密一组数据。 之后，只能使用另一个密钥来解密数据。
+* 一个键和另一个键无法区分。
+* 其中一个密钥充当用户的私钥。 仅用户有权访问此键很重要。
+* 另一个密钥是用户的公钥，可以与其他用户共享。
 
-A public key certificate contains a user&#39;s public key and identifying information. The X.509 format is used for storing certificates. Certificates are typically issued and digitally signed by a certificate authority (CA), which is a recognized entity that provides a measure of confidence in the validity of the certificate. Certificates have an expiration date, after which they are no longer valid.
+公钥证书包含用户的公钥和标识信息。 X.509格式用于存储证书。 证书通常由证书颁发机构(CA)颁发并进行数字签名，CA是一个公认的实体，提供对证书有效性的信任度量。 证书有过期日期，过期后不再有效。
 
-In addition, certificate revocation lists (CRLs) provide information about certificates that were revoked prior to their expiration date. CRLs are published periodically by certificate authorities. The revocation status of a certificate can also be retrieved through Online Certificate Status Protocol (OCSP) over the network.
+此外，证书吊销列表(CRL)提供在证书过期日期之前被吊销的证书的相关信息。 证书颁发机构定期发布CRL。 证书吊销状态也可以通过网络上的联机证书状态协议(OCSP)进行检索。
 
 >[!NOTE]
 >
->Before you can encrypt a PDF document with a certificate, you must ensure that you add the certificate to AEM Trust Store.
+>在使用证书加密PDF文档之前，必须确保将证书添加到AEM信任存储区。
 
-**Applying usage rights to PDF documents**
+**将使用权限应用于PDF文档**
 
-You can apply usage rights to PDF documents using the Reader Extensions Java Client API and web service. Usage rights pertain to functionality that is available by default in Acrobat but not in Adobe Reader, such as the ability to add comments to a form or to fill in form fields and save the form. PDF documents that have usage rights applied to them are called rights-enabled documents. A user who opens a rights-enabled document in Adobe Reader can perform operations that are enabled for that specific document.
+您可以使用PDF扩展Java客户端API和Web服务向Reader文档应用使用权限。 使用权限与默认在Acrobat中可用，但在Adobe Reader中不可用的功能相关，例如向表单添加注释或填写表单字段并保存表单的功能。 已应用使用权限的PDF文档称为启用权限的文档。 在Adobe Reader中打开启用了权限的文档的用户可以执行为该特定文档启用的操作。
 
-Before you can Reader Extend a PDF document with a certificate, you must ensure that you add the certificate to AEM Keystore.
+在Reader使用证书扩展PDF文档之前，必须确保将证书添加到AEM Keystore。
 
 **对PDF文档进行数字签名**
 
@@ -1440,19 +1458,19 @@ secureDocument(Document inDoc,
   </tr>
   <tr>
    <td><code>inDoc</code><br /> </td>
-   <td>Document input PDF Document<br /> </td>
+   <td>文档输入PDF文档<br /> </td>
   </tr>
   <tr>
    <td><code>encryptionOptions</code><br /> </td>
-   <td>Includes the arguments required for Encrypting a PDF Doc<br /> </td>
+   <td>包含加密PDF文档<br />所需的参数 </td>
   </tr>
   <tr>
    <td><code>signatureOptions</code></td>
-   <td>Includes the options required for Signing/Certifying a PDF Doc</td>
+   <td>包括签名/认证PDF文档所需的选项</td>
   </tr>
   <tr>
    <td><code>readerExtensionOptions</code></td>
-   <td>Includes the options required for Reader Extending a PDF Doc</td>
+   <td>包含Reader扩展PDF文档所需的选项</td>
   </tr>
   <tr>
    <td><code>unlockOptions</code></td>
@@ -1461,7 +1479,7 @@ secureDocument(Document inDoc,
  </tbody>
 </table>
 
-**Sample 1**: This sample is used to carry out password encryption, certifying a signature field and Reader Extending the PDF document.
+**示例1**：此示例用于执行密码加密、验证签名字段和Reader扩展PDF文档。
 
 ```java
 /*************************************************************************
@@ -1763,7 +1781,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**Sample 2**: This sample is used to carry out PKI encryption, signing a signature field and Reader Extending the PDF document.
+**示例2**：此示例用于执行PKI加密、签名字段和Reader扩展PDF文档。
 
 ```java
 /*************************************************************************
@@ -2086,26 +2104,26 @@ public class PassEncryptSignExtend {
 }
 ```
 
-If the following error message displays while reader extending a PDF document:
+如果Reader扩展PDF文档时显示以下错误消息：
 
 ```javascript
 org.apache.sling.engine.impl.SlingRequestProcessorImpl service: Uncaught Throwable java.lang.ThreadDeath: null at com.adobe.internal.pdftoolkit.services.javascript.GibsonContextFactory.observeInstructionCount(GibsonContextFactory.java:138)
 ```
 
-It signifies that the Reader Extension service is not able to execute the JavaScripts used in the document within the defined timeout interval.
+这意味着Reader扩展服务在定义的超时间隔内无法执行文档中使用的JavaScripts。
 
-Manage the timeout interval defined for the JavaScripts in the PDF document using:
+使用以下方式管理PDF文档中为JavaScripts定义的超时间隔：
 
 ```javascript
 ReaderExtensionsOptionSpec optionSpec = new ReaderExtensionsOptionSpec(usageRights, message);
 optionSpec.setJsScriptExecutionTimeoutInterval(100);
 ```
 
-where 100 refers to the timeout interval defined for execution of JavaScripts (in seconds). Set an appropriate value for the timeout interval.
+其中100是指为执行JavaScripts而定义的超时间隔（以秒为单位）。 为超时间隔设置适当的值。
 
-### Getting credential usage rights {#getting-credential-usage-rights}
+### 获取凭据使用权限 {#getting-credential-usage-rights}
 
-To fetch usage rights information of the credential specified by the given `credentialAlias`, call this API from within the `SecureDocument` API.
+要获取给定`credentialAlias`指定的凭据的使用权限信息，请从`SecureDocument` API中调用此API。
 
 **语法**： `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
 
@@ -2119,7 +2137,7 @@ To fetch usage rights information of the credential specified by the given `cred
   </tr>
   <tr>
    <td><code>credentialAlias</code><br /> </td>
-   <td>The <code>credentialAlias</code> that specifies the credential.<br /> </td>
+   <td>指定凭据的<code>credentialAlias</code>。<br /> </td>
   </tr>
   <tr>
    <td><code>credentialPassword</code><br /> </td>

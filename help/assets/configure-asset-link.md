@@ -6,13 +6,22 @@ role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 6ab943894398733d178f561430d3f391e8722195
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3059'
-ht-degree: 0%
-
+source-wordcount: '3255'
+ht-degree: 2%
 ---
-
 # 为Adobe Asset Link配置Experience Manager Assets {#adobe-asset-link}
 
 [Adobe Asset Link (AAL)](https://www.adobe.com/cn/creativecloud/business/enterprise/adobe-asset-link.html)可简化内容创建过程中创意专业人士与营销人员之间的协作。 它将Adobe Experience Manager Assets与Creative Cloud桌面应用程序Adobe InDesign、Adobe Photoshop和Adobe Illustrator连接起来。 Adobe Asset Link面板允许创意人员访问和修改存储在AEM Assets中的内容，而无需离开他们最熟悉的创意应用程序。
@@ -33,7 +42,7 @@ ht-degree: 0%
 
 | Assets功能 | Experience Manager版本和支持要求 |
 |--- |--- |
-| 默认情况下，Asset Link有效 | Experience Manager 6.5和6.5.2或更高版本。 </br> Experience Manager 6.4.4和6.4.6或更高版本。 </br> Adobe建议在使用AAL之前安装最新的[Experience Manager Service Pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans)。 |
+| 默认情况下，Asset Link有效 | Experience Manager 6.5和6.5.2或更高版本。</br> Experience Manager 6.4.4和6.4.6或更高版本。</br> Adobe建议在使用AAL之前安装最新的[Experience Manager Service Pack (SP)](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans)。 |
 | Asset Link在安装包后工作 | 对于Experience Manager 6.4.0 - 6.4.3，请安装[adobe-asset-link-support](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/featurepack/adobe-asset-link-support)包。 |
 | Adobe Stock集成 | Experience Manager 6.4.2或更高版本 |
 | 视觉或相似性搜索 | Experience Manager 6.5.0或更高版本 |
@@ -126,7 +135,7 @@ Adobe Asset Link用户能够连接到Experience Manager，以允许从主Creativ
 >* 如果您将相同的Adobe IMS组织与Experience Manager和CCE一起使用，则现有配置将继续有效。
 
 
-**前提条件**
+**先决条件**
 
 1. 为AAL配置了持有者身份验证且正在运行的Experience Manager实例。
 1. 在Experience Manager 6.5实例上安装以下包(Service Pack 11)。
@@ -270,7 +279,7 @@ Experience Manager提供仅用于置入(FPO)的演绎版。 这些FPO呈现版�
 
 ## 与Adobe Stock集成 {#adobe-stock-integration}
 
-组织将其Adobe Stock帐户与Experience Manager Assets集成。 它可帮助营销人员为其创意和营销项目提供授权的高质量、免版税的照片、矢量、插图、视频、模板和3D资产。 创意专业人士可以使用Asset Link面板来使用这些资源。
+组织将其Adobe Stock帐户与Experience Manager Assets集成。 它可帮助营销人员为其创意和营销项目提供授权的高质量、免版税的照片、矢量、插图、视频、模板和3D资产。 Creative专业人员可以使用Asset Link面板来使用这些资源。
 
 要与Adobe Stock集成，请参阅Experience Manager Assets中的[Adobe Stock资源](/help/assets/aem-assets-adobe-stock.md)。 要与Adobe Stock集成，需要Experience Manager 6.4.2或更高版本。
 

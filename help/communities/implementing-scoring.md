@@ -11,13 +11,20 @@ role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2911'
+source-wordcount: '2919'
 ht-degree: 2%
-
 ---
-
 # 社区评分和徽章 {#communities-scoring-and-badges}
 
 ## 概述 {#overview}
@@ -65,7 +72,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 * **审查方**
   `/libs/settings/community/badging/images/moderator/jcr:content/moderator.png`
 
-* **组管理员**
+* **组管理器**
   `/libs/settings/community/badging/images/group-manager/jcr:content/group-manager.png`
 
 * **特权成员**
@@ -164,8 +171,8 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 * 在page2组件上的操作同时调用rule1和rule2。
 * 如果两个规则包含相同`topic/verb`的适用子规则：
 
-   * 只有规则2中的子规则会影响得分。
-   * 两个子规则的分数均不添加。
+  * 只有规则2中的子规则会影响得分。
+  * 两个子规则的分数均不添加。
 
 当存在多个评分规则时，将分别为每个规则维护得分。
 
@@ -181,7 +188,8 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 >
 >*不*&#x200B;执行的操作的示例：
 >
->/libs/settings/community/scoring/rules/site1/forums-scoring>/libs/settings/community/scoring/rules/site2/forums-scoring
+>/libs/settings/community/scoring/rules/site1/forums-scoring
+>/libs/settings/community/scoring/rules/site2/forums-scoring
 
 ### 评分子规则 {#scoring-sub-rules}
 
@@ -296,7 +304,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 * `sub-rules`可以在各种评分规则之间共享。
 * `rules`应位于存储库位置，每个人都具有读取权限。
 
-   * 无论位置如何，规则名称都必须是唯一的。
+  * 无论位置如何，规则名称都必须是唯一的。
 
 ### 激活自定义评分规则 {#activating-custom-scoring-rules}
 
@@ -315,15 +323,15 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 
 * `1|/libs/settings/community/badging/images/bronze-badge/jcr:content/bronze.png`
 
-   * 铜牌得一分。
+  * 铜牌得一分。
 
 * `60|/libs/settings/community/badging/images/silver-badge/jcr:content/silver.png`
 
-   * 银牌可获得60分。
+  * 银牌可获得60分。
 
 * `80|/libs/settings/community/badging/images/gold-badge/jcr:content/gold.png`
 
-   * 金牌获得八十分的奖励。
+  * 金牌获得八十分的奖励。
 
 徽章规则与评分规则配对，后者决定积分的积累方式。 请参阅标题为[将规则应用于内容](#apply-rules-to-content)的部分。
 
@@ -378,7 +386,7 @@ AEM Communities评分和徽章功能使您能够识别和奖励社区成员。
 * `rules`节点的类型为cq:Page。
 * `rules`应位于存储库位置，每个人都具有读取权限。
 
-   * 无论位置如何，规则名称都必须是唯一的。
+  * 无论位置如何，规则名称都必须是唯一的。
 
 ### 激活自定义徽章规则 {#activating-custom-badging-rules}
 
@@ -581,29 +589,29 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 * 访问CRXDE Lite的创作实例。
 * 浏览到基本页：
 
-   * /content/sites/engage/en/jcr:content
+  * /content/sites/engage/en/jcr:content
 
 * 添加badgingRules属性：
 
-   * **名称**：`badgingRules`
-   * **类型**：`String`
-   * 选择&#x200B;**多个**
-   * 选择&#x200B;**添加**
-   * 输入`/libs/settings/community/badging/rules/forums-badging`
-   * 选择&#x200B;**+**
-   * 输入`/libs/settings/community/badging/rules/comments-badging`
-   * 选择&#x200B;**确定**
+  * **名称**：`badgingRules`
+  * **类型**：`String`
+  * 选择&#x200B;**多个**
+  * 选择&#x200B;**添加**
+  * 输入`/libs/settings/community/badging/rules/forums-badging`
+  * 选择&#x200B;**+**
+  * 输入`/libs/settings/community/badging/rules/comments-badging`
+  * 选择&#x200B;**确定**
 
 * 添加scoringRules属性：
 
-   * **名称**：`scoringRules`
-   * **类型**：`String`
-   * 选择&#x200B;**多个**
-   * 选择&#x200B;**添加**
-   * 输入`/libs/settings/community/scoring/rules/forums-scoring`
-   * 选择&#x200B;**+**
-   * 输入`/libs/settings/community/scoring/rules/comments-scoring`
-   * 选择&#x200B;**确定**
+  * **名称**：`scoringRules`
+  * **类型**：`String`
+  * 选择&#x200B;**多个**
+  * 选择&#x200B;**添加**
+  * 输入`/libs/settings/community/scoring/rules/forums-scoring`
+  * 选择&#x200B;**+**
+  * 输入`/libs/settings/community/scoring/rules/comments-scoring`
+  * 选择&#x200B;**确定**
 
 * 选择&#x200B;**全部保存**。
 
@@ -614,13 +622,13 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 * 再次使用CRXDE Lite。
 * 浏览到论坛组件
 
-   * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+  * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 
 * 如有必要，添加allowBadges布尔属性，并确保该属性为true。
 
-   * **名称**：`allowBadges`
-   * **类型**：`Boolean`
-   * **值**：`true`
+  * **名称**：`allowBadges`
+  * **类型**：`Boolean`
+  * **值**：`true`
 
 ![test-forum-component](assets/test-forum-component.png)
 
@@ -633,7 +641,7 @@ SocialEvent `topic`= com/adobe/cq/social/moderation
 * 发布新论坛主题。
 * 必须刷新页面才能显示徽章。
 
-   * 注销并以其他社区成员身份登录（例如：aaron.mcdonald@mailinator.com/password）。
+  * 注销并以其他社区成员身份登录（例如：aaron.mcdonald@mailinator.com/password）。
 
 * 选择论坛。
 

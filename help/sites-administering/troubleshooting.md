@@ -10,13 +10,22 @@ exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 3%
-
+source-wordcount: '253'
+ht-degree: 5%
 ---
-
 # 使用日志{#working-with-logs}
 
 此部分包含有关日志的详细信息，可帮助您进行故障排除。
@@ -25,7 +34,7 @@ ht-degree: 3%
 >
 >有关日志的详细信息，请参阅：
 >
->* 在AEM中维护[审核日志](/help/sites-administering/operations-audit-log.md)
+>* AEM中的[审核日志维护](/help/sites-administering/operations-audit-log.md)
 >* [使用审核记录和日志文件](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX会记录详细的日志。 打开包装并启动“快速入门”后，您可以在以下位置找到日志：

@@ -1,19 +1,33 @@
 ---
 title: 下载资产
-description: 了解如何从 [!DNL Adobe Experience Manager] 下载资产，以及启用或禁用下载功能。
+description: 了解如何从[!DNL Adobe Experience Manager]下载资源以及启用或禁用下载功能。
 contentOwner: AG
 role: User
 feature: Asset Management,Asset Distribution
 exl-id: 6bda9e52-5a6e-446e-99c7-96793482c190
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: d2b070a9-76bf-4422-902f-be20e963fd42
+    internal-label: Asset distribution
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 3%
-
+source-wordcount: '968'
+ht-degree: 7%
 ---
-
 # 从[!DNL Adobe Experience Manager]下载资源 {#download-assets-from-aem}
 
 | 版本 | 文章链接 |
@@ -49,7 +63,7 @@ OLD content of the above NOTE, changed wrt CQDOC-18661.
    | 导出或下载选项 | 描述 |
    |---|---|
    | **[!UICONTROL 为每个资产创建单独的文件夹]** | 选择此选项可将下载的每个资产（包括嵌套在资产父文件夹下的子文件夹中的资产）包含到本地计算机上的一个文件夹中。 如果未选择此选项，则默认情况下会忽略文件夹层次结构，并且所有资产都下载到本地计算机上的一个文件夹中。 |
-   | **[!UICONTROL 电子邮件]** | 会向用户发送电子邮件通知。 标准电子邮件模板可在以下位置使用：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 您可以在以下位置找到部署期间自定义的模板： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在以下位置存储特定于租户的自定义模板：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`.</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
+   | **[!UICONTROL 电子邮件]** | 会向用户发送电子邮件通知。 标准电子邮件模板可在以下位置使用：<ul><li>`/libs/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/libs/settings/dam/workflow/notification/email/transientworkflowcompleted`.</li></ul> 您可以在以下位置找到部署期间自定义的模板： <ul><li>`/apps/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/apps/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul>您可以在以下位置存储特定于租户的自定义模板：<ul><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/downloadasset`。</li><li>`/conf/<tenant_specific_config_root>/settings/dam/workflow/notification/email/transientworkflowcompleted`。</li></ul> |
    | **[!UICONTROL 资源]** | 选择此选项可下载原始格式的资源，而无需任何演绎版。<br>如果原始资产具有子资产，则子资产选项可用。 |
    | **[!UICONTROL 节目]** | 演绎版是资产的二进制表示形式。 Assets具有主要表示形式 — 已上传文件的主要表示形式。 它们可以有任意数量的呈现。<br> 使用此选项，您可以选择想要下载的演绎版。 可用的演绎版取决于您选择的资源。 如果资产具有任何演绎版，则该选项可用。 |
    | **[!UICONTROL 智能裁剪]** | 选择此选项可从AEM中下载所选资源的所有智能裁剪演绎版。 将创建包含智能裁剪呈现的zip文件并下载到本地计算机。 |

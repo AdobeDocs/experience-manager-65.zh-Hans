@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '500'
-ht-degree: 1%
-
+source-wordcount: '532'
+ht-degree: 4%
 ---
-
 # 使用模式检测器评估升级复杂性
 
 ## 概述 {#overview}
@@ -24,13 +33,13 @@ ht-degree: 1%
 此功能允许您通过检测使用中的模式来检查现有AEM实例的可升级性，这些模式包括：
 
 1. 违反某些规则，并在升级将影响或覆盖的区域中执行
-1. 使用AEM 6.x功能或AEM 6.5上无法向后兼容且在升级后可能中断的API。
+1. 使用AEM 6.x功能或在AEM 6.5上无法向后兼容并且在升级后可能会中断的API。
 
-这可以作为对升级到AEM 6.5所涉及的开发工作的评估。
+这可以作为对升级到AEM 6.5的过程中涉及的开发工作的评估。
 
 ## 如何设置 {#how-to-set-up}
 
-模式检测器作为[一个包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65)单独发布，用于从6.1到6.5的任何源AEM版本，目标为AEM 6.5升级。 可以使用[包管理器](/help/sites-administering/package-manager.md)安装它。
+模式检测器作为[一个包](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65)单独发布，该包适用于从6.1到6.5的任何源AEM版本，针对AEM 6.5升级。 可以使用[包管理器](/help/sites-administering/package-manager.md)安装它。
 
 ## 使用方法 {#how-to-use}
 
@@ -47,7 +56,7 @@ ht-degree: 1%
 
 * **通过Felix清单控制台：**
 
-1. 通过浏览到&#x200B;*https://serveraddress:serverport/system/console/configMgr*&#x200B;转到AEM Web Console
+1. 通过浏览到&#x200B;*https://serveraddress:serverport/system/console/configMgr*&#x200B;转到AEM Web控制台
 1. 选择&#x200B;**状态 — 模式检测器**，如下图所示：
 
    ![屏幕快照–2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
@@ -218,7 +227,7 @@ curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-det
 * Sling资源类型和超级类型（具有搜索路径内容叠加）的使用情况
 * Oak索引的定义（兼容性）
 * VLT包（过度使用）
-* rep：用户节点兼容性（在OAuth配置的上下文中）
+* rep:User节点兼容性（在OAuth配置的上下文中）
 
 >[!NOTE]
 >

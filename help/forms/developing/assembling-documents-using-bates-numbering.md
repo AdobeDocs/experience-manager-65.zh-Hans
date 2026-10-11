@@ -10,13 +10,27 @@ role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1934'
 ht-degree: 1%
-
 ---
-
 # 使用 Bates 编号组装文档 {#assembling-documents-using-bates-numbering}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -147,8 +161,8 @@ Assembler服务返回包含作业结果的集合对象。 您可以提取生成�
    * 对于每个输入PDF文档，创建一个`com.adobe.idp.Document`对象，并传递包含PDF文档的`java.io.FileInputStream`对象。
    * 通过调用其`put`方法并传递以下参数，向`java.util.Map`对象添加一个条目：
 
-      * 表示键名的字符串值。 此值必须匹配DDX文档中指定的PDF源元素的值。 例如，本节介绍的DDX文档中指定的PDF源文件的名称为Loan.pdf。
-      * 包含不安全的PDF文档的`com.adobe.idp.Document`对象。
+     * 表示键名的字符串值。 此值必须匹配DDX文档中指定的PDF源元素的值。 例如，本节介绍的DDX文档中指定的PDF源文件的名称为Loan.pdf。
+     * 包含不安全的PDF文档的`com.adobe.idp.Document`对象。
 
 1. 设置初始Bates编号值。
 
@@ -201,10 +215,10 @@ Assembler服务返回包含作业结果的集合对象。 您可以提取生成�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`AssemblerServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`AssemblerServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用现有DDX文档。
 

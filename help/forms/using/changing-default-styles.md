@@ -1,5 +1,5 @@
 ---
-title: 更改HTML5表单的默认样式
+title: 更改 HTML5 Forms 的默认样式
 description: HTML5表单样式基于CSS。 您可以更改表单的默认样式。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,16 +9,31 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '366'
-ht-degree: 0%
-
+source-wordcount: '369'
+ht-degree: 4%
 ---
+# 更改 HTML5 Forms 的默认样式{#changing-default-styles-of-html-forms}
 
-# 更改HTML5表单的默认样式{#changing-default-styles-of-html-forms}
-
-HTML5表单使用HTML5功能渲染，渲染表单的样式使用CSS完成。 HTML5表单的默认外观类似于其PDF呈现版本。 开发人员可以使用自定义CSS更改HTML5表单的默认外观。
+HTML5表单使用HTML5功能渲染，渲染表单的样式使用CSS完成。 HTML5表单的默认外观与其PDF演绎版类似。 开发人员可以使用自定义CSS更改HTML5表单的默认外观。
 
 本文提供了更改HTML5表单样式的分步信息，并且[样式简介](/help/forms/using/css-styles.md)文章包含有关HTML5表单各种样式方面的详细信息。 在执行本文中提到的步骤之前，请确保已阅读样式简介一文。
 
@@ -50,7 +65,7 @@ HTML5表单使用HTML5功能渲染，渲染表单的样式使用CSS完成。 HTM
 
    1. 在渲染器中搜索以下行：
 
-      &lt;cq：includeClientLib categories=&quot;xfaforms.profile&quot; />
+      &lt;cq:includeClientLib类别=&quot;xfaforms.profile&quot; />
 
    1. 在上面的行下面插入以下内容以包含样式表：
 

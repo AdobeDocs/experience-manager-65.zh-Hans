@@ -9,13 +9,22 @@ exl-id: d2ebfca5-19f9-4fa5-b142-b978f46a912f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1708'
 ht-degree: 2%
-
 ---
-
 # 将 Dynamic Media 资产添加到页面{#adding-dynamic-media-assets-to-pages}
 
 若要将Dynamic Media功能添加到您在网站上使用的资产，您可以直接在页面上添加&#x200B;**[!UICONTROL Dynamic Media]**&#x200B;或&#x200B;**[!UICONTROL Interactive Media]**&#x200B;组件。 进入&#x200B;**[!UICONTROL 设计]**&#x200B;模式并启用Dynamic Media组件。 然后，您可以将这些组件添加到页面，并将资产添加到该组件。 Dynamic Media和交互式媒体组件是智能的 — 它们知道您添加的是图像还是视频，可用的选项会相应地发生更改。

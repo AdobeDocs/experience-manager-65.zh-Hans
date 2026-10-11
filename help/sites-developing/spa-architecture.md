@@ -11,13 +11,27 @@ solution: Experience Manager, Experience Manager Sites
 feature: Developing,SPA Editor
 role: Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: a9f7d31e-bbe1-4475-966a-5f213546fcd9
+    internal-label: SPA Editor
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2074'
 ht-degree: 6%
-
 ---
-
 
 # 为 AEM 开发 SPA{#developing-spas-for-aem}
 
@@ -192,8 +206,8 @@ SPA应仅依赖内容的动态渲染。 这是默认预期，AEM会获取并呈�
 
   这是签出SPA应用程序源和组件源的位置。
 
-   * NPM clientlib生成器从SPA项目创建一个客户端库。
-   * 该库由Maven获取，并由Maven Build插件与组件部署到AEM Author。
+  * NPM clientlib生成器从SPA项目创建一个客户端库。
+  * 该库由Maven获取，并由Maven Build插件与组件部署到AEM Author。
 
 * **AEM作者**
 
@@ -201,11 +215,11 @@ SPA应仅依赖内容的动态渲染。 这是默认预期，AEM会获取并呈�
 
   在创作环境中使用SPA编辑器编辑SPA时：
 
-   1. SPA请求外部HTML。
-   1. CSS已加载。
-   1. 加载SPA应用程序的JavaScript。
-   1. 执行SPA应用程序时，将请求JSON，以允许应用程序构建包含`cq-data`属性的页面的DOM。
-   1. 此`cq-data`属性允许编辑器加载其他页面信息，以便它知道哪些编辑配置可用于组件。
+  1. SPA请求外部HTML。
+  1. CSS已加载。
+  1. 加载SPA应用程序的JavaScript。
+  1. 执行SPA应用程序时，将请求JSON，以允许应用程序构建包含`cq-data`属性的页面的DOM。
+  1. 此`cq-data`属性允许编辑器加载其他页面信息，以便它知道哪些编辑配置可用于组件。
 
 * **AEM发布**
 
@@ -215,8 +229,8 @@ SPA应仅依赖内容的动态渲染。 这是默认预期，AEM会获取并呈�
 
   Dispatcher将用作网站访客的AEM的缓存层。
 
-   * 处理请求的方式与在AEM创作实例中处理请求的方式类似，但不会请求页面信息，因为只有编辑器才需要这样做。
-   * JavaScript、CSS、JSON和HTML已缓存，优化页面以实现快速交付。
+  * 处理请求的方式与在AEM创作实例中处理请求的方式类似，但不会请求页面信息，因为只有编辑器才需要这样做。
+  * JavaScript、CSS、JSON和HTML已缓存，优化页面以实现快速交付。
 
 >[!NOTE]
 >

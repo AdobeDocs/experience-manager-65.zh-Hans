@@ -1,5 +1,5 @@
 ---
-title: 优化Forms服务的性能
+title: 优化表单服务的性能
 description: 在渲染表单并将XDP文件存储在存储库中时设置运行时选项，以优化Forms服务的性能。
 contentOwner: admin
 content-type: reference
@@ -10,13 +10,29 @@ role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 0%
-
+source-wordcount: '1442'
+ht-degree: 1%
 ---
-
 # 优化Forms服务的性能 {#optimizing-the-performance-of-theforms-service}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -54,10 +70,10 @@ ht-degree: 0%
 * **表单缓存**：您可以在服务器缓存中缓存呈现为PDF的表单。 每个表单在首次生成后都会缓存。 在后续渲染中，如果缓存的表单比表单设计的时间戳新，则从缓存中检索表单。 通过缓存表单，您可以提高Forms服务的性能，因为它不必从存储库检索表单设计。
 * 表单指南（已弃用）的呈现时间可能比其他转换类型长。 建议您缓存表单指南（已弃用）以提高性能。
 * **独立选项**：如果您不需要Forms服务执行服务器端计算，则可以将“独立”选项设置为`true`，这将导致表单在没有状态信息的情况下呈现。 如果您希望向最终用户呈现交互式表单，然后最终用户在表单中输入信息并将表单提交回Forms服务，则必须提供状态信息。 然后，Forms服务执行计算操作，并将表单呈现回用户，结果显示在表单中。 如果将没有状态信息的表单提交回Forms服务，则只有XML数据可用，并且不执行服务器端计算。
-* **线性化PDF**：已组织一个线性化PDF文件，以便在网络环境中实现高效的增量访问。 PDF文件在所有方面都是有效的PDF，并与所有现有查看器和其他PDF应用程序兼容。 也就是说，可以在仍然下载线性PDF时查看该量度。
+* **线性化PDF**：组织了一个线性化PDF文件，以便在网络环境中实现高效的增量访问。 PDF文件在所有方面都是有效的PDF，并与所有现有查看器和其他PDF应用程序兼容。 也就是说，可以在下载线性化PDF的同时查看它。
 * 在客户端上呈现PDF表单时，此选项无法提高性能。
 * **GuideRSL选项**：启用使用运行时共享库生成表单指南（已弃用）。 这意味着第一个请求将下载较小的SWF文件，以及存储在浏览器缓存中的较大共享库。 有关更多信息，请参阅Flex文档中的RSL 。
-* 您还可以在客户端渲染表单，以提高Forms服务的性能。 (请参阅[在客户端渲染Forms](/help/forms/developing/rendering-forms-client.md)。)
+* 您还可以在客户端渲染表单，以提高Forms服务的性能。 （请参阅[在客户端渲染Forms](/help/forms/developing/rendering-forms-client.md)。）
 
 **渲染表单**
 
@@ -73,11 +89,11 @@ Forms服务呈现表单后，会返回您必须写入客户端Web浏览器的表
 
 [设置连接属性](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms服务API快速启动](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[表单服务 API 快速入门](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[呈现交互式PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[渲染交互式 PDF 表单](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[将Forms渲染为HTML](/help/forms/developing/rendering-forms-html.md)
+[将表单渲染为 HTML](/help/forms/developing/rendering-forms-html.md)
 
 [创建可渲染Forms的Web应用程序](/help/forms/developing/creating-web-applications-renders-forms.md)
 
@@ -122,7 +138,7 @@ Forms服务呈现表单后，会返回您必须写入客户端Web浏览器的表
 
 **另请参阅**
 
-[快速入门(SOAP模式)：使用Java API优化性能](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API优化性能](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '507'
-ht-degree: 2%
-
+source-wordcount: '542'
+ht-degree: 4%
 ---
-
 # 资源映射{#resource-mapping}
 
 资源映射用于为Adobe Experience Manager (AEM)定义重定向、虚URL和虚拟主机。
@@ -56,7 +65,7 @@ JCR资源解析器计算映射表单两个列表（自上而下）以查找匹�
 * 配置测试
 这可让您输入URL或资源路径。 单击&#x200B;**解析**&#x200B;或&#x200B;**映射**&#x200B;以确认系统将如何转换该条目。
 
-* **解析程序映射条目**
+* **解析器映射条目**
 ResourceResolver.resolve方法用于将URL映射到资源的条目列表。
 
 * **映射项**
@@ -105,7 +114,7 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
 1. 创建节点：
 
    * **类型** `sling:Mapping`
-此节点类型适用于此类映射，但其用法不是强制性的。
+     此节点类型适用于此类映射，但其用法不是强制性的。
 
    * **名称** `localhost_any`
 
@@ -114,15 +123,15 @@ ResourceResolver.map方法用来将资源路径映射到URL的条目列表。
 
    * **名称** `sling:match`
 
-      * **类型** `String`
+     * **类型** `String`
 
-      * **值** `localhost.4503/`
+     * **值** `localhost.4503/`
 
    * **名称** `sling:internalRedirect`
 
-      * **类型** `String[]`
+     * **类型** `String[]`
 
-      * **值** `/content/`
+     * **值** `/content/`
 
 1. 单击&#x200B;**全部保存**。
 

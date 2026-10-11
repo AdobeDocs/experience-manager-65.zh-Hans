@@ -5,13 +5,39 @@ exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,GraphQL,Persisted Queries,Developing
 role: Admin,Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d429a63e-ade4-4117-b04e-9b996d1c94ef
+    internal-label: Integrations
+  - id: c124fa01-25c5-42ec-adf6-21d1c114058b
+    internal-label: Developer tools
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: a02b73a7-bdfc-4225-bdfd-69f7891ab55e
+    internal-label: GraphQL
+  - id: d781bc8f-52af-43f6-84d0-b73e59a130d5
+    internal-label: Persisted queries
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 51%
-
 ---
-
 # 创建内容片段模型Headless快速入门指南 {#creating-content-fragment-models}
 
 定义您创建的内容的结构，并使用内容片段模型通过Adobe Experience Manager (AEM)的Headless功能提供内容。
@@ -20,11 +46,11 @@ ht-degree: 51%
 
 [现在您已经创建了配置，](create-configuration.md)您可以用它来创建内容片段模型。
 
-内容片段模型定义您在 AEM 中创建和管理的数据及内容的结构。它们在某种程度上用作内容的基架。选择创建内容时，作者将从您定义的内容片段模型中选择，这会引导他们创建内容。
+内容片段模型定义您在 AEM 中创建和管理的数据及内容的结构。 它们在某种程度上用作内容的基架。 选择创建内容时，作者将从您定义的内容片段模型中选择，这会引导他们创建内容。
 
 ## 如何创建内容片段模型 {#how-to-create-a-content-fragment-model}
 
-信息架构师只会在偶尔需要新模型时执行这些任务。对于本指南快速入门，您只创建一个模型。
+信息架构师只会在偶尔需要新模型时执行这些任务。 对于本指南快速入门，您只创建一个模型。
 
 1. 登录AEM，从主菜单选择&#x200B;**工具> Assets >内容片段模型**。
 1. 单击通过创建配置生成的文件夹。
@@ -41,7 +67,7 @@ ht-degree: 51%
 
    ![拖放字段](assets/models-drag-and-drop.png)
 
-1. 放置字段之后必须配置其属性。对于添加的字段，编辑器会自动切换到&#x200B;**属性**&#x200B;选项卡，您可以在其中提供必填字段。
+1. 放置字段之后必须配置其属性。 对于添加的字段，编辑器会自动切换到&#x200B;**属性**&#x200B;选项卡，您可以在其中提供必填字段。
 
    ![配置属性](assets/models-configure-properties.png)
 1. 当您完成模型构建后，单击&#x200B;**保存**。
@@ -63,7 +89,7 @@ ht-degree: 51%
 
 **内容片段模型编辑器**&#x200B;支持许多不同的数据类型，例如简单文本字段、资产引用、引用其他模型和JSON数据。
 
-您可以创建多个模型。模型可以引用其他内容片段。使用[配置](create-configuration.md)可组织您的模型。
+您可以创建多个模型。 模型可以引用其他内容片段。 使用[配置](create-configuration.md)可组织您的模型。
 
 ## 后续步骤 {#next-steps}
 

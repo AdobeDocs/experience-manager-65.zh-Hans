@@ -8,13 +8,17 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 solution: Experience Manager
 feature: Mobile
 role: Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '547'
-ht-degree: 5%
-
+source-wordcount: '571'
+ht-degree: 6%
 ---
-
 # 呈现和交付{#rendering-and-delivery}
 
 {{ue-over-mobile}}
@@ -156,7 +160,7 @@ Content Services默认呈现器填补了开箱即用的Sling默认设置和自�
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>对于以下sling资源类型，请勿返回默认的CaaS json导出。<br />通过将资源呈现为；<br /> &lt;RESOURCE&gt;返回客户json导出。&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>对于以下sling资源类型，不返回默认的CaaS json导出。<br /> 通过将资源呈现为；<br /> &lt;RESOURCE&gt;返回客户json导出。&lt;SELECTOR_TO_INC&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -172,7 +176,7 @@ Content Services包括两种导出配置：
 
 如果在请求的URI中指定了配置，则会应用Content Services默认导出配置。
 
-&lt;资源>.caas[。&lt;DEPTH-INT>].json
+&lt;RESOURCE>.caas[.&lt;DEPTH-INT>].json
 
 <table>
  <tbody>
@@ -219,7 +223,7 @@ Content Services包括两种导出配置：
 
 此配置扩展了缺省设置，以包含子节点下的分组子节点。
 
-&lt;SITE_PAGE>.caas.page[。&lt;DEPTH-INT>].json
+&lt;SITE_PAGE>.caas.page[.&lt;DEPTH-INT>].json
 
 ### 其他资源 {#additional-resources}
 

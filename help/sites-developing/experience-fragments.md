@@ -10,13 +10,22 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1812'
+source-wordcount: '1824'
 ht-degree: 1%
-
 ---
-
 # 体验片段 {#experience-fragments}
 
 ## 基础知识 {#the-basics}
@@ -64,11 +73,11 @@ ht-degree: 1%
 HTML演绎版使用Sling重写器管道生成。 管道定义于`/libs/experience-fragments/config/rewriter/experiencefragments`。 HTML Transformer支持以下选项：
 
 * `allowedCssClasses`
-   * 匹配应在最终演绎版中保留的CSS类的RegEx表达式。
-   * 如果客户想要删除某些特定的CSS类，这将很有用
+  * 匹配应在最终演绎版中保留的CSS类的RegEx表达式。
+  * 如果客户想要删除某些特定的CSS类，这将很有用
 * `allowedTags`
-   * 最终演绎版中允许的HTML标记列表。
-   * 默认情况下，允许使用以下标记（无需配置）：html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link和script
+  * 最终演绎版中允许的HTML标记列表。
+  * 默认情况下，允许使用以下标记（无需配置）：html、head、title、body、img、p、span、ul、li、a、b、i、em、strong、h1、h2、h3、h4、h5、h6、br、noscript、div、link和script
 
 建议使用叠加配置重写器。 查看[叠加图](/help/sites-developing/overlays.md)
 
@@ -86,12 +95,12 @@ HTML演绎版使用Sling重写器管道生成。 管道定义于`/libs/experienc
 
 * 用于提取图像
 
-   * `fileReference`
-   * `fileName`
+  * `fileReference`
+  * `fileName`
 
 * 用于提取文本
 
-   * `text`
+  * `text`
 
 不考虑未使用此约定的组件。
 
@@ -114,7 +123,7 @@ HTML演绎版使用Sling重写器管道生成。 管道定义于`/libs/experienc
 
    1. 模板名称必须以下列内容开头：
       `experience-fragments`
-这允许用户在/content/experience-fragments中创建体验片段，因为该文件夹的`cq:allowedTemplates`属性包含名称以`experience-fragment`开头的所有模板。 客户可以更新此属性以包含他们自己的命名方案或模板位置。
+      这允许用户在/content/experience-fragments中创建体验片段，因为该文件夹的`cq:allowedTemplates`属性包含名称以`experience-fragment`开头的所有模板。 客户可以更新此属性以包含他们自己的命名方案或模板位置。
 
 1. 可以在体验片段控制台中配置[允许的模板](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder)。
 <!--
@@ -257,7 +266,7 @@ public class GeneralLinkRewriter implements ExperienceFragmentLinkRewriterProvid
 * ` [shouldRewrite](#shouldrewrite)`
 * ` [rewriteLink](#rewritelink)`
 
-   * `rewriteLinkExample2`
+  * `rewriteLinkExample2`
 
 * ` [getPriority](#priorities-getpriority)`
 

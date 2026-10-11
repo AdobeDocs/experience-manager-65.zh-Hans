@@ -5,13 +5,26 @@ exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '499'
-ht-degree: 26%
-
+source-wordcount: '560'
+ht-degree: 28%
 ---
-
 # 创作{#authoring}
 
 ## 创作（和发布）概念 {#concept-of-authoring-and-publishing}
@@ -73,13 +86,13 @@ AEM为您提供两种环境：
 >不幸的是，使用的术语有时存在重叠。 这种情况可能会发生在以下位置：
 >
 >* **发布/取消发布**
->  这些是在发布环境中公开提供（或不公开提供）您内容的主要操作术语。
+>  这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
 >
->* **激活/停用**
->  这些术语与发布/取消发布同义。
+>* **激活/取消激活**
+>  这两个术语与发布/取消发布同义。
 >
->* **复制/复制**
->  这些是技术术语，用于指示数据（例如，页面内容、文件、代码、用户注释）从一个环境移动到另一个环境；即发布或反向复制用户注释时。
+>* **复制**
+>  这些是技术术语，用于指示数据（例如，页面内容、文件、代码、用户注释）从一个环境移动到另一个环境；即在发布或反向复制用户注释时。
 >
 
 #### Dispatcher {#dispatcher}

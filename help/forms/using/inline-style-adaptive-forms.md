@@ -8,16 +8,32 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 13%
-
+source-wordcount: '638'
+ht-degree: 16%
 ---
-
 # 自适应表单组件的内联样式 {#inline-styling-of-adaptive-form-components}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -41,7 +57,7 @@ ht-degree: 13%
 
 1. 单击侧边栏中的选项卡以指定CSS属性。 您可以指定属性，例如：
 
-   * Dimension和位置（显示设置、填充、高度、宽度、边距、位置、z索引、浮动、清除、溢出）
+   * 尺寸和位置（显示设置、填充、高度、宽度、边距、位置、z索引、浮动、清除、溢出）
    * 文本（字体系列、粗细、颜色、大小、行高和对齐）
    * 背景（图像和渐变、背景颜色）
    * 边框（宽度、样式、颜色、半径）
@@ -66,7 +82,7 @@ ht-degree: 13%
   <tr>
    <td><p>选择器</p> </td>
    <td><p>CSS属性</p> </td>
-   <td><p>价值</p> </td>
+   <td><p>值</p> </td>
    <td><p>效果</p> </td>
   </tr>
   <tr>
@@ -84,7 +100,7 @@ ht-degree: 13%
   <tr>
    <td><p>标签</p> </td>
    <td><p>维度和位置&gt;宽度</p> </td>
-   <td><p>100像素</p> </td>
+   <td><p>100px</p> </td>
    <td><p>将标签的宽度固定为100px</p> </td>
   </tr>
   <tr>
@@ -94,7 +110,7 @@ ht-degree: 13%
    <td>更改帮助图标面部的颜色。</td>
   </tr>
   <tr>
-   <td><p>详细描述</p> </td>
+   <td><p>详细说明</p> </td>
    <td><p>text-align</p> </td>
    <td><p>居中</p> </td>
    <td><p>将帮助的详细描述调整到中心</p> </td>

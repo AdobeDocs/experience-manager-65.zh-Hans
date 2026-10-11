@@ -6,13 +6,23 @@ content-type: reference
 feature: Adaptive Forms, Core Components
 role: Admin, User, Developer
 exl-id: 00073e3a-f1b5-4c42-9fea-4a14b8a22c81
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3342'
+source-wordcount: '3523'
 ht-degree: 2%
-
 ---
-
 # 自适应核心组件中的自定义函数Forms
 
 本文介绍了如何使用最新的自适应表单核心组件创建自定义函数，这些组件具有最新的功能，例如：
@@ -59,8 +69,8 @@ AEM Forms 6.5包括JavaScript函数，这些函数允许您使用规则编辑器
 * `@func [functionName] <Function Name>`
 
 >[!NOTE]
->`[functionName]`是函数的名称。不允许使用空格。
->`<Function Name>`是自适应Forms的规则编辑器中函数的显示名称。
+>`[functionName]`是函数的名称。 不允许使用空格。
+>`<Function Name>` 是自适应Forms的规则编辑器中函数的显示名称。
 >如果函数名称与函数本身的名称相同，则可以在语法中省略`[functionName]`。
 
 #### 参数
@@ -73,17 +83,17 @@ AEM Forms 6.5包括JavaScript函数，这些函数允许您使用规则编辑器
 
   `{type}`表示参数类型。 允许的参数类型包括：
 
-   * string：表示单个字符串值。
-   * 数字：表示单个数值。
-   * 布尔值：表示单个布尔值（true或false）。
-   * string[]：表示字符串值的数组。
-   * number[]：表示数值的数组。
-   * 布尔值[]：表示布尔值的数组。
-   * 日期：表示单个日期值。
-   * date[]：表示日期值的数组。
-   * array：表示包含各种类型值的泛型数组。
-   * 对象：表示传递到自定义函数的表单对象，而不是直接传递其值。
-   * 范围：表示全局对象，其中包含只读变量，如表单实例、目标字段实例以及在自定义函数中执行表单修改的方法。 此变量声明为JavaScript注释中的最后一个参数，对自适应表单的规则编辑器不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。 有关Globals对象及其使用方法的详细信息，[单击此处](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
+  * string：表示单个字符串值。
+  * 数字：表示单个数值。
+  * 布尔值：表示单个布尔值（true或false）。
+  * string[]：表示字符串值的数组。
+  * number[]：表示数值的数组。
+  * 布尔值[]：表示布尔值的数组。
+  * 日期：表示单个日期值。
+  * date[]：表示日期值的数组。
+  * array：表示包含各种类型值的泛型数组。
+  * 对象：表示传递到自定义函数的表单对象，而不是直接传递其值。
+  * 范围：表示全局对象，其中包含只读变量，如表单实例、目标字段实例以及在自定义函数中执行表单修改的方法。 此变量声明为JavaScript注释中的最后一个参数，对自适应表单的规则编辑器不可见。 scope参数可访问表单或组件的对象，以触发表单处理所需的规则或事件。 有关Globals对象及其使用方法的详细信息，[单击此处](/help/forms/using/create-and-use-custom-functions-core-components.md#field-and-global-scope-objects-in-custom-functions-support-field-and-global-objects)
 
 参数类型为&#x200B;**不区分大小写**，参数名称中不允许有空格。
 
@@ -476,7 +486,7 @@ var c = {
 创建的文件夹结构如下所示：
 
    ![创建的客户端库文件夹结构](/help/forms/using/assets/clientlibrary_folderstructure.png)
-1. 双击`functions.js`文件以打开编辑器。该文件包含自定义函数的代码。
+1. 双击`functions.js`文件以打开编辑器。 该文件包含自定义函数的代码。
 让我们将以下代码添加到JavaScript文件中，以根据出生日期计算年龄(YYYY-MM-DD)。
 
    ```javascript
@@ -537,7 +547,7 @@ var c = {
 ## 在自适应表单中使用自定义函数 {#use-custom-functions}
 
 在自适应表单中，您可以在规则编辑器[&#128279;](/help/forms/using/rule-editor-core-components.md)中使用自定义函数。
-让我们将以下代码添加到JavaScript文件（`Function.js`文件）中，以根据出生日期(YYYY-MM-DD)计算年龄。创建自定义函数作为`calculateAge()`，它将出生日期作为输入并返回年龄：
+让我们将以下代码添加到JavaScript文件（`Function.js`文件）中，以根据出生日期(YYYY-MM-DD)计算年龄。 创建自定义函数作为`calculateAge()`，它将出生日期作为输入并返回年龄：
 
 ```javascript
     /**
@@ -776,7 +786,7 @@ In the above code snippet, a custom function named `updateDateTime` takes parame
 
 #### **用例**：在字段级别显示自定义消息并将字段标记为无效
 
-您可以使用`markFieldAsInvalid()`函数将字段定义为无效，并在字段级别设置自定义错误消息。`fieldIdentifier`值可以是`fieldId`、`field qualifiedName`或`field dataRef`。名为`option`的对象的值可以是`{useId: true}`、`{useQualifiedName: true}`或`{useDataRef: true}`。
+您可以使用`markFieldAsInvalid()`函数将字段定义为无效，并在字段级别设置自定义错误消息。 `fieldIdentifier`值可以是`fieldId`、`field qualifiedName`或`field dataRef`。 名为`option`的对象的值可以是`{useId: true}`、`{useQualifiedName: true}`或`{useDataRef: true}`。
 用于将字段标记为无效并设置自定义消息的语法包括：
 
 * `globals.functions.markFieldAsInvalid(field.$id,"[custom message]",{useId: true});`
@@ -984,9 +994,9 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 
 * 用户需要确保[核心组件和规范版本设置为最新版本](https://github.com/adobe/aem-core-forms-components/tree/release/650)。 但是，对于现有AEM项目和表单，还需要执行其他步骤：
 
-   * 对于AEM项目，用户应使用`submitForm()`替换`submitForm('custom:submitSuccess', 'custom:submitError')`的所有实例并部署该项目。
+  * 对于AEM项目，用户应使用`submitForm()`替换`submitForm('custom:submitSuccess', 'custom:submitError')`的所有实例并部署该项目。
 
-   * 对于现有表单，如果自定义提交处理程序无法正常运行，用户需要使用规则编辑器在&#x200B;**提交**&#x200B;按钮上打开并保存`submitForm`规则。 此操作将`submitForm('custom:submitSuccess', 'custom:submitError')`中的现有规则替换为表单中的`submitForm()`。
+  * 对于现有表单，如果自定义提交处理程序无法正常运行，用户需要使用规则编辑器在&#x200B;**提交**&#x200B;按钮上打开并保存`submitForm`规则。 此操作将`submitForm('custom:submitSuccess', 'custom:submitError')`中的现有规则替换为表单中的`submitForm()`。
 
 
 * 如果包含自定义函数代码的JavaScript文件出错，则自定义函数不会列在自适应表单的规则编辑器中。 要检查自定义函数列表，您可以导航到`error.log`文件以查找错误。 如果出现错误，自定义函数列表显示为空：
@@ -1002,9 +1012,9 @@ In case, the custom submit action fails to perform as expected in existing AEM p
 * `parameter type`和`return type`不支持`None`。
 
 * 自定义函数列表中不支持的函数包括：
-   * 生成器函数
-   * 异步/等待函数
-   * 方法定义
-   * 类方法
-   * 默认参数
-   * Rest参数
+  * 生成器函数
+  * 异步/等待函数
+  * 方法定义
+  * 类方法
+  * 默认参数
+  * Rest参数

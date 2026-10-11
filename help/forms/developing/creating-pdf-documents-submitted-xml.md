@@ -10,13 +10,29 @@ role: Developer
 exl-id: d9d5b94a-9d10-4d90-9e10-5142f30ba4a3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1334'
 ht-degree: 1%
-
 ---
-
 # 使用提交的XML数据创建PDF文档 {#creating-pdf-documents-with-submittedxml-data}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -101,10 +117,10 @@ ht-degree: 1%
 
    * 调用`FormsServiceClient`对象的`processFormSubmission`方法并传递以下值：
 
-      * 包含表单数据的`com.adobe.idp.Document`对象。
-      * 一个字符串值，它指定环境变量，包括所有相关的HTTP标头。 通过为`CONTENT_TYPE`环境变量指定一个或多个值来指定要处理的内容类型。 例如，要处理XML数据，请为此参数指定以下字符串值： `CONTENT_TYPE=text/xml`。
-      * 指定`HTTP_USER_AGENT`标头值的字符串值，如`Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
-      * 存储运行时选项的`RenderOptionsSpec`对象。
+     * 包含表单数据的`com.adobe.idp.Document`对象。
+     * 一个字符串值，它指定环境变量，包括所有相关的HTTP标头。 通过为`CONTENT_TYPE`环境变量指定一个或多个值来指定要处理的内容类型。 例如，要处理XML数据，请为此参数指定以下字符串值： `CONTENT_TYPE=text/xml`。
+     * 指定`HTTP_USER_AGENT`标头值的字符串值，如`Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
+     * 存储运行时选项的`RenderOptionsSpec`对象。
 
      `processFormSubmission`方法返回包含表单提交结果的`FormsResult`对象。
 

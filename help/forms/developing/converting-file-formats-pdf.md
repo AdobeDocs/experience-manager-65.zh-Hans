@@ -9,13 +9,27 @@ role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7942'
 ht-degree: 0%
-
 ---
-
 # 在文件格式与 PDF 之间转化 {#converting-between-file-formatsand-pdf}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -214,10 +228,10 @@ ht-degree: 0%
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索要转换为PDF文档的文件。
 
@@ -371,10 +385,10 @@ HTML内容转换为PDF文档后，您可以检索结果并保存PDF文档。
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索HTML内容以转换为PDF文档。
 
@@ -522,10 +536,10 @@ HTML内容转换为PDF文档后，您可以检索结果并保存PDF文档。
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`GeneratePDFServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 检索要转换的PDF文档。
 

@@ -9,15 +9,24 @@ exl-id: ea97ac1f-84d1-4707-892d-b2249ee1cab5
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '40'
 ht-degree: 10%
-
 ---
-
 # Sling 备忘单{#sling-cheatsheet}
 
 ![了解Apache Sling脚本解析。](assets/sling-cheatsheet-01.png)
 
-![使用SlingPostServlet — 这是您的POST请求的默认处理程序；它几乎可以执行任何操作。](assets/sling-cheatsheet-02.png)
+![使用SlingPostServlet — 这是POST请求的默认处理程序；它几乎可以执行任何操作。](assets/sling-cheatsheet-02.png)

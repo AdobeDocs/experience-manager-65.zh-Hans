@@ -1,21 +1,37 @@
 ---
 title: 配置Assets Insights以获取分析。
-description: 在 [!DNL Adobe Experience Manager Assets]中配置Assets分析。
+description: 在[!DNL Adobe Experience Manager Assets]中配置Assets Insights。
 contentOwner: AG
 role: Developer, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 67be0ae6-5939-40fe-bf8a-b8a2c2f68f15
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a4e1c1f5-18fc-592e-bfc7-453ce6ae0030
+    internal-label: Asset Insights
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '264'
 ht-degree: 7%
-
 ---
-
 # 配置Assets分析 {#configure-asset-insights}
 
-[!DNL Adobe Experience Manager Assets]从[!DNL Adobe Analytics]中获取有关第三方网站使用的数字资产的使用情况数据。 要启用Assets Insights以检索此数据并生成见解，请首先配置该功能以与[!DNL Adobe Analytics]集成。 要在内部部署安装中使用此功能，请单独购买[!DNL Adobe Analytics]许可证。 [!DNL Managed Services]上的客户将收到与[!DNL Analytics]捆绑的[!DNL Experience Manager]许可证。 请参阅[Managed Services产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-managed-services.html)。
+[!DNL Adobe Experience Manager Assets]从[!DNL Adobe Analytics]中获取有关第三方网站使用的数字资产的使用情况数据。 要启用Assets Insights以检索此数据并生成见解，请首先配置该功能以与[!DNL Adobe Analytics]集成。 要在内部部署安装中使用此功能，请单独购买[!DNL Adobe Analytics]许可证。 [!DNL Managed Services]上的客户将收到与[!DNL Experience Manager]捆绑的[!DNL Analytics]许可证。 请参阅[Managed Services产品说明](https://helpx.adobe.com/cn/legal/product-descriptions/adobe-experience-manager-managed-services.html)。
 
 >[!NOTE]
 >
@@ -30,7 +46,7 @@ ht-degree: 7%
 
    ![在Experience Manager中为Assets Insights配置Adobe Analytics](assets/insights_config2.png)
 
-   *图：在[!DNL Adobe Analytics].[!DNL Experience Manager]中为Assets Insights配置*
+   *图：在[!DNL Experience Manager].*&#x200B;中为Assets Insights配置[!DNL Adobe Analytics]
 
 1. 单击&#x200B;**[!UICONTROL 身份验证]**。
 1. [!DNL Experience Manager]对您的凭据进行身份验证后，从&#x200B;**[!UICONTROL 报表包]**&#x200B;列表中，选择希望Assets Insights从中获取数据的[!DNL Adobe Analytics]报表包。 单击&#x200B;**[!UICONTROL 添加]**。
@@ -38,7 +54,7 @@ ht-degree: 7%
 
 ## 页面跟踪器 {#page-tracker}
 
-配置[!DNL Adobe Analytics]帐户后，将为您生成页面跟踪器代码。 要启用Assets Insights以跟踪第三方网站中使用的[!DNL Experience Manager]资源，请在网站代码中包含页面跟踪器代码。 在[!UICONTROL 中使用]页面跟踪器[!DNL Experience Manager Assets]实用程序生成页面跟踪器代码。 有关如何将页面跟踪器代码包含在第三方网页中的更多信息，请参阅[在网页中使用页面跟踪器和嵌入代码](/help/assets/use-page-tracker.md)。
+配置[!DNL Adobe Analytics]帐户后，将为您生成页面跟踪器代码。 要启用Assets Insights以跟踪第三方网站中使用的[!DNL Experience Manager]资源，请在网站代码中包含页面跟踪器代码。 在[!DNL Experience Manager Assets]中使用[!UICONTROL 页面跟踪器]实用程序生成页面跟踪器代码。 有关如何将页面跟踪器代码包含在第三方网页中的更多信息，请参阅[在网页中使用页面跟踪器和嵌入代码](/help/assets/use-page-tracker.md)。
 
 1. 在[!DNL Experience Manager]中，单击&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Assets]**。
 

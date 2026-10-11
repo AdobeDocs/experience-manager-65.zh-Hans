@@ -9,16 +9,34 @@ feature: Adaptive Forms,Foundation Components
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '2087'
 ht-degree: 4%
-
 ---
-
 # 自适应表单模板{#adaptive-form-templates}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
@@ -60,13 +78,13 @@ ht-degree: 4%
 * **页面工具栏**
 包含以下选项：
 
-   * **切换侧面板**：用于显示或隐藏侧栏。
-   * **页面信息**：用于指定发布/取消发布时间、缩略图、客户端库、页面策略和页面设计客户端库等信息。
-   * **模拟器**：用于模拟和自定义不同设备的外观。
-   * **图层选择器：**&#x200B;允许您更改图层。
-您可以选择&#x200B;**结构**&#x200B;层或&#x200B;**初始内容**&#x200B;层。利用结构层，可添加和自定义页眉和页脚。通过初始内容层，可自定义表单内容。
+  * **切换侧面板**：用于显示或隐藏侧栏。
+  * **页面信息**：用于指定发布/取消发布时间、缩略图、客户端库、页面策略和页面设计客户端库等信息。
+  * **模拟器**：用于模拟和自定义不同设备的外观。
+  * **图层选择器：**&#x200B;允许您更改图层。
+    您可以选择&#x200B;**结构**&#x200B;层或&#x200B;**初始内容**&#x200B;层。 利用结构层，可添加和自定义页眉和页脚。 通过初始内容层，可自定义表单内容。
 
-   * **预览：**&#x200B;允许您预览发布模板时的外观。 您可以使用“图层选择器”和“预览”来切换编辑和预览模式。
+  * **预览：**&#x200B;允许您预览发布模板时的外观。 您可以使用“图层选择器”和“预览”来切换编辑和预览模式。
 
 * **侧栏：**&#x200B;提供内容、属性、Assets和组件浏览器。
 * **组件工具栏：**&#x200B;当您选择某个组件时，您会看到一个允许您自定义该组件的工具栏。
@@ -115,8 +133,8 @@ ht-degree: 4%
 
 选择初始内容选项后，模板的自适应表单容器会像编辑的自适应表单一样打开。 与创作自适应表单一样，您可以指定初始设置，例如选择主题和提交操作。
 
-表单作者可将其用作创建表单的基础。内容流结构在模板的初始内容层中指定。要切换到编辑表单模板的初始内容，请在页面工具栏中的“预览”之前，选择![画布下拉列表](assets/canvas-drop-down.png) **>初始内容**。
-![模板编辑器中的初始内容层](assets/initial-content-layer.png)
+表单作者可将其用作创建表单的基础。 内容流结构在模板的初始内容层中指定。 要切换到编辑表单模板的初始内容，请在页面工具栏中的“预览”之前，选择![画布下拉列表](assets/canvas-drop-down.png) **>初始内容**。
+模板编辑器中的![初始内容层](assets/initial-content-layer.png)
 
 模板编辑器中的初始内容层，显示为指定属性而选择的自适应表单容器。
 

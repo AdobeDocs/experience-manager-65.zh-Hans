@@ -9,13 +9,29 @@ role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '15601'
 ht-degree: 0%
-
 ---
-
 # 使用策略保护文档 {#protecting-documents-with-policies}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -248,7 +264,7 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
    * 通过调用`DocumentSecurityClient`对象的`getPolicyManager`方法创建`PolicyManager`对象。
    * 通过调用`PolicyManager`对象的`registerPolicy`方法并传递以下值来注册策略：
 
-      * 表示要注册的策略的`Policy`对象。
+     * 表示要注册的策略的`Policy`对象。
 
    * 一个字符串值，表示策略所属的策略集。
 
@@ -284,9 +300,9 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -389,8 +405,8 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
    * 通过调用`RightsManagementClient`对象的`getPolicyManager`方法创建`PolicyManager`对象。
    * 通过调用`PolicyManager`对象的`getPolicy`方法并传递以下值，创建表示要更新的策略的`Policy`对象
 
-      * 一个字符串值，表示策略所属的策略集名称。 您可以指定导致使用`MyPolicies`策略集的`null`。
-      * 表示策略名称的字符串值。
+     * 一个字符串值，表示策略所属的策略集名称。 您可以指定导致使用`MyPolicies`策略集的`null`。
+     * 表示策略名称的字符串值。
 
 1. 设置策略的属性。
 
@@ -424,9 +440,9 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -498,8 +514,8 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
    * 通过调用`RightsManagementClient`对象的`getPolicyManager`方法创建`PolicyManager`对象。
    * 通过调用`PolicyManager`对象的`deletePolicy`方法并传递以下值来删除策略：
 
-      * 一个字符串值，它指定策略所属的策略集名称。 您可以指定导致使用`MyPolicies`策略集的`null`。
-      * 一个字符串值，它指定要删除的策略的名称。
+     * 一个字符串值，它指定策略所属的策略集名称。 您可以指定导致使用`MyPolicies`策略集的`null`。
+     * 一个字符串值，它指定要删除的策略的名称。
 
 **代码示例**
 
@@ -527,9 +543,9 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -620,13 +636,13 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
    * 通过调用`RightsManagementClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
    * 通过调用`DocumentManager`对象的`protectDocument`方法并传递以下值，将策略应用到PDF文档：
 
-      * 包含应用了策略的PDF文档的`com.adobe.idp.Document`对象。
-      * 指定文档名称的字符串值。
-      * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定导致使用`MyPolicies`策略集的`null`值。
-      * 指定策略名称的字符串值。
-      * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值是可选的，并且可以为null（如果此参数为null，则下一个参数值必须为null）。
-      * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为`null` （如果此参数为null，则以前的参数值必须为`null`）。
-      * 表示用于选择MS Office模板的区域设置的`com.adobe.livecycle.rightsmanagement.Locale`。 此参数值是可选的，不用于PDF文档。 要保护PDF文档的安全，请指定`null`。
+     * 包含应用了策略的PDF文档的`com.adobe.idp.Document`对象。
+     * 指定文档名称的字符串值。
+     * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定导致使用`MyPolicies`策略集的`null`值。
+     * 指定策略名称的字符串值。
+     * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值是可选的，并且可以为null（如果此参数为null，则下一个参数值必须为null）。
+     * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为`null` （如果此参数为null，则以前的参数值必须为`null`）。
+     * 表示用于选择MS Office模板的区域设置的`com.adobe.livecycle.rightsmanagement.Locale`。 此参数值是可选的，不用于PDF文档。 要保护PDF文档的安全，请指定`null`。
 
      `protectDocument`方法返回包含受策略保护的PDF文档的`RMSecureDocumentResult`对象。
 
@@ -669,9 +685,9 @@ Document Security服务还可以保护其他文件类型，如Microsoft Word文�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -814,9 +830,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -927,9 +943,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
    * 通过调用`DocumentSecurityClient`对象的`getLicenseManager`方法创建`LicenseManager`对象。
    * 通过调用`LicenseManager`对象的`revokeLicense`方法并传递以下值来撤销受策略保护的文档：
 
-      * 指定受策略保护文档的许可证标识符值的字符串值（指定`DocumentManager`对象的`getLicenseId`方法的返回值）。
-      * `License`接口的静态数据成员，它指定撤销文档的原因。 例如，您可以指定`License.DOCUMENT_REVISED`。
-      * 一个`java.net.URL`值，它指定修订文档的位置。 如果您不想将用户重定向到其他URL，则可以传递`null`。
+     * 指定受策略保护文档的许可证标识符值的字符串值（指定`DocumentManager`对象的`getLicenseId`方法的返回值）。
+     * `License`接口的静态数据成员，它指定撤销文档的原因。 例如，您可以指定`License.DOCUMENT_REVISED`。
+     * 一个`java.net.URL`值，它指定修订文档的位置。 如果您不想将用户重定向到其他URL，则可以传递`null`。
 
 **代码示例**
 
@@ -957,9 +973,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -976,9 +992,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
    * 通过调用`DocumentSecurityServiceClient`对象的`getLicenseID`方法并传递表示受策略保护文档的`BLOB`对象，检索受策略保护文档的许可证标识符值。 此方法返回代表许可证标识符的字符串值。
    * 通过调用`DocumentSecurityServiceClient`对象的`revokeLicense`方法并传递以下值来撤销受策略保护的文档：
 
-      * 指定受策略保护文档的许可证标识符值的字符串值（指定`DocumentSecurityServiceService`对象的`getLicenseId`方法的返回值）。
-      * `Reason`枚举的静态数据成员，它指定撤销文档的原因。 例如，您可以指定`Reason.DOCUMENT_REVISED`。
-      * 一个`string`值，它指定修订文档所在的URL位置。 如果您不想将用户重定向到其他URL，则可以传递`null`。
+     * 指定受策略保护文档的许可证标识符值的字符串值（指定`DocumentSecurityServiceService`对象的`getLicenseId`方法的返回值）。
+     * `Reason`枚举的静态数据成员，它指定撤销文档的原因。 例如，您可以指定`Reason.DOCUMENT_REVISED`。
+     * 一个`string`值，它指定修订文档所在的URL位置。 如果您不想将用户重定向到其他URL，则可以传递`null`。
 
 **代码示例**
 
@@ -1089,9 +1105,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -1223,9 +1239,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -1443,9 +1459,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -1590,9 +1606,9 @@ Document Security服务从PDF文档中删除策略后，您可以将不安全的
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -1718,9 +1734,9 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -2020,13 +2036,13 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
    * 通过调用`DocumentSecurityClient`对象的`getDocumentManager`方法创建`DocumentManager`对象。
    * 通过调用`DocumentManager`对象的`protectDocument`方法并传递以下值，将策略应用到Word文档：
 
-      * 包含应用了策略的Word文档的`com.adobe.idp.Document`对象。
-      * 指定文档名称的字符串值。
-      * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定导致使用`MyPolicies`策略集的`null`值。
-      * 指定策略名称的字符串值。
-      * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值是可选的，并且可以为null（如果此参数为null，则下一个参数值必须为null）。
-      * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为`null` （如果此参数为`null`，则以前的参数值必须为`null`）。
-      * 表示用于选择MS Office模板的区域设置的`com.adobe.livecycle.rightsmanagement.Locale`。 此参数值是可选的，您可以指定`null`。
+     * 包含应用了策略的Word文档的`com.adobe.idp.Document`对象。
+     * 指定文档名称的字符串值。
+     * 一个字符串值，它指定策略所属的策略集的名称。 您可以指定导致使用`MyPolicies`策略集的`null`值。
+     * 指定策略名称的字符串值。
+     * 一个字符串值，表示作为文档发布者的用户的用户管理器域的名称。 此参数值是可选的，并且可以为null（如果此参数为null，则下一个参数值必须为null）。
+     * 一个字符串值，表示作为文档发布者的用户管理员用户的规范名称的名称。 此参数值是可选的，可以为`null` （如果此参数为`null`，则以前的参数值必须为`null`）。
+     * 表示用于选择MS Office模板的区域设置的`com.adobe.livecycle.rightsmanagement.Locale`。 此参数值是可选的，您可以指定`null`。
 
      `protectDocument`方法返回包含受策略保护的Word文档的`RMSecureDocumentResult`对象。
 
@@ -2062,9 +2078,9 @@ Rights Management服务会在发生特定操作时对其进行跟踪，例如将
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`DocumentSecurityServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
@@ -2206,9 +2222,9 @@ Document Security服务从Word文档中删除策略后，您可以将不安全�
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将AEM表单用户名分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`RightsManagementServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
 
    * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 

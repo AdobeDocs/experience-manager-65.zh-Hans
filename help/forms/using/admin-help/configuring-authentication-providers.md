@@ -9,13 +9,27 @@ exl-id: d72a3977-1423-49e0-899b-234bb76be378
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1592'
+source-wordcount: '1614'
 ht-degree: 0%
-
 ---
-
 # 配置身份验证提供程序 {#configuring-authentication-providers}
 
 >[!NOTE]
@@ -112,7 +126,7 @@ ht-degree: 0%
 
 如果使用工件绑定，则需要以下自定义属性。
 
-* 添加以下自定义属性以指定表示AEM表单服务提供程序的用户名，该用户名用于对IDP工件解析服务进行身份验证。
+* 添加以下自定义属性，以指定代表AEM表单服务提供商的用户名，该用户名用于对IDP工件解析服务进行身份验证。
   `saml.idp.resolve.username=<username>`
 
 * 添加以下自定义属性以指定在`saml.idp.resolve.username`中指定的用户的密码。
@@ -129,9 +143,9 @@ ht-degree: 0%
 
 即时预配在用户通过身份验证提供程序成功进行身份验证后，会在User Management数据库中自动创建用户。 相关的角色和组也会动态分配给新用户。 您可以为企业域和混合域启用及时资源调配。
 
-此过程描述了传统身份验证在AEM Forms中的工作方式：
+此过程描述传统身份验证在AEM Forms中的工作方式：
 
-1. 当用户尝试登录AEM表单时，用户管理会按顺序将其凭据传递到所有可用的身份验证提供程序。 （登录凭据包括用户名/密码组合、Kerberos票证、PKCS7签名等。）
+1. 当用户尝试登录AEM表单时，用户管理会按顺序将其凭据传递给所有可用的身份验证提供程序。 （登录凭据包括用户名/密码组合、Kerberos票证、PKCS7签名等。）
 1. 身份验证提供程序验证凭据。
 1. 然后，验证提供程序会检查用户是否存在于用户管理数据库中。 可能存在以下状态：
 
@@ -150,7 +164,7 @@ ht-degree: 0%
 
 ### 为域启用及时资源调配 {#enable-just-in-time-provisioning-for-a-domain}
 
-1. 编写实现IdentityCreator和AssignmentProvider接口的服务容器。 (请参阅[使用AEM表单编程](https://www.adobe.com/go/learn_aemforms_programming_63)。)
+1. 编写实现IdentityCreator和AssignmentProvider接口的服务容器。 （请参阅[使用AEM表单编程](https://www.adobe.com/go/learn_aemforms_programming_63)。）
 1. 将服务容器部署到Forms服务器。
 1. 在管理控制台中，单击设置>用户管理>域管理。
 

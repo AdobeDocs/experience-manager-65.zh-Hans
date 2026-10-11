@@ -7,13 +7,27 @@ hide: true
 solution: Experience Manager
 feature: Release Information
 role: User,Admin,Developer
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 90%
-
 ---
-
 # AEM Forms JEE 补丁安装程序 {#aem-forms-jee-patch-installer}
 
 >[!NOTE]
@@ -32,19 +46,19 @@ AEM 6.5 Forms JEE 补丁安装程序包含此补丁发布之前 AEM 6.5 Forms JE
 
 1. 请先备份 &lt;*AEM_forms_root*>/deploy 文件夹。 如果您决定卸载快速修补程序，则必须执行此操作。
 1. 停止应用程序服务器。
-1. 将补丁安装程序存档文件提取到硬盘驱动器。
+1. 将补丁安装程序存档文件提取到硬盘。
 1. 在根据您所使用的操作系统命名的目录中：
 
    * **窗口**
-导航到安装介质上的相应目录或硬盘上复制安装程序的文件夹，然后双击aemforms65_cfp_install.exe文件。
+     导航到安装介质上的相应目录或硬盘上复制安装程序的文件夹，然后双击aemforms65_cfp_install.exe文件。
 
-      * （Windows 32 位）`Windows\Disk1\InstData\VM`
-      * （Windows 64 位）`Windows_64Bit`\ `Disk1\InstData\VM`
+     * （Windows 32 位）`Windows\Disk1\InstData\VM`
+     * （Windows 64 位）`Windows_64Bit`\ `Disk1\InstData\VM`
 
    * **Linux®**
-导航到相应的目录，然后在命令提示符下键入`./aem65_cfp_install.bin`。
+     导航到相应的目录，然后在命令提示符下键入`./aem65_cfp_install.bin`。
 
-      * （Linux®）`Linux/Disk1/InstData/NoVM`
+     * （Linux®）`Linux/Disk1/InstData/NoVM`
 
    这会启动安装向导，引导您完成安装。
 

@@ -8,13 +8,24 @@ feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '695'
-ht-degree: 3%
-
+source-wordcount: '706'
+ht-degree: 7%
 ---
-
 # 注册为用户 {#registering-as-a-user}
 
 您可以使用从Document Security用户那里收到的受策略保护的文档，即使您在该用户的组织之外也是如此。 要使用受策略保护的文档，您必须向Document Security注册。 如果之前未邀请您注册，则Document Security将在发生以下事件时启动注册流程：
@@ -24,7 +35,7 @@ ht-degree: 3%
 
   注册并激活帐户后，您可以使用策略授权您使用的受策略保护的文档。 如果Document Security管理员为受邀用户启用这些功能，则您可能有权执行这些任务：
 
-* 使用Document Security策略的Protect文档。
+* 使用文档安全策略保护文档。
 * 创建可应用于文档的用户策略。
 * 邀请其他外部用户通过将受策略保护的文档添加到策略来使用受策略保护的文档。
 
@@ -39,7 +50,7 @@ ht-degree: 3%
 如果您是受邀用户，并且从document security收到了电子邮件注册消息，则可以使用消息中的URL打开在线注册页面进行注册。 在注册之后，您将收到有关激活帐户的第二个通知。
 
 1. 打开Document Security注册电子邮件。 邮件包含的URL是Document Security中指向“外部用户注册”页面的链接。
-1. 单击URL，或复制该URL并将其粘贴到浏览器中。 此时将显示“外部用户注册”页面。
+1. 单击 URL 或者复制并将其粘贴到浏览器中。 此时将显示“外部用户注册”页面。
 1. 在相应的框中键入您的姓名、电话号码、地址、组织和密码，然后在“确认密码”框中重新键入您的密码。 您的密码可以是任意八个字符的组合。
 1. 单击“保存”。 此时会显示一条感谢消息，通知您检查电子邮件中的激活电子邮件消息。 现在激活您的帐户以完成注册过程。
 
@@ -50,7 +61,7 @@ ht-degree: 3%
 在管理员停用或删除帐户之前，该帐户保持活动状态。
 
 1. 打开Document Security注册确认电子邮件。
-1. 单击消息中显示的URL。 此时将显示Document Security激活页面。
+1. 单击邮件中显示的 URL。 此时将显示Document Security激活页面。
 1. 单击“Here（此处）”以转到登录页面。
 1. 在用户名框中，键入您在Document Security下注册的电子邮件地址。 此电子邮件地址是您的默认Document Security用户名。
 1. 在“密码”框中，键入注册时创建的密码，然后单击“登录”。

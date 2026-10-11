@@ -6,13 +6,29 @@ role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+  - id: c7140a77-10cf-4213-a7e9-f0d69c9fb56c
+    internal-label: APIs and SDKs
+subfeature_v2:
+  - id: b7f5d1e0-aa2f-4a55-83f4-c2b35a8bd3a7
+    internal-label: Content fragments
+  - id: e5184d7e-fd36-480c-b5e5-d8161f2210ca
+    internal-label: Assets HTTP API
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2016'
 ht-degree: 23%
-
 ---
-
 # AEM Assets HTTP API中的内容片段支持 {#content-fragments-support-in-aem-assets-http-api}
 
 | 版本 | 文章链接 |
@@ -67,9 +83,9 @@ Assets REST API为存储在AEM实例中的资源提供[REST](https://en.wikipedi
 它使用`/api/assets`终结点，并需要资源的路径才能访问它（没有前导`/content/dam`）。
 
 * 这意味着，要访问以下位置的资产：
-   * `/content/dam/path/to/asset`
+  * `/content/dam/path/to/asset`
 * 您需要请求：
-   * `/api/assets/path/to/asset`
+  * `/api/assets/path/to/asset`
 
 例如，要访问 `/content/dam/wknd/en/adventures/cycling-tuscany`，需要请求 `/api/assets/wknd/en/adventures/cycling-tuscany.json`
 
@@ -251,9 +267,9 @@ Assets可以具有多个演绎版。 这些通常作为子实体显示，一个�
 * 强烈建议将创建绑定到创作实例([)，当前没有方法复制片段以使用此API](/help/assets/assets-api-content-fragments.md#limitations)发布。
 * 可以通过这两种方式交付，因为 AEM 仅以 JSON 格式提供请求的内容。
 
-   * 来自 AEM 创作实例的存储和交付应足以满足防火墙背后的媒体库应用程序的需求。
+  * 来自 AEM 作者实例的存储和投放应足以满足防火墙背后的媒体库应用程序的需求。
 
-   * 对于实时 Web 交付，建议使用 AEM 发布实例。
+  * 对于实时 Web 交付，建议使用 AEM 发布实例。
 
 >[!CAUTION]
 >
@@ -319,18 +335,18 @@ Assets可以具有多个演绎版。 这些通常作为子实体显示，一个�
 * **200** （确定）
 返回时间：
 
-   * 通过`GET`请求内容片段
-   * 通过`PUT`成功更新内容片段
+  * 通过`GET`请求内容片段
+  * 通过`PUT`成功更新内容片段
 
 * **201** （已创建）
 返回时间：
 
-   * 通过`POST`成功创建内容片段
+  * 通过`POST`成功创建内容片段
 
 * **404** （未找到）
 返回时间：
 
-   * 请求的内容片段不存在
+  * 请求的内容片段不存在
 
 * **500** （内部服务器错误）
 
@@ -343,28 +359,28 @@ Assets可以具有多个演绎版。 这些通常作为子实体显示，一个�
 
   下面列出了返回此错误状态以及生成的错误消息（等宽）时的常见情况：
 
-   * 父文件夹不存在（通过`POST`创建内容片段时）
-   * 未提供内容片段模型（缺少cq:model）、无法读取（由于路径无效或权限问题）或没有有效的片段模型：
+  * 父文件夹不存在（通过`POST`创建内容片段时）
+  * 未提供内容片段模型（缺少cq:model）、无法读取（由于路径无效或权限问题）或没有有效的片段模型：
 
-      * `No content fragment model specified`
-      * `Cannot create a resource of given model '/foo/bar/qux'`
+    * `No content fragment model specified`
+    * `Cannot create a resource of given model '/foo/bar/qux'`
 
-   * 无法创建内容片段（可能是权限问题）：
+  * 无法创建内容片段（可能是权限问题）：
 
-      * `Could not create content fragment`
+    * `Could not create content fragment`
 
-   * 无法更新标题和/或描述：
+  * 无法更新标题和/或描述：
 
-      * `Could not set value on content fragment`
+    * `Could not set value on content fragment`
 
-   * 无法设置元数据：
+  * 无法设置元数据：
 
-      * `Could not set metadata on content fragment`
+    * `Could not set metadata on content fragment`
 
-   * 找不到内容元素或无法更新内容元素
+  * 找不到内容元素或无法更新内容元素
 
-      * `Could not update content element`
-      * `Could not update fragment data of element`
+    * `Could not update content element`
+    * `Could not update fragment data of element`
 
   详细错误消息通常以下列方式返回：
 
@@ -388,7 +404,7 @@ Assets可以具有多个演绎版。 这些通常作为子实体显示，一个�
 * [Adobe Experience Manager Assets API — 内容片段](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html)
 * [Assets HTTP API](/help/assets/mac-api-assets.md)
 
-   * [可用功能](/help/assets/mac-api-assets.md#assets)
+  * [可用功能](/help/assets/mac-api-assets.md#assets)
 
 ## 其他资源 {#additional-resources}
 
