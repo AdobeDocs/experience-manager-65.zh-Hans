@@ -102,7 +102,7 @@ Dynamic Media组件是智能的 — 根据您添加的是图像还是视频，�
 
 如果要查看图像集、旋转集或混合媒体集，则此选项不可用。
 
-**[!UICONTROL 图像修饰符]** — 您可以通过提供其他图像命令来更改图像效果。 这些命令在[管理图像预设](/help/assets/managing-viewer-presets.md)和[命令引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)中进行了说明。
+**[!UICONTROL 图像修饰符]** — 您可以通过提供其他图像命令来更改图像效果。 这些命令在[管理图像预设](/help/assets/managing-viewer-presets.md)和[命令引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans)中进行了说明。
 
 如果要查看图像集、旋转集或混合媒体集，则此选项不可用。
 
@@ -148,7 +148,7 @@ Dynamic Media组件是智能的 — 根据您添加的是图像还是视频，�
 
 在Experience Manager 6.2中，当您安装[FP-13480](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq620/featurepack/cq-6.2.0-featurepack-13480)时，可以控制是通过安全SSL连接(HTTPS)还是不安全连接(HTTP)来传送视频。 默认情况下，视频交付协议自动继承自嵌入网页的协议。 如果网页是通过HTTPS加载的，则视频也通过HTTPS交付。 反过来，如果网页位于HTTP上，则视频将通过HTTP投放。 通常，此默认行为是正常的，无需进行任何配置更改。 但是，您可以覆盖此默认行为。 将`VideoPlayer.ssl=on`附加到URL路径的末尾或嵌入代码片段中其他查看器配置参数的列表。 这两个操作都会强制安全视频交付。
 
-有关安全视频交付以及在URL路径中使用`VideoPlayer.ssl`配置属性的更多信息，请参阅查看器参考指南中的[安全视频交付](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html)。 除了视频查看器之外，安全视频交付还可用于混合媒体查看器和交互式视频查看器。
+有关安全视频交付以及在URL路径中使用`VideoPlayer.ssl`配置属性的更多信息，请参阅查看器参考指南中的[安全视频交付](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-viewer-20-securevideodelivery.html?lang=zh-Hans)。 除了视频查看器之外，安全视频交付还可用于混合媒体查看器和交互式视频查看器。
 
 ### 交互式媒体组件 {#interactive-media-component}
 

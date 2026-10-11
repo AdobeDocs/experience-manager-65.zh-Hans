@@ -138,7 +138,7 @@ ht-degree: 5%
 1. 在&#x200B;**[!UICONTROL 搜索提升]**&#x200B;框中，指定要提升图像搜索的关键字，然后单击&#x200B;**[!UICONTROL 添加]**。 您可以按相同方式指定多个关键字。
 1. 单击&#x200B;**[!UICONTROL 保存并关闭]**。 您针对此关键字提升的资产将显示在排名最前的搜索结果中。
 
-利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅[搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost)。
+利用这种方法，您可以提升目标关键词搜索结果中某些资产的排名。 请观看下面的示例视频。 有关详细信息，请参阅[搜索 [!DNL Experience Manager]](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/search-and-discovery/search-boost)。
 
 >[!VIDEO](https://video.tv.adobe.com/v/16766/?quality=6)
 
@@ -228,11 +228,11 @@ TBD: Where are the limit, size, orderby properties defined?
 
 ### 在[!DNL Experience Manager]桌面应用程序中搜索数字资产 {#desktop-app}
 
-Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面（Win或Mac）上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/en/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets)。
+Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]易于搜索并在其本地桌面（Win或Mac）上可用。 创意人员可以轻松地在Mac Finder或Windows资源管理器中显示所需的资源，这些资源在桌面应用程序中打开，并在本地进行更改 — 这些更改将在存储库中创建新版本后保存回[!DNL Experience Manager]。 应用程序支持使用一个或多个关键字、`*`和`?`通配符以及`AND`运算符进行基本搜索。 请参阅桌面应用程序中的[浏览、搜索和预览资源](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-desktop-app/using/using#browse-search-preview-assets)。
 
 ### 在[!DNL Brand Portal]中搜索数字资源 {#brand-portal}
 
-业务线用户和营销人员使用Brand Portal与其扩展的内部团队、合作伙伴和经销商高效、安全地共享获得批准的数字资源。 请参阅[在Brand Portal](https://experienceleague.adobe.com/en/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching)中搜索资源。
+业务线用户和营销人员使用Brand Portal与其扩展的内部团队、合作伙伴和经销商高效、安全地共享获得批准的数字资源。 请参阅[在Brand Portal](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-brand-portal/using/search-capabilities/brand-portal-searching)中搜索资源。
 
 ### 搜索[!DNL Adobe Stock]图像 {#adobe-stock1}
 
@@ -380,11 +380,11 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
    保存更改。
 
 1. 访问`/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags`并添加值为`true`的`Boolean`类型的`similarityTags`属性。
-1. 将智能标记应用于[!DNL Experience Manager]存储库中的资源。 请参阅[如何配置智能标记](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/configuring/tagging#configuring)。
+1. 将智能标记应用于[!DNL Experience Manager]存储库中的资源。 请参阅[如何配置智能标记](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/configuring/tagging#configuring)。
 1. 在CRXDE的`/oak-index/damAssetLucene`节点中，将`reindex`属性设置为`true`。 保存更改。
 1. （可选）如果已自定义搜索表单，请将`/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch`节点复制到`/conf/global/settings/dam/search/facets/assets/jcr:content/items`。 保存更改。
 
-有关相关信息，请参阅[了解Experience Manager中的智能标记](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/metadata/image-smart-tags)和[如何管理智能标记](/help/assets/enhanced-smart-tags.md)。
+有关相关信息，请参阅[了解Experience Manager中的智能标记](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/metadata/image-smart-tags)和[如何管理智能标记](/help/assets/enhanced-smart-tags.md)。
 
 >[!CAUTION]
 >
@@ -507,6 +507,6 @@ Creative专业人员使用桌面应用程序让[!DNL Experience Manager Assets]�
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 搜索实施指南](https://experienceleague.adobe.com/en/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
->* [高级配置以提升搜索结果](https://experienceleague.adobe.com/en/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
+>* [[!DNL Experience Manager] 搜索实施指南](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/sites/developing/search-tutorial-develop)
+>* [高级配置以提升搜索结果](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/assets/search-and-discovery/search-boost)
 

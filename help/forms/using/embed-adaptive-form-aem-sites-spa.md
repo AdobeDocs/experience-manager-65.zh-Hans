@@ -31,7 +31,7 @@ ht-degree: 7%
 ---
 # 在 AEM Sites 单页应用程序中嵌入自适应表单或交互式通信{#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-single-page-application}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 ## 概述 {#overview}
 
@@ -48,7 +48,7 @@ AEM Forms允许表单开发人员将自适应表单和交互式通信无缝嵌�
 * Java SE Development Kit 8或更高版本
 * Apache Maven 3.3.1或更高版本
 * AEM创作实例
-* 创作实例上的[AEM Forms 6.4.2附加组件包](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* 创作实例上的[AEM Forms 6.4.2附加组件包](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)
 
 ## 安装AEM Forms SPA容器组件 {#install-aem-forms-spa-container-component}
 

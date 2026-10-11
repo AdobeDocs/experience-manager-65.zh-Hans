@@ -33,7 +33,7 @@ AEM Mobile随时准备帮助客户履行其GDPR合规义务。 AEM Mobile中未�
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe的数字发布产品（在AEM Mobile之前）支持Adobe的GDPR准备工作。 请参阅[https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html)。 下面提供了有关在Digital Publishing Suite产品中支持GDPR相关功能的具体信息，包括如何与Adobe合作启动GDPR请求。
+Adobe的数字发布产品（在AEM Mobile之前）支持Adobe的GDPR准备工作。 请参阅[https://business.adobe.com/cn/privacy/general-data-protection-regulation.html](https://business.adobe.com/cn/privacy/general-data-protection-regulation.html)。 下面提供了有关在Digital Publishing Suite产品中支持GDPR相关功能的具体信息，包括如何与Adobe合作启动GDPR请求。
 
 要确保不会将AEM Mobile与旧版Digital Publishing Suite产品混淆，您可以在此处登录Digital Publishing Suite产品：
 

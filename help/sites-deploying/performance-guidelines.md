@@ -313,7 +313,7 @@ AEM部署有三个重要的构建基块。 内容作者、编辑者和批准者�
 
 >[!CAUTION]
 >
->关系数据库微内核的支持受限。 使用此类型的微内核之前，请与[Adobe客户关怀](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)联系。
+>关系数据库微内核的支持受限。 使用此类型的微内核之前，请与[Adobe客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)联系。
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -325,7 +325,7 @@ AEM部署有三个重要的构建基块。 内容作者、编辑者和批准者�
 
 >[!NOTE]
 >
->Adobe建议您选择使用Adobe Managed Services在Azure或Amazon Web Services (AWS)上部署AEM的选项。 客户将受益于具有在这些云计算环境中部署和操作AEM的经验和技能的团队。 请参阅[有关Adobe Managed Services的其他文档](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t)。
+>Adobe建议您选择使用Adobe Managed Services在Azure或Amazon Web Services (AWS)上部署AEM的选项。 客户将受益于具有在这些云计算环境中部署和操作AEM的经验和技能的团队。 请参阅[有关Adobe Managed Services的其他文档](https://business.adobe.com/cn/products/experience-manager/managed-services.html?aemClk=t)。
 >
 >有关如何在Adobe Managed Services之外的Azure或AWS上部署AEM的建议，Adobe建议直接与云提供商合作。 或者，与支持在您选择的云环境中部署AEM的Adobe合作伙伴之一合作。 选定的云提供商或合作伙伴负责其支持的架构的规模规格、设计和实施，以满足您的特定性能、负载、可扩展性和安全要求。
 >

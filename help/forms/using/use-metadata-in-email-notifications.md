@@ -213,7 +213,7 @@ AEM Forms应用程序提供了多个开箱即用的元数据变量（键值对�
 
 您可以使用WorkitemUserMetadataService Java界面为电子邮件模板添加自定义元数据。 您可以创建一个使用WorkitemUserMetadataService Java接口的OSGi捆绑包，并将其部署到AEM Forms服务器。 它使元数据可用于在“分配任务”步骤中进行选择。
 
-要创建具有Java接口的OSGi捆绑包，请将[AEM Forms客户端SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar和[granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)文件作为外部依赖项添加到OSGi捆绑包项目。 您可以使用任何Java IDE创建OSGi捆绑包。 以下过程提供了使用Eclipse创建OSGi捆绑包的步骤：
+要创建具有Java接口的OSGi捆绑包，请将[AEM Forms客户端SDK](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html) jar和[granite jar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/)文件作为外部依赖项添加到OSGi捆绑包项目。 您可以使用任何Java IDE创建OSGi捆绑包。 以下过程提供了使用Eclipse创建OSGi捆绑包的步骤：
 
 1. 打开Eclipse IDE。 导航到文件>新建项目。
 

@@ -39,7 +39,7 @@ AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，�
 
 >[!NOTE]
 >
->此处描述的功能适用于自[版本1.1.0的核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)以来的所有核心组件。
+>此处描述的功能适用于自[版本1.1.0的核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)以来的所有核心组件。
 
 ## 包含内容片段核心组件的JSON导出器 {#json-exporter-with-content-fragment-core-components}
 
@@ -111,4 +111,4 @@ AEM 内容服务旨在概括 AEM 中/来自 AEM 的内容的描述和投放，�
 * [使用内容片段创作](/help/sites-authoring/content-fragments.md)
 * [为组件启用 JSON 导出](/help/sites-developing/json-exporter-components.md)
 
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[内容片段组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=zh-Hans)

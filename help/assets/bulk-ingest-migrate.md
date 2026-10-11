@@ -32,13 +32,13 @@ ht-degree: 1%
 
 功能包18912的安装是&#x200B;*可选*。
 
-功能包18912允许您通过FTP将资源直接批量摄取到Adobe Experience Manager上的Dynamic Media - Scene7模式。 它还允许您将资源从Dynamic Media Classic迁移到Experience Manager上的Dynamic Media - Scene7模式。 此功能包可从[Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)获得。
+功能包18912允许您通过FTP将资源直接批量摄取到Adobe Experience Manager上的Dynamic Media - Scene7模式。 它还允许您将资源从Dynamic Media Classic迁移到Experience Manager上的Dynamic Media - Scene7模式。 此功能包可从[Adobe Professional Services](https://business.adobe.com/cn/customers/consulting-services/main.html)获得。
 
 >[!IMPORTANT]
 >
 >您可以使用功能包在Experience Manager中自行将资产从Dynamic Media Classic批量迁移到Dynamic Media - Scene7模式。 您也可以使用Dynamic Media Classic中的FTP功能批量迁移资源。 但是，由于涉及的复杂性，Adobe并&#x200B;*不*&#x200B;建议您使用这两种方法中的任何一种。
 >
->因此，在通过[Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)完成迁移项目时，此迁移功能包仅&#x200B;*支持*。
+>因此，在通过[Adobe Professional Services](https://business.adobe.com/cn/customers/consulting-services/main.html)完成迁移项目时，此迁移功能包仅&#x200B;*支持*。
 
 在安装功能包之前，请创建服务用户并将该信息提供给Adobe支持。
 
@@ -48,7 +48,7 @@ ht-degree: 1%
 
 1. 在您的Experience Manager实例中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 安全性]** > **[!UICONTROL 用户]**，然后选择&#x200B;**[!UICONTROL 创建用户]**。 此服务用户必须具有对`/content/dam.`的&#x200B;*读/写*&#x200B;权限
 1. 在&#x200B;**[!UICONTROL ID]**&#x200B;和&#x200B;**[!UICONTROL 密码]**&#x200B;字段中，输入用户名和密码；例如，**FTP用户**。 此名称将以创建资产的用户的身份显示在时间轴中。 从FTP上传资源时，如果资源上传到FTP服务器并推送到Experience Manager，则会认为该资源已创建。
-1. 联系[Experience Manager的Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support)以请求访问功能包18912以供下载。 当您联系支持人员时，可能需要以下信息：
+1. 联系[Experience Manager的Adobe客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)以请求访问功能包18912以供下载。 当您联系支持人员时，可能需要以下信息：
 
    * 创作实例的服务器IP地址，包括端口号（默认情况下，端口号为4502）。
    * 上一步中的Experience Manager服务用户用户名和密码。

@@ -105,13 +105,13 @@ ContextHub和Client Context中称为&#x200B;*区段*&#x200B;的受众是由特�
 
 | **属性** | **描述** | **有关更多信息** |
 |---|---|---|
-| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕尺寸（按像素）等参数锁定移动设备。 | 请参阅 Adobe Target 上的[移动设备文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html)。 |
-| **自定义** | 自定义参数都是 mbox 参数。 如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参阅 Adobe Target 上的[自定义参数文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html)。 |
+| **移动设备** | 根据移动设备、设备类型、设备供应商、屏幕尺寸（按像素）等参数锁定移动设备。 | 请参阅 Adobe Target 上的[移动设备文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/mobile.html?lang=zh-Hans)。 |
+| **自定义** | 自定义参数都是 mbox 参数。 如果您将任何 mbox 参数传递给 mbox，或者使用 targetPageParams 函数，这些参数将会显示在此处以供在受众中使用。 | 请参阅 Adobe Target 上的[自定义参数文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/custom-parameters.html?lang=zh-Hans)。 |
 | **操作系统** | 您可以锁定使用特定操作系统的访客。 | 定位使用Linux®、Macintosh或Windows的用户。 |
-| **站点页面** | 锁定特定页面的访客或具有特定 mbox 参数的访客。 | 请参阅 Adobe Target 上的[站点页面文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html)。 |
-| **浏览器** | 您可以锁定在访问您的页面时使用特定浏览器或特定浏览器选项的用户。 | 请参阅 Adobe Target 上的[浏览器选项文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html)。 |
-| **访客配置文件** | 锁定满足特定配置文件参数的访客。 | 请参阅 Adobe Target 上的[访客配置文件文档](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html)。 |
-| **流量源** | 根据将访客转至您的站点的搜索引擎或登陆页来锁定访客。 | 请参阅 Adobe Target 上的[流量源文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html)。 |
+| **站点页面** | 锁定特定页面的访客或具有特定 mbox 参数的访客。 | 请参阅 Adobe Target 上的[站点页面文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html?lang=zh-Hans)。 |
+| **浏览器** | 您可以锁定在访问您的页面时使用特定浏览器或特定浏览器选项的用户。 | 请参阅 Adobe Target 上的[浏览器选项文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=zh-Hans)。 |
+| **访客配置文件** | 锁定满足特定配置文件参数的访客。 | 请参阅 Adobe Target 上的[访客配置文件文档](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html?lang=zh-Hans)。 |
+| **流量源** | 根据将访客转至您的站点的搜索引擎或登陆页来锁定访客。 | 请参阅 Adobe Target 上的[流量源文档](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html?lang=zh-Hans)。 |
 
 ## 在“受众”控制台中修改受众 {#modifying-an-audience-in-the-audiences-console}
 

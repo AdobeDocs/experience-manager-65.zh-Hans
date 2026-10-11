@@ -389,9 +389,9 @@ ht-degree: 1%
 
 要在响应式环境中将“裁切”应用于购物交互式图像，您可以在路径中包含交互式图像配置属性`ZoomView.iscommand`。 调用了组件`ZoomView`，`iscommand`是您应用的“裁切”图像服务命令。
 
-请参阅[ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand)配置属性。
+请参阅[ZoomView.iscommand](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand)配置属性。
 
-请参阅[裁切](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop)图像服务命令。
+请参阅[裁切](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop)图像服务命令。
 
 现在，您便可以将交互式图像与网站上的现有概览集成。
 

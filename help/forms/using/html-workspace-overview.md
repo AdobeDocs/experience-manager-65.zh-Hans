@@ -46,7 +46,7 @@ AEM Forms工作区是AEM Forms的一部分。 Workspace除PDF forms之外还促�
 
 ## 熟悉 {#getting-familiar}
 
-要熟悉创建表单应用程序以实现业务流程自动化的端到端过程，请按照以下步骤进行操作。 按照演练后的步骤，您可以使用Workbench、Designer和AEM Forms工作区创建、管理和测试应用程序。 有关实施详细信息，请参阅[创建您的第一个AEM Forms应用程序](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html)。
+要熟悉创建表单应用程序以实现业务流程自动化的端到端过程，请按照以下步骤进行操作。 按照演练后的步骤，您可以使用Workbench、Designer和AEM Forms工作区创建、管理和测试应用程序。 有关实施详细信息，请参阅[创建您的第一个AEM Forms应用程序](https://help.adobe.com/zh_CN/livecycle/11.0/CreateFirstApp/index.html)。
 
 ## 功能概述 {#functional-overview}
 

@@ -64,7 +64,7 @@ ht-degree: 4%
 
 ## 在Scene7模式下启用Dynamic Media {#enabling-dynamic-media-in-scene-mode}
 
-默认情况下已禁用[Dynamic Media](https://business.adobe.com/products/experience-manager/assets/dynamic-media.html)。 要利用Dynamic Media功能，您必须启用它。
+默认情况下已禁用[Dynamic Media](https://business.adobe.com/cn/products/experience-manager/assets/dynamic-media.html)。 要利用Dynamic Media功能，您必须启用它。
 
 >[!WARNING]
 >
@@ -96,14 +96,14 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 功能包18912的安装是&#x200B;*可选*。
 
-功能包18912允许您通过FTP批量引入资源，或在Experience Manager上将资源从Dynamic Media — 混合模式或Dynamic Media Classic迁移到Dynamic Media - Scene7模式。 它可从[Adobe Professional Services](https://business.adobe.com/customers/consulting-services/main.html)获得。
+功能包18912允许您通过FTP批量引入资源，或在Experience Manager上将资源从Dynamic Media — 混合模式或Dynamic Media Classic迁移到Dynamic Media - Scene7模式。 它可从[Adobe Professional Services](https://business.adobe.com/cn/customers/consulting-services/main.html)获得。
 
 有关详细信息，请参阅[安装功能包18912以进行批量资源迁移](/help/assets/bulk-ingest-migrate.md)。
 
 ## 在Cloud Services中创建Dynamic Media配置 {#configuring-dynamic-media-cloud-services}
 
 <!--
-**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
+**Before you configure Dynamic Media** - After you receive your provisioning email with Dynamic Media credentials, you must open the [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started), then sign in to your account to change your password. The password provided in the provisioning email is system-generated and intended to be a temporary password only. It is important that you update the password so that Dynamic Media Cloud Service is set up with the correct credentials.
 
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
@@ -271,7 +271,7 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 如果您打算使用此功能，请注意以下先决条件和要点：
 
 * 您必须在Dynamic Media - Scene7模式下运行带有Service Pack 6.5.4.0或更高版本的Experience Manager 6.5。
-* 仅&#x200B;[*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html)客户支持此大型上传功能。
+* 仅&#x200B;[*Managed Services*](https://business.adobe.com/cn/products/experience-manager/managed-services.html)客户支持此大型上传功能。
 * 确保您的Experience Manager实例配置了Amazon S3或Microsoft® Azure Blob存储。
 
   >[!NOTE]
@@ -490,7 +490,7 @@ Dynamic Media中的密码过期时间设置为自当前系统日期起100年。
 
 **要配置默认命名：**
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started)，然后登录到您的帐户。
 
    配置时，Adobe已提供您的凭据和登录详细信息。 如果您没有此信息，请联系Adobe客户支持。
 
@@ -524,7 +524,7 @@ Dynamic Media使用批次集预设将资产组织到图像集（替代图像、�
 
 **创建批次集预设：**
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started)，然后登录到您的帐户。
 
    配置时，Adobe已提供您的凭据和登录详细信息。 如果您没有此信息，请联系Adobe客户支持。
 
@@ -580,7 +580,7 @@ spin-01-01
 
 **为自动生成2D旋转集创建批次集预设：**
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)，然后登录到您的帐户。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=zh-Hans#getting-started)，然后登录到您的帐户。
 
    配置时，Adobe已提供您的凭据和登录详细信息。 如果您没有此信息，请联系Adobe客户支持。
 

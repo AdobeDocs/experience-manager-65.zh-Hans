@@ -108,7 +108,7 @@ AEM Mobile功能板允许您创建、构建和部署移动应用程序，以及�
 >
 >有关详细信息，请参阅[配置您的Adobe Mobile Services Cloud Service](/help/mobile/configure-adobe-mobile-cloud-service.md)。
 
-AEM Mobile通过[Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS)与Adobe Analytics集成。
+AEM Mobile通过[Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hans) (AMS)与Adobe Analytics集成。
 
 控制中心&#x200B;**量度图块**&#x200B;显示从AMS为您的应用程序提取的摘要分析。 您可以通过单击右下角的“……”深入到分析功能板。
 

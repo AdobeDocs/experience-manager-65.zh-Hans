@@ -39,7 +39,7 @@ Dynamic Media Classic视频集成将优化视频的覆盖范围扩展到所有�
 
 * **[!UICONTROL Scene7视频]**&#x200B;组件自动执行设备和带宽检测，以便在台式机、平板电脑和移动设备上播放正确格式和正确质量的视频。
 * Assets — 您可以包含自适应视频集，而不是只包含单个视频资源。 自适应视频集包含要在多个屏幕上无缝回放视频所需的所有视频演绎版。 自适应视频集对使用不同比特率和格式（例如400 kbps、800 kbps和1000 kbps）编码的相同视频的版本进行分组。 您可以使用自适应视频集以及S7视频组件在多个屏幕（包括台式机、iOS、Android™、BlackBerry®和Windows移动设备）上实现自适应视频流传输。
-<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
+<!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/zh_CN/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## 关于FFMPEG和Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -80,7 +80,7 @@ Scene7视频组件支持以下格式：
 
 如果不需要工作流或版本控制资产，请将资产上传到Scene7。 以下是推荐的工作流：
 
-1. 在Dynamic Media Classic中，[设置计划的FTP上传和编码到Scene7（系统自动执行）](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-files-using-via-ftp)。
+1. 在Dynamic Media Classic中，[设置计划的FTP上传和编码到Scene7（系统自动执行）](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=zh-Hans#upload-files-using-via-ftp)。
 1. 在Experience Manager中，在内容查找器的&#x200B;**[!UICONTROL Scene7]**&#x200B;选项卡中访问WCM中的视频资产。
 1. 具有&#x200B;**[!UICONTROL Scene7视频]**&#x200B;组件的作者。
 
@@ -99,7 +99,7 @@ Scene7视频组件支持以下格式：
 
    >[!NOTE]
    >
-   >有关视频预设含义的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)。
+   >有关视频预设含义的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=zh-Hans#video-presets-for-encoding-video-files)。
    >
    >Adobe建议您在配置通用预设时同时选择两个自适应视频集或选择&#x200B;**[!UICONTROL 自适应视频编码]**&#x200B;选项。
 

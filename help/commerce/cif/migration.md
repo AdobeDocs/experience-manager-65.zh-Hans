@@ -38,7 +38,7 @@ CIF加载项不支持导入产品目录数据。 使用CIF附加组件主体，�
 
 >[!TIP]
 >
->如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Magento开源](https://business.adobe.com/products/magento/open-source.html)。
+>如果没有可用的实时API，则应使用具有API的外部产品缓存进行集成。 示例[Magento开源](https://business.adobe.com/cn/products/magento/open-source.html)。
 
 ## 具有AEM渲染的产品目录体验
 

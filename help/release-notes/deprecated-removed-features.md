@@ -87,9 +87,9 @@ Adobe 持续评估产品功能，并在长期演进中不断重塑或替换旧�
 
 | 区域 | 专题 | 替换 | 版本（SP） |
 |--- |--- |--- |--- |
-| Commerce | AEM CIF Classic 已移除。 | 您应迁移至 [AEM CIF](/help/commerce/cif/migration.md)。 如仍需使用 CIF Classic，Adobe 创建了一份兼容包，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 | 6.5.22.0 |
-| 与 [!DNL Experience Cloud] 集成 | 您可以通过 [!DNL Adobe I/O] 进行配置，将资产与 [!DNL Experience Cloud] 同步。 [!DNL Adobe Experience Cloud] 之前称为 [!DNL Adobe Experience Cloud]。 | 如有任何问题，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/?support-solution=General#support)。 |  |
-| Analytics Activity Map | AEM 中包含的 Activity Map 版本。 | 由于 Adobe Analytics API 的安全性更改，AEM 内置的 Activity Map 版本已无法继续使用。 请使用 [Adobe Analytics 提供的 ActivityMap 插件](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html)。 |  |
+| Commerce | AEM CIF Classic 已移除。 | 您应迁移至 [AEM CIF](/help/commerce/cif/migration.md)。 如仍需使用 CIF Classic，Adobe 创建了一份兼容包，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)。 | 6.5.22.0 |
+| 与 [!DNL Experience Cloud] 集成 | 您可以通过 [!DNL Adobe I/O] 进行配置，将资产与 [!DNL Experience Cloud] 同步。 [!DNL Adobe Experience Cloud] 之前称为 [!DNL Adobe Experience Cloud]。 | 如有任何问题，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)。 |  |
+| Analytics Activity Map | AEM 中包含的 Activity Map 版本。 | 由于 Adobe Analytics API 的安全性更改，AEM 内置的 Activity Map 版本已无法继续使用。 请使用 [Adobe Analytics 提供的 ActivityMap 插件](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hans)。 |  |
 | 集成 | ExactTarget 集成已从默认发行版（快速入门）中移除，且不再提供。 | 暂无替代方案。 |  |
 | 集成 | Salesforce Force API 集成已从默认发行版（快速入门）中移除，现在作为额外安装包提供，可从[软件分发平台](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)获取。 | 该功能仍然可用。 |  |
 | Forms | 对 Adobe Central Migration Bridge 服务的支持已移除，因为 Adobe Central 产品已不再受到支持。 | 暂无替代方案。 |  |

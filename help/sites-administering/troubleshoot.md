@@ -110,7 +110,7 @@ ht-degree: 1%
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
-有关详细信息，请参阅[如何从JVM进行线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html)文档
+有关详细信息，请参阅[如何从JVM进行线程转储](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=zh-Hans)文档
 
 ### 检查未关闭的JCR会话 {#checking-for-unclosed-jcr-sessions}
 
@@ -120,7 +120,7 @@ ht-degree: 1%
 * 您可以看到许多CacheManager： resizeAll条目在日志文件中；以下数字（大小=&lt;x>) shows the number of caches, each session opens several caches.）
 * 系统有时内存不足（在数小时、数天或数周后，具体取决于严重程度）。
 
-要开始分析未关闭的会话，请参阅知识库文章[未关闭的资源解析程序](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-23761)。
+要开始分析未关闭的会话，请参阅知识库文章[未关闭的资源解析程序](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23761)。
 
 ### 使用Adobe Experience Manager Web Console {#using-the-adobe-experience-manager-web-console}
 

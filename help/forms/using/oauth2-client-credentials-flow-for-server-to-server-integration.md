@@ -49,7 +49,7 @@ AEM Forms交换在Salesforce连接应用程序中定义的客户端凭据（使�
 
 * 为您的组织创建[采用 OAuth 2.0 客户端凭据流的 Salesforce 连接的应用程序](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5)和仅 API 用户，并获取应用程序的消费方密钥和消费方密码。
 
-* 确保已适当配置 Swagger 文件以匹配您组织的 API。 或者，您可以选择从头[创建一个 Swagger 文件](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html)，该文件专门用于您的 AEM 环境。
+* 确保已适当配置 Swagger 文件以匹配您组织的 API。 或者，您可以选择从头[创建一个 Swagger 文件](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=zh-Hans)，该文件专门用于您的 AEM 环境。
 
 >[!NOTE]
 >
@@ -82,4 +82,4 @@ AEM Forms交换在Salesforce连接应用程序中定义的客户端凭据（使�
 1. 单击&#x200B;**[!UICONTROL 测试连接]**。
 1. 如果连接成功，请单击&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
 
-现在，您可以[创建表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en)以将配置的数据源与您的自适应Forms集成。
+现在，您可以[创建表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=zh-Hans)以将配置的数据源与您的自适应Forms集成。

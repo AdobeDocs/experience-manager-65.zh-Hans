@@ -53,7 +53,7 @@ AEM和Campaign之间的集成需要在这两种解决方案中执行多个步骤
 
 * 具有 Adobe Campaign Classic 管理员访问权限
   * 要执行集成，您需要一个有效的 Adobe Campaign Classic 实例，包括一个已配置的数据库。
-  * 如果您需要有关如何设置和配置Adobe Campaign Classic的其他详细信息，请参阅[Adobe Campaign Classic文档，](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html)，特别是《安装和配置指南》。
+  * 如果您需要有关如何设置和配置Adobe Campaign Classic的其他详细信息，请参阅[Adobe Campaign Classic文档，](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html?lang=zh-Hans)，特别是《安装和配置指南》。
 * AEM的管理员访问权限
 
 ## 在Campaign中安装AEM集成包 {#install-package}
@@ -128,7 +128,7 @@ Adobe Campaign中的&#x200B;**AEM集成**&#x200B;包包含连接到AEM所需的�
    >
    >默认情况下，没有为运算符配置安全区域。 要使 AEM 连接到 Adobe Campaign，您必须按照前面步骤中的详细说明选择一个区域。
    >
-   >Adobe 强烈建议为 AEM 创建一个安全区域，以避免任何安全问题。 有关此主题的更多信息，请参阅[Adobe Campaign Classic文档。](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >Adobe 强烈建议为 AEM 创建一个安全区域，以避免任何安全问题。 有关此主题的更多信息，请参阅[Adobe Campaign Classic文档。](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html?lang=zh-Hans)
 
 1. 在 Campaign 客户端中，返回到`aemserver`运算符并选择&#x200B;**“常规”**&#x200B;选项卡。
 

@@ -48,7 +48,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本文档重点介绍如何在经典UI中使用[Foundation组件](/help/sites-authoring/default-components-foundation.md)来开发表单。 Adobe建议在触屏UI中使用新的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[隐藏条件](/help/sites-developing/hide-conditions.md)进行表单开发。
+>本文档重点介绍如何在经典UI中使用[Foundation组件](/help/sites-authoring/default-components-foundation.md)来开发表单。 Adobe建议在触屏UI中使用新的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[隐藏条件](/help/sites-developing/hide-conditions.md)进行表单开发。
 
 ## 预载表单值 {#preloading-form-values}
 

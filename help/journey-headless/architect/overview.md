@@ -86,7 +86,7 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) – 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [Headless 创作历程](/help/journey-headless/author/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
 * [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
-* [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html) — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
+* [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans) — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
   * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。
 * [AEM开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)

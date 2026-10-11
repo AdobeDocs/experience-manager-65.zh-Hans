@@ -55,7 +55,7 @@ Portlet是部署在生成动态内容的容器中的Web组件。 Portlet接口�
 
 >[!CAUTION]
 >
->AEM Portal Director自AEM 6.4起已弃用。 请参阅[已弃用和已删除的功能](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html)。
+>AEM Portal Director自AEM 6.4起已弃用。 请参阅[已弃用和已删除的功能](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/deprecated-removed-features.html)。
 
 ## 管理AEM内容Portlet {#administering-the-aem-content-portlet}
 

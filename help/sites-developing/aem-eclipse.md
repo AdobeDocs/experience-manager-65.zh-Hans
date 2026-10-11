@@ -137,7 +137,7 @@ _适用于Eclipse的Experience Manager Developer Tools_&#x200B;附带了一个�
 
    >[!TIP]
    >
-   >有关调试在本地AEM SDK上运行的项目的更多详细信息，请参阅文档[远程调试AEM SDK。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >有关调试在本地AEM SDK上运行的项目的更多详细信息，请参阅文档[远程调试AEM SDK。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. 单击&#x200B;**完成**。
 

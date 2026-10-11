@@ -51,7 +51,7 @@ Adobe Analytics使用`s.pageName`属性唯一标识页面，并关联为页面�
 
 * `pagedata.navTitle`：服务使用`page.getNavigationTitle()`
 
-`page`对象是页面的[`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java对象。
+`page`对象是页面的[`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/cn/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java对象。
 
 如果不将CQ变量映射到框架中的`s.pageName`属性，则从页面路径生成`s.pageName`的值。 例如，路径为`/content/geometrixx/en`的页面使用`s.pageName`的值`content:geometrixx:en`。
 

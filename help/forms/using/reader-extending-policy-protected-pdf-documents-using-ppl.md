@@ -83,7 +83,7 @@ Reader扩展服务完全支持基于PDF standard 1.6及更高版本的PDF文档�
   </tr>
   <tr>
    <td><p>usageRights</p> </td>
-   <td><p>指定类型为<a href="https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>的对象。 usageRights对象表示可应用于受策略保护的PDF文档的单个权限。</p> </td>
+   <td><p>指定类型为<a href="https://help.adobe.com/zh_CN/livecycle/11.0/ProgramLC/javadoc/com/adobe/livecycle/readerextensions/client/UsageRights.html" target="_blank">UsageRights</a>的对象。 usageRights对象表示可应用于受策略保护的PDF文档的单个权限。</p> </td>
   </tr>
  </tbody>
 </table>

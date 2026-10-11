@@ -80,7 +80,7 @@ SPA应仅依赖内容的动态渲染。 这是默认预期，AEM会获取并呈�
 
 ## AEM 项目原型 {#aem-project-archetype}
 
-任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
+任何 AEM 项目都应使用 [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)，它支持使用 React 或 Angular 的 SPA 项目并利用 SPA SDK。
 
 ## SPA设计模型 {#spa-design-models}
 

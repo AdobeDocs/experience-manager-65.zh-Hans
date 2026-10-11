@@ -174,7 +174,7 @@ Headless 项目之所以能够获得成功，既要归功于实施的技术，�
 * [AEM Headless 翻译历程](/help/journey-headless/translation/overview.md) - 此文档历程可让您全面了解 Headless 技术、AEM 如何提供 Headless 内容以及如何翻译 Headless 内容。
 * [AEM Sites的Headless开发](/help/sites-developing/headless/introduction.md) — 快速介绍如何为AEM Headless开发人员提供所需的功能
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 使用这些动手实践教程探索如何使用通过 AEM 将内容投放到 Headless 端点的各种选项并选择适合您的选项。
-* [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/?Solution=Experience+Manager&Solution=Experience+Manager+Site&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.Headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。 需要通过 AdobeID 进行的身份验证。
+* [使用 GraphQL API 进行 Headless 内容管理](https://experienceleague.adobe.com/zh-hans?Solution=Experience+Manager&Solution=Experience+Manager+Site&Solution=Experience+Manager+Forms&Solution=Experience+Manager+Screens&launch=ExperienceManager-D-1-2020.1.Headless#courses) – 在本课程中大致了解在 AEM 中实施的 GraphQL API。 需要通过 AdobeID 进行的身份验证。
 * [AEM Guides WKND - GraphQL](https://github.com/adobe/aem-guides-wknd-graphql) – 此 GitHub 项目包含突出显示 AEM 的 GraphQL API 的示例应用程序。
 * [Headless入门指南](/help/sites-developing/headless/introduction.md#getting-started) — 向已了解AEM的用户简要介绍AEM的Headless功能。
 * [创建内容片段模型](/help/assets/content-fragments/content-fragments-models.md) – 有关内容片段模型的技术文档

@@ -29,7 +29,7 @@ ht-degree: 16%
 
 Adobe Consulting服务团队已生成一系列Adobe Experience Manager (AEM)代码示例。 这些示例是广受注释的代码段，可帮助AEM开发人员了解AEM的关键构建块。 示例位于此处： [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/)。
 
-专为不熟悉AEM的开发人员设计的多部分教程，涵盖项目设置、核心组件、可编辑模板、客户端库和组件开发等基本主题：[AEM Sites快速入门 — WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)
+专为不熟悉AEM的开发人员设计的多部分教程，涵盖项目设置、核心组件、可编辑模板、客户端库和组件开发等基本主题：[AEM Sites快速入门 — WKND教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)
 
 [在GitHub - AEM项目原型](https://github.com/adobe/aem-project-archetype)上提供了用于创建AEM项目作为开发您自己的功能起点的Maven模板。
 

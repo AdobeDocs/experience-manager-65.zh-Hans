@@ -44,7 +44,7 @@ Link Checker具有多个[配置选项](#configuring)，例如定义验证内部�
 内部链接是指向AEM存储库中其他内容的链接。 可以使用RTE中的路径选择器或使用自定义组件添加内部链接。 例如：
 
 * 您的页面`/content/wknd/us/en/adventures/ski-touring.html`
-* 在[文本组件中包含指向`/content/wknd/us/en/adventures/extreme-ironing.html`的链接。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* 在[文本组件中包含指向`/content/wknd/us/en/adventures/extreme-ironing.html`的链接。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=zh-Hans)
 
 内容作者向页面添加内部链接后，将立即验证内部链接。 如果链接无效：
 
@@ -58,7 +58,7 @@ Link Checker具有多个[配置选项](#configuring)，例如定义验证内部�
 外部链接是指向AEM存储库外部内容的链接。 可以使用RTE或使用自定义组件添加外部链接。 例如：
 
 * 您的页面`/content/wknd/us/en/adventures/ski-touring.html`
-* 在[文本组件中包含指向`https://bunwarmerthermalunderwear.com`的链接。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+* 在[文本组件中包含指向`https://bunwarmerthermalunderwear.com`的链接。](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=zh-Hans)
 
 验证外部链接的语法和检查其可用性。 此检查在可配置的内部异步完成。 如果Link Checker发现外部链接无效：
 

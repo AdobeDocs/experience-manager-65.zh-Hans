@@ -43,7 +43,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >有关详细信息，请参阅[WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)。
+   >有关详细信息，请参阅[WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=zh-Hans)。
 
    >[!NOTE]
    >

@@ -73,7 +73,7 @@ Clientlibs允许您扩展默认实施以实现新功能，同时重用标准函�
 
 >[!NOTE]
 >
->有关更多提示和工具，请参阅知识库文章[AEM TouchUI问题疑难解答](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)。
+>有关更多提示和工具，请参阅知识库文章[AEM TouchUI问题疑难解答](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-16935)。
 
 ## 自定义控制台的默认视图 {#customizing-the-default-view-for-a-console}
 

@@ -95,7 +95,7 @@ AEM Forms 6.5为基于核心组件的自适应Forms提供了以下列出的主�
 
 * 安装[Apache Maven.](https://maven.apache.org/download.cgi)的最新版本 Apache Maven是一种常用于Java™项目的构建自动化工具。 安装最新版本可确保您具有主题自定义所需的依赖项。
 
-* 了解如何在Adobe Experience Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html)中创建客户端库。 AEM提供了客户端库，这使您可以在存储库中存储客户端代码，将其整理到不同类别中，并定义何时以及如何向客户端提供每种类别的代码。
+* 了解如何在Adobe Experience Manager[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=zh-Hans)中创建客户端库。 AEM提供了客户端库，这使您可以在存储库中存储客户端代码，将其整理到不同类别中，并定义何时以及如何向客户端提供每种类别的代码。
 
 * 安装纯文本编辑器。 例如，® Visual Studio Code。 使用Microsoft等纯文本编辑器®Visual Studio Code为编辑和修改主题文件提供了用户友好的环境。
 
@@ -358,4 +358,4 @@ The selected theme is applied to the Adaptive Form.
 * [创建或自定义基于核心组件的自适应Forms的主题](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [为基于核心组件的自适应Forms创建模板](template-editor.md)
 * [创建自适应表单或将其添加到AEM Sites页面或体验片段](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
+* [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hans)

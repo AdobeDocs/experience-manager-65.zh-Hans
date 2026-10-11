@@ -44,7 +44,7 @@ Adobe Experience Manager Forms可以使用存储在HSM上的凭据或电子令�
 
 ## 使用AEM Forms配置HSM或etoken设备之前 {#configurehsmetoken}
 
-* 安装[AEM Forms附加组件](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)包。
+* 安装[AEM Forms附加组件](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)包。
 * 在与AEM服务器相同的计算机上安装和配置HSM或etoken客户端软件。 客户端软件需要与HSM和etoken设备进行通信。
 
 ## 启用DocAssurance服务 {#configuredocassurance}
