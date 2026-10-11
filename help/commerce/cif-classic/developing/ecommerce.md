@@ -1,28 +1,36 @@
 ---
 title: 使用API的电子商务集成层
-description: 集成框架允许您将产品数据提取到AEM中并为商业功能构建AEM组件。
+description: 集成框架允许您将产品数据提取到AEM中，并构建AEM组件以实现商业功能。
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '144'
-ht-degree: 3%
-
+source-wordcount: '156'
+ht-degree: 7%
 ---
-
 # 电子商务{#ecommerce}
 
 集成框架包括带有API的集成层。 这允许您：
 
-* 插入电子商务系统并将产品数据提取到AEM中
+* 插入电子商务系统并将产品数据提取到AEM
 * 为独立于特定电子商务引擎的商务功能构建AEM组件
 
 有关更多信息，请参阅:
 
 * [开发（通用）](/help/commerce/cif-classic/developing/generic.md)
-* [使用SAPCommerce Cloud进行开发](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
+* [使用 SAP Commerce Cloud 进行开发](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >

@@ -1,5 +1,5 @@
 ---
-title: 升级过程
+title: 升级流程
 description: 了解升级Adobe Experience Manager (AEM)的过程。
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -11,20 +11,29 @@ feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '854'
 ht-degree: 0%
-
 ---
-
-# 升级过程 {#upgrade-procedure}
+# 升级流程 {#upgrade-procedure}
 
 >[!NOTE]
 >
->由于大多数Adobe Experience Manager (AEM)升级都是在就地执行的，因此升级需要创作层停机。 通过遵循这些最佳实践，您可以最大限度地减少或消除Publish分层停机时间。
+>由于大多数Adobe Experience Manager (AEM)升级都是在适当位置执行的，因此升级需要停机的创作层。 通过遵循这些最佳实践，您可以最大限度地减少或消除发布层停机时间。
 
-升级AEM环境时，必须考虑升级创作环境或发布环境之间方法上的差异，以最大程度地减少创作和最终用户的停机时间。 此页概述了升级AEM 6.x版本上当前运行的AEM拓扑的高级过程。由于该过程在创作层和发布层以及基于Mongo和TarMK的部署中有所不同，因此每个层和微内核都列在单独的部分中。 在执行部署时，Adobe建议首先升级创作环境，确定是否成功，然后继续发布环境。
+在升级AEM环境时，必须考虑升级创作环境或发布环境之间方法上的差异，以最大程度地减少创作和最终用户的停机时间。 此页概述了升级AEM 6.x版本上当前运行的AEM拓扑的高级过程。 由于该过程在创作层和发布层以及基于Mongo和TarMK的部署中有所不同，因此每个层和微内核都列在单独的部分中。 在执行部署时，Adobe建议首先升级创作环境，确定是否成功，然后继续发布环境。
 
 <!--
 >[!IMPORTANT]
@@ -85,7 +94,7 @@ ht-degree: 0%
 
 ### 开始拓扑 {#starting-topology-1}
 
-此部分的假设拓扑包含一个MongoMK创作聚类，其中至少具有两个AEM Author实例，并至少由两个MongoMK数据库支持。 所有创作实例都共享数据存储。 这些步骤应同时适用于S3和文件数据存储。 从Author服务器到TarMK Publish场的复制操作。
+此部分假设的拓扑包含一个MongoMK创作聚类，其中至少具有两个AEM创作实例，并受至少两个MongoMK数据库支持。 所有创作实例都共享数据存储。 这些步骤应同时适用于S3和文件数据存储。 从创作服务器到TarMK发布场的复制操作。
 
 ![mongo-topology](assets/mongo-topology.jpg)
 
@@ -95,7 +104,7 @@ ht-degree: 0%
 
 1. 停止内容创作。
 1. 克隆数据存储以进行备份。
-1. 停止所有AEM创作实例，但停止一个主要作者。
+1. 停止除一个AEM创作实例之外的任何其他实例（您的主要作者）。
 1. 从副本集（您的主Mongo实例）中删除除一个MongoDB节点之外的所有节点。
 1. 更新主作者上的`DocumentNodeStoreService.cfg`文件以反映单个成员副本集。
 1. 重新启动主要作者以确保其正确重新启动。
@@ -143,11 +152,11 @@ ht-degree: 0%
 
 1. 清理升级的创作实例、Mongo节点和数据存储。
 
-## TarMKPublish农场 {#tarmk-publish-farm}
+## TarMK发布场 {#tarmk-publish-farm}
 
-### TarMKPublish农场 {#tarmk-publish-farm-1}
+### TarMK发布场 {#tarmk-publish-farm-1}
 
-此部分假设的拓扑包含两个TarMK发布实例，这些实例由Dispatcher前导，这些实例又由负载平衡器前导。 从“创作”服务器到TarMK Publish场的复制操作。
+此部分假设的拓扑包含两个TarMK发布实例，这些实例由Dispatcher前导，这些实例又由负载平衡器前导。 从创作服务器到TarMK发布场的复制操作。
 
 ![tarmk-pub-farmv5](assets/tarmk-pub-farmv5.png)
 
@@ -155,43 +164,43 @@ ht-degree: 0%
 
 ![upgrade-publish2](assets/upgrade-publish2.png)
 
-1. 在负载平衡器处停止流向Publish 2实例的流量。
-1. 在Publish 2上运行[升级前维护](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。
+1. 在负载平衡器处停止到Publish 2实例的流量。
+1. 对Publish 2运行[升级前维护](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)。
 1. 在Publish 2上运行[就地升级](/help/sites-deploying/in-place-upgrade.md)。
 1. 如果需要，请更新Dispatcher或Web模块&#x200B;**。
 1. 刷新Dispatcher缓存。
 1. QA在防火墙后通过Dispatcher验证Publish 2。
-1. 关闭Publish 2。
-1. 复制Publish 2实例。
+1. 关闭发布2。
+1. 复制发布2实例。
 1. 启动Publish 2.
 
 ### 如果成功 {#if-successful-2}
 
 ![upgrade-publish1](assets/upgrade-publish1.png)
 
-1. 启用到Publish 2的流量。
-1. 停止流向Publish 1的流量。
-1. 停止Publish 1实例。
-1. 将Publish 1实例替换为Publish 2的副本。
+1. 启用流量以发布2。
+1. 停止流向Publish 1。
+1. 停止发布1实例。
+1. 将发布1实例替换为发布2的副本。
 1. 如果需要，请更新Dispatcher或Web模块&#x200B;**。
 1. 刷新Publish 1的Dispatcher缓存。
-1. 启动Publish 1.
+1. 启动Publish 1。
 1. QA在防火墙后通过Dispatcher验证Publish 1。
 
 ### 如果失败（回滚） {#if-unsuccessful-rollback-1}
 
 ![pub_rollback](assets/pub_rollback.jpg)
 
-1. 创建Publish 1的副本。
-1. 将Publish 2实例替换为Publish 1的副本。
+1. 创建Publish 1副本。
+1. 将Publish 2实例替换为发布1的副本。
 1. 刷新Publish 2的Dispatcher缓存。
 1. 启动Publish 2.
 1. QA在防火墙后通过Dispatcher验证Publish 2。
-1. 启用到Publish 2的流量。
+1. 启用流量以发布2。
 
 ## 最终升级步骤 {#final-upgrade-steps}
 
-1. 启用到Publish 1的流量。
+1. 启用流量以发布1。
 1. QA从公共URL执行最终验证。
 1. 从创作环境启用复制代理。
 1. 继续内容创作。

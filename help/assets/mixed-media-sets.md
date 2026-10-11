@@ -10,18 +10,34 @@ feature: Mixed Media Sets,Asset Management
 role: User, Admin
 exl-id: 70a72fb9-a289-4eda-abcc-300edf9f1961
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: e42cd24a-0815-4b0e-bfd6-9997547c3fc1
+    internal-label: Mixed Media Sets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 15%
-
 ---
-
 # 混合媒体集{#mixed-media-sets}
 
 混合媒体集允许您在一个演示文稿中混合提供图像、图像集、旋转集和视频。
 
-混合媒体集由带有MixedMediaSet字样的横幅 **[!UICONTROL 指定]**。 此外，如果混合媒体集已发布，则横幅上会显示发布日期(由 **[!UICONTROL World]** 图标指示)以及上次修改日期(由 **&#x200B;**&#x200B;Pencil图标指示)。
+混合媒体集由带有MixedMediaSet字样的横幅 **[!UICONTROL 指定]**。 此外，如果混合媒体集已发布，则横幅上会显示发布日期(由 **[!UICONTROL World]** 图标指示)以及上次修改日期(由 **** Pencil图标指示)。
 
 ![chlimage_1-137](assets/chlimage_1-348.png)
 
@@ -35,7 +51,7 @@ ht-degree: 15%
 
 1. [上传您的资源](#uploading-assets)。
 
-   首先为混合媒体集上传图像和视频。 如有必要，请创 [建图像集](/help/assets/image-sets.md) [和旋转集](/help/assets/spin-sets.md)。 由于用户可以在混合媒体集查看器中放大图像，因此请仔细选择图像。 确保图像的最大尺寸至少为2000像素。
+   首先为混合媒体集上传图像和视频。 如有必要，请创 [建图像集](/help/assets/image-sets.md)[和旋转集](/help/assets/spin-sets.md)。 由于用户可以在混合媒体集查看器中放大图像，因此请仔细选择图像。 确保图像的最大尺寸至少为2000像素。
 
    有关混合媒体集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media)。
 
@@ -127,7 +143,7 @@ ht-degree: 15%
 
 ## 编辑混合媒体集 {#editing-mixed-media-sets}
 
-您可以像在Assets[&#128279;](/help/assets/manage-assets.md)中编辑任何资源一样，直接在用户界面中对混合媒体集中的资源执行各种编辑任务。 您也可以在混合媒体集中执行以下操作：
+您可以像在Assets](/help/assets/manage-assets.md)中编辑任何资源一样，直接在用户界面[中对混合媒体集中的资源执行各种编辑任务。 您也可以在混合媒体集中执行以下操作：
 
 * 将资源添加到混合媒体集。
 * 对混合媒体集中的资产重新排序。

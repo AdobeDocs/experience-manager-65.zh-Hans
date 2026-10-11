@@ -10,13 +10,29 @@ role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2915'
-ht-degree: 0%
-
+source-wordcount: '2927'
+ht-degree: 1%
 ---
-
 # 处理已提交的表单 {#handling-submitted-forms}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -216,10 +232,10 @@ Forms服务将返回以下值，以指示它是否已完成处理数据：
 
    * 调用`FormsServiceClient`对象的`processFormSubmission`方法并传递以下值：
 
-      * 包含表单数据的`com.adobe.idp.Document`对象。
-      * 一个字符串值，它指定包含所有相关HTTP标头的环境变量。 指定要处理的内容类型。 要处理XML数据，请为此参数指定以下字符串值： `CONTENT_TYPE=text/xml`。 要处理PDF数据，请为此参数指定以下字符串值： `CONTENT_TYPE=application/pdf`。
-      * 一个字符串值，它指定`HTTP_USER_AGENT`标头值，例如。 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 此参数值是可选的。
-      * 存储运行时选项的`RenderOptionsSpec`对象。
+     * 包含表单数据的`com.adobe.idp.Document`对象。
+     * 一个字符串值，它指定包含所有相关HTTP标头的环境变量。 指定要处理的内容类型。 要处理XML数据，请为此参数指定以下字符串值： `CONTENT_TYPE=text/xml`。 要处理PDF数据，请为此参数指定以下字符串值： `CONTENT_TYPE=application/pdf`。
+     * 一个字符串值，它指定`HTTP_USER_AGENT`标头值，例如。 `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. 此参数值是可选的。
+     * 存储运行时选项的`RenderOptionsSpec`对象。
 
      `processFormSubmission`方法返回包含表单提交结果的`FormsResult`对象。
 
@@ -238,18 +254,18 @@ Forms服务将返回以下值，以指示它是否已完成处理数据：
 
    * 如果数据内容类型为`application/vnd.adobe.xdp+xml`或`text/xml`，请创建应用程序逻辑以检索XML数据值。
 
-      * 通过调用`FormsResult`对象的`getOutputContent`方法创建`com.adobe.idp.Document`对象。
-      * 通过调用`java.io.DataInputStream`构造函数并传递`com.adobe.idp.Document`对象来创建`java.io.InputStream`对象。
-      * 通过调用静态`org.w3c.dom.DocumentBuilderFactory`对象的`newInstance`方法创建一个`org.w3c.dom.DocumentBuilderFactory`对象。
-      * 通过调用`org.w3c.dom.DocumentBuilderFactory`对象的`newDocumentBuilder`方法创建`org.w3c.dom.DocumentBuilder`对象。
-      * 通过调用`org.w3c.dom.DocumentBuilder`对象的`parse`方法并传递`java.io.InputStream`对象来创建`org.w3c.dom.Document`对象。
-      * 检索XML文档中每个节点的值。 完成此任务的一种方法是创建接受两个参数的自定义方法：`org.w3c.dom.Document`对象以及要检索其值的节点的名称。 此方法返回表示节点值的字符串值。 在此过程之后的代码示例中，此自定义方法称为`getNodeText`。 给出了该方法的正文。
+     * 通过调用`FormsResult`对象的`getOutputContent`方法创建`com.adobe.idp.Document`对象。
+     * 通过调用`java.io.DataInputStream`构造函数并传递`com.adobe.idp.Document`对象来创建`java.io.InputStream`对象。
+     * 通过调用静态`org.w3c.dom.DocumentBuilderFactory`对象的`newInstance`方法创建一个`org.w3c.dom.DocumentBuilderFactory`对象。
+     * 通过调用`org.w3c.dom.DocumentBuilderFactory`对象的`newDocumentBuilder`方法创建`org.w3c.dom.DocumentBuilder`对象。
+     * 通过调用`org.w3c.dom.DocumentBuilder`对象的`parse`方法并传递`java.io.InputStream`对象来创建`org.w3c.dom.Document`对象。
+     * 检索XML文档中每个节点的值。 完成此任务的一种方法是创建接受两个参数的自定义方法：`org.w3c.dom.Document`对象以及要检索其值的节点的名称。 此方法返回表示节点值的字符串值。 在此过程之后的代码示例中，此自定义方法称为`getNodeText`。 给出了该方法的正文。
 
    * 如果数据内容类型为`application/pdf`，请创建应用程序逻辑以将提交的PDF数据另存为PDF文件。
 
-      * 通过调用`FormsResult`对象的`getOutputContent`方法创建`com.adobe.idp.Document`对象。
-      * 使用公共构造函数创建`java.io.File`对象。 请确保将PDF指定为文件扩展名。
-      * 通过调用`com.adobe.idp.Document`对象的`copyToFile`方法并传递`java.io.File`对象来填充PDF文件。
+     * 通过调用`FormsResult`对象的`getOutputContent`方法创建`com.adobe.idp.Document`对象。
+     * 使用公共构造函数创建`java.io.File`对象。 请确保将PDF指定为文件扩展名。
+     * 通过调用`com.adobe.idp.Document`对象的`copyToFile`方法并传递`java.io.File`对象来填充PDF文件。
 
 **另请参阅**
 
@@ -287,17 +303,17 @@ Forms服务将返回以下值，以指示它是否已完成处理数据：
    * 使用构造函数创建`RenderOptionsSpec`对象。 通过调用`RenderOptionsSpec`对象的`setLocale`方法并传递指定区域设置值的字符串值来设置区域设置值。
    * 调用`FormsService`对象的`processFormSubmission`方法并传递以下值：
 
-      * 包含表单数据的`BLOB`对象。
-      * 一个字符串值，它指定包含所有相关HTTP标头的环境变量。 指定要处理的内容类型。 要处理XML数据，请为此参数指定以下字符串值： `CONTENT_TYPE=text/xml`。 要处理PDF数据，请为此参数指定以下字符串值： `CONTENT_TYPE=application/pdf`。
-      * 指定`HTTP_USER_AGENT`标头值的字符串值；例如，`Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
-      * 存储运行时选项的`RenderOptionsSpec`对象。
-      * 方法填充的空`BLOBHolder`对象。
-      * 方法填充的空`javax.xml.rpc.holders.StringHolder`对象。
-      * 方法填充的空`BLOBHolder`对象。
-      * 方法填充的空`BLOBHolder`对象。
-      * 方法填充的空`javax.xml.rpc.holders.ShortHolder`对象。
-      * 方法填充的空`MyArrayOf_xsd_anyTypeHolder`对象。 此参数用于存储与表单一起提交的文件附件。
-      * 用提交表单的方法填充的空`FormsResultHolder`对象。
+     * 包含表单数据的`BLOB`对象。
+     * 一个字符串值，它指定包含所有相关HTTP标头的环境变量。 指定要处理的内容类型。 要处理XML数据，请为此参数指定以下字符串值： `CONTENT_TYPE=text/xml`。 要处理PDF数据，请为此参数指定以下字符串值： `CONTENT_TYPE=application/pdf`。
+     * 指定`HTTP_USER_AGENT`标头值的字符串值；例如，`Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`。
+     * 存储运行时选项的`RenderOptionsSpec`对象。
+     * 方法填充的空`BLOBHolder`对象。
+     * 方法填充的空`javax.xml.rpc.holders.StringHolder`对象。
+     * 方法填充的空`BLOBHolder`对象。
+     * 方法填充的空`BLOBHolder`对象。
+     * 方法填充的空`javax.xml.rpc.holders.ShortHolder`对象。
+     * 方法填充的空`MyArrayOf_xsd_anyTypeHolder`对象。 此参数用于存储与表单一起提交的文件附件。
+     * 用提交表单的方法填充的空`FormsResultHolder`对象。
 
      `processFormSubmission`方法使用表单提交结果填充`FormsResultHolder`参数。
 
@@ -311,21 +327,21 @@ Forms服务将返回以下值，以指示它是否已完成处理数据：
 
    * 如果数据内容类型为`application/vnd.adobe.xdp+xml`或`text/xml`，请创建应用程序逻辑以检索XML数据值。
 
-      * 通过调用`FormsResult`对象的`getOutputContent`方法创建`BLOB`对象。
-      * 通过调用`BLOB`对象的`getBinaryData`方法创建字节数组。
-      * 通过调用`java.io.ByteArrayInputStream`构造函数并传递字节数组来创建`java.io.InputStream`对象。
-      * 通过调用静态`org.w3c.dom.DocumentBuilderFactory`对象的`newInstance`方法创建一个`org.w3c.dom.DocumentBuilderFactory`对象。
-      * 通过调用`org.w3c.dom.DocumentBuilderFactory`对象的`newDocumentBuilder`方法创建`org.w3c.dom.DocumentBuilder`对象。
-      * 通过调用`org.w3c.dom.DocumentBuilder`对象的`parse`方法并传递`java.io.InputStream`对象来创建`org.w3c.dom.Document`对象。
-      * 检索XML文档中每个节点的值。 完成此任务的一种方法是创建接受两个参数的自定义方法：`org.w3c.dom.Document`对象以及要检索其值的节点的名称。 此方法返回表示节点值的字符串值。 在此过程之后的代码示例中，此自定义方法称为`getNodeText`。 给出了该方法的正文。
+     * 通过调用`FormsResult`对象的`getOutputContent`方法创建`BLOB`对象。
+     * 通过调用`BLOB`对象的`getBinaryData`方法创建字节数组。
+     * 通过调用`java.io.ByteArrayInputStream`构造函数并传递字节数组来创建`java.io.InputStream`对象。
+     * 通过调用静态`org.w3c.dom.DocumentBuilderFactory`对象的`newInstance`方法创建一个`org.w3c.dom.DocumentBuilderFactory`对象。
+     * 通过调用`org.w3c.dom.DocumentBuilderFactory`对象的`newDocumentBuilder`方法创建`org.w3c.dom.DocumentBuilder`对象。
+     * 通过调用`org.w3c.dom.DocumentBuilder`对象的`parse`方法并传递`java.io.InputStream`对象来创建`org.w3c.dom.Document`对象。
+     * 检索XML文档中每个节点的值。 完成此任务的一种方法是创建接受两个参数的自定义方法：`org.w3c.dom.Document`对象以及要检索其值的节点的名称。 此方法返回表示节点值的字符串值。 在此过程之后的代码示例中，此自定义方法称为`getNodeText`。 给出了该方法的正文。
 
    * 如果数据内容类型为`application/pdf`，请创建应用程序逻辑以将提交的PDF数据另存为PDF文件。
 
-      * 通过调用`FormsResult`对象的`getOutputContent`方法创建`BLOB`对象。
-      * 通过调用`BLOB`对象的`getBinaryData`方法创建字节数组。
-      * 使用公共构造函数创建`java.io.File`对象。 请确保将PDF指定为文件扩展名。
-      * 使用对象的构造函数创建`java.io.FileOutputStream`对象并传递`java.io.File`对象。
-      * 通过调用`java.io.FileOutputStream`对象的`write`方法并传递字节数组来填充PDF文件。
+     * 通过调用`FormsResult`对象的`getOutputContent`方法创建`BLOB`对象。
+     * 通过调用`BLOB`对象的`getBinaryData`方法创建字节数组。
+     * 使用公共构造函数创建`java.io.File`对象。 请确保将PDF指定为文件扩展名。
+     * 使用对象的构造函数创建`java.io.FileOutputStream`对象并传递`java.io.File`对象。
+     * 通过调用`java.io.FileOutputStream`对象的`write`方法并传递字节数组来填充PDF文件。
 
 **另请参阅**
 

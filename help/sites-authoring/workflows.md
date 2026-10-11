@@ -9,22 +9,37 @@ exl-id: 7383d590-c6b7-440a-a33d-196dce9736ef
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '178'
 ht-degree: 74%
-
 ---
-
 # 使用工作流{#working-with-workflows}
 
 通过AEM Workflows，您可以自动执行在（一个或多个）页面和/或资产上执行的一系列步骤。
 
-例如，在发布时，编辑者必须在站点管理员激活页面之前审查内容。自动完成此示例的工作流会通知每位参与者何时需要执行其必须完成的工作：
+例如，在发布时，编辑者必须在站点管理员激活页面之前审查内容。 自动完成此示例的工作流会通知每位参与者何时需要执行其必须完成的工作：
 
 1. 作者将工作流应用于页面。
-1. 编辑者收到一个工作项，指示他们需要审查页面内容。完成后，他们指示自己的工作项已完成。
-1. 之后，站点管理员收到一个请求激活页面的工作项。完成后，他们指示自己的工作项已完成。
+1. 编辑者收到一个工作项，指示他们需要审查页面内容。 完成后，他们指示自己的工作项已完成。
+1. 之后，站点管理员收到一个请求激活页面的工作项。 完成后，他们指示自己的工作项已完成。
 
 通常：
 

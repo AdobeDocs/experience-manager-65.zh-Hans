@@ -6,13 +6,22 @@ exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 1%
-
 ---
-
 # 配置多个就地编辑器 {#configure-multiple-in-place-editors}
 
 您可以在Adobe Experience Manager中配置富文本编辑器，以使其具有多个就地编辑器。 配置后，您可以选择相应的内容并打开相应的编辑器。
@@ -113,7 +122,7 @@ ht-degree: 1%
 
 ## 代码示例 {#code-samples}
 
-您可以在GitHub[&#128279;](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)上的aem-authoring-hybrideditors项目中找到此页面的代码。 您可以以[ZIP存档](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip)的形式下载完整项目。
+您可以在GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)上的[aem-authoring-hybrideditors项目中找到此页面的代码。 您可以以[ZIP存档](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip)的形式下载完整项目。
 
 ## 添加就地编辑器 {#add-an-in-place-editor}
 

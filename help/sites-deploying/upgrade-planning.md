@@ -10,13 +10,22 @@ feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2454'
 ht-degree: 1%
-
 ---
-
 # 升级规划{#planning-your-upgrade}
 
 ## AEM项目概述 {#aem-project-overview}
@@ -99,7 +108,7 @@ AEM升级过程需要仔细处理规划、分析和执行阶段，并为每个�
 
 ![unu_cropped](assets/unu_cropped.png)
 
-可在adobe.com[&#128279;](/help/release-notes/release-notes.md)的AEM部分找到AEM 6.5中的新增功能。 请务必注意对组织中常用的UI或产品功能所做的任何更改。 浏览新功能时，请注意对您的组织有价值的任何功能。 查看AEM 6.5中的更改后，为作者制定培训计划。 这可能涉及使用免费提供的资源，如通过[Adobe数字学习服务](https://learning.adobe.com/)提供的帮助功能视频或正式培训。
+可在adobe.com](/help/release-notes/release-notes.md)的[AEM部分找到AEM 6.5中的新增功能。 请务必注意对组织中常用的UI或产品功能所做的任何更改。 浏览新功能时，请注意对您的组织有价值的任何功能。 查看AEM 6.5中的更改后，为作者制定培训计划。 这可能涉及使用免费提供的资源，如通过[Adobe数字学习服务](https://learning.adobe.com/)提供的帮助功能视频或正式培训。
 
 ### 创建测试计划 {#creating-a-test-plan}
 
@@ -178,7 +187,7 @@ Adobe在[升级过程](/help/sites-deploying/upgrade-procedure.md)中提供了�
 
 ### 执行开发和QA {#performing-development-and-qa}
 
-Adobe已提供[升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md)以与AEM 6.5兼容的过程。 在运行此迭代过程时，应根据需要对Runbook进行更改。 另请参阅AEM 6.5[&#128279;](/help/sites-deploying/backward-compatibility.md)中的向后兼容性，了解自定义项如何保持向后兼容，通常在升级后无需立即开发。
+Adobe已提供[升级代码和自定义项](/help/sites-deploying/upgrading-code-and-customizations.md)以与AEM 6.5兼容的过程。 在运行此迭代过程时，应根据需要对Runbook进行更改。 另请参阅AEM 6.5](/help/sites-deploying/backward-compatibility.md)中的[向后兼容性，了解自定义项如何保持向后兼容，通常在升级后无需立即开发。
 
 ![patru_cropped](assets/patru_cropped.png)
 

@@ -9,13 +9,17 @@ exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 0%
-
+source-wordcount: '521'
+ht-degree: 2%
 ---
-
 # 配置用户和用户组 {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -36,7 +40,7 @@ ht-degree: 0%
 
    在用户组控制台中，选择“+”按钮以创建组。
 
-   将此组的ID设置为“应用程序作者”，表示它是特定类型的作者用户组，专门用于在AEM中创作移动应用程序。
+   将此组的ID设置为“应用程序作者”，表示它是特定类型的创作用户组，特定于AEM中创作移动设备应用程序。
 
 1. 将成员添加到组：作者
 
@@ -46,7 +50,7 @@ ht-degree: 0%
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. 您可以通过以下方式将内容添加到AEM的内容作者组：
+1. 您可以通过以下方式将添加至AEM的内容作者组：
 
    （读取）于
 
@@ -72,14 +76,14 @@ ht-degree: 0%
 1. 创建一个名为app-admins的组。
 1. 将以下组添加到新的app-admins组：
 
-   * 内容作者
+   * content-authors
    * workflow-users
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
    >[!NOTE]
    >
-   >使用PhoneGap Build服务进行远程构建需要workflow-users
+   >使用PhoneGap Build服务进行远程构建需要工作流用户
 
 1. 导航到[权限控制台](http://localhost:4502/useradmin)并添加权限以管理cloudservices
 

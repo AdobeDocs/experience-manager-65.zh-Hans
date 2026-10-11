@@ -10,13 +10,20 @@ role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '291'
 ht-degree: 4%
-
 ---
-
 # 徽章控制台 {#badges-console}
 
 ## 关于徽章 {#about-badges}
@@ -51,7 +58,7 @@ ht-degree: 4%
 
 * **上传图像**
 
-  （*必需*）徽章图像，建议大小为32 x 32像素，以72 dpi为JPEG或PNG格式。
+  （*必需*）在JPEG或PNG格式中，建议大小为32 x 32像素(72 dpi)的徽章图像。
 
 * **名称**
 

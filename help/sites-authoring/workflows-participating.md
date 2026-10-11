@@ -10,13 +10,28 @@ exl-id: e47270e8-bace-4d0f-a088-7269b6356315
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1534'
 ht-degree: 72%
-
 ---
-
 # 参与工作流{#participating-in-workflows}
 
 工作流通常包括需要人员对页面或资源执行活动的步骤。 工作流会选择要执行活动的用户或组，并将工作项分配给该用户或组。 用户收到通知后，便可以执行相应的操作：
@@ -42,12 +57,12 @@ ht-degree: 72%
 
 * 当您使用页面编辑器时，状态栏将显示：
 
-   * 应用于页面的工作流的名称；例如，“请求激活”。
-   * 当前用户可在工作流的当前步骤中使用的任何操作；例如“完成”、“委派”、“查看详细信息”。
-   * 页面需执行的工作流数量。 您可以：
+  * 应用于页面的工作流的名称；例如，“请求激活”。
+  * 当前用户可在工作流的当前步骤中使用的任何操作；例如“完成”、“委派”、“查看详细信息”。
+  * 页面需执行的工作流数量。 您可以：
 
-      * 使用向左/向右箭头浏览各种工作流的状态信息。
-      * 单击实际编号以打开所有适用工作流的下拉列表，然后选择要显示在状态栏中的工作流。
+    * 使用向左/向右箭头浏览各种工作流的状态信息。
+    * 单击实际编号以打开所有适用工作流的下拉列表，然后选择要显示在状态栏中的工作流。
 
   ![wf-59](assets/wf-59.png)
 

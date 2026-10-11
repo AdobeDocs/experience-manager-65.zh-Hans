@@ -5,24 +5,40 @@ exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '265'
-ht-degree: 3%
-
+source-wordcount: '272'
+ht-degree: 9%
 ---
-
-# 无法在Windows Server上将Word或Excel文件转换为PDF {#unable-to-convert-word-excel-files-PDF}
+# 在 Windows 服务器上无法将 Word 或 Excel 文件转化为 PDF {#unable-to-convert-word-excel-files-PDF}
 
 ## 问题 {#issue}
 
-当用户尝试在Microsoft® Windows Server上将Word或Excel文件转换为PDF时，遇到以下错误：
+当用户尝试在® Windows Server上将Word或Excel文件转换为PDF时，遇到以下错误：
 
 *来自主转换器的错误消息：*
 *ALC-PDG-015-003 — 系统无法打开输入文件。 再次提交文件或联系系统管理员。*
 
 
-## 解决方案 {#solution}
+## 解决办法 {#solution}
 
 执行以下操作：
 
@@ -31,13 +47,13 @@ ht-degree: 3%
 1. 将滑块调整为从不通知级别。 完成后，关闭命令窗口并关闭“System Configuration（系统配置）”窗口。
 1. 验证UAC的注册表设置是否设置为0（零）。 执行以下步骤进行验证：
 
-   1. Microsoft®建议在修改注册表之前对其进行备份。 有关详细步骤，请参阅[如何在Windows中备份和还原注册表](https://support.microsoft.com/en-us/help/322756)。
-   1. 打开Microsoft® Windows注册表编辑器。 要打开注册表编辑器，请转到“开始”>“运行”，键入regedit ，然后单击“确定”。
-   1. 导航到`HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`。 确保EnableLUA的值设置为0（零）。
+   1. ®建议在修改注册表之前对其进行备份。 有关详细步骤，请参阅[如何在Windows中备份和还原注册表](https://support.microsoft.com/en-us/help/322756)。
+   1. 打开® Windows注册表编辑器。 要打开注册表编辑器，请转到“开始”>“运行”，键入regedit ，然后单击“确定”。
+   1. 导航到 `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`。 确保EnableLUA的值设置为0（零）。
    1. 确保&#x200B;**EnableLUA**&#x200B;的值设置为0（零）。 如果该值不为0，则将该值更改为0。 关闭注册表编辑器。
 
 1. 重新启动计算机。
 
-## 应用于 {#appliesto}
+## 应用到 {#appliesto}
 
 此解决方案适用于JEE服务器上的AEM Forms和OSGi服务器上的AEM Forms 。

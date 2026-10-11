@@ -9,13 +9,25 @@ exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '793'
-ht-degree: 0%
-
+source-wordcount: '794'
+ht-degree: 8%
 ---
-
 # 封装令牌支持{#encapsulated-token-support}
 
 ## 简介 {#introduction}
@@ -36,7 +48,7 @@ ht-degree: 0%
 
 ## 使用封装令牌的无状态身份验证 {#stateless-authentication-with-the-encapsulated-token}
 
-水平可扩展性的解决方案是无状态身份验证，在AEM中使用新的封装令牌支持。
+水平可扩展性的解决方案是无状态身份验证，可在AEM中使用新的封装令牌支持。
 
 封装令牌是一种加密技术，它允许AEM离线安全地创建和验证身份验证信息，而无需访问存储库。 这样，可以在所有发布实例上发生身份验证请求，而无需粘性连接。 它还具有提高身份验证性能的优势，因为不需要访问存储库即可访问每个身份验证请求。
 
@@ -58,34 +70,34 @@ ht-degree: 0%
 >
 >* 已启用粘性会话，或者
 >
->* 同步启动时已在AEM中创建用户。 这意味着在同步过程中处理程序&#x200B;**创建**&#x200B;用户的情况下，不支持封装令牌。
+>* 同步启动时，已在AEM中创建用户。 这意味着在同步过程中处理程序&#x200B;**创建**&#x200B;用户的情况下，不支持封装令牌。
 
 配置封装令牌时需要考虑以下几点：
 
-1. 由于涉及密码学，所有实例都需要具有相同的HMAC密钥。 从AEM 6.3开始，关键资料不再存储在存储库中，而是存储在实际的文件系统上。 考虑到这一点，复制密钥的最佳方法是将它们从源实例的文件系统复制到要将密钥复制到的目标实例的文件系统。 请参阅下面的“复制HMAC密钥”下的更多信息。
+1. 由于涉及密码学，所有实例都需要具有相同的HMAC密钥。 自AEM 6.3起，关键资料不再存储在存储库中，而是存储在实际的文件系统上。 考虑到这一点，复制密钥的最佳方法是将它们从源实例的文件系统复制到要将密钥复制到的目标实例的文件系统。 请参阅下面的“复制HMAC密钥”下的更多信息。
 1. 需要启用封装令牌。 可以通过Web控制台完成此操作。
 
 ### 复制HMAC密钥 {#replicating-the-hmac-key}
 
 要跨实例复制密钥，您需要：
 
-1. 访问AEM实例，通常是创作实例，其中包含要复制的关键材料；
-1. 在本地文件系统中找到`com.adobe.granite.crypto.file`包。 例如，在此路径下：
+1. 访问AEM实例，通常是创作实例，其中包含要复制的关键资料；
+1. 在本地文件系统中找到`com.adobe.granite.crypto.file`包。 例如，路径如下：
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
    每个文件夹中的`bundle.info`文件将标识包名称。
 
-1. 导航到数据文件夹。 例如：
+1. 进入数据文件夹。 例如：
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
-1. 复制HMAC和主文件。
-1. 然后，转到要将HMAC密钥复制到的目标实例，并导航到数据文件夹。 例如：
+1. 复制 HMAC 与主文件。
+1. 随后进入要复制 HMAC 密钥的目标实例，并导航到数据文件夹。 例如：
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
-1. 粘贴您之前复制的两个文件。
+1. 粘贴先前复制的两个文件。
 1. 如果目标实例已在运行，请[刷新加密包](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle)。
 
 1. 对要向其复制密钥的所有实例重复上述步骤。
@@ -95,5 +107,5 @@ ht-degree: 0%
 复制HMAC密钥后，您可以通过Web控制台启用封装令牌：
 
 1. 将浏览器指向`https://serveraddress:port/system/console/configMgr`
-1. 查找名为&#x200B;**AdobeGranite令牌身份验证处理程序**&#x200B;的条目，然后单击该条目。
+1. 查找名为&#x200B;**Adobe Granite令牌身份验证处理程序**&#x200B;的条目，然后单击该条目。
 1. 在以下窗口中，勾选&#x200B;**启用封装令牌支持**&#x200B;框并按&#x200B;**保存**。

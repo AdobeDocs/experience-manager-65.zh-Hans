@@ -9,35 +9,42 @@ exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '695'
 ht-degree: 1%
-
 ---
-
 # 初始设置 {#initial-setup}
 
-## 启动Author和Publish实例 {#start-author-and-publish-instances}
+## 启动创作和发布实例 {#start-author-and-publish-instances}
 
 出于开发和演示目的，需要运行一个作者实例和一个发布实例。
 
 为此，请按照基本的Adobe Experience Manager (AEM) [快速入门](../../help/sites-deploying/deploy.md#getting-started)说明进行操作，从而生成以下内容：
 
 * [localhost：4502](http://localhost:4502/)上的作者环境
-* [localhost：4503](http://localhost:4503/)上的Publish环境
+* 在[localhost：4503](http://localhost:4503/)上发布环境
 
 对于AEM Communities，
 
 * 创作环境用于：
 
-   * 站点、模板和组件的开发。
-   * 管理和配置任务。
+  * 站点、模板和组件的开发。
+  * 管理和配置任务。
 
-* Publish环境用于：
+* 发布环境用于：
 
-   * 发布和审核内容的社区体验。
-   * 创建社区组、成员和成员组。
+  * 发布和审核内容的社区体验。
+  * 创建社区组、成员和成员组。
 
 >[!NOTE]
 >
@@ -53,7 +60,7 @@ ht-degree: 1%
 
 ## 配置 Analytics {#configure-analytics}
 
-当为社区站点[&#128279;](analytics.md)配置了Adobe Analytics时，社区活动信息可用，可以增强社区成员的体验并向站点管理员提供反馈。
+当为社区站点](analytics.md)配置了[Adobe Analytics时，社区活动信息可用，可以增强社区成员的体验并向站点管理员提供反馈。
 
 与Adobe Analytics集成是可选的。
 
@@ -67,9 +74,9 @@ ht-degree: 1%
 
 ## 启用通道服务 {#enable-the-tunnel-service}
 
-在“创作”环境中创建社区站点时，通过通道服务，可以将角色分配给在Publish环境中注册的受信任社区成员。 通道服务还允许从创作环境中的[成员和组控制台](members.md)访问社区成员。
+在“创作”环境中创建社区站点时，通道服务能够将角色分配给在“发布”环境中注册的受信任社区成员。 通道服务还允许从创作环境中的[成员和组控制台](members.md)访问社区成员。
 
-该惯例适用于在Publish环境中创建的成员和成员组，即&#x200B;*不在创作环境中重新创建*。 有关详细信息，请参阅[管理用户和用户组](users.md)。
+该惯例适用于在发布环境中创建的成员和成员组，即&#x200B;*不在创作环境中重新创建*。 有关详细信息，请参阅[管理用户和用户组](users.md)。
 
 有关在&#x200B;**作者**&#x200B;实例上启用通道服务的简单说明，请参阅[通道服务](deploy-communities.md#tunnel-service-on-author)。
 
@@ -83,23 +90,23 @@ ht-degree: 1%
 
 * 在创作实例上
 
-   * 例如，[http://localhost:4502/](http://localhost:4503/)
+  * 例如，[http://localhost:4502/](http://localhost:4503/)
 
 * 使用管理员权限登录
 
-   * 例如，用户名“管理员”/密码“管理员”
+  * 例如，用户名“管理员”/密码“管理员”
 
 * 从主控制台导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL 安全性]** > **[!UICONTROL 用户]**。
 * 从&#x200B;**编辑**&#x200B;菜单中，选择&#x200B;**[!UICONTROL 添加用户]**
 
 * 在`Create New User`对话框中，输入：
 
-   * **[!UICONTROL ID]**： sirius
-   * **[!UICONTROL 电子邮件地址]**： sirius.nilson@mailinator.com
-   * **[!UICONTROL 密码]**：密码
-   * **[!UICONTROL 确认密码&amp;amp；ast；]**：密码
-   * **[!UICONTROL 名字]**： Sirius
-   * **[!UICONTROL 姓氏]**： Nilson
+  * **[!UICONTROL ID]**： sirius
+  * **[!UICONTROL 电子邮件地址]**： sirius.nilson@mailinator.com
+  * **[!UICONTROL 密码]**：密码
+  * **[!UICONTROL 确认密码&amp;ast；]**：密码
+  * **[!UICONTROL 名字]**： Sirius
+  * **[!UICONTROL 姓氏]**： Nilson
 
 ### 将Sirius分配给社区管理员组 {#assign-sirius-to-community-administrators-group}
 
@@ -107,8 +114,8 @@ ht-degree: 1%
 
 * 输入“C”进行搜索
 
-   * 选择`Community Administrators`
-   * 选择`Community Enablement Managers`
+  * 选择`Community Administrators`
+  * 选择`Community Enablement Managers`
 
 * 选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -118,12 +125,12 @@ ht-degree: 1%
 
 在使用Facebook和Twitter社交登录的演示版本之前，必须
 
-1. 安装修复包或[最新功能包](deploy-communities.md#latestfeaturepack)(有关2017年3月Facebook API的更改)。
+1. 安装修复包或[最新功能包](deploy-communities.md#latestfeaturepack)（针对2017年3月的Facebook API更改）。
 1. [在发布环境中启用OAuth提供程序](social-login.md#adobe-granite-oauth-authentication-handler)。
 
 对于生产服务器，必须创建提供社交登录所需的云服务。
 
-请参阅[使用Facebook和Twitter进行社交登录](social-login.md)。
+查看使用Facebook和Twitter的[社交登录](social-login.md)。
 
 ## 创建教程标记 {#create-tutorial-tags}
 
@@ -143,9 +150,9 @@ ht-degree: 1%
 然后按照说明执行以下操作：
 
 1. [设置标记权限](../../help/sites-administering/tags.md#setting-tag-permissions)。
-1. [Publish标记](../../help/sites-administering/tags.md#publishing-tags)。
+1. [发布标记](../../help/sites-administering/tags.md#publishing-tags)。
 
-为AEM Communities快速入门Tutorials创建的标记示例包
+为AEM Communities快速入门教程创建的标记示例包
 
 [获取文件](assets/tutorial_tags-v63.zip)
 
@@ -155,4 +162,4 @@ ht-degree: 1%
 
 有关说明，请访问[如何为演示设置MongoDB](demo-mongo.md)。
 
-默认情况下，作者实例和发布AEM实例的安装导致用户生成的内容(UGC)存储在[JCR Tar存储](../../help/sites-deploying/platform.md)中，使用[JSRP](jsrp.md)访问该存储。 JSRP不是通用存储，这意味着UGC仅在输入它的实例上可见。 通常，UGC是在发布实例上输入的，在创作环境中不可见，从而导致所有审核任务都需要使用发布实例。
+默认情况下，创作和发布AEM实例的安装导致用户生成的内容(UGC)存储在[JCR Tar存储](../../help/sites-deploying/platform.md)中，该存储是使用[JSRP](jsrp.md)访问的。 JSRP不是通用存储，这意味着UGC仅在输入它的实例上可见。 通常，UGC是在发布实例上输入的，在创作环境中不可见，从而导致所有审核任务都需要使用发布实例。

@@ -9,13 +9,17 @@ exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 0%
-
 ---
-
 # 创作移动设备应用程序{#authoring-mobile-applications}
 
 {{ue-over-mobile}}
@@ -104,7 +108,7 @@ AEM Mobile功能板允许您创建、构建和部署移动应用程序，以及�
 >
 >有关详细信息，请参阅[配置您的Adobe Mobile Services Cloud Service](/help/mobile/configure-adobe-mobile-cloud-service.md)。
 
-AEM Mobile通过[Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=zh-Hans) (AMS)与Adobe Analytics集成。
+AEM Mobile通过[Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html) (AMS)与Adobe Analytics集成。
 
 控制中心&#x200B;**量度图块**&#x200B;显示从AMS为您的应用程序提取的摘要分析。 您可以通过单击右下角的“……”深入到分析功能板。
 

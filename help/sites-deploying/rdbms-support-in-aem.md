@@ -1,5 +1,5 @@
 ---
-title: AEM 6.4中的RDBMS支持
+title: AEM 6.4 中的 RDBMS 支持
 description: 了解AEM 6.4中的关系数据库持久性支持和可用的配置选项。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +10,27 @@ feature: Administering
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '592'
-ht-degree: 0%
-
+source-wordcount: '626'
+ht-degree: 2%
 ---
-
-# AEM 6.4中的RDBMS支持{#rdbms-support-in-aem}
+# AEM 6.4 中的 RDBMS 支持{#rdbms-support-in-aem}
 
 ## 概述 {#overview}
 
-使用Document Microkernel实现对AEM中关系数据库持久性的支持。 文档微内核也是用于实现MongoDB持久性的基础。
+使用Document Microkernel实现了对AEM中关系数据库持久性的支持。 文档微内核也是用于实现MongoDB持久性的基础。
 
 它包含一个基于Mongo Java API的Java API。 还提供了BlobStore API的实现。 默认情况下，Blob存储在数据库中。
 
@@ -45,8 +54,8 @@ ht-degree: 0%
 
 捆绑包准备就绪后，请按照以下步骤使用RDB持久性配置AEM：
 
-1. 确保数据库守护程序已启动，并且您有一个用于AEM的活动数据库。
-1. 将AEM 6.3 jar复制到安装目录中。
+1. 确保数据库守护程序已启动，并且您拥有可与AEM一起使用的活动数据库。
+1. 将AEM 6.3 jar复制到安装目录。
 1. 在安装目录中创建名为`crx-quickstart\install`的文件夹。
 1. 通过在`crx-quickstart\install`目录中创建具有以下名称的配置文件来配置文档节点存储：
 
@@ -84,11 +93,11 @@ ht-degree: 0%
 
 * `driverClassName:` JDBC驱动程序类名。 根据您要使用的数据库以及随后连接到该数据库所需的驱动程序，该选项会有所不同。 以下是AEM支持的所有数据库的类名：
 
-   * PostgreSQL的`org.postgresql.Driver`；
-   * DB2的`com.ibm.db2.jcc.DB2Driver`；
-   * oracle的`oracle.jdbc.OracleDriver`；
-   * MySQL和MariaDB （实验性）的`com.mysql.jdbc.Driver`；
-   * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server（实验性）。
+  * PostgreSQL的`org.postgresql.Driver`；
+  * DB2的`com.ibm.db2.jcc.DB2Driver`；
+  * Oracle的`oracle.jdbc.OracleDriver`；
+  * MySQL和MariaDB （实验性）的`com.mysql.jdbc.Driver`；
+  * c `om.microsoft.sqlserver.jdbc.SQLServerDriver` for Microsoft SQL Server（实验性）。
 
 * `username:`数据库运行所使用的用户名。
 
@@ -100,7 +109,7 @@ ht-degree: 0%
 
 * PostgreSQL的`jdbc:postgresql:databasename`；
 * DB2的`jdbc:db2://localhost:port/databasename`；
-* oracle的`jdbc:oracle:thin:localhost:port:SID`；
+* Oracle的`jdbc:oracle:thin:localhost:port:SID`；
 * MySQL和MariaDB （实验性）的`jdbc:mysql://localhost:3306/databasename`；
 * Microsoft SQL Server的`jdbc:sqlserver://localhost:1453;databaseName=name`（实验性）。
 

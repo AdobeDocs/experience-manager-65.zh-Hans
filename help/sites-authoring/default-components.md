@@ -5,13 +5,26 @@ exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '420'
-ht-degree: 34%
-
+source-wordcount: '442'
+ht-degree: 37%
 ---
-
 # 组件{#components}
 
 Adobe Experience Manager (AEM)附带多种现成的组件，这些组件为网站作者提供了全面的功能。 在[编辑页面](/help/sites-authoring/editing-content.md)时，这些组件可供使用，并且为便于筛选，这些组件按主要功能区域（称为组件组）进行分组。
@@ -28,14 +41,14 @@ Adobe Experience Manager (AEM)附带多种现成的组件，这些组件为网�
 
 [编辑页面](/help/sites-authoring/editing-content.md)时，可以在页面编辑器侧面板上的&#x200B;**组件**&#x200B;选项卡中使用组件。
 
-您可以选择一个组件，并将其拖动到页面上的所需位置。然后，可以使用下列方法编辑该组件：
+您可以选择一个组件，并将其拖动到页面上的所需位置。 然后，可以使用下列方法编辑该组件：
 
 * [配置属性](/help/sites-authoring/editing-page-properties.md)
 * [编辑内容](/help/sites-authoring/editing-content.md)
 
 * [编辑内容 – 全屏模式](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-有关将组件添加到页面的详细信息，请参阅[编辑页面内容](/help/sites-authoring/editing-content.md)。
+有关将组件添加到页面的更多信息，请参阅[编辑页面内容。](/help/sites-authoring/editing-content.md)
 组件根据称为组件组的各种类别进行排序。 此类组件组的示例包括：
 
 * **We.Retail**：包含已代理以用于[We.Retail引用实施](/help/sites-developing/we-retail.md)的核心组件。
@@ -52,7 +65,7 @@ Adobe Experience Manager (AEM)附带多种现成的组件，这些组件为网�
 
 以下页面提供了指向一些关于组件的其他重要信息的链接：
 
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans) — 核心组件提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) — 核心组件提供了灵活且功能丰富的创作功能，可提供创建页面所需的基本内容类型。
 
 * [社区](/help/communities/author-communities.md) — 组件为网站提供交互功能，如论坛和评论。 在创建[社区站点](/help/communities/overview.md)时，其中许多组件都包括在内。
 

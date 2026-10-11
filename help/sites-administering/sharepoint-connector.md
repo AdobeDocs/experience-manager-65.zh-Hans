@@ -1,5 +1,5 @@
 ---
-title: SharePoint连接器
+title: SharePoint 连接器
 description: 适用于Microsoft SharePoint 2010和Microsoft SharePoint 2013的Day JCR连接器版本4.0。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,16 +9,22 @@ docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
 feature: Integration
 role: Admin
-source-git-commit: c4133584e9c2328b3a55042902c67770d78afcf7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1482'
-ht-degree: 1%
-
+source-wordcount: '1625'
+ht-degree: 2%
 ---
+# SharePoint 连接器{#sharepoint-connector}
 
-# SharePoint连接器{#sharepoint-connector}
-
-本文包括有关Microsoft SharePoint 2010和Microsoft SharePoint 2013版本4.0的AdobeJCR Connector的详细信息。
+本文介绍了适用于Adobe SharePoint 2010和Microsoft SharePoint 2013版本4.0的Microsoft JCR连接器。
 
 SharePoint连接器支持以下基本功能：
 
@@ -32,7 +38,7 @@ SharePoint连接器支持以下基本功能：
 
 >[!NOTE]
 >
->AEM 6.1 Service Pack 2还支持SharePoint Connector。 连接器不再支持虚拟存储库装载，因此无法装载。 如果要使用Java API访问Sharepoint存储库，请在项目中使用Sharepoint连接器的JCR存储库实施。
+>AEM 6.1 Service Pack 2也支持SharePoint Connector。 连接器不再支持虚拟存储库装载，因此无法装载。 如果要使用Java API访问Sharepoint存储库，请在项目中使用Sharepoint连接器的JCR存储库实施。
 >
 >SharePoint服务器和相关IT基础架构的安装、配置、管理和IT操作不在本文档的范围之内。 有关这些主题的信息，请参阅[SharePoint](https://www.microsoft.com/sharepoint)上的供应商文档。 连接器要求正确安装、配置和操作基础架构的这些部分。
 >
@@ -52,7 +58,7 @@ SharePoint连接器支持以下基本功能：
 ## 安装SharePoint连接器 {#installing-sharepoint-connector}
 
 连接器是一种便于安装的内容封装。 使用包管理器安装包，然后设置SharePoint服务器URL
-和其他配置选项。 AEM存储库中提供了SharePoint内容。
+和其他配置选项。 SharePoint内容在AEM存储库中可用。
 
 ### 安装要求 {#installation-requirements}
 
@@ -72,12 +78,12 @@ SharePoint连接器可从[软件分发](https://experience.adobe.com/#/downloads
 
 * AEM版本：
 
-   * AEM 6.4、6.3
+  * AEM 6.4、6.3
 
 * Microsoft SharePoint版本：
 
-   * Microsoft Office SharePoint Server (MOSS) 2010
-   * Microsoft Office SharePoint Server (MOSS) 2013
+  * Microsoft Office SharePoint Server (MOSS) 2010
+  * Microsoft Office SharePoint Server (MOSS) 2013
 
 * 如果您需要支持连接器的自定义部署（OEM、特殊要求、自定义身份验证方法），请与您所在地区的Adobe办事处联系。
 
@@ -87,7 +93,7 @@ SharePoint连接器可从[软件分发](https://experience.adobe.com/#/downloads
 
 ### 标准安装 {#standard-installation}
 
-Software Distribution用于分发产品功能、示例和修补程序。 有关详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=zh-Hans#software-distribution)。
+Software Distribution用于分发产品功能、示例和修补程序。 有关详细信息，请参阅[软件分发文档](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution)。
 
 
 #### 与AEM集成 {#integrating-with-aem}
@@ -194,7 +200,7 @@ Sharepoint包括经典身份验证方法和基于声明的身份验证方法，�
 * 索赔 — 基本
 * 基于Claims-Forms
 
-适用于Microsoft SharePoint 2010和Microsoft SharePoint 2013的AEM JCR Connector版本4.0。支持基于声明的身份验证(由Microsoft建议)，该身份验证以下列模式运行：
+适用于Microsoft SharePoint 2010和Microsoft SharePoint 2013的AEM JCR连接器，版本4.0。 支持基于声明的身份验证（由Microsoft建议），该身份验证以下列模式运行：
 
 * **基本/NTLM身份验证**：连接器首先尝试使用基本身份验证连接。 如果不可用，它会切换到基于NTLM的身份验证。
 * **基于Forms的身份验证**： Sharepoint根据用户在登录表单（通常是网页）中键入的凭据来验证用户。 该系统为经验证的请求发出一个令牌，该令牌包含用于为后续请求重新建立身份的密钥。
@@ -221,7 +227,7 @@ Sharepoint包括经典身份验证方法和基于声明的身份验证方法，�
 
 只有在AEM和SharePoint上经过身份验证的用户才能通过连接器访问SharePoint内容。
 
-您还可以将连接器扩展用于身份验证，以创建自定义身份验证模块，例如，将AEM用户的访问权限映射到特定的SharePoint用户。 创建与SharePoint用户（用户名和密码应匹配）对应的AEM用户，以便能够查看映射到连接器实例的SharePoint内容。
+您还可以使用连接器扩展进行身份验证，以创建自定义身份验证模块，例如，将AEM用户的访问权限映射到特定的SharePoint用户。 创建与AEM用户（用户名和密码应匹配）对应的SharePoint用户，以便能够查看映射到连接器实例的SharePoint内容。
 
 要在AEM中创建用户，请执行以下操作：
 
@@ -230,7 +236,7 @@ Sharepoint包括经典身份验证方法和基于声明的身份验证方法，�
 1. 单击“安全”。
 1. 单击“用户”。
 1. 单击&#x200B;**创建用户**。
-1. 提供用户ID(在SharePoint上具有访问权限的用户名)。
+1. 提供用户ID（在SharePoint上具有访问权限的用户名）。
 1. 提供相应的密码。
 1. 单击绿色勾号符号以创建用户。
 

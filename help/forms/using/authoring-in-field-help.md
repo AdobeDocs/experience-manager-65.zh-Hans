@@ -8,16 +8,32 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '416'
-ht-degree: 12%
-
+source-wordcount: '444'
+ht-degree: 18%
 ---
-
 # 为表单字段创作上下文帮助{#authoring-in-context-help-for-form-fields}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 ## 简介 {#introduction}
 
@@ -29,8 +45,8 @@ ht-degree: 12%
 
 您可以使用侧边栏中“属性”选项卡的“帮助内容”部分中的以下选项指定上下文帮助。
 
-* [简短描述](../../forms/using/authoring-in-field-help.md#p-short-description-p)
-* [详细描述](../../forms/using/authoring-in-field-help.md#p-long-description-p)
+* [简要说明](../../forms/using/authoring-in-field-help.md#p-short-description-p)
+* [详细说明](../../forms/using/authoring-in-field-help.md#p-long-description-p)
 
 ![表单字段的上下文帮助](assets/descriptions.png)
 
@@ -38,7 +54,7 @@ ht-degree: 12%
 >
 >长描述将覆盖短描述。 如果同时指定了两者，则只显示详细描述。
 
-### 简短描述 {#short-description}
+### 简要说明 {#short-description}
 
 简短描述字段用于提供有关填写表单字段的快速和简短提示。 将鼠标悬停在简短描述字段中时，该字段中指定的文本将显示为工具提示。
 
@@ -50,13 +66,13 @@ ht-degree: 12%
 
 ![字段下的永久短上下文帮助](assets/short1.png)
 
-### 详细描述 {#long-description}
+### 详细说明 {#long-description}
 
 您可以使用详细描述字段指定长文本或嵌入富媒体内容（包括视频）作为上下文帮助。 例如，下图显示了如何将视频作为上下文帮助进行嵌入。
 
 ![添加富媒体作为表单字段的上下文帮助](assets/long-descriptions.png)
 
-添加完整描述是否显示&#x200B;**？字段旁边的**&#x200B;图标。 单击此图标将显示在详细描述部分中添加的内容。
+添加详细描述时显示&#x200B;**？** 字段旁边的图标。 单击此图标将显示在详细描述部分中添加的内容。
 
 ![富媒体上下文帮助示例](assets/photoshop.png)
 
@@ -66,6 +82,6 @@ ht-degree: 12%
 
 ![添加表单面板的上下文帮助](assets/panel-level-help.png)
 
-添加面板的帮助是否显示&#x200B;**？面板描述旁边的**&#x200B;图标。 单击图标将显示在面板编辑对话框的“帮助内容”部分中添加的内容。
+添加面板的帮助将显示&#x200B;**？** 图标图标。 单击图标将显示在面板编辑对话框的“帮助内容”部分中添加的内容。
 
 ![表单面板级别](assets/photoshop-1.png)的上下文帮助示例

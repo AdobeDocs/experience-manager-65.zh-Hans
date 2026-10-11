@@ -9,13 +9,29 @@ feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 11%
-
 ---
-
 # 交互式通信创作 UI 简介{#introduction-to-interactive-communication-authoring-ui}
 
 用于创作[交互式通信](/help/forms/using/interactive-communications-overview.md)的用户界面是直观的，为创作交互式通信的打印和Web渠道提供了以下功能：
@@ -58,7 +74,7 @@ Click to enlarge
 * **属性浏览器**
 
   可让您编辑组件的属性。 属性会根据组件而发生更改。 例如，要查看文档容器的属性：
-选择一个组件，然后选择![字段级](assets/field-level.png) > **文档容器**，然后选择![cmppr](assets/cmppr.png)。
+  选择一个组件，然后选择![字段级](assets/field-level.png) > **文档容器**，然后选择![cmppr](assets/cmppr.png)。
 
 * **Assets浏览器**
 分离不同类型的内容，如布局片段、图像、文档、页面、视频。 作者可以将资产拖放到交互式通信中。
@@ -91,10 +107,10 @@ Click to enlarge
 * 组件由其元素名称标识。 选择![cmppr](assets/cmppr.png)时，可以通过更改属性浏览器中的“元素名称”字段值来更改组件的名称。 元素名称字段仅接受字母、数字、连字符(-)和下划线(_)。 不允许使用其他特殊字符，元素名称应以字母开头。
 * 只要标题在交互式通信中可见，您就可以在编辑器中内联修改交互式通信组件的Title属性，而无需打开Properties浏览器。 为此，请执行以下操作：
 
-   1. 选择可选择具有Title属性且已禁用Hide title属性的组件。
-   1. 选择![aem_6_3_edit](assets/aem_6_3_edit.png)以使标题可编辑。
+  1. 选择可选择具有Title属性且已禁用Hide title属性的组件。
+  1. 选择![aem_6_3_edit](assets/aem_6_3_edit.png)以使标题可编辑。
 
-   1. 修改标题并选择Return键或选择组件之外的任意位置以保存更改。 选择Esc键以放弃更改。
+  1. 修改标题并选择Return键或选择组件之外的任意位置以保存更改。 选择Esc键以放弃更改。
 
 ## 组件工具栏 {#component-toolbar}
 
@@ -122,7 +138,7 @@ I **父项**：可让您选择组件的父项。
 
 J. **查看SOM表达式：**&#x200B;用于查看组件的[SOM表达式](../../forms/using/using-som-expressions-adaptive-forms.md)。
 
-K： **将面板中的对象分组：**&#x200B;允许您将这些组件分组到一个面板中，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板[&#128279;](create-interactive-communication.md#groupobjectspanel)中的组对象。
+K： **将面板中的对象分组：**&#x200B;允许您将这些组件分组到一个面板中，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板](create-interactive-communication.md#groupobjectspanel)中的[组对象。
 
 L. **添加子面板**（仅适用于面板）：允许您向面板添加子面板。
 
@@ -139,13 +155,13 @@ M： **添加面板工具栏**（仅适用于面板）:Lets您添加了面板组
 * 模拟器![标尺](assets/ruler.png)：用于模拟不同显示大小（如平板电脑和手机）的交互式通信的外观。
 * 编辑：允许您选择其他模式，例如“编辑”、“样式”、“开发人员”和“设计”。
 
-   * 编辑：用于编辑交互式通信及其组件的属性。 例如，添加组件、删除图像和指定必填字段。
-   * 样式：用于为交互式通信组件的外观设置样式。 例如，在样式模式下，您可以选择一个面板并指定其背景颜色。
-   * 开发人员：允许开发人员：
+  * 编辑：用于编辑交互式通信及其组件的属性。 例如，添加组件、拖放图像和指定必填字段。
+  * 样式：用于为交互式通信组件的外观设置样式。 例如，在样式模式下，您可以选择一个面板并指定其背景颜色。
+  * 开发人员：允许开发人员：
 
-      * 了解由哪些交互通信组成。
-      * 调试何时何地发生的情况，这反过来有助于解决问题。
+    * 了解由哪些交互通信组成。
+    * 调试何时何地发生的情况，这反过来有助于解决问题。
 
-   * Target：用于启用或禁用自定义组件，或侧边栏中未列出的现成组件。
+  * Target：用于启用或禁用自定义组件，或侧边栏中未列出的现成组件。
 
 * 预览：用于预览交互式通信在发布时的外观。

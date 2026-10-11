@@ -10,7 +10,18 @@ exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2450'
 ht-degree: 2%
@@ -27,7 +38,7 @@ ht-degree: 2%
 >
 >尽管HTML模板语言(HTL)和JSP都可以用于开发经典UI的组件，但此页说明了使用JSP进行的开发。 这完全是因为在经典UI中使用JSP的历史记录。
 >
->HTL现在是适用于AEM的推荐脚本语言。 请参阅[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)和[开发AEM组件](/help/sites-developing/developing-components.md)以比较方法。
+>HTL现在是适用于AEM的推荐脚本语言。 请参阅[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)和[开发AEM组件](/help/sites-developing/developing-components.md)以比较方法。
 
 ## 结构 {#structure}
 

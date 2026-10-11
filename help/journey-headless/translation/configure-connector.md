@@ -5,13 +5,37 @@ exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1143'
-ht-degree: 92%
-
+source-wordcount: '1155'
+ht-degree: 88%
 ---
-
 # 配置翻译集成 {#configure-integration}
 
 了解如何将 AEM 连接到翻译服务。
@@ -28,14 +52,14 @@ ht-degree: 92%
 
 ## 目标 {#objective}
 
-本文档帮助您了解如何为您选择的翻译服务设置 AEM 集成。阅读本文档后，您应：
+本文档帮助您了解如何为您选择的翻译服务设置 AEM 集成。 阅读本文档后，您应：
 
 * 了解 AEM 中翻译集成框架的重要参数。
 * 能够自行建立与翻译服务的连接。
 
 ## 翻译集成框架 {#tif}
 
-AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM 内容的译文。其中涉及三个基本步骤。
+AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以协调 AEM 内容的翻译。 其中涉及三个基本步骤。
 
 1. 连接到您的翻译服务提供商。
 1. 创建翻译集成框架配置。
@@ -45,13 +69,13 @@ AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM �
 
 ## 连接到翻译服务提供商 {#connect-translation-provider}
 
-第一步是选择要使用的翻译服务。AEM 有多种人工翻译服务和机器翻译服务可供选择。大多数提供商都提供了要安装的翻译程序包。请参阅[其他资源](#additional-resources)部分以查看一系列可用的选项。
+第一步是选择要使用的翻译服务。 AEM 有多种人工翻译服务和机器翻译服务可供选择。 大多数提供商都提供了要安装的翻译程序包。 请参阅[其他资源](#additional-resources)部分以查看一系列可用的选项。
 
 >[!NOTE]
 >
 >翻译专家通常负责选择要使用的翻译服务，而管理员通常负责安装所需的翻译连接器包。
 
-在此历程中，我们使用 AEM 提供的 Microsoft Translator 以及现成的试用许可证。有关此提供商的更多信息，请参阅[其他资源](#additional-resources)部分。
+在此历程中，我们使用 AEM 开箱即提供试用许可证的 Microsoft Translator。 有关此提供商的更多信息，请参阅[其他资源](#additional-resources)部分。
 
 如果您选择其他提供商，您的管理员必须按照翻译服务提供的说明安装连接器包。
 
@@ -59,13 +83,13 @@ AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM �
 >
 >在 AEM 中使用现成的 Microsoft Translator 不需要额外的设置，并且无需其他连接器配置即可按原样工作。
 >
->如果您选择使用 Microsoft Translator 连接器进行测试，则无需执行以下两个部分中的步骤：[创建翻译集成配置](#create-config)和[将配置与您的内容关联。](#associate)但建议您阅读这两个部分，以便熟悉需要配置首选连接器时要执行的步骤。
+>如果您选择使用Microsoft Translator连接器进行测试，则无需执行以下两个部分中的步骤：[创建翻译集成配置](#create-config)和[将配置与您的内容关联。](#associate) 但建议您阅读这两个部分，以便熟悉需要配置首选连接器时要执行的步骤。
 >
 >Microsoft Translator 连接器的试用许可证不用于生产目的，如果您决定对其进行许可，系统管理员必须执行本文档末尾的[其他资源](#additional-resources)部分中详述的步骤来配置该许可证。
 
 ## 创建翻译集成配置 {#create-config}
 
-安装首选翻译服务的连接器包后，您必须为该服务创建翻译集成框架配置。该配置包括以下信息：
+安装首选翻译服务的连接器包后，您必须为该服务创建翻译集成框架配置。 该配置包括以下信息：
 
 * 要使用哪个翻译服务提供商
 * 要执行人工翻译还是机器翻译
@@ -74,27 +98,27 @@ AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM �
 要创建翻译配置，请执行以下操作：
 
 1. 在全局导航菜单中，单击&#x200B;**工具** > **云服务** > **翻译云服务**。
-1. 在您的内容结构中导航到要创建该配置的位置。这一般为项目专属的位置，但也可为全局位置。
+1. 在您的内容结构中导航到要创建该配置的位置。 这一般为项目专属的位置，但也可为全局位置。
    * 例如，在这种情况下，可以全局创建配置以将其应用于所有内容，或仅用于 WKND 项目。
 
    ![翻译配置位置](assets/translation-configuration-location.png)
 
 1. 在字段中提供以下信息，然后单击&#x200B;**创建**。
-   1. 在下拉列表中选择&#x200B;**配置类型**。从列表中选择&#x200B;**翻译集成**。
-   1. 为您的配置输入一个&#x200B;**标题**。**标题**&#x200B;在&#x200B;**Cloud Service**&#x200B;控制台中以及页面属性下拉列表中标识该配置。
+   1. 在下拉列表中选择&#x200B;**配置类型**。 从列表中选择&#x200B;**翻译集成**。
+   1. 为您的配置输入一个&#x200B;**标题**。 **标题**&#x200B;在&#x200B;**Cloud Service**&#x200B;控制台中以及页面属性下拉列表中标识该配置。
    1. （可选）键入一个&#x200B;**名称**&#x200B;以用于存储该配置的存储库节点。
 
    ![创建翻译配置](assets/create-translation-configuration.png)
 
 1. 单击&#x200B;**创建**，此时将显示&#x200B;**编辑配置**&#x200B;窗口，您可以在其中配置配置配置属性。
 
-1. 请记住，内容片段作为资源存储在 AEM 中。单击&#x200B;**Assets**&#x200B;选项卡。
+1. 请记住，内容片段作为资源存储在 AEM 中。 单击&#x200B;**Assets**&#x200B;选项卡。
 
 ![翻译配置属性](assets/translation-configuration.png)
 
 1. 提供以下信息。
 
-   1. **翻译方法** – 根据翻译提供商，选择&#x200B;**机器翻译**&#x200B;或&#x200B;**人工翻译**。在此历程中，我们假设使用机器翻译。
+   1. **翻译方法** – 根据翻译提供商，选择&#x200B;**机器翻译**&#x200B;或&#x200B;**人工翻译**。 在此历程中，我们假设使用机器翻译。
    1. **翻译提供商** – 从列表中选择您为翻译服务安装的连接器。
    1. **内容类别：** – 选择最合适的类别以更好地锁定翻译（仅适用于机器翻译）。
    1. **翻译内容片段资源** – 选中此选项可翻译与内容片段关联的资源。
@@ -109,9 +133,9 @@ AEM 的翻译集成框架 (TIF) 与第三方翻译服务集成，以编排 AEM �
 
 ## 将配置与您的内容关联 {#associate}
 
-AEM 是一种灵活而强大的工具，它通过多个连接器和多种配置支持多种同步翻译服务。设置此类配置超出了该历程的范围。但这种灵活性意味着，您必须通过将配置与您的内容关联来指定应使用哪些连接器和配置来翻译您的内容。
+AEM 是一种灵活而强大的工具，它通过多个连接器和多种配置支持多个可同时使用的翻译服务。 设置此类配置超出了该历程的范围。 但这种灵活性意味着，您必须通过将此配置与您的内容关联来指定应使用哪些连接器和配置来翻译您的内容。
 
-为此，请导航到内容的语言根。在我们的示例中，这将
+为此，请导航到内容的语言根。 在我们的示例中，这将
 
 ```text
 /content/dam/<your-project>/en
@@ -120,7 +144,7 @@ AEM 是一种灵活而强大的工具，它通过多个连接器和多种配置�
 1. 转到全局导航，再转到&#x200B;**导航** > **资源** > **文件**。
 1. 在资源控制台中，选择要配置的语言根，然后单击&#x200B;**属性**。
 1. 单击&#x200B;**云服务**&#x200B;选项卡。
-1. 在&#x200B;**添加配置**&#x200B;下拉列表中的&#x200B;**云服务配置**&#x200B;下，选择您的连接器。安装连接器包后，它将显示在下拉列表中，如[之前所述](#connect-translation-provider)。
+1. 在&#x200B;**添加配置**&#x200B;下拉列表中的&#x200B;**云服务配置**&#x200B;下，选择您的连接器。 安装连接器包后，它将显示在下拉列表中，如[之前所述](#connect-translation-provider)。
 1. 在&#x200B;**添加配置**&#x200B;下拉列表中的&#x200B;**云服务配置**&#x200B;下，也选择您的配置。
 1. 单击&#x200B;**保存并关闭**。
 

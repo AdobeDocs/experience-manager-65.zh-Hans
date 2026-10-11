@@ -10,7 +10,18 @@ exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '5032'
 ht-degree: 3%
@@ -57,7 +68,7 @@ ht-degree: 3%
 
 ## 安装Adobe Experience Manager {#installing-adobe-experience-manager}
 
-要安装用于开发网站的AEM实例，请按照使用创作和发布实例[&#128279;](/help/sites-deploying/deploy.md#author-and-publish-installs)设置部署环境的说明操作，或执行[通用安装](/help/sites-deploying/deploy.md#default-local-install)。 一般安装包括下载AEM快速入门JAR文件，将license.properties文件放在与JAR文件相同的目录中，并双击JAR文件。
+要安装用于开发网站的AEM实例，请按照使用创作和发布实例](/help/sites-deploying/deploy.md#author-and-publish-installs)设置[部署环境的说明操作，或执行[通用安装](/help/sites-deploying/deploy.md#default-local-install)。 一般安装包括下载AEM快速入门JAR文件，将license.properties文件放在与JAR文件相同的目录中，并双击JAR文件。
 
 安装AEM后，单击欢迎页面上的CRXDE Lite链接以访问CRXDE Lite开发环境：
 
@@ -327,7 +338,7 @@ static.css文件和图像的示例
 
 1. 在CRXDE Lite中，在`/apps/mywebsite/components/contentpage`下创建文件`left.jsp`：
 
-   1. 右键单击节点`/apps/mywebsite/components/contentpage`，然后选择&#x200B;**创建**&#x200B;然后选择&#x200B;**创建文件**。
+   1. 右键单击节点`/apps/mywebsite/components/contentpage`，然后选择&#x200B;**创建**&#x200B;然后选择**创建文件**。
 
    1. 在窗口中，键入`left.jsp`作为&#x200B;**名称**，然后单击&#x200B;**确定**。
 
@@ -1528,6 +1539,6 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. 保存更改。
-1. 在浏览器中，重新加载 **&#x200B; Products**&#x200B;页面。 整个页面如下所示：
+1. 在浏览器中，重新加载** Products**页面。 整个页面如下所示：
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)

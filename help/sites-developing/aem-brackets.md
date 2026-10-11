@@ -1,5 +1,5 @@
 ---
-title: AEM Brackets扩展
+title: AEM Brackets 扩展
 description: 了解如何使用Brackets的Adobe Experience Manager扩展。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,22 +9,33 @@ exl-id: 829d8256-b415-4a44-a353-455ac16950f3
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '913'
-ht-degree: 0%
-
+source-wordcount: '987'
+ht-degree: 4%
 ---
-
-# AEM Brackets扩展{#aem-brackets-extension}
+# AEM Brackets 扩展{#aem-brackets-extension}
 
 ## 概述 {#overview}
 
-AEM Brackets扩展提供了用于编辑AEM组件和客户端库的流畅工作流程，并且使用了[Brackets](https://brackets.io/)代码编辑器的强大功能，该编辑器提供了从代码编辑器访问Photoshop文件和图层的权限。 扩展提供的轻松同步（不需要Maven或File Vault）提高了开发人员效率，并且还有助于掌握有限AEM知识的前端开发人员参与项目。 此扩展还为[HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)提供了一些支持，这消除了JSP的复杂性，使组件开发更容易、更安全。
+AEM Brackets扩展提供了用于编辑AEM组件和客户端库的流畅工作流，并且使用了[Brackets](https://brackets.io/)代码编辑器的强大功能，该编辑器提供了从代码编辑器访问Photoshop文件和图层的权限。 由扩展提供的轻松同步（不需要Maven或File Vault）提高了开发人员效率，并且还有助于对AEM知识有限的前端开发人员参与项目。 此扩展还为[HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)提供了一些支持，这消除了JSP的复杂性，使组件开发更容易、更安全。
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
-### 功能 {#features}
+### 特性 {#features}
 
 AEM Brackets扩展的主要功能包括：
 
@@ -33,10 +44,10 @@ AEM Brackets扩展的主要功能包括：
 * 项目的完整内容包同步。
 * 表达式和`data-sly-*`块语句的HTL代码完成。
 
-此外，Brackets还为AEM前端开发人员提供了许多有用的功能：
+此外，Brackets为AEM前端开发人员提供了许多有用的功能：
 
 * Photoshop文件支持从PSD文件中提取信息，如图层、测量、颜色、字体、文本等。
-* 来自PSD的代码提示，可轻松地在代码中重用此提取的信息。
+* 来自PSD的代码提示，可轻松在代码中重用此提取的信息。
 * CSS预处理程序支持，如LESS和SCSS。
 * 以及数百种其他扩展，可满足更具体的需求。
 
@@ -58,7 +69,7 @@ AEM Brackets扩展支持Brackets版本1.0或更高版本。
    ![chlimage_1-54](assets/chlimage_1-54a.png)
 
 1. 单击&#x200B;**安装**。
-1. 关闭对话框，并在安装完成后Extension Manager。
+1. 安装完成后，关闭对话框和Extension Manager。
 
 ## 快速入门 {#getting-started}
 
@@ -78,7 +89,7 @@ AEM Brackets扩展支持Brackets版本1.0或更高版本。
 >
 >如果您没有自己的包含内容包的项目，则可以尝试[HTL TodoMVC示例](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)。 在GitHub上，单击&#x200B;**下载ZIP**，在本地提取文件，并按照以上说明在Brackets中打开`jcr_root`文件夹。 然后按照以下步骤设置&#x200B;**项目设置**，最后按照完整内容包同步部分中的进一步说明，执行&#x200B;**导出内容包**，将整个包上载到您的AEM开发实例。
 >
->执行这些步骤后，您应该能够访问AEM开发实例上的`/content/todo.html` URL，并且可以在Brackets中开始修改代码，并了解在Web浏览器中刷新后，更改如何立即同步到AEM服务器。
+>执行这些步骤后，您应该能够访问AEM开发实例上的`/content/todo.html` URL，并且可以在Brackets中开始修改代码，并了解在Web浏览器中刷新之后，更改如何立即同步到AEM服务器。
 
 ### 项目设置 {#project-settings}
 
@@ -95,7 +106,7 @@ AEM Brackets扩展支持Brackets版本1.0或更高版本。
 
 ## 同步内容 {#synchronizing-content}
 
-AEM Brackets Extension为`filter.xml`中定义的筛选规则允许的文件和文件夹提供了以下类型的内容同步：
+AEM Brackets扩展为`filter.xml`中定义的筛选规则允许的文件和文件夹提供了以下类型的内容同步：
 
 ### 已更改文件的自动同步 {#automated-synchronization-of-changed-files}
 
@@ -119,7 +130,7 @@ AEM Brackets Extension为`filter.xml`中定义的筛选规则允许的文件和�
 
 ### 同步状态 {#synchronization-status}
 
-AEM Brackets扩展的Brackets窗口右侧的工具栏中提供了一个通知图标，用于指示上次同步的状态：
+AEM Brackets扩展的Brackets窗口右侧的工具栏中具有通知图标，用于指示上次同步的状态：
 
 * 绿色 — 已成功同步所有文件
 * 蓝色 — 正在进行同步操作

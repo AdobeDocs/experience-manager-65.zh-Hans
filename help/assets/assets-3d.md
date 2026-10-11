@@ -13,20 +13,32 @@ autotag-review: '2026-05-18T18:43:11.851Z'
 TQID: 'https://experienceleague.adobe.com/Qejzp9vTp-wLn92GsZdPdKEdA-84PnmYIROxdVrB4MU'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: fa7b95c2-9969-5924-a7c7-8cde1e7a2e26
+    internal-label: 3D Assets
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: a004cc84-67b9-4a33-a3a7-8ec7273ef4dc
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Metadata
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 2419
+source-wordcount: '2419'
 ht-degree: 2%
-
 ---
-
 # 在Dynamic Media中使用3D资产 {#working-with-three-d-assets-dm}
 
 您可以利用Dynamic Media上传、管理、查看和交付3D资产，尽享沉浸式体验。
@@ -47,12 +59,12 @@ Dynamic Media支持以下3D格式。
 
 另请参阅[支持的3D格式](/help/assets/assets-formats.md)。
 
-| 3D文件扩展名 | 文件格式 | MIME类型 | 注释 |
+| 3D文件扩展名 | 文件格式 | MIME 类型 | 注释 |
 |---|---|---|---|
 | GLB | 二进制GL传输 | model/gltf-binary | 将材料和纹理作为单个资产包含在内。 |
-| 对象 | WaveFront 3D对象文件 | application/x-tgif |  |
+| OBJ | WaveFront 3D对象文件 | application/x-tgif |  |
 | STL | 立体成形 | application/vnd.ms-pki.stl |  |
-| USDZ | 通用场景描述Zip存档 | model/vnd.usdz+zip | *仅支持摄取；不可查看或交互。* USDZ是一种专有的3D格式，可供Safari和iOS设备本机查看。 |
+| USDZ | Universal Scene Description Zip存档 | model/vnd.usdz+zip | *仅支持摄取；不可查看或交互。* USDZ是一种专有的3D格式，可供Safari和iOS设备本机查看。 |
 
 >[!NOTE]
 >
@@ -79,19 +91,19 @@ Dynamic Media支持以下3D格式。
 
    * 组织和搜索3D资产
 
-      * [组织数字资源](/help/assets/organize-assets.md#organize-digital-assets)。
-      * [搜索3D资源](/help/assets/search-assets.md)。
-      * [使用自定义谓词筛选搜索结果](/help/assets/search-assets.md#custompredicates)。
+     * [组织数字资源](/help/assets/organize-assets.md#organize-digital-assets)。
+     * [搜索3D资源](/help/assets/search-assets.md)。
+     * [使用自定义谓词筛选搜索结果](/help/assets/search-assets.md#custompredicates)。
 
    * 查看3D资产
 
-      * [查看并与3D资产交互](#viewing-three-d-assets)。
-      * [管理维度查看器预设](/help/assets/managing-viewer-presets.md)。
+     * [查看并与3D资产交互](#viewing-three-d-assets)。
+     * [管理维度查看器预设](/help/assets/managing-viewer-presets.md)。
 
    * 使用3D资源元数据
 
-      * [管理数字资源的元数据](/help/assets/metadata.md)。
-      * [元数据架构](/help/assets/metadata-schemas.md)。
+     * [管理数字资源的元数据](/help/assets/metadata.md)。
+     * [元数据架构](/help/assets/metadata-schemas.md)。
 
 1. **发布3D资源**
 
@@ -163,7 +175,7 @@ Dynamic Media支持以下3D格式。
    * 从浏览器中的页面URL中删除`/editor.html`。
 
    ![3D资产显示在3D媒体组件内](/help/assets/assets-dm/3d-asset-in-3d-media.png)
-以&#x200B;**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
+   以**[!UICONTROL 预览]**&#x200B;模式显示的完全交互式3D资产。
 
 1. 在&#x200B;**[!UICONTROL 预览]**&#x200B;模式下，执行以下任一操作：
 
@@ -182,7 +194,7 @@ Dynamic Media包括一个Dynamic Media 3D Media组件，您可以在Adobe Experi
 
 * [将3D媒体组件添加到页面模板](#adding-three-d-media-component-to-page-template)
 * [将3D媒体组件添加到网页](#adding-the-three-d-media-component-to-a-web-page)
-   * [可选 — 配置3D媒体组件](#configuring-the-three-d-component)
+  * [可选 — 配置3D媒体组件](#configuring-the-three-d-component)
 * [将3D资产分配给3D媒体组件](#assigning-a-three-d-asset-to-the-component)
 
 ## 将3D媒体组件添加到页面模板 {#adding-three-d-media-component-to-page-template}
@@ -243,7 +255,7 @@ Dynamic Media包括一个Dynamic Media 3D Media组件，您可以在Adobe Experi
 
 将3D媒体组件添加到网页后，即可为其分配3D资产。
 
-请参阅将3D媒体组件添加到网页[&#128279;](#adding-the-three-d-media-component-to-a-web-page)。
+请参阅将3D媒体组件添加到网页](#adding-the-three-d-media-component-to-a-web-page)。[
 
 **要将3D资产分配给3D媒体组件：**
 
@@ -274,7 +286,7 @@ Dynamic Media接受Dynamic Media中作为&#x200B;*静态内容*&#x200B;支持的
 
 **要发布静态Dynamic Media 3D资源：**
 
-1. 打开3D资产（GLB、OBJ或STL文件格式），以便在资产详细信息页面中查看它。
+1. 打开3D资源（GLB、OBJ或STL文件格式），以便您可以在资源详细信息页面中查看它。
 1. 在工具栏上，选择&#x200B;**[!UICONTROL 快速发布]**。
 
    ![3d-asset-quick-publish](/help/assets/assets-dm/3d-asset-quick-publish.png)
@@ -285,7 +297,7 @@ Dynamic Media接受Dynamic Media中作为&#x200B;*静态内容*&#x200B;支持的
    ![3d-asset-renditions](/help/assets/assets-dm/3d-asset-renditions.png)
 
 1. 选择&#x200B;**[!UICONTROL 原始]**。 发布（或“激活”）3D资产时，如果满足以下所有3D资产条件，则页面左下角附近将显示&#x200B;**[!UICONTROL URL]**&#x200B;按钮：
-   * 3D资产是受支持的格式（GLB、OBJ、STL和USDZ）。
+   * 3D资源是受支持的格式（GLB、OBJ、STL和USDZ）。
    * 已将3D资产摄取到Dynamic Media图像生产系统(IPS)。
    * 发布3D资产。
 

@@ -1,6 +1,6 @@
 ---
 title: 在设计模式下配置组件
-description: 现成安装AEM实例后，即可在sidekick中找到一组组件。 除此之外，还可以使用各种其他组件。 您可以使用设计模式启用/禁用此类组件。
+description: 现成安装AEM实例后，即可在sidekick中立即找到一组组件。 除此之外，还可以使用各种其他组件。 您可以使用设计模式启用/禁用此类组件。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
@@ -10,16 +10,25 @@ exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '508'
-ht-degree: 0%
-
+source-wordcount: '514'
+ht-degree: 1%
 ---
-
 # 在设计模式下配置组件{#configuring-components-in-design-mode}
 
-现成安装AEM实例后，即可在sidekick中找到一组组件。
+现成安装AEM实例后，即可在sidekick中立即找到一组组件。
 
 除此之外，还可以使用各种其他组件。 您可以使用设计模式[启用/禁用此类组件](#enabledisablecomponentsusingdesignmode)。 启用并位于您的页面后，您可以使用设计模式通过编辑属性参数来[配置组件设计的各个方面](#configuringcomponentsusingdesignmode)。
 
@@ -44,7 +53,7 @@ ht-degree: 0%
 
 在设计模式下，Sidekick被最小化，您可以配置可用于创作的组件：
 
-1. 要进入设计模式，请打开页面进行编辑，并使用Sidekick图标：
+1. 要进入设计模式，请打开要编辑的页面，然后使用Sidekick图标：
 
    ![设计模式](do-not-localize/chlimage_1.png)
 
@@ -58,7 +67,7 @@ ht-degree: 0%
 
    ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. 在设计模式下，Sidekick会最小化。 通过单击箭头，您可以最大化Sidekick并返回到编辑模式：
+1. 在设计模式下，Sidekick会最大限度地减少工作量。 通过单击箭头，您可以最大化Sidekick并返回到编辑模式：
 
    ![Sidekick已最小化](do-not-localize/sidekick-collapsed.png)
 
@@ -66,7 +75,7 @@ ht-degree: 0%
 
 在设计模式下，您还可以配置各个组件的属性。 每个组件都有自己的参数，以下示例显示了&#x200B;**图像**&#x200B;组件：
 
-1. 要进入设计模式，请打开页面进行编辑，并使用Sidekick图标：
+1. 要进入设计模式，请打开要编辑的页面，然后使用Sidekick图标：
 
    ![设计模式 — Sidekick](do-not-localize/chlimage_1-1.png)
 
@@ -78,6 +87,6 @@ ht-degree: 0%
 
 1. 单击&#x200B;**确定**&#x200B;以保存更改。
 
-1. 在设计模式下，Sidekick会最小化。 通过单击箭头，您可以最大化Sidekick并返回到编辑模式：
+1. 在设计模式下，Sidekick会最大限度地减少工作量。 通过单击箭头，您可以最大化Sidekick并返回到编辑模式：
 
    ![Sidekick已最小化](do-not-localize/sidekick-collapsed-1.png)

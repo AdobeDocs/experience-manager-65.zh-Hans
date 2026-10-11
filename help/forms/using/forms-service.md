@@ -8,34 +8,54 @@ feature: Document Services,Forms Service,PDF Generator
 exl-id: 6580fe6f-3cdb-45ec-8ba3-51dc60d1965e
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: b59c0486-3350-52ed-8816-e0a8e11486b8
+    internal-label: Forms Service
+  - id: b26425d0-6fde-5e02-bfd6-e560e2fa86c9
+    internal-label: PDF Generator
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '687'
 ht-degree: 0%
-
 ---
-
 # 表单服务 {#forms-service}
 
 ## 概述 {#overview}
 
 Forms服务允许您创建交互式数据捕获客户端应用程序，这些应用程序验证、处理、转换并交付通常在Designer中创建的表单。 Forms服务会将您开发的任何表单设计呈现为PDF文档。
 
-Forms服务还使企业能够通过部署电子表单作为AdobePDF来扩展其智能数据捕获流程。 您还可以使用该服务分别从现有PDF forms导入和导出数据。
+Forms服务还使企业能够通过将电子表单部署为Adobe PDF来扩展其智能数据捕获流程。 您还可以使用该服务分别将数据导入现有PDF forms或从其中导出数据。
 
 使用Forms服务执行以下操作：
 
-* 基于PDF forms和XML数据渲染模板。
+* 根据模板和XML数据渲染PDF forms。
 * 启用表单数据集成，以将数据导入PDF forms并从中提取数据。
 * 根据片段渲染表单。
 
 ## 创建PDF forms  {#creating-pdf-forms-nbsp}
 
-使用表单服务创建用于数据捕获的PDF forms。 通常，您首先会使用AEM Forms Designer模板。 使用Forms服务的`renderPDFForm`（链接到Javadoc）操作将此模板转换为PDF表单。
+使用表单服务创建PDF forms以进行数据捕获。 通常，您首先会使用AEM Forms Designer模板。 使用Forms服务的`renderPDFForm`（链接到Javadoc）操作将此模板转换为PDF表单。
 
 `renderPDFForm`操作的第一个参数是模板文件的名称（例如，`ExpenseClaim.xdp`）。 您可以将模板文件存储在本地文件系统、CRX存储库中，或存储在HTTP或FTP位置。 您可以通过在`renderPDFForm`操作的`PDFFormRenderOptions`参数中设置内容根来指定模板文件的位置。 有关可为`PDFFormRenderOptions`参数指定的其他选项的详细信息，请参阅Javadoc 。
 
-`renderPDFForm`操作也可以接受XML数据。 创建PDF表单时，XML数据将合并到模板中，以便生成的PDF表单包含指定的数据。 `renderPDFForm`操作的第二个参数可以接受包含XML数据的Document (Javadoc)对象。
+`renderPDFForm`操作也可以接受XML数据。 创建PDF表单时，XML数据将合并到模板，以便生成的PDF表单包含指定数据。 `renderPDFForm`操作的第二个参数可以接受包含XML数据的Document (Javadoc)对象。
 
 ## 从PDF forms提取数据  {#extracting-data-from-pdf-forms-nbsp}
 
@@ -43,7 +63,7 @@ Forms服务还使企业能够通过部署电子表单作为AdobePDF来扩展其�
 
 ## 将数据导入PDF forms {#importing-data-into-pdf-forms}
 
-Forms服务还允许您将使用AEM Forms Designer或`renderPDFForm`操作创建的PDF表单与XML数据合并。 Forms服务的`importData` (Javadoc)操作接受PDF表单和XML数据，并返回包含数据XML的PDF表单。
+Forms服务还允许您将使用PDF Designer或`renderPDFForm`操作创建的AEM Forms表单与XML数据合并。 Forms服务的`importData` (Javadoc)操作接受PDF表单和XML数据，并返回包含数据XML的PDF表单。
 
 ## 基于片段渲染表单 {#rendering-forms-based-on-fragments}
 

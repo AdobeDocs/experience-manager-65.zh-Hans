@@ -9,7 +9,18 @@ exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3377'
 ht-degree: 1%
@@ -285,7 +296,7 @@ Felix管理控制台(`http://<host>:<port>/system/console/slingscripting`)上列
 
 这会使用Sling API包、org.apache.sling.&amp;ast；和标记库。
 
-### 使用sling:include引用现有元素 {#referencing-existing-elements-using-sling-include}
+### 使用sling:include {#referencing-existing-elements-using-sling-include}引用现有元素
 
 最后需要考虑的是需要引用脚本中的现有元素。
 
@@ -445,7 +456,7 @@ pageManager是页面管理器对象，myResource是资源对象。 有关页面�
 
 ## Dispatcher {#the-dispatcher}
 
-Dispatcher是Adobe用于缓存和/或负载平衡的工具。 可在[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)下找到更多信息。
+Dispatcher是Adobe用于缓存和/或负载平衡的工具。 可在[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)下找到更多信息。
 
 ## FileVault（源修订版系统） {#filevault-source-revision-system}
 
@@ -455,7 +466,7 @@ FileVault为JCR存储库提供文件系统映射和版本控制。 它可用于�
 
 ## 工作流 {#workflows}
 
-您的内容通常受组织流程约束，包括各个参与者的批准和签署等步骤。 这些进程可以表示为在AEM[&#128279;](/help/sites-developing/workflows-models.md)中定义和开发的工作流，然后根据需要应用于[适当的内容页面](/help/sites-administering/workflows.md)或[数字资源](/help/assets/assets-workflow.md)。
+您的内容通常受组织流程约束，包括各个参与者的批准和签署等步骤。 这些进程可以表示为在AEM](/help/sites-developing/workflows-models.md)中定义和开发的[工作流，然后根据需要应用于[适当的内容页面](/help/sites-administering/workflows.md)或[数字资源](/help/assets/assets-workflow.md)。
 
 工作流引擎用于管理工作流的实施，以及工作流对内容的后续应用程序。
 

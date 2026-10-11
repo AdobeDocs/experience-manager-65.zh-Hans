@@ -10,7 +10,23 @@ role: Admin, Developer
 feature: Adaptive Forms,Core Components
 solution: Experience Manager, Experience Manager Forms
 exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1928'
 ht-degree: 35%
@@ -41,13 +57,13 @@ ht-degree: 35%
 
 * **为您的环境启用自适应Forms核心组件**：需要AEM Archetype项目版本41或更高版本，才能[为您的环境启用核心组件](/help/forms/using/enable-adaptive-forms-core-components.md)。 在为您的环境启用核心组件时，会将&#x200B;**自适应Forms （核心组件）**&#x200B;模板和画布主题添加到您的环境中。
 
-* **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（版面和样式）。 它具有预格式化的组件，其中包含某些属性和内容结构。 它还提供用于定义主题和提交操作的选项。 主题定义外观，提交操作定义在提交自适应表单时执行的操作。 您还可以将[示例模板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hans)部署到您的环境。 这些功能可帮助您迅速创建表单。
+* **自适应表单模板**：模板提供基本结构并定义自适应表单的外观（版面和样式）。 它具有预格式化的组件，其中包含某些属性和内容结构。 它还提供用于定义主题和提交操作的选项。 主题定义外观，提交操作定义在提交自适应表单时执行的操作。 您还可以将[示例模板](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署到您的环境。 这些功能可帮助您迅速创建表单。
 
   >[!NOTE]
   >
   > 如果环境中没有&#x200B;**自适应表单（核心组件）**&#x200B;模板，请[为您的环境启用自适应表单核心组件](/help/forms/using/enable-adaptive-forms-core-components.md)。 在为您的环境启用核心组件时，会将&#x200B;**自适应表单（核心组件）**&#x200B;模板添加到您的环境。
 
-* **自适应表单主题**：主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。 在应用主题时，指定的样式会反映在相应的组件上。  在为环境启用核心组件时，默认会添加`Canvas`主题。 您可以[下载并自定义标准主题](create-or-customize-themes-for-adaptive-forms-core-components.md)。 对于现成的&#x200B;**主题**，您可以将[示例主题](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hans)部署到您的环境。 这些功能可帮助您开始设计表单的样式，并提供一个基础结构，以根据业务需求创建或自定义主题。
+* **自适应表单主题**：主题包含组件和面板的样式详细信息。 样式包括背景颜色、状态颜色、透明度、对齐方式和大小等属性。 在应用主题时，指定的样式会反映在相应的组件上。  在为环境启用核心组件时，默认会添加`Canvas`主题。 您可以[下载并自定义标准主题](create-or-customize-themes-for-adaptive-forms-core-components.md)。 对于现成的&#x200B;**主题**，您可以将[示例主题](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)部署到您的环境。 这些功能可帮助您开始设计表单的样式，并提供一个基础结构，以根据业务需求创建或自定义主题。
 
 * **权限**：将用户添加到[!DNL forms-users]组。 [!DNL forms-users]组的成员具有创建自适应表单的权限。 有关特定于表单的用户组的详细列表，请参阅[组和权限](forms-groups-privileges-tasks.md)。
 
@@ -55,12 +71,12 @@ ht-degree: 35%
 >[!NOTE]
 >
 >
-> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hans) to your AEM environment for use in Core Components based Adaptive Forms.
+> In addition to the given themes and templates when you enable Core Components, you can also deploy the latest out-of-the box [sample themes and templates](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html) to your AEM environment for use in Core Components based Adaptive Forms.
 -->
 
 ## 创建自适应表单 {#create-an-adaptive-form}
 
-1. 登录到本地[AEM创作实例](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=zh-Hans#author-and-publish-installs)。
+1. 登录到本地[AEM创作实例](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=en#author-and-publish-installs)。
 
 1. 在 Experience Manager 登录页面上输入您的凭据。 登录后，在左上角选择&#x200B;**[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL 表单]** > **[!UICONTROL 表单和文档]**。
 
@@ -156,7 +172,7 @@ ht-degree: 35%
 
 ### 使用表单数据模型预填充服务预填充自适应表单的字段 {#fdm-prefill-service}
 
-您可以使用表单数据模型预填充服务通过表单数据模型或自定义预填充服务预填充自适应表单的字段。 表单数据模型预填充服务使用配置的表单数据模型[&#128279;](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)的Get服务检索数据。 要对自适应表单使用表单数据模型预填充服务，请执行以下操作：
+您可以使用表单数据模型预填充服务通过表单数据模型或自定义预填充服务预填充自适应表单的字段。 表单数据模型预填充服务使用配置的表单数据模型](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services)的[Get服务检索数据。 要对自适应表单使用表单数据模型预填充服务，请执行以下操作：
 
 1. 打开内容浏览器，然后选择自适应表单的&#x200B;**[!UICONTROL 指南容器]**&#x200B;组件。
 1. 单击指南容器属性![指南属性](/help/forms/using/assets/configure-icon.svg)图标。 这将打开“自适应表单容器”对话框。
@@ -200,4 +216,4 @@ ht-degree: 35%
 
 * [创建基于核心组件的自适应表单](create-an-adaptive-form-core-components.md)
 * [创建自适应表单或将其添加到AEM Sites页面或体验片段](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-* [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html?lang=zh-Hans)
+* [主题模板和表单数据模型示例](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

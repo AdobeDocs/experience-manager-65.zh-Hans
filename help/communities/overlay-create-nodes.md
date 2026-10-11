@@ -9,13 +9,20 @@ exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '301'
 ht-degree: 1%
-
 ---
-
 # 创建节点 {#create-nodes}
 
 通过将所需的最少文件数从`/libs`复制到`/apps`并在`/apps`中修改它们，使用自定义版本覆盖评论系统。
@@ -24,7 +31,7 @@ ht-degree: 1%
 >
 >永远不会编辑/libs文件夹的内容，因为任何重新安装或升级操作都可能会删除或替换/libs文件夹，而/apps文件夹的内容保持不变。
 
-在创作实例上使用[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)，首先在/apps文件夹中创建一条与/libs文件夹中覆盖组件的路径相同的路径。
+在创作实例上使用[CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md)，首先在/apps文件夹中创建与/libs文件夹中覆盖组件的路径相同的路径。
 
 要复制的路径为：
 
@@ -36,34 +43,34 @@ ht-degree: 1%
 1. 创建`/apps/social`（如果尚不存在）
    * 选择`/apps`节点
    * **[!UICONTROL 创建>文件夹]**
-      * 输入名称： `social`
+     * 输入名称： `social`
 1. 选择`social`节点
    * **[!UICONTROL 创建]** > **[!UICONTROL 文件夹]**
-      * 输入名称： `commons`
+     * 输入名称： `commons`
 1. 选择`commons`节点
    * **[!UICONTROL 创建>文件夹]**
-      * 输入名称： `components`
+     * 输入名称： `components`
 1. 选择`components`节点
    * **[!UICONTROL 创建>文件夹]**。
-      * 输入名称： `hbs`
+     * 输入名称： `hbs`
 1. 选择`hbs`节点
    * **[!UICONTROL 创建]** > **[!UICONTROL 创建组件]**
-      * 输入标签： `comments`
-      * 输入标题： `Comments`
-      * 输入描述： `List of comments without showing avatars`
-      * 超级类型： `social/commons/components/comments`
-      * 输入组： `Communities`
-      * 单击&#x200B;**[!UICONTROL 下一步]**，直到&#x200B;**[!UICONTROL 确定]**
+     * 输入标签： `comments`
+     * 输入标题： `Comments`
+     * 输入描述： `List of comments without showing avatars`
+     * 超级类型： `social/commons/components/comments`
+     * 输入组： `Communities`
+     * 单击&#x200B;**[!UICONTROL 下一步]**，直到&#x200B;**[!UICONTROL 确定]**
 1. 选择`comments`节点
 
    * **[!UICONTROL 创建]** > **[!UICONTROL 创建组件]**
 
-      * 输入标签： `comment`
-      * 输入标题： `Comment`
-      * 输入描述： `A comment instance without avatars`
-      * 超级类型： `social/commons/components/comments/comment`
-      * 输入组： `.hidden`
-      * 单击&#x200B;**[!UICONTROL 下一步]**，直到&#x200B;**[!UICONTROL 确定]**
+     * 输入标签： `comment`
+     * 输入标题： `Comment`
+     * 输入描述： `A comment instance without avatars`
+     * 超级类型： `social/commons/components/comments/comment`
+     * 输入组： `.hidden`
+     * 单击&#x200B;**[!UICONTROL 下一步]**，直到&#x200B;**[!UICONTROL 确定]**
    * 选择&#x200B;**[!UICONTROL 全部保存]**
 1. 删除默认`comments.jsp`
    * 选择节点`/apps/social/commons/components/hbs/comments/comments.jsp`

@@ -1,6 +1,6 @@
 ---
-title: Integrating with Adobe Campaign components
-description: When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms.
+title: 与Adobe Campaign组件集成
+description: 与Adobe Campaign集成时，您拥有的组件可用于处理新闻稿和表单。
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -11,72 +11,89 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization,Integration
 role: User,Admin,Developer
 index: false
-source-git-commit: 147b0efb32609c05949c9fe374fa4fca6a9dbfb1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2879'
 ht-degree: 6%
-
 ---
-
 
 # Adobe Campaign 组件{#adobe-campaign-components}
 
-When you integrate with Adobe Campaign, you have components available for when working with newsletters and with forms. Both are described in this document.
+与Adobe Campaign集成时，您拥有的组件可用于处理新闻稿和表单。 本文档中对此进行了说明。
 
 >[!CAUTION]
 >
->The AEM email components have been deprecated. Due to the nature of email, which merges content and style, the email components provided out-of-the-box by AEM become of limited reuse for customers because of the need to implement custom styles into whatever components are required for projects.
+>已弃用AEM电子邮件组件。 由于电子邮件将内容和样式融合在一起，因此由AEM提供的现成可用电子邮件组件对于客户的重用受到限制，因为需要将自定义样式实施到项目所需的任何组件中。
 >
->Email components can be implemented on project level, and the deprecated AEM email components illustrate how that can be achieved. However, do not use these deprecated components on projects.
+>可以在项目级别实施电子邮件组件，已弃用的AEM电子邮件组件说明了如何实现这一点。 但是，请勿在项目中使用这些已弃用的组件。
 
-## Adobe Campaign Newsletter Components {#adobe-campaign-newsletter-components}
+## Adobe Campaign新闻稿组件 {#adobe-campaign-newsletter-components}
 
-All the Campaign components follow the best practices outlined in [Best Practices for Email Templates](/help/sites-administering/best-practices-for-email-templates.md) and are based on the Adobe markup language [HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html).
+所有Campaign组件都遵循[电子邮件模板最佳实践](/help/sites-administering/best-practices-for-email-templates.md)中概述的最佳实践，并基于Adobe标记语言[HTL](https://helpx.adobe.com/cn/experience-manager/htl/using/overview.html)。
 
-When you open a newsletter/email that is configured to integrate with Adobe Campaign, you should see the following components in the **Adobe Campaign Newsletter** section:
+当您打开配置为与Adobe Campaign集成的新闻稿/电子邮件时，您应会在&#x200B;**Adobe Campaign新闻稿**&#x200B;部分中看到以下组件：
 
 * 标题（营销活动）
 * 图像（营销活动）
 * 链接 (营销活动)
 * Scene7 图像模板（营销活动）
 * 目标引用（营销活动）
-* 文本与图像（营销活动）
+* 文本与图像（Campaign）
 * 文本与个性化（营销活动）
 
-A description of these components is in the following section.
+下一节将介绍这些组件。
 
-The components appear as follows:
+这些组件如下所示：
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
 ### 标题（营销活动） {#heading-campaign}
 
-The heading component can either:
+标题组件可以：
 
-* Display the name of the current page by leaving the **Title** field blank.
-* Display a text that you specify in the **Title** field.
+* 将&#x200B;**标题**&#x200B;字段留空以显示当前页面的名称。
+* 显示您在&#x200B;**标题**&#x200B;字段中指定的文本。
 
-You edit the **Heading (Campaign)** component directly. 留空将使用页面标题。
+直接编辑&#x200B;**标题（营销活动）**&#x200B;组件。 留空将使用页面标题。
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-You can configure the following:
+您可以配置以下内容：
 
-* **Title**
-If you want to use a name other than the page title, enter it here.
+* **标题**
+如果要使用页面标题以外的名称，请在此处输入该名称。
 
-* **Heading level (1, 2, 3, 4)**
-The heading level based on the HTML heading sizes 1-4.
+* **标题级别(1、2、3、4)**
+标题级别基于HTML标题大小1-4。
 
-The following example shows a Heading (Campaign) component being displayed.
+以下示例显示了正在显示的标题（营销活动）组件。
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
 ### 图像（营销活动） {#image-campaign}
 
-The image (campaign) component displays an image and accompanying text according to the specified parameters.
+图像（营销活动）组件根据指定的参数显示图像和随附文本。
 
-You can upload an image, then edit and manipulate it (for example, crop, rotate, add link/title/text).
+您可以上传图像，然后对其进行编辑和处理（例如，裁切、旋转、添加链接/标题/文本）。
 
 您可以从[资产浏览器](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)将图像直接拖放到组件或其[配置对话框](/help/sites-authoring/editing-content.md#editconfigurecopycutdeletepastetouchoptimizedui)上。 您还可以从“配置”对话框上传图像；此对话框还控制图像的所有定义和操作：
 
@@ -94,7 +111,7 @@ You can upload an image, then edit and manipulate it (for example, crop, rotate,
 >
 >就地编辑器在编辑时使用图像的原始大小和纵横比。 您还可以指定高度和宽度属性。 在保存编辑更改时，将应用属性中定义的任何大小和纵横比限制。
 >
->根据您的实例，页面[&#128279;](/help/sites-developing/designer.md)的设计也可能施加最小和最大限制；这些限制是在项目实施期间制定的。
+>根据您的实例，页面](/help/sites-developing/designer.md)的[设计也可能施加最小和最大限制；这些限制是在项目实施期间制定的。
 
 全屏编辑模式中提供了多个其他选项；例如，映射和缩放：
 
@@ -116,49 +133,49 @@ You can upload an image, then edit and manipulate it (for example, crop, rotate,
 
 * 缩放栏（仅限经典）
 要放大和缩小图像，请使用图像下方的滑动条（在“确定”和“取消”按钮上方）
-* **Title**
-The title of the image.
+* **标题**
+图像的标题。
 
-* **Alt Text**
-An alternative text for use when creating accessible content.
+* **替换文本**
+创建无障碍内容时使用的替换文本。
 
-* **Link To**
-Create a link to assets or other pages within your website.
+* **链接到**
+创建指向网站内资产或其他页面的链接。
 
-* **Description**
-A description of the image.
+* **描述**
+图像的描述。
 
-* **Size**
-Sets the height and the width of the image.
+* **大小**
+设置图像的高度和宽度。
 
 >[!NOTE]
 >
->Enter information in the **Alt Text** field in the **Advanced** tab, or the image cannot save and you see the following error message:
+>在&#x200B;**高级**&#x200B;选项卡的&#x200B;**替换文本**&#x200B;字段中输入信息，否则图像无法保存，您会看到以下错误消息：
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
 
-The following example shows an Image (Campaign) component being displayed.
+以下示例显示了正在显示的图像（营销活动）组件。
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
 ### 链接 (营销活动) {#link-campaign}
 
-The Link (Campaign) component lets you add a link to your newsletter.
+链接（营销活动）组件允许您向新闻稿添加链接。
 
-You can configure the following in the **Display**, **URL Info**, or **Advanced** tabs:
+您可以在&#x200B;**显示**、**URL信息**&#x200B;或&#x200B;**高级**&#x200B;选项卡中配置以下内容：
 
-* **Link Caption**
-The caption for the link. This is the text that users see.
+* **链接标题**
+链接的描述。 这是用户看到的文本。
 
-* **Link ToolTip**
-Adds additional information on how to use the link.
+* **链接工具提示**
+添加了关于如何使用链接的其他信息。
 
-* **LinkType**
-In the drop-down list, select between a **Custom URL** and an **Adaptive Document**. 该字段为必填项。 If you select Custom URL, you can provide the Link URL. If you select Adaptive Document, you can provide the document path.
+* **链接类型**
+在下拉列表中，选择**自定义URL**&#x200B;和&#x200B;**自适应文档**。 该字段为必填项。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
 
-* **Additional URL Parameter**
-Add any additional URL parameters. 单击“添加项目”可添加多个项目。
+* **其他URL参数**
+添加任何其他URL参数。 单击“添加项目”可添加多个项目。
 
 >[!NOTE]
 >
@@ -220,20 +237,20 @@ Dynamic Media Classic (Scene7)图像模板是分层的图像文件，其中的�
 * **图像属性** （**高级图像属性**）
 用于指定以下内容：
 
-   * **标题**
-块的标题；由mouseover显示。
+  * **标题**
+    块的标题；由mouseover显示。
 
-   * **替换文本**
-图像无法显示时要显示的替换文本。
+  * **替换文本**
+    图像无法显示时要显示的替换文本。
 
-   * **链接到**
-创建指向网站内资产或其他页面的链接。
+  * **链接到**
+    创建指向网站内资产或其他页面的链接。
 
-   * **描述**
-图像的描述。
+  * **描述**
+    图像的描述。
 
-   * **大小**
-设置图像的高度和宽度。
+  * **大小**
+    设置图像的高度和宽度。
 
 >[!NOTE]
 >
@@ -279,11 +296,11 @@ Dynamic Media Classic (Scene7)图像模板是分层的图像文件，其中的�
 
 * 复选框（营销活动）
 * 日期字段（营销活动）和日期字段/HTML5 （营销活动）
-* 已加密的主键（营销活动）
-* 错误显示（营销活动）
-* 隐藏的协调键（营销活动）
-* 数字字段（营销活动）
-* 选项字段（营销活动）
+* 已加密的主键（Campaign）
+* 错误显示（Campaign）
+* 隐藏的协调键（Campaign）
+* 数值字段（Campaign）
+* 选项字段（Campaign）
 * 订阅核对清单（营销活动）
 * 文本字段（营销活动）
 
@@ -396,7 +413,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无**&#x200B;或&#x200B;**日期 —**&#x200B;以添加日期限制或无限制。 如果选择日期，则用户在字段中输入的答案必须采用日期格式。
 
 * **约束消息**&#x200B;此外，您可以添加约束消息，以便用户了解如何正确设置其答案的格式。
@@ -448,7 +465,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无**&#x200B;或&#x200B;**数值 —**&#x200B;来添加数值或无约束的约束。 如果选择数字，则用户在字段中输入的答案必须是数字。
 
 * **约束消息**&#x200B;此外，您可以添加约束消息，以便用户了解如何正确设置其答案的格式。
@@ -492,7 +509,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无、** **电子邮件**&#x200B;或&#x200B;**名称** （无变音） — 添加电子邮件地址、名称或无限制的约束。 如果选择电子邮件，则用户在字段中输入的答案必须是电子邮件地址。 如果选择名称，则必须为名称（不允许使用变音）。
 
 * **约束消息**&#x200B;此外，您可以添加约束消息，以便用户了解如何正确设置其答案的格式。

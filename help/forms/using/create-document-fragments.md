@@ -8,13 +8,29 @@ feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1689'
 ht-degree: 3%
-
 ---
-
 # 教程：创建文档片段{#tutorial-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
@@ -164,7 +180,7 @@ ht-degree: 3%
    ![客户详细信息静态文本](assets/customer_details_static_text_new.png)
 
 1. 将光标置于&#x200B;**Mobile Number**&#x200B;字段旁边，并双击&#x200B;**customer** > **mobilenum**&#x200B;属性。
-1. 将光标置于&#x200B;**备用联系电话**&#x200B;字段旁边，并双击&#x200B;**customer** > **alternatemobilenumber**&#x200B;属性。
+1. 将光标置于&#x200B;**备用联系电话**&#x200B;字段旁边，并双击&#x200B;**customer** > **alternatemobilenumber**属性。
 1. 将光标置于&#x200B;**Relationship Number**&#x200B;字段旁边，并双击&#x200B;**customer** > **relationshipnumber**&#x200B;属性。
 1. 选择&#x200B;**变量**&#x200B;选项卡，将光标放置在&#x200B;**Place of Supply**&#x200B;字段旁边，并双击&#x200B;**Placessupply**&#x200B;变量。
 1. 将光标置于&#x200B;**状态代码**&#x200B;字段旁边，并双击&#x200B;**状态代码**&#x200B;变量。

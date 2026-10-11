@@ -15,9 +15,16 @@ product_v2:
 feature_v2:
   - id: ac5ecfc1-cc78-4ecc-a90a-0362685062ce
     internal-label: AI Tools
+subfeature_v2:
+  - id: bf7fca06-df97-4229-884f-76afcfade5ad
+    internal-label: AI Assistant
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
     internal-label: Intermediate
@@ -34,7 +41,7 @@ topic_v2:
     internal-label: Insights
   - id: f4e6943a-c91a-4134-a2c7-f4f20cfff2f0
     internal-label: Privacy
-source-git-commit: a6f7741fe575a194732abee7dfc9c531d1c58cc2
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 78%
@@ -62,7 +69,7 @@ AI 助手支持 AEM as a Cloud Service，包括以下解决方案：
 
 以下这段时长 3 分 25 秒的视频分步介绍了 AEM 中的 AI 助手。
 
->[!VIDEO](https://video.tv.adobe.com/v/3475368/?captions=chi_hans&learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3475357/?learn=on&enablevpops)
 
 ## 获取 AEM 中 AI 助手的访问权限{#get-access}
 
@@ -77,7 +84,7 @@ AI 助手支持 AEM as a Cloud Service，包括以下解决方案：
 
 **要访问 AEM 中的 AI 助手：**
 
-1. 客户必须另外签订协议才能访问 Adobe Experience Manager 中的大多数 AI 驱动的和代理式功能。 请联系您的 Adobe 代表，获取更多详情。 有关generative AI启用的工作方式，请参阅[CX Enterprise应用程序中的Generative AI](https://experienceleague.adobe.com/zh-hans/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai)。
+1. 客户必须另外签订协议才能访问 Adobe Experience Manager 中的大多数 AI 驱动的和代理式功能。 请联系您的 Adobe 代表，获取更多详情。 有关generative AI启用的工作方式，请参阅[CX Enterprise应用程序中的Generative AI](https://experienceleague.adobe.com/en/docs/cx-enterprise-ai/experience-cloud-ai/overview/generative-ai)。
 
 1. 您的组织获得此协议后，所有用户都可以在默认情况下使用AI Assistant获取产品知识。 不需要额外的每个用户或每个组权限。
 

@@ -8,16 +8,32 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '361'
-ht-degree: 10%
-
+source-wordcount: '375'
+ht-degree: 15%
 ---
-
 # 自适应表单中的分隔符组件{#separator-component-in-adaptive-forms}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应Forms的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应Forms的旧方法。</span>
 
 可使用分隔符组件以可视方式分隔表单的面板。 通过指定分隔符组件的以下属性，可以定义分隔符组件的整体外观和样式：
 
@@ -33,7 +49,7 @@ ht-degree: 10%
 要指定分隔符组件的属性，请执行以下操作：
 
 1. 选择分隔符组件并选择![cmppr](assets/cmppr.png)。 这些属性将在侧栏中打开。
-1. 单击“内联CSS属性”部分中的选项卡，以便指定CSS属性。 例如：a。在字段选项卡中，单击&#x200B;**添加项**。 将添加包含两个字段的行。
+1. 单击“内联CSS属性”部分中的选项卡，以便指定CSS属性。 例如：a。 在字段选项卡中，单击&#x200B;**添加项**。 将添加包含两个字段的行。
 1. 在左侧的第一个字段中，指定要应用的CSS3属性。 例如，**边框**。 您还可以通过单击向下箭头按钮选择资产。 下拉列表并非详尽无遗，您可以在此字段中指定任何受支持的CSS3属性名称。
 1. 在相邻的字段中，为指定的CSS3属性指定有效值。 例如，**3-px实心黑色**。
 1. 单击&#x200B;**添加项**&#x200B;以指定另一个属性及其值。

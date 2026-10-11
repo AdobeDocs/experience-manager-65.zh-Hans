@@ -1,21 +1,29 @@
 ---
 title: 什么是Document Security？
-
 description: 了解如何创建、存储和应用预定义的机密性设置，以及如何使用Document Security安全地分发信息。
-
-
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-
 docset: aem65
-
 feature: Document Security
 exl-id: 0cdc9ee3-0172-43be-9b62-ed768534c074
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3302'
 ht-degree: 0%
@@ -27,7 +35,7 @@ Document Security确保只有授权用户才能使用您的文档。 使用Docum
 * Adobe PDF文件
 * ®Word、Excel和PowerPoint文件
 
-有关策略如何保护支持的文件类型的详细信息，请参阅[更多Document Security信息](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=zh-Hans)。
+有关策略如何保护支持的文件类型的详细信息，请参阅[更多Document Security信息](https://experienceleague.adobe.com/docs/experience-manager-65/forms/use-document-security/document-security-offerings.html?lang=en)。
 
 使用Document Security，您可以轻松创建、存储预定义机密性设置并将其应用于文档。 为了防止信息超出您的覆盖范围，您还可以监控和控制在您分发文档后收件人如何使用您的文档。
 
@@ -254,7 +262,7 @@ Document Security管理员可以使用“用户管理”中的以下权限创建
 
   使用策略集可以更轻松地向组织或部门中的特定用户分配和管理相关策略。 例如，为财务和人力资源部门单独设置政策有助于轻松管理相关政策，并将其应用于为相应部门指定的文件。
 
-* **使用外部授权程序动态应用权限：**&#x200B;您可以使用[外部授权程序](https://help.adobe.com/zh_CN/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)根据外部条件评估和动态应用权限。 在根据外部条件动态评估权限时，您可以：
+* **使用外部授权程序动态应用权限：**&#x200B;您可以使用[外部授权程序](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)根据外部条件评估和动态应用权限。 在根据外部条件动态评估权限时，您可以：
 
   * 为组织中的文档提供集中访问控制。
 
@@ -262,7 +270,7 @@ Document Security管理员可以使用“用户管理”中的以下权限创建
 
   * 使用内容管理系统使用的访问控制机制，以及标准策略评估过程。 例如，当服务确定用户是否可以打印受策略保护的文档时，它可以使用标准策略评估过程。 此外，它还可以使用内容管理系统使用的访问控制机制。
 
-  虽然可以使用外部授权处理程序完全替换Document Security策略评估流程，但建议您在策略评估流程中使用外部授权处理程序。 因此，可以使用与内容管理系统相同的控制机制来控制文档访问。 例如，当Document Security服务确定用户是否可以打印受策略保护的文档时，它使用标准策略评估流程。 它还使用内容管理系统使用的访问控制机制。 有关详细信息，请参阅[创建外部授权处理程序](https://help.adobe.com/zh_CN/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)。
+  虽然可以使用外部授权处理程序完全替换Document Security策略评估流程，但建议您在策略评估流程中使用外部授权处理程序。 因此，可以使用与内容管理系统相同的控制机制来控制文档访问。 例如，当Document Security服务确定用户是否可以打印受策略保护的文档时，它使用标准策略评估流程。 它还使用内容管理系统使用的访问控制机制。 有关详细信息，请参阅[创建外部授权处理程序](https://help.adobe.com/en_US/livecycle/11.0/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-6f26.2.html)。
 
 * **将策略集保留为有限数：**&#x200B;有几个因素会导致策略和策略集不断增长。 一些常见因素包括：
 

@@ -4,13 +4,25 @@ description: 尽管SPA编辑器仍受Adobe支持，但请了解它弃用对您�
 feature: Developing
 role: Admin, Leader, User, Developer
 exl-id: ea6e46ee-4a90-4236-8d93-292a4dda4dc0
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '910'
-ht-degree: 16%
-
+source-wordcount: '1049'
+ht-degree: 15%
 ---
-
 
 # SPA 编辑器弃用 {#spa-editor-deprecation}
 
@@ -22,27 +34,27 @@ Adobe已在AEM 6.5的[版本6.5.23，](/help/release-notes/release-notes.md#spa-
 
 ## 弃用的详细信息 {#details}
 
-弃用SPA编辑器&#x200B;**并不意味着立即删除**，如果您有现有的实施，**只要它符合您的需求，就可以继续使用。**&#x200B;但是，请注意其弃用的以下影响。
+弃用SPA编辑器&#x200B;**并不意味着立即删除**，如果您有现有的实施，**只要它符合您的需要，您就可以继续使用。** 但是，请注意其弃用的以下影响。
 
 * 今后，Adobe将仅解决P1和P2问题和安全漏洞。
 * 未来不会再对其SDK进行任何开发、增强或更新。
 
 弃用意味着以下SDK现在处于功能冻结状态。
 
-* [AEM项目原型](https://github.com/adobe/aem-project-archetype/)
+* [AEM 项目原型模板](https://github.com/adobe/aem-project-archetype/)
 * [AEM SPA项目核心](https://github.com/adobe/aem-spa-project-core)
 * [AEM SPA页面模型管理器](https://github.com/adobe/aem-spa-page-model-manager)
 * [AEM SPA组件映射](https://github.com/adobe/aem-spa-component-mapping)
-* [AEM SPA React 可编辑组件](https://github.com/adobe/aem-react-editable-components)
-   * [AEM React核心组件](https://github.com/adobe/aem-react-core-wcm-components)
-   * [AEM React核心组件库](https://github.com/adobe/aem-react-core-wcm-components-base)
-   * [AEM React核心组件SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
-   * [AEM React核心组件示例](https://github.com/adobe/aem-react-core-wcm-components-examples)
+* [AEM SPA React可编辑组件](https://github.com/adobe/aem-react-editable-components)
+  * [AEM React核心组件](https://github.com/adobe/aem-react-core-wcm-components)
+  * [AEM React核心组件库](https://github.com/adobe/aem-react-core-wcm-components-base)
+  * [AEM React核心组件SPA](https://github.com/adobe/aem-react-core-wcm-components-spa)
+  * [AEM React核心组件示例](https://github.com/adobe/aem-react-core-wcm-components-examples)
 * [AEM SPA Angular可编辑组件](https://github.com/adobe/aem-angular-editable-components)
-   * [AEM Angular核心组件](https://github.com/adobe/aem-angular-core-wcm-components)
-   * [AEM Angular核心组件库](https://github.com/adobe/aem-angular-core-wcm-components-base)
-   * [AEM Angular核心组件SPA](https://github.com/adobe/aem-angular-core-wcm-components-spa)
-   * [AEM Angular核心组件示例](https://github.com/adobe/aem-angular-core-wcm-components-examples)
+  * [AEM Angular核心组件](https://github.com/adobe/aem-angular-core-wcm-components)
+  * [AEM Angular核心组件库](https://github.com/adobe/aem-angular-core-wcm-components-base)
+  * [AEM Angular核心组件SPA](https://github.com/adobe/aem-angular-core-wcm-components-spa)
+  * [AEM Angular核心组件示例](https://github.com/adobe/aem-angular-core-wcm-components-examples)
 * [AEM SPA值可编辑组件](https://github.com/mavicellc/aem-vue-editable-components)
 
 ## SPA编辑器的替代项 {#alternatives}
@@ -50,10 +62,10 @@ Adobe已在AEM 6.5的[版本6.5.23，](/help/release-notes/release-notes.md#spa-
 最适合替换SPA Editor的替换取决于您的项目需求。
 
 * **[通用编辑器](/help/sites-developing/universal-editor/introduction.md)**&#x200B;是直接替换SPA编辑器的最佳工具。
-   * 通用编辑器也是一个可视编辑器，专门为分离实施而设计，融入Adobe从SPA编辑器获得的全部体验。
-   * 此外，还为AEM as a Cloud Service[发布了Universal Editor，因此除了Cloud Services之外，还支持AMS和内部部署用例。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)
+  * 通用编辑器也是一个可视编辑器，专门为分离实施而设计，融入Adobe从SPA编辑器获得的全部体验。
+  * 此外，还为AEM as a Cloud Service](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/introduction)发布了Universal Editor，因此除了Cloud Services之外，还支持AMS和内部部署用例。[
 * **[内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)**&#x200B;是首选基于表单的编辑器的替代方法。
-   * 将内容结构化为内容片段而非页面时，内容片段编辑器最合适。
+  * 将内容结构化为内容片段而非页面时，内容片段编辑器最合适。
 
 使用内容片段结构化内容不排除使用通用编辑器作为可视编辑器，并且两个编辑器都可以一起使用。
 
@@ -62,18 +74,18 @@ Adobe已在AEM 6.5的[版本6.5.23，](/help/release-notes/release-notes.md#spa-
 通用编辑器具有许多优势，因此迁移到它对于新项目是一个很好的解决方案。
 
 * **可视化编辑：**&#x200B;与SPA编辑器类似，作者可以在预览中直接编辑内容，并立即查看其更改如何影响访客体验。
-* **面向未来：** AEM 的路线图优先将通用编辑器作为可视化编辑器。采用这个编辑器可以确保获得最新的创新和增强功能。
+* **面向未来：** AEM 的路线图优先将通用编辑器作为可视化编辑器。 采用这个编辑器可以确保获得最新的创新和增强功能。
 * **更简单的集成：**&#x200B;使用通用编辑器不需要 AEM 专用的 SDK，从而减少了技术栈锁定。
 * **自带应用程序：**&#x200B;通用编辑器支持任何 Web 框架或架构，无需复杂的重构即可采用。
-* **可扩展性：**&#x200B;通用编辑器获益于一个强大的[扩展框架，](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)包括与生成式 AI、Workfront 等的集成。
+* **可扩展性：**&#x200B;通用编辑器获益于一个强大的[扩展框架，](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/implementing/developing/universal-editor/extending)包括与生成式 AI、Workfront 等的集成。
 
 没有从SPA编辑器直接迁移到通用编辑器的路径。 这是由于两种技术之间存在根本差异。
 
 * 通用编辑器不重新引入模板编辑器、样式系统或响应式网格等功能。
-   * 在Edge Delivery Services或Headless项目中，现在可以使用精简前端CSS和JS更高效地处理这些用例。
+  * 在Edge Delivery Services或Headless项目中，现在可以使用精简前端CSS和JS更高效地处理这些用例。
 * 由于通用编辑器是editor-as-a-service，因此它不允许实施者将CSS或JS插入到组件对话框中。
-   * 这阻止了页面编辑器中自动转换组件对话框的功能。
-   * 这涉及到对话框的许多区域，例如自定义小组件、字段验证、显示/隐藏规则和基于模板的自定义。
+  * 这阻止了页面编辑器中自动转换组件对话框的功能。
+  * 这涉及到对话框的许多区域，例如自定义小组件、字段验证、显示/隐藏规则和基于模板的自定义。
 
 考虑到这些技术差异，Adobe的建议是：
 

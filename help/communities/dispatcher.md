@@ -9,13 +9,20 @@ exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '687'
 ht-degree: 15%
-
 ---
-
 # 为社区配置Dispatcher {#configuring-dispatcher-for-communities}
 
 ## AEM Communities {#aem-communities}
@@ -24,9 +31,9 @@ ht-degree: 15%
 
 了解您的特定部署和站点设计所需的内容
 
-* 联系[客户关怀团队](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)
+* 联系[客户关怀团队](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)
 
-另请参阅主[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)。
+另请参阅主[Dispatcher文档](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
 
 ## Dispatcher缓存 {#dispatcher-caching}
 
@@ -42,11 +49,11 @@ AEM Communities的Dispatcher缓存让Dispatcher能够为社区站点的页面提
 
 ### 要求 {#requirements}
 
-* Dispatcher版本4.1.2或更高版本（有关最新版本，请参阅[安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=zh-Hans)）
+* Dispatcher版本4.1.2或更高版本（有关最新版本，请参阅[安装Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html)）
 * [ACS AEM Commons包](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
-   * 版本3.3.2或更高版本
-   * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` OSGi配置
+  * 版本3.3.2或更高版本
+  * `ACS AEM Commons - Dispatcher Cache Control Header - Max Age` OSGi配置
 
 ### 配置 {#configuration}
 
@@ -54,7 +61,7 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 * 从[Web控制台](../../help/sites-deploying/configuring-osgi.md)。
 
-   * 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
+  * 例如，[http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * 找到`ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
 * 选择“+”图标以创建连接配置。
@@ -69,7 +76,7 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 ## Dispatcher筛选器 {#dispatcher-filters}
 
-`dispatcher.any`文件的/filter部分记录在[配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)中。
+`dispatcher.any`文件的/filter部分记录在[配置对内容的访问 — /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)中。
 
 本节介绍社区功能正常运行可能需要的条目。
 
@@ -79,7 +86,7 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 另请参阅：
 
-* [Dispatcher 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=zh-Hans)
+* [Dispatcher 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)
 
 >[!NOTE]
 >
@@ -89,7 +96,7 @@ OSGi配置&#x200B;**ACS AEM Commons - Dispatcher缓存控制标头 — Max Age**
 
 >[!CAUTION]
 >
->请参阅 [Dispatcher 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=zh-Hans)以了解使用 Dispatcher 限制访问时的更多注意事项。 有关 AEM 安装的其他安全详细信息，另请阅读 [AEM 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)。
+>请参阅 [Dispatcher 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)以了解使用 Dispatcher 限制访问时的更多注意事项。 有关 AEM 安装的其他安全详细信息，另请阅读 [AEM 安全检查清单](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
 >
 
 应将以下条目添加到/filter部分的末尾，尤其是在所有被拒绝的条目之后。

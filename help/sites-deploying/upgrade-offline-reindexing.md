@@ -9,7 +9,18 @@ feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1384'
 ht-degree: 2%
@@ -162,7 +173,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 如果存在MongoMK，则如果在更靠近MongoDB实例的实例中执行此步骤，则可以加快此进程。 如果在同一台计算机上运行，则可以避免网络开销。
 
-有关索引[&#128279;](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)的Oak-run文档中可找到其他技术详细信息。
+有关索引](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html)的[Oak-run文档中可找到其他技术详细信息。
 
 ### 导入索引 {#importing-indexes}
 
@@ -178,7 +189,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 ### 准备Runbook并试运行 {#prepare-a-runbook-and-trial-run}
 
-建议先准备[runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=zh-Hans#building-the-upgrade-and-rollback-runbook)并执行一些试验，然后再在生产环境中运行升级。
+建议先准备[runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook)并执行一些试验，然后再在生产环境中运行升级。
 
 ### 带脱机索引的文档遍历模式 {#doc-traversal-mode-with-offline-indexing}
 

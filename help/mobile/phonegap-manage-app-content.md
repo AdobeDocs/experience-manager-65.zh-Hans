@@ -9,13 +9,17 @@ exl-id: 9d350935-129a-40d3-89f4-2e6f69676e5e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '685'
-ht-degree: 0%
-
+source-wordcount: '692'
+ht-degree: 2%
 ---
-
 # 创建和管理应用程序内容{#creating-and-managing-app-content}
 
 {{ue-over-mobile}}
@@ -28,7 +32,7 @@ ht-degree: 0%
 >
 >**预修课程**：
 >
->在[部署和维护](/help/sites-deploying/deploy.md)中，开发人员熟悉Adobe Experience Manager (AEM)中的系统组件和模板。
+>在[部署和维护](/help/sites-deploying/deploy.md)中，开发人员已熟悉Adobe Experience Manager (AEM)中的系统组件和模板。
 
 ## “管理页面内容”拼贴 {#the-manage-page-content-tile}
 
@@ -54,13 +58,13 @@ ht-degree: 0%
 
 ## “管理内容包”图块 {#the-manage-content-packages-tile}
 
-在此，*AEM管理员*&#x200B;可以快速轻松地更新其应用程序以提供引人入胜的体验和最新内容，从而促进品牌参与并实现业务目标，而无需重新提交开发人员或应用商店。
+在此，*AEM管理员*&#x200B;可以快速轻松地更新他们的应用，以提供引人入胜的体验和最新内容，从而推动品牌参与并实现业务目标，而无需重新提交开发人员或应用商店。
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
 一旦&#x200B;*AEM作者*&#x200B;通过“管理内容”拼贴添加或修改了内容，*AEM管理员*&#x200B;就可以通过“内容包”更新将这些更改推送到客户。
 
-使用“内容包”操作，*AEM Author*&#x200B;可以创建和编辑页面内容，同时开发团队对Host Application设计和实现进行更改，包括导航、样式、服务器端逻辑、模板和组件，然后将这些更改从OTA推送到客户，而无需重新提交到各个商店进行分发。
+使用“内容包”操作，*AEM作者*&#x200B;可以创建和编辑页面内容，同时开发团队可以对Host Application设计和实现进行更改，包括导航、样式、服务器端逻辑、模板和组件，然后将这些更改从OTA推送到客户，而无需重新提交到各个商店进行分发。
 
 **发布新内容或更新内容**
 
@@ -84,7 +88,7 @@ ht-degree: 0%
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
-准备使用Content Sync OTA向应用程序用户提供新内容时，请选择&#x200B;**Publish**，如下所示。
+准备使用Content Sync OTA向应用程序用户提供新内容时，请选择&#x200B;**发布**，如下所示。
 
 ![chlimage_1-166](assets/chlimage_1-166.png)
 

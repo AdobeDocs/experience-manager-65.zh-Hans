@@ -8,13 +8,29 @@ exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 solution: Experience Manager, Experience Manager Forms
 feature: Release Information
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: c21ccc2b-e0c8-4853-bf41-f12259ed93f8
+    internal-label: Release information
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '738'
 ht-degree: 49%
-
 ---
-
 # 新增功能摘要 |AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 | 产品 | Adobe Experience Manager 6.5 |
@@ -25,7 +41,7 @@ ht-degree: 49%
 
 ## Adobe Experience Manager 6.5 Forms Service Pack 19 (6.5.19.0)中包含的内容
 
-Experience Manager 6.5.19.0包括自2019年4月6.5首次发布以来发布的新功能、关键客户请求的增强功能、错误修复以及性能、稳定性和安全性改进。 在Experience Manager 6.5上[安装此Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans)。
+Experience Manager 6.5.19.0包括自2019年4月6.5首次发布以来发布的新功能、关键客户请求的增强功能、错误修复以及性能、稳定性和安全性改进。 在Experience Manager 6.5上[安装此Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html)。
 
 ### 新增功能
 
@@ -33,13 +49,13 @@ Experience Manager 6.5.19.0包括自2019年4月6.5首次发布以来发布的新
 
 添加了垂直选项卡、条款和条件以及复选框，以增强表单的可伸缩性。
 
-* **[复选框组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html?lang=zh-Hans)**：基于核心组件的自适应表单现在包含复选框组件。 通过它，用户可二选一，即选择或取消选择特定选项。 它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。 复选框是一个常见的表单元素，用于提供是/否或真/假选择。
+* **[复选框组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/checkbox.html)**：基于核心组件的自适应表单现在包含复选框组件。 通过它，用户可二选一，即选择或取消选择特定选项。 它一般显示为一个小框，单击或点按它即可在选中和取消选中两种状态之间切换。 复选框是一个常见的表单元素，用于提供是/否或真/假选择。
 
-* **[条款和条件组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html?lang=zh-Hans)**：基于核心组件的自适应表单现在包含条款和条件组件。 通过它，表单作者可在表单中引入一个特定的部分，其中为用户展示与使用服务、产品或平台相关的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
+* **[条款和条件组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/terms-and-conditions.html)**：基于核心组件的自适应表单现在包含条款和条件组件。 通过它，表单作者可在表单中引入一个特定的部分，其中为用户展示与使用服务、产品或平台相关的条款、条件或法律协议。 此组件旨在通知用户其提交表单即表示同意的规则、法规和义务。
 
   ![纵向选项卡、条款与条件及复选框组件](/help/forms/using/assets/forms-components.png)
 
-* **[垂直选项卡组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html?lang=zh-Hans)**：基于核心组件的自适应表单现在可将表单内容整理到选项卡垂直列表中，从而提供结构化的、可导航的布局。 在表单中使用纵向选项卡可通过简化导航并改进表单内容的组织而增强整体用户体验，特别是在表单包含多个部分或复杂信息的情况下。
+* **[垂直选项卡组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/adaptive-forms-components/vertical-tabs.html)**：基于核心组件的自适应表单现在可将表单内容整理到选项卡垂直列表中，从而提供结构化的、可导航的布局。 在表单中使用纵向选项卡可通过简化导航并改进表单内容的组织而增强整体用户体验，特别是在表单包含多个部分或复杂信息的情况下。
 
 #### AEM Forms Designer的64位版本
 
@@ -47,7 +63,7 @@ Experience Manager 6.5.19.0包括自2019年4月6.5首次发布以来发布的新
 
 #### 将自适应Forms连接到Microsoft® SharePoint列表
 
-AEM Forms提供开箱即用的集成，允许您将表单数据直接提交到SharePoint列表[&#128279;](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)，从而您可以使用SharePoint的列表功能。 您可以将 Microsoft® SharePoint 列表配置为表单数据模型的数据源，并使用“通过表单数据模型提交”操作将自适应表单与 SharePoint 列表相连接。
+AEM Forms提供开箱即用的集成，允许您将表单数据直接提交到SharePoint列表](/help/forms/using/configuring-submit-actions.md#submit-to-microsoft&reg;-sharepoint-list)，从而您可以使用SharePoint的列表功能。 [您可以将 Microsoft® SharePoint 列表配置为表单数据模型的数据源，并使用“通过表单数据模型提交”操作将自适应表单与 SharePoint 列表相连接。
 
 #### 支持为自适应表单片段配置记录文档属性
 
@@ -66,7 +82,7 @@ XMLFM的64位迭代带来了更高的性能、可扩展性和更精细的内存�
 
 ## 安装服务包
 
-此Service Pack为JEE上的AEM Forms和OSGi上的AEM Forms带来了新功能和错误修复。 与以前的Service Pack相比，安装说明发生了更改。有关安装说明，请参阅[AEM Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans)。
+此Service Pack为JEE上的AEM Forms和OSGi上的AEM Forms带来了新功能和错误修复。 与以前的Service Pack相比，安装说明发生了更改。有关安装说明，请参阅[AEM Forms Service Pack安装说明](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en)。
 
 
 
@@ -132,7 +148,7 @@ There are several improvements in the Web channel layout auto-generated using th
 
 ### Use Adobe Sign's cloud-based digital signatures in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Cloud-based digital signatures](https://helpx.adobe.com/cn/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
+[Cloud-based digital signatures](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) or remote signatures are a new generation of digital signatures that work across desktop, mobile, and the web — and meet the highest levels of compliance and assurance for signer authentication. You can now [sign an Adaptive Form](../../forms/using/working-with-adobe-sign.md) with Cloud-based digital signatures.
 
 #### Embed an Adaptive Form or Interactive Communication in AEM Sites Single Page Applications {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 

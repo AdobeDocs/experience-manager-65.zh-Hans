@@ -12,20 +12,33 @@ autotag-review: '2026-05-18T18:39:42.457Z'
 TQID: 'https://experienceleague.adobe.com/f9-0rO4QHX7kbx7xwptmuOW1W7WzduM3tOlL2YgHXxI'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ed762d86-a04b-452b-a08f-86359bb8ff27
+    internal-label: Configuration and operations
+subfeature_v2:
+  - id: e0d8c871-755b-4042-bb9e-9b9a2648e9fe
+    internal-label: Accessibility
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
 topic_v2:
   - id: cc72dcf1-72e1-48cc-b434-e7c27d62d67c
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Accessibility
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 647
+source-wordcount: '666'
 ht-degree: 0%
-
 ---
-
 # [!DNL Dynamic Media]中的辅助功能 {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media]在整个创作用户界面中支持键盘控制和辅助技术，例如JAWS和NVDA屏幕阅读器。
@@ -44,10 +57,10 @@ ht-degree: 0%
 * 在热点编辑器中，您可以使用某些自定义按键（如箭头键）与复杂的用户界面元素交互，以重新定位热点。
 * 在交互式视频编辑器中，您可以使用`Spacebar`选择图像并将其添加到区段中。 此外，您可以使用`Backspace`键从&#x200B;**[!UICONTROL Content]**&#x200B;选项卡中删除所选项目。 此外，根据需要按`Tab`功能可在页面上的交互元素之间导航。
 * 在图像裁切/智能裁切编辑器中，您可以执行以下操作：
-   * 使用箭头键裁切框架大小或重新定位图像，或同时使用两者。
-   * 第一个`Tab`停止点突出显示整个图像帧。 然后，可以使用键盘上的箭头键重新定位框架。
-   * 接下来的四个`Tab`句点是该帧的四个角。 将焦点置于框架角上时，该角将突出显示。 同样，您可以使用键盘上的箭头键移动焦点角。
-请参阅[编辑单个图像的智能裁剪或智能色板](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
+  * 使用箭头键裁切框架大小或重新定位图像，或同时使用两者。
+  * 第一个`Tab`停止点突出显示整个图像帧。 然后，可以使用键盘上的箭头键重新定位框架。
+  * 接下来的四个`Tab`句点是该帧的四个角。 将焦点置于框架角上时，该角将突出显示。 同样，您可以使用键盘上的箭头键移动焦点角。
+    请参阅[编辑单个图像的智能裁剪或智能色板](/help/assets/image-profiles.md#editing-the-smart-crop-or-smart-swatch-of-a-single-image)
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
@@ -65,12 +78,12 @@ ht-degree: 0%
 
 所有开箱即用的[!DNL Dynamic Media]查看器组件都支持客户的键盘辅助功能。
 
-请参阅Dynamic Media查看器参考指南中的[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html?lang=zh-Hans)。
+请参阅Dynamic Media查看器参考指南中的[键盘辅助功能和导航](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/c-keyboard-accessibility.html)。
 
 ## [!DNL Dynamic Media]个查看者中的辅助技术支持 {#assistive-technology-support-for-dm-viewers}
 
 所有[!DNL Dynamic Media]查看器组件都支持ARIA（可访问的富互联网应用程序）角色和属性，以改进与屏幕阅读器等辅助技术的集成。
-请参阅Dynamic Media查看器参考指南中的任何自定义查看器主题中的&#x200B;**辅助技术支持**&#x200B;帮助主题。 例如，对于视频查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html?lang=zh-Hans)；对于交互式图像查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html?lang=zh-Hans#viewers-for-aem-assets-only)。
+请参阅Dynamic Media查看器参考指南中的任何自定义查看器主题中的**辅助技术支持**&#x200B;帮助主题。 例如，对于视频查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/r-html5-video-viewer-20-assistive.html)；对于交互式图像查看器，请参阅[辅助技术支持](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/c-html5-aem-interactive-image-assistive.html#viewers-for-aem-assets-only)。
 
 ## Dynamic Media中的隐藏式字幕支持 {#closed-caption-support}
 
@@ -81,4 +94,4 @@ Dynamic Media支持传送带隐藏式字幕的视频和自适应视频集。 字
 >[!MORELIKETHIS]
 >
 >* Adobe解决方案的[辅助功能](https://www.adobe.com/accessibility.html)
->*  [!DNL Experience Manager Assets][&#128279;](/help/assets/accessibility.md)中的辅助功能
+>*  [!DNL Experience Manager Assets]](/help/assets/accessibility.md)中的[辅助功能

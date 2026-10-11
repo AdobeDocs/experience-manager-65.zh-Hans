@@ -10,13 +10,22 @@ exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: db7830895c8a2d1b7228dc4780296d43f15776df
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6016'
+source-wordcount: '6022'
 ht-degree: 2%
-
 ---
-
 # 操作仪表板 {#operations-dashboard}
 
 ## 简介 {#introduction}
@@ -107,13 +116,13 @@ AEM 6中有两种类型的运行状况检查：
 
    * **名称：** `sling:resourceType`
 
-      * **类型：** `String`
-      * **值：** `granite/operations/components/mbean`
+     * **类型：** `String`
+     * **值：** `granite/operations/components/mbean`
 
    * **名称：** `resource`
 
-      * **类型：** `String`
-      * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+     * **类型：** `String`
+     * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
 
    >[!NOTE]
    >
@@ -164,19 +173,19 @@ AEM 6中有两种类型的运行状况检查：
 
    * **名称：** `Composite Health Check`
 
-      * **类型：** `nt:unstructured`
+     * **类型：** `nt:unstructured`
 
    具有以下属性：
 
    * **名称：** `sling:resourceType`
 
-      * **类型：** `String`
-      * **值：** `granite/operations/components/mbean`
+     * **类型：** `String`
+     * **值：** `granite/operations/components/mbean`
 
    * **名称：** `resource`
 
-      * **类型：** `String`
-      * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+     * **类型：** `String`
+     * **值：** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
 
    >[!NOTE]
    >
@@ -452,7 +461,7 @@ Explain查询是一种用于说明Oak如何执行查询的工具。 通过从AEM
 
 索引管理器的目的是促进索引管理，如维护索引或查看索引的状态。
 
-通过从“欢迎屏幕”转到&#x200B;**工具 — 操作 — 诊断**，然后单击&#x200B;**索引管理器**&#x200B;按钮可访问该区域。
+通过从“欢迎屏幕”转到&#x200B;**工具 — 操作 — 诊断**，然后单击**索引管理器**按钮可访问该区域。
 
 也可以通过以下URL直接访问它： `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
@@ -495,7 +504,7 @@ UI可用于过滤表中的索引，方法是在屏幕左上角的搜索框中键
 1. **项目清除**&#x200B;维护任务，位于&#x200B;**每周维护时段**&#x200B;菜单下；使用&#x200B;**添加**&#x200B;选项。
 1. 位于&#x200B;**每周维护时段**&#x200B;菜单下的&#x200B;**清除临时任务**&#x200B;维护任务；使用&#x200B;**添加**&#x200B;选项。
 
-每日维护窗口的默认时间是上午2:00到上午5:00。配置为在每周维护时段中运行的任务在星期六上午1:00到凌晨2:00之间运行。
+日常维护时段默认时间是凌晨2:00至凌晨5:00。配置为在每周维护窗口中运行的任务在星期六凌晨1:00到凌晨2:00之间运行。
 
 您还可以通过按任意两个维护卡上的齿轮图标来配置时间安排：
 
@@ -660,7 +669,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
 
 >[!NOTE]
 >
->您也可以[观看此视频](https://video.tv.adobe.com/v/40160?captions=chi_hans)，了解系统概述仪表板的简介。
+>您也可以[观看此视频](https://video.tv.adobe.com/v/21340)，了解系统概述仪表板的简介。
 
 ### 如何访问 {#how-to-access}
 
@@ -689,7 +698,7 @@ src/main/java/com/adobe/granite/samples/maintenance/impl/DeleteTempFilesTask.jav
      <li>处于“严重”状态的检查列表</li>
      <li>处于警告状态的检查列表</li>
     </ul> </td>
-   <td>以可视方式显示：<br />
+   <td>以可视方式指示：<br />
     <ul>
      <li>严重检查的红色标记</li>
      <li>用于警告检查的橙色标记</li>

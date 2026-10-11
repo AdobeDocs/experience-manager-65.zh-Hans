@@ -1,20 +1,27 @@
 ---
 title: 工作流步骤参考
-
 description: 有关Adobe Experience Manager中的工作流，请参阅此步骤参考。
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3288'
 ht-degree: 2%
@@ -190,7 +197,7 @@ function check(){
 
 >[!NOTE]
 >
->请参阅[OR拆分步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html?lang=zh-Hans#use-a-variable)
+>请参阅[OR拆分步骤](https://experienceleague.adobe.com/docs/experience-manager-65/developing/extending-aem/extending-workflows/using-variables-in-aem-workflows.html#use-a-variable)
 
 使用OR拆分进行![分支](assets/variables_orsplit_new.png)
 
@@ -277,7 +284,7 @@ function check(){
 
 要创建对话框，必须创建对话框：
 
-* 确定所得数据在有效负载[&#128279;](#dialog-participant-step-storing-data-in-the-payload)中的存储位置。
+* 确定所得数据在有效负载](#dialog-participant-step-storing-data-in-the-payload)中的[存储位置。
 * [定义对话框；包括定义用于收集和保存数据的字段](#dialog-participant-step-dialog-definition)。
 
 #### 对话框参与者步骤 — 在有效负荷中存储数据 {#dialog-participant-step-storing-data-in-the-payload}
@@ -506,7 +513,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 
 >[!CAUTION]
 >
->本节介绍用于页面创作[&#128279;](/help/sites-authoring/default-components-foundation.md#form)的基础组件的Forms部分。
+>本节介绍用于页面创作](/help/sites-authoring/default-components-foundation.md#form)的基础组件的[Forms部分。
 
 #### 表单参与者步骤 — 配置 {#form-participant-step-configuration}
 

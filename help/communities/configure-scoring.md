@@ -10,13 +10,20 @@ exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '932'
-ht-degree: 0%
-
+source-wordcount: '1011'
+ht-degree: 6%
 ---
-
 # 评分和徽章要点 {#scoring-and-badges-essentials}
 
 AEM Communities评分和徽章功能可识别并奖励社区成员。
@@ -33,7 +40,7 @@ AEM Communities评分和徽章功能可识别并奖励社区成员。
 
 >[!CAUTION]
 >
->在CRXDE Lite中可见的实施结构可能会发生更改。
+>CRXDE Lite中可见的实施结构可能会发生更改。
 
 ## 显示徽章 {#displaying-badges}
 
@@ -106,15 +113,15 @@ AEM Communities评分和徽章功能可识别并奖励社区成员。
 
 * 从Web控制台
 
-   * 在&#x200B;**状态**&#x200B;菜单下
-   * 选择&#x200B;**日志文件**
-   * 搜索您的日志文件名，如`scoring-debug`
+  * 在&#x200B;**状态**&#x200B;菜单下
+  * 选择&#x200B;**日志文件**
+  * 搜索您的日志文件名，如`scoring-debug`
 
 * 在服务器的本地磁盘上
 
-   * 日志文件位于&lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
+  * 日志文件位于&lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
 
-   * 例如，`.../crx-quickstart/logs/scoring-debug.log`
+  * 例如，`.../crx-quickstart/logs/scoring-debug.log`
 
 ![评分日志](assets/scoring-log.png)
 
@@ -126,7 +133,7 @@ AEM Communities评分和徽章功能可识别并奖励社区成员。
 
 作者上的&#x200B;**JSRP**：在作者环境中进行试验会导致UGC只在作者环境中可见。
 
-发布&#x200B;**上的** JSRP：同样，如果在发布环境中进行测试，则必须在发布实例上访问具有管理权限的CRXDE Lite。 如果发布实例在[生产模式](/help/sites-administering/production-ready.md) （nosamplecontent运行模式）下运行，则需要[启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md)。
+发布&#x200B;**JSRP**：同样，如果在发布环境中进行测试，则必须在发布实例上以管理权限访问CRXDE Lite。 如果发布实例在[生产模式](/help/sites-administering/production-ready.md) （nosamplecontent运行模式）下运行，则需要[启用CRXDE Lite](/help/sites-administering/enabling-crxde-lite.md)。
 
 JSRP上UGC的基本位置为`/content/usergenerated/asi/jcr/`。
 
@@ -134,8 +141,8 @@ JSRP上UGC的基本位置为`/content/usergenerated/asi/jcr/`。
 
 以下API可供使用：
 
-* [com.adobe.cq.social.scoring.api在6.3中](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)
-* [com.adobe.cq.social.badging.api（在6.3中）](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)
+* [com.adobe.cq.social.scoring.api在6.3中](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
+* [com.adobe.cq.social.badging.api在6.3中](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)
 
 开发人员可以从Adobe存储库中找到已安装功能包的最新Javadoc。 请参阅[使用Maven for Communities ： Javadocs](/help/communities/maven.md#javadocs)。
 
@@ -143,7 +150,7 @@ JSRP上UGC的基本位置为`/content/usergenerated/asi/jcr/`。
 
 ### 示例设置 {#example-setup}
 
-存储库数据的屏幕截图来自为两个不同AEM站点上的论坛设置评分和徽章：
+存储库数据的屏幕截图来自为位于两个不同AEM网站的论坛设置评分和徽章：
 
 1. 具有&#x200B;*唯一ID的AEM站点*（使用向导创建的社区站点）：
 
@@ -167,7 +174,7 @@ JSRP上UGC的基本位置为`/content/usergenerated/asi/jcr/`。
    * 找到论坛组件节点
 
      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
-(`sling:resourceType = social/forum/components/hbs/forum`)
+( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * 要显示徽章，请添加属性
 
@@ -175,7 +182,7 @@ JSRP上UGC的基本位置为`/content/usergenerated/asi/jcr/`。
 
    * 用户登录、创建论坛主题并获得“铜牌”
 
-1. 没有&#x200B;*唯一ID的AEM网站*：
+1. AEM网站&#x200B;*没有*&#x200B;唯一ID：
 
    * 使用[社区组件指南](/help/communities/components-guide.md)
    * 找到论坛页面节点
@@ -197,7 +204,7 @@ JSRP上UGC的基本位置为`/content/usergenerated/asi/jcr/`。
    * 找到论坛组件节点
 
      `/content/community-components/en/forum/jcr:content/content/forum`
-(`sling:resourceType = social/forum/components/hbs/forum`)
+( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * 要显示徽章，请添加属性
 
@@ -238,7 +245,7 @@ JSRP上UGC的基本位置为`/content/usergenerated/asi/jcr/`。
 
 `scoring`的子节点是评分规则名称。 因此，最佳做法是服务器上的评分规则名称具有全局唯一性。
 
-对于GeometrixxEngage站点，用户及其分数位于使用评分规则名称、社区站点的站点ID ( `engage-ba81p`)、唯一ID和用户的ID构建的路径中：
+对于Geometrixx Engage站点，用户及其分数位于使用评分规则名称、社区站点的站点ID ( `engage-ba81p`)、唯一ID和用户的ID构建的路径中：
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 

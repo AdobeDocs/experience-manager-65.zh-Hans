@@ -9,13 +9,21 @@ thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '941'
 ht-degree: 16%
-
 ---
-
 # 开发AEM Commerce {#develop}
 
 基于Commerce integration framework (CIF)为AEM开发AEM Commerce项目时，遵循与其他AEM项目相同的规则和最佳实践。 请先查看以下内容：
@@ -31,7 +39,7 @@ ht-degree: 16%
 
 >[!NOTE]
 >
->以下说明可帮助您使用具有适用于AEM 6.5的CIF为AEM设置本地AEM Commerce开发环境。 如果您使用的是AEM as a Cloud Service，请参阅[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html?lang=zh-Hans)文档。
+>以下说明可帮助您使用具有适用于AEM 6.5的CIF为AEM设置本地AEM Commerce开发环境。 如果您使用的是AEM as a Cloud Service，请参阅[AEM Commerce as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content-and-commerce/home.html)文档。
 
 适用于AEM 6.5 aka的AEM Commerce加载项。 CIF加载项可用于本地开发，并作为AEM包提供。 可以从[软件分发门户](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下载它作为功能包。
 

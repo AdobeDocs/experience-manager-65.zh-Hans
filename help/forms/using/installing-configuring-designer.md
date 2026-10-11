@@ -10,20 +10,35 @@ role: Admin, User, Developer
 feature: Forms Designer,Designer
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 solution: Experience Manager, Experience Manager Forms
-source-git-commit: 8f14518117b3aff1cdb2e033fbfe40d0a903d53f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 1af3c3d4-88d7-5e0f-813c-eb70824bfcdd
+    internal-label: Forms Designer
+  - id: 794033c1-20ea-55a4-a8a6-b1107e12deb0
+    internal-label: Designer
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '826'
-ht-degree: 0%
-
+source-wordcount: '969'
+ht-degree: 12%
 ---
-
 # 安装和配置Designer{#installing-and-configuring-designer}
 
 ## 先决条件 {#pre-requisites}
 
 +++ 对于64位AEM Forms Designer（推荐）
 
-* 安装64位版本的[Visual C++ 2019可再发行组件(x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)。 在开始安装之前，请确保已安装前面提到的可再分发运行时包。
+* 安装64位版本的[Visual C++ 2019可再发行组件(x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)。 在开始安装前，请确保已安装上述可再发行运行时包。
 * 具有管理员权限的用户可以安装或卸载AEM Forms Designer。
 * 运行64位AEM Forms Designer的系统必须安装OpenSSL3，特别是共享库`libcrypto-3-x64.dll`。\
   AEM Designer需要此库才能正常运行并计算&#x200B;**SHAHash**。
@@ -32,7 +47,7 @@ ht-degree: 0%
 
 +++ 对于32位AEM Forms Designer
 
-* 安装32位版本的[Visual C++ 2019可再发行组件(x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)。 在开始安装之前，请确保已安装前面提到的可再分发运行时包。
+* 安装32位版本的[Visual C++ 2019可再发行组件(x64)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170)。 在开始安装前，请确保已安装上述可再发行运行时包。
 * 具有管理员权限的用户可以安装或卸载AEM Forms Designer。
 
 +++
@@ -56,7 +71,7 @@ Designer作为独立安装程序提供，并且与WorkBench捆绑在一起。 �
    > 
    >* AEM 6.5 Forms Service Pack 20 (6.5.20.0)版本计划弃用32位Forms Designer。 Adobe建议您升级到64位Forms designer。
    >* 64位Forms Designer仅适用于AEM 6.5 Forms Service Pack 19 (6.5.19.0)或更高版本。
-   >* 从Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0)开始，Forms Designer版本也包含Service Pack版本。 例如，对于Service Pack 15，版本号为6.5.15.20221112.1.0。在此示例中，6.5.15是Service Pack版本。
+   >* 从Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0)开始，Forms Designer版本也包含Service Pack版本。 例如，对于Service Pack 15，版本号为6.5.15.20221112.1.0。 在此示例中，6.5.15是Service Pack版本。
 
 1. 通过双击setup.exe启动AEM Forms Designer安装程序。
 1. 继续并在Personalization屏幕上提供您的详细信息和序列号。
@@ -96,15 +111,15 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
 如果您使用的是独立的AEM Forms Designer安装程序，请执行以下步骤：
 
 1. 在安装&#x200B;**AEM Forms Designer6.5.16.0**&#x200B;之前，用户必须卸载任何以前的版本。
-1. 从AEM Forms表单发行页面下载并安装[AEM Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)。
-1. 成功安装&#x200B;**AEM Forms Designer6.5.15.0**&#x200B;后，通过双击下载的安装程序文件下载并安装[AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)。
+1. 从AEM Forms表单发行页面下载并安装[AEM Designer 6.5.15.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
+1. 成功安装&#x200B;**AEM Forms Designer6.5.15.0**&#x200B;后，通过双击下载的安装程序文件下载并安装[AEM Forms Designer 6.5.16.0](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)。
 
 +++
 
 +++**用户具有6.5.15.0AEM Forms Designer版本**&#x200B;时
 
 如果您使用的是独立的AEM Forms Designer安装程序，请执行以下步骤：
-1. 从[软件分发门户](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=zh-Hans)下载最新版本的AEM Forms Designer。
+1. 从[软件分发门户](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html)下载最新版本的AEM Forms Designer。
 1. 通过双击下载的安装程序文件来安装最新版本的AEM Forms Designer。
 
 +++
@@ -112,19 +127,18 @@ msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-***
 ## 常见问题解答 {#fandq}
 
 * **用户能否直接升级或安装64位设计器？**
-   * 可以，用户可以直接升级或安装64位设计器。 若要升级，请安装[SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip)设计器完整安装程序并应用后续设计器修补程序版本。
+  * 可以，用户可以直接升级或安装64位设计器。 若要升级，请安装[SP19](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/Designer-Patch/sp19_x64/aemforms_designer_6_5_0_wwe_win.zip)设计器完整安装程序并应用后续设计器修补程序版本。
 
-     >[!NOTE]
-     > 在升级到64位设计器之前，请先卸载32位设计器（如果存在）。
+    >[!NOTE]
+    > 在升级到64位设计器之前，请先卸载32位设计器（如果存在）。
 
 * **用户是否可以在其系统上同时安装32位和64位？**
-   * 不可以，32位和64位安装不能在同一台计算机上工作。 用户可以使用32位设计器或64位设计器。
+  * 不可以，32位和64位安装不能在同一台计算机上工作。 用户可以使用32位设计器或64位设计器。
 
 * **如何检查用户是否使用64位设计器或32位设计器？**
-   * 可通过两种方式检查Forms Designer版本：
+  * 可通过两种方式检查Forms Designer版本：
 
-      1. 打开Designer，转到“帮助”，单击“关于设计器”，您会看到设计器版本信息以及bits信息，例如，您会看到64位写入版本末尾，如下所示：
-
-         `6.5.21.20240522.1.161 | 64 bit`
-      1. 打开Designer，左上角显示一个品牌图标，其中包含带有产品名称的64位信息。
+    1. 打开Designer，转到“帮助”，单击“关于设计器”，您会看到设计器版本信息以及bits信息，例如，您会看到64位写入版本末尾，如下所示：
+       `6.5.21.20240522.1.161 | 64 bit`
+    1. 打开Designer，左上角显示一个品牌图标，其中包含带有产品名称的64位信息。
 

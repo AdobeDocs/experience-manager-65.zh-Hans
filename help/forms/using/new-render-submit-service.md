@@ -1,5 +1,5 @@
 ---
-title: 新渲染和提交服务
+title: 新的渲染和提交服务
 description: 在Workbench中定义渲染和提交服务，以根据从中访问XDP的设备将XDP表单渲染为HTML或PDF。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,27 +9,47 @@ exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
 solution: Experience Manager, Experience Manager Forms
 feature: HTML5 Forms,Adaptive Forms,Mobile Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 0%
-
+source-wordcount: '898'
+ht-degree: 1%
 ---
-
-# 新渲染和提交服务{#new-render-and-submit-service}
+# 新的渲染和提交服务{#new-render-and-submit-service}
 
 ## 简介 {#introduction}
 
-在Workbench中，当您定义`AssignTask`操作时，请指定特定表单(XDP或PDF表单)。 此外，通过操作配置文件指定一组渲染和提交服务。
+在Workbench中，当您定义`AssignTask`操作时，请指定特定表单（XDP或PDF表单）。 此外，通过操作配置文件指定一组渲染和提交服务。
 
 XDP可以呈现为PDF表单或HTML表单。 新功能包括：
 
-* 作为HTML呈现和提交XDP表单
-* 在桌面上以PDF身份呈现和提交XDP表单，并在移动设备(例如，iPad)上以HTML身份呈现和提交
+* 以HTML身份呈现和提交XDP表单
+* 在桌面上以PDF的形式呈现和提交XDP表单，在移动设备（例如，iPad）上以HTML的形式呈现和提交
 
-### 新的HTMLForms服务 {#new-html-forms-service}
+### 新的HTML Forms服务 {#new-html-forms-service}
 
-新的HTMLForms服务使用Forms中的新功能来支持将XDP表单渲染为HTML。 新的HTMLForms服务会公开以下方法：
+新的HTML Forms服务使用Forms中的新功能来支持将XDP表单渲染为HTML。 新的HTML Forms服务公开以下方法：
 
 ```java
 /*
@@ -70,7 +90,7 @@ public Map<String, Object> renderHTMLForm (TaskContext taskContext, String profi
 
 输出 — `outFormDoc`
 
-此方法模拟NewHTMLFormsService的`renderHTMLForm` API的精确行为。 它调用`generateFormURL` API以获取表单HTML呈现的URL。 然后，它使用以下一个或多个键值填充runtimeMap：
+此方法模拟NewHTMLFormsService的`renderHTMLForm` API的精确行为。 它调用`generateFormURL` API以获取表单的HTML演绎版的URL。 然后，它使用以下一个或多个键值填充runtimeMap：
 
 新建html表单= true
 
@@ -90,7 +110,7 @@ newHTMLFormURL =调用`generateFormURL` API后返回的URL。
 
 ## 默认呈现或提交进程，以及操作配置文件 {#default-render-or-submit-processes-and-action-profiles}
 
-利用默认呈现和提交服务，支持在桌面上呈现PDF，并在移动设备(iPad)上HTML。
+利用默认的呈现和提交服务，支持在桌面上呈现PDF，并支持在移动设备(iPad)上呈现HTML。
 
 ### 默认渲染表单 {#default-render-form}
 
@@ -135,7 +155,7 @@ newHTMLFormURL =调用`generateFormURL` API后返回的URL。
 * 渲染表单指南
 * 呈现PDF表单
 * 呈现HTML表单
-* 呈现新HTML表单（新）
+* 渲染新的HTML表单（新）
 * 默认渲染表单（新）
 
 等同于提交流程。
@@ -146,19 +166,19 @@ newHTMLFormURL =调用`generateFormURL` API后返回的URL。
 
 * 默认（使用新的“默认呈现/提交”进程呈现/提交）
 
-![gen_question_b_20](assets/gen_question_b_20.png) **流程设计器需要执行哪些操作才能在设备上以HTML方式呈现表单，并在桌面上以PDF方式呈现表单？**
+![gen_question_b_20](assets/gen_question_b_20.png) **流程设计器需要执行哪些操作，才能在设备上的HTML和桌面上的PDF中呈现表单？**
 
 没什么。 默认的“操作配置文件”是自动选择的，渲染模式也是自动处理的。
 
-![gen_question_b_20](assets/gen_question_b_20.png) **在桌面上HTML呈现表单时，需要执行哪些操作？**
+![gen_question_b_20](assets/gen_question_b_20.png) **若要在桌面上在HTML中呈现表单，需要执行哪些操作？**
 
-用户必须为默认配置文件选择“HTML”单选按钮。
+用户必须为默认配置文件选择HTML单选按钮。
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **更改默认操作配置文件行为是否会产生任何升级影响？**
 
 会，由于与默认操作配置文件关联的上次渲染和提交服务不同，因此这些服务被视为现有表单的自定义。 单击&#x200B;**恢复默认值**&#x200B;后，将改为设置默认渲染和提交服务。
 
-如果您修改了现有的渲染或提交PDF表单服务或创建了自定义服务（例如，custom1），现在希望将相同的功能用于HTML呈现。 您需要复制新的渲染或提交服务（如custom2）并将类似的自定义应用于这些服务。 现在，修改XDP的操作配置文件以开始使用custom2服务，而不是渲染或提交的custom1。
+如果您修改了现有的渲染或提交PDF Form服务或创建了自定义服务（例如custom1），现在希望将相同的功能用于HTML呈现。 您需要复制新的渲染或提交服务（如custom2）并将类似的自定义应用于这些服务。 现在，修改XDP的操作配置文件以开始使用custom2服务，而不是渲染或提交的custom1。
 
-要使表单在设备上以HTML呈现，以及在桌面上PDF呈现，流程设计者需要执行哪些操作？
-要使表单在设备上以HTML呈现，以及在桌面上PDF呈现，流程设计者需要执行哪些操作？
+要使表单在设备上在HTML中呈现，以及在桌面上在PDF中呈现，流程设计人员需要执行哪些操作？
+要使表单在设备上在HTML中呈现，以及在桌面上在PDF中呈现，流程设计人员需要执行哪些操作？

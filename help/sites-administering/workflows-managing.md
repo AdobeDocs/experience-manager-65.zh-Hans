@@ -9,13 +9,22 @@ exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '581'
 ht-degree: 4%
-
 ---
-
 # 管理对工作流的访问权限{#managing-access-to-workflows}
 
 根据用户帐户配置ACL以允许（或禁用）启动和参与工作流。
@@ -27,13 +36,13 @@ ht-degree: 4%
 * 您使用的是`admin`帐户
 * 该帐户已分配给默认组`workflow-users`：
 
-   * 此组拥有用户执行工作流操作所需的所有权限。
-   * 当帐户处于此组中时，它仅有权访问已启动的工作流。
+  * 此组拥有用户执行工作流操作所需的所有权限。
+  * 当帐户处于此组中时，它仅有权访问已启动的工作流。
 
 * 该帐户已分配给默认组`workflow-administrators`：
 
-   * 此组拥有特权用户监视和管理工作流所需的所有权限。
-   * 当帐户在此组中时，它可以访问所有工作流。
+  * 此组拥有特权用户监视和管理工作流所需的所有权限。
+  * 当帐户在此组中时，它可以访问所有工作流。
 
 >[!NOTE]
 >
@@ -54,7 +63,7 @@ ht-degree: 4%
 
 如果工作流模型存储在`/var/workflow/models`中，则您可以在文件夹上分配一个特定的ACL（仅与该工作流相关）：
 
-1. 在Web浏览器中打开CRXDE Lite(例如，[http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
+1. 在Web浏览器中打开CRXDE Lite（例如，[http://localhost:4502/crx/de](http://localhost:4502/crx/de)）。
 1. 在节点树中，为工作流模型文件夹选择节点：
 
    `/var/workflow/models`
@@ -66,7 +75,7 @@ ht-degree: 4%
    * **主体**： `content-authors`
    * **类型**：`Deny`
    * **权限**： `jcr:read`
-   * **rep：glob**：对特定工作流的引用
+   * **rep:glob**：引用特定工作流
 
    ![wf-108](assets/wf-108.png)
 
@@ -90,7 +99,7 @@ ht-degree: 4%
 
 然后，您可以将ACL添加到文件夹本身。
 
-1. 在Web浏览器中打开CRXDE Lite(例如，[http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
+1. 在Web浏览器中打开CRXDE Lite（例如，[http://localhost:4502/crx/de](http://localhost:4502/crx/de)）。
 1. 在节点树中，为工作流模型文件夹中的单个文件夹选择节点；例如：
 
    `/var/workflow/models/prototypes`
@@ -106,7 +115,7 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >与[将特定工作流模型的ACL应用于/var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)一样，您可以包含rep：glob以限制对特定工作流的访问。
+   >与[将特定工作流模型的ACL应用于/var/workflow/models](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models)一样，您可以包括rep:glob以限制对特定工作流的访问。
 
    ![wf-110](assets/wf-110.png)
 

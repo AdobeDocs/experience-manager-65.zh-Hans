@@ -1,21 +1,28 @@
 ---
 title: API指南
-
 description: AEM为开发应用程序提供的API文档
-
-
 contentOwner: Guillaume Carlino
 topic-tags: introduction
 audience: developing
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-
 docset: aem65
 exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 4%
@@ -44,11 +51,11 @@ AEM交付和内容管理API：
 
   * [JSON导出程序](/help/sites-developing/json-exporter.md)
   * [为组件启用 JSON 导出](/help/sites-developing/json-exporter-components.md)
-  * 有关详细信息，请参阅《开发用户指南》[&#128279;](/help/sites-developing/getting-started.md)中的组件部分
+  * 有关详细信息，请参阅《开发用户指南》](/help/sites-developing/getting-started.md)中的[组件部分
 
 * **Assets**： Assets HTTP API允许对Assets执行创建 — 读取 — 更新 — 删除(CRUD)操作，包括二进制文件、元数据、呈现版本和注释。 查看[AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
-* **内容片段** (CF)：在Assets HTTP API[&#128279;](/help/assets/assets-api-content-fragments.md)和AEM Assets API中支持[CF — 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
+* **内容片段** (CF)：在Assets HTTP API](/help/assets/assets-api-content-fragments.md)和[AEM Assets API中支持[CF — 内容片段](https://www.adobe.io/experience-manager/reference-materials/6-5/assets-api-content-fragments/index.html)
 
 以下外部资源仅供参考：
 

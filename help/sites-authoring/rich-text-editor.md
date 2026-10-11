@@ -5,21 +5,34 @@ exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '264'
-ht-degree: 35%
-
+source-wordcount: '294'
+ht-degree: 32%
 ---
-
 # 使用富文本编辑器创作内容 {#use-rich-text-editor-to-author-content}
 
-富文本编辑器 (RTE) 是将文本内容插入到 AEM 中的基本构建块。它是多个组件的基础，包括：
+富文本编辑器 (RTE) 是将文本内容插入到 AEM 中的基本构建块。 它是多个组件的基础，包括：
 
-* [文本](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/wcm-components/text)
-* [表格](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/wcm-components/text#table)
+* [文本](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text)
+* [表](https://experienceleague.adobe.com/en/docs/experience-manager-core-components/using/wcm-components/text#table)
 
-## 就地编辑  {#in-place-editing}
+## 就地编辑 {#in-place-editing}
 
 通过单击选择基于文本的组件，将像任何其他组件一样显示[组件工具栏](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)。
 

@@ -1,5 +1,5 @@
 ---
-title: 下载XFA或PDF表单模板
+title: 下载 XFA 或 PDF Forms 模板
 description: 您可以将表单从存储库导出到本地系统，并将下载的表单迁移到新存储库。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,28 @@ role: Admin,User
 exl-id: 5b7b9816-38c1-4780-b1fc-8184971f3772
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '311'
-ht-degree: 0%
-
+ht-degree: 5%
 ---
-
-# 下载XFA或PDF表单模板 {#download-an-xfa-or-a-pdf-form-template}
+# 下载 XFA 或 PDF Forms 模板 {#download-an-xfa-or-a-pdf-form-template}
 
 顾名思义，下载操作允许您将表单从存储库导出到本地系统。 与上传操作结合使用时，此操作可帮助您将表单从一个存储库迁移到另一个存储库。
 
@@ -23,7 +37,7 @@ ht-degree: 0%
 
 * 表单模板(XFA Forms)
 * PDF forms
-* 文档(平面PDF文件)
+* 文档（平面PDF文件）
 
 AEM Forms支持单独下载这些表单类型，或将其下载到包含一个或多个受支持表单的文件夹中。
 

@@ -10,18 +10,27 @@ exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2503'
 ht-degree: 3%
-
 ---
-
 # 创建工作流模型{#creating-workflow-models}
 
 >[!CAUTION]
 >
->有关经典UI的使用，请参阅[AEM 6.3文档](https://helpx.adobe.com/cn/experience-manager/6-3/help/sites-developing/workflows-models.html)以供参考。
+>有关经典UI的使用，请参阅[AEM 6.3文档](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/workflows-models.html)以供参考。
 
 您可以创建[工作流模型](/help/sites-developing/workflows.md#model)，以定义用户启动工作流时执行的一系列步骤。 您还可以定义模型属性，例如工作流是临时工作流还是使用多个资源。
 
@@ -33,7 +42,7 @@ ht-degree: 3%
 
 * 步骤&#x200B;**流程开始**&#x200B;和&#x200B;**流程结束**。
 这些表示工作流的开始和结束。 这些步骤是必需的，无法编辑/删除。
-* 名为&#x200B;**步骤1**&#x200B;的示例&#x200B;**参与者**&#x200B;步骤。
+* 名为&#x200B;**步骤1**&#x200B;的示例&#x200B;**参与者**步骤。
 此步骤配置为向工作流发起者分配工作项。 编辑或删除此步骤，并根据需要添加步骤。
 
 使用编辑器创建工作流：
@@ -87,7 +96,7 @@ ht-degree: 3%
 * 最初，模型及其属性以只读模式显示为：
   * 默认工作流位于`/libs`中
   * 旧版工作流位于 `/etc`
-    选择&#x200B;**编辑**&#x200B;将：
+    选择**编辑**&#x200B;将：
 * 将工作流的副本放入`/conf`
 * 使步骤浏览器可用
 * 允许您进行更改
@@ -199,7 +208,7 @@ ht-degree: 3%
 
 1. 将`Workflow : DAM`添加到&#x200B;**[!UICONTROL 标记]**&#x200B;字段。 使用复选框（勾号）确认选择。
 
-1. 使用&#x200B;**[!UICONTROL 保存并关闭]**&#x200B;确认添加标记。
+1. 使用&#x200B;**[!UICONTROL 保存并关闭]**确认添加标记。
    ![编辑模型](assets/workflow_model_edit_activation1.png)的页面属性
 
 1. 使用&#x200B;**[!UICONTROL 同步]**&#x200B;完成该过程。 现在，该工作流在触屏UI中可用。

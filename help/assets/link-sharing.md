@@ -7,18 +7,32 @@ feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: b03f468b-ba84-4dc3-a306-cb2c69e43324
+    internal-label: Link sharing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1043'
 ht-degree: 7%
-
 ---
-
 # 将资产作为链接共享 {#asset-link-sharing}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Experience Manager Assets]允许您将资产、文件夹和收藏集作为URL与您的组织成员和外部实体（包括合作伙伴和供应商）共享。 通过链接共享资产是一种便利的方法，使外部参与方无需先登录[!DNL Assets]即可使用资源。
@@ -114,8 +128,8 @@ ht-degree: 7%
 
 * 如果要将来自[!DNL Experience Manager]创作部署的链接共享到外部实体，请确保仅针对`GET`请求公开以下用于链接共享的URL。 出于安全原因，阻止其他URL。
 
-   * `http://[aem_server]:[port]/linkshare.html`
-   * `http://[aem_server]:[port]/linksharepreview.html`
-   * `http://[aem_server]:[port]/linkexpired.html`
+  * `http://[aem_server]:[port]/linkshare.html`
+  * `http://[aem_server]:[port]/linksharepreview.html`
+  * `http://[aem_server]:[port]/linkexpired.html`
 
   在[!DNL Experience Manager]界面中，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 操作]** > **[!UICONTROL Web控制台]**。 打开&#x200B;**[!UICONTROL Day CQ Link Externalizer]**&#x200B;配置，并在&#x200B;**[!UICONTROL Domains]**&#x200B;字段中修改以下属性，这些属性的值针对`local`、`author`和`publish`提及。 对于`local`和`author`属性，请分别提供本地实例和创作实例的URL。 如果您运行单个[!DNL Experience Manager]创作实例，请为`local`和`author`属性使用相同的值。 对于发布实例，请提供[!DNL Experience Manager]发布实例的URL。

@@ -5,13 +5,27 @@ exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1189'
 ht-degree: 2%
-
 ---
-
 
 # Reader扩展证书的过期及其影响 {#expiration-of-reader-extensions-certificates-and-its-impact}
 
@@ -33,7 +47,7 @@ A.根据对情况的重新评估，所有使用旧“PDF根CA”在2023年1月7�
 
 **Q.如果我有其他问题，我应该联系谁？**
 
-A.您可以联系[Adobe支持](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager#support)或提出支持票证。
+A.您可以联系[Adobe支持](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support)或提出支持票证。
 
 **Q.如果在2023年1月7日之前不更新证书，会发生什么情况？**
 
@@ -45,7 +59,7 @@ A.新的Acrobat Reader扩展证书说明将&#x200B;**G3-P24**&#x200B;作为程�
 
 **Q.如何获取最新的证书？**
 
-A.所有授权的Forms客户（具有有效许可证）都可以从[Adobe授权网站](https://licensing.adobe.com/)下载新证书（基于“Adobe根CA G2”的证书）。 如果您在Adobe授权网站上找不到证书，请联系[Adobe支持](https://experienceleague.adobe.com/zh-hans?support-solution=Experience+Manager&lang=en#support)或提出支持票证。
+A.所有授权的Forms客户（具有有效许可证）都可以从[Adobe授权网站](https://licensing.adobe.com/)下载新证书（基于“Adobe根CA G2”的证书）。 如果您在Adobe授权网站上找不到证书，请联系[Adobe支持](https://experienceleague.adobe.com/?support-solution=Experience+Manager&lang=en#support)或提出支持票证。
 
 **Q.使用从“PDF根CA”（旧证书颁发机构）颁发的证书扩展的Adobe文档在2023年1月7日之后是否继续工作？**
 
@@ -73,7 +87,7 @@ A. Adobe Acrobat Reader 2020或更高版本需要使用扩展了“Adobe根CA 2�
 
 **Q.如何检查应用于PDF文档的使用权限？**
 
-A.您可以使用[getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=zh-Hans#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API检索有关应用于PDF文档的使用权限的信息。
+A.您可以使用[getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API检索有关应用于PDF文档的使用权限的信息。
 
 **Q.如何更改Acrobat Reader扩展证书文件的密码？**
 
@@ -97,7 +111,7 @@ You can choose one of the following paths to apply latest certificates:
 Updating the certificates requires using actions available on AEM Forms administrator console and Reader Extension APIs provided by AEM Forms. The document is intended for users and administrators with knowledge of using Adobe Experience Manger Forms APIs. Before you start, ensure that: 
 
 * the user has administrator rights on underlying AEM Forms environment. 
-* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html?lang=zh-Hans) and has access to it.
+* the user has setup the [development environment](https://experienceleague.adobe.com/docs/experience-manager-65/developing/devtools/howto-projects-eclipse.html) and has access to it.
 * [obtain the certificates](#obtain-the-certificates).
 
 
@@ -189,5 +203,5 @@ Remove usage rights from existing rights-enabled PDF documents before applying u
 
 #### Apply the usage rights to PDF documents 
 
-To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html?lang=zh-Hans).
+To apply usage rights in an AEM Forms on OSGi environment, Create custom OSGi service to usage rights to the documents. You can also create a servlet with a POST method to return the reader extended PDF to the user. For detailed instructions, see [Applying Reader Extensions](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/document-services/apply-reader-extension-rights-to-pdf.html).
 -->

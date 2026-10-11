@@ -9,13 +9,22 @@ exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 3545595dd67b5703d357964a752bf8979a38ea55
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1796'
 ht-degree: 11%
-
 ---
-
 # 管理标记 {#administering-tags}
 
 标记是用于对网站中的内容进行分类的简单快捷方法。 它们可以被视为关键字或标签（元数据），从而允许更快地找到作为搜索结果的内容。
@@ -40,22 +49,22 @@ AEM中的标记的一些功能包括：
 * 新创建标记的主要限制是，它们必须在特定命名空间中是唯一的。
 * 标记的标题不应包含标记路径分隔字符（如果存在，也不会显示）
 
-   * 冒号`:` — 分隔命名空间标记
-   * 正斜杠`/` — 分隔子标记
+  * 冒号`:` — 分隔命名空间标记
+  * 正斜杠`/` — 分隔子标记
 
 * 标记可由作者和网站访客应用。 在分配给页面或进行搜索时，所有形式的标记都可供选择，而无论标记创建者如何。
 * “tag-administrators”组的成员以及对`/content/cq:tags`具有修改权限的成员可以创建标记并修改其分类。
 
-   * 包含子标记的标记称为容器标记
-   * 不是容器标记的标记称为叶标记
-   * 标记命名空间是叶标记或容器标记
+  * 包含子标记的标记称为容器标记
+  * 不是容器标记的标记称为叶标记
+  * 标记命名空间是叶标记或容器标记
 
-* 标记由[搜索组件](https://helpx.adobe.com/cn/experience-manager/core-components/using/quick-search.html)使用，以便于查找内容。
-* 标记由[Teaser组件](https://helpx.adobe.com/cn/experience-manager/core-components/using/teaser.html)使用，该组件监视用户的标记云以提供目标内容。
+* 标记由[搜索组件](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html)使用，以便于查找内容。
+* 标记由[Teaser组件](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html)使用，该组件监视用户的标记云以提供目标内容。
 * 如果标记是内容的一个重要方面
 
-   * 确保将标记与使用它们的页面一起打包
-   * 确保[标记权限](#setting-tag-permissions)启用读取访问权限
+  * 确保将标记与使用它们的页面一起打包
+  * 确保[标记权限](#setting-tag-permissions)启用读取访问权限
 
 ## 标记控制台 {#tagging-console}
 
@@ -69,9 +78,9 @@ AEM中的标记的一些功能包括：
 * 使用管理权限登录
 * 从全局导航
 
-   * 选择&#x200B;**`Tools`**
-   * 选择&#x200B;**`General`**
-   * 选择&#x200B;**`Tagging`**
+  * 选择&#x200B;**`Tools`**
+  * 选择&#x200B;**`General`**
+  * 选择&#x200B;**`Tagging`**
 
 ![managing_tags_usingthetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 
@@ -173,7 +182,7 @@ AEM中的标记的一些功能包括：
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-选择命名空间或其他标记后，可以通过选择&#x200B;**`Edit`**&#x200B;图标来更改标题、描述并提供标题的本地化设置。
+选择命名空间或其他标记后，可以通过选择**`Edit`**图标来更改标题、描述并提供标题的本地化设置。
 
 进行编辑后，选择&#x200B;**保存**。
 
@@ -252,30 +261,30 @@ AEM中的标记的一些功能包括：
 
 * 在创作实例上
 
-   * 使用管理权限登录
-   * 访问[安全控制台](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)，
+  * 使用管理权限登录
+  * 访问[安全控制台](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console)，
 
-      * 例如，浏览到http://localhost:4502/useradmin
+    * 例如，浏览到http://localhost:4502/useradmin
 
-   * 在左窗格中，选择要为其授予[读取权限](/help/sites-administering/security.md#permissions)的组（或用户）
-   * 在右侧窗格中，找到标记命名空间的&#x200B;**Path**
+  * 在左窗格中，选择要为其授予[读取权限](/help/sites-administering/security.md#permissions)的组（或用户）
+  * 在右侧窗格中，找到标记命名空间的**Path**
 
-      * 例如，`/content/cq:tags/mycommunity`
+    * 例如，`/content/cq:tags/mycommunity`
 
-   * 在&#x200B;**读取**&#x200B;列中选择`checkbox`
-   * 选择&#x200B;**保存**
+  * 在&#x200B;**读取**&#x200B;列中选择`checkbox`
+  * 选择&#x200B;**保存**
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
 * 确保所有发布实例都具有相同的权限
 
-   * 一种方法是在“作者”上[创建命名空间包](/help/sites-administering/package-manager.md#package-manager)
+  * 一种方法是在“作者”上[创建命名空间包](/help/sites-administering/package-manager.md#package-manager)
 
-      * 在`Advanced`选项卡上，为`AC Handling`选择`Overwrite`
+    * 在`Advanced`选项卡上，为`AC Handling`选择`Overwrite`
 
-   * 复制包
+  * 复制包
 
-      * 从包管理器中选择`Replicate`
+    * 从包管理器中选择`Replicate`
 
 ## 管理不同语言的标记 {#managing-tags-in-different-languages}
 

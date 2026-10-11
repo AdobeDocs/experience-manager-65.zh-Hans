@@ -9,44 +9,48 @@ exl-id: 0ead982d-2315-4947-b762-596aa2aa42a1
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '889'
-ht-degree: 1%
-
+source-wordcount: '953'
+ht-degree: 2%
 ---
-
 # AEM Mobile设置{#aem-mobile-setup}
 
 {{ue-over-mobile}}
 
 >[!CAUTION]
 >
->从AEM 6.2或6.3迁移到AEM 6.5的现有Adobe Experience Manager (AEM)移动应用程序客户可以通过从包共享下载包来继续使用AEM Mobile应用程序。 但是，新安装的AEM 6.5不支持AEM Mobile应用程序功能。
+>从Adobe Experience Manager 6.2或6.3迁移到AEM 6.5的现有AEM (AEM)移动应用程序客户可以通过从包共享下载包来继续使用AEM Mobile应用程序。 但是，新安装的AEM 6.5不支持AEM Mobile应用程序功能。
 
 要使用AEM为AEM Mobile应用程序生成内容，您必须将AEM实例与基于云的AEM Mobile On-demand Services帐户和项目集成。
 
-请按照以下步骤设置AEM Mobile，从而允许用户在AEM中创建和管理内容。
+请按照以下步骤设置AEM Mobile，以允许用户在AEM中创建和管理内容。
 
 ## AEM Mobile配置 {#aem-mobile-provisioning}
 
 要开始设置AEM Mobile，您必须：
 
-* **请求API密钥**：要访问On-Demand Services API，必须请求API密钥。 要请求API密钥，请完成[PDF表单](https://helpx.adobe.com/cn/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。 将填写好的表单发送至Adobe Developer支持：[wwds@adobe.com](mailto:wwds@adobe.com)
+* **请求API密钥**：要访问On-Demand Services API，必须请求API密钥。 要请求API密钥，请完成[PDF表单](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。 将填写好的表单发送至Adobe Developer支持：[wwds@adobe.com](mailto:wwds@adobe.com)
 
 * **生成设备ID和设备令牌**：收到API密钥后，即可生成设备ID和设备令牌。 转到`https://aex.aemmobile.adobe.com`并执行以下操作：
 
-   * 提供API密钥
-   * 使用已添加到AEM Mobile项目的Adobe ID登录，并具有以下权限（请参阅以下创建项目的步骤）
+  * 提供API密钥
+  * 使用已添加到AEM Mobile项目的Adobe ID登录，并具有以下权限（请参阅以下创建项目的步骤）
 
-      * 管理>管理项目和用户
-      * “内容”>“添加和编辑内容”、“删除内容”、“查看内容”、“Publish内容”
+    * 管理>管理项目和用户
+    * 内容>添加和编辑内容、删除内容、查看内容、发布内容
 
 如果满足所有条件，则会生成设备ID和设备令牌。
 
 >[!NOTE]
 >
->应向所需的Adobe ID授予对AEM Mobile项目的访问权限。 请参阅联机帮助中的[AEM Mobile帐户管理](https://helpx.adobe.com/cn/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
+>应向所需的Adobe ID授予对AEM Mobile项目的访问权限。 请参阅联机帮助中的[AEM Mobile帐户管理](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)。
 
 ## 为AEM Mobile创建项目 {#creating-projects-for-aem-mobile}
 
@@ -56,13 +60,13 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->要了解有关在AEM Mobile中创建项目的更多信息，请单击[此处](https://helpx.adobe.com/cn/digital-publishing-solution/help/creating-projects.html)。
+>要了解有关在AEM Mobile中创建项目的更多信息，请单击[此处](https://helpx.adobe.com/digital-publishing-solution/help/creating-projects.html)。
 
 ## 配置AEM Mobile连接器 {#configuring-an-aem-mobile-connector}
 
-AEM设置涉及连接器配置的以下步骤。 AEM Mobile连接器配置完成后，用户可以设置用户组和权限。
+AEM设置涉及以下连接器配置步骤。 AEM Mobile连接器配置完成后，用户可以设置用户组和权限。
 
-AEM Mobile On-Demand连接器用于将AEM Mobile管理的内容与Adobe Experience Manager Mobile的On-Demand服务绑定。 这使内容作者能够使用AEM工具创建和管理移动应用程序的材料，同时使用AEM Mobile的On-Demand Services轻松分发移动内容。
+AEM Mobile On-Demand连接器用于将AEM Mobile管理的内容与Adobe Experience Manager Mobile的On-Demand服务绑定。 这使内容作者能够使用AEM的工具创建和管理移动应用程序的材料，同时使用AEM Mobile的On-Demand Services轻松分发移动内容。
 
 >[!NOTE]
 >
@@ -75,9 +79,9 @@ AEM Mobile On-Demand连接器用于将AEM Mobile管理的内容与Adobe Experien
 1. 转到OSGI服务配置
 
    1. AEM >工具>操作> Web控制台
-   1. 滚动或搜索&#x200B;***Experience ManagerMobile On-demand Services客户端(AdobeDigital Publishing Solution客户端)***
+   1. 滚动或搜索&#x200B;***Experience Manager Mobile On-demand Services客户端（以前是Adobe Digital Publishing Solution客户端）***
 
-1. 编辑&#x200B;***Experience ManagerMobile On-demand Services客户端***
+1. 编辑&#x200B;***Experience Manager Mobile On-demand Services客户端***
 
    1. **（必填）**&#x200B;输入必填字段：
 
@@ -93,7 +97,7 @@ AEM Mobile On-Demand连接器用于将AEM Mobile管理的内容与Adobe Experien
 
 ### 配置AEM Mobile On-demand Services云服务 {#configuring-aem-mobile-on-demand-services-cloudservice}
 
-1. 转到Cloud Service。
+1. 转到云服务。
 
    1. AEM >工具>部署> [云服务](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)。 滚动或搜索&#x200B;***Adobe Experience Manager Mobile On-demand服务***
 
@@ -101,7 +105,7 @@ AEM Mobile On-Demand连接器用于将AEM Mobile管理的内容与Adobe Experien
 
 1. 创建配置
 
-   1. 输入标题和名称
+   1. 输入一个标题和名称
    1. 输入设备ID
    1. 输入设备令牌
    1. 选择&#x200B;***测试设备配置***，以便验证输入的值
@@ -117,7 +121,7 @@ AEM Mobile On-Demand连接器用于将AEM Mobile管理的内容与Adobe Experien
 * 开发人员
 * 创作
 
-有关创建具有不同权限的角色（例如用于构建应用程序或创建和发布内容的角色）的详细信息，请在AEM Mobile帮助中单击[创建用户角色并授予访问权限](https://helpx.adobe.com/cn/digital-publishing-solution/help/account-admin-dps.html)。
+有关创建具有不同权限的角色（例如用于构建应用程序或创建和发布内容的角色）的详细信息，请在AEM Mobile帮助中单击[创建用户角色并授予访问权限](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html)。
 
 >[!NOTE]
 >

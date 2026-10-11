@@ -5,13 +5,26 @@ exl-id: 4c356aa6-ebd4-40b9-89e3-bc4519e4a7c5
 solution: Experience Manager, Experience Manager Forms
 feature: Form Data Model
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 4876a742-a341-5402-aba7-e749c45e777c
+    internal-label: Form Data Model
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '467'
 ht-degree: 69%
-
 ---
-
 # 使用OAuth 2.0客户端凭据流集成Salesforce  {#configure-salesforce-with-ouath-2.0-client-credential}
 
 | 版本 | 文章链接 |
@@ -28,7 +41,7 @@ AEM Forms交换在Salesforce连接应用程序中定义的客户端凭据（使�
 与授权代码流身份验证相比，使用 OAuth 2.0 客户端凭据进行身份验证可获得多个好处：
 
 * OAuth 2.0 客户端凭据身份验证允许每个用户拥有超过五个连接。
-* AEM 数据源配置继续处理 AEM 用户的停用、访问权限更改、密码更新。
+* AEM 数据源配置在 AEM 用户停用、访问权限更改或密码更新时仍可继续工作。
 
 ## 前提条件 {#prerequisites}
 
@@ -36,7 +49,7 @@ AEM Forms交换在Salesforce连接应用程序中定义的客户端凭据（使�
 
 * 为您的组织创建[采用 OAuth 2.0 客户端凭据流的 Salesforce 连接的应用程序](https://help.salesforce.com/s/articleView?id=sf.connected_app_client_credentials_setup.htm&type=5)和仅 API 用户，并获取应用程序的消费方密钥和消费方密码。
 
-* 确保已适当配置 Swagger 文件以匹配您组织的 API。 或者，您可以选择从头[创建一个 Swagger 文件](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html?lang=zh-Hans)，该文件专门用于您的 AEM 环境。
+* 确保已适当配置 Swagger 文件以匹配您组织的 API。 或者，您可以选择从头[创建一个 Swagger 文件](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html)，该文件专门用于您的 AEM 环境。
 
 >[!NOTE]
 >
@@ -60,7 +73,7 @@ AEM Forms交换在Salesforce连接应用程序中定义的客户端凭据（使�
 1. 选择&#x200B;**[!UICONTROL 授权类型]**&#x200B;作为&#x200B;**[!UICONTROL 客户端凭据]**。
 1. 指定从 Salesforce 连接的应用程序获取的&#x200B;**[!UICONTROL 客户端 ID]**&#x200B;和&#x200B;**[!UICONTROL 客户端密码]**。
 1. 用以下格式指定&#x200B;**[!UICONTROL 访问令牌 URL]**
-   `https://[MyDomainName].my.salesforce.com/services/oauth2/token`.
+   `https://[MyDomainName].my.salesforce.com/services/oauth2/token`。
 
    >[!NOTE]
    >
@@ -69,4 +82,4 @@ AEM Forms交换在Salesforce连接应用程序中定义的客户端凭据（使�
 1. 单击&#x200B;**[!UICONTROL 测试连接]**。
 1. 如果连接成功，请单击&#x200B;**[!UICONTROL 创建]**&#x200B;按钮。
 
-现在，您可以[创建表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=zh-Hans)以将配置的数据源与您的自适应Forms集成。
+现在，您可以[创建表单数据模型](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en)以将配置的数据源与您的自适应Forms集成。

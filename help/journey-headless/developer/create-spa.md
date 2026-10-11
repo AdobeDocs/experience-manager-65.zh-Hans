@@ -5,7 +5,25 @@ exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 984c0a25ea84588b430b3d82ef26d747d4ae5a14
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 75%
@@ -48,7 +66,7 @@ ht-degree: 75%
 
 * 有关使用 React 或 Angular 框架创建 SPA 的开发经验
 * 有关创建内容片段和使用编辑器的基本 AEM 技能
-* 请务必查看AEM[&#128279;](/help/sites-developing/headful-headless.md)中的Headful和Headless文档，以了解可能的SPA集成的各种级别。
+* 请务必查看AEM](/help/sites-developing/headful-headless.md)中的[Headful和Headless文档，以了解可能的SPA集成的各种级别。
 
 ### 工具 {#tools}
 
@@ -127,4 +145,4 @@ RemotePage 组件允许在 AEM 中呈现外部 SPA。
 * [SPA 编辑器概述](/help/sites-developing/spa-overview.md) – SPA 编辑器的工作原理的详细信息
 * [SPA 引用文档](/help/sites-developing/spa-reference-materials.md) – JavaScript API 引用以及指向开源 AEM SPA GitHub 项目的链接
 * [内容片段](/help/assets/content-fragments/content-fragments.md) – 如何创建内容片段
-* [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans) – Maven 模板，它创建最小的基于最佳实践的 Adobe Experience Manager (AEM) 项目作为您网站的起点
+* [AEM 项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) – Maven 模板，它创建最小的基于最佳实践的 Adobe Experience Manager (AEM) 项目作为您网站的起点

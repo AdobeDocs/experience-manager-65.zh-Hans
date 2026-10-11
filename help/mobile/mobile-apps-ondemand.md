@@ -9,7 +9,13 @@ exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '269'
 ht-degree: 4%
@@ -30,7 +36,7 @@ ht-degree: 4%
 
 ## AEM Mobile Author {#aem-mobile-author}
 
-***AEM作者*（或&#x200B;*营销人员*）**&#x200B;使用自定义开发或现成的模板和组件从DAM添加和编辑页面、拖放组件以及添加所有类型的媒体，包括图像、视频和文本片段（内容片段）。 然后，*AEM作者*使用AEM的内置内容编辑器在应用程序中创建丰富的相关体验，包括与Adobe Experience Cloud其余部分的集成。
+***AEM作者*（或&#x200B;*营销人员*）**使用自定义开发或现成的模板和组件从DAM添加和编辑页面、拖放组件以及添加所有类型的媒体，包括图像、视频和文本片段（内容片段）。 然后，*AEM作者*使用AEM的内置内容编辑器在应用程序中创建丰富的相关体验，包括与Adobe Experience Cloud其余部分的集成。
 
 使用AEM创建应用程序时，AEM Mobile On-demand Services作者负责以下任务。
 

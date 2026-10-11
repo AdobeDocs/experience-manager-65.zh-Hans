@@ -1,5 +1,5 @@
 ---
-title: 为JEE上的AEM Forms配置安全管理设置
+title: 为 JEE 上的 AEM Forms 配置安全管理设置
 description: 了解如何管理用户帐户和服务，这些用户帐户和服务虽然在专用开发环境中是必需的，但在AEM Forms on JEE的生产环境中不是必需的。
 content-type: reference
 topic-tags: Security
@@ -8,14 +8,30 @@ role: Admin,User
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '847'
-ht-degree: 0%
-
+source-wordcount: '852'
+ht-degree: 2%
 ---
-
-# 为JEE上的AEM Forms配置安全管理设置 {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+# 为 JEE 上的 AEM Forms 配置安全管理设置 {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
 了解如何管理用户帐户和服务，这些用户帐户和服务虽然在专用开发环境中是必需的，但在AEM Forms on JEE的生产环境中不是必需的。
 
@@ -25,7 +41,7 @@ ht-degree: 0%
 
 ## 禁用对服务的非必要远程访问 {#disabling-non-essential-remote-access-to-services}
 
-安装并配置JEE上的AEM Forms后，可以通过SOAP和Enterprise JavaBeans™ (EJB)进行远程调用的许多服务。在本例中，术语remote是指对应用程序服务器中的SOAP、EJB或Action Message Format (AMF)端口具有网络访问权限的任何调用方。
+安装并配置JEE上的AEM Forms后，可以通过SOAP和Enterprise JavaBeans™ (EJB)进行远程调用的许多服务。在本例中，术语“远程”是指对应用程序服务器上的SOAP、EJB或Action Message Format (AMF)端口具有网络访问权限的任何调用方。
 
 尽管JEE服务上的AEM Forms要求向授权调用方传递有效凭据，但您应仅允许远程访问您需要远程访问的服务。 要获得有限的可访问性，您应该尽可能减少可远程访问的服务集，以便系统正常工作，然后为您所需的其他服务启用远程调用。
 
@@ -62,7 +78,7 @@ JEE服务上的AEM Forms始终需要至少SOAP访问权限。 Workbench通常需
    * WorkspaceSingleSignOn
    * 应用程序管理器
 
-1. 单击&#x200B;**下一步**&#x200B;并对不在上述列表中的SOAP端点重复上一步。 在删除端点之前，请确保SOAP列在“提供程序”列中。
+1. 单击&#x200B;**下一步**&#x200B;并对不在上述列表中的SOAP端点重复上一步。 在删除端点之前，请确保已将SOAP列在提供程序列中。
 
 ## 禁用对服务的非基本匿名访问 {#disabling-non-essential-anonymous-access-to-services}
 

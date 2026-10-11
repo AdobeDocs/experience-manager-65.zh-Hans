@@ -9,13 +9,22 @@ exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: bf99ad3710638ec823d3b17967e1c750d0405c77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '825'
 ht-degree: 12%
-
 ---
-
 # We.Retail 参考实施{#we-retail-reference-implementation}
 
 ## 简介 {#introduction}
@@ -38,7 +47,7 @@ We.Retail使用最新的Adobe Experience Manager (AEM)技术，例如HTL、响�
 | [HTML 模板语言](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-htl/content/overview) | 所有组件都基于HTL |  |
 | [电子商务功能](/help/commerce/cif-classic/developing/ecommerce.md) | 功能产品目录 |  |
 | [社区站点](/help/communities/overview.md) | 允许访客加入社区讨论、阅读博客等 |  |
-| [&#x200B; Universal Editor &#x200B;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/introduction) | 所有组件都基于新的核心组件，并且更加可用，可开箱即用且可由用户配置 | [试用！](/help/sites-developing/we-retail-core-components.md) |
+| [ Universal Editor ](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-core-components/using/introduction) | 所有组件都基于新的核心组件，并且更加可用，可开箱即用且可由用户配置 | [试用！](/help/sites-developing/we-retail-core-components.md) |
 | [内容片段](/help/assets/content-fragments/content-fragments.md) | We.Retail体验部分展示了通过内容片段重用内容的强大功能。 | [试试看！](/help/sites-developing/we-retail-content-fragments.md) |
 | [体验片段](/help/sites-authoring/experience-fragments.md) | 体验片段是由一个或多个组件组成的组，其中包括可在页面中引用的内容和布局。 | [试试看！](/help/sites-developing/we-retail-experience-fragments.md) |
 

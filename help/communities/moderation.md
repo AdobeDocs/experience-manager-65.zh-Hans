@@ -10,13 +10,20 @@ role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2073'
 ht-degree: 2%
-
 ---
-
 # 审核控制台 {#moderation-console}
 
 在AEM Communities中，管理员和社区审查方（指定为审查方的受信任社区成员）可以在创作和发布环境中批量[审查社区内容](/help/communities/moderate-ugc.md)。

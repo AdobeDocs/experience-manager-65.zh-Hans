@@ -9,13 +9,29 @@ role: Admin,User
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '928'
 ht-degree: 3%
-
 ---
-
 # 配置自适应表单缓存 {#configure-adaptive-forms-cache}
 
 高速缓存是一种缩短数据访问时间、减少延迟并提高输入/输出(I/O)速度的机制。 自适应表单缓存仅存储自适应表单的HTML内容和JSON结构，而不保存任何预填数据。 它有助于减少在客户端渲染自适应表单所需的时间。 它专为自适应表单而设计。
@@ -51,19 +67,19 @@ ht-degree: 3%
 * 在开发自定义组件时，在用于开发的服务器上，将禁用自适应表单缓存。
 * 不缓存不带扩展名的URL。 例如，缓存了模式为`/content/forms/[folder-structure]/[form-name].html`的URL，缓存时忽略模式为`/content/dam/formsanddocument/[folder-name]/<form-name>/jcr:content`的URL。 因此，请使用带有扩展名的URL来获得缓存的好处。
 * 本地化自适应表单的注意事项：
-   * 使用URL格式`http://host:port/content/forms/af/<afName>.<locale>.html`而不是`http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`请求自适应表单的本地化版本
-   * [禁止对格式为`http://host:port/content/forms/af/<adaptivefName>.html`的URL使用浏览器区域设置](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)。
-   * 当您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`，并且在配置管理器中禁用了&#x200B;**[!UICONTROL 使用浏览器区域设置]**&#x200B;时，会提供自适应表单的非本地化版本。 非本地化语言是开发自适应表单时使用的语言。 不会考虑为您的浏览器配置的区域设置（浏览器区域设置），并且会提供自适应表单的非本地化版本。
-   * 当您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`并在配置管理器中启用&#x200B;**[!UICONTROL 使用浏览器区域设置]**&#x200B;时，会提供自适应表单的本地化版本（如果可用）。 本地化的自适应表单的语言基于为您的浏览器配置的区域设置（浏览器区域设置）。 它可能会导致[仅缓存自适应表单]的第一个实例。 若要防止实例上发生此问题，请参阅[疑难解答](#only-first-insatnce-of-adptive-forms-is-cached)。
+  * 使用URL格式`http://host:port/content/forms/af/<afName>.<locale>.html`而不是`http://host:port/content/forms/af/afName.html?afAcceptLang=<locale>`请求自适应表单的本地化版本
+  * [禁止对格式为`http://host:port/content/forms/af/<adaptivefName>.html`的URL使用浏览器区域设置](supporting-new-language-localization.md#how-localization-of-adaptive-form-works)。
+  * 当您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`，并且在配置管理器中禁用了&#x200B;**[!UICONTROL 使用浏览器区域设置]**&#x200B;时，会提供自适应表单的非本地化版本。 非本地化语言是开发自适应表单时使用的语言。 不会考虑为您的浏览器配置的区域设置（浏览器区域设置），并且会提供自适应表单的非本地化版本。
+  * 当您使用URL格式`http://host:port/content/forms/af/<adaptivefName>.html`并在配置管理器中启用&#x200B;**[!UICONTROL 使用浏览器区域设置]**&#x200B;时，会提供自适应表单的本地化版本（如果可用）。 本地化的自适应表单的语言基于为您的浏览器配置的区域设置（浏览器区域设置）。 它可能会导致[仅缓存自适应表单]的第一个实例。 若要防止实例上发生此问题，请参阅[疑难解答](#only-first-insatnce-of-adptive-forms-is-cached)。
 
 ### 在Dispatcher中启用缓存
 
 要在Dispatcher上启用和配置缓存自适应表单，请执行以下步骤：
 
-1. 为环境的每个发布实例打开以下URL，并[为环境的发布实例启用刷新代理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html?lang=zh-Hans#invalidating-dispatcher-cache-from-a-publishing-instance)：
+1. 为环境的每个发布实例打开以下URL，并[为环境的发布实例启用刷新代理](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance)：
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [将以下内容添加到您的dispatcher.any文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#automatically-invalidating-cached-files)：
+1. [将以下内容添加到您的dispatcher.any文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files)：
 
    ```JSON
       /invalidate
@@ -92,7 +108,7 @@ ht-degree: 3%
    * 自适应表单会保留在缓存中，直到未发布表单的更新版本为止。
 
    * 发布自适应表单中引用的资源的较新版本时，受影响的自适应表单会自动失效。 引用的资源自动失效有一些例外。 有关异常的解决方法，请参阅[疑难解答](#troubleshooting)部分。
-1. [添加以下规则dispatcher.any或自定义规则文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#specifying-the-documents-to-cache)。 它不包括不支持缓存的URL。 例如，交互式通信。
+1. [添加以下规则dispatcher.any或自定义规则文件](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache)。 它不包括不支持缓存的URL。 例如，交互式通信。
 
    ```JSON
       /0000 {
@@ -116,7 +132,7 @@ ht-degree: 3%
       }
    ```
 
-1. [将以下参数添加到忽略URL参数列表](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#ignoring-url-parameters)：
+1. [将以下参数添加到忽略URL参数列表](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters)：
 
    ```JSON
       /ignoreUrlParams {

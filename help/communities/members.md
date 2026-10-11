@@ -9,13 +9,20 @@ role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '903'
-ht-degree: 2%
-
+source-wordcount: '969'
+ht-degree: 1%
 ---
-
 
 # 成员和组管理控制台 {#members-groups-management-consoles}
 
@@ -87,13 +94,13 @@ AEM Communities功能通常要求网站访客先注册并登录，然后才能�
 
 （*必需*）可授权ID是成员的登录ID。
 默认情况下，ID设置为所需电子邮件地址的值。
-*ID一旦创建，便无法修改*。
+*创建后，ID可能无法修改*。
 
 * **[!UICONTROL 电子邮件地址]**
 
 （*必需*）成员的电子邮件地址。
 成员可以在更新个人资料时更改其电子邮件地址。I
-如果该ID默认使用电子邮件地址，则当电子邮件地址更改时，该ID将*不会*&#x200B;更改。
+如果ID默认使用电子邮件地址，则在更改电子邮件地址时，该ID将*不会*&#x200B;更改。
 
 * **[!UICONTROL 密码]**
 
@@ -118,19 +125,19 @@ AEM Communities功能通常要求网站访客先注册并登录，然后才能�
 在“帐户设置”下，社区管理员可以：
 
 * **[!UICONTROL 状态]**
-   * 已禁止
-成员无法登录，导致他们无法查看页面或参与需要登录的活动。 他们仍可匿名访问开放的社区站点。
+  * 已禁止
+    成员无法登录，导致他们无法查看页面或参与需要登录的活动。 他们仍可匿名访问开放的社区站点。
 
-   * 未禁止
-成员具有对社区站点的完全访问权限。
+  * 未禁止
+    成员具有对社区站点的完全访问权限。
 
   默认值为`Not Banned`。
 
 * **[!UICONTROL 贡献限制]**
 
   如果选中，则成员发布内容的能力有限。
-默认值取决于贡献限制的配置。
-请参阅[成员贡献限制](limits.md)。
+  默认值取决于贡献限制的配置。
+  请参阅[成员贡献限制](limits.md)。
 
 * **[!UICONTROL 更改密码]**
 
@@ -157,10 +164,10 @@ AEM Communities功能通常要求网站访客先注册并登录，然后才能�
 ![编辑成员资格设置窗口](assets/create-member2.png)
 
 * **[!UICONTROL 添加徽章]**
-   * 开始键入以从[可用徽章](badges.md)中选择。 选择徽章后，选择每个站点或所有站点，徽章应随成员的头像一起显示在这些站点上。
-   * 可以选择多个徽章和站点。
+  * 开始键入以从[可用徽章](badges.md)中选择。 选择徽章后，选择每个站点或所有站点，徽章应随成员的头像一起显示在这些站点上。
+  * 可以选择多个徽章和站点。
 * **[!UICONTROL 移除徽章]**
-   * 选择徽章旁边的垃圾桶图标以将其删除。
+  * 选择徽章旁边的垃圾桶图标以将其删除。
 
 ## 组控制台 {#groups-console}
 
@@ -209,4 +216,4 @@ AEM Communities功能通常要求网站访客先注册并登录，然后才能�
 
 如果未以`admin`身份登录，则登录用户必须是`administrators`用户组的成员。
 
-另请参阅作者[&#128279;](deploy-communities.md#replication-agents-on-author)上的复制代理。
+另请参阅作者](deploy-communities.md#replication-agents-on-author)上的[复制代理。

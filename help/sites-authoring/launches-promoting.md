@@ -11,16 +11,34 @@ exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Launches
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e2cac356-c071-4141-ad6f-827893261a16
+    internal-label: Launches
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '772'
+source-wordcount: '774'
 ht-degree: 76%
-
 ---
-
 # 提升启动项{#promoting-launches}
 
-您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。提升启动页面时，源页面的对应页面会被替换为提升页面的内容。提升启动页面时可以做出以下选择：
+您需要提升启动页面以将内容移回源（生产）中，然后才能进行发布。 提升启动页面时，源页面的对应页面会被替换为提升页面的内容。 提升启动页面时可以做出以下选择：
 
 * 是只提升当前页面还是提升整个启动项。
 * 是否提升当前页面的子页面。
@@ -29,11 +47,11 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->在将启动页面提升到目标（**生产**）后，您可以将&#x200B;**生产**&#x200B;页面作为实体进行激活（以加快进程）。向工作流包添加页面，然后在激活页面包的工作流中将其用作有效负荷。您需要先创建工作流包，然后才能提升启动项。请参阅[使用 AEM 工作流处理提升的页面](#processing-promoted-pages-using-aem-workflow)。
+>在将启动页面提升到目标（**生产**）后，您可以将&#x200B;**生产**&#x200B;页面作为实体进行激活（以加快进程）。 向工作流包添加页面，然后在激活页面包的工作流中将其用作有效负荷。 您需要先创建工作流包，然后才能提升启动项。 请参阅[使用 AEM 工作流处理提升的页面](#processing-promoted-pages-using-aem-workflow)。
 
 >[!CAUTION]
 >
->不能并行提升单个启动项。这意味着，对同一个启动项同时执行两次提升操作可能会导致出现以下错误：`Launch could not be promoted`（同时还会导致日志中出现冲突错误）。
+>不能并行提升单个启动项。 这意味着，对同一个启动项同时执行两次提升操作可能会导致出现以下错误：`Launch could not be promoted`（同时还会导致日志中出现冲突错误）。
 
 >[!CAUTION]
 >
@@ -43,7 +61,7 @@ ht-degree: 76%
 
 >[!NOTE]
 >
->此处介绍的是只有一个启动项级别时提升启动页面的手动操作。请参阅：
+>此处介绍的是只有一个启动项级别时提升启动页面的手动操作。 请参阅：
 >
 >* [提升嵌套启动项](#promoting-a-nested-launch)，当结构中有多个启动项时。
 >* [启动项 - 事件的顺序](/help/sites-authoring/launches.md#launches-the-order-of-events)，包含有关自动提升和发布的更多详细信息。
@@ -55,29 +73,29 @@ ht-degree: 76%
 
    * **站点**&#x200B;控制台：
 
-      1. 打开[引用边栏](/help/sites-authoring/author-environment-tools.md#showingpagereferences)，然后使用[选择模式](/help/sites-authoring/basic-handling.md)选择所需的源页面（或者先进行选择，然后再打开引用边栏，顺序不重要）。此时会显示所有引用。
+     1. 打开[引用边栏](/help/sites-authoring/author-environment-tools.md#showingpagereferences)，然后使用[选择模式](/help/sites-authoring/basic-handling.md)选择所需的源页面（或者先进行选择，然后再打开引用边栏，顺序不重要）。 此时会显示所有引用。
 
-      1. 选择&#x200B;**启动项**（例如“启动项 (1)”），可显示特定启动项的列表。
-      1. 选择特定的启动项以显示可用的操作。
-      1. 选择&#x200B;**提升启动项**&#x200B;以打开向导。
+     1. 选择&#x200B;**启动项**（例如“启动项 (1)”），可显示特定启动项的列表。
+     1. 选择特定的启动项以显示可用的操作。
+     1. 选择&#x200B;**提升启动项**&#x200B;以打开向导。
 
    * **启动项**&#x200B;控制台：
 
-      1. 选择您的启动项（单击缩略图）。
-      1. 选择&#x200B;**提升**。
+     1. 选择您的启动项（单击缩略图）。
+     1. 选择&#x200B;**提升**。
 
 1. 在第一步中，您可以指定：
 
    * **目标**
 
-      * **提升后删除发布内容**
+     * **提升后删除发布内容**
 
    * **范围**
 
-      * **提升整个发布内容**
-      * **提升已修改的页面**
-      * **提升当前页面**
-      * **提升当前页面和子页面**
+     * **提升整个发布内容**
+     * **提升已修改的页面**
+     * **提升当前页面**
+     * **提升当前页面和子页面**
 
    例如，当选择仅提升已修改的页面时：
 
@@ -96,7 +114,7 @@ ht-degree: 76%
 
 ## 编辑时提升启动页面 {#promoting-launch-pages-when-editing}
 
-在编辑启动页面时，也可以从&#x200B;**页面信息**&#x200B;中执行&#x200B;**提升启动项**&#x200B;操作。这将打开向导以收集所需的信息。
+在编辑启动页面时，也可以从&#x200B;**页面信息**&#x200B;中执行&#x200B;**提升启动项**&#x200B;操作。 这将打开向导以收集所需的信息。
 
 ![提升启动项](assets/chlimage_1-103.png)
 
@@ -117,19 +135,19 @@ ht-degree: 76%
 
    * **目标**
 
-      * **提升目标**
-您可以提升到任何源。
+     * **提升目标**
+       您可以提升到任何源。
 
-      * **提升后删除启动项**
-提升后，所选启动项以及嵌套在其中的所有启动项都将被删除。
+     * **提升后删除启动项**
+       提升后，所选启动项以及嵌套在其中的所有启动项都将被删除。
 
-   * **作用域**
-在此处，您可以选择是提升整个启动项，还是仅提升已实际编辑的页面。 如果选择后者，则还可以选择包括/排除子页面。默认配置是仅提升当前页面的页面更改：
+   * **范围**
+     在此处，您可以选择是提升整个启动项，还是仅提升已实际编辑的页面。 如果选择后者，则还可以选择包括/排除子页面。 默认配置是仅提升当前页面的页面更改：
 
-      * **提升整个发布内容**
-      * **提升已修改的页面**
-      * **提升当前页面**
-      * **提升当前页面和子页面**
+     * **提升整个发布内容**
+     * **提升已修改的页面**
+     * **提升当前页面**
+     * **提升当前页面和子页面**
 
    ![提升启动项的设置](assets/chlimage_1-105.png)
 
@@ -156,6 +174,6 @@ ht-degree: 76%
 
 要在提升页面时自动启动工作流，请[为包节点配置工作流启动器](/help/sites-administering/workflows-starting.md#workflows-launchers)。
 
-例如，您可以在作者提升启动页面时自动生成页面激活请求。配置工作流启动器，以在包节点被修改时启动请求激活工作流。
+例如，您可以在作者提升启动页面时自动生成页面激活请求。 配置工作流启动器，以在包节点被修改时启动请求激活工作流。
 
 ![工作流启动器](assets/chlimage_1-108.png)

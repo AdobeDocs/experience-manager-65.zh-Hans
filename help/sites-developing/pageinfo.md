@@ -1,5 +1,5 @@
 ---
-title: 获取JSON格式的页面信息
+title: 以 JSON 格式获取页面信息
 description: 要获取页面信息，请向PageInfo servlet发送请求，以获取JSON格式的页面元数据
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
-
+source-wordcount: '953'
+ht-degree: 3%
 ---
-
-# 获取JSON格式的页面信息{#obtaining-page-information-in-json-format}
+# 以 JSON 格式获取页面信息{#obtaining-page-information-in-json-format}
 
 要获取页面信息，请向PageInfo servlet发送请求，以获取JSON格式的页面元数据。
 
@@ -34,7 +43,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 >* 本机移动设备应用程序
 >* AEM外部的其他渠道和接触点
 >
->请参阅Content Services[&#128279;](/help/sites-developing/json-exporter.md)的文档JSON导出程序。
+>请参阅Content Services](/help/sites-developing/json-exporter.md)的文档[JSON导出程序。
 
 ## 页面信息提供程序 {#page-information-providers}
 
@@ -498,7 +507,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 例如，要使用CRXDE Lite配置服务，请执行以下操作：
 
-1. 打开CRXDE Lite([http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
+1. 打开CRXDE Lite ([http://localhost:4502/crx/de](http://localhost:4502/crx/de))。
 1. 在应用程序的配置文件夹中，创建一个节点：
 
    * 名称：`com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`
@@ -538,7 +547,7 @@ http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retai
 
 创建自定义页面信息提供程序服务，以添加应用程序可轻松获取的页面元数据。
 
-1. 实施`com.day.cq.wcm.api.PageInfoProvider`接口。
+1. 实施 `com.day.cq.wcm.api.PageInfoProvider` 接口。
 1. 将类捆绑为一个OSGi服务并进行部署。
 1. 在应用程序中创建页面组件。 使用`foundation/components/page`作为`sling:resourceSuperType`属性的值。
 
@@ -601,7 +610,7 @@ public class PageUrlInfoProvider implements PageInfoProvider {
 }
 ```
 
-以下示例以CRXDE Lite显示，该页面组件配置为使用PageUrlInfoProvider服务：
+以下示例在CRXDE Lite中显示了配置为使用PageUrlInfoProvider服务的页面组件：
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 

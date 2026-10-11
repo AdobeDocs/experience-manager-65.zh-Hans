@@ -1,5 +1,5 @@
 ---
-title: 为JBoss应用程序服务器配置SSL
+title: 为 JBoss 应用程序服务器配置 SSL
 description: 了解如何为JBoss应用程序服务器配置SSL。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,25 @@ exl-id: 8eb4f691-a66b-498e-8114-307221f63718
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '904'
-ht-degree: 0%
-
+source-wordcount: '908'
+ht-degree: 1%
 ---
-
-# 为JBoss应用程序服务器配置SSL {#configuring-ssl-for-jboss-application-server}
+# 为 JBoss 应用程序服务器配置 SSL {#configuring-ssl-for-jboss-application-server}
 
 要在JBoss Application Server上配置SSL，您需要用于身份验证的SSL凭据。 您可以使用Java keytool创建凭据或请求并从证书颁发机构(CA)导入凭据。 然后，必须在JBoss上启用SSL。
 
@@ -89,7 +100,7 @@ ht-degree: 0%
 
    * 服务器群集 — `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
+1. 
    * **对于lc_&lt;dbaname/tunkey>.xml文件中的单个服务器**，在&lt;security-realms>部分后添加以下内容：
 
    ```xml
@@ -139,25 +150,25 @@ ht-degree: 0%
 
    * 对于统包安装：
 
-      * 在Windows控制面板中，单击“管理工具”，然后单击“服务”。
-      * 选择适用于Adobe Experience Manager表单的JBoss。
-      * 选择操作>停止。
-      * 等待服务的状态显示为已停止。
-      * 选择操作>开始。
+     * 在Windows控制面板中，单击“管理工具”，然后单击“服务”。
+     * 选择适用于Adobe Experience Manager表单的JBoss。
+     * 选择操作>停止。
+     * 等待服务的状态显示为已停止。
+     * 选择操作>开始。
 
    * 对于Adobe预配置或手动配置的JBoss安装：
 
-      * 在命令提示符下，导航到&#x200B;*`[appserver root]`*/bin。
-      * 输入以下命令停止服务器：
+     * 在命令提示符下，导航到&#x200B;*`[appserver root]`*/bin。
+     * 输入以下命令停止服务器：
 
-         * (Windows) `shutdown.bat -S`
-         * (Linux) `./shutdown.sh -S`
+       * (Windows) `shutdown.bat -S`
+       * (Linux) `./shutdown.sh -S`
 
-      * 等待JBoss进程完全关闭（当JBoss进程将控制权返回到在其中启动它的终端时）。
-      * 输入以下命令启动服务器：
+     * 等待JBoss进程完全关闭（当JBoss进程将控制权返回到在其中启动它的终端时）。
+     * 输入以下命令启动服务器：
 
-         * (Windows) `run.bat -c <profile>`
-         * (Linux) `./run.sh -c <profile>`
+       * (Windows) `run.bat -c <profile>`
+       * (Linux) `./run.sh -c <profile>`
 
 1. 要使用SSL访问管理控制台，请在Web浏览器中键入`https://[host name]:'port'/adminui`：
 

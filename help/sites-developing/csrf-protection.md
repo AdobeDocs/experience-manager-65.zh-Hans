@@ -1,5 +1,5 @@
 ---
-title: CSRF保护框架
+title: CSRF 保护框架
 description: 该框架使用令牌来确保客户端请求合法
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8d7c5b4962ea0dbd80cf78faa31238b2252f4a5c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '247'
-ht-degree: 1%
-
+source-wordcount: '278'
+ht-degree: 6%
 ---
-
-# CSRF保护框架{#the-csrf-protection-framework}
+# CSRF 保护框架{#the-csrf-protection-framework}
 
 除了Apache Sling反向链接过滤器之外，Adobe还提供了一个新的CSRF保护框架来抵御此类攻击。
 
@@ -40,11 +49,11 @@ ht-degree: 1%
 >
 >此外，请确保进行了必要的Dispatcher配置更改以使用CSRF保护框架：
 >
->* [配置Adobe Experience Manager Dispatcher以防御CSRF攻击](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
+>* [配置Adobe Experience Manager Dispatcher以防御CSRF攻击](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/configuring/configuring-dispatcher-to-prevent-csrf)
 >* [Dispatcher概述](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/dispatcher)
 
 >[!NOTE]
 >
->如果您在Web应用程序中使用清单缓存，请确保将“**&amp;amp；ast；**”添加到清单中，以确保令牌不会使CSRF令牌生成调用脱机。 有关详细信息，请参阅此[链接](https://www.w3.org/TR/offline-webapps/)。
+>如果您将清单缓存与Web应用程序一起使用，请确保将“**&amp;ast；**”添加到清单中，以确保令牌不会使CSRF令牌生成调用脱机。 有关详细信息，请参阅此[链接](https://www.w3.org/TR/offline-webapps/)。
 >
 >有关CSRF攻击以及缓解这些攻击方法的详细信息，请参阅[跨站点请求伪造OWASP页面](https://owasp.org/www-community/attacks/csrf)。

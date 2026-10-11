@@ -10,13 +10,24 @@ feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2287199-aefe-59f7-9b29-14176a1a51d4
+    internal-label: Interactive Videos
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6186'
+source-wordcount: '6229'
 ht-degree: 3%
-
 ---
-
 # 交互式视频{#interactive-videos}
 
 您可以轻松地创建交互式视频（也称为可购物视频），以直接从视频推动转化。 客户与视频的互动发生在视频播放器旁边的面板中，在该面板中，相关服务、信息或产品缩略图会根据视频中的功能滚动到视图中。 客户可以选择缩略图并直接链接到服务，或者将项目添加到购物车以供立即购买，或者链接到网页以了解更多信息。
@@ -33,7 +44,7 @@ ht-degree: 3%
 
 * 如果要暂停视频并打开产品的概览，请选择缩略图。 例如，在视频中选择KitchenAid缩略图图像以体验混合器的360度旋转视图，或放大以查看混合器的详细信息。
 
-<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html?lang=zh-Hans. This now needs to call a new interactive video-->
+<!-- There was a link here that showed the video frame of an interactive video and when the reader selected the frame the video would play https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/AXIS/index.html. This now needs to call a new interactive video-->
 
 ![交互式购物视频的帧](assets/chlimage_1-126.png) *交互式购物视频的视频帧捕获。*
 
@@ -63,13 +74,13 @@ NOT FOUND; FIND REPLACEMENT
 
 在某些快速入门任务中查找&#x200B;**Example**&#x200B;标题。 它包含一个简短的教程，该教程基于此开始演示网页，*尚未*&#x200B;添加交互功能：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 **示例**&#x200B;有助于说明在您的网站上集成交互式视频的步骤。
 
 完成最后一个示例部分中的教程后，最终演示网页与完全集成的交互式视频如下所示：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 交互式视频步骤：
 
@@ -153,10 +164,10 @@ NOT FOUND; FIND REPLACEMENT
     <td><p>单个SKU，在查询字符串中找到。</p> </td>
     <td><p>记录的概览URL包括：</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>URL中的唯一变量部分是<code>productId=</code>查询字符串参数的值，它显然是SKU值。 因此，您的缩略图只需要使用诸如<strong><code>866558</code></strong>、<strong><code>1196184</code></strong>、<strong><code>1081492</code></strong>、<strong><code>1898294</code></strong>之类的值填充的SKU字段。</p> </td>
   </tr>
   <tr>
@@ -172,9 +183,9 @@ NOT FOUND; FIND REPLACEMENT
     <td><p>查询字符串中的SKU和类别ID。</p> </td>
     <td><p>记录的概览URL包括：</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>在这种情况下，URL包含两个不同的部分。 SKU存储在<code>prodId</code>参数中，类别ID存储在<code>category=</code>参数中。</p> <p>因此，缩略图定义是对。 即SKU值和名为<code>categoryId</code>的额外变量。 生成的对如下所示：</p>
     <ul>
       <li>SKU是<code>305466</code>，<code>categoryId</code>是 <code>1100004</code></li>
@@ -189,7 +200,7 @@ NOT FOUND; FIND REPLACEMENT
 
 将以上方法应用于示例网站后，您的网页具有多个产品缩略图，每个产品缩略图都有一个“了解更多”按钮：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 激活页面上可用的所有产品概览后，您将获得向后端发出的概览请求列表：
 
@@ -258,7 +269,7 @@ NOT FOUND; FIND REPLACEMENT
 1. 将视频和相关缩略图资源上传到所需的一个或多个文件夹。
 
    查看[上传资源](/help/assets/manage-assets.md)。
-请参阅[使用FTP作业计划](/help/assets/manage-assets.md)上载资源。
+   请参阅[使用FTP作业计划](/help/assets/manage-assets.md)上载资源。
 
    现在，将交互性添加到您的视频。
 
@@ -368,9 +379,9 @@ NOT FOUND; FIND REPLACEMENT
 
      使用以下导航快捷方式快速检查和微调您的视频区段：
 
-      * 要直接搜索到该区段开头的视频，请选择开头的蓝色椭圆。
-      * 要直接搜索该区段结尾的视频，请选择结尾的蓝色椭圆形。
-      * 要将视频播放返回到该区段的开头，请选择整个区段。
+     * 要直接搜索到该区段开头的视频，请选择开头的蓝色椭圆。
+     * 要直接搜索该区段结尾的视频，请选择结尾的蓝色椭圆形。
+     * 要将视频播放返回到该区段的开头，请选择整个区段。
 
    ![chlimage_1-26](assets/chlimage_1-132.png)
 
@@ -499,7 +510,7 @@ NOT FOUND; FIND REPLACEMENT
 
    >[!NOTE]
    >
-   >在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 已将`.vtt`文件保存到&#x200B;**[!UICONTROL Assets]**&#x200B;根目录下的`_VTT`文件夹中。 要在网站上正确播放交互式视频，必须填写文件和文件夹。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
+   >在保存交互式视频时，会自动保存 `.vtt` 一个关联的文件。 已将`.vtt`文件保存到&#x200B;**[!UICONTROL Assets]**&#x200B;根目录下的`_VTT`文件夹中。 文件和文件夹是交互式视频在网站上正确播放所必需的。 因此，请勿移动、编辑或删除文件夹 `_VTT` 或其内容。
 
 1. 发布交互式视频。 发布会创建您最终复制并粘贴到网站体验中的嵌入代码或URL。
 
@@ -543,7 +554,7 @@ NOT FOUND; FIND REPLACEMENT
 
 以演示网站为例：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-0.html)
 
 请注意，嵌入代码是标准代码：
 
@@ -574,7 +585,7 @@ NOT FOUND; FIND REPLACEMENT
 
 集成只需从Experience Manager中删除视频嵌入代码并将其替换为交互式视频嵌入代码即可。 您可以在以下URL中看到结果。 虽然它显示页面上存在的交互式视频，但它尚未与现有的概览集成：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-1.html)
 
 ## 将交互式视频与现有Quickview集成 {#integrating-an-interactive-video-with-an-existing-quickview}
 
@@ -663,27 +674,27 @@ Experience Manager返回的嵌入代码已具有现成的事件处理程序。 �
   <tbody>
   <tr>
     <td><p>单个SKU，在查询字符串中找到</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td>单个SKU，可在URL路径中找到</td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
     <td><p>查询字符串中的SKU和类别ID</p> </td>
-    <td><code class="code">s7interactivevideoviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+    <td><code class="code">s7interactivevideoviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   </tbody>
 </table>
@@ -774,7 +785,7 @@ inner_container.appendChild(document.getElementById("quickview-modal"));
 
 带有完全集成交互式视频的最终演示网站如下所示：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-video/john-lewis/landing-3.html)
 
 ## 使用 Quickview 创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
 

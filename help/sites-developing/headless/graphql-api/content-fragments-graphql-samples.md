@@ -5,13 +5,25 @@ feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 3a38a2f1e753e33d9d3d4d4e7ebc24f16f795966
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1577'
+source-wordcount: '1576'
 ht-degree: 83%
-
 ---
-
 # 了解如何将 GraphQL 与 AEM 结合使用 – 示例内容和查询 {#learn-graphql-with-aem-sample-content-queries}
 
 了解如何将GraphQL与AEM结合使用，通过浏览示例内容和查询来无头提供内容。
@@ -35,7 +47,7 @@ ht-degree: 83%
 
 ## GraphQL – 使用示例内容片段结构的示例查询 {#graphql-sample-queries-sample-content-fragment-structure}
 
-查看这些示例查询，以了解创建查询的说明以及示例结果。
+查看这些示例查询，以了解如何创建查询以及相应的示例结果。
 
 >[!NOTE]
 >
@@ -225,7 +237,7 @@ ht-degree: 83%
 
 ### 示例查询 – 所有城市的名称 {#sample-names-all-cities}
 
-此示例查询是一个直接的查询，返回`name`架构中所有条目的`city`。
+此示例查询是一个直接的查询，返回`city`架构中所有条目的`name`。
 
 **示例查询**
 
@@ -539,7 +551,7 @@ query {
 
 ### 示例查询 – 所有名为“Jobs”或“Smith”的人 {#sample-all-persons-jobs-smith}
 
-此示例查询筛选名为`persons`或`Jobs`的任何的所有`Smith`。
+此示例查询筛选名为`Jobs`或`Smith`的任何的所有`persons`。
 
 **示例查询**
 
@@ -593,7 +605,7 @@ query {
 
 ### 示例查询 – 所有名字不是“Jobs”的人 {#sample-all-persons-not-jobs}
 
-此示例查询筛选名为`persons`或`Jobs`的任何的所有`Smith`。
+此示例查询筛选名为`Jobs`或`Smith`的任何的所有`persons`。
 
 **示例查询**
 
@@ -705,7 +717,7 @@ query {
 
 ### 示例查询 — 德国或瑞士人口为400000到999999的所有城市。 {#sample-all-cities-d-ch-population}
 
-以下是筛选的字段组合。使用 `AND`（隐式）来选择 `population` 范围，使用 `OR`（显式）来选择所需的城市。
+以下是筛选的字段组合。 使用 `AND`（隐式）来选择 `population` 范围，使用 `OR`（显式）来选择所需的城市。
 
 **示例查询**
 
@@ -993,7 +1005,7 @@ query {
 }
 ```
 
-### 嵌套内容片段的示例查询 – 所有员工赢得了“Gamestar”奖项的所有公司 {#sample-all-companies-employee-gamestar-award}
+### 嵌套内容片段的示例查询 – 所有员工都曾获得“Gamestar”奖项的所有公司 {#sample-all-companies-employee-gamestar-award}
 
 此查询演示了跨三个嵌套片段筛选：`company`、`employee` 和 `award`。
 
@@ -1147,7 +1159,7 @@ query {
 
 ## 使用 WKND 项目的示例查询 {#sample-queries-using-wknd-project}
 
-这些示例查询基于 WKND 项目。它包括以下内容：
+这些示例查询基于 WKND 项目。 它包括以下内容：
 
 * 在以下位置提供的内容片段模型：
   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1245,11 +1257,11 @@ query {
 此示例查询查找：
 
 * 特定路径下类型为 `article` 的单个内容片段
-   * 在该路径内，所有格式的内容：
-      * HTML
-      * Markdown
-      * 纯文本
-      * JSON
+  * 在该路径内，所有格式的内容：
+    * HTML
+    * Markdown
+    * 纯文本
+    * JSON
 
 **示例查询**
 
@@ -1275,7 +1287,7 @@ query {
 此示例查询查找：
 
 * 单个内容片段
-   * 底层内容片段模型的详细信息
+  * 底层内容片段模型的详细信息
 
 **示例查询**
 
@@ -1299,7 +1311,7 @@ query {
 此查询查找：
 
 * 特定路径下类型为 `article` 的单个内容片段
-   * 在该路径中，引用（嵌套）片段的路径和作者
+  * 在该路径中，引用（嵌套）片段的路径和作者
 
 >[!NOTE]
 >
@@ -1329,11 +1341,11 @@ query {
 此查询查找：
 
 * 类型为 `bookmark` 的多个内容片段
-   * 带有对特定模型类型 `Article` 的其他片段的片段引用
+  * 带有对特定模型类型 `Article` 的其他片段的片段引用
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。查询将`fragments`作为`[Article]`的数组传递
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`。 查询将`fragments`作为`[Article]`的数组传递
 
 ```graphql
 {
@@ -1353,11 +1365,11 @@ query {
 此查询查找：
 
 * 类型为 `bookmark` 的多个内容片段
-   * 带有对特定模型类型 `Article` 和 `Adventure` 的其他片段的片段引用
+  * 带有对特定模型类型 `Article` 和 `Adventure` 的其他片段的片段引用
 
 >[!NOTE]
 >
->字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`、`Adventure`。查询以 `[AllFragmentModels]` 数组形式传递 `fragments`，该数组通过联合类型解除引用。
+>字段 `fragments` 具有数据类型 `fragment-reference`，并选择了模型 `Article`、`Adventure`。 查询以 `[AllFragmentModels]` 数组形式传递 `fragments`，该数组通过联合类型解除引用。
 
 ```graphql
 {
@@ -1380,7 +1392,7 @@ query {
 
 ### 具有内容引用的特定模型的内容片段示例查询{#sample-wknd-fragment-specific-model-content-reference}
 
-此查询有两种风格：
+此查询有两种形式：
 
 1. 用于返回所有内容引用。
 1. 用于返回类型为 `attachments` 的特定内容引用。
@@ -1388,7 +1400,7 @@ query {
 这些查询查找：
 
 * 类型为 `bookmark` 的多个内容片段
-   * 具有对其他片段的内容引用
+  * 具有对其他片段的内容引用
 
 #### 具有预获取引用的多个内容片段的示例查询 {#sample-wknd-multiple-fragments-prefetched-references}
 
@@ -1470,7 +1482,7 @@ query {
 此查询查找：
 
 * 特定路径下类型为 `bookmark` 的单个内容片段
-   * 在其中，具有 RTE 内联引用
+  * 在其中，RTE 内联引用
 
 >[!NOTE]
 >
@@ -1516,7 +1528,7 @@ query {
 此查询查找：
 
 * 特定路径下类型为 `article` 的单个内容片段
-   * 在该路径中，与变体相关的数据： `variation1`
+  * 在该路径中，与变体相关的数据： `variation1`
 
 **示例查询**
 
@@ -1589,7 +1601,7 @@ query {
 }
 ```
 
-### 附加了特定标签的给定模型的内容片段变体的示例查询{#sample-wknd-fragment-variations-given-model-specific-tag}
+### 附加了特定标记的给定模型的内容片段变体的示例查询{#sample-wknd-fragment-variations-given-model-specific-tag}
 
 此查询查找：
 
@@ -1657,7 +1669,7 @@ query {
 
 * [公司](#model-company)
 -> [人员](#model-person)
--> [奖励](#model-award)
+    -> [奖励](#model-award)
 
 * [城市](#model-city)
 
@@ -1668,12 +1680,12 @@ query {
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
 | 公司名称 | 单行文本 | |
-| CEO | 片段引用（单个字段） | [人员](#model-person) |
+| CEO | 片段引用（单个） | [人员](#model-person) |
 | 员工 | 片段引用（多个字段） | [人员](#model-person) |
 
 #### 人员 {#model-person}
 
-这些字段定义人员，也可以是员工：
+以下字段定义人员，该人员也可以是员工：
 
 | 字段名 | 数据类型 | 引用 |
 |--- |--- |--- |
@@ -1710,29 +1722,29 @@ query {
 | 公司名称 | CEO | 员工 |
 |--- |--- |--- |
 | Apple | Steve Jobs | Duke Marsh<br>Max Caulfield |
-| Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
+|  Little Pony Inc. | Adam Smith | Lara Croft<br>Cutter Slade |
 | NextStep Inc. | Steve Jobs | Joe Smith<br>Abe Lincoln |
 
 #### 人员 {#fragment-person}
 
 | 姓名 | 名字 | 奖励 |
 |--- |--- |--- |
-| Lincoln | Abe | |
+| Lincoln |  Abe | |
 | Smith | Adam |   |
-| Slade | Cutter | Gameblitz<br>Gamestar |
-| Marsh | Duke |   |
-| Smith | Joe |   |
-| Croft | Lara | Gamestar |
-| Caulfield | Max | Gameblitz |
-| Jobs | Steve |   |
+| Slade |  Cutter |  Gameblitz<br>Gamestar |
+| Marsh |  Duke |   |
+|  Smith |  Joe |   |
+| Croft |  Lara | Gamestar |
+| Caulfield |  Max |  Gameblitz |
+|  Jobs |  Steve |   |
 
 #### 奖励 {#fragment-award}
 
 | 简称/ID | 标题 |
 |--- |--- |
 | GB | Gameblitz |
-| GS | Gamestar |
-| OSC | Oscar |
+|  GS | Gamestar |
+|  OSC | Oscar |
 
 #### 城市 {#fragment-city}
 
@@ -1741,7 +1753,7 @@ query {
 | 巴塞尔 | 瑞士 | 172258 | 城市:emea |
 | 柏林 | 德国 | 3669491 | 城市:capital<br>城市:emea |
 | 布加勒斯特 | 罗马尼亚 | 1821000 |  城市:capital<br>城市:emea |
-| 圣弗朗西斯科 | 美国 |  883306 |  城市:beach<br>城市:na |
-| 圣何塞 | 美国 |  102635 |  城市:na |
-| 斯图加特 | 德国 | 634830 |  城市:emea |
-| 苏黎世 | 瑞士 | 415367 |  城市:capital<br>城市:emea |
+| 圣弗朗西斯科 |  美国 |  883306 |  城市:beach<br>城市:na |
+| 圣何塞 |  美国 |  102635 |  城市:na |
+| 斯图加特 |  德国 |  634830 |  城市:emea |
+|  苏黎世 |  瑞士 |  415367 |  城市:capital<br>城市:emea |

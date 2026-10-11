@@ -9,16 +9,32 @@ role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: da0dfbce-df02-4f8b-b32d-a4e3b1d05085
+    internal-label: Configuration
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '766'
 ht-degree: 3%
-
 ---
-
 # HTTP/2 内容交付 {#http-delivery-of-content}
 
-Adobe 很高兴地宣布推出 HTTP/2 内容交付功能，这意味着性能将全面提升。
+Adobe 很高兴地宣布推出 HTTP/2 内容交付功能，其总体优势是性能得到提升。
 
 >[!NOTE]
 >
@@ -63,7 +79,7 @@ The following demonstration illustrates the difference between HTTP/1 versus HTT
 
 您启动切换到HTTP/2的请求；不会自动为您完成此操作。
 
-1. 要切换到HTTP/2，请启动Adobe客户支持请求。 请参阅[打开支持票证](https://experienceleague.adobe.com/zh-hans?support-solution=General&lang=en&support-tab=home#support)。
+1. 要切换到HTTP/2，请启动Adobe客户支持请求。 请参阅[打开支持票证](https://experienceleague.adobe.com/?support-solution=General&lang=en&support-tab=home#support)。
 
    1. 在您的支持请求中提供以下信息：
 

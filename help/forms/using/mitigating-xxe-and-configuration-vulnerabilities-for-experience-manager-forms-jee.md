@@ -1,6 +1,6 @@
 ---
 title: 缓解JEE上AEM Forms的XXE、Struts开发模式配置和远程代码执行漏洞
-description: 缓解JEE上AEM Forms的XXE、配置和远程代码执行漏洞
+description: 缓解 JEE 上的 AEM Forms 中的 XXE、配置和远程代码执行漏洞
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Security
@@ -8,14 +8,20 @@ geptopics: SG_AEMFORMS/categories/jee
 role: Admin
 exl-id: 9fade12f-a038-4fd6-8767-1c30966574c5
 solution: Experience Manager, Experience Manager Forms
-release-date: 2025-08-05T00:00:00Z
-source-git-commit: 3f64cfa688ef1f0090b7ce0d821324593cbea693
+release-date: 2025-08-05T00:00:00.000Z
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 5%
-
+source-wordcount: '699'
+ht-degree: 8%
 ---
-
 # 缓解JEE上AEM Forms的RCE (CVE-2025-49533)、Struts开发模式配置(CVE-2025-54253)、XXE (CVE-2025-54254)和漏洞 {#mitigating-xxe-configuration-rce-vulnerabilities-aem-forms}
 
 ## 快速参考
@@ -67,7 +73,7 @@ ht-degree: 5%
 
 1. [下载6.5.23.0](/help/release-notes/aem-forms-hotfix.md)的修补程序。
 1. 按照标准的[修补程序/修补程序安装说明](/help/release-notes/jee-patch-installer-65.md)操作
-1. 如果您在IBM WebSphere或Oracle WebLogic上使用Document Security(以前称为Rights Management)，请在启动AEM Forms服务器之前设置以下Java系统属性（JVM参数）：
+1. 如果您在IBM WebSphere或Oracle WebLogic上使用Document Security（以前称为Rights Management），请在启动AEM Forms服务器之前设置以下Java系统属性（JVM参数）：
 
    ```
    -Dcom.adobe.forms.jee.services.allowDoctypeDeclaration=true
@@ -77,11 +83,11 @@ ht-degree: 5%
 
 ### 选项2： （对于6.5.18.0 - 6.5.22.0上的用户）手动安装修补程序
 
-+++通过6.5.18.0手动安装6.5.22.0的修补程序
++++通过6.5.22.0手动安装6.5.18.0的修补程序
 
 **步骤1：下载并解压缩修补程序包**
 
-- 从Adobe软件分发门户下载适用于[&#x200B; - 6.5.22.6.5.18.0的](/help/release-notes/aem-forms-hotfix.md)修补程序
+- 下载适用于6.5.18.0 - 6.5.22.](/help/release-notes/aem-forms-hotfix.md)的[修补程序 从Adobe软件分发门户
 - 本地提取
 
 **步骤2：导航到正确的版本文件夹**
@@ -227,7 +233,7 @@ ht-degree: 5%
 
 
 
-**步骤5：使用`adobe-rightsmanagement-<appserver>-dsc.jar`更新**&#x200B;文件
+**步骤5：使用**&#x200B;更新`adobe-rightsmanagement-<appserver>-dsc.jar`文件
 
 ```
 adobe-xxe-configuration-hotfix/SP[version]/<appserver>/adobe-rightsmanagement-<appserver>-dsc.jar
@@ -237,7 +243,7 @@ adobe-xxe-configuration-hotfix/SP[version]/<appserver>/adobe-rightsmanagement-<a
 
 **步骤6： WebSphere和WebLogic上的Document Security的其他配置**：
 
-如果您使用的是Document Security(以前称为Rights Management)，请在启动AEM Forms服务器之前设置以下Java系统属性（JVM参数）：
+如果您使用的是Document Security（以前称为Rights Management），请在启动AEM Forms服务器之前设置以下Java系统属性（JVM参数）：
 
 ```
 -Dcom.adobe.forms.jee.services.allowDoctypeDeclaration=true
@@ -257,7 +263,7 @@ adobe-xxe-configuration-hotfix/SP[version]/<appserver>/adobe-rightsmanagement-<a
 
 ## 引用
 
-- [CWE-611： XML外部实体引用](https://cwe.mitre.org/data/definitions/611.html)的限制不正确
+- [CWE-611：对XML外部实体引用的限制不正确](https://cwe.mitre.org/data/definitions/611.html)
 - [CWE-16：配置](https://cwe.mitre.org/data/definitions/16.html)
-- [OWASP XXE防范备忘单](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
-- [Adobe Experience Manager Forms安全最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html?lang=zh-Hans)
+- [OWASP XXE预防备忘单](https://owasp.org/www-community/vulnerabilities/XML_External_Entity_XXE_Processing)
+- [Adobe Experience Manager Forms安全最佳实践](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/security.html)

@@ -9,13 +9,17 @@ exl-id: a6e59334-09e2-4bb8-b445-1868035da556
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2976'
 ht-degree: 0%
-
 ---
-
 # 通过内容同步处理移动设备{#mobile-with-content-sync}
 
 {{ue-over-mobile}}
@@ -77,7 +81,7 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 
 如果您正在[使用Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)配置服务，请键入用户或组的名称作为“可授权回退缓存”属性的值。
 
-如果您在存储库[&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中进行配置，请使用以下有关服务的信息：
+如果您在存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中进行[配置，请使用以下有关服务的信息：
 
 * PID： com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * 属性名称： contentsync.fallback.authorizable

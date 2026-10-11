@@ -10,13 +10,22 @@ exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2806'
 ht-degree: 4%
-
 ---
-
 # 报告 {#reporting}
 
 为了帮助您监测和分析实例的状态，Adobe Experience Manager (AEM)提供了一系列默认报表，您可以根据自己的要求对这些报表进行配置：
@@ -73,8 +82,8 @@ Sidekick的&#x200B;**组件**&#x200B;选项卡（可在报告页面上找到）�
 
 * 要添加列，请将所需的组件从sidekick拖放到所需的位置
 
-   * 绿色勾号表示位置何时有效，一对箭头表示位置准确位置
-   * 红色的no-go符号指示位置何时无效
+  * 绿色勾号表示位置何时有效，一对箭头表示位置准确位置
+  * 红色的no-go符号指示位置何时无效
 
 * 要移动列，请单击标题并按住，然后拖动到新位置
 * 要删除列，请单击列标题，按住，然后向上拖动到报表标题区域（红色减号表示位置无效）。 释放鼠标按键，删除组件对话框会要求确认您确实要删除该列。
@@ -173,8 +182,8 @@ Sidekick的&#x200B;**组件**&#x200B;选项卡（可在报告页面上找到）�
 
   例如，如果2011年2月有每日快照：
 
-   * 如果间隔设置为`Day`，则每个快照在图表中都显示为单个值。
-   * 如果间隔设置为`Month`，则2月份的所有快照都将聚合为一个值（在图表中显示为单个“点”）。
+  * 如果间隔设置为`Day`，则每个快照在图表中都显示为单个值。
+  * 如果间隔设置为`Month`，则2月份的所有快照都将聚合为一个值（在图表中显示为单个“点”）。
 
 选择您的要求，然后单击&#x200B;**转到**&#x200B;以将其应用于报表。 若要在生成更多快照后更新显示，请再次单击&#x200B;**转到**。
 
@@ -250,17 +259,17 @@ Sidekick的&#x200B;**组件**&#x200B;选项卡（可在报告页面上找到）�
 
 * **报表处理**
 
-   * **自动刷新数据**
+  * **自动刷新数据**
 
-     每次更新报表定义时，都会刷新报表数据。
+    每次更新报表定义时，都会刷新报表数据。
 
-   * **手动刷新数据**
+  * **手动刷新数据**
 
-     当数据量较大时，此选项可用于防止自动刷新操作造成的延迟。
+    当数据量较大时，此选项可用于防止自动刷新操作造成的延迟。
 
-     选择此选项表示当报告配置的任何方面发生更改时，必须手动刷新报告数据。 它还意味着当您更改配置的任何方面时，报告表将被遮蔽。
+    选择此选项表示当报告配置的任何方面发生更改时，必须手动刷新报告数据。 它还意味着当您更改配置的任何方面时，报告表将被遮蔽。
 
-     选择此选项后，将显示&#x200B;**[加载数据](#load-data)**&#x200B;按钮（在报告上的&#x200B;**编辑**&#x200B;旁边）。 **加载数据**&#x200B;加载数据并刷新显示的报表数据。
+    选择此选项后，将显示&#x200B;**[加载数据](#load-data)**&#x200B;按钮（在报告上的&#x200B;**编辑**&#x200B;旁边）。 **加载数据**&#x200B;加载数据并刷新显示的报表数据。
 
 * **快照**
 您可以定义创建快照的频率：每天、每小时或根本不创建快照。
@@ -447,7 +456,7 @@ Sidekick的&#x200B;**组件**&#x200B;选项卡（可在报告页面上找到）�
 
 #### 通用列 {#generic-column}
 
-**通用**&#x200B;列在用户报表中可用，以便您可以访问自定义信息，通常从[用户配置文件](/help/sites-administering/identity-management.md#profiles-and-user-accounts)访问；例如，如“将字段添加到配置文件定义”[&#128279;](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition)下详细介绍的收藏颜色。
+**通用**&#x200B;列在用户报表中可用，以便您可以访问自定义信息，通常从[用户配置文件](/help/sites-administering/identity-management.md#profiles-and-user-accounts)访问；例如，如“将字段添加到配置文件定义”](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition)下详细介绍的[收藏颜色。
 
 执行以下任一操作时，将打开“类属”列对话框：
 

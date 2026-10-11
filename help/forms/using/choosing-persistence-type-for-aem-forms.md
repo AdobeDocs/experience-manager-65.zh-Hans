@@ -1,5 +1,5 @@
 ---
-title: 为AEM Forms安装选择持久性类型
+title: 为 AEM Forms 安装选择持久化类型
 description: 明智地选择持久性类型。 它可帮助您构建高效且可扩展的AEM Forms环境。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,28 @@ role: Admin
 exl-id: 621fe107-f4ac-42b1-8c7b-8abbcaac7380
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '372'
-ht-degree: 1%
-
+source-wordcount: '373'
+ht-degree: 6%
 ---
-
-# 为AEM Forms安装选择持久性类型 {#choosing-a-persistence-type-for-an-aem-forms-installation}
+# 为 AEM Forms 安装选择持久化类型 {#choosing-a-persistence-type-for-an-aem-forms-installation}
 
 明智地选择持久性类型。 它可帮助您构建高效且可扩展的AEM Forms环境。
 
@@ -24,7 +38,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->LiveCycleES4 SP1使用TarPM持久性来存储内容。
+>LiveCycle ES4 SP1使用TarPM持久性存储内容。
 
 下表列出了所有支持的持久性类型以及各种参数，可帮助您选择环境的持久性类型：
 
@@ -57,7 +71,7 @@ ht-degree: 1%
  </tbody>
 </table>
 
-TarMK旨在提高性能，而MongoMK和RDBMK旨在实现可扩展性。 对于Author和Publish实例，Adobe强烈建议将TarMK作为所有AEM Forms部署方案的默认持久性技术，但[选择Mongo或关系数据库微内核而非TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p)部分中概述的用例除外。
+TarMK旨在提高性能，而MongoMK和RDBMK旨在实现可扩展性。 Adobe强烈建议将TarMK作为所有AEM Forms部署方案（对于Author和Publish实例）的默认持久性技术，但[选择Mongo或关系数据库微内核而非TarMK](#p-choosing-mongo-or-a-relational-database-microkernel-over-tarmk-p)部分中概述的使用情况除外。
 
 有关支持的微内核列表，请参阅[OSGi上的AEM Forms技术要求](/help/sites-deploying/technical-requirements.md)或[JEE上的AEM Forms支持的平台组合](/help/forms/using/aem-forms-jee-supported-platforms.md)篇文章。
 

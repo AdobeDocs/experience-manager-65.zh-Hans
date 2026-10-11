@@ -7,7 +7,25 @@ exl-id: 0202ca65-21ef-4477-b704-7b52314a7d7b
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1176'
 ht-degree: 1%
@@ -53,11 +71,11 @@ ht-degree: 1%
 
 1. 在&#x200B;**[!UICONTROL THEN]**&#x200B;语句中，从&#x200B;**[!UICONTROL 选择操作]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 调用服务]**。
 1. 从&#x200B;**[!UICONTROL 选择]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL 检索送货地址]**&#x200B;服务。
-1. 将&#x200B;**[!UICONTROL 客户ID]**&#x200B;字段从“表单对象”选项卡拖放到&#x200B;**[!UICONTROL 放置对象，或在**&#x200B;[!UICONTROL &#x200B;输入&#x200B;]&#x200B;**框中选择此处]**&#x200B;字段。
+1. 将&#x200B;**[!UICONTROL 客户ID]**&#x200B;字段从“表单对象”选项卡拖放到&#x200B;**[!UICONTROL 放置对象，或在**[!UICONTROL &#x200B;输入&#x200B;]**框中选择此处]**&#x200B;字段。
 
    ![dropobjectstoinputfield-retrievedata](assets/dropobjectstoinputfield-retrievedata.png)
 
-1. 从“表单对象”选项卡中将&#x200B;**[!UICONTROL 客户ID、名称、送货地址、状态和邮政编码]**&#x200B;字段拖放到&#x200B;**[!UICONTROL 放置对象或在**&#x200B;[!UICONTROL &#x200B;输出&#x200B;]&#x200B;**框中选择]**&#x200B;字段。
+1. 从“表单对象”选项卡中将&#x200B;**[!UICONTROL 客户ID、名称、送货地址、状态和邮政编码]**&#x200B;字段拖放到&#x200B;**[!UICONTROL 放置对象或在**[!UICONTROL &#x200B;输出&#x200B;]**框中选择]**&#x200B;字段。
 
    ![dropobjectstooutputfield-retrievedata](assets/dropobjectstooutputfield-retrievedata.png)
 
@@ -87,7 +105,7 @@ ht-degree: 1%
 
    ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-1. 从[!UICONTROL 表单对象]选项卡中将&#x200B;**[!UICONTROL 送货地址、状态和邮政编码]**&#x200B;字段拖放到&#x200B;**[!UICONTROL 放置对象的相应tablename .property（例如，customerdetails .shippingAddress）或在**&#x200B;[!UICONTROL &#x200B; INPUT &#x200B;]&#x200B;**框中选择此处]**&#x200B;字段。 以tablename为前缀的所有字段（例如，此用例中的customerdetails）用作更新服务的输入数据。 这些字段中提供的所有内容都会在数据源中进行更新。
+1. 从[!UICONTROL 表单对象]选项卡中将&#x200B;**[!UICONTROL 送货地址、状态和邮政编码]**&#x200B;字段拖放到&#x200B;**[!UICONTROL 放置对象的相应tablename .property（例如，customerdetails .shippingAddress）或在**[!UICONTROL  INPUT ]**框中选择此处]**&#x200B;字段。 以tablename为前缀的所有字段（例如，此用例中的customerdetails）用作更新服务的输入数据。 这些字段中提供的所有内容都会在数据源中进行更新。
 
    >[!NOTE]
    >

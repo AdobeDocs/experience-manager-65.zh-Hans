@@ -6,13 +6,21 @@ feature: Commerce Integration Framework
 exl-id: 92b964f8-6672-4f76-8a9f-5782c3ceb83f
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '757'
 ht-degree: 9%
-
 ---
-
 # AEM Content and Commerce 快速入门 {#start}
 
 要开始使用AEM Content和Commerce，您需要安装适用于AEM 6.5的AEM Content和Commerce加载项。
@@ -95,6 +103,6 @@ CIF加载项提供了位于`/api/graphql`的GraphQL代理servlet，可以选择�
 
 ## 其他资源 {#additional-resources}
 
-- [AEM 项目原型](https://github.com/adobe/aem-project-archetype)
+- [AEM 项目原型模板](https://github.com/adobe/aem-project-archetype)
 - [AEM Venia参考商店](https://github.com/adobe/aem-cif-guides-venia)
 - [Commerce多商店设置](configuring/multi-store-setup.md)

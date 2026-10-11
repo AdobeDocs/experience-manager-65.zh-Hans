@@ -1,5 +1,5 @@
 ---
-title: 打印渠道和Web渠道
+title: 打印渠道与 web 渠道
 description: 导入打印渠道模板以及创建和启用Web渠道模板
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,24 +8,40 @@ feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 0%
-
+source-wordcount: '697'
+ht-degree: 1%
 ---
-
-# 打印渠道和Web渠道{#print-channel-and-web-channel}
+# 打印渠道与 web 渠道{#print-channel-and-web-channel}
 
 交互式通信可通过两种渠道提供：打印和Web。 打印渠道用于创建PDF和纸质通信，如作为保险费支付提醒的打印信函，而Web渠道用于提供在线体验，如网站上的信用卡对帐单。
 
 交互式通信作者可以重复使用文档片段和图像等资产，以创建交互式通信的打印版本和Web版本。
 
-[创建交互式通信](../../forms/using/create-interactive-communication.md)的先决条件之一是在服务器上提供用于打印和/或Web渠道的模板。 当模板作者在AEM本身中创建Web渠道模板时，打印渠道模板XDP在AdobeForms Designer中创建并上传到服务器。
+[创建交互式通信](../../forms/using/create-interactive-communication.md)的先决条件之一是在服务器上提供用于打印和/或Web渠道的模板。 当模板作者在AEM中创建Web渠道模板时，打印渠道模板XDP在Adobe Forms Designer中创建并上传到服务器。
 
 ## 打印渠道 {#printchannel}
 
-交互式通信的打印渠道使用XFA表单模板XDP。 XDP是在AdobeForms Designer中设计的。 有关创建打印渠道模板的详细信息，请参阅[布局设计](../../forms/using/layout-design-details.md)。 要在交互式通信中使用打印渠道模板，您需要将该模板上传到AEM Forms服务器。
+交互式通信的打印渠道使用XFA表单模板XDP。 在Adobe Forms Designer中设计XDP。 有关创建打印渠道模板的详细信息，请参阅[布局设计](../../forms/using/layout-design-details.md)。 要在交互式通信中使用打印渠道模板，您需要将该模板上传到AEM Forms服务器。
 
 ### 上载交互式通信打印渠道模板 {#upload-interactive-communication-print-channel-template}
 

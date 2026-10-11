@@ -9,13 +9,29 @@ role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,AEM Forms on JEE
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2399'
+source-wordcount: '2508'
 ht-degree: 0%
-
 ---
-
 # 使用 REST 请求调用 AEM Forms {#invoking-aem-forms-using-rest-requests}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -51,7 +67,7 @@ ht-degree: 0%
 
   如果使用HTTP POST方法调用Froms服务，则参数将传递到HTTP请求正文中。 如果AEM Forms服务的签名具有字符串输入参数，则请求正文可以包含输入参数的文本值。 如果服务的签名定义了多个字符串参数，则请求可以遵循HTTP的`application/x-www-form-urlencoded`表示法，并将参数的名称用作表单的字段名称。
 
-  如果Forms服务返回字符串参数，则结果以文本形式表示输出参数。如果服务返回多个字符串参数，则结果为XML文档，它按以下格式对输出参数进行编码：
+  如果Forms服务返回字符串参数，则结果以文本形式表示输出参数。 如果服务返回多个字符串参数，则结果为XML文档，它按以下格式对输出参数进行编码：
   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
 
   >[!NOTE]
@@ -84,7 +100,7 @@ ht-degree: 0%
 * 指向文档内容的URL（如果列表包含`com.adobe.idp.Document`对象）
 
   以下示例是一个服务返回的XML消息，该服务具有名为&#x200B;*list*的单个输出参数，该参数是一个整数列表。
-  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`在生成的XML消息中，输出映射参数表示为一系列的XML元素，其中映射中的每个记录都有一个元素。每个元素的名称与映射记录的键相同。每个元素的值是映射记录值的文本表示形式（如果映射包含具有字符串值的记录）或指向文档内容的URL（如果映射包含具有`com.adobe.idp.Document`值的记录）。以下是由具有名为`map`的单个输出参数的服务返回的XML消息的示例。此参数值是一个映射，包含将字母与`com.adobe.idp.Document`对象关联的记录。
+  ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`在生成的XML消息中，输出映射参数表示为一系列的XML元素，其中映射中的每个记录都有一个元素。 每个元素的名称与映射记录的键相同。 每个元素的值是映射记录值的文本表示形式（如果映射包含具有字符串值的记录）或指向文档内容的URL（如果映射包含具有`com.adobe.idp.Document`值的记录）。 以下是由具有名为`map`的单个输出参数的服务返回的XML消息的示例。 此参数值是一个映射，包含将字母与`com.adobe.idp.Document`对象关联的记录。
   ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## 异步调用 {#asynchronous-invocations}

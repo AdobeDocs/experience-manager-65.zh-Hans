@@ -10,13 +10,20 @@ exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
 solution: Experience Manager
 feature: Communities
 role: Developer
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 0%
-
 ---
-
 # 添加Clientlibs {#add-clientlibs}
 
 ## 添加ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs}
@@ -74,7 +81,7 @@ css.txt和js.txt的第一行标识了找到以下文件列表的基本位置。
 
 ### 嵌入SCF Clientlibs {#embed-scf-clientlibs}
 
-在`clientlibs`节点的&#x200B;**属性**&#x200B;选项卡中，输入多值字符串属性&#x200B;**embed**。 这会为SCF组件[&#128279;](/help/communities/client-customize.md#clientlibs-for-scf)嵌入必要的客户端库(clientlibs)。 在本教程中，添加了社区组件所需的许多clientlibs。
+在`clientlibs`节点的&#x200B;**属性**&#x200B;选项卡中，输入多值字符串属性&#x200B;**embed**。 这会为SCF组件](/help/communities/client-customize.md#clientlibs-for-scf)嵌入必要的[客户端库(clientlibs)。 在本教程中，添加了社区组件所需的许多clientlibs。
 
 这可能是也可能不是用于生产站点的所需方法，因为需要考虑方便性相对于为每个页面下载的clientlibs的大小/速度。
 
@@ -90,7 +97,7 @@ css.txt和js.txt的第一行标识了找到以下文件列表的基本位置。
 * 值： **`cq.social.scf`**
 
   * 它会弹出一个对话框，
-    在每个条目后单击&#x200B;**`+`**&#x200B;以添加以下clientlib类别：
+    在每个条目后单击**`+`**&#x200B;以添加以下clientlib类别：
 
     * **`cq.ckeditor`**
     * **`cq.social.author.hbs.comments`**

@@ -5,14 +5,30 @@ exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1189'
+source-wordcount: '1234'
 ht-degree: 0%
-
 ---
-
-# 在动态PDF forms中生成和使用哈希 {#generate-work-with-hashes-dynamic-pdf-forms}
+# 在动态 PDF forms 中生成和处理哈希 {#generate-work-with-hashes-dynamic-pdf-forms}
 
 ## 必备知识 {#prerequisite-knowledge}
 
@@ -22,13 +38,13 @@ ht-degree: 0%
 
 开始
 
-如果您希望在PDF表单中隐藏口令，并且不希望该口令以明文形式显示在源代码中或PDF文档的任何位置，了解如何生成并使用MD4、MD5、SHA-1和SHA-256哈希是关键。
+当您想要在PDF表单中隐藏口令，并且不希望该口令以明文形式显示在源代码中或PDF文档的任何位置时，知道如何生成并使用MD4、MD5、SHA-1和SHA-256哈希是关键所在。
 
-其思想是通过生成唯一的哈希并将此哈希存储在PDF文档中来模糊密码。 此唯一哈希可以由不同的哈希函数生成，在本文中，将向您展示如何在PDF表单中生成哈希以及如何使用它们。
+其思想是通过生成唯一的哈希并将此哈希存储在PDF文档中来模糊密码。 此唯一哈希可以由不同的哈希函数生成，在本文中，将向您展示如何在PDF表单中生成这些哈希以及如何使用它们。
 
 哈希函数将任意长度的长字符串（或消息）作为输入，并生成固定长度的字符串作为输出，有时称为消息摘要或数字指纹。
 
-通过JEE Designer上的AEM Forms，您可以在as JavaScript的脚本对象中实施各种哈希函数，并在动态PDF文档中运行这些函数。 本文示例文件包含的示例PDF使用以下散列函数的开源实现：
+通过JEE Designer上的AEM Forms，您可以在as JavaScript的脚本对象中实施不同的哈希函数，并在动态PDF文档中运行这些函数。 本文示例文件包含的示例PDF使用以下哈希函数的开源实现：
 
 * MD4和MD5 — 由Ronald Rivest设计
 
@@ -112,9 +128,9 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## 从这里前往何处 {#next-steps}
 
-你在哪里需要这样的东西？ 考虑一个PDF表单，其中包含应仅由授权人员填写的字段。 通过使用密码保护这些字段（在Sample_2.pdf中文档的任何位置均无法以明文显示），您可以确保只有知道密码的用户才能访问这些字段。
+你在哪里需要这样的东西？ 考虑一个PDF表单，其中包含仅应由授权人员填写的字段。 通过使用密码保护这些字段（在Sample_2.pdf中文档的任何位置均无法以明文显示），您可以确保只有知道密码的用户才能访问这些字段。
 
-我鼓励您继续探索这两个示例PDF文件。  您可以使用Sample_1.pdf生成新的哈希值，并使用生成的值更改Sample_2.pdf中使用的密码或哈希函数。  归因部分中列出的资源还提供有关哈希处理以及本文中使用的特定JavaScript实现的其他信息。
+我鼓励您继续探索这两个PDF示例文件。  您可以使用Sample_1.pdf生成新的哈希值，并使用生成的值更改Sample_2.pdf中使用的密码或哈希函数。  归因部分中列出的资源还提供有关哈希处理以及本文中使用的特定JavaScript实现的其他信息。
 
 ## 归因 {#attributions}
 

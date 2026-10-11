@@ -10,13 +10,20 @@ exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1210'
+source-wordcount: '1212'
 ht-degree: 0%
-
 ---
-
 # 体验已发布的站点 {#experience-the-published-site}
 
 ## 发布时浏览到新站点 {#browse-to-new-site-on-publish}
@@ -87,8 +94,8 @@ ht-degree: 0%
 * **配置文件**&#x200B;选项允许您查看和编辑配置文件。
 * [消息](/help/communities/configure-messaging.md)选项会将您定向到直接消息传送部分，您可以在其中执行以下操作：
 
-   1. 查看您已收到（收件箱）、已发送（已发送项目）和已删除（垃圾桶）的私信。
-   1. 撰写新的私信，以便发送给个人和群组。
+  1. 查看您已收到（收件箱）、已发送（已发送项目）和已删除（垃圾桶）的私信。
+  1. 撰写新的私信，以便发送给个人和群组。
 
 * [通知](/help/communities/notifications.md)选项会将您转到通知部分，您可以在其中查看感兴趣的事件并编辑通知设置。
 * 如果您具有审核权限，[管理](/help/communities/published-site.md#moderationlink)会将您定向到AEM Communities审核页面。
@@ -154,13 +161,13 @@ ht-degree: 0%
 
 * 一个名为`Baseball`
 
-   * 将其保留设置为`Open Group`（必需成员资格）。
-   * 在“模板”选项卡上，选择`Conversational Group`。
+  * 将其保留设置为`Open Group`（必需成员资格）。
+  * 在“模板”选项卡上，选择`Conversational Group`。
 
 * 一个名为`Gymnastics`
 
-   * 将其设置更改为`Member Only Group`（受限成员资格）。
-   * 在“模板”选项卡上，选择`Conversational Group`。
+  * 将其设置更改为`Member Only Group`（受限成员资格）。
+  * 在“模板”选项卡上，选择`Conversational Group`。
 
 **通知**：
 

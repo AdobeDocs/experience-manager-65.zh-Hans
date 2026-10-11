@@ -10,13 +10,29 @@ role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services,APIs & Integrations
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2111'
+source-wordcount: '2183'
 ht-degree: 0%
-
 ---
-
 # 动态创建 DDX 文档 {#dynamically-creating-ddx-documents}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -128,7 +144,7 @@ ht-degree: 0%
    * 通过调用`DocumentBuilderFactory`类`newInstance`方法创建Java `DocumentBuilderFactory`对象。
    * 通过调用`DocumentBuilderFactory`对象的`newDocumentBuilder`方法创建Java `DocumentBuilder`对象。
    * 调用`DocumentBuilder`对象的`newDocument`方法以实例化`org.w3c.dom.Document`对象。
-   * 通过调用`org.w3c.dom.Document`对象的`createElement`方法创建DDX文档的根元素。此方法创建表示根元素的`Element`对象。将表示元素名称的字符串值传递给`createElement`方法。将返回值强制转换为`Element`。接下来，通过调用子元素的`setAttribute`方法来为其设置值。最后，通过调用标头元素的`appendChild`方法将元素附加到标头元素，并将子元素对象作为参数传递。以下代码行显示此应用程序逻辑：
+   * 通过调用`org.w3c.dom.Document`对象的`createElement`方法创建DDX文档的根元素。 此方法创建表示根元素的`Element`对象。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 接下来，通过调用子元素的`setAttribute`方法来为其设置值。 最后，通过调用标头元素的`appendChild`方法将元素附加到标头元素，并将子元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * 通过调用`Document`对象的`createElement`方法创建`PDFsFromBookmarks`元素。 将表示元素名称的字符串值传递给`createElement`方法。 将返回值强制转换为`Element`。 通过调用`PDFsFromBookmarks`元素的`setAttribute`方法为其设置值。 通过调用DDX元素的`appendChild`方法，将`PDFsFromBookmarks`元素附加到`DDX`元素。 将`PDFsFromBookmarks`元素对象作为参数传递。 以下代码行显示此应用程序逻辑：
@@ -158,8 +174,8 @@ ht-degree: 0%
    * 创建`com.adobe.idp.Document`对象。 传递包含PDF文档的`java.io.FileInputStream`对象以进行拆分。
    * 通过调用其`put`方法并传递以下参数，向`java.util.Map`对象添加一个条目：
 
-      * 表示键名的字符串值。 此值必须匹配DDX文档中指定的PDF源元素的值。 （在动态创建的DDX文档中，值为`AssemblerResultPDF.pdf`。）
-      * 包含要分解的PDF文档的`com.adobe.idp.Document`对象。
+     * 表示键名的字符串值。 此值必须匹配DDX文档中指定的PDF源元素的值。 （在动态创建的DDX文档中，值为`AssemblerResultPDF.pdf`。）
+     * 包含要分解的PDF文档的`com.adobe.idp.Document`对象。
 
 1. 设置运行时选项。
 
@@ -212,10 +228,10 @@ ht-degree: 0%
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`AssemblerServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`AssemblerServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 创建DDX文档。
 

@@ -6,13 +6,26 @@ solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
 mini-toc-levels: 2
-source-git-commit: 174d9e7466002e209422fefdc32a363a98dc99f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2559'
 ht-degree: 37%
-
 ---
-
 
 # 编辑页面属性{#editing-page-properties}
 
@@ -41,7 +54,7 @@ ht-degree: 37%
 
 #### 品牌化 {#branding}
 
-通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。 此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)中的页面组件。
+通过将品牌概要附加到每个页面标题，跨页面应用一致的品牌识别。 此功能需要使用 2.14.0 版或更高版本的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)中的页面组件。
 
 * **覆盖** – 选中可在此页面上定义品牌概要。
   * 该值会由任何子页面继承，除非它们也设置了&#x200B;**覆盖**&#x200B;值。
@@ -72,7 +85,7 @@ ht-degree: 37%
 
 对于要发布的页面，请将这些字段（**开启时间**&#x200B;和&#x200B;**关闭时间**）留空，这些字段可立即在发布环境中使用并可用，直到它们被停用（一般场景）。
 
-配置打开/关闭时间后，您将在站点控制台[&#128279;](/help/sites-authoring/basic-handling.md#views)的列表和卡片视图以及控制台侧面板的[时间线视图中看到与打开时间相关的其他图标和信息。](/help/sites-authoring/basic-handling.md#timeline)
+配置打开/关闭时间后，您将在站点控制台](/help/sites-authoring/basic-handling.md#views)的[列表和卡片视图以及控制台侧面板的[时间线视图中看到与打开时间相关的其他图标和信息。](/help/sites-authoring/basic-handling.md#timeline)
 
 >[!NOTE]
 >如果&#x200B;**开启时间**&#x200B;或&#x200B;**结束时间**&#x200B;是过去的时间，并且已配置自动复制，则会立即触发相关操作。
@@ -97,7 +110,7 @@ ht-degree: 37%
 >* 不支持正则表达式模式。
 >* 不应设置为现有页面。
 
-配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#enabling-access-to-vanity-urls-vanity-urls)。
+配置Dispatcher以启用对虚名URL的访问。 有关详细信息，请参阅[启用对虚名URL的访问](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#enabling-access-to-vanity-urls-vanity-urls)。
 
 * **添加** — 点击或单击可添加虚URL。
 * **删除** — 点击或单击可删除虚URL。

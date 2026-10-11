@@ -1,18 +1,32 @@
 ---
 title: 创建翻译项目
-description: 了解如何在 [!DNL Adobe Experience Manager]中创建翻译项目。
+description: 了解如何在[!DNL Adobe Experience Manager]中创建翻译项目。
 contentOwner: AG
 role: Developer, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: ee8e0f18-03e5-48ca-a013-04a577cd9a60
+    internal-label: Translation
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1897'
 ht-degree: 16%
-
 ---
-
 # 创建翻译项目 {#creating-translation-projects}
 
 要创建语言副本，请触发[!DNL Experience Manager]用户界面的“引用”边栏下提供的以下语言副本工作流之一。
@@ -48,7 +62,7 @@ ht-degree: 16%
 
 1. 从&#x200B;**[!UICONTROL 项目]**&#x200B;列表中，选择&#x200B;**[!UICONTROL 仅创建结构]**。
 
-1. 单击&#x200B;**[!UICONTROL 创建]**。目标语言的新结构列在&#x200B;**[!UICONTROL 语言副本]**&#x200B;下。
+1. 单击&#x200B;**[!UICONTROL 创建]**。 目标语言的新结构列在&#x200B;**[!UICONTROL 语言副本]**&#x200B;下。
 
    ![语言副本](assets/lang-copy2.png)
 
@@ -73,7 +87,7 @@ ht-degree: 16%
 
 1. 在&#x200B;**[!UICONTROL 项目标题]**&#x200B;字段中，输入项目标题。
 
-1. 单击&#x200B;**[!UICONTROL 创建]**。源文件夹中的[!DNL Assets]将复制到您在步骤4中选择的区域设置的目标文件夹。
+1. 单击&#x200B;**[!UICONTROL 创建]**。 源文件夹中的[!DNL Assets]将复制到您在步骤4中选择的区域设置的目标文件夹。
 
    ![语言副本](assets/lang-copy2.png)
 
@@ -114,7 +128,7 @@ ht-degree: 16%
 如果使用此选项，则对于运行以前的翻译工作流后添加到源文件夹中的资产，翻译工作流会运行。 只有新添加的资产才会复制到包含以前翻译的资产的目标文件夹。 在这种情况下，不会创建新的翻译项目。
 
 1. 在[!DNL Assets] UI中，导航到包含未翻译资产的源文件夹。
-1. 选择要翻译的资产，然后打开&#x200B;**[!UICONTROL “引用”窗格]**。**[!UICONTROL 语言副本]**&#x200B;部分显示当前可用的翻译副本数。
+1. 选择要翻译的资产，然后打开&#x200B;**[!UICONTROL “引用”窗格]**。 **[!UICONTROL 语言副本]**&#x200B;部分显示当前可用的翻译副本数。
 1. 单击&#x200B;**[!UICONTROL 副本]**&#x200B;下的&#x200B;**[!UICONTROL 语言副本]**。 此时将显示可用翻译副本列表。
 1. 单击底部的&#x200B;**[!UICONTROL 创建并翻译]**。
 
@@ -128,7 +142,7 @@ ht-degree: 16%
 
 1. 从&#x200B;**[!UICONTROL 现有翻译项目]**&#x200B;列表中，选择一个项目以添加要翻译的资产。
 
-1. 单击&#x200B;**[!UICONTROL 创建]**。要翻译的资产将添加到目标文件夹。更新的文件夹列在&#x200B;**[!UICONTROL 语言副本]**&#x200B;部分下。
+1. 单击&#x200B;**[!UICONTROL 创建]**。 要翻译的资产将添加到目标文件夹。 更新的文件夹列在&#x200B;**[!UICONTROL 语言副本]**&#x200B;部分下。
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -137,7 +151,7 @@ ht-degree: 16%
 
    ![chlimage_1-80](assets/chlimage_1-80.png)
 
-1. 单击&#x200B;**翻译作业**&#x200B;拼贴底部的省略号可查看翻译工作流中的资产。 翻译作业列表还会显示资源元数据和标记条目。这些条目指示资源的元数据和标记也会被翻译。
+1. 单击&#x200B;**翻译作业**&#x200B;拼贴底部的省略号可查看翻译工作流中的资产。 翻译作业列表还会显示资源元数据和标记条目。 这些条目指示资源的元数据和标记也会被翻译。
 
    >[!NOTE]
    >
@@ -220,7 +234,7 @@ ht-degree: 16%
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. 选中&#x200B;**[!UICONTROL 语言副本]**&#x200B;前面的复选框，这将选择所有语言副本。除与您要翻译的区域设置对应的语言副本外，取消选择其他副本。
+1. 选中&#x200B;**[!UICONTROL 语言副本]**&#x200B;前面的复选框，这将选择所有语言副本。 除与您要翻译的区域设置对应的语言副本外，取消选择其他副本。
 
    ![选择语言副本](assets/lang-copy1.png)
 
@@ -261,5 +275,5 @@ ht-degree: 16%
 
 ## 提示和限制 {#tips-limitations}
 
-* 如果您启动复杂资源(如PDF和[!DNL Adobe InDesign]文件)的翻译工作流，则不会提交其子资源或演绎版（如果有）进行翻译。
+* 如果您启动复杂资源（如PDF和[!DNL Adobe InDesign]文件）的翻译工作流，则不会提交其子资源或演绎版（如果有）进行翻译。
 * 如果使用机器翻译，则不会翻译资产二进制文件。

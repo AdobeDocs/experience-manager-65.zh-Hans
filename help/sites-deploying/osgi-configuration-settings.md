@@ -10,13 +10,22 @@ feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3453'
 ht-degree: 2%
-
 ---
-
 # OSGi 配置设置{#osgi-configuration-settings}
 
 [OSGi](https://www.osgi.org/)是AEM技术栈栈中的基本元素。 它用于控制AEM的复合捆绑包及其配置。
@@ -66,8 +75,8 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 >
 >请务必配置以下内容：
 >
->**用户名**&#x200B;和&#x200B;**密码**，用于访问Apache Felix Web管理控制台本身的凭据。
->初始安装后必须更改密码以确保实例的[安全性](/help/sites-administering/security-checklist.md)。
+>**用户名**&#x200B;和&#x200B;**密码**：用于访问 Apache Felix Web 管理控制台的凭据。
+>初次安装后必须更改密码以确保实例的[安全性](/help/sites-administering/security-checklist.md)。
 
 >[!NOTE]
 >
@@ -84,7 +93,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 * **最小池大小**&#x200B;和&#x200B;**最大池大小**，用于保存事件线程的池大小。
 
 * **队列大小**，池已用完时线程队列的最大大小。
-推荐值为`-1`，因为它将队列设置为无限制。如果设置了限制，则超过该限制时可能会发生丢失。
+推荐值为`-1`，因为它将队列设置为无限制。 如果设置了限制，则超过该限制时可能会发生丢失。
 
 * 更改这些设置有助于在事件较多的场景中提高性能。 例如，重型AEM DAM或工作流使用。
 * 应使用测试建立特定于您的方案的值。
@@ -108,7 +117,7 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 * 对于生产实例：
 
-   * 禁用&#x200B;**生成调试信息**
+  * 禁用&#x200B;**生成调试信息**
 
 **Apache Sling JCR安装程序**&#x200B;这些参数可能不需要配置，但在开发或调试时可用于了解。 例如，安装文件夹对于签入、签出或创建包非常有用。
 
@@ -234,8 +243,8 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 可以设置各种参数，包括：
 
-* **执行路径** — 列出搜索可执行脚本的路径。通过配置特定路径，您可以限制可以运行的脚本。如果未配置路径，则使用默认值( `/` = root)，允许运行所有脚本。
-如果配置的路径值以斜杠结尾，则搜索整个子树。如果没有此类尾随斜杠，则只有在脚本完全匹配时才运行脚本。
+* **执行路径** — 列出搜索可执行脚本的路径。 通过配置特定路径，您可以限制可以运行的脚本。 如果未配置路径，则使用默认值( `/` = root)，允许运行所有脚本。
+如果配置的路径值以斜杠结尾，则搜索整个子树。 如果没有此类尾随斜杠，则只有在脚本完全匹配时才运行脚本。
 
 * **脚本用户** — 此可选属性可以指定用于读取脚本的存储库用户帐户。 如果未指定帐户，则默认使用`admin`用户。
 
@@ -259,21 +268,21 @@ OSGi“*”提供了标准化基元，允许使用小型、可重用的协作组
 
 * 对于生产实例：
 
-   * 启用&#x200B;**缩小**（移除 CRLF 和空白字符）。
-   * 启用 **Gzip**（允许文件压缩并通过单个请求访问）。
-   * 禁用&#x200B;**调试**
-   * 禁用&#x200B;**计时**
+  * 启用&#x200B;**缩小**（移除 CRLF 和空白字符）。
+  * 启用 **Gzip**（允许文件压缩并通过单个请求访问）。
+  * 禁用&#x200B;**调试**
+  * 禁用&#x200B;**计时**
 
 * 对于JS开发（尤其是在firebugging/debugging时）：
 
-   * 禁用&#x200B;**缩小**
-   * 启用&#x200B;**Debug**&#x200B;以分隔文件以进行调试并用于fire bug。
-   * 如果对计时感兴趣，请启用&#x200B;**计时**。
-   * 启用&#x200B;**Debug**&#x200B;控制台以查看JS控制台日志消息。
+  * 禁用&#x200B;**缩小**
+  * 启用&#x200B;**Debug**&#x200B;以分隔文件以进行调试并用于fire bug。
+  * 如果对计时感兴趣，请启用&#x200B;**计时**。
+  * 启用&#x200B;**Debug**&#x200B;控制台以查看JS控制台日志消息。
 
 >[!CAUTION]
 >
->更改&#x200B;**Minify**&#x200B;或&#x200B;**Gzip**&#x200B;的设置时，删除clientlibs缓存的内容。 有关详细信息，请参阅[知识库文章](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html?lang=zh-Hans)。
+>更改&#x200B;**Minify**&#x200B;或&#x200B;**Gzip**&#x200B;的设置时，删除clientlibs缓存的内容。 有关详细信息，请参阅[知识库文章](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16543.html)。
 
 >[!NOTE]
 >
@@ -338,7 +347,7 @@ AEM中有两个可用的UI：
 此身份验证处理程序活动的路径。 如果此参数留空，则会禁用身份验证处理程序。 例如，路径/会导致将身份验证处理程序用于整个存储库。
 
 * **服务排名**
-OSGi框架服务排名值用于指示调用此服务所用的顺序。此值是一个`int`值，其中较高的值表示较高的优先级。
+OSGi框架服务排名值用于指示调用此服务所用的顺序。 此值是一个`int`值，其中较高的值表示较高的优先级。
 默认值为`0`。
 
 * **标头名称**
@@ -356,8 +365,8 @@ OSGi框架服务排名值用于指示调用此服务所用的顺序。此值是�
 * **格式**
 指示提供用户ID所用的格式。 使用：
 
-   * 如果用户ID以HTTP基本身份验证格式编码，则为`Basic`
-   * 如果用户ID以纯文本形式提供，或者任何正则表达式应用值应按原样或任何正则表达式使用，`AsIs`
+  * 如果用户ID以HTTP基本身份验证格式编码，则为`Basic`
+  * 如果用户ID以纯文本形式提供，或者任何正则表达式应用值应按原样或任何正则表达式使用，`AsIs`
 
 **Day CQ WCM调试筛选器**&#x200B;在开发时非常有用，因为它允许在访问页面时使用后缀，如？debug=layout。 例如，https://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout提供了开发人员可能感兴趣的布局信息。
 

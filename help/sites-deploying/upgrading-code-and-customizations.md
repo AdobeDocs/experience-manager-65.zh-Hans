@@ -11,13 +11,22 @@ feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 1%
-
 ---
-
 # 升级代码与自定义项{#upgrading-code-and-customizations}
 
 在计划升级时，必须调查并解决实施的以下方面。
@@ -42,7 +51,8 @@ ht-degree: 1%
 
 除了可以选择升级代码库和自定义以与新的AEM版本配合使用外，6.5还可以通过[AEM 6.5](/help/sites-deploying/backward-compatibility.md)中的向后兼容性中所述的向后兼容性功能，帮助更有效地管理您的自定义项。
 
-如上所述和下图所示，在第一步运行[模式检测器](/help/sites-deploying/pattern-detector.md)可以帮助您评估升级的整体复杂性。 它还有助于您决定是要以兼容模式运行，还是更新自定义项以使用所有新的AEM 6.5功能。 有关更多详细信息，请参阅AEM 6.5[&#128279;](/help/sites-deploying/backward-compatibility.md)中的向后兼容性。[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+如上所述和下图所示，在第一步运行[模式检测器](/help/sites-deploying/pattern-detector.md)可以帮助您评估升级的整体复杂性。 它还有助于您决定是要以兼容模式运行，还是更新自定义项以使用所有新的AEM 6.5功能。 有关更多详细信息，请参阅AEM 6.5](/help/sites-deploying/backward-compatibility.md)中的[向后兼容性。
+[![opt_cropped](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## 升级代码库 {#upgrade-code-base}
 

@@ -9,13 +9,22 @@ exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 96%
-
+source-wordcount: '859'
+ht-degree: 97%
 ---
-
 # 目录生成器{#catalog-producer}
 
 了解如何在 AEM Assets 中使用目录生成器，通过您的数字资产生成产品目录。
@@ -92,10 +101,10 @@ ht-degree: 96%
 1. 要重新排列目录中的页面，请从工具栏点击&#x200B;**创建**&#x200B;图标，然后在菜单中选择&#x200B;**合并**。 在向导中，顶部的轮播允许您通过拖动重新排序页面。 您也可以移除页面。
 
 1. 单击&#x200B;**“下一步”。** 要将现有的 InDesign 文件添加为封面页，请点击&#x200B;**选择封面页**&#x200B;框旁的&#x200B;**浏览**，并指定封面页模板的路径。
-1. 单击&#x200B;**保存**，然后单击&#x200B;**完成**&#x200B;以关闭确认对话框。
-选择&#x200B;**完成**&#x200B;选项时，将打开一个对话框以选择您是否需要.pdf呈现版本。
+1. 点击&#x200B;**保存**，然后点击&#x200B;**完成**以关闭确认对话框。
+选择**完成**选项后，会打开一个对话框，供您选择是否需要 .pdf 演绎版。
    ![导出为pdf](assets/CatalogPDF.png)
-   如果选择Acrobat(PDF)选项，则除了indesign呈现版本之外，还将在&#x200B;**/jcr:content/呈现版本**&#x200B;中创建PDF呈现版本。 您可以在下载对话框中勾选“演绎版”复选框来下载所有演绎版。
+   如果选择Acrobat(PDF)选项，则除了indesign呈现版本之外，还将在**/jcr:content/呈现版本**&#x200B;中创建PDF呈现版本。 您可以在下载对话框中勾选“演绎版”复选框来下载所有演绎版。
 
 1. 要为已创建的目录生成预览，请在&#x200B;**目录**&#x200B;控制台中选择该目录，然后从工具栏点击&#x200B;**预览**&#x200B;图标。
 

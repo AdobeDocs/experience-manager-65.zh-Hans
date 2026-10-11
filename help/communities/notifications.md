@@ -10,13 +10,20 @@ role: Admin
 exl-id: cadb62c9-210d-4204-8abc-d0cf70960392
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '610'
 ht-degree: 0%
-
 ---
-
 # 社区通知 {#communities-notifications}
 
 ## 概述 {#overview}
@@ -34,13 +41,13 @@ AEM Communities提供了一个通知部分，用于显示已登录社区成员�
 
 * 指向通知部分的链接始终显示在社区站点的标题中：
 
-   * 活动需要在社区站点的结构中包含[活动流函数](/help/communities/functions.md#activity-stream-function)。
-   * 订阅需要[配置电子邮件](/help/communities/email.md)。
+  * 活动需要在社区站点的结构中包含[活动流函数](/help/communities/functions.md#activity-stream-function)。
+  * 订阅需要[配置电子邮件](/help/communities/email.md)。
 
 * 通知的实施是通过可扩展且可插拔的渠道实现的：
 
-   * 活动只能在Web上进行。
-   * 只能使用电子邮件进行订阅。
+  * 活动只能在Web上进行。
+  * 只能使用电子邮件进行订阅。
 
 截至社区[FP1](/help/communities/deploy-communities.md#latestfeaturepack)，可用的通知渠道为：
 
@@ -80,11 +87,11 @@ AEM Communities提供了一个通知部分，用于显示已登录社区成员�
 * 查看其他成员的配置文件时。
 * 在主要功能页面（如论坛、问题与解答和博客）上：
 
-   * 遵循该常规功能的所有活动。
+  * 遵循该常规功能的所有活动。
 
 * 对于特定条目，例如论坛主题、问题或博客文章：
 
-   * 关注该特定条目的所有活动。
+  * 关注该特定条目的所有活动。
 
 ## 管理通知设置 {#managing-notification-settings}
 
@@ -94,7 +101,7 @@ Web渠道始终处于启用状态。
 
 ![通知14](assets/notifications1.png)
 
-电子邮件渠道依赖于电子邮件[&#128279;](/help/communities/email.md)的正确配置，它提供的设置与Web渠道的设置相同。
+电子邮件渠道依赖于电子邮件](/help/communities/email.md)的正确[配置，它提供的设置与Web渠道的设置相同。
 
 默认情况下，电子邮件渠道处于关闭状态。
 

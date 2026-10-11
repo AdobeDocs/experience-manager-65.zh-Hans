@@ -10,13 +10,26 @@ exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1558'
 ht-degree: 63%
-
 ---
-
 # 页面创作快速指南{#quick-guide-to-authoring-pages}
 
 这些步骤旨在作为（高级）快速指南，介绍AEM中创作页面内容的关键操作。
@@ -39,20 +52,20 @@ ht-degree: 63%
 
 * **创建**
 
-   * 此按钮在许多控制台中可用 — 显示的选项是上下文相关的，因此在不同的情况下可能有所变化。
+  * 此按钮在许多控制台中可用 — 显示的选项是上下文相关的，因此在不同的情况下可能有所变化。
 
 * 对文件夹中的页面重新排序
 
-   * 这可以在[列表视图](/help/sites-authoring/basic-handling.md#list-view)中完成。 更改已应用并在其他视图中可见。
+  * 这可以在[列表视图](/help/sites-authoring/basic-handling.md#list-view)中完成。 更改已应用并在其他视图中可见。
 
 #### 页面创作 {#page-authoring}
 
 * 导航链接
 
-   * 当您处于&#x200B;***编辑***&#x200B;模式下时，**链接不可用于导航**。 若要使用链接进行导航，您需要使用以下任一方式[预览页面](/help/sites-authoring/editing-content.md#previewing-pages)：
+  * 当您处于&#x200B;***编辑***&#x200B;模式下时，**链接不可用于导航**。 若要使用链接进行导航，您需要使用以下任一方式[预览页面](/help/sites-authoring/editing-content.md#previewing-pages)：
 
-      * [预览模式](/help/sites-authoring/editing-content.md#preview-mode)
-      * [以发布的形式查看](/help/sites-authoring/editing-content.md#view-as-published)
+    * [预览模式](/help/sites-authoring/editing-content.md#preview-mode)
+    * [以发布的形式查看](/help/sites-authoring/editing-content.md#view-as-published)
 
 * 无法从页面编辑器启动/创建版本；现在，可以从站点控制台完成（通过对所选资源选择&#x200B;**创建**&#x200B;或[时间轴](/help/sites-authoring/basic-handling.md#timeline)）。
 
@@ -111,8 +124,8 @@ ht-degree: 63%
 
    * 通过以下方式进入选择模式：[选择所需的资源](/help/sites-authoring/basic-handling.md#viewingandselectingyourresources)：
 
-      * 移动设备：选择并按住
-      * 桌面： [快速操作](/help/sites-authoring/basic-handling.md#quick-actions) — 勾号图标：
+     * 移动设备：选择并按住
+     * 桌面： [快速操作](/help/sites-authoring/basic-handling.md#quick-actions) — 勾号图标：
 
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
@@ -147,9 +160,9 @@ ht-degree: 63%
 
    * 通过以下方式[向页面中添加新组件](/help/sites-authoring/editing-content.md#inserting-a-component)：
 
-      * 打开侧面板
-      * 选择“组件”选项卡（[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)）
-      * 将所需的组件拖动到页面上。
+     * 打开侧面板
+     * 选择“组件”选项卡（[组件浏览器](/help/sites-authoring/author-environment-tools.md#components-browser)）
+     * 将所需的组件拖动到页面上。
 
      可以通过以下图标打开（或关闭）侧面板：
 
@@ -157,24 +170,24 @@ ht-degree: 63%
 
    * [编辑页面中现有组件的内容](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)：
 
-      * 通过单击打开组件工具栏。 使用&#x200B;**编辑**（铅笔）图标打开对话框。
-      * 通过按住select键或双击来打开组件的就地编辑器。 此时会显示可用的操作（对于某些组件，该选择将受到限制）。
-      * 要查看所有可用的操作，请使用以下图标进入全屏模式：
+     * 通过单击打开组件工具栏。 使用&#x200B;**编辑**（铅笔）图标打开对话框。
+     * 通过按住select键或双击来打开组件的就地编辑器。 此时会显示可用的操作（对于某些组件，该选择将受到限制）。
+     * 要查看所有可用的操作，请使用以下图标进入全屏模式：
 
      ![全屏模式](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [配置现有组件的属性](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
-      * 通过单击打开组件工具栏。 使用&#x200B;**配置**（扳手）图标打开对话框。
+     * 通过单击打开组件工具栏。 使用&#x200B;**配置**（扳手）图标打开对话框。
 
    * 通过以下任一方式[移动组件](/help/sites-authoring/editing-content.md#moving-a-component)：
 
-      * 将所需组件拖动到新位置。
-      * 通过单击打开组件工具栏。 必要时使用&#x200B;**剪切**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
+     * 将所需组件拖动到新位置。
+     * 通过单击打开组件工具栏。 必要时使用&#x200B;**剪切**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
 
    * [复制（并粘贴）](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)组件：
 
-      * 通过单击打开组件工具栏。 根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
+     * 通过单击打开组件工具栏。 根据需要依次使用&#x200B;**复制**&#x200B;和&#x200B;**粘贴**&#x200B;图标。
 
    >[!NOTE]
    >
@@ -182,17 +195,17 @@ ht-degree: 63%
 
    * [删除](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)组件：
 
-      * 单击打开组件工具栏，然后使用&#x200B;**删除**&#x200B;图标。
+     * 单击打开组件工具栏，然后使用&#x200B;**删除**&#x200B;图标。
 
    * 向页面[添加注释](/help/sites-authoring/annotations.md#annotations)：
 
-      * 选择&#x200B;**注释**&#x200B;模式（对话气泡图标）。 使用&#x200B;**添加注释**（加号）图标添加注释。 使用右上方的 X 退出注释模式。
+     * 选择&#x200B;**注释**&#x200B;模式（对话气泡图标）。 使用&#x200B;**添加注释**（加号）图标添加注释。 使用右上方的 X 退出注释模式。
 
      ![批注](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [预览页面](/help/sites-authoring/editing-content.md#preview-mode)（用于查看页面在发布环境中的显示情况）
 
-      * 从工具栏中选择&#x200B;**预览**。
+     * 从工具栏中选择&#x200B;**预览**。
 
    * 使用&#x200B;**编辑**&#x200B;下拉选择器返回编辑模式（或选择其他模式）。
 
@@ -206,20 +219,20 @@ ht-degree: 63%
 
 * 从&#x200B;**Sites**&#x200B;控制台中：
 
-   1. [导航](#finding-your-page)到要发布的页面。
-   1. 从以下任一位置选择&#x200B;**属性**&#x200B;图标：
+  1. [导航](#finding-your-page)到要发布的页面。
+  1. 从以下任一位置选择&#x200B;**属性**&#x200B;图标：
 
-      * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
-      * [选择页面](#selectiingyourpageforfurtheraction)后显示的工具栏。
+     * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
+     * [选择页面](#selectiingyourpageforfurtheraction)后显示的工具栏。
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
-   1. 页面属性会显示。 您可以进行需要的更新，然后使用“保存”保留这些更改
+  1. 页面属性会显示。 您可以进行需要的更新，然后使用“保存”保留这些更改
 
 * 在[编辑页面](#editing-your-page-content)时：
 
-   1. 打开&#x200B;**页面信息**&#x200B;菜单。
-   1. 选择&#x200B;**打开属性**&#x200B;以打开用于编辑属性的对话框。
+  1. 打开&#x200B;**页面信息**&#x200B;菜单。
+  1. 选择&#x200B;**打开属性**&#x200B;以打开用于编辑属性的对话框。
 
   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
@@ -229,18 +242,18 @@ ht-degree: 63%
 
 * 从&#x200B;**Sites**&#x200B;控制台中：
 
-   1. [导航](#finding-your-page)到要发布的页面。
-   1. 从以下任一位置选择&#x200B;**快速发布**&#x200B;图标：
+  1. [导航](#finding-your-page)到要发布的页面。
+  1. 从以下任一位置选择&#x200B;**快速发布**&#x200B;图标：
 
-      * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
-      * [选择页面](#selectiingyourpageforfurtheraction)后显示的工具栏（还可以访问[稍后发布](/help/sites-authoring/publishing-pages.md#main-pars-title-12)）。
+     * 所需资源的[快速操作（仅限卡片视图/桌面）](#quick-actions-card-view-desktop-only)。
+     * [选择页面](#selectiingyourpageforfurtheraction)后显示的工具栏（还可以访问[稍后发布](/help/sites-authoring/publishing-pages.md#main-pars-title-12)）。
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * 在[编辑页面](#editing-your-page-content)时：
 
-   1. 打开&#x200B;**页面信息**&#x200B;菜单。
-   1. 选择&#x200B;**发布页面**。
+  1. 打开&#x200B;**页面信息**&#x200B;菜单。
+  1. 选择&#x200B;**发布页面**。
 
   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
@@ -266,15 +279,15 @@ ht-degree: 63%
 
    * 复制：
 
-      * 导航到新位置并粘贴。
+     * 导航到新位置并粘贴。
 
    * 移动：
 
-      * 此时将打开向导，收集移动页面所需的信息。 按照屏幕上的说明操作。
+     * 此时将打开向导，收集移动页面所需的信息。 按照屏幕上的说明操作。
 
    * 删除：
 
-      * 系统会要求您确认该操作。
+     * 系统会要求您确认该操作。
 
    >[!NOTE]
    >
@@ -334,8 +347,8 @@ ht-degree: 63%
 
    * **恢复到此版本**
 
-      * 该版本会恢复。
+     * 该版本会恢复。
 
    * **显示差异**
 
-      * 该页面会打开，并突出显示（两个版本之间的）差异。
+     * 该页面会打开，并突出显示（两个版本之间的）差异。

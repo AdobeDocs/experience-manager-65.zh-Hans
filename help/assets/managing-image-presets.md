@@ -12,13 +12,27 @@ feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: a16e03b7-8456-4383-8860-31ab5ab00e9e
+    internal-label: Image presets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3900'
+source-wordcount: '3995'
 ht-degree: 7%
-
 ---
-
 # 管理Dynamic Media图像预设{#managing-image-presets}
 
 图像预设使Adobe Experience Manager Assets能够动态交付不同大小、不同格式的图像，或使用动态生成的其他图像属性。 每个图像预设表示用于显示图像的预定义的调整大小和格式命令集合。 创建图像预设时，可以选择图像投放的大小。 您还可以选择格式设置命令，以便在交付图像以进行查看时优化图像的外观。
@@ -284,7 +298,7 @@ Dynamic Media集成使用以下脚本：
 
 >[!NOTE]
 >
->要在将图像 **[!UICONTROL 预设应用到资产时]** ，查看URL和 **&#x200B;**&#x200B;RESS按钮，必须发布资产。
+>要在将图像 **[!UICONTROL 预设应用到资产时]** ，查看URL和 **** RESS按钮，必须发布资产。
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
@@ -328,8 +342,8 @@ Dynamic Media集成使用以下脚本：
     <div>
       选择
      <strong>GIF</strong>或
-     <strong>带有Alpha的GIF</strong>提供以下附加功能
-     <strong>GIF色彩量化</strong>选项：
+     带有Alpha的<strong>GIF</strong>提供以下附加功能
+     <strong>GIF颜色量化</strong>选项：
     </div>
     <ul>
      <li><strong>类型</strong> — 选择<strong>自适应</strong>（默认）、<strong>Web</strong>或<strong>Macintosh</strong>。 如果选择<strong>GIF与Alpha</strong>，则Macintosh选项不可用。</li>
@@ -372,7 +386,7 @@ Dynamic Media集成使用以下脚本：
   </tr>
   <tr>
    <td><strong>渲染方法</strong></td>
-   <td>可以覆盖默认的渲染方法。渲染意图决定了在目标颜色配置文件（超出色域）中无法重现的颜色会发生什么情况。如果渲染意图与ICC配置文件不兼容，则会将其忽略。
+   <td>可以覆盖默认的渲染方法。 渲染意图决定了在目标颜色配置文件（超出色域）中无法重现的颜色会发生什么情况。 如果渲染意图与ICC配置文件不兼容，则会将其忽略。
     <ul>
      <li>选择<strong>可感知</strong>可在原始图像中的一种或多种颜色超出目标颜色空间的色域时，将总色域从一个颜色空间压缩到另一个颜色空间。</li>
      <li>当当前颜色空间中的颜色超出目标颜色空间中的色域时，选择<strong>相对色度</strong>。 并且，您希望将其映射到目标颜色空间色域内尽可能最接近的颜色，而不影响任何其他颜色。 </li>
@@ -404,12 +418,12 @@ Dynamic Media集成使用以下脚本：
     </ul>
     <div>
       中介绍了锐化
-     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf?lang=zh-Hans">锐化图像</a>。
+     <a href="https://experienceleague.adobe.com/docs/experience-manager-65/assets/sharpening_images.pdf">锐化图像</a>。
     </div> </td>
   </tr>
   <tr>
    <td><strong>重新取样模式</strong></td>
-   <td>选择<strong>重新取样模式</strong>选项。在缩减图像取样时，以下选项会锐化图像：
+   <td>选择<strong>重新取样模式</strong>选项。 在缩减图像取样时，以下选项会锐化图像：
     <ul>
      <li><strong>双线性</strong> — 最快速的重新取样方法。 会出现一些锯齿伪像。</li>
      <li><strong>两次立方</strong> — 增加CPU的使用，但生成较锐利的图像，出现的锯齿伪像较少。</li>
@@ -424,7 +438,7 @@ Dynamic Media集成使用以下脚本：
   </tr>
   <tr>
    <td><strong>图像修饰符</strong></td>
-   <td><p>除了UI中可用的常见图像设置之外，Dynamic Media还支持您可以在<strong>图像修饰符</strong>字段中指定的大量高级图像修改。 这些参数在<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans#image-serving-api">图像服务器协议命令引用</a>中定义。</p> <p>重要信息：不支持API中列出的以下功能：</p>
+   <td><p>除了UI中可用的常见图像设置之外，Dynamic Media还支持您可以在<strong>图像修饰符</strong>字段中指定的大量高级图像修改。 这些参数在<a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api">图像服务器协议命令引用</a>中定义。</p> <p>重要信息：不支持API中列出的以下功能：</p>
     <ul>
      <li>基本模板化和文本渲染命令： <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code>和 <code>textPs=</code></li>
      <li>本地化命令： <code>locale=</code>和 <code>req=xlate</code></li>
@@ -441,7 +455,7 @@ Dynamic Media集成使用以下脚本：
 
 ## 使用图像修饰符定义图像预设选项 {#defining-image-preset-options-with-image-modifiers}
 
-除了“基本”和“高级”选项卡中可用的选项外，您还可以定义图像修饰符，以便在定义图像预设时为您提供更多选项。 图像渲染依赖在[HTTP协议引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html?lang=zh-Hans#image-serving-api)中详细定义的图像渲染API。
+除了“基本”和“高级”选项卡中可用的选项外，您还可以定义图像修饰符，以便在定义图像预设时为您提供更多选项。 图像渲染依赖在[HTTP协议引用](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html#image-serving-api)中详细定义的图像渲染API。
 
 以下是一些使用图像修饰符可以执行操作的基本示例。
 
@@ -449,7 +463,7 @@ Dynamic Media集成使用以下脚本：
 >
 >某些图像修饰符[不能在Experience Manager](#advanced-tab-options)中使用。
 
-* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=zh-Hans#image-serving-api) — 反转每个颜色组件以获得负图像效果。
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html#image-serving-api) — 反转每个颜色组件以获得负图像效果。
 
   ```xml
   &op_invert=1
@@ -457,7 +471,7 @@ Dynamic Media集成使用以下脚本：
 
   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
-* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=zh-Hans#image-serving-api) — 将模糊滤镜应用于图像。
+* [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html#image-serving-api) — 将模糊滤镜应用于图像。
 
   ```xml
   &op_blur=7
@@ -473,7 +487,7 @@ Dynamic Media集成使用以下脚本：
 
   ![chlimage_1-80](assets/chlimage_1-501.png)
 
-* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=zh-Hans#image-serving-api) — 降低或增加亮度。
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html#image-serving-api) — 降低或增加亮度。
 
   ```xml
   &op_brightness=58
@@ -481,7 +495,7 @@ Dynamic Media集成使用以下脚本：
 
   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=zh-Hans#image-serving-api) — 调整图像不透明度。 用于降低前景不透明度。
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html#image-serving-api) — 调整图像不透明度。 用于降低前景不透明度。
 
   ```xml
   opac=29

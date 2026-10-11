@@ -1,5 +1,5 @@
 ---
-title: 创建有效的新闻稿登陆页面
+title: 创建高效的新闻稿登录页面
 description: 有效的新闻稿登陆页面可帮助您让尽可能多的人注册您的新闻稿（或其他电子邮件营销活动）。 您可以使用从新闻稿注册收集的信息来获取潜在客户。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,25 @@ exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '596'
-ht-degree: 0%
-
+source-wordcount: '612'
+ht-degree: 2%
 ---
-
-# 创建有效的新闻稿登陆页面{#creating-an-effective-newsletter-landing-page}
+# 创建高效的新闻稿登录页面{#creating-an-effective-newsletter-landing-page}
 
 有效的新闻稿登陆页面可帮助您让尽可能多的人注册您的新闻稿（或其他电子邮件营销活动）。 您可以使用从新闻稿注册收集的信息来获取潜在客户。
 
@@ -35,7 +46,7 @@ ht-degree: 0%
 
 ## 创建新闻稿列表 {#creating-a-list-for-the-newsletter}
 
-在MCM中为人们应订阅的新闻稿创建列表，例如&#x200B;**Geometrixx新闻稿**。 [创建列表](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)中介绍了如何创建列表。
+在MCM中为人们应订阅的新闻稿创建一个列表，例如&#x200B;**Geometrixx新闻稿**。 [创建列表](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)中介绍了如何创建列表。
 
 下面显示了一个列表示例：
 
@@ -43,7 +54,7 @@ ht-degree: 0%
 
 ## 创建注册表单 {#create-a-sign-up-form}
 
-创建新闻稿注册表单，以允许用户订阅标记。 示例Geometrixx网站在Geometrixx工具栏中提供新闻稿页面，您可以在其中创建表单。
+创建新闻稿注册表单，以允许用户订阅标记。 示例Geometrixx网站在Geometrixx工具栏中提供新闻稿页面，您可以在该页面创建表单。
 
 要创建您自己的新闻稿表单，请参阅[Forms文档](/help/sites-authoring/default-components.md#form)中有关创建表单的信息。 新闻稿使用标记库中的标记。 要添加其他标记，请参阅[标记管理](/help/sites-authoring/tags.md#tagadministration)。
 
@@ -65,7 +76,7 @@ ht-degree: 0%
 
 ### 创建感谢页面 {#creating-a-thank-you-page}
 
-当用户单击“立即订阅”**&#x200B;**&#x200B;时，您希望自动打开“感谢”页面。 在Geometrixx新闻稿页面中创建“感谢”页面。 创建新闻稿表单后，编辑表单组件并添加感谢页面的路径。
+当用户单击“立即订阅”****&#x200B;时，您希望自动打开“感谢”页面。 在Geometrixx新闻稿页面中创建“感谢”页面。 创建新闻稿表单后，编辑表单组件并添加感谢页面的路径。
 
 提交请求会将用户转到&#x200B;**感谢**&#x200B;页面，用户将在页面后收到电子邮件。 此感谢页面创建于/content/geometrixx/en/toolbar/newsletter/thank_you。
 

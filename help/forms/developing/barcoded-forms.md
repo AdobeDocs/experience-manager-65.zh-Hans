@@ -9,13 +9,29 @@ role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,APIs & Integrations,Barcoded Forms
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 516393bc-fa69-5e74-a04e-f7ec9ffe2c5e
+    internal-label: APIs & Integrations
+  - id: c61c0849-e97f-542f-a358-7b62d542cc8b
+    internal-label: Barcoded Forms
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1934'
 ht-degree: 0%
-
 ---
-
 # 使用条形码表单 {#working-with-barcoded-forms}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -24,13 +40,13 @@ ht-degree: 0%
 
 条形码表单服务可自动从填写和打印表单中捕获数据，并将捕获的信息集成到组织的核心IT系统中。
 
-使用条形码表单服务，可以向交互式PDF forms添加一维条形码和二维条形码。 然后，您可以将条形码表单发布到网站或通过电子邮件或CD分发这些表单。 当用户使用Adobe Reader、Acrobat Professional或Acrobat Standard填写条形码表单时，会自动更新条形码以编码用户提供的表单数据。 用户可以通过电子方式提交表单，或打印为纸面形式，并通过邮件、传真或手稿提交。 您以后可以提取用户提供的数据作为自动化工作流的一部分，在审批流程和业务系统之间传送数据。
+使用条形码表单服务，您可以将一维条形码和二维条形码添加到交互式PDF forms中。 然后，您可以将条形码表单发布到网站或通过电子邮件或CD分发这些表单。 当用户使用Adobe Reader、Acrobat Professional或Acrobat Standard填写条形码表单时，会自动更新条形码以编码用户提供的表单数据。 用户可以通过电子方式提交表单，或打印为纸面形式，并通过邮件、传真或手稿提交。 您以后可以提取用户提供的数据作为自动化工作流的一部分，在审批流程和业务系统之间传送数据。
 
 有关条形码表单服务的详细信息，请参阅[AEM Forms的服务参考](https://www.adobe.com/go/learn_aemforms_services_63)。
 
 ## 解码条形码表单数据 {#decoding-barcoded-form-data}
 
-您可以使用条形码表单服务API来解码PDF表单或包含条形码的图像中的数据。 对表单数据进行解码是指提取条形码中的数据。 在从PDF表单（或图像）中解码数据之前，用户必须用数据填充表单。
+您可以使用条形码表单服务API来解码PDF表单或包含条形码的图像中的数据。 对表单数据进行解码是指提取条形码中的数据。 在从PDF表单（或图像）解码数据之前，用户必须用数据填充表单。
 
 >[!NOTE]
 >
@@ -38,12 +54,12 @@ ht-degree: 0%
 
 ### 步骤摘要 {#summary-of-steps}
 
-要解码PDF表单中的数据，请执行以下步骤：
+要从PDF表单解码数据，请执行以下步骤：
 
 1. 包括项目文件。
 1. 创建条形码的formsClient API对象。
 1. 获取包含条形码数据的PDF表单。
-1. 解码PDF表单中的数据。
+1. 从PDF表单中解码数据。
 1. 将数据转换为XML数据源。
 1. 处理解码的数据。
 
@@ -56,9 +72,9 @@ ht-degree: 0%
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-barcodedforms-client.jar
-* adobe-utilities.jar (如果在JBoss上部署了AEM Forms，则此为必填字段)
-* jbossall-client.jar(如果在JBoss上部署了AEM Forms，则此为必填字段)
-* xercesImpl.jar(位于&lt;安装目录>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* adobe-utilities.jar （如果在JBoss上部署了AEM Forms，则此为必填字段）
+* jbossall-client.jar（如果在JBoss上部署了AEM Forms，则此为必填字段）
+* xercesImpl.jar（位于&lt;安装目录>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty）
 
 如果将AEM Forms部署在受支持的J2EE应用程序服务器（不是JBOSS）上，则必须将adobe-utilities.jar和jbossall-client.jar替换为特定于部署AEM Forms的J2EE应用程序服务器的JAR文件。 有关所有AEM Forms JAR文件位置的信息，请参阅[包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)。
 
@@ -68,13 +84,13 @@ ht-degree: 0%
 
 **获取包含条形码数据的PDF表单**
 
-获取包含已填充PDF数据的条形码的用户表单。
+获取包含已填充用户数据的条形码的PDF表单。
 
 **从PDF表单解码数据**
 
-在获取包含条形码的PDF表单（或图像）后，可以对数据进行解码。 条形码Forms服务支持以下类型的条形码：
+在获取包含条形码的PDF表单（或图像）后，您可以解码数据。 条形码Forms服务支持以下类型的条形码：
 
-* PDF417条码。
+* PDF417条形码。
 * 数据矩阵条形码。
 * 二维码条形码。
 * 代码标签条形码。
@@ -124,7 +140,7 @@ ht-degree: 0%
    * 创建一个`java.io.FileInputStream`对象，该对象表示包含条形码数据的PDF表单，方法是使用其构造函数并传递一个指定PDF文档位置的字符串值。
    * 使用对象的构造函数创建`com.adobe.idp.Document`对象并传递`java.io.FileInputStream`对象。
 
-1. 解码PDF表单中的数据
+1. 从PDF表单解码数据
 
    通过调用`BarcodedFormsServiceClient`对象的`decode`方法并传递以下值来解码表单数据：
 
@@ -164,7 +180,7 @@ ht-degree: 0%
 
 **另请参阅**
 
-[快速入门(SOAP模式)：使用Java API对条形码表单数据进行解码](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[快速入门（SOAP模式）：使用Java API解码条形码表单数据](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 [包括AEM Forms Java库文件](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -186,12 +202,12 @@ ht-degree: 0%
 1. 获取包含条形码数据的PDF表单
 
    * 使用构造函数创建`BLOB`对象。 `BLOB`对象用于存储包含条形码的PDF文档。
-   * 通过调用其构造函数并传递一个字符串值来创建一个`System.IO.FileStream`对象，该字符串值表示PDF文档的文件位置以及打开文件的模式。
+   * 通过调用其构造函数并传递表示PDF文档文件位置和文件打开模式的字符串值，创建`System.IO.FileStream`对象。
    * 创建用于存储`System.IO.FileStream`对象的内容的字节数组。 您可以通过获取`System.IO.FileStream`对象的`Length`属性来确定字节数组的大小。
    * 通过调用`System.IO.FileStream`对象的`Read`方法并传递要读取的字节数组、起始位置和流长度，使用流数据填充字节数组。
    * 使用字节数组的内容指定其`binaryData`属性以填充`BLOB`对象。
 
-1. 解码PDF表单中的数据
+1. 从PDF表单解码数据
 
    通过调用`BarcodedFormsServiceService`对象的`decode`方法并传递以下值来解码表单数据：
 

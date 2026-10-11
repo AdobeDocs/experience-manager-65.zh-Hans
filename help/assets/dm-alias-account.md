@@ -9,13 +9,27 @@ role: User,Admin
 mini-toc-levels: 4
 exl-id: 2ca7b8b2-573c-40e9-b8c3-f38736e819ef
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 63b9494700aaafaa503216d037e2ad6efc8c5eac
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '684'
 ht-degree: 2%
-
 ---
-
 <!--
 hide: true
 -->
@@ -32,7 +46,7 @@ Dynamic Media公司别名帐户可确保用户界面中所有开箱即用的Dyna
 * Dynamic Media公司别名帐户功能仅限于Experience Manager Assets创作模式和交付。 公司别名不适用于Experience Manager Sites。 没有为此更改更新WCM （Web内容管理）组件。 这些组件将继续与用于获取Dynamic Media资产的原始Dynamic Media公司名称一起使用。
 * 您只能在&#x200B;**[!UICONTROL 编辑Dynamic Media配置]**&#x200B;页面上设置一个公司别名帐户。 但是，您可以通过支持案例创建尽可能多的公司别名帐户，并在Dynamic Media URL或查看器嵌入代码中手动反映必要的别名。
 * Dynamic Media的现成[缓存无效](/help/assets/invalidate-cdn-cache-dynamic-media.md)功能使在Cloud Services的Dynamic Media配置页面中配置的公司和公司别名帐户的URL失效。
-* 当您在&#x200B;**[!UICONTROL 编辑Dynamic Media配置]**&#x200B;页面上配置公司别名帐户时，为了成功使缓存失效，您必须同时使&#x200B;**&#x200B; **&#x200B;[!UICONTROL 公司]&#x200B;**&#x200B;帐户和&#x200B;**&#x200B;[!UICONTROL 公司别名]**&#x200B;帐户的URL失效。
+* 当您在&#x200B;**[!UICONTROL 编辑Dynamic Media配置]**&#x200B;页面上配置公司别名帐户时，为了成功使缓存失效，您必须同时使&#x200B;** **[!UICONTROL 公司]**&#x200B;帐户和&#x200B;**[!UICONTROL 公司别名]**&#x200B;帐户的URL失效。
 
 另请参阅[在云服务中创建Dynamic Media配置](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)
 

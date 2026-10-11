@@ -10,13 +10,22 @@ exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3524'
 ht-degree: 1%
-
 ---
-
 # 扩展与配置登陆页面的设计导入器{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 本节介绍如何配置，并根据需要扩展登陆页面的设计导入程序。 导入后使用登陆页面包含在[登陆页面中。](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
@@ -41,7 +50,7 @@ ht-degree: 1%
 
 >[!CAUTION]
 >
->AEM 6.5[&#128279;](/help/release-notes/deprecated-removed-features.md#deprecated-features)已弃用用于导入登陆页面的设计导入程序。
+>AEM 6.5](/help/release-notes/deprecated-removed-features.md#deprecated-features)已弃用用于导入登陆页面的设计导入程序[。
 
 ## 准备HTML以进行导入 {#preparing-the-html-for-import}
 
@@ -531,7 +540,7 @@ data-cq-component中的路径应为组件的resourceType。
 >
 >例如，如果默认配置为
 >
->&#x200B;>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >您需要将`CQ_DESIGN_PATH`替换为搜索模式中的`VIPURL`，则您的搜索模式应如下所示：
 >

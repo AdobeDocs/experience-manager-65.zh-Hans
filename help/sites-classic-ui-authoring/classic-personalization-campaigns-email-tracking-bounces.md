@@ -1,6 +1,6 @@
 ---
-title: 跟踪退回的电子邮件
-description: 当您向许多用户发送新闻稿时，通常列表中会有一些无效的电子邮件地址。 向这些地址发送新闻稿会退回。 AEM可以管理这些退回，并可在超出配置的退回计数器后停止向这些地址发送新闻稿。
+title: 跟踪退回电子邮件
+description: 当您向许多用户发送新闻稿时，通常列表中会有一些无效的电子邮件地址。 向这些地址发送新闻稿会退回。 AEM可以管理这些跳出，并可在超出配置的跳出计数器后停止向这些地址发送新闻稿。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
@@ -9,28 +9,39 @@ exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 0%
-
+source-wordcount: '714'
+ht-degree: 1%
 ---
-
-# 跟踪退回的电子邮件{#tracking-bounced-emails}
+# 跟踪退回电子邮件{#tracking-bounced-emails}
 
 >[!NOTE]
 >
->Adobe不打算进一步增强对AEM SMTP服务发送的已打开/退回电子邮件的跟踪。
+>Adobe不打算进一步加强对由AEM SMTP服务发送的已打开/退回电子邮件的跟踪。
 >
 >建议您[使用Adobe Campaign及其AEM集成](/help/sites-administering/campaign.md)。
 
-当您向许多用户发送新闻稿时，通常列表中会有一些无效的电子邮件地址。 向这些地址发送新闻稿会退回。 AEM可以管理这些退回，并可在超出配置的退回计数器后停止向这些地址发送新闻稿。 默认情况下，跳出率设置为3，但可配置。
+当您向许多用户发送新闻稿时，通常列表中会有一些无效的电子邮件地址。 向这些地址发送新闻稿会退回。 AEM可以管理这些跳出，并可在超出配置的跳出计数器后停止向这些地址发送新闻稿。 默认情况下，跳出率设置为3，但可配置。
 
-要设置AEM以跟踪退回的电子邮件，请设置AEM以轮询接收退回电子邮件的现有邮箱。 通常，此位置是您指定新闻稿发送位置的“发件人”电子邮件地址。 AEM轮询此收件箱并导入轮询配置中指定的路径下的所有电子邮件。 然后，触发工作流以搜索用户内退回的电子邮件地址，并相应地更新用户的bounceCounter属性值。 超过配置的最大跳出次数后，将从新闻稿列表中删除该用户。
+要设置AEM以跟踪退回的电子邮件，请设置AEM以轮询接收退回电子邮件的现有邮箱。 通常，此位置是您指定新闻稿发送位置的“发件人”电子邮件地址。 AEM会轮询此收件箱，并导入位于轮询配置中指定的路径下的所有电子邮件。 然后，触发工作流以搜索用户内退回的电子邮件地址，并相应地更新用户的bounceCounter属性值。 超过配置的最大跳出次数后，将从新闻稿列表中删除该用户。
 
 ## 配置信息源导入程序 {#configuring-the-feed-importer}
 
-信息源导入器允许您重复地将外部源中的内容导入存储库。 使用信息源导入程序的此配置，AEM会检查发件人的邮箱中是否有退回的电子邮件。
+信息源导入器允许您重复地将外部源中的内容导入存储库。 通过信息源导入程序的这种配置，AEM会检查发件人的邮箱中是否有退回的电子邮件。
 
 要配置馈送导入程序以跟踪退回的电子邮件，请执行以下操作：
 
@@ -64,7 +75,7 @@ ht-degree: 0%
 
    允许您设置要搜索的标志。
 
-   `imap.flag.SEEN`：将新/未查看的消息设为false，已读取的消息设为true
+   新/未查看的消息为`imap.flag.SEEN`:Set false，已读取的消息为true
 
    有关标记的完整列表，请参阅[https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html](https://javaee.github.io/javamail/docs/api/index.html?javax/mail/Flags.Flag.html)。
 

@@ -11,13 +11,27 @@ exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: cda65036-5305-4f01-89da-9b3506ae8c50
+    internal-label: Administration
+subfeature_v2:
+  - id: aaba5717-080e-40d6-a128-c9c8a9255476
+    internal-label: Troubleshooting
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1411'
 ht-degree: 1%
-
 ---
-
 # 排查 Dynamic Media - Scene7 模式问题{#troubleshooting-dynamic-media-scene-mode}
 
 以下文档介绍了对运行&#x200B;**dynamicmedia_scene7**&#x200B;运行模式的Dynamic Media进行的故障排除。
@@ -54,7 +68,7 @@ ht-degree: 1%
 
 ### 同步日志记录 {#synchronization-logging}
 
-同步错误和问题记录在`error.log` （Experience Manager服务器目录`/crx-quickstart/logs/`）中。 有足够的日志记录功能来确定大多数问题的根本原因，但您可以通过Sling控制台([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))增加对`com.adobe.cq.dam.ips`程序包的DEBUG日志记录功能，以收集更多信息。
+同步错误和问题记录在`error.log` （Experience Manager服务器目录`/crx-quickstart/logs/`）中。 有足够的日志记录功能来确定大多数问题的根本原因，但您可以通过Sling控制台([https://localhost:4502/system/console/slinglog](https://localhost:4502/system/console/slinglog))增加对`com.adobe.cq.dam.ips`程序包的DEBUG日志记录以收集更多信息。
 
 ### 移动、复制、删除 {#move-copy-delete}
 
@@ -243,7 +257,7 @@ ht-degree: 1%
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-示例： `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+     示例： `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **解决方案**
 
@@ -255,7 +269,8 @@ ht-degree: 1%
 1. 在列表中搜索查看器包；它以`cq-dam-scene7-viewers-content`开头。
 1. 选择&#x200B;**重新安装**。
 1. 在云服务下，导航到Dynamic Media配置页面，然后打开Dynamic Media - S7配置的配置对话框。
-1. 不做更改，选择&#x200B;**保存**。此save操作会再次触发逻辑以创建并同步示例资产、查看器预设CSS和图稿。
+1. 不做更改，选择&#x200B;**保存**。
+此save操作会再次触发逻辑以创建并同步示例资产、查看器预设CSS和图稿。
 
 ### 问题：查看器预设创作中未加载图像预览 {#image-preview-not-loading}
 
@@ -274,4 +289,4 @@ ht-degree: 1%
 1. 删除`viewer`文件夹。
 1. 在CRXDE Lite页面的左上角附近，选择&#x200B;**[!UICONTROL 全部保存]**。
 1. 在CRXDE Lite页面的左上角，选择&#x200B;**返回主页**&#x200B;图标。
-1. 在云服务[&#128279;](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)中重新创建Dynamic Media配置。
+1. 在云服务](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services)中重新创建[Dynamic Media配置。

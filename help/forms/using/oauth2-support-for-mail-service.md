@@ -5,26 +5,40 @@ exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9b4dd5a4a137e529be8142fff1ddbfca889e64ae
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1032'
-ht-degree: 5%
-
+source-wordcount: '1045'
+ht-degree: 6%
 ---
-
 # 将AEM Forms与Microsoft® Office 365邮件服务器协议集成 {#oauth2-support-for-the-microsoft-mail-server-protocols}
 
 为了让组织遵守安全电子邮件要求，AEM Forms提供了OAuth 2.0支持与Microsoft® Office 365邮件服务器协议集成。 您可以使用Azure Active Directory (Azure AD) OAuth 2.0身份验证服务连接各种协议（如IMAP、POP或SMTP），并访问Office 365用户的电子邮件数据。 以下是配置® Office 365邮件服务器协议以通过OAuth 2.0服务进行身份验证的分步说明：
 
 1. 登录到[https://portal.azure.com/](https://portal.azure.com/)并在搜索栏中搜索&#x200B;**Azure Active Directory**，然后单击结果。
-或者，您可以直接浏览到[https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
+或者，您可以直接浏览到 [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. 单击&#x200B;**添加** > **应用程序注册** > **新注册**。
 
    ![应用程序注册](/help/forms/using/assets/outh_outlook_microsoft_azure.png)
 
 1. 根据您的要求填写信息，然后单击&#x200B;**注册。**
    ![支持的帐户](/help/forms/using/assets/azure_suuportedaccountype.png)
-在上例中，已选择任何组织目录（任何Azure AD目录 — 多租户）和个人Microsoft®帐户（例如，Skype、Xbox）中的&#x200B;**帐户**&#x200B;选项。
+   在上例中，已选择任何组织目录（任何Azure AD目录 — 多租户）和个人Microsoft®帐户（例如，Skype、Xbox）中的**帐户**&#x200B;选项。
 
    >[!NOTE]
    >

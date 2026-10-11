@@ -8,13 +8,17 @@ exl-id: 44591900-b01b-4a33-9910-839564477e7d
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1185'
-ht-degree: 0%
-
+source-wordcount: '1188'
+ht-degree: 4%
 ---
-
 # 空间和实体{#spaces-and-entities}
 
 {{ue-over-mobile}}
@@ -68,7 +72,7 @@ ht-degree: 0%
 **发布共享空间**&#x200B;发布共享空间后，该共享空间中的所有文件夹和实体也会发布。
 
 1. 在“空间控制台”列表中单击空间的图标以选择空间
-1. 选择&#x200B;**Publish树**
+1. 选择&#x200B;**发布树**
 
 >[!NOTE]
 >
@@ -94,7 +98,7 @@ ht-degree: 0%
 
 1. 单击&#x200B;**创建**&#x200B;可在空间中创建文件夹
 
-## 语言复制 {#language-copy}
+## 语言副本 {#language-copy}
 
 >[!CAUTION]
 >
@@ -118,7 +122,7 @@ ht-degree: 0%
    >
    >语言副本节点只能作为空间的直接子级存在。
 
-1. 选择&#x200B;**内容包语言&amp;amp；ast；**，然后在&#x200B;**创建语言副本**&#x200B;对话框中输入&#x200B;**标题&amp;amp；ast；**。
+1. 选择&#x200B;**内容包语言&amp;ast；**，然后在&#x200B;**创建语言副本**&#x200B;对话框中输入&#x200B;**标题&amp;ast；**。
 
    单击&#x200B;**创建**。
 
@@ -143,7 +147,7 @@ ht-degree: 0%
 
 ## 使用空间中的实体 {#working-with-entities-in-a-space}
 
-实体表示通过Web服务端点公开的内容。 实体存储在空间中，以便可以轻松地找到并独立于保存其相关内容的AEM存储库结构进行保存。
+实体表示通过Web服务端点公开的内容。 实体存储在空间中，以便可以轻松找到，并保持独立于保存其相关内容的AEM存储库结构。
 
 您可能希望在某些逻辑集合中将实体分组在一起。 为此，您可以创建任意数量的文件夹。
 
@@ -235,12 +239,12 @@ ht-degree: 0%
 
 ### 发布实体 {#publishing-an-entity}
 
-您可以选择使用&#x200B;**Publish树**&#x200B;或&#x200B;**快速Publish**&#x200B;来发布您的实体。
+您可以选择使用&#x200B;**发布树**&#x200B;或&#x200B;**快速发布**&#x200B;来发布您的实体。
 
-1. 从空间控制台列表中选择一个实体，然后单击&#x200B;**Publish树**&#x200B;以发布该实体及其子项。
+1. 从空间控制台列表中选择一个实体，然后单击**发布树**以发布该实体及其子项。
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    **或**，
 
-   单击&#x200B;**快速Publish**&#x200B;发布该特定实体。
+   单击&#x200B;**快速发布**&#x200B;以发布该特定实体。

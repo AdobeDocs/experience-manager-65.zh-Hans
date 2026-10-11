@@ -1,5 +1,5 @@
 ---
-title: 在摘要URL中获取任务变量
+title: 在摘要 URL 中获取任务变量
 description: 如何重用有关任务的信息并生成摘要URL以摘要或描述任务。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -8,14 +8,28 @@ exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '431'
-ht-degree: 0%
-
+source-wordcount: '432'
+ht-degree: 2%
 ---
-
-# 在摘要URL中获取任务变量 {#getting-task-variables-in-summary-url}
+# 在摘要 URL 中获取任务变量 {#getting-task-variables-in-summary-url}
 
 摘要页面显示与任务相关的信息。 本文介绍了如何在摘要页面中重用与任务相关的信息。
 
@@ -68,7 +82,7 @@ ht-degree: 0%
 
       此映射中的键应与上一步中HTML渲染器中定义的键相同。
 
-      此外，在映射中添加值为&#x200B;**Employees/PtoApplication**&#x200B;的&#x200B;**sling：resourceType**&#x200B;键。
+      此外，在映射中添加值为&#x200B;**Employees/PtoApplication**&#x200B;的&#x200B;**sling:resourceType**&#x200B;键。
 
    1. 在&#x200B;**创建PTO摘要**&#x200B;进程中使用&#x200B;**ContentRepositoryConnector**&#x200B;服务中的子进程&#x200B;**storeContent**。 此子进程将创建一个CRX节点。
 
@@ -76,7 +90,7 @@ ht-degree: 0%
 
       * **文件夹路径**：创建新CRX节点的路径。 将路径设置为&#x200B;**/内容**。
       * **节点名称**：将输入变量nodeName分配给此字段。 这是一个唯一的节点名称字符串。
-      * **节点类型**：将该类型定义为&#x200B;**nt：unstructured**。 此进程的输出为nodePath。 nodePath是新创建节点的CRX路径。 ndoePath将成为&#x200B;**创建PTO**&#x200B;摘要过程的最终输出。
+      * **节点类型**：将类型定义为&#x200B;**nt:unstructured**。 此进程的输出为nodePath。 nodePath是新创建节点的CRX路径。 ndoePath将成为&#x200B;**创建PTO**&#x200B;摘要过程的最终输出。
 
    1. 将提交的表单数据（**employeeName**、**employeeID**、**ptoReason**&#x200B;和&#x200B;**totalDays**）作为输入传递给新进程&#x200B;**创建PTO摘要**。 将输出作为&#x200B;**ptoSummaryNodePath**。
 
@@ -86,4 +100,4 @@ ht-degree: 0%
 
 在AEM Forms工作区中，打开任务时，摘要URL将访问CRX节点，并且HTML渲染器会显示摘要。
 
-无需修改流程即可更改摘要布局。 HTML呈现器可正确显示摘要。
+无需修改流程即可更改摘要布局。 HTML渲染器会相应地显示摘要。

@@ -9,20 +9,40 @@ feature: Adaptive Forms,Foundation Components,Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: a16aea24-4e85-528d-9377-cd80bb039c1d
+    internal-label: Acrobat Sign
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2217'
+source-wordcount: '2218'
 ht-degree: 20%
-
 ---
-
 # 将[!DNL Adobe Sign]与AEM [!DNL Forms]集成{#integrate-adobe-sign-with-aem-forms}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=zh-Hans#adobe-acrobat-sign-for-government) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Sign]为自适应表单启用电子签名工作流。 电子签名改进了法律、销售、工资单、人力资源管理和其他许多方面的文档的处理工作流。
@@ -91,7 +111,7 @@ ht-degree: 20%
 
    其中：
 
-   **na1** 指默认数据库分片。 您可以修改数据库分片的值。 确保 [!DNL &#x200B; Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/cn/sign/using/identify-account-shard.html)。
+   **na1** 指默认数据库分片。 您可以修改数据库分片的值。 确保 [!DNL  Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -135,7 +155,7 @@ ht-degree: 20%
    >Ensure that your author and publish instance configurations point to the same shard. If you create multiple Adobe Sign configurations for an organization, ensure all the configurations utilize the same shard.
    -->
 
-1. 返回&#x200B;**[!UICONTROL 创建Adobe Sign配置]**&#x200B;页面。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，指定&#x200B;**客户端ID**（也称为应用程序ID）和&#x200B;**客户端密钥**。 使用为AEM Forms创建的Adobe Sign应用程序[&#128279;](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的客户端ID和客户端密钥。
+1. 返回&#x200B;**[!UICONTROL 创建Adobe Sign配置]**&#x200B;页面。 在&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡中，指定&#x200B;**客户端ID**（也称为应用程序ID）和&#x200B;**客户端密钥**。 使用为AEM Forms创建的Adobe Sign应用程序](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret)的[客户端ID和客户端密钥。
 
 1. 选择&#x200B;**[!UICONTROL 同时为附件启用Adobe Sign]**&#x200B;选项，以将附加到自适应表单的文件追加到已发送以供签名的相应[!DNL Adobe Sign]文档。
 
@@ -148,9 +168,9 @@ ht-degree: 20%
 1. 打开&#x200B;**[!UICONTROL Forms Common Configuration Service].**
 1. 在&#x200B;**[!UICONTROL 允许]**&#x200B;字段中，**选择**&#x200B;所有用户 — 所有用户（匿名或已登录）都可以预览附件、验证和签署表单，然后单击&#x200B;**[!UICONTROL 保存]。** 作者实例配置为使用[!DNL Adobe Sign]。
 1. 发布配置。
-1. 使用[复制](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=zh-Hans)在相应的发布实例上创建相同的配置。
+1. 使用[复制](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html)在相应的发布实例上创建相同的配置。
 
-现在，[!DNL Adobe Sign]已与AEM [!DNL Forms]集成并准备好在自适应表单中使用。 要在自适应表单[&#128279;](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)中使用Adobe Sign服务，请在自适应表单属性中指定上面创建的配置容器。
+现在，[!DNL Adobe Sign]已与AEM [!DNL Forms]集成并准备好在自适应表单中使用。 要在自适应表单](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form)中[使用Adobe Sign服务，请在自适应表单属性中指定上面创建的配置容器。
 
 >[!NOTE]
 >
@@ -241,7 +261,7 @@ Adobe Acrobat Sign政府解决方案团队要求为Adobe Acrobat Sign应用程�
 
    其中：
 
-   **na1** 指默认数据库分片。 您可以修改数据库分片的值。 确保 [!DNL &#x200B; Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/cn/sign/using/identify-account-shard.html)。
+   **na1** 指默认数据库分片。 您可以修改数据库分片的值。 确保 [!DNL  Adobe Acrobat Sign] 云配置指向[正确分片](https://helpx.adobe.com/sign/using/identify-account-shard.html)。
 
    >[!NOTE]
    >
@@ -263,7 +283,7 @@ Adobe Acrobat Sign政府解决方案团队要求为Adobe Acrobat Sign应用程�
 1. 在&#x200B;**[!UICONTROL 允许]**&#x200B;字段中，**选择**&#x200B;所有用户 — 所有用户（匿名或已登录）都可以预览附件、验证和签署表单，然后单击&#x200B;**[!UICONTROL 保存]。** 作者实例配置为使用[!DNL Adobe Sign]。
 
 1. 发布配置。
-1. 使用[复制](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=zh-Hans)在相应的发布实例上创建相同的配置。
+1. 使用[复制](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html)在相应的发布实例上创建相同的配置。
 
 现在，您可以[在自适应表单](working-with-adobe-sign.md)或[Adobe Acrobat Sign Workflow](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)中添加AEM字段。 确保将用于Cloud Service配置的配置容器添加到为[!DNL Adobe Acrobat Sign]启用的所有自适应Forms。 您可以在自适应表单的属性中指定配置容器。
 
@@ -277,7 +297,7 @@ Adobe Acrobat Sign政府解决方案团队要求为Adobe Acrobat Sign应用程�
    您还可以在浏览器窗口中打开以下URL：
    `https://[localhost]:'port'/system/console/configMgr`
 
-1. 找到并打开&#x200B;**[!UICONTROL Adobe Sign配置服务]**&#x200B;选项。 在&#x200B;**[!UICONTROL 状态更新计划程序表达式]**&#x200B;字段中指定[cron表达式](https://en.wikipedia.org/wiki/Cron#CRON_expression)，然后单击&#x200B;**[!UICONTROL 保存]**。 例如，要在每天凌晨:00运行配置服务，请在&#x200B;**[!UICONTROL 状态更新计划程序表达式]**&#x200B;字段中指定`0 0 0 1/1 * ? *`。
+1. 找到并打开&#x200B;**[!UICONTROL Adobe Sign配置服务]**&#x200B;选项。 在&#x200B;**[!UICONTROL 状态更新计划程序表达式]**&#x200B;字段中指定[cron表达式](https://en.wikipedia.org/wiki/Cron#CRON_expression)，然后单击&#x200B;**[!UICONTROL 保存]**。 例如，要在每天凌晨00:00运行配置服务，请在&#x200B;**[!UICONTROL 状态更新计划程序表达式]**&#x200B;字段中指定`0 0 0 1/1 * ? *`。
 
 [!DNL Adobe Sign]的默认同步间隔现已更改。
 

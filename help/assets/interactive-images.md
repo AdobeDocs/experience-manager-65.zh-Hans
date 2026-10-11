@@ -10,13 +10,27 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: de661f96-7584-43db-a310-e01b57fdf199
+    internal-label: Interactive images
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4463'
+source-wordcount: '4472'
 ht-degree: 1%
-
 ---
-
 # 交互式图像{#interactive-images}
 
 通过将“可购物”热点拖放到图像上，您可以轻松使静态图像丰富并吸引客户体验。 可购物热点将有关产品或服务的其他信息与直接的销售点“添加到购物车”或“购买”功能相结合。 客户可以选择这些热点并直接链接到产品或服务，将其添加到购物车，或链接到网页。 这样的直接体验可提高客户参与度以及网站上的转化率。
@@ -27,7 +41,7 @@ ht-degree: 1%
 
 通过转到以下位置，查看上面网页上正在运行的交互式图像：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
 ## 观看如何创建交互式图像横幅 {#watch-how-interactive-image-banners-are-created}
 
@@ -39,17 +53,21 @@ ht-degree: 1%
 
 在某些快速入门任务中查找&#x200B;**Example**&#x200B;标题。 它包含一个简短的教程，该教程基于以下尚未添加交互式图像的网页示例：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 本教程有助于说明在您的网站上集成交互式图像的步骤。
 
 交互式图像步骤：
 
-1. **（可选）标识热点变量** — 如果您单独使用Experience Manager Assets和Dynamic Media，则首先要标识现有Quickview实施中使用的动态变量。 然后，您可以在创建交互式图像时输入热点数据。 请参阅[（可选）识别热点变量](#optional-identifying-hotspot-variables)。但是，如果您使用Adobe Experience Manager Sites或Adobe Experience Manager eCommerce，或者同时使用两者，则无需执行此步骤。查看Experience Manager Assets中的[电子商务概念](/help/commerce/cif-classic/administering/concepts.md)。
+1. **（可选）标识热点变量** — 如果您单独使用Experience Manager Assets和Dynamic Media，则首先要标识现有Quickview实施中使用的动态变量。 然后，您可以在创建交互式图像时输入热点数据。 请参阅[（可选）识别热点变量](#optional-identifying-hotspot-variables)。
+但是，如果您使用Adobe Experience Manager Sites或Adobe Experience Manager eCommerce，或者同时使用两者，则无需执行此步骤。
+查看Experience Manager Assets中的[电子商务概念](/help/commerce/cif-classic/administering/concepts.md)。
 
-1. **（可选）创建交互式图像查看器预设** — 自定义用于表示热点的图形图像。 如果您打算使用名为`Shoppable_Banner`的现成交互式图像查看器预设，则无需创建自己的交互式图像查看器预设。请参阅[（可选）创建交互式图像查看器预设](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)。
+1. **（可选）创建交互式图像查看器预设** — 自定义用于表示热点的图形图像。 如果您打算使用名为`Shoppable_Banner`的现成交互式图像查看器预设，则无需创建自己的交互式图像查看器预设。
+请参阅[（可选）创建交互式图像查看器预设](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset)。
 
-1. **上载图像横幅** — 上载要使其成为交互式图像的横幅。查看[上传图像横幅](#uploading-an-image-banner)。
+1. **上载图像横幅** — 上载要使其成为交互式图像的横幅。
+查看[上传图像横幅](#uploading-an-image-banner)。
 
 1. **将热点添加到图像横幅中** — 将一个或多个热点添加到图像横幅中，并将每个热点与超链接、概览或体验片段等操作相关联。 添加热点后，可通过发布交互式图像来完成此任务。
 
@@ -95,9 +113,11 @@ ht-degree: 1%
 
 通常，您无需使用任何专门的调试工具。 现代Web浏览器的功能是Web检查器，这些检查器可以完成适当的工作。 以下是一些包含Web检查器的Web浏览器示例：
 
-* 要在Google Chrome中查看所有传出的HTTP请求，请按F12打开“开发人员工具”面板，然后选择“网络”选项卡。在Mac上，按Command+Option+I以打开“开发人员工具”面板，然后选择“网络”选项卡。
+* 要在Google Chrome中查看所有传出的HTTP请求，请按F12打开“开发人员工具”面板，然后选择“网络”选项卡。
+在Mac上，按Command+Option+I以打开“开发人员工具”面板，然后选择“网络”选项卡。
 
-* 在Firefox中，您可以通过按F12并使用其“网络”选项卡来激活Firebug插件，也可以使用内置的检查器工具及其“网络”选项卡。在Mac上，按Command+Option+I以打开“开发人员工具”面板，然后选择“检查器”选项卡。
+* 在Firefox中，您可以通过按F12并使用其“网络”选项卡来激活Firebug插件，也可以使用内置的检查器工具及其“网络”选项卡。
+在Mac上，按Command+Option+I以打开“开发人员工具”面板，然后选择“检查器”选项卡。
 
 在浏览器中打开网络监视时，将触发页面上的快速视图。
 
@@ -117,10 +137,10 @@ ht-degree: 1%
     <td><p>单个SKU，在查询字符串中找到。</p> </td>
     <td><p>记录的概览URL包括：</p>
     <ul>
-      <li><p><code>https://server/json?productId=866558&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1196184&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1081492&source=100</code></p> </li>
-      <li><p><code>https://server/json?productId=1898294&source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=866558&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1196184&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1081492&amp;source=100</code></p> </li>
+      <li><p><code>https://server/json?productId=1898294&amp;source=100</code></p> </li>
     </ul> <p>URL中唯一的变量部分是productId=查询字符串参数的值，它显然是一个SKU值。 因此，您的热点只需要使用诸如<strong><code>866558</code></strong>、<strong><code>1196184</code></strong>、<strong><code>1081492</code></strong>、<strong><code>1898294</code></strong>之类的值填充的SKU字段。</p> </td>
   </tr>
   <tr>
@@ -136,9 +156,9 @@ ht-degree: 1%
     <td><p>查询字符串中的SKU和类别ID。</p> </td>
     <td><p>记录的概览URL包括：</p>
     <ul>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=305466</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1100004&prodId=310181</code></p> </li>
-      <li><p><code>https://server/quickView/product/?category=1740148&prodId=308706</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li>
+      <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li>
     </ul> <p>在这种情况下，URL包含两个不同的部分。 SKU存储在<code>prodId</code>参数中，类别ID<code></code>存储在<code>category=</code>参数中。</p> <p>因此，热点定义是对的。 即SKU值和名为<code>categoryId</code>的额外变量。 生成的对如下所示：</p>
     <ul>
       <li><p>SKU是<strong><code>305466</code></strong>，<code>categoryId</code>是<code>1100004</code>。</p> </li>
@@ -153,7 +173,7 @@ ht-degree: 1%
 
 您可以将上述三个示例中使用的相同方法应用到演示网页：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 演示网页具有多个产品缩略图，每个缩略图都有一个标记为“查看更多”的“快速查看”按钮。 在Web浏览器的调试工具仍处于激活状态的情况下，选择每个按钮并记下记录的概览URL。 在激活页面上可用的所有四个产品概览后，您将获得向后端发出的概览请求列表：
 
@@ -273,17 +293,17 @@ ht-degree: 1%
 
    * 选择&#x200B;**[!UICONTROL 概览]**。
 
-      * 如果您是Experience Manager Sites或电子商务客户，请选择产品选取器图标（放大镜）以打开选择产品页面。 选择要使用的产品，然后选择页面右上角的&#x200B;**[!UICONTROL 选择]**，以便您可以返回热点管理页面。
-      * 如果您&#x200B;*不是* Experience Manager Sites或电子商务客户
+     * 如果您是Experience Manager Sites或电子商务客户，请选择产品选取器图标（放大镜）以打开选择产品页面。 选择要使用的产品，然后选择页面右上角的&#x200B;**[!UICONTROL 选择]**，以便您可以返回热点管理页面。
+     * 如果您&#x200B;*不是* Experience Manager Sites或电子商务客户
 
-         * 请参阅[识别热点变量](#optional-identifying-hotspot-variables)；您必须定义这些变量。
-         * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），它是您提供的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充概览模板的变量部分，以便系统知道将选定的热点与特定SKU的概览相关联。
-         * （可选）如果概览中还有其他变量必须用来进一步标识产品，请选择&#x200B;**[!UICONTROL 添加通用变量]**。 在文本字段中，指定一个额外的变量。 例如，`category=Males`是添加的变量。
+       * 请参阅[识别热点变量](#optional-identifying-hotspot-variables)；您必须定义这些变量。
+       * 然后，手动输入SKU值。 在“SKU值”文本字段中，键入产品的SKU（库存单位），它是您提供的每个不同产品或服务的唯一标识符。 输入的SKU值会自动填充概览模板的变量部分，以便系统知道将选定的热点与特定SKU的概览相关联。
+       * （可选）如果概览中还有其他变量必须用来进一步标识产品，请选择&#x200B;**[!UICONTROL 添加通用变量]**。 在文本字段中，指定一个额外的变量。 例如，`category=Males`是添加的变量。
 
    * 选择&#x200B;**[!UICONTROL 超链接]**。
 
-      * 如果您是Experience Manager Sites客户，请选择站点选择器图标（文件夹）以导航到URL。 如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
-      * 如果您是独立客户，请在HREF文本字段中指定链接网页的完整URL路径。
+     * 如果您是Experience Manager Sites客户，请选择站点选择器图标（文件夹）以导航到URL。 如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+     * 如果您是独立客户，请在HREF文本字段中指定链接网页的完整URL路径。
 
    请确保您指定是在新的浏览器选项卡（推荐的默认值）中还是同一选项卡中打开链接。
 
@@ -291,13 +311,14 @@ ht-degree: 1%
 
    * 选择&#x200B;**[!UICONTROL 体验片段]**。
 
-      * 如果您是Experience Manager Sites客户，请选择“搜索”图标（放大镜）以打开“体验片段”页面。 选择要使用的体验片段，然后选择页面右上角的&#x200B;**[!UICONTROL 选择]**，以便您可以返回热点管理页面。查看[体验片段](/help/sites-authoring/experience-fragments.md)。
+     * 如果您是Experience Manager Sites客户，请选择“搜索”图标（放大镜）以打开“体验片段”页面。 选择要使用的体验片段，然后选择页面右上角的&#x200B;**[!UICONTROL 选择]**，以便您可以返回热点管理页面。
+       查看[体验片段](/help/sites-authoring/experience-fragments.md)。
 
-      * 根据需要指定体验片段在横幅上的宽度和高度。
+     * 根据需要指定体验片段在横幅上的宽度和高度。
 
-        >[!NOTE]
-        >
-        >将查看器嵌入体验片段时，不支持交互式图像中的社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
+       >[!NOTE]
+       >
+       >将查看器嵌入体验片段时，不支持交互式图像中的社交媒体共享工具。 要解决此问题，您可以使用或创建没有社交媒体共享工具的查看器预设。 通过此类查看器预设，可成功地将其嵌入体验片段中。
 
 1. 选择&#x200B;**[!UICONTROL 保存]**&#x200B;以保存您所做的工作，并返回到“浏览”页。
 1. 发布交互式图像。 发布功能允许通过云交付横幅，并且在您需要与第三方网站集成时生成嵌入代码。
@@ -316,7 +337,10 @@ ht-degree: 1%
 
 您可以使用“预览”来查看交互式图像向客户显示的方式，并测试图像的热点以确保它们按预期运行。
 
-如果对交互式图像感到满意，则可以发布该图像。请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/embed-code.md)。查看[将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。请参阅[将Dynamic Media Assets添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md)。
+如果对交互式图像感到满意，则可以发布该图像。
+请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/embed-code.md)。
+查看[将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+请参阅[将Dynamic Media Assets添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md)。
 
 **要预览交互式图像：**
 
@@ -337,15 +361,17 @@ ht-degree: 1%
 
 如果您是独立Experience Manager Assets客户，则可以手动将交互式图像添加到您的网站，如本节所述。
 
-1. 复制发布的交互式图像的嵌入代码。请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/embed-code.md)。
+1. 复制发布的交互式图像的嵌入代码。
+请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/embed-code.md)。
 
-1. 将复制的嵌入代码添加到网页内所需的位置。复制的嵌入代码是为响应式环境设置的，因此会自动适合分配的区域。
+1. 将复制的嵌入代码添加到网页内所需的位置。
+复制的嵌入代码是为响应式环境设置的，因此会自动适合分配的区域。
 
 **示例**
 
 以演示网站为例：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
 
 请注意，三个男性的图片是一个静态`IMG`标记：
 
@@ -355,7 +381,7 @@ ht-degree: 1%
 
 集成非常简单，只需删除`IMG`标记并将其替换为Experience Manager Assets中复制的嵌入代码即可。 您可以在以下URL中看到结果，该URL显示了页面上带有三个圆热点的可购物交互式图像：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html)
 
 >[!NOTE]
 >
@@ -363,9 +389,9 @@ ht-degree: 1%
 
 要在响应式环境中将“裁切”应用于购物交互式图像，您可以在路径中包含交互式图像配置属性`ZoomView.iscommand`。 调用了组件`ZoomView`，`iscommand`是您应用的“裁切”图像服务命令。
 
-请参阅[ZoomView.iscommand](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand)配置属性。
+请参阅[ZoomView.iscommand](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand)配置属性。
 
-请参阅[裁切](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop)图像服务命令。
+请参阅[裁切](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop)图像服务命令。
 
 现在，您便可以将交互式图像与网站上的现有概览集成。
 
@@ -433,27 +459,27 @@ Experience Manager Assets返回的嵌入代码已具有注释掉的现成事件�
  <tbody>
   <tr>
    <td><p>单个SKU，在查询字符串中找到</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
-      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;source=100";
-      &rbrace;,
-      &rbrace;);</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>单个SKU，可在URL路径中找到</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
       var quickViewUrl = "https://server/product/" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+      },
+      });</code></td>
   </tr>
   <tr>
    <td><p>查询字符串中的SKU和类别ID</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
-      "quickViewActivate": function(inData) &lbrace;
-      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;prodId=" + inData.sku;
-      &rbrace;,
-      &rbrace;);</code></td>
+   <td><code class="code">s7interactiveimageviewer.setHandlers({
+      "quickViewActivate": function(inData) {
+      var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
+      },
+      });</code></td>
   </tr>
  </tbody>
 </table>
@@ -504,7 +530,7 @@ loadQuickView(quickViewUrl);
 
 具有完全集成交互式图像的最终演示网站如下所示：
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=zh-Hans](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html?lang=zh-Hans)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-3.html)
 
 ## 使用概览创建自定义弹出窗口 {#using-quickviews-to-create-custom-pop-ups}
 

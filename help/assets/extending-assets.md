@@ -1,21 +1,30 @@
 ---
-title: 自定义和扩展 [!DNL Assets]
+title: 自定义和扩展[!DNL Assets]
 description: 了解自定义和扩展Asset Share和Asset Editor的方法，为用户提供专门定制的界面和功能集。
 contentOwner: AG
 role: Developer
 feature: Developer Tools
 exl-id: 0271c528-23b0-4a3a-b5e8-5baf6cdeecc7
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '250'
-ht-degree: 0%
-
+source-wordcount: '252'
+ht-degree: 1%
 ---
-
 # 自定义和扩展[!DNL Assets] {#customizing-and-extending-assets}
 
-Asset Editor是AdobeEnterprise Manager网站的用户用于查找、查看和处理存储库中数字资源的主要访问点。
+资产编辑器是Adobe Enterprise Manager网站的用户用于查找、查看和处理存储库中数字资产的主要访问点。
 
 作为[!DNL Experience Manager]开发人员，您可以通过多种方式自定义和扩展资产编辑器，从而为用户提供量身定制的界面和功能集。
 
@@ -34,7 +43,7 @@ Asset Editor的以下外观和风格是可自定义的：
 
 * 徽标：您可以将您自己的组织的徽标添加到界面中。
 * 颜色和字体：可以更改界面中使用的颜色和字体。
-* HTML代码：要进行更全面的自定义，您可以更改定义界面的基础HTML代码。
+* HTML代码：要进行更全面的自定义，您可以更改用于定义界面的基础HTML代码。
 
 ## 自定义演绎版 {#customizing-renditions}
 

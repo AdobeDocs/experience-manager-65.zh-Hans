@@ -1,6 +1,6 @@
 ---
-title: 权限管理的主要视图
-description: 了解有利于权限管理的全新触屏 UI 界面。
+title: 权限管理的主体视图
+description: 了解有助于权限管理的全新触控 UI。
 contentOwner: sarchiz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,27 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 8adc566113beedc408698dccc3a4c072349af5dc
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 84%
-
 ---
 
-
-# 权限管理的主要视图{#principal-view-for-permissions-management}
+# 权限管理的主体视图{#principal-view-for-permissions-management}
 
 ## 概述 {#overview}
 
@@ -98,7 +110,7 @@ CRXDE 来管理高级特权和限制。 它已在同一个视图中得到合并�
 
 ### 编辑 ACE {#editing-aces}
 
-访问控制条目可以通过选择主体和选择要编辑的 ACE 来编辑。
+可以通过选择主体和要编辑的 ACE 来编辑访问控制条目。
 
 例如，您可以单击右侧的铅笔图标来编辑以下 **dam-users** 条目：
 
@@ -118,7 +130,7 @@ CRXDE 来管理高级特权和限制。 它已在同一个视图中得到合并�
 
 ### 删除 ACE {#deleting-aces}
 
-可以删除访问控制条目，以移除特定路径上给定主体的所有权限。 可以用 ACE 旁边的 X 图标删除它，如下所示：
+可以删除访问控制条目，以移除在特定路径上授予某个主体的所有权限。 可以用 ACE 旁边的 X 图标删除它，如下所示：
 
 ![删除 ACE](assets/image2019-3-21_0-53-19.png) ![删除 ACE](assets/unspe.png)
 

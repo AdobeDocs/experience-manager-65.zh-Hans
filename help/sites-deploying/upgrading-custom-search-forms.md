@@ -1,5 +1,5 @@
 ---
-title: 升级自定义搜索Forms
+title: 升级自定义搜索表单
 description: 本文详细介绍了升级后自定义搜索表单正常运行所需的调整。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 835ee49e-9248-5578-a60a-15c097807178
+    internal-label: Upgrading
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1797'
-ht-degree: 2%
-
+source-wordcount: '1796'
+ht-degree: 3%
 ---
-
-# 升级自定义搜索Forms{#upgrading-custom-search-forms}
+# 升级自定义搜索表单{#upgrading-custom-search-forms}
 
 在AEM 6.2中，Customized Search Forms在存储库中的存储位置已更改。 升级后，这些用户档案会从6.1中的以下位置移动：
 
@@ -38,9 +47,9 @@ ht-degree: 2%
 
 您可以通过执行以下操作来更改属性：
 
-1. 通过转到`https://server:port/crx/de/index.jsp`打开CRXDE Lite
+1. 通过访问 `https://server:port/crx/de/index.jsp` 来打开 CRXDE Lite
 1. 按照下面[自定义搜索Forms](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms)列表中的指定，浏览到需要调整的节点位置。
-1. 单击节点。 在右侧属性窗格中，单击并修改&#x200B;**sling：resourceType**&#x200B;属性。
+1. 单击节点。 在右侧属性窗格中，单击并修改&#x200B;**sling:resourceType**&#x200B;属性。
 1. 最后，按&#x200B;**全部保存**&#x200B;按钮保存更改。
 
 ## 自定义搜索Forms列表 {#list-of-custom-search-forms}
@@ -159,13 +168,13 @@ ht-degree: 2%
 * 删除`pagestatuspredicate`节点
 * 复制节点
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
-   * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/publishstatuspredicate`
+  * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * 复制节点
 
-   * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
-   * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
+  * `/libs/settings/cq/search/facets/sites/jcr:content/items/livecopystatuspredicate`
+  * 至`/conf/global/settings/cq/search/facets/sites/jcr:content/items`
 
 * 确保将`analyticspredicate`节点的`listOrder`属性设置为“**8**”。 这是避免冲突所必需的。
 
@@ -362,7 +371,7 @@ ht-degree: 2%
 
 **操作：**&#x200B;调整`resourceType`属性（添加“**/coral**”，如上面所示的6.2位置）。
 
-## 资产管理员搜索边栏 {#assets-admin-search-rail}
+## Assets 管理员搜索边栏 {#assets-admin-search-rail}
 
 以下节点引用`/conf/global/settings/dam/search/facets/assets/items`中的名称
 
@@ -413,7 +422,7 @@ ht-degree: 2%
 
 操作：调整resourceType属性（像上面所示的6.2位置中那样添加“/coral”）。
 
-### Publish谓词 {#publish-predicate}
+### 发布谓词 {#publish-predicate}
 
 | 6.1中默认搜索表单中的节点 | 发布 |
 |---|---|

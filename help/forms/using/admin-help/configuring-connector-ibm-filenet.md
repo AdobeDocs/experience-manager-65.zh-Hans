@@ -1,6 +1,6 @@
 ---
-title: 为IBM FileNet配置连接器
-description: 了解如何配置IBM FileNet的连接器，以启用AEM Forms和IBM FileNet之间的通信。
+title: 配置 IBM FileNet 连接器
+description: 了解如何配置IBM FileNet的连接器，以启用AEM Forms与IBM FileNet之间的通信。
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
@@ -9,14 +9,28 @@ exl-id: f4045df5-a35b-41d7-910e-971017148597
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '742'
-ht-degree: 1%
-
+source-wordcount: '748'
+ht-degree: 2%
 ---
-
-# 为IBM FileNet配置连接器 {#configuring-connector-for-ibm-filenet}
+# 配置 IBM FileNet 连接器 {#configuring-connector-for-ibm-filenet}
 
 >[!NOTE]
 > 
@@ -26,7 +40,7 @@ IBM FileNet连接器支持AEM Forms与IBM FileNet之间的通信。 有关其他
 
 >[!NOTE]
 >
->在早期版本中，资产可以存储在ECM存储库中。 在此版本中，资产存储在AEM Forms本地存储库中，并且存储库Provider服务已被弃用。 在升级到AEM表单时，将资产从ECM存储库迁移到AEM表单存储库。 有关详细信息，请参阅适用于您的应用程序服务器的AEM表单升级指南。
+>在早期版本中，资产可以存储在ECM存储库中。 在此版本中，资产存储在AEM表单本地存储库中，并且存储库提供程序服务已被弃用。 当您升级到AEM表单时，会将资源从ECM存储库迁移到AEM表单存储库。 有关详细信息，请参阅适用于您的应用程序服务器的AEM表单升级指南。
 
 ## 配置与内容引擎的连接 {#configure-the-connection-to-the-content-engine}
 

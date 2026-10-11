@@ -1,18 +1,29 @@
 ---
-title: 监控 [!DNL Assets] 部署的最佳实践
-description: 部署 [!DNL Adobe Experience Manager] 部署后监视其环境和性能的最佳实践。
+title: 监控[!DNL Assets]部署的最佳实践
+description: 监控[!DNL Adobe Experience Manager]部署后的环境和性能的最佳实践。
 contentOwner: AG
 role: Admin, Developer
 feature: Asset Management
 exl-id: a9e1bd6b-c768-4faa-99a3-7110693998dc
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1638'
-ht-degree: 0%
-
+source-wordcount: '1704'
+ht-degree: 1%
 ---
-
 # 监控[!DNL Adobe Experience Manager Assets]部署的最佳实践 {#assets-monitoring-best-practices}
 
 从[!DNL Experience Manager Assets]的角度来看，监控应包括观察和报告以下流程和技术：
@@ -111,7 +122,7 @@ Threads
 
 **监视器[!DNL Experience Manager]**
 
-[!DNL Experience Manager]还通过JMX公开一组统计数据和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关详细信息，请参阅[&#x200B; JMX MBean上的](/help/sites-administering/jmx-console.md)文档[!DNL Experience Manager]。
+[!DNL Experience Manager]还通过JMX公开一组统计数据和操作。 这些功能有助于评估系统运行状况，并在潜在问题影响用户之前发现它们。 有关详细信息，请参阅[!DNL Experience Manager] JMX MBean上的[文档](/help/sites-administering/jmx-console.md)。
 
 以下是您可以为[!DNL Experience Manager]监视的一些基线参数：
 
@@ -143,58 +154,58 @@ Threads
 以下是一些现成的运行状况检查，这些检查对监控很有帮助：
 
 * 系统检查
-   * MBean： `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
-   * 实例：一个作者，所有发布服务器
-   * 警报阈值：当状态不是“正常”时
-   * 警报定义：其中一个量度的状态为WARN或CRITICAL。 检查日志属性以了解有关问题原因的更多信息。
+  * MBean： `org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=systemchecks,type=HealthCheck`
+  * 实例：一个作者，所有发布服务器
+  * 警报阈值：当状态不是“正常”时
+  * 警报定义：其中一个量度的状态为WARN或CRITICAL。 检查日志属性以了解有关问题原因的更多信息。
 
 * 复制队列
 
-   * MBean： `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
-   * 实例：一个作者，所有发布服务器
-   * 警报阈值：当状态不是“正常”时
-   * 警报定义：其中一个量度的状态为WARN或CRITICAL。 检查日志属性，了解有关导致问题的队列的更多信息。
+  * MBean： `org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=replicationQueue,type=HealthCheck`
+  * 实例：一个作者，所有发布服务器
+  * 警报阈值：当状态不是“正常”时
+  * 警报定义：其中一个量度的状态为WARN或CRITICAL。 检查日志属性，了解有关导致问题的队列的更多信息。
 
 * 响应性能
 
-   * MBean： `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
-   * 实例：所有服务器
-   * 警报持续时间：当状态不是“正常”时
-   * 警报定义：其中一个量度的状态为WARN或CRITICAL。 检查日志属性，了解有关导致问题的队列的更多信息。
+  * MBean： `org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=requestsStatus,type=HealthCheck`
+  * 实例：所有服务器
+  * 警报持续时间：当状态不是“正常”时
+  * 警报定义：其中一个量度的状态为WARN或CRITICAL。 检查日志属性，了解有关导致问题的队列的更多信息。
 
 * 查询性能
 
-   * MBean： `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
-   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
-   * 实例：一个作者，所有发布服务器
-   * 警报阈值：当状态不是“正常”时
-   * 警报定义：一个或多个查询在系统中运行缓慢。 检查日志属性，了解有关导致问题的查询的更多信息。
+  * MBean： `org.apache.sling.healthcheck:name=queriesStatus,type=HealthCheck`
+  * URL： `/system/console/jmx/org.apache.sling.healthcheck:name= queriesStatus,type=HealthCheck`
+  * 实例：一个作者，所有发布服务器
+  * 警报阈值：当状态不是“正常”时
+  * 警报定义：一个或多个查询在系统中运行缓慢。 检查日志属性，了解有关导致问题的查询的更多信息。
 
 * 活动包
 
-   * MBean： `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
-   * 实例：所有服务器
-   * 警报阈值：当状态不是“正常”时
-   * 警报定义：系统上存在非活动或未解析的OSGi捆绑包。 检查日志属性，以了解有关导致问题的捆绑包的更多信息。
+  * MBean： `org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=inactiveBundles,type=HealthCheck`
+  * 实例：所有服务器
+  * 警报阈值：当状态不是“正常”时
+  * 警报定义：系统上存在非活动或未解析的OSGi捆绑包。 检查日志属性，以了解有关导致问题的捆绑包的更多信息。
 
 * 日志错误
 
-   * MBean： `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
-   * 实例：所有服务器
-   * 警报阈值：当状态不是“正常”时
-   * 警报定义：日志文件中有错误。 检查日志属性以了解有关问题原因的更多信息。
+  * MBean： `org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * URL： `/system/console/jmx/org.apache.sling.healthcheck:name=logErrorHealthCheck,type=HealthCheck`
+  * 实例：所有服务器
+  * 警报阈值：当状态不是“正常”时
+  * 警报定义：日志文件中有错误。 检查日志属性以了解有关问题原因的更多信息。
 
 ## 常见问题和解决方法  {#common-issues-and-resolutions}
 
 在监视过程中，如果您遇到问题，可以执行以下一些故障排除任务，以解决[!DNL Experience Manager]部署的常见问题：
 
 * 如果使用TarMK，请经常运行Tar压缩。 有关详细信息，请参阅[维护存储库](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)。
-* 检查`OutOfMemoryError`日志。 有关详细信息，请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=zh-Hans)。
+* 检查`OutOfMemoryError`日志。 有关详细信息，请参阅[分析内存问题](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html)。
 
 * 检查日志中是否存在对未索引查询、树遍历或索引遍历的任何引用。 这些指示未索引的查询或索引不足的查询。 有关优化查询和索引性能的最佳实践，请参阅[有关查询和索引的最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 * 使用工作流控制台验证您的工作流是否按预期执行。 如果可能，将多个工作流合并到单个工作流中。

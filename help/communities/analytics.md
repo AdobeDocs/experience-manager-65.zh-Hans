@@ -10,13 +10,20 @@ role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
 solution: Experience Manager
 feature: Communities
-source-git-commit: 86ce8d1ead6f2b760eb0d037042ddfc2af418913
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2821'
 ht-degree: 1%
-
 ---
-
 # 用于社区功能的Analytics配置 {#analytics-configuration-for-communities-features}
 
 ## 概述 {#overview}
@@ -87,17 +94,17 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
 ## 用于视频报表的Adobe Analytics报表包 {#adobe-analytics-report-suite-for-video-reporting}
 
-使用Adobe Experience Cloud的[报表包管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html?lang=zh-Hans)，可以配置Analytics报表包，以便启用社区站点来提供社区功能报表。
+使用Adobe Experience Cloud的[报表包管理器](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/new-report-suite.html)，可以配置Analytics报表包，以便启用社区站点来提供社区功能报表。
 
-通过使用[公司名称和用户名](/help/communities/analytics.md#prerequisites)登录到[Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html?lang=zh-Hans)，可以将新的或现有的报表包配置为具有：
+通过使用[公司名称和用户名](/help/communities/analytics.md#prerequisites)登录到[Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html)，可以将新的或现有的报表包配置为具有：
 
-* [11转化变量](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html?lang=zh-Hans) (eVar)
+* [11转化变量](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/conversion-var-admin.html) (eVar)
 
   * **`evar1`**&#x200B;到&#x200B;**`evar11`**&#x200B;已启用
 
   * 可以重新利用（重命名）现有eVar或创建用于Communities功能的项目
 
-* [7个成功事件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html?lang=zh-Hans) （个事件）
+* [7个成功事件](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/success-events/success-event.html) （个事件）
 
   * **`event1`**&#x200B;到&#x200B;**`event7`**&#x200B;已启用
 
@@ -107,7 +114,7 @@ Adobe Analytics和Adobe Experience Manager (AEM)都是Adobe Experience Cloud的�
 
   * 可以重新利用（重命名）现有事件或创建要用于Communities功能的事件
 
-* [视频管理](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)
+* [视频管理](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
   * 视频报表控制台
 
@@ -659,10 +666,10 @@ Adobe Analytics凭据已加密。 为了便于作者和发布者之间复制或�
 
 ## 在Analytics中管理用户数据 {#manage-user-data-in-analytics}
 
-Adobe Analytics提供了允许您访问、导出和删除用户数据的API。 有关详细信息，请参阅[提交访问和删除请求](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hans)。
+Adobe Analytics提供了允许您访问、导出和删除用户数据的API。 有关详细信息，请参阅[提交访问和删除请求](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)。
 
 ## 资源 {#resources}
 
-* Adobe Experience Cloud： [Analytics帮助和引用](https://experienceleague.adobe.com/docs/analytics.html?lang=zh-Hans)
+* Adobe Experience Cloud： [Analytics帮助和引用](https://experienceleague.adobe.com/docs/analytics.html)
 * AEM： [与Adobe Analytics集成](/help/sites-administering/adobeanalytics.md)
 * AEM：[Analytics与外部提供程序](/help/sites-administering/external-providers.md)

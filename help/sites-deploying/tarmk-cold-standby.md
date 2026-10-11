@@ -10,13 +10,22 @@ feature: Administering
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 5575628c54e2e588dfae4c34383af7d6d55ce859
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2696'
 ht-degree: 1%
-
 ---
-
 # 如何以 TarMK 冷备用方式运行 AEM{#how-to-run-aem-with-tarmk-cold-standby}
 
 ## 简介 {#introduction}
@@ -119,7 +128,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
    在下面查找主实例的示例配置：
 
-   **&#x200B;**&#x200B;的示例&#x200B;**org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
+   ****&#x200B;的示例&#x200B;**org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config**
 
    ```xml
    org.apache.sling.installer.configuration.persist=B"false"
@@ -325,7 +334,7 @@ Tar微内核的冷备用容量允许一个或多个备用Adobe Experience Manage
 
 您可以按照以下列出的步骤执行此操作：
 
-1. 转到JMX控制台并使用&#x200B;**org.apache.jackrabbit.oak： Status (&quot;Standby&quot;)**&#x200B;bean停止冷备用实例上的同步过程。 有关如何执行此操作的更多信息，请参阅[监控](#monitoring)部分。
+1. 转到JMX控制台并使用**org.apache.jackrabbit.oak： Status (&quot;Standby&quot;)**bean停止冷备用实例上的同步过程。 有关如何执行此操作的更多信息，请参阅[监控](#monitoring)部分。
 1. 停止冷备用实例。
 1. 在主实例上安装修补程序。 有关如何安装修补程序的更多详细信息，请参阅[如何使用包](/help/sites-administering/package-manager.md)。
 1. 安装后，测试实例是否存在问题。

@@ -1,5 +1,5 @@
 ---
-title: 为Forms配置缓存
+title: 为 Forms 配置缓存
 description: 了解如何配置缓存设置以及如何对缓存的注意事项进行群集。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,28 @@ exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1623'
-ht-degree: 0%
-
+source-wordcount: '1631'
+ht-degree: 1%
 ---
-
-# 为Forms配置缓存{#configuring-caching-for-forms}
+# 为 Forms 配置缓存{#configuring-caching-for-forms}
 
 >[!NOTE]
 > 
@@ -106,9 +120,9 @@ Forms支持两种缓存模式：
 
 Forms服务始终在磁盘上缓存表单设计。 如果表单设计存储在服务器上，则这些文件被视为磁盘缓存。 Forms服务还根据&#x200B;**内存中模板缓存**&#x200B;区域中的设置，在内存中缓存表单设计。 如果更改其中任何设置，请重新启动Forms服务以使更改生效。 要重新启动此服务，请使用Workbench或参阅[启动或停止与AEM表单模块](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules)关联的服务以获取说明。
 
-**模板配置缓存大小：**&#x200B;要保留在内存中的模板配置对象的最大数目。 默认值为 100。建议将此值设置为大于或等于模板缓存大小值。 此设置不会影响磁盘缓存。
+**模板配置缓存大小：**&#x200B;要保留在内存中的模板配置对象的最大数目。 默认值为 100。 建议将此值设置为大于或等于模板缓存大小值。 此设置不会影响磁盘缓存。
 
-**模板缓存大小：**&#x200B;要保留在内存中的模板内容对象的最大数目。 默认值为 100。此设置不会影响磁盘缓存。
+**模板缓存大小：**&#x200B;要保留在内存中的模板内容对象的最大数目。 默认值为 100。 此设置不会影响磁盘缓存。
 
 **已启用：**&#x200B;默认情况下，此复选框处于选中状态，这意味着表单模板已缓存到内存中。 如果未选择此选项，则仅在磁盘上缓存表单模板。
 
@@ -118,7 +132,7 @@ Forms服务缓存渲染的表单，以便它不需要在后续请求中解析和
 
 这些设置位于内存表单渲染缓存&#x200B;**区域中的**&#x200B;中。 如果更改其中任一设置，请重新启动Forms服务以使更改生效。 要重新启动此服务，请使用Workbench或参阅[启动或停止与AEM表单模块](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules)关联的服务以获取说明。
 
-**缓存大小：**&#x200B;指定内存缓存中可以驻留的渲染表单的最大数目。 默认值为 100。此设置不会影响磁盘缓存。
+**缓存大小：**&#x200B;指定内存缓存中可以驻留的渲染表单的最大数目。 默认值为 100。 此设置不会影响磁盘缓存。
 
 **已启用：**&#x200B;默认情况下，此选项处于选中状态，这意味着呈现的表单已缓存到内存中。 如果未选择此选项，则呈现的表单将仅缓存在磁盘上。
 

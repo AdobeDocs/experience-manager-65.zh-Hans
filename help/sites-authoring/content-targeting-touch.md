@@ -10,7 +10,24 @@ exl-id: edde225d-0be7-4306-8dda-d18d46fae977
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '5344'
 ht-degree: 72%
@@ -28,7 +45,7 @@ ht-degree: 72%
 * 模拟用户体验。
 * 配置 Target 组件，以进行更多自定义。
 
-您可以将 AEM 或 Adobe Target 用作定位引擎（您必须拥有有效的 Adobe Target 帐户才能使用 Adobe Target）。 如果您使用的是 Adobe Target，则必须先配置集成。 请参阅有关集成Adobe Target[&#128279;](/help/sites-administering/target.md)的说明。
+您可以将 AEM 或 Adobe Target 用作定位引擎（您必须拥有有效的 Adobe Target 帐户才能使用 Adobe Target）。 如果您使用的是 Adobe Target，则必须先配置集成。 请参阅有关集成Adobe Target](/help/sites-administering/target.md)的[说明。
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -147,7 +164,7 @@ ht-degree: 72%
 >
 >产品建议是目标组件的内容。
 
-体验显示在“受众”窗格中。 在以下示例中，体验包 **括Default**、 **Female**、Female 30 **岁以上的体验和**&#x200B;**&#x200B;** Female 30以下的体验。 此示例显示了目标图像组件的默认 **产品建议** 。
+体验显示在“受众”窗格中。 在以下示例中，体验包 **括Default**、 **Female**、Female 30 **岁以上的体验和****** Female 30以下的体验。 此示例显示了目标图像组件的默认 **产品建议** 。
 
 ![chlimage_1-12](assets/chlimage_1-12.png)
 
@@ -528,7 +545,7 @@ ht-degree: 72%
  </tbody>
 </table>
 
-有关成功量度的更多信息，请参阅[Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=zh-Hans)。
+有关成功量度的更多信息，请参阅[Adobe Target文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)。
 
 ### 配置设置（AEM 定位） {#configuring-settings-aem-targeting}
 
@@ -561,19 +578,19 @@ ht-degree: 72%
    * **指定的日期和时间**：特定的时间。 选择此选项时，单击日历图标，选择日期，然后指定活动结束时间。
 
 1. 要指定活动的优先级，请使用滑块选择&#x200B;**低**、**标准**&#x200B;或&#x200B;**高。**
-1. 如果您已使用Adobe帐户配置Adobe Target Anaytics，则会显示&#x200B;**报告Source**&#x200B;下拉菜单。 选 **择Adobe Target**&#x200B;**或Adobe Analytics** 作为源。
+1. 如果您已使用Adobe帐户配置Adobe Target Anaytics，则会显示&#x200B;**报告Source**&#x200B;下拉菜单。 选 **择Adobe Target****或Adobe Analytics** 作为源。
 
    如果选择 **Adobe Analytics**，请选择公司和报表包。 如果选择 **Adobe Target**，则不需要执行任何操作。
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. 在“目 **标量度** ”区域的“我的主要目标 **&#x200B;**&#x200B;”下，选择要跟踪的成功量度——转化率、收入、参与度——并输入度量的度量方式（或受众采取什么操作指示已达到目标）。 请参阅上表中目标量度的定义，并参阅 [Adobe Target成功量度相关文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=zh-Hans) 。
+1. 在“目 **标量度** ”区域的“我的主要目标 **** ”下，选择要跟踪的成功量度——转化率、收入、参与度——并输入度量的度量方式（或受众采取什么操作指示已达到目标）。 请参阅上表中目标量度的定义，并参阅 [Adobe Target成功量度相关文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) 。
 
    您可以通过单击右上角的三个圆点，然后选择&#x200B;**重命名**&#x200B;来重命名目标。
 
    如果需要清除所有字段，请单击右上角的三个圆点，然后选择&#x200B;**清除所有字段**。
 
-   您还可以定义所有量度的高级设置。 选择&#x200B;**高级设置**&#x200B;可访问这些设置。 请参阅上一个表中的成功量度计数方式的定义以及 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=zh-Hans)。
+   您还可以定义所有量度的高级设置。 选择&#x200B;**高级设置**&#x200B;可访问这些设置。 请参阅上一个表中的成功量度计数方式的定义以及 [Adobe Target 文档](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html)。
 
    >[!NOTE]
    >

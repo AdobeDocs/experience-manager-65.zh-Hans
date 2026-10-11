@@ -9,13 +9,20 @@ role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '449'
-ht-degree: 4%
-
+source-wordcount: '453'
+ht-degree: 5%
 ---
-
 # 社区站点 {#communities-sites}
 
 本节适用于那些管理AEM Communities并假定熟悉AEM Communities功能的人员。
@@ -33,22 +40,22 @@ ht-degree: 4%
 
 * 社区[控制台](consoles.md)
 
-   * [Sites](sites-console.md)
+  * [Sites](sites-console.md)
 
-      * [组（子社区）](groups.md)
+    * [组（子社区）](groups.md)
 
-   * [审核](moderation.md)
-   * [成员和组管理](members.md)
-   * [报告](reports.md)
+  * [审核](moderation.md)
+  * [成员和组管理](members.md)
+  * [报告](reports.md)
 
 * 社区&#x200B;[*工具*](tools.md)：
 
-   * [站点模板](sites.md)
-   * [组模板](tools-groups.md)
-   * [社区功能](functions.md)
-   * [存储配置](srp-config.md)
-   * [组件指南](components-guide.md)
-   * [徽章](badges.md)
+  * [Site 模板](sites.md)
+  * [组模板](tools-groups.md)
+  * [社区功能](functions.md)
+  * [存储配置](srp-config.md)
+  * [组件指南](components-guide.md)
+  * [徽章](badges.md)
 
 
 ### 用户生成的内容 {#user-generated-content}
@@ -80,7 +87,7 @@ AEM Communities的一个主要功能是通过登录网站访客（成员）生�
 
 使用社区内容的性质会影响部署结构：
 
-* [推荐的社区拓扑](topologies.md)
+* [适用于 Communities 的推荐拓扑](topologies.md)
 
 在AEM平台上安装最新的Communities版本很重要：
 

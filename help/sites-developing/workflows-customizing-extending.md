@@ -9,13 +9,22 @@ exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '3628'
 ht-degree: 2%
-
 ---
-
 # 扩展工作流功能{#extending-workflow-functionality}
 
 本主题介绍如何为工作流开发自定义步骤组件，以及如何以编程方式与工作流交互。
@@ -63,8 +72,8 @@ ht-degree: 2%
 
   包含以下选项卡的对话框：
 
-   * **常用**：用于编辑标题和描述。
-   * **高级**：用于编辑电子邮件通知属性。
+  * **常用**：用于编辑标题和描述。
+  * **高级**：用于编辑电子邮件通知属性。
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -96,7 +105,7 @@ ht-degree: 2%
 
 ## 创建自定义工作流步骤组件 {#creating-custom-workflow-step-components}
 
-可以使用与任何其他组件[&#128279;](/help/sites-developing/components.md)相同的方式创建工作流步骤组件。
+可以使用与任何其他组件](/help/sites-developing/components.md)相同的方式创建工作流步骤组件[。
 
 要从（现有）基本步骤组件之一继承，请将以下属性添加到`cq:Component`节点：
 
@@ -104,9 +113,9 @@ ht-degree: 2%
 * 类型：`String`
 * 值：解析为基本组件的以下路径之一：
 
-   * `cq/workflow/components/model/process`
-   * `cq/workflow/components/model/participant`
-   * `cq/workflow/components/model/dynamic_participant`
+  * `cq/workflow/components/model/process`
+  * `cq/workflow/components/model/participant`
+  * `cq/workflow/components/model/dynamic_participant`
 
 ### 指定步骤实例的默认标题和说明 {#specifying-the-default-title-and-description-for-step-instances}
 
@@ -240,16 +249,16 @@ ht-degree: 2%
 
 * 名称：`PROCESS_AUTO_ADVANCE`
 
-   * 类型：`Boolean`
-   * 值：
+  * 类型：`Boolean`
+  * 值：
 
-      * 当设置为`true`时，工作流将运行该步骤并继续 — 这是默认设置，也推荐
-      * 当`false`时，工作流将运行并停止；这需要额外的处理，因此建议使用`true`
+    * 当设置为`true`时，工作流将运行该步骤并继续 — 这是默认设置，也推荐
+    * 当`false`时，工作流将运行并停止；这需要额外的处理，因此建议使用`true`
 
 * 名称：`DO_NOTIFY`
 
-   * 类型：`Boolean`
-   * 值：指示是否应为用户参与步骤发送电子邮件通知（并假定邮件服务器配置正确）
+  * 类型：`Boolean`
+  * 值：指示是否应为用户参与步骤发送电子邮件通知（并假定邮件服务器配置正确）
 
 ## 保留和访问数据 {#persisting-and-accessing-data}
 
@@ -838,12 +847,12 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 
      必须为以下任一项：
 
-      * 协作工作流
-      * DAM 工作流
-      * 表单工作流
-      * 项目
-      * WCM 工作流
-      * 工作流
+     * 协作工作流
+     * DAM 工作流
+     * 表单工作流
+     * 项目
+     * WCM 工作流
+     * 工作流
 
    ![wf-35](assets/wf-35.png)
 

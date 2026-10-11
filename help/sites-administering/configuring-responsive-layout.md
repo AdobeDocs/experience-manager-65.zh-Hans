@@ -10,13 +10,22 @@ exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 17c4084d9ee93e5fe6652d63438eaf34cbc83c12
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1502'
 ht-degree: 3%
-
 ---
-
 
 # 配置布局容器和布局模式{#configuring-layout-container-and-layout-mode}
 
@@ -38,20 +47,20 @@ AEM 使用一组机制为页面实现响应式布局：
 
   此组件提供了一个网格段落系统，允许您在响应式网格中添加和放置组件。 它可以用作页面的默认Parsys，和/或在组件浏览器中提供给作者。
 
-   * 默认&#x200B;**布局容器**&#x200B;组件定义于：
+  * 默认&#x200B;**布局容器**&#x200B;组件定义于：
 
-     `/libs/wcm/foundation/components/responsivegrid`
+    `/libs/wcm/foundation/components/responsivegrid`
 
-   * 您可以定义布局容器：
+  * 您可以定义布局容器：
 
-      * 作为用户可以添加到页面中的组件。
-      * 作为页面的默认parsys。
-      * 两者。
+    * 作为用户可以添加到页面中的组件。
+    * 作为页面的默认parsys。
+    * 两者。
 
-        您可以将布局容器作为页面的标准，同时允许用户在此中添加更多布局容器；例如，实现列控件。
+      您可以将布局容器作为页面的标准，同时允许用户在此中添加更多布局容器；例如，实现列控件。
 
 * **[布局模式](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-将布局容器放置到页面上后，即可使用&#x200B;**布局**&#x200B;模式在响应式网格内放置内容。
+将布局容器放置到页面上后，即可使用**布局**&#x200B;模式在响应式网格内放置内容。
 
 * [**模拟器**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 通过执行此操作，您可以创建和编辑响应式网站，这些网站可通过以交互方式调整组件大小，从而根据设备/窗口大小重新排列布局。 然后，用户可以使用模拟器查看内容的呈现方式。
@@ -102,13 +111,13 @@ AEM 使用一组机制为页面实现响应式布局：
 * 在响应式设计中使用。
 * 可以定义：
 
-   * 在页面模板上，设置会从中复制到使用该模板创建的任何页面。
-   * 在页面节点上，任何子页面都会从中继承设置。
+  * 在页面模板上，设置会从中复制到使用该模板创建的任何页面。
+  * 在页面节点上，任何子页面都会从中继承设置。
 
 * 定义标题和宽度：
 
-   * 标题描述了通用设备分组，并根据需要提供了方向；例如，手机、平板电脑、表格横向。
-   * 宽度定义该通用设备分组的最大宽度（以像素为单位）。 例如，如果断点电话的宽度为768，则表示它是用于电话设备的最大布局宽度。
+  * 标题描述了通用设备分组，并根据需要提供了方向；例如，手机、平板电脑、表格横向。
+  * 宽度定义该通用设备分组的最大宽度（以像素为单位）。 例如，如果断点电话的宽度为768，则表示它是用于电话设备的最大布局宽度。
 
 * 使用模拟器时，在页面编辑器顶部显示为标记。
 * 继承自父节点层次结构，可以随意覆盖。
@@ -213,7 +222,7 @@ AEM 使用一组机制为页面实现响应式布局：
 
 AEM使用LESS生成必要的CSS部分，这些项目需要包含在您的项目中。
 
-您还必须创建一个[客户端库](https://experienceleague.adobe.com/docs/?lang=zh-Hans)以提供额外的配置和函数调用。 以下LESS提取是您必须添加到项目的最小值示例：
+您还必须创建一个[客户端库](https://experienceleague.adobe.com/docs/)以提供额外的配置和函数调用。 以下LESS提取是您必须添加到项目的最小值示例：
 
 ```css
 @import (once) "/libs/wcm/foundation/clientlibs/grid/grid_base.less";
@@ -253,11 +262,11 @@ AEM使用LESS生成必要的CSS部分，这些项目需要包含在您的项目�
 
 * 之前：
 
-   * `width=100px`
+  * `width=100px`
 
 * 之后：
 
-   * `max-width=100px`
+  * `max-width=100px`
 
 #### 调整大小和自适应图像合规性 {#resizing-and-adaptive-image-compliance}
 
@@ -317,11 +326,11 @@ AEM使用LESS生成必要的CSS部分，这些项目需要包含在您的项目�
 
    * 可用列数：
 
-      * `columns="{String}8"`
+     * `columns="{String}8"`
 
    * 可添加到当前组件的组件：
 
-      * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
+     * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
 
 ## 嵌套响应式网格 {#nested-responsive-grids}
 

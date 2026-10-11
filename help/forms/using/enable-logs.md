@@ -1,5 +1,5 @@
 ---
-title: 为HTML5表单启用日志记录
+title: 为 HTML5 Forms 启用日志记录功能
 description: 记录器实用程序启用表单的记录，并帮助您调试与表单相关的问题。
 contentOwner: robhagat
 content-type: reference
@@ -10,24 +10,39 @@ feature: HTML5 Forms,Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 97aafc4b-2598-52d6-9012-295a95969e38
+    internal-label: HTML5 Forms
+  - id: 59f95943-e802-56ac-990d-21ab923984c1
+    internal-label: Mobile Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '629'
-ht-degree: 4%
-
+source-wordcount: '644'
+ht-degree: 6%
 ---
+# 为 HTML5 Forms 启用日志记录功能{#enable-logging-for-html-forms}
 
-# 为HTML5表单启用日志记录{#enable-logging-for-html-forms}
-
-您可以配置记录器实用程序，以开始创建HTML5表单的日志。 记录器实用程序有各种级别，您可以根据需要设置一个级别。 HTML5表单包含服务器和客户端组件。 您可以为两个组件配置日志。
+您可以配置记录器实用程序，以开始创建HTML5表单的日志。 记录器实用程序有各种级别，您可以根据需要设置一个级别。 HTML5 forms具有服务器和客户端组件。 您可以为两个组件配置日志。
 
 ## 配置服务器端日志记录 {#configuring-server-side-logging}
 
 执行以下步骤以配置服务器端日志：
 
-1. 转到`https://'[server]:[port]'/system/console/configMgr`。 找到并打开&#x200B;*Apace Sling日志记录器配置*&#x200B;选项。 此时将显示一个对话框：
+1. 转到 `https://'[server]:[port]'/system/console/configMgr`. 找到并打开&#x200B;*Apace Sling日志记录器配置*&#x200B;选项。 此时将显示一个对话框：
 
-   ![&#x200B; Apace Sling日志记录器配置选项对话框](assets/logconfig.png)
+   ![ Apace Sling日志记录器配置选项对话框](assets/logconfig.png)
 
    Apace Sling日志记录器配置选项
 
@@ -37,13 +52,13 @@ ht-degree: 4%
 
    >[!NOTE]
    >
-   >要在HTML5表单log目录中生成日志，请在文件名之前添加……/logs/ 。
+   >要在HTML5表单日志目录中生成日志，请在文件名之前添加……/logs/ 。
 
 1. 将&#x200B;**记录器**&#x200B;更改为&#x200B;**HTMLFormsPerfLogger**。 单击&#x200B;**保存**。
 
 ## 配置客户端日志记录 {#configuring-client-logging}
 
-可以使用以下方法在HTML5表单中启用客户端日志记录：
+您可以使用以下方法在HTML5表单中启用客户端日志记录：
 
 * 使用名为`log`的请求参数
 * 使用CQ Configuration Manager
@@ -161,7 +176,7 @@ ht-degree: 4%
   </tr>
   <tr>
    <td>2-a4-b5-c6<br type="_moz" /> </td>
-   <td>目标： Server<br /> xfa级别： INFO<br /> xfaView级别： DEBUG<br /> xfaPerf级别：TRACE</td>
+   <td>目标： Server<br /> xfa级别： INFO<br /> xfaView级别： DEBUG<br /> xfaPerf级别： TRACE</td>
   </tr>
  </tbody>
 </table>
@@ -170,7 +185,7 @@ ht-degree: 4%
 >
 >每个日志类别a (xfa)、b (xfaView)和c (xfaPerf)的默认日志级别为2 (ERROR)。 因此，对于日志配置：2-b6，不同类别的日志级别为：
 >a (xfa)：2（默认级别错误）
->b (xfaView)：6(用户指定的TRACE)
+>b (xfaView)：6（用户指定的TRACE）
 >a (xfaPerf)：2（默认级别错误）
 
 ### 使用Configuration Manager启用记录 {#enabling-logging-using-configuration-manager}

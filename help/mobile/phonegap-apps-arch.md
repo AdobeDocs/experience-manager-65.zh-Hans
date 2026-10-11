@@ -8,13 +8,17 @@ exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2693'
 ht-degree: 0%
-
 ---
-
 # 应用程序的剖析{#the-anatomy-of-an-app}
 
 {{ue-over-mobile}}
@@ -191,7 +195,7 @@ PhoneGap应用程序中任何给定资产的URI不仅会因平台而异，而且
 
 作为PhoneGap开发人员，您关注的内容位于www目录下方。 要访问应用程序资产，请使用相对路径。
 
-为了解决此问题，PhoneGap应用程序使用单页应用程序(SPA)模式，以便基本URI（不包括哈希）永不更改。 因此，您引用的每个资源、模板或脚本&#x200B;**都必须相对于您的顶级页面。 &#x200B;** 顶级页面通过`*<name>*.angular-app-module.js`和`*<name>*.angular-app-controllers.js`初始化Angular路由和控制器。 此页面应该是*不*扩展sling:redirect的最接近存储库根的页面。
+为了解决此问题，PhoneGap应用程序使用单页应用程序(SPA)模式，以便基本URI（不包括哈希）永不更改。 因此，您引用的每个资源、模板或脚本**都必须相对于您的顶级页面。 **顶级页面通过`*<name>*.angular-app-module.js`和`*<name>*.angular-app-controllers.js`初始化Angular路由和控制器。 此页面应该是*不*扩展sling:redirect的最接近存储库根的页面。
 
 有几种辅助方法可用于处理相对路径：
 

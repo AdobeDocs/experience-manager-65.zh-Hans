@@ -10,13 +10,20 @@ exl-id: 17081710-35e0-4f5b-9485-1f85c065fd70
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1389'
+source-wordcount: '1403'
 ht-degree: 0%
-
 ---
-
 # 问答论坛功能{#q-a-forum-feature}
 
 ## 简介 {#introduction}
@@ -33,7 +40,7 @@ ht-degree: 0%
 
 该文档描述了：
 
-* 将QnA论坛功能添加到AEM站点。
+* 向AEM站点添加问题与解答论坛功能。
 * `QnA`组件的配置设置。
 
 ## 向页面添加Q&amp;A论坛 {#adding-a-q-a-forum-to-a-page}
@@ -163,7 +170,7 @@ ht-degree: 0%
 
 * **UI提及模式**
 
-  指定允许的样式字符串以在帖子中标记(@mention)已注册用户。 例如：`~{{familyName}}{{givenName}}`。
+  指定允许的样式字符串以在帖子中标记(@mention)已注册用户。 例如 `~{{familyName}}{{givenName}}`。
 
 #### “用户审核”选项卡 {#user-moderation-tab}
 
@@ -210,7 +217,7 @@ ht-degree: 0%
 
 * **建议限制**
 
-  输入要显示为向论坛发布成员建议的标记数。 值&#x200B;**-**&#x200B;1表示无限制。 默认值为0。
+  输入要显示为向论坛发布成员建议的标记数。 值**-**1表示无限制。 默认值为0。
 
 #### “排序设置”选项卡 {#sort-settings-tab}
 
@@ -248,7 +255,7 @@ ht-degree: 0%
 
 在站点访客登录时，根据配置，他们可以：
 
-* Post的新问题。
+* 发布一个新问题。
 * 编辑或删除他们创作的问题。
 * 标记其他成员的问题或答案。
 * 找出他们所编写问题的答案。

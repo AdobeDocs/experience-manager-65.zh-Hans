@@ -5,13 +5,28 @@ exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '528'
 ht-degree: 36%
-
 ---
-
 # 个性化和内容定位 {#personalization}
 
 ## 个性化和内容定位 {#personalization-and-content-targeting}
@@ -20,7 +35,7 @@ AEM提供了一个用于创作目标内容和呈现个性化体验的工具框�
 
 ## 定位模式 {#targeting-mode}
 
-可使用 AEM 的定位模式[创作目标内容](/help/sites-authoring/content-targeting-touch.md)。定位模式和 Target 组件提供了一些工具，用于为您的营销活动体验创建内容。
+可使用 AEM 的定位模式[创作目标内容](/help/sites-authoring/content-targeting-touch.md)。 定位模式和 Target 组件提供了一些工具，用于为您的营销活动体验创建内容。
 
 ## 活动 {#activities}
 
@@ -34,11 +49,11 @@ AEM提供了一个用于创作目标内容和呈现个性化体验的工具框�
 
 ## 体验 {#experiences}
 
-对于每个活动，您可以定义一个或多个体验来识别要定位的受众。AEM 使您能够控制包含每个体验的内容。
+对于每个活动，您可以定义一个或多个体验来识别要定位的受众。 AEM 使您能够控制包含每个体验的内容。
 
 受众基于在AEM或Adobe Target中创建的营销区段。 当访客打开网页时，页面逻辑会确定访客所属的受众，并显示您为该受众创建的内容。
 
-例如，某项活动定义了针对两类不同受众的体验：30 岁以上的女性和 30 岁以下的女性。We.Retail网站的女性页面针对每种体验显示不同的产品。
+例如，某项活动定义了针对两类不同受众的体验：30 岁以上的女性和 30 岁以下的女性。 We.Retail网站的女性页面针对每种体验显示不同的产品。
 
 您可以为活动定义体验。 您可以使用[活动控制台](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console)或[定位模式](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode)向活动添加体验。
 

@@ -10,13 +10,31 @@ role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1298'
+source-wordcount: '1398'
 ht-degree: 2%
-
 ---
-
 # 用于处理元数据、图像和视频的配置文件{#profiles-for-processing-metadata-images-and-videos}
 
 配置文件是将哪些选项应用于上传到文件夹的资源的指导方针。 例如，您可以指定要应用于上载的视频资产的元数据配置文件和视频编码配置文件。 或者，什么图像配置文件要应用于图像资产才能正确裁剪。
@@ -31,7 +49,7 @@ ht-degree: 2%
 
 创建元数据、图像或视频配置文件后，可将其分配给一个或多个文件夹，用作新上传资源的目标。
 
-在Experience Manager Assets中使用用户档案的一个重要概念就是将其分配给文件夹。在配置文件中，是元数据配置文件形式的设置，以及视频配置文件或图像配置文件。这些设置处理文件夹及其任何子文件夹的内容。因此，如何命名文件和文件夹、如何排列子文件夹以及如何处理这些文件夹中的文件对配置文件处理这些资产的方式有显着的影响。
+在Experience Manager Assets中使用用户档案的一个重要概念就是将其分配给文件夹。 在配置文件中，是元数据配置文件形式的设置，以及视频配置文件或图像配置文件。 这些设置处理文件夹及其任何子文件夹的内容。 因此，如何命名文件和文件夹、如何排列子文件夹以及如何处理这些文件夹中的文件对配置文件处理这些资产的方式有显着的影响。
 通过使用一致且适用的文件和文件夹命名策略以及良好的元数据做法，您可以充分利用数字资产收藏集，并确保由正确的配置文件处理正确的文件。
 
 >[!NOTE]

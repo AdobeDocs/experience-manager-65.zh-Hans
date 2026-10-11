@@ -9,13 +9,22 @@ exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
 solution: Experience Manager, Experience Manager Sites
 feature: Configuring
 role: Admin
-source-git-commit: efaff4557aba3557a355ed385a5358cf1108c159
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2182'
 ht-degree: 12%
-
 ---
-
 
 # 配置电子邮件通知{#configuring-email-notification}
 
@@ -205,7 +214,7 @@ subject=<text_1>
 >
 >其中`<text_x>`可以是静态文本和动态字符串变量的组合。 `<text_x>`项的每一行都需要以反斜杠(`\`)结尾，但最后一个实例除外，因为缺少反斜杠表示`<text_x>`字符串变量的结尾。
 >
->有关模板格式的详细信息，可在Properties.load() [&#128279;](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)方法的javadocs中找到。
+>有关模板格式的详细信息，可在Properties.load()](https://docs.oracle.com/javase/8/docs/api/java/util/Properties.html#load-java.io.InputStream-)方法的[javadocs中找到。
 
 方法`${payload.path.open}`显示工作项的有效负荷的路径。 例如，对于Sites中的页面，则`payload.path.open`将类似于`/bin/wcmcommand?cmd=open&path=…`.；这没有服务器名称，因此模板会在它前面加上`${host.prefix}`。
 
@@ -404,11 +413,11 @@ AEM为其集成的邮件程序服务提供OAuth2支持，以允许组织遵守�
    * 按照此过程末尾的[处所述，通过构造授权URL、令牌URL和刷新令牌URL来填写它们](#microsoft-outlook)
    * 客户端ID和客户端密钥：使用如上所述检索到的值配置这些字段。
    * 将以下范围添加到配置：
-      * openid
-      * offline_access
-      * `https://outlook.office365.com/Mail.Send`
-      * `https://outlook.office365.com/Mail.Read`
-      * `https://outlook.office365.com/SMTP.Send`
+     * openid
+     * offline_access
+     * `https://outlook.office365.com/Mail.Send`
+     * `https://outlook.office365.com/Mail.Read`
+     * `https://outlook.office365.com/SMTP.Send`
    * AuthCode重定向Url： `http://localhost:4503/services/mailer/oauth2/token`
    * 刷新令牌URL：其值应与上面的令牌URL的值相同
 1. 单击&#x200B;**保存**。

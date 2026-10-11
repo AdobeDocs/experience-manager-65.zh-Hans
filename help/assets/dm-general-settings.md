@@ -14,21 +14,34 @@ autotag-review: '2026-05-18T18:45:43.326Z'
 TQID: 'https://experienceleague.adobe.com/MXCLWQOBsCl3DPKVPn-WjnPeu-NGnQtUn6EYueH7OfE'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
 feature_v2:
   - id: a01bfd36-4ab8-4bf8-9dc0-5b45b890552e
+    internal-label: APIs
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: afe09f80-87de-4606-96de-7aecd50f1a65
+    internal-label: Image profiles
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
+    internal-label: Intermediate
   - id: d378ca77-2da1-4f39-ad92-1917fe974a38
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Experienced
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 2537
+source-wordcount: '2537'
 ht-degree: 0%
-
 ---
-
 # 配置Dynamic Media常规设置
 
 配置&#x200B;**[!UICONTROL Dynamic Media常规设置]**&#x200B;仅适用于以下情况：
@@ -56,7 +69,7 @@ Dynamic Media常规设置旨在供经验丰富的网站开发人员和程序员�
 1. 在“服务器”页面中，设置您的&#x200B;**[!UICONTROL 已发布的服务器名称]**&#x200B;和&#x200B;**[!UICONTROL 原始服务器名称]**，然后使用这五个选项卡配置用于图像编辑以及Postscript、Photoshop、PDF和Illustrator文件的默认上载选项。
 
    * [服务器](#server-general-setting)
-   * [上载到应用程序](#upload-to-application)
+   * [上传到应用程序](#upload-to-application)
    * [图像编辑](#image-editing-tab)选项卡
    * [PostScript](#postscript-tab)选项卡
    * [Photoshop](#photoshop-tab)选项卡
@@ -64,7 +77,7 @@ Dynamic Media常规设置旨在供经验丰富的网站开发人员和程序员�
    * [Illustrator](#illustrator-tab)选项卡
 
    ![Dynamic Media常规设置页面](/help/assets/assets-dm/dm-general-settings.png)
-   *Dynamic Media常规设置页面，已选择&#x200B;**[!UICONTROL 图像编辑]**&#x200B;选项卡。*<br><br>
+   *Dynamic Media常规设置页面，已选择&#x200B;**[!UICONTROL 图像编辑]**选项卡。*<br><br>
 
 1. 完成后，在页面的右上角附近，选择&#x200B;**[!UICONTROL 保存]**。
 
@@ -98,7 +111,7 @@ Dynamic Media常规设置旨在供经验丰富的网站开发人员和程序员�
 
   控制任何现有手动裁切定义的保留。
 
-  另请参阅Dynamic Media查看器参考指南中的[UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html?lang=zh-Hans)和[ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html?lang=zh-Hans)中的`preserveCrop`。
+  另请参阅Dynamic Media查看器参考指南中的[UploadPostJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-upload-post-job.html)和[ReprocessAssetsJob](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/data-types/r-reprocess-assets-job.html)中的`preserveCrop`。
 
 ## 默认上载选项 {#default-upload-options}
 

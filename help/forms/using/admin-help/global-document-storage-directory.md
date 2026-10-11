@@ -9,20 +9,34 @@ exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '684'
-ht-degree: 1%
-
+source-wordcount: '690'
+ht-degree: 3%
 ---
-
 # 全局文档存储目录{#global-document-storage-directory}
 
-*全局文档存储(GDS)*&#x200B;目录是一个用于存储进程中使用的长生命周期文件的目录。 这些文件包括PDF、策略和表单模板。 长生命周期文件是许多AEM forms部署总体状态的重要组成部分。 如果某些或所有长期文档丢失或损坏，Forms服务器可能会变得不稳定。 异步作业调用的输入文档也存储在GDS目录中，并且必须可用于处理请求。 务必考虑承载GDS目录的文件系统的可靠性。 根据您的质量和服务级别需求，使用独立磁盘冗余阵列(RAID)或其他技术。
+*全局文档存储(GDS)*&#x200B;目录是一个用于存储进程中使用的长生命周期文件的目录。 这些文件包括PDF、策略和表单模板。 长生命周期文件是许多AEM Forms部署总体状态的重要组成部分。 如果某些或所有长期文档丢失或损坏，Forms服务器可能会变得不稳定。 异步作业调用的输入文档也存储在GDS目录中，并且必须可用于处理请求。 务必考虑承载GDS目录的文件系统的可靠性。 根据您的质量和服务级别需求，使用独立磁盘冗余阵列(RAID)或其他技术。
 
 长期文件可能包含敏感的用户信息。 使用AEM Forms API或用户界面访问这些信息时，可能需要特殊凭据。 通过操作系统对GDS目录进行适当的保护非常重要。 只有用于运行应用程序服务器的管理员帐户才应具有对GDS目录的读/写访问权限。
 
-除了为GDS选择安全、高可用性的目录外，您还可以选择在数据库中启用文档存储。 请注意，即使使用AEM Forms数据库进行文档存储，AEM Forms仍需要GDS目录。 （当数据库用于文档存储[&#128279;](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)时，请参阅备份选项。）
+除了为GDS选择安全、高可用性的目录外，您还可以选择在数据库中启用文档存储。 请注意，即使将AEM Forms数据库用于文档存储，AEM Forms仍需要GDS目录。 （当数据库用于文档存储](/help/forms/using/admin-help/files-back-recover.md#backup-options-when-database-is-used-for-document-storage)时，请参阅[备份选项。）
 
 AEM forms应用程序数据驻留在GDS目录和AEM forms数据库中。 下表描述了数据及其位置。
 
@@ -70,7 +84,7 @@ AEM forms应用程序数据驻留在GDS目录和AEM forms数据库中。 下表�
 
 ## 配置GDS目录 {#configuring-the-gds-directory}
 
-在AEM Forms安装过程中，可以手动配置GDS目录的位置。 如果在安装期间位置设置保持为空，则该位置将默认位于应用程序服务器安装下的目录，如下所示：
+在AEM表单安装过程中，可以手动配置GDS目录的位置。 如果在安装期间位置设置保持为空，则该位置将默认位于应用程序服务器安装下的目录，如下所示：
 
 * (JBoss) `[appserver root]/server/[type]/svcnative/DocumentStorage`
 * (WebLogic) `[appserverdomain]/'server'/adobe/DocumentServer/DocumentStorage`
@@ -101,7 +115,7 @@ AEM Forms包含两种类型的部署文件：服务容器和Java 2 Platform， E
 
 实施AEM Forms包括将汇编的EAR文件和支持文件部署到您计划运行AEM Forms解决方案的应用程序服务器。 如果配置和装配了多个模块，则可部署的模块将封装在可部署的EAR文件中。 要部署这些文件，请将它们复制到&#x200B;*[appserver主目录]*\server\all\deploy目录。
 
-模块和AEM Forms归档文件打包为JAR文件。 由于它们不是J2EE类型的文件，因此不会部署到应用程序服务器。 相反，它们会被复制到GDS目录中，并且其位置的引用存储在AEM表单数据库中。 因此，必须在群集的所有节点之间共享GDS目录。 所有节点都必须能够访问DSC的中央存储目录。
+模块和AEM表单存档文件打包为JAR文件。 由于它们不是J2EE类型的文件，因此不会部署到应用程序服务器。 相反，它们会被复制到GDS目录中，并且其位置的引用存储在AEM表单数据库中。 因此，必须在群集的所有节点之间共享GDS目录。 所有节点都必须能够访问DSC的中央存储目录。
 
 >[!NOTE]
 >

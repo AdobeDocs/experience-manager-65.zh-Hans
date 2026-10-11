@@ -8,18 +8,31 @@ feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3312'
 ht-degree: 9%
-
 ---
-
 # 使用MSM重用[!DNL Assets]的资源 {#reuse-assets-using-msm-for-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 通过[!DNL Adobe Experience Manager]中的多站点管理器(MSM)功能，用户可以重复使用一次创作并在多个Web位置重复使用的内容。 此功能同样适用于MSM的数字资产。 [!DNL Assets]使用针对[!DNL Assets]的MSM，您可以：
@@ -136,7 +149,7 @@ MSM在源资产及其活动副本之间维护实时关系，以便：
 [!DNL Experience Manager]提供了一个控制台来检查源文件夹的所有活动副本的状态。 此控制台显示所有子资产的状态。
 
 1. 选择源文件夹。 单击工具栏中的&#x200B;**[!UICONTROL 属性]**。 或者，使用键盘快捷键`p`。
-1. 单击 **[!UICONTROL Live Copy 源]**。 要打开控制台，请单击 **[!UICONTROL Live Copy 概述]**。 此功能板提供所有子资产的顶级状态。
+1. 单击 **[!UICONTROL Live Copy 源]**。 要打开控制台，请单击 **[!UICONTROL Live Copy 概述]**。 此仪表板提供所有子资产的总体状态。
 
    ![在源的Live Copy控制台中查看活动副本的状态](assets/livecopy-statuses.png)
 
@@ -221,7 +234,7 @@ MSM在源资产及其活动副本之间维护实时关系，以便：
 
 | 在[!DNL Experience Manager]界面中的位置 | 何时及为何使用 | 使用方法 |
 |---|---|---|
-| [!UICONTROL 个引用]边栏 | 选择源后快速同步。 | 查看源[&#128279;](#refrailsource)的“引用”边栏中的快速操作 |
+| [!UICONTROL 个引用]边栏 | 选择源后快速同步。 | 查看源](#refrailsource)的“引用”边栏中的[快速操作 |
 | [!UICONTROL 属性]页面中的工具栏 | 在已打开Live Copy属性时启动同步。 | 请参阅[同步Live Copy](#sync-lc) |
 | [!UICONTROL Live Copy概述]控制台 | 在选择源文件夹或[!UICONTROL Live Copy概述]控制台已打开时，快速同步多个资产（不一定是全部）。 一次启动一个资产的同步操作，但可以更快速地一次性同步多个资产。 | 查看Live Copy文件夹中多个资产的[操作](#bulk-actions) |
 
@@ -251,7 +264,7 @@ MSM在源资产及其活动副本之间维护实时关系，以便：
 
 Live Copy是创建时原始源的复制副本。 Live Copy的元数据值继承自源。 元数据字段单独维护与源资产的相应字段的继承。
 
-但是，您可以灵活地对Live Copy进行本地修改，以更改一些选定的属性。 要进行本地修改，请取消所需属性的继承。 取消一个或多个元数据字段的继承后，资产的实时关系和其他元数据字段的继承将保留。 任何同步或转出不会覆盖本地修改。 为此，请打开Live Copy资产的&#x200B;**[!UICONTROL 属性]**&#x200B;页面，单击元数据字段旁边的&#x200B;**[!UICONTROL 取消继承]**&#x200B;选项。
+但是，您可以灵活地对Live Copy进行本地修改，以更改一些选定的属性。 要进行本地修改，请取消所需属性的继承。 取消一个或多个元数据字段的继承后，资产的实时关系和其他元数据字段的继承将保留。 任何同步或转出都不会覆盖本地修改。 为此，请打开Live Copy资产的&#x200B;**[!UICONTROL 属性]**&#x200B;页面，单击元数据字段旁边的&#x200B;**[!UICONTROL 取消继承]**&#x200B;选项。
 
 您可以撤消所有本地修改，并将资源恢复到其源的状态。 重置操作不可撤销并会立即覆盖所有本地修改并重新建立所有元数据字段的继承。 要还原，请在Live Copy资产的&#x200B;**[!UICONTROL 属性]**&#x200B;页面中，单击工具栏中的&#x200B;**[!UICONTROL 重置]**。
 
@@ -283,7 +296,7 @@ Live Copy是创建时原始源的复制副本。 Live Copy的元数据值继承�
 
 1. 选择源文件夹。 单击工具栏中的&#x200B;**[!UICONTROL 属性]**。 或者，使用键盘快捷键`p`。
 1. 单击 **[!UICONTROL Live Copy 源]**。 要打开控制台，请单击 **[!UICONTROL Live Copy 概述]**。
-1. 在此功能板中，从 Live Copy 文件夹中选择 Live Copy 资产。 单击工具栏中的所需操作。 可用的操作有&#x200B;**[!UICONTROL 同步]**、**[!UICONTROL 重置]**、**[!UICONTROL 挂起]**&#x200B;和&#x200B;**[!UICONTROL 分离]**。 您可以对任意数量的与所选源文件夹处于实时关系的Live Copy文件夹中的任意资产快速启动这些操作。
+1. 在此仪表板中，从 Live Copy 文件夹中选择 Live Copy 资产。 单击工具栏中的所需操作。 可用的操作有&#x200B;**[!UICONTROL 同步]**、**[!UICONTROL 重置]**、**[!UICONTROL 挂起]**&#x200B;和&#x200B;**[!UICONTROL 分离]**。 您可以对任意数量的与所选源文件夹处于实时关系的Live Copy文件夹中的任意资产快速启动这些操作。
 
    ![从Live Copy概述控制台轻松地更新Live Copy文件夹中的许多资产](assets/livecopyconsole_update_many_assets.png)
 

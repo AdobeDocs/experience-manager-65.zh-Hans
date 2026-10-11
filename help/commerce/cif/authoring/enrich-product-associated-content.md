@@ -6,32 +6,40 @@ feature: Commerce Integration Framework
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '350'
-ht-degree: 1%
-
+source-wordcount: '352'
+ht-degree: 2%
 ---
-
 # 用关联的AEM内容扩充产品数据
 
 了解营销人员如何使用Adobe Experience Manager中的关联内容扩充产品数据。 AEM中的资产、体验片段和内容片段等内容可以与商业产品相关联。 关联后，这些内容类型可以动态插入到产品页面或类别页面中的占位符上。 这为营销人员提供了多种可能性，使他们可以定位具有附加内容（如图像和视频）的特定产品页面。
 
 ## 数字资产
 
->[!VIDEO](https://video.tv.adobe.com/v/3447319/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/339121/?quality=12&learn=on)
 
 数字资产可以与一个或多个产品SKU相关联。 一旦关联，就可以通过基于SKU的关键字搜索来发现数字资产。 在编辑包含相关产品的页面时，资产还会自动显示为关联内容，使您能够更轻松地创建下一个数字体验
 
 ## 体验片段
 
->[!VIDEO](https://video.tv.adobe.com/v/343336/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
 体验片段是Adobe Experience Manager的一项功能，它允许营销人员创建&#x200B;**非结构化**&#x200B;可重复使用的内容。 体验片段可以与产品SKU或目录ID关联。 关联后，营销人员即可根据页面上显示的产品轻松发现相关片段。 体验片段还可以通过使用占位符和关联动态包含在产品目录页面上。
 
 ## 内容片段
 
->[!VIDEO](https://video.tv.adobe.com/v/3452167/?quality=12&learn=on&captions=chi_hans)
+>[!VIDEO](https://video.tv.adobe.com/v/339182/?quality=12&learn=on)
 
 内容片段是Adobe Experience Manager的一项功能，它允许营销人员创建&#x200B;**结构化**&#x200B;可重复使用的内容。 内容片段可以与产品SKU或目录ID关联。 关联后，营销人员即可根据页面上显示的产品轻松发现相关片段。 还可以通过使用占位符和关联将内容片段动态包含在产品目录页面上。
 

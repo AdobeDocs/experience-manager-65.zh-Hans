@@ -6,18 +6,27 @@ feature: Workfront Integrations and Apps
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1747'
-ht-degree: 1%
-
+ht-degree: 2%
 ---
-
 # 配置 [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 在[!DNL Adobe Experience Manager]中具有管理员访问权限的用户在安装增强连接器后对其进行配置。 有关安装说明，请参阅[安装连接器](/help/assets/workfront-integrations.md)。
@@ -28,7 +37,7 @@ ht-degree: 1%
 >
 >* Adobe可能会发布对[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此连接器冗余；如果发生这种情况，客户可能需要从使用此连接器过渡。
 >
->* Adobe支持增强型连接器版本1.7.4及更高版本。 不支持以前的预发行版和自定义版本。 要检查增强型连接器版本，请导航到[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)的左窗格中可用的`digital.hoodoo`组。
+>* Adobe支持增强型连接器版本1.7.4及更高版本。 不支持以前的预发行版和自定义版本。 要检查增强型连接器版本，请导航到[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en)的左窗格中可用的`digital.hoodoo`组。
 >
 >* 查看Experience Manager Assets增强型连接器的[Workfront合作伙伴认证考试](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)。 有关考试的信息，请参阅[考试指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)。
 
@@ -123,23 +132,23 @@ Adobe Workfront文档与Assets之间的元数据映射在AEM元数据架构中�
 
 * `workfront-field`可以是
 
-   * 由前缀`DE:`标识的自定义表单字段。
-   * 由其名称标识的可编辑字段。 在[[!DNL Workfront] API Explorer](https://experience.workfront.com/s/api-explorer)中找到字段名称。
+  * 由前缀`DE:`标识的自定义表单字段。
+  * 由其名称标识的可编辑字段。 在[[!DNL Workfront] API Explorer](https://experience.workfront.com/s/api-explorer)中找到字段名称。
 
 * `aem-mapped-property` 可以是：
 
-   * 文本值。 应使用引号将它们括起来。
-   * AEM资产。 此引用应当相对于工作流有效负荷。
-   * 命名值。 应使用括号括住。
-   * 上述3个项目的拼接。 使用`{+}`指定它。
-   * 通过`{replace(<value>,"old-char","new-char")}`包围值对以上3个项目所做的更改。
+  * 文本值。 应使用引号将它们括起来。
+  * AEM资产。 此引用应当相对于工作流有效负荷。
+  * 命名值。 应使用括号括住。
+  * 上述3个项目的拼接。 使用`{+}`指定它。
+  * 通过`{replace(<value>,"old-char","new-char")}`包围值对以上3个项目所做的更改。
 
 * 一些示例包括：
 
-   * `status="INP"`
-   * `DE:Asset Type=jcr:content/metadata/assetType`
-   * `DE:Path={path}`
-   * `URL="https://my-aem-author/assets.html"{+}{path}`
+  * `status="INP"`
+  * `DE:Asset Type=jcr:content/metadata/assetType`
+  * `DE:Path={path}`
+  * `URL="https://my-aem-author/assets.html"{+}{path}`
 
 ![映射属性的配置](/help/assets/assets/wf-map-property-config.png)
 

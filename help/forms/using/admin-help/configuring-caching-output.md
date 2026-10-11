@@ -1,5 +1,5 @@
 ---
-title: 配置输出的缓存
+title: 为 Output 配置缓存
 description: 输出服务缓存表单设计、片段和图像。 了解如何为输出配置缓存。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,28 @@ exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1454'
-ht-degree: 0%
-
+source-wordcount: '1463'
+ht-degree: 1%
 ---
-
-# 配置输出的缓存  {#configuring-caching-for-output}
+# 为 Output 配置缓存  {#configuring-caching-for-output}
 
 >[!NOTE]
 > 
@@ -105,9 +119,9 @@ Output服务缓存以下项目：
 
 Output服务始终在磁盘上缓存表单设计。 如果表单设计存储在服务器上，则这些文件被视为磁盘缓存。 输出服务还根据&#x200B;**内存中模板缓存**&#x200B;区域中的设置，在内存中缓存表单设计。 如果更改其中任何设置，请重新启动Output服务以使更改生效。 要重新启动此服务，请使用Workbench或参阅[启动或停止与AEM表单模块](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules)关联的服务以获取说明。
 
-**模板配置缓存大小：**&#x200B;要保留在内存中的模板配置对象的最大数目。 默认值为 100。建议将此值设置为大于或等于模板缓存大小值。 此设置不会影响磁盘缓存。
+**模板配置缓存大小：**&#x200B;要保留在内存中的模板配置对象的最大数目。 默认值为 100。 建议将此值设置为大于或等于模板缓存大小值。 此设置不会影响磁盘缓存。
 
-**模板缓存大小：**&#x200B;要保留在内存中的模板内容对象的最大数目。 默认值为 100。此设置不会影响磁盘缓存。
+**模板缓存大小：**&#x200B;要保留在内存中的模板内容对象的最大数目。 默认值为 100。 此设置不会影响磁盘缓存。
 
 **已启用：**&#x200B;默认情况下，此复选框处于选中状态，这意味着表单模板已缓存到内存中。 如果未选择此选项，则仅在磁盘上缓存表单模板。
 

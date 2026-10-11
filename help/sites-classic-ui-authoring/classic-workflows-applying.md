@@ -1,5 +1,5 @@
 ---
-title: 将工作流程应用于页面
+title: 将工作流应用于页面
 description: 工作流可以从“网站”控制台启动，或者在编辑页面时从Sidekick启动。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: d8b604c5-a6da-47c4-9422-b519e224c7ca
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '249'
-ht-degree: 15%
-
+source-wordcount: '255'
+ht-degree: 14%
 ---
-
-# 将工作流程应用于页面{#applying-workflows-to-pages}
+# 将工作流应用于页面{#applying-workflows-to-pages}
 
 在应用工作流时，您需要指定以下信息：
 
@@ -25,8 +34,8 @@ ht-degree: 15%
   您可以应用任何工作流（您有权访问，由 AEM 管理员分配）。
 * 可选：
 
-   * 一个注释，为您提供有关启动工作流的原因的信息。
-   * 帮助标识用户收件箱中的工作流实例的标题。
+  * 一个注释，为您提供有关启动工作流的原因的信息。
+  * 帮助标识用户收件箱中的工作流实例的标题。
 
 >[!NOTE]
 >
@@ -51,7 +60,7 @@ ht-degree: 15%
 
 1. 打开“网站”控制台。
 1. 打开所需的页面。
-1. 从Sidekick中选择Workflow选项卡。
+1. 从Sidekick中选择工作流选项卡。
 1. 展开&#x200B;**工作流**&#x200B;对话框，允许您选择&#x200B;**工作流**，并可以选择输入&#x200B;**工作流标题**&#x200B;和&#x200B;**评论**。
 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)

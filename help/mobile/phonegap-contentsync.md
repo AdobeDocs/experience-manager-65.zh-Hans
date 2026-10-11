@@ -10,13 +10,17 @@ exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2955'
 ht-degree: 0%
-
 ---
-
 # 通过内容同步处理移动设备{#mobile-with-content-sync}
 
 {{ue-over-mobile}}
@@ -77,7 +81,7 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 
 如果您正在[使用Web控制台](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console)配置服务，请键入用户或组的名称作为“可授权回退缓存”属性的值。
 
-如果您在存储库[&#128279;](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中进行配置，请使用以下有关服务的信息：
+如果您在存储库](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository)中进行[配置，请使用以下有关服务的信息：
 
 * PID： com.day.cq.contentsync.impl.ContentSyncManagerImpl
 * 属性名称： contentsync.fallback.authorizable
@@ -157,7 +161,7 @@ Day CQ Content Sync Manager服务控制对Content Sync的访问。 配置此服�
 * **deep** — 可确定是否也应包含子页面的可选布尔属性。 默认值为&#x200B;*true。*
 
 * **includeImages** — 确定是否应包含图像的可选布尔属性。 默认值为&#x200B;*true*。
-默认情况下，只考虑包含资源类型为foundation/components/image的图像组件。 您可以通过在Web控制台中配置&#x200B;**Day CQ WCM页面更新处理程序**&#x200B;来添加更多资源类型。
+默认情况下，只考虑包含资源类型为foundation/components/image的图像组件。 您可以通过在Web控制台中配置**Day CQ WCM页面更新处理程序**&#x200B;来添加更多资源类型。
 
 **rewrite** - rewrite节点定义如何在导出的页面中重写链接。 重写的链接可以指向zip文件中包含的文件或服务器上的资源。
 

@@ -1,5 +1,5 @@
 ---
-title: 版本清除
+title: 版本清理
 description: 本文介绍了用于版本清除的可用选项。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '726'
-ht-degree: 0%
-
+source-wordcount: '732'
+ht-degree: 1%
 ---
-
-# 版本清除{#version-purging}
+# 版本清理{#version-purging}
 
 在标准安装中，当您在更新内容后激活页面时，Adobe Experience Manager (AEM)会创建页面或节点的版本。
 
@@ -38,11 +47,11 @@ AEM附带了各种机制来帮助您管理存储库：
 该功能可用作监控和维护存储库的一部分。
 它允许您根据以下参数干预以删除节点的旧版本或节点层次结构：
 
-   * 要保留在存储库中的版本的最大数量。
-如果超过此数量，将删除最早的版本。
+  * 要保留在存储库中的版本的最大数量。
+    如果超过此数量，将删除最早的版本。
 
-   * 存储库中保留的任何版本的最长保留时间。
-当版本的使用期限超过此值时，将从存储库中清除该版本。
+  * 存储库中保留的任何版本的最长保留时间。
+    当版本的使用期限超过此值时，将从存储库中清除该版本。
 
 * [版本清除维护任务](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks)。 您可以计划版本清除维护任务，以自动删除旧版本。 因此，这可以最大程度地降低手动使用版本清除工具的必要性。
 
@@ -85,7 +94,7 @@ AEM附带了各种机制来帮助您管理存储库：
 
 >[!NOTE]
 >
->不建议在存储库中保留多个版本。 因此，在配置版本清除操作时，请注意不要从清除中排除太多版本，否则存储库大小将无法正确优化。 如果您因业务需求而保留大量版本，请联系Adobe支持以寻找优化存储库大小的替代方法。
+>不建议在存储库中保留多个版本。 因此，在配置版本清除操作时，请注意不要从清除中排除太多版本，否则存储库大小将无法正确优化。 如果您因业务需求而保留大量版本，请联系Adobe支持以找到优化存储库大小的替代方法。
 
 ### 组合保留选项 {#combining-retention-options}
 
@@ -95,34 +104,34 @@ AEM附带了各种机制来帮助您管理存储库：
 
 * 设置：
 
-   * `maxNumberVersions` = 7
+  * `maxNumberVersions` = 7
 
-   * `maxAgeDays` = 30
+  * `maxAgeDays` = 30
 
 * 替换为：
 
-   * 在过去60天内制作了10个版本
-   * 其中三个版本是在过去30天内创建的
+  * 在过去60天内制作了10个版本
+  * 其中三个版本是在过去30天内创建的
 
 * 这意味着：
 
-   * 保留最后三个版本
+  * 保留最后三个版本
 
 例如，在定义要保留的最大AND最小版本数和要保留的最旧版本时：
 
 * 设置：
 
-   * `maxNumberVersions` = 3
-   * `maxAgeDays` = 30
-   * `minNumberVersions` = 3
+  * `maxNumberVersions` = 3
+  * `maxAgeDays` = 30
+  * `minNumberVersions` = 3
 
 * 替换为：
 
-   * 60天前制作了5个版本
+  * 60天前制作了5个版本
 
 * 这意味着：
 
-   * 保留了三个版本
+  * 保留了三个版本
 
 ## 清除版本工具 {#purge-versions-tool}
 

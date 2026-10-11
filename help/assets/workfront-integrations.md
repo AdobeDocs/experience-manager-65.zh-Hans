@@ -1,28 +1,41 @@
 ---
-title: '[!DNL Experience Manager Assets]与 [!DNL Adobe Workfront]集成'
-description: ' [!DNL Assets] 和 [!DNL Workfront]之间的集成简介'
+title: '[!DNL Experience Manager Assets]与[!DNL Adobe Workfront]集成'
+description: '[!DNL Assets]和[!DNL Workfront]之间的集成简介'
 role: Admin,Leader,Developer
 feature: Workfront Integrations and Apps
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
 solution: Experience Manager, Workfront
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c4a86a5d-6562-4fc6-aa00-bfa25833aed9
+    internal-label: Workfront
+feature_v2:
+  - id: a1f87682-0525-5459-aa06-3560bb4c3b2a
+    internal-label: Workfront Integrations and Apps
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1190'
+source-wordcount: '1191'
 ht-degree: 8%
-
 ---
-
 # [!DNL Adobe Experience Manager Assets]与[!DNL Adobe Workfront]集成 {#assets-integration-overview}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 [!DNL Adobe Workfront]是一个工作管理应用程序，它帮助您在一个地方管理整个工作生命周期。 [!DNL Workfront] 和 [!DNL Adobe Experience Manager Assets] 的集成，通过将工作管理与数字资产管理深度融合，帮助组织提升内容产出效率并加快产品上市速度。 在 Workfront 的工作管理环境中，用户可以访问所需的文档和图像。
 
-[!DNL Workfront for Experience Manager enhanced connector]支持具有端到端工作流的增强业务流程，并提供个性化的端到端客户端体验和中央存储。 Adobe提供了一个标准连接器和一个增强型连接器，用于集成这两个解决方案。 查看以下支持的功能以进行比较，并查看[&#x200B; [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)中的新增功能。
+[!DNL Workfront for Experience Manager enhanced connector]支持具有端到端工作流的增强业务流程，并提供个性化的端到端客户端体验和中央存储。 Adobe提供了一个标准连接器和一个增强型连接器，用于集成这两个解决方案。 查看以下支持的功能以进行比较，并查看[ [!DNL enhanced connector]](https://one.workfront.com/s/csh?context=2467&pubname=the-new-workfront-experience)中的新增功能。
 
 [!DNL Workfront for Experience Manage enhanced connector]使您的组织能够：
 
@@ -40,7 +53,7 @@ ht-degree: 8%
 >
 >* Adobe可能会发布对[!DNL Adobe Workfront]和[!DNL Adobe Experience Manager]的更新，使此连接器冗余；如果发生这种情况，客户可能需要从使用此连接器过渡。
 >
->* Adobe支持增强型连接器版本1.7.4及更高版本。 不支持以前的预发行版和自定义版本。 要检查增强型连接器版本，请导航到[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)的左窗格中可用的`digital.hoodoo`组。
+>* Adobe支持增强型连接器版本1.7.4及更高版本。 不支持以前的预发行版和自定义版本。 要检查增强型连接器版本，请导航到[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en)的左窗格中可用的`digital.hoodoo`组。
 >
 >* 查看Experience Manager Assets增强型连接器的[Workfront合作伙伴认证考试](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html)。 有关考试的信息，请参阅[考试指南](https://express.adobe.com/page/Tc7Mq6zLbPFy8/)。
 
@@ -59,7 +72,7 @@ ht-degree: 8%
 | 从Workfront下载链接的AEM Assets | 在Workfront中链接资源时，用户可以下载资源的字节。 | ✓ | ✓ | ✓ |
 | 在Workfront中搜索AEM Assets | Workfront中的AEM Assets选择器允许全文搜索资源。 | ✓ | ✓ | ✓ |
 | 在Workfront中搜索AEM文件夹 | Workfront中的AEM Assets选择器允许全文搜索文件夹。 | ✓ | ✓ | ✓ |
-| 在Workfront中查看和导航AEM文件夹层次结构 | Workfront中的AEM Assets选择器允许浏览受限制的AEM Assets层级。   用户在AEM中设置的关联访问控制和权限。 | ✓ | ✓ | ✓ |
+| 在Workfront中查看和导航AEM文件夹层次结构 | Workfront中的AEM Assets选择器允许浏览AEM Assets层级，该层级受用户在AEM中设置的相关访问控制和权限限制。 | ✓ | ✓ | ✓ |
 | 在AEM时间线中跟踪资源版本 | 维护Workfront和AEM之间的文档版本历史记录。 | ✓ | ✓ | ✓ |
 | 在Workfront中从AEM Assets取消Assets的链接 | 可以取消关联AEM文档中的现有链接资源的链接。 这不会删除AEM中的原始资源。 | ✓ | ✓ | ✓ |
 | 将新版本化的资源从Workfront添加到AEM Assets | 在Workfront的文档中添加新添加的版本时，用户可以向AEM发送新版本以替换现有版本。 | ✓ | ✓ | ✓ |

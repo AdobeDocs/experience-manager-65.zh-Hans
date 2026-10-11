@@ -10,13 +10,22 @@ exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '6118'
 ht-degree: 0%
-
 ---
-
 # AEM 门户和 Portlet{#aem-portals-and-portlets}
 
 本文档将介绍以下内容：
@@ -46,7 +55,7 @@ Portlet是部署在生成动态内容的容器中的Web组件。 Portlet接口�
 
 >[!CAUTION]
 >
->AEM Portal Director自AEM 6.4起已弃用。 请参阅[已弃用和已删除的功能](https://helpx.adobe.com/cn/experience-manager/6-4/release-notes/deprecated-removed-features.html)。
+>AEM Portal Director自AEM 6.4起已弃用。 请参阅[已弃用和已删除的功能](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html)。
 
 ## 管理AEM内容Portlet {#administering-the-aem-content-portlet}
 
@@ -171,7 +180,7 @@ Portlet可以配置自己的缓存，以便显示Portlet中的内容而无需访
 部署缓存后，portlet将缓存发布实例中的内容。 可以通过AEM中的Dispatcher刷新使Portlet缓存失效。 要将Portlet配置为使用自己的缓存，请执行以下操作：
 
 1. 在作者中配置以门户服务器为目标的复制代理。
-1. 假定门户服务器在主机&#x200B;**localhost** **port 8080**&#x200B;上运行，并且上下文&#x200B;**cqportlet**&#x200B;中装载了AEM portlet Web应用程序，则用于刷新缓存的URL为`https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`。 使用GET作为方法。
+1. 假定门户服务器在主机&#x200B;**localhost** **port 8080**&#x200B;上运行，并且上下文**cqportlet**中装载了AEM portlet Web应用程序，则用于刷新缓存的URL为`https://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`。 使用GET作为方法。
    **注意：**&#x200B;您可以发送名为&#x200B;**Path**&#x200B;的http标头，而不使用请求参数。
 
 #### 通过复制代理刷新缓存 {#flushing-the-cache-via-replication-agent}
@@ -526,7 +535,7 @@ title="{text}"/>
 
 #### 安装自定义布局 {#installing-a-custom-layout}
 
-要安装自定义布局，请访问portlet的OSGI Web控制台&#x200B;**捆绑包**&#x200B;部分，并上传捆绑包。
+要安装自定义布局，请访问portlet的OSGI Web控制台**捆绑包**部分，并上传捆绑包。
 
 #### 包 {#packages}
 
@@ -610,7 +619,7 @@ Portal Director区域设置处理程序可以配置用于检查区域设置信�
 
 以下服务在内容portlet中具有默认实施（具有相应的Java接口）。 要进行自定义，需要将包含新服务实施的捆绑部署到portlet应用程序中。
 
-实施此类服务时，请确保将该服务的&#x200B;**service.ranking**&#x200B;属性设置为正值。 默认实施使用排名&#x200B;**0**，而Portlet使用排名最高的服务。
+实施此类服务时，请确保将该服务的&#x200B;**service.ranking**&#x200B;属性设置为正值。 默认实施使用排名**0**，而Portlet使用排名最高的服务。
 
 | **名称** | **描述** | **默认行为** |
 |---|---|---|
@@ -715,7 +724,7 @@ AEM快速入门JAR文件包含portlet组件文件。 要获取文件(cq-portlet-
 
 1. 双击组件以打开Portlet属性。
 1. 在&#x200B;**Portlet实体**&#x200B;下拉菜单中，从列表中选择Portlet。
-1. 选择或清除&#x200B;**隐藏标题栏**&#x200B;复选框，具体取决于您是否希望看到Portlet的标题栏。
+1. 选择或清除**隐藏标题栏**复选框，具体取决于您是否希望看到Portlet的标题栏。
 1. 如果需要，在&#x200B;**Portlet窗口**&#x200B;字段中输入唯一的Portlet窗口ID。
 
    >[!NOTE]

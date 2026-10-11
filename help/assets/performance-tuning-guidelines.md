@@ -1,19 +1,30 @@
 ---
-title: 性能调整 [!DNL Assets]
-description: 有关 [!DNL Experience Manager] 配置、更改硬件、软件和网络组件的建议和指导，以消除瓶颈并优化 [!DNL Experience Manager Assets]的性能。
+title: 性能优化[!DNL Assets]
+description: 有关[!DNL Experience Manager]配置、更改硬件、软件和网络组件的建议和指导，以消除瓶颈并优化[!DNL Experience Manager Assets]的性能。
 contentOwner: AG
 mini-toc-levels: 1
 role: Developer, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2794'
+source-wordcount: '2795'
 ht-degree: 0%
-
 ---
-
 <!-- TBD: Get reviewed by engineering. -->
 
 # [!DNL Adobe Experience Manager Assets] 性能优化指南 {#assets-performance-tuning-guide}
@@ -243,9 +254,9 @@ Adobe建议启用HTTPS，因为许多公司都有会侦听HTTP流量的防火墙
 
 ## 搜索索引 {#search-indexes}
 
-安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)。
+安装[最新的Service Pack](/help/release-notes/release-notes.md)和与性能相关的修补程序，因为这些程序通常包括系统索引更新。 有关某些索引优化，请参阅[性能优化提示](https://experienceleague.adobe.com/en/docs/experience-manager-65/content/assets/administer/performance-tuning-guidelines)。
 
-为经常运行的查询创建自定义索引。 有关详细信息，请参阅用于分析慢查询[&#128279;](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)的方法和[自定义索引](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的其他见解，请参阅[查询和索引最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
+为经常运行的查询创建自定义索引。 有关详细信息，请参阅用于分析慢查询](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html)的[方法和[自定义索引](/help/sites-deploying/queries-and-indexing.md)。 有关查询和索引最佳实践的其他见解，请参阅[查询和索引最佳实践](/help/sites-deploying/best-practices-for-queries-and-indexing.md)。
 
 ### Lucene索引配置 {#lucene-index-configurations}
 

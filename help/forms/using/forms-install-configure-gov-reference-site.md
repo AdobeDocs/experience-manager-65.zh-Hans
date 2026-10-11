@@ -7,13 +7,31 @@ exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: Admin, User, Developer
-source-git-commit: 0d491be4fb2605220b1558c8c877151ab4405978
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '4813'
+source-wordcount: '4819'
 ht-degree: 3%
-
 ---
-
 # 设置和配置We.Gov和We.Finance引用站点 {#set-up-and-configure-we-gov-reference-site}
 
 ## 演示包详细信息 {#demo-package-details}
@@ -47,21 +65,21 @@ ht-degree: 3%
 
 * **we-gov-forms.pkg.all-&lt;版本>.zip** - *完成演示包*
 
-   * **we-gov-forms.ui.apps-&lt;version>.zip** *— 包含所有组件、客户端库、示例用户、工作流模型等。*
+  * **we-gov-forms.ui.apps-&lt;version>.zip** *— 包含所有组件、客户端库、示例用户、工作流模型等。*
 
-      * **we-gov-forms.core-&lt;version>.jar** - *包含所有OSGI服务、自定义工作流步骤实现等。*
+    * **we-gov-forms.core-&lt;version>.jar** - *包含所有OSGI服务、自定义工作流步骤实现等。*
 
-      * **we-gov-forms.derby&lt;version>.jar** - *包含所有OSGI服务、数据库架构等。*
+    * **we-gov-forms.derby&lt;version>.jar** - *包含所有OSGI服务、数据库架构等。*
 
-      * **core.wcm.components.all-2.0.4.zip** - *示例WCM组件集合*
+    * **core.wcm.components.all-2.0.4.zip** - *示例WCM组件集合*
 
-      * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *站点页面列控件的AEM Sites网格布局包*
+    * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** - *站点页面列控件的AEM Sites网格布局包*
 
-   * **we-gov-forms.ui.content-&lt;version>.zip** - *包含所有内容、页面、图像、表单、交互式通信资源等。*
+  * **we-gov-forms.ui.content-&lt;version>.zip** - *包含所有内容、页面、图像、表单、交互式通信资源等。*
 
-   * **we-gov-forms.ui.ananalytics-&lt;version>.zip** - *包含要存储在存储库中的所有We.Gov Forms Analytics数据。*
+  * **we-gov-forms.ui.ananalytics-&lt;version>.zip** - *包含要存储在存储库中的所有We.Gov Forms Analytics数据。*
 
-   * **we-gov-forms.config.public-&lt;version>.zip** - *包含所有默认配置节点，包括占位符云配置以帮助避免表单数据模型和服务绑定问题。*
+  * **we-gov-forms.config.public-&lt;version>.zip** - *包含所有默认配置节点，包括占位符云配置以帮助避免表单数据模型和服务绑定问题。*
 
 此包中包含的资源包括：
 
@@ -88,7 +106,7 @@ ht-degree: 3%
    1. 从&#x200B;**[!UICONTROL 解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Forms]**。
    2. 选择包的版本和类型。 您还可以使用&#x200B;**[!UICONTROL 搜索下载]**&#x200B;选项来筛选结果。
 1. 选择&#x200B;**we-gov-forms.pkg.all-&lt;version>.zip**&#x200B;包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
-1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
+1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
 1. 选择该包并点击&#x200B;**[!UICONTROL 安装]**。
 
    ![我们管理表单包](assets/wegov_forms_package.jpg)
@@ -226,13 +244,13 @@ ht-degree: 3%
 **引用：**
 
 1. [® Dynamics OData配置](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [配置® Dynamics for AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=zh-Hans)
+1. [配置® Dynamics for AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
 
 #### MS® Dynamics OData云服务 {#ms-dynamics-odata-cloud-service}
 
 1. 导航至：
 
-   https://&lt;aemserver>：&lt;port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
+   https://<aemserver>：<port>/libs/fd/fdm/gui/components/admin/fdmcloudservice/fdm.html/conf/we-gov
 
    1. 确保您正在使用MS® Dynamics应用程序注册中配置的同一重定向URL访问服务器。
 
@@ -386,7 +404,7 @@ ht-degree: 3%
    ![快速访问](assets/aftia-quick-access.jpg)
 1. 导航到管理员选项卡，然后选择用户管理（旧版）项目
    ![报告](assets/aftia-reports.jpg)
-1. 选择&#x200B;**用户**&#x200B;选项卡。
+1. 选择&#x200B;**用户**选项卡。
    ![用户管理](assets/aftia-user-management.jpg)
 1. 从用户列表中选择所需的用户。
 1. 滚动到页面底部，用户身份验证信息将显示在页面底部。
@@ -480,7 +498,7 @@ ht-degree: 3%
 
 阅读更多说明前，请查看以下内容：
 
-* [配置自动化表单转换服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hans)
+* [配置自动化表单转换服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 #### 创建IMS配置第1部分 {#creating-ims-config}
 
@@ -579,7 +597,7 @@ IMS配置完成后，您可以继续查看AEM中的云配置。 如果配置不�
 
 1. 对于此配置，我们将两个复选框值留空。
 
-   * 要了解有关这些选项的更多信息，请参阅[配置云服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hans#configure-the-cloud-service)。
+   * 要了解有关这些选项的更多信息，请参阅[配置云服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)。
 
 #### 配置云配置(We.Finance AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -609,7 +627,7 @@ IMS配置完成后，我们可以继续在AEM中创建云配置。
 
 1. 对于此配置，我们将两个复选框值留空。
 
-   * 要了解有关这些选项的更多信息，请参阅[配置云服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=zh-Hans#configure-the-cloud-service)。
+   * 要了解有关这些选项的更多信息，请参阅[配置云服务](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service)。
 
 #### 测试表单转换（We.Gov注册应用程序） {#test-forms-conversion}
 
@@ -649,7 +667,7 @@ IMS配置完成后，我们可以继续在AEM中创建云配置。
 
 #### 已知问题和说明 {#known-issues-notes}
 
-自动表单转换服务包括某些[最佳实践、已知复杂模式](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=zh-Hans)和[已知问题](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=zh-Hans)。 在开始使用AEM Forms自动表单转换服务之前，请查看这些内容。
+自动表单转换服务包括某些[最佳实践、已知复杂模式](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html)和[已知问题](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html)。 在开始使用AEM Forms自动表单转换服务之前，请查看这些内容。
 
 1. 如果要在转换后将表单绑定到FDM，请在生成自适应表单时启用数据绑定来生成表单。
 

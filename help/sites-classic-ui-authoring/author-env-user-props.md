@@ -10,7 +10,18 @@ exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 42%
@@ -22,7 +33,7 @@ Adobe Experience Manager (AEM) 提供了配置帐户和创作环境的某些方�
 使用[帐户设置](#account-settings)和[用户首选项](#user-preferences)，可以定义以下选项和首选项：
 
 * **编辑工具栏**
-选择是否要具有全局编辑工具栏。 此工具栏显示在浏览器窗口的顶部，为您提供了&#x200B;**复制**、**剪切**、**粘贴**、**删除**&#x200B;按钮，以便与该页面上的段落组件一起使用：
+选择是否要具有全局编辑工具栏。 此工具栏显示在浏览器窗口的顶部，为您提供了**复制**、**剪切**、**粘贴**、**删除**&#x200B;按钮，以便与该页面上的段落组件一起使用：
 
   * 需要时显示（默认）
   * 始终显示

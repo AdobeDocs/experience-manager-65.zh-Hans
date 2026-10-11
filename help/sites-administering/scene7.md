@@ -9,13 +9,22 @@ exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: f96b178ae84b4b930b59e36d4994970682c53dbd
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '5545'
 ht-degree: 1%
-
 ---
-
 # 将Adobe Experience Manager与Dynamic Media Classic集成 {#integrating-with-dynamic-media-classic-scene}
 
 Adobe Dynamic Media Classic是一个托管解决方案，用于管理、增强、发布富媒体资产，并将其交付给Web、移动设备、电子邮件和连接到Internet的显示和打印。
@@ -162,7 +171,7 @@ Experience Manager Dynamic Media是直接在Experience Manager平台中统一的
 1. （可选；请参阅用例表） — 如果选择启用从Assets到Dynamic Media Classic的自动上传，则必须添加以下内容：
 
    1. 设置自动上传至Dynamic Media Classic。
-   1. 在&#x200B;***Dam更新资产**&#x200B;工作流(`https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)末尾的所有Dynamic Media工作流步骤*&#x200B;之后添加&#x200B;**Dynamic Media Classic上传**&#x200B;步骤
+   1. 在&#x200B;***Dam更新资产**工作流(`https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`)末尾的所有Dynamic Media工作流步骤*&#x200B;之后添加&#x200B;**Dynamic Media Classic上传**&#x200B;步骤
    1. （可选）在[https://&lt;服务器>：&lt;端口>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl)中按MIME类型限制Dynamic Media Classic资源上传。 此列表中未包含的资源MIME类型不会上传到Dynamic Media Classic服务器。
    1. （可选）在Dynamic Media Classic配置中设置视频。 您可以同时为Dynamic Media和/或Dynamic Media Classic启用视频编码。 在Experience Manager实例中，动态演绎版用于本地预览和播放，而Dynamic Media Classic视频演绎版则生成并存储在Dynamic Media Classic服务器上。 为Dynamic Media和Dynamic Media Classic设置视频编码服务时，请将[视频处理配置文件](/help/assets/video-profiles.md)应用于Dynamic Media Classic资源文件夹。
    1. （可选） [在Dynamic Media Classic中配置安全预览](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene)。
@@ -421,7 +430,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 在将资源推送到Dynamic Media Classic而不发布它们之前，您必须设置以下设置：
 
 1. [使用Admin Console创建支持案例](https://helpx.adobe.com/cn/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)。 在您的支持案例中，请求为您的Dynamic Media Classic帐户启用安全预览。
-1. [为您的Dynamic Media Classic帐户设置安全预览](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=zh-Hans)。
+1. [为您的Dynamic Media Classic帐户设置安全预览](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html)。
 
 这些步骤与在Dynamic Media Classic中创建任何安全测试设置时所遵循的步骤相同。
 
@@ -450,7 +459,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 1. 选择&#x200B;**[!UICONTROL 高级]**&#x200B;选项卡。
 1. 在&#x200B;**[!UICONTROL 启用安全视图]**&#x200B;下拉菜单中，选择&#x200B;**[!UICONTROL 在AEM发布激活时]**&#x200B;以将资产推送到Dynamic Media Classic而不发布。 （默认情况下，此值设置为&#x200B;**[!UICONTROL 立即]**，其中立即发布Dynamic Media Classic资源。）
 
-   有关在公开资源之前测试资源的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html?lang=zh-Hans)。
+   有关在公开资源之前测试资源的更多信息，请参阅[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html)。
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
@@ -565,7 +574,7 @@ Dynamic Media Classic资源仍可通过安全预览使用。 只有在Experience
 
    例如，`psprocess="rasterize"&psresolution=120` 。
 
-   有关您可以使用的更多上载作业参数，请参阅[Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html?lang=zh-Hans)。
+   有关您可以使用的更多上载作业参数，请参阅[Adobe Dynamic Media Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html)。
 
    >[!NOTE]
    >

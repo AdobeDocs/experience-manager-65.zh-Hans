@@ -9,13 +9,17 @@ exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 1%
-
 ---
-
 # 管理横幅{#managing-banners}
 
 {{ue-over-mobile}}
@@ -78,7 +82,7 @@ ht-degree: 1%
 用于编辑文章的工作流：
 
 1. 在Mobile中，从目录中选择您的Mobile On-Demand应用程序。
-1. 从&#x200B;**管理横幅**&#x200B;图块中选择一个源自AEM的横幅。
+1. 从**管理横幅**图块中选择一个源自AEM的横幅。
 1. 从列表视图中单击高亮显示的横幅以在内容编辑器中打开它。
 1. 使用内容编辑器拖动横幅内容（手稿、图像、文本等）。
 

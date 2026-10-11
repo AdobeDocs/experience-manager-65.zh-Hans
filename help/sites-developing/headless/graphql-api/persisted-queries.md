@@ -5,13 +5,25 @@ exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,GraphQL API
 role: Developer
-source-git-commit: 9278eb7dab4a764403fa0769f6e80dd7e8fb0cb9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1390'
-ht-degree: 85%
-
+source-wordcount: '1444'
+ht-degree: 84%
 ---
-
 # 持久 GraphQL 查询 {#persisted-queries-caching}
 
 持久查询是创建并存储在GraphQL (Adobe Experience Manager)服务器上的AEM查询。 它们可以经客户端应用程序以 GET 请求方式请求。 GET请求的响应可以缓存在Dispatcher和内容交付网络(CDN)层，最终改进请求客户端应用程序的性能。 这与标准的 GraphQL 查询不同，后者使用 POST 请求执行，而在 POST 请求中，无法轻松缓存响应。
@@ -32,7 +44,7 @@ ht-degree: 85%
 查询有权访问所有内容片段模型。
 * 特定站点配置和端点
 为特定Sites配置创建持久查询需要对应的Sites配置特定的端点（用于提供对相关内容片段模型的访问权限）。
-例如，要创建特定于WKND Sites配置的持久查询，必须预先创建对应的WKND特定的端点。
+例如，要创建特定于 WKND Sites 配置的持久查询，必须预先创建对应的 WKND 特定的端点。
 
 >[!NOTE]
 >
@@ -265,7 +277,7 @@ query getAdventuresByActivity($activity: String!) {
 
 ## 正在缓存您的持久查询 {#caching-persisted-queries}
 
-建议使用持久查询，因为可在 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 和内容交付网络 (CDN) 层缓存此类查询，最终提高发出请求的客户端应用程序的性能。
+建议使用持久查询，因为可在 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 和内容交付网络 (CDN) 层缓存此类查询，最终提高发出请求的客户端应用程序的性能。
 
 默认情况下，AEM 将根据生存时间 (TTL) 定义使缓存失效。 可通过以下参数定义这些 TTL。 可通过多种方式访问这些参数，其名称因所使用的机制而异：
 
@@ -353,7 +365,7 @@ curl -u admin:admin -X POST \
 
 ### 使用 OSGi 配置管理缓存 {#cache-osgi-configration}
 
-要全局管理缓存，您可以为&#x200B;**持久查询服务配置**&#x200B;[配置 OSGi 设置](/help/sites-deploying/configuring-osgi.md)。 否则，此OSGi配置对发布实例[&#128279;](#publish-instances)使用默认值。
+要全局管理缓存，您可以为&#x200B;**持久查询服务配置**[配置 OSGi 设置](/help/sites-deploying/configuring-osgi.md)。 否则，此OSGi配置对发布实例](#publish-instances)使用[默认值。
 
 >[!NOTE]
 >
@@ -395,7 +407,7 @@ URL 可以划分为以下部分：
 
 ### 持久查询包
 
-可以将持久查询构建在[&#x200B; AEM 程序包](/help/sites-administering/package-manager.md)中。 然后，可以在不同的环境中下载和安装 AEM 包。 AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
+可以将持久查询构建在[ AEM 程序包](/help/sites-administering/package-manager.md)中。 然后，可以在不同的环境中下载和安装 AEM 包。 AEM 包也可以从 AEM 创作环境复制到 AEM 发布环境。
 
 要创建包：
 

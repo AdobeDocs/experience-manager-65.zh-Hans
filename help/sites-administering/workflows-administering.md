@@ -9,13 +9,22 @@ exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 solution: Experience Manager, Experience Manager Sites
 feature: Operations
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 8a70d214-ab7b-58c1-b001-2ed2e5d6303d
+    internal-label: Operations
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 63%
-
 ---
-
 # 管理工作流实例{#administering-workflow-instances}
 
 工作流控制台提供了几种工具来管理工作流实例以确保它们按预期执行。
@@ -96,7 +105,7 @@ ht-degree: 63%
 当工作流失败时，AEM会提供&#x200B;**故障**&#x200B;控制台，以便您进行调查，并在找到初始原因后执行适当的操作：
 
 * **失败详细信息**
-打开一个窗口以显示&#x200B;**失败消息**、**步骤**&#x200B;和&#x200B;**失败栈栈**。
+打开一个窗口以显示**失败消息**、**步骤**&#x200B;和&#x200B;**失败栈栈**。
 
 * **打开历史记录**
 显示工作流历史记录的详细信息。

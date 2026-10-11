@@ -10,13 +10,20 @@ role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2417'
-ht-degree: 1%
-
+source-wordcount: '2489'
+ht-degree: 2%
 ---
-
 # Communities用户同步 {#communities-user-synchronization}
 
 ## 简介 {#introduction}
@@ -102,7 +109,7 @@ ht-degree: 1%
 
 需要以下配置才能在AEM Communities上启用用户同步。 确保这些配置正确无误，以防止sling内容分发失败。
 
-### Apache Sling分发代理 — 同步代理工厂 {#apache-sling-distribution-agent-sync-agents-factory}
+### Apache Sling 分发代理 - 同步代理工厂 {#apache-sling-distribution-agent-sync-agents-factory}
 
 此配置获取要在发布者之间同步的内容。 该配置位于创作实例上。 作者必须跟踪所有存在的发布者以及在何处同步所有信息。
 
@@ -130,7 +137,7 @@ ht-degree: 1%
 
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Adobe Granite分发 — 加密的密码传输密钥提供程序 {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Adobe Granite 分发 ‑ 加密密码传输的密码提供程序 {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 它使作者能够识别具有将用户数据从作者同步到发布的权限的授权用户。
 
@@ -180,7 +187,7 @@ ht-degree: 1%
 ### Adobe Granite分发 — 观察者工厂差异 {#adobe-granite-distribution-diff-observer-factory}
 
 此配置跨发布者同步组成员资格。
-如果更改一个发布者中组的成员资格时没有更新其他发布者的成员资格，请确保&#x200B;**ref:members**&#x200B;已添加到&#x200B;**look属性名称**。
+如果更改一个发布者中组的成员资格时没有更新其他发布者的成员资格，请确保**ref:members**&#x200B;已添加到&#x200B;**look属性名称**。
 
 要确保成员同步，请执行以下操作：
 
@@ -307,7 +314,7 @@ AEM创作实例使用Sling ID来识别数据的来源以及它需要（或不需
 ### Vault Package Builder工厂 {#vault-package-builder-factory}
 
 要使更新正确同步，必须修改Vault包生成器以进行用户同步。
-在`/home/users`中创建`*/rep:cache`节点。它是一种缓存，用来发现如果我们查询一个节点的主体名称，那么这个缓存可以直接使用。
+在`/home/users`中创建`*/rep:cache`节点。 它是一种缓存，用来发现如果我们查询一个节点的主体名称，那么这个缓存可以直接使用。
 
 如果`rep :cache`节点跨发布服务器同步，则可以停止用户同步。
 
@@ -389,8 +396,8 @@ AEM创作实例使用Sling ID来识别数据的来源以及它需要（或不需
       现在，如果在发布实例上创建用户，将在&#x200B;*/var/sling/distribution/packages/ socialpubsync - vlt /data*&#x200B;节点中创建&#x200B;**vlt**&#x200B;包。 并且作者是否将这些包推送到其他服务。 您可以下载并提取此数据，以检查将所有属性推送到其他服务的情况。
 
 1. 转到发布者，并在发布者上创建用户。 因此，会创建事件。
-1. 检查创建用户时创建的日志[&#128279;](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities)的顺序。
+1. 检查创建用户时创建的日志](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities)的[顺序。
 1. 检查是否在&#x200B;**/var/sling/distribution/packages/socialpubsync-vlt/data**&#x200B;上创建了&#x200B;**vlt**&#x200B;包。
 1. 现在，在AEM Author实例上启用用户同步。
-1. 在发布服务器上，更改&#x200B;**Apache Sling分发代理 — 同步代理工厂**&#x200B;中的导出程序或导入程序终结点。
+1. 在发布服务器上，更改&#x200B;**Apache Sling分发代理 — 同步代理工厂**中的导出程序或导入程序终结点。
 我们可以下载并提取包数据，以检查哪些属性已推送到其他发布者，以及哪些数据丢失。

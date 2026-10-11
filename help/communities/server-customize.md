@@ -9,13 +9,20 @@ exl-id: 190735bc-1909-4b92-ba4f-a221c0cd5be7
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '897'
 ht-degree: 0%
-
 ---
-
 # 服务器端自定义 {#server-side-customization}
 
 | **[⇐功能要点](essentials.md)** | **[客户端自定义⇒](client-customize.md)** |
@@ -123,7 +130,7 @@ HTTP API POST端点是通过实现`SlingPostOperation`接口（包`org.apache.sl
 
 查看[编码准则](code-guide.md)部分，了解面向AEM Communities开发人员的各种编码准则和最佳实践。
 
-另请参阅UGC[&#128279;](srp.md)的存储资源提供程序(SRP)，了解如何访问用户生成的内容。
+另请参阅UGC](srp.md)的[存储资源提供程序(SRP)，了解如何访问用户生成的内容。
 
 | **[⇐功能要点](essentials.md)** | **[客户端自定义⇒](client-customize.md)** |
 |---|---|

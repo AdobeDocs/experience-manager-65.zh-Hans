@@ -4,13 +4,23 @@ description: AEM Forms支持自定义函数，这些函数允许用户在规则�
 feature: Adaptive Forms, Foundation Components
 role: Admin, User, Developer
 exl-id: 14a52bc1-c1b4-4a12-b8e1-54523e5f30bd
-source-git-commit: a0ef9925d1bcb84ea5bf733221875d0322cc6df1
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1104'
 ht-degree: 4%
-
 ---
-
 # 自适应Forms中的自定义函数
 
 ## 简介
@@ -22,7 +32,7 @@ ht-degree: 4%
 AEM Forms 6.5引入了用于定义JavaScript函数的功能，这些函数可用于使用规则编辑器定义复杂的业务规则。 AEM Forms提供了许多现成的此类自定义函数，但您需要定义自己的自定义函数并在多个表单中使用它们。
 
 自定义函数通过促进对输入数据的操作和处理来扩展表单的功能，以满足特定要求。 它们还支持根据预定义标准动态更改表单行为。
-在自适应Forms中，您可以使用自适应表单[的](/help/forms/using/rule-editor.md)规则编辑器中的自定义函数为表单字段创建特定的验证规则。
+在自适应Forms中，您可以使用自适应表单](/help/forms/using/rule-editor.md)的[规则编辑器中的自定义函数为表单字段创建特定的验证规则。
 让我们了解自定义功能的使用，用户可以在其中输入电子邮件地址，您希望确保输入的电子邮件地址遵循特定格式（其中包含“@”符号和域名）。 创建自定义函数为“ValidateEmail”，该函数将电子邮件地址作为输入，如果有效，则返回true；否则返回false。
 
 ```javascript
@@ -59,7 +69,7 @@ function ValidateEmail(inputText)
 
 支持的`jsdoc`标记：
 
-* **专用**
+* **私有**
 语法： `@private`
 专用函数未作为自定义函数包含在内。
 
@@ -79,10 +89,10 @@ function ValidateEmail(inputText)
 显示函数使用的参数。 一个函数可以有多个参数标记，每个参数按其出现顺序对应一个标记。
   `{type}`表示参数类型。 允许的参数类型包括：
 
-   1. 字符串
-   2. 数字
-   3. 布尔型
-   4. 范围
+  1. 字符串
+  2. 数字
+  3. 布尔型
+  4. 范围
 
   范围用于引用自适应表单的字段。 当表单使用延迟加载时，您可以使用`scope`访问其字段。 在加载字段时或字段标记为全局时，您可以访问这些字段。
 
@@ -94,9 +104,9 @@ function ValidateEmail(inputText)
 添加有关函数的信息，例如其目标。
   {type}表示函数的返回类型。 允许的返回类型包括：
 
-   1. 字符串
-   1. 数字
-   1. 布尔型
+  1. 字符串
+  1. 数字
+  1. 布尔型
 
   所有其他退货类型均归入上述任一类型下。 不支持无。 确保选择以上类型之一。 返回类型不区分大小写。
 
@@ -105,7 +115,7 @@ function ValidateEmail(inputText)
 
   使用@this引用编写了规则的自适应表单组件。
 
-  以下示例基于字段值。 在以下示例中，规则隐藏了表单中的字段。 `this`的`this.value`部分引用了写入规则的基础自适应表单组件。
+  以下示例基于字段值。 在以下示例中，规则隐藏了表单中的字段。 `this.value`的`this`部分引用了写入规则的基础自适应表单组件。
 
   ```
      /**
@@ -190,7 +200,7 @@ var c = {
 要创建自定义函数，请执行以下步骤：
 
 1. 登录`http://server:port/crx/de/index.jsp#`。
-1. 在 `/apps` 文件夹下创建一个文件夹。例如，创建名为`experience-league`的文件夹。
+1. 在 `/apps` 文件夹下创建一个文件夹。 例如，创建名为`experience-league`的文件夹。
 1. 保存更改。
 1. 导航到已创建的文件夹，并创建类型为`cq:ClientLibraryFolder`的节点作为`clientlibs`。
 1. 导航到新创建的`clientlibs`文件夹并添加`allowProxy`和`categories`属性：
@@ -203,9 +213,9 @@ var c = {
 
 1. 保存更改。
 
-1. 在`js`文件夹下创建名为`clientlibs`的文件夹。
-1. 在`functions.js`文件夹下创建名为`js`的JavaScript文件
-1. 在`js.txt`文件夹下创建名为`clientlibs`的文件。
+1. 在`clientlibs`文件夹下创建名为`js`的文件夹。
+1. 在`js`文件夹下创建名为`functions.js`的JavaScript文件
+1. 在`clientlibs`文件夹下创建名为`js.txt`的文件。
 1. 保存更改。
 创建的文件夹结构如下所示：
 
@@ -266,4 +276,4 @@ var c = {
 
 ![正在添加自定义函数客户端库](/help/forms/using//assets/calculateage-customfunction.png)
 
-现在，让我们了解如何使用AEM Forms[中的](/help//forms/using/rule-editor.md)规则编辑器的调用服务来配置和使用自定义函数。
+现在，让我们了解如何使用AEM Forms](/help//forms/using/rule-editor.md)中的[规则编辑器的调用服务来配置和使用自定义函数。

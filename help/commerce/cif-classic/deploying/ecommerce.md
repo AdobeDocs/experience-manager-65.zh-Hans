@@ -5,13 +5,21 @@ feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
 solution: Experience Manager,Commerce
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 4%
-
 ---
-
 # 电子商务概述{#ecommerce-overview}
 
 AEM通用电子商务作为标准安装的一部分提供，它提供了电子商务框架的完整功能。
@@ -32,7 +40,7 @@ Adobe提供两个版本的Commerce integration framework：
 
 ## 部署其他实施 {#deploying-other-implementations}
 
-对于AEM和Adobe Commerce，请参阅[&#128279;](/help/commerce/cif/introduction.md)使用[AEM和Adobe Commerce集成](/help/commerce/cif/integrating/magento.md)Commerce integration framework。
+对于AEM和Adobe Commerce，请参阅[使用[AEM和Adobe Commerce集成](/help/commerce/cif/integrating/magento.md)Commerce integration framework](/help/commerce/cif/introduction.md)。
 
 >[!NOTE]
 >

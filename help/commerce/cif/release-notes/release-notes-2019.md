@@ -5,13 +5,21 @@ exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1070'
 ht-degree: 10%
-
 ---
-
 # Commerce integration framework GitHub版本概述
 
 ## 发行日期： 2019年11月
@@ -52,7 +60,7 @@ ht-degree: 10%
 
 * 产品详细信息页面和产品列表页面的完全可创作模板。 作者现在可以创建模板，并将产品列表和产品详细信息组件拖放到这些模板上。 除了添加其他组件外，作者现在还可以更改这些模板的布局，为他们提供无限制的自由，以便结合营销和商业内容创建令人惊叹的体验。
 
-* 所有便于作者使用的CIF核心组件均已得到增强，可支持[AEM的样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=zh-Hans)。 为产品列表组件提供了示例样式。
+* 所有便于作者使用的CIF核心组件均已得到增强，可支持[AEM的样式系统](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html)。 为产品列表组件提供了示例样式。
 
 * 用于帐户管理的基于React的客户端组件。 此版本支持以下功能：登录、忘记密码和创建帐户。
 

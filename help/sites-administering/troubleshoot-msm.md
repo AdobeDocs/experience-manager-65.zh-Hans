@@ -5,13 +5,25 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 solution: Experience Manager, Experience Manager Sites
-source-git-commit: 3aa55b88f589749fb49d5ff46340b0912d490157
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '767'
 ht-degree: 81%
-
 ---
-
 # 解决 MSM 问题和常见问题 {#troubleshooting-msm}
 
 ## 排查首要步骤的问题 {#first-steps}
@@ -23,39 +35,37 @@ ht-degree: 81%
 
 ## 查找有关您的 Blueprint 和 Live Copy 状态的高级信息 {#advanced-info}
 
-MSM 注册了几个 servlet，可以使用资源 URL 上的选择器来请求这些 servlet。它们由 UI 使用，也可以直接请求以直接查看页面的其他高级计算 MSM 状态：
+MSM 注册了几个 servlet，可以使用资源 URL 上的选择器来请求这些 servlet。 它们由 UI 使用，也可以直接请求以直接查看页面的其他高级计算 MSM 状态：
 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * 在 Blueprint 页面上使用它可检索与之链接的所有 Live Copy 的列表，以及其他 Live Copy 状态信息。
    * 例如：
-
      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
-   * 在 Live Copy 页面上使用它可检索有关其与 Blueprint 页面的连接的高级信息。如果页面不是 Live Copy，则不会返回任何内容。
+   * 在 Live Copy 页面上使用它可检索有关其与 Blueprint 页面的连接的高级信息。 如果页面不是 Live Copy，则不会返回任何内容。
    * 例如：
-
      `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些消息也很有用。
 
 ## 查看存储库中的 MSM 特定信息 {#checking-repo}
 
-先前的 servlet 已返回基于 MSM 特定节点和 mixin 的计算信息。该信息通过以下方式存储在存储库中。
+先前的 servlet 已返回基于 MSM 特定节点和 mixin 的计算信息。 该信息通过以下方式存储在存储库中。
 
 * `cq:LiveSync` mixin 类型
-   * 它在 `jcr:content` 节点上设置，并定义根 Live Copy 页面。
-   * 这些页面具有类型为`cq:LiveCopy`的`cq:LiveSyncConfig`子节点，这些子节点通过下列属性包含有关Live Copy的基本和强制性信息：
-      * `cq:master` 指向 Live Copy 的 Blueprint 页面。
-      * `cq:rolloutConfigs` 表示应用于 Live Copy 的活动转出配置。
-      * 如果此根 Live Copy 页面的子页面包含在 Live Copy 中，则 `cq:isDeep` 为 true。
+  * 它在 `jcr:content` 节点上设置，并定义根 Live Copy 页面。
+  * 这些页面具有类型为`cq:LiveCopy`的`cq:LiveSyncConfig`子节点，这些子节点通过下列属性包含有关Live Copy的基本和强制性信息：
+    * `cq:master` 指向 Live Copy 的 Blueprint 页面。
+    * `cq:rolloutConfigs` 表示应用于 Live Copy 的活动转出配置。
+    * 如果此根 Live Copy 页面的子页面包含在 Live Copy 中，则 `cq:isDeep` 为 true。
 * `cq:LiveRelationship` mixin 类型
-   * 任何 Live Copy 页面的 `jcr:content` 节点上均具有一个此 mixin 类型。
-   * 否则，已在某个时刻通过 Live Copy 操作（创建或转出）之外的创作界面分离或手动创建了该页面。
+  * 任何 Live Copy 页面的 `jcr:content` 节点上均具有一个此 mixin 类型。
+  * 否则，已在某个时刻通过 Live Copy 操作（创建或转出）之外的创作界面分离或手动创建了该页面。
 * `cq:LiveSyncCancelled` mixin 类型
-   * 添加到已暂停的 Live Copy 页面的 `jcr:content` 节点。
-   * 如果暂停对子页面也有效，则 `cq:isCancelledForChildren` 属性在同一节点上设置为 true。
+  * 添加到已暂停的 Live Copy 页面的 `jcr:content` 节点。
+  * 如果暂停对子页面也有效，则 `cq:isCancelledForChildren` 属性在同一节点上设置为 true。
 
 这些属性包含的信息应反映在 UI 中，但在进行问题排查时，在 MSM 操作发生时直接在存储库中观察 MSM 行为可能会很有用。
 
@@ -69,7 +79,7 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 ### 为什么一些属性（例如标题、注释）在 MSM 转出期间未更新？ {#missing-properties}
 
-可非常灵活地配置 MSM 同步操作。在转出期间修改哪些属性或组件直接取决于这些配置的属性。
+可非常灵活地配置 MSM 同步操作。 在转出期间修改哪些属性或组件直接取决于这些配置的属性。
 
 有关此主题的更多信息，请参阅[MSM最佳实践](msm-best-practices.md)。
 
@@ -94,4 +104,4 @@ servlet 通过 `com.day.cq.wcm.msm` 记录器生成 DEBUG 日志消息，这些�
 
 Live Copy 子树中的此类独立页面一般是&#x200B;**分离**&#x200B;操作的结果，或者是作者手动删除了以前的 Live Copy 页面，然后重新创建一个同名的页面所致。
 
-要避免发生这种情况，请使用 Live Copy **暂停**&#x200B;功能代替&#x200B;**分离**。可在[本文](msm-livecopy.md)中找到关于&#x200B;**分离**&#x200B;操作的更多详情。
+要避免发生这种情况，请使用 Live Copy **暂停**&#x200B;功能代替&#x200B;**分离**。 可在[本文](msm-livecopy.md)中找到关于&#x200B;**分离**&#x200B;操作的更多详情。

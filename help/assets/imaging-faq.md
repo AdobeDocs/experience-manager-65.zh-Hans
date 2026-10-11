@@ -9,13 +9,29 @@ feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3434'
+source-wordcount: '3480'
 ht-degree: 2%
-
 ---
-
 # 智能图像处理 {#smart-imaging}
 
 智能成像应用每个用户的独特查看特性，自动为用户提供针对其体验而优化的正确图像，从而提高性能和参与度。
@@ -90,7 +106,7 @@ In terms of images, the goal is to serve the best quality images as efficiently 
 
 您可以通过将`bfc=off`附加到图像的URL来关闭智能成像。
 
-另请参阅Dynamic Media图像服务和渲染API中的[bfc](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
+另请参阅Dynamic Media图像服务和渲染API中的[bfc](https://experienceleague.adobe.com/en/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-bfc)。
 
 ### 关于设备像素比(dpr)优化 {#dpr}
 
@@ -244,29 +260,29 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 
    * **主要联系人详细信息：**
 
-      * 提供您的姓名、电子邮件和电话号码。
+     * 提供您的姓名、电子邮件和电话号码。
 
    * **要启用的智能成像功能：**
 
-      * 列出您想要为您的帐户提供的功能：
+     * 列出您想要为您的帐户提供的功能：
 
-         * 浏览器格式转换：WebP或AVIF
-         * 网络带宽优化
-         * DPR： DPR需要客户端调整以确定正确的`dprValue`。 因此，Adobe建议通过附加`dpr=on,dprValue`来通过URL启用DPR。
+       * 浏览器格式转换：WebP或AVIF
+       * 网络带宽优化
+       * DPR： DPR需要客户端调整以确定正确的`dprValue`。 因此，Adobe建议通过附加`dpr=on,dprValue`来通过URL启用DPR。
 
    * 智能成像的&#x200B;**域：**
 
-      * 列出所有相关域，如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
-      * 智能成像支持通用域和自定义域。
-      * 要识别您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/zh-hans/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后登录到您的公司帐户。
+     * 列出所有相关域，如&#x200B;*`company.com`*&#x200B;或&#x200B;*`mycompany.scene7.com`*
+     * 智能成像支持通用域和自定义域。
+     * 要识别您的域，请打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/en/docs/dynamic-media-classic/using/getting-started/signing-out#getting-started)，然后登录到您的公司帐户。
 
-         1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
-         1. 查找&#x200B;**[!UICONTROL 发布的服务器名称]**&#x200B;字段以确认您的域。
-         1. 验证您使用的是Adobe的CDN，而不是由其他提供商管理的CDN。
+       1. 导航到&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]**。
+       1. 查找&#x200B;**[!UICONTROL 发布的服务器名称]**&#x200B;字段以确认您的域。
+       1. 验证您使用的是Adobe的CDN，而不是由其他提供商管理的CDN。
 
    * **指示HTTP/2支持：**
 
-      * 指定是否需要智能成像来处理HTTP/2。
+     * 指定是否需要智能成像来处理HTTP/2。
 
 1. 默认情况下，Adobe客户支持会启用所请求的智能成像功能，而无需手动将参数附加到URL。
 1. Adobe建议将生存时间(TTL)设置为至少24小时，以通过缓存最大限度地提高性能。
@@ -338,9 +354,10 @@ To understand pre-requisites for Smart Imaging, see [Am I eligible to use Smart 
 >
 >**X-Adobe-Smart-Imaging = -1，正在传递WebP**
 >
->如果`X-Adobe-Smart-Imaging`的值为–1且仍在传递WebP，则智能成像处于活动状态。但是，由于缓存已过时，未计算大小优势。您可以在图像的URL中使用`cache=update`（仅限一次）来解决此问题。
+>如果`X-Adobe-Smart-Imaging`的值为–1且仍在传递WebP，则智能成像处于活动状态。 但是，由于缓存已过时，未计算大小优势。 您可以在图像的URL中使用`cache=update`（仅限一次）来解决此问题。
 >使用修饰符的示例：
->`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`>若要使整个缓存失效，您必须创建一个支持案例。
+>`https://smartimaging.scene7.com/is/image/SmartImaging/sample1?cache=update`
+>要使整个缓存失效，必须创建支持案例。
 
 +++
 

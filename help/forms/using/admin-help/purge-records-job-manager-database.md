@@ -1,5 +1,5 @@
 ---
-title: 从作业管理器数据库中清除记录
+title: 清除作业管理器数据库中的记录
 description: 较大的流程数据可能会导致AEM表单性能降低。 当不再需要记录时，最好清除流程数据。
 contentOwner: admin
 content-type: reference
@@ -9,20 +9,34 @@ exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 0%
-
+source-wordcount: '487'
+ht-degree: 2%
 ---
-
-# 从作业管理器数据库中清除记录 {#purge-records-from-the-job-manager-database}
+# 清除作业管理器数据库中的记录 {#purge-records-from-the-job-manager-database}
 
 >[!NOTE]
 > 
 > 确保用户具有访问管理员控制台的管理员权限。
 
-在调用长期进程时生成的进程数据可能会变得太大，从而导致AEM表单性能降低和使用不必要的磁盘空间。 当不再需要记录时，最好清除流程数据。
+在调用长期进程时生成的进程数据可能会变得太大，从而导致AEM表单性能下降并占用不必要的磁盘空间。 当不再需要记录时，最好清除流程数据。
 
 您可以使用管理控制台执行一次性清除过时记录或计划定期自动清除。 在[清除进程数据](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)中讨论了清除过时记录的其他方法。
 
@@ -67,6 +81,6 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >如果指定的开始日期和时间是过去的时间，则AEM forms会根据指定的日期计算逻辑的下一个开始日期。 例如，如果安排从4月7日开始每周执行作业清除，现在为4月9日，则第一次清除发生在4月14日。
+   >如果指定的开始日期和时间是过去的时间，则AEM Forms会根据指定的日期计算逻辑的下一个开始日期。 例如，如果安排从4月7日开始每周执行作业清除，现在为4月9日，则第一次清除发生在4月14日。
 
 1. 单击“Start Scheduler（启动计划程序）”。 任何以前计划的计划程序设置都将替换为新设置。

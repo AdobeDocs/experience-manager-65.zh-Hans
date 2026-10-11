@@ -9,13 +9,22 @@ feature: Administering
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5878'
+source-wordcount: '5879'
 ht-degree: 1%
-
 ---
-
 # 修订版清理{#revision-cleanup}
 
 ## 简介 {#introduction}
@@ -24,7 +33,7 @@ ht-degree: 1%
 
 在AEM 6.3及更高版本中，引入了此功能的在线版本，称为“在线修订清理”。 与必须关闭AEM实例的脱机修订清理相比，在AEM实例处于联机状态时，可以运行联机修订清理。 默认情况下，“联机修订清理”处于打开状态，建议使用此方式执行修订清理。
 
-**注意**： [观看视频](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html?lang=zh-Hans)，了解如何使用联机修订清理。
+**注意**： [观看视频](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/administration/use-online-revision-clean-up.html)，了解如何使用联机修订清理。
 
 修订清理过程包括三个阶段：**估计**、**压缩**&#x200B;和&#x200B;**清理**。 估算根据可能收集到的垃圾量来确定是否运行下一阶段（压缩）。 在压缩阶段，区段和tar文件被重写，而没有任何未使用的内容。 然后，清理阶段将删除旧区段，包括这些区段可能包含的任何垃圾。 离线模式通常可以回收更多空间，因为在线模式必须考虑AEM的工作集，该工作集保留着不可收集的额外区段。
 
@@ -252,7 +261,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>哪些因素决定了联机修订版清理的持续时间？</strong></td>
-   <td>因素为：<br />
+   <td>这些因素包括：<br />
     <ul>
      <li>存储库大小</li>
      <li>在系统上加载（每分钟请求数，特别是写操作）</li>
@@ -465,7 +474,7 @@ TarMK GC: no base state available, running full compaction instead
   </tr>
   <tr>
    <td><strong>根据运行状况检查和日志条目，联机修订清理连续三次未成功完成。 成功完成联机修订清理需要什么条件？</strong></td>
-   <td>您可以执行几个步骤来查找并修复问题：<br />
+   <td>您可以采取几个步骤来查找并修复问题：<br />
     <ul>
      <li>首先，检查日志条目<br /> </li>
      <li>根据日志中的信息，采取适当措施：
@@ -494,7 +503,7 @@ TarMK GC: no base state available, running full compaction instead
     <ol>
      <li>一种应用程序，可绕过建议的访问机制（如Sling和JCR API），使用较低级别的API/SPI访问存储库，然后超过区段的保留时间。 也就是说，它保留对实体的引用，保留时间超过在线修订版清理所允许的保留时间（默认为24小时）。 此案例是暂时性的，不会导致数据损坏。 要恢复，应使用oak-run工具确认异常的瞬态性质（oak-run检查不应报告任何错误）。 为此，实例必须离线并在之后重新启动。</li>
      <li>外部事件导致磁盘上的数据损坏。 这可以是磁盘故障、磁盘空间不足或意外修改所需的数据文件。 在这种情况下，实例必须离线并使用oak-run检查进行修复。 有关如何执行Oak-run检查的更多详细信息，请阅读以下<a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache文档</a>。</li>
-     <li>通过<a href="https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support" target="_blank">Adobe客户关怀</a>解决所有其他问题。</li>
+     <li>通过<a href="https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support" target="_blank">Adobe客户关怀</a>解决所有其他问题。</li>
     </ol> </td>
    <td> </td>
   </tr>

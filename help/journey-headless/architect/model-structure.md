@@ -5,13 +5,29 @@ exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments
 role: Admin, Developer
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '690'
+source-wordcount: '692'
 ht-degree: 92%
-
 ---
-
 # 了解如何在 AEM 中创建内容片段模型 {#architect-headless-content-fragment-models}
 
 ## 迄今为止的故事 {#story-so-far}
@@ -42,13 +58,13 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## 创建内容片段模型 {#creating-content-fragment-models}
 
-之后，可以创建内容片段模型并定义结构。可以在“工具”>“Assets”>“内容片段模型”下执行此操作。
+之后，可以创建内容片段模型并定义结构。 可以在“工具”>“Assets”>“内容片段模型”下执行此操作。
 
 ![工具中的内容片段模型](assets/cfm-tools.png)
 
-选择此选项后，您导航到模型的位置并选择&#x200B;**创建**。您可以在此处输入各种关键详细信息。
+选择此选项后，您导航到模型的位置并选择&#x200B;**创建**。 您可以在此处输入各种关键详细信息。
 
-默认情况下，**启用模型**&#x200B;选项已激活。这意味着，您的模型一经保存即可立即使用（用于创建内容片段）。如果需要，您可以禁用此选项 - 可以稍后启用（或禁用）现有模型。
+默认情况下，**启用模型**&#x200B;选项已激活。 这意味着，您的模型一经保存即可立即使用（用于创建内容片段）。 如果需要，您可以禁用此选项 - 可以稍后启用（或禁用）现有模型。
 
 ![创建内容片段模型](/help/assets/content-fragments/assets/cfm-models-02.png)
 
@@ -66,17 +82,17 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ![定义字段](/help/assets/content-fragments/assets/cfm-models-04.png)
 
-在添加数据类型后，您需要为该字段定义&#x200B;**属性**。这些都取决于将使用的类型。例如：
+在添加数据类型后，您需要为该字段定义&#x200B;**属性**。 这些都取决于将使用的类型。 例如：
 
 ![数据属性](/help/assets/content-fragments/assets/cfm-models-05.png)
 
-可以添加所需数量的字段。例如：
+可以添加所需数量的字段。 例如：
 
 ![内容片段模型](/help/assets/content-fragments/assets/cfm-models-07.png)
 
 ### 您的内容作者 {#your-content-authors}
 
-您的内容作者看不到您用于创建模型的实际数据类型和属性。这意味着您可能需要提供有关他们如何填写特定字段的帮助和信息。对于基本信息，您可以使用字段标签和默认值，但在更复杂的情况下，可能需要考虑项目特定的文档。
+您的内容作者看不到您用于创建模型的实际数据类型和属性。 这意味着您可能需要提供有关他们如何填写特定字段的帮助和信息。 对于基本信息，您可以使用字段标签和默认值，但在更复杂的情况下，可能需要考虑项目特定的文档。
 
 >[!NOTE]
 >
@@ -101,7 +117,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 >
 >如果作者尝试发布的内容片段的模型尚未发布，则会显示一个选择列表来指示该情况，并且模型将随该片段一起发布。
 
-模型一经发布，就会&#x200B;*锁定*&#x200B;为作者的只读架构。这旨在阻止进行可能导致现有 GraphQL 架构和查询出错的更改，尤其是在发布环境中。它在控制台中由&#x200B;**已锁定**&#x200B;指示。
+模型一经发布，就会&#x200B;*锁定*&#x200B;为作者的只读架构。 这旨在阻止进行可能导致现有 GraphQL 架构和查询出错的更改，尤其是在发布环境中。 它在控制台中由&#x200B;**已锁定**&#x200B;指示。
 
 当模型处于&#x200B;**已锁定**&#x200B;状态（在只读架构中）时，您可以查看模型的内容和结构，但无法直接编辑它们；但您可以从控制台或模型编辑器中管理&#x200B;**已锁定**&#x200B;模型。
 
@@ -117,22 +133,22 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
 
-   * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
+  * [内容片段模型](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [定义内容片段模型](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
+    * [定义内容片段模型](/help/assets/content-fragments/content-fragments-models.md#defining-your-content-fragment-model)
 
-      * [启用或禁用内容片段模型](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
+    * [启用或禁用内容片段模型](/help/assets/content-fragments/content-fragments-models.md#enabling-disabling-a-content-fragment-model)
 
-      * [允许在 Assets 文件夹中使用内容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
+    * [允许在 Assets 文件夹中使用内容片段模型](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
 
-      * [删除内容片段模型](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
+    * [删除内容片段模型](/help/assets/content-fragments/content-fragments-models.md#deleting-a-content-fragment-model)
 
-      * [发布内容片段模型](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
+    * [发布内容片段模型](/help/assets/content-fragments/content-fragments-models.md#publishing-a-content-fragment-model)
 
-      * [取消发布内容片段模型](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
+    * [取消发布内容片段模型](/help/assets/content-fragments/content-fragments-models.md#unpublishing-a-content-fragment-model)
 
-      * [锁定（已发布）内容片段模型](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
+    * [锁定（已发布）内容片段模型](/help/assets/content-fragments/content-fragments-models.md#locked-published-content-fragment-models)
 
 * 快速入门指南
 
-   * [创建内容片段模型Headless快速入门指南](/help/sites-developing/headless/getting-started/create-content-model.md)
+  * [创建内容片段模型Headless快速入门指南](/help/sites-developing/headless/getting-started/create-content-model.md)

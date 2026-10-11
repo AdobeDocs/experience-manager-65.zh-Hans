@@ -1,5 +1,5 @@
 ---
-title: 创建包含可重复部分的表单
+title: 创建具有可重复部分的表单
 description: 可重复部分是可动态添加到表单或从中移除的面板。
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -8,16 +8,34 @@ feature: Adaptive Forms,Foundation Components
 exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1139'
-ht-degree: 4%
-
+source-wordcount: '1181'
+ht-degree: 6%
 ---
+# 创建具有可重复部分的表单 {#creating-forms-with-repeatable-sections}
 
-# 创建包含可重复部分的表单 {#creating-forms-with-repeatable-sections}
-
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 可重复部分是可动态添加到表单或从中移除的面板。
 
@@ -50,7 +68,7 @@ ht-degree: 4%
          * 若要创建添加面板按钮，请选择&#x200B;**添加实例**，然后使用![切换侧面板](assets/toggle-side-panel.png)拖放面板，或者使用&#x200B;**拖放对象或在此处选择。**
          * 若要创建删除面板按钮，请选择&#x200B;**删除实例**，然后使用![切换侧面板](assets/toggle-side-panel.png)拖放该面板，或者使用&#x200B;**拖放对象或在此处选择。**
 
-      在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”**&#x200B;**，在代码区中：
+      在“表单对象和函数”行中选择&#x200B;**代码编辑器**。 单击“编辑规则”****，在代码区中：
 
       * 若要创建添加面板按钮，请指定`this.panel.instanceManager.addInstance()`
       * 要创建删除面板按钮，请指定`this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
@@ -116,7 +134,7 @@ ht-degree: 4%
 1. 要指定最小重复次数，请选择最小计数，然后在关联的框中键入一个数字。 如果将此选项设置为0，并且在数据合并时没有为子表单中的对象提供数据，则在呈现表单时不会放置子表单。
 1. 要指定子表单重复的最大次数，请选择“最大”，然后在相关框中键入一个数字。 如果未在“最大值”框中指定值，则子表单的重复次数将无限制。
 1. 要指定一组子表单重复次数，而不考虑数据量，请选择初始计数，然后在关联框中键入一个数字。 如果选择此选项，并且没有可用数据或存在的数据条目少于指定的初始计数值，则子表单的空实例仍会放置在表单上。
-1. 在父子表单中添加两个按钮 — 一个用于添加实例，另一个用于删除可重复子表单的实例。 有关详细步骤，请参阅[生成操作](https://help.adobe.com/zh_CN/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)。
+1. 在父子表单中添加两个按钮 — 一个用于添加实例，另一个用于删除可重复子表单的实例。 有关详细步骤，请参阅[生成操作](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2)。
 1. 现在，将表单模板链接到自适应表单。 有关详细步骤，请参阅[基于模板创建自适应表单](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template)。
 1. 使用在第9步中创建的按钮添加和删除子表单。
 

@@ -1,18 +1,32 @@
 ---
 title: 使用智能内容服务配置资产标记
-description: 了解如何使用智能内容服务在 [!DNL Adobe Experience Manager]中配置智能标记和增强型智能标记。
+description: 了解如何使用智能内容服务在[!DNL Adobe Experience Manager]中配置智能标记和增强型智能标记。
 role: Admin
 feature: Tagging,Smart Tags
 solution: Experience Manager, Experience Manager Assets
 exl-id: 9caee314-697b-4a7b-b991-10352da17f2c
-source-git-commit: ab9292c491cc9dfcd8f239ba279b1e0ae6d1560f
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 752f9248-f39f-5793-a7dd-5ddafcd403c7
+    internal-label: Tagging
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: f0e3b2ca-813f-4b7a-81df-52339e17ddcf
+    internal-label: Smart Tags
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1089'
-ht-degree: 6%
-
+source-wordcount: '1145'
+ht-degree: 8%
 ---
-
-# OAuth凭据的智能标记疑难解答 {#oauth-config}
+# 排查智能标记的 OAuth 凭据问题 {#oauth-config}
 
 需要开放授权配置才能同意[!DNL Adobe Experience Manager]应用程序以安全方式与智能内容服务交互。
 
@@ -27,7 +41,7 @@ ht-degree: 6%
 
 >[!NOTE]
 >
->如果需要，您可以按照[支持流程](https://experienceleague.adobe.com/zh-hans?lang=en&support-tab=home#support)提交支持票证。
+>如果需要，您可以按照[支持流程](https://experienceleague.adobe.com/?lang=en&support-tab=home#support)提交支持票证。
 
 ## 现有AMS用户的OAuth配置 {#oauth-config-new-ams-users}
 
@@ -39,12 +53,12 @@ OAuth配置需要以下先决条件：
 
 * 在[Developer Console](https://developer.adobe.com/console/user/servicesandapis)中创建新的OAuth集成。 在以下步骤中使用`ClientID`、`ClientSecret`、`OrgID`和其他属性：
 * 在此路径`/apps/system/config in crx/de`上可找到以下文件：
-   * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
-   * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
+  * `com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`
+  * `com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`
 
 ### 现有AMS和On Prem用户的OAuth配置 {#steps-config-oauth-onprem}
 
-以下步骤可由系统管理员在&#x200B;**CRXDE**&#x200B;中执行。 在[支持流程](https://experienceleague.adobe.com/zh-hans?lang=en&support-tab=home#support)之后，AMS客户可以联系Adobe代表或提交支持工单。
+以下步骤可由系统管理员在&#x200B;**CRXDE**&#x200B;中执行。 在[支持流程](https://experienceleague.adobe.com/?lang=en&support-tab=home#support)之后，AMS客户可以联系Adobe代表或提交支持工单。
 
 1. 在`com.adobe.granite.auth.oauth.accesstoken.provider.<randomnumbers>.config`中添加或更新以下属性：
 
@@ -52,7 +66,6 @@ OAuth配置需要以下先决条件：
    * `auth.token.provider.orgId="<OrgID>"`
    * `auth.token.provider.default.claims=("\"iss\"\ :\ \"<OrgID>\"")`
    * `auth.token.provider.scope="read_pc.dma_smart_content,\ openid,\ AdobeID,\ additional_info.projectedProductContext"`
-
      `auth.token.validator.type="adobe-ims-similaritysearch"`
    * 使用新OAuth配置的客户端ID更新`auth.token.provider.client.id`。
    * 将`auth.access.token.request`更新至`"https://ims-na1.adobelogin.com/ims/token/v3"`
@@ -60,7 +73,7 @@ OAuth配置需要以下先决条件：
 
    >[!IMPORTANT]
    >
-   >将点(.)替换为连字符(-)作为`<randomnumber>`的前缀。
+   >替换点(.) 带有连字符(-)作为`<randomnumber>`的前缀。
 
 1. 在`com.adobe.granite.auth.ims.impl.IMSAccessTokenRequestCustomizerImpl.<randomnumber>.config`中执行以下步骤：
    * 通过新的OAuth集成，使用客户端密钥更新属性auth.ims.client.secret。
@@ -89,7 +102,7 @@ OAuth配置需要以下先决条件：
 
 >[!NOTE]
 >
->如果发生`unsupported_grant_type`错误，请尝试安装Granite修补程序。 请参阅[从服务帐户(JWT)迁移到OAuth服务器到服务器凭据](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-24660)。
+>如果发生`unsupported_grant_type`错误，请尝试安装Granite修补程序。 请参阅[从服务帐户(JWT)迁移到OAuth服务器到服务器凭据](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-24660)。
 
 ## 与Adobe Developer Console集成 {#integrate-adobe-io}
 
@@ -111,9 +124,9 @@ OAuth配置需要以下先决条件：
 
 公共证书允许您在Adobe Developer Console上验证配置文件。
 
-1. 在[!DNL Experience Manager]用户界面中，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 旧版Cloud Service]**。
+1. 在[!DNL Experience Manager]用户界面中，访问&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 云服务]** > **[!UICONTROL 旧版云服务]**。
 
-1. 在“Cloud Service”页面中，单击&#x200B;**[!UICONTROL Assets智能标记]**&#x200B;下的&#x200B;**[!UICONTROL 立即配置]**。
+1. 在“云服务”页面中，单击&#x200B;**[!UICONTROL Assets智能标记]**&#x200B;下的&#x200B;**[!UICONTROL 立即配置]**。
 
 1. 在&#x200B;**[!UICONTROL 创建配置]**&#x200B;对话框中，指定智能标记配置的标题和名称。 单击&#x200B;**[!UICONTROL 创建]**。
 
@@ -121,7 +134,7 @@ OAuth配置需要以下先决条件：
 
    **[!UICONTROL 服务URL]**： `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   例如，`https://smartcontent.adobe.io/apac`。您可以将`na`、`emea`或`apac`指定为承载Experience Manager创作实例的区域。
+   例如，`https://smartcontent.adobe.io/apac`。 您可以将`na`、`emea`或`apac`指定为承载Experience Manager创作实例的区域。
 
    >[!NOTE]
    >
@@ -138,7 +151,7 @@ OAuth配置需要以下先决条件：
 
    >[!NOTE]
    >
-   >提供为[!UICONTROL 服务URL]的URL无法通过浏览器访问，并生成404错误。 使用[!UICONTROL 服务URL]参数的相同值时，配置工作正常。 有关整体服务状态和维护计划，请参阅[https://status.adobe.com/zh-cn](https://status.adobe.com/zh-cn)。
+   >提供为[!UICONTROL 服务URL]的URL无法通过浏览器访问，并生成404错误。 使用[!UICONTROL 服务URL]参数的相同值时，配置工作正常。 有关整体服务状态和维护计划，请参阅[https://status.adobe.com](https://status.adobe.com)。
 
 1. 单击&#x200B;**[!UICONTROL 下载OAuth集成的公共证书]**，然后下载公共证书文件`AEM-SmartTags.crt`。 此外，您不再需要在Adobe Developer控制台中上传此证书。
 
@@ -148,13 +161,13 @@ OAuth配置需要以下先决条件：
 
 ## 创建Adobe Developer Console集成 {#create-adobe-i-o-integration}
 
-要使用Smart Content Service API，请在Adobe Developer Console中创建集成，以获取[!DNL Experience Manager]中云配置的[!UICONTROL Assets智能标记服务设置]的[!UICONTROL API密钥] (在Adobe Developer Console集成的[!UICONTROL 客户端ID]字段中生成)、[!UICONTROL 技术帐户ID]、[!UICONTROL 组织ID]和[!UICONTROL 客户端密钥]。
+要使用Smart Content Service API，请在Adobe Developer Console中创建集成，以获取[!DNL Experience Manager]中云配置的[!UICONTROL Assets智能标记服务设置]的[!UICONTROL API密钥]（在Adobe Developer Console集成的[!UICONTROL 客户端ID]字段中生成）、[!UICONTROL 技术帐户ID]、[!UICONTROL 组织ID]和[!UICONTROL 客户端密钥]。
 
 1. 在浏览器中访问[https://developer.adobe.com/console/](https://developer.adobe.com/console/)。 选择相应的帐户并验证关联的组织角色是否为系统管理员。
 
-1. 创建具有任何所需名称的项目。单击&#x200B;**[!UICONTROL 添加 API]**。
+1. 创建具有任何所需名称的项目。 单击&#x200B;**[!UICONTROL 添加 API]**。
 
-1. 在&#x200B;**[!UICONTROL 添加 API]** 页面中，依次选择 **[!UICONTROL Experience Cloud]** 和&#x200B;**[!UICONTROL 智能内容]**。单击&#x200B;**[!UICONTROL 下一步]**。
+1. 在&#x200B;**[!UICONTROL 添加 API]** 页面中，依次选择 **[!UICONTROL Experience Cloud]** 和&#x200B;**[!UICONTROL 智能内容]**。 单击&#x200B;**[!UICONTROL 下一步]**。
 
 1. 选择&#x200B;**[!UICONTROL OAuth服务器到服务器]**&#x200B;身份验证方法。
 
@@ -172,14 +185,14 @@ OAuth配置需要以下先决条件：
    *Figure: Details of integration in Adobe Developer Console*
 -->
 
-![oauth配置](assets/oauth-config.png)
+![OAuth配置](assets/oauth-config.png)
 *图：在Adobe Developer Console中配置了OAuth服务器到服务器*
 
 ## 配置智能内容服务 {#configure-smart-content-service}
 
 要配置集成，请使用Adobe Developer Console集成中的[!UICONTROL 技术帐户ID]、[!UICONTROL 组织ID]、[!UICONTROL 客户端密钥]和[!UICONTROL 客户端ID]字段的值。 创建智能标记云配置允许来自[!DNL Experience Manager]部署的API请求的身份验证。
 
-1. 在[!DNL Experience Manager]中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 旧版Cloud Services]**&#x200B;以打开[!UICONTROL Cloud Services]控制台。
+1. 在[!DNL Experience Manager]中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL 旧版云服务]**&#x200B;以打开[!UICONTROL 云服务]控制台。
 
 1. 在&#x200B;**[!UICONTROL Assets智能标记]**&#x200B;下，打开上面创建的配置。 在服务设置页面上，单击&#x200B;**[!UICONTROL 编辑]**。
 
@@ -198,4 +211,4 @@ OAuth配置需要以下先决条件：
 >
 >* [概述以及如何培训智能标记](enhanced-smart-tags.md)
 >* [配置智能标记](config-smart-tagging.md)
->* [有关智能标记的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=zh-Hans)
+>* [有关智能标记的视频教程](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html)

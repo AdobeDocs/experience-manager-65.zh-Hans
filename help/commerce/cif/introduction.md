@@ -6,13 +6,21 @@ exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '891'
 ht-degree: 88%
-
 ---
-
 
 # Content and Commerce {#content-commerce}
 
@@ -62,7 +70,7 @@ CIF 加载项将产品上下文引入 Experience Manager 中，并提供产品�
 
 ### 价值实现时间 (TTV)
 
-通过[AEM核心组件](https://www.aemcomponents.dev/)、[AEM Venia引用店面](https://github.com/adobe/aem-cif-guides-venia)、[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=zh-Hans)以及PWA（Headless内容和Commerce）的集成模式加快项目开发。
+通过[AEM核心组件](https://www.aemcomponents.dev/)、[AEM Venia引用店面](https://github.com/adobe/aem-cif-guides-venia)、[AEM项目原型](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html)以及PWA（Headless内容和Commerce）的集成模式加快项目开发。
 
 CIF 旨在通过始终保持最新的加载项持续创新，使客户能够访问新的和改进的功能。
 

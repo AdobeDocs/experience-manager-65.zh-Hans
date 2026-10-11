@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6132'
+source-wordcount: '6227'
 ht-degree: 1%
-
 ---
-
 # 创建交互式通信{#create-an-interactive-communication}
 
 ## 概述 {#overview}
@@ -62,11 +76,11 @@ ht-degree: 1%
    * **[!UICONTROL 交互式通信Web模板]**：浏览并选择Web模板。
    * **[!UICONTROL 主题]**&#x200B;和&#x200B;**[!UICONTROL 选择主题]**：浏览并选择主题以设置交互式通信的Web渠道的样式。 有关详细信息，请参阅AEM Forms中的[主题](/help/forms/using/themes.md)。
 
-   * **[!UICONTROL 为Web渠道使用“打印为母版”]**：选择此选项以创建与打印渠道同步的Web渠道。将打印渠道用作Web渠道的主渠道可以确保Web渠道的内容和数据绑定从打印渠道派生，并且当您选择“同步”时，在打印渠道中所做的更改将反映在Web渠道中。但是，根据需要，作者可以中断Web渠道中特定组件的继承。有关详细信息，请参阅[将Web渠道与打印渠道同步](../../forms/using/create-interactive-communication.md#synchronize)。
-如果选择&#x200B;**[!UICONTROL 为Web渠道使用“打印为母版”]**&#x200B;选项，则可以选择以下任意模式来生成Web渠道：
+   * **[!UICONTROL 为Web渠道使用“打印为母版”]**：选择此选项以创建与打印渠道同步的Web渠道。 将打印渠道用作Web渠道的主渠道可以确保Web渠道的内容和数据绑定从打印渠道派生，并且当您选择“同步”时，在打印渠道中所做的更改将反映在Web渠道中。 但是，根据需要，作者可以中断Web渠道中特定组件的继承。 有关详细信息，请参阅[将Web渠道与打印渠道同步](../../forms/using/create-interactive-communication.md#synchronize)。
+     如果选择**[!UICONTROL 为Web渠道使用“打印为母版”]**&#x200B;选项，则可以选择以下任意模式来生成Web渠道：
 
-      * **[!UICONTROL 自动布局]**：选择此模式可从Print channel自动生成Web渠道的占位符、内容和数据绑定。
-      * **[!UICONTROL 手动组织]**：选择此模式以使用&#x200B;**[!UICONTROL 数据源]**&#x200B;选项卡中可用的主内容手动选择打印渠道元素并将其添加到Web渠道。 有关详细信息，请参阅[选择“打印渠道元素”以创建Web渠道内容](#selectprintchannelelements)。
+     * **[!UICONTROL 自动布局]**：选择此模式可从Print channel自动生成Web渠道的占位符、内容和数据绑定。
+     * **[!UICONTROL 手动组织]**：选择此模式以使用&#x200B;**[!UICONTROL 数据源]**&#x200B;选项卡中可用的主内容手动选择打印渠道元素并将其添加到Web渠道。 有关详细信息，请参阅[选择“打印渠道元素”以创建Web渠道内容](#selectprintchannelelements)。
 
    有关打印渠道和Web渠道的详细信息，请参阅[打印渠道和Web渠道](/help/forms/using/web-channel-print-channel.md)。
 
@@ -170,10 +184,10 @@ ht-degree: 1%
    * [添加和配置图表](/help/forms/using/chart-component-interactive-communications.md)
    * [将Web渠道与打印渠道同步](../../forms/using/create-interactive-communication.md#synchronize)
 
-      * 自动同步
-      * 取消继承
-      * 重新启用继承
-      * 同步
+     * 自动同步
+     * 取消继承
+     * 重新启用继承
+     * 同步
 
    * [附件和库访问权限](../../forms/using/create-interactive-communication.md#attachmentslibrary)
    * [XDP/布局字段属性](../../forms/using/create-interactive-communication.md#xdplayoutfieldproperties)
@@ -242,8 +256,8 @@ ht-degree: 1%
    * **[!UICONTROL 允许的最大附件数]**：指定交互式通信允许的最大附件数。
    * **[!UICONTROL 要附加的文件]**：选择&#x200B;**[!UICONTROL 添加]**&#x200B;并浏览以选择要附加的文件并指定以下内容：
 
-      * **[!UICONTROL 默认情况下将此文件附加到文档]**：如果只有附件不是强制性的，则可以更改此选项。
-      * **[!UICONTROL 必需：]**&#x200B;代理将无法删除代理UI中的附件。
+     * **[!UICONTROL 默认情况下将此文件附加到文档]**：如果只有附件不是强制性的，则可以更改此选项。
+     * **[!UICONTROL 必需：]**&#x200B;代理将无法删除代理UI中的附件。
 
    ![附加文件](assets/attachfiles.png)
 
@@ -263,9 +277,9 @@ ht-degree: 1%
    * **[!UICONTROL 标题]**：输入代理在代理UI和文档容器树中可见的标题。
    * **[!UICONTROL 绑定类型]**：为该字段选择以下绑定类型之一。
 
-      * 无：代理将填充属性的值。
-      * 文本片段：如果选定此选项，您可以浏览并选择其内容在字段中呈现的文本文档片段。 或者，将文本文档片段拖放到字段名称以设置它们之间的绑定。 文本文档片段不得包含任何变量。
-      * 数据模型对象：选择其值已填充到字段中的表单数据模型属性。 或者，选择&#x200B;**数据源**&#x200B;选项卡，并将该属性拖放到字段中。
+     * 无：代理将填充属性的值。
+     * 文本片段：如果选定此选项，您可以浏览并选择其内容在字段中呈现的文本文档片段。 或者，将文本文档片段拖放到字段名称以设置它们之间的绑定。 文本文档片段不得包含任何变量。
+     * 数据模型对象：选择其值已填充到字段中的表单数据模型属性。 或者，选择&#x200B;**数据源**&#x200B;选项卡，并将该属性拖放到字段中。
 
    * **[!UICONTROL 默认值]**：默认值可确保指定数据模型对象或文本片段未提供任何值时，该字段不为空。 如果数据绑定类型为none，则默认值会预填充到字段中。
    * **[!UICONTROL 显示模式]**：您还可以定义字段的显示格式。 从&#x200B;**类型**&#x200B;下拉列表中选择任何预定义选项，以将显示格式应用于字段。 选择&#x200B;**自定义**&#x200B;以定义列表中不可用的显示模式。 有关详细信息，请参阅[数据显示模式](../../forms/using/create-interactive-communication.md#datadisplaypatterns)
@@ -300,7 +314,7 @@ ht-degree: 1%
 | 社会安全号码 | 1234567 | 文本{999-99-9999} | 1-23-4567 | 默认值字段中的位数小于模式字段中的位数。 该模式适用于7个可用数字。 |
 | 社会安全号码 | 1234567890 | 文本{999-99-9999} | 1234567890 | 默认值字段中的位数大于模式字段中的位数。 因此，显示值没有变化。 |
 
-如果没有为变量或表单数据模型元素指定显示模式，则默认使用[全局文档片段配置](https://helpx.adobe.com/cn//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html)。
+如果没有为变量或表单数据模型元素指定显示模式，则默认使用[全局文档片段配置](https://helpx.adobe.com//experience-manager/6-5/forms/using/interactive-communication-configuration-properties.html)。
 
 如果不将显示模式应用于number数据类型的变量，打印预览将根据全局文档片段配置显示模式。 如果将更改应用于默认全局文档片段配置，则代理UI仍会根据为区域设置定义的默认分隔符显示模式。
 
@@ -346,8 +360,8 @@ ht-degree: 1%
       * **[!UICONTROL 标题]**：输入将在交互式通信编辑器中显示的标题。
       * **[!UICONTROL 绑定类型]**：为该字段选择以下绑定类型之一。
 
-         * **[!UICONTROL 无]**
-         * **[!UICONTROL 数据模型对象]**：表单数据模型属性的值已填充到字段中。 或者，选择&#x200B;**数据源**&#x200B;选项卡，并将该属性拖放到字段中。
+        * **[!UICONTROL 无]**
+        * **[!UICONTROL 数据模型对象]**：表单数据模型属性的值已填充到字段中。 或者，选择&#x200B;**数据源**&#x200B;选项卡，并将该属性拖放到字段中。
 
       * **[!UICONTROL 数据模型对象]**：表单数据模型属性，其值已填充到字段中。
       * **[!UICONTROL 默认值]**：默认值可确保指定数据模型对象未提供任何值时，该字段不为空。 默认值会预填充到字段中。
@@ -587,7 +601,7 @@ ht-degree: 1%
 * **父项：**&#x200B;选择组件的父项。
 * **查看SOM表达式：**&#x200B;查看组件的[SOM表达式](../../forms/using/using-som-expressions-adaptive-forms.md)。
 
-* **面板中的组对象：**&#x200B;将面板中的组件分组，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板[&#128279;](#groupobjectspanel)中的组对象。
+* **面板中的组对象：**&#x200B;将面板中的组件分组，以便能够对这些组件同时执行操作。 有关详细信息，请参阅面板](#groupobjectspanel)中的[组对象。
 
 * **取消继承：** [取消目标区域中的组件继承](#cancelinheritance)以编辑它们。
 
@@ -618,7 +632,7 @@ PrintChannelRenderOptions renderOptions = new PrintChannelRenderOptions();
 PrintDocument printDocument = printChannel.render(renderOptions);
 ```
 
-要以任何其他格式生成输出，请指定输出格式类型。 有关支持的输出格式类型的列表，请参阅[PrintChannel API](https://helpx.adobe.com/cn/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html)。
+要以任何其他格式生成输出，请指定输出格式类型。 有关支持的输出格式类型的列表，请参阅[PrintChannel API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/PrintConfig.html)。
 
 例如，可以使用以下示例将PCL定义为交互式通信的输出格式：
 

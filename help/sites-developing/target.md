@@ -1,5 +1,5 @@
 ---
-title: 针对目标内容进行开发
+title: 开发定向内容
 description: 有关开发用于内容定位的组件的主题
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ exl-id: 92b62532-4f79-410d-903e-d2bca6d0fd1c
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1223'
-ht-degree: 3%
-
+source-wordcount: '1296'
+ht-degree: 4%
 ---
-
-# 针对目标内容进行开发{#developing-for-targeted-content}
+# 开发定向内容{#developing-for-targeted-content}
 
 本节介绍有关开发用于内容定位的组件的主题。
 
@@ -26,7 +35,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->在 AEM 创作实例中定位组件时，该组件会对 Adobe Target 进行一系列的服务器端调用，以便注册活动、设置选件和检索 Adobe Target 区段（如果已配置）。没有从 AEM Publish 到 Adobe Target 的服务器端调用。
+>在 AEM 创作实例中定位组件时，该组件会对 Adobe Target 进行一系列的服务器端调用，以便注册活动、设置产品建议和检索 Adobe Target 区段（如果已配置）。 没有从 AEM Publish 到 Adobe Target 的服务器端调用。
 
 ## 在您的页面上使用Adobe Target启用定位功能 {#enabling-targeting-with-adobe-target-on-your-pages}
 
@@ -198,13 +207,13 @@ JSP将添加所需的Analytics JavaScript对象和对客户端JavaScript库的�
 
 用于创建mbox的默认mbox.js文件位于/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js。 要使用客户mbox.js文件，请将该文件添加到Target云配置。 要添加文件，mbox.js文件必须在文件系统中可用。
 
-例如，如果要使用[Marketing CloudID服务](https://experienceleague.adobe.com/docs/id-service/using/home.html?lang=zh-Hans)，则需要下载mbox.js，使其包含基于租户的`imsOrgID`变量的正确值。 要与Marketing CloudID服务集成，需要此变量。 有关信息，请参阅[Adobe Analytics作为Adobe Target的报表Source](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html?lang=zh-Hans)和[在实施之前](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html?lang=zh-Hans)。
+例如，如果要使用[Marketing Cloud ID服务](https://experienceleague.adobe.com/docs/id-service/using/home.html)，您需要下载mbox.js，以便该服务包含基于您的租户的`imsOrgID`变量的正确值。 要与Marketing Cloud ID服务集成，需要此变量。 有关信息，请参阅[Adobe Analytics作为Adobe Target的报表Source](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/a4t.html)和[在实施之前](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)。
 
 >[!NOTE]
 >
 >如果在Target配置中定义了自定义mbox，则每个人都必须拥有对发布服务器上&#x200B;**/etc/cloudservices**&#x200B;的读取访问权限。 如果没有此访问权限，在发布网站上加载mbox.js文件会导致404错误。
 
-1. 转到CQ **工具**&#x200B;页面并选择&#x200B;**Cloud Service**。 ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. 转到CQ **工具**&#x200B;页面并选择&#x200B;**云服务**。 ([https://localhost:4502/libs/cq/core/content/tools/cloudservices.html](https://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
 1. 在树中选择Adobe Target，然后在配置列表中双击Target配置。
 1. 在配置页面上，单击编辑。
 1. 对于“自定义mbox.js”属性，单击“浏览”并选择该文件。
@@ -218,13 +227,13 @@ JSP将添加所需的Analytics JavaScript对象和对客户端JavaScript库的�
 
 ![chlimage_1-21](assets/chlimage_1-21.png)
 
-要从上下文菜单中移除Target命令，请将以下属性添加到组件的cq：editConfig节点：
+要从上下文菜单中移除Target命令，请将以下属性添加到组件的cq:editConfig节点：
 
-* 名称：cq：disableTargeting
+* 名称： cq:disableTargeting
 * 类型：布尔值
 * 值： True
 
-例如，要禁用“Geometrixx演示站点”页面标题组件的定位，请将属性添加到/apps/geometrixx/components/title/cq：editConfig节点。
+例如，要禁用Geometrixx演示站点页面的标题组件的定位，请将该属性添加到/apps/geometrixx/components/title/cq:editConfig节点。
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
@@ -234,13 +243,13 @@ JSP将添加所需的Analytics JavaScript对象和对客户端JavaScript库的�
 >
 >如果您未使用DTM，则需要将订单确认发送到Adobe Target。
 
-为了跟踪网站的性能，请将订单确认页面中的购买信息发送到Adobe Target。 (请参阅[创建orderConfirmPage Mbox](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en)和[订单确认Mbox — 添加自定义参数。](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779?profile.language=zh-Hans))当您的MBox名称为`orderConfirmPage`时，Adobe Target会将mbox数据识别为订单确认数据，并使用以下特定参数名称：
+为了跟踪网站的性能，请将订单确认页面中的购买信息发送到Adobe Target。 （请参阅[创建orderConfirmPage Mbox](https://developer.adobe.com/target/implement/client-side/atjs/how-to-deployatjs/implement-target-without-a-tag-manager/?lang=en)和[订单确认Mbox — 添加自定义参数。](https://experienceleaguecommunities.adobe.com/t5/adobe-target-questions/order-confirmation-mbox-add-custom-parameters/m-p/275779)） 当MBox名称为`orderConfirmPage`时，Adobe Target将mbox数据识别为订单确认数据，并使用以下特定参数名称：
 
 * productPurchasedId：用于标识所购买产品的ID列表。
 * orderId：订单的ID。
 * orderTotal：采购的总金额。
 
-渲染HTML页面上创建mbox的代码类似于以下示例：
+在渲染的HTML页面上创建mbox的代码类似于以下示例：
 
 ```xml
 <script type="text/javascript">
@@ -253,7 +262,7 @@ JSP将添加所需的Analytics JavaScript对象和对客户端JavaScript库的�
 
 每个订单的每个参数的值均不同。 因此，您需要一个根据购买的属性生成代码的组件。 通过CQ [电子商务集成框架](/help/commerce/cif-classic/administering/ecommerce.md)，可与产品目录集成并实施购物车和结帐页面。
 
-当Geometrixx Outdoors购买产品时，访客示例会显示以下确认页面：
+Geometrixx Outdoors示例在访客购买产品时显示以下确认页面：
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 

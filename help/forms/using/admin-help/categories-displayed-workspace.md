@@ -1,5 +1,5 @@
 ---
-title: 管理Workspace中显示的类别
+title: 管理工作区中显示的类别
 description: 在Workspace中，用户可以启动的进程在左侧导航窗格中以类别显示。 了解如何管理Workspace中显示的这些类别。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,28 @@ exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '494'
-ht-degree: 0%
-
+source-wordcount: '496'
+ht-degree: 2%
 ---
-
-# 管理Workspace中显示的类别 {#managing-the-categories-displayed-in-workspace}
+# 管理工作区中显示的类别 {#managing-the-categories-displayed-in-workspace}
 
 >[!NOTE]
 > 
@@ -32,7 +46,7 @@ ht-degree: 0%
 
 在Workspace中，类别中的进程通常在“启动进程”页面上显示为信息卡。 通常，在用户需要滚动查看剩余卡片之前，某个类别的屏幕上可以显示六张卡片。 由于滚动会增加查找流程的难度，因此请考虑将每个类别限制为六个流程，或者，根据您的分辨率，限制可在屏幕上显示的流程数量，而无需任何滚动。
 
-如果将MySQL用作AEM表单数据库，管理控制台将无法区分仅使用扩展字符时不同的两个类别名称。 例如，如果您创建名为abcde的类别和名为abcde的类别，则它们被视为相同。
+如果您将MySQL用作AEM表单数据库，管理控制台无法区分仅使用扩展字符时不同的两个类别名称。 例如，如果您创建名为abcde的类别和名为abcde的类别，则它们被视为相同。
 
 ## 添加类别 {#add-a-category}
 

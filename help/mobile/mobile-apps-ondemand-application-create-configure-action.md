@@ -9,13 +9,17 @@ exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
 solution: Experience Manager
 feature: Mobile
 role: User
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '380'
+source-wordcount: '430'
 ht-degree: 0%
-
 ---
-
 # 应用程序创建和配置操作{#application-create-and-configuration-actions}
 
 {{ue-over-mobile}}
@@ -53,7 +57,7 @@ ht-degree: 0%
 
 应用程序模板提供了一种简单的方式来使用开发人员创建的现有设计，这些设计用于在AEM中创建新的应用程序。
 
-什么是应用程序模板？可将其视为一组页面模板和组件，它们代表应用程序的基线或基础。
+什么是应用程序模板？ 可将其视为一组页面模板和组件，它们代表应用程序的基线或基础。
 在基于其他应用程序的模板创建应用程序时，您会获得一个应用程序，其起点代表创建该应用程序的应用程序。
 
 您必须拥有现有的移动设备应用程序模板（或安装的应用程序具有应用程序模板），才能使用此功能。

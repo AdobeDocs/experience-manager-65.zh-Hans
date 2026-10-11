@@ -9,13 +9,22 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: d4b1cd8bc04ea21378c8084f4fac8cd66d6c1d3c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2083'
 ht-degree: 7%
-
 ---
-
 
 # 配置搜索表单{#configuring-search-forms}
 
@@ -23,13 +32,13 @@ ht-degree: 7%
 
 [范围的谓词](#predicates-and-their-settings)现成可用。 您可以添加多个谓词，其中包括“属性”谓词，以搜索与您指定的单个属性匹配的资产。 或者，使用“选项”谓词来搜索与您为特定属性指定的一个或多个值匹配的资产。
 
-您可以[配置在各种控制台和资产浏览器（编辑页面时）中使用的搜索表单](#configuring-your-search-forms)。 可通过以下方式访问用于配置这些表单[&#128279;](#configuring-your-search-forms)的对话框：
+您可以[配置在各种控制台和资产浏览器（编辑页面时）中使用的搜索表单](#configuring-your-search-forms)。 可通过以下方式访问用于配置这些表单](#configuring-your-search-forms)的[对话框：
 
 * **工具**
 
-   * **常规**
+  * **常规**
 
-      * **搜索Forms**
+    * **搜索Forms**
 
 首次访问此控制台时，您可以看到所有配置都有一个挂锁符号。 这表示相应的配置是默认（现成）配置 — 无法删除。 自定义配置后，锁定将消失，除非您[删除自定义配置](#deleting-a-configuration-to-reinstate-the-default)。 在这种情况下，将恢复缺省值（和挂锁指示器）。
 
@@ -386,7 +395,7 @@ ht-degree: 7%
   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **选项节点路径**
-与&#x200B;**选项路径**&#x200B;几乎相同，只是该路径位于公共谓词字段中，其他路径专用于资源。
+与**选项路径**&#x200B;几乎相同，只是该路径位于公共谓词字段中，其他路径专用于资源。
 
 * **单选**
 如果选中，这些选项将呈现为仅允许单个选择的复选框。 如果错误地选中此复选框，则可取消选中此复选框。
@@ -435,7 +444,7 @@ ht-degree: 7%
 
    例如，**日期范围谓词**&#x200B;的设置：
 
-   日期范围谓词![&#128279;](assets/chlimage_1-376.png)的属性
+   日期范围谓词](assets/chlimage_1-376.png)的![属性
 
 1. 根据需要进行更改，并通过&#x200B;**完成**&#x200B;确认。
 

@@ -6,7 +6,21 @@ role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f59890ff-de81-47d5-9ef8-7ab2dd10c6c3
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: f901afa4-5613-4581-add5-219fa5f03fb5
+    internal-label: Publishing
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1584'
 ht-degree: 2%
@@ -23,7 +37,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->[!DNL Adobe InDesign]作为两个单独的产品提供。 [Adobe InDesign](https://www.adobe.com/cn/products/indesign.html)桌面应用程序，用于为打印和数字分发设计页面布局。 [Adobe InDesign Server](https://www.adobe.com/cn/products/indesignserver.html)使您能够根据使用[!DNL InDesign]创建的内容，以编程方式创建自动文档。 它作为一项服务运行，为其ExtendScript引擎提供一个接口。 脚本以[!DNL ExtendScript]编写，它类似于[!DNL JavaScript]。
+>[!DNL Adobe InDesign]作为两个单独的产品提供。 [Adobe InDesign](https://www.adobe.com/products/indesign.html)桌面应用程序，用于为打印和数字分发设计页面布局。 [Adobe InDesign Server](https://www.adobe.com/products/indesignserver.html)使您能够根据使用[!DNL InDesign]创建的内容，以编程方式创建自动文档。 它作为一项服务运行，为其ExtendScript引擎提供一个接口。 脚本以[!DNL ExtendScript]编写，它类似于[!DNL JavaScript]。
 
 ## 提取的工作原理 {#how-the-extraction-works}
 
@@ -67,7 +81,7 @@ ht-degree: 2%
 1. [安装InDesign Server](#installing-the-indesign-server)。
 1. 如有必要，[配置Experience Manager Assets工作流](#configuring-the-aem-assets-workflow)。
 仅当默认值不适用于您的实例时，才需要执行此操作。
-1. 为InDesign Server[&#128279;](#configuring-the-proxy-worker-for-indesign-server)配置代理工作程序。
+1. 为InDesign Server](#configuring-the-proxy-worker-for-indesign-server)配置[代理工作程序。
 
 ### 安装[!DNL InDesign Server] {#installing-the-indesign-server}
 
@@ -198,7 +212,7 @@ For information about [!DNL Adobe InDesign] scripts, see [InDesign developer doc
 
 1. 保存这些更改。
 1. 要为Adobe CS6及更高版本启用多会话支持，请在`com.day.cq.dam.ids.impl.IDSJobProcessor.name`配置下选中`enable.multisession.name`复选框。
-1. 通过将SOAP端点添加到IDS Worker配置[&#128279;](#configuring-the-proxy-worker-for-indesign-server)中，创建`x` IDS Worker的池。
+1. 通过将SOAP端点添加到IDS Worker配置](#configuring-the-proxy-worker-for-indesign-server)中，创建`x` IDS Worker的[池。
 
    如果有多台计算机运行[!DNL InDesign Server]，请为每台计算机添加SOAP端点（每台计算机的处理器数–1）。
 
@@ -239,4 +253,4 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 >[!MORELIKETHIS]
 >
->* [关于Adobe InDesign Server](https://www.adobe.com/cn/products/indesignserver/faq.html)
+>* [关于Adobe InDesign Server](https://www.adobe.com/products/indesignserver/faq.html)

@@ -1,19 +1,26 @@
 ---
 title: WebDAV 访问权限
-
 description: 了解如何使用WebDAV访问Adobe Experience Manager。
-
-
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1123'
 ht-degree: 2%
@@ -135,7 +142,7 @@ http://localhost:4502/crx/repository/staging
 
 #### Windows 8配置 {#windows-configuration}
 
-对于Windows 8，请按照Windows 7和更高版本[&#128279;](/help/sites-administering/webdav-access.md#windows-and-greater-configuration)的说明更改注册表项。 但是，在执行此任务之前，必须启用Desktop Experience才能看到注册表项。
+对于Windows 8，请按照Windows 7和更高版本](/help/sites-administering/webdav-access.md#windows-and-greater-configuration)的说明更改注册表项[。 但是，在执行此任务之前，必须启用Desktop Experience才能看到注册表项。
 
 若要启用桌面体验，请打开&#x200B;**服务器管理器**，然后打开&#x200B;**功能**，再打开&#x200B;**添加功能**，然后打开&#x200B;**桌面体验**。
 

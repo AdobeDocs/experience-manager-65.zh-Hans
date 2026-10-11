@@ -10,18 +10,31 @@ exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '4886'
+source-wordcount: '4887'
 ht-degree: 78%
-
 ---
-
 # 创建页面模板{#creating-page-templates}
 
 创建页面时，您必须选择一个模板，以用作创建新页面的基础。 模板可定义生成页面的结构、任何初始内容以及可使用的组件。
 
-使用模 **板编辑器**，创建和维护模板不再只是开发人员的任务。 高级用户(称为模板作者 **)也可能**。 开发人员仍需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，模板作者就可以灵活地创建和配置模板，而无需开发项目。**&#x200B;**
+使用模 **板编辑器**，创建和维护模板不再只是开发人员的任务。 高级用户(称为模板作者 **)也可能**。 开发人员仍需要设置环境、创建客户端库和创建要使用的组件，但是，在这些基础知识到位后，模板作者就可以灵活地创建和配置模板，而无需开发项目。****
 
 在&#x200B;**“模板”控制台**&#x200B;中，模板作者可以执行以下操作：
 
@@ -40,7 +53,7 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->模板 **&#x200B;**&#x200B;编辑器不支持直接在模板级别进行定位。 可以定位基于可编辑模板创建的页面，但不能定位模板本身。
+>模板 **** 编辑器不支持直接在模板级别进行定位。 可以定位基于可编辑模板创建的页面，但不能定位模板本身。
 
 >[!CAUTION]
 >
@@ -64,29 +77,29 @@ ht-degree: 78%
 
 * **管理员**:
 
-   * 创建新的模板文件夹需要 `admin` 权限。
+  * 创建新的模板文件夹需要 `admin` 权限。
 
-   * 此类任务通常可由开发人员完成。
+  * 此类任务通常可由开发人员完成。
 
 * **开发人员**:
 
-   * 专注于技术/内部细节。
-   * 需要具有开发环境方面的经验。
-   * 为模板作者提供必要信息。
+  * 专注于技术/内部细节。
+  * 需要具有开发环境方面的经验。
+  * 为模板作者提供必要信息。
 
 * **模板作者**：
 
-   * 特定的作者，`template-authors` 组中的一个成员。
+  * 特定的作者，`template-authors` 组中的一个成员。
 
-      * 可分配所需的权限和许可。
+    * 可分配所需的权限和许可。
 
-   * 可配置组件的使用及其他高级详细信息，因而需要掌握以下内容：
+  * 可配置组件的使用及其他高级详细信息，因而需要掌握以下内容：
 
-      * 一些技术知识。
+    * 一些技术知识。
 
-         * 例如，会在定义路径时使用模式。
+      * 例如，会在定义路径时使用模式。
 
-      * 由开发人员提供的技术信息。
+    * 由开发人员提供的技术信息。
 
 鉴于某些任务（例如创建文件夹）的特定性质，需要用到开发环境，这又需要具备一定的知识/经验。
 
@@ -98,18 +111,18 @@ AEM现在提供两种基本类型的模板：
 
 * [可编辑模板](/help/sites-authoring/templates.md#creatingandmanagingnewtemplates)
 
-   * 模板作者可以使用&#x200B;**模板**&#x200B;控制台和编辑器[创建](#creatinganewtemplate)和[编辑](#editingatemplate)。 **模板**&#x200B;控制台可在&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分中访问。
+  * 模板作者可以使用&#x200B;**模板**&#x200B;控制台和编辑器[创建](#creatinganewtemplate)和[编辑](#editingatemplate)。 **模板**&#x200B;控制台可在&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分中访问。
 
-   * 创建新页面后，页面和模板之间会保持动态连接。 这意味着对模板结构和/或锁定内容的更改将反映在使用该模板创建的任何页面上。 对已解锁（即初始）内容所做的更改将不会反映出来。
-   * 使用内容策略（可在模板编辑器中定义这些策略）来保留设计属性。 页面编辑器中的设计模式不再用于可编辑模板。
+  * 创建新页面后，页面和模板之间会保持动态连接。 这意味着对模板结构和/或锁定内容的更改将反映在使用该模板创建的任何页面上。 对已解锁（即初始）内容所做的更改将不会反映出来。
+  * 使用内容策略（可在模板编辑器中定义这些策略）来保留设计属性。 页面编辑器中的设计模式不再用于可编辑模板。
 
 * 静态模板
 
-   * 静态模板已适用于AEM的多个版本。
-   * 它们由您的开发人员[&#128279;](/help/sites-developing/page-templates-static.md)提供，因此作者无法创建或编辑它们。
-   * 将被复制以创建新页面，但之后不存在动态连接（尽管模板名称已注册以供参考）。
-   * 使用[设计模式](/help/sites-authoring/default-components-designmode.md)保留设计属性。
-   * 由于编辑静态模板是开发人员的专属任务，有关详细信息，请参阅开发人员文档[页面模板 — 静态](/help/sites-developing/page-templates-static.md)。
+  * 静态模板已适用于AEM的多个版本。
+  * 它们由您的开发人员](/help/sites-developing/page-templates-static.md)提供[，因此作者无法创建或编辑它们。
+  * 将被复制以创建新页面，但之后不存在动态连接（尽管模板名称已注册以供参考）。
+  * 使用[设计模式](/help/sites-authoring/default-components-designmode.md)保留设计属性。
+  * 由于编辑静态模板是开发人员的专属任务，有关详细信息，请参阅开发人员文档[页面模板 — 静态](/help/sites-developing/page-templates-static.md)。
 
 根据定义，模板控制台和模板编辑器仅允许创建和编辑可编辑模板。 因此，本文档仅侧重于可编辑的模板。
 
@@ -123,7 +136,7 @@ AEM现在提供两种基本类型的模板：
 
 * 使用&#x200B;**模板**&#x200B;控制台。 此控制台可从&#x200B;**工具**&#x200B;控制台的&#x200B;**常规**&#x200B;部分访问。
 
-   * 或直接访问：[https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
+  * 或直接访问：[https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * 如有必要，可以[创建模板文件夹](#creating-a-template-folder-admin)
 * [创建最初为空的模板](#creatinganewtemplateauthor)
@@ -131,10 +144,10 @@ AEM现在提供两种基本类型的模板：
 * 如有必要，[为模板定义其他属性](#definingtemplatepropertiesauthor)
 * [编辑该模板](#editingtemplates)，以定义以下各项：
 
-   * [结构](#editingatemplatestructureauthor) - 不能在使用该模板创建的页面上更改的预定义内容。
-   * [初始内容](#editing-a-template-initial-content-author) - 能够在使用该模板创建的页面上更改的预定义内容。
-   * [布局](#editingatemplatelayoutauthor) - 针对各种设备。
-   * [样式](/help/sites-authoring/style-system.md) - 定义要用于该模板及其组件的样式。
+  * [结构](#editingatemplatestructureauthor) - 不能在使用该模板创建的页面上更改的预定义内容。
+  * [初始内容](#editing-a-template-initial-content-author) - 能够在使用该模板创建的页面上更改的预定义内容。
+  * [布局](#editingatemplatelayoutauthor) - 针对各种设备。
+  * [样式](/help/sites-authoring/style-system.md) - 定义要用于该模板及其组件的样式。
 
 * [启用该模板](#enablingatemplateauthor)，以在创建页面时使用
 * [允许该模板](#allowing-a-template-author)用于您网站的所需页面或分支
@@ -146,7 +159,7 @@ AEM现在提供两种基本类型的模板：
 
 >[!CAUTION]
 >
->切勿在模板中输入任何需要[国际化](/help/sites-developing/i18n.md)的信息。 出于内部化的目的，建议使用核心组件[&#128279;](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)的本地化功能。
+>切勿在模板中输入任何需要[国际化](/help/sites-developing/i18n.md)的信息。 出于内部化的目的，建议使用核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)的[本地化功能。
 
 ### 创建模板文件夹 – 管理员 {#creating-a-template-folder-admin}
 
@@ -188,18 +201,18 @@ AEM现在提供两种基本类型的模板：
 
 * 图像
 
-   * 要用作[模板的缩略图](/help/sites-authoring/templates.md#template-thumbnail-image)以帮助进行选择的图像，例如“创建页面”向导中的图像。
+  * 要用作[模板的缩略图](/help/sites-authoring/templates.md#template-thumbnail-image)以帮助进行选择的图像，例如“创建页面”向导中的图像。
 
-      * 可上传
-      * 可根据模板内容生成
+    * 可上传
+    * 可根据模板内容生成
 
 * 标题
 
-   * 用于标识模板的标题，例如&#x200B;**创建页面**&#x200B;向导中的标题。
+  * 用于标识模板的标题，例如&#x200B;**创建页面**&#x200B;向导中的标题。
 
 * 描述
 
-   * 可选描述，用于提供更多有关模板及其用法的信息，例如&#x200B;**创建页面**&#x200B;向导中显示的描述。
+  * 可选描述，用于提供更多有关模板及其用法的信息，例如&#x200B;**创建页面**&#x200B;向导中显示的描述。
 
 要查看和/或编辑属性，请执行以下操作：
 
@@ -367,16 +380,16 @@ AEM现在提供两种基本类型的模板：
 
   可使用以下几种方法将组件添加到模板：
 
-   * 从侧面板中的&#x200B;**组件**&#x200B;浏览器添加。
-   * 通过使用模板中现有组件工具栏上的&#x200B;**插入组件**&#x200B;选项（**+**&#x200B;图标）或&#x200B;**将组件拖动到此处**&#x200B;框。
+  * 从侧面板中的&#x200B;**组件**&#x200B;浏览器添加。
+  * 通过使用模板中现有组件工具栏上的&#x200B;**插入组件**&#x200B;选项（**+**&#x200B;图标）或&#x200B;**将组件拖动到此处**&#x200B;框。
 
-   * 将资源（从侧面板中的&#x200B;**资源**&#x200B;浏览器）直接拖动到模板，以就地生成相应的组件。
+  * 将资源（从侧面板中的&#x200B;**资源**&#x200B;浏览器）直接拖动到模板，以就地生成相应的组件。
 
   添加后，每个组件会带有以下标记：
 
-   * 边框
-   * 显示组件类型的标记
-   * 组件解锁后显示的标记
+  * 边框
+  * 显示组件类型的标记
+  * 组件解锁后显示的标记
 
   >[!NOTE]
   >
@@ -422,8 +435,8 @@ AEM现在提供两种基本类型的模板：
 
   配置窗口分为两个部分。
 
-   * 在对话框左侧的&#x200B;**策略**&#x200B;下方，您能够创建新策略或选择现有策略。
-   * 在对话框右侧的&#x200B;**属性**&#x200B;下方，您可以设置特定于组件类型的属性。
+  * 在对话框左侧的&#x200B;**策略**&#x200B;下方，您能够创建新策略或选择现有策略。
+  * 在对话框右侧的&#x200B;**属性**&#x200B;下方，您可以设置特定于组件类型的属性。
 
   可用的属性取决于选定的组件。 例如，对于文本组件，属性定义了复制和粘贴选项、格式设置选项以及段落样式等选项。
 
@@ -457,8 +470,8 @@ AEM现在提供两种基本类型的模板：
 
   在&#x200B;**属性**&#x200B;标题下方，您可以定义组件的设置。 该标题包含两个选项卡：
 
-   * 主要
-   * 功能
+  * 主要
+  * 功能
 
   *主控*
 
@@ -472,7 +485,7 @@ AEM现在提供两种基本类型的模板：
 
   要删除配置，请单击位于配置右侧的&#x200B;**删除**&#x200B;按钮。
 
-  要删除配置，请单击&#x200B;**删除**&#x200B;按钮。
+  要删除配置，请单击**删除**按钮。
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -490,7 +503,7 @@ AEM现在提供两种基本类型的模板：
 
   >[!NOTE]
   >
-  >[只能为RTE通过其UI设置提供的选项定义用于实施富文本编辑器的组件的内容策略](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)。[&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [&#128279;](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[只能为RTE通过其UI设置提供的选项定义用于实施富文本编辑器的组件的内容策略](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638)。[](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **策略和属性（布局容器）**
 
@@ -512,19 +525,19 @@ AEM现在提供两种基本类型的模板：
 
   在&#x200B;**属性**&#x200B;标题下方，您可以选择可用于布局容器的组件，并定义其设置。 该标题包含三个选项卡：
 
-   * 允许的组件
-   * 默认组件
-   * 响应式设置
+  * 允许的组件
+  * 默认组件
+  * 响应式设置
 
   *允许的组件*
 
   在&#x200B;**允许的组件**&#x200B;选项卡上，您可以定义可用于布局容器的组件。
 
-   * 这些组件按其组件组分组，各组可以展开和折叠。
-   * 可以通过选中组名称选择整个组，通过取消选中全部取消选择。
-   * 减号表示至少选中了组中的一个而并非所有项目。
-   * 可按名称进行搜索来筛选组件。
-   * 无论是否应用了过滤器，组件组名称右侧列出的数字都表示这些组中选定组件的总数。
+  * 这些组件按其组件组分组，各组可以展开和折叠。
+  * 可以通过选中组名称选择整个组，通过取消选中全部取消选择。
+  * 减号表示至少选中了组中的一个而并非所有项目。
+  * 可按名称进行搜索来筛选组件。
+  * 无论是否应用了过滤器，组件组名称右侧列出的数字都表示这些组中选定组件的总数。
 
   ![chlimage_1-144](assets/chlimage_1-144.png)
 
@@ -548,13 +561,13 @@ AEM现在提供两种基本类型的模板：
 
   解锁组件后：
 
-   * 边框中会显示一个打开的挂锁指示符。
-   * 组件工具栏会相应地做出调整。
-   * **结构**&#x200B;模式将不再显示任何已输入的内容。
+  * 边框中会显示一个打开的挂锁指示符。
+  * 组件工具栏会相应地做出调整。
+  * **结构**&#x200B;模式将不再显示任何已输入的内容。
 
-      * 已输入的内容会被视为初始内容，因此仅在&#x200B;**初始内容**&#x200B;模式下可见。
+    * 已输入的内容会被视为初始内容，因此仅在&#x200B;**初始内容**&#x200B;模式下可见。
 
-   * 无法移动、剪切或删除已解锁组件的父组件。
+  * 无法移动、剪切或删除已解锁组件的父组件。
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -604,7 +617,7 @@ AEM现在提供两种基本类型的模板：
 >
 >初始内容用于准备组件和页面布局，这将作为创建内容的起点。 初始内容不能作为保持原样的实际内容。 因此，无法翻译初始内容。
 >
->如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html?lang=zh-Hans)。
+>如果需要在模板中包括可翻译文本（如在页眉或页脚中），则可以使用[核心组件的本地化功能](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html)。
 
 ### 编辑模板 – 布局 – 模板作者 {#editing-a-template-layout-template-author}
 
@@ -705,30 +718,30 @@ AEM现在提供两种基本类型的模板：
 
    * 更改结构：
 
-      * 此类更改会立即应用于生成页面。
-      * 还需要发布已更改的模板，之后访客才能看见所做的更改。
+     * 此类更改会立即应用于生成页面。
+     * 还需要发布已更改的模板，之后访客才能看见所做的更改。
 
    * 更改内容策略和设计配置：
 
-      * 此类更改会立即应用于生成页面。
-      * 需要发布所做的更改，之后访客才能看见这些更改。
+     * 此类更改会立即应用于生成页面。
+     * 需要发布所做的更改，之后访客才能看见这些更改。
 
    * 更改初始内容：
 
-      * 此类更改只会应用于对模板进行更改后创建的页面。
+     * 此类更改只会应用于对模板进行更改后创建的页面。
 
    * 更改布局，具体影响取决于修改的组件属于以下哪种情况：
 
-      * 仅属于结构 - 立即应用
-      * 包含初始内容 - 仅应用于在更改后创建的页面
+     * 仅属于结构 - 立即应用
+     * 包含初始内容 - 仅应用于在更改后创建的页面
 
    在执行以下操作时，请务必要特别小心：
 
    * 在已启用的模板上锁定或解锁组件。
    * 这可能会产生不良后果，因为现有页面可能已在使用该组件。 通常：
 
-      * 解锁组件（之前已锁定）会使该组件从现有页面上缺失。
-      * 锁定组件（之前可编辑）会隐藏相关内容，使其不在页面上显示。
+     * 解锁组件（之前已锁定）会使该组件从现有页面上缺失。
+     * 锁定组件（之前可编辑）会隐藏相关内容，使其不在页面上显示。
 
    >[!NOTE]
    >

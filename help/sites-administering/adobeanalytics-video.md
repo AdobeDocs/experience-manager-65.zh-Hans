@@ -10,7 +10,18 @@ exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 15fb75221470fe30d4a0c603e1bb0d0a45575eb5
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1817'
 ht-degree: 1%
@@ -137,7 +148,7 @@ XX后缀是定义里程碑的跟踪偏移。 例如，指定4、8、16、20和28
 
 1. 要将CQ变量映射到Adobe Analytics资产，请将Adobe Analytics资产从ContentFinder拖动到组件上的CQ变量旁边。
 
-   有关优化映射的信息，请参阅[在Adobe Analytics中测量视频](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)指南。
+   有关优化映射的信息，请参阅[在Adobe Analytics中测量视频](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)指南。
 
 1. [将框架](/help/sites-administering/adobeanalytics.md)添加到页面。
 1. 要在&#x200B;**预览模式**&#x200B;中测试设置，请播放视频以触发要触发的Adobe Analytics调用。
@@ -272,7 +283,7 @@ eventdata.events.milestoneXX
 
 1. 要将CQ变量映射到Adobe Analytics资产，请将Adobe Analytics资产从ContentFinder拖动到组件上的CQ变量旁边。
 
-   有关优化映射的信息，请参阅[在Adobe Analytics中测量视频](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)指南。
+   有关优化映射的信息，请参阅[在Adobe Analytics中测量视频](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)指南。
 
 1. [将框架](/help/sites-administering/adobeanalytics.md)添加到页面。
 1. 要在&#x200B;**预览模式**&#x200B;中测试设置，请播放视频以触发要触发的Adobe Analytics调用。
@@ -320,7 +331,7 @@ eventdata.events.milestoneXX
 
    ![里程碑1](assets/lmilestones1.png)
 
-   *调用中发送的&#x200B;**pev3**&#x200B;变量包含以下信息：*
+   *调用中发送的&#x200B;**pev3**变量包含以下信息：*
 
    * *名称* — 视频文件的名称(*film.avi*)
 
@@ -336,7 +347,7 @@ eventdata.events.milestoneXX
 
 ## 旧版秒数 {#legacy-seconds}
 
-使用&#x200B;**旧版秒**&#x200B;方法时，每隔N秒触发一次Adobe Analytics调用，其中N在“跟踪偏移”字段中指定。
+使用**旧版秒**方法时，每隔N秒触发一次Adobe Analytics调用，其中N在“跟踪偏移”字段中指定。
 
 1. 将跟踪偏移设置为任意秒数，
 
@@ -381,4 +392,4 @@ eventdata.events.milestoneXX
 
 本教程中使用的&#x200B;**引用：**
 
-[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=zh-Hans)
+[0] [https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)

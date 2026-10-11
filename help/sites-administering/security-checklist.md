@@ -10,13 +10,27 @@ exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin,Developer
-source-git-commit: f30decf0e32a520dcda04b89c5c1f5b67ab6e028
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3025'
-ht-degree: 98%
-
+source-wordcount: '3049'
+ht-degree: 99%
 ---
-
 # 安全清单 {#security-checklist}
 
 本节介绍部署后确保 AEM 安装的安全性所需采取的各项步骤。 建议按清单自上而下逐项执行。
@@ -45,7 +59,7 @@ ht-degree: 98%
 
 ### 安装安全热修复补丁 {#install-security-hotfixes}
 
-请确认已安装 [Adobe 提供的最新的安全热修复补丁](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=zh-Hans)。
+请确认已安装 [Adobe 提供的最新的安全热修复补丁](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html)。
 
 ### 更改 AEM 与 OSGi 控制台管理员帐户的默认密码 {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
@@ -86,8 +100,8 @@ Adobe 建议在安装完成后（适用于所有实例）更改具有特权的 [
 
 请更改用于访问网页控制台的密码。 通过 [OSGi 配置](/help/sites-deploying/configuring-osgi.md)来更新 **Apache Felix OSGi 管理控制台**&#x200B;的以下属性：
 
-* **用户名**&#x200B;和&#x200B;**密码**，用于访问Apache Felix Web管理控制台本身的凭据。
-必须在初始安装*后*&#x200B;更改密码以确保实例的安全性。
+* **用户名**&#x200B;和&#x200B;**密码**：用于访问 Apache Felix Web 管理控制台的凭据。
+为确保实例安全，必须在初始安装*之后*&#x200B;更改该密码。
 
 >[!NOTE]
 >
@@ -95,8 +109,8 @@ Adobe 建议在安装完成后（适用于所有实例）更改具有特权的 [
 
 **更改 OSGi 网页控制台管理员密码的步骤**：
 
-1. 使用&#x200B;**工具**、**操作**&#x200B;菜单，打开&#x200B;**Web控制台**&#x200B;并导航到&#x200B;**配置**&#x200B;部分。
-例如，在`<server>:<port>/system/console/configMgr`。
+1. 在&#x200B;**工具**、**操作**&#x200B;菜单中，打开&#x200B;**网页控制台**，进入&#x200B;**配置**部分。
+例如：`<server>:<port>/system/console/configMgr`。
 1. 找到并打开 **Apache Felix OSGi 管理控制台**&#x200B;的条目。
 1. 更改&#x200B;**用户名**&#x200B;和&#x200B;**密码**。
 
@@ -110,11 +124,11 @@ Adobe 建议定义自定义错误处理页，特别是针对 404 与 500 等 HTT
 
 >[!NOTE]
 >
->请参阅[如何创建自定义脚本或错误处理程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=zh-Hans)，以了解更多详细信息。
+>请参阅[如何创建自定义脚本或错误处理程序](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html)，以了解更多详细信息。
 
 ### 完成 Dispatcher 安全清单 {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher 是您基础架构中的关键组件。 Adobe 建议完成 [Dispatcher 安全清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=zh-Hans)。
+AEM Dispatcher 是您基础架构中的关键组件。 Adobe 建议完成 [Dispatcher 安全清单](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html)。
 
 >[!CAUTION]
 >
@@ -225,27 +239,27 @@ AEM 6 引入了全新的操作仪表板，以帮助运维人员排障并监控�
 
 * [Adobe Granite HTML 库管理器](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager)：
 
-   * 启用&#x200B;**缩小**（移除 CRLF 和空白字符）。
-   * 启用 **Gzip**（允许文件压缩并通过单个请求访问）。
-   * 禁用&#x200B;**调试**
-   * 禁用&#x200B;**计时**
+  * 启用&#x200B;**缩小**（移除 CRLF 和空白字符）。
+  * 启用 **Gzip**（允许文件压缩并通过单个请求访问）。
+  * 禁用&#x200B;**调试**
+  * 禁用&#x200B;**计时**
 
 * [Day CQ WCM 调试筛选条件](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter)：
 
-   * 取消选中&#x200B;**启用**
+  * 取消选中&#x200B;**启用**
 
 * [Day CQ WCM 筛选条件](/help/sites-deploying/osgi-configuration-settings.md)：
 
-   * 在发布实例上，将 **WCM 模式**&#x200B;设置为“已禁用”
+  * 在发布实例上，将 **WCM 模式**&#x200B;设置为“已禁用”
 
 * [Apache Sling JavaScript 处理程序](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler)：
 
-   * 禁用&#x200B;**生成调试信息**
+  * 禁用&#x200B;**生成调试信息**
 
 * [Apache Sling JSP 脚本处理程序](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler)：
 
-   * 禁用&#x200B;**生成调试信息**
-   * 禁用&#x200B;**映射内容**
+  * 禁用&#x200B;**生成调试信息**
+  * 禁用&#x200B;**映射内容**
 
 请参阅 [OSGi 配置设置](/help/sites-deploying/osgi-configuration-settings.md)。
 
@@ -266,9 +280,9 @@ AEM 6 引入了全新的操作仪表板，以帮助运维人员排障并监控�
 
   例如，`.../en.html` 可被请求为：
 
-   * `.../en.ExtensionDosAttack`
-   * `.../en.SelectorDosAttack.html`
-   * `.../en.html/SuffixDosAttack`
+  * `.../en.ExtensionDosAttack`
+  * `.../en.SelectorDosAttack.html`
+  * `.../en.html/SuffixDosAttack`
 
   所有有效变体（例如返回 `200` 响应并配置为可缓存）都会被 Dispatcher 缓存，最终可能导致文件系统被填满，从而无法处理进一步请求。
 
@@ -377,7 +391,7 @@ Sling 采用&#x200B;*以内容为中心*&#x200B;的框架。 每个 HTTP 请求�
 
 尽管不推荐，但如需与现有应用程序保持向后兼容，可禁用该功能以恢复旧的实施。 如需禁用，请执行以下操作：
 
-1. 进入网页控制台，在 **Apache Jackrabbit Oak SecurityProvider** 中的 **requiredServicePids** 属性里移除 **&#x200B; org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** 条目。
+1. 进入网页控制台，在 **Apache Jackrabbit Oak SecurityProvider** 中的 **requiredServicePids** 属性里移除** org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** 条目。
 
    您也可在 OSGi 配置中查找 **org.apache.jackrabbit.oak.security.internal.SecurityProviderRegistration** PID 来定位 Oak 安全提供商。
 

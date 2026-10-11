@@ -9,13 +9,20 @@ exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1306'
 ht-degree: 0%
-
 ---
-
 # 使用审阅和审阅摘要（显示） {#using-reviews-and-reviews-summary-display}
 
 `Reviews`组件是[注释](comments.md)和[评级](rating.md)的组合组件，可供使用。

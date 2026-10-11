@@ -9,13 +9,29 @@ exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: c1f5f41ce7127c7f3e7193295d55c91b151d2146
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3750'
 ht-degree: 100%
-
 ---
-
 # 清单 - 进一步参考{#the-checklist-further-reference}
 
 本页面提供进一步的详细说明，用于阐述和/或补充[《管理项目 - 最佳做法清单》](/help/managing/best-practices.md)中所涵盖的文档和原则。
@@ -28,12 +44,12 @@ ht-degree: 100%
 
 ### AEM 内的功能 {#features-within-aem}
 
-在实施 AEM（尤其是首次实施）时，请查看 [AEM 的功能和工作流](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)，以确保明确您所需要或希望使用的功能领域。
+在实施 AEM（尤其是首次实施）时，请查看 [AEM 的功能和工作流](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)，以确保明确您所需要或希望使用的功能领域。
 
 请考虑您正在使用的 AEM 功能，以及它们对设计的影响。例如：
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
-* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=zh-Hans)
+* [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [标记](/help/sites-administering/tags.md)
 * [多站点管理和翻译](/help/sites-administering/msm-and-translation.md)

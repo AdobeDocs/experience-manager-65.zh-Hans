@@ -5,18 +5,31 @@ exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1701'
-ht-degree: 65%
-
+source-wordcount: '1705'
+ht-degree: 66%
 ---
-
 # 发布页面 {#publishing-pages}
 
 在创作环境中创建并审阅内容后，[将其发布到公共网站](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)（您的发布环境）。
 
-这称为“发布页面”。当您要从发布环境中删除页面时，此过程称为“取消发布”。在发布和取消发布时，页面会保留在创作环境中以供进一步更改，直到将其删除为止。
+这称为“发布页面”。 当您要从发布环境中删除页面时，此过程称为“取消发布”。 在发布和取消发布时，页面会保留在创作环境中以供进一步更改，直到将其删除为止。
 
 您还可以立即发布/取消发布页面，或者在预定义的未来日期/时间发布/取消发布页面。
 
@@ -27,7 +40,7 @@ ht-degree: 65%
 >* **发布/取消发布**
 >  这些是在发布环境中公开提供（或不公开提供）您的内容的主要操作术语。
 >
->* **激活／取消激活**
+>* **激活/取消激活**
 >  这两个术语与发布/取消发布同义。
 >
 >* **复制**
@@ -61,13 +74,13 @@ ht-degree: 65%
    * 如果不包含要发布的引用，则将直接发布页面。
    * 如果页面包含需要发布的引用，则将在&#x200B;**发布**&#x200B;向导中列出该内容，从该向导中可以：
 
-      * 指定要与页面一起发布的资产或标记，然后使用&#x200B;**发布**&#x200B;完成该过程。
+     * 指定要与页面一起发布的资产或标记，然后使用&#x200B;**发布**&#x200B;完成该过程。
 
-      * 使用&#x200B;**取消**&#x200B;中止操作。
+     * 使用&#x200B;**取消**&#x200B;中止操作。
 
    ![chlimage_1](assets/chlimage_1.png)
 
-1. 选择&#x200B;**发布**&#x200B;会将页面复制到发布环境。在页面编辑器中，会显示一个确认发布操作的信息横幅。
+1. 选择&#x200B;**发布**&#x200B;会将页面复制到发布环境。 在页面编辑器中，会显示一个确认发布操作的信息横幅。
 
    ![screen_shot_2018-03-21at152840](assets/screen_shot_2018-03-21at152840.png)
 
@@ -81,7 +94,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->无法发布编辑器中按[别名](/help/sites-authoring/editing-page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
+>无法发布编辑器中按[别名](/help/sites-authoring/editing-page-properties.md#advanced)处理的页面。 编辑器中的发布选项仅适用于通过其实际路径访问的页面。
 
 ### 从控制台中发布 {#publishing-from-the-console}
 
@@ -92,7 +105,7 @@ Sites 控制台中有两个用于发布的选项：
 
 #### 快速发布 {#quick-publish}
 
-**快速发布**&#x200B;适用于一些简单的情况，可立即发布选定的页面，而无需进行任何进一步的交互。正因为这一点，任何未发布的引用也将被自动发布。
+**快速发布**&#x200B;适用于一些简单的情况，可立即发布选定的页面，而无需进行任何进一步的交互。 正因为这一点，任何未发布的引用也将被自动发布。
 
 要使用“快速发布”发布页面，请执行以下操作：
 
@@ -120,12 +133,12 @@ Sites 控制台中有两个用于发布的选项：
 
    ![pp-02-1](assets/pp-02-1.png)
 
-1. 此时会启动&#x200B;**管理发布**&#x200B;向导。第一步，**选项**，让你：
+1. 此时会启动&#x200B;**管理发布**&#x200B;向导。 第一步，**选项**，让你：
 
    * 选择发布或取消发布选定的页面。
    * 选择立即还是在以后的日期执行该操作。
 
-   稍后发布会启动一个在指定时间发布选定的一个或多个页面的工作流程。相反，稍后取消发布则会启动一个在指定时间取消发布选定的一个或多个页面的工作流程。
+   稍后发布会启动一个在指定时间发布选定的一个或多个页面的工作流程。 相反，稍后取消发布则会启动一个在指定时间取消发布选定的一个或多个页面的工作流程。
 
    如果您要稍后撤消发布/取消发布页面，请转到[“工作流程”控制台](/help/sites-administering/workflows.md)以终止相应的工作流程。
 
@@ -157,7 +170,7 @@ Sites 控制台中有两个用于发布的选项：
    * 仅包括已修改的页面.
    * 仅包括已发布的页面.
 
-   单击&#x200B;**添加**&#x200B;可根据选择的选项将子页面添加到要发布或取消发布的页面列表中。单击&#x200B;**取消**&#x200B;可取消所做的选择并返回到向导。
+   单击&#x200B;**添加**&#x200B;可根据选择的选项将子页面添加到要发布或取消发布的页面列表中。 单击&#x200B;**取消**&#x200B;可取消所做的选择并返回到向导。
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
@@ -183,7 +196,7 @@ Sites 控制台中有两个用于发布的选项：
 
    >[!NOTE]
    >
-   >根据用户可能拥有也可能没有的权限，显示&#x200B;**工作流**&#x200B;步骤。
+   >根据用户可能拥有或可能没有的权限显示&#x200B;**工作流程**&#x200B;步骤。
    >
    >有关详细信息，请参阅[权限不足](/help/sites-authoring/publishing-pages.md#insufficient-privileges)、[管理工作流的访问权限](/help/sites-administering/workflows-managing.md)和[将工作流应用到页面](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd)。
 
@@ -216,14 +229,14 @@ Sites 控制台中有两个用于发布的选项：
 
 >[!NOTE]
 >
->无法取消发布编辑器中按[别名](/help/sites-authoring/editing-page-properties.md#advanced)处理的页面。编辑器中的发布选项仅适用于通过其实际路径访问的页面。
+>无法取消发布编辑器中按[别名](/help/sites-authoring/editing-page-properties.md#advanced)处理的页面。 编辑器中的发布选项仅适用于通过其实际路径访问的页面。
 
 ### 从控制台中取消发布 {#unpublishing-from-the-console}
 
 正如[使用“管理发布”选项发布页面](/help/sites-authoring/publishing-pages.md#manage-publication)一样，也可以使用它来取消发布页面。
 
 1. 在站点控制台中选择一个或多个页面，然后单击&#x200B;**管理发布**&#x200B;按钮。
-1. 此时会启动&#x200B;**管理发布**&#x200B;向导。在第一个步骤&#x200B;**选项**&#x200B;中，选择&#x200B;**取消发布**，而不是默认选项&#x200B;**发布**。
+1. 此时会启动&#x200B;**管理发布**&#x200B;向导。 在第一个步骤&#x200B;**选项**&#x200B;中，选择&#x200B;**取消发布**，而不是默认选项&#x200B;**发布**。
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
@@ -240,7 +253,7 @@ Sites 控制台中有两个用于发布的选项：
 您可以使用 Sites 控制台上的[管理发布](/help/sites-authoring/publishing-pages.md#manage-publication)选项来完成此操作。
 
 1. 在 Sites 控制台中，选择您希望发布或取消发布的树的根页面，然后选择&#x200B;**管理发布**。
-1. 此时会启动&#x200B;**管理发布**&#x200B;向导。选择发布或取消发布以及应在何时开始，然后选择&#x200B;**下一步**&#x200B;以继续。
+1. 此时会启动&#x200B;**管理发布**&#x200B;向导。 选择发布或取消发布以及应在何时开始，然后选择&#x200B;**下一步**&#x200B;以继续。
 1. 在&#x200B;**范围**&#x200B;步骤中，选择根页面，然后选择&#x200B;**包括子项**。
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
@@ -266,7 +279,7 @@ Sites 控制台中有两个用于发布的选项：
 
 您可以确定页面的发布状态：
 
-* 在[&#x200B; Sites 控制台上的资源概述信息](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中
+* 在[ Sites 控制台上的资源概述信息](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中
 
   ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 

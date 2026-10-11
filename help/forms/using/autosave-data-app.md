@@ -10,13 +10,27 @@ exl-id: 1603eef1-d7c8-47d3-8cfa-55ec3eaadd64
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 4d0fdb4b3128272d50252b52e5eda1b78cd7cae9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 3%
-
 ---
-
 # 在 AEM Forms 应用程序中使用自动保存{#using-autosave-in-aem-forms-app}
 
 >[!NOTE]
@@ -40,10 +54,10 @@ ht-degree: 3%
 执行以下步骤以使用AEM Forms应用程序中的自动保存功能：
 
 1. 登录到应用程序，然后导航到&#x200B;**设置>常规**。
-1. 在“常规”屏幕中，使用&#x200B;**自动保存频率**&#x200B;选项选择您希望应用程序保存输入数据的间隔。
+1. 在“常规”屏幕中，使用&#x200B;**自动保存频率**选项选择您希望应用程序保存输入数据的间隔。
    [![设置自动保存频率](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
 1. 当您重新启动应用程序并以同一用户登录时，系统会提示您使用“恢复未保存的任务”对话框恢复任务。 在“恢复未保存任务”对话框中单击&#x200B;**确定**&#x200B;以继续处理保存的任务。 您可以单击&#x200B;**取消**&#x200B;以删除与上次触发的自动保存对应的已保存数据，并开始处理新任务。
 
-   单击&#x200B;**确定**&#x200B;后，任务会使用与应用程序崩溃之前触发的最新自动保存对应的数据恢复。 它包括表单数据和与任务关联的所有附件。
+   单击&#x200B;**确定**后，任务会使用与应用程序崩溃之前触发的最新自动保存对应的数据恢复。 它包括表单数据和与任务关联的所有附件。
    [![正在恢复任务&#x200B;](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**A.** 正在处理的表单&#x200B;**B.**&#x200B;应用强制关闭&#x200B;**C.**&#x200B;应用重新启动，恢复未保存的任务对话框&#x200B;**D.**&#x200B;表单已还原为原始数据

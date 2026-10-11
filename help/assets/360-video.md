@@ -14,18 +14,30 @@ autotag-review: '2026-05-18T18:33:16.243Z'
 TQID: 'https://experienceleague.adobe.com/t3-PFZjnQPbbgNMFEjG7SDwG1Pt1TkvD9wNNYYgaEyE'
 product_v2:
   - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
   - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: b1c2c8dc-d13a-43c3-9c5b-efc536a708ca
+    internal-label: 360 VR Video
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
 level_v2:
   - id: b5a62a22-46f7-4f0d-b151-3fc640bef588
-source-git-commit: 9c96b6744c7af2f061b4dfbf403560047485f9b5
+    internal-label: Intermediate
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: 1093
+source-wordcount: '1187'
 ht-degree: 0%
-
 ---
-
 # 360/VR视频 {#vr-video}
 
 360度视频同时记录每个方向的视图。 它们使用全方位相机或一系列相机来拍摄。 在平面显示器上播放期间，用户可控制视角；移动设备上的播放通常使用内置的陀螺仪控制。
@@ -42,14 +54,14 @@ Dynamic Media - Scene7模式包括对交付360个视频资产的本机支持。 
 
 选择[空间站360](https://s7d1.scene7.com/s7viewers/html5/Video360Viewer.html?asset=Viewers/space_station_360-AVS)打开浏览器窗口并观看360度视频。 在视频播放过程中，将鼠标指针拖动到新位置以更改视角。
 
-![360个视频样本，其国际空间站漂浮在外层空间及其后的地球和太阳。](assets/6_5_360videoiss_simplified.png)
+![360 — 视频样本，国际空间站漂浮在外太空及其后面的地球和太阳上。](assets/6_5_360videoiss_simplified.png)
 来自空间站360*的*&#x200B;视频帧
 
 ## 360/VR视频和Adobe Premiere Pro {#vr-video-and-adobe-premiere-pro}
 
 您可以使用Adobe Premier Pro查看和编辑360/VR素材。 例如，您可以在场景中正确放置徽标和文本，并应用专门为等矩形介质设计的效果和过渡。
 
-查看[编辑360/VR视频](https://helpx.adobe.com/cn/premiere-pro/how-to/edit-360-vr-video.html)。
+查看[编辑360/VR视频](https://helpx.adobe.com/premiere-pro/how-to/edit-360-vr-video.html)。
 
 ## 上传资产以用于360视频查看器 {#uploading-assets-for-use-with-the-video-viewer}
 
@@ -69,14 +81,14 @@ Dynamic Media - Scene7模式包括对交付360个视频资产的本机支持。 
 
    * 理想情况下，原始的360视频内容最好具有以下分辨率之一：
 
-      * 1080p - 1920 x 1080，称为全高清或全高清分辨率，或
-      * 2160p - 3840 x 2160，称为4k、UHD或超高清分辨率。 这种大屏幕分辨率通常出现在高端电视机和计算机显示器上。 2160p分辨率通常称为“4k”，因为宽度接近4000像素。 换句话说，它提供的像素是1080p的四倍。
+     * 1080p - 1920 x 1080，称为全高清或全高清分辨率，或
+     * 2160p - 3840 x 2160，称为4k、UHD或超高清分辨率。 这种大屏幕分辨率通常出现在高端电视机和计算机显示器上。 2160p分辨率通常称为“4k”，因为宽度接近4000像素。 换句话说，它提供的像素是1080p的四倍。
 
    * [创建具有更高演绎版的自定义自适应视频配置文件](/help/assets/video-profiles.md#creating-a-video-encoding-profile-for-adaptive-streaming)。 例如，创建包含以下三个设置的自适应视频配置文件：
 
-      * 宽度=自动；高度=720；比特率=2500 kbps
-      * 宽度=自动；高度=1080；比特率=5000 kbps
-      * 宽度=自动；高度=1440；比特率=6600 kbps
+     * 宽度=自动；高度=720；比特率=2500 kbps
+     * 宽度=自动；高度=1080；比特率=5000 kbps
+     * 宽度=自动；高度=1440；比特率=6600 kbps
 
    * 在专门用于360个视频资产的文件夹中处理360个视频内容。
 
@@ -92,8 +104,8 @@ Dynamic Media - Scene7模式包括对交付360个视频资产的本机支持。 
 
 * `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
-   * **属性类型** — 双精度
-   * **值** — 浮点宽高比，默认为2.0。
+  * **属性类型** — 双精度
+  * **值** — 浮点宽高比，默认为2.0。
 
 设置此属性后，它会在现有视频和新上传的视频中立即生效。
 
@@ -110,7 +122,7 @@ Dynamic Media - Scene7模式包括对交付360个视频资产的本机支持。 
 如果对360视频满意，则可发布该视频。
 
 请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/embed-code.md)。
-查看[将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+查看[将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
 请参阅[将Dynamic Media Assets添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md)。
 
 **预览360视频：**
@@ -147,5 +159,5 @@ Dynamic Media - Scene7模式包括对交付360个视频资产的本机支持。 
 
 有关如何发布360视频的详细信息，请参阅[发布Dynamic Media资源](/help/assets/publishing-dynamicmedia-assets.md)。
 另请参阅[在网页上嵌入视频查看器或图像查看器](/help/assets/embed-code.md)。
-另请参阅[将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)。如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
+另请参阅[将URL链接到您的Web应用程序](/help/assets/linking-urls-to-yourwebapplication.md)。 如果您的交互式内容包含具有相对URL的链接，尤其是指向Experience Manager Sites页面的链接，则基于URL的链接方法不可用。
 另请参阅[将Dynamic Media资源添加到页面](/help/assets/adding-dynamic-media-assets-to-pages.md)。

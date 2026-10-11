@@ -5,13 +5,37 @@ exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1066'
 ht-degree: 93%
-
 ---
-
 # AEM Headless 翻译历程 {#aem-headless-translation-journey}
 
 从这里开始，通过使用 AEM 强大的翻译工具来翻译您的 Headless 内容，实施引导式历程。
@@ -20,7 +44,7 @@ ht-degree: 93%
 
 Headless 实施对于向受众提供体验而言变得越来越重要，无论他们身在何处以及渠道、区域或区域设置如何。
 
-Headless 实施放弃了传统的全栈解决方案中的页面和组件管理，专注于创建渠道中性的、可重用的内容片段，以及它们的跨渠道交付。通过使用 AEM 的功能强大的翻译工具，可以轻松翻译这些可重用的片段并将其交付给您的受众，无论他们身在何处。
+Headless 实施放弃了传统的全栈解决方案中的页面和组件管理，专注于创建渠道中性的、可重用的内容片段，以及它们的跨渠道交付。 通过使用 AEM 的功能强大的翻译工具，可以轻松翻译这些可重用的片段并将其交付给您的受众，无论他们身在何处。
 
 本指南将引导您了解最重要的 Headless 翻译主题，以便在完成后，您将：
 
@@ -29,9 +53,9 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 * 了解 AEM 的翻译功能以及它们如何与 Headless 内容相关联。
 * 能够开始翻译您自己的 Headless 内容。
 
-目标是让您广泛了解 Headless 技术、AEM 提供 Headless 内容的方式以及翻译 Headless 内容的方式。如果您不熟悉所有这些主题，这将是您的理想起点。
+目标是让您广泛了解 Headless 技术、AEM 提供 Headless 内容的方式以及翻译 Headless 内容的方式。 如果您不熟悉所有这些主题，这将是您的理想起点。
 
-如果您已熟悉 AEM、Headless 和翻译，则您可能已大致了解此历程。请考虑参阅[下面的“其他资源”部分](#additional-resources)下链接的技术文档。
+如果您已熟悉 AEM、Headless 和翻译，则您可能已大致了解此历程。 请考虑参阅[下面的“其他资源”部分](#additional-resources)下链接的技术文档。
 
 ## AEM 文档历程 {#documentation-journeys}
 
@@ -43,7 +67,7 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 
 ## 受众 {#audience}
 
-此历程专为翻译专家用户画像（通常称为翻译项目经理 (TPM)）设计。此历程列出了在 AEM 中翻译 Headless 内容的要求、步骤和方法。此历程可能会定义翻译专家必须与之交互的其他用户画像，但历程的视角是翻译专家的视角。
+此历程专为翻译专家用户画像（通常称为翻译项目经理 (TPM)）设计。 此历程列出了在 AEM 中翻译 Headless 内容的要求、步骤和方法。 此历程可能会定义翻译专家必须与之交互的其他用户画像，但历程的视角是翻译专家的视角。
 
 此历程假定读者具有在大型 CMS 系统上翻译内容的经验但不了解 Headless 技术或 AEM。
 
@@ -56,13 +80,13 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 | 管理员 | 管理 AEM 的基本设置和配置 | 翻译专家与管理员共同进行翻译所需的配置更改，例如安装翻译连接器。 |
 | 内容架构师 | 分析必须以 Headless 方式交付的数据的要求并定义此数据的结构 | 翻译专家与内容架构师共同定义内容的组织结构，以便可轻松地翻译内容。 |
 
-此历程中的信息可能对所有用户画像都很有用，但某些信息对某些角色而言可能是多余的。请继续关注[即将推出的涵盖其他角色的历程。](/help/journey-documentation/home.md#journeys)
+此历程中的信息可能对所有用户画像都很有用，但某些信息对某些角色而言可能是多余的。 请继续关注[即将推出的涵盖其他角色的历程。](/help/journey-documentation/home.md#journeys)
 
 ## Headless 翻译历程 {#the-journey}
 
-您将在此历程中探究多个主题。以下文章为您提供了在 AEM 中翻译 Headless 内容的基础知识以及指向详细技术文档的链接。
+您将在此历程中探究多个主题。 以下文章为您提供了在 AEM 中翻译 Headless 内容的基础知识以及指向详细技术文档的链接。
 
-虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。因此，如果您是 AEM Headless 翻译新手，Adobe 建议您从头开始，然后循序渐进。
+虽然您可以直接进入历程的特定部分，但许多概念都是基于之前文章中的概念来构建的。 因此，如果您是 AEM Headless 翻译新手，Adobe 建议您从头开始，然后循序渐进。
 
 | # | 文章 | 描述 |
 |---|---|---|
@@ -76,18 +100,18 @@ Headless 实施放弃了传统的全栈解决方案中的页面和组件管理�
 
 ## 后续内容 {#what-is-next}
 
-您现在已准备好开始您的 Adobe Headless 翻译历程。我们鼓励您继续此历程的下一部分，并阅读[了解 Headless 内容以及如何在 AEM 中翻译该内容](learn-about.md)一文
+您现在已准备好开始您的 Adobe Headless 翻译历程。 我们鼓励您继续此历程的下一部分，并阅读[了解 Headless 内容以及如何在 AEM 中翻译该内容](learn-about.md)一文
 
 ## 其他资源 {#additional-resources}
 
-文档历程将提供叙述来指导您完成复杂、相互关联的流程和使用相关功能，从而向您说明 AEM 如何解决业务问题。历程说明了多项功能如何协作以满足单一业务需求。
+文档历程将提供叙述来指导您完成复杂、相互关联的流程和使用相关功能，从而向您说明 AEM 如何解决业务问题。 历程说明了多项功能如何协作以满足单一业务需求。
 
 因此，旅程旨在自立。 但是，其中多个可以相互关联。 查看这些附加历程，详细了解 AEM 的强大功能如何协作。
 
 * [Headless 创作历程](/help/journey-headless/author/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个 Headless 项目中为内容建模。
 * [Headless架构师历程](/help/journey-headless/architect/overview.md) — 从这里开始了解Adobe Experience Manager强大而灵活的Headless功能，以及如何对项目内容进行建模。
 * [AEM Headless 开发人员历程](/help/journey-headless/developer/overview.md) – 从这里开始，引导您了解 AEM 强大而灵活的 Headless 特性、它们的功能以及如何在您的第一个开发项目中利用它们。
-* [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html?lang=zh-Hans) — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
-   * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
+* [AEM技术文档](https://experienceleague.adobe.com/docs/experience-manager-65.html) — 如果您已对AEM和Headless技术有一定的了解，则可能需要直接参阅深入的技术文档。
+  * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
 * [AEM Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans) – 如果您更喜欢通过实践学习并有技术倾向，请参阅我们的按 API 和框架编排的实践教程，探究如何创建和使用基于 AEM Headless 的应用程序。
 * [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)

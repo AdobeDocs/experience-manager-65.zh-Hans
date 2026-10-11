@@ -9,13 +9,27 @@ role: Admin,User
 exl-id: 22926757-9cdb-4f8a-9bd9-16ddbc3f954a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '912'
+source-wordcount: '921'
 ht-degree: 0%
-
 ---
-
 # AEM Forms服务器的性能优化{#performance-tuning-of-aem-forms-server}
 
 本文介绍了为减少瓶颈并优化AEM Forms部署性能而可以实施的策略和最佳实践。
@@ -102,7 +116,7 @@ Apache可以使用HTTP协议与CRX通信。 这些配置用于使用HTTP进行�
 
 1. 启用压缩。 在`APACHE_HOME/conf/httpd.conf`配置文件中添加以下配置。
 
-   用于HTML5表单的&#x200B;**&#x200B;**
+   用于HTML5表单的&#x200B;****
 
    ```xml
    <Location /content/xfaforms>
@@ -146,26 +160,26 @@ Apache可以使用HTTP协议与CRX通信。 这些配置用于使用HTTP进行�
 
 * AEM安装目录。 如果无法排除整个目录，请排除以下内容：
 
-   * [AEM安装目录]\crx-repository\temp
-   * [AEM安装目录]\crx-repository\repository
-   * [AEM安装目录]\crx-repository\launchpad
+  * [AEM安装目录]\crx-repository\temp
+  * [AEM安装目录]\crx-repository\repository
+  * [AEM安装目录]\crx-repository\launchpad
 
 * 应用程序服务器临时目录。 默认位置为：
 
-   * (JBoss®) [AEM安装目录]\jboss\standalone\tmp
-   * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
-   * (WebSphere®) \项目Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
+  * (JBoss®) [AEM安装目录]\jboss\standalone\tmp
+  * (WebLogic) \Oracle\Middleware\user_projects\domains\LCDomain\servers\LCServer1\tmp
+  * (WebSphere®) \项目Files\IBM\WebSphere\AppServer\profiles\AppSrv01\temp
 
 * **（仅限JEE上的AEM Forms）**&#x200B;全局文档存储(GDS)目录。 默认位置为：
 
-   * (JBoss®) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
-   * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
-   * (WebSphere®) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
+  * (JBoss®) [appserver root]/server/&#39;server&#39;/svcnative/DocumentStorage
+  * (WebLogic) [appserverdomain]/&#39;server&#39;/adobe/LiveCycleServer/DocumentStorage
+  * (WebSphere®) [appserver root]/installedApps/adobe/&#39;server&#39;/DocumentStorage
 
 * **（仅限JEE上的AEM Forms）** AEM Forms Server日志和临时目录。 默认位置为：
 
-   * 服务器日志 — [AEM Forms安装目录]\Adobe\AEM forms\[app-server]\server\all\logs
-   * 临时目录 — [AEM Forms安装目录]\temp
+  * 服务器日志 — [AEM Forms安装目录]\Adobe\AEM forms\[app-server]\server\all\logs
+  * 临时目录 — [AEM Forms安装目录]\temp
 
 >[!NOTE]
 >

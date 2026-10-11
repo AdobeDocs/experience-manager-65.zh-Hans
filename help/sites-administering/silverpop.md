@@ -10,13 +10,22 @@ exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '605'
 ht-degree: 2%
-
 ---
-
 # 与 Silverpop Engage 集成{#integrating-with-silverpop-engage}
 
 <!--
@@ -50,7 +59,7 @@ THIS ENTIRE TOPIC APPEARS OBSOLETE BECAUSE SILVERPOP NO LONGER EXISTS AND THERE 
    >
    >除非从包共享下载包，否则Silverpop Engage在第三方服务下不可用。
 
-1. 输入标题，也可以输入名称，然后单击&#x200B;**创建**。 将打开 **&#x200B; Silverpop设置**&#x200B;配置窗口。
+1. 输入标题，也可以输入名称，然后单击&#x200B;**创建**。 将打开** Silverpop设置**配置窗口。
 1. 输入用户名、密码，然后从下拉列表中选择一个API端点。
 1. 单击&#x200B;**连接到Silverpop。** 成功连接后，您会看到一个成功对话框。 单击“**确定**”，退出窗口。 您可以通过单击&#x200B;**转到Silverpop Engage**&#x200B;来转到Silverpop。
 1. Silverpop已配置。 您可以通过单击&#x200B;**编辑**&#x200B;来编辑配置。

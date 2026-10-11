@@ -10,13 +10,20 @@ role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1104'
 ht-degree: 1%
-
 ---
-
 # 高级评分和徽章{#advanced-scoring-and-badges}
 
 ## 概述 {#overview}
@@ -33,7 +40,7 @@ ht-degree: 1%
 
 * 基本和高级评分和徽章规则以相同方式[应用于内容](/help/communities/implementing-scoring.md#apply-rules-to-content)。
 
-   * 基本和高级评分和徽章规则可应用于相同内容。
+  * 基本和高级评分和徽章规则可应用于相同内容。
 
 * [为组件](/help/communities/implementing-scoring.md#enable-badges-for-component)启用徽章是通用的。
 
@@ -42,14 +49,14 @@ ht-degree: 1%
 * 可配置的高级评分引擎
 * 高级评分规则：
 
-   * `scoringType`设置为`advanced`
-   * 需要`stopwords`
+  * `scoringType`设置为`advanced`
+  * 需要`stopwords`
 
 * 高级徽章规则：
 
-   * `badgingType`设置为`advanced`
-   * `badgingLevels`设置为&#x200B;**要奖励的专家级别数**
-   * 需要`badgingPaths`个徽章数组，而不是阈值数组映射点到徽章。
+  * `badgingType`设置为`advanced`
+  * `badgingLevels`设置为&#x200B;**要奖励的专家级别数**
+  * 需要`badgingPaths`个徽章数组，而不是阈值数组映射点到徽章。
 
 >[!NOTE]
 >
@@ -66,7 +73,7 @@ ht-degree: 1%
   对于主题，指定在计算得分时应获得最高优先级的动词。 可以输入一个或多个主题，但限制为每个主题&#x200B;**一个**&#x200B;动词。 查看[主题和动词](/help/communities/implementing-scoring.md#topics-and-verbs)。
 输入为`topic,verb`，逗号转义。 例如：
   `/social/forum/hbs/social/forum\,ADD`
-对于QnA和论坛组件，默认设置为ADD动词。
+  对于QnA和论坛组件，默认设置为ADD动词。
 
 * **评分范围**
 
@@ -148,7 +155,7 @@ ht-degree: 1%
   <tr>
    <td>评分规则</td>
    <td>String[]</td>
-   <td><em>（可选）</em>一个多值字符串，用于限制徽章规则只查看由列出的一个或多个评分规则标识的评分事件。<br />示例条目：<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br />默认值为无限制。</td>
+   <td><em>（可选）</em>一个多值字符串，用于限制徽章规则只查看由列出的一个或多个评分规则标识的评分事件。<br /> 示例条目：<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br />默认值为无限制。</td>
   </tr>
  </tbody>
 </table>
@@ -215,6 +222,6 @@ ht-degree: 1%
 
 **注释：**
 
-* `rules`节点的类型为cq：Page。
+* `rules`节点的类型为cq:Page。
 * `rules`应位于存储库位置，每个人都具有读取权限。
 * 无论位置如何，规则名称都必须是唯一的。

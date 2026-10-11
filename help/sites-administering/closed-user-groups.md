@@ -10,7 +10,21 @@ exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '6781'
 ht-degree: 1%
@@ -815,7 +829,7 @@ CUG授权模型允许您单独打开访问控制管理和权限评估：
 * 如果模块具有一个或多个支持创建CUG的路径，则会启用访问控制管理
 * 仅当同时选中选项&#x200B;**CUG Evaluation Enabled**&#x200B;时才启用权限评估。
 
-在新的AEM默认设置评估CUG策略中，它仅在“发布”运行模式下启用。 有关更多详细信息，请参阅自AEM 6.3[&#128279;](#default-configuration-since-aem)以来的默认配置的详细信息。 这可以通过比较给定路径的有效策略与内容中存储的策略来验证。 只有启用CUG的权限评估后，才会显示有效的策略。
+在新的AEM默认设置评估CUG策略中，它仅在“发布”运行模式下启用。 有关更多详细信息，请参阅自AEM 6.3](#default-configuration-since-aem)以来的[默认配置的详细信息。 这可以通过比较给定路径的有效策略与内容中存储的策略来验证。 只有启用CUG的权限评估后，才会显示有效的策略。
 
 如上所述，CUG访问控制策略现在始终存储在内容中，但是只有在Apache Jackrabbit Oak **CUG配置的系统控制台中打开**&#x200B;启用CUG评估&#x200B;**，才会强制评估由这些策略产生的有效权限。** 默认情况下，它仅在“发布”运行模式下启用。
 

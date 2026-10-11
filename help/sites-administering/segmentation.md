@@ -9,13 +9,24 @@ exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1763'
 ht-degree: 63%
-
 ---
-
 # 使用 ContextHub 配置分段{#configuring-segmentation-with-contexthub}
 
 >[!NOTE]
@@ -51,7 +62,7 @@ AEM可让您轻松个性化用户体验。 它还让您验证区段定义的结�
 
 利用组件浏览器，您可以添加 **AND** 和 **OR** 容器来定义区段逻辑，然后添加其他组件以比较属性和值，或参考脚本和其他区段以定义选择标准（请参阅[创建新区段](#creating-a-new-segment)），从而定义选择区段的确切场景。
 
-当整个语句的计算结果为 true 时，表示该区段已解析。 如果有多个适用的区段，则还会使用&#x200B;**Boost**&#x200B;因子。 有关[&#128279;](/help/sites-administering/campaign-segmentation.md#boost-factor)提升因子的详细信息，请参阅[创建新区段](#creating-a-new-segment)。
+当整个语句的计算结果为 true 时，表示该区段已解析。 如果有多个适用的区段，则还会使用&#x200B;**Boost**&#x200B;因子。 有关[提升因子的详细信息，请参阅[创建新区段](#creating-a-new-segment)。](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -243,8 +254,8 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 1. 提供文件夹的&#x200B;**标题**&#x200B;和&#x200B;**名称**。
    * **标题**&#x200B;应为描述性的。
    * **名称**&#x200B;将成为存储库中的节点名称。
-      * 它会根据标题自动生成，并根据 [AEM 命名约定](/help/sites-developing/naming-conventions.md)进行调整。
-      * 如有必要可以调整。
+     * 它会根据标题自动生成，并根据 [AEM 命名约定](/help/sites-developing/naming-conventions.md)进行调整。
+     * 如有必要可以调整。
 
    ![创建文件夹](assets/contexthub-create-folder.png)
 
@@ -322,7 +333,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 此类测试也可在内容页面上执行，并与目标内容以及相关的&#x200B;**活动**&#x200B;和&#x200B;**体验**&#x200B;相结合。
 
-如果您使用上面的主要年龄组区段示例设置了活动和体验，则可以轻松地使用活动测试区段。 有关设置活动的详细信息，请参阅有关创作目标内容[&#128279;](/help/sites-authoring/content-targeting-touch.md)的文档。
+如果您使用上面的主要年龄组区段示例设置了活动和体验，则可以轻松地使用活动测试区段。 有关设置活动的详细信息，请参阅有关创作目标内容](/help/sites-authoring/content-targeting-touch.md)的[文档。
 
 1. 在已设置目标内容的页面的编辑模式下，您可以看到已通过内容上的箭头图标来目标内容。
 

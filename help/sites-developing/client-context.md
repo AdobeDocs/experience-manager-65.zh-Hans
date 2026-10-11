@@ -10,13 +10,29 @@ feature: Context Hub,Developing,Personalization
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 solution: Experience Manager, Experience Manager Sites
 role: Developer
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: db974db1-cf49-4452-872e-5a56c5f1d391
+    internal-label: Context Hub
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2996'
+source-wordcount: '3030'
 ht-degree: 0%
-
 ---
-
 # Client Context 详情{#client-context-in-detail}
 
 >[!NOTE]
@@ -190,15 +206,15 @@ AEM提供了可以扩展的genericstore和genericstoreproperties上下文存储�
 
 * 属性值对：扩展`GenericStoreProperties`组件。 此组件自动呈现属性值对的存储。 提供了几个交互点：
 
-   * `prolog.jsp`和`epilog.jsp`：组件交互，允许您在组件呈现之前或之后添加服务器端逻辑。
+  * `prolog.jsp`和`epilog.jsp`：组件交互，允许您在组件呈现之前或之后添加服务器端逻辑。
 
 * 复杂数据：扩展`GenericStore`组件。 您的会话存储需要每当必须呈现组件时都调用的“renderer”方法。 使用以下两个参数调用渲染器函数：
 
-   * `@param {String} store`
-要呈现的存储
+  * `@param {String} store`
+    要呈现的存储
 
-   * `@param {String} divId`
-必须将存储呈现到的div的ID。
+  * `@param {String} divId`
+    必须将存储呈现到的div的ID。
 
 >[!NOTE]
 >
@@ -618,13 +634,13 @@ init.js.jsp文件在页面加载Client Context时执行。 此时，已加载Cli
 
 * 子文件夹：
   `/content`
-包含自定义客户端上下文的内容。
+  包含自定义客户端上下文的内容。
 
 * 文件夹：
   `/contextstores`
-允许您为上下文存储定义不同的配置。
+  允许您为上下文存储定义不同的配置。
 
 要使用自定义的客户端上下文，请编辑属性
 `path`
-客户端上下文组件的设计样式中（如页面模板中所示）。例如，作为标准位置：
+客户端上下文组件的设计样式中（如页面模板中所示）。 例如，作为标准位置：
 `/libs/cq/personalization/components/clientcontext/design_dialog/items/path`

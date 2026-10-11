@@ -5,31 +5,55 @@ exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
 solution: Experience Manager, Experience Manager Sites
 feature: Headless,Content Fragments,Language Copy
 role: Admin, Developer, User, Leader
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: bfd4bc52-c397-5127-8f86-8953ba9fc0a3
+    internal-label: Headless
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+  - id: d9d38edd-df1b-480c-8f5e-72b62576f390
+    internal-label: Site and page features
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+  - id: e15a4109-ae5d-497d-b301-31149e35aed4
+    internal-label: Language Copy Wizard
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '775'
 ht-degree: 100%
-
 ---
-
 # 了解 AEM 中的 Headless 内容及其翻译方法 {#learn-about}
 
 了解 Headless 概念、它们如何映射到 AEM 以及 AEM 翻译理论。
 
 ## 目标 {#objective}
 
-本文档可帮助您了解 Headless 内容交付、AEM 支持 Headless 的方式以及如何翻译此内容。阅读本文档后，您应：
+本文档可帮助您了解 Headless 内容交付、AEM 支持 Headless 的方式以及如何翻译此内容。 阅读本文档后，您应：
 
 * 了解 Headless 内容交付的基本概念。
 * 熟悉 AEM 支持 Headless 和翻译的方式。
 
 ## 全栈内容交付 {#full-stack}
 
-自易于使用的大型内容管理系统（CMS）兴起以来，组织便已将其用作管理消息、品牌化和通信的中心位置。通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
+自易于使用的大型内容管理系统（CMS）兴起以来，组织便已将其用作管理消息、品牌化和通信的中心位置。 通过将 CMS 用作管理体验的中心点，消除了在不同的系统中重复任务的需求，从而提高了效率。
 
 ![经典全栈 CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-在全栈 CMS 中，所有用于操作内容的功能都集中在 CMS 内。该系统的各种功能构成了 CMS 堆栈的不同组件。全栈解决方案有许多优点。
+在全栈 CMS 中，所有用于操作内容的功能都集中在 CMS 内。 该系统的各种功能构成了 CMS 堆栈的不同组件。 全栈解决方案有许多优点。
 
 * 需要维护一个系统。
 * 集中管理内容。
@@ -46,30 +70,30 @@ ht-degree: 100%
 
 任何系统的头通常都是该系统的输出呈现器，通常采用 GUI 或其他图形输出的形式。
 
-就 Headless CMS 而言，CMS 将管理内容并继续将内容交付给消费者。但是，通过仅以标准化方式交付&#x200B;**内容**，Headless CMS 会省略最终的输出呈现，而只保留要&#x200B;**呈现**&#x200B;给消费服务的内容。
+就 Headless CMS 而言，CMS 将管理内容并继续将内容交付给消费者。 但是，通过仅以标准化方式交付&#x200B;**内容**，Headless CMS 会省略最终的输出呈现，而只保留要&#x200B;**呈现**&#x200B;给消费服务的内容。
 
 ![Headless CMS](/help/journey-headless/developer/assets/headless-cms.png)
 
-消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。它们负责为您的内容提供它们自己的头。
+消费服务，无论是 AR 体验、网上商店、移动体验、渐进式 Web 应用程序 (PWA) 等，都从 Headless CMS 摄入内容并提供其自己的呈现方式。 它们负责为您的内容提供它们自己的头。
 
-忽略头将消除复杂性，从而简化 CMS。这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
+忽略头将消除复杂性，从而简化 CMS。 这样做还会将呈现内容的责任转移到实际需要内容且通常更适合此类呈现的服务。
 
 ## 在 AEM 中翻译 Headless 内容 {#translating-in-aem}
 
 除了提供功能强大的工具来以全栈方式创建、管理和交付传统网页之外，AEM 还可用于创作独立内容选择并以 Headless 方式提供这些内容。
 
-利用 AEM 的强大功能，可通过 Headless 方式、全栈方式或同时在两个模型中交付内容。对于翻译专家来说，同一组翻译工具可应用于两种类型的内容，从而为您提供统一的内容翻译方法。
+利用 AEM 的强大功能，可通过 Headless 方式、全栈方式或同时在两个模型中交付内容。 对于翻译专家来说，同一组翻译工具可应用于两种类型的内容，从而为您提供统一的内容翻译方法。
 
 在此历程中，您将了解有关 AEM 如何翻译内容的详细信息，但从较高层面来说，概念很简单：
 
 1. 通过配置翻译集成框架来定义与翻译服务的连接。
 1. 使用翻译规则定义应翻译的内容。
-1. 创建翻译项目以收获内容，将该内容发送到翻译服务，并接收结果。
+1. 创建翻译项目以收集内容，将该内容发送到翻译服务，并接收结果。
 1. 检查和发布已翻译的内容。
 
 ## 后续内容 {#what-is-next}
 
-感谢您开始 AEM Headless 翻译历程！现在您已阅读本文档，您应：
+感谢您开始 AEM Headless 翻译历程！ 现在您已阅读本文档，您应：
 
 * 了解 Headless 内容交付的基本概念。
 * 熟悉 AEM 支持 Headless 和翻译的方式。
@@ -82,5 +106,5 @@ ht-degree: 100%
 
 * [MSM 和翻译](/help/sites-administering/msm-and-translation.md) – AEM 的多站点管理器的详细信息及其使用翻译工具的方式
 * [AEM as a Headless CMS 简介](/help/sites-developing/headless/introduction.md)
-* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-Hans)
-* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-Headless/overview.html?lang=zh-hans)
+* [AEM 开发人员门户](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=zh-hans)
+* [AEM 中的 Headless 教程](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=zh-Hans)

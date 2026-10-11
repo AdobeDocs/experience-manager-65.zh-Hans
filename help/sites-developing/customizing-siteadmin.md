@@ -10,13 +10,22 @@ exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '816'
 ht-degree: 1%
-
 ---
-
 # 自定义网站控制台（经典 UI）{#customizing-the-websites-console-classic-ui}
 
 ## 向“网站(siteadmin)”控制台添加自定义列 {#adding-a-custom-column-to-the-websites-siteadmin-console}
@@ -115,12 +124,12 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 当您打开网站管理控制台并浏览您的网站时，浏览器将发出Ajax调用以获取用于构建控制台的JSON对象。 例如，当您浏览到`/content/geometrixx`文件夹时，以下请求将发送到AEM服务器以构建控制台：
 
-[https://localhost:4502/content/geometrixx.pages.json？start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 要确保新服务在部署包含该服务的捆绑包后正在运行，请执行以下操作：
 
 1. 将浏览器指向以下URL：
-   [https://localhost:4502/content/geometrixx.pages.json？start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
 
 1. 响应应按以下方式显示新属性：
 
@@ -139,7 +148,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
    * 删除&#x200B;**pageText**
 
    * 将&#x200B;**pathRegex**&#x200B;设置为 `/content/geometrixx(/.*)?`
-这将使网格配置在所有Geometrixx网站中处于活动状态。
+     这将使网格配置在所有Geometrixx网站中处于活动状态。
 
    * 将&#x200B;**storeProxySuffix**&#x200B;设置为`.pages.json`
 
@@ -147,9 +156,9 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
    * 要激活MSM功能，请将以下MSM参数添加到多字符串属性&#x200B;**storeReaderFields**&#x200B;中：
 
-      * **msm:isSource**
-      * **msm:isInBlueprint**
-      * **msm:isLiveCopy**
+     * **msm:isSource**
+     * **msm:isInBlueprint**
+     * **msm:isLiveCopy**
 
 1. 在`/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`下添加一个`starred`节点（类型为&#x200B;**nt:unstructured**），该节点具有以下属性：
 
@@ -162,7 +171,7 @@ public class StarredListInfoProvider implements ListInfoProvider {
 1. （可选）删除您不想在`/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`中显示的列
 
 1. `/siteadmin`是一个虚路径，默认指向`/libs/wcm/core/content/siteadmin`。
-若要将此重定向到您在`/apps/wcm/core/content/siteadmin`上的siteadmin版本，请定义属性`sling:vanityOrder`使其值高于`/libs/wcm/core/content/siteadmin`上定义的值。默认值为300，因此适合使用任何更高的值。
+若要将此重定向到您在`/apps/wcm/core/content/siteadmin`上的siteadmin版本，请定义属性`sling:vanityOrder`使其值高于`/libs/wcm/core/content/siteadmin`上定义的值。 默认值为300，因此适合使用任何更高的值。
 
 1. 转到网站管理控制台，然后导航到Geometrixx站点：
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx)。

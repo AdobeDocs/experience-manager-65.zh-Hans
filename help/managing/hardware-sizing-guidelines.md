@@ -5,13 +5,27 @@ exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer,Leader
-source-git-commit: 658e1f6e07fb1219ba186137eb8403bf85383723
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1374'
 ht-degree: 96%
-
 ---
-
 # 硬件选型指南{#hardware-sizing-guidelines}
 
 这些选型指南提供了部署 AEM 项目所需硬件资源的近似估算。 选型估算取决于项目的架构设计、解决方案的复杂性、预期流量以及项目要求。 本指南可帮助您确定特定解决方案的硬件需求，或获取硬件要求的上限和下限估算值。
@@ -107,7 +121,7 @@ AEM 在虚拟化环境中运行良好，但其中某些因素（如 CPU 或 I/O�
 估算所需集群节点数量需基于具体 Web 项目的基本需求和特定用例：
 
 * 从故障安全性的角度，需要针对所有环境评估系统故障的关键程度，以及根据集群节点恢复所需时间来确定故障补偿时间。
-* 从可扩展性的角度，写入操作的数量基本上是最重要的考量因素。 对于仅涉及读取操作的请求，可以通过负载均衡来分担系统访问压力；详情请参阅 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans)。
+* 从可扩展性的角度，写入操作的数量基本上是最重要的考量因素。 对于仅涉及读取操作的请求，可以通过负载均衡来分担系统访问压力；详情请参阅 [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)。
 
 ### 硬件建议 {#hardware-recommendations}
 

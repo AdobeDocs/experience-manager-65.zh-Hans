@@ -9,13 +9,22 @@ exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1827'
 ht-degree: 2%
-
 ---
-
 # 性能测试最佳做法{#best-practices-for-performance-testing}
 
 ## 简介 {#introduction}
@@ -73,7 +82,7 @@ AEM中的许多性能度量（如查询响应时间）都可能会受系统上�
 
 触屏UI中的&#x200B;**开发人员模式**
 
-AEM 6触控UI中的一项新增功能是开发人员模式。 就像作者可以在编辑和预览模式之间切换一样，开发人员也可以在作者UI中切换到开发人员模式。 这样，您就可以查看页面上每个组件的渲染时间，并查看任何错误的栈栈跟踪。 有关开发人员模式的详细信息，请参阅此[CQ Gems演示](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=zh-Hans)。
+AEM 6触控UI中的一项新增功能是开发人员模式。 就像作者可以在编辑和预览模式之间切换一样，开发人员也可以在作者UI中切换到开发人员模式。 这样，您就可以查看页面上每个组件的渲染时间，并查看任何错误的栈栈跟踪。 有关开发人员模式的详细信息，请参阅此[CQ Gems演示](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html)。
 
 **使用rlog.jar读取请求日志**
 
@@ -118,7 +127,7 @@ Google的PageSpeed工具提供了网站分析功能，用于确保对页面性�
 1. 将其放在/crx-quickstart/install文件夹下。
 
 >[!NOTE]
->请参阅[AEM 6.x |性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=zh-Hans)
+>请参阅[AEM 6.x |性能调整提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)
 
 默认设置为10,000，但大多数部署都必须将其增加到20,000或50,000。
 
@@ -146,7 +155,7 @@ Google的PageSpeed工具提供了网站分析功能，用于确保对页面性�
 * 观察错误日志中是否有错误或警告。 有关详细信息，请参阅[日志记录](/help/sites-deploying/configure-logging.md)。
 * 监视系统硬件资源，如内存和CPU利用率、磁盘I/O或网络I/O。这些资源通常是造成性能瓶颈的原因。
 * 优化页面的架构以及如何寻址页面，以最大限度地减少URL参数的使用，从而尽可能多地允许缓存。
-* 遵循[性能优化](/help/sites-deploying/configuring-performance.md)和[性能优化提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=zh-Hans)文档。
+* 遵循[性能优化](/help/sites-deploying/configuring-performance.md)和[性能优化提示](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html)文档。
 
 * 如果在创作实例上编辑某些页面或组件时出现问题，请使用TouchUI开发人员模式检查有问题的页面。 这样做可划分页面上的每个内容区域及其加载时间。
 * 缩小网站上的所有JS和CSS。 查看此[博客帖子](https://blogs.adobe.com/foxes/enable-js-and-css-minification/)。

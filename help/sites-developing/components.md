@@ -9,13 +9,22 @@ exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '620'
 ht-degree: 54%
-
 ---
-
 # 组件概述{#components-overview}
 
 此页面概述了 Adobe Experience Manager (AEM) 组件，例如那些[用于页面创作](/help/sites-authoring/default-components-foundation.md)的组件。
@@ -31,7 +40,7 @@ ht-degree: 54%
 * 拥有标准化的用户界面。
 * 具有可配置的编辑行为。
 * 使用使用基于Granite UI组件的子元素构建的对话框
-* 使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)（推荐）或JSP开发。
+* 使用[HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)（推荐）或JSP开发。
 * 可以开发以创建扩展默认功能的自定义组件。
 
 由于组件是模块化的，因此您可以：
@@ -63,7 +72,7 @@ AEM附带各种[现成的组件](/help/sites-authoring/default-components.md)，
 
 提供了两组Adobe提供的AEM组件：
 
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [基础组件](/help/sites-authoring/default-components-foundation.md)
 
 **核心组件**&#x200B;是随AEM 6.3引入的，它提供了灵活且丰富的创作功能。 [We.Retail参考网站](/help/sites-developing/we-retail.md)说明了如何使用核心组件，并代表了组件开发的当前最佳实践。
@@ -72,7 +81,7 @@ AEM附带各种[现成的组件](/help/sites-authoring/default-components.md)，
 
 >[!NOTE]
 >
->[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)表示组件设计和开发的当前最佳实践，并用作参考实施。
+>[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)表示组件设计和开发的当前最佳实践，并用作参考实施。
 >
 >[AEM现代化工具](modernization-tools.md)可以帮助迁移到核心组件。
 
@@ -105,11 +114,11 @@ AEM附带各种[现成的组件](/help/sites-authoring/default-components.md)，
 * [内容片段组件](/help/sites-developing/components-content-fragments.md)
 * [以 JSON 格式获取页面信息](/help/sites-developing/pageinfo.md)
 * [国际化组件](/help/sites-developing/i18n.md)
-* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)
+* [核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [使用隐藏条件](/help/sites-developing/hide-conditions.md)
 * 经典 UI
 
-   * [AEM组件（经典UI）](/help/sites-developing/developing-components-classic.md)
-   * [使用和扩展小组件（经典 UI）](/help/sites-developing/widgets.md)
-   * [使用 xtype（经典 UI）](/help/sites-developing/xtypes.md)
-   * [开发表单（经典 UI）](/help/sites-developing/developing-forms.md)
+  * [AEM组件（经典UI）](/help/sites-developing/developing-components-classic.md)
+  * [使用和扩展小组件（经典 UI）](/help/sites-developing/widgets.md)
+  * [使用 xtypes（经典 UI）](/help/sites-developing/xtypes.md)
+  * [开发表单（经典 UI）](/help/sites-developing/developing-forms.md)

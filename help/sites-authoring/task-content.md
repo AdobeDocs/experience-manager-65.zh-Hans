@@ -9,23 +9,36 @@ exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '588'
 ht-degree: 41%
-
 ---
-
 
 # 处理任务 {#working-with-tasks}
 
-任务表示与内容相关要执行的工作项目。 当有任务分配给您时，它会显示在您的 Workflow 收件箱中。任务项可以通过值&#x200B;**Type**&#x200B;列与工作流项进行区分。
+任务表示与内容相关要执行的工作项目。 当有任务分配给您时，它会显示在您的 Workflow 收件箱中。 任务项可以通过值&#x200B;**Type**&#x200B;列与工作流项进行区分。
 
 任务也用在项目中，以确定项目的完整性级别。
 
 ## 跟踪项目进度 {#tracking-project-progress}
 
-您可以通过查看项目内由&#x200B;**任务**&#x200B;拼贴表示的活动/已完成任务来跟踪项目进度。项目进度可由以下两项决定：
+您可以通过查看项目内由&#x200B;**任务**&#x200B;拼贴表示的活动/已完成任务来跟踪项目进度。 项目进度可由以下两项决定：
 
 * **任务拼贴：**&#x200B;项目详细信息页面上的“任务拼贴”中描述了项目的整体进度。
 
@@ -35,7 +48,7 @@ ht-degree: 41%
 
 ### “任务”拼贴 {#task-tile}
 
-如果项目具有任何相关任务，则任务拼贴将显示在项目内。 任务拼贴显示项目的当前状态。 “任务”拼贴基于工作流内的现有任务，它不包括将来随着工作流的继续执行而生成的任何任务。以下信息会显示在“任务”拼贴中：
+如果项目具有任何相关任务，则任务拼贴将显示在项目内。 任务拼贴显示项目的当前状态。 “任务”拼贴基于工作流内的现有任务，它不包括将来随着工作流的继续执行而生成的任何任务。 以下信息会显示在“任务”拼贴中：
 
 * 已完成任务的百分比
 * 活动任务的百分比
@@ -68,7 +81,7 @@ ht-degree: 41%
 
 ### 添加任务 {#adding-tasks}
 
-您可以将新任务添加到项目中。然后，这些任务会出现在“任务”拼贴中，并出现在“通知”收件箱中，以便您了解未完成的任务。
+您可以将新任务添加到项目中。 然后，这些任务会出现在“任务”拼贴中，并出现在“通知”收件箱中，以便您了解未完成的任务。
 
 要添加任务，请执行以下操作：
 
@@ -84,8 +97,8 @@ ht-degree: 41%
 
 您可以直接从收件箱访问项目任务，而不是从项目本身访问项目任务。 收件箱会为您提供跨项目的任务概览，以便您了解整个工作流。
 
-在收件箱中，您可以打开任务并设置任务状态。 如果任务被分配到您所属的用户组，则它们也会显示在您的收件箱中。在这种情况下，组内的任何成员都可以执行工作并完成任务。
+在收件箱中，您可以打开任务并设置任务状态。 如果任务被分配到您所属的用户组，则它们也会显示在您的收件箱中。 在这种情况下，组内的任何成员都可以执行工作并完成任务。
 
 ![收件箱](assets/project-inbox.png)
 
-要完成任务，请选择该任务并单击工具栏中的&#x200B;**完成**。 向该任务中添加信息，然后单击&#x200B;**完成**。有关更多信息，请参阅[您的收件箱](/help/sites-authoring/inbox.md)。
+要完成任务，请选择该任务并单击工具栏中的&#x200B;**完成**。 向该任务中添加信息，然后单击&#x200B;**完成**。 有关更多信息，请参阅[您的收件箱](/help/sites-authoring/inbox.md)。

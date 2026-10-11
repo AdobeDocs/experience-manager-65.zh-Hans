@@ -9,13 +9,24 @@ exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
 solution: Experience Manager, Experience Manager Sites
 feature: Administering,Personalization
 role: Admin
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 2%
-
 ---
-
 # 个性化 {#personalization}
 
 ## 什么是Personalization？ {#what-is-personalization}
@@ -172,7 +183,7 @@ AEM提供了各种组件以进行个性化。 有些功能允许用户登录并�
 
 博客、论坛和日历等社区功能会创建社区内容，通常称为用户生成内容(UGC)。 在包含多个AEM实例（[发布场](/help/communities/topologies.md)）的发布环境中输入UGC时，一个主要问题是如何在所有实例中同步UGC。
 
-使用[AEM Communities 6.1](/help/communities/overview.md)扩展，可通过使用UGC[&#128279;](/help/communities/working-with-srp.md)的公用存储来解决此问题。 关于个性化，社区包括[社交登录](/help/communities/social-login.md) — 为网站访客提供使用Facebook和Twitter登录选项的功能。
+使用[AEM Communities 6.1](/help/communities/overview.md)扩展，可通过使用UGC](/help/communities/working-with-srp.md)的[公用存储来解决此问题。 关于个性化，社区包括[社交登录](/help/communities/social-login.md) — 为网站访客提供使用Facebook和Twitter登录选项的功能。
 
 如果不进行社区扩展，则探索各种方法来解决UGC一致性问题，包括：
 

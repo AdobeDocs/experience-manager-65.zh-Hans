@@ -10,13 +10,28 @@ exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '647'
-ht-degree: 82%
-
+source-wordcount: '649'
+ht-degree: 83%
 ---
-
 # 将工作流应用于页面{#applying-workflows-to-pages}
 
 进行创作时，您可以调用工作流以在页面上执行操作；也可以应用多个工作流。
@@ -50,7 +65,7 @@ ht-degree: 82%
 您可以从以下任一项中启动工作流：
 
 * [“站点”工具栏的“创建”选项](#starting-a-workflow-from-the-sites-toolbar)。
-* [&#x200B; Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
+* [ Sites 控制台的时间线边栏](#starting-a-workflow-from-the-timeline)。
 
 在这两种情况下，您都必须：
 
@@ -95,18 +110,18 @@ ht-degree: 82%
    * **工作流模型**
    * **工作流标题**
 
-      * 您可以指定此实例的标题，以帮助您在以后对其进行识别。
+     * 您可以指定此实例的标题，以帮助您在以后对其进行识别。
 
-   根据工作流模型，还可以使用以下选项。这些选项允许在工作流完成后保留创建为有效负荷的包。
+   根据工作流模型，还可以使用以下选项。 这些选项允许在工作流完成后保留创建为有效负荷的包。
 
    * **保留工作流包**
    * **包标题**
 
-      * 您可以指定包标题以便进行识别。
+     * 您可以指定包标题以便进行识别。
 
    >[!NOTE]
    >
-   >为&#x200B;**多资源支持**&#x200B;配置了工作流并选择了多个资源时，[保留工作流包](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)选项可用。
+   >为[多资源支持](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)配置了工作流并选择了多个资源时，**保留工作流包**&#x200B;选项可用。
 
    完成后，单击&#x200B;**下一步**&#x200B;继续。
 
@@ -118,16 +133,16 @@ ht-degree: 82%
 
    * 现有资源以查看其他操作：
 
-      * **包括子项**，指定将该资源的子项包含在工作流中。
-随即会打开一个对话框，允许您根据以下各项优化选择：
+     * **包括子项**，指定将该资源的子项包含在工作流中。
+       随即会打开一个对话框，允许您根据以下各项优化选择：
 
-         * 仅包括下级子项.
-         * 仅包括已修改的页面.
-         * 仅包括已发布的页面.
+       * 仅包括下级子项.
+       * 仅包括已修改的页面.
+       * 仅包括已发布的页面.
 
-        指定的任何子项都会添加到将应用工作流的资源列表中。
+       指定的任何子项都会添加到将应用工作流的资源列表中。
 
-      * **删除选择**，从工作流中删除该资源。
+     * **删除选择**，从工作流中删除该资源。
 
    ![wf-53](assets/wf-53.png)
 
@@ -135,10 +150,10 @@ ht-degree: 82%
    >
    >如果添加其他资源，则可以使用&#x200B;**返回**，在&#x200B;**属性**&#x200B;步骤中调整&#x200B;**保留工作流包**&#x200B;的设置。
 
-1. 使用&#x200B;**创建**&#x200B;关闭向导并创建工作流实例。Sites 控制台中随即会显示一则通知。
+1. 使用&#x200B;**创建**&#x200B;关闭向导并创建工作流实例。 Sites 控制台中随即会显示一则通知。
 
 ## 从页面编辑器启动工作流 {#starting-a-workflow-from-the-page-editor}
 
-编辑页面时，您可以从工具栏中选择&#x200B;**页面信息**。下拉菜单中包含&#x200B;**启动工作流**&#x200B;选项。这将打开一个对话框，您可以在其中指定所需的工作流，并根据需要指定标题：
+编辑页面时，您可以从工具栏中选择&#x200B;**页面信息**。 下拉菜单中包含&#x200B;**启动工作流**&#x200B;选项。 这将打开一个对话框，您可以在其中指定所需的工作流，并根据需要指定标题：
 
 ![wf-54](assets/wf-54.png)

@@ -9,20 +9,36 @@ docset: aem65
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '6846'
+source-wordcount: '6838'
 ht-degree: 3%
-
 ---
-
 # 自适应表单规则编辑器{#adaptive-forms-rule-editor}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表有关创建自适应表单的重大改进，确保实现令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html) |
 | AEM 6.5 | 本文 |
 
 ## 概述 {#overview}
@@ -58,32 +74,32 @@ Some of the key actions that you can perform on adaptive form objects using rule
 
 在规则编辑器中，**When**&#x200B;规则类型强制使用condition-action结构。
 
-**Action-Condition**&#x200B;在此构造中，规则首先定义要触发的操作，然后定义评估条件。 Another variation of this construct is action-condition-alternate action, which also defines an alternate action to trigger if the condition returns False.
+**Action-Condition**&#x200B;在此构造中，规则首先定义要触发的操作，然后定义评估条件。 此结构的另一个变体是action-condition-alternate action ，它还会定义在条件返回False时要触发的替代操作。
 
-The Show, Hide, Enable, Disable, Set Value Of, and Validate rule types in rule editor enforce the action-condition rule construct. By default, the alternate action for Show is Hide and for Enable is Disable, and conversely. You cannot change the default alternate action.
+规则编辑器中的“显示”、“隐藏”、“启用”、“禁用”、“设置值”和“验证”规则类型强制实施操作条件规则结构。 默认情况下，“显示”的替代操作是“隐藏”，“启用”的替代操作是“禁用”，反之亦然。 您不能更改默认替代操作。
 
 >[!NOTE]
 >
->The available rule types, including conditions and actions that you define in rule editor, also depend on the type of form object on which you are creating a rule. The rule editor displays only valid rule types and options for writing condition and action statements for a particular form object type. For example, you do not see Validate, Set Value Of, Enable, and Disable rule types for a panel object.
+>可用的规则类型（包括在规则编辑器中定义的条件和操作）还取决于创建规则的表单对象的类型。 规则编辑器仅显示有效的规则类型和选项，用于为特定表单对象类型编写条件和操作语句。 例如，您看不到面板对象的“验证”、“设置值”、“启用”和“禁用”规则类型。
 
-For more information about rule types available in the rule editor, see [Available rule types in rule editor](#available-rule-types-in-rule-editor).
+有关规则编辑器中可用规则类型的详细信息，请参阅规则编辑器中的[可用规则类型](#available-rule-types-in-rule-editor)。
 
-### Guidelines for choosing a rule construct {#guidelines-for-choosing-a-rule-construct}
+### 选择规则结构的准则 {#guidelines-for-choosing-a-rule-construct}
 
-While you can achieve most of the use cases by using any rule construct, here are some guidelines to choose one construct over another. For more information about the available rules in rule editor, see [Available rule types in rule editor](#available-rule-types-in-rule-editor).
+虽然您可以使用任何规则构建来实现大多数用例，但以下是选择一种构建而不是另一种构建的一些准则。 有关规则编辑器中可用规则的更多信息，请参阅规则编辑器中的[可用规则类型](#available-rule-types-in-rule-editor)。
 
-* A typical rule of the thumb when creating a rule is to think about it in the context of the object on which you are writing a rule. Consider that you want to hide or show the field B based on the value a user specifies in the field A. In this case, you are evaluating a condition on field A, and based on the value it returns, you are triggering an action on field B.
+* 创建规则时，一个典型的经验法则是考虑您所编写规则的对象的上下文。 假定您要根据用户在字段A中指定的值隐藏或显示字段B。在这种情况下，您要评估字段A的条件，并根据它返回的值，触发字段B的操作。
 
-  Therefore, if you are writing a rule on field B (the object on which you are evaluating a condition), use the condition-action construct or the When rule type. Similarly, use the action-condition construct or Show or Hide rule type on field A.
+  因此，如果您在字段B（评估条件的对象）上编写规则，请使用condition-action结构或When规则类型。 同样，在字段A上使用操作条件结构或显示或隐藏规则类型。
 
-* At times, you need to perform multiple actions based on one condition. In such cases, it is recommended to use the condition-action construct. In this construct, you can evaluate a condition once and specify multiple action statements.
+* 有时，您需要根据一个条件执行多个操作。 在这种情况下，建议使用条件 — 操作构造。 在此构造中，您可以计算一次条件并指定多个操作语句。
 
-  For example, to hide fields B, C, and D based on the condition that checks for the value a user specifies in field A, write one rule with condition-action construct or When rule type on field A and specify actions to control the visibility of fields B, C, and D. Otherwise, you need three separate rules on fields B, C, and D, where each rule checks the condition and shows or hides the respective field. In this example, it is more efficient to write the When rule type on one object rather than Show or Hide rule type on three objects.
+  例如，要根据检查用户在字段A中指定的值的条件隐藏字段B、C和D，请编写一条规则，其中在字段A上使用condition-action结构或When规则类型，并指定操作以控制字段B、C和D的可见性。否则，您需要在字段B、C和D上分别使用三个规则，其中每个规则都会检查条件，并显示或隐藏各自的字段。 在此示例中，在一个对象上编写When规则类型比在三个对象上编写Show或Hide规则类型更有效。
 
-* To trigger an action based on multiple conditions, it is recommended to use action-condition construct. For example, to show and hide field A by evaluating conditions on fields B, C, and D, use Show or Hide rule type on field A.
-* Use condition-action or action condition construct if the rule contains one action for one condition.
-* If a rule checks for a condition and performs an action immediately on providing a value in a field or exiting a field, it is recommended to write a rule with condition-action construct or the When rule type on the field on which the condition is evaluated.
-* The condition in the When rule is evaluated when a user changes the value of the object on which the When rule is applied. 但是，如果您希望操作在服务器端更改时触发（例如在预填充值中），则建议编写一个When规则以在字段初始化时触发操作。
+* 要根据多个条件触发操作，建议使用action-condition构造。 例如，要通过评估字段B、C和D的条件来显示和隐藏字段A，请在字段A上使用显示或隐藏规则类型。
+* 如果规则包含一个条件的一个操作，则使用condition-action或action condition结构。
+* 如果规则检查条件，并在字段中提供值或退出字段时立即执行操作，则建议在评估条件的字段中编写具有condition-action结构或When规则类型的规则。
+* 当用户更改应用When规则的对象的值时，将评估When规则中的条件。 但是，如果您希望操作在服务器端更改时触发（例如在预填充值中），则建议编写一个When规则以在字段初始化时触发操作。
 * 在编写下拉列表、单选按钮或复选框对象的规则时，表单中这些表单对象的选项或值会在规则编辑器中预填充。
 
 ## 规则编辑器中的可用运算符类型和事件 {#available-operator-types-and-events-in-rule-editor}
@@ -184,49 +200,49 @@ _
 
 **清除值**&#x200B;清除指定对象的值。
 
-**Set Focus** Sets focus on the specified object.
+**设置焦点**&#x200B;设置指定对象的焦点。
 
-**Save Form** Saves the form.
+**保存表单**&#x200B;保存表单。
 
-**Submit Forms** Submits the form.
+**提交Forms**&#x200B;提交表单。
 
-**Reset Form** Resets the form.
+**重置表单**&#x200B;重置表单。
 
-**Validate Form** Validates the form.
+**验证表单**&#x200B;验证表单。
 
-**Add Instance** Adds an instance of the specified repeatable panel or table row.
+**添加实例**&#x200B;添加指定可重复面板或表行的实例。
 
-**Remove Instance** Removes an instance of the specified repeatable panel or table row.
+**删除实例**&#x200B;删除指定的可重复面板或表行的实例。
 
-**Navigate to** Navigates to other Interactive Communications, adaptive forms, other assets such as images or document fragments, or an external URL. For more information, see [Add button to the Interactive Communication](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel).
+**导航到**&#x200B;导航到其他交互式通信、自适应表单、其他资产（如图像或文档片段）或外部URL。 有关详细信息，请参阅[将按钮添加到交互式通信](../../forms/using/create-interactive-communication.md#addbuttontothewebchannel)。
 
 ### 设置值 {#set-value-of}
 
-The **[!UICONTROL Set Value of]** rule type lets you set the value of a form object depending on whether the specified condition is satisfied or not. The value can be set to a value of another object, a literal string, a value derived from a mathematical expression or a function, a value of a property of another object, or the output of a form data model service. Similarly, you can check for a condition on a component, string, property, or values derived from a function or mathematical expression.
+]**规则类型的**[!UICONTROL &#x200B;设置值允许您根据是否满足指定的条件来设置表单对象的值。 该值可以设置为另一个对象的值、文本字符串、从数学表达式或函数派生的值、另一个对象的属性的值或表单数据模型服务的输出。 同样，您可以检查组件、字符串、属性或从函数或数学表达式派生的值的条件。
 
-The Set Value Of rule type is not available for all form objects, such as panels and toolbar buttons. A standard Set Value Of rule has the following structure:
-
-
-
-Set value of Object A to:
-
-(string ABC) OR
-(object property X of Object C) OR
-(value from a function) OR
-(value from a mathematical expression) OR
-(output value of a data model service or web service);
-
-When (optional):
-
-(Condition 1 AND Condition 2 AND Condition 3) is TRUE;
+“设置值”规则类型不适用于所有表单对象，例如面板和工具栏按钮。 标准的“设置值”规则具有以下结构：
 
 
 
-The following example takes the value in `dependentid` field as input and sets the value of the `Relation` field to the output of the `Relation` argument of the `getDependent` form data model service.
+将对象A的值设置为：
+
+（字符串ABC）或
+（对象C的对象属性X）或
+（函数中的值）或
+（数学表达式中的值）或
+（数据模型服务或Web服务的输出值）；
+
+时间（可选）：
+
+（条件1和条件2和条件3）为TRUE；
+
+
+
+以下示例将`dependentid`字段中的值作为输入，并将`Relation`字段的值设置为`getDependent`表单数据模型服务的`Relation`参数的输出。
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
-Example of Set Value rule using form data model service
+使用表单数据模型服务的设置值规则示例
 
 >[!NOTE]
 >
@@ -601,10 +617,10 @@ AEM Forms会跟踪您上次用于编写规则的规则编辑器模式。 当您�
 显示函数使用的参数。 一个函数可以有多个参数标记，每个参数按其出现顺序对应一个标记。
   `{type}`表示参数类型。 允许的参数类型包括：
 
-   1. 字符串
-   1. 数字
-   1. 布尔型
-   1. 范围
+  1. 字符串
+  1. 数字
+  1. 布尔型
+  1. 范围
 
   范围用于引用自适应表单的字段。 当表单使用延迟加载时，您可以使用`scope`访问其字段。 在加载字段时或字段标记为全局时，您可以访问这些字段。
 
@@ -616,9 +632,9 @@ AEM Forms会跟踪您上次用于编写规则的规则编辑器模式。 当您�
 添加有关函数的信息，例如其目标。
   {type}表示函数的返回类型。 允许的返回类型包括：
 
-   1. 字符串
-   1. 数字
-   1. 布尔型
+  1. 字符串
+  1. 数字
+  1. 布尔型
 
   所有其他退货类型均归入上述任一类型下。 不支持无。 确保选择以上类型之一。 返回类型不区分大小写。
 

@@ -1,5 +1,5 @@
 ---
-title: 命令行启动和停止
+title: 命令行启动与停止
 description: 了解如何从命令行启动和停止Adobe Experience Manager。
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
 solution: Experience Manager, Experience Manager Sites
 feature: Administering
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 5ef752af-d616-5b23-8312-06964e46b208
+    internal-label: Administering
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '352'
-ht-degree: 0%
-
+source-wordcount: '358'
+ht-degree: 3%
 ---
-
-# 命令行启动和停止{#command-line-start-and-stop}
+# 命令行启动与停止{#command-line-start-and-stop}
 
 ## 从命令行启动Adobe Experience Manager {#starting-adobe-experience-manager-from-the-command-line}
 
@@ -91,10 +100,10 @@ CQ_PORT=1234 ./start
 
 * 根据您使用的平台：
 
-   * 如果是从脚本或命令行启动AEM，请按&#x200B;**Ctrl+C**&#x200B;关闭服务器。
-   * 如果您已在UNIX®上使用启动脚本，则必须使用停止脚本来停止AEM。
+  * 如果是从脚本或命令行启动AEM，请按&#x200B;**Ctrl+C**&#x200B;关闭服务器。
+  * 如果您已在UNIX®上使用启动脚本，则必须使用停止脚本来停止AEM。
 
-* 如果通过双击jar文件启动AEM，请单击启动窗口上的&#x200B;**打开**&#x200B;按钮（该按钮随后将变为&#x200B;**关闭**）以关闭服务器。
+* 如果通过双击jar文件来启动AEM，请单击启动窗口上的&#x200B;**打开**&#x200B;按钮（该按钮随后将更改为&#x200B;**关闭**）以关闭服务器。
 
   ![chlimage_1-63](assets/chlimage_1-63.png)
 

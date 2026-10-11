@@ -9,7 +9,21 @@ exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
 solution: Experience Manager, Experience Manager Sites
 feature: Multi Site Manager
 role: Admin
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e86b80f2-7cb0-4646-8fcd-51d3bf272fce
+    internal-label: Multi Site Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2681'
 ht-degree: 20%
@@ -317,7 +331,7 @@ Live Copy的基本形式具有：
 
 #### 嵌套式 Live Copy {#nested-live-copies}
 
-当您（或流程）在现有Live Copy [&#128279;](#live-copy-with-non-live-copy-pages)中创建页面时，此新页面也可以设置为其他Blueprint的Live Copy。 这称为嵌套式Live Copy，其中第二个（内部）Live Copy的行为受第一个（外部）Live Copy的影响，如下所示：
+当您（或流程）在现有Live Copy ](#live-copy-with-non-live-copy-pages)中创建[页面时，此新页面也可以设置为其他Blueprint的Live Copy。 这称为嵌套式Live Copy，其中第二个（内部）Live Copy的行为受第一个（外部）Live Copy的影响，如下所示：
 
 * 为顶级Live Copy触发的深层转出可以继续在嵌套式Live Copy中进行（例如，如果触发器匹配）。
 * 源之间的任何链接都会在活动副本中重写。
@@ -395,7 +409,7 @@ Live Copy的源可以是常规页面，也可以是Blueprint配置包含的页�
 
 ### 转出冲突 {#rollout-conflicts}
 
-转出可能会变得复杂，尤其是当作者同时在源和Live Copy中编辑内容时，因此了解AEM如何处理转出[&#128279;](/help/sites-administering/msm-rollout-conflicts.md)期间可能发生的任何冲突会很有用。
+转出可能会变得复杂，尤其是当作者同时在源和Live Copy中编辑内容时，因此了解AEM如何处理转出](/help/sites-administering/msm-rollout-conflicts.md)期间可能发生的任何[冲突会很有用。
 
 ### 暂停和取消继承与同步 {#suspending-and-cancelling-inheritance-and-synchronization}
 

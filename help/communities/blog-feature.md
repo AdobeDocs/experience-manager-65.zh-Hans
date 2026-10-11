@@ -10,13 +10,20 @@ exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1719'
 ht-degree: 0%
-
 ---
-
 # 博客功能 {#blog-feature}
 
 ## 简介 {#introduction}
@@ -250,11 +257,11 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
   用于显示博客条目存档的格式。 该格式遵循Java™约定使用占位符。
 
-   * yyyy ：全年，如“2015”
-   * yy ：短年，如“15”
-   * MMMM ：整月，如6月
-   * MMM ：简短月份，如Jun
-   * MM ：月份数字，如06
+  * yyyy ：全年，如“2015”
+  * yy ：短年，如“15”
+  * MMMM ：整月，如6月
+  * MMM ：简短月份，如Jun
+  * MM ：月份数字，如06
 
   默认值为“yyyy MMMMM”，例如，将显示“2015年6月”
 
@@ -262,15 +269,15 @@ AEM Communities的博客功能已从创作活动转变为在发布环境中发�
 
   要显示在侧栏中的博客条目的标题和类型。 选择介于
 
-   * 作者
-   * 类别
-   * 归档
+  * 作者
+  * 类别
+  * 归档
 
 * **博客组件路径**
 
   *（可选）*&#x200B;从中列出博客文章的博客资源的位置。 如果保留为空，则它会使用同一页面上显示的resourceType `social/journal/components/hbs/journal`组件。
 
-   * 例如，`/content/sites/engage/en/blog/jcr:content/content/primary/blog`
+  * 例如，`/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
 * **建议限制**
 

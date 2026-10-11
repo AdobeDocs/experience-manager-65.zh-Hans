@@ -1,19 +1,26 @@
 ---
 title: 手动配置与 Adobe Target 的集成
-
 description: 了解如何手动配置与Adobe Target的集成。
-
-
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
 solution: Experience Manager, Experience Manager Sites
 feature: Integration
 role: Admin
-source-git-commit: d2623c78e8c779b20303865d4bb40effd1e5fe59
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 243139ec-8e41-5296-a287-31343ab1bc0f
+    internal-label: Integration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '2209'
 ht-degree: 28%
@@ -29,7 +36,7 @@ ht-degree: 28%
 您还可以通过配置A4T Analytics Cloud配置，将Adobe Target配置为在定位内容时使用Adobe Target作为报表源。
 
 要找到云配置和框架，请通过&#x200B;**工具** > **部署** > **云**&#x200B;导航到&#x200B;**云服务**。 ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-在Adobe Target下，单击&#x200B;**显示配置**。
+在Adobe Target下，单击**显示配置**。
 
 ### 已设置的目标配置属性 {#provisioned-target-configuration-properties}
 
@@ -58,7 +65,7 @@ ht-degree: 28%
 >* 改善了针对单页应用程序的实施选项
 >* AT.js包含target.js中包含的组件，因此不再需要调用target。
 
-<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=zh-Hans -->
+<!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### 已设置的目标框架属性 {#provisioned-target-framework-properties}
 
@@ -121,7 +128,7 @@ ht-degree: 28%
 >
 >您可以在&#x200B;**客户端库**&#x200B;下拉菜单中选择 AT.js 或 mbox.js。
 
-<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html?lang=zh-Hans -->
+<!-- OLD URL from above was 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### 创建 Target 云配置 {#creating-a-target-cloud-configuration}
 
@@ -202,7 +209,7 @@ ht-degree: 28%
 
    这将打开框架页面。 Sidekick提供的组件表示来自可以映射的[Client Context](/help/sites-administering/client-context.md)或[ContextHub](/help/sites-developing/ch-configuring.md)的信息。
 
-   框架![&#128279;](assets/chlimage_1-162.png)的组件
+   框架](assets/chlimage_1-162.png)的![组件
 
 1. 将表示要用于映射的数据的客户端上下文组件拖动到放置目标。 或者，将&#x200B;**ContextHub存储**&#x200B;组件拖动到框架。
 
@@ -226,7 +233,7 @@ ht-degree: 28%
 
 ### 将活动与Target云配置关联  {#associating-activities-with-the-target-cloud-configuration}
 
-将您的[AEM活动](/help/sites-authoring/activitylib.md)与Target云配置相关联，以便您可以镜像[Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html?lang=zh-Hans)中的活动。
+将您的[AEM活动](/help/sites-authoring/activitylib.md)与Target云配置相关联，以便您可以镜像[Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html)中的活动。
 
 >[!NOTE]
 >

@@ -1,24 +1,33 @@
 ---
 title: 管理视频资产
-description: 在 [!DNL Adobe Experience Manager]中上传、预览、注释和发布视频资源。
+description: 在[!DNL Adobe Experience Manager]中上传、预览、注释和发布视频资源。
 contentOwner: AG
 role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '5414'
+source-wordcount: '5614'
 ht-degree: 8%
-
 ---
-
 # 管理视频资产 {#manage-video-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-video-assets.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 视频格式是组织数字资产的重要组成部分。 [!DNL Adobe Experience Manager]提供了成熟的产品和功能，可在创建视频资产后管理其整个生命周期。
@@ -44,7 +53,7 @@ ht-degree: 8%
 除了[!DNL Assets]配置外，请更改以下配置以上传大型资产：
 
 * 增加令牌过期时间。 在`https://[aem_server]:[port]/system/console/configMgr`处的Web控制台中查看[!UICONTROL Adobe Granite CSRF Servlet]。 有关详细信息，请参阅[CSRF保护](/help/sites-developing/csrf-protection.md)。
-* 增加Dispatcher配置中的`receiveTimeout`。 有关详细信息，请参阅[Experience Manager Dispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans#renders-options)。
+* 增加Dispatcher配置中的`receiveTimeout`。 有关详细信息，请参阅[Experience Manager Dispatcher配置](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#renders-options)。
 
 >[!NOTE]
 >
@@ -192,7 +201,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
    在对Experience Manager进行身份验证后，会向YouTube管理员显示同意屏幕；Experience Manager会联系YouTube以获取权限。
 
 1. 单击&#x200B;**[!UICONTROL 继续]**。
-1. 在“将凭据添加到项目”页面的“下载凭据&#x200B;**”标题下，选择**&#x200B;[!UICONTROL &#x200B;下载&#x200B;]&#x200B;**，步骤4。**
+1. 在“将凭据添加到项目”页面的“下载凭据&#x200B;]**”标题下，选择**[!UICONTROL &#x200B;下载&#x200B;]**，步骤4。**[!UICONTROL 
 
    ![6_5_googleaccount-apis-createcredentials-downloadcredentials](assets/6_5_googleaccount-apis-createcredentials-downloadcredentials.png)
 
@@ -261,7 +270,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 1. 在“创建 YouTube 配置”页面的“Google Cloud Platform 设置”下的&#x200B;**[!UICONTROL 应用程序名称]**&#x200B;字段中，输入 Google 项目 ID。
 
    在之前配置Google Cloud设置时指定了项目ID。
-保持创建YouTube配置页面处于打开状态；稍后您将返回到此页面。
+   保持创建YouTube配置页面处于打开状态；稍后您将返回到此页面。
 
    ![6_5_youtubepublish-createyoutubeconfiguration](assets/6_5_youtubepublish-createyoutubeconfiguration.png)
 
@@ -309,7 +318,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 1. 在“YouTube 帐户设置”对话框的&#x200B;**[!UICONTROL 应用程序名称]**&#x200B;字段中，输入 Google 项目 ID。
 
    您在最初[配置Google Cloud设置](/help/assets/video.md#configuring-google-cloud-settings)时指定了项目ID。
-保持YouTube帐户设置对话框处于打开状态；稍后您将返回该对话框。
+   保持YouTube帐户设置对话框处于打开状态；稍后您将返回该对话框。
 
 1. 使用纯文本编辑器，打开您之前在配置Google云设置任务中下载并保存的JSON文件。
 1. 选择并复制整个JSON文本。
@@ -359,20 +368,20 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 1. 在“YouTube 发布”标题下，单击 **[!UICONTROL YouTube 类别]**。
 1. 在页面右侧的&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡下，执行以下操作：
 
-   * 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;文本字段中，选择并复制该值。
-将复制的值粘贴到打开的文本编辑器中。稍后在创建元数据处理配置文件时，您将需要此值。保持文本编辑器处于打开状态。
+   * 在&#x200B;**[!UICONTROL 映射到属性]**文本字段中，选择并复制该值。
+     将复制的值粘贴到打开的文本编辑器中。 稍后在创建元数据处理配置文件时，您将需要此值。 保持文本编辑器处于打开状态。
 
-   * 在&#x200B;**[!UICONTROL 选择]**&#x200B;下，选择并复制您要使用的默认值（如“人员”和“博客”或“科学和技术”）。
-将复制的值粘贴到打开的文本编辑器中。稍后在创建元数据处理配置文件时，您将需要此值。保持文本编辑器处于打开状态。
+   * 在&#x200B;**[!UICONTROL 选择]**下，选择并复制您要使用的默认值（如“人员”和“博客”或“科学和技术”）。
+     将复制的值粘贴到打开的文本编辑器中。 稍后在创建元数据处理配置文件时，您将需要此值。 保持文本编辑器处于打开状态。
 
 1. 在YouTube发布标题下，选择&#x200B;**[!UICONTROL YouTube隐私]**。
 1. 在页面右侧的&#x200B;**[!UICONTROL 设置]**&#x200B;选项卡下，执行以下操作：
 
-   * 在&#x200B;**[!UICONTROL 映射到属性]**&#x200B;文本字段中，选择并复制该值。
-将复制的值粘贴到打开的文本编辑器中。稍后在创建元数据处理配置文件时，您将需要此值。保持文本编辑器处于打开状态。
+   * 在&#x200B;**[!UICONTROL 映射到属性]**文本字段中，选择并复制该值。
+     将复制的值粘贴到打开的文本编辑器中。 稍后在创建元数据处理配置文件时，您将需要此值。 保持文本编辑器处于打开状态。
 
-   * 在&#x200B;**[!UICONTROL 选择]**&#x200B;下，选择并复制您要使用的默认值。请注意，“选择”成对分组为两个组。该对中的底部字段是您要复制的默认值，例如public、unlisted或private。
-将复制的值粘贴到打开的文本编辑器中。稍后在创建元数据处理配置文件时，您将需要此值。保持文本编辑器处于打开状态。
+   * 在&#x200B;**[!UICONTROL 选择]**下，选择并复制您要使用的默认值。 请注意，“选择”成对分组为两个组。 该对中的底部字段是您要复制的默认值，例如public、unlisted或private。
+     将复制的值粘贴到打开的文本编辑器中。 稍后在创建元数据处理配置文件时，您将需要此值。 保持文本编辑器处于打开状态。
 
 1. 在元数据架构编辑器页面的右上角附近，单击&#x200B;**[!UICONTROL 取消]**。
 1. 选择Experience Manager左上角的Experience Manager徽标，然后在左边栏中，单击&#x200B;**[!UICONTROL 工具]** （锤子图标）> **[!UICONTROL Assets]** > **[!UICONTROL 元数据配置文件]**。
@@ -439,7 +448,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 1. 在视频属性页面的右上角，单击&#x200B;**[!UICONTROL 保存并关闭]**。
 1. 在工具栏上，单击&#x200B;**[!UICONTROL 快速发布]**。
 
-   另请参阅[在Experience Manager Sites中使用发布管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=zh-Hans)。
+   另请参阅[在Experience Manager Sites中使用发布管理](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html)。
 
    您可以选择在YouTube渠道中验证已发布的视频。
 
@@ -554,7 +563,7 @@ Google会定期更改其用户界面。 因此，将视频发布到YouTube的步
 
    >[!NOTE]
    >
-   >由于来自[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)的&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;的多个工作流配置，最终记录错误消息可能需要较长时间，例如：
+   >由于[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)中的&#x200B;**[!UICONTROL 重试]**、**[!UICONTROL 重试延迟]**&#x200B;和&#x200B;**[!UICONTROL 超时]**&#x200B;存在多个工作流配置，最终记录错误消息会花费较长时间，例如：
    >
    >* Apache Sling作业队列配置
    >* Adobe Granite工作流外部进程作业处理程序

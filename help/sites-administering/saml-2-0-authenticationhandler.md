@@ -9,13 +9,25 @@ exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 solution: Experience Manager, Experience Manager Sites
 feature: Security
 role: Admin
-source-git-commit: 48d12388d4707e61117116ca7eb533cea8c7ef34
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c35bc059-fd80-4a01-91a6-e48da3c76758
+    internal-label: Security practices
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 1%
-
 ---
-
 # SAML 2.0 身份验证处理程序{#saml-authentication-handler}
 
 AEM附带[SAML](https://saml.xml.org/saml-specifications)身份验证处理程序。 此处理程序支持使用`HTTP POST`绑定的[SAML](https://saml.xml.org/saml-specifications) 2.0身份验证请求协议（Web-SSO配置文件）。
@@ -31,7 +43,7 @@ AEM附带[SAML](https://saml.xml.org/saml-specifications)身份验证处理程�
 
 >[!NOTE]
 >
->请参阅[AEM与SAML集成的演示](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html?lang=zh-Hans)。
+>请参阅[AEM与SAML集成的演示](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17481.html)。
 
 ## 配置SAML 2.0身份验证处理程序 {#configuring-the-saml-authentication-handler}
 

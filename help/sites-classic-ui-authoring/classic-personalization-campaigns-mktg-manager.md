@@ -10,13 +10,24 @@ exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '866'
-ht-degree: 2%
-
+source-wordcount: '1204'
+ht-degree: 1%
 ---
-
 # 使用营销活动管理器{#working-with-the-marketing-campaign-manager}
 
 在AEM中，营销活动管理器(MCM)是一个控制台，可帮助您管理多渠道营销活动。 借助此营销自动化软件，您可以管理所有品牌、活动和体验以及相关区段、列表、商机和报表。
@@ -36,23 +47,23 @@ ht-degree: 2%
 * **[仪表板](#dashboard)**
 该视图分为四个窗格：
 
-   * [列表](#lists)
-此窗格显示您已创建的列表以及该列表中的销售线索数。在此窗格中，您可以直接创建列表或导入潜在客户以创建列表。
-选择特定列表将带您进入[列表](#lists)部分，其中显示列表的详细信息。
+  * [列表](#lists)
+    此窗格显示您已创建的列表以及该列表中的销售线索数。 在此窗格中，您可以直接创建列表或导入潜在客户以创建列表。
+    选择特定列表将带您进入[列表](#lists)部分，其中显示列表的详细信息。
 
-   * [区段](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
-此窗格显示已定义的区段。通过区段，可表示共享某些特征的访客集合的特征。
-选择特定区段会打开区段定义页面。
+  * [区段](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
+    此窗格显示已定义的区段。 通过区段，可表示共享某些特征的访客集合的特征。
+    选择特定区段会打开区段定义页面。
 
-   * [报告](/help/sites-administering/reporting.md)
-AEM提供了各种报告来帮助您分析和监控实例的状态。此MCM窗格列出了报告。
-选择报告将打开报告页面。
+  * [报告](/help/sites-administering/reporting.md)
+    AEM提供了各种报告来帮助您分析和监控实例的状态。 此MCM窗格列出了报告。
+    选择报告将打开报告页面。
 
-   * [营销活动](#campaigns)
-此窗格列出了您的营销活动体验，如[新闻稿](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)和[Teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)。
+  * [营销活动](#campaigns)
+    此窗格列出了您的营销活动体验，如[新闻稿](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters)和[Teasers](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers)。
 
 * **[潜在客户](#leads)**
-在这里，您可以管理您的潜在客户。您可以创建或导入潜在客户，编辑各个潜在客户的特定详细信息，或在不再需要时删除。您还可以将潜在客户放入不同的组（称为“列表”）。**注意：** Adobe不打算进一步增强此功能。
+在这里，您可以管理您的潜在客户。 您可以创建或导入潜在客户，编辑各个潜在客户的特定详细信息，或在不再需要时删除。 您还可以将潜在客户放入不同的组（称为“列表”）。 **注意：** Adobe不打算进一步增强此功能。
 建议使用[Adobe Campaign以及与AEM](/help/sites-administering/campaign.md)的集成。
 
 * **[列表](#lists)**
@@ -114,7 +125,7 @@ AEM提供了各种报告来帮助您分析和监控实例的状态。此MCM窗�
 
 * **在左窗格**：
 此处列出了所有品牌和促销活动。
-单击品牌将展开列表，以在左侧窗格中显示所有相关营销活动；此列表还会显示每个营销活动存在的体验数量。它还会打开右侧窗格中的品牌概述。
+单击品牌将展开列表，以在左侧窗格中显示所有相关营销活动；此列表还会显示每个营销活动存在的体验数量。 它还会打开右侧窗格中的品牌概述。
 
 * **在右窗格**：
 此时会显示每个品牌的图标（不会显示历史促销活动）。
@@ -133,8 +144,8 @@ AEM提供了各种报告来帮助您分析和监控实例的状态。此MCM窗�
 
 * 选择营销策划（在右窗格中）以：
 
-   * 编辑&#x200B;**属性……**
-   * **删除**&#x200B;营销活动。
+  * 编辑&#x200B;**属性……**
+  * **删除**&#x200B;营销活动。
 
 * 打开营销活动概述（在右窗格中双击某个营销活动，或在左窗格中单击）。
 
@@ -175,8 +186,8 @@ AEM提供了各种报告来帮助您分析和监控实例的状态。此MCM窗�
    * 创建&#x200B;**新……**&#x200B;体验；例如，Adobe Target优惠、Teaser和新闻稿。
    * **编辑**&#x200B;特定Teaser页面或新闻稿的详细信息（也可以使用双击）。
    * 为特定的Teaser页面或新闻稿定义&#x200B;**属性……**。
-   * **模拟**&#x200B;体验（Teaser页面或新闻稿）的外观。
-当模拟页面打开时，您可以打开Sidekick以切换到该页面的编辑模式。
+   * **模拟**体验（Teaser页面或新闻稿）的外观。
+     当模拟页面打开时，您可以打开Sidekick以切换到该页面的编辑模式。
 
    * **分析……**&#x200B;为页面生成的展示次数。
 

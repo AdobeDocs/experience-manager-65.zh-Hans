@@ -9,7 +9,17 @@ exl-id: c29f6213-1df6-45af-91c8-14b255276d82
 solution: Experience Manager,Commerce
 feature: Commerce Integration Framework
 role: Admin, Developer
-source-git-commit: 10268f617b8a1bb22f1f131cfd88236e7d5beb47
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2961'
 ht-degree: 2%
@@ -166,7 +176,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 >
 >`/etc/commerce/products/...`
 >
->这意味着，默认情况下，[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=zh-Hans)会阻止这些服务器，因此请根据需要进行配置。
+>这意味着，默认情况下，[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html)会阻止这些服务器，因此请根据需要进行配置。
 
 #### 编辑产品信息 — 触屏优化UI {#editing-product-information-touch-optimized-ui}
 
@@ -371,7 +381,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
 >[!NOTE]
 >
->另请阅读AEM[&#128279;](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)中的事件处理。
+>另请阅读AEM](https://blogs.adobe.com/experiencedelivers/experience-management/event_handling_incq/)中的[事件处理。
 
 ### 添加到购物车图像链接 {#image-with-add-to-cart-links}
 
@@ -663,7 +673,7 @@ Adobe Experience Manager (AEM)通用解决方案提供了管理存储库中保�
 
    ![加号形状创建图标](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
-1. 将打开向导。 使用&#x200B;**基本**、**内容**、**付款**&#x200B;和&#x200B;**履行**&#x200B;选项卡输入有关新订单[&#128279;](/help/commerce/cif-classic/administering/concepts.md#order-information)的信息。
+1. 将打开向导。 使用&#x200B;**基本**、**内容**、**付款**&#x200B;和&#x200B;**履行**&#x200B;选项卡输入有关新订单](/help/commerce/cif-classic/administering/concepts.md#order-information)的[信息。
 
 1. 选择&#x200B;**创建**&#x200B;以保存信息。
 

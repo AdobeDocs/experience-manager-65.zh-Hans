@@ -1,5 +1,5 @@
 ---
-title: 移动Web
+title: Mobile Web
 description: AEM提供了多种工具，使您能够为移动设备开发站点并将您的内容集成到移动设备应用程序中
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,14 +10,23 @@ exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '183'
-ht-degree: 0%
-
+ht-degree: 10%
 ---
-
-# 移动Web{#mobile-web}
+# Mobile Web{#mobile-web}
 
 {{ue-over-mobile}}
 
@@ -31,7 +40,7 @@ AEM提供了多种工具，使您能够为移动设备开发站点并将您的�
 
 * [创建设备组筛选器](/help/sites-developing/groupfilters.md)
 * [网页的响应式设计](/help/sites-developing/responsive.md)
-* [为移动设备创建站点](/help/sites-developing/mobile.md)
+* [为移动设备创建网站](/help/sites-developing/mobile.md)
 * [模拟器](/help/sites-developing/emulators.md)
 
 ## 开发移动应用程序 {#developing-mobile-apps}

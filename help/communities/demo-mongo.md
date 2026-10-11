@@ -9,13 +9,20 @@ role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '802'
 ht-degree: 0%
-
 ---
-
 # 如何设置MongoDB以进行演示 {#how-to-setup-mongodb-for-demo}
 
 ## 简介 {#introduction}
@@ -38,25 +45,25 @@ ht-degree: 0%
 
 * 从[https://www.mongodb.com/](https://www.mongodb.com/)下载MongoDB
 
-   * 操作系统选择：
+  * 操作系统选择：
 
-      * Linux®
-      * Mac 10.8
-      * Windows 7
+    * Linux®
+    * Mac 10.8
+    * Windows 7
 
-   * 版本选择：
+  * 版本选择：
 
-      * 至少应使用版本2.6
+    * 至少应使用版本2.6
 
 * 基本配置
 
-   * 按照MongoDB安装说明操作。
-   * 为mongod配置：
+  * 按照MongoDB安装说明操作。
+  * 为mongod配置：
 
-      * 无需配置蒙兀国或分片。
+    * 无需配置蒙兀国或分片。
 
-   * 已安装的MongoDB文件夹名为&lt;mongo-install>。
-   * 定义的数据目录路径名为&lt;mongo-dbpath>。
+  * 已安装的MongoDB文件夹名为&lt;mongo-install>。
+  * 定义的数据目录路径名为&lt;mongo-dbpath>。
 
 * MongoDB可以与AEM在同一主机上运行或远程运行。
 
@@ -79,16 +86,16 @@ ht-degree: 0%
 * `bin/mongod --port 27017 --dbpath data --replSet rs0&`
 * `bin/mongo`
 
-   * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
-   * `rs.initiate(cfg)`
+  * `cfg = {"_id": "rs0","version": 1,"members": [{"_id": 0,"host": "127.0.0.1:27017"}]}`
+  * `rs.initiate(cfg)`
 
 * `bin/mongod --port 27018 --dbpath data1 --replSet rs0&`
 * `bin/mongod --port 27019 --dbpath data2 --replSet rs0&`
 * `bin/mongo`
 
-   * `rs.add("127.0.0.1:27018")`
-   * `rs.add("127.0.0.1:27019")`
-   * `rs.status()`
+  * `rs.add("127.0.0.1:27018")`
+  * `rs.add("127.0.0.1:27019")`
+  * `rs.status()`
 
 ## Solr {#solr}
 
@@ -96,15 +103,15 @@ ht-degree: 0%
 
 * 从[Apache Lucene](https://archive.apache.org/dist/lucene/solr/)下载Solr：
 
-   * 适用于任何操作系统。
-   * Solr版本7.0。
-   * Solr需要Java™ 1.7或更高版本。
+  * 适用于任何操作系统。
+  * Solr版本7.0。
+  * Solr需要Java™ 1.7或更高版本。
 
 * 基本配置
 
-   * 执行“example”Solr设置。
-   * 无需服务。
-   * 已安装的Solr文件夹称为&lt;solr-install>。
+  * 执行“example”Solr设置。
+  * 无需服务。
+  * 已安装的Solr文件夹称为&lt;solr-install>。
 
 ### 为AEM Communities配置Solr {#configure-solr-for-aem-communities}
 

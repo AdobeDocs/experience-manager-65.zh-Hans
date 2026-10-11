@@ -1,19 +1,21 @@
 ---
 title: 开箱即用的应用程序处理程序
-
 description: 阅读本页，了解带AEM的Adobe PhoneGap Enterprise的现成处理程序。
-
-
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1419'
 ht-degree: 0%
@@ -65,8 +67,8 @@ ht-degree: 0%
 
 * ***类型 — 字符串 — mobilecontentlisting***
 * ***path*** — 字符串 — 保留为空，必须存在才能被视为有效的处理程序，但路径被推断为当前的ContentSync缓存。 此值将被忽略。
-* ***targetRootDirectory* -**&#x200B;字符串 — 要作为此处理程序的内容更新的目标根添加到路径的前缀。
-* ContentSync要执行此处理程序的&#x200B;***订单 — 长* -**&#x200B;订单。 此数字应设置为高于所有其他处理程序，如100。 它应在传统内容处理程序之后运行。
+* ***targetRootDirectory* -**字符串 — 要作为此处理程序的内容更新的目标根添加到路径的前缀。
+* ContentSync要执行此处理程序的&#x200B;***订单 — 长* -**订单。 此数字应设置为高于所有其他处理程序，如100。 它应在传统内容处理程序之后运行。
 
 ```xml
 {
@@ -91,7 +93,7 @@ ht-degree: 0%
 该处理程序应在AEM应用程序外壳ContentSync配置（具有pge-type=app-instance的节点）上使用
 
 * ***类型 — 字符串 — mobilecontentpackageslisting***
-* ***path &#x200B;**-**String*** — 应用程序Shell的路径（节点的pge-type=app-instance）。
+* ***path **-**String*** — 应用程序Shell的路径（节点的pge-type=app-instance）。
 * ***targetRootDirectory — 字符串*** — 要作为此处理程序的内容更新的目标根添加到路径的前缀。
 * ***顺序 — ContentSync执行此处理程序的顺序为* -**。 此数字应设置为高于所有其他处理程序，如100。 它应在传统内容处理程序之后运行。
 
@@ -125,8 +127,8 @@ ht-degree: 0%
 
 此处理程序应在AEM应用程序外壳ContentSync配置（pge-type=[应用程序实例]的节点）上使用。
 
-* ***类型 — 字符串* - &#x200B;** widgetconfig
-* ***path &#x200B;**-**String*** — 任何应用程序Shell子节点（pge-type=[app-instance]的节点）的路径。
+* ***类型 — 字符串* - **widgetconfig
+* ***path **-**String*** — 任何应用程序Shell子节点（pge-type=[app-instance]的节点）的路径。
 * ***targetRootDirectory — 字符串*** — 要作为此处理程序的内容更新的目标根添加到路径的前缀。
 * ***targetIconDirectory — 字符串*** — 用于放置应用程序图标的目录
 
@@ -167,7 +169,7 @@ AEM资产是使用“cq”、“sling”或“jcr”进行命名空间的资产�
 
 * ***类型 — 字符串*** — 应用程序资产
 
-* ***path &#x200B;**-**String*** — 应用程序实例下存储应用程序资产的位置的路径
+* ***path **-**String*** — 应用程序实例下存储应用程序资产的位置的路径
 
 **mobileappoffers**&#x200B;已为Personalization用例引入新的内容同步处理程序以呈现目标内容。 “mobileappoffers”处理程序知道如何呈现由内容作者创建的关联目标选件。 mobileappoffers处理程序扩展了抽象页面更新处理程序，因此许多属性是相似的。 mobileappoffers处理程序的详细信息具有以下属性。
 
@@ -180,7 +182,7 @@ mobileappsoffers处理程序扩展mobileappspages处理程序并添加以下属�
 
 **mobileappconfig** mobileappconfig内容同步处理程序提供了一种将JSON数据插入MobileAppsConfig.json的方法。 要注册提供程序类，开发人员将在提供程序列表中添加其MobileAppsInfoProvider类。 该处理程序将对MobileAppsInfoProviders列表进行迭代，并允许提供程序将数据插入生成的json文件中。 此处理程序支持的属性列表包括：
 
-* ***path &#x200B;**-**String*** — 包含pge-type=app-instance的应用程序实例节点或扩展/libs/mobileapps/core/components/instance的RT的路径
+* ***path **-**String*** — 包含pge-type=app-instance的应用程序实例节点或扩展/libs/mobileapps/core/components/instance的RT的路径
 * ***提供程序 — 字符串*** `[]` — 完全限定的MobileAppsInfoProviders列表
 * ***targetRootDirectory — 字符串*** — 要将MobileAppsConfig.json文件写入到的目录。
 * **fileName - String** — 要将JSON写入到的文件的可选名称，默认为MobileAppsConfig.json

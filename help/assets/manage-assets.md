@@ -1,5 +1,5 @@
 ---
-title: 管理您的数字资源
+title: 管理您的数字资产
 description: 了解上传、下载、编辑、搜索、删除、注释和版本数字资源等资源管理任务。
 contentOwner: AG
 role: User
@@ -8,18 +8,29 @@ mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '10112'
+source-wordcount: '10238'
 ht-degree: 3%
-
 ---
-
-# 管理您的数字资源 {#manage-digital-assets}
+# 管理您的数字资产 {#manage-digital-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=zh-Hans) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-digital-assets.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 在[!DNL Adobe Experience Manager Assets]中，您可以执行除存储和管理资源之外的其他操作。 [!DNL Experience Manager]提供企业级资产管理功能。 您可以编辑和共享资源、运行高级搜索以及创建数十种受支持的文件格式的多个演绎版。 您还可以管理版本和数字权限、自动处理资源、管理和控制元数据、使用注释进行协作等等。
@@ -104,7 +115,7 @@ In this complete article, replace emphasis with UICONTROL where appropriate.
 
 >[!CAUTION]
 >
->当默认值为500 MB且区块大小为50 MB时，将触发区块上载。 如果您编辑[Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html?lang=zh-Hans)并将`timeout configuration`设置为小于资源上传所花费的时间，则在资源上传过程中会遇到会话超时情况。 因此，请更改`chunkUploadMinFileSize`和`chunksize`，以便每个区块请求都刷新会话。
+>当默认值为500 MB且区块大小为50 MB时，将触发区块上载。 如果您编辑[Apache Jackrabbit Oak TokenConfiguration](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-16464.html)并将`timeout configuration`设置为小于资源上传所花费的时间，则在资源上传过程中会遇到会话超时情况。 因此，请更改`chunkUploadMinFileSize`和`chunksize`，以便每个区块请求都刷新会话。
 >
 >给定凭据过期超时、延迟、带宽和预期并发上传数，可让您确保选择以下内容的最大值：
 >
@@ -171,7 +182,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上载
 
 >[!NOTE]
 >
->要在Dynamic Media - Scene7模式下通过FTP上传资产，请在[!DNL Experience Manager]创作实例上安装功能包18912。 联系[Adobe客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)以访问FP-18912并完成FTP帐户的设置。 有关详细信息，请参阅[安装功能包18912以进行批量资源迁移](/help/assets/bulk-ingest-migrate.md)。
+>要在Dynamic Media - Scene7模式下通过FTP上传资产，请在[!DNL Experience Manager]创作实例上安装功能包18912。 联系[Adobe客户支持](https://experienceleague.adobe.com/?support-solution=General#support)以访问FP-18912并完成FTP帐户的设置。 有关详细信息，请参阅[安装功能包18912以进行批量资源迁移](/help/assets/bulk-ingest-migrate.md)。
 >
 >如果您使用FTP上传资产，则会忽略[!DNL Experience Manager]中指定的上传设置。 而是使用Dynamic Media Classic中定义的文件处理规则。
 
@@ -179,7 +190,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上载
 
 1. 使用您选择的FTP客户端，使用从预配电子邮件收到的FTP用户名和密码登录到FTP服务器。 在FTP客户端中，将文件或文件夹上传到FTP服务器。
 
-1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=zh-Hans#system-requirements-dmc-app)，然后登录到您的帐户。
+1. 打开[Dynamic Media Classic桌面应用程序](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html#system-requirements-dmc-app)，然后登录到您的帐户。
 
    在配置时，您的凭据和登录由Adobe提供。 如果您没有此信息，请联系Adobe客户支持。
 
@@ -197,8 +208,8 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上载
 1. 在“上载作业选项”对话框的右下角，单击&#x200B;**[!UICONTROL 保存]**。
 1. 在上传页面的右下角，单击&#x200B;**[!UICONTROL 提交上传]**。
 
-   要查看上载进度，请在全局导航栏上单击&#x200B;**[!UICONTROL 作业]**。“作业”页显示上载的进度。您可以随时在[!DNL Experience Manager]中继续工作并返回Dynamic Media Classic中的“作业”页面以查看正在进行的作业。
-若要取消正在进行的上载作业，请单击“持续时间”时间旁边的&#x200B;**[!UICONTROL 取消]**。
+   要查看上载进度，请在全局导航栏上单击&#x200B;**[!UICONTROL 作业]**。 “作业”页显示上载的进度。 您可以随时在[!DNL Experience Manager]中继续工作并返回Dynamic Media Classic中的“作业”页面以查看正在进行的作业。
+   若要取消正在进行的上载作业，请单击“持续时间”时间旁边的**[!UICONTROL 取消]**。
 
 #### 上载作业选项 {#upload-job-options}
 
@@ -206,7 +217,7 @@ Dynamic Media支持通过FTP服务器批量上传资产。 如果您打算上载
 |---|---|---|
 | 作业名称 | | 在文本字段中预填充的默认名称包括用户输入的名称部分以及日期和时间戳。 您可以使用默认名称或为此上载作业输入您自己创建的名称。 <br>作业和其他上载和发布作业均记录在“作业”页面上，您可以在该页面上检查作业的状态。 |
 | 上传后发布 | | 自动发布您上传的资产。 |
-| 在任意文件夹内，使用相同的基本资源名称（不区分扩展名）进行覆盖 | | 如果希望上载的文件以相同的名称替换现有文件，请选择此选项。 此选项的名称可能不同，具体取决于&#x200B;**[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]** > **[!UICONTROL 上载到应用程序]** > **[!UICONTROL 覆盖图像]**&#x200B;中的设置。 |
+| 在任意文件夹内，使用相同的基本资产名称（不区分扩展名）进行覆盖 | | 如果希望上载的文件以相同的名称替换现有文件，请选择此选项。 此选项的名称可能不同，具体取决于&#x200B;**[!UICONTROL 应用程序设置]** > **[!UICONTROL 常规设置]** > **[!UICONTROL 上载到应用程序]** > **[!UICONTROL 覆盖图像]**&#x200B;中的设置。 |
 | 上传时解压缩Zip或Tar文件 | | |
 | 作业选项 | | 单击&#x200B;**[!UICONTROL 作业选项]**，以便打开[!UICONTROL 上载作业选项]对话框并选择影响整个上载作业的选项。 对于所有文件类型，这些选项都相同。<br>您可以从“应用程序常规设置”页面开始选择用于上载文件的默认选项。 若要打开此页面，请选择&#x200B;**[!UICONTROL 设置]** > **[!UICONTROL 应用程序设置]**。 选择&#x200B;**[!UICONTROL 默认上载选项]**&#x200B;选项以打开[!UICONTROL 上载作业选项]对话框。 |
 | | 时间 | 选择“一次性”或“循环”。 要设置循环作业，请选择重复选项（每日、每周、每月或自定义）以指定希望FTP上载作业重复的时间。 然后，根据需要指定计划选项。 |
@@ -408,7 +419,7 @@ Photoshop文档(PSD)文件最常用于创建图像模板。 上传PSD文件时�
 
    *图：使用日期选择器计划资产激活。*
 
-1. 如果要更新元数据属性中的复制代理触发器，请选中&#x200B;**[!UICONTROL 已达到打开/关闭时间]**&#x200B;选项。
+1. 如果要更新元数据属性中的复制代理触发器，请选中&#x200B;**[!UICONTROL 已达到打开/关闭时间]**选项。
    ![代理设置](assets-dm/Agent-settings.png)
 
 1. 要在特定持续时间后停用资产，请从&#x200B;**[!UICONTROL 关闭时间]**&#x200B;字段旁边的日期选取器中选择停用日期/时间。 停用日期应晚于资源的激活日期。 在[!UICONTROL 结束时间]后，无法通过[!DNL Assets] Web界面或HTTP API使用资产及其演绎版。
@@ -470,8 +481,8 @@ Photoshop文档(PSD)文件最常用于创建图像模板。 上传PSD文件时�
 
 ## 移动和重命名资源 {#moving-or-renaming-assets}
 
-将资源（或文件夹）移动到其他位置时，不会复制资源（或文件夹），这与复制资源时不同。将资源（或文件夹）放置到目标位置，并从源位置将其删除。在将资源移动到新位置时，您还可以重命名资源。
-如果您要将已发布的资产移至其他位置，则可以选择重新发布该资产。默认情况下，对已发布的资产执行移动操作会自动取消发布该资产。如果作者在移动资产时选择[!UICONTROL Republish]选项，则会重新发布已移动的资产。
+将资源（或文件夹）移动到其他位置时，不会复制资源（或文件夹），这与复制资源时不同。 将资源（或文件夹）放置到目标位置，并从源位置将其删除。 在将资源移动到新位置时，您还可以重命名资源。
+如果您要将已发布的资产移至其他位置，则可以选择重新发布该资产。 默认情况下，对已发布的资产执行移动操作会自动取消发布该资产。 如果作者在移动资产时选择[!UICONTROL Republish]选项，则会重新发布已移动的资产。
 
 ![移动已发布的资产时，您可以重新发布该资产](assets/republish-on-move.png)
 
@@ -479,7 +490,7 @@ Photoshop文档(PSD)文件最常用于创建图像模板。 上传PSD文件时�
 
 1. 导航到要移动的资源的位置。
 
-1. 选择资源，然后单击工具栏中的&#x200B;**[!UICONTROL 移动]**&#x200B;选项。
+1. 选择资源，然后单击工具栏中的&#x200B;**[!UICONTROL 移动]**选项。
    ![在Assets工具栏中移动选项](assets/do-not-localize/move.png)
 
 1. 在[!UICONTROL 移动Assets]向导中，执行以下操作之一：
@@ -725,7 +736,7 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
 
 >[!NOTE]
 >
->时间轴包含多个特定于内容片段[&#128279;](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)的选项。
+>时间轴包含多个特定于内容片段](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments)的[选项。
 
 ## 为资源作批注 {#annotating}
 
@@ -735,7 +746,7 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
 
 >[!NOTE]
 >
->对于内容片段，在片段编辑器[&#128279;](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)中创建注释。
+>对于内容片段，在片段编辑器](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment)中创建[注释。
 
 1. 导航到要将注释添加到的资源的位置。
 1. 从以下选项之一单击&#x200B;**[!UICONTROL 注释]**&#x200B;选项：
@@ -835,7 +846,7 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
 
    已生成PDF上的![批注和审阅状态](assets/annotation-status-pdf.png)
 
-1. 使用右上方的选项下载PDF![&#128279;](assets/do-not-localize/download.png)的![下载选项，或在PDF](assets/do-not-localize/print.png)PDF上打印打印选项。
+1. 使用右上方的选项下载PDF](assets/do-not-localize/download.png)的![下载选项，或在PDF](assets/do-not-localize/print.png)PDF上打印![打印选项。
 
    >[!NOTE]
    >
@@ -884,7 +895,7 @@ CUG是限制对资源的访问权限的额外方法。 您还可以配置文件�
 * 使用同一位置中存在的相同文件名上传资源。 它可以是新资产，也可以是同一资产的修改版本。
 * 编辑[!DNL Experience Manager]中的图像并保存更改。
 * 编辑资源的元数据。
-* 使用[!DNL Experience Manager]桌面应用签出现有资产，编辑它，然后[上载更改](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#edit-assets-upload-updated-assets)。
+* 使用[!DNL Experience Manager]桌面应用签出现有资产，编辑它，然后[上载更改](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#edit-assets-upload-updated-assets)。
 
 您还可以通过工作流启用自动版本控制。 在为资源创建版本时，元数据和演绎版与版本一起保存。 呈现版本是相同图像的替代版本，例如，上传的JPEG文件的PNG呈现版本。
 
@@ -959,4 +970,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-要了解更多信息，请参阅如何[使用桌面应用程序浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=zh-Hans#browse-search-preview-assets)和[如何使用Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/manage-assets-using-adobe-asset-link.html)。
+要了解更多信息，请参阅如何[使用桌面应用程序浏览DAM资源](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets)和[如何使用Adobe Asset Link](https://helpx.adobe.com/enterprise/using/manage-assets-using-adobe-asset-link.html)。

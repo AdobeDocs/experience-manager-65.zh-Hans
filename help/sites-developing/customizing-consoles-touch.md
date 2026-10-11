@@ -10,13 +10,22 @@ exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 8f638eb384bdca59fb6f4f8990643e64f34622ce
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '690'
 ht-degree: 24%
-
 ---
-
 # 自定义控制台 {#customizing-the-consoles}
 
 >[!CAUTION]
@@ -29,7 +38,7 @@ AEM提供了各种机制，使您能够自定义创作实例的控制台（和[�
 Clientlibs允许您扩展默认实施以实现新功能，同时重用标准函数、对象和方法。 自定义时，您可以在`/apps.`下创建自己的clientlib。例如，它可以保存自定义组件所需的代码。
 
 * 叠加
-叠加基于节点定义，允许您用自己的自定义功能（在`/apps`中）叠加标准功能（在`/libs`中）。 创建叠加时不需要原始文件的1:1副本，因为Sling资源合并器允许继承。
+叠加基于节点定义，允许您用自己的自定义功能（在`/apps`中）叠加标准功能（在`/libs`中）。 创建叠加时，不需要原始内容的1:1副本，因为sling资源合并器允许继承。
 
 可以通过多种方式使用这些变量来扩展AEM控制台。 下面包含少量选件（在高级别）。
 
@@ -60,11 +69,11 @@ Clientlibs允许您扩展默认实施以实现新功能，同时重用标准函�
 
 * 控制台（任何基于Granite UI页面的控制台）；例如：
 
-   * `/libs/wcm/core/content`
+  * `/libs/wcm/core/content`
 
 >[!NOTE]
 >
->有关更多提示和工具，请参阅知识库文章[AEM TouchUI问题疑难解答](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-16935)。
+>有关更多提示和工具，请参阅知识库文章[AEM TouchUI问题疑难解答](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-16935)。
 
 ## 自定义控制台的默认视图 {#customizing-the-default-view-for-a-console}
 

@@ -7,20 +7,38 @@ role: Admin, User, Developer
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
 solution: Experience Manager, Experience Manager Forms
 feature: Interactive Communication,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1712'
 ht-degree: 8%
-
 ---
-
 # 在OSGi上安装和配置以Forms为中心的工作流{#installing-and-configuring-forms-centric-workflow-on-osgi}
 
 ## 简介 {#introduction}
 
 企业从多个表单、后端系统和其他数据源收集和处理数据。 数据的处理涉及审核和批准程序、重复任务和数据存档。 例如，查看表单并将其转换为PDF文档。 手工完成重复性任务需要花费大量的时间和资源。
 
-您可以在OSGi[&#128279;](../../forms/using/aem-forms-workflow.md)上使用以Forms为中心的工作流，快速构建基于自适应表单的工作流。 这些工作流可以帮助您自动执行审阅和批准工作流、业务流程工作流以及其他重复任务。 这些工作流还有助于处理文档（创建、汇编、分发和存档PDF文档，添加数字签名以限制对文档的访问，对条形码表单进行解码等），以及将Adobe Sign签名工作流与表单和文档结合使用。
+您可以在OSGi](../../forms/using/aem-forms-workflow.md)上使用[以Forms为中心的工作流，快速构建基于自适应表单的工作流。 这些工作流可以帮助您自动执行审阅和批准工作流、业务流程工作流以及其他重复任务。 这些工作流还有助于处理文档（创建、汇编、分发和存档PDF文档，添加数字签名以限制对文档的访问，对条形码表单进行解码等），以及将Adobe Sign签名工作流与表单和文档结合使用。
 
 设置后，这些工作流可以手动触发以完成定义的流程，或在用户提交表单或交互式通信时以编程方式运行。 此功能包含在AEM Forms附加组件包中。
 
@@ -55,15 +73,15 @@ OSGi上以AEM Forms Forms为中心的工作流在AEM Forms的创作实例上运�
 * AEM实例的安装路径不包含空格。
 * AEM实例已启动并正在运行。 在AEM术语中，“实例”是指以创作或发布模式在服务器上运行的AEM副本。 您需要至少一个AEM实例（创作或处理）才能在OSGi上运行以Forms为中心的工作流：
 
-   * **作者**：用于创建、上载和编辑内容以及管理网站的AEM实例。 内容准备好上线后，即会复制到发布实例。
-   * **处理：**&#x200B;处理实例是[强化的创作AEM](/help/forms/using/hardening-securing-aem-forms-environment.md)实例。 您可以设置“创作”实例，并在执行安装后进行强化。
+  * **作者**：用于创建、上载和编辑内容以及管理网站的AEM实例。 内容准备好上线后，即会复制到发布实例。
+  * **处理：**&#x200B;处理实例是[强化的创作AEM](/help/forms/using/hardening-securing-aem-forms-environment.md)实例。 您可以设置“创作”实例，并在执行安装后进行强化。
 
-   * **发布**：通过Internet或内部网络向公众提供已发布内容的AEM实例。
+  * **发布**：通过Internet或内部网络向公众提供已发布内容的AEM实例。
 
 * 满足内存要求。 AEM Forms附加组件包需要：
 
-   * 用于基于Microsoft Windows的安装的15 GB临时空间。
-   * 用于基于UNIX的安装的6 GB临时空间。
+  * 用于基于Microsoft Windows的安装的15 GB临时空间。
+  * 用于基于UNIX的安装的6 GB临时空间。
 
 * 基于UNIX的系统的额外要求：如果您使用的是基于UNIX的操作系统，请从相应操作系统的安装媒体安装以下软件包。
 
@@ -106,10 +124,10 @@ AEM Forms附加组件包是部署在AEM上的应用程序。 该包中包含有�
    1. 从&#x200B;**[!UICONTROL 解决方案]**&#x200B;下拉列表中选择&#x200B;**[!UICONTROL Forms]**。
    2. 选择包的版本和类型。 您还可以使用&#x200B;**[!UICONTROL 搜索下载]**&#x200B;选项来筛选结果。
 1. 选择适用于您的操作系统的包名称，选择&#x200B;**[!UICONTROL 接受EULA条款]**，然后选择&#x200B;**[!UICONTROL 下载]**。
-1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=zh-Hans)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
+1. 打开[包管理器](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)，然后单击&#x200B;**[!UICONTROL 上传包]**&#x200B;以上传包。
 1. 选择该包并点击&#x200B;**[!UICONTROL 安装]**。
 
-   您还可以通过[AEM Forms发行版](https://helpx.adobe.com/cn/aem-forms/kb/aem-forms-releases.html)文章中列出的直接链接下载包。
+   您还可以通过[AEM Forms发行版](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)文章中列出的直接链接下载包。
 
 1. 安装包后，系统会提示您重新启动AEM实例。 **不要立即重新启动服务器。** 在停止AEM Forms服务器之前，请等待ServiceEvent REGISTERED和ServiceEvent UNREGISTERED消息停止出现在[AEM-Installation-Directory]/crx-quickstart/logs/error.log文件中，并且日志稳定。
 
@@ -188,7 +206,7 @@ Dispatcher是适用于AEM的缓存和负载平衡工具。 AEM Dispatcher还有�
 
 #### 配置Adobe Sign {#configure-adobe-sign}
 
-Adobe Sign支持自适应表单的电子签名工作流。 电子签名改进了法律、销售、工资单、人力资源管理和其他许多方面的文档的处理工作流。
+Adobe Sign支持自适应表单的电子签名工作流。 电子签名可改进用于处理法律、销售、工资单、人力资源管理等诸多领域文档的工作流。
 
 在OSGi上的典型Adobe Sign和以Forms为中心的工作流方案中，用户填写自适应表单以&#x200B;**申请服务**。 例如，信用卡申请表和公民权益表。 当用户填写、提交和签署申请表单时，将启动批准/拒绝工作流。 服务提供商将审核AEM收件箱中的应用程序，并使用Adobe Sign对应用程序进行电子签名。 要启用类似的电子签名工作流，您可以将Adobe Sign与AEM Forms集成。
 

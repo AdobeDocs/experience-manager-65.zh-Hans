@@ -11,13 +11,25 @@ role: User
 exl-id: 76652a16-cad6-4e95-9e66-41efec452b03
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: bca6156727dca11b2e09be549f3def6130827193
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a45b1e7f-e65f-4cd3-be86-5cec5d9449ef
+    internal-label: Content management
+subfeature_v2:
+  - id: e00c7c12-7035-41fe-ad76-1ec82c8c3f01
+    internal-label: Brand Portal
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 43%
-
 ---
-
 # 将资源发布到Brand Portal {#publish-assets-to-brand-portal}
 
 | 版本 | 文章链接 |
@@ -51,9 +63,9 @@ ht-degree: 43%
 
 * 在工具栏中，选择&#x200B;**[!UICONTROL 管理发布]**。
 
-   1. 然后从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL 发布到Brand Portal]**，并从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL 立即]**。 单击&#x200B;**[!UICONTROL 下一步]**。
+  1. 然后从&#x200B;**[!UICONTROL 操作]**&#x200B;中选择&#x200B;**[!UICONTROL 发布到Brand Portal]**，并从&#x200B;**[!UICONTROL 计划]**&#x200B;中选择&#x200B;**[!UICONTROL 立即]**。 单击&#x200B;**[!UICONTROL 下一步]**。
 
-   2. 在&#x200B;**[!UICONTROL 范围]**&#x200B;内，确认您的选择，然后单击&#x200B;**[!UICONTROL 发布到Brand Portal]**。
+  2. 在&#x200B;**[!UICONTROL 范围]**&#x200B;内，确认您的选择，然后单击&#x200B;**[!UICONTROL 发布到Brand Portal]**。
 
 此时将显示一条消息，表明资产已排队等候发布到 Brand Portal。 登录到 Brand Portal 界面可查看已发布的资产。
 
@@ -87,6 +99,6 @@ ht-degree: 43%
 
 1. 切换到列表视图![列表视图](assets/list-view.svg)以查看资源的当前发布状态。
 
-<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
+<!--2. On the [Asset Reports page](#https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/admin/asset-reports), you can see the current state of the report job, for example, Success, Failed, Queued, or Scheduled.-->
 
 ![已生成报告状态](assets/report-status.JPG)

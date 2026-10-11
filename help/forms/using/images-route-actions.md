@@ -1,6 +1,6 @@
 ---
 title: 自定义路由操作中使用的图像
-description: 如何在LiveCycleAEM Forms Workspace中自定义路由操作中使用的图像。
+description: 如何在LiveCycle AEM Forms Workspace中自定义路由操作中使用的图像。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
@@ -8,13 +8,27 @@ exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 0%
-
+source-wordcount: '300'
+ht-degree: 4%
 ---
-
 # 自定义路由操作中使用的图像 {#customize-images-used-in-route-actions}
 
 要自定义路由操作中使用的图像，请执行[自定义的一般步骤](/help/forms/using/generic-steps-html-workspace-customization.md)中描述的步骤，然后执行本文中描述的步骤。
@@ -29,7 +43,7 @@ ht-degree: 0%
 
    >[!NOTE]
    >
-   >有关详细信息，请参阅[WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=zh-Hans)。
+   >有关详细信息，请参阅[WebDAV访问](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/webdav-access.html?lang=en)。
 
    >[!NOTE]
    >

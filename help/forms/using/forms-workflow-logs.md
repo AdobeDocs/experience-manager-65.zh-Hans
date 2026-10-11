@@ -1,5 +1,5 @@
 ---
-title: 登录AEM Forms工作流
+title: 登录 AEM Forms 工作流
 description: 了解如何调试AEM Forms工作流问题并为AEM Forms工作流启用调试日志记录以查看日志。
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,28 @@ exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '292'
-ht-degree: 5%
-
+source-wordcount: '293'
+ht-degree: 8%
 ---
-
-# 登录AEM Forms工作流{#logging-in-aem-forms-workflows}
+# 登录 AEM Forms 工作流{#logging-in-aem-forms-workflows}
 
 Forms Workflow步骤提供详细的日志，可方便地调试与工作流相关的问题。 为AEM Forms工作流启用调试日志记录以查看日志。
 
@@ -70,7 +84,7 @@ Forms Workflow步骤提供详细的日志，可方便地调试与工作流相关
 使用日志评估：
 
 * 您使用的是正确的Adobe Sign配置。
-* Adobe Sign服务会在成功创建协议后退出。
+* 成功创建协议后，Adobe Sign服务即会退出。
 * 签名文档步骤退出并显示成功消息。
 
 如果出现异常，可以查看完整的栈栈跟踪以评估错误的原因。
@@ -79,9 +93,9 @@ Forms Workflow步骤提供详细的日志，可方便地调试与工作流相关
 
 执行以下操作，以便为AEM Forms工作流启用调试日志记录：
 
-1. 转到AEM Web控制台配置管理器，网址为：
+1. 转到以下地址的AEM Web控制台配置管理器：
 
-   https://&#39;[服务器]：[端口]&#39;/system/console/configMgr
+   https://'[服务器]：[端口]'/system/console/configMgr
 
 1. 选择&#x200B;**[!UICONTROL Sling]** > **[!UICONTROL 日志支持]**。
 1. 选择&#x200B;**[!UICONTROL 添加新记录器。]**

@@ -5,13 +5,22 @@ exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: b3af1a140abc1c202fa58704440c5660f1d43123
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 1%
-
 ---
-
 # 工作流最佳做法{#workflow-best-practices}
 
 借助工作流，您可以自动化Adobe Experience Manager (AEM)活动。
@@ -87,7 +96,7 @@ AEM允许同时运行多个工作流线程。 默认情况下，线程数配置�
 
 >[!NOTE]
 >
->另请参阅AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的存储库重新构建。
+>另请参阅AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的[存储库重新构建。
 
 #### 位置 — 工作流模型 {#locations-workflow-models}
 
@@ -243,8 +252,8 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 * 在工作流进程内，如果`WorkflowSession`正用于修改存储库，则不要显式保存会话 — 工作流完成时将保存会话。
 * 不应从工作流步骤中调用`Session.Save`：
 
-   * 建议调整工作流JCR会话；然后`save`不是必需的，因为工作流引擎会在工作流执行完成后自动保存会话。
-   * 建议不要对流程步骤创建自己的JCR会话。
+  * 建议调整工作流JCR会话；然后`save`不是必需的，因为工作流引擎会在工作流执行完成后自动保存会话。
+  * 建议不要对流程步骤创建自己的JCR会话。
 
 * 通过消除不必要的保存，您可以减少开销，从而使工作流更加高效。
 
@@ -292,7 +301,7 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 您可以定义[工作流阶段](/help/sites-developing/workflows.md#workflow-stages)，然后将任务/步骤分配给特定的工作流阶段。
 
-当您从&#x200B;**收件箱**&#x200B;[&#128279;](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;单击工作项的&#x200B;**工作流信息**&#x200B;选项卡时，此信息用于显示工作流的进度。 可以编辑现有工作流模型以添加暂存。
+当您从&#x200B;**收件箱**](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions)&#x200B;单击工作项的&#x200B;[**工作流信息**&#x200B;选项卡时，此信息用于显示工作流的进度。 可以编辑现有工作流模型以添加暂存。
 
 ### 激活页面流程步骤 {#activate-page-process-step}
 
@@ -307,11 +316,11 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 * 确保在升级实例之前备份任何自定义工作流模型。
 * 确认您的自定义工作流没有存储在[位置](#locations)下：
 
-   * `/libs/settings/workflow/models/projects`
+  * `/libs/settings/workflow/models/projects`
 
 >[!NOTE]
 >
->另请参阅AEM 6.5[&#128279;](/help/sites-deploying/repository-restructuring.md)中的存储库重新构建。
+>另请参阅AEM 6.5](/help/sites-deploying/repository-restructuring.md)中的[存储库重新构建。
 
 ## 系统工具 {#system-tools}
 

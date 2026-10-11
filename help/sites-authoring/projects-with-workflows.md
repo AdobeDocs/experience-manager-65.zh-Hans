@@ -9,13 +9,28 @@ exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Workflow
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: f6a6f91a-8819-530a-8e7b-c50884a25aef
+    internal-label: Workflow
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 42%
-
+source-wordcount: '787'
+ht-degree: 39%
 ---
-
 
 # 使用项目工作流 {#working-with-project-workflows}
 
@@ -39,16 +54,16 @@ ht-degree: 42%
 | 请求启动项 | x |  |  |  |
 | 请求登陆页面 | x |  |  |  |
 | 请求电子邮件 | x |  |  |  |
-| DAM 创建语言副本&ast; |  |  |  | x |
-| DAM 创建和翻译语言副本&ast; |  |  |  | x |
+| DAM创建语言副本&amp;ast； |  |  |  | x |
+| DAM创建和翻译语言副本&amp;ast； |  |  |  | x |
 
 >[!NOTE]
 >
->&ast;这些工作流不会从项目中的&#x200B;**工作流**&#x200B;拼贴启动。请参阅[创建Assets的语言副本。](/help/sites-administering/tc-manage.md)
+>&amp;ast；这些工作流不是从项目中的&#x200B;**工作流**&#x200B;拼贴启动的。 请参阅[创建Assets的语言副本。](/help/sites-administering/tc-manage.md)
 
-无论您选择哪个工作流，启动和完成工作流的步骤都是相同的。只是具体的实施步骤有所不同。
+无论您选择哪个工作流，启动和完成工作流的步骤都是相同的。 只是具体的实施步骤有所不同。
 
-您可以直接在项目中启动工作流（DAM 创建语言副本或 DAM 创建和翻译语言副本除外）。项目中任何未完成任务的信息会在&#x200B;**任务**&#x200B;拼贴中列出。用户图标旁边会显示需要完成的任务通知。
+您可以直接在项目中启动工作流（DAM 创建语言副本或 DAM 创建和翻译语言副本除外）。 项目中任何未完成任务的信息会在&#x200B;**任务**&#x200B;拼贴中列出。 用户图标旁边会显示需要完成的任务通知。
 
 有关在AEM中使用工作流的更多信息，请参阅以下文档：
 
@@ -70,7 +85,7 @@ ht-degree: 42%
 
 1. 单击&#x200B;**“提交”。**
 
-该工作流随即会启动。任务出现在&#x200B;**任务**&#x200B;信息卡上。
+该工作流随即会启动。 任务出现在&#x200B;**任务**&#x200B;信息卡上。
 
 ## 产品照片拍摄工作流 {#product-photo-shoot-workflow}
 
@@ -88,7 +103,7 @@ ht-degree: 42%
 
 1. 单击&#x200B;**“提交”。**
 
-该工作流随即会启动。任务出现在&#x200B;**任务**&#x200B;信息卡上。
+该工作流随即会启动。 任务出现在&#x200B;**任务**&#x200B;信息卡上。
 
 ## 请求启动项工作流程 {#request-launch-workflow}
 
@@ -96,13 +111,13 @@ ht-degree: 42%
 
 1. 在简单项目中，单击&#x200B;**工作流**&#x200B;拼贴右上角的向下V形符号，然后选择&#x200B;**启动工作流**。
 1. 在工作流向导中，选择&#x200B;**请求启动工作流**，然后单击&#x200B;**下一步**。
-1. 输入启动项的标题并提供启动项源路径。在适用的情况下，您还可以添加描述和起始日期。根据您希望启动项具备的行为方式，选择“继承源页面活动数据”或“不包括子页面”。
+1. 输入启动项的标题并提供启动项源路径。 在适用的情况下，您还可以添加描述和起始日期。 根据您希望启动项具备的行为方式，选择“继承源页面活动数据”或“不包括子页面”。
 
    ![请求启动工作流](assets/project-request-launch-workflow.png)
 
 1. 单击&#x200B;**“提交”。**
 
-该工作流随即会启动。工作流出现在&#x200B;**工作流**&#x200B;列表中。
+该工作流随即会启动。 工作流出现在&#x200B;**工作流**&#x200B;列表中。
 
 ## 请求登陆页面工作流 {#request-landing-page-workflow}
 
@@ -116,7 +131,7 @@ ht-degree: 42%
 
 1. 单击&#x200B;**“提交”。**
 
-该工作流随即会启动。任务出现在&#x200B;**任务**&#x200B;信息卡上。
+该工作流随即会启动。 任务出现在&#x200B;**任务**&#x200B;信息卡上。
 
 ## 请求电子邮件工作流 {#request-email-workflow}
 
@@ -130,7 +145,7 @@ ht-degree: 42%
 
 1. 单击&#x200B;**“提交”。**
 
-该工作流随即会启动。任务出现在&#x200B;**任务**&#x200B;信息卡上。
+该工作流随即会启动。 任务出现在&#x200B;**任务**&#x200B;信息卡上。
 
 ## 为资源创建（和翻译）语言副本工作流 {#create-and-translate-language-copy-workflow-for-assets}
 

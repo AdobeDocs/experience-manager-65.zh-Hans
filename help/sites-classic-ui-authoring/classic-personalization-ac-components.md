@@ -10,13 +10,24 @@ exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring,Personalization
 role: User
-source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+  - id: eb3ad9f8-54a2-45f3-abb1-d3976415a718
+    internal-label: Personalization
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2564'
 ht-degree: 7%
-
 ---
-
 # Adobe Campaign 组件{#adobe-campaign-components}
 
 与Adobe Campaign集成时，您拥有的组件可用于处理新闻稿和表单。 本文档中对此进行了说明。
@@ -38,7 +49,7 @@ ht-degree: 7%
 * 链接 (营销活动)
 * Scene7 图像模板（营销活动）
 * 目标引用（营销活动）
-* 文本与图像（营销活动）
+* 文本与图像（Campaign）
 * 文本与个性化（营销活动）
 
 下一节将介绍这些组件。
@@ -135,7 +146,7 @@ ht-degree: 7%
 添加了关于如何使用链接的其他信息。
 
 * **链接类型**
-在下拉列表中，选择&#x200B;**自定义URL**&#x200B;和&#x200B;**自适应文档**。 该字段为必填项。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
+在下拉列表中，选择**自定义URL**&#x200B;和&#x200B;**自适应文档**。 该字段为必填项。 如果您选择自定义URL，则可以提供链接URL。 如果选择“自适应文档”，则可以提供文档路径。
 
 * **其他URL参数**
 添加任何其他URL参数。 单击“添加项目”可添加多个项目。
@@ -151,7 +162,7 @@ ht-degree: 7%
 
 ![chlimage_1-87](assets/chlimage_1-87.png)
 
-### 目标引用（营销活动） {#targeted-reference-campaign}
+### 目标引用（Campaign） {#targeted-reference-campaign}
 
 目标引用（营销活动）组件允许您创建对目标段落的引用。
 
@@ -159,7 +170,7 @@ ht-degree: 7%
 
 单击下拉菜单以导航到要引用的段落。 完成后，单击&#x200B;**确定**。
 
-### 文本与图像（营销活动） {#text-image-campaign}
+### 文本与图像（Campaign） {#text-image-campaign}
 
 文本与图像（营销活动）组件添加文本块和图像。
 
@@ -202,7 +213,7 @@ ht-degree: 7%
 
 ![chlimage_1-89](assets/chlimage_1-89.png)
 
-### 文本与个性化（营销活动） {#text-personalization-campaign}
+### 文本与个性化（Campaign） {#text-personalization-campaign}
 
 文本与Personalization （营销活动）组件允许您使用WYSIWYG编辑器输入文本块，该编辑器具有[富文本编辑器](/help/sites-authoring/rich-text-editor.md)提供的功能。 此外，此组件允许您使用Adobe Campaign中可用的上下文字段和个性化块；另请参阅[插入Personalization](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization)。
 
@@ -228,11 +239,11 @@ ht-degree: 7%
 
 * 复选框（营销活动）
 * 日期字段（营销活动）和日期字段/HTML5 （营销活动）
-* 已加密的主键（营销活动）
-* 错误显示（营销活动）
-* 隐藏的协调键（营销活动）
-* 数字字段（营销活动）
-* 选项字段（营销活动）
+* 已加密的主键（Campaign）
+* 错误显示（Campaign）
+* 隐藏的协调键（Campaign）
+* 数值字段（Campaign）
+* 选项字段（Campaign）
 * 订阅核对清单（营销活动）
 * 文本字段（营销活动）
 
@@ -365,7 +376,7 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
-### 隐藏的协调键（营销活动） {#hidden-reconciliation-key-campaign}
+### 隐藏的协调键（Campaign） {#hidden-reconciliation-key-campaign}
 
 利用隐藏的对帐密钥（营销活动）组件，您可以将隐藏字段作为对帐密钥的一部分添加到表单。
 
@@ -378,13 +389,13 @@ Adobe Campaign组件具有所有组件中通用的设置（加密的主密钥和
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-### 数字字段（营销活动） {#numeric-field-campaign}
+### 数值字段（Campaign） {#numeric-field-campaign}
 
 使用数字字段可允许收件人输入数字，例如年龄。
 
 除了大多数Adobe Campaign组件通用的[设置](#settings-common-to-most-components)之外，您还可以配置以下设置：
 
-* **约束 — 约束**&#x200B;下拉列表
+* **约束 — 约束**下拉列表
 您可以选择 — **无**&#x200B;或&#x200B;**数值 —**&#x200B;来添加数值或无约束的约束。 如果选择数字，则用户在字段中输入的答案必须是数字。
 
 * **约束消息** — 此外，您还可以添加约束消息，以便用户了解如何正确设置其答案的格式。

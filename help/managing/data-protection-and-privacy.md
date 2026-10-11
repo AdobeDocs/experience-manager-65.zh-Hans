@@ -10,13 +10,29 @@ exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Developer, Leader, User
-source-git-commit: 07289e891399a78568dcac957bc089cc08c7898c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '931'
 ht-degree: 99%
-
 ---
-
 # Adobe Experience Manager 对数据保护与数据隐私法规的合规性准备 {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
 >[!WARNING]
@@ -65,19 +81,19 @@ Adobe Experience Manager 的实例以及其上运行的应用程序由 Adobe 客
 
 * 实例以及其上运行的应用程序由客户拥有并运营。
 
-   * 客户负责管理合规相关角色，包括企业实体与服务提供商、数据控制者和数据处理者等。
+  * 客户负责管理合规相关角色，包括企业实体与服务提供商、数据控制者和数据处理者等。
 
-   * Adobe Experience Platform Privacy Service 不在 AEM 的工作流中，如下图所述。
+  * Adobe Experience Platform Privacy Service 不在 AEM 的工作流中，如下图所述。
 
 * AEM 包括面向客户隐私管理员和/或 AEM 管理员的文档和过程，可手动或通过 API（在可用时）执行隐私监管请求。
 
 * 未添加新的服务或 UI。
 
-   * 而是记载了由处理隐私监管请求的客户 UI/门户使用的过程和 API。
+  * 而是记载了由处理隐私监管请求的客户 UI/门户使用的过程和 API。
 
 * AEM 不包括任何现成的工具来支持隐私请求工作流。
 
-   * Adobe 为客户的隐私管理员和 AEM 管理员提供文档和操作程序，使其能够手动执行与隐私法规相关的请求。
+  * Adobe 为客户的隐私管理员和 AEM 管理员提供文档和操作程序，使其能够手动执行与隐私法规相关的请求。
 
 Adobe 提供了在 Adobe Experience Manager 中处理与访问、删除和退出相关的隐私请求的操作程序。 在某些情况下，可以使用客户自建的门户或脚本调用 API，以协助实现自动化。
 
@@ -117,7 +133,7 @@ Adobe 提供了在 Adobe Experience Manager 中处理与访问、删除和退出
 
 * [Adobe Target - 隐私概述](https://developer.adobe.com/target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation/?lang=en)
 
-* [Adobe Analytics数据隐私工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html?lang=zh-Hans)
+* [Adobe Analytics数据隐私工作流程](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/data-governance/an-gdpr-workflow.html)
 
 ## AEM Communities {#aem-communities}
 

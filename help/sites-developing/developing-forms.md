@@ -1,20 +1,27 @@
 ---
 title: 开发表单（经典 UI）
-
 description: 了解如何为Adobe Experience Manager经典UI开发表单
-
-
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1953'
 ht-degree: 1%
@@ -41,7 +48,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->本文档重点介绍如何在经典UI中使用[Foundation组件](/help/sites-authoring/default-components-foundation.md)来开发表单。 Adobe建议在触屏UI中使用新的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=zh-Hans)和[隐藏条件](/help/sites-developing/hide-conditions.md)进行表单开发。
+>本文档重点介绍如何在经典UI中使用[Foundation组件](/help/sites-authoring/default-components-foundation.md)来开发表单。 Adobe建议在触屏UI中使用新的[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)和[隐藏条件](/help/sites-developing/hide-conditions.md)进行表单开发。
 
 ## 预载表单值 {#preloading-form-values}
 
@@ -74,7 +81,7 @@ ht-degree: 1%
 
 1. 添加多值字符串(`String[]`)类型的新属性（例如`myList`）以包含下拉项列表。 内容也可以使用脚本导入，例如通过JSP脚本或shell脚本中的cURL导入。
 
-1. 在&#x200B;**项加载路径**&#x200B;字段中使用完整路径：
+1. 在&#x200B;**项加载路径**字段中使用完整路径：
 例如，`/etc/designs/geometrixx/formlistvalues/myList`
 
 请注意，如果`String[]`中的值采用如下格式：

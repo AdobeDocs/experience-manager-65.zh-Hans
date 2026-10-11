@@ -8,13 +8,27 @@ feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1403'
+source-wordcount: '1508'
 ht-degree: 1%
-
 ---
-
 # 交互式通信中的条件{#conditions-in-interactive-communications}
 
 创建和编辑要在交互式通信中使用的条件片段 — 条件是用于构建交互式通信的四种文档片段类型之一。 其他三个是文本、列表和布局片段。
@@ -75,10 +89,10 @@ ht-degree: 1%
 
    ![createconditionscreenassetsaddedannotated](assets/createconditionscreenassetsaddedannotated.png)
 
-   **[A]拒绝更改。**&#x200B;选择此图标可拒绝您在条件中对资产和规则所做的更改。
-   **[B]接受更改。**&#x200B;选择此图标以接受您在条件中的资源和规则中所做的更改。
-   **[C]重复资产。**&#x200B;选择此图标以在条件中创建资产副本以及应用的规则（如果有）。然后，您可以继续编辑重复资产的规则和资产。复制资产对于创建类似规则以根据特定上下文显示替代资产非常有用。
-   **[D]显示预览。**&#x200B;选择此图标可在“创建\编辑条件”页面中显示资源的预览。
+   **[A]拒绝更改。** 选择此图标可拒绝您对资源和条件中的规则可能进行的更改。
+   **[B]接受更改。** 选择此图标以接受您在条件中的资产和规则中所做的更改。
+   **[C]重复资产。** 选择此图标可创建资产的副本以及条件中应用的规则（如果有）。 然后，您可以继续编辑重复资产的规则和资产。 复制资产对于创建类似规则以根据特定上下文显示替代资产非常有用。
+   **[D]节目预览。** 选择此图标可在“创建\编辑条件”页中显示资源的预览。
    **&#39;服务器&#39;重新排序。** 选择并按住此图标可拖放资源以在条件中对它们重新排序。
 
    您可以选择以下选项来指定条件在运行时的工作方式：

@@ -7,13 +7,27 @@ exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms
-source-git-commit: b631b5d4308a2ad1e2397c60c4ee78ec097beaa9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1771'
 ht-degree: 0%
-
 ---
-
 # 添加和配置用户 {#adding-and-configuring-users}
 
 >[!NOTE]
@@ -176,4 +190,4 @@ AEM表单无法区分用户ID和密码相同但属于不同域的用户帐户。
 
 CQ提供了一种机制来覆盖默认的404处理程序jsp。
 
-有关如何自定义错误处理页面的详细信息，请参阅Adobe Experience Manager文档中的[自定义错误处理程序显示的页面](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=zh-Hans)。
+有关如何自定义错误处理页面的详细信息，请参阅Adobe Experience Manager文档中的[自定义错误处理程序显示的页面](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html?lang=en)。

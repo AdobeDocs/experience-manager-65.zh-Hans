@@ -7,19 +7,35 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 973d5ddb-cbcc-454d-859f-144442828a1a
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2045'
 ht-degree: 0%
-
 ---
-
 # 自适应表单图表 {#af-charts}
 
 ![主页图像](assets/charts_hero_image.jpg)
 
 图表或图形是数据的可视化表示形式。 它允许您将大量信息压缩为易于理解的视觉格式，使您能够更好地可视化、解释和分析复杂数据。
-AEM Forms附加组件包提供了一个现成的Chart组件。 您可以在自适应表单和文档中使用以在&#x200B;**可重复面板**&#x200B;和&#x200B;**表**&#x200B;中直观地呈现二维数据。 图表组件允许您添加和配置以下类型的图表：
+AEM Forms附加组件包提供了一个现成的Chart组件。 您可以在自适应表单和文档中使用以在**可重复面板**&#x200B;和&#x200B;**表**&#x200B;中直观地呈现二维数据。 图表组件允许您添加和配置以下类型的图表：
 
 1. 饼图
 1. 列

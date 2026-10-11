@@ -9,13 +9,25 @@ role: Admin
 exl-id: 73b5aff2-1320-4d9a-8972-54c4fdd3a2c2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
+source-wordcount: '689'
 ht-degree: 1%
-
 ---
-
 # 缓解Experience Manager Forms的Struts 2漏洞 {#mitigatin-struts2-rce-vulnerabilities-for-aem-forms}
 
 ## 问题
@@ -24,7 +36,7 @@ Struts 2是一种用于开发Java EE Web应用程序的流行开放源码Web应�
 
 | 漏洞 | 受影响的内容？ | 哪些内容未受影响？ |
 |---|---|---|
-| [CVE-2023-50164](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2023-50164) | JEE上的Experience Manager6.5 Forms（从6.5 GA到6.5.19.0的所有版本） | <ul><li> Experience Manager Forms Workbench（所有版本）</li> <li> OSGi上的Experience Manager Forms（所有版本） </li> <li> Experience Manager Formsas a Cloud Service </li> <ul> |
+| [CVE-2023-50164](https://cve.mitre.org/cgi-bin/cvename.cgi?name=2023-50164) | JEE上的Experience Manager 6.5 Forms（从6.5 GA到6.5.19.0的所有版本） | <ul><li> Experience Manager Forms Workbench（所有版本）</li> <li> OSGi上的Experience Manager Forms（所有版本） </li> <li> Experience Manager Forms as a Cloud Service </li> <ul> |
 
 ## 解决方法
 
@@ -32,13 +44,13 @@ Struts 2是一种用于开发Java EE Web应用程序的流行开放源码Web应�
 
 | 发行版本 | 当前版本 | 用户操作 |
 |---|---|---|
-| 在JEE上Experience Manager6.5 Forms | 6.5.19.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans) |
-| 在JEE上Experience Manager6.5 Forms | 6.5.13.0 - 6.5.18.0 | 使用以下方法之一： <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans">安装最新的Service Pack </a> </li> <li> <a href ="#use-manual-mitigation-steps">使用手动缓解步骤</a> |
-| 在JEE上Experience Manager6.5 Forms | 6.5 - 6.5.12.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=zh-Hans) </br> </br> **注意：** AEM Forms当前支持版本6.5.13.0到6.5.19.0。如果您使用的是旧版本，我们建议升级到6.5.13.0或更高版本。 有关安装AEM 6.5.13.0或更高版本的说明，请参阅发行说明。 |
+| JEE上的Experience Manager 6.5 Forms | 6.5.19.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) |
+| JEE上的Experience Manager 6.5 Forms | 6.5.13.0 - 6.5.18.0 | 使用以下方法之一： <ul><li>  <a href="https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en">安装最新的Service Pack </a> </li> <li> <a href ="#use-manual-mitigation-steps">使用手动缓解步骤</a> |
+| JEE上的Experience Manager 6.5 Forms | 6.5 - 6.5.12.0 | [安装最新的Service Pack](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/aem-forms-current-service-pack-installation-instructions.html?lang=en) </br> </br> **注意：** AEM Forms当前通过6.5.19.0支持版本6.5.13.0。 如果您使用的是旧版本，我们建议升级到6.5.13.0或更高版本。 有关安装AEM 6.5.13.0或更高版本的说明，请参阅发行说明。 |
 
 ### 采用手动缓解步骤 {#use-manual-mitigation-steps}
 
-您可以使用手动缓解步骤来解决运行Service Pack 13的AEM 6.5表单服务器到运行Service Pack 18 (6.5.13.0 - 6.5.18.0)的AEM 6.5表单服务器上的问题：
+您可以使用手动缓解步骤来解决运行Service Pack 13的AEM 6.5表单服务器到运行Service Pack 18 (6.5.13.0 - 6.5.18.0)的AEM 6.5表单服务器的问题：
 
 1. 将[struts-core 2.5.33 jar](https://repo1.maven.org/maven2/org/apache/struts/struts2-core/2.5.33/struts2-core-2.5.33.jar)下载到本地文件夹。 例如，C:\Users\labuser\Desktop\struts2-core-2.5.33.jar。
 1. 从[Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/fd/patch_utility/archive-patcher-1.0.0.zip)下载AEM Forms on JEE手动修补工具。

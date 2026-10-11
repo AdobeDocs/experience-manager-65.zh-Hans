@@ -6,20 +6,36 @@ role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: a4e1c1f5-18fc-592e-bfc7-453ce6ae0030
+    internal-label: Asset Insights
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: c29e3a96-cd2b-4e21-b382-a8279aa04553
+    internal-label: Asset reports
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '668'
 ht-degree: 3%
-
 ---
-
 # 通过DTM启用Assets分析 {#enable-asset-insights-through-dtm}
 
 Adobe Dynamic Tag Management是一款可激活您的数字营销工具的工具。 Adobe Analytics客户可以免费使用。 您可以自定义跟踪代码以使第三方CMS解决方案能够使用Assets Insights，也可以使用DTM插入Assets Insights标记。 仅支持图像并提供见解。
 
 >[!CAUTION]
 >
->Adobe DTM已弃用，推荐使用[!DNL Adobe Experience Platform]，并且很快将结束[的生命周期](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建议您[使用 [!DNL Adobe Experience Platform] 进行资产分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html?lang=zh-Hans)。
+>Adobe DTM已弃用，推荐使用[!DNL Adobe Experience Platform]，并且很快将结束[的生命周期](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f)。 Adobe建议您[使用 [!DNL Adobe Experience Platform] 进行资产分析](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html)。
 
 执行这些步骤可通过DTM启用Assets Insights。
 
@@ -33,7 +49,7 @@ Adobe Dynamic Tag Management是一款可激活您的数字营销工具的工具�
 
    * 选择&#x200B;**[!UICONTROL Web属性]**&#x200B;选项卡，然后单击&#x200B;**[!UICONTROL 添加属性]**。
 
-   * 更新相应的字段，然后单击&#x200B;**[!UICONTROL 创建属性]**。 请参阅[文档](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans)。
+   * 更新相应的字段，然后单击&#x200B;**[!UICONTROL 创建属性]**。 请参阅[文档](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)。
 
    ![创建编辑Web属性](assets/Create-edit-web-property.png)
 

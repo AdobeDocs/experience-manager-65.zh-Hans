@@ -8,13 +8,29 @@ role: Admin,User
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 solution: Experience Manager, Experience Manager Forms
 feature: Document Security,Adaptive Forms
-source-git-commit: b6714ae8f3464ef600c252c7ae5dcc75cbe6610b
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7949'
 ht-degree: 1%
-
 ---
-
 # 强化 JEE 环境下的 AEM Forms {#hardening-your-aem-forms-on-jee-environment}
 
 了解各种安全强化设置，以增强在公司内联网中运行的JEE上的AEM Forms的安全性。
@@ -106,7 +122,7 @@ JEE上的AEM Forms具有高度可自定义性，可以在许多不同的环境�
  </tbody> 
 </table>
 
-有关操作系统的其他安全信息，请参阅[“操作系统安全信息”](https://helpx.adobe.com/cn/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information)。
+有关操作系统的其他安全信息，请参阅[“操作系统安全信息”](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information)。
 
 ## 安装 {#installation}
 
@@ -190,12 +206,12 @@ JEE上的AEM Forms具有高度可自定义性，可以在许多不同的环境�
    * **全局文档存储(GDS)目录**： GDS目录的位置是在AEM Forms安装过程中手动配置的。 如果在安装期间位置设置保持为空，则该位置将默认为位于`[JBoss root]/server/[type]/svcnative/DocumentStorage`处应用程序服务器安装下的目录
    * **CRX-Repository目录**：默认位置为`[AEM-Forms-installation-location]\crx-repository`
    * **AEM Forms临时目录**：
-      * (Windows)在环境变量中设置的TMP或TEMP路径
-      * （AIX、Linux或Solaris）登录用户的主目录
-在基于UNIX的系统上，非根用户可以使用以下目录作为临时目录：
-      * (Linux) /var/tmp或/usr/tmp
-      * (AIX) /tmp或/usr/tmp
-      * (Solaris) /var/tmp或/usr/tmp
+     * (Windows)在环境变量中设置的TMP或TEMP路径
+     * （AIX、Linux或Solaris）登录用户的主目录
+       在基于UNIX的系统上，非根用户可以使用以下目录作为临时目录：
+     * (Linux) /var/tmp或/usr/tmp
+     * (AIX) /tmp或/usr/tmp
+     * (Solaris) /var/tmp或/usr/tmp
 1. 向新用户帐户授予对以下目录的写入权限：
    * [JBoss目录]\standalone\deployment
    * [JBoss-directory]\standalone\
@@ -262,17 +278,17 @@ Configuration Manager使用部署在您的应用程序服务器上的servlet对J
 1. 启动AEM Forms服务器。
 1. 在浏览器中键入以下URL以测试更改并确保其不再有效。
 
-   https://&lt;localhost>：&lt;port>/adobe-bootstrapper/bootstrap
+   https://<localhost>：<port>/adobe-bootstrapper/bootstrap
 
 **锁定对信任存储区的远程访问**
 
 Configuration Manager允许您将Acrobat Reader DC扩展凭据上传到JEE信任存储区上的AEM Forms。 这意味着默认情况下已启用通过远程协议（SOAP和EJB）访问Trust Store Credential Service。 在使用Configuration Manager上载权限凭据或决定稍后使用管理控制台管理凭据后，不再需要此访问。
 
-您可以按照[禁用对服务的非必要远程访问](https://helpx.adobe.com/cn/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services)一节中的步骤来禁用对所有信任存储区服务的远程访问。
+您可以按照[禁用对服务的非必要远程访问](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services)一节中的步骤来禁用对所有信任存储区服务的远程访问。
 
 **禁用所有非必要的匿名访问**
 
-某些Forms Server服务具有可能被匿名调用者调用的操作。 如果不需要匿名访问这些服务，请按照[禁用对服务的非必要匿名访问](https://helpx.adobe.com/cn/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services)中的步骤禁用它。
+某些Forms Server服务具有可能被匿名调用者调用的操作。 如果不需要匿名访问这些服务，请按照[禁用对服务的非必要匿名访问](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services)中的步骤禁用它。
 
 #### 更改默认管理员密码 {#change-the-default-administrator-password}
 
@@ -351,7 +367,7 @@ Web服务定义语言(WSDL)生成应该仅对开发环境启用，在这些环�
 
 保护数据库时，您应该实施数据库供应商所述的措施。 您应该分配一个数据库用户，该用户具有最低所需的数据库权限，可供AEM Forms on JEE使用。 例如，不要使用具有数据库管理员权限的帐户。
 
-在Oracle上，您使用的数据库帐户只需要CONNECT、RESOURCE和CREATE VIEW权限。 有关其他数据库上的类似要求，请参阅[准备在JEE （单服务器）上安装AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64_cn)。
+在Oracle上，您使用的数据库帐户只需要CONNECT、RESOURCE和CREATE VIEW权限。 有关其他数据库上的类似要求，请参阅[准备在JEE （单服务器）上安装AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)。
 
 #### 为Windows上的SQL Server for JBoss配置集成安全性 {#configuring-integrated-security-for-sql-server-on-windows-for-jboss}
 
@@ -408,7 +424,7 @@ AEM Forms数据库架构包含有关系统配置和业务流程的敏感信息�
 * 信任存储区HSM PIN加密密钥
 * 本地用户密码散列
 
-有关特定于供应商的工具的信息，请参阅[“数据库安全信息”](https://helpx.adobe.com/cn/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information)。
+有关特定于供应商的工具的信息，请参阅[“数据库安全信息”](https://helpx.adobe.com/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information)。
 
 ### LDAP安全 {#ldap-security}
 
@@ -489,7 +505,7 @@ JEE Web应用程序中每个AEM Forms的以下应用程序根URL。 您应仅配
 <table> 
  <thead> 
   <tr> 
-   <th><p>根URL</p> </th> 
+   <th><p>根 URL</p> </th> 
    <th><p>用途和/或关联的Web应用程序</p> </th> 
    <th><p>基于Web的界面</p> </th> 
    <th><p>最终用户访问权限</p> </th> 
@@ -972,9 +988,9 @@ https://<server>:<port>/system/console/healthcheck?tags=deserialization
 
 参考[AEM Forms on JEE物理架构](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture)部分中描述的物理架构，您应该为计划使用的所有连接配置SSL。 具体而言，所有SOAP连接都必须通过SSL执行，以防止网络上用户凭据泄露。
 
-有关如何在JBoss、WebLogic和WebSphere上配置SSL的说明，请参阅[管理帮助](https://www.adobe.com/go/learn_aemforms_admin_64_cn)中的“配置SSL”。
+有关如何在JBoss、WebLogic和WebSphere上配置SSL的说明，请参阅[管理帮助](https://www.adobe.com/go/learn_aemforms_admin_64)中的“配置SSL”。
 
-有关如何将证书导入为AEM Forms服务器配置的JVM （Java虚拟机）的说明，请参阅[AEM Forms Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_65_cn)中的相互身份验证部分。
+有关如何将证书导入为AEM Forms服务器配置的JVM （Java虚拟机）的说明，请参阅[AEM Forms Workbench帮助](https://www.adobe.com/go/learn_aemforms_workbench_65)中的相互身份验证部分。
 
 ### 配置SSL重定向 {#configuring-ssl-redirect}
 
@@ -1030,12 +1046,12 @@ AEM Forms on JEE统包安装默认使用Local System帐户设置服务帐户。 
    * **全局文档存储(GDS)目录**： GDS目录的位置是在AEM Forms安装过程中手动配置的。 如果在安装期间位置设置保持为空，则该位置将默认为位于`[JBoss root]/server/[type]/svcnative/DocumentStorage`处应用程序服务器安装下的目录
    * **CRX-Repository目录**：默认位置为`[AEM-Forms-installation-location]\crx-repository`
    * **AEM Forms临时目录**：
-      * (Windows)在环境变量中设置的TMP或TEMP路径
-      * （AIX、Linux或Solaris）登录用户的主目录
-在基于UNIX的系统上，非根用户可以使用以下目录作为临时目录：
-      * (Linux) /var/tmp或/usr/tmp
-      * (AIX) /tmp或/usr/tmp
-      * (Solaris) /var/tmp或/usr/tmp
+     * (Windows)在环境变量中设置的TMP或TEMP路径
+     * （AIX、Linux或Solaris）登录用户的主目录
+       在基于UNIX的系统上，非根用户可以使用以下目录作为临时目录：
+     * (Linux) /var/tmp或/usr/tmp
+     * (AIX) /tmp或/usr/tmp
+     * (Solaris) /var/tmp或/usr/tmp
 1. 向新用户帐户授予对以下目录的写入权限：
    * [JBoss目录]\standalone\deployment
    * [JBoss-directory]\standalone\

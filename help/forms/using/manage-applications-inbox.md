@@ -9,13 +9,29 @@ exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: 9f59606bb58b9e90f07bd22e89f3213afb54a697
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1125'
 ht-degree: 4%
-
 ---
-
 # 在 AEM 收件箱中管理 Forms 应用程序和任务{#manage-forms-applications-and-tasks-in-aem-inbox}
 
 启动或触发以Forms为中心的工作流的多种方法之一，是通过AEM收件箱中的应用程序来启动。 要使Forms工作流可用作收件箱中的应用程序，请创建工作流应用程序。 有关工作流应用程序和其他启动Forms工作流的方法的更多信息，请参阅[在OSGi上启动以Forms为中心的工作流](../../forms/using/aem-forms-workflow.md#launch)。
@@ -140,7 +156,7 @@ AEM收件箱仅显示活动任务。 已完成的任务未出现在列表中。 
      | allowExplicitSharing | allowExplicitSharing | Boolean |
 
 
-   * 通过AEM包部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=zh-Hans)项目创建可部署的AEM包。 使用以下示例代码将索引添加到AEM Archetype项目中：
+   * 通过AEM包部署索引。 您可以使用[AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en)项目创建可部署的AEM包。 使用以下示例代码将索引添加到AEM Archetype项目中：
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()
@@ -150,8 +166,8 @@ AEM收件箱仅显示活动任务。 已完成的任务未出现在列表中。 
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [创建属性索引并将其设置为true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=zh-Hans#the-property-index)。
+1. [创建属性索引并将其设置为true](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index)。
 
 1. 在CRX DE中配置索引或通过包进行部署后，[重新索引存储库](https://helpx.adobe.com/in/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)。
 
-https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html?lang=zh-Hans
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html

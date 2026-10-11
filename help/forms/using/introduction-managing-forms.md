@@ -9,13 +9,27 @@ exl-id: 3e063456-7f96-483d-86a3-6a414746db8a
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User
-source-git-commit: c6dd35fbedba6ace60975a7c31e987edd69a8c69
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1521'
 ht-degree: 1%
-
 ---
-
 # 表单管理简介 {#introduction-to-managing-forms}
 
 AEM [!DNL Forms]提供了简单但功能强大的用户界面，用于创建和管理表单、文档、主题、书信、文档片段、数据字典和相关资源。 它有助于管理表单、文档和相关资产的完整生命周期 — 从开发人员的桌面到产品
@@ -56,8 +70,8 @@ Forms &amp; Documents提供了用于创建交互式通信、自适应表单、�
 
 * **文件夹：** AEM [!DNL Forms]用户界面使用文件夹排列资源。 它支持两种类型的文件夹：
 
-   * **常规文件夹：**&#x200B;这些文件夹用于在AEM [!DNL Forms]用户界面中创建的资源。 这些文件夹没有严格的文件夹结构。 您可以重命名、创建子文件夹，并将自适应表单、交互式通信、自适应表单片段、表单模板(XDP)、PDF forms、文档和相关资源存储在这些文件夹中。
-   * 在迁移Workbench进程（LiveCycle存档）并与Forms [!DNL Forms]用户界面同步时，将创建&#x200B;**Forms Workflow文件夹：** AEM工作流文件夹。 不允许重命名、创建子文件夹、创建交互式通信、自适应表单片段或交互式通信。 也不允许删除版本文件夹或者创建并上传与版本文件夹平行的自适应表单、自适应表单片段或交互式通信。
+  * **常规文件夹：**&#x200B;这些文件夹用于在AEM [!DNL Forms]用户界面中创建的资源。 这些文件夹没有严格的文件夹结构。 您可以重命名、创建子文件夹，并将自适应表单、交互式通信、自适应表单片段、表单模板(XDP)、PDF forms、文档和相关资源存储在这些文件夹中。
+  * 在迁移Workbench进程（LiveCycle存档）并与Forms [!DNL Forms]用户界面同步时，将创建&#x200B;**Forms Workflow文件夹：** AEM工作流文件夹。 不允许重命名、创建子文件夹、创建交互式通信、自适应表单片段或交互式通信。 也不允许删除版本文件夹或者创建并上传与版本文件夹平行的自适应表单、自适应表单片段或交互式通信。
 
   ![文件夹](assets/folders.png)
 
@@ -106,8 +120,8 @@ AEM“工具”面板包含用于各种组件的工具。 要导航到特定于A
 
 * **左边栏：**&#x200B;您可以单击左边栏图标![railleftpng](assets/railleftpng.png)以显示AEM [!DNL Forms]的时间轴和引用功能。
 
-   * **时间线：**&#x200B;您可以添加和查看可在时间线中审阅的资产评论。 有关详细说明，请参阅[创建和管理表单中资产的审核](../../forms/using/create-reviews-forms.md)。
-   * **引用：** AEM [!DNL Forms]资源可用于多个AEM [!DNL Forms]资源。 例如，一个文档片段可以在多个字母中使用。 引用是所选资产使用的资产（其他表单或资源）列表，也是所选资产正在使用的其他资产列表。
+  * **时间线：**&#x200B;您可以添加和查看可在时间线中审阅的资产评论。 有关详细说明，请参阅[创建和管理表单中资产的审核](../../forms/using/create-reviews-forms.md)。
+  * **引用：** AEM [!DNL Forms]资源可用于多个AEM [!DNL Forms]资源。 例如，一个文档片段可以在多个字母中使用。 引用是所选资产使用的资产（其他表单或资源）列表，也是所选资产正在使用的其他资产列表。
 
 * **痕迹导航：**&#x200B;痕迹导航表示当前控制台或文件夹的标题。 您可以单击痕迹导航选项在层次结构中较高级别的文件夹之间导航。
 * **视图切换器：**&#x200B;您可以单击“视图切换器”图标![viewlist](assets/viewlist.png)或![viewcard](assets/viewcard.png)在列表视图和卡片视图之间快速切换。 有关常见用户界面组件的详细信息，请参阅[创作](/help/sites-authoring/author.md)。

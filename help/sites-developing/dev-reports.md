@@ -9,7 +9,18 @@ exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '5299'
 ht-degree: 2%
@@ -81,7 +92,7 @@ Adobe Experience Manager (AEM)提供了一组[标准报表](/help/sites-administ
 报告页面为：
 
 * 标准CQ5页面。
-* 基于为报告[&#128279;](#report-template)配置的标准CQ5模板。
+* 基于为报告](#report-template)配置的[标准CQ5模板。
 
 ### 报表库 {#report-base}
 
@@ -360,7 +371,7 @@ N:charting
 
       * `totals` ( `Boolean`)
 
-        如果应显示其他显示&#x200B;**总计**&#x200B;的行，则为True。
+        如果应显示其他显示&#x200B;**总计**的行，则为True。
         默认： `false`
 
       * `series` ( `Long`)
@@ -667,11 +678,11 @@ N:definitions
 
   * `apply`
 
-    初始预处理阶段（处理队列[&#128279;](#processing-queue)的表示形式中的步骤3）。
+    初始预处理阶段（处理队列](#processing-queue)的表示形式中的[步骤3）。
 
   * `applyAfter`
 
-    预处理后应用（在处理队列[&#128279;](#processing-queue)的表示形式中步骤9）。
+    预处理后应用（在处理队列](#processing-queue)的表示形式中步骤9[）。
 
 #### 解析程序 {#resolvers}
 

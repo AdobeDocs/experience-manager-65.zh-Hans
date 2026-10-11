@@ -10,13 +10,20 @@ exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '346'
 ht-degree: 1%
-
 ---
-
 # 活动趋势 {#activity-trends}
 
 ## 简介 {#introduction}
@@ -61,29 +68,29 @@ ht-degree: 1%
 
   选择自：
 
-   * `Members`
-   * `Content`
+  * `Members`
+  * `Content`
 
   默认值为`Members`。
 
 * **显示标题**
 
   在数据上方显示的描述性标题，如`Trending Content`。
-默认无标题。
+  默认无标题。
 
 * **显示计数**
 
   要列出的项目数。
-默认值为10。
+  默认值为10。
 
 * **活动类型**
 
   选择以下选项之一：
 
-   * `Views`（页面访问量）
-   * `Posts`（正在创建UGC）
-   * `Follows`
-   * `Likes`
+  * `Views`（页面访问量）
+  * `Posts`（正在创建UGC）
+  * `Follows`
+  * `Likes`
 
   缺省值为“视图”。
 
@@ -91,24 +98,24 @@ ht-degree: 1%
 
   选择以下选项之一：
 
-   * `Last 24 hours`
-   * `Last 7 days`
-   * `Last 30 days`
-   * `Last 90 days`
-   * `This year (since Jan 1)`
-   * `Total`
+  * `Last 24 hours`
+  * `Last 7 days`
+  * `Last 30 days`
+  * `Last 90 days`
+  * `This year (since Jan 1)`
+  * `Total`
 
   默认值为`Total`。
 
 * **上下文路径**
 
   这样，您可以将活动范围设定为网站的子集，如特定的博客。
-默认设置是整个社区站点。
+  默认设置是整个社区站点。
 
 * **成员计数聚合**
 
   取消选择（关闭）时，仅计数顶级帖子。 例如，如果上下文是根页面（默认），则`Posts`的`Activity Type`从不显示任何活动，因为无法将内容发布到根页面。 选中后，将包含所有下级页面上的计数。
-默认值为选中。
+  默认值为选中。
 
 ### 具有四个组件的示例页面 {#example-page-with-components}
 

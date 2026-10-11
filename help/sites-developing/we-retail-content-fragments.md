@@ -1,5 +1,5 @@
 ---
-title: 在We.Retail中尝试内容片段
+title: 在 We.Retail 中试用内容片段
 description: 了解如何使用We.Retail在Adobe Experience Manager中试用内容片段。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,24 +9,38 @@ exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments,Developing
 role: Developer
-source-git-commit: 9a3008553b8091b66c72e0b6c317573b235eee24
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 12%
-
+source-wordcount: '516'
+ht-degree: 15%
 ---
+# 在 We.Retail 中试用内容片段{#trying-out-content-fragments-in-we-retail}
 
-# 在We.Retail中尝试内容片段{#trying-out-content-fragments-in-we-retail}
+内容片段允许您创建渠道中性内容，以及各种（特定于渠道的）变量。 **We.Retail**（在Adobe Experience Manager的现成实例中提供）将Lofoten中的&#x200B;**Arctic Surfing**&#x200B;片段作为基本示例提供。 这说明：
 
-内容片段允许您创建渠道中性内容，以及各种（特定于渠道的）变量。 **We.Retail**(在Adobe Experience Manager的现成实例中提供)将Lofoten中的&#x200B;**Arctic Surfing**&#x200B;片段作为基本示例提供。 这说明：
+* Adobe Experience Manager (AEM) 内容片段[作为独立于页面的资产而创建和管理](/help/assets/content-fragments/content-fragments.md)。 它们允许您创建渠道中性内容，以及各种（特定于渠道的）变体。
 
-* Adobe Experience Manager (AEM)内容片段是[作为独立于页面的资源创建和管理的](/help/assets/content-fragments/content-fragments.md)。 它们允许您创建渠道中性内容，以及各种（特定于渠道的）变体。
+  * 查看[在We.Retail中查找内容片段资产的位置](#where-to-find-content-fragments-in-we-retail)
 
-   * 查看[在We.Retail中查找内容片段资产的位置](#where-to-find-content-fragments-in-we-retail)
+* 然后，您可以在创作](/help/sites-authoring/content-fragments.md)内容页面时[使用这些片段及其变体。
 
-* 然后，您可以在创作[&#128279;](/help/sites-authoring/content-fragments.md)内容页面时使用这些片段及其变体。
-
-   * 查看[在We.Retail中使用内容片段的位置](#where-content-fragments-are-used-in-we-retail)
+  * 查看[在We.Retail中使用内容片段的位置](#where-content-fragments-are-used-in-we-retail)
 
 有关创建、管理、使用和开发内容片段的完整文档：
 
@@ -49,7 +63,7 @@ We.Retail中有多个示例内容片段；通过&#x200B;**Assets**、**文件**�
 
 * 通过&#x200B;**Assets**、**文件**、**We.Retail**、**英语**、**体验**、**Lofoten北极冲浪**：
 
-   * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
+  * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 
 ![cf-44](assets/cf-44.png)
 
@@ -69,7 +83,7 @@ We.Retail中有多个示例内容片段；通过&#x200B;**Assets**、**文件**�
 
 ## 在We.Retail中使用内容片段的位置 {#where-content-fragments-are-used-in-we-retail}
 
-为说明使用内容片段[&#128279;](/help/sites-authoring/content-fragments.md)进行页面创作，下面提供了几个示例页面，例如：
+为说明使用内容片段](/help/sites-authoring/content-fragments.md)进行[页面创作，下面提供了几个示例页面，例如：
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
@@ -77,7 +91,7 @@ We.Retail中有多个示例内容片段；通过&#x200B;**Assets**、**文件**�
 
 * 通过&#x200B;**站点**，**We.Retail**，**语言母版**，**英语**，**体验**&#x200B;进行导航。 然后在Lofoten **中打开** Arctic Surfing以进行编辑：
 
-   * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
+  * [http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html](http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html)
 
 ![cf-53](assets/cf-53.png)
 
@@ -87,16 +101,16 @@ We.Retail中有多个示例内容片段；通过&#x200B;**Assets**、**文件**�
 
 * [使用内容片段](/help/assets/content-fragments/content-fragments.md)
 
-   * 了解如何创建、编辑和管理您的内容片段资产。
+  * 了解如何创建、编辑和管理您的内容片段资产。
 
 * [使用内容片段进行页面创作](/help/sites-authoring/content-fragments.md)
 
-   * 创作页面时使用您的内容片段。
+  * 创作页面时使用您的内容片段。
 
 * [开发AEM — 内容片段的组件](/help/sites-developing/components-content-fragments.md)
 
-   * 内容片段组件的概述。
+  * 内容片段组件的概述。
 
 * [开发和扩展内容片段](/help/sites-developing/customizing-content-fragments.md)
 
-   * 此信息可帮助您开发和扩展内容片段。
+  * 此信息可帮助您开发和扩展内容片段。

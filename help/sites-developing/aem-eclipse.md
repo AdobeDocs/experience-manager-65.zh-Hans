@@ -9,13 +9,24 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 solution: Experience Manager, Experience Manager Sites
 feature: Developing,Developer Tools
 role: Developer
-source-git-commit: 5bd621b14e3bcd21431c1df5629fe4669b14052c
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1296'
 ht-degree: 2%
-
 ---
-
 
 # 适用于 Eclipse 的 AEM 开发人员工具 {#aem-developer-tools-for-eclipse}
 
@@ -23,14 +34,14 @@ ht-degree: 2%
 
 ## 概述 {#overview}
 
-_适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Apache许可证2下发布的适用于Apache Sling[的](https://sling.apache.org/documentation/development/ide-tooling.html)Eclipse插件的Eclipse插件。
+_适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Apache许可证2下发布的适用于Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html)的[Eclipse插件的Eclipse插件。
 
 它提供了多项功能，可简化AEM的开发：
 
 * 通过Eclipse Server Connector与AEM实例无缝集成
 * 内容和OSGi捆绑包的同步
 * 使用代码热插拔功能调试支持
-* 通过特定项目创建向导简单BootstrapAEM项目
+* 通过特定项目创建向导简单AEM项目
 * 轻松编辑JCR属性
 
 ## 要求 {#requirements}
@@ -38,8 +49,8 @@ _适用于Eclipse的Experience Manager Developer Tools_&#x200B;是一个基于Ap
 在使用AEM Developer Tools之前，您需要：
 
 * 下载并安装适用于Enterprise Java和Web开发人员的[Eclipse IDE。](https://www.eclipse.org/downloads/packages/)
-   * 适用于Eclipse的AEM Developer Tools版本1.4.0与Eclipse 2022-12 (4.26)或更高版本兼容，并且需要Java 17或更高版本才能运行。
-* 按照`eclipse.ini`Eclipse常见问题解答[中的说明，通过编辑](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)配置文件来配置Eclipse安装，确保您至少有1 GB的栈内存。
+  * 适用于Eclipse的AEM Developer Tools版本1.4.0与Eclipse 2022-12 (4.26)或更高版本兼容，并且需要Java 17或更高版本才能运行。
+* 按照[Eclipse常见问题解答](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F)中的说明，通过编辑`eclipse.ini`配置文件来配置Eclipse安装，确保您至少有1 GB的栈内存。
 
 >[!NOTE]
 >
@@ -97,7 +108,7 @@ _适用于Eclipse的Experience Manager Developer Tools_&#x200B;附带了一个�
    >
    >此步骤可能需要一些时间，因为[m2eclipse](https://eclipse.dev/m2e/)必须扫描原型目录。
 
-1. 应在`com.adobe.aem : aem-project-archetype : <highest-number>`原型&#x200B;**下拉列表中自动选择**。 如果需要，请选择以前的版本。 单击&#x200B;**下一步**。
+1. 应在&#x200B;**原型**&#x200B;下拉列表中自动选择`com.adobe.aem : aem-project-archetype : <highest-number>`。 如果需要，请选择以前的版本。 单击&#x200B;**下一步**。
 
    ![选择原型版本](assets/select-archetype.png)
 
@@ -126,7 +137,7 @@ _适用于Eclipse的Experience Manager Developer Tools_&#x200B;附带了一个�
 
    >[!TIP]
    >
-   >有关调试在本地AEM SDK上运行的项目的更多详细信息，请参阅文档[远程调试AEM SDK。](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
+   >有关调试在本地AEM SDK上运行的项目的更多详细信息，请参阅文档[远程调试AEM SDK。](https://experienceleague.adobe.com/en/docs/experience-manager-learn/cloud-service/debugging/debugging-aem-sdk/remote-debugging)
 
 1. 单击&#x200B;**完成**。
 
@@ -142,8 +153,8 @@ _适用于Eclipse的Experience Manager Developer Tools_&#x200B;附带了一个�
 
 1. 按照说明创建[示例多模块项目，](#sample-multi-module-project)，这将创建一个基本的项目结构，其中关注点正常分离：
 
-   * `PROJECT.ui.apps`和`/apps`内容的`/etc`
-   * 已创作的`PROJECT.ui.content`的`/content`
+   * `/apps`和`/etc`内容的`PROJECT.ui.apps`
+   * 已创作的`/content`的`PROJECT.ui.content`
    * Java包`PROJECT.core`
    * 集成测试的`PROJECT.it.launcher`和`PROJECT.it.tests`
 
@@ -163,7 +174,7 @@ _适用于Eclipse的Experience Manager Developer Tools_&#x200B;附带了一个�
    1. 在同一位置，放置内容包的内容文件夹。
    1. 在Eclipse中，右键单击`PROJECT.ui.content`项目并选择&#x200B;**刷新**。
 
-1. 通过在单独的文本/代码编辑器中打开内容包的`filter.xml`文件，更新这两个项目的`META-INF/vault/filter.xml`文件，使其对应于内容包的内容。
+1. 通过在单独的文本/代码编辑器中打开内容包的`META-INF/vault/filter.xml`文件，更新这两个项目的`filter.xml`文件，使其对应于内容包的内容。
 
    * 下面是您的`filter.xml`文件外观的示例：
 
@@ -243,6 +254,6 @@ Eclipse下载所需的依赖项。 这可能需要花些时间。
 
 以下官方[Eclipse](https://www.eclipse.org/)文档可以帮助设置环境：
 
-* [开始使用Eclipse](https://eclipseide.org/getting-started/)
+* [Eclipse快速入门](https://eclipseide.org/getting-started/)
 * [Eclipse Luna帮助系统](https://help.eclipse.org/latest/index.jsp)
 * [Maven集成(m2eclipse)](https://www.eclipse.org/m2e/)

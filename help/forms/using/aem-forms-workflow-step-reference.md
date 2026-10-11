@@ -8,13 +8,29 @@ exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '7786'
 ht-degree: 0%
-
 ---
-
 # OSGi 上以表单为中心的工作流——步骤参考 {#forms-centric-workflow-on-osgi-step-reference}
 
 | 版本 | 文章链接 |
@@ -75,7 +91,7 @@ Forms Workflow步骤在AEM工作流中执行特定于AEM Forms的操作。 这�
     * **选择输入JSON：**&#x200B;使用相对于有效负荷或存储在Document、JSON或表单数据模型数据类型的变量中的路径选择输入JSON文件。 如果从“类型”下拉列表中选择“交互式通信代理UI”或“交互式通信Web渠道文档”，则此选项可用。
     * **选择自定义预填充服务：**&#x200B;选择预填充服务以检索数据并预填充交互式通信Web渠道文档或代理UI。
     * **使用上面选择的交互式通信的预填充服务：**&#x200B;使用此选项可使用使用交互式通信下拉列表中定义的交互式通信的预填充服务。
-    * **请求属性映射：**&#x200B;使用“请求属性映射”部分定义请求属性[&#128279;](../../forms/using/work-with-form-data-model.md#bindargument)的名称和值。 根据请求中指定的属性名称和值从数据源检索详细信息。 您可以使用文本值或String数据类型的变量来定义请求属性值。\
+    * **请求属性映射：**&#x200B;使用“请求属性映射”部分定义请求属性](../../forms/using/work-with-form-data-model.md#bindargument)的[名称和值。 根据请求中指定的属性名称和值从数据源检索详细信息。 您可以使用文本值或String数据类型的变量来定义请求属性值。\
       仅当从“类型”下拉列表中选择“交互式通信代理UI”或“交互式通信Web渠道文档”时，预填充服务和请求属性映射选项才可用。
 
 * **提交的信息：**&#x200B;下面列出的以下字段用作任务的输出位置：
@@ -89,7 +105,7 @@ Forms Workflow步骤在AEM工作流中执行特定于AEM Forms的操作。 这�
   * **使用以下方式保存布局模板：**&#x200B;使用相对于有效负荷的路径保存布局模板，或将其存储在Document数据类型的变量中。 [布局模板](../../forms/using/layout-design-details.md)引用您使用Forms Designer创建的XDP文件。 仅当从“类型”下拉列表中选择交互式通信代理UI时，此选项才可用。
 
 * **代理人>分配选项：**&#x200B;指定将任务分配给用户的方法。 您可以使用“参与者选择器”脚本将任务动态分配给用户或组，或者将任务分配给特定的AEM用户或组。
-* **参与者选择器：**&#x200B;在“分配选项”字段中选择了&#x200B;**动态到用户或组**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[将工作流动态分配给用户](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[创建自定义Adobe Experience Manager动态参与者步骤。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=zh-Hans&CID=RedirectAEMCommunityKautuk)
+* **参与者选择器：**&#x200B;在“分配选项”字段中选择了&#x200B;**动态到用户或组**&#x200B;选项时，该选项可用。 您可以使用ECMAScript或服务来动态选择用户或组。 有关详细信息，请参阅[将工作流动态分配给用户](https://helpx.adobe.com/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html)和[创建自定义Adobe Experience Manager动态参与者步骤。](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en&CID=RedirectAEMCommunityKautuk)
 
 * **参与者：**&#x200B;在&#x200B;**参与者选择器**&#x200B;字段中选择&#x200B;**[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]**&#x200B;选项时，该字段可用。 利用字段，可为RandomParticipantChooser选项选择用户或组。
 

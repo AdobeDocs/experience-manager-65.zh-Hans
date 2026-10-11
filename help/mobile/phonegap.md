@@ -1,6 +1,6 @@
 ---
 title: 在Adobe Experience Manager中为Adobe PhoneGap Enterprise创作
-description: 了解如何使用模板和组件添加和编辑页面、拖放组件以及添加媒体来为Adobe PhoneGap Enterprise创作。
+description: 了解如何使用模板和组件添加和编辑页面、拖放组件以及添加媒体，为Adobe PhoneGap Enterprise创作。
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -8,13 +8,17 @@ exl-id: 930a6950-150a-4670-ab48-250b655132fb
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 3%
-
+source-wordcount: '210'
+ht-degree: 4%
 ---
-
 # PhoneGap{#phonegap}
 
 {{ue-over-mobile}}
@@ -29,7 +33,7 @@ Adobe Experience Manager (AEM) Mobile只是构成完整AEM平台的支柱之一�
 
 ## 创作PhoneGap应用程序 {#authoring-phonegap-applications}
 
-***AEM作者*（或&#x200B;*营销人员*）**&#x200B;能够使用现成的模板和组件来添加和编辑页面。 您可以拖放组件，并从DAM添加所有类型的媒体，包括图像、视频和文本片段（内容片段）。
+***AEM作者*（或&#x200B;*营销人员*）**能够使用现成的模板和组件来添加和编辑页面。 您可以拖放组件，并从DAM添加所有类型的媒体，包括图像、视频和文本片段（内容片段）。
 
 请参阅以下资源：
 

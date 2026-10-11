@@ -11,7 +11,18 @@ exl-id: 21b2037a-685a-441d-aecd-865884253e03
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '3844'
 ht-degree: 1%
@@ -248,8 +259,8 @@ OR
 1. 在CRXDE中，在`/etc/mobile/groups/special`节点下添加一个包含设备组样式的&#x200B;**static.css**&#x200B;文件。
 
 1. 打开&#x200B;**特殊电话**&#x200B;页面。
-1. 要配置设备组，请单击&#x200B;**设置**&#x200B;旁边的&#x200B;**编辑**&#x200B;按钮。
-在&#x200B;**常规**&#x200B;选项卡上：
+1. 要配置设备组，请单击&#x200B;**设置**&#x200B;旁边的&#x200B;**编辑**按钮。
+在**常规**&#x200B;选项卡上：
 
    * **标题**：移动设备组的名称。
    * **描述**：组的描述。

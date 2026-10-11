@@ -6,13 +6,29 @@ role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 9014a7dd3c9279a4da3944c1b095fd60352fdbeb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: f2d27a5f-0d67-4d85-8a24-86a8d8a3574b
+    internal-label: Developer tools
+  - id: ee4c2482-9595-5bc0-b9be-c0c6f02eba50
+    internal-label: Asset Processing
+  - id: ac365bec-0634-4744-9473-c42f47320593
+    internal-label: Asset management and governance
+subfeature_v2:
+  - id: e42ab83e-8918-43a7-98a3-62bebbd5bb3a
+    internal-label: Renditions
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 1%
-
 ---
-
 # 图像转码库 {#imaging-transcoding-library}
 
 Adobe的图像转码库是一种专用的图像处理解决方案，可以执行核心图像处理功能，包括：
@@ -76,7 +92,7 @@ Adobe的图像转码库是一种专用的图像处理解决方案，可以执行
 
 要配置库，请使用以下步骤创建一个CONF文件以指示库。 您需要管理员或root权限。
 
-1. 从Software Distribution[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)下载映像转码库包并使用包管理器安装它。 此包与[!DNL Experience Manager] 6.5兼容。
+1. 从Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg)下载[映像转码库包并使用包管理器安装它。 此包与[!DNL Experience Manager] 6.5兼容。
 
 1. 要知道`com.day.cq.dam.cq-dam-switchengine`的捆绑包ID，请登录到Web控制台，然后单击&#x200B;**[!UICONTROL OSGi]** > **[!UICONTROL 捆绑包]**。 或者，要打开捆绑包控制台，请访问`https://[aem_server:[port]/system/console/bundles/` URL。 找到`com.day.cq.dam.cq-dam-switchengine`包及其标识。
 
@@ -111,8 +127,8 @@ Adobe的图像转码库是一种专用的图像处理解决方案，可以执行
 
 1. 从&#x200B;**[!UICONTROL 工作流模型]**&#x200B;页面，在编辑模式下打开&#x200B;**[!UICONTROL DAM更新资产]**&#x200B;工作流模型。
 
-1. 打开&#x200B;**[!UICONTROL 进程缩略图]**&#x200B;工作流进程步骤。 在&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡中，在&#x200B;**[!UICONTROL 跳过MIME类型]**&#x200B;列表中添加要跳过其默认缩略图生成过程的MIME类型。
-例如，如果要使用图像转码库为TIFF图像创建缩略图，请在&#x200B;**[!UICONTROL 跳过MIME类型]**&#x200B;字段中指定`image/tiff`。
+1. 打开&#x200B;**[!UICONTROL 进程缩略图]**&#x200B;工作流进程步骤。 在&#x200B;**[!UICONTROL 缩略图]**&#x200B;选项卡中，在&#x200B;**[!UICONTROL 跳过MIME类型]**列表中添加要跳过其默认缩略图生成过程的MIME类型。
+例如，如果要使用图像转码库为TIFF图像创建缩略图，请在**[!UICONTROL 跳过MIME类型]**&#x200B;字段中指定`image/tiff`。
 
 1. 在&#x200B;**[!UICONTROL 启用Web的图像]**&#x200B;选项卡中，在&#x200B;**[!UICONTROL 跳过列表]**&#x200B;中添加要跳过默认Web呈现生成过程的MIME类型。 例如，如果您在上一步中跳过了MIME类型`image/tiff`，请将`image/tiff`添加到跳过列表。
 

@@ -10,16 +10,25 @@ exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1342'
 ht-degree: 19%
-
 ---
-
 # 处理页面版本{#working-with-page-versions}
 
-版本控制可创建页面在特定时间点的“快照”。使用版本控制，您可以执行下列操作：
+版本控制可创建页面在特定时间点的“快照”。 使用版本控制，您可以执行下列操作：
 
 * 创建页面的版本。
 * 将页面还原到以前的版本，以便您可以撤消对页面所做的更改。
@@ -43,7 +52,7 @@ ht-degree: 19%
 >
 >激活页面时会自动创建版本。
 
-## 从Sidekick中恢复页面版本 {#restoring-a-page-version-from-sidekick}
+## 从Sidekick恢复页面版本 {#restoring-a-page-version-from-sidekick}
 
 要将页面还原到以前的版本，请执行以下操作：
 
@@ -142,7 +151,7 @@ ht-degree: 19%
 
    >[!NOTE]
    >
-   >您无法编辑页面的旧版本。 旧版本仅供查看。如果要还原较旧的版本，可以使用[还原](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick)手动执行此操作。
+   >您无法编辑页面的旧版本。 旧版本仅供查看。 如果要还原较旧的版本，可以使用[还原](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick)手动执行此操作。
 
 1. 查看完页面后，单击：
 
@@ -161,7 +170,7 @@ ht-degree: 19%
 
    1. 打开&#x200B;**版本控制**&#x200B;选项卡，然后单击&#x200B;**时间扭曲**（靠近sidekick底部）。
 
-   1. 使用使用时间扭曲日历[&#128279;](#using-the-timewarp-calendar)在之后显示的sidekick对话框。
+   1. 使用使用时间扭曲日历](#using-the-timewarp-calendar)在[之后显示的sidekick对话框。
 
 1. 单击&#x200B;**显示时间线** — 文档的时间线会显示；例如：
 
@@ -170,8 +179,8 @@ ht-degree: 19%
 1. 选择并移动（按住并拖动）时间轴以在文档的时间轴中移动。
 
    * 所有行都指示已发布的版本。
-激活页面后，即开始一个新行。 每次编辑文档时，都会显示新颜色。
-在以下示例中，红线表示页面在初始绿色版本的时间范围内进行了编辑。 黄线表示页面在红色版本期间进行了编辑，依此类推。
+     激活页面后，即开始一个新行。 每次编辑文档时，都会显示新颜色。
+     在以下示例中，红线表示页面在初始绿色版本的时间范围内进行了编辑。 黄线表示页面在红色版本期间进行了编辑，依此类推。
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
@@ -182,13 +191,13 @@ ht-degree: 19%
 
 ### 时间扭曲限制 {#timewarp-limitations}
 
-时间扭曲会尽量在选定的时刻重现页面。但是，由于在 AEM 中连续创作内容的过程非常复杂，并非总能实现这一点。在使用时间扭曲时，应牢记以下限制。
+时间扭曲会尽量在选定的时刻重现页面。 但是，由于在 AEM 中连续创作内容的过程非常复杂，并非总能实现这一点。 在使用时间扭曲时，应牢记以下限制。
 
-* **时间扭曲基于已发布的页面工作** – 仅当您之前已发布页面时，时间扭曲才会完全正常工作。如果没有，时间扭曲会在创作环境显示当前页面。
+* **时间扭曲基于已发布的页面工作** – 仅当您之前已发布页面时，时间扭曲才会完全正常工作。 如果没有，时间扭曲会在创作环境显示当前页面。
 * **时间扭曲使用页面版本** – 当您浏览到的页面已从存储库删除时，如果该页面的旧版本仍然位于存储库中，则该页面会正常呈现。
 * **已删除的版本会影响时间扭曲** – 如果从存储库从删除了版本，那么时间扭曲无法显示正确的视图。
 
-* **时间扭曲为只读** – 您无法编辑页面的旧版本。旧版本仅供查看。如果要还原较旧的版本，可以使用[还原](#main-pars-title-1)手动执行此操作。
+* **时间扭曲为只读** – 您无法编辑页面的旧版本。 旧版本仅供查看。 如果要还原较旧的版本，可以使用[还原](#main-pars-title-1)手动执行此操作。
 
 * **时间扭曲仅基于页面内容** — 如果呈现网站的元素（如代码、css和图像资产）发生更改，则视图将与它原来的视图不同。 原因是这些项目未在存储库中进行版本控制。
 

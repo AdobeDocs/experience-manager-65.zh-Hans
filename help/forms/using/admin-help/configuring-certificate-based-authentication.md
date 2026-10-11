@@ -9,13 +9,29 @@ exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Security
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 0%
-
+source-wordcount: '739'
+ht-degree: 1%
 ---
-
 # 配置基于证书的身份验证 {#configuring-certificate-based-authentication}
 
 >[!NOTE]
@@ -51,7 +67,7 @@ User Management通常使用用户名和密码执行身份验证。 用户管理�
 1. 单击“新建证书映射”，在“颁发者”列表中，选择在“信任存储区管理”中配置的证书别名。
 1. 将证书的某个属性映射到用户的属性。 例如，可以将证书的一般名称映射到用户的登录ID。
 
-   如果证书中属性的内容与用户管理数据库中用户属性的内容不同，则可以使用Java正则表达式(regex)来匹配这两个属性。 例如，如果证书的通用名称是&#x200B;*Alex Pink（身份验证）*&#x200B;和&#x200B;*Alex Pink（签名）*&#x200B;之类的名称，并且用户管理数据库中的通用名称是&#x200B;*Alex Pink*，则使用正则表达式提取证书属性的必需部分（在此示例中为&#x200B;*Alex Pink*）。指定的正则表达式必须符合Java正则表达式规范。
+   如果证书中属性的内容与用户管理数据库中用户属性的内容不同，则可以使用Java正则表达式(regex)来匹配这两个属性。 例如，如果证书的通用名称是&#x200B;*Alex Pink（身份验证）*&#x200B;和&#x200B;*Alex Pink（签名）*&#x200B;之类的名称，并且用户管理数据库中的通用名称是&#x200B;*Alex Pink*，则可以使用正则表达式来提取证书属性的所需部分（在此示例中为&#x200B;*Alex Pink*）。 您指定的正则表达式必须符合Java正则表达式规范。
 
    可通过在“自定义顺序”框中指定组的顺序来转换表达式。 自定义顺序与`java.util.regex.Matcher.replaceAll()`方法一起使用。 看到的行为将与该方法的行为相对应，并且必须相应地指定输入字符串（自定义顺序）。
 
@@ -59,8 +75,8 @@ User Management通常使用用户名和密码执行身份验证。 用户管理�
 
    可以在正则表达式中使用以下字符：
 
-   * 。（任意字符）
-   * &amp;amp；ast；（0次或更多次）
+   * . （任意字符）
+   * &amp;ast；（0次或更多次）
    * () （用方括号指定组）
    * \（用于将正则表达式字符转义为常规字符）
    * $n（用于表示第n组）
@@ -69,21 +85,21 @@ User Management通常使用用户名和密码执行身份验证。 用户管理�
 
    * 从《亚历克斯·平克（身份验证）》中提取《亚历克斯·平克》
 
-     **正则表达式：** (.&amp;amp；ast；) \（身份验证\）
+     **正则表达式：** (.&amp;ast；) \（身份验证\）
 
    * 从“Alex（身份验证） Pink”提取“Alex Pink”
 
-     **正则表达式：** (.&amp;amp；ast；)\（身份验证\） (.&amp;amp；ast；)
+     **正则表达式：** (.&amp;ast；)\（身份验证\） (.&amp;ast；)
 
    * 从“Alex（身份验证） Pink”提取“Pink Alex”
 
-     **正则表达式：** (.&amp;amp；ast；)\（身份验证\） (.&amp;amp；ast；)
+     **正则表达式：** (.&amp;ast；)\（身份验证\） (.&amp;ast；)
 
      自定义顺序： $2 $1（返回第二个组，连接到第一个组，由空格字符捕获）
 
-   * 从“smtp：apink@sampleorg.com”中提取“apink@sampleorg.com”
+   * 从“smtp:apink@sampleorg.com”提取“apink@sampleorg.com”
 
-     **正则表达式：** smtp：(.&amp;amp；ast；)
+     **正则表达式：** smtp：(.&amp;ast；)
 
    有关使用正则表达式的详细信息，请参阅[有关正则表达式的Java教程](https://java.sun.com/docs/books/tutorial/essential/regex/)。
 

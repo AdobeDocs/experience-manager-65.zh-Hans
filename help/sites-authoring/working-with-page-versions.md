@@ -5,22 +5,35 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User,Admin,Developer
-source-git-commit: c77849740fab51377ce60aff5f611e0408dca728
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
-source-wordcount: '1567'
+source-wordcount: '1568'
 ht-degree: 63%
-
 ---
-
 # 处理页面版本{#working-with-page-versions}
 
-版本控制可创建页面在特定时间点的“快照”。使用版本控制，您可以执行下列操作：
+版本控制可创建页面在特定时间点的“快照”。 使用版本控制，您可以执行下列操作：
 
 * 创建页面的版本。
 * 将页面还原到以前的版本；例如：
-   * 撤消对页面所做的更改。
+  * 撤消对页面所做的更改。
 * 将页面的当前版本与先前版本进行比较：
-   * 突出显示文本和图像中的差异。
+  * 突出显示文本和图像中的差异。
 
 >[!NOTE]
 >
@@ -77,13 +90,13 @@ ht-degree: 63%
 
 * 顶部[操作工具栏](/help/sites-authoring/basic-handling.md#actions-toolbar)中的&#x200B;**恢复**&#x200B;选项
 
-   * **恢复版本**
+  * **恢复版本**
 
-     在当前选定的文件夹中恢复指定页面的版本；这还可以包括恢复之前已删除的页面。
+    在当前选定的文件夹中恢复指定页面的版本；这还可以包括恢复之前已删除的页面。
 
-   * **恢复树**
+  * **恢复树**
 
-     将整个树恢复到指定的日期和时间的版本；这可以包括之前已删除的页面。
+    将整个树恢复到指定的日期和时间的版本；这可以包括之前已删除的页面。
 
 >[!NOTE]
 >
@@ -103,12 +116,12 @@ ht-degree: 63%
 
 1. 导航以显示要还原到之前版本的页面。
 1. 在[选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中选择页面。
-1. 打开&#x200B;**时间线**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。所选页面的页面版本会予以列出。
-1. 选择要还原到的版本。显示可能的选项：
+1. 打开&#x200B;**时间线**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。 所选页面的页面版本会予以列出。
+1. 选择要还原到的版本。 显示可能的选项：
 
    ![恢复到此版本](assets/screen-shot_2019-03-05at112505.png)
 
-1. 选择&#x200B;**还原到此版本**。将恢复所选版本，并更新时间线中的信息。
+1. 选择&#x200B;**还原到此版本**。 将恢复所选版本，并更新时间线中的信息。
 
 ### 恢复版本 {#restore-version}
 
@@ -151,7 +164,7 @@ ht-degree: 63%
 
 1. 导航到并[选择](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)所需文件夹。
 
-1. 选择&#x200B;**恢复**，然后从顶部[操作工具栏](/help/sites-authoring/basic-handling.md#actions-toolbar)中选择&#x200B;**恢复树**。树的最新版本如下所示：
+1. 选择&#x200B;**恢复**，然后从顶部[操作工具栏](/help/sites-authoring/basic-handling.md#actions-toolbar)中选择&#x200B;**恢复树**。 树的最新版本如下所示：
 
    ![恢复树](/help/sites-authoring/assets/versions-restore-tree-02.png)
 
@@ -172,11 +185,11 @@ ht-degree: 63%
 1. 导航以显示要进行比较的页面。
 1. 在[选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中选择页面。
 1. 打开&#x200B;**时间线**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。
-1. 页面版本会列出。选择要预览的版本：
+1. 页面版本会列出。 选择要预览的版本：
 
    ![选择要预览的版本](assets/screen-shot_2019-03-05at112505-1.png)
 
-1. 选择&#x200B;**预览**。该页面会显示在新选项卡中。
+1. 选择&#x200B;**预览**。 该页面会显示在新选项卡中。
 
    >[!CAUTION]
    >
@@ -191,11 +204,11 @@ ht-degree: 63%
 1. 导航以显示要进行比较的页面。
 1. 在[选择模式](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)中选择页面。
 1. 打开&#x200B;**时间线**&#x200B;列，然后选择&#x200B;**显示全部**&#x200B;或&#x200B;**版本**。
-1. 页面版本会列出。选择要进行比较的版本：
+1. 页面版本会列出。 选择要进行比较的版本：
 
    ![页面版本已列出 — 选择版本](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. 选择&#x200B;**与当前比较**。将打开[页面差异](/help/sites-authoring/page-diff.md)以显示差异。
+1. 选择&#x200B;**与当前比较**。 将打开[页面差异](/help/sites-authoring/page-diff.md)以显示差异。
 
 ## 时间扭曲 {#timewarp}
 
@@ -203,18 +216,18 @@ ht-degree: 63%
 
 >[!TIP]
 >
->运行AEM [或更高版本时，](/help/sites-authoring/launches.md)时间扭曲也可以与启动项一起使用来预览将来的6.5.10.0。
+>运行AEM 6.5.10.0或更高版本时，[时间扭曲也可以与启动项一起使用来预览将来的](/help/sites-authoring/launches.md)。
 
 内容创建是一个持续的协作过程。 时间扭曲旨在允许作者跟踪已发布的网站随时间的变化，以帮助他们了解内容发生了什么变化。 此功能使用页面版本确定发布环境的状态：
 
 * 系统会查找在选定时间处于活动状态的页面版本。
-   * 此页面版本是在&#x200B;*之前*&#x200B;在时间扭曲中选择的时间点创建/激活的。
+  * 此页面版本是在&#x200B;*之前*&#x200B;在时间扭曲中选择的时间点创建/激活的。
 * 当浏览到已删除的页面时，也会呈现相应的页面版本 — 只要该页面的旧版本仍然在存储库中即可。
 * 如果未找到发布的版本，则时间扭曲会还原到该页面在创作环境中的当前状态（以防止出现错误/404页面，此页面将阻止您进行浏览）。
 
 ### 使用时间扭曲 {#using-timewarp}
 
-时间扭曲是页面编辑器的一种[模式](/help/sites-authoring/author-environment-tools.md#page-modes)。要启动此模式，只需像切换任何其他模式一样切换此模式即可。
+时间扭曲是页面编辑器的一种[模式](/help/sites-authoring/author-environment-tools.md#page-modes)。 要启动此模式，只需像切换任何其他模式一样切换此模式即可。
 
 1. 为希望启动时间扭曲的页面启动编辑器，然后在模式选择中选择&#x200B;**时间扭曲**。
 
@@ -224,22 +237,22 @@ ht-degree: 63%
 
    ![设置日期](assets/wwpv-02.png)
 
-1. 将根据设置的日期显示该页面。时间扭曲模式通过窗口顶部的蓝色状态栏来指示。使用该状态栏中的链接可选择新的目标日期，或退出时间扭曲模式。
+1. 将根据设置的日期显示该页面。 时间扭曲模式通过窗口顶部的蓝色状态栏来指示。 使用该状态栏中的链接可选择新的目标日期，或退出时间扭曲模式。
 
    ![时间扭曲指示器](assets/wwpv-03.png)
 
 ### 时间扭曲限制 {#timewarp-limitations}
 
-时间扭曲会尽量在选定的时刻重现页面。但是，由于在AEM中连续创作内容的过程非常复杂，并非总是可以做到这一点。 在使用时间扭曲时，应牢记以下限制。
+时间扭曲会尽量在选定的时刻重现页面。 但是，由于在AEM中连续创作内容的过程非常复杂，并非总是可以做到这一点。 在使用时间扭曲时，应牢记以下限制。
 
-* **时间扭曲基于已发布的页面工作** – 仅当您之前已发布页面时，时间扭曲才会完全正常工作。如果没有，时间扭曲会在创作环境中显示当前页面。
+* **时间扭曲基于已发布的页面工作** – 仅当您之前已发布页面时，时间扭曲才会完全正常工作。 如果没有，时间扭曲会在创作环境中显示当前页面。
 * **时间扭曲使用页面版本** – 当您浏览到的页面已从存储库删除时，如果该页面的旧版本仍然位于存储库中，则该页面会正常呈现。
 * **已删除的版本会影响时间扭曲** – 如果从存储库从删除了版本，那么时间扭曲无法显示正确的视图。
 
-* **时间扭曲为只读** – 您无法编辑页面的旧版本。旧版本仅供查看。如果要恢复旧版本，必须使用[恢复](#reverting-to-a-page-version)手动恢复。
+* **时间扭曲为只读** – 您无法编辑页面的旧版本。 旧版本仅供查看。 如果要恢复旧版本，必须使用[恢复](#reverting-to-a-page-version)手动恢复。
 
 * **时间扭曲仅基于页面内容** — 如果呈现网站的元素发生更改，则视图与它原来的样子不同，因为这些项目不在存储库中进行版本控制。 此类元素包括代码、css、资产/图像等。
 
 >[!CAUTION]
 >
->时间扭曲旨在作为一种可帮助作者理解和创建其内容的工具，而不是用作审查日志或用于法律目的。
+>时间扭曲旨在作为一种可帮助作者理解和创建其内容的工具， 而不是用作审查日志或用于法律目的。

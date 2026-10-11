@@ -1,5 +1,5 @@
 ---
-title: 添加、启用、修改或删除端点
+title: 添加、启用、修改或移除端点
 description: 了解如何添加、启用、修改和删除端点。
 contentOwner: admin
 content-type: reference
@@ -9,14 +9,28 @@ exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 6a9806d8f40f711a610c130c63d9ab9b2460d075
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '381'
-ht-degree: 0%
-
+source-wordcount: '382'
+ht-degree: 4%
 ---
-
-# 添加、启用、修改或删除端点 {#adding-enabling-modifying-or-removing-endpoints}
+# 添加、启用、修改或移除端点 {#adding-enabling-modifying-or-removing-endpoints}
 
 >[!NOTE]
 > 
@@ -35,13 +49,13 @@ ht-degree: 0%
 1. 在“端点”选项卡的列表中，选择要添加的端点类型，然后单击“添加”。
 1. 根据端点类型，配置其他端点设置。
 
-[观察文件夹终结点设置](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
+   [观察文件夹终结点设置](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#watched-folder-endpoint-settings)
 
-[电子邮件端点设置](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
+   [电子邮件端点设置](/help/forms/using/admin-help/configuring-email-endpoints.md#email-endpoint-settings)
 
-[配置任务管理器端点](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
+   [配置任务管理器端点](/help/forms/using/admin-help/configuring-task-manager-endpoints.md#configuring-task-manager-endpoints)
 
-[远程端点设置](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
+   [远程端点设置](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
 1. 单击“添加”。
 

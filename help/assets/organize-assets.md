@@ -7,18 +7,29 @@ feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 20d6c716b4ba799a7d4ae2858459f7c38cf3da02
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: 74ec00bc-0862-520e-86dc-e377aeccc141
+    internal-label: Search
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '813'
 ht-degree: 2%
-
 ---
-
 # 组织您的数字资产 {#organize-digital-assets}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
-| Adobe Experience Manager (AEM) as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=zh-Hans) |
+| Adobe Experience Manager (AEM) as a Cloud Service | [单击此处](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=en) |
 | AEM 6.5 | 本文 |
 
 ®Office和PDF文档的所有数字资源、元数据和内容都将进行提取并使之可搜索。 搜索允许对资产进行复杂的筛选，并完全尊重适当的权限。 数字资产管理中的元数据详细介绍了元数据。
@@ -32,15 +43,15 @@ ht-degree: 2%
 * 通常，您的数字资产存储库会一直不断增长。 因此，在内容创建周期早期将元数据的使用、文件夹结构和文件命名正规化非常重要。
 * 仅使用文件夹为您的数字资产强制实施一致的存储结构。 此一致性可帮助您的流程更好地管理您的资产。 例如，放置在以下类型文件夹中的资产可以帮助您使用适当的[配置文件进行资产处理](processing-profiles.md)：
 
-   * **开发文件夹**：包含您当前正在处理的数字资源。
-   * **客户端文件夹**：包含基于客户端或项目名称的数字资源。
-   * **主文件夹**：包含原始的源数字资源。
-   * **格式副本文件夹**：包含原始源数字资产的格式副本和副本。
-   * **文件大小文件夹**：包含基于小、中、大文件大小的数字资源。
-   * **暂存文件夹**：包含准备在网站上实时发布的数字资产。
-   * **MIME类型文件夹**：包含特定于MIME类型的数字资产，如图像、文档和多媒体。
-   * **存档文件夹**：包含已弃用的数字资产。
-   * **基于日期的文件夹**：包含基于创建日期或上次修改日期的数字资源。
+  * **开发文件夹**：包含您当前正在处理的数字资源。
+  * **客户端文件夹**：包含基于客户端或项目名称的数字资源。
+  * **主文件夹**：包含原始的源数字资源。
+  * **格式副本文件夹**：包含原始源数字资产的格式副本和副本。
+  * **文件大小文件夹**：包含基于小、中、大文件大小的数字资源。
+  * **暂存文件夹**：包含准备在网站上实时发布的数字资产。
+  * **MIME类型文件夹**：包含特定于MIME类型的数字资产，如图像、文档和多媒体。
+  * **存档文件夹**：包含已弃用的数字资产。
+  * **基于日期的文件夹**：包含基于创建日期或上次修改日期的数字资源。
 
 * 创建不太可能更改的文件夹的目录，以便任何自定义或自动化均可继续工作。 例如，分配的处理配置文件将继续工作。
 * 如果资产已发布，然后您使用[!DNL Experience Manager]将该资产移动到另一个文件夹，并从其新位置重新发布，则原始发布的资产位置以及新重新发布的资产仍然可用。 但是，原始发布的资产是&#x200B;*丢失*&#x200B;到[!DNL Experience Manager]，无法取消发布。 因此，作为最佳实践，首先取消发布资产，然后将其移动到其他文件夹。

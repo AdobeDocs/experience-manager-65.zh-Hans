@@ -9,7 +9,18 @@ exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '627'
 ht-degree: 1%
@@ -61,7 +72,7 @@ Adobe Experience Manager (AEM)（以及之前的CQ）一直使用叠加原理来
 
 叠加是进行许多更改的推荐方法，例如[配置控制台](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)或[向侧面板中的资产浏览器创建选择类别](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser)（在创作页面时使用）。 它们必须是：
 
-* ***不要*&#x200B;在`/libs`分支中进行更改&#x200B;**&#x200B;您所做的任何更改都可能会丢失，因为每当您：
+* ***不要*&#x200B;在`/libs`分支中进行更改&#x200B;**您所做的任何更改都可能会丢失，因为每当您：
 
   * 在实例上升级
   * 应用修补程序

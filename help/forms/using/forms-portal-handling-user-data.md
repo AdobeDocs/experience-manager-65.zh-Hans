@@ -8,13 +8,27 @@ role: Admin,User
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '878'
 ht-degree: 0%
-
 ---
-
 # Forms门户 |处理用户数据 {#forms-portal-handling-user-data}
 
 [!DNL AEM Forms]门户提供可用于在[!DNL AEM Sites]页面上列出自适应表单、HTML5表单和其他Forms资源的组件。 此外，您还可以将其配置为向登录用户显示草稿以及提交的自适应表单和HTML5表单。 有关Forms门户的更多信息，请参阅[在门户上发布表单简介](/help/forms/using/introduction-publishing-forms.md)。

@@ -9,13 +9,27 @@ role: Developer
 exl-id: c5e712e0-5c3f-48cd-91cf-fd347222a6b2
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Document Services
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+  - id: f19cff18-c8cc-4a4b-adad-85dd2fa3dbe2
+    internal-label: Document Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1779'
 ht-degree: 1%
-
 ---
-
 # 以编程方式拆分 PDF 文档 {#programmatically-disassembling-pdf-documents}
 
 **本文档中的示例和示例仅适用于JEE环境上的AEM Forms。**
@@ -138,8 +152,8 @@ ht-degree: 1%
    * 创建一个`com.adobe.idp.Document`对象并传递包含PDF文档的`java.io.FileInputStream`对象以进行拆分。
    * 通过调用其`put`方法并传递以下参数，向`java.util.Map`对象添加一个条目：
 
-      * 表示键名的字符串值。 此值必须匹配DDX文档中指定的PDF源元素的值。
-      * 包含要分解的PDF文档的`com.adobe.idp.Document`对象。
+     * 表示键名的字符串值。 此值必须匹配DDX文档中指定的PDF源元素的值。
+     * 包含要分解的PDF文档的`com.adobe.idp.Document`对象。
 
 1. 设置运行时选项。
 
@@ -194,10 +208,10 @@ ht-degree: 1%
    * 将`System.ServiceModel.BasicHttpBinding`对象的`MessageEncoding`字段设置为`WSMessageEncoding.Mtom`。 此值可确保使用MTOM。
    * 通过执行以下任务启用基本HTTP身份验证：
 
-      * 将AEM表单用户名分配给字段`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
-      * 将相应的密码值分配给字段`AssemblerServiceClient.ClientCredentials.UserName.Password`。
-      * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
-      * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
+     * 将AEM表单用户名分配给字段`AssemblerServiceClient.ClientCredentials.UserName.UserName`。
+     * 将相应的密码值分配给字段`AssemblerServiceClient.ClientCredentials.UserName.Password`。
+     * 将常量值`HttpClientCredentialType.Basic`分配给字段`BasicHttpBindingSecurity.Transport.ClientCredentialType`。
+     * 将常量值`BasicHttpSecurityMode.TransportCredentialOnly`分配给字段`BasicHttpBindingSecurity.Security.Mode`。
 
 1. 引用现有DDX文档。
 

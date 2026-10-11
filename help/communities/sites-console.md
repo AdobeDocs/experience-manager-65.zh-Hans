@@ -10,13 +10,20 @@ role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2963'
-ht-degree: 1%
-
+source-wordcount: '3201'
+ht-degree: 0%
 ---
-
 # 社区站点控制台 {#communities-sites-console}
 
 社区站点控制台提供对以下内容的访问：
@@ -103,12 +110,12 @@ ht-degree: 1%
 
   显示在URL中的站点根页面的名称。
 
-   * 双击名称，因为创建站点后不易更改名称。
-   * 基础URL ( `https://server:port/site root/site name)`显示在`Community Site Name`的下方。
+  * 双击名称，因为创建站点后不易更改名称。
+  * 基础URL ( `https://server:port/site root/site name)`显示在`Community Site Name`的下方。
 
-   * 对于有效的URL，请附加基本语言代码+“.html”
+  * 对于有效的URL，请附加基本语言代码+“.html”
 
-     *例如*，`https://localhost:4502/content/sites/mysight/en.html`
+    *例如*，`https://localhost:4502/content/sites/mysight/en.html`
 
 * **社区站点模板**&#x200B;菜单
 
@@ -144,8 +151,8 @@ ht-degree: 1%
 * 图像将固定到浏览器窗口的左边缘。
 * 不会调整图像大小，因此当图像宽度为……
 
-   * 如果宽度小于浏览器的宽度，图像将水平重复。
-   * 大于浏览器的宽度，图像似乎会被裁剪。
+  * 如果宽度小于浏览器的宽度，图像将水平重复。
+  * 大于浏览器的宽度，图像似乎会被裁剪。
 
 * 选择&#x200B;**下一步**。
 
@@ -179,32 +186,32 @@ ht-degree: 1%
 * **允许用户注册**
 
   如果选中，站点访客可以通过自助注册成为社区成员。
-如果未选中，则社区站点为*受限的*，并且必须将站点访客分配给社区站点的成员组、发出请求或通过电子邮件向其发送邀请。如果未选中，则不应允许匿名访问。
-取消选中*私有*&#x200B;社区站点。默认值为选中。
+  如果未选中，则社区站点为*受限的*，并且必须将站点访客分配给社区站点的成员组、发出请求或通过电子邮件向其发送邀请。 如果未选中，则不应允许匿名访问。
+  取消选中*私有*&#x200B;社区站点。 默认值为选中。
 
 * **允许匿名访问**
 
   如果选中，社区站点为&#x200B;*打开*，任何站点访客都可以访问该站点。
-如果未选中，则只有已登录成员才能访问该站点。
-取消选中*私有*&#x200B;社区站点。默认值为选中。
+  如果未选中，则只有已登录成员才能访问该站点。
+  取消选中*私有*&#x200B;社区站点。 默认值为选中。
 
 * **允许发送消息**
 
   如果选中，成员可以相互发送消息并发送给社区站点中的组。
-如果未选中，则不会为社区设置消息。
-默认值为未选中。
+  如果未选中，则不会为社区设置消息。
+  默认值为未选中。
 
 * **允许社交登录： Facebook**
 
-  如果选中，则允许网站访客使用其Facebook帐户凭据登录。应将选定的[Facebook云配置](/help/communities/social-login.md#create-a-facebook-connect-cloud-service)配置为在创建社区站点后将用户添加到社区站点的成员组。
-如果未选中，则不会显示Facebook登录信息。
-取消选中*私有*&#x200B;社区站点。默认值为未选中。
+  如果选中，则允许网站访客使用其Facebook帐户凭据登录。 应将选定的[Facebook云配置](/help/communities/social-login.md#create-a-facebook-connect-cloud-service)配置为在创建社区站点后将用户添加到社区站点的成员组。
+  如果未选中，则不会显示Facebook登录信息。
+  取消选中*私有*&#x200B;社区站点。 默认值为未选中。
 
 * **允许社交登录： Twitter**
 
-  如果选中，则允许网站访客使用其Twitter帐户凭据登录。应将选定的[Twitter云配置](/help/communities/social-login.md#create-a-twitter-connect-cloud-service)配置为在创建社区站点后将用户添加到社区站点的成员组。
-如果未选中，则不会显示Twitter登录。
-取消选中*私有*&#x200B;社区站点。默认值为未选中。
+  如果选中，则允许网站访客使用其Twitter帐户凭据登录。 应将选定的[Twitter云配置](/help/communities/social-login.md#create-a-twitter-connect-cloud-service)配置为在创建社区站点后将用户添加到社区站点的成员组。
+  如果未选中，则不会显示Twitter登录。
+  取消选中*私有*&#x200B;社区站点。 默认值为未选中。
 
 >[!NOTE]
 >
@@ -226,7 +233,7 @@ ht-degree: 1%
 
 ![社区角色](assets/site-admin-2.png)
 
-社区成员[&#128279;](/help/communities/users.md)的角色已分配了这些设置。
+社区成员](/help/communities/users.md)的[角色已分配了这些设置。
 
 使用提前输入搜索可以轻松查找社区成员。
 
@@ -267,7 +274,7 @@ ht-degree: 1%
 * **启用Analytics**
 
   仅在[为Communities功能](/help/communities/analytics.md)配置Adobe Analytics时可用。
-默认值为未选中。选中后，会出现其他选择菜单：
+  默认值为未选中。 选中后，会出现其他选择菜单：
 
 ![站点分析 — 启用](assets/site-analytics-enable.png)
 
@@ -304,39 +311,39 @@ ht-degree: 1%
 
 * **为您的社区站点选择翻译选项**
 
-   * **翻译整个页面**
+  * **翻译整个页面**
 
-     如果选定此选项，则页面上的所有UGC都将翻译为该页面的基本语言。
+    如果选定此选项，则页面上的所有UGC都将翻译为该页面的基本语言。
 
-     默认值为&#x200B;*未选择*。
+    默认值为&#x200B;*未选择*。
 
-   * **仅翻译选定内容**
+  * **仅翻译选定内容**
 
-     如果选中，则每个帖子旁边都会显示翻译选项，以便可以将单个帖子翻译为页面的基本语言。
-默认值为*选定*。
+    如果选中，则每个帖子旁边都会显示翻译选项，以便可以将单个帖子翻译为页面的基本语言。
+    默认值为*选定*。
 
 * **选择持久性选项**
 
-   * **根据用户请求翻译贡献内容并在此后保留**
-如果选定此项，则在发出请求之前不会翻译内容。 翻译后，翻译将存储在存储库中。
+  * **根据用户请求翻译贡献内容并在此后保留**
+    如果选定此项，则在发出请求之前不会翻译内容。 翻译后，翻译将存储在存储库中。
 
-     默认值为&#x200B;*未选择*。
+    默认值为&#x200B;*未选择*。
 
-   * **不保留翻译**
+  * **不保留翻译**
 
-     如果选择，则翻译不会存储在存储库中。
+    如果选择，则翻译不会存储在存储库中。
 
-     如果未选择，则会保留翻译。
+    如果未选择，则会保留翻译。
 
-     默认值为&#x200B;*未选择*。
+    默认值为&#x200B;*未选择*。
 
 * **智能渲染**
 
   选择以下选项之一：
 
-   * `Always show contributions in the original language`（默认）
-   * `Always show contributions in user preferred language`
-   * `Show contributions in user preferred language for only logged-in users`
+  * `Always show contributions in the original language`（默认）
+  * `Always show contributions in user preferred language`
+  * `Show contributions in user preferred language for only logged-in users`
 
 ### 步骤4 ：创建社区站点 {#step-create-communities-site}
 
@@ -409,17 +416,17 @@ BASIC面板允许修改：
 * 将其他[社区功能](/help/communities/functions.md)拖放到站点结构中。
 * 在站点结构中社区功能的实例上：
 
-   * **`gear icon`**
+  * **`gear icon`**
 
-     编辑设置，包括显示标题和URL名称，以及[拥有权限的成员组](/help/communities/users.md#privilegedmembersgroups)。
+    编辑设置，包括显示标题和URL名称，以及[拥有权限的成员组](/help/communities/users.md#privilegedmembersgroups)。
 
-   * **`trashcan icon`**
+  * **`trashcan icon`**
 
-     从站点结构中移除（删除）函数。
+    从站点结构中移除（删除）函数。
 
-   * **`grid icon`**
+  * **`grid icon`**
 
-     修改在站点顶级导航栏中显示的函数顺序。
+    修改在站点顶级导航栏中显示的函数顺序。
 
 >[!NOTE]
 >
@@ -448,7 +455,7 @@ BASIC面板允许修改：
 * [社区网站主题](#community-site-theme)
 * [社区网站品牌化](#community-site-branding)
 
-   * 滚动到面板底部，以便更改品牌图像。
+  * 滚动到面板底部，以便更改品牌图像。
 
 ### 修改设置 {#modify-settings}
 
@@ -510,8 +517,8 @@ BASIC面板允许修改：
 
 >[!NOTE]
 >
->如果[允许社交登录： Facebook](#user-management)已启用，则用户组`community-<site-name>-<uid>-members`后
->已创建，应用的[Facebook云服务](/help/communities/social-login.md#createafacebookcloudservice)应配置为将用户添加到此组。
+>如果[允许社交登录： Facebook](#user-management)已启用，则用户组后 `community-<site-name>-<uid>-members`
+>创建，应用的[Facebook云服务](/help/communities/social-login.md#createafacebookcloudservice)应配置为将用户添加到此组。
 
 ## 配置身份验证错误 {#configure-for-authentication-error}
 
@@ -523,7 +530,7 @@ BASIC面板允许修改：
 * 使用管理员权限登录。
 * 访问[Web控制台](/help/sites-deploying/configuring-osgi.md)。
 
-   * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)。
+  * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)。
 
 * 找到`Adobe Granite Login Selector Authentication Handler`。
 * 选择`pencil`图标以打开配置进行编辑。
@@ -544,7 +551,7 @@ BASIC面板允许修改：
 
 * 浏览到社区站点主页。
 
-   * 例如，[https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
+  * 例如，[https://localhost:4503/content/sites/engage/en.html](https://localhost:4503/content/sites/engage/en.html)
 
 * 选择“注销”。
 * 选择“登录”。

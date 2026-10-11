@@ -9,13 +9,26 @@ feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 3f00fc92-85ee-583e-abd1-3bc3d96de3a0
+    internal-label: Correspondence Management
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1381'
 ht-degree: 6%
-
 ---
-
 # 在资产列表视图中添加自定义操作{#add-custom-action-to-the-asset-listing-view}
 
 ## 概述 {#overview}
@@ -108,7 +121,7 @@ ht-degree: 6%
         <tr>
         <td>图标</td>
         <td>字符串</td>
-        <td>icon-download<br /> <br />通信管理显示在命令/菜单左侧的图标。 有关可用的不同图标和设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans" target="_blank">CoralUI图标文档</a>。<br /> </td>
+        <td>icon-download<br /> <br />通信管理显示在命令/菜单左侧的图标。 有关可用的不同图标和设置，请参阅<a href="https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html" target="_blank">CoralUI图标文档</a>。<br /> </td>
         </tr>
         <tr>
         <td>jcr:primaryType</td>
@@ -277,7 +290,7 @@ ht-degree: 6%
    1. 双击&#x200B;**POST.jsp**&#x200B;文件以在CRX中将其打开。
    1. 将以下代码添加到POST.jsp文件，然后单击&#x200B;**全部保存**：
 
-      此代码特定于书信渲染服务。 对于任何其他资产，请将该资产的Java™库添加到此代码中。 有关AEM Forms API的更多信息，请参阅[AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=zh-Hans)。
+      此代码特定于书信渲染服务。 对于任何其他资产，请将该资产的Java™库添加到此代码中。 有关AEM Forms API的更多信息，请参阅[AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html)。
 
       有关AEM库的详细信息，请参阅AEM [组件](/help/sites-developing/components.md)。
 

@@ -1,5 +1,5 @@
 ---
-title: 在 AEM 6 中配置节点存储与数据存储
+title: 在 AEM 6 中配置节点存储与数据存储库
 description: 了解如何配置节点存储和数据存储，以及如何执行数据存储垃圾收集。
 content-type: reference
 topic-tags: deploying
@@ -8,14 +8,23 @@ feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 solution: Experience Manager, Experience Manager Sites
 role: Admin
-source-git-commit: f2c92b990a5c09cbcf532e0800e264620d98af77
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: 523b1ccd-901e-5e3b-9fa7-f3dfd82463d5
+    internal-label: Configuring
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3615'
+source-wordcount: '3617'
 ht-degree: 2%
-
 ---
-
-# 在 AEM 6 中配置节点存储与数据存储{#configuring-node-stores-and-data-stores-in-aem}
+# 在 AEM 6 中配置节点存储与数据存储库{#configuring-node-stores-and-data-stores-in-aem}
 
 ## 简介 {#introduction}
 
@@ -119,7 +128,7 @@ customBlobStore=B"false"
 >
 >要启用自定义数据存储，您必须确保在相应的节点存储配置文件（[区段节点存储](/help/sites-deploying/data-store-config.md#segment-node-store)或[文档节点存储](/help/sites-deploying/data-store-config.md#document-node-store)）中将`customBlobStore`设置为`true`。
 
-### 文件数据存储 {#file-data-store}
+### 文件数据存储库 {#file-data-store}
 
 这是Jackrabbit 2中存在的[FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html)的实现。 它提供了一种将二进制数据作为普通文件存储在文件系统中的方法。 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID。
 
@@ -333,7 +342,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
 
 1. 在传输URI中添加参数“ `binaryless`= `true`”。 进行更改后，URI应当类似于以下内容：
 
-   *https://localhost:4503/bin/receive？sling:authRequestLogin=1&amp;binaryless=true*
+   *https://localhost:4503/bin/receive?sling:authRequestLogin=1&amp;binaryless=true*
 
 1. 重新启动所有创作和发布实例，以使更改生效。
 
@@ -407,7 +416,7 @@ java -jar <aem-jar-file>.jar -r crx3tar-nofds
    * 对于`FileDataStore`，将在数据存储文件夹的根路径下创建文件。
    * 对于`S3DataStore`，将在`META`文件夹下配置的S3存储段中创建文件。
 
-## Azure 数据存储 {#azure-data-store}
+## Azure 数据存储库 {#azure-data-store}
 
 可以将AEM配置为将数据存储在Microsoft®的Azure存储服务中。 它使用`org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID进行配置。
 

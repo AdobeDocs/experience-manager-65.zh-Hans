@@ -10,13 +10,20 @@ exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1790'
 ht-degree: 3%
-
 ---
-
 # 部署社区 {#deploying-communities}
 
 ## 先决条件 {#prerequisites}
@@ -27,9 +34,9 @@ ht-degree: 3%
 
 * 可选许可证：
 
-   * [Adobe Analytics for Communities功能](/help/communities/analytics.md)
-   * [MongoDB for MSRP](/help/communities/msrp.md)
-   * [Adobe Cloud for ASRP](/help/communities/asrp.md)
+  * [Adobe Analytics for Communities功能](/help/communities/analytics.md)
+  * [MongoDB for MSRP](/help/communities/msrp.md)
+  * [Adobe Cloud for ASRP](/help/communities/asrp.md)
 
 ## 安装核对清单 {#installation-checklist}
 
@@ -52,32 +59,32 @@ ht-degree: 3%
 * 设置[默认电子邮件服务](/help/communities/email.md)
 * 识别[共享UGC存储](/help/communities/working-with-srp.md) (**SRP**)的选择
 
-   * 如果MongoDB SRP [(MSRP)](/help/communities/msrp.md)
+  * 如果MongoDB SRP [(MSRP)](/help/communities/msrp.md)
 
-      * [安装和配置MongoDB](/help/communities/msrp.md#mongodb-configuration)
-      * [配置Solr](/help/communities/solr.md)
-      * [选择MSRP](/help/communities/srp-config.md)
+    * [安装和配置MongoDB](/help/communities/msrp.md#mongodb-configuration)
+    * [配置Solr](/help/communities/solr.md)
+    * [选择MSRP](/help/communities/srp-config.md)
 
-   * 如果关系数据库SRP [(DSRP)](/help/communities/dsrp.md)
+  * 如果关系数据库SRP [(DSRP)](/help/communities/dsrp.md)
 
-      * [安装用于MySQL的JDBC驱动程序](#jdbc-driver-for-mysql)
-      * [安装和配置MySQL for DSRP](/help/communities/dsrp-mysql.md)
-      * [配置Solr](/help/communities/solr.md)
-      * [选择DSRP](/help/communities/srp-config.md)
+    * [安装用于MySQL的JDBC驱动程序](#jdbc-driver-for-mysql)
+    * [安装和配置MySQL for DSRP](/help/communities/dsrp-mysql.md)
+    * [配置Solr](/help/communities/solr.md)
+    * [选择DSRP](/help/communities/srp-config.md)
 
-   * 如果Adobe SRP [(ASRP)](/help/communities/asrp.md)
+  * 如果Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
-      * 与您的客户代表合作进行配置
-      * [选择ASRP](/help/communities/srp-config.md)
+    * 与您的客户代表合作进行配置
+    * [选择ASRP](/help/communities/srp-config.md)
 
-   * 如果JCR SRP [(JSRP)](/help/communities/jsrp.md)
+  * 如果JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-      * 不是共享的UGC（用户生成的内容）存储：
+    * 不是共享的UGC（用户生成的内容）存储：
 
-         * 从不复制UGC
-         * UGC仅在输入它的AEM实例或群集中可见
+      * 从不复制UGC
+      * UGC仅在输入它的AEM实例或群集中可见
 
-         * 默认值为JSRP
+      * 默认值为JSRP
 
 ## 最新版本 {#latest-releases}
 
@@ -110,13 +117,13 @@ AEM 6.5 Communities GA包含Communities包。 要了解有关AEM 6.5 [社区](/h
 1. 从存档中提取mysql-connector-java-&lt;version>-bin.jar（捆绑）
 1. 使用Web控制台安装和启动捆绑包：
 
-   * 例如，https://localhost:4502/system/console/bundles
+   * 例如， https://localhost:4502/system/console/bundles
    * 选择&#x200B;**`Install/Update`**
    * 浏览……以选择从下载的ZIP存档提取的包
    * 检查&#x200B;*Oracle Corporation的MySQLcom.mysql.jdbc*&#x200B;的JDBC驱动程序是否处于活动状态，如果未处于活动状态，则启动它（或检查日志）
 
 1. 如果在配置JDBC后在现有部署上进行安装，则通过从Web控制台重新保存JDBC配置将JDBC重新绑定到新连接器：
-   * 例如，https://localhost:4502/system/console/configMgr
+   * 例如， https://localhost:4502/system/console/configMgr
    * 找到`Day Commons JDBC Connections Pool`配置
    * 选择以打开
    * 选择`Save`
@@ -141,8 +148,8 @@ AEM 6.5 Communities GA包含Communities包。 要了解有关AEM 6.5 [社区](/h
 
   要获取高级MLS包，请参阅文档部署部分中的[AEM高级MLS](deploy-communities.md#aem-advanced-mls)。
 
-   * 版本1.2.40,2016年4月6日
-   * 下载AEM-SOLR-MLS-phasetwo-1.2.40.zip
+  * 版本1.2.40,2016年4月6日
+  * 下载AEM-SOLR-MLS-phasetwo-1.2.40.zip
 
 有关详细信息和安装信息，请访问SRP的[Solr配置](/help/communities/solr.md)。
 
@@ -159,7 +166,7 @@ AEM 6.5 Communities GA包含Communities包。 要了解有关AEM 6.5 [社区](/h
 * 选择&#x200B;**Assets**&#x200B;选项卡
 * 选择&#x200B;**下载到磁盘**
 
-在本地AEM实例上，使用包管理器（例如[https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)）上载到本地AEM的包存储库。
+在本地AEM实例上，使用包管理器（例如，[https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)）上载到本地AEM的包存储库。
 
 或者，使用包共享从本地AEM实例（例如，[https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)）访问包，`Download`按钮将下载到本地AEM实例的包存储库。
 
@@ -200,7 +207,7 @@ AEM 6.5 Communities GA包含Communities包。 要了解有关AEM 6.5 [社区](/h
 * 使用管理员权限登录
 * 访问[Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-   * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+  * 例如，[https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
 * 找到`AEM Communities Publisher Configuration`
 * 选择编辑图标
@@ -219,19 +226,19 @@ AEM 6.5 Communities GA包含Communities包。 要了解有关AEM 6.5 [社区](/h
 
 * 访问作者的“复制”控制台
 
-   * 从全局导航中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 复制]** > **[!UICONTROL 作者代理]**
+  * 从全局导航中，导航到&#x200B;**[!UICONTROL 工具]** > **[!UICONTROL 部署]** > **[!UICONTROL 复制]** > **[!UICONTROL 作者代理]**
 
 * 对两个代理均遵循相同的过程：
 
-   * **默认代理（发布）**
-   * **反向复制代理（发布反向）**
+  * **默认代理（发布）**
+  * **反向复制代理（发布反向）**
 
-      1. 选择代理
-      1. 选择&#x200B;**编辑**
-      1. 选择&#x200B;**传输**&#x200B;选项卡
-      1. 如果它不是端口`4503`，请编辑&#x200B;**URI**&#x200B;以指定正确的端口
+    1. 选择代理
+    1. 选择&#x200B;**编辑**
+    1. 选择&#x200B;**传输**&#x200B;选项卡
+    1. 如果它不是端口`4503`，请编辑&#x200B;**URI**&#x200B;以指定正确的端口
 
-      1. 如果不是用户`admin`，请编辑&#x200B;**用户**&#x200B;和&#x200B;**密码**&#x200B;以指定`administrators`用户组的成员
+    1. 如果不是用户`admin`，请编辑&#x200B;**用户**&#x200B;和&#x200B;**密码**&#x200B;以指定`administrators`用户组的成员
 
 下图显示了将端口从4503更改为6103的结果：
 
@@ -252,12 +259,12 @@ AEM 6.5 Communities GA包含Communities包。 要了解有关AEM 6.5 [社区](/h
 启用通道服务：
 
 * 使用作者实例上的管理权限登录。
-* 如果发布者不是localhost:4503或传输用户不是`admin`，
+* 如果发布者不是localhost：4503或传输用户不是`admin`，
 然后[配置复制代理](#replication-agents-on-author)
 
 * 访问[Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-   * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+  * 例如，[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
 * 找到`AEM Communities Publish Tunnel Service`
 * 选择编辑图标
@@ -276,32 +283,32 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 
 * 访问AEM实例（通常是创作实例），其中包含要复制的关键资料
 
-   * 在本地文件系统中找到`com.adobe.granite.crypto.file`包，
-例如，
+  * 在本地文件系统中找到`com.adobe.granite.crypto.file`包，
+    例如，
 
-      * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
-      * `bundle.info`文件标识该捆绑包
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+    * `bundle.info`文件标识该捆绑包
 
-   * 导航到数据文件夹，
-例如，
+  * 导航到数据文件夹，
+    例如，
 
-      * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-      * 复制hmac和主节点文件
+    * 复制hmac和主节点文件
 
 * 对于每个目标AEM实例
 
-   * 导航到数据文件夹，
-例如，
+  * 导航到数据文件夹，
+    例如，
 
-      * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-   * 粘贴之前复制的两个文件
-   * 如果目标AEM实例正在运行，则必须[刷新Granite加密包](#refresh-the-granite-crypto-bundle)
+  * 粘贴之前复制的两个文件
+  * 如果目标AEM实例正在运行，则必须[刷新Granite加密包](#refresh-the-granite-crypto-bundle)
 
 >[!CAUTION]
 >
->如果已配置基于加密密钥的其他安全功能，则复制加密密钥可能会损坏配置。 如需帮助，[请联系客户关怀](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)。
+>如果已配置基于加密密钥的其他安全功能，则复制加密密钥可能会损坏配置。 如需帮助，[请联系客户关怀](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)。
 
 #### 存储库复制 {#repository-replication}
 
@@ -309,7 +316,7 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 
 >[!NOTE]
 >
->验证是否正确配置了作者[&#128279;](#replication-agents-on-author)上的复制代理。
+>验证是否正确配置了作者](#replication-agents-on-author)上的[复制代理。
 
 将密钥资料存储在存储库中，将加密密钥从创作实例复制到其他实例的方式如下：
 
@@ -328,14 +335,14 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 
 * 在每个发布实例上，访问[Web控制台](/help/sites-deploying/configuring-osgi.md)
 
-   * 例如，[https://&lt;服务器>：&lt;端口>/system/console/bundles](https://localhost:4503/system/console/bundles)
+  * 例如，[https://&lt;服务器>：&lt;端口>/system/console/bundles](https://localhost:4503/system/console/bundles)
 
 * 找到`Adobe Granite Crypto Support`包(com.adobe.granite.crypto)
 * 选择&#x200B;**刷新**
 
   ![granite-crypto](assets/granite-crypto.png)
 
-* 片刻后，应该会显示&#x200B;**成功**&#x200B;对话框：
+* 片刻后，应该会显示&#x200B;**成功**对话框：
   `Operation completed successfully.`
 
 ### Apache HTTP 服务器 {#apache-http-server}
@@ -366,7 +373,7 @@ AEM Communities有两项功能要求所有AEM服务器实例都使用相同的�
 如果使用Dispatcher，请参阅：
 
 * AEM [Dispatcher](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates)文档
-* [安装Dispatcher](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
+* [安装Dispatcher](https://experienceleague.adobe.com/en/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install)
 * [为社区配置Dispatcher](/help/communities/dispatcher.md)
 * [已知问题](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 

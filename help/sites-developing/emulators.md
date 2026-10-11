@@ -1,6 +1,6 @@
 ---
 title: 模拟器
-description: AEM使作者能够在模拟最终用户查看页面的环境的模拟器中查看页面
+description: AEM允许作者在模拟最终用户查看页面的环境的模拟器中查看页面
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
@@ -10,13 +10,22 @@ exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '618'
 ht-degree: 0%
-
 ---
-
 # 模拟器{#emulators}
 
 {{ue-over-mobile}}
@@ -46,7 +55,7 @@ AEM模拟器框架：
 
 ### 模拟器如何转换内容 {#how-the-emulator-transforms-the-content}
 
-模拟器通过将HTML主体内容封装到模拟器DIV中来工作。 例如，以下html代码：
+模拟器通过将HTML正文内容封装到模拟器DIV中来工作。 例如，以下html代码：
 
 ```xml
 <body>
@@ -119,14 +128,14 @@ AEM模拟器框架：
 
 * 移动基础仿真器的init脚本通过JavaScript定义：
 
-   * 为页面定义的所有模拟器的配置(emulatorConfigs)
-   * 模拟器管理器通过以下方式将模拟器的功能集成到页面中：
+  * 为页面定义的所有模拟器的配置(emulatorConfigs)
+  * 模拟器管理器通过以下方式将模拟器的功能集成到页面中：
 
-     `emulatorMgr.launch(config)`；
+    `emulatorMgr.launch(config)`;
 
-     通过以下方式定义模拟器管理器：
+    通过以下方式定义模拟器管理器：
 
-     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+    `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### 创建自定义移动模拟器 {#creating-a-custom-mobile-emulator}
 
@@ -140,7 +149,7 @@ AEM模拟器框架：
 
    例如，您可以引用节点`/libs/wcm/mobile/components/emulators/iPhone/css`
 
-1. 如果需要，可定义JS客户端库，例如，以定义特定插件：名称= js，节点类型= cq：ClientLibrary
+1. 如果需要，请定义JS客户端库，例如定义特定插件：名称= js，节点类型= cq:ClientLibrary
 
    例如，您可以引用节点`/libs/wcm/mobile/components/emulators/base/js`
 

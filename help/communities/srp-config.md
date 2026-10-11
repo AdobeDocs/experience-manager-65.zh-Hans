@@ -9,13 +9,20 @@ role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '213'
 ht-degree: 4%
-
 ---
-
 # 存储配置 {#storage-configuration}
 
 存储配置是标识为社区内容(也称为用户生成内容(UGC))选择的存储的方法。
@@ -40,9 +47,9 @@ ht-degree: 4%
 * 选择一个选项
 * 正确配置
 
-   * 查看[选择MSRP](msrp.md#select-msrp)的详细信息
-   * 查看[选择DSRP](dsrp.md#select-dsrp)的详细信息
-   * 查看[选择ASRP](asrp.md#select-asrp)的详细信息
+  * 查看[选择MSRP](msrp.md#select-msrp)的详细信息
+  * 查看[选择DSRP](dsrp.md#select-dsrp)的详细信息
+  * 查看[选择ASRP](asrp.md#select-asrp)的详细信息
 
 * 选择&#x200B;**[!UICONTROL 提交]**。
 
@@ -50,7 +57,7 @@ ht-degree: 4%
 
 如果未进行任何选择，则默认为AEM存储库JCR。
 
-JCR是&#x200B;*不是*&#x200B;由Author和Publish环境共享的公用存储。 社区内容仅在创建该社区的Author或Publish环境中可见。
+JCR是&#x200B;*而非*&#x200B;创作和发布环境共享的公用存储。 社区内容仅在创建该内容的创作或发布环境中可见。
 
 访问[JCR存储](jsrp.md)以获取更多信息。
 

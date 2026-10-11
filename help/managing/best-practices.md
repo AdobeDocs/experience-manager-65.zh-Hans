@@ -10,13 +10,29 @@ exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 solution: Experience Manager, Experience Manager 6.5
 feature: Compliance
 role: Admin,Developer,Leader
-source-git-commit: f6e1e28d6fbfc240a46c2c69f02c9c5fda1d0d0d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e14eb250-3c22-4a07-9061-a78112b2b826
+    internal-label: Experience Manager 6.5
+feature_v2:
+  - id: b1210526-416b-4ef6-bcc0-1692e99f30e9
+    internal-label: Administration and security
+subfeature_v2:
+  - id: c42c36cf-eeed-484a-8b39-a33a68192a07
+    internal-label: Compliance
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: f8a45b24-4be7-4f1b-909b-60d06b483a20
+    internal-label: Leader
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '3275'
-ht-degree: 97%
-
+source-wordcount: '3277'
+ht-degree: 96%
 ---
-
 # 项目管理——最佳做法清单{#managing-projects-best-practices-checklist}
 
 要成功实施 Adobe Experience Manager（AEM）项目，您需要提前并在实施过程中持续进行规划与研判，以明确将要面对的问题以及需要作出的相关决策。
@@ -25,16 +41,16 @@ ht-degree: 97%
 
 * 一份[交互式清单](/help/managing/best-practices-checklist.md)，用于跟踪并监控您在这些最佳做法上的推进进度。
 
-   * 按项目阶段、里程碑与用户画像定义输入与可交付结果。
-   * 提供自动化概述（质量、健康度与完整度），以指示进度与项目健康状况。
+  * 按项目阶段、里程碑与用户画像定义输入与可交付结果。
+  * 提供自动化概述（质量、健康度与完整度），以指示进度与项目健康状况。
 
 * 基于该[清单](/help/managing/best-practices-checklist.md)的文档会详细说明以下内容：
 
-   * [项目节奏](#projectheartbeat)分析。
-   * [按角色划分的状态](#status-by-role)概述。
-   * [阶段和里程碑](#phases-and-milestones)。
-   * [关键用户画像](#persona)及其在各（相关）阶段的参与情况。
-   * [所需文档与可交付结果](#required-documents-and-deliverables)的[术语表](/help/managing/best-practices-glossary.md)。
+  * [项目节奏](#projectheartbeat)分析。
+  * [按角色划分的状态](#status-by-role)概述。
+  * [阶段和里程碑](#phases-and-milestones)。
+  * [关键用户画像](#persona)及其在各（相关）阶段的参与情况。
+  * [所需文档与可交付结果](#required-documents-and-deliverables)的[术语表](/help/managing/best-practices-glossary.md)。
 
 * 可供[进一步参考](/help/managing/best-practices-further-reference.md)的资料，提供特定领域的详细信息。
 
@@ -44,15 +60,15 @@ ht-degree: 97%
 
 * **阶段质量**
 
-   * 指示整个项目范围内[必要文档与可交付结果](#required-documents-and-deliverables)的质量状况。
+  * 指示整个项目范围内[必要文档与可交付结果](#required-documents-and-deliverables)的质量状况。
 
 * **阶段健康度**
 
-   * 用于反映项目整体状态的高层级指标，便于突出显示可能存在风险的区域。
+  * 用于反映项目整体状态的高层级指标，便于突出显示可能存在风险的区域。
 
 * **阶段完整度**
 
-   * 在项目任一时间点，显示项目的各个阶段已完成的比例。
+  * 在项目任一时间点，显示项目的各个阶段已完成的比例。
 
 ## 按角色划分的状态 {#status-by-role}
 
@@ -66,7 +82,7 @@ ht-degree: 97%
 
 >[!NOTE]
 >
->单个所需文档与可交付成果之间并不存在直接的 1:1 对应关系。
+>各个必需文档和交付项之间没有直接的1:1关系。
 
 ### 准备阶段 {#preparation}
 
@@ -74,11 +90,11 @@ ht-degree: 97%
 
 * **业务理由**
 
-   * 开展该项目的根本原因与正当性。
+  * 开展该项目的根本原因与正当性。
 
 * **范围与计划**
 
-   * 应制定基本范围和初步计划，以界定项目需要完成的内容及时间框架；如有助于澄清情况，还可明确哪些内容不在项目范围内。
+  * 应制定基本范围和初步计划，以界定项目需要完成的内容及时间框架；如有助于澄清情况，还可明确哪些内容不在项目范围内。
 
 您如何准备、规划和执行项目，以及如何实施解决方案，会受到现有约束条件的影响。 例如，固定预算、固定时间线、内容数量以及所需质量。
 
@@ -94,29 +110,29 @@ ht-degree: 97%
 
   在此阶段，您必须验证并确认项目目标，例如：
 
-   * 您希望实现/提供什么？
-   * 受益对象是谁？
-   * 项目范围是什么？
+  * 您希望实现/提供什么？
+  * 受益对象是谁？
+  * 项目范围是什么？
 
-      * 如有助于澄清情况，您还可以界定哪些内容不在项目范围内。
+    * 如有助于澄清情况，您还可以界定哪些内容不在项目范围内。
 
-   * 您如何定义成功？
-   * 您如何衡量成功？
-   * 有哪些业务和技术需求？
-   * 是否需要替换旧版系统？若需要，是否有数据需要迁移？
-   * 参与者有哪些？
-   * 您如何衡量项目进展？
-   * 在项目周期内，您多久会审查一次进度？
+  * 您如何定义成功？
+  * 您如何衡量成功？
+  * 有哪些业务和技术需求？
+  * 是否需要替换旧版系统？若需要，是否有数据需要迁移？
+  * 参与者有哪些？
+  * 您如何衡量项目进展？
+  * 在项目周期内，您多久会审查一次进度？
 
 * **预算**
 
   在启动任何项目之前，您需要对实施成本做出可靠且切合实际的估算：
 
-   * 应以验证里程碑阶段的信息作为估算依据。
-   * 估算应切合实际。
-   * 应考虑并尊重客户所遵循的指南、流程或限制条件。
-   * 如需在后期对预算进行复审或调整，应考虑应急方案并规划复审流程。
-   * 请注意，成本可能以多种形式出现，例如采购、资源使用以及各类费用等。
+  * 应以验证里程碑阶段的信息作为估算依据。
+  * 估算应切合实际。
+  * 应考虑并尊重客户所遵循的指南、流程或限制条件。
+  * 如需在后期对预算进行复审或调整，应考虑应急方案并规划复审流程。
+  * 请注意，成本可能以多种形式出现，例如采购、资源使用以及各类费用等。
 
 ### 规划 {#planning}
 
@@ -140,21 +156,21 @@ ht-degree: 97%
 
   沟通始终是任何项目成功的关键。 应进行清晰高效的沟通，以确保所有人：
 
-   * 朝着相同的基本目标努力
-   * 基于相同的信息来源
-   * 使用相同的渠道
+  * 朝着相同的基本目标努力
+  * 基于相同的信息来源
+  * 使用相同的渠道
 
 * **启动会**
 
   启动会用于正式宣告项目即将开始。 这是一个绝佳的机会，可用于：
 
-   * 邀请所有相关方（或至少各组代表）。
-   * 介绍项目的关键信息。
-   * 解答问题。
-   * 确保所有人拥有一致的知识库。
-   * 争取所有参与人员的承诺——这需要通过建立信任来获得。
+  * 邀请所有相关方（或至少各组代表）。
+  * 介绍项目的关键信息。
+  * 解答问题。
+  * 确保所有人拥有一致的知识库。
+  * 争取所有参与人员的承诺——这需要通过建立信任来获得。
 
-      * 在项目最初阶段就让关键成员（包括潜在的内容作者）参与进来，将更有助于获得他们对项目的承诺。
+    * 在项目最初阶段就让关键成员（包括潜在的内容作者）参与进来，将更有助于获得他们对项目的承诺。
 
 ### 开发准备 {#development-preparation}
 
@@ -170,27 +186,27 @@ ht-degree: 97%
 
   内容架构定义并描述了未来的内容体系，其中包括：
 
-   * 内容树；包括资产
-   * 基本结构；包括营销活动等。
-   * 多网站与多语言结构（MSM、翻译等）
-   * 支持型内容（包括标记及标记概念）
-   * 缓存与内容复用策略
+  * 内容树；包括资产
+  * 基本结构；包括营销活动等。
+  * 多网站与多语言结构（MSM、翻译等）
+  * 支持型内容（包括标记及标记概念）
+  * 缓存与内容复用策略
 
 * **系统架构**
 
   系统架构定义系统的概念性视图，其中包括（但不限于）：
 
-   * 各所需环境的[系统结构](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
-   * 子系统
-   * 第三方系统
-   * 接口；硬件、软件与人工交互
-   * 各环境的服务器；请参阅[技术要求](/help/sites-deploying/technical-requirements.md)和[硬件选型指南](/help/managing/hardware-sizing-guidelines.md)
+  * 各所需环境的[系统结构](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)
+  * 子系统
+  * 第三方系统
+  * 接口；硬件、软件与人工交互
+  * 各环境的服务器；请参阅[技术要求](/help/sites-deploying/technical-requirements.md)和[硬件选型指南](/help/managing/hardware-sizing-guidelines.md)
 
-   * 各环境的流程；例如部署与维护要求
-   * 维护活动（数据存储垃圾回收、TarPM 优化等）
-   * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=zh-Hans) 缓存
-   * [集群](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)发布/作者共享
-   * 客户端性能优化（JS 压缩、合并、CSS Sprite、HTTP 请求总数等）
+  * 各环境的流程；例如部署与维护要求
+  * 维护活动（数据存储垃圾回收、TarPM 优化等）
+  * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html) 缓存
+  * [集群](/help/sites-deploying/recommended-deploys.md#deployment-scenarios)发布/作者共享
+  * 客户端性能优化（JS 压缩、合并、CSS Sprite、HTTP 请求总数等）
 
 * **应用程序架构**
 
@@ -198,24 +214,24 @@ ht-degree: 97%
 
   重点包括：
 
-   * 应用程序之间以及与用户之间的交互方式。
-   * 应用程序需消耗和生成的数据，而非其内部结构。
+  * 应用程序之间以及与用户之间的交互方式。
+  * 应用程序需消耗和生成的数据，而非其内部结构。
 
   这些定义应涵盖以下内容：
 
-   * 项目的基本代码结构
-   * 代码工件（捆绑包、软件包等）
-   * 模板/组件的拆分及其关系
-   * 所需自定义的高层级细节（具体覆盖内容将在后续定义）
-   * 解决方案所需工作流的设计（例如内容创建、审批、发布、转化、导入与导出）
-   * 对 MSM、Commerce、第三方集成等复杂模块的特别考量
+  * 项目的基本代码结构
+  * 代码工件（捆绑包、软件包等）
+  * 模板/组件的拆分及其关系
+  * 所需自定义的高层级细节（具体覆盖内容将在后续定义）
+  * 解决方案所需工作流的设计（例如内容创建、审批、发布、转化、导入与导出）
+  * 对 MSM、Commerce、第三方集成等复杂模块的特别考量
 
 * **系统集成**
 
   系统集成需要您规划（并实施）：
 
-   * 如何将所有子系统与[解决方案集成](/help/sites-administering/integration.md)统一起来，使其作为一个整体系统协同运行
-   * 如何集成任何第三方系统；以及需要考虑的特殊情况，例如在线/离线、客户端/浏览器端，或在第三方系统宕机时的故障切换处理
+  * 如何将所有子系统与[解决方案集成](/help/sites-administering/integration.md)统一起来，使其作为一个整体系统协同运行
+  * 如何集成任何第三方系统；以及需要考虑的特殊情况，例如在线/离线、客户端/浏览器端，或在第三方系统宕机时的故障切换处理
 
 * **测试概念**
 
@@ -223,11 +239,11 @@ ht-degree: 97%
 
   该方案应包括（但不限于）：
 
-   * 需执行的所有测试的详细说明
-   * 测试所需内容的准备
-   * 计划使用的任何测试工具的信息
-   * 高层级说明参与测试的人员，特别是质量保证（QA）团队之外的群体
-   * 测试自动化的细节；例如使用 Selenium 或 AEM 开发者模式
+  * 需执行的所有测试的详细说明
+  * 测试所需内容的准备
+  * 计划使用的任何测试工具的信息
+  * 高层级说明参与测试的人员，特别是质量保证（QA）团队之外的群体
+  * 测试自动化的细节；例如使用 Selenium 或 AEM 开发者模式
 
 * **Experience Design**
 
@@ -239,7 +255,7 @@ ht-degree: 97%
 
   在开发开始之前，应建立所有与部署、发布、测试和问题报告相关的支持流程。
 
-  另请参阅 [Adobe 支持门户](https://experienceleague.adobe.com/zh-hans?support-solution=General&support-tab=home#support)。
+  另请参阅 [Adobe 支持门户](https://experienceleague.adobe.com/?support-solution=General&support-tab=home#support)。
 
 ### 运营规划与运营 {#operations-planning-and-operations}
 
@@ -253,11 +269,11 @@ ht-degree: 97%
 
   例如：
 
-   * 列出角色列表（即组），并为每个角色定义 `read`/ `write` 访问权限
+  * 列出角色列表（即组），并为每个角色定义 `read`/ `write` 访问权限
 
-   * 定义影响发布环境的权限使用情况，例如 `replicate`
-   * 应为权限最小化的用户定义工作流
-   * `editor` 组中的用户不应拥有 `admin` 权限，也不应属于 `administrators` 组
+  * 定义影响发布环境的权限使用情况，例如 `replicate`
+  * 应为权限最小化的用户定义工作流
+  * `editor` 组中的用户不应拥有 `admin` 权限，也不应属于 `administrators` 组
 
   有关详细信息，请参阅[用户管理与安全](/help/sites-administering/security.md)。
 
@@ -265,8 +281,8 @@ ht-degree: 97%
 
   监控与维护是确保解决方案上线后平稳运行的关键环节。 为此，您需要定义：
 
-   * 需要监控的内容
-   * 维护任务；包括常规任务与特殊情况处理
+  * 需要监控的内容
+  * 维护任务；包括常规任务与特殊情况处理
 
   另请参阅[监控和维护](/help/sites-deploying/monitoring-and-maintaining.md)，以了解更多信息。
 
@@ -288,57 +304,57 @@ ht-degree: 97%
 
   规划并记录您的开发环境，包括：
 
-   * 架构
-   * [开发工具](/help/sites-developing/dev-tools.md)
+  * 架构
+  * [开发工具](/help/sites-developing/dev-tools.md)
 
-      * 一个典型的环境包括：
+    * 一个典型的环境包括：
 
-         * 问题跟踪系统，例如 Jira
-         * 集成开发环境（IDE），例如 Eclipse
-         * 构建管理工具，例如 Maven
-         * 持续集成工具，例如 Jenkins
-         * 版本控制工具，例如 GIT/SVN
-         * 构建工件存储库管理器，例如 Archiva/Nexus
+      * 问题跟踪系统，例如 Jira
+      * 集成开发环境（IDE），例如 Eclipse
+      * 构建管理工具，例如 Maven
+      * 持续集成工具，例如 Jenkins
+      * 版本控制工具，例如 GIT/SVN
+      * 构建工件存储库管理器，例如 Archiva/Nexus
 
-   * 第三方软件集成/依赖项
-   * [解决方案集成/依赖项](/help/sites-administering/integration.md)
-   * 部署节奏
+  * 第三方软件集成/依赖项
+  * [解决方案集成/依赖项](/help/sites-administering/integration.md)
+  * 部署节奏
 
 * **测试系统**
 
   规划并记录您的测试环境，包括：
 
-   * 架构
-   * 对开发构建的依赖；包括每日构建
-   * 第三方软件集成/依赖项的测试可能性或局限性
-   * 测试工具
-   * 自动化测试策略
+  * 架构
+  * 对开发构建的依赖；包括每日构建
+  * 第三方软件集成/依赖项的测试可能性或局限性
+  * 测试工具
+  * 自动化测试策略
 
 * **生产系统**
 
   规划并记录您的生产环境，包括：
 
-   * 架构
-   * 部署节奏
-   * 第三方软件集成/依赖项
-   * 安全设置
-   * 在生产环境中运行 [Tough Day 测试](/help/sites-developing/tough-day.md)以验证基准性能
-   * 性能测试的要求；参见[质量保证最佳做法](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+  * 架构
+  * 部署节奏
+  * 第三方软件集成/依赖项
+  * 安全设置
+  * 在生产环境中运行 [Tough Day 测试](/help/sites-developing/tough-day.md)以验证基准性能
+  * 性能测试的要求；参见[质量保证最佳做法](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **集成**
 
   规划、记录并测试系统与[解决方案集成](/help/sites-administering/integration.md)的各个方面，包括：
 
-   * 自动化测试策略
-   * 自动化流程，用于[将应用程序从开发环境迁移至测试环境，再迁移至生产环境](/help/managing/enterprise-devops.md#code-movement)
-   * 自动化流程，用于[将内容从生产环境迁移至测试与开发环境](/help/managing/enterprise-devops.md#content-movement)
+  * 自动化测试策略
+  * 自动化流程，用于[将应用程序从开发环境迁移至测试环境，再迁移至生产环境](/help/managing/enterprise-devops.md#code-movement)
+  * 自动化流程，用于[将内容从生产环境迁移至测试与开发环境](/help/managing/enterprise-devops.md#content-movement)
 
 * **迁移**
 
   规划、记录并测试内容迁移的各个方面，包括：
 
-   * 内容架构
-   * 迁移策略
+  * 内容架构
+  * 迁移策略
 
 * **沟通**
 
@@ -348,9 +364,9 @@ ht-degree: 97%
 
   完整记录解决方案，包括：
 
-   * 操作手册
-   * 可能影响升级的任何自定义内容
-   * 发行说明
+  * 操作手册
+  * 可能影响升级的任何自定义内容
+  * 发行说明
 
 ### 性能和测试 {#performance-and-testing}
 
@@ -368,8 +384,8 @@ ht-degree: 97%
 
   [用户验收测试](/help/sites-developing/acceptance-signoff.md)（UAT）至关重要，用于确保：
 
-   * 解决方案满足用户/客户的需求
-   * 客户/用户认可解决方案（功能、设计和性能）
+  * 解决方案满足用户/客户的需求
+  * 客户/用户认可解决方案（功能、设计和性能）
 
   应制定正式的客户交接清单；理想情况下，应能自动化执行，并在夜间基于快照运行。 测试结果应发送给项目经理和开发团队
 
@@ -379,10 +395,10 @@ ht-degree: 97%
 
   有关性能测试的更多信息，请参阅：
 
-   * [性能测试](/help/sites-deploying/configuring-performance.md)
-   * [如何规划与执行测试](/help/sites-developing/planning.md)
+  * [性能测试](/help/sites-deploying/configuring-performance.md)
+  * [如何规划与执行测试](/help/sites-developing/planning.md)
 
-   * [基本性能指南](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
+  * [基本性能指南](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
 
   >[!NOTE]
   >
@@ -408,17 +424,17 @@ ht-degree: 97%
 
   确保您的解决方案管理员已完成以下事项：
 
-   * 已接受培训
-   * 已获得相应的培训资料
-   * 已获得相应的文档
+  * 已接受培训
+  * 已获得相应的培训资料
+  * 已获得相应的文档
 
 * **用户培训**
 
   确保您的作者已完成以下事项：
 
-   * 已接受培训
-   * 已获得相应的培训资料
-   * 已获得相应的文档，例如《用户指南》
+  * 已接受培训
+  * 已获得相应的培训资料
+  * 已获得相应的文档，例如《用户指南》
 
 * **渗透测试**
 
@@ -473,8 +489,8 @@ ht-degree: 97%
 * 负责提供/呈现项目的商业论证。
 * 在制定和界定项目范围时起关键作用；包括：
 
-   * 成功的定义与评判标准
-   * 主要关键绩效指标（KPI）
+  * 成功的定义与评判标准
+  * 主要关键绩效指标（KPI）
 
 * 根据客户路线图提供主要里程碑。
 
@@ -500,14 +516,14 @@ ht-degree: 97%
 
 * 主要负责收集和分析高层级需求，并将其转化为规范：
 
-   * 供项目经理在规划开发时使用
-   * 供开发团队在设计与开发过程中使用
+  * 供项目经理在规划开发时使用
+  * 供开发团队在设计与开发过程中使用
 
 * 与客户紧密合作以分析需求。 并将这些需求与以下内容对照：
 
-   * 成功的定义。
-   * 成功的评判标准。
-   * KPI（涵盖业务与性能两方面）。
+  * 成功的定义。
+  * 成功的评判标准。
+  * KPI（涵盖业务与性能两方面）。
 
 ### 开发负责人 {#development-lead}
 
@@ -517,8 +533,8 @@ ht-degree: 97%
 * 负责选择符合客户需求的开发方法论。
 * 制定开发战略，包括：
 
-   * 确保与业务及性能 KPI 保持一致
-   * 兼顾成功标准与定义
+  * 确保与业务及性能 KPI 保持一致
+  * 兼顾成功标准与定义
 
 * 与架构师紧密合作（尤其是在制定 AEM 开发战略时），以定义模板与组件之间的关系、第三方应用程序的集成策略及任何专用功能。
 
@@ -537,8 +553,8 @@ ht-degree: 97%
 * 负责监督项目基础架构。
 * 具体负责：
 
-   * 搭建内部开发与测试环境
-   * 并确保这些系统与客户系统相匹配
+  * 搭建内部开发与测试环境
+  * 并确保这些系统与客户系统相匹配
 
 * 提供硬件建议，监控各项实施，并在上线前后提供运维支持。
 
@@ -553,33 +569,33 @@ ht-degree: 97%
 
 * 利益相关者
 
-   * 通常是业务方面人员，他们对项目的成功有既得利益。 他们往往会参与预算投入。
+  * 通常是业务方面人员，他们对项目的成功有既得利益。 他们往往会参与预算投入。
 
 * 法律顾问
 
-   * 在合同谈判过程中需要法律顾问的支持。
+  * 在合同谈判过程中需要法律顾问的支持。
 
 * 培训师
 
-   * 根据项目的规模和性质，可聘请专业培训师为相关群体开发并开展培训课程。
+  * 根据项目的规模和性质，可聘请专业培训师为相关群体开发并开展培训课程。
 
 * 技术文档撰写人员
 
-   * 根据项目的规模和性质，可聘请专业的技术写作者为特定群体编写指南和手册。 例如，供系统管理员使用的《维护手册》或供作者使用的《用户指南》。
+  * 根据项目的规模和性质，可聘请专业的技术写作者为特定群体编写指南和手册。 例如，供系统管理员使用的《维护手册》或供作者使用的《用户指南》。
 
 * 系统管理员
 
-   * 负责系统的日常运行与维护。
+  * 负责系统的日常运行与维护。
 
 * 作者与最终用户
 
-   * 使用系统创建和维护网站内容的人员。
+  * 使用系统创建和维护网站内容的人员。
 
 ## 必需文档与可交付结果 {#required-documents-and-deliverables}
 
 该清单涵盖了每个里程碑所需的&#x200B;**必需文档**&#x200B;与&#x200B;**可交付结果**。
 
-* 两者之间并非 1:1 对应关系；例如，一组必需文档可能对应一个可交付结果。
+* 它们之间没有1:1关系；例如，一组必需文档可以导致单个交付项。
 * 某个用户画像的可交付结果在同一里程碑中可能成为另一个用户画像的必需文档。
 
 ### 必需文件 {#required-documents}
@@ -606,11 +622,11 @@ ht-degree: 97%
 有关部署、管理、开发或创作的最佳做法，请参阅以下内容：
 
 * 与 AEM 项目管理相关的其他最佳做法与指南：
-   * [硬件选型指南](/help/managing/hardware-sizing-guidelines.md)
-   * [企业 DevOps](/help/managing/enterprise-devops.md)
-   * [SEO 和 URL 管理最佳做法](/help/managing/seo-and-url-management.md)
-   * [AEM 与 Web 无障碍指南](/help/managing/web-accessibility.md)
-   * [通用数据保护条例](/help/managing/data-protection-and-privacy.md)
+  * [硬件选型指南](/help/managing/hardware-sizing-guidelines.md)
+  * [企业 DevOps](/help/managing/enterprise-devops.md)
+  * [SEO 和 URL 管理最佳做法](/help/managing/seo-and-url-management.md)
+  * [AEM 与 Web 无障碍指南](/help/managing/web-accessibility.md)
+  * [通用数据保护条例](/help/managing/data-protection-and-privacy.md)
 * [部署和维护最佳实践](/help/sites-deploying/best-practices.md)
 * [管理最佳做法](/help/sites-administering/administer-best-practices.md)
 * [开发最佳做法](/help/sites-developing/best-practices.md)
@@ -621,16 +637,16 @@ ht-degree: 97%
 * AEM文档
 此外，AEM文档的以下部分尤其令人感兴趣（但是，此列表并非详尽无遗）：
 
-   * [安全性](/help/sites-developing/security.md)
-   * [推荐的部署](/help/sites-deploying/recommended-deploys.md)
-   * [企业 DevOps](/help/managing/enterprise-devops.md)
-   * [硬件选型](/help/managing/hardware-sizing-guidelines.md)
-   * AEM 概念：
+  * [安全性](/help/sites-developing/security.md)
+  * [推荐的部署](/help/sites-deploying/recommended-deploys.md)
+  * [企业 DevOps](/help/managing/enterprise-devops.md)
+  * [硬件选型](/help/managing/hardware-sizing-guidelines.md)
+  * AEM 概念：
 
-      * [开发——基础知识](/help/sites-developing/the-basics.md)
-      * [MSM 概念](/help/sites-administering/msm.md)
-      * [HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=zh-Hans)
+    * [开发——基础知识](/help/sites-developing/the-basics.md)
+    * [MSM 概念](/help/sites-administering/msm.md)
+    * [HTML模板语言(HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 * 相关文档
 
-   * Adobe Experience Cloud - [Adobe Experience Cloud 规划](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html?lang=zh-Hans)
+  * Adobe Experience Cloud - [Adobe Experience Cloud 规划](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

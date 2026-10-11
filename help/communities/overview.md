@@ -10,13 +10,20 @@ exl-id: d6243dff-a067-455c-a326-5f451f225efd
 solution: Experience Manager
 feature: Communities
 role: Admin
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1332'
 ht-degree: 1%
-
 ---
-
 # AEM Communities概述 {#aem-communities-overview}
 
 Adobe Experience Manager (AEM)社区允许您快速创建本地社区站点，该站点提高了性能、改进了站点管理，并鼓励将站点访客转化为有价值的社区成员。
@@ -93,7 +100,7 @@ AEM Communities支持与网站访客建立关系，这些网站访客：
 
 在创作环境中，全局导航控制台提供对[社区控制台](/help/communities/consoles.md)的访问权限，该控制台包含：
 
-* [Sites &#x200B;](/help/communities/sites-console.md)控制台
+* [Sites ](/help/communities/sites-console.md)控制台
 
   * 站点创建
   * 站点编辑

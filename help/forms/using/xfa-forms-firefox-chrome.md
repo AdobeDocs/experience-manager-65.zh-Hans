@@ -9,7 +9,21 @@ role: Admin
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 exl-id: 31b52a82-5062-403e-bba7-e6a7e32ee961
-source-git-commit: 913e249ba52f1ee262ed78167ce3b2a857e86213
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
 workflow-type: tm+mt
 source-wordcount: '334'
 ht-degree: 11%
@@ -53,6 +67,6 @@ ht-degree: 11%
 >[!NOTE]
 > 
 > LiveCycle ES4支持将基于XFA的表单渲染到HTML5，以便这些表单可以在支持HTML5的浏览器中打开，包括那些在iPad等移动设备上运行的表单。 表单的HTML5演绎版维护表单设计的布局，并支持嵌入到XFA表单模板中的大多数表单逻辑（如JavaScript、表单计算和表单验证）。 这样，您对XFA表单的技术投资就可以轻松转移到无法运行Adobe Reader插件的设备上。
->有关详细信息，请参阅[LiveCycle产品文档](https://business.adobe.com/cn/products/experience-manager/forms/aem-forms.html)。
+>有关详细信息，请参阅[LiveCycle产品文档](https://business.adobe.com/products/experience-manager/forms/aem-forms.html)。
 
 [法律声明](https://chl-author-preview.corp.adobe.com/content/help/en/legal/legal-notices.html)    | [联机隐私策略](https://www.adobe.com/cn/privacy.html)

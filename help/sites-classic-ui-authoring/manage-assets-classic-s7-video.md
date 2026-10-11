@@ -5,12 +5,22 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: authoring
 content-type: reference
-
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1725'
 ht-degree: 2%
@@ -22,7 +32,7 @@ Assets提供了集中式视频资源管理，您可以在其中直接将视频�
 Dynamic Media Classic视频集成将优化视频的覆盖范围扩展到所有屏幕（自动设备和带宽检测）。
 
 * Dynamic Media Classic视频组件自动执行设备和带宽检测，以在台式机、平板电脑和移动设备之间播放正确格式和正确质量的视频。
-* Assets — 您可以包含自适应视频集，而不是只包含单个视频资源。 自适应视频集是用于在多个屏幕上无缝播放视频所需的所有视频演绎版的容器。 自适应视频集对使用不同比特率和格式（例如400 kbps、800 kbps和1000 kbps）编码的相同视频的版本进行分组。 您可以使用自适应视频集以及S7视频组件在多个屏幕（包括台式机、iOS、Android™、BlackBerry®和Windows移动设备）上实现自适应视频流传输。 有关更多信息，请参阅有关自适应视频集的[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html?lang=zh-Hans#video)。
+* Assets — 您可以包含自适应视频集，而不是只包含单个视频资源。 自适应视频集是用于在多个屏幕上无缝播放视频所需的所有视频演绎版的容器。 自适应视频集对使用不同比特率和格式（例如400 kbps、800 kbps和1000 kbps）编码的相同视频的版本进行分组。 您可以使用自适应视频集以及S7视频组件在多个屏幕（包括台式机、iOS、Android™、BlackBerry®和Windows移动设备）上实现自适应视频流传输。 有关更多信息，请参阅有关自适应视频集的[Dynamic Media Classic文档](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video)。
 
 ## 关于FFMPEG和Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -63,7 +73,7 @@ Dynamic Media Classic视频组件支持以下格式：
 
 如果您不需要为资源创建工作流或版本控制，则应将资源上传到Dynamic Media Classic。 以下是推荐的工作流：
 
-1. 在Dynamic Media Classic桌面应用程序中，[设置计划的FTP上传和编码到Dynamic Media Classic（系统自动进行）](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html?lang=zh-Hans#upload-options)。
+1. 在Dynamic Media Classic桌面应用程序中，[设置计划的FTP上传和编码到Dynamic Media Classic（系统自动进行）](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options)。
 1. 在Experience Manager中，在内容查找器的&#x200B;**[!UICONTROL Dynamic Media Classic]**&#x200B;选项卡中访问WCM中的视频资源。
 1. 使用Dynamic Media Classic视频组件创作。
 
@@ -80,7 +90,7 @@ Dynamic Media Classic视频组件支持以下格式：
 
    >[!NOTE]
    >
-   >有关视频预设的含义的详细信息，请参阅[用于编码视频文件的视频预设](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html?lang=zh-Hans#video-presets-for-encoding-video-files)。
+   >有关视频预设的含义的详细信息，请参阅[用于编码视频文件的视频预设](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files)。
    >
    >Adobe建议您在配置通用预设时同时选择两个自适应视频集或选择&#x200B;**[!UICONTROL 自适应视频编码]**&#x200B;选项。
 

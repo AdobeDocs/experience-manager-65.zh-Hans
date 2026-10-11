@@ -9,13 +9,24 @@ feature: Document Security
 exl-id: a452674c-aea0-45d6-88cd-438af539d355
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 89a07256cd5bb850aac19565ad86273322fa1f31
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 50158d81-1c06-57f7-8bd7-e8ff76a93f85
+    internal-label: Document Security
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '1029'
 ht-degree: 3%
-
 ---
-
 # 为文档安全配置来自外部浏览器的扩展身份验证 {#configure-external-browser-authentication-document-security}
 
 >[!NOTE]
@@ -44,7 +55,7 @@ JEE Service Pack 6.5.25.0及更高版本上的AEM Forms中提供了外部浏览�
 
 如果您在JEE Service Pack 6.5.24.0或更早版本上的AEM Forms上，请执行以下操作之一：
 
-* 升级到JEE Service Pack 6.5.25.0[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip)上的AEM Forms。
+* 升级到JEE Service Pack 6.5.25.0](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.25.0.zip)上的[AEM Forms。
 * 使用以下链接为您的应用程序服务器和平台安装AEM Forms JEE修补程序6.5.24.0修补程序。
 
 从[AEM Forms Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)下载并安装适用于您平台的Adobe JEE修补程序6.5.24.0修补程序：

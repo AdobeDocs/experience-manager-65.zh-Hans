@@ -10,13 +10,29 @@ feature: Spin Sets,Asset Management
 role: User, Admin
 exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: bd0d2470-932c-4269-8eca-6d939b72d9ef
+    internal-label: Dynamic Media
+subfeature_v2:
+  - id: cb008a68-9156-4b10-9c66-391409a53067
+    internal-label: Spin Sets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2001'
+source-wordcount: '2038'
 ht-degree: 9%
-
 ---
-
 # 旋转集{#spin-sets}
 
 旋转集模拟旋转对象以对其进行检查的真实行为。 旋转集允许从任何角度查看项目，从任何角度获取关键的可视详细信息。
@@ -93,7 +109,7 @@ ht-degree: 9%
 
 对于一维旋转集，至少需要8-12次拍摄项目；对于二维旋转集，至少需要16-24次拍摄项目。 拍摄必须定期进行，以便给人一种旋转和翻转项目的印象。 例如，如果一维旋转集包含12个镜头，则为每个镜头旋转项目30° (360/12)。
 
-您可以像在Experience Manager Assets[&#128279;](/help/assets/manage-assets.md)中上传任何其他资源一样上传旋转集的图像。
+您可以像在Experience Manager Assets](/help/assets/manage-assets.md)中[上传任何其他资源一样上传旋转集的图像。
 
 有关旋转集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media)。
 
@@ -221,8 +237,8 @@ ht-degree: 9%
 
    * 要重新排序图像，请将图像拖动到新位置（选择重新排序图标以移动项目）。
    * 要按升序或降序对项排序，请选择列标题。
-   * 要添加资源或更新现有资源，请选择&#x200B;**[!UICONTROL 添加资源]**。导航到某个资源，选择该资源，然后选择右上角附近的&#x200B;**[!UICONTROL 选择]**。
-如果通过将Experience Manager用于缩略图的图像替换为其他图像来删除该图像，则仍会显示原始资源。
+   * 要添加资源或更新现有资源，请选择&#x200B;**[!UICONTROL 添加资源]**。 导航到某个资源，选择该资源，然后选择右上角附近的&#x200B;**[!UICONTROL 选择]**。
+     如果通过将Experience Manager用于缩略图的图像替换为其他图像来删除该图像，则仍会显示原始资源。
    * 要删除资源，请选择该资源并选择&#x200B;**[!UICONTROL 删除资源]**。
    * 要应用预设，请选择“预设”图标并选择预设。
    * 要删除整个旋转集，请导航到该旋转集，选择它，然后选择&#x200B;**[!UICONTROL 删除]**

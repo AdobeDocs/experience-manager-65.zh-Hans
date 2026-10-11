@@ -8,14 +8,32 @@ feature: Adaptive Forms,Foundation Components
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 9f5812d7b252bcf39896b4fbf2e3ac5c24bdb808
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2871'
 ht-degree: 3%
 ---
 # 自适应表单表达式{#adaptive-form-expressions}
 
-<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=zh-Hans)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
+<span class="preview">Adobe 建议使用现代、可扩展的数据捕获[核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html)，以[创建新的自适应表单](/help/forms/using/create-an-adaptive-form-core-components.md)或[将自适应表单添加到 AEM Sites 页面](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)。 这些组件代表了自适应表单创建方面的一大进步，可确保提供令人印象深刻的用户体验。 本文介绍了使用基础组件创作自适应表单的旧方法。</span>
 
 自适应表单为具有动态脚本编写功能的最终用户提供经过优化和简化的表单填写体验。 它允许您编写表达式以添加各种行为，如动态显示/隐藏字段和面板。 它还允许您添加计算字段、使字段只读、添加验证逻辑等。 动态行为基于用户输入或预填充的数据。
 
@@ -75,7 +93,7 @@ JavaScript是自适应表单的表达式语言。 所有表达式都是有效的
 
 **返回类型**：表达式返回与显示表达式结果的字段（例如，小数）兼容的值。
 
-**示例**：用于显示&#x200B;**field1**&#x200B;中两个字段之和的计算表达式是：
+**示例**：用于显示&#x200B;**field1**中两个字段之和的计算表达式是：
 `field2.value + field3.value`
 
 ### 单击表达式 {#click-expression}
@@ -135,7 +153,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 **应用于**：字段
 
-**返回类型**：表达式返回代表字段验证状态的布尔值。 值&#x200B;**false**&#x200B;表示该字段无效，**true**&#x200B;表示该字段有效。
+**返回类型**：表达式返回代表字段验证状态的布尔值。 值&#x200B;**false**&#x200B;表示该字段无效，**true**表示该字段有效。
 **示例**：对于表示UK邮政编码的字段，验证表达式为：
 
 (**this.value**&#x200B;和&amp; `this.value.match(/^(GIR 0AA|[A-Z]{1,2}\d[A-Z0-9]? ?[0-9][A-Z]{2}\s*)$/i) == null) ? false : true`
@@ -157,7 +175,7 @@ click表达式处理对按钮的单击事件执行的操作。 GuideBridge开箱
 
 **返回类型：**&#x200B;值提交脚本表达式未返回任何值。 如果有任何表达式返回值，则忽略该值。
 
-**示例：**&#x200B;若要在提交时将在字段中输入的字母的大小写转换为大写，值commit表达式为：
+**示例：**若要在提交时将在字段中输入的字母的大小写转换为大写，值commit表达式为：
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]

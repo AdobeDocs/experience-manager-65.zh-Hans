@@ -8,13 +8,25 @@ exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
 solution: Experience Manager, Experience Manager Sites
 feature: Content Fragments
 role: Developer
-source-git-commit: eae057caed533ef16bb541b4ad41b8edd7aaa1c7
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: a642c50e-80eb-4fc1-a5d2-f3762d1f841d
+    internal-label: Administration
+subfeature_v2:
+  - id: e9db7c79-8f65-4281-a439-c9049296d903
+    internal-label: Content Fragments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2867'
 ht-degree: 2%
-
 ---
-
 
 # 自定义和扩展内容片段{#customizing-and-extending-content-fragments}
 
@@ -48,11 +60,11 @@ ht-degree: 2%
 
 * 内容片段模型：
 
-   * 用于定义包含结构化内容的内容片段。
-   * 内容片段模型在创建内容片段时定义其结构。
-   * 片段引用模型；因此，对模型的更改可能/将影响任何依赖的片段。
-   * 模型由数据类型构建。
-   * 用于添加新变体的函数等，必须相应地更新片段。
+  * 用于定义包含结构化内容的内容片段。
+  * 内容片段模型在创建内容片段时定义其结构。
+  * 片段引用模型；因此，对模型的更改可能/将影响任何依赖的片段。
+  * 模型由数据类型构建。
+  * 用于添加新变体的函数等，必须相应地更新片段。
 
   >[!CAUTION]
   >
@@ -60,12 +72,12 @@ ht-degree: 2%
 
 * 内容片段模板：
 
-   * 用于定义简单内容片段。
-   * 模板在创建内容片段时定义内容片段的（基本、纯文本）结构。
-   * 模板在创建时复制到片段；因此对模板的进一步更改将不会反映在现有片段中。
-   * 用于添加新变体的函数等，必须相应地更新片段。
-   * [内容片段模板](/help/sites-developing/content-fragment-templates.md)的工作方式与AEM生态系统中的其他模板机制（例如，页面模板等）的工作方式不同。 因此，应单独审议这些问题。
-   * 当基于模板时，内容的MIME类型根据实际内容进行管理；这意味着每个元素和变体可以具有不同的MIME类型。
+  * 用于定义简单内容片段。
+  * 模板在创建内容片段时定义内容片段的（基本、纯文本）结构。
+  * 模板在创建时复制到片段；因此对模板的进一步更改将不会反映在现有片段中。
+  * 用于添加新变体的函数等，必须相应地更新片段。
+  * [内容片段模板](/help/sites-developing/content-fragment-templates.md)的工作方式与AEM生态系统中的其他模板机制（例如，页面模板等）的工作方式不同。 因此，应单独审议这些问题。
+  * 当基于模板时，内容的MIME类型根据实际内容进行管理；这意味着每个元素和变体可以具有不同的MIME类型。
 
 ### 与Assets集成 {#integration-with-assets}
 
@@ -83,14 +95,14 @@ ht-degree: 2%
 
 * 所有内容都存储在资源的`jcr:content/data`节点下：
 
-   * 元素数据存储在主子节点下：
-     `jcr:content/data/master`
+  * 元素数据存储在主子节点下：
+    `jcr:content/data/master`
 
-   * 变体存储在子节点下，该子节点带有变体的名称：
-例如，`jcr:content/data/myvariation`
+  * 变体存储在子节点下，该子节点带有变体的名称：
+    例如，`jcr:content/data/myvariation`
 
-   * 每个元素的数据作为属性存储在相应的子节点中，该属性具有元素名称：
-例如，元素`text`的内容作为属性`text`存储在`jcr:content/data/master`上
+  * 每个元素的数据作为属性存储在相应的子节点中，该属性具有元素名称：
+    例如，元素`text`的内容作为属性`text`存储在`jcr:content/data/master`上
 
 * 元数据和关联内容存储在下方 `jcr:content/metadata`
 除了标题和描述，它们不被视为传统元数据并存储在`jcr:content`上
@@ -104,12 +116,12 @@ ht-degree: 2%
 * 片段的所有非内容信息（例如标题、描述、元数据、结构）在主资产上专门进行管理。
 * 片段第一个元素的内容映射到主资源的原始演绎版。
 
-   * 第一个元素的变体（如果有）映射到主资源的其他演绎版。
+  * 第一个元素的变体（如果有）映射到主资源的其他演绎版。
 
 * 其他元素（如果存在）将映射到主资产的子资产。
 
-   * 这些附加元素的主要内容映射到相应子资产的原始演绎版。
-   * 任何其他元素的其他变体（如果适用）映射到相应子资产的其他演绎版。
+  * 这些附加元素的主要内容映射到相应子资产的原始演绎版。
+  * 任何其他元素的其他变体（如果适用）映射到相应子资产的其他演绎版。
 
 #### 资产位置 {#asset-location}
 
@@ -131,7 +143,7 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->现在建议使用[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)。 有关详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=zh-Hans)。
+>现在建议使用[内容片段核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans)。 有关详细信息，请参阅[开发核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html)。
 
 可以从AEM页面引用内容片段，就像任何其他资源类型一样。 AEM提供了&#x200B;[**内容片段**&#x200B;核心组件](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=zh-Hans) — 一个[组件，它允许您在页面上包含内容片段](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page)。 您还可以扩展此&#x200B;**内容片段**&#x200B;核心组件。
 
@@ -141,11 +153,11 @@ ht-degree: 2%
 * 此外，可以选择一定范围的段落以限制输出；例如，这可用于多列输出。
 * 该组件允许[中间内容](/help/sites-developing/components-content-fragments.md#in-between-content)：
 
-   * 在这里，利用组件可以在引用片段的段落之间放置其他资产（图像等）。
-   * 对于中间内容，您需要：
+  * 在这里，利用组件可以在引用片段的段落之间放置其他资产（图像等）。
+  * 对于中间内容，您需要：
 
-      * 请注意，可能存在不稳定的引用；中间内容（在创作页面时添加）与其旁边的段落没有固定关系，在中间内容的位置可能丢失相对位置之前插入新段落（在内容片段编辑器中）
-      * 请考虑使用其他参数（如变体和段落过滤器）以避免搜索结果中出现误报
+    * 请注意，可能存在不稳定的引用；中间内容（在创作页面时添加）与其旁边的段落没有固定关系，在中间内容的位置可能丢失相对位置之前插入新段落（在内容片段编辑器中）
+    * 请考虑使用其他参数（如变体和段落过滤器）以避免搜索结果中出现误报
 
 >[!NOTE]
 >
@@ -185,14 +197,14 @@ ht-degree: 2%
 
 * 如果支持多个元素的输出（通过使用`elementNames`指定多个元素），则实际显示模式由属性`displayMode`定义：
 
-   * 如果值为`singleText`（并且只配置了一个元素），则该元素将呈现为具有中间内容、布局支持等的文本。 这是仅呈现一个元素的片段的默认设置。
-   * 否则，将使用一种更简单的方法（可以称为“表单视图”），这种方法不支持中间内容，并且片段内容按“原样”渲染。
+  * 如果值为`singleText`（并且只配置了一个元素），则该元素将呈现为具有中间内容、布局支持等的文本。 这是仅呈现一个元素的片段的默认设置。
+  * 否则，将使用一种更简单的方法（可以称为“表单视图”），这种方法不支持中间内容，并且片段内容按“原样”渲染。
 
 * 如果为`displayMode`==`singleText`（隐式或显式）呈现片段，则以下附加属性将发挥作用：
 
-   * `paragraphScope`定义是应呈现所有段落，还是仅呈现段落范围（值：`all`与`range`）
+  * `paragraphScope`定义是应呈现所有段落，还是仅呈现段落范围（值：`all`与`range`）
 
-   * 如果`paragraphScope`==`range`，则属性`paragraphRange`定义要呈现的段落范围
+  * 如果`paragraphScope`==`range`，则属性`paragraphRange`定义要呈现的段落范围
 
 ### 与其他框架集成 {#integration-with-other-frameworks}
 
@@ -202,25 +214,25 @@ ht-degree: 2%
 
   内容片段已与[AEM翻译工作流](/help/sites-administering/tc-manage.md)完全集成。 在架构方面，这意味着：
 
-   * 内容片段的各个翻译实际上是单独的片段；例如：
+  * 内容片段的各个翻译实际上是单独的片段；例如：
 
-      * 它们位于不同的语言根下：
+    * 它们位于不同的语言根下：
 
-        `/content/dam/<path>/en/<to>/<fragment>`
+      `/content/dam/<path>/en/<to>/<fragment>`
 
-        对比
+      对比
 
-        `/content/dam/<path>/de/<to>/<fragment>`
+      `/content/dam/<path>/de/<to>/<fragment>`
 
-      * 但它们共享语言根目录下的完全相同的相对路径：
+    * 但它们共享语言根目录下的完全相同的相对路径：
 
-        `/content/dam/<path>/en/<to>/<fragment>`
+      `/content/dam/<path>/en/<to>/<fragment>`
 
-        对比
+      对比
 
-        `/content/dam/<path>/de/<to>/<fragment>`
+      `/content/dam/<path>/de/<to>/<fragment>`
 
-   * 除了基于规则的路径之外，内容片段的不同语言版本之间没有进一步的连接；它们作为两个单独的片段处理，尽管UI提供了在语言变体之间导航的方法。
+  * 除了基于规则的路径之外，内容片段的不同语言版本之间没有进一步的连接；它们作为两个单独的片段处理，尽管UI提供了在语言变体之间导航的方法。
 
   >[!NOTE]
   >
@@ -232,14 +244,14 @@ ht-degree: 2%
 
 * **元数据架构**
 
-   * 内容片段（重新）使用可以使用标准资源定义的[元数据架构](/help/assets/metadata-schemas.md)。
-   * CFM提供了自己的特定架构：
+  * 内容片段（重新）使用可以使用标准资源定义的[元数据架构](/help/assets/metadata-schemas.md)。
+  * CFM提供了自己的特定架构：
 
-     `/libs/dam/content/schemaeditors/forms/contentfragment`
+    `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-     如有必要，可以扩展此功能。
+    如有必要，可以扩展此功能。
 
-   * 相应的架构表单与片段编辑器集成。
+  * 相应的架构表单与片段编辑器集成。
 
 ## 内容片段管理API — 服务器端 {#the-content-fragment-management-api-server-side}
 
@@ -267,36 +279,36 @@ ht-degree: 2%
 
   此界面表示：
 
-   * 从中创建内容片段的内容片段模型或内容片段模板，
-   * 以及（创建后）该片段的结构信息
+  * 从中创建内容片段的内容片段模型或内容片段模板，
+  * 以及（创建后）该片段的结构信息
 
   此信息可以包括：
 
-   * 访问基本数据（标题、描述）
-   * 访问片段元素的模板/模型：
+  * 访问基本数据（标题、描述）
+  * 访问片段元素的模板/模型：
 
-      * 列表元素模板
-      * 获取给定元素的结构信息
-      * 访问元素模板（请参阅`ElementTemplate`）
+    * 列表元素模板
+    * 获取给定元素的结构信息
+    * 访问元素模板（请参阅`ElementTemplate`）
 
-   * 访问片段变体的模板：
+  * 访问片段变体的模板：
 
-      * 列出变体模板
-      * 获取给定变体的结构信息
-      * 访问变体模板（请参阅`VariationTemplate`）
+    * 列出变体模板
+    * 获取给定变体的结构信息
+    * 访问变体模板（请参阅`VariationTemplate`）
 
-   * 获取初始关联内容
+  * 获取初始关联内容
 
   表示重要信息的接口：
 
-   * `ElementTemplate`
+  * `ElementTemplate`
 
-      * 获取基本数据（名称、标题）
-      * 获取初始元素内容
+    * 获取基本数据（名称、标题）
+    * 获取初始元素内容
 
-   * `VariationTemplate`
+  * `VariationTemplate`
 
-      * 获取基本数据（名称、标题、描述）
+    * 获取基本数据（名称、标题、描述）
 
 * **内容片段** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
@@ -308,53 +320,53 @@ ht-degree: 2%
 
   该界面为您提供了以下方法：
 
-   * 管理基本数据（例如，获取名称；获取/设置标题/描述）
-   * 访问元数据
-   * 访问元素：
+  * 管理基本数据（例如，获取名称；获取/设置标题/描述）
+  * 访问元数据
+  * 访问元素：
 
-      * 列出元素
-      * 按名称获取元素
-      * 创建新元素（请参阅[注意事项](#caveats)）
+    * 列出元素
+    * 按名称获取元素
+    * 创建新元素（请参阅[注意事项](#caveats)）
 
-      * 访问元素数据（请参阅`ContentElement`）
+    * 访问元素数据（请参阅`ContentElement`）
 
-   * 为片段定义的列表变量
-   * 全局创建新变体
-   * 管理关联内容：
+  * 为片段定义的列表变量
+  * 全局创建新变体
+  * 管理关联内容：
 
-      * 列出收藏集
-      * 添加收藏集
-      * 移除收藏集
+    * 列出收藏集
+    * 添加收藏集
+    * 移除收藏集
 
-   * 访问片段的模型或模板
+  * 访问片段的模型或模板
 
   表示片段的主元素的接口包括：
 
-   * **Content元素** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
+  * **Content元素** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
-      * 获取基本数据（名称、标题、描述）
-      * 获取/设置内容
-      * 访问元素的变体：
+    * 获取基本数据（名称、标题、描述）
+    * 获取/设置内容
+    * 访问元素的变体：
 
-         * 列表变量
-         * 按名称获取变体
-         * 创建新变体（请参阅[注意事项](#caveats)）
-         * 删除变体（请参阅[注意事项](#caveats)）
-         * 访问变量数据（请参阅`ContentVariation`）
+      * 列表变量
+      * 按名称获取变体
+      * 创建新变体（请参阅[注意事项](#caveats)）
+      * 删除变体（请参阅[注意事项](#caveats)）
+      * 访问变量数据（请参阅`ContentVariation`）
 
-      * 解决变体的快捷方式（如果指定的变体不适用于元素，则应用一些其他特定于实施的回退逻辑）
+    * 解决变体的快捷方式（如果指定的变体不适用于元素，则应用一些其他特定于实施的回退逻辑）
 
-   * **内容变量** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
+  * **内容变量** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
-      * 获取基本数据（名称、标题、描述）
-      * 获取/设置内容
-      * 简单同步，基于上次修改的信息
+    * 获取基本数据（名称、标题、描述）
+    * 获取/设置内容
+    * 简单同步，基于上次修改的信息
 
   所有三个接口(`ContentFragment`、`ContentElement`、`ContentVariation`)都扩展了`Versionable`接口，这添加了内容片段所需的版本控制功能：
 
-   * 创建新版本的元素
-   * 列出元素的版本
-   * 获取版本化元素的特定版本的内容
+  * 创建新版本的元素
+  * 列出元素的版本
+  * 获取版本化元素的特定版本的内容
 
 ### 适应 — 使用adaptTo() {#adapting-using-adaptto}
 
@@ -362,24 +374,24 @@ ht-degree: 2%
 
 * `ContentFragment`可以适应：
 
-   * `Resource` — 基础Sling资源；请注意，直接更新基础`Resource`需要重建`ContentFragment`对象。
+  * `Resource` — 基础Sling资源；请注意，直接更新基础`Resource`需要重建`ContentFragment`对象。
 
-   * `Asset` — 表示内容片段的DAM `Asset`抽象；请注意，直接更新`Asset`需要重建`ContentFragment`对象。
+  * `Asset` — 表示内容片段的DAM `Asset`抽象；请注意，直接更新`Asset`需要重建`ContentFragment`对象。
 
 * `ContentElement`可以适应：
 
-   * `ElementTemplate` — 用于访问元素的结构信息。
+  * `ElementTemplate` — 用于访问元素的结构信息。
 
 * `FragmentTemplate`可以适应：
 
-   * `Resource` - `Resource`确定引用的模型或已复制的原始模板；
+  * `Resource` - `Resource`确定引用的模型或已复制的原始模板；
 
-      * 通过`Resource`进行的更改不会自动反映到`FragmentTemplate`中。
+    * 通过`Resource`进行的更改不会自动反映到`FragmentTemplate`中。
 
 * `Resource`可以适应：
 
-   * `ContentFragment`
-   * `FragmentTemplate`
+  * `ContentFragment`
+  * `FragmentTemplate`
 
 ### 注意事项 {#caveats}
 
@@ -389,10 +401,10 @@ ht-degree: 2%
 * 整个API设计为&#x200B;**而非**&#x200B;自动保留更改（除非在API JavaDoc中另有说明）。 因此，您将始终必须提交相应请求的资源解析程序（或您实际使用的解析程序）。
 * 可能需要额外工作的任务：
 
-   * 创建/删除新元素将不会更新简单片段的数据结构（基于片段模板）。
-   * 从`ContentElement`创建新变体将不会更新数据结构（但从`ContentFragment`全局创建变体将会）。
+  * 创建/删除新元素将不会更新简单片段的数据结构（基于片段模板）。
+  * 从`ContentElement`创建新变体将不会更新数据结构（但从`ContentFragment`全局创建变体将会）。
 
-   * 删除现有变体将不会更新数据结构。
+  * 删除现有变体将不会更新数据结构。
 
 ## 内容片段管理API — 客户端 {#the-content-fragment-management-api-client-side}
 
@@ -428,27 +440,27 @@ ht-degree: 2%
 
 * 启动会话
 
-   * 将创建内容片段的新版本。
-   * 自动保存已启动。
-   * 设置了Cookie；这些Cookie定义了当前编辑的片段，并打开了编辑会话。
+  * 将创建内容片段的新版本。
+  * 自动保存已启动。
+  * 设置了Cookie；这些Cookie定义了当前编辑的片段，并打开了编辑会话。
 
 * 完成会话
 
-   * 自动保存已停止。
-   * 提交时：
+  * 自动保存已停止。
+  * 提交时：
 
-      * 上次修改的信息已更新。
-      * Cookie将被删除。
+    * 上次修改的信息已更新。
+    * Cookie将被删除。
 
-   * 回滚时：
+  * 回滚时：
 
-      * 恢复在编辑会话启动时创建的内容片段的版本。
-      * Cookie将被删除。
+    * 恢复在编辑会话启动时创建的内容片段的版本。
+    * Cookie将被删除。
 
 * 编辑
 
-   * 所有更改（包括自动保存）都是在活动内容片段上完成的，而不是在分隔的保护区中。
-   * 因此，这些更改会立即反映在引用相应内容片段的AEM页面上
+  * 所有更改（包括自动保存）都是在活动内容片段上完成的，而不是在分隔的保护区中。
+  * 因此，这些更改会立即反映在引用相应内容片段的AEM页面上
 
 #### 操作 {#actions}
 
@@ -456,24 +468,24 @@ ht-degree: 2%
 
 * 输入页面
 
-   * 检查编辑会话是否已存在；通过检查相应的Cookie。
+  * 检查编辑会话是否已存在；通过检查相应的Cookie。
 
-      * 如果存在，请验证是否已为当前正在编辑的内容片段启动编辑会话
+    * 如果存在，请验证是否已为当前正在编辑的内容片段启动编辑会话
 
-         * 如果是当前片段，请重新建立会话。
-         * 如果没有，请尝试取消对以前编辑的内容片段的编辑并删除Cookie（之后不存在编辑会话）。
+      * 如果是当前片段，请重新建立会话。
+      * 如果没有，请尝试取消对以前编辑的内容片段的编辑并删除Cookie（之后不存在编辑会话）。
 
-      * 如果不存在编辑会话，请等待用户进行第一次更改（请参阅下文）。
+    * 如果不存在编辑会话，请等待用户进行第一次更改（请参阅下文）。
 
-   * 检查页面上是否已引用内容片段，如果是，则显示相应的信息。
+  * 检查页面上是否已引用内容片段，如果是，则显示相应的信息。
 
 * 内容更改
 
-   * 每当用户更改内容且不存在编辑会话时，都会创建一个新的编辑会话（请参阅[启动会话](#processes)）。
+  * 每当用户更改内容且不存在编辑会话时，都会创建一个新的编辑会话（请参阅[启动会话](#processes)）。
 
 * 离开页面
 
-   * 如果存在编辑会话并且更改未保留，则会显示模式确认对话框，以通知用户内容可能丢失，并允许他们停留在页面上。
+  * 如果存在编辑会话并且更改未保留，则会显示模式确认对话框，以通知用户内容可能丢失，并允许他们停留在页面上。
 
 ## 示例 {#examples}
 

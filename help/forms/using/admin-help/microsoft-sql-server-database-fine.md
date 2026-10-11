@@ -1,5 +1,5 @@
 ---
-title: Microsoft SQL Server数据库：微调配置
+title: Microsoft SQL Server 数据库：优化配置
 description: 了解如何微调Microsoft SQL Server数据库的配置。
 contentOwner: admin
 content-type: reference
@@ -9,16 +9,30 @@ exl-id: 9c570827-86e2-47d5-b8ae-66c0767bff2e
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 0%
-
+source-wordcount: '299'
+ht-degree: 5%
 ---
+# Microsoft SQL Server 数据库：优化配置 {#microsoft-sql-server-database-fine-tuning-the-configuration}
 
-# Microsoft SQL Server数据库：微调配置 {#microsoft-sql-server-database-fine-tuning-the-configuration}
-
-在使用Microsoft SQL Server时，您应该更改默认配置设置。 在OracleEnterprise Manager中右键单击本地服务器以访问属性对话框。
+在使用Microsoft SQL Server时，您应该更改默认配置设置。 在Oracle Enterprise Manager中右键单击本地服务器以访问属性对话框。
 
 ## 内存设置 {#memory-settings}
 

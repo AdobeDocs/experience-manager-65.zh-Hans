@@ -9,13 +9,29 @@ exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
 role: User, Developer
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '761'
 ht-degree: 0%
-
 ---
-
 # We.Finance汽车保险续订参考网站演练{#we-finance-auto-insurance-renewal-reference-site-walkthrough}
 
 ## We.Finance引用站点方案  {#we-finance-reference-site-scenario}
@@ -65,7 +81,7 @@ Sarah单击&#x200B;**立即续订**&#x200B;并定向到其汽车保险信的Web�
 
 #### 亲眼看看 {#see-it-yourself-1}
 
-您必须已收到一封包含附加PDF的电子邮件。 PDF是汽车保险单的打印版本。 单击&#x200B;**立即续订**&#x200B;以访问策略的Web版本。 检查您的个人信息和策略详细信息，然后单击“立即续订”**&#x200B;**&#x200B;以转到另一个交互式通信。
+您必须已收到一封包含附加PDF的电子邮件。 PDF是汽车保险单的打印版本。 单击&#x200B;**立即续订**&#x200B;以访问策略的Web版本。 检查您的个人信息和策略详细信息，然后单击“立即续订”****&#x200B;以转到另一个交互式通信。
 
 电子邮件中的&#x200B;**立即续订**&#x200B;按钮会将Sarah引导至Web上的策略。 您可以访问以下URL：
 

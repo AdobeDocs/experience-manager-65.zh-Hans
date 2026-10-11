@@ -1,40 +1,56 @@
 ---
-title: 如何连接自适应表单数据并将其发送到Microsoft&amp；reg； Power Automate？
-description: 有关连接自适应表单数据并将其发送到Microsoft&amp；reg；Power Automate的分步指南。
+title: 如何连接自适应表单数据并将其发送到Microsoft&reg； Power Automate？
+description: 将自适应表单数据连接并发送到Microsoft&reg； Power Automate的分步指南。
 keywords: 自适应Forms Microsoft Power Automate，将自适应Forms数据提交到Microsoft Power Automate
 feature: Adaptive Forms,Foundation Components
 exl-id: 3fd26ddb-d247-462f-a0f6-8af6166516c1
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
-source-git-commit: 73a5a49cdbdae320c2f33a0516c74e1c7c72c644
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1283'
-ht-degree: 15%
-
+source-wordcount: '1375'
+ht-degree: 14%
 ---
-
 # 连接自适应表单数据并将其提交到® Power Automate {#connect-adaptive-form-with-power-automate}
 
 | 版本 | 文章链接 |
 | -------- | ---------------------------- |
 | AEM 6.5 | 本文 |
-| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
+| AEM as a Cloud Service | [单击此处](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/forms/integrate/set-submit-action/forms-microsoft-power-automate-integration) |
 
-您可以配置自适应表单以在提交时运行 Microsoft® Power Automate Cloud Flow。配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automate Cloud Flow 进行处理。它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。以下几个示例说明了在将自适应表单与 Microsoft® Power Automate 集成后可执行的操作：
+您可以配置自适应表单以在提交时运行 Microsoft® Power Automate Cloud Flow。 配置的自适应表单将捕获的数据、附件和记录文档发送到 Power Automate Cloud Flow 进行处理。 它可帮助您构建自定义数据捕获体验，同时利用 Microsoft® Power Automate 的强大功能围绕捕获的数据构建业务逻辑并自动执行客户工作流。 以下几个示例说明了在将自适应表单与 Microsoft® Power Automate 集成后可执行的操作：
 
 * 在 Power Automate 业务流程中使用自适应表单数据
 * 使用 Power Automate 将捕获的数据发送到 500 多个数据源或任何公开可用的 API
 * 对捕获的数据执行复杂计算
 * 按预定义的计划将自适应表单数据保存到存储系统
 
-自适应表单编辑器提供&#x200B;**调用 Microsoft® Power Automate 流程**&#x200B;提交操作，以将自适应表单数据、附件和记录文档发送到 Power Automate Cloud Flow。要使用提交操作将捕获的数据发送到® Power Automate，[将您的AEM Forms创作实例连接到Microsoft® Power Automate](#connect-forms-server-with-power-automate)
+自适应表单编辑器提供&#x200B;**调用 Microsoft® Power Automate 流程**&#x200B;提交操作，以将自适应表单数据、附件和记录文档发送到 Power Automate Cloud Flow。 要使用提交操作将捕获的数据发送到® Power Automate，[将您的AEM Forms创作实例连接到Microsoft® Power Automate](#connect-forms-server-with-power-automate)
 
 ## 先决条件
 
 将自适应表单与® Power Automate连接需要以下项：
 
 * ® Power Automate Premium许可证
-* ® [带](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)触发器的Power Automate流`When an HTTP request is received`接受自适应表单提交数据
+* ® [带`When an HTTP request is received`触发器的Power Automate流](https://docs.microsoft.com/en-us/power-automate/create-flow-solution)接受自适应表单提交数据
 * 具有[Forms作者](/help/forms/using/forms-groups-privileges-tasks.md)和[Forms管理员](/help/forms/using/forms-groups-privileges-tasks.md)权限的Experience Manager用户
 * 用于连接到Microsoft的帐户®Power Automate是配置为从自适应表单接收数据的Power Automate流的所有者
 
@@ -43,10 +59,10 @@ ht-degree: 15%
 
 执行以下操作，将您的AEM Forms创作实例连接到Microsoft® Power Automate：
 
-1. [创建Microsoft](#ms-power-automate-application)
-1. [创建Microsoft](#microsoft-power-automate-dataverse-cloud-configuration)
-1. [创建Microsoft](#create-microsoft-power-automate-flow-cloud-configuration)
-1. [发布Microsoft](#publish-microsoft-power-automate-dataverse-cloud-configuration)
+1. [创建® Azure Active Directory应用程序](#ms-power-automate-application)
+1. [创建® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration)
+1. [创建® Power Automate Flow Service云配置](#create-microsoft-power-automate-flow-cloud-configuration)
+1. [发布® Power Automate Dataverse和Microsoft® Power Automate Flow Service云配置](#publish-microsoft-power-automate-dataverse-cloud-configuration)
 
 ### 创建® Azure Active Directory应用程序 {#ms-power-automate-application}
 
@@ -86,7 +102,7 @@ ht-degree: 15%
 
 1. 在AEM Forms创作实例上，导航到&#x200B;**[!UICONTROL 工具]** ![锤子](assets/hammer.png) > **[!UICONTROL 常规]** > **[!UICONTROL 配置浏览器]**。
 1. 在&#x200B;**[!UICONTROL 配置浏览器]**&#x200B;页面上，选择&#x200B;**[!UICONTROL 创建]**。
-1. 在&#x200B;**[!UICONTROL 创建配置]**&#x200B;对话框中，为配置指定一个&#x200B;**[!UICONTROL 标题]**，启用&#x200B;**[!UICONTROL 云配置]**，然后选择&#x200B;**[!UICONTROL 创建]**。 系统创建一个配置容器来存储 Cloud Services。确保文件夹名称不包含任何空格。
+1. 在&#x200B;**[!UICONTROL 创建配置]**&#x200B;对话框中，为配置指定一个&#x200B;**[!UICONTROL 标题]**，启用&#x200B;**[!UICONTROL 云配置]**，然后选择&#x200B;**[!UICONTROL 创建]**。 系统创建一个配置容器来存储 Cloud Services。 确保文件夹名称不包含任何空格。
 1. 导航到&#x200B;**[!UICONTROL Tools]** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL ®® Power Automate Dataverse]**，并打开您在上一步中创建的配置容器。
 
    >[!NOTE]
@@ -129,7 +145,7 @@ ht-degree: 15%
 
 ## 使用调用® Power Automate流提交操作将数据发送到Power Automate流 {#use-the-invoke-microsoft-power-automate-flow-submit-action}
 
-将AEM Forms创作实例与Microsoft® Power Automate[连接后，执行以下操作以配置自适应表单以在提交表单时将捕获的数据发送到Microsoft®流。](#connect-forms-server-with-power-automate)
+将AEM Forms创作实例与Microsoft® Power Automate](#connect-forms-server-with-power-automate)连接后，执行以下操作以配置自适应表单以在提交表单时将捕获的数据发送到Microsoft®流。[
 
 1. 登录到创作实例，选择您的自适应表单并单击&#x200B;**[!UICONTROL 属性]**。
 1. 在配置容器中，浏览并选择在[创建® Power Automate Dataverse云配置](#microsoft-power-automate-dataverse-cloud-configuration)部分创建的容器，然后选择&#x200B;**[!UICONTROL 保存并关闭]**。
@@ -206,4 +222,4 @@ ht-degree: 15%
 
 * [创建自适应表单](create-an-adaptive-form-core-components.md)
 * [配置提交操作](configuring-submit-actions.md)
-* 适用于Microsoft的[Adobe Experience Manager Connector®Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)
+* [适用于Microsoft的Adobe Experience Manager Connector®Power Automate](https://learn.microsoft.com/en-us/connectors/adobeexperiencemanag/)

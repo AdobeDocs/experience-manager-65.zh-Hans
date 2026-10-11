@@ -9,13 +9,22 @@ exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
 source-wordcount: '2350'
 ht-degree: 2%
-
 ---
-
 # 使用 Translator 管理词典{#using-translator-to-manage-dictionaries}
 
 AEM提供了一个控制台，用于管理组件UI中使用的文本的各种翻译。 此控制台位于
@@ -303,7 +312,7 @@ Translator工具底部的搜索栏提供了字符串选择选项：
 
    >[!NOTE]
    >
-   >翻译人员将仅保存词典[&#128279;](#creating-a-dictionary)中实际存在的语言(即，在词典路径（如`/apps/myProject/i18n`）下)的翻译。
+   >翻译人员将仅保存词典](#creating-a-dictionary)中实际[存在的语言(即，在词典路径（如`/apps/myProject/i18n`）下)的翻译。
    >
    >确保这些语言与网格中显示的语言对应。
 
@@ -385,4 +394,4 @@ Translator工具底部的搜索栏提供了字符串选择选项：
 
 >[!NOTE]
 >
->使用Dispatcher时，您需要[使缓存的页面失效](https://helpx.adobe.com/cn/experience-manager/dispatcher/using/page-invalidate.html)才能在渲染的组件字符串中包含新词典字符串。
+>使用Dispatcher时，您需要[使缓存的页面失效](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html)才能在渲染的组件字符串中包含新词典字符串。

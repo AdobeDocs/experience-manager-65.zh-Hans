@@ -10,18 +10,34 @@ feature: Image Sets,Asset Management
 role: User, Admin
 exl-id: 2a536745-fa13-4158-8761-2ac5b6e1893e
 solution: Experience Manager, Experience Manager Assets
-source-git-commit: 76fffb11c56dbf7ebee9f6805ae0799cd32985fe
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: d09181b5-a36a-43de-ba01-36641440bc43
+    internal-label: Experience Manager Assets
+feature_v2:
+  - id: 7d2b2ec8-499c-5434-9ffd-9218cd71f683
+    internal-label: Asset Management
+  - id: d4b6216b-4a89-4ff0-8ac0-5a699ba23100
+    internal-label: Images and videos
+subfeature_v2:
+  - id: e2dc1259-9034-40fc-a518-b92a34fe6642
+    internal-label: Image sets
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2274'
+source-wordcount: '2299'
 ht-degree: 7%
-
 ---
-
 # 图像集 {#image-sets}
 
 图像集为用户提供了集成的查看体验，用户可以通过选择缩略图图像查看项目的不同视图。 图像集允许您展示项目的替代视图，查看器提供了缩放工具来仔细检查图像。
 
-图像集由带有单词`IMAGESET`的横幅指定。 此外，如果图像集已发布，则横幅上会显示由 **[!UICONTROL World]** 图标指示的发布日期以及由铅笔图标指示的上次修改日期 **&#x200B;**&#x200B;。
+图像集由带有单词`IMAGESET`的横幅指定。 此外，如果图像集已发布，则横幅上会显示由 **[!UICONTROL World]** 图标指示的发布日期以及由铅笔图标指示的上次修改日期 **** 。
 
 ![图像集](assets/chlimage_1-339.png)
 
@@ -104,7 +120,7 @@ ht-degree: 7%
 
 首先，上传图像集的图像。 选择图像时，请记住，您的客户可以在图像集查看器中放大图像。 确保图像的最大尺寸至少为2000像素。 图像集支持多种图像文件格式，但建议使用无损的TIFF、PNG和EPS图像。
 
-您可以像在Assets[&#128279;](/help/assets/manage-assets.md#uploading-assets)中上传任何其他资源一样上传图像集的图像。
+您可以像在Assets](/help/assets/manage-assets.md#uploading-assets)中[上传任何其他资源一样上传图像集的图像。
 
 有关图像集支持的格式列表，请参阅[Dynamic Media — 支持的栅格图像格式](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media)。
 

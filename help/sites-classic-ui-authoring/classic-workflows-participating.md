@@ -1,6 +1,6 @@
 ---
 title: 参与工作流
-description: 工作流通常包括需要人员对页面或资源执行活动的步骤。工作流选择用户或组来执行活动，并将工作项分配给该人员或组。
+description: 工作流通常包括需要人员对页面或资源执行活动的步骤。 工作流会选择要执行活动的用户或组，并将工作项分配给该用户或组。
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -9,16 +9,25 @@ exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 solution: Experience Manager, Experience Manager Sites
 feature: Authoring
 role: User
-source-git-commit: a28883778c5e8fb90cbbd0291ded17059ab2ba7e
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: e2c1b6d3-bb7e-4fe8-8c72-f7b403298e91
+    internal-label: Authoring
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '541'
-ht-degree: 39%
-
+source-wordcount: '544'
+ht-degree: 47%
 ---
-
 # 参与工作流{#participating-in-workflows}
 
-工作流通常包括需要人员对页面或资源执行活动的步骤。工作流选择用户或组来执行活动，并将工作项分配给该人员或组。
+工作流通常包括需要人员对页面或资源执行活动的步骤。 工作流会选择要执行活动的用户或组，并将工作项分配给该用户或组。
 
 ## 处理您的工作项 {#processing-your-work-items}
 
@@ -34,13 +43,13 @@ ht-degree: 39%
 
   可向其进行委派的用户取决于工作项分配到的对象：
 
-   * 如果将工作项分配给某个组，则可以向该组的成员进行委派。
-   * 如果将工作项分配给某个组，然后该组又将其委派给某个用户，则可以向该组的成员和该组进行委派。
-   * 如果将工作项分配给单个用户，则不能委派工作项。
+  * 如果将工作项分配给某个组，则可以向该组的成员进行委派。
+  * 如果将工作项分配给某个组，然后该组又将其委派给某个用户，则可以向该组的成员和该组进行委派。
+  * 如果将工作项分配给单个用户，则不能委派工作项。
 
 * **回退**
 
-  如果您发现需要重复一个步骤或一系列步骤，您可以执行回退。这使您能够选择在工作流中先前发生的步骤以进行重新处理。 工作流会返回到您指定的步骤，然后从此处继续执行。
+  如果您发现需要重复一个步骤或一系列步骤，您可以执行回退。 这使您能够选择在工作流中先前发生的步骤以进行重新处理。 工作流会返回到您指定的步骤，然后从此处继续执行。
 
 ## 参与工作流 {#participating-in-a-workflow}
 
@@ -52,7 +61,7 @@ ht-degree: 39%
 
   ![workflowstatus-1](assets/workflowstatus-1.png)
 
-* 当您或您所属的组被指定为工作流的一部分时，该工作项将显示在AEM Workflow收件箱中。
+* 当您或您所属的组被指定为工作流的一部分时，该工作项会显示在您的AEM工作流收件箱中。
 
   ![工作流收件箱](assets/workflowinbox.png)
 
