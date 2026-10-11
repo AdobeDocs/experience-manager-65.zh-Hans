@@ -9,18 +9,32 @@ role: Admin,User
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
-source-git-commit: 539da06db98395ae6eaee8103a3e4b31204abbb8
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '468'
-ht-degree: 0%
-
+source-wordcount: '484'
+ht-degree: 7%
 ---
-
 # 适用于AEM Forms的Adobe Experience Manager (AEM)桌面应用程序 {#aem-desktop-app-for-aem-forms}
 
-AEM桌面应用程序允许您将Adobe Experience Manager (AEM) Assets存储库和AEM Forms二进制文件映射到您系统中的网络目录。 您可以在文件资源管理器中查看同步的资源和二进制文件，并根据需要使用各种应用程序编辑文件。 除了查看文件之外，您还可以创建、上载和删除二进制文件。 您还可以直接从软件打开、编辑和保存文件。 例如，您可以直接从Designer打开和编辑XDP文件。 在本地对资源所做的更改将反映在AEM Assets存储库和AEM Forms用户界面中。
+通过AEM桌面应用程序，您可以将Adobe Experience Manager (AEM) Assets存储库和AEM Forms二进制文件映射到您系统中的网络目录。 您可以在文件资源管理器中查看同步的资源和二进制文件，并根据需要使用各种应用程序编辑文件。 除了查看文件之外，您还可以创建、上载和删除二进制文件。 您还可以直接从软件打开、编辑和保存文件。 例如，您可以直接从Designer打开和编辑XDP文件。 在本地对资源所做的更改将反映在AEM Assets存储库和AEM Forms用户界面中。
 
-您可以从AEM实例下载应用程序。 有关下载应用的详细信息，请参阅[AEM桌面应用发行说明](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=zh-Hans)。
+您可以从AEM实例下载应用程序。 有关下载应用的详细信息，请参阅[AEM桌面应用发行说明](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en)。
 
 ## AEM桌面应用程序支持的AEM Forms资源 {#aem-forms-assets-supported-in-aem-desktop-app}
 
@@ -38,11 +52,11 @@ AEM桌面应用程序在Microsoft®Windows上使用WebDAV协议，在macOS X上�
 1. 在创作实例中，单击![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager >工具]** ![锤子](assets/hammer.png) **[!UICONTROL >部署>操作> Web控制台]**。 Web控制台将在新窗口中打开。
 1. 在Web控制台窗口中，找到并打开&#x200B;**[!UICONTROL FormsManager加载项配置]**&#x200B;选项。
 1. 在FormsManager加载项配置对话框中，取消选中&#x200B;**[!UICONTROL 异步同步资源]**&#x200B;复选框，然后单击&#x200B;**[!UICONTROL 保存]**。
-1. 重新启动AEM Forms服务器。 重新启动后，将启用AEM Forms服务器以接受内容并与AEM桌面应用程序共享内容。
+1. 重新启动AEM Forms服务器。 重新启动后，将启用AEM Forms服务器以接受内容并将其与AEM桌面应用程序共享。
 1. 打开应用程序并连接到AEM Forms服务器。
 
    >[!NOTE]
    >
-   > 建议使用“Ctrl + C”命令重新启动SDK。 使用替代方法（例如，停止Java进程）重新启动AEM SDK可能会导致AEM开发环境不一致。
+   > 建议使用 “Ctrl + C” 命令重新启动 SDK。 如果使用其他方式（例如停止 Java 进程）重新启动 AEM SDK，则可能会导致 AEM 开发环境出现不一致情况。
 
    成功连接后，应用将填充`content/dam`和`content/dam/formsanddocuments`文件夹。 除了将文件从上述文件夹移动到本地文件夹外，您还可以使用应用程序在自动填充的文件夹之间移动内容。

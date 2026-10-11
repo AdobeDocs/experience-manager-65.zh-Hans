@@ -9,13 +9,20 @@ role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
 solution: Experience Manager
 feature: Communities
-source-git-commit: 1f56c99980846400cfde8fa4e9a55e885bc2258d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+feature_v2:
+  - id: b013f126-a97e-52d1-9f79-cb5bbb12114e
+    internal-label: Communities
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '744'
 ht-degree: 0%
-
 ---
-
 # 用于DSRP的MySQL配置 {#mysql-configuration-for-dsrp}
 
 MySQL是一个关系数据库，可用于存储用户生成的内容(UGC)。
@@ -28,11 +35,11 @@ MySQL是一个关系数据库，可用于存储用户生成的内容(UGC)。
 * [用于MySQL的JDBC驱动程序](deploy-communities.md#jdbc-driver-for-mysql)
 * 关系数据库：
 
-   * [MySQL服务器](https://dev.mysql.com/downloads/mysql/) Community Server 5.6或更高版本
+  * [MySQL服务器](https://dev.mysql.com/downloads/mysql/) Community Server 5.6或更高版本
 
-      * 可以在与AEM相同的主机上运行或远程运行
+    * 可以在与AEM相同的主机上运行或远程运行
 
-   * [MySQL工作台](https://dev.mysql.com/downloads/tools/workbench/)
+  * [MySQL工作台](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## 安装MySQL {#installing-mysql}
 
@@ -113,7 +120,7 @@ MySQL Workbench提供了一个UI，用于执行安装架构和初始数据的SQL
 
 ### 获取SQL脚本 {#obtain-the-sql-script}
 
-SQL脚本从AEM资料档案库获取：
+SQL脚本从AEM存储库获取：
 
 1. 浏览到CRXDE Lite
 
@@ -172,7 +179,7 @@ SQL脚本从AEM资料档案库获取：
 * 已使用管理员权限登录。
 * 访问[Web控制台](../../help/sites-deploying/configuring-osgi.md)。
 
-   * 例如，[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
+  * 例如，[http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * 找到`Day Commons JDBC Connections Pool`
 * 选择`+`图标以创建连接配置。
@@ -181,21 +188,21 @@ SQL脚本从AEM资料档案库获取：
 
 * 输入以下值：
 
-   * **[!UICONTROL JDBC驱动程序类]**： `com.mysql.jdbc.Driver`
-   * **[!UICONTROL JDBC连接URI]**： `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
+  * **[!UICONTROL JDBC驱动程序类]**： `com.mysql.jdbc.Driver`
+  * **[!UICONTROL JDBC连接URI]**： `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-     如果MySQL服务器与“此”AEM服务器&#x200B;*communities*&#x200B;是默认的数据库（架构）名称，请指定服务器代替localhost。
+    如果MySQL服务器与“此”AEM服务器&#x200B;*communities*&#x200B;是默认的数据库（架构）名称，请指定服务器代替localhost。
 
-   * **[!UICONTROL 用户名]**： `root`
+  * **[!UICONTROL 用户名]**： `root`
 
-     或者输入MySQL服务器的已配置用户名（如果不是“root”）。
+    或者输入MySQL服务器的已配置用户名（如果不是“root”）。
 
-   * **[!UICONTROL 密码]**：
+  * **[!UICONTROL 密码]**：
 
-     如果没有为MySQL设置密码，则清除此字段，
+    如果没有为MySQL设置密码，则清除此字段，
 
-     否则，请为MySQL用户名输入配置的密码。
+    否则，请为MySQL用户名输入配置的密码。
 
-   * **[!UICONTROL 数据源名称]**：为[MySQL连接](#new-connection-settings)输入的名称，例如“communities”。
+  * **[!UICONTROL 数据源名称]**：为[MySQL连接](#new-connection-settings)输入的名称，例如“communities”。
 
 * 选择&#x200B;**[!UICONTROL 保存]**

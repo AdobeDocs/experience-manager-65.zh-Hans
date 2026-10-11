@@ -1,5 +1,5 @@
 ---
-title: 可重用组件的描述
+title: 可重用组件说明
 description: 包含文件名和依赖项的可重用组件的完整列表，可帮助您在Web应用程序中集成AEM Forms工作区组件。
 contentOwner: robhagat
 content-type: reference
@@ -9,16 +9,32 @@ exl-id: b8cb7233-3d9e-41d4-85c5-8e8c2481f89c
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: Admin, User, Developer
-source-git-commit: e821be5233fd5f6688507096790d219d25903892
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1231'
-ht-degree: 9%
-
+source-wordcount: '1217'
+ht-degree: 10%
 ---
+# 可重用组件说明 {#description-of-reusable-components}
 
-# 可重用组件的描述 {#description-of-reusable-components}
-
-AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-components-web.md)组件组成，这些组件在CRX™中以特定的[文件夹结构](/help/forms/using/folder-structure.md)组织。 每个组件在文件夹结构中指定的位置都有model、view和template文件，JavaScript™依赖于其他组件文件、由组件侦听的事件以及JavaScript对象，这些事件在AEM Forms workspace中触发。 此处提供了包含组成文件名和依赖关系的可重用组件的完整列表。
+AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-components-web.md)组件组成，这些组件在CRX™中以特定的[文件夹结构](/help/forms/using/folder-structure.md)组织。 每个组件在文件夹结构中指定的位置都有model、view和template文件，™依赖于其他组件文件、由组件侦听的事件以及JavaScript对象，这些事件在AEM Forms workspace中触发。 此处提供了包含组成文件名和依赖关系的可重用组件的完整列表。
 
 ## 任务列表 {#tasklist}
 
@@ -26,11 +42,11 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
  <tbody>
   <tr>
    <td><p>模型</p></td>
-   <td><p>tasklist.js</p></td>
+   <td><p>任务列表.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
-   <td><p>tasklist.js</p></td>
+   <td><p>视图</p></td>
+   <td><p>任务列表.js</p></td>
   </tr>
   <tr>
    <td><p>模板</p></td>
@@ -75,11 +91,11 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
  <tbody>
   <tr>
    <td><p>模型</p></td>
-   <td><p>task.js</p></td>
+   <td><p>任务.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
-   <td><p>task.js</p></td>
+   <td><p>视图</p></td>
+   <td><p>任务.js</p></td>
   </tr>
   <tr>
    <td><p>模板</p></td>
@@ -118,10 +134,10 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
  <tbody>
   <tr>
    <td><p>模型</p></td>
-   <td><p>tasklist.js</p></td>
+   <td><p>任务列表.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>filterlist.js</p></td>
   </tr>
   <tr>
@@ -155,7 +171,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
 <table>
  <tbody>
   <tr>
-   <td><p>查看</p> </td>
+   <td><p>视图</p> </td>
    <td><p>filter.js</p> </td>
   </tr>
   <tr>
@@ -190,10 +206,10 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
  <tbody>
   <tr>
    <td><p>模型</p></td>
-   <td><p>tasklist.js</p></td>
+   <td><p>任务列表.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>teamqueues.js</p></td>
   </tr>
   <tr>
@@ -230,7 +246,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>NA</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
+   <td><p>视图</p> </td>
    <td><p>teamfilter.js</p> </td>
   </tr>
   <tr>
@@ -270,11 +286,11 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
  <tbody>
   <tr>
    <td><p>模型</p> </td>
-   <td><p>tasklist.js</p> </td>
+   <td><p>任务列表.js</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
-   <td><p>taskdetails.js</p> </td>
+   <td><p>视图</p> </td>
+   <td><p>任务详细信息.js</p> </td>
   </tr>
   <tr>
    <td><p>模板</p> </td>
@@ -331,7 +347,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>categorylist.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>categorylist.js</p></td>
   </tr>
   <tr>
@@ -374,7 +390,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>category.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>category.js</p></td>
   </tr>
   <tr>
@@ -414,7 +430,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>categorylist.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>startpointlist.js</p></td>
   </tr>
   <tr>
@@ -465,7 +481,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>startpoint.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>startpoint.js</p></td>
   </tr>
   <tr>
@@ -496,7 +512,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>categorylist.js</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
+   <td><p>视图</p> </td>
    <td><p>startprocess.js</p> </td>
   </tr>
   <tr>
@@ -559,7 +575,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>processnamelist.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>processnamelist.js</p></td>
   </tr>
   <tr>
@@ -599,7 +615,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>processname.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>processname （在processnamelist.js中）</p></td>
   </tr>
   <tr>
@@ -630,7 +646,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>processnamelist.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>processinstancelist.js</p></td>
   </tr>
   <tr>
@@ -669,7 +685,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>processinstance.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>processnamelist.js中的processname</p></td>
   </tr>
   <tr>
@@ -700,7 +716,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>processnamelist.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>processinstancehistory.js</p></td>
   </tr>
   <tr>
@@ -744,7 +760,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>outofoffice.js</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
+   <td><p>视图</p> </td>
    <td><p>outofoffice.js</p> </td>
   </tr>
   <tr>
@@ -785,7 +801,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>sharequeue.js</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
+   <td><p>视图</p> </td>
    <td><p>sharequeue.js</p> </td>
   </tr>
   <tr>
@@ -829,7 +845,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>uisettings.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>uisettings.js</p></td>
   </tr>
   <tr>
@@ -868,7 +884,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>appnavigation.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>appnavigation.js</p></td>
   </tr>
   <tr>
@@ -900,11 +916,11 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
  <tbody>
   <tr>
    <td><p>模型</p> </td>
-   <td><p>userinfo.js</p> </td>
+   <td><p>用户信息.js</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
-   <td><p>userinfo.js</p> </td>
+   <td><p>视图</p> </td>
+   <td><p>用户信息.js</p> </td>
   </tr>
   <tr>
    <td><p>模板</p> </td>
@@ -943,7 +959,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>wserror.js</p></td>
   </tr>
   <tr>
-   <td><p>查看</p></td>
+   <td><p>视图</p></td>
    <td><p>wserror.js</p></td>
   </tr>
   <tr>
@@ -974,7 +990,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>usersearch.js</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
+   <td><p>视图</p> </td>
    <td><p>usersearch.js</p> </td>
   </tr>
   <tr>
@@ -1009,7 +1025,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>searchtemplate.js</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
+   <td><p>视图</p> </td>
    <td><p>searchtemplate （在searchtemplatelist.js中） </p> </td>
   </tr>
   <tr>
@@ -1040,7 +1056,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>searchtemplatelist.js</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
+   <td><p>视图</p> </td>
    <td><p>searchtemplatelist.js</p> </td>
   </tr>
   <tr>
@@ -1071,7 +1087,7 @@ AEM Forms工作区由[可重用](/help/forms/using/integrating-html-ws-component
    <td><p>searchtemplatelist.js</p> </td>
   </tr>
   <tr>
-   <td><p>查看</p> </td>
+   <td><p>视图</p> </td>
    <td><p>searchtemplatedetails.js</p> </td>
   </tr>
   <tr>

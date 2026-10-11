@@ -8,24 +8,40 @@ feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 solution: Experience Manager, Experience Manager Forms
 role: Admin, User, Developer
-source-git-commit: f6771bd1338a4e27a48c3efd39efe18e57cb98f9
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: aa28c6c8-3ede-445b-a351-eeb0c9f9aec4
+    internal-label: Interactive Communication
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '2684'
-ht-degree: 0%
-
+source-wordcount: '2796'
+ht-degree: 1%
 ---
-
 # 教程：在AEM Forms中创建表单数据模型{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
 本教程是[创建您的第一个交互式通信](/help/forms/using/create-your-first-interactive-communication.md)系列中的步骤。 建议按时间顺序跟踪系列，以了解、执行和演示完整的教程用例。
 
-## 关于教程 {#about-the-tutorial}
+## 关于本教程 {#about-the-tutorial}
 
-AEM Forms数据集成模块允许您从不同的后端数据源(如AEM用户配置文件、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库)创建表单数据模型。 您可以在表单数据模型中配置数据模型对象和服务，并将其与自适应表单关联。 自适应表单字段绑定到数据模型对象属性。 这些服务使您能够预填充自适应表单并将提交的表单数据写回数据模型对象。
+AEM Forms数据集成模块允许您从不同的后端数据源（如AEM用户配置文件、RESTful Web服务、基于SOAP的Web服务、OData服务和关系数据库）创建表单数据模型。 您可以在表单数据模型中配置数据模型对象和服务，并将其与自适应表单关联。 自适应表单字段绑定到数据模型对象属性。 这些服务使您能够预填充自适应表单并将提交的表单数据写回数据模型对象。
 
-有关表单数据集成和表单数据模型的详细信息，请参阅[AEM Forms数据集成](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/data-integration.html)。
+有关表单数据集成和表单数据模型的详细信息，请参阅[AEM Forms数据集成](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)。
 
 本教程将指导您完成准备、创建、配置表单数据模型并将其与交互式通信关联的步骤。 在本教程结束时，您将能够：
 
@@ -46,7 +62,7 @@ AEM Forms数据集成模块允许您从不同的后端数据源(如AEM用户配�
 在开始之前，请确保您具备以下条件：
 
 * 包含示例数据的MySQL数据库，如[设置数据库](../../forms/using/create-form-data-model0.md#step-set-up-the-database)部分中所述。
-* MySQL JDBC驱动程序的OSGi捆绑包，如[捆绑JDBC数据库驱动程序](https://helpx.adobe.com/cn/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)中所述
+* MySQL JDBC驱动程序的OSGi捆绑包，如[捆绑JDBC数据库驱动程序](https://helpx.adobe.com/experience-manager/6-3/help/sites-developing/jdbc.html#bundling-the-jdbc-database-driver)中所述
 
 ## 步骤1：设置数据库 {#step-set-up-the-database}
 
@@ -113,7 +129,7 @@ CREATE TABLE `calls` (
 
 ## 步骤2：将MySQL数据库配置为数据源 {#step-configure-mysql-database-as-data-source}
 
-您可以配置不同类型的数据源来创建表单数据模型。 在本教程中，您将配置已配置并填充了示例数据的MySQL数据库。 有关其他受支持数据源以及如何配置它们的信息，请参阅[AEM Forms数据集成](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/data-integration.html)。
+您可以配置不同类型的数据源来创建表单数据模型。 在本教程中，您将配置已配置并填充了示例数据的MySQL数据库。 有关其他受支持数据源以及如何配置它们的信息，请参阅[AEM Forms数据集成](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html)。
 
 执行以下操作以配置MySQL数据库：
 
@@ -122,11 +138,11 @@ CREATE TABLE `calls` (
    1. 以管理员身份登录AEM Forms创作实例，然后转到AEM Web控制台包。 默认URL为[https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)。
    1. 选择&#x200B;**安装/更新**。 出现&#x200B;**上载/安装包**&#x200B;对话框。
 
-   1. 选择&#x200B;**选择文件**&#x200B;浏览并选择MySQL JDBC驱动程序OSGi包。 选择&#x200B;**启动包**&#x200B;和&#x200B;**刷新包**，然后选择&#x200B;**安装**&#x200B;或&#x200B;**更新**。 确保Oracle公司的MySQL JDBC驱动程序处于活动状态。 已安装驱动程序。
+   1. 选择&#x200B;**选择文件**&#x200B;浏览并选择MySQL JDBC驱动程序OSGi包。 选择&#x200B;**启动包**&#x200B;和&#x200B;**刷新包**，然后选择&#x200B;**安装**&#x200B;或&#x200B;**更新**。 确保Oracle Corporation的MySQL JDBC驱动程序处于活动状态。 已安装驱动程序。
 
 1. 将MySQL数据库配置为数据源：
 
-   1. 转到[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)处的AEM Web控制台。
+   1. 转到AEM Web控制台，网址为[https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)。
    1. 找到&#x200B;**Apache Sling Connection Pooled DataSource**&#x200B;配置。 选择以在编辑模式下打开配置。
    1. 在配置对话框中，指定以下详细信息：
 
@@ -155,7 +171,7 @@ CREATE TABLE `calls` (
 
 ## 步骤3：创建表单数据模型 {#step-create-form-data-model}
 
-AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[创建表单数据模式](https://helpx.adobe.com/cn/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l。 您可以在表单数据模型中使用多个数据源。 对于本教程中的用例，您将使用MySQL作为数据源。
+AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[创建表单数据模式](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l。 您可以在表单数据模型中使用多个数据源。 对于本教程中的用例，您将使用MySQL作为数据源。
 
 执行以下操作以创建表单数据模型：
 
@@ -191,14 +207,14 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
 
    * **数据模型对象**：
 
-      * 帐单
-      * 调用
-      * 客户
+     * 帐单
+     * 调用
+     * 客户
 
    * **服务：**
 
-      * get
-      * 更新
+     * get
+     * 更新
 
    选择&#x200B;**添加选定项**&#x200B;以将选定数据模型对象和服务添加到表单数据模型。
 
@@ -215,7 +231,7 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
 根据用例，使用以下数学表达式在&#x200B;**bills**&#x200B;数据模型对象中创建&#x200B;**usagecharges**&#x200B;子计算属性：
 
 * 使用费=呼叫费用+会议呼叫费用+短信费用+移动互联网费用+漫游国家+漫游国际+ VAS（所有这些属性都存在于帐单数据模型对象中）
-有关&#x200B;**usagecharges**&#x200B;子计算属性的详细信息，请参阅[规划交互式通信](/help/forms/using/planning-interactive-communications.md)。
+有关**usagecharges**&#x200B;子计算属性的详细信息，请参阅[规划交互式通信](/help/forms/using/planning-interactive-communications.md)。
 
 执行以下步骤，为清单数据模型对象创建计算子属性：
 
@@ -229,7 +245,7 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
    ![创建子属性](assets/create_child_property_new.png)
 
 1. 选择&#x200B;**编辑规则**&#x200B;以打开规则编辑器。
-1. 选择&#x200B;**创建**。将打开&#x200B;**设置值**&#x200B;规则窗口。
+1. 选择&#x200B;**创建**。 将打开&#x200B;**设置值**&#x200B;规则窗口。
 1. 从选择选项下拉列表中，选择&#x200B;**数学表达式**。
 
    ![使用费规则编辑器](assets/usage_charges_rule_editor_new.png)
@@ -245,7 +261,7 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
 
 ### 在数据模型对象之间添加关联 {#add-associations-between-data-model-objects}
 
-定义数据模型对象后，您可以建立它们之间的关联。 关联可以是一对一或一对多。 例如，可以有多个与员工关联的家属。 它称为一对多关联，在连接关联的数据模型对象的行上以1：n表示。 但是，如果关联为给定员工ID返回唯一的员工姓名，则称为一对一关联。
+定义数据模型对象后，您可以建立它们之间的关联。 关联可以是一对一或一对多。 例如，可以有多个与员工关联的家属。 它称为一对多关联，由1:n在连接关联的数据模型对象的行上描述。 但是，如果关联为给定员工ID返回唯一的员工姓名，则称为一对一关联。
 
 当您将数据源中的关联数据模型对象添加到表单数据模型时，它们的关联将保留并以箭头线连接的方式显示。
 
@@ -253,8 +269,8 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
 
 | 关联 | 数据模型对象 |
 |---|---|
-| 1：n | 客户：呼叫（每个月可以将多个呼叫与客户关联） |
-| 1:1 | 客户：帐单（一个帐单与特定月份的客户关联） |
+| 1:n | 客户:calls （在每月账单中可以将多个呼叫与客户关联） |
+| 1:1 | 客户:bills （一个账单与某个特定月份的客户相关联） |
 
 执行以下步骤来创建数据模型对象之间的关联：
 
@@ -275,7 +291,7 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
 1. 在&#x200B;**添加参数**&#x200B;对话框中：
 
    * 从&#x200B;**名称**&#x200B;下拉列表中选择&#x200B;**mobilenum**。 手机号码属性是客户中可用的一个常用属性，可调用数据模型对象。 因此，它用于在customer和calls数据模型对象之间创建关联。
-对于客户数据模型对象中可用的每个移动设备号码，“呼叫”表中都有多个可用的呼叫记录。
+     对于客户数据模型对象中可用的每个移动设备号码，“呼叫”表中都有多个可用的呼叫记录。
 
    * 为参数指定可选标题和描述。
    * 从&#x200B;**绑定到**&#x200B;下拉列表中选择&#x200B;**客户**。
@@ -290,7 +306,7 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
 
    ![添加参数关联](assets/add_argument_association_new.png)
 
-1. 选择&#x200B;**完成**&#x200B;以在客户和调用数据模型对象之间创建1：n关联。
+1. 选择&#x200B;**完成**&#x200B;以在customer和calls数据模型对象之间创建1:n关联。
 
    在客户和调用数据模型对象之间创建关联后，在客户和清单数据模型对象之间创建1:1关联。
 
@@ -302,8 +318,8 @@ AEM Forms提供了一个直观的用户界面，可用于从配置的数据源[�
 
    * 从&#x200B;**模型对象**&#x200B;下拉列表中选择&#x200B;**清单**。
 
-   * 从&#x200B;**服务**&#x200B;下拉列表中选择&#x200B;**get**。 **billplan**&#x200B;属性（即bills表的主键）已在&#x200B;**参数**&#x200B;节中可用。
-清单和客户数据模型对象分别使用billplan (bills)和customerplan (customer)属性链接。 创建这些属性之间的绑定以检索MySQL数据库中任何可用客户的计划详细信息。
+   * 从&#x200B;**服务**&#x200B;下拉列表中选择&#x200B;**get**。 **billplan**&#x200B;属性（即bills表的主键）已在&#x200B;**参数**节中可用。
+     清单和客户数据模型对象分别使用billplan (bills)和customerplan (customer)属性链接。 创建这些属性之间的绑定以检索MySQL数据库中任何可用客户的计划详细信息。
 
    * 从&#x200B;**绑定到**&#x200B;下拉列表中选择&#x200B;**客户**。
 

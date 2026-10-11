@@ -1,5 +1,5 @@
 ---
-title: AEM 开发 - 准则和最佳实践
+title: AEM 开发——准则和最佳做法
 description: 在AEM上进行开发的准则和最佳实践
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,14 +9,23 @@ exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
 solution: Experience Manager, Experience Manager Sites
 feature: Developing
 role: Developer
-source-git-commit: 66db4b0b5106617c534b6e1bf428a3057f2c2708
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: c45915cf-e157-4af7-a80d-97b905bcb3a5
+    internal-label: Experience Manager Sites
+feature_v2:
+  - id: c5d917df-d8bd-5e97-a117-6dde1e9f7103
+    internal-label: Developing
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1091'
 ht-degree: 1%
-
 ---
-
-# AEM 开发 - 准则和最佳实践{#aem-development-guidelines-and-best-practices}
+# AEM 开发——准则和最佳做法{#aem-development-guidelines-and-best-practices}
 
 ## 使用模板和组件的准则 {#guidelines-for-using-templates-and-components}
 
@@ -49,7 +58,7 @@ Adobe Experience Manager (AEM)组件和模板构成了一个功能强大的工�
 
 ### 自定义组件和其他元素 {#customizing-components-and-other-elements}
 
-在创建自己的组件或自定义现有组件时，重用现有定义通常最简单（也是最安全的）。 同样的原则也适用于AEM内的其他元素，例如错误处理程序。
+在创建自己的组件或自定义现有组件时，重用现有定义通常最简单（也是最安全的）。 同样的原则也适用于AEM中的其他元素，例如错误处理程序。
 
 这可以通过复制和覆盖现有定义来完成。 换句话说，将定义从`/libs`复制到`/apps/<your-project>`。 可以根据您的要求更新`/apps`中的新定义。
 
@@ -63,21 +72,21 @@ Adobe Experience Manager (AEM)组件和模板构成了一个功能强大的工�
 
   这涉及覆盖组件定义：
 
-   * 通过复制现有组件在`/apps/<website-name>/components/<MyComponent>`中创建组件文件夹：
+  * 通过复制现有组件在`/apps/<website-name>/components/<MyComponent>`中创建组件文件夹：
 
-      * 例如，要自定义文本组件复制，请执行以下操作：
+    * 例如，要自定义文本组件复制，请执行以下操作：
 
-         * 从 `/libs/foundation/components/text`
-         * 至`/apps/myProject/components/text`
+      * 从 `/libs/foundation/components/text`
+      * 至`/apps/myProject/components/text`
 
 * [自定义错误处理程序显示的页面](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
   这种情况涉及覆盖servlet：
 
-   * 在存储库中，复制一个或多个默认脚本：
+  * 在存储库中，复制一个或多个默认脚本：
 
-      * 从 `/libs/sling/servlet/errorhandler/`
-      * 至`/apps/sling/servlet/errorhandler/`
+    * 从 `/libs/sling/servlet/errorhandler/`
+    * 至`/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
@@ -112,7 +121,7 @@ Adobe Experience Manager (AEM)组件和模板构成了一个功能强大的工�
 >如果您使用[查询生成器](/help/sites-developing/querybuilder-api.md)，则使用JCR查询，因为查询生成器会在幕后生成JCR查询。
 >
 
-## 安全性注意事项 {#security-considerations}
+## 安全考虑事项 {#security-considerations}
 
 >[!NOTE]
 >
@@ -126,7 +135,7 @@ Adobe Experience Manager (AEM)组件和模板构成了一个功能强大的工�
 slingRequest.getResourceResolver().adaptTo(Session.class);
 ```
 
-### Protect抵御跨站点脚本(XSS) {#protect-against-cross-site-scripting-xss}
+### 防止跨站点脚本(XSS) {#protect-against-cross-site-scripting-xss}
 
 跨站点脚本(XSS)允许攻击者将代码注入其他用户查看的网页。 恶意Web用户可以利用此安全漏洞绕过访问控制。
 
@@ -136,9 +145,9 @@ AEM应用了在输出时筛选所有用户提供的内容的原则。 在开发�
 
 >[!CAUTION]
 >
->随AEM提供的示例代码本身可能无法抵御此类攻击，通常依赖于Web应用程序防火墙的请求过滤。
+>随AEM提供的示例代码本身可能无法抵御此类攻击，通常依赖于Web应用程序防火墙进行的请求过滤。
 
-XSS API备忘表包含要使用XSS API并使AEM应用程序更安全必须了解的信息。 您可以在此处下载它：
+XSS API备忘表包含您必须了解的信息，以便使用XSS API并使AEM应用程序更加安全。 您可以在此处下载它：
 
 XSSAPI备忘单。
 
@@ -149,7 +158,7 @@ XSSAPI备忘单。
 对于任何Internet应用程序，在传输机密信息时，请确保
 
 * 通过SSL保护流量
-* 如果适用，则使用HTTPPOST
+* 如果适用，则使用HTTP POST
 
 这适用于系统机密的信息（如配置或管理访问权限）以及用户机密的信息（如个人详细信息）
 
@@ -163,6 +172,6 @@ XSSAPI备忘单。
 
 ### 在Java™进程中打开文件 {#open-files-in-the-java-process}
 
-由于AEM可以访问许多文件，因此建议为AEM显式配置Java™进程[&#128279;](/help/sites-deploying/configuring.md#open-files-in-the-java-process)的打开文件数。
+由于AEM可以访问许多文件，因此建议为AEM明确配置Java™进程](/help/sites-deploying/configuring.md#open-files-in-the-java-process)的[打开文件数。
 
 为了最大限度地减少此问题，开发应确保在（有意义的）可能时正确关闭任何打开的文件。

@@ -1,5 +1,5 @@
 ---
-title: 在AEM Forms中获取XDP和PDF文档
+title: 在 AEM Forms 中获取 XDP 和 PDF 文档
 description: 通过AEM Forms，可上传要与自适应表单一起使用的表单和支持的资源。 您还可以以ZIP格式批量上传表单和相关资源。
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,14 +9,30 @@ role: Admin,User
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms,Foundation Components
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 7da902b6-fe94-5180-8e7c-f6d1e38d01d5
+    internal-label: Foundation Components
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '671'
-ht-degree: 0%
-
+source-wordcount: '672'
+ht-degree: 2%
 ---
-
-# 在AEM Forms中获取XDP和PDF文档{#getting-xdp-and-pdf-documents-in-aem-forms}
+# 在 AEM Forms 中获取 XDP 和 PDF 文档{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## 概述 {#overview}
 
@@ -24,7 +40,7 @@ ht-degree: 0%
 
 * 表单模板（XFA表单）
 * PDF forms
-* 单据(平面PDF单据)
+* 文档（平面PDF文档）
 
 您可以单独上传支持的资源类型，也可以以ZIP存档的形式上传。 您只能在ZIP存档中与XFA表单一起上传类型为`Resource`的资产。
 
@@ -38,9 +54,9 @@ ht-degree: 0%
 1. 导航到要在其中上传表单的文件夹或包含表单的文件夹。
 1. 在操作工具栏中，选择&#x200B;**创建>文件上传**。
 
-   “创建”![&#128279;](assets/step.png)下的本地存储中的文件选项
+   “创建”](assets/step.png)下的![本地存储中的文件选项
 
-1. 上传表单或包对话框允许您浏览并选择要上传的文件。 文件浏览器仅显示支持的文件格式(ZIP、XDP和PDF)。
+1. 上传表单或包对话框允许您浏览并选择要上传的文件。 文件浏览器仅显示支持的文件格式（ZIP、XDP和PDF）。
 
    >[!NOTE]
    >
@@ -66,7 +82,7 @@ AEM Forms服务器允许您运行JavaScript代码。 恶意JavaScript代码可�
 
 默认情况下，保护模式处于打开状态。 如有必要，您可以禁用保护模式：
 
-1. 以管理员身份登录到AEM Web Console。 URL是https://&#39;[服务器]：[端口]&#39;/system/console/configMgr
+1. 以管理员身份登录到AEM Web控制台。 URL是https://&#39;[服务器]：[端口]&#39;/system/console/configMgr
 1. 打开Mobile Forms配置以进行编辑。
 1. 取消选择“保护模式”选项，然后单击&#x200B;**保存**。 已禁用保护模式。
 

@@ -1,18 +1,37 @@
 ---
 title: 安装最新的6.5.15.0 Service Pack后，出现CRX/捆绑包和Start page Service不可用错误
 description: 安装最新的6.5.15.0 Service Pack后，出现CRX/捆绑包和Start page Service不可用错误
+SEO Description: Trouble shooting steps to resolve the errors after installing latest 6.5.15.0 service pack
 exl-id: dfe015a3-3a24-41c5-aede-8e086851d62b
 solution: Experience Manager, Experience Manager Forms
 role: User, Developer
 feature: Adaptive Forms,AEM Forms on JEE,AEM Forms on OSGi
-source-git-commit: d7b9e947503df58435b3fee85a92d51fae8c1d2d
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+  - id: e8f6de9b-cf88-4405-8d10-15efa08c230e
+    internal-label: Experience Manager Forms
+feature_v2:
+  - id: 94663796-0ee7-58b9-84f4-b425ebb69e83
+    internal-label: AEM Forms on JEE
+  - id: 8c4fb903-572c-5473-ad45-8ebb0d5d8134
+    internal-label: AEM Forms on OSGi
+  - id: e72c079d-d036-46d5-b43d-29b276a174c2
+    internal-label: Authoring and publishing content
+subfeature_v2:
+  - id: a26f372d-6d7c-452b-81df-594dd4365ae1
+    internal-label: Adaptive Forms
+role_v2:
+  - id: b69b2659-1057-424e-8fc5-ed9e016dc554
+    internal-label: User
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '276'
-ht-degree: 2%
-
+source-wordcount: '368'
+ht-degree: 29%
 ---
-
-# 安装AEM (6.5.15.0) Service Pack后出现“Service Unavailable（服务不可用）”错误 {#steps-to-resolve-error-after-installing-service-pack}
+# 安装AEM (6.5.15.0) Service Pack后出现“服务不可用”错误 {#steps-to-resolve-error-after-installing-service-pack}
 
 ## 问题 {#issue}
 
@@ -26,13 +45,13 @@ ht-degree: 2%
 此解决方案适用于：
 * 所有JEE服务器（在JBoss EAP 7.4.0上运行的除外）上的AEM Forms
 
-## 解决方案 {#solution}
+## 解决办法 {#solution}
 
 >[!NOTE]
 >
 >故障排除步骤适用于除JBoss EAP 7.4之外的所有应用程序服务器。
 
-安装[AEM 6.5.15.0 service pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)后，如果CRX/捆绑包和起始页显示服务不可用错误，请执行以下步骤：
+安装[AEM 6.5.15.0 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)后，如果CRX/捆绑包和起始页显示服务不可用错误，请执行以下步骤：
 
 1. 停止应用程序服务器。
 1. 导航到 `[aem-forms root]\crx-repository\launchpad\felix\bundle52`。
@@ -46,8 +65,8 @@ ht-degree: 2%
 1. 导航到URL： `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`。
 1. 搜索`bundle.jar`并将`bundle.jar`重命名为`bundle.jar.bak`。
 1. 从[软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar)复制此位置的`Bundle for AEM 6.5 Forms on JEE Service Pack 15`。
-1. 启动应用程序服务器，等待日志稳定并检查捆绑包状态。
-1. 所有包都处于活动状态后，请从`system/console/bundles`在JEE Service Pack 15[&#128279;](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)上安装AEM 6.5 Forms的片段，并等待应用程序服务器稳定下来。
+1. 启动应用程序服务器，等待日志稳定后检查捆绑包状态。
+1. 所有包都处于活动状态后，请从`system/console/bundles`在JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar)上安装AEM 6.5 Forms的[片段，并等待应用程序服务器稳定下来。
 1. 停止应用程序服务器。
 1. 导航到`[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1`并删除`bundle.jar`。
 1. 将`bundle.jar.bak`重命名为`bundle.jar`。

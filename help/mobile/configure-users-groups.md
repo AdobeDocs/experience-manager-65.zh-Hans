@@ -9,13 +9,17 @@ exl-id: 9f814204-8cd4-4ba9-9e25-3ff1b25c1955
 solution: Experience Manager
 feature: Mobile
 role: Admin
-source-git-commit: 2dae56dc9ec66f1bf36bbb24d6b0315a5f5040bb
+product_v2:
+  - id: fd1f54a9-f50c-467d-8956-cebbaf4f3eb8
+    internal-label: Experience Manager
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
 workflow-type: tm+mt
-source-wordcount: '593'
-ht-degree: 0%
-
+source-wordcount: '645'
+ht-degree: 1%
 ---
-
 # 配置用户和用户组 {#configure-your-users-and-user-groups}
 
 {{ue-over-mobile}}
@@ -41,7 +45,7 @@ ht-degree: 0%
 
    在用户组控制台中，选择“+”按钮以创建组。
 
-   将此组的ID设置为“应用程序作者”，表示它是特定类型的作者用户组，专门用于在AEM中创作移动应用程序。
+   将此组的ID设置为“应用程序作者”，表示它是特定类型的创作用户组，特定于AEM中创作移动设备应用程序。
 
 1. 将成员添加到组：作者
 
@@ -67,7 +71,7 @@ ht-degree: 0%
 
 应用程序管理员组的成员可以使用与应用程序作者&#x200B;**和**&#x200B;相同的权限创作应用程序内容，此外，他们还负责：
 
-* 在AEM中配置PhoneGap Build和AdobeMobile Services云服务
+* 在AEM中配置PhoneGap Build和Adobe Mobile Services云服务
 * 暂存、发布和清除应用程序内容同步OTA更新
 
 >[!NOTE]
@@ -81,7 +85,7 @@ ht-degree: 0%
 1. 创建一个名为app-admins的组。
 1. 将以下组添加到新的app-admins组：
 
-   * 内容作者
+   * content-authors
    * workflow-users
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
@@ -118,7 +122,7 @@ ht-degree: 0%
 
 图块当前没有需要权限的操作，但应用程序的详细信息页面具有以下操作：
 
-* 为app-author和app-admin *编辑* （UI触发器 — jcr：write - on /content/phonegap/{suffix}）
+* 在/content/phonegap/{suffix}上编辑app-author和app-admin的&#x200B;*Edit* （UI触发器 — jcr:write）
 * *下载app-author和app-admin的* （UI触发器 — 位于/content/phonegap/{suffix}）
 
 下图显示了应用程序的“下载”和“编辑”选项：
