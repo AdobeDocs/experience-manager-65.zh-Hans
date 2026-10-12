@@ -289,9 +289,9 @@ private void signRendition(Asset asset, Rendition rendition) {
 
 >[!MORELIKETHIS]
 >
->*  [!DNL Experience Manager as a Cloud Service]&#x200B;[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)的Assets视图中的C2PA元数据
->*  [!DNL Experience Manager Assets Essentials]&#x200B;[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-assets-essentials/help/content-credentials)中的C2PA元数据
->*  [!DNL Dynamic Media]&#x200B;[&#128279;](https://experienceleague.adobe.com/en/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)中的C2PA元数据
+>*  [!DNL Experience Manager as a Cloud Service]&#x200B;[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/assets-view/c2pa-metadata-assets-view)的Assets视图中的C2PA元数据
+>*  [!DNL Experience Manager Assets Essentials]&#x200B;[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-assets-essentials/help/content-credentials)中的C2PA元数据
+>*  [!DNL Dynamic Media]&#x200B;[&#128279;](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-cloud-service/content/assets/dynamicmedia/dynamic-media-open-apis/c2pa-metadata)中的C2PA元数据
 >* [XMP写回到演绎版](/help/assets/xmp-writeback.md)
 >* [为您的资产添加水印](/help/assets/watermarking.md)
 >* [Content Authenticity Initiative](https://contentauthenticity.org/)
