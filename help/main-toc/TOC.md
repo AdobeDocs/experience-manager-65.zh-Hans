@@ -6,9 +6,9 @@ solution-title: Experience Cloud
 user-guide-description: 使用 Adobe Experience Manager 6.5 文档，了解其工作原理以及该软件能为您带来的价值。
 breadcrumb-title: 用户指南
 user-guide-title: AEM 6.5
-source-git-commit: f46e653863a8724a5f50bed7a2f76079803b162e
+source-git-commit: 1af0281a94789888e87ba959f82ff491f4d7ee60
 workflow-type: tm+mt
-source-wordcount: '8300'
+source-wordcount: '8302'
 ht-degree: 95%
 ---
 
@@ -433,6 +433,7 @@ ht-degree: 95%
     + [配置元数据功能](/help/assets/metadata-config.md)
     + [元数据架构](/help/assets/metadata-schemas.md)
     + [将 XMP 写回演绎版](/help/assets/xmp-writeback.md)
+    + [C2PA元数据](/help/assets/c2pa-metadata.md)
     + [资产链接共享](/help/assets/link-sharing.md)
     + [资产报告](/help/assets/asset-reports.md)
     + [配置智能内容服务以进行标记](/help/assets/config-smart-tagging.md)
