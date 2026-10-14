@@ -1,6 +1,6 @@
 ---
 title: 查询生成器 API
-description: 资产共享查询生成器的功能通过Java&amp；trade； API和REST API公开。
+description: 资产共享查询生成器的功能通过Java&trade； API和REST API公开。
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -13,11 +13,9 @@ feature: Developing,Search,Query Builder
 role: Developer
 source-git-commit: 305227eff3c0d6414a5ae74bcf3a74309dccdd13
 workflow-type: tm+mt
-source-wordcount: '2033'
+source-wordcount: '2390'
 ht-degree: 0%
-
 ---
-
 # 查询生成器 API{#query-builder-api}
 
 [资产共享查询生成器](/help/assets/assets-finder-editor.md)的功能通过Java™ API和REST API公开。 此部分介绍了这些API。
@@ -32,15 +30,15 @@ REST API通过HTTP提供对相同功能的访问，响应以JSON发送。
 
 >[!NOTE]
 >
->QueryBuilder API是使用JCR API构建的。 您还可以使用OSGi捆绑包中的JCR API查询Adobe Experience Manager JCR。 有关信息，请参阅使用JCR API的[Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html?lang=zh-Hans)。
+>QueryBuilder API是使用JCR API构建的。 您还可以使用OSGi捆绑包中的JCR API查询Adobe Experience Manager JCR。 有关信息，请参阅使用JCR API的[Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/access-jcr.html)。
 
 ## Gem会议 {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html?lang=zh-Hans)是Adobe专家提供的一系列深入探讨Adobe Experience Manager的技术资料。 专门用于查询生成器的此会话对于概述和使用工具非常有用。
+[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html)是Adobe专家提供的一系列对Adobe Experience Manager的深入技术探讨。 专门用于查询生成器的此会话对于概述和使用工具非常有用。
 
 >[!NOTE]
 >
->AEM Gem会话[使用AEM查询生成器](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html?lang=zh-Hans)轻松搜索表单，以详细了解查询生成器。
+>AEM Gem会话[使用AEM查询生成器](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2017/aem-search-forms-using-querybuilder.html)轻松搜索表单，以查看查询生成器的详细概述。
 
 ## 示例查询 {#sample-queries}
 
@@ -116,7 +114,7 @@ orderby=path
 "offset": 0,
 ```
 
-从AEM 6.0 SP2开始，您还可以使用数值来计算自定义的最大结果数量。 使用与上述相同的查询，但将`p.guessTotal`的值更改为`50`：
+从AEM 6.0 SP2开始，您还可以使用数值来计入自定义的最大结果数量。 使用与上述相同的查询，但将`p.guessTotal`的值更改为`50`：
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.guessTotal=50&orderby=path`
 
@@ -141,8 +139,8 @@ orderby=path
 
 * 响应可能会产生以下结果：
 
-   * `total=43`， `more=false` — 表示点击总数为43。 UI可以在第一个页面中显示最多十个结果，并为后续三个页面提供分页。 您还可以使用此实现来显示描述性文本，如&#x200B;**&quot;43个找到的结果&quot;**。
-   * `total=100`， `more=true` — 指示点击总数大于100，并且确切计数未知。 UI最多可以将10个作为第一页的一部分显示，并为接下来的10个页面提供分页。 您还可以使用此项显示诸如&#x200B;**“找到100个以上的结果”**&#x200B;之类的文本。 当用户进入下一页时，调用查询生成器将增加`guessTotal`以及`offset`和`limit`参数的上限。
+  * `total=43`， `more=false` — 表示点击总数为43。 UI可以在第一个页面中显示最多十个结果，并为后续三个页面提供分页。 您还可以使用此实现来显示描述性文本，如&#x200B;**&quot;43个找到的结果&quot;**。
+  * `total=100`， `more=true` — 指示点击总数大于100，并且确切计数未知。 UI最多可以将10个作为第一页的一部分显示，并为接下来的10个页面提供分页。 您还可以使用此项显示诸如&#x200B;**“找到100个以上的结果”**&#x200B;之类的文本。 当用户进入下一页时，调用查询生成器将增加`guessTotal`以及`offset`和`limit`参数的上限。
 
 在UI需要使用无限滚动以避免Query Builder确定确切点击计数的情况下，应使用`guessTotal`。
 
@@ -324,7 +322,7 @@ p.properties
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[`http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) [p.hits=selective&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -424,7 +422,7 @@ p.nodedepth=5
 
 >[!NOTE]
 >
->要了解如何生成使用QueryBuilder API并在Adobe Experience Manager应用程序中使用该OSGi包的OSGi包，请参阅[创建使用查询生成器AP的Adobe CQ OSGi包](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)I。
+>要了解如何生成使用QueryBuilder API并在Adobe Experience Manager应用程序中使用该OSGi包的OSGi包，请参阅[创建使用查询生成器AP](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)I的Adobe CQ OSGi包。
 
 使用查询生成器(JSON) Servlet通过HTTP执行的相同查询：
 
@@ -468,7 +466,7 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 （`path=/tmp`只是一个示例）。
 
-### 常规调试Recommendations {#general-debugging-recommendations}
+### 常规调试建议 {#general-debugging-recommendations}
 
 ### 通过日志记录获取可解释的XPath {#obtain-explain-able-xpath-via-logging}
 
@@ -476,18 +474,18 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 * 启用QueryBuilder的DEBUG日志，以获取基础的可解释XPath查询
 
-   * 导航到https://&lt;serveraddress>：&lt;serverport>/system/console/slinglog。 在&#x200B;**DEBUG**&#x200B;为`com.day.cq.search.impl.builder.QueryImpl`创建日志记录器。
+  * 导航到https://&lt;serveraddress>：&lt;serverport>/system/console/slinglog。 在&#x200B;**DEBUG**&#x200B;为`com.day.cq.search.impl.builder.QueryImpl`创建日志记录器。
 
 * 为上述类启用DEBUG后，日志会显示由Query Builder生成的XPath。
 * 从关联的QueryBuilder查询的日志条目中复制XPath查询，例如：
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * 将XPath查询粘贴到[Explain查询](/help/sites-administering/operations-dashboard.md#explain-query)中作为XPath以获取查询计划
 
 ### 通过Query Builder调试器获取可解释的XPath {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* 使用AEM QueryBuilder调试器生成可解释的XPath查询：
+* 使用AEM QueryBuilder Debugger生成可解释的XPath查询：
 
 说明在开发周期期间针对目标索引集进行的&#x200B;**所有**&#x200B;查询。
 
@@ -495,18 +493,18 @@ Query loadedQuery = builder.loadQuery("/mypath/getfiles", session);
 
 * 启用QueryBuilder的DEBUG日志，以获取基础的可解释XPath查询
 
-   * 导航到https://&lt;serveraddress>：&lt;serverport>/system/console/slinglog。 在&#x200B;**DEBUG**&#x200B;为`com.day.cq.search.impl.builder.QueryImpl`创建日志记录器。
+  * 导航到https://&lt;serveraddress>：&lt;serverport>/system/console/slinglog。 在&#x200B;**DEBUG**&#x200B;为`com.day.cq.search.impl.builder.QueryImpl`创建日志记录器。
 
 * 为上述类启用DEBUG后，日志会显示由Query Builder生成的XPath。
 * 从关联的QueryBuilder查询的日志条目中复制XPath查询，例如：
 
-   * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
+  * `com.day.cq.search.impl.builder.QueryImpl XPath query: /jcr:root/content//element(*, cq:Page)[(jcr:contains(jcr:content, "Geometrixx") or jcr:contains(jcr:content/@cq:tags, "Geometrixx"))]`
 
 * 将XPath查询粘贴到[Explain查询](/help/sites-administering/operations-dashboard.md#explain-query)中作为XPath以获取查询计划
 
 **通过Query Builder调试器获取可解释的XPath**
 
-* 使用AEM QueryBuilder调试器生成可解释的XPath查询：
+* 使用AEM QueryBuilder Debugger生成可解释的XPath查询：
 
 ![chlimage_1-66](assets/chlimage_1-66a.png)
 
