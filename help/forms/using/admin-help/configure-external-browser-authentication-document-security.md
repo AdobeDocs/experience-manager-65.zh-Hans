@@ -47,7 +47,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
-> 外部浏览器身份验证需要客户端上的Adobe Acrobat或Adobe Acrobat Reader的支持版本。 有关版本详细信息和更新，请参阅[Acrobat发行说明（2026年3月连续跟踪）](https://www.adobe.com/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix)。
+> 外部浏览器身份验证需要客户端上的Adobe Acrobat或Adobe Acrobat Reader的支持版本。 有关版本详细信息和更新，请参阅[Acrobat发行说明（2026年3月连续跟踪）](https://www.adobe.com/cn/devnet-docs/acrobatetk/tools/ReleaseNotesDC/continuous/dccontinuousmarch2026.html#dccontinuousmarchtwentytwentysix)。
 
 ### AEM Forms JEE修补程序2的软件分发链接6.5.24.0 {#software-distribution-links}
 

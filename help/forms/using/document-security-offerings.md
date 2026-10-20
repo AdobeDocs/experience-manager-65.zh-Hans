@@ -66,7 +66,7 @@ AEM Forms Document Security提供了多种应用安全策略的工具。 您可�
 
 * **Adobe Acrobat：**&#x200B;您可以使用Adobe Acrobat将安全策略应用到使用常用桌面应用程序(如Microsoft®Office、Web浏览器或任何支持PDF格式打印的应用程序创建的PDF文档。
 
-  您可以从[Adobe Acrobat网站](https://www.adobe.com/acrobat/free-trial-download.html)购买并下载Adobe。 Adobe Acrobat文章[为PDF设置安全策略](https://helpx.adobe.com/cn/acrobat/using/setting-security-policies-pdfs.html)提供了有关在Adobe Acrobat中创建和应用策略的详细信息。
+  您可以从[Adobe Acrobat网站](https://www.adobe.com/cn/acrobat/free-trial-download.html)购买并下载Adobe。 Adobe Acrobat文章[为PDF设置安全策略](https://helpx.adobe.com/cn/acrobat/using/setting-security-policies-pdfs.html)提供了有关在Adobe Acrobat中创建和应用策略的详细信息。
 
 * **Document Security Extension for ® Office**：您可以使用Document Security Extension for Microsoft® Office，在Microsoft® Office程序中将预定义策略应用于Microsoft® Office文件。 该扩展可确保只有授权人员才能使用受策略保护的®Word、Excel和PowerPoint文件。 只有安装了此插件的授权用户才能使用受策略保护的文件。
 

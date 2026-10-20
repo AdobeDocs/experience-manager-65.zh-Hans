@@ -46,7 +46,7 @@ AEM Forms与Analytics集成，允许您捕获和跟踪已发布表单和文档�
 >
 >AEM Forms中的分析功能作为AEM Forms附加组件包的一部分提供。 有关安装附加组件包的信息，请参阅[安装和配置AEM Forms](../../forms/using/installing-configuring-aem-forms-osgi.md)。
 >
->除了附加组件包之外，您还需要Adobe Analytics帐户和AEM实例管理员权限。 有关解决方案的信息，请参阅[Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)。
+>除了附加组件包之外，您还需要Adobe Analytics帐户和AEM实例管理员权限。 有关解决方案的信息，请参阅[Adobe Analytics](https://www.adobe.com/cn/solutions/digital-analytics.html)。
 
 您还可以使用Adobe Launch执行分析。 有关如何将AEM Forms与Adobe Launch集成的详细信息，请参阅[使用Adobe Launch的Analytics](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md)。
 

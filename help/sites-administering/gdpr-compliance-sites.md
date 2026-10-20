@@ -44,7 +44,7 @@ ht-degree: 100%
 
 AEM Sites 已经准备好帮助客户履行 GDPR 合规义务。 此页面将指导客户完成在 AEM Sites 中处理 GDPR 请求的过程。 它描述了私有数据的存储位置，以及如何手动或使用代码移除私有数据。
 
-有关更多信息，请参阅 [Adobe 隐私中心的 GDPR 页面](https://www.adobe.com/privacy/general-data-protection-regulation.html)。
+有关更多信息，请参阅 [Adobe 隐私中心的 GDPR 页面](https://www.adobe.com/cn/privacy/general-data-protection-regulation.html)。
 
 >[!NOTE]
 >

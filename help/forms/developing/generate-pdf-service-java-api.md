@@ -242,7 +242,7 @@ AEM Forms操作可以使用AEM Forms强类型API执行，并且连接模式应�
          GeneratePdfServiceClient pdfGenClient = new GeneratePdfServiceClient(myFactory);
  
          //Get an HTML document to convert to a PDF document a
-         String inputFileName = "https://www.adobe.com";
+         String inputFileName = "https://www.adobe.com/cn";
  
           String securitySettings = "No Security";
          String fileTypeSettings = "Standard";

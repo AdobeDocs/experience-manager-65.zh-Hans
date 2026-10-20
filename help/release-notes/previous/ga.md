@@ -346,7 +346,7 @@ AEM 6.5 引入了以下功能和增强，旨在提升 AEM 用户、DAM 角色以
 
 [!DNL Adobe Asset Link] 在内容创作过程中强化了创意人员与营销人员之间的协作。 创意人员无需离开他们最熟悉的应用程序，就可以访问存储在 [!DNL Experience Manager Assets] 中的内容。 通过 [!DNL Adobe Photoshop]、[!DNL Adobe Illustrator] 和 [!DNL Adobe InDesign] 应用程序中的面板，创意人员可以无缝浏览、搜索、签出和签入资产。
 
-[!DNL Adobe Asset Link] 是 [Creative Cloud 企业版](https://www.adobe.com/creativecloud/business/enterprise.html)产品的一部分。 如需了解更多信息，包括部署 [!DNL Experience Manager] 所需的配置，请参阅 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
+[!DNL Adobe Asset Link] 是 [Creative Cloud 企业版](https://www.adobe.com/cn/creativecloud/business/enterprise.html)产品的一部分。 如需了解更多信息，包括部署 [!DNL Experience Manager] 所需的配置，请参阅 [Adobe Asset Link](https://helpx.adobe.com/cn/enterprise/using/adobe-asset-link.html)。
 
 ![在 Adobe Photoshop 中搜索资产](/help/release-notes/assets/asset_search_photoshop.png)
 
