@@ -178,7 +178,7 @@ Distiller服务(`DistillerService`)通过网络将PostScript、封装的PostScri
 
 >[!NOTE]
 >
->® LiveCycle® Content Services ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 Content Services（已弃用）支持于2014年12月31日终止。 请参阅[Adobe产品生命周期文档](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html)。
+>® LiveCycle® Content Services ES（已弃用）是随LiveCycle一起安装的内容管理系统。 它使用户能够设计、管理、监控和优化以人为中心的流程。 Content Services（已弃用）支持于2014年12月31日终止。 请参阅[Adobe产品生命周期文档](https://www.adobe.com/cn/support/products/enterprise/eol/eol_matrix.html)。
 
 文档管理服务(`DocumentManagementService`)允许进程使用内容服务提供的内容管理功能（已弃用）。 文档管理操作提供了在内容管理系统中维护空间和内容所需的基本任务。 此类任务的示例包括复制、删除、移动、检索和存储内容、创建空间和关联，以及获取和设置内容属性。
 

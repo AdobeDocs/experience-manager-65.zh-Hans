@@ -93,5 +93,5 @@ Dynamic Media支持传送带隐藏式字幕的视频和自适应视频集。 字
 
 >[!MORELIKETHIS]
 >
->* Adobe解决方案的[辅助功能](https://www.adobe.com/accessibility.html)
+>* Adobe解决方案的[辅助功能](https://www.adobe.com/cn/accessibility.html)
 >*  [!DNL Experience Manager Assets]&#x200B;[&#128279;](/help/assets/accessibility.md)中的辅助功能

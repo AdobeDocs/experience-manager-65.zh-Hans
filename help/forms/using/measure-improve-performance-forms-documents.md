@@ -48,7 +48,7 @@ ht-degree: 1%
 
 ## 解决方案 {#the-solution}
 
-AEM Forms与[Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)解决方案（[Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html)和[Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html)）集成，这些解决方案可以帮助您监视和分析表单的执行情况，并让您试验并识别可提高转化率的体验。
+AEM Forms与[Adobe Marketing Cloud](https://www.adobe.com/cn/marketing-cloud.html)解决方案（[Adobe Analytics](https://www.adobe.com/cn/marketing-cloud/web-analytics.html)和[Adobe Target](https://www.adobe.com/cn/marketing-cloud/testing-targeting.html)）集成，这些解决方案可以帮助您监视和分析表单的执行情况，并让您试验并识别可提高转化率的体验。
 
 ## 工作流 {#the-workflow}
 

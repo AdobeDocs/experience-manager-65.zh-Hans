@@ -61,7 +61,7 @@ ht-degree: 5%
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/cn"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
                 <img
@@ -109,7 +109,7 @@ ht-degree: 5%
             onload=assetAnalytics.core.assetLoaded(this)>
 
         <a
-            href="https://www.adobe.com"
+            href="https://www.adobe.com/cn"
 
             onclick="assetAnalytics.core.assetClicked(this);return false">
            <img

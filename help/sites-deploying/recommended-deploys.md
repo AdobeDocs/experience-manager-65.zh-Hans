@@ -87,7 +87,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->此TarMK示例中的“冷备用”部署要求主实例和备用实例都单独授予许可，因为对故障转移服务器进行持续复制。 有关许可的详细信息，请参阅[Adobe一般许可条款](https://www.adobe.com/legal/terms/enterprise-licensing.html)。
+>此TarMK示例中的“冷备用”部署要求主实例和备用实例都单独授予许可，因为对故障转移服务器进行持续复制。 有关许可的详细信息，请参阅[Adobe一般许可条款](https://www.adobe.com/cn/legal/terms/enterprise-licensing.html)。
 
 ### TarMK场 {#tarmk-farm}
 

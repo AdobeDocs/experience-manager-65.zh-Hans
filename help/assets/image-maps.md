@@ -44,7 +44,7 @@ ht-degree: 3%
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. 单击热点，然后输入URL和Alt文本。 从&#x200B;**[!UICONTROL 目标]**&#x200B;列表中，指定希望显示图像映射的位置，例如，同一选项卡、新选项卡或iFrame。 例如，输入`https://www.adobe.com`作为URL，输入`Adobe website`作为Alt文本，并从&#x200B;**[!UICONTROL 目标]**&#x200B;列表中为要在新选项卡中打开的图像映射指定&#x200B;**[!UICONTROL 新选项卡]**。
+1. 单击热点，然后输入URL和Alt文本。 从&#x200B;**[!UICONTROL 目标]**&#x200B;列表中，指定希望显示图像映射的位置，例如，同一选项卡、新选项卡或iFrame。 例如，输入`https://www.adobe.com/cn`作为URL，输入`Adobe website`作为Alt文本，并从&#x200B;**[!UICONTROL 目标]**&#x200B;列表中为要在新选项卡中打开的图像映射指定&#x200B;**[!UICONTROL 新选项卡]**。
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 

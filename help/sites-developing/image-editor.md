@@ -51,8 +51,8 @@ ht-degree: 17%
 
 示例：
 
-`[rect(0,0,10,10)"https://www.adobe.com"|"_self"|"alt"|(0,0,0.8,0.8)]`
-`[circle(10,10,10)"https://www.adobe.com"|"_self"|"alt"|(0.8,0.8,0.8)]`
+`[rect(0,0,10,10)"https://www.adobe.com/cn"|"_self"|"alt"|(0,0,0.8,0.8)]`
+`[circle(10,10,10)"https://www.adobe.com/cn"|"_self"|"alt"|(0.8,0.8,0.8)]`
 
 ## 支持SVG图像 {#support-for-svg-images}
 

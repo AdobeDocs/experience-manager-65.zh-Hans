@@ -32,7 +32,7 @@ ht-degree: 4%
 
 AEM Communities提供现成的API来管理用户配置文件和批量管理用户生成的内容(UGC)。 启用后，**UserUgcManagement**&#x200B;服务将允许特权用户（社区管理员和审查方）禁用用户配置文件，以及批量删除或批量导出特定用户的UGC。 这些API还使客户数据的控制者和处理者能够遵守欧盟的《通用数据保护条例》(GDPR)和其他受GDPR启发的隐私法规。
 
-有关详细信息，请参阅Adobe隐私中心的[GDPR页面。](https://www.adobe.com/privacy/general-data-protection-regulation.html)
+有关详细信息，请参阅Adobe隐私中心的[GDPR页面。](https://www.adobe.com/cn/privacy/general-data-protection-regulation.html)
 
 >[!NOTE]
 >

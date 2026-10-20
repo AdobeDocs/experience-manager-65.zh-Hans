@@ -648,7 +648,7 @@ AEM Forms的以下子系统与[508](https://www.section508.gov/)不兼容：
 >
 >AEM Forms不支持Adobe Acrobat 2020 （传统跟踪）。 请改用Adobe Acrobat Pro DC（连续跟踪，最新版本）。
 >
->Acrobat DC产品系列为Acrobat和Reader引入了两个路径，它们是不同的产品：“Classic”和“Continuous”。 有关两个轨道的详细信息和比较，请参阅[https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html)。
+>Acrobat DC产品系列为Acrobat和Reader引入了两个路径，它们是不同的产品：“Classic”和“Continuous”。 有关两个轨道的详细信息和比较，请参阅[https://www.adobe.com/cn/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html](https://www.adobe.com/cn/devnet-docs/acrobatetk/tools/AdminGuide/whatsnewdc.html)。
 
 ## AEM Forms on JEE支持的客户端 {#supported-clients-for-aem-forms-on-jee}
 
