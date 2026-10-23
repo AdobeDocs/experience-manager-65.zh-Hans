@@ -1,18 +1,16 @@
 ---
 title: 如何在AEM Forms on JEE Workbench中使用execute脚本服务来构建XML数据？
-description: 使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据
+description: 在 JEE 上的 AEM Forms 工作台中使用执行脚本服务生成 XML 数据
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
 solution: Experience Manager, Experience Manager Forms
 feature: Adaptive Forms
 role: User, Developer
 source-git-commit: 361f0a5f2d1484cf594edfda73250c5690ed7cab
 workflow-type: tm+mt
-source-wordcount: '1043'
-ht-degree: 0%
-
+source-wordcount: '1060'
+ht-degree: 2%
 ---
-
-# 使用AEM Forms on JEE Workbench中的执行脚本服务构建XML数据 {#using-execute-script-service-forms-jee-workbench}
+# 在 JEE 上的 AEM Forms 工作台中使用执行脚本服务生成 XML 数据 {#using-execute-script-service-forms-jee-workbench}
 
 JEE流程管理工作流中的AEM Forms涉及许多XML，例如：XML信息可以在流程中构建并发送到JEE Workspace上的AEM Forms中的Flex应用程序，用于系统设置，或者在表单之间传递信息。 在许多情况下，JEE上的AEM Forms开发人员需要管理XML，并且很多时候这需要通过JEE上的AEM Forms流程来管理XML。
 
