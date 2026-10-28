@@ -18,10 +18,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '504'
-ht-degree: 58%
+ht-degree: 54%
 ---
 # 为 AEM 设置 IMS 集成 {#setting-up-ims-integrations-for-aem}
 
@@ -46,7 +46,7 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
 >[!CAUTION]
 >
->以前，配置是使用 [JWT 凭据进行的，但现在这些凭据在 Adobe Developer Console 中已遭弃用](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)。
+>以前，使用JWT凭据进行配置，这些凭据现在可在Adobe Developer Console中弃用。
 >
 >无法再创建或更新此类配置，但可以将它们迁移到 OAuth 配置。
 
@@ -114,5 +114,5 @@ Adobe Experience Manager (AEM)可与许多其他Adobe解决方案集成。 例�
 
    ![填写 OAuth 详细信息](assets/ims-migrate-jwt-complete-oauth-details.png)
 
-1. 使用&#x200B;**保存并关闭**&#x200B;来保存您的更新。
+1. 使用&#x200B;**保存并关闭**来保存您的更新。
 返回控制台时，**JWT凭据（已弃用）**&#x200B;警告消失。
