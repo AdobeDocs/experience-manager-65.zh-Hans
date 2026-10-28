@@ -21,7 +21,7 @@ feature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1919f4aff8dd2cb07b1e298511001e2f51ed520b
 workflow-type: tm+mt
 source-wordcount: '1487'
 ht-degree: 40%
@@ -42,7 +42,7 @@ AEM体验片段可以导出到Adobe Target中的默认工作区，也可以导�
 >
 >[IMS集成现在配置有S2S OAuth](/help/sites-administering/setting-up-ims-integrations-for-aem.md)。
 >
->以前使用[JWT凭据进行配置，这些凭据现在在Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)中被弃用。
+>以前的配置是使用JWT凭据进行的，现在Adobe Developer Console弃用了这些凭据。
 
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ AEM体验片段可以导出到Adobe Target中的默认工作区，也可以导�
    >
    >[IMS集成现在配置有S2S OAut](/help/sites-administering/setting-up-ims-integrations-for-aem.md)。
    >
-   >以前使用[JWT凭据进行配置，这些凭据现在在Adobe Developer Console](/help/sites-administering/jwt-credentials-deprecation-in-adobe-developer-console.md)中被弃用。
+   >以前的配置是使用JWT凭据进行的，现在Adobe Developer Console弃用了这些凭据。
 
 1. 体验片段将从AEM创作实例中导出，因此您必须在创作实例上[配置AEM链接外部化器](/help/sites-administering/target-requirements.md#configuring-the-aem-link-externalizer)，以确保体验片段中的任何引用都外部化以进行Web交付。
 
