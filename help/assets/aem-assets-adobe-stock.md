@@ -490,7 +490,7 @@ To configure the [!DNL Adobe Stock] cloud service:
 
 >[!MORELIKETHIS]
 >
->* [有关将 [!DNL Adobe Stock] 资源与 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)一起使用的视频教程
+>* [有关将 [!DNL Adobe Stock] 资源与 [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html?lang=zh-Hans)一起使用的视频教程
 >* [[!DNL Adobe Stock] 企业计划帮助](https://helpx.adobe.com/cn/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] 常见问题](https://helpx.adobe.com/cn/stock/faq.html)
 
