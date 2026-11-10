@@ -20,10 +20,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: 6fb39326f3a012bb7e774f65200feae143d2d30d
 workflow-type: tm+mt
-source-wordcount: '681'
-ht-degree: 41%
+source-wordcount: '780'
+ht-degree: 36%
 ---
 # 准备内容以进行翻译{#preparing-content-for-translation}
 
@@ -64,6 +64,14 @@ ht-degree: 41%
 * `<language-code>`支持的语言代码是由ISO-639-1定义的两字母代码，例如`en`。
 
 * `<language-code>_<country-code>`或`<language-code>-<country-code>`支持的国家/地区代码是由ISO 3166定义的小写或大写两字母代码，例如，`en_US`、`en_us`、`en_GB`、`en-gb`。
+
+>[!NOTE]
+>
+>对于在Java 17或Java 21上运行的AEM安装，默认的Java区域设置映射使用`he`作为希伯来语，`yi`作为意第绪语，`id`作为印度尼西亚语，而不是旧代码`iw`、`ji`和`in`。 可能找不到使用旧代码的现有i18n词典。
+>
+>使用语言根和i18n词典的当前代码：将`iw`替换为`he`，将`ji`替换为`yi`，将`in`替换为`id`。
+>
+>如果需要保留旧版代码作为兼容性解决方法，请在启动AEM时使用JVM参数`-Djava.locale.useOldISOCodes=true`将Java系统属性`java.locale.useOldISOCodes`设置为`true`。 此属性在Java运行时启动时是只读的；在AEM运行时更改此属性没有任何效果。
 
 根据您为全球站点选择的结构，您可以使用任一格式。  例如，Geometrixx站点的法语副本的根页面将`fr`作为Name属性。 Name属性用作存储库中页面节点的名称，从而确定页面的路径。 (http://localhost:4502/content/geometrixx/fr.html)
 
