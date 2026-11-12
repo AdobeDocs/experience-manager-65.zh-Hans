@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2442'
-ht-degree: 62%
+source-wordcount: '2078'
+ht-degree: 59%
 ---
 # 变体——创作片段内容{#variations-authoring-fragment-content}
 
@@ -42,8 +42,6 @@ ht-degree: 62%
 * [上传内容](#uploading-content)
 
 * [查看关键统计信息](#viewing-key-statistics)（关于多行文本）
-
-* [总结文本](#summarizing-text)
 
 * [使变体与主控内容同步](#synchronizing-with-master)
 
@@ -112,8 +110,6 @@ ht-degree: 62%
 * [显示文本统计信息](#viewing-key-statistics)
 
 * [与主要内容同步](#synchronizing-with-master)（编辑变体时）
-
-* [总结文本](#summarizing-text)
 
 ### 格式 {#formats}
 
@@ -228,60 +224,6 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 ### 上传内容 {#uploading-content}
 
 为了简化内容片段的创作过程，您可以上传在外部编辑器中准备的文本，并将其直接添加到片段中。
-
-### 摘要文本 {#summarizing-text}
-
-摘要文本旨在帮助用户将其文本的长度减少到预定义的字数，同时保留关键点和整体含义。
-
->[!NOTE]
->
->在更高的技术水平上，系统根据特定算法保持其认为提供&#x200B;*最佳信息密度和唯一性比*&#x200B;的句子。
-
->[!CAUTION]
->
->内容片段必须具有有效的语言文件夹（ISO 代码）作为祖先；这用于确定要使用的语言模型。
->
->例如，`en/`与以下路径相同：
->
->  `/content/dam/my-brand/en/path-down/my-content-fragment`
-
->[!CAUTION]
->
->英语是现成的。
->
->其他语言作为语言模型包从包共享中提供：
->
->* [法语 (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [德语 (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [意大利语 (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [西班牙语 (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
->
-
-1. 选择&#x200B;**主要变体**&#x200B;或所需的变体。
-1. 打开全屏编辑器。
-
-1. 从工具栏中选择&#x200B;**“摘要文本”**。
-
-   ![摘要](assets/cfm-variations-05.png)
-
-1. 指定目标字数并选 **开始**：
-1. 原始文本与建议的摘要并排显示：
-
-   * 任何要删除的句子都以红色高亮显示，并带有点进。
-   * 如果要将其保留在摘要内容中，请单击任何高亮显示的句子。
-   * 如果要删除未高亮显示的句子，请单击该句子。
-
-1. 选择&#x200B;**“摘要”**&#x200B;以确认更改。
-
-1. 原始文本与建议的摘要并排显示：
-
-   * 任何要删除的句子都以红色高亮显示，并带有点进。
-   * 如果要将其保留在摘要内容中，请单击任何高亮显示的句子。
-   * 如果要删除未高亮显示的句子，请单击该句子。
-   * 显示了总结统计信息：**实际**&#x200B;和&#x200B;**目标**-
-   * 您可以&#x200B;**预览**&#x200B;更改。
-
-   ![摘要比较](assets/cfm-variations-06.png)
 
 ### 批注内容片段 {#annotating-a-content-fragment}
 
@@ -480,7 +422,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 >[!CAUTION]
 >
->同步仅可将更改&#x200B;*从&#x200B;**母版**&#x200B;复制到变体*。
+>同步仅可将更改&#x200B;*从&#x200B;**母版**复制到变体*。
 >
 >仅会同步变体的当前元素。
 >

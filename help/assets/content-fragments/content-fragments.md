@@ -19,9 +19,9 @@ subfeature_v2:
 role_v2:
   - id: b69b2659-1057-424e-8fc5-ed9e016dc554
     internal-label: User
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
-source-wordcount: '2373'
+source-wordcount: '2361'
 ht-degree: 60%
 ---
 # 使用内容片段 {#working-with-content-fragments}
@@ -98,7 +98,7 @@ ht-degree: 60%
 >
 >体验片段可以包含内容片段形式的内容，反之则不行。
 >
->有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html?lang=zh-Hans#content-fragments)
+>有关更多信息，请参见[了解 AEM 中的内容片段和体验片段。](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/content-fragments/understand-content-fragments-and-experience-fragments.html#content-fragments)
 
 >[!NOTE]
 >
@@ -145,7 +145,7 @@ AEM 内容片段可用于描述和管理结构化内容。 结构化内容在可
   * 内容片段（及其变体）可以从&#x200B;**Assets**&#x200B;控制台创建和维护。
   * 在内容片段编辑器中创作和编辑。
 
-* 在包含内容片段组件[&#128279;](/help/sites-authoring/content-fragments.md) （引用组件）的页面编辑器中使用：
+* 在包含内容片段组件](/help/sites-authoring/content-fragments.md) （引用组件）的[页面编辑器中使用：
 
   * **内容片段**&#x200B;组件可供页面作者使用。 它允许他们以 HTML 或 JSON 格式引用和投放所需的内容片段。
 
@@ -215,7 +215,7 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
   * 嵌入在片段的段落系统中。
   * 可以[在页面上使用/引用片段时](/help/sites-authoring/content-fragments.md)进行格式化。
   * 只能使用片段编辑器在片段中添加、删除或移动到片段中。 无法在页面编辑器中执行这些操作。
-  * 只能在片段编辑器[&#128279;](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)中使用富文本格式添加、删除或移动片段。
+  * 只能在片段编辑器](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment)中使用[富文本格式添加、删除或移动片段。
   * 只能添加到多行文本元素（任何片段类型）。
   * 附于前文（段落）。
 
@@ -269,7 +269,7 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
   * 可以在片段创作期间定义。
   * 存储在片段中，以帮助避免内容副本的散布。
   * 如果主控内容已更新，则变体可以与主控[同步](/help/assets/content-fragments/content-fragments-variations.md#synchronizing-with-master)。
-  * 可以[概述](/help/assets/content-fragments/content-fragments-variations.md#summarizing-text)以快速将文本截断为预定义的长度。
+
   * 在片段编辑器的[变体](/help/assets/content-fragments/content-fragments-variations.md)选项卡下可用。
 
 ### 使用内容片段创作页面时的中间内容 {#in-between-content-when-page-authoring-with-content-fragments}
@@ -277,7 +277,7 @@ Assets可以通过多种方式与内容片段一起使用；各具优势：
 中间内容：
 
 * 处理内容片段时，可在页面编辑器中使用。
-* 是在页面上使用或引用片段[&#128279;](/help/sites-authoring/content-fragments.md#adding-in-between-content)后，在片段流中添加的其他内容。
+* 是在页面上使用或引用片段](/help/sites-authoring/content-fragments.md#adding-in-between-content)后，在片段流中添加的[其他内容。
 * 可用于[使用内容片段时的页面编辑器](/help/sites-authoring/content-fragments.md)。
 * 中间内容可以添加到任何片段中，其中只有一个元素可见。
 * 关联内容的使用方式，以及相应浏览器中的资源和/或组件。
