@@ -21,7 +21,7 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: efd3c8e390cdbb5b5cc526906f7a2d756a978c21
 workflow-type: tm+mt
 source-wordcount: '1909'
 ht-degree: 92%
@@ -51,7 +51,6 @@ Adobe 持续评估产品功能，并在长期演进中不断重塑或替换旧�
 | 区域 | 专题 | 替换 | 版本（SP） |
 |---|---|---|---|
 | Sites | AEM Assets REST API 中的内容片段支持 | AEM 6.5 LTS SP2 为内容片段和模型管理提供了现代化的 OpenAPI，因此 AEM Assets REST API 中的旧版内容片段支持端点已弃用。<br>Adobe 打算在生命寿命结束公告之前保持这些旧版端点可用。 Adobe 不计划为已弃用的端点提供进一步的增强功能。 | 6.5.24 |
-| Sites | 内容片段文本摘要 | 没有替代功能可用。 | |
 | Sites | [SPA 编辑器](/help/sites-developing/spa-editor-deprecation.md) | 针对 Headless 用例，请使用[通用编辑器](/help/sites-developing/universal-editor/introduction.md)进行可视化编辑，或使用[内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)进行基于表单的编辑。 | 6.5.23 |
 | Sites | **Adobe AEM 托管的轮询配置**&#x200B;服务：`com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | **Adobe AEM Analytics 报告 Sling 导入器**&#x200B;服务。 参见《连接到 Adobe Analytics 并创建框架》——[配置导入间隔](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Screens | Adobe Experience Manager（AEM）中的 ActiveMQ。 ActiveMQ 曾用于两个 AEM 发布实例之间的通信。 | Adobe 建议客户现在改为使用负载均衡器。 | 6.5.18.0 |
@@ -87,6 +86,7 @@ Adobe 持续评估产品功能，并在长期演进中不断重塑或替换旧�
 
 | 区域 | 专题 | 替换 | 版本（SP） |
 |--- |--- |--- |--- |
+| Sites | 内容片段文本摘要 | 没有替代功能可用。 | 6.5.26.0 |
 | Commerce | AEM CIF Classic 已移除。 | 您应迁移至 [AEM CIF](/help/commerce/cif/migration.md)。 如仍需使用 CIF Classic，Adobe 创建了一份兼容包，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)。 | 6.5.22.0 |
 | 与 [!DNL Experience Cloud] 集成 | 您可以通过 [!DNL Adobe I/O] 进行配置，将资产与 [!DNL Experience Cloud] 同步。 [!DNL Adobe Experience Cloud] 之前称为 [!DNL Adobe Experience Cloud]。 | 如有任何问题，请[联系 Adobe 客户支持](https://experienceleague.adobe.com/zh-hans?support-solution=General#support)。 |  |
 | Analytics Activity Map | AEM 中包含的 Activity Map 版本。 | 由于 Adobe Analytics API 的安全性更改，AEM 内置的 Activity Map 版本已无法继续使用。 请使用 [Adobe Analytics 提供的 ActivityMap 插件](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=zh-Hans)。 |  |
