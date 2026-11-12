@@ -365,7 +365,7 @@ Service Pack 26的主要功能亮点包括：
 
 #### 平台{#foundation-platform-6526}
 
-* AEM登录页面页脚中的帮助链接现在会打开一个工作页面。 以前，该链接指向的marketing.adobe.com URL不再存在。 页脚配置现在使用[Adobe Experience Manager文档](https://experienceleague.adobe.com/en/docs/experience-manager) URL。 (NPR-44388)
+* AEM登录页面页脚中的帮助链接现在会打开一个工作页面。 以前，该链接指向的marketing.adobe.com URL不再存在。 页脚配置现在使用[Adobe Experience Manager文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager) URL。 (NPR-44388)
 * 增强：AEM发送电子邮件时，某个客户请求使用Microsoft Graph API作为SMTP的替代方案。 该票证已解析为重复，因为另一个票证已实施图形API流。 带OAuth 2.0的SMTP仍然适用于需要离开SMTP基本身份验证的客户。 (GRANITE-57478)
 
 * 在&#x200B;**工具** > **常规** > **配置**&#x200B;浏览器中，“有效权限”对话框中的字符串现在正确对齐。 以前，在您选择文件夹、单击“属性”并单击“有效权限”后，系统会显示一个乱排的字符串。 更新后的布局规则可恢复对齐方式。 (CQ-4359166)
@@ -637,11 +637,11 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 这些网站仅对客户开放。 如果您已是客户并需要访问权限，请联系您的 Adobe 客户经理。
 
 * [从 licensing.adobe.com 下载产品](https://licensing.adobe.com/)
-* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
+* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
 
