@@ -23,10 +23,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: d777049ff8873ab60b286ec268fd544dc61fb038
+source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
 workflow-type: tm+mt
-source-wordcount: '7172'
-ht-degree: 16%
+source-wordcount: '7273'
+ht-degree: 15%
 ---
 # [!DNL Adobe Experience Manager]6.5 最新服务包发行说明 {#aem-service-pack-release-notes}
 
@@ -365,7 +365,7 @@ Service Pack 26的主要功能亮点包括：
 
 #### 平台{#foundation-platform-6526}
 
-* AEM登录页面页脚中的帮助链接现在会打开一个工作页面。 以前，该链接指向的marketing.adobe.com URL不再存在。 页脚配置现在使用[Adobe Experience Manager文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager) URL。 (NPR-44388)
+* AEM登录页面页脚中的帮助链接现在会打开一个工作页面。 以前，该链接指向的marketing.adobe.com URL不再存在。 页脚配置现在使用[Adobe Experience Manager文档](https://experienceleague.adobe.com/en/docs/experience-manager) URL。 (NPR-44388)
 * 增强：AEM发送电子邮件时，某个客户请求使用Microsoft Graph API作为SMTP的替代方案。 该票证已解析为重复，因为另一个票证已实施图形API流。 带OAuth 2.0的SMTP仍然适用于需要离开SMTP基本身份验证的客户。 (GRANITE-57478)
 
 * 在&#x200B;**工具** > **常规** > **配置**&#x200B;浏览器中，“有效权限”对话框中的字符串现在正确对齐。 以前，在您选择文件夹、单击“属性”并单击“有效权限”后，系统会显示一个乱排的字符串。 更新后的布局规则可恢复对齐方式。 (CQ-4359166)
@@ -428,7 +428,7 @@ Service Pack 26的主要功能亮点包括：
 
 >[!NOTE]
 >
->在安装服务包过程中，包管理器 UI 中的对话框有时会意外退出。 Adobe建议您等待错误日志停止更改后再访问部署。 等待与卸载更新程序捆绑包相关的特定日志，然后确认安装成功。 此问题发生在[!DNL Safari]浏览器中，但有时也发生在任何浏览器中。
+>在安装Service Pack期间，包管理器UI上的对话框有时会关闭。 Adobe建议您等待错误日志停止更改后再访问部署。 等待与卸载更新程序捆绑包相关的特定日志，然后确认安装成功。 此问题发生在[!DNL Safari]浏览器中，但有时也发生在任何浏览器中。
 
 **自动安装**
 
@@ -508,7 +508,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -594,13 +594,9 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 ### AEM Sites 已知问题 {#known-issues-aem-sites-6526}
 
-<!--
-* Known issue with a hotfix available for AEM Foundation {#known-issue-foundation-hotfix-6526}
+* **适用于AEM Foundation的修补程序的已知问题**
 
-  After you upgrade from an earlier service pack to Experience Manager 6.5.26.0, the OSGi version ordering for CRXDE Lite can prevent Experience Manager from selecting the intended bundle. An earlier service pack contains a higher CRXDE Lite version than the artifact that Service Pack 26 includes (`com.adobe.granite.crxde-lite-1.1.44-CQ651-B00024`).
-  
-  To resolve this issue, download and install the hotfix [cq-6.5.26-hotfix-GRANITE-76725.zip](https://artifactory.corp.adobe.com/ui/native/maven-aem-release-local/com/adobe/cq/hotfix/cq-6.5.26-hotfix-GRANITE-76725/1.0/cq-6.5.26-hotfix-GRANITE-76725.zip). The hotfix updates CRXDE Lite to `com.adobe.granite.crxde-lite-1.1.44-CQ651-B0026`, and it contains a version change only, with no code or functional changes. (GRANITE-76725)
--->
+  从早期的Service Pack升级到Experience Manager 6.5.26.0后，CRXDE Lite捆绑包版本排序会阻止Experience Manager选择所需的捆绑包。 要更正版本订购，请安装Service Pack 26，然后从Software Distribution下载并安装修补程序[`CRXDE Lite hotfix GRANITE-76725`](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq660%2Fhotfixes%2Fgranite-76725%2Fcq-6.5.26-hotfix-GRANITE-76725-1.0.zip)。 该修补程序是仅用于版本的更新。 它不包含代码或功能更改。 (GRANITE-76725)
 
 * 内容片段预览在处理大型片段树时因 DoS 防护而失败。 请参阅[关于默认 GraphQL 查询执行器配置选项的知识库文章](https://experienceleague.adobe.com/zh-hans/docs/experience-cloud-kcs/kbarticles/ka-23945)（SITES-17934）
 
@@ -637,11 +633,11 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 这些网站仅对客户开放。 如果您已是客户并需要访问权限，请联系您的 Adobe 客户经理。
 
 * [从 licensing.adobe.com 下载产品](https://licensing.adobe.com/)
-* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
+* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
 
