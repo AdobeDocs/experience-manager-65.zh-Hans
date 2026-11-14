@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 56b13809475a59f188750b86503e316e69171fe1
+source-git-commit: b910e5ac8537f465d7cab85670de8557c2529a32
 workflow-type: tm+mt
-source-wordcount: '7273'
+source-wordcount: '7369'
 ht-degree: 15%
 ---
 # [!DNL Adobe Experience Manager]6.5 最新服务包发行说明 {#aem-service-pack-release-notes}
@@ -48,7 +48,6 @@ DO NOT DELETE THIS HIDDEN NOTE!      DO NOT DELETE THIS HIDDEN NOTE!
 | 日期 | 2026年11月12日<!-- UPDATE FOR EACH NEW RELEASE --> |
 | 下载 URL | [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-
 <!-- REWRITE AI GENERATED SUMMARY OF NOTES BELOW FOR EACH NEW SERVICE PACK RELEASE -->
 
 Experience Manager 6.5.26.0包括新增功能、客户请求的关键增强功能和错误修复。 此外，还包括基于2019年4月以来推出的6.5基础的辅助功能、本地化、性能、稳定性和安全性改进。
@@ -62,6 +61,13 @@ Service Pack 26的主要功能亮点包括：
 * 可靠性。 修复了经典UI中的发布实例上GraphQL锁争用、MSM转出、富文本编辑器工具栏操作以及页面激活问题。
 * Analytics。 Launch集成在Analytics 1.4于2026年8月31日终止使用之前使用Adobe Analytics 2.0 API。
 
+>[!IMPORTANT]
+>
+>Adobe将为AEM 6.5 LTS提供季度Service Pack，并为支持的Service Pack提供累积安全修复策略以适应此区域的更新频率。
+>
+> 对于经典AEM 6.5上的客户，Service Pack 26提供了连续性，同时通过AEM 6.5 LTS工作流继续提供支持和维护。 标准（2027年2月）和扩展（2028年2月）支持涵盖Service Pack 26，该版本仅接收安全修复。
+>
+>Adobe提供资源以帮助您过渡到AEM 6.5 LTS或AEM as a Cloud Service，并使用最新的AI创新来提高工作效率并优化新受众。
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -87,26 +93,26 @@ Service Pack 26的主要功能亮点包括：
 
 * 页面编辑器中的ContextHub iframe现在具有描述性标题属性。 以前，`contexthub-ui-iframe`元素没有标题，因此屏幕阅读器用户在焦点移至它时无法识别它。 标题现在显示在每个编辑器页面和视图中，包括画布、侧边栏和布局预览。 (SITES-24650)
 * 站点控制台过滤器边栏中的过滤器按钮未在保存的搜索和选择搜索目录字段上方添加可见标签。 审核报告指出，焦点离开按钮、按下某个键或单击该按钮时会显示标签。 测试无法重现行为，因此无需进行更改。 (SITES-24706)
-* 站点控制台应用程序导航中的链接现在更加清晰地脱颖而出。 链接文本符合4.5:1的对比度，但字体粗细和较小尺寸使链接难以查看。 较大的字体粗细和大小使有视觉障碍的用户更容易阅读文本。 (SITES-24723)
+* 站点控制台应用程序导航中的链接现在更加可见。 链接文本符合4.5:1的对比度，但字体粗细和较小尺寸使链接难以查看。 较大的字体粗细和大小使视力不佳的用户更容易阅读文本。 (SITES-24723)
 * 屏幕阅读器不再在“用户首选项”模式中的工具提示内容之前宣告“空白”。 以前，信息图标使用`role="tooltip"`和`aria-labelledby`引用，因此NVDA先读取空标签。 该图标现在使用`role="button"`和`aria-label`个“信息”，并且更改适用于共享该模式的Coral表单组件。 (SITES-24732)
-* 现在，删除模式中的删除按钮符合WCAG 1.4.3的对比度要求4.5:1。 以前，作者选择项目并单击操作工具栏中的“删除”后，红色背景上的白色文本的比率为3.9:1。 较深的按钮颜色使具有视觉障碍的作者能够阅读标签。 (SITES-24772)
+* 现在，删除模式中的删除按钮符合WCAG 1.4.3的对比度要求4.5:1。 以前，作者选择项目并单击操作工具栏中的“删除”后，红色背景上的白色文本的比率为3.9:1。 较深的按钮颜色使视力缺佳的作者能够阅读标签。 (SITES-24772)
 * 站点控制台引用边栏中的引用标题现在使用标题元素而不是`div`。 以前，屏幕阅读器无法朗读文本作为标题，因此用户无法按标题导航。 标题也出现在初始“参照”视图的顶部。 (SITES-24967)
 * 站点控制台过滤器边栏中折叠按钮的焦点指示器现在符合WCAG 1.4.11的3:1对比度要求。 以前，蓝色指示器在背景中显示的是2.3:1的比率，这使得键盘用户很难找到标记折叠按钮。 更新后的颜色为键盘用户提供了清晰的焦点提示。 (SITES-24986)
 * 站点控制台过滤器边栏中单选按钮的焦点指示器现在符合WCAG 1.4.11的3:1对比度要求。 以前，淡蓝色指示器在背景中的比率为1.7:1。 键盘用户现在可以在修改日期折叠面板中跟踪其位置。 (SITES-24987)
 * 页面编辑器侧边栏中路径和标记字段旁边的“选择”按钮不再使用复选框图标。 以前，该图标建议进行切换，但激活按钮会打开一个包含树目录的模式窗口。 现在，“选择”按钮可正确传达其功能，同样适用于Image和Teaser模式。 (SITES-25210)
 * 屏幕阅读器现在跳过页面编辑器侧边栏中资产的缩略图图像。 以前，每个图像都带有与可见资源名称重复的替换文本，因此用户会听到两次相同的文本。 空`alt`属性将图像标记为装饰性并将名称保留在卡片标题中。 (SITES-25213)
 * 屏幕阅读器将侧边栏“组件”列表识别为列表。 审核报告这些项目为不相关的元素，但测试确认标记使用列表元素和列表项目。 无需更改代码。 (SITES-25214)
-* 页面编辑器侧边栏中组件的信息图标更大，更易于查看。 以前，这些图标使用大约12像素的超小尺寸，视觉障碍的用户很难看到这些尺寸。 图标现在使用中等大小。(SITES-25217)
-* 注释模式中样本按钮上的焦点指示器现在从按钮中脱颖而出。 以前，指示器与样本颜色相匹配。 这使得键盘用户难以查看哪个按钮具有焦点。 偏移可以使指示器与背景有足够的对比度，并使其保持清晰可见。 (SITES-25253)
+* 页面编辑器侧边栏中组件的信息图标更大，更易于查看。 以前，这些图标使用大约12像素的超小尺寸，视力不佳的用户很难看到这种尺寸。 图标现在使用中等大小。(SITES-25217)
+* 注释模式中样本按钮上的焦点指示器现在与按钮有明显区别。 以前，指示器与样本颜色相匹配。 这使得键盘用户难以查看哪个按钮具有焦点。 偏移可以使指示器与背景有足够的对比度，并使其保持清晰可见。 (SITES-25253)
 * 时间扭曲模式中的“日期”字段不再包含`aria-haspopup="dialog"`。 以前，屏幕阅读器会宣布该字段会打开一个对话框，即使它没有打开。 删除属性可为屏幕阅读器用户提供准确的信息。 (SITES-25263)
 * “人口统计”工具栏中的文本标签（如“推荐”）现在符合WCAG 1.4.3的4.5:1对比度要求。 以前，在预览模式下，深灰色背景中的灰色文本的比例为2.8:1。 较深或较浅的文本（取决于背景）使每个标签都可读。 (SITES-25307)
 * “人口统计”工具栏中Commerce、角色和设备按钮上的焦点指示器现在符合WCAG 1.4.11的3:1对比度要求。 以前，指示器显示与工具栏背景的比率为1.9:1。 键盘用户现在可以跟踪其位置。 (SITES-25308)
-* 现在，作者在“人口统计”工具栏文本字段中键入的文本符合WCAG 1.4.3的对比度要求4.5:1。 以前，灰色背景上的白色文本在字段中的比例为2.9:1，例如预览模式下的用户档案下拉列表`displayName`字段。 更新后的颜色使有视觉障碍的作者能够读取键入的值。 (SITES-25318)
+* 现在，作者在“人口统计”工具栏文本字段中键入的文本符合WCAG 1.4.3的对比度要求4.5:1。 以前，灰色背景上的白色文本在字段中的比例为2.9:1，例如预览模式下的用户档案下拉列表`displayName`字段。 更新后的颜色使视力缺佳的作者能够读取键入的值。 (SITES-25318)
 * 屏幕阅读器现在会在焦点进入Teaser、图像和轮播对话框中的复选框时阅读描述工具提示。 以前，文本与复选框缺乏程序化关联，因此用户无法听到指令。 `aria-describedby`属性现在将每个复选框链接到其描述。 (SITES-25364)
 * 屏幕阅读器现在会朗读在富文本编辑器中活动的段落格式按钮。 以前，从列表中选择一个选项不会为辅助型技术指明当前的选择。 活动按钮现在带有`aria-current="true"`，而活动超链接目标选项带有`aria-selected="true"`。 (SITES-25367)
-* 现在，站点控制台列表视图的表标题中的排序按钮符合WCAG 1.4.11的3:1对比度要求。 以前，浅灰色图标与标题背景的比例为1.5:1。 较深的图标颜色使按钮对有视觉障碍的作者可见。 (SITES-25372)
+* 现在，站点控制台列表视图的表标题中的排序按钮符合WCAG 1.4.11的3:1对比度要求。 以前，浅灰色图标与标题背景的比例为1.5:1。 较深的图标颜色使低视力作者能够看到这些按钮。 (SITES-25372)
 * 当焦点移至过滤器字段时，页面编辑器侧边栏中的Assets选项卡不再重新加载。 以前，跳转到空字段会触发重新加载，并且屏幕阅读器每次都会宣布加载消息。 现在，只有在更改筛选器值并按Enter键后，选项卡才会重新加载。 (SITES-25377)
-* 注释模式中选择的样本图标现在符合WCAG 1.4.11对比度要求3:1。 以前，白色复选标记显示与黄色、橙色和绿色色板的比例仅为1.58:1。 更新的图标为具有视觉障碍的作者提供了明确的指示器。 (SITES-25523)
+* 注释模式中选择的样本图标现在符合WCAG 1.4.11对比度要求3:1。 以前，白色复选标记显示与黄色、橙色和绿色色板的比例仅为1.58:1。 更新的图标为视力不佳的作者提供了明确的指示器。 (SITES-25523)
 * 页面编辑器侧面板中的“组件”列表不再使用键盘焦点。 键盘用户使用内容窗口中的控件选择和移动组件，因此侧面板列表重复了此功能。 组件过滤器下的注释会通知键盘用户从何处查找控件。 (SITES-40752)
 
 
@@ -347,7 +353,7 @@ Service Pack 26的主要功能亮点包括：
 #### Granite{#foundation-granite-6526}
 
 * Assets Omnisearch筛选器中的“内容片段模型”占位符现在显示为空。 以前，在转到Assets、单击过滤器或搜索图标，并展开内容片段模型字段后，文本会被截断。 更新后的样式为占位符提供了足够的空间。 (GRANITE-54387)
-* 现在，将指针移到外壳标题的链接上时，该标题中的帮助下拉列表将保持打开状态。 以前，当指针进入“文档”、“社区”和“支持”链接的列表时，下拉菜单就会关闭，导致链接无法通过鼠标访问。 焦点处理程序现在将其检查延迟到下一个动画帧，因此悬停不再计为焦点离开菜单。 (GRANITE-70978)
+* 现在，将指针移到外壳标题的链接上时，该标题中的帮助下拉列表将保持打开状态。 以前，当指针进入“文档”、“社区”和“支持”链接的列表时，下拉菜单就会关闭，导致链接无法通过鼠标访问。 焦点处理程序现在将其检查延迟到下一个动画帧，因此悬停不再计为退出菜单的焦点。 (GRANITE-70978)
 
 <!--
 #### Jetty{#foundation-jetty-6526}
@@ -365,7 +371,7 @@ Service Pack 26的主要功能亮点包括：
 
 #### 平台{#foundation-platform-6526}
 
-* AEM登录页面页脚中的帮助链接现在会打开一个工作页面。 以前，该链接指向的marketing.adobe.com URL不再存在。 页脚配置现在使用[Adobe Experience Manager文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager) URL。 (NPR-44388)
+* AEM登录页面页脚中的帮助链接现在会打开一个工作页面。 以前，该链接指向的marketing.adobe.com URL不再存在。 页脚配置现在使用[Adobe Experience Manager文档](https://experienceleague.adobe.com/en/docs/experience-manager) URL。 (NPR-44388)
 * 增强：AEM发送电子邮件时，某个客户请求使用Microsoft Graph API作为SMTP的替代方案。 该票证已解析为重复，因为另一个票证已实施图形API流。 带OAuth 2.0的SMTP仍然适用于需要离开SMTP基本身份验证的客户。 (GRANITE-57478)
 
 * 在&#x200B;**工具** > **常规** > **配置**&#x200B;浏览器中，“有效权限”对话框中的字符串现在正确对齐。 以前，在您选择文件夹、单击“属性”并单击“有效权限”后，系统会显示一个乱排的字符串。 更新后的布局规则可恢复对齐方式。 (CQ-4359166)
@@ -404,7 +410,7 @@ Service Pack 26的主要功能亮点包括：
 
 * [!DNL Experience Manager] 6.5.26.0需要[!DNL Experience Manager] 6.5。 有关详细说明，请参阅[升级文档](/help/sites-deploying/upgrade.md)。<!-- UPDATE FOR EACH NEW RELEASE -->
 * 服务包可通过 Adobe [软件分发](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.26.0.zip)下载。
-* 在使用 MongoDB 且包含多个实例的部署中，请在其中一个作者实例上使用包管理器安装 [!DNL Experience Manager] 6.5.26.0。<!-- UPDATE FOR EACH NEW RELEASE -->
+* 在具有MongoDB和多个实例的部署中，使用包管理器在其中一个创作实例上安装[!DNL Experience Manager] 6.5.26.0。<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
@@ -428,7 +434,7 @@ Service Pack 26的主要功能亮点包括：
 
 >[!NOTE]
 >
->在安装Service Pack期间，包管理器UI上的对话框有时会关闭。 Adobe建议您等待错误日志停止更改后再访问部署。 等待与卸载更新程序捆绑包相关的特定日志，然后确认安装成功。 此问题发生在[!DNL Safari]浏览器中，但有时也发生在任何浏览器中。
+>在安装Service Pack期间，包管理器UI上的对话框有时会关闭。 Adobe建议您等待错误日志停止更新后再访问部署。 等待与卸载更新程序捆绑包相关的特定日志，然后确认安装成功。 此问题发生在[!DNL Safari]浏览器中，但有时也发生在任何浏览器中。
 
 **自动安装**
 
@@ -488,7 +494,7 @@ Service Pack 26的主要功能亮点包括：
 
 >[!NOTE]
 >
->UberJar 和其他相关工件现已发布在 Maven Central 存储库，而非 Adobe 公共 Maven 存储库（`repo.adobe.com`）。 主 UberJar 文件已重命名为 `uber-jar-<version>.jar`。 因此，在 `dependency` 标记中不再包含以 `apis` 为值的 `classifier`。
+>UberJar 和其他相关工件现已发布在 Maven Central 存储库，而非 Adobe 公共 Maven 存储库（`repo.adobe.com`）。 主 UberJar 文件已重命名为 `uber-jar-<version>.jar`。 `dependency`标记没有值为`apis`的`classifier`。
 
 
 
@@ -508,7 +514,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -564,7 +570,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
   在修改索引定义后，需要重新索引（`reindex` = `true`）。
 
-  执行这些步骤后，GraphQL查询的执行速度得到了改进。
+  执行这些步骤后，GraphQL查询的执行速度会更快。
 
 * 在尝试移动、删除或发布内容片段、网站或页面时，获取内容片段引用时会出现问题。 后台查询失败；功能无法正常工作。
 为确保该功能正常运行，必须将以下属性添加到索引定义节点 `/oak:index/damAssetLucene`（无需重新索引）：
@@ -588,7 +594,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
   * 通过 Shoppable Banner 查看器预览资产时，Dynamic Media 交互式图像中的交互热点不可见。
   * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`：等待完成取消注册的注册变更时超时。
 
-* 从 AEM 6.5.15 开始，由 `org.apache.servicemix.bundles.rhino` 捆绑包提供的 Rhino JavaScript 引擎引入了新的提升行为。 使用严格模式（`use strict;`）的脚本必须声明正确的变量。 否则脚本将无法运行，并会抛出运行时错误。
+* 从 AEM 6.5.15 开始，由 `org.apache.servicemix.bundles.rhino` 捆绑包提供的 Rhino JavaScript 引擎引入了新的提升行为。 使用严格模式（`use strict;`）的脚本必须声明正确的变量。 否则，它们将不会运行，并最终引发运行时错误。
 
 * 通过官方更新包安装与标记相关的标准内容会将`/content/cq:tags`节点的languages属性重置为默认值。 此操作适用于服务包、安全服务包、扩展功能包、累积功能包、补丁等。 因此，在安装之前，必须将其添加到属性。
 
@@ -633,11 +639,11 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 这些网站仅对客户开放。 如果您已是客户并需要访问权限，请联系您的 Adobe 客户经理。
 
 * [从 licensing.adobe.com 下载产品](https://licensing.adobe.com/)
-* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
+* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
 
