@@ -23,10 +23,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 383a6624329826101fc85861ee31d34ae7e59d71
+source-git-commit: 3e77f49e02762b555aa7acc821a8307daf2b27df
 workflow-type: tm+mt
-source-wordcount: '7975'
-ht-degree: 14%
+source-wordcount: '7369'
+ht-degree: 15%
 ---
 # [!DNL Adobe Experience Manager]6.5 最新服务包发行说明 {#aem-service-pack-release-notes}
 
@@ -99,7 +99,7 @@ Service Pack 26的主要功能亮点包括：
 * 站点控制台引用边栏中的引用标题现在使用标题元素而不是`div`。 以前，屏幕阅读器无法朗读文本作为标题，因此用户无法按标题导航。 标题也出现在初始“参照”视图的顶部。 (SITES-24967)
 * 站点控制台过滤器边栏中折叠按钮的焦点指示器现在符合WCAG 1.4.11的3:1对比度要求。 以前，蓝色指示器在背景中显示的是2.3:1的比率，这使得键盘用户很难找到标记折叠按钮。 更新后的颜色为键盘用户提供了清晰的焦点提示。 (SITES-24986)
 * 站点控制台过滤器边栏中单选按钮的焦点指示器现在符合WCAG 1.4.11的3:1对比度要求。 以前，淡蓝色指示器在背景中的比率为1.7:1。 键盘用户现在可以在修改日期折叠面板中跟踪其位置。 (SITES-24987)
-* “页面编辑器”侧边栏中“路径”和“标记”字段旁边的Select按钮不再使用复选框图标。 以前，该图标建议进行切换，但激活按钮会打开一个包含树目录的模式窗口。 Select按钮现在可正确传达其功能，这一点同样适用于Image和Teaser模式。 (SITES-25210)
+* 页面编辑器侧边栏中路径和标记字段旁边的“选择”按钮不再使用复选框图标。 以前，该图标建议进行切换，但激活按钮会打开一个包含树目录的模式窗口。 现在，“选择”按钮可正确传达其功能，同样适用于Image和Teaser模式。 (SITES-25210)
 * 屏幕阅读器现在跳过页面编辑器侧边栏中资产的缩略图图像。 以前，每个图像都带有与可见资源名称重复的替换文本，因此用户会听到两次相同的文本。 空`alt`属性将图像标记为装饰性并将名称保留在卡片标题中。 (SITES-25213)
 * 屏幕阅读器将侧边栏“组件”列表识别为列表。 审核报告这些项目为不相关的元素，但测试确认标记使用列表元素和列表项目。 无需更改代码。 (SITES-25214)
 * 页面编辑器侧边栏中组件的信息图标更大，更易于查看。 以前，这些图标使用大约12像素的超小尺寸，视力不佳的用户很难看到这种尺寸。 图标现在使用中等大小。(SITES-25217)
@@ -312,24 +312,27 @@ Service Pack 26的主要功能亮点包括：
 ### [!DNL Forms]{#forms-6526}
 
 * 新功能：支持富文本中的列表上的辅助功能标记。 以前，仅当模板遵循特定结构时，辅助功能标记树中才会显示列表标记。 该请求作为提供该功能的相关票证的副本关闭。 (LC-3923202)
-* 增强：AEM Forms添加了一个运行时API，用于为每个请求选择旧版或默认的可扩展标记语言(XML)数据导出模式。 以前，只有`-Dcom.adobe.fd.forms.export.legacy` Java虚拟机(JVM)参数可控制模式，以及应用于服务器上每次导出的设置。 当请求不使用API时，JVM参数会继续控制该行为。 （FORMS-23114和FORMS-22983）
-* 用不可见的认证签名认证的便携式文档格式(PDF)文件在Adobe Acrobat中不再缓慢打开。 以前仅应用于可见的认证签名的修复现在也涵盖了不可见的认证签名。 (FORMS-25171)
-* 在基于基础组件的自适应Forms中，文件附件组件现在会根据上传时允许的文件类型列表来检查文件。 以前，即使列表仅允许`application/pdf`、`image/jpeg`和`image/png`，文件（如`.xsd`）也通过上载步骤。 表单仅在提交时拒绝这些请求，并发出一般不支持的文件警报。 (FORMS-24295)
+
+<!--
+* Enhancement: AEM Forms adds a runtime API that selects the legacy or default Extensible Markup Language (XML) data export mode for each request. Previously, only the `-Dcom.adobe.fd.forms.export.legacy` Java Virtual Machine (JVM) parameter controlled the mode, and the setting applied to every export on the server. When a request does not use the API, the JVM parameter continues to control the behavior. (FORMS-23114, FORMS-22983)
+* Portable Document Format (PDF) files certified with an invisible certification signature no longer open slowly in Adobe Acrobat. The fix that earlier applied only to visible certification signatures now also covers invisible ones. (FORMS-25171)
+* In Foundation Components based Adaptive Forms, the File Attachment component now checks files against the allowed file types list at upload. Previously, files such as `.xsd` passed the upload step even when the list allowed only `application/pdf`, `image/jpeg`, and `image/png`. The form rejected them only on submit with a generic unsupported file alert. (FORMS-24295)
 
 #### Forms JEE {#forms-jee-6526}
 
-* 增强： AEM Forms Document Security添加了对Adobe Acrobat (PPKLite)的密钥（Web身份验证或WebAuthn）支持。 (FORMS-21762)
-* 增强： IBM Content Manager连接器现在支持IBM Content Manager 8.7，因为IBM已终止对版本8.5和8.6的支持。 (FORMS-6827)
-* 在Windows上，将某些可移植文档格式(PDF)文件转换为图像（如TIFF）时，ConvertPDF服务不再挂起。 (FORMS-25796)
-* 安全断言标记语言(SAML)身份验证现在使用来自上载的身份提供方(IdP)元数据的证书来验证断言签名。 当IdP证书更改并且元数据未更新时，身份验证失败。 (FORMS-24679)
-* 升级到AEM Forms Service Pack 6.5.24.0后，`server.log`和`error.log`不再填充`[XMLSecurity]`警告消息，例如“安全解析器工厂创建失败，创建的任何XML解析器都可能易受基于XML的攻击”。 消息每秒出现多次，即使在空闲服务器上也是如此，并且会快速占用磁盘空间。 (FORMS-23717)
-* JEE端的组件现在打包了Apache POI 5.4.0。 以前，某些捆绑包中仍包含Apache POI 3.17和3.9，在升级到AEM Forms Service Pack 6.5.24.0后，这两个版本会标记安全扫描。 (FORMS-23678)
+* Enhancement: AEM Forms Document Security adds passkey (Web Authentication, or WebAuthn) support for Adobe Acrobat (PPKLite). (FORMS-21762)
+* Enhancement: The IBM Content Manager connector now supports IBM Content Manager 8.7, because IBM ended support for versions 8.5 and 8.6. (FORMS-6827)
+* On Windows, the ConvertPDF service no longer hangs when converting certain Portable Document Format (PDF) files to images such as TIFF. (FORMS-25796)
+* Security Assertion Markup Language (SAML) authentication now validates assertion signatures with the certificate from the uploaded identity provider (IdP) metadata. Authentication fails when the IdP certificate changes and the metadata is not updated. (FORMS-24679)
+* After upgrading to AEM Forms Service Pack 6.5.24.0, `server.log` and `error.log` no longer fill with `[XMLSecurity]` WARN messages such as "Secure parser factory creation failed, any XML parser created may be vulnerable to XML-based exploits." The messages appeared several times per second, even on idle servers, and consumed disk space quickly. (FORMS-23717)
+* Components on the JEE side now package Apache POI 5.4.0. Previously, some bundles still included Apache POI 3.17 and 3.9, which security scans flagged after upgrading to AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
 
 #### Forms Designer {#forms-designer-6526}
 
-* 增强：Forms Designer和输出服务在静态交互式和平面PDF文件中生成从标题级别1到标题级别6辅助功能的嵌套可移植文档格式(PDF)书签。 标题级别1变为顶级书签，不包含作者之前在Adobe Acrobat中手动移除的空条目或重复条目。 要恢复以前的书签行为，请将`<behaviorOverride>patch-LC-3922369:1</behaviorOverride>`添加到自定义XCI文件。 （LC-3923490和LC-3922369）
-* 增强：现在，在静态交互式或平面可移植文档格式(PDF)文件中选择书签会将匹配的标题滚动到页面顶部。 （LC-3923489和LC-3923289）
-* 增强： Forms Designer可以将书签`extras`元素添加到使用“标题级别1”到“标题级别6”辅助功能的文本对象。 以前，作者必须在XML Source中为每个标题手动添加`<extras name="bookmark">`以生成书签。 (FORMS-24361)
+* Enhancement: Forms Designer and Output Service generate nested Portable Document Format (PDF) bookmarks from Heading Level 1 through Heading Level 6 accessibility roles in static interactive and flat PDF files. Heading Level 1 becomes the top-level bookmark, without the empty or duplicate entry that authors previously removed manually in Adobe Acrobat. To restore the earlier bookmark behavior, add `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` to a custom XCI file. (LC-3923490, LC-3922369)
+* Enhancement: Selecting a bookmark in a static interactive or flat Portable Document Format (PDF) file now scrolls the matching heading to the top of the page. (LC-3923489, LC-3923289)
+* Enhancement: Forms Designer can add the bookmark `extras` element to text objects that use a Heading Level 1 through Heading Level 6 accessibility role. Previously, authors had to add `<extras name="bookmark">` manually in XML Source for each heading to generate bookmarks. (FORMS-24361)
+-->
 
 
 ### 基础 {#foundation-6526}
@@ -382,7 +385,7 @@ Service Pack 26的主要功能亮点包括：
 
 #### 平台{#foundation-platform-6526}
 
-* AEM登录页面页脚中的帮助链接现在会打开一个工作页面。 以前，该链接指向的marketing.adobe.com URL不再存在。 页脚配置现在使用[Adobe Experience Manager文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager) URL。 (NPR-44388)
+* AEM登录页面页脚中的帮助链接现在会打开一个工作页面。 以前，该链接指向的marketing.adobe.com URL不再存在。 页脚配置现在使用[Adobe Experience Manager文档](https://experienceleague.adobe.com/en/docs/experience-manager) URL。 (NPR-44388)
 * 增强：AEM发送电子邮件时，某个客户请求使用Microsoft Graph API作为SMTP的替代方案。 该票证已解析为重复，因为另一个票证已实施图形API流。 带OAuth 2.0的SMTP仍然适用于需要离开SMTP基本身份验证的客户。 (GRANITE-57478)
 
 * 在&#x200B;**工具** > **常规** > **配置**&#x200B;浏览器中，“有效权限”对话框中的字符串现在正确对齐。 以前，在您选择文件夹、单击“属性”并单击“有效权限”后，系统会显示一个乱排的字符串。 更新后的布局规则可恢复对齐方式。 (CQ-4359166)
@@ -525,7 +528,7 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 现在管理 AEM 中的 Headless 内容时首选以下编辑器：
 
-* [Universal Editor &#x200B;](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
+* [Universal Editor ](/help/sites-developing/universal-editor/introduction.md)，用于可视化编辑。
 * [内容片段编辑器](/help/sites-developing/universal-editor/introduction.md)，用于以基于表单的方法编辑。
 
 ## 已知问题{#known-issues}
@@ -623,19 +626,21 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 * 将经过数字签名的PDF附加到AEM Forms JEE Workspace中的任务后，上传状态将持续停滞或出现“文件无效”错误而失败。 因此，无法将较大的已签名PDF附件添加到任务中。 此问题已在更高版本中修复。 有关该版本的修补程序，请与Adobe支持部门联系。 (FORMS-28517)
 
-* 如修补程序135中所述，在IBM WebSphere上，通过AEM Forms Workbench中的“调用Web服务”活动加载Web服务描述语言(WSDL)文件可能会因AEM Forms JEE 6.5.26.0 (Service Pack 26)而失败。 相同的操作在JBoss上同样有效。 (FORMS-29972)
+<!--
+* On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
 
-  **解决方法：**&#x200B;在承载AEM Forms JEE的WebSphere应用程序服务器上添加Java虚拟机(JVM)参数。 这是服务器端设置，而不是Workbench客户端设置。
+  **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
 
-  1. 为托管AEM Forms JEE的WebSphere应用程序服务器打开JVM配置。
-  1. 将以下参数添加到服务器JVM参数。 保留现有参数。
+  1. Open the JVM configuration for the WebSphere application server that hosts AEM Forms JEE.
+  1. Add the following argument to the server JVM arguments. Keep the existing arguments.
 
      ```shell
      -Dcom.adobe.idp.dsc.webservice.loadSOAPClasses=true
      ```
 
-  1. 保存配置，然后重新启动WebSphere应用程序服务器，使参数生效。
-  1. 从AEM Forms Workbench重新连接，然后再次在调用Web服务活动中加载WSDL。
+  1. Save the configuration, and then restart the WebSphere application server so that the argument takes effect.
+  1. Reconnect from AEM Forms Workbench, and then load the WSDL in the Invoke Web Service activity again.
+-->
 
 #### 可用修补程序的已知问题 {#aem-forms-issues-with-hotfixes}
 
@@ -664,11 +669,11 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 这些网站仅对客户开放。 如果您已是客户并需要访问权限，请联系您的 Adobe 客户经理。
 
 * [从 licensing.adobe.com 下载产品](https://licensing.adobe.com/)
-* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/zh-hans/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
+* [联系 Adobe 客户支持部门](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-customer-support-experience#)。
 
 >[!MORELIKETHIS]
 >
->* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/cn/products/experience-manager/adobe-experience-manager.html)
+>* [[!DNL Experience Manager] 产品页面](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 文档](https://experienceleague.adobe.com/zh-hans/docs/experience-manager-65)
 >* [订阅 Adobe 产品更新早知道](https://www.adobe.com/cn/subscription/priority-product-update.html)
 
