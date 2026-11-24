@@ -22,9 +22,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 1880cdd6fa659c17e8efb3854b9b9441ff22c2b2
+source-git-commit: 1695a13865ac21e7827e36bccb67a2f877c42c1a
 workflow-type: tm+mt
-source-wordcount: '10825'
+source-wordcount: '11350'
 ht-degree: 2%
 ---
 # 安装和配置文档服务 {#installing-and-configuring-document-services}
@@ -296,6 +296,10 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 
 这些步骤将通过对Adobe Admin Console的&#x200B;*系统管理员*&#x200B;访问权限来执行。
 
+>[!NOTE]
+>
+>FRL包通常在年度（1年）订阅续订周期内运行。 当许可证到期需要续订时，请创建新的FRL包，从AEM Forms服务器中删除过期的许可证，然后部署和激活新包。 有关详细步骤，请参阅[Adobe Acrobat许可证在AEM Forms Server](#troubleshooting)上已过期或已停用。
+
 ###### 步骤1：登录到Adobe Admin Console
 
 1. 打开Web浏览器并导航到[Adobe Admin Console](https://adminconsole.adobe.com/)
@@ -445,6 +449,10 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 ##### 准备FRL包(Adobe Admin Console)
 
 这些步骤将通过对Adobe Admin Console的&#x200B;*系统管理员*&#x200B;访问权限来执行。
+
+>[!NOTE]
+>
+>FRL包通常在年度（1年）订阅续订周期内运行。 当许可证到期需要续订时，请创建新的FRL包，从AEM Forms服务器中删除过期的许可证，然后部署和激活新包。 有关详细步骤，请参阅[Adobe Acrobat许可证在AEM Forms Server](#troubleshooting)上已过期或已停用。
 
 ###### 步骤1：登录到Adobe Admin Console
 
@@ -602,6 +610,10 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 
 这些步骤将通过对Adobe Admin Console的&#x200B;*系统管理员*&#x200B;访问权限来执行。
 
+>[!NOTE]
+>
+>FRL包通常在年度（1年）订阅续订周期内运行。 当许可证到期需要续订时，请创建新的FRL包，从AEM Forms服务器中删除过期的许可证，然后部署和激活新包。 有关详细步骤，请参阅[Adobe Acrobat许可证在AEM Forms Server](#troubleshooting)上已过期或已停用。
+
 ###### 步骤1：登录到Adobe Admin Console
 
 1. 打开Web浏览器并导航到[Adobe Admin Console](https://adminconsole.adobe.com/)
@@ -758,6 +770,10 @@ Adobe Acrobat Pro DC for Microsoft Office的安装过程会因您的许可证类
 ##### 准备FRL包(Adobe Admin Console)
 
 这些步骤将通过对Adobe Admin Console的&#x200B;*系统管理员*&#x200B;访问权限来执行。
+
+>[!NOTE]
+>
+>FRL包通常在年度（1年）订阅续订周期内运行。 当许可证到期需要续订时，请创建新的FRL包，从AEM Forms服务器中删除过期的许可证，然后部署和激活新包。 有关详细步骤，请参阅[Adobe Acrobat许可证在AEM Forms Server](#troubleshooting)上已过期或已停用。
 
 ###### 步骤1：登录到Adobe Admin Console
 
@@ -1558,6 +1574,52 @@ Assembler服务依赖于Reader扩展服务、签名服务、Forms服务和输出
 
 +++
 -->
+
++++ AEM Forms Server上的Adobe Acrobat许可证已过期或停用
+
+当AEM Forms Server上Adobe Acrobat的功能限制许可证(FRL)过期或停用时，PDF Generator无法使用Acrobat PDFMaker转换Microsoft® Office文档。 转换回退到OpenOffice，如果未配置OpenOffice，转换将失败，并出现以下错误：
+
+*来自主转换器的错误消息：
+ALC-PDG-010-012-PDFMaker在打印文档时报告错误。*
+
+*来自回退转换器的错误消息：
+ALC-PDG-011-030 — 提交的OpenOffice文档无法转换为PDF。 此系统上未安装OpenOffice，或者环境变量OpenOffice_PATH未设置为正确的路径。*
+
+要解决此问题，请检查许可证状态并重新激活许可证：
+
+1. 以管理员身份登录到AEM Forms服务器，并以管理员身份打开命令提示符。
+1. 导航到解压缩FRL包的目录。 例如，`C:\AcrobatFRL`。
+1. 运行以下命令检查许可证状态：
+
+   ```cmd
+   adobe-licensing-toolkit.exe -l
+   ```
+
+1. 如果许可证已过期，请更换FRL包。 FRL包通常在年度（1年）订阅续订周期内运行。
+   1. 在[Adobe Admin Console](https://adminconsole.adobe.com/)中，创建并下载新的FRL包。 有关详细信息，请参阅[安装Adobe Acrobat Pro DC](#install-adobe-acrobat-pro-dc)中的步骤2到步骤7。
+   1. 运行以下命令删除过期的许可证：
+
+      ```cmd
+      adobe-licensing-toolkit.exe --precondition --uninstall --all
+      ```
+
+      >[!NOTE]
+      >
+      >若要改为清除服务器中的所有许可证数据，请运行`adobe-licensing-toolkit.exe --deactivate --all`。
+
+   1. 将新的FRL包提取到服务器上的某个目录，然后导航到该目录。
+
+1. 运行以下命令以激活许可证。 将`ngl-preconditioning-data.json`替换为FRL包中JSON文件的区分大小写的精确名称。
+
+   ```cmd
+   adobe-licensing-toolkit.exe -p -i -f ngl-preconditioning-data.json
+   ```
+
+1. 打开Adobe Acrobat并安装任何可用的更新。
+1. 重新启动AEM Forms服务器以停止任何正在运行的Acrobat PDFMaker进程。
+1. 将® Office文档转换为PDF，以验证PDF Generator是否使用Acrobat进行转换。
+
++++
 
 +++ 在 Windows 服务器上无法将 Word 或 Excel 文件转化为 PDF
 
