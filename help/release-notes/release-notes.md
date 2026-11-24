@@ -23,10 +23,10 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 3e77f49e02762b555aa7acc821a8307daf2b27df
+source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
 workflow-type: tm+mt
-source-wordcount: '7369'
-ht-degree: 15%
+source-wordcount: '8356'
+ht-degree: 13%
 ---
 # [!DNL Adobe Experience Manager]6.5 最新服务包发行说明 {#aem-service-pack-release-notes}
 
@@ -60,6 +60,9 @@ Service Pack 26的主要功能亮点包括：
 * 本地化。 数十种修复程序可以翻译字符串，并更正站点、Assets、安全和运营中的布局问题。
 * 可靠性。 修复了经典UI中的发布实例上GraphQL锁争用、MSM转出、富文本编辑器工具栏操作以及页面激活问题。
 * Analytics。 Launch集成在Analytics 1.4于2026年8月31日终止使用之前使用Adobe Analytics 2.0 API。
+* Forms辅助功能。 Forms Designer和输出服务通过标题角色生成嵌套的可移植文档格式(PDF)书签，将所选标题滚动到页面顶部，然后为您添加书签`extras`元素。 富文本中的列表也带有辅助功能标记。
+* Forms数据导出。 运行时API为每个请求选择旧版或默认XML数据导出模式，而不是一个服务器范围的Java虚拟机(JVM)设置。
+* Forms基。 Document Security添加了对Adobe Acrobat的密钥(WebAuthn)支持，并且IBM Content Manager连接器支持版本8.7。
 
 >[!IMPORTANT]
 >
@@ -312,27 +315,24 @@ Service Pack 26的主要功能亮点包括：
 ### [!DNL Forms]{#forms-6526}
 
 * 新功能：支持富文本中的列表上的辅助功能标记。 以前，仅当模板遵循特定结构时，辅助功能标记树中才会显示列表标记。 该请求作为提供该功能的相关票证的副本关闭。 (LC-3923202)
-
-<!--
-* Enhancement: AEM Forms adds a runtime API that selects the legacy or default Extensible Markup Language (XML) data export mode for each request. Previously, only the `-Dcom.adobe.fd.forms.export.legacy` Java Virtual Machine (JVM) parameter controlled the mode, and the setting applied to every export on the server. When a request does not use the API, the JVM parameter continues to control the behavior. (FORMS-23114, FORMS-22983)
-* Portable Document Format (PDF) files certified with an invisible certification signature no longer open slowly in Adobe Acrobat. The fix that earlier applied only to visible certification signatures now also covers invisible ones. (FORMS-25171)
-* In Foundation Components based Adaptive Forms, the File Attachment component now checks files against the allowed file types list at upload. Previously, files such as `.xsd` passed the upload step even when the list allowed only `application/pdf`, `image/jpeg`, and `image/png`. The form rejected them only on submit with a generic unsupported file alert. (FORMS-24295)
+* 增强：AEM Forms添加了一个运行时API，用于为每个请求选择旧版或默认的可扩展标记语言(XML)数据导出模式。 以前，只有`-Dcom.adobe.fd.forms.export.legacy` Java虚拟机(JVM)参数可控制模式，以及应用于服务器上每次导出的设置。 当请求不使用API时，JVM参数会继续控制该行为。 （FORMS-23114和FORMS-22983）
+* 用不可见的认证签名认证的便携式文档格式(PDF)文件在Adobe Acrobat中不再缓慢打开。 以前仅应用于可见的认证签名的修复现在也涵盖了不可见的认证签名。 (FORMS-25171)
+* 在基于基础组件的自适应Forms中，文件附件组件现在会根据上传时允许的文件类型列表来检查文件。 以前，即使列表仅允许`application/pdf`、`image/jpeg`和`image/png`，文件（如`.xsd`）也通过上载步骤。 表单仅在提交时拒绝这些请求，并发出一般不支持的文件警报。 (FORMS-24295)
 
 #### Forms JEE {#forms-jee-6526}
 
-* Enhancement: AEM Forms Document Security adds passkey (Web Authentication, or WebAuthn) support for Adobe Acrobat (PPKLite). (FORMS-21762)
-* Enhancement: The IBM Content Manager connector now supports IBM Content Manager 8.7, because IBM ended support for versions 8.5 and 8.6. (FORMS-6827)
-* On Windows, the ConvertPDF service no longer hangs when converting certain Portable Document Format (PDF) files to images such as TIFF. (FORMS-25796)
-* Security Assertion Markup Language (SAML) authentication now validates assertion signatures with the certificate from the uploaded identity provider (IdP) metadata. Authentication fails when the IdP certificate changes and the metadata is not updated. (FORMS-24679)
-* After upgrading to AEM Forms Service Pack 6.5.24.0, `server.log` and `error.log` no longer fill with `[XMLSecurity]` WARN messages such as "Secure parser factory creation failed, any XML parser created may be vulnerable to XML-based exploits." The messages appeared several times per second, even on idle servers, and consumed disk space quickly. (FORMS-23717)
-* Components on the JEE side now package Apache POI 5.4.0. Previously, some bundles still included Apache POI 3.17 and 3.9, which security scans flagged after upgrading to AEM Forms Service Pack 6.5.24.0. (FORMS-23678)
+* 增强： AEM Forms Document Security添加了对Adobe Acrobat (PPKLite)的密钥（Web身份验证或WebAuthn）支持。 (FORMS-21762)
+* 增强： IBM Content Manager连接器现在支持IBM Content Manager 8.7，因为IBM已终止对版本8.5和8.6的支持。 (FORMS-6827)
+* 在Windows上，将某些可移植文档格式(PDF)文件转换为图像（如TIFF）时，ConvertPDF服务不再挂起。 (FORMS-25796)
+* 安全断言标记语言(SAML)身份验证现在使用来自上载的身份提供方(IdP)元数据的证书来验证断言签名。 当IdP证书更改并且元数据未更新时，身份验证失败。 (FORMS-24679)
+* 升级到AEM Forms Service Pack 6.5.24.0后，`server.log`和`error.log`不再填充`[XMLSecurity]`警告消息，例如“安全解析器工厂创建失败，创建的任何XML解析器都可能易受基于XML的攻击”。 消息每秒出现多次，即使在空闲服务器上也是如此，并且会快速占用磁盘空间。 (FORMS-23717)
+* JEE端的组件现在打包了Apache POI 5.4.0。 以前，某些捆绑包中仍包含Apache POI 3.17和3.9，在升级到AEM Forms Service Pack 6.5.24.0后，这两个版本会标记安全扫描。 (FORMS-23678)
 
 #### Forms Designer {#forms-designer-6526}
 
-* Enhancement: Forms Designer and Output Service generate nested Portable Document Format (PDF) bookmarks from Heading Level 1 through Heading Level 6 accessibility roles in static interactive and flat PDF files. Heading Level 1 becomes the top-level bookmark, without the empty or duplicate entry that authors previously removed manually in Adobe Acrobat. To restore the earlier bookmark behavior, add `<behaviorOverride>patch-LC-3922369:1</behaviorOverride>` to a custom XCI file. (LC-3923490, LC-3922369)
-* Enhancement: Selecting a bookmark in a static interactive or flat Portable Document Format (PDF) file now scrolls the matching heading to the top of the page. (LC-3923489, LC-3923289)
-* Enhancement: Forms Designer can add the bookmark `extras` element to text objects that use a Heading Level 1 through Heading Level 6 accessibility role. Previously, authors had to add `<extras name="bookmark">` manually in XML Source for each heading to generate bookmarks. (FORMS-24361)
--->
+* 增强：Forms Designer和输出服务在静态交互式和平面PDF文件中生成从标题级别1到标题级别6辅助功能的嵌套可移植文档格式(PDF)书签。 标题级别1变为顶级书签，不包含作者之前在Adobe Acrobat中手动移除的空条目或重复条目。 要恢复以前的书签行为，请将`<behaviorOverride>patch-LC-3922369:1</behaviorOverride>`添加到自定义XCI文件。 （LC-3923490和LC-3922369）
+* 增强：现在，在静态交互式或平面可移植文档格式(PDF)文件中选择书签会将匹配的标题滚动到页面顶部。 （LC-3923489和LC-3923289）
+* 增强： Forms Designer可以将书签`extras`元素添加到使用“标题级别1”到“标题级别6”辅助功能的文本对象。 以前，作者必须在XML Source中为每个标题手动添加`<extras name="bookmark">`以生成书签。 (FORMS-24361)
 
 
 ### 基础 {#foundation-6526}
@@ -622,25 +622,48 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 
 ### AEM Forms 已知问题 {#known-issues-aem-forms-6526}
 
+* 在JEE Service Pack 136修补程序上带有AEM Forms的WebLogic上，Configuration Manager `validateApplicationServerTopology`步骤在GUI和CLI模式下均失败。 若要应用手动解决方法，请展开&#x200B;**4。 在[JEE Service Pack安装说明](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack)中的JEE Service Pack**&#x200B;上安装AEM Forms，并遵循WebLogic拓扑验证解决方法。 (FORMS-30037)
+
 * 将包含使用`bindref`的&#x200B;**文件附件**&#x200B;字段的表单提交给具有&#x200B;**分配任务**&#x200B;步骤的AEM Workflow时，附件未显示。 因此，当任务从“收件箱”中打开时，它们不会显示。 文件将正确地保存到存储库，但分配任务步骤UI无法显示附件。 (FORMS-23722)
 
 * 将经过数字签名的PDF附加到AEM Forms JEE Workspace中的任务后，上传状态将持续停滞或出现“文件无效”错误而失败。 因此，无法将较大的已签名PDF附件添加到任务中。 此问题已在更高版本中修复。 有关该版本的修补程序，请与Adobe支持部门联系。 (FORMS-28517)
 
-<!--
-* On IBM WebSphere, loading a Web Services Description Language (WSDL) file through the Invoke Web Service activity in AEM Forms Workbench can fail with AEM Forms JEE 6.5.26.0 (Service Pack 26), as reported on patch 135. The same operation works on JBoss. (FORMS-29972)
+* 通过管理控制台或Java代码(EJB/SOA)导入LiveCycle Archive (LCA)可能会导致后续PDF Generator (PDFG)和ConvertPDF操作失败。 此问题会影响带有嵌入式Oracle创作实例的Windows和Linux上的JDK和AEM WebLogic 14c栈栈。 (FORMS-30031)
 
-  **Workaround:** Add a Java Virtual Machine (JVM) argument on the WebSphere application server that hosts AEM Forms JEE. This is a server-side setting, not a Workbench client setting.
+  服务器日志显示以下错误：
 
-  1. Open the JVM configuration for the WebSphere application server that hosts AEM Forms JEE.
-  1. Add the following argument to the server JVM arguments. Keep the existing arguments.
+  ```text
+  org.omg.CORBA.INITIALIZE: can't instantiate default ORB implementation org.jacorb.orb.ORB
+  ```
+
+  **临时恢复：**&#x200B;重新启动会中断受影响服务器上的服务。
+
+  1. 使用您部署的正常操作过程计划重新启动受影响的WebLogic托管服务器。
+  1. 重新启动受影响的服务器，并等待AEM Forms服务变为可用。
+  1. 请重试PDF Generator和ConvertPDF操作以验证恢复。
+
+  在WebLogic 14c上受影响的AEM Forms JEE SP26修补程序136部署中，重新启动托管服务器会在导入LCA后暂时恢复PDF Generator和ConvertPDF操作。 随后的LCA导入可能会再次触发失败。
+
+* **WebLogic URL到PDF的转换失败。** 如修补程序135中所述，在WebLogic上，通过管理UI或API输入URL的HTML到PDF转换在AEM Forms JEE 6.5.26.0 (Service Pack 26)中失败。 错误为`ALC-PDG-052-018: Connection to host cannot be resolved (URL does not exist).`使用二进制HTML输入的转换不受影响。
+
+  该错误是由于URL可达性检查与WebLogic的HTTPS连接处理程序不兼容导致的。 这并不一定意味着URL无效。 请勿仅因为出现此错误而更改有效的URL。
+
+  修补程序136中未包含用于将WebLogic URL转换为PDF的修补程序，该修补程序需要单独的修补程序。
+
+
+* 如修补程序135中所述，在IBM WebSphere上，通过AEM Forms Workbench中的“调用Web服务”活动加载Web服务描述语言(WSDL)文件可能会因AEM Forms JEE 6.5.26.0 (Service Pack 26)而失败。 相同的操作在JBoss上同样有效。 (FORMS-29972)
+
+  **解决方法：**&#x200B;在承载AEM Forms JEE的WebSphere应用程序服务器上添加Java虚拟机(JVM)参数。 这是服务器端设置，而不是Workbench客户端设置。
+
+  1. 为托管AEM Forms JEE的WebSphere应用程序服务器打开JVM配置。
+  1. 将以下参数添加到服务器JVM参数。 保留现有参数。
 
      ```shell
      -Dcom.adobe.idp.dsc.webservice.loadSOAPClasses=true
      ```
 
-  1. Save the configuration, and then restart the WebSphere application server so that the argument takes effect.
-  1. Reconnect from AEM Forms Workbench, and then load the WSDL in the Invoke Web Service activity again.
--->
+  1. 保存配置，然后重新启动WebSphere应用程序服务器，使参数生效。
+  1. 从AEM Forms Workbench重新连接，然后再次在调用Web服务活动中加载WSDL。
 
 #### 可用修补程序的已知问题 {#aem-forms-issues-with-hotfixes}
 
