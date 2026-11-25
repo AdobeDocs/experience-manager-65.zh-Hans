@@ -19,10 +19,10 @@ subfeature_v2:
 role_v2:
   - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
     internal-label: Admin
-source-git-commit: 751e1826ed53df7522418e50a206f0fe622256a4
+source-git-commit: f63514691265918da2fa40cc493889c6cd0d23d1
 workflow-type: tm+mt
-source-wordcount: '270'
-ht-degree: 64%
+source-wordcount: '478'
+ht-degree: 37%
 ---
 # 连接到 Microsoft Translator {#connecting-to-microsoft-translator}
 
@@ -58,3 +58,18 @@ AEM为[Microsoft Translator](https://www.microsoft.com/en-us/translator/business
 ## 发布Translator服务配置 {#publishing-the-translator-service-configurations}
 
 作为最后一步，请使用[发布树](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree)操作发布Microsoft Translator配置以支持已发布的已翻译内容。
+
+## Microsoft Translator API字段映射 {#microsoft-translator-api-field-mapping}
+
+Microsoft Translator API v3接受位于`https://api.cognitive.microsofttranslator.com/translate?api-version=3.0`的翻译请求。 请参阅[Microsoft Translate API引用](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/v3/translate)以了解所需的参数，包括目标语言。
+
+下表将AEM配置字段与Microsoft API关联起来。
+
+| AEM字段 | AEM中的用途 | Microsoft API关系 |
+|---|---|---|
+| 工作区 ID | 标识要使用的自定义Microsoft Translator引擎。 | 通过`category`请求参数选择自定义翻译系统。 Microsoft API需要自定义Translator类别ID，而不是单独的工作区ID。 确认连接器和自定义模型配置所需的值。 |
+| 翻译标签 | 提供翻译服务的显示名称。 | 没有对应的翻译请求参数。 |
+| 翻译属性 | 定义已翻译用户生成内容旁边的可选归因。 | 没有对应的翻译请求参数。 |
+| 订阅密钥 | 验证对Microsoft Translator订阅的访问权限。 | 请求访问令牌时在`Ocp-Apim-Subscription-Key`标头中发送。 该令牌随后在翻译请求的`Authorization: Bearer <access-token>`标头中发送。 |
+
+对于全局Microsoft Translator资源，令牌终结点为`https://api.cognitive.microsoft.com/sts/v1.0/issueToken`。 区域和多服务资源使用特定于区域的令牌端点。 有关资源类型的端点和标头要求，请参阅[Microsoft Translator身份验证](https://learn.microsoft.com/en-us/azure/ai-services/translator/text-translation/reference/authentication)。
