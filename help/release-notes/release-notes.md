@@ -23,9 +23,9 @@ role_v2:
     internal-label: Admin
   - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
     internal-label: Developer
-source-git-commit: 8e3fd4184adcd62256cb7faea6592b06796e7ddf
+source-git-commit: 0619d81cc1270ec91062fc1f4e4ca0a59a388cfc
 workflow-type: tm+mt
-source-wordcount: '8356'
+source-wordcount: '8294'
 ht-degree: 13%
 ---
 # [!DNL Adobe Experience Manager]6.5 最新服务包发行说明 {#aem-service-pack-release-notes}
@@ -102,7 +102,7 @@ Service Pack 26的主要功能亮点包括：
 * 站点控制台引用边栏中的引用标题现在使用标题元素而不是`div`。 以前，屏幕阅读器无法朗读文本作为标题，因此用户无法按标题导航。 标题也出现在初始“参照”视图的顶部。 (SITES-24967)
 * 站点控制台过滤器边栏中折叠按钮的焦点指示器现在符合WCAG 1.4.11的3:1对比度要求。 以前，蓝色指示器在背景中显示的是2.3:1的比率，这使得键盘用户很难找到标记折叠按钮。 更新后的颜色为键盘用户提供了清晰的焦点提示。 (SITES-24986)
 * 站点控制台过滤器边栏中单选按钮的焦点指示器现在符合WCAG 1.4.11的3:1对比度要求。 以前，淡蓝色指示器在背景中的比率为1.7:1。 键盘用户现在可以在修改日期折叠面板中跟踪其位置。 (SITES-24987)
-* 页面编辑器侧边栏中路径和标记字段旁边的“选择”按钮不再使用复选框图标。 以前，该图标建议进行切换，但激活按钮会打开一个包含树目录的模式窗口。 现在，“选择”按钮可正确传达其功能，同样适用于Image和Teaser模式。 (SITES-25210)
+* “页面编辑器”侧边栏中“路径”和“标记”字段旁边的Select按钮不再使用复选框图标。 以前，该图标建议进行切换，但激活按钮会打开一个包含树目录的模式窗口。 Select按钮现在可正确传达其功能，这一点同样适用于Image和Teaser模式。 (SITES-25210)
 * 屏幕阅读器现在跳过页面编辑器侧边栏中资产的缩略图图像。 以前，每个图像都带有与可见资源名称重复的替换文本，因此用户会听到两次相同的文本。 空`alt`属性将图像标记为装饰性并将名称保留在卡片标题中。 (SITES-25213)
 * 屏幕阅读器将侧边栏“组件”列表识别为列表。 审核报告这些项目为不相关的元素，但测试确认标记使用列表元素和列表项目。 无需更改代码。 (SITES-25214)
 * 页面编辑器侧边栏中组件的信息图标更大，更易于查看。 以前，这些图标使用大约12像素的超小尺寸，视力不佳的用户很难看到这种尺寸。 图标现在使用中等大小。(SITES-25217)
@@ -625,8 +625,6 @@ Adobe打算在生命周期结束公告之前保持这些旧端点可用。 Adobe
 * 在JEE Service Pack 136修补程序上带有AEM Forms的WebLogic上，Configuration Manager `validateApplicationServerTopology`步骤在GUI和CLI模式下均失败。 若要应用手动解决方法，请展开&#x200B;**4。 在[JEE Service Pack安装说明](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md#download-and-install-for-jee-service-pack)中的JEE Service Pack**&#x200B;上安装AEM Forms，并遵循WebLogic拓扑验证解决方法。 (FORMS-30037)
 
 * 将包含使用`bindref`的&#x200B;**文件附件**&#x200B;字段的表单提交给具有&#x200B;**分配任务**&#x200B;步骤的AEM Workflow时，附件未显示。 因此，当任务从“收件箱”中打开时，它们不会显示。 文件将正确地保存到存储库，但分配任务步骤UI无法显示附件。 (FORMS-23722)
-
-* 将经过数字签名的PDF附加到AEM Forms JEE Workspace中的任务后，上传状态将持续停滞或出现“文件无效”错误而失败。 因此，无法将较大的已签名PDF附件添加到任务中。 此问题已在更高版本中修复。 有关该版本的修补程序，请与Adobe支持部门联系。 (FORMS-28517)
 
 * 通过管理控制台或Java代码(EJB/SOA)导入LiveCycle Archive (LCA)可能会导致后续PDF Generator (PDFG)和ConvertPDF操作失败。 此问题会影响带有嵌入式Oracle创作实例的Windows和Linux上的JDK和AEM WebLogic 14c栈栈。 (FORMS-30031)
 
